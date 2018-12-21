@@ -18,17 +18,18 @@ const InputLabel = styled.label`
 
 class Checkbox extends PureComponent {
   render() {
-    const { label, labelProps, inputProps, ...input } = this.props;
+    const { label, labelProps, ...input } = this.props;
     return (
-      <InputLabel id={`label_${this.props.id}`} {...labelProps}>
+      <React.Fragment>
         <CheckboxInput
           readOnly
           type="checkbox"
           {...input}
-          {...inputProps}
         />
-        {label}
-      </InputLabel>
+        <InputLabel id={`label_${this.props.id}`} {...labelProps}>
+          {label}
+        </InputLabel>
+      </React.Fragment>
     );
   }
 }
@@ -37,7 +38,6 @@ Checkbox.defaultProps = {
   checked: false,
   label: null,
   labelProps: null,
-  inputProps: null,
 };
 
 Checkbox.propTypes = {
@@ -47,7 +47,6 @@ Checkbox.propTypes = {
   labelProps: PropTypes.shape({
     isRequired: PropTypes.bool,
   }),
-  inputProps: PropTypes.shape(),
 };
 
 export default Checkbox;
