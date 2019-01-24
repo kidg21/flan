@@ -39,9 +39,11 @@
     "react-redux": "5.1.0",
     "react-select": "^1.2.1",
     "react-transform-hmr": "^1.0.4",
-    "styled-components": "4.0.3",
     "webpack": "^1.13.3",
     "webpack-cli": "^2.0.14"
+  },  
+  "dependencies": {
+    "styled-components": "4.0.3"
   },
   "author": "Derek Tong, Erica Sugimoto, Greg Person",
   "license": "ISC",
