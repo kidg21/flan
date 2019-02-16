@@ -6,13 +6,15 @@
 // When you add this file, we won't add the default configurations which is similar
 // to "React Create App". This only has babel loader to load JavaScript.
 
-module.exports = {
-  plugins: [
-    // your custom plugins
-  ],
-  module: {
-    rules: [
-      // add your custom rules.
-    ],
-  },
+const path = require("path");
+
+module.exports = (baseConfig, env, defaultConfig) => {
+  // Extend defaultConfig as you need.
+  defaultConfig.module.rules.push({
+    test: /\.(js|jsx)$/,
+    include: path.resolve(__dirname, "../ui")
+  });
+  defaultConfig.resolve.extensions.push(".js", ".jsx");
+
+  return defaultConfig;
 };

@@ -1,1 +1,0 @@
-require("ss-styled-components/widgets/testwidget.jsx");
