@@ -12,7 +12,7 @@ module.exports = (baseConfig, env, defaultConfig) => {
   // Extend defaultConfig as you need.
   defaultConfig.module.rules.push({
     test: /\.(js|jsx)$/,
-    include: path.resolve(__dirname, "../ui")
+    include: path.resolve(__dirname, "../components")
   });
   defaultConfig.resolve.extensions.push(".js", ".jsx");
 

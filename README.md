@@ -1,3 +1,17 @@
+**Note:** This repository tracks **2 different package.json files**
+
+**package.json** is the default configuration file that is used by the **design team** to develop and test UI components.
+
+**package.developmen.json** is the configuration used by the **development team** for building and testing applications.
+
+If you switch to the 'development' configuration, you may rename or delete the design version of **package.json**.  If you make updates to the **development version of package.json**, before you commit, please rename or copy updates to **package.development.json**.
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
