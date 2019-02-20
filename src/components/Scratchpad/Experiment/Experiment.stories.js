@@ -18,7 +18,7 @@ addDecorator((story) => (
   ));
 
 // NavBlock
-storiesOf("Experiment", module)
+storiesOf("Scratchpad/Experiment", module)
   .addDecorator(checkA11y)
   // .addDecorator(withKnobs)
   .add("Experiment", withInfo()(() => <Experiment />), {

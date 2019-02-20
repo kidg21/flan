@@ -17,7 +17,8 @@ const decorator = story => (
     </div>
   );
   
-storiesOf("Addon Chapters").addWithChapters("Story With Chapters", {
+storiesOf("Scratchpad/Addons/Chapters")
+.addWithChapters("Story With Chapters", {
   useTheme: false,
   subtitle: "Display multiple components within one story!",
   info: `
@@ -84,9 +85,8 @@ storiesOf("Addon Chapters").addWithChapters("Story With Chapters", {
       ]
     }
   ]
-});
-
-storiesOf("Addon Chapters", module).addWithChapters("Story Without Chapters", {
+})
+.addWithChapters("Story Without Chapters", {
   useTheme: false,
   subtitle: "Display multiple components within one story!",
   info: `
@@ -113,3 +113,4 @@ storiesOf("Addon Chapters", module).addWithChapters("Story Without Chapters", {
     }
   ]
 });
+

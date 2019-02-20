@@ -146,7 +146,7 @@ const Colors = () => {
       <ColorBlock>
         <ColorBlockColor theme={colors.success} />
 
-        <ColorBlockTitle>Anchor</ColorBlockTitle>
+        <ColorBlockTitle>Succes</ColorBlockTitle>
 
         <ColorBlockCode>
           <strong>Hex:</strong> #1e90ff
@@ -168,7 +168,7 @@ const Colors = () => {
       <ColorBlock>
         <ColorBlockColor theme={colors.warning} />
 
-        <ColorBlockTitle>Anchor</ColorBlockTitle>
+        <ColorBlockTitle>Warning</ColorBlockTitle>
 
         <ColorBlockCode>
           <strong>Hex:</strong> #1e90ff
@@ -190,7 +190,7 @@ const Colors = () => {
       <ColorBlock>
         <ColorBlockColor theme={colors.alert} />
 
-        <ColorBlockTitle>Anchor</ColorBlockTitle>
+        <ColorBlockTitle>Alert</ColorBlockTitle>
 
         <ColorBlockCode>
           <strong>Hex:</strong> #1e90ff

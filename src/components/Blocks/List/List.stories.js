@@ -18,7 +18,7 @@ const decorator = story => (
 
   
   
-storiesOf("Components/List")
+storiesOf("Blocks/List")
 
 .addWithChapters("List Types", {
   useTheme: false,

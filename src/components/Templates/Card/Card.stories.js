@@ -3,6 +3,6 @@ import { storiesOf } from "@storybook/react";
 import LoginCard from "./LoginCard";
 import Card from "./Card";
 
-storiesOf('Components/Card', module)
-    .add('Card', () => <Card></Card>)
-  .add('Login Card', () => <LoginCard></LoginCard>);
+storiesOf("Templates/Cards", module)
+  .add("Info Card", () => <Card />)
+  .add("Login Card", () => <LoginCard />);

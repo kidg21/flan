@@ -17,7 +17,7 @@ addDecorator((story) => (
   ));
 
 // NavBlock
-storiesOf("NavBlock", module)
+storiesOf("Blocks/NavBlock", module)
   .addDecorator(checkA11y)
   .addDecorator(withKnobs)
   .add("work in progress", withInfo()(() => <NavBlock />), {
