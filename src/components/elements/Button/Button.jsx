@@ -23,10 +23,6 @@ cursor: pointer;
 }
 `
 
-
-
-
-
 const propTypes = {
   label: PropTypes.string,
   disabled: PropTypes.bool,
@@ -40,17 +36,16 @@ const defaultProps = {
 
 function Button({ disabled, label, onClick }) {
   return (
-    <button
+    <StyledButton
       type="button"
       disabled={disabled}
       onClick={onClick}
-      style={styles}
     >
       {label}
-    </button>
+    </StyledButton>
   );
 }
 
 Button.propTypes = propTypes;
 Button.defaultProps = defaultProps;
-export default StyledButton;
+export default Button;

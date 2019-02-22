@@ -5,10 +5,10 @@ import React from 'react'
 import styled from 'styled-components'
 
 // Import colors and sizes variables
-import { colors, sizes } from '../Helpers/variables'
+import { colors, sizes } from '../../helpers/Variables'
 
 // Import Container component
-import { Container } from '../Helpers/generic-helpers'
+import { Container } from '../../helpers/GenericHelper'
 
 // Extending Container component
 const ColorsContainer = styled(Container)`

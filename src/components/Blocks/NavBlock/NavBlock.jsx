@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Card from "../../Layout/Card/Card";
-import CardSection from "../../Layout/Card/CardSection";
+import Card from "../../layout/Card/Card";
+import CardSection from "../../layout/Card/CardSection";
 
 const OuterBlock = styled.div`
   /* Max Characters: Title-18, Command-8, Icons-3 */

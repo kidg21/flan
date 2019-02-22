@@ -10,11 +10,11 @@ import { withKnobs, text, boolean, number } from '@storybook/addon-knobs';
 // const stories = storiesOf('Storybook Knobs', module);
 // stories.addDecorator(withKnobs);
 
-addDecorator((story) => (
-    <div style={{padding: 20}}>
-      {story()}
-    </div>
-  ));
+// addDecorator((story) => (
+//     <div style={{padding: 20}}>
+//       {story()}
+//     </div>
+//   ));
 
 // NavBlock
 storiesOf("Blocks/NavBlock", module)

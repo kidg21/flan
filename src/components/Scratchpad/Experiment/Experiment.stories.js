@@ -11,11 +11,11 @@ import { addDecorator } from '@storybook/react';
 // const stories = storiesOf('Storybook Knobs', module);
 // stories.addDecorator(withKnobs);
 
-addDecorator((story) => (
-    <div style={{padding: 20}}>
-      {story()}
-    </div>
-  ));
+// addDecorator((story) => (
+//     <div style={{padding: 20}}>
+//       {story()}
+//     </div>
+//   ));
 
 // NavBlock
 storiesOf("Scratchpad/Experiment", module)

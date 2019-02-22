@@ -1,9 +1,9 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import Button from "../../Elements/Button/Button";
+import Button from "../../elements/Button/Button";
 import { addDecorator } from "@storybook/react";
 
-addDecorator(story => <div style={{ padding: 20 }}>{story()}</div>);
+// addDecorator(story => <div style={{ padding: 20 }}>{story()}</div>);
 
 const decorator = story => (
     <div
