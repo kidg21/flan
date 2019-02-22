@@ -18,7 +18,7 @@ const decorator = story => (
   </div>
 );
 
-storiesOf("Elements/Buttons")
+storiesOf("Elements|Buttons")
   .addWithChapters("Buttons", {
     useTheme: false,
     subtitle: "Display multiple components within one story!",

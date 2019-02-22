@@ -15,6 +15,14 @@ import chaptersAddon from "react-storybook-addon-chapters";
 // StoryBook Overrides
 // import "../src/css/overrides.css";
 
+// Option defaults:
+addDecorator(
+  withOptions({
+    hierarchySeparator: /\/|\./,
+    hierarchyRootSeparator: /\|/,
+  })
+);
+
 // Chapters
 setAddon(chaptersAddon);
 

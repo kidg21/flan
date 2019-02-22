@@ -17,7 +17,7 @@ import { withKnobs, text, boolean, number } from '@storybook/addon-knobs';
 //   ));
 
 // NavBlock
-storiesOf("Blocks/NavBlock", module)
+storiesOf("Blocks|NavBlock", module)
   .addDecorator(checkA11y)
   .addDecorator(withKnobs)
   .add("work in progress", withInfo()(() => <NavBlock />), {

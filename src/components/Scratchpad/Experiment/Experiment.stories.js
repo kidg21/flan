@@ -18,7 +18,7 @@ import { addDecorator } from '@storybook/react';
 //   ));
 
 // NavBlock
-storiesOf("Scratchpad/Experiment", module)
+storiesOf("Scratchpad|Experiment", module)
   .addDecorator(checkA11y)
   // .addDecorator(withKnobs)
   .add("Experiment", withInfo()(() => <Experiment />), {
