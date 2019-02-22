@@ -23,6 +23,7 @@
     "not op_mini all"
   ],
   "dependencies": {
+    "prop-types": "^15.6.2",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-scripts": "^2.1.5",
@@ -44,10 +45,10 @@
     "@storybook/addon-viewport": "^4.1.11",
     "@storybook/react": "^4.1.7",
     "babel-loader": "^8.0.5",
+    "babel-plugin-module-resolver": "^3.2.0",
     "babel-plugin-styled-components": "^1.10.0",
     "prettier": "1.16.4",
     "pretty-quick": "^1.10.0",
-    "prop-types": "15.6.2",
     "react-storybook-addon-chapters": "^3.0.3",
     "react-test-renderer": "^16.7.0",
     "storybook-addon-styled-component-theme": "^1.1.1",
