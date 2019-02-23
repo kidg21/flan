@@ -16,7 +16,7 @@ const decorator = story => (
     </div>
   );
   
-storiesOf("Base")
+storiesOf("Base|Standardization")
 .addWithChapters("Functionality", {
   useTheme: false,
   subtitle: "Rules and Guidlines for UI/UX",
