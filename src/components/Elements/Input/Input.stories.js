@@ -1,9 +1,9 @@
-//import React from "react";
-//import { storiesOf } from "@storybook/react";
-//import Input from "./Input";
-//import { addDecorator } from "@storybook/react";
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import Input from "./Input";
 
 
-//storiesOf("Components/Input", module)
-  //.add("Input", () => <Input></Input>);
+storiesOf("Elements|Input", module)
+  .add("Input", () => <Input></Input>)
+  .add("New Input", () => <Input Grey></Input>);
 

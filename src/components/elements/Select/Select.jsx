@@ -1,34 +1,18 @@
-import React from 'react'
-import Select from 'react-select'
+import React from "react";
+import styled from 'styled-components';
 
+const MultiSelect = styled.select`
+	&.Select--multi  {
 
+		.Select-value {
+			display: inline-flex;
+			align-items: center;
+		}		
+	}
 
-const options =
-[
-  { value: 'chocolate', label: 'Chocolate' },
-  { value: 'strawberry', label: 'Strawberry' },
-  { value: 'vanilla', label: 'Vanilla' }
-]
+	& .Select-placeholder {
+		font-size: smaller;
+	}
+`
 
-
-export default class App extends React.Component {
-    state = {
-      selectedOption: null,
-    }
-    handleChange = (selectedOption) => {
-      this.setState({ selectedOption });
-      console.log(`Option selected:`, selectedOption);
-    }
-    render() {
-      const { selectedOption } = this.state;
-  
-      return (
-        <Select
-          value={selectedOption}
-          onChange={this.handleChange}
-          options={options}
-        />
-      );
-    }
-  }
-
+export default (props) => <MultiSelect multi {...props} />
