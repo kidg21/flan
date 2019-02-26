@@ -30,18 +30,20 @@
     "mocha": "^5.2.0",
     "mochawesome": "^3.0.2",
     "nyc": "^12.0.2",
-    "react": "16.6.1",
+    "react": "^16.7.0",
     "prop-types": "15.6.2",
     "react-big-calendar": "^0.11.1",
-    "react-dom": "16.6.1",
+    "react-dom": "^16.7.0",
     "react-foundation-menudropdown": "^1.0.0",
     "react-hot-loader": "^1.3.0",
     "react-redux": "5.1.0",
     "react-select": "^1.2.1",
     "react-transform-hmr": "^1.0.4",
-    "styled-components": "4.0.3",
     "webpack": "^1.13.3",
     "webpack-cli": "^2.0.14"
+  },  
+  "dependencies": {
+    "styled-components": "4.0.3"
   },
   "author": "Derek Tong, Erica Sugimoto, Greg Person",
   "license": "ISC",
