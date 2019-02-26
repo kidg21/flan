@@ -44,7 +44,7 @@ function Button({ disabled, label, onClick }) {
       {label}
     </StyledButton>
   );
-}
+};
 
 Button.propTypes = propTypes;
 Button.defaultProps = defaultProps;

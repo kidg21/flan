@@ -132,6 +132,6 @@ function Experiment() {
       <Thing>I'm blue, da ba dee da ba daa</Thing>
     </Container>
   );
-}
+};
 
 export default Experiment;

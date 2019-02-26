@@ -38,7 +38,7 @@ function Button({ disabled, label, onClick }) {
       {label}
     </button>
   );
-}
+};
 
 Button.propTypes = propTypes;
 Button.defaultProps = defaultProps;
