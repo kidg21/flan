@@ -30,7 +30,7 @@ const propTypes = {
 };
 
 const defaultProps = {
-  label: 'Button Label',
+  label: PropTypes.string,
   disabled: false,
 };
 
