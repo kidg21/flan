@@ -10,7 +10,7 @@ const StyledCard = styled.div`
   align-content: stretch;
   width: 100%;
   height: auto;
-  overflow: hidden;
+  /* overflow: hidden; */
   color: #605c57;
   font-size: 1rem;
   cursor: pointer;

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Card from "../../layout/Card/Card";
 import CardSection from "../../layout/Card/CardSection";
 
@@ -120,12 +121,12 @@ const RightBlock = styled.div`
 `;
 
 function NavBlock() {
-  const [title, setTitle] = useState('Title Goes Here');
+  const [title, setTitle] = useState("Title Goes Here");
   const clickLeft = () => {
-    setTitle(' Clicked Left ');
+    setTitle(" Clicked Left ");
   };
   const clickRight = () => {
-    setTitle(' Clicked Right ');
+    setTitle(" Clicked Right ");
   };
   return (
     <Card>
@@ -133,7 +134,15 @@ function NavBlock() {
         <OuterBlock>
           <LeftBlock hide>
             <a className="command-item" onClick={clickLeft}>
-              <i className="command-icon fa fa-chevron-left" />
+              {/* <i className="command-icon fa fa-chevron-left" /> */}
+              <FontAwesomeIcon icon="chevron-left" />
+              <FontAwesomeIcon icon={["fas", "chevron-left"]} />
+              <FontAwesomeIcon icon={["fal", "chevron-left"]} />
+              <FontAwesomeIcon icon={["fab", "apple"]} />
+              <FontAwesomeIcon icon={["fal", "acorn"]} size="2x" />
+              <FontAwesomeIcon icon={["fal", "boxing-glove"]} size="lg" />
+              <FontAwesomeIcon icon={["far", "boxing-glove"]} size="lg" />
+              <FontAwesomeIcon icon={["fas", "boxing-glove"]} size="lg" />
               <h6 className="command-name">Left</h6>
             </a>
           </LeftBlock>
@@ -144,7 +153,14 @@ function NavBlock() {
             <div className="block-right">
               <a className="command-item align-right" onClick={clickRight}>
                 <h6 className="command-name">Right</h6>
-                <i className="command-icon fa fa-chevron-right" />
+                {/* <i className="command-icon fa fa-chevron-right" /> */}
+                <FontAwesomeIcon icon="chevron-right" />
+                <FontAwesomeIcon icon={["fas", "chevron-right"]} />
+                <FontAwesomeIcon icon={["fal", "chevron-right"]} />
+                <FontAwesomeIcon icon={["far", "bell"]} />
+                <FontAwesomeIcon icon={["far", "bookmark"]} />
+                <FontAwesomeIcon icon={["far", "code"]} />
+                <FontAwesomeIcon icon={["far", "highlighter"]} />
               </a>
             </div>
           </RightBlock>
@@ -152,6 +168,6 @@ function NavBlock() {
       </CardSection>
     </Card>
   );
-};
+}
 
 export default NavBlock;
