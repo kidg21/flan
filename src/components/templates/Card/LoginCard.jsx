@@ -176,7 +176,6 @@ export default class Card extends React.Component {
         <CardHeader>
           <CardHeading>New User</CardHeading>
         </CardHeader>
-        
         <CardBody>
           <CardFieldset>
             <CardInput
