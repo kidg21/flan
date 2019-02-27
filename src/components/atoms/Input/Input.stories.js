@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 import Input from "./Input";
 
 
-storiesOf("Elements|Input", module)
+storiesOf("Atoms|Input", module)
   .add("Input", () => <Input></Input>)
   .add("New Input", () => <Input Grey></Input>);
 

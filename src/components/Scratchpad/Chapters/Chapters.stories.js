@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import Button from "../../elements/Button/Button";
+import Button from "../../atoms/Button/Button";
 import { addDecorator } from "@storybook/react";
 
 // addDecorator(story => <div style={{ padding: 20 }}>{story()}</div>);

@@ -4,5 +4,5 @@ import Dropdown from "./SimpleDropdown";
 import MenuSelect from "./NewDropdown";
 
 // Colors
-storiesOf("Elements|Dropdown", module).add("Simple", () => <Dropdown/>)
+storiesOf("Atoms|Dropdown", module).add("Simple", () => <Dropdown/>)
 .add("Select Options", () => <MenuSelect/>);

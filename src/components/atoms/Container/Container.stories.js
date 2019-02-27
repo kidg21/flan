@@ -3,4 +3,4 @@ import { storiesOf } from "@storybook/react";
 import Container from "./Container";
 
 // Colors
-storiesOf("Elements|Container", module).add("Container", () => <Container/>);
+storiesOf("Atoms|Container", module).add("Container", () => <Container/>);

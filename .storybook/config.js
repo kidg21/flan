@@ -15,6 +15,9 @@ import chaptersAddon from "react-storybook-addon-chapters";
 // StoryBook Overrides
 // import "../src/css/overrides.css";
 
+// Import Font Awesome Icon Library
+import '../src/icons/fontawesome';
+
 // Option defaults:
 addDecorator(
   withOptions({

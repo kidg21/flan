@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import styled, {css} from 'styled-components';
-import Select from 'react-select';
+//import Select from 'react-select';
 
 const options = [
     { value: 'chocolate', label: 'Chocolate' },
@@ -10,7 +10,7 @@ const options = [
 
 
 
-const MultiSelect = styled(Select)`
+const MultiSelect = styled.select`
 
     &.Select--single  {
 

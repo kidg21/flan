@@ -3,7 +3,6 @@ import styled, { css, createGlobalStyle } from "styled-components";
 // import { createGlobalStyle } from "styled-components";
 import { Colors } from "base";
 import { NavBlock } from "blocks";
-import { Button } from "elements";
 
 const Container = styled.section``;
 
