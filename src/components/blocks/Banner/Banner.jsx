@@ -1,8 +1,8 @@
 import React from "react";
 import styled, { css, createGlobalStyle } from "styled-components";
 // import { createGlobalStyle } from "styled-components";
-import { Colors } from "base";
-import { NavBlock } from "blocks";
+import CloseIcon from './CloseIcon';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Container = styled.section``;
 
@@ -43,8 +43,7 @@ const BannerLink = styled.a`
   text-decoration: none;
   margin-left: 10px;
   color: ${props => (props.primary ? "black" : "white")};
-  border-bottom: ${props =>
-    props.primary ? "1px solid black" : " 1px solid white"};
+  border-bottom: ${props => (props.primary ? "1px solid black" : " 1px solid white")};
   cursor: pointer;
   transition: color 0.25s ease-in;
 
@@ -62,25 +61,21 @@ export default class section extends React.Component {
   render() {
     return (
       <Container>
-        <Button primary>Button</Button>
-        <NavBlock />
-        <Colors />
+        <FontAwesomeIcon icon={["fal", "times"]} />
         <StyledBanner>
           This is a notification alert. Look at me!
           <BannerLink>Learn more about this Banner</BannerLink>
         </StyledBanner>
         <StyledBanner primary>
-          {" "}
           Primary Banner
           <BannerLink primary>Learn more about the issue</BannerLink>
+          <FontAwesomeIcon icon={["fal", "times"]} />
         </StyledBanner>
         <StyledBanner isSecondary>
-          {" "}
           Secondary Banner
           <BannerLink primary>Learn more about the issue</BannerLink>
         </StyledBanner>
         <StyledBanner isDisabled>
-          {" "}
           Disabled Banner
           <BannerLink>Learn more about the issue</BannerLink>
         </StyledBanner>

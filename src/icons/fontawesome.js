@@ -16,6 +16,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faAcorn,
+  faTimes,
   faBoxingGlove,
   faChevronLeft,
   faChevronRight
@@ -37,6 +38,7 @@ library.add(
   faBoxingGloveRegular,
   faBoxingGloveSolid,
   faCode,
+  faTimes,
   faHighlighter,
   faBell,
   faBookmark,

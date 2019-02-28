@@ -30,7 +30,7 @@
           "components": "./src/components",
           "base": "./src/components/base",
           "blocks": "./src/components/blocks",
-          "elements": "./src/components/elements"
+          "atoms": "./src/components/atoms"
         }
       }
     ]
