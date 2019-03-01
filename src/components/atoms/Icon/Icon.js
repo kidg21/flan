@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 
+
 // Iconn.defaultProps = {
 //   iconProp: "Another Prop"
 //   }
@@ -40,14 +41,12 @@ class Icon extends React.Component {
 render () {
   return (
     <div>
-      <FontAwesomeIcon icon={this.props.nameProp}/>
+      <FontAwesomeIcon icon={this.props.nameProp} color={this.props.colorProp}/>
     </div>
   );
 }
 }
 
-Icon.defaultProps = {  
-  nameProp: "times"
-}
 
 export default Icon;
+

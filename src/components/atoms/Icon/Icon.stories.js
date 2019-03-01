@@ -3,7 +3,8 @@ import { storiesOf } from "@storybook/react";
 import Icon from "./Icon";
 
 const props = {
-    nameProp: ["fal", "times"]
+    nameProp: ["fal", "times"],
+    colorProp: "green",
 };
 
 
