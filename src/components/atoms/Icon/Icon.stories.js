@@ -4,7 +4,7 @@ import Icon from "./Icon";
 
 const props = {
     nameProp: ["fal", "times"],
-    colorProp: "green",
+    colorProp: "red",
 };
 
 

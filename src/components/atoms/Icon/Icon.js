@@ -4,47 +4,12 @@ import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
-//Dark dark gray icon. Used for Edit buttons and Navigation. Basic Default Icon style.
-
-
-
-
-// Iconn.defaultProps = {
-//   iconProp: "Another Prop"
-//   }
-
-
-// const CardIcon = styled.i`
-//   color: dimgray;
-//   cursor: pointer;
-//   display: inline-block;
-//   transition: opacity .2s ease-in;
-
-//   &:hover {
-//     color: darkgray;
-//   }
-// `
-
-// const CommandIcon = styled.i`
-//   color: dimgray;
-//   cursor: pointer;
-//   display: inline-block;
-//   transition: opacity .2s ease-in;
-
-//   &:hover {
-//     color: darkgray;
-//   }
-// `
-
-
-class Icon extends React.Component {
-render () {
+function Icon(props) {
   return (
     <div>
-      <FontAwesomeIcon icon={this.props.nameProp} color={this.props.colorProp}/>
+      <FontAwesomeIcon icon={props.nameProp} color={props.colorProp}/>
     </div>
   );
-}
 }
 
 
