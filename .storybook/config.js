@@ -1,4 +1,5 @@
 import { configure, addDecorator, setAddon } from "@storybook/react";
+import React, { Fragment } from "react";
 import { withNotes } from "@storybook/addon-notes";
 import { withOptions } from "@storybook/addon-options";
 import { themes } from "@storybook/components";
@@ -10,19 +11,29 @@ import {
   INITIAL_VIEWPORTS
 } from "@storybook/addon-viewport";
 import chaptersAddon from "react-storybook-addon-chapters";
-// StoryBook CSS
-// import "../src/css/app-storybook.css";
-// StoryBook Overrides
-// import "../src/css/overrides.css";
 
 // Import Font Awesome Icon Library
-import '../src/icons/fontawesome';
+import "/icons/fontawesome";
+
+// Create and add global styles
+import GlobalStyles from "../src/components/base/GlobalStyles/GlobalStyles";
+
+function withGlobalStyles(storyFn) {
+  return (
+    <Fragment>
+      <GlobalStyles />
+      {storyFn()}
+    </Fragment>
+  );
+}
+
+addDecorator(withGlobalStyles);
 
 // Option defaults:
 addDecorator(
   withOptions({
     hierarchySeparator: /\/|\./,
-    hierarchyRootSeparator: /\|/,
+    hierarchyRootSeparator: /\|/
   })
 );
 
