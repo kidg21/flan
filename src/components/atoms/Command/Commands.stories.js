@@ -5,8 +5,7 @@ import Command from "./Command";
 
 
 const iconProps = {
-    nameProp: ["fal", "times"],
-    colorProp: "yellowgreen",
+    nameProp: ["fal", "times"]
 };
 
 const labelProp = {

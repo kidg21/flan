@@ -13,21 +13,25 @@ const HiddenCheckbox = styled.input.attrs({ type: 'checkbox' })`
   clip: rect(0 0 0 0);
   clippath: inset(50%);
   height: 1px;
+  border-radius:3px;
   margin: -1px;
   overflow: hidden;
   padding: 0;
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  cursor: pointer;
 `
 
 const StyledCheckbox = styled.div`
   display: inline-block;
-  width: 12px;
-  height: 12px;
-  background: ${props => (props.checked ? 'yellowgreen' : 'white')}
-  border: 2px solid black;
+  border-radius:3px;
+  width: 10px;
+  height: 10px;
+  background: ${props => (props.checked ? '#75B238' : 'white')}
+  border: 1px solid darkgray;
   transition: all 150ms;
+  cursor: pointer;
 
   ${HiddenCheckbox}:focus + & {
     box-shadow: 0 0 0 3px white;
@@ -52,13 +56,13 @@ export default class CheckboxItem extends React.Component {
   
     render() {
       return (
-        <div style={{ fontFamily: 'system-ui' }}>
+        <div style={{ fontFamily: 'arial' }}>
           <label>
             <Checkbox
               checked={this.state.checked}
               onChange={this.handleCheckboxChange}
             />
-            <span style={{ marginLeft: 8 }}>Label Text</span>
+            <text style={{ marginLeft: 8, fontSize: 14 }}>Option</text>
           </label>
         </div>
       )

@@ -31,14 +31,13 @@ display: flex;
 
 const defaultProps = {
     iconProps: {nameProp: ["fal", "times"],
-                colorProp: "purple"},
-    labelProp: {contentProp: "yo brother"}
+                colorProp: "dimgray"},
+    labelProp: {contentProp: "Layer Card Expanded"}
   };
 
 
 function CardContainer(props) {
     return (
-        <Container>
         <HeaderLayout>
                 <CardTitle>
                     <Label {...props.labelProp}/>
@@ -47,7 +46,6 @@ function CardContainer(props) {
                     <Icon {...props.iconProps}/>
                 </CardCommands>
                 </HeaderLayout>
-                </Container>
     )
   }
 

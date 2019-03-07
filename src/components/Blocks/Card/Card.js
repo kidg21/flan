@@ -1,4 +1,4 @@
-<CardCondainter>
+{/* <CardCondainter>
     <div>
         <CardClosed/>
         <LayerHeader>
@@ -21,4 +21,4 @@
 </div>
     <CommandSection/>
     <CardFooter/>
-</CardCondainter>;
+</CardCondainter>; */}

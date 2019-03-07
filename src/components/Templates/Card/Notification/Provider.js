@@ -1,311 +1,311 @@
-import React, { useState, useRef, useEffect } from 'react'
+// import React, { useState, useRef, useEffect } from 'react'
 
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 
-import { TransitionGroup } from './Transition'
+// import { TransitionGroup } from './Transition'
 
-import { createPortal } from 'react-dom'
+// import { createPortal } from 'react-dom'
 
-import DefaultContext from './Context'
+// import DefaultContext from './Context'
 
-import Wrapper from './Wrapper'
+// import Wrapper from './Wrapper'
 
-import Transition from './Transition'
+// import Transition from './Transition'
 
-import { positions, transitions, types } from './options'
+// import { positions, transitions, types } from './options'
 
 
 
-const Provider = ({
+// const Provider = ({
 
-  children,
+//   children,
 
-  offset,
+//   offset,
 
-  position,
+//   position,
 
-  timeout,
+//   timeout,
 
-  type,
+//   type,
 
-  transition,
+//   transition,
 
-  containerStyle,
+//   containerStyle,
 
-  template: AlertComponent,
+//   template: AlertComponent,
 
-  context: Context,
+//   context: Context,
 
-  ...props
+//   ...props
 
-}) => {
+// }) => {
 
-  const root = useRef(null)
+//   const root = useRef(null)
 
-  const timersId = useRef([])
+//   const timersId = useRef([])
 
-  const [alerts, setAlerts] = useState([])
+//   const [alerts, setAlerts] = useState([])
 
 
 
-  useEffect(() => {
+//   useEffect(() => {
 
-    root.current = document.createElement('div')
+//     root.current = document.createElement('div')
 
-    document.body.appendChild(root.current)
+//     document.body.appendChild(root.current)
 
 
 
-    return () => {
+//     return () => {
 
-      timersId.current.forEach(clearTimeout)
+//       timersId.current.forEach(clearTimeout)
 
 
 
-      if (root.current) document.body.removeChild(root.current)
+//       if (root.current) document.body.removeChild(root.current)
 
-    }
+//     }
 
-  }, [])
+//   }, [])
 
 
 
-  const remove = alert => {
+//   const remove = alert => {
 
-    setAlerts(prevState => {
+//     setAlerts(prevState => {
 
-      const lengthBeforeRemove = prevState.length
+//       const lengthBeforeRemove = prevState.length
 
-      const alerts = prevState.filter(a => a.id !== alert.id)
+//       const alerts = prevState.filter(a => a.id !== alert.id)
 
 
 
-      if (lengthBeforeRemove > alerts.length && alert.options.onClose) {
+//       if (lengthBeforeRemove > alerts.length && alert.options.onClose) {
 
-        alert.options.onClose()
+//         alert.options.onClose()
 
-      }
+//       }
 
 
 
-      return alerts
+//       return alerts
 
-    })
+//     })
 
-  }
+//   }
 
 
 
-  const show = (message = '', options = {}) => {
+//   const show = (message = '', options = {}) => {
 
-    const id = Math.random()
+//     const id = Math.random()
 
-      .toString(36)
+//       .toString(36)
 
-      .substr(2, 9)
+//       .substr(2, 9)
 
 
 
-    const alertOptions = {
+//     const alertOptions = {
 
-      timeout,
+//       timeout,
 
-      type,
+//       type,
 
-      ...options
+//       ...options
 
-    }
+//     }
 
 
 
-    const alert = {
+//     const alert = {
 
-      id,
+//       id,
 
-      message,
+//       message,
 
-      options: alertOptions
+//       options: alertOptions
 
-    }
+//     }
 
 
 
-    alert.close = () => remove(alert)
+//     alert.close = () => remove(alert)
 
 
 
-    if (alert.options.timeout) {
+//     if (alert.options.timeout) {
 
-      const timerId = setTimeout(() => {
+//       const timerId = setTimeout(() => {
 
-        remove(alert)
+//         remove(alert)
 
 
 
-        timersId.current.splice(timersId.current.indexOf(timerId), 1)
+//         timersId.current.splice(timersId.current.indexOf(timerId), 1)
 
-      }, alert.options.timeout)
+//       }, alert.options.timeout)
 
 
 
-      timersId.current.push(timerId)
+//       timersId.current.push(timerId)
 
-    }
+//     }
 
 
 
-    setAlerts(alerts => alerts.concat(alert))
+//     setAlerts(alerts => alerts.concat(alert))
 
-    if (alert.options.onOpen) alert.options.onOpen()
+//     if (alert.options.onOpen) alert.options.onOpen()
 
 
 
-    return alert
+//     return alert
 
-  }
+//   }
 
 
 
-  const success = (message = '', options = {}) => {
+//   const success = (message = '', options = {}) => {
 
-    options.type = types.SUCCESS
+//     options.type = types.SUCCESS
 
-    return show(message, options)
+//     return show(message, options)
 
-  }
+//   }
 
 
 
-  const error = (message = '', options = {}) => {
+//   const error = (message = '', options = {}) => {
 
-    options.type = types.ERROR
+//     options.type = types.ERROR
 
-    return show(message, options)
+//     return show(message, options)
 
-  }
+//   }
 
 
 
-  const info = (message = '', options = {}) => {
+//   const info = (message = '', options = {}) => {
 
-    options.type = types.INFO
+//     options.type = types.INFO
 
-    return show(message, options)
+//     return show(message, options)
 
-  }
+//   }
 
 
 
-  const alertContext = {
+//   const alertContext = {
 
-    root: root.current,
+//     root: root.current,
 
-    alerts,
+//     alerts,
 
-    show,
+//     show,
 
-    remove,
+//     remove,
 
-    success,
+//     success,
 
-    error,
+//     error,
 
-    info
+//     info
 
-  }
+//   }
 
 
 
-  return (
+//   return (
 
-    <Context.Provider value={alertContext}>
+//     <Context.Provider value={alertContext}>
 
-      {children}
+//       {children}
 
-      {root.current &&
+//       {root.current &&
 
-        createPortal(
+//         createPortal(
 
-          <Wrapper options={{ position, containerStyle }} {...props}>
+//           <Wrapper options={{ position, containerStyle }} {...props}>
 
-            <TransitionGroup>
+//             <TransitionGroup>
 
-              {alerts.map(alert => (
+//               {alerts.map(alert => (
 
-                <Transition type={transition} key={alert.id} appear={true}>
+//                 <Transition type={transition} key={alert.id} appear={true}>
 
-                  <AlertComponent style={{ margin: offset }} {...alert} />
+//                   <AlertComponent style={{ margin: offset }} {...alert} />
 
-                </Transition>
+//                 </Transition>
 
-              ))}
+//               ))}
 
-            </TransitionGroup>
+//             </TransitionGroup>
 
-          </Wrapper>,
+//           </Wrapper>,
 
-          root.current
+//           root.current
 
-        )}
+//         )}
 
-    </Context.Provider>
+//     </Context.Provider>
 
-  )
+//   )
 
-}
+// }
 
 
 
-Provider.propTypes = {
+// Provider.propTypes = {
 
-  offset: PropTypes.string,
+//   offset: PropTypes.string,
 
-  position: PropTypes.oneOf(Object.values(positions)),
+//   position: PropTypes.oneOf(Object.values(positions)),
 
-  timeout: PropTypes.number,
+//   timeout: PropTypes.number,
 
-  type: PropTypes.oneOf(Object.values(types)),
+//   type: PropTypes.oneOf(Object.values(types)),
 
-  transition: PropTypes.oneOf(Object.values(transitions)),
+//   transition: PropTypes.oneOf(Object.values(transitions)),
 
-  containerStyle: PropTypes.object,
+//   containerStyle: PropTypes.object,
 
-  template: PropTypes.oneOfType([PropTypes.element, PropTypes.func]).isRequired,
+//   template: PropTypes.oneOfType([PropTypes.element, PropTypes.func]).isRequired,
 
-  context: PropTypes.shape({
+//   context: PropTypes.shape({
 
-    Provider: PropTypes.object,
+//     Provider: PropTypes.object,
 
-    Consumer: PropTypes.object
+//     Consumer: PropTypes.object
 
-  })
+//   })
 
-}
+// }
 
 
 
-Provider.defaultProps = {
+// Provider.defaultProps = {
 
-  offset: '10px',
+//   offset: '10px',
 
-  position: positions.TOP_CENTER,
+//   position: positions.TOP_CENTER,
 
-  timeout: 0,
+//   timeout: 0,
 
-  type: types.INFO,
+//   type: types.INFO,
 
-  transition: transitions.FADE,
+//   transition: transitions.FADE,
 
-  containerStyle: {
+//   containerStyle: {
 
-    zIndex: 100
+//     zIndex: 100
 
-  },
+//   },
 
-  context: DefaultContext
+//   context: DefaultContext
 
-}
+// }
 
 
 
-export default Provider
+// export default Provider

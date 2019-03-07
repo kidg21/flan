@@ -6,20 +6,6 @@ import Label from './Label';
 
 
 
-//Scenarios: icon+label, label only, icon only, label+icon, stacked
-
-//iconfirst = [ Container, Icon, Label ]
-// labelFirst = [ Container, Label, Icon ]
-
-// if (labelFirst) {
-//   return (
-//     <div>{
-//       labelFirst.map(Component => (
-//         <Component key={ somethingunique ) />
-//       )}</div>
-//       )}
-
-
 const Container = styled.div`
 display:flex;
 flex-direction: ${props => (props.labelFirst ? 'row-reverse' : 'row')};
@@ -36,13 +22,15 @@ flex-direction: ${props => (props.labelFirst ? 'row-reverse' : 'row')};
 // };
 
 const defaultProps = {
-    iconProps: {nameProp: ["fal", "times"],
-                colorProp: "purple"},
-    labelProp: {contentProp: "yo brother"}
-  };
-
+  iconProps: {nameProp: ["fal", "times"],
+              colorProp: "blue"},
+  labelProp: {contentProp: "yo brother"}
+};
 
   function Command(props) {
+    const _iconProps = Object.assign({}, defaultProps.iconProps, props.iconProps);
+    const _labelProp = Object.assign({}, defaultProps.labelProp, props.labelProp);
+    props = { iconProps: _iconProps, labelProp: _labelProp };
     return (
         <Container>
         <Icon {...props.iconProps}/>
