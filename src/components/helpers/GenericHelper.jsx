@@ -7,8 +7,8 @@ export const Container = styled.div`
   text-align: left;
   width: 100%;
 
-  h5 {
+  /* h5 {
     margin-top: 28px;
     margin-bottom: 12px;
-  }
+  } */
 `
