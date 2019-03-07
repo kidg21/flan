@@ -17,7 +17,7 @@ const decorator = story => (
   );
 
   
-storiesOf("Blocks|List", module)
+storiesOf("blocks | List", module)
 
 .addWithChapters("List Types", {
   useTheme: false,
