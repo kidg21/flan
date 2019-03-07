@@ -1,0 +1,179 @@
+/* Local Google Fonts - Muli Family */
+/* muli-200 - latin */
+@font-face {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/muli-v12-latin-200.eot");
+  /* IE9 Compat Modes */
+  src: local("Muli ExtraLight"), local("Muli-ExtraLight"),
+    url("../fonts/muli-v12-latin-200.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/muli-v12-latin-200.woff2") format("woff2"),
+    url("../fonts/muli-v12-latin-200.woff") format("woff"),
+    url("../fonts/muli-v12-latin-200.ttf") format("truetype"),
+    url("../fonts/muli-v12-latin-200.svg#Muli") format("svg");
+  /* Legacy iOS */
+}
+
+/* muli-300 - latin */
+@font-face {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/muli-v12-latin-300.eot");
+  /* IE9 Compat Modes */
+  src: local("Muli Light"), local("Muli-Light"),
+    url("../fonts/muli-v12-latin-300.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/muli-v12-latin-300.woff2") format("woff2"),
+    url("../fonts/muli-v12-latin-300.woff") format("woff"),
+    url("../fonts/muli-v12-latin-300.ttf") format("truetype"),
+    url("../fonts/muli-v12-latin-300.svg#Muli") format("svg");
+  /* Legacy iOS */
+}
+
+/* muli-regular - latin */
+@font-face {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/muli-v12-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Muli Regular"), local("Muli-Regular"),
+    url("../fonts/muli-v12-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/muli-v12-latin-regular.woff2") format("woff2"),
+    url("../fonts/muli-v12-latin-regular.woff") format("woff"),
+    url("../fonts/muli-v12-latin-regular.ttf") format("truetype"),
+    url("../fonts/muli-v12-latin-regular.svg#Muli") format("svg");
+  /* Legacy iOS */
+}
+
+/* muli-600 - latin */
+@font-face {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/muli-v12-latin-600.eot");
+  /* IE9 Compat Modes */
+  src: local("Muli SemiBold"), local("Muli-SemiBold"),
+    url("../fonts/muli-v12-latin-600.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/muli-v12-latin-600.woff2") format("woff2"),
+    url("../fonts/muli-v12-latin-600.woff") format("woff"),
+    url("../fonts/muli-v12-latin-600.ttf") format("truetype"),
+    url("../fonts/muli-v12-latin-600.svg#Muli") format("svg");
+  /* Legacy iOS */
+}
+
+/* muli-700 - latin */
+@font-face {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/muli-v12-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local("Muli Bold"), local("Muli-Bold"),
+    url("../fonts/muli-v12-latin-700.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/muli-v12-latin-700.woff2") format("woff2"),
+    url("../fonts/muli-v12-latin-700.woff") format("woff"),
+    url("../fonts/muli-v12-latin-700.ttf") format("truetype"),
+    url("../fonts/muli-v12-latin-700.svg#Muli") format("svg");
+  /* Legacy iOS */
+}
+
+/* muli-800 - latin */
+@font-face {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/muli-v12-latin-800.eot");
+  /* IE9 Compat Modes */
+  src: local("Muli ExtraBold"), local("Muli-ExtraBold"),
+    url("../fonts/muli-v12-latin-800.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/muli-v12-latin-800.woff2") format("woff2"),
+    url("../fonts/muli-v12-latin-800.woff") format("woff"),
+    url("../fonts/muli-v12-latin-800.ttf") format("truetype"),
+    url("../fonts/muli-v12-latin-800.svg#Muli") format("svg");
+  /* Legacy iOS */
+}
+
+/* muli-900 - latin */
+@font-face {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/muli-v12-latin-900.eot");
+  /* IE9 Compat Modes */
+  src: local("Muli Black"), local("Muli-Black"),
+    url("../fonts/muli-v12-latin-900.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/muli-v12-latin-900.woff2") format("woff2"),
+    url("../fonts/muli-v12-latin-900.woff") format("woff"),
+    url("../fonts/muli-v12-latin-900.ttf") format("truetype"),
+    url("../fonts/muli-v12-latin-900.svg#Muli") format("svg");
+  /* Legacy iOS */
+}
+
+/* Local Google Fonts - Lato Family */
+/* lato-300 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/lato-v14-latin-300.eot");
+  /* IE9 Compat Modes */
+  src: local("Lato Light"), local("Lato-Light"),
+    url("../fonts/lato-v14-latin-300.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/lato-v14-latin-300.woff2") format("woff2"),
+    url("../fonts/lato-v14-latin-300.woff") format("woff"),
+    url("../fonts/lato-v14-latin-300.ttf") format("truetype"),
+    url("../fonts/lato-v14-latin-300.svg#Lato") format("svg");
+  /* Legacy iOS */
+}
+
+/* lato-regular - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lato-v14-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Lato Regular"), local("Lato-Regular"),
+    url("../fonts/lato-v14-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/lato-v14-latin-regular.woff2") format("woff2"),
+    url("../fonts/lato-v14-latin-regular.woff") format("woff"),
+    url("../fonts/lato-v14-latin-regular.ttf") format("truetype"),
+    url("../fonts/lato-v14-latin-regular.svg#Lato") format("svg");
+  /* Legacy iOS */
+}
+
+/* lato-700 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/lato-v14-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local("Lato Bold"), local("Lato-Bold"),
+    url("../fonts/lato-v14-latin-700.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/lato-v14-latin-700.woff2") format("woff2"),
+    url("../fonts/lato-v14-latin-700.woff") format("woff"),
+    url("../fonts/lato-v14-latin-700.ttf") format("truetype"),
+    url("../fonts/lato-v14-latin-700.svg#Lato") format("svg");
+  /* Legacy iOS */
+}
+
+/* lato-900 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/lato-v14-latin-900.eot");
+  /* IE9 Compat Modes */
+  src: local("Lato Black"), local("Lato-Black"),
+    url("../fonts/lato-v14-latin-900.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/lato-v14-latin-900.woff2") format("woff2"),
+    url("../fonts/lato-v14-latin-900.woff") format("woff"),
+    url("../fonts/lato-v14-latin-900.ttf") format("truetype"),
+    url("../fonts/lato-v14-latin-900.svg#Lato") format("svg");
+  /* Legacy iOS */
+}
