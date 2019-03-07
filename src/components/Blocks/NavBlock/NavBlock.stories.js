@@ -13,12 +13,18 @@ import {
   object
 } from "@storybook/addon-knobs";
 
-const title = ('Title Goooooooooes Here');
+const config = {
+  left: 'Storybook Left Nav',
+  // title: 'Jabba the Hut',
+  right: 'Storybook Right Nav',
+};
 
-storiesOf("Blocks|NavBlock", module)
+storiesOf("blocks | NavBlock", module)
   .addDecorator(checkA11y)
   // .addDecorator(withKnobs)
-  .add("work in progress", withInfo()(() => <NavBlock />), {
+  .addDecorator(story => <div style={{ padding: '1rem' }}>{story()}</div>)
+  // .add("work in progress", withInfo()(() => <NavBlock left="Da Props!" right="Right Props!" />), {
+  .add("work in progress", withInfo()(() => <NavBlock {...config} />), {
     // notes: "A Nav Block displays a combination of navigation actions, contextual description, and status indicators"
     notes: { markdown: NavBlockNotes },
   });
