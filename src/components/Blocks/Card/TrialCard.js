@@ -14,7 +14,6 @@ function TrialCard() {
             <CardHeader/>
             <Divider/>
             <CardOptions/>
-            <Divider/>
             <Table/>
         </Container>
     )

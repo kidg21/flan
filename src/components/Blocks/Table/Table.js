@@ -78,20 +78,40 @@ function TableFunction() {
             <Row>
               <TH> Data Category</TH>
               <TH> Data Result </TH>
+              <TH> Data Category</TH>
+              <TH> Data Result </TH>
+              <TH> Data Category</TH>
+              <TH> Data Result </TH>
               </Row>
               <Row>
                 <Cell>Row one, first cell</Cell>
                 <Cell>Row one, second cell</Cell>
-            </Row>
-            <Row>
+                <Cell>Row one, first cell</Cell>
+                <Cell>Row one, second cell</Cell>
                 <Cell>Row one, first cell</Cell>
                 <Cell>Row one, second cell</Cell>
             </Row>
             <Row>
+            <Cell>Row one, first cell</Cell>
+                <Cell>Row one, second cell</Cell>
+                <Cell>Row one, first cell</Cell>
+                <Cell>Row one, second cell</Cell>
                 <Cell>Row one, first cell</Cell>
                 <Cell>Row one, second cell</Cell>
             </Row>
             <Row>
+            <Cell>Row one, first cell</Cell>
+                <Cell>Row one, second cell</Cell>
+                <Cell>Row one, first cell</Cell>
+                <Cell>Row one, second cell</Cell>
+                <Cell>Row one, first cell</Cell>
+                <Cell>Row one, second cell</Cell>
+            </Row>
+            <Row>
+            <Cell>Row one, first cell</Cell>
+                <Cell>Row one, second cell</Cell>
+                <Cell>Row one, first cell</Cell>
+                <Cell>Row one, second cell</Cell>
                 <Cell>Row one, first cell</Cell>
                 <Cell>Row one, second cell</Cell>
             </Row>

@@ -20,7 +20,6 @@ const TH = styled.th`
 text-align: left;
 font-family: arial;
 font-size: 14px;
-padding: 5px 10px 5px;
 `
 
 
@@ -37,7 +36,6 @@ font-size: 14px;
 
 
 const Cell = styled.td`
-padding: 5px 10px 5px;
 `
 
 // const headers = ['Band', 'Singer', 'Inception', 'Label'];
