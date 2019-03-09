@@ -1,23 +1,47 @@
 import React from 'react';
 import { render } from 'react-dom';
-
 import Accordion from './Accordion';
-import TrialCard from '../Card/TrialCard';
+import CardHeader from "../Card/CardHeader";
+import CardOptions from "../Card/CardOptionsSection";
+import Divider from '../Card/CardDivider';
+import Table from '../Card/SimpleDataTable';
+import floodzoneFile from '../Card/floodzone.png';
 
+const image = {
+    src: floodzoneFile,
+    alt: 'Flood'
+};
 
 
 function AccordionReal() {
   return (
-    <div>
       <Accordion>
         <div label='Data Overlay 1'>
-<TrialCard/>
+            <Divider/>
+            <img src={image.src} alt={image.alt}/>
+            <CardOptions/>
         </div>
         <div label='Data Overlay 2'>
-<TrialCard/>
+            <Divider/>
+            <img src={image.src} alt={image.alt}/>
+            <CardOptions/>
+        </div>
+        <div label='Data Overlay 3'>
+            <Divider/>
+            <img src={image.src} alt={image.alt}/>
+            <CardOptions/>
+        </div>
+        <div label='Data Overlay 4'>
+            <Divider/>
+            <img src={image.src} alt={image.alt}/>
+            <CardOptions/>
+        </div>
+        <div label='Data Overlay 5'>
+            <Divider/>
+            <img src={image.src} alt={image.alt}/>
+            <CardOptions/>
         </div>
       </Accordion>
-    </div>
   );
 }
 

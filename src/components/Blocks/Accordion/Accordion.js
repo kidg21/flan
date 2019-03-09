@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import AccordionSection from './AccordionSection';
+import CardHeaderPanel from './AccordionSection';
 
 class Accordion extends Component {
   static propTypes = {
@@ -9,9 +9,7 @@ class Accordion extends Component {
 
   constructor(props) {
     super(props);
-
     const openSections = {};
-
     this.state = { openSections };
   }
 
@@ -37,15 +35,20 @@ class Accordion extends Component {
     } = this;
 
     return (
-      <div style={{ border: '0.25px solid #EAEDED' }}>
+      <div 
+      style={{
+        boxShadow: '0 0 20px rgba(0, 0, 0, .08)',
+        borderRadius: '5px',
+      }}
+      >
         {children.map(child => (
-          <AccordionSection
+          <CardHeaderPanel
             isOpen={!!openSections[child.props.label]}
             label={child.props.label}
             onClick={onClick}
           >
             {child.props.children}
-          </AccordionSection>
+          </CardHeaderPanel>
         ))}
       </div>
     );

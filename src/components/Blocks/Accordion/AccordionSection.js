@@ -5,9 +5,10 @@ import Icon from '../../atoms/Icon/Icon';
 
 
 
+
 const openProps = {
   nameProp: ["fal", "times"],
-  colorProp: "red",
+  colorProp: "dimgray",
 };
 
 
@@ -16,7 +17,7 @@ const closedProps = {
   colorProp: "blue",
 };
 
-class AccordionSection extends Component {
+class CardHeaderPanel extends Component {
   static propTypes = {
     children: PropTypes.instanceOf(Object).isRequired,
     isOpen: PropTypes.bool.isRequired,
@@ -37,13 +38,13 @@ class AccordionSection extends Component {
     return (
       <div
         style={{
-          background: isOpen ? 'white' : 'white',
-          border: '0.25px solid #EAEDED',
-          padding: '15px 10px 15px',
-          transition: '1s ease-in', 
+          fontFamily: 'arial',
+          overflow: 'hidden',
+          borderBottom: '0.25px solid #EAEDED',
+          padding: '.8em 10px .8em',
         }}
       >
-        <div onClick={onClick} style={{ cursor: 'pointer'}}>
+        <div onClick={onClick} style={{ cursor: 'pointer'}}>   
           {label}
           <div style={{ float: 'right' }}>
             {!isOpen && <Icon {...openProps}/>}
@@ -55,7 +56,6 @@ class AccordionSection extends Component {
             style={{
               background: 'white',
               marginTop: 10,
-              transition: '1s ease-in', 
             }}
           >
             {this.props.children}
@@ -66,4 +66,4 @@ class AccordionSection extends Component {
   }
 }
 
-export default AccordionSection;
+export default CardHeaderPanel;
