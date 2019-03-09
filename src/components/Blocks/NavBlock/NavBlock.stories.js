@@ -22,7 +22,7 @@ const config = {
   // setTitle(" Update Hook In Storybook ");
 };
 
-storiesOf("blocks | NavBlock", module)
+storiesOf("Blocks|NavBlock", module)
   .addDecorator(checkA11y)
   // .addDecorator(withKnobs)
   .addDecorator(story => <div style={{ padding: "1rem" }}>{story()}</div>)

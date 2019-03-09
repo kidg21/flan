@@ -1,49 +1,44 @@
-// import React from 'react';
-// import styled, {css} from 'styled-components';
-// import PropTypes from 'prop-types';
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// // import Icon from "./Icon";
-
-
-// const CommandContent = styled.a`
-//   font-size: 14px;
-//   font-family: muli;
-//  color: ${props => (props.primary ? 'ddodgerBlue' : 'black')};
-//  cursor: pointer;
-//  transition: color .25s ease-in;
-
-//   &:hover {
-//    color: darkblue;
-//  }
-// `
-
-
-// // const CommandIcon = styled.i`
-// //   color: dimgray;
-// //   cursor: pointer;
-// //   display: inline-block;
-// //   transition: opacity .2s ease-in;
-
-// //   &:hover {
-// //     color: darkgray;
-// //   }
-// // `
+import React from 'react';
+import styled, {css} from 'styled-components';
+import PropTypes from 'prop-types';
+import Icon from '../Icon/Icon';
+import Label from './Label';
 
 
 
+const Container = styled.div`
+display:flex;
+flex-direction: ${props => (props.labelFirst ? 'row-reverse' : 'row')};
+`
 
 
+// const iconProps = {
+//     nameProp: ["fal", "times"],
+//     colorProp: "purple",
+// };
 
-// class Command extends React.Component {
-// render () {
-//   return (
-//     <div>
-//       <FontAwesomeIcon icon={this.props.nameProp}/>
-//       <CommandContent>{this.props.contentProp}</CommandContent>
-//     </div>
-//   );
-// }
-// }
+// const labelProp = {
+//     contentProp: "yo sister"
+// };
 
+const defaultProps = {
+  iconProps: {nameProp: ["fal", "times"],
+              colorProp: "blue"},
+  labelProp: {contentProp: "yo brother"}
+};
 
-// export default Command;
+  function Command(props) {
+    const _iconProps = Object.assign({}, defaultProps.iconProps, props.iconProps);
+    const _labelProp = Object.assign({}, defaultProps.labelProp, props.labelProp);
+    props = { iconProps: _iconProps, labelProp: _labelProp };
+    return (
+        <Container>
+        <Icon {...props.iconProps}/>
+        <Label {...props.labelProp}/>
+        </Container>
+    );
+  }
+  
+  Command.defaultProps = defaultProps;
+  export default Command;
+  

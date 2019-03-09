@@ -1,11 +1,22 @@
 import React from "react";
 import ReactDOM from 'react-dom';
 import { storiesOf } from "@storybook/react";
-import Command from "./NewCommand";
+import Command from "./Command";
 
-const props = {
-    contentProp: "Dam Command"
+
+const iconProps = {
+    nameProp: ["fal", "times"]
 };
 
+const labelProp = {
+    contentProp: "grrrr"
+};
 
-storiesOf("Atoms|Command", module).add("Default Command", () => (<Command {...props}/>));
+const commandProps = {
+    iconProps: iconProps,
+    labelProp: labelProp
+}
+
+
+storiesOf("Atoms|Command", module)
+.add("Default Command", () => (<Command {...commandProps}/>));
