@@ -30,7 +30,13 @@ display: flex;
 
 
 const defaultProps = {
-    iconProps: {nameProp: ["fal", "times"],
+    commandOneProps: {nameProp: ["fal", "times"],
+                    colorProp: "dimgray"},
+    commandTwoProps: {nameProp: ["fal", "times"],
+                    colorProp: "dimgray"},
+    commandThreeProps: {nameProp: ["fal", "times"],
+                    colorProp: "dimgray"},
+    iconProps: {nameProp: ["far", "angle-up"],
                 colorProp: "dimgray"},
     labelProp: {contentProp: "Layer Card Expanded"}
   };
@@ -43,7 +49,10 @@ function CardContainer(props) {
                     <Label {...props.labelProp}/>
                 </CardTitle>
                 <CardCommands>
-                    <Icon {...props.iconProps}/>
+                  <Icon {...props.commandOneProps}/>
+                  <Icon {...props.commandTwoProps}/>
+                  <Icon {...props.commandThreeProps}/>
+                  <Icon {...props.iconProps}/>
                 </CardCommands>
                 </HeaderLayout>
     )

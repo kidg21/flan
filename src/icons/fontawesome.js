@@ -22,8 +22,12 @@ import {
   faChevronRight
 } from "@fortawesome/pro-light-svg-icons";
 import {
+  faAngleDown,
+  faAngleLeft,
+  faAngleUp,
   faBoxingGlove as faBoxingGloveRegular,
   faCode,
+  faEllipsisV,
   faHighlighter
 } from "@fortawesome/pro-regular-svg-icons";
 import {
@@ -34,11 +38,15 @@ import {
 library.add(
   faMoneyBill,
   faAcorn,
+  faAngleUp,
+  faAngleLeft,
+  faAngleDown,
   faBoxingGlove,
   faBoxingGloveRegular,
   faBoxingGloveSolid,
   faCode,
   faTimes,
+  faEllipsisV,
   faHighlighter,
   faBell,
   faBookmark,

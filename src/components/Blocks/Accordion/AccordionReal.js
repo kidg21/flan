@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import Accordion from './Accordion';
 import CardHeader from "../Card/CardHeader";
 import CardOptions from "../Card/CardOptionsSection";
-import Divider from '../Card/CardDivider';
+import Divider from '../../atoms/Divider/Divider';
 import Table from '../Card/SimpleDataTable';
 import floodzoneFile from '../Card/floodzone.png';
 

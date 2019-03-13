@@ -9,17 +9,16 @@ color: ${props => (props.primary ? 'white' : 'white')};
 ${props => props.isSecondary && css` background: white; color: black; border: 2px solid black; `};
 ${props => props.isDisabled && css` color: grey; background: lightgrey; border: 2px solid gray; `};
 margin: 0.5em;
-padding: 12px 0;
-width: ${props => (props.isLarger ? '100%' : '200px')};
+padding: 10px 0;
+width: ${props => (props.isLarger ? '100%' : '150px')};
 border: 0;
-display:block;
 font-weight: 500;
 border-radius: 35px;
 box-shadow: 0 10px 10px rgba(0, 0, 0, .08);
 cursor: pointer;
 
 &:hover {
-  box-shadow: 0 15px 15px rgba(0, 0, 0, .16);
+  box-shadow: 0 12px 12px rgba(0, 0, 0, .16);
 }
 `
 

@@ -35,12 +35,7 @@ class Accordion extends Component {
     } = this;
 
     return (
-      <div 
-      style={{
-        boxShadow: '0 0 20px rgba(0, 0, 0, .08)',
-        borderRadius: '5px',
-      }}
-      >
+      <div>
         {children.map(child => (
           <CardHeaderPanel
             isOpen={!!openSections[child.props.label]}

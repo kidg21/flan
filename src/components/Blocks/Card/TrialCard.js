@@ -4,26 +4,40 @@ import propTypes from 'prop-types';
 import Container from '../../atoms/Container/Container';
 import CardHeader from "./CardHeader";
 import CardOptions from "./CardOptionsSection";
-import Divider from './CardDivider';
-import Table from './SimpleDataTable';
-import floodzoneFile from './floodzone.png';
-
-const image = {
-    src: floodzoneFile,
-    alt: 'Flood'
-};
+import Divider from '../../atoms/Divider/Divider';
+import MapLegend from "./MapLegend";
 
 
-function TrialCard() {
+
+// iconProps: {nameProp: ["far", "angle-up"],
+// colorProp: "dimgray"},
+
+
+
+
+// const image = {
+//     src: floodzoneFile,
+//     alt: 'Flood'
+// };
+
+
+function LayerCard() {
     return (
         <Container>
             <CardHeader/>
-            <img src={image.src} alt={image.alt}/> 
             <Divider/>
+            <MapLegend/>
             <CardOptions/>
-            <Table/>
         </Container>
     )
   }
 
-export default TrialCard;
+export default LayerCard;
+
+
+
+{/* <CardHeader/>
+<img src={image.src} alt={image.alt}/> 
+<Divider/>
+<CardOptions/>
+<Table/> */}
