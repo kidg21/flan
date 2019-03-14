@@ -4,12 +4,11 @@ import styled, { css } from 'styled-components';
 const Legend = styled.div`
 padding: 0em 2em 1em 2em;
 `
-const Title = styled.h1`
+const Title = styled.h4`
 text-align: left;
+font-size: 14px;
+margin-top: 5px;
 margin-bottom: 5px;
-color: black;
-font-weight: bold;
-font-size: 90%;
 `
 const MyLegendLegendScale = styled.ul`
 margin: 0;
@@ -41,11 +40,11 @@ function MapLegend() {
 <Legend>
     <Title>Title of legend</Title>
     <MyLegendLegendScale>
-            <LegendLabels style={{background: '#8DD3C7'}}/><LegendText>One</LegendText>
-            <LegendLabels styled={{background: '#FFFFB3'}}/><LegendText>Two</LegendText>
-            <LegendLabels style={{background:'#BEBADA'}}/><LegendText>Three</LegendText>
-            <LegendLabels style={{background: '#FB8072'}}/><LegendText>Four</LegendText>
-            <LegendLabels style={{background: '#80B1D3'}}/><LegendText>Five</LegendText>
+            <LegendLabels style={{background: '#CD5C5C'}}/><LegendText>One</LegendText>
+            <LegendLabels style={{background: '#FF9999'}}/><LegendText>Two</LegendText>
+            <LegendLabels style={{background:'#FA8072'}}/><LegendText>Three</LegendText>
+            <LegendLabels style={{background: '#E9967A'}}/><LegendText>Four</LegendText>
+            <LegendLabels style={{background: '#FFA07A'}}/><LegendText>Five</LegendText>
     </MyLegendLegendScale>
 </Legend>
 

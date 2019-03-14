@@ -19,7 +19,7 @@ import {
   faTimes,
   faBoxingGlove,
   faChevronLeft,
-  faChevronRight
+  faChevronRight,
 } from "@fortawesome/pro-light-svg-icons";
 import {
   faAngleDown,
@@ -27,7 +27,13 @@ import {
   faAngleUp,
   faBoxingGlove as faBoxingGloveRegular,
   faCode,
+  faLayerGroup,
+  faToggleOff,
+  faToggleOn,
   faEllipsisV,
+  faShare,
+  faFilter,
+  faExpandArrows,
   faHighlighter
 } from "@fortawesome/pro-regular-svg-icons";
 import {
@@ -46,15 +52,21 @@ library.add(
   faBoxingGloveSolid,
   faCode,
   faTimes,
+  faToggleOff,
+  faToggleOn,
   faEllipsisV,
+  faExpandArrows,
   faHighlighter,
   faBell,
   faBookmark,
   faCoffee,
+  faLayerGroup,
   faEnvelope,
   faKey,
   faCircle,
+  faFilter,
   faFlag,
+  faShare,
   faApple,
   faChevronLeft,
   faChevronRight,
