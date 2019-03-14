@@ -1,7 +1,9 @@
-import React from "react";
+// import React from "react";
+import React, { useState, useEffect } from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { checkA11y } from "@storybook/addon-a11y";
+import Hooks from "./Hooks";
 import NavBlock from "./NavBlock";
 import NavBlockNotes from "./NavBlock.md";
 import { addDecorator } from "@storybook/react";
@@ -14,17 +16,19 @@ import {
 } from "@storybook/addon-knobs";
 
 const config = {
-  left: 'Storybook Left Nav',
-  // title: 'Jabba the Hut',
-  right: 'Storybook Right Nav',
+// left: 'Storybook Left Nav',
+// title: 'Jabba the Hut',
+// right: 'Storybook Right Nav',
+  // setTitle(" Update Hook In Storybook ");
 };
 
 storiesOf("Blocks|NavBlock", module)
   .addDecorator(checkA11y)
   // .addDecorator(withKnobs)
-  .addDecorator(story => <div style={{ padding: '1rem' }}>{story()}</div>)
+  .addDecorator(story => <div style={{ padding: "1rem" }}>{story()}</div>)
   // .add("work in progress", withInfo()(() => <NavBlock left="Da Props!" right="Right Props!" />), {
   .add("work in progress", withInfo()(() => <NavBlock {...config} />), {
     // notes: "A Nav Block displays a combination of navigation actions, contextual description, and status indicators"
-    notes: { markdown: NavBlockNotes },
-  });
+    notes: { markdown: NavBlockNotes }
+  })
+  .add("with Hooks", () => <Hooks />)
