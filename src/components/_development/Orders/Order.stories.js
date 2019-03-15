@@ -8,5 +8,5 @@ import Order from "./Order";
 
 
 
-storiesOf("Atoms|Order", module)
+storiesOf("_Development | Atoms / Order", module)
 .add("Order", () => (<Order/>));

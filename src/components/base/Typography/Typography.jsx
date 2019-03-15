@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 // Import colors and sizes variables
-import { colors, fontName, fontSize } from "../Variables/Variables";
+import { colors, fonts, fontSize } from "../Variables/Variables";
 
 const TypeContainer = styled.section`
   font-family: ${props =>

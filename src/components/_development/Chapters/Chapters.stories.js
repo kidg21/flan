@@ -1,9 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import Button from "../../atoms/Button/Button";
-import { addDecorator } from "@storybook/react";
-
-// addDecorator(story => <div style={{ padding: 20 }}>{story()}</div>);
 
 const decorator = story => (
     <div
@@ -17,7 +14,8 @@ const decorator = story => (
     </div>
   );
   
-storiesOf("Scratchpad|Addons/Chapters")
+// storiesOf("Scratchpad|Addons/Chapters")
+storiesOf("_Development | Scratchpad / Addons / Chapters")
 .addWithChapters("Story With Chapters", {
   useTheme: false,
   subtitle: "Display multiple components within one story!",
