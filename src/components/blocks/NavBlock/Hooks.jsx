@@ -1,15 +1,16 @@
 import React from "react";
-import NavBlock, { NavTitle, LeftCommand, RightCommand } from "./NavBlock";
+// import NavBlock, { NavTitle, LeftCommand, RightCommand } from "./NavBlock";
+import NavBlock, { title, command_left, command_right } from "./NavBlock";
 
 function Hooks() {
   return (
-    <NavTitle.Provider value={"I'm in the 'Hooks' component"}>
-      <LeftCommand.Provider value={"New Left Command!"}>
-      <RightCommand.Provider value={"New Right Command!"}>
+    <title.Provider value={"I'm in the 'Hooks' component"}>
+      <command_left.Provider value={"New Left Command!"}>
+      <command_right.Provider value={"New Right Command!"}>
         <NavBlock />
-      </RightCommand.Provider>
-      </LeftCommand.Provider>
-    </NavTitle.Provider>
+      </command_right.Provider>
+      </command_left.Provider>
+    </title.Provider>
   );
 }
 

@@ -1,20 +1,5 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { addDecorator } from "@storybook/react";
-
-addDecorator(story => <div style={{ padding: 20 }}>{story()}</div>);
-
-const decorator = story => (
-    <div
-      style={{
-        backgroundColor: 'rgba(0, 0, 0, 0.1)',
-        display: 'inline-block',
-        padding: '10px',
-      }}
-    >
-      {story()}
-    </div>
-  );
   
 storiesOf("Base|Standardization")
 .addWithChapters("Functionality", {
