@@ -1,8 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 import styledNormalize from "styled-normalize";
 // Import variables
-// import { colors, fontName, fontSize } from "../variables";
-import { colors, fontName, fontSize } from "../Variables/Variables";
+// import { colors, fonts, fontSize } from "../variables";
+import { colors, fonts, fontSize } from "../Variables/Variables";
 // Import Fonts
 // import Lato_700 from "../../fonts/lato-v14-latin-700.ttf"
 import "../../../css/fonts.css";
@@ -41,7 +41,7 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: inherit;
     }
     body {
-        font-family: ${fontName.body}; /* Muli */
+        font-family: ${fonts.body}; /* Muli */
         color: ${colors.grey_80};
         font-weight: 400;
     }
@@ -81,10 +81,8 @@ const GlobalStyles = createGlobalStyle`
       &:focus {
         ${"" /* color: $anchor-font-color-hover; */}
         }
-      }
-
       img { border: none; }
-    }
+      }
 
     /* Default paragraph styles */
     h1, h2, h3, h4, h5, h6, p {
@@ -97,7 +95,7 @@ const GlobalStyles = createGlobalStyle`
         margin: 0 0 1rem;
     }
     h1, h2, h3, h4, h5, h6 {
-        font-family: ${fontName.headline}; /* Muli */
+        font-family: ${fonts.headline}; /* Muli */
         font-weight: 700;
         margin: 0 0 .5rem;
     }
@@ -127,7 +125,7 @@ const GlobalStyles = createGlobalStyle`
         line-height: 1.5rem;
     }
     code {
-        font-family: ${fontName.data};
+        font-family: ${fonts.data};
         font-weight: bold;
         font-size: 0.85rem;
         line-height: 1.5rem;

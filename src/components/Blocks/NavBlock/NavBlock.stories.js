@@ -22,10 +22,10 @@ const config = {
   // setTitle(" Update Hook In Storybook ");
 };
 
-storiesOf("Blocks|NavBlock", module)
+storiesOf("_Development | Blocks / NavBlock", module)
   .addDecorator(checkA11y)
   // .addDecorator(withKnobs)
-  .addDecorator(story => <div style={{ padding: "1rem" }}>{story()}</div>)
+  // .addDecorator(story => <div style={{ padding: "1rem" }}>{story()}</div>)
   // .add("work in progress", withInfo()(() => <NavBlock left="Da Props!" right="Right Props!" />), {
   .add("work in progress", withInfo()(() => <NavBlock {...config} />), {
     // notes: "A Nav Block displays a combination of navigation actions, contextual description, and status indicators"

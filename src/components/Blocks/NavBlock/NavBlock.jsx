@@ -40,7 +40,7 @@ const OuterBlock = styled.div`
   ) =>
     props.dark &&
     css`
-      ${"" /* background-color: ${colors.grey_dark}; */}
+      ${'' /* background-color: ${colors.grey_dark}; */}
       background-color: ${props => colors.grey_dark};
     `}
   ${(
@@ -199,14 +199,14 @@ const RightBlock = styled.div`
   }
 `;
 
-const NavTitle = createContext();
-const LeftCommand = createContext();
-const RightCommand = createContext();
+const title = createContext("Default Title");
+const command_left = createContext("Default Left Command");
+const command_right = createContext("Default Right Command");
 
 function NavBlock(props) {
-  const title = useContext(NavTitle);
-  const left = useContext(LeftCommand);
-  const right = useContext(RightCommand);
+  const NavTitle = useContext(title);
+  const LeftCommand = useContext(command_left);
+  const RightCommand = useContext(command_right);
   // const [title, setTitle] = useState("Title Goes Here");
   // const [left, setLeft] = useState(props.left);
   // const [title, setTitle] = useState(props.title);
@@ -219,13 +219,13 @@ function NavBlock(props) {
     // setTitle(" Clicked Left ");
   };
   const clickTitle = () => {
-    // setTitle(" Title Goes Here ");
+    // setTitle(" Title Goes Here YAY!!!!!");
   };
   const clickRight = () => {
     // setTitle(" Clicked Right ");
   };
   return (
-    <React.Fragment>
+    // <React.Fragment>
       <OuterBlock dark>
         <LeftBlock hide>
           <a className="command-item" onClick={clickLeft}>
@@ -240,12 +240,12 @@ function NavBlock(props) {
               <FontAwesomeIcon icon={["far", "boxing-glove"]} size="lg" />
               <FontAwesomeIcon icon={["fas", "boxing-glove"]} size="lg" /> */}
             {/* <h6 className="command-name">{props.left}</h6> */}
-            <h6 className="command-name">{left}</h6>
+            <h6 className="command-name">{LeftCommand}</h6>
           </a>
         </LeftBlock>
         <CenterBlock>
           {/* <h5 onClick={clickTitle}>{title}</h5> */}
-          <h5>{title}</h5>
+          <h5>{NavTitle}</h5>
           {/* <h5>{value}</h5> */}
           {/* <h5 id="title">{props.title}</h5> */}
           {/* <h5 id="title">This is a functional Component</h5> */}
@@ -255,7 +255,7 @@ function NavBlock(props) {
             <a className="command-item align-right" onClick={clickRight}>
               {/* <h6 className="command-name">Right</h6> */}
               {/* <h6 className="command-name">{props.right}</h6> */}
-              <h6 className="command-name">{right}</h6>
+              <h6 className="command-name">{RightCommand}</h6>
               {/* <i className="command-icon fa fa-chevron-right" /> */}
               {/* <FontAwesomeIcon icon="chevron-right" />
                 <FontAwesomeIcon icon={["fas", "chevron-right"]} />
@@ -268,7 +268,7 @@ function NavBlock(props) {
           </div>
         </RightBlock>
       </OuterBlock>
-    </React.Fragment>
+    // </React.Fragment>
   );
 }
 
@@ -289,4 +289,5 @@ NavBlock.propTypes = {
 
 export default NavBlock;
 // export { value, NavTitle };
-export { NavTitle, LeftCommand, RightCommand };
+export { title, command_left, command_right };
+// export { NavTitle, LeftCommand, RightCommand };

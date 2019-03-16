@@ -12,7 +12,18 @@ module.exports = (baseConfig, env, defaultConfig) => {
   // Extend defaultConfig as you need.
   defaultConfig.module.rules.push({
     test: /\.(js|jsx)$/,
-    include: path.resolve(__dirname, "../src/components")
+    include: path.resolve(__dirname, "../src/components"),
+    loaders: [
+      {
+        loader: require.resolve('@storybook/addon-storysource/loader'),
+        options: {
+          prettierConfig: {
+            printWidth: 80,
+            singleQuote: false,
+          }
+        }
+      }
+    ],
   });
   defaultConfig.resolve.extensions.push(".js", ".jsx");
 
