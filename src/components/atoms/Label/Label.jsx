@@ -22,14 +22,13 @@ transition: color .25s ease-in;
 // };
 
 
-class Label extends React.Component {
+function Label (props) {
 
-render () {
   return (
-      <Content >{this.props.contentProp}</Content>
+      <Content>{props.contentProp}</Content>
   );
-}
-}
+};
+
 
 
 export default Label;

@@ -41,4 +41,3 @@ const defaultProps = {
   
   Command.defaultProps = defaultProps;
   export default Command;
-  

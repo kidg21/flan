@@ -22,15 +22,13 @@ const HiddenCheckbox = styled.input.attrs({ type: 'checkbox' })`
 
 const StyledCheckbox = styled.div`
   display: inline-block;
-  width: 16px;
-  height: 16px;
-  background: ${props => props.checked ? 'salmon' : 'papayawhip'}
+  width: 14px;
+  border: 1px solid darkgray;
+  height: 14px;
+  background: ${props => props.checked ? 'olivedrab' : 'white'}
   border-radius: 3px;
   transition: all 150ms;
-  
-  ${HiddenCheckbox}:focus + & {
-    box-shadow: 0 0 0 3px pink;
-  }
+  cursor: pointer;
 
 `
 
