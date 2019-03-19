@@ -38,37 +38,6 @@ font-size: 14px;
 const Cell = styled.td`
 `
 
-// const headers = ['Band', 'Singer', 'Inception', 'Label'];
-
-// const rows = [  
-// ['Napalm Death', 'Barney Greenway', '1981', 'Century Media'],
-// ['Carcass', 'Jeff Walker', '1985', 'Earache'],
-// ['Extreme Noise Terror', 'Dean Jones', '1985', 'Candlelight'],
-// ['Discordance Axis', 'Jon Chang', '1992', 'Hydrahead']
-// ]; 
-
-//<Table rows={rows} headers={headers} />
-
-// class TableFunction extends React.Component {
-//   render() {
-//     return (
-//       <Table>
-//         <Tr>
-//           {this.props.headers.map((header, i) => 
-//             <th scope='col' key={i}>{header}</th>
-//             )}
-//         </Tr>
-//         {this.props.rows.map((row, i) =>
-//           <TR key={i}>
-//           {row.map((cell, i) =>
-//             <TD key={i}>{cell}</TD>
-//         )}
-//         </TR>
-//         )}
-//       </Table>
-//     );
-//   }
-// }
 
 
 

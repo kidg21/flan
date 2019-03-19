@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { fonts, colors, shadows } from "../../base/Variables/Variables";
+import { fonts, colors } from "../../base/Variables/Variables";
 import { PlaceholderText } from "../../_helpers/Placeholders";
 
 const Card = styled.li`
@@ -8,7 +8,8 @@ const Card = styled.li`
   flex: none;
   width: 100%;
   background: ${colors.white};
-  box-shadow: ${shadows.dropShadow};
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  border-radius: 5px;
   /* Prototype Content - displays when a Card is empty */
   &:empty {
     &:before {

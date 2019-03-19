@@ -24,7 +24,7 @@ export const fonts = {
 
 // Sizes for typography scale
 export const fontSize = {
-  base: "16px"
+  base: "14px"
   // paragraph: '1rem',
   // h1: '2.75rem',
   // h2: '2.3125rem',

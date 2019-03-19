@@ -12,7 +12,6 @@ import {
   faFlag,
   faChevronLeft as faChevronLeftSolid,
   faChevronRight as faChevronRightSolid,
-  faMapMarker
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faAcorn,
@@ -24,10 +23,17 @@ import {
 import {
   faAngleDown,
   faAngleLeft,
+  faAngleRight,
   faAngleUp,
   faBoxingGlove as faBoxingGloveRegular,
   faCode,
   faLayerGroup,
+  faMap,
+  faPlus,
+  faMinus,
+  faGlobe,
+  faLocationArrow,
+  faMapMarker,
   faToggleOff,
   faToggleOn,
   faEllipsisV,
@@ -47,10 +53,12 @@ library.add(
   faAngleUp,
   faAngleLeft,
   faAngleDown,
+  faAngleRight,
   faBoxingGlove,
   faBoxingGloveRegular,
   faBoxingGloveSolid,
   faCode,
+  faGlobe,
   faTimes,
   faToggleOff,
   faToggleOn,
@@ -58,8 +66,13 @@ library.add(
   faExpandArrows,
   faHighlighter,
   faBell,
+  faMap,
+  faMapMarker,
   faBookmark,
   faCoffee,
+  faPlus,
+  faMinus,
+  faLocationArrow,
   faLayerGroup,
   faEnvelope,
   faKey,
@@ -71,6 +84,5 @@ library.add(
   faChevronLeft,
   faChevronRight,
   faChevronLeftSolid,
-  faChevronRightSolid,
-  faMapMarker
+  faChevronRightSolid
 );

@@ -6,10 +6,10 @@ import Experiment from "./Experiment";
 import ExperimentNotes from "./Experiment.md";
 
 // NavBlock
-storiesOf("_Development | Scratchpad / Experiments / Experiment", module)
-  .addDecorator(checkA11y)
-  .add("Experiment", withInfo()(() => <Experiment />), {
-    notes: { markdown: ExperimentNotes }
-  });
+// storiesOf("_Development | Scratchpad / Experiments / Experiment", module)
+//   .addDecorator(checkA11y)
+//   .add("Experiment", withInfo()(() => <Experiment />), {
+//     notes: { markdown: ExperimentNotes }
+//   });
 
 

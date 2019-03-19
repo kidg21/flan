@@ -1,8 +1,9 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import Dropdown from "./SimpleDropdown";
-import MenuSelect from "./NewDropdown";
+import DropdownClassic from "./Dropdown";
+import InlineDropdown from "./InlineDropdown";
 
 // Colors
-storiesOf("Atoms|Dropdown", module).add("Simple", () => <Dropdown/>)
-.add("Select Options", () => <MenuSelect/>);
+storiesOf("Atoms|Dropdown", module)
+.add("Classic Dropdown", () => <DropdownClassic/>)
+.add("Inline Dropdown", () => <InlineDropdown/>);

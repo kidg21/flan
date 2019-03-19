@@ -1,53 +1,46 @@
-import React, { Component } from 'react';
+import React, { useState, Fragment } from 'react';
 import PropTypes from 'prop-types';
-import CardHeaderPanel from './AccordionSection';
+import styled from 'styled-components';
+import IconGroup from './IconGroup';
 
-class Accordion extends Component {
-  static propTypes = {
-    children: PropTypes.instanceOf(Object).isRequired,
-  };
 
-  constructor(props) {
-    super(props);
-    const openSections = {};
-    this.state = { openSections };
-  }
+const AccordionSection = styled.div`
+font-family: arial;
+justify-content: space-between;
+display: flex;
+border-bottom: 0.25px solid #EAEDED;
+padding: .5em;
+background: white;
+cursor: pointer;
+`
 
-  onClick = label => {
-    const {
-      state: { openSections },
-    } = this;
 
-    const isOpen = !!openSections[label];
 
-    this.setState({
-      openSections: {
-        [label]: !isOpen
-      }
-    });
-  };
+const Accordion = ({ title, children, onToggle }) => {
+	const [visibility, setVisibility] = useState(false);
+	return (
+		<div>
+			<AccordionSection
+      		onClick={() => {
+             setVisibility(!visibility);
+             if (onToggle) onToggle(!visibility);
+          }}
+      >
+        <h4>
+				{title}
+			</h4>
+      <IconGroup style={{justifyContent: "floatRight"}}/>
+      </AccordionSection>
+			{visibility ? <Fragment>{children}</Fragment> : null}
+		</div>
+	);
+};
 
-  render() {
-    const {
-      onClick,
-      props: { children },
-      state: { openSections },
-    } = this;
-
-    return (
-      <div>
-        {children.map(child => (
-          <CardHeaderPanel
-            isOpen={!!openSections[child.props.label]}
-            label={child.props.label}
-            onClick={onClick}
-          >
-            {child.props.children}
-          </CardHeaderPanel>
-        ))}
-      </div>
-    );
-  }
-}
+Accordion.propTypes = {
+	children: PropTypes.any.isRequired,
+	onToggle: PropTypes.func,
+	title: PropTypes.string.isRequired
+};
 
 export default Accordion;
+
