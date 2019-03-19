@@ -62,5 +62,4 @@ const PanelBody = styled(PanelSection)`
   }
 `;
 
-export default Panel;
-export { PanelSection, PanelBody };
+export { Panel as default, PanelSection, PanelBody };
