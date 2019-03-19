@@ -70,8 +70,8 @@ configureViewport({
 });
 
 configureViewport({
-defaultViewport: "responsive"
-  // defaultViewport: "iphone6"
+// defaultViewport: "responsive"
+  defaultViewport: "iphone6"
 });
 
 // Theme

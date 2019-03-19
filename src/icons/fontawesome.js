@@ -35,7 +35,6 @@ import {
   faMinus,
   faGlobe,
   faLocationArrow,
-  faMapMarker,
   faToggleOff,
   faToggleOn,
   faEllipsisV,
