@@ -24,8 +24,6 @@ import MapLegend from "./MapLegend";
 function LayerCard() {
     return (
         <Container>
-            <CardHeader/>
-            <Divider/>
             <MapLegend/>
             <CardOptions/>
         </Container>

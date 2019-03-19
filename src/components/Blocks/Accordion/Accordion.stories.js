@@ -1,9 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import AccordionReal from "./AccordionReal";
-import Hello from "./AdditionalTrial";
+import Example from "./Trial";
 
 
 storiesOf("Blocks|Accordion", module)
-.add("Accordion Goals", () => <AccordionReal/>)
-.add("Accordion", () => <Hello/>);
+.add("Accordion", () => <Example/>);

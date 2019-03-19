@@ -1,7 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import LegendNav from './LegendHeader';
-import AccordionReal from "../../blocks/Accordion/AccordionReal";
 import Button from "../../atoms/Button/Button";
 
 const Container = styled.div`
@@ -62,7 +61,6 @@ function Panel() {
       <CardHeader>
           <LegendNav/>
         </CardHeader>
-            <AccordionReal/>
 <PanelFooter>
     <Button primary> Apply </Button>
 </PanelFooter>

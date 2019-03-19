@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { fonts, colors, shadows } from "../../base/Variables/Variables";
+import { fonts, colors} from "../../base/Variables/Variables";
 import { PlaceholderText } from "../../_helpers/Placeholders";
 
 const Panel = styled.div`
@@ -31,8 +31,9 @@ const PanelSection = styled.section`
   display: flex;
   flex-direction: column;
   flex: none;
-  background: ${colors.grey_light};
-  box-shadow: ${shadows.panelSectionShadow};
+  background: ${colors.white};
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  border-radius: 5px;
   z-index: 1;
   overflow: hidden;
   align-items: center;
