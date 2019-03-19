@@ -5,18 +5,19 @@ import Command from "./Command";
 
 
 const iconProps = {
-    nameProp: ["fal", "times"]
+    // nameProp: ["fal", "times"]
+    nameProp: "times"
 };
 
 const labelProp = {
-    contentProp: "grrrr"
+    contentProp: "Close"
 };
 
 const commandProps = {
     iconProps: iconProps,
-    labelProp: labelProp
+    labelProp: labelProp,
 }
 
-
 storiesOf("Atoms|Command", module)
+.addDecorator(story => <div style={{ padding: "1rem" }}>{story()}</div>)
 .add("Default Command", () => (<Command {...commandProps}/>));

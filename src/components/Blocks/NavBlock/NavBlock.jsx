@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { colors, shadows } from "../../base/Variables/Variables";
-// import colors from "../../base/Colors";
+import Command from "atoms/Command";
 
 const OuterBlock = styled.div`
   /* Max Characters: Title-18, Command-8, Icons-3 */
@@ -40,7 +40,7 @@ const OuterBlock = styled.div`
   ) =>
     props.dark &&
     css`
-      ${'' /* background-color: ${colors.grey_dark}; */}
+      ${"" /* background-color: ${colors.grey_dark}; */}
       background-color: ${props => colors.grey_dark};
     `}
   ${(
@@ -199,9 +199,35 @@ const RightBlock = styled.div`
   }
 `;
 
+// Context Hooks
 const title = createContext("Default Title");
 const command_left = createContext("Default Left Command");
 const command_right = createContext("Default Right Command");
+
+// Left Command
+const iconPropsLeft = {
+  nameProp: ["fas", "chevron-left"]
+};
+const labelPropLeft = {
+  contentProp: "Left"
+};
+const commandPropsLeft = {
+  iconProps: iconPropsLeft,
+  labelProp: labelPropLeft
+};
+
+// Right Command
+const iconPropsRight = {
+  // nameProp: ["fas", "chevron-right"]
+  nameProp: "chevron-right"
+};
+const labelPropRight = {
+  contentProp: "Right"
+};
+const commandPropsRight = {
+  iconProps: iconPropsRight,
+  labelProp: labelPropRight,
+};
 
 function NavBlock(props) {
   const NavTitle = useContext(title);
@@ -226,48 +252,53 @@ function NavBlock(props) {
   };
   return (
     // <React.Fragment>
-      <OuterBlock dark>
-        <LeftBlock hide>
-          <a className="command-item" onClick={clickLeft}>
-            {/* <i className="command-icon fa fa-chevron-left" /> */}
-            {/* <FontAwesomeIcon icon="chevron-left" /> */}
-            {/* The following is equivalent to the one above */}
-            {/* <FontAwesomeIcon icon={["fas", "chevron-left"]} />
+    <OuterBlock dark>
+      <LeftBlock>
+        <Command {...commandPropsLeft} labelFirst={true} />
+        {/* <a className="command-item" onClick={clickLeft}> */}
+        {/* <i className="command-icon fa fa-chevron-left" /> */}
+        {/* <FontAwesomeIcon icon="chevron-left" /> */}
+        {/* The following is equivalent to the one above */}
+        {/* <FontAwesomeIcon icon={["fas", "chevron-left"]} />
               <FontAwesomeIcon icon={["fal", "chevron-left"]} />
               <FontAwesomeIcon icon={["fab", "apple"]} />
               <FontAwesomeIcon icon={["fal", "acorn"]} size="2x" />
               <FontAwesomeIcon icon={["fal", "boxing-glove"]} size="lg" />
               <FontAwesomeIcon icon={["far", "boxing-glove"]} size="lg" />
               <FontAwesomeIcon icon={["fas", "boxing-glove"]} size="lg" /> */}
-            {/* <h6 className="command-name">{props.left}</h6> */}
-            <h6 className="command-name">{LeftCommand}</h6>
-          </a>
-        </LeftBlock>
-        <CenterBlock>
-          {/* <h5 onClick={clickTitle}>{title}</h5> */}
-          <h5>{NavTitle}</h5>
-          {/* <h5>{value}</h5> */}
-          {/* <h5 id="title">{props.title}</h5> */}
-          {/* <h5 id="title">This is a functional Component</h5> */}
-        </CenterBlock>
-        <RightBlock>
-          <div className="block-right">
-            <a className="command-item align-right" onClick={clickRight}>
-              {/* <h6 className="command-name">Right</h6> */}
-              {/* <h6 className="command-name">{props.right}</h6> */}
-              <h6 className="command-name">{RightCommand}</h6>
-              {/* <i className="command-icon fa fa-chevron-right" /> */}
-              {/* <FontAwesomeIcon icon="chevron-right" />
+        {/* <h6 className="command-name">{props.left}</h6> */}
+
+        {/* <h6 className="command-name">{LeftCommand}</h6> */}
+        {/* </a> */}
+      </LeftBlock>
+      <CenterBlock>
+        {/* <h5 onClick={clickTitle}>{title}</h5> */}
+        <h5>{NavTitle}</h5>
+        {/* <h5>{value}</h5> */}
+        {/* <h5 id="title">{props.title}</h5> */}
+        {/* <h5 id="title">This is a functional Component</h5> */}
+      </CenterBlock>
+      <RightBlock>
+        {/* <div className="block-right"> */}
+        <Command {...commandPropsRight} />
+          {/* <a className="command-item align-right" onClick={clickRight}> */}
+            {/* <h6 className="command-name">Right</h6> */}
+            {/* <h6 className="command-name">{props.right}</h6> */}
+
+            {/* <h6 className="command-name">{RightCommand}</h6> */}
+
+            {/* <i className="command-icon fa fa-chevron-right" /> */}
+            {/* <FontAwesomeIcon icon="chevron-right" />
                 <FontAwesomeIcon icon={["fas", "chevron-right"]} />
                 <FontAwesomeIcon icon={["fal", "chevron-right"]} />
                 <FontAwesomeIcon icon={["far", "bell"]} />
                 <FontAwesomeIcon icon={["far", "bookmark"]} />
                 <FontAwesomeIcon icon={["far", "code"]} />
                 <FontAwesomeIcon icon={["far", "highlighter"]} /> */}
-            </a>
-          </div>
-        </RightBlock>
-      </OuterBlock>
+          {/* </a> */}
+        {/* </div> */}
+      </RightBlock>
+    </OuterBlock>
     // </React.Fragment>
   );
 }

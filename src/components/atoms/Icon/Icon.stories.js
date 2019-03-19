@@ -7,7 +7,6 @@ const props = {
     colorProp: "red",
 };
 
-
-// Colors
 storiesOf("Atoms|Icon", module)
-.add("Icons", () => <Icon {...props}/>);
+.add("Icon (default)", () => <Icon/>)
+.add("Icons (w/props)", () => <Icon {...props}/>);
