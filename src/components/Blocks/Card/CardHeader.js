@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import propTypes from 'prop-types';
 import Container from '../../atoms/Container/Container';
 import Label from  '../../atoms/Label/Label';
-import IconGroup from './IconGroup';
+import IconGroup from '../../atoms/Icon/IconGroup';
 import Icon from '../../atoms/Icon/Icon';
 
 

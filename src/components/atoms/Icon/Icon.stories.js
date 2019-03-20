@@ -2,6 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import styled, {css} from 'styled-components';
 import Icon from "./Icon";
+import IconGroup from "./IconGroup";
 
 
 const Group = styled.div`
@@ -65,4 +66,5 @@ const minusProps = {
 // Colors
 storiesOf("Atoms|Icons", module)
 .add("Navigation Icons", () => <Group> <Icon {...downProps}/>  <Icon {...upProps}/> <Icon {...leftProps}/> <Icon {...rightProps}/> </Group>)
-.add("Map Icons", () => <Group> <Icon {...mapMarkerProps}/>  <Icon {...locatorProps}/> <Icon {...worldProps}/> <Icon {...gotoProps}/> <Icon {...plusProps}/> <Icon {...minusProps}/> </Group>);
+.add("Map Icons", () => <Group> <Icon {...mapMarkerProps}/>  <Icon {...locatorProps}/> <Icon {...worldProps}/> <Icon {...gotoProps}/> <Icon {...plusProps}/> <Icon {...minusProps}/> </Group>)
+.add("Icon Groups", () => <IconGroup/>);

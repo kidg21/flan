@@ -15,10 +15,6 @@ import MapLegend from "./MapLegend";
 
 
 
-// const image = {
-//     src: floodzoneFile,
-//     alt: 'Flood'
-// };
 
 
 function LayerCard() {

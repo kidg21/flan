@@ -1,15 +1,15 @@
 import React, { useState, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Icon from "../../atoms/Icon/Icon";
 
 const Container = styled.div`
-padding: 4px;
 cursor: pointer;
 display: flex;
-flex-direction: column;
-
 `
+const props = {
+nameProp: ["far", "ellipsis-v"],
+colorProp: "dimgray"}
 
 const Dropdown = ({ children, onToggle }) => {
 	const [visibility, setVisibility] = useState(false);
@@ -20,7 +20,7 @@ const Dropdown = ({ children, onToggle }) => {
              if (onToggle) onToggle(!visibility);
           }}
       >
-        <FontAwesomeIcon icon={["far", "ellipsis-v"]} color={"dimgray"}/>
+        <Icon {...props}/>
 			{visibility ? <Fragment>{children}</Fragment> : null}
 		</Container>
 	);

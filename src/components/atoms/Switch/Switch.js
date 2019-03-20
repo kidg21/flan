@@ -30,24 +30,25 @@ const Circle = styled.div`
   z-index: 1;
   background: ${props => props.checked ? 'white' : 'white'}
   border: 1px solid darkgray;
-  border-radius: 30px;
-  width: 16px;
-  height: 16px;
+  border-radius: 40px;
+  width: 15px;
+  line-height: normal;
+  height: 15px;
   transition: transform 300ms ease-in-out;
-  transform: ${props => props.checked ? 'translateX(19px)' : 'translateX(0px)'}; 
+  transform: ${props => props.checked ? 'translateX(14px)' : 'translateX(0px)'}; 
 
 `
 
 
 
 const StyledSwitch = styled.div`
-  width: 35px;
+  width: 30px;
   display: block;
   vertical-align: center;
-  height: 19px;
-  border-radius: 15px;
+  height: 17px;
+  border-radius: 20px;
   border: 1px solid darkgray;
-  background-image: ${props => props.checked ? 'linear-gradient(#51c2d7, #51dacf);' : 'white'};
+  background-image: ${props => props.checked ? 'linear-gradient(#39a839, #60c460);' : 'white'};
   transition: .4s ease;
   cursor: pointer;
   

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, {css} from 'styled-components';
 import PropTypes from 'prop-types';
-import Icon from '../../atoms/Icon/Icon';
+import Icon from './Icon';
 
 
 

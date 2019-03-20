@@ -36,7 +36,6 @@ const PanelSection = styled.section`
   border-radius: 5px;
   z-index: 1;
   overflow: hidden;
-  align-items: center;
   max-height: 100vh;
   transition: all 0.2s ease-in-out;
   /* Prototype Content - displays when a Panel Section is empty */

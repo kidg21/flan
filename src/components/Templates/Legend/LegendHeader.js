@@ -6,9 +6,10 @@ import Icon from '../../atoms/Icon/Icon';
 const HeaderLayout =styled.div`
   align-items: center
   background: white;
+  line-height: normal;
   font-size: 20px;
   display: grid;
-  margin: 5px 20px 5px;
+  padding: .8em 1em .5em;
   grid-template-columns: 25% 50% 25%;
   grid-template-rows: 2rem;
   grid-template-areas: "left center right";
@@ -26,7 +27,6 @@ const HeaderLayout =styled.div`
 const CardTitle = styled.div`
 justify-content: center;
 grid-area: center;
-font-size: 20px;
 display: flex;
 `
 
@@ -43,7 +43,7 @@ const defaultProps = {
     navProps: {nameProp: ["far", "angle-left"],
                 colorProp: "dimgray"},
     iconProps: {nameProp: ["far", "ellipsis-v"],
-                colorProp: "black"},
+                colorProp: "dimgray"},
   };
 
 
@@ -51,10 +51,9 @@ function LegendNav(props) {
     return (
         <HeaderLayout>
                 <PanelNav>
-                    <Icon {...props.navProps} />
                 </PanelNav>
                 <CardTitle>
-                    <h3>Layers Panel</h3>
+                    <h4 style={{margin: 0}}>Data Overlays</h4>
                 </CardTitle>
                 <CardCommands>
                     <Icon {...props.iconProps}/>
