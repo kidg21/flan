@@ -137,6 +137,87 @@ const GlobalStyles = createGlobalStyle`
         font-weight: normal;
         color: inherit;
     }
+
+/* Placeholder */
+    ::placeholder {
+        color: ${colors.grey_60};
+        letter-spacing: 1px;
+        font-weight: 400;
+    }  
+
+/* Labels */
+    label {
+        font-family: ${fonts.data};
+    }
+/* Inputs */
+    input:not([type]),
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="month"],
+    input[type="week"],
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="time"],
+    input[type="url"],
+    input[type="color"],
+    textarea,
+    select {
+        box-sizing: border-box;
+        width: 100%;
+        ${"" /* background-color: ${colors.white}; */}
+        color: ${colors.grey_dark};
+        ${"" /* font-family: inherit; */}
+        font-family: ${fonts.data};
+        font-weight: 700;
+        letter-spacing: 2px;
+        border-radius: 0;
+
+        /* border: 1px solid transparent;
+        border-bottom: 2px solid ${colors.grey_40}; */
+
+        ${"" /* border-color: ${props => (props.error ? colors.alert : "")}; */}
+        ${"" /* background-color: ${props => (props.error ? "#f9ebeb" : "")}; */}
+        ${"" /* caret-color: ${props => (props.error ? colors.alert : "")}; */}
+
+        ${"" /* border: 1px solid transparent; */}
+        ${"" /* border-bottom: 2px solid ${colors.grey_40}; */}
+        transition: border-color 0.25s linear, background 0.25s linear;
+        -webkit-appearance: none;
+    &::selection {
+        color: ${colors.white};
+        background: ${colors.success};
+    }
+    &:focus {
+        outline: none;
+        ${"" /* caret-color: ${colors.success}; */}
+        ${
+          "" /* background-color: ${props => (props.error ? "#f9ebeb" : "#f1f8eb")}; */
+        }
+        ${
+          "" /* border-color: ${props => (props.error ? colors.alert : colors.success)}; */
+        }
+        /* background: ${colors.success};
+        background-color: #f1f8eb;
+        border: 1px solid #c8e1af;
+        border-bottom: 2px solid ${colors.success}; */
+    }
+    &[disabled],
+    &[readonly] {
+        cursor: not-allowed;
+        pointer-events: none;
+        user-select: none;
+        background-color: ${colors.grey_light};
+        border-bottom: 2px solid ${colors.grey_20};
+        ::placeholder {
+            color: ${colors.grey_40};
+        }  
+    }
+}
 `;
 
 export default GlobalStyles;

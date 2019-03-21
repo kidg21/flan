@@ -7,7 +7,7 @@ import Form, {
   InputBlockLabel,
   InputGroup
 } from "./Form";
-import { StandardCheckbox } from "../../atoms/Checkbox/Checkbox";
+import Checkbox from "../../atoms/Checkbox/Checkbox";
 
 const cbox_1 = {
   id: "cbox_1",
@@ -20,7 +20,7 @@ const cbox_2 = {
 const cbox_3 = {
   id: "cbox_3",
   label:
-    "Little trees and bushes grow however makes them happy. Just let your mind wander and enjoy. This should make you happy. You don't have to spend all your time thinking about what you're doing, you just let it happen. Let's make a happy little mountain now. If I paint something, I don't want to have to explain what it is."
+    "Little trees and bushes grow however makes them happy. Just let your mind wander and enjoy. This should make you happy. You don't have to spend all your time thinking about what you're doing, you just let it happen. Let's make a happy little mountain now. If I paint something, I don't want to have to explain what it is.  All you have to learn here is how to have fun. Now, we're going to fluff this cloud. Put it in, leave it alone. Trees get lonely too, so we'll give him a little friend."
 };
 const cbox_4 = {
   id: "cbox_4",
@@ -44,21 +44,21 @@ storiesOf("_Development | Form", module).add("Form Layout", () => (
         <InputBlock>
           <InputBlockLabel />
           <InputGroup>
-            <StandardCheckbox {...cbox_1} />
-            <StandardCheckbox {...cbox_2} />
+            <Checkbox {...cbox_1} />
+            <Checkbox {...cbox_2} />
           </InputGroup>
           <InputGroup fullWidth>
-            <StandardCheckbox {...cbox_3} />
+            <Checkbox {...cbox_3} />
           </InputGroup>
         </InputBlock>
         <InputBlock>
           <InputBlockLabel />
           <InputGroup>
-            <StandardCheckbox {...cbox_4} />
-            <StandardCheckbox {...cbox_5} />
+            <Checkbox {...cbox_4} />
+            <Checkbox {...cbox_5} />
           </InputGroup>
           <InputGroup fullWidth>
-            <StandardCheckbox {...cbox_6} />
+            <Checkbox {...cbox_6} />
           </InputGroup>
         </InputBlock>
       </Form>
