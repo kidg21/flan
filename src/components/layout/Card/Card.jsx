@@ -1,15 +1,17 @@
 import styled, { css } from "styled-components";
-import { fonts, colors } from "../../base/Variables/Variables";
+import { fonts, colors, shadows } from "../../base/Variables/Variables";
+import Grid from "../../_helpers/Grid";
 import { PlaceholderText } from "../../_helpers/Placeholders";
 
-const Card = styled.li`
+const Card = styled.div`
   display: flex;
   flex-direction: column;
   flex: none;
   width: 100%;
   background: ${colors.white};
-  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
-  border-radius: 5px;
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, .1); */
+  box-shadow: ${shadows.dropShadow};
+  /* border-radius: 5px; */
   /* Prototype Content - displays when a Card is empty */
   &:empty {
     &:before {
@@ -20,12 +22,13 @@ const Card = styled.li`
   }
 `;
 
-const CardList = styled.ul`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-  grid-gap: 1rem;
-  background: ${colors.white};
-  padding: 1rem;
+// const CardList = styled.ul`
+const CardList = styled(Grid)`
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); */
+  /* grid-gap: 1rem; */
+  /* background: ${colors.grey_light}; */
+  /* padding: 1rem; */
   /* Prototype Content - displays when a Card List is empty */
   &:empty {
     &:before {

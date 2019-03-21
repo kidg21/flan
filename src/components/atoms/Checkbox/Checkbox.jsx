@@ -3,14 +3,14 @@ import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 import { colors, shadows } from "../../base/Variables/Variables";
 
-const StandardCheckboxContainer = styled.div`
+const CheckboxContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 0.5rem;
   align-items: inherit;
 `;
 
-const StandardCheckboxInput = styled.input.attrs({ type: "checkbox" })`
+const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   background-color: ${colors.white};
   border: 1px solid ${colors.grey_40};
   width: 1.2rem;
@@ -26,23 +26,25 @@ const StandardCheckboxInput = styled.input.attrs({ type: "checkbox" })`
   }
 `;
 
-const StandardCheckboxLabel = styled.label`
+const CheckboxLabel = styled.label`
   user-select: none;
-  font-size: small;
+  font-size: smaller;
   font-weight: 700;
   letter-spacing: 1px;
-  line-height: 1.25rem;
+  line-height: 1.4;
   cursor: pointer;
 `;
 
-const StandardCheckbox = ({ checked, ...props }) => (
-  <StandardCheckboxContainer>
-    <StandardCheckboxInput id={props.id} checked={checked} {...props} />
-    <StandardCheckboxLabel for={props.id}>{props.label}</StandardCheckboxLabel>
-  </StandardCheckboxContainer>
-);
+function Checkbox({ checked, ...props }) {
+  return (
+    <CheckboxContainer>
+      <CheckboxInput id={props.id} checked={checked} {...props} />
+      <CheckboxLabel for={props.id}>{props.label}</CheckboxLabel>
+    </CheckboxContainer>
+  );
+}
 
-const CheckboxContainer = styled.div`
+const StyledCheckboxContainer = styled.div`
   display: inline-block;
   vertical-align: middle;
 `;
@@ -64,75 +66,49 @@ const StyledCheckbox = styled.div`
   display: inline-block;
   width: 16px;
   height: 16px;
-  background: ${props => (props.checked ? "salmon" : "papayawhip")}
+  background: ${props => (props.checked ? "salmon" : "papayawhip")};
   border-radius: 3px;
   transition: all 150ms;
-  
+
   ${HiddenCheckbox}:focus + & {
     box-shadow: 0 0 0 3px pink;
   }
-
 `;
 
-const Checkbox = ({ className, checked, ...props }) => (
-  <CheckboxContainer className={className}>
+const CheckboxCustom = ({ className, checked, ...props }) => (
+  <StyledCheckboxContainer className={className}>
     <HiddenCheckbox checked={checked} {...props} />
     <StyledCheckbox checked={checked} />
-  </CheckboxContainer>
+  </StyledCheckboxContainer>
 );
 
-// class Trial extends React.Component {
-//     // state = { checked: false }
-//     // handleCheckboxChange = event =>
-//     //   this.setState({ checked: event.target.checked })
-//     // render() {
-//       return (
-//         <div>
-//           <label>
-//             <Checkbox
-//               checked={this.state.checked}
-//               onChange={this.handleCheckboxChange}
-//             />
-//             <span>Label Text</span>
-//           </label>
-//         </div>
-//       )
-//     }
-//   }
-
-//   export default Trial;
-
-const Trial = () => {
+const CustomCheckbox = () => {
   const [checked, setChecked] = useState(false);
   const handleCheckboxChange = event => {
     setChecked(event.target.checked);
   };
   return (
-    <div>
+    <React.Fragment>
       <label>
-        <Checkbox checked={checked} onChange={handleCheckboxChange} />
+        <CheckboxCustom checked={checked} onChange={handleCheckboxChange} />
         <span style={{ marginLeft: 8, fontSize: 14, fontFamily: "arial" }}>
           Label Text
         </span>
       </label>
-    </div>
+    </React.Fragment>
   );
 };
 
-StandardCheckbox.defaultProps = {
-  id: "1",
+Checkbox.defaultProps = {
+  id: "c1",
   label: "Checkbox Label"
-  // right: "Right Command"
 };
 
-StandardCheckbox.propTypes = {
+Checkbox.propTypes = {
   /** This is the Left nav command. */
   id: PropTypes.string,
   /** This is nav Title.  It is required. */
   label: PropTypes.string.isRequired
-  /** This is the Right nav command. */
-  // right: PropTypes.string
 };
 
-export default Trial;
-export { StandardCheckbox };
+export { Checkbox as default, CustomCheckbox };

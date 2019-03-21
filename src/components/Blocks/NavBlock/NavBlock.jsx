@@ -226,7 +226,7 @@ const labelPropRight = {
 };
 const commandPropsRight = {
   iconProps: iconPropsRight,
-  labelProp: labelPropRight,
+  labelProp: labelPropRight
 };
 
 function NavBlock(props) {
@@ -281,21 +281,21 @@ function NavBlock(props) {
       <RightBlock>
         {/* <div className="block-right"> */}
         <Command {...commandPropsRight} />
-          {/* <a className="command-item align-right" onClick={clickRight}> */}
-            {/* <h6 className="command-name">Right</h6> */}
-            {/* <h6 className="command-name">{props.right}</h6> */}
+        {/* <a className="command-item align-right" onClick={clickRight}> */}
+        {/* <h6 className="command-name">Right</h6> */}
+        {/* <h6 className="command-name">{props.right}</h6> */}
 
-            {/* <h6 className="command-name">{RightCommand}</h6> */}
+        {/* <h6 className="command-name">{RightCommand}</h6> */}
 
-            {/* <i className="command-icon fa fa-chevron-right" /> */}
-            {/* <FontAwesomeIcon icon="chevron-right" />
+        {/* <i className="command-icon fa fa-chevron-right" /> */}
+        {/* <FontAwesomeIcon icon="chevron-right" />
                 <FontAwesomeIcon icon={["fas", "chevron-right"]} />
                 <FontAwesomeIcon icon={["fal", "chevron-right"]} />
                 <FontAwesomeIcon icon={["far", "bell"]} />
                 <FontAwesomeIcon icon={["far", "bookmark"]} />
                 <FontAwesomeIcon icon={["far", "code"]} />
                 <FontAwesomeIcon icon={["far", "highlighter"]} /> */}
-          {/* </a> */}
+        {/* </a> */}
         {/* </div> */}
       </RightBlock>
     </OuterBlock>

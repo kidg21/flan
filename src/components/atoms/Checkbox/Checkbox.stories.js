@@ -1,28 +1,85 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import Trial, { StandardCheckbox } from "./Checkbox";
+import {
+  InputBlock,
+  InputBlockLabel,
+  InputGroup,
+  InputGroup_1_Colunn,
+  InputGroup_2_Colunn,
+  InputGroup_3_Colunn
+} from "../../layout/Form/Form";
+import Checkbox from "./Checkbox";
 
 const cbox_1 = {
   id: "cbox_1",
-  label: "First Checkbox"
+  label: "Box 1"
 };
 const cbox_2 = {
   id: "cbox_2",
-  label: "Second Checkbox"
+  label: "Box 2"
 };
 const cbox_3 = {
   id: "cbox_3",
+  label: "Box 3"
+};
+const cbox_4 = {
+  id: "cbox_4",
+  label: "Box 4"
+};
+const cbox_long = {
+  id: "cbox_long",
   label:
-    "Little trees and bushes grow however makes them happy. Just let your mind wander and enjoy. This should make you happy. You don't have to spend all your time thinking about what you're doing, you just let it happen. Let's make a happy little mountain now. If I paint something, I don't want to have to explain what it is."
+    "My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself."
 };
 
 storiesOf("Atoms|Checkbox", module)
-  .addDecorator(story => <div style={{ padding: "1rem" }}>{story()}</div>)
-  .add("Standard Checkbox", () => (
-    <React.Fragment>
-      <StandardCheckbox {...cbox_1} />
-      <StandardCheckbox {...cbox_2} />
-      <StandardCheckbox {...cbox_3} />
-    </React.Fragment>
+  .addDecorator(story => <div style={{ padding: "2rem" }}>{story()}</div>)
+  .add("Standard Checkbox", () => <Checkbox {...cbox_1} />)
+  .add("Check Block (Responsive)", () => (
+    <InputBlock>
+      <InputBlockLabel label="Check Block (Responsive)" />
+      <InputGroup>
+        <Checkbox {...cbox_1} />
+        <Checkbox {...cbox_2} />
+        <Checkbox {...cbox_3} />
+        <Checkbox {...cbox_4} />
+        <Checkbox {...cbox_long} />
+      </InputGroup>
+    </InputBlock>
   ))
-  .add("Custom Checkbox", () => <Trial />);
+  .add("Check Block (2 columns)", () => (
+    <InputBlock>
+      <InputBlockLabel label="Check Block (2 columns)" />
+      <InputGroup_2_Colunn>
+        <Checkbox {...cbox_1} />
+        <Checkbox {...cbox_2} />
+        <Checkbox {...cbox_3} />
+        <Checkbox {...cbox_4} />
+      </InputGroup_2_Colunn>
+    </InputBlock>
+  ))
+  .add("Check Block (3 columns)", () => (
+    <InputBlock>
+      <InputBlockLabel label="Check Block (3 columns)" />
+      <InputGroup_3_Colunn>
+        <Checkbox {...cbox_1} />
+        <Checkbox {...cbox_2} />
+        <Checkbox {...cbox_3} />
+        <Checkbox {...cbox_4} />
+      </InputGroup_3_Colunn>
+    </InputBlock>
+  ))
+  .add("Check Block (mixed columns)", () => (
+    <InputBlock>
+      <InputBlockLabel label="Check Block (mixed columns)" />
+      <InputGroup_3_Colunn>
+        <Checkbox {...cbox_1} />
+        <Checkbox {...cbox_2} />
+        <Checkbox {...cbox_3} />
+        <Checkbox {...cbox_4} />
+      </InputGroup_3_Colunn>
+      <InputGroup_1_Colunn>
+        <Checkbox {...cbox_long} />
+      </InputGroup_1_Colunn>
+    </InputBlock>
+  ));
