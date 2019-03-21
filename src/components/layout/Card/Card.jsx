@@ -22,12 +22,10 @@ const Card = styled.li`
 
 const CardList = styled.ul`
   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   grid-gap: 1rem;
-  flex: auto;
-  padding: 1rem;
-  align-self: stretch;
-  align-content: flex-start;
   background: ${colors.white};
+  padding: 1rem;
   /* Prototype Content - displays when a Card List is empty */
   &:empty {
     &:before {
@@ -37,5 +35,4 @@ const CardList = styled.ul`
   }
 `;
 
-export default Card;
-export { CardList };
+export { Card as default, CardList };

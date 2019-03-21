@@ -1,9 +1,67 @@
-//storiesOf('addChapter API', module)
-  //  .addChapter('Atoms', chapter => chapter
-    //    .add('Atom 1', render(1))
-      //  .add('Atom 2', render(2))
-        //.addChapter('Molecules', chapter => chapter
-          //  .addWithInfo('Molecule 1', render(1))
-            //.addWithInfo('Molecule 2', render(2)),
-       // )
-   // );
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import Panel, { PanelSection, PanelBody } from "../Panel/Panel";
+import Form, {
+  FormTitle,
+  InputBlock,
+  InputBlockLabel,
+  InputGroup
+} from "./Form";
+import { StandardCheckbox } from "../../atoms/Checkbox/Checkbox";
+
+const cbox_1 = {
+  id: "cbox_1",
+  label: "First Checkbox"
+};
+const cbox_2 = {
+  id: "cbox_2",
+  label: "Second Checkbox"
+};
+const cbox_3 = {
+  id: "cbox_3",
+  label:
+    "Little trees and bushes grow however makes them happy. Just let your mind wander and enjoy. This should make you happy. You don't have to spend all your time thinking about what you're doing, you just let it happen. Let's make a happy little mountain now. If I paint something, I don't want to have to explain what it is."
+};
+const cbox_4 = {
+  id: "cbox_4",
+  label: "Fourth Checkbox"
+};
+const cbox_5 = {
+  id: "cbox_5",
+  label: "Fifth Checkbox"
+};
+const cbox_6 = {
+  id: "cbox_6",
+  label:
+    "Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.  Let's get crazy. When things happen - enjoy them. They're little gifts. Steve wants reflections, so let's give him reflections. All you need to paint is a few tools, a little instruction, and a vision in your mind. Everybody needs a friend. This is your world."
+};
+
+storiesOf("_Development | Form", module).add("Form Layout", () => (
+  <Panel>
+    <PanelBody>
+      <Form>
+        <FormTitle />
+        <InputBlock>
+          <InputBlockLabel />
+          <InputGroup>
+            <StandardCheckbox {...cbox_1} />
+            <StandardCheckbox {...cbox_2} />
+          </InputGroup>
+          <InputGroup fullWidth>
+            <StandardCheckbox {...cbox_3} />
+          </InputGroup>
+        </InputBlock>
+        <InputBlock>
+          <InputBlockLabel />
+          <InputGroup>
+            <StandardCheckbox {...cbox_4} />
+            <StandardCheckbox {...cbox_5} />
+          </InputGroup>
+          <InputGroup fullWidth>
+            <StandardCheckbox {...cbox_6} />
+          </InputGroup>
+        </InputBlock>
+      </Form>
+    </PanelBody>
+  </Panel>
+));

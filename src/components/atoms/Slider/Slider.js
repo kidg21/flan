@@ -4,7 +4,7 @@ import styled, {css} from 'styled-components';
 
 const SliderPiece = styled.input.attrs({ type: 'range' })`
     -webkit-appearance: none;
-    width: 20em;
+    width: 20rem;
     height: 2px;
     border-radius: 5px;
     background: #ccc;
@@ -23,15 +23,17 @@ const SliderPiece = styled.input.attrs({ type: 'range' })`
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background: #00adb5;
+    background-image: linear-gradient(#00adb5, #30cffc);
     cursor: pointer;
+
+
   }
   
   &::-moz-range-thumb {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: #00adb5;
+    background-image: linear-gradient(#00adb5, #30cffc);
     cursor: pointer;
   }
   `
