@@ -38,6 +38,7 @@ const mapMarkerProps = {
     colorProp: "dimgray",
 };
 
+<<<<<<< HEAD
 const locatorProps = {
     nameProp: ["far", "map"],
     colorProp: "dimgray",
@@ -68,3 +69,8 @@ storiesOf("Atoms|Icons", module)
 .add("Navigation Icons", () => <Group> <Icon {...downProps}/>  <Icon {...upProps}/> <Icon {...leftProps}/> <Icon {...rightProps}/> </Group>)
 .add("Map Icons", () => <Group> <Icon {...mapMarkerProps}/>  <Icon {...locatorProps}/> <Icon {...worldProps}/> <Icon {...gotoProps}/> <Icon {...plusProps}/> <Icon {...minusProps}/> </Group>)
 .add("Icon Groups", () => <IconGroup/>);
+=======
+storiesOf("Atoms|Icon", module)
+.add("Icon (default)", () => <Icon/>)
+.add("Icons (w/props)", () => <Icon {...props}/>);
+>>>>>>> 694f422f07be0d20cae5345f9e5d66701ccaa657

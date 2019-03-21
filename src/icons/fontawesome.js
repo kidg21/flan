@@ -5,11 +5,13 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { faApple } from "@fortawesome/free-brands-svg-icons";
 import { faBell, faBookmark } from "@fortawesome/free-regular-svg-icons";
 import {
+  faTimes,
   faCoffee,
   faEnvelope,
   faKey,
   faCircle,
   faFlag,
+<<<<<<< HEAD
   faTimes as faError,
   faCheck,
   faInfo,
@@ -20,9 +22,18 @@ import {
 import {
   faAcorn,
   faTimes as faClose,
-  faBoxingGlove,
+=======
   faChevronLeft,
   faChevronRight,
+  faMapMarker
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faAcorn,
+  faTimes as faTimesLight,
+>>>>>>> 694f422f07be0d20cae5345f9e5d66701ccaa657
+  faBoxingGlove,
+  faChevronLeft as faChevronLeftLight,
+  faChevronRight as faChevronRightLight,
 } from "@fortawesome/pro-light-svg-icons";
 import {
   faAngleDown,
@@ -37,7 +48,6 @@ import {
   faMinus,
   faGlobe,
   faLocationArrow,
-  faMapMarker,
   faToggleOff,
   faToggleOn,
   faEllipsisV,
@@ -63,7 +73,12 @@ library.add(
   faBoxingGloveSolid,
   faCode,
   faGlobe,
+<<<<<<< HEAD
   faClose,
+=======
+  faTimes,
+  faTimesLight,
+>>>>>>> 694f422f07be0d20cae5345f9e5d66701ccaa657
   faToggleOff,
   faToggleOn,
   faEllipsisV,
@@ -91,6 +106,7 @@ library.add(
   faApple,
   faChevronLeft,
   faChevronRight,
-  faChevronLeftSolid,
-  faChevronRightSolid
+  faChevronLeftLight,
+  faChevronRightLight,
+  faMapMarker
 );
