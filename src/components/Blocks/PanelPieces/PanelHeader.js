@@ -47,13 +47,13 @@ const defaultProps = {
   };
 
 
-function LegendNav(props) {
+  const PanelHeader = ({title, ...props}) => {
     return (
         <HeaderLayout>
                 <PanelNav>
                 </PanelNav>
                 <CardTitle>
-                    <h4 style={{margin: 0}}>Data Overlays</h4>
+                    <h4 style={{margin: 0}}>{title}</h4>
                 </CardTitle>
                 <CardCommands>
                     <Icon {...props.iconProps}/>
@@ -62,5 +62,5 @@ function LegendNav(props) {
     )
   }
 
-LegendNav.defaultProps = defaultProps;
-export default LegendNav;
+PanelHeader.defaultProps = defaultProps;
+export default PanelHeader;

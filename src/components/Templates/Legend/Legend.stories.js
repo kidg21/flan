@@ -1,15 +1,17 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import Panel, { PanelSection, PanelBody } from "../../layout/Panel/Panel";
-import LegendHeader from "./LegendHeader";
+import PanelHeader from '../../blocks/PanelPieces/PanelHeader';
+import PanelPiece from "../../blocks/PanelPieces/PanelPiece";
 import LayerCard from '../../blocks/Card/TrialCard';
 import Accordion from '../../blocks/Accordion/Accordion';
+import Checkbox from "../../atoms/Checkbox/Checkbox";
 
 storiesOf("Templates|Panel", module)
 .add("Data Overlay Panel", () => (
   <Panel>
     <PanelSection>
-      <LegendHeader/>
+		<PanelHeader title="Data Overlays"/>
       </PanelSection>
     <PanelBody>
       
@@ -42,5 +44,53 @@ storiesOf("Templates|Panel", module)
       </PanelBody>
   </Panel>
 ))
+
+.add("Filter Panel", () => (
+  <Panel>
+    <PanelSection>
+		<PanelHeader title="Filters"/>
+      </PanelSection>
+    <PanelBody>
+		<PanelPiece title="Property"/>
+		<PanelPiece title="Point of Interest"/>
+		<PanelPiece title="Foreclosure"/>
+		<PanelPiece title="Zoning"/>
+		<PanelPiece title="Builder Sites"/>
+		<PanelPiece title="Traffic"/>
+		<PanelPiece title="Demographics"/>
+		<PanelPiece title="Education"/>
+		<PanelPiece title="Flipper"/>
+		<PanelPiece title="Transaction"/>
+		  </PanelBody>
+  </Panel>
+))
+
+
+.add("Select Filter Panel", () => (
+  <Panel>
+    <PanelSection>
+		<PanelHeader title="Select Filters"/>
+      </PanelSection>
+    <PanelBody>
+		<Checkbox/>
+		<Checkbox/>
+		<Checkbox/>
+		<Checkbox/>
+		<Checkbox/>
+		<Checkbox/>
+		<Checkbox/>
+		<Checkbox/>
+		<Checkbox/>
+		<Checkbox/>
+		<Checkbox/>
+				  </PanelBody>
+  </Panel>
+))
+
+
+;
+
+
+
 ;
 

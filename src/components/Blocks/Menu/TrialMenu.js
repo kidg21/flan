@@ -6,6 +6,7 @@ import Icon from "../../atoms/Icon/Icon";
 const Container = styled.div`
 cursor: pointer;
 display: inline-block;
+padding-left: 5px;
 `
 
 
@@ -26,17 +27,24 @@ const Dropdown = ({ children, onToggle }) => {
 
 
 const StyledUL = styled.ul`
-background: rgba(0, 0, 0, 0.8);
 border-radius: 3px;
+border: 0.5px solid #EAEDED;
 margin-top: 4px;
 width: 150px;
 `
 
 const StyledLI = styled.li`
 padding: 4px;
-font-family: muli;
-color: white;
-font-weight: bold;
+border-bottom: 0.25px solid #EAEDED;
+
+&:last-child {
+    border-bottom: 0px solid dimgray;
+}
+
+&:hover {
+    color: black;
+}
+
 `
 
 const EditDropdown = () => {
@@ -59,4 +67,3 @@ const EditDropdown = () => {
 };
 
 export default EditDropdown;
-

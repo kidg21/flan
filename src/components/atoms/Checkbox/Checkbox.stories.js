@@ -4,4 +4,4 @@ import Trial from "./Checkbox";
 
 // Colors
 storiesOf("Atoms|Checkbox", module)
-.add("Checkbox", () => <Trial/>);
+.add("Checkbox", () => <Trial />);
