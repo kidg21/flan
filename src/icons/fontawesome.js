@@ -10,19 +10,10 @@ import {
   faEnvelope,
   faKey,
   faCircle,
-  faFlag,
-<<<<<<< HEAD
-  faTimes as faError,
   faCheck,
   faInfo,
   faExclamation,
-  faChevronLeft as faChevronLeftSolid,
-  faChevronRight as faChevronRightSolid,
-} from "@fortawesome/free-solid-svg-icons";
-import {
-  faAcorn,
-  faTimes as faClose,
-=======
+  faFlag,
   faChevronLeft,
   faChevronRight,
   faMapMarker
@@ -30,7 +21,6 @@ import {
 import {
   faAcorn,
   faTimes as faTimesLight,
->>>>>>> 694f422f07be0d20cae5345f9e5d66701ccaa657
   faBoxingGlove,
   faChevronLeft as faChevronLeftLight,
   faChevronRight as faChevronRightLight,
@@ -73,23 +63,21 @@ library.add(
   faBoxingGloveSolid,
   faCode,
   faGlobe,
-<<<<<<< HEAD
-  faClose,
-=======
   faTimes,
   faTimesLight,
->>>>>>> 694f422f07be0d20cae5345f9e5d66701ccaa657
   faToggleOff,
   faToggleOn,
   faEllipsisV,
   faExpandArrows,
   faHighlighter,
   faBell,
-  faError,
   faMap,
   faMapMarker,
   faBookmark,
   faCoffee,
+  faCheck,
+  faInfo,
+  faExclamation,
   faPlus,
   faMinus,
   faLocationArrow,
@@ -97,9 +85,6 @@ library.add(
   faEnvelope,
   faKey,
   faCircle,
-  faInfo,
-  faCheck,
-  faExclamation,
   faFilter,
   faFlag,
   faShare,

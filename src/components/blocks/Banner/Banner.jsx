@@ -6,18 +6,19 @@ import IconBadge from "../../atoms/Badge/AlertBadge";
 const StyledBanner = styled.div`
   background: rgba(0, 0, 0, 0.75);
   color: white;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 1em;
+  display: inline-flex;
+  align-items: baseline;
+  padding: 1em;
   border-radius: 5px;
-  width: 25%;
-`
+  `
 
 const Notification = styled.h4`
 margin: 0;
+display: flex;
 font-family: system-ui;
 font-size: 14px;
 font-weight: normal;
+padding-right: 10px;
 `
 
 const NotificationLink = styled.a`
