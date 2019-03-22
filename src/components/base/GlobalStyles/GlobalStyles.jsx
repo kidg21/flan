@@ -32,7 +32,7 @@ const GlobalStyles = createGlobalStyle`
     html {
         box-sizing: border-box;
         font-size: ${fontSize.base};
-        line-height: 1.5rem;
+        line-height: 1.2;
     }
 
     *,
@@ -138,13 +138,17 @@ const GlobalStyles = createGlobalStyle`
         color: inherit;
     }
 
+/* Forms */
 /* Placeholder */
     ::placeholder {
         color: ${colors.grey_60};
         letter-spacing: 1px;
         font-weight: 400;
-    }  
-
+    }
+    ::selection {
+        color: ${colors.white};
+        background-color: ${colors.anchor};
+    }
 /* Labels */
     label {
         font-family: ${fonts.data};
@@ -169,55 +173,24 @@ const GlobalStyles = createGlobalStyle`
     select {
         box-sizing: border-box;
         width: 100%;
-        ${"" /* background-color: ${colors.white}; */}
         color: ${colors.grey_dark};
-        ${"" /* font-family: inherit; */}
         font-family: ${fonts.data};
         font-weight: 700;
         letter-spacing: 2px;
         border-radius: 0;
-
-        /* border: 1px solid transparent;
-        border-bottom: 2px solid ${colors.grey_40}; */
-
-        ${"" /* border-color: ${props => (props.error ? colors.alert : "")}; */}
-        ${"" /* background-color: ${props => (props.error ? "#f9ebeb" : "")}; */}
-        ${"" /* caret-color: ${props => (props.error ? colors.alert : "")}; */}
-
-        ${"" /* border: 1px solid transparent; */}
-        ${"" /* border-bottom: 2px solid ${colors.grey_40}; */}
         transition: border-color 0.25s linear, background 0.25s linear;
         -webkit-appearance: none;
-    &::selection {
-        color: ${colors.white};
-        background: ${colors.success};
-    }
-    &:focus {
-        outline: none;
-        ${"" /* caret-color: ${colors.success}; */}
-        ${
-          "" /* background-color: ${props => (props.error ? "#f9ebeb" : "#f1f8eb")}; */
+        &:focus {
+            outline: none;
         }
-        ${
-          "" /* border-color: ${props => (props.error ? colors.alert : colors.success)}; */
+        &[disabled],
+        &[readonly] {
+            border-bottom: none;
+            cursor: not-allowed;
+            pointer-events: none;
+            user-select: none;
         }
-        /* background: ${colors.success};
-        background-color: #f1f8eb;
-        border: 1px solid #c8e1af;
-        border-bottom: 2px solid ${colors.success}; */
     }
-    &[disabled],
-    &[readonly] {
-        cursor: not-allowed;
-        pointer-events: none;
-        user-select: none;
-        background-color: ${colors.grey_light};
-        border-bottom: 2px solid ${colors.grey_20};
-        ::placeholder {
-            color: ${colors.grey_40};
-        }  
-    }
-}
 `;
 
 export default GlobalStyles;

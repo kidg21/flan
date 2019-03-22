@@ -1,21 +1,32 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import {
-  InputBlock,
-  InputBlockLabel,
-  InputGroup,
-  InputGroup_1_Colunn,
-  InputGroup_2_Colunn,
-  InputGroup_3_Colunn
-} from "../../layout/Form/Form";
-import TextInput from "./Input";
+import Panel, { PanelBody } from "../../layout/Panel/Panel";
+import Form, { InputBlock } from "../../layout/Form/Form";
+import Input from "./Input";
 
-storiesOf("Atoms|Text Input", module)
-  .addDecorator(story => <div style={{ padding: "2rem" }}>{story()}</div>)
-  .add("Standard Text Input", () => (
-    <InputBlock>
-      <TextInput />
-      <TextInput disabled={true} />
-      <TextInput error={true} />
-    </InputBlock>
-  ));
+storiesOf("Atoms|Input", module).add("Input States", () => (
+  <Panel>
+    <PanelBody>
+      <Form>
+        <InputBlock>
+          <Input
+            label="Input ( Standard )"
+            helpText="This help text has been passed through a prop!"
+          />
+          <Input
+            label="Input ( Standard )"
+            required={true}
+            helpText="This help text has been passed through a prop!"
+          />
+          <Input label="Input ( Disabled )" disabled={true} />
+          <Input
+            label="Input ( Invalid )"
+            required={true}
+            error={true}
+            errorText="This error text has been passed through a prop!"
+          />
+        </InputBlock>
+      </Form>
+    </PanelBody>
+  </Panel>
+));

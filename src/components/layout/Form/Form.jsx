@@ -11,7 +11,7 @@ const Form = styled.form`
   align-content: flex-start;
   padding: 1rem 1.5rem;
   background-color: ${props =>
-    props.white ? colors.white : colors.grey_light};
+    props.bg_light ? colors.grey_light : colors.white};
   ${props =>
     props.dark &&
     css`
@@ -59,10 +59,24 @@ const Label = styled.h5`
 `;
 const InputBlockLabel = props => <Label>{props.label}</Label>;
 
+const Help = styled.label`
+  grid-column: 1 / -1;
+  font-size: smaller;
+  letter-spacing: 1px;
+`;
+const HelpText = props => <Help>{props.helpText}</Help>;
+
+const Error = styled.label`
+  grid-column: 1 / -1;
+  color: ${colors.alert};
+  font-size: smaller;
+  letter-spacing: 1px;
+`;
+const ErrorText = props => <Error>{props.errorText}</Error>;
+
 const InputGroup = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-  /* grid-template-columns: ${props => (props.fullWidth ? "repeat(1, 1fr)" : "")}; */
   grid-gap: 0.75rem;
   /* Prototype Content - displays when a Form is empty */
   &:empty {
@@ -88,6 +102,12 @@ FormTitle.defaultProps = {
 InputBlockLabel.defaultProps = {
   label: "Input Block Label"
 };
+HelpText.defaultProps = {
+  helpText: "Help Text Goes Here"
+};
+ErrorText.defaultProps = {
+  errorText: "This message appears when the input is invalid"
+};
 
 FormTitle.propTypes = {
   title: PropTypes.string
@@ -95,8 +115,22 @@ FormTitle.propTypes = {
 InputBlockLabel.propTypes = {
   label: PropTypes.string.isRequired
 };
-InputGroup.propTypes = {
-  fullWidth: PropTypes.string
+HelpText.propTypes = {
+  helpText: PropTypes.string
+};
+ErrorText.propTypes = {
+  errorText: PropTypes.string.isRequired
 };
 
-export { Form as default, FormTitle, InputBlock, InputBlockLabel, InputGroup, InputGroup_1_Colunn, InputGroup_2_Colunn, InputGroup_3_Colunn };
+export {
+  Form as default,
+  FormTitle,
+  InputBlock,
+  InputBlockLabel,
+  HelpText,
+  ErrorText,
+  InputGroup,
+  InputGroup_1_Colunn,
+  InputGroup_2_Colunn,
+  InputGroup_3_Colunn
+};

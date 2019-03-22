@@ -5,7 +5,8 @@ import Form, {
   FormTitle,
   InputBlock,
   InputBlockLabel,
-  InputGroup
+  InputGroup,
+  InputGroup_1_Colunn
 } from "./Form";
 import Checkbox from "../../atoms/Checkbox/Checkbox";
 
@@ -47,9 +48,9 @@ storiesOf("_Development | Form", module).add("Form Layout", () => (
             <Checkbox {...cbox_1} />
             <Checkbox {...cbox_2} />
           </InputGroup>
-          <InputGroup fullWidth>
+          <InputGroup_1_Colunn>
             <Checkbox {...cbox_3} />
-          </InputGroup>
+          </InputGroup_1_Colunn>
         </InputBlock>
         <InputBlock>
           <InputBlockLabel />
@@ -57,9 +58,9 @@ storiesOf("_Development | Form", module).add("Form Layout", () => (
             <Checkbox {...cbox_4} />
             <Checkbox {...cbox_5} />
           </InputGroup>
-          <InputGroup fullWidth>
+          <InputGroup_1_Colunn>
             <Checkbox {...cbox_6} />
-          </InputGroup>
+          </InputGroup_1_Colunn>
         </InputBlock>
       </Form>
     </PanelBody>
