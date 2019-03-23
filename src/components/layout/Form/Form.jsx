@@ -62,6 +62,7 @@ const InputBlockLabel = props => <Label>{props.label}</Label>;
 const Help = styled.label`
   grid-column: 1 / -1;
   font-size: smaller;
+  font-weight: 700;
   letter-spacing: 1px;
 `;
 const HelpText = props => <Help>{props.helpText}</Help>;
@@ -70,6 +71,7 @@ const Error = styled.label`
   grid-column: 1 / -1;
   color: ${colors.alert};
   font-size: smaller;
+  font-weight: 700;
   letter-spacing: 1px;
 `;
 const ErrorText = props => <Error>{props.errorText}</Error>;
