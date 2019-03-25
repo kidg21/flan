@@ -12,7 +12,7 @@ const StyledBanner = styled.div`
   justify-content: space-between;
   padding: 1em;
   border-radius: 5px;
-  
+
   @media (max-width: 700px) {
     background: palevioletred;
   }
@@ -47,6 +47,7 @@ function Banner({title}) {
         <StyledBanner>
           <Notification>{title}</Notification>
           <IconBadge/>
+          <NotificationLink>Click here to ollow the issue</NotificationLink>
           <FontAwesomeIcon icon={["fal", "times"]} color={"white"} />
         </StyledBanner>
     )

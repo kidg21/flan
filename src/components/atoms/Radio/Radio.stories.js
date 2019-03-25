@@ -15,7 +15,7 @@ const radio_1 = {
   name: "radio-group",
   value: "1",
   label: "Radio 1",
-  checked: true
+  // checked: true
 };
 const radio_2 = {
   id: "radio-2",
