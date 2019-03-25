@@ -4,8 +4,7 @@ import PropTypes from 'prop-types';
 
 const Content = styled.a`
 font-size: 14px;
-display:flex;
-font-family: muli;
+display: flex;
 margin: 0px 5px 0px 5px;
 color: ${props => (props.primary ? 'dodgerBlue' : 'black')};
 cursor: pointer;

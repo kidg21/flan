@@ -48,10 +48,11 @@ const defaultProps = {
   };
 
 
-  const PanelHeader = ({title, ...props}) => {
+  const FilterDetailHeader = ({title, ...props}) => {
     return (
         <HeaderLayout>
                 <PanelNav>
+                <Icon {...props.navProps}/>
                 </PanelNav>
                 <CardTitle>
                     <h4 style={{margin: 0}}>{title}</h4>
@@ -63,5 +64,5 @@ const defaultProps = {
     )
   }
 
-PanelHeader.defaultProps = defaultProps;
-export default PanelHeader;
+FilterDetailHeader.defaultProps = defaultProps;
+export default FilterDetailHeader;

@@ -10,12 +10,9 @@ import {
   faEnvelope,
   faKey,
   faCircle,
-<<<<<<< HEAD
   faCheck,
   faInfo,
   faExclamation,
-=======
->>>>>>> 393762747fa5e27f431ba52ed5a323a05557a468
   faFlag,
   faChevronLeft,
   faChevronRight,
@@ -24,11 +21,7 @@ import {
 import {
   faAcorn,
   faTimes as faTimesLight,
-<<<<<<< HEAD
   faBoxingGlove,
-=======
- faBoxingGlove,
->>>>>>> 393762747fa5e27f431ba52ed5a323a05557a468
   faChevronLeft as faChevronLeftLight,
   faChevronRight as faChevronRightLight,
 } from "@fortawesome/pro-light-svg-icons";

@@ -5,11 +5,17 @@ import IconBadge from "../../atoms/Badge/AlertBadge";
 
 const StyledBanner = styled.div`
   background: rgba(0, 0, 0, 0.75);
+  width: 20%;
   color: white;
   display: inline-flex;
   align-items: baseline;
+  justify-content: space-between;
   padding: 1em;
   border-radius: 5px;
+  
+  @media (max-width: 700px) {
+    background: palevioletred;
+  }
   `
 
 const Notification = styled.h4`
@@ -35,7 +41,6 @@ const NotificationLink = styled.a`
     color: #777;
   }
 `
-
 
 function Banner({title}) {
     return (

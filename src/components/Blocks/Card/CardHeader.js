@@ -8,7 +8,6 @@ import Icon from '../../atoms/Icon/Icon';
 
 
 const HeaderSection = styled.div`
-font-family: arial;
 overflow: hidden;
 border-bottom: 0.25px solid #EAEDED;
 padding: .8em 10px .8em;

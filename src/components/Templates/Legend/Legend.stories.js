@@ -3,6 +3,7 @@ import { storiesOf } from "@storybook/react";
 import Panel, { PanelSection, PanelBody } from "../../layout/Panel/Panel";
 import PanelHeader from '../../blocks/PanelPieces/PanelHeader';
 import PanelPiece from "../../blocks/PanelPieces/PanelPiece";
+import FilterDetailHeader from "../../blocks/PanelPieces/FilterDetailHeader";
 import LayerCard from '../../blocks/Card/TrialCard';
 import Accordion from '../../blocks/Accordion/Accordion';
 import Checkbox from "../../atoms/Checkbox/Checkbox";
@@ -11,7 +12,7 @@ storiesOf("Templates|Panel", module)
 .add("Data Overlay Panel", () => (
   <Panel>
     <PanelSection>
-		<PanelHeader title="Data Overlays"/>
+		<PanelHeader style={{fontFamily: "arial"}} title="Data Overlays"/>
       </PanelSection>
     <PanelBody>
       
@@ -69,7 +70,7 @@ storiesOf("Templates|Panel", module)
 .add("Select Filter Panel", () => (
   <Panel>
     <PanelSection>
-		<PanelHeader title="Select Filters"/>
+		<FilterDetailHeader title="Filter Detail"/>
       </PanelSection>
     <PanelBody>
 		<Checkbox/>
