@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Icon(props) {
   return (
-    <FontAwesomeIcon icon={props.nameProp} color={props.colorProp} />
+    <FontAwesomeIcon style={{cursor: "pointer"}} icon={props.nameProp} color={props.colorProp} />
   );
 }
 

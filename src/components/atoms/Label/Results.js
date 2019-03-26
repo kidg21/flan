@@ -3,15 +3,13 @@ import styled, {css} from 'styled-components';
 import PropTypes from 'prop-types';
 
 const Content = styled.a`
-display: flex;
+display: inline-flex;
 margin: 0px 5px 0px 5px;
-color: ${props => (props.primary ? 'dodgerBlue' : 'black')};
+color: #75ab3f;
+font-weight: bold;
+font-size: 18px;
 cursor: pointer;
 transition: color .25s ease-in;
-
-&:hover {
- color: darkblue;
-}
 `
 
 
@@ -20,13 +18,12 @@ transition: color .25s ease-in;
 // };
 
 
-function Label (props) {
+function Results (props) {
 
   return (
-      <Content>{props.contentProp}</Content>
-  );
-};
+      <div><Content>{props.resultsProp}</Content><span style={{fontSize: "12px"}}>results</span></div>);
+    };
 
 
 
-export default Label;
+export default Results;
