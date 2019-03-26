@@ -4,15 +4,15 @@ import PropTypes from 'prop-types';
 
 const StyledButton = styled.button`
 background: white;
-border: 2px solid #60AAD2;
+border: 1px solid #60AAD2;
 color: #3c93c1;
-margin: 0.5em;
-padding: 2px;
-font-size: 16px;
+font-size: 14px;
 font-weight: bold;
 width: 8em;
-height: 35px;
-border-radius: 40px;
+height: 2.3em;
+text-align:center;
+vertical-align: middle;
+border-radius: 20px;
 cursor: pointer;
 transition: opacity .15s;
 
@@ -22,7 +22,7 @@ transition: opacity .15s;
 }
 
 &:active {
-    background: red;
+    background: #60AAD2;
     color: white;
 }
 `

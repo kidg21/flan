@@ -21,7 +21,7 @@ transition: color .25s ease-in;
 function Results (props) {
 
   return (
-      <div><Content>{props.resultsProp}</Content><span style={{fontSize: "12px"}}>results</span></div>);
+      <div><Content>{props.resultsProp}</Content><span style={{fontSize: "11px"}}>results</span></div>);
     };
 
 

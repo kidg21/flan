@@ -32,7 +32,7 @@ const PanelSection = styled.section`
   flex-direction: column;
   flex: none;
   background: ${colors.white};
-  border: 0.5px solid #EAEDED;
+  // border: 0.5px solid #EAEDED;
   // box-shadow: ${shadows.panelSectionShadow};
   /* border-radius: 5px; */
   z-index: 1;
