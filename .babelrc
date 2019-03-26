@@ -27,8 +27,8 @@
     //   {
     //     "root": ["./src"],
     //     "alias": {
+    //       "attributes": "./src/attributes",
     //       "components": "./src/components",
-    //       "base": "./src/components/base",
     //       "blocks": "./src/components/blocks",
     //       "atoms": "./src/components/atoms"
     //     }

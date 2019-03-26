@@ -5,7 +5,7 @@ import React from "react";
 import styled from "styled-components";
 
 // Import colors and sizes variables
-import { colors, shadows } from "../../base/Variables/Variables";
+import { colors, shadows } from "../Variables/Variables";
 // Import Container component
 // import { Container } from '../../helpers/GenericHelper'
 // import { Grid } from '../../helpers/Grid'

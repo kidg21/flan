@@ -2,7 +2,7 @@ import React from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 import { HelpText, ErrorText } from "../../layout/Form/Form";
-import { colors, shadows } from "../../base/Variables/Variables";
+import { colors, shadows } from "../../../attributes/Variables/Variables";
 
 const TextInputContainer = styled.div`
   display: grid;

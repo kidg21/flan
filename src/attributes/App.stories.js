@@ -5,5 +5,5 @@ import App from "./App";
 
 
 // Colors
-storiesOf("Atoms|App", module)
-.add("A Greeting", () => <App/>);
+storiesOf('Style Guidelines|App', module)
+.add("Intro", () => <App/>);

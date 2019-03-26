@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { fonts, colors, shadows } from "../../base/Variables/Variables";
+import { fonts, colors, shadows } from "../../../attributes/Variables/Variables";
 import Grid from "../../_helpers/Grid";
 import { PlaceholderText } from "../../_helpers/Placeholders";
 

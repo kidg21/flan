@@ -2,7 +2,7 @@ import React, { createContext, useState, useEffect, useContext } from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { colors, shadows } from "../../base/Variables/Variables";
+import { colors, shadows } from "../../../attributes/Variables/Variables";
 import Command from "atoms/Command";
 
 const OuterBlock = styled.div`
