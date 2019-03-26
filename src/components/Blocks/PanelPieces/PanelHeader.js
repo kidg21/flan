@@ -10,6 +10,7 @@ const HeaderLayout =styled.div`
   font-size: 20px;
   display: grid;
   padding: .8em 1em .5em;
+  border-bottom: 0.25px solid #EAEDED;
   grid-template-columns: 25% 50% 25%;
   grid-template-rows: 2rem;
   grid-template-areas: "left center right";

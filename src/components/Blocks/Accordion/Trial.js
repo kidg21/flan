@@ -2,7 +2,6 @@ import React, {useState, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import Icon from '../../atoms/Icon/Icon';
-import LayerCard from '../Card/TrialCard';
 import Accordion from './Accordion';
 
 
@@ -17,7 +16,6 @@ const Example = () => {
 				console.log('visibility -->', visibility);
 			}}
 		>
-			<LayerCard/>
 		</Accordion>
     		<Accordion
         title="Second Title"
@@ -25,7 +23,6 @@ const Example = () => {
           console.log('visibility -->', visibility);
         }}
       >
-        <LayerCard/>
       </Accordion>
       		<Accordion
           title="Third Title"
@@ -33,7 +30,6 @@ const Example = () => {
             console.log('visibility -->', visibility);
           }}
         >
-          <LayerCard/>
         </Accordion>
         </div>
 	);

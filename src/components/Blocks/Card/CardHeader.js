@@ -5,6 +5,7 @@ import Container from '../../atoms/Container/Container';
 import Label from  '../../atoms/Label/Label';
 import IconGroup from '../../atoms/Icon/IconGroup';
 import Icon from '../../atoms/Icon/Icon';
+import Switch from "../../atoms/Switch/Switch";
 
 
 const HeaderSection = styled.div`
@@ -20,16 +21,16 @@ display: flex;
 const defaultProps = {
     // iconProps: {nameProp: ["far", "angle-up"],
     //             colorProp: "dimgray"},
-    labelProp: {contentProp: "Layer Card Expanded"}
   };
 
 
 
-function CardContainer(props) {
+function CardContainer({title}) {
     return (
         <HeaderSection>
-          <Label {...props.labelProp}/>
-          <IconGroup style={{justifyContent: "floatRight"}}/>
+          <Switch/>
+          <h4 style={{margin: 0, flex: "auto", paddingLeft: "1.5em"}}>{title}</h4>
+          <IconGroup />
           {/* <Icon  {...props.iconProps}/> */}
         </HeaderSection>
     )

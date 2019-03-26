@@ -2,9 +2,9 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import Panel, { PanelSection, PanelBody } from "../../layout/Panel/Panel";
 import PanelHeader from '../../blocks/PanelPieces/PanelHeader';
-import PanelPiece from "../../blocks/PanelPieces/PanelPiece";
+// import PanelPiece from "../../blocks/PanelPieces/PanelPiece";
 import FilterDetailHeader from "../../blocks/PanelPieces/FilterDetailHeader";
-import LayerCard from '../../blocks/Card/TrialCard';
+// import LayerCard from '../../blocks/Card/TrialCard';
 import Accordion from '../../blocks/Accordion/Accordion';
 import Checkbox from "../../atoms/Checkbox/Checkbox";
 
@@ -21,7 +21,6 @@ storiesOf("Templates|Panel", module)
 		    	onToggle={visibility => {
 			  	console.log('visibility -->', visibility);
 		    	}}>
-			      <LayerCard/>
 		     </Accordion>
 
 
@@ -30,7 +29,6 @@ storiesOf("Templates|Panel", module)
 		    	onToggle={visibility => {
 			  	console.log('visibility -->', visibility);
 		    	}}>
-			      <LayerCard/>
 		     </Accordion>
 
 
@@ -39,7 +37,6 @@ storiesOf("Templates|Panel", module)
 		    	onToggle={visibility => {
 			  	console.log('visibility -->', visibility);
 		    	}}>
-			      <LayerCard/>
 		     </Accordion>
 
       </PanelBody>
@@ -52,7 +49,7 @@ storiesOf("Templates|Panel", module)
 		<PanelHeader title="Filters"/>
       </PanelSection>
     <PanelBody>
-		<PanelPiece title="Property"/>
+		{/* <PanelPiece title="Property"/>
 		<PanelPiece title="Point of Interest"/>
 		<PanelPiece title="Foreclosure"/>
 		<PanelPiece title="Zoning"/>
@@ -61,7 +58,7 @@ storiesOf("Templates|Panel", module)
 		<PanelPiece title="Demographics"/>
 		<PanelPiece title="Education"/>
 		<PanelPiece title="Flipper"/>
-		<PanelPiece title="Transaction"/>
+		<PanelPiece title="Transaction"/> */}
 		  </PanelBody>
   </Panel>
 ))

@@ -9,6 +9,7 @@ const HeaderLayout =styled.div`
   line-height: normal;
   font-size: 20px;
   display: grid;
+  border-bottom: 0.25px solid #EAEDED;
   padding: .8em 1em .5em;
   grid-template-columns: 25% 50% 25%;
   grid-template-rows: 2rem;

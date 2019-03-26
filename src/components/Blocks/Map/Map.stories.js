@@ -5,5 +5,5 @@ import MapLegend from "./MapLegend";
 
 
 
-storiesOf("Blocks|Map Items", module)
+storiesOf("Blocks|Map", module)
 .add("Legend", () => <MapLegend/>);
