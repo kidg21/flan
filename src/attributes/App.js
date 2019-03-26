@@ -32,6 +32,10 @@ function App() {
         <Header>FLAN Design System</Header>
         <Body>A Design Language System utilizing reusable React components. <br/>
         Based off the principles of atomic design, FLAN provides the basic building blocks of a User Interface.</Body>
+        <div style={{padding: "20px"}}></div>
+        <h3 style={{ color: "#60aad2", lineHeight: "normal"}}>Our system is organized into atoms, blocks, layouts, templates, and views.<br/>
+        Please consult this site for examples and rules for putting together the UI.<br/>
+        Thank you. Enjoy your Flan!</h3>
       </Container>
     )
 

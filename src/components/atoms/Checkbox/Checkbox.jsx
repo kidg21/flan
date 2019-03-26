@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
-import { colors, fonts, fontSize, shadows } from "../../base/Variables/Variables";
+import { colors, fonts, fontSize, shadows } from "../../../attributes/Variables/Variables";
 
 const CheckboxContainer = styled.div`
   display: grid;

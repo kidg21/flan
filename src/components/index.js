@@ -1,6 +1,6 @@
-// Publicly exported files from 'base'
-export { default as Colors } from "./base/Colors";
-export { default as ColorsTest } from "./base/ColorsTest";
+// Publicly exported files from 'attributes'
+export { default as Colors } from "../attributes/Colors";
+export { default as ColorsTest } from "../attributes/ColorsTest";
 
 // Publicly exported files from 'atoms'
 export { default as Button } from "./atoms/Button";

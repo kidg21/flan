@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
-import { colors, shadows } from "../../base/Variables/Variables";
+import { colors, shadows } from "../../../attributes/Variables/Variables";
 
 const RadioContainer = styled.div`
   display: grid;
