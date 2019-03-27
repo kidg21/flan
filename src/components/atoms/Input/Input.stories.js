@@ -12,6 +12,7 @@ import {
 import Panel, { PanelBody } from "../../layout/Panel/Panel";
 import Form, { Section, SectionName } from "../../layout/Form/Form";
 import Input from "atoms/Input";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // Input ( Standard )
 storiesOf("Atoms|Input", module)
@@ -26,6 +27,8 @@ storiesOf("Atoms|Input", module)
       disabled={boolean("Disabled", false)}
       error={boolean("Error", false)}
       errorText={text("Error Text", "Stay with my, buddy...we can fix this!")}
+      prefix={text("Prefix", "")}
+      postfix={text("Postfix", "")}
       twoInputs={boolean("2 Inputs", false)}
       threeInputs={boolean("3 Inputs", false)}
       // disabled={radios(
@@ -86,7 +89,7 @@ storiesOf("Atoms|Input", module)
 // Input ( Prefix )
 storiesOf("Atoms|Input", module)
   .addDecorator(Padding)
-  .add("Input ( Prefix )", () => (
+  .add("Input ( Prefix Label )", () => (
     <Input
       label="Input ( Prefix )"
       prefix="http://"
@@ -98,11 +101,23 @@ storiesOf("Atoms|Input", module)
 // Input ( Postfix )
 storiesOf("Atoms|Input", module)
   .addDecorator(Padding)
-  .add("Input ( Postfix )", () => (
+  .add("Input ( Postfix Label )", () => (
     <Input
       label="Input ( Postfix )"
       postfix=".com"
       helpText="This help text has been passed through a prop!"
+    />
+  ));
+
+// Input ( Prefix )
+storiesOf("Atoms|Input", module)
+  .addDecorator(Padding)
+  .add("Input ( Prefix Icon )", () => (
+    <Input
+      label="Input ( Prefix Icon )"
+      prefix={<FontAwesomeIcon icon={["fas", "user"]} size="lg" fixedWidth />}
+      helpText="This help text has been passed through a prop!"
+      placeholder="This help text has been passed through a prop!"
     />
   ));
 
@@ -137,7 +152,10 @@ storiesOf("Atoms|Input", module).add("The Input Family", props => (
       <Form>
         <Section>
           <SectionName>The Input Family</SectionName>
-          <Input label="Input ( Standard )" />
+          <Input
+            label="Input ( Standard )"
+            helpText="This help text has been passed through a prop!"
+          />
           <Input
             label="Input ( Required )"
             required={true}
@@ -145,25 +163,39 @@ storiesOf("Atoms|Input", module).add("The Input Family", props => (
           />
           <Input label="Input ( Disabled )" disabled={true} />
           <Input
-            label="Input ( Invalid )"
+            label="Input ( Error )"
             required={true}
+            helpText="This help text has been passed through a prop!"
             error={true}
             errorText="This error text has been passed through a prop!"
           />
           <Input
-            label="Input ( Prefix )"
+            label="Input ( Prefix Label )"
             prefix="http://"
             helpText="This help text has been passed through a prop!"
             placeholder="This help text has been passed through a prop!"
           />
           <Input
-            label="Input ( Postfix )"
+            label="Input ( Postfix Label )"
             postfix=".com"
             helpText="This help text has been passed through a prop!"
           />
-          <Input label="Input ( 2 Inputs )" twoInputs={true} />
+          <Input
+            label="Input ( Prefix Icon )"
+            prefix={
+              <FontAwesomeIcon icon={["fas", "user"]} size="lg" fixedWidth />
+            }
+            helpText="This help text has been passed through a prop!"
+            placeholder="This help text has been passed through a prop!"
+          />
+          <Input
+            label="Input ( 2 Inputs )"
+            twoInputs={true}
+            helpText="This help text has been passed through a prop!"
+          />
           <Input
             label="Input ( 3 Inputs )"
+            helpText="This help text has been passed through a prop!"
             threeInputs={true}
             placeholder_2="Two!!"
             placeholder_3="Three!!!"

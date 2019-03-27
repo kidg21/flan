@@ -12,9 +12,9 @@ const TextInputContainer = styled.div`
       : props.twoInputs
       ? "repeat(2, 1fr)"
       : props.prefix
-      ? "minmax(auto, 1fr) minmax(auto, 3fr)"
+      ? "minmax(auto, auto) minmax(auto, 3fr)"
       : props.postfix
-      ? "minmax(auto, 3fr) minmax(auto, 1fr)"
+      ? "minmax(auto, 3fr) minmax(auto, auto)"
       : "repeat(1, 1fr)"};
   grid-gap: 0.35rem;
   align-content: flex-start;
@@ -47,13 +47,16 @@ const PrePostLabel = styled.label`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: small;
-  letter-spacing: 1px;
+  /* font-size: small; */
+  /* font-size: 1.1rem; */
+  font-weight: bold;
+  letter-spacing: 2px;
   text-transform: lowercase;
-  color: ${colors.grey_80};
+  color: ${colors.grey_60};
   background-color: ${colors.grey_light};
-  border: 1px solid ${colors.grey_40};
-  padding: 0 0.5rem;
+  border: 1px solid ${colors.grey_20};
+  border-bottom: 1px solid ${colors.grey_40};
+  padding: 0.25rem 0.5rem;
   white-space: nowrap;
 `;
 
