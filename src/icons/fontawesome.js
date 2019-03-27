@@ -16,14 +16,15 @@ import {
   faFlag,
   faChevronLeft,
   faChevronRight,
-  faMapMarker
+  faMapMarker,
+  faUser
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faAcorn,
   faTimes as faTimesLight,
   faBoxingGlove,
   faChevronLeft as faChevronLeftLight,
-  faChevronRight as faChevronRightLight,
+  faChevronRight as faChevronRightLight
 } from "@fortawesome/pro-light-svg-icons";
 import {
   faAngleDown,
@@ -93,5 +94,6 @@ library.add(
   faChevronRight,
   faChevronLeftLight,
   faChevronRightLight,
-  faMapMarker
+  faMapMarker,
+  faUser
 );
