@@ -1,1 +1,1 @@
-export { default } from "./NavBlock";
+export { default } from "./NavBlock.jsx";
