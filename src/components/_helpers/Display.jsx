@@ -9,4 +9,9 @@ const centerStyles = {
 };
 const Center = ({ children }) => <div style={centerStyles}>{children}</div>;
 
-export { Center };
+const padding = {
+  padding: "2rem"
+};
+const Padding = storyFn => <div style={padding}>{storyFn()}</div>;
+
+export { Center, Padding };
