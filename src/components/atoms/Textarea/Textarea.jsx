@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 // import { Grid_2, inputGrid } from "../../_helpers/Grid";
 import { HelpText, ErrorText } from "../../layout/Form/Form";
-import { colors, shadows } from "../../base/Variables/Variables";
+import { colors, shadows } from "../../../attributes/Variables/Variables";
 
 const TextInputContainer = styled.div`
   display: grid;
