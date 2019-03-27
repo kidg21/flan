@@ -1,7 +1,11 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
-import { fonts, colors, shadows } from "../../../attributes/Variables/Variables";
+import {
+  fonts,
+  colors,
+  shadows
+} from "../../../attributes/Variables/Variables";
 import { PlaceholderText } from "../../_helpers/Placeholders";
 
 const Form = styled.form`
@@ -70,8 +74,9 @@ const SectionName = styled.h5`
 
 const Help = styled.label`
   grid-column: 1 / -1;
+  color: ${colors.grey_60};
   font-size: smaller;
-  font-weight: 700;
+  /* font-weight: 700; */
   letter-spacing: 1px;
 `;
 const HelpText = props => <Help>{props.helpText}</Help>;
