@@ -31,7 +31,7 @@ const cbox_6 = {
     "Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.  Let's get crazy. When things happen - enjoy them. They're little gifts. Steve wants reflections, so let's give him reflections. All you need to paint is a few tools, a little instruction, and a vision in your mind. Everybody needs a friend. This is your world."
 };
 
-storiesOf("_Development | Form", module).add("Form Layout", () => (
+storiesOf("Layout|Form", module).add("Form Layout", () => (
   <Panel>
     <PanelBody>
       <Form>

@@ -1,25 +1,27 @@
 import React, { useState } from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
-import { colors, shadows } from "../../base/Variables/Variables";
+import { colors, fonts, fontSize, shadows } from "../../../attributes/Variables/Variables";
 
 const CheckboxContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-gap: 0.5rem;
+  grid-gap: 1rem;
+  border-radius: 3px;
+  padding: 5px;
   align-items: inherit;
 `;
 
 const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   background-color: ${colors.white};
   border: 1px solid ${colors.grey_40};
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 3.5px;
   cursor: pointer;
   -webkit-appearance: none;
   &:checked {
     background-color: ${colors.success};
-    box-shadow: ${shadows.checkedShadow};
   }
   &:focus {
     outline: none;
@@ -28,19 +30,19 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
 
 const CheckboxLabel = styled.label`
   user-select: none;
-  font-size: smaller;
-  font-weight: 700;
-  letter-spacing: 1px;
-  line-height: 1.4;
+  font-family: Muli;
+  line-height: 1;
   cursor: pointer;
 `;
 
 function Checkbox({ checked, ...props }) {
   return (
+    <div>
     <CheckboxContainer>
       <CheckboxInput id={props.id} checked={checked} {...props} />
       <CheckboxLabel for={props.id}>{props.label}</CheckboxLabel>
     </CheckboxContainer>
+    </div>
   );
 }
 
@@ -66,6 +68,7 @@ const StyledCheckbox = styled.div`
   display: inline-block;
   width: 16px;
   height: 16px;
+  border-radius: 3px;
   background: ${props => (props.checked ? "salmon" : "papayawhip")};
   border-radius: 3px;
   transition: all 150ms;
@@ -91,7 +94,7 @@ const CustomCheckbox = () => {
     <React.Fragment>
       <label>
         <CheckboxCustom checked={checked} onChange={handleCheckboxChange} />
-        <span style={{ marginLeft: 8, fontSize: 14, fontFamily: "arial" }}>
+        <span>
           Label Text
         </span>
       </label>

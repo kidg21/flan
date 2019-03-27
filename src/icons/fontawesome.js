@@ -10,6 +10,9 @@ import {
   faEnvelope,
   faKey,
   faCircle,
+  faCheck,
+  faInfo,
+  faExclamation,
   faFlag,
   faChevronLeft,
   faChevronRight,
@@ -18,7 +21,7 @@ import {
 import {
   faAcorn,
   faTimes as faTimesLight,
- faBoxingGlove,
+  faBoxingGlove,
   faChevronLeft as faChevronLeftLight,
   faChevronRight as faChevronRightLight,
 } from "@fortawesome/pro-light-svg-icons";
@@ -72,6 +75,9 @@ library.add(
   faMapMarker,
   faBookmark,
   faCoffee,
+  faCheck,
+  faInfo,
+  faExclamation,
   faPlus,
   faMinus,
   faLocationArrow,

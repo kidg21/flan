@@ -1,7 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
   
-storiesOf("Base|Standardization")
+storiesOf("Style Guidelines|Standardization")
 .addWithChapters("Functionality", {
   useTheme: false,
   subtitle: "Rules and Guidlines for UI/UX",

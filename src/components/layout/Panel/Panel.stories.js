@@ -5,7 +5,7 @@ import Card, { CardList } from "../Card/Card";
 import Panel, { PanelSection, PanelBody } from "../Panel/Panel";
 import PanelNotes from "./Panel.md";
 
-storiesOf("_Development | Panel", module)
+storiesOf("Layout|Panel", module)
   .addDecorator(checkA11y)
   .add("Panel - Outer Wrapper", () => <Panel />, {
     notes: { markdown: PanelNotes }

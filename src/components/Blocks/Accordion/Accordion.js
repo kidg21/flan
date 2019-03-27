@@ -8,7 +8,6 @@ import Switch from "../../atoms/Switch/Switch";
 
 
 const AccordionSection = styled.div`
-font-family: arial;
 display: flex;
 line-height: normal;
 border-bottom: 0.25px solid #EAEDED;

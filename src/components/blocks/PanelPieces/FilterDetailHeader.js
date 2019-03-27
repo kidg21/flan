@@ -13,7 +13,6 @@ padding-right: 10px;
 padding-left: 10px;
 background: white;
 `
-
 const HeaderLayout =styled.div`
   align-items: center;
   background: white;
@@ -57,21 +56,22 @@ const defaultProps = {
                 colorProp: "dimgray"},
     iconProps: {nameProp: ["far", "ellipsis-v"],
                 colorProp: "dimgray"},
-    numberProp: {resultsProp: "0"},
+    numberProp: {resultsProp: "28"},
     exitProps: {nameProp: ["fal", "times"],
-                colorProp: "dimgray"},
+               colorProp: "dimgray"},
   };
 
 
-  const PanelHeader = ({title, ...props}) => {
+  const FilterDetailHeader = ({title, ...props}) => {
     return (
       <div>
       <Container>
-      <Results {...props.numberProp}/>
-      <Icon {...props.exitProps}/>
-    </Container>
+        <Results {...props.numberProp}/>
+        <Icon {...props.exitProps}/>
+      </Container>
         <HeaderLayout>
                 <PanelNav>
+                <Icon {...props.navProps}/>
                 </PanelNav>
                 <CardTitle>
                     <h4 style={{margin: 0}}>{title}</h4>
@@ -84,5 +84,5 @@ const defaultProps = {
     )
   }
 
-PanelHeader.defaultProps = defaultProps;
-export default PanelHeader;
+FilterDetailHeader.defaultProps = defaultProps;
+export default FilterDetailHeader;

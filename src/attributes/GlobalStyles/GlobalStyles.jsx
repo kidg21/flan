@@ -5,7 +5,7 @@ import styledNormalize from "styled-normalize";
 import { colors, fonts, fontSize } from "../Variables/Variables";
 // Import Fonts
 // import Lato_700 from "../../fonts/lato-v14-latin-700.ttf"
-import "../../../css/fonts.css";
+import "../../css/fonts.css";
 
 const GlobalStyles = createGlobalStyle`
 

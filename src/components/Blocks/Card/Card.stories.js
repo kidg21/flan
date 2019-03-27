@@ -1,13 +1,11 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import LayerCard from "./TrialCard";
-import MapLegend from "./MapLegend";
-import CardContainer from "./CardHeader";
+import CardHeader from "./CardHeader"
+import NavCard from "./NavCard";
 
 
 
 
 storiesOf("Blocks|Card", module)
-.add("Map Legend", () => <MapLegend/>)
-.add("Header", () => <CardContainer/>)
-.add("Layer Card", () => <LayerCard/>);
+.add("Header", () => <CardHeader title="Card Header"/>)
+.add("Nav Card", () => <NavCard title="Navigation Card" />);

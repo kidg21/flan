@@ -4,7 +4,6 @@ import Icon from '../../atoms/Icon/Icon';
 
 
 const HeaderSection = styled.div`
-font-family: arial;
 overflow: hidden;
 background: white;
 border-bottom: 0.25px solid #EAEDED;

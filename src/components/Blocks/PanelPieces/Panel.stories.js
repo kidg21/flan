@@ -1,7 +1,9 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import PanelPiece from "./PanelPiece";
+import PanelHeader from "./PanelHeader";
+import FilterDetailHeader from "./FilterDetailHeader";
 
 
-storiesOf("Blocks|Panel Parts", module)
-.add("Panel Piece", () => <PanelPiece title="Panel Piece"/> );
+storiesOf("Blocks|Panel", module)
+.add("Header", () => <PanelHeader title="Panel Header"/> )
+.add("Detail Header", () => <FilterDetailHeader title="Detail Header"/> );

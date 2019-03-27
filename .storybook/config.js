@@ -16,7 +16,7 @@ import chaptersAddon from "react-storybook-addon-chapters";
 import "/icons/fontawesome";
 
 // Create and add global styles
-import GlobalStyles from "../src/components/base/GlobalStyles/GlobalStyles";
+import GlobalStyles from "../src/attributes/GlobalStyles/GlobalStyles";
 
 function withGlobalStyles(storyFn) {
   return (
@@ -70,8 +70,8 @@ configureViewport({
 });
 
 configureViewport({
-  // defaultViewport: "responsive"
-  defaultViewport: "iphone6"
+  defaultViewport: "responsive"
+  // defaultViewport: "iphone6"
 });
 
 // Theme

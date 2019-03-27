@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { fonts, colors } from "../../base/Variables/Variables";
+import { fonts, colors } from "../../../attributes/Variables/Variables";
 import { PlaceholderText } from "../../_helpers/Placeholders";
 
 const Page = styled.div`

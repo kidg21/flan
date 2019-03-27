@@ -8,9 +8,9 @@ const BadgeContainer = styled.div`
     justify-content: center;
     align-content: center;
     width: 2em;
+    padding-top: 7px;
     height: 2em;
     border-radius: 20px;
-    padding: 2px;
     background: #75ab3f;
     color: white;
 `
