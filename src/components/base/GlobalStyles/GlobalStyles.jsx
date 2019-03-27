@@ -178,17 +178,18 @@ const GlobalStyles = createGlobalStyle`
         font-weight: 700;
         letter-spacing: 2px;
         border-radius: 0;
-        transition: border-color 0.25s linear, background 0.25s linear;
+        transition: border-color 0.1s linear, background 0.1s linear;
         -webkit-appearance: none;
         &:focus {
             outline: none;
         }
         &[disabled],
         &[readonly] {
-            border-bottom: none;
+            ${"" /* border-bottom: none; */}
             cursor: not-allowed;
             pointer-events: none;
             user-select: none;
+            background-color: ${colors.grey_20};
         }
     }
 `;

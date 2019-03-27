@@ -6,7 +6,7 @@ import { PlaceholderText } from "../../_helpers/Placeholders";
 
 const Form = styled.form`
   display: grid;
-  grid-gap: 0.5rem;
+  grid-gap: 0.75rem;
   flex: auto;
   align-content: flex-start;
   padding: 1rem 1.5rem;
@@ -32,32 +32,41 @@ const Form = styled.form`
 
 const Title = styled.h3`
   color: ${colors.grey_60};
+  line-height: normal;
   letter-spacing: 2px;
   margin: 0;
-`;
-const FormTitle = props => <Title>{props.title}</Title>;
-
-const InputBlock = styled.section`
-  display: grid;
-  grid-gap: 0.75rem;
-  flex: auto;
-  margin-bottom: 0.5rem;
-  /* Prototype Content - displays when a Form is empty */
   &:empty {
     &:before {
-      ${PlaceholderText}
-      content: "{ InputBlock } \00000A ''";
+      content: "{ Title }";
     }
   }
 `;
 
-const Label = styled.h5`
+const Section = styled.section`
+  display: grid;
+  grid-gap: 0.75rem;
+  flex: auto;
+  margin-bottom: 1rem;
+  /* Prototype Content - displays when a Form is empty */
+  &:empty {
+    &:before {
+      ${PlaceholderText}
+      content: "{ Section } \00000A ''";
+    }
+  }
+`;
+
+const SectionName = styled.h5`
   color: ${colors.grey_60};
   font-weight: 600;
   letter-spacing: 2px;
   margin-bottom: 0;
+  &:empty {
+    &:before {
+      content: "{ SectionName }";
+    }
+  }
 `;
-const InputBlockLabel = props => <Label>{props.label}</Label>;
 
 const Help = styled.label`
   grid-column: 1 / -1;
@@ -78,47 +87,32 @@ const ErrorText = props => <Error>{props.errorText}</Error>;
 
 const InputGroup = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-template-columns: ${props =>
+    props.threeColumns
+      ? "repeat(3, 1fr)"
+      : props.twoColumns
+      ? "repeat(2, 1fr)"
+      : props.oneColumn
+      ? "repeat(1, 1fr)"
+      : "repeat(auto-fill, minmax(15rem, 1fr))"};
   grid-gap: 0.75rem;
   /* Prototype Content - displays when a Form is empty */
   &:empty {
     &:before {
-      ${InputGroup}
       content: "{ InputGroup } \00000A ''";
     }
   }
 `;
-const InputGroup_1_Colunn = styled(InputGroup)`
-  grid-template-columns: repeat(1, 1fr);
-`;
-const InputGroup_2_Colunn = styled(InputGroup)`
-  grid-template-columns: repeat(2, 1fr);
-`;
-const InputGroup_3_Colunn = styled(InputGroup)`
-  grid-template-columns: repeat(3, 1fr);
-`;
 
-FormTitle.defaultProps = {
-  title: "Form Title"
-};
-InputBlockLabel.defaultProps = {
-  label: "Input Block Label"
-};
 HelpText.defaultProps = {
   helpText: "Help Text Goes Here"
 };
-ErrorText.defaultProps = {
-  errorText: "This message appears when the input is invalid"
-};
-
-FormTitle.propTypes = {
-  title: PropTypes.string
-};
-InputBlockLabel.propTypes = {
-  label: PropTypes.string.isRequired
-};
 HelpText.propTypes = {
   helpText: PropTypes.string
+};
+
+ErrorText.defaultProps = {
+  errorText: "This message appears when the input is invalid"
 };
 ErrorText.propTypes = {
   errorText: PropTypes.string.isRequired
@@ -126,13 +120,10 @@ ErrorText.propTypes = {
 
 export {
   Form as default,
-  FormTitle,
-  InputBlock,
-  InputBlockLabel,
+  Title,
+  Section,
+  SectionName,
   HelpText,
   ErrorText,
-  InputGroup,
-  InputGroup_1_Colunn,
-  InputGroup_2_Colunn,
-  InputGroup_3_Colunn
+  InputGroup
 };

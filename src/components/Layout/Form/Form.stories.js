@@ -1,13 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import Panel, { PanelSection, PanelBody } from "../Panel/Panel";
-import Form, {
-  FormTitle,
-  InputBlock,
-  InputBlockLabel,
-  InputGroup,
-  InputGroup_1_Colunn
-} from "./Form";
+import Panel, { PanelBody } from "../Panel/Panel";
+import Form, { Title, Section, SectionName, InputGroup } from "./Form";
 import Checkbox from "../../atoms/Checkbox/Checkbox";
 
 const cbox_1 = {
@@ -41,27 +35,27 @@ storiesOf("_Development | Form", module).add("Form Layout", () => (
   <Panel>
     <PanelBody>
       <Form>
-        <FormTitle />
-        <InputBlock>
-          <InputBlockLabel />
+        <Title>Form Title</Title>
+        <Section>
+          <SectionName>Section Name</SectionName>
           <InputGroup>
             <Checkbox {...cbox_1} />
             <Checkbox {...cbox_2} />
           </InputGroup>
-          <InputGroup_1_Colunn>
+          <InputGroup oneColumn>
             <Checkbox {...cbox_3} />
-          </InputGroup_1_Colunn>
-        </InputBlock>
-        <InputBlock>
-          <InputBlockLabel />
+          </InputGroup>
+        </Section>
+        <Section>
+          <SectionName>Section Name</SectionName>
           <InputGroup>
             <Checkbox {...cbox_4} />
             <Checkbox {...cbox_5} />
           </InputGroup>
-          <InputGroup_1_Colunn>
+          <InputGroup oneColumn>
             <Checkbox {...cbox_6} />
-          </InputGroup_1_Colunn>
-        </InputBlock>
+          </InputGroup>
+        </Section>
       </Form>
     </PanelBody>
   </Panel>
