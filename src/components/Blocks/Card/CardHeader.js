@@ -11,7 +11,7 @@ import Switch from "../../atoms/Switch/Switch";
 const HeaderSection = styled.div`
 overflow: hidden;
 border-bottom: 0.25px solid #EAEDED;
-padding: .8em 10px .8em;
+padding: .8em 1em .8em;
 cursor: pointer;
 justify-content: space-between;
 display: flex;

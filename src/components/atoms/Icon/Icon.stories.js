@@ -2,6 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import styled, {css} from 'styled-components';
 import Icon from "./Icon";
+import PlusIcon from "./PlusIcon";
 import IconGroup from "./IconGroup";
 
 
@@ -63,8 +64,14 @@ const minusProps = {
     colorProp: "dimgray",
 };
 
+const addProps = {
+    nameProp: ["fal", "plus-circle"],
+    colorProp: "#60aad2",
+  };
+
 // Colors
 storiesOf("Atoms|Icons", module)
 .add("Navigation Icons", () => <Group> <Icon {...downProps}/>  <Icon {...upProps}/> <Icon {...leftProps}/> <Icon {...rightProps}/> </Group>)
 .add("Map Icons", () => <Group> <Icon {...mapMarkerProps}/>  <Icon {...locatorProps}/> <Icon {...worldProps}/> <Icon {...gotoProps}/> <Icon {...plusProps}/> <Icon {...minusProps}/> </Group>)
+.add("Plus Icon", () => <PlusIcon {...addProps}/>)
 .add("Icon Groups", () => <IconGroup/>);

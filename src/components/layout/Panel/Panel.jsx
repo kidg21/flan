@@ -49,6 +49,8 @@ const PanelSection = styled.section`
   }
 `;
 
+
+
 const PanelBody = styled(PanelSection)`
   flex: auto;
   z-index: 0;
@@ -65,4 +67,28 @@ const PanelBody = styled(PanelSection)`
   }
 `;
 
-export { Panel as default, PanelSection, PanelBody };
+const PanelFooter = styled.section`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: none;
+  background: ${colors.white};
+  // border: 0.5px solid #EAEDED;
+  // box-shadow: ${shadows.panelSectionShadow};
+  /* border-radius: 5px; */
+  z-index: 1;
+  overflow: hidden;
+  align-items: center;
+  padding-bottom: 5px;
+  max-height: 100vh;
+  transition: all 0.2s ease-in-out;
+  /* Prototype Content - displays when a Panel Section is empty */
+  &:empty {
+    &:before {
+      ${PlaceholderText};
+      content: "{ PanelFooter } \00000A 'Takes only the space it needs (1 or more)'";
+    }
+  }
+`;
+
+export { Panel as default, PanelSection, PanelBody, PanelFooter };

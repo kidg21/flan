@@ -3,25 +3,54 @@ import styled, {css} from 'styled-components';
 import PropTypes from 'prop-types';
 
 const StyledButton = styled.button`
-background: ${props => (props.primary ? 'navy' : 'olivedrab')}; 
-color: ${props => (props.primary ? 'white' : 'white')};
-
-${props => props.isSecondary && css` background: white; color: black; border: 2px solid black; `};
-${props => props.isDisabled && css` color: grey; background: lightgrey; border: 2px solid gray; `};
-margin: 0.5em;
-padding: 10px 0;
-width: ${props => (props.isLarger ? '100%' : '150px')};
-border: 0;
-font-weight: 500;
-border-radius: 35px;
-box-shadow: 0 10px 10px rgba(0, 0, 0, .08);
+background: white;
+border: 1px solid #60AAD2;
+color: #3c93c1;
+font-size: 14px;
+font-weight: bold;
+width: 7em;
+height: 2em;
+text-align:center;
+vertical-align: middle;
+border-radius: 20px;
 cursor: pointer;
+transition: opacity .15s;
 
 &:hover {
-  box-shadow: 0 12px 12px rgba(0, 0, 0, .16);
+    background: #60AAD2;
+    color: white;
+}
+
+&:active {
+    background: #60AAD2;
+    color: white;
 }
 `
 
+// const GreenButton = styled.button`
+// background: white;
+// border: 1px solid #75AB3F;
+// color: #6ba531;
+// font-size: 14px;
+// font-weight: bold;
+// width: 7em;
+// height: 2em;
+// text-align:center;
+// vertical-align: middle;
+// border-radius: 20px;
+// cursor: pointer;
+// transition: opacity .15s;
+
+// &:hover {
+//     background: #75AB3F;
+//     color: white;
+// }
+
+// &:active {
+//     background: #75AB3F;
+//     color: white;
+// }
+// `
 
 
 

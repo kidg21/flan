@@ -22,6 +22,7 @@ import {
   faAcorn,
   faTimes as faTimesLight,
   faBoxingGlove,
+  faPlusCircle,
   faChevronLeft as faChevronLeftLight,
   faChevronRight as faChevronRightLight,
 } from "@fortawesome/pro-light-svg-icons";
@@ -68,6 +69,7 @@ library.add(
   faToggleOff,
   faToggleOn,
   faEllipsisV,
+  faPlusCircle,
   faExpandArrows,
   faHighlighter,
   faBell,
