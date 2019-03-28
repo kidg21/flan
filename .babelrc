@@ -28,9 +28,9 @@
         "root": ["./src"],
         "alias": {
           "attributes": "./src/attributes",
-          "components": "./src/components",
+          "atoms": "./src/components/atoms",
+          "base": "./src/components/base",
           "blocks": "./src/components/blocks",
-          "atoms": "./src/components/atoms"
         }
       }
     ]

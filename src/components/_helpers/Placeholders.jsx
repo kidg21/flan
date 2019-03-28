@@ -14,5 +14,5 @@ export const PlaceholderText = css`
   letter-spacing: 1px;
   color: hsl(34, 5%, 36%);
   padding: 0.5rem;
-	white-space: pre-wrap;
+  white-space: pre-wrap;
 `;

@@ -1,20 +1,13 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import {
-  InputBlock,
-  InputBlockLabel,
-  InputGroup,
-  InputGroup_1_Colunn,
-  InputGroup_2_Colunn,
-  InputGroup_3_Colunn
-} from "../../layout/Form/Form";
-import Radio from "./Radio";
+import { Section, SectionName, InputGroup } from "../../layout/Form/Form";
+import Radio from "atoms/Radio";
 
 const radio_1 = {
   id: "radio-1",
   name: "radio-group",
   value: "1",
-  label: "Radio 1",
+  label: "Radio 1"
   // checked: true
 };
 const radio_2 = {
@@ -45,10 +38,18 @@ const radio_long = {
 
 storiesOf("Atoms|Radio", module)
   .addDecorator(story => <div style={{ padding: "2rem" }}>{story()}</div>)
-  .add("Standard Radio", () => <Radio label="Radio 1" id="radio-1" name="radio-group" value="1" checked={true} />)
+  .add("Standard Radio", () => (
+    <Radio
+      label="Radio 1"
+      id="radio-1"
+      name="radio-group"
+      value="1"
+      checked={true}
+    />
+  ))
   .add("Radio Block (Responsive)", () => (
-    <InputBlock>
-      <InputBlockLabel label="Radio Block (Responsive)" />
+    <Section>
+      <SectionName>Radio Block (Responsive)</SectionName>
       <InputGroup>
         <Radio {...radio_1} />
         <Radio {...radio_2} />
@@ -56,41 +57,41 @@ storiesOf("Atoms|Radio", module)
         <Radio {...radio_4} />
         <Radio {...radio_long} />
       </InputGroup>
-    </InputBlock>
+    </Section>
   ))
   .add("Radio Block (2 columns)", () => (
-    <InputBlock>
-      <InputBlockLabel label="Radio Block (2 columns)" />
-      <InputGroup_2_Colunn>
+    <Section>
+      <SectionName>Radio Block (2 columns)</SectionName>
+      <InputGroup twoColumns>
         <Radio {...radio_1} />
         <Radio {...radio_2} />
         <Radio {...radio_3} />
         <Radio {...radio_4} />
-      </InputGroup_2_Colunn>
-    </InputBlock>
+      </InputGroup>
+    </Section>
   ))
   .add("Radio Block (3 columns)", () => (
-    <InputBlock>
-      <InputBlockLabel label="Radio Block (3 columns)" />
-      <InputGroup_3_Colunn>
+    <Section>
+      <SectionName>Radio Block (3 columns)</SectionName>
+      <InputGroup threeColumns>
         <Radio {...radio_1} />
         <Radio {...radio_2} />
         <Radio {...radio_3} />
         <Radio {...radio_4} />
-      </InputGroup_3_Colunn>
-    </InputBlock>
+      </InputGroup>
+    </Section>
   ))
   .add("Radio Block (mixed columns)", () => (
-    <InputBlock>
-      <InputBlockLabel label="Radio Block (mixed columns)" />
-      <InputGroup_3_Colunn>
+    <Section>
+      <SectionName>Radio Block (mixed columns)</SectionName>
+      <InputGroup threeColumns>
         <Radio {...radio_1} />
         <Radio {...radio_2} />
         <Radio {...radio_3} />
         <Radio {...radio_4} />
-      </InputGroup_3_Colunn>
-      <InputGroup_1_Colunn>
+      </InputGroup>
+      <InputGroup oneColumn>
         <Radio {...radio_long} />
-      </InputGroup_1_Colunn>
-    </InputBlock>
+      </InputGroup>
+    </Section>
   ));
