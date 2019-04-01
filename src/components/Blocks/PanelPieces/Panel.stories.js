@@ -7,5 +7,5 @@ import LayerPanelHeader from "./LayerHeader";
 
 storiesOf("Blocks|Panel", module)
 .add("Layer Header", () => <LayerPanelHeader title="Layer Panel"/> )
-.add("Header", () => <PanelHeader title="Panel Header"/> )
+.add("Header", () => <PanelHeader layer="Data Overlay" title="Panel Header"/> )
 .add("Detail Header", () => <FilterDetailHeader title="Detail Header"/> );
