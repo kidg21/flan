@@ -6,6 +6,10 @@ const SliderPiece = styled.input.attrs({ type: 'range' })`
     -webkit-appearance: none;
     width: 20rem;
     height: 2px;
+    min: "0";
+    max: "100";
+    step: "10";
+    value: "80";
     border-radius: 5px;
     background: #ccc;
     outline: none;

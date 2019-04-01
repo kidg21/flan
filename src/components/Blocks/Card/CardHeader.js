@@ -10,31 +10,38 @@ import Switch from "../../atoms/Switch/Switch";
 
 const HeaderSection = styled.div`
 overflow: hidden;
-border-bottom: 0.25px solid #EAEDED;
-padding: .8em 1em .8em;
 cursor: pointer;
 justify-content: space-between;
 display: flex;
 `
 
+const ViewLegend = styled.div`
+line-height: normal;
+cursor: pointer;
+display: flex;
+justify-content: flex-start;
+`
 
-const defaultProps = {
-    // iconProps: {nameProp: ["far", "angle-up"],
-    //             colorProp: "dimgray"},
-  };
-
+const LayerCard = styled.div`
+border-bottom: 0.25px solid #EAEDED;
+padding: .8em 1em .8em;
+`
 
 
 function CardContainer({title}) {
     return (
+      <LayerCard>
         <HeaderSection>
           <Switch/>
           <h4 style={{margin: 0, flex: "auto", paddingLeft: "1.5em"}}>{title}</h4>
           <IconGroup />
-          {/* <Icon  {...props.iconProps}/> */}
         </HeaderSection>
+       <ViewLegend>
+        <a style={{fontSize: "10px", fontWeight: "700", paddingLeft: "5.5em" }}>View Legend</a>
+         </ViewLegend>
+        </LayerCard>
     )
   }
 
-CardContainer.defaultProps = defaultProps;
+
 export default CardContainer;
