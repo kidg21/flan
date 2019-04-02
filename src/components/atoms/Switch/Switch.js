@@ -29,7 +29,7 @@ const Circle = styled.div`
   position: absolute;
   z-index: 1;
   background: ${props => props.checked ? 'white' : 'white'}
-  border: 1px solid darkgray;
+  border: ${props => props.checked ? '1px solid #75ab3f' : '1px solid darkgray'};
   border-radius: 40px;
   width: 15px;
   line-height: normal;
@@ -47,8 +47,8 @@ const StyledSwitch = styled.div`
   vertical-align: center;
   height: 17px;
   border-radius: 20px;
-  border: 1px solid darkgray;
-  background-image: ${props => props.checked ? 'linear-gradient(#39a839, #60c460);' : 'white'};
+  border: ${props => props.checked ? '1px solid #94d850' : '1px solid darkgray'};
+  background-image: ${props => props.checked ? 'linear-gradient(#75ab3f, #94d850);' : 'white'};
   transition: .4s ease;
   cursor: pointer;
   

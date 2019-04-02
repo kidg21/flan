@@ -8,8 +8,10 @@ border: 1px solid #75AB3F;
 color: #6ba531;
 font-size: 14px;
 font-weight: bold;
-width: 8em;
-height: 2.3em;
+width: 7em;
+height: 2em;
+text-align:center;
+vertical-align: middle;
 border-radius: 20px;
 cursor: pointer;
 transition: opacity .15s;
@@ -24,7 +26,6 @@ transition: opacity .15s;
     color: white;
 }
 `
-
 
 
 

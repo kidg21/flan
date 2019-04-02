@@ -7,7 +7,7 @@ const HeaderSection = styled.div`
 overflow: hidden;
 background: white;
 border-bottom: 0.25px solid #EAEDED;
-padding: 1em 1em 1em;
+padding: .8em 1em .8em;
 cursor: pointer;
 line-height: normal;
 justify-content: space-between;
