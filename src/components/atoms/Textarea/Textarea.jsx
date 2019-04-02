@@ -1,18 +1,18 @@
-import React from "react";
-import styled, { css } from "styled-components";
-import PropTypes from "prop-types";
+import React from "react"
+import styled, { css } from "styled-components"
+import PropTypes from "prop-types"
 // import { Grid_2, inputGrid } from "../../_helpers/Grid";
-import { HelpText, ErrorText } from "../../layout/Form/Form";
-import { colors, shadows } from "../../../attributes/Variables/Variables";
+import { HelpText, ErrorText } from "../../layout/Form/Form"
+import { colors, shadows } from "../../../attributes/Variables/Variables"
 
 const TextInputContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 0.35rem;
   align-content: flex-start;
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
   color: ${props => (props.disabled ? colors.grey_40 : "")};
-`;
+`
 
 const TextInputLabel = styled.label`
   display: flex;
@@ -33,7 +33,7 @@ const TextInputLabel = styled.label`
     font-size: 1.5rem;
     color: ${colors.alert};
   }
-`;
+`
 
 const TextInput = styled.textarea`
   border: 1px solid ${colors.grey_20};
@@ -46,6 +46,9 @@ const TextInput = styled.textarea`
   ::placeholder {
     color: ${props => (props.error ? colors.alert : "")};
   }
+  &:hover {
+    border: 1px solid ${colors.success};
+  }
   &:focus {
     background-color: ${props => (props.error ? "#f9ebeb" : "#f1f8eb")};
     border-color: ${props => (props.error ? colors.alert : colors.success)};
@@ -57,7 +60,7 @@ const TextInput = styled.textarea`
         props.error ? colors.alert : colors.success};
     }
   }
-`;
+`
 
 function Textarea({ helpText, errorText, ...props }) {
   return (
@@ -77,7 +80,7 @@ function Textarea({ helpText, errorText, ...props }) {
       {/* Error Message (required) */}
       {props.error ? <ErrorText errorText={errorText} /> : null}
     </TextInputContainer>
-  );
+  )
 }
 
 Textarea.defaultProps = {
@@ -88,7 +91,7 @@ Textarea.defaultProps = {
   disabled: false,
   error: false,
   errorText: "Error text for the Input component"
-};
+}
 
 Textarea.propTypes = {
   label: PropTypes.string.isRequired,
@@ -97,6 +100,6 @@ Textarea.propTypes = {
   required: PropTypes.bool,
   disabled: PropTypes.bool,
   error: PropTypes.bool
-};
+}
 
-export { Textarea as default };
+export { Textarea as default }
