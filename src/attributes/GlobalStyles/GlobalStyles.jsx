@@ -88,7 +88,7 @@ const GlobalStyles = createGlobalStyle`
     h1, h2, h3, h4, h5, h6, p {
         font-style: normal;
         color: inherit;
-        text-rendering: optimizeLegibility;
+        letter-spacing: 0.015em;
     }
     p {
         font-family: inherit;
@@ -177,7 +177,7 @@ const GlobalStyles = createGlobalStyle`
         font-family: ${fonts.data};
         font-weight: 700;
         letter-spacing: 2px;
-        border-radius: 0;
+        border-radius: 4px;
         transition: border-color 0.1s linear, background 0.1s linear;
         -webkit-appearance: none;
         &:focus {

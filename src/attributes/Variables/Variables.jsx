@@ -54,3 +54,14 @@ export const shadows = {
   radioShadow:
     "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsl(34, 5%, 95%) -1px 1px 0 0 inset, hsl(34, 5%, 95%) 1px -1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px"
 };
+
+export const data = {
+  iceCream: [
+    { value: "chocolate", label: "Chocolate" },
+    { value: "strawberry", label: "Strawberry" },
+    { value: "vanilla", label: "Vanilla" },
+    { value: "pistachio", label: "Pistachio" },
+    { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
+    { value: "cookie dough", label: "Cookie Dough" }
+  ]
+};
