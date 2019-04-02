@@ -126,9 +126,8 @@ const GlobalStyles = createGlobalStyle`
     }
     code {
         font-family: ${fonts.data};
-        font-weight: bold;
         font-size: 0.85rem;
-        line-height: 1.5rem;
+        line-height: 1rem;
         letter-spacing: 1px;
         background-color: ${colors.grey_20};
         margin: 0 .1rem;
@@ -175,9 +174,9 @@ const GlobalStyles = createGlobalStyle`
         width: 100%;
         color: ${colors.grey_dark};
         font-family: ${fonts.data};
-        font-weight: 700;
-        letter-spacing: 2px;
-        border-radius: 0;
+        font-weight: 500;
+        letter-spacing: 1px;
+        border-radius: 5px;
         transition: border-color 0.1s linear, background 0.1s linear;
         -webkit-appearance: none;
         &:focus {

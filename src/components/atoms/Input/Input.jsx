@@ -30,7 +30,6 @@ const TextInputLabel = styled.label`
   user-select: none;
   font-size: smaller;
   font-weight: 700;
-  letter-spacing: 1px;
   color: ${props => (props.disabled ? colors.grey_40 : "")};
   color: ${props => (props.error ? colors.alert : "")};
   cursor: pointer;
@@ -46,23 +45,23 @@ const TextInputLabel = styled.label`
 const PrePostLabel = styled.label`
   display: flex;
   justify-content: center;
+  border-radius: 5px;
   align-items: center;
   /* font-size: small; */
   /* font-size: 1.1rem; */
-  font-weight: bold;
   letter-spacing: 2px;
   text-transform: lowercase;
   color: ${colors.grey_60};
-  background-color: ${colors.grey_light};
+  background-color: ${colors.white};
   border: 1px solid ${colors.grey_20};
-  border-bottom: 1px solid ${colors.grey_40};
+  border-bottom: 1px solid ${colors.grey_20};
   padding: 0.25rem 0.5rem;
   white-space: nowrap;
 `;
 
 const TextInput = styled.input.attrs({ type: "text" })`
   border: 1px solid ${colors.grey_20};
-  border-bottom: 1px solid ${colors.grey_40};
+  border-bottom: 1px solid ${colors.grey_20};
   border-color: ${props => (props.error ? colors.alert : "")};
   background-color: ${props => (props.error ? "#f9ebeb" : "")};
   caret-color: ${props => (props.error ? colors.alert : "")};
@@ -71,14 +70,10 @@ const TextInput = styled.input.attrs({ type: "text" })`
     color: ${props => (props.error ? colors.alert : "")};
   }
   &:focus {
-    background-color: ${props => (props.error ? "#f9ebeb" : "#f1f8eb")};
-    border-color: ${props => (props.error ? colors.alert : colors.success)};
+    background-color: ${props => (props.error ? "#f9ebeb" : "")};
+    border-color: ${props => (props.error ? colors.alert : colors.anchor)};
     ::placeholder {
-      color: ${props => (props.error ? colors.alert : colors.success)};
-    }
-    ::selection {
-      background-color: ${props =>
-        props.error ? colors.alert : colors.success};
+      color: ${props => (props.error ? colors.alert : "")};
     }
   }
 `;

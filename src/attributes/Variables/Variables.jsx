@@ -19,7 +19,7 @@ export const fonts = {
   // primary: 'Muli, sans-serif',
   body: "Muli, Arial, sans-serif",
   headline: "Muli, Arial, sans-serif",
-  data: "Lato, sans-serif"
+  data: "Muli, Arial, sans-serif"
 };
 
 // Sizes for typography scale
