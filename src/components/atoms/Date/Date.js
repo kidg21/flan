@@ -6,25 +6,22 @@ import { colors, fonts, fontSize, shadows } from "../../../attributes/Variables/
 
 const Calendar = styled.input.attrs({ type: "date" })`
 text-align: center;
-font-family: Open Sans, Arial, sans-serif;
 margin-top: 2px;
 padding: 0;
 idth: 256px;
 border-color: #c9f0f5;
   
-  &::trigger {
-    margin: 0 0 0 5px;
-    vertical-align: text-top;
-  }
-
-
-&:selected {
-    color: red;
-}
 `
 
 
 
+
+
+// const StyledDateRangePicker = styled(DateRangePicker)`
+//     .CalendarDay{
+//         background-color: red;
+//     }
+// `;
 
 
 // .openemr-calendar .ui-datepicker {

@@ -88,7 +88,7 @@ const GlobalStyles = createGlobalStyle`
     h1, h2, h3, h4, h5, h6, p {
         font-style: normal;
         color: inherit;
-        text-rendering: optimizeLegibility;
+        letter-spacing: 0.015em;
     }
     p {
         font-family: inherit;

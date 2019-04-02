@@ -1,6 +1,6 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { Padding } from "../../_helpers/Display";
+import React from "react"
+import { storiesOf } from "@storybook/react"
+import { Padding } from "../../_helpers/Display"
 import {
   withKnobs,
   text,
@@ -8,18 +8,18 @@ import {
   radios,
   select,
   number
-} from "@storybook/addon-knobs";
-import Panel, { PanelBody } from "../../layout/Panel/Panel";
-import Form, { Section, SectionName, InputGroup } from "../../layout/Form/Form";
-import Textarea from "atoms/Textarea";
+} from "@storybook/addon-knobs"
+import Panel, { PanelBody } from "../../layout/Panel/Panel"
+import Form, { Section, SectionName, InputGroup } from "../../layout/Form/Form"
+import Textarea from "atoms/Textarea"
 
 // Input ( Standard )
 storiesOf("Atoms|Textarea", module)
   .addDecorator(Padding)
   .addDecorator(withKnobs)
-  .add("Textarea ( with Knobs )", () => (
+  .add("Textarea ( Knobs )", () => (
     <Textarea
-      label={text("Textarea Label", "Textarea ( with Knobs )")}
+      label={text("Textarea Label", "Textarea ( Knobs )")}
       required={boolean("Required", false)}
       placeholder={text("Placeholder Text", "I am just keeping things warm")}
       helpText={text("Help Text", "Have you been helped yet?")}
@@ -27,7 +27,7 @@ storiesOf("Atoms|Textarea", module)
       error={boolean("Error", false)}
       errorText={text("Error Text", "Stay with my, buddy...we can fix this!")}
     />
-  ));
+  ))
 
 // Textarea ( Standard )
 storiesOf("Atoms|Textarea", module)
@@ -37,7 +37,7 @@ storiesOf("Atoms|Textarea", module)
       label="Textarea ( Standard )"
       helpText="This help text has been passed through a prop!"
     />
-  ));
+  ))
 
 // Textarea ( Required )
 storiesOf("Atoms|Textarea", module)
@@ -48,7 +48,7 @@ storiesOf("Atoms|Textarea", module)
       required={true}
       helpText="This help text has been passed through a prop!"
     />
-  ));
+  ))
 
 // Textarea ( Disabled )
 storiesOf("Atoms|Textarea", module)
@@ -59,7 +59,7 @@ storiesOf("Atoms|Textarea", module)
       helpText="This help text has been passed through a prop!"
       disabled={true}
     />
-  ));
+  ))
 
 // Textarea ( Error )
 storiesOf("Atoms|Textarea", module)
@@ -71,7 +71,7 @@ storiesOf("Atoms|Textarea", module)
       error={true}
       errorText="This error text has been passed through a prop!"
     />
-  ));
+  ))
 
 // Textarea ( The Textarea Family )
 storiesOf("Atoms|Textarea", module).add("The Textarea Family", props => (
@@ -105,4 +105,4 @@ storiesOf("Atoms|Textarea", module).add("The Textarea Family", props => (
       </Form>
     </PanelBody>
   </Panel>
-));
+))
