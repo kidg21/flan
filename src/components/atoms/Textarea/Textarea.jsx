@@ -20,7 +20,7 @@ const TextInputLabel = styled.label`
   align-items: center;
   grid-column: 1 / -1;
   user-select: none;
-  font-size: smaller;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 1px;
   color: ${props => (props.disabled ? colors.grey_40 : "")};
@@ -38,7 +38,7 @@ const TextInputLabel = styled.label`
 const TextInput = styled.textarea`
   border: 1px solid ${colors.grey_20};
   border-radius: 5px;
-  border-bottom: 1px solid ${colors.grey_40};
+  border-bottom: 1px solid ${colors.grey_20};
   border-color: ${props => (props.error ? colors.alert : "")};
   background-color: ${props => (props.error ? "#f9ebeb" : "")};
   caret-color: ${props => (props.error ? colors.alert : "")};
@@ -48,17 +48,17 @@ const TextInput = styled.textarea`
     color: ${props => (props.error ? colors.alert : "")};
   }
   &:hover {
-    border: 1px solid ${colors.success};
+    border: 1px solid ${colors.anchor};
   }
   &:focus {
-    background-color: ${props => (props.error ? "#f9ebeb" : "#f1f8eb")};
-    border-color: ${props => (props.error ? colors.alert : colors.success)};
+    background-color: ${props => (props.error ? "#f9ebeb" : "")};
+    border-color: ${props => (props.error ? colors.alert : colors.anchor)};
     ::placeholder {
-      color: ${props => (props.error ? colors.alert : colors.success)};
+      color: ${props => (props.error ? colors.alert : colors.grey_60)};
     }
     ::selection {
       background-color: ${props =>
-        props.error ? colors.alert : colors.success};
+        props.error ? colors.alert : ""};
     }
   }
 `

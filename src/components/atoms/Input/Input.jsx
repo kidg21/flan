@@ -33,8 +33,9 @@ const TextInputLabel = styled.label`
   align-items: center;
   grid-column: 1 / -1;
   user-select: none;
-  font-size: smaller;
+  font-size: 11px;
   font-weight: 700;
+  letter-spacing: 1px;
   color: ${props => (props.disabled ? colors.grey_40 : "")};
   color: ${props => (props.error ? colors.alert : "")};
   cursor: pointer;
@@ -56,7 +57,7 @@ const PrePostLabel = styled.label`
   letter-spacing: 2px;
   text-transform: lowercase;
   color: ${colors.grey_60};
-  background-color: ${colors.white};
+  background-color: #ffffff;
   border: 1px solid ${colors.grey_20};
   border-bottom: 1px solid ${colors.grey_20};
   padding: 0.25rem 0.5rem;
@@ -75,7 +76,7 @@ const TextInput = styled.input.attrs({ type: "text" })`
     color: ${props => (props.error ? colors.alert : "")};
   }
   &:hover {
-    border: 1px solid ${colors.success};
+    border: 1px solid ${colors.anchor};
     border-color: ${props => (props.error ? colors.alert : "")};
   }
   &:focus {

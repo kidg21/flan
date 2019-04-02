@@ -9,31 +9,35 @@ const selectStyles = {
   // Wrapper
   container: (styles, { isDisabled, isFocused, isSelected, ...props }) => ({
     ...styles,
-    fontFamily: fonts.data
+    fontFamily: fonts.data,
+    background: "#ffffff",
+    fontSize: "12px"
   }),
   // Toggle UI
   control: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
     backgroundColor: isFocused
-      ? "#f1f8eb"
+      ? "#ffffff"
       : isDisabled
-      ? colors.grey_20
-      : colors.white,
-    borderColor: isFocused ? colors.success + "!important" : colors.grey_20,
-    borderBottomColor: colors.grey_40,
-    fontWeight: "700",
-    letterSpacing: "2px",
+      ? colors.white
+      : "#ffffff",
+    borderColor: isFocused ? colors.grey_20 + "!important" : colors.grey_20,
+    borderBottomColor: colors.grey_20,
+    fontSize: "12px",
+    letterSpacing: "1px",
     minHeight: "2.75rem",
     ":hover": {
-      borderColor: colors.success
+      borderColor: colors.anchor,
     },
     boxShadow: "none"
   }),
   placeholder: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
     fontFamily: fonts.data,
-    color: isFocused ? colors.success : colors.grey_60,
+    fontSize: "12px",
+    color: isFocused ? colors.anchor : colors.grey_60,
     letterSpacing: "1px",
+    backgroundColor: colors.white,
     fontWeight: 400
   }),
   // selected option
@@ -45,7 +49,7 @@ const selectStyles = {
   // 'X' to clear current selection
   clearIndicator: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
-    color: isFocused ? colors.success : colors.grey_60
+    color: isFocused ?  "" : colors.grey_40
   }),
   // pipe
   indicatorSeparator: (styles, { isDisabled, isFocused, isSelected }) => ({
@@ -55,13 +59,14 @@ const selectStyles = {
   // down arrow
   dropdownIndicator: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
-    color: isFocused ? colors.success : colors.grey_60
+    color: isFocused ? colors.grey_60 : colors.grey_60
   }),
   // multi element background
   multiValue: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
     fontWeight: "bold",
-    letterSpacing: "1px"
+    letterSpacing: "1px",
+    fontSize: "12px"
   }),
   // multi element label background
   multiValueLabel: (styles, { isDisabled, isFocused, isSelected }) => ({
@@ -81,29 +86,31 @@ const selectStyles = {
   menu: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
     fontFamily: fonts.data,
+    fontSize: "12px",
     letterSpacing: "1px",
     margin: ".25rem 0",
-    boxShadow: shadows.dropShadow
+    boxShadow: "0 0 20px rgba(0, 0, 0, .08)"
   }),
   // Menu Options
   option: (styles, { isDisabled, isFocused, isSelected }) => {
     return {
       ...styles,
+      fontSize: "12px",
       backgroundColor: isDisabled
         ? null
         : isSelected
-        ? colors.success
+        ? ""
         : isFocused
-        ? colors.anchor
+        ? colors.light_grey
         : null,
       color: isDisabled
         ? colors.grey_40
         : isSelected
-        ? colors.white
+        ? colors.grey_80
         : isFocused
-        ? colors.white
+        ? colors.grey_80
         : colors.grey_80,
-      cursor: isDisabled ? "not-allowed" : "default"
+      cursor: isDisabled ? "not-allowed" : "pointer"
     }
   }
 }
@@ -132,7 +139,7 @@ const TextInputLabel = styled.label`
   align-items: center;
   grid-column: 1 / -1;
   user-select: none;
-  font-size: smaller;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 1px;
   color: ${props => (props.disabled ? colors.grey_40 : "")};
@@ -146,6 +153,7 @@ const TextInputLabel = styled.label`
     color: ${colors.alert};
   }
 `
+
 
 const SelectMenu = ({ helpText, errorText, ...props }) => (
   <TextInputContainer

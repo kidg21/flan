@@ -30,7 +30,6 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
 
 const CheckboxLabel = styled.label`
   user-select: none;
-  font-family: Muli;
   line-height: 1;
   cursor: pointer;
 `;
