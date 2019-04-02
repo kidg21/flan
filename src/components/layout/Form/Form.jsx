@@ -1,12 +1,8 @@
-import React from "react";
-import styled, { css } from "styled-components";
-import PropTypes from "prop-types";
-import {
-  fonts,
-  colors,
-  shadows
-} from "../../../attributes/Variables/Variables";
-import { PlaceholderText } from "../../_helpers/Placeholders";
+import React from "react"
+import styled, { css } from "styled-components"
+import PropTypes from "prop-types"
+import { fonts, colors, shadows } from "../../../attributes/Variables/Variables"
+import { PlaceholderText } from "../../_helpers/Placeholders"
 
 const Form = styled.form`
   display: grid;
@@ -32,7 +28,7 @@ const Form = styled.form`
       content: "{ Form } \00000A 'Displays a grid of user inputs in responsive columns'";
     }
   }
-`;
+`
 
 const Title = styled.h3`
   color: ${colors.grey_60};
@@ -44,11 +40,12 @@ const Title = styled.h3`
       content: "{ Title }";
     }
   }
-`;
+`
 
 const Section = styled.section`
   display: grid;
-  grid-gap: 0.75rem;
+  /* grid-gap: 0.75rem; */
+  grid-gap: 1rem;
   flex: auto;
   margin-bottom: 1rem;
   /* Prototype Content - displays when a Form is empty */
@@ -58,7 +55,7 @@ const Section = styled.section`
       content: "{ Section } \00000A ''";
     }
   }
-`;
+`
 
 const SectionName = styled.h5`
   color: ${colors.grey_60};
@@ -70,7 +67,7 @@ const SectionName = styled.h5`
       content: "{ SectionName }";
     }
   }
-`;
+`
 
 const Help = styled.label`
   grid-column: 1 / -1;
@@ -78,8 +75,8 @@ const Help = styled.label`
   font-size: smaller;
   /* font-weight: 700; */
   letter-spacing: 1px;
-`;
-const HelpText = props => <Help>{props.helpText}</Help>;
+`
+const HelpText = props => <Help>{props.helpText}</Help>
 
 const Error = styled.label`
   grid-column: 1 / -1;
@@ -87,8 +84,8 @@ const Error = styled.label`
   font-size: smaller;
   font-weight: 700;
   letter-spacing: 1px;
-`;
-const ErrorText = props => <Error>{props.errorText}</Error>;
+`
+const ErrorText = props => <Error>{props.errorText}</Error>
 
 const InputGroup = styled.div`
   display: grid;
@@ -107,21 +104,21 @@ const InputGroup = styled.div`
       content: "{ InputGroup } \00000A ''";
     }
   }
-`;
+`
 
 HelpText.defaultProps = {
   helpText: "Help Text Goes Here"
-};
+}
 HelpText.propTypes = {
   helpText: PropTypes.string
-};
+}
 
 ErrorText.defaultProps = {
   errorText: "This message appears when the input is invalid"
-};
+}
 ErrorText.propTypes = {
   errorText: PropTypes.string.isRequired
-};
+}
 
 export {
   Form as default,
@@ -131,4 +128,4 @@ export {
   HelpText,
   ErrorText,
   InputGroup
-};
+}
