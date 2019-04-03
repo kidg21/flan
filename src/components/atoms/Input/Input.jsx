@@ -42,26 +42,6 @@ const TextInputContainer = styled.div`
   /* margin-bottom: 0.5rem; */
 `
 
-const TextInputLabel = styled.label`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  grid-column: 1 / -1;
-  user-select: none;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: ${props => (props.disabled ? colors.grey_40 : "")};
-  color: ${props => (props.error ? colors.alert : "")};
-  cursor: pointer;
-  &:after {
-    content: "*";
-    display: ${props => (props.required ? "" : "none")};
-    line-height: 0;
-    font-size: 1.5rem;
-    color: ${colors.alert};
-  }
-`
 
 const PrePostLabel = styled.label`
   display: flex;

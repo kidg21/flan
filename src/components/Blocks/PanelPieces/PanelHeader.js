@@ -81,7 +81,7 @@ const defaultProps = {
                   <Icon {...props.navProps}/>
                   </Left>
                   <CardTitle>
-                  <TopText><a style={{fontSize: "12px", fontWeight: "bold"}}>{layer}</a></TopText>
+                  {layer ? <TopText> <a style={{fontSize: "12px", fontWeight: "bold"}} layer={layer}/></TopText> : null}
                 <BottomText><h4>{title}</h4></BottomText>
                 </CardTitle>
                 <Right>

@@ -12,30 +12,27 @@ const TextInputContainer = styled.div`
   color: ${props => (props.disabled ? colors.grey_40 : "")};
 `
 
-<<<<<<< HEAD
-const TextInputLabel = styled.label`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  grid-column: 1 / -1;
-  user-select: none;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: ${props => (props.disabled ? colors.grey_40 : "")};
-  color: ${props => (props.error ? colors.alert : "")};
-  cursor: pointer;
-  &:after {
-    content: "*";
-    display: ${props => (props.required ? "" : "none")};
-    line-height: 0;
-    font-size: 1.5rem;
-    color: ${colors.alert};
-  }
-`
+// const TextInputLabel = styled.label`
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   grid-column: 1 / -1;
+//   user-select: none;
+//   font-size: 11px;
+//   font-weight: 700;
+//   letter-spacing: 1px;
+//   color: ${props => (props.disabled ? colors.grey_40 : "")};
+//   color: ${props => (props.error ? colors.alert : "")};
+//   cursor: pointer;
+//   &:after {
+//     content: "*";
+//     display: ${props => (props.required ? "" : "none")};
+//     line-height: 0;
+//     font-size: 1.5rem;
+//     color: ${colors.alert};
+//   }
+// `
 
-=======
->>>>>>> 7a51b7c69bbd00242ace8cfec00af301bdb4bd00
 const TextInput = styled.textarea`
   border: 1px solid ${colors.grey_20};
   border-radius: 5px;
