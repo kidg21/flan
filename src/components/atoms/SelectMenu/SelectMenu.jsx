@@ -108,7 +108,7 @@ const selectStyles = {
   }
 }
 
-const TextInputContainer = styled.div`
+const SelectMenuContainer = styled.div`
   display: ${props => (props.displayInline ? "inline-block" : "grid")};
   grid-template-columns: ${props =>
     props.threeInputs
@@ -122,43 +122,41 @@ const TextInputContainer = styled.div`
       : "repeat(1, 1fr)"};
   grid-gap: 0.35rem;
   align-content: flex-start;
-  color: ${props => (props.disabled ? colors.grey_40 : "")};
+  /* color: ${props => (props.disabled ? colors.grey_40 : "")}; */
+  color: ${props =>
+    props.error ? colors.alert : props.disabled ? colors.grey_40 : ""};
 `
-
-const SelectMenu = ({
-  inputLabel,
-  isRequired,
-  helpText,
-  errorText,
-  ...props
-}) => (
-  <TextInputContainer
-    name={props.name}
-    placeholder={props.placeholder}
-    // isRequired={props.required}
-    isRequired={isRequired}
-    error={props.error}
-    displayInline={props.displayInline}
-  >
-    {/* Input Label (required) */}
-    <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
-    <Select
-      {...props}
-      styles={selectStyles}
-      options={props.options}
-      isSearchable={props.isSearchable}
-      isClearable={props.isClearable}
-      isMulti={props.multiSelect}
-      isDisabled={props.disabled}
-      isLoading={props.isLoading}
-      isRtl={props.isRtl}
-    />
-    {/* Help Text */}
-    {helpText ? <HelpText helpText={helpText} /> : null}
-    {/* Error Message (required) */}
-    {props.error ? <ErrorText errorText={errorText} /> : null}
-  </TextInputContainer>
-)
+function SelectMenu({ inputLabel, isRequired, helpText, errorText, ...props }) {
+  return (
+    <SelectMenuContainer
+      isRequired={isRequired}
+      disabled={props.disabled} // input attribute
+      error={props.error}
+      displayInline={props.displayInline}
+    >
+      {/* Input Label (required) */}
+      <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
+      <Select
+        id={props.name} // input attribute
+        name={props.name} // input attribute
+        placeholder={props.placeholder} // input attribute
+        styles={selectStyles}
+        options={props.options}
+        isSearchable={props.isSearchable}
+        isClearable={props.isClearable}
+        isMulti={props.multiSelect}
+        isDisabled={props.disabled}
+        isLoading={props.isLoading}
+        isRtl={props.isRtl}
+        {...props}
+      />
+      {/* Help Text */}
+      {helpText ? <HelpText helpText={helpText} /> : null}
+      {/* Error Message (required) */}
+      {props.error ? <ErrorText errorText={errorText} /> : null}
+    </SelectMenuContainer>
+  )
+}
 
 SelectMenu.defaultProps = {
   name: "SelectMenu Name",

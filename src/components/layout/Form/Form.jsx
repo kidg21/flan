@@ -77,8 +77,7 @@ const Label = styled.label`
   font-size: smaller;
   font-weight: 700;
   letter-spacing: 1px;
-  color: ${props => (props.disabled ? colors.grey_40 : "")};
-  color: ${props => (props.error ? colors.alert : "")};
+  color: inherit;
   cursor: pointer;
   &:after {
     content: "*";

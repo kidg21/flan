@@ -11,15 +11,15 @@ import {
 } from "@storybook/addon-knobs"
 import Panel, { PanelBody } from "../../layout/Panel/Panel"
 import Form, { Section, SectionName, InputGroup } from "../../layout/Form/Form"
-import Textarea from "atoms/Textarea"
+import TextArea from "atoms/TextArea"
 
 // Input ( Standard )
-storiesOf("Atoms|Textarea", module)
+storiesOf("Atoms|TextArea", module)
   .addDecorator(Padding)
   .addDecorator(withKnobs)
-  .add("Textarea ( Knobs )", () => (
-    <Textarea
-      inputLabel={text("Textarea Label", "Textarea ( Knobs )")}
+  .add("TextArea ( Knobs )", () => (
+    <TextArea
+      inputLabel={text("TextArea Label", "TextArea ( Knobs )")}
       isRequired={boolean("Required", false)}
       placeholder={text("Placeholder Text", "I am just keeping things warm")}
       helpText={text("Help Text", "Have you been helped yet?")}
@@ -29,75 +29,74 @@ storiesOf("Atoms|Textarea", module)
     />
   ))
 
-// Textarea ( Standard )
-storiesOf("Atoms|Textarea", module)
+// TextArea ( Standard )
+storiesOf("Atoms|TextArea", module)
   .addDecorator(Padding)
-  .add("Textarea ( Standard )", () => (
-    <Textarea
-      inputLabel="Textarea ( Standard )"
+  .add("TextArea ( Standard )", () => (
+    <TextArea
+      name="Say My Name!"
+      inputLabel="TextArea ( Standard )"
       helpText="This help text has been passed through a prop!"
     />
   ))
 
-// Textarea ( Required )
-storiesOf("Atoms|Textarea", module)
+// TextArea ( Required )
+storiesOf("Atoms|TextArea", module)
   .addDecorator(Padding)
-  .add("Textarea ( Required )", () => (
-    <Textarea
-      inputLabel="Textarea ( Required )"
+  .add("TextArea ( Required )", () => (
+    <TextArea
+      inputLabel="TextArea ( Required )"
       isRequired={true}
       helpText="This help text has been passed through a prop!"
     />
   ))
 
-// Textarea ( Disabled )
-storiesOf("Atoms|Textarea", module)
+// TextArea ( Disabled )
+storiesOf("Atoms|TextArea", module)
   .addDecorator(Padding)
-  .add("Textarea ( Disabled )", () => (
-    <Textarea
-      inputLabel="Textarea ( Disabled )"
+  .add("TextArea ( Disabled )", () => (
+    <TextArea
+      inputLabel="TextArea ( Disabled )"
       helpText="This help text has been passed through a prop!"
       disabled={true}
     />
   ))
 
-// Textarea ( Error )
-storiesOf("Atoms|Textarea", module)
+// TextArea ( Error )
+storiesOf("Atoms|TextArea", module)
   .addDecorator(Padding)
-  .add("Textarea ( Error )", () => (
-    <Textarea
-      inputLabel="Textarea ( Error )"
+  .add("TextArea ( Error )", () => (
+    <TextArea
+      inputLabel="TextArea ( Error )"
       helpText="This help text has been passed through a prop!"
       error={true}
       errorText="This error text has been passed through a prop!"
     />
   ))
 
-// Textarea ( The Textarea Family )
-storiesOf("Atoms|Textarea", module).add("The Textarea Family", props => (
+// TextArea ( The TextArea Family )
+storiesOf("Atoms|TextArea", module).add("The TextArea Family", props => (
   <Panel>
     <PanelBody>
       <Form>
         <Section>
-          <SectionName>The Textarea Family</SectionName>
-          <InputGroup>
-            <Textarea
-              inputLabel="Textarea ( Standard )"
-              helpText="This help text has been passed through a prop!"
-            />
-            <Textarea
-              inputLabel="Textarea ( Standard )"
-              isRequired={true}
-              helpText="This help text has been passed through a prop!"
-            />
-          </InputGroup>
-          <Textarea
-            inputLabel="Textarea ( Disabled )"
+          <SectionName>The TextArea Family</SectionName>
+          <TextArea
+            inputLabel="TextArea ( Standard )"
+            helpText="This help text has been passed through a prop!"
+          />
+          <TextArea
+            inputLabel="TextArea ( Standard )"
+            isRequired={true}
+            helpText="This help text has been passed through a prop!"
+          />
+          <TextArea
+            inputLabel="TextArea ( Disabled )"
             helpText="This help text has been passed through a prop!"
             disabled={true}
           />
-          <Textarea
-            inputLabel="Textarea ( Error )"
+          <TextArea
+            inputLabel="TextArea ( Error )"
             helpText="This help text has been passed through a prop!"
             error={true}
           />
