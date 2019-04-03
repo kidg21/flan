@@ -51,7 +51,7 @@ const PrePostLabel = styled.label`
   letter-spacing: 2px;
   text-transform: lowercase;
   color: ${colors.grey_60};
-  background-color: ${colors.white};
+  background-color: #ffffff;
   border: 1px solid ${colors.grey_20};
   border-bottom: 1px solid ${colors.grey_40};
   border-radius: 4px;
@@ -75,10 +75,14 @@ const TextInput = styled.input`
     border-color: ${props => (props.error ? colors.alert : "")};
   }
   &:focus {
-    background-color: ${props => (props.error ? "#f9ebeb" : "")};
-    border-color: ${props => (props.error ? colors.alert : colors.anchor)};
+    background-color: ${props => (props.error ? "#f9ebeb" : "#f1f8eb")};
+    border-color: ${props => (props.error ? colors.alert : colors.success)};
     ::placeholder {
-      color: ${props => (props.error ? colors.alert : "")};
+      color: ${props => (props.error ? colors.alert : colors.success)};
+    }
+    ::selection {
+      background-color: ${props =>
+        props.error ? colors.alert : colors.success};
     }
   }
 `

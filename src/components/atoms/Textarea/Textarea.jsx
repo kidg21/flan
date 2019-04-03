@@ -13,10 +13,30 @@ const TextAreaContainer = styled.div`
     props.error ? colors.alert : props.disabled ? colors.grey_40 : ""};
 `
 
+const TextInputLabel = styled.label`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 1 / -1;
+  user-select: none;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: ${props => (props.disabled ? colors.grey_40 : "")};
+  color: ${props => (props.error ? colors.alert : "")};
+  cursor: pointer;
+  &:after {
+    content: "*";
+    display: ${props => (props.required ? "" : "none")};
+    line-height: 0;
+    font-size: 1.5rem;
+    color: ${colors.alert};
+  }
+`
 const TextAreaInput = styled.textarea`
   border: 1px solid ${colors.grey_20};
-  border-radius: 5px;
   border-bottom: 1px solid ${colors.grey_40};
+  border-radius: 5px;
   border-color: ${props => (props.error ? colors.alert : "")};
   background-color: ${props => (props.error ? "#f9ebeb" : "")};
   caret-color: ${props => (props.error ? colors.alert : "")};

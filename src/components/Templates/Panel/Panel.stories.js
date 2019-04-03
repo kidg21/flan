@@ -10,6 +10,7 @@ import Accordion from '../../blocks/Accordion/Accordion';
 import Checkbox from "../../atoms/Checkbox/Checkbox";
 import AddIcon from "../../atoms/Icon/PlusIcon";
 import Button from "../../atoms/Button/Button";
+import Table from "../../blocks/Table/Table";
 
 storiesOf("Templates|Panel", module)
 .add("Data Overlay Panel", () => (
@@ -51,7 +52,7 @@ storiesOf("Templates|Panel", module)
 .add("Empty Filter Panel", () => (
   <Panel>
     <PanelSection>
-		<PanelHeader title="Filters"/>
+		<PanelHeader layer="Data Overlay" title="Filters"/>
       </PanelSection>
     <PanelBody>
 		  </PanelBody>
@@ -66,7 +67,7 @@ storiesOf("Templates|Panel", module)
 .add("Filter Panel", () => (
   <Panel>
     <PanelSection>
-		<PanelHeader title="Filters"/>
+		<PanelHeader layer="Data Overlay" title="Filters"/>
       </PanelSection>
     <PanelBody>
 		<NavCard title="Property"/>
@@ -90,7 +91,7 @@ storiesOf("Templates|Panel", module)
 .add("Second Filter Panel", () => (
   <Panel>
     <PanelSection>
-		<PanelHeader title="Property"/>
+		<PanelHeader layer="Data Overlay" title="Property"/>
       </PanelSection>
     <PanelBody>
 		<NavCard title="Property Type"/>
@@ -110,7 +111,7 @@ storiesOf("Templates|Panel", module)
 .add("Select Filter Panel", () => (
   <Panel>
     <PanelSection>
-		<PanelHeader title="Filter Detail"/>
+		<PanelHeader layer="Data Overlay" title="Filter Detail"/>
       </PanelSection>
     <PanelBody>
 		<Checkbox/>

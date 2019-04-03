@@ -126,13 +126,14 @@ const GlobalStyles = createGlobalStyle`
     }
     code {
         font-family: ${fonts.data};
+        font-sie: 12px;
         font-size: 0.85rem;
         line-height: 1rem;
         letter-spacing: 1px;
         background-color: ${colors.grey_20};
         margin: 0 .1rem;
         padding: 0.125rem 0.3125rem 0.0625rem;
-        border: 1px solid ${colors.grey_40};
+        border: 1px solid ${colors.grey_60};
         font-weight: normal;
         color: inherit;
     }
@@ -141,8 +142,6 @@ const GlobalStyles = createGlobalStyle`
 /* Placeholder */
     ::placeholder {
         color: ${colors.grey_60};
-        letter-spacing: 1px;
-        font-weight: 400;
     }
     ::selection {
         color: ${colors.white};
@@ -151,6 +150,7 @@ const GlobalStyles = createGlobalStyle`
 /* Labels */
     label {
         font-family: ${fonts.data};
+        font-size: smaller;
     }
 /* Inputs */
     input:not([type]),
@@ -174,9 +174,9 @@ const GlobalStyles = createGlobalStyle`
         width: 100%;
         color: ${colors.grey_dark};
         font-family: ${fonts.data};
-        font-weight: 500;
         letter-spacing: 1px;
         border-radius: 5px;
+        font-size: 12px;
         transition: border-color 0.1s linear, background 0.1s linear;
         -webkit-appearance: none;
         &:focus {
