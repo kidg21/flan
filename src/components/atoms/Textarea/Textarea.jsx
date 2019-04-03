@@ -9,7 +9,6 @@ const TextInputContainer = styled.div`
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 0.35rem;
   align-content: flex-start;
-  /* margin-bottom: 0.5rem; */
   color: ${props => (props.disabled ? colors.grey_40 : "")};
 `
 
@@ -40,7 +39,7 @@ const TextInput = styled.textarea`
   }
 `
 
-function Textarea({ helpText, errorText, ...props }) {
+function Textarea({ inputLabel, isRequired, helpText, errorText, ...props }) {
   return (
     <TextInputContainer
       name={props.name} // input attribute
@@ -48,7 +47,7 @@ function Textarea({ helpText, errorText, ...props }) {
       pattern="alpha" // input attribute
       disabled={props.disabled} // input attribute
       helpText={helpText}
-      required={props.required}
+      isRequired={isRequired}
       error={props.error}
     >
       <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
@@ -64,16 +63,14 @@ function Textarea({ helpText, errorText, ...props }) {
 Textarea.defaultProps = {
   name: "Input Name",
   placeholder: "Placeholder Text",
-  required: false,
   disabled: false,
   error: false,
-  errorText: "Error text for the Input component"
+  errorText: "Error text for the Textarea component"
 }
 
 Textarea.propTypes = {
   name: PropTypes.string,
   placeholder: PropTypes.string,
-  required: PropTypes.bool,
   disabled: PropTypes.bool,
   error: PropTypes.bool
 }
