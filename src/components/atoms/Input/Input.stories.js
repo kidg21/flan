@@ -20,8 +20,8 @@ storiesOf("Atoms|Input", module)
   .addDecorator(withKnobs)
   .add("Input ( Knobs )", () => (
     <Input
-      label={text("Input Label", "Input ( Knobs )")}
-      required={boolean("Required", false)}
+      inputLabel={text("Input Label", "Input ( Knobs )")}
+      isRequired={boolean("Required", false)}
       placeholder={text("Placeholder Text", "I am just keeping things warm")}
       helpText={text("Help Text", "Have you been helped yet?")}
       disabled={boolean("Disabled", false)}
@@ -31,9 +31,9 @@ storiesOf("Atoms|Input", module)
         "Stay with my, buddy...we can fix this!"
       )}
       prefix={text("Prefix", "")}
-      preSelect={boolean("Pre-Select", false)}
+      // preSelect={boolean("Pre-Select", false)}
       postfix={text("Postfix", "")}
-      postSelect={boolean("Post-Select", false)}
+      // postSelect={boolean("Post-Select", false)}
       twoInputs={boolean("2 Inputs", false)}
       threeInputs={boolean("3 Inputs", false)}
       // disabled={radios(
@@ -52,7 +52,7 @@ storiesOf("Atoms|Input", module)
   .addDecorator(Padding)
   .add("Input ( Standard )", () => (
     <Input
-      label="Input ( Standard )"
+      inputLabel="Input ( Standard )"
       helpText="This help text has been passed through a prop!"
     />
   ))
@@ -62,8 +62,8 @@ storiesOf("Atoms|Input", module)
   .addDecorator(Padding)
   .add("Input ( Required )", () => (
     <Input
-      label="Input ( Required )"
-      required={true}
+      inputLabel="Input ( Required )"
+      isRequired={true}
       helpText="This help text has been passed through a prop!"
     />
   ))
@@ -73,9 +73,9 @@ storiesOf("Atoms|Input", module)
   .addDecorator(Padding)
   .add("Input ( Disabled )", () => (
     <Input
-      label="Input ( Disabled )"
-      helpText="This help text has been passed through a prop!"
+      inputLabel="Input ( Disabled )"
       disabled={true}
+      helpText="This help text has been passed through a prop!"
     />
   ))
 
@@ -84,67 +84,10 @@ storiesOf("Atoms|Input", module)
   .addDecorator(Padding)
   .add("Input ( Error )", () => (
     <Input
-      label="Input ( Error )"
+      inputLabel="Input ( Error )"
       helpText="This help text has been passed through a prop!"
       error={true}
       errorMessage="This error text has been passed through a prop!"
-    />
-  ))
-
-// Input ( Prefix )
-storiesOf("Atoms|Input", module)
-  .addDecorator(Padding)
-  .add("Input ( Prefix Label )", () => (
-    <Input
-      label="Input ( Prefix )"
-      prefix="http://"
-      helpText="This help text has been passed through a prop!"
-      placeholder="This help text has been passed through a prop!"
-    />
-  ))
-
-// Input ( Prefix Icon )
-storiesOf("Atoms|Input", module)
-  .addDecorator(Padding)
-  .add("Input ( Prefix Icon )", () => (
-    <Input
-      label="Input ( Prefix Icon )"
-      prefix={<FontAwesomeIcon icon={["fas", "user"]} size="lg" fixedWidth />}
-      helpText="This help text has been passed through a prop!"
-      placeholder="This help text has been passed through a prop!"
-    />
-  ))
-
-// Input ( Pre-Select )
-storiesOf("Atoms|Input", module)
-  .addDecorator(Padding)
-  .add("Input ( Pre-Select )", () => (
-    <Input
-      label="Input ( Pre-Select )"
-      helpText="This help text has been passed through a prop!"
-      preSelect={true}
-    />
-  ))
-
-// Input ( Postfix )
-storiesOf("Atoms|Input", module)
-  .addDecorator(Padding)
-  .add("Input ( Postfix Label )", () => (
-    <Input
-      label="Input ( Postfix )"
-      postfix=".com"
-      helpText="This help text has been passed through a prop!"
-    />
-  ))
-
-// Input ( Post-Select )
-storiesOf("Atoms|Input", module)
-  .addDecorator(Padding)
-  .add("Input ( Post-Select )", () => (
-    <Input
-      postSelect={true}
-      label="Input ( Post-Select )"
-      helpText="This help text has been passed through a prop!"
     />
   ))
 
@@ -153,7 +96,7 @@ storiesOf("Atoms|Input", module)
   .addDecorator(Padding)
   .add("Input ( 2 Inputs )", () => (
     <Input
-      label="Input ( 2 Inputs )"
+      inputLabel="Input ( 2 Inputs )"
       twoInputs={true}
       helpText="This help text has been passed through a prop!"
     />
@@ -164,10 +107,139 @@ storiesOf("Atoms|Input", module)
   .addDecorator(Padding)
   .add("Input ( 3 Inputs )", () => (
     <Input
-      label="Input ( 3 Inputs )"
+      inputLabel="Input ( 3 Inputs )"
       threeInputs={true}
       placeholder_2="Two!!"
       placeholder_3="Three!!!"
+      helpText="This help text has been passed through a prop!"
+    />
+  ))
+
+// Input ( Prefix )
+storiesOf("Atoms|Input", module)
+  .addDecorator(Padding)
+  .add("Input ( Prefix Label )", () => (
+    <Input
+      inputLabel="Input ( Prefix )"
+      prefix="http://"
+      placeholder="This help text has been passed through a prop!"
+      helpText="This help text has been passed through a prop!"
+    />
+  ))
+
+// Input ( Prefix Icon )
+storiesOf("Atoms|Input", module)
+  .addDecorator(Padding)
+  .add("Input ( Prefix Icon )", () => (
+    <Input
+      inputLabel="Input ( Prefix Icon )"
+      prefix={<FontAwesomeIcon icon={["fas", "user"]} size="lg" fixedWidth />}
+      placeholder="This help text has been passed through a prop!"
+      helpText="This help text has been passed through a prop!"
+    />
+  ))
+
+// Input ( Pre-Select )
+storiesOf("Atoms|Input", module)
+  .addDecorator(Padding)
+  .add("Input ( Pre-Select )", () => (
+    <Input
+      inputLabel="Input ( Pre-Select )"
+      preSelect={[
+        { value: "sir", label: "Sir" },
+        { value: "madam", label: "Madam" },
+        { value: "my lord", label: "My Lord" }
+      ]}
+      helpText="This help text has been passed through a prop!"
+    />
+  ))
+
+// Input ( Postfix )
+storiesOf("Atoms|Input", module)
+  .addDecorator(Padding)
+  .add("Input ( Postfix Label )", () => (
+    <Input
+      inputLabel="Input ( Postfix )"
+      postfix=".com"
+      helpText="This help text has been passed through a prop!"
+    />
+  ))
+
+// Input ( Post-Select )
+storiesOf("Atoms|Input", module)
+  .addDecorator(Padding)
+  .add("Input ( Post-Select )", () => (
+    <Input
+      inputLabel="Input ( Post-Select )"
+      postSelect={[
+        { value: "com", label: ".com" },
+        { value: "org", label: ".org" },
+        { value: "gov", label: ".gov" }
+      ]}
+      helpText="This help text has been passed through a prop!"
+    />
+  ))
+
+// Input ( Prefix / Postfix )
+storiesOf("Atoms|Input", module)
+  .addDecorator(Padding)
+  .add("Input ( Prefix / Postfix )", () => (
+    <Input
+      inputLabel="Input ( Prefix / Postfix )"
+      prefix="http://"
+      postfix=".com"
+      helpText="This help text has been passed through a prop!"
+    />
+  ))
+
+// Input ( Prefix / Post-Select )
+storiesOf("Atoms|Input", module)
+  .addDecorator(Padding)
+  .add("Input ( Prefix / Post-Select )", () => (
+    <Input
+      inputLabel="Input ( Prefix / Post-Select )"
+      prefix="http://"
+      postSelect={[
+        { value: "com", label: ".com" },
+        { value: "org", label: ".org" },
+        { value: "gov", label: ".gov" }
+      ]}
+      helpText="This help text has been passed through a prop!"
+    />
+  ))
+
+// Input ( Pre-Select / Postfix )
+storiesOf("Atoms|Input", module)
+  .addDecorator(Padding)
+  .add("Input ( Pre-Select / Postfix )", () => (
+    <Input
+      inputLabel="Input ( Pre-Select / Postfix )"
+      preSelect={[
+        { value: "sir", label: "Sir" },
+        { value: "madam", label: "Madam" },
+        { value: "my lord", label: "My Lord" }
+      ]}
+      postfix=".com"
+      helpText="This help text has been passed through a prop!"
+    />
+  ))
+
+// Input ( Pre / Post-Select )
+storiesOf("Atoms|Input", module)
+  .addDecorator(Padding)
+  .add("Input ( Pre / Post-Select )", () => (
+    <Input
+      inputLabel="Input ( Pre / Post-Select )"
+      preSelect={[
+        { value: "sir", label: "Sir" },
+        { value: "madam", label: "Madam" },
+        { value: "my lord", label: "My Lord" }
+      ]}
+      postSelect={[
+        { value: "com", label: ".com" },
+        { value: "org", label: ".org" },
+        { value: "gov", label: ".gov" }
+      ]}
       helpText="This help text has been passed through a prop!"
     />
   ))
@@ -180,66 +252,113 @@ storiesOf("Atoms|Input", module).add("The Input Family", props => (
         <Section>
           <SectionName>The Input Family</SectionName>
           <Input
-            label="Input ( Standard )"
+            inputLabel="Input ( Standard )"
             helpText="This help text has been passed through a prop!"
           />
           <Input
-            label="Input ( Required )"
-            required={true}
+            inputLabel="Input ( Required )"
+            isRequired={true}
             helpText="This help text has been passed through a prop!"
           />
           <Input
-            label="Input ( Disabled )"
+            inputLabel="Input ( Disabled )"
             disabled={true}
             helpText="This help text has been passed through a prop!"
           />
           <Input
-            label="Input ( Error )"
-            required={true}
+            inputLabel="Input ( Error )"
+            helpText="This help text has been passed through a prop!"
             error={true}
             errorMessage="This error text has been passed through a prop!"
-            helpText="This help text has been passed through a prop!"
           />
           <Input
-            label="Input ( Prefix Label )"
-            prefix="http://"
-            helpText="This help text has been passed through a prop!"
-            placeholder="This help text has been passed through a prop!"
-          />
-          <Input
-            label="Input ( Prefix Icon )"
-            prefix={
-              <FontAwesomeIcon icon={["fas", "user"]} size="lg" fixedWidth />
-            }
-            helpText="This help text has been passed through a prop!"
-            placeholder="This help text has been passed through a prop!"
-          />
-          <Input
-            preSelect={true}
-            label="Input ( Pre-Select )"
-            helpText="This help text has been passed through a prop!"
-          />
-          <Input
-            label="Input ( Postfix Label )"
-            postfix=".com"
-            helpText="This help text has been passed through a prop!"
-          />
-          <Input
-            postSelect={true}
-            label="Input ( Post-Select )"
-            helpText="This help text has been passed through a prop!"
-          />
-          <Input
-            label="Input ( 2 Inputs )"
+            inputLabel="Input ( 2 Inputs )"
             twoInputs={true}
             helpText="This help text has been passed through a prop!"
           />
           <Input
-            label="Input ( 3 Inputs )"
-            helpText="This help text has been passed through a prop!"
+            inputLabel="Input ( 3 Inputs )"
             threeInputs={true}
+            helpText="This help text has been passed through a prop!"
             placeholder_2="Two!!"
             placeholder_3="Three!!!"
+          />
+          <Input
+            inputLabel="Input ( Prefix Label )"
+            prefix="http://"
+            placeholder="This help text has been passed through a prop!"
+            helpText="This help text has been passed through a prop!"
+          />
+          <Input
+            inputLabel="Input ( Prefix Icon )"
+            prefix={
+              <FontAwesomeIcon icon={["fas", "user"]} size="lg" fixedWidth />
+            }
+            placeholder="This help text has been passed through a prop!"
+            helpText="This help text has been passed through a prop!"
+          />
+          <Input
+            inputLabel="Input ( Pre-Select )"
+            preSelect={[
+              { value: "sir", label: "Sir" },
+              { value: "madam", label: "Madam" },
+              { value: "my lord", label: "My Lord" }
+            ]}
+            helpText="This help text has been passed through a prop!"
+          />
+          <Input
+            inputLabel="Input ( Postfix Label )"
+            postfix=".com"
+            helpText="This help text has been passed through a prop!"
+          />
+          <Input
+            inputLabel="Input ( Post-Select )"
+            postSelect={[
+              { value: "com", label: ".com" },
+              { value: "org", label: ".org" },
+              { value: "gov", label: ".gov" }
+            ]}
+            helpText="This help text has been passed through a prop!"
+          />
+          <Input
+            inputLabel="Input ( Prefix / Postfix )"
+            prefix="http://"
+            postfix=".com"
+            helpText="This help text has been passed through a prop!"
+          />
+          <Input
+            inputLabel="Input ( Prefix / Post-Select )"
+            prefix="http://"
+            postSelect={[
+              { value: "com", label: ".com" },
+              { value: "org", label: ".org" },
+              { value: "gov", label: ".gov" }
+            ]}
+            helpText="This help text has been passed through a prop!"
+          />
+          <Input
+            inputLabel="Input ( Pre-Select / Postfix )"
+            preSelect={[
+              { value: "sir", label: "Sir" },
+              { value: "madam", label: "Madam" },
+              { value: "my lord", label: "My Lord" }
+            ]}
+            postfix=".com"
+            helpText="This help text has been passed through a prop!"
+          />
+          <Input
+            inputLabel="Input ( Pre / Post-Select )"
+            preSelect={[
+              { value: "sir", label: "Sir" },
+              { value: "madam", label: "Madam" },
+              { value: "my lord", label: "My Lord" }
+            ]}
+            postSelect={[
+              { value: "com", label: ".com" },
+              { value: "org", label: ".org" },
+              { value: "gov", label: ".gov" }
+            ]}
+            helpText="This help text has been passed through a prop!"
           />
         </Section>
       </Form>
