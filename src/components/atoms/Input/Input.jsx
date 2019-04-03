@@ -44,12 +44,13 @@ const TextInputContainer = styled.div`
 const PrePostLabel = styled.label`
   display: flex;
   justify-content: center;
+  border-radius: 5px;
   align-items: center;
-  font-weight: bold;
+  // font-weight: bold;
   letter-spacing: 2px;
   text-transform: lowercase;
   color: ${colors.grey_60};
-  background-color: ${colors.grey_light};
+  background-color: ${colors.white};
   border: 1px solid ${colors.grey_20};
   border-bottom: 1px solid ${colors.grey_40};
   border-radius: 4px;
@@ -59,7 +60,7 @@ const PrePostLabel = styled.label`
 
 const TextInput = styled.input.attrs({ type: "text" })`
   border: 1px solid ${colors.grey_20};
-  border-bottom: 1px solid ${colors.grey_40};
+  border-bottom: 1px solid ${colors.grey_20};
   border-color: ${props => (props.error ? colors.alert : "")};
   background-color: ${props => (props.error ? "#f9ebeb" : "")};
   caret-color: ${props => (props.error ? colors.alert : "")};
@@ -73,14 +74,10 @@ const TextInput = styled.input.attrs({ type: "text" })`
     border-color: ${props => (props.error ? colors.alert : "")};
   }
   &:focus {
-    background-color: ${props => (props.error ? "#f9ebeb" : "#f1f8eb")};
-    border-color: ${props => (props.error ? colors.alert : colors.success)};
+    background-color: ${props => (props.error ? "#f9ebeb" : "")};
+    border-color: ${props => (props.error ? colors.alert : colors.anchor)};
     ::placeholder {
-      color: ${props => (props.error ? colors.alert : colors.success)};
-    }
-    ::selection {
-      background-color: ${props =>
-        props.error ? colors.alert : colors.success};
+      color: ${props => (props.error ? colors.alert : "")};
     }
   }
 `

@@ -14,6 +14,7 @@ const TextInputContainer = styled.div`
 
 const TextInput = styled.textarea`
   border: 1px solid ${colors.grey_20};
+  border-radius: 5px;
   border-bottom: 1px solid ${colors.grey_40};
   border-color: ${props => (props.error ? colors.alert : "")};
   background-color: ${props => (props.error ? "#f9ebeb" : "")};

@@ -4,7 +4,7 @@ import Panel, { PanelSection, PanelBody, PanelFooter } from "../../layout/Panel/
 import PanelHeader from '../../blocks/PanelPieces/PanelHeader';
 import LayerPanelHeader from '../../blocks/PanelPieces/LayerHeader';
 import NavCard from "../../blocks/Card/NavCard";
-import FilterDetailHeader from "../../blocks/PanelPieces/FilterDetailHeader";
+import MapLegend from "../../blocks/Map/MapLegend.js";
 // import LayerCard from '../../blocks/Card/TrialCard';
 import Accordion from '../../blocks/Accordion/Accordion';
 import Checkbox from "../../atoms/Checkbox/Checkbox";
@@ -12,39 +12,40 @@ import AddIcon from "../../atoms/Icon/PlusIcon";
 import Button from "../../atoms/Button/Button";
 
 storiesOf("Templates|Panel", module)
-// .add("Data Overlay Panel", () => (
-//   <Panel>
-//     <PanelSection>
-// 		<LayerPanelHeader title="Data Overlays"/>
-//       </PanelSection>
-//     <PanelBody>
+.add("Data Overlay Panel", () => (
+  <Panel>
+    <PanelSection>
+		<LayerPanelHeader title="Data Overlays"/>
+      </PanelSection>
+    <PanelBody>
       
-//         <Accordion
-// 			    title="Demographics"
-// 		    	onToggle={visibility => {
-// 			  	console.log('visibility -->', visibility);
-// 		    	}}>
-// 		     </Accordion>
+        <Accordion
+			    title="Demographics"
+		    	onToggle={visibility => {
+			  	console.log('visibility -->', visibility);
+		    	}}>
+					<MapLegend/>
+		     </Accordion>
 
 
-//          <Accordion
-// 			    title="Floodzones"
-// 		    	onToggle={visibility => {
-// 			  	console.log('visibility -->', visibility);
-// 		    	}}>
-// 		     </Accordion>
+         <Accordion
+			    title="Floodzones"
+		    	onToggle={visibility => {
+			  	console.log('visibility -->', visibility);
+		    	}}>
+		     </Accordion>
 
 
-//          <Accordion
-// 			    title="Crime Rates"
-// 		    	onToggle={visibility => {
-// 			  	console.log('visibility -->', visibility);
-// 		    	}}>
-// 		     </Accordion>
+         <Accordion
+			    title="Crime Rates"
+		    	onToggle={visibility => {
+			  	console.log('visibility -->', visibility);
+		    	}}>
+		     </Accordion>
 
-//       </PanelBody>
-//   </Panel>
-// ))
+      </PanelBody>
+  </Panel>
+))
 
 
 .add("Empty Filter Panel", () => (
@@ -109,7 +110,7 @@ storiesOf("Templates|Panel", module)
 .add("Select Filter Panel", () => (
   <Panel>
     <PanelSection>
-		<FilterDetailHeader title="Filter Detail"/>
+		<PanelHeader title="Filter Detail"/>
       </PanelSection>
     <PanelBody>
 		<Checkbox/>

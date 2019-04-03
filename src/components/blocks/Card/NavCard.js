@@ -15,6 +15,10 @@ display: flex;
 
 `
 
+const H4 = styled.h4`
+margin: 0;
+
+`
 
 const iconProps = {
     nameProp: ["far", "angle-right"],
@@ -26,7 +30,7 @@ const iconProps = {
 const CardContainer = ({title}) => {
     return (
         <HeaderSection>
-          <h4 style={{margin: 0}}>{title}</h4>
+          <H4>{title}</H4>
            <Icon {...iconProps}/>
         </HeaderSection>
     )
