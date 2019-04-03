@@ -68,12 +68,34 @@ const SectionName = styled.h5`
     }
   }
 `
+const Label = styled.label`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 1 / -1;
+  user-select: none;
+  font-size: smaller;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: ${props => (props.disabled ? colors.grey_40 : "")};
+  color: ${props => (props.error ? colors.alert : "")};
+  cursor: pointer;
+  &:after {
+    content: "*";
+    display: ${props => (props.isRequired ? "" : "none")};
+    line-height: 0;
+    font-size: 1.5rem;
+    color: ${colors.alert};
+  }
+`
+const InputLabel = props => (
+  <Label isRequired={props.isRequired}>{props.inputLabel}</Label>
+)
 
 const Help = styled.label`
   grid-column: 1 / -1;
   color: ${colors.grey_60};
   font-size: smaller;
-  /* font-weight: 700; */
   letter-spacing: 1px;
 `
 const HelpText = props => <Help>{props.helpText}</Help>
@@ -106,6 +128,15 @@ const InputGroup = styled.div`
   }
 `
 
+InputLabel.defaultProps = {
+  inputLabel: "Input Label",
+  isRequired: false
+}
+InputLabel.propTypes = {
+  inputLabel: PropTypes.string.isRequired,
+  isRequired: PropTypes.bool
+}
+
 HelpText.defaultProps = {
   helpText: "Help Text Goes Here"
 }
@@ -125,6 +156,7 @@ export {
   Title,
   Section,
   SectionName,
+  InputLabel,
   HelpText,
   ErrorText,
   InputGroup

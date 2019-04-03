@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import PropTypes from "prop-types"
 import { fonts, colors, shadows } from "../../../attributes/Variables/Variables"
-import { HelpText, ErrorText } from "../../layout/Form/Form"
+import { InputLabel, HelpText, ErrorText } from "../../layout/Form/Form"
 import Select from "react-select"
 
 const selectStyles = {
@@ -126,28 +126,13 @@ const TextInputContainer = styled.div`
   color: ${props => (props.disabled ? colors.grey_40 : "")};
 `
 
-const TextInputLabel = styled.label`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  grid-column: 1 / -1;
-  user-select: none;
-  font-size: smaller;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: ${props => (props.disabled ? colors.grey_40 : "")};
-  color: ${props => (props.error ? colors.alert : "")};
-  cursor: pointer;
-  &:after {
-    content: "*";
-    display: ${props => (props.required ? "" : "none")};
-    line-height: 0;
-    font-size: 1.5rem;
-    color: ${colors.alert};
-  }
-`
-
-const SelectMenu = ({ helpText, errorText, ...props }) => (
+const SelectMenu = ({
+  inputLabel,
+  isRequired,
+  helpText,
+  errorText,
+  ...props
+}) => (
   <TextInputContainer
     name={props.name}
     placeholder={props.placeholder}
@@ -175,7 +160,6 @@ const SelectMenu = ({ helpText, errorText, ...props }) => (
 )
 
 SelectMenu.defaultProps = {
-  label: "SelectMenu Label",
   name: "SelectMenu Name",
   placeholder: "Select Something...",
   required: false,
@@ -196,7 +180,6 @@ SelectMenu.defaultProps = {
 }
 
 SelectMenu.propTypes = {
-  label: PropTypes.string.isRequired,
   name: PropTypes.string,
   placeholder: PropTypes.string,
   required: PropTypes.bool,

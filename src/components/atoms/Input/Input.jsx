@@ -1,7 +1,7 @@
 import React from "react"
 import styled, { css } from "styled-components"
 import PropTypes from "prop-types"
-import { HelpText, ErrorText } from "../../layout/Form/Form"
+import { InputLabel, HelpText, ErrorText } from "../../layout/Form/Form"
 import SelectMenu from "../SelectMenu"
 import { colors, shadows } from "../../../attributes/Variables/Variables"
 
@@ -24,28 +24,6 @@ const TextInputContainer = styled.div`
   grid-gap: 0.35rem;
   align-content: flex-start;
   color: ${props => (props.disabled ? colors.grey_40 : "")};
-  /* margin-bottom: 0.5rem; */
-`
-
-const TextInputLabel = styled.label`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  grid-column: 1 / -1;
-  user-select: none;
-  font-size: smaller;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: ${props => (props.disabled ? colors.grey_40 : "")};
-  color: ${props => (props.error ? colors.alert : "")};
-  cursor: pointer;
-  &:after {
-    content: "*";
-    display: ${props => (props.required ? "" : "none")};
-    line-height: 0;
-    font-size: 1.5rem;
-    color: ${colors.alert};
-  }
 `
 
 const PrePostLabel = styled.label`
@@ -108,7 +86,8 @@ function Input({ helpText, errorText, ...props }) {
       twoInputs={props.twoInputs} // 2 inputs in a row
       threeInputs={props.threeInputs} // 3 inputs in a row
     >
-      <TextInputLabel {...props}>{props.label}</TextInputLabel>
+      {/* Input Label */}
+      <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
       {/* Prefix Label (conditional) */}
       {props.prefix ? <PrePostLabel>{props.prefix}</PrePostLabel> : null}
       {/* Prefix Select Menu (conditional) */}
@@ -153,7 +132,6 @@ function Input({ helpText, errorText, ...props }) {
 }
 
 Input.defaultProps = {
-  label: "Input Label",
   name: "Input Name",
   placeholder: "Placeholder Text",
   placeholder_2: "Placeholder 2",

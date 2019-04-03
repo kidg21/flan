@@ -1,8 +1,7 @@
 import React from "react"
 import styled, { css } from "styled-components"
 import PropTypes from "prop-types"
-// import { Grid_2, inputGrid } from "../../_helpers/Grid";
-import { HelpText, ErrorText } from "../../layout/Form/Form"
+import { InputLabel, HelpText, ErrorText } from "../../layout/Form/Form"
 import { colors, shadows } from "../../../attributes/Variables/Variables"
 
 const TextInputContainer = styled.div`
@@ -12,27 +11,6 @@ const TextInputContainer = styled.div`
   align-content: flex-start;
   /* margin-bottom: 0.5rem; */
   color: ${props => (props.disabled ? colors.grey_40 : "")};
-`
-
-const TextInputLabel = styled.label`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  grid-column: 1 / -1;
-  user-select: none;
-  font-size: smaller;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: ${props => (props.disabled ? colors.grey_40 : "")};
-  color: ${props => (props.error ? colors.alert : "")};
-  cursor: pointer;
-  &:after {
-    content: "*";
-    display: ${props => (props.required ? "" : "none")};
-    line-height: 0;
-    font-size: 1.5rem;
-    color: ${colors.alert};
-  }
 `
 
 const TextInput = styled.textarea`
@@ -73,7 +51,7 @@ function Textarea({ helpText, errorText, ...props }) {
       required={props.required}
       error={props.error}
     >
-      <TextInputLabel {...props}>{props.label}</TextInputLabel>
+      <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
       <TextInput {...props} />
       {/* Help Text */}
       {helpText ? <HelpText helpText={helpText} /> : null}
@@ -84,7 +62,6 @@ function Textarea({ helpText, errorText, ...props }) {
 }
 
 Textarea.defaultProps = {
-  label: "Input Label",
   name: "Input Name",
   placeholder: "Placeholder Text",
   required: false,
@@ -94,7 +71,6 @@ Textarea.defaultProps = {
 }
 
 Textarea.propTypes = {
-  label: PropTypes.string.isRequired,
   name: PropTypes.string,
   placeholder: PropTypes.string,
   required: PropTypes.bool,
