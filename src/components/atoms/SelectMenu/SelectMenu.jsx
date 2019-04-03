@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import PropTypes from "prop-types"
 import { fonts, colors, shadows } from "../../../attributes/Variables/Variables"
-import { HelpText, ErrorText } from "../../layout/Form/Form"
+import { InputLabel, HelpText, ErrorText } from "../../layout/Form/Form"
 import Select from "react-select"
 
 const selectStyles = {
@@ -116,8 +116,7 @@ const selectStyles = {
 }
 
 const TextInputContainer = styled.div`
-  /* display: grid; */
-  display: ${props => (props.displayBlock ? "inline-block" : "grid")};
+  display: ${props => (props.displayInline ? "inline-block" : "grid")};
   grid-template-columns: ${props =>
     props.threeInputs
       ? "repeat(3, 1fr)"
@@ -133,7 +132,7 @@ const TextInputContainer = styled.div`
   color: ${props => (props.disabled ? colors.grey_40 : "")};
 `
 
-const TextInputLabel = styled.label`
+const InputLabel = styled.label`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -155,15 +154,23 @@ const TextInputLabel = styled.label`
 `
 
 
-const SelectMenu = ({ helpText, errorText, ...props }) => (
+const SelectMenu = ({
+  inputLabel,
+  isRequired,
+  helpText,
+  errorText,
+  ...props
+}) => (
   <TextInputContainer
     name={props.name}
     placeholder={props.placeholder}
-    required={props.required}
+    // isRequired={props.required}
+    isRequired={isRequired}
     error={props.error}
-    displayBlock={props.displayBlock}
+    displayInline={props.displayInline}
   >
-    <TextInputLabel {...props}>{props.label}</TextInputLabel>
+    {/* Input Label (required) */}
+    <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
     <Select
       {...props}
       styles={selectStyles}
@@ -183,15 +190,14 @@ const SelectMenu = ({ helpText, errorText, ...props }) => (
 )
 
 SelectMenu.defaultProps = {
-  label: "SelectMenu Label",
   name: "SelectMenu Name",
   placeholder: "Select Something...",
-  required: false,
   options: [
     { value: "one", label: "Option #1" },
     { value: "two", label: "Option #2" },
     { value: "three", label: "Option #3" }
   ],
+  required: false,
   disabled: false,
   multiSelect: false,
   error: false,
@@ -199,24 +205,22 @@ SelectMenu.defaultProps = {
   isClearable: true,
   isSearchable: true,
   isLoading: false,
-  displayBlock: false,
+  displayInline: false,
   isRtl: false
 }
 
 SelectMenu.propTypes = {
-  label: PropTypes.string.isRequired,
   name: PropTypes.string,
   placeholder: PropTypes.string,
-  required: PropTypes.bool,
-  helpText: PropTypes.string.isRequired,
   options: PropTypes.array,
+  required: PropTypes.bool,
   disabled: PropTypes.bool,
   multiSelect: PropTypes.bool,
   error: PropTypes.bool,
   isClearable: PropTypes.bool,
   isSearchable: PropTypes.bool,
   isLoading: PropTypes.bool,
-  displayBlock: PropTypes.bool,
+  displayInline: PropTypes.bool,
   isRtl: PropTypes.bool
 }
 

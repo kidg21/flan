@@ -1,8 +1,7 @@
 import React from "react"
 import styled, { css } from "styled-components"
 import PropTypes from "prop-types"
-// import { Grid_2, inputGrid } from "../../_helpers/Grid";
-import { HelpText, ErrorText } from "../../layout/Form/Form"
+import { InputLabel, HelpText, ErrorText } from "../../layout/Form/Form"
 import { colors, shadows } from "../../../attributes/Variables/Variables"
 
 const TextInputContainer = styled.div`
@@ -10,10 +9,10 @@ const TextInputContainer = styled.div`
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 0.35rem;
   align-content: flex-start;
-  /* margin-bottom: 0.5rem; */
   color: ${props => (props.disabled ? colors.grey_40 : "")};
 `
 
+<<<<<<< HEAD
 const TextInputLabel = styled.label`
   display: flex;
   justify-content: space-between;
@@ -35,6 +34,8 @@ const TextInputLabel = styled.label`
   }
 `
 
+=======
+>>>>>>> 7a51b7c69bbd00242ace8cfec00af301bdb4bd00
 const TextInput = styled.textarea`
   border: 1px solid ${colors.grey_20};
   border-radius: 5px;
@@ -63,7 +64,7 @@ const TextInput = styled.textarea`
   }
 `
 
-function Textarea({ helpText, errorText, ...props }) {
+function Textarea({ inputLabel, isRequired, helpText, errorText, ...props }) {
   return (
     <TextInputContainer
       name={props.name} // input attribute
@@ -71,10 +72,10 @@ function Textarea({ helpText, errorText, ...props }) {
       pattern="alpha" // input attribute
       disabled={props.disabled} // input attribute
       helpText={helpText}
-      required={props.required}
+      isRequired={isRequired}
       error={props.error}
     >
-      <TextInputLabel {...props}>{props.label}</TextInputLabel>
+      <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
       <TextInput {...props} />
       {/* Help Text */}
       {helpText ? <HelpText helpText={helpText} /> : null}
@@ -85,20 +86,16 @@ function Textarea({ helpText, errorText, ...props }) {
 }
 
 Textarea.defaultProps = {
-  label: "Input Label",
   name: "Input Name",
   placeholder: "Placeholder Text",
-  required: false,
   disabled: false,
   error: false,
-  errorText: "Error text for the Input component"
+  errorText: "Error text for the Textarea component"
 }
 
 Textarea.propTypes = {
-  label: PropTypes.string.isRequired,
   name: PropTypes.string,
   placeholder: PropTypes.string,
-  required: PropTypes.bool,
   disabled: PropTypes.bool,
   error: PropTypes.bool
 }

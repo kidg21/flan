@@ -11,7 +11,6 @@ import {
 } from "@storybook/addon-knobs"
 import Panel, { PanelBody } from "../../layout/Panel/Panel"
 import Form, { Section, SectionName } from "../../layout/Form/Form"
-import { data } from "../../../attributes/Variables/Variables"
 import SelectMenu from "./SelectMenu"
 
 // Select Menu ( Knobs )
@@ -20,7 +19,7 @@ storiesOf("Atoms|Select Menu", module)
   .addDecorator(withKnobs)
   .add("Select Menu ( Knobs )", () => (
     <SelectMenu
-      label={text("Input Label", "Select Menu ( Knobs )")}
+      inputLabel={text("Input Label", "Select Menu ( Knobs )")}
       placeholder={text("Placeholder Text", "I am just keeping things warm")}
       helpText={text("Help Text", "Have you been helped yet?")}
       multiSelect={boolean("Multi-Select", false)}
@@ -31,7 +30,14 @@ storiesOf("Atoms|Select Menu", module)
         "Error Text",
         "Stay with my, buddy...we can fix this!"
       )}
-      options={data.iceCream}
+      options={[
+        { value: "chocolate", label: "Chocolate" },
+        { value: "strawberry", label: "Strawberry" },
+        { value: "vanilla", label: "Vanilla" },
+        { value: "pistachio", label: "Pistachio" },
+        { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
+        { value: "cookie dough", label: "Cookie Dough" }
+      ]}
     />
   ))
 
@@ -40,10 +46,17 @@ storiesOf("Atoms|Select Menu", module)
   .addDecorator(Padding)
   .add("Single-Select ( Standard )", () => (
     <SelectMenu
-      label="Single-Select ( Standard )"
+      inputLabel="Single-Select ( Standard )"
       placeholder="Choose..."
       helpText="Help text for the SelectMenu component"
-      options={data.iceCream}
+      options={[
+        { value: "chocolate", label: "Chocolate" },
+        { value: "strawberry", label: "Strawberry" },
+        { value: "vanilla", label: "Vanilla" },
+        { value: "pistachio", label: "Pistachio" },
+        { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
+        { value: "cookie dough", label: "Cookie Dough" }
+      ]}
     />
   ))
 
@@ -52,10 +65,10 @@ storiesOf("Atoms|Select Menu", module)
   .addDecorator(Padding)
   .add("Single-Select ( Required )", () => (
     <SelectMenu
-      label="Single-Select ( Required )"
+      inputLabel="Single-Select ( Required )"
       placeholder="You Must Choose..."
       helpText="Help text for the SelectMenu component"
-      required={true}
+      isRequired={true}
     />
   ))
 
@@ -64,7 +77,7 @@ storiesOf("Atoms|Select Menu", module)
   .addDecorator(Padding)
   .add("Single-Select ( Disabled )", () => (
     <SelectMenu
-      label="Single-Select ( Disabled )"
+      inputLabel="Single-Select ( Disabled )"
       placeholder="You Can't Choose..."
       helpText="Help text for the SelectMenu component"
       disabled={true}
@@ -76,7 +89,7 @@ storiesOf("Atoms|Select Menu", module)
   .addDecorator(Padding)
   .add("Single-Select ( Error )", () => (
     <SelectMenu
-      label="Single-Select ( Error )"
+      inputLabel="Single-Select ( Error )"
       placeholder="You Chose Poorly..."
       helpText="Help text for the SelectMenu component"
       error={true}
@@ -88,7 +101,7 @@ storiesOf("Atoms|Select Menu", module)
   .addDecorator(Padding)
   .add("Single-Select ( Loading )", () => (
     <SelectMenu
-      label="Single-Select ( Loading )"
+      inputLabel="Single-Select ( Loading )"
       placeholder="Give Me A Minute..."
       helpText="Help text for the SelectMenu component"
       isLoading={true}
@@ -101,7 +114,7 @@ storiesOf("Atoms|Select Menu", module)
   .add("Multi-Select ( Multi-Select )", () => (
     <SelectMenu
       multiSelect={true}
-      label="Multi-Select"
+      inputLabel="Multi-Select"
       placeholder="Choose One Or More..."
       helpText="Help text for the SelectMenu component"
     />
@@ -115,38 +128,45 @@ storiesOf("Atoms|Select Menu", module).add("The SelectMenu Family", () => (
         <Section>
           <SectionName>The Select Menu Family</SectionName>
           <SelectMenu
-            label="Single-Select ( Standard )"
+            inputLabel="Single-Select ( Standard )"
             placeholder="Choose..."
             helpText="Help text for the SelectMenu component"
-            options={data.iceCream}
+            options={[
+              { value: "chocolate", label: "Chocolate" },
+              { value: "strawberry", label: "Strawberry" },
+              { value: "vanilla", label: "Vanilla" },
+              { value: "pistachio", label: "Pistachio" },
+              { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
+              { value: "cookie dough", label: "Cookie Dough" }
+            ]}
           />
           <SelectMenu
-            label="Single-Select ( Required )"
+            inputLabel="Single-Select ( Required )"
             placeholder="You Must Choose..."
             helpText="Help text for the SelectMenu component"
-            required={true}
+            isRequired={true}
           />
           <SelectMenu
-            label="Single-Select ( Disabled )"
+            inputLabel="Single-Select ( Disabled )"
             placeholder="You Can't Choose..."
             helpText="Help text for the SelectMenu component"
             disabled={true}
           />
           <SelectMenu
-            label="Single-Select ( Error )"
+            inputLabel="Single-Select ( Error )"
             placeholder="You Chose Poorly..."
             helpText="Help text for the SelectMenu component"
             error={true}
           />
           <SelectMenu
-            label="Single-Select ( Loading )"
+            inputLabel="Single-Select ( Loading )"
             placeholder="Give Me A Minute..."
             helpText="Help text for the SelectMenu component"
             isLoading={true}
           />
           <SelectMenu
             multiSelect={true}
-            label="Multi-Select"
+            inputLabel="Multi-Select"
             placeholder="Choose One Or More..."
             helpText="Help text for the SelectMenu component"
           />

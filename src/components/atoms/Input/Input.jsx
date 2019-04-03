@@ -1,26 +1,41 @@
 import React from "react"
 import styled, { css } from "styled-components"
 import PropTypes from "prop-types"
-import { HelpText, ErrorText } from "../../layout/Form/Form"
+import { InputLabel, HelpText, ErrorText } from "../../layout/Form/Form"
 import SelectMenu from "../SelectMenu"
 import { colors, shadows } from "../../../attributes/Variables/Variables"
 
 const TextInputContainer = styled.div`
   display: grid;
   grid-template-columns: ${props =>
+    /* 3 Inputs */
     props.threeInputs
       ? "repeat(3, 1fr)"
-      : props.twoInputs
+      : /* 2 Inputs */
+      props.twoInputs
       ? "repeat(2, 1fr)"
-      : props.prefix
-      ? "minmax(auto, auto) minmax(auto, 3fr)"
-      : props.postfix
+      : /* Prefix Label (conditionals) */
+      props.prefix
+      ? props.postfix
+        ? "minmax(auto, auto) minmax(auto, 3fr) minmax(auto, auto)"
+        : props.postSelect
+        ? "minmax(auto, auto) minmax(auto, 3fr) minmax(auto, 2fr)"
+        : "minmax(auto, auto) minmax(auto, 3fr)"
+      : /* Postfix Select (conditionals) */
+      props.preSelect
+      ? props.postfix
+        ? "minmax(auto, 2fr) minmax(auto, 3fr) minmax(auto, auto)"
+        : props.postSelect
+        ? "minmax(auto, 2fr) minmax(auto, 3fr) minmax(auto, 2fr)"
+        : "minmax(auto, 2fr) minmax(auto, 3fr)"
+      : /* Postfix Label */
+      props.postfix
       ? "minmax(auto, 3fr) minmax(auto, auto)"
-      : props.preSelect
-      ? "minmax(auto, 2fr) minmax(auto, 3fr)"
-      : props.postSelect
+      : /* Postfix Select */
+      props.postSelect
       ? "minmax(auto, 3fr) minmax(auto, 2fr)"
-      : "repeat(1, 1fr)"};
+      : /* Single Input (default) */
+        "repeat(1, 1fr)"};
   grid-gap: 0.35rem;
   align-content: flex-start;
   color: ${props => (props.disabled ? colors.grey_40 : "")};
@@ -59,8 +74,9 @@ const PrePostLabel = styled.label`
   color: ${colors.grey_60};
   background-color: #ffffff;
   border: 1px solid ${colors.grey_20};
-  border-bottom: 1px solid ${colors.grey_20};
-  padding: 0.25rem 0.5rem;
+  border-bottom: 1px solid ${colors.grey_40};
+  border-radius: 4px;
+  padding: 0.25rem 1rem;
   white-space: nowrap;
 `
 
@@ -88,7 +104,7 @@ const TextInput = styled.input.attrs({ type: "text" })`
   }
 `
 
-function Input({ helpText, errorText, ...props }) {
+function Input({ inputLabel, isRequired, helpText, errorText, ...props }) {
   return (
     <TextInputContainer
       name={props.name} // input attribute
@@ -96,7 +112,8 @@ function Input({ helpText, errorText, ...props }) {
       pattern="alpha" // input attribute
       disabled={props.disabled} // input attribute
       helpText={helpText}
-      required={props.required}
+      // isRequired={props.required}
+      isRequired={isRequired}
       prefix={props.prefix}
       preSelect={props.preSelect}
       postfix={props.postfix}
@@ -105,18 +122,19 @@ function Input({ helpText, errorText, ...props }) {
       twoInputs={props.twoInputs} // 2 inputs in a row
       threeInputs={props.threeInputs} // 3 inputs in a row
     >
-      <TextInputLabel {...props}>{props.label}</TextInputLabel>
+      {/* Input Label */}
+      <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
       {/* Prefix Label (conditional) */}
       {props.prefix ? <PrePostLabel>{props.prefix}</PrePostLabel> : null}
       {/* Prefix Select Menu (conditional) */}
       {props.preSelect ? (
         <SelectMenu
-          displayBlock={true} // Grid Override
-          label={null}
+          displayInline={true} // Grid Override
+          inputLabel={null}
           name="Choose"
           isClearable={false}
-          options={props.preOptions}
-          defaultValue={props.preOptions[0]}
+          options={props.preSelect}
+          defaultValue={props.preSelect[0]}
         />
       ) : null}
       <TextInput {...props} />
@@ -133,12 +151,12 @@ function Input({ helpText, errorText, ...props }) {
       {/* Postfix Select Menu (conditional) */}
       {props.postSelect ? (
         <SelectMenu
-          displayBlock={true} // Grid Override
-          label={null}
+          displayInline={true} // Grid Override
+          inputLabel={null}
           name="Choose"
           isClearable={false}
-          options={props.postOptions}
-          defaultValue={props.postOptions[0]}
+          options={props.postSelect}
+          defaultValue={props.postSelect[0]}
         />
       ) : null}
       {/* Help Text */}
@@ -150,46 +168,28 @@ function Input({ helpText, errorText, ...props }) {
 }
 
 Input.defaultProps = {
-  label: "Input Label",
   name: "Input Name",
   placeholder: "Placeholder Text",
   placeholder_2: "Placeholder 2",
   placeholder_3: "Placeholder 3",
-  required: false,
   disabled: false,
   error: false,
   errorText: "Error text for the Input component",
   twotwoInputs: false,
-  threeInputs: false,
-  preSelect: false,
-  preOptions: [
-    { value: "sir", label: "Sir" },
-    { value: "madam", label: "Madam" },
-    { value: "my lord", label: "My Lord" }
-  ],
-  postSelect: false,
-  postOptions: [
-    { value: "com", label: ".com" },
-    { value: "org", label: ".org" },
-    { value: "gov", label: ".gov" }
-  ]
+  threeInputs: false
 }
 
 Input.propTypes = {
-  label: PropTypes.string.isRequired,
   name: PropTypes.string,
   placeholder: PropTypes.string,
   prefix: PropTypes.string,
   postfix: PropTypes.string,
-  required: PropTypes.bool,
   disabled: PropTypes.bool,
   error: PropTypes.bool,
   twoInputs: PropTypes.bool,
   threeInputs: PropTypes.bool,
-  preSelect: PropTypes.string,
-  preOptions: PropTypes.array,
-  postSelect: PropTypes.string,
-  postOptions: PropTypes.array
+  preSelect: PropTypes.array,
+  postSelect: PropTypes.array
 }
 
 export { Input as default }
