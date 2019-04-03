@@ -109,8 +109,7 @@ const selectStyles = {
 }
 
 const TextInputContainer = styled.div`
-  /* display: grid; */
-  display: ${props => (props.displayBlock ? "inline-block" : "grid")};
+  display: ${props => (props.displayInline ? "inline-block" : "grid")};
   grid-template-columns: ${props =>
     props.threeInputs
       ? "repeat(3, 1fr)"
@@ -136,11 +135,13 @@ const SelectMenu = ({
   <TextInputContainer
     name={props.name}
     placeholder={props.placeholder}
-    required={props.required}
+    // isRequired={props.required}
+    isRequired={isRequired}
     error={props.error}
-    displayBlock={props.displayBlock}
+    displayInline={props.displayInline}
   >
-    <TextInputLabel {...props}>{props.label}</TextInputLabel>
+    {/* Input Label (required) */}
+    <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
     <Select
       {...props}
       styles={selectStyles}
@@ -162,12 +163,12 @@ const SelectMenu = ({
 SelectMenu.defaultProps = {
   name: "SelectMenu Name",
   placeholder: "Select Something...",
-  required: false,
   options: [
     { value: "one", label: "Option #1" },
     { value: "two", label: "Option #2" },
     { value: "three", label: "Option #3" }
   ],
+  required: false,
   disabled: false,
   multiSelect: false,
   error: false,
@@ -175,23 +176,22 @@ SelectMenu.defaultProps = {
   isClearable: true,
   isSearchable: true,
   isLoading: false,
-  displayBlock: false,
+  displayInline: false,
   isRtl: false
 }
 
 SelectMenu.propTypes = {
   name: PropTypes.string,
   placeholder: PropTypes.string,
-  required: PropTypes.bool,
-  helpText: PropTypes.string.isRequired,
   options: PropTypes.array,
+  required: PropTypes.bool,
   disabled: PropTypes.bool,
   multiSelect: PropTypes.bool,
   error: PropTypes.bool,
   isClearable: PropTypes.bool,
   isSearchable: PropTypes.bool,
   isLoading: PropTypes.bool,
-  displayBlock: PropTypes.bool,
+  displayInline: PropTypes.bool,
   isRtl: PropTypes.bool
 }
 
