@@ -15,15 +15,15 @@ justify-content: space-between;
 display: flex;
 `
 
-const ViewLegend = styled.div`
-line-height: normal;
-cursor: pointer;
-display: flex;
-justify-content: flex-start;
-`
+// const ViewLegend = styled.div`
+// line-height: normal;
+// cursor: pointer;
+// display: flex;
+// justify-content: flex-start;
+// `
 
 const LayerCard = styled.div`
-border-bottom: 0.25px solid #EAEDED;
+// border-bottom: 0.25px solid #EAEDED;
 padding: .8em 1em .8em;
 `
 
@@ -36,9 +36,6 @@ function CardContainer({title}) {
           <h4 style={{margin: 0, flex: "auto", paddingLeft: "1.5em"}}>{title}</h4>
           <IconGroup />
         </HeaderSection>
-       <ViewLegend>
-        <a style={{fontSize: "10px", fontWeight: "700", paddingLeft: "5.5em" }}>View Legend</a>
-         </ViewLegend>
         </LayerCard>
     )
   }

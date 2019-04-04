@@ -12,7 +12,7 @@ padding-right: .7em;
 padding-top: 5px;
 `
 
-const HeaderLayout =styled.div`
+const HeaderLayout = styled.div`
   align-items: flex-end;
   font-size: 20px;
   display: grid;
@@ -26,7 +26,7 @@ const HeaderLayout =styled.div`
 }
  `
 
- const Left = styled.div`
+const Left = styled.div`
  justify-content: flex-start;
  grid-area: left;
  display: flex;
@@ -51,6 +51,10 @@ display: flex;
 cursor: pointer;
 `
 
+const DataOverlay = styled.a`
+font-size: 12px;
+font-weight: bold;
+`
 
 const TopText = styled.div`
 `
@@ -60,37 +64,45 @@ const BottomText = styled.div`
 
 
 const defaultProps = {
-    navProps: {nameProp: ["far", "angle-left"],
-                colorProp: "dimgray"},
-    iconProps: {nameProp: ["far", "ellipsis-v"],
-                colorProp: "dimgray"},
-    numberProp: {resultsProp: "0"},
-    exitProps: {nameProp: ["fal", "times"],
-                colorProp: "dimgray"},
-  };
+  navProps: {
+    nameProp: ["far", "angle-left"],
+    colorProp: "dimgray"
+  },
+  iconProps: {
+    nameProp: ["far", "ellipsis-v"],
+    colorProp: "dimgray"
+  },
+  numberProp: { resultsProp: "0" },
+  exitProps: {
+    nameProp: ["fal", "times"],
+    colorProp: "dimgray"
+  },
+};
 
 
-  const PanelHeader = ({title, layer, ...props}) => {
-    return (
-      <div>
-        <Container>
-        <Icon {...props.exitProps}/>
-        </Container>
-        <HeaderLayout>
-                <Left>
-                  <Icon {...props.navProps}/>
-                  </Left>
-                  <CardTitle>
-                  {layer ? <TopText> <a style={{fontSize: "12px", fontWeight: "bold"}} layer={layer}/></TopText> : null}
-                <BottomText><h4>{title}</h4></BottomText>
-                </CardTitle>
-                <Right>
-                    <Icon {...props.iconProps}/>
-                </Right>
-                </HeaderLayout>
-                </div>
-    )
-  }
+const PanelHeader = ({title,  ...props }) => {
+  return (
+    <div>
+      <Container>
+        <Icon {...props.exitProps} />
+      </Container>
+      <HeaderLayout>
+        <Left>
+          {props.navProps ? <Icon {...props.navProps} /> : null}
+        </Left>
+        <CardTitle>
+          <TopText>
+            {props.layer ? <DataOverlay> {props.layer} </DataOverlay> : null}
+          </TopText>
+          <BottomText><h4>{title}</h4></BottomText>
+        </CardTitle>
+        <Right>
+          <Icon {...props.iconProps} />
+        </Right>
+      </HeaderLayout>
+    </div>
+  )
+}
 
 PanelHeader.defaultProps = defaultProps;
 export default PanelHeader;

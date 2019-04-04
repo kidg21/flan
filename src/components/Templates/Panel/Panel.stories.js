@@ -2,15 +2,19 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import Panel, { PanelSection, PanelBody, PanelFooter } from "../../layout/Panel/Panel";
 import PanelHeader from '../../blocks/PanelPieces/PanelHeader';
+import InfoHeader from '../../blocks/PanelPieces/InfoHeader';
 import LayerPanelHeader from '../../blocks/PanelPieces/LayerHeader';
 import NavCard from "../../blocks/Card/NavCard";
 import MapLegend from "../../blocks/Map/MapLegend.js";
 // import LayerCard from '../../blocks/Card/TrialCard';
 import Accordion from '../../blocks/Accordion/Accordion';
+import PropertyInfo from '../../blocks/Accordion/PropertyInfo';
 import Checkbox from "../../atoms/Checkbox/Checkbox";
 import AddIcon from "../../atoms/Icon/PlusIcon";
 import Button from "../../atoms/Button/Button";
 import Table from "../../blocks/Table/Table";
+import Container from "../../atoms/Container/Container";
+
 
 storiesOf("Templates|Panel", module)
 .add("Data Overlay Panel", () => (
@@ -100,6 +104,29 @@ storiesOf("Templates|Panel", module)
 		<NavCard title="Ownership"/>
 		<NavCard title="Property Value"/>
 		<NavCard title="Location"/>
+		  </PanelBody>
+			<PanelFooter>
+	<Button>Apply</Button>
+				</PanelFooter>
+  </Panel>
+))
+
+
+.add("Property Info Panel", () => (
+  <Panel>
+    <PanelSection>
+		<InfoHeader layer="5201 California Ave" title="Irvine, CA 92614"/>
+      </PanelSection>
+    <PanelBody>
+		<PropertyInfo
+			title="Property Info Section"
+			onToggle={visibility => {
+    	console.log('visibility -->', visibility);
+			}}>
+				<Container>
+    			<Table/>
+    		</Container>
+		</PropertyInfo>
 		  </PanelBody>
 			<PanelFooter>
 	<Button>Apply</Button>

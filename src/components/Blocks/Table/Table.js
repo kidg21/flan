@@ -36,7 +36,7 @@ const Cell = styled.td`
 padding: .5em 1em .5em;
 
 &:first-child {
-  font-weight: bold;
+  color: grey;
   font-size: 12px;
 }
 `

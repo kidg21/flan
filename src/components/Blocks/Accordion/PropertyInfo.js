@@ -1,12 +1,41 @@
 import React, { useState, Fragment } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import CardHeader from "../Card/CardHeader";
+import styled, { css } from 'styled-components';
+import Icon from '../../atoms/Icon/Icon';
+
+
+const HeaderSection = styled.div`
+overflow: hidden;
+padding: .8em 1em .8em;
+cursor: pointer;
+line-height: normal;
+justify-content: space-between;
+display: flex;
+
+`
+
+const H4 = styled.h4`
+margin: 0;
+
+`
+
+
+
+ const infoSectionProps = {
+    nameProp: ["far", "angle-up"],
+    colorProp: "dimgray"
+  };
+
+  const infoOpenProps = {
+    nameProp: ["far", "angle-down"],
+    colorProp: "dimgray"
+  };
+
 
 
 const AccordionSection = styled.div`
 line-height: normal;
-border-bottom: 0.25px solid #EAEDED;
+border-bottom: 0.25px solid black;
 border-top: 0.25px solid #EAEDED;
 background: white;
 cursor: pointer;
@@ -23,7 +52,10 @@ const Accordion = ({ title, children, onToggle }) => {
           setVisibility(!visibility);
           if (onToggle) onToggle(!visibility);
         }} >
-        <CardHeader title={title}/>
+          <HeaderSection>
+          <H4>{title}</H4>
+          {visibility ? <Icon {...infoOpenProps}/> : <Icon {...infoSectionProps} />}
+        </HeaderSection>
       </AccordionSection>
       {visibility ? <Fragment>{children}</Fragment> : null}
     </Fragment>
@@ -37,4 +69,3 @@ Accordion.propTypes = {
 };
 
 export default Accordion;
-

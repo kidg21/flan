@@ -43,23 +43,36 @@ grid-area: right;
 display: flex;
 cursor: pointer;
 `
+// const Group = styled.div`
+// display: flex; 
+// width: 5em;
+// padding-left: 5px;
+// padding-right: 5px;
+// justify-content: space-between;
+// `
+
+
 
 
 const TopText = styled.div`
 `
 
 const BottomText = styled.div`
+display: flex;
 `
 
 
 const defaultProps = {
-    navProps: {nameProp: ["far", "angle-left"],
-                colorProp: "dimgray"},
     iconProps: {nameProp: ["far", "ellipsis-v"],
                 colorProp: "dimgray"},
-    numberProp: {resultsProp: "0"},
     exitProps: {nameProp: ["fal", "times"],
                 colorProp: "dimgray"},
+    copyProps: {nameProp: ["far", "copy"],
+                colorProp: "#99958f"},
+    directionsProps: {nameProp: ["fal", "directions"],
+                  colorProp: "#60aad2"},              
+    questionProps: {nameProp: ["far", "question-circle"],
+                  colorProp: "#99958f"},
   };
 
 
@@ -72,7 +85,7 @@ const defaultProps = {
         <HeaderLayout>
                   <CardTitle>
                   <TopText><h4 style={{margin: 0, lineHeight: 1}}>{layer}</h4></TopText>
-                <BottomText><h4>{title}</h4></BottomText>
+                <BottomText><h4>{title}</h4> <Icon {...props.directionsProps}/> </BottomText>
                 </CardTitle>
                 <Right>
                     <Icon {...props.iconProps}/>
