@@ -14,7 +14,7 @@ display: flex;
 
 `
 
-const H4 = styled.h4`
+const H4 = styled.h5`
 margin: 0;
 
 `
@@ -28,14 +28,14 @@ margin: 0;
 
   const infoOpenProps = {
     nameProp: ["far", "angle-down"],
-    colorProp: "dimgray"
+    colorProp: "#60aad2"
   };
 
 
 
 const AccordionSection = styled.div`
 line-height: normal;
-border-bottom: 0.25px solid black;
+border-bottom: 0.25px solid #EAEDED;
 border-top: 0.25px solid #EAEDED;
 background: white;
 cursor: pointer;

@@ -21,6 +21,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faAcorn,
+  faClone,
   faDirections,
   faTimes as faTimesLight,
   faBoxingGlove,
@@ -79,6 +80,7 @@ library.add(
   faExpandArrows,
   faHighlighter,
   faBell,
+  faClone,
   faQuestionCircle,
   faMap,
   faMapMarker,

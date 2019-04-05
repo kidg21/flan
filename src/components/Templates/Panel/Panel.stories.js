@@ -118,6 +118,9 @@ storiesOf("Templates|Panel", module)
 		<InfoHeader layer="5201 California Ave" title="Irvine, CA 92614"/>
       </PanelSection>
     <PanelBody>
+		<Container>
+    			<Table/>
+    		</Container>
 		<PropertyInfo
 			title="Property Info Section"
 			onToggle={visibility => {

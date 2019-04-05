@@ -67,8 +67,8 @@ const defaultProps = {
                 colorProp: "dimgray"},
     exitProps: {nameProp: ["fal", "times"],
                 colorProp: "dimgray"},
-    copyProps: {nameProp: ["far", "copy"],
-                colorProp: "#99958f"},
+    cloneProps: {nameProp: ["fal", "clone"],
+                  colorProp: "#99958f"},              
     directionsProps: {nameProp: ["fal", "directions"],
                   colorProp: "#60aad2"},              
     questionProps: {nameProp: ["far", "question-circle"],
@@ -85,7 +85,7 @@ const defaultProps = {
         <HeaderLayout>
                   <CardTitle>
                   <TopText><h4 style={{margin: 0, lineHeight: 1}}>{layer}</h4></TopText>
-                <BottomText><h4>{title}</h4> <Icon {...props.directionsProps}/> </BottomText>
+                <BottomText><h4 style={{paddingRight: "10px"}}>{title}</h4> <Icon {...props.directionsProps}/> </BottomText>
                 </CardTitle>
                 <Right>
                     <Icon {...props.iconProps}/>
