@@ -1,7 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import CardHeader from "./CardHeader"
-import NavCard from "./NavCard";
+// import CardHeader from "./CardHeader"
+import NavCard from "../../cards/Filter/NavCard";
 import SelectCard from "./SelectCard";
 
 // const navProps = {
@@ -16,6 +16,6 @@ import SelectCard from "./SelectCard";
 
 
 storiesOf("Blocks|Card", module)
-.add("Header", () => <CardHeader title="Card Header"/>)
+// .add("Header", () => <CardHeader title="Card Header"/>)
 .add("Nav Card", () => <NavCard 
 title="Navigation Card"/>);

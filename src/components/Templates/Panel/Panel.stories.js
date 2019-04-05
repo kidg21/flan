@@ -1,14 +1,14 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import Panel, { PanelSection, PanelBody, PanelFooter } from "../../layout/Panel/Panel";
-import PanelHeader from '../../blocks/PanelPieces/PanelHeader';
-import InfoHeader from '../../blocks/PanelPieces/InfoHeader';
-import LayerPanelHeader from '../../blocks/PanelPieces/LayerHeader';
-import NavCard from "../../blocks/Card/NavCard";
+import FilterHeader from '../../cards/Filter/FilterHeader';
+import InfoHeader from '../../cards/Property/InfoHeader';
+import LayerPanelHeader from '../../cards/Layer/LayerHeader';
+import NavCard from "../../cards/Filter/NavCard";
 import MapLegend from "../../blocks/Map/MapLegend.js";
 // import LayerCard from '../../blocks/Card/TrialCard';
 import Accordion from '../../blocks/Accordion/Accordion';
-import PropertyInfo from '../../blocks/Accordion/PropertyInfo';
+import PropertyInfo from '../../cards/Property/PropertyInfo';
 import Checkbox from "../../atoms/Checkbox/Checkbox";
 import AddIcon from "../../atoms/Icon/PlusIcon";
 import Button from "../../atoms/Button/Button";
@@ -17,6 +17,33 @@ import Container from "../../atoms/Container/Container";
 
 
 storiesOf("Templates|Panel", module)
+
+////Property
+
+.add("Property Info Panel", () => (
+  <Panel>
+    <PanelSection>
+		<InfoHeader street="5201 California Ave" city="Irvine, CA 92614"/>
+      </PanelSection>
+    <PanelBody>
+		<Container>
+    			<Table/>
+    		</Container>
+		<PropertyInfo
+			title="Property Info Section"
+			onToggle={visibility => {
+    	console.log('visibility -->', visibility);
+			}}>
+				<Container>
+    			<Table/>
+    		</Container>
+		</PropertyInfo>
+		  </PanelBody>
+  </Panel>
+))
+
+///DataOverlays
+
 .add("Data Overlay Panel", () => (
   <Panel>
     <PanelSection>
@@ -38,6 +65,7 @@ storiesOf("Templates|Panel", module)
 		    	onToggle={visibility => {
 			  	console.log('visibility -->', visibility);
 		    	}}>
+					<MapLegend/>
 		     </Accordion>
 
 
@@ -46,6 +74,7 @@ storiesOf("Templates|Panel", module)
 		    	onToggle={visibility => {
 			  	console.log('visibility -->', visibility);
 		    	}}>
+					<MapLegend/>
 		     </Accordion>
 
       </PanelBody>
@@ -53,10 +82,13 @@ storiesOf("Templates|Panel", module)
 ))
 
 
+
+////Filters
+
 .add("Empty Filter Panel", () => (
   <Panel>
     <PanelSection>
-		<PanelHeader layer="Data Overlay" title="Filters"/>
+		<FilterHeader layer="Data Overlay" title="Filters"/>
       </PanelSection>
     <PanelBody>
 		  </PanelBody>
@@ -66,12 +98,10 @@ storiesOf("Templates|Panel", module)
   </Panel>
 ))
 
-
-
 .add("Filter Panel", () => (
   <Panel>
     <PanelSection>
-		<PanelHeader layer="Data Overlay" title="Filters"/>
+		<FilterHeader layer="" title="Filters"/>
       </PanelSection>
     <PanelBody>
 		<NavCard title="Property"/>
@@ -86,53 +116,6 @@ storiesOf("Templates|Panel", module)
 		<NavCard title="Transaction"/>
 		  </PanelBody>
 			<PanelFooter>
-		<Button>Apply</Button>
-				</PanelFooter>
-  </Panel>
-))
-
-
-.add("Second Filter Panel", () => (
-  <Panel>
-    <PanelSection>
-		<PanelHeader layer="Data Overlay" title="Property"/>
-      </PanelSection>
-    <PanelBody>
-		<NavCard title="Property Type"/>
-		<NavCard title="Characteristics"/>
-		<NavCard title="Last Market Sale"/>
-		<NavCard title="Ownership"/>
-		<NavCard title="Property Value"/>
-		<NavCard title="Location"/>
-		  </PanelBody>
-			<PanelFooter>
-	<Button>Apply</Button>
-				</PanelFooter>
-  </Panel>
-))
-
-
-.add("Property Info Panel", () => (
-  <Panel>
-    <PanelSection>
-		<InfoHeader layer="5201 California Ave" title="Irvine, CA 92614"/>
-      </PanelSection>
-    <PanelBody>
-		<Container>
-    			<Table/>
-    		</Container>
-		<PropertyInfo
-			title="Property Info Section"
-			onToggle={visibility => {
-    	console.log('visibility -->', visibility);
-			}}>
-				<Container>
-    			<Table/>
-    		</Container>
-		</PropertyInfo>
-		  </PanelBody>
-			<PanelFooter>
-	<Button>Apply</Button>
 				</PanelFooter>
   </Panel>
 ))
@@ -141,17 +124,9 @@ storiesOf("Templates|Panel", module)
 .add("Select Filter Panel", () => (
   <Panel>
     <PanelSection>
-		<PanelHeader layer="Data Overlay" title="Filter Detail"/>
+		<FilterHeader layer="Data Overlay" title="Filter Detail"/>
       </PanelSection>
     <PanelBody>
-		<Checkbox/>
-		<Checkbox/>
-		<Checkbox/>
-		<Checkbox/>
-		<Checkbox/>
-		<Checkbox/>
-		<Checkbox/>
-		<Checkbox/>
 		<Checkbox/>
 		<Checkbox/>
 		<Checkbox/>

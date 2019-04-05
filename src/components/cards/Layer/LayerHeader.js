@@ -18,19 +18,26 @@ const HeaderLayout =styled.div`
   display: grid;
   padding: .25em .6em .8em .8em;
   border-bottom: 0.25px solid #EAEDED;
-  grid-template-columns: 80% 20%;
+  grid-template-columns: 10% 70% 20%;
 
   grid-template-rows: 2rem;
-  grid-template-areas: "left right";
+  grid-template-areas: "left center right";
   box-shadow: 0 0 0px rgba(0, 0, 0, .08);
 }
+ `
+
+ const Left = styled.div`
+ justify-content: flex-start;
+ grid-area: left;
+ display: flex;
+ cursor: pointer;
  `
 
 
 const CardTitle = styled.div`
 justify-content: left;
-align-self: center;
-grid-area: left;
+align-self: text-bottom;
+grid-area: center;
 display: inline;
 `
 
@@ -43,49 +50,32 @@ grid-area: right;
 display: flex;
 cursor: pointer;
 `
-// const Group = styled.div`
-// display: flex; 
-// width: 5em;
-// padding-left: 5px;
-// padding-right: 5px;
-// justify-content: space-between;
-// `
 
-
-
-
-const TopText = styled.div`
-`
-
-const BottomText = styled.div`
-display: flex;
-`
 
 
 const defaultProps = {
+    navProps: {nameProp: ["far", "angle-left"],
+                colorProp: "dimgray"},
     iconProps: {nameProp: ["far", "ellipsis-v"],
                 colorProp: "dimgray"},
+    numberProp: {resultsProp: "0"},
     exitProps: {nameProp: ["fal", "times"],
                 colorProp: "dimgray"},
-    cloneProps: {nameProp: ["fal", "clone"],
-                  colorProp: "#99958f"},              
-    directionsProps: {nameProp: ["fal", "directions"],
-                  colorProp: "#60aad2"},              
-    questionProps: {nameProp: ["far", "question-circle"],
-                  colorProp: "#99958f"},
   };
 
 
-  const InfoHeader = ({title, layer, ...props}) => {
+  const LayerHeader = ({title, layer, ...props}) => {
     return (
       <div>
         <Container>
         <Icon {...props.exitProps}/>
         </Container>
         <HeaderLayout>
+                <Left>
+                  <Icon {...props.navProps}/>
+                  </Left>
                   <CardTitle>
-                  <TopText><h4 style={{margin: 0, lineHeight: 1}}>{layer}</h4></TopText>
-                <BottomText><h4 style={{paddingRight: "10px"}}>{title}</h4> <Icon {...props.directionsProps}/> </BottomText>
+                <h4 style={{margin: 0}}>{title}</h4>
                 </CardTitle>
                 <Right>
                     <Icon {...props.iconProps}/>
@@ -95,5 +85,5 @@ const defaultProps = {
     )
   }
 
-InfoHeader.defaultProps = defaultProps;
-export default InfoHeader;
+LayerHeader.defaultProps = defaultProps;
+export default LayerHeader;

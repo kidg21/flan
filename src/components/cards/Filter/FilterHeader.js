@@ -80,7 +80,7 @@ const defaultProps = {
 };
 
 
-const PanelHeader = ({title,  ...props }) => {
+const FilterHeader = ({title,  ...props }) => {
   return (
     <div>
       <Container>
@@ -94,7 +94,7 @@ const PanelHeader = ({title,  ...props }) => {
           <TopText>
             {props.layer ? <DataOverlay> {props.layer} </DataOverlay> : null}
           </TopText>
-          <BottomText><h4>{title}</h4></BottomText>
+          <BottomText><h4 >{title}</h4></BottomText>
         </CardTitle>
         <Right>
           <Icon {...props.iconProps} />
@@ -104,5 +104,5 @@ const PanelHeader = ({title,  ...props }) => {
   )
 }
 
-PanelHeader.defaultProps = defaultProps;
-export default PanelHeader;
+FilterHeader.defaultProps = defaultProps;
+export default FilterHeader;

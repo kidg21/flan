@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import CardHeader from "../Card/CardHeader";
+import CardHeader from "../../cards/Layer/CardHeader";
 
 
 const AccordionSection = styled.div`
