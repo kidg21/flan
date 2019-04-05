@@ -13,13 +13,13 @@ import Panel, { PanelBody } from "../../layout/Panel/Panel"
 import Form, { Section, SectionName } from "../../layout/Form/Form"
 import SelectMenu from "./SelectMenu"
 
-// Select Menu ( Knobs )
-storiesOf("Atoms|Select Menu", module)
+// SelectMenu ( Knobs )
+storiesOf("Atoms|SelectMenu", module)
   .addDecorator(Padding)
   .addDecorator(withKnobs)
-  .add("Select Menu ( Knobs )", () => (
+  .add("SelectMenu ( Knobs )", () => (
     <SelectMenu
-      inputLabel={text("Input Label", "Select Menu ( Knobs )")}
+      inputLabel={text("Input Label", "SelectMenu ( Knobs )")}
       placeholder={text("Placeholder Text", "I am just keeping things warm")}
       helpText={text("Help Text", "Have you been helped yet?")}
       multiSelect={boolean("Multi-Select", false)}
@@ -42,7 +42,7 @@ storiesOf("Atoms|Select Menu", module)
   ))
 
 // Single-Select (Standard)
-storiesOf("Atoms|Select Menu", module)
+storiesOf("Atoms|SelectMenu", module)
   .addDecorator(Padding)
   .add("Single-Select ( Standard )", () => (
     <SelectMenu
@@ -61,7 +61,7 @@ storiesOf("Atoms|Select Menu", module)
   ))
 
 // Single-Select (Required)
-storiesOf("Atoms|Select Menu", module)
+storiesOf("Atoms|SelectMenu", module)
   .addDecorator(Padding)
   .add("Single-Select ( Required )", () => (
     <SelectMenu
@@ -73,7 +73,7 @@ storiesOf("Atoms|Select Menu", module)
   ))
 
 // Single-Select (Disabled)
-storiesOf("Atoms|Select Menu", module)
+storiesOf("Atoms|SelectMenu", module)
   .addDecorator(Padding)
   .add("Single-Select ( Disabled )", () => (
     <SelectMenu
@@ -85,7 +85,7 @@ storiesOf("Atoms|Select Menu", module)
   ))
 
 // Single-Select (Error)
-storiesOf("Atoms|Select Menu", module)
+storiesOf("Atoms|SelectMenu", module)
   .addDecorator(Padding)
   .add("Single-Select ( Error )", () => (
     <SelectMenu
@@ -97,7 +97,7 @@ storiesOf("Atoms|Select Menu", module)
   ))
 
 // Single-Select (Loading)
-storiesOf("Atoms|Select Menu", module)
+storiesOf("Atoms|SelectMenu", module)
   .addDecorator(Padding)
   .add("Single-Select ( Loading )", () => (
     <SelectMenu
@@ -109,7 +109,7 @@ storiesOf("Atoms|Select Menu", module)
   ))
 
 // Single-Select (Multi-Select)
-storiesOf("Atoms|Select Menu", module)
+storiesOf("Atoms|SelectMenu", module)
   .addDecorator(Padding)
   .add("Multi-Select ( Multi-Select )", () => (
     <SelectMenu
@@ -120,13 +120,13 @@ storiesOf("Atoms|Select Menu", module)
     />
   ))
 
-// Select Menu (The Select Menu Family)
-storiesOf("Atoms|Select Menu", module).add("The SelectMenu Family", () => (
+// SelectMenu (The SelectMenu Family)
+storiesOf("Atoms|SelectMenu", module).add("The SelectMenu Family", () => (
   <Panel>
     <PanelBody>
       <Form>
         <Section>
-          <SectionName>The Select Menu Family</SectionName>
+          <SectionName>The SelectMenu Family</SectionName>
           <SelectMenu
             inputLabel="Single-Select ( Standard )"
             placeholder="Choose..."

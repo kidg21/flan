@@ -9,35 +9,31 @@ const selectStyles = {
   // Wrapper
   container: (styles, { isDisabled, isFocused, isSelected, ...props }) => ({
     ...styles,
-    fontFamily: fonts.data,
-    background: "#ffffff",
-    fontSize: "12px"
+    fontFamily: fonts.data
   }),
   // Toggle UI
   control: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
     backgroundColor: isFocused
-      ? "#ffffff"
+      ? "#f1f8eb"
       : isDisabled
-      ? colors.white
-      : "#ffffff",
-    borderColor: isFocused ? colors.grey_20 + "!important" : colors.grey_20,
-    borderBottomColor: colors.grey_20,
-    fontSize: "12px",
-    letterSpacing: "1px",
+      ? colors.grey_20
+      : colors.white,
+    borderColor: isFocused ? colors.success + "!important" : colors.grey_20,
+    borderBottomColor: colors.grey_40,
+    fontWeight: "700",
+    letterSpacing: "2px",
     minHeight: "2.75rem",
     ":hover": {
-      borderColor: colors.anchor,
+      borderColor: colors.success
     },
     boxShadow: "none"
   }),
   placeholder: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
     fontFamily: fonts.data,
-    fontSize: "12px",
-    color: isFocused ? colors.anchor : colors.grey_60,
+    color: isFocused ? colors.success : colors.grey_60,
     letterSpacing: "1px",
-    backgroundColor: colors.white,
     fontWeight: 400
   }),
   // selected option
@@ -49,7 +45,7 @@ const selectStyles = {
   // 'X' to clear current selection
   clearIndicator: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
-    color: isFocused ?  "" : colors.grey_40
+    color: isFocused ? colors.success : colors.grey_60
   }),
   // pipe
   indicatorSeparator: (styles, { isDisabled, isFocused, isSelected }) => ({
@@ -59,14 +55,13 @@ const selectStyles = {
   // down arrow
   dropdownIndicator: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
-    color: isFocused ? colors.grey_60 : colors.grey_60
+    color: isFocused ? colors.success : colors.grey_60
   }),
   // multi element background
   multiValue: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
     fontWeight: "bold",
-    letterSpacing: "1px",
-    fontSize: "12px"
+    letterSpacing: "1px"
   }),
   // multi element label background
   multiValueLabel: (styles, { isDisabled, isFocused, isSelected }) => ({
@@ -86,36 +81,34 @@ const selectStyles = {
   menu: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
     fontFamily: fonts.data,
-    fontSize: "12px",
     letterSpacing: "1px",
     margin: ".25rem 0",
-    boxShadow: "0 0 20px rgba(0, 0, 0, .08)"
+    boxShadow: shadows.dropShadow
   }),
   // Menu Options
   option: (styles, { isDisabled, isFocused, isSelected }) => {
     return {
       ...styles,
-      fontSize: "12px",
       backgroundColor: isDisabled
         ? null
         : isSelected
-        ? ""
+        ? colors.success
         : isFocused
-        ? colors.light_grey
+        ? colors.anchor
         : null,
       color: isDisabled
         ? colors.grey_40
         : isSelected
-        ? colors.grey_80
+        ? colors.white
         : isFocused
-        ? colors.grey_80
+        ? colors.white
         : colors.grey_80,
-      cursor: isDisabled ? "not-allowed" : "pointer"
+      cursor: isDisabled ? "not-allowed" : "default"
     }
   }
 }
 
-const TextInputContainer = styled.div`
+const SelectMenuContainer = styled.div`
   display: ${props => (props.displayInline ? "inline-block" : "grid")};
   grid-template-columns: ${props =>
     props.threeInputs
@@ -129,46 +122,41 @@ const TextInputContainer = styled.div`
       : "repeat(1, 1fr)"};
   grid-gap: 0.35rem;
   align-content: flex-start;
-  color: ${props => (props.disabled ? colors.grey_40 : "")};
+  /* color: ${props => (props.disabled ? colors.grey_40 : "")}; */
+  color: ${props =>
+    props.error ? colors.alert : props.disabled ? colors.grey_40 : ""};
 `
-
-
-
-
-const SelectMenu = ({
-  inputLabel,
-  isRequired,
-  helpText,
-  errorText,
-  ...props
-}) => (
-  <TextInputContainer
-    name={props.name}
-    placeholder={props.placeholder}
-    // isRequired={props.required}
-    isRequired={isRequired}
-    error={props.error}
-    displayInline={props.displayInline}
-  >
-    {/* Input Label (required) */}
-    <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
-    <Select
-      {...props}
-      styles={selectStyles}
-      options={props.options}
-      isSearchable={props.isSearchable}
-      isClearable={props.isClearable}
-      isMulti={props.multiSelect}
-      isDisabled={props.disabled}
-      isLoading={props.isLoading}
-      isRtl={props.isRtl}
-    />
-    {/* Help Text */}
-    {helpText ? <HelpText helpText={helpText} /> : null}
-    {/* Error Message (required) */}
-    {props.error ? <ErrorText errorText={errorText} /> : null}
-  </TextInputContainer>
-)
+function SelectMenu({ inputLabel, isRequired, helpText, errorText, ...props }) {
+  return (
+    <SelectMenuContainer
+      isRequired={isRequired}
+      disabled={props.disabled} // input attribute
+      error={props.error}
+      displayInline={props.displayInline}
+    >
+      {/* Input Label (required) */}
+      <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
+      <Select
+        id={props.name} // input attribute
+        name={props.name} // input attribute
+        placeholder={props.placeholder} // input attribute
+        styles={selectStyles}
+        options={props.options}
+        isSearchable={props.isSearchable}
+        isClearable={props.isClearable}
+        isMulti={props.multiSelect}
+        isDisabled={props.disabled}
+        isLoading={props.isLoading}
+        isRtl={props.isRtl}
+        {...props}
+      />
+      {/* Help Text */}
+      {helpText ? <HelpText helpText={helpText} /> : null}
+      {/* Error Message (required) */}
+      {props.error ? <ErrorText errorText={errorText} /> : null}
+    </SelectMenuContainer>
+  )
+}
 
 SelectMenu.defaultProps = {
   name: "SelectMenu Name",

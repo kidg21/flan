@@ -20,6 +20,14 @@ storiesOf("Atoms|Input", module)
   .addDecorator(withKnobs)
   .add("Input ( Knobs )", () => (
     <Input
+      type={radios(
+        "Type",
+        {
+          Text: "text",
+          Number: "number"
+        },
+        "text"
+      )}
       inputLabel={text("Input Label", "Input ( Knobs )")}
       isRequired={boolean("Required", false)}
       placeholder={text("Placeholder Text", "I am just keeping things warm")}
@@ -47,12 +55,25 @@ storiesOf("Atoms|Input", module)
     />
   ))
 
-// Input ( Standard )
+// Text ( Standard )
 storiesOf("Atoms|Input", module)
   .addDecorator(Padding)
-  .add("Input ( Standard )", () => (
+  .add("Text ( Standard )", () => (
     <Input
-      inputLabel="Input ( Standard )"
+      name="Say My Name!"
+      value="Text Input"
+      inputLabel="Text ( Standard )"
+      helpText="This help text has been passed through a prop!"
+    />
+  ))
+
+// Number ( Standard )
+storiesOf("Atoms|Input", module)
+  .addDecorator(Padding)
+  .add("Number ( Standard )", () => (
+    <Input
+      type="number"
+      inputLabel="Number ( Standard )"
       helpText="This help text has been passed through a prop!"
     />
   ))

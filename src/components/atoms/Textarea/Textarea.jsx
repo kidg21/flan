@@ -4,39 +4,18 @@ import PropTypes from "prop-types"
 import { InputLabel, HelpText, ErrorText } from "../../layout/Form/Form"
 import { colors, shadows } from "../../../attributes/Variables/Variables"
 
-const TextInputContainer = styled.div`
+const TextAreaContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 0.35rem;
   align-content: flex-start;
-  color: ${props => (props.disabled ? colors.grey_40 : "")};
+  color: ${props =>
+    props.error ? colors.alert : props.disabled ? colors.grey_40 : ""};
 `
-
-// const TextInputLabel = styled.label`
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   grid-column: 1 / -1;
-//   user-select: none;
-//   font-size: 11px;
-//   font-weight: 700;
-//   letter-spacing: 1px;
-//   color: ${props => (props.disabled ? colors.grey_40 : "")};
-//   color: ${props => (props.error ? colors.alert : "")};
-//   cursor: pointer;
-//   &:after {
-//     content: "*";
-//     display: ${props => (props.required ? "" : "none")};
-//     line-height: 0;
-//     font-size: 1.5rem;
-//     color: ${colors.alert};
-//   }
-// `
-
-const TextInput = styled.textarea`
+const TextAreaInput = styled.textarea`
   border: 1px solid ${colors.grey_20};
+  border-bottom: 1px solid ${colors.grey_40};
   border-radius: 5px;
-  border-bottom: 1px solid ${colors.grey_20};
   border-color: ${props => (props.error ? colors.alert : "")};
   background-color: ${props => (props.error ? "#f9ebeb" : "")};
   caret-color: ${props => (props.error ? colors.alert : "")};
@@ -46,55 +25,62 @@ const TextInput = styled.textarea`
     color: ${props => (props.error ? colors.alert : "")};
   }
   &:hover {
-    border: 1px solid ${colors.anchor};
+    border: 1px solid ${colors.success};
   }
   &:focus {
-    background-color: ${props => (props.error ? "#f9ebeb" : "")};
-    border-color: ${props => (props.error ? colors.alert : colors.anchor)};
+    background-color: ${props => (props.error ? "#f9ebeb" : "#f1f8eb")};
+    border-color: ${props => (props.error ? colors.alert : colors.success)};
     ::placeholder {
-      color: ${props => (props.error ? colors.alert : colors.grey_60)};
+      color: ${props => (props.error ? colors.alert : colors.success)};
     }
     ::selection {
       background-color: ${props =>
-        props.error ? colors.alert : ""};
+        props.error ? colors.alert : colors.success};
     }
   }
 `
 
-function Textarea({ inputLabel, isRequired, helpText, errorText, ...props }) {
+function TextArea({ inputLabel, isRequired, helpText, errorText, ...props }) {
   return (
-    <TextInputContainer
-      name={props.name} // input attribute
-      placeholder={props.placeholder} // input attribute
-      pattern="alpha" // input attribute
+    <TextAreaContainer
       disabled={props.disabled} // input attribute
       helpText={helpText}
       isRequired={isRequired}
       error={props.error}
     >
       <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
-      <TextInput {...props} />
+      <TextAreaInput
+        id={props.name} // input attribute
+        name={props.name} // input attribute
+        type={props.type} // input attribute
+        value={props.value} // input attribute
+        placeholder={props.placeholder} // input attribute
+        pattern={props.pattern}
+        {...props}
+      />
       {/* Help Text */}
       {helpText ? <HelpText helpText={helpText} /> : null}
       {/* Error Message (required) */}
       {props.error ? <ErrorText errorText={errorText} /> : null}
-    </TextInputContainer>
+    </TextAreaContainer>
   )
 }
 
-Textarea.defaultProps = {
-  name: "Input Name",
+TextArea.defaultProps = {
+  name: "TextArea Name",
+  pattern: "alpha",
   placeholder: "Placeholder Text",
   disabled: false,
   error: false,
-  errorText: "Error text for the Textarea component"
+  errorText: "Error text for the Text Area component"
 }
 
-Textarea.propTypes = {
+TextArea.propTypes = {
   name: PropTypes.string,
+  pattern: PropTypes.string,
   placeholder: PropTypes.string,
   disabled: PropTypes.bool,
   error: PropTypes.bool
 }
 
-export { Textarea as default }
+export { TextArea as default }

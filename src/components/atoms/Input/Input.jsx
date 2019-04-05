@@ -38,10 +38,9 @@ const TextInputContainer = styled.div`
         "repeat(1, 1fr)"};
   grid-gap: 0.35rem;
   align-content: flex-start;
-  color: ${props => (props.disabled ? colors.grey_40 : "")};
-  /* margin-bottom: 0.5rem; */
+  color: ${props =>
+    props.error ? colors.alert : props.disabled ? colors.grey_40 : ""};
 `
-
 
 const PrePostLabel = styled.label`
   display: flex;
@@ -60,9 +59,9 @@ const PrePostLabel = styled.label`
   white-space: nowrap;
 `
 
-const TextInput = styled.input.attrs({ type: "text" })`
+const TextInput = styled.input`
   border: 1px solid ${colors.grey_20};
-  border-bottom: 1px solid ${colors.grey_20};
+  border-bottom: 1px solid ${colors.grey_40};
   border-color: ${props => (props.error ? colors.alert : "")};
   background-color: ${props => (props.error ? "#f9ebeb" : "")};
   caret-color: ${props => (props.error ? colors.alert : "")};
@@ -72,14 +71,18 @@ const TextInput = styled.input.attrs({ type: "text" })`
     color: ${props => (props.error ? colors.alert : "")};
   }
   &:hover {
-    border: 1px solid ${colors.anchor};
+    border: 1px solid ${colors.success};
     border-color: ${props => (props.error ? colors.alert : "")};
   }
   &:focus {
-    background-color: ${props => (props.error ? "#f9ebeb" : "")};
-    border-color: ${props => (props.error ? colors.alert : colors.anchor)};
+    background-color: ${props => (props.error ? "#f9ebeb" : "#f1f8eb")};
+    border-color: ${props => (props.error ? colors.alert : colors.success)};
     ::placeholder {
-      color: ${props => (props.error ? colors.alert : "")};
+      color: ${props => (props.error ? colors.alert : colors.success)};
+    }
+    ::selection {
+      background-color: ${props =>
+        props.error ? colors.alert : colors.success};
     }
   }
 `
@@ -87,18 +90,13 @@ const TextInput = styled.input.attrs({ type: "text" })`
 function Input({ inputLabel, isRequired, helpText, errorText, ...props }) {
   return (
     <TextInputContainer
-      name={props.name} // input attribute
-      placeholder={props.placeholder} // input attribute
-      pattern="alpha" // input attribute
-      disabled={props.disabled} // input attribute
-      helpText={helpText}
-      // isRequired={props.required}
       isRequired={isRequired}
+      disabled={props.disabled} // input attribute
+      error={props.error}
       prefix={props.prefix}
       preSelect={props.preSelect}
       postfix={props.postfix}
       postSelect={props.postSelect}
-      error={props.error}
       twoInputs={props.twoInputs} // 2 inputs in a row
       threeInputs={props.threeInputs} // 3 inputs in a row
     >
@@ -117,7 +115,15 @@ function Input({ inputLabel, isRequired, helpText, errorText, ...props }) {
           defaultValue={props.preSelect[0]}
         />
       ) : null}
-      <TextInput {...props} />
+      <TextInput
+        id={props.name} // input attribute
+        name={props.name} // input attribute
+        type={props.type} // input attribute
+        value={props.value} // input attribute
+        placeholder={props.placeholder} // input attribute
+        pattern={props.pattern} // input attribute
+        {...props}
+      />
       {/* Column 2 (conditional) */}
       {props.twoInputs || props.threeInputs ? (
         <TextInput {...props} placeholder={props.placeholder_2} />
@@ -149,25 +155,32 @@ function Input({ inputLabel, isRequired, helpText, errorText, ...props }) {
 
 Input.defaultProps = {
   name: "Input Name",
+  type: "text",
+  pattern: "alpha",
   placeholder: "Placeholder Text",
-  placeholder_2: "Placeholder 2",
-  placeholder_3: "Placeholder 3",
   disabled: false,
   error: false,
   errorText: "Error text for the Input component",
-  twotwoInputs: false,
-  threeInputs: false
+  twoInputs: false,
+  placeholder_2: "Placeholder 2",
+  threeInputs: false,
+  placeholder_3: "Placeholder 3"
 }
 
 Input.propTypes = {
   name: PropTypes.string,
+  type: PropTypes.string,
+  pattern: PropTypes.string,
+  value: PropTypes.string,
   placeholder: PropTypes.string,
   prefix: PropTypes.string,
   postfix: PropTypes.string,
   disabled: PropTypes.bool,
   error: PropTypes.bool,
   twoInputs: PropTypes.bool,
+  placeholder_2: PropTypes.string,
   threeInputs: PropTypes.bool,
+  placeholder_3: PropTypes.string,
   preSelect: PropTypes.array,
   postSelect: PropTypes.array
 }
