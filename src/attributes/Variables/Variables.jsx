@@ -13,7 +13,7 @@ export const colors = {
   success: "hsl(90, 46%, 46%)",
   warning: "hsl(34, 88%, 52%)",
   alert: "hsl(1, 55%, 50%)"
-};
+}
 
 // Typefaces
 export const fonts = {
@@ -21,7 +21,7 @@ export const fonts = {
   body: "Muli, Arial, sans-serif",
   headline: "Muli, Arial, sans-serif",
   data: "Muli, Arial, sans-serif"
-};
+}
 
 // Sizes for typography scale
 export const fontSize = {
@@ -40,10 +40,12 @@ export const fontSize = {
   // xxl: '24px',
   // xxxl: '30px',
   // xxxxl: '36px'
-};
+}
 
 // Sizes for typography scale
 export const shadows = {
+  cardShadow:
+    "drop-shadow(0 0 1px hsl(34, 5%, 36%)) drop-shadow(0.25rem 0.25rem 0.25rem hsla(34, 5%, 36%, 0.333333));",
   dropShadow:
     "hsl(34, 5%, 36%) 0rem 0rem 1px, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem;",
   panelSectionShadow:
@@ -54,7 +56,7 @@ export const shadows = {
     "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
   radioShadow:
     "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsl(34, 5%, 95%) -1px 1px 0 0 inset, hsl(34, 5%, 95%) 1px -1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px"
-};
+}
 
 export const data = {
   iceCream: [
@@ -65,4 +67,4 @@ export const data = {
     { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
     { value: "cookie dough", label: "Cookie Dough" }
   ]
-};
+}
