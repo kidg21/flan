@@ -31,6 +31,7 @@
           "atoms": "./src/components/atoms",
           "base": "./src/components/base",
           "blocks": "./src/components/blocks",
+          "layout": "./src/components/layout",
         }
       }
     ]

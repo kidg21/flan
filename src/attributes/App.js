@@ -13,7 +13,7 @@ const Header = styled.h1`
   color: #282c34;
 `
 
-const Body = styled.body`
+const Body = styled.div`
 font-family: muli;
 display: flex;
 padding-top: 20px;
