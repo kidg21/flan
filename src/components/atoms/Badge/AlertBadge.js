@@ -1,6 +1,8 @@
 import React from "react";
 import styled, {css} from 'styled-components';
 import Icon from "../Icon/Icon";
+import PropTypes from "prop-types";
+import { colors, shadows } from "../../../attributes/Variables/Variables"
 
 
 const BadgeContainer = styled.div`
@@ -11,9 +13,11 @@ const BadgeContainer = styled.div`
     padding-top: 7px;
     height: 2em;
     border-radius: 20px;
-    background: #75ab3f;
-    color: white;
+    background-color: ${props => (props.info ? colors.anchor : props.warning ? colors.warning : props.error ? colors.alert : props.success ? colors.success : "")};
+    color: black;
 `
+
+
 const successProps = {
     nameProp: ["fas", "check"],
     colorProp: "white",
@@ -35,13 +39,20 @@ const infoProps = {
 };
 
 
-function IconBadge() {
+function Badge(props) {
     return (
-            <BadgeContainer>
-                <Icon {...successProps}/>
-            </BadgeContainer>
+        <div>
+            {props.error ? 
+            <BadgeContainer error > <Icon {...errorProps}/> </BadgeContainer> : null}
+            {props.info ? 
+            <BadgeContainer info > <Icon {...infoProps}/> </BadgeContainer> : null}
+            {props.success ? 
+            <BadgeContainer success > <Icon {...successProps}/> </BadgeContainer> : null}
+            {props.warning ? 
+            <BadgeContainer warning > <Icon {...warningProps}/> </BadgeContainer> : null}
+    </div>
     )
   }
 
 
-export default IconBadge;
+  export default Badge;

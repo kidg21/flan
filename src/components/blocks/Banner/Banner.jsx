@@ -12,10 +12,13 @@ const StyledBanner = styled.div`
   border-radius: 5px;
   justify-content: space-between;
   display: flex;
+  cursor: pointer;
 
-  @media (max-width: 700px) {
+  @media (max-width: 1000px) {
     width: 100%;
   }
+
+  
   
   `
 
@@ -46,6 +49,14 @@ const StyledBanner = styled.div`
  display: inline;
  text-align: right;
  `
+
+// const ENUM = {
+//   a: 'warning', 
+//   b: 'success',
+//   c: 'error',
+//   d: 'info',
+// };
+
 
 
 const Notification = styled.h4`
@@ -78,7 +89,7 @@ function Banner({title}) {
             </Message>
             <Commands>
               <div><FontAwesomeIcon  icon={["fal", "times"]} color={"white"} /></div>
-              <div><IconBadge/></div>
+              <div><IconBadge /></div>
             </Commands>
         </StyledBanner>
     )

@@ -1,7 +1,7 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { Padding } from "../../_helpers/Display"
+import {Padding } from "../../_helpers/Display"
 import {
   withKnobs,
   text,
@@ -266,7 +266,7 @@ storiesOf("Atoms|Input", module)
   ))
 
 // Input ( The Input Family )
-storiesOf("Atoms|Input", module).add("The Input Family", props => (
+storiesOf("Atoms|Input", module) .add("The Input Family", props => (
   <Panel>
     <PanelBody>
       <Form>
