@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function PlusIcon(props) {
     return (
-      <FontAwesomeIcon style={{cursor: "pointer", fontSize: "60px"}} icon={props.nameProp} color={props.colorProp} />
+      <FontAwesomeIcon style={{cursor: "pointer", fontSize: "40px"}} icon={props.nameProp} color={props.colorProp} />
     );
   }
   

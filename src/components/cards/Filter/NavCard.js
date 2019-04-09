@@ -20,18 +20,19 @@ margin: 0;
 
 `
 
-const iconProps = {
+const navProps = {
     nameProp: ["far", "angle-right"],
     colorProp: "dimgray"
   };
 
 
 
-const CardContainer = ({title}) => {
+
+const CardContainer = ({title, ...props}) => {
     return (
         <HeaderSection>
           <H4>{title}</H4>
-           <Icon {...iconProps}/>
+          <Icon {...navProps}/>
         </HeaderSection>
     )
   }

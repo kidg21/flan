@@ -20,15 +20,14 @@ border-bottom: 1px solid #ddd;
 const Row = styled.tr`
 font-size: 12px;
 
-&:nth-child(even) {
-  background-color: #f3f2f2;
-}
-
-// &:hover {
-//   background-color:rgba(0, 0, 0, 0.1);
-//   transition: background-color .05s ease-in;
-//   cursor: pointer;
+// &:nth-child(even) {
+//   background-color: #f0f5fb ;
 // }
+
+&:hover {
+   background-color:#f5f7f9 ;
+   transition: background-color .05s ease-in;
+ }
 `
 
 
@@ -36,8 +35,13 @@ const Cell = styled.td`
 padding: .5em 1em .5em;
 
 &:first-child {
+  color: #83a3c2;
   font-weight: bold;
   font-size: 12px;
+}
+
+&:nth-child(even) {
+  text-align: right;
 }
 `
 
@@ -47,19 +51,19 @@ function TableFunction() {
   return (
           <Table>
               <Row>
-                <Cell>Row one, first cell</Cell>
+                <Cell>Address</Cell>
                 <Cell>Row one, second cell</Cell>
             </Row>
             <Row>
-            <Cell>Row one, first cell</Cell>
+            <Cell>Parcel Number</Cell>
+                <Cell>second cell</Cell>
+            </Row>
+            <Row>
+            <Cell>Land Description</Cell>
                 <Cell>Row one, second cell</Cell>
             </Row>
             <Row>
-            <Cell>Row one, first cell</Cell>
-                <Cell>Row one, second cell</Cell>
-            </Row>
-            <Row>
-            <Cell>Row one, first cell</Cell>
+            <Cell>Owner</Cell>
             <Cell>Row one, second cell</Cell>
             </Row>
           </Table>

@@ -94,12 +94,7 @@ const InputLabel = props => (
 const Help = styled.label`
   grid-column: 1 / -1;
   color: ${colors.grey_60};
-<<<<<<< HEAD
-  font-size: 12px;
-  /* font-weight: 700; */
-=======
   font-size: smaller;
->>>>>>> 7a51b7c69bbd00242ace8cfec00af301bdb4bd00
   letter-spacing: 1px;
 `
 const HelpText = props => <Help>{props.helpText}</Help>

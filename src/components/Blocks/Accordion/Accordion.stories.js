@@ -1,14 +1,16 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import Accordion from "./Accordion";
+// import PropertyInfo from "./PropertyInfo";
 import MapLegend from "../Map/MapLegend";
 import Container from "../../atoms/Container/Container";
+import Table from "../Table/Table";
 
 
 storiesOf("Blocks|Accordion", module)
-.add("Accordion", () => 
+.add("Layer Accordion", () => 
 <Accordion
-title="Accordion Title"
+title="Example"
 onToggle={visibility => {
     console.log('visibility -->', visibility);
 }}
@@ -17,3 +19,15 @@ onToggle={visibility => {
     <MapLegend/>
     </Container>
 </Accordion>);
+
+// .add("Property Info", () => 
+// <PropertyInfo
+// title="Property Info Section"
+// onToggle={visibility => {
+//     console.log('visibility -->', visibility);
+// }}
+// >
+// <Container>
+//     <Table/>
+//     </Container>
+// </PropertyInfo>);

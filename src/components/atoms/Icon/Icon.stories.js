@@ -64,14 +64,35 @@ const minusProps = {
     colorProp: "dimgray",
 };
 
+// const copyProps = {
+//     nameProp: ["far", "copy"],
+//     colorProp: "#99958f",
+// };
+
+const directionsProps = {
+    nameProp: ["fal", "directions"],
+    colorProp: "#60aad2",
+};
+
+const cloneProps = {
+    nameProp: ["fal", "clone"],
+    colorProp: "#99958f",
+};
+
 const addProps = {
     nameProp: ["fal", "plus-circle"],
     colorProp: "#60aad2",
+  };
+
+const questionProps = {
+    nameProp: ["far", "question-circle"],
+    colorProp: "#99958f",
   };
 
 // Colors
 storiesOf("Atoms|Icons", module)
 .add("Navigation Icons", () => <Group> <Icon {...downProps}/>  <Icon {...upProps}/> <Icon {...leftProps}/> <Icon {...rightProps}/> </Group>)
 .add("Map Icons", () => <Group> <Icon {...mapMarkerProps}/>  <Icon {...locatorProps}/> <Icon {...worldProps}/> <Icon {...gotoProps}/> <Icon {...plusProps}/> <Icon {...minusProps}/> </Group>)
+.add("Property Icons", () => <Group> <PlusIcon {...directionsProps}/> <Icon {...cloneProps}/> <Icon {...questionProps}/> </Group>)
 .add("Plus Icon", () => <PlusIcon {...addProps}/>)
 .add("Icon Groups", () => <IconGroup/>);

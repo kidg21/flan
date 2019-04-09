@@ -1,5 +1,6 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
+import Button from "../../atoms/Button/Button.jsx"
 
 const Container = styled.div`
   text-align: left;
@@ -119,24 +120,24 @@ const CardOptionsItem = styled.li`
   }
 `
 
-const CardButton = styled.button`
-  display: block;
-  width: 100%;
-  padding: 12px 0;
-  font-family: inherit;
-  font-size: 14px;
-  font-weight: 700;
-  color: #fff;
-  background-color: navy;
-  border: 0;
-  border-radius: 35px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, .08);
-  cursor: pointer;
+// const CardButton = styled.button`
+//   display: block;
+//   width: 100%;
+//   padding: 12px 0;
+//   font-family: inherit;
+//   font-size: 14px;
+//   font-weight: 700;
+//   color: #fff;
+//   background-color: navy;
+//   border: 0;
+//   border-radius: 35px;
+//   box-shadow: 0 10px 10px rgba(0, 0, 0, .08);
+//   cursor: pointer;
 
-  &:hover {
-    box-shadow: 0 15px 15px rgba(0, 0, 0, .16);
-  }
-`
+//   &:hover {
+//     box-shadow: 0 15px 15px rgba(0, 0, 0, .16);
+//   }
+// `
 
 const CardLink = styled.a`
   display: inline-block;
@@ -239,7 +240,7 @@ export default class Card extends React.Component {
           </CardFieldset>
           
           <CardFieldset>
-            <CardButton type='button'>Sign Up</CardButton>
+            <Button>Sign Up</Button>
           </CardFieldset>
           
           <CardFieldset>

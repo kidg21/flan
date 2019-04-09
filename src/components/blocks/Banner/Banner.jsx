@@ -3,52 +3,83 @@ import styled, { css } from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import IconBadge from "../../atoms/Badge/AlertBadge";
 
+
 const StyledBanner = styled.div`
   background: rgba(0, 0, 0, 0.75);
-  width: 20%;
   color: white;
-  display: inline-flex;
-  align-items: baseline;
-  justify-content: space-between;
-  padding: 1em;
+  width: 30%;
+  padding: .25em .6em .8em .8em;
   border-radius: 5px;
+  justify-content: space-between;
+  display: flex;
 
   @media (max-width: 700px) {
-    background: palevioletred;
+    width: 100%;
   }
+  
   `
+
+// const Container = styled.div`
+// display: flex;
+// line-height: normal;
+// justify-content: flex-end;
+// padding-right: .7em;
+// padding-top: .5em;
+// `
+
+
+ ///On top text
+
+ const Message = styled.div`
+ justify-content: left;
+ align-self: center;
+ display: inline;
+ `
+ 
+ const TopText = styled.div`
+ `
+ 
+ const BottomText = styled.div`
+ `
+
+ const Commands = styled.div`
+ display: inline;
+ text-align: right;
+ `
+
 
 const Notification = styled.h4`
 margin: 0;
 display: flex;
-font-family: system-ui;
-font-size: 14px;
+font-size: 12px;
 font-weight: normal;
 padding-right: 10px;
 `
 
 const NotificationLink = styled.a`
-  display: inline-block;
-  font-size: 12px;
+  font-size: 11px;
+  font-weight: bold;
   text-decoration: none;
-  margin-left: 10px;
   color: white;
-  border-bottom: 1px solid white;
   cursor: pointer;
-  transition: color 0.25s ease-in;
+  transition: border-bottom 0.25s ease-in;
 
   &:hover {
-    color: #777;
+    border-bottom: 1px solid white;
   }
 `
 
 function Banner({title}) {
     return (
         <StyledBanner>
-          <Notification>{title}</Notification>
-          <IconBadge/>
-          <NotificationLink>Click here to ollow the issue</NotificationLink>
-          <FontAwesomeIcon icon={["fal", "times"]} color={"white"} />
+            <Message>
+              <TopText><Notification>{title}</Notification></TopText>
+              <BottomText><NotificationLink>Learn More</NotificationLink></BottomText>
+            </Message>
+            <Commands>
+              <div><FontAwesomeIcon  icon={["fal", "times"]} color={"white"} /></div>
+              <div><IconBadge/></div>
+            </Commands>
         </StyledBanner>
     )
   };

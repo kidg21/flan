@@ -1,7 +1,9 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import Table from "./Table";
+import DataTable from "./DataTable";
 
 
 storiesOf("Blocks|Table", module)
-.add("Layer Card", () => <Table/>);
+.add("Simple Table", () => <Table/>)
+.add("Data Table", () => <DataTable/>);
