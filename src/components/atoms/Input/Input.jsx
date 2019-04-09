@@ -8,34 +8,27 @@ import { colors, shadows } from "../../../attributes/Variables/Variables"
 const TextInputContainer = styled.div`
   display: grid;
   grid-template-columns: ${props =>
-    /* 3 Inputs */
-    props.threeInputs
+    props.threeInputs /* 3 Inputs */
       ? "repeat(3, 1fr)"
-      : /* 2 Inputs */
-      props.twoInputs
+      : props.twoInputs /* 2 Inputs */
       ? "repeat(2, 1fr)"
-      : /* Prefix Label (conditionals) */
-      props.prefix
+      : props.prefix /* Prefix Label (conditionals) */
       ? props.postfix
         ? "minmax(auto, auto) minmax(auto, 3fr) minmax(auto, auto)"
         : props.postSelect
         ? "minmax(auto, auto) minmax(auto, 3fr) minmax(auto, 2fr)"
         : "minmax(auto, auto) minmax(auto, 3fr)"
-      : /* Postfix Select (conditionals) */
-      props.preSelect
+      : props.preSelect /* Prefix Select (conditionals) */
       ? props.postfix
         ? "minmax(auto, 2fr) minmax(auto, 3fr) minmax(auto, auto)"
         : props.postSelect
         ? "minmax(auto, 2fr) minmax(auto, 3fr) minmax(auto, 2fr)"
         : "minmax(auto, 2fr) minmax(auto, 3fr)"
-      : /* Postfix Label */
-      props.postfix
+      : props.postfix /* Postfix Label */
       ? "minmax(auto, 3fr) minmax(auto, auto)"
-      : /* Postfix Select */
-      props.postSelect
+      : props.postSelect /* Postfix Select */
       ? "minmax(auto, 3fr) minmax(auto, 2fr)"
-      : /* Single Input (default) */
-        "repeat(1, 1fr)"};
+      : "repeat(1, 1fr)" /* Single Input (default) */};
   grid-gap: 0.35rem;
   align-content: flex-start;
   color: ${props =>
