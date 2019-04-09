@@ -1,11 +1,11 @@
-import { createGlobalStyle } from "styled-components";
-import styledNormalize from "styled-normalize";
+import { createGlobalStyle } from "styled-components"
+import styledNormalize from "styled-normalize"
 // Import variables
 // import { colors, fonts, fontSize } from "../variables";
-import { colors, fonts, fontSize } from "../Variables/Variables";
+import { colors, fonts, fontSize } from "../Variables/Variables"
 // Import Fonts
 // import Lato_700 from "../../fonts/lato-v14-latin-700.ttf"
-import "../../css/fonts.css";
+import "../../css/fonts.css"
 
 const GlobalStyles = createGlobalStyle`
 
@@ -41,9 +41,13 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: inherit;
     }
     body {
+        position: fixed;
+        width: 100%;
+        height: 100%;
         font-family: ${fonts.body}; /* Muli */
         color: ${colors.grey_80};
         font-weight: 400;
+        overscroll-behavior: none;
     }
 
     /* Typography resets */
@@ -126,7 +130,7 @@ const GlobalStyles = createGlobalStyle`
     }
     code {
         font-family: ${fonts.data};
-        font-sie: 12px;
+        font-size: 12px;
         font-size: 0.85rem;
         line-height: 1rem;
         letter-spacing: 1px;
@@ -191,6 +195,6 @@ const GlobalStyles = createGlobalStyle`
             background-color: ${colors.grey_20};
         }
     }
-`;
+`
 
-export default GlobalStyles;
+export default GlobalStyles
