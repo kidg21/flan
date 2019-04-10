@@ -26,7 +26,6 @@ function withGlobalStyles(storyFn) {
 
 addDecorator(withGlobalStyles)
 
-
 // Option defaults:
 addDecorator(
   withOptions({
@@ -75,21 +74,12 @@ configureViewport({
 })
 
 // Theme
-<<<<<<< HEAD
 // addDecorator(
 //   withOptions({
 //     name: "Foo",
-//     theme: themes.dark
+//     theme: themes.normal
 //   })
-// );
-=======
-addDecorator(
-  withOptions({
-    name: "Foo",
-    theme: themes.normal
-  })
-)
->>>>>>> 640ddbf94881853c2a54929a29d65063dbf37b82
+// )
 
 // Notes
 addDecorator(withNotes)
