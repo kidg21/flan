@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components"
-import { fonts, colors, shadows } from "../../../attributes/Variables/Variables"
-import { PlaceholderText } from "../../_helpers/Placeholders"
+import { fonts, colors, shadows } from "Variables"
+import { PlaceholderText } from "helpers/Placeholders"
 
 const Panel = styled.div`
   position: absolute;

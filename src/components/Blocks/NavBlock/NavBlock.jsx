@@ -2,7 +2,7 @@ import React, { createContext, useState, useEffect, useContext } from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { colors, shadows } from "../../../attributes/Variables/Variables";
+import { colors, shadows } from "Variables";
 import Command from "atoms/Command";
 
 const OuterBlock = styled.div`
@@ -229,7 +229,7 @@ const commandPropsRight = {
   labelProp: labelPropRight
 };
 
-function NavBlock(props) {
+function NavBlock({ flip, ...props }) {
   const NavTitle = useContext(title);
   const LeftCommand = useContext(command_left);
   const RightCommand = useContext(command_right);
@@ -254,7 +254,7 @@ function NavBlock(props) {
     // <React.Fragment>
     <OuterBlock dark>
       <LeftBlock>
-        <Command {...commandPropsLeft} labelFirst={true} />
+        <Command {...commandPropsLeft} />
         {/* <a className="command-item" onClick={clickLeft}> */}
         {/* <i className="command-icon fa fa-chevron-left" /> */}
         {/* <FontAwesomeIcon icon="chevron-left" /> */}

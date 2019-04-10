@@ -1,7 +1,7 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { Padding } from "../../_helpers/Display"
+import { Padding } from "helpers/Display"
 import {
   withKnobs,
   text,

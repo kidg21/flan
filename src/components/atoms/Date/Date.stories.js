@@ -1,9 +1,9 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import Date from "./Date";
+import React from "react"
+import { storiesOf } from "@storybook/react"
+import { Padding } from "helpers/Display"
+import Date from "atoms/Date"
 
-
-
-// Colors
+// Date
 storiesOf("Atoms|Date", module)
-.add("Default", () => <Date/>)
+  .addDecorator(Padding)
+  .add("Default", () => <Date />)

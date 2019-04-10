@@ -1,6 +1,6 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
-import { Padding } from "../../_helpers/Display"
+import { Padding } from "helpers/Display"
 import {
   withKnobs,
   text,
@@ -9,8 +9,8 @@ import {
   select,
   number
 } from "@storybook/addon-knobs"
-import Panel, { PanelBody } from "../../layout/Panel/Panel"
-import Form, { Section, SectionName, InputGroup } from "../../layout/Form/Form"
+import Panel, { PanelBody } from "layout/Panel"
+import Form, { Section, SectionName, InputGroup } from "layout/Form"
 import TextArea from "atoms/TextArea"
 
 // Input ( Standard )

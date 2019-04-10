@@ -1,6 +1,6 @@
 import React from "react"
 import styled, { css } from "styled-components"
-import { fonts, colors, shadows } from "../../../attributes/Variables/Variables"
+import { fonts, colors, shadows } from "Variables"
 import Grid from "../../_helpers/Grid"
 import { PlaceholderText } from "../../_helpers/Placeholders"
 
@@ -23,7 +23,7 @@ const CardWrapper = styled.div`
 
 const CardList = styled(Grid)`
   padding: 1rem;
-  * {
+  ${CardWrapper} {
     border-radius: 5px;
   }
   /* Prototype Content - displays when a Card List is empty */

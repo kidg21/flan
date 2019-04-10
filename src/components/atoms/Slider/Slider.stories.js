@@ -1,17 +1,18 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import Slider from "./Slider";
-import styled, {css} from 'styled-components';
-
+import React from "react"
+import styled, { css } from "styled-components"
+import { storiesOf } from "@storybook/react"
+import { Padding } from "helpers/Display"
+import Slider from "atoms/Slider"
 
 const Space = styled.div`
-padding: 10px;
-width: 50%;
+  padding: 10px;
+  width: 50%;
 `
 
-
-
 storiesOf("Atoms|Slider", module)
-.add("Slider", () => <Space>
-    <Slider/>
-    </Space>);
+  .addDecorator(Padding)
+  .add("Slider", () => (
+    <Space>
+      <Slider />
+    </Space>
+  ))

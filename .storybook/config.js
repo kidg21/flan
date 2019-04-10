@@ -13,7 +13,7 @@ import chaptersAddon from "react-storybook-addon-chapters"
 import "/icons/fontawesome"
 
 // Create and add global styles
-import GlobalStyles from "../src/attributes/GlobalStyles/GlobalStyles"
+import GlobalStyles from "GlobalStyles"
 
 function withGlobalStyles(storyFn) {
   return (

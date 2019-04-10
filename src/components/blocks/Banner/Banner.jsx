@@ -1,14 +1,13 @@
-import React from "react";
-import styled, { css } from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import IconBadge from "../../atoms/Badge/AlertBadge";
-
+import React from "react"
+import styled, { css } from "styled-components"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import IconBadge from "atoms/Badge"
 
 const StyledBanner = styled.div`
   background: rgba(0, 0, 0, 0.75);
   color: white;
   width: 30%;
-  padding: .25em .6em .8em .8em;
+  padding: 0.25em 0.6em 0.8em 0.8em;
   border-radius: 5px;
   justify-content: space-between;
   display: flex;
@@ -16,8 +15,7 @@ const StyledBanner = styled.div`
   @media (max-width: 700px) {
     width: 100%;
   }
-  
-  `
+`
 
 // const Container = styled.div`
 // display: flex;
@@ -27,33 +25,29 @@ const StyledBanner = styled.div`
 // padding-top: .5em;
 // `
 
+///On top text
 
- ///On top text
+const Message = styled.div`
+  justify-content: left;
+  align-self: center;
+  display: inline;
+`
 
- const Message = styled.div`
- justify-content: left;
- align-self: center;
- display: inline;
- `
- 
- const TopText = styled.div`
- `
- 
- const BottomText = styled.div`
- `
+const TopText = styled.div``
 
- const Commands = styled.div`
- display: inline;
- text-align: right;
- `
+const BottomText = styled.div``
 
+const Commands = styled.div`
+  display: inline;
+  text-align: right;
+`
 
 const Notification = styled.h4`
-margin: 0;
-display: flex;
-font-size: 12px;
-font-weight: normal;
-padding-right: 10px;
+  margin: 0;
+  display: flex;
+  font-size: 12px;
+  font-weight: normal;
+  padding-right: 10px;
 `
 
 const NotificationLink = styled.a`
@@ -69,19 +63,27 @@ const NotificationLink = styled.a`
   }
 `
 
-function Banner({title}) {
-    return (
-        <StyledBanner>
-            <Message>
-              <TopText><Notification>{title}</Notification></TopText>
-              <BottomText><NotificationLink>Learn More</NotificationLink></BottomText>
-            </Message>
-            <Commands>
-              <div><FontAwesomeIcon  icon={["fal", "times"]} color={"white"} /></div>
-              <div><IconBadge/></div>
-            </Commands>
-        </StyledBanner>
-    )
-  };
+function Banner({ title }) {
+  return (
+    <StyledBanner>
+      <Message>
+        <TopText>
+          <Notification>{title}</Notification>
+        </TopText>
+        <BottomText>
+          <NotificationLink>Learn More</NotificationLink>
+        </BottomText>
+      </Message>
+      <Commands>
+        <div>
+          <FontAwesomeIcon icon={["fal", "times"]} color={"white"} />
+        </div>
+        <div>
+          <IconBadge />
+        </div>
+      </Commands>
+    </StyledBanner>
+  )
+}
 
-  export default Banner;
+export default Banner

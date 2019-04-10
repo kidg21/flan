@@ -1,15 +1,15 @@
-import React from 'react';
-import styled, { css } from 'styled-components';
-import propTypes from 'prop-types';
-import Icon from '../../atoms/Icon/Icon';
-import Results from "../../atoms/Label/Results";
+import React from "react"
+import styled, { css } from "styled-components"
+import propTypes from "prop-types"
+import Icon from "base/Icons"
+import Results from "../../atoms/Label/Results"
 
 const Container = styled.div`
-display: flex;
-line-height: 2;
-justify-content: flex-end;
-padding-right: .7em;
-padding-top: 5px;
+  display: flex;
+  line-height: 2;
+  justify-content: flex-end;
+  padding-right: 0.7em;
+  padding-top: 5px;
 `
 
 const HeaderLayout = styled.div`
@@ -27,41 +27,36 @@ const HeaderLayout = styled.div`
  `
 
 const Left = styled.div`
- justify-content: flex-start;
- grid-area: left;
- display: flex;
- cursor: pointer;
- `
-
-
-const CardTitle = styled.div`
-justify-content: left;
-align-self: center;
-grid-area: center;
-display: inline;
+  justify-content: flex-start;
+  grid-area: left;
+  display: flex;
+  cursor: pointer;
 `
 
+const CardTitle = styled.div`
+  justify-content: left;
+  align-self: center;
+  grid-area: center;
+  display: inline;
+`
 
 const Right = styled.div`
-justify-content: flex-end;
-line-height: normal;
-vertial-align: bottom;
-grid-area: right;
-display: flex;
-cursor: pointer;
+  justify-content: flex-end;
+  line-height: normal;
+  vertial-align: bottom;
+  grid-area: right;
+  display: flex;
+  cursor: pointer;
 `
 
 const DataOverlay = styled.a`
-font-size: 12px;
-font-weight: bold;
+  font-size: 12px;
+  font-weight: bold;
 `
 
-const TopText = styled.div`
-`
+const TopText = styled.div``
 
-const BottomText = styled.div`
-`
-
+const BottomText = styled.div``
 
 const defaultProps = {
   navProps: {
@@ -76,25 +71,24 @@ const defaultProps = {
   exitProps: {
     nameProp: ["fal", "times"],
     colorProp: "dimgray"
-  },
-};
+  }
+}
 
-
-const FilterHeader = ({title,  ...props }) => {
+const FilterHeader = ({ title, ...props }) => {
   return (
     <div>
       <Container>
         <Icon {...props.exitProps} />
       </Container>
       <HeaderLayout>
-        <Left>
-          {props.navProps ? <Icon {...props.navProps} /> : null}
-        </Left>
+        <Left>{props.navProps ? <Icon {...props.navProps} /> : null}</Left>
         <CardTitle>
           <TopText>
             {props.layer ? <DataOverlay> {props.layer} </DataOverlay> : null}
           </TopText>
-          <BottomText><h4 >{title}</h4></BottomText>
+          <BottomText>
+            <h4>{title}</h4>
+          </BottomText>
         </CardTitle>
         <Right>
           <Icon {...props.iconProps} />
@@ -104,5 +98,5 @@ const FilterHeader = ({title,  ...props }) => {
   )
 }
 
-FilterHeader.defaultProps = defaultProps;
-export default FilterHeader;
+FilterHeader.defaultProps = defaultProps
+export default FilterHeader

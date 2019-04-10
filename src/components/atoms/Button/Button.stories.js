@@ -1,11 +1,11 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import Button from "./Button";
-import GreenButton from "./GreenButton";
+import React from "react"
+import { storiesOf } from "@storybook/react"
+import { Padding } from "helpers/Display"
+import Button from "./Button"
 
-
-
-// Colors
+// Buttons
 storiesOf("Atoms|Button", module)
-.add("Default", () => <Button>Default</Button>)
-.add("Secondary", () => <GreenButton>Green</GreenButton>);
+  .addDecorator(Padding)
+  .add("Primary", () => <Button label="Primary Button" />)
+  .add("Secondary", () => <Button label="Secondary Button" secondary={true} />)
+  .add("Floating", () => <Button label="Floating Button" floating={true} />)

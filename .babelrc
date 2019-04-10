@@ -27,6 +27,9 @@
       {
         "root": ["./src"],
         "alias": {
+          "Variables": "./src/components/base/Variables/Variables.jsx",
+          "GlobalStyles": "./src/components/base/GlobalStyles/GlobalStyles.jsx",
+          "helpers": "./src/components/_helpers",
           "attributes": "./src/attributes",
           "atoms": "./src/components/atoms",
           "base": "./src/components/base",

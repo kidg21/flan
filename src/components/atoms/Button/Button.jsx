@@ -1,84 +1,56 @@
-import React from 'react';
-import styled, {css} from 'styled-components';
-import PropTypes from 'prop-types';
+import React from "react"
+import styled, { css } from "styled-components"
+import { colors, shadows } from "Variables"
+import PropTypes from "prop-types"
 
 const StyledButton = styled.button`
-background: white;
-border: 1px solid #60AAD2;
-color: #3c93c1;
-font-size: 14px;
-font-weight: bold;
-width: 7em;
-height: 2em;
-text-align:center;
-vertical-align: middle;
-border-radius: 20px;
-cursor: pointer;
-transition: opacity .15s;
-
-&:hover {
-    background: #60AAD2;
-    color: white;
-}
-
-&:active {
-    background: #60AAD2;
-    color: white;
-}
+  color: ${props => (props.secondary ? colors.success : colors.anchor)};
+  background: ${colors.white};
+  border: 1px solid;
+  border-color: ${props => (props.secondary ? colors.success : colors.anchor)};
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: ${props => (props.floating ? shadows.dropShadow : "")};
+  transition: opacity 0.15s;
+  &:hover {
+    background-color: ${props =>
+      props.secondary ? colors.success : colors.anchor};
+    color: ${colors.white};
+  }
+  &:active {
+    background-color: ${props =>
+      props.secondary ? colors.success : colors.anchor};
+  }
 `
 
-// const GreenButton = styled.button`
-// background: white;
-// border: 1px solid #75AB3F;
-// color: #6ba531;
-// font-size: 14px;
-// font-weight: bold;
-// width: 7em;
-// height: 2em;
-// text-align:center;
-// vertical-align: middle;
-// border-radius: 20px;
-// cursor: pointer;
-// transition: opacity .15s;
-
-// &:hover {
-//     background: #75AB3F;
-//     color: white;
-// }
-
-// &:active {
-//     background: #75AB3F;
-//     color: white;
-// }
-// `
-
-
-
+function Button({ label, secondary, disabled, floating, onClick }) {
+  return (
+    <StyledButton
+      type="button"
+      secondary={secondary}
+      disabled={disabled}
+      floating={floating}
+      onClick={onClick}
+    >
+      {label}
+    </StyledButton>
+  )
+}
 
 const propTypes = {
   label: PropTypes.string,
   disabled: PropTypes.bool,
-  onClick: PropTypes.func.isRequired,
-};
+  onClick: PropTypes.func.isRequired
+}
+Button.propTypes = propTypes
 
 const defaultProps = {
-  label: 'Button Label',
-  disabled: false,
-};
-
-function Button({ disabled, label, onClick }) {
-  return (
-    <button
-      type="button"
-      disabled={disabled}
-      onClick={onClick}
-      style={styles}
-    >
-      {label}
-    </button>
-  );
+  label: "Button Label",
+  disabled: false
 }
+Button.defaultProps = defaultProps
 
-Button.propTypes = propTypes;
-Button.defaultProps = defaultProps;
-export default StyledButton;
+export default Button

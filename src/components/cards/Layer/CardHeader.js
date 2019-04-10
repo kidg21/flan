@@ -1,18 +1,17 @@
-import React from 'react';
-import styled, { css } from 'styled-components';
-import propTypes from 'prop-types';
-import Container from '../../atoms/Container/Container';
-import Label from  '../../atoms/Label/Label';
-import IconGroup from '../../atoms/Icon/IconGroup';
-import Icon from '../../atoms/Icon/Icon';
-import Switch from "../../atoms/Switch/Switch";
-
+import React from "react"
+import styled, { css } from "styled-components"
+import propTypes from "prop-types"
+import Container from "atoms/Container"
+import Label from "atoms/Label"
+import IconBlock from "blocks/IconBlock"
+import Icon from "base/Icons"
+import Switch from "atoms/Switch"
 
 const HeaderSection = styled.div`
-overflow: hidden;
-cursor: pointer;
-justify-content: space-between;
-display: flex;
+  overflow: hidden;
+  cursor: pointer;
+  justify-content: space-between;
+  display: flex;
 `
 
 // const ViewLegend = styled.div`
@@ -23,22 +22,22 @@ display: flex;
 // `
 
 const LayerCard = styled.div`
-// border-bottom: 0.25px solid #EAEDED;
-padding: .8em 1em .8em;
+  // border-bottom: 0.25px solid #EAEDED;
+  padding: 0.8em 1em 0.8em;
 `
 
+function CardContainer({ title }) {
+  return (
+    <LayerCard>
+      <HeaderSection>
+        <Switch />
+        <h4 style={{ margin: 0, flex: "auto", paddingLeft: "1.5em" }}>
+          {title}
+        </h4>
+        <IconBlock />
+      </HeaderSection>
+    </LayerCard>
+  )
+}
 
-function CardContainer({title}) {
-    return (
-      <LayerCard>
-        <HeaderSection>
-          <Switch/>
-          <h4 style={{margin: 0, flex: "auto", paddingLeft: "1.5em"}}>{title}</h4>
-          <IconGroup />
-        </HeaderSection>
-        </LayerCard>
-    )
-  }
-
-
-export default CardContainer;
+export default CardContainer

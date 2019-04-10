@@ -3,7 +3,7 @@ import styled, { css } from "styled-components"
 import PropTypes from "prop-types"
 import { InputLabel, HelpText, ErrorText } from "../../layout/Form/Form"
 import SelectMenu from "../SelectMenu"
-import { colors, shadows } from "../../../attributes/Variables/Variables"
+import { colors, shadows } from "Variables"
 
 const TextInputContainer = styled.div`
   display: grid;
@@ -40,7 +40,7 @@ const PrePostLabel = styled.label`
   justify-content: center;
   border-radius: 5px;
   align-items: center;
-  // font-weight: bold;
+  /* font-weight: bold; */
   letter-spacing: 2px;
   text-transform: lowercase;
   color: ${colors.grey_60};

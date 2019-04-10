@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from "react"
 import PropTypes from "prop-types"
 import styled, { css, keyframes } from "styled-components"
-import { fonts, colors, shadows } from "../../../attributes/Variables/Variables"
+import { fonts, colors, shadows } from "Variables"
 import { PlaceholderText } from "../../_helpers/Placeholders"
 import Card, { CardList } from "layout/Card"
 

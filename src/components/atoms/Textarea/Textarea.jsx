@@ -1,8 +1,8 @@
 import React from "react"
 import styled, { css } from "styled-components"
 import PropTypes from "prop-types"
-import { InputLabel, HelpText, ErrorText } from "../../layout/Form/Form"
-import { colors, shadows } from "../../../attributes/Variables/Variables"
+import { InputLabel, HelpText, ErrorText } from "layout/Form"
+import { colors, shadows } from "Variables"
 
 const TextAreaContainer = styled.div`
   display: grid;

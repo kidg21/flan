@@ -1,7 +1,9 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import Switch from "./Switch";
+import React from "react"
+import { storiesOf } from "@storybook/react"
+import { Padding } from "helpers/Display"
+import Switch from "./Switch"
 
 // Colors
 storiesOf("Atoms|Switch", module)
-.add("Switch", () => <Switch/>);
+  .addDecorator(Padding)
+  .add("Switch", () => <Switch />)
