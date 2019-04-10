@@ -15,37 +15,39 @@ const selectStyles = {
   control: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
     backgroundColor: isFocused
-      ? "#f1f8eb"
+      ? ""
       : isDisabled
       ? colors.grey_20
       : colors.white,
-    borderColor: isFocused ? colors.success + "!important" : colors.grey_20,
-    borderBottomColor: colors.grey_40,
-    fontWeight: "700",
-    letterSpacing: "2px",
+    borderColor: isFocused ? colors.anchor + "!important" : colors.grey_20,
+    borderBottomColor: colors.grey_20,
+    fontWeight: "normal",
+    letterSpacing: "1px",
     minHeight: "2.75rem",
+    cursor: isDisabled ? "not-allowed" : "pointer",
     ":hover": {
-      borderColor: colors.success
+      borderColor: colors.anchor
     },
     boxShadow: "none"
   }),
   placeholder: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
     fontFamily: fonts.data,
-    color: isFocused ? colors.success : colors.grey_60,
+    color: isFocused ? colors.grey_60 : colors.grey_60,
     letterSpacing: "1px",
     fontWeight: 400
   }),
   // selected option
   singleValue: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
+    fontFamily: fonts.data,
     opacity: isDisabled ? 0.5 : 1,
     transition: "opacity 300ms"
   }),
   // 'X' to clear current selection
   clearIndicator: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
-    color: isFocused ? colors.success : colors.grey_60
+    color: isFocused ? colors.grey_40 : colors.grey_20
   }),
   // pipe
   indicatorSeparator: (styles, { isDisabled, isFocused, isSelected }) => ({
@@ -55,25 +57,27 @@ const selectStyles = {
   // down arrow
   dropdownIndicator: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
-    color: isFocused ? colors.success : colors.grey_60
+    color: isFocused ? colors.grey_60 : colors.grey_60
   }),
   // multi element background
   multiValue: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
-    fontWeight: "bold",
+    fontFamily: fonts.data,
+    fontWeight: "normal",
     letterSpacing: "1px"
   }),
   // multi element label background
   multiValueLabel: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
+    fontFamily: fonts.data,
     color: colors.grey_80
   }),
   // multi element 'x' background
   multiValueRemove: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
     ":hover": {
-      backgroundColor: colors.alert,
-      color: colors.white
+      backgroundColor: colors.grey_40,
+      color: colors.grey_80
     },
     color: colors.grey_60
   }),
@@ -92,18 +96,18 @@ const selectStyles = {
       backgroundColor: isDisabled
         ? null
         : isSelected
-        ? colors.success
+        ? null
         : isFocused
-        ? colors.anchor
+        ? null
         : null,
       color: isDisabled
         ? colors.grey_40
         : isSelected
-        ? colors.white
+        ? colors.black
         : isFocused
-        ? colors.white
+        ? colors.anchor
         : colors.grey_80,
-      cursor: isDisabled ? "not-allowed" : "default"
+      cursor: isDisabled ? "not-allowed" : "pointer"
     }
   }
 }

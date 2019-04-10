@@ -28,18 +28,16 @@ storiesOf("Templates|Panel", module)
         <InfoHeader street="5201 California Ave" city="Irvine, CA 92614" />
       </PanelSection>
       <PanelBody>
-        <Container>
           <Table />
-        </Container>
         <PropertyInfo
           title="Property Info Section"
           onToggle={visibility => {
             console.log("visibility -->", visibility)
           }}
         >
-          <Container>
+          <div>
             <Table />
-          </Container>
+          </div>
         </PropertyInfo>
       </PanelBody>
     </Panel>
@@ -124,9 +122,6 @@ storiesOf("Templates|Panel", module)
         <FilterHeader layer="Data Overlay" title="Filter Detail" />
       </PanelSection>
       <PanelBody>
-        <Checkbox />
-        <Checkbox />
-        <Checkbox />
       </PanelBody>
       <PanelFooter>
         <Button>Apply</Button>

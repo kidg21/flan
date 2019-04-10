@@ -12,9 +12,8 @@ const Center = ({ children }) => <div style={centerStyles}>{children}</div>;
 const padding = {
   padding: "2rem",
   justifyContent: "center",
-  display: "flex",
   alignItems: "center"
 };
-const Padding = storyFn => <div style={centerStyles}><div style={padding}>{storyFn()}</div> </div>;
+const Padding = storyFn => <div style={padding}>{storyFn()}</div>;
 
 export { Center, Padding };

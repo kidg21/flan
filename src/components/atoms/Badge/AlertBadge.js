@@ -1,8 +1,8 @@
 import React from "react"
 import styled, { css } from "styled-components"
-import Icon from "../Icon/Icon"
+import Icon from "base/Icons"
 import PropTypes from "prop-types"
-import { colors, shadows } from "../../../attributes/Variables/Variables"
+import { colors, shadows } from "Variables"
 
 const BadgeContainer = styled.div`
   display: flex;
@@ -45,7 +45,7 @@ const infoProps = {
   colorProp: "white"
 }
 
-function Badge(props) {
+function AlertBadge(props) {
   return (
     <div>
       {props.error ? (
@@ -76,4 +76,4 @@ function Badge(props) {
   )
 }
 
-export default Badge
+export default AlertBadge;
