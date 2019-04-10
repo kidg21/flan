@@ -19,7 +19,7 @@ module.exports = (baseConfig, env, defaultConfig) => {
         options: {
           prettierConfig: {
             printWidth: 80,
-            singleQuote: false,
+            singleQuote: true,
           }
         }
       }

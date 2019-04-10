@@ -1,6 +1,6 @@
-import styled, { css } from "styled-components";
-import { fonts, colors, shadows} from "../../../attributes/Variables/Variables";
-import { PlaceholderText } from "../../_helpers/Placeholders";
+import styled, { css } from "styled-components"
+import { fonts, colors, shadows } from "Variables"
+import { PlaceholderText } from "helpers/Placeholders"
 
 const Panel = styled.div`
   position: absolute;
@@ -24,7 +24,7 @@ const Panel = styled.div`
       content: "{ Panel } \00000A 'Primary layout container for related content'";
     }
   }
-`;
+`
 
 const PanelSection = styled.section`
   position: relative;
@@ -32,12 +32,9 @@ const PanelSection = styled.section`
   flex-direction: column;
   flex: none;
   background: ${colors.white};
-  border: 0.5px solid #EAEDED;
-  // box-shadow: ${shadows.panelSectionShadow};
-  /* border-radius: 5px; */
+  box-shadow: ${shadows.panelSectionShadow};
   z-index: 1;
   overflow: hidden;
-  /* align-items: center; */
   max-height: 100vh;
   transition: all 0.2s ease-in-out;
   /* Prototype Content - displays when a Panel Section is empty */
@@ -47,12 +44,11 @@ const PanelSection = styled.section`
       content: "{ PanelSection } \00000A 'Takes only the space it needs (1 or more)'";
     }
   }
-`;
+`
 
 const PanelBody = styled(PanelSection)`
   flex: auto;
   z-index: 0;
-  nackground: white;
   overflow-x: hidden;
   overflow-y: scroll;
   box-shadow: none;
@@ -63,6 +59,29 @@ const PanelBody = styled(PanelSection)`
       content: "{ PanelBody } \00000A 'Takes up any remaining space and scrolls when full (typically, only 1 of these...multiples would share the remaining space)'";
     }
   }
-`;
+`
 
-export { Panel as default, PanelSection, PanelBody };
+const PanelFooter = styled.section`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: none;
+  background: ${colors.white};
+  border: 0.5px solid #eaeded;
+  box-shadow: ${shadows.panelSectionShadow};
+  z-index: 1;
+  overflow: hidden;
+  align-items: center;
+  padding-bottom: 5px;
+  max-height: 100vh;
+  transition: all 0.2s ease-in-out;
+  /* Prototype Content - displays when a Panel Section is empty */
+  &:empty {
+    &:before {
+      ${PlaceholderText};
+      content: "{ PanelFooter } \00000A 'Takes only the space it needs (1 or more)'";
+    }
+  }
+`
+
+export { Panel as default, PanelSection, PanelBody, PanelFooter }

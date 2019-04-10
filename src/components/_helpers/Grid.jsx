@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const Grid = styled.section`
   display: grid;
@@ -16,3 +16,9 @@ const Grid_3 = styled(Grid)`
 `;
 
 export { Grid as default, Grid_2, Grid_3 };
+
+export const inputGrid = css`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-gap: 1rem;
+`;

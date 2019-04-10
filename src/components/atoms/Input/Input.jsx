@@ -1,68 +1,71 @@
-import React from "react";
-import styled, { css } from "styled-components";
-import PropTypes from "prop-types";
-import { HelpText, ErrorText } from "../../layout/Form/Form";
-import { colors, shadows } from "../../../attributes/Variables/Variables";
+import React from "react"
+import styled, { css } from "styled-components"
+import PropTypes from "prop-types"
+import { InputLabel, HelpText, ErrorText } from "../../layout/Form/Form"
+import SelectMenu from "../SelectMenu"
+import { colors, shadows } from "Variables"
 
 const TextInputContainer = styled.div`
   display: grid;
   grid-template-columns: ${props =>
-    props.three
+    props.threeInputs /* 3 Inputs */
       ? "repeat(3, 1fr)"
-      : props.two
+      : props.twoInputs /* 2 Inputs */
       ? "repeat(2, 1fr)"
-      : props.prefix
-      ? "minmax(auto, 1fr) minmax(auto, 3fr)"
-      : props.postfix
-      ? "minmax(auto, 3fr) minmax(auto, 1fr)"
-      : "repeat(1, 1fr)"};
+      : props.prefix /* Prefix Label (conditionals) */
+      ? props.postfix
+        ? "minmax(auto, auto) minmax(auto, 3fr) minmax(auto, auto)"
+        : props.postSelect
+        ? "minmax(auto, auto) minmax(auto, 3fr) minmax(auto, 2fr)"
+        : "minmax(auto, auto) minmax(auto, 3fr)"
+      : props.preSelect /* Prefix Select (conditionals) */
+      ? props.postfix
+        ? "minmax(auto, 2fr) minmax(auto, 3fr) minmax(auto, auto)"
+        : props.postSelect
+        ? "minmax(auto, 2fr) minmax(auto, 3fr) minmax(auto, 2fr)"
+        : "minmax(auto, 2fr) minmax(auto, 3fr)"
+      : props.postfix /* Postfix Label */
+      ? "minmax(auto, 3fr) minmax(auto, auto)"
+      : props.postSelect /* Postfix Select */
+      ? "minmax(auto, 3fr) minmax(auto, 2fr)"
+      : "repeat(1, 1fr)" /* Single Input (default) */};
   grid-gap: 0.35rem;
-  margin-bottom: 0.5rem;
-`;
-
-const TextInputLabel = styled.label`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  grid-column: 1 / -1;
-  user-select: none;
-  font-size: smaller;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: ${props => (props.error ? colors.alert : "")};
-  cursor: pointer;
-  &:after {
-    content: "*";
-    display: ${props => (props.required ? "" : "none")};
-    height: 1rem;
-    font-size: 1.5rem;
-    color: ${colors.alert};
-  }
-`;
+  align-content: flex-start;
+  color: ${props =>
+    props.error ? colors.alert : props.disabled ? colors.grey_40 : ""};
+`
 
 const PrePostLabel = styled.label`
   display: flex;
   justify-content: center;
+  border-radius: 5px;
   align-items: center;
-  font-size: small;
-  letter-spacing: 1px;
+  /* font-weight: bold; */
+  letter-spacing: 2px;
   text-transform: lowercase;
-  color: ${colors.grey_80};
-  background-color: ${colors.grey_light};
-  border: 1px solid ${colors.grey_40};
-  padding: 0 0.5rem;
+  color: ${colors.grey_60};
+  background-color: #ffffff;
+  border: 1px solid ${colors.grey_20};
+  border-bottom: 1px solid ${colors.grey_40};
+  border-radius: 4px;
+  padding: 0.25rem 1rem;
   white-space: nowrap;
-`;
+`
 
-const TextInput = styled.input.attrs({ type: "text" })`
-  border: 1px solid transparent;
+const TextInput = styled.input`
+  border: 1px solid ${colors.grey_20};
   border-bottom: 1px solid ${colors.grey_40};
   border-color: ${props => (props.error ? colors.alert : "")};
   background-color: ${props => (props.error ? "#f9ebeb" : "")};
   caret-color: ${props => (props.error ? colors.alert : "")};
+  min-height: 2.75rem;
   padding: 0.5rem 0.75rem;
   ::placeholder {
     color: ${props => (props.error ? colors.alert : "")};
+  }
+  &:hover {
+    border: 1px solid ${colors.success};
+    border-color: ${props => (props.error ? colors.alert : "")};
   }
   &:focus {
     background-color: ${props => (props.error ? "#f9ebeb" : "#f1f8eb")};
@@ -75,141 +78,104 @@ const TextInput = styled.input.attrs({ type: "text" })`
         props.error ? colors.alert : colors.success};
     }
   }
-`;
+`
 
-function Input({ helpText, errorText, ...props }) {
+function Input({ inputLabel, isRequired, helpText, errorText, ...props }) {
   return (
     <TextInputContainer
-      name={props.name}
-      placeholder={props.placeholder}
-      pattern="alpha"
-      required={props.required}
-      prefix={props.prefix}
-      postfix={props.postfix}
-      disabled={props.disabled}
+      isRequired={isRequired}
+      disabled={props.disabled} // input attribute
       error={props.error}
-      two={props.two}
-      three={props.three}
+      prefix={props.prefix}
+      preSelect={props.preSelect}
+      postfix={props.postfix}
+      postSelect={props.postSelect}
+      twoInputs={props.twoInputs} // 2 inputs in a row
+      threeInputs={props.threeInputs} // 3 inputs in a row
     >
-      <TextInputLabel {...props}>{props.label}</TextInputLabel>
-      {props.prefix ? <PrePostLabel>{props.pre_label}</PrePostLabel> : null}
-      <TextInput {...props} />
-      {props.two || props.three ? (
+      {/* Input Label */}
+      <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
+      {/* Prefix Label (conditional) */}
+      {props.prefix ? <PrePostLabel>{props.prefix}</PrePostLabel> : null}
+      {/* Prefix Select Menu (conditional) */}
+      {props.preSelect ? (
+        <SelectMenu
+          displayInline={true} // Grid Override
+          inputLabel={null}
+          name="Choose"
+          isClearable={false}
+          options={props.preSelect}
+          defaultValue={props.preSelect[0]}
+        />
+      ) : null}
+      <TextInput
+        id={props.name} // input attribute
+        name={props.name} // input attribute
+        type={props.type} // input attribute
+        value={props.value} // input attribute
+        placeholder={props.placeholder} // input attribute
+        pattern={props.pattern} // input attribute
+        {...props}
+      />
+      {/* Column 2 (conditional) */}
+      {props.twoInputs || props.threeInputs ? (
         <TextInput {...props} placeholder={props.placeholder_2} />
       ) : null}
-      {props.three ? (
+      {/* Column 3 (conditional) */}
+      {props.threeInputs ? (
         <TextInput {...props} placeholder={props.placeholder_3} />
       ) : null}
-      {props.postfix ? <PrePostLabel>{props.post_label}</PrePostLabel> : null}
+      {/* Postfix (conditional) */}
+      {props.postfix ? <PrePostLabel>{props.postfix}</PrePostLabel> : null}
+      {/* Postfix Select Menu (conditional) */}
+      {props.postSelect ? (
+        <SelectMenu
+          displayInline={true} // Grid Override
+          inputLabel={null}
+          name="Choose"
+          isClearable={false}
+          options={props.postSelect}
+          defaultValue={props.postSelect[0]}
+        />
+      ) : null}
+      {/* Help Text */}
       {helpText ? <HelpText helpText={helpText} /> : null}
+      {/* Error Message (required) */}
       {props.error ? <ErrorText errorText={errorText} /> : null}
     </TextInputContainer>
-  );
+  )
 }
 
-// function Input_2_Column({ helpText, errorText, ...props }) {
-//   return (
-//     <TextInputContainer two>
-//       <TextInputLabel error={props.error} required={props.required}>
-//         {props.label}
-//       </TextInputLabel>
-//       <TextInput
-//         name={props.name}
-//         placeholder={props.placeholder}
-//         pattern="alpha"
-//         disabled={props.disabled}
-//         error={props.error}
-//       />
-//       <TextInput
-//         name={props.name}
-//         placeholder={props.placeholder}
-//         pattern="alpha"
-//         disabled={props.disabled}
-//         error={props.error}
-//       />
-//       {helpText ? <HelpText helpText={helpText} /> : null}
-//       {props.error ? <ErrorText errorText={errorText} /> : null}
-//     </TextInputContainer>
-//   );
-// }
-
-// function Input_3_Column({ helpText, errorText, ...props }) {
-//   return (
-//     <TextInputContainer three>
-//       <TextInputLabel error={props.error} required={props.required}>
-//         {props.label}
-//       </TextInputLabel>
-//       <TextInput
-//         name={props.name}
-//         placeholder={props.placeholder}
-//         pattern="alpha"
-//         disabled={props.disabled}
-//         error={props.error}
-//       />
-//       <TextInput
-//         name={props.name}
-//         placeholder={props.placeholder}
-//         pattern="alpha"
-//         disabled={props.disabled}
-//         error={props.error}
-//       />
-//       <TextInput
-//         name={props.name}
-//         placeholder={props.placeholder}
-//         pattern="alpha"
-//         disabled={props.disabled}
-//         error={props.error}
-//       />
-//       {helpText ? <HelpText helpText={helpText} /> : null}
-//       {props.error ? <ErrorText errorText={errorText} /> : null}
-//     </TextInputContainer>
-//   );
-// }
-
 Input.defaultProps = {
-  two: false,
-  three: false,
-  label: "Input Label",
   name: "Input Name",
+  type: "text",
+  pattern: "alpha",
   placeholder: "Placeholder Text",
-  placeholder_2: "Placeholder 2",
-  placeholder_3: "Placeholder 3",
-  prefix: false,
-  pre_label: "Pre",
-  postfix: false,
-  post_label: "Post",
-  required: false,
   disabled: false,
   error: false,
-  helpText: "Help text for the Input component",
-  errorText: "Error text for the Input component"
-};
+  errorText: "Error text for the Input component",
+  twoInputs: false,
+  placeholder_2: "Placeholder 2",
+  threeInputs: false,
+  placeholder_3: "Placeholder 3"
+}
 
 Input.propTypes = {
-  two: PropTypes.bool,
-  three: PropTypes.bool,
-  label: PropTypes.string,
   name: PropTypes.string,
+  type: PropTypes.string,
+  pattern: PropTypes.string,
+  value: PropTypes.string,
   placeholder: PropTypes.string,
-  prefix: PropTypes.bool,
-  pre_label: PropTypes.string.isRequired,
-  postfix: PropTypes.bool,
-  post_label: PropTypes.string.isRequired,
-  required: PropTypes.bool,
+  prefix: PropTypes.string,
+  postfix: PropTypes.string,
   disabled: PropTypes.bool,
-  error: PropTypes.bool
-};
+  error: PropTypes.bool,
+  twoInputs: PropTypes.bool,
+  placeholder_2: PropTypes.string,
+  threeInputs: PropTypes.bool,
+  placeholder_3: PropTypes.string,
+  preSelect: PropTypes.array,
+  postSelect: PropTypes.array
+}
 
-// Input_2_Column.defaultProps = Input.defaultProps;
-// Input_2_Column.propTypes = Input.defaultProps;
-
-// Input_3_Column.defaultProps = Input.defaultProps;
-// Input_3_Column.propTypes = Input.defaultProps;
-
-export {
-  Input as default
-  // Input_2_Column,
-  // Input_3_Column
-  // Input_Prefix,
-  // Input_Postfix
-};
+export { Input as default }

@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import styled, { css } from "styled-components";
-import PropTypes from "prop-types";
-import { colors, shadows } from "../../../attributes/Variables/Variables";
+import React, { useState } from "react"
+import styled, { css } from "styled-components"
+import PropTypes from "prop-types"
+import { colors, shadows } from "Variables"
 
 const RadioContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 0.5rem;
   align-items: inherit;
-`;
+`
 
 const RadioInput = styled.input.attrs({ type: "radio" })`
   background-color: ${colors.white};
@@ -25,7 +25,7 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
   &:focus {
     outline: none;
   }
-`;
+`
 
 const RadioLabel = styled.label`
   user-select: none;
@@ -34,13 +34,13 @@ const RadioLabel = styled.label`
   letter-spacing: 1px;
   line-height: 1.4;
   cursor: pointer;
-`;
+`
 
 function Radio({ ...props }) {
-  const [checked, setChecked] = useState({ selectedValue: "" });
+  const [checked, setChecked] = useState({ selectedValue: "" })
   const handleCheckboxChange = event => {
-    setChecked({ selectedValue: event.target.value });
-  };
+    setChecked({ selectedValue: event.target.value })
+  }
   return (
     <RadioContainer>
       <RadioInput
@@ -53,18 +53,18 @@ function Radio({ ...props }) {
       />
       <RadioLabel for={props.id}>{props.label}</RadioLabel>
     </RadioContainer>
-  );
+  )
 }
 
 const StyledRadioContainer = styled.div`
   display: inline-block;
   vertical-align: middle;
-`;
+`
 
 const HiddenRadio = styled.input.attrs({ type: "radio" })`
   border: 0;
   clip: rect(0 0 0 0);
-  clippath: inset(50%);
+  /* clippath: inset(50%); */
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -72,7 +72,7 @@ const HiddenRadio = styled.input.attrs({ type: "radio" })`
   position: absolute;
   white-space: nowrap;
   width: 1px;
-`;
+`
 
 const StyledRadioInput = styled.div`
   display: inline-block;
@@ -83,20 +83,20 @@ const StyledRadioInput = styled.div`
   border-radius: 30px;
   transition: all 150ms;
   cursor: pointer;
-`;
+`
 
 const StyledRadio = ({ className, checked, ...props }) => (
   <StyledRadioContainer className={className}>
     <HiddenRadio checked={checked} {...props} />
     <StyledRadioInput checked={checked} />
   </StyledRadioContainer>
-);
+)
 
 const CustomRadio = props => {
-  const [checked, setChecked] = useState(false);
+  const [checked, setChecked] = useState(false)
   const handleCheckboxChange = event => {
-    setChecked({ selectedValue: event.target.value });
-  };
+    setChecked({ selectedValue: event.target.value })
+  }
   return (
     <React.Fragment>
       <label>
@@ -110,14 +110,14 @@ const CustomRadio = props => {
         </span>
       </label>
     </React.Fragment>
-  );
-};
+  )
+}
 
 Radio.defaultProps = {
   id: "r1",
   label: "Radio Label",
   name: "radio"
-};
+}
 
 Radio.propTypes = {
   /** This is the Left nav command. */
@@ -126,6 +126,6 @@ Radio.propTypes = {
   label: PropTypes.string.isRequired,
   /** This is the Right nav command. */
   name: PropTypes.string.isRequired
-};
+}
 
-export { Radio as default, CustomRadio };
+export { Radio as default, CustomRadio }

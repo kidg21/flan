@@ -1,43 +1,37 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import {
-  InputBlock,
-  InputBlockLabel,
-  InputGroup,
-  InputGroup_1_Colunn,
-  InputGroup_2_Colunn,
-  InputGroup_3_Colunn
-} from "../../layout/Form/Form";
-import Checkbox from "./Checkbox";
+import React from "react"
+import { storiesOf } from "@storybook/react"
+import { Padding } from "helpers/Display"
+import { Section, SectionName, InputGroup } from "layout/Form"
+import Checkbox from "atoms/Checkbox"
 
 const cbox_1 = {
   id: "cbox_1",
   label: "Box 1"
-};
+}
 const cbox_2 = {
   id: "cbox_2",
   label: "Box 2"
-};
+}
 const cbox_3 = {
   id: "cbox_3",
   label: "Box 3"
-};
+}
 const cbox_4 = {
   id: "cbox_4",
   label: "Box 4"
-};
+}
 const cbox_long = {
   id: "cbox_long",
   label:
     "My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself."
-};
+}
 
 storiesOf("Atoms|Checkbox", module)
-  .addDecorator(story => <div style={{ padding: "2rem" }}>{story()}</div>)
+  .addDecorator(Padding)
   .add("Standard Checkbox", () => <Checkbox {...cbox_1} />)
   .add("Check Block (Responsive)", () => (
-    <InputBlock>
-      <InputBlockLabel label="Check Block (Responsive)" />
+    <Section>
+      <SectionName>Check Block (Responsive)</SectionName>
       <InputGroup>
         <Checkbox {...cbox_1} />
         <Checkbox {...cbox_2} />
@@ -45,41 +39,41 @@ storiesOf("Atoms|Checkbox", module)
         <Checkbox {...cbox_4} />
         <Checkbox {...cbox_long} />
       </InputGroup>
-    </InputBlock>
+    </Section>
   ))
   .add("Check Block (2 columns)", () => (
-    <InputBlock>
-      <InputBlockLabel label="Check Block (2 columns)" />
-      <InputGroup_2_Colunn>
+    <Section>
+      <SectionName>Check Block (2 columns)</SectionName>
+      <InputGroup twoColumns>
         <Checkbox {...cbox_1} />
         <Checkbox {...cbox_2} />
         <Checkbox {...cbox_3} />
         <Checkbox {...cbox_4} />
-      </InputGroup_2_Colunn>
-    </InputBlock>
+      </InputGroup>
+    </Section>
   ))
   .add("Check Block (3 columns)", () => (
-    <InputBlock>
-      <InputBlockLabel label="Check Block (3 columns)" />
-      <InputGroup_3_Colunn>
+    <Section>
+      <SectionName>Check Block (3 columns)</SectionName>
+      <InputGroup threeColumns>
         <Checkbox {...cbox_1} />
         <Checkbox {...cbox_2} />
         <Checkbox {...cbox_3} />
         <Checkbox {...cbox_4} />
-      </InputGroup_3_Colunn>
-    </InputBlock>
+      </InputGroup>
+    </Section>
   ))
   .add("Check Block (mixed columns)", () => (
-    <InputBlock>
-      <InputBlockLabel label="Check Block (mixed columns)" />
-      <InputGroup_3_Colunn>
+    <Section>
+      <SectionName>Check Block (mixed columns)</SectionName>
+      <InputGroup threeColumns>
         <Checkbox {...cbox_1} />
         <Checkbox {...cbox_2} />
         <Checkbox {...cbox_3} />
         <Checkbox {...cbox_4} />
-      </InputGroup_3_Colunn>
-      <InputGroup_1_Colunn>
+      </InputGroup>
+      <InputGroup oneColumn>
         <Checkbox {...cbox_long} />
-      </InputGroup_1_Colunn>
-    </InputBlock>
-  ));
+      </InputGroup>
+    </Section>
+  ))
