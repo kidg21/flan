@@ -11,8 +11,9 @@ const StyledBanner = styled.div`
   border-radius: 5px;
   justify-content: space-between;
   display: flex;
+  cursor: pointer;
 
-  @media (max-width: 700px) {
+  @media (max-width: 1000px) {
     width: 100%;
   }
 `

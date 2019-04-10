@@ -26,11 +26,14 @@ function withGlobalStyles(storyFn) {
 
 addDecorator(withGlobalStyles)
 
+
 // Option defaults:
 addDecorator(
   withOptions({
     hierarchySeparator: /\/|\./,
-    hierarchyRootSeparator: /\|/
+    hierarchyRootSeparator: /\|/,
+    name: "FLAN",
+    theme: themes.light
   })
 )
 
@@ -72,12 +75,21 @@ configureViewport({
 })
 
 // Theme
+<<<<<<< HEAD
+// addDecorator(
+//   withOptions({
+//     name: "Foo",
+//     theme: themes.dark
+//   })
+// );
+=======
 addDecorator(
   withOptions({
     name: "Foo",
     theme: themes.normal
   })
 )
+>>>>>>> 640ddbf94881853c2a54929a29d65063dbf37b82
 
 // Notes
 addDecorator(withNotes)
