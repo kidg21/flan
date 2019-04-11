@@ -1,8 +1,8 @@
 import React from "react"
 import styled, { css } from "styled-components"
 import { fonts, colors, shadows } from "Variables"
-import Grid from "../../_helpers/Grid"
-import { PlaceholderText } from "../../_helpers/Placeholders"
+import Grid from "helpers/Grid.jsx"
+import { PlaceholderText } from "helpers/Placeholders.jsx"
 
 const CardWrapper = styled.div`
   display: flex;

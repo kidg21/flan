@@ -1,7 +1,7 @@
 import React from "react"
 import styled, { css } from "styled-components"
 import PropTypes from "prop-types"
-import { InputLabel, HelpText, ErrorText } from "../../layout/Form/Form"
+import { InputLabel, HelpText, ErrorText } from "layout/Form"
 import SelectMenu from "../SelectMenu"
 import { colors, shadows } from "Variables"
 

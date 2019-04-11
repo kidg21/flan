@@ -14,7 +14,7 @@ export { default as Switch } from "./atoms/Switch"
 export { default as Textarea } from "./atoms/Textarea"
 
 // Publicly exported files from 'blocks'
-export { default as Accordian } from "./blocks/Accordian"
+export { default as Accordion } from "./blocks/Accordion"
 export { default as Banner } from "./blocks/Banner"
 export { default as IconBlock } from "./blocks/IconBlock"
 export { default as NavBlock } from "./blocks/NavBlock"

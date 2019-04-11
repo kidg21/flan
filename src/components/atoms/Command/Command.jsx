@@ -2,7 +2,7 @@ import React from "react"
 import styled, { css } from "styled-components"
 import PropTypes from "prop-types"
 import Icon from "base/Icons"
-import Label from "./Label"
+import Label from "./Label.jsx"
 
 const Container = styled.a`
   display: grid;
