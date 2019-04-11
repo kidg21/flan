@@ -1,7 +1,7 @@
-import React from "react"
-import { storiesOf } from "@storybook/react"
-import Badge, { IconBadge } from "./Badge"
-import AlertBadge from "./AlertBadge"
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import Badge, { IconBadge } from "./Badge";
+import AlertBadge from "./AlertBadge";
 
 // const props = {
 //     nameProp: ["far", "angle-down"],
@@ -17,5 +17,4 @@ storiesOf("Atoms|Badge", module)
       <AlertBadge info /> <AlertBadge warning /> <AlertBadge success />{" "}
       <AlertBadge error />{" "}
     </div>
-  ))
-  .add("Trial Badge", () => <IconBadge />)
+  ));

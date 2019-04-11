@@ -1,7 +1,7 @@
 import React from "react"
 import styled, { css } from "styled-components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import IconBadge from "atoms/Badge"
+import AlertBadge from "atoms/Badge/AlertBadge"
 
 const StyledBanner = styled.div`
   background: rgba(0, 0, 0, 0.75);
@@ -64,7 +64,7 @@ const NotificationLink = styled.a`
   }
 `
 
-function Banner({ title }) {
+function Banner({ title, ...props }) {
   return (
     <StyledBanner>
       <Message>
@@ -80,7 +80,10 @@ function Banner({ title }) {
           <FontAwesomeIcon icon={["fal", "times"]} color={"white"} />
         </div>
         <div>
-          <IconBadge />
+        {props.error ? <AlertBadge error/> : null}
+        {props.info ? <AlertBadge info/> : null}
+        {props.success ? <AlertBadge success/> : null}
+        {props.warning ? <AlertBadge warning/> : null}
         </div>
       </Commands>
     </StyledBanner>
