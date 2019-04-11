@@ -31,7 +31,7 @@ const PanelSection = styled.section`
   display: flex;
   flex-direction: column;
   flex: none;
-  background: ${colors.white};
+  background: "";
   box-shadow: ${shadows.panelSectionShadow};
   z-index: 1;
   overflow: hidden;
@@ -66,7 +66,7 @@ const PanelFooter = styled.section`
   display: flex;
   flex-direction: column;
   flex: none;
-  background: ${colors.white};
+  background: "";
   border: 0.5px solid #eaeded;
   box-shadow: ${shadows.panelSectionShadow};
   z-index: 1;
