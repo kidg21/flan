@@ -15,7 +15,9 @@ import Accordion from "../../blocks/Accordion/Accordion";
 import PropertyInfo from "../../cards/Property/PropertyInfo";
 import Checkbox from "../../atoms/Checkbox/Checkbox";
 import AddIcon from "base/Icons/PlusIcon";
+import LayerGroup from "../../cards/Layer/LayerGroup";
 import Button from "../../atoms/Button/Button";
+import Divider from "../../atoms/Divider/Divider";
 import Table from "../../blocks/Table/Table";
 import Container from "../../atoms/Container/Container";
 
@@ -48,79 +50,85 @@ storiesOf("Templates|Panel", module)
   .add("Data Overlay Panel", () => (
     <Panel>
       <PanelSection>
-        <LayerPanelHeader title="Data Overlays" />
+        <LayerPanelHeader title="Layers" />
       </PanelSection>
       <PanelBody>
-        <PropertyInfo
+        <LayerGroup
           title="Group of Layers"
+          number="2"
           onToggle={visibility => {
             console.log("visibility -->", visibility);
           }}
         >
-          <div>
-            <Accordion
-              title="Demographics"
-              onToggle={visibility => {
-                console.log("visibility -->", visibility);
-              }}
-            >
-              <MapLegend />
-            </Accordion>
+          <Accordion
+            title="Demographics"
+            onToggle={visibility => {
+              console.log("visibility -->", visibility);
+            }}
+          >
+            <MapLegend />
+          </Accordion>
 
-            <Accordion
-              title="Floodzones"
-              onToggle={visibility => {
-                console.log("visibility -->", visibility);
-              }}
-            >
-              <MapLegend />
-            </Accordion>
-
-            <Accordion
-              title="Crime Rates"
-              onToggle={visibility => {
-                console.log("visibility -->", visibility);
-              }}
-            >
-              <MapLegend />
-            </Accordion>
-          </div>
-        </PropertyInfo>
-        <PropertyInfo
+          <Accordion
+            title="Floodzones"
+            onToggle={visibility => {
+              console.log("visibility -->", visibility);
+            }}
+          >
+            <MapLegend />
+          </Accordion>
+        </LayerGroup>
+        <LayerGroup
           title="Second Group of Layers"
+          number="3"
           onToggle={visibility => {
             console.log("visibility -->", visibility);
           }}
         >
-          <div>
-            <Accordion
-              title="Demographics"
-              onToggle={visibility => {
-                console.log("visibility -->", visibility);
-              }}
-            >
-              <MapLegend />
-            </Accordion>
+          <Accordion
+            title="Demographics"
+            onToggle={visibility => {
+              console.log("visibility -->", visibility);
+            }}
+          >
+            <MapLegend />
+          </Accordion>
 
-            <Accordion
-              title="Floodzones"
-              onToggle={visibility => {
-                console.log("visibility -->", visibility);
-              }}
-            >
-              <MapLegend />
-            </Accordion>
+          <Accordion
+            title="Floodzones"
+            onToggle={visibility => {
+              console.log("visibility -->", visibility);
+            }}
+          >
+            <MapLegend />
+          </Accordion>
 
-            <Accordion
-              title="Crime Rates"
-              onToggle={visibility => {
-                console.log("visibility -->", visibility);
-              }}
-            >
-              <MapLegend />
-            </Accordion>
-          </div>
-        </PropertyInfo>
+          <Accordion
+            title="Crime Rates"
+            onToggle={visibility => {
+              console.log("visibility -->", visibility);
+            }}
+          >
+            <MapLegend />
+          </Accordion>
+        </LayerGroup>
+        <Divider />
+        <Accordion
+          title="Solo Layer"
+          onToggle={visibility => {
+            console.log("visibility -->", visibility);
+          }}
+        >
+          <MapLegend />
+        </Accordion>
+        <Accordion
+          title="Han Solo Layer"
+          onToggle={visibility => {
+            console.log("visibility -->", visibility);
+          }}
+        >
+          <MapLegend />
+        </Accordion>
       </PanelBody>
     </Panel>
   ))

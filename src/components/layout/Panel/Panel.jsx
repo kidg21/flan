@@ -15,7 +15,7 @@ const Panel = styled.div`
   overflow: hidden;
   transform: none;
   transition: all 0.3s ease-in-out;
-  box-sizing: content-box;
+  // box-sizing: content-box;
   -webkit-overflow-scrolling: touch;
   /* Prototype Content - displays when a Panel Section is empty */
   &:empty {

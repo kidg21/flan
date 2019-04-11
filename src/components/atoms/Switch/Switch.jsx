@@ -41,8 +41,8 @@ const Circle = styled.div`
 const StyledSwitch = styled.div`
   width: 30px;
   display: block;
-  height: 17px;
-  border-radius: 20px;
+  height: 16.5px;
+  border-radius: 23px;
   border: ${props =>
     props.checked ? "1px solid #94d850" : "1px solid darkgray"};
   background-image: ${props =>
