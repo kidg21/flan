@@ -1,23 +1,23 @@
-import React from "react"
-import { storiesOf } from "@storybook/react"
+import React from "react";
+import { storiesOf } from "@storybook/react";
 import Panel, {
   PanelSection,
   PanelBody,
   PanelFooter
-} from "../../layout/Panel/Panel"
-import FilterHeader from "../../cards/Filter/FilterHeader"
-import InfoHeader from "../../cards/Property/InfoHeader"
-import LayerPanelHeader from "../../cards/Layer/LayerHeader"
-import NavCard from "../../cards/Filter/NavCard"
-import MapLegend from "../../blocks/Map/MapLegend.js"
+} from "../../layout/Panel/Panel";
+import FilterHeader from "../../cards/Filter/FilterHeader";
+import InfoHeader from "../../cards/Property/InfoHeader";
+import LayerPanelHeader from "../../cards/Layer/LayerHeader";
+import NavCard from "../../cards/Filter/NavCard";
+import MapLegend from "../../blocks/Map/MapLegend.js";
 // import LayerCard from '../../blocks/Card/TrialCard';
-import Accordion from "../../blocks/Accordion/Accordion"
-import PropertyInfo from "../../cards/Property/PropertyInfo"
-import Checkbox from "../../atoms/Checkbox/Checkbox"
-import AddIcon from "base/Icons/PlusIcon"
-import Button from "../../atoms/Button/Button"
-import Table from "../../blocks/Table/Table"
-import Container from "../../atoms/Container/Container"
+import Accordion from "../../blocks/Accordion/Accordion";
+import PropertyInfo from "../../cards/Property/PropertyInfo";
+import Checkbox from "../../atoms/Checkbox/Checkbox";
+import AddIcon from "base/Icons/PlusIcon";
+import Button from "../../atoms/Button/Button";
+import Table from "../../blocks/Table/Table";
+import Container from "../../atoms/Container/Container";
 
 storiesOf("Templates|Panel", module)
   ////Property
@@ -32,7 +32,7 @@ storiesOf("Templates|Panel", module)
         <PropertyInfo
           title="Property Info Section"
           onToggle={visibility => {
-            console.log("visibility -->", visibility)
+            console.log("visibility -->", visibility);
           }}
         >
           <div>
@@ -51,32 +51,76 @@ storiesOf("Templates|Panel", module)
         <LayerPanelHeader title="Data Overlays" />
       </PanelSection>
       <PanelBody>
-        <Accordion
-          title="Demographics"
+        <PropertyInfo
+          title="Group of Layers"
           onToggle={visibility => {
-            console.log("visibility -->", visibility)
+            console.log("visibility -->", visibility);
           }}
         >
-          <MapLegend />
-        </Accordion>
+          <div>
+            <Accordion
+              title="Demographics"
+              onToggle={visibility => {
+                console.log("visibility -->", visibility);
+              }}
+            >
+              <MapLegend />
+            </Accordion>
 
-        <Accordion
-          title="Floodzones"
-          onToggle={visibility => {
-            console.log("visibility -->", visibility)
-          }}
-        >
-          <MapLegend />
-        </Accordion>
+            <Accordion
+              title="Floodzones"
+              onToggle={visibility => {
+                console.log("visibility -->", visibility);
+              }}
+            >
+              <MapLegend />
+            </Accordion>
 
-        <Accordion
-          title="Crime Rates"
+            <Accordion
+              title="Crime Rates"
+              onToggle={visibility => {
+                console.log("visibility -->", visibility);
+              }}
+            >
+              <MapLegend />
+            </Accordion>
+          </div>
+        </PropertyInfo>
+        <PropertyInfo
+          title="Second Group of Layers"
           onToggle={visibility => {
-            console.log("visibility -->", visibility)
+            console.log("visibility -->", visibility);
           }}
         >
-          <MapLegend />
-        </Accordion>
+          <div>
+            <Accordion
+              title="Demographics"
+              onToggle={visibility => {
+                console.log("visibility -->", visibility);
+              }}
+            >
+              <MapLegend />
+            </Accordion>
+
+            <Accordion
+              title="Floodzones"
+              onToggle={visibility => {
+                console.log("visibility -->", visibility);
+              }}
+            >
+              <MapLegend />
+            </Accordion>
+
+            <Accordion
+              title="Crime Rates"
+              onToggle={visibility => {
+                console.log("visibility -->", visibility);
+              }}
+            >
+              <MapLegend />
+            </Accordion>
+          </div>
+        </PropertyInfo>
       </PanelBody>
     </Panel>
   ))
@@ -121,10 +165,9 @@ storiesOf("Templates|Panel", module)
       <PanelSection>
         <FilterHeader layer="Data Overlay" title="Filter Detail" />
       </PanelSection>
-      <PanelBody>
-      </PanelBody>
+      <PanelBody />
       <PanelFooter>
         <Button>Apply</Button>
       </PanelFooter>
     </Panel>
-  ))
+  ));
