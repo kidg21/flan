@@ -2,7 +2,7 @@
   "name": "ss-styled-components",
   "version": "1.0.0",
   "description": "Repository containing our Styled-Component React widgets",
-  "main": "index.js",
+  "main": "styled-components.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
