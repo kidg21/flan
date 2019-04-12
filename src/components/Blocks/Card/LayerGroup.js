@@ -33,6 +33,7 @@ const AccordionSection = styled.div`
 `;
 
 const Container = styled.div`
+  overflow: hidden;
   padding: 10px 5px 20px 10px;
   background: #f5f7f9;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
@@ -48,32 +49,30 @@ const LayerGroup = ({ title, number, children, onToggle }) => {
   const [visibility, setVisibility] = useState(false);
 
   return (
-    <Fragment>
-      <AccordionSection
-        onClick={() => {
-          setVisibility(!visibility);
-          if (onToggle) onToggle(!visibility);
-        }}
-      >
-        <HeaderSection>
-          <GroupTitle>
-            <H4> {title} </H4>{" "}
-            <span style={{ paddingLeft: "5px", paddingRight: "5px" }}>|</span>
-            <H4 style={{ color: "#75ab3f" }}> {number} </H4>
-          </GroupTitle>
-          {visibility ? (
-            <Icon {...infoOpenProps} />
-          ) : (
-            <Icon {...infoSectionProps} />
-          )}
-        </HeaderSection>
-      </AccordionSection>
-      {visibility ? (
-        <Container>
-          <Fragment>{children}</Fragment>
-        </Container>
-      ) : null}
-    </Fragment>
+    <Container>
+      <Fragment>
+        <AccordionSection
+          onClick={() => {
+            setVisibility(!visibility);
+            if (onToggle) onToggle(!visibility);
+          }}
+        >
+          <HeaderSection>
+            <GroupTitle>
+              <H4> {title} </H4>{" "}
+              <span style={{ paddingLeft: "5px", paddingRight: "5px" }}>|</span>
+              <H4 style={{ color: "#75ab3f" }}> {number} </H4>
+            </GroupTitle>
+            {visibility ? (
+              <Icon {...infoOpenProps} />
+            ) : (
+              <Icon {...infoSectionProps} />
+            )}
+          </HeaderSection>
+        </AccordionSection>
+        {visibility ? <Fragment>{children}</Fragment> : null}
+      </Fragment>
+    </Container>
   );
 };
 

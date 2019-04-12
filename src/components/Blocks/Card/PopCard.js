@@ -1,8 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import propTypes from "prop-types";
-import Label from "atoms/Label";
-import IconBlock from "blocks/IconBlock";
 import Icon from "base/Icons";
 import Button from "atoms/Button";
 

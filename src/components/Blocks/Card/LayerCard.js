@@ -2,9 +2,7 @@ import React from "react";
 import styled, { css } from "styled-components";
 import propTypes from "prop-types";
 import Container from "atoms/Container";
-import Label from "atoms/Label";
 import IconBlock from "blocks/IconBlock";
-import Icon from "base/Icons";
 import Switch from "atoms/Switch";
 
 const HeaderSection = styled.div`
@@ -21,14 +19,14 @@ const HeaderSection = styled.div`
 // justify-content: flex-start;
 // `
 
-const LayerCard = styled.div`
-  // border-bottom: 0.25px solid #EAEDED;
+const Card = styled.div`
+  border-bottom: 0.25px solid #eaeded;
   padding: 0.8em 1em 0.8em;
 `;
 
-function CardContainer({ title }) {
+function LayerCard({ title }) {
   return (
-    <LayerCard>
+    <Card>
       <HeaderSection>
         <Switch />
         <h5 style={{ margin: 0, flex: "auto", paddingLeft: "1.5em" }}>
@@ -36,8 +34,8 @@ function CardContainer({ title }) {
         </h5>
         <IconBlock />
       </HeaderSection>
-    </LayerCard>
+    </Card>
   );
 }
 
-export default CardContainer;
+export default LayerCard;

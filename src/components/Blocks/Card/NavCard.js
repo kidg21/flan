@@ -1,6 +1,6 @@
-import React from "react"
-import styled, { css } from "styled-components"
-import Icon from "base/Icons"
+import React from "react";
+import styled, { css } from "styled-components";
+import Icon from "base/Icons";
 
 const HeaderSection = styled.div`
   overflow: hidden;
@@ -11,24 +11,24 @@ const HeaderSection = styled.div`
   line-height: normal;
   justify-content: space-between;
   display: flex;
-`
+`;
 
 const H4 = styled.h4`
   margin: 0;
-`
+`;
 
 const navProps = {
   nameProp: ["far", "angle-right"],
   colorProp: "dimgray"
-}
+};
 
-const CardContainer = ({ title, ...props }) => {
+const NavCard = ({ title, ...props }) => {
   return (
     <HeaderSection>
       <H4>{title}</H4>
       <Icon {...navProps} />
     </HeaderSection>
-  )
-}
+  );
+};
 
-export default CardContainer
+export default NavCard;

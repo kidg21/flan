@@ -1,181 +1,181 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import Panel, {
-  PanelSection,
-  PanelBody,
-  PanelFooter
-} from "../../layout/Panel/Panel";
-import FilterHeader from "../../cards/Filter/FilterHeader";
-import InfoHeader from "../../cards/Property/InfoHeader";
-import LayerPanelHeader from "../../cards/Layer/LayerHeader";
-import NavCard from "../../cards/Filter/NavCard";
-import MapLegend from "../../blocks/Map/MapLegend.js";
-// import LayerCard from '../../blocks/Card/TrialCard';
-import Accordion from "../../blocks/Accordion/Accordion";
-import PropertyInfo from "../../cards/Property/PropertyInfo";
-import Checkbox from "../../atoms/Checkbox/Checkbox";
-import AddIcon from "base/Icons/PlusIcon";
-import LayerGroup from "../../cards/Layer/LayerGroup";
-import Button from "../../atoms/Button/Button";
-import Divider from "../../atoms/Divider/Divider";
-import Table from "../../blocks/Table/Table";
-import Container from "../../atoms/Container/Container";
+// import React from "react";
+// import { storiesOf } from "@storybook/react";
+// import Panel, {
+//   PanelSection,
+//   PanelBody,
+//   PanelFooter
+// } from "../../layout/Panel/Panel";
+// import FilterHeader from "../../cards/Filter/FilterHeader";
+// import InfoHeader from "../../cards/Property/InfoHeader";
+// import LayerPanelHeader from "../../cards/Layer/LayerHeader";
+// import NavCard from "../../blocks/Card/NavCard";
+// import MapLegend from "../../blocks/Map/MapLegend.js";
+// // import LayerCard from '../../blocks/Card/TrialCard';
+// import Accordion from "../../blocks/Accordion/Accordion";
+// import PropertyInfo from "../../blocks/Card/AccordionCard";
+// import Checkbox from "../../atoms/Checkbox/Checkbox";
+// import AddIcon from "base/Icons/PlusIcon";
+// import LayerGroup from "../../blocks/Card/LayerGroup";
+// import Button from "../../atoms/Button/Button";
+// import Divider from "../../atoms/Divider/Divider";
+// import Table from "../../blocks/Table/Table";
+// import Container from "../../atoms/Container/Container";
 
-storiesOf("Templates|Panel", module)
-  ////Property
+// storiesOf("Templates|Panel", module)
+//   ////Property
 
-  .add("Property Info Panel", () => (
-    <Panel>
-      <PanelSection>
-        <InfoHeader street="5201 California Ave" city="Irvine, CA 92614" />
-      </PanelSection>
-      <PanelBody>
-        <Table />
-        <PropertyInfo
-          title="Property Info Section"
-          onToggle={visibility => {
-            console.log("visibility -->", visibility);
-          }}
-        >
-          <div>
-            <Table />
-          </div>
-        </PropertyInfo>
-      </PanelBody>
-    </Panel>
-  ))
+//   .add("Property Info Panel", () => (
+//     <Panel>
+//       <PanelSection>
+//         <InfoHeader street="5201 California Ave" city="Irvine, CA 92614" />
+//       </PanelSection>
+//       <PanelBody>
+//         <Table />
+//         <PropertyInfo
+//           title="Property Info Section"
+//           onToggle={visibility => {
+//             console.log("visibility -->", visibility);
+//           }}
+//         >
+//           <div>
+//             <Table />
+//           </div>
+//         </PropertyInfo>
+//       </PanelBody>
+//     </Panel>
+//   ))
 
-  ///DataOverlays
+//   ///DataOverlays
 
-  .add("Data Overlay Panel", () => (
-    <Panel>
-      <PanelSection>
-        <LayerPanelHeader title="Layers" />
-      </PanelSection>
-      <PanelBody>
-        <LayerGroup
-          title="Group of Layers"
-          number="2"
-          onToggle={visibility => {
-            console.log("visibility -->", visibility);
-          }}
-        >
-          <Accordion
-            title="Demographics"
-            onToggle={visibility => {
-              console.log("visibility -->", visibility);
-            }}
-          >
-            <MapLegend />
-          </Accordion>
+//   .add("Data Overlay Panel", () => (
+//     <Panel>
+//       <PanelSection>
+//         <LayerPanelHeader title="Layers" />
+//       </PanelSection>
+//       <PanelBody>
+//         <LayerGroup
+//           title="Group of Layers"
+//           number="2"
+//           onToggle={visibility => {
+//             console.log("visibility -->", visibility);
+//           }}
+//         >
+//           <Accordion
+//             title="Demographics"
+//             onToggle={visibility => {
+//               console.log("visibility -->", visibility);
+//             }}
+//           >
+//             <MapLegend />
+//           </Accordion>
 
-          <Accordion
-            title="Floodzones"
-            onToggle={visibility => {
-              console.log("visibility -->", visibility);
-            }}
-          >
-            <MapLegend />
-          </Accordion>
-        </LayerGroup>
-        <LayerGroup
-          title="Second Group of Layers"
-          number="3"
-          onToggle={visibility => {
-            console.log("visibility -->", visibility);
-          }}
-        >
-          <Accordion
-            title="Demographics"
-            onToggle={visibility => {
-              console.log("visibility -->", visibility);
-            }}
-          >
-            <MapLegend />
-          </Accordion>
+//           <Accordion
+//             title="Floodzones"
+//             onToggle={visibility => {
+//               console.log("visibility -->", visibility);
+//             }}
+//           >
+//             <MapLegend />
+//           </Accordion>
+//         </LayerGroup>
+//         <LayerGroup
+//           title="Second Group of Layers"
+//           number="3"
+//           onToggle={visibility => {
+//             console.log("visibility -->", visibility);
+//           }}
+//         >
+//           <Accordion
+//             title="Demographics"
+//             onToggle={visibility => {
+//               console.log("visibility -->", visibility);
+//             }}
+//           >
+//             <MapLegend />
+//           </Accordion>
 
-          <Accordion
-            title="Floodzones"
-            onToggle={visibility => {
-              console.log("visibility -->", visibility);
-            }}
-          >
-            <MapLegend />
-          </Accordion>
+//           <Accordion
+//             title="Floodzones"
+//             onToggle={visibility => {
+//               console.log("visibility -->", visibility);
+//             }}
+//           >
+//             <MapLegend />
+//           </Accordion>
 
-          <Accordion
-            title="Crime Rates"
-            onToggle={visibility => {
-              console.log("visibility -->", visibility);
-            }}
-          >
-            <MapLegend />
-          </Accordion>
-        </LayerGroup>
-        <Divider />
-        <Accordion
-          title="Solo Layer"
-          onToggle={visibility => {
-            console.log("visibility -->", visibility);
-          }}
-        >
-          <MapLegend />
-        </Accordion>
-        <Accordion
-          title="Han Solo Layer"
-          onToggle={visibility => {
-            console.log("visibility -->", visibility);
-          }}
-        >
-          <MapLegend />
-        </Accordion>
-      </PanelBody>
-    </Panel>
-  ))
+//           <Accordion
+//             title="Crime Rates"
+//             onToggle={visibility => {
+//               console.log("visibility -->", visibility);
+//             }}
+//           >
+//             <MapLegend />
+//           </Accordion>
+//         </LayerGroup>
+//         <Divider />
+//         <Accordion
+//           title="Solo Layer"
+//           onToggle={visibility => {
+//             console.log("visibility -->", visibility);
+//           }}
+//         >
+//           <MapLegend />
+//         </Accordion>
+//         <Accordion
+//           title="Han Solo Layer"
+//           onToggle={visibility => {
+//             console.log("visibility -->", visibility);
+//           }}
+//         >
+//           <MapLegend />
+//         </Accordion>
+//       </PanelBody>
+//     </Panel>
+//   ))
 
-  ////Filters
+//   ////Filters
 
-  .add("Empty Filter Panel", () => (
-    <Panel>
-      <PanelSection>
-        <FilterHeader layer="Data Overlay" title="Filters" />
-      </PanelSection>
-      <PanelBody />
-      <PanelFooter>
-        <Button>Apply</Button>
-      </PanelFooter>
-    </Panel>
-  ))
+//   .add("Empty Filter Panel", () => (
+//     <Panel>
+//       <PanelSection>
+//         <FilterHeader layer="Data Overlay" title="Filters" />
+//       </PanelSection>
+//       <PanelBody />
+//       <PanelFooter>
+//         <Button>Apply</Button>
+//       </PanelFooter>
+//     </Panel>
+//   ))
 
-  .add("Filter Panel", () => (
-    <Panel>
-      <PanelSection>
-        <FilterHeader layer="" title="Filters" />
-      </PanelSection>
-      <PanelBody>
-        <NavCard title="Property" />
-        <NavCard title="Point of Interest" />
-        <NavCard title="Foreclosure" />
-        <NavCard title="Zoning" />
-        <NavCard title="Builder Sites" />
-        <NavCard title="Traffic" />
-        <NavCard title="Demographics" />
-        <NavCard title="Education" />
-        <NavCard title="Flipper" />
-        <NavCard title="Transaction" />
-      </PanelBody>
-      <PanelFooter />
-    </Panel>
-  ))
+//   .add("Filter Panel", () => (
+//     <Panel>
+//       <PanelSection>
+//         <FilterHeader layer="" title="Filters" />
+//       </PanelSection>
+//       <PanelBody>
+//         <NavCard title="Property" />
+//         <NavCard title="Point of Interest" />
+//         <NavCard title="Foreclosure" />
+//         <NavCard title="Zoning" />
+//         <NavCard title="Builder Sites" />
+//         <NavCard title="Traffic" />
+//         <NavCard title="Demographics" />
+//         <NavCard title="Education" />
+//         <NavCard title="Flipper" />
+//         <NavCard title="Transaction" />
+//       </PanelBody>
+//       <PanelFooter />
+//     </Panel>
+//   ))
 
-  .add("Select Filter Panel", () => (
-    <Panel>
-      <PanelSection>
-        <FilterHeader layer="Data Overlay" title="Filter Detail" />
-      </PanelSection>
-      <PanelBody />
-      <PanelFooter>
-        <Button>Apply</Button>
-      </PanelFooter>
-    </Panel>
-  ));
+//   .add("Select Filter Panel", () => (
+//     <Panel>
+//       <PanelSection>
+//         <FilterHeader layer="Data Overlay" title="Filter Detail" />
+//       </PanelSection>
+//       <PanelBody />
+//       <PanelFooter>
+//         <Button>Apply</Button>
+//       </PanelFooter>
+//     </Panel>
+//   ));

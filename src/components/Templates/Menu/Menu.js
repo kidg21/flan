@@ -49,9 +49,16 @@ const MenuSection = styled.div`
   display: flex;
 
   &:hover {
-    color: ${colors.success};
+    border-left: 3px solid ${colors.success};
+    background: #eef5e8;
+  }
+
+  &:active {
+    border-left: 3px solid ${colors.success};
   }
 `;
+
+///for dark option use gradient style={{ backgroundImage: "linear-gradient(#3B3B55, #051937)" }}
 
 function MainMenu() {
   return (
@@ -63,7 +70,7 @@ function MainMenu() {
           padding: "1.8em"
         }}
       >
-        <h1>LandVision</h1>
+        <h1 style={{ color: "black" }}>LandVision.</h1>
       </PanelSection>
       <PanelBody
         style={{
@@ -72,26 +79,51 @@ function MainMenu() {
         }}
       >
         <MenuSection>
-          <Icon {...uploadProps} /> <span>Uploads</span>
+          <Icon {...uploadProps} />{" "}
+          <span style={{ margin: 0, flex: "auto", paddingLeft: "1.5em" }}>
+            Uploads
+          </span>
         </MenuSection>
         <MenuSection>
-          <Icon {...notificationProps} /> <span>Notifications</span>
+          <Icon {...notificationProps} />{" "}
+          <span style={{ margin: 0, flex: "auto", paddingLeft: "1.5em" }}>
+            Notifications
+          </span>
         </MenuSection>
         <MenuSection>
-          <Icon {...sharedContentProps} /> <span>Shared Content</span>
+          <Icon {...sharedContentProps} />{" "}
+          <span style={{ margin: 0, flex: "auto", paddingLeft: "1.5em" }}>
+            Shared Content
+          </span>
         </MenuSection>
         <MenuSection>
-          <Icon {...informationProps} /> <span>Information</span>
+          <Icon {...informationProps} />{" "}
+          <span style={{ margin: 0, flex: "auto", paddingLeft: "1.5em" }}>
+            Information
+          </span>
         </MenuSection>
         <MenuSection>
-          <Icon {...settingsProps} /> <span>Settings</span>
+          <Icon {...settingsProps} />{" "}
+          <span style={{ margin: 0, flex: "auto", paddingLeft: "1.5em" }}>
+            Settings
+          </span>
         </MenuSection>
       </PanelBody>
       <PanelSection>
-        <MenuSection>
+        <div
+          style={{
+            padding: "2em 1em 2em",
+            cursor: "pointer",
+            justifyContent: "flex-start",
+            alignItems: "baseline",
+            display: "flex"
+          }}
+        >
           <Badge message="UN" />
-          <span>User Name</span>
-        </MenuSection>
+          <span style={{ margin: 0, flex: "auto", paddingLeft: "1.5em" }}>
+            User Name
+          </span>
+        </div>
       </PanelSection>
     </Panel>
   );
