@@ -39,7 +39,8 @@
     "react-dom": "^16.8.3",
     "react-scripts": "^2.1.5",
     "styled-components": "^4.1.3",
-    "styled-normalize": "^8.0.6"
+    "styled-normalize": "^8.0.6",
+    "ss-styled-components": "."
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",

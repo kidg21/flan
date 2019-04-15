@@ -25,16 +25,16 @@
     [
       "module-resolver",
       {
-        "root": ["./src"],
+        // "root": ["ss-styled-components/src"],
         "alias": {
-          "Variables": "./src/components/base/Variables/Variables.jsx",
-          "GlobalStyles": "./src/components/base/GlobalStyles/GlobalStyles.jsx",
-          "helpers": "./src/components/_helpers",
-          "attributes": "./src/attributes",
-          "atoms": "./src/components/atoms",
-          "base": "./src/components/base",
-          "blocks": "./src/components/blocks",
-          "layout": "./src/components/layout",
+          "Variables": "ss-styled-components/src/components/base/Variables/Variables.jsx",
+          "GlobalStyles": "ss-styled-components/src/components/base/GlobalStyles/GlobalStyles.jsx",
+          "helpers": "ss-styled-components/src/components/_helpers",
+          "attributes": "ss-styled-components/src/attributes",
+          "atoms": "ss-styled-components/src/components/atoms",
+          "base": "ss-styled-components/src/components/base",
+          "blocks": "ss-styled-components/src/components/blocks",
+          "layout": "ss-styled-components/src/components/layout",
         }
       }
     ]

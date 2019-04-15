@@ -10,7 +10,7 @@ import { configureViewport, INITIAL_VIEWPORTS } from "@storybook/addon-viewport"
 import chaptersAddon from "react-storybook-addon-chapters"
 
 // Import Font Awesome Icon Library
-import "/icons/fontawesome"
+import "../src/icons/fontawesome"
 
 // Create and add global styles
 import GlobalStyles from "GlobalStyles"
