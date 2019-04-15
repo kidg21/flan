@@ -1,56 +1,85 @@
 import React from "react"
-import styled, { css } from "styled-components"
+import styled, { css, keyframes } from "styled-components"
 import { colors, shadows } from "Variables"
 import PropTypes from "prop-types"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const StyledButton = styled.button`
-  color: ${props => (props.secondary ? colors.success : colors.anchor)};
-  background: ${colors.white};
-  border: 1px solid;
-  border-color: ${props => (props.secondary ? colors.success : colors.anchor)};
-  border-radius: 2rem;
+  color: ${props => (props.isPrimary ? colors.white : colors.anchor)};
+  background: ${props => (props.isPrimary ? colors.anchor : colors.white)};
+  border: 1px solid ${colors.anchor};
+  border-radius: ${props => (props.isRound ? "2rem" : "")};
   padding: 0.5rem 1rem;
   font-weight: bold;
   letter-spacing: 1px;
   cursor: pointer;
-  box-shadow: ${props => (props.floating ? shadows.dropShadow : "")};
-  transition: opacity 0.15s;
+  filter: ${props => (props.isFloating ? shadows.cardShadow : "")};
+  transition: all 0.15s ease;
   &:hover {
-    background-color: ${props =>
-      props.secondary ? colors.success : colors.anchor};
-    color: ${colors.white};
+    color: ${props => (props.isPrimary ? colors.white : colors.success)};
+    background-color: ${props => (props.isPrimary ? colors.success : "")};
+    border-color: ${colors.success};
   }
   &:active {
-    background-color: ${props =>
-      props.secondary ? colors.success : colors.anchor};
+    color: ${colors.white};
+    background-color: ${colors.success};
+    border-color: ${colors.success};
+  }
+  &[disabled] {
+    color: ${colors.grey_40};
+    border-color: ${colors.grey_40};
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
   }
 `
 
-function Button({ label, secondary, disabled, floating, onClick }) {
+const ButtonLabel = styled.label`
+  font-size: inherit;
+`
+
+const ButtonIcon = styled(FontAwesomeIcon)`
+  margin-right: 0.5rem;
+`
+
+function Button({
+  label,
+  isPrimary,
+  isRound,
+  isDisabled,
+  isFloating,
+  icon,
+  onClick
+}) {
   return (
     <StyledButton
       type="button"
-      secondary={secondary}
-      disabled={disabled}
-      floating={floating}
+      isPrimary={isPrimary}
+      disabled={isDisabled}
+      isRound={isRound}
+      isFloating={isFloating}
       onClick={onClick}
     >
-      {label}
+      {icon ? <ButtonIcon icon={icon} /> : null}
+      <ButtonLabel>{label}</ButtonLabel>
     </StyledButton>
   )
 }
 
 const propTypes = {
   label: PropTypes.string,
-  disabled: PropTypes.bool,
+  isPrimary: PropTypes.bool,
+  isDisabled: PropTypes.bool,
+  isRound: PropTypes.bool,
+  isFloating: PropTypes.bool,
+  icon: PropTypes.array,
   onClick: PropTypes.func.isRequired
 }
 Button.propTypes = propTypes
 
 const defaultProps = {
-  label: "Button Label",
-  disabled: false
+  label: "Button Name"
 }
 Button.defaultProps = defaultProps
 
-export default Button
+export { Button as default }

@@ -1,11 +1,24 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
 import { Padding } from "helpers/Display"
-import Button from "./Button"
+import Button, { StyledButton as NewButton } from "atoms/Button"
 
 // Buttons
 storiesOf("Atoms|Button", module)
   .addDecorator(Padding)
-  .add("Primary", () => <Button label="Primary Button" />)
-  .add("Secondary", () => <Button label="Secondary Button" secondary={true} />)
-  .add("Floating", () => <Button label="Floating Button" floating={true} />)
+  .add("Standard Button", () => <Button buttonLabel="Standard Button" />)
+  .add("Primary Button", () => (
+    <Button buttonLabel="Primary Button" isPrimary={true} />
+  ))
+  .add("Icon Button", () => (
+    <Button buttonLabel="Icon Button" icon={["fas", "user"]} />
+  ))
+  .add("Rounded Button", () => (
+    <Button buttonLabel="Rounded Button" isRound={true} />
+  ))
+  .add("Floating Button", () => (
+    <Button buttonLabel="Floating Button" isFloating={true} />
+  ))
+  .add("Disabled Button", () => (
+    <Button buttonLabel="Disabled Button" isDisabled={true} />
+  ))
