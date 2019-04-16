@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from "react";
+import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 
@@ -10,16 +10,13 @@ const AccordionSection = styled.div`
   cursor: pointer;
 `;
 
-const Accordion = ({ header, children, onToggle }) => {
-  const [visibility, setVisibility] = useState(false);
+const Accordion = ({ header, children, visibility, ...props }) => {
+  // const [visibility, setVisibility] = useState(false);
 
   return (
     <Fragment>
       <AccordionSection
-        onClick={() => {
-          setVisibility(!visibility);
-          if (onToggle) onToggle(!visibility);
-        }}
+        { ...props}
       >
         <Fragment>{header}</Fragment>
       </AccordionSection>
@@ -30,7 +27,6 @@ const Accordion = ({ header, children, onToggle }) => {
 
 Accordion.propTypes = {
   children: PropTypes.any.isRequired,
-  onToggle: PropTypes.func,
   header: PropTypes.any.isRequired
 };
 

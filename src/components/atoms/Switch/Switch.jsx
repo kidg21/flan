@@ -61,15 +61,10 @@ const Toggle = ({ className, checked, ...props }) => (
   </SwitchContainer>
 )
 
-const Switch = () => {
-  const [checked, setChecked] = useState(false)
-
-  const handleCheckboxChange = event => {
-    setChecked(event.target.checked)
-  }
+const Switch = ({checked, id, ...props}) => {
   return (
     <label>
-      <Toggle checked={checked} onChange={handleCheckboxChange} />
+      <Toggle checked={checked} {...props} />
     </label>
   )
 }
