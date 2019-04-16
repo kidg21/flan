@@ -1,18 +1,16 @@
-import React, { useState, Fragment } from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-
+import React, { useState, Fragment } from "react";
+import PropTypes from "prop-types";
+import styled, { css } from "styled-components";
 
 const AccordionSection = styled.div`
-line-height: normal;
-border-bottom: 0.25px solid #EAEDED;
-border-top: 0.25px solid #EAEDED;
-background: white;
-cursor: pointer;
-`
+  line-height: normal;
+  border-bottom: 0.25px solid #eaeded;
+  border-top: 0.25px solid #eaeded;
+  background: white;
+  cursor: pointer;
+`;
 
-
-const Accordion = ({ title, children, onToggle }) => {
+const Accordion = ({ header, children, onToggle }) => {
   const [visibility, setVisibility] = useState(false);
 
   return (
@@ -21,8 +19,9 @@ const Accordion = ({ title, children, onToggle }) => {
         onClick={() => {
           setVisibility(!visibility);
           if (onToggle) onToggle(!visibility);
-        }} >
-        <h3>{title}</h3>
+        }}
+      >
+        <Fragment>{header}</Fragment>
       </AccordionSection>
       {visibility ? <Fragment>{children}</Fragment> : null}
     </Fragment>
@@ -32,8 +31,7 @@ const Accordion = ({ title, children, onToggle }) => {
 Accordion.propTypes = {
   children: PropTypes.any.isRequired,
   onToggle: PropTypes.func,
-  title: PropTypes.string.isRequired
+  header: PropTypes.any.isRequired
 };
 
 export default Accordion;
-

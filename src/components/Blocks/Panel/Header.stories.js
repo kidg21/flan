@@ -6,6 +6,7 @@ import LayerHeader, {
   NavigationLayerHeader,
   NavigationFilterHeader
 } from "./Header";
+import Header from "./TrialHeader";
 
 // Colors
 storiesOf("Blocks|Panel / Headers", module)
@@ -20,3 +21,7 @@ storiesOf("Blocks|Panel / Headers", module)
   .add("Property", () => (
     <PropertyHeader street="5201 California Ave" city="Irvine, CA 92614" />
   ));
+
+storiesOf("Blocks|Panel / Trial", module).add("Header", () => (
+  <Header title="does this work" threeParts={true} />
+));

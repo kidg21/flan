@@ -10,7 +10,7 @@ import AlertBadge from "./AlertBadge";
 
 // Colors
 storiesOf("Atoms|Badge", module)
-  .add("Badge", () => <Badge message="25" />)
+  .add("Badge", () => <Badge blue message="25" />)
   .add("Icon Badge", () => (
     <div>
       {" "}

@@ -12,13 +12,6 @@ const HeaderSection = styled.div`
   display: flex;
 `;
 
-// const ViewLegend = styled.div`
-// line-height: normal;
-// cursor: pointer;
-// display: flex;
-// justify-content: flex-start;
-// `
-
 const Card = styled.div`
   border-bottom: 0.25px solid #eaeded;
   padding: 0.8em 1em 0.8em;
