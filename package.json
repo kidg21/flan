@@ -43,6 +43,7 @@
     "webpack-cli": "^2.0.14"
   },  
   "dependencies": {
+    "@material-ui/core": "^3.9.2",
     "styled-components": "4.0.3"
   },
   "author": "Derek Tong, Erica Sugimoto, Greg Person",
