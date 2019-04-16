@@ -1,6 +1,7 @@
-import React from "react"
+import React, { Fragment } from "react"
 import { storiesOf } from "@storybook/react"
 import styled, { css } from "styled-components"
+import { Padding } from "helpers/Display"
 import Icon from "base/Icons"
 import PlusIcon from "base/Icons"
 import IconBlock from "blocks/IconBlock"
@@ -90,6 +91,42 @@ const questionProps = {
 
 // Colors
 storiesOf("Style Guidelines|Icon Library", module)
+  .addDecorator(Padding)
+  .add("Bordered Icons", () => (
+    <>
+      <Icon
+        icon="coffee"
+        // fixedWidth
+        // nameProp="coffee"
+        // mask={["far", "circle"]}
+        success={true}
+        // style={{ background: "MistyRose" }}
+      />
+      <Icon
+        icon="coffee"
+        // fixedWidth
+        // nameProp="coffee"
+        // mask={["far", "circle"]}
+        warning={true}
+        // style={{ background: "MistyRose" }}
+      />
+      <Icon
+        icon="circle"
+        // fixedWidth
+        // nameProp="coffee"
+        // mask={["far", "circle"]}
+        alert={true}
+        // style={{ background: "MistyRose" }}
+      />
+    </>
+  ))
+  .add("Stacked Icons", () => (
+    <Icon icon="circle" stacked={true}>
+      <Icon icon="check" inverse={true} success stacked={true}>
+        <Icon icon="coffee" inverse={false} alert stacked={true} size="2x" />
+      </Icon>
+    </Icon>
+  ))
   .add("Navigation Icons", () => (
     <Group>
       {" "}
