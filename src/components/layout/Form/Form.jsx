@@ -60,7 +60,7 @@ const Section = styled.section`
 const SectionName = styled.h5`
   color: ${colors.grey_60};
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   margin-bottom: 0;
   &:empty {
     &:before {
@@ -84,7 +84,7 @@ const Label = styled.label`
     display: ${props => (props.isRequired ? "" : "none")};
     line-height: 0;
     font-size: 1.5rem;
-    color: ${colors.alert};
+    color: ${colors.grey_60};
   }
 `
 const InputLabel = props => (

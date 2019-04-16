@@ -47,7 +47,7 @@ const PrePostLabel = styled.label`
   color: ${colors.grey_60};
   background-color: #ffffff;
   border: 1px solid ${colors.grey_20};
-  border-bottom: 1px solid ${colors.grey_40};
+  border-bottom: 1px solid ${colors.grey_20};
   border-radius: 4px;
   padding: 0.25rem 1rem;
   white-space: nowrap;
@@ -55,7 +55,7 @@ const PrePostLabel = styled.label`
 
 const TextInput = styled.input`
   border: 1px solid ${colors.grey_20};
-  border-bottom: 1px solid ${colors.grey_40};
+  border-bottom: 1px solid ${colors.grey_20};
   border-color: ${props => (props.error ? colors.alert : "")};
   background-color: ${props => (props.error ? "#f9ebeb" : "")};
   caret-color: ${props => (props.error ? colors.alert : "")};
@@ -65,18 +65,18 @@ const TextInput = styled.input`
     color: ${props => (props.error ? colors.alert : "")};
   }
   &:hover {
-    border: 1px solid ${colors.success};
+    border: 1px solid ${colors.anchor};
     border-color: ${props => (props.error ? colors.alert : "")};
   }
   &:focus {
-    background-color: ${props => (props.error ? "#f9ebeb" : "#f1f8eb")};
-    border-color: ${props => (props.error ? colors.alert : colors.success)};
+    background-color: ${props => (props.error ? "#f9ebeb" : "")};
+    border-color: ${props => (props.error ? colors.alert : colors.anchor)};
     ::placeholder {
-      color: ${props => (props.error ? colors.alert : colors.success)};
+      color: ${props => (props.error ? colors.alert : colors.grey_60)};
     }
     ::selection {
       background-color: ${props =>
-        props.error ? colors.alert : colors.success};
+        props.error ? colors.alert : ""};
     }
   }
 `

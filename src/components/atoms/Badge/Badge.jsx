@@ -10,7 +10,7 @@ const BadgeContainer = styled.div`
   width: 2em;
   height: 2em;
   border-radius: 20px;
-  background: ${colors.success};
+  background: ${colors.grey_60};
   color: white;
 `
 

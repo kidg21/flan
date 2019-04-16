@@ -15,7 +15,7 @@ const Panel = styled.div`
   overflow: hidden;
   transform: none;
   transition: all 0.3s ease-in-out;
-  box-sizing: content-box;
+  // box-sizing: content-box;
   -webkit-overflow-scrolling: touch;
   /* Prototype Content - displays when a Panel Section is empty */
   &:empty {
@@ -31,7 +31,7 @@ const PanelSection = styled.section`
   display: flex;
   flex-direction: column;
   flex: none;
-  background: ${colors.white};
+  background: "";
   box-shadow: ${shadows.panelSectionShadow};
   z-index: 1;
   overflow: hidden;
@@ -66,7 +66,7 @@ const PanelFooter = styled.section`
   display: flex;
   flex-direction: column;
   flex: none;
-  background: ${colors.white};
+  background: "";
   border: 0.5px solid #eaeded;
   box-shadow: ${shadows.panelSectionShadow};
   z-index: 1;

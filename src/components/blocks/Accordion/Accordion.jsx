@@ -1,7 +1,6 @@
 import React, { useState, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import CardHeader from "../../cards/Layer/CardHeader";
 
 
 const AccordionSection = styled.div`
@@ -23,7 +22,7 @@ const Accordion = ({ title, children, onToggle }) => {
           setVisibility(!visibility);
           if (onToggle) onToggle(!visibility);
         }} >
-        <CardHeader title={title}/>
+        <h3>{title}</h3>
       </AccordionSection>
       {visibility ? <Fragment>{children}</Fragment> : null}
     </Fragment>

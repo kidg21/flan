@@ -1,8 +1,8 @@
-import React from "react"
-import styled, { css } from "styled-components"
-import Icon from "../Icon/Icon"
-import PropTypes from "prop-types"
-import { colors, shadows } from "../../../attributes/Variables/Variables"
+import React from "react";
+import styled, { css } from "styled-components";
+import Icon from "base/Icons";
+import PropTypes from "prop-types";
+import { colors, shadows } from "Variables";
 
 const BadgeContainer = styled.div`
   display: flex;
@@ -23,29 +23,29 @@ const BadgeContainer = styled.div`
       ? colors.success
       : ""};
   color: black;
-`
+`;
 
 const successProps = {
   nameProp: ["fas", "check"],
   colorProp: "white"
-}
+};
 
 const warningProps = {
   nameProp: ["fas", "exclamation"],
   colorProp: "white"
-}
+};
 
 const errorProps = {
   nameProp: ["fas", "times"],
   colorProp: "white"
-}
+};
 
 const infoProps = {
-  nameProp: ["fas", "info"],
+  nameProp: ["far", "info"],
   colorProp: "white"
-}
+};
 
-function Badge(props) {
+function AlertBadge(props) {
   return (
     <div>
       {props.error ? (
@@ -73,7 +73,7 @@ function Badge(props) {
         </BadgeContainer>
       ) : null}
     </div>
-  )
+  );
 }
 
-export default Badge
+export default AlertBadge;
