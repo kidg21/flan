@@ -201,6 +201,18 @@ storiesOf("Atoms|Input", module)
     />
   ))
 
+// Input ( Post-Button )
+storiesOf("Atoms|Input", module)
+  .addDecorator(Padding)
+  .add("Input ( Post-Button )", () => (
+    <Input
+      inputLabel="Input ( Post-Button )"
+      postButton={true}
+      buttonLabel="Upload"
+      helpText="This help text has been passed through a prop!"
+    />
+  ))
+
 // Input ( Prefix / Postfix )
 storiesOf("Atoms|Input", module)
   .addDecorator(Padding)

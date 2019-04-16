@@ -194,7 +194,6 @@ const GlobalStyles = createGlobalStyle`
         }
         &[disabled],
         &[readonly] {
-            ${"" /* border-bottom: none; */}
             cursor: not-allowed;
             pointer-events: none;
             user-select: none;

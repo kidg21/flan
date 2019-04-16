@@ -1,8 +1,9 @@
 import React from "react"
 import styled, { css } from "styled-components"
 import PropTypes from "prop-types"
-import { InputLabel, HelpText, ErrorText } from "../../layout/Form/Form"
-import SelectMenu from "../SelectMenu"
+import { InputLabel, HelpText, ErrorText } from "layout/Form"
+import SelectMenu from "atoms/SelectMenu"
+import Button from "atoms/Button"
 import { colors, shadows } from "Variables"
 
 const TextInputContainer = styled.div`
@@ -13,18 +14,18 @@ const TextInputContainer = styled.div`
       : props.twoInputs /* 2 Inputs */
       ? "repeat(2, 1fr)"
       : props.prefix /* Prefix Label (conditionals) */
-      ? props.postfix
+      ? [props.postfix, props.postButton]
         ? "minmax(auto, auto) minmax(auto, 3fr) minmax(auto, auto)"
         : props.postSelect
         ? "minmax(auto, auto) minmax(auto, 3fr) minmax(auto, 2fr)"
         : "minmax(auto, auto) minmax(auto, 3fr)"
       : props.preSelect /* Prefix Select (conditionals) */
-      ? props.postfix
+      ? [props.postfix, props.postButton]
         ? "minmax(auto, 2fr) minmax(auto, 3fr) minmax(auto, auto)"
         : props.postSelect
         ? "minmax(auto, 2fr) minmax(auto, 3fr) minmax(auto, 2fr)"
         : "minmax(auto, 2fr) minmax(auto, 3fr)"
-      : props.postfix /* Postfix Label */
+      : [props.postfix, props.postButton] /* Postfix Label */
       ? "minmax(auto, 3fr) minmax(auto, auto)"
       : props.postSelect /* Postfix Select */
       ? "minmax(auto, 3fr) minmax(auto, 2fr)"
@@ -40,7 +41,7 @@ const PrePostLabel = styled.label`
   justify-content: center;
   border-radius: 5px;
   align-items: center;
-  /* font-weight: bold; */
+  font-weight: bold;
   letter-spacing: 2px;
   text-transform: lowercase;
   color: ${colors.grey_60};
@@ -80,7 +81,15 @@ const TextInput = styled.input`
   }
 `
 
-function Input({ inputLabel, isRequired, helpText, errorText, ...props }) {
+function Input({
+  inputLabel,
+  isRequired,
+  helpText,
+  errorText,
+  buttonLabel,
+  isPrimary,
+  ...props
+}) {
   return (
     <TextInputContainer
       isRequired={isRequired}
@@ -90,6 +99,8 @@ function Input({ inputLabel, isRequired, helpText, errorText, ...props }) {
       preSelect={props.preSelect}
       postfix={props.postfix}
       postSelect={props.postSelect}
+      postButton={props.postButton}
+      rounded={props.rounded}
       twoInputs={props.twoInputs} // 2 inputs in a row
       threeInputs={props.threeInputs} // 3 inputs in a row
     >
@@ -127,6 +138,10 @@ function Input({ inputLabel, isRequired, helpText, errorText, ...props }) {
       ) : null}
       {/* Postfix (conditional) */}
       {props.postfix ? <PrePostLabel>{props.postfix}</PrePostLabel> : null}
+      {/* Postfix Button (conditional) */}
+      {props.postButton ? (
+        <Button buttonLabel={buttonLabel} isPrimary={true} />
+      ) : null}
       {/* Postfix Select Menu (conditional) */}
       {props.postSelect ? (
         <SelectMenu

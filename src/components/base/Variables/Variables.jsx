@@ -45,7 +45,7 @@ export const fontSize = {
 // Sizes for typography scale
 export const shadows = {
   cardShadow:
-    "drop-shadow(0 0 1px hsl(34, 5%, 36%)) drop-shadow(0.25rem 0.25rem 0.25rem hsla(34, 5%, 36%, 0.333333));",
+    "drop-shadow(0 0 1px hsl(34, 5%, 72%)) drop-shadow(0.25rem 0.25rem 0.25rem hsla(34, 5%, 58%, 0.333333));",
   dropShadow:
     "hsl(34, 5%, 36%) 0rem 0rem 1px, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem;",
   panelSectionShadow:
