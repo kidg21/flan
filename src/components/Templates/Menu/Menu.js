@@ -70,7 +70,7 @@ function MainMenu() {
           padding: "1.8em"
         }}
       >
-        <h1 style={{ color: "black" }}>LandVision.</h1>
+        <h1 style={{ color: "black" }}>LV.</h1>
       </PanelSection>
       <PanelBody
         style={{

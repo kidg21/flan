@@ -10,7 +10,7 @@ const BadgeContainer = styled.div`
   width: 2em;
   height: 2em;
   border-radius: 20px;
-  background: ${colors.grey_60};
+  background: ${colors.anchor};
   color: white;
 `
 
@@ -26,20 +26,20 @@ const successProps = {
   colorProp: colors.white
 }
 
-const warningProps = {
-  nameProp: ["fas", "exclamation"],
-  colorProp: colors.white
-}
+// const warningProps = {
+//   nameProp: ["fas", "exclamation"],
+//   colorProp: colors.white
+// }
 
-const errorProps = {
-  nameProp: ["fas", "times"],
-  colorProp: colors.white
-}
+// const errorProps = {
+//   nameProp: ["fas", "times"],
+//   colorProp: colors.white
+// }
 
-const infoProps = {
-  nameProp: ["fas", "info"],
-  colorProp: colors.white
-}
+// const infoProps = {
+//   nameProp: ["fas", "info"],
+//   colorProp: colors.white
+// }
 
 function Badge({ message }) {
   return (

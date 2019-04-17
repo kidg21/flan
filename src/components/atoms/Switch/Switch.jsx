@@ -51,30 +51,6 @@ const StyledSwitch = styled.div`
   cursor: pointer;
 `
 
-// const Fill = styled.div`
-//   display:inline-block;
-//   position:relative;
-//   padding:20px;
-//   cursor:pointer;
-//   background:#e1e1e1;
-//   color:white;
-//   z-index:0;
-
-// &:before {
-//   content: "";
-//   position: absolute;
-//   z-index:-1;
-//   top: 0;  left: 0;  right: 0;  bottom: 0;
-//   background: #2098d1;
-//   transform: scaleX(0);
-//   transform-origin: 0 50%;
-//   transition: transform .3s ease-out;
-// }
-
-// &:hover:before{
-//   transform: scaleX(1);
-// }
-// `
 
 const Toggle = ({ className, checked, ...props }) => (
   <SwitchContainer className={className}>
@@ -85,15 +61,10 @@ const Toggle = ({ className, checked, ...props }) => (
   </SwitchContainer>
 )
 
-const Switch = () => {
-  const [checked, setChecked] = useState(false)
-
-  const handleCheckboxChange = event => {
-    setChecked(event.target.checked)
-  }
+const Switch = ({checked, id, ...props}) => {
   return (
     <label>
-      <Toggle checked={checked} onChange={handleCheckboxChange} />
+      <Toggle checked={checked} {...props} />
     </label>
   )
 }
