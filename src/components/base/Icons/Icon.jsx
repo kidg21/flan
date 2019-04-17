@@ -11,13 +11,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 //   position: "absolute"
 // }
 
-const StyledIcon = styled.span`
-  position:  ${props => (props.stacked ? "absolute" : "")};
-  display:  ${props => (props.stacked ? "flex" : "")};
-  justify-content:  ${props => (props.stacked ? "center" : "")};
-  align-items:  ${props => (props.stacked ? "center" : "")};
-  /* width:  ${props => (props.stacked ? "min-content" : "")}; */
-  /* transform-origin:  ${props => (props.stacked ? "center center" : "")}; */
+const StyledIcon = styled(FontAwesomeIcon)`
+  position: ${props => (props.stacked ? "absolute" : "")};
+  display: ${props => (props.stacked ? "flex" : "")};
+  justify-content: ${props => (props.stacked ? "center" : "")};
+  align-items: ${props => (props.stacked ? "center" : "")};
+  cursor: ${props => (props.anchor ? "pointer" : "")};
   color: ${props =>
     props.success
       ? colors.success
@@ -25,13 +24,15 @@ const StyledIcon = styled.span`
       ? colors.warning
       : props.alert
       ? colors.alert
-      : ""};
-  `
+      : props.anchor
+      ? colors.anchor
+      : "inherit"};
+`
 
 function Icon({
   icon,
   nameProp,
-  color,
+  // color,
   size,
   fixedWidth,
   inverse,
@@ -41,6 +42,7 @@ function Icon({
   pulse,
   border,
   pull,
+  anchor,
   success,
   warning,
   alert,
@@ -52,50 +54,42 @@ function Icon({
 }) {
   return (
     <StyledIcon
+      icon={icon}
+      anchor={anchor}
       success={success}
       warning={warning}
       alert={alert}
       stacked={stacked}
+      size={size}
+      fixedWidth={fixedWidth}
+      inverse={inverse}
+      rotation={rotation}
+      flip={flip}
+      spin={spin}
+      pulse={pulse}
+      border={border}
+      pull={pull}
+      style={style}
     >
-      <FontAwesomeIcon
-        icon={icon}
-        // icon={nameProp}
-        // nameProp={icon}
-        // icon={icon ? icon : nameProp}
-        // icon={nameProp ? nameProp : icon}
-        // color={color || props.colorProp}
-        // Font Awesome Props
-        size={size}
-        fixedWidth={fixedWidth}
-        inverse={inverse}
-        rotation={rotation}
-        flip={flip}
-        spin={spin}
-        pulse={pulse}
-        border={border}
-        pull={pull}
-        style={style}
-        // mask={mask}
-        // mask={["far", "circle"]}
-      />
       {children}
     </StyledIcon>
   )
 }
 
 Icon.defaultProps = {
-  icon: ["fas", "circle"],
-  nameProp: ["fas", "circle"],
+  // fixedWidth: true,
+  icon: ["fas", "circle"]
+  // nameProp: ["fas", "circle"]
   // success: colors.success,
   // alert: colors.alert,
-  size: "5x",
+  // size: "5x",
   // inverse: true,
   // rotation: 90,
   // flip: "both",
   // spin: true,
   // pulse: true
   // border: true,
-  stacked: true
+  // stacked: true
   // pull: "right"
   // mask: ["fas", "circle"]
 }
@@ -104,7 +98,7 @@ Icon.propTypes = {
   icon: PropTypes.string,
   nameProp: PropTypes.array,
   // nameProp: icon,
-  color: PropTypes.string,
+  // color: PropTypes.string,
   colorProp: PropTypes.string,
   /** Icons inherit the 'font-size' of the parent container and are relatively sized.
    * Options: 'xs', 'sm', 'lg', '2x', '3x', '4x', '5x', '6x', '7x', '8x', '9x', '10x'
@@ -129,6 +123,7 @@ Icon.propTypes = {
   /** Options: 'left', 'right' */
   pull: PropTypes.string,
   // mask: PropTypes.array,
+  anchor: PropTypes.string,
   success: PropTypes.string,
   warning: PropTypes.warning,
   alert: PropTypes.string,

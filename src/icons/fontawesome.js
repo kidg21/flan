@@ -1,9 +1,9 @@
 // import the library
-import { library } from "@fortawesome/fontawesome-svg-core";
+import { library } from "@fortawesome/fontawesome-svg-core"
 
 // import your icons
-import { faApple } from "@fortawesome/free-brands-svg-icons";
-import { faBell, faBookmark } from "@fortawesome/free-regular-svg-icons";
+import { faApple } from "@fortawesome/free-brands-svg-icons"
+import { faBell, faBookmark } from "@fortawesome/free-regular-svg-icons"
 import {
   faTimes,
   faCoffee,
@@ -13,11 +13,13 @@ import {
   faCheck,
   faExclamation,
   faFlag,
+  faChevronUp,
+  faChevronDown,
   faChevronLeft,
   faChevronRight,
   faMapMarker,
   faUser
-} from "@fortawesome/free-solid-svg-icons";
+} from "@fortawesome/free-solid-svg-icons"
 import {
   faAcorn,
   faClone,
@@ -27,7 +29,7 @@ import {
   faPlusCircle,
   faChevronLeft as faChevronLeftLight,
   faChevronRight as faChevronRightLight
-} from "@fortawesome/pro-light-svg-icons";
+} from "@fortawesome/pro-light-svg-icons"
 import {
   faAngleDown,
   faAngleLeft,
@@ -55,11 +57,11 @@ import {
   faFilter,
   faExpandArrows,
   faHighlighter
-} from "@fortawesome/pro-regular-svg-icons";
+} from "@fortawesome/pro-regular-svg-icons"
 import {
   faMoneyBill,
   faBoxingGlove as faBoxingGloveSolid
-} from "@fortawesome/pro-solid-svg-icons";
+} from "@fortawesome/pro-solid-svg-icons"
 
 library.add(
   faMoneyBill,
@@ -108,10 +110,12 @@ library.add(
   faFlag,
   faShare,
   faApple,
+  faChevronUp,
+  faChevronDown,
   faChevronLeft,
   faChevronRight,
   faChevronLeftLight,
   faChevronRightLight,
   faMapMarker,
   faUser
-);
+)
