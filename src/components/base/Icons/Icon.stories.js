@@ -1,19 +1,10 @@
-<<<<<<< HEAD
-import React from "react";
+import React, { Fragment } from "react";
 import { storiesOf } from "@storybook/react";
 import styled, { css } from "styled-components";
+import { Padding } from "helpers/Display";
 import Icon from "base/Icons";
 import PlusIcon from "base/Icons";
 import IconBlock from "blocks/IconBlock";
-=======
-import React, { Fragment } from "react"
-import { storiesOf } from "@storybook/react"
-import styled, { css } from "styled-components"
-import { Padding } from "helpers/Display"
-import Icon from "base/Icons"
-import PlusIcon from "base/Icons"
-import IconBlock from "blocks/IconBlock"
->>>>>>> 228b4c46d058423c1e4c505f95f18ce43b8302f1
 
 const Group = styled.div`
   display: flex;
