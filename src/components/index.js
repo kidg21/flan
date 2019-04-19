@@ -1,3 +1,6 @@
+// Publicly exported files from 'base'
+export * from "./base/Typography"
+
 // Publicly exported files from 'atoms'
 export { default as Badge, IconBadge } from "./atoms/Badge"
 export { default as Button } from "./atoms/Button"
