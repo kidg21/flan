@@ -20,13 +20,22 @@ transition: color .25s ease-in;
 // };
 
 
-function Label (props) {
+function Label ({content, ...props}) {
 
   return (
-      <Content>{props.contentProp}</Content>
+      <Content>{content}</Content>
   );
 };
 
+Label.defaultProps = {
+  id: "",
+  content: "default",
+};
+
+Label.propTypes = {
+  id: PropTypes.string,
+  content: PropTypes.string,
+};
 
 
 export default Label;

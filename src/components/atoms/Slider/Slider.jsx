@@ -1,5 +1,12 @@
 import React, { useState } from "react"
 import styled, { css } from "styled-components"
+import Input from "atoms/Input/Input";
+
+
+const InputContainer = styled.div`
+width: 20rem;
+display: flex;
+justify-content: space-between;`
 
 const SliderPiece = styled.input.attrs({ type: "range" })`
   -webkit-appearance: none;
@@ -39,8 +46,12 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
   }
 `
 
-function Slider() {
-  return <SliderPiece />
+
+
+function Slider({id}) {
+  return (<div style={{display: "inline-block"}}><InputContainer><Input inputLabel="min" style={{width: "50px"}}/><Input inputLabel="max" style={{width: "50px", textAlign: "right", alignContent: "right"}}/></InputContainer>
+  <div>
+    <SliderPiece/></div></div>)
 }
 
 export default Slider

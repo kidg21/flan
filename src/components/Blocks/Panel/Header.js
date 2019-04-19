@@ -71,7 +71,7 @@ Header.defaultProps = {
   directionsProps: { nameProp: ["fal", "directions"], colorProp: "#60aad2" }
 };
 
-Header.PropTypes = {
+Header.propTypes = {
   title: PropTypes.string.isRequired,
   twoParts: PropTypes.bool,
   threeParts: PropTypes.bool

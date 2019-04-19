@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import Badge, { IconBadge } from "./Badge";
+import Badge from "./Badge";
 import AlertBadge from "./AlertBadge";
 
 // const props = {
@@ -10,11 +10,19 @@ import AlertBadge from "./AlertBadge";
 
 // Colors
 storiesOf("Atoms|Badge", module)
-  .add("Badge", () => <Badge blue message="25" />)
+  .add("Badge", () => (
+    <div>
+      <Badge grey={true} message="25" />
+      <Badge orange={true} message="GR" />
+      <Badge red={true} message="LD" />
+      <Badge blue={true} message="2" />
+      <Badge green={true} message="18" />
+    </div>
+  ))
   .add("Icon Badge", () => (
     <div>
       {" "}
-      <AlertBadge info /> <AlertBadge warning /> <AlertBadge success />{" "}
-      <AlertBadge error />{" "}
+      <AlertBadge info={true} /> <AlertBadge warning={true} />{" "}
+      <AlertBadge success={true} /> <AlertBadge error={true} />
     </div>
   ));

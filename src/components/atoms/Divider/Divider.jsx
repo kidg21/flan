@@ -1,5 +1,6 @@
 import React from "react"
 import styled, { css } from "styled-components"
+import PropTypes from "prop-types";
 import { colors, fonts, fontSize, shadows } from "Variables"
 
 const Line = styled.hr`

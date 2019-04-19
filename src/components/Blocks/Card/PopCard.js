@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import propTypes from "prop-types";
+import PropTypes from "prop-types";
 import Icon from "base/Icons";
 import Button from "atoms/Button";
 
@@ -76,5 +76,18 @@ function PopCard({ title, message, action }) {
     </Aligner>
   );
 }
+
+PopCard.defaultProps = {
+  title: "Pop Up Alert",
+  message: "default",
+  action: "Apply",
+  exitProps: { nameProp: ["fal", "times"], colorProp: "dimgray" }
+};
+
+PopCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  message: PropTypes.string.isRequired,
+  action: PropTypes.string.isRequired
+};
 
 export default PopCard;

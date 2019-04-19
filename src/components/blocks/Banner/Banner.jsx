@@ -1,5 +1,6 @@
 import React from "react"
 import styled, { css } from "styled-components"
+import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import AlertBadge from "atoms/Badge/AlertBadge"
 
@@ -89,5 +90,23 @@ function Banner({ title, ...props }) {
     </StyledBanner>
   )
 }
+
+
+Banner.defaultProps = {
+  title: "Notification Alert",
+  error: false,
+  warning: false,
+  info: false,
+  success: false
+};
+
+Banner.propTypes = {
+  title: PropTypes.string,
+  error: PropTypes.bool,
+  warning: PropTypes.bool,
+  info: PropTypes.bool,
+  success: PropTypes.bool
+};
+
 
 export default Banner

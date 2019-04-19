@@ -66,7 +66,7 @@ Card.defaultProps = {
   infoOpenProps: { nameProp: ["far", "angle-down"], colorProp: "#60aad2" }
 };
 
-Card.PropTypes = {
+Card.propTypes = {
   title: PropTypes.string.isRequired,
   layer: PropTypes.bool,
   navigation: PropTypes.bool,

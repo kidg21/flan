@@ -67,6 +67,7 @@ function Button({
 }
 
 const propTypes = {
+  id: PropTypes.string,
   label: PropTypes.string,
   isPrimary: PropTypes.bool,
   isDisabled: PropTypes.bool,

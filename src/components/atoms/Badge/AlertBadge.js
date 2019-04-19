@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import styled, { css } from "styled-components";
 import Icon from "base/Icons";
 import PropTypes from "prop-types";
@@ -45,7 +45,7 @@ const infoProps = {
   colorProp: "white"
 };
 
-function AlertBadge(props) {
+function AlertBadge({ ...props }) {
   return (
     <div>
       {props.error ? (
@@ -76,4 +76,20 @@ function AlertBadge(props) {
   );
 }
 
-export default AlertBadge;
+AlertBadge.defaultProps = {
+  id: "",
+  error: false,
+  warning: false,
+  info: false,
+  success: false
+};
+
+AlertBadge.propTypes = {
+  id: PropTypes.string,
+  error: PropTypes.bool,
+  warning: PropTypes.bool,
+  info: PropTypes.bool,
+  success: PropTypes.bool
+};
+
+export { AlertBadge as default };

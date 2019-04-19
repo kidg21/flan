@@ -1,6 +1,7 @@
 import React from "react"
 import styled, { css } from "styled-components"
 import { colors } from "Variables"
+import PropTypes from "prop-types";
 import Icon from "base/Icons"
 
 const BadgeContainer = styled.div`
@@ -10,9 +11,22 @@ const BadgeContainer = styled.div`
   width: 2em;
   height: 2em;
   border-radius: 20px;
-  background: ${colors.anchor};
+  background: ${props =>
+    props.blue
+      ? '#7CB9DA'
+      : props.green
+      ? '#8EBA61'
+      : props.orange
+      ? '#F2A642'
+      : props.red
+      ? '#D05F5D'
+      : props.grey
+      ? '#605c57'
+      : ""};
   color: white;
 `
+
+//Uses secondary colors to lighten graphics
 
 const Message = styled.h1`
   margin: 0;
@@ -21,40 +35,59 @@ const Message = styled.h1`
   align-self: center;
   font-weight: bold;
 `
-const successProps = {
-  nameProp: ["fas", "check"],
-  colorProp: colors.white
-}
 
-// const warningProps = {
-//   nameProp: ["fas", "exclamation"],
-//   colorProp: colors.white
-// }
-
-// const errorProps = {
-//   nameProp: ["fas", "times"],
-//   colorProp: colors.white
-// }
-
-// const infoProps = {
-//   nameProp: ["fas", "info"],
-//   colorProp: colors.white
-// }
-
-function Badge({ message }) {
+function Badge({ message, color, ...props}) {
   return (
-    <BadgeContainer>
+    <div>
+    {props.blue ? (
+      <BadgeContainer blue>
+        <Message>{message}</Message>
+      </BadgeContainer>
+    ) : null}
+    {props.green ? (
+      <BadgeContainer green>
       <Message>{message}</Message>
-    </BadgeContainer>
+      </BadgeContainer>
+    ) : null}
+    {props.orange ? (
+      <BadgeContainer orange>
+      <Message>{message}</Message>
+      </BadgeContainer>
+    ) : null}
+    {props.red ? (
+      <BadgeContainer red>
+      <Message>{message}</Message>
+      </BadgeContainer>
+    ) : null}
+    {props.grey ? (
+      <BadgeContainer grey>
+      <Message>{message}</Message>
+      </BadgeContainer>
+    ) : null}
+  </div>
   )
 }
 
-function IconBadge() {
-  return (
-    <BadgeContainer>
-      <Icon {...successProps} />
-    </BadgeContainer>
-  )
-}
 
-export { Badge as default, IconBadge }
+Badge.defaultProps = {
+  id: "",
+  message: "message",
+  blue: false,
+  green: false,
+  orange: false,
+  red: false,
+  grey: false
+};
+
+Badge.propTypes = {
+  id: PropTypes.string,
+  message: PropTypes.string.isRequired,
+  blue: PropTypes.bool,
+  green: PropTypes.bool,
+  orange: PropTypes.bool,
+  red: PropTypes.bool,
+  grey: PropTypes.bool
+};
+
+
+export { Badge as default }

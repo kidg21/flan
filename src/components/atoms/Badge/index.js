@@ -1,1 +1,1 @@
-export { default, IconBadge } from "./Badge.jsx"
+export { default } from "./Badge.jsx";

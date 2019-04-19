@@ -3,6 +3,7 @@
 // Import dependencies
 import React from "react"
 import styled from "styled-components"
+import PropTypes from "prop-types";
 
 // Import colors and sizes variables
 import { colors, shadows } from "../Variables/Variables"
