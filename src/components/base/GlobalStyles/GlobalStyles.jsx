@@ -96,6 +96,8 @@ const GlobalStyles = createGlobalStyle`
     }
     p {
         font-family: inherit;
+        font-size: 1rem;
+        line-height: 1.5rem;
         margin: 0 0 1rem;
     }
     h1, h2, h3, h4, h5, h6 {
@@ -106,27 +108,33 @@ const GlobalStyles = createGlobalStyle`
     h1 {
         font-size: 2rem;
         ${"" /* font-size: calc((${fontSize.base}) * 2); */}
-        line-height: 2.25rem;
+        ${"" /* line-height: 2.25rem; */}
+        line-height: 2.4rem;
     }
     h2 {
         font-size: 1.5rem;
-        line-height: 2.25rem;
+        ${"" /* line-height: 2.25rem; */}
+        line-height: 2rem;
     }
     h3 {
         font-size: 1.3rem;
-        line-height: 2.25rem;
+        ${"" /* line-height: 2.25rem; */}
+        line-height: 1.8rem;
     }
     h4 {
         font-size: 1rem;
-        line-height: 1.5rem;
+        ${"" /* line-height: 1.5rem; */}
+        line-height: 1.4rem;
     }
     h5 {
         font-size: 0.9rem;
-        line-height: 1.5rem;
+        ${"" /* line-height: 1.5rem; */}
+        line-height: 1.3rem;
     }
     h6 {
         font-size: 0.8rem;
-        line-height: 1.5rem;
+        ${"" /* line-height: 1.5rem; */}
+        line-height: 1.2rem;
     }
     code {
         font-family: ${fonts.data};

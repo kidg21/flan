@@ -1,54 +1,54 @@
-import React, { useState, Fragment } from "react";
-import PropTypes from "prop-types";
-import styled, { css } from "styled-components";
-import { colors } from "Variables";
-import Icon from "base/Icons";
-import Badge from "atoms/Badge";
-import Panel, { PanelSection, PanelBody } from "../../layout/Panel/Panel";
+import React, { useState, Fragment } from "react"
+import PropTypes from "prop-types"
+import styled, { css } from "styled-components"
+import { colors } from "Variables"
+import Icon from "atoms/Icon"
+import Badge from "atoms/Badge"
+import Panel, { PanelSection, PanelBody } from "../../layout/Panel/Panel"
 
 const notificationProps = {
   nameProp: ["far", "bell"],
   colorProp: "dimgray"
-};
+}
 
 const sharedContentProps = {
   nameProp: ["far", "share-alt"],
   colorProp: "dimgray"
-};
+}
 
 const informationProps = {
   nameProp: ["far", "info"],
   colorProp: "dimgray"
-};
+}
 
 const uploadProps = {
   nameProp: ["far", "arrow-from-bottom"],
   colorProp: "dimgray"
-};
+}
 
 const settingsProps = {
   nameProp: ["far", "cog"],
   colorProp: "dimgray"
-};
+}
 
 const signOutProps = {
   nameProp: ["far", "sign-out"],
   colorProp: "dimgray"
-};
+}
 
 const Menu = styled.ul`
   display: flex-inline;
-`;
+`
 
 const Item = styled.li`
-  list-item-style: none;
+  list-style: none;
   padding: 30px;
   cursor: pointer;
 
   &:hover {
     background: #eef5e8;
   }
-`;
+`
 
 ///for dark option use gradient style={{ backgroundImage: "linear-gradient(#3B3B55, #051937)" }}
 
@@ -118,7 +118,7 @@ function TrialMenu() {
         </div>
       </PanelSection>
     </Panel>
-  );
+  )
 }
 
-export default TrialMenu;
+export default TrialMenu

@@ -32,7 +32,7 @@ const TypeContainer = styled.section`
   @media (min-width: 1200px) {
     max-width: 1200px;
   }
-`;
+`
 
 //Muli Family Fonts
 const Title = styled.h1`
@@ -40,42 +40,42 @@ const Title = styled.h1`
   font-family: ${props => (props.lato ? "Lato, sans-serif" : "inherit")};
   font-weight: 400;
   margin: 0 0 1.5rem;
-`;
+`
 const Paragraph = styled.p`
   font-family: ${props => (props.muli ? "Muli, sans-serif" : "inherit")};
   font-family: ${props => (props.lato ? "Lato, sans-serif" : "inherit")};
-`;
+`
 const Heading_1 = styled.h1`
   font-family: ${props => (props.muli ? "Muli, sans-serif" : "inherit")};
   font-family: ${props => (props.lato ? "Lato, sans-serif" : "inherit")};
-`;
+`
 const Heading_2 = styled.h2`
   font-family: ${props => (props.muli ? "Muli, sans-serif" : "inherit")};
   font-family: ${props => (props.lato ? "Lato, sans-serif" : "inherit")};
-`;
+`
 const Heading_3 = styled.h3`
   font-family: ${props => (props.muli ? "Muli, sans-serif" : "inherit")};
   font-family: ${props => (props.lato ? "Lato, sans-serif" : "inherit")};
-`;
+`
 const Heading_4 = styled.h4`
   font-family: ${props => (props.muli ? "Muli, sans-serif" : "inherit")};
   font-family: ${props => (props.lato ? "Lato, sans-serif" : "inherit")};
-`;
+`
 const Heading_5 = styled.h5`
   font-family: ${props => (props.muli ? "Muli, sans-serif" : "inherit")};
   font-family: ${props => (props.lato ? "Lato, sans-serif" : "inherit")};
-`;
+`
 const Heading_6 = styled.h6`
   font-family: ${props => (props.muli ? "Muli, sans-serif" : "inherit")};
   font-family: ${props => (props.lato ? "Lato, sans-serif" : "inherit")};
-`;
+`
 const Numbers = styled.span`
   font-family: ${props => (props.muli ? "Muli, sans-serif" : "inherit")};
   font-family: ${props => (props.lato ? "Lato, sans-serif" : "inherit")};
   font-size: inherit;
   font-weight: 600;
   letter-spacing: 1px;
-`;
+`
 const Span = styled.span`
   font-family: ${props => (props.muli ? "Muli, sans-serif" : "inherit")};
   font-family: ${props => (props.lato ? "Lato, sans-serif" : "inherit")};
@@ -84,32 +84,36 @@ const Span = styled.span`
   :after {
     padding: 0 0.5rem;
   }
-`;
+`
 const Colon = styled(Span)`
   :after {
     content: ":";
   }
-`;
+`
 const Pipe = styled(Span)`
   :after {
     content: "|";
   }
-`;
+`
 const Slash = styled(Span)`
   :after {
     content: "/";
   }
-`;
+`
 const Ampersand = styled(Span)`
   :after {
     content: "@";
   }
-`;
+`
 const Bullet = styled(Span)`
   :after {
     content: "•";
   }
-`;
+`
+export const Success = styled(Span)`
+  color: ${colors.success};
+  font-weight: bold;
+`
 
 export default function Typography(props) {
   return (
@@ -322,3 +326,5 @@ export default function Typography(props) {
     </React.Fragment>
   );
 }
+
+// export default *;

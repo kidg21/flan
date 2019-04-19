@@ -1,7 +1,7 @@
 import React from "react"
 import styled, { css } from "styled-components"
 import PropTypes from "prop-types"
-import Icon from "base/Icons"
+import Icon from "atoms/Icon"
 import Label from "./Label"
 
 const Container = styled.a`

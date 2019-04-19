@@ -30,8 +30,6 @@ const GridWrapper = styled.section`
       : props.col_12
       ? "repeat(auto-fit, minmax(calc(100%/12), 1fr))"
       : "repeat(auto-fill, minmax(20rem, 1fr))"};
-  /* padding: 2rem; */
-  /* justify-items: center; */
 `
 
 const Grid_2 = styled(Grid)`

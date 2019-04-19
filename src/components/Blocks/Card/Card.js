@@ -1,21 +1,20 @@
-import React from "react";
-import styled, { css } from "styled-components";
-import PropTypes from "prop-types";
-import Icon from "base/Icons";
-import Switch from "atoms/Switch/Switch";
-import IconBlock from "blocks/IconBlock/IconBlock";
+import React from "react"
+import styled, { css } from "styled-components"
+import PropTypes from "prop-types"
+import Icon from "atoms/Icon"
+import Switch from "atoms/Switch/Switch"
+import IconBlock from "blocks/IconBlock/IconBlock"
 
 /////Navigation consts
 const HeaderLayout = styled.div`
   align-items: flex;
   font-size: 14px;
   display: flex;
-  justify-content: space-between; 
-  padding: .8em .6em .25em .8em;
-  border-bottom: 0.25px solid #EAEDED;
-  box-shadow: 0 0 0px rgba(0, 0, 0, .08);
-}
- `;
+  justify-content: space-between;
+  padding: 0.8em 0.6em 0.25em 0.8em;
+  border-bottom: 0.25px solid #eaeded;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.08);
+`
 
 function Card({ title, ...props }) {
   return (
@@ -51,7 +50,7 @@ function Card({ title, ...props }) {
         </div>
       </HeaderLayout>
     </div>
-  );
+  )
 }
 
 Card.defaultProps = {
@@ -64,13 +63,13 @@ Card.defaultProps = {
   directionsProps: { nameProp: ["fal", "directions"], colorProp: "#60aad2" },
   infoSectionProps: { nameProp: ["far", "angle-up"], colorProp: "dimgray" },
   infoOpenProps: { nameProp: ["far", "angle-down"], colorProp: "#60aad2" }
-};
+}
 
 Card.propTypes = {
   title: PropTypes.string.isRequired,
   layer: PropTypes.bool,
   navigation: PropTypes.bool,
   info: PropTypes.bool
-};
+}
 
-export default Card;
+export default Card

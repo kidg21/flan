@@ -1,44 +1,44 @@
-import React, { useState, Fragment } from "react";
-import PropTypes from "prop-types";
-import styled, { css } from "styled-components";
-import { colors } from "Variables";
-import Icon from "base/Icons";
-import Badge from "atoms/Badge";
+import React, { useState, Fragment } from "react"
+import PropTypes from "prop-types"
+import styled, { css } from "styled-components"
+import { colors } from "Variables"
+import Icon from "atoms/Icon"
+import Badge from "atoms/Badge"
 import Panel, {
   PanelSection,
   PanelBody,
   PanelFooter
-} from "../../layout/Panel/Panel";
+} from "../../layout/Panel/Panel"
 
 const notificationProps = {
   nameProp: ["far", "bell"],
   colorProp: "dimgray"
-};
+}
 
 const sharedContentProps = {
   nameProp: ["far", "share-alt"],
   colorProp: "dimgray"
-};
+}
 
 const informationProps = {
   nameProp: ["far", "info"],
   colorProp: "dimgray"
-};
+}
 
 const uploadProps = {
   nameProp: ["far", "arrow-from-bottom"],
   colorProp: "dimgray"
-};
+}
 
 const settingsProps = {
   nameProp: ["far", "cog"],
   colorProp: "dimgray"
-};
+}
 
 const signOutProps = {
   nameProp: ["far", "sign-out"],
   colorProp: "dimgray"
-};
+}
 
 const MenuSection = styled.div`
   overflow: hidden;
@@ -56,7 +56,7 @@ const MenuSection = styled.div`
   &:active {
     border-left: 3px solid ${colors.success};
   }
-`;
+`
 
 ///for dark option use gradient style={{ backgroundImage: "linear-gradient(#3B3B55, #051937)" }}
 
@@ -126,7 +126,7 @@ function MainMenu() {
         </div>
       </PanelSection>
     </Panel>
-  );
+  )
 }
 
-export default MainMenu;
+export default MainMenu
