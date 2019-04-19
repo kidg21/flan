@@ -1,8 +1,8 @@
-import React from "react"
-import styled, { css } from "styled-components"
-import propTypes from "prop-types"
-import Icon from "atoms/Icon"
-import Button from "atoms/Button"
+import React from "react";
+import styled, { css } from "styled-components";
+import propTypes from "prop-types";
+import Icon from "atoms/Icon";
+import Button from "atoms/Button";
 
 const HeaderSection = styled.div`
   overflow: normal;
@@ -16,9 +16,9 @@ const HeaderSection = styled.div`
   @media (max-width: 1000px) {
     width: 80%;
   }
-`
+`;
 
-const exitProps = { nameProp: ["fal", "times"], colorProp: "dimgray" }
+const exitProps = { nameProp: ["fal", "times"], colorProp: "dimgray" };
 
 const Container = styled.div`
   display: flex;
@@ -26,14 +26,14 @@ const Container = styled.div`
   justify-content: flex-end;
   padding-right: 0.7em;
   padding-top: 5px;
-`
+`;
 
 const Actions = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-`
+`;
 
 const Aligner = styled.div`
   display: flex;
@@ -41,11 +41,11 @@ const Aligner = styled.div`
   justify-content: center;
   vertical-align: center;
   height: 100vh;
-`
+`;
 
 const Message = styled.div`
   padding: 4em;
-`
+`;
 
 function PopCard({ title, message, action }) {
   return (
@@ -71,10 +71,9 @@ function PopCard({ title, message, action }) {
         </Actions>
       </HeaderSection>
     </Aligner>
-  )
+  );
 }
 
-<<<<<<< HEAD
 PopCard.defaultProps = {
   title: "Pop Up Alert",
   message: "default",
@@ -89,6 +88,3 @@ PopCard.propTypes = {
 };
 
 export default PopCard;
-=======
-export default PopCard
->>>>>>> 35efe673893a551caba282e4b3d14fe0c7165f4a

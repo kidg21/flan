@@ -1,8 +1,8 @@
-import React from "react"
-import styled, { css } from "styled-components"
-import Icon from "atoms/Icon"
-import PropTypes from "prop-types"
-import { colors, shadows } from "Variables"
+import React from "react";
+import styled, { css } from "styled-components";
+import Icon from "atoms/Icon";
+import PropTypes from "prop-types";
+import { colors, shadows } from "Variables";
 
 const BadgeContainer = styled.div`
   display: flex;
@@ -23,27 +23,27 @@ const BadgeContainer = styled.div`
       ? colors.success
       : ""};
   color: black;
-`
+`;
 
 const successProps = {
   nameProp: ["fas", "check"],
   colorProp: "white"
-}
+};
 
 const warningProps = {
   nameProp: ["fas", "exclamation"],
   colorProp: "white"
-}
+};
 
 const errorProps = {
   nameProp: ["fas", "times"],
   colorProp: "white"
-}
+};
 
 const infoProps = {
   nameProp: ["far", "info"],
   colorProp: "white"
-}
+};
 
 function AlertBadge({ ...props }) {
   return (
@@ -73,10 +73,9 @@ function AlertBadge({ ...props }) {
         </BadgeContainer>
       ) : null}
     </div>
-  )
+  );
 }
 
-<<<<<<< HEAD
 AlertBadge.defaultProps = {
   id: "",
   error: false,
@@ -94,6 +93,3 @@ AlertBadge.propTypes = {
 };
 
 export { AlertBadge as default };
-=======
-export default AlertBadge
->>>>>>> 35efe673893a551caba282e4b3d14fe0c7165f4a
