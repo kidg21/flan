@@ -1,22 +1,18 @@
 import React from "react"
 import styled, { css } from "styled-components"
 import PropTypes from "prop-types"
-import { colors } from "Variables"
+import { colors, shadows } from "Variables"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-
-// const stackedIcons = {
-//   display: "flex",
-//   alignItems: "center",
-//   width: "min-content",
-//   position: "absolute"
-// }
 
 const StyledIcon = styled(FontAwesomeIcon)`
   position: ${props => (props.stacked ? "absolute" : "")};
   display: ${props => (props.stacked ? "flex" : "")};
   justify-content: ${props => (props.stacked ? "center" : "")};
   align-items: ${props => (props.stacked ? "center" : "")};
-  cursor: ${props => (props.anchor ? "pointer" : "")};
+  border: ${props => (props.border ? "2px solid" : "")};
+  border-color: ${props => (props.border ? colors.grey_20 : "")};
+  border-radius: ${props => (props.border ? "5px" : "")};
+  /* cursor: ${props => (props.anchor ? "pointer" : "")}; */
   color: ${props =>
     props.success
       ? colors.success
@@ -26,13 +22,15 @@ const StyledIcon = styled(FontAwesomeIcon)`
       ? colors.alert
       : props.anchor
       ? colors.anchor
+      : props.inverse
+      ? colors.white
       : "inherit"};
 `
 
 function Icon({
+  id,
   icon,
   nameProp,
-  // color,
   size,
   fixedWidth,
   inverse,
@@ -48,18 +46,19 @@ function Icon({
   alert,
   style,
   mask,
-  stacked,
+  // stacked,
   children,
   ...props
 }) {
   return (
     <StyledIcon
+      id={id}
       icon={icon}
       anchor={anchor}
       success={success}
       warning={warning}
       alert={alert}
-      stacked={stacked}
+      // stacked={stacked}
       size={size}
       fixedWidth={fixedWidth}
       inverse={inverse}
@@ -77,29 +76,21 @@ function Icon({
 }
 
 Icon.defaultProps = {
-  // fixedWidth: true,
   icon: ["fas", "circle"]
-  // nameProp: ["fas", "circle"]
-  // success: colors.success,
-  // alert: colors.alert,
-  // size: "5x",
   // inverse: true,
   // rotation: 90,
   // flip: "both",
-  // spin: true,
-  // pulse: true
-  // border: true,
   // stacked: true
-  // pull: "right"
   // mask: ["fas", "circle"]
 }
 
 Icon.propTypes = {
-  icon: PropTypes.string,
-  nameProp: PropTypes.array,
-  // nameProp: icon,
-  // color: PropTypes.string,
-  colorProp: PropTypes.string,
+  id: PropTypes.string,
+  /** Icons can come in multiple weight types.  The default weight is 'fas' (solid)
+   * To use the weight type, simply enter the name of the icon as the prop value. (ex. icon='coffee')
+   * If you want to use an icon of a different weight type, enter the prop value as an arroy of ["weight", "name"]. (ex. icon=["fal", "plus-circle"] uses the 'light' version of the icon instead of the default 'solid' version)
+   */
+  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   /** Icons inherit the 'font-size' of the parent container and are relatively sized.
    * Options: 'xs', 'sm', 'lg', '2x', '3x', '4x', '5x', '6x', '7x', '8x', '9x', '10x'
    */
@@ -118,14 +109,14 @@ Icon.propTypes = {
   spin: PropTypes.bool,
   /** Rotation with eight (8) steps */
   pulse: PropTypes.bool,
-  stacked: PropTypes.bool,
-  border: PropTypes.bool,
+  // stacked: PropTypes.bool,
   /** Options: 'left', 'right' */
   pull: PropTypes.string,
+  border: PropTypes.bool,
   // mask: PropTypes.array,
   anchor: PropTypes.string,
   success: PropTypes.string,
-  warning: PropTypes.warning,
+  warning: PropTypes.string,
   alert: PropTypes.string,
   style: PropTypes.string
 }
