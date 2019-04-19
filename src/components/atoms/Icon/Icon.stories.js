@@ -5,7 +5,7 @@ import { colors, shadows } from "Variables"
 import { Padding } from "helpers/Display"
 import Grid from "helpers/Grid"
 import { Success } from "base/Typography"
-import Icon from "base/Icons"
+import Icon from "atoms/Icon"
 import IconBlock from "blocks/IconBlock"
 
 const IconGrid = styled.ul`

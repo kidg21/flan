@@ -1,7 +1,7 @@
 import React from "react"
 import styled, { css } from "styled-components"
 import { colors } from "Variables"
-import Icon from "base/Icons"
+import Icon from "atoms/Icon"
 
 const BadgeContainer = styled.div`
   display: flex;
