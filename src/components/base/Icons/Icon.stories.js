@@ -21,15 +21,6 @@ const IconGrid = styled.ul`
   margin-bottom: 1em;
   padding-bottom: 1em;
   align-items: baseline;
-  /* h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    grid-column: 1/-1;
-  } */
 `
 
 const Title = styled.h2`
