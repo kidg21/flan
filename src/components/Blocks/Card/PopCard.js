@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import propTypes from "prop-types";
+import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import Button from "atoms/Button";
 

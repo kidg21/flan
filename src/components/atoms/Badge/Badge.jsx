@@ -2,7 +2,6 @@ import React from "react"
 import styled, { css } from "styled-components"
 import { colors } from "Variables"
 import PropTypes from "prop-types";
-import Icon from "atoms/Icons"
 
 const BadgeContainer = styled.div`
   display: flex;
