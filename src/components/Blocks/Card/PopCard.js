@@ -18,8 +18,6 @@ const HeaderSection = styled.div`
   }
 `;
 
-const exitProps = { nameProp: ["fal", "times"], colorProp: "dimgray" };
-
 const Container = styled.div`
   display: flex;
   line-height: 2;
@@ -52,7 +50,7 @@ function PopCard({ title, message, action }) {
     <Aligner>
       <HeaderSection>
         <Container>
-          <Icon {...exitProps} />
+          <Icon icon={["fal", "times"]} />
         </Container>
         <Message>
           <h4 style={{ textAlign: "center" }}> {title} </h4>

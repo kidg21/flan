@@ -25,51 +25,31 @@ const BadgeContainer = styled.div`
   color: black;
 `;
 
-const successProps = {
-  nameProp: ["fas", "check"],
-  colorProp: "white"
-};
-
-const warningProps = {
-  nameProp: ["fas", "exclamation"],
-  colorProp: "white"
-};
-
-const errorProps = {
-  nameProp: ["fas", "times"],
-  colorProp: "white"
-};
-
-const infoProps = {
-  nameProp: ["far", "info"],
-  colorProp: "white"
-};
-
 function AlertBadge({ ...props }) {
   return (
     <div>
       {props.error ? (
         <BadgeContainer error>
           {" "}
-          <Icon {...errorProps} />{" "}
+          <Icon icon="times" inverse />{" "}
         </BadgeContainer>
       ) : null}
       {props.info ? (
         <BadgeContainer info>
           {" "}
-          <Icon {...infoProps} />{" "}
+          <Icon icon={["far", "info"]} inverse />{" "}
         </BadgeContainer>
       ) : null}
       {props.success ? (
         <BadgeContainer success>
           {" "}
-          <Icon {...successProps} />{" "}
+          <Icon icon="check" inverse />{" "}
         </BadgeContainer>
       ) : null}
       {props.warning ? (
         <BadgeContainer warning>
           {" "}
-          <Icon {...warningProps} />{" "}
+          <Icon icon="exclamation" inverse />{" "}
         </BadgeContainer>
       ) : null}
     </div>

@@ -5,6 +5,9 @@ import Icon from "atoms/Icon";
 import Switch from "atoms/Switch/Switch";
 import IconBlock from "blocks/IconBlock/IconBlock";
 
+const blockStyle = {
+  width: "60px"
+};
 /////Navigation consts
 const HeaderLayout = styled.div`
   align-items: flex;
@@ -16,7 +19,7 @@ const HeaderLayout = styled.div`
   box-shadow: 0 0 0px rgba(0, 0, 0, 0.08);
 `;
 
-function Card({ title, ...props }) {
+function Card({ title, switchProps, ...props }) {
   return (
     <div>
       <HeaderLayout
@@ -28,10 +31,8 @@ function Card({ title, ...props }) {
           {props.layer ? (
             <div style={{ display: "flex" }}>
               {" "}
-              <Switch />{" "}
-              <h5 style={{ flex: "auto", paddingLeft: "1.5em" }}>
-                {title}
-              </h5>{" "}
+              <Switch {...switchProps} />{" "}
+              <h5 style={{ flex: "auto", paddingLeft: "1.5em" }}>{title}</h5>{" "}
             </div>
           ) : props.navigation ? (
             <h5>{title}</h5>
@@ -41,11 +42,15 @@ function Card({ title, ...props }) {
         </div>
         <div>
           {props.layer ? (
-            <IconBlock />
+            <IconBlock style={blockStyle}>
+              <Icon icon={["far", "expand-arrows"]} />
+              <Icon icon={["far", "share"]} />
+              <Icon icon={["far", "filter"]} />
+            </IconBlock>
           ) : props.navigation ? (
-            <Icon {...props.navProps} />
+            <Icon icon={["far", "angle-right"]} />
           ) : props.info ? (
-            <Icon {...props.infoOpenProps} />
+            <Icon icon={["far", "angle-down"]} />
           ) : null}
         </div>
       </HeaderLayout>
@@ -57,12 +62,7 @@ Card.defaultProps = {
   title: "Information Header",
   layer: false,
   info: false,
-  navigation: false,
-  navProps: { nameProp: ["far", "angle-right"], colorProp: "dimgray" },
-  exitProps: { nameProp: ["fal", "times"], colorProp: "dimgray" },
-  directionsProps: { nameProp: ["fal", "directions"], colorProp: "#60aad2" },
-  infoSectionProps: { nameProp: ["far", "angle-up"], colorProp: "dimgray" },
-  infoOpenProps: { nameProp: ["far", "angle-down"], colorProp: "#60aad2" }
+  navigation: false
 };
 
 Card.propTypes = {

@@ -12,7 +12,7 @@ storiesOf("Atoms|Switch", module)
       return (
         <Switch
           checked={checked}
-          onClick={() => {
+          onChange={() => {
             setChecked(!checked);
           }}
         />
