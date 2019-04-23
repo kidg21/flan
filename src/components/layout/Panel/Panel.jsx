@@ -4,6 +4,7 @@ import { PlaceholderText } from "helpers/Placeholders"
 
 const Panel = styled.div`
   position: absolute;
+  background: ${colors.white};
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;

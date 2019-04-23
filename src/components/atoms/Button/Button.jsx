@@ -8,7 +8,7 @@ const StyledButton = styled.button`
   color: ${props => (props.isPrimary ? colors.white : colors.anchor)};
   background: ${props => (props.isPrimary ? colors.anchor : colors.white)};
   border: 1px solid ${colors.anchor};
-  border-radius: ${props => (props.isRound ? "2rem" : "")};
+  border-radius: ${props => (props.isSquare ? "" : "2rem")};
   padding: 0.5rem 1rem;
   font-weight: bold;
   letter-spacing: 1px;
@@ -22,8 +22,8 @@ const StyledButton = styled.button`
   }
   &:active {
     color: ${colors.white};
-    background-color: ${colors.success};
-    border-color: ${colors.success};
+    background-color: ${colors.anchor};
+    border-color: ${colors.anchor};
   }
   &[disabled] {
     color: ${colors.grey_40};
@@ -45,7 +45,7 @@ const ButtonIcon = styled(FontAwesomeIcon)`
 function Button({
   label,
   isPrimary,
-  isRound,
+  isSquare,
   isDisabled,
   isFloating,
   icon,
@@ -56,7 +56,7 @@ function Button({
       type="button"
       isPrimary={isPrimary}
       disabled={isDisabled}
-      isRound={isRound}
+      isSquare={isSquare}
       isFloating={isFloating}
       onClick={onClick}
     >
@@ -71,7 +71,7 @@ const propTypes = {
   label: PropTypes.string,
   isPrimary: PropTypes.bool,
   isDisabled: PropTypes.bool,
-  isRound: PropTypes.bool,
+  isSquare: PropTypes.bool,
   isFloating: PropTypes.bool,
   icon: PropTypes.array,
   onClick: PropTypes.func.isRequired

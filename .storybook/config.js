@@ -107,7 +107,7 @@ addDecorator(withNotes);
 
 // Info
 setDefaults({
-  header: true, // Toggles display of header with component name and description
+  header: false, // Toggles display of header with component name and description
   inline: true, // Displays info inline vs click button to view
   source: false // Displays the source of story Component
 });

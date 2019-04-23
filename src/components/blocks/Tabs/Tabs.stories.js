@@ -1,8 +1,8 @@
-import React from "react"
-import { storiesOf } from "@storybook/react"
-import { Padding } from "helpers/Display"
-import Tabs, { Tab } from "blocks/Tabs"
-import Button from "atoms/Button"
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import { Padding } from "helpers/Display";
+import Tabs, { Tab } from "blocks/Tabs";
+import Button from "atoms/Button";
 
 // Buttons
 storiesOf("Blocks|Tabs", module)
@@ -13,4 +13,4 @@ storiesOf("Blocks|Tabs", module)
       <Tab isSelected />
       <Tab />
     </Tabs>
-  ))
+  ));

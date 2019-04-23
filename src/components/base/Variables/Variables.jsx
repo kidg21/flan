@@ -12,7 +12,15 @@ export const colors = {
   anchor: "hsl(201, 56%, 60%)",
   success: "hsl(90, 46%, 46%)",
   warning: "hsl(34, 88%, 52%)",
-  alert: "hsl(1, 55%, 50%)"
+  alert: "hsl(1, 55%, 50%)",
+  generalIndustry: "hsl(194, 59%, 35%)",
+  government: "hsl(166, 100%, 28%)",
+  insurance: "hsl(89, 39%, 50%)",
+  homeBuilding: "hsl(43, 65%, 49%)",
+  realEstate: "hsl(12, 61%, 50%)",
+  open: "hsl(365, 38%, 50%)",
+  open2: "hsl(288, 13%, 38%)",
+
 }
 
 // Typefaces

@@ -1,66 +1,44 @@
-import React, { useState, Fragment } from "react"
-import PropTypes from "prop-types"
-import styled, { css } from "styled-components"
-import { colors } from "Variables"
-import Icon from "atoms/Icon"
-import Badge from "atoms/Badge"
-import Panel, {
-  PanelSection,
-  PanelBody,
-  PanelFooter
-} from "../../layout/Panel/Panel"
+import React, { useState, Fragment } from "react";
+import PropTypes from "prop-types";
+import styled, { css } from "styled-components";
+import { colors } from "Variables";
+import Icon from "atoms/Icon";
+import Badge from "atoms/Badge";
+import Panel, { PanelSection, PanelBody } from "../../layout/Panel/Panel";
 
-const notificationProps = {
-  nameProp: ["far", "bell"],
-  colorProp: "dimgray"
-}
+const ItemList = styled.ul`
+  display: flex-inline;
+`;
 
-const sharedContentProps = {
-  nameProp: ["far", "share-alt"],
-  colorProp: "dimgray"
-}
-
-const informationProps = {
-  nameProp: ["far", "info"],
-  colorProp: "dimgray"
-}
-
-const uploadProps = {
-  nameProp: ["far", "arrow-from-bottom"],
-  colorProp: "dimgray"
-}
-
-const settingsProps = {
-  nameProp: ["far", "cog"],
-  colorProp: "dimgray"
-}
-
-const signOutProps = {
-  nameProp: ["far", "sign-out"],
-  colorProp: "dimgray"
-}
-
-const MenuSection = styled.div`
-  overflow: hidden;
-  //   border-bottom: 0.25px solid #eaeded;
-  padding: 2em 1em 2em;
-  cursor: pointer;
-  justify-content: flex-start;
+const Item = styled.li`
+  list-style: none;
   display: flex;
+  background: ${colors.white};
+  padding: 30px;
+  cursor: pointer;
 
   &:hover {
-    border-left: 3px solid ${colors.success};
-    background: #eef5e8;
+    color: black;
+    ${IconContainer} {
+      color: ${colors.success};
+    }
   }
+`;
 
-  &:active {
-    border-left: 3px solid ${colors.success};
-  }
-`
+const IconContainer = styled.div`
+  width: 20px;
+`;
+
+const ItemName = styled.span`
+  margin: 0;
+  flex: auto;
+  padding-left: 1.5em;
+  color: ${colors.grey_80};
+`;
 
 ///for dark option use gradient style={{ backgroundImage: "linear-gradient(#3B3B55, #051937)" }}
 
-function MainMenu() {
+function Menu() {
   return (
     <Panel>
       <PanelSection
@@ -78,55 +56,49 @@ function MainMenu() {
           justifyContent: "center"
         }}
       >
-        <MenuSection>
-          <Icon {...uploadProps} />{" "}
-          <span style={{ margin: 0, flex: "auto", paddingLeft: "1.5em" }}>
-            Uploads
-          </span>
-        </MenuSection>
-        <MenuSection>
-          <Icon {...notificationProps} />{" "}
-          <span style={{ margin: 0, flex: "auto", paddingLeft: "1.5em" }}>
-            Notifications
-          </span>
-        </MenuSection>
-        <MenuSection>
-          <Icon {...sharedContentProps} />{" "}
-          <span style={{ margin: 0, flex: "auto", paddingLeft: "1.5em" }}>
-            Shared Content
-          </span>
-        </MenuSection>
-        <MenuSection>
-          <Icon {...informationProps} />{" "}
-          <span style={{ margin: 0, flex: "auto", paddingLeft: "1.5em" }}>
-            Information
-          </span>
-        </MenuSection>
-        <MenuSection>
-          <Icon {...settingsProps} />{" "}
-          <span style={{ margin: 0, flex: "auto", paddingLeft: "1.5em" }}>
-            Settings
-          </span>
-        </MenuSection>
+        <ItemList>
+          <Item>
+            <IconContainer>
+              <Icon
+                style={{ marginLeft: "2px" }}
+                icon={["far", "arrow-from-bottom"]}
+                size="lg"
+              />{" "}
+            </IconContainer>
+            <ItemName>Uploads</ItemName>
+          </Item>
+          <Item>
+            <Icon icon={["far", "bell"]} size="lg" />{" "}
+            <ItemName>Notifications</ItemName>
+          </Item>
+          <Item>
+            <Icon icon={["far", "share-alt"]} size="lg" />{" "}
+            <ItemName>Shared Content</ItemName>
+          </Item>
+          <Item>
+            <Icon
+              style={{ marginLeft: "4px" }}
+              icon={["far", "info"]}
+              size="lg"
+            />{" "}
+            <ItemName>Information</ItemName>
+          </Item>
+          <Item>
+            <Icon icon={["far", "cog"]} size="lg" />{" "}
+            <ItemName>Settings</ItemName>
+          </Item>
+          <Item>
+            <Icon
+              style={{ marginLeft: "2px" }}
+              icon={["far", "user"]}
+              size="lg"
+            />{" "}
+            <ItemName>Account</ItemName>
+          </Item>
+        </ItemList>
       </PanelBody>
-      <PanelSection>
-        <div
-          style={{
-            padding: "2em 1em 2em",
-            cursor: "pointer",
-            justifyContent: "flex-start",
-            alignItems: "baseline",
-            display: "flex"
-          }}
-        >
-          <Badge message="UN" />
-          <span style={{ margin: 0, flex: "auto", paddingLeft: "1.5em" }}>
-            User Name
-          </span>
-        </div>
-      </PanelSection>
     </Panel>
-  )
+  );
 }
 
-export default MainMenu
+export default Menu;
