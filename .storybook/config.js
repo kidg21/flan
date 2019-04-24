@@ -1,39 +1,36 @@
-import { configure, addDecorator, setAddon } from "@storybook/react";
-import React, { Fragment } from "react";
-import { withNotes } from "@storybook/addon-notes";
-import { withOptions } from "@storybook/addon-options";
-import { themes } from "@storybook/components";
-import { withInfo } from "@storybook/addon-info";
-import { setDefaults } from "@storybook/addon-info";
-import { configureActions } from "@storybook/addon-actions";
-import { checkA11y } from "@storybook/addon-a11y";
-import {
-  configureViewport,
-  INITIAL_VIEWPORTS
-} from "@storybook/addon-viewport";
-import chaptersAddon from "react-storybook-addon-chapters";
+import { configure, addDecorator, setAddon } from "@storybook/react"
+import React, { Fragment } from "react"
+import { withNotes } from "@storybook/addon-notes"
+import { withOptions } from "@storybook/addon-options"
+import { themes } from "@storybook/components"
+import { withInfo } from "@storybook/addon-info"
+import { setDefaults } from "@storybook/addon-info"
+import { configureActions } from "@storybook/addon-actions"
+import { checkA11y } from "@storybook/addon-a11y"
+import { configureViewport, INITIAL_VIEWPORTS } from "@storybook/addon-viewport"
+import chaptersAddon from "react-storybook-addon-chapters"
 
 // Import Font Awesome Icon Library
-import "../src/icons/fontawesome";
+import "../src/icons/fontawesome"
 
 // Create and add global styles
-import GlobalStyles from "GlobalStyles";
-import PropTable from "react-storybook-addon-chapters/dist/components/PropTable";
+import GlobalStyles from "GlobalStyles"
+// import PropTable from "react-storybook-addon-chapters/dist/components/PropTable"
 
-addDecorator(
-  withInfo({
-    styles: {
-      header: {
-        h1: {
-          color: "#4b4844"
-        },
-        h2: {
-          color: "#60aad2"
-        }
-      }
-    }
-  })
-);
+// addDecorator(
+//   withInfo({
+//     styles: {
+//       header: {
+//         h1: {
+//           color: "#4b4844"
+//         },
+//         h2: {
+//           color: "#60aad2"
+//         }
+//       }
+//     }
+//   })
+// )
 
 function withGlobalStyles(storyFn) {
   return (
@@ -41,10 +38,10 @@ function withGlobalStyles(storyFn) {
       <GlobalStyles />
       {storyFn()}
     </Fragment>
-  );
+  )
 }
 
-addDecorator(withGlobalStyles);
+addDecorator(withGlobalStyles)
 
 // Option defaults:
 addDecorator(
@@ -55,14 +52,13 @@ addDecorator(
     theme: themes.normal,
     backgroundColor: "#a5d2ff"
   })
-);
+)
 
 // Chapters
-setAddon(chaptersAddon);
-
 configure(function() {
-  setDefaults({ sectionOptions: { useTheme: true } });
-}, module);
+  setDefaults({ sectionOptions: { useTheme: true } })
+}, module)
+setAddon(chaptersAddon)
 
 // Configure Viewport
 const newViewports = {
@@ -80,51 +76,39 @@ const newViewports = {
       height: "801px"
     }
   }
-};
+}
 
 configureViewport({
   viewports: {
     ...INITIAL_VIEWPORTS,
     ...newViewports
-  }
-});
-
-configureViewport({
+  },
   defaultViewport: "responsive"
-  // defaultViewport: "iphone6"
-});
-
-// Theme
-// addDecorator(
-//   withOptions({
-//     name: "Foo",
-//     theme: themes.normal
-//   })
-// )
+})
 
 // Notes
-addDecorator(withNotes);
+addDecorator(withNotes)
 
 // Info
-setDefaults({
-  header: true, // Toggles display of header with component name and description
-  inline: true, // Displays info inline vs click button to view
-  source: false // Displays the source of story Component
-});
+// setDefaults({
+//   header: true, // Toggles display of header with component name and description
+//   inline: false, // Displays info inline vs click button to view
+//   source: false // Displays the source of story Component
+// })
 
 // Actions
 configureActions({
   depth: 100,
   // Limit the number of items logged into the actions panel
   limit: 20
-});
+})
 
 // a11y
-addDecorator(checkA11y);
+addDecorator(checkA11y)
 
-const req = require.context("../src", true, /.stories.js$/);
+const req = require.context("../src", true, /.stories.js$/)
 function loadStories() {
-  req.keys().forEach(filename => req(filename));
+  req.keys().forEach(filename => req(filename))
 }
 
-configure(loadStories, module);
+configure(loadStories, module)
