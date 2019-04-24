@@ -4,8 +4,8 @@ import styled, { css } from "styled-components";
 
 const AccordionSection = styled.div`
   line-height: normal;
-  border-bottom: 0.25px solid #eaeded;
-  border-top: 0.25px solid #eaeded;
+  // border-bottom: 0.25px solid #eaeded;
+  // border-top: 0.25px solid #eaeded;
   background: white;
   cursor: pointer;
 `;

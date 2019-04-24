@@ -58,6 +58,7 @@ import {
   faChevronLeft as faChevronLeftLight,
   faChevronRight as faChevronRightLight,
   faClone,
+  faDatabase,
   faDirections,
   faPlusCircle,
   faTimes as faTimesLight
@@ -102,6 +103,7 @@ library.add(
   faCoffee,
   faCog,
   faCopy,
+  faDatabase,
   faDirections,
   faEbay,
   faEllipsisV,
