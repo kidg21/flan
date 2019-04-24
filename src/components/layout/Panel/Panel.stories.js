@@ -1,9 +1,9 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { checkA11y } from "@storybook/addon-a11y";
-import Card, { CardList } from "../Card/Card";
-import Panel, { PanelSection, PanelBody } from "../Panel/Panel";
-import PanelNotes from "./Panel.md";
+import React from "react"
+import { storiesOf } from "@storybook/react"
+import { checkA11y } from "@storybook/addon-a11y"
+import Card, { CardList } from "../Card/Card"
+import Panel, { PanelSection, PanelBody } from "../Panel/Panel"
+import PanelNotes from "./Panel.md"
 
 storiesOf("Layout|Panel", module)
   .addDecorator(checkA11y)
@@ -24,7 +24,7 @@ storiesOf("Layout|Panel", module)
   .add("Panel - 3 Sections", () => (
     <Panel>
       <PanelSection />
-      <PanelBody />
+      <PanelSection body />
       <PanelSection />
     </Panel>
   ))
@@ -61,4 +61,4 @@ storiesOf("Layout|Panel", module)
       </PanelBody>
       <PanelSection />
     </Panel>
-  ));
+  ))

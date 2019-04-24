@@ -10,7 +10,7 @@ import {
   select,
   number
 } from "@storybook/addon-knobs"
-import Panel, { PanelBody } from "../../layout/Panel/Panel"
+import Panel, { PanelSection, PanelBody } from "../../layout/Panel/Panel"
 import Form, { Section, SectionName } from "../../layout/Form/Form"
 import Input from "atoms/Input"
 
@@ -280,7 +280,7 @@ storiesOf("Atoms|Input", module)
 // Input ( The Input Family )
 storiesOf("Atoms|Input", module).add("The Input Family", props => (
   <Panel>
-    <PanelBody>
+    <PanelSection body>
       <Form>
         <Section>
           <SectionName>The Input Family</SectionName>
@@ -395,6 +395,6 @@ storiesOf("Atoms|Input", module).add("The Input Family", props => (
           />
         </Section>
       </Form>
-    </PanelBody>
+    </PanelSection>
   </Panel>
 ))
