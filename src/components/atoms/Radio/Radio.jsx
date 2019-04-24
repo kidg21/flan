@@ -19,7 +19,7 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
   cursor: pointer;
   -webkit-appearance: none;
   &:checked {
-    background-color: ${colors.anchor}
+    background-color: ${colors.anchor};
   }
   &:focus {
     outline: none;
@@ -127,4 +127,4 @@ Radio.propTypes = {
   name: PropTypes.string.isRequired
 }
 
-export { Radio as default, CustomRadio }
+export { Radio as default }

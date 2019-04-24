@@ -50,7 +50,6 @@ function Checkbox({ ...props }) {
   )
 }
 
-
 Checkbox.defaultProps = {
   id: "c1",
   label: "Checkbox Label"
@@ -63,4 +62,4 @@ Checkbox.propTypes = {
   label: PropTypes.string.isRequired
 }
 
-export { Checkbox as default, CustomCheckbox }
+export { Checkbox as default }

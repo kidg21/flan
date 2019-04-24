@@ -18,22 +18,22 @@ import "../src/icons/fontawesome";
 
 // Create and add global styles
 import GlobalStyles from "GlobalStyles";
-import PropTable from "react-storybook-addon-chapters/dist/components/PropTable";
+// import PropTable from "react-storybook-addon-chapters/dist/components/PropTable"
 
-addDecorator(
-  withInfo({
-    styles: {
-      header: {
-        h1: {
-          color: "#4b4844"
-        },
-        h2: {
-          color: "#60aad2"
-        }
-      }
-    }
-  })
-);
+// addDecorator(
+//   withInfo({
+//     styles: {
+//       header: {
+//         h1: {
+//           color: "#4b4844"
+//         },
+//         h2: {
+//           color: "#60aad2"
+//         }
+//       }
+//     }
+//   })
+// )
 
 function withGlobalStyles(storyFn) {
   return (
@@ -58,11 +58,10 @@ addDecorator(
 );
 
 // Chapters
-setAddon(chaptersAddon);
-
 configure(function() {
   setDefaults({ sectionOptions: { useTheme: true } });
 }, module);
+setAddon(chaptersAddon);
 
 // Configure Viewport
 const newViewports = {
@@ -86,31 +85,19 @@ configureViewport({
   viewports: {
     ...INITIAL_VIEWPORTS,
     ...newViewports
-  }
-});
-
-configureViewport({
+  },
   defaultViewport: "responsive"
-  // defaultViewport: "iphone6"
 });
-
-// Theme
-// addDecorator(
-//   withOptions({
-//     name: "Foo",
-//     theme: themes.normal
-//   })
-// )
 
 // Notes
 addDecorator(withNotes);
 
 // Info
-setDefaults({
-  header: false, // Toggles display of header with component name and description
-  inline: true, // Displays info inline vs click button to view
-  source: false // Displays the source of story Component
-});
+// setDefaults({
+//   header: true, // Toggles display of header with component name and description
+//   inline: false, // Displays info inline vs click button to view
+//   source: false // Displays the source of story Component
+// })
 
 // Actions
 configureActions({

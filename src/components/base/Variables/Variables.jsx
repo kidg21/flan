@@ -57,7 +57,7 @@ export const shadows = {
   dropShadow:
     "hsl(34, 5%, 36%) 0rem 0rem 1px, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem;",
   panelSectionShadow:
-  "drop-shadow(0 0 1px hsl(34, 5%, 36%)) drop-shadow(0.25rem 0.25rem 0.25rem hsla(34, 5%, 36%, 0.333333));",
+    "hsl(34, 5%, 36%) 0rem 0rem 1px, hsla(34, 5%, 36%, 0.333333) 0 0.1rem 0.5rem, hsla(34, 5%, 36%, 0.333333) 0 -0.1rem 0.5rem;",
   lightBorderShadow:
     "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem",
   checkedShadow:

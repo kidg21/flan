@@ -15,13 +15,17 @@ const CardWrapper = styled.div`
   &:empty {
     &:before {
       ${PlaceholderText}
-      content: "{ Card } \00000A 'Container for content modules'";
+      content: "Card";
       padding: 2rem;
     }
   }
 `
 
-const CardList = styled(Grid)`
+// const CardList = styled(Grid)`
+const CardList = styled.ul`
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   padding: 1rem;
   ${CardWrapper} {
     border-radius: 5px;
