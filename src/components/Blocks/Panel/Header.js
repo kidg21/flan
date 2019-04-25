@@ -74,7 +74,7 @@ function Header({ title, ...props }) {
 }
 
 Header.defaultProps = {
-  title: "Information Header",
+  title: "Panel Header",
   twoParts: false,
   threeParts: false,
   property: false

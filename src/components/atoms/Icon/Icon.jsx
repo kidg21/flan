@@ -12,6 +12,7 @@ const StyledIcon = styled(FontAwesomeIcon)`
   border: ${props => (props.border ? "2px solid" : "")};
   border-color: ${props => (props.border ? colors.grey_20 : "")};
   border-radius: ${props => (props.border ? "5px" : "")};
+  cursor: pointer;
   /* cursor: ${props => (props.anchor ? "pointer" : "")}; */
   color: ${props =>
     props.success

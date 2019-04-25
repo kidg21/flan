@@ -1,1 +1,1 @@
-export { default, CommandRight } from "./Command.jsx"
+export { default } from "./Command.jsx";
