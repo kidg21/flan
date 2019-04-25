@@ -130,12 +130,7 @@ storiesOf("Templates|Panel", module)
               }}
             />
             <Accordion
-              header={
-                <Group
-                  title="First 
-              Group"
-                />
-              }
+              header={<Group title="First Group" number="3" />}
               visibility={visibility}
               onClick={() => {
                 setVisibility(!visibility);
