@@ -1,37 +1,17 @@
-import { configure, addDecorator, setAddon } from "@storybook/react"
 import React, { Fragment } from "react"
+import { configure, addParameters, addDecorator } from "@storybook/react"
+import { fonts, colors, shadows } from "Variables"
+import { themes } from "@storybook/theming"
+import FlanTheme from "./FlanTheme"
+import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport"
+import { withA11y } from "@storybook/addon-a11y"
 import { withNotes } from "@storybook/addon-notes"
-import { withOptions } from "@storybook/addon-options"
-import { themes } from "@storybook/components"
+// import { configureActions } from "@storybook/addon-actions"
 import { withInfo } from "@storybook/addon-info"
 import { setDefaults } from "@storybook/addon-info"
-import { configureActions } from "@storybook/addon-actions"
-import { checkA11y } from "@storybook/addon-a11y"
-import { configureViewport, INITIAL_VIEWPORTS } from "@storybook/addon-viewport"
-import chaptersAddon from "react-storybook-addon-chapters"
-
-// Import Font Awesome Icon Library
-import "../src/icons/fontawesome"
 
 // Create and add global styles
 import GlobalStyles from "GlobalStyles"
-// import PropTable from "react-storybook-addon-chapters/dist/components/PropTable"
-
-// addDecorator(
-//   withInfo({
-//     styles: {
-//       header: {
-//         h1: {
-//           color: "#4b4844"
-//         },
-//         h2: {
-//           color: "#60aad2"
-//         }
-//       }
-//     }
-//   })
-// )
-
 function withGlobalStyles(storyFn) {
   return (
     <Fragment>
@@ -40,25 +20,7 @@ function withGlobalStyles(storyFn) {
     </Fragment>
   )
 }
-
 addDecorator(withGlobalStyles)
-
-// Option defaults:
-addDecorator(
-  withOptions({
-    hierarchySeparator: /\/|\./,
-    hierarchyRootSeparator: /\|/,
-    name: "FLAN",
-    theme: themes.normal,
-    backgroundColor: "#a5d2ff"
-  })
-)
-
-// Chapters
-configure(function() {
-  setDefaults({ sectionOptions: { useTheme: true } })
-}, module)
-setAddon(chaptersAddon)
 
 // Configure Viewport
 const newViewports = {
@@ -78,36 +40,64 @@ const newViewports = {
   }
 }
 
-configureViewport({
-  viewports: {
-    ...INITIAL_VIEWPORTS,
-    ...newViewports
+// Configure Parameters
+addParameters({
+  viewport: {
+    viewports: { ...INITIAL_VIEWPORTS, ...newViewports }
+    // defaultViewport: "iphone6"
   },
-  defaultViewport: "responsive"
+  options: {
+    theme: FlanTheme,
+    // url: 'https://storybook.js.org',
+    goFullScreen: false,
+    addonPanelInRight: true,
+    hierarchySeparator: /\/|\./,
+    hierarchyRootSeparator: /\|/
+  },
+  a11y: {
+    // ... axe options
+    element: "#root", // optional selector which element to inspect
+    config: {}, // axe-core configurationOptions (https://github.com/dequelabs/axe-core/blob/develop/doc/API.md#parameters-1)
+    options: {} // axe-core optionsParameter (https://github.com/dequelabs/axe-core/blob/develop/doc/API.md#options-parameter)
+  }
 })
+
+// a11y
+addDecorator(withA11y)
 
 // Notes
 addDecorator(withNotes)
 
-// Info
-// setDefaults({
-//   header: true, // Toggles display of header with component name and description
-//   inline: false, // Displays info inline vs click button to view
-//   source: false // Displays the source of story Component
+// Actions
+// configureActions({
+//   depth: 100,
+//   // Limit the number of items logged into the actions panel
+//   limit: 20
 // })
 
-// Actions
-configureActions({
-  depth: 100,
-  // Limit the number of items logged into the actions panel
-  limit: 20
+// Info
+/** Removed due to impact on layout.
+ * We will replace with Storybook Docs when it is available
+ */
+setDefaults({
+  header: true, // Toggles display of header with component name and description
+  inline: true, // Displays info inline vs click button to view
+  source: false, // Displays the source of story Component
+  styles: {
+    header: {
+      h1: {
+        color: colors.grey_80
+      },
+      h2: {
+        color: colors.anchor
+      }
+    }
+  }
 })
 
-// a11y
-addDecorator(checkA11y)
-
-const req = require.context("../src", true, /.stories.js$/)
+const req = require.context("../src/components", true, /.stories.js$/)
 function loadStories() {
+  // require("../src/attributes/App.js")
   req.keys().forEach(filename => req(filename))
 }
 

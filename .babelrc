@@ -29,6 +29,7 @@
         "alias": {
           "Variables": "ss-styled-components/src/components/base/Variables/Variables.jsx",
           "GlobalStyles": "ss-styled-components/src/components/base/GlobalStyles/GlobalStyles.jsx",
+          "images": "ss-styled-components/src/images",
           "helpers": "ss-styled-components/src/components/_helpers",
           "attributes": "ss-styled-components/src/attributes",
           "atoms": "ss-styled-components/src/components/atoms",
