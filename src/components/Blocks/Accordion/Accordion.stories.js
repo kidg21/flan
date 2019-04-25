@@ -8,8 +8,7 @@ import Table from "blocks/Table";
 
 storiesOf("Blocks|Accordion", module).add("Accordion", () =>
   React.createElement(() => {
-    const [visibility, setVisibility] = useState(false);
-    const [visibility2, setVisibility2] = useState(false);
+    const [activeAccordion, setActiveAccordion] = useState("");
     return (
       <div>
         <Accordion
@@ -18,9 +17,9 @@ storiesOf("Blocks|Accordion", module).add("Accordion", () =>
               <h4>This is my accordion header example!</h4>
             </Container>
           }
-          visibility={visibility}
+          visibility={activeAccordion === "accordion1"}
           onClick={() => {
-            setVisibility(!visibility);
+            setActiveAccordion("accordion1");
           }}
         >
           <Container>
@@ -33,9 +32,9 @@ storiesOf("Blocks|Accordion", module).add("Accordion", () =>
               <h4>This is my accordion header example!</h4>
             </Container>
           }
-          visibility={visibility2}
+          visibility={activeAccordion === "accordion2"}
           onClick={() => {
-            setVisibility2(!visibility2);
+            setActiveAccordion("accordion2");
           }}
           children={
             <Container>

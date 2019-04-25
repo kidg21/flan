@@ -13,6 +13,23 @@ const ItemList = styled.ul`
 const Item = styled.li`
   list-style: none;
   display: flex;
+  justify-content: space-between;
+  background: ${colors.white};
+  padding: 30px;
+  cursor: pointer;
+
+  &:hover {
+    font-weight: bold;
+  }
+
+  &:active {
+    font-weight: bold;
+  }
+`;
+
+const Header = styled.li`
+  list-style: none;
+  display: flex;
   background: ${colors.white};
   padding: 30px;
   cursor: pointer;
@@ -23,17 +40,10 @@ const Item = styled.li`
       color: ${colors.success};
     }
   }
-
-  &:active {
-    font-weight: bold;
-    ${IconContainer} {
-      color: ${colors.success};
-    }
-  }
 `;
 
 const IconContainer = styled.div`
-  width: 20px;
+  width: 5px;
 `;
 
 const ItemName = styled.span`
@@ -45,17 +55,16 @@ const ItemName = styled.span`
 
 ///for dark option use gradient style={{ backgroundImage: "linear-gradient(#3B3B55, #051937)" }}
 
-function Menu() {
+function InformationMenu() {
   return (
     <Panel>
-      <PanelSection
-        style={{
-          display: "flex",
-          alignItems: "center",
-          padding: "1.8em"
-        }}
-      >
-        <h1 style={{ color: "black" }}>LV.</h1>
+      <PanelSection>
+        <Header style={{ justifyContent: "start" }}>
+          <IconContainer>
+            <Icon icon={["far", "angle-left"]} size="lg" />
+          </IconContainer>
+          <ItemName style={{ fontWeight: "bold" }}>Information</ItemName>
+        </Header>
       </PanelSection>
       <PanelSection
         style={{
@@ -65,42 +74,28 @@ function Menu() {
       >
         <ItemList>
           <Item>
-            <IconContainer>
-              <Icon
-                style={{ marginLeft: "2px" }}
-                icon={["far", "arrow-from-bottom"]}
-                size="lg"
-              />{" "}
-            </IconContainer>
-            <ItemName>Uploads</ItemName>
+            <ItemName>FAQs</ItemName>
+            <Icon icon={["far", "angle-right"]} />
           </Item>
           <Item>
-            <Icon icon={["far", "bell"]} size="lg" />{" "}
-            <ItemName>Notifications</ItemName>
+            <ItemName>Documentation</ItemName>
+            <Icon icon={["far", "angle-right"]} />
           </Item>
           <Item>
-            <Icon icon={["far", "share-alt"]} size="lg" />{" "}
-            <ItemName>Shared Content</ItemName>
+            <ItemName>Best Practices</ItemName>
+            <Icon icon={["far", "angle-right"]} />
           </Item>
           <Item>
-            <Icon
-              style={{ marginLeft: "4px" }}
-              icon={["far", "info"]}
-              size="lg"
-            />{" "}
-            <ItemName>Information</ItemName>
+            <ItemName>New Updates</ItemName>
+            <Icon icon={["far", "angle-right"]} />
           </Item>
           <Item>
-            <Icon icon={["far", "cog"]} size="lg" />{" "}
-            <ItemName>Settings</ItemName>
+            <ItemName>Support</ItemName>
+            <Icon icon={["far", "angle-right"]} />
           </Item>
           <Item>
-            <Icon
-              style={{ marginLeft: "2px" }}
-              icon={["far", "user"]}
-              size="lg"
-            />{" "}
-            <ItemName>Account</ItemName>
+            <ItemName>Contact Us</ItemName>
+            <Icon icon={["far", "angle-right"]} />
           </Item>
         </ItemList>
       </PanelSection>
@@ -108,4 +103,4 @@ function Menu() {
   );
 }
 
-export default Menu;
+export default InformationMenu;

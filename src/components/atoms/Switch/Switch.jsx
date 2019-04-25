@@ -53,8 +53,8 @@ const StyledSwitch = styled.div`
 `
 
 
-const Toggle = ({ className, checked, ...props }) => (
-  <SwitchContainer className={className}>
+const Toggle = ({ checked, ...props }) => (
+  <SwitchContainer>
     <HiddenSwitch checked={checked} {...props} />
     <StyledSwitch checked={checked}>
       <Circle checked={checked} {...props} />
@@ -65,9 +65,18 @@ const Toggle = ({ className, checked, ...props }) => (
 const Switch = ({checked, id, ...props}) => {
   return (
     <label>
-      <Toggle checked={checked} {...props} />
+      <Toggle checked={checked} id={id} {...props} />
     </label>
-  )
+  );
 }
 
-export default Switch
+Switch.defaultProps = {
+  id: "default",
+};
+
+Switch.propTypes = {
+  id: PropTypes.string,
+};
+
+
+export { Switch as default };

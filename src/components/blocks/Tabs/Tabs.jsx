@@ -13,21 +13,28 @@ const StyledTab = styled.div`
   text-align: center;
   width: min-content;
   /* font-size: 1.1em; */
-  transition: all 0.3s ease-in-out;
-  color: ${props => (props.isSelected ? colors.white : colors.anchor)};
-  background: ${props => (props.isSelected ? colors.success : colors.white)};
-  border: 1px solid ${colors.anchor};
-  border-color: ${props => (props.isSelected ? colors.success : colors.anchor)};
-  padding: 0.75rem 0.5rem;
+  // transition: all 0.7s ease-in-out;
+  color: ${props => (props.isSelected ? colors.white : colors.grey_40)};
+  background: ${props => (props.isSelected ? colors.anchor : colors.white)};
+  background-image: ${props => (props.isSelected ? "linear-gradient(#85b1c9, #68b0cd)" : "")};
+  border: 1px solid ${colors.grey_20};
+  // border-color: ${props => (props.isSelected ? colors.success : colors.anchor)};
+  padding: .25em;
   /* font-weight: bold; */
-  font-weight: ${props => (props.isSelected ? "700" : "600")};
-  letter-spacing: 1px;
+  // font-weight: ${props => (props.isSelected ? "700" : "600")};
+  // letter-spacing: 1px;
   cursor: pointer;
-  transition: all 0.15s ease;
+  // transition: all 0.7s ease-in;
+
+
+  &:hover {
+    filter: brightness(95%);
+  }
 `
-const TabLabel = styled.label`
-  font-size: inherit;
+const TabLabel = styled.span`
   cursor: pointer;
+  font-size: 12px;
+  line-height: normal;
   user-select: none;
 `
 

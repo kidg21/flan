@@ -37,7 +37,7 @@ function AlertBadge({ ...props }) {
       {props.info ? (
         <BadgeContainer info>
           {" "}
-          <Icon icon={["far", "info"]} inverse />{" "}
+          <Icon icon="info" inverse />{" "}
         </BadgeContainer>
       ) : null}
       {props.success ? (

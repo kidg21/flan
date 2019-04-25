@@ -23,8 +23,10 @@ const HeaderLayout = styled.div`
 `;
 
 const TitleContainer = styled.div`
+  overflow-wrap: break-word;
   display: flex;
   flex-wrap: wrap;
+  width: 12rem;
 `;
 
 function Header({ title, ...props }) {
@@ -33,7 +35,11 @@ function Header({ title, ...props }) {
       <Container>
         <Icon icon={["fal", "times"]} />
       </Container>
-      <HeaderLayout twoParts={props.twoParts} threeParts={props.threeParts}>
+      <HeaderLayout
+        twoParts={props.twoParts}
+        threeParts={props.threeParts}
+        property={props.property}
+      >
         <div>
           {props.twoParts ? (
             <TitleContainer>
@@ -41,16 +47,23 @@ function Header({ title, ...props }) {
             </TitleContainer>
           ) : props.threeParts ? (
             <Icon icon={["far", "angle-left"]} />
+          ) : props.property ? (
+            <div style={{ display: "flex" }}>
+              <TitleContainer>
+                <h4>{title}</h4>
+              </TitleContainer>
+              <Icon icon={["fal", "directions"]} size="lg" anchor />
+            </div>
           ) : null}
         </div>
         {props.twoParts ? (
           ""
         ) : props.threeParts ? (
           <TitleContainer>
-            <div>
-              <h4>{title}</h4>
-            </div>
+            <h4>{title}</h4>
           </TitleContainer>
+        ) : props.property ? (
+          ""
         ) : null}
         <div>
           <Icon icon={["far", "ellipsis-v"]} />
@@ -61,19 +74,17 @@ function Header({ title, ...props }) {
 }
 
 Header.defaultProps = {
-  title: "Information Header",
+  title: "Panel Header",
   twoParts: false,
   threeParts: false,
-  navProps: { nameProp: ["far", "angle-left"], colorProp: "dimgray" },
-  iconProps: { nameProp: ["far", "ellipsis-v"], colorProp: "dimgray" },
-  exitProps: { nameProp: ["fal", "times"], colorProp: "dimgray" },
-  directionsProps: { nameProp: ["fal", "directions"], colorProp: "#60aad2" }
+  property: false
 };
 
 Header.propTypes = {
   title: PropTypes.string.isRequired,
   twoParts: PropTypes.bool,
-  threeParts: PropTypes.bool
+  threeParts: PropTypes.bool,
+  property: PropTypes.bool
 };
 
 export default Header;

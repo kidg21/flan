@@ -25,41 +25,31 @@ const Container = styled.a`
   }
 `
 
-const defaultProps = {
-  iconProps: { nameProp: ["fal", "times"] },
-  labelProp: { contentProp: "yo brother" }
-}
 
-function Command({ flip, ...props }) {
-  const _iconProps = Object.assign({}, defaultProps.iconProps, props.iconProps)
-  const _labelProp = Object.assign({}, defaultProps.labelProp, props.labelProp)
-  props = { iconProps: _iconProps, labelProp: _labelProp }
+
+function Command({ id, flip, ...props }) {
+  // const _iconProps = Object.assign({}, defaultProps.iconProps, props.iconProps)
+  // const _labelProp = Object.assign({}, defaultProps.labelProp, props.labelProp)
+  // props = { iconProps: _iconProps, labelProp: _labelProp }
   return (
     <Container>
       <Icon {...props.iconProps} />
       <Label {...props.labelProp} />
     </Container>
-  )
+  );
 }
-
-function CommandRight({ flip, ...props }) {
-  const _iconProps = Object.assign({}, defaultProps.iconProps, props.iconProps)
-  const _labelProp = Object.assign({}, defaultProps.labelProp, props.labelProp)
-  props = { iconProps: _iconProps, labelProp: _labelProp }
-  return (
-    <Container flip>
-      <Icon {...props.iconProps} />
-      <Label {...props.labelProp} />
-    </Container>
-  )
-}
-
 Command.defaultProps = {
-  flip: true
-}
-Command.PropTypes = {
-  flip: PropTypes.bool
-}
+  id: "",
+  flip: true,
+  iconProps: { nameProp: ["fal", "times"] },
+  labelProp: { contentProp: "command" }
+};
+Command.propTypes = {
+  id: PropTypes.string,
+  flip: PropTypes.bool,
+  iconProps: PropTypes.string,
+  labelProp: PropTypes.string
+};
 
 // export default Command;
-export { Command as default, CommandRight }
+export { Command as default};

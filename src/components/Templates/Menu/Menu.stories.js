@@ -1,9 +1,9 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 // import CardHeader from "./CardHeader"
-import MainMenu from "./Menu";
-import TrialMenu from "./TrialMenu";
+import Menu from "./Menu";
+import InformationMenu from "./InformationMenu";
 
 storiesOf("Templates|Main Menu", module)
-  .add("Default", () => <MainMenu />)
-  .add("Trial", () => <TrialMenu />);
+  .add("Default Menu", () => <Menu />)
+  .add("Info Menu", () => <InformationMenu />);

@@ -2,17 +2,68 @@ import React, { useState, Fragment } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Container from "atoms/Container/Container";
+import Tabs, { Tab } from "blocks/Tabs";
+import Icon from "atoms/Icon";
+import { colors, shadows } from "Variables";
 
-const Placeholder = styled.span`
-  padding: 2em;
-  color: #bbb8b4;
+const SearchContainer = styled.div`
+  width: 30%;
+  // padding: 0.25em 0.6em 0.8em 0.8em;
+  border-radius: 5px;
+  // justify-content: space-between;
+  // display: flex;
+  // cursor: pointer;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
 `;
+
+const TextInput = styled.input`
+  font-size: 20px;
+  border: 0px solid ${colors.grey_20};
+  border-bottom: 0px solid ${colors.grey_20};
+  background-color: ${props => (props.error ? "#f9ebeb" : "")};
+  caret-color: ${props => (props.error ? colors.alert : "")};
+  min-height: 1rem;
+  padding: 0.3rem 0.5rem;
+  ::placeholder {
+    color: ${props => (props.error ? colors.alert : "")};
+  }
+  &:hover {
+    color: ${colors.grey_80};
+  }
+`;
+//   color: #bbb8b4;
+// `;
 
 function Search({}) {
   return (
-    <Container>
-      <Placeholder>Search</Placeholder>
-    </Container>
+    <SearchContainer>
+      <Container
+        style={{
+          padding: "1em",
+          justifyContent: "space-between",
+          display: "flex",
+          verticalAlign: "baseline"
+        }}
+      >
+        <TextInput placeholder="Search" />
+        <Icon
+          style={{
+            filter: "brightness(170%)",
+            paddingTop: "2px",
+            cursor: "pointer"
+          }}
+          icon={["far", "search"]}
+        />
+      </Container>
+      <Tabs>
+        <Tab />
+        <Tab isSelected />
+        <Tab />
+      </Tabs>
+    </SearchContainer>
   );
 }
 

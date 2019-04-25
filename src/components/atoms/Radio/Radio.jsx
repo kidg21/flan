@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import styled, { css } from "styled-components"
 import PropTypes from "prop-types"
 import { colors, shadows } from "Variables"
@@ -36,95 +36,30 @@ const RadioLabel = styled.label`
 `
 
 function Radio({ id, name, label, value, ...props }) {
-  // const [checked, setChecked] = useState({ selectedValue: "" })
-  // const handleCheckboxChange = event => {
-  // setChecked({ selectedValue: event.target.value })
-  // }
   return (
     <RadioContainer>
-      <RadioInput
-        id={id}
-        name={name}
-        value={value}
-        // checked={checked.selectedValue === props.value}
-        // onChange={handleCheckboxChange}
-        {...props}
-      />
+      <RadioInput id={id} name={name} value={value} {...props} />
       <RadioLabel htmlFor={id}>{label}</RadioLabel>
     </RadioContainer>
   )
 }
 
-// const StyledRadioContainer = styled.div`
-//   display: inline-block;
-//   vertical-align: middle;
-// `
-
-// const HiddenRadio = styled.input.attrs({ type: "radio" })`
-//   border: 0;
-//   clip: rect(0 0 0 0);
-//   /* clippath: inset(50%); */
-//   height: 1px;
-//   margin: -1px;
-//   overflow: hidden;
-//   padding: 0;
-//   position: absolute;
-//   white-space: nowrap;
-//   width: 1px;
-// `
-
-// const StyledRadioInput = styled.div`
-//   display: inline-block;
-//   width: 14px;
-//   border: 1px solid darkgray;
-//   height: 14px;
-//   background: ${props => (props.checked ? "dodgerblue" : "white")};
-//   border-radius: 30px;
-//   transition: all 150ms;
-//   cursor: pointer;
-// `
-
-// const StyledRadio = ({ className, checked, ...props }) => (
-//   <StyledRadioContainer className={className}>
-//     <HiddenRadio checked={checked} {...props} />
-//     <StyledRadioInput checked={checked} />
-//   </StyledRadioContainer>
-// )
-
-// const CustomRadio = props => {
-//   const [checked, setChecked] = useState(false)
-//   const handleCheckboxChange = event => {
-//     setChecked({ selectedValue: event.target.value })
-//   }
-//   return (
-//     <React.Fragment>
-//       <label>
-//         <StyledRadio
-//           checked={checked.selectedValue === props.value}
-//           onChange={handleCheckboxChange}
-//           value={props.value}
-//         />
-//         <span style={{ marginLeft: 8, fontSize: 14, fontFamily: "arial" }}>
-//           Label Text
-//         </span>
-//       </label>
-//     </React.Fragment>
-//   )
-// }
-
 Radio.defaultProps = {
   id: "r1",
   label: "Radio Label",
-  name: "radio"
+  name: "radio",
+  value: "1"
 }
 
 Radio.propTypes = {
   /** This is the Left nav command. */
   id: PropTypes.string,
+
   /** This is nav Title.  It is required. */
   label: PropTypes.string.isRequired,
   /** This is the Right nav command. */
-  name: PropTypes.string.isRequired
+  name: PropTypes.string.isRequired,
+  value: PropTypes.string
 }
 
 export { Radio as default }

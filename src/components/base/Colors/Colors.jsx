@@ -156,6 +156,7 @@ const Colors = () => {
           <small>Const</small>
           <h6>colors.grey_60</h6>
         </ColorBlockCode>
+        
         <ColorBlockCode>
           <small>HSL</small>
           <h6>34, 5%, 58%</h6>
