@@ -1,92 +1,136 @@
 import React from "react"
 import styled, { css } from "styled-components"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { colors } from "Variables"
-import PropTypes from "prop-types";
+import PropTypes from "prop-types"
 
 const BadgeContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 2em;
-  height: 2em;
-  border-radius: 20px;
-  background: ${props =>
-    props.blue
-      ? '#7CB9DA'
-      : props.green
-      ? '#8EBA61'
-      : props.orange
-      ? '#F2A642'
-      : props.red
-      ? '#D05F5D'
-      : props.grey
-      ? '#605c57'
-      : ""};
-  color: white;
+  width: 2.25em;
+  height: 2.25em;
+  background-color: ${props =>
+    props.success
+      ? colors.success
+      : props.warning
+      ? colors.warning
+      : props.alert
+      ? colors.alert
+      : props.anchor
+      ? colors.anchor
+      : props.light
+      ? colors.grey_light
+      : props.inverse
+      ? colors.black
+      : colors.grey_60};
+  color: ${props => (props.light ? colors.grey_80 : colors.white)};
+  font-size: ${props =>
+    props.tiny
+      ? ".5em"
+      : props.small
+      ? ".75em"
+      : props.large
+      ? "1.25em"
+      : props.xlarge
+      ? "1.5em"
+      : props.xxlarge
+      ? "1.75em"
+      : props.xxxlarge
+      ? "2em"
+      : "1em"};
+  font-weight: 700;
+  border: ${props => (props.light ? "2px solid" : null)};
+  border-color: ${props => (props.light ? colors.grey_40 : null)};
+  border-radius: 100%;
+  text-transform: uppercase;
+  line-height: normal;
+  overflow: hidden;
 `
 
-//Uses secondary colors to lighten graphics
-
-const Message = styled.h1`
-  margin: 0;
-  font-size: 12px;
-  display: flex;
-  align-self: center;
-  font-weight: bold;
+const BadgeLabel = styled.span`
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 `
 
-function Badge({ message, color, ...props}) {
+const BadgeIcon = styled(FontAwesomeIcon)``
+
+function Badge({
+  id,
+  label,
+  icon,
+  anchor,
+  success,
+  warning,
+  alert,
+  light,
+  inverse,
+  tiny,
+  small,
+  large,
+  xlarge,
+  xxlarge,
+  xxxlarge,
+  ...props
+}) {
   return (
-    <div>
-    {props.blue ? (
-      <BadgeContainer blue>
-        <Message>{message}</Message>
-      </BadgeContainer>
-    ) : null}
-    {props.green ? (
-      <BadgeContainer green>
-      <Message>{message}</Message>
-      </BadgeContainer>
-    ) : null}
-    {props.orange ? (
-      <BadgeContainer orange>
-      <Message>{message}</Message>
-      </BadgeContainer>
-    ) : null}
-    {props.red ? (
-      <BadgeContainer red>
-      <Message>{message}</Message>
-      </BadgeContainer>
-    ) : null}
-    {props.grey ? (
-      <BadgeContainer grey>
-      <Message>{message}</Message>
-      </BadgeContainer>
-    ) : null}
-  </div>
+    <BadgeContainer
+      id={id}
+      label={label}
+      icon={icon}
+      anchor={anchor}
+      success={success}
+      warning={warning}
+      alert={alert}
+      light={light}
+      inverse={inverse}
+      tiny={tiny}
+      small={small}
+      large={large}
+      xlarge={xlarge}
+      xxlarge={xxlarge}
+      xxxlarge={xxxlarge}
+    >
+      {icon ? <BadgeIcon icon={icon} /> : <BadgeLabel>{label}</BadgeLabel>}
+    </BadgeContainer>
   )
 }
 
-
 Badge.defaultProps = {
   id: "",
-  message: "message",
-  blue: false,
-  green: false,
-  orange: false,
-  red: false,
-  grey: false
-};
+  label: "",
+  icon: "",
+  anchor: false,
+  success: false,
+  warning: false,
+  alert: false,
+  inverse: false,
+  light: false,
+  tiny: false,
+  small: false,
+  large: false,
+  xlarge: false,
+  xxlarge: false,
+  xxxlarge: false
+}
 
 Badge.propTypes = {
   id: PropTypes.string,
-  message: PropTypes.string.isRequired,
-  blue: PropTypes.bool,
-  green: PropTypes.bool,
-  orange: PropTypes.bool,
-  red: PropTypes.bool,
-  grey: PropTypes.bool
-};
-
+  label: PropTypes.string,
+  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  anchor: PropTypes.bool,
+  success: PropTypes.bool,
+  warning: PropTypes.bool,
+  alert: PropTypes.bool,
+  inverse: PropTypes.bool,
+  light: PropTypes.bool,
+  tiny: PropTypes.bool,
+  small: PropTypes.bool,
+  large: PropTypes.bool,
+  xlarge: PropTypes.bool,
+  xxlarge: PropTypes.bool,
+  xxxlarge: PropTypes.bool
+}
 
 export { Badge as default }
