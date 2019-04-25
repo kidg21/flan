@@ -1,8 +1,8 @@
 import React from "react"
 import styled, { css, keyframes } from "styled-components"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { colors, shadows } from "Variables"
 import PropTypes from "prop-types"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const StyledButton = styled.button`
   color: ${props => (props.isPrimary ? colors.white : colors.anchor)};

@@ -1,5 +1,6 @@
 import React from "react"
 import styled, { css } from "styled-components"
+import GlobalStyles from "GlobalStyles"
 import PropTypes from "prop-types"
 import { InputLabel, HelpText, ErrorText } from "layout/Form"
 import SelectMenu from "atoms/SelectMenu"
@@ -75,8 +76,7 @@ const TextInput = styled.input`
       color: ${props => (props.error ? colors.alert : colors.grey_60)};
     }
     ::selection {
-      background-color: ${props =>
-        props.error ? colors.alert : ""};
+      background-color: ${props => (props.error ? colors.alert : "")};
     }
   }
 `

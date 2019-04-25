@@ -84,7 +84,7 @@ const Label = styled.label`
     display: ${props => (props.isRequired ? "" : "none")};
     line-height: 0;
     font-size: 1.5rem;
-    color: ${colors.grey_60};
+    color: ${colors.alert};
   }
 `
 const InputLabel = props => (

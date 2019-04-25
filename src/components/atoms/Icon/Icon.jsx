@@ -77,11 +77,6 @@ function Icon({
 
 Icon.defaultProps = {
   icon: ["fas", "circle"]
-  // inverse: true,
-  // rotation: 90,
-  // flip: "both",
-  // stacked: true
-  // mask: ["fas", "circle"]
 }
 
 Icon.propTypes = {

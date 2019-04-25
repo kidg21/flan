@@ -1,11 +1,11 @@
 import { createGlobalStyle } from "styled-components"
 import styledNormalize from "styled-normalize"
 // Import variables
-// import { colors, fonts, fontSize } from "../variables";
-import { colors, fonts, fontSize } from "../Variables/Variables"
+import { colors, fonts, fontSize } from "Variables"
 // Import Fonts
-// import Lato_700 from "../../fonts/lato-v14-latin-700.ttf"
 import "../../../css/fonts.css"
+// Import Icons
+import "../../../icons/fontawesome"
 
 const GlobalStyles = createGlobalStyle`
 
@@ -19,13 +19,6 @@ const GlobalStyles = createGlobalStyle`
         src: local("Lato");
         src: url(${Lato_700});
     } */
-    }
-
-    ${
-      "" /* @import url("https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,800,900"); */
-    }
-    ${
-      "" /* @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900"); */
     }
 
     /* Document resets */
