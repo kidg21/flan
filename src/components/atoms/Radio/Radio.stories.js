@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import { Section, SectionName, InputGroup } from "../../layout/Form/Form";
 import Radio from "atoms/Radio";
-
 
 const radio_1 = {
   id: "radio-1",
@@ -39,27 +38,64 @@ const radio_long = {
 
 storiesOf("Atoms|Radio", module)
   .addDecorator(story => <div style={{ padding: "2rem" }}>{story()}</div>)
-  .add("Standard Radio", () => (
-    <Radio
-      label="Radio 1"
-      id="radio-1"
-      name="radio-group"
-      value="1"
-      checked={true}
-    />
-  ))
-  .add("Radio Block (Responsive)", () => (
-    <Section>
-      <SectionName>Radio Block (Responsive)</SectionName>
-      <InputGroup>
-        <Radio {...radio_1} />
-        <Radio {...radio_2} />
-        <Radio {...radio_3} />
-        <Radio {...radio_4} />
-        <Radio {...radio_long} />
-      </InputGroup>
-    </Section>
-  ))
+  .add("Standard Radio", () =>
+    React.createElement(() => {
+      const [checked, setChecked] = useState({ selectedValue: "" });
+      const handleCheckboxChange = event => {
+        setChecked({ selectedValue: event.target.value });
+      };
+      return (
+        <Radio
+          label="Radio 1"
+          id="radio-1"
+          name="radio-group"
+          value="1"
+          checked={checked}
+          onChange={handleCheckboxChange}
+        />
+      );
+    })
+  )
+  .add("Radio Block (Responsive)", () =>
+    React.createElement(() => {
+      const [checked, setChecked] = useState({ selectedValue: "" });
+      const handleCheckboxChange = event => {
+        setChecked({ selectedValue: event.target.value });
+      };
+      return (
+        <Section>
+          <SectionName>Radio Block (Responsive)</SectionName>
+          <InputGroup>
+            <Radio
+              {...radio_1}
+              checked={checked.selectedValue === radio_1.value}
+              onChange={handleCheckboxChange}
+            />
+            <Radio
+              {...radio_2}
+              checked={checked.selectedValue === radio_2.value}
+              onChange={handleCheckboxChange}
+            />
+            <Radio
+              {...radio_3}
+              checked={checked.selectedValue === radio_3.value}
+              onChange={handleCheckboxChange}
+            />
+            <Radio
+              {...radio_4}
+              checked={checked.selectedValue === radio_4.value}
+              onChange={handleCheckboxChange}
+            />
+            <Radio
+              {...radio_long}
+              checked={checked.selectedValue === radio_long.value}
+              onChange={handleCheckboxChange}
+            />
+          </InputGroup>
+        </Section>
+      );
+    })
+  )
   .add("Radio Block (2 columns)", () => (
     <Section>
       <SectionName>Radio Block (2 columns)</SectionName>

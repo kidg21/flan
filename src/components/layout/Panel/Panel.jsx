@@ -39,7 +39,7 @@ const PanelSection = styled.section`
   overflow-x: hidden;
   overflow-y: ${props => (props.body ? "scroll" : "hidden")};
   max-height: 100vh;
-  box-shadow: ${shadows.panelSectionShadow};
+  // box-shadow: ${shadows.panelSectionShadow};
   box-shadow: ${props => (props.body ? "none" : "")};
   transition: all 0.2s ease-in-out;
   /* Prototype Content - displays when a Panel Section is empty */
@@ -73,7 +73,7 @@ const PanelFooter = styled.section`
   flex: none;
   background: "";
   border: 0.5px solid #eaeded;
-  box-shadow: ${shadows.panelSectionShadow};
+  // box-shadow: ${shadows.panelSectionShadow};
   z-index: 1;
   overflow: hidden;
   align-items: center;

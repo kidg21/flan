@@ -20,20 +20,20 @@ import "../src/icons/fontawesome";
 import GlobalStyles from "GlobalStyles";
 // import PropTable from "react-storybook-addon-chapters/dist/components/PropTable"
 
-// addDecorator(
-//   withInfo({
-//     styles: {
-//       header: {
-//         h1: {
-//           color: "#4b4844"
-//         },
-//         h2: {
-//           color: "#60aad2"
-//         }
-//       }
-//     }
-//   })
-// )
+addDecorator(
+  withInfo({
+    styles: {
+      header: {
+        h1: {
+          color: "#4b4844"
+        },
+        h2: {
+          color: "#60aad2"
+        }
+      }
+    }
+  })
+);
 
 function withGlobalStyles(storyFn) {
   return (
@@ -93,11 +93,11 @@ configureViewport({
 addDecorator(withNotes);
 
 // Info
-// setDefaults({
-//   header: true, // Toggles display of header with component name and description
-//   inline: false, // Displays info inline vs click button to view
-//   source: false // Displays the source of story Component
-// })
+setDefaults({
+  header: true, // Toggles display of header with component name and description
+  inline: true, // Displays info inline vs click button to view
+  source: false // Displays the source of story Component
+});
 
 // Actions
 configureActions({

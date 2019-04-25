@@ -19,6 +19,10 @@ const HeaderLayout = styled.div`
   box-shadow: 0 0 0px rgba(0, 0, 0, 0.08);
 `;
 
+//   <Icon icon={["far", "angle-down"]} />
+// ) : (
+//   <Icon icon={["far", "angle-up"]} />
+
 function Card({ title, switchProps, ...props }) {
   return (
     <div>
@@ -50,7 +54,7 @@ function Card({ title, switchProps, ...props }) {
           ) : props.navigation ? (
             <Icon icon={["far", "angle-right"]} />
           ) : props.info ? (
-            <Icon icon={["far", "angle-down"]} />
+            <Icon icon={["far", "angle-up"]} />
           ) : null}
         </div>
       </HeaderLayout>
