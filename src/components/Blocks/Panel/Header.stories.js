@@ -17,6 +17,6 @@ storiesOf("Blocks|Panel Headers", module)
   ))
   .add("Group", () => (
     <div>
-      <Group title="My DMP Layers" />
+      <Group title="My DMP Layers" number="2" />
     </div>
   ));
