@@ -1,5 +1,5 @@
 // import the Font Awesom library
-import { library } from "@fortawesome/fontawesome-svg-core";
+import { library } from "@fortawesome/fontawesome-svg-core"
 
 // Import icons
 // Solid (default)
@@ -19,8 +19,9 @@ import {
   faMapMarker,
   faMoneyBill,
   faSpinner,
-  faTimes
-} from "@fortawesome/pro-solid-svg-icons";
+  faTimes,
+  faUser
+} from "@fortawesome/pro-solid-svg-icons"
 // Regular
 import {
   faAngleDown,
@@ -50,9 +51,8 @@ import {
   faShareAlt,
   faSignOut,
   faToggleOff,
-  faToggleOn,
-  faUser
-} from "@fortawesome/pro-regular-svg-icons";
+  faToggleOn
+} from "@fortawesome/pro-regular-svg-icons"
 // Light
 import {
   faChevronLeft as faChevronLeftLight,
@@ -62,7 +62,7 @@ import {
   faDirections,
   faPlusCircle,
   faTimes as faTimesLight
-} from "@fortawesome/pro-light-svg-icons";
+} from "@fortawesome/pro-light-svg-icons"
 // Brand
 import {
   faApple,
@@ -77,7 +77,7 @@ import {
   faReact,
   faTwitterSquare,
   faWindows
-} from "@fortawesome/free-brands-svg-icons";
+} from "@fortawesome/free-brands-svg-icons"
 
 // Create DMP icon library
 library.add(
@@ -145,4 +145,4 @@ library.add(
   faTwitterSquare,
   faUser,
   faWindows
-);
+)
