@@ -35,22 +35,22 @@ const RadioLabel = styled.label`
   cursor: pointer;
 `
 
-function Radio({ ...props }) {
-  const [checked, setChecked] = useState({ selectedValue: "" })
-  const handleCheckboxChange = event => {
-    setChecked({ selectedValue: event.target.value })
-  }
+function Radio({ id, name, label, value, ...props }) {
+  // const [checked, setChecked] = useState({ selectedValue: "" })
+  // const handleCheckboxChange = event => {
+  // setChecked({ selectedValue: event.target.value })
+  // }
   return (
     <RadioContainer>
       <RadioInput
-        id={props.id}
-        name={props.name}
-        value={props.value}
-        checked={checked.selectedValue === props.value}
-        onChange={handleCheckboxChange}
+        id={id}
+        name={name}
+        value={value}
+        // checked={checked.selectedValue === props.value}
+        // onChange={handleCheckboxChange}
         {...props}
       />
-      <RadioLabel for={props.id}>{props.label}</RadioLabel>
+      <RadioLabel htmlFor={id}>{label}</RadioLabel>
     </RadioContainer>
   )
 }

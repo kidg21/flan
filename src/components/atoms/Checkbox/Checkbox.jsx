@@ -45,7 +45,7 @@ function Checkbox({ ...props }) {
         onChange={handleCheckboxChange}
         {...props}
       />
-      <CheckboxLabel for={props.id}>{props.label}</CheckboxLabel>
+      <CheckboxLabel htmlFor={props.id}>{props.label}</CheckboxLabel>
     </CheckboxContainer>
   )
 }
