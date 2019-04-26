@@ -1,7 +1,8 @@
-import React from "react"
-import { storiesOf } from "@storybook/react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { Padding } from "helpers/Display"
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Padding } from "helpers/Display";
+import { withInfo } from "@storybook/addon-info";
 import {
   withKnobs,
   text,
@@ -9,14 +10,15 @@ import {
   radios,
   select,
   number
-} from "@storybook/addon-knobs"
-import Panel, { PanelSection, PanelBody } from "../../layout/Panel/Panel"
-import Form, { Section, SectionName } from "../../layout/Form/Form"
-import Input from "atoms/Input"
+} from "@storybook/addon-knobs";
+import Panel, { PanelSection, PanelBody } from "../../layout/Panel/Panel";
+import Form, { Section, SectionName } from "../../layout/Form/Form";
+import Input from "atoms/Input";
 
 // Input ( Standard )
 storiesOf("Atoms|Input", module)
   .addDecorator(Padding)
+  .addDecorator(withInfo)
   .addDecorator(withKnobs)
   .add("Input ( Knobs )", () => (
     <Input
@@ -53,11 +55,13 @@ storiesOf("Atoms|Input", module)
       //   ""
       // )}
     />
-  ))
+  ));
 
 // Text ( Standard )
 storiesOf("Atoms|Input", module)
   .addDecorator(Padding)
+  .addDecorator(withInfo)
+  .addDecorator(withKnobs)
   .add("Text ( Standard )", () => (
     <Input
       name="Say My Name!"
@@ -65,44 +69,52 @@ storiesOf("Atoms|Input", module)
       inputLabel="Text ( Standard )"
       helpText="This help text has been passed through a prop!"
     />
-  ))
+  ));
 
 // Number ( Standard )
 storiesOf("Atoms|Input", module)
   .addDecorator(Padding)
+  .addDecorator(withInfo)
+  .addDecorator(withKnobs)
   .add("Number ( Standard )", () => (
     <Input
       type="number"
       inputLabel="Number ( Standard )"
       helpText="This help text has been passed through a prop!"
     />
-  ))
+  ));
 
 // Input ( Required )
 storiesOf("Atoms|Input", module)
   .addDecorator(Padding)
+  .addDecorator(withInfo)
+  .addDecorator(withKnobs)
   .add("Input ( Required )", () => (
     <Input
       inputLabel="Input ( Required )"
       isRequired={true}
       helpText="This help text has been passed through a prop!"
     />
-  ))
+  ));
 
 // Input ( Disabled )
 storiesOf("Atoms|Input", module)
   .addDecorator(Padding)
+  .addDecorator(withInfo)
+  .addDecorator(withKnobs)
   .add("Input ( Disabled )", () => (
     <Input
       inputLabel="Input ( Disabled )"
       disabled={true}
       helpText="This help text has been passed through a prop!"
     />
-  ))
+  ));
 
 // Input ( Error )
 storiesOf("Atoms|Input", module)
   .addDecorator(Padding)
+  .addDecorator(withInfo)
+  .addDecorator(withKnobs)
   .add("Input ( Error )", () => (
     <Input
       inputLabel="Input ( Error )"
@@ -110,22 +122,26 @@ storiesOf("Atoms|Input", module)
       error={true}
       errorMessage="This error text has been passed through a prop!"
     />
-  ))
+  ));
 
 // Input ( 2 Inputs )
 storiesOf("Atoms|Input", module)
   .addDecorator(Padding)
+  .addDecorator(withInfo)
+  .addDecorator(withKnobs)
   .add("Input ( 2 Inputs )", () => (
     <Input
       inputLabel="Input ( 2 Inputs )"
       twoInputs={true}
       helpText="This help text has been passed through a prop!"
     />
-  ))
+  ));
 
 // Input ( 3 Inputs )
 storiesOf("Atoms|Input", module)
   .addDecorator(Padding)
+  .addDecorator(withInfo)
+  .addDecorator(withKnobs)
   .add("Input ( 3 Inputs )", () => (
     <Input
       inputLabel="Input ( 3 Inputs )"
@@ -134,11 +150,13 @@ storiesOf("Atoms|Input", module)
       placeholder_3="Three!!!"
       helpText="This help text has been passed through a prop!"
     />
-  ))
+  ));
 
 // Input ( Prefix )
 storiesOf("Atoms|Input", module)
   .addDecorator(Padding)
+  .addDecorator(withInfo)
+  .addDecorator(withKnobs)
   .add("Input ( Prefix Label )", () => (
     <Input
       inputLabel="Input ( Prefix )"
@@ -146,11 +164,13 @@ storiesOf("Atoms|Input", module)
       placeholder="This help text has been passed through a prop!"
       helpText="This help text has been passed through a prop!"
     />
-  ))
+  ));
 
 // Input ( Prefix Icon )
 storiesOf("Atoms|Input", module)
   .addDecorator(Padding)
+  .addDecorator(withInfo)
+  .addDecorator(withKnobs)
   .add("Input ( Prefix Icon )", () => (
     <Input
       inputLabel="Input ( Prefix Icon )"
@@ -158,11 +178,13 @@ storiesOf("Atoms|Input", module)
       placeholder="This help text has been passed through a prop!"
       helpText="This help text has been passed through a prop!"
     />
-  ))
+  ));
 
 // Input ( Pre-Select )
 storiesOf("Atoms|Input", module)
   .addDecorator(Padding)
+  .addDecorator(withInfo)
+  .addDecorator(withKnobs)
   .add("Input ( Pre-Select )", () => (
     <Input
       inputLabel="Input ( Pre-Select )"
@@ -173,22 +195,26 @@ storiesOf("Atoms|Input", module)
       ]}
       helpText="This help text has been passed through a prop!"
     />
-  ))
+  ));
 
 // Input ( Postfix )
 storiesOf("Atoms|Input", module)
   .addDecorator(Padding)
+  .addDecorator(withInfo)
+  .addDecorator(withKnobs)
   .add("Input ( Postfix Label )", () => (
     <Input
       inputLabel="Input ( Postfix )"
       postfix=".com"
       helpText="This help text has been passed through a prop!"
     />
-  ))
+  ));
 
 // Input ( Post-Select )
 storiesOf("Atoms|Input", module)
   .addDecorator(Padding)
+  .addDecorator(withInfo)
+  .addDecorator(withKnobs)
   .add("Input ( Post-Select )", () => (
     <Input
       inputLabel="Input ( Post-Select )"
@@ -199,11 +225,13 @@ storiesOf("Atoms|Input", module)
       ]}
       helpText="This help text has been passed through a prop!"
     />
-  ))
+  ));
 
 // Input ( Post-Button )
 storiesOf("Atoms|Input", module)
   .addDecorator(Padding)
+  .addDecorator(withInfo)
+  .addDecorator(withKnobs)
   .add("Input ( Post-Button )", () => (
     <Input
       inputLabel="Input ( Post-Button )"
@@ -211,11 +239,13 @@ storiesOf("Atoms|Input", module)
       buttonLabel="Upload"
       helpText="This help text has been passed through a prop!"
     />
-  ))
+  ));
 
 // Input ( Prefix / Postfix )
 storiesOf("Atoms|Input", module)
   .addDecorator(Padding)
+  .addDecorator(withInfo)
+  .addDecorator(withKnobs)
   .add("Input ( Prefix / Postfix )", () => (
     <Input
       inputLabel="Input ( Prefix / Postfix )"
@@ -223,11 +253,13 @@ storiesOf("Atoms|Input", module)
       postfix=".com"
       helpText="This help text has been passed through a prop!"
     />
-  ))
+  ));
 
 // Input ( Prefix / Post-Select )
 storiesOf("Atoms|Input", module)
   .addDecorator(Padding)
+  .addDecorator(withInfo)
+  .addDecorator(withKnobs)
   .add("Input ( Prefix / Post-Select )", () => (
     <Input
       inputLabel="Input ( Prefix / Post-Select )"
@@ -239,11 +271,13 @@ storiesOf("Atoms|Input", module)
       ]}
       helpText="This help text has been passed through a prop!"
     />
-  ))
+  ));
 
 // Input ( Pre-Select / Postfix )
 storiesOf("Atoms|Input", module)
   .addDecorator(Padding)
+  .addDecorator(withInfo)
+  .addDecorator(withKnobs)
   .add("Input ( Pre-Select / Postfix )", () => (
     <Input
       inputLabel="Input ( Pre-Select / Postfix )"
@@ -255,11 +289,13 @@ storiesOf("Atoms|Input", module)
       postfix=".com"
       helpText="This help text has been passed through a prop!"
     />
-  ))
+  ));
 
 // Input ( Pre / Post-Select )
 storiesOf("Atoms|Input", module)
   .addDecorator(Padding)
+  .addDecorator(withInfo)
+  .addDecorator(withKnobs)
   .add("Input ( Pre / Post-Select )", () => (
     <Input
       inputLabel="Input ( Pre / Post-Select )"
@@ -275,7 +311,7 @@ storiesOf("Atoms|Input", module)
       ]}
       helpText="This help text has been passed through a prop!"
     />
-  ))
+  ));
 
 // Input ( The Input Family )
 storiesOf("Atoms|Input", module).add("The Input Family", props => (
@@ -397,4 +433,4 @@ storiesOf("Atoms|Input", module).add("The Input Family", props => (
       </Form>
     </PanelSection>
   </Panel>
-))
+));

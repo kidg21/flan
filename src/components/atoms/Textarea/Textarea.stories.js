@@ -1,6 +1,7 @@
-import React from "react"
-import { storiesOf } from "@storybook/react"
-import { Padding } from "helpers/Display"
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import { Padding } from "helpers/Display";
+import { withInfo } from "@storybook/addon-info";
 import {
   withKnobs,
   text,
@@ -8,17 +9,18 @@ import {
   radios,
   select,
   number
-} from "@storybook/addon-knobs"
-import Panel, { PanelBody } from "layout/Panel"
-import Form, { Section, SectionName, InputGroup } from "layout/Form"
-import TextArea from "atoms/TextArea"
+} from "@storybook/addon-knobs";
+import Panel, { PanelBody } from "layout/Panel";
+import Form, { Section, SectionName, InputGroup } from "layout/Form";
+import Textarea from "atoms/Textarea";
 
 // Input ( Standard )
 storiesOf("Atoms|TextArea", module)
   .addDecorator(Padding)
+  .addDecorator(withInfo)
   .addDecorator(withKnobs)
   .add("TextArea ( Knobs )", () => (
-    <TextArea
+    <Textarea
       inputLabel={text("TextArea Label", "TextArea ( Knobs )")}
       isRequired={boolean("Required", false)}
       placeholder={text("Placeholder Text", "I am just keeping things warm")}
@@ -27,52 +29,60 @@ storiesOf("Atoms|TextArea", module)
       error={boolean("Error", false)}
       errorText={text("Error Text", "Stay with my, buddy...we can fix this!")}
     />
-  ))
+  ));
 
 // TextArea ( Standard )
 storiesOf("Atoms|TextArea", module)
   .addDecorator(Padding)
+  .addDecorator(withInfo)
+  .addDecorator(withKnobs)
   .add("TextArea ( Standard )", () => (
-    <TextArea
+    <Textarea
       name="Say My Name!"
       inputLabel="TextArea ( Standard )"
       helpText="This help text has been passed through a prop!"
     />
-  ))
+  ));
 
 // TextArea ( Required )
 storiesOf("Atoms|TextArea", module)
   .addDecorator(Padding)
+  .addDecorator(withInfo)
+  .addDecorator(withKnobs)
   .add("TextArea ( Required )", () => (
-    <TextArea
+    <Textarea
       inputLabel="TextArea ( Required )"
       isRequired={true}
       helpText="This help text has been passed through a prop!"
     />
-  ))
+  ));
 
 // TextArea ( Disabled )
 storiesOf("Atoms|TextArea", module)
   .addDecorator(Padding)
+  .addDecorator(withInfo)
+  .addDecorator(withKnobs)
   .add("TextArea ( Disabled )", () => (
-    <TextArea
+    <Textarea
       inputLabel="TextArea ( Disabled )"
       helpText="This help text has been passed through a prop!"
       disabled={true}
     />
-  ))
+  ));
 
 // TextArea ( Error )
 storiesOf("Atoms|TextArea", module)
   .addDecorator(Padding)
+  .addDecorator(withInfo)
+  .addDecorator(withKnobs)
   .add("TextArea ( Error )", () => (
-    <TextArea
+    <Textarea
       inputLabel="TextArea ( Error )"
       helpText="This help text has been passed through a prop!"
       error={true}
       errorText="This error text has been passed through a prop!"
     />
-  ))
+  ));
 
 // TextArea ( The TextArea Family )
 storiesOf("Atoms|TextArea", module).add("The TextArea Family", props => (
@@ -81,21 +91,21 @@ storiesOf("Atoms|TextArea", module).add("The TextArea Family", props => (
       <Form>
         <Section>
           <SectionName>The TextArea Family</SectionName>
-          <TextArea
+          <Textarea
             inputLabel="TextArea ( Standard )"
             helpText="This help text has been passed through a prop!"
           />
-          <TextArea
+          <Textarea
             inputLabel="TextArea ( Standard )"
             isRequired={true}
             helpText="This help text has been passed through a prop!"
           />
-          <TextArea
+          <Textarea
             inputLabel="TextArea ( Disabled )"
             helpText="This help text has been passed through a prop!"
             disabled={true}
           />
-          <TextArea
+          <Textarea
             inputLabel="TextArea ( Error )"
             helpText="This help text has been passed through a prop!"
             error={true}
@@ -104,4 +114,4 @@ storiesOf("Atoms|TextArea", module).add("The TextArea Family", props => (
       </Form>
     </PanelBody>
   </Panel>
-))
+));
