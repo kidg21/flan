@@ -1,9 +1,6 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import App from "./App";
-
-
+import React from "react"
+import { storiesOf } from "@storybook/react"
+import App from "./App"
 
 // Colors
-storiesOf('Style Guidelines|App', module)
-.add("Intro", () => <App/>);
+storiesOf("Application|Docs", module).add("Intro", () => <App />)

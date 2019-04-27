@@ -95,10 +95,24 @@ setDefaults({
   }
 })
 
-const req = require.context("../src/components", true, /.stories.js$/)
+// const req = require.context("../src/components", true, /.stories.js$/)
+const atoms = require.context("../src/components/atoms", true, /.stories.js$/)
+const base = require.context("../src/components/base", true, /.stories.js$/)
+const blocks = require.context("../src/components/blocks", true, /.stories.js$/)
+const layout = require.context("../src/components/layout", true, /.stories.js$/)
+const templates = require.context(
+  "../src/components/templates",
+  true,
+  /.stories.js$/
+)
 function loadStories() {
-  // require("../src/attributes/App.js")
-  req.keys().forEach(filename => req(filename))
+  // req.keys().forEach(filename => req(filename))
+  require("../src/attributes/App.stories.js")
+  atoms.keys().forEach(filename => atoms(filename))
+  base.keys().forEach(filename => base(filename))
+  blocks.keys().forEach(filename => blocks(filename))
+  layout.keys().forEach(filename => layout(filename))
+  templates.keys().forEach(filename => templates(filename))
 }
 
 configure(loadStories, module)
