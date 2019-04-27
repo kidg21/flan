@@ -3,6 +3,7 @@ import { storiesOf } from "@storybook/react"
 import styled, { css } from "styled-components"
 import { colors, shadows } from "Variables"
 import { Padding } from "helpers/Display"
+import { withInfo } from "@storybook/addon-info"
 import Grid from "helpers/Grid"
 import { Success } from "base/Typography"
 import Icon from "atoms/Icon"
@@ -80,6 +81,7 @@ const blockStyle = {
 
 storiesOf("Application|Libraries/", module)
   .addDecorator(Padding)
+  .addDecorator(withInfo)
   .add("Icon Library", () => (
     <IconGrid style={{ fontSize: "2em" }}>
       <Title>

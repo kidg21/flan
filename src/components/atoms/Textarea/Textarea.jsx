@@ -40,7 +40,7 @@ const TextAreaInput = styled.textarea`
   }
 `
 
-function TextArea({ inputLabel, isRequired, helpText, errorText, ...props }) {
+function Textarea({ inputLabel, isRequired, helpText, errorText, ...props }) {
   return (
     <TextAreaContainer
       disabled={props.disabled} // input attribute
@@ -66,7 +66,7 @@ function TextArea({ inputLabel, isRequired, helpText, errorText, ...props }) {
   )
 }
 
-TextArea.defaultProps = {
+Textarea.defaultProps = {
   name: "TextArea Name",
   pattern: "alpha",
   placeholder: "Placeholder Text",
@@ -75,7 +75,7 @@ TextArea.defaultProps = {
   errorText: "Error text for the Text Area component"
 }
 
-TextArea.propTypes = {
+Textarea.propTypes = {
   name: PropTypes.string,
   pattern: PropTypes.string,
   placeholder: PropTypes.string,
@@ -83,4 +83,4 @@ TextArea.propTypes = {
   error: PropTypes.bool
 }
 
-export { TextArea as default }
+export { Textarea as default };

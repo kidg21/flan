@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
-// import PopCard from "./PopCard";
+import { withInfo } from "@storybook/addon-info";
+import { Padding } from "helpers/Display";
 import PopCard from "./PopCard";
 import Card from "./Card";
 
 storiesOf("Blocks|Card", module)
+  .addDecorator(Padding)
+  .addDecorator(withInfo)
   .add("Pop-up Card", () => (
     <PopCard
       title="Pop Out Alert"
@@ -12,12 +15,11 @@ storiesOf("Blocks|Card", module)
       action="Do it!"
     />
   ))
-  .add("Panel Cards", () =>
+  .add("Layer Card", () =>
     React.createElement(() => {
       const [checked, setChecked] = useState(false);
       return (
         <div>
-          <Card title="Trial Card" info={true} />
           <Card
             title="Trial Card"
             layer={true}
@@ -28,6 +30,23 @@ storiesOf("Blocks|Card", module)
               }
             }}
           />
+        </div>
+      );
+    })
+  )
+  .add("Info Card", () =>
+    React.createElement(() => {
+      return (
+        <div>
+          <Card title="Trial Card" info={true} />
+        </div>
+      );
+    })
+  )
+  .add("Navigation Card", () =>
+    React.createElement(() => {
+      return (
+        <div>
           <Card title="Trial Card" navigation={true} />
         </div>
       );

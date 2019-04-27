@@ -1,10 +1,12 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
+import { withInfo } from "@storybook/addon-info";
 import Button, { StyledButton as NewButton } from "atoms/Button";
 
 // Buttons
 storiesOf("Atoms|Button", module)
+  .addDecorator(withInfo)
   .addDecorator(Padding)
   .add("Standard Button", () => <Button buttonLabel="Standard Button" />)
   .add("Primary Button", () => (

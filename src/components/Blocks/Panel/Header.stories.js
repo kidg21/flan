@@ -1,18 +1,27 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import Header from "./Header";
+import { withInfo } from "@storybook/addon-info";
+import { Padding } from "helpers/Display";
 import Group from "./Group";
 
 // Colors
 storiesOf("Blocks|Panel Headers", module)
-  .add("Header", () => (
+  .addDecorator(Padding)
+  .addDecorator(withInfo)
+  .add("Header with Navigation", () => (
     <div>
-      <Header
-        title="5201 California Ave. Irvine, California"
-        threeParts={true}
-      />
+      <Header title="Property Header" threeParts={true} />
+    </div>
+  ))
+  .add("Property Header", () => (
+    <div>
       <Header title="5201 California Ave. Irvine, California" property={true} />
-      <Header title="Two Parts this work" twoParts={true} />{" "}
+    </div>
+  ))
+  .add("Header without Navigation", () => (
+    <div>
+      <Header title="Filter" twoParts={true} />{" "}
     </div>
   ))
   .add("Group", () => (
