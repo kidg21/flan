@@ -4,6 +4,7 @@ import { library } from "@fortawesome/fontawesome-svg-core"
 // Import icons
 // Solid (default)
 import {
+  faBars,
   faCheck,
   faChevronDown,
   faChevronLeft,
@@ -14,13 +15,16 @@ import {
   faEnvelope,
   faExclamation,
   faFlag,
-  faKey,
+  faHashtag,
   faInfo as faInfoAlert,
+  faKey,
   faMapMarker,
   faMoneyBill,
+  faPrint,
   faSpinner,
   faTimes,
-  faUser
+  faUser,
+  faUsers
 } from "@fortawesome/pro-solid-svg-icons"
 // Regular
 import {
@@ -88,6 +92,7 @@ library.add(
   faApple,
   faApplePay,
   faArrowFromBottom,
+  faBars,
   faBell,
   faBookmark,
   faCheck,
@@ -117,6 +122,7 @@ library.add(
   faFontAwesome,
   faGlobe,
   faGoogle,
+  faHashtag,
   faHighlighter,
   faInfo,
   faInfoAlert,
@@ -131,6 +137,7 @@ library.add(
   faMoneyBill,
   faPlus,
   faPlusCircle,
+  faPrint,
   faQuestionCircle,
   faReact,
   faSearch,
@@ -144,5 +151,6 @@ library.add(
   faToggleOn,
   faTwitterSquare,
   faUser,
+  faUsers,
   faWindows
 )

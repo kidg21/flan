@@ -13,6 +13,7 @@ const StyledIcon = styled(FontAwesomeIcon)`
   border-color: ${props => (props.border ? colors.grey_20 : "")};
   border-radius: ${props => (props.border ? "5px" : "")};
   cursor: pointer;
+  grid-area: icon;
   /* cursor: ${props => (props.anchor ? "pointer" : "")}; */
   color: ${props =>
     props.success
@@ -45,10 +46,11 @@ function Icon({
   success,
   warning,
   alert,
-  style,
   mask,
   // stacked,
   children,
+  style,
+  className,
   ...props
 }) {
   return (
@@ -77,7 +79,8 @@ function Icon({
 }
 
 Icon.defaultProps = {
-  icon: ["fas", "circle"]
+  icon: ["fas", "circle"],
+  fixedWidth: true
 }
 
 Icon.propTypes = {
@@ -114,7 +117,8 @@ Icon.propTypes = {
   success: PropTypes.string,
   warning: PropTypes.string,
   alert: PropTypes.string,
-  style: PropTypes.string
+  style: PropTypes.string,
+  className: PropTypes.string
 }
 
 export default Icon

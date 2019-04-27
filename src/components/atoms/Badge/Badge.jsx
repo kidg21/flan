@@ -1,8 +1,8 @@
 import React from "react"
-import styled, { css } from "styled-components"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { colors } from "Variables"
 import PropTypes from "prop-types"
+import styled, { css } from "styled-components"
+import { colors } from "Variables"
+import Icon from "atoms/Icon"
 
 const BadgeContainer = styled.div`
   display: flex;
@@ -54,7 +54,7 @@ const BadgeLabel = styled.span`
   text-overflow: ellipsis;
 `
 
-const BadgeIcon = styled(FontAwesomeIcon)``
+const BadgeIcon = styled(Icon)``
 
 function Badge({
   id,
@@ -72,6 +72,8 @@ function Badge({
   xlarge,
   xxlarge,
   xxxlarge,
+  style,
+  className,
   ...props
 }) {
   return (
@@ -91,6 +93,8 @@ function Badge({
       xlarge={xlarge}
       xxlarge={xxlarge}
       xxxlarge={xxxlarge}
+      style={style}
+      className={className}
     >
       {icon ? <BadgeIcon icon={icon} /> : <BadgeLabel>{label}</BadgeLabel>}
     </BadgeContainer>
@@ -130,7 +134,9 @@ Badge.propTypes = {
   large: PropTypes.bool,
   xlarge: PropTypes.bool,
   xxlarge: PropTypes.bool,
-  xxxlarge: PropTypes.bool
+  xxxlarge: PropTypes.bool,
+  style: PropTypes.string,
+  className: PropTypes.string
 }
 
 export { Badge as default }

@@ -8,9 +8,7 @@ import { Success } from "base/Typography"
 import Icon from "atoms/Icon"
 import IconBlock from "blocks/IconBlock"
 
-const IconGrid = styled.ul`
-  display: grid;
-  grid-gap: 1rem;
+const IconGrid = styled(Grid)`
   grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
   @media (min-width: 40.063em) {
     grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
@@ -18,9 +16,6 @@ const IconGrid = styled.ul`
   @media (min-width: 64.063em) {
     grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
   }
-  margin-bottom: 1em;
-  padding-bottom: 1em;
-  align-items: baseline;
 `
 
 const Title = styled.h2`
@@ -83,7 +78,7 @@ const blockStyle = {
   border: "1px solid lightgrey"
 }
 
-storiesOf("Style Guidelines|Icon Library", module)
+storiesOf("Application|Libraries/", module)
   .addDecorator(Padding)
   .add("Icon Library", () => (
     <IconGrid style={{ fontSize: "2em" }}>
