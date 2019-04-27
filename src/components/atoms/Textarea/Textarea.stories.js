@@ -1,7 +1,7 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { Padding } from "helpers/Display";
-import { withInfo } from "@storybook/addon-info";
+import React from "react"
+import { storiesOf } from "@storybook/react"
+import { Padding } from "helpers/Display"
+import { withInfo } from "@storybook/addon-info"
 import {
   withKnobs,
   text,
@@ -9,10 +9,10 @@ import {
   radios,
   select,
   number
-} from "@storybook/addon-knobs";
-import Panel, { PanelBody } from "layout/Panel";
-import Form, { Section, SectionName, InputGroup } from "layout/Form";
-import Textarea from "atoms/Textarea";
+} from "@storybook/addon-knobs"
+import Panel, { PanelBody } from "layout/Panel"
+import Form, { Section, SectionName, InputGroup } from "layout/Form"
+import TextArea from "atoms/TextArea"
 
 // Input ( Standard )
 storiesOf("Atoms|TextArea", module)
@@ -29,7 +29,7 @@ storiesOf("Atoms|TextArea", module)
       error={boolean("Error", false)}
       errorText={text("Error Text", "Stay with my, buddy...we can fix this!")}
     />
-  ));
+  ))
 
 // TextArea ( Standard )
 storiesOf("Atoms|TextArea", module)
@@ -42,7 +42,7 @@ storiesOf("Atoms|TextArea", module)
       inputLabel="TextArea ( Standard )"
       helpText="This help text has been passed through a prop!"
     />
-  ));
+  ))
 
 // TextArea ( Required )
 storiesOf("Atoms|TextArea", module)
@@ -55,7 +55,7 @@ storiesOf("Atoms|TextArea", module)
       isRequired={true}
       helpText="This help text has been passed through a prop!"
     />
-  ));
+  ))
 
 // TextArea ( Disabled )
 storiesOf("Atoms|TextArea", module)
@@ -68,7 +68,7 @@ storiesOf("Atoms|TextArea", module)
       helpText="This help text has been passed through a prop!"
       disabled={true}
     />
-  ));
+  ))
 
 // TextArea ( Error )
 storiesOf("Atoms|TextArea", module)
@@ -82,7 +82,7 @@ storiesOf("Atoms|TextArea", module)
       error={true}
       errorText="This error text has been passed through a prop!"
     />
-  ));
+  ))
 
 // TextArea ( The TextArea Family )
 storiesOf("Atoms|TextArea", module).add("The TextArea Family", props => (
@@ -114,4 +114,4 @@ storiesOf("Atoms|TextArea", module).add("The TextArea Family", props => (
       </Form>
     </PanelBody>
   </Panel>
-));
+))
