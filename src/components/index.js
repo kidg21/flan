@@ -2,7 +2,7 @@
 export * from "./base/Typography"
 
 // Publicly exported files from 'atoms'
-export { default as Badge, IconBadge } from "./atoms/Badge"
+export { default as Badge } from "./atoms/Badge"
 export { default as Button } from "./atoms/Button"
 export { default as Checkbox } from "./atoms/Checkbox"
 export { default as Command } from "./atoms/Command"
