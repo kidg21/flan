@@ -8,13 +8,17 @@ import Card from "./Card";
 storiesOf("Blocks|Card", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  .add("Pop-up Card", () => (
-    <PopCard
-      title="Pop Out Alert"
-      message="Something happened and this is the message about it. Hey how you doing? Good? That's nice. Okay Bye"
-      action="Do it!"
-    />
-  ))
+  .add("Pop-up Card", () =>
+    React.createElement(() => {
+      return (
+        <PopCard
+          title="Pop Out Alert"
+          message="Something happened and this is the message about it. Hey how you doing? Good? That's nice. Okay Bye"
+          action="Do it!"
+        />
+      );
+    })
+  )
   .add("Layer Card", () =>
     React.createElement(() => {
       const [checked, setChecked] = useState(false);

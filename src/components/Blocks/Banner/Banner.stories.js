@@ -7,14 +7,23 @@ import { Padding } from "helpers/Display";
 storiesOf("Blocks|Banner", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  .add("Default", () => (
+  .add("Error", () => (
     <div>
       <Banner error title={"This is a notification telling you stuff."} />
-      <div style={{ padding: "5px" }} />
+    </div>
+  ))
+  .add("Warning", () => (
+    <div>
       <Banner warning title={"This is a notification telling you stuff."} />
-      <div style={{ padding: "5px" }} />
+    </div>
+  ))
+  .add("General Info", () => (
+    <div>
       <Banner info title={"This is a notification telling you stuff."} />
-      <div style={{ padding: "5px" }} />
+    </div>
+  ))
+  .add("Success", () => (
+    <div>
       <Banner success title={"This is a notification telling you stuff."} />
     </div>
   ));

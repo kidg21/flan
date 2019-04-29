@@ -8,5 +8,5 @@ import { Padding } from "helpers/Display";
 storiesOf("Blocks|Table", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  .add("Simple Table", () => <Table />)
-  .add("Data Table", () => <DataTable />);
+  .add("Simple", () => <Table />)
+  .add("Heavy Data", () => <DataTable />);

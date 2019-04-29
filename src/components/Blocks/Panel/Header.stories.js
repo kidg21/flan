@@ -9,17 +9,17 @@ import Group from "./Group";
 storiesOf("Blocks|Panel Headers", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  .add("Header with Navigation", () => (
+  .add("Navigation", () => (
     <div>
-      <Header title="Property Header" threeParts={true} />
+      <Header title="Navigation Header" threeParts={true} />
     </div>
   ))
-  .add("Property Header", () => (
+  .add("Property", () => (
     <div>
       <Header title="5201 California Ave. Irvine, California" property={true} />
     </div>
   ))
-  .add("Header without Navigation", () => (
+  .add("Regular (first)", () => (
     <div>
       <Header title="Filter" twoParts={true} />{" "}
     </div>

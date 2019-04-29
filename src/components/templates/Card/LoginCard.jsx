@@ -239,8 +239,8 @@ export default class Card extends React.Component {
             </CardOptions>
           </CardFieldset>
           
-          <CardFieldset >
-            <Button  label="Sign Up"/>
+          <CardFieldset>
+            <Button  style={{ display: "block"}} label="Sign Up"/>
           </CardFieldset>
           
           <CardFieldset>

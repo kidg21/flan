@@ -6,7 +6,8 @@ import Switch from "atoms/Switch/Switch";
 import IconBlock from "blocks/IconBlock/IconBlock";
 
 const blockStyle = {
-  width: "60px"
+  width: "60px",
+  color: "lightgrey"
 };
 /////Navigation consts
 const HeaderLayout = styled.div`
