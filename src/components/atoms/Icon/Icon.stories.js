@@ -79,272 +79,6 @@ const blockStyle = {
   border: "1px solid lightgrey"
 }
 
-storiesOf("Application|Libraries/", module)
-  .addDecorator(Padding)
-  .addDecorator(withInfo)
-  .add("Icon Library", () => (
-    <IconGrid style={{ fontSize: "2em" }}>
-      <Title>
-        <u>Icon Library</u>
-      </Title>
-      <SubTitle>
-        The label of each Icon is the value of its 'icon' prop. ( string or
-        array ) Select an Icon, copy its label, and paste the value into the
-        'icon' prop.
-      </SubTitle>
-      <SectionTitle>Icons ( Alphabetical )</SectionTitle>
-      <ActiveIcon>
-        <Icon icon={["far", "angle-down"]} />
-        <IconLabel>"far", "angle-down"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["far", "angle-left"]} />
-        <IconLabel>"far", "angle-left"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["far", "angle-right"]} />
-        <IconLabel>"far", "angle-right"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["far", "angle-up"]} />
-        <IconLabel>"far", "angle-up"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["fab", "apple"]} />
-        <IconLabel>"fab", "apple"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["far", "arrow-from-bottom"]} />
-        <IconLabel>"far", "arrow-from-bottom"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["far", "bell"]} />
-        <IconLabel>"far", "bell"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["far", "bookmark"]} />
-        <IconLabel>"far", "bookmark"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon="check" />
-        <IconLabel>check</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon="chevron-down" />
-        <IconLabel>chevron-down</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon="chevron-left" />
-        <IconLabel>chevron-left</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["fal", "chevron-left"]} />
-        <IconLabel>"fal", "chevron-left"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon="chevron-right" />
-        <IconLabel>chevron-right</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["fal", "chevron-right"]} />
-        <IconLabel>"fal", "chevron-right"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon="chevron-up" />
-        <IconLabel>chevron-up</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon="circle" />
-        <IconLabel>circle</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["fal", "clone"]} />
-        <IconLabel>"fal", "clone"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["far", "code"]} />
-        <IconLabel>"far", "code"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon="coffee" />
-        <IconLabel>coffee</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["far", "cog"]} />
-        <IconLabel>"far", "cog"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["far", "copy"]} />
-        <IconLabel>"far", "copy"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["fal", "directions"]} />
-        <IconLabel>"fal", "directions"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["far", "ellipsis-v"]} />
-        <IconLabel>"far", "ellipsis-v"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon="envelope" />
-        <IconLabel>envelope</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon="exclamation" />
-        <IconLabel>exclamation</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["far", "expand-arrows"]} />
-        <IconLabel>"far", "expand-arrows"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["far", "filter"]} />
-        <IconLabel>"far", "filter"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon="flag" />
-        <IconLabel>flag</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["far", "globe"]} />
-        <IconLabel>"far", "globe"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["far", "highlighter"]} />
-        <IconLabel>"far", "highlighter"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["far", "info"]} />
-        <IconLabel>"far", "info"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon="key" />
-        <IconLabel>key</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["far", "layer-group"]} />
-        <IconLabel>"far", "layer-group"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["far", "location-arrow"]} />
-        <IconLabel>"far", "location-arrow"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["far", "map"]} />
-        <IconLabel>"far", "map"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon="map-marker" />
-        <IconLabel>map-marker</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["far", "minus"]} />
-        <IconLabel>"far", "minus"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon="money-bill" />
-        <IconLabel>money-bill</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["far", "plus"]} />
-        <IconLabel>"far", "plus"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["fal", "plus-circle"]} />
-        <IconLabel>"fal", "plus-circle"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["far", "question-circle"]} />
-        <IconLabel>"far", "question-circle"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["far", "share"]} />
-        <IconLabel>"far", "share"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["far", "share-alt"]} />
-        <IconLabel>"far", "share-alt"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["far", "sign-out"]} />
-        <IconLabel>"far", "sign-out"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon="spinner" />
-        <IconLabel>spinner</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon="times" />
-        <IconLabel>times</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["fal", "times"]} />
-        <IconLabel>"fal", "times"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["far", "toggle-off"]} />
-        <IconLabel>"far", "toggle-off"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["far", "toggle-on"]} />
-        <IconLabel>"far", "toggle-on"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon="user" />
-        <IconLabel>user</IconLabel>
-      </ActiveIcon>
-      <SectionTitle>Brand Icons</SectionTitle>
-      <ActiveIcon>
-        <Icon icon={["fab", "apple"]} />
-        <IconLabel>"fab", "apple-pay"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["fab", "apple-pay"]} />
-        <IconLabel>"fab", "apple-pay"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["fab", "ebay"]} />
-        <IconLabel>"fab", "ebay"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["fab", "facebook"]} />
-        <IconLabel>"fab", "facebook"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["fab", "firefox"]} />
-        <IconLabel>"fab", "firefox"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["fab", "font-awesome"]} />
-        <IconLabel>"fab", "font-awesome"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["fab", "google"]} />
-        <IconLabel>"fab", "google"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["fab", "internet-explorer"]} />
-        <IconLabel>"fab", "internet-explorer"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["fab", "linkedin"]} />
-        <IconLabel>"fab", "linkedin"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["fab", "react"]} />
-        <IconLabel>"fab", "react"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["fab", "twitter-square"]} />
-        <IconLabel>"fab", "twitter-square"</IconLabel>
-      </ActiveIcon>
-      <ActiveIcon>
-        <Icon icon={["fab", "windows"]} />
-        <IconLabel>"fab", "windows"</IconLabel>
-      </ActiveIcon>
-    </IconGrid>
-  ))
-
 storiesOf("Atoms|Icon", module)
   .addDecorator(Padding)
   .add("Icon Colors", () => (
@@ -592,5 +326,283 @@ storiesOf("Atoms|Icon", module)
         <Icon icon="circle" anchor />
         <Icon icon="circle" success />
       </IconBlock>
+    </IconGrid>
+  ))
+
+storiesOf("Application|Libraries/", module)
+  .addDecorator(Padding)
+  .addDecorator(withInfo)
+  .add("Icon Library", () => (
+    <IconGrid style={{ fontSize: "2em" }}>
+      <Title>
+        <u>Icon Library</u>
+      </Title>
+      <SubTitle>
+        The label of each Icon is the value of its 'icon' prop. ( string or
+        array ) Select an Icon, copy its label, and paste the value into the
+        'icon' prop.
+      </SubTitle>
+      <SectionTitle>Icons ( Alphabetical )</SectionTitle>
+      <ActiveIcon>
+        <Icon icon={["far", "angle-down"]} />
+        <IconLabel>"far", "angle-down"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["far", "angle-left"]} />
+        <IconLabel>"far", "angle-left"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["far", "angle-right"]} />
+        <IconLabel>"far", "angle-right"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["far", "angle-up"]} />
+        <IconLabel>"far", "angle-up"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["fab", "apple"]} />
+        <IconLabel>"fab", "apple"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["far", "arrow-from-bottom"]} />
+        <IconLabel>"far", "arrow-from-bottom"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["far", "bell"]} />
+        <IconLabel>"far", "bell"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["far", "bookmark"]} />
+        <IconLabel>"far", "bookmark"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon="check" />
+        <IconLabel>check</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon="chevron-down" />
+        <IconLabel>chevron-down</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon="chevron-left" />
+        <IconLabel>chevron-left</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["fal", "chevron-left"]} />
+        <IconLabel>"fal", "chevron-left"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon="chevron-right" />
+        <IconLabel>chevron-right</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["fal", "chevron-right"]} />
+        <IconLabel>"fal", "chevron-right"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon="chevron-up" />
+        <IconLabel>chevron-up</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon="circle" />
+        <IconLabel>circle</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["fal", "clone"]} />
+        <IconLabel>"fal", "clone"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["far", "code"]} />
+        <IconLabel>"far", "code"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon="coffee" />
+        <IconLabel>coffee</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["far", "cog"]} />
+        <IconLabel>"far", "cog"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["far", "copy"]} />
+        <IconLabel>"far", "copy"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["fal", "directions"]} />
+        <IconLabel>"fal", "directions"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["far", "ellipsis-v"]} />
+        <IconLabel>"far", "ellipsis-v"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon="envelope" />
+        <IconLabel>envelope</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon="exclamation" />
+        <IconLabel>exclamation</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["far", "expand-arrows"]} />
+        <IconLabel>"far", "expand-arrows"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["far", "filter"]} />
+        <IconLabel>"far", "filter"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon="flag" />
+        <IconLabel>flag</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["far", "globe"]} />
+        <IconLabel>"far", "globe"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["far", "highlighter"]} />
+        <IconLabel>"far", "highlighter"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon="home" />
+        <IconLabel>home</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["far", "info"]} />
+        <IconLabel>"far", "info"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon="key" />
+        <IconLabel>key</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["far", "layer-group"]} />
+        <IconLabel>"far", "layer-group"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["far", "location-arrow"]} />
+        <IconLabel>"far", "location-arrow"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["far", "map"]} />
+        <IconLabel>"far", "map"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon="map-marker-alt" />
+        <IconLabel>map-marker-alt</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["far", "minus"]} />
+        <IconLabel>"far", "minus"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon="money-bill" />
+        <IconLabel>money-bill</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["far", "plus"]} />
+        <IconLabel>"far", "plus"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["fal", "plus-circle"]} />
+        <IconLabel>"fal", "plus-circle"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["far", "question-circle"]} />
+        <IconLabel>"far", "question-circle"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["far", "share"]} />
+        <IconLabel>"far", "share"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["far", "share-alt"]} />
+        <IconLabel>"far", "share-alt"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["far", "sign-out"]} />
+        <IconLabel>"far", "sign-out"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon="spinner" />
+        <IconLabel>spinner</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon="times" />
+        <IconLabel>times</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["fal", "times"]} />
+        <IconLabel>"fal", "times"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["far", "toggle-off"]} />
+        <IconLabel>"far", "toggle-off"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["far", "toggle-on"]} />
+        <IconLabel>"far", "toggle-on"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon="user" />
+        <IconLabel>user</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon="users" />
+        <IconLabel>users</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon="user-circle" />
+        <IconLabel>user-circle</IconLabel>
+      </ActiveIcon>
+      <SectionTitle>Brand Icons</SectionTitle>
+      <ActiveIcon>
+        <Icon icon={["fab", "apple"]} />
+        <IconLabel>"fab", "apple-pay"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["fab", "apple-pay"]} />
+        <IconLabel>"fab", "apple-pay"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["fab", "ebay"]} />
+        <IconLabel>"fab", "ebay"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["fab", "facebook"]} />
+        <IconLabel>"fab", "facebook"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["fab", "firefox"]} />
+        <IconLabel>"fab", "firefox"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["fab", "font-awesome"]} />
+        <IconLabel>"fab", "font-awesome"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["fab", "google"]} />
+        <IconLabel>"fab", "google"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["fab", "internet-explorer"]} />
+        <IconLabel>"fab", "internet-explorer"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["fab", "linkedin"]} />
+        <IconLabel>"fab", "linkedin"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["fab", "react"]} />
+        <IconLabel>"fab", "react"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["fab", "twitter-square"]} />
+        <IconLabel>"fab", "twitter-square"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
+        <Icon icon={["fab", "windows"]} />
+        <IconLabel>"fab", "windows"</IconLabel>
+      </ActiveIcon>
     </IconGrid>
   ))
