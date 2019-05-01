@@ -96,7 +96,7 @@ storiesOf("Atoms|TextArea", module).add("The TextArea Family", props => (
             helpText="This help text has been passed through a prop!"
           />
           <TextArea
-            inputLabel="TextArea ( Standard )"
+            inputLabel="TextArea ( Required )"
             isRequired={true}
             helpText="This help text has been passed through a prop!"
           />
