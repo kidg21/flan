@@ -15,13 +15,13 @@ import Form, { Section, SectionName, InputGroup } from "layout/Form"
 import Textarea from "atoms/Textarea"
 
 // Input ( Standard )
-storiesOf("Atoms|TextArea", module)
+storiesOf("Atoms|Textarea", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
   .addDecorator(withKnobs)
-  .add("TextArea ( Knobs )", () => (
+  .add("Textarea ( Knobs )", () => (
     <Textarea
-      inputLabel={text("TextArea Label", "TextArea ( Knobs )")}
+      inputLabel={text("Textarea Label", "Textarea ( Knobs )")}
       isRequired={boolean("Required", false)}
       placeholder={text("Placeholder Text", "I am just keeping things warm")}
       helpText={text("Help Text", "Have you been helped yet?")}
@@ -31,82 +31,82 @@ storiesOf("Atoms|TextArea", module)
     />
   ))
 
-// TextArea ( Standard )
-storiesOf("Atoms|TextArea", module)
+// Textarea ( Standard )
+storiesOf("Atoms|Textarea", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
   .addDecorator(withKnobs)
-  .add("TextArea ( Standard )", () => (
+  .add("Textarea ( Standard )", () => (
     <Textarea
       name="Say My Name!"
-      inputLabel="TextArea ( Standard )"
+      inputLabel="Textarea ( Standard )"
       helpText="This help text has been passed through a prop!"
     />
   ))
 
-// TextArea ( Required )
-storiesOf("Atoms|TextArea", module)
+// Textarea ( Required )
+storiesOf("Atoms|Textarea", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
   .addDecorator(withKnobs)
-  .add("TextArea ( Required )", () => (
+  .add("Textarea ( Required )", () => (
     <Textarea
-      inputLabel="TextArea ( Required )"
+      inputLabel="Textarea ( Required )"
       isRequired={true}
       helpText="This help text has been passed through a prop!"
     />
   ))
 
-// TextArea ( Disabled )
-storiesOf("Atoms|TextArea", module)
+// Textarea ( Disabled )
+storiesOf("Atoms|Textarea", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
   .addDecorator(withKnobs)
-  .add("TextArea ( Disabled )", () => (
+  .add("Textarea ( Disabled )", () => (
     <Textarea
-      inputLabel="TextArea ( Disabled )"
+      inputLabel="Textarea ( Disabled )"
       helpText="This help text has been passed through a prop!"
       disabled={true}
     />
   ))
 
-// TextArea ( Error )
-storiesOf("Atoms|TextArea", module)
+// Textarea ( Error )
+storiesOf("Atoms|Textarea", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
   .addDecorator(withKnobs)
-  .add("TextArea ( Error )", () => (
+  .add("Textarea ( Error )", () => (
     <Textarea
-      inputLabel="TextArea ( Error )"
+      inputLabel="Textarea ( Error )"
       helpText="This help text has been passed through a prop!"
       error={true}
       errorText="This error text has been passed through a prop!"
     />
   ))
 
-// TextArea ( The TextArea Family )
-storiesOf("Atoms|TextArea", module).add("The TextArea Family", props => (
+// Textarea ( The Textarea Family )
+storiesOf("Atoms|Textarea", module).add("The Textarea Family", props => (
   <Panel>
     <PanelBody>
       <Form>
         <Section>
-          <SectionName>The TextArea Family</SectionName>
+          <SectionName>The Textarea Family</SectionName>
           <Textarea
-            inputLabel="TextArea ( Standard )"
+            inputLabel="Textarea ( Standard )"
             helpText="This help text has been passed through a prop!"
           />
-          <TextArea
-            inputLabel="TextArea ( Required )"
+          <Textarea
+            inputLabel="Textarea ( Required )"
             isRequired={true}
             helpText="This help text has been passed through a prop!"
           />
           <Textarea
-            inputLabel="TextArea ( Disabled )"
+            inputLabel="Textarea ( Disabled )"
             helpText="This help text has been passed through a prop!"
             disabled={true}
           />
           <Textarea
-            inputLabel="TextArea ( Error )"
+            inputLabel="Textarea ( Error )"
             helpText="This help text has been passed through a prop!"
             error={true}
           />

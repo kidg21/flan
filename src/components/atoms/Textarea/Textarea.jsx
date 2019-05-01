@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import { InputLabel, HelpText, ErrorText } from "layout/Form"
 import { colors, shadows } from "Variables"
 
-const TextAreaContainer = styled.div`
+const TextareaContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 0.35rem;
@@ -12,7 +12,7 @@ const TextAreaContainer = styled.div`
   color: ${props =>
     props.error ? colors.alert : props.disabled ? colors.grey_40 : ""};
 `
-const TextAreaInput = styled.textarea`
+const TextareaInput = styled.textarea`
   border: 1px solid ${colors.grey_20};
   border-bottom: 1px solid ${colors.grey_20};
   border-radius: 5px;
@@ -42,14 +42,14 @@ const TextAreaInput = styled.textarea`
 
 function Textarea({ inputLabel, isRequired, helpText, errorText, ...props }) {
   return (
-    <TextAreaContainer
+    <TextareaContainer
       disabled={props.disabled} // input attribute
       helpText={helpText}
       isRequired={isRequired}
       error={props.error}
     >
       <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
-      <TextAreaInput
+      <TextareaInput
         id={props.name} // input attribute
         name={props.name} // input attribute
         type={props.type} // input attribute
@@ -62,12 +62,12 @@ function Textarea({ inputLabel, isRequired, helpText, errorText, ...props }) {
       {helpText ? <HelpText helpText={helpText} /> : null}
       {/* Error Message (required) */}
       {props.error ? <ErrorText errorText={errorText} /> : null}
-    </TextAreaContainer>
+    </TextareaContainer>
   )
 }
 
 Textarea.defaultProps = {
-  name: "TextArea Name",
+  name: "Textarea Name",
   pattern: "alpha",
   placeholder: "Placeholder Text",
   disabled: false,
@@ -83,4 +83,4 @@ Textarea.propTypes = {
   error: PropTypes.bool
 }
 
-export { Textarea as default };
+export { Textarea as default }

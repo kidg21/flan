@@ -14,7 +14,7 @@ export { default as Radio } from "./atoms/Radio"
 export { default as SelectMenu } from "./atoms/SelectMenu"
 export { default as Slider } from "./atoms/Slider"
 export { default as Switch } from "./atoms/Switch"
-export { default as TextArea } from "./atoms/TextArea"
+export { default as Textarea } from "./atoms/Textarea"
 
 // Publicly exported files from 'blocks'
 export { default as Accordion } from "./blocks/Accordion"
