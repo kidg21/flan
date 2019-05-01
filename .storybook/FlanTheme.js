@@ -1,11 +1,11 @@
 import { create } from "@storybook/theming"
-import { colors, shadows } from "Variables"
+import { fonts, colors, shadows } from "Variables"
 
 export default create({
   base: "light",
 
   // colorPrimary: "hotpink",
-  // colorSecondary: "deepskyblue",
+  colorSecondary: colors.anchor,
 
   // UI
   // appBg: "white",
@@ -14,7 +14,7 @@ export default create({
   // appBorderRadius: 4,
 
   // Typography
-  // fontBase: '"Open Sans", sans-serif',
+  fontBase: fonts.body,
   // fontCode: "monospace",
 
   // Text colors
