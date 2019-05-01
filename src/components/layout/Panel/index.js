@@ -1,1 +1,1 @@
-export { default, PanelSection, PanelBody, PanelFooter } from "./Panel.jsx"
+export { default, PanelSection } from "./Panel.jsx"

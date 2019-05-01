@@ -1,7 +1,7 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
-import { Padding } from "../../_helpers/Display";
+import React from "react"
+import { storiesOf } from "@storybook/react"
+import { withInfo } from "@storybook/addon-info"
+import { Padding } from "../../_helpers/Display"
 import {
   withKnobs,
   text,
@@ -9,10 +9,10 @@ import {
   radios,
   select,
   number
-} from "@storybook/addon-knobs";
-import Panel, { PanelBody } from "../../layout/Panel/Panel";
-import Form, { Section, SectionName } from "../../layout/Form/Form";
-import SelectMenu from "./SelectMenu";
+} from "@storybook/addon-knobs"
+import Panel, { PanelSection } from "../../layout/Panel/Panel"
+import Form, { Section, SectionName } from "../../layout/Form/Form"
+import SelectMenu from "./SelectMenu"
 
 // SelectMenu ( Knobs )
 storiesOf("Atoms|SelectMenu", module)
@@ -41,7 +41,7 @@ storiesOf("Atoms|SelectMenu", module)
         { value: "cookie dough", label: "Cookie Dough" }
       ]}
     />
-  ));
+  ))
 
 // Single-Select (Standard)
 storiesOf("Atoms|SelectMenu", module)
@@ -62,7 +62,7 @@ storiesOf("Atoms|SelectMenu", module)
         { value: "cookie dough", label: "Cookie Dough" }
       ]}
     />
-  ));
+  ))
 
 // Single-Select (Required)
 storiesOf("Atoms|SelectMenu", module)
@@ -76,7 +76,7 @@ storiesOf("Atoms|SelectMenu", module)
       helpText="Help text for the SelectMenu component"
       isRequired={true}
     />
-  ));
+  ))
 
 // Single-Select (Disabled)
 storiesOf("Atoms|SelectMenu", module)
@@ -90,7 +90,7 @@ storiesOf("Atoms|SelectMenu", module)
       helpText="Help text for the SelectMenu component"
       disabled={true}
     />
-  ));
+  ))
 
 // Single-Select (Error)
 storiesOf("Atoms|SelectMenu", module)
@@ -104,7 +104,7 @@ storiesOf("Atoms|SelectMenu", module)
       helpText="Help text for the SelectMenu component"
       error={true}
     />
-  ));
+  ))
 
 // Single-Select (Loading)
 storiesOf("Atoms|SelectMenu", module)
@@ -118,7 +118,7 @@ storiesOf("Atoms|SelectMenu", module)
       helpText="Help text for the SelectMenu component"
       isLoading={true}
     />
-  ));
+  ))
 
 // Single-Select (Multi-Select)
 storiesOf("Atoms|SelectMenu", module)
@@ -132,12 +132,12 @@ storiesOf("Atoms|SelectMenu", module)
       placeholder="Choose One Or More..."
       helpText="Help text for the SelectMenu component"
     />
-  ));
+  ))
 
 // SelectMenu (The SelectMenu Family)
 storiesOf("Atoms|SelectMenu", module).add("The SelectMenu Family", () => (
   <Panel>
-    <PanelBody>
+    <PanelSection body>
       <Form>
         <Section>
           <SectionName>The SelectMenu Family</SectionName>
@@ -186,6 +186,6 @@ storiesOf("Atoms|SelectMenu", module).add("The SelectMenu Family", () => (
           />
         </Section>
       </Form>
-    </PanelBody>
+    </PanelSection>
   </Panel>
-));
+))

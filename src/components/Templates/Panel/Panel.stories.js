@@ -1,18 +1,18 @@
-import React, { useState } from "react";
-import { storiesOf } from "@storybook/react";
-import Header from "blocks/Panel/Header";
-import Table from "blocks/Table";
-import Card from "blocks/Card/Card";
-import Group from "blocks/Panel/Group";
-import Container from "atoms/Container";
-import Accordion from "blocks/Accordion/Accordion";
-import Panel, { PanelSection, PanelBody } from "layout/Panel";
+import React, { useState } from "react"
+import { storiesOf } from "@storybook/react"
+import Header from "blocks/Panel/Header"
+import Table from "blocks/Table"
+import Card from "blocks/Card/Card"
+import Group from "blocks/Panel/Group"
+import Container from "atoms/Container"
+import Accordion from "blocks/Accordion/Accordion"
+import Panel, { PanelSection } from "layout/Panel"
 
 storiesOf("Templates|Panel", module)
   .add("Property Info Panel", () =>
     React.createElement(() => {
-      const [visibility, setVisibility] = useState(false);
-      const [visibility2, setVisibility2] = useState(false);
+      const [visibility, setVisibility] = useState(false)
+      const [visibility2, setVisibility2] = useState(false)
       return (
         <Panel>
           <PanelSection>
@@ -21,7 +21,7 @@ storiesOf("Templates|Panel", module)
               property={true}
             />
           </PanelSection>
-          <PanelBody>
+          <PanelSection body>
             <Container>
               <Table />
             </Container>
@@ -29,7 +29,7 @@ storiesOf("Templates|Panel", module)
               header={<Card title="Ownership" info={true} />}
               visibility={visibility}
               onClick={() => {
-                setVisibility(!visibility);
+                setVisibility(!visibility)
               }}
             >
               <Container>
@@ -40,38 +40,38 @@ storiesOf("Templates|Panel", module)
               header={<Card title="Acquisitions" info={true} />}
               visibility={visibility2}
               onClick={() => {
-                setVisibility2(!visibility2);
+                setVisibility2(!visibility2)
               }}
             >
               <Container>
                 <Table />
               </Container>
             </Accordion>
-          </PanelBody>
+          </PanelSection>
           <PanelSection />
         </Panel>
-      );
+      )
     })
   )
 
   .add("Layer Panel", () =>
     React.createElement(() => {
-      const [checked, setChecked] = useState(false);
-      const [checked2, setChecked2] = useState(false);
-      const [checked3, setChecked3] = useState(false);
-      const [checked4, setChecked4] = useState(false);
-      const [checked5, setChecked5] = useState(false);
-      const [checked6, setChecked6] = useState(false);
-      const [checked7, setChecked7] = useState(false);
-      const [checked8, setChecked8] = useState(false);
-      const [visibility, setVisibility] = useState(false);
+      const [checked, setChecked] = useState(false)
+      const [checked2, setChecked2] = useState(false)
+      const [checked3, setChecked3] = useState(false)
+      const [checked4, setChecked4] = useState(false)
+      const [checked5, setChecked5] = useState(false)
+      const [checked6, setChecked6] = useState(false)
+      const [checked7, setChecked7] = useState(false)
+      const [checked8, setChecked8] = useState(false)
+      const [visibility, setVisibility] = useState(false)
 
       return (
         <Panel>
           <PanelSection>
             <Header title="Layers" twoParts={true} />
           </PanelSection>
-          <PanelBody>
+          <PanelSection body>
             <Card
               title="DOT Traffic"
               layer={true}
@@ -79,11 +79,10 @@ storiesOf("Templates|Panel", module)
                 checked: checked,
 
                 onChange: () => {
-                  setChecked(!checked);
+                  setChecked(!checked)
                 }
               }}
             />
-
             <Card
               title="Qualified Opportunities"
               layer={true}
@@ -91,7 +90,7 @@ storiesOf("Templates|Panel", module)
                 checked: checked2,
 
                 onChange: () => {
-                  setChecked2(!checked2);
+                  setChecked2(!checked2)
                 }
               }}
             />
@@ -102,7 +101,7 @@ storiesOf("Templates|Panel", module)
                 checked: checked3,
 
                 onChange: () => {
-                  setChecked3(!checked3);
+                  setChecked3(!checked3)
                 }
               }}
             />
@@ -113,11 +112,10 @@ storiesOf("Templates|Panel", module)
                 checked: checked4,
 
                 onChange: () => {
-                  setChecked4(!checked4);
+                  setChecked4(!checked4)
                 }
               }}
             />
-
             <Card
               title="DFIRM"
               layer={true}
@@ -125,7 +123,7 @@ storiesOf("Templates|Panel", module)
                 checked: checked5,
 
                 onChange: () => {
-                  setChecked5(!checked5);
+                  setChecked5(!checked5)
                 }
               }}
             />
@@ -133,7 +131,7 @@ storiesOf("Templates|Panel", module)
               header={<Group title="First Group" number="3" />}
               visibility={visibility}
               onClick={() => {
-                setVisibility(!visibility);
+                setVisibility(!visibility)
               }}
             >
               <Container>
@@ -144,7 +142,7 @@ storiesOf("Templates|Panel", module)
                     checked: checked6,
 
                     onChange: () => {
-                      setChecked6(!checked6);
+                      setChecked6(!checked6)
                     }
                   }}
                 />
@@ -156,7 +154,7 @@ storiesOf("Templates|Panel", module)
                     checked: checked7,
 
                     onChange: () => {
-                      setChecked7(!checked7);
+                      setChecked7(!checked7)
                     }
                   }}
                 />
@@ -168,15 +166,14 @@ storiesOf("Templates|Panel", module)
                     checked: checked8,
 
                     onChange: () => {
-                      setChecked8(!checked8);
+                      setChecked8(!checked8)
                     }
                   }}
                 />
               </Container>
             </Accordion>
-          </PanelBody>
-          <PanelSection />
+          </PanelSection>
         </Panel>
-      );
+      )
     })
-  );
+  )

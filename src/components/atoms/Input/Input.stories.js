@@ -11,7 +11,7 @@ import {
   select,
   number
 } from "@storybook/addon-knobs"
-import Panel, { PanelSection, PanelBody } from "../../layout/Panel/Panel"
+import Panel, { PanelSection } from "../../layout/Panel/Panel"
 import Form, { Section, SectionName } from "../../layout/Form/Form"
 import Input from "atoms/Input"
 

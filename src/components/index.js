@@ -38,9 +38,4 @@ export {
 } from "./layout/Form"
 export { default as Layout } from "./layout/Layout"
 export { default as Page } from "./layout/Page"
-export {
-  default as Panel,
-  PanelSection,
-  PanelBody,
-  PanelFooter
-} from "./layout/Panel"
+export { default as Panel, PanelSection } from "./layout/Panel"

@@ -1,14 +1,14 @@
-import React, { useState, Fragment } from "react";
-import PropTypes from "prop-types";
-import styled, { css } from "styled-components";
-import { colors } from "Variables";
-import Icon from "atoms/Icon";
-import Badge from "atoms/Badge";
-import Panel, { PanelSection, PanelBody } from "../../layout/Panel/Panel";
+import React, { useState, Fragment } from "react"
+import PropTypes from "prop-types"
+import styled, { css } from "styled-components"
+import { colors } from "Variables"
+import Icon from "atoms/Icon"
+import Badge from "atoms/Badge"
+import Panel, { PanelSection } from "../../layout/Panel/Panel"
 
 const ItemList = styled.ul`
   display: flex-inline;
-`;
+`
 
 const Item = styled.li`
   list-style: none;
@@ -30,18 +30,18 @@ const Item = styled.li`
       color: ${colors.success};
     }
   }
-`;
+`
 
 const IconContainer = styled.div`
   width: 20px;
-`;
+`
 
 const ItemName = styled.span`
   margin: 0;
   flex: auto;
   padding-left: 1.5em;
   color: ${colors.grey_80};
-`;
+`
 
 ///for dark option use gradient style={{ backgroundImage: "linear-gradient(#3B3B55, #051937)" }}
 
@@ -105,7 +105,7 @@ function Menu() {
         </ItemList>
       </PanelSection>
     </Panel>
-  );
+  )
 }
 
-export default Menu;
+export default Menu

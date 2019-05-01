@@ -10,7 +10,7 @@ import {
   select,
   number
 } from "@storybook/addon-knobs"
-import Panel, { PanelBody } from "layout/Panel"
+import Panel, { PanelSection } from "layout/Panel"
 import Form, { Section, SectionName, InputGroup } from "layout/Form"
 import Textarea from "atoms/Textarea"
 
@@ -87,7 +87,7 @@ storiesOf("Atoms|Textarea", module)
 // Textarea ( The Textarea Family )
 storiesOf("Atoms|Textarea", module).add("The Textarea Family", props => (
   <Panel>
-    <PanelBody>
+    <PanelSection body>
       <Form>
         <Section>
           <SectionName>The Textarea Family</SectionName>
@@ -112,6 +112,6 @@ storiesOf("Atoms|Textarea", module).add("The Textarea Family", props => (
           />
         </Section>
       </Form>
-    </PanelBody>
+    </PanelSection>
   </Panel>
 ))
