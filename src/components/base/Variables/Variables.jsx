@@ -10,24 +10,32 @@ export const colors = {
   grey_dark: "hsl(34, 5%, 28%)",
   black: "hsl(34, 5%, 12%)",
   anchor: "hsl(201, 56%, 60%)",
+  anchor_light: "hsl(201, 56%, 70%)",
+  anchor_dark: "hsl(201, 56%, 50%)",
   success: "hsl(90, 46%, 46%)",
+  success_light: "hsl(90, 46%, 51%)",
+  success_dark: "hsl(90, 46%, 41%)",
   warning: "hsl(34, 88%, 52%)",
+  warning_light: "hsl(34, 88%, 62%)",
+  warning_dark: "hsl(34, 88%, 46%)",
   alert: "hsl(1, 55%, 50%)",
+  alert_light: "hsl(1, 55%, 60%)",
+  alert_dark: "hsl(1, 55%, 44%)",
   generalIndustry: "hsl(194, 59%, 35%)",
   government: "hsl(166, 100%, 28%)",
   insurance: "hsl(89, 39%, 50%)",
   homeBuilding: "hsl(43, 65%, 49%)",
   realEstate: "hsl(12, 61%, 50%)",
   open: "hsl(365, 38%, 50%)",
-  open2: "hsl(288, 13%, 38%)",
-
+  open2: "hsl(288, 13%, 38%)"
 }
 
 // Typefaces
 export const fonts = {
-  // primary: 'Muli, sans-serif',
-  body: "Muli, Arial, sans-serif",
   headline: "Muli, Arial, sans-serif",
+  // headline: "Lato, sans-serif",
+  body: "Muli, Arial, sans-serif",
+  // body: "Lato, sans-serif",
   data: "Muli, Arial, sans-serif"
 }
 
