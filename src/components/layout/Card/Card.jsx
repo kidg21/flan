@@ -11,6 +11,10 @@ const CardWrapper = styled.div`
   width: 100%;
   background: ${colors.white};
   filter: ${shadows.cardShadow};
+  /* Square off rounded edges of any direct children of Cards */
+  > * {
+    border-radius: 0;
+  }
   /* Prototype Content - displays when a Card is empty */
   &:empty {
     &:before {
@@ -43,8 +47,4 @@ function Card({ ...props }) {
   return <CardWrapper>{props.children}</CardWrapper>
 }
 
-function DaCard({ ...props }) {
-  return <Card>{props.children}</Card>
-}
-
-export { Card as default, CardList, DaCard }
+export { Card as default, CardList }

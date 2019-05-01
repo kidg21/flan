@@ -2,7 +2,8 @@ import React from "react"
 import { storiesOf } from "@storybook/react"
 import { checkA11y } from "@storybook/addon-a11y"
 import { Padding } from "../../_helpers/Display"
-import Card, { CardList, DaCard } from "layout/Card"
+import Card, { CardList } from "layout/Card"
+import Button from "atoms/Button"
 
 // Card
 storiesOf("Layout|Card", module)
@@ -14,12 +15,12 @@ storiesOf("Layout|Card", module)
 storiesOf("Layout|Card", module)
   .addDecorator(Padding)
   .addDecorator(checkA11y)
-  .add("Da Card- 'playing with children'", () => (
-    <DaCard>
-      <button>Button</button>
-      <button>Button</button>
-      <button>Button</button>
-    </DaCard>
+  .add("Card- 'playing with children'", () => (
+    <Card>
+      <Button />
+      <Button />
+      <Button />
+    </Card>
   ))
 
 // Card List
