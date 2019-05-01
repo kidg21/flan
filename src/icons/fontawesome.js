@@ -14,17 +14,20 @@ import {
   faCoffee,
   faEnvelope,
   faExclamation,
+  faFile,
   faFlag,
   faHashtag,
+  faHome,
   faInfo as faInfoAlert,
   faKey,
-  faMapMarker,
+  faMapMarkerAlt,
   faMoneyBill,
   faPrint,
   faSpinner,
   faTimes,
   faUser,
-  faUsers
+  faUsers,
+  faUserCircle
 } from "@fortawesome/pro-solid-svg-icons"
 // Regular
 import {
@@ -116,6 +119,7 @@ library.add(
   faExclamation,
   faExpandArrows,
   faFacebook,
+  faFile,
   faFilter,
   faFirefox,
   faFlag,
@@ -124,6 +128,7 @@ library.add(
   faGoogle,
   faHashtag,
   faHighlighter,
+  faHome,
   faInfo,
   faInfoAlert,
   faInternetExplorer,
@@ -132,7 +137,7 @@ library.add(
   faLinkedin,
   faLocationArrow,
   faMap,
-  faMapMarker,
+  faMapMarkerAlt,
   faMinus,
   faMoneyBill,
   faPlus,
@@ -152,5 +157,6 @@ library.add(
   faTwitterSquare,
   faUser,
   faUsers,
+  faUserCircle,
   faWindows
 )
