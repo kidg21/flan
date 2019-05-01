@@ -10,27 +10,34 @@ import { colors, shadows } from "Variables"
 const TextInputContainer = styled.div`
   display: grid;
   grid-template-columns: ${props =>
-    props.threeInputs /* 3 Inputs */
+    /* 3 Inputs */
+    props.threeInputs
       ? "repeat(3, 1fr)"
-      : props.twoInputs /* 2 Inputs */
+      : /* 2 Inputs */
+      props.twoInputs
       ? "repeat(2, 1fr)"
-      : props.prefix /* Prefix Label (conditionals) */
-      ? [props.postfix, props.postButton]
+      : /* Prefix Label (conditionals) */
+      props.prefix
+      ? props.postfix || props.postButton
         ? "minmax(auto, auto) minmax(auto, 3fr) minmax(auto, auto)"
         : props.postSelect
         ? "minmax(auto, auto) minmax(auto, 3fr) minmax(auto, 2fr)"
         : "minmax(auto, auto) minmax(auto, 3fr)"
-      : props.preSelect /* Prefix Select (conditionals) */
-      ? [props.postfix, props.postButton]
+      : /* Postfix Select (conditionals) */
+      props.preSelect
+      ? props.postfix || props.postButton
         ? "minmax(auto, 2fr) minmax(auto, 3fr) minmax(auto, auto)"
         : props.postSelect
         ? "minmax(auto, 2fr) minmax(auto, 3fr) minmax(auto, 2fr)"
         : "minmax(auto, 2fr) minmax(auto, 3fr)"
-      : [props.postfix, props.postButton] /* Postfix Label */
+      : /* Postfix Label */
+      props.postfix || props.postButton
       ? "minmax(auto, 3fr) minmax(auto, auto)"
-      : props.postSelect /* Postfix Select */
+      : /* Postfix Select */
+      props.postSelect
       ? "minmax(auto, 3fr) minmax(auto, 2fr)"
-      : "repeat(1, 1fr)" /* Single Input (default) */};
+      : /* Single Input (default) */
+        "repeat(1, 1fr)"};
   grid-gap: 0.35rem;
   align-content: flex-start;
   color: ${props =>
@@ -86,7 +93,7 @@ function Input({
   isRequired,
   helpText,
   errorText,
-  buttonLabel,
+  label,
   isPrimary,
   ...props
 }) {
@@ -139,9 +146,7 @@ function Input({
       {/* Postfix (conditional) */}
       {props.postfix ? <PrePostLabel>{props.postfix}</PrePostLabel> : null}
       {/* Postfix Button (conditional) */}
-      {props.postButton ? (
-        <Button buttonLabel={buttonLabel} isPrimary={true} />
-      ) : null}
+      {props.postButton ? <Button label={label} isPrimary={true} /> : null}
       {/* Postfix Select Menu (conditional) */}
       {props.postSelect ? (
         <SelectMenu
