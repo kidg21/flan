@@ -1,11 +1,21 @@
 import React from "react"
-import ReactDOM from "react-dom"
 import { storiesOf } from "@storybook/react"
 import styled, { css } from "styled-components"
-import { colors, shadows } from "Variables"
 import { Padding } from "helpers/Display"
 import Grid from "helpers/Grid"
+import { withInfo } from "@storybook/addon-info"
+import {
+  withKnobs,
+  text,
+  boolean,
+  radios,
+  select,
+  number,
+  optionsKnob as options
+} from "@storybook/addon-knobs"
+import { colors, shadows } from "Variables"
 import Command from "atoms/Command"
+import CommandNotes from "./Command.md"
 
 const Title = styled.h2`
   font-weight: 400;
@@ -25,7 +35,7 @@ const SectionTitle = styled.h4`
   border-top: 2px solid ${colors.grey_light};
 `
 
-const IconGrid = styled(Grid)`
+const CommandGrid = styled(Grid)`
   grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
   @media (min-width: 40.063em) {
     grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
@@ -34,20 +44,82 @@ const IconGrid = styled(Grid)`
     grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
   }
 `
-const commandProfile = {
-  icon: "user",
-  label: "Profile"
-}
-const commandClose = {
-  icon: "times",
-  label: "Close",
-  iconRight: true
-}
+
+// Command
+storiesOf("Atoms|Command", module)
+  .addParameters({
+    info: {
+      text:
+        "A Command is like a Button...only less button-y.  Oh, and it usually has an icon...unless it doesn't."
+    }
+  })
+  .addDecorator(Padding)
+  .addDecorator(withKnobs)
+  .add("Documentation", withInfo()(() => <Command />), {
+    notes: {
+      markdown: CommandNotes
+    }
+  })
+
+storiesOf("Atoms|Command", module)
+  .addDecorator(Padding)
+  .add("Alignment", () => (
+    <Grid col_4>
+      <Title>
+        <u>Command Alignment</u>
+      </Title>
+      <SubTitle>
+        The standard Command has a left-aligned Icon. To right-align the
+        Command's Icon, use the 'iconRight' prop.
+      </SubTitle>
+      <Command label="Standard" />
+      <Command label="Icon-Right" iconRight />
+    </Grid>
+  ))
+
+storiesOf("Atoms|Command", module)
+  .addDecorator(Padding)
+  .add("State", () => (
+    <Grid col_1>
+      <Title>
+        <u>Command State</u>
+      </Title>
+      <SubTitle>
+        The standard Command uses an anchor tag and inherits anchor styling. To
+        override, use the 'success', 'warning', 'alert', or 'isDisabled' prop.
+      </SubTitle>
+      <Command label="Standard" />
+      <Command label="Success" success />
+      <Command label="Warning" warning />
+      <Command label="Alert" alert />
+      <Command label="Disabled" isDisabled />
+    </Grid>
+  ))
+
+storiesOf("Atoms|Command", module)
+  .addDecorator(Padding)
+  .add("Size", () => (
+    <Grid col_1>
+      <Title>
+        <u>Command Size</u>
+      </Title>
+      <SubTitle>
+        To override the standard size, use the 'small', 'large', 'xlarge',
+        'xxlarge', or 'xxxlarge' prop.
+      </SubTitle>
+      <Command label="Small" small />
+      <Command label="Standard" />
+      <Command label="Large" large />
+      <Command label="X-Large" xlarge />
+      <Command label="XX-Large" xxlarge />
+      <Command label="XXX-Large" xxxlarge />
+    </Grid>
+  ))
 
 storiesOf("Application|Libraries/", module)
   .addDecorator(Padding)
   .add("List of Commands", () => (
-    <IconGrid>
+    <CommandGrid>
       <Title>
         <u>List of Commands</u>
       </Title>
@@ -59,7 +131,7 @@ storiesOf("Application|Libraries/", module)
       <SectionTitle>Standard Commands</SectionTitle>
       <Command icon="bars" label="Menu" />
       <Command icon="hashtag" label="APN" />
-      <Command icon="map-marker" label="Address" />
+      <Command icon="map-marker-alt" label="Address" />
       <Command icon="print" label="Print" />
       <Command icon="user" label="Profile" />
       <Command icon="users" label="Contacts" />
@@ -69,16 +141,5 @@ storiesOf("Application|Libraries/", module)
       <Command icon={["far", "map"]} label="GPS" />
       <Command icon={["far", "plus"]} label="Add To List" />
       <Command icon={["far", "share"]} label="Share" />
-    </IconGrid>
-  ))
-
-storiesOf("Atoms|Command", module)
-  .addDecorator(Padding)
-  .add("Default Command", () => (
-    <Grid col_4>
-      <Command />
-      <Command iconRight />
-      <Command {...commandProfile} />
-      <Command {...commandClose} />
-    </Grid>
+    </CommandGrid>
   ))
