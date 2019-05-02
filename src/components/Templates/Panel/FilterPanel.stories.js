@@ -52,22 +52,4 @@ storiesOf("Templates|Panel", module)
         </Panel>
       );
     })
-  )
-
-  .add("Filter Details Panel", () =>
-    React.createElement(() => {
-      return (
-        <Panel>
-          <PanelSection>
-            <Header title="Last Market Sale" threeParts={true} />
-          </PanelSection>
-          <PanelSection body>
-            <span>Last Sale Date</span>
-            <span>Last Sale Price</span>
-            <span>Seller Name</span>
-            <span>Last Sale Deed Type</span>
-          </PanelSection>
-        </Panel>
-      );
-    })
   );

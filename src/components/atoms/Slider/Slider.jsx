@@ -48,7 +48,7 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
 
 
 
-function Slider({id}) {
+function Slider({id, value, min, max, step, ...props}) {
   return (<div style={{display: "inline-block"}}><InputContainer><Input inputLabel="min" style={{width: "50px"}}/><Input inputLabel="max" style={{width: "50px", textAlign: "right", alignContent: "right"}}/></InputContainer>
   <div>
     <SliderPiece/></div></div>)

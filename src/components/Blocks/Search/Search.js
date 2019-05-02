@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Container from "atoms/Container/Container";
 import Tabs, { Tab } from "blocks/Tabs";
 import Icon from "atoms/Icon";
+import Input from "atoms/Input";
 import { colors, shadows } from "Variables";
 
 const SearchContainer = styled.div`
@@ -42,13 +43,12 @@ function Search({}) {
     <SearchContainer>
       <Container
         style={{
-          padding: "1em",
           justifyContent: "space-between",
           display: "flex",
           verticalAlign: "baseline"
         }}
       >
-        <TextInput placeholder="Search" />
+        <Input style={{ border: "0px solid grey" }} placeholder="Search" />
         <Icon
           style={{
             filter: "brightness(170%)",

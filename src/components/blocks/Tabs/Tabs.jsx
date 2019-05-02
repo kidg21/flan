@@ -3,6 +3,7 @@ import styled, { css, keyframes } from "styled-components"
 import { colors, shadows } from "Variables"
 import PropTypes from "prop-types"
 import Card from "layout/Card"
+import {Darken} from "helpers/Placeholders"
 
 const StyledTab = styled.div`
   display: grid;
@@ -27,9 +28,7 @@ const StyledTab = styled.div`
   // transition: all 0.7s ease-in;
 
 
-  &:hover {
-    filter: brightness(95%);
-  }
+ &:hover { ${Darken};}
 `
 const TabLabel = styled.span`
   cursor: pointer;
