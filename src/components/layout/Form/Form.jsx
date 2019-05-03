@@ -128,11 +128,11 @@ const InputGroup = styled.div`
 `
 
 InputLabel.defaultProps = {
-  inputLabel: "Input Label",
+  inputLabel: "",
   isRequired: false
 }
 InputLabel.propTypes = {
-  inputLabel: PropTypes.string.isRequired,
+  inputLabel: PropTypes.string,
   isRequired: PropTypes.bool
 }
 

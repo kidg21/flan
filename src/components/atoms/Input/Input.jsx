@@ -41,7 +41,7 @@ const TextInputContainer = styled.div`
   grid-gap: 0.35rem;
   align-content: flex-start;
   color: ${props =>
-    props.error ? colors.alert : props.disabled ? colors.grey_40 : ""};
+    props.error ? colors.alert : props.isDisabled ? colors.grey_40 : ""};
 `
 
 const PrePostLabel = styled.label`
@@ -89,18 +89,22 @@ const TextInput = styled.input`
 `
 
 function Input({
-  inputLabel,
-  isRequired,
+  id,
+  inputLabel, // Label prop
+  isRequired, // Label prop
+  isDisabled,
   helpText,
   errorText,
   label,
-  isPrimary,
+  isPrimary, // Button prop
+  style,
   ...props
 }) {
   return (
     <TextInputContainer
+      id={id}
       isRequired={isRequired}
-      disabled={props.disabled} // input attribute
+      disabled={isDisabled} // input attribute
       error={props.error}
       prefix={props.prefix}
       preSelect={props.preSelect}
@@ -110,6 +114,7 @@ function Input({
       rounded={props.rounded}
       twoInputs={props.twoInputs} // 2 inputs in a row
       threeInputs={props.threeInputs} // 3 inputs in a row
+      style={style}
     >
       {/* Input Label */}
       <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
@@ -127,8 +132,8 @@ function Input({
         />
       ) : null}
       <TextInput
-        id={props.name} // input attribute
-        name={props.name} // input attribute
+        id={props.id} // input attribute
+        name={props.id} // input attribute
         type={props.type} // input attribute
         value={props.value} // input attribute
         placeholder={props.placeholder} // input attribute
@@ -167,6 +172,7 @@ function Input({
 }
 
 Input.defaultProps = {
+  id: "",
   name: "Input Name",
   type: "text",
   pattern: "alpha",
@@ -181,6 +187,7 @@ Input.defaultProps = {
 }
 
 Input.propTypes = {
+  id: PropTypes.string,
   name: PropTypes.string,
   type: PropTypes.string,
   pattern: PropTypes.string,
@@ -195,7 +202,8 @@ Input.propTypes = {
   threeInputs: PropTypes.bool,
   placeholder_3: PropTypes.string,
   preSelect: PropTypes.array,
-  postSelect: PropTypes.array
+  postSelect: PropTypes.array,
+  style: PropTypes.string
 }
 
 export { Input as default }
