@@ -1,7 +1,7 @@
 import React  from "react"
 import styled, { css } from "styled-components"
 import Input from "atoms/Input/Input";
-import {Lighten} from "helpers/Placeholders";
+import {Lighten, Darken} from "helpers/Placeholders";
 
 
 const InputContainer = styled.div`
@@ -36,6 +36,10 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
     // background-image: linear-gradient(#00adb5, #30cffc);
     cursor: pointer;
     
+&:hover {
+  ${Darken};
+}
+
     &:active {
   ${Lighten};
 }
