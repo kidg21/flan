@@ -22,5 +22,5 @@ export const Darken = css`
   `;
 
 export const Lighten = css`
-filter: brightness(105%)
+filter: brightness(125%)
 `;

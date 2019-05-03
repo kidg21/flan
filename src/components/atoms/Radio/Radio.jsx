@@ -19,7 +19,7 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
   cursor: pointer;
   -webkit-appearance: none;
   &:checked {
-    background-color: ${colors.anchor};
+    background-color: ${colors.success};
   }
   &:focus {
     outline: none;
