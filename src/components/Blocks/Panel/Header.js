@@ -17,7 +17,7 @@ const HeaderLayout = styled.div`
   font-size: 20px;
   display: flex;
   justify-content: space-between;
-  padding: 0.8em 0.6em 0.25em 0.8em;
+  padding: 0.8em 0.25em 0.25em 0.8em;
   border-bottom: 0.25px solid #eaeded;
   box-shadow: 0 0 0px rgba(0, 0, 0, 0.08);
 `;
@@ -60,7 +60,7 @@ function Header({ title, ...props }) {
           ""
         ) : props.threeParts ? (
           <TitleContainer>
-            <h4>{title}</h4>
+            <h4 style={{ textAlign: "Center" }}>{title}</h4>
           </TitleContainer>
         ) : props.property ? (
           ""
