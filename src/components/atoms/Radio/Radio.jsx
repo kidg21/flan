@@ -19,7 +19,7 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
   cursor: pointer;
   -webkit-appearance: none;
   &:checked {
-    background-color: ${colors.anchor};
+    background-color: ${colors.success};
   }
   &:focus {
     outline: none;
@@ -30,8 +30,7 @@ const RadioLabel = styled.label`
   user-select: none;
   font-size: smaller;
   font-weight: 700;
-  letter-spacing: 1px;
-  line-height: 1.4;
+  line-height: 1.2;
   cursor: pointer;
 `
 
