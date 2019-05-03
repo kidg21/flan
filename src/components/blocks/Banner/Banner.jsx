@@ -1,112 +1,162 @@
 import React from "react"
+import PropTypes from "prop-types"
 import styled, { css } from "styled-components"
-import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import AlertBadge from "atoms/Badge/AlertBadge"
+import { colors, shadows } from "Variables"
+import Icon from "atoms/Icon"
+import Badge from "atoms/Badge"
 
 const StyledBanner = styled.div`
-  background: rgba(0, 0, 0, 0.75);
-  color: white;
-  width: 30%;
-  padding: 0.25em 0.6em 0.8em 0.8em;
-  border-radius: 5px;
-  justify-content: space-between;
   display: flex;
-  cursor: pointer;
-
-  @media (max-width: 1000px) {
-    width: 100%;
-  }
+  align-items: flex-start;
+  background-color: ${props =>
+    props.inverse ? colors.grey_dark : colors.grey_light};
+  color: ${props => (props.inverse ? colors.white : "")};
+  border: 1px solid;
+  border-color: ${props =>
+    props.success
+      ? colors.success
+      : props.warning
+      ? colors.warning
+      : props.error
+      ? colors.alert
+      : props.info
+      ? colors.anchor
+      : props.inverse
+      ? colors.black
+      : colors.grey_40};
+  border-left-width: ${props =>
+    props.success || props.warning || props.error || props.info ? "6px" : ""};
+  border-radius: ${props =>
+    props.success || props.warning || props.error || props.info
+      ? "0 5px 5px 0"
+      : "5px"};
+  padding: 1em;
+  width: 100%;
+  filter: ${props => (props.isFloating ? shadows.cardShadow : "")};
 `
 
-// const Container = styled.div`
-// display: flex;
-// line-height: normal;
-// justify-content: flex-end;
-// padding-right: .7em;
-// padding-top: .5em;
-// `
+const BannerIcon = styled(FontAwesomeIcon)`
+  margin-right: 0.5em;
+  cursor: default;
+`
 
-///On top text
+const StatusBadge = styled(Badge)`
+  margin-right: 1.25em;
+  cursor: default;
+`
 
-const Message = styled.div`
-  justify-content: left;
+const Message = styled.section`
+  display: grid;
+  grid-gap: 0.25rem;
+  flex: auto;
   align-self: center;
-  display: inline;
-`
-
-const TopText = styled.div``
-
-const BottomText = styled.div``
-
-const Commands = styled.div`
-  display: inline;
-  text-align: right;
+  padding-right: 0.5em;
 `
 
 const Notification = styled.h4`
   margin: 0;
-  display: flex;
-  font-size: 12px;
-  font-weight: normal;
-  padding-right: 10px;
 `
 
-const NotificationLink = styled.a`
-  font-size: 11px;
-  font-weight: bold;
-  text-decoration: none;
-  color: white;
-  cursor: pointer;
-  transition: border-bottom 0.25s ease-in;
+const Description = styled.h5`
+  margin: 0;
+`
 
+const NotificationLink = styled.h4`
+  color: inherit;
+  width: max-content;
+  margin: 0;
+  padding-top: 0.5em;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
   &:hover {
-    border-bottom: 1px solid white;
+    opacity: 1;
+    text-decoration: underline;
   }
 `
 
-function Banner({ title, ...props }) {
+const Close = styled.section`
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
+`
+
+function Banner({
+  id,
+  title,
+  description,
+  icon,
+  cta,
+  info,
+  success,
+  warning,
+  error,
+  inverse,
+  isFloating,
+  style,
+  ...props
+}) {
   return (
-    <StyledBanner>
+    <StyledBanner
+      id={id}
+      title={title}
+      description={description}
+      icon={icon}
+      cta={cta}
+      info={info}
+      success={success}
+      warning={warning}
+      error={error}
+      inverse={inverse}
+      isFloating={isFloating}
+      style={style}
+    >
+      {icon ? <BannerIcon icon={icon} size="2x" /> : null}
+      {info ? <StatusBadge icon="info" anchor /> : null}
+      {success ? <StatusBadge icon="check" success /> : null}
+      {warning ? <StatusBadge icon="exclamation" warning /> : null}
+      {error ? <StatusBadge icon="times" alert /> : null}
       <Message>
-        <TopText>
-          <Notification>{title}</Notification>
-        </TopText>
-        <BottomText>
-          <NotificationLink>Learn More</NotificationLink>
-        </BottomText>
+        <Notification>{title}</Notification>
+        {description ? <Description>{description}</Description> : null}
+        {cta ? <NotificationLink>{cta}</NotificationLink> : null}
       </Message>
-      <Commands>
-        <div>
-          <FontAwesomeIcon icon={["fal", "times"]} color={"white"} />
-        </div>
-        <div>
-        {props.error ? <AlertBadge error/> : null}
-        {props.info ? <AlertBadge info/> : null}
-        {props.success ? <AlertBadge success/> : null}
-        {props.warning ? <AlertBadge warning/> : null}
-        </div>
-      </Commands>
+      <Close>
+        <Icon icon="times" />
+      </Close>
     </StyledBanner>
   )
 }
 
-
 Banner.defaultProps = {
+  id: "",
   title: "Notification Alert",
-  error: false,
-  warning: false,
+  description: "",
+  icon: "",
+  cta: "",
   info: false,
-  success: false
-};
+  success: false,
+  warning: false,
+  error: false,
+  inverse: false,
+  isFloating: false
+}
 
 Banner.propTypes = {
+  id: PropTypes.string,
   title: PropTypes.string,
-  error: PropTypes.bool,
-  warning: PropTypes.bool,
+  description: PropTypes.string,
+  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  cta: PropTypes.string,
   info: PropTypes.bool,
-  success: PropTypes.bool
-};
-
+  success: PropTypes.bool,
+  warning: PropTypes.bool,
+  error: PropTypes.bool,
+  inverse: PropTypes.bool,
+  isFloating: PropTypes.bool,
+  style: PropTypes.string
+}
 
 export default Banner

@@ -2,7 +2,8 @@ import React from "react"
 import styled, { css } from "styled-components"
 import PropTypes from "prop-types"
 import { fonts, colors, shadows } from "Variables"
-import { PlaceholderText } from "../../_helpers/Placeholders"
+import { PlaceholderText } from "helpers/Placeholders"
+import Grid from "helpers/Grid"
 
 const Form = styled.form`
   display: grid;
@@ -108,31 +109,22 @@ const Error = styled.label`
 `
 const ErrorText = props => <Error>{props.errorText}</Error>
 
-const InputGroup = styled.div`
-  display: grid;
-  grid-template-columns: ${props =>
-    props.threeColumns
-      ? "repeat(3, 1fr)"
-      : props.twoColumns
-      ? "repeat(2, 1fr)"
-      : props.oneColumn
-      ? "repeat(1, 1fr)"
-      : "repeat(auto-fill, minmax(15rem, 1fr))"};
+const InputGroup = styled(Grid)`
   grid-gap: 0.75rem;
   /* Prototype Content - displays when a Form is empty */
   &:empty {
     &:before {
-      content: "{ InputGroup } \00000A ''";
+      content: "{ InputGroup }";
     }
   }
 `
 
 InputLabel.defaultProps = {
-  inputLabel: "Input Label",
+  inputLabel: "",
   isRequired: false
 }
 InputLabel.propTypes = {
-  inputLabel: PropTypes.string.isRequired,
+  inputLabel: PropTypes.string,
   isRequired: PropTypes.bool
 }
 

@@ -268,6 +268,9 @@ storiesOf("Atoms|Icon", module)
       </StaticIcon>
     </IconGrid>
   ))
+
+storiesOf("Blocks|IconBlock", module)
+  .addDecorator(Padding)
   .add("Icon Block", () => (
     <IconGrid>
       <Title>
@@ -468,8 +471,8 @@ storiesOf("Application|Libraries/", module)
         <IconLabel>home</IconLabel>
       </ActiveIcon>
       <ActiveIcon>
-        <Icon icon={["far", "info"]} />
-        <IconLabel>"far", "info"</IconLabel>
+        <Icon icon="info" />
+        <IconLabel>"info"</IconLabel>
       </ActiveIcon>
       <ActiveIcon>
         <Icon icon="key" />

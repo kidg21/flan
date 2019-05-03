@@ -30,8 +30,7 @@ const RadioLabel = styled.label`
   user-select: none;
   font-size: smaller;
   font-weight: 700;
-  letter-spacing: 1px;
-  line-height: 1.4;
+  line-height: 1.2;
   cursor: pointer;
 `
 
