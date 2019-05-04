@@ -31,31 +31,33 @@ storiesOf("Atoms|Button", module)
       markdown: ButtonNotes
     }
   })
-  .add("Standard Button", () => <Button label="Standard Button" />)
+  .add("Standard Button", () => <Button buttonLabel="Standard Button" />)
   .add("Primary Button", () => (
-    <Button label="Primary Button" isPrimary={true} />
+    <Button buttonLabel="Primary Button" buttonPrimary={true} />
   ))
   .add("Secondary Button", () => (
-    <Button label="Secondary Button" isSecondary={true} />
+    <Button buttonLabel="Secondary Button" buttonSecondary={true} />
   ))
   .add("Icon Button", () => (
-    <Button label="Icon Button" icon={["fas", "user"]} />
+    <Button buttonLabel="Icon Button" icon={["fas", "user"]} />
   ))
-  .add("Square Button", () => <Button label="Round Button" isRound={true} />)
+  .add("Square Button", () => (
+    <Button buttonLabel="Round Button" isRound={true} />
+  ))
   .add("Floating Button", () => (
-    <Button label="Floating Button" isFloating={true} />
+    <Button buttonLabel="Floating Button" isFloating={true} />
   ))
   .add("Disabled Button", () => (
-    <Button label="Disabled Button" isDisabled={true} />
+    <Button buttonLabel="Disabled Button" isDisabled={true} />
   ))
   .add("The Button Family", () => (
     <Grid>
-      <Button label="Standard Button" />
-      <Button label="Primary Button" isPrimary={true} />
-      <Button label="Secondary Button" isSecondary={true} />
-      <Button label="Icon Button" icon={["fas", "user"]} />
-      <Button label="Round Button" isRound={true} />
-      <Button label="Floating Button" isFloating={true} />
-      <Button label="Disabled Button" isDisabled={true} />
+      <Button buttonLabel="Standard Button" />
+      <Button buttonLabel="Primary Button" buttonPrimary={true} />
+      <Button buttonLabel="Secondary Button" buttonSecondary={true} />
+      <Button buttonLabel="Icon Button" icon={["fas", "user"]} />
+      <Button buttonLabel="Round Button" isRound={true} />
+      <Button buttonLabel="Floating Button" isFloating={true} />
+      <Button buttonLabel="Disabled Button" isDisabled={true} />
     </Grid>
   ))

@@ -6,16 +6,18 @@ import PropTypes from "prop-types"
 
 const StyledButton = styled.button`
   color: ${props =>
-    props.isPrimary || props.isSecondary ? colors.white : colors.anchor};
+    props.buttonPrimary || props.buttonSecondary
+      ? colors.white
+      : colors.anchor};
   background-color: ${props =>
-    props.isPrimary
+    props.buttonPrimary
       ? colors.anchor
-      : props.isSecondary
+      : props.buttonSecondary
       ? colors.success
       : colors.white};
   border: 1px solid;
   border-color: ${props =>
-    props.isSecondary ? colors.success : colors.anchor};
+    props.buttonSecondary ? colors.success : colors.anchor};
   border-radius: ${props => (props.isRound ? "2rem" : "4px")};
   padding: 0.75rem 1rem;
   font-weight: bold;
@@ -26,16 +28,16 @@ const StyledButton = styled.button`
   &:hover {
     color: ${colors.white};
     background-color: ${props =>
-      props.isSecondary ? colors.success_dark : colors.anchor_dark};
+      props.buttonSecondary ? colors.success_dark : colors.anchor_dark};
     border-color: ${props =>
-      props.isSecondary ? colors.success_dark : colors.anchor_dark};
+      props.buttonSecondary ? colors.success_dark : colors.anchor_dark};
   }
   &:active {
     color: ${colors.white};
     background-color: ${props =>
-      props.isSecondary ? colors.success_light : colors.anchor_light};
+      props.buttonSecondary ? colors.success_light : colors.anchor_light};
     border-color: ${props =>
-      props.isSecondary ? colors.success_light : colors.anchor_light};
+      props.buttonSecondary ? colors.success_light : colors.anchor_light};
   }
   &[disabled] {
     color: ${colors.grey_40};
@@ -60,10 +62,10 @@ function Button({
   id,
   name,
   type,
-  label,
+  buttonLabel,
   icon,
-  isPrimary,
-  isSecondary,
+  buttonPrimary,
+  buttonSecondary,
   isRound,
   isFloating,
   isDisabled,
@@ -75,15 +77,15 @@ function Button({
       id={id}
       name={id}
       type={type}
-      isPrimary={isPrimary}
-      isSecondary={isSecondary}
+      buttonPrimary={buttonPrimary}
+      buttonSecondary={buttonSecondary}
       isRound={isRound}
       isFloating={isFloating}
       disabled={isDisabled}
       onClick={onClick}
     >
       {icon ? <ButtonIcon icon={icon} /> : null}
-      <ButtonLabel>{label}</ButtonLabel>
+      <ButtonLabel>{buttonLabel}</ButtonLabel>
     </StyledButton>
   )
 }
@@ -93,10 +95,10 @@ Button.propTypes = {
   name: PropTypes.string,
   /** button, file, reset, or submit. */
   type: PropTypes.string,
-  label: PropTypes.string,
+  buttonLabel: PropTypes.string,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
-  isPrimary: PropTypes.bool,
-  isSecondary: PropTypes.bool,
+  buttonPrimary: PropTypes.bool,
+  buttonSecondary: PropTypes.bool,
   isRound: PropTypes.bool,
   isFloating: PropTypes.bool,
   isDisabled: PropTypes.bool,
@@ -106,7 +108,7 @@ Button.propTypes = {
 Button.defaultProps = {
   id: "Button Name",
   type: "button",
-  label: "Button Name"
+  buttonLabel: "Button Name"
 }
 
 export { Button as default }
