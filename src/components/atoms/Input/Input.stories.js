@@ -44,6 +44,7 @@ storiesOf("Atoms|Input", module)
       // preSelect={boolean("Pre-Select", false)}
       postfix={text("Postfix", "")}
       // postSelect={boolean("Post-Select", false)}
+      buttonLabel={text("Buton Label", "")}
       twoInputs={boolean("2 Inputs", false)}
       threeInputs={boolean("3 Inputs", false)}
       // disabled={radios(
@@ -71,7 +72,7 @@ storiesOf("Atoms|Input", module)
     />
   ))
 
-// Number ( Standard )
+// Number ( Number )
 storiesOf("Atoms|Input", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
@@ -121,6 +122,19 @@ storiesOf("Atoms|Input", module)
       helpText="This help text has been passed through a prop!"
       error={true}
       errorMessage="This error text has been passed through a prop!"
+    />
+  ))
+
+// Input ( Round )
+storiesOf("Atoms|Input", module)
+  .addDecorator(Padding)
+  .addDecorator(withInfo)
+  .addDecorator(withKnobs)
+  .add("Input ( Round )", () => (
+    <Input
+      inputLabel="Input ( Round )"
+      helpText="This help text has been passed through a prop!"
+      isRound={true}
     />
   ))
 
@@ -236,7 +250,7 @@ storiesOf("Atoms|Input", module)
     <Input
       inputLabel="Input ( Post-Button )"
       postButton={true}
-      label="Upload"
+      buttonLabel="Upload"
       helpText="This help text has been passed through a prop!"
     />
   ))
@@ -392,7 +406,7 @@ storiesOf("Atoms|Input", module).add("The Input Family", props => (
           <Input
             inputLabel="Input ( Post-Button )"
             postButton={true}
-            label="Upload"
+            buttonLabel="Upload"
             helpText="This help text has been passed through a prop!"
           />
           <Input
