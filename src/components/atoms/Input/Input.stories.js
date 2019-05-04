@@ -44,7 +44,7 @@ storiesOf("Atoms|Input", module)
       // preSelect={boolean("Pre-Select", false)}
       postfix={text("Postfix", "")}
       // postSelect={boolean("Post-Select", false)}
-      buttonLabel={text("Buton Label", "")}
+      buttonLabel={text("Button Label", "")}
       twoInputs={boolean("2 Inputs", false)}
       threeInputs={boolean("3 Inputs", false)}
       // disabled={radios(

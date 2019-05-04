@@ -17,7 +17,7 @@ const TextareaInput = styled.textarea`
   border-bottom: 1px solid ${colors.grey_20};
   border-radius: 5px;
   border-color: ${props => (props.error ? colors.alert : "")};
-  background-color: ${props => (props.error ? "#f9ebeb" : "")};
+  background-color: ${props => (props.error ? colors.alert_tint : "")};
   caret-color: ${props => (props.error ? colors.alert : "")};
   padding: 0.5rem 0.75rem;
   resize: vertical;
@@ -26,16 +26,16 @@ const TextareaInput = styled.textarea`
   }
   &:hover {
     border: 1px solid ${colors.anchor};
+    border-color: ${props => (props.error ? colors.alert : "")};
   }
   &:focus {
-    background-color: ${props => (props.error ? "#f9ebeb" : "")};
+    background-color: ${props => (props.error ? colors.alert_tint : "")};
     border-color: ${props => (props.error ? colors.alert : colors.anchor)};
     ::placeholder {
-      color: ${props => (props.error ? colors.alert : colors.grey_40)};
+      color: ${props => (props.error ? colors.alert : colors.grey_60)};
     }
     ::selection {
-      background-color: ${props =>
-        props.error ? colors.alert : colors.success};
+      background-color: ${props => (props.error ? colors.alert : "")};
     }
   }
 `
