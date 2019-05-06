@@ -73,12 +73,12 @@ const TextInput = styled.input`
     color: ${props => (props.error ? colors.alert : "")};
   }
   &:hover {
-    border: 1px solid ${colors.anchor};
+    border: 1px solid ${colors.grey_40};
     border-color: ${props => (props.error ? colors.alert : "")};
   }
   &:focus {
     background-color: ${props => (props.error ? "#f9ebeb" : "")};
-    border-color: ${props => (props.error ? colors.alert : colors.anchor)};
+    border-color: ${props => (props.error ? colors.alert : colors.success)};
     ::placeholder {
       color: ${props => (props.error ? colors.alert : colors.grey_60)};
     }

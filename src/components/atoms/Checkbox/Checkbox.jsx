@@ -28,8 +28,9 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
 
 const CheckboxLabel = styled.label`
   user-select: none;
-  font-size: smaller;
-  font-weight: 700;
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: 400;
   line-height: 1.2;
   cursor: pointer;
 `

@@ -15,7 +15,7 @@ const HeaderLayout = styled.div`
   font-size: 14px;
   display: flex;
   justify-content: space-between;
-  padding: 0.8em 0.6em 0.25em 0.8em;
+  padding: 1em 0.6em 0.5em 0.8em;
   border-bottom: 0.25px solid #eaeded;
   box-shadow: 0 0 0px rgba(0, 0, 0, 0.08);
 `;

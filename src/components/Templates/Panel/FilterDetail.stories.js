@@ -134,22 +134,22 @@ storiesOf("Templates|Panel", module).add("Filter Details Panel", () =>
                   onChange={handleCheckboxChange}
                 />
               </InputGroup>
-              <Section>
-                <SectionName>Last Sale Price</SectionName>
-                <Slider />
-              </Section>
-              <Section>
-                <SectionName>Seller Name</SectionName>
-                <Input placeholder="Seller Name" type="text" />
-              </Section>
-              <Section>
-                <SectionName>Last Sale Deed Type</SectionName>
-                <InputGroup>
-                  <Checkbox {...cbox_4} />
-                  <Checkbox {...cbox_5} />
-                  <Checkbox {...cbox_6} />
-                </InputGroup>
-              </Section>
+            </Section>
+            <Section>
+              <SectionName>Last Sale Price</SectionName>
+              <Slider />
+            </Section>
+            <Section>
+              <SectionName>Seller Name</SectionName>
+              <Input placeholder="i.e. Mary Williams" type="text" />
+            </Section>
+            <Section>
+              <SectionName>Last Sale Deed Type</SectionName>
+              <InputGroup>
+                <Checkbox {...cbox_4} />
+                <Checkbox {...cbox_5} />
+                <Checkbox {...cbox_6} />
+              </InputGroup>
             </Section>
           </Form>
         </PanelSection>
