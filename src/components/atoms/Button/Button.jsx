@@ -3,6 +3,7 @@ import styled, { css, keyframes } from "styled-components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { colors, shadows } from "Variables"
 import PropTypes from "prop-types"
+import {Lighten, Darken} from "helpers/Placeholders";
 
 const StyledButton = styled.button`
   color: ${props =>
@@ -15,20 +16,17 @@ const StyledButton = styled.button`
       : colors.white};
   border: 1px solid;
   border-color: ${props =>
-    props.isSecondary ? colors.success : colors.anchor};
+    props.isSecondary 
+    ? colors.success : colors.anchor};
   border-radius: ${props => (props.isRound ? "2rem" : "4px")};
-  padding: 0.75rem 1rem;
+  padding: 0.65rem 1rem;
   font-weight: bold;
   letter-spacing: 1px;
   cursor: pointer;
   filter: ${props => (props.isFloating ? shadows.cardShadow : "")};
   transition: all 0.15s ease;
   &:hover {
-    color: ${colors.white};
-    background-color: ${props =>
-      props.isSecondary ? colors.success_dark : colors.anchor_dark};
-    border-color: ${props =>
-      props.isSecondary ? colors.success_dark : colors.anchor_dark};
+      ${Darken};
   }
   &:active {
     color: ${colors.white};

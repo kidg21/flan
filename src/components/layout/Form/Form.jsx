@@ -77,7 +77,7 @@ const Label = styled.label`
   grid-column: 1 / -1;
   user-select: none;
   font-size: smaller;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 1px;
   color: inherit;
   cursor: pointer;

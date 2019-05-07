@@ -3,21 +3,21 @@ import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 
-const Container = styled.div`
-  display: flex;
-  line-height: 2;
-  justify-content: flex-end;
-  padding-right: 0.7em;
-  padding-top: 5px;
-`;
+// const Container = styled.div`
+//   display: flex;
+//   line-height: 2;
+//   justify-content: flex-end;
+//   padding-right: 0.2em;
+//   padding-top: 5px;
+// `;
 
 /////Navigation consts
 const HeaderLayout = styled.div`
-  align-items: flex;
+  vertical-align: baseline;
   font-size: 20px;
   display: flex;
   justify-content: space-between;
-  padding: 0.8em 0.25em 0.25em 0.8em;
+  padding: 1.2em 0.3em 0.8em 0.2em;
   border-bottom: 0.25px solid #eaeded;
   box-shadow: 0 0 0px rgba(0, 0, 0, 0.08);
 `;
@@ -25,16 +25,18 @@ const HeaderLayout = styled.div`
 const TitleContainer = styled.div`
   overflow-wrap: break-word;
   display: flex;
+  justify-content: flex-start;
+  // align-text: center;
   flex-wrap: wrap;
-  width: 12rem;
+  // width: 12rem;
 `;
 
 function Header({ title, ...props }) {
   return (
     <div>
-      <Container>
-        <Icon icon={["fal", "times"]} />
-      </Container>
+      {/* <Container>
+        <Icon icon={["fal", "times"]} style={{ filter: "brightness(200%)" }} />
+      </Container> */}
       <HeaderLayout
         twoParts={props.twoParts}
         threeParts={props.threeParts}
@@ -42,14 +44,14 @@ function Header({ title, ...props }) {
       >
         <div>
           {props.twoParts ? (
-            <TitleContainer>
+            <TitleContainer style={{ paddingLeft: "0.5em" }}>
               <h4>{title}</h4>
             </TitleContainer>
           ) : props.threeParts ? (
             <Icon icon={["far", "angle-left"]} />
           ) : props.property ? (
             <div style={{ display: "flex" }}>
-              <TitleContainer>
+              <TitleContainer style={{ paddingLeft: "0.5em", width: "12rem" }}>
                 <h4>{title}</h4>
               </TitleContainer>
               <Icon icon={["fal", "directions"]} size="lg" anchor />
@@ -60,14 +62,12 @@ function Header({ title, ...props }) {
           ""
         ) : props.threeParts ? (
           <TitleContainer>
-            <h4 style={{ textAlign: "Center" }}>{title}</h4>
+            <h4>{title}</h4>
           </TitleContainer>
         ) : props.property ? (
           ""
         ) : null}
-        <div>
-          <Icon icon={["far", "ellipsis-v"]} />
-        </div>
+        <Icon icon={["far", "ellipsis-v"]} />
       </HeaderLayout>
     </div>
   );

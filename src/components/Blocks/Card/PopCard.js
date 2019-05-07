@@ -54,18 +54,18 @@ function PopCard({ title, message, action }) {
         </Container>
         <Message>
           <h4 style={{ textAlign: "center" }}> {title} </h4>
-          <h5
+          <p
             style={{
               paddingTop: "1em",
+              fontFamily: "arial",
               textAlign: "center"
             }}
           >
-            {" "}
             {message}
-          </h5>
+          </p>
         </Message>
         <Actions>
-          <Button label={action} />
+          <Button isRound label={action} />
         </Actions>
       </HeaderSection>
     </Aligner>

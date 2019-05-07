@@ -99,7 +99,6 @@ storiesOf("Templates|Panel", module).add("Property Panel", () =>
             </Container>
           </Accordion>
         </PanelSection>
-        <PanelSection />
       </Panel>
     );
   })

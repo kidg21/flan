@@ -5,14 +5,21 @@ import Icon from "atoms/Icon";
 import Switch from "atoms/Switch/Switch";
 import IconBlock from "blocks/IconBlock/IconBlock";
 
+// style={{ fontFamily: "arial", fontWeight: 400, fontSize: "12px" }}
+
 const blockStyle = {
   width: "60px",
   color: "lightgrey"
 };
+
+const CardTitle = styled.h5`
+  font-weight: 600;
+`;
 /////Navigation consts
 const HeaderLayout = styled.div`
   align-items: flex;
   font-size: 14px;
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   padding: 1em 0.6em 0.5em 0.8em;
@@ -37,12 +44,14 @@ function Card({ title, switchProps, ...props }) {
             <div style={{ display: "flex" }}>
               {" "}
               <Switch {...switchProps} />{" "}
-              <h5 style={{ flex: "auto", paddingLeft: "1.5em" }}>{title}</h5>{" "}
+              <CardTitle style={{ flex: "auto", paddingLeft: "1.5em" }}>
+                {title}
+              </CardTitle>{" "}
             </div>
           ) : props.navigation ? (
-            <h5>{title}</h5>
+            <CardTitle>{title}</CardTitle>
           ) : props.info ? (
-            <h5>{title}</h5>
+            <CardTitle>{title}</CardTitle>
           ) : null}
         </div>
         <div>

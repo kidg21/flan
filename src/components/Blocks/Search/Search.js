@@ -20,23 +20,21 @@ const SearchContainer = styled.div`
   }
 `;
 
-// const TextInput = styled.input`
-//   font-size: 20px;
-//   border: 0px solid ${colors.grey_20};
-//   border-bottom: 0px solid ${colors.grey_20};
-//   background-color: ${props => (props.error ? "#f9ebeb" : "")};
-//   caret-color: ${props => (props.error ? colors.alert : "")};
-//   min-height: 1rem;
-//   padding: 0.3rem 0.5rem;
-//   ::placeholder {
-//     color: ${props => (props.error ? colors.alert : "")};
-//   }
-//   &:hover {
-//     color: ${colors.grey_80};
-//   }
-// `;
-// //   color: #bbb8b4;
-// `;
+const TextInput = styled.input`
+  font-size: 20px;
+  border: 0px solid ${colors.grey_20};
+  border-bottom: 0px solid ${colors.grey_20};
+  background-color: ${props => (props.error ? "#f9ebeb" : "")};
+  caret-color: ${props => (props.error ? colors.alert : "")};
+  min-height: 1rem;
+  padding: 0.5rem 0.5rem;
+  ::placeholder {
+    color: ${props => (props.error ? colors.alert : "")};
+  }
+  &:hover {
+    color: ${colors.grey_80};
+  }
+`;
 
 function Search({}) {
   return (
@@ -48,7 +46,7 @@ function Search({}) {
           verticalAlign: "baseline"
         }}
       >
-        <Input style={{ border: "0px solid grey" }} placeholder="Search" />
+        <TextInput placeholder="Search" />
         <Icon
           style={{
             filter: "brightness(170%)",
@@ -59,9 +57,9 @@ function Search({}) {
         />
       </Container>
       <Tabs>
-        <Tab />
-        <Tab isSelected />
-        <Tab />
+        <Tab label="Address" />
+        <Tab label="APN" />
+        <Tab label="Owner" />
       </Tabs>
     </SearchContainer>
   );

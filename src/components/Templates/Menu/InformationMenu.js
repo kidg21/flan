@@ -1,14 +1,14 @@
-import React, { useState, Fragment } from "react"
-import PropTypes from "prop-types"
-import styled, { css } from "styled-components"
-import { colors } from "Variables"
-import Icon from "atoms/Icon"
-import Badge from "atoms/Badge"
-import Panel, { PanelSection } from "../../layout/Panel/Panel"
+import React, { useState, Fragment } from "react";
+import PropTypes from "prop-types";
+import styled, { css } from "styled-components";
+import { colors } from "Variables";
+import Icon from "atoms/Icon";
+import Badge from "atoms/Badge";
+import Panel, { PanelSection } from "../../layout/Panel/Panel";
 
 const ItemList = styled.ul`
   display: flex-inline;
-`
+`;
 
 const Item = styled.li`
   list-style: none;
@@ -25,7 +25,7 @@ const Item = styled.li`
   &:active {
     font-weight: bold;
   }
-`
+`;
 
 const Header = styled.li`
   list-style: none;
@@ -40,18 +40,18 @@ const Header = styled.li`
       color: ${colors.success};
     }
   }
-`
+`;
 
 const IconContainer = styled.div`
   width: 5px;
-`
+`;
 
 const ItemName = styled.span`
   margin: 0;
   flex: auto;
   padding-left: 1.5em;
   color: ${colors.grey_80};
-`
+`;
 
 ///for dark option use gradient style={{ backgroundImage: "linear-gradient(#3B3B55, #051937)" }}
 
@@ -66,12 +66,7 @@ function InformationMenu() {
           <ItemName style={{ fontWeight: "bold" }}>Information</ItemName>
         </Header>
       </PanelSection>
-      <PanelSection
-        style={{
-          display: "flex",
-          justifyContent: "center"
-        }}
-      >
+      <PanelSection>
         <ItemList>
           <Item>
             <ItemName>FAQs</ItemName>
@@ -100,7 +95,7 @@ function InformationMenu() {
         </ItemList>
       </PanelSection>
     </Panel>
-  )
+  );
 }
 
-export default InformationMenu
+export default InformationMenu;
