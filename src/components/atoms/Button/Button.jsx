@@ -8,9 +8,9 @@ import {Lighten, Darken} from "helpers/Placeholders";
 const StyledButton = styled.button`
   color: ${props => props.isPrimary ? colors.white : props.isSecondStandard ? colors.success : props.isSecondary ? colors.white : colors.anchor};
   background-color: ${props =>
-    props.isPrimary
+    props.buttonPrimary
       ? colors.anchor
-      : props.isSecondary
+      : props.buttonSecondary
       ? colors.success
       : colors.white};
   border: 1px solid;
@@ -41,7 +41,7 @@ const StyledButton = styled.button`
     background-color: ${props =>
       props.isSecondary ? colors.success_light : props.isSecondStandard ? colors.success_light : colors.anchor_light};
     border-color: ${props =>
-      props.isSecondary ? colors.success_light : colors.anchor_light};
+      props.buttonSecondary ? colors.success_light : colors.anchor_light};
   }
   &[disabled] {
     color: ${colors.grey_40};
@@ -66,7 +66,7 @@ function Button({
   id,
   name,
   type,
-  label,
+  buttonLabel,
   icon,
   isSmall,
   isExtraSmall,
@@ -95,7 +95,7 @@ function Button({
       onClick={onClick}
     >
       {icon ? <ButtonIcon icon={icon} /> : null}
-      <ButtonLabel>{label}</ButtonLabel>
+      <ButtonLabel>{buttonLabel}</ButtonLabel>
     </StyledButton>
   )
 }
@@ -105,7 +105,7 @@ Button.propTypes = {
   name: PropTypes.string,
   /** button, file, reset, or submit. */
   type: PropTypes.string,
-  label: PropTypes.string,
+  buttonLabel: PropTypes.string,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   isPrimary: PropTypes.bool,
   isSecondary: PropTypes.bool,
@@ -121,7 +121,7 @@ Button.propTypes = {
 Button.defaultProps = {
   id: "Button Name",
   type: "button",
-  label: "Button Name"
+  buttonLabel: "Button Name"
 }
 
 export { Button as default }

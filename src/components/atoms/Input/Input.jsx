@@ -2,10 +2,10 @@ import React from "react"
 import styled, { css } from "styled-components"
 import GlobalStyles from "GlobalStyles"
 import PropTypes from "prop-types"
+import { colors, shadows } from "Variables"
 import { InputLabel, HelpText, ErrorText } from "layout/Form"
 import SelectMenu from "atoms/SelectMenu"
 import Button from "atoms/Button"
-import { colors, shadows } from "Variables"
 
 const TextInputContainer = styled.div`
   display: grid;
@@ -18,20 +18,20 @@ const TextInputContainer = styled.div`
       ? "repeat(2, 1fr)"
       : /* Prefix Label (conditionals) */
       props.prefix
-      ? props.postfix || props.postButton
+      ? props.postfix || props.buttonLabel
         ? "minmax(auto, auto) minmax(auto, 3fr) minmax(auto, auto)"
         : props.postSelect
         ? "minmax(auto, auto) minmax(auto, 3fr) minmax(auto, 2fr)"
         : "minmax(auto, auto) minmax(auto, 3fr)"
       : /* Postfix Select (conditionals) */
       props.preSelect
-      ? props.postfix || props.postButton
+      ? props.postfix || props.buttonLabel
         ? "minmax(auto, 2fr) minmax(auto, 3fr) minmax(auto, auto)"
         : props.postSelect
         ? "minmax(auto, 2fr) minmax(auto, 3fr) minmax(auto, 2fr)"
         : "minmax(auto, 2fr) minmax(auto, 3fr)"
       : /* Postfix Label */
-      props.postfix || props.postButton
+      props.postfix || props.buttonLabel
       ? "minmax(auto, 3fr) minmax(auto, auto)"
       : /* Postfix Select */
       props.postSelect
@@ -41,7 +41,7 @@ const TextInputContainer = styled.div`
   grid-gap: 0.35rem;
   align-content: flex-start;
   color: ${props =>
-    props.error ? colors.alert : props.isDisabled ? colors.grey_40 : ""};
+    props.error ? colors.alert : props.disabled ? colors.grey_40 : ""};
 `
 
 const PrePostLabel = styled.label`
@@ -53,7 +53,7 @@ const PrePostLabel = styled.label`
   letter-spacing: 2px;
   text-transform: lowercase;
   color: ${colors.grey_60};
-  background-color: #ffffff;
+  background-color: ${colors.grey_light};
   border: 1px solid ${colors.grey_20};
   border-bottom: 1px solid ${colors.grey_20};
   border-radius: 4px;
@@ -65,10 +65,11 @@ const TextInput = styled.input`
   border: 1px solid ${colors.grey_20};
   border-bottom: 1px solid ${colors.grey_20};
   border-color: ${props => (props.error ? colors.alert : "")};
-  background-color: ${props => (props.error ? "#f9ebeb" : "")};
+  border-radius: ${props => (props.isRound ? "10rem !important" : "")};
+  background-color: ${props => (props.error ? colors.alert_tint : "")};
   caret-color: ${props => (props.error ? colors.alert : "")};
   min-height: 2.75rem;
-  padding: 0.5rem 0.75rem;
+  padding: ${props => (props.isRound ? "0.75rem 1rem" : "0.5rem 0.75rem")};
   ::placeholder {
     color: ${props => (props.error ? colors.alert : "")};
   }
@@ -77,7 +78,7 @@ const TextInput = styled.input`
     border-color: ${props => (props.error ? colors.alert : "")};
   }
   &:focus {
-    background-color: ${props => (props.error ? "#f9ebeb" : "")};
+    background-color: ${props => (props.error ? colors.alert_tint : "")};
     border-color: ${props => (props.error ? colors.alert : colors.success)};
     ::placeholder {
       color: ${props => (props.error ? colors.alert : colors.grey_60)};
@@ -90,13 +91,35 @@ const TextInput = styled.input`
 
 function Input({
   id,
+  type,
+  pattern,
+  value,
   inputLabel, // Label prop
-  isRequired, // Label prop
-  isDisabled,
+  placeholder,
   helpText,
-  errorText,
-  label,
+  isRequired, // Label prop
+  disabled,
+  isRound,
+  twoInputs,
+  id_2,
+  type_2,
+  value_2,
+  pattern_2,
+  placeholder_2,
+  threeInputs,
+  id_3,
+  type_3,
+  value_3,
+  pattern_3,
+  placeholder_3,
+  prefix,
+  postfix,
+  preSelect,
+  postSelect,
+  buttonLabel,
   isPrimary, // Button prop
+  error,
+  errorText,
   style,
   ...props
 }) {
@@ -104,81 +127,107 @@ function Input({
     <TextInputContainer
       id={id}
       isRequired={isRequired}
-      disabled={isDisabled} // input attribute
-      error={props.error}
-      prefix={props.prefix}
-      preSelect={props.preSelect}
-      postfix={props.postfix}
-      postSelect={props.postSelect}
-      postButton={props.postButton}
-      rounded={props.rounded}
-      twoInputs={props.twoInputs} // 2 inputs in a row
-      threeInputs={props.threeInputs} // 3 inputs in a row
+      disabled={disabled} // input attribute
+      error={error}
+      prefix={prefix}
+      postfix={postfix}
+      preSelect={preSelect}
+      postSelect={postSelect}
+      buttonLabel={buttonLabel}
+      twoInputs={twoInputs} // 2 inputs in a row
+      threeInputs={threeInputs} // 3 inputs in a row
       style={style}
     >
       {/* Input Label */}
       <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
       {/* Prefix Label (conditional) */}
-      {props.prefix ? <PrePostLabel>{props.prefix}</PrePostLabel> : null}
+      {prefix ? <PrePostLabel>{prefix}</PrePostLabel> : null}
       {/* Prefix Select Menu (conditional) */}
-      {props.preSelect ? (
+      {preSelect ? (
         <SelectMenu
           displayInline={true} // Grid Override
           inputLabel={null}
           name="Choose"
           isClearable={false}
-          options={props.preSelect}
-          defaultValue={props.preSelect[0]}
+          options={preSelect}
+          defaultValue={preSelect[0]}
         />
       ) : null}
       <TextInput
-        id={props.id} // input attribute
-        name={props.id} // input attribute
-        type={props.type} // input attribute
-        value={props.value} // input attribute
-        placeholder={props.placeholder} // input attribute
-        pattern={props.pattern} // input attribute
+        id={id} // input attribute
+        name={id} // input attribute
+        type={type} // input attribute
+        value={value} // input attribute
+        placeholder={placeholder} // input attribute
+        pattern={pattern} // input attribute
+        disabled={disabled} // input attribute
+        error={error}
+        isRound={isRound}
         {...props}
       />
       {/* Column 2 (conditional) */}
-      {props.twoInputs || props.threeInputs ? (
-        <TextInput {...props} placeholder={props.placeholder_2} />
+      {twoInputs || threeInputs ? (
+        <TextInput
+          id={id_2} // input attribute
+          name={id_2} // input attribute
+          type={type_2} // input attribute
+          value={value_2} // input attribute
+          placeholder={placeholder_2} // input attribute
+          pattern={pattern_2} // input attribute
+          disabled={disabled} // input attribute
+          error={error}
+          isRound={isRound}
+          {...props}
+        />
       ) : null}
       {/* Column 3 (conditional) */}
-      {props.threeInputs ? (
-        <TextInput {...props} placeholder={props.placeholder_3} />
+      {threeInputs ? (
+        <TextInput
+          id={id_3} // input attribute
+          name={id_3} // input attribute
+          type={type_3} // input attribute
+          value={value_3} // input attribute
+          placeholder={placeholder_3} // input attribute
+          pattern={pattern_3} // input attribute
+          disabled={disabled} // input attribute
+          error={error}
+          isRound={isRound}
+          {...props}
+        />
       ) : null}
       {/* Postfix (conditional) */}
-      {props.postfix ? <PrePostLabel>{props.postfix}</PrePostLabel> : null}
+      {postfix ? <PrePostLabel>{postfix}</PrePostLabel> : null}
       {/* Postfix Button (conditional) */}
-      {props.postButton ? <Button label={label} isPrimary={true} /> : null}
+      {buttonLabel ? (
+        <Button buttonLabel={buttonLabel} buttonPrimary={true} />
+      ) : null}
       {/* Postfix Select Menu (conditional) */}
-      {props.postSelect ? (
+      {postSelect ? (
         <SelectMenu
           displayInline={true} // Grid Override
           inputLabel={null}
           name="Choose"
           isClearable={false}
-          options={props.postSelect}
-          defaultValue={props.postSelect[0]}
+          options={postSelect}
+          defaultValue={postSelect[0]}
         />
       ) : null}
       {/* Help Text */}
       {helpText ? <HelpText helpText={helpText} /> : null}
       {/* Error Message (required) */}
-      {props.error ? <ErrorText errorText={errorText} /> : null}
+      {error ? <ErrorText errorText={errorText} /> : null}
     </TextInputContainer>
   )
 }
 
 Input.defaultProps = {
   id: "",
-  name: "Input Name",
   type: "text",
   pattern: "alpha",
   placeholder: "Placeholder Text",
   disabled: false,
   error: false,
+  isRound: false,
   errorText: "Error text for the Input component",
   twoInputs: false,
   placeholder_2: "Placeholder 2",
@@ -188,21 +237,34 @@ Input.defaultProps = {
 
 Input.propTypes = {
   id: PropTypes.string,
-  name: PropTypes.string,
   type: PropTypes.string,
   pattern: PropTypes.string,
   value: PropTypes.string,
+  inputLabel: PropTypes.string,
   placeholder: PropTypes.string,
-  prefix: PropTypes.string,
-  postfix: PropTypes.string,
+  helpText: PropTypes.string,
+  isRequired: PropTypes.bool,
   disabled: PropTypes.bool,
-  error: PropTypes.bool,
+  isRound: PropTypes.bool,
   twoInputs: PropTypes.bool,
+  id_2: PropTypes.string,
+  type_2: PropTypes.string,
+  value_2: PropTypes.string,
+  pattern_2: PropTypes.string,
   placeholder_2: PropTypes.string,
   threeInputs: PropTypes.bool,
+  id_3: PropTypes.string,
+  type_3: PropTypes.string,
+  value_3: PropTypes.string,
+  pattern_3: PropTypes.string,
   placeholder_3: PropTypes.string,
+  prefix: PropTypes.string,
+  postfix: PropTypes.string,
   preSelect: PropTypes.array,
   postSelect: PropTypes.array,
+  buttonLabel: PropTypes.string,
+  error: PropTypes.bool,
+  errorText: PropTypes.string,
   style: PropTypes.string
 }
 
