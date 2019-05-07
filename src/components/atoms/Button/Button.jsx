@@ -8,9 +8,9 @@ import {Lighten, Darken} from "helpers/Placeholders";
 const StyledButton = styled.button`
   color: ${props => props.isPrimary ? colors.white : props.isSecondStandard ? colors.success : props.isSecondary ? colors.white : colors.anchor};
   background-color: ${props =>
-    props.buttonPrimary
+    props.isPrimary
       ? colors.anchor
-      : props.buttonSecondary
+      : props.isSecondary
       ? colors.success
       : colors.white};
   border: 1px solid;
