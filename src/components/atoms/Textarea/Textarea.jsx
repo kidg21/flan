@@ -40,7 +40,7 @@ const TextareaInput = styled.textarea`
   }
 `
 
-function Textarea({ inputLabel, isRequired, helpText, errorText, ...props }) {
+function Textarea({ id, inputLabel, isRequired, helpText, errorText, ...props }) {
   return (
     <TextareaContainer
       disabled={props.disabled} // input attribute
@@ -76,6 +76,7 @@ Textarea.defaultProps = {
 }
 
 Textarea.propTypes = {
+  id: PropTypes.string,
   name: PropTypes.string,
   pattern: PropTypes.string,
   placeholder: PropTypes.string,

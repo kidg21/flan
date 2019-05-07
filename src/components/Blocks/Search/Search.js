@@ -65,23 +65,12 @@ function Search({}) {
   );
 }
 
-//   Card.defaultProps = {
-//     title: "Information Header",
-//     layer: false,
-//     info: false,
-//     navigation: false,
-//     navProps: { nameProp: ["far", "angle-right"], colorProp: "dimgray" },
-//     exitProps: { nameProp: ["fal", "times"], colorProp: "dimgray" },
-//     directionsProps: { nameProp: ["fal", "directions"], colorProp: "#60aad2" },
-//     infoSectionProps: { nameProp: ["far", "angle-up"], colorProp: "dimgray" },
-//     infoOpenProps: { nameProp: ["far", "angle-down"], colorProp: "#60aad2" }
-//   };
+Search.defaultProps = {
+  id: ""
+};
 
-//   Card.propTypes = {
-//     title: PropTypes.string.isRequired,
-//     layer: PropTypes.bool,
-//     navigation: PropTypes.bool,
-//     info: PropTypes.bool
-//   };
+Search.propTypes = {
+  id: PropTypes.string
+};
 
 export default Search;

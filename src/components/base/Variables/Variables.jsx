@@ -12,11 +12,11 @@ export const colors = {
   anchor: "hsl(201, 56%, 60%)",
   anchor_tint: "hsl(201, 56%, 90%)",
   anchor_light: "hsl(201, 56%, 70%)",
-  anchor_dark: "hsl(201, 56%, 50%)",
+  anchor_dark: "hsl(201, 56%, 60%)",
   success: "hsl(90, 46%, 46%)",
   success_tint: "hsl(90, 46%, 90%)",
-  success_light: "hsl(90, 46%, 51%)",
-  success_dark: "hsl(90, 46%, 41%)",
+  success_light: "hsl(90, 46%, 59%)",
+  success_dark: "hsl(90, 46%, 45%)",
   warning: "hsl(34, 88%, 52%)",
   warning_tint: "hsl(34, 88%, 90%)",
   warning_light: "hsl(34, 88%, 62%)",
@@ -29,9 +29,7 @@ export const colors = {
   government: "hsl(166, 100%, 28%)",
   insurance: "hsl(89, 39%, 50%)",
   homeBuilding: "hsl(43, 65%, 49%)",
-  realEstate: "hsl(12, 61%, 50%)",
-  open: "hsl(365, 38%, 50%)",
-  open2: "hsl(288, 13%, 38%)"
+  realEstate: "hsl(12, 61%, 50%)"
 }
 
 // Typefaces

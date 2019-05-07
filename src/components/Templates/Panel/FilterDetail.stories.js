@@ -1,9 +1,15 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import Header from "blocks/Panel/Header";
-import Card from "blocks/Card/Card";
+import Card, { CardList } from "layout/Card";
 import Panel, { PanelSection } from "layout/Panel";
-import Form, { Title, Section, SectionName, InputGroup } from "layout/Form";
+import Form, {
+  Title,
+  Section,
+  CenteredSection,
+  SectionName,
+  InputGroup
+} from "layout/Form";
 import Checkbox from "../../atoms/Checkbox/Checkbox";
 import Input from "atoms/Input";
 import Radio from "atoms/Radio";
@@ -160,7 +166,9 @@ storiesOf("Templates|Panel", module).add("Filter Details Panel", () =>
         </PanelSection>
         <PanelSection>
           <Section>
-            <Button>Apply</Button>
+            <CenteredSection>
+              <Button label="Stan. Round" isRound={true} isExtraSmall={true} />
+            </CenteredSection>
           </Section>
         </PanelSection>
       </Panel>

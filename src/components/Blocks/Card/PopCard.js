@@ -27,9 +27,9 @@ const Container = styled.div`
 `;
 
 const Actions = styled.div`
-  position: relative;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  flex-direction: row;
   align-items: center;
 `;
 
@@ -65,7 +65,14 @@ function PopCard({ title, message, action }) {
           </p>
         </Message>
         <Actions>
-          <Button isRound label={action} />
+          <Button label="Yes, lets!" isRound={true} isExtraSmall={true} />
+          <div style={{ padding: "10px" }} />
+          <Button
+            label="No thanks"
+            isSecondStandard={true}
+            isRound={true}
+            isExtraSmall={true}
+          />
         </Actions>
       </HeaderSection>
     </Aligner>

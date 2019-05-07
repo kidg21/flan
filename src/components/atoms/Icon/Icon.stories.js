@@ -1,13 +1,13 @@
-import React, { Fragment } from "react"
-import { storiesOf } from "@storybook/react"
-import styled, { css } from "styled-components"
-import { colors, shadows } from "Variables"
-import { Padding } from "helpers/Display"
-import { withInfo } from "@storybook/addon-info"
-import Grid from "helpers/Grid"
-import { Success } from "base/Typography"
-import Icon from "atoms/Icon"
-import IconBlock from "blocks/IconBlock"
+import React, { Fragment } from "react";
+import { storiesOf } from "@storybook/react";
+import styled, { css } from "styled-components";
+import { colors, shadows } from "Variables";
+import { Padding } from "helpers/Display";
+import { withInfo } from "@storybook/addon-info";
+import Grid from "helpers/Grid";
+import { Success } from "base/Typography";
+import Icon from "atoms/Icon";
+import IconBlock from "blocks/IconBlock";
 
 const IconGrid = styled(Grid)`
   grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
@@ -17,17 +17,17 @@ const IconGrid = styled(Grid)`
   @media (min-width: 64.063em) {
     grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
   }
-`
+`;
 
 const Title = styled.h2`
   font-weight: 400;
   grid-column: 1/-1;
-`
+`;
 
 const SubTitle = styled.h5`
   grid-column: 1/-1;
   margin: 0;
-`
+`;
 
 const SectionTitle = styled.h4`
   grid-column: 1/-1;
@@ -35,7 +35,7 @@ const SectionTitle = styled.h4`
   margin: 0;
   padding-top: 1em;
   border-top: 2px solid ${colors.grey_light};
-`
+`;
 
 const StaticIcon = styled.li`
   display: flex;
@@ -49,7 +49,7 @@ const StaticIcon = styled.li`
   > svg {
     margin: 0.5rem 0;
   }
-`
+`;
 const ActiveIcon = styled(StaticIcon)`
   cursor: pointer;
   &:hover {
@@ -62,7 +62,7 @@ const ActiveIcon = styled(StaticIcon)`
       }
     }
   }
-`
+`;
 const IconLabel = styled.h6`
   flex: auto;
   color: inherit;
@@ -73,11 +73,15 @@ const IconLabel = styled.h6`
   line-height: normal;
   cursor: text;
   user-select: all;
-`
+`;
 const blockStyle = {
   padding: ".5em",
   border: "1px solid lightgrey"
-}
+};
+
+storiesOf("Atoms|Icon", module)
+  .addDecorator(Padding)
+  .add("Documentation", withInfo()(() => <Icon icon="coffee" />));
 
 storiesOf("Atoms|Icon", module)
   .addDecorator(Padding)
@@ -267,10 +271,11 @@ storiesOf("Atoms|Icon", module)
         <IconLabel>pulse</IconLabel>
       </StaticIcon>
     </IconGrid>
-  ))
+  ));
 
 storiesOf("Blocks|IconBlock", module)
   .addDecorator(Padding)
+  .addDecorator(withInfo)
   .add("Icon Block", () => (
     <IconGrid>
       <Title>
@@ -330,7 +335,7 @@ storiesOf("Blocks|IconBlock", module)
         <Icon icon="circle" success />
       </IconBlock>
     </IconGrid>
-  ))
+  ));
 
 storiesOf("Application|Libraries/", module)
   .addDecorator(Padding)
@@ -608,4 +613,4 @@ storiesOf("Application|Libraries/", module)
         <IconLabel>"fab", "windows"</IconLabel>
       </ActiveIcon>
     </IconGrid>
-  ))
+  ));

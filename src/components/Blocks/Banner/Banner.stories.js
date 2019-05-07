@@ -1,9 +1,9 @@
-import React from "react"
-import { storiesOf } from "@storybook/react"
-import { withInfo } from "@storybook/addon-info"
-import { Padding } from "helpers/Display"
-import Grid from "helpers/Grid"
-import Banner from "blocks/Banner"
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import { withInfo } from "@storybook/addon-info";
+import { Padding } from "helpers/Display";
+import Grid from "helpers/Grid";
+import Banner from "blocks/Banner";
 
 storiesOf("Blocks|Banner", module)
   .addDecorator(Padding)
@@ -69,4 +69,4 @@ storiesOf("Blocks|Banner", module)
   ))
   .add("Inverse Banner", () => (
     <Banner title="This is a Standard Inverse notification." inverse={true} />
-  ))
+  ));

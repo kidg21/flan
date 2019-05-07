@@ -1,6 +1,7 @@
 import React  from "react"
 import styled, { css } from "styled-components"
 import Input from "atoms/Input/Input";
+import PropTypes from "prop-types";
 import {Lighten, Darken} from "helpers/Placeholders";
 
 
@@ -73,5 +74,17 @@ function Slider({id, value, min, max, step, ...props}) {
     </div>
     )
 };
+
+
+
+Slider.propTypes = {
+  id: PropTypes.string,
+  value: PropTypes.string,
+  min: PropTypes.string,
+  max: PropTypes.string,
+  step: PropTypes.string
+}
+
+
 
 export default Slider

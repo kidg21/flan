@@ -43,6 +43,13 @@ const Title = styled.h3`
   }
 `
 
+const CenteredSection = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+`
+
 const Section = styled.section`
   display: grid;
   /* grid-gap: 0.75rem; */
@@ -146,6 +153,7 @@ ErrorText.propTypes = {
 export {
   Form as default,
   Title,
+  CenteredSection,
   Section,
   SectionName,
   InputLabel,

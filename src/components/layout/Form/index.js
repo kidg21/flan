@@ -3,8 +3,9 @@ export {
   Title,
   Section,
   SectionName,
+  CenteredSection,
   InputLabel,
   HelpText,
   ErrorText,
   InputGroup
-} from "./Form.jsx"
+} from "./Form.jsx";
