@@ -10,9 +10,11 @@ const StyledBanner = styled.div`
   display: flex;
   align-items: flex-start;
   background-color: ${props =>
-    props.inverse ? colors.grey_dark : colors.grey_light};
-  color: ${props => (props.inverse ? colors.white : "")};
-  border: 1px solid;
+    /* props.inverse ? colors.grey_dark_glass : colors.grey_light_glass}; */
+    props.inverse ? colors.grey_light_glass : colors.grey_dark_glass};
+  /* color: ${props => (props.inverse ? colors.white : "")}; */
+  color: ${props => (props.inverse ? "" : colors.white)};
+  border: 2px solid;
   border-color: ${props =>
     props.success
       ? colors.success
@@ -23,17 +25,17 @@ const StyledBanner = styled.div`
       : props.info
       ? colors.anchor
       : props.inverse
-      ? colors.black
-      : colors.grey_40};
+      ? colors.grey_40
+      : colors.grey_light};
+  border-width: ${props => (props.inverse ? "1px" : "")};
   border-left-width: ${props =>
     props.success || props.warning || props.error || props.info ? "6px" : ""};
   border-radius: ${props =>
     props.success || props.warning || props.error || props.info
-      ? "0 5px 5px 0"
+      ? "5px"
       : "5px"};
   padding: 1em;
   width: 100%;
-  filter: ${props => (props.isFloating ? shadows.cardShadow : "")};
 `
 
 const BannerIcon = styled(FontAwesomeIcon)`
@@ -69,7 +71,6 @@ const NotificationLink = styled.h4`
   padding-top: 0.5em;
   opacity: 0.7;
   cursor: pointer;
-  transition: all 0.15s ease-in;
   &:hover {
     opacity: 1;
     text-decoration: underline;
@@ -94,7 +95,6 @@ function Banner({
   warning,
   error,
   inverse,
-  isFloating,
   style,
   ...props
 }) {
@@ -110,7 +110,6 @@ function Banner({
       warning={warning}
       error={error}
       inverse={inverse}
-      isFloating={isFloating}
       style={style}
     >
       {icon ? <BannerIcon icon={icon} size="2x" /> : null}
@@ -140,8 +139,7 @@ Banner.defaultProps = {
   success: false,
   warning: false,
   error: false,
-  inverse: false,
-  isFloating: false
+  inverse: false
 }
 
 Banner.propTypes = {
@@ -155,7 +153,6 @@ Banner.propTypes = {
   warning: PropTypes.bool,
   error: PropTypes.bool,
   inverse: PropTypes.bool,
-  isFloating: PropTypes.bool,
   style: PropTypes.string
 }
 

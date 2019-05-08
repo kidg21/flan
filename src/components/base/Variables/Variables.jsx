@@ -1,16 +1,17 @@
 // Codes for color palette
 export const colors = {
-  white: "hsl(101, 100%, 100%)",
-  original_white: "hsl(34, 5%, 99%)",
+  white: "hsl(34, 5%, 99%)",
   grey_light: "hsl(34, 5%, 95%)",
+  grey_light_glass: "hsl(34, 5%, 95%, 0.85)",
   grey_20: "hsl(34, 5%, 88%)",
   grey_40: "hsl(34, 5%, 72%)",
   grey_60: "hsl(34, 5%, 58%)",
   grey_80: "hsl(34, 5%, 36%)",
   grey_dark: "hsl(34, 5%, 28%)",
+  grey_dark_glass: "hsla(34, 5%, 28%, 0.85)",
   black: "hsl(34, 5%, 12%)",
   anchor: "hsl(201, 56%, 60%)",
-  anchor_tint: "hsl(201, 56%, 90%)",
+  anchor_tint: "hsl(201, 56%, 80%)",
   anchor_light: "hsl(201, 56%, 70%)",
   anchor_dark: "hsl(201, 56%, 60%)",
   success: "hsl(90, 46%, 46%)",
@@ -18,7 +19,7 @@ export const colors = {
   success_light: "hsl(90, 46%, 59%)",
   success_dark: "hsl(90, 46%, 45%)",
   warning: "hsl(34, 88%, 52%)",
-  warning_tint: "hsl(34, 88%, 90%)",
+  warning_tint: "hsl(34, 88%, 80%)",
   warning_light: "hsl(34, 88%, 62%)",
   warning_dark: "hsl(34, 88%, 46%)",
   alert: "hsl(1, 55%, 50%)",
@@ -70,6 +71,8 @@ export const shadows = {
     "hsl(34, 5%, 95%)  0rem 0rem 1px, hsla(34, 5%, 95%, 0.333333) 0.25rem 0.25rem 0.5rem;",
   lightBorderShadow:
     "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem",
+  lightBorderInner:
+    "hsl(34, 5%, 72%) -1px -1px 0 0 inset, hsl(34, 5%, 72%) 1px 1px 0 0 inset",
   checkedShadow:
     "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
   radioShadow:

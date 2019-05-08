@@ -120,7 +120,6 @@ const Error = styled.label`
 const ErrorText = props => <Error>{props.errorText}</Error>
 
 const InputGroup = styled(Grid)`
-  grid-gap: 0.75rem;
   /* Prototype Content - displays when a Form is empty */
   &:empty {
     &:before {

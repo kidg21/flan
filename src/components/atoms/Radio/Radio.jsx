@@ -8,18 +8,31 @@ const RadioContainer = styled.div`
   grid-template-columns: auto 1fr;
   grid-gap: 0.5rem;
   align-items: inherit;
+  color: ${props => (props.error ? colors.alert : "")};
+  &[disabled],
+  &[readonly] {
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
+    color: ${colors.grey_40};
+  }
 `
 
 const RadioInput = styled.input.attrs({ type: "radio" })`
-  background-color: ${colors.white};
-  border: 1px solid ${colors.grey_40};
-  width: 1.1rem;
-  height: 1.1rem;
+  border: 1px solid;
+  border-color: ${props => (props.error ? colors.alert_light : colors.grey_40)};
+  background-color: ${props =>
+    props.disabled ? colors.grey_20 : colors.white};
+  width: 1rem;
+  height: 1rem;
   border-radius: 100%;
   cursor: pointer;
   -webkit-appearance: none;
   &:checked {
-    background-color: ${colors.success};
+    background-color: ${props =>
+      props.error ? colors.alert_tint : colors.success_tint};
+    border-color: ${props =>
+      props.error ? colors.alert_light : colors.success};
   }
   &:focus {
     outline: none;
@@ -35,10 +48,21 @@ const RadioLabel = styled.label`
   cursor: pointer;
 `
 
-function Radio({ id, name, label, value, ...props }) {
+function Radio({ id, name, label, value, error, disabled, ...props }) {
   return (
-    <RadioContainer>
-      <RadioInput id={id} name={name} value={value} {...props} />
+    <RadioContainer
+      disabled={disabled} // input attribute>
+      error={error} // input attribute>
+      {...props}
+    >
+      <RadioInput
+        id={id}
+        name={name}
+        value={value}
+        disabled={disabled}
+        error={error} // input attribute>
+        {...props}
+      />
       <RadioLabel htmlFor={id}>{label}</RadioLabel>
     </RadioContainer>
   )

@@ -8,31 +8,40 @@ const BadgeContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 2.25em;
+  min-width: 2.25em;
+  width: min-content;
+  max-width: 5em;
   height: 2.25em;
   background-color: ${props =>
     props.success
       ? colors.success
       : props.warning
       ? colors.warning
-      : props.alert
-      ? colors.alert
       : props.anchor
       ? colors.anchor
       : props.light
       ? colors.grey_light
-      : props.inverse
+      : props.grey
+      ? colors.grey_40
+      : props.dark
       ? colors.black
-      : colors.grey_60};
-  color: ${props => (props.light ? colors.grey_80 : colors.white)};
+      : props.notification && props.icon
+      ? ""
+      : colors.alert};
+  color: ${props =>
+    props.light || props.grey
+      ? colors.grey_dark
+      : props.notification && props.icon
+      ? colors.alert
+      : colors.white};
   font-size: ${props =>
-    props.tiny
-      ? ".5em"
+    props.tiny || (props.notification && !props.icon)
+      ? ".6em"
       : props.small
       ? ".75em"
       : props.large
       ? "1.25em"
-      : props.xlarge
+      : props.xlarge || (props.notification && props.icon)
       ? "1.5em"
       : props.xxlarge
       ? "1.75em"
@@ -42,9 +51,25 @@ const BadgeContainer = styled.div`
   font-weight: 700;
   border: ${props => (props.light ? "2px solid" : null)};
   border-color: ${props => (props.light ? colors.grey_40 : null)};
-  border-radius: 100%;
+  border-radius: 10em;
   text-transform: uppercase;
-  line-height: normal;
+  position: ${props => (props.notification ? "absolute" : "")};
+  bottom: ${props => (props.bottomLeft || props.bottomRight ? "0" : "100%")};
+  left: ${props => (props.topLeft || props.bottomLeft ? "0%" : "100%")};
+  margin: ${props =>
+    props.notification && !props.icon
+      ? "-1em"
+      : props.notification && props.icon
+      ? "-1.25em -.25em"
+      : ""};
+  padding: ${props => (props.notification ? "0 .75em" : ".5em")};
+  transform: ${props =>
+    props.topLeft || props.bottomLeft
+      ? "translate(50%, 0%)"
+      : props.notification
+      ? "translate(-50%, 0%)"
+      : ""};
+  letter-spacing: 1px;
   overflow: hidden;
 `
 
@@ -65,13 +90,20 @@ function Badge({
   warning,
   alert,
   light,
-  inverse,
+  grey,
+  dark,
   tiny,
   small,
   large,
   xlarge,
   xxlarge,
   xxxlarge,
+  notification,
+  left,
+  topLeft,
+  bottomLeft,
+  bottomRight,
+  maxCount,
   style,
   className,
   ...props
@@ -86,17 +118,30 @@ function Badge({
       warning={warning}
       alert={alert}
       light={light}
-      inverse={inverse}
+      grey={grey}
+      dark={dark}
       tiny={tiny}
       small={small}
       large={large}
       xlarge={xlarge}
       xxlarge={xxlarge}
       xxxlarge={xxxlarge}
+      notification={notification}
+      left={left}
+      topLeft={topLeft}
+      bottomLeft={bottomLeft}
+      bottomRight={bottomRight}
+      maxCount={maxCount}
       style={style}
       className={className}
     >
-      {icon ? <BadgeIcon icon={icon} /> : <BadgeLabel>{label}</BadgeLabel>}
+      {icon ? (
+        <BadgeIcon icon={icon} />
+      ) : maxCount ? (
+        <BadgeLabel>99+</BadgeLabel>
+      ) : (
+        <BadgeLabel>{label}</BadgeLabel>
+      )}
     </BadgeContainer>
   )
 }
@@ -109,14 +154,20 @@ Badge.defaultProps = {
   success: false,
   warning: false,
   alert: false,
-  inverse: false,
+  dark: false,
   light: false,
+  grey: false,
   tiny: false,
   small: false,
   large: false,
   xlarge: false,
   xxlarge: false,
-  xxxlarge: false
+  xxxlarge: false,
+  notification: false,
+  topLeft: false,
+  bottomLeft: false,
+  bottomRight: false,
+  maxCount: false
 }
 
 Badge.propTypes = {
@@ -127,14 +178,20 @@ Badge.propTypes = {
   success: PropTypes.bool,
   warning: PropTypes.bool,
   alert: PropTypes.bool,
-  inverse: PropTypes.bool,
+  dark: PropTypes.bool,
   light: PropTypes.bool,
+  grey: PropTypes.bool,
   tiny: PropTypes.bool,
   small: PropTypes.bool,
   large: PropTypes.bool,
   xlarge: PropTypes.bool,
   xxlarge: PropTypes.bool,
   xxxlarge: PropTypes.bool,
+  notification: PropTypes.bool,
+  topLeft: PropTypes.bool,
+  bottomLeft: PropTypes.bool,
+  bottomRight: PropTypes.bool,
+  maxCount: PropTypes.bool,
   style: PropTypes.string,
   className: PropTypes.string
 }

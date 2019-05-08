@@ -11,6 +11,7 @@ const CardWrapper = styled.div`
   width: 100%;
   background: ${colors.white};
   filter: ${shadows.cardShadow};
+  /* box-shadow: ${shadows.cardShadow}; */
   /* Square off rounded edges of any direct children of Cards */
   > * {
     border-radius: 0;
@@ -25,11 +26,11 @@ const CardWrapper = styled.div`
   }
 `
 
-// const CardList = styled(Grid)`
-const CardList = styled.ul`
-  display: grid;
+// const CardList = styled.ul`
+const CardList = styled(Grid)`
+  /* display: grid;
   grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); */
   padding: 1rem;
   ${CardWrapper} {
     border-radius: 5px;

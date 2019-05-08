@@ -5,7 +5,6 @@ import { colors, shadows } from "Variables"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const StyledIcon = styled(FontAwesomeIcon)`
-  position: ${props => (props.stacked ? "absolute" : "")};
   display: ${props => (props.stacked ? "flex" : "")};
   justify-content: ${props => (props.stacked ? "center" : "")};
   align-items: ${props => (props.stacked ? "center" : "")};
@@ -79,7 +78,7 @@ function Icon({
 }
 
 Icon.defaultProps = {
-  icon: ["fas", "circle"],
+  icon: "user-circle",
   fixedWidth: true
 }
 

@@ -51,18 +51,15 @@ storiesOf("Atoms|Command", module)
     info: {
       text:
         "A Command is like a Button...only less button-y.  Oh, and it usually has an icon...unless it doesn't."
-    }
-  })
-  .addDecorator(Padding)
-  .addDecorator(withKnobs)
-  .add("Documentation", withInfo()(() => <Command />), {
+    },
     notes: {
       markdown: CommandNotes
     }
   })
-
-storiesOf("Atoms|Command", module)
   .addDecorator(Padding)
+  .addDecorator(withKnobs)
+  .add("Documentation", withInfo()(() => <Command />))
+
   .add("Alignment", () => (
     <Grid col_4>
       <Title>
@@ -77,8 +74,6 @@ storiesOf("Atoms|Command", module)
     </Grid>
   ))
 
-storiesOf("Atoms|Command", module)
-  .addDecorator(Padding)
   .add("State", () => (
     <Grid col_1>
       <Title>
@@ -96,8 +91,6 @@ storiesOf("Atoms|Command", module)
     </Grid>
   ))
 
-storiesOf("Atoms|Command", module)
-  .addDecorator(Padding)
   .add("Size", () => (
     <Grid col_1>
       <Title>
