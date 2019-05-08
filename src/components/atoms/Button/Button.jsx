@@ -66,7 +66,7 @@ function Button({
   id,
   name,
   type,
-  buttonLabel,
+  label,
   icon,
   isSmall,
   isExtraSmall,
@@ -95,13 +95,14 @@ function Button({
       onClick={onClick}
     >
       {icon ? <ButtonIcon icon={icon} /> : null}
-      <ButtonLabel>{buttonLabel}</ButtonLabel>
+      <ButtonLabel>{label}</ButtonLabel>
     </StyledButton>
   )
 }
 
 Button.propTypes = {
   id: PropTypes.string,
+  label: PropTypes.string,
   name: PropTypes.string,
   /** button, file, reset, or submit. */
   type: PropTypes.string,
@@ -120,6 +121,7 @@ Button.propTypes = {
 
 Button.defaultProps = {
   id: "Button Name",
+  label: "Apply",
   type: "button",
   buttonLabel: "Button Name"
 }

@@ -167,7 +167,7 @@ storiesOf("Templates|Panel", module).add("Filter Details Panel", () =>
         <PanelSection>
           <Section>
             <CenteredSection>
-              <Button label="Stan. Round" isRound={true} isExtraSmall={true} />
+              <Button label="Apply" isRound={true} isExtraSmall={true} />
             </CenteredSection>
           </Section>
         </PanelSection>
