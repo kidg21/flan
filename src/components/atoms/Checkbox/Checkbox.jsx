@@ -8,18 +8,31 @@ const CheckboxContainer = styled.div`
   grid-template-columns: auto 1fr;
   grid-gap: 0.75rem;
   align-items: inherit;
+  color: ${props => (props.error ? colors.alert : "")};
+  &[disabled],
+  &[readonly] {
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
+    color: ${colors.grey_40};
+  }
 `
 
 const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
-  background-color: ${colors.white};
-  border: 1px solid ${colors.grey_40};
+  border: 1px solid;
+  border-color: ${props => (props.error ? colors.alert_light : colors.grey_40)};
+  background-color: ${props =>
+    props.disabled ? colors.grey_20 : colors.white};
   width: 1rem;
   height: 1rem;
   border-radius: 2px;
   cursor: pointer;
   -webkit-appearance: none;
   &:checked {
-    background-color: ${colors.success};
+    background-color: ${props =>
+      props.error ? colors.alert_tint : colors.success_tint};
+    border-color: ${props =>
+      props.error ? colors.alert_light : colors.success};
   }
   &:focus {
     outline: none;
@@ -34,20 +47,20 @@ const CheckboxLabel = styled.label`
   cursor: pointer;
 `
 
-function Checkbox({ ...props }) {
-  const [checked, setChecked] = useState(false)
-  const handleCheckboxChange = event => {
-    setChecked(event.target.checked)
-  }
+function Checkbox({ id, label, error, disabled, ...props }) {
   return (
-    <CheckboxContainer>
+    <CheckboxContainer
+      disabled={disabled} // input attribute>
+      error={error} // input attribute>
+      {...props}
+    >
       <CheckboxInput
-        id={props.id}
-        checked={checked}
-        onChange={handleCheckboxChange}
+        id={id}
+        disabled={disabled}
+        error={error} // input attribute>
         {...props}
       />
-      <CheckboxLabel htmlFor={props.id}>{props.label}</CheckboxLabel>
+      <CheckboxLabel htmlFor={id}>{label}</CheckboxLabel>
     </CheckboxContainer>
   )
 }
