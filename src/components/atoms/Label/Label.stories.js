@@ -9,5 +9,14 @@ import Results from "./Results";
 storiesOf("Atoms|Label", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  .add("Text Label", () => <Label content="who are you" />)
-  .add("Results", () => <Results number="298" />);
+  .add("Documentation", () => <Label content="This is a label" />)
+  .add("Labels", () => (
+    <div style={{ display: "flex", flexDirection: "column" }}>
+      <Label content="Default" />
+      <Label right content="Right Label" />
+      <Label grey content="Grey Label" />
+      <Label grey right content="Grey Right" />
+    </div>
+  ))
+
+  .add("Results Label", () => <Results number="298" />);

@@ -15,6 +15,7 @@ import Input from "atoms/Input";
 import Radio from "atoms/Radio";
 import Slider from "atoms/Slider";
 import Button from "atoms/Button";
+import Label from "atoms/Label";
 
 const radio_1 = {
   id: "radio-1",
@@ -105,73 +106,136 @@ const cbox_6 = {
   label: "Land Contract"
 };
 
-storiesOf("Templates|Panel", module).add("Filter Details Panel", () =>
-  React.createElement(() => {
-    const [checked, setChecked] = useState({ selectedValue: "" });
+const cbox_7 = {
+  id: "cbox_7",
 
-    const handleCheckboxChange = event => {
-      setChecked({ selectedValue: event.target.value });
-    };
+  label: "Yes"
+};
 
-    return (
-      <Panel>
-        <PanelSection>
-          <Header title="Last Market Sale" threeParts={true} />
-        </PanelSection>
-        <PanelSection body>
-          <Form>
-            <Section>
-              <SectionName>Last Sale Date</SectionName>
-              <InputGroup>
-                <Radio
-                  {...radio_1}
-                  checked={checked.selectedValue === radio_1.value}
-                  onChange={handleCheckboxChange}
+const cbox_8 = {
+  id: "cbox_8",
+
+  label: "No"
+};
+
+storiesOf("Templates|Panel", module)
+  .add("Filter Details Panel", () =>
+    React.createElement(() => {
+      const [checked, setChecked] = useState({ selectedValue: "" });
+
+      const handleCheckboxChange = event => {
+        setChecked({ selectedValue: event.target.value });
+      };
+
+      return (
+        <Panel>
+          <PanelSection>
+            <Header title="Last Market Sale" threeParts={true} />
+          </PanelSection>
+          <PanelSection body>
+            <Form>
+              <Label right grey content="Reset" />
+              <Section>
+                <SectionName>Last Sale Date</SectionName>
+                <InputGroup>
+                  <Radio
+                    {...radio_1}
+                    checked={checked.selectedValue === radio_1.value}
+                    onChange={handleCheckboxChange}
+                  />
+
+                  <Radio
+                    {...radio_2}
+                    checked={checked.selectedValue === radio_2.value}
+                    onChange={handleCheckboxChange}
+                  />
+
+                  <Radio
+                    {...radio_3}
+                    checked={checked.selectedValue === radio_3.value}
+                    onChange={handleCheckboxChange}
+                  />
+                </InputGroup>
+              </Section>
+              <Section>
+                <SectionName>Last Sale Price</SectionName>
+                <Slider />
+              </Section>
+              <Section>
+                <SectionName>Seller Information</SectionName>
+                <Input
+                  inputLabel="Seller Name"
+                  placeholder="i.e. Mary Williams"
+                  type="text"
                 />
-
-                <Radio
-                  {...radio_2}
-                  checked={checked.selectedValue === radio_2.value}
-                  onChange={handleCheckboxChange}
-                />
-
-                <Radio
-                  {...radio_3}
-                  checked={checked.selectedValue === radio_3.value}
-                  onChange={handleCheckboxChange}
-                />
-              </InputGroup>
-            </Section>
-            <Section>
-              <SectionName>Last Sale Price</SectionName>
-              <Slider />
-            </Section>
-            <Section>
-              <SectionName>Seller Name</SectionName>
-              <Input
-                inputLabel="Seller Name"
-                placeholder="i.e. Mary Williams"
-                type="text"
-              />
-            </Section>
-            <Section>
-              <SectionName>Last Sale Deed Type</SectionName>
-              <InputGroup>
-                <Checkbox {...cbox_4} />
-                <Checkbox {...cbox_5} />
-                <Checkbox {...cbox_6} />
-              </InputGroup>
-            </Section>
-          </Form>
-        </PanelSection>
-        <PanelSection>
-          <Section>
+              </Section>
+              <Section>
+                <SectionName>Last Sale Deed Type</SectionName>
+                <InputGroup>
+                  <Checkbox {...cbox_4} />
+                  <Checkbox {...cbox_5} />
+                  <Checkbox {...cbox_6} />
+                </InputGroup>
+              </Section>
+            </Form>
+          </PanelSection>
+          <PanelSection>
             <CenteredSection>
               <Button label="Apply" isRound={true} isExtraSmall={true} />
             </CenteredSection>
-          </Section>
-        </PanelSection>
-      </Panel>
-    );
-  })
-);
+          </PanelSection>
+        </Panel>
+      );
+    })
+  )
+
+  .add("Property- Characteristics", () =>
+    React.createElement(() => {
+      const [checked, setChecked] = useState({ selectedValue: "" });
+
+      const handleCheckboxChange = event => {
+        setChecked({ selectedValue: event.target.value });
+      };
+
+      return (
+        <Panel>
+          <PanelSection>
+            <Header title="Characteristics" threeParts={true} />
+          </PanelSection>
+          <PanelSection body>
+            <Form>
+              <Label right grey content="Reset" />
+              <Section>
+                <SectionName>Year Built</SectionName>
+                <Slider />
+                <SectionName>Number of Units</SectionName>
+                <Slider />
+                <SectionName>Lot Size (Acre)</SectionName>
+                <Slider />
+                <SectionName>Lot Size (ft2)</SectionName>
+                <Slider />
+                <SectionName>Zoning (Assessor)</SectionName>
+                <Input
+                  inputLabel="Assessor"
+                  placeholder="i.e. Mary Williams"
+                  type="text"
+                />
+              </Section>
+              <Section>
+                <SectionName>In Opportunity Zone</SectionName>
+                <InputGroup>
+                  <Checkbox {...cbox_7} />
+                  <Checkbox {...cbox_8} />
+                </InputGroup>
+              </Section>
+            </Form>
+          </PanelSection>
+          <PanelSection>
+            <CenteredSection>
+              <Button label="Apply" isRound={true} isExtraSmall={true} />
+            </CenteredSection>
+          </PanelSection>
+        </Panel>
+      );
+    })
+  );
