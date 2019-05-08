@@ -41,8 +41,9 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
 
 const RadioLabel = styled.label`
   user-select: none;
-  font-size: smaller;
-  font-weight: 700;
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: 400;
   line-height: 1.2;
   cursor: pointer;
 `

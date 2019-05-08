@@ -43,12 +43,19 @@ const Title = styled.h3`
   }
 `
 
+const CenteredSection = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+`
+
 const Section = styled.section`
   display: grid;
   /* grid-gap: 0.75rem; */
   grid-gap: 1rem;
   flex: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   /* Prototype Content - displays when a Form is empty */
   &:empty {
     &:before {
@@ -59,9 +66,9 @@ const Section = styled.section`
 `
 
 const SectionName = styled.h5`
-  color: ${colors.grey_60};
-  font-weight: 600;
-  letter-spacing: 1px;
+  color: ${colors.grey_80};
+  font-weight: 700;
+  // letter-spacing: 1px;
   margin-bottom: 0;
   &:empty {
     &:before {
@@ -71,12 +78,13 @@ const SectionName = styled.h5`
 `
 const Label = styled.label`
   display: flex;
+  font-family: Arial;
   justify-content: space-between;
   align-items: center;
   grid-column: 1 / -1;
   user-select: none;
   font-size: smaller;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 1px;
   color: inherit;
   cursor: pointer;
@@ -144,6 +152,7 @@ ErrorText.propTypes = {
 export {
   Form as default,
   Title,
+  CenteredSection,
   Section,
   SectionName,
   InputLabel,

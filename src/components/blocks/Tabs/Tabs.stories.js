@@ -12,7 +12,6 @@ storiesOf("Blocks|Tabs", module)
   .add("Standard Tabs", () =>
     React.createElement(() => {
       const [selected, setSelected] = useState("");
-
       return (
         <div>
           <Tabs>

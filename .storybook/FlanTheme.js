@@ -1,5 +1,5 @@
-import { create } from "@storybook/theming"
-import { fonts, colors, shadows } from "Variables"
+import { create } from "@storybook/theming";
+import { fonts, colors, shadows } from "Variables";
 
 export default create({
   base: "light",
@@ -14,7 +14,7 @@ export default create({
   // appBorderRadius: 4,
 
   // Typography
-  fontBase: fonts.body,
+  // fontBase: fonts.body,
   // fontCode: "monospace",
 
   // Text colors
@@ -36,4 +36,4 @@ export default create({
   // brandUrl: "https://example.com",
   // brandImage:
   //   "https://www.nationalgeographic.com/content/dam/travel/2018-digital/best-trips-tahiti/best-trips-tahiti-2.adapt.133.1.jpg"
-})
+});

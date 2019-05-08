@@ -90,6 +90,10 @@ const blockStyle = {
 }
 
 storiesOf("Atoms|Icon", module)
+  .addDecorator(Padding)
+  .add("Documentation", withInfo()(() => <Icon icon="coffee" />))
+
+storiesOf("Atoms|Icon", module)
   .addParameters({
     info: {
       text: "Icon info goes here..."
@@ -291,6 +295,7 @@ storiesOf("Atoms|Icon", module)
 
 storiesOf("Blocks|IconBlock", module)
   .addDecorator(Padding)
+  .addDecorator(withInfo)
   .add("Icon Block", () => (
     <IconGrid>
       <Title>

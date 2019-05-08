@@ -12,6 +12,7 @@ import Table from "blocks/Table";
 storiesOf("Blocks|Accordion", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
+  .add("Documentation", () => <Accordion />)
   .add("Accordion", () =>
     React.createElement(() => {
       const [activeAccordion, setActiveAccordion] = useState("");

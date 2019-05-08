@@ -1,6 +1,7 @@
 import React  from "react"
 import styled, { css } from "styled-components"
 import Input from "atoms/Input/Input";
+import PropTypes from "prop-types";
 import {Lighten, Darken} from "helpers/Placeholders";
 
 
@@ -11,6 +12,7 @@ justify-content: space-between;`
 
 const SliderPiece = styled.input.attrs({ type: "range" })`
   -webkit-appearance: none;
+  appearance: none;
   width: 98%;
   height: 1px;
   min: "0";
@@ -23,7 +25,6 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
   opacity: 0.7;
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
-
 
 
   &::-webkit-slider-thumb {
@@ -46,6 +47,9 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
 
   }
 
+
+
+
   &::-moz-range-thumb {
     width: 25px;
     height: 25px;
@@ -61,8 +65,8 @@ function Slider({id, value, min, max, step, ...props}) {
   return (
   <div style={{display: "inline-block"}}>
   <InputContainer>
-  <Input inputLabel="min" style={{width: "50px", height: "70%"}}/>
-  <Input inputLabel="max" style={{width: "50px", height: "70%", textAlign: "right", alignContent: "right"}}/>
+  <Input style={{width: "50px", height: "70%"}}/>
+  <Input style={{width: "50px", height: "70%", textAlign: "right", alignContent: "right"}}/>
   </InputContainer>
   <div>
     <SliderPiece/>
@@ -70,5 +74,17 @@ function Slider({id, value, min, max, step, ...props}) {
     </div>
     )
 };
+
+
+
+Slider.propTypes = {
+  id: PropTypes.string,
+  value: PropTypes.string,
+  min: PropTypes.string,
+  max: PropTypes.string,
+  step: PropTypes.string
+}
+
+
 
 export default Slider

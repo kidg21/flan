@@ -25,9 +25,17 @@ const Accordion = ({ header, children, visibility, ...props }) => {
   );
 };
 
+
+
+Accordion.defaultProps = {
+  id: ""
+}
+
 Accordion.propTypes = {
+  id: PropTypes.string,
   children: PropTypes.any.isRequired,
-  header: PropTypes.any.isRequired
-};
+  header: PropTypes.any.isRequired,
+}
+
 
 export default Accordion;

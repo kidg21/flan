@@ -183,6 +183,7 @@ SelectMenu.defaultProps = {
 }
 
 SelectMenu.propTypes = {
+  id: PropTypes.string,
   name: PropTypes.string,
   placeholder: PropTypes.string,
   options: PropTypes.array,

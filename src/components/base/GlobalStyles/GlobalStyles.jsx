@@ -201,6 +201,8 @@ const GlobalStyles = createGlobalStyle`
             background-color: ${colors.grey_20};
         }
     }
-`
+
+    `
+    
 
 export default GlobalStyles

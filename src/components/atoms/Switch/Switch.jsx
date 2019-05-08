@@ -33,16 +33,16 @@ const Circle = styled.div`
   border-radius: 40px;
   width: 15px;
   line-height: normal;
-  height: 15px;
+  height: 14px;
   transition: transform 300ms ease-in-out;
   transform: ${props =>
-    props.checked ? "translateX(14px)" : "translateX(0px)"};
+    props.checked ? "translateX(15px)" : "translateX(-1px)"};
 `
 
 const StyledSwitch = styled.div`
   width: 30px;
   display: block;
-  height: 16.5px;
+  height: 16px;
   border-radius: 23px;
   border: ${props =>
     props.checked ? "1px solid #94d850" : "1px solid darkgray"};

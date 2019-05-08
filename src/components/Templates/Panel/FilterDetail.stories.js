@@ -1,13 +1,20 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import Header from "blocks/Panel/Header";
-import Card from "blocks/Card/Card";
+import Card, { CardList } from "layout/Card";
 import Panel, { PanelSection } from "layout/Panel";
-import Form, { Title, Section, SectionName, InputGroup } from "layout/Form";
+import Form, {
+  Title,
+  Section,
+  CenteredSection,
+  SectionName,
+  InputGroup
+} from "layout/Form";
 import Checkbox from "../../atoms/Checkbox/Checkbox";
 import Input from "atoms/Input";
 import Radio from "atoms/Radio";
 import Slider from "atoms/Slider";
+import Button from "atoms/Button";
 
 const radio_1 = {
   id: "radio-1",
@@ -134,24 +141,35 @@ storiesOf("Templates|Panel", module).add("Filter Details Panel", () =>
                   onChange={handleCheckboxChange}
                 />
               </InputGroup>
-              <Section>
-                <SectionName>Last Sale Price</SectionName>
-                <Slider />
-              </Section>
-              <Section>
-                <SectionName>Seller Name</SectionName>
-                <Input placeholder="Seller Name" type="text" />
-              </Section>
-              <Section>
-                <SectionName>Last Sale Deed Type</SectionName>
-                <InputGroup>
-                  <Checkbox {...cbox_4} />
-                  <Checkbox {...cbox_5} />
-                  <Checkbox {...cbox_6} />
-                </InputGroup>
-              </Section>
+            </Section>
+            <Section>
+              <SectionName>Last Sale Price</SectionName>
+              <Slider />
+            </Section>
+            <Section>
+              <SectionName>Seller Name</SectionName>
+              <Input
+                inputLabel="Seller Name"
+                placeholder="i.e. Mary Williams"
+                type="text"
+              />
+            </Section>
+            <Section>
+              <SectionName>Last Sale Deed Type</SectionName>
+              <InputGroup>
+                <Checkbox {...cbox_4} />
+                <Checkbox {...cbox_5} />
+                <Checkbox {...cbox_6} />
+              </InputGroup>
             </Section>
           </Form>
+        </PanelSection>
+        <PanelSection>
+          <Section>
+            <CenteredSection>
+              <Button label="Apply" isRound={true} isExtraSmall={true} />
+            </CenteredSection>
+          </Section>
         </PanelSection>
       </Panel>
     );

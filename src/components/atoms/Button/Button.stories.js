@@ -1,5 +1,7 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
+import { Padding } from "helpers/Display"
+import Grid from "helpers/Grid"
 import { withInfo } from "@storybook/addon-info"
 import {
   withKnobs,
@@ -10,8 +12,6 @@ import {
   number,
   optionsKnob as options
 } from "@storybook/addon-knobs"
-import { Padding } from "helpers/Display"
-import Grid from "helpers/Grid"
 import { colors } from "Variables"
 import Button from "atoms/Button"
 import ButtonNotes from "./Button.md"
@@ -51,12 +51,21 @@ storiesOf("Atoms|Button", module)
   ))
   .add("The Button Family", () => (
     <Grid>
-      <Button buttonLabel="Standard Button" />
-      <Button buttonLabel="Primary Button" buttonPrimary={true} />
-      <Button buttonLabel="Secondary Button" buttonSecondary={true} />
-      <Button buttonLabel="Icon Button" icon={["fas", "user"]} />
-      <Button buttonLabel="Round Button" isRound={true} />
-      <Button buttonLabel="Floating Button" isFloating={true} />
-      <Button buttonLabel="Disabled Button" isDisabled={true} />
+      <Button label="Standard Button" />
+      <Button label="Second Standard" isSecondStandard={true} />
+      <Button label="Primary Button" isPrimary={true} />
+      <Button label="Secondary Button" isSecondary={true} />
+      <Button label="Icon Button" icon={["fas", "user"]} />
+      <Button label="Floating Button" isFloating={true} />
+      <Button label="Standard Round" isRound={true} />
+      <Button label="Second Round" isSecondStandard={true} isRound={true} />
+      <Button label="Stan. Round" isRound={true} isSmall={true} />
+      <Button
+        label="Second Round"
+        isSecondStandard={true}
+        isRound={true}
+        isSmall={true}
+      />
+      <Button label="Disabled Button" isDisabled={true} />
     </Grid>
   ))
