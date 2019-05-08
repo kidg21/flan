@@ -1,7 +1,5 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
-import { Padding } from "helpers/Display"
-import Grid from "helpers/Grid"
 import { withInfo } from "@storybook/addon-info"
 import {
   withKnobs,
@@ -12,6 +10,8 @@ import {
   number,
   optionsKnob as options
 } from "@storybook/addon-knobs"
+import { Padding } from "helpers/Display"
+import Grid from "helpers/Grid"
 import { colors } from "Variables"
 import Button from "atoms/Button"
 import ButtonNotes from "./Button.md"
@@ -22,15 +22,14 @@ storiesOf("Atoms|Button", module)
     info: {
       text:
         "A control that executes your custom code in response to user interactions.  When you tap a button, or select a button that has focus, the button performs any actions attached to it. You communicate the purpose of a button using a text label, an image, or both. The appearance of buttons is configurable, so you can tint buttons or format titles to match the design of your app. You can add buttons to your interface programmatically or using Interface Builder. -- 'developer.apple.com'"
-    }
-  })
-  .addDecorator(Padding)
-  .addDecorator(withKnobs)
-  .add("Documentation", withInfo()(() => <Button />), {
+    },
     notes: {
       markdown: ButtonNotes
     }
   })
+  .addDecorator(Padding)
+  .addDecorator(withKnobs)
+  .add("Documentation", withInfo()(() => <Button />))
   .add("Standard Button", () => <Button buttonLabel="Standard Button" />)
   .add("Primary Button", () => (
     <Button buttonLabel="Primary Button" buttonPrimary={true} />
