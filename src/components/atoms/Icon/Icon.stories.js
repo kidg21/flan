@@ -1,13 +1,23 @@
 import React, { Fragment } from "react"
 import { storiesOf } from "@storybook/react"
+import { withInfo } from "@storybook/addon-info"
+import {
+  withKnobs,
+  text,
+  boolean,
+  radios,
+  select,
+  number,
+  optionsKnob as options
+} from "@storybook/addon-knobs"
+import { Padding } from "helpers/Display"
+import Grid from "helpers/Grid"
 import styled, { css } from "styled-components"
 import { colors, shadows } from "Variables"
-import { Padding } from "helpers/Display"
-import { withInfo } from "@storybook/addon-info"
-import Grid from "helpers/Grid"
 import { Success } from "base/Typography"
 import Icon from "atoms/Icon"
 import IconBlock from "blocks/IconBlock"
+import IconNotes from "./Icon.md"
 
 const IconGrid = styled(Grid)`
   grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
@@ -80,7 +90,17 @@ const blockStyle = {
 }
 
 storiesOf("Atoms|Icon", module)
+  .addParameters({
+    info: {
+      text: "Icon info goes here..."
+    },
+    notes: {
+      markdown: IconNotes
+    }
+  })
   .addDecorator(Padding)
+  .addDecorator(withKnobs)
+  .add("Documentation", withInfo()(() => <Icon icon="coffee" size="lg" />))
   .add("Icon Colors", () => (
     <IconGrid style={{ fontSize: "2em" }}>
       <Title>
@@ -495,16 +515,16 @@ storiesOf("Application|Libraries/", module)
         <IconLabel>map-marker-alt</IconLabel>
       </ActiveIcon>
       <ActiveIcon>
-        <Icon icon={["far", "minus"]} />
-        <IconLabel>"far", "minus"</IconLabel>
+        <Icon icon="minus" />
+        <IconLabel>"minus"</IconLabel>
       </ActiveIcon>
       <ActiveIcon>
         <Icon icon="money-bill" />
         <IconLabel>money-bill</IconLabel>
       </ActiveIcon>
       <ActiveIcon>
-        <Icon icon={["far", "plus"]} />
-        <IconLabel>"far", "plus"</IconLabel>
+        <Icon icon="plus" />
+        <IconLabel>"plus"</IconLabel>
       </ActiveIcon>
       <ActiveIcon>
         <Icon icon={["fal", "plus-circle"]} />
