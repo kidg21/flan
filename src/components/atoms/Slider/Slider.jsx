@@ -2,6 +2,7 @@ import React  from "react"
 import styled, { css } from "styled-components"
 import Input from "atoms/Input/Input";
 import PropTypes from "prop-types";
+import { colors, shadows } from "Variables"
 import {Lighten, Darken} from "helpers/Placeholders";
 
 
@@ -9,6 +10,22 @@ const InputContainer = styled.div`
 width: 98%;
 display: flex;
 justify-content: space-between;`
+
+
+// const CardInput = styled.input`
+//   padding: 5px 5px;
+//   width: 100%;
+//   font-family: arial;
+//   font-size: 12px;
+//   border: 0px solid #ddd;
+//   background: ${colors.grey_light};
+//   transition: border-bottom-color .25s ease-in;
+
+//   &:focus {
+//     border-bottom-color: 1px solid ${colors.grey_light};
+//     outline: 0;
+//   }
+// `
 
 const SliderPiece = styled.input.attrs({ type: "range" })`
   -webkit-appearance: none;
@@ -65,8 +82,8 @@ function Slider({id, value, min, max, step, ...props}) {
   return (
   <div style={{display: "inline-block"}}>
   <InputContainer>
-  <Input style={{width: "50px", height: "70%"}}/>
-  <Input style={{width: "50px", height: "70%", textAlign: "right", alignContent: "right"}}/>
+  <Input type="text" slider={true} placeholder="Min"  style={{width: "50px", height: "70%" }}/>
+  <Input type="text" slider={true} placeholder="Max" style={{width: "50px", height: "70%", textAlign: "right", alignContent: "right"}}/>
   </InputContainer>
   <div>
     <SliderPiece/>

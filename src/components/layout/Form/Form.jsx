@@ -48,6 +48,8 @@ const CenteredSection = styled.div`
   justify-content: center;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 `
 
 const Section = styled.section`

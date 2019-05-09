@@ -64,27 +64,34 @@ const PrePostLabel = styled.label`
 const TextInput = styled.input`
   border: 1px solid ${colors.grey_20};
   border-bottom: 1px solid ${colors.grey_20};
-  border-color: ${props => (props.error ? colors.alert : "")};
+  border-color: ${props => (props.error ? colors.alert : props.slider ? colors.white : "")};
   border-radius: ${props => (props.isRound ? "10rem !important" : "")};
   background-color: ${props => (props.error ? colors.alert_tint : "")};
   caret-color: ${props => (props.error ? colors.alert : "")};
   min-height: 2.75rem;
-  padding: ${props => (props.isRound ? "0.75rem 1rem" : "0.5rem 0.75rem")};
+  padding: ${props => (props.isRound ? "0.75rem 1rem" : props.slider ? "0rem .8rem" : "0.5rem 0.75rem")};
+
   ::placeholder {
-    color: ${props => (props.error ? colors.alert : "")};
+    color: ${props => (props.error ? colors.alert : props.slider ? colors.success :  "")};
+    // font-weight: ${props => (props.slider ? "bold" : "normal")};
+    font-size: ${props => (props.slider ? "11px" : null )};
   }
   &:hover {
     border: 1px solid ${colors.grey_40};
-    border-color: ${props => (props.error ? colors.alert : "")};
+    border-color: ${props => (props.error ? colors.alert : props.slider ? colors.grey_20 : "")};
+    }
   }
   &:focus {
     background-color: ${props => (props.error ? colors.alert_tint : "")};
-    border-color: ${props => (props.error ? colors.alert : colors.success)};
+    border-color: ${props => (props.error ? colors.alert : props.slider ? colors.grey_20 : colors.success)};
+    color: ${props => (props.slider ? colors.success : null )};
+    font-size: ${props => (props.slider ? "11px" : null )};
     ::placeholder {
-      color: ${props => (props.error ? colors.alert : colors.grey_60)};
+      color: ${props => (props.error ? colors.alert : props.slider? colors.success : colors.grey_60)};
     }
     ::selection {
       background-color: ${props => (props.error ? colors.alert : "")};
+      
     }
   }
 `
@@ -100,6 +107,7 @@ function Input({
   isRequired, // Label prop
   disabled,
   isRound,
+  slider,
   twoInputs,
   id_2,
   type_2,
@@ -156,6 +164,7 @@ function Input({
         id={id} // input attribute
         name={id} // input attribute
         type={type} // input attribute
+        slider={slider}
         value={value} // input attribute
         placeholder={placeholder} // input attribute
         pattern={pattern} // input attribute
@@ -231,7 +240,8 @@ Input.defaultProps = {
   twoInputs: false,
   placeholder_2: "Placeholder 2",
   threeInputs: false,
-  placeholder_3: "Placeholder 3"
+  placeholder_3: "Placeholder 3",
+  slider: false,
 }
 
 Input.propTypes = {
@@ -263,6 +273,7 @@ Input.propTypes = {
   postSelect: PropTypes.array,
   buttonLabel: PropTypes.string,
   error: PropTypes.bool,
+  slider: PropTypes.bool,
   errorText: PropTypes.string,
   style: PropTypes.string
 }
