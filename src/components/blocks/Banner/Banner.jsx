@@ -95,6 +95,8 @@ function Banner({
   warning,
   error,
   inverse,
+  onClick,
+  onClose,
   style,
   ...props
 }) {
@@ -120,9 +122,11 @@ function Banner({
       <Message>
         <Notification>{title}</Notification>
         {description ? <Description>{description}</Description> : null}
-        {cta ? <NotificationLink>{cta}</NotificationLink> : null}
+        {cta ? (
+          <NotificationLink onClick={onClick}>{cta}</NotificationLink>
+        ) : null}
       </Message>
-      <Close>
+      <Close onClick={onClose}>
         <Icon icon="times" />
       </Close>
     </StyledBanner>
