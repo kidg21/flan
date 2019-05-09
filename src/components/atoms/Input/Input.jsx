@@ -117,7 +117,6 @@ function Input({
   preSelect,
   postSelect,
   buttonLabel,
-  isPrimary, // Button prop
   error,
   errorText,
   style,
@@ -199,7 +198,7 @@ function Input({
       {postfix ? <PrePostLabel>{postfix}</PrePostLabel> : null}
       {/* Postfix Button (conditional) */}
       {buttonLabel ? (
-        <Button buttonLabel={buttonLabel} buttonPrimary={true} />
+        <Button buttonLabel={buttonLabel} isPrimary={true} />
       ) : null}
       {/* Postfix Select Menu (conditional) */}
       {postSelect ? (

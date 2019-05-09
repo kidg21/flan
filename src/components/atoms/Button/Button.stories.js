@@ -40,7 +40,7 @@ storiesOf("Atoms|Button", module)
   .add("Icon Button", () => (
     <Button buttonLabel="Icon Button" icon={["fas", "user"]} />
   ))
-  .add("Square Button", () => (
+  .add("Round Button", () => (
     <Button buttonLabel="Round Button" isRound={true} />
   ))
   .add("Floating Button", () => (
@@ -50,22 +50,55 @@ storiesOf("Atoms|Button", module)
     <Button buttonLabel="Disabled Button" isDisabled={true} />
   ))
   .add("The Button Family", () => (
-    <Grid>
-      <Button label="Standard Button" />
-      <Button label="Second Standard" isSecondStandard={true} />
-      <Button label="Primary Button" isPrimary={true} />
-      <Button label="Secondary Button" isSecondary={true} />
-      <Button label="Icon Button" icon={["fas", "user"]} />
-      <Button label="Floating Button" isFloating={true} />
-      <Button label="Standard Round" isRound={true} />
-      <Button label="Second Round" isSecondStandard={true} isRound={true} />
-      <Button label="Stan. Round" isRound={true} isSmall={true} />
-      <Button
-        label="Second Round"
-        isSecondStandard={true}
-        isRound={true}
-        isSmall={true}
-      />
-      <Button label="Disabled Button" isDisabled={true} />
-    </Grid>
+    <>
+      <Grid>
+        <Button label="Standard Button" />
+        <Button label="Standard Secondary" isSecondary={true} />
+        <Button label="Standard Solid" isSolid={true} />
+        <Button label="Secondary Solid" isSolid={true} isSecondary={true} />
+        <Button label="Standard Round" isRound={true} />
+        <Button label="Secondary Round" isRound={true} isSecondary={true} />
+        <Button label="Icon Button" icon={["fas", "user"]} />
+        <Button label="Floating Button" isFloating={true} />
+        <Button label="Disabled Button" isDisabled={true} />
+      </Grid>
+      <br />
+      <Grid alignLeft={true}>
+        <Button label="Left-Aligned" />
+      </Grid>
+      <br />
+      <Grid alignCenter={true}>
+        <Button label="Center-Aligned" />
+      </Grid>
+      <br />
+      <Grid alignRight={true}>
+        <Button label="Right-Aligned" />
+      </Grid>
+      <br />
+      <Grid col_2>
+        <Button label="Two Column" />
+        <Button label="Button Grid" />
+      </Grid>
+      <br />
+      <Grid col_3>
+        <Button label="Three Column" />
+        <Button label="Button" />
+        <Button label="Grid" />
+      </Grid>
+      <br />
+      <Grid col_4>
+        <Button label="Four" />
+        <Button label="Column" />
+        <Button label="Button" />
+        <Button label="Grid" />
+      </Grid>
+      <br />
+      <Grid col_5>
+        <Button label="Five" />
+        <Button label="Column" />
+        <Button icon="plus" label="Hit Me!" isSecondary={true} />
+        <Button label="Button" />
+        <Button label="Grid" />
+      </Grid>
+    </>
   ))
