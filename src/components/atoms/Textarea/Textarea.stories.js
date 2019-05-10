@@ -13,29 +13,35 @@ import {
 import Panel, { PanelSection } from "layout/Panel"
 import Form, { Section, SectionName, InputGroup } from "layout/Form"
 import Textarea from "atoms/Textarea"
+import TextareaNotes from "./Textarea.md"
 
 // Input ( Standard )
 storiesOf("Atoms|Textarea", module)
+  .addParameters({
+    info: {
+      text: "Text Area info goes here..."
+    },
+    notes: {
+      markdown: TextareaNotes
+    }
+  })
   .addDecorator(Padding)
-  .addDecorator(withInfo)
   .addDecorator(withKnobs)
-  .add("Textarea ( Knobs )", () => (
-    <Textarea
-      inputLabel={text("Textarea Label", "Textarea ( Knobs )")}
-      isRequired={boolean("Required", false)}
-      placeholder={text("Placeholder Text", "I am just keeping things warm")}
-      helpText={text("Help Text", "Have you been helped yet?")}
-      disabled={boolean("Disabled", false)}
-      error={boolean("Error", false)}
-      errorText={text("Error Text", "Stay with my, buddy...we can fix this!")}
-    />
-  ))
-
-// Textarea ( Standard )
-storiesOf("Atoms|Textarea", module)
-  .addDecorator(Padding)
-  .addDecorator(withInfo)
-  .addDecorator(withKnobs)
+  .add(
+    "Documentation",
+    withInfo()(() => (
+      <Textarea
+        inputLabel={text("Textarea Label", "Textarea ( Knobs )")}
+        isRequired={boolean("Required", false)}
+        placeholder={text("Placeholder Text", "I am just keeping things warm")}
+        helpText={text("Help Text", "Have you been helped yet?")}
+        disabled={boolean("Disabled", false)}
+        error={boolean("Error", false)}
+        errorText={text("Error Text", "Stay with my, buddy...we can fix this!")}
+      />
+    ))
+  )
+  // Textarea ( Standard )
   .add("Textarea ( Standard )", () => (
     <Textarea
       name="Say My Name!"
@@ -43,12 +49,7 @@ storiesOf("Atoms|Textarea", module)
       helpText="This help text has been passed through a prop!"
     />
   ))
-
-// Textarea ( Required )
-storiesOf("Atoms|Textarea", module)
-  .addDecorator(Padding)
-  .addDecorator(withInfo)
-  .addDecorator(withKnobs)
+  // Textarea ( Required )
   .add("Textarea ( Required )", () => (
     <Textarea
       inputLabel="Textarea ( Required )"
@@ -57,11 +58,7 @@ storiesOf("Atoms|Textarea", module)
     />
   ))
 
-// Textarea ( Disabled )
-storiesOf("Atoms|Textarea", module)
-  .addDecorator(Padding)
-  .addDecorator(withInfo)
-  .addDecorator(withKnobs)
+  // Textarea ( Disabled )
   .add("Textarea ( Disabled )", () => (
     <Textarea
       inputLabel="Textarea ( Disabled )"
@@ -70,11 +67,7 @@ storiesOf("Atoms|Textarea", module)
     />
   ))
 
-// Textarea ( Error )
-storiesOf("Atoms|Textarea", module)
-  .addDecorator(Padding)
-  .addDecorator(withInfo)
-  .addDecorator(withKnobs)
+  // Textarea ( Error )
   .add("Textarea ( Error )", () => (
     <Textarea
       inputLabel="Textarea ( Error )"

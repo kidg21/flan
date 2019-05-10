@@ -30,6 +30,20 @@ const GridWrapper = styled.section`
       : props.col_12
       ? "repeat(12, 1fr)"
       : "repeat(auto-fill, minmax(20rem, 1fr))"};
+  grid-column: ${props =>
+    props.alignLeft || props.alignCenter || props.alignRight
+      ? "1/-1"
+      : /* : props.alignJustify
+      ? "none" */
+        ""};
+  justify-items: ${props =>
+    props.alignLeft
+      ? "flex-start"
+      : props.alignCenter
+      ? "center"
+      : props.alignRight
+      ? "flex-end"
+      : ""};
 `
 function Grid({
   col_1,
@@ -44,6 +58,9 @@ function Grid({
   col_10,
   col_11,
   col_12,
+  alignLeft,
+  alignCenter,
+  alignRight,
   style,
   className,
   children,
@@ -63,6 +80,9 @@ function Grid({
       col_10={col_10}
       col_11={col_11}
       col_12={col_12}
+      alignLeft={alignLeft}
+      alignCenter={alignCenter}
+      alignRight={alignRight}
       style={style}
       className={className}
     >
