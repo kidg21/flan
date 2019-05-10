@@ -17,7 +17,6 @@ import Radio from "atoms/Radio";
 import Slider from "atoms/Slider";
 import RangeSlider from "blocks/RangeSlider";
 import Button from "atoms/Button";
-import Label from "atoms/Label";
 import SelectMenu from "atoms/SelectMenu";
 
 const radio_1 = {
@@ -209,7 +208,7 @@ storiesOf("Templates|Panel", module)
           </PanelSection>
           <PanelSection body>
             <Form>
-              <Label right grey content="Reset" />
+              {/* <Label right grey content="Reset" /> */}
               <Section>
                 <InputLabel inputLabel="Last Sale Date" />
                 <InputGroup>
@@ -277,7 +276,7 @@ storiesOf("Templates|Panel", module)
           </PanelSection>
           <PanelSection body>
             <Form>
-              <Label right grey content="Reset" />
+              {/* <Label right grey content="Reset" /> */}
               <Section>
                 <RangeSlider label="Year Built" />
                 <RangeSlider label="Number of Units" />
@@ -325,7 +324,7 @@ storiesOf("Templates|Panel", module)
           </PanelSection>
           <PanelSection body>
             <Form>
-              <Label right grey content="Reset" />
+              {/* <Label right grey content="Reset" /> */}
               <Section>
                 <RangeSlider label="Aggregate Acreage" />
                 <RangeSlider label="Aggregate Lot Count" />
@@ -372,7 +371,7 @@ storiesOf("Templates|Panel", module)
           </PanelSection>
           <PanelSection body>
             <Form>
-              <Label right grey content="Reset" />
+              {/* <Label right grey content="Reset" /> */}
               <Section>
                 <RangeSlider label="Assessed Value" />
                 <RangeSlider label="Improvement Percentage" />
@@ -406,7 +405,7 @@ storiesOf("Templates|Panel", module)
           </PanelSection>
           <PanelSection body>
             <Form>
-              <Label right grey content="Reset" />
+              {/* <Label right grey content="Reset" /> */}
               <Section>
                 <Input
                   inputLabel="Street Name"
@@ -457,7 +456,7 @@ storiesOf("Templates|Panel", module)
           </PanelSection>
           <PanelSection body>
             <Form>
-              <Label right grey content="Reset" />
+              {/* <Label right grey content="Reset" /> */}
               <Section>
                 <SectionName>Commercial</SectionName>
                 <InputGroup col_2>

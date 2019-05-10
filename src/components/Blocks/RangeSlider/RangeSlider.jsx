@@ -13,6 +13,7 @@ import { InputLabel } from "layout/Form";
 const SliderInput = styled(Input)`
 border-color: ${colors.white};
 min-height: 2rem;
+width: 10%;
 padding: .5rem .5rem;
 
 ::placeholder {
