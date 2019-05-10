@@ -10,23 +10,10 @@ const StyledBanner = styled.div`
   display: flex;
   align-items: flex-start;
   background-color: ${props =>
-    /* props.inverse ? colors.grey_dark_glass : colors.grey_light_glass}; */
     props.inverse ? colors.grey_light_glass : colors.grey_dark_glass};
-  /* color: ${props => (props.inverse ? colors.white : "")}; */
   color: ${props => (props.inverse ? "" : colors.white)};
   border: 2px solid;
-  border-color: ${props =>
-    props.success
-      ? colors.success
-      : props.warning
-      ? colors.warning
-      : props.error
-      ? colors.alert
-      : props.info
-      ? colors.anchor
-      : props.inverse
-      ? colors.grey_40
-      : colors.grey_light};
+  border-color: ${props => props.borderColor};
   border-width: ${props => (props.inverse ? "1px" : "")};
   border-left-width: ${props =>
     props.success || props.warning || props.error || props.info ? "6px" : ""};
@@ -41,6 +28,14 @@ const StyledBanner = styled.div`
 const BannerIcon = styled(FontAwesomeIcon)`
   margin-right: 0.5em;
   cursor: default;
+`
+
+const BannerImage = styled.img`
+  flex: none;
+  width: 3em;
+  margin-right: 1em;
+  border: 1px solid;
+  border-color: ${props => (props.inverse ? colors.grey_60 : colors.grey_40)};
 `
 
 const StatusBadge = styled(Badge)`
@@ -88,37 +83,65 @@ function Banner({
   id,
   title,
   description,
+  type,
   icon,
+  img,
   cta,
   info,
   success,
   warning,
   error,
+  borderColor,
   inverse,
   onClick,
   onClose,
   style,
   ...props
 }) {
+  let bannerType
+  let color
+  switch (type) {
+    case "media":
+      bannerType = icon ? (
+        <BannerIcon icon={icon} size="2x" />
+      ) : img ? (
+        <BannerImage src={img} inverse={inverse} />
+      ) : null
+      color = colors.grey_40
+      break
+    case "info":
+      bannerType = <StatusBadge icon="info" anchor />
+      color = colors.anchor
+      break
+    case "success":
+      bannerType = <StatusBadge icon="check" success />
+      color = colors.success
+      break
+    case "warning":
+      bannerType = <StatusBadge icon="exclamation" warning />
+      color = colors.warning
+      break
+    case "alert":
+      bannerType = <StatusBadge icon="times" alert />
+      color = colors.alert
+      break
+    default:
+      color = colors.grey_40
+  }
   return (
     <StyledBanner
       id={id}
+      type={type}
       title={title}
       description={description}
-      icon={icon}
       cta={cta}
-      info={info}
-      success={success}
-      warning={warning}
-      error={error}
+      icon={icon}
+      img={img}
+      borderColor={color}
       inverse={inverse}
       style={style}
     >
-      {icon ? <BannerIcon icon={icon} size="2x" /> : null}
-      {info ? <StatusBadge icon="info" anchor /> : null}
-      {success ? <StatusBadge icon="check" success /> : null}
-      {warning ? <StatusBadge icon="exclamation" warning /> : null}
-      {error ? <StatusBadge icon="times" alert /> : null}
+      {bannerType}
       <Message>
         <Notification>{title}</Notification>
         {description ? <Description>{description}</Description> : null}
@@ -134,29 +157,20 @@ function Banner({
 }
 
 Banner.defaultProps = {
-  id: "",
-  title: "Notification Alert",
-  description: "",
-  icon: "",
-  cta: "",
-  info: false,
-  success: false,
-  warning: false,
-  error: false,
-  inverse: false
+  title: "Notification Alert"
 }
 
 Banner.propTypes = {
   id: PropTypes.string,
+  type: PropTypes.oneOf(["media", "info", "success", "warning", "alert"]),
   title: PropTypes.string,
   description: PropTypes.string,
-  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   cta: PropTypes.string,
-  info: PropTypes.bool,
-  success: PropTypes.bool,
-  warning: PropTypes.bool,
-  error: PropTypes.bool,
+  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  img: PropTypes.string,
   inverse: PropTypes.bool,
+  onClick: PropTypes.func,
+  onClose: PropTypes.func,
   style: PropTypes.string
 }
 

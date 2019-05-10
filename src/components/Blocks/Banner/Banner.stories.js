@@ -39,12 +39,6 @@ storiesOf("Blocks|Banner", module)
         description="Additional information can go here, if necessary."
         cta="Learn More"
       />
-      <Banner
-        icon="home"
-        title="This notification is displaing an optional icon."
-        description="Additional information can go here, if necessary."
-        cta="Learn More"
-      />
     </Grid>
   ))
   .add("Inverse Banners", () => (
@@ -64,51 +58,165 @@ storiesOf("Blocks|Banner", module)
         cta="Learn More"
         inverse={true}
       />
-      <Banner
-        icon="home"
-        title="This notification is displaing an optional icon."
-        description="Additional information can go here, if necessary."
-        cta="Learn More"
-        inverse={true}
-      />
     </Grid>
   ))
   .add("Info Banner", () => (
     <Grid>
-      <Banner title="This is a Standard Info notification." info={true} />
+      <Banner type="info" title="This is a Standard Info notification." />
       <Banner
+        type="info"
         title="This is an Inverse Info notification."
-        info={true}
         inverse={true}
       />
     </Grid>
   ))
   .add("Success Banner", () => (
     <Grid>
-      <Banner title="This is a Standard Success notification." success={true} />
+      <Banner type="success" title="This is a Standard Success notification." />
       <Banner
+        type="success"
         title="This is an Inverse Success notification."
-        success={true}
         inverse={true}
       />
     </Grid>
   ))
   .add("Warning Banner", () => (
     <Grid>
-      <Banner title="This is a Standard Warning notification." warning={true} />
+      <Banner type="warning" title="This is a Standard Warning notification." />
       <Banner
+        type="warning"
         title="This is an Inverse Warning notification."
-        warning={true}
         inverse={true}
       />
     </Grid>
   ))
-  .add("Error Banner", () => (
+  .add("Alert Banner", () => (
     <Grid>
-      <Banner title="This is a Standard Error notification." error={true} />
+      <Banner type="alert" title="This is a Standard Error notification." />
       <Banner
+        type="alert"
         title="This is an Inverse Error notification."
-        error={true}
+        inverse={true}
+      />
+    </Grid>
+  ))
+  .add("Icon Banner", () => (
+    <Grid>
+      <Banner
+        type="media"
+        icon="home"
+        title="This notification is displaying an optional icon."
+        description="Additional information can go here, if necessary."
+        cta="Learn More"
+      />
+      <Banner
+        type="media"
+        icon="home"
+        title="This notification is displaying an optional icon."
+        description="Additional information can go here, if necessary."
+        cta="Learn More"
+        inverse={true}
+      />
+    </Grid>
+  ))
+  .add("Image Banner", () => (
+    <Grid>
+      <Banner
+        type="media"
+        img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+        title="This notification is displaying an optional image."
+        description="Additional information can go here, if necessary."
+        cta="Learn More"
+      />
+      <Banner
+        type="media"
+        img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+        title="This notification is displaying an optional image."
+        description="Additional information can go here, if necessary."
+        cta="Learn More"
+        inverse={true}
+      />
+    </Grid>
+  ))
+  .add("The Banner Family", () => (
+    <Grid>
+      <Banner title="This is a Standard notification telling you stuff." />
+      <Banner
+        title="This is an Inverse notification telling you stuff."
+        inverse={true}
+      />
+      <Banner
+        title="This is a Standard notification that includes a description."
+        description="Additional information can go here, if necessary."
+      />
+      <Banner
+        title="This is an Inverse notification that includes a description."
+        description="Additional information can go here, if necessary."
+        inverse={true}
+      />
+      <Banner
+        title="This is a Standard notification that includes a description."
+        description="Additional information can go here, if necessary."
+        cta="Learn More"
+      />
+      <Banner
+        title="This is an Inverse notification that includes a description."
+        description="Additional information can go here, if necessary."
+        cta="Learn More"
+        inverse={true}
+      />
+      <Banner type="info" title="This is a Standard Info notification." />
+      <Banner
+        type="info"
+        title="This is an Inverse Info notification."
+        inverse={true}
+      />
+      <Banner type="success" title="This is a Standard Success notification." />
+      <Banner
+        type="success"
+        title="This is an Inverse Success notification."
+        inverse={true}
+      />
+      <Banner type="warning" title="This is a Standard Warning notification." />
+      <Banner
+        type="warning"
+        title="This is an Inverse Warning notification."
+        inverse={true}
+      />
+      <Banner type="alert" title="This is a Standard Error notification." />
+      <Banner
+        type="alert"
+        title="This is an Inverse Error notification."
+        inverse={true}
+      />
+      <Banner
+        type="media"
+        icon="home"
+        title="This notification is displaying an optional icon."
+        description="Additional information can go here, if necessary."
+        cta="Learn More"
+      />
+      <Banner
+        type="media"
+        icon="home"
+        title="This notification is displaying an optional icon."
+        description="Additional information can go here, if necessary."
+        cta="Learn More"
+        inverse={true}
+      />
+      <Banner
+        type="media"
+        img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+        title="This notification is displaying an optional image."
+        description="Additional information can go here, if necessary."
+        cta="Learn More"
+      />
+      <Banner
+        type="media"
+        img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+        title="This notification is displaying an optional image."
+        description="Additional information can go here, if necessary."
+        cta="Learn More"
         inverse={true}
       />
     </Grid>
