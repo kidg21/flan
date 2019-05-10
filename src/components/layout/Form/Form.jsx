@@ -57,7 +57,7 @@ const Section = styled.section`
   /* grid-gap: 0.75rem; */
   grid-gap: 1rem;
   flex: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   /* Prototype Content - displays when a Form is empty */
   &:empty {
     &:before {

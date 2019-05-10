@@ -3,69 +3,60 @@ import styled, { css } from "styled-components"
 import PropTypes from "prop-types"
 import { colors, fonts, fontSize, shadows } from "Variables"
 
-const Calendar = styled.input.attrs({ type: "date" })`
+const StyledDateRangePicker = styled.input.attrs({ type: "date" })`
   text-align: center;
-  border-color: ${colors.anchor};
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  padding: 0.5rem 0.75rem;
+
 `
 
-// const StyledDateRangePicker = styled(DateRangePicker)`
-//     .CalendarDay{
-//         background-color: red;
-//     }
-// `;
 
-// .openemr-calendar .ui-datepicker {
-//     width: 191px;
-// }
 
-// .ui-datepicker table {
-//     width: 256px;
-//     table-layout: fixed;
-// }
+const StyledTimePicker = styled.input.attrs({ type: "time" })`
+  text-align: center;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  padding: 0.5rem 0.75rem;
 
-// .openemr-calendar .ui-datepicker table {
-//     width: 191px;
-//     table-layout: fixed;
-// }
 
-// .ui-datepicker-header {
-//     background-color: #3e9aba !important;
-//     background-image: none !important;
-//     border-radius: 0;
-// }
+`
 
-// .openemr-calendar .ui-datepicker-header {
-//     background-color: #e6f7f9 !important;
-//     border-width: 1px;
-//     border-color: #c9f0f5;
-//     border-style: solid;
-// }
 
-// .ui-datepicker-title {
-//     line-height: 35px !important;
-//     margin: 0 10px !important;
-// }
+function Calendar ({id, date, time, datetime, ...props}) {
 
-// .openemr-calendar .ui-datepicker-title {
-//     line-height: 20px !important;
-// }
+  return (
+    <div
+    date={date}
+    time={time}
+    datetime={datetime}
+    >
+    {date ? <StyledDateRangePicker/> : null}
+    {time ? <StyledTimePicker/> : null}
+    {datetime ? 
+    ( <div> <StyledDateRangePicker />
+      <StyledTimePicker/> </div> ) : null}
+      </div>
+  );
+};
 
-// .ui-datepicker-prev span {
-//     display: none !important;
-// }
+Calendar.defaultProps = {
+  id: "",
+  date: false,
+  time: false,
+  datetime: false
+};
 
-// .ui-datepicker-next {
-//     text-align: center;
-// }
+Calendar.propTypes = {
+  id: PropTypes.string,
+  date: PropTypes.bool,
+  time: PropTypes.bool,
+  datetime: PropTypes.bool
+};
 
-// .ui-datepicker-next span {
-//     display: none !important;
-// }
 
-// .ui-datepicker-prev {
-//     background-color: transparent
-
-function Date() {
-  return <Calendar />
-}
-export default Date
+export default Calendar

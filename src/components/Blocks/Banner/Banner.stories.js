@@ -1,8 +1,8 @@
-import React from "react"
-import { storiesOf } from "@storybook/react"
-import { withInfo } from "@storybook/addon-info"
-import { Padding } from "helpers/Display"
-import Grid from "helpers/Grid"
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import { withInfo } from "@storybook/addon-info";
+import { Padding } from "helpers/Display";
+import Grid from "helpers/Grid";
 import {
   withKnobs,
   text,
@@ -11,9 +11,9 @@ import {
   select,
   number,
   optionsKnob as options
-} from "@storybook/addon-knobs"
-import Banner from "blocks/Banner"
-import BannerNotes from "./Banner.md"
+} from "@storybook/addon-knobs";
+import Banner from "blocks/Banner";
+import BannerNotes from "./Banner.md";
 
 storiesOf("Blocks|Banner", module)
   .addParameters({
@@ -112,4 +112,4 @@ storiesOf("Blocks|Banner", module)
         inverse={true}
       />
     </Grid>
-  ))
+  ));

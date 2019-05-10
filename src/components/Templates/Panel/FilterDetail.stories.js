@@ -8,14 +8,17 @@ import Form, {
   Section,
   CenteredSection,
   SectionName,
-  InputGroup
+  InputGroup,
+  InputLabel
 } from "layout/Form";
 import Checkbox from "../../atoms/Checkbox/Checkbox";
 import Input from "atoms/Input";
 import Radio from "atoms/Radio";
 import Slider from "atoms/Slider";
+import RangeSlider from "blocks/RangeSlider";
 import Button from "atoms/Button";
 import Label from "atoms/Label";
+import SelectMenu from "atoms/SelectMenu";
 
 const radio_1 = {
   id: "radio-1",
@@ -118,6 +121,78 @@ const cbox_8 = {
   label: "No"
 };
 
+const cbox_9 = {
+  id: "cbox_9",
+
+  label: "Auto Sales, Services"
+};
+
+const cbox_10 = {
+  id: "cbox_10",
+
+  label: "Cemeteries, Mortuaries"
+};
+
+const cbox_11 = {
+  id: "cbox_11",
+
+  label: "Restaurant or Bar"
+};
+
+const cbox_12 = {
+  id: "cbox_12",
+
+  label: "Hospitals"
+};
+
+const cbox_13 = {
+  id: "cbox_13",
+
+  label: "Mobile Home Park"
+};
+
+const cbox_14 = {
+  id: "cbox_14",
+
+  label: "Parking"
+};
+
+const cbox_15 = {
+  id: "cbox_15",
+
+  label: "Multi-Family"
+};
+
+const cbox_16 = {
+  id: "cbox_16",
+
+  label: "Mobile Homes"
+};
+
+const cbox_17 = {
+  id: "cbox_17",
+
+  label: "Multi-Family Dwelling"
+};
+
+const cbox_18 = {
+  id: "cbox_18",
+
+  label: "Condominium"
+};
+
+const cbox_19 = {
+  id: "cbox_19",
+
+  label: "Single-Family"
+};
+
+const cbox_20 = {
+  id: "cbox_20",
+
+  label: "Miscellaneous Residential"
+};
+
 storiesOf("Templates|Panel", module)
   .add("Filter Details Panel", () =>
     React.createElement(() => {
@@ -136,7 +211,7 @@ storiesOf("Templates|Panel", module)
             <Form>
               <Label right grey content="Reset" />
               <Section>
-                <SectionName>Last Sale Date</SectionName>
+                <InputLabel inputLabel="Last Sale Date" />
                 <InputGroup>
                   <Radio
                     {...radio_1}
@@ -158,11 +233,9 @@ storiesOf("Templates|Panel", module)
                 </InputGroup>
               </Section>
               <Section>
-                <SectionName>Last Sale Price</SectionName>
-                <Slider />
+                <RangeSlider label="Last Sale Price" />
               </Section>
               <Section>
-                <SectionName>Seller Information</SectionName>
                 <Input
                   inputLabel="Seller Name"
                   placeholder="i.e. Mary Williams"
@@ -170,7 +243,7 @@ storiesOf("Templates|Panel", module)
                 />
               </Section>
               <Section>
-                <SectionName>Last Sale Deed Type</SectionName>
+                <InputLabel inputLabel="Last Sale Deed Type" />
                 <InputGroup>
                   <Checkbox {...cbox_4} />
                   <Checkbox {...cbox_5} />
@@ -206,26 +279,203 @@ storiesOf("Templates|Panel", module)
             <Form>
               <Label right grey content="Reset" />
               <Section>
-                <SectionName>Year Built</SectionName>
-                <Slider />
-                <SectionName>Number of Units</SectionName>
-                <Slider />
-                <SectionName>Lot Size (Acre)</SectionName>
-                <Slider />
-                <SectionName>Lot Size (ft2)</SectionName>
-                <Slider />
-                <SectionName>Zoning (Assessor)</SectionName>
+                <RangeSlider label="Year Built" />
+                <RangeSlider label="Number of Units" />
+                <RangeSlider label="Lot Size (Acre)" />
+                <RangeSlider label="Lot Size (ft2)" />
+              </Section>
+              <Section>
                 <Input
-                  inputLabel="Assessor"
+                  inputLabel="Zoning (Assessor)"
                   placeholder="i.e. Mary Williams"
                   type="text"
                 />
               </Section>
               <Section>
-                <SectionName>In Opportunity Zone</SectionName>
+                <InputLabel inputLabel="In Opportunity Zone" />
                 <InputGroup>
                   <Checkbox {...cbox_7} />
                   <Checkbox {...cbox_8} />
+                </InputGroup>
+              </Section>
+            </Form>
+          </PanelSection>
+          <PanelSection>
+            <CenteredSection>
+              <Button label="Apply" isRound={true} isExtraSmall={true} />
+            </CenteredSection>
+          </PanelSection>
+        </Panel>
+      );
+    })
+  )
+
+  .add("Property- Aggregate", () =>
+    React.createElement(() => {
+      const [checked, setChecked] = useState({ selectedValue: "" });
+
+      const handleCheckboxChange = event => {
+        setChecked({ selectedValue: event.target.value });
+      };
+
+      return (
+        <Panel>
+          <PanelSection>
+            <Header title="Aggregate Property" threeParts={true} />
+          </PanelSection>
+          <PanelSection body>
+            <Form>
+              <Label right grey content="Reset" />
+              <Section>
+                <RangeSlider label="Aggregate Acreage" />
+                <RangeSlider label="Aggregate Lot Count" />
+                <RangeSlider label="Aggregated Lot Width Median" />
+              </Section>
+              <Section>
+                <Input
+                  inputLabel="Zoning (Assessor)"
+                  placeholder="i.e. Mary Williams"
+                  type="text"
+                />
+              </Section>
+              <Section>
+                <InputLabel inputLabel="In Opportunity Zone" />
+                <InputGroup>
+                  <Checkbox {...cbox_7} />
+                  <Checkbox {...cbox_8} />
+                </InputGroup>
+              </Section>
+            </Form>
+          </PanelSection>
+          <PanelSection>
+            <CenteredSection>
+              <Button label="Apply" isRound={true} isExtraSmall={true} />
+            </CenteredSection>
+          </PanelSection>
+        </Panel>
+      );
+    })
+  )
+
+  .add("Property- Value", () =>
+    React.createElement(() => {
+      const [checked, setChecked] = useState({ selectedValue: "" });
+
+      const handleCheckboxChange = event => {
+        setChecked({ selectedValue: event.target.value });
+      };
+
+      return (
+        <Panel>
+          <PanelSection>
+            <Header title="Property Value" threeParts={true} />
+          </PanelSection>
+          <PanelSection body>
+            <Form>
+              <Label right grey content="Reset" />
+              <Section>
+                <RangeSlider label="Assessed Value" />
+                <RangeSlider label="Improvement Percentage" />
+                <RangeSlider label="Assessed Land Value" />
+                <RangeSlider label="Assessed Improvement Value" />
+              </Section>
+            </Form>
+          </PanelSection>
+          <PanelSection>
+            <CenteredSection>
+              <Button label="Apply" isRound={true} isExtraSmall={true} />
+            </CenteredSection>
+          </PanelSection>
+        </Panel>
+      );
+    })
+  )
+
+  .add("Property- Location", () =>
+    React.createElement(() => {
+      const [checked, setChecked] = useState({ selectedValue: "" });
+
+      const handleCheckboxChange = event => {
+        setChecked({ selectedValue: event.target.value });
+      };
+
+      return (
+        <Panel>
+          <PanelSection>
+            <Header title="Location" threeParts={true} />
+          </PanelSection>
+          <PanelSection body>
+            <Form>
+              <Label right grey content="Reset" />
+              <Section>
+                <Input
+                  inputLabel="Street Name"
+                  placeholder="i.e. Main St."
+                  type="text"
+                />
+                <Input
+                  inputLabel="City"
+                  placeholder="i.e. New York City"
+                  type="text"
+                />
+                <Input
+                  inputLabel="State"
+                  placeholder="i.e. New York"
+                  type="text"
+                />
+                <Input inputLabel="Zip" placeholder="i.e. 92614" type="text" />
+                <Input
+                  inputLabel="Country"
+                  placeholder="i.e. United States"
+                  type="text"
+                />
+              </Section>
+            </Form>
+          </PanelSection>
+          <PanelSection>
+            <CenteredSection>
+              <Button label="Apply" isRound={true} isExtraSmall={true} />
+            </CenteredSection>
+          </PanelSection>
+        </Panel>
+      );
+    })
+  )
+
+  .add("Property- Land Use", () =>
+    React.createElement(() => {
+      const [checked, setChecked] = useState({ selectedValue: "" });
+
+      const handleCheckboxChange = event => {
+        setChecked({ selectedValue: event.target.value });
+      };
+
+      return (
+        <Panel>
+          <PanelSection>
+            <Header title="Land Use" threeParts={true} />
+          </PanelSection>
+          <PanelSection body>
+            <Form>
+              <Label right grey content="Reset" />
+              <Section>
+                <SectionName>Commercial</SectionName>
+                <InputGroup col_2>
+                  <Checkbox {...cbox_9} />
+                  <Checkbox {...cbox_10} />
+                  <Checkbox {...cbox_11} />
+                  <Checkbox {...cbox_12} />
+                  <Checkbox {...cbox_13} />
+                  <Checkbox {...cbox_14} />
+                </InputGroup>
+                <SectionName>Residential</SectionName>
+                <InputGroup col_2>
+                  <Checkbox {...cbox_15} />
+                  <Checkbox {...cbox_16} />
+                  <Checkbox {...cbox_17} />
+                  <Checkbox {...cbox_18} />
+                  <Checkbox {...cbox_19} />
+                  <Checkbox {...cbox_20} />
                 </InputGroup>
               </Section>
             </Form>
