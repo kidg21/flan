@@ -1,8 +1,8 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
-import { Padding } from "helpers/Display";
-import Grid from "helpers/Grid";
+import React from "react"
+import { storiesOf } from "@storybook/react"
+import { withInfo } from "@storybook/addon-info"
+import { Padding } from "helpers/Display"
+import Grid from "helpers/Grid"
 import {
   withKnobs,
   text,
@@ -11,9 +11,9 @@ import {
   select,
   number,
   optionsKnob as options
-} from "@storybook/addon-knobs";
-import Banner from "blocks/Banner";
-import BannerNotes from "./Banner.md";
+} from "@storybook/addon-knobs"
+import Banner from "blocks/Banner"
+import BannerNotes from "./Banner.md"
 
 storiesOf("Blocks|Banner", module)
   .addParameters({
@@ -37,7 +37,7 @@ storiesOf("Blocks|Banner", module)
       <Banner
         title="This is a notification that includes a Call-to-Action link."
         description="Additional information can go here, if necessary."
-        cta="Learn More"
+        link="Learn More"
       />
     </Grid>
   ))
@@ -55,7 +55,7 @@ storiesOf("Blocks|Banner", module)
       <Banner
         title="This is a notification that includes a Call-to-Action link."
         description="Additional information can go here, if necessary."
-        cta="Learn More"
+        link="Learn More"
         inverse={true}
       />
     </Grid>
@@ -107,14 +107,14 @@ storiesOf("Blocks|Banner", module)
         icon="home"
         title="This notification is displaying an optional icon."
         description="Additional information can go here, if necessary."
-        cta="Learn More"
+        link="Learn More"
       />
       <Banner
         type="media"
         icon="home"
         title="This notification is displaying an optional icon."
         description="Additional information can go here, if necessary."
-        cta="Learn More"
+        link="Learn More"
         inverse={true}
       />
     </Grid>
@@ -126,14 +126,14 @@ storiesOf("Blocks|Banner", module)
         img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
         title="This notification is displaying an optional image."
         description="Additional information can go here, if necessary."
-        cta="Learn More"
+        link="Learn More"
       />
       <Banner
         type="media"
         img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
         title="This notification is displaying an optional image."
         description="Additional information can go here, if necessary."
-        cta="Learn More"
+        link="Learn More"
         inverse={true}
       />
     </Grid>
@@ -157,12 +157,12 @@ storiesOf("Blocks|Banner", module)
       <Banner
         title="This is a Standard notification that includes a description."
         description="Additional information can go here, if necessary."
-        cta="Learn More"
+        link="Learn More"
       />
       <Banner
         title="This is an Inverse notification that includes a description."
         description="Additional information can go here, if necessary."
-        cta="Learn More"
+        link="Learn More"
         inverse={true}
       />
       <Banner type="info" title="This is a Standard Info notification." />
@@ -194,14 +194,14 @@ storiesOf("Blocks|Banner", module)
         icon="home"
         title="This notification is displaying an optional icon."
         description="Additional information can go here, if necessary."
-        cta="Learn More"
+        link="Learn More"
       />
       <Banner
         type="media"
         icon="home"
         title="This notification is displaying an optional icon."
         description="Additional information can go here, if necessary."
-        cta="Learn More"
+        link="Learn More"
         inverse={true}
       />
       <Banner
@@ -209,15 +209,15 @@ storiesOf("Blocks|Banner", module)
         img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
         title="This notification is displaying an optional image."
         description="Additional information can go here, if necessary."
-        cta="Learn More"
+        link="Learn More"
       />
       <Banner
         type="media"
         img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
         title="This notification is displaying an optional image."
         description="Additional information can go here, if necessary."
-        cta="Learn More"
+        link="Learn More"
         inverse={true}
       />
     </Grid>
-  ));
+  ))

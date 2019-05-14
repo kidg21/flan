@@ -4,7 +4,7 @@ import styled, { css } from "styled-components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { colors, shadows } from "Variables"
 import Icon from "atoms/Icon"
-import Badge from "atoms/Badge"
+// import Badge from "atoms/Badge"
 
 const StyledBanner = styled.div`
   display: flex;
@@ -25,8 +25,16 @@ const StyledBanner = styled.div`
   width: 100%;
 `
 
+const StatusBadge = styled.div`
+  background-color: ${props => props.badgeBG || ""};
+  color: ${props => (props.badgeBG ? colors.white : "")};
+  padding: ${props => (props.badgeBG ? ".5em" : "")};
+  margin-right: 1.25em;
+  border-radius: 100%;
+  cursor: default;
+`
+
 const BannerIcon = styled(FontAwesomeIcon)`
-  margin-right: 0.5em;
   cursor: default;
 `
 
@@ -38,11 +46,6 @@ const BannerImage = styled.img`
   border-color: ${props => (props.inverse ? colors.grey_60 : colors.grey_40)};
 `
 
-const StatusBadge = styled(Badge)`
-  margin-right: 1.25em;
-  cursor: default;
-`
-
 const Message = styled.section`
   display: grid;
   grid-gap: 0.25rem;
@@ -51,7 +54,7 @@ const Message = styled.section`
   padding-right: 0.5em;
 `
 
-const Notification = styled.h4`
+const Title = styled.h4`
   margin: 0;
 `
 
@@ -59,7 +62,7 @@ const Description = styled.h5`
   margin: 0;
 `
 
-const NotificationLink = styled.h4`
+const Link = styled.h4`
   color: inherit;
   width: max-content;
   margin: 0;
@@ -86,7 +89,7 @@ function Banner({
   type,
   icon,
   img,
-  cta,
+  link,
   info,
   success,
   warning,
@@ -100,30 +103,53 @@ function Banner({
 }) {
   let bannerType
   let color
+  let badgeBG
   switch (type) {
     case "media":
       bannerType = icon ? (
-        <BannerIcon icon={icon} size="2x" />
+        <StatusBadge>
+          <BannerIcon icon={icon} size="2x" fixedWidth />
+        </StatusBadge>
       ) : img ? (
         <BannerImage src={img} inverse={inverse} />
       ) : null
       color = colors.grey_40
       break
     case "info":
-      bannerType = <StatusBadge icon="info" anchor />
       color = colors.anchor
+      badgeBG = color
+      bannerType = (
+        <StatusBadge badgeBG={badgeBG}>
+          <BannerIcon icon="info" fixedWidth anchor />
+        </StatusBadge>
+      )
       break
     case "success":
-      bannerType = <StatusBadge icon="check" success />
       color = colors.success
+      badgeBG = color
+      bannerType = (
+        <StatusBadge badgeBG={badgeBG}>
+          <BannerIcon icon="check" fixedWidth success />
+        </StatusBadge>
+      )
       break
     case "warning":
-      bannerType = <StatusBadge icon="exclamation" warning />
       color = colors.warning
+      badgeBG = color
+      bannerType = (
+        <StatusBadge badgeBG={badgeBG}>
+          <BannerIcon icon="exclamation" fixedWidth warning />
+        </StatusBadge>
+      )
       break
     case "alert":
-      bannerType = <StatusBadge icon="times" alert />
       color = colors.alert
+      badgeBG = color
+      bannerType = (
+        <StatusBadge badgeBG={badgeBG}>
+          <BannerIcon icon="times" fixedWidth alert />
+        </StatusBadge>
+      )
       break
     default:
       color = colors.grey_40
@@ -134,7 +160,7 @@ function Banner({
       type={type}
       title={title}
       description={description}
-      cta={cta}
+      link={link}
       icon={icon}
       img={img}
       borderColor={color}
@@ -143,11 +169,9 @@ function Banner({
     >
       {bannerType}
       <Message>
-        <Notification>{title}</Notification>
+        <Title>{title}</Title>
         {description ? <Description>{description}</Description> : null}
-        {cta ? (
-          <NotificationLink onClick={onClick}>{cta}</NotificationLink>
-        ) : null}
+        {link ? <Link onClick={onClick}>{link}</Link> : null}
       </Message>
       <Close onClick={onClose}>
         <Icon icon="times" />
@@ -157,7 +181,7 @@ function Banner({
 }
 
 Banner.defaultProps = {
-  title: "Notification Alert"
+  title: "Title Alert"
 }
 
 Banner.propTypes = {
@@ -165,7 +189,7 @@ Banner.propTypes = {
   type: PropTypes.oneOf(["media", "info", "success", "warning", "alert"]),
   title: PropTypes.string,
   description: PropTypes.string,
-  cta: PropTypes.string,
+  link: PropTypes.string,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   img: PropTypes.string,
   inverse: PropTypes.bool,
