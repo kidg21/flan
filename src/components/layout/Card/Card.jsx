@@ -11,17 +11,26 @@ const CardWrapper = styled.div`
   width: 100%;
   background: ${colors.white};
   filter: ${shadows.cardShadow};
+  /* box-shadow: ${shadows.cardShadow}; */
+  /* Square off rounded edges of any direct children of Cards */
+  > * {
+    border-radius: 0;
+  }
   /* Prototype Content - displays when a Card is empty */
   &:empty {
     &:before {
       ${PlaceholderText}
-      content: "{ Card } \00000A 'Container for content modules'";
+      content: "Card";
       padding: 2rem;
     }
   }
 `
 
+// const CardList = styled.ul`
 const CardList = styled(Grid)`
+  /* display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); */
   padding: 1rem;
   ${CardWrapper} {
     border-radius: 5px;
@@ -39,8 +48,4 @@ function Card({ ...props }) {
   return <CardWrapper>{props.children}</CardWrapper>
 }
 
-function DaCard({ ...props }) {
-  return <Card>{props.children}</Card>
-}
-
-export { Card as default, CardList, DaCard }
+export { Card as default, CardList }

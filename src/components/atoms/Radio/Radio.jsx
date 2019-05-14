@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import styled, { css } from "styled-components"
 import PropTypes from "prop-types"
 import { colors, shadows } from "Variables"
@@ -8,19 +8,31 @@ const RadioContainer = styled.div`
   grid-template-columns: auto 1fr;
   grid-gap: 0.5rem;
   align-items: inherit;
+  color: ${props => (props.error ? colors.alert : "")};
+  &[disabled],
+  &[readonly] {
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
+    color: ${colors.grey_40};
+  }
 `
 
 const RadioInput = styled.input.attrs({ type: "radio" })`
-  background-color: ${colors.white};
-  border: 1px solid ${colors.grey_40};
-  width: 1.2rem;
-  height: 1.2rem;
+  border: 1px solid;
+  border-color: ${props => (props.error ? colors.alert_light : colors.grey_40)};
+  background-color: ${props =>
+    props.disabled ? colors.grey_20 : colors.white};
+  width: 1rem;
+  height: 1rem;
   border-radius: 100%;
   cursor: pointer;
   -webkit-appearance: none;
   &:checked {
-    background-color: ${colors.success};
-    box-shadow: ${shadows.radioShadow};
+    background-color: ${props =>
+      props.error ? colors.alert_tint : colors.success_tint};
+    border-color: ${props =>
+      props.error ? colors.alert_light : colors.success};
   }
   &:focus {
     outline: none;
@@ -29,103 +41,49 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
 
 const RadioLabel = styled.label`
   user-select: none;
-  font-size: smaller;
-  font-weight: 700;
-  letter-spacing: 1px;
-  line-height: 1.4;
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.2;
   cursor: pointer;
 `
 
-function Radio({ ...props }) {
-  const [checked, setChecked] = useState({ selectedValue: "" })
-  const handleCheckboxChange = event => {
-    setChecked({ selectedValue: event.target.value })
-  }
+function Radio({ id, name, label, value, error, disabled, ...props }) {
   return (
-    <RadioContainer>
+    <RadioContainer
+      disabled={disabled} // input attribute>
+      error={error} // input attribute>
+      {...props}
+    >
       <RadioInput
-        id={props.id}
-        name={props.name}
-        value={props.value}
-        checked={checked.selectedValue === props.value}
-        onChange={handleCheckboxChange}
+        id={id}
+        name={name}
+        value={value}
+        disabled={disabled}
+        error={error} // input attribute>
         {...props}
       />
-      <RadioLabel for={props.id}>{props.label}</RadioLabel>
+      <RadioLabel htmlFor={id}>{label}</RadioLabel>
     </RadioContainer>
-  )
-}
-
-const StyledRadioContainer = styled.div`
-  display: inline-block;
-  vertical-align: middle;
-`
-
-const HiddenRadio = styled.input.attrs({ type: "radio" })`
-  border: 0;
-  clip: rect(0 0 0 0);
-  /* clippath: inset(50%); */
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-`
-
-const StyledRadioInput = styled.div`
-  display: inline-block;
-  width: 14px;
-  border: 1px solid darkgray;
-  height: 14px;
-  background: ${props => (props.checked ? "dodgerblue" : "white")};
-  border-radius: 30px;
-  transition: all 150ms;
-  cursor: pointer;
-`
-
-const StyledRadio = ({ className, checked, ...props }) => (
-  <StyledRadioContainer className={className}>
-    <HiddenRadio checked={checked} {...props} />
-    <StyledRadioInput checked={checked} />
-  </StyledRadioContainer>
-)
-
-const CustomRadio = props => {
-  const [checked, setChecked] = useState(false)
-  const handleCheckboxChange = event => {
-    setChecked({ selectedValue: event.target.value })
-  }
-  return (
-    <React.Fragment>
-      <label>
-        <StyledRadio
-          checked={checked.selectedValue === props.value}
-          onChange={handleCheckboxChange}
-          value={props.value}
-        />
-        <span style={{ marginLeft: 8, fontSize: 14, fontFamily: "arial" }}>
-          Label Text
-        </span>
-      </label>
-    </React.Fragment>
   )
 }
 
 Radio.defaultProps = {
   id: "r1",
   label: "Radio Label",
-  name: "radio"
+  name: "radio",
+  value: "1"
 }
 
 Radio.propTypes = {
   /** This is the Left nav command. */
   id: PropTypes.string,
+
   /** This is nav Title.  It is required. */
   label: PropTypes.string.isRequired,
   /** This is the Right nav command. */
-  name: PropTypes.string.isRequired
+  name: PropTypes.string.isRequired,
+  value: PropTypes.string
 }
 
-export { Radio as default, CustomRadio }
+export { Radio as default }

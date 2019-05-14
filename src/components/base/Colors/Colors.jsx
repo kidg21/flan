@@ -3,6 +3,7 @@
 // Import dependencies
 import React from "react"
 import styled from "styled-components"
+import PropTypes from "prop-types";
 
 // Import colors and sizes variables
 import { colors, shadows } from "../Variables/Variables"
@@ -155,6 +156,7 @@ const Colors = () => {
           <small>Const</small>
           <h6>colors.grey_60</h6>
         </ColorBlockCode>
+        
         <ColorBlockCode>
           <small>HSL</small>
           <h6>34, 5%, 58%</h6>

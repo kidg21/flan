@@ -1,1 +1,1 @@
-export { default, CardList, DaCard } from "./Card.jsx"
+export { default, CardList } from "./Card.jsx"

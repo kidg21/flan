@@ -1,9 +1,9 @@
-import React, { createContext, useState, useEffect, useContext } from "react";
-import styled, { css } from "styled-components";
-import PropTypes from "prop-types";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { colors, shadows } from "Variables";
-import Command from "atoms/Command";
+import React, { createContext, useState, useEffect, useContext } from "react"
+import styled, { css } from "styled-components"
+import PropTypes from "prop-types"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { colors, shadows } from "Variables"
+import Command from "atoms/Command"
 
 const OuterBlock = styled.div`
   /* Max Characters: Title-18, Command-8, Icons-3 */
@@ -83,7 +83,7 @@ const OuterBlock = styled.div`
     css`
       background-color: ${colors.alert};
     `}
-`;
+`
 
 const LeftBlock = styled.div`
   grid-area: left;
@@ -123,7 +123,7 @@ const LeftBlock = styled.div`
   > a:not(:first-of-type) > i {
     padding-left: 1.5rem;
   }
-`;
+`
 const CenterBlock = styled.div`
   grid-area: center;
   text-align: center;
@@ -159,7 +159,7 @@ const CenterBlock = styled.div`
   > a:not(:first-of-type) > i {
     padding-left: 1.5rem;
   }
-`;
+`
 const RightBlock = styled.div`
   grid-area: right;
   text-align: right;
@@ -197,42 +197,43 @@ const RightBlock = styled.div`
   > a:not(:first-of-type) > i {
     padding-left: 1.5rem;
   }
-`;
+`
 
 // Context Hooks
-const title = createContext("Default Title");
-const command_left = createContext("Default Left Command");
-const command_right = createContext("Default Right Command");
+const title = createContext("Default Title")
+const command_left = createContext("Default Left Command")
+const command_right = createContext("Default Right Command")
 
 // Left Command
 const iconPropsLeft = {
   nameProp: ["fas", "chevron-left"]
-};
+}
 const labelPropLeft = {
   contentProp: "Left"
-};
+}
 const commandPropsLeft = {
   iconProps: iconPropsLeft,
   labelProp: labelPropLeft
-};
+}
 
 // Right Command
 const iconPropsRight = {
   // nameProp: ["fas", "chevron-right"]
   nameProp: "chevron-right"
-};
+}
 const labelPropRight = {
   contentProp: "Right"
-};
+}
 const commandPropsRight = {
   iconProps: iconPropsRight,
-  labelProp: labelPropRight
-};
+  labelProp: labelPropRight,
+  iconRight: true
+}
 
-function NavBlock({ flip, ...props }) {
-  const NavTitle = useContext(title);
-  const LeftCommand = useContext(command_left);
-  const RightCommand = useContext(command_right);
+function NavBlock({ ...props }) {
+  const NavTitle = useContext(title)
+  const LeftCommand = useContext(command_left)
+  const RightCommand = useContext(command_right)
   // const [title, setTitle] = useState("Title Goes Here");
   // const [left, setLeft] = useState(props.left);
   // const [title, setTitle] = useState(props.title);
@@ -243,13 +244,13 @@ function NavBlock({ flip, ...props }) {
   // });
   const clickLeft = () => {
     // setTitle(" Clicked Left ");
-  };
+  }
   const clickTitle = () => {
     // setTitle(" Title Goes Here YAY!!!!!");
-  };
+  }
   const clickRight = () => {
     // setTitle(" Clicked Right ");
-  };
+  }
   return (
     // <React.Fragment>
     <OuterBlock dark>
@@ -300,14 +301,14 @@ function NavBlock({ flip, ...props }) {
       </RightBlock>
     </OuterBlock>
     // </React.Fragment>
-  );
+  )
 }
 
 NavBlock.defaultProps = {
   left: "Left Command",
   title: "This Is The Default Title",
   right: "Right Command"
-};
+}
 
 NavBlock.propTypes = {
   /** This is the Left nav command. */
@@ -316,9 +317,9 @@ NavBlock.propTypes = {
   title: PropTypes.string.isRequired,
   /** This is the Right nav command. */
   right: PropTypes.string
-};
+}
 
-export default NavBlock;
+export default NavBlock
 // export { value, NavTitle };
-export { title, command_left, command_right };
+export { title, command_left, command_right }
 // export { NavTitle, LeftCommand, RightCommand };

@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import styled from "styled-components"
+import PropTypes from "prop-types";
 
 const SwitchContainer = styled.div`
   position: relative;
@@ -32,17 +33,17 @@ const Circle = styled.div`
   border-radius: 40px;
   width: 15px;
   line-height: normal;
-  height: 15px;
+  height: 14px;
   transition: transform 300ms ease-in-out;
   transform: ${props =>
-    props.checked ? "translateX(14px)" : "translateX(0px)"};
+    props.checked ? "translateX(15px)" : "translateX(-1px)"};
 `
 
 const StyledSwitch = styled.div`
   width: 30px;
   display: block;
-  height: 17px;
-  border-radius: 20px;
+  height: 16px;
+  border-radius: 23px;
   border: ${props =>
     props.checked ? "1px solid #94d850" : "1px solid darkgray"};
   background-image: ${props =>
@@ -51,33 +52,9 @@ const StyledSwitch = styled.div`
   cursor: pointer;
 `
 
-// const Fill = styled.div`
-//   display:inline-block;
-//   position:relative;
-//   padding:20px;
-//   cursor:pointer;
-//   background:#e1e1e1;
-//   color:white;
-//   z-index:0;
 
-// &:before {
-//   content: "";
-//   position: absolute;
-//   z-index:-1;
-//   top: 0;  left: 0;  right: 0;  bottom: 0;
-//   background: #2098d1;
-//   transform: scaleX(0);
-//   transform-origin: 0 50%;
-//   transition: transform .3s ease-out;
-// }
-
-// &:hover:before{
-//   transform: scaleX(1);
-// }
-// `
-
-const Toggle = ({ className, checked, ...props }) => (
-  <SwitchContainer className={className}>
+const Toggle = ({ checked, ...props }) => (
+  <SwitchContainer>
     <HiddenSwitch checked={checked} {...props} />
     <StyledSwitch checked={checked}>
       <Circle checked={checked} {...props} />
@@ -85,17 +62,21 @@ const Toggle = ({ className, checked, ...props }) => (
   </SwitchContainer>
 )
 
-const Switch = () => {
-  const [checked, setChecked] = useState(false)
-
-  const handleCheckboxChange = event => {
-    setChecked(event.target.checked)
-  }
+const Switch = ({checked, id, ...props}) => {
   return (
     <label>
-      <Toggle checked={checked} onChange={handleCheckboxChange} />
+      <Toggle checked={checked} id={id} {...props} />
     </label>
-  )
+  );
 }
 
-export default Switch
+Switch.defaultProps = {
+  id: "default",
+};
+
+Switch.propTypes = {
+  id: PropTypes.string,
+};
+
+
+export { Switch as default };

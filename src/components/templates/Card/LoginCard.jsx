@@ -63,7 +63,7 @@ const CardInput = styled.input`
   transition: border-bottom-color .25s ease-in;
 
   &:focus {
-    border-bottom-color: #e5195f;
+    border-bottom-color: lightblue;
     outline: 0;
   }
 `
@@ -208,39 +208,9 @@ export default class Card extends React.Component {
               small
             />
           </CardFieldset>
-          
-          <CardFieldset>
-            <CardOptionsNote>Or sign up with</CardOptionsNote>
-            
-            <CardOptions>
-              <CardOptionsItem>
-                <CardIcon
-                  onClick={this.revealPassword}
-                  className='fa fa-google-plus'
-                  big
-                />
-              </CardOptionsItem>
 
-              <CardOptionsItem>
-                <CardIcon
-                  onClick={this.revealPassword}
-                  className='fa fa-twitter'
-                  big
-                />
-              </CardOptionsItem>
-
-              <CardOptionsItem>            
-                <CardIcon
-                  onClick={this.revealPassword}
-                  className='fa fa-facebook'
-                  big
-                />
-              </CardOptionsItem>
-            </CardOptions>
-          </CardFieldset>
-          
-          <CardFieldset>
-            <Button>Sign Up</Button>
+          <CardFieldset style={{ textAlign: "center"}}>
+            <Button  isRound label="Sign Up"/>
           </CardFieldset>
           
           <CardFieldset>

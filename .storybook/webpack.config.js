@@ -6,26 +6,26 @@
 // When you add this file, we won't add the default configurations which is similar
 // to "React Create App". This only has babel loader to load JavaScript.
 
-const path = require("path");
+const path = require("path")
 
-module.exports = (baseConfig, env, defaultConfig) => {
+module.exports = ({ config, mode }) => {
   // Extend defaultConfig as you need.
-  defaultConfig.module.rules.push({
+  config.module.rules.push({
     test: /\.(js|jsx)$/,
     include: path.resolve(__dirname, "../src/components"),
     loaders: [
       {
-        loader: require.resolve('@storybook/addon-storysource/loader'),
+        loader: require.resolve("@storybook/addon-storysource/loader"),
         options: {
           prettierConfig: {
             printWidth: 80,
-            singleQuote: true,
+            singleQuote: true
           }
         }
       }
-    ],
-  });
-  defaultConfig.resolve.extensions.push(".js", ".jsx");
+    ]
+  })
+  config.resolve.extensions.push(".js", ".jsx")
 
-  return defaultConfig;
-};
+  return config
+}

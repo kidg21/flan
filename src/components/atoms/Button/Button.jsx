@@ -1,56 +1,123 @@
 import React from "react"
-import styled, { css } from "styled-components"
+import styled, { css, keyframes } from "styled-components"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { colors, shadows } from "Variables"
 import PropTypes from "prop-types"
 
 const StyledButton = styled.button`
-  color: ${props => (props.secondary ? colors.success : colors.anchor)};
-  background: ${colors.white};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: ${props =>
+    props.isSolid
+      ? colors.white
+      : props.isSecondary
+      ? colors.success
+      : colors.anchor};
+  background-color: ${props =>
+    props.isSolid && !props.isSecondary
+      ? colors.anchor
+      : props.isSolid && props.isSecondary
+      ? colors.success
+      : colors.white};
   border: 1px solid;
-  border-color: ${props => (props.secondary ? colors.success : colors.anchor)};
-  border-radius: 2rem;
-  padding: 0.5rem 1rem;
-  font-weight: bold;
+  border-color: ${props =>
+    props.isSecondary ? colors.success : colors.anchor};
+  border-radius: ${props => (props.isRound ? "2rem" : "4px")};
+  font-weight: 600;
+  width: auto;
+  padding: 0.65rem 1rem;
   letter-spacing: 1px;
   cursor: pointer;
-  box-shadow: ${props => (props.floating ? shadows.dropShadow : "")};
-  transition: opacity 0.15s;
+  filter: ${props => (props.isFloating ? shadows.cardShadow : "")};
+  transition: all 0.15s ease;
   &:hover {
-    background-color: ${props =>
-      props.secondary ? colors.success : colors.anchor};
     color: ${colors.white};
+    background-color: ${props =>
+      props.isSecondary ? colors.success_dark : colors.anchor_dark};
+    border-color: ${props =>
+      props.isSecondary ? colors.success_dark : colors.anchor_dark};
   }
   &:active {
+    color: ${colors.white};
     background-color: ${props =>
-      props.secondary ? colors.success : colors.anchor};
+      props.isSecondary ? colors.success_light : colors.anchor_light};
+    border-color: ${props =>
+      props.isSecondary ? colors.success_light : colors.anchor_light};
+  }
+  &[disabled] {
+    color: ${colors.grey_40};
+    border-color: ${colors.grey_40};
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
   }
 `
 
-function Button({ label, secondary, disabled, floating, onClick }) {
+const ButtonLabel = styled.label`
+  line-height: normal;
+  font-size: inherit;
+  user-select: none;
+  cursor: pointer;
+`
+
+const ButtonIcon = styled(FontAwesomeIcon)`
+  font-size: 1.2em;
+  margin-bottom: 0.35rem;
+`
+
+function Button({
+  id,
+  name,
+  type,
+  buttonLabel,
+  icon,
+  isSolid,
+  isSecondary,
+  isRound,
+  isFloating,
+  isDisabled,
+  onClick,
+  ...props
+}) {
   return (
     <StyledButton
-      type="button"
-      secondary={secondary}
-      disabled={disabled}
-      floating={floating}
+      id={id}
+      name={id}
+      type={type}
+      isSolid={isSolid}
+      isSecondary={isSecondary}
+      isRound={isRound}
+      isFloating={isFloating}
+      disabled={isDisabled}
       onClick={onClick}
     >
-      {label}
+      {icon ? <ButtonIcon icon={icon} /> : null}
+      <ButtonLabel>{buttonLabel}</ButtonLabel>
     </StyledButton>
   )
 }
 
-const propTypes = {
-  label: PropTypes.string,
-  disabled: PropTypes.bool,
+Button.propTypes = {
+  id: PropTypes.string,
+  buttonLabel: PropTypes.string,
+  name: PropTypes.string,
+  /** button, file, reset, or submit. */
+  type: PropTypes.string,
+  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  isSolid: PropTypes.bool,
+  isSecondary: PropTypes.bool,
+  isRound: PropTypes.bool,
+  isFloating: PropTypes.bool,
+  isDisabled: PropTypes.bool,
   onClick: PropTypes.func.isRequired
 }
-Button.propTypes = propTypes
 
-const defaultProps = {
-  label: "Button Label",
-  disabled: false
+Button.defaultProps = {
+  id: "Button Name",
+  buttonLabel: "Label",
+  type: "button"
 }
-Button.defaultProps = defaultProps
 
-export default Button
+export { Button as default }

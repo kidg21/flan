@@ -8,18 +8,31 @@ const CheckboxContainer = styled.div`
   grid-template-columns: auto 1fr;
   grid-gap: 0.75rem;
   align-items: inherit;
+  color: ${props => (props.error ? colors.alert : "")};
+  &[disabled],
+  &[readonly] {
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
+    color: ${colors.grey_40};
+  }
 `
 
 const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
-  background-color: ${colors.white};
-  border: 1px solid ${colors.grey_40};
+  border: 1px solid;
+  border-color: ${props => (props.error ? colors.alert_light : colors.grey_40)};
+  background-color: ${props =>
+    props.disabled ? colors.grey_20 : colors.white};
   width: 1rem;
   height: 1rem;
   border-radius: 2px;
   cursor: pointer;
   -webkit-appearance: none;
   &:checked {
-    background-color: ${colors.success};
+    background-color: ${props =>
+      props.error ? colors.alert_tint : colors.success_tint};
+    border-color: ${props =>
+      props.error ? colors.alert_light : colors.success};
   }
   &:focus {
     outline: none;
@@ -28,81 +41,30 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
 
 const CheckboxLabel = styled.label`
   user-select: none;
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: 400;
   line-height: 1.2;
   cursor: pointer;
 `
 
-function Checkbox({ ...props }) {
-  const [checked, setChecked] = useState(false)
-  const handleCheckboxChange = event => {
-    setChecked(event.target.checked)
-  }
+function Checkbox({ id, label, error, disabled, ...props }) {
   return (
-    <CheckboxContainer>
+    <CheckboxContainer
+      disabled={disabled} // input attribute>
+      error={error} // input attribute>
+      {...props}
+    >
       <CheckboxInput
-        id={props.id}
-        checked={checked}
-        onChange={handleCheckboxChange}
+        id={id}
+        disabled={disabled}
+        error={error} // input attribute>
         {...props}
       />
-      <CheckboxLabel for={props.id}>{props.label}</CheckboxLabel>
+      <CheckboxLabel htmlFor={id}>{label}</CheckboxLabel>
     </CheckboxContainer>
   )
 }
-
-// const StyledCheckboxContainer = styled.div`
-//   display: inline-block;
-//   vertical-align: middle;
-// `
-
-// const HiddenCheckbox = styled.input.attrs({ type: "checkbox" })`
-//   border: 0;
-//   clip: rect(0 0 0 0);
-//   clippath: inset(50%);
-//   height: 1px;
-//   margin: -1px;
-//   overflow: hidden;
-//   padding: 0;
-//   position: absolute;
-//   white-space: nowrap;
-//   width: 1px;
-// `
-
-// const StyledCheckbox = styled.div`
-//   display: inline-block;
-//   width: 16px;
-//   height: 16px;
-//   border-radius: 3px;
-//   background: ${props => (props.checked ? "salmon" : "papayawhip")};
-//   border-radius: 3px;
-//   transition: all 150ms;
-
-//   ${HiddenCheckbox}:focus + & {
-//     box-shadow: 0 0 0 3px pink;
-//   }
-// `
-
-// const CheckboxCustom = ({ className, checked, ...props }) => (
-//   <StyledCheckboxContainer className={className}>
-//     <HiddenCheckbox checked={checked} {...props} />
-//     <StyledCheckbox checked={checked} />
-//   </StyledCheckboxContainer>
-// )
-
-// const CustomCheckbox = () => {
-//   const [checked, setChecked] = useState(false)
-//   const handleCheckboxChange = event => {
-//     setChecked(event.target.checked)
-//   }
-//   return (
-//     <React.Fragment>
-//       <label>
-//         <CheckboxCustom checked={checked} onChange={handleCheckboxChange} />
-//         <span>Label Text</span>
-//       </label>
-//     </React.Fragment>
-//   )
-// }
 
 Checkbox.defaultProps = {
   id: "c1",
@@ -116,5 +78,4 @@ Checkbox.propTypes = {
   label: PropTypes.string.isRequired
 }
 
-// export { Checkbox as default, CustomCheckbox }
-export { Checkbox as default };
+export { Checkbox as default }

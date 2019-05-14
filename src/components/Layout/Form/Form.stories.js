@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import Panel, { PanelBody } from "../Panel/Panel";
+import Panel, { PanelSection } from "../Panel/Panel";
 import Form, { Title, Section, SectionName, InputGroup } from "./Form";
 import Checkbox from "../../atoms/Checkbox/Checkbox";
 
@@ -33,7 +33,7 @@ const cbox_6 = {
 
 storiesOf("Layout|Form", module).add("Form Layout", () => (
   <Panel>
-    <PanelBody>
+    <PanelSection body>
       <Form>
         <Title>Form Title</Title>
         <Section>
@@ -57,6 +57,6 @@ storiesOf("Layout|Form", module).add("Form Layout", () => (
           </InputGroup>
         </Section>
       </Form>
-    </PanelBody>
+    </PanelSection>
   </Panel>
 ));

@@ -1,11 +1,11 @@
 import { createGlobalStyle } from "styled-components"
 import styledNormalize from "styled-normalize"
 // Import variables
-// import { colors, fonts, fontSize } from "../variables";
-import { colors, fonts, fontSize } from "../Variables/Variables"
+import { colors, fonts, fontSize } from "Variables"
 // Import Fonts
-// import Lato_700 from "../../fonts/lato-v14-latin-700.ttf"
 import "../../../css/fonts.css"
+// Import Icons
+import "../../../icons/fontawesome"
 
 const GlobalStyles = createGlobalStyle`
 
@@ -19,13 +19,6 @@ const GlobalStyles = createGlobalStyle`
         src: local("Lato");
         src: url(${Lato_700});
     } */
-    }
-
-    ${
-      "" /* @import url("https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,800,900"); */
-    }
-    ${
-      "" /* @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900"); */
     }
 
     /* Document resets */
@@ -96,6 +89,8 @@ const GlobalStyles = createGlobalStyle`
     }
     p {
         font-family: inherit;
+        font-size: 1rem;
+        line-height: 1.5rem;
         margin: 0 0 1rem;
     }
     h1, h2, h3, h4, h5, h6 {
@@ -106,27 +101,33 @@ const GlobalStyles = createGlobalStyle`
     h1 {
         font-size: 2rem;
         ${"" /* font-size: calc((${fontSize.base}) * 2); */}
-        line-height: 2.25rem;
+        ${"" /* line-height: 2.25rem; */}
+        line-height: 2.4rem;
     }
     h2 {
         font-size: 1.5rem;
-        line-height: 2.25rem;
+        ${"" /* line-height: 2.25rem; */}
+        line-height: 2rem;
     }
     h3 {
         font-size: 1.3rem;
-        line-height: 2.25rem;
+        ${"" /* line-height: 2.25rem; */}
+        line-height: 1.8rem;
     }
     h4 {
         font-size: 1rem;
-        line-height: 1.5rem;
+        ${"" /* line-height: 1.5rem; */}
+        line-height: 1.4rem;
     }
     h5 {
         font-size: 0.9rem;
-        line-height: 1.5rem;
+        ${"" /* line-height: 1.5rem; */}
+        line-height: 1.3rem;
     }
     h6 {
         font-size: 0.8rem;
-        line-height: 1.5rem;
+        ${"" /* line-height: 1.5rem; */}
+        line-height: 1.2rem;
     }
     code {
         font-family: ${fonts.data};
@@ -194,13 +195,14 @@ const GlobalStyles = createGlobalStyle`
         }
         &[disabled],
         &[readonly] {
-            ${"" /* border-bottom: none; */}
             cursor: not-allowed;
             pointer-events: none;
             user-select: none;
             background-color: ${colors.grey_20};
         }
     }
-`
+
+    `
+    
 
 export default GlobalStyles

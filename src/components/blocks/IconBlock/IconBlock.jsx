@@ -1,34 +1,27 @@
 import React from "react"
 import styled, { css } from "styled-components"
 import PropTypes from "prop-types"
-import Icon from "base/Icons"
+import { colors, shadows } from "Variables"
 
-const defaultProps = {
-  commandOneProps: {
-    nameProp: ["far", "expand-arrows"],
-    colorProp: "darkgray"
-  },
-  commandTwoProps: { nameProp: ["far", "share"], colorProp: "darkgray" },
-  commandThreeProps: { nameProp: ["far", "filter"], colorProp: "darkgray" }
-}
-
-const Group = styled.div`
+const Block = styled.div`
   display: flex;
-  width: 5em;
-  padding-left: 5px;
-  padding-right: 5px;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  position: ${props => (props.stacked ? "relative" : "")};
+  width: ${props => (props.stacked ? "100%" : "")};
+  justify-content: ${props => (props.stacked ? "center" : "space-between")};
+  align-items: ${props => (props.stacked ? "center" : "")};
+  > * {
+    position: ${props => (props.stacked ? "absolute" : "")};
+  }
 `
 
-function IconBlock(props) {
+function IconBlock({ stacked, style, ...props }) {
   return (
-    <Group>
-      <Icon {...props.commandOneProps} />
-      <Icon {...props.commandTwoProps} />
-      <Icon {...props.commandThreeProps} />
-    </Group>
+    <Block stacked={stacked} style={style}>
+      {props.children}
+    </Block>
   )
 }
 
-IconBlock.defaultProps = defaultProps
 export default IconBlock
