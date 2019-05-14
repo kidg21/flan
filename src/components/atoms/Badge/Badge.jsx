@@ -10,65 +10,19 @@ const BadgeContainer = styled.div`
   align-items: center;
   min-width: 2.25em;
   width: min-content;
-  max-width: 5em;
+  /* max-width: 5em; */
   height: 2.25em;
-  background-color: ${props =>
-    props.success
-      ? colors.success
-      : props.warning
-      ? colors.warning
-      : props.anchor
-      ? colors.anchor
-      : props.light
-      ? colors.grey_light
-      : props.grey
-      ? colors.grey_40
-      : props.dark
-      ? colors.black
-      : props.notification && props.icon
-      ? ""
-      : colors.alert};
-  color: ${props =>
-    props.light || props.grey
-      ? colors.grey_dark
-      : props.notification && props.icon
-      ? colors.alert
-      : colors.white};
-  font-size: ${props =>
-    props.tiny || (props.notification && !props.icon)
-      ? ".6em"
-      : props.small
-      ? ".75em"
-      : props.large
-      ? "1.25em"
-      : props.xlarge || (props.notification && props.icon)
-      ? "1.5em"
-      : props.xxlarge
-      ? "1.75em"
-      : props.xxxlarge
-      ? "2em"
-      : "1em"};
+  background-color: ${props => props.badgeColor || colors.grey_20};
+  color: ${props => props.badgeText || colors.grey_80};
+  font-size: ${props => props.badgeSize || "1em"};
   font-weight: 700;
-  border: ${props => (props.light ? "2px solid" : null)};
-  border-color: ${props => (props.light ? colors.grey_40 : null)};
   border-radius: 10em;
   text-transform: uppercase;
-  position: ${props => (props.notification ? "absolute" : "")};
-  bottom: ${props => (props.bottomLeft || props.bottomRight ? "0" : "100%")};
-  left: ${props => (props.topLeft || props.bottomLeft ? "0%" : "100%")};
-  margin: ${props =>
-    props.notification && !props.icon
-      ? "-1em"
-      : props.notification && props.icon
-      ? "-1.25em -.25em"
-      : ""};
-  padding: ${props => (props.notification ? "0 .75em" : ".5em")};
-  transform: ${props =>
-    props.topLeft || props.bottomLeft
-      ? "translate(50%, 0%)"
-      : props.notification
-      ? "translate(-50%, 0%)"
-      : ""};
+  position: ${props => props.badgePosition || ""};
+  bottom: ${props => props.badgeBottom || ""};
+  left: ${props => props.badgeLeft || ""};
+  padding: ${props => props.badgePadding || ".5em"};
+  transform: ${props => props.badgeTransform || ""};
   letter-spacing: 1px;
   overflow: hidden;
 `
@@ -77,71 +31,155 @@ const BadgeLabel = styled.span`
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  margin: 0;
 `
 
 const BadgeIcon = styled(Icon)``
 
-function Badge({
-  id,
-  label,
-  icon,
-  anchor,
-  success,
-  warning,
-  alert,
-  light,
-  grey,
-  dark,
-  tiny,
-  small,
-  large,
-  xlarge,
-  xxlarge,
-  xxxlarge,
-  notification,
-  left,
-  topLeft,
-  bottomLeft,
-  bottomRight,
-  maxCount,
-  style,
-  className,
-  ...props
-}) {
+function Badge({ id, as, label, icon, type, size, position, style, ...props }) {
+  let badgeSize
+  let badgeColor
+  let badgeText
+  let badgePosition
+  let badgeLeft
+  let badgeBottom
+  let badgePadding
+  let badgeTransform
+  switch (type) {
+    case "link":
+      as = "a"
+      badgeColor = colors.anchor
+      badgeText = colors.white
+      break
+    case "success":
+      badgeColor = colors.success
+      badgeText = colors.white
+      break
+    case "warning":
+      badgeColor = colors.warning
+      badgeText = colors.white
+      break
+    case "alert":
+      badgeColor = colors.alert
+      badgeText = colors.white
+      break
+    case "dark":
+      badgeColor = colors.grey_80
+      badgeText = colors.white
+      break
+    case "notify":
+      position = position || "topRight"
+      badgePadding = "0 0.75em"
+      icon
+        ? (badgeColor = "none") &&
+          (badgeText = colors.alert) &&
+          (size = "large")
+        : (badgeColor = colors.alert) &&
+          (badgeText = colors.white) &&
+          (size = "tiny")
+      break
+    case "max10":
+      position = position || "topRight"
+      badgePadding = "0 0.75em"
+      badgeColor = colors.alert
+      badgeText = colors.white
+      size = "tiny"
+      label = "9+"
+      break
+    case "max100":
+      position = position || "topRight"
+      badgePadding = "0 0.75em"
+      badgeColor = colors.alert
+      badgeText = colors.white
+      size = "tiny"
+      label = "99+"
+      break
+    case "max1K":
+      position = position || "topRight"
+      badgePadding = "0 0.75em"
+      badgeColor = colors.alert
+      badgeText = colors.white
+      size = "tiny"
+      label = "999+"
+      break
+    case "max10K":
+      position = position || "topRight"
+      badgePadding = "0 0.75em"
+      badgeColor = colors.alert
+      badgeText = colors.white
+      size = "tiny"
+      label = "9999+"
+      break
+    default:
+      ""
+  }
+  switch (position) {
+    case "topLeft":
+      badgePosition = "absolute"
+      badgeBottom = "100%"
+      badgeLeft = "0"
+      badgeTransform = "translate(-25%, 50%)"
+      break
+    case "topRight":
+      badgePosition = "absolute"
+      badgeBottom = "100%"
+      badgeLeft = "100%"
+      badgeTransform = "translate(-75%, 50%)"
+      break
+    case "bottomRight":
+      badgePosition = "absolute"
+      badgeBottom = "0"
+      badgeLeft = "100%"
+      badgeTransform = "translate(-75%, 50%)"
+      break
+    case "bottomLeft":
+      badgePosition = "absolute"
+      badgeBottom = "0"
+      badgeLeft = "0"
+      badgeTransform = "translate(-25%, 50%)"
+      break
+    default:
+      ""
+  }
+  switch (size) {
+    case "tiny":
+      badgeSize = ".6em"
+      break
+    case "small":
+      badgeSize = ".75em"
+      break
+    case "large":
+      badgeSize = "1.25em"
+      break
+    case "xlarge":
+      badgeSize = "1.5em"
+      break
+    case "xxlarge":
+      badgeSize = "1.75em"
+      break
+    case "xxxlarge":
+      badgeSize = "2em"
+      break
+    default:
+      ""
+  }
   return (
     <BadgeContainer
       id={id}
       label={label}
       icon={icon}
-      anchor={anchor}
-      success={success}
-      warning={warning}
-      alert={alert}
-      light={light}
-      grey={grey}
-      dark={dark}
-      tiny={tiny}
-      small={small}
-      large={large}
-      xlarge={xlarge}
-      xxlarge={xxlarge}
-      xxxlarge={xxxlarge}
-      notification={notification}
-      left={left}
-      topLeft={topLeft}
-      bottomLeft={bottomLeft}
-      bottomRight={bottomRight}
-      maxCount={maxCount}
+      as={as}
+      badgeColor={badgeColor}
+      badgeText={badgeText}
+      badgeSize={badgeSize}
+      badgePosition={badgePosition}
+      badgeTransform={badgeTransform}
+      badgeLeft={badgeLeft}
+      badgeBottom={badgeBottom}
+      badgePadding={badgePadding}
       style={style}
-      className={className}
     >
-      {icon ? (
-        <BadgeIcon icon={icon} />
-      ) : maxCount ? (
-        <BadgeLabel>99+</BadgeLabel>
-      ) : (
-        <BadgeLabel>{label}</BadgeLabel>
-      )}
+      {icon ? <BadgeIcon icon={icon} /> : <BadgeLabel>{label}</BadgeLabel>}
     </BadgeContainer>
   )
 }
@@ -149,51 +187,40 @@ function Badge({
 Badge.defaultProps = {
   id: "",
   label: "",
-  icon: "",
-  anchor: false,
-  success: false,
-  warning: false,
-  alert: false,
-  dark: false,
-  light: false,
-  grey: false,
-  tiny: false,
-  small: false,
-  large: false,
-  xlarge: false,
-  xxlarge: false,
-  xxxlarge: false,
-  notification: false,
-  topLeft: false,
-  bottomLeft: false,
-  bottomRight: false,
-  maxCount: false
+  icon: ""
 }
 
 Badge.propTypes = {
   id: PropTypes.string,
   label: PropTypes.string,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
-  anchor: PropTypes.bool,
-  success: PropTypes.bool,
-  warning: PropTypes.bool,
-  alert: PropTypes.bool,
-  dark: PropTypes.bool,
-  light: PropTypes.bool,
-  grey: PropTypes.bool,
-  tiny: PropTypes.bool,
-  small: PropTypes.bool,
-  large: PropTypes.bool,
-  xlarge: PropTypes.bool,
-  xxlarge: PropTypes.bool,
-  xxxlarge: PropTypes.bool,
-  notification: PropTypes.bool,
-  topLeft: PropTypes.bool,
-  bottomLeft: PropTypes.bool,
-  bottomRight: PropTypes.bool,
-  maxCount: PropTypes.bool,
-  style: PropTypes.string,
-  className: PropTypes.string
+  // badgeSize: PropTypes.oneOf([
+  //   "tiny",
+  //   "small",
+  //   "large",
+  //   "xlarge",
+  //   "xlarge",
+  //   "xxxlarge"
+  // ]),
+  type: PropTypes.oneOf([
+    "link",
+    "success",
+    "warning",
+    "alert",
+    "dark",
+    "notify",
+    "max10",
+    "max100",
+    "max1K",
+    "max10K"
+  ]),
+  position: PropTypes.oneOf([
+    "topLeft",
+    "topRight",
+    "bottomRight",
+    "bottomLeft"
+  ]),
+  style: PropTypes.string
 }
 
 export { Badge as default }
