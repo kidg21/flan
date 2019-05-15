@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components"
-import styledNormalize from "styled-normalize"
+//import styledNormalize from "styled-normalize"
 // Import variables
 import { colors, fonts, fontSize } from "Variables"
 // Import Fonts
