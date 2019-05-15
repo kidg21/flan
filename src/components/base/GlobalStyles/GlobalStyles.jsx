@@ -10,7 +10,7 @@ import "../../../icons/fontawesome"
 const GlobalStyles = createGlobalStyle`
 
     /* Browser resets */
-    ${styledNormalize}
+    ${/*styledNormalize*/}
 
     /* Import font resources */
     ${
