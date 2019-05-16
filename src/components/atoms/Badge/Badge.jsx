@@ -5,26 +5,21 @@ import { colors } from "Variables"
 import Icon from "atoms/Icon"
 
 const BadgeContainer = styled.div`
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 2.25em;
-  width: min-content;
-  /* max-width: 5em; */
-  height: 2.25em;
-  background-color: ${props => props.badgeColor || colors.grey_20};
-  color: ${props => props.badgeText || colors.grey_80};
-  font-size: ${props => props.badgeSize || "1em"};
+  background-color: ${props => props.badgeColor || ""};
+  color: ${props => props.badgeText || ""};
+  font-size: ${props => props.badgeSize || ""};
   font-weight: 700;
-  border-radius: 10em;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  position: ${props => props.badgePosition || ""};
+  padding: ${props => props.badgePadding || ""};
+  border-radius: 10em;
   bottom: ${props => props.badgeBottom || ""};
   left: ${props => props.badgeLeft || ""};
-  padding: ${props => props.badgePadding || ".5em"};
   transform: ${props => props.badgeTransform || ""};
-  letter-spacing: 1px;
-  overflow: hidden;
 `
 
 const BadgeLabel = styled.span`
@@ -37,128 +32,73 @@ const BadgeLabel = styled.span`
 const BadgeIcon = styled(Icon)``
 
 function Badge({ id, as, label, icon, type, size, position, style, ...props }) {
-  let badgeSize
-  let badgeColor
-  let badgeText
-  let badgePosition
-  let badgeLeft
-  let badgeBottom
-  let badgePadding
-  let badgeTransform
+  let badgeColor = colors.alert
+  let badgeText = colors.white
+  let badgeSize = ".6em"
+  let badgePadding = "0.45em .8em"
+  let badgeLeft = "100%"
+  let badgeBottom = "100%"
+  let badgeTransform = "translate(-90%, 50%)"
   switch (type) {
-    case "link":
+    case "info":
       as = "a"
-      badgeColor = colors.anchor
-      badgeText = colors.white
+      icon
+        ? (badgeText = colors.anchor) &&
+          (badgeColor = "none") &&
+          (badgeSize = "1.25em") &&
+          (badgePadding = ".25em")
+        : (badgeColor = colors.anchor)
       break
     case "success":
-      badgeColor = colors.success
-      badgeText = colors.white
+      icon
+        ? (badgeColor = "none") &&
+          (badgeText = colors.success) &&
+          (badgeSize = "1.25em") &&
+          (badgePadding = ".25em")
+        : (badgeColor = colors.success)
       break
     case "warning":
-      badgeColor = colors.warning
-      badgeText = colors.white
+      icon
+        ? (badgeColor = "none") &&
+          (badgeText = colors.warning) &&
+          (badgeSize = "1.25em") &&
+          (badgePadding = ".25em")
+        : (badgeColor = colors.warning)
       break
     case "alert":
-      badgeColor = colors.alert
-      badgeText = colors.white
-      break
-    case "dark":
-      badgeColor = colors.grey_80
-      badgeText = colors.white
-      break
-    case "notify":
-      position = position || "topRight"
-      badgePadding = "0 0.75em"
       icon
         ? (badgeColor = "none") &&
           (badgeText = colors.alert) &&
-          (size = "large")
-        : (badgeColor = colors.alert) &&
-          (badgeText = colors.white) &&
-          (size = "tiny")
+          (badgeSize = "1.25em") &&
+          (badgePadding = ".25em")
+        : (badgeColor = colors.alert)
       break
-    case "max10":
-      position = position || "topRight"
-      badgePadding = "0 0.75em"
-      badgeColor = colors.alert
-      badgeText = colors.white
-      size = "tiny"
-      label = "9+"
-      break
-    case "max100":
-      position = position || "topRight"
-      badgePadding = "0 0.75em"
-      badgeColor = colors.alert
-      badgeText = colors.white
-      size = "tiny"
-      label = "99+"
-      break
-    case "max1K":
-      position = position || "topRight"
-      badgePadding = "0 0.75em"
-      badgeColor = colors.alert
-      badgeText = colors.white
-      size = "tiny"
-      label = "999+"
-      break
-    case "max10K":
-      position = position || "topRight"
-      badgePadding = "0 0.75em"
-      badgeColor = colors.alert
-      badgeText = colors.white
-      size = "tiny"
-      label = "9999+"
+    case "dark":
+      icon
+        ? (badgeColor = "none") &&
+          (badgeText = colors.grey_80) &&
+          (badgeSize = "1.25em") &&
+          (badgePadding = ".25em")
+        : (badgeColor = colors.grey_80)
       break
     default:
       ""
   }
   switch (position) {
     case "topLeft":
-      badgePosition = "absolute"
-      badgeBottom = "100%"
       badgeLeft = "0"
-      badgeTransform = "translate(-25%, 50%)"
+      badgeTransform = "translate(-10%, 50%)"
       break
     case "topRight":
-      badgePosition = "absolute"
-      badgeBottom = "100%"
-      badgeLeft = "100%"
-      badgeTransform = "translate(-75%, 50%)"
+      ""
       break
     case "bottomRight":
-      badgePosition = "absolute"
       badgeBottom = "0"
-      badgeLeft = "100%"
-      badgeTransform = "translate(-75%, 50%)"
       break
     case "bottomLeft":
-      badgePosition = "absolute"
       badgeBottom = "0"
       badgeLeft = "0"
-      badgeTransform = "translate(-25%, 50%)"
-      break
-    default:
-      ""
-  }
-  switch (size) {
-    case "tiny":
-      badgeSize = ".6em"
-      break
-    case "small":
-      badgeSize = ".75em"
-      break
-    case "large":
-      badgeSize = "1.25em"
-      break
-    case "xlarge":
-      badgeSize = "1.5em"
-      break
-    case "xxlarge":
-      badgeSize = "1.75em"
-      break
-    case "xxxlarge":
-      badgeSize = "2em"
+      badgeTransform = "translate(-10%, 50%)"
       break
     default:
       ""
@@ -172,38 +112,32 @@ function Badge({ id, as, label, icon, type, size, position, style, ...props }) {
       badgeColor={badgeColor}
       badgeText={badgeText}
       badgeSize={badgeSize}
-      badgePosition={badgePosition}
       badgeTransform={badgeTransform}
       badgeLeft={badgeLeft}
       badgeBottom={badgeBottom}
       badgePadding={badgePadding}
       style={style}
     >
-      {icon ? <BadgeIcon icon={icon} /> : <BadgeLabel>{label}</BadgeLabel>}
+      {icon ? (
+        <BadgeIcon icon={icon} badgeText={badgeText} />
+      ) : (
+        <BadgeLabel>{label}</BadgeLabel>
+      )}
     </BadgeContainer>
   )
 }
 
 Badge.defaultProps = {
-  id: "",
-  label: "",
-  icon: ""
+  type: "alert",
+  position: "topRight"
 }
 
 Badge.propTypes = {
   id: PropTypes.string,
   label: PropTypes.string,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
-  // badgeSize: PropTypes.oneOf([
-  //   "tiny",
-  //   "small",
-  //   "large",
-  //   "xlarge",
-  //   "xlarge",
-  //   "xxxlarge"
-  // ]),
   type: PropTypes.oneOf([
-    "link",
+    "info",
     "success",
     "warning",
     "alert",

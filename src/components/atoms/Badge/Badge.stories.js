@@ -33,135 +33,238 @@ storiesOf("Atoms|Badge", module)
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
-  // .add("Documentation", withInfo()(() => <Badge label="1" alert={true} />))
   .add(
     "Documentation",
     withInfo()(() => (
       <Grid col_4>
         <Card>
-          <Badge type="notify" label="1" />
+          <Badge label="1" />
           <Title>Badge</Title>
         </Card>
       </Grid>
     ))
   )
-  // .add(
-  //   "Label Badge",
-  //   () => (
-  //     <Grid col_4>
-  //       <Badge label="1" />
-  //       <Badge label="LT" type="dark" />
-  //       <Badge label="DK" type="link" />
-  //       <Badge label="25" type="success" />
-  //       <Badge label="WN" type="warning" />
-  //       <Badge label="AN" type="alert" />
-  //     </Grid>
-  //   ),
-  //   { notes: { markdown: BadgeNotes } }
-  // )
-  // .add("Icon Badge", () => (
-  //   <Grid col_4>
-  //     <Badge icon={["fas", "info"]} />
-  //     <Badge icon="times" type="dark" />
-  //     <Badge icon={["far", "bookmark"]} type="link" />
-  //     <Badge icon="chevron-right" type="success" />
-  //     <Badge icon="check" type="warning" />
-  //     <Badge icon="exclamation" type="alert" />
-  //   </Grid>
-  // ))
-  // .add("Badge Sizes", () => (
-  //   <Grid>
-  //     <Badge label="1" size="tiny" />
-  //     <Badge label="1" size="small" />
-  //     <Badge label="1" />
-  //     <Badge label="1" size="large" />
-  //     <Badge label="1" size="xlarge" />
-  //     <Badge label="1" size="xxlarge" />
-  //     <Badge label="1" size="xxxlarge" />
-  //   </Grid>
-  // ))
-  .add("The Badge Family", () => (
+  .add("Numbers", () => (
     <CardList col_4>
       <Card>
-        <Badge type="notify" label="1" />
+        <Badge label="1" />
         <Title>1-Digit</Title>
       </Card>
       <Card>
-        <Badge type="notify" label="21" />
+        <Badge label="21" />
         <Title>2-Digit</Title>
       </Card>
       <Card>
-        <Badge type="notify" label="321" />
+        <Badge label="321" />
         <Title>3-Digit</Title>
       </Card>
       <Card>
-        <Badge type="notify" label="4321" />
+        <Badge label="4321" />
         <Title>4-Digit</Title>
       </Card>
+    </CardList>
+  ))
+  .add("Max Count", () => (
+    <CardList col_4>
       <Card>
-        <Badge type="max10" />
+        <Badge label="9+" />
         <Title>Max 10</Title>
       </Card>
       <Card>
-        <Badge type="max100" />
+        <Badge label="99+" />
         <Title>Max 100</Title>
       </Card>
       <Card>
-        <Badge type="max1K" />
+        <Badge label="999+" />
         <Title>Max 1K</Title>
       </Card>
       <Card>
-        <Badge type="max10K" />
+        <Badge label="9999+" />
         <Title>Max 10K</Title>
       </Card>
+    </CardList>
+  ))
+  .add("Icons", () => (
+    <CardList col_4>
       <Card>
-        <Badge label="NEW" type="notify" />
-        <Title>Label</Title>
-      </Card>
-      <Card>
-        <Badge label="EDIT" type="notify" />
-        <Title>Label</Title>
-      </Card>
-      <Card>
-        <Badge label="GO" type="notify" />
-        <Title>Label</Title>
-      </Card>
-      <Card>
-        <Badge label="EAT!" type="notify" />
-        <Title>Label</Title>
-      </Card>
-
-      <Card>
-        <Badge icon="exclamation" type="notify" />
+        <Badge icon="user" type="info" />
         <Title>Icon</Title>
       </Card>
       <Card>
-        <Badge icon="check" type="notify" />
+        <Badge icon="check" type="success" />
         <Title>Icon</Title>
       </Card>
       <Card>
-        <Badge icon="envelope" type="notify" />
+        <Badge icon="exclamation" type="warning" />
         <Title>Icon</Title>
       </Card>
       <Card>
-        <Badge icon="user" type="notify" />
+        <Badge icon="envelope" />
         <Title>Icon</Title>
       </Card>
-
+    </CardList>
+  ))
+  .add("State", () => (
+    <CardList col_4>
       <Card>
-        <Badge label="1" type="notify" position="topRight" />
+        <Badge label="Info" type="info" />
+        <Title>Info</Title>
+      </Card>
+      <Card>
+        <Badge label="Success" type="success" />
+        <Title>Success</Title>
+      </Card>
+      <Card>
+        <Badge label="Warning" type="warning" />
+        <Title>Warning</Title>
+      </Card>
+      <Card>
+        <Badge label="Alert" />
+        <Title>Alert</Title>
+      </Card>
+    </CardList>
+  ))
+  .add("Message", () => (
+    <CardList col_4>
+      <Card>
+        <Badge label="call" type="dark" />
+        <Title>Message</Title>
+      </Card>
+      <Card>
+        <Badge label="the" type="dark" />
+        <Title>Message</Title>
+      </Card>
+      <Card>
+        <Badge label="police" type="dark" />
+        <Title>Message</Title>
+      </Card>
+      <Card>
+        <Badge icon="phone" type="dark" />
+        <Title>Message</Title>
+      </Card>
+    </CardList>
+  ))
+  .add("Alignment", () => (
+    <CardList col_4>
+      <Card>
+        <Badge label="1" position="topRight" />
         <Title>Top-Right</Title>
       </Card>
       <Card>
-        <Badge label="1" type="notify" position="bottomRight" />
+        <Badge label="1" position="bottomRight" />
         <Title>Bottom-Right</Title>
       </Card>
       <Card>
-        <Badge label="1" type="notify" position="topLeft" />
+        <Badge label="1" position="topLeft" />
         <Title>Top-Left</Title>
       </Card>
       <Card>
-        <Badge label="1" type="notify" position="bottomLeft" />
+        <Badge label="1" position="bottomLeft" />
+        <Title>Bottom-Left</Title>
+      </Card>
+    </CardList>
+  ))
+  .add("The Badge Family", () => (
+    <CardList col_4>
+      <Card>
+        <Badge label="1" />
+        <Title>1-Digit</Title>
+      </Card>
+      <Card>
+        <Badge label="21" />
+        <Title>2-Digit</Title>
+      </Card>
+      <Card>
+        <Badge label="321" />
+        <Title>3-Digit</Title>
+      </Card>
+      <Card>
+        <Badge label="4321" />
+        <Title>4-Digit</Title>
+      </Card>
+
+      <Card>
+        <Badge label="9+" />
+        <Title>Max 10</Title>
+      </Card>
+      <Card>
+        <Badge label="99+" />
+        <Title>Max 100</Title>
+      </Card>
+      <Card>
+        <Badge label="999+" />
+        <Title>Max 1K</Title>
+      </Card>
+      <Card>
+        <Badge label="9999+" />
+        <Title>Max 10K</Title>
+      </Card>
+
+      <Card>
+        <Badge icon="user" type="info" />
+        <Title>Icon</Title>
+      </Card>
+      <Card>
+        <Badge icon="check" type="success" />
+        <Title>Icon</Title>
+      </Card>
+      <Card>
+        <Badge icon="exclamation" type="warning" />
+        <Title>Icon</Title>
+      </Card>
+      <Card>
+        <Badge icon="envelope" />
+        <Title>Icon</Title>
+      </Card>
+
+      <Card>
+        <Badge label="Info" type="info" />
+        <Title>Info</Title>
+      </Card>
+      <Card>
+        <Badge label="Success" type="success" />
+        <Title>Success</Title>
+      </Card>
+      <Card>
+        <Badge label="Warning" type="warning" />
+        <Title>Warning</Title>
+      </Card>
+      <Card>
+        <Badge label="Alert" />
+        <Title>Alert</Title>
+      </Card>
+
+      <Card>
+        <Badge label="call" type="dark" />
+        <Title>Message</Title>
+      </Card>
+      <Card>
+        <Badge label="the" type="dark" />
+        <Title>Message</Title>
+      </Card>
+      <Card>
+        <Badge label="police" type="dark" />
+        <Title>Message</Title>
+      </Card>
+      <Card>
+        <Badge icon="phone" type="dark" />
+        <Title>Message</Title>
+      </Card>
+
+      <Card>
+        <Badge label="1" position="topRight" />
+        <Title>Top-Right</Title>
+      </Card>
+      <Card>
+        <Badge label="1" position="bottomRight" />
+        <Title>Bottom-Right</Title>
+      </Card>
+      <Card>
+        <Badge label="1" position="topLeft" />
+        <Title>Top-Left</Title>
+      </Card>
+      <Card>
+        <Badge label="1" position="bottomLeft" />
         <Title>Bottom-Left</Title>
       </Card>
     </CardList>
