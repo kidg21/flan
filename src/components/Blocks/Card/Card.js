@@ -12,6 +12,19 @@ const blockStyle = {
   color: "lightgrey"
 };
 
+const LayerStyle = {
+  flex: "auto",
+  paddingLeft: "1.5em"
+};
+
+const Left = styled.div``;
+
+const Right = styled.div``;
+
+const LayerLeft = styled.div`
+  display: flex;
+`;
+
 const CardTitle = styled.h5`
   font-weight: 600;
 `;
@@ -39,22 +52,19 @@ function Card({ title, switchProps, ...props }) {
         info={props.info}
         navigation={props.navigation}
       >
-        <div>
+        <Left>
           {props.layer ? (
-            <div style={{ display: "flex" }}>
-              {" "}
-              <Switch {...switchProps} />{" "}
-              <CardTitle style={{ flex: "auto", paddingLeft: "1.5em" }}>
-                {title}
-              </CardTitle>{" "}
-            </div>
+            <LayerLeft>
+              <Switch {...switchProps} />
+              <CardTitle style={LayerStyle}>{title}</CardTitle>
+            </LayerLeft>
           ) : props.navigation ? (
             <CardTitle>{title}</CardTitle>
           ) : props.info ? (
             <CardTitle>{title}</CardTitle>
           ) : null}
-        </div>
-        <div>
+        </Left>
+        <Right>
           {props.layer ? (
             <IconBlock style={blockStyle}>
               <Icon icon={["far", "expand-arrows"]} />
@@ -66,7 +76,7 @@ function Card({ title, switchProps, ...props }) {
           ) : props.info ? (
             <Icon icon={["far", "angle-up"]} />
           ) : null}
-        </div>
+        </Right>
       </HeaderLayout>
     </div>
   );

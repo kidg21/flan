@@ -29,7 +29,63 @@ const GridWrapper = styled.section`
       ? "repeat(11, 1fr)"
       : props.col_12
       ? "repeat(12, 1fr)"
-      : "repeat(auto-fill, minmax(20rem, 1fr))"};
+      : "repeat(auto-fill, minmax(8rem, 1fr))"};
+  @media (min-width: 40.063em) {
+    grid-template-columns: ${props =>
+      props.col_1
+        ? "repeat(1, 1fr)"
+        : props.col_2
+        ? "repeat(2, 1fr)"
+        : props.col_3
+        ? "repeat(3, 1fr)"
+        : props.col_4
+        ? "repeat(4, 1fr)"
+        : props.col_5
+        ? "repeat(5, 1fr)"
+        : props.col_6
+        ? "repeat(6, 1fr)"
+        : props.col_7
+        ? "repeat(7, 1fr)"
+        : props.col_8
+        ? "repeat(8, 1fr)"
+        : props.col_9
+        ? "repeat(9, 1fr)"
+        : props.col_10
+        ? "repeat(10, 1fr)"
+        : props.col_11
+        ? "repeat(11, 1fr)"
+        : props.col_12
+        ? "repeat(12, 1fr)"
+        : "repeat(auto-fill, minmax(14rem, 1fr))"};
+  }
+  @media (min-width: 64.063em) {
+    grid-template-columns: ${props =>
+      props.col_1
+        ? "repeat(1, 1fr)"
+        : props.col_2
+        ? "repeat(2, 1fr)"
+        : props.col_3
+        ? "repeat(3, 1fr)"
+        : props.col_4
+        ? "repeat(4, 1fr)"
+        : props.col_5
+        ? "repeat(5, 1fr)"
+        : props.col_6
+        ? "repeat(6, 1fr)"
+        : props.col_7
+        ? "repeat(7, 1fr)"
+        : props.col_8
+        ? "repeat(8, 1fr)"
+        : props.col_9
+        ? "repeat(9, 1fr)"
+        : props.col_10
+        ? "repeat(10, 1fr)"
+        : props.col_11
+        ? "repeat(11, 1fr)"
+        : props.col_12
+        ? "repeat(12, 1fr)"
+        : "repeat(auto-fill, minmax(20rem, 1fr))"};
+  }
   grid-column: ${props =>
     props.alignLeft || props.alignCenter || props.alignRight
       ? "1/-1"

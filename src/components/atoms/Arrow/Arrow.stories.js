@@ -1,17 +1,17 @@
-// import React, { useState } from "react";
-// import { storiesOf } from "@storybook/react";
-// import Arrow from "./Arrow";
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import App from "./Arrow";
+import AppTwo from "./AppTwo";
+import { I18nContextProvider } from "../../../locales/index";
 
-// storiesOf("Atoms|Arrows", module).add("Arrow", () =>
-//   React.createElement(() => {
-//     const [select, setSelected] = useState(false);
-//     return (
-//       <Arrow
-//         select={select}
-//         onChange={() => {
-//           setSelected(!select);
-//         }}
-//       />
-//     );
-//   })
-// );
+storiesOf("Atoms|Arrows", module)
+  .add("Arrow", () => (
+    <I18nContextProvider>
+      <App />
+    </I18nContextProvider>
+  ))
+  .add("App", () => (
+    <I18nContextProvider>
+      <AppTwo />
+    </I18nContextProvider>
+  ));

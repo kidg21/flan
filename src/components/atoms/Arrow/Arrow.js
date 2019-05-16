@@ -1,33 +1,21 @@
-// import React from "react";
-// import PropTypes from "prop-types";
-// import styled, { css } from "styled-components";
-// import Icon from "atoms/Icon";
+import React, { useContext } from "react";
+import { I18nContext } from "../../../locales/index";
 
-// const Container = styled.div`
-//   color: ${props => (props.select ? colors.anchor : null)};
-//   cursor: pointer;
-// `;
+const App = ({ title, ...props }) => {
+  const { translate } = useContext(I18nContext);
 
-// const Arrow = ({ select, id, ...props }) => {
-//   return (
-//     <Container
-//     select={select}
-//     >
-//       {props.select ? (
-//         <Icon icon={["far", "angle-down"]} />
-//       ) : (
-//         <Icon icon={["far", "angle-up"]} />
-//       )}{" "}
-//     </Container>
-//   );
-// };
+  return (
+    <div>
+      <div>
+        <p>{translate("edit_and_save")}</p>
+        <a> {translate("learn_react")} </a>
+        <p> {title} </p>
+        <div>
+          <p>hello friends this is neutral text</p>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-// Arrow.defaultProps = {
-//   id: ""
-// };
-
-// Arrow.propTypes = {
-//   id: PropTypes.string
-// };
-
-// export default Arrow;
+export default App;

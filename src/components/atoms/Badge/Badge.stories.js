@@ -33,93 +33,238 @@ storiesOf("Atoms|Badge", module)
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
-  .add("Documentation", withInfo()(() => <Badge label="1" alert={true} />))
   .add(
-    "Label Badge",
-    () => (
+    "Documentation",
+    withInfo()(() => (
       <Grid col_4>
-        <Badge label="1" />
-        <Badge label="LT" light={true} />
-        <Badge label="DK" grey={true} />
-        <Badge label="25" dark={true} />
-        <Badge label="WN" warning={true} />
-        <Badge label="AN" anchor={true} />
-        <Badge label="SC" success={true} />
+        <Card>
+          <Badge label="1" />
+          <Title>Badge</Title>
+        </Card>
       </Grid>
-    ),
-    { notes: { markdown: BadgeNotes } }
+    ))
   )
-  .add("Icon Badge", () => (
-    <Grid col_4>
-      <Badge icon={["far", "info"]} />
-      <Badge icon="exclamation" grey={true} />
-      <Badge icon="times" dark={true} />
-      <Badge icon="check" warning={true} />
-      <Badge icon={["far", "bookmark"]} anchor={true} />
-      <Badge icon="chevron-right" success={true} />
-    </Grid>
-  ))
-  .add("Badge Sizes", () => (
-    <Grid>
-      <Badge label="1" tiny={true} />
-      <Badge label="1" small={true} />
-      <Badge label="1" />
-      <Badge label="1" large={true} />
-      <Badge label="1" xlarge={true} />
-      <Badge label="1" xxlarge={true} />
-      <Badge label="1" xxxlarge={true} />
-    </Grid>
-  ))
-  .add("Notifications", () => (
+  .add("Numbers", () => (
     <CardList col_4>
       <Card>
-        <Badge label="1" notification={true} />
-        <Title>Standard</Title>
+        <Badge label="1" />
+        <Title>1-Digit</Title>
       </Card>
       <Card>
-        <Badge notification={true} maxCount={true} />
-        <Title>Max Count</Title>
+        <Badge label="21" />
+        <Title>2-Digit</Title>
       </Card>
       <Card>
-        <Badge label="NEW" notification={true} />
-        <Title>Label</Title>
+        <Badge label="321" />
+        <Title>3-Digit</Title>
       </Card>
       <Card>
-        <Badge label="EDIT" notification={true} />
-        <Title>Label</Title>
+        <Badge label="4321" />
+        <Title>4-Digit</Title>
       </Card>
-
+    </CardList>
+  ))
+  .add("Max Count", () => (
+    <CardList col_4>
       <Card>
-        <Badge icon="exclamation" notification={true} />
+        <Badge label="9+" />
+        <Title>Max 10</Title>
+      </Card>
+      <Card>
+        <Badge label="99+" />
+        <Title>Max 100</Title>
+      </Card>
+      <Card>
+        <Badge label="999+" />
+        <Title>Max 1K</Title>
+      </Card>
+      <Card>
+        <Badge label="9999+" />
+        <Title>Max 10K</Title>
+      </Card>
+    </CardList>
+  ))
+  .add("Icons", () => (
+    <CardList col_4>
+      <Card>
+        <Badge icon="user" type="info" />
         <Title>Icon</Title>
       </Card>
       <Card>
-        <Badge icon="check" notification={true} />
+        <Badge icon="check" type="success" />
         <Title>Icon</Title>
       </Card>
       <Card>
-        <Badge icon="envelope" notification={true} />
+        <Badge icon="exclamation" type="warning" />
         <Title>Icon</Title>
       </Card>
       <Card>
-        <Badge icon="user" notification={true} />
+        <Badge icon="envelope" />
         <Title>Icon</Title>
       </Card>
-
+    </CardList>
+  ))
+  .add("State", () => (
+    <CardList col_4>
       <Card>
-        <Badge label="1" notification={true} />
+        <Badge label="Info" type="info" />
+        <Title>Info</Title>
+      </Card>
+      <Card>
+        <Badge label="Success" type="success" />
+        <Title>Success</Title>
+      </Card>
+      <Card>
+        <Badge label="Warning" type="warning" />
+        <Title>Warning</Title>
+      </Card>
+      <Card>
+        <Badge label="Alert" />
+        <Title>Alert</Title>
+      </Card>
+    </CardList>
+  ))
+  .add("Message", () => (
+    <CardList col_4>
+      <Card>
+        <Badge label="call" type="dark" />
+        <Title>Message</Title>
+      </Card>
+      <Card>
+        <Badge label="the" type="dark" />
+        <Title>Message</Title>
+      </Card>
+      <Card>
+        <Badge label="police" type="dark" />
+        <Title>Message</Title>
+      </Card>
+      <Card>
+        <Badge icon="phone" type="dark" />
+        <Title>Message</Title>
+      </Card>
+    </CardList>
+  ))
+  .add("Alignment", () => (
+    <CardList col_4>
+      <Card>
+        <Badge label="1" position="topRight" />
         <Title>Top-Right</Title>
       </Card>
       <Card>
-        <Badge label="1" notification={true} bottomRight={true} />
+        <Badge label="1" position="bottomRight" />
         <Title>Bottom-Right</Title>
       </Card>
       <Card>
-        <Badge label="1" notification={true} topLeft={true} />
+        <Badge label="1" position="topLeft" />
         <Title>Top-Left</Title>
       </Card>
       <Card>
-        <Badge label="1" notification={true} bottomLeft={true} />
+        <Badge label="1" position="bottomLeft" />
+        <Title>Bottom-Left</Title>
+      </Card>
+    </CardList>
+  ))
+  .add("The Badge Family", () => (
+    <CardList col_4>
+      <Card>
+        <Badge label="1" />
+        <Title>1-Digit</Title>
+      </Card>
+      <Card>
+        <Badge label="21" />
+        <Title>2-Digit</Title>
+      </Card>
+      <Card>
+        <Badge label="321" />
+        <Title>3-Digit</Title>
+      </Card>
+      <Card>
+        <Badge label="4321" />
+        <Title>4-Digit</Title>
+      </Card>
+
+      <Card>
+        <Badge label="9+" />
+        <Title>Max 10</Title>
+      </Card>
+      <Card>
+        <Badge label="99+" />
+        <Title>Max 100</Title>
+      </Card>
+      <Card>
+        <Badge label="999+" />
+        <Title>Max 1K</Title>
+      </Card>
+      <Card>
+        <Badge label="9999+" />
+        <Title>Max 10K</Title>
+      </Card>
+
+      <Card>
+        <Badge icon="user" type="info" />
+        <Title>Icon</Title>
+      </Card>
+      <Card>
+        <Badge icon="check" type="success" />
+        <Title>Icon</Title>
+      </Card>
+      <Card>
+        <Badge icon="exclamation" type="warning" />
+        <Title>Icon</Title>
+      </Card>
+      <Card>
+        <Badge icon="envelope" />
+        <Title>Icon</Title>
+      </Card>
+
+      <Card>
+        <Badge label="Info" type="info" />
+        <Title>Info</Title>
+      </Card>
+      <Card>
+        <Badge label="Success" type="success" />
+        <Title>Success</Title>
+      </Card>
+      <Card>
+        <Badge label="Warning" type="warning" />
+        <Title>Warning</Title>
+      </Card>
+      <Card>
+        <Badge label="Alert" />
+        <Title>Alert</Title>
+      </Card>
+
+      <Card>
+        <Badge label="call" type="dark" />
+        <Title>Message</Title>
+      </Card>
+      <Card>
+        <Badge label="the" type="dark" />
+        <Title>Message</Title>
+      </Card>
+      <Card>
+        <Badge label="police" type="dark" />
+        <Title>Message</Title>
+      </Card>
+      <Card>
+        <Badge icon="phone" type="dark" />
+        <Title>Message</Title>
+      </Card>
+
+      <Card>
+        <Badge label="1" position="topRight" />
+        <Title>Top-Right</Title>
+      </Card>
+      <Card>
+        <Badge label="1" position="bottomRight" />
+        <Title>Bottom-Right</Title>
+      </Card>
+      <Card>
+        <Badge label="1" position="topLeft" />
+        <Title>Top-Left</Title>
+      </Card>
+      <Card>
+        <Badge label="1" position="bottomLeft" />
         <Title>Bottom-Left</Title>
       </Card>
     </CardList>
