@@ -528,6 +528,10 @@ storiesOf("Application|Libraries/", module)
         <IconLabel>money-bill</IconLabel>
       </ActiveIcon>
       <ActiveIcon>
+        <Icon icon="phone" />
+        <IconLabel>"phone"</IconLabel>
+      </ActiveIcon>
+      <ActiveIcon>
         <Icon icon="plus" />
         <IconLabel>"plus"</IconLabel>
       </ActiveIcon>
