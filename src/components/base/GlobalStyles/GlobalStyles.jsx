@@ -5,7 +5,7 @@ import { colors, fonts, fontSize } from "Variables"
 // Import Fonts
 import "../../../css/fonts.css"
 // Import Icons
-import "../../../icons/fontawesome"
+//import "../../../icons/fontawesome"
 
 /**
  *    Browser resets 
