@@ -61,7 +61,7 @@ storiesOf("Atoms|Command", module)
   .add("Documentation", withInfo()(() => <Command />))
 
   .add("Alignment", () => (
-    <Grid col_4>
+    <Grid>
       <Title>
         <u>Command Alignment</u>
       </Title>
@@ -75,7 +75,7 @@ storiesOf("Atoms|Command", module)
   ))
 
   .add("State", () => (
-    <Grid col_1>
+    <Grid>
       <Title>
         <u>Command State</u>
       </Title>
@@ -132,7 +132,7 @@ storiesOf("Application|Libraries/", module)
       <Command icon={["far", "bookmark"]} label="Bookmark" />
       <Command icon={["far", "cog"]} label="Settings" />
       <Command icon={["far", "map"]} label="GPS" />
-      <Command icon={["far", "plus"]} label="Add To List" />
+      <Command icon="plus" label="Add To List" />
       <Command icon={["far", "share"]} label="Share" />
     </CommandGrid>
   ))
