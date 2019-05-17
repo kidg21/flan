@@ -44,13 +44,12 @@ const HeaderLayout = styled.div`
 // ) : (
 //   <Icon icon={["far", "angle-up"]} />
 
-function Card({ title, switchProps, ...props }) {
+function Card({ title, switchProps, layer, info, navigation }) {
   return (
-    <div>
       <HeaderLayout
-        layer={props.layer}
-        info={props.info}
-        navigation={props.navigation}
+        layer={layer}
+        info={info}
+        navigation={navigation}
       >
         <Left>
           {props.layer ? (
@@ -78,17 +77,8 @@ function Card({ title, switchProps, ...props }) {
           ) : null}
         </Right>
       </HeaderLayout>
-    </div>
   );
 }
-
-Card.defaultProps = {
-  title: "Information Header",
-  layer: false,
-  info: false,
-  navigation: false
-};
-
 Card.propTypes = {
   title: PropTypes.string.isRequired,
   layer: PropTypes.bool,

@@ -89,8 +89,7 @@ function Command({
   xxlarge,
   xxxlarge,
   style,
-  className,
-  ...props
+  className
 }) {
   return (
     <CommandContainer
@@ -134,12 +133,4 @@ Command.propTypes = {
   style: PropTypes.string,
   className: PropTypes.string
 }
-
-Command.defaultProps = {
-  id: "",
-  label: "Command",
-  icon: "user-circle"
-}
-
-// export default Command;
 export { Command as default }

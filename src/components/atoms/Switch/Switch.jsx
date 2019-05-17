@@ -70,10 +70,6 @@ const Switch = ({checked, id, ...props}) => {
   );
 }
 
-Switch.defaultProps = {
-  id: "default",
-};
-
 Switch.propTypes = {
   id: PropTypes.string,
 };

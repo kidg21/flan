@@ -78,8 +78,7 @@ function Button({
   isRound,
   isFloating,
   isDisabled,
-  onClick,
-  ...props
+  onClick
 }) {
   return (
     <StyledButton
@@ -101,7 +100,7 @@ function Button({
 
 Button.propTypes = {
   id: PropTypes.string,
-  buttonLabel: PropTypes.string,
+  buttonLabel: PropTypes.string.isRequired,
   name: PropTypes.string,
   /** button, file, reset, or submit. */
   type: PropTypes.string,
@@ -113,11 +112,4 @@ Button.propTypes = {
   isDisabled: PropTypes.bool,
   onClick: PropTypes.func.isRequired
 }
-
-Button.defaultProps = {
-  id: "Button Name",
-  buttonLabel: "Label",
-  type: "button"
-}
-
 export { Button as default }

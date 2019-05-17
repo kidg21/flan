@@ -36,9 +36,10 @@ const TextInput = styled.input`
   }
 `;
 
-function Search({}) {
+function Search({id}) {
   return (
-    <SearchContainer>
+    <SearchContainer
+    id={id}>
       <Container
         style={{
           justifyContent: "space-between",
@@ -65,12 +66,11 @@ function Search({}) {
   );
 }
 
-Search.defaultProps = {
-  id: ""
-};
-
 Search.propTypes = {
   id: PropTypes.string
 };
 
 export default Search;
+
+
+///this one will need more work on setting up for logic like Autocomplete and everything else

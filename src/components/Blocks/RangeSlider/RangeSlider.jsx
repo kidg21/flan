@@ -36,7 +36,10 @@ padding: .5rem .5rem;
       }}
 `
 
-
+const RangeContainer = styled.div`
+display: inline-block;
+margin-bottom: 1.5rem;
+`
 
 const InputContainer = styled.div`
   width: 98%;
@@ -45,14 +48,19 @@ const InputContainer = styled.div`
   justify-content: space-between;
 `;
 
-function RangeSlider({ id, label, value, min, max, step, ...props }) {
+function RangeSlider({ id, label, value, min, max, step }) {
   return (
-    <div style={{ display: "inline-block", marginBottom: "1.5rem" }}>
+    <RangeContainer
+    id={id}>
     <InputLabel inputLabel={label}/>
       <InputContainer>
         <SliderInput
           type="text"
           placeholder="Min"
+          value={value}
+          min={min}
+          max={max}
+          step={step}
         />
         <SliderInput
           type="text"
@@ -64,7 +72,7 @@ function RangeSlider({ id, label, value, min, max, step, ...props }) {
         />
       </InputContainer>
       <Slider/>
-    </div>
+    </RangeContainer>
   );
 }
 

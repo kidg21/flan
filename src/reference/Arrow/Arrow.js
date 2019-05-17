@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import { I18nContext } from "../../../locales/index";
+import { I18nContext } from "../../locales/index";
 
-const App = ({ title, ...props }) => {
+const App = ({ title }) => {
   const { translate } = useContext(I18nContext);
 
   return (

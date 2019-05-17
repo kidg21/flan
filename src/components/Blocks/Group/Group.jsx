@@ -12,37 +12,42 @@ const HeaderLayout = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 1.5em 0.6em 0.25em 0.8em;
+  cursor: pointer;
 `;
+
+
+const GroupTitle = ({ title, number }) => (
+  <GroupContainer>
+      <H5>{title}</H5>
+      <span> | </span>
+      <Num> {number} </Num>
+      </GroupContainer>
+  );
+
+const H5 = styled.h5`
+padding-right: 4px;
+`
+const Num = styled.h5`
+color: ${colors.success};
+padding-left: 4px;
+`
+
+const GroupContainer = styled.div`
+display: flex;
+`
 
 //   <Icon icon={["far", "angle-down"]} />
 // ) : (
 //   <Icon icon={["far", "angle-up"]} />
 
-function Group({ id, number, title, ...props }) {
+function Group({ id, number, title}) {
   return (
-    <div>
       <HeaderLayout id={id}>
-        <div style={{ display: "flex" }}>
-          <h5 style={{ paddingRight: "4px" }}>{title}</h5>
-          <span> | </span>
-          <h5 style={{ color: colors.success, paddingLeft: "4px" }}>
-            {number}
-          </h5>
-        </div>
-        <div>
+         <GroupTitle title={title} number={number}/>
           <Icon icon={["far", "angle-up"]} />
-        </div>
       </HeaderLayout>
-    </div>
   );
 }
-
-Group.defaultProps = {
-  id: "",
-  title: "Group",
-  number: "0"
-};
-
 Group.propTypes = {
   title: PropTypes.string.isRequired,
   id: PropTypes.string,

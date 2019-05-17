@@ -304,11 +304,6 @@ function NavBlock({ ...props }) {
   )
 }
 
-NavBlock.defaultProps = {
-  left: "Left Command",
-  title: "This Is The Default Title",
-  right: "Right Command"
-}
 
 NavBlock.propTypes = {
   /** This is the Left nav command. */

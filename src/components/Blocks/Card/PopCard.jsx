@@ -41,32 +41,40 @@ const Aligner = styled.div`
   height: 100vh;
 `;
 
-const Message = styled.div`
+
+const Space =styled.div`
+padding: 10px;
+`
+
+const MessageContainer = styled.div`
   padding: 4em;
 `;
 
-function PopCard({ title, message, action }) {
+const MessageBody = styled.p`
+padding-top: 1em;
+font-family: arial;
+text-align: center;
+`
+const MessageTitle = styled.h4`
+text-align: center;
+`
+
+
+function PopCard({ id, title, message, action }) {
   return (
     <Aligner>
-      <HeaderSection>
+      <HeaderSection
+      id={id}>
         <Container>
           <Icon icon={["fal", "times"]} />
         </Container>
-        <Message>
-          <h4 style={{ textAlign: "center" }}> {title} </h4>
-          <p
-            style={{
-              paddingTop: "1em",
-              fontFamily: "arial",
-              textAlign: "center"
-            }}
-          >
-            {message}
-          </p>
-        </Message>
+        <MessageContainer>
+        <MessageTitle> {title} </MessageTitle>
+  <MessageBody>{message}</MessageBody>
+        </MessageContainer>
         <Actions>
-          <Button label="Yes, lets!" isRound={true} isExtraSmall={true} />
-          <div style={{ padding: "10px" }} />
+          <Button label={action} isRound={true} isExtraSmall={true} />
+          <Space />
           <Button
             label="No thanks"
             isSecondStandard={true}
@@ -78,16 +86,9 @@ function PopCard({ title, message, action }) {
     </Aligner>
   );
 }
-
-PopCard.defaultProps = {
-  title: "Pop Up Alert",
-  message: "default",
-  action: "Apply",
-  exitProps: { nameProp: ["fal", "times"], colorProp: "dimgray" }
-};
-
 PopCard.propTypes = {
-  title: PropTypes.string.isRequired,
+  id: PropTypes.string,
+  title: PropTypes.string,
   message: PropTypes.string.isRequired,
   action: PropTypes.string.isRequired
 };

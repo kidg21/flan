@@ -27,7 +27,7 @@ const StyledTimePicker = styled.input.attrs({ type: "time" })`
 `
 
 
-function Calendar ({id, date, time, datetime, ...props}) {
+function Calendar ({id, date, time, datetime}) {
 
   return (
     <div
@@ -42,13 +42,6 @@ function Calendar ({id, date, time, datetime, ...props}) {
       <StyledTimePicker/> </div> ) : null}
       </div>
   );
-};
-
-Calendar.defaultProps = {
-  id: "",
-  date: false,
-  time: false,
-  datetime: false
 };
 
 Calendar.propTypes = {

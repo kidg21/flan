@@ -9,14 +9,7 @@ const TableWrapper = styled.table`
   border-collapse: collapse;
   display: flex-block;
   width: 100%;
-`
-const TH = styled.th`
-  text-align: left;
-  font-size: 12px;
-  padding: 5px 10px 5px;
-  border-bottom: 1px solid #ddd;
-`
-
+`;
 const Row = styled.tr`
   font-size: 12px;
 
@@ -28,8 +21,7 @@ const Row = styled.tr`
     background-color: #f5f7f9;
     transition: background-color 0.05s ease-in;
   }
-`
-
+`;
 const Cell = styled.td`
   padding: 0.5em 1em 0.5em;
 
@@ -37,12 +29,11 @@ const Cell = styled.td`
     color: #83a3c2;
     font-weight: bold;
     font-size: 12px;
-  }
-
+  };
   &:nth-child(even) {
     text-align: right;
   }
-`
+`;
 
 function Table() {
   return (
@@ -65,6 +56,9 @@ function Table() {
       </Row>
     </TableWrapper>
   )
-}
+};
 
-export default Table
+export default Table;
+
+
+//Tables currently do not have context props. these props will need to be added so there is no hard coded text. we will meet on this later

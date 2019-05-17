@@ -31,7 +31,7 @@ const BadgeLabel = styled.span`
 
 const BadgeIcon = styled(Icon)``;
 
-function Badge({ id, as, label, icon, type, size, position, style, ...props }) {
+function Badge({ id, as, label, icon, type, size, position, style }) {
   let badgeColor = colors.alert;
   let badgeText = colors.white;
   let badgeSize = ".6em";
@@ -136,10 +136,6 @@ function Badge({ id, as, label, icon, type, size, position, style, ...props }) {
   );
 }
 
-Badge.defaultProps = {
-  type: "alert",
-  position: "topRight"
-};
 
 Badge.propTypes = {
   id: PropTypes.string,

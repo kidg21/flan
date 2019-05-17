@@ -18,10 +18,17 @@ export { default as Textarea } from "./atoms/Textarea"
 // Publicly exported files from 'blocks'
 export { default as Accordion } from "./blocks/Accordion"
 export { default as Banner } from "./blocks/Banner"
+export { default as Card } from "./blocks/Card"
+export { default as Group } from "./blocks/Group"
+export { default as MapLegend } from "./blocks/Map"
+export { default as Header } from "./blocks/Panel"
+export { default as RangeSlider } from "./blocks/RangeSlider"
+export { default as Search } from "./blocks/Search"
 export { default as ButtonBlock } from "./blocks/ButtonBlock"
 export { default as IconBlock } from "./blocks/IconBlock"
 export { default as NavBlock } from "./blocks/NavBlock"
 export { default as Table } from "./blocks/Table"
+export { default as Tabs } from "./blocks/Tabs"
 
 // Publicly exported files from 'layout'
 export { default as Card, CardList } from "./layout/Card"

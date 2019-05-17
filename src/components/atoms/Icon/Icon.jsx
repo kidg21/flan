@@ -31,7 +31,6 @@ const StyledIcon = styled(FontAwesomeIcon)`
 function Icon({
   id,
   icon,
-  nameProp,
   size,
   fixedWidth,
   inverse,
@@ -49,8 +48,7 @@ function Icon({
   // stacked,
   children,
   style,
-  className,
-  ...props
+  className
 }) {
   return (
     <StyledIcon
@@ -75,11 +73,6 @@ function Icon({
       {children}
     </StyledIcon>
   )
-}
-
-Icon.defaultProps = {
-  icon: "user-circle",
-  fixedWidth: true
 }
 
 Icon.propTypes = {
