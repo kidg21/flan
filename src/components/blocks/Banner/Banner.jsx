@@ -1,9 +1,9 @@
-import React from "react"
-import PropTypes from "prop-types"
-import styled, { css } from "styled-components"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { colors, shadows } from "Variables"
-import Icon from "atoms/Icon"
+import React from "react";
+import PropTypes from "prop-types";
+import styled, { css } from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { colors, shadows } from "Variables";
+import Icon from "atoms/Icon";
 // import Badge from "atoms/Badge"
 
 const StyledBanner = styled.div`
@@ -23,7 +23,7 @@ const StyledBanner = styled.div`
       : "5px"};
   padding: 1em;
   width: 100%;
-`
+`;
 
 const StatusBadge = styled.div`
   background-color: ${props => props.badgeBG || ""};
@@ -32,11 +32,11 @@ const StatusBadge = styled.div`
   margin-right: 1.25em;
   border-radius: 100%;
   cursor: default;
-`
+`;
 
 const BannerIcon = styled(FontAwesomeIcon)`
   cursor: default;
-`
+`;
 
 const BannerImage = styled.img`
   flex: none;
@@ -44,7 +44,7 @@ const BannerImage = styled.img`
   margin-right: 1em;
   border: 1px solid;
   border-color: ${props => (props.inverse ? colors.grey_60 : colors.grey_40)};
-`
+`;
 
 const Message = styled.section`
   display: grid;
@@ -52,15 +52,15 @@ const Message = styled.section`
   flex: auto;
   align-self: center;
   padding-right: 0.5em;
-`
+`;
 
 const Title = styled.h4`
   margin: 0;
-`
+`;
 
 const Description = styled.h5`
   margin: 0;
-`
+`;
 
 const Link = styled.h4`
   color: inherit;
@@ -73,14 +73,14 @@ const Link = styled.h4`
     opacity: 1;
     text-decoration: underline;
   }
-`
+`;
 
 const Close = styled.section`
   opacity: 0.5;
   &:hover {
     opacity: 1;
   }
-`
+`;
 
 function Banner({
   id,
@@ -100,9 +100,9 @@ function Banner({
   onClose,
   style
 }) {
-  let bannerType
-  let color
-  let badgeBG
+  let bannerType;
+  let color;
+  let badgeBG;
   switch (type) {
     case "media":
       bannerType = icon ? (
@@ -111,47 +111,47 @@ function Banner({
         </StatusBadge>
       ) : img ? (
         <BannerImage src={img} inverse={inverse} />
-      ) : null
-      color = colors.grey_40
-      break
+      ) : null;
+      color = colors.grey_40;
+      break;
     case "info":
-      color = colors.anchor
-      badgeBG = color
+      color = colors.anchor;
+      badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
           <BannerIcon icon="info" fixedWidth anchor />
         </StatusBadge>
-      )
-      break
+      );
+      break;
     case "success":
-      color = colors.success
-      badgeBG = color
+      color = colors.success;
+      badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
           <BannerIcon icon="check" fixedWidth success />
         </StatusBadge>
-      )
-      break
+      );
+      break;
     case "warning":
-      color = colors.warning
-      badgeBG = color
+      color = colors.warning;
+      badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
           <BannerIcon icon="exclamation" fixedWidth warning />
         </StatusBadge>
-      )
-      break
+      );
+      break;
     case "alert":
-      color = colors.alert
-      badgeBG = color
+      color = colors.alert;
+      badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
           <BannerIcon icon="times" fixedWidth alert />
         </StatusBadge>
-      )
-      break
+      );
+      break;
     default:
-      color = colors.grey_40
+      color = colors.grey_40;
   }
   return (
     <StyledBanner
@@ -176,7 +176,7 @@ function Banner({
         <Icon icon="times" />
       </Close>
     </StyledBanner>
-  )
+  );
 }
 
 Banner.propTypes = {
@@ -191,6 +191,6 @@ Banner.propTypes = {
   onClick: PropTypes.func,
   onClose: PropTypes.func,
   style: PropTypes.string
-}
+};
 
-export default Banner
+export default Banner;
