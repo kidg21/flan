@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from "react"
 import PropTypes from "prop-types"
 import styled, { css, keyframes } from "styled-components"
-import { fonts, colors, shadows } from "Variables"
+import { colors } from "Variables"
 import { PlaceholderText } from "../../_helpers/Placeholders"
 import Card, { CardList } from "layout/Card"
 
@@ -13,7 +13,6 @@ const OuterWrapper = styled.div`
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   background-color: ${colors.grey_light};
-  /* Prototype Content - displays when a Panel Section is empty */
   &:empty {
     &:before {
       ${PlaceholderText};
@@ -31,8 +30,7 @@ const InnerWrapper = styled.div`
   flex-direction: column;
   transform: ${props => (props.leftOnscreen ? "translate3d(30%, 0, 0)" : "")};
   transition: all 0.3s ease-in-out;
-  background-color: ${colors.grey_20};
-  /* Prototype Content - displays when a Panel Section is empty */
+  background-color: ${colors.white};
   &:empty {
     &:before {
       ${PlaceholderText};
@@ -51,11 +49,9 @@ const LeftWrapper = styled.section`
   max-height: 100vh;
   overflow: hidden;
   transform: translate3d(-100%, 0, 0);
-  box-shadow: #4b4844 0rem 0rem 1px inset,
-    rgba(75, 72, 68, 1) -1rem 0 1rem -0.5rem inset;
   transition: all 0.3s ease-in-out;
   width: 30%;
-  background-color: ${colors.grey_80};
+  background-color: ${colors.white};
   /* Prototype Content - displays when a Panel Section is empty */
   &:empty {
     &:before {
@@ -79,7 +75,7 @@ const CenterWrapper = styled.section`
   overflow: hidden;
   filter: drop-shadow(0 0 1px black) drop-shadow(0 0 1rem rgba(0, 0, 0, 0.5));
   transition: all 0.3s ease-in-out;
-  background-color: ${colors.grey_40};
+  background-color: ${colors.white};
   /* Prototype Content - displays when a Panel Section is empty */
   &:empty {
     &:before {
@@ -98,9 +94,8 @@ const PanelWrapper = css`
   max-width: 100vw;
   max-height: 100vh;
   overflow: visible;
-  filter: drop-shadow(0 0 1px #4b4844)
-    drop-shadow(0 0 1rem rgba(75, 72, 68, 0.5));
-  ${"" /* transform: none; */}
+  filter: drop-shadow(0 0 1px #4b4844);
+  drop-shadow(0 0 1rem rgba(75, 72, 68, 0.5));
   transition: all 0.3s ease-in-out;
 `
 
@@ -113,7 +108,7 @@ const CenterWrapperTop = styled.section`
     props.topOnscreen
       ? "drop-shadow(0 0 1px black) drop-shadow(0 0 1rem rgba(0, 0, 0, 0.5))"
       : "none"};
-  background-color: ${colors.grey_60};
+  background-color: ${colors.white};
   /* Prototype Content - displays when a Panel Section is empty */
   &:empty {
     &:before {
@@ -128,7 +123,7 @@ const CenterWrapperMiddle = styled.section`
   ${PanelWrapper};
   top: ${props => (props.topOnscreen ? "10%" : "0")};
   bottom: ${props => (props.bottomOnscreen ? "40%" : "0")};
-  background-color: ${colors.anchor};
+  background-color: ${colors.grey_20};
   /* Prototype Content - displays when a Panel Section is empty */
   &:empty {
     &:before {
@@ -150,7 +145,7 @@ const CenterWrapperBottom = styled.section`
     props.bottomOnscreen
       ? "drop-shadow(0 0 1px black) drop-shadow(0 0 1rem rgba(0, 0, 0, 0.5))"
       : "none"};
-  background-color: ${colors.grey_60};
+  background-color: ${colors.white};
   /* Prototype Content - displays when a Panel Section is empty */
   &:empty {
     &:before {
@@ -179,7 +174,7 @@ const RightWrapper = styled.section`
       ? "drop-shadow(0 0 1px black) drop-shadow(0 0 1rem rgba(0, 0, 0, 0.5))"
       : "none"};
   transition: all 0.3s ease-in-out;
-  background-color: ${colors.grey_20};
+  background-color: ${colors.white};
   /* Prototype Content - displays when a Panel Section is empty */
   &:empty {
     &:before {
@@ -200,10 +195,9 @@ const BarWrapper = styled.section`
   max-width: 100vw;
   max-height: 100vh;
   overflow: visible;
-  filter: drop-shadow(0 0 1px black)
-    drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.75));
+  filter: drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.75));
   transition: all 0.3s ease-in-out;
-  background-color: ${colors.black};
+  background-color: ${colors.white};
   /* Prototype Content - displays when a Panel Section is empty */
   &:empty {
     &:before {
@@ -220,7 +214,7 @@ const buttonStyle = {
   lineHeight: "1.4",
   fontWeight: "bold"
 }
-function LayoutMain({ children }) {
+function LayoutMain() {
   // Wrapper Left
   const [leftOnscreen, setLeftOnscreen] = useState(false)
   function toggleLeft() {
@@ -273,7 +267,8 @@ function LayoutMain({ children }) {
       </BarWrapper>
     </OuterWrapper>
   )
-}
+};
+
 
 export {
   LayoutMain as default,
@@ -286,4 +281,4 @@ export {
   CenterWrapperBottom,
   RightWrapper,
   BarWrapper
-}
+};
