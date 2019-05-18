@@ -1,64 +1,31 @@
-import React from "react"
-import PropTypes from "prop-types"
-import styled, { css } from "styled-components"
-import { colors } from "Variables"
-import Icon from "atoms/Icon"
+import React from "react";
+import PropTypes from "prop-types";
+import styled, { css } from "styled-components";
+import { colors } from "Variables";
+import Icon from "atoms/Icon";
 
 const CommandContainer = styled.a`
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-areas: ${props =>
-    props.iconRight ? "'name icon'" : "'icon name'"};
+  justify-self: ${props => props.justifyCommand || ""};
+  grid-template-areas: ${props => props.alignIcon || ""};
+  justify-items: ${props => props.justifyIcon || ""};
   grid-gap: 0.5rem;
   align-items: center;
   width: max-content;
-  font-size: ${props =>
-    props.small
-      ? ".8em"
-      : props.large
-      ? "1.4em"
-      : props.xlarge
-      ? "1.6em"
-      : props.xxlarge
-      ? "1.8em"
-      : props.xxxlarge
-      ? "2em"
-      : "inherit"};
-  color: ${props =>
-    props.success
-      ? colors.success
-      : props.warning
-      ? colors.warning
-      : props.alert
-      ? colors.alert
-      : props.isDisabled
-      ? colors.grey_40
-      : ""};
+  font-size: ${props => props.commandSize || ""};
+  color: ${props => props.commandColor || ""};
   user-select: none;
   cursor: ${props => (props.isDisabled ? "not-allowed" : "")};
   pointer-events: ${props => (props.isDisabled ? "none" : "")};
   transition: all 0.3s ease;
   &:hover {
-    color: ${props =>
-      props.success
-        ? colors.success_dark
-        : props.warning
-        ? colors.warning_dark
-        : props.alert
-        ? colors.alert_dark
-        : colors.anchor_dark};
+    color: ${colors.anchor_dark};
   }
   &:active {
-    color: ${props =>
-      props.success
-        ? colors.success_light
-        : props.warning
-        ? colors.warning_light
-        : props.alert
-        ? colors.alert_light
-        : colors.anchor_light};
+    color: ${colors.anchor_light};
   }
-`
+`;
 
 const CommandName = styled.h6`
   grid-area: name;
@@ -68,69 +35,141 @@ const CommandName = styled.h6`
   white-space: nowrap;
   text-overflow: ellipsis;
   margin: 0;
-`
+`;
 
 const CommandIcon = styled(Icon)`
   grid-area: icon;
-`
+`;
 
 function Command({
   id,
+  name,
   label,
   icon,
-  iconRight,
-  success,
-  warning,
-  alert,
+  align,
+  state,
+  size,
   isDisabled,
-  small,
-  large,
-  xlarge,
-  xxlarge,
-  xxxlarge,
-  style,
-  className
+  style
 }) {
+  let alignIcon = "'icon name'";
+  let justifyCommand = "flex-start";
+  let justifyIcon = "flex-start";
+  let commandColor = colors.anchor;
+  let commandSize = "inherit";
+  switch (name) {
+    case "add to list":
+      icon = "plus";
+      label = "Add To List";
+      break;
+    case "address":
+      icon = "map-marker-alt";
+      label = "Address";
+      break;
+    case "apn":
+      icon = "hashtag";
+      label = "APN";
+      break;
+    case "bookmark":
+      icon = ["far", "bookmark"];
+      label = "Bookmark";
+      break;
+    case "contacts":
+      icon = "users";
+      label = "Contacts";
+      break;
+    case "gps":
+      icon = ["far", "map"];
+      label = "GPS";
+      break;
+    case "menu":
+      icon = "bars";
+      label = "Menu";
+      break;
+    case "notifications":
+      icon = ["far", "bell"];
+      label = "Notifications";
+      break;
+    case "print":
+      icon = "print";
+      label = "Print";
+      break;
+    case "profile":
+      icon = "user";
+      label = "Profile";
+      break;
+    case "settings":
+      icon = ["far", "cog"];
+      label = "Settings";
+      break;
+    case "share":
+      icon = ["far", "share"];
+      label = "Share";
+      break;
+    default:
+      break;
+  }
+  switch (align) {
+    case "center":
+      justifyCommand = "center";
+      alignIcon = "'icon' 'name'";
+      justifyIcon = "center";
+      break;
+    case "right":
+      justifyCommand = "flex-end";
+      alignIcon = "'name icon'";
+      break;
+    default:
+      break;
+  }
+  switch (state) {
+    case "disabled":
+      commandColor = colors.grey_40;
+      isDisabled = true;
+      break;
+    default:
+      break;
+  }
+  switch (size) {
+    case "small":
+      commandSize = ".8em";
+      break;
+    case "large":
+      commandSize = "1.2em";
+      break;
+    default:
+      break;
+  }
   return (
     <CommandContainer
       id={id}
       label={label}
       icon={icon}
-      iconRight={iconRight}
-      success={success}
-      warning={warning}
-      alert={alert}
+      justifyCommand={justifyCommand}
+      alignIcon={alignIcon}
+      justifyIcon={justifyIcon}
+      commandColor={commandColor}
+      commandSize={commandSize}
       isDisabled={isDisabled}
-      small={small}
-      large={large}
-      xlarge={xlarge}
-      xxlarge={xxlarge}
-      xxxlarge={xxxlarge}
-      style={style}
-      className={className}
     >
       {icon ? <CommandIcon icon={icon} /> : null}
       <CommandName>{label}</CommandName>
     </CommandContainer>
-  )
+  );
 }
 
 Command.propTypes = {
   id: PropTypes.string,
-  label: PropTypes.string,
-  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
-  iconRight: PropTypes.bool,
-  success: PropTypes.bool,
-  warning: PropTypes.bool,
-  alert: PropTypes.bool,
-  isDisabled: PropTypes.bool,
-  small: PropTypes.bool,
-  large: PropTypes.bool,
-  xlarge: PropTypes.bool,
-  xxlarge: PropTypes.bool,
-  xxxlarge: PropTypes.bool,
-  xxxlarge: PropTypes.bool,
-  style: PropTypes.string,
-  className: PropTypes.string
-}
-export { Command as default }
+  name: PropTypes.string.isRequired,
+  align: PropTypes.string,
+  state: PropTypes.string,
+  size: PropTypes.string,
+  style: PropTypes.string
+};
+
+Command.defaultProps = {
+  label: "Command",
+  icon: "user-circle"
+};
+
+export { Command as default };

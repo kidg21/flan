@@ -1,9 +1,9 @@
-import React from "react"
-import { storiesOf } from "@storybook/react"
-import styled, { css } from "styled-components"
-import { Padding } from "helpers/Display"
-import Grid from "helpers/Grid"
-import { withInfo } from "@storybook/addon-info"
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import styled, { css } from "styled-components";
+import { Padding } from "helpers/Display";
+import Grid from "helpers/Grid";
+import { withInfo } from "@storybook/addon-info";
 import {
   withKnobs,
   text,
@@ -11,21 +11,23 @@ import {
   radios,
   select,
   number,
+  button,
+  array,
   optionsKnob as options
-} from "@storybook/addon-knobs"
-import { colors, shadows } from "Variables"
-import Command from "atoms/Command"
-import CommandNotes from "./Command.md"
+} from "@storybook/addon-knobs";
+import { colors, shadows } from "Variables";
+import Command from "atoms/Command";
+import CommandNotes from "./Command.md";
 
 const Title = styled.h2`
   font-weight: 400;
   grid-column: 1/-1;
-`
+`;
 
 const SubTitle = styled.h5`
   grid-column: 1/-1;
   margin: 0;
-`
+`;
 
 const SectionTitle = styled.h4`
   grid-column: 1/-1;
@@ -33,7 +35,7 @@ const SectionTitle = styled.h4`
   margin: 0;
   padding-top: 1em;
   border-top: 2px solid ${colors.grey_light};
-`
+`;
 
 const CommandGrid = styled(Grid)`
   grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
@@ -43,8 +45,7 @@ const CommandGrid = styled(Grid)`
   @media (min-width: 64.063em) {
     grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
   }
-`
-
+`;
 // Command
 storiesOf("Atoms|Command", module)
   .addParameters({
@@ -58,7 +59,81 @@ storiesOf("Atoms|Command", module)
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
-  .add("Documentation", withInfo()(() => <Command />))
+  .add(
+    "Documentation",
+    withInfo()(() => (
+      <Command
+        name={select(
+          "name",
+          {
+            "add to list": "add to list",
+            address: "address",
+            apn: "apn",
+            bookmark: "bookmark",
+            contacts: "contacts",
+            gps: "gps",
+            menu: "menu",
+            notifications: "notifications",
+            print: "print",
+            profile: "profile",
+            settings: "settings",
+            share: "share",
+            "---------------------": "",
+            "Custom Command": null
+          },
+          "add to list",
+          "Standard Props"
+        )}
+        align={options(
+          "align",
+          {
+            "left ( default )": "default",
+            right: "right",
+            center: "center"
+          },
+          "default",
+          { display: "radio" },
+          "Standard Props"
+        )}
+        state={options(
+          "state",
+          {
+            "active ( default )": "default",
+            disabled: "disabled"
+          },
+          "default",
+          { display: "radio" },
+          "Standard Props"
+        )}
+        size={options(
+          "size",
+          {
+            small: "small",
+            "standard ( default )": "default",
+            large: "large"
+          },
+          "default",
+          { display: "radio" },
+          "Standard Props"
+        )}
+        label={text("label", "Custom", "Custom Props")}
+        icon={select(
+          "icon",
+          {
+            circle: "user-circle",
+            check: "check",
+            code: ["far", "code"],
+            flag: "flag",
+            home: "home",
+            cog: "cog",
+            phone: "phone"
+          },
+          "user-circle",
+          "Custom Props"
+        )}
+      />
+    ))
+  )
 
   .add("Alignment", () => (
     <Grid>
@@ -66,11 +141,14 @@ storiesOf("Atoms|Command", module)
         <u>Command Alignment</u>
       </Title>
       <SubTitle>
-        The standard Command has a left-aligned Icon. To right-align the
-        Command's Icon, use the 'iconRight' prop.
+        The standard Command is left-aligned with its Icon on the left. Set the
+        'align' prop to 'center' in order to center-align the Command placing
+        its Icon atop the label. Set the 'align' prop to 'right' to right-align
+        the Command with its Icon on the right.
       </SubTitle>
-      <Command label="Standard" />
-      <Command label="Icon-Right" iconRight />
+      <Command label="Icon-Left" />
+      <Command label="Icon-Top" align="center" />
+      <Command label="Icon-Right" align="right" />
     </Grid>
   ))
 
@@ -81,13 +159,10 @@ storiesOf("Atoms|Command", module)
       </Title>
       <SubTitle>
         The standard Command uses an anchor tag and inherits anchor styling. To
-        override, use the 'success', 'warning', 'alert', or 'isDisabled' prop.
+        disable a Command, use the 'disabled' prop.
       </SubTitle>
-      <Command label="Standard" />
-      <Command label="Success" success />
-      <Command label="Warning" warning />
-      <Command label="Alert" alert />
-      <Command label="Disabled" isDisabled />
+      <Command label="Active" />
+      <Command label="Disabled" state="disabled" />
     </Grid>
   ))
 
@@ -97,17 +172,14 @@ storiesOf("Atoms|Command", module)
         <u>Command Size</u>
       </Title>
       <SubTitle>
-        To override the standard size, use the 'small', 'large', 'xlarge',
-        'xxlarge', or 'xxxlarge' prop.
+        To override the standard size, set the 'size' prop to 'small', or
+        'large'.
       </SubTitle>
-      <Command label="Small" small />
+      <Command label="Small" size="small" />
       <Command label="Standard" />
-      <Command label="Large" large />
-      <Command label="X-Large" xlarge />
-      <Command label="XX-Large" xxlarge />
-      <Command label="XXX-Large" xxxlarge />
+      <Command label="Large" size="large" />
     </Grid>
-  ))
+  ));
 
 storiesOf("Application|Libraries/", module)
   .addDecorator(Padding)
@@ -122,17 +194,17 @@ storiesOf("Application|Libraries/", module)
         function.
       </SubTitle>
       <SectionTitle>Standard Commands</SectionTitle>
-      <Command icon="bars" label="Menu" />
-      <Command icon="hashtag" label="APN" />
-      <Command icon="map-marker-alt" label="Address" />
-      <Command icon="print" label="Print" />
-      <Command icon="user" label="Profile" />
-      <Command icon="users" label="Contacts" />
-      <Command icon={["far", "bell"]} label="Notifications" />
-      <Command icon={["far", "bookmark"]} label="Bookmark" />
-      <Command icon={["far", "cog"]} label="Settings" />
-      <Command icon={["far", "map"]} label="GPS" />
-      <Command icon="plus" label="Add To List" />
-      <Command icon={["far", "share"]} label="Share" />
+      <Command name="add to list" />
+      <Command name="address" />
+      <Command name="apn" />
+      <Command name="bookmark" />
+      <Command name="contacts" />
+      <Command name="gps" />
+      <Command name="menu" />
+      <Command name="notifications" />
+      <Command name="print" />
+      <Command name="profile" />
+      <Command name="settings" />
+      <Command name="share" />
     </CommandGrid>
-  ))
+  ));
