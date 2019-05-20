@@ -19,7 +19,7 @@ display: flex;
 flex-direction: column;
 flex: none;
 height: 100vh;
-width: 20%;
+width: 25%;
 background-color: blue;
 @media (max-width: 700px) {
     width: 100%;
@@ -34,7 +34,7 @@ right: 0;
 flex-direction: column;
 flex: none;
 height: 100vh;
-width: 20%;
+width: 25%;
 background-color: red;
 @media (max-width: 700px) {
     width: 100%;
