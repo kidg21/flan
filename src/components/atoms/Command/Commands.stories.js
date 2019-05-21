@@ -120,7 +120,7 @@ storiesOf("Atoms|Command", module)
         icon={select(
           "icon",
           {
-            circle: "user-circle",
+            "user-circle": "user-circle",
             check: "check",
             code: ["far", "code"],
             flag: "flag",

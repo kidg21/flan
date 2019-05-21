@@ -1,12 +1,12 @@
-import React, { useState } from "react"
-import styled from "styled-components"
+import React, { useState } from "react";
+import styled from "styled-components";
 import PropTypes from "prop-types";
 
 const SwitchContainer = styled.div`
   position: relative;
   display: inline-block;
   vertical-align: middle;
-`
+`;
 const HiddenSwitch = styled.input.attrs({ type: "checkbox" })`
   border: 0;
   clip: rect(0 0 0 0);
@@ -22,7 +22,7 @@ const HiddenSwitch = styled.input.attrs({ type: "checkbox" })`
   left: 0;
   white-space: nowrap;
   width: 1px;
-`
+`;
 
 const Circle = styled.div`
   position: absolute;
@@ -37,7 +37,7 @@ const Circle = styled.div`
   transition: transform 300ms ease-in-out;
   transform: ${props =>
     props.checked ? "translateX(15px)" : "translateX(-1px)"};
-`
+`;
 
 const StyledSwitch = styled.div`
   width: 30px;
@@ -50,8 +50,7 @@ const StyledSwitch = styled.div`
     props.checked ? "linear-gradient(#75ab3f, #94d850);" : "white"};
   transition: 0.4s ease;
   cursor: pointer;
-`
-
+`;
 
 const Toggle = ({ checked, ...props }) => (
   <SwitchContainer>
@@ -60,19 +59,18 @@ const Toggle = ({ checked, ...props }) => (
       <Circle checked={checked} {...props} />
     </StyledSwitch>
   </SwitchContainer>
-)
+);
 
-const Switch = ({checked, id, ...props}) => {
+const Switch = ({ checked, id, ...props }) => {
   return (
     <label>
       <Toggle checked={checked} id={id} {...props} />
     </label>
   );
-}
-
-Switch.propTypes = {
-  id: PropTypes.string,
 };
 
+Switch.propTypes = {
+  id: PropTypes.string
+};
 
 export { Switch as default };
