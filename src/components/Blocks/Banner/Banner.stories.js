@@ -1,8 +1,8 @@
-import React from "react"
-import { storiesOf } from "@storybook/react"
-import { withInfo } from "@storybook/addon-info"
-import { Padding } from "helpers/Display"
-import Grid from "helpers/Grid"
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import { withInfo } from "@storybook/addon-info";
+import { Padding } from "helpers/Display";
+import Grid from "helpers/Grid";
 import {
   withKnobs,
   text,
@@ -11,9 +11,9 @@ import {
   select,
   number,
   optionsKnob as options
-} from "@storybook/addon-knobs"
-import Banner from "blocks/Banner"
-import BannerNotes from "./Banner.md"
+} from "@storybook/addon-knobs";
+import Banner from "blocks/Banner";
+import BannerNotes from "./Banner.md";
 
 storiesOf("Blocks|Banner", module)
   .addParameters({
@@ -26,9 +26,14 @@ storiesOf("Blocks|Banner", module)
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
-  .add("Documentation", withInfo()(() => <Banner />))
+  .add(
+    "Documentation",
+    withInfo()(() => (
+      <Banner title="This is a Standard notification telling you stuff." />
+    ))
+  )
   .add("Standard Banners", () => (
-    <Grid>
+    <Grid col_1>
       <Banner title="This is a Standard notification telling you stuff." />
       <Banner
         title="This is a Standard notification that includes a description."
@@ -42,7 +47,7 @@ storiesOf("Blocks|Banner", module)
     </Grid>
   ))
   .add("Inverse Banners", () => (
-    <Grid>
+    <Grid col_1>
       <Banner
         title="This is a Standard notification telling you stuff."
         inverse={true}
@@ -61,7 +66,7 @@ storiesOf("Blocks|Banner", module)
     </Grid>
   ))
   .add("Info Banner", () => (
-    <Grid>
+    <Grid col_1>
       <Banner type="info" title="This is a Standard Info notification." />
       <Banner
         type="info"
@@ -71,7 +76,7 @@ storiesOf("Blocks|Banner", module)
     </Grid>
   ))
   .add("Success Banner", () => (
-    <Grid>
+    <Grid col_1>
       <Banner type="success" title="This is a Standard Success notification." />
       <Banner
         type="success"
@@ -81,7 +86,7 @@ storiesOf("Blocks|Banner", module)
     </Grid>
   ))
   .add("Warning Banner", () => (
-    <Grid>
+    <Grid col_1>
       <Banner type="warning" title="This is a Standard Warning notification." />
       <Banner
         type="warning"
@@ -91,7 +96,7 @@ storiesOf("Blocks|Banner", module)
     </Grid>
   ))
   .add("Alert Banner", () => (
-    <Grid>
+    <Grid col_1>
       <Banner type="alert" title="This is a Standard Error notification." />
       <Banner
         type="alert"
@@ -101,7 +106,7 @@ storiesOf("Blocks|Banner", module)
     </Grid>
   ))
   .add("Icon Banner", () => (
-    <Grid>
+    <Grid col_1>
       <Banner
         type="media"
         icon="home"
@@ -120,7 +125,7 @@ storiesOf("Blocks|Banner", module)
     </Grid>
   ))
   .add("Image Banner", () => (
-    <Grid>
+    <Grid col_1>
       <Banner
         type="media"
         img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
@@ -139,7 +144,7 @@ storiesOf("Blocks|Banner", module)
     </Grid>
   ))
   .add("The Banner Family", () => (
-    <Grid>
+    <Grid col_1>
       <Banner title="This is a Standard notification telling you stuff." />
       <Banner
         title="This is an Inverse notification telling you stuff."
@@ -220,4 +225,4 @@ storiesOf("Blocks|Banner", module)
         inverse={true}
       />
     </Grid>
-  ))
+  ));
