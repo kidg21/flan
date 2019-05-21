@@ -48,12 +48,11 @@ const RadioLabel = styled.label`
   cursor: pointer;
 `
 
-function Radio({ id, name, label, value, error, disabled, ...props }) {
+function Radio({ id, name, label, value, error, disabled }) {
   return (
     <RadioContainer
       disabled={disabled} // input attribute>
       error={error} // input attribute>
-      {...props}
     >
       <RadioInput
         id={id}
@@ -61,20 +60,11 @@ function Radio({ id, name, label, value, error, disabled, ...props }) {
         value={value}
         disabled={disabled}
         error={error} // input attribute>
-        {...props}
       />
       <RadioLabel htmlFor={id}>{label}</RadioLabel>
     </RadioContainer>
   )
 }
-
-Radio.defaultProps = {
-  id: "r1",
-  label: "Radio Label",
-  name: "radio",
-  value: "1"
-}
-
 Radio.propTypes = {
   /** This is the Left nav command. */
   id: PropTypes.string,

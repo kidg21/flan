@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 import Header from "./Header";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
-import Group from "./Group";
+// import Group from "./Group";
 
 // Colors
 storiesOf("Blocks|Panel Headers", module)
@@ -23,9 +23,9 @@ storiesOf("Blocks|Panel Headers", module)
     <div>
       <Header title="Filter" twoParts={true} />{" "}
     </div>
-  ))
-  .add("Group", () => (
-    <div>
-      <Group title="My DMP Layers" number="2" />
-    </div>
   ));
+// .add("Group", () => (
+//   <div>
+//     <Group title="My DMP Layers" number="2" />
+//   </div>
+// ));

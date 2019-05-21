@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Container from "atoms/Container/Container";
+import Container from "atoms/Container";
 import Tabs, { Tab } from "blocks/Tabs";
 import Icon from "atoms/Icon";
 import Input from "atoms/Input";
@@ -36,9 +36,10 @@ const TextInput = styled.input`
   }
 `;
 
-function Search({}) {
+function Search({id}) {
   return (
-    <SearchContainer>
+    <SearchContainer
+    id={id}>
       <Container
         style={{
           justifyContent: "space-between",
@@ -65,12 +66,11 @@ function Search({}) {
   );
 }
 
-Search.defaultProps = {
-  id: ""
-};
-
 Search.propTypes = {
   id: PropTypes.string
 };
 
 export default Search;
+
+
+///this one will need more work on setting up for logic like Autocomplete and everything else

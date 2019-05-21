@@ -7,7 +7,7 @@ import Select from "react-select"
 
 const selectStyles = {
   // Wrapper
-  container: (styles, { isDisabled, isFocused, isSelected, ...props }) => ({
+  container: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
     fontFamily: fonts.data
   }),
@@ -130,7 +130,7 @@ const SelectMenuContainer = styled.div`
   color: ${props =>
     props.error ? colors.alert : props.disabled ? colors.grey_40 : ""};
 `
-function SelectMenu({ inputLabel, isRequired, helpText, errorText, ...props }) {
+function SelectMenu({ inputLabel, isRequired, helpText, errorText }) {
   return (
     <SelectMenuContainer
       isRequired={isRequired}
@@ -152,7 +152,6 @@ function SelectMenu({ inputLabel, isRequired, helpText, errorText, ...props }) {
         isDisabled={props.disabled}
         isLoading={props.isLoading}
         isRtl={props.isRtl}
-        {...props}
       />
       {/* Help Text */}
       {helpText ? <HelpText helpText={helpText} /> : null}
@@ -162,32 +161,19 @@ function SelectMenu({ inputLabel, isRequired, helpText, errorText, ...props }) {
   )
 }
 
-SelectMenu.defaultProps = {
-  name: "SelectMenu Name",
-  placeholder: "Select Something...",
-  options: [
-    { value: "one", label: "Option #1" },
-    { value: "two", label: "Option #2" },
-    { value: "three", label: "Option #3" }
-  ],
-  required: false,
-  disabled: false,
-  multiSelect: false,
-  error: false,
-  errorText: "Error text for the SelectMenu component",
-  isClearable: true,
-  isSearchable: true,
-  isLoading: false,
-  displayInline: false,
-  isRtl: false
-}
+  // options: [
+  //   { value: "one", label: "Option #1" },
+  //   { value: "two", label: "Option #2" },
+  //   { value: "three", label: "Option #3" }
+  // ],
 
 SelectMenu.propTypes = {
   id: PropTypes.string,
   name: PropTypes.string,
   placeholder: PropTypes.string,
   options: PropTypes.array,
-  required: PropTypes.bool,
+  inputLabel: PropTypes.string.isRequired,
+  isRequired: PropTypes.bool,
   disabled: PropTypes.bool,
   multiSelect: PropTypes.bool,
   error: PropTypes.bool,

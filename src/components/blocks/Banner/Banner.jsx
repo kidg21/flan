@@ -98,8 +98,7 @@ function Banner({
   inverse,
   onClick,
   onClose,
-  style,
-  ...props
+  style
 }) {
   let bannerType
   let color
@@ -180,14 +179,10 @@ function Banner({
   )
 }
 
-Banner.defaultProps = {
-  title: "Title Alert"
-}
-
 Banner.propTypes = {
   id: PropTypes.string,
   type: PropTypes.oneOf(["media", "info", "success", "warning", "alert"]),
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
   description: PropTypes.string,
   link: PropTypes.string,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),

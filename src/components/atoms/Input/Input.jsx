@@ -100,8 +100,8 @@ function Input({
   inputLabel, // Label prop
   placeholder,
   helpText,
-  isRequired, // Label prop
   disabled,
+  isRequired,
   isRound,
   twoInputs,
   id_2,
@@ -122,8 +122,7 @@ function Input({
   buttonLabel,
   error,
   errorText,
-  style,
-  ...props
+  style
 }) {
   return (
     <TextInputContainer
@@ -165,7 +164,6 @@ function Input({
         disabled={disabled} // input attribute
         error={error}
         isRound={isRound}
-        {...props}
       />
       {/* Column 2 (conditional) */}
       {twoInputs || threeInputs ? (
@@ -179,7 +177,6 @@ function Input({
           disabled={disabled} // input attribute
           error={error}
           isRound={isRound}
-          {...props}
         />
       ) : null}
       {/* Column 3 (conditional) */}
@@ -194,7 +191,6 @@ function Input({
           disabled={disabled} // input attribute
           error={error}
           isRound={isRound}
-          {...props}
         />
       ) : null}
       {/* Postfix (conditional) */}
@@ -222,27 +218,13 @@ function Input({
   )
 }
 
-Input.defaultProps = {
-  id: "",
-  type: "text",
-  pattern: "alpha",
-  placeholder: "Placeholder Text",
-  disabled: false,
-  error: false,
-  isRound: false,
-  errorText: "Error text for the Input component",
-  twoInputs: false,
-  placeholder_2: "Placeholder 2",
-  threeInputs: false,
-  placeholder_3: "Placeholder 3"
-}
 
 Input.propTypes = {
   id: PropTypes.string,
   type: PropTypes.string,
   pattern: PropTypes.string,
   value: PropTypes.string,
-  inputLabel: PropTypes.string,
+  inputLabel: PropTypes.string.isRequired,
   placeholder: PropTypes.string,
   helpText: PropTypes.string,
   isRequired: PropTypes.bool,

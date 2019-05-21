@@ -128,25 +128,18 @@ const InputGroup = styled(Grid)`
   }
 `
 
-InputLabel.defaultProps = {
-  inputLabel: "",
-  isRequired: false
-}
+
 InputLabel.propTypes = {
   inputLabel: PropTypes.string,
   isRequired: PropTypes.bool
 }
 
-HelpText.defaultProps = {
-  helpText: "Help Text Goes Here"
-}
+
 HelpText.propTypes = {
   helpText: PropTypes.string
 }
 
-ErrorText.defaultProps = {
-  errorText: "This message appears when the input is invalid"
-}
+
 ErrorText.propTypes = {
   errorText: PropTypes.string.isRequired
 }

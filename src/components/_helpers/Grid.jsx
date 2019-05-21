@@ -119,8 +119,7 @@ function Grid({
   alignRight,
   style,
   className,
-  children,
-  ...props
+  children
 }) {
   return (
     <GridWrapper

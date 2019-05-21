@@ -16,12 +16,17 @@ const Block = styled.div`
   }
 `
 
-function IconBlock({ stacked, style, ...props }) {
+function IconBlock({ id, stacked, children, style }) {
   return (
     <Block stacked={stacked} style={style}>
-      {props.children}
+      {children}
     </Block>
   )
+}
+
+IconBlock.propTypes = {
+  id: PropTypes.string,
+  children: PropTypes.any.isRequired,
 }
 
 export default IconBlock

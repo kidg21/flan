@@ -44,9 +44,6 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
 
   }
 
-
-
-
   &::-moz-range-thumb {
     width: 25px;
     height: 25px;
@@ -56,18 +53,13 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
   }
 `
 
-
-
-function Slider({id, value, min, max, step, ...props}) {
+function Slider({id, value, min, max, step}) {
   return (
   <div>
     <SliderPiece/>
   </div>
     )
 };
-
-
-
 Slider.propTypes = {
   id: PropTypes.string,
   label: PropTypes.string,
@@ -76,7 +68,4 @@ Slider.propTypes = {
   max: PropTypes.string,
   step: PropTypes.string
 }
-
-
-
 export default Slider

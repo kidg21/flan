@@ -40,7 +40,7 @@ const TextareaInput = styled.textarea`
   }
 `
 
-function Textarea({ id, inputLabel, isRequired, helpText, errorText, ...props }) {
+function Textarea({ id, inputLabel, isRequired, helpText, errorText }) {
   return (
     <TextareaContainer
       disabled={props.disabled} // input attribute
@@ -56,7 +56,6 @@ function Textarea({ id, inputLabel, isRequired, helpText, errorText, ...props })
         value={props.value} // input attribute
         placeholder={props.placeholder} // input attribute
         pattern={props.pattern}
-        {...props}
       />
       {/* Help Text */}
       {helpText ? <HelpText helpText={helpText} /> : null}
@@ -64,15 +63,6 @@ function Textarea({ id, inputLabel, isRequired, helpText, errorText, ...props })
       {props.error ? <ErrorText errorText={errorText} /> : null}
     </TextareaContainer>
   )
-}
-
-Textarea.defaultProps = {
-  name: "Textarea Name",
-  pattern: "alpha",
-  placeholder: "Placeholder Text",
-  disabled: false,
-  error: false,
-  errorText: "Error text for the Text Area component"
 }
 
 Textarea.propTypes = {

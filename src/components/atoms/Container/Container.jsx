@@ -14,6 +14,4 @@ function BoxContainer() {
     <BoxContainer/>
   );
   }
-
-BoxContainer.propTypes = propTypes;
 export default Container;

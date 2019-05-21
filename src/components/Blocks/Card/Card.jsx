@@ -2,8 +2,8 @@ import React from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
-import Switch from "atoms/Switch/Switch";
-import IconBlock from "blocks/IconBlock/IconBlock";
+import Switch from "atoms/Switch";
+import IconBlock from "blocks/IconBlock";
 
 // style={{ fontFamily: "arial", fontWeight: 400, fontSize: "12px" }}
 
@@ -44,13 +44,12 @@ const HeaderLayout = styled.div`
 // ) : (
 //   <Icon icon={["far", "angle-up"]} />
 
-function Card({ title, switchProps, ...props }) {
+function Card({ title, switchProps, layer, info, navigation }) {
   return (
-    <div>
       <HeaderLayout
-        layer={props.layer}
-        info={props.info}
-        navigation={props.navigation}
+        layer={layer}
+        info={info}
+        navigation={navigation}
       >
         <Left>
           {props.layer ? (
@@ -78,17 +77,8 @@ function Card({ title, switchProps, ...props }) {
           ) : null}
         </Right>
       </HeaderLayout>
-    </div>
   );
 }
-
-Card.defaultProps = {
-  title: "Information Header",
-  layer: false,
-  info: false,
-  navigation: false
-};
-
 Card.propTypes = {
   title: PropTypes.string.isRequired,
   layer: PropTypes.bool,

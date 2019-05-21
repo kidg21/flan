@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import App from "./Arrow";
-import LanguageSelect from "../../base/LanguageSelect";
+import LanguageSelect from "../../components/base/LanguageSelect";
 
 const AppTwo = () => {
   return (

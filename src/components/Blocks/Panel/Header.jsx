@@ -31,56 +31,65 @@ const TitleContainer = styled.div`
   // width: 12rem;
 `;
 
-function Header({ title, ...props }) {
+const TwoPartContainer = styled(TitleContainer)`
+padding-left: 0.5em;
+`
+
+const PropertyContainer = styled(TitleContainer)`
+padding-left: 0.5em;
+width: 12rem;
+`
+
+const H4 = styled.h4`
+`
+
+const Slot = styled.div`
+`
+const PropertySlot = styled.div`
+display: flex;
+`
+
+function Header({ id, title, twoParts, threeParts, property }) {
   return (
-    <div>
-      {/* <Container>
-        <Icon icon={["fal", "times"]} style={{ filter: "brightness(200%)" }} />
-      </Container> */}
       <HeaderLayout
-        twoParts={props.twoParts}
-        threeParts={props.threeParts}
-        property={props.property}
+        twoParts={twoParts}
+        threeParts={threeParts}
+        property={property}
+        id={id}
       >
-        <div>
+        <Slot>
           {props.twoParts ? (
-            <TitleContainer style={{ paddingLeft: "0.5em" }}>
-              <h4>{title}</h4>
-            </TitleContainer>
+            <TwoPartContainer>
+              <H4>{title}</H4>
+            </TwoPartContainer>
           ) : props.threeParts ? (
             <Icon icon={["far", "angle-left"]} />
           ) : props.property ? (
-            <div style={{ display: "flex" }}>
-              <TitleContainer style={{ paddingLeft: "0.5em", width: "12rem" }}>
-                <h4>{title}</h4>
-              </TitleContainer>
+            <PropertySlot>
+              <PropertyContainer>
+                <H4>{title}</H4>
+              </PropertyContainer>
               <Icon icon={["fal", "directions"]} size="lg" anchor />
-            </div>
+            </PropertySlot>
           ) : null}
-        </div>
+        </Slot>
         {props.twoParts ? (
           ""
         ) : props.threeParts ? (
           <TitleContainer>
-            <h4>{title}</h4>
+            <H4>{title}</H4>
           </TitleContainer>
         ) : props.property ? (
           ""
         ) : null}
         <Icon icon={["far", "ellipsis-v"]} />
       </HeaderLayout>
-    </div>
   );
 }
 
-Header.defaultProps = {
-  title: "Panel Header",
-  twoParts: false,
-  threeParts: false,
-  property: false
-};
 
 Header.propTypes = {
+  id: PropTypes.string,
   title: PropTypes.string.isRequired,
   twoParts: PropTypes.bool,
   threeParts: PropTypes.bool,

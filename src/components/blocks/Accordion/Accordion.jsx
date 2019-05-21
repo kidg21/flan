@@ -10,27 +10,18 @@ const AccordionSection = styled.div`
   cursor: pointer;
 `;
 
-const Accordion = ({ header, children, visibility, ...props }) => {
+const Accordion = ({ id, header, children, visibility }) => {
   // const [visibility, setVisibility] = useState(false);
 
   return (
     <Fragment>
-      <AccordionSection
-        { ...props}
-      >
+      <AccordionSection>
         <Fragment>{header}</Fragment>
       </AccordionSection>
       {visibility ? <Fragment>{children}</Fragment> : null}
     </Fragment>
   );
 };
-
-
-
-Accordion.defaultProps = {
-  id: ""
-}
-
 Accordion.propTypes = {
   id: PropTypes.string,
   children: PropTypes.any.isRequired,

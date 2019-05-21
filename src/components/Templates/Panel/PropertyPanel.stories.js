@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 import Header from "blocks/Panel/Header";
 import Table from "blocks/Table";
 import Card from "blocks/Card/Card";
-import Group from "blocks/Panel/Group";
+import Group from "blocks/Group/Group";
 import Container from "atoms/Container";
 import Accordion from "blocks/Accordion/Accordion";
 import Panel, { PanelSection } from "layout/Panel";

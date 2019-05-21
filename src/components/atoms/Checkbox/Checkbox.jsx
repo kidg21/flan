@@ -1,7 +1,7 @@
-import React, { useState } from "react"
-import styled, { css } from "styled-components"
+import React from "react"
+import styled from "styled-components"
 import PropTypes from "prop-types"
-import { colors, fonts, fontSize, shadows } from "Variables"
+import { colors} from "Variables"
 
 const CheckboxContainer = styled.div`
   display: grid;
@@ -48,33 +48,24 @@ const CheckboxLabel = styled.label`
   cursor: pointer;
 `
 
-function Checkbox({ id, label, error, disabled, ...props }) {
+function Checkbox({ id, label, error, disabled }) {
   return (
     <CheckboxContainer
-      disabled={disabled} // input attribute>
-      error={error} // input attribute>
-      {...props}
+      disabled={disabled}
+      error={error}
     >
       <CheckboxInput
         id={id}
         disabled={disabled}
-        error={error} // input attribute>
-        {...props}
+        error={error}
       />
       <CheckboxLabel htmlFor={id}>{label}</CheckboxLabel>
     </CheckboxContainer>
   )
 }
 
-Checkbox.defaultProps = {
-  id: "c1",
-  label: "Checkbox Label"
-}
-
 Checkbox.propTypes = {
-  /** This is the Left nav command. */
   id: PropTypes.string,
-  /** This is nav Title.  It is required. */
   label: PropTypes.string.isRequired
 }
 

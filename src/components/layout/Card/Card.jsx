@@ -44,8 +44,10 @@ const CardList = styled(Grid)`
   }
 `
 
-function Card({ ...props }) {
-  return <CardWrapper>{props.children}</CardWrapper>
+function Card({ id, children}) {
+  return <CardWrapper>{children}</CardWrapper>
 }
+
+
 
 export { Card as default, CardList }
