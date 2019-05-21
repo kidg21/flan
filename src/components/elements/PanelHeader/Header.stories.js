@@ -6,7 +6,7 @@ import { Padding } from "helpers/Display";
 // import Group from "./Group";
 
 // Colors
-storiesOf("Blocks|Panel Headers", module)
+storiesOf("Elements|Panel Headers", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
   .add("Navigation", () => (

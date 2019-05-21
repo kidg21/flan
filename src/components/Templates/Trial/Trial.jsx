@@ -25,7 +25,7 @@ height: 100vh;
 width: 25%;
 background-color: white;
 @media (max-width: 700px) {
-    width: 100%;
+    width: 95%;
   }
 
 `
@@ -40,7 +40,7 @@ height: 100vh;
 width: 25%;
 background-color: white;
 @media (max-width: 700px) {
-    width: 100%;
+    width: 95%;
   }
 `
 

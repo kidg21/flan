@@ -14,7 +14,8 @@ const Accordion = ({ id, header, children, visibility }) => {
   // const [visibility, setVisibility] = useState(false);
 
   return (
-    <Fragment>
+    <Fragment
+    id={id}>
       <AccordionSection>
         <Fragment>{header}</Fragment>
       </AccordionSection>
@@ -24,7 +25,7 @@ const Accordion = ({ id, header, children, visibility }) => {
 };
 Accordion.propTypes = {
   id: PropTypes.string,
-  children: PropTypes.any.isRequired,
+  children: PropTypes.any,
   header: PropTypes.any.isRequired,
 }
 

@@ -3,11 +3,7 @@ import { storiesOf } from "@storybook/react";
 import Accordion from "blocks/Accordion";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
-
-// import PropertyInfo from "./PropertyInfo";
-// import MapLegend from "../Map/MapLegend";
 import Container from "atoms/Container";
-import Table from "blocks/Table";
 
 storiesOf("Blocks|Accordion", module)
   .addDecorator(Padding)
