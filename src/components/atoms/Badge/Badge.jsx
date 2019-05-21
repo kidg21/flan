@@ -136,7 +136,6 @@ function Badge({ id, as, label, icon, type, size, position, style }) {
   );
 }
 
-
 Badge.propTypes = {
   id: PropTypes.string,
   label: PropTypes.string,
@@ -160,6 +159,11 @@ Badge.propTypes = {
     "bottomLeft"
   ]),
   style: PropTypes.string
+};
+
+Badge.defaultProps = {
+  type: "alert",
+  position: "topRight"
 };
 
 export { Badge as default };
