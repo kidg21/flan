@@ -41,6 +41,6 @@
     ]
   ],
   "presets": [
-    "es2015", "stage-0", "react", "airbnb"
+    "@babel/preset-env", "@babel/preset-react", "airbnb"
   ]
 }

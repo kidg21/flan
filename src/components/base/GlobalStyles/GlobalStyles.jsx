@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components"
-//import styledNormalize from "styled-normalize"
+import styledNormalize from "styled-normalize"
 // Import variables
 import { colors, fonts, fontSize } from "Variables"
 // Import Fonts
@@ -7,13 +7,10 @@ import "../../../css/fonts.css"
 // Import Icons
 //import "../../../icons/fontawesome"
 
-/**
- *    Browser resets 
- ${styledNormalize}
- */
 const GlobalStyles = createGlobalStyle`
 
- 
+    /* Browser resets */
+    ${styledNormalize}
 
     /* Import font resources */
     ${
