@@ -58,13 +58,13 @@ function Header({ id, title, twoParts, threeParts, property }) {
         id={id}
       >
         <Slot>
-          {props.twoParts ? (
+          {twoParts ? (
             <TwoPartContainer>
               <H4>{title}</H4>
             </TwoPartContainer>
-          ) : props.threeParts ? (
+          ) : threeParts ? (
             <Icon icon={["far", "angle-left"]} />
-          ) : props.property ? (
+          ) : property ? (
             <PropertySlot>
               <PropertyContainer>
                 <H4>{title}</H4>
@@ -73,13 +73,13 @@ function Header({ id, title, twoParts, threeParts, property }) {
             </PropertySlot>
           ) : null}
         </Slot>
-        {props.twoParts ? (
+        {twoParts ? (
           ""
-        ) : props.threeParts ? (
+        ) : threeParts ? (
           <TitleContainer>
             <H4>{title}</H4>
           </TitleContainer>
-        ) : props.property ? (
+        ) : property ? (
           ""
         ) : null}
         <Icon icon={["far", "ellipsis-v"]} />

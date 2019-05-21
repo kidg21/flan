@@ -73,10 +73,10 @@ function PopCard({ id, title, message, action }) {
   <MessageBody>{message}</MessageBody>
         </MessageContainer>
         <Actions>
-          <Button label={action} isRound={true} isExtraSmall={true} />
+          <Button buttonLabel={action} isRound={true} isExtraSmall={true} />
           <Space />
           <Button
-            label="No thanks"
+            buttonLabel="No thanks"
             isSecondStandard={true}
             isRound={true}
             isExtraSmall={true}

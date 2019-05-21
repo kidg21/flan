@@ -40,39 +40,37 @@ const HeaderLayout = styled.div`
   box-shadow: 0 0 0px rgba(0, 0, 0, 0.08);
 `;
 
-//   <Icon icon={["far", "angle-down"]} />
-// ) : (
-//   <Icon icon={["far", "angle-up"]} />
 
-function Card({ title, switchProps, layer, info, navigation }) {
+function Card({ id, title, layer, info, navigation, ...switchProps}) {
   return (
       <HeaderLayout
+        id={id}
+        title={title}
         layer={layer}
         info={info}
         navigation={navigation}
       >
         <Left>
-          {props.layer ? (
+          {layer ? (
             <LayerLeft>
               <Switch {...switchProps} />
               <CardTitle style={LayerStyle}>{title}</CardTitle>
             </LayerLeft>
-          ) : props.navigation ? (
+          ) : navigation ? (
             <CardTitle>{title}</CardTitle>
-          ) : props.info ? (
+          ) : info ? (
             <CardTitle>{title}</CardTitle>
           ) : null}
         </Left>
         <Right>
-          {props.layer ? (
-            <IconBlock style={blockStyle}>
+          {layer ? (<IconBlock style={blockStyle}>
               <Icon icon={["far", "expand-arrows"]} />
               <Icon icon={["far", "share"]} />
               <Icon icon={["far", "filter"]} />
             </IconBlock>
-          ) : props.navigation ? (
+          ) : navigation ? (
             <Icon icon={["far", "angle-right"]} />
-          ) : props.info ? (
+          ) : info ? (
             <Icon icon={["far", "angle-up"]} />
           ) : null}
         </Right>
@@ -80,6 +78,7 @@ function Card({ title, switchProps, layer, info, navigation }) {
   );
 }
 Card.propTypes = {
+  id: PropTypes.string,
   title: PropTypes.string.isRequired,
   layer: PropTypes.bool,
   navigation: PropTypes.bool,

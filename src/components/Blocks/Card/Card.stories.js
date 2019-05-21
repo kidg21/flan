@@ -16,48 +16,47 @@ storiesOf("Blocks|Card", module)
       action="Do it!"
     />
   ));
-storiesOf("Blocks|Card", module)
-  .add("Pop-up Card", () => (
-    <PopCard
-      title="Pop Out Alert"
-      message="Something happened and this is the message about it. Hey how you doing? Good? That's nice. Okay Bye"
-      action="Do it!"
-    />
-  ))
-  .add("Layer Card", () =>
-    React.createElement(() => {
-      const [checked, setChecked] = useState(false);
-      return (
-        <div>
-          <Card
-            title="Trial Card"
-            layer={true}
-            switchProps={{
-              checked: checked,
-              onChange: () => {
-                setChecked(!checked);
-              }
-            }}
-          />
-        </div>
-      );
-    })
-  )
-  .add("Info Card", () =>
-    React.createElement(() => {
-      return (
-        <div>
-          <Card title="Trial Card" info={true} />
-        </div>
-      );
-    })
-  )
-  .add("Navigation Card", () =>
-    React.createElement(() => {
-      return (
-        <div>
-          <Card title="Trial Card" navigation={true} />
-        </div>
-      );
-    })
-  );
+storiesOf("Blocks|Card", module).add("Pop-up Card", () => (
+  <PopCard
+    title="Pop Out Alert"
+    message="Something happened and this is the message about it. Hey how you doing? Good? That's nice. Okay Bye"
+    action="Do it!"
+  />
+))
+.add("Layer Card", () =>
+  React.createElement(() => {
+    const [checked, setChecked] = useState(false);
+    return (
+      <div>
+        <Card
+          title="Trial Card"
+          layer={true}
+          switchProps={{
+            checked: checked,
+            onChange: () => {
+              setChecked(!checked);
+            }
+          }}
+        />
+      </div>
+    );
+  })
+)
+.add("Info Card", () =>
+  React.createElement(() => {
+    return (
+      <div>
+        <Card title="Trial Card" info={true} />
+      </div>
+    );
+  })
+)
+.add("Navigation Card", () =>
+  React.createElement(() => {
+    return (
+      <div>
+        <Card title="Trial Card" navigation={true} />
+      </div>
+    );
+  })
+);

@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
-import { I18nContext } from "../../locales/index";
+import { I18nContext } from "../../../locales/index";
+import LanguageSelect from "../../base/LanguageSelect";
 
 const App = ({ title }) => {
   const { translate } = useContext(I18nContext);
@@ -9,10 +10,10 @@ const App = ({ title }) => {
       <div>
         <p>{translate("edit_and_save")}</p>
         <a> {translate("learn_react")} </a>
-        <p> {title} </p>
         <div>
           <p>hello friends this is neutral text</p>
         </div>
+        <LanguageSelect />
       </div>
     </div>
   );

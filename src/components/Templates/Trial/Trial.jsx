@@ -1,5 +1,8 @@
-import React from "react";
+import React, {Fragment} from "react";
 import styled, { css } from 'styled-components';
+import Mapbox from '../../layout/Map/Map';
+import PropTypes from "prop-types"
+import Tabs, { Tab } from "blocks/Tabs";
 
 
 const App = styled.div`
@@ -20,7 +23,7 @@ flex-direction: column;
 flex: none;
 height: 100vh;
 width: 25%;
-background-color: blue;
+background-color: white;
 @media (max-width: 700px) {
     width: 100%;
   }
@@ -35,20 +38,53 @@ flex-direction: column;
 flex: none;
 height: 100vh;
 width: 25%;
-background-color: red;
+background-color: white;
 @media (max-width: 700px) {
     width: 100%;
   }
 `
 
-function Trial({id }) {
+// const PanelContent = styled.div`
+// position: absolute;
+// display: flex;
+// right: 0;
+// flex-direction: column;
+// flex: none;
+// height: 100vh;
+// width: 25%;
+// background-color: white;
+// @media (max-width: 700px) {
+//     width: 100%;
+//   }
+// `
+
+const Controls = styled.div`
+position: absolute;
+right:0;
+width: 20%;
+flex-direction: column;
+flex: none;
+`
+
+
+function Trial({id, rightchild, leftchild }) {
     return (
         <App
         id={id}>
-            <LeftPane/>
-            <h4> Hello World </h4>
-            <RightPane/>
+          <Mapbox/>
+          <LeftPane> {leftchild}
+          </LeftPane>
+           <RightPane>
+             {rightchild}
+            </RightPane> 
         </App>
     );
 }
+
+Trial.propTypes = {
+  id: PropTypes.string,
+  rightchild: PropTypes.any,
+  leftchild: PropTypes.any
+};
+
 export default Trial;
