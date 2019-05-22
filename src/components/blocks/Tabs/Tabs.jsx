@@ -14,12 +14,15 @@ const StyledTab = styled.div`
   width: min-content;
   color: ${props => (props.isSelected ? colors.white : colors.grey_40)};
   background: ${props => (props.isSelected ? colors.anchor : colors.white)};
-  background-image: ${props => (props.isSelected ? "linear-gradient(#85b1c9, #68b0cd)" : "")};
+  background-image: ${props =>
+    props.isSelected ? "linear-gradient(#85b1c9, #68b0cd)" : ""};
   border: 1px solid ${colors.grey_20};
-  padding: .25em;
+  padding: 0.25em;
   cursor: pointer;
-  &:hover { ${Darken};}
-  `;
+  &:hover {
+    ${Darken};
+  }
+`;
 const TabLabel = styled.span`
   cursor: pointer;
   font-size: 12px;
@@ -29,33 +32,11 @@ const TabLabel = styled.span`
 
 const TabsWrapper = styled.section`
   display: flex;
-  /* flex-wrap: wrap; */
-  /* width: 100%; */
-  /* height: auto; */
-  /* max-height: 100vh; */
-  /* margin: 0; */
-  /* left: 0; */
 `;
-function Tab({ label, icon, isSelected }) {
-  // Toggle Tab
-  const [selectedTab, setSelected] = useState(false);
-  function toggleTab() {
-    // selectedTab = true ? setSelected(!selectedTab) : setSelected(selectedTab)
-    setSelected(!selectedTab);
-  }
-  // const [selectedTab, setSelected] = useState({ selectedValue: "" })
-  // const handleCheckboxChange = event => {
-  //   setSelected({ selectedValue: event.target.value })
-  // }
+
+function Tab({ label, onClick, isSelected }) {
   return (
-    <StyledTab
-      isSelected={selectedTab}
-      onClick={toggleTab}
-      // value={props.value}
-      // isSelected={selectedTab.selectedValue === props.value}
-      // onChange={handleCheckboxChange}
-    >
-      {/* {icon ? <ButtonIcon icon={icon} /> : null} */}
+    <StyledTab isSelected={isSelected} onClick={onClick}>
       <TabLabel>{label}</TabLabel>
     </StyledTab>
   );
