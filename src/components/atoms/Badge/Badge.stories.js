@@ -1,7 +1,7 @@
-import React from "react"
-import styled, { css } from "styled-components"
-import { storiesOf } from "@storybook/react"
-import { withInfo } from "@storybook/addon-info"
+import React from "react";
+import styled, { css } from "styled-components";
+import { storiesOf } from "@storybook/react";
+import { withInfo } from "@storybook/addon-info";
 import {
   withKnobs,
   text,
@@ -10,17 +10,17 @@ import {
   select,
   number,
   optionsKnob as options
-} from "@storybook/addon-knobs"
-import { Padding } from "helpers/Display"
-import Grid from "helpers/Grid"
-import Card, { CardList } from "layout/Card"
-import Badge from "./Badge"
-import BadgeNotes from "./Badge.md"
+} from "@storybook/addon-knobs";
+import { Padding } from "helpers/Display";
+import Grid from "helpers/Grid";
+import Card, { CardList } from "layout/Card";
+import Badge from "./Badge";
+import BadgeNotes from "./Badge.md";
 
 const Title = styled.h6`
   text-align: center;
   margin: 1em;
-`
+`;
 // Badge
 storiesOf("Atoms|Badge", module)
   .addParameters({
@@ -268,4 +268,4 @@ storiesOf("Atoms|Badge", module)
         <Title>Bottom-Left</Title>
       </Card>
     </CardList>
-  ))
+  ));

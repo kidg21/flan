@@ -23,7 +23,7 @@ const LanguageSelect = props => {
   return (
     <select onChange={onLanguageSelect}>
       {renderOption("en")}
-      {renderOption("de")}
+      {renderOption("fr")}
       {renderOption("es")}
     </select>
   );

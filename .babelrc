@@ -35,7 +35,9 @@
           "atoms": "ss-styled-components/src/components/atoms",
           "base": "ss-styled-components/src/components/base",
           "blocks": "ss-styled-components/src/components/blocks",
+          "elements": "ss-styled-components/src/components/elements",
           "layout": "ss-styled-components/src/components/layout",
+          "templates": "ss-styled-components/src/components/templates",
         }
       }
     ]

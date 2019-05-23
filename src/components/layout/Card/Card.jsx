@@ -26,6 +26,20 @@ const CardWrapper = styled.div`
   }
 `
 
+
+const PieceWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: .5rem;
+  background: ${colors.white};
+  flex: none;
+  width: 100%;
+  border-bottom: .25px solid #ddd;
+  /* Prototype Content - displays when a Card is empty */
+
+`
+
+
 // const CardList = styled.ul`
 const CardList = styled(Grid)`
   /* display: grid;
@@ -44,10 +58,12 @@ const CardList = styled(Grid)`
   }
 `
 
-function Card({ id, children}) {
+function Card({ children}) {
   return <CardWrapper>{children}</CardWrapper>
-}
+};
 
+function Piece({ children}) {
+  return <PieceWrapper>{children}</PieceWrapper>
+};
 
-
-export { Card as default, CardList }
+export { Card as default, CardList, Piece }

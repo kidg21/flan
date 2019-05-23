@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
-import Header from "blocks/Panel/Header";
-import Card from "blocks/Card/Card";
+import PanelHeader from "elements/PanelHeader/PanelHeader";
+import CardBar from "elements/CardBar/CardBar";
 import Panel, { PanelSection } from "layout/Panel";
 
 storiesOf("Templates|Panel", module)
@@ -10,22 +10,22 @@ storiesOf("Templates|Panel", module)
       return (
         <Panel>
           <PanelSection>
-            <Header title="Filters" twoParts={true} />
+            <PanelHeader title="Filters" main={true} />
           </PanelSection>
           <PanelSection body>
-            <Card title="Property Search" navigation={true} />
-            <Card title="Builder Sites" navigation={true} />
-            <Card title="Demographics" navigation={true} />
+            <CardBar title="Property Search" navigation={true} />
+            <CardBar title="Builder Sites" navigation={true} />
+            <CardBar title="Demographics" navigation={true} />
 
-            <Card title="Foreclosures" navigation={true} />
-            <Card title="Points of Interest" navigation={true} />
+            <CardBar title="Foreclosures" navigation={true} />
+            <CardBar title="Points of Interest" navigation={true} />
 
-            <Card title="Public Schools" navigation={true} />
-            <Card title="Qualified Opportunity Zones" navigation={true} />
-            <Card title="School District Rating" navigation={true} />
-            <Card title="Traffic" navigation={true} />
-            <Card title="Transaction" navigation={true} />
-            <Card title="Zones" navigation={true} />
+            <CardBar title="Public Schools" navigation={true} />
+            <CardBar title="Qualified Opportunity Zones" navigation={true} />
+            <CardBar title="School District Rating" navigation={true} />
+            <CardBar title="Traffic" navigation={true} />
+            <CardBar title="Transaction" navigation={true} />
+            <CardBar title="Zones" navigation={true} />
           </PanelSection>
         </Panel>
       );
@@ -37,17 +37,17 @@ storiesOf("Templates|Panel", module)
       return (
         <Panel>
           <PanelSection>
-            <Header title="Property Search" threeParts={true} />
+            <PanelHeader title="Property Search" navigation={true} />
           </PanelSection>
           <PanelSection body>
-            <Card title="Property Type" navigation={true} />
-            <Card title="Characteristics" navigation={true} />
-            <Card title="Last Market Sale" navigation={true} />
+            <CardBar title="Property Type" navigation={true} />
+            <CardBar title="Characteristics" navigation={true} />
+            <CardBar title="Last Market Sale" navigation={true} />
 
-            <Card title="Ownership" navigation={true} />
-            <Card title="Property Value" navigation={true} />
+            <CardBar title="Ownership" navigation={true} />
+            <CardBar title="Property Value" navigation={true} />
 
-            <Card title="Location" navigation={true} />
+            <CardBar title="Location" navigation={true} />
           </PanelSection>
         </Panel>
       );

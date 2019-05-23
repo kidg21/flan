@@ -1,55 +1,37 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import { storiesOf } from "@storybook/react";
 import Accordion from "blocks/Accordion";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
-
-// import PropertyInfo from "./PropertyInfo";
-// import MapLegend from "../Map/MapLegend";
 import Container from "atoms/Container";
-import Table from "blocks/Table";
 
 storiesOf("Blocks|Accordion", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  .add("Documentation", () => <Accordion />)
+  .add("Documentation", () => (
+    <Accordion
+      header={<h4>This is my accordion header example!</h4>}
+      children={<h4>this is my children</h4>}
+    />
+  ))
   .add("Accordion", () =>
     React.createElement(() => {
       const [activeAccordion, setActiveAccordion] = useState("");
       return (
-        <div>
-          <Accordion
-            header={
-              <Container>
-                <h4>This is my accordion header example!</h4>
-              </Container>
-            }
-            visibility={activeAccordion === "accordion1"}
-            onClick={() => {
+        <Accordion
+          header={<h4>This is my accordion header example!</h4>}
+          visibility={activeAccordion === "accordion1"}
+          onClick={() => {
+            if (activeAccordion === "accordion1") {
+              setActiveAccordion("");
+            } else {
               setActiveAccordion("accordion1");
-            }}
-          >
-            <Container>
-              <h3>This is the body of my accordion being visible</h3>
-            </Container>
-          </Accordion>
-          <Accordion
-            header={
-              <Container>
-                <h4>This is my accordion header example!</h4>
-              </Container>
             }
-            visibility={activeAccordion === "accordion2"}
-            onClick={() => {
-              setActiveAccordion("accordion2");
-            }}
-            children={
-              <Container>
-                <h3>This is the body of my accordion being visible</h3>
-              </Container>
-            }
-          />
-        </div>
+            return false;
+          }}
+        >
+          <h3>This is the body of my accordion being visible</h3>
+        </Accordion>
       );
     })
   );
