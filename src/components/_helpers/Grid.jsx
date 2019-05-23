@@ -1,5 +1,5 @@
-import React from "react"
-import styled, { css } from "styled-components"
+import React from "react";
+import styled, { css } from "styled-components";
 
 const GridWrapper = styled.section`
   display: grid;
@@ -29,7 +29,7 @@ const GridWrapper = styled.section`
       ? "repeat(11, 1fr)"
       : props.col_12
       ? "repeat(12, 1fr)"
-      : "repeat(auto-fill, minmax(8rem, 1fr))"};
+      : "repeat(auto-fit, minmax(8rem, 1fr))"};
   @media (min-width: 40.063em) {
     grid-template-columns: ${props =>
       props.col_1
@@ -56,7 +56,7 @@ const GridWrapper = styled.section`
         ? "repeat(11, 1fr)"
         : props.col_12
         ? "repeat(12, 1fr)"
-        : "repeat(auto-fill, minmax(14rem, 1fr))"};
+        : "repeat(auto-fit, minmax(14rem, 1fr))"};
   }
   @media (min-width: 64.063em) {
     grid-template-columns: ${props =>
@@ -84,7 +84,7 @@ const GridWrapper = styled.section`
         ? "repeat(11, 1fr)"
         : props.col_12
         ? "repeat(12, 1fr)"
-        : "repeat(auto-fill, minmax(20rem, 1fr))"};
+        : "repeat(auto-fit, minmax(20rem, 1fr))"};
   }
   grid-column: ${props =>
     props.alignLeft || props.alignCenter || props.alignRight
@@ -100,7 +100,7 @@ const GridWrapper = styled.section`
       : props.alignRight
       ? "flex-end"
       : ""};
-`
+`;
 function Grid({
   col_1,
   col_2,
@@ -143,7 +143,7 @@ function Grid({
     >
       {children}
     </GridWrapper>
-  )
+  );
 }
 
-export { Grid as default }
+export { Grid as default };
