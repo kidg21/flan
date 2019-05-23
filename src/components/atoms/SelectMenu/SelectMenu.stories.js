@@ -1,7 +1,7 @@
-import React from "react"
-import { storiesOf } from "@storybook/react"
-import { Padding } from "../../_helpers/Display"
-import { withInfo } from "@storybook/addon-info"
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import { Padding } from "../../_helpers/Display";
+import { withInfo } from "@storybook/addon-info";
 import {
   withKnobs,
   text,
@@ -9,11 +9,20 @@ import {
   radios,
   select,
   number
-} from "@storybook/addon-knobs"
-import Panel, { PanelSection } from "../../layout/Panel/Panel"
-import Form, { Section, SectionName } from "../../layout/Form/Form"
-import SelectMenu from "./SelectMenu"
-import SelectMenuNotes from "./SelectMenu.md"
+} from "@storybook/addon-knobs";
+import Panel, { PanelSection } from "../../layout/Panel/Panel";
+import Form, { Section, SectionName } from "../../layout/Form/Form";
+import SelectMenu from "./SelectMenu";
+import SelectMenuNotes from "./SelectMenu.md";
+
+const options = [
+  { value: "chocolate", label: "Chocolate" },
+  { value: "strawberry", label: "Strawberry" },
+  { value: "vanilla", label: "Vanilla" },
+  { value: "pistachio", label: "Pistachio" },
+  { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
+  { value: "cookie dough", label: "Cookie Dough" }
+];
 
 // SelectMenu ( Knobs )
 storiesOf("Atoms|SelectMenu", module)
@@ -42,14 +51,7 @@ storiesOf("Atoms|SelectMenu", module)
           "Error Text",
           "Stay with my, buddy...we can fix this!"
         )}
-        options={[
-          { value: "chocolate", label: "Chocolate" },
-          { value: "strawberry", label: "Strawberry" },
-          { value: "vanilla", label: "Vanilla" },
-          { value: "pistachio", label: "Pistachio" },
-          { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
-          { value: "cookie dough", label: "Cookie Dough" }
-        ]}
+        options={options}
       />
     ))
   )
@@ -60,14 +62,7 @@ storiesOf("Atoms|SelectMenu", module)
       inputLabel="Single-Select ( Standard )"
       placeholder="Choose..."
       helpText="Help text for the SelectMenu component"
-      options={[
-        { value: "chocolate", label: "Chocolate" },
-        { value: "strawberry", label: "Strawberry" },
-        { value: "vanilla", label: "Vanilla" },
-        { value: "pistachio", label: "Pistachio" },
-        { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
-        { value: "cookie dough", label: "Cookie Dough" }
-      ]}
+      options={options}
     />
   ))
 
@@ -78,6 +73,7 @@ storiesOf("Atoms|SelectMenu", module)
       placeholder="You Must Choose..."
       helpText="Help text for the SelectMenu component"
       isRequired={true}
+      options={options}
     />
   ))
 
@@ -88,6 +84,7 @@ storiesOf("Atoms|SelectMenu", module)
       placeholder="You Can't Choose..."
       helpText="Help text for the SelectMenu component"
       disabled={true}
+      options={options}
     />
   ))
 
@@ -98,6 +95,7 @@ storiesOf("Atoms|SelectMenu", module)
       placeholder="You Chose Poorly..."
       helpText="Help text for the SelectMenu component"
       error={true}
+      options={options}
     />
   ))
 
@@ -108,6 +106,7 @@ storiesOf("Atoms|SelectMenu", module)
       placeholder="Give Me A Minute..."
       helpText="Help text for the SelectMenu component"
       isLoading={true}
+      options={options}
     />
   ))
 
@@ -118,8 +117,9 @@ storiesOf("Atoms|SelectMenu", module)
       inputLabel="Multi-Select"
       placeholder="Choose One Or More..."
       helpText="Help text for the SelectMenu component"
+      options={options}
     />
-  ))
+  ));
 
 // SelectMenu (The SelectMenu Family)
 storiesOf("Atoms|SelectMenu", module).add("The SelectMenu Family", () => (
@@ -132,47 +132,45 @@ storiesOf("Atoms|SelectMenu", module).add("The SelectMenu Family", () => (
             inputLabel="Single-Select ( Standard )"
             placeholder="Choose..."
             helpText="Help text for the SelectMenu component"
-            options={[
-              { value: "chocolate", label: "Chocolate" },
-              { value: "strawberry", label: "Strawberry" },
-              { value: "vanilla", label: "Vanilla" },
-              { value: "pistachio", label: "Pistachio" },
-              { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
-              { value: "cookie dough", label: "Cookie Dough" }
-            ]}
+            options={options}
           />
           <SelectMenu
             inputLabel="Single-Select ( Required )"
             placeholder="You Must Choose..."
             helpText="Help text for the SelectMenu component"
             isRequired={true}
+            options={options}
           />
           <SelectMenu
             inputLabel="Single-Select ( Disabled )"
             placeholder="You Can't Choose..."
             helpText="Help text for the SelectMenu component"
             disabled={true}
+            options={options}
           />
           <SelectMenu
             inputLabel="Single-Select ( Error )"
             placeholder="You Chose Poorly..."
             helpText="Help text for the SelectMenu component"
             error={true}
+            options={options}
           />
           <SelectMenu
             inputLabel="Single-Select ( Loading )"
             placeholder="Give Me A Minute..."
             helpText="Help text for the SelectMenu component"
             isLoading={true}
+            options={options}
           />
           <SelectMenu
             multiSelect={true}
             inputLabel="Multi-Select"
             placeholder="Choose One Or More..."
             helpText="Help text for the SelectMenu component"
+            options={options}
           />
         </Section>
       </Form>
     </PanelSection>
   </Panel>
-))
+));

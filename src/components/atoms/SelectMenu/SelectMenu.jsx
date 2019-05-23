@@ -1,9 +1,9 @@
-import React from "react"
-import styled from "styled-components"
-import PropTypes from "prop-types"
-import { fonts, colors, shadows } from "Variables"
-import { InputLabel, HelpText, ErrorText } from "../../layout/Form/Form"
-import Select from "react-select"
+import React from "react";
+import styled from "styled-components";
+import PropTypes from "prop-types";
+import { fonts, colors, shadows } from "Variables";
+import { InputLabel, HelpText, ErrorText } from "../../layout/Form/Form";
+import Select from "react-select";
 
 const selectStyles = {
   // Wrapper
@@ -108,9 +108,9 @@ const selectStyles = {
         ? colors.anchor
         : colors.grey_80,
       cursor: isDisabled ? "not-allowed" : "pointer"
-    }
+    };
   }
-}
+};
 
 const SelectMenuContainer = styled.div`
   display: ${props => (props.displayInline ? "inline-block" : "grid")};
@@ -129,43 +129,54 @@ const SelectMenuContainer = styled.div`
   /* color: ${props => (props.disabled ? colors.grey_40 : "")}; */
   color: ${props =>
     props.error ? colors.alert : props.disabled ? colors.grey_40 : ""};
-`
-function SelectMenu({ inputLabel, isRequired, helpText, errorText }) {
+`;
+function SelectMenu({
+  id,
+  name,
+  placeholder,
+  displayInline,
+  error,
+  options,
+  disabled,
+  inputLabel,
+  isRequired,
+  helpText,
+  isSearchable,
+  isClearable,
+  multiSelect,
+  isLoading,
+  isRtl,
+  errorText
+}) {
   return (
     <SelectMenuContainer
       isRequired={isRequired}
-      disabled={props.disabled} // input attribute
-      error={props.error}
-      displayInline={props.displayInline}
+      disabled={disabled} // input attribute
+      error={error}
+      displayInline={displayInline}
     >
       {/* Input Label (required) */}
       <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
       <Select
-        id={props.name} // input attribute
-        name={props.name} // input attribute
-        placeholder={props.placeholder} // input attribute
+        id={id} // input attribute
+        name={name} // input attribute
+        placeholder={placeholder} // input attribute
         styles={selectStyles}
-        options={props.options}
-        isSearchable={props.isSearchable}
-        isClearable={props.isClearable}
-        isMulti={props.multiSelect}
-        isDisabled={props.disabled}
-        isLoading={props.isLoading}
-        isRtl={props.isRtl}
+        options={options}
+        isSearchable={isSearchable}
+        isClearable={isClearable}
+        isMulti={multiSelect}
+        isDisabled={disabled}
+        isLoading={isLoading}
+        isRtl={isRtl}
       />
       {/* Help Text */}
       {helpText ? <HelpText helpText={helpText} /> : null}
       {/* Error Message (required) */}
-      {props.error ? <ErrorText errorText={errorText} /> : null}
+      {error ? <ErrorText errorText={errorText} /> : null}
     </SelectMenuContainer>
-  )
+  );
 }
-
-  // options: [
-  //   { value: "one", label: "Option #1" },
-  //   { value: "two", label: "Option #2" },
-  //   { value: "three", label: "Option #3" }
-  // ],
 
 SelectMenu.propTypes = {
   id: PropTypes.string,
@@ -182,6 +193,6 @@ SelectMenu.propTypes = {
   isLoading: PropTypes.bool,
   displayInline: PropTypes.bool,
   isRtl: PropTypes.bool
-}
+};
 
-export default SelectMenu
+export default SelectMenu;
