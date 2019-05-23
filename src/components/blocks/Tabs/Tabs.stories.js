@@ -4,44 +4,48 @@ import { Padding } from "helpers/Display";
 import { withInfo } from "@storybook/addon-info";
 import Grid from "helpers/Grid";
 import Tabs, { Tab } from "blocks/Tabs";
+import Button from "atoms/Button";
 
-// Buttons
+storiesOf("Blocks|Tabs", module).add("Documentation", () => (
+  <Tabs isVertical={false} isFloating={true}>
+    <Tab tabLabel="Tab 1" />
+    <Tab tabLabel="Tab 1" />
+    <Tab tabLabel="Tab 1" />
+  </Tabs>
+));
+
 storiesOf("Blocks|Tabs", module)
   .addDecorator(Padding)
-  // .addDecorator(withInfo)
   .add("Tabs", () =>
     React.createElement(() => {
       // Single-Select
       const [activeSingleTab, setActiveSingleTab] = useState("tab1");
+      // Toggle-Select
+      const [activeToggleTab, setActiveToggleTab] = useState("tab1");
       // Multi-Select
       const [activeMultiTab, setActiveMultiTab] = useState(false);
       const [activeMultiTab2, setActiveMultiTab2] = useState(false);
       const [activeMultiTab3, setActiveMultiTab3] = useState(false);
-      // Toggle-Select
-      const [activeToggleTab, setActiveToggleTab] = useState("tab1");
       return (
         <Grid col_1>
           <h6>Single-Select</h6>
           <Tabs>
             <Tab
-              label="Tab 1"
-              // Single-Select
+              tabLabel="Tab 1"
               isSelected={activeSingleTab === "tab1"}
               onClick={() => {
                 setActiveSingleTab("tab1");
               }}
             />
             <Tab
-              label="Tab 2"
-              // Single-Select
+              tabLabel="Tab 2"
               isSelected={activeSingleTab === "tab2"}
               onClick={() => {
                 setActiveSingleTab("tab2");
               }}
             />
             <Tab
-              label="Tab 3"
-              // Single-Select
+              tabLabel="Tab 3"
               isSelected={activeSingleTab === "tab3"}
               onClick={() => {
                 setActiveSingleTab("tab3");
@@ -51,8 +55,7 @@ storiesOf("Blocks|Tabs", module)
           <h6>Toggle-Select</h6>
           <Tabs>
             <Tab
-              label="Tab 1"
-              // Toggle-Select
+              tabLabel="Tab 1"
               isSelected={activeToggleTab === "tab1"}
               onClick={() => {
                 if (activeToggleTab === "tab1") {
@@ -64,8 +67,7 @@ storiesOf("Blocks|Tabs", module)
               }}
             />
             <Tab
-              label="Tab 2"
-              // Toggle-Select
+              tabLabel="Tab 2"
               isSelected={activeToggleTab === "tab2"}
               onClick={() => {
                 if (activeToggleTab === "tab2") {
@@ -77,8 +79,7 @@ storiesOf("Blocks|Tabs", module)
               }}
             />
             <Tab
-              label="Tab 3"
-              // Toggle-Select
+              tabLabel="Tab 3"
               isSelected={activeToggleTab === "tab3"}
               onClick={() => {
                 if (activeToggleTab === "tab3") {
@@ -93,24 +94,21 @@ storiesOf("Blocks|Tabs", module)
           <h6>Multi-Select</h6>
           <Tabs>
             <Tab
-              label="Tab 1"
-              // Multi-Select
+              tabLabel="Tab 1"
               isSelected={activeMultiTab}
               onClick={() => {
                 setActiveMultiTab(!activeMultiTab);
               }}
             />
             <Tab
-              label="Tab 2"
-              // Multi-Select
+              tabLabel="Tab 2"
               isSelected={activeMultiTab2}
               onClick={() => {
                 setActiveMultiTab2(!activeMultiTab2);
               }}
             />
             <Tab
-              label="Tab 3"
-              // Multi-Select
+              tabLabel="Tab 3"
               isSelected={activeMultiTab3}
               onClick={() => {
                 setActiveMultiTab3(!activeMultiTab3);

@@ -1,53 +1,68 @@
-import React, { useState } from "react";
+import React, { Fragment } from "react";
 import styled, { css, keyframes } from "styled-components";
 import { colors, shadows } from "Variables";
 import PropTypes from "prop-types";
-import { Darken } from "helpers/Placeholders";
-
-const StyledTab = styled.div`
-  display: grid;
-  grid-gap: 0.25rem;
-  flex: auto;
-  align-items: center;
-  line-height: normal;
-  text-align: center;
-  width: min-content;
-  color: ${props => (props.isSelected ? colors.white : colors.grey_40)};
-  background: ${props => (props.isSelected ? colors.anchor : colors.white)};
-  background-image: ${props =>
-    props.isSelected ? "linear-gradient(#85b1c9, #68b0cd)" : ""};
-  border: 1px solid ${colors.grey_20};
-  padding: 0.25em;
-  cursor: pointer;
-  &:hover {
-    ${Darken};
-  }
-`;
-const TabLabel = styled.span`
-  cursor: pointer;
-  font-size: 12px;
-  line-height: normal;
-  user-select: none;
-`;
+import Button from "atoms/Button";
 
 const TabsWrapper = styled.section`
-  display: flex;
+  display: ${props => (props.isVertical ? "flex" : "grid")};
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  grid-gap: 2px;
+  flex-direction: column;
+  position: ${props => (props.isVertical ? "absolute" : "")};
+  height: ${props => (props.isVertical ? "100%" : "")};
+  padding: ${props => (props.isFloating ? ".25rem" : "")};
+  z-index: ${props => (props.isFloating ? "1001" : "")};
+  filter: ${props => (props.isFloating ? shadows.cardShadow : "")};
+  > * {
+    margin: ${props => (props.isFloating ? ".25rem" : "")};
+  }
 `;
 
-function Tab({ label, onClick, isSelected }) {
+function Tabs({ id, children, isVertical, isFloating }) {
   return (
-    <StyledTab isSelected={isSelected} onClick={onClick}>
-      <TabLabel>{label}</TabLabel>
-    </StyledTab>
+    <TabsWrapper id={id} isVertical={isVertical} isFloating={isFloating}>
+      {children}
+    </TabsWrapper>
   );
 }
 
-function Tabs({ id, children }) {
-  return <TabsWrapper id={id}>{children}</TabsWrapper>;
+function Tab({ id, tabLabel, onClick, isSelected }) {
+  return (
+    <Fragment>
+      {isSelected ? (
+        <Button
+          id={id}
+          buttonLabel={tabLabel}
+          onClick={onClick}
+          isSelected={isSelected}
+          isSolid={true}
+          isSecondary={true}
+        />
+      ) : (
+        <Button
+          id={id}
+          buttonLabel={tabLabel}
+          onClick={onClick}
+          isSelected={isSelected}
+        />
+      )}
+    </Fragment>
+  );
 }
+
+Tabs.propTypes = {
+  id: PropTypes.string,
+  children: PropTypes.node.isRequired,
+  isVertical: PropTypes.bool,
+  isFloating: PropTypes.bool
+};
+
 Tab.propTypes = {
   id: PropTypes.string,
-  label: PropTypes.string
+  tabLabel: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+  isSelected: PropTypes.bool
 };
 
 export { Tabs as default, Tab };
