@@ -1,8 +1,8 @@
-import React from "react"
-import { storiesOf } from "@storybook/react"
-import { Padding } from "helpers/Display"
-import Grid from "helpers/Grid"
-import { withInfo } from "@storybook/addon-info"
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import { Padding } from "helpers/Display";
+import Grid from "helpers/Grid";
+import { withInfo } from "@storybook/addon-info";
 import {
   withKnobs,
   text,
@@ -11,10 +11,10 @@ import {
   select,
   number,
   optionsKnob as options
-} from "@storybook/addon-knobs"
-import { colors } from "Variables"
-import Button from "atoms/Button"
-import ButtonNotes from "./Button.md"
+} from "@storybook/addon-knobs";
+import { colors } from "Variables";
+import Button from "atoms/Button";
+import ButtonNotes from "./Button.md";
 
 // Button
 storiesOf("Atoms|Button", module)
@@ -29,7 +29,10 @@ storiesOf("Atoms|Button", module)
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
-  .add("Documentation", withInfo()(() => <Button />))
+  .add(
+    "Documentation",
+    withInfo()(() => <Button buttonLabel="Standard Button" />)
+  )
   .add("Standard Button", () => <Button buttonLabel="Standard Button" />)
   .add("Primary Button", () => (
     <Button buttonLabel="Primary Button" buttonPrimary={true} />
@@ -109,4 +112,4 @@ storiesOf("Atoms|Button", module)
         <Button buttonLabel="Grid" />
       </Grid>
     </>
-  ))
+  ));

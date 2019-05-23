@@ -1,14 +1,15 @@
-import React from "react"
-import styled, { css, keyframes } from "styled-components"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { colors, shadows } from "Variables"
-import PropTypes from "prop-types"
+import React from "react";
+import styled, { css, keyframes } from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { colors, shadows } from "Variables";
+import PropTypes from "prop-types";
 
 const StyledButton = styled.button`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex: auto;
   color: ${props =>
     props.isSolid
       ? colors.white
@@ -53,19 +54,19 @@ const StyledButton = styled.button`
     pointer-events: none;
     user-select: none;
   }
-`
+`;
 
 const ButtonLabel = styled.label`
   line-height: normal;
   font-size: inherit;
   user-select: none;
   cursor: pointer;
-`
+`;
 
 const ButtonIcon = styled(FontAwesomeIcon)`
   font-size: 1.2em;
   margin-bottom: 0.35rem;
-`
+`;
 
 function Button({
   id,
@@ -95,7 +96,7 @@ function Button({
       {icon ? <ButtonIcon icon={icon} /> : null}
       <ButtonLabel>{buttonLabel}</ButtonLabel>
     </StyledButton>
-  )
+  );
 }
 
 Button.propTypes = {
@@ -111,5 +112,5 @@ Button.propTypes = {
   isFloating: PropTypes.bool,
   isDisabled: PropTypes.bool,
   onClick: PropTypes.func.isRequired
-}
-export { Button as default }
+};
+export { Button as default };
