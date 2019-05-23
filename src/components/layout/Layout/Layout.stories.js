@@ -15,8 +15,6 @@ import LayoutMain, {
 } from "./Layout";
 import Panel, { PanelSection } from "layout/Panel";
 // import Card, { CardList } from "layout/Card"
-import Header from "blocks/Panel/Header";
-import Card from "blocks/Card/Card";
 
 const Layout = styled.div`
   position: relative;

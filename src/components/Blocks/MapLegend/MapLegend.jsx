@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 
 const Legend = styled.div`
-  padding: 0em 2em 1em 2em;
+  // padding: 0em 2em 1em 2em;
 `;
 const Title = styled.h4`
   text-align: left;
