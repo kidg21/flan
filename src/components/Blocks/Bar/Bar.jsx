@@ -35,13 +35,12 @@ display: flex;
 // `;
 
 /////Navigation consts
-const HeaderLayout = styled.div`
+const BarLayout = styled.div`
   align-items: flex;
   vertical-align: center;
   display: flex;
-  font-weight: 700;
   justify-content: space-between;
-  padding: 1em 0.6em 0.5em 0.8em;
+  padding: .5em 1.5em 0.5em .5em;
   // border-bottom: 0.25px solid #eaeded;
   // box-shadow: 0 0 0px rgba(0, 0, 0, 0.08);
 `;
@@ -52,7 +51,7 @@ const HeaderLayout = styled.div`
 
 function Bar({ id, onePart, twoParts, threeParts, firstSlot, secondSlot, thirdSlot}) {
   return (
-      <HeaderLayout
+      <BarLayout
         id={id}
         firstSlot={firstSlot}
         onePart={onePart}
@@ -86,7 +85,7 @@ function Bar({ id, onePart, twoParts, threeParts, firstSlot, secondSlot, thirdSl
           {secondSlot}
           </Right>
         ) : null}
-      </HeaderLayout>
+      </BarLayout>
   );
 }
 Bar.propTypes = {

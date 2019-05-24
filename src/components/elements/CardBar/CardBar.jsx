@@ -9,7 +9,7 @@ import Card, { Piece } from "layout/Card"
 import Switch from "atoms/Switch"
 
 const blockStyle = {
-    width: '5em',
+    width: '4.8em',
     filter: 'brightness(160%)',
     lineHeight: 'normal'
 }

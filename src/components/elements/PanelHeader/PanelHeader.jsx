@@ -11,7 +11,10 @@ display: flex;
 word-break: break-word;
 width: 70%;
 `
-
+const HeaderSpace =styled.div`
+padding-top: .7rem;
+font-weight: 700;
+`
 
 function PanelHeader({ id, navigation, main, title, property }) {
   return (
@@ -20,8 +23,9 @@ function PanelHeader({ id, navigation, main, title, property }) {
       navigation={navigation}
       property={property}
       main={main}>
+        <HeaderSpace>
         { navigation ? (
-        <Bar threeParts="true" firstSlot={<Icon icon={["far", "angle-left"]} />} secondSlot={title}
+        <Bar threeParts="true" firstSlot={<Icon icon={["far", "angle-left"]} size='lg'/>} secondSlot={title}
         thirdSlot={<Icon icon={["far", "ellipsis-v"]} size='lg'/>}/> ) 
         : main ? 
         (<Bar firstSlot={title} twoParts="true" secondSlot={<Icon icon={["far", "ellipsis-v"]} size='lg'/>}/>) 
@@ -32,6 +36,7 @@ function PanelHeader({ id, navigation, main, title, property }) {
           </Block>}
           secondSlot={<Icon icon={["far", "ellipsis-v"]} size='lg'/>}/> ) 
         : null }
+        </HeaderSpace>
         </Piece>
     );
   }
