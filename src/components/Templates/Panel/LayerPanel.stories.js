@@ -1,11 +1,9 @@
 // import React, { useState } from "react";
 // import { storiesOf } from "@storybook/react";
-// import Header from "elements/PanelHeader/Header";
-// import Table from "blocks/Table";
-// import Card from "blocks/Card/Card";
-// import Group from "blocks/Group/Group";
-// import Container from "atoms/Container";
-// import Accordion from "blocks/Accordion/Accordion";
+// import PanelHeader from "elements/PanelHeader/PanelHeader";
+// import LayerCard from "elements/LayerCard";
+// import CardBar from "elements/CardBar";
+// import MapLegend from "blocks/MapLegend";
 // import Panel, { PanelSection } from "layout/Panel";
 
 // storiesOf("Templates|Panel", module).add("Layer Panel", () =>
@@ -15,117 +13,87 @@
 //     const [checked3, setChecked3] = useState(false);
 //     const [checked4, setChecked4] = useState(false);
 //     const [checked5, setChecked5] = useState(false);
-//     const [checked6, setChecked6] = useState(false);
-//     const [checked7, setChecked7] = useState(false);
-//     const [checked8, setChecked8] = useState(false);
-//     const [visibility, setVisibility] = useState(false);
-
 //     return (
 //       <Panel>
 //         <PanelSection>
-//           <Header title="Layers" twoParts={true} />
+//           <PanelHeader main="true" title="Main Header" />
 //         </PanelSection>
 //         <PanelSection body>
-//           <Card
-//             title="DOT Traffic"
-//             layer={true}
-//             switchProps={{
-//               checked: checked,
-
-//               onChange: () => {
-//                 setChecked(!checked);
-//               }
-//             }}
-//           />
-//           <Card
-//             title="Qualified Opportunities"
-//             layer={true}
-//             switchProps={{
-//               checked: checked2,
-
-//               onChange: () => {
-//                 setChecked2(!checked2);
-//               }
-//             }}
-//           />
-//           <Card
-//             title="Parcels"
-//             layer={true}
-//             switchProps={{
-//               checked: checked3,
-
-//               onChange: () => {
-//                 setChecked3(!checked3);
-//               }
-//             }}
-//           />
-//           <Card
-//             title="Major Brands"
-//             layer={true}
-//             switchProps={{
-//               checked: checked4,
-
-//               onChange: () => {
-//                 setChecked4(!checked4);
-//               }
-//             }}
-//           />
-//           <Card
-//             title="DFIRM"
-//             layer={true}
-//             switchProps={{
-//               checked: checked5,
-
-//               onChange: () => {
-//                 setChecked5(!checked5);
-//               }
-//             }}
-//           />
-//           <Accordion
-//             header={<Group title="First Group" number="3" />}
-//             visibility={visibility}
-//             onClick={() => {
-//               setVisibility(!visibility);
-//             }}
-//           >
-//             <Container>
-//               <Card
-//                 title="Wetlands"
-//                 layer={true}
+//           <LayerCard
+//             layer={
+//               <CardBar
+//                 layer="true"
+//                 title="Demographics"
 //                 switchProps={{
-//                   checked: checked6,
-
+//                   checked: checked,
 //                   onChange: () => {
-//                     setChecked6(!checked6);
+//                     setChecked(!checked);
 //                   }
 //                 }}
 //               />
-
-//               <Card
-//                 title="Field Sites"
-//                 layer={true}
+//             }
+//             legend={<MapLegend />}
+//           />
+//           <LayerCard
+//             layer={
+//               <CardBar
+//                 layer="true"
+//                 title="Qualified Opportunities"
 //                 switchProps={{
-//                   checked: checked7,
-
+//                   checked: checked2,
 //                   onChange: () => {
-//                     setChecked7(!checked7);
+//                     setChecked2(!checked2);
 //                   }
 //                 }}
 //               />
-
-//               <Card
-//                 title="Builder Sites"
-//                 layer={true}
+//             }
+//             legend={<MapLegend />}
+//           />
+//           <LayerCard
+//             layer={
+//               <CardBar
+//                 layer="true"
+//                 title="Parcels"
 //                 switchProps={{
-//                   checked: checked8,
-
+//                   checked: checked3,
 //                   onChange: () => {
-//                     setChecked8(!checked8);
+//                     setChecked3(!checked3);
 //                   }
 //                 }}
 //               />
-//             </Container>
-//           </Accordion>
+//             }
+//             legend={<MapLegend />}
+//           />
+//           <LayerCard
+//             layer={
+//               <CardBar
+//                 layer="true"
+//                 title="Major Brands"
+//                 switchProps={{
+//                   checked: checked4,
+//                   onChange: () => {
+//                     setChecked4(!checked4);
+//                   }
+//                 }}
+//               />
+//             }
+//             legend={<MapLegend />}
+//           />
+//           <LayerCard
+//             layer={
+//               <CardBar
+//                 layer="true"
+//                 title="DFIRM"
+//                 switchProps={{
+//                   checked: checked5,
+//                   onChange: () => {
+//                     setChecked5(!checked5);
+//                   }
+//                 }}
+//               />
+//             }
+//             legend={<MapLegend />}
+//           />
 //         </PanelSection>
 //       </Panel>
 //     );

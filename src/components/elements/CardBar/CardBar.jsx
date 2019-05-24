@@ -32,8 +32,7 @@ vertical-align: baseline;
 `
 
 
-function CardBar({ id, navigation, info, title, layer }) {
-  const [checked, setChecked] = useState(false);
+function CardBar({ id, navigation, info, title, layer, switchProps }) {
   return (
       <Piece
       id={id}
@@ -42,11 +41,7 @@ function CardBar({ id, navigation, info, title, layer }) {
       navigation={navigation}
       info={info}> 
             { layer ? (<Bar twoParts='true' firstSlot={
-             <SwitchContainer> <Switch checked={checked}
-             onChange={() => {
-               setChecked(!checked);
-             }}
-   /> <span style={Space}/> {title} </SwitchContainer>
+             <SwitchContainer> <Switch {...switchProps}/> <span style={Space}/> {title} </SwitchContainer>
              } 
              secondSlot={Icons}/>)
              : navigation ? 

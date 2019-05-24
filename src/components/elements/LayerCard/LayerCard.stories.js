@@ -27,21 +27,49 @@ const cbox_2 = {
 storiesOf("Elements|Layer Card", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  .add("Layer Card", () => (
-    <LayerCard
-      layer={<CardBar layer="true" title="Demographics" />}
-      legend={<MapLegend />}
-    />
-  ))
+  .add("Layer Card", () =>
+    React.createElement(() => {
+      const [checked, setChecked] = useState("");
+      return (
+        <LayerCard
+          layer={
+            <CardBar
+              layer="true"
+              title="Demographics"
+              switchProps={{
+                checked: checked,
+                onChange: () => {
+                  setChecked(!checked);
+                }
+              }}
+            />
+          }
+          legend={<MapLegend />}
+        />
+      );
+    })
+  )
   .add("Layer Card with Options", () =>
     React.createElement(() => {
+      const [switchChecked, setSwitchChecked] = useState("");
       const [checked, setChecked] = useState(checked);
       const handleCheckboxChange = event => {
         setChecked(event.target.value);
       };
       return (
         <LayerCard
-          layer={<CardBar layer="true" title="Demographics" />}
+          layer={
+            <CardBar
+              layer="true"
+              title="Demographics"
+              switchProps={{
+                checked: switchChecked,
+                onChange: () => {
+                  setSwitchChecked(!switchChecked);
+                }
+              }}
+            />
+          }
           legend={<MapLegend />}
           hasOptions="true"
           options={

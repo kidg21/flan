@@ -10,9 +10,8 @@ import Accordion from "blocks/Accordion";
 function LayerCard({layer, legend, options, hasOptions}) {
   const [activeAccordion, setActiveAccordion] = useState('');
   return (
-    <Card
-    hasOptions={hasOptions}>
     <Accordion
+    hasOptions={hasOptions}
     header={layer}
     visibility={activeAccordion === 'accordion1'}
     onClick={() => {
@@ -29,7 +28,7 @@ function LayerCard({layer, legend, options, hasOptions}) {
     </Piece>
     { hasOptions ? (<Piece>{options}</Piece>) : null}
   </Accordion>
-  </Card>
+
 
 
     );
