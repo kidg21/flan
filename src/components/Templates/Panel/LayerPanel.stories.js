@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import PanelHeader from "elements/PanelHeader/PanelHeader";
-import LayerCard from "elements/LayerCard";
+import CardAccordion from "elements/CardAccordion";
 import MapLegend from "blocks/MapLegend";
 import CardBar from "elements/CardBar/CardBar";
 import Panel, { PanelSection } from "layout/Panel";
@@ -19,8 +19,8 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
           <PanelHeader title="Filters" main={true} />
         </PanelSection>
         <PanelSection>
-          <LayerCard
-            layer={
+          <CardAccordion
+            header={
               <CardBar
                 layer="true"
                 title="Demographics"
@@ -33,10 +33,10 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
                 }}
               />
             }
-            legend={<MapLegend />}
+            body={<MapLegend />}
           />
-          <LayerCard
-            layer={
+          <CardAccordion
+            header={
               <CardBar
                 layer="true"
                 title="Parcel"
@@ -49,10 +49,10 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
                 }}
               />
             }
-            legend={<MapLegend />}
+            body={<MapLegend />}
           />
-          <LayerCard
-            layer={
+          <CardAccordion
+            header={
               <CardBar
                 layer="true"
                 title="Wetlands"
@@ -65,10 +65,10 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
                 }}
               />
             }
-            legend={<MapLegend />}
+            body={<MapLegend />}
           />
-          <LayerCard
-            layer={
+          <CardAccordion
+            header={
               <CardBar
                 layer="true"
                 title="Traffic"
@@ -81,10 +81,10 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
                 }}
               />
             }
-            legend={<MapLegend />}
+            body={<MapLegend />}
           />
-          <LayerCard
-            layer={
+          <CardAccordion
+            header={
               <CardBar
                 layer="true"
                 title="Schools"
@@ -97,7 +97,7 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
                 }}
               />
             }
-            legend={<MapLegend />}
+            body={<MapLegend />}
           />
         </PanelSection>
       </Panel>
@@ -105,11 +105,11 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
   })
 );
 
-// storiesOf("Templates|Panel", module).add("Layer Panel", () =>
-//   React.createElement(() => {
-//     const [checked, setChecked] = useState(false);
-//     const [checked2, setChecked2] = useState(false);
-//     const [checked3, setChecked3] = useState(false);
-//     const [checked4, setChecked4] = useState(false);
-//     const [checked5, setChecked5] = useState(false);
-//     return (
+// // storiesOf("Templates|Panel", module).add("Layer Panel", () =>
+// //   React.createElement(() => {
+// //     const [checked, setChecked] = useState(false);
+// //     const [checked2, setChecked2] = useState(false);
+// //     const [checked3, setChecked3] = useState(false);
+// //     const [checked4, setChecked4] = useState(false);
+// //     const [checked5, setChecked5] = useState(false);
+// //     return (
