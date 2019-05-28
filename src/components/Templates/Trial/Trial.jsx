@@ -22,7 +22,7 @@ display: flex;
 flex-direction: column;
 flex: none;
 height: 100vh;
-width: 25%;
+width: 23%;
 background-color: white;
 @media (max-width: 700px) {
     width: 95%;

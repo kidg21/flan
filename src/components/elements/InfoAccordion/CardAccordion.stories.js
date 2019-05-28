@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
-import LayerCard from "./LayerCard";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
+import CardAccordion from "./CardAccordion";
 import CardBar from "elements/CardBar/CardBar";
+import Table from "blocks/Table";
 import Checkbox from "atoms/Checkbox";
 import MapLegend from "blocks/MapLegend";
 import Form, {
@@ -15,50 +16,33 @@ import Form, {
 
 const cbox_1 = {
   id: "cbox_1",
-  label: "Box 1"
+  label: "Option 1"
 };
 
 const cbox_2 = {
   id: "cbox_2",
-  label: "Box 2"
+  label: "Option 2"
 };
 
-// Colors
-storiesOf("Elements|Layer Card", module)
+storiesOf("Elements|Card Accordion", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  .add("Layer Card", () =>
+  .add("Information ", () =>
     React.createElement(() => {
-      const [checked, setChecked] = useState("");
       return (
-        <LayerCard
-          layer={
-            <CardBar
-              layer="true"
-              title="Demographics"
-              switchProps={{
-                checked: checked,
-                onChange: () => {
-                  setChecked(!checked);
-                }
-              }}
-            />
-          }
-          legend={<MapLegend />}
+        <CardAccordion
+          header={<CardBar info="true" title="Ownership" />}
+          body={<Table />}
         />
       );
     })
   )
-  .add("Layer Card with Options", () =>
+  .add("Layer ", () =>
     React.createElement(() => {
       const [switchChecked, setSwitchChecked] = useState("");
-      const [checked, setChecked] = useState(checked);
-      const handleCheckboxChange = event => {
-        setChecked(event.target.value);
-      };
       return (
-        <LayerCard
-          layer={
+        <CardAccordion
+          header={
             <CardBar
               layer="true"
               title="Demographics"
@@ -70,7 +54,33 @@ storiesOf("Elements|Layer Card", module)
               }}
             />
           }
-          legend={<MapLegend />}
+          body={<MapLegend />}
+        />
+      );
+    })
+  )
+  .add("Layer with Options ", () =>
+    React.createElement(() => {
+      const [switchChecked, setSwitchChecked] = useState("");
+      const [checked, setChecked] = useState(checked);
+      const handleCheckboxChange = event => {
+        setChecked(event.target.value);
+      };
+      return (
+        <CardAccordion
+          header={
+            <CardBar
+              layer="true"
+              title="Demographics"
+              switchProps={{
+                checked: switchChecked,
+                onChange: () => {
+                  setSwitchChecked(!switchChecked);
+                }
+              }}
+            />
+          }
+          body={<MapLegend />}
           hasOptions="true"
           options={
             <Section>
