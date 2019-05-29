@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
-import Grid from "helpers/Grid";
 import { withInfo } from "@storybook/addon-info";
 import {
   withKnobs,
@@ -40,17 +39,16 @@ storiesOf("Blocks|Tabs", module)
   .addDecorator(withKnobs)
   .add("Knobs", () => (
     <Tabs
-      display={options(
-        "display",
+      columns={options(
+        "columns / row",
         {
           "single row ( default )": "default",
           "row wrap (responsive)": "wrap",
-          "1 column per row": "col_1",
-          "2 columns per row": "col_2",
-          "3 columns per row": "col_3",
-          "4 columns per row": "col_4",
-          "5 columns per row": "col_5",
-          "vertical column": "vertical"
+          "1 column / row": "1",
+          "2 columns / row": "2",
+          "3 columns / row": "3",
+          "4 columns / row": "4",
+          "5 columns / row": "5"
         },
         "default",
         { display: "radio" },
@@ -59,8 +57,10 @@ storiesOf("Blocks|Tabs", module)
       align={options(
         "align",
         {
-          "top / left ( default )": "default",
-          "bottom / right": "bottomRight"
+          "top ( default )": "default",
+          "left ( 1 column / vertical )": "left",
+          bottom: "bottom",
+          "right ( 1 column / vertical )": "right"
         },
         "default",
         { display: "radio" },
@@ -165,28 +165,28 @@ storiesOf("Blocks|Tabs", module)
     </Tabs>
   ))
   .add("Row-Wrap (responsive)", () => (
-    <Tabs display="wrap">
+    <Tabs columns="wrap">
       <Tab tabLabel="Tab" />
       <Tab tabLabel="Tab" />
       <Tab tabLabel="Tab" />
     </Tabs>
   ))
   .add("1 Column per Row", () => (
-    <Tabs display="col_1">
+    <Tabs columns="1">
       <Tab tabLabel="Tab" />
       <Tab tabLabel="Tab" />
       <Tab tabLabel="Tab" />
     </Tabs>
   ))
   .add("2 Columns per Row", () => (
-    <Tabs display="col_2">
+    <Tabs columns="2">
       <Tab tabLabel="Tab" />
       <Tab tabLabel="Tab" />
       <Tab tabLabel="Tab" />
     </Tabs>
   ))
   .add("3 Columns per Row", () => (
-    <Tabs display="col_3">
+    <Tabs columns="3">
       <Tab tabLabel="Tab" />
       <Tab tabLabel="Tab" />
       <Tab tabLabel="Tab" />
@@ -195,7 +195,7 @@ storiesOf("Blocks|Tabs", module)
     </Tabs>
   ))
   .add("4 Columns per Row", () => (
-    <Tabs display="col_4">
+    <Tabs columns="4">
       <Tab tabLabel="Tab" />
       <Tab tabLabel="Tab" />
       <Tab tabLabel="Tab" />
@@ -206,13 +206,20 @@ storiesOf("Blocks|Tabs", module)
     </Tabs>
   ))
   .add("5 Columns per Row", () => (
-    <Tabs display="col_5">
+    <Tabs columns="5">
       <Tab tabLabel="Tab" />
       <Tab tabLabel="Tab" />
       <Tab tabLabel="Tab" />
       <Tab tabLabel="Tab" />
       <Tab tabLabel="Tab" />
       <Tab tabLabel="Tab" />
+      <Tab tabLabel="Tab" />
+      <Tab tabLabel="Tab" />
+      <Tab tabLabel="Tab" />
+    </Tabs>
+  ))
+  .add("Vertical Column - Left", () => (
+    <Tabs align="left">
       <Tab tabLabel="Tab" />
       <Tab tabLabel="Tab" />
       <Tab tabLabel="Tab" />
@@ -225,15 +232,8 @@ storiesOf("Blocks|Tabs", module)
       <Tab tabLabel="Tab" />
     </Tabs>
   ))
-  .add("Vertical Column", () => (
-    <Tabs display="vertical">
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-    </Tabs>
-  ))
-  .add("Vertical Column, Right-Aligned", () => (
-    <Tabs display="vertical" align="right">
+  .add("Vertical Column - Right", () => (
+    <Tabs align="right">
       <Tab tabLabel="Tab" />
       <Tab tabLabel="Tab" />
       <Tab tabLabel="Tab" />
@@ -245,6 +245,13 @@ storiesOf("Blocks|Tabs", module)
       <Tab tabLabel="Tab" />
       <Tab tabLabel="Tab" />
     </Tabs>
+  ))
+  .add("Icon Tabs", () => (
+    <Tabs>
+      <Tab icon="user" />
+      <Tab icon="user" />
+      <Tab icon="user" />
+    </Tabs>
   ));
 
 storiesOf("Blocks|Tabs", module)
@@ -253,7 +260,7 @@ storiesOf("Blocks|Tabs", module)
     React.createElement(() => {
       const [activeSingleTab, setActiveSingleTab] = useState("tab1");
       return (
-        <Tabs display="" isFloating={false}>
+        <Tabs columns="" isFloating={false}>
           <Tab
             tabLabel="Tab 1"
             isSelected={activeSingleTab === "tab1"}
@@ -283,7 +290,7 @@ storiesOf("Blocks|Tabs", module)
     React.createElement(() => {
       const [activeToggleTab, setActiveToggleTab] = useState("");
       return (
-        <Tabs display="" isFloating={false}>
+        <Tabs columns="" isFloating={false}>
           <Tab
             tabLabel="Tab 1"
             isSelected={activeToggleTab === "tab1"}
@@ -330,7 +337,7 @@ storiesOf("Blocks|Tabs", module)
       const [activeMultiTab2, setActiveMultiTab2] = useState(false);
       const [activeMultiTab3, setActiveMultiTab3] = useState(false);
       return (
-        <Tabs display="" isFloating={false}>
+        <Tabs columns="" isFloating={false}>
           <Tab
             tabLabel="Tab 1"
             isSelected={activeMultiTab}

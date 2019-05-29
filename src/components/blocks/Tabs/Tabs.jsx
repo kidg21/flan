@@ -7,7 +7,7 @@ import Button from "atoms/Button";
 const TabsWrapper = styled.section`
   position: ${props => props.setPosition || ""};
   display: ${props => props.setOrientation || "grid"};
-  grid-gap: ${props => (props.isSearch ? "" : '2px')};
+  grid-gap: ${props => (props.isSearch ? "" : "2px")};
   grid-template-columns: ${props =>
     props.setColumns || "repeat(auto-fit, minmax(0, 1fr))"};
   flex-direction: column;
@@ -24,7 +24,7 @@ const TabsWrapper = styled.section`
   }
 `;
 
-function Tabs({ id, children, display, align, isFloating, style, isSearch }) {
+function Tabs({ id, children, columns, align, isFloating, style, isSearch }) {
   let setColumns;
   let setPosition;
   let setWidth;
@@ -32,31 +32,24 @@ function Tabs({ id, children, display, align, isFloating, style, isSearch }) {
   let setOrientation;
   let alignRight;
   let alignBottom;
-  switch (display) {
+  switch (columns) {
     case "wrap":
       setColumns = "repeat(auto-fit, minmax(8rem, 1fr))";
       break;
-    case "col_1":
+    case "1":
       setColumns = "repeat(1, 1fr)";
       break;
-    case "col_2":
+    case "2":
       setColumns = "repeat(2, 1fr)";
       break;
-    case "col_3":
+    case "3":
       setColumns = "repeat(3, 1fr)";
       break;
-    case "col_4":
+    case "4":
       setColumns = "repeat(4, 1fr)";
       break;
-    case "col_5":
+    case "5":
       setColumns = "repeat(5, 1fr)";
-      break;
-    case "vertical":
-      setColumns = "none";
-      setPosition = "absolute";
-      setWidth = "min-content";
-      setHeight = "100%";
-      setOrientation = "flex";
       break;
     default:
       break;
@@ -66,8 +59,20 @@ function Tabs({ id, children, display, align, isFloating, style, isSearch }) {
       setPosition = "absolute";
       alignBottom = "0";
       break;
-    case "right":
+    case "left":
+      setColumns = "none";
       setPosition = "absolute";
+      setWidth = "min-content";
+      setHeight = "100%";
+      setOrientation = "flex";
+      alignBottom = "0";
+      break;
+    case "right":
+      setColumns = "none";
+      setPosition = "absolute";
+      setWidth = "min-content";
+      setHeight = "100%";
+      setOrientation = "flex";
       alignRight = "0";
       break;
     default:
@@ -92,7 +97,15 @@ function Tabs({ id, children, display, align, isFloating, style, isSearch }) {
   );
 }
 
-function Tab({ id, icon, tabLabel, onClick, isSelected, halfSize, isDisabled }) {
+function Tab({
+  id,
+  icon,
+  tabLabel,
+  onClick,
+  isSelected,
+  halfSize,
+  isDisabled
+}) {
   return (
     <Fragment>
       {isSelected ? (
@@ -125,17 +138,8 @@ function Tab({ id, icon, tabLabel, onClick, isSelected, halfSize, isDisabled }) 
 Tabs.propTypes = {
   id: PropTypes.string,
   children: PropTypes.node.isRequired,
-  display: PropTypes.oneOf([
-    "default",
-    "wrap",
-    "col_1",
-    "col_2",
-    "col_3",
-    "col_4",
-    "col_5",
-    "vertical"
-  ]),
-  align: PropTypes.oneOf(["bottom", "right"]),
+  columns: PropTypes.oneOf(["default", "wrap", "1", "2", "3", "4", "5"]),
+  align: PropTypes.oneOf(["bottom", "left", "right"]),
   isFloating: PropTypes.bool,
   isSearch: PropTypes.bool,
   style: PropTypes.string

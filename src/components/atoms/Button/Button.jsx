@@ -59,6 +59,7 @@ const StyledButton = styled.button`
   }
   &[disabled] {
     color: ${colors.grey_40};
+    background-color: ${colors.grey_light};
     border-color: ${colors.grey_40};
     cursor: not-allowed;
     pointer-events: none;
