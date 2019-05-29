@@ -7,7 +7,7 @@ import Button from "atoms/Button";
 const TabsWrapper = styled.section`
   display: ${props => (props.isVertical ? "flex" : "grid")};
   grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-  grid-gap: 2px;
+  grid-gap: ${props => (props.isSearch ? "" : '2px')};
   flex-direction: column;
   position: ${props => (props.isVertical ? "absolute" : "")};
   height: ${props => (props.isVertical ? "100%" : "")};
@@ -19,20 +19,21 @@ const TabsWrapper = styled.section`
   }
 `;
 
-function Tabs({ id, children, isVertical, isFloating }) {
+function Tabs({ id, children, isVertical, isFloating, isSearch }) {
   return (
-    <TabsWrapper id={id} isVertical={isVertical} isFloating={isFloating}>
+    <TabsWrapper id={id} isVertical={isVertical} isFloating={isFloating} isSearch={isSearch}>
       {children}
     </TabsWrapper>
   );
 }
 
-function Tab({ id, tabLabel, onClick, isSelected }) {
+function Tab({ id, tabLabel, onClick, halfSize, isSelected }) {
   return (
     <Fragment>
       {isSelected ? (
         <Button
           id={id}
+          halfSize={halfSize}
           buttonLabel={tabLabel}
           onClick={onClick}
           isSelected={isSelected}
@@ -43,6 +44,7 @@ function Tab({ id, tabLabel, onClick, isSelected }) {
         <Button
           id={id}
           buttonLabel={tabLabel}
+          halfSize={halfSize}
           onClick={onClick}
           isSelected={isSelected}
         />
@@ -55,12 +57,14 @@ Tabs.propTypes = {
   id: PropTypes.string,
   children: PropTypes.node.isRequired,
   isVertical: PropTypes.bool,
-  isFloating: PropTypes.bool
+  isFloating: PropTypes.bool,
+  isSearch: PropTypes.bool
 };
 
 Tab.propTypes = {
   id: PropTypes.string,
   tabLabel: PropTypes.string.isRequired,
+  halfSize: PropTypes.bool,
   onClick: PropTypes.func.isRequired,
   isSelected: PropTypes.bool
 };

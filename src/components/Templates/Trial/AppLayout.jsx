@@ -22,7 +22,7 @@ display: flex;
 flex-direction: column;
 flex: none;
 height: 100vh;
-width: 23%;
+width: 25%;
 background-color: white;
 @media (max-width: 700px) {
     width: 95%;
@@ -58,33 +58,26 @@ background-color: white;
 //   }
 // `
 
-const Controls = styled.div`
-position: absolute;
-right:0;
-width: 20%;
-flex-direction: column;
-flex: none;
-`
 
-
-function Trial({id, rightchild, leftchild }) {
+function AppLayout({id, rightchild, leftchild, leftOpen, rightOpen }) {
     return (
         <App
         id={id}>
           <Mapbox/>
-          <LeftPane> {leftchild}
-          </LeftPane>
-           <RightPane>
-             {rightchild}
-            </RightPane> 
+          { leftOpen ? ( <LeftPane> {leftchild}
+          </LeftPane>) : null} 
+          { rightOpen ? ( <RightPane> {rightchild}
+          </RightPane>) : null}  
         </App>
     );
 }
 
-Trial.propTypes = {
+AppLayout.propTypes = {
   id: PropTypes.string,
   rightchild: PropTypes.any,
-  leftchild: PropTypes.any
+  leftchild: PropTypes.any,
+  leftOpen: PropTypes.bool,
+  rightOpen: PropTypes.bool
 };
 
-export default Trial;
+export default AppLayout;
