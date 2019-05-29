@@ -22,19 +22,29 @@ const StyledButton = styled.button`
       : props.isSolid && props.isSecondary
       ? colors.success
       : colors.white};
+  border: none;
+  box-shadow: ${props => (props.isSolid ? shadows.border20 : shadows.border40)};
   border: 1px solid;
   border-color: ${props =>
-    props.isSecondary ? colors.success : props.halfSize ? colors.grey_20 : colors.anchor};
-  border-radius: ${props => (props.isRound ? "2rem" : props.halfSize ? "" : "4px")};
+    props.isSolid
+      ? "inherit"
+      : props.isSecondary
+      ? colors.success
+      : props.halfSize 
+      ? colors.grey_20 
+      : colors.anchor};
+      border-radius: ${props => (props.isRound ? "2rem" : props.halfSize ? "" : "4px")};
   font-weight: 600;
   width: auto;
-  padding: ${props => props.halfSize ? '' : '0.65rem 1rem'};
+  padding: ${props => props.halfSize ? '' : '0.5rem 0.75rem'};
+  overflow: hidden;
   letter-spacing: 1px;
   cursor: pointer;
   filter: ${props => (props.isFloating ? shadows.cardShadow : "")};
   transition: all 0.15s ease;
   &:hover {
     color: ${colors.white};
+    box-shadow: ${shadows.border20};
     background-color: ${props =>
       props.isSecondary ? colors.success_dark : colors.anchor_dark};
     border-color: ${props =>
@@ -66,7 +76,8 @@ const ButtonLabel = styled.label`
 
 const ButtonIcon = styled(FontAwesomeIcon)`
   font-size: 1.2em;
-  margin-bottom: 0.35rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
 `;
 
 function Button({

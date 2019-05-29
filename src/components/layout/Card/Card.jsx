@@ -1,17 +1,17 @@
-import React from "react"
-import styled, { css } from "styled-components"
-import { fonts, colors, shadows } from "Variables"
-import Grid from "../../_helpers/Grid"
-import { PlaceholderText } from "../../_helpers/Placeholders"
+import React from "react";
+import styled, { css } from "styled-components";
+import { fonts, colors, shadows } from "Variables";
+import Grid from "helpers/Grid";
+import { PlaceholderText } from "helpers/Placeholders";
 
 const CardWrapper = styled.div`
   display: flex;
   flex-direction: column;
   flex: none;
+  position: relative;
   width: 100%;
   background: ${colors.white};
   filter: ${shadows.cardShadow};
-  /* box-shadow: ${shadows.cardShadow}; */
   /* Square off rounded edges of any direct children of Cards */
   > * {
     border-radius: 0;
@@ -24,27 +24,21 @@ const CardWrapper = styled.div`
       padding: 2rem;
     }
   }
-`
-
+`;
 
 const PieceWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding: .5rem;
+  padding: 0.5rem;
   background: ${colors.white};
   flex: none;
   width: 100%;
-  border-bottom: .25px solid #ddd;
+  border-bottom: 0.25px solid #ddd;
   /* Prototype Content - displays when a Card is empty */
-
-`
-
+`;
 
 // const CardList = styled.ul`
 const CardList = styled(Grid)`
-  /* display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); */
   padding: 1rem;
   ${CardWrapper} {
     border-radius: 5px;
@@ -56,14 +50,14 @@ const CardList = styled(Grid)`
       content: "{ CardList } \00000A 'Displays a grid of Cards in columns'";
     }
   }
-`
+`;
 
-function Card({ children}) {
-  return <CardWrapper>{children}</CardWrapper>
-};
+function Card({ id, children }) {
+  return <CardWrapper>{children}</CardWrapper>;
+}
 
-function Piece({ children}) {
-  return <PieceWrapper>{children}</PieceWrapper>
-};
+function Piece({ children }) {
+  return <PieceWrapper>{children}</PieceWrapper>;
+}
 
-export { Card as default, CardList, Piece }
+export { Card as default, CardList, Piece };
