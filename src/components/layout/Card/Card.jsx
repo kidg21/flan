@@ -31,6 +31,7 @@ const PieceWrapper = styled.div`
   flex-direction: column;
   padding: 0.5rem;
   background: ${colors.white};
+
   flex: none;
   width: 100%;
   border-bottom: 0.25px solid #ddd;
@@ -53,11 +54,11 @@ const CardList = styled(Grid)`
 `;
 
 function Card({ id, children }) {
-  return <CardWrapper>{children}</CardWrapper>;
+  return <CardWrapper id={id}>{children}</CardWrapper>;
 }
 
-function Piece({ children }) {
-  return <PieceWrapper>{children}</PieceWrapper>;
+function Piece({ id, children }) {
+  return <PieceWrapper id={id} >{children}</PieceWrapper>;
 }
 
 export { Card as default, CardList, Piece };
