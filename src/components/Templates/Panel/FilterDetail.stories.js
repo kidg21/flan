@@ -13,11 +13,13 @@ import Form, {
   InputLabel
 } from "layout/Form";
 import Checkbox from "../../atoms/Checkbox/Checkbox";
+import Command from "atoms/Command";
 import Input from "atoms/Input";
 import Radio from "atoms/Radio";
 import Slider from "atoms/Slider";
 import RangeSlider from "blocks/RangeSlider";
 import Button from "atoms/Button";
+import Bar from "blocks/Bar";
 import SelectMenu from "atoms/SelectMenu";
 
 const radio_1 = {
@@ -190,6 +192,7 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
           <PanelSection body>
             <Form>
+              <Bar onePart={true} secondSlot={<a> Reset </a>} />
               {/* <Label right grey content="Reset" /> */}
               <Section>
                 <InputLabel inputLabel="Last Sale Date" />
@@ -256,7 +259,7 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
           <PanelSection body>
             <Form>
-              {/* <Label right grey content="Reset" /> */}
+              <Bar onePart={true} secondSlot={<a> Reset </a>} />
               <Section>
                 <RangeSlider label="Year Built" />
                 <RangeSlider label="Number of Units" />
@@ -304,7 +307,7 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
           <PanelSection body>
             <Form>
-              {/* <Label right grey content="Reset" /> */}
+              <Bar onePart={true} secondSlot={<a> Reset </a>} />
               <Section>
                 <RangeSlider label="Aggregate Acreage" />
                 <RangeSlider label="Aggregate Lot Count" />
@@ -351,7 +354,7 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
           <PanelSection body>
             <Form>
-              {/* <Label right grey content="Reset" /> */}
+              <Bar onePart={true} secondSlot={<a> Reset </a>} />
               <Section>
                 <RangeSlider label="Assessed Value" />
                 <RangeSlider label="Improvement Percentage" />
@@ -385,7 +388,7 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
           <PanelSection body>
             <Form>
-              {/* <Label right grey content="Reset" /> */}
+              <Bar onePart={true} secondSlot={<a> Reset </a>} />
               <Section>
                 <Input
                   inputLabel="Street Name"
@@ -436,7 +439,7 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
           <PanelSection body>
             <Form>
-              {/* <Label right grey content="Reset" /> */}
+              <Bar onePart={true} secondSlot={<a> Reset </a>} />
               <Section>
                 <SectionName>Commercial</SectionName>
                 <InputGroup col_2>

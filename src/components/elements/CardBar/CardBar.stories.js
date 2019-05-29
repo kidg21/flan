@@ -24,7 +24,8 @@ storiesOf("Elements|Card Bar", module)
         />
       );
     })
-  );
+  )
+  .add("Disabled", () => <CardBar title="Demographics" disabled="true" />);
 
 storiesOf("Elements|Card Bar", module)
   .add("Navigation", () => <CardBar navigation="true" title="Property" />)

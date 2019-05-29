@@ -51,22 +51,7 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
             }
             body={<MapLegend />}
           />
-          <CardAccordion
-            header={
-              <CardBar
-                layer="true"
-                title="Wetlands"
-                switchProps={{
-                  checked: checked3,
-
-                  onChange: () => {
-                    setChecked3(!checked3);
-                  }
-                }}
-              />
-            }
-            body={<MapLegend />}
-          />
+          <CardBar disabled="true" title="Wetlands" />
           <CardAccordion
             header={
               <CardBar

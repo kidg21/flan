@@ -57,8 +57,8 @@ function Card({ id, children }) {
   return <CardWrapper id={id}>{children}</CardWrapper>;
 }
 
-function Piece({ id, children }) {
-  return <PieceWrapper id={id} >{children}</PieceWrapper>;
+function Piece({ id, children}) {
+  return <PieceWrapper id={id}>{children}</PieceWrapper>;
 }
 
 export { Card as default, CardList, Piece };

@@ -14,12 +14,28 @@ const blockStyle = {
     lineHeight: 'normal'
 }
 
+
+const disabledblockStyle = {
+  width: '4.8em',
+  filter: 'brightness(200%)',
+  lineHeight: 'normal'
+}
+
 const Icons = (
     <IconBlock style={blockStyle} >
               <Icon icon={["far", "expand-arrows"]} />
               <Icon icon={["far", "share"]} />
               <Icon icon={["far", "filter"]} />
       </IconBlock>
+)
+
+
+const DisabledIcons = (
+  <IconBlock style={disabledblockStyle} >
+            <Icon icon={["far", "expand-arrows"]} />
+            <Icon icon={["far", "share"]} />
+            <Icon icon={["far", "filter"]} />
+    </IconBlock>
 )
 
 const Space = {
@@ -29,21 +45,27 @@ const Space = {
 const SwitchContainer = styled.div`
 display: flex;
 vertical-align: baseline;
+filter: ${props => props.disabled ? 'brightness(130%)' : '' };
 `
 
 
-function CardBar({ id, navigation, info, title, layer, switchProps }) {
+function CardBar({ id, navigation, info, title, layer, switchProps, disabled }) {
   return (
       <Piece
       id={id}
       title={title}
       layer={layer}
       navigation={navigation}
-      info={info}> 
+      info={info}
+      disabled={disabled}> 
             { layer ? (<Bar twoParts='true' firstSlot={
              <SwitchContainer> <Switch {...switchProps}/> <span style={Space}/> {title} </SwitchContainer>
              } 
              secondSlot={Icons}/>)
+             : disabled ? (<Bar twoParts='true' firstSlot={
+              <SwitchContainer disabled='true'> <Switch/> <span style={Space}/> {title} </SwitchContainer>
+              } 
+              secondSlot={DisabledIcons}/>)
              : navigation ? 
              (<Bar twoParts='true' firstSlot={title} secondSlot={<Icon icon={["fal", "chevron-right"]}/>}/>
              )
@@ -59,6 +81,7 @@ function CardBar({ id, navigation, info, title, layer, switchProps }) {
           title: PropTypes.any.isRequired,
           navigation: PropTypes.bool,
           layer: PropTypes.bool,
-          info: PropTypes.bool
+          info: PropTypes.bool,
+          disabled: PropTypes.bool
         };
       export default CardBar;

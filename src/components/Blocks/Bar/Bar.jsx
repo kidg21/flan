@@ -39,6 +39,7 @@ const BarLayout = styled.div`
   align-items: flex;
   vertical-align: center;
   display: flex;
+  font-weight:600;
   justify-content: space-between;
   padding: .5em 1.5em 0.5em .5em;
   // border-bottom: 0.25px solid #eaeded;

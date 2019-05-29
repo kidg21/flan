@@ -19,12 +19,4 @@ storiesOf("Blocks|Bar", module)
       thirdSlot="try"
     />
   ))
-  .add("One Part", () => <Bar onePart={true} secondSlot="x" />)
-  .add("Disabled", () => (
-    <Bar
-      firstSlot="two part"
-      twoParts={true}
-      secondSlot="try"
-      disabled="true"
-    />
-  ));
+  .add("One Part", () => <Bar onePart={true} secondSlot="x" />);
