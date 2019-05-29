@@ -1,6 +1,6 @@
 // Codes for color palette
 export const colors = {
-  white: "hsl(34, 5%, 99%)",
+  white: "hsl(0, 100%, 100%)",
   grey_light: "hsl(34, 5%, 95%)",
   grey_light_glass: "hsl(34, 5%, 95%, 0.85)",
   grey_20: "hsl(34, 5%, 88%)",

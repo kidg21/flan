@@ -1,133 +1,115 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
-import Header from "blocks/Panel/Header";
-import Table from "blocks/Table";
-import Card from "blocks/Card/Card";
-import Group from "blocks/Group/Group";
-import Container from "atoms/Container";
-import Accordion from "blocks/Accordion/Accordion";
+import PanelHeader from "elements/PanelHeader/PanelHeader";
+import CardAccordion from "elements/CardAccordion";
+import MapLegend from "blocks/MapLegend";
+import CardBar from "elements/CardBar/CardBar";
 import Panel, { PanelSection } from "layout/Panel";
 
 storiesOf("Templates|Panel", module).add("Layer Panel", () =>
   React.createElement(() => {
-    const [checked, setChecked] = useState(false);
-    const [checked2, setChecked2] = useState(false);
-    const [checked3, setChecked3] = useState(false);
-    const [checked4, setChecked4] = useState(false);
-    const [checked5, setChecked5] = useState(false);
-    const [checked6, setChecked6] = useState(false);
-    const [checked7, setChecked7] = useState(false);
-    const [checked8, setChecked8] = useState(false);
-    const [visibility, setVisibility] = useState(false);
-
+    const [checked, setChecked] = useState("");
+    const [checked2, setChecked2] = useState("");
+    const [checked3, setChecked3] = useState("");
+    const [checked4, setChecked4] = useState("");
+    const [checked5, setChecked5] = useState("");
     return (
       <Panel>
         <PanelSection>
-          <Header title="Layers" twoParts={true} />
+          <PanelHeader title="Filters" main={true} />
         </PanelSection>
-        <PanelSection body>
-          <Card
-            title="DOT Traffic"
-            layer={true}
-            switchProps={{
-              checked: checked,
+        <PanelSection>
+          <CardAccordion
+            header={
+              <CardBar
+                layer="true"
+                title="Demographics"
+                switchProps={{
+                  checked: checked,
 
-              onChange: () => {
-                setChecked(!checked);
-              }
-            }}
+                  onChange: () => {
+                    setChecked(!checked);
+                  }
+                }}
+              />
+            }
+            body={<MapLegend />}
           />
-          <Card
-            title="Qualified Opportunities"
-            layer={true}
-            switchProps={{
-              checked: checked2,
+          <CardAccordion
+            header={
+              <CardBar
+                layer="true"
+                title="Parcel"
+                switchProps={{
+                  checked: checked2,
 
-              onChange: () => {
-                setChecked2(!checked2);
-              }
-            }}
+                  onChange: () => {
+                    setChecked2(!checked2);
+                  }
+                }}
+              />
+            }
+            body={<MapLegend />}
           />
-          <Card
-            title="Parcels"
-            layer={true}
-            switchProps={{
-              checked: checked3,
-
-              onChange: () => {
-                setChecked3(!checked3);
-              }
-            }}
-          />
-          <Card
-            title="Major Brands"
-            layer={true}
-            switchProps={{
-              checked: checked4,
-
-              onChange: () => {
-                setChecked4(!checked4);
-              }
-            }}
-          />
-          <Card
-            title="DFIRM"
-            layer={true}
-            switchProps={{
-              checked: checked5,
-
-              onChange: () => {
-                setChecked5(!checked5);
-              }
-            }}
-          />
-          <Accordion
-            header={<Group title="First Group" number="3" />}
-            visibility={visibility}
-            onClick={() => {
-              setVisibility(!visibility);
-            }}
-          >
-            <Container>
-              <Card
+          <CardAccordion
+            header={
+              <CardBar
+                layer="true"
                 title="Wetlands"
-                layer={true}
                 switchProps={{
-                  checked: checked6,
+                  checked: checked3,
 
                   onChange: () => {
-                    setChecked6(!checked6);
+                    setChecked3(!checked3);
                   }
                 }}
               />
-
-              <Card
-                title="Field Sites"
-                layer={true}
+            }
+            body={<MapLegend />}
+          />
+          <CardAccordion
+            header={
+              <CardBar
+                layer="true"
+                title="Traffic"
                 switchProps={{
-                  checked: checked7,
+                  checked: checked4,
 
                   onChange: () => {
-                    setChecked7(!checked7);
+                    setChecked4(!checked4);
                   }
                 }}
               />
-
-              <Card
-                title="Builder Sites"
-                layer={true}
+            }
+            body={<MapLegend />}
+          />
+          <CardAccordion
+            header={
+              <CardBar
+                layer="true"
+                title="Schools"
                 switchProps={{
-                  checked: checked8,
+                  checked: checked5,
 
                   onChange: () => {
-                    setChecked8(!checked8);
+                    setChecked5(!checked5);
                   }
                 }}
               />
-            </Container>
-          </Accordion>
+            }
+            body={<MapLegend />}
+          />
         </PanelSection>
       </Panel>
     );
   })
 );
+
+// // storiesOf("Templates|Panel", module).add("Layer Panel", () =>
+// //   React.createElement(() => {
+// //     const [checked, setChecked] = useState(false);
+// //     const [checked2, setChecked2] = useState(false);
+// //     const [checked3, setChecked3] = useState(false);
+// //     const [checked4, setChecked4] = useState(false);
+// //     const [checked5, setChecked5] = useState(false);
+// //     return (
