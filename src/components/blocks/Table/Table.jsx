@@ -11,11 +11,6 @@ const TableWrapper = styled.table`
   width: 100%;
 `;
 const Row = styled.tr`
-  font-size: 12px;
-
-  // &:nth-child(even) {
-  //   background-color: #f0f5fb ;
-  // }
 
   &:hover {
     background-color: #f5f7f9;
@@ -24,16 +19,26 @@ const Row = styled.tr`
 `;
 const Cell = styled.td`
   padding: 0.5em 1em 0.5em;
+  font-size: 0.860rem;
 
   &:first-child {
     color: #83a3c2;
     font-weight: bold;
-    font-size: 12px;
   };
   &:nth-child(even) {
     text-align: right;
   }
 `;
+
+
+
+const data = [
+  {id: 'a', color: 'red', name: 'Devin'},
+  {id: 'b', color: 'blue', name: 'Gabe'},
+  {id: 'c', color: 'green', name: 'Kim'},
+]
+
+
 
 function Table() {
   return (
@@ -43,15 +48,15 @@ function Table() {
         <Cell>Row one, second cell</Cell>
       </Row>
       <Row>
-        <Cell>Parcel Number</Cell>
-        <Cell>second cell</Cell>
-      </Row>
-      <Row>
-        <Cell>Land Description</Cell>
+      <Cell>Address</Cell>
         <Cell>Row one, second cell</Cell>
       </Row>
       <Row>
-        <Cell>Owner</Cell>
+        <Cell>Address</Cell>
+        <Cell>Row one, second cell</Cell>
+      </Row>
+      <Row>
+      <Cell>Address</Cell>
         <Cell>Row one, second cell</Cell>
       </Row>
     </TableWrapper>

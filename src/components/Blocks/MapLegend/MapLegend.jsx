@@ -10,11 +10,15 @@ const data = [
   {id: 'c', color: 'green', name: 'Kim'},
 ]
 
-const Legend = styled.div`
+const LI = styled.li`
+list-style: none;
+`
+
+const UL = styled.ul`
 display: flex;
-flex-direct:row;
 justify-content: space-between;
 `
+
 const Container = styled.div`
 width: 100wh;
 border: 1px solid #ddd;
@@ -28,10 +32,10 @@ function MapLegend() {
     <Form>
       <Section>
         <SectionName>Hello</SectionName>
-        <Container>
-          {data.map(item => <div key={item.id}>
-          {item.color} {item.name}</div>)}
-        </Container>
+        <UL>
+          {data.map(item => <LI key={item.id}>
+          {item.color} {item.name} </LI>)}
+        </UL>
       </Section>
     </Form>
   

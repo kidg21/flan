@@ -7,6 +7,7 @@ import Button from "atoms/Button";
 const TabsWrapper = styled.section`
   position: ${props => props.setPosition || ""};
   display: ${props => props.setOrientation || "grid"};
+  grid-gap: ${props => (props.isSearch ? "" : "2px")};
   grid-template-columns: ${props =>
     props.setColumns || "repeat(auto-fit, minmax(0, 1fr))"};
   flex-direction: column;
@@ -23,7 +24,7 @@ const TabsWrapper = styled.section`
   }
 `;
 
-function Tabs({ id, children, columns, align, isFloating, style }) {
+function Tabs({ id, children, columns, align, isFloating, style, isSearch }) {
   let setColumns;
   let setPosition;
   let setWidth;
@@ -88,6 +89,7 @@ function Tabs({ id, children, columns, align, isFloating, style }) {
       alignRight={alignRight}
       alignBottom={alignBottom}
       isFloating={isFloating}
+      isSearch={isSearch}
       style={style}
     >
       {children}
@@ -95,12 +97,21 @@ function Tabs({ id, children, columns, align, isFloating, style }) {
   );
 }
 
-function Tab({ id, icon, tabLabel, onClick, isSelected, isDisabled }) {
+function Tab({
+  id,
+  icon,
+  tabLabel,
+  onClick,
+  isSelected,
+  halfSize,
+  isDisabled
+}) {
   return (
     <Fragment>
       {isSelected ? (
         <Button
           id={id}
+          halfSize={halfSize}
           icon={icon}
           buttonLabel={tabLabel}
           onClick={onClick}
@@ -114,6 +125,7 @@ function Tab({ id, icon, tabLabel, onClick, isSelected, isDisabled }) {
           id={id}
           icon={icon}
           buttonLabel={tabLabel}
+          halfSize={halfSize}
           onClick={onClick}
           isSelected={isSelected}
           isDisabled={isDisabled}
@@ -129,6 +141,7 @@ Tabs.propTypes = {
   columns: PropTypes.oneOf(["default", "wrap", "1", "2", "3", "4", "5"]),
   align: PropTypes.oneOf(["bottom", "left", "right"]),
   isFloating: PropTypes.bool,
+  isSearch: PropTypes.bool,
   style: PropTypes.string
 };
 
@@ -136,6 +149,7 @@ Tab.propTypes = {
   id: PropTypes.string,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   tabLabel: PropTypes.string.isRequired,
+  halfSize: PropTypes.bool,
   onClick: PropTypes.func.isRequired,
   isSelected: PropTypes.bool,
   isDisabled: PropTypes.bool

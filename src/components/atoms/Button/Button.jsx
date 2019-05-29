@@ -30,11 +30,13 @@ const StyledButton = styled.button`
       ? "inherit"
       : props.isSecondary
       ? colors.success
+      : props.halfSize 
+      ? colors.grey_20 
       : colors.anchor};
-  border-radius: ${props => (props.isRound ? "2rem" : "4px")};
+      border-radius: ${props => (props.isRound ? "2rem" : props.halfSize ? "" : "4px")};
   font-weight: 600;
   width: auto;
-  padding: 0.5rem 0.75rem;
+  padding: ${props => props.halfSize ? '' : '0.5rem 0.75rem'};
   overflow: hidden;
   letter-spacing: 1px;
   cursor: pointer;
@@ -67,7 +69,8 @@ const StyledButton = styled.button`
 
 const ButtonLabel = styled.label`
   line-height: normal;
-  font-size: inherit;
+  font-size: ${props => props.halfSize ? 'small' : 'inherit'};
+  font-weight: ${props => props.halfSize ? '400' : ''};
   user-select: none;
   cursor: pointer;
 `;
@@ -81,6 +84,7 @@ const ButtonIcon = styled(FontAwesomeIcon)`
 function Button({
   id,
   name,
+  halfSize,
   type,
   buttonLabel,
   icon,
@@ -97,6 +101,7 @@ function Button({
       name={id}
       type={type}
       isSolid={isSolid}
+      halfSize={halfSize}
       isSecondary={isSecondary}
       isRound={isRound}
       isFloating={isFloating}
@@ -104,14 +109,15 @@ function Button({
       onClick={onClick}
     >
       {icon ? <ButtonIcon icon={icon} /> : null}
-      <ButtonLabel>{buttonLabel}</ButtonLabel>
+      <ButtonLabel 
+      halfSize={halfSize}>{buttonLabel}</ButtonLabel>
     </StyledButton>
   );
 }
 
 Button.propTypes = {
   id: PropTypes.string,
-  buttonLabel: PropTypes.string.isRequired,
+  buttonLabel: PropTypes.any.isRequired,
   name: PropTypes.string,
   /** button, file, reset, or submit. */
   type: PropTypes.string,
@@ -119,6 +125,7 @@ Button.propTypes = {
   isSolid: PropTypes.bool,
   isSecondary: PropTypes.bool,
   isRound: PropTypes.bool,
+  halfSize: PropTypes.bool,
   isFloating: PropTypes.bool,
   isDisabled: PropTypes.bool,
   onClick: PropTypes.func.isRequired
