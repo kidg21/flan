@@ -31,7 +31,7 @@ export const colors = {
   insurance: "hsl(89, 39%, 50%)",
   homeBuilding: "hsl(43, 65%, 49%)",
   realEstate: "hsl(12, 61%, 50%)"
-}
+};
 
 // Typefaces
 export const fonts = {
@@ -40,7 +40,7 @@ export const fonts = {
   body: "Muli, Arial, sans-serif",
   // body: "Lato, sans-serif",
   data: "Muli, Arial, sans-serif"
-}
+};
 
 // Sizes for typography scale
 export const fontSize = {
@@ -59,7 +59,7 @@ export const fontSize = {
   // xxl: '24px',
   // xxxl: '30px',
   // xxxxl: '36px'
-}
+};
 
 // Sizes for typography scale
 export const shadows = {
@@ -73,11 +73,13 @@ export const shadows = {
     "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem",
   lightBorderInner:
     "hsl(34, 5%, 72%) -1px -1px 0 0 inset, hsl(34, 5%, 72%) 1px 1px 0 0 inset",
+  border20: "hsl(34, 5%, 95%) 0px 0px 0px 1px",
+  border40: "hsl(34, 5%, 88%) 0px 0px 0px 1px",
   checkedShadow:
     "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
   radioShadow:
     "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsl(34, 5%, 95%) -1px 1px 0 0 inset, hsl(34, 5%, 95%) 1px -1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px"
-}
+};
 
 export const data = {
   iceCream: [
@@ -88,4 +90,4 @@ export const data = {
     { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
     { value: "cookie dough", label: "Cookie Dough" }
   ]
-}
+};
