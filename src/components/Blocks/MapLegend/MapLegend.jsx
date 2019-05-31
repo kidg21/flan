@@ -1,64 +1,90 @@
-import React from "react";
-import styled, { css } from "styled-components";
+import React, { Fragment } from "react";
+import styled from "styled-components";
+import { colors, shadows } from "Variables";
 import PropTypes from "prop-types";
-import Form, {Section, SectionName, InputGroup } from 'layout/Form';
+import KeyItem from "./LegendItem";
+
+const TabsWrapper = styled.section`
+  display: grid;
+  // grid-gap: 2px;
+  // grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  // flex-direction: column;
+  width: 100%;
+
+  > * {
+    border-radius: 0;
+  }
+`;
 
 
-const data = [
-  {id: 'a', color: 'red', name: 'Devin'},
-  {id: 'b', color: 'blue', name: 'Gabe'},
-  {id: 'c', color: 'green', name: 'Kim'},
-]
-
-const LI = styled.li`
-list-style: none;
-`
-
-const UL = styled.ul`
-display: flex;
-justify-content: space-between;
-`
-
-const Container = styled.div`
-width: 100wh;
-border: 1px solid #ddd;
-`
+const Title = styled.h4`
+  text-align: left;
+  font-size: .88em;
+  margin-top: .5em;
+  padding-left: 2.3em;
+  margin-bottom: .5em;
+`;
 
 
 
+function Legend({ id, children, title }) {
 
-function MapLegend() {
   return (
-    <Form>
-      <Section>
-        <SectionName>Hello</SectionName>
-        <UL>
-          {data.map(item => <LI key={item.id}>
-          {item.color} {item.name} </LI>)}
-        </UL>
-      </Section>
-    </Form>
-  
+    <TabsWrapper
+      id={id}
+    >
+      <Title> {title} </Title>
+      {children}
+    </TabsWrapper>
   );
 }
 
-export default MapLegend;
+function Item({
+  id,
+  color,
+  name,
+  onClick,
+  isSelected,
+  isDisabled
+}) {
+  return (
+    <Fragment>
+      {isSelected ? (
+        <KeyItem
+          id={id}
+          color={color}
+          name={name}
+          onClick={onClick}
+          isSelected={isSelected}
+          isDisabled={isDisabled}
+        />
+      ) : (
+        <KeyItem
+          id={id}
+          color={color}
+          name={name}
+          onClick={onClick}
+          isSelected={isSelected}
+          isDisabled={isDisabled}
+        />
+      )}
+    </Fragment>
+  );
+}
 
+Legend.propTypes = {
+  id: PropTypes.string,
+  children: PropTypes.node.isRequired,
+  title: PropTypes.string
+};
 
+Item.propTypes = {
+  id: PropTypes.string,
+  color: PropTypes.any,
+  name: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+  isSelected: PropTypes.bool,
+  isDisabled: PropTypes.bool
+};
 
-
- // <Legend>
-     
-    //   <MyLegendLegendScale>
-    //     <LegendLabels style={{ background: "#CD5C5C" }} />
-    //     <LegendText>One</LegendText>
-    //     <LegendLabels style={{ background: "#FF9999" }} />
-    //     <LegendText>Two</LegendText>
-    //     <LegendLabels style={{ background: "#FA8072" }} />
-    //     <LegendText>Three</LegendText>
-    //     <LegendLabels style={{ background: "#E9967A" }} />
-    //     <LegendText>Four</LegendText>
-    //     <LegendLabels style={{ background: "#FFA07A" }} />
-    //     <LegendText>Five</LegendText>
-    //   </MyLegendLegendScale>
-    // </Legend>
+export { Legend as default, Item };

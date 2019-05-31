@@ -19,14 +19,14 @@ const selectStyles = {
       : isDisabled
       ? colors.grey_20
       : colors.white,
-    borderColor: isFocused ? colors.anchor + "!important" : colors.grey_20,
+    borderColor: isFocused ? colors.success_light + "!important" : colors.grey_20,
     borderBottomColor: colors.grey_20,
     fontWeight: "normal",
     letterSpacing: "1px",
     minHeight: "2.75rem",
     cursor: isDisabled ? "not-allowed" : "pointer",
     ":hover": {
-      borderColor: colors.anchor
+      borderColor: colors.success_light
     },
     boxShadow: "none"
   }),
@@ -85,7 +85,8 @@ const selectStyles = {
   menu: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
     fontFamily: fonts.data,
-    letterSpacing: "1px",
+    textAlign: "left",
+    letterSpacing: ".5px",
     margin: ".25rem 0",
     boxShadow: shadows.dropShadow
   }),
@@ -105,7 +106,7 @@ const selectStyles = {
         : isSelected
         ? colors.black
         : isFocused
-        ? colors.anchor
+        ? colors.success_light
         : colors.grey_80,
       cursor: isDisabled ? "not-allowed" : "pointer"
     };

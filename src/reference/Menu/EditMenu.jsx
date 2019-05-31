@@ -16,22 +16,23 @@ const StyledUL = styled.ul`
 `;
 
 const StyledLI = styled.li`
-  padding: 4px;
-  font-family: muli;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  font-size: small;
+  letter-spacing: 0.5px;
   color: white;
-  font-weight: bold;
 `;
 
 const Children = (
   <StyledUL>
     <StyledLI>Save</StyledLI>
+    <StyledLI>Save as Filter</StyledLI>
     <StyledLI>Save as Layer</StyledLI>
     <StyledLI>View Heatmap</StyledLI>
     <StyledLI>View Labels</StyledLI>
   </StyledUL>
 );
 
-const DropdownMenu = ({ children, onToggle, object }) => {
+const EditMenu = ({ children, onToggle, object }) => {
   const [visibility, setVisibility] = useState(false);
   return (
     <Container
@@ -40,29 +41,10 @@ const DropdownMenu = ({ children, onToggle, object }) => {
         if (onToggle) onToggle(!visibility);
       }}
     >
-      {object}
+      <Icon icon={["far", "ellipsis-v"]} size="lg" />
       {visibility ? <Fragment>{Children}</Fragment> : null}
     </Container>
   );
 };
 
-// const EditDropdown = () => {
-//   return (
-//     <div>
-//       <Dropdown
-//         title="Select"
-//         onToggle={visibility => {
-//           console.log("visibility -->", visibility)
-//         }}
-//       >
-//         <StyledUL>
-//           <StyledLI>Option 1</StyledLI>
-//           <StyledLI>Option 2</StyledLI>
-//           <StyledLI>Option 3</StyledLI>
-//         </StyledUL>
-//       </Dropdown>
-//     </div>
-//   )
-// }
-
-export default DropdownMenu;
+export default EditMenu;

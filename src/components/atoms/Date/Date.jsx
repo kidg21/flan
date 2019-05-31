@@ -11,9 +11,11 @@ const StyledDateRangePicker = styled.input.attrs({ type: "date" })`
   border-right: 1px solid #ddd;
   padding: 0.5rem 0.75rem;
 
+  &:active {
+    border-color: ${colors.success_light};
+  }
+
 `
-
-
 
 const StyledTimePicker = styled.input.attrs({ type: "time" })`
   text-align: center;
@@ -23,6 +25,10 @@ const StyledTimePicker = styled.input.attrs({ type: "time" })`
   border-right: 1px solid #ddd;
   padding: 0.5rem 0.75rem;
 
+  &:active {
+    border-color: ${colors.success_light};
+  }
+
 
 `
 
@@ -31,6 +37,7 @@ function Calendar ({id, date, time, datetime}) {
 
   return (
     <div
+    id={id}
     date={date}
     time={time}
     datetime={datetime}
@@ -52,4 +59,4 @@ Calendar.propTypes = {
 };
 
 
-export default Calendar
+export default Calendar;

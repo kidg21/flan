@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import Bar from "blocks/Bar/Bar";
-import Card, {Piece} from "layout/Card/Card"
+import Card, {Piece} from "layout/Card/Card";
 
 const Block = styled.div`
 display: flex;
