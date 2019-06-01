@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { fonts, colors, shadows } from "Variables";
 import { InputLabel, HelpText, ErrorText } from "../../layout/Form/Form";
 import Select from "react-select";
+import {Lighten, Darken} from "helpers/Placeholders";
 
 const selectStyles = {
   // Wrapper
@@ -19,14 +20,14 @@ const selectStyles = {
       : isDisabled
       ? colors.grey_20
       : colors.white,
-    borderColor: isFocused ? colors.anchor + "!important" : colors.grey_20,
+    borderColor: isFocused ? colors.success_light + "!important" : colors.grey_20,
     borderBottomColor: colors.grey_20,
     fontWeight: "normal",
-    letterSpacing: "1px",
+    letterSpacing: ".5px",
     minHeight: "2.75rem",
     cursor: isDisabled ? "not-allowed" : "pointer",
     ":hover": {
-      borderColor: colors.anchor
+      borderColor: colors.grey_40
     },
     boxShadow: "none"
   }),
@@ -34,7 +35,7 @@ const selectStyles = {
     ...styles,
     fontFamily: fonts.data,
     color: isFocused ? colors.grey_60 : colors.grey_60,
-    letterSpacing: "1px",
+    letterSpacing: ".5px",
     fontWeight: 400
   }),
   // selected option
@@ -85,7 +86,8 @@ const selectStyles = {
   menu: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
     fontFamily: fonts.data,
-    letterSpacing: "1px",
+    textAlign: "left",
+    letterSpacing: ".5px",
     margin: ".25rem 0",
     boxShadow: shadows.dropShadow
   }),
@@ -105,7 +107,7 @@ const selectStyles = {
         : isSelected
         ? colors.black
         : isFocused
-        ? colors.anchor
+        ? colors.success
         : colors.grey_80,
       cursor: isDisabled ? "not-allowed" : "pointer"
     };

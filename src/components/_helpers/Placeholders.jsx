@@ -18,7 +18,7 @@ export const PlaceholderText = css`
 `;
 
 export const Darken = css`
-  filter: brightness(85%);
+  filter: brightness(90%);
   `;
 
 export const Lighten = css`

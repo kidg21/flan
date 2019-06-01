@@ -1,14 +1,13 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
+import { withInfo } from "@storybook/addon-info";
 import Calendar from "./Date";
 
 // Date
 storiesOf("Atoms|Date", module)
+  .addDecorator(withInfo)
   .addDecorator(Padding)
-  .add("Default", () => (
-    <div style={{ display: "inline-block" }}>
-      <Calendar date={true} />
-      <Calendar time={true} />
-    </div>
-  ));
+  .add("Date", () => <Calendar date={true} />)
+  .add("Time", () => <Calendar time={true} />)
+  .add("Date Time", () => <Calendar datetime={true} />);

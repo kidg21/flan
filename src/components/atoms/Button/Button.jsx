@@ -22,16 +22,11 @@ const StyledButton = styled.button`
       : props.isSolid && props.isSecondary
       ? colors.success
       : colors.white};
-  border: none;
   box-shadow: ${props => (props.isSolid ? shadows.border20 : shadows.border40)};
   border: 1px solid;
   border-color: ${props =>
-    props.isSolid
-      ? "inherit"
-      : props.isSecondary
+     props.isSecondary
       ? colors.success
-      : props.halfSize 
-      ? colors.grey_20 
       : colors.anchor};
       border-radius: ${props => (props.isRound ? "2rem" : props.halfSize ? "" : "4px")};
   font-weight: 600;
@@ -53,7 +48,7 @@ const StyledButton = styled.button`
   &:active {
     color: ${colors.white};
     background-color: ${props =>
-      props.isSecondary ? colors.success_light : colors.anchor_light};
+      props.isSecondary ? colors.success_light : colors.anchor};
     border-color: ${props =>
       props.isSecondary ? colors.success_light : colors.anchor_light};
   }

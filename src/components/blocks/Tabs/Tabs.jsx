@@ -12,6 +12,8 @@ const TabsWrapper = styled.section`
     props.setColumns || "repeat(auto-fit, minmax(0, 1fr))"};
   flex-direction: column;
   bottom: ${props => props.alignBottom || ""};
+  border: ${props => (props.rounded ? "1px solid blue" : "")};
+  border-radius: ${props => (props.rounded ? "2rem" : "")};
   right: ${props => (props.alignRight ? "0" : "")};
   width: ${props => props.setWidth || "100%"};
   height: ${props => props.setHeight || ""};
@@ -24,7 +26,7 @@ const TabsWrapper = styled.section`
   }
 `;
 
-function Tabs({ id, children, columns, align, isFloating, style, isSearch }) {
+function Tabs({ id, children, columns, align, isFloating, rounded, style, isSearch }) {
   let setColumns;
   let setPosition;
   let setWidth;
@@ -88,6 +90,7 @@ function Tabs({ id, children, columns, align, isFloating, style, isSearch }) {
       setOrientation={setOrientation}
       alignRight={alignRight}
       alignBottom={alignBottom}
+      rounded={rounded}
       isFloating={isFloating}
       isSearch={isSearch}
       style={style}
@@ -118,7 +121,7 @@ function Tab({
           isSelected={isSelected}
           isDisabled={isDisabled}
           isSolid={true}
-          isSecondary={true}
+          // isSecondary={true}
         />
       ) : (
         <Button
@@ -142,7 +145,8 @@ Tabs.propTypes = {
   align: PropTypes.oneOf(["bottom", "left", "right"]),
   isFloating: PropTypes.bool,
   isSearch: PropTypes.bool,
-  style: PropTypes.string
+  style: PropTypes.string,
+  rounded: PropTypes.bool
 };
 
 Tab.propTypes = {
