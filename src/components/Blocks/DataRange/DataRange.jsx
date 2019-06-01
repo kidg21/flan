@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import SelectMenu from "atoms/SelectMenu";
 import { colors, shadows } from "Variables";
+import { InputLabel } from "layout/Form";
 
 
 const InputContainer = styled.div`
@@ -12,6 +13,11 @@ const InputContainer = styled.div`
   grid-template-columns: minmax(auto, 2fr) minmax(auto, auto) minmax(auto, 2fr);
   grid-gap: 0.35rem;
 `;
+
+const Container = styled.div`
+display: inline-block;
+margin-bottom: .5rem;
+`
 
 const Space = styled.div`
 width: 1em;
@@ -39,8 +45,10 @@ const Dash = () => (
   );
 
 
-function DataRange ({options}) {
+function DataRange ({options, label}) {
     return (
+      <Container>
+      <InputLabel inputLabel={label}/>
 <InputContainer>
 <SelectMenu
 placeholder="Any"
@@ -52,6 +60,7 @@ placeholder="Any"
 options={options}
 />
 </InputContainer>
+</Container>
 
     );
 }

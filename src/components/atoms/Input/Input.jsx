@@ -81,7 +81,7 @@ const TextInput = styled.input`
   }
   &:focus {
     background-color: ${props => (props.error ? colors.alert_tint : "")};
-    border-color: ${props => (props.error ? colors.alert : colors.success)};
+    border-color: ${props => (props.error ? colors.alert : colors.success_light)};
     ::placeholder {
       color: ${props => (props.error ? colors.alert : colors.grey_60)};
     }

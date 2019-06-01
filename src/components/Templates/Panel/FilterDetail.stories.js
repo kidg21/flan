@@ -278,12 +278,12 @@ storiesOf("Templates|Panel/Property Filters", module)
           <PanelSection body>
             <Form>
               <Bar onePart={true} secondSlot={<a> Reset </a>} />
-              <Section />
               <Section>
-                <DataRange options={options} />
-                <DataRange options={options} />
-                <DataRange options={options} />
-                <DataRange options={options} />
+                <DataRange options={options} label="Year Built" />
+                <DataRange options={options} label="Number of Units" />
+                <DataRange options={options} label="Range 3" />
+                <DataRange options={options} label="Range 4" />
+
                 <Input
                   inputLabel="Zoning (Assessor)"
                   placeholder="i.e. Mary Williams"
