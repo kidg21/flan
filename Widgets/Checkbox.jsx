@@ -34,6 +34,12 @@ class Checkbox extends PureComponent {
   }
 }
 
+Checkbox.defaultProps = {
+  checked: false,
+  label: null,
+  labelProps: null,
+};
+
 Checkbox.propTypes = {
   id: PropTypes.string.isRequired,
   checked: PropTypes.bool,
