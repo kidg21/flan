@@ -78,9 +78,9 @@ function Search({id}) {
     id={id}>
         <TextInputContainer> 
           <SearchText/> 
-         <span style={ICONSTYLE}>
+         {/* <span style={ICONSTYLE}>
             <Icon icon={['fas','microphone']} style={{filter: 'brightness(160%)'}} /> 
-            </span> 
+            </span>  */}
             </TextInputContainer>
       <Tabs isSearch='true'>
             <Tab

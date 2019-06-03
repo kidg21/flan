@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
-import Legend, { Item } from "./MapLegend";
+import Legend, { Item } from "./Legend";
 import { withInfo } from "@storybook/addon-info";
 import KeyItem from "./LegendItem";
 import { Padding } from "helpers/Display";

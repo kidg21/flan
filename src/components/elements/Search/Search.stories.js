@@ -9,4 +9,4 @@ storiesOf("Elements|Search", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
   .add("Default", () => <Search />)
-  .add("Controls", () => <Controls />);
+  .add("Segmented Controls", () => <Controls />);
