@@ -4,7 +4,7 @@ import Search from "./Search";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
 
-storiesOf("Blocks|Search", module)
+storiesOf("Elements|Search", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
   .add("Default", () => <Search />);

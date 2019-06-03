@@ -23,7 +23,6 @@ export { default as Group } from "./blocks/Group";
 export { default as MapLegend } from "./blocks/Map";
 export { default as Header } from "./blocks/Panel";
 export { default as RangeSlider } from "./blocks/RangeSlider";
-export { default as Search } from "./blocks/Search";
 export { default as ButtonBlock } from "./blocks/ButtonBlock";
 export { default as IconBlock } from "./blocks/IconBlock";
 export { default as NavBlock } from "./blocks/NavBlock";

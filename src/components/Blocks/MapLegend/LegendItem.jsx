@@ -39,7 +39,7 @@ const Item = styled.button`
         border: 1px solid black;
     }
     ${LegendText} {
-        color: yellowgreen;
+        font-weight: bold;
     }
   }
   &[disabled] {
