@@ -1,8 +1,8 @@
-import React from "react"
-import styled, { css } from "styled-components"
-import PropTypes from "prop-types"
-import { InputLabel, HelpText, ErrorText } from "layout/Form"
-import { colors, shadows } from "Variables"
+import React from "react";
+import styled, { css } from "styled-components";
+import PropTypes from "prop-types";
+import { InputLabel, HelpText, ErrorText } from "layout/Form";
+import { colors, shadows } from "Variables";
 
 const TextareaContainer = styled.div`
   display: grid;
@@ -11,7 +11,7 @@ const TextareaContainer = styled.div`
   align-content: flex-start;
   color: ${props =>
     props.error ? colors.alert : props.disabled ? colors.grey_40 : ""};
-`
+`;
 const TextareaInput = styled.textarea`
   border: 1px solid ${colors.grey_20};
   border-bottom: 1px solid ${colors.grey_20};
@@ -38,40 +38,56 @@ const TextareaInput = styled.textarea`
       background-color: ${props => (props.error ? colors.alert : "")};
     }
   }
-`
+`;
 
-function Textarea({ id, inputLabel, isRequired, helpText, errorText }) {
+function Textarea({
+  id,
+  inputLabel,
+  placeholder,
+  pattern,
+  value,
+  helpText,
+  disabled,
+  isRequired,
+  error,
+  errorText
+}) {
   return (
     <TextareaContainer
-      disabled={props.disabled} // input attribute
-      helpText={helpText}
+      id={id} // input attribute
       isRequired={isRequired}
-      error={props.error}
+      disabled={disabled} // input attribute
+      error={error}
     >
       <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
       <TextareaInput
-        id={props.name} // input attribute
-        name={props.name} // input attribute
-        type={props.type} // input attribute
-        value={props.value} // input attribute
-        placeholder={props.placeholder} // input attribute
-        pattern={props.pattern}
+        id={id} // input attribute
+        name={id} // input attribute
+        placeholder={placeholder} // input attribute
+        pattern={pattern}
+        value={value} // input attribute
+        disabled={disabled}
+        error={error}
       />
       {/* Help Text */}
       {helpText ? <HelpText helpText={helpText} /> : null}
       {/* Error Message (required) */}
-      {props.error ? <ErrorText errorText={errorText} /> : null}
+      {error ? <ErrorText errorText={errorText} /> : null}
     </TextareaContainer>
-  )
+  );
 }
 
 Textarea.propTypes = {
   id: PropTypes.string,
-  name: PropTypes.string,
-  pattern: PropTypes.string,
+  inputLabel: PropTypes.string,
   placeholder: PropTypes.string,
+  pattern: PropTypes.string,
+  value: PropTypes.string,
+  helpText: PropTypes.string,
   disabled: PropTypes.bool,
-  error: PropTypes.bool
-}
+  isRequired: PropTypes.bool,
+  error: PropTypes.bool,
+  errorText: PropTypes.bool
+};
 
-export { Textarea as default }
+export { Textarea as default };

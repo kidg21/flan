@@ -1,6 +1,6 @@
-import styled, { css } from "styled-components"
-import { fonts, colors, shadows } from "Variables"
-import { PlaceholderText } from "helpers/Placeholders"
+import styled, { css } from "styled-components";
+import { fonts, colors, shadows } from "Variables";
+import { PlaceholderText } from "helpers/Placeholders";
 
 const Panel = styled.div`
   position: absolute;
@@ -25,7 +25,7 @@ const Panel = styled.div`
       content: "Panel";
     }
   }
-`
+`;
 
 const PanelSection = styled.section`
   position: relative;
@@ -34,8 +34,10 @@ const PanelSection = styled.section`
   flex: ${props => (props.body ? "auto" : "none")};
   z-index: ${props => (props.body ? "0" : "1")};
   overflow-x: hidden;
-  overflow-y: ${props => (props.body ? "scroll" : "hidden")};
+  overflow-y: ${props => (props.body ? "scroll" : "")};
   max-height: 100vh;
+  /* box-shadow: ${props =>
+    props.body ? "none" : shadows.panelSectionShadow}; */
   box-shadow: ${props => (props.body ? "none" : shadows.panelSectionShadow)};
   transition: all 0.2s ease-in-out;
   /* Prototype Content - displays when a Panel Section is empty */
@@ -45,6 +47,6 @@ const PanelSection = styled.section`
       content: "PanelSection";
     }
   }
-`
+`;
 
-export { Panel as default, PanelSection }
+export { Panel as default, PanelSection };

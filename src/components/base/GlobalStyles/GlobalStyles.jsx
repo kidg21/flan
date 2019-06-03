@@ -1,11 +1,11 @@
-import { createGlobalStyle } from "styled-components"
-import styledNormalize from "styled-normalize"
+import { createGlobalStyle } from "styled-components";
+import styledNormalize from "styled-normalize";
 // Import variables
-import { colors, fonts, fontSize } from "Variables"
+import { colors, fonts, fontSize } from "Variables";
 // Import Fonts
-import "../../../css/fonts.css"
+import "../../../css/fonts.css";
 // Import Icons
-import "../../../icons/fontawesome"
+import "../../../icons/fontawesome";
 
 const GlobalStyles = createGlobalStyle`
 
@@ -133,6 +133,9 @@ const GlobalStyles = createGlobalStyle`
         ${"" /* line-height: 1.5rem; */}
         line-height: 1.2rem;
     }
+    img, object {
+        width: 100%;
+    }
     code {
         font-family: ${fonts.data};
         font-size: 12px;
@@ -206,7 +209,6 @@ const GlobalStyles = createGlobalStyle`
         }
     }
 
-    `
-    
+    `;
 
-export default GlobalStyles
+export default GlobalStyles;

@@ -12,6 +12,7 @@ const CardWrapper = styled.div`
   width: 100%;
   background: ${colors.white};
   filter: ${shadows.cardShadow};
+  /* box-shadow: ${shadows.dropShadow}; */
   /* Square off rounded edges of any direct children of Cards */
   > * {
     border-radius: 0;
@@ -57,7 +58,7 @@ function Card({ id, children }) {
   return <CardWrapper id={id}>{children}</CardWrapper>;
 }
 
-function Piece({ id, children}) {
+function Piece({ id, children }) {
   return <PieceWrapper id={id}>{children}</PieceWrapper>;
 }
 
