@@ -2,6 +2,7 @@ import React, { useState, Fragment } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Tabs, { Tab } from "blocks/Tabs";
+import Controls from "./Controls";
 import Bar from "blocks/Bar"
 import Icon from "atoms/Icon";
 import { colors, shadows } from "Variables";
@@ -19,6 +20,8 @@ const SearchContainer = styled.div`
 
 const DIV = styled.div`
 display: flex;
+cursor: pointer;
+padding-left: 1em;
 
 `
 
@@ -57,13 +60,28 @@ const ICONSTYLE = {
   cursor: 'pointer'
 }
 
+function SearchText () {
+  return (
+  <DIV>
+    <span style={ICONSTYLE}>
+  <Icon icon={['far','search']} style={{filter: 'brightness(180%)'}} />
+  </span>
+
+         <TextInput placeholder="Search" /> 
+         </DIV>
+)};
 
 function Search({id}) {
   const [activeSingleTab, setActiveSingleTab] = useState("tab1");
   return (
     <SearchContainer
     id={id}>
-        <TextInputContainer> <TextInput placeholder="Search" /> <span style={ICONSTYLE}> <Icon icon={['far','search']} style={{filter: 'brightness(150%)'}} /> </span> </TextInputContainer>
+        <TextInputContainer> 
+          <SearchText/> 
+         <span style={ICONSTYLE}>
+            <Icon icon={['fas','microphone']} style={{filter: 'brightness(160%)'}} /> 
+            </span> 
+            </TextInputContainer>
       <Tabs isSearch='true'>
             <Tab
               tabLabel="Owner"
