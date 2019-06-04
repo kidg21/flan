@@ -5,11 +5,11 @@ import Button from "atoms/Button";
 import Tabs, { Tab } from "blocks/Tabs";
 import Card, { CardList } from "layout/Card";
 import Panel, { PanelSection } from "layout/Panel";
-import image from "images/residential/modern exterior 1.jpg";
+import ModernExterior_1 from "images/residential/modern exterior 1.jpg";
 import Banner from "blocks/Banner";
 import Modal from "layout/Modal";
 
-storiesOf("Layout|Modal", module).add("Modal", () =>
+storiesOf("Layout|Modal", module).add("Modal (with logic)", () =>
   React.createElement(() => {
     const [visible, setVisible] = useState(false);
     const [transition, setTransition] = useState(true);
@@ -21,27 +21,25 @@ storiesOf("Layout|Modal", module).add("Modal", () =>
       setTransition(false);
       setTimeout(() => {
         setVisible(false);
-      }, 600);
+      }, 500);
     };
     return (
       <Fragment>
         <Modal
+          type=""
+          text="This is a very special message just for you..."
+          image={ModernExterior_1}
+          align=""
           visible={visible}
           onClose={handleClose}
-          align=""
-          hideBG={false}
-          hideClose={false}
           opacity={transition}
           scale={transition}
           move={transition}
         >
-          <Card onClose={handleClose}>
-            <img src={image} />
-          </Card>
-          {/* <Banner
+          <Banner
             title="This is a Standard notification telling you stuff."
             onClose={handleClose}
-          /> */}
+          />
         </Modal>
         <Panel>
           <PanelSection body>
@@ -70,3 +68,39 @@ storiesOf("Layout|Modal", module).add("Modal", () =>
     );
   })
 );
+
+storiesOf("Layout|Modal", module).add("Modal (no logic)", () => (
+  <Fragment>
+    <Modal
+      type=""
+      text="This is a very special message just for you..."
+      image={ModernExterior_1}
+      align=""
+    >
+      <Banner title="This is a Standard notification telling you stuff." />
+    </Modal>
+    <Panel>
+      <PanelSection body>
+        <CardList col_1>
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </CardList>
+      </PanelSection>
+      <PanelSection>
+        <Tabs>
+          <Tab tabLabel="Open Modal" />
+        </Tabs>
+      </PanelSection>
+    </Panel>
+  </Fragment>
+));
