@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components"
 import { fonts, colors } from "Variables"
-import { PlaceholderText } from "../../_helpers/Placeholders"
+import { PlaceholderText } from "helpers/Placeholders.jsx"
 
 const Page = styled.div`
   display: grid;
