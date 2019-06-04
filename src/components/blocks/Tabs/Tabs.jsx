@@ -7,13 +7,14 @@ import Button from "atoms/Button";
 const TabsWrapper = styled.section`
   position: ${props => props.setPosition || ""};
   display: ${props => props.setOrientation || "grid"};
-  grid-gap: ${props => (props.isSearch ? "" : "2px")};
+  grid-gap: ${props => (props.isRounded ? "" : props.isSearch ? "" :"2px")};
   grid-template-columns: ${props =>
     props.setColumns || "repeat(auto-fit, minmax(0, 1fr))"};
   flex-direction: column;
   bottom: ${props => props.alignBottom || ""};
-  border: ${props => (props.rounded ? "1px solid blue" : "")};
-  border-radius: ${props => (props.rounded ? "2rem" : "")};
+  border: ${props => (props.isRounded ? "1px solid" : "")};
+  border-color: ${props => (props.isRounded ? colors.anchor : "")};
+  border-radius: ${props => (props.isRounded ? "2rem" : "")};
   right: ${props => (props.alignRight ? "0" : "")};
   width: ${props => props.setWidth || "100%"};
   height: ${props => props.setHeight || ""};
@@ -23,10 +24,18 @@ const TabsWrapper = styled.section`
   > * {
     margin: ${props => (props.isFloating ? ".5rem" : "")};
     border-radius: ${props => (props.isFloating ? ".5rem" : "0")};
-  }
+    &:nth-child(1) {
+      border-top-left-radius: ${props => (props.isRounded ? '2rem' : '')};
+      border-bottom-left-radius: ${props => (props.isRounded ? '2rem' : '')};
+    
+    }
+    &:last-child {
+      border-top-right-radius: ${props => (props.isRounded ? '2rem' : '')};
+      border-bottom-right-radius: ${props => (props.isRounded ? '2rem' : '')};
+    }
 `;
 
-function Tabs({ id, children, columns, align, isFloating, rounded, style, isSearch }) {
+function Tabs({ id, children, columns, align, isFloating, isRounded, style, isSearch }) {
   let setColumns;
   let setPosition;
   let setWidth;
@@ -83,6 +92,7 @@ function Tabs({ id, children, columns, align, isFloating, rounded, style, isSear
   return (
     <TabsWrapper
       id={id}
+      isRounded={isRounded}
       setColumns={setColumns}
       setPosition={setPosition}
       setWidth={setWidth}
@@ -90,7 +100,6 @@ function Tabs({ id, children, columns, align, isFloating, rounded, style, isSear
       setOrientation={setOrientation}
       alignRight={alignRight}
       alignBottom={alignBottom}
-      rounded={rounded}
       isFloating={isFloating}
       isSearch={isSearch}
       style={style}
@@ -146,7 +155,7 @@ Tabs.propTypes = {
   isFloating: PropTypes.bool,
   isSearch: PropTypes.bool,
   style: PropTypes.string,
-  rounded: PropTypes.bool
+  isRounded: PropTypes.bool
 };
 
 Tab.propTypes = {
