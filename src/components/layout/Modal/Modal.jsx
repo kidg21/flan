@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import styled, { css, keyframes } from "styled-components";
 import { fonts, colors, shadows, screen } from "Variables";
 import { PlaceholderText } from "helpers/Placeholders";
+import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import Mapbox from "layout/Map";
 
@@ -93,10 +94,10 @@ const ModalContainer = styled.div`
   flex-direction: column;
   padding: 0.5rem;
   background-blend-mode: multiply;
-  pointer-events: ${props => (props.hideBG ? "none" : "")};
+  pointer-events: ${props => props.pointerEvents || ""};
   overflow: hidden;
   ${ContentWrapper}, ${Image} {
-    animation-name: ${props => (props.move ? moveDown : moveUp)};
+    animation-name: ${props => (props.position ? moveDown : moveUp)};
     animation-duration: 0.6s;
     transform-origin: top;
     pointer-events: initial;
@@ -153,22 +154,23 @@ const Text = styled.h5`
 function Modal({
   id,
   type,
+  align,
   visible,
+  onClick,
   onClose,
+  position,
+  scale,
+  opacity,
   text,
   image,
   ariaLabelledby,
   ariaDescribedby,
-  align,
-  hideBG,
-  hideClose,
-  opacity,
-  scale,
-  move,
-  children
+  children,
+  style
 }) {
   let modalType;
   let justifyContent;
+  let pointerEvents;
   switch (type) {
     case "text":
       modalType = (
@@ -208,6 +210,7 @@ function Modal({
           <ContentWrapper>{children}</ContentWrapper>
         </Fragment>
       );
+      pointerEvents = "none";
       break;
     default:
       modalType = ((justifyContent = "center"),
@@ -220,6 +223,9 @@ function Modal({
       break;
   }
   switch (align) {
+    case "top":
+      justifyContent = "flex-start";
+      break;
     case "center":
       justifyContent = "center";
       break;
@@ -233,16 +239,19 @@ function Modal({
     <ModalContainer
       id={id}
       type={type}
-      image={image}
+      align={align}
       visible={visible}
+      image={image}
+      position={position}
       scale={scale}
-      move={move}
+      opacity={opacity}
       aria-labelledby={ariaLabelledby}
       aria-describedby={ariaDescribedby}
       justifyContent={justifyContent}
-      hideBG={hideBG}
-      hideClose={hideClose}
+      pointerEvents={pointerEvents}
+      onClick={onClick}
       children={children}
+      style={style}
     >
       {modalType}
     </ModalContainer>
@@ -250,3 +259,17 @@ function Modal({
 }
 
 export default Modal;
+
+Modal.propTypes = {
+  id: PropTypes.string,
+  type: PropTypes.oneOf(["default", "text", "status", "image"]),
+  align: PropTypes.oneOf(["default to type", "top", "center", "bottom"]),
+  visible: PropTypes.bool,
+  image: PropTypes.string,
+  position: PropTypes.oneOf(["moveUp", "moveDown"]),
+  scale: PropTypes.oneOf(["scaleUp", "scaleDown"]),
+  opacity: PropTypes.oneOf(["fadeIn", "fadeOut"]),
+  onClick: PropTypes.func,
+  "aria-labelledby": PropTypes.string,
+  "aria-describedby": PropTypes.string
+};
