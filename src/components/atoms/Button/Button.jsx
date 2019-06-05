@@ -9,7 +9,7 @@ const StyledButton = styled.button`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex: auto;
+  flex: none;
   color: ${props =>
     props.isSolid
       ? colors.white
@@ -25,13 +25,12 @@ const StyledButton = styled.button`
   box-shadow: ${props => (props.isSolid ? shadows.border20 : shadows.border40)};
   border: 1px solid;
   border-color: ${props =>
-     props.isSecondary
-      ? colors.success
-      : colors.anchor};
-      border-radius: ${props => (props.isRound ? "2rem" : props.halfSize ? "" : "4px")};
+    props.isSecondary ? colors.success : colors.anchor};
+  border-radius: ${props =>
+    props.isRound ? "2rem" : props.halfSize ? "" : "4px"};
   font-weight: 600;
   width: auto;
-  padding: ${props => props.halfSize ? '' : '0.5rem 0.75rem'};
+  padding: ${props => (props.halfSize ? "" : "0.5rem 0.75rem")};
   overflow: hidden;
   letter-spacing: 1px;
   cursor: pointer;
@@ -64,8 +63,8 @@ const StyledButton = styled.button`
 
 const ButtonLabel = styled.label`
   line-height: normal;
-  font-size: ${props => props.halfSize ? 'small' : 'inherit'};
-  font-weight: ${props => props.halfSize ? '400' : ''};
+  font-size: ${props => (props.halfSize ? "small" : "inherit")};
+  font-weight: ${props => (props.halfSize ? "400" : "")};
   user-select: none;
   cursor: pointer;
 `;
@@ -88,7 +87,8 @@ function Button({
   isRound,
   isFloating,
   isDisabled,
-  onClick
+  onClick,
+  style
 }) {
   return (
     <StyledButton
@@ -102,10 +102,10 @@ function Button({
       isFloating={isFloating}
       disabled={isDisabled}
       onClick={onClick}
+      style={style}
     >
       {icon ? <ButtonIcon icon={icon} /> : null}
-      <ButtonLabel 
-      halfSize={halfSize}>{buttonLabel}</ButtonLabel>
+      <ButtonLabel halfSize={halfSize}>{buttonLabel}</ButtonLabel>
     </StyledButton>
   );
 }

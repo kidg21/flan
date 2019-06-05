@@ -7,7 +7,7 @@ import Button from "atoms/Button";
 const TabsWrapper = styled.section`
   position: ${props => props.setPosition || ""};
   display: ${props => props.setOrientation || "grid"};
-  grid-gap: ${props => (props.isRounded ? "" : props.isSearch ? "" :"2px")};
+  grid-gap: ${props => (props.isRounded ? "" : props.isSearch ? "" : "2px")};
   grid-template-columns: ${props =>
     props.setColumns || "repeat(auto-fit, minmax(0, 1fr))"};
   flex-direction: column;
@@ -22,20 +22,30 @@ const TabsWrapper = styled.section`
   z-index: ${props => (props.isFloating ? "1001" : "")};
   filter: ${props => (props.isFloating ? shadows.cardShadow : "")};
   > * {
+    flex: auto;
     margin: ${props => (props.isFloating ? ".5rem" : "")};
     border-radius: ${props => (props.isFloating ? ".5rem" : "0")};
     &:nth-child(1) {
-      border-top-left-radius: ${props => (props.isRounded ? '2rem' : '')};
-      border-bottom-left-radius: ${props => (props.isRounded ? '2rem' : '')};
+      border-top-left-radius: ${props => (props.isRounded ? "2rem" : "")};
+      border-bottom-left-radius: ${props => (props.isRounded ? "2rem" : "")};
     
     }
     &:last-child {
-      border-top-right-radius: ${props => (props.isRounded ? '2rem' : '')};
-      border-bottom-right-radius: ${props => (props.isRounded ? '2rem' : '')};
+      border-top-right-radius: ${props => (props.isRounded ? "2rem" : "")};
+      border-bottom-right-radius: ${props => (props.isRounded ? "2rem" : "")};
     }
 `;
 
-function Tabs({ id, children, columns, align, isFloating, isRounded, style, isSearch }) {
+function Tabs({
+  id,
+  children,
+  columns,
+  align,
+  isFloating,
+  isRounded,
+  style,
+  isSearch
+}) {
   let setColumns;
   let setPosition;
   let setWidth;
