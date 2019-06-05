@@ -1,1 +1,1 @@
-export { default, Item } from "./MapLegend.jsx";
+export { default } from "./MapLegend.jsx";
