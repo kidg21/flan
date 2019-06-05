@@ -109,10 +109,7 @@ const Bullet = styled(Span)`
     content: "•";
   }
 `
-export const Success = styled(Span)`
-  color: ${colors.success};
-  font-weight: bold;
-`
+
 
 export default function Typography(props) {
   return (
@@ -326,4 +323,4 @@ export default function Typography(props) {
   )
 }
 
-// export default *;
+

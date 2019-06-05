@@ -5,7 +5,7 @@ import Icon from "atoms/Icon";
 import Button from "atoms/Button";
 import Card, {Piece} from "layout/Card";
 import Bar from "blocks/Bar";
-import Grid from 'helpers/Grid';
+
 
 
 function PopCard({ id, title, message}) {
@@ -15,14 +15,12 @@ function PopCard({ id, title, message}) {
         <Bar onePart='true' secondSlot={<Icon icon={["fal", "times"]} />}/>
         <Bar threeParts='true' title={title} />
         <Bar threeParts='true' title={message} />
-        <Grid col_2>
           <Button buttonLabel="yes please!" isRound={true} />
           <Button
             buttonLabel="No thanks"
             isSecondStandard={true}
             isRound={true}
           />
-          </Grid>
     </Card>
   );
 }

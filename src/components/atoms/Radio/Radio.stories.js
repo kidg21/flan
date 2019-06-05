@@ -71,155 +71,51 @@ storiesOf("Atoms|Radio", module)
       </InputGroup>
     </Section>
   ))
-  .add("Radio Group (Responsive)", () =>
-    React.createElement(() => {
-      const [checked, setChecked] = useState({ selectedValue: "" });
-      const handleCheckboxChange = event => {
-        setChecked({ selectedValue: event.target.value });
-      };
-      return (
-        <Section>
-          <SectionName>Radio Group (Responsive)</SectionName>
-          <InputGroup>
-            <Radio
-              {...radio_1}
-              checked={checked.selectedValue === radio_1.value}
-              onChange={handleCheckboxChange}
-            />
-            <Radio
-              {...radio_2}
-              checked={checked.selectedValue === radio_2.value}
-              onChange={handleCheckboxChange}
-            />
-            <Radio
-              {...radio_3}
-              checked={checked.selectedValue === radio_3.value}
-              onChange={handleCheckboxChange}
-            />
-            <Radio
-              {...radio_4}
-              checked={checked.selectedValue === radio_4.value}
-              onChange={handleCheckboxChange}
-            />
-            <Radio
-              {...radio_long}
-              checked={checked.selectedValue === radio_long.value}
-              onChange={handleCheckboxChange}
-            />
-          </InputGroup>
-        </Section>
-      );
-    })
-  )
-  .add("Radio Group (2 columns)", () =>
-    React.createElement(() => {
-      const [checked, setChecked] = useState({ selectedValue: "" });
-      const handleCheckboxChange = event => {
-        setChecked({ selectedValue: event.target.value });
-      };
-      return (
-        <Section>
-          <SectionName>Radio Group (2 columns)</SectionName>
-          <InputGroup col_2>
-            <Radio
-              {...radio_1}
-              checked={checked.selectedValue === radio_1.value}
-              onChange={handleCheckboxChange}
-            />
-            <Radio
-              {...radio_2}
-              checked={checked.selectedValue === radio_2.value}
-              onChange={handleCheckboxChange}
-            />
-            <Radio
-              {...radio_3}
-              checked={checked.selectedValue === radio_3.value}
-              onChange={handleCheckboxChange}
-            />
-            <Radio
-              {...radio_4}
-              checked={checked.selectedValue === radio_4.value}
-              onChange={handleCheckboxChange}
-            />
-          </InputGroup>
-        </Section>
-      );
-    })
-  )
-  .add("Radio Group (3 columns)", () =>
-    React.createElement(() => {
-      const [checked, setChecked] = useState({ selectedValue: "" });
-      const handleCheckboxChange = event => {
-        setChecked({ selectedValue: event.target.value });
-      };
-      return (
-        <Section>
-          <SectionName>Radio Group (3 columns)</SectionName>
-          <InputGroup col_3>
-            <Radio
-              {...radio_1}
-              checked={checked.selectedValue === radio_1.value}
-              onChange={handleCheckboxChange}
-            />
-            <Radio
-              {...radio_2}
-              checked={checked.selectedValue === radio_2.value}
-              onChange={handleCheckboxChange}
-            />
-            <Radio
-              {...radio_3}
-              checked={checked.selectedValue === radio_3.value}
-              onChange={handleCheckboxChange}
-            />
-            <Radio
-              {...radio_4}
-              checked={checked.selectedValue === radio_4.value}
-              onChange={handleCheckboxChange}
-            />
-          </InputGroup>
-        </Section>
-      );
-    })
-  )
-  .add("Radio Group (mixed columns)", () =>
-    React.createElement(() => {
-      const [checked, setChecked] = useState({ selectedValue: "" });
-      const handleCheckboxChange = event => {
-        setChecked({ selectedValue: event.target.value });
-      };
-      return (
-        <Section>
-          <SectionName>Radio Group (mixed columns)</SectionName>
-          <InputGroup col_2>
-            <Radio
-              {...radio_1}
-              checked={checked.selectedValue === radio_1.value}
-              onChange={handleCheckboxChange}
-            />
-            <Radio
-              {...radio_2}
-              checked={checked.selectedValue === radio_2.value}
-              onChange={handleCheckboxChange}
-            />
-            <Radio
-              {...radio_3}
-              checked={checked.selectedValue === radio_3.value}
-              onChange={handleCheckboxChange}
-            />
-            <Radio
-              {...radio_4}
-              checked={checked.selectedValue === radio_4.value}
-              onChange={handleCheckboxChange}
-            />
-          </InputGroup>
-          <InputGroup>
-            <Radio
-              {...radio_long}
-              checked={checked.selectedValue === radio_long.value}
-              onChange={handleCheckboxChange}
-            />
-          </InputGroup>
-        </Section>
-      );
-    })
-  );
+  .add("Radio Group (Responsive)", () => (
+    <Section>
+      <SectionName>Radio Group (Responsive)</SectionName>
+      <InputGroup>
+        <Radio {...radio_1} />
+        <Radio {...radio_2} />
+        <Radio {...radio_3} />
+        <Radio {...radio_4} />
+        <Radio {...radio_long} />
+      </InputGroup>
+    </Section>
+  ))
+  .add("Radio Group (2 columns)", () => (
+    <Section>
+      <SectionName>Radio Group (2 columns)</SectionName>
+      <InputGroup col_2>
+        <Radio {...radio_1} />
+        <Radio {...radio_2} />
+        <Radio {...radio_3} />
+        <Radio {...radio_4} />
+      </InputGroup>
+    </Section>
+  ))
+  .add("Radio Group (3 columns)", () => (
+    <Section>
+      <SectionName>Radio Group (3 columns)</SectionName>
+      <InputGroup col_3>
+        <Radio {...radio_1} />
+        <Radio {...radio_2} />
+        <Radio {...radio_3} />
+        <Radio {...radio_4} />
+      </InputGroup>
+    </Section>
+  ))
+  .add("Radio Group (mixed columns)", () => (
+    <Section>
+      <SectionName>Radio Group (mixed columns)</SectionName>
+      <InputGroup col_2>
+        <Radio {...radio_1} />
+        <Radio {...radio_2} />
+        <Radio {...radio_3} />
+        <Radio {...radio_4} />
+      </InputGroup>
+      <InputGroup>
+        <Radio {...radio_long} />
+      </InputGroup>
+    </Section>
+  ));

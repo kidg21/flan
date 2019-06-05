@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
-import PanelHeader from "elements/PanelHeader/PanelHeader";
+import MainPanelHeader from "elements/MainPanelHeader";
 import CardAccordion from "elements/CardAccordion";
 import MapLegend from "blocks/MapLegend";
-import CardBar from "elements/CardBar/CardBar";
+import LayerCardBar from "elements/LayerCardBar";
 import Panel, { PanelSection } from "layout/Panel";
 
 storiesOf("Templates|Panel", module).add("Layer Panel", () =>
@@ -16,13 +16,12 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
     return (
       <Panel>
         <PanelSection>
-          <PanelHeader title="Filters" main={true} />
+          <MainPanelHeader title="Filters" />
         </PanelSection>
         <PanelSection>
           <CardAccordion
             header={
-              <CardBar
-                layer="true"
+              <LayerCardBar
                 title="Demographics"
                 switchProps={{
                   checked: checked,
@@ -37,8 +36,7 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
           />
           <CardAccordion
             header={
-              <CardBar
-                layer="true"
+              <LayerCardBar
                 title="Parcel"
                 switchProps={{
                   checked: checked2,
@@ -51,11 +49,10 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
             }
             body={<MapLegend />}
           />
-          <CardBar disabled="true" title="Wetlands" />
+          <LayerCardBar title="Wetlands" />
           <CardAccordion
             header={
-              <CardBar
-                layer="true"
+              <LayerCardBar
                 title="Traffic"
                 switchProps={{
                   checked: checked4,
@@ -70,8 +67,7 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
           />
           <CardAccordion
             header={
-              <CardBar
-                layer="true"
+              <LayerCardBar
                 title="Schools"
                 switchProps={{
                   checked: checked5,

@@ -49,39 +49,26 @@ filter: ${props => props.disabled ? 'brightness(130%)' : '' };
 `
 
 
-function CardBar({ id, navigation, info, title, layer, switchProps, disabled }) {
+function LayerCardBar({ id, title, switchProps, disabled }) {
   return (
       <Piece
       id={id}
       title={title}
-      layer={layer}
-      navigation={navigation}
-      info={info}
       disabled={disabled}> 
-            { layer ? (<Bar twoParts='true' firstSlot={
-             <SwitchContainer> <Switch {...switchProps}/> <span style={Space}/> {title} </SwitchContainer>
-             } 
-             secondSlot={Icons}/>)
-             : disabled ? (<Bar twoParts='true' firstSlot={
+            { disabled ? (<Bar type='two' firstSlot={
               <SwitchContainer disabled='true'> <Switch/> <span style={Space}/> {title} </SwitchContainer>
               } 
               secondSlot={DisabledIcons}/>)
-             : navigation ? 
-             (<Bar twoParts='true' firstSlot={title} secondSlot={<Icon icon={["fal", "chevron-right"]}/>}/>
-             )
-             :
-             info ? 
-             ( <Bar twoParts='true' firstSlot={title} secondSlot={<Icon icon={["far", "angle-up"]}/>}/>)
-             : null }
+             : (<Bar type='two' firstSlot={
+                <SwitchContainer> <Switch {...switchProps}/> <span style={Space}/> {title} </SwitchContainer>
+                } 
+                secondSlot={Icons}/>) }
         </Piece>
     );
   }
-      CardBar.propTypes = {
+      LayerCardBar.propTypes = {
           id: PropTypes.string,
           title: PropTypes.any.isRequired,
-          navigation: PropTypes.bool,
-          layer: PropTypes.bool,
-          info: PropTypes.bool,
           disabled: PropTypes.bool
         };
-      export default CardBar;
+      export default LayerCardBar;

@@ -4,8 +4,7 @@ import Input from "atoms/Input/Input";
 import Slider from "atoms/Slider";
 import PropTypes from "prop-types";
 // import Label from "atoms/Label";
-import { colors, shadows } from "Variables";
-import { Lighten, Darken } from "helpers/Placeholders";
+import { colors, shadows, Lighten, Darken } from "Variables";
 import { InputLabel } from "layout/Form";
 
 

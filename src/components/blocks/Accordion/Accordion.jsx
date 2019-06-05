@@ -19,14 +19,10 @@ const Accordion = ({ id, header, children, visibility, onClick }) => {
       <AccordionSection
       id={id}
       onClick={onClick}
-      visibility={visibility}
-      header={header}
-      children={children}
       >
-        <Fragment>
-        {header}</Fragment>
+        {header}
       </AccordionSection>
-  {visibility ? (<Fragment> {children} </Fragment> ): null}
+  {visibility ?  children : null}
     </Fragment>
   );
 };

@@ -3,8 +3,7 @@ import styled, { css } from "styled-components"
 import Input from "atoms/Input/Input";
 import PropTypes from "prop-types";
 import { InputLabel } from "layout/Form";
-import { colors, shadows } from "Variables"
-import {Lighten, Darken} from "helpers/Placeholders";
+import { colors, shadows, Lighten, Darken } from "Variables";
 
 
 const SliderPiece = styled.input.attrs({ type: "range" })`

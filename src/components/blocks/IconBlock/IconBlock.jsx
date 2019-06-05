@@ -18,7 +18,7 @@ const Block = styled.div`
 
 function IconBlock({ id, stacked, children, style }) {
   return (
-    <Block stacked={stacked} style={style}>
+    <Block id={id} stacked={stacked} style={style}>
       {children}
     </Block>
   )

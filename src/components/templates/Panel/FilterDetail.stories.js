@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import Grid from "helpers/Grid";
-import PanelHeader from "elements/PanelHeader";
+import NavigationPanelHeader from "elements/NavigationPanelHeader";
 // import Card, { CardList } from "layout/Card";
 import Panel, { PanelSection } from "layout/Panel";
 import Form, {
@@ -188,7 +188,7 @@ storiesOf("Templates|Panel/Property Filters", module)
       return (
         <Panel>
           <PanelSection>
-            <PanelHeader title="Last Market Sale" navigation={true} />
+            <NavigationPanelHeader title="Last Market Sale" />
           </PanelSection>
           <PanelSection body>
             <Form>
@@ -255,7 +255,7 @@ storiesOf("Templates|Panel/Property Filters", module)
       return (
         <Panel>
           <PanelSection>
-            <PanelHeader title="Characteristics" navigation={true} />
+            <NavigationPanelHeader title="Characteristics" />
           </PanelSection>
           <PanelSection body>
             <Form>
@@ -303,7 +303,7 @@ storiesOf("Templates|Panel/Property Filters", module)
       return (
         <Panel>
           <PanelSection>
-            <PanelHeader title="Aggregate Property" navigation={true} />
+            <NavigationPanelHeader title="Aggregate Property" />
           </PanelSection>
           <PanelSection body>
             <Form>
@@ -350,7 +350,7 @@ storiesOf("Templates|Panel/Property Filters", module)
       return (
         <Panel>
           <PanelSection>
-            <PanelHeader title="Property Value" navigation={true} />
+            <NavigationPanelHeader title="Property Value" />
           </PanelSection>
           <PanelSection body>
             <Form>
@@ -384,7 +384,7 @@ storiesOf("Templates|Panel/Property Filters", module)
       return (
         <Panel>
           <PanelSection>
-            <PanelHeader title="Location" navigation={true} />
+            <NavigationPanelHeader title="Location" />
           </PanelSection>
           <PanelSection body>
             <Form>
@@ -435,7 +435,7 @@ storiesOf("Templates|Panel/Property Filters", module)
       return (
         <Panel>
           <PanelSection>
-            <PanelHeader title="Land Use" navigation={true} />
+            <NavigationPanelHeader title="Land Use" />
           </PanelSection>
           <PanelSection body>
             <Form>
