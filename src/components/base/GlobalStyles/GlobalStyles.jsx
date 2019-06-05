@@ -1,11 +1,11 @@
-import { createGlobalStyle } from "styled-components"
-import styledNormalize from "styled-normalize"
+import { createGlobalStyle } from "styled-components";
+import styledNormalize from "styled-normalize";
 // Import variables
-import { colors, fonts, fontSize } from "Variables"
+import { colors, fonts, fontSize } from "Variables";
 // Import Fonts
-import "../../../css/fonts.css"
+import "../../../css/fonts.css";
 // Import Icons
-import "../../../icons/fontawesome"
+import "../../../icons/fontawesome";
 
 const GlobalStyles = createGlobalStyle`
 
@@ -183,6 +183,7 @@ const GlobalStyles = createGlobalStyle`
     input[type="time"],
     input[type="url"],
     input[type="color"],
+    input[type="range"],
     textarea,
     select {
         box-sizing: border-box;
@@ -193,7 +194,7 @@ const GlobalStyles = createGlobalStyle`
         border-radius: 5px;
         font-size: 12px;
         transition: border-color 0.1s linear, background 0.1s linear;
-        -webkit-appearance: none;
+        appearance: none;
         &:focus {
             outline: none;
         }
@@ -206,7 +207,6 @@ const GlobalStyles = createGlobalStyle`
         }
     }
 
-    `
-    
+    `;
 
-export default GlobalStyles
+export default GlobalStyles;
