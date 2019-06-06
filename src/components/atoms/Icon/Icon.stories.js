@@ -53,8 +53,6 @@ const StaticIcon = styled.li`
   align-content: flex-start;
   align-items: center;
   justify-items: center;
-  background-color: ${props => (props.inverse ? colors.black : "")};
-  color: ${props => (props.inverse ? colors.white : "")};
   transition: all 0.15s ease;
   > svg {
     margin: 0.5rem 0;
@@ -122,24 +120,24 @@ storiesOf("Atoms|Icon", module)
         <IconLabel>standard</IconLabel>
       </StaticIcon>
       <StaticIcon>
-        <Icon icon="coffee" anchor />
-        <IconLabel>anchor</IconLabel>
+        <Icon icon="coffee" type="info" />
+        <IconLabel>info</IconLabel>
       </StaticIcon>
       <StaticIcon>
-        <Icon icon="coffee" success />
+        <Icon icon="coffee" type="success" />
         <IconLabel>success</IconLabel>
       </StaticIcon>
       <StaticIcon>
-        <Icon icon="coffee" warning />
+        <Icon icon="coffee" type="warning" />
         <IconLabel>warning</IconLabel>
       </StaticIcon>
       <StaticIcon>
-        <Icon icon="coffee" alert />
+        <Icon icon="coffee" type="alert" />
         <IconLabel>alert</IconLabel>
       </StaticIcon>
-      <StaticIcon inverse>
-        <Icon icon="coffee" />
-        <IconLabel>inverse</IconLabel>
+      <StaticIcon style={{ backgroundColor: "black" }}>
+        <Icon icon="coffee" type="inverse" />
+        <IconLabel style={{ color: "white" }}>inverse</IconLabel>
       </StaticIcon>
     </IconGrid>
   ))
