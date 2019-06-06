@@ -19,12 +19,11 @@ display: inline-block;
 margin-bottom: .5rem;
 `
 
-const Space = styled.div`
-width: 1em;
-`
-const DIV = styled.div`
+const Separator = styled.div`
 display:flex;
 align-items: bottom;
+padding-left: 1em;
+padding-right: 1em;
 align-text: bottom;
 justify-content: bottom;
 `
@@ -37,33 +36,42 @@ margin: auto;
 `
 
 const Dash = () => (
-    <DIV>
-    <Space/>
+    <Separator>
     <Line>-</Line>
-    <Space/>
-    </DIV>
+    </Separator>
   );
 
 
-function DataRange ({options, label}) {
+function DataRange ({id, placeholder, firstOptions, secondOptions, label}) {
     return (
-      <Container>
+      <Container id={id}>
       <InputLabel inputLabel={label}/>
 <InputContainer>
 <SelectMenu
-placeholder="Any"
-options={options}
+placeholder={placeholder}
+options={firstOptions}
 />
 <Dash/>
 <SelectMenu
-placeholder="Any"
-options={options}
+placeholder={placeholder}
+options={secondOptions}
 />
 </InputContainer>
 </Container>
 
     );
 }
+
+DataRange.defaultProps = {
+  placeholder: 'Any'};
+
+DataRange.propTypes = {
+  id: PropTypes.string,
+  firstOptions: PropTypes.any.isRequired,
+  placeholder: PropTypes.string,
+  label: PropTypes.string,
+  secondOptions: PropTypes.any.isRequired,
+};
 
 
 export default DataRange;

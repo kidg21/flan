@@ -1,3 +1,5 @@
+import styled, { css } from "styled-components";
+
 // Codes for color palette
 export const colors = {
   white: "hsl(0, 100%, 100%)",
@@ -32,6 +34,15 @@ export const colors = {
   homeBuilding: "hsl(43, 65%, 49%)",
   realEstate: "hsl(12, 61%, 50%)"
 };
+
+
+export const Darken = css`
+  filter: brightness(90%);
+  `;
+
+export const Lighten = css`
+filter: brightness(105%)
+`;
 
 // Typefaces
 export const fonts = {

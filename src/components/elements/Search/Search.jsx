@@ -2,7 +2,7 @@ import React, { useState, Fragment } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Tabs, { Tab } from "blocks/Tabs";
-import Controls from "./Controls";
+import Controls from "./Controls.jsx";
 import Bar from "blocks/Bar"
 import Icon from "atoms/Icon";
 import { colors, shadows } from "Variables";
@@ -18,7 +18,7 @@ const SearchContainer = styled.div`
   }
 `;
 
-const DIV = styled.div`
+const Container = styled.div`
 display: flex;
 cursor: pointer;
 padding-left: 1em;
@@ -53,22 +53,22 @@ const TextInput = styled.input`
   }
 `
 
-const ICONSTYLE = {
-  position: 'abolsute',
-  lineHeight: 'normal',
-  margin: 'auto',
-  cursor: 'pointer'
-}
+const Iconstyle = styled.span`
+  position: abolsute;
+  lineHeight: normal;
+  margin: auto;
+  cursor: pointer;
+`
 
 function SearchText () {
   return (
-  <DIV>
-    <span style={ICONSTYLE}>
+  <Container>
+    <Iconstyle>
   <Icon icon={['far','search']} style={{filter: 'brightness(180%)'}} />
-  </span>
+  </Iconstyle>
 
          <TextInput placeholder="Search" /> 
-         </DIV>
+         </Container>
 )};
 
 function Search({id}) {

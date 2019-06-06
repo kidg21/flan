@@ -17,4 +17,10 @@ const options = [
 storiesOf("Blocks|Data Range", module)
   .addDecorator(withInfo)
   .addDecorator(Padding)
-  .add("Default", () => <DataRange options={options} />);
+  .add("Default", () => (
+    <DataRange
+      label="Default Data Range"
+      firstOptions={options}
+      secondOptions={options}
+    />
+  ));

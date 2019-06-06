@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import styled from "styled-components";
 import { colors, shadows } from "Variables";
 import PropTypes from "prop-types";
-import KeyItem from "./LegendItem";
+import KeyItem from "./LegendItem.jsx";
 
 const TabsWrapper = styled.section`
   display: grid;
@@ -55,7 +55,7 @@ function Item({
           color={color}
           name={name}
           onClick={onClick}
-          isSelected={isSelected}
+          isSelected='isSelected'
           isDisabled={isDisabled}
         />
       ) : (

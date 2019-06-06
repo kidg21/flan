@@ -3,14 +3,6 @@ import styled, { css } from "styled-components"
 import PropTypes from "prop-types"
 
 
-const data = [
-  {id: 'a', color: 'Owners/Units', name: 'Multiple Owners (2 Units)'},
-  {id: 'b', color: 'Master Parcel No.', name: '387483675638'},
-  {id: 'c', color: 'Zoning', name: 'No Zone'},
-]
-
-
-
 const TableWrapper = styled.table`
   overflow: hidden;
   cursor: default;
@@ -43,9 +35,10 @@ const Cell = styled.td`
 
 
 
-function Table() {
+function Table({id, data}) {
   return (
-    <TableWrapper>
+    <TableWrapper
+    id={id}>
     {data.map(item => 
     <Row key={item.id}>
     <Cell>{item.color}</Cell> <Cell>{item.name}</Cell> 
@@ -54,6 +47,11 @@ function Table() {
 
  );
 }
+
+Table.propTypes = {
+  id: PropTypes.string,
+  data: PropTypes.any.isRequired};
+
 
 export default Table;
 
