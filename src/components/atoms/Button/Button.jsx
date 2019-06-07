@@ -16,6 +16,7 @@ const StyledButton = styled.button`
   flex: auto;
   flex-direction: column;
   width: auto;
+  width: ${props => (props.fullWidth ? "100%" : "auto")};
   padding: ${props => props.buttonPadding || "0.5rem 0.7rem"};
   justify-content: center;
   align-items: center;
@@ -51,18 +52,17 @@ const ButtonLabel = styled.label`
 `;
 
 const ButtonIcon = styled(FontAwesomeIcon)`
-  font-size: 1.2em;
-  margin-top: 0.25rem;
-  margin-bottom: 0.5rem;
+  margin: 0.25em 0;
 `;
 
 function Button({
   id,
-  type,
-  size,
-  color,
   buttonLabel,
   icon,
+  color,
+  type,
+  size,
+  fullWidth,
   isDisabled,
   onClick
 }) {
@@ -94,8 +94,8 @@ function Button({
       textColor = colors.white;
       break;
     case "disabled":
-      textColor = colors.grey_40;
-      backgroundColor = colors.grey_light;
+      textColor = colors.grey_60;
+      backgroundColor = colors.grey_20;
       isDisabled = true;
       break;
     default:
@@ -117,7 +117,7 @@ function Button({
     <StyledButton
       id={id}
       name={id}
-      type={type}
+      fullWidth={fullWidth}
       disabled={isDisabled}
       onClick={onClick}
       buttonColor={buttonColor}
@@ -135,9 +135,11 @@ function Button({
 Button.propTypes = {
   id: PropTypes.string,
   buttonLabel: PropTypes.any.isRequired,
-  type: PropTypes.string,
-  size: PropTypes.string,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  type: PropTypes.oneOf(["solid", "disabled"]),
+  color: PropTypes.oneOf(["success", "warning", "alert"]),
+  size: PropTypes.oneOf(["small", "large"]),
+  fullWidth: PropTypes.bool,
   isDisabled: PropTypes.bool,
   onClick: PropTypes.func.isRequired
 };
