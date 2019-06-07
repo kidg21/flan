@@ -4,63 +4,38 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { colors, shadows } from "Variables";
 import PropTypes from "prop-types";
 
+const buttonHover = css`
+  filter: brightness(85%) contrast(150%);
+`;
+const buttonActive = css`
+  filter: brightness(105%);
+`;
+
 const StyledButton = styled.button`
   display: flex;
+  flex: auto;
   flex-direction: column;
+  width: auto;
+  padding: ${props => props.buttonPadding || "0.5rem 0.7rem"};
   justify-content: center;
   align-items: center;
-  flex: auto;
-  color: ${props =>
-    props.isSolid
-      ? colors.white
-      : props.isSecondary
-      ? colors.success
-      : colors.anchor};
-  background-color: ${props =>
-    props.isSolid && !props.isSecondary
-      ? colors.anchor
-      : props.isSolid && props.isSecondary
-      ? colors.success
-      : colors.white};
-  border: none;
-  box-shadow: ${props => (props.isSolid ? shadows.border20 : shadows.border40)};
+  color: ${props => props.textColor || colors.anchor};
+  background-color: ${props => props.backgroundColor || colors.white};
   border: 1px solid;
-  border-color: ${props =>
-    props.isSolid
-      ? "inherit"
-      : props.isSecondary
-      ? colors.success
-      : props.halfSize 
-      ? colors.grey_20 
-      : colors.anchor};
-      border-radius: ${props => (props.isRound ? "2rem" : props.halfSize ? "" : "4px")};
+  border-radius: 4px;
+  font-size: ${props => props.labelSize || "inherit"};
   font-weight: 600;
-  width: auto;
-  padding: ${props => props.halfSize ? '' : '0.5rem 0.75rem'};
-  overflow: hidden;
   letter-spacing: 1px;
+  overflow: hidden;
   cursor: pointer;
-  filter: ${props => (props.isFloating ? shadows.cardShadow : "")};
   transition: all 0.15s ease;
   &:hover {
-    color: ${colors.white};
-    box-shadow: ${shadows.border20};
-    background-color: ${props =>
-      props.isSecondary ? colors.success_dark : colors.anchor_dark};
-    border-color: ${props =>
-      props.isSecondary ? colors.success_dark : colors.anchor_dark};
+    ${buttonHover}
   }
   &:active {
-    color: ${colors.white};
-    background-color: ${props =>
-      props.isSecondary ? colors.success_light : colors.anchor_light};
-    border-color: ${props =>
-      props.isSecondary ? colors.success_light : colors.anchor_light};
+    ${buttonActive}
   }
   &[disabled] {
-    color: ${colors.grey_40};
-    background-color: ${colors.grey_light};
-    border-color: ${colors.grey_40};
     cursor: not-allowed;
     pointer-events: none;
     user-select: none;
@@ -69,8 +44,8 @@ const StyledButton = styled.button`
 
 const ButtonLabel = styled.label`
   line-height: normal;
-  font-size: ${props => props.halfSize ? 'small' : 'inherit'};
-  font-weight: ${props => props.halfSize ? '400' : ''};
+  font-size: inherit;
+  font-weight: inherit;
   user-select: none;
   cursor: pointer;
 `;
@@ -83,34 +58,76 @@ const ButtonIcon = styled(FontAwesomeIcon)`
 
 function Button({
   id,
-  name,
-  halfSize,
   type,
+  size,
+  color,
   buttonLabel,
   icon,
-  isSolid,
-  isSecondary,
-  isRound,
-  isFloating,
   isDisabled,
   onClick
 }) {
+  let buttonColor;
+  let textColor;
+  let backgroundColor;
+  let buttonPadding;
+  let labelSize;
+  switch (color) {
+    case "success":
+      buttonColor = colors.success;
+      textColor = buttonColor;
+      break;
+    case "warning":
+      buttonColor = colors.warning;
+      textColor = buttonColor;
+      break;
+    case "alert":
+      buttonColor = colors.alert;
+      textColor = buttonColor;
+      break;
+    default:
+      buttonColor = colors.anchor;
+      break;
+  }
+  switch (type) {
+    case "solid":
+      backgroundColor = buttonColor;
+      textColor = colors.white;
+      break;
+    case "disabled":
+      textColor = colors.grey_40;
+      backgroundColor = colors.grey_light;
+      isDisabled = true;
+      break;
+    default:
+      break;
+  }
+  switch (size) {
+    case "small":
+      buttonPadding = "0.4rem 0.6rem";
+      labelSize = ".8em";
+      break;
+    case "large":
+      buttonPadding = "0.6rem 0.8rem";
+      labelSize = "1.2em";
+      break;
+    default:
+      break;
+  }
   return (
     <StyledButton
       id={id}
       name={id}
       type={type}
-      isSolid={isSolid}
-      halfSize={halfSize}
-      isSecondary={isSecondary}
-      isRound={isRound}
-      isFloating={isFloating}
       disabled={isDisabled}
       onClick={onClick}
+      buttonColor={buttonColor}
+      textColor={textColor}
+      backgroundColor={backgroundColor}
+      buttonPadding={buttonPadding}
+      labelSize={labelSize}
     >
       {icon ? <ButtonIcon icon={icon} /> : null}
-      <ButtonLabel 
-      halfSize={halfSize}>{buttonLabel}</ButtonLabel>
+      <ButtonLabel>{buttonLabel}</ButtonLabel>
     </StyledButton>
   );
 }
@@ -118,16 +135,11 @@ function Button({
 Button.propTypes = {
   id: PropTypes.string,
   buttonLabel: PropTypes.any.isRequired,
-  name: PropTypes.string,
-  /** button, file, reset, or submit. */
   type: PropTypes.string,
+  size: PropTypes.string,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
-  isSolid: PropTypes.bool,
-  isSecondary: PropTypes.bool,
-  isRound: PropTypes.bool,
-  halfSize: PropTypes.bool,
-  isFloating: PropTypes.bool,
   isDisabled: PropTypes.bool,
   onClick: PropTypes.func.isRequired
 };
+
 export { Button as default };

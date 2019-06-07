@@ -56,24 +56,41 @@ storiesOf("Atoms|Button", module)
     <>
       <Grid>
         <Button buttonLabel="Standard Button" />
-        <Button buttonLabel="Standard Secondary" isSecondary={true} />
-        <Button buttonLabel="Standard Solid" isSolid={true} />
+        <Button buttonLabel="Solid Button" type="solid" />
+        <Button buttonLabel="Success Button" color="success" />
         <Button
+          buttonLabel="Solid Success Button"
+          type="solid"
+          color="success"
+        />
+        <Button buttonLabel="Warning Button" color="warning" />
+        <Button
+          buttonLabel="Solid Warning Button"
+          type="solid"
+          color="warning"
+        />
+        <Button buttonLabel="Alert Button" color="alert" />
+        <Button buttonLabel="Solid Alert Button" type="solid" color="alert" />
+        <Button buttonLabel="Small Button" size="small" />
+        <Button buttonLabel="Large Button" size="large" />
+        {/* <Button buttonLabel="Standard Secondary" isSecondary={true} /> */}
+        {/* <Button buttonLabel="Standard Solid" isSolid={true} /> */}
+        {/* <Button
           buttonLabel="Secondary Solid"
           isSolid={true}
           isSecondary={true}
-        />
-        <Button buttonLabel="Standard Round" isRound={true} />
-        <Button
+        /> */}
+        {/* <Button buttonLabel="Standard Round" isRound={true} /> */}
+        {/* <Button
           buttonLabel="Secondary Round"
           isRound={true}
           isSecondary={true}
-        />
+        /> */}
+        <Button buttonLabel="Disabled Button" type="disabled" />
         <Button buttonLabel="Icon Button" icon={["fas", "user"]} />
-        <Button buttonLabel="Floating Button" isFloating={true} />
-        <Button buttonLabel="Disabled Button" isDisabled={true} />
+        {/* <Button buttonLabel="Floating Button" isFloating={true} /> */}
       </Grid>
-      <br />
+      {/* <br />
       <Grid alignLeft={true}>
         <Button buttonLabel="Left-Aligned" />
       </Grid>
@@ -85,8 +102,8 @@ storiesOf("Atoms|Button", module)
       <Grid alignRight={true}>
         <Button buttonLabel="Right-Aligned" />
       </Grid>
-      <br />
-      <Grid col_2>
+      <br /> */}
+      {/* <Grid col_2>
         <Button buttonLabel="Two Column" />
         <Button buttonLabel="Button Grid" />
       </Grid>
@@ -110,6 +127,6 @@ storiesOf("Atoms|Button", module)
         <Button icon="plus" buttonLabel="Hit Me!" isSecondary={true} />
         <Button buttonLabel="Button" />
         <Button buttonLabel="Grid" />
-      </Grid>
+      </Grid> */}
     </>
   ));
