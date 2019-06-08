@@ -44,6 +44,75 @@ storiesOf("Atoms|Badge", module)
       </Grid>
     ))
   )
+  .add("Knobs", () => (
+    <Grid col_4>
+      <Card>
+        <Badge
+          label={options(
+            "label (default)",
+            {
+              "1-digit": "1",
+              "2-digits": "12",
+              "3-digits": "123",
+              "4-digits": "1234",
+              "max-10": "9+",
+              "max-100": "99+",
+              "max-1k": "999+",
+              "max-10k": "9999+",
+              message: "message"
+            },
+            "1",
+            { display: "select" },
+            "Badge"
+          )}
+          icon={options(
+            "icon (no label)",
+            {
+              "no icon": null,
+              user: "user",
+              check: "check",
+              exclamation: "exclamation",
+              envelope: "envelope",
+              phone: "phone"
+            },
+            null,
+            { display: "select" },
+            "Badge"
+          )}
+          type={options(
+            "type",
+            {
+              info: "info",
+              success: "success",
+              warning: "warning",
+              "alert (default)": "alert",
+              dark: "dark",
+              "max-10": "max-10",
+              "max-100": "max-100",
+              "max-1k": "max-1k",
+              "max-10k": "max-10k"
+            },
+            "alert",
+            { display: "radio" },
+            "Badge"
+          )}
+          position={options(
+            "align",
+            {
+              "top-left": "topLeft",
+              "top-right (default)": "topRight",
+              "bottom-right": "bottomRight",
+              "bottom-left": "bottomLeft"
+            },
+            "topRight",
+            { display: "radio" },
+            "Badge"
+          )}
+        />
+        <Title>Badge</Title>
+      </Card>
+    </Grid>
+  ))
   .add("Numbers", () => (
     <CardList col_4>
       <Card>
@@ -51,15 +120,15 @@ storiesOf("Atoms|Badge", module)
         <Title>1-Digit</Title>
       </Card>
       <Card>
-        <Badge label="21" />
+        <Badge label="12" />
         <Title>2-Digit</Title>
       </Card>
       <Card>
-        <Badge label="321" />
+        <Badge label="123" />
         <Title>3-Digit</Title>
       </Card>
       <Card>
-        <Badge label="4321" />
+        <Badge label="1234" />
         <Title>4-Digit</Title>
       </Card>
     </CardList>
