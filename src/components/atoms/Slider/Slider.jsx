@@ -142,10 +142,13 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
 
 function Slider({id, value, min, max, step}) {
   return (
-  <div>
     <SliderPiece
+    id={id}
+    value={value}
+    min={min}
+    max={max}
+    step={step}
     />
-  </div>
     )
 };
 Slider.propTypes = {

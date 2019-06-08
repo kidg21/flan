@@ -36,8 +36,9 @@ export const colors = {
 };
 
 
+
 export const Darken = css`
-  filter: brightness(90%);
+  filter: brightness(85%) contrast(150%);
   `;
 
 export const Lighten = css`
