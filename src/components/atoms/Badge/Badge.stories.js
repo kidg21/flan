@@ -21,7 +21,7 @@ const Title = styled.h6`
   text-align: center;
   margin: 1em;
 `;
-// Badge
+
 storiesOf("Atoms|Badge", module)
   .addParameters({
     info: {
@@ -48,52 +48,40 @@ storiesOf("Atoms|Badge", module)
     <Grid col_4>
       <Card>
         <Badge
-          label={options(
-            "label (default)",
+          type={options(
+            "type",
             {
-              "1-digit": "1",
-              "2-digits": "12",
-              "3-digits": "123",
-              "4-digits": "1234",
-              "max-10": "9+",
-              "max-100": "99+",
-              "max-1k": "999+",
-              "max-10k": "9999+",
-              message: "message"
+              info: "info",
+              "info icon": "iconInfo",
+              success: "success",
+              "success icon": "iconSuccess",
+              warning: "warning",
+              "warning icon": "iconWarning",
+              "alert (default)": "default",
+              "alert icon": "iconAlert",
+              dark: "dark",
+              "dark icon": "iconDark",
+              "max-10": "max-10",
+              "max-100": "max-100",
+              "max-1k": "max-1k",
+              "max-10k": "max-10k"
             },
-            "1",
-            { display: "select" },
+            "default",
+            { display: "radio" },
             "Badge"
           )}
+          label={text("label", "Label", "Badge")}
           icon={options(
             "icon (no label)",
             {
-              "no icon": null,
               user: "user",
               check: "check",
               exclamation: "exclamation",
               envelope: "envelope",
               phone: "phone"
             },
-            null,
+            "user",
             { display: "select" },
-            "Badge"
-          )}
-          type={options(
-            "type",
-            {
-              info: "info",
-              success: "success",
-              warning: "warning",
-              "alert (default)": "alert",
-              dark: "dark",
-              "max-10": "max-10",
-              "max-100": "max-100",
-              "max-1k": "max-1k",
-              "max-10k": "max-10k"
-            },
-            "alert",
-            { display: "radio" },
             "Badge"
           )}
           position={options(
@@ -113,126 +101,7 @@ storiesOf("Atoms|Badge", module)
       </Card>
     </Grid>
   ))
-  .add("Numbers", () => (
-    <CardList col_4>
-      <Card>
-        <Badge label="1" />
-        <Title>1-Digit</Title>
-      </Card>
-      <Card>
-        <Badge label="12" />
-        <Title>2-Digit</Title>
-      </Card>
-      <Card>
-        <Badge label="123" />
-        <Title>3-Digit</Title>
-      </Card>
-      <Card>
-        <Badge label="1234" />
-        <Title>4-Digit</Title>
-      </Card>
-    </CardList>
-  ))
-  .add("Max Count", () => (
-    <CardList col_4>
-      <Card>
-        <Badge label="9+" />
-        <Title>Max 10</Title>
-      </Card>
-      <Card>
-        <Badge label="99+" />
-        <Title>Max 100</Title>
-      </Card>
-      <Card>
-        <Badge label="999+" />
-        <Title>Max 1K</Title>
-      </Card>
-      <Card>
-        <Badge label="9999+" />
-        <Title>Max 10K</Title>
-      </Card>
-    </CardList>
-  ))
-  .add("Icons", () => (
-    <CardList col_4>
-      <Card>
-        <Badge icon="user" type="info" />
-        <Title>Icon</Title>
-      </Card>
-      <Card>
-        <Badge icon="check" type="success" />
-        <Title>Icon</Title>
-      </Card>
-      <Card>
-        <Badge icon="exclamation" type="warning" />
-        <Title>Icon</Title>
-      </Card>
-      <Card>
-        <Badge icon="envelope" />
-        <Title>Icon</Title>
-      </Card>
-    </CardList>
-  ))
-  .add("State", () => (
-    <CardList col_4>
-      <Card>
-        <Badge label="Info" type="info" />
-        <Title>Info</Title>
-      </Card>
-      <Card>
-        <Badge label="Success" type="success" />
-        <Title>Success</Title>
-      </Card>
-      <Card>
-        <Badge label="Warning" type="warning" />
-        <Title>Warning</Title>
-      </Card>
-      <Card>
-        <Badge label="Alert" />
-        <Title>Alert</Title>
-      </Card>
-    </CardList>
-  ))
-  .add("Message", () => (
-    <CardList col_4>
-      <Card>
-        <Badge label="call" type="dark" />
-        <Title>Message</Title>
-      </Card>
-      <Card>
-        <Badge label="the" type="dark" />
-        <Title>Message</Title>
-      </Card>
-      <Card>
-        <Badge label="police" type="dark" />
-        <Title>Message</Title>
-      </Card>
-      <Card>
-        <Badge icon="phone" type="dark" />
-        <Title>Message</Title>
-      </Card>
-    </CardList>
-  ))
-  .add("Alignment", () => (
-    <CardList col_4>
-      <Card>
-        <Badge label="1" position="topRight" />
-        <Title>Top-Right</Title>
-      </Card>
-      <Card>
-        <Badge label="1" position="bottomRight" />
-        <Title>Bottom-Right</Title>
-      </Card>
-      <Card>
-        <Badge label="1" position="topLeft" />
-        <Title>Top-Left</Title>
-      </Card>
-      <Card>
-        <Badge label="1" position="bottomLeft" />
-        <Title>Bottom-Left</Title>
-      </Card>
-    </CardList>
-  ))
+
   .add("The Badge Family", () => (
     <CardList col_4>
       <Card>
@@ -253,36 +122,36 @@ storiesOf("Atoms|Badge", module)
       </Card>
 
       <Card>
-        <Badge label="9+" />
+        <Badge type="max-10" />
         <Title>Max 10</Title>
       </Card>
       <Card>
-        <Badge label="99+" />
+        <Badge type="max-100" />
         <Title>Max 100</Title>
       </Card>
       <Card>
-        <Badge label="999+" />
+        <Badge type="max-1k" />
         <Title>Max 1K</Title>
       </Card>
       <Card>
-        <Badge label="9999+" />
+        <Badge type="max-10k" />
         <Title>Max 10K</Title>
       </Card>
 
       <Card>
-        <Badge icon="user" type="info" />
+        <Badge icon="user" type="iconInfo" />
         <Title>Icon</Title>
       </Card>
       <Card>
-        <Badge icon="check" type="success" />
+        <Badge icon="check" type="iconSuccess" />
         <Title>Icon</Title>
       </Card>
       <Card>
-        <Badge icon="exclamation" type="warning" />
+        <Badge icon="exclamation" type="iconWarning" />
         <Title>Icon</Title>
       </Card>
       <Card>
-        <Badge icon="envelope" />
+        <Badge icon="envelope" type="iconAlert" />
         <Title>Icon</Title>
       </Card>
 
@@ -316,7 +185,7 @@ storiesOf("Atoms|Badge", module)
         <Title>Message</Title>
       </Card>
       <Card>
-        <Badge icon="phone" type="dark" />
+        <Badge icon="phone" type="iconDark" />
         <Title>Message</Title>
       </Card>
 

@@ -1,6 +1,6 @@
-import React, { Fragment } from "react";
+import React from "react";
 import PropTypes from "prop-types";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { colors } from "Variables";
 import Icon from "atoms/Icon";
 
@@ -34,56 +34,61 @@ function Badge({ id, label, icon, type, position, style }) {
   let badgeTextColor = colors.white;
   let badgeSize = ".6em";
   let badgePadding = "0.45em .8em";
-  let badgeLeft = "100%";
-  let badgeBottom = "100%";
-  let badgeTransform = "translate(-90%, 50%)";
-  let labelType;
+  let badgeLeft;
+  let badgeBottom;
+  let badgeTransform;
+  var labelType;
   let iconType;
   switch (type) {
+    case "iconInfo":
+      iconType = <Icon icon={icon} size="2x" />;
+      badgeColor = "none";
+      badgePadding = "0 0.25em";
+      badgeTextColor = colors.anchor;
+      break;
+    case "iconSuccess":
+      iconType = <Icon icon={icon} size="2x" />;
+      badgeColor = "none";
+      badgePadding = "0 0.25em";
+      badgeTextColor = colors.success;
+      break;
+    case "iconWarning":
+      iconType = <Icon icon={icon} size="2x" />;
+      badgeColor = "none";
+      badgePadding = "0 0.25em";
+      badgeTextColor = colors.warning;
+      break;
+    case "iconAlert":
+      iconType = <Icon icon={icon} size="2x" />;
+      badgeColor = "none";
+      badgePadding = "0 0.25em";
+      badgeTextColor = colors.alert;
+      break;
+    case "iconDark":
+      iconType = <Icon icon={icon} size="2x" />;
+      badgeColor = "none";
+      badgePadding = "0 0.25em";
+      badgeTextColor = colors.grey_80;
+      break;
     case "info":
-      if (icon) {
-        iconType = <Icon icon={icon} size="lg" fixedWidth type="info" />;
-        badgePadding = "0 0.25em";
-      } else {
-        labelType = <BadgeLabel>{label}</BadgeLabel>;
-        badgeColor = colors.anchor;
-      }
+      labelType = <BadgeLabel>{label}</BadgeLabel>;
+      badgeColor = colors.anchor;
       break;
     case "success":
-      if (icon) {
-        iconType = <Icon icon={icon} size="lg" fixedWidth type="success" />;
-        badgePadding = "0 0.25em";
-      } else {
-        labelType = <BadgeLabel>{label}</BadgeLabel>;
-        badgeColor = colors.success;
-      }
+      labelType = <BadgeLabel>{label}</BadgeLabel>;
+      badgeColor = colors.success;
       break;
     case "warning":
-      if (icon) {
-        iconType = <Icon icon={icon} size="lg" type="warning" />;
-        badgePadding = "0 0.25em";
-      } else {
-        labelType = <BadgeLabel>{label}</BadgeLabel>;
-        badgeColor = colors.warning;
-      }
+      labelType = <BadgeLabel>{label}</BadgeLabel>;
+      badgeColor = colors.warning;
       break;
     case "alert":
-      if (icon) {
-        iconType = <Icon icon={icon} size="lg" type="alert" />;
-        badgePadding = "0 0.25em";
-      } else {
-        labelType = <BadgeLabel>{label}</BadgeLabel>;
-        badgeColor = colors.alert;
-      }
+      labelType = <BadgeLabel>{label}</BadgeLabel>;
+      badgeColor = colors.alert;
       break;
     case "dark":
-      if (icon) {
-        iconType = <Icon icon={icon} size="lg" />;
-        badgePadding = "0 0.25em";
-      } else {
-        labelType = <BadgeLabel>{label}</BadgeLabel>;
-        badgeColor = colors.grey_80;
-      }
+      labelType = <BadgeLabel>{label}</BadgeLabel>;
+      badgeColor = colors.grey_80;
       break;
     case "max-10":
       labelType = <BadgeLabel>9+</BadgeLabel>;
@@ -98,17 +103,24 @@ function Badge({ id, label, icon, type, position, style }) {
       labelType = <BadgeLabel>9999+</BadgeLabel>;
       break;
     default:
+      labelType = <BadgeLabel>{label}</BadgeLabel>;
       break;
   }
   switch (position) {
     case "topLeft":
+      badgeBottom = "100%";
       badgeLeft = "0";
       badgeTransform = "translate(-10%, 50%)";
       break;
     case "topRight":
+      badgeBottom = "100%";
+      badgeLeft = "100%";
+      badgeTransform = "translate(-90%, 50%)";
       break;
     case "bottomRight":
       badgeBottom = "0";
+      badgeLeft = "100%";
+      badgeTransform = "translate(-90%, 50%)";
       break;
     case "bottomLeft":
       badgeBottom = "0";
@@ -119,36 +131,21 @@ function Badge({ id, label, icon, type, position, style }) {
       break;
   }
   return (
-    <Fragment>
-      {icon ? (
-        <BadgeContainer
-          id={id}
-          icon={icon}
-          badgeTransform={badgeTransform}
-          badgeLeft={badgeLeft}
-          badgeBottom={badgeBottom}
-          badgePadding={badgePadding}
-          style={style}
-        >
-          {iconType}
-        </BadgeContainer>
-      ) : (
-        <BadgeContainer
-          id={id}
-          label={label}
-          badgeColor={badgeColor}
-          badgeTextColor={badgeTextColor}
-          badgeSize={badgeSize}
-          badgeTransform={badgeTransform}
-          badgeLeft={badgeLeft}
-          badgeBottom={badgeBottom}
-          badgePadding={badgePadding}
-          style={style}
-        >
-          {labelType}
-        </BadgeContainer>
-      )}
-    </Fragment>
+    <BadgeContainer
+      id={id}
+      label={label}
+      icon={icon}
+      badgeColor={badgeColor}
+      badgeTextColor={badgeTextColor}
+      badgeSize={badgeSize}
+      badgeTransform={badgeTransform}
+      badgeLeft={badgeLeft}
+      badgeBottom={badgeBottom}
+      badgePadding={badgePadding}
+      style={style}
+    >
+      {iconType ? iconType : labelType}
+    </BadgeContainer>
   );
 }
 
@@ -158,11 +155,15 @@ Badge.propTypes = {
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   type: PropTypes.oneOf([
     "info",
+    "iconInfo",
     "success",
+    "iconSuccess",
     "warning",
+    "iconWarning",
     "alert",
+    "iconAlert",
     "dark",
-    "notify",
+    "iconDark",
     "max10",
     "max100",
     "max1K",
