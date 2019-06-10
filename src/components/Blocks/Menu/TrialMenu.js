@@ -28,6 +28,7 @@ const Menu = styled.ul`
 const Item = styled.li`
   padding: 0.5em 0.5em 0.5em 0.5em;
   letter-spacing: 0.5px;
+
   &:hover {
     color: ${colors.anchor};
   }
