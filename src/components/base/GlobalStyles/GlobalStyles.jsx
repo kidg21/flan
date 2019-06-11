@@ -206,7 +206,15 @@ const GlobalStyles = createGlobalStyle`
             background-color: ${colors.grey_20};
         }
     }
-
+    input[type="checkbox"],
+    input[type="radio"] {
+        &[disabled],
+        &[readonly] {
+            cursor: not-allowed;
+            pointer-events: none;
+            user-select: none;
+        }
+    }
     `;
 
 export default GlobalStyles;

@@ -108,6 +108,7 @@ function Checkbox({ id, label, type, checked, error, isDisabled }) {
       disabled={isDisabled}
     >
       <CheckboxInput
+        disabled={isDisabled}
         id={id}
         checked={checked}
         fillColor={fillColor}
