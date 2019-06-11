@@ -1,223 +1,119 @@
-import React from "react"
-import styled, { css } from "styled-components"
-import GlobalStyles from "GlobalStyles"
-import PropTypes from "prop-types"
-import { colors, shadows } from "Variables"
-import { InputLabel, HelpText, ErrorText } from "layout/Form"
-import SelectMenu from "atoms/SelectMenu"
-import Button from "atoms/Button"
+import React from "react";
+import styled, { css } from "styled-components";
+import PropTypes from "prop-types";
+import { colors, shadows } from "Variables";
+import { InputLabel, HelpText, ErrorText } from "layout/Form";
 
 const TextInputContainer = styled.div`
   display: grid;
-  grid-template-columns: ${props =>
-    /* 3 Inputs */
-    props.threeInputs
-      ? "repeat(3, 1fr)"
-      : /* 2 Inputs */
-      props.twoInputs
-      ? "repeat(2, 1fr)"
-      : /* Prefix Label (conditionals) */
-      props.prefix
-      ? props.postfix || props.buttonLabel
-        ? "minmax(auto, auto) minmax(auto, 3fr) minmax(auto, auto)"
-        : props.postSelect
-        ? "minmax(auto, auto) minmax(auto, 3fr) minmax(auto, 2fr)"
-        : "minmax(auto, auto) minmax(auto, 3fr)"
-      : /* Postfix Select (conditionals) */
-      props.preSelect
-      ? props.postfix || props.buttonLabel
-        ? "minmax(auto, 2fr) minmax(auto, 3fr) minmax(auto, auto)"
-        : props.postSelect
-        ? "minmax(auto, 2fr) minmax(auto, 3fr) minmax(auto, 2fr)"
-        : "minmax(auto, 2fr) minmax(auto, 3fr)"
-      : /* Postfix Label */
-      props.postfix || props.buttonLabel
-      ? "minmax(auto, 3fr) minmax(auto, auto)"
-      : /* Postfix Select */
-      props.postSelect
-      ? "minmax(auto, 3fr) minmax(auto, 2fr)"
-      : /* Single Input (default) */
-        "repeat(1, 1fr)"};
-  grid-gap: ${props => (props.slider ? "0.15rem" : "0.35rem" )};
+  grid-gap: 0.35rem;
   align-content: flex-start;
-  color: ${props =>
-    props.error ? colors.alert : props.disabled ? colors.grey_40 : ""};
-`
-
-const PrePostLabel = styled.label`
-  display: flex;
-  justify-content: center;
-  border-radius: 5px;
-  align-items: center;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: lowercase;
-  color: ${colors.grey_60};
-  background-color: ${colors.grey_light};
-  border: 1px solid ${colors.grey_20};
-  border-bottom: 1px solid ${colors.grey_20};
-  border-radius: 4px;
-  padding: 0.25rem 1rem;
-  white-space: nowrap;
-`
+  color: ${props => props.inputTextColor || ""};
+`;
 
 const TextInput = styled.input`
-  border: 1px solid ${colors.grey_20};
-  border-bottom: 1px solid ${colors.grey_20};
-  border-color: ${props => (props.error ? colors.alert : "")};
-  border-radius: ${props => (props.isRound ? "10rem !important" : "")};
-  background-color: ${props => (props.error ? colors.alert_tint : "")};
-  caret-color: ${props => (props.error ? colors.alert : "")};
+  border: 1px solid;
+  border-color: ${props => props.inputBorderColor || ""};
+  background-color: ${props => props.inputFillColor || ""};
+  caret-color: ${props => props.inputCaretColor || ""};
   min-height: 2.75rem;
-  padding: ${props => (props.isRound ? "0.75rem 1rem" : "0.5rem 0.75rem")};
-
+  padding: 0.5rem 0.75rem;
   ::placeholder {
-    color: ${props => (props.error ? colors.alert :  "")};
+    color: ${props => props.placeholderColor || ""};
   }
   &:hover {
-    border: 1px solid ${colors.grey_40};
-    border-color: ${props => (props.error ? colors.alert : "")};
+    border-color: ${props => props.inputBorderColorHover || colors.grey_40};
     }
   }
   &:focus {
-    background-color: ${props => (props.error ? colors.alert_tint : "")};
-    border-color: ${props => (props.error ? colors.alert : colors.success)};
-    ::placeholder {
-      color: ${props => (props.error ? colors.alert : colors.grey_60)};
-    }
+    border-color: ${props => props.inputBorderColorHover || colors.success};
     ::selection {
-      background-color: ${props => (props.error ? colors.alert : "")};
-      
+      background-color: ${props => props.inputSelectColor || ""};
     }
   }
-`
+`;
 
 function Input({
   id,
   type,
+  as,
   pattern,
   value,
-  inputLabel, // Label prop
+  inputLabel,
+  isRequired,
   placeholder,
   helpText,
-  disabled,
-  isRequired,
-  isRound,
-  twoInputs,
-  id_2,
-  type_2,
-  value_2,
-  pattern_2,
-  placeholder_2,
-  threeInputs,
-  id_3,
-  type_3,
-  value_3,
-  pattern_3,
-  placeholder_3,
-  prefix,
-  postfix,
-  preSelect,
-  postSelect,
-  buttonLabel,
-  error,
   errorText,
+  state,
+  isDisabled,
   style
 }) {
+  let inputTextColor;
+  let inputFillColor;
+  let inputBorderColor;
+  let inputBorderColorHover;
+  let inputCaretColor;
+  let placeholderColor;
+  let inputSelectColor;
+  switch (type) {
+    case "textarea":
+      as = "textarea";
+      break;
+    default:
+      break;
+  }
+  switch (state) {
+    case "error":
+      inputTextColor = colors.alert;
+      inputFillColor = colors.alert_tint;
+      inputBorderColor = colors.alert_light;
+      inputBorderColorHover = colors.alert;
+      inputCaretColor = colors.alert;
+      placeholderColor = colors.alert_light;
+      inputSelectColor = colors.alert;
+      break;
+    case "disabled":
+      inputTextColor = colors.grey_40;
+      inputFillColor = colors.grey_20;
+      inputBorderColor = colors.grey_20;
+      placeholderColor = colors.grey_40;
+      isDisabled = true;
+      break;
+    default:
+      inputBorderColor = colors.grey_20;
+      inputSelectColor = colors.success;
+      break;
+  }
   return (
     <TextInputContainer
       id={id}
       isRequired={isRequired}
-      disabled={disabled} // input attribute
-      error={error}
-      prefix={prefix}
-      postfix={postfix}
-      preSelect={preSelect}
-      postSelect={postSelect}
-      buttonLabel={buttonLabel}
-      twoInputs={twoInputs} // 2 inputs in a row
-      threeInputs={threeInputs} // 3 inputs in a row
+      disabled={isDisabled}
+      inputTextColor={inputTextColor}
       style={style}
     >
-      {/* Input Label */}
       <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
-      {/* Prefix Label (conditional) */}
-      {prefix ? <PrePostLabel>{prefix}</PrePostLabel> : null}
-      {/* Prefix Select Menu (conditional) */}
-      {preSelect ? (
-        <SelectMenu
-          displayInline={true} // Grid Override
-          inputLabel={null}
-          name="Choose"
-          isClearable={false}
-          options={preSelect}
-          defaultValue={preSelect[0]}
-        />
-      ) : null}
       <TextInput
         id={id} // input attribute
         name={id} // input attribute
         type={type} // input attribute
+        as={as}
         value={value} // input attribute
         placeholder={placeholder} // input attribute
         pattern={pattern} // input attribute
-        disabled={disabled} // input attribute
-        error={error}
-        isRound={isRound}
+        disabled={isDisabled} // input attribute
+        inputFillColor={inputFillColor}
+        inputBorderColor={inputBorderColor}
+        inputBorderColorHover={inputBorderColorHover}
+        placeholderColor={placeholderColor}
+        inputCaretColor={inputCaretColor}
+        inputSelectColor={inputSelectColor}
       />
-      {/* Column 2 (conditional) */}
-      {twoInputs || threeInputs ? (
-        <TextInput
-          id={id_2} // input attribute
-          name={id_2} // input attribute
-          type={type_2} // input attribute
-          value={value_2} // input attribute
-          placeholder={placeholder_2} // input attribute
-          pattern={pattern_2} // input attribute
-          disabled={disabled} // input attribute
-          error={error}
-          isRound={isRound}
-        />
-      ) : null}
-      {/* Column 3 (conditional) */}
-      {threeInputs ? (
-        <TextInput
-          id={id_3} // input attribute
-          name={id_3} // input attribute
-          type={type_3} // input attribute
-          value={value_3} // input attribute
-          placeholder={placeholder_3} // input attribute
-          pattern={pattern_3} // input attribute
-          disabled={disabled} // input attribute
-          error={error}
-          isRound={isRound}
-        />
-      ) : null}
-      {/* Postfix (conditional) */}
-      {postfix ? <PrePostLabel>{postfix}</PrePostLabel> : null}
-      {/* Postfix Button (conditional) */}
-      {buttonLabel ? (
-        <Button buttonLabel={buttonLabel} isPrimary={true} />
-      ) : null}
-      {/* Postfix Select Menu (conditional) */}
-      {postSelect ? (
-        <SelectMenu
-          displayInline={true} // Grid Override
-          inputLabel={null}
-          name="Choose"
-          isClearable={false}
-          options={postSelect}
-          defaultValue={postSelect[0]}
-        />
-      ) : null}
-      {/* Help Text */}
       {helpText ? <HelpText helpText={helpText} /> : null}
-      {/* Error Message (required) */}
-      {error ? <ErrorText errorText={errorText} /> : null}
+      {errorText ? <ErrorText errorText={errorText} /> : null}
     </TextInputContainer>
-  )
+  );
 }
-
 
 Input.propTypes = {
   id: PropTypes.string,
@@ -225,31 +121,12 @@ Input.propTypes = {
   pattern: PropTypes.string,
   value: PropTypes.string,
   inputLabel: PropTypes.string.isRequired,
+  isRequired: PropTypes.bool,
   placeholder: PropTypes.string,
   helpText: PropTypes.string,
-  isRequired: PropTypes.bool,
-  disabled: PropTypes.bool,
-  isRound: PropTypes.bool,
-  twoInputs: PropTypes.bool,
-  id_2: PropTypes.string,
-  type_2: PropTypes.string,
-  value_2: PropTypes.string,
-  pattern_2: PropTypes.string,
-  placeholder_2: PropTypes.string,
-  threeInputs: PropTypes.bool,
-  id_3: PropTypes.string,
-  type_3: PropTypes.string,
-  value_3: PropTypes.string,
-  pattern_3: PropTypes.string,
-  placeholder_3: PropTypes.string,
-  prefix: PropTypes.string,
-  postfix: PropTypes.string,
-  preSelect: PropTypes.array,
-  postSelect: PropTypes.array,
-  buttonLabel: PropTypes.string,
-  error: PropTypes.bool,
   errorText: PropTypes.string,
+  state: PropTypes.string,
   style: PropTypes.string
-}
+};
 
-export { Input as default }
+export { Input as default };
