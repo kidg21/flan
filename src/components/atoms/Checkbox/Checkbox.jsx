@@ -78,7 +78,7 @@ function CheckboxGroup({ id, columns, onChange, children }) {
   );
 }
 
-function Checkbox({ id, label, type, checked, error, isDisabled }) {
+function Checkbox({ id, label, type, checked, isDisabled }) {
   let checkboxColor;
   let fillColor;
   let borderColor;
@@ -102,13 +102,8 @@ function Checkbox({ id, label, type, checked, error, isDisabled }) {
       break;
   }
   return (
-    <CheckboxContainer
-      checkboxColor={checkboxColor}
-      error={error}
-      disabled={isDisabled}
-    >
+    <CheckboxContainer checkboxColor={checkboxColor} disabled={isDisabled}>
       <CheckboxInput
-        disabled={isDisabled}
         id={id}
         checked={checked}
         fillColor={fillColor}
