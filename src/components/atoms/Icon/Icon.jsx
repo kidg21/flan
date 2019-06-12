@@ -49,7 +49,6 @@ function Icon({
   return (
     <StyledIcon
       id={id}
-      type={type}
       icon={icon}
       iconColor={iconColor}
       size={size}
