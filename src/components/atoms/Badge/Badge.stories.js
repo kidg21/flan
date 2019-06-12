@@ -60,11 +60,7 @@ storiesOf("Atoms|Badge", module)
               "alert (default)": "default",
               "alert icon": "iconAlert",
               dark: "dark",
-              "dark icon": "iconDark",
-              "max-10": "max-10",
-              "max-100": "max-100",
-              "max-1k": "max-1k",
-              "max-10k": "max-10k"
+              "dark icon": "iconDark"
             },
             "default",
             { display: "radio" },
@@ -122,19 +118,19 @@ storiesOf("Atoms|Badge", module)
       </Card>
 
       <Card>
-        <Badge type="max-10" />
+        <Badge label="9+" />
         <Title>Max 10</Title>
       </Card>
       <Card>
-        <Badge type="max-100" />
+        <Badge label="99+" />
         <Title>Max 100</Title>
       </Card>
       <Card>
-        <Badge type="max-1k" />
+        <Badge label="999+" />
         <Title>Max 1K</Title>
       </Card>
       <Card>
-        <Badge type="max-10k" />
+        <Badge label="9999+" />
         <Title>Max 10K</Title>
       </Card>
 

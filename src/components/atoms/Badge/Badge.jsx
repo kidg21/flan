@@ -37,7 +37,7 @@ function Badge({ id, label, icon, type, position, style }) {
   let badgeLeft;
   let badgeBottom;
   let badgeTransform;
-  var labelType;
+  let labelType;
   let iconType;
   switch (type) {
     case "iconInfo":
@@ -89,18 +89,6 @@ function Badge({ id, label, icon, type, position, style }) {
     case "dark":
       labelType = <BadgeLabel>{label}</BadgeLabel>;
       badgeColor = colors.grey_80;
-      break;
-    case "max-10":
-      labelType = <BadgeLabel>9+</BadgeLabel>;
-      break;
-    case "max-100":
-      labelType = <BadgeLabel>99+</BadgeLabel>;
-      break;
-    case "max-1k":
-      labelType = <BadgeLabel>999+</BadgeLabel>;
-      break;
-    case "max-10k":
-      labelType = <BadgeLabel>9999+</BadgeLabel>;
       break;
     default:
       labelType = <BadgeLabel>{label}</BadgeLabel>;
@@ -163,11 +151,7 @@ Badge.propTypes = {
     "alert",
     "iconAlert",
     "dark",
-    "iconDark",
-    "max10",
-    "max100",
-    "max1K",
-    "max10K"
+    "iconDark"
   ]),
   position: PropTypes.oneOf([
     "topLeft",
