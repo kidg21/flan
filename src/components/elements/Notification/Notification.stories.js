@@ -14,12 +14,11 @@ import {
 } from "@storybook/addon-knobs";
 import Button from "atoms/Button";
 import Panel, { PanelSection } from "layout/Panel";
-import ModernExterior_1 from "images/residential/modern exterior 1.jpg";
 import Banner from "blocks/Banner";
-import Notification from "layout/Notification";
+import Notification from "elements/Notification";
 import NotificationNotes from "./Notification.md";
 
-storiesOf("Layout|Notification", module)
+storiesOf("Elements|Notification", module)
   .addParameters({
     info: {
       text: "Notification info goes here..."
@@ -75,7 +74,7 @@ storiesOf("Layout|Notification", module)
     )
   );
 
-storiesOf("Layout|Notification", module)
+storiesOf("Elements|Notification", module)
   .addDecorator(withKnobs)
   .add("Knobs", () =>
     React.createElement(() => {
@@ -143,7 +142,7 @@ storiesOf("Layout|Notification", module)
       );
     })
   );
-storiesOf("Layout|Notification", module).add("Status Notification", () =>
+storiesOf("Elements|Notification", module).add("Status Notification", () =>
   React.createElement(() => {
     const [visible, setVisible] = useState(false);
     const [transition, setTransition] = useState(true);
