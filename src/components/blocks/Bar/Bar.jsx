@@ -2,19 +2,9 @@ import React, {Fragment} from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 
-const Left = styled.div`
+const Slot = styled.div`
 display: flex;
 `
-
-const Middle = styled.div`
-display: flex;
-`
-
-const Right = styled.div`
-display: flex;
-`
-
-
 const BarLayout = styled.div`
   align-items: flex;
   vertical-align: center;
@@ -27,44 +17,41 @@ const BarLayout = styled.div`
 `;
 
 
-
-
-
-function Bar({ id, type, firstSlot, secondSlot, thirdSlot}) {
+function Bar({ id, type, left, middle, right, onClick}) {
   let barType;
   switch (type) {
     case "one":
       barType = (
         <Fragment>
-          <Left>{firstSlot}</Left>
-        <Right>{secondSlot}</Right>
+          <Slot>{left}</Slot>
+        <Slot>{right}</Slot>
         </Fragment>
       )
       break;
     case "two":
       barType = (
         <Fragment>
-        <Left>
-        {firstSlot}
-        </Left>
-        <Right>
-        {secondSlot}
-        </Right>
+        <Slot>
+        {left}
+        </Slot>
+        <Slot>
+        {right}
+        </Slot>
         </Fragment>
       )
       break;
     case "three":
       barType = (
         <Fragment>
-        <Left>
-            {firstSlot}
-            </Left>
-            <Middle>
-            {secondSlot}
-            </Middle>
-             <Right>
-             {thirdSlot}
-             </Right>
+        <Slot>
+            {left}
+            </Slot>
+            <Slot>
+            {middle}
+            </Slot>
+             <Slot>
+             {right}
+             </Slot>
            </Fragment>
       );
       break;
@@ -75,9 +62,10 @@ function Bar({ id, type, firstSlot, secondSlot, thirdSlot}) {
       <BarLayout
         id={id}
         type={type}
-        firstSlot={firstSlot}
-        secondSlot={secondSlot}
-        thirdSlot={thirdSlot}
+        left={left}
+        middle={middle}
+        right={right}
+        onClick={onClick}
       >
           { barType }
       </BarLayout>
@@ -86,9 +74,10 @@ function Bar({ id, type, firstSlot, secondSlot, thirdSlot}) {
 Bar.propTypes = {
   id: PropTypes.string,
   type: PropTypes.oneOf(["one", "two", "three"]),
-  firstSlot: PropTypes.any,
-  secondSlot: PropTypes.any,
-  thirdSlot: PropTypes.any
+  left: PropTypes.any,
+  middle: PropTypes.any,
+  right: PropTypes.any,
+  onClick: PropTypes.func
 };
 
 export default Bar;

@@ -16,22 +16,23 @@ padding-top: .7rem;
 font-weight: 700;
 `
 
-function PropertyPanelHeader({ id, title }) {
+function PropertyPanelHeader({ id, title, onClick, onClickDirection }) {
   return (
       <Piece
       id={id}>
         <HeaderSpace>
-          <Bar type='two' firstSlot={<Block>
+          <Bar type='two' left={<Block>
           {title}
-          <Icon icon={["fal", "directions"]} size='2x' anchor />
+          <Icon icon={["fal", "directions"]} size='2x' anchor onClickDirection={onClickDirection}/>
           </Block>}
-          secondSlot={<Icon icon={["far", "ellipsis-v"]} size='lg'/>}/> 
+          right={<Icon icon={["far", "ellipsis-v"]} size='lg'  onClick={onClick} /> }/> 
         </HeaderSpace>
         </Piece>
     );
   }
       PropertyPanelHeader.propTypes = {
           id: PropTypes.string,
-          title: PropTypes.any.isRequired
+          title: PropTypes.any.isRequired,
+          onClick: PropTypes.func
         };
       export default PropertyPanelHeader;

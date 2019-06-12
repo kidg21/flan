@@ -76,8 +76,8 @@ Radio.propTypes = {
   /** This is the Right nav command. */
   name: PropTypes.string.isRequired,
   value: PropTypes.string,
-  onChange: PropTypes.any,
-  checked: PropTypes.any
+  onChange: PropTypes.func,
+  checked: PropTypes.bool
 }
 
 export { Radio as default }

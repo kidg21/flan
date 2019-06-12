@@ -2,8 +2,8 @@ import React from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
-import Bar from "blocks/Bar/Bar";
-import Card, {Piece} from "layout/Card/Card"
+import Bar from "blocks/Bar";
+import Card, {Piece} from "layout/Card"
 
 
 const HeaderSpace =styled.div`
@@ -16,7 +16,7 @@ function MainPanelHeader({ id, title }) {
       <Piece
       id={id}>
         <HeaderSpace>
-        <Bar firstSlot={title} type='two' secondSlot={<Icon icon={["far", "ellipsis-v"]} size='lg'/>}/>
+        <Bar left={title} type='two' right={<Icon icon={["far", "ellipsis-v"]} size='lg'/>}/>
         </HeaderSpace>
         </Piece>
     );

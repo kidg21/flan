@@ -55,10 +55,10 @@ function LayerCardBar({ id, title, switchProps, disabled }) {
       id={id}
       title={title}
       disabled={disabled}> 
-            { disabled ? (<Bar type='two' firstSlot={
+            { disabled ? (<Bar type='two' left={
               <SwitchContainer disabled='true'> <Switch/> <span style={Space}/> {title} </SwitchContainer>
               } 
-              secondSlot={DisabledIcons}/>)
+              right={DisabledIcons}/>)
              : (<Bar type='two' firstSlot={
                 <SwitchContainer> <Switch {...switchProps}/> <span style={Space}/> {title} </SwitchContainer>
                 } 

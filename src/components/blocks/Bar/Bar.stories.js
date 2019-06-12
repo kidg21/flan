@@ -8,15 +8,8 @@ storiesOf("Blocks|Bar", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
 
-  .add("Two Part", () => (
-    <Bar firstSlot="two part" type="two" secondSlot="try" />
-  ))
+  .add("Two Part", () => <Bar left="two part" type="two" right="try" />)
   .add("Three Part", () => (
-    <Bar
-      secondSlot="three part"
-      type="three"
-      firstSlot="first"
-      thirdSlot="try"
-    />
+    <Bar left="three part" type="three" middle="first" right="try" />
   ))
-  .add("One Part", () => <Bar type="one" secondSlot="x" />);
+  .add("One Part", () => <Bar type="one" right="x" />);

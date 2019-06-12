@@ -192,7 +192,7 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
           <PanelSection body>
             <Form>
-              <Bar onePart={true} secondSlot={<a> Reset </a>} />
+              <Bar type="one" right={<a> Reset </a>} />
               {/* <Label right grey content="Reset" /> */}
               <Section>
                 <InputLabel inputLabel="Last Sale Date" />
@@ -259,7 +259,7 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
           <PanelSection body>
             <Form>
-              <Bar onePart={true} secondSlot={<a> Reset </a>} />
+              <Bar type="one" right={<a> Reset </a>} />
               <Section>
                 <RangeSlider label="Year Built" />
                 <RangeSlider label="Number of Units" />
@@ -307,7 +307,7 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
           <PanelSection body>
             <Form>
-              <Bar onePart={true} secondSlot={<a> Reset </a>} />
+              <Bar type="one" right={<a> Reset </a>} />
               <Section>
                 <RangeSlider label="Aggregate Acreage" />
                 <RangeSlider label="Aggregate Lot Count" />
@@ -354,7 +354,7 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
           <PanelSection body>
             <Form>
-              <Bar onePart={true} secondSlot={<a> Reset </a>} />
+              <Bar type="one" right={<a> Reset </a>} />
               <Section>
                 <RangeSlider label="Assessed Value" />
                 <RangeSlider label="Improvement Percentage" />
@@ -388,7 +388,7 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
           <PanelSection body>
             <Form>
-              <Bar onePart={true} secondSlot={<a> Reset </a>} />
+              <Bar type="one" right={<a> Reset </a>} />
               <Section>
                 <Input
                   inputLabel="Street Name"
@@ -439,7 +439,7 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
           <PanelSection body>
             <Form>
-              <Bar onePart={true} secondSlot={<a> Reset </a>} />
+              <Bar type="one" right={<a> Reset </a>} />
               <Section>
                 <SectionName>Commercial</SectionName>
                 <InputGroup col_2>

@@ -8,16 +8,16 @@ import Bar from "blocks/Bar";
 
 
 
-function PopCard({ id, title, message}) {
+function PopCard({ id, title, message, buttonLabel1, buttonLabel2}) {
   return (
     <Card
     id={id}> 
-        <Bar onePart='true' secondSlot={<Icon icon={["fal", "times"]} />}/>
-        <Bar threeParts='true' title={title} />
-        <Bar threeParts='true' title={message} />
-          <Button buttonLabel="yes please!" isRound={true} />
+        <Bar type='one' right={<Icon icon={["fal", "times"]} />}/>
+        <Bar type='three' middle={title} />
+        <Bar type='three' middle={message} />
+          <Button buttonLabel={buttonLabel1} isRound={true} />
           <Button
-            buttonLabel="No thanks"
+            buttonLabel={buttonLabel2}
             isSecondStandard={true}
             isRound={true}
           />
@@ -27,7 +27,9 @@ function PopCard({ id, title, message}) {
 PopCard.propTypes = {
   id: PropTypes.string,
   title: PropTypes.string,
-  message: PropTypes.string.isRequired
+  message: PropTypes.string.isRequired,
+  buttonLabel1: PropTypes.string,
+  buttonLabel2: PropTypes.string
 };
 
 export default PopCard;
