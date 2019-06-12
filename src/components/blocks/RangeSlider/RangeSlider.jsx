@@ -61,10 +61,12 @@ function RangeSlider({ id, label, value, min, max, step }) {
           min={min}
           max={max}
           step={step}
+          inputLabel=""
         />
         <SliderInput
           type="text"
           placeholder="Max"
+          inputLabel=""
           style={{
             textAlign: "right",
             alignContent: "right"

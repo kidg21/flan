@@ -50,7 +50,7 @@ const BarLayout = styled.div`
 
 
 
-function Bar({ id, onePart, twoParts, threeParts, firstSlot, secondSlot, thirdSlot}) {
+function Bar({ id, onePart, twoParts, threeParts, firstSlot, secondSlot, thirdSlot, onClick}) {
   return (
       <BarLayout
         id={id}
@@ -60,6 +60,7 @@ function Bar({ id, onePart, twoParts, threeParts, firstSlot, secondSlot, thirdSl
         threeParts={threeParts}
         secondSlot={secondSlot}
         thirdSlot={thirdSlot}
+        onClick={onClick}
       >
           { onePart ? <Left>{firstSlot}</Left>: 
           twoParts ? (

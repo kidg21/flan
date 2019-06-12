@@ -48,7 +48,7 @@ function Icon({
   // stacked,
   children,
   style,
-  className
+  onClick,
 }) {
   return (
     <StyledIcon
@@ -69,6 +69,7 @@ function Icon({
       border={border}
       pull={pull}
       style={style}
+      onClick={onClick}
     >
       {children}
     </StyledIcon>

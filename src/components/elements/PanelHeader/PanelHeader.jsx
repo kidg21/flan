@@ -2,8 +2,8 @@ import React from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
-import Bar from "blocks/Bar/Bar";
-import Card, {Piece} from "layout/Card/Card"
+import Bar from "blocks/Bar";
+import Card, {Piece} from "layout/Card"
 
 const Block = styled.div`
 display: flex;
@@ -16,7 +16,7 @@ padding-top: .7rem;
 font-weight: 700;
 `
 
-function PanelHeader({ id, navigation, main, title, property }) {
+function PanelHeader({ id, navigation, main, title, property, onNavigationClick, onPropertyClick, onEllipseClick }) {
   return (
       <Piece
       id={id}
@@ -25,16 +25,16 @@ function PanelHeader({ id, navigation, main, title, property }) {
       main={main}>
         <HeaderSpace>
         { navigation ? (
-        <Bar threeParts="true" firstSlot={<Icon icon={["far", "angle-left"]} size='lg'/>} secondSlot={title}
-        thirdSlot={<Icon icon={["far", "ellipsis-v"]} size='lg'/>}/> ) 
+        <Bar threeParts={true} firstSlot={<Icon onClick={onNavigationClick} icon={["far", "angle-left"]} size='lg'/>} secondSlot={title}
+        thirdSlot={<Icon onClick={onEllipseClick} icon={["far", "ellipsis-v"]} size='lg'/>}/> ) 
         : main ? 
-        (<Bar firstSlot={title} twoParts="true" secondSlot={<Icon icon={["far", "ellipsis-v"]} size='lg'/>}/>) 
+        (<Bar firstSlot={title} twoParts={true} secondSlot={<Icon onClick={onEllipseClick} icon={["far", "ellipsis-v"]} size='lg'/>}/>) 
         : property ? (
-        <Bar twoParts="true" firstSlot={<Block>
+        <Bar twoParts={true} firstSlot={<Block>
           {title}
-          <Icon icon={["fal", "directions"]} size='2x' anchor />
+          <Icon onClick={onPropertyClick} icon={["fal", "directions"]} size='2x' anchor />
           </Block>}
-          secondSlot={<Icon icon={["far", "ellipsis-v"]} size='lg'/>}/> ) 
+          secondSlot={<Icon onClick={onEllipseClick} icon={["far", "ellipsis-v"]} size='lg'/>}/> ) 
         : null }
         </HeaderSpace>
         </Piece>

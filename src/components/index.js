@@ -41,8 +41,11 @@ export {
   InputLabel,
   HelpText,
   ErrorText,
-  InputGroup
+  InputGroup,
+  CenteredSection
 } from "./layout/Form";
 export { default as Layout } from "./layout/Layout";
 export { default as Page } from "./layout/Page";
 export { default as Panel, PanelSection } from "./layout/Panel";
+export { default as PanelHeader } from "./elements/PanelHeader";
+export { default as CardBar } from "./elements/CardBar";
