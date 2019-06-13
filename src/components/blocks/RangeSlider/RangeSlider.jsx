@@ -39,37 +39,13 @@ const InputContainer = styled.div`
   justify-content: space-between;
 `;
 
-function RangeSlider({
-  id,
-  label,
-  minLabel,
-  maxLabel,
-  valueMin,
-  valueMax,
-  min,
-  max,
-  step
-}) {
+function RangeSlider({ id, label, minLabel, maxLabel }) {
   return (
     <RangeContainer id={id}>
       <InputLabel inputLabel={label} />
       <InputContainer>
-        <SliderInput
-          inputLabel={minLabel}
-          type="text"
-          placeholder="Min"
-          valueMin={valueMin}
-          min={min}
-          step={step}
-        />
-        <SliderInput
-          inputLabel={maxLabel}
-          type="text"
-          placeholder="Max"
-          valueMax={valueMax}
-          max={max}
-          step={step}
-        />
+        <SliderInput inputLabel={minLabel} type="text" placeholder="Min" />
+        <SliderInput inputLabel={maxLabel} type="text" placeholder="Max" />
       </InputContainer>
       <Slider />
     </RangeContainer>
@@ -80,12 +56,7 @@ RangeSlider.propTypes = {
   id: PropTypes.string,
   label: PropTypes.string,
   minLabel: PropTypes.string,
-  maxLabel: PropTypes.string,
-  valueMin: PropTypes.string,
-  valueMax: PropTypes.string,
-  min: PropTypes.string,
-  max: PropTypes.string,
-  step: PropTypes.string
+  maxLabel: PropTypes.string
 };
 
 export default RangeSlider;
