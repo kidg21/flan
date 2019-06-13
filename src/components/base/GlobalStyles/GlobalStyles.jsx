@@ -69,19 +69,21 @@ const GlobalStyles = createGlobalStyle`
 
     /* Default Link Styles */
     a {
-      color: ${colors.grey_40};
-      font-size: smaller;
-      font-weight: 400;
-      font-family: Arial;
+      color: ${colors.anchor};
+      line-height: inherit;
+      ${'' /* font-size: smaller; */}
+      ${'' /* font-weight: 400; */}
+      ${'' /* font-family: Arial; */}
       text-decoration: none;
       cursor: pointer;
 
-      &:hover {
+      &:hover,
+      &:focus {
         color: ${colors.anchor_light};
       }
-      &:focus {
+      ${'' /* &:focus {
         ${colors.grey_60};
-        }
+        } */}
       img { border: none; }
       }
 
