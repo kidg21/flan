@@ -41,16 +41,12 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
   }
 `;
 
-function Slider({ id }) {
-  return <SliderPiece id={id} />;
+function Slider({ id, onChange }) {
+  return <SliderPiece id={id} onChange={onChange} />;
 }
 Slider.propTypes = {
   id: PropTypes.string,
-  label: PropTypes.string,
-  value: PropTypes.string,
-  min: PropTypes.string,
-  max: PropTypes.string,
-  step: PropTypes.string
+  onChange: PropTypes.func
 };
 
 export default Slider;
