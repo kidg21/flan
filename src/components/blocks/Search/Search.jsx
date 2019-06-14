@@ -1,61 +1,38 @@
-import React, { useState, Fragment } from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Tabs, { Tab } from "blocks/Tabs";
+import Input from "atoms/Input";
 import Icon from "atoms/Icon";
+import Tabs, { Tab } from "blocks/Tabs";
 import { colors, shadows } from "Variables";
+
+const IconWrapper = styled.span`
+  /* Needed for passing properties to children (animation, etc.) */
+`;
 
 const SearchContainer = styled.div`
   display: flex;
   flex-direction: column;
-  border: 1px solid ${colors.grey_20};
-  border-radius: 5px;
-`;
-
-const TextInputContainer = styled.div`
-  display: grid;
-  margin: 0;
-  grid-template-columns: auto 30px;
-  align-content: flex-start;
-`;
-
-const TextInput = styled.input`
-  border: none;
-  border-bottom: 0px solid ${colors.grey_20};
-  min-height: 2.75rem;
-  padding: 0.5rem 0.75rem;
-  &:hover {
-    ::placeholder {
-      color: ${colors.grey_80};
-    }
-  }
-  &:focus {
-    ::placeholder {
-      color: ${colors.grey_80};
-    }
+  position: relative;
+  ${IconWrapper} {
+    position: absolute;
+    right: 0;
+    background-color: ${colors.white};
+    margin: 0.2em;
+    padding: 0.7em;
+    cursor: pointer;
   }
 `;
 
-const Iconstyle = {
-  position: "abolsute",
-  lineHeight: "normal",
-  margin: "auto",
-  cursor: "pointer"
-};
-
-function Search({ id }) {
+function Search({ id, ...inputProps }) {
   const [activeSingleTab, setActiveSingleTab] = useState("tab1");
   return (
     <SearchContainer id={id}>
-      <TextInputContainer>
-        <TextInput placeholder="Search" />
-        <span style={Iconstyle}>
-          <Icon
-            icon={["far", "search"]}
-            style={{ filter: "brightness(150%)" }}
-          />
-        </span>
-      </TextInputContainer>
+      <Input {...inputProps}>
+        <IconWrapper>
+          <Icon icon={["far", "search"]} type="info" />
+        </IconWrapper>
+      </Input>
       <Tabs isSearch="true">
         <Tab
           tabLabel="Owner"

@@ -18,6 +18,7 @@ const TextInput = styled.input`
   caret-color: ${props => props.inputCaretColor || ""};
   min-height: 2.75rem;
   padding: 0.5rem 0.75rem;
+  resize: vertical;
   ::placeholder {
     color: ${props => props.placeholderColor || ""};
   }
@@ -46,6 +47,7 @@ function Input({
   errorText,
   state,
   isDisabled,
+  children,
   style
 }) {
   let inputTextColor;
@@ -92,7 +94,9 @@ function Input({
       inputTextColor={inputTextColor}
       style={style}
     >
-      <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
+      {inputLabel ? (
+        <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
+      ) : null}
       <TextInput
         id={id} // input attribute
         name={id} // input attribute
@@ -111,6 +115,7 @@ function Input({
       />
       {helpText ? <HelpText helpText={helpText} /> : null}
       {errorText ? <ErrorText errorText={errorText} /> : null}
+      {children}
     </TextInputContainer>
   );
 }
@@ -120,7 +125,7 @@ Input.propTypes = {
   type: PropTypes.string,
   pattern: PropTypes.string,
   value: PropTypes.string,
-  inputLabel: PropTypes.string.isRequired,
+  inputLabel: PropTypes.string,
   isRequired: PropTypes.bool,
   placeholder: PropTypes.string,
   helpText: PropTypes.string,

@@ -7,4 +7,4 @@ import { Padding } from "helpers/Display";
 storiesOf("Blocks|Search", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  .add("Default", () => <Search />);
+  .add("Default", () => <Search placeholder="Search" />);
