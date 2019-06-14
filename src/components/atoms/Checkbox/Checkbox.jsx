@@ -78,12 +78,13 @@ function CheckboxGroup({ id, columns, onChange, children }) {
   );
 }
 
-function Checkbox({ id, label, type, checked, isDisabled }) {
+function Checkbox({ id, label, type, checked }) {
   let checkboxColor;
   let fillColor;
   let borderColor;
   let fillColorChecked;
   let borderColorChecked;
+  let isDisabled = false;
   switch (type) {
     case "error":
       checkboxColor = colors.alert;
