@@ -1,12 +1,12 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import Input from "atoms/Input/Input";
+import TextInput from "atoms/TextInput";
 import Slider from "atoms/Slider";
 import PropTypes from "prop-types";
 import { colors, shadows } from "Variables";
 import { InputLabel } from "layout/Form";
 
-const SliderInput = styled(Input)`
+const SliderInput = styled(TextInput)`
   border-color: ${colors.white};
   min-height: 2rem;
   width: 10%;

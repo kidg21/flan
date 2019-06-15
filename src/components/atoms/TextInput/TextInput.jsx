@@ -11,7 +11,7 @@ const TextInputContainer = styled.div`
   color: ${props => props.inputTextColor || ""};
 `;
 
-const TextInput = styled.input`
+const Input = styled.input`
   border: 1px solid;
   border-color: ${props => props.inputBorderColor || ""};
   background-color: ${props => props.inputFillColor || ""};
@@ -34,7 +34,7 @@ const TextInput = styled.input`
   }
 `;
 
-function Input({
+function TextInput({
   id,
   type,
   as,
@@ -97,7 +97,7 @@ function Input({
       {inputLabel ? (
         <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
       ) : null}
-      <TextInput
+      <Input
         id={id} // input attribute
         name={id} // input attribute
         type={type} // input attribute
@@ -120,7 +120,7 @@ function Input({
   );
 }
 
-Input.propTypes = {
+TextInput.propTypes = {
   id: PropTypes.string,
   type: PropTypes.string,
   pattern: PropTypes.string,
@@ -134,4 +134,4 @@ Input.propTypes = {
   style: PropTypes.string
 };
 
-export { Input as default };
+export { TextInput as default };

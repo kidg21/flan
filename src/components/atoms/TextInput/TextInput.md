@@ -1,4 +1,4 @@
-####A text **Input** let users enter and edit text.
+####A **TextInput** let users enter and edit text.
 
 **Props**:
 - id

@@ -14,7 +14,7 @@ import {
 import Panel, { PanelSection } from "../../layout/Panel/Panel";
 import Form, { Section, SectionName } from "../../layout/Form/Form";
 import Icon from "atoms/Icon";
-import Input from "atoms/Input";
+import TextInput from "atoms/TextInput";
 import InputBlock from "blocks/InputBlock";
 import InputBlockNotes from "./InputBlock.md";
 

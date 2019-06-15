@@ -8,7 +8,7 @@ export { default as Checkbox } from "./atoms/Checkbox";
 export { default as Command } from "./atoms/Command";
 export { default as Date } from "./atoms/Date";
 export { default as Divider } from "./atoms/Divider";
-export { default as Input } from "./atoms/Input";
+export { default as TextInput } from "./atoms/TextInput";
 export { default as Radio } from "./atoms/Radio";
 export { default as SelectMenu } from "./atoms/SelectMenu";
 export { default as Slider } from "./atoms/Slider";

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Input from "atoms/Input";
+import TextInput from "atoms/TextInput";
 import Icon from "atoms/Icon";
 import Tabs, { Tab } from "blocks/Tabs";
 import { colors, shadows } from "Variables";

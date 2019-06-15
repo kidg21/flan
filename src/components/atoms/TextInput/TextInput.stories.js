@@ -12,17 +12,17 @@ import {
 } from "@storybook/addon-knobs";
 import Panel, { PanelSection } from "../../layout/Panel/Panel";
 import Form, { Section, SectionName } from "../../layout/Form/Form";
-import Input from "atoms/Input";
-import InputNotes from "./Input.md";
+import TextInput from "atoms/TextInput";
+import TextInputNotes from "./TextInput.md";
 
-storiesOf("Atoms|Input", module)
+storiesOf("Atoms|TextInput", module)
   .addParameters({
     info: {
       text:
-        "Inputs allow users to enter text into a UI. They typically appear in forms and dialogs"
+        "TextInputs allow users to enter text into a UI. They typically appear in forms and dialogs"
     },
     notes: {
-      markdown: InputNotes
+      markdown: TextInputNotes
     }
   })
   .addDecorator(Padding)
@@ -30,8 +30,8 @@ storiesOf("Atoms|Input", module)
   .add(
     "Documentation",
     withInfo()(() => (
-      <Input
-        inputLabel="Input ( Standard )"
+      <TextInput
+        inputLabel="TextInput ( Standard )"
         placeholder="I am just keeping things warm"
         helpText="This help text has been passed through a prop!"
       />
@@ -40,7 +40,7 @@ storiesOf("Atoms|Input", module)
   .add(
     "Knobs",
     withInfo()(() => (
-      <Input
+      <TextInput
         type={radios(
           "Type",
           {
@@ -50,7 +50,7 @@ storiesOf("Atoms|Input", module)
           },
           "text"
         )}
-        inputLabel={text("Input Label", "Input Label")}
+        inputLabel={text("TextInput Label", "TextInput Label")}
         isRequired={boolean("Required", false)}
         placeholder={text("Placeholder Text", "I am just keeping things warm")}
         helpText={text("Help Text", "Have you been helped yet?")}
@@ -70,37 +70,37 @@ storiesOf("Atoms|Input", module)
       />
     ))
   );
-// Input ( The Input Family )
-storiesOf("Atoms|Input", module).add("The Input Family", props => (
+// TextInput ( The TextInput Family )
+storiesOf("Atoms|TextInput", module).add("The TextInput Family", props => (
   <Panel>
     <PanelSection body>
       <Form>
         <Section>
-          <SectionName>The Input Family</SectionName>
-          <Input
-            inputLabel="Input ( Standard )"
+          <SectionName>The TextInput Family</SectionName>
+          <TextInput
+            inputLabel="TextInput ( Standard )"
             placeholder="I am just keeping things warm"
             helpText="This help text has been passed through a prop!"
           />
-          <Input
+          <TextInput
             type="number"
-            inputLabel="Input ( Number )"
+            inputLabel="TextInput ( Number )"
             helpText="This help text has been passed through a prop!"
           />
-          <Input
-            inputLabel="Input ( Required )"
+          <TextInput
+            inputLabel="TextInput ( Required )"
             placeholder="I am just keeping things warm"
             helpText="This help text has been passed through a prop!"
             isRequired={true}
           />
-          <Input
-            inputLabel="Input ( Disabled )"
+          <TextInput
+            inputLabel="TextInput ( Disabled )"
             placeholder="I am just keeping things warm"
             helpText="This help text has been passed through a prop!"
             state="disabled"
           />
-          <Input
-            inputLabel="Input ( Error )"
+          <TextInput
+            inputLabel="TextInput ( Error )"
             placeholder="I am just keeping things warm"
             helpText="This help text has been passed through a prop!"
             errorMessage="This error text has been passed through a prop!"
