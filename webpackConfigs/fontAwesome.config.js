@@ -23,7 +23,7 @@ let fontawesome = {
         options: {
           presets: ["@babel/preset-env", "@babel/preset-react", "airbnb"],
           plugins: ["transform-class-properties", "babel-plugin-styled-components"],
-          babelrcRoots: ["./src/ss-styled-components"],
+          babelrcRoots: ["../ss-styled-components"],
         },
       },
       exclude: [/examples/],
