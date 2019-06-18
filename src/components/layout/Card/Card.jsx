@@ -4,13 +4,24 @@ import { fonts, colors, shadows } from "Variables";
 import Grid from "helpers/Grid";
 import { PlaceholderText } from "helpers/Placeholders";
 
-const CardWrapper = styled.div`
+const CardPiece = styled.div`
   display: flex;
   flex-direction: column;
   flex: none;
-  position: relative;
   width: 100%;
   background: ${colors.white};
+  /* Prototype Content - displays when a Card is empty */
+  &:empty {
+    &:before {
+      ${PlaceholderText}
+      content: "Card Piece";
+      padding: 2rem;
+    }
+  }
+`;
+
+const CardWrapper = styled(CardPiece)`
+  position: relative;
   filter: ${shadows.cardShadow};
   /* Square off rounded edges of any direct children of Cards */
   > * {
@@ -26,19 +37,6 @@ const CardWrapper = styled.div`
   }
 `;
 
-const PieceWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 0.5rem;
-  background: ${colors.white};
-
-  flex: none;
-  width: 100%;
-  border-bottom: 0.25px solid #ddd;
-  /* Prototype Content - displays when a Card is empty */
-`;
-
-// const CardList = styled.ul`
 const CardList = styled(Grid)`
   padding: 1rem;
   ${CardWrapper} {
@@ -53,12 +51,12 @@ const CardList = styled(Grid)`
   }
 `;
 
-function Card({ id, children }) {
-  return <CardWrapper id={id}>{children}</CardWrapper>;
+function Piece({ id, children }) {
+  return <CardPiece id={id}>{children}</CardPiece>;
 }
 
-function Piece({ id, children}) {
-  return <PieceWrapper id={id}>{children}</PieceWrapper>;
+function Card({ id, children }) {
+  return <CardWrapper id={id}>{children}</CardWrapper>;
 }
 
 export { Card as default, CardList, Piece };
