@@ -3,24 +3,21 @@ import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import Button from "atoms/Button";
-import Card, {Piece} from "layout/Card";
+import Card, { Piece } from "layout/Card";
 import Bar from "blocks/Bar";
 
-
-
-function PopCard({ id, title, message, buttonLabel1, buttonLabel2}) {
+function PopCard({ id, title, message, buttonLabel1, buttonLabel2 }) {
   return (
-    <Card
-    id={id}> 
-        <Bar type='one' right={<Icon icon={["fal", "times"]} />}/>
-        <Bar type='three' middle={title} />
-        <Bar type='three' middle={message} />
-          <Button buttonLabel={buttonLabel1} isRound={true} />
-          <Button
-            buttonLabel={buttonLabel2}
-            isSecondStandard={true}
-            isRound={true}
-          />
+    <Card id={id}>
+      <Bar type="one" right={<Icon icon={["fal", "times"]} />} />
+      <Bar type="three" center={title} />
+      <Bar type="three" center={message} />
+      <Button buttonLabel={buttonLabel1} isRound={true} />
+      <Button
+        buttonLabel={buttonLabel2}
+        isSecondStandard={true}
+        isRound={true}
+      />
     </Card>
   );
 }
