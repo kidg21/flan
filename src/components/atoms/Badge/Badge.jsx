@@ -11,7 +11,7 @@ const BadgeContainer = styled.div`
   align-items: center;
   background-color: ${props => props.badgeColor || ""};
   color: ${props => props.badgeTextColor || ""};
-  font-size: ${props => props.badgeSize || ""};
+  font-size: 0.55em;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -27,72 +27,66 @@ const BadgeLabel = styled.span`
   white-space: nowrap;
   text-overflow: ellipsis;
   margin: 0;
+  user-select: none;
 `;
 
 function Badge({ id, label, icon, type, position, style }) {
-  let badgeColor = colors.alert;
-  let badgeTextColor = colors.white;
-  let badgeSize = ".6em";
-  let badgePadding = "0.45em .8em";
+  let badgeColor;
+  let badgeTextColor;
+  let badgePadding;
   let badgeLeft;
   let badgeBottom;
   let badgeTransform;
   let labelType;
   let iconType;
-  switch (type) {
-    case "iconInfo":
-      iconType = <Icon icon={icon} size="2x" />;
-      badgeColor = "none";
-      badgePadding = "0 0.25em";
-      badgeTextColor = colors.anchor;
-      break;
-    case "iconSuccess":
-      iconType = <Icon icon={icon} size="2x" />;
-      badgeColor = "none";
-      badgePadding = "0 0.25em";
-      badgeTextColor = colors.success;
-      break;
-    case "iconWarning":
-      iconType = <Icon icon={icon} size="2x" />;
-      badgeColor = "none";
-      badgePadding = "0 0.25em";
-      badgeTextColor = colors.warning;
-      break;
-    case "iconAlert":
-      iconType = <Icon icon={icon} size="2x" />;
-      badgeColor = "none";
-      badgePadding = "0 0.25em";
-      badgeTextColor = colors.alert;
-      break;
-    case "iconDark":
-      iconType = <Icon icon={icon} size="2x" />;
-      badgeColor = "none";
-      badgePadding = "0 0.25em";
-      badgeTextColor = colors.grey_80;
-      break;
-    case "info":
-      labelType = <BadgeLabel>{label}</BadgeLabel>;
-      badgeColor = colors.anchor;
-      break;
-    case "success":
-      labelType = <BadgeLabel>{label}</BadgeLabel>;
-      badgeColor = colors.success;
-      break;
-    case "warning":
-      labelType = <BadgeLabel>{label}</BadgeLabel>;
-      badgeColor = colors.warning;
-      break;
-    case "alert":
-      labelType = <BadgeLabel>{label}</BadgeLabel>;
-      badgeColor = colors.alert;
-      break;
-    case "dark":
-      labelType = <BadgeLabel>{label}</BadgeLabel>;
-      badgeColor = colors.grey_80;
-      break;
-    default:
-      labelType = <BadgeLabel>{label}</BadgeLabel>;
-      break;
+  if (icon) {
+    iconType = <Icon icon={icon} size="2x" />;
+    badgePadding = "0 0.25em";
+    switch (type) {
+      case "info":
+        badgeTextColor = colors.anchor;
+        break;
+      case "success":
+        badgeTextColor = colors.success;
+        break;
+      case "warning":
+        badgeTextColor = colors.warning;
+        break;
+      case "alert":
+        badgeTextColor = colors.alert;
+        break;
+      case "dark":
+        badgeTextColor = colors.grey_80;
+        break;
+      default:
+        badgeTextColor = colors.grey_80;
+        break;
+    }
+  } else {
+    labelType = <BadgeLabel>{label}</BadgeLabel>;
+    badgeColor = colors.alert;
+    badgeTextColor = colors.white;
+    badgePadding = "0.45em .8em";
+    switch (type) {
+      case "info":
+        badgeColor = colors.anchor;
+        break;
+      case "success":
+        badgeColor = colors.success;
+        break;
+      case "warning":
+        badgeColor = colors.warning;
+        break;
+      case "alert":
+        badgeColor = colors.alert;
+        break;
+      case "dark":
+        badgeColor = colors.grey_80;
+        break;
+      default:
+        badgeColor = colors.alert;
+        break;
+    }
   }
   switch (position) {
     case "topLeft":
@@ -125,7 +119,7 @@ function Badge({ id, label, icon, type, position, style }) {
       icon={icon}
       badgeColor={badgeColor}
       badgeTextColor={badgeTextColor}
-      badgeSize={badgeSize}
+      // badgeSize={badgeSize}
       badgeTransform={badgeTransform}
       badgeLeft={badgeLeft}
       badgeBottom={badgeBottom}

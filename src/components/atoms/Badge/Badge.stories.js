@@ -135,19 +135,19 @@ storiesOf("Atoms|Badge", module)
       </Card>
 
       <Card>
-        <Badge icon="user" type="iconInfo" />
+        <Badge icon="user" type="info" />
         <Title>Icon</Title>
       </Card>
       <Card>
-        <Badge icon="check" type="iconSuccess" />
+        <Badge icon="check" type="success" />
         <Title>Icon</Title>
       </Card>
       <Card>
-        <Badge icon="exclamation" type="iconWarning" />
+        <Badge icon="exclamation" type="warning" />
         <Title>Icon</Title>
       </Card>
       <Card>
-        <Badge icon="envelope" type="iconAlert" />
+        <Badge icon="envelope" type="alert" />
         <Title>Icon</Title>
       </Card>
 
@@ -181,7 +181,7 @@ storiesOf("Atoms|Badge", module)
         <Title>Message</Title>
       </Card>
       <Card>
-        <Badge icon="phone" type="iconDark" />
+        <Badge icon="phone" type="dark" />
         <Title>Message</Title>
       </Card>
 
