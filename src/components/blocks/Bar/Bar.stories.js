@@ -2,6 +2,18 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
+import {
+  withKnobs,
+  text,
+  boolean,
+  radios,
+  select,
+  number,
+  button,
+  array,
+  object,
+  optionsKnob as options
+} from "@storybook/addon-knobs";
 import { colors } from "Variables";
 import { Padding } from "helpers/Display";
 import Grid from "helpers/Grid";
@@ -35,9 +47,7 @@ const image = (
 );
 const shortTitle = <Title>A Standard Title</Title>;
 const longTitle = (
-  <Title>
-    An Extra Long Title...It Is So Long That It May Even Take Up Multiple Lines
-  </Title>
+  <Title>A Title So Long That It May Take Up Multiple Lines</Title>
 );
 const multipleLines = (
   <Grid col_1>
@@ -57,7 +67,7 @@ storiesOf("Blocks|Bar", module)
     }
   })
   .addDecorator(Padding)
-  // .addDecorator(withKnobs)
+  .addDecorator(withKnobs)
   .add(
     "Documentation",
     withInfo()(() => (
@@ -73,34 +83,29 @@ storiesOf("Blocks|Bar", module)
 
   .add("Some Bars", () => (
     <Grid col_1>
-      <Section>Command / Title / Command</Section>
+      <Section>Command / Text / Command</Section>
       <Card>
         <Bar left={<Command />} center={shortTitle} right={<Command />} />
       </Card>
       <Card>
         <Bar left={<Command />} center={longTitle} right={<Command />} />
       </Card>
+      <Card>
+        <Bar left={<Command />} center={multipleLines} right={<Command />} />
+      </Card>
 
-      <Section>Title / Command</Section>
+      <Section>Text / Command</Section>
       <Card>
         <Bar left={shortTitle} right={<Command />} />
       </Card>
       <Card>
         <Bar left={longTitle} right={<Command />} />
       </Card>
-
-      <Section>Title or Text / Command</Section>
-      <Card>
-        <Bar left={shortTitle} />
-      </Card>
-      <Card>
-        <Bar left={longTitle} />
-      </Card>
       <Card>
         <Bar left={multipleLines} right={<Command />} />
       </Card>
 
-      <Section>Title or Text</Section>
+      <Section>Text</Section>
       <Card>
         <Bar left={shortTitle} />
       </Card>
@@ -137,10 +142,10 @@ storiesOf("Blocks|Bar", module)
         />
       </Card>
 
-      <Section>Icon Block in center section</Section>
+      <Section>Icon Block in single section</Section>
       <Card>
         <Bar
-          center={
+          left={
             <IconBlock>
               <Icon icon="circle" />
               <Icon icon="circle" anchor />
@@ -150,7 +155,7 @@ storiesOf("Blocks|Bar", module)
         />
       </Card>
 
-      <Section>Icon Block / Title / Icon Block</Section>
+      <Section>Icon Block / Text / Icon Block</Section>
       <Card>
         <Bar
           left={
@@ -171,7 +176,7 @@ storiesOf("Blocks|Bar", module)
         />
       </Card>
 
-      <Section>Title / Icon Block</Section>
+      <Section>Text / Icon Block</Section>
       <Card>
         <Bar
           left={shortTitle}
@@ -184,10 +189,31 @@ storiesOf("Blocks|Bar", module)
           }
         />
       </Card>
+      <Card>
+        <Bar
+          left={
+            <IconBlock>
+              <Icon icon="circle" />
+              <Icon icon="circle" anchor />
+              <Icon icon="circle" success />
+            </IconBlock>
+          }
+          right={shortTitle}
+        />
+      </Card>
 
       <Section>Text / Image</Section>
       <Card>
         <Bar left={multipleLines} right={image} />
+      </Card>
+      <Card>
+        <Bar left={image} right={multipleLines} />
+      </Card>
+      <Card>
+        <Bar center={multipleLines} right={image} />
+      </Card>
+      <Card>
+        <Bar left={image} center={multipleLines} />
       </Card>
     </Grid>
   ));

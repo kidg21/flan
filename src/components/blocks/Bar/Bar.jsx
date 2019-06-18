@@ -12,6 +12,8 @@ const Slot = styled.div`
       : props.alignRight
       ? "flex-end"
       : "flex-start"};
+  text-align: ${props =>
+    props.alignCenter ? "center" : props.alignRight ? "right" : ""};
   }
 `;
 
