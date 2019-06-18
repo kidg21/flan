@@ -1,81 +1,41 @@
-import React, {Fragment} from "react";
-import styled, { css } from "styled-components";
+import React from "react";
+import styled from "styled-components";
 import PropTypes from "prop-types";
 
 const Slot = styled.div`
-display: flex;
-`
-const BarLayout = styled.div`
-  align-items: flex;
-  vertical-align: center;
   display: flex;
-  font-weight:600;
+  flex: auto;
   justify-content: space-between;
-  padding: .5em 1.5em 0.5em .5em;
-  // border-bottom: 0.25px solid #eaeded;
-  // box-shadow: 0 0 0px rgba(0, 0, 0, 0.08);
+  justify-content: ${props =>
+    props.center ? "center" : props.right ? "flex-end" : ""};
+  }
 `;
 
+const BarLayout = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: .75em;
+  ${Slot} + ${Slot} {
+    padding-left: 1em;
+  }
+`;
 
-function Bar({ id, type, left, middle, right, onClick}) {
-  let barType;
-  switch (type) {
-    case "one":
-      barType = (
-        <Fragment>
-          <Slot>{left}</Slot>
-        <Slot>{right}</Slot>
-        </Fragment>
-      )
-      break;
-    case "two":
-      barType = (
-        <Fragment>
-        <Slot>
-        {left}
-        </Slot>
-        <Slot>
-        {right}
-        </Slot>
-        </Fragment>
-      )
-      break;
-    case "three":
-      barType = (
-        <Fragment>
-        <Slot>
-            {left}
-            </Slot>
-            <Slot>
-            {middle}
-            </Slot>
-             <Slot>
-             {right}
-             </Slot>
-           </Fragment>
-      );
-      break;
-   default:
-      break;
-      }
+function Bar({ id, left, center, right, onClick }) {
   return (
-      <BarLayout
-        id={id}
-        type={type}
-        left={left}
-        middle={middle}
-        right={right}
-        onClick={onClick}
-      >
-          { barType }
-      </BarLayout>
+    <BarLayout id={id} onClick={onClick}>
+      {left ? <Slot left>{left}</Slot> : null}
+      {center ? <Slot center>{center}</Slot> : null}
+      {right ? <Slot right>{right}</Slot> : null}
+    </BarLayout>
   );
 }
 Bar.propTypes = {
   id: PropTypes.string,
-  type: PropTypes.oneOf(["one", "two", "three"]),
   left: PropTypes.any,
-  middle: PropTypes.any,
+  center: PropTypes.any,
   right: PropTypes.any,
   onClick: PropTypes.func
 };
