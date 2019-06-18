@@ -3,9 +3,7 @@ import { storiesOf } from "@storybook/react";
 import PropertyPanelHeader from "./PropertyPanelHeader";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
-// import Group from "./Group";
 
-// Colors
 storiesOf("Elements|Panel Headers/", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)

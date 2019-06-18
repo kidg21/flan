@@ -5,27 +5,35 @@ import Icon from "atoms/Icon";
 import Bar from "blocks/Bar";
 import Card, { Piece } from "layout/Card";
 
-const Block = styled.div`
-  display: flex;
-  // vertical-align: bottom;
-  word-break: break-word;
-  width: 70%;
-`;
 const HeaderSpace = styled.div`
   padding-top: 0.7rem;
   font-weight: 700;
 `;
 
-function NavigationPanelHeader({ id, title, onClick }) {
+function NavigationPanelHeader({
+  id,
+  title,
+  onClickLeftIcon,
+  onClickRightIcon
+}) {
   return (
     <Piece id={id}>
       <HeaderSpace>
         <Bar
-          type="three"
-          left={<Icon icon={["far", "angle-left"]} size="lg" />}
+          left={
+            <Icon
+              icon={["far", "angle-left"]}
+              size="lg"
+              onClick={onClickLeftIcon}
+            />
+          }
           center={title}
           right={
-            <Icon icon={["far", "ellipsis-v"]} size="lg" onClick={onClick} />
+            <Icon
+              icon={["far", "ellipsis-v"]}
+              size="lg"
+              onClick={onClickRightIcon}
+            />
           }
         />
       </HeaderSpace>
