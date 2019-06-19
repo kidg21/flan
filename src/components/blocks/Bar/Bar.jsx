@@ -2,8 +2,8 @@ import React from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
-import Switch from "atoms/Switch/Switch";
-import IconBlock from "blocks/IconBlock/IconBlock";
+import Switch from "atoms/Switch";
+import IconBlock from "blocks/IconBlock";
 
 // style={{ fontFamily: "arial", fontWeight: 400, fontSize: "12px" }}
 

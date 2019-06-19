@@ -11,8 +11,7 @@ const Form = styled.form`
   flex: auto;
   align-content: flex-start;
   padding: 1rem 1.5rem;
-  background-color: ${props =>
-    props.bg_light ? colors.grey_light : colors.white};
+  background-color: ${props => (props.bg_light ? colors.grey_light : colors.white)};
   ${props =>
     props.dark &&
     css`
@@ -98,9 +97,7 @@ const Label = styled.label`
     color: ${colors.alert};
   }
 `;
-const InputLabel = props => (
-  <Label isRequired={props.isRequired}>{props.inputLabel}</Label>
-);
+const InputLabel = props => <Label isRequired={props.isRequired}>{props.inputLabel}</Label>;
 
 const Help = styled.label`
   grid-column: 1 / -1;
@@ -130,15 +127,15 @@ const InputGroup = styled(Grid)`
 
 InputLabel.propTypes = {
   inputLabel: PropTypes.string,
-  isRequired: PropTypes.bool
+  isRequired: PropTypes.bool,
 };
 
 HelpText.propTypes = {
-  helpText: PropTypes.string
+  helpText: PropTypes.string,
 };
 
 ErrorText.propTypes = {
-  errorText: PropTypes.string.isRequired
+  errorText: PropTypes.string.isRequired,
 };
 
 export {
@@ -150,5 +147,5 @@ export {
   InputLabel,
   HelpText,
   ErrorText,
-  InputGroup
+  InputGroup,
 };

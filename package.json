@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "storybook": "start-storybook -p 9009 -c .storybook",
-    "build-storybook": "build-storybook -c .storybook -o .out"
+    "build-storybook": "build-storybook -c .storybook -o .out",
+    "compileFontAwesome": "webpack --config ./webpackConfigs/fontAwesome.config.js",
+    "testBuild" : "webpack --config ./webpackConfigs/testBuild.config.js"
   },
   "repository": {
     "type": "git",

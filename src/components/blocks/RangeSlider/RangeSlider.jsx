@@ -56,7 +56,7 @@ RangeSlider.propTypes = {
   id: PropTypes.string,
   label: PropTypes.string,
   minLabel: PropTypes.string,
-  maxLabel: PropTypes.string
+  maxLabel: PropTypes.string,
 };
 
 export default RangeSlider;

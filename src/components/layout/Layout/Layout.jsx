@@ -2,7 +2,7 @@ import React, { useState, Fragment } from "react"
 import PropTypes from "prop-types"
 import styled, { css, keyframes } from "styled-components"
 import { colors } from "Variables"
-import { PlaceholderText } from "../../_helpers/Placeholders"
+import { PlaceholderText } from "helpers/Placeholders.jsx"
 import Card, { CardList } from "layout/Card"
 
 const OuterWrapper = styled.div`
