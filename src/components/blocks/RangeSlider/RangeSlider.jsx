@@ -1,13 +1,11 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import Input from "atoms/Input/Input";
+import Input from "atoms/Input";
 import Slider from "atoms/Slider";
 import PropTypes from "prop-types";
 // import Label from "atoms/Label";
 import { colors, shadows, Lighten, Darken } from "Variables";
 import { InputLabel } from "layout/Form";
-
-
 
 const SliderInput = styled(Input)`
 border-color: ${colors.white};
@@ -33,12 +31,12 @@ padding: .5rem .5rem;
         color: ${colors.success};
 
       }}
-`
+`;
 
 const RangeContainer = styled.div`
-display: inline-block;
-margin-bottom: 1.5rem;
-`
+  display: inline-block;
+  margin-bottom: 1.5rem;
+`;
 
 const InputContainer = styled.div`
   width: 98%;
@@ -49,28 +47,20 @@ const InputContainer = styled.div`
 
 function RangeSlider({ id, label, value, min, max, step }) {
   return (
-    <RangeContainer
-    id={id}>
-    <InputLabel inputLabel={label}/>
+    <RangeContainer id={id}>
+      <InputLabel inputLabel={label} />
       <InputContainer>
-        <SliderInput
-          type="text"
-          placeholder="Min"
-          value={value}
-          min={min}
-          max={max}
-          step={step}
-        />
+        <SliderInput type="text" placeholder="Min" value={value} min={min} max={max} step={step} />
         <SliderInput
           type="text"
           placeholder="Max"
           style={{
             textAlign: "right",
-            alignContent: "right"
+            alignContent: "right",
           }}
         />
       </InputContainer>
-      <Slider/>
+      <Slider />
     </RangeContainer>
   );
 }
@@ -81,7 +71,7 @@ RangeSlider.propTypes = {
   value: PropTypes.string,
   min: PropTypes.string,
   max: PropTypes.string,
-  step: PropTypes.string
+  step: PropTypes.string,
 };
 
 export default RangeSlider;

@@ -1,11 +1,11 @@
-import { createGlobalStyle } from "styled-components"
-import styledNormalize from "styled-normalize"
+import { createGlobalStyle } from "styled-components";
+import styledNormalize from "styled-normalize";
 // Import variables
-import { colors, fonts, fontSize } from "Variables"
+import { colors, fonts, fontSize } from "Variables";
 // Import Fonts
-import "../../../css/fonts.css"
+import "../../../css/fonts.css";
 // Import Icons
-import "../../../icons/fontawesome"
+import "../../../icons/fontawesome";
 
 const GlobalStyles = createGlobalStyle`
 
@@ -14,12 +14,12 @@ const GlobalStyles = createGlobalStyle`
 
     /* Import font resources */
     ${
-      "" /* @font-face {
+  "" /* @font-face {
         font-family: Lato;
         src: local("Lato");
         src: url(${Lato_700});
     } */
-    }
+}
 
     /* Document resets */
     html {
@@ -104,33 +104,33 @@ const GlobalStyles = createGlobalStyle`
     }
     h1 {
         font-size: 2rem;
-        ${"" /* font-size: calc((${fontSize.base}) * 2); */}
-        ${"" /* line-height: 2.25rem; */}
+        ${""}
+        ${""}
         line-height: 2.4rem;
     }
     h2 {
         font-size: 1.5rem;
-        ${"" /* line-height: 2.25rem; */}
+        ${""}
         line-height: 2rem;
     }
     h3 {
         font-size: 1.3rem;
-        ${"" /* line-height: 2.25rem; */}
+        ${""}
         line-height: 1.8rem;
     }
     h4 {
         font-size: 1rem;
-        ${"" /* line-height: 1.5rem; */}
+        ${""}
         line-height: 1.4rem;
     }
     h5 {
         font-size: 0.9rem;
-        ${"" /* line-height: 1.5rem; */}
+        ${""}
         line-height: 1.3rem;
     }
     h6 {
         font-size: 0.8rem;
-        ${"" /* line-height: 1.5rem; */}
+        ${""}
         line-height: 1.2rem;
     }
     code {
@@ -206,7 +206,6 @@ const GlobalStyles = createGlobalStyle`
         }
     }
 
-    `
-    
+    `;
 
-export default GlobalStyles
+export default GlobalStyles;

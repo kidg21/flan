@@ -1,6 +1,6 @@
 import React  from "react"
 import styled, { css } from "styled-components"
-import Input from "atoms/Input/Input";
+import Input from "atoms/Input";
 import PropTypes from "prop-types";
 import { InputLabel } from "layout/Form";
 import { colors, shadows, Lighten, Darken } from "Variables";

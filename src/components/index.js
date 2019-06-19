@@ -1,8 +1,5 @@
 // Publicly exported files from 'base'
 export * from "./base/Typography";
-export * from "./base/Colors";
-export * from "./base/GlobalStyles";
-export * from "./base/Variables";
 
 // Publicly exported files from 'atoms'
 export { default as Badge } from "./atoms/Badge";
@@ -39,9 +36,7 @@ export { default as LayerCardBar } from "./elements/LayerCardBar";
 export { default as NavigationCardBar } from "./elements/NavigationCardBar";
 export { default as MainPanelHeader } from "./elements/MainPanelHeader";
 export { default as PropertyPanelHeader } from "./elements/PropertyPanelHeader";
-export {
-  default as NavigationPanelHeader
-} from "./elements/NavigationPanelHeader";
+export { default as NavigationPanelHeader } from "./elements/NavigationPanelHeader";
 export { default as PopupCard } from "./elements/PopupCard";
 // export { default as PropertyCard } from "./elements/PropertyCard";
 // export { default as ResultCard } from "./elements/ResultCard";
@@ -57,7 +52,7 @@ export {
   InputLabel,
   HelpText,
   ErrorText,
-  InputGroup
+  InputGroup,
 } from "./layout/Form";
 export { default as Layout } from "./layout/Layout";
 export { default as Page } from "./layout/Page";
