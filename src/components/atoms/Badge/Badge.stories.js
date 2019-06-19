@@ -52,17 +52,12 @@ storiesOf("Atoms|Badge", module)
             "type",
             {
               info: "info",
-              "info icon": "iconInfo",
               success: "success",
-              "success icon": "iconSuccess",
               warning: "warning",
-              "warning icon": "iconWarning",
-              "alert (default)": "default",
-              "alert icon": "iconAlert",
-              dark: "dark",
-              "dark icon": "iconDark"
+              "alert (default)": "alert",
+              dark: "dark"
             },
-            "default",
+            "alert",
             { display: "radio" },
             "Badge"
           )}
@@ -70,13 +65,14 @@ storiesOf("Atoms|Badge", module)
           icon={options(
             "icon (no label)",
             {
+              "no icon": null,
               user: "user",
               check: "check",
               exclamation: "exclamation",
               envelope: "envelope",
               phone: "phone"
             },
-            "user",
+            null,
             { display: "select" },
             "Badge"
           )}

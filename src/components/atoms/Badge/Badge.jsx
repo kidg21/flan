@@ -40,28 +40,8 @@ function Badge({ id, label, icon, type, position, style }) {
   let labelType;
   let iconType;
   if (icon) {
-    iconType = <Icon icon={icon} size="2x" />;
+    iconType = <Icon icon={icon} size="2x" type={type} />;
     badgePadding = "0 0.25em";
-    switch (type) {
-      case "info":
-        badgeTextColor = colors.anchor;
-        break;
-      case "success":
-        badgeTextColor = colors.success;
-        break;
-      case "warning":
-        badgeTextColor = colors.warning;
-        break;
-      case "alert":
-        badgeTextColor = colors.alert;
-        break;
-      case "dark":
-        badgeTextColor = colors.grey_80;
-        break;
-      default:
-        badgeTextColor = colors.grey_80;
-        break;
-    }
   } else {
     labelType = <BadgeLabel>{label}</BadgeLabel>;
     badgeColor = colors.alert;
@@ -119,7 +99,6 @@ function Badge({ id, label, icon, type, position, style }) {
       icon={icon}
       badgeColor={badgeColor}
       badgeTextColor={badgeTextColor}
-      // badgeSize={badgeSize}
       badgeTransform={badgeTransform}
       badgeLeft={badgeLeft}
       badgeBottom={badgeBottom}
@@ -135,18 +114,7 @@ Badge.propTypes = {
   id: PropTypes.string,
   label: PropTypes.string.isRequired,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
-  type: PropTypes.oneOf([
-    "info",
-    "iconInfo",
-    "success",
-    "iconSuccess",
-    "warning",
-    "iconWarning",
-    "alert",
-    "iconAlert",
-    "dark",
-    "iconDark"
-  ]),
+  type: PropTypes.oneOf(["info", "success", "warning", "alert", "dark"]),
   position: PropTypes.oneOf([
     "topLeft",
     "topRight",
