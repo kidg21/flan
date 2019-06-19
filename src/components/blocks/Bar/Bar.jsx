@@ -9,14 +9,8 @@ const Slot = styled.div`
   display: flex;
   flex: auto;
   justify-content: space-between;
-  justify-content: ${props =>
-    props.alignCenter
-      ? "center"
-      : props.alignRight
-      ? "flex-end"
-      : "flex-start"};
-  text-align: ${props =>
-    props.alignCenter ? "center" : props.alignRight ? "right" : ""};
+  justify-content: ${props => props.justifyContent || ""};
+  text-align: ${props => props.textAlign || ""};
   }
 `;
 
@@ -36,8 +30,16 @@ function Bar({ id, left, center, right, onClick }) {
   return (
     <BarLayout id={id} onClick={onClick}>
       {left ? <Slot>{left}</Slot> : null}
-      {center ? <Slot alignCenter={true}>{center}</Slot> : null}
-      {right ? <Slot alignRight={true}>{right}</Slot> : null}
+      {center ? (
+        <Slot justifyContent={"center"} textAlign={"center"}>
+          {center}
+        </Slot>
+      ) : null}
+      {right ? (
+        <Slot justifyContent={"flex-end"} textAlign={"right"}>
+          {right}
+        </Slot>
+      ) : null}
     </BarLayout>
   );
 }
@@ -46,7 +48,7 @@ Bar.propTypes = {
   left: PropTypes.any,
   center: PropTypes.any,
   right: PropTypes.any,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
 };
 
 export default Bar;

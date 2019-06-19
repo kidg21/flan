@@ -3,8 +3,8 @@ import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import IconBlock from "blocks/IconBlock";
-import Bar from "blocks/Bar/Bar";
-import Card, { Piece } from "layout/Card/Card";
+import Bar from "blocks/Bar";
+import Card, { Piece } from "layout/Card";
 
 const HeaderSpace = styled.div`
   padding-top: 0.7rem;
@@ -36,6 +36,6 @@ function PropertyPanelHeader({ id, title, onClick, onClickDirection }) {
 PropertyPanelHeader.propTypes = {
   id: PropTypes.string,
   title: PropTypes.any.isRequired,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
 };
 export default PropertyPanelHeader;

@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import IconBlock from "blocks/IconBlock";
-import Bar from "blocks/Bar/Bar";
+import Bar from "blocks/Bar";
 import Card, { Piece } from "layout/Card";
 
 import Switch from "atoms/Switch";
@@ -11,13 +11,13 @@ import Switch from "atoms/Switch";
 const blockStyle = {
   width: "4.8em",
   filter: "brightness(160%)",
-  lineHeight: "normal"
+  lineHeight: "normal",
 };
 
 const disabledblockStyle = {
   width: "4.8em",
   filter: "brightness(200%)",
-  lineHeight: "normal"
+  lineHeight: "normal",
 };
 
 const Icons = (
@@ -37,7 +37,7 @@ const DisabledIcons = (
 );
 
 const Space = {
-  paddingLeft: "1em"
+  paddingLeft: "1em",
 };
 
 const SwitchContainer = styled.div`
@@ -76,6 +76,6 @@ function LayerCardBar({ id, title, switchProps, disabled }) {
 LayerCardBar.propTypes = {
   id: PropTypes.string,
   title: PropTypes.any.isRequired,
-  disabled: PropTypes.bool
+  disabled: PropTypes.bool,
 };
 export default LayerCardBar;
