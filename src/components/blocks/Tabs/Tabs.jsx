@@ -117,8 +117,19 @@ function Tab({
           onClick={onClick}
           isSelected={isSelected}
           isDisabled={isDisabled}
-          isSolid={true}
-          isSecondary={true}
+          type="solid"
+          color="success"
+        />
+      ) : isDisabled ? (
+        <Button
+          id={id}
+          halfSize={halfSize}
+          icon={icon}
+          buttonLabel={tabLabel}
+          onClick={onClick}
+          isSelected={isSelected}
+          isDisabled={isDisabled}
+          type="disabled"
         />
       ) : (
         <Button

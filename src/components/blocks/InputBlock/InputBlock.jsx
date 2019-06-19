@@ -1,11 +1,11 @@
-import React from "react"
-import styled, { css } from "styled-components"
-import GlobalStyles from "GlobalStyles"
-import PropTypes from "prop-types"
-import { colors, shadows } from "Variables"
-import { InputLabel, HelpText, ErrorText } from "layout/Form"
-import SelectMenu from "atoms/SelectMenu"
-import Button from "atoms/Button"
+import React from "react";
+import styled, { css } from "styled-components";
+import GlobalStyles from "GlobalStyles";
+import PropTypes from "prop-types";
+import { colors, shadows } from "Variables";
+import { InputLabel, HelpText, ErrorText } from "layout/Form";
+import SelectMenu from "atoms/SelectMenu";
+import Button from "atoms/Button";
 
 const TextInputContainer = styled.div`
   display: grid;
@@ -38,11 +38,11 @@ const TextInputContainer = styled.div`
       ? "minmax(auto, 3fr) minmax(auto, 2fr)"
       : /* Single Input (default) */
         "repeat(1, 1fr)"};
-  grid-gap: ${props => (props.slider ? "0.15rem" : "0.35rem" )};
+  grid-gap: ${props => (props.slider ? "0.15rem" : "0.35rem")};
   align-content: flex-start;
   color: ${props =>
     props.error ? colors.alert : props.disabled ? colors.grey_40 : ""};
-`
+`;
 
 const PrePostLabel = styled.label`
   display: flex;
@@ -59,7 +59,7 @@ const PrePostLabel = styled.label`
   border-radius: 4px;
   padding: 0.25rem 1rem;
   white-space: nowrap;
-`
+`;
 
 const TextInput = styled.input`
   border: 1px solid ${colors.grey_20};
@@ -72,7 +72,7 @@ const TextInput = styled.input`
   padding: ${props => (props.isRound ? "0.75rem 1rem" : "0.5rem 0.75rem")};
 
   ::placeholder {
-    color: ${props => (props.error ? colors.alert :  "")};
+    color: ${props => (props.error ? colors.alert : "")};
   }
   &:hover {
     border: 1px solid ${colors.grey_40};
@@ -90,9 +90,9 @@ const TextInput = styled.input`
       
     }
   }
-`
+`;
 
-function Input({
+function InputBlock({
   id,
   type,
   pattern,
@@ -215,11 +215,10 @@ function Input({
       {/* Error Message (required) */}
       {error ? <ErrorText errorText={errorText} /> : null}
     </TextInputContainer>
-  )
+  );
 }
 
-
-Input.propTypes = {
+InputBlock.propTypes = {
   id: PropTypes.string,
   type: PropTypes.string,
   pattern: PropTypes.string,
@@ -250,6 +249,6 @@ Input.propTypes = {
   error: PropTypes.bool,
   errorText: PropTypes.string,
   style: PropTypes.string
-}
+};
 
-export { Input as default }
+export { InputBlock as default };

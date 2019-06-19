@@ -69,19 +69,21 @@ const GlobalStyles = createGlobalStyle`
 
     /* Default Link Styles */
     a {
-      color: ${colors.grey_40};
-      font-size: smaller;
-      font-weight: 400;
-      font-family: Arial;
+      color: ${colors.anchor};
+      line-height: inherit;
+      ${'' /* font-size: smaller; */}
+      ${'' /* font-weight: 400; */}
+      ${'' /* font-family: Arial; */}
       text-decoration: none;
       cursor: pointer;
 
-      &:hover {
+      &:hover,
+      &:focus {
         color: ${colors.anchor_light};
       }
-      &:focus {
+      ${'' /* &:focus {
         ${colors.grey_60};
-        }
+        } */}
       img { border: none; }
       }
 
@@ -183,6 +185,7 @@ const GlobalStyles = createGlobalStyle`
     input[type="time"],
     input[type="url"],
     input[type="color"],
+    input[type="range"],
     textarea,
     select {
         box-sizing: border-box;
@@ -193,7 +196,7 @@ const GlobalStyles = createGlobalStyle`
         border-radius: 5px;
         font-size: 12px;
         transition: border-color 0.1s linear, background 0.1s linear;
-        -webkit-appearance: none;
+        appearance: none;
         &:focus {
             outline: none;
         }
@@ -205,7 +208,15 @@ const GlobalStyles = createGlobalStyle`
             background-color: ${colors.grey_20};
         }
     }
-
+    input[type="checkbox"],
+    input[type="radio"] {
+        &[disabled],
+        &[readonly] {
+            cursor: not-allowed;
+            pointer-events: none;
+            user-select: none;
+        }
+    }
     `;
 
 export default GlobalStyles;

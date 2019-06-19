@@ -1,4 +1,4 @@
-####A text **Input** let users enter and edit text.
+####An **Input Block** lets users enter and edit text.
 
 **Props**:
 - id

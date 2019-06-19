@@ -1,9 +1,9 @@
-import React from "react"
-import styled, { css } from "styled-components"
-import PropTypes from "prop-types"
-import { fonts, colors, shadows } from "Variables"
-import { PlaceholderText } from "helpers/Placeholders.jsx"
-import Grid from "helpers/Grid.jsx"
+import React from "react";
+import styled, { css } from "styled-components";
+import PropTypes from "prop-types";
+import { fonts, colors, shadows } from "Variables";
+import { PlaceholderText } from "helpers/Placeholders";
+import Grid from "helpers/Grid";
 
 const Form = styled.form`
   display: grid;
@@ -11,8 +11,7 @@ const Form = styled.form`
   flex: auto;
   align-content: flex-start;
   padding: 1rem 1.5rem;
-  background-color: ${props =>
-    props.bg_light ? colors.grey_light : colors.white};
+  background-color: ${props => (props.bg_light ? colors.grey_light : colors.white)};
   ${props =>
     props.dark &&
     css`
@@ -29,7 +28,7 @@ const Form = styled.form`
       content: "{ Form } \00000A 'Displays a grid of user inputs in responsive columns'";
     }
   }
-`
+`;
 
 const Title = styled.h3`
   color: ${colors.grey_60};
@@ -41,7 +40,7 @@ const Title = styled.h3`
       content: "{ Title }";
     }
   }
-`
+`;
 
 const CenteredSection = styled.div`
   display: flex;
@@ -50,7 +49,7 @@ const CenteredSection = styled.div`
   align-items: center;
   margin-bottom: 1rem;
   margin-top: 1rem;
-`
+`;
 
 const Section = styled.section`
   display: grid;
@@ -65,7 +64,7 @@ const Section = styled.section`
       content: "{ Section } \00000A ''";
     }
   }
-`
+`;
 
 const SectionName = styled.h5`
   color: ${colors.grey_80};
@@ -77,7 +76,7 @@ const SectionName = styled.h5`
       content: "{ SectionName }";
     }
   }
-`
+`;
 const Label = styled.label`
   display: flex;
   font-family: Arial;
@@ -97,18 +96,16 @@ const Label = styled.label`
     font-size: 1.5rem;
     color: ${colors.alert};
   }
-`
-const InputLabel = props => (
-  <Label isRequired={props.isRequired}>{props.inputLabel}</Label>
-)
+`;
+const InputLabel = props => <Label isRequired={props.isRequired}>{props.inputLabel}</Label>;
 
 const Help = styled.label`
   grid-column: 1 / -1;
-  color: ${colors.grey_60};
+  color: inherit;
   font-size: smaller;
   letter-spacing: 1px;
-`
-const HelpText = props => <Help>{props.helpText}</Help>
+`;
+const HelpText = props => <Help>{props.helpText}</Help>;
 
 const Error = styled.label`
   grid-column: 1 / -1;
@@ -116,8 +113,8 @@ const Error = styled.label`
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 1px;
-`
-const ErrorText = props => <Error>{props.errorText}</Error>
+`;
+const ErrorText = props => <Error>{props.errorText}</Error>;
 
 const InputGroup = styled(Grid)`
   /* Prototype Content - displays when a Form is empty */
@@ -126,23 +123,20 @@ const InputGroup = styled(Grid)`
       content: "{ InputGroup }";
     }
   }
-`
-
+`;
 
 InputLabel.propTypes = {
   inputLabel: PropTypes.string,
-  isRequired: PropTypes.bool
-}
-
+  isRequired: PropTypes.bool,
+};
 
 HelpText.propTypes = {
-  helpText: PropTypes.string
-}
-
+  helpText: PropTypes.string,
+};
 
 ErrorText.propTypes = {
-  errorText: PropTypes.string.isRequired
-}
+  errorText: PropTypes.string.isRequired,
+};
 
 export {
   Form as default,
@@ -153,5 +147,5 @@ export {
   InputLabel,
   HelpText,
   ErrorText,
-  InputGroup
-}
+  InputGroup,
+};
