@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { colors } from "Variables";
 import Icon from "atoms/Icon";
 
@@ -10,8 +10,8 @@ const BadgeContainer = styled.div`
   justify-content: center;
   align-items: center;
   background-color: ${props => props.badgeColor || ""};
-  color: ${props => props.badgeText || ""};
-  font-size: ${props => props.badgeSize || ""};
+  color: ${props => props.badgeTextColor || ""};
+  font-size: 0.55em;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -27,82 +27,62 @@ const BadgeLabel = styled.span`
   white-space: nowrap;
   text-overflow: ellipsis;
   margin: 0;
+  user-select: none;
 `;
 
-const BadgeIcon = styled(Icon)``;
-
-function Badge({ id, as, label, icon, type, size, position, style }) {
-  let badgeColor = colors.alert;
-  let badgeText = colors.white;
-  let badgeSize = ".6em";
-  let badgePadding = "0.45em .8em";
-  let badgeLeft = "100%";
-  let badgeBottom = "100%";
-  let badgeTransform = "translate(-90%, 50%)";
-  switch (type) {
-    case "info":
-      as = "a";
-      if (icon) {
-        badgeColor = "none";
-        badgeSize = "1.25em";
-        badgePadding = ".25em";
-        badgeText = colors.anchor;
-      } else {
+function Badge({ id, label, icon, type, position, style }) {
+  let badgeColor;
+  let badgeTextColor;
+  let badgePadding;
+  let badgeLeft;
+  let badgeBottom;
+  let badgeTransform;
+  let labelType;
+  let iconType;
+  if (icon) {
+    iconType = <Icon icon={icon} size="2x" type={type} />;
+    badgePadding = "0 0.25em";
+  } else {
+    labelType = <BadgeLabel>{label}</BadgeLabel>;
+    badgeColor = colors.alert;
+    badgeTextColor = colors.white;
+    badgePadding = "0.45em .8em";
+    switch (type) {
+      case "info":
         badgeColor = colors.anchor;
-      }
-      break;
-    case "success":
-      if (icon) {
-        badgeColor = "none";
-        badgeSize = "1.25em";
-        badgePadding = ".25em";
-        badgeText = colors.success;
-      } else {
+        break;
+      case "success":
         badgeColor = colors.success;
-      }
-      break;
-    case "warning":
-      if (icon) {
-        badgeColor = "none";
-        badgeSize = "1.25em";
-        badgePadding = ".25em";
-        badgeText = colors.warning;
-      } else {
+        break;
+      case "warning":
         badgeColor = colors.warning;
-      }
-      break;
-    case "alert":
-      if (icon) {
-        badgeColor = "none";
-        badgeSize = "1.25em";
-        badgePadding = ".25em";
-        badgeText = colors.alert;
-      } else {
+        break;
+      case "alert":
         badgeColor = colors.alert;
-      }
-      break;
-    case "dark":
-      if (icon) {
-        badgeColor = "none";
-        badgeSize = "1.25em";
-        badgePadding = ".25em";
-        badgeText = colors.grey_80;
-      } else {
+        break;
+      case "dark":
         badgeColor = colors.grey_80;
-      }
-      break;
-    default:
-      break;
+        break;
+      default:
+        badgeColor = colors.alert;
+        break;
+    }
   }
   switch (position) {
     case "topLeft":
+      badgeBottom = "100%";
       badgeLeft = "0";
       badgeTransform = "translate(-10%, 50%)";
       break;
     case "topRight":
+      badgeBottom = "100%";
+      badgeLeft = "100%";
+      badgeTransform = "translate(-90%, 50%)";
       break;
     case "bottomRight":
       badgeBottom = "0";
+      badgeLeft = "100%";
+      badgeTransform = "translate(-90%, 50%)";
       break;
     case "bottomLeft":
       badgeBottom = "0";
@@ -117,41 +97,24 @@ function Badge({ id, as, label, icon, type, size, position, style }) {
       id={id}
       label={label}
       icon={icon}
-      as={as}
       badgeColor={badgeColor}
-      badgeText={badgeText}
-      badgeSize={badgeSize}
+      badgeTextColor={badgeTextColor}
       badgeTransform={badgeTransform}
       badgeLeft={badgeLeft}
       badgeBottom={badgeBottom}
       badgePadding={badgePadding}
       style={style}
     >
-      {icon ? (
-        <BadgeIcon icon={icon} badgeText={badgeText} />
-      ) : (
-        <BadgeLabel>{label}</BadgeLabel>
-      )}
+      {iconType ? iconType : labelType}
     </BadgeContainer>
   );
 }
 
 Badge.propTypes = {
   id: PropTypes.string,
-  label: PropTypes.string,
+  label: PropTypes.string.isRequired,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
-  type: PropTypes.oneOf([
-    "info",
-    "success",
-    "warning",
-    "alert",
-    "dark",
-    "notify",
-    "max10",
-    "max100",
-    "max1K",
-    "max10K"
-  ]),
+  type: PropTypes.oneOf(["info", "success", "warning", "alert", "dark"]),
   position: PropTypes.oneOf([
     "topLeft",
     "topRight",

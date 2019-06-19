@@ -14,7 +14,7 @@ import Form, {
 } from "layout/Form";
 import Checkbox from "../../atoms/Checkbox/Checkbox";
 import Command from "atoms/Command";
-import Input from "atoms/Input";
+import TextInput from "atoms/TextInput";
 import Radio from "atoms/Radio";
 import Slider from "atoms/Slider";
 import RangeSlider from "blocks/RangeSlider";

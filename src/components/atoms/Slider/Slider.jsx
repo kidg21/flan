@@ -1,47 +1,35 @@
-import React  from "react"
-import styled, { css } from "styled-components"
-import Input from "atoms/Input";
+import React from "react";
+import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
-import { InputLabel } from "layout/Form";
-import { colors, shadows } from "Variables"
-import {Lighten, Darken} from "helpers/Placeholders.jsx";
-
+import { colors, shadows } from "Variables";
+import { Lighten, Darken } from "helpers/Placeholders.jsx";
 
 const SliderPiece = styled.input.attrs({ type: "range" })`
-  -webkit-appearance: none;
-  appearance: none;
   width: 98%;
   height: 1px;
-  min: "0";
-  max: "100";
-  step: "10";
-  value: "80";
   border-radius: 5px;
   background: #ccc;
   outline: none;
   opacity: 0.7;
-  -webkit-transition: 0.2s;
   transition: opacity 0.2s;
-
-
   &::-webkit-slider-thumb {
-    -webkit-appearance: none;
     appearance: none;
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background-image: linear-gradient(#528321, #66a22a);
-    // background-image: linear-gradient(#00adb5, #30cffc);
+    background-image: linear-gradient(
+      ${colors.success_light},
+      ${colors.success_dark}
+    );
     cursor: pointer;
-    
-&:hover {
-  ${Darken};
-}
+
+    &:hover {
+      ${Darken};
+    }
 
     &:active {
-  ${Lighten};
-}
-
+      ${Lighten};
+    }
   }
 
   &::-moz-range-thumb {
@@ -51,21 +39,14 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
     background-image: linear-gradient(#528321, #66a22a);
     cursor: pointer;
   }
-`
+`;
 
-function Slider({id, value, min, max, step}) {
-  return (
-  <div>
-    <SliderPiece/>
-  </div>
-    )
-};
+function Slider({ id, onChange }) {
+  return <SliderPiece id={id} onChange={onChange} />;
+}
 Slider.propTypes = {
   id: PropTypes.string,
-  label: PropTypes.string,
-  value: PropTypes.string,
-  min: PropTypes.string,
-  max: PropTypes.string,
-  step: PropTypes.string
-}
-export default Slider
+  onChange: PropTypes.func
+};
+
+export default Slider;
