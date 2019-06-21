@@ -8,5 +8,10 @@ storiesOf("Elements|Popup Card", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
   .add("Popup", () => (
-    <PopCard title="Popup Card" message="lets see if this does anything" />
+    <PopCard
+      title="Popup Card"
+      message="lets see if this does anything"
+      buttonLabel1="yes"
+      buttonLabel2="hell no"
+    />
   ));

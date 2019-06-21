@@ -1,16 +1,16 @@
-import React from "react"
-import { storiesOf } from "@storybook/react"
-import { checkA11y } from "@storybook/addon-a11y"
-import { Padding } from "../../_helpers/Display"
-import Grid from "helpers/Grid"
-import Card, { CardList } from "layout/Card"
-import Button from "atoms/Button"
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import { checkA11y } from "@storybook/addon-a11y";
+import { Padding } from "../../_helpers/Display";
+import Grid from "helpers/Grid";
+import Card, { CardList } from "layout/Card";
+import Button from "atoms/Button";
 
 // Card
 storiesOf("Layout|Card", module)
   .addDecorator(Padding)
   .addDecorator(checkA11y)
-  .add("Default Card - 'wrapper for content modules'", () => <Card />)
+  .add("Default Card - 'wrapper for content modules'", () => <Card />);
 
 // Da Card
 storiesOf("Layout|Card", module)
@@ -18,11 +18,11 @@ storiesOf("Layout|Card", module)
   .addDecorator(checkA11y)
   .add("Card- 'playing with children'", () => (
     <Card>
-      <Button />
-      <Button />
-      <Button />
+      <Button buttonLabel="Button" />
+      <Button buttonLabel="Button" />
+      <Button buttonLabel="Button" />
     </Card>
-  ))
+  ));
 
 // Card List
 storiesOf("Layout|CardList", module)
@@ -38,4 +38,4 @@ storiesOf("Layout|CardList", module)
       <Card />
       <Card />
     </CardList>
-  ))
+  ));

@@ -16,11 +16,3 @@ export const PlaceholderText = css`
   padding: 0.5rem;
   white-space: pre-wrap;
 `;
-
-export const Darken = css`
-  filter: brightness(85%);
-  `;
-
-export const Lighten = css`
-filter: brightness(105%)
-`;

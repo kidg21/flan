@@ -1,8 +1,8 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
-import { colors, shadows } from "Variables";
-import { Lighten, Darken } from "helpers/Placeholders.jsx";
+import { InputLabel } from "layout/Form";
+import { colors, shadows, Lighten, Darken } from "Variables";
 
 const SliderPiece = styled.input.attrs({ type: "range" })`
   width: 98%;
@@ -17,10 +17,7 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background-image: linear-gradient(
-      ${colors.success_light},
-      ${colors.success_dark}
-    );
+    background-image: linear-gradient(${colors.success_light}, ${colors.success_dark});
     cursor: pointer;
 
     &:hover {
@@ -46,7 +43,7 @@ function Slider({ id, onChange }) {
 }
 Slider.propTypes = {
   id: PropTypes.string,
-  onChange: PropTypes.func
+  onChange: PropTypes.func,
 };
 
 export default Slider;

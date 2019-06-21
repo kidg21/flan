@@ -1,102 +1,54 @@
 import React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import Switch from "atoms/Switch";
 import IconBlock from "blocks/IconBlock";
 
-// style={{ fontFamily: "arial", fontWeight: 400, fontSize: "12px" }}
-
-// const blockStyle = {
-//   width: "60px",
-//   color: "lightgrey"
-// };
-
-// const LayerStyle = {
-//   flex: "auto",
-//   paddingLeft: "1.5em"
-// };
-
-const Left = styled.div`
-display: flex;
-`
-
-const Middle = styled.div`
-display: flex;
-`
-
-const Right = styled.div`
-display: flex;
-`
-
-
-// const LayerLeft = styled.div`
-//   display: flex;
-// `;
-
-/////Navigation consts
-const BarLayout = styled.div`
-  align-items: flex;
-  vertical-align: center;
+const Slot = styled.div`
   display: flex;
-  font-weight:600;
+  flex: auto;
   justify-content: space-between;
-  padding: .5em 1.5em 0.5em .5em;
-  // border-bottom: 0.25px solid #eaeded;
-  // box-shadow: 0 0 0px rgba(0, 0, 0, 0.08);
+  justify-content: ${props => props.justifyContent || ""};
+  text-align: ${props => props.textAlign || ""};
+  }
 `;
 
+const BarLayout = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: .75em;
+  ${Slot} + ${Slot} {
+    padding-left: 1em;
+  }
+`;
 
-
-
-
-function Bar({ id, onePart, twoParts, threeParts, firstSlot, secondSlot, thirdSlot}) {
+function Bar({ id, left, center, right, onClick }) {
   return (
-      <BarLayout
-        id={id}
-        firstSlot={firstSlot}
-        onePart={onePart}
-        twoParts={twoParts}
-        threeParts={threeParts}
-        secondSlot={secondSlot}
-        thirdSlot={thirdSlot}
-      >
-          { onePart ? <Left>{firstSlot}</Left>: 
-          twoParts ? (
-            <Left>
-            {firstSlot}
-            </Left>
-          ) : threeParts ? (
-            <Left>
-            {firstSlot}
-            </Left>
-          ) : null}
-        { threeParts ? (
-          <Middle>
-            {secondSlot}
-            </Middle>
-          ) : null}
-        { onePart ? <Right>{secondSlot}</Right> :
-        threeParts ? (
-          <Right>
-          {thirdSlot}
-          </Right>
-        ) : twoParts ? (
-          <Right>
-          {secondSlot}
-          </Right>
-        ) : null}
-      </BarLayout>
+    <BarLayout id={id} onClick={onClick}>
+      {left ? <Slot>{left}</Slot> : null}
+      {center ? (
+        <Slot justifyContent={"center"} textAlign={"center"}>
+          {center}
+        </Slot>
+      ) : null}
+      {right ? (
+        <Slot justifyContent={"flex-end"} textAlign={"right"}>
+          {right}
+        </Slot>
+      ) : null}
+    </BarLayout>
   );
 }
 Bar.propTypes = {
   id: PropTypes.string,
-  onePart: PropTypes.bool,
-  twoParts: PropTypes.bool,
-  threeParts: PropTypes.bool,
-  firstSlot: PropTypes.any,
-  secondSlot: PropTypes.any,
-  thirdSlot: PropTypes.any
+  left: PropTypes.any,
+  center: PropTypes.any,
+  right: PropTypes.any,
+  onClick: PropTypes.func,
 };
 
 export default Bar;

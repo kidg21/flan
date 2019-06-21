@@ -48,7 +48,7 @@ const RadioLabel = styled.label`
   cursor: pointer;
 `
 
-function Radio({ id, name, label, value, error, disabled }) {
+function Radio({ id, name, label, value, error, onChange, checked, disabled }) {
   return (
     <RadioContainer
       disabled={disabled} // input attribute>
@@ -57,6 +57,8 @@ function Radio({ id, name, label, value, error, disabled }) {
       <RadioInput
         id={id}
         name={name}
+        onChange={onChange}
+        checked={checked}
         value={value}
         disabled={disabled}
         error={error} // input attribute>
@@ -73,7 +75,9 @@ Radio.propTypes = {
   label: PropTypes.string.isRequired,
   /** This is the Right nav command. */
   name: PropTypes.string.isRequired,
-  value: PropTypes.string
+  value: PropTypes.string,
+  onChange: PropTypes.func,
+  checked: PropTypes.bool
 }
 
 export { Radio as default }

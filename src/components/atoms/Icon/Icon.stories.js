@@ -14,10 +14,14 @@ import { Padding } from "helpers/Display";
 import Grid from "helpers/Grid";
 import styled, { css } from "styled-components";
 import { colors, shadows } from "Variables";
-import { Success } from "base/Typography";
 import Icon from "atoms/Icon";
 import IconBlock from "blocks/IconBlock";
 import IconNotes from "./Icon.md";
+
+const Success = styled.span`
+  color: ${colors.success};
+  font-weight: bold;
+`;
 
 const IconGrid = styled(Grid)`
   grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));

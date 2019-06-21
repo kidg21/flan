@@ -3,7 +3,8 @@ import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
 import CardAccordion from "./CardAccordion";
-import CardBar from "elements/CardBar/CardBar";
+import LayerCardBar from "elements/LayerCardBar";
+import InformationCardBar from "elements/InformationCardBar";
 import Table from "blocks/Table";
 import Checkbox from "atoms/Checkbox";
 import MapLegend from "blocks/MapLegend";
@@ -31,7 +32,7 @@ storiesOf("Elements|Card Accordion", module)
     React.createElement(() => {
       return (
         <CardAccordion
-          header={<CardBar info="true" title="Ownership" />}
+          header={<InformationCardBar title="Ownership" />}
           body={<Table />}
         />
       );
@@ -43,8 +44,7 @@ storiesOf("Elements|Card Accordion", module)
       return (
         <CardAccordion
           header={
-            <CardBar
-              layer="true"
+            <LayerCardBar
               title="Demographics"
               switchProps={{
                 checked: switchChecked,
@@ -69,8 +69,7 @@ storiesOf("Elements|Card Accordion", module)
       return (
         <CardAccordion
           header={
-            <CardBar
-              layer="true"
+            <LayerCardBar
               title="Demographics"
               switchProps={{
                 checked: switchChecked,
