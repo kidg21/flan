@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { fonts, colors, shadows } from "Variables";
-import { InputLabel, HelpText, ErrorText } from "../../layout/Form/Form";
+import { InputLabel, HelpText, ErrorText } from "layout/Form";
 import Select from "react-select";
 import {Lighten, Darken} from "helpers/Placeholders";
 
@@ -95,13 +95,7 @@ const selectStyles = {
   option: (styles, { isDisabled, isFocused, isSelected }) => {
     return {
       ...styles,
-      backgroundColor: isDisabled
-        ? null
-        : isSelected
-        ? null
-        : isFocused
-        ? null
-        : null,
+      backgroundColor: null,
       color: isDisabled
         ? colors.grey_40
         : isSelected

@@ -14,12 +14,12 @@ const GlobalStyles = createGlobalStyle`
 
     /* Import font resources */
     ${
-      "" /* @font-face {
+  "" /* @font-face {
         font-family: Lato;
         src: local("Lato");
         src: url(${Lato_700});
     } */
-    }
+}
 
     /* Document resets */
     html {
@@ -69,19 +69,21 @@ const GlobalStyles = createGlobalStyle`
 
     /* Default Link Styles */
     a {
-      color: ${colors.grey_40};
-      font-size: smaller;
-      font-weight: 400;
-      font-family: Arial;
+      color: ${colors.anchor};
+      line-height: inherit;
+      ${""}
+      ${""}
+      ${""}
       text-decoration: none;
       cursor: pointer;
 
-      &:hover {
+      &:hover,
+      &:focus {
         color: ${colors.anchor_light};
       }
-      &:focus {
+      ${"" /* &:focus {
         ${colors.grey_60};
-        }
+        } */}
       img { border: none; }
       }
 
@@ -104,33 +106,33 @@ const GlobalStyles = createGlobalStyle`
     }
     h1 {
         font-size: 2rem;
-        ${"" /* font-size: calc((${fontSize.base}) * 2); */}
-        ${"" /* line-height: 2.25rem; */}
+        ${""}
+        ${""}
         line-height: 2.4rem;
     }
     h2 {
         font-size: 1.5rem;
-        ${"" /* line-height: 2.25rem; */}
+        ${""}
         line-height: 2rem;
     }
     h3 {
         font-size: 1.3rem;
-        ${"" /* line-height: 2.25rem; */}
+        ${""}
         line-height: 1.8rem;
     }
     h4 {
         font-size: 1rem;
-        ${"" /* line-height: 1.5rem; */}
+        ${""}
         line-height: 1.4rem;
     }
     h5 {
         font-size: 0.9rem;
-        ${"" /* line-height: 1.5rem; */}
+        ${""}
         line-height: 1.3rem;
     }
     h6 {
         font-size: 0.8rem;
-        ${"" /* line-height: 1.5rem; */}
+        ${""}
         line-height: 1.2rem;
     }
     img, object {
@@ -186,6 +188,7 @@ const GlobalStyles = createGlobalStyle`
     input[type="time"],
     input[type="url"],
     input[type="color"],
+    input[type="range"],
     textarea,
     select {
         box-sizing: border-box;
@@ -196,7 +199,7 @@ const GlobalStyles = createGlobalStyle`
         border-radius: 5px;
         font-size: 12px;
         transition: border-color 0.1s linear, background 0.1s linear;
-        -webkit-appearance: none;
+        appearance: none;
         &:focus {
             outline: none;
         }
@@ -208,7 +211,15 @@ const GlobalStyles = createGlobalStyle`
             background-color: ${colors.grey_20};
         }
     }
-
+    input[type="checkbox"],
+    input[type="radio"] {
+        &[disabled],
+        &[readonly] {
+            cursor: not-allowed;
+            pointer-events: none;
+            user-select: none;
+        }
+    }
     `;
 
 export default GlobalStyles;

@@ -9,8 +9,7 @@ const TextareaContainer = styled.div`
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 0.35rem;
   align-content: flex-start;
-  color: ${props =>
-    props.error ? colors.alert : props.disabled ? colors.grey_40 : ""};
+  color: ${props => (props.error ? colors.alert : props.disabled ? colors.grey_40 : "")};
 `;
 const TextareaInput = styled.textarea`
   border: 1px solid ${colors.grey_20};
@@ -43,31 +42,32 @@ const TextareaInput = styled.textarea`
 function Textarea({
   id,
   inputLabel,
-  placeholder,
+  isRequired,
   pattern,
+  placeholder,
+  name,
+  type,
   value,
   helpText,
-  disabled,
-  isRequired,
   error,
-  errorText
+  disabled,
+  errorText,
 }) {
   return (
     <TextareaContainer
-      id={id} // input attribute
-      isRequired={isRequired}
+      id={id}
       disabled={disabled} // input attribute
+      helpText={helpText}
+      isRequired={isRequired}
       error={error}
     >
       <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
       <TextareaInput
-        id={id} // input attribute
-        name={id} // input attribute
+        name={name} // input attribute
+        type={type} // input attribute
+        value={value} // input attribute
         placeholder={placeholder} // input attribute
         pattern={pattern}
-        value={value} // input attribute
-        disabled={disabled}
-        error={error}
       />
       {/* Help Text */}
       {helpText ? <HelpText helpText={helpText} /> : null}
@@ -87,7 +87,7 @@ Textarea.propTypes = {
   disabled: PropTypes.bool,
   isRequired: PropTypes.bool,
   error: PropTypes.bool,
-  errorText: PropTypes.bool
+  errorText: PropTypes.bool,
 };
 
 export { Textarea as default };

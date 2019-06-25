@@ -1,59 +1,64 @@
-import React, { useState, Fragment } from "react";
-import styled from "styled-components";
-import { colors, shadows } from "Variables";
+import React from "react";
+import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
-import Legend, { Item } from "./Legend";
+import Form, {Section, SectionName, InputGroup } from 'layout/Form';
+
+
+const data = [
+  {id: 'a', color: 'red', name: 'Devin'},
+  {id: 'b', color: 'blue', name: 'Gabe'},
+  {id: 'c', color: 'green', name: 'Kim'},
+]
+
+const LI = styled.li`
+list-style: none;
+`
+
+const UL = styled.ul`
+display: flex;
+justify-content: space-between;
+`
+
+const Container = styled.div`
+width: 100wh;
+border: 1px solid #ddd;
+`
 
 
 
-function MapLegend () {
-      const [activeMultiTab, setActiveMultiTab] = useState(false);
-      const [activeMultiTab2, setActiveMultiTab2] = useState(false);
-      const [activeMultiTab3, setActiveMultiTab3] = useState(false);
-      return (
-        <Legend title="Map Legend">
-          <Item
-            name="water"
-            color="#CD5C5C"
-            isSelected={activeMultiTab}
-            onClick={() => {
-              setActiveMultiTab(!activeMultiTab);
-            }}
-          />
-          <Item
-            name="grass"
-            color="#FF9999"
-            isSelected={activeMultiTab2}
-            onClick={() => {
-              setActiveMultiTab2(!activeMultiTab2);
-            }}
-          />
-          <Item
-            name="sun"
-            color="#E9967A"
-            isSelected={activeMultiTab3}
-            onClick={() => {
-              setActiveMultiTab3(!activeMultiTab3);
-            }}
-          />
-          <Item
-            name="s4"
-            color="#E9967A"
-            isSelected={activeMultiTab3}
-            onClick={() => {
-              setActiveMultiTab3(!activeMultiTab3);
-            }}
-          />
-          <Item
-            name="s5"
-            color="#FFA07A"
-            isSelected={activeMultiTab3}
-            onClick={() => {
-              setActiveMultiTab3(!activeMultiTab3);
-            }}
-          />
-        </Legend>
-      )
-          };
 
-          export default MapLegend;
+function MapLegend() {
+  return (
+    <Form>
+      <Section>
+        <SectionName>Hello</SectionName>
+        <UL>
+          {data.map(item => <LI key={item.id}>
+          {item.color} {item.name} </LI>)}
+        </UL>
+      </Section>
+    </Form>
+  
+  );
+}
+
+export default MapLegend;
+
+
+
+
+ // <Legend>
+     
+    //   <MyLegendLegendScale>
+    //     <LegendLabels style={{ background: "#CD5C5C" }} />
+    //     <LegendText>One</LegendText>
+    //     <LegendLabels style={{ background: "#FF9999" }} />
+    //     <LegendText>Two</LegendText>
+    //     <LegendLabels style={{ background: "#FA8072" }} />
+    //     <LegendText>Three</LegendText>
+    //     <LegendLabels style={{ background: "#E9967A" }} />
+    //     <LegendText>Four</LegendText>
+    //     <LegendLabels style={{ background: "#FFA07A" }} />
+    //     <LegendText>Five</LegendText>
+    //   </MyLegendLegendScale>
+    // </Legend>

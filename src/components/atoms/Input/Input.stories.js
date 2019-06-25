@@ -1,8 +1,8 @@
-import React from "react"
-import { storiesOf } from "@storybook/react"
+import React from "react";
+import { storiesOf } from "@storybook/react";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { Padding } from "helpers/Display"
-import { withInfo } from "@storybook/addon-info"
+import { Padding } from "helpers/Display";
+import { withInfo } from "@storybook/addon-info";
 import {
   withKnobs,
   text,
@@ -10,12 +10,12 @@ import {
   radios,
   select,
   number
-} from "@storybook/addon-knobs"
-import Panel, { PanelSection } from "../../layout/Panel/Panel"
-import Form, { Section, SectionName } from "../../layout/Form/Form"
-import Icon from "atoms/Icon"
-import Input from "atoms/Input"
-import InputNotes from "./Input.md"
+} from "@storybook/addon-knobs";
+import Panel, { PanelSection } from "../../layout/Panel/Panel";
+import Form, { Section, SectionName } from "../../layout/Form/Form";
+import Icon from "atoms/Icon";
+import Input from "atoms/Input";
+import InputNotes from "./Input.md";
 
 // Input ( Standard )
 storiesOf("Atoms|Input", module)
@@ -238,7 +238,7 @@ storiesOf("Atoms|Input", module)
       ]}
       helpText="This help text has been passed through a prop!"
     />
-  ))
+  ));
 // Input ( The Input Family )
 storiesOf("Atoms|Input", module).add("The Input Family", props => (
   <Panel>
@@ -363,4 +363,4 @@ storiesOf("Atoms|Input", module).add("The Input Family", props => (
       </Form>
     </PanelSection>
   </Panel>
-))
+));

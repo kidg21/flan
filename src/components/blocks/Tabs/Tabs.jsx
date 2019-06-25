@@ -7,14 +7,10 @@ import Button from "atoms/Button";
 const TabsWrapper = styled.section`
   position: ${props => props.setPosition || ""};
   display: ${props => props.setOrientation || "grid"};
-  grid-gap: ${props => (props.isRounded ? "" : props.isSearch ? "" : "2px")};
-  grid-template-columns: ${props =>
-    props.setColumns || "repeat(auto-fit, minmax(0, 1fr))"};
+  grid-gap: ${props => (props.isSearch ? "" : "2px")};
+  grid-template-columns: ${props => props.setColumns || "repeat(auto-fit, minmax(0, 1fr))"};
   flex-direction: column;
   bottom: ${props => props.alignBottom || ""};
-  border: ${props => (props.isRounded ? "1px solid" : "")};
-  border-color: ${props => (props.isRounded ? colors.anchor : "")};
-  border-radius: ${props => (props.isRounded ? "2rem" : "")};
   right: ${props => (props.alignRight ? "0" : "")};
   width: ${props => props.setWidth || "100%"};
   height: ${props => props.setHeight || ""};
@@ -22,30 +18,12 @@ const TabsWrapper = styled.section`
   z-index: ${props => (props.isFloating ? "1001" : "")};
   filter: ${props => (props.isFloating ? shadows.cardShadow : "")};
   > * {
-    flex: auto;
     margin: ${props => (props.isFloating ? ".5rem" : "")};
     border-radius: ${props => (props.isFloating ? ".5rem" : "0")};
-    &:nth-child(1) {
-      border-top-left-radius: ${props => (props.isRounded ? "2rem" : "")};
-      border-bottom-left-radius: ${props => (props.isRounded ? "2rem" : "")};
-    
-    }
-    &:last-child {
-      border-top-right-radius: ${props => (props.isRounded ? "2rem" : "")};
-      border-bottom-right-radius: ${props => (props.isRounded ? "2rem" : "")};
-    }
+  }
 `;
 
-function Tabs({
-  id,
-  children,
-  columns,
-  align,
-  isFloating,
-  isRounded,
-  style,
-  isSearch
-}) {
+function Tabs({ id, children, columns, align, isFloating, style, isSearch }) {
   let setColumns;
   let setPosition;
   let setWidth;
@@ -102,7 +80,6 @@ function Tabs({
   return (
     <TabsWrapper
       id={id}
-      isRounded={isRounded}
       setColumns={setColumns}
       setPosition={setPosition}
       setWidth={setWidth}
@@ -119,15 +96,7 @@ function Tabs({
   );
 }
 
-function Tab({
-  id,
-  icon,
-  tabLabel,
-  onClick,
-  isSelected,
-  halfSize,
-  isDisabled
-}) {
+function Tab({ id, icon, tabLabel, onClick, isSelected, halfSize, isDisabled }) {
   return (
     <Fragment>
       {isSelected ? (
@@ -139,8 +108,19 @@ function Tab({
           onClick={onClick}
           isSelected={isSelected}
           isDisabled={isDisabled}
-          isSolid={true}
-          // isSecondary={true}
+          type="solid"
+          color="success"
+        />
+      ) : isDisabled ? (
+        <Button
+          id={id}
+          halfSize={halfSize}
+          icon={icon}
+          buttonLabel={tabLabel}
+          onClick={onClick}
+          isSelected={isSelected}
+          isDisabled={isDisabled}
+          type="disabled"
         />
       ) : (
         <Button
@@ -165,7 +145,6 @@ Tabs.propTypes = {
   isFloating: PropTypes.bool,
   isSearch: PropTypes.bool,
   style: PropTypes.string,
-  isRounded: PropTypes.bool
 };
 
 Tab.propTypes = {
@@ -175,7 +154,7 @@ Tab.propTypes = {
   halfSize: PropTypes.bool,
   onClick: PropTypes.func.isRequired,
   isSelected: PropTypes.bool,
-  isDisabled: PropTypes.bool
+  isDisabled: PropTypes.bool,
 };
 
 export { Tabs as default, Tab };

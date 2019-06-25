@@ -14,10 +14,14 @@ import { Padding } from "helpers/Display";
 import Grid from "helpers/Grid";
 import styled, { css } from "styled-components";
 import { colors, shadows } from "Variables";
-import { Success } from "base/Typography";
 import Icon from "atoms/Icon";
 import IconBlock from "blocks/IconBlock";
 import IconNotes from "./Icon.md";
+
+const Success = styled.span`
+  color: ${colors.success};
+  font-weight: bold;
+`;
 
 const IconGrid = styled(Grid)`
   grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
@@ -53,8 +57,6 @@ const StaticIcon = styled.li`
   align-content: flex-start;
   align-items: center;
   justify-items: center;
-  background-color: ${props => (props.inverse ? colors.black : "")};
-  color: ${props => (props.inverse ? colors.white : "")};
   transition: all 0.15s ease;
   > svg {
     margin: 0.5rem 0;
@@ -122,24 +124,24 @@ storiesOf("Atoms|Icon", module)
         <IconLabel>standard</IconLabel>
       </StaticIcon>
       <StaticIcon>
-        <Icon icon="coffee" anchor />
-        <IconLabel>anchor</IconLabel>
+        <Icon icon="coffee" type="info" />
+        <IconLabel>info</IconLabel>
       </StaticIcon>
       <StaticIcon>
-        <Icon icon="coffee" success />
+        <Icon icon="coffee" type="success" />
         <IconLabel>success</IconLabel>
       </StaticIcon>
       <StaticIcon>
-        <Icon icon="coffee" warning />
+        <Icon icon="coffee" type="warning" />
         <IconLabel>warning</IconLabel>
       </StaticIcon>
       <StaticIcon>
-        <Icon icon="coffee" alert />
+        <Icon icon="coffee" type="alert" />
         <IconLabel>alert</IconLabel>
       </StaticIcon>
-      <StaticIcon inverse>
-        <Icon icon="coffee" />
-        <IconLabel>inverse</IconLabel>
+      <StaticIcon style={{ backgroundColor: "black" }}>
+        <Icon icon="coffee" type="inverse" />
+        <IconLabel style={{ color: "white" }}>inverse</IconLabel>
       </StaticIcon>
     </IconGrid>
   ))

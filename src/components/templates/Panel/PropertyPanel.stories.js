@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
-import PanelHeader from "elements/PanelHeader";
+import PropertyPanelHeader from "elements/PropertyPanelHeader";
 import Table from "blocks/Table";
-import CardBar from "elements/CardBar";
+import InformationCardBar from "elements/InformationCardBar";
 import Accordion from "blocks/Accordion";
 import Panel, { PanelSection } from "layout/Panel";
 
@@ -17,15 +17,12 @@ storiesOf("Templates|Panel", module).add("Property Panel", () =>
     return (
       <Panel>
         <PanelSection>
-          <PanelHeader
-            title="5201 California Ave. Irvine, California"
-            property="true"
-          />
+          <PropertyPanelHeader title="5201 California Ave. Irvine, California" />
         </PanelSection>
         <PanelSection body>
           <Table />
           <Accordion
-            header={<CardBar title="Ownership" info={true} />}
+            header={<InformationCardBar title="Ownership" />}
             visibility={visibility}
             onClick={() => {
               setVisibility(!visibility);
@@ -34,7 +31,7 @@ storiesOf("Templates|Panel", module).add("Property Panel", () =>
             <Table />
           </Accordion>
           <Accordion
-            header={<CardBar title="Site Information" info={true} />}
+            header={<InformationCardBar title="Site Information" />}
             visibility={visibility2}
             onClick={() => {
               setVisibility2(!visibility2);
@@ -44,7 +41,7 @@ storiesOf("Templates|Panel", module).add("Property Panel", () =>
           </Accordion>
 
           <Accordion
-            header={<CardBar title="Property Characteristics" info={true} />}
+            header={<InformationCardBar title="Property Characteristics" />}
             visibility={visibility3}
             onClick={() => {
               setVisibility3(!visibility3);
@@ -54,7 +51,7 @@ storiesOf("Templates|Panel", module).add("Property Panel", () =>
           </Accordion>
 
           <Accordion
-            header={<CardBar title="Value and Tax" info={true} />}
+            header={<InformationCardBar title="Value and Tax" />}
             visibility={visibility4}
             onClick={() => {
               setVisibility4(!visibility4);
@@ -64,7 +61,7 @@ storiesOf("Templates|Panel", module).add("Property Panel", () =>
           </Accordion>
 
           <Accordion
-            header={<CardBar title="Last Market Sale" info={true} />}
+            header={<InformationCardBar title="Last Market Sale" />}
             visibility={visibility5}
             onClick={() => {
               setVisibility5(!visibility5);
@@ -74,7 +71,7 @@ storiesOf("Templates|Panel", module).add("Property Panel", () =>
           </Accordion>
 
           <Accordion
-            header={<CardBar title="Site Views" info={true} />}
+            header={<InformationCardBar title="Site Views" />}
             visibility={visibility6}
             onClick={() => {
               setVisibility6(!visibility6);
