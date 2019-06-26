@@ -1,8 +1,7 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { colors, shadows } from "Variables";
-import {Lighten, Darken} from "helpers/Placeholders";
+import { colors, shadows, Lighten, Darken } from "Variables";
 
 
 const LegendText = styled.li`
@@ -42,7 +41,7 @@ const Item = styled.button`
         font-weight: bold;
     }
   }
-  &[disabled] {
+  &:disabled {
     color: ${colors.grey_40};
     background-color: ${colors.grey_light};
     border-color: ${colors.grey_40};

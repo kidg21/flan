@@ -94,7 +94,6 @@ storiesOf("Layout|Modal", module)
               {
                 default: "default",
                 text: "text",
-                status: "status",
                 image: "image"
               },
               "default",
@@ -110,7 +109,7 @@ storiesOf("Layout|Modal", module)
             align={options(
               "Alignment",
               {
-                "default to type": "default",
+                "default by type": "default",
                 top: "top",
                 center: "center",
                 bottom: "bottom"
@@ -220,49 +219,6 @@ storiesOf("Layout|Modal", module)
             <PanelSection body>
               <Button
                 buttonLabel="Text Modal"
-                onClick={handleOpen}
-                style={buttonStyle}
-              />
-            </PanelSection>
-          </Panel>
-        </Fragment>
-      );
-    })
-  )
-  .add("Status Modal", () =>
-    React.createElement(() => {
-      const [visible, setVisible] = useState(false);
-      const [transition, setTransition] = useState(true);
-      const handleOpen = event => {
-        setVisible(true);
-        setTransition(true);
-      };
-      const handleClose = event => {
-        setTransition(false);
-        setTimeout(() => {
-          setVisible(false);
-        }, 500);
-      };
-      const buttonStyle = { margin: "10vh 30vw" };
-      return (
-        <Fragment>
-          <Modal
-            type="status"
-            visible={visible}
-            onClose={handleClose}
-            opacity={transition}
-            scale={transition}
-            position={transition}
-          >
-            <Banner
-              title="This is a Standard notification telling you stuff."
-              onClose={handleClose}
-            />
-          </Modal>
-          <Panel>
-            <PanelSection body>
-              <Button
-                buttonLabel="Status Modal"
                 onClick={handleOpen}
                 style={buttonStyle}
               />

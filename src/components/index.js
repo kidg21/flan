@@ -29,6 +29,9 @@ export { default as NavBlock } from "./blocks/NavBlock";
 export { default as Table } from "./blocks/Table";
 export { default as Tabs } from "./blocks/Tabs";
 
+// Publicly exported files from 'elements'
+export { default as Notification } from "./elements/Notification";
+
 // Publicly exported files from 'layout'
 export { default as Card, CardList } from "./layout/Card";
 export {
