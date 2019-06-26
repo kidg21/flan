@@ -2,7 +2,7 @@
   "name": "ss-styled-components",
   "version": "1.0.0",
   "description": "Repository containing our Styled-Component React widgets",
-  "main": "component-index.js",
+  "main": "Styled-Components.js",
   "scripts": {
     "storybook": "start-storybook -p 9009 -c .storybook",
     "build-storybook": "build-storybook -c .storybook -o .out",
@@ -13,12 +13,6 @@
     "type": "git",
     "url": "git+ssh://git@bitbucket.org/DigMap/sstream-styled-components.git"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
     "@fortawesome/free-brands-svg-icons": "^5.8.1",
