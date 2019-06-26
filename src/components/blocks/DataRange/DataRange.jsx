@@ -22,7 +22,7 @@ margin-bottom: .5rem;
 const Space = styled.div`
 width: 1em;
 `
-const DIV = styled.div`
+const Div = styled.div`
 display:flex;
 align-items: bottom;
 align-text: bottom;
@@ -37,11 +37,11 @@ margin: auto;
 `
 
 const Dash = () => (
-    <DIV>
+    <Div>
     <Space/>
     <Line>-</Line>
     <Space/>
-    </DIV>
+    </Div>
   );
 
 
