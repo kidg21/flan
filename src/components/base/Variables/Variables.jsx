@@ -1,4 +1,5 @@
-import styled, { css } from "styled-components";
+import { css } from "styled-components";
+
 
 // Codes for color palette
 export const colors = {
@@ -36,13 +37,12 @@ export const colors = {
 };
 
 
-
 export const Darken = css`
-  filter: brightness(85%) contrast(150%);
-  `;
+  filter: brightness(85%)
+`;
 
 export const Lighten = css`
-filter: brightness(105%)
+  filter: brightness(105%)
 `;
 
 // Typefaces

@@ -96,13 +96,7 @@ const selectStyles = {
   option: (styles, { isDisabled, isFocused, isSelected }) => {
     return {
       ...styles,
-      backgroundColor: isDisabled
-        ? null
-        : isSelected
-        ? null
-        : isFocused
-        ? null
-        : null,
+      backgroundColor: null,
       color: isDisabled
         ? colors.grey_40
         : isSelected

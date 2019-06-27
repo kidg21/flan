@@ -5,21 +5,17 @@ import Card, {Piece} from "layout/Card/Card";
 import Accordion from "blocks/Accordion";
 
 
-function CardAccordion({id, header, body, options, hasOptions}) {
-  const [activeAccordion, setActiveAccordion] = useState('');
+
+
+function CardAccordion({id, header, body, options, hasOptions, initial}) {
+  const [activeAccordion, setActiveAccordion] = useState(initial);
   return (
     <Accordion
     id={id}
     header={header}
-    visibility={activeAccordion === 'accordion1'}
+    visibility={activeAccordion}
     onClick={() => {
-      if (activeAccordion === 'accordion1') {
-        setActiveAccordion('');
-      } else {
-        setActiveAccordion('accordion1');
-      }
-      return false;
-    }}
+      setActiveAccordion(!activeAccordion);}}
   >
     <Piece>
     {body}
@@ -34,6 +30,7 @@ function CardAccordion({id, header, body, options, hasOptions}) {
     header: PropTypes.any,
     body: PropTypes.any,
     hasOptions: PropTypes.bool,
-    options: PropTypes.any
+    options: PropTypes.any,
+    initial: PropTypes.bool
   };
       export default CardAccordion;

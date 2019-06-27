@@ -119,6 +119,9 @@ storiesOf("Atoms|SelectMenu", module)
       helpText="Help text for the SelectMenu component"
       options={options}
     />
+  ))
+  .add("Searchable", () => (
+    <SelectMenu isSearchable={true} placeholder="Search" options={options} />
   ));
 
 // SelectMenu (The SelectMenu Family)

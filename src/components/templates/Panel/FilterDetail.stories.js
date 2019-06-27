@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import Grid from "helpers/Grid";
-import PanelHeader from "elements/PanelHeader";
+import NavigationPanelHeader from "elements/NavigationPanelHeader";
 // import Card, { CardList } from "layout/Card";
 import Panel, { PanelSection } from "layout/Panel";
 import DataRange from "blocks/DataRange";
@@ -15,7 +15,7 @@ import Form, {
 } from "layout/Form";
 import Checkbox from "../../atoms/Checkbox/Checkbox";
 import Command from "atoms/Command";
-import Input from "atoms/Input";
+import TextInput from "atoms/TextInput";
 import Radio from "atoms/Radio";
 import Slider from "atoms/Slider";
 import RangeSlider from "blocks/RangeSlider";
@@ -158,11 +158,11 @@ storiesOf("Templates|Panel/Property Filters", module)
       return (
         <Panel>
           <PanelSection>
-            <PanelHeader title="Last Market Sale" navigation={true} />
+            <NavigationPanelHeader title="Last Market Sale" />
           </PanelSection>
           <PanelSection body>
             <Form>
-              <Bar onePart={true} secondSlot={<a> Reset </a>} />
+              <Bar type="one" right={<a> Reset </a>} />
               {/* <Label right grey content="Reset" /> */}
               <Section>
                 <InputLabel inputLabel="Last Sale Date" />
@@ -225,11 +225,11 @@ storiesOf("Templates|Panel/Property Filters", module)
       return (
         <Panel>
           <PanelSection>
-            <PanelHeader title="Characteristics" navigation={true} />
+            <NavigationPanelHeader title="Characteristics" />
           </PanelSection>
           <PanelSection body>
             <Form>
-              <Bar onePart={true} secondSlot={<a> Reset </a>} />
+              <Bar type="one" right={<a> Reset </a>} />
               <Section>
                 <RangeSlider label="Year Built" />
                 <RangeSlider label="Number of Units" />
@@ -336,11 +336,11 @@ storiesOf("Templates|Panel/Property Filters", module)
       return (
         <Panel>
           <PanelSection>
-            <PanelHeader title="Aggregate Property" navigation={true} />
+            <NavigationPanelHeader title="Aggregate Property" />
           </PanelSection>
           <PanelSection body>
             <Form>
-              <Bar onePart={true} secondSlot={<a> Reset </a>} />
+              <Bar type="one" right={<a> Reset </a>} />
               <Section>
                 <RangeSlider label="Aggregate Acreage" />
                 <RangeSlider label="Aggregate Lot Count" />
@@ -383,11 +383,11 @@ storiesOf("Templates|Panel/Property Filters", module)
       return (
         <Panel>
           <PanelSection>
-            <PanelHeader title="Property Value" navigation={true} />
+            <NavigationPanelHeader title="Property Value" />
           </PanelSection>
           <PanelSection body>
             <Form>
-              <Bar onePart={true} secondSlot={<a> Reset </a>} />
+              <Bar type="one" right={<a> Reset </a>} />
               <Section>
                 <RangeSlider label="Assessed Value" />
                 <RangeSlider label="Improvement Percentage" />
@@ -417,11 +417,11 @@ storiesOf("Templates|Panel/Property Filters", module)
       return (
         <Panel>
           <PanelSection>
-            <PanelHeader title="Location" navigation={true} />
+            <NavigationPanelHeader title="Location" />
           </PanelSection>
           <PanelSection body>
             <Form>
-              <Bar onePart={true} secondSlot={<a> Reset </a>} />
+              <Bar type="one" right={<a> Reset </a>} />
               <Section>
                 <Input
                   inputLabel="Street Name"
@@ -468,11 +468,11 @@ storiesOf("Templates|Panel/Property Filters", module)
       return (
         <Panel>
           <PanelSection>
-            <PanelHeader title="Land Use" navigation={true} />
+            <NavigationPanelHeader title="Land Use" />
           </PanelSection>
           <PanelSection body>
             <Form>
-              <Bar onePart={true} secondSlot={<a> Reset </a>} />
+              <Bar type="one" right={<a> Reset </a>} />
               <Section>
                 <SectionName>Commercial</SectionName>
                 <InputGroup col_2>

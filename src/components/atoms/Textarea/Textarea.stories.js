@@ -1,7 +1,7 @@
-import React from "react"
-import { storiesOf } from "@storybook/react"
-import { Padding } from "helpers/Display"
-import { withInfo } from "@storybook/addon-info"
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import { Padding } from "helpers/Display";
+import { withInfo } from "@storybook/addon-info";
 import {
   withKnobs,
   text,
@@ -9,11 +9,11 @@ import {
   radios,
   select,
   number
-} from "@storybook/addon-knobs"
-import Panel, { PanelSection } from "layout/Panel"
-import Form, { Section, SectionName, InputGroup } from "layout/Form"
-import Textarea from "atoms/Textarea"
-import TextareaNotes from "./Textarea.md"
+} from "@storybook/addon-knobs";
+import Panel, { PanelSection } from "layout/Panel";
+import Form, { Section, SectionName, InputGroup } from "layout/Form";
+import Textarea from "atoms/Textarea";
+import TextareaNotes from "./Textarea.md";
 
 // Input ( Standard )
 storiesOf("Atoms|Textarea", module)
@@ -75,7 +75,7 @@ storiesOf("Atoms|Textarea", module)
       error={true}
       errorText="This error text has been passed through a prop!"
     />
-  ))
+  ));
 
 // Textarea ( The Textarea Family )
 storiesOf("Atoms|Textarea", module).add("The Textarea Family", props => (
@@ -107,4 +107,4 @@ storiesOf("Atoms|Textarea", module).add("The Textarea Family", props => (
       </Form>
     </PanelSection>
   </Panel>
-))
+));

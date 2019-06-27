@@ -33,83 +33,90 @@ storiesOf("Atoms|Button", module)
     "Documentation",
     withInfo()(() => <Button buttonLabel="Standard Button" />)
   )
-  .add("Standard Button", () => <Button buttonLabel="Standard Button" />)
-  .add("Primary Button", () => (
-    <Button buttonLabel="Primary Button" buttonPrimary={true} />
-  ))
-  .add("Secondary Button", () => (
-    <Button buttonLabel="Secondary Button" buttonSecondary={true} />
-  ))
-  .add("Icon Button", () => (
-    <Button buttonLabel="Icon Button" icon={["fas", "user"]} />
-  ))
-  .add("Round Button", () => (
-    <Button buttonLabel="Round Button" isRound={true} />
-  ))
-  .add("Floating Button", () => (
-    <Button buttonLabel="Floating Button" isFloating={true} />
-  ))
-  .add("Disabled Button", () => (
-    <Button buttonLabel="Disabled Button" isDisabled={true} />
+
+  .add("Knobs", () => (
+    <Button
+      icon={select(
+        "icon",
+        {
+          "no icon": null,
+          user: "user",
+          "angle down": ["far", "angle-down"],
+          bookmark: ["far", "bookmark"],
+          plus: "plus",
+          print: "print"
+        },
+        null,
+        "Button"
+      )}
+      buttonLabel={text("button label", "Button Label", "Button")}
+      color={options(
+        "color",
+        {
+          "anchor ( default )": "default",
+          success: "success",
+          warning: "warning",
+          alert: "alert"
+        },
+        "default",
+        { display: "radio" },
+        "Button"
+      )}
+      type={options(
+        "type",
+        {
+          "outline ( default )": "default",
+          solid: "solid",
+          disabled: "disabled"
+        },
+        "default",
+        { display: "radio" },
+        "Button"
+      )}
+      size={options(
+        "size",
+        {
+          small: "small",
+          "medium ( default )": "default",
+          large: "large"
+        },
+        "default",
+        { display: "radio" },
+        "Button"
+      )}
+      fullWidth={boolean("full width", false, "Button")}
+    />
   ))
   .add("The Button Family", () => (
     <>
       <Grid>
         <Button buttonLabel="Standard Button" />
-        <Button buttonLabel="Standard Secondary" isSecondary={true} />
-        <Button buttonLabel="Standard Solid" isSolid={true} />
+        <Button buttonLabel="Solid Button" type="solid" />
+        <Button buttonLabel="Success Button" color="success" />
         <Button
-          buttonLabel="Secondary Solid"
-          isSolid={true}
-          isSecondary={true}
+          buttonLabel="Solid Success Button"
+          type="solid"
+          color="success"
         />
-        <Button buttonLabel="Standard Round" isRound={true} />
+        <Button buttonLabel="Warning Button" color="warning" />
         <Button
-          buttonLabel="Secondary Round"
-          isRound={true}
-          isSecondary={true}
+          buttonLabel="Solid Warning Button"
+          type="solid"
+          color="warning"
         />
+        <Button buttonLabel="Alert Button" color="alert" />
+        <Button buttonLabel="Solid Alert Button" type="solid" color="alert" />
+        <Button buttonLabel="Small Button" size="small" />
+        <Button buttonLabel="Large Button" size="large" />
+        <Button buttonLabel="Disabled Button" type="disabled" />
         <Button buttonLabel="Icon Button" icon={["fas", "user"]} />
-        <Button buttonLabel="Floating Button" isFloating={true} />
-        <Button buttonLabel="Disabled Button" isDisabled={true} />
-      </Grid>
-      <br />
-      <Grid alignLeft={true}>
-        <Button buttonLabel="Left-Aligned" />
-      </Grid>
-      <br />
-      <Grid alignCenter={true}>
-        <Button buttonLabel="Center-Aligned" />
-      </Grid>
-      <br />
-      <Grid alignRight={true}>
-        <Button buttonLabel="Right-Aligned" />
-      </Grid>
-      <br />
-      <Grid col_2>
-        <Button buttonLabel="Two Column" />
-        <Button buttonLabel="Button Grid" />
-      </Grid>
-      <br />
-      <Grid col_3>
-        <Button buttonLabel="Three Column" />
-        <Button buttonLabel="Button" />
-        <Button buttonLabel="Grid" />
-      </Grid>
-      <br />
-      <Grid col_4>
-        <Button buttonLabel="Four" />
-        <Button buttonLabel="Column" />
-        <Button buttonLabel="Button" />
-        <Button buttonLabel="Grid" />
-      </Grid>
-      <br />
-      <Grid col_5>
-        <Button buttonLabel="Five" />
-        <Button buttonLabel="Column" />
-        <Button icon="plus" buttonLabel="Hit Me!" isSecondary={true} />
-        <Button buttonLabel="Button" />
-        <Button buttonLabel="Grid" />
+        <Button
+          buttonLabel="Large / Alert / Icon Button"
+          icon={["fas", "user"]}
+          size="large"
+          type="solid"
+          color="alert"
+        />
       </Grid>
     </>
   ));
