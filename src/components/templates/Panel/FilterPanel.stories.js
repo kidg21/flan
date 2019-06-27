@@ -30,7 +30,7 @@ storiesOf("Templates|Panel", module)
           </PanelSection>
         </Panel>
       );
-    })
+    }),
   )
 
   .add("Filter-2nd Panel", () =>
@@ -52,5 +52,5 @@ storiesOf("Templates|Panel", module)
           </PanelSection>
         </Panel>
       );
-    })
+    }),
   );

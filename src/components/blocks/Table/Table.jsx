@@ -2,8 +2,11 @@ import React from "react"
 import styled, { css } from "styled-components"
 import PropTypes from "prop-types"
 
+
 const TableWrapper = styled.table`
   overflow: hidden;
+  cursor: default;
+  margin: .5em;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
   border-collapse: collapse;
@@ -18,8 +21,8 @@ const Row = styled.tr`
   }
 `;
 const Cell = styled.td`
-  padding: 0.5em 1em 0.5em;
-  font-size: 0.860rem;
+  padding: 0.5em 0.5em 0.5em;
+  font-size: small;
 
   &:first-child {
     color: #83a3c2;
@@ -32,36 +35,23 @@ const Cell = styled.td`
 
 
 
-const data = [
-  {id: 'a', color: 'red', name: 'Devin'},
-  {id: 'b', color: 'blue', name: 'Gabe'},
-  {id: 'c', color: 'green', name: 'Kim'},
-]
-
-
-
-function Table() {
+function Table({id, data}) {
   return (
-    <TableWrapper>
-      <Row>
-        <Cell>Address</Cell>
-        <Cell>Row one, second cell</Cell>
-      </Row>
-      <Row>
-      <Cell>Address</Cell>
-        <Cell>Row one, second cell</Cell>
-      </Row>
-      <Row>
-        <Cell>Address</Cell>
-        <Cell>Row one, second cell</Cell>
-      </Row>
-      <Row>
-      <Cell>Address</Cell>
-        <Cell>Row one, second cell</Cell>
-      </Row>
+    <TableWrapper
+    id={id}>
+    {data.map(item => 
+    <Row key={item.id}>
+    <Cell>{item.color}</Cell> <Cell>{item.name}</Cell> 
+    </Row>)}
     </TableWrapper>
-  )
-};
+
+ );
+}
+
+Table.propTypes = {
+  id: PropTypes.string,
+  data: PropTypes.any.isRequired};
+
 
 export default Table;
 

@@ -71,9 +71,9 @@ const GlobalStyles = createGlobalStyle`
     a {
       color: ${colors.anchor};
       line-height: inherit;
-      ${'' /* font-size: smaller; */}
-      ${'' /* font-weight: 400; */}
-      ${'' /* font-family: Arial; */}
+      ${""}
+      ${""}
+      ${""}
       text-decoration: none;
       cursor: pointer;
 
@@ -81,7 +81,7 @@ const GlobalStyles = createGlobalStyle`
       &:focus {
         color: ${colors.anchor_light};
       }
-      ${'' /* &:focus {
+      ${"" /* &:focus {
         ${colors.grey_60};
         } */}
       img { border: none; }
@@ -134,6 +134,9 @@ const GlobalStyles = createGlobalStyle`
         font-size: 0.8rem;
         ${""}
         line-height: 1.2rem;
+    }
+    img, object {
+        width: 100%;
     }
     code {
         font-family: ${fonts.data};

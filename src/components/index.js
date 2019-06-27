@@ -30,6 +30,7 @@ export { default as Table } from "./blocks/Table";
 export { default as Tabs } from "./blocks/Tabs";
 
 // Publicly exported files from 'elements'
+export { default as Notification } from "./elements/Notification";
 export { default as CardAccordion } from "./elements/CardAccordion";
 export { default as InformationCardBar } from "./elements/InformationCardBar";
 export { default as LayerCardBar } from "./elements/LayerCardBar";
@@ -55,5 +56,6 @@ export {
   InputGroup,
 } from "./layout/Form";
 export { default as Layout } from "./layout/Layout";
+export { default as Modal } from "./layout/Modal";
 export { default as Page } from "./layout/Page";
 export { default as Panel, PanelSection } from "./layout/Panel";

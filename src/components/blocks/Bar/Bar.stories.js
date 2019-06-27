@@ -12,7 +12,7 @@ import {
   button,
   array,
   object,
-  optionsKnob as options
+  optionsKnob as options,
 } from "@storybook/addon-knobs";
 import { colors } from "Variables";
 import { Padding } from "helpers/Display";
@@ -46,9 +46,7 @@ const image = (
   />
 );
 const shortTitle = <Title>A Standard Title</Title>;
-const longTitle = (
-  <Title>A Title So Long That It May Take Up Multiple Lines</Title>
-);
+const longTitle = <Title>A Title So Long That It May Take Up Multiple Lines</Title>;
 const multipleLines = (
   <Grid col_1>
     <Title>Towgood, Gary T.</Title>
@@ -60,11 +58,11 @@ storiesOf("Blocks|Bar", module)
   .addParameters({
     info: {
       text:
-        "The 'Bar' is a Flexbox-based component that is comprised of three flexible sections that evenly distribute the available space. The 'left', 'center', and 'right' props control the alignment of the content in each."
+        "The 'Bar' is a Flexbox-based component that is comprised of three flexible sections that evenly distribute the available space. The 'left', 'center', and 'right' props control the alignment of the content in each.",
     },
     notes: {
-      markdown: BarNotes
-    }
+      markdown: BarNotes,
+    },
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
@@ -78,7 +76,7 @@ storiesOf("Blocks|Bar", module)
           right={<Title>Right</Title>}
         />
       </Card>
-    ))
+    )),
   )
 
   .add("Some Bars", () => (

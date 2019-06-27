@@ -3,7 +3,8 @@ import styled, { css } from "styled-components";
 import TextInput from "atoms/TextInput";
 import Slider from "atoms/Slider";
 import PropTypes from "prop-types";
-import { colors, shadows } from "Variables";
+// import Label from "atoms/Label";
+import { colors, shadows, Lighten, Darken  } from "Variables";
 import { InputLabel } from "layout/Form";
 
 const SliderInput = styled(TextInput)`

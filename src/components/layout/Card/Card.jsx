@@ -23,6 +23,7 @@ const CardPiece = styled.div`
 const CardWrapper = styled(CardPiece)`
   position: relative;
   filter: ${shadows.cardShadow};
+  /* box-shadow: ${shadows.dropShadow}; */
   /* Square off rounded edges of any direct children of Cards */
   > * {
     border-radius: 0;

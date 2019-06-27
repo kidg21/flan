@@ -64,7 +64,8 @@ function Button({
   size,
   fullWidth,
   isDisabled,
-  onClick
+  onClick,
+  style,
 }) {
   let buttonColor;
   let textColor;
@@ -141,7 +142,7 @@ Button.propTypes = {
   size: PropTypes.oneOf(["small", "large"]),
   fullWidth: PropTypes.bool,
   isDisabled: PropTypes.bool,
-  onClick: PropTypes.func.isRequired
+  onClick: PropTypes.func.isRequired,
 };
 
 export { Button as default };

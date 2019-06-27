@@ -12,11 +12,8 @@ const Container = styled.div`
 `;
 
 const Menu = styled.ul`
-  background: ${colors.white};
-  border: 0.5px solid #ddd;
-  list-style: none;
+  background: rgba(0, 0, 0, 0.8);
   border-radius: 3px;
-  padding: 0.25em;
   margin-top: 4px;
   bottom: ${props => props.badgeBottom || ""};
   left: ${props => props.badgeLeft || ""};
@@ -27,14 +24,14 @@ const Menu = styled.ul`
 
 const Item = styled.li`
   padding: 0.5em 0.5em 0.5em 0.5em;
+  font-size: small;
   letter-spacing: 0.5px;
-
-  &:hover {
-    color: ${colors.anchor};
-  }
+  color: white;
 `;
 
-function WhiteMenu({ id, data, position }) {
+
+
+function EditMenu({ id, data, position}) {
   let badgeLeft = "100%";
   let badgeBottom = "100%";
   let badgeTransform = "translate(-90%, 50%)";
@@ -45,7 +42,7 @@ function WhiteMenu({ id, data, position }) {
       badgeTransform = "translate(-96%, 5%)";
       break;
     case "topRight":
-      badgeTransform = "translate(-2%, 5%)";
+        badgeTransform = "translate(-2%, 5%)";
       break;
     case "bottomRight":
       badgeBottom = "0";
@@ -56,12 +53,12 @@ function WhiteMenu({ id, data, position }) {
       badgeLeft = "0";
       badgeTransform = "translate(-96%, 95%)";
       break;
-    case "bottomCenter":
+      case "bottomCenter":
       badgeBottom = "0";
       badgeLeft = "0";
       badgeTransform = "translate(-45%, 98%)";
       break;
-    case "topCenter":
+      case "topCenter":
       badgeBottom = "0";
       badgeLeft = "0";
       badgeTransform = "translate(-45%, -20%)";
@@ -71,25 +68,38 @@ function WhiteMenu({ id, data, position }) {
   }
   return (
     <Container
-      id={id}
+    id={id}
       onClick={() => {
         setVisibility(!visibility);
       }}
     >
       <Icon icon={["far", "ellipsis-v"]} size="lg" />
       {visibility ? (
-        <Menu
-          badgeTransform={badgeTransform}
-          badgeLeft={badgeLeft}
-          badgeBottom={badgeBottom}
-        >
-          {data.map(item => (
-            <Item key={item.id}>{item.name}</Item>
-          ))}
-        </Menu>
-      ) : null}
+      <Menu
+      badgeTransform={badgeTransform}
+      badgeLeft={badgeLeft}
+      badgeBottom={badgeBottom}
+      >
+      {data.map(item => 
+      <Item key={item.id}>{item.name}</Item>)}
+      </Menu>): null}
     </Container>
   );
-}
+};
 
-export default WhiteMenu;
+
+EditMenu.propTypes = {
+  id: PropTypes.string,
+  data: PropTypes.any.isRequired,
+  position: PropTypes.oneOf([
+    "topLeft",
+    "topRight",
+    "bottomRight",
+    "bottomLeft",
+    "bottomCenter",
+    "topCenter"
+  ]),
+
+};
+
+export default EditMenu;

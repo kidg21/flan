@@ -4,6 +4,7 @@ import Grid from "helpers/Grid";
 import NavigationPanelHeader from "elements/NavigationPanelHeader";
 // import Card, { CardList } from "layout/Card";
 import Panel, { PanelSection } from "layout/Panel";
+import DataRange from "blocks/DataRange";
 import Form, {
   Title,
   Section,
@@ -55,126 +56,95 @@ const radio_long = {
   label:
     "My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself."
 };
-
 const cbox_1 = {
   id: "cbox_1",
-
   label: "First Checkbox"
 };
-
 const cbox_2 = {
   id: "cbox_2",
-
   label: "Second Checkbox"
 };
-
 const cbox_3 = {
   id: "cbox_3",
-
   label: "Little t abottle friend."
 };
-
 const cbox_4 = {
   id: "cbox_4",
-
   label: "Grant Deed / Deed of Trust"
 };
-
 const cbox_5 = {
   id: "cbox_5",
-
   label: "Warranty Deed"
 };
-
 const cbox_6 = {
   id: "cbox_6",
-
   label: "Land Contract"
 };
-
 const cbox_7 = {
   id: "cbox_7",
-
   label: "Yes"
 };
-
 const cbox_8 = {
   id: "cbox_8",
-
   label: "No"
 };
-
 const cbox_9 = {
   id: "cbox_9",
-
   label: "Auto Sales, Services"
 };
-
 const cbox_10 = {
   id: "cbox_10",
-
   label: "Cemeteries, Mortuaries"
 };
-
 const cbox_11 = {
   id: "cbox_11",
-
   label: "Restaurant or Bar"
 };
-
 const cbox_12 = {
   id: "cbox_12",
-
   label: "Hospitals"
 };
-
 const cbox_13 = {
   id: "cbox_13",
-
   label: "Mobile Home Park"
 };
-
 const cbox_14 = {
   id: "cbox_14",
-
   label: "Parking"
 };
-
 const cbox_15 = {
   id: "cbox_15",
-
   label: "Multi-Family"
 };
-
 const cbox_16 = {
   id: "cbox_16",
-
   label: "Mobile Homes"
 };
-
 const cbox_17 = {
   id: "cbox_17",
-
   label: "Multi-Family Dwelling"
 };
-
 const cbox_18 = {
   id: "cbox_18",
-
   label: "Condominium"
 };
-
 const cbox_19 = {
   id: "cbox_19",
-
   label: "Single-Family"
 };
-
 const cbox_20 = {
   id: "cbox_20",
-
   label: "Miscellaneous Residential"
 };
+
+const options = [
+  { value: "chocolate", label: "Chocolate" },
+  { value: "strawberry", label: "Strawberry" },
+  { value: "vanilla", label: "Vanilla" },
+  { value: "pistachio", label: "Pistachio" },
+  { value: "mint chip", label: "Mint Chip" },
+  { value: "cookie dough", label: "Cookie Dough" }
+];
 
 storiesOf("Templates|Panel/Property Filters", module)
   .add("Filter Details Panel", () =>
@@ -267,6 +237,69 @@ storiesOf("Templates|Panel/Property Filters", module)
                 <RangeSlider label="Lot Size (ft2)" />
               </Section>
               <Section>
+                <Input
+                  inputLabel="Zoning (Assessor)"
+                  placeholder="i.e. Mary Williams"
+                  type="text"
+                />
+              </Section>
+              <Section>
+                <InputLabel inputLabel="In Opportunity Zone" />
+                <InputGroup>
+                  <Checkbox {...cbox_7} />
+                  <Checkbox {...cbox_8} />
+                </InputGroup>
+              </Section>
+            </Form>
+          </PanelSection>
+          <PanelSection>
+            <CenteredSection>
+              <Button buttonLabel="Apply" isRound="true" />
+            </CenteredSection>
+          </PanelSection>
+        </Panel>
+      );
+    })
+  )
+
+  .add("Property- New Characteristics", () =>
+    React.createElement(() => {
+      const [checked, setChecked] = useState({ selectedValue: "" });
+
+      const handleCheckboxChange = event => {
+        setChecked({ selectedValue: event.target.value });
+      };
+
+      return (
+        <Panel>
+          <PanelSection>
+            <PanelHeader title="New Characteristics" navigation={true} />
+          </PanelSection>
+          <PanelSection body>
+            <Form>
+              <Bar onePart={true} secondSlot={<a> Reset </a>} />
+              <Section>
+                <DataRange
+                  firstOptions={options}
+                  secondOptions={options}
+                  label="Year Built"
+                />
+                <DataRange
+                  firstOptions={options}
+                  secondOptions={options}
+                  label="Number of Units"
+                />
+                <DataRange
+                  firstOptions={options}
+                  secondOptions={options}
+                  label="Range 3"
+                />
+                <DataRange
+                  firstOptions={options}
+                  secondOptions={options}
+                  label="Range 4"
+                />
+
                 <Input
                   inputLabel="Zoning (Assessor)"
                   placeholder="i.e. Mary Williams"

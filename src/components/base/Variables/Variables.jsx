@@ -38,13 +38,12 @@ export const colors = {
 
 
 export const Darken = css`
-  filter: brightness(85%);
-  `;
-
-export const Lighten = css`
-filter: brightness(105%)
+  filter: brightness(85%)
 `;
 
+export const Lighten = css`
+  filter: brightness(105%)
+`;
 
 // Typefaces
 export const fonts = {
@@ -81,7 +80,7 @@ export const shadows = {
   dropShadow:
     "hsl(34, 5%, 36%) 0rem 0rem 1px, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem;",
   panelSectionShadow:
-    "hsl(34, 5%, 95%)  0rem 0rem 1px, hsla(34, 5%, 95%, 0.333333) 0.25rem 0.25rem 0.5rem;",
+    "hsl(34, 5%, 88%)  0rem 0rem 1px, hsla(34, 5%, 72%, 0.333333) 0 0rem 0.5rem 0.25rem;",
   lightBorderShadow:
     "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem",
   lightBorderInner:
@@ -94,13 +93,24 @@ export const shadows = {
     "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsl(34, 5%, 95%) -1px 1px 0 0 inset, hsl(34, 5%, 95%) 1px -1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px"
 };
 
-export const data = {
-  iceCream: [
-    { value: "chocolate", label: "Chocolate" },
-    { value: "strawberry", label: "Strawberry" },
-    { value: "vanilla", label: "Vanilla" },
-    { value: "pistachio", label: "Pistachio" },
-    { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
-    { value: "cookie dough", label: "Cookie Dough" }
-  ]
+// Media Queries
+const viewport = {
+  small: "0px",
+  medium: "640px",
+  large: "1024px",
+  xlarge: "1440px",
+  xxlarge: "1920px"
+};
+export const screen = {
+  small: `only screen and (min-width: ${viewport.small})`,
+  medium: `only screen and (min-width: ${viewport.medium})`,
+  // medium: `only screen and (min-width: ${
+  //   viewport.medium
+  // }) and (orientation: portrait)`,
+  // medium_l: `only screen and (min-width: ${
+  //   viewport.medium
+  // }) and (orientation: landscape)`,
+  large: `only screen and (min-width: ${viewport.large})`,
+  xlarge: `only screen and (min-width: ${viewport.xlarge})`,
+  xxlarge: `only screen and (min-width: ${viewport.xxlarge})`
 };

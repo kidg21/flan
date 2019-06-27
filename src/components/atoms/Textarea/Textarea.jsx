@@ -1,17 +1,16 @@
-import React from "react"
-import styled, { css } from "styled-components"
-import PropTypes from "prop-types"
-import { InputLabel, HelpText, ErrorText } from "layout/Form"
-import { colors, shadows } from "Variables"
+import React from "react";
+import styled, { css } from "styled-components";
+import PropTypes from "prop-types";
+import { InputLabel, HelpText, ErrorText } from "layout/Form";
+import { colors, shadows } from "Variables";
 
 const TextareaContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 0.35rem;
   align-content: flex-start;
-  color: ${props =>
-    props.error ? colors.alert : props.disabled ? colors.grey_40 : ""};
-`
+  color: ${props => (props.error ? colors.alert : props.disabled ? colors.grey_40 : "")};
+`;
 const TextareaInput = styled.textarea`
   border: 1px solid ${colors.grey_20};
   border-bottom: 1px solid ${colors.grey_20};
@@ -38,9 +37,22 @@ const TextareaInput = styled.textarea`
       background-color: ${props => (props.error ? colors.alert : "")};
     }
   }
-`
+`;
 
-function Textarea({ id, inputLabel, isRequired, pattern, placeholder, name, type, value, helpText, error, disabled, errorText }) {
+function Textarea({
+  id,
+  inputLabel,
+  isRequired,
+  pattern,
+  placeholder,
+  name,
+  type,
+  value,
+  helpText,
+  error,
+  disabled,
+  errorText,
+}) {
   return (
     <TextareaContainer
       id={id}
@@ -62,16 +74,20 @@ function Textarea({ id, inputLabel, isRequired, pattern, placeholder, name, type
       {/* Error Message (required) */}
       {error ? <ErrorText errorText={errorText} /> : null}
     </TextareaContainer>
-  )
+  );
 }
 
 Textarea.propTypes = {
   id: PropTypes.string,
-  name: PropTypes.string,
-  pattern: PropTypes.string,
+  inputLabel: PropTypes.string,
   placeholder: PropTypes.string,
+  pattern: PropTypes.string,
+  value: PropTypes.string,
+  helpText: PropTypes.string,
   disabled: PropTypes.bool,
-  error: PropTypes.bool
-}
+  isRequired: PropTypes.bool,
+  error: PropTypes.bool,
+  errorText: PropTypes.bool,
+};
 
-export { Textarea as default }
+export { Textarea as default };
