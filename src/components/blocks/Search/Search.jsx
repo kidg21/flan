@@ -28,11 +28,11 @@ function Search({ id, ...inputProps }) {
   const [activeSingleTab, setActiveSingleTab] = useState("tab1");
   return (
     <SearchContainer id={id}>
-      <Input {...inputProps}>
+      <TextInput {...inputProps}>
         <IconWrapper>
           <Icon icon={["far", "search"]} type="info" />
         </IconWrapper>
-      </Input>
+      </TextInput>
       <Tabs isSearch="true">
         <Tab
           tabLabel="Owner"
@@ -64,7 +64,7 @@ function Search({ id, ...inputProps }) {
 }
 
 Search.propTypes = {
-  id: PropTypes.string
+  id: PropTypes.string,
 };
 
 export default Search;
