@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import TextInput from "atoms/TextInput";
 import Icon from "atoms/Icon";
-import Tabs, { Tab } from "blocks/Tabs";
+import TextInput from "atoms/TextInput";
 import { colors, shadows } from "Variables";
 
 const IconWrapper = styled.span`
@@ -28,37 +27,11 @@ function Search({ id, ...inputProps }) {
   const [activeSingleTab, setActiveSingleTab] = useState("tab1");
   return (
     <SearchContainer id={id}>
-      <TextInput {...inputProps}>
+      <TextInput placeholder="Search" {...inputProps}>
         <IconWrapper>
           <Icon icon={["far", "search"]} type="info" />
         </IconWrapper>
       </TextInput>
-      <Tabs isSearch="true">
-        <Tab
-          tabLabel="Owner"
-          halfSize="true"
-          isSelected={activeSingleTab === "tab1"}
-          onClick={() => {
-            setActiveSingleTab("tab1");
-          }}
-        />
-        <Tab
-          tabLabel="APN"
-          halfSize="true"
-          isSelected={activeSingleTab === "tab2"}
-          onClick={() => {
-            setActiveSingleTab("tab2");
-          }}
-        />
-        <Tab
-          tabLabel="Address"
-          halfSize="true"
-          isSelected={activeSingleTab === "tab3"}
-          onClick={() => {
-            setActiveSingleTab("tab3");
-          }}
-        />
-      </Tabs>
     </SearchContainer>
   );
 }

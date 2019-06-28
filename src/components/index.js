@@ -29,7 +29,6 @@ export { default as Table } from "./blocks/Table";
 export { default as Tabs } from "./blocks/Tabs";
 
 // Publicly exported files from 'elements'
-export { default as Notification } from "./elements/Notification";
 export { default as CardAccordion } from "./elements/CardAccordion";
 export { default as InformationCardBar } from "./elements/InformationCardBar";
 export { default as LayerCardBar } from "./elements/LayerCardBar";
@@ -37,10 +36,9 @@ export { default as NavigationCardBar } from "./elements/NavigationCardBar";
 export { default as MainPanelHeader } from "./elements/MainPanelHeader";
 export { default as PropertyPanelHeader } from "./elements/PropertyPanelHeader";
 export { default as NavigationPanelHeader } from "./elements/NavigationPanelHeader";
+export { default as Notification } from "./elements/Notification";
+export { default as MapSearch } from "./elements/MapSearch";
 export { default as PopupCard } from "./elements/PopupCard";
-// export { default as PropertyCard } from "./elements/PropertyCard";
-// export { default as ResultCard } from "./elements/ResultCard";
-// export { default as Search } from "./elements/Search";
 
 // Publicly exported files from 'layout'
 export { default as Card, CardList } from "./layout/Card";
