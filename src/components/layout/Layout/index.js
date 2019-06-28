@@ -8,5 +8,6 @@ export {
   CenterWrapperMiddle,
   CenterWrapperBottom,
   RightWrapper,
-  BarWrapper
-} from "./Layout.jsx"
+  BarWrapper,
+  Wrapper,
+} from "./Layout.jsx";

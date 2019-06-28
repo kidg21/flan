@@ -1,83 +1,161 @@
-import React, {Fragment} from "react";
-import styled, { css } from 'styled-components';
-import Mapbox from '../../layout/Map/Map';
-import PropTypes from "prop-types"
+import React, { useState } from "react";
+import styled from "styled-components";
+// import Panel from "layout/Panel";
 import Tabs, { Tab } from "blocks/Tabs";
+// import AppWrapper from "./AppWrapper";
+import FlexWrapper from "./flexwrapper";
+// import MainFlexWrapper from "./MainWrapper";
+import PanelHeader from "elements/PanelHeader/PanelHeader";
+import CardAccordion from "elements/CardAccordion";
+import MapLegend from "blocks/MapLegend";
+// import CardBar from "elements/CardBar/CardBar";
+import Panel, { PanelSection } from "layout/Panel";
+import Accordion from "blocks/Accordion";
+import Table from "blocks/Table";
 
+const screen = {
+  small: 0,
+  medium: 640,
+  large: 1024,
+};
 
-const App = styled.div`
-display: flex;
-position: relative;
-height: 100vh;
-width: 100wh;
-color: black;
-background: papayawhip;
-overflow: hidden;
-`
+function AppLayout(transition) {
+  const [offscreen, setOffscreen] = useState(true);
+  const [left, setLeft] = useState(true);
+  const [right, setRight] = useState(false);
+  const [top, setTop] = useState(false);
+  const [bottom, setBottom] = useState(false);
+  let behaviors = null;
+  // let transition = false;
 
+  const MultipleFunctions = {
+    toggleLeft: function toggleLeft() {
+      setOffscreen(!offscreen); // Toggles the Left Wrapper
+    },
+    toggleRight: function toggleRight() {
+      setRight(!right); // Toggles the Right Wrapper
+    },
+    toggleTop: function toggleTop() {
+      setTop(!top); // Toggles the Top Wrapper
+    },
+    toggleBottom: function toggleBottom() {
+      setBottom(!bottom); // Toggles the Bottom Wrapper
+    },
+  };
 
-const LeftPane = styled.section`
-position: absolute;
-display: flex;
-flex-direction: column;
-flex: none;
-height: 100vh;
-width: 25%;
-background-color: white;
-@media (max-width: 700px) {
-    width: 95%;
+  const SingleFunctions = {
+    toggleLeft: function toggleLeft() {
+      setLeft(!left), setRight(false), setBottom(false), setTop(false); // Toggles the Left Wrapper
+    },
+    toggleRight: function toggleRight() {
+      setRight(!right), setLeft(false), setBottom(false), setTop(false); // Toggles the Right Wrapper
+    },
+    toggleTop: function toggleTop() {
+      setTop(!top), setLeft(false), setBottom(false), setRight(false); // Toggles the Top Wrapper
+    },
+    toggleBottom: function toggleBottom() {
+      setBottom(!bottom), setLeft(false), setRight(false), setTop(false); // Toggles the Bottom Wrapper
+    },
+  };
+
+  if (window.innerWidth >= screen.small && window.innerWidth < screen.medium) {
+    behaviors = SingleFunctions;
+  } else if (window.innerWidth >= screen.medium) {
+    behaviors = MultipleFunctions;
   }
 
-`
+  return (
+    <FlexWrapper fullScreen>
+      {left ? (
+        <FlexWrapper transition={offscreen}>
+          <Panel>
+            <PanelSection>
+              <PanelHeader title="5201 California Ave. Irvine, California" property="true" />
+            </PanelSection>
+            <PanelSection body>
+              <Table />
+              <Accordion header={<CardBar title="Ownership" info={true} />}>
+                <Table />
+              </Accordion>
+              <Accordion header={<CardBar title="Site Information" info={true} />}>
+                <Table />
+              </Accordion>
 
-const RightPane = styled.section`
-position: absolute;
-display: flex;
-right: 0;
-flex-direction: column;
-flex: none;
-height: 100vh;
-width: 25%;
-background-color: white;
-@media (max-width: 700px) {
-    width: 95%;
-  }
-`
+              <Accordion header={<CardBar title="Property Characteristics" info={true} />}>
+                <Table />
+              </Accordion>
 
-// const PanelContent = styled.div`
-// position: absolute;
-// display: flex;
-// right: 0;
-// flex-direction: column;
-// flex: none;
-// height: 100vh;
-// width: 25%;
-// background-color: white;
-// @media (max-width: 700px) {
-//     width: 100%;
-//   }
-// `
+              <Accordion header={<CardBar title="Value and Tax" info={true} />}>
+                <Table />
+              </Accordion>
 
+              <Accordion header={<CardBar title="Last Market Sale" info={true} />}>
+                <Table />
+              </Accordion>
 
-function AppLayout({id, rightchild, leftchild, leftOpen, rightOpen }) {
-    return (
-        <App
-        id={id}>
-          <Mapbox/>
-          { leftOpen ? ( <LeftPane> {leftchild}
-          </LeftPane>) : null} 
-          { rightOpen ? ( <RightPane> {rightchild}
-          </RightPane>) : null}  
-        </App>
-    );
+              <Accordion header={<CardBar title="Site Views" info={true} />}>
+                <Table />
+              </Accordion>
+            </PanelSection>
+          </Panel>
+        </FlexWrapper>
+      ) : null}
+      <FlexWrapper setFlexDirection="column" setFlex="3">
+        {top ? (
+          <FlexWrapper>
+            <Panel />
+          </FlexWrapper>
+        ) : null}
+        <FlexWrapper setFlex="3" />
+        {bottom ? (
+          <FlexWrapper>
+            <Panel />
+          </FlexWrapper>
+        ) : null}
+      </FlexWrapper>
+      {right ? (
+        <FlexWrapper>
+          <Panel>
+            <PanelSection>
+              <PanelHeader title="Layers" main={true} />
+            </PanelSection>
+            <PanelSection>
+              <CardAccordion
+                header={<CardBar layer="true" title="Demographics" />}
+                body={<MapLegend />}
+              />
+              <CardAccordion
+                header={<CardBar layer="true" title="Parcel" />}
+                body={<MapLegend />}
+              />
+              <CardBar disabled="true" title="Wetlands" />
+              <CardAccordion
+                header={<CardBar layer="true" title="Traffic" />}
+                body={<MapLegend />}
+              />
+              <CardAccordion
+                header={<CardBar layer="true" title="Schools" />}
+                body={<MapLegend />}
+              />
+            </PanelSection>
+          </Panel>
+        </FlexWrapper>
+      ) : null}
+      <Tabs align="bottom">
+        <Tab tabLabel="left" onClick={behaviors.toggleLeft} />
+        <Tab tabLabel="right" onClick={behaviors.toggleRight} />
+        <Tab tabLabel="top" onClick={behaviors.toggleTop} />
+        <Tab tabLabel="bottom" onClick={behaviors.toggleBottom} />
+      </Tabs>
+    </FlexWrapper>
+  );
 }
 
-AppLayout.propTypes = {
-  id: PropTypes.string,
-  rightchild: PropTypes.any,
-  leftchild: PropTypes.any,
-  leftOpen: PropTypes.bool,
-  rightOpen: PropTypes.bool
-};
+// NavBar.propTypes = {
+//     toggleLeft: PropTypes.bool,
+//     toggleRight: PropTypes.bool,
+//     toggleTop: PropTypes.bool,
+//     toggleBottom: PropTypes.bool,
+//   };
 
 export default AppLayout;

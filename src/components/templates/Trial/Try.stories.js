@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
-import { I18nContextProvider } from "../../../locales/index";
+import AppLayout from "./AppLayout";
+import PanelHeader from "elements/PanelHeader/PanelHeader";
+import CardAccordion from "elements/CardAccordion";
+import MapLegend from "blocks/MapLegend";
+// import CardBar from "elements/CardBar/CardBar";
+import Panel, { PanelSection } from "layout/Panel";
 
-import TrialApp from "./TrialFilled";
-
-storiesOf("Templates|Language", module).add("Layer Panel", () => (
-  <I18nContextProvider>
-    <TrialApp />
-  </I18nContextProvider>
-));
+storiesOf("Templates|Layout", module).add("Mobile Layout", () => <AppLayout />);

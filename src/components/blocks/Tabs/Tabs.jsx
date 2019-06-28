@@ -61,7 +61,7 @@ function Tabs({ id, children, columns, align, isFloating, style, isSearch }) {
     case "left":
       setColumns = "none";
       setPosition = "absolute";
-      setWidth = "min-content";
+      // setWidth = "min-content";
       setHeight = "100%";
       setOrientation = "flex";
       alignBottom = "0";
@@ -69,7 +69,7 @@ function Tabs({ id, children, columns, align, isFloating, style, isSearch }) {
     case "right":
       setColumns = "none";
       setPosition = "absolute";
-      setWidth = "min-content";
+      // setWidth = "min-content";
       setHeight = "100%";
       setOrientation = "flex";
       alignRight = "0";
