@@ -13,9 +13,9 @@ const buttonActive = css`
 
 const StyledButton = styled.button`
   display: flex;
-  flex: auto;
+  /* flex: auto; */
   flex-direction: column;
-  width: auto;
+  /* width: auto; */
   width: ${props => (props.fullWidth ? "100%" : "auto")};
   padding: ${props => props.buttonPadding || "0.5rem 0.7rem"};
   justify-content: center;
@@ -126,6 +126,7 @@ function Button({
       backgroundColor={backgroundColor}
       buttonPadding={buttonPadding}
       labelSize={labelSize}
+      style={style}
     >
       {icon ? <ButtonIcon icon={icon} /> : null}
       <ButtonLabel>{buttonLabel}</ButtonLabel>
@@ -143,6 +144,7 @@ Button.propTypes = {
   fullWidth: PropTypes.bool,
   isDisabled: PropTypes.bool,
   onClick: PropTypes.func.isRequired,
+  style: PropTypes.string,
 };
 
 export { Button as default };
