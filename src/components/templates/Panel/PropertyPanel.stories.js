@@ -82,5 +82,5 @@ storiesOf("Templates|Panel", module).add("Property Panel", () =>
         </PanelSection>
       </Panel>
     );
-  })
+  }),
 );
