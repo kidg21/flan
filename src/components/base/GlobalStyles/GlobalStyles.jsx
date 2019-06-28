@@ -136,7 +136,7 @@ const GlobalStyles = createGlobalStyle`
         line-height: 1.2rem;
     }
     img, object {
-        width: 100%;
+        ${""}
     }
     code {
         font-family: ${fonts.data};

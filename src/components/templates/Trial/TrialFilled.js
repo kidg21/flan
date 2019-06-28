@@ -1,8 +1,8 @@
 import React, { useContext, useState } from "react";
 import { storiesOf } from "@storybook/react";
 import AppLayout from "./AppLayout";
-import PanelHeader from "elements/PanelHeader";
-import CardBar from "elements/CardBar";
+// import PanelHeader from "elements/PanelHeader";
+// import CardBar from "elements/CardBar";
 import Accordion from "blocks/Accordion";
 import Table from "blocks/Table";
 import Panel, { PanelSection } from "layout/Panel";
@@ -25,10 +25,7 @@ function TrialApp() {
       leftchild={
         <Panel>
           <PanelSection>
-            <PanelHeader
-              title="5201 California Ave. Irvine, California"
-              property="true"
-            />
+            <PanelHeader title="5201 California Ave. Irvine, California" property="true" />
           </PanelSection>
           <PanelSection body>
             <Table />
@@ -99,19 +96,10 @@ function TrialApp() {
             <CardBar title={translate("Builder_Sites")} navigation={true} />
             <CardBar title={translate("Demographics")} navigation={true} />
             <CardBar title={translate("Foreclosures")} navigation={true} />
-            <CardBar
-              title={translate("Points_Of_Interest")}
-              navigation={true}
-            />
+            <CardBar title={translate("Points_Of_Interest")} navigation={true} />
             <CardBar title={translate("Public_Schools")} navigation={true} />
-            <CardBar
-              title={translate("Qualified_Opportunity_Zones")}
-              navigation={true}
-            />
-            <CardBar
-              title={translate("School_District_Rating")}
-              navigation={true}
-            />
+            <CardBar title={translate("Qualified_Opportunity_Zones")} navigation={true} />
+            <CardBar title={translate("School_District_Rating")} navigation={true} />
             <CardBar title={translate("Traffic")} navigation={true} />
             <CardBar title={translate("Transaction")} navigation={true} />
             <CardBar title={translate("Zones")} navigation={true} />

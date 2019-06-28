@@ -10,12 +10,11 @@ export { default as Container } from "./atoms/Container";
 export { default as Date } from "./atoms/Date";
 export { default as Divider } from "./atoms/Divider";
 export { default as Icon } from "./atoms/Icon";
-export { default as TextInput } from "./atoms/TextInput";
 export { default as Radio } from "./atoms/Radio";
 export { default as SelectMenu } from "./atoms/SelectMenu";
 export { default as Slider } from "./atoms/Slider";
 export { default as Switch } from "./atoms/Switch";
-export { default as Textarea } from "./atoms/Textarea";
+export { default as TextInput } from "./atoms/TextInput";
 
 // Publicly exported files from 'blocks'
 export { default as Accordion } from "./blocks/Accordion";
