@@ -9,13 +9,13 @@ import Card, { Piece } from "layout/Card";
 import Switch from "atoms/Switch";
 
 const blockStyle = {
-  width: "4.8em",
+  width: ".5em",
   filter: "brightness(160%)",
   lineHeight: "normal",
 };
 
 const disabledblockStyle = {
-  width: "4.8em",
+  width: ".5em",
   filter: "brightness(200%)",
   lineHeight: "normal",
 };

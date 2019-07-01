@@ -28,32 +28,6 @@ function MapSearch({ id, ...searchProps }) {
   return (
     <SearchContainer id={id}>
       <Search {...searchProps} />
-      <Tabs isSearch="true">
-        <Tab
-          tabLabel="Owner"
-          halfSize="true"
-          isSelected={activeSingleTab === "tab1"}
-          onClick={() => {
-            setActiveSingleTab("tab1");
-          }}
-        />
-        <Tab
-          tabLabel="APN"
-          halfSize="true"
-          isSelected={activeSingleTab === "tab2"}
-          onClick={() => {
-            setActiveSingleTab("tab2");
-          }}
-        />
-        <Tab
-          tabLabel="Address"
-          halfSize="true"
-          isSelected={activeSingleTab === "tab3"}
-          onClick={() => {
-            setActiveSingleTab("tab3");
-          }}
-        />
-      </Tabs>
     </SearchContainer>
   );
 }

@@ -13,13 +13,13 @@ const Arrow = styled(FontAwesomeIcon)`
   transition: all 0.3s ease;
 `;
 
-function InformationCardBar({ id, title, onClick }) {
+function InformationCardBar({ id, title}) {
   const [leftOnscreen, setLeftOnscreen] = useState(false);
   function toggleLeft() {
     setLeftOnscreen(!leftOnscreen);
   }
   return (
-    <Piece id={id} title={title}>
+    <Piece id={id}>
       <Bar
         onClick={toggleLeft}
         left={title}
