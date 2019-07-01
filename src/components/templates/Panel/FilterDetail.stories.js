@@ -207,7 +207,9 @@ storiesOf("Templates|Panel/Property Filters", module)
             </Form>
           </PanelSection>
           <PanelSection>
-            <Button buttonLabel="Apply" isRound="true" />
+            <CenteredSection>
+              <Button buttonLabel="Apply" isRound="true" />
+            </CenteredSection>
           </PanelSection>
         </Panel>
       );
