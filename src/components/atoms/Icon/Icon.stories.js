@@ -309,52 +309,52 @@ storiesOf("Blocks|IconBlock", module)
       </IconBlock>
       <IconBlock style={blockStyle}>
         <Icon icon="circle" />
-        <Icon icon="circle" anchor />
+        <Icon icon="circle" type="info" />
       </IconBlock>
       <IconBlock style={blockStyle}>
         <Icon icon="circle" />
-        <Icon icon="circle" anchor />
-        <Icon icon="circle" success />
+        <Icon icon="circle" type="info" />
+        <Icon icon="circle" type="success" />
       </IconBlock>
       <IconBlock style={blockStyle}>
         <Icon icon="circle" />
-        <Icon icon="circle" anchor />
-        <Icon icon="circle" success />
-        <Icon icon="circle" warning />
+        <Icon icon="circle" type="info" />
+        <Icon icon="circle" type="success" />
+        <Icon icon="circle" type="warning" />
       </IconBlock>
       <IconBlock style={blockStyle}>
         <Icon icon="circle" />
-        <Icon icon="circle" anchor />
-        <Icon icon="circle" success />
-        <Icon icon="circle" warning />
-        <Icon icon="circle" alert />
+        <Icon icon="circle" type="info" />
+        <Icon icon="circle" type="success" />
+        <Icon icon="circle" type="warning" />
+        <Icon icon="circle" type="alert" />
       </IconBlock>
       <IconBlock style={blockStyle}>
         <Icon icon="circle" />
-        <Icon icon="circle" anchor />
-        <Icon icon="circle" success />
-        <Icon icon="circle" warning />
-        <Icon icon="circle" alert />
+        <Icon icon="circle" type="info" />
+        <Icon icon="circle" type="success" />
+        <Icon icon="circle" type="warning" />
+        <Icon icon="circle" type="alert" />
         <Icon icon="circle" />
       </IconBlock>
       <IconBlock style={blockStyle}>
         <Icon icon="circle" />
-        <Icon icon="circle" anchor />
-        <Icon icon="circle" success />
-        <Icon icon="circle" warning />
-        <Icon icon="circle" alert />
+        <Icon icon="circle" type="info" />
+        <Icon icon="circle" type="success" />
+        <Icon icon="circle" type="warning" />
+        <Icon icon="circle" type="alert" />
         <Icon icon="circle" />
-        <Icon icon="circle" anchor />
+        <Icon icon="circle" type="info" />
       </IconBlock>
       <IconBlock style={blockStyle}>
         <Icon icon="circle" />
-        <Icon icon="circle" anchor />
-        <Icon icon="circle" success />
-        <Icon icon="circle" warning />
-        <Icon icon="circle" alert />
+        <Icon icon="circle" type="info" />
+        <Icon icon="circle" type="success" />
+        <Icon icon="circle" type="warning" />
+        <Icon icon="circle" type="alert" />
         <Icon icon="circle" />
-        <Icon icon="circle" anchor />
-        <Icon icon="circle" success />
+        <Icon icon="circle" type="info" />
+        <Icon icon="circle" type="success" />
       </IconBlock>
     </IconGrid>
   ));

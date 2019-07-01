@@ -74,6 +74,12 @@ function TextInput({
       placeholderColor = colors.alert_light;
       inputSelectColor = colors.alert;
       break;
+    case "search":
+        inputBorderColor = colors.grey_20;
+        inputBorderColorHover = colors.grey_20;
+        placeholderColor = colors.grey_40;
+        inputSelectColor = colors.anchor;
+        break;
     case "disabled":
       inputTextColor = colors.grey_40;
       inputFillColor = colors.grey_20;

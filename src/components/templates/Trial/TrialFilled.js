@@ -1,8 +1,8 @@
 import React, { useContext, useState } from "react";
 import { storiesOf } from "@storybook/react";
 import AppLayout from "./AppLayout";
-import PanelHeader from "elements/PanelHeader";
-import CardBar from "elements/CardBar";
+// import PanelHeader from "elements/PanelHeader";
+// import CardBar from "elements/CardBar";
 import Accordion from "blocks/Accordion";
 import Table from "blocks/Table";
 import Panel, { PanelSection } from "layout/Panel";
@@ -25,15 +25,12 @@ function TrialApp() {
       leftchild={
         <Panel>
           <PanelSection>
-            <PanelHeader
-              title="5201 California Ave. Irvine, California"
-              property="true"
-            />
+            {/* <PanelHeader title="5201 California Ave. Irvine, California" property="true" /> */}
           </PanelSection>
           <PanelSection body>
             <Table />
             <Accordion
-              header={<CardBar title="Ownership" info={true} />}
+              // header={<CardBar title="Ownership" info={true} />}
               visibility={visibility}
               onClick={() => {
                 setVisibility(!visibility);
@@ -42,7 +39,7 @@ function TrialApp() {
               <Table />
             </Accordion>
             <Accordion
-              header={<CardBar title="Site Information" info={true} />}
+              // header={<CardBar title="Site Information" info={true} />}
               visibility={visibility2}
               onClick={() => {
                 setVisibility2(!visibility2);
@@ -51,7 +48,7 @@ function TrialApp() {
               <Table />
             </Accordion>
             <Accordion
-              header={<CardBar title="Property Characteristics" info={true} />}
+              // header={<CardBar title="Property Characteristics" info={true} />}
               visibility={visibility3}
               onClick={() => {
                 setVisibility3(!visibility3);
@@ -60,7 +57,7 @@ function TrialApp() {
               <Table />
             </Accordion>
             <Accordion
-              header={<CardBar title="Value and Tax" info={true} />}
+              // header={<CardBar title="Value and Tax" info={true} />}
               visibility={visibility4}
               onClick={() => {
                 setVisibility4(!visibility4);
@@ -69,7 +66,7 @@ function TrialApp() {
               <Table />
             </Accordion>
             <Accordion
-              header={<CardBar title="Last Market Sale" info={true} />}
+              // header={<CardBar title="Last Market Sale" info={true} />}
               visibility={visibility5}
               onClick={() => {
                 setVisibility5(!visibility5);
@@ -78,7 +75,7 @@ function TrialApp() {
               <Table />
             </Accordion>
             <Accordion
-              header={<CardBar title="Site Views" info={true} />}
+              // header={<CardBar title="Site Views" info={true} />}
               visibility={visibility6}
               onClick={() => {
                 setVisibility6(!visibility6);
@@ -92,29 +89,20 @@ function TrialApp() {
       rightchild={
         <Panel>
           <PanelSection>
-            <PanelHeader title={translate("Filters")} main={true} />
+            {/* <PanelHeader title={translate("Filters")} main={true} /> */}
           </PanelSection>
           <PanelSection body>
-            <CardBar title={translate("Property_Search")} navigation={true} />
+            {/* <CardBar title={translate("Property_Search")} navigation={true} />
             <CardBar title={translate("Builder_Sites")} navigation={true} />
             <CardBar title={translate("Demographics")} navigation={true} />
             <CardBar title={translate("Foreclosures")} navigation={true} />
-            <CardBar
-              title={translate("Points_Of_Interest")}
-              navigation={true}
-            />
+            <CardBar title={translate("Points_Of_Interest")} navigation={true} />
             <CardBar title={translate("Public_Schools")} navigation={true} />
-            <CardBar
-              title={translate("Qualified_Opportunity_Zones")}
-              navigation={true}
-            />
-            <CardBar
-              title={translate("School_District_Rating")}
-              navigation={true}
-            />
+            <CardBar title={translate("Qualified_Opportunity_Zones")} navigation={true} />
+            <CardBar title={translate("School_District_Rating")} navigation={true} />
             <CardBar title={translate("Traffic")} navigation={true} />
             <CardBar title={translate("Transaction")} navigation={true} />
-            <CardBar title={translate("Zones")} navigation={true} />
+            <CardBar title={translate("Zones")} navigation={true} /> */}
           </PanelSection>
           <LanguageSelect />
           <PanelSection>

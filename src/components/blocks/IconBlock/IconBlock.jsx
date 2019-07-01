@@ -7,14 +7,13 @@ const Block = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
-  flex: auto; /* allows to fill parent */
-  position: ${props => (props.stacked ? "relative" : "")};
-  width: ${props => (props.stacked ? "100%" : "")};
-  justify-content: ${props => (props.stacked ? "center" : "space-between")};
-  align-items: ${props => (props.stacked ? "center" : "")};
-  > * {
-    position: ${props => (props.stacked ? "absolute" : "")};
-  }
+  justify-content: space-between;
+  // position: ${props => (props.stacked ? "relative" : "")};
+  width: ${props => (props.stacked ? "100%" : "7rem")};
+  // justify-content: ${props => (props.stacked ? "center" : "space-between")};
+  // align-items: ${props => (props.stacked ? "center" : "")};
+  // > * {
+  //   position: ${props => (props.stacked ? "absolute" : "")};
 `;
 
 function IconBlock({ id, stacked, children, style }) {

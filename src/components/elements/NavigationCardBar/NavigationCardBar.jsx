@@ -13,7 +13,7 @@ function NavigationCardBar({ id, title, disabled, onClick }) {
     <Piece id={id} title={title} disabled={disabled}>
       <Bar
         left={title}
-        right={<Icon icon={["fal", "chevron-right"]} />}
+        right={<Icon icon={["far", "angle-right"]} />}
         onClick={onClick}
       />
     </Piece>

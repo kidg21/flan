@@ -25,6 +25,12 @@ const cbox_2 = {
   label: "Option 2"
 };
 
+const data = [
+  { id: "a", color: "Owners/Units", name: "Multiple Owners (2 Units)" },
+  { id: "b", color: "Master Parcel No.", name: "387483675638" },
+  { id: "c", color: "Zoning", name: "No Zone" }
+];
+
 storiesOf("Elements|Card Accordion", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
@@ -33,7 +39,7 @@ storiesOf("Elements|Card Accordion", module)
       return (
         <CardAccordion
           header={<InformationCardBar title="Ownership" />}
-          body={<Table />}
+          body={<Table data={data} />}
         />
       );
     })
