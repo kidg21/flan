@@ -18,7 +18,7 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
         <PanelSection>
           <MainPanelHeader title="Filters" />
         </PanelSection>
-        <PanelSection>
+        <PanelSection body>
           <CardAccordion
             header={
               <LayerCardBar
@@ -49,7 +49,21 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
             }
             body={<MapLegend />}
           />
-          <LayerCardBar title="Wetlands" />
+          <CardAccordion
+            header={
+              <LayerCardBar
+                title="Wetlands"
+                switchProps={{
+                  checked: checked3,
+
+                  onChange: () => {
+                    setChecked3(!checked3);
+                  }
+                }}
+              />
+            }
+            body={<MapLegend />}
+          />
           <CardAccordion
             header={
               <LayerCardBar

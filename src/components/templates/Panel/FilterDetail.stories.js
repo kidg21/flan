@@ -11,7 +11,7 @@ import Form, {
   CenteredSection,
   SectionName,
   InputGroup,
-  InputLabel,
+  InputLabel
 } from "layout/Form";
 import Checkbox from "../../atoms/Checkbox/Checkbox";
 import Command from "atoms/Command";
@@ -27,26 +27,26 @@ const radio_1 = {
   id: "radio-1",
   name: "radio-group",
   value: "1",
-  label: "Last 3 months",
+  label: "Last 3 months"
   // checked: true
 };
 const radio_2 = {
   id: "radio-2",
   name: "radio-group",
   value: "2",
-  label: "Last 6 months",
+  label: "Last 6 months"
 };
 const radio_3 = {
   id: "radio-3",
   name: "radio-group",
   value: "3",
-  label: "Last 12 months",
+  label: "Last 12 months"
 };
 const radio_4 = {
   id: "radio-4",
   name: "radio-group",
   value: "4",
-  label: "Radio 4",
+  label: "Radio 4"
 };
 
 const radio_long = {
@@ -54,87 +54,87 @@ const radio_long = {
   name: "radio-group",
   value: "5",
   label:
-    "My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself.",
+    "My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself."
 };
 const cbox_1 = {
   id: "cbox_1",
-  label: "First Checkbox",
+  label: "First Checkbox"
 };
 const cbox_2 = {
   id: "cbox_2",
-  label: "Second Checkbox",
+  label: "Second Checkbox"
 };
 const cbox_3 = {
   id: "cbox_3",
-  label: "Little t abottle friend.",
+  label: "Little t abottle friend."
 };
 const cbox_4 = {
   id: "cbox_4",
-  label: "Grant Deed / Deed of Trust",
+  label: "Grant Deed / Deed of Trust"
 };
 const cbox_5 = {
   id: "cbox_5",
-  label: "Warranty Deed",
+  label: "Warranty Deed"
 };
 const cbox_6 = {
   id: "cbox_6",
-  label: "Land Contract",
+  label: "Land Contract"
 };
 const cbox_7 = {
   id: "cbox_7",
-  label: "Yes",
+  label: "Yes"
 };
 const cbox_8 = {
   id: "cbox_8",
-  label: "No",
+  label: "No"
 };
 const cbox_9 = {
   id: "cbox_9",
-  label: "Auto Sales, Services",
+  label: "Auto Sales, Services"
 };
 const cbox_10 = {
   id: "cbox_10",
-  label: "Cemeteries, Mortuaries",
+  label: "Cemeteries, Mortuaries"
 };
 const cbox_11 = {
   id: "cbox_11",
-  label: "Restaurant or Bar",
+  label: "Restaurant or Bar"
 };
 const cbox_12 = {
   id: "cbox_12",
-  label: "Hospitals",
+  label: "Hospitals"
 };
 const cbox_13 = {
   id: "cbox_13",
-  label: "Mobile Home Park",
+  label: "Mobile Home Park"
 };
 const cbox_14 = {
   id: "cbox_14",
-  label: "Parking",
+  label: "Parking"
 };
 const cbox_15 = {
   id: "cbox_15",
-  label: "Multi-Family",
+  label: "Multi-Family"
 };
 const cbox_16 = {
   id: "cbox_16",
-  label: "Mobile Homes",
+  label: "Mobile Homes"
 };
 const cbox_17 = {
   id: "cbox_17",
-  label: "Multi-Family Dwelling",
+  label: "Multi-Family Dwelling"
 };
 const cbox_18 = {
   id: "cbox_18",
-  label: "Condominium",
+  label: "Condominium"
 };
 const cbox_19 = {
   id: "cbox_19",
-  label: "Single-Family",
+  label: "Single-Family"
 };
 const cbox_20 = {
   id: "cbox_20",
-  label: "Miscellaneous Residential",
+  label: "Miscellaneous Residential"
 };
 
 const options = [
@@ -143,7 +143,7 @@ const options = [
   { value: "vanilla", label: "Vanilla" },
   { value: "pistachio", label: "Pistachio" },
   { value: "mint chip", label: "Mint Chip" },
-  { value: "cookie dough", label: "Cookie Dough" },
+  { value: "cookie dough", label: "Cookie Dough" }
 ];
 
 storiesOf("Templates|Panel/Property Filters", module)
@@ -190,7 +190,11 @@ storiesOf("Templates|Panel/Property Filters", module)
                 <RangeSlider label="Last Sale Price" />
               </Section>
               <Section>
-                <TextInput inputLabel="Seller Name" placeholder="i.e. Mary Williams" type="text" />
+                <TextInput
+                  inputLabel="Seller Name"
+                  placeholder="i.e. Mary Williams"
+                  type="text"
+                />
               </Section>
               <Section>
                 <InputLabel inputLabel="Last Sale Deed Type" />
@@ -207,7 +211,7 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
         </Panel>
       );
-    }),
+    })
   )
 
   .add("Property- Characteristics", () =>
@@ -255,7 +259,7 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
         </Panel>
       );
-    }),
+    })
   )
 
   .add("Property- New Characteristics", () =>
@@ -275,10 +279,26 @@ storiesOf("Templates|Panel/Property Filters", module)
             <Form>
               {/* <Bar onePart={true} secondSlot={<a> Reset </a>} /> */}
               <Section>
-                <DataRange firstOptions={options} secondOptions={options} label="Year Built" />
-                <DataRange firstOptions={options} secondOptions={options} label="Number of Units" />
-                <DataRange firstOptions={options} secondOptions={options} label="Range 3" />
-                <DataRange firstOptions={options} secondOptions={options} label="Range 4" />
+                <DataRange
+                  firstOptions={options}
+                  secondOptions={options}
+                  label="Year Built"
+                />
+                <DataRange
+                  firstOptions={options}
+                  secondOptions={options}
+                  label="Number of Units"
+                />
+                <DataRange
+                  firstOptions={options}
+                  secondOptions={options}
+                  label="Range 3"
+                />
+                <DataRange
+                  firstOptions={options}
+                  secondOptions={options}
+                  label="Range 4"
+                />
 
                 <TextInput
                   inputLabel="Zoning (Assessor)"
@@ -302,7 +322,7 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
         </Panel>
       );
-    }),
+    })
   )
 
   .add("Property- Aggregate", () =>
@@ -349,7 +369,7 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
         </Panel>
       );
-    }),
+    })
   )
 
   .add("Property- Value", () =>
@@ -383,7 +403,7 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
         </Panel>
       );
-    }),
+    })
   )
 
   .add("Property- Location", () =>
@@ -403,11 +423,31 @@ storiesOf("Templates|Panel/Property Filters", module)
             <Form>
               {/* <Bar type="one" right={<a> Reset </a>} /> */}
               <Section>
-                <TextInput inputLabel="Street Name" placeholder="i.e. Main St." type="text" />
-                <TextInput inputLabel="City" placeholder="i.e. New York City" type="text" />
-                <TextInput inputLabel="State" placeholder="i.e. New York" type="text" />
-                <TextInput inputLabel="Zip" placeholder="i.e. 92614" type="text" />
-                <TextInput inputLabel="Country" placeholder="i.e. United States" type="text" />
+                <TextInput
+                  inputLabel="Street Name"
+                  placeholder="i.e. Main St."
+                  type="text"
+                />
+                <TextInput
+                  inputLabel="City"
+                  placeholder="i.e. New York City"
+                  type="text"
+                />
+                <TextInput
+                  inputLabel="State"
+                  placeholder="i.e. New York"
+                  type="text"
+                />
+                <TextInput
+                  inputLabel="Zip"
+                  placeholder="i.e. 92614"
+                  type="text"
+                />
+                <TextInput
+                  inputLabel="Country"
+                  placeholder="i.e. United States"
+                  type="text"
+                />
               </Section>
             </Form>
           </PanelSection>
@@ -418,7 +458,7 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
         </Panel>
       );
-    }),
+    })
   )
 
   .add("Property- Land Use", () =>
@@ -466,5 +506,5 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
         </Panel>
       );
-    }),
+    })
   );

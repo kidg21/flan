@@ -8,20 +8,20 @@ import Card, { Piece } from "layout/Card";
 
 import Switch from "atoms/Switch";
 
+
 const blockStyle = {
-  width: ".5em",
-  filter: "brightness(160%)",
+  filter: "brightness(150%)",
   lineHeight: "normal",
 };
 
 const disabledblockStyle = {
-  width: ".5em",
+  width: ".5rem",
   filter: "brightness(200%)",
   lineHeight: "normal",
 };
 
 const Icons = (
-  <IconBlock style={blockStyle}>
+  <IconBlock style={blockStyle} >
     <Icon icon={["far", "expand-arrows"]} />
     <Icon icon={["far", "share"]} />
     <Icon icon={["far", "filter"]} />

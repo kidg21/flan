@@ -30,7 +30,7 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
   -webkit-appearance: none;
   &:checked {
     background-color: ${props =>
-      props.error ? colors.alert_tint : colors.success_tint};
+      props.error ? colors.alert_tint : colors.success_light};
     border-color: ${props =>
       props.error ? colors.alert_light : colors.success};
   }
