@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
-import Card, {Piece} from "layout/Card/Card";
+import Card, {Piece} from "layout/Card";
 import Accordion from "blocks/Accordion";
 
 
