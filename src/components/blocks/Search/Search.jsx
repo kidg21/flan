@@ -26,13 +26,13 @@ const SearchContainer = styled.div`
 
 
 
-function Search({ id, ...inputProps }) {
+function Search({ id, onBtnClick, ...inputProps }) {
   const [activeSingleTab, setActiveSingleTab] = useState("tab1");
   return (
-    <SearchContainer id={id}>
+    <SearchContainer id={id} >
       <TextInput placeholder="Search" state="search" {...inputProps}>
         <IconWrapper>
-          <Icon icon={["far", "search"]} type="info" />
+          <a onClick={() => { return onBtnClick(); }}><Icon icon={["far", "search"]} type="info" /></a>
         </IconWrapper>
       </TextInput>
     </SearchContainer>
@@ -45,4 +45,4 @@ Search.propTypes = {
 
 export default Search;
 
-///this one will need more work on setting up for logic like Autocomplete and everything else
+// this one will need more work on setting up for logic like Autocomplete and everything else
