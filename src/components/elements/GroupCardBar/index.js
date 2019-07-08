@@ -1,1 +1,1 @@
-export { default } from "./InformationCardBar.jsx";
+export { default } from "./GroupCardBar.jsx";
