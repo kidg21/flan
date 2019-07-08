@@ -25,5 +25,5 @@ storiesOf("Elements|Card Bar/", module)
     })
   )
   .add("Layer Disabled", () => (
-    <LayerCardBar title="Demographics" disabled="true" />
+    <LayerCardBar title="Demographics" disabled />
   ));

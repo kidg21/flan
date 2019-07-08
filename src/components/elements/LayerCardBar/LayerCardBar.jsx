@@ -8,33 +8,10 @@ import Card, { Piece } from "layout/Card";
 
 import Switch from "atoms/Switch";
 
-
-const blockStyle = {
-  filter: "brightness(150%)",
+const LayerIconBlock = styled(IconBlock)`
+  filter: "brightness(${props => props.disabled ? 200 : 150}%)",
   lineHeight: "normal",
-};
-
-const disabledblockStyle = {
-  width: ".5rem",
-  filter: "brightness(200%)",
-  lineHeight: "normal",
-};
-
-const Icons = (
-  <IconBlock style={blockStyle} >
-    <Icon icon={["far", "expand-arrows"]} />
-    <Icon icon={["far", "share"]} />
-    <Icon icon={["far", "filter"]} />
-  </IconBlock>
-);
-
-const DisabledIcons = (
-  <IconBlock style={disabledblockStyle}>
-    <Icon icon={["far", "expand-arrows"]} />
-    <Icon icon={["far", "share"]} />
-    <Icon icon={["far", "filter"]} />
-  </IconBlock>
-);
+`;
 
 const Space = {
   paddingLeft: "1em",
@@ -44,35 +21,32 @@ const SwitchContainer = styled.div`
   display: flex;
   vertical-align: baseline;
   filter: ${props => (props.disabled ? "brightness(130%)" : "")};
+  padding: 0 1em;
 `;
 
-function LayerCardBar({ id, title, switchProps, disabled }) {
+function LayerCardBar({ id, title, switchProps, disabled, icons }) {
+  // overrides the switch props when disabled
+  let _switchProps = disabled ? {} : switchProps;
+  const _icons = (<LayerIconBlock disabled={disabled}>{icons}</LayerIconBlock>);
   return (
-    <Piece id={id} title={title} disabled={disabled}>
-      {disabled ? (
-        <Bar
-          left={
-            <SwitchContainer disabled="true">
-              {" "}
-              <Switch /> <span style={Space} /> {title}{" "}
-            </SwitchContainer>
-          }
-          right={DisabledIcons}
-        />
-      ) : (
-        <Bar
-          left={
-            <SwitchContainer>
-              {" "}
-              <Switch {...switchProps} /> <span style={Space} /> {title}{" "}
-            </SwitchContainer>
-          }
-          right={Icons}
-        />
-      )}
+    <Piece id={id}>
+      <Bar
+        left={
+          <SwitchContainer disabled={disabled}>
+            <Switch {..._switchProps} />
+            <span style={Space} /> {title}{" "} {/* TODO: Update this spacing problem */}
+          </SwitchContainer>
+        }
+        right={icons ? _icons : null}
+      />
     </Piece>
   );
-}
+};
+
+LayerCardBar.defaultProps = {
+  disabled: false,
+};
+
 LayerCardBar.propTypes = {
   id: PropTypes.string,
   title: PropTypes.any.isRequired,

@@ -24,7 +24,8 @@ function Icon({
   pulse,
   border,
   pull,
-  style
+  style,
+  className,
 }) {
   let iconColor;
   switch (type) {
@@ -60,6 +61,7 @@ function Icon({
       border={border}
       pull={pull}
       style={style}
+      className={className}
     />
   );
 }
