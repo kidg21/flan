@@ -140,6 +140,7 @@ TextInput.propTypes = {
   errorText: PropTypes.string,
   state: PropTypes.string,
   style: PropTypes.string,
+  onChange: PropTypes.func
 };
 
 export { TextInput as default };

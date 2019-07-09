@@ -27,7 +27,6 @@ const SearchContainer = styled.div`
 
 
 function Search({ id, onBtnClick, ...inputProps }) {
-  const [activeSingleTab, setActiveSingleTab] = useState("tab1");
   return (
     <SearchContainer id={id} >
       <TextInput placeholder="Search" state="search" {...inputProps}>
@@ -41,6 +40,7 @@ function Search({ id, onBtnClick, ...inputProps }) {
 
 Search.propTypes = {
   id: PropTypes.string,
+  onBtnClick: PropTypes.func
 };
 
 export default Search;

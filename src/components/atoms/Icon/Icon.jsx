@@ -24,8 +24,7 @@ function Icon({
   pulse,
   border,
   pull,
-  style,
-  onClick
+  style
 }) {
   let iconColor;
   switch (type) {
