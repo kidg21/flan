@@ -24,13 +24,14 @@ const SwitchContainer = styled.div`
   padding: 0 1em;
 `;
 
-function LayerCardBar({ id, title, switchProps, disabled, icons }) {
+function LayerCardBar({ id, title, switchProps, disabled, icons, onClick }) {
   // overrides the switch props when disabled
   let _switchProps = disabled ? {} : switchProps;
   const _icons = (<LayerIconBlock disabled={disabled}>{icons}</LayerIconBlock>);
   return (
     <Piece id={id}>
       <Bar
+        onClick={onClick}
         left={
           <SwitchContainer disabled={disabled}>
             <Switch {..._switchProps} />

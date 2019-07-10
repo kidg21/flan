@@ -12,7 +12,7 @@ const Arrow = styled(Icon)`
 
 function GroupCardBar({ id, title, onClick, length, initDown }) {
   const [rotate, setRotate] = useState(initDown);
-  const rotateDeg = rotate ? 180 : 0;
+  const rotateDeg = rotate ? 180 : null;
 
   function toggleLeft() {
     setRotate(!rotate);

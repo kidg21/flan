@@ -1,36 +1,48 @@
-import React, {useState} from "react";
-import styled, { css } from "styled-components";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
-import Card, {Piece} from "layout/Card";
+import { Piece } from "layout/Card";
 import Accordion from "blocks/Accordion";
 
-
-
-
-function CardAccordion({id, header, body, options, hasOptions, initial}) {
+function CardAccordion({
+  id,
+  header,
+  children,
+  options,
+  hasOptions,
+  initial,
+}) {
   const [activeAccordion, setActiveAccordion] = useState(initial);
   return (
     <Accordion
-    id={id}
-    header={header}
-    visibility={activeAccordion}
-    onClick={() => {
-      setActiveAccordion(!activeAccordion);}}
-  >
-    <Piece>
-    {body}
-    </Piece>
-    { hasOptions ? (<Piece>{options}</Piece>) : null}
-  </Accordion>
-    );
-  }
+      id={id}
+      header={header}
+      visibility={activeAccordion}
+      onClick={() => {
+        setActiveAccordion(!activeAccordion);
+      }}
+    >
+      <Piece>{children}</Piece>
+      {hasOptions ? (<Piece>{options}</Piece>) : null}
+    </Accordion>
+  );
+}
 
-  CardAccordion.propTypes = {
-    id: PropTypes.string,
-    header: PropTypes.any,
-    body: PropTypes.any,
-    hasOptions: PropTypes.bool,
-    options: PropTypes.any,
-    initial: PropTypes.bool
-  };
-      export default CardAccordion;
+CardAccordion.defaultProps = {
+  children: null,
+  hasOptions: false,
+  header: null,
+  id: "",
+  initial: false,
+  options: null,
+};
+
+CardAccordion.propTypes = {
+  children: PropTypes.node,
+  hasOptions: PropTypes.bool,
+  header: PropTypes.node,
+  id: PropTypes.string,
+  initial: PropTypes.bool,
+  options: PropTypes.node,
+};
+
+export default CardAccordion;
