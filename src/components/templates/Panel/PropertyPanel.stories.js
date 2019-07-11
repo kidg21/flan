@@ -6,6 +6,12 @@ import InformationCardBar from "elements/InformationCardBar";
 import Accordion from "blocks/Accordion";
 import Panel, { PanelSection } from "layout/Panel";
 
+const data = [
+  { id: "a", color: "Owners/Units", name: "Multiple Owners (2 Units)" },
+  { id: "b", color: "Master Parcel No.", name: "387483675638" },
+  { id: "c", color: "Zoning", name: "No Zone" }
+];
+
 storiesOf("Templates|Panel", module).add("Property Panel", () =>
   React.createElement(() => {
     const [visibility, setVisibility] = useState(false);
@@ -20,7 +26,7 @@ storiesOf("Templates|Panel", module).add("Property Panel", () =>
           <PropertyPanelHeader title="5201 California Ave. Irvine, California" />
         </PanelSection>
         <PanelSection body>
-          <Table />
+          <Table data={data} />
           <Accordion
             header={<InformationCardBar title="Ownership" />}
             visibility={visibility}
@@ -28,7 +34,7 @@ storiesOf("Templates|Panel", module).add("Property Panel", () =>
               setVisibility(!visibility);
             }}
           >
-            <Table />
+            <Table data={data} />
           </Accordion>
           <Accordion
             header={<InformationCardBar title="Site Information" />}
@@ -37,7 +43,7 @@ storiesOf("Templates|Panel", module).add("Property Panel", () =>
               setVisibility2(!visibility2);
             }}
           >
-            <Table />
+            <Table data={data} />
           </Accordion>
 
           <Accordion
@@ -47,7 +53,7 @@ storiesOf("Templates|Panel", module).add("Property Panel", () =>
               setVisibility3(!visibility3);
             }}
           >
-            <Table />
+            <Table data={data} />
           </Accordion>
 
           <Accordion
@@ -57,7 +63,7 @@ storiesOf("Templates|Panel", module).add("Property Panel", () =>
               setVisibility4(!visibility4);
             }}
           >
-            <Table />
+            <Table data={data} />
           </Accordion>
 
           <Accordion
@@ -67,7 +73,7 @@ storiesOf("Templates|Panel", module).add("Property Panel", () =>
               setVisibility5(!visibility5);
             }}
           >
-            <Table />
+            <Table data={data} />
           </Accordion>
 
           <Accordion
@@ -77,7 +83,7 @@ storiesOf("Templates|Panel", module).add("Property Panel", () =>
               setVisibility6(!visibility6);
             }}
           >
-            <Table />
+            <Table data={data} />
           </Accordion>
         </PanelSection>
       </Panel>

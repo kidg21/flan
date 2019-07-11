@@ -17,17 +17,18 @@ function PropertyPanelHeader({ id, title, onClick, onClickDirection }) {
       <HeaderSpace>
         <Bar
           left={title}
-          right={
+          center={
             <IconBlock>
               <Icon
                 icon={["fal", "directions"]}
-                size="lg"
-                anchor
+                size="2x"
+                type="info"
                 onClickDirection={onClickDirection}
               />
-              <Icon icon={["far", "ellipsis-v"]} size="lg" onClick={onClick} />
+              
             </IconBlock>
           }
+          right={<Icon icon={["far", "ellipsis-v"]} size="lg" onClick={onClick} />}
         />
       </HeaderSpace>
     </Piece>

@@ -162,7 +162,7 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
           <PanelSection body>
             <Form>
-              <Bar type="one" right={<a> Reset </a>} />
+              {/* <Bar type="one" right={<a> Reset </a>} /> */}
               {/* <Label right grey content="Reset" /> */}
               <Section>
                 <InputLabel inputLabel="Last Sale Date" />
@@ -190,7 +190,7 @@ storiesOf("Templates|Panel/Property Filters", module)
                 <RangeSlider label="Last Sale Price" />
               </Section>
               <Section>
-                <Input
+                <TextInput
                   inputLabel="Seller Name"
                   placeholder="i.e. Mary Williams"
                   type="text"
@@ -207,7 +207,9 @@ storiesOf("Templates|Panel/Property Filters", module)
             </Form>
           </PanelSection>
           <PanelSection>
-            <Button buttonLabel="Apply" isRound="true" />
+            <CenteredSection>
+              <Button buttonLabel="Apply" isRound="true" />
+            </CenteredSection>
           </PanelSection>
         </Panel>
       );
@@ -229,7 +231,7 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
           <PanelSection body>
             <Form>
-              <Bar type="one" right={<a> Reset </a>} />
+              {/* <Bar type="one" right={<a> Reset </a>} /> */}
               <Section>
                 <RangeSlider label="Year Built" />
                 <RangeSlider label="Number of Units" />
@@ -237,7 +239,7 @@ storiesOf("Templates|Panel/Property Filters", module)
                 <RangeSlider label="Lot Size (ft2)" />
               </Section>
               <Section>
-                <Input
+                <TextInput
                   inputLabel="Zoning (Assessor)"
                   placeholder="i.e. Mary Williams"
                   type="text"
@@ -272,12 +274,12 @@ storiesOf("Templates|Panel/Property Filters", module)
 
       return (
         <Panel>
-          <PanelSection>
+          {/* <PanelSection>
             <PanelHeader title="New Characteristics" navigation={true} />
-          </PanelSection>
+          </PanelSection> */}
           <PanelSection body>
             <Form>
-              <Bar onePart={true} secondSlot={<a> Reset </a>} />
+              {/* <Bar onePart={true} secondSlot={<a> Reset </a>} /> */}
               <Section>
                 <DataRange
                   firstOptions={options}
@@ -300,7 +302,7 @@ storiesOf("Templates|Panel/Property Filters", module)
                   label="Range 4"
                 />
 
-                <Input
+                <TextInput
                   inputLabel="Zoning (Assessor)"
                   placeholder="i.e. Mary Williams"
                   type="text"
@@ -340,14 +342,14 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
           <PanelSection body>
             <Form>
-              <Bar type="one" right={<a> Reset </a>} />
+              {/* <Bar type="one" right={<a> Reset </a>} /> */}
               <Section>
                 <RangeSlider label="Aggregate Acreage" />
                 <RangeSlider label="Aggregate Lot Count" />
                 <RangeSlider label="Aggregated Lot Width Median" />
               </Section>
               <Section>
-                <Input
+                <TextInput
                   inputLabel="Zoning (Assessor)"
                   placeholder="i.e. Mary Williams"
                   type="text"
@@ -387,7 +389,7 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
           <PanelSection body>
             <Form>
-              <Bar type="one" right={<a> Reset </a>} />
+              {/* <Bar type="one" right={<a> Reset </a>} /> */}
               <Section>
                 <RangeSlider label="Assessed Value" />
                 <RangeSlider label="Improvement Percentage" />
@@ -421,25 +423,29 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
           <PanelSection body>
             <Form>
-              <Bar type="one" right={<a> Reset </a>} />
+              {/* <Bar type="one" right={<a> Reset </a>} /> */}
               <Section>
-                <Input
+                <TextInput
                   inputLabel="Street Name"
                   placeholder="i.e. Main St."
                   type="text"
                 />
-                <Input
+                <TextInput
                   inputLabel="City"
                   placeholder="i.e. New York City"
                   type="text"
                 />
-                <Input
+                <TextInput
                   inputLabel="State"
                   placeholder="i.e. New York"
                   type="text"
                 />
-                <Input inputLabel="Zip" placeholder="i.e. 92614" type="text" />
-                <Input
+                <TextInput
+                  inputLabel="Zip"
+                  placeholder="i.e. 92614"
+                  type="text"
+                />
+                <TextInput
                   inputLabel="Country"
                   placeholder="i.e. United States"
                   type="text"
@@ -472,7 +478,7 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
           <PanelSection body>
             <Form>
-              <Bar type="one" right={<a> Reset </a>} />
+              {/* <Bar type="one" right={<a> Reset </a>} /> */}
               <Section>
                 <SectionName>Commercial</SectionName>
                 <InputGroup col_2>

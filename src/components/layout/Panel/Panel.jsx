@@ -36,8 +36,7 @@ const PanelSection = styled.section`
   overflow-x: hidden;
   overflow-y: ${props => (props.body ? "scroll" : "")};
   max-height: 100vh;
-  /* box-shadow: ${props =>
-    props.body ? "none" : shadows.panelSectionShadow}; */
+
   box-shadow: ${props => (props.body ? "none" : shadows.panelSectionShadow)};
   transition: all 0.2s ease-in-out;
   /* Prototype Content - displays when a Panel Section is empty */

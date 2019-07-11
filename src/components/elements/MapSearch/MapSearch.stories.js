@@ -1,12 +1,10 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import Search from "./Search";
-import Controls from "./Controls";
+import MapSearch from "elements/MapSearch";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
 
-storiesOf("Elements|Search", module)
+storiesOf("Elements|MapSearch", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  .add("Default", () => <Search />)
-  .add("Segmented Controls", () => <Controls />);
+  .add("Default", () => <MapSearch />);

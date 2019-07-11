@@ -1,8 +1,8 @@
-import React, { useState, Fragment } from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Icon from "atoms/Icon";
-import TextInput from "atoms/TextInput";
+import Search from "blocks/Search";
+import Tabs, { Tab } from "blocks/Tabs";
 import { colors, shadows } from "Variables";
 
 const IconWrapper = styled.span`
@@ -23,26 +23,19 @@ const SearchContainer = styled.div`
   }
 `;
 
-
-
-
-function Search({ id, ...inputProps }) {
+function MapSearch({ id, ...searchProps }) {
   const [activeSingleTab, setActiveSingleTab] = useState("tab1");
   return (
     <SearchContainer id={id}>
-      <TextInput placeholder="Search" state="search" {...inputProps}>
-        <IconWrapper>
-          <Icon icon={["far", "search"]} type="info" />
-        </IconWrapper>
-      </TextInput>
+      <Search {...searchProps} />
     </SearchContainer>
   );
 }
 
-Search.propTypes = {
+MapSearch.propTypes = {
   id: PropTypes.string,
 };
 
-export default Search;
+export default MapSearch;
 
 ///this one will need more work on setting up for logic like Autocomplete and everything else
