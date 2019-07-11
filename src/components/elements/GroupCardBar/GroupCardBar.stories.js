@@ -8,4 +8,4 @@ import { Padding } from "helpers/Display";
 storiesOf("Elements|Card Bar/", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  .add("Group", () => <GroupCardBar initDown title="Ownership" length={2}/>);
+  .add("Group", () => <GroupCardBar title="Ownership" length={2}/>);
