@@ -9,8 +9,8 @@ import Card, { Piece } from "layout/Card";
 import Switch from "atoms/Switch";
 
 const LayerIconBlock = styled(IconBlock)`
-  filter: "brightness(${props => props.disabled ? 200 : 150}%)",
-  lineHeight: "normal",
+  filter: ${props => props.disabled ? "brightness(200%)" : "brightness(150%)"};
+  lineHeight: "normal";
 `;
 
 const Space = {
