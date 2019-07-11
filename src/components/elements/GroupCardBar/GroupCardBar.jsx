@@ -6,8 +6,7 @@ import Icon from "atoms/Icon";
 import Bar from "blocks/Bar";
 import { Piece } from "layout/Card";
 
-const _Icon = Icon;
-const Arrow = styled(_Icon)`
+const Arrow = styled(Icon)`
   transition: all 0.3s ease;
 `;
 

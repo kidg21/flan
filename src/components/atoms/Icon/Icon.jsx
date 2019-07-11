@@ -25,6 +25,7 @@ function Icon({
   pull,
   style,
   onClick,
+  className,
 }) {
   let iconColor;
   switch (type) {
@@ -60,6 +61,7 @@ function Icon({
       border={border}
       pull={pull}
       style={style}
+      className={className}
     />
   );
 
@@ -104,6 +106,8 @@ Icon.propTypes = {
   border: PropTypes.bool,
   style: PropTypes.string,
   onClick: PropTypes.func,
+  /** className used for extending styles */
+  className: PropTypes.string,
 };
 
 export default Icon;
