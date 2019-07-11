@@ -9,16 +9,16 @@ function CardAccordion({
   children,
   options,
   hasOptions,
-  initial,
+  initOpen,
 }) {
-  const [activeAccordion, setActiveAccordion] = useState(initial);
+  const [isOpen, setIsOpen] = useState(initOpen);
   return (
     <Accordion
       id={id}
       header={header}
-      visibility={activeAccordion}
+      visibility={isOpen}
       onClick={() => {
-        setActiveAccordion(!activeAccordion);
+        setIsOpen(!isOpen);
       }}
     >
       <Piece>{children}</Piece>
@@ -32,7 +32,7 @@ CardAccordion.defaultProps = {
   hasOptions: false,
   header: null,
   id: "",
-  initial: false,
+  initOpen: false,
   options: null,
 };
 
@@ -41,7 +41,7 @@ CardAccordion.propTypes = {
   hasOptions: PropTypes.bool,
   header: PropTypes.node,
   id: PropTypes.string,
-  initial: PropTypes.bool,
+  initOpen: PropTypes.bool,
   options: PropTypes.node,
 };
 
