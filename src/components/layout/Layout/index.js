@@ -1,13 +1,1 @@
-export {
-  default,
-  OuterWrapper,
-  InnerWrapper,
-  LeftWrapper,
-  CenterWrapper,
-  CenterWrapperTop,
-  CenterWrapperMiddle,
-  CenterWrapperBottom,
-  RightWrapper,
-  BarWrapper,
-  Wrapper,
-} from "./Layout.jsx";
+export { default } from "./Layout.jsx";
