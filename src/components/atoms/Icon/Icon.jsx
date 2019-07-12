@@ -9,7 +9,6 @@ const StyledIcon = styled(FontAwesomeIcon)`
   border: ${props => (props.border ? "2px solid" : "")};
   border-color: ${props => (props.border ? colors.grey_20 : "")};
   border-radius: ${props => (props.border ? "5px" : "")};
-  grid-area: icon;
 `;
 
 function Icon({
@@ -24,7 +23,8 @@ function Icon({
   pulse,
   border,
   pull,
-  style
+  className,
+  style,
 }) {
   let iconColor;
   switch (type) {
@@ -59,6 +59,7 @@ function Icon({
       pulse={pulse}
       border={border}
       pull={pull}
+      className={className}
       style={style}
     />
   );
@@ -92,7 +93,8 @@ Icon.propTypes = {
   /** Options: 'left', 'right' */
   pull: PropTypes.string,
   border: PropTypes.bool,
-  style: PropTypes.string
+  className: PropTypes.string,
+  style: PropTypes.string,
 };
 
 export default Icon;
