@@ -31,7 +31,7 @@ function Search({ id, onBtnClick, ...inputProps }) {
     <SearchContainer id={id} >
       <TextInput placeholder="Search" state="search" {...inputProps}>
         <IconWrapper>
-          <a onClick={() => { return onBtnClick(); }}><Icon icon={["far", "search"]} type="info" /></a>
+          <a onClick={onBtnClick}><Icon icon={["far", "search"]} type="info" /></a>
         </IconWrapper>
       </TextInput>
     </SearchContainer>

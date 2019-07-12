@@ -119,7 +119,7 @@ function TextInput({
         placeholderColor={placeholderColor}
         inputCaretColor={inputCaretColor}
         inputSelectColor={inputSelectColor}
-        onChange={(e) => { if (onChange) onChange(e); }}
+        onChange={onChange}
       />
       {helpText ? <HelpText helpText={helpText} /> : null}
       {errorText ? <ErrorText errorText={errorText} /> : null}
