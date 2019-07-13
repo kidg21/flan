@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from "react";
 import PropTypes from "prop-types";
 import styled, { css, keyframes } from "styled-components";
-import { colors } from "Variables";
+import { colors, viewport, screen } from "Variables";
 import { PlaceholderText } from "helpers/Placeholders";
 
 const FlexWrapper = styled.div`
@@ -54,6 +54,13 @@ function Wrapper({
   state,
   name,
 }) {
+  // const screenSmall = window.matchMedia("(min-width: 0px)");
+  // const screenMedium = window.matchMedia("(max-width: 640px)");
+  // const screenLarge = window.matchMedia("(max-width: 1024px)");
+  const screenSmall = window.matchMedia(screen.small);
+  const screenMedium = window.matchMedia(screen.medium);
+  const screenLarge = window.matchMedia(screen.large);
+  // const mq = window.matchMedia( "(min-width: 500px)" );
   let displayState;
   switch (name) {
     case "outerWrapper":
@@ -72,17 +79,43 @@ function Wrapper({
       backgroundColor = "yellow";
       break;
     case "leftWrapper":
-      width = "30%";
-      backgroundColor = "lightgrey";
+      // backgroundColor = "lightgrey";
+      // width = "30%";
+      if (screenLarge.matches) {
+        width = "100%";
+        backgroundColor = "pink";
+      } else if (screenMedium.matches) {
+        width = "40%";
+        backgroundColor = "yellow";
+      } else {
+        width = "30%";
+        backgroundColor = "orange";
+      }
       break;
     case "mainWrapper":
-      width = "70%";
-      backgroundColor = "violet";
+      if (screenLarge.matches) {
+        width = "70%";
+        backgroundColor = "violet";
+      } else if (screenMedium.matches) {
+        width = "60%";
+        backgroundColor = "green";
+      } else if (screenSmall.matches) {
+        width = "100%";
+        backgroundColor = "purple";
+      }
       break;
     case "rightWrapper":
-      width = "30%";
       right = "0";
-      backgroundColor = "pink";
+      if (screenLarge.matches) {
+        width = "30%";
+        backgroundColor = "pink";
+      } else if (screenMedium.matches) {
+        width = "40%";
+        backgroundColor = "yellow";
+      } else if (screenSmall.matches) {
+        width = "100%";
+        backgroundColor = "orange";
+      }
       break;
     case "controlsWrapper":
       setPosition = "relative";
@@ -93,22 +126,6 @@ function Wrapper({
       break;
   }
   switch (state) {
-    // case "onScreen":
-    //   if (name === "contentWrapper") {
-    //     displayState = "translate3d(30%, 0, 0)";
-    //   } else {
-    //     displayState = "translate3d(0, 0, 0)";
-    //   }
-    //   break;
-    // case "offscreenLeft":
-    //   displayState = "translate3d(-100%, 0, 0)";
-    //   break;
-    // case "offscreenRight":
-    //   displayState = "translate3d(100%, 0, 0)";
-    //   break;
-    // case "leftOpen":
-    //   displayState = "translate3d(30%, 0, 0)";
-    //   break;
     case "offscreenTop":
       displayState = "translate3d(0, -100%, 0)";
       break;
@@ -126,10 +143,16 @@ function Wrapper({
     case "fullScreen":
       width = "100%";
       break;
-    default:
     case "onScreen":
+    default:
       if (name === "contentWrapper") {
-        displayState = "translate3d(30%, 0, 0)";
+        if (screenLarge.matches) {
+          displayState = "translate3d(30%, 0, 0)";
+        } else if (screenMedium.matches) {
+          displayState = "translate3d(40%, 0, 0)";
+        } else if (screenSmall.matches) {
+          displayState = "translate3d(100%, 0, 0)";
+        }
       } else {
         displayState = "translate3d(0, 0, 0)";
       }
