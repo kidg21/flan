@@ -33,6 +33,7 @@ export { default as Tabs, Tab } from "./blocks/Tabs";
 export { default as CardAccordion } from "./elements/CardAccordion";
 export { default as InformationCardBar } from "./elements/InformationCardBar";
 export { default as LayerCardBar } from "./elements/LayerCardBar";
+export { default as GroupCardBar } from "./elements/GroupCardBar";
 export { default as NavigationCardBar } from "./elements/NavigationCardBar";
 export { default as MainPanelHeader } from "./elements/MainPanelHeader";
 export { default as PropertyPanelHeader } from "./elements/PropertyPanelHeader";
