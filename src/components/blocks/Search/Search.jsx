@@ -29,12 +29,12 @@ const SearchContainer = styled.div`
 function Search({ id, onBtnClick, ...inputProps }) {
   return (
     <SearchContainer id={id} >
-      <TextInput placeholder="Search" state="search" {...inputProps}>
+      <TextInput placeholder="Search" state="search" {...inputProps} >
         <IconWrapper>
-          <a onClick={onBtnClick}><Icon icon={["far", "search"]} type="info" /></a>
+          <Icon icon={["far", "search"]} type="info" onClick={onBtnClick}/>
         </IconWrapper>
       </TextInput>
-    </SearchContainer>
+    </SearchContainer >
   );
 }
 

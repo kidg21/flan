@@ -5,7 +5,6 @@ import { colors, shadows } from "Variables";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const StyledIcon = styled(FontAwesomeIcon)`
-  color: ${props => props.iconColor || ""};
   border: ${props => (props.border ? "2px solid" : "")};
   border-color: ${props => (props.border ? colors.grey_20 : "")};
   border-radius: ${props => (props.border ? "5px" : "")};
@@ -24,7 +23,9 @@ function Icon({
   pulse,
   border,
   pull,
-  style
+  style,
+  onClick,
+  className,
 }) {
   let iconColor;
   switch (type) {
@@ -46,11 +47,11 @@ function Icon({
     default:
       break;
   }
-  return (
+  let _icon = (
     <StyledIcon
       id={id}
       icon={icon}
-      iconColor={iconColor}
+      color={iconColor}
       size={size}
       fixedWidth={fixedWidth}
       rotation={rotation}
@@ -60,7 +61,18 @@ function Icon({
       border={border}
       pull={pull}
       style={style}
+      className={className}
     />
+  );
+
+  if (onClick) {
+    _icon = (<a onClick={onClick}>{_icon}</a>);
+  }
+
+  return (
+    <React.Fragment>
+      {_icon}
+    </React.Fragment>
   );
 }
 
@@ -92,7 +104,10 @@ Icon.propTypes = {
   /** Options: 'left', 'right' */
   pull: PropTypes.string,
   border: PropTypes.bool,
-  style: PropTypes.string
+  style: PropTypes.string,
+  onClick: PropTypes.func,
+  /** className used for extending styles */
+  className: PropTypes.string,
 };
 
 export default Icon;

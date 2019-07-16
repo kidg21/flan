@@ -14,24 +14,24 @@ const TextInputContainer = styled.div`
 const Input = styled.input`
   border: 1px solid;
   border-color: ${(props) => { return props.inputBorderColor || ""; }};
-  background-color: ${(props) => { return props.inputFillColor || ""; }};
-  caret-color: ${(props) => { return props.inputCaretColor || ""; }};
-  min-height: 2.75rem;
-  padding: 0.5rem 0.75rem;
-  resize: vertical;
-  ::placeholder {
-    color: ${(props) => { return props.placeholderColor || ""; }};
+background - color: ${(props) => { return props.inputFillColor || ""; }};
+caret - color: ${(props) => { return props.inputCaretColor || ""; }};
+min - height: 2.75rem;
+padding: 0.5rem 0.75rem;
+resize: vertical;
+  :: placeholder {
+  color: ${(props) => { return props.placeholderColor || ""; }};
+}
+  &: hover {
+  border - color: ${(props) => { return props.inputBorderColorHover || colors.grey_40; }};
+}
   }
-  &:hover {
-    border-color: ${(props) => { return props.inputBorderColorHover || colors.grey_40; }};
-    }
+  &: focus {
+  border - color: ${(props) => { return props.inputBorderColorHover || colors.success; }};
+    :: selection {
+    background - color: ${(props) => { return props.inputSelectColor || ""; }};
   }
-  &:focus {
-    border-color: ${(props) => { return props.inputBorderColorHover || colors.success; }};
-    ::selection {
-      background-color: ${(props) => { return props.inputSelectColor || ""; }};
-    }
-  }
+}
 `;
 
 function TextInput({
@@ -49,7 +49,9 @@ function TextInput({
   isDisabled,
   children,
   style,
-  onChange
+  onChange,
+  autocompleteList,
+  autocompleteListId,
 }) {
   let inputTextColor;
   let inputFillColor;
@@ -93,6 +95,14 @@ function TextInput({
       inputSelectColor = colors.success;
       break;
   }
+  // construct datalist element for autocompletes if appropriate props passed in
+  // the autocompleteListId is used to ensure each textinput only draws from its own datalist element
+  let autocompleteDataList = null;
+  if (autocompleteList && autocompleteListId) {
+    const options = autocompleteList.map((item) => { return (<option key={item.key || item.value} value={item.value}>{item.value}</option>); });
+    autocompleteDataList = (<datalist id={autocompleteListId}>{options}</datalist>);
+  }
+
   return (
     <TextInputContainer
       id={id}
@@ -120,7 +130,10 @@ function TextInput({
         inputCaretColor={inputCaretColor}
         inputSelectColor={inputSelectColor}
         onChange={onChange}
+        size={"50"}  // temp while developing Locate
+        list={autocompleteListId}
       />
+      {autocompleteDataList}
       {helpText ? <HelpText helpText={helpText} /> : null}
       {errorText ? <ErrorText errorText={errorText} /> : null}
       {children}
@@ -140,7 +153,9 @@ TextInput.propTypes = {
   errorText: PropTypes.string,
   state: PropTypes.string,
   style: PropTypes.string,
-  onChange: PropTypes.func
+  onChange: PropTypes.func,
+  autocompleteDataList: PropTypes.arrayOf(PropTypes.object),
+  autocompleteListId: PropTypes.string,
 };
 
 export { TextInput as default };
