@@ -13,7 +13,7 @@ const TabsWrapper = styled.section`
   bottom: ${props => props.alignBottom || ""};
   right: ${props => (props.alignRight ? "0" : "")};
   width: ${props => props.setWidth || "100%"};
-  height: ${props => props.setHeight || ""};
+  height: ${props => props.setHeight || "100%"};
   padding: ${props => (props.isFloating ? ".25rem" : "")};
   z-index: ${props => (props.isFloating ? "1001" : "")};
   filter: ${props => (props.isFloating ? shadows.cardShadow : "")};
@@ -55,12 +55,12 @@ function Tabs({ id, children, columns, align, isFloating, style, isSearch }) {
   }
   switch (align) {
     case "bottom":
-      setPosition = "absolute";
+      // setPosition = "absolute";
       alignBottom = "0";
       break;
     case "left":
       setColumns = "none";
-      setPosition = "absolute";
+      // setPosition = "absolute";
       setWidth = "auto";
       setHeight = "100%";
       setOrientation = "flex";
@@ -68,7 +68,7 @@ function Tabs({ id, children, columns, align, isFloating, style, isSearch }) {
       break;
     case "right":
       setColumns = "none";
-      setPosition = "absolute";
+      // setPosition = "absolute";
       setWidth = "auto";
       setHeight = "100%";
       setOrientation = "flex";
