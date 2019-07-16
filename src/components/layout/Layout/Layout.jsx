@@ -41,6 +41,7 @@ function Wrapper({
   id,
   children,
   width,
+  height,
   right,
   setPosition,
   flexDirection,
@@ -54,41 +55,47 @@ function Wrapper({
   state,
   name,
 }) {
-  // const screenSmall = window.matchMedia("(min-width: 0px)");
-  // const screenMedium = window.matchMedia("(max-width: 640px)");
-  // const screenLarge = window.matchMedia("(max-width: 1024px)");
   const screenSmall = window.matchMedia(screen.small);
   const screenMedium = window.matchMedia(screen.medium);
   const screenLarge = window.matchMedia(screen.large);
-  // const mq = window.matchMedia( "(min-width: 500px)" );
   let displayState;
   switch (name) {
     case "outerWrapper":
       setPosition = "relative";
-      flexDirection = "row";
       backgroundColor = "black";
+      if (screenMedium.matches) {
+        flexDirection = "row";
+      } else if (screenSmall.matches) {
+        flexDirection = "column";
+      }
       break;
     case "innerWrapper":
       setPosition = "relative";
-      flexDirection = "row";
       backgroundColor = "green";
+      if (screenMedium.matches) {
+        flexDirection = "row";
+      } else if (screenSmall.matches) {
+        flexDirection = "column";
+      }
       break;
     case "contentWrapper":
       setPosition = "relative";
-      flexDirection = "row";
       backgroundColor = "yellow";
+      if (screenMedium.matches) {
+        flexDirection = "row";
+      } else if (screenSmall.matches) {
+        flexDirection = "column";
+      }
       break;
     case "leftWrapper":
-      // backgroundColor = "lightgrey";
-      // width = "30%";
       if (screenLarge.matches) {
-        width = "100%";
+        width = "30%";
         backgroundColor = "pink";
       } else if (screenMedium.matches) {
         width = "40%";
         backgroundColor = "yellow";
       } else {
-        width = "30%";
+        width = "100%";
         backgroundColor = "orange";
       }
       break;
@@ -119,8 +126,14 @@ function Wrapper({
       break;
     case "controlsWrapper":
       setPosition = "relative";
-      width = "100px";
       backgroundColor = "red";
+      if (screenMedium.matches) {
+        width = "100px";
+        height = "100%";
+      } else if (screenSmall.matches) {
+        width = "100%";
+        height = "60px";
+      }
       break;
     default:
       break;
@@ -162,6 +175,7 @@ function Wrapper({
     <FlexWrapper
       id={id}
       width={width}
+      height={height}
       right={right}
       setPosition={setPosition}
       flexDirection={flexDirection}

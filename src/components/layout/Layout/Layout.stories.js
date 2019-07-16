@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
+import { colors, viewport, screen } from "Variables";
 import Tabs, { Tab } from "blocks/Tabs";
 import Wrapper from "layout/Layout";
+import Card from "layout/Card";
 
 storiesOf("Application|Layout/", module)
+  // .addParameters({ viewport: { defaultViewport: "iphone6" } })
+  // .addParameters({ viewport: { defaultViewport: "ipad" } })
+  // .addParameters({ viewport: { defaultViewport: "responsive" } })
   .add("2 Panel - 70/30", () => (
     <Wrapper>
       <Wrapper width="70%" />
@@ -80,7 +85,14 @@ storiesOf("Application|Layout/", module)
         }
         return false;
       }
-
+      const screenSmall = window.matchMedia(screen.small);
+      const screenMedium = window.matchMedia(screen.medium);
+      let controlsAlign;
+      if (screenMedium.matches) {
+        controlsAlign = "right";
+      } else if (screenSmall.matches) {
+        controlsAlign = "bottom";
+      }
       return (
         <Wrapper id="outer" name="outerWrapper">
           <Wrapper id="inner" name="innerWrapper">
@@ -88,14 +100,16 @@ storiesOf("Application|Layout/", module)
             <Wrapper id="content" name="contentWrapper" state={leftState}>
               <Wrapper id="main" name="mainWrapper" state={mainState} />
               <Wrapper id="right" name="rightWrapper" state={rightState}>
-                <Tabs align="bottom">
-                  <Tab tabLabel="Toggle Fullscreen" onClick={toggleRightFullscreen} />
-                </Tabs>
+                <Card>
+                  <Tabs align="bottom">
+                    <Tab tabLabel="Toggle Fullscreen" onClick={toggleRightFullscreen} />
+                  </Tabs>
+                </Card>
               </Wrapper>
             </Wrapper>
           </Wrapper>
-          <Wrapper id="controls" name="controlsWrapper">
-            <Tabs align="right">
+          <Wrapper id="controls" name="controlsWrapper" align="bottom">
+            <Tabs align={controlsAlign}>
               <Tab tabLabel="Toggle Left Wrapper" onClick={toggleLeft} isSelected={activeLeft} />
               <Tab tabLabel="Toggle Right Wrapper" onClick={toggleRight} isSelected={activeRight} />
             </Tabs>
