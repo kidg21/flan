@@ -71,10 +71,10 @@
     "prettier": "^1.17.0",
     "react-mapbox-gl": "^4.4.0",
     "react-storybook-addon-chapters": "^3.1.3",
+    "ss-core": "git+ssh://git@bitbucket.org:DigMap/sstream-core.git",
     "ss-styled-components": ".",
     "string-replace-webpack-plugin": "^0.1.3",
-    "webpack-cli": "^3.3.0",
-    "ss-core": "git+ssh://git@bitbucket.org:DigMap/sstream-core.git"
+    "webpack-cli": "^3.3.0"
   },
   "author": "Greg Person, Liz Gallagher",
   "license": "ISC",
