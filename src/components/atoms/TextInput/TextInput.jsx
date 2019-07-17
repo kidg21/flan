@@ -99,9 +99,11 @@ function TextInput({
   // construct datalist element for autocompletes if appropriate props passed in
   // the autocompleteListId is used to ensure each textinput only draws from its own datalist element
   let autocompleteDataList = null;
-  if (autocompleteList && autocompleteListId) {
-    const options = autocompleteList.map((item) => { return (<option key={item.key || item.value} value={item.value}>{item.value}</option>); });
-    autocompleteDataList = (<datalist id={autocompleteListId}>{options}</datalist>);
+  let autoCompleteDataListId = null;
+  if (autocompleteList) {
+    autoCompleteDataListId = Dmp.Util.getGuid();
+    const options = autocompleteList.map((item) => { return (<option key={Dmp.Util.getGuid()} value={item}>{item}</option>); });
+    autocompleteDataList = (<datalist id={autoCompleteDataListId}>{options}</datalist>);
   }
 
   return (
@@ -131,7 +133,7 @@ function TextInput({
         inputCaretColor={inputCaretColor}
         inputSelectColor={inputSelectColor}
         onChange={onChange}
-        list={autocompleteListId}
+        list={autoCompleteDataListId}
         size={size} // overriding this while developing so it's easier to see
       />
       {autocompleteDataList}
@@ -155,8 +157,7 @@ TextInput.propTypes = {
   state: PropTypes.string,
   style: PropTypes.string,
   onChange: PropTypes.func,
-  autocompleteList: PropTypes.arrayOf(PropTypes.object),
-  autocompleteListId: PropTypes.string,
+  autocompleteList: PropTypes.arrayOf(PropTypes.string),
   size: PropTypes.string
 };
 
