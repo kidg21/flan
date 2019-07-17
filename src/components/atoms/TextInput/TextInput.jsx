@@ -8,30 +8,30 @@ const TextInputContainer = styled.div`
   display: grid;
   grid-gap: 0.35rem;
   align-content: flex-start;
-  color: ${(props) => { return props.inputTextColor || ""; }};
+  color: ${props => props.inputTextColor || ""};
 `;
 
 const Input = styled.input`
   border: 1px solid;
-  border-color: ${(props) => { return props.inputBorderColor || ""; }};
-background - color: ${(props) => { return props.inputFillColor || ""; }};
-caret - color: ${(props) => { return props.inputCaretColor || ""; }};
-min - height: 2.75rem;
-padding: 0.5rem 0.75rem;
-resize: vertical;
-  :: placeholder {
-  color: ${(props) => { return props.placeholderColor || ""; }};
-}
-  &: hover {
-  border - color: ${(props) => { return props.inputBorderColorHover || colors.grey_40; }};
-}
+  border-color: ${props => props.inputBorderColor || ""};
+  background-color: ${props => props.inputFillColor || ""};
+  caret-color: ${props => props.inputCaretColor || ""};
+  min-height: 2.75rem;
+  padding: 0.5rem 0.75rem;
+  resize: vertical;
+  ::placeholder {
+    color: ${props => props.placeholderColor || ""};
   }
-  &: focus {
-  border - color: ${(props) => { return props.inputBorderColorHover || colors.success; }};
-    :: selection {
-    background - color: ${(props) => { return props.inputSelectColor || ""; }};
+  &:hover {
+    border-color: ${props => props.inputBorderColorHover || colors.grey_40};
+    }
   }
-}
+  &:focus {
+    border-color: ${props => props.inputBorderColorHover || colors.success};
+    ::selection {
+      background-color: ${props => props.inputSelectColor || ""};
+    }
+  }
 `;
 
 function TextInput({
@@ -52,6 +52,7 @@ function TextInput({
   onChange,
   autocompleteList,
   autocompleteListId,
+  size,
 }) {
   let inputTextColor;
   let inputFillColor;
@@ -130,8 +131,8 @@ function TextInput({
         inputCaretColor={inputCaretColor}
         inputSelectColor={inputSelectColor}
         onChange={onChange}
-        size={"50"}  // temp while developing Locate
         list={autocompleteListId}
+        size={size} // overriding this while developing so it's easier to see
       />
       {autocompleteDataList}
       {helpText ? <HelpText helpText={helpText} /> : null}
@@ -154,8 +155,9 @@ TextInput.propTypes = {
   state: PropTypes.string,
   style: PropTypes.string,
   onChange: PropTypes.func,
-  autocompleteDataList: PropTypes.arrayOf(PropTypes.object),
+  autocompleteList: PropTypes.arrayOf(PropTypes.object),
   autocompleteListId: PropTypes.string,
+  size: PropTypes.string
 };
 
 export { TextInput as default };

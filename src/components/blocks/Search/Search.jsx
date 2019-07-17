@@ -26,21 +26,27 @@ const SearchContainer = styled.div`
 
 
 
-function Search({ id, onBtnClick, ...inputProps }) {
+function Search({ id, onStartLocate, ...inputProps }) {
   return (
     <SearchContainer id={id} >
-      <TextInput placeholder="Search" state="search" {...inputProps} >
-        <IconWrapper>
-          <Icon icon={["far", "search"]} type="info" onClick={onBtnClick}/>
-        </IconWrapper>
-      </TextInput>
+      <form onSubmit={onStartLocate}>
+        <TextInput placeholder="Search" state="search" {...inputProps} >
+          <IconWrapper>
+            <Icon icon={["far", "search"]} type="info" onClick={onStartLocate} />
+          </IconWrapper>
+        </TextInput>
+      </form>
     </SearchContainer >
   );
 }
 
 Search.propTypes = {
   id: PropTypes.string,
-  onBtnClick: PropTypes.func
+  onStartLocate: PropTypes.func,
+  value: PropTypes.string.isRequired,
+  autocompleteList: PropTypes.arrayOf(PropTypes.object),
+  autocompleteListId: PropTypes.string,
+  size: PropTypes.string,
 };
 
 export default Search;
