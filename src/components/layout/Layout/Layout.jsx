@@ -6,10 +6,10 @@ import { PlaceholderText } from "helpers/Placeholders";
 
 const FlexWrapper = styled.div`
   position: ${props => props.setPosition || "absolute"};
-  top: ${props => props.top || ""};
-  left: ${props => props.left || ""};
-  bottom: ${props => props.bottom || ""};
+  top: ${props => props.top || "0"};
   right: ${props => props.right || ""};
+  bottom: ${props => props.bottom || "0"};
+  left: ${props => props.left || ""};
   width: ${props => props.width || "100%"};
   height: ${props => props.height || "100%"};
   display: flex;
@@ -22,7 +22,7 @@ const FlexWrapper = styled.div`
   flex: ${props => props.setFlex || "1 1 auto"};
   flex-basis: ${props => props.flexBasis || ""};
   order: 0;
-  z-index: ${props => props.zIndex || "1"};
+  z-index: ${props => props.zIndex || "0"};
   max-width: 100%;
   max-height: 100%;
   transition: all 0.3s ease-in-out;
@@ -42,13 +42,17 @@ function Wrapper({
   children,
   width,
   height,
+  top,
   right,
+  bottom,
+  left,
   setPosition,
   flexDirection,
   alignContent,
   alignItems,
   alignSelf,
   setFlex,
+  zIndex,
   flexBasis,
   maxWidth,
   backgroundColor,
@@ -78,53 +82,82 @@ function Wrapper({
         flexDirection = "column";
       }
       break;
-    case "contentWrapper":
-      setPosition = "relative";
-      backgroundColor = "yellow";
-      if (screenMedium.matches) {
-        flexDirection = "row";
-      } else if (screenSmall.matches) {
-        flexDirection = "column";
-      }
-      break;
     case "leftWrapper":
       if (screenLarge.matches) {
         width = "30%";
-        backgroundColor = "pink";
+        backgroundColor = "violet";
       } else if (screenMedium.matches) {
         width = "40%";
-        backgroundColor = "yellow";
+        backgroundColor = "lightblue";
       } else {
-        width = "100%";
-        backgroundColor = "orange";
+        width = "80%";
+        backgroundColor = "lightgreen";
       }
       break;
     case "mainWrapper":
+      zIndex = "1";
+      flexDirection = "column";
+      backgroundColor = "lightgrey";
+      break;
+    case "topWrapper":
+      zIndex = "1";
       if (screenLarge.matches) {
-        width = "70%";
-        backgroundColor = "violet";
+        bottom = "10%";
+        height = "10%";
+        backgroundColor = "teal";
       } else if (screenMedium.matches) {
-        width = "60%";
-        backgroundColor = "green";
+        bottom = "20%";
+        height = "20%";
+        backgroundColor = "salmon";
       } else if (screenSmall.matches) {
-        width = "100%";
-        backgroundColor = "purple";
+        bottom = "30%";
+        height = "30%";
+        backgroundColor = "chocolate";
+      }
+      break;
+    case "middleWrapper":
+      if (screenLarge.matches) {
+        height = "60%";
+        backgroundColor = "lightgrey";
+      } else if (screenMedium.matches) {
+        backgroundColor = "grey";
+      } else if (screenSmall.matches) {
+        backgroundColor = "darkgrey";
+      }
+      break;
+    case "bottomWrapper":
+      if (screenLarge.matches) {
+        top = "60%";
+        height = "40%";
+        backgroundColor = "teal";
+      } else if (screenMedium.matches) {
+        top = "70%";
+        height = "30%";
+        backgroundColor = "salmon";
+      } else if (screenSmall.matches) {
+        top = "40%";
+        height = "60%";
+        backgroundColor = "chocolate";
       }
       break;
     case "rightWrapper":
-      right = "0";
+      zIndex = "1";
       if (screenLarge.matches) {
+        left = "70%";
         width = "30%";
         backgroundColor = "pink";
       } else if (screenMedium.matches) {
+        left = "60%";
         width = "40%";
         backgroundColor = "yellow";
       } else if (screenSmall.matches) {
-        width = "100%";
+        left = "20%";
+        width = "80%";
         backgroundColor = "orange";
       }
       break;
     case "controlsWrapper":
+      zIndex = "2";
       setPosition = "relative";
       backgroundColor = "red";
       if (screenMedium.matches) {
@@ -139,36 +172,85 @@ function Wrapper({
       break;
   }
   switch (state) {
-    case "offscreenTop":
-      displayState = "translate3d(0, -100%, 0)";
+    // Wrapper Left
+    case "leftUncover":
+      if (name === "innerWrapper" && screenLarge.matches) {
+        left = "30%";
+      } else if (name === "innerWrapper" && screenMedium.matches) {
+        left = "40%";
+      } else if (name === "innerWrapper" && screenSmall.matches) {
+        left = "80%";
+      }
       break;
-    case "offscreenBottom":
-      displayState = "translate3d(0, 100%, 0)";
+    case "leftCover":
+      if (name === "innerWrapper") {
+        left = "0";
+      }
       break;
 
-    case "offScreen":
-      if (name === "rightWrapper") {
-        displayState = "translate3d(100%, 0, 0)";
-      } else {
-        displayState = "translate3d(0, 0, 0)";
+    // Wrapper Right
+    case "rightOnscreen":
+      if (name === "mainWrapper" && screenLarge.matches) {
+        width = "70%";
+      } else if (name === "mainWrapper" && screenMedium.matches) {
+        width = "60%";
+      } else if (name === "mainWrapper" && screenSmall.matches) {
+        width = "100%";
       }
       break;
+    case "rightOffscreen":
+      if (name === "rightWrapper") {
+        left = "100%";
+      }
+      break;
+
+    // Wrapper Bottom
+    case "topOnscreen":
+      if (name === "middleWrapper" && screenLarge.matches) {
+        height = "60%";
+      } else if (name === "middleWrapper" && screenMedium.matches) {
+        top = "20%";
+        height = "80%";
+      } else if (name === "middleWrapper" && screenSmall.matches) {
+        height = "40%";
+      }
+      break;
+    case "topOffscreen":
+      if (name === "topWrapper") {
+        // bottom = "0";
+        top = "-20%";
+      } else if (name === "middleWrapper") {
+        height = "100%";
+      }
+      break;
+
+    // Wrapper Bottom
+    case "bottomOnscreen":
+      if (name === "middleWrapper" && screenLarge.matches) {
+        height = "60%";
+      } else if (name === "middleWrapper" && screenMedium.matches) {
+        height = "70%";
+      } else if (name === "middleWrapper" && screenSmall.matches) {
+        height = "40%";
+      }
+      break;
+    case "bottomOffscreen":
+      if (name === "bottomWrapper") {
+        top = "100%";
+      } else if (name === "middleWrapper") {
+        height = "100%";
+      }
+      break;
+
+    // Fullscreen
     case "fullScreen":
       width = "100%";
+      height = "100%";
+      top = "0";
+      left = "0";
       break;
-    case "onScreen":
+
     default:
-      if (name === "contentWrapper") {
-        if (screenLarge.matches) {
-          displayState = "translate3d(30%, 0, 0)";
-        } else if (screenMedium.matches) {
-          displayState = "translate3d(40%, 0, 0)";
-        } else if (screenSmall.matches) {
-          displayState = "translate3d(100%, 0, 0)";
-        }
-      } else {
-        displayState = "translate3d(0, 0, 0)";
-      }
       break;
   }
   return (
@@ -176,13 +258,17 @@ function Wrapper({
       id={id}
       width={width}
       height={height}
+      top={top}
       right={right}
+      bottom={bottom}
+      left={left}
       setPosition={setPosition}
       flexDirection={flexDirection}
       alignContent={alignContent}
       alignItems={alignItems}
       alignSelf={alignSelf}
       setFlex={setFlex}
+      zIndex={zIndex}
       flexBasis={flexBasis}
       maxWidth={maxWidth}
       backgroundColor={backgroundColor}

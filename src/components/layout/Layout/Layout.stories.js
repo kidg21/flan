@@ -18,73 +18,98 @@ storiesOf("Application|Layout/", module)
 
   .add("Layout - Test", () =>
     React.createElement(() => {
-      // Wrapper Top
-      // const [topOnscreen, setTopOnscreen] = useState(false);
-      const [activeTop, setActiveTop] = useState(false);
-      const [topState, setTopState] = useState("offscreenRight");
-      function toggleTop() {
-        if (topState === null) {
-          setActiveTop(false);
-          // setActiveToggleTab("");
-          // setMainWidth(mainWidthMax);
-          setTopState("offscreenRight");
-        } else {
-          setActiveTop(true);
-          // setActiveToggleTab("tabTop");
-          // setMainWidth(mainWidthMin);
-          setTopState(null);
-        }
-        // activeTop === true;
-        return false;
-      }
-      //   setTopOnscreen(!topOnscreen); // Toggles the Top Wrapper
-      // }
-      // Wrapper Bottom
-      const [bottomOnscreen, setBottomOnscreen] = useState(false);
-      function toggleBottom() {
-        setBottomOnscreen(!bottomOnscreen); // Toggles the Bottom Wrapper
-      }
-
-      // Wrapper Left
-      const [leftState, setLeftState] = useState("offScreen");
+      // Wrapper Inner
+      const [innerState, setInnerState] = useState("leftCover");
       const [activeLeft, setActiveLeft] = useState(false);
       function toggleLeft() {
-        if (leftState === "onScreen") {
-          setLeftState("offScreen");
+        if (innerState === "leftUncover") {
+          setInnerState("leftCover");
           setActiveLeft(false);
         } else {
-          setLeftState("onScreen");
+          setInnerState("leftUncover");
           setActiveLeft(true);
         }
         return false;
       }
 
       // Wrapper Main
-      const [mainState, setMainState] = useState("fullScreen");
+      const [mainState, setMainState] = useState("rightOffscreen");
 
       // Wrapper Right
-      const [rightState, setRightState] = useState("offScreen");
+      const [rightState, setRightState] = useState("rightOffscreen");
       const [activeRight, setActiveRight] = useState(false);
       function toggleRight() {
-        if (rightState === "onScreen" || rightState === "fullScreen") {
-          setRightState("offScreen");
-          setMainState("fullScreen");
+        if (rightState === "rightOnscreen" || rightState === "fullScreen") {
+          setRightState("rightOffscreen");
+          setMainState("rightOffscreen");
           setActiveRight(false);
         } else {
-          setRightState("onScreen");
-          setMainState("onScreen");
+          setRightState("rightOnscreen");
+          setMainState("rightOnscreen");
           setActiveRight(true);
         }
         return false;
       }
       function toggleRightFullscreen() {
         if (rightState === "fullScreen") {
-          setRightState("onScreen");
+          setRightState("rightOnscreen");
         } else {
           setRightState("fullScreen");
         }
         return false;
       }
+
+      // Wrapper Top
+      const [topState, setTopState] = useState("topOffscreen");
+      const [activeTop, setActiveTop] = useState(false);
+      function toggleTop() {
+        if (topState === "topOnscreen" || topState === "fullScreen") {
+          setTopState("topOffscreen");
+          setMiddleState("topOffscreen");
+          setActiveTop(false);
+        } else {
+          setTopState("topOnscreen");
+          setMiddleState("topOnscreen");
+          setActiveTop(true);
+        }
+        return false;
+      }
+      function toggleTopFullscreen() {
+        if (topState === "fullScreen") {
+          setTopState("topOnscreen");
+        } else {
+          setTopState("fullScreen");
+        }
+        return false;
+      }
+
+      // Wrapper Middle
+      const [middleState, setMiddleState] = useState("bottomOffscreen");
+
+      // Wrapper Bottom
+      const [bottomState, setBottomState] = useState("bottomOffscreen");
+      const [activeBottom, setActiveBottom] = useState(false);
+      function toggleBottom() {
+        if (bottomState === "bottomOnscreen" || bottomState === "fullScreen") {
+          setBottomState("bottomOffscreen");
+          setMiddleState("bottomOffscreen");
+          setActiveBottom(false);
+        } else {
+          setBottomState("bottomOnscreen");
+          setMiddleState("bottomOnscreen");
+          setActiveBottom(true);
+        }
+        return false;
+      }
+      function toggleBottomFullscreen() {
+        if (bottomState === "fullScreen") {
+          setBottomState("bottomOnscreen");
+        } else {
+          setBottomState("fullScreen");
+        }
+        return false;
+      }
+
       const screenSmall = window.matchMedia(screen.small);
       const screenMedium = window.matchMedia(screen.medium);
       let controlsAlign;
@@ -93,25 +118,46 @@ storiesOf("Application|Layout/", module)
       } else if (screenSmall.matches) {
         controlsAlign = "bottom";
       }
+
       return (
         <Wrapper id="outer" name="outerWrapper">
-          <Wrapper id="inner" name="innerWrapper">
-            <Wrapper id="left" name="leftWrapper" />
-            <Wrapper id="content" name="contentWrapper" state={leftState}>
-              <Wrapper id="main" name="mainWrapper" state={mainState} />
-              <Wrapper id="right" name="rightWrapper" state={rightState}>
+          <Wrapper id="left" name="leftWrapper" />
+          <Wrapper id="inner" name="innerWrapper" state={innerState}>
+            <Wrapper id="main" name="mainWrapper" state={mainState}>
+              <Wrapper id="top" name="topWrapper" state={topState}>
                 <Card>
                   <Tabs align="bottom">
-                    <Tab tabLabel="Toggle Fullscreen" onClick={toggleRightFullscreen} />
+                    <Tab tabLabel="Toggle Top Fullscreen" onClick={toggleTopFullscreen} />
+                  </Tabs>
+                </Card>
+              </Wrapper>
+              <Wrapper id="middle" name="middleWrapper" state={middleState} />
+              <Wrapper id="bottom" name="bottomWrapper" state={bottomState}>
+                <Card>
+                  <Tabs align="bottom">
+                    <Tab tabLabel="Toggle Bottom Fullscreen" onClick={toggleBottomFullscreen} />
                   </Tabs>
                 </Card>
               </Wrapper>
             </Wrapper>
+            <Wrapper id="right" name="rightWrapper" state={rightState}>
+              <Card>
+                <Tabs align="bottom">
+                  <Tab tabLabel="Toggle Right Fullscreen" onClick={toggleRightFullscreen} />
+                </Tabs>
+              </Card>
+            </Wrapper>
           </Wrapper>
           <Wrapper id="controls" name="controlsWrapper" align="bottom">
             <Tabs align={controlsAlign}>
+              <Tab tabLabel="Toggle Top Wrapper" onClick={toggleTop} isSelected={activeTop} />
               <Tab tabLabel="Toggle Left Wrapper" onClick={toggleLeft} isSelected={activeLeft} />
               <Tab tabLabel="Toggle Right Wrapper" onClick={toggleRight} isSelected={activeRight} />
+              <Tab
+                tabLabel="Toggle Bottom Wrapper"
+                onClick={toggleBottom}
+                isSelected={activeBottom}
+              />
             </Tabs>
           </Wrapper>
         </Wrapper>
