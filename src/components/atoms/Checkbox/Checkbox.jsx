@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { colors } from "Variables";
+import {Skeleton} from "helpers/Skeleton.jsx"
 
 const CheckboxWrapper = styled.section`
   display: grid;
@@ -9,6 +10,7 @@ const CheckboxWrapper = styled.section`
   grid-template-columns: ${props =>
     props.setColumns || "repeat(auto-fit, minmax(8rem, 1fr))"};
   margin-bottom: 1rem;
+  
 `;
 
 const CheckboxContainer = styled.div`

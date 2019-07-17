@@ -2,6 +2,7 @@ import React from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 import { colors, shadows } from "Variables";
+import {Skeleton} from "helpers/Skeleton.jsx";
 
 const Block = styled.div`
   display: flex;
@@ -14,6 +15,14 @@ const Block = styled.div`
   // align-items: ${props => (props.stacked ? "center" : "")};
   // > * {
   //   position: ${props => (props.stacked ? "absolute" : "")};
+  &:empty {
+    &:before {
+      ${Skeleton};
+      height: 1.3em;
+      width: 40vw;
+      padding-bottom: 2px;
+    }
+  }
 `;
 
 function IconBlock({ id, stacked, children, style }) {

@@ -124,9 +124,5 @@ Badge.propTypes = {
   style: PropTypes.string
 };
 
-Badge.defaultProps = {
-  type: "alert",
-  position: "topRight"
-};
 
 export { Badge as default };

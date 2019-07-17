@@ -14,6 +14,7 @@ storiesOf("Blocks|Accordion", module)
       children={<h4>this is my children</h4>}
     />
   ))
+  .add("Skeleton", () => <Accordion />)
   .add("Accordion", () =>
     React.createElement(() => {
       const [activeAccordion, setActiveAccordion] = useState("");

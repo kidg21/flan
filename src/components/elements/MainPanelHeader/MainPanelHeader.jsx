@@ -15,7 +15,7 @@ function MainPanelHeader({ id, title }) {
     <Piece id={id}>
       <HeaderSpace>
         <Bar
-          left={title}
+          left={<h4>{title}</h4>}
           right={<Icon icon={["far", "ellipsis-v"]} size="lg" />}
         />
       </HeaderSpace>

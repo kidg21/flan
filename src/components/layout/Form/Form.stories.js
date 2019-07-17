@@ -56,6 +56,17 @@ storiesOf("Layout|Form", module).add("Form Layout", () => (
             <Checkbox {...cbox_6} />
           </InputGroup>
         </Section>
+        <Title />
+        <Section>
+          <SectionName />
+          <InputGroup>
+            <Checkbox />
+            <Checkbox />
+          </InputGroup>
+          <InputGroup oneColumn>
+            <Checkbox />
+          </InputGroup>
+        </Section>
       </Form>
     </PanelSection>
   </Panel>

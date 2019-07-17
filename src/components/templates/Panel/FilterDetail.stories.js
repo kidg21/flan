@@ -216,6 +216,60 @@ storiesOf("Templates|Panel/Property Filters", module)
     })
   )
 
+  .add("Filter Details Skeleton", () =>
+    React.createElement(() => {
+      const [checked, setChecked] = useState({ selectedValue: "" });
+
+      const handleCheckboxChange = event => {
+        setChecked({ selectedValue: event.target.value });
+      };
+
+      return (
+        <Panel>
+          <PanelSection>
+            <NavigationPanelHeader />
+          </PanelSection>
+          <PanelSection body>
+            <Form>
+              {/* <Bar type="one" right={<a> Reset </a>} /> */}
+              {/* <Label right grey content="Reset" /> */}
+              <Section>
+                <InputLabel />
+                <InputGroup>
+                  <Radio />
+
+                  <Radio />
+
+                  <Radio />
+                </InputGroup>
+                <DataRange />
+              </Section>
+              <Section>
+                <RangeSlider />
+              </Section>
+              <Section>
+                <TextInput />
+              </Section>
+              <Section>
+                <InputLabel />
+                <InputGroup>
+                  <Checkbox />
+                  <Checkbox />
+                  <Checkbox />
+                </InputGroup>
+              </Section>
+            </Form>
+          </PanelSection>
+          <PanelSection>
+            <CenteredSection>
+              <Button />
+            </CenteredSection>
+          </PanelSection>
+        </Panel>
+      );
+    })
+  )
+
   .add("Property- Characteristics", () =>
     React.createElement(() => {
       const [checked, setChecked] = useState({ selectedValue: "" });

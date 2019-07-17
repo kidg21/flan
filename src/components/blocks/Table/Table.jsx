@@ -1,24 +1,28 @@
 import React from "react"
 import styled, { css } from "styled-components"
 import PropTypes from "prop-types"
+import Card, {Piece} from "layout/Card/Card";
+import { PlaceholderText } from "helpers/Placeholders.jsx";
+import {Skeleton} from "helpers/Skeleton.jsx";
 
 
 const TableWrapper = styled.table`
-  overflow: hidden;
+  // overflow: hidden;
   cursor: default;
-  margin: .5em;
+  padding: .2em;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
-  border-collapse: collapse;
   display: flex-block;
   width: 100%;
-`;
+`
+
 const Row = styled.tr`
 
   &:hover {
     background-color: #f5f7f9;
     transition: background-color 0.05s ease-in;
   }
+
 `;
 const Cell = styled.td`
   padding: 0.5em 0.5em 0.5em;
@@ -31,12 +35,20 @@ const Cell = styled.td`
   &:nth-child(even) {
     text-align: right;
   }
+
+  &:empty {
+    &:before {
+      ${Skeleton};
+      height: 1.3em;
+      width: 10rem;
+    }
+  }
 `;
 
 
-
 function Table({id, data}) {
-  return (
+  return(
+    <Piece>
     <TableWrapper
     id={id}>
     {data.map(item => 
@@ -44,9 +56,11 @@ function Table({id, data}) {
     <Cell>{item.color}</Cell> <Cell>{item.name}</Cell> 
     </Row>)}
     </TableWrapper>
-
- );
+    </Piece>
+  );
 }
+
+
 
 Table.propTypes = {
   id: PropTypes.string,

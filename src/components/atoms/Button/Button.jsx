@@ -36,11 +36,13 @@ const StyledButton = styled.button`
   &:active {
     ${buttonActive}
   }
+  
   &[disabled] {
     cursor: not-allowed;
     pointer-events: none;
     user-select: none;
   }
+  
 `;
 
 const ButtonLabel = styled.label`

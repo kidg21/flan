@@ -13,6 +13,8 @@ const Arrow = styled(FontAwesomeIcon)`
   transition: all 0.3s ease;
 `;
 
+
+
 function InformationCardBar({ id, title}) {
   const [leftOnscreen, setLeftOnscreen] = useState(false);
   function toggleLeft() {
@@ -22,7 +24,7 @@ function InformationCardBar({ id, title}) {
     <Piece id={id}>
       <Bar
         onClick={toggleLeft}
-        left={title}
+        left={<h5>{title}</h5>}
         right={<Arrow leftOnscreen={leftOnscreen} icon={["far", "angle-up"]} />}
       />
     </Piece>

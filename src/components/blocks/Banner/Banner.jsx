@@ -4,6 +4,7 @@ import styled, { css } from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { colors, shadows } from "Variables";
 import Icon from "atoms/Icon";
+import {Skeleton} from "helpers/Skeleton.jsx"
 
 const StyledBanner = styled.div`
   display: flex;
@@ -19,6 +20,13 @@ const StyledBanner = styled.div`
   border-radius: 5px;
   padding: 1em;
   width: 100%;
+  &:empty {
+    &:before {
+      ${Skeleton};
+      height: 100vh;
+      width: 100vw;
+    }
+  }
 `;
 
 const StatusBadge = styled.div`
@@ -48,6 +56,13 @@ const Message = styled.section`
   flex: auto;
   margin-right: 1.5em;
   align-self: center;
+  &:empty {
+    &:before {
+      ${Skeleton};
+      height: 100vh;
+      width: 100vw;
+    }
+  }
 `;
 
 const Title = styled.h4`
@@ -171,6 +186,7 @@ function Banner({
     </StyledBanner>
   );
 }
+
 
 Banner.propTypes = {
   id: PropTypes.string,

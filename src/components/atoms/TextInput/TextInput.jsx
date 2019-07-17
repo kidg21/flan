@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 import { colors, shadows } from "Variables";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
+import {Skeleton} from "helpers/Skeleton.jsx";
 
 const TextInputContainer = styled.div`
   display: grid;

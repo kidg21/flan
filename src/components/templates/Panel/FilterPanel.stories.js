@@ -32,7 +32,32 @@ storiesOf("Templates|Panel", module)
       );
     })
   )
+  .add("Navigation Panel-Skeleton", () =>
+    React.createElement(() => {
+      return (
+        <Panel>
+          <PanelSection>
+            <MainPanelHeader />
+          </PanelSection>
+          <PanelSection body>
+            <NavigationCardBar />
+            <NavigationCardBar />
+            <NavigationCardBar />
 
+            <NavigationCardBar />
+            <NavigationCardBar />
+
+            <NavigationCardBar />
+            <NavigationCardBar />
+            <NavigationCardBar />
+            <NavigationCardBar />
+            <NavigationCardBar />
+            <NavigationCardBar />
+          </PanelSection>
+        </Panel>
+      );
+    })
+  )
   .add("Filter-2nd Panel", () =>
     React.createElement(() => {
       return (

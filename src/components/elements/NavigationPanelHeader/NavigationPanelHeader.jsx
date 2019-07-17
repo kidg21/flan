@@ -27,7 +27,7 @@ function NavigationPanelHeader({
               onClick={onClickLeftIcon}
             />
           }
-          center={title}
+          center={<h4>{title}</h4>}
           right={
             <Icon
               icon={["far", "ellipsis-v"]}

@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import styled, { css } from "styled-components"
 import PropTypes from "prop-types"
 import { colors, fonts, fontSize, shadows } from "Variables"
+import {Skeleton} from "helpers/Skeleton.jsx"
 
 const StyledDateRangePicker = styled.input.attrs({ type: "date" })`
   text-align: center;
@@ -10,7 +11,7 @@ const StyledDateRangePicker = styled.input.attrs({ type: "date" })`
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   padding: 0.5rem 0.75rem;
-
+  
   &:active {
     border-color: ${colors.success_light};
   }

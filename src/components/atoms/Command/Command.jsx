@@ -167,9 +167,6 @@ Command.propTypes = {
   style: PropTypes.string
 };
 
-Command.defaultProps = {
-  label: "Command",
-  icon: "user-circle"
-};
+
 
 export { Command as default };
