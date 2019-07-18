@@ -48,7 +48,11 @@ function TextInput({
   state,
   isDisabled,
   children,
-  style
+  style,
+  onChange,
+  autocompleteList,
+  autocompleteListId,
+  size,
 }) {
   let inputTextColor;
   let inputFillColor;
@@ -75,11 +79,11 @@ function TextInput({
       inputSelectColor = colors.alert;
       break;
     case "search":
-        inputBorderColor = colors.grey_20;
-        inputBorderColorHover = colors.grey_20;
-        placeholderColor = colors.grey_40;
-        inputSelectColor = colors.anchor;
-        break;
+      inputBorderColor = colors.grey_20;
+      inputBorderColorHover = colors.grey_20;
+      placeholderColor = colors.grey_40;
+      inputSelectColor = colors.anchor;
+      break;
     case "disabled":
       inputTextColor = colors.grey_40;
       inputFillColor = colors.grey_20;
@@ -92,6 +96,16 @@ function TextInput({
       inputSelectColor = colors.success;
       break;
   }
+  // construct datalist element for autocompletes if appropriate props passed in
+  // the autocompleteListId is used to ensure each textinput only draws from its own datalist element
+  let autocompleteDataList = null;
+  let autoCompleteDataListId = null;
+  if (autocompleteList) {
+    autoCompleteDataListId = Dmp.Util.getGuid();
+    const options = autocompleteList.map((item) => { return (<option key={Dmp.Util.getGuid()} value={item}>{item}</option>); });
+    autocompleteDataList = (<datalist id={autoCompleteDataListId}>{options}</datalist>);
+  }
+
   return (
     <TextInputContainer
       id={id}
@@ -118,7 +132,11 @@ function TextInput({
         placeholderColor={placeholderColor}
         inputCaretColor={inputCaretColor}
         inputSelectColor={inputSelectColor}
+        onChange={onChange}
+        list={autoCompleteDataListId}
+        size={size} // overriding this while developing so it's easier to see
       />
+      {autocompleteDataList}
       {helpText ? <HelpText helpText={helpText} /> : null}
       {errorText ? <ErrorText errorText={errorText} /> : null}
       {children}
@@ -137,7 +155,10 @@ TextInput.propTypes = {
   helpText: PropTypes.string,
   errorText: PropTypes.string,
   state: PropTypes.string,
-  style: PropTypes.string
+  style: PropTypes.string,
+  onChange: PropTypes.func,
+  autocompleteList: PropTypes.arrayOf(PropTypes.string),
+  size: PropTypes.string
 };
 
 export { TextInput as default };
