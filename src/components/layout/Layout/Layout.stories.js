@@ -6,9 +6,6 @@ import Wrapper from "layout/Layout";
 import Card from "layout/Card";
 
 storiesOf("Application|Layout/", module)
-  // .addParameters({ viewport: { defaultViewport: "iphone6" } })
-  // .addParameters({ viewport: { defaultViewport: "ipad" } })
-  // .addParameters({ viewport: { defaultViewport: "responsive" } })
   .add("2 Panel - 70/30", () => (
     <Wrapper>
       <Wrapper width="70%" />
@@ -34,7 +31,6 @@ storiesOf("Application|Layout/", module)
 
       // Wrapper Main
       const [mainState, setMainState] = useState("rightOffscreen");
-
       // Wrapper Right
       const [rightState, setRightState] = useState("rightOffscreen");
       const [activeRight, setActiveRight] = useState(false);
@@ -59,33 +55,8 @@ storiesOf("Application|Layout/", module)
         return false;
       }
 
-      // Wrapper Top
-      const [topState, setTopState] = useState("topOffscreen");
-      const [activeTop, setActiveTop] = useState(false);
-      function toggleTop() {
-        if (topState === "topOnscreen" || topState === "fullScreen") {
-          setTopState("topOffscreen");
-          setMiddleState("topOffscreen");
-          setActiveTop(false);
-        } else {
-          setTopState("topOnscreen");
-          setMiddleState("topOnscreen");
-          setActiveTop(true);
-        }
-        return false;
-      }
-      function toggleTopFullscreen() {
-        if (topState === "fullScreen") {
-          setTopState("topOnscreen");
-        } else {
-          setTopState("fullScreen");
-        }
-        return false;
-      }
-
       // Wrapper Middle
       const [middleState, setMiddleState] = useState("bottomOffscreen");
-
       // Wrapper Bottom
       const [bottomState, setBottomState] = useState("bottomOffscreen");
       const [activeBottom, setActiveBottom] = useState(false);
@@ -121,16 +92,9 @@ storiesOf("Application|Layout/", module)
 
       return (
         <Wrapper id="outer" name="outerWrapper">
-          <Wrapper id="left" name="leftWrapper" />
           <Wrapper id="inner" name="innerWrapper" state={innerState}>
+            <Wrapper id="offscreenLeft" name="leftWrapper" />
             <Wrapper id="main" name="mainWrapper" state={mainState}>
-              <Wrapper id="top" name="topWrapper" state={topState}>
-                <Card>
-                  <Tabs align="bottom">
-                    <Tab tabLabel="Toggle Top Fullscreen" onClick={toggleTopFullscreen} />
-                  </Tabs>
-                </Card>
-              </Wrapper>
               <Wrapper id="middle" name="middleWrapper" state={middleState} />
               <Wrapper id="bottom" name="bottomWrapper" state={bottomState}>
                 <Card>
@@ -140,7 +104,7 @@ storiesOf("Application|Layout/", module)
                 </Card>
               </Wrapper>
             </Wrapper>
-            <Wrapper id="right" name="rightWrapper" state={rightState}>
+            <Wrapper id="offscreenRight" name="rightWrapper" state={rightState}>
               <Card>
                 <Tabs align="bottom">
                   <Tab tabLabel="Toggle Right Fullscreen" onClick={toggleRightFullscreen} />
@@ -148,9 +112,8 @@ storiesOf("Application|Layout/", module)
               </Card>
             </Wrapper>
           </Wrapper>
-          <Wrapper id="controls" name="controlsWrapper" align="bottom">
+          <Wrapper id="controls" name="controlsWrapper">
             <Tabs align={controlsAlign}>
-              <Tab tabLabel="Toggle Top Wrapper" onClick={toggleTop} isSelected={activeTop} />
               <Tab tabLabel="Toggle Left Wrapper" onClick={toggleLeft} isSelected={activeLeft} />
               <Tab tabLabel="Toggle Right Wrapper" onClick={toggleRight} isSelected={activeRight} />
               <Tab
