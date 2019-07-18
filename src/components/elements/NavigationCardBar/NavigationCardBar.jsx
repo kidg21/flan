@@ -23,6 +23,7 @@ function NavigationCardBar({ id, title, disabled, onClick }) {
 NavigationCardBar.propTypes = {
   id: PropTypes.string,
   title: PropTypes.any.isRequired,
+  count: PropTypes.string,
   disabled: PropTypes.bool,
   onClick: PropTypes.func
 };
