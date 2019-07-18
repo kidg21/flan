@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
-import InformationCardBar from "./InformationCardBar";
+import NavigationCardBar from "./NavigationCardBar";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
 
@@ -8,4 +8,4 @@ import { Padding } from "helpers/Display";
 storiesOf("Elements|Card Bar/", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  .add("Information", () => <InformationCardBar title="Ownership" />);
+  .add("Navigation", () => <NavigationCardBar title="Navigator" number="3" />);
