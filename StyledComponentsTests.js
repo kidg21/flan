@@ -1,0 +1,1 @@
+require("ss-styled-components/cypress/integration/styledcomponents.tests");
