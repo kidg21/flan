@@ -1,21 +1,36 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
-import { colors, viewport, screen } from "Variables";
+import { screen } from "Variables";
 import Tabs, { Tab } from "blocks/Tabs";
-import Wrapper from "layout/Layout";
+import Layout from "layout/Layout";
 import Card from "layout/Card";
 
 storiesOf("Application|Layout/", module)
-  .add("2 Panel - 70/30", () => (
-    <Wrapper>
-      <Wrapper width="70%" />
-      <Wrapper width="30%" right="0" backgroundColor="lightyellow" />
-    </Wrapper>
+  .add("2 Panel - Row", () => (
+    <Layout>
+      <Layout width="70%" />
+      <Layout width="30%" right="0" backgroundColor="lightyellow" />
+    </Layout>
   ))
 
-  .add("Layout - Test", () =>
+  .add("2 Panel - Column", () => (
+    <Layout>
+      <Layout height="60%" />
+      <Layout height="40%" top="60%" backgroundColor="lightgreen" />
+    </Layout>
+  ))
+
+  .add("3 Panel", () => (
+    <Layout>
+      <Layout width="70%" height="60%" />
+      <Layout width="70%" height="40%" top="60%" backgroundColor="lightgreen" />
+      <Layout width="30%" right="0" backgroundColor="lightyellow" />
+    </Layout>
+  ))
+
+  .add("Standard Application Layout (Interactive)", () =>
     React.createElement(() => {
-      // Wrapper Inner
+      // Left
       const [innerState, setInnerState] = useState("leftCover");
       const [activeLeft, setActiveLeft] = useState(false);
       function toggleLeft() {
@@ -28,10 +43,9 @@ storiesOf("Application|Layout/", module)
         }
         return false;
       }
-
-      // Wrapper Main
+      // Main
       const [mainState, setMainState] = useState("rightOffscreen");
-      // Wrapper Right
+      // Right
       const [rightState, setRightState] = useState("rightOffscreen");
       const [activeRight, setActiveRight] = useState(false);
       function toggleRight() {
@@ -43,6 +57,8 @@ storiesOf("Application|Layout/", module)
           setRightState("rightOnscreen");
           setMainState("rightOnscreen");
           setActiveRight(true);
+          setInnerState("leftCover");
+          setActiveLeft(false);
         }
         return false;
       }
@@ -54,10 +70,9 @@ storiesOf("Application|Layout/", module)
         }
         return false;
       }
-
-      // Wrapper Middle
+      // Middle
       const [middleState, setMiddleState] = useState("bottomOffscreen");
-      // Wrapper Bottom
+      // Bottom
       const [bottomState, setBottomState] = useState("bottomOffscreen");
       const [activeBottom, setActiveBottom] = useState(false);
       function toggleBottom() {
@@ -80,7 +95,7 @@ storiesOf("Application|Layout/", module)
         }
         return false;
       }
-
+      // Controls
       const screenSmall = window.matchMedia(screen.small);
       const screenMedium = window.matchMedia(screen.medium);
       let controlsAlign;
@@ -91,28 +106,28 @@ storiesOf("Application|Layout/", module)
       }
 
       return (
-        <Wrapper id="outer" name="outerWrapper">
-          <Wrapper id="inner" name="innerWrapper" state={innerState}>
-            <Wrapper id="offscreenLeft" name="leftWrapper" />
-            <Wrapper id="main" name="mainWrapper" state={mainState}>
-              <Wrapper id="middle" name="middleWrapper" state={middleState} />
-              <Wrapper id="bottom" name="bottomWrapper" state={bottomState}>
+        <Layout id="outer" name="outerWrapper">
+          <Layout id="inner" name="innerWrapper" state={innerState}>
+            <Layout id="left" name="leftWrapper" />
+            <Layout id="main" name="mainWrapper" state={mainState}>
+              <Layout id="middle" name="middleWrapper" state={middleState} />
+              <Layout id="bottom" name="bottomWrapper" state={bottomState}>
                 <Card>
                   <Tabs align="bottom">
                     <Tab tabLabel="Toggle Bottom Fullscreen" onClick={toggleBottomFullscreen} />
                   </Tabs>
                 </Card>
-              </Wrapper>
-            </Wrapper>
-            <Wrapper id="offscreenRight" name="rightWrapper" state={rightState}>
+              </Layout>
+            </Layout>
+            <Layout id="right" name="rightWrapper" state={rightState}>
               <Card>
                 <Tabs align="bottom">
                   <Tab tabLabel="Toggle Right Fullscreen" onClick={toggleRightFullscreen} />
                 </Tabs>
               </Card>
-            </Wrapper>
-          </Wrapper>
-          <Wrapper id="controls" name="controlsWrapper">
+            </Layout>
+          </Layout>
+          <Layout id="controls" name="controlsWrapper">
             <Tabs align={controlsAlign}>
               <Tab tabLabel="Toggle Left Wrapper" onClick={toggleLeft} isSelected={activeLeft} />
               <Tab tabLabel="Toggle Right Wrapper" onClick={toggleRight} isSelected={activeRight} />
@@ -122,8 +137,8 @@ storiesOf("Application|Layout/", module)
                 isSelected={activeBottom}
               />
             </Tabs>
-          </Wrapper>
-        </Wrapper>
+          </Layout>
+        </Layout>
       );
     }),
   );

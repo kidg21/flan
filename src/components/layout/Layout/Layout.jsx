@@ -1,7 +1,7 @@
-import React, { useState, Fragment } from "react";
+import React from "react";
 import PropTypes from "prop-types";
-import styled, { css, keyframes } from "styled-components";
-import { colors, viewport, screen } from "Variables";
+import styled from "styled-components";
+import { screen } from "Variables";
 import { PlaceholderText } from "helpers/Placeholders";
 
 const FlexWrapper = styled.div`
@@ -37,28 +37,28 @@ const FlexWrapper = styled.div`
   }
 `;
 
-function Wrapper({
-  id,
-  children,
-  width,
-  height,
-  top,
-  right,
-  bottom,
-  left,
-  setPosition,
-  flexDirection,
+function Layout({
   alignContent,
   alignItems,
   alignSelf,
-  setFlex,
-  zIndex,
-  setOverflow,
-  flexBasis,
-  maxWidth,
   backgroundColor,
-  state,
+  bottom,
+  children,
+  flexBasis,
+  flexDirection,
+  height,
+  id,
+  left,
+  maxWidth,
   name,
+  right,
+  setFlex,
+  setOverflow,
+  setPosition,
+  state,
+  top,
+  width,
+  zIndex,
 }) {
   const screenSmall = window.matchMedia(screen.small);
   const screenMedium = window.matchMedia(screen.medium);
@@ -90,10 +90,12 @@ function Wrapper({
         width = "80%";
       }
       break;
+
     case "mainWrapper":
       backgroundColor = "grey";
       break;
     case "middleWrapper":
+      height = "auto";
       backgroundColor = "lightgrey";
       break;
     case "bottomWrapper":
@@ -140,7 +142,6 @@ function Wrapper({
       break;
   }
   switch (state) {
-    // Wrapper Left
     case "leftUncover":
       if (name === "innerWrapper" && screenLarge.matches) {
         displayState = "translate3d(20%, 0, 0)";
@@ -155,8 +156,6 @@ function Wrapper({
         displayState = "translate3d(0, 0, 0)";
       }
       break;
-
-    // Wrapper Right
     case "rightOnscreen":
       if (name === "mainWrapper" && screenLarge.matches) {
         width = "80%";
@@ -172,25 +171,23 @@ function Wrapper({
       }
       break;
 
-    // Wrapper Bottom
     case "bottomOnscreen":
       if (name === "middleWrapper" && screenLarge.matches) {
-        height = "60%";
+        bottom = "40%";
       } else if (name === "middleWrapper" && screenMedium.matches) {
-        height = "50%";
+        bottom = "50%";
       } else if (name === "middleWrapper" && screenSmall.matches) {
-        height = "40%";
+        bottom = "60%";
       }
       break;
     case "bottomOffscreen":
       if (name === "bottomWrapper") {
         top = "100%";
       } else if (name === "middleWrapper") {
-        height = "100%";
+        bottom = "0";
       }
       break;
 
-    // Fullscreen
     case "fullScreen":
       width = "100%";
       height = "100%";
@@ -204,29 +201,70 @@ function Wrapper({
   }
   return (
     <FlexWrapper
-      id={id}
-      width={width}
-      height={height}
-      top={top}
-      right={right}
-      bottom={bottom}
-      left={left}
-      setPosition={setPosition}
-      flexDirection={flexDirection}
       alignContent={alignContent}
       alignItems={alignItems}
       alignSelf={alignSelf}
-      setFlex={setFlex}
-      zIndex={zIndex}
-      setOverflow={setOverflow}
-      flexBasis={flexBasis}
-      maxWidth={maxWidth}
       backgroundColor={backgroundColor}
+      bottom={bottom}
       displayState={displayState}
+      flexBasis={flexBasis}
+      flexDirection={flexDirection}
+      height={height}
+      id={id}
+      left={left}
+      maxWidth={maxWidth}
+      right={right}
+      setFlex={setFlex}
+      setOverflow={setOverflow}
+      setPosition={setPosition}
+      top={top}
+      width={width}
+      zIndex={zIndex}
     >
       {children}
     </FlexWrapper>
   );
 }
 
-export default Wrapper;
+Layout.propTypes = {
+  alignContent: PropTypes.string,
+  alignItems: PropTypes.string,
+  alignSelf: PropTypes.string,
+  backgroundColor: PropTypes.string,
+  bottom: PropTypes.string,
+  children: PropTypes.node,
+  flexBasis: PropTypes.string,
+  flexDirection: PropTypes.string,
+  height: PropTypes.string,
+  id: PropTypes.string,
+  left: PropTypes.string,
+  maxWidth: PropTypes.string,
+  name: PropTypes.oneOf([
+    "outerWrapper",
+    "innerWrapper",
+    "leftWrapper",
+    "mainWrapper",
+    "middleWrapper",
+    "bottomWrapper",
+    "rightWrapper",
+    "controlsWrapper",
+  ]),
+  right: PropTypes.string,
+  setFlex: PropTypes.string,
+  setOverflow: PropTypes.string,
+  setPosition: PropTypes.string,
+  state: PropTypes.oneOf([
+    "leftUncover",
+    "leftCover",
+    "rightOnscreen",
+    "rightOffscreen",
+    "bottomOnscreen",
+    "bottomOffscreen",
+    "fullScreen",
+  ]),
+  top: PropTypes.string,
+  width: PropTypes.string,
+  zIndex: PropTypes.string,
+};
+
+export default Layout;
