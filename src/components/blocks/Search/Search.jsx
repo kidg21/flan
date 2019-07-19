@@ -44,7 +44,7 @@ Search.propTypes = {
   id: PropTypes.string,
   onStartLocate: PropTypes.func,
   value: PropTypes.string.isRequired,
-  autocompleteList: PropTypes.arrayOf(PropTypes.object),
+  autocompleteList: PropTypes.arrayOf(PropTypes.string),
   size: PropTypes.string,
 };
 

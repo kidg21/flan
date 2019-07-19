@@ -51,7 +51,6 @@ function TextInput({
   style,
   onChange,
   autocompleteList,
-  autocompleteListId,
   size,
 }) {
   let inputTextColor;
