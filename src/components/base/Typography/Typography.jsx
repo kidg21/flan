@@ -22,7 +22,6 @@ margin-left: 4em;
 
 const StyledText = styled.h4`
   color: ${props => props.textColor || colors.grey_80};
-  font-weight: 600;
   font-size: ${props => props.textSize || '14px'};
   font-style: ${props => props.textStyle || ''};
   text-decoration: ${props => props.textDecoration || ''};
