@@ -1,7 +1,6 @@
 import React from "react";
-import styled, { css, keyframes } from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { colors, shadows } from "Variables";
+import styled, { css } from "styled-components";
+import { colors } from "Variables";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 
@@ -65,7 +64,7 @@ function Button({
   fullWidth,
   isDisabled,
   onClick,
-  style,
+  style
 }) {
   let buttonColor;
   let textColor;
@@ -144,7 +143,7 @@ Button.propTypes = {
   fullWidth: PropTypes.bool,
   isDisabled: PropTypes.bool,
   onClick: PropTypes.func.isRequired,
-  style: PropTypes.string,
+  style: PropTypes.string
 };
 
 export { Button as default };
