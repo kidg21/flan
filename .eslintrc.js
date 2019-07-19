@@ -159,6 +159,10 @@ module.exports = {
         // Allow global isNaN
         "no-restricted-globals": ["error", "isFinite"].concat(restrictedGlobals),
 
+        //Cypress friendly expressions
+        "no-unused-expressions": 0,
+        "chai-friendly/no-unused-expressions": 2,
+        
         // Allow all dev dependencies
         'import/no-extraneous-dependencies': ['error', {
           devDependencies: true,
@@ -170,20 +174,23 @@ module.exports = {
 
         // Not every method that COULD be a static SHOULD be.
         "class-methods-use-this": "warn"
-
         // "valid-jsdoc": 1
     },
     "plugins": [
       "security",
-      "no-unsanitized"
+      "no-unsanitized",
+      "cypress",
+      "chai-friendly"
     ],
-    "extends": ["plugin:security/recommended", "plugin:no-unsanitized/DOM", "airbnb-base"],
+    // extend "airbnb-core" instead of "airbnb" if you want to exclude React rules.
+    "extends": ["plugin:security/recommended", "plugin:no-unsanitized/DOM", "airbnb"],
     "parser": null,
     "env": {
         "browser": true,
         "es6": true,
         "jquery": true,
-        "mocha": true
+        "mocha": true,
+        "cypress/globals": true
     },
     "globals": {
         "Dmp": true,

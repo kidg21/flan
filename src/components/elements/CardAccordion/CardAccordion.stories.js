@@ -39,8 +39,9 @@ storiesOf("Elements|Card Accordion", module)
       return (
         <CardAccordion
           header={<InformationCardBar title="Ownership" />}
-          body={<Table data={data} />}
-        />
+        >
+          <Table data={data} />
+        </CardAccordion>
       );
     })
   )
@@ -60,8 +61,9 @@ storiesOf("Elements|Card Accordion", module)
               }}
             />
           }
-          body={<MapLegend />}
-        />
+        >
+          <MapLegend />
+        </CardAccordion>
       );
     })
   )
@@ -85,7 +87,6 @@ storiesOf("Elements|Card Accordion", module)
               }}
             />
           }
-          body={<MapLegend />}
           hasOptions="true"
           options={
             <Section>
@@ -104,7 +105,9 @@ storiesOf("Elements|Card Accordion", module)
               </InputGroup>
             </Section>
           }
-        />
+        >
+          <MapLegend />
+        </CardAccordion>
       );
     })
   );
