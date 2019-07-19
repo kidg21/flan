@@ -21,5 +21,6 @@ storiesOf("Blocks|Table", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
   .add("Simple", () => <Table data={data} />)
-  .add("Skeleton", () => <Table data={data2} />)
+  .add("Skeleton", () => <Table />)
+  .add("No Data", () => <Table data={data2} />)
   .add("Heavy Data", () => <DataTable />);

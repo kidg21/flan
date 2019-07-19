@@ -14,6 +14,13 @@ const TableWrapper = styled.table`
   border-radius: 5px;
   display: flex-block;
   width: 100%;
+  &:empty {
+      ${Skeleton};
+      padding: 5px;
+      width: 100 em;
+      height: 5rem;
+    }
+  }
 `
 
 const Row = styled.tr`
@@ -35,12 +42,9 @@ const Cell = styled.td`
   &:nth-child(even) {
     text-align: right;
   }
-
   &:empty {
     &:before {
-      ${Skeleton};
-      height: 1.3em;
-      width: 10rem;
+      content: "Not Available";
     }
   }
 `;
@@ -51,10 +55,10 @@ function Table({id, data}) {
     <Piece>
     <TableWrapper
     id={id}>
-    {data.map(item => 
+      { data ? [data.map(item => 
     <Row key={item.id}>
     <Cell>{item.color}</Cell> <Cell>{item.name}</Cell> 
-    </Row>)}
+  </Row>)] : null}
     </TableWrapper>
     </Piece>
   );
