@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import { screen } from "Variables";
 import Tabs, { Tab } from "blocks/Tabs";
-import Layout from "layout/Layout";
 import Card from "layout/Card";
+import Layout from "layout/Layout";
 
-storiesOf("Application|Layout/", module)
+storiesOf("Layout |App Layout/", module)
   .add("2 Panel - Row", () => (
     <Layout>
       <Layout width="70%" />
@@ -28,7 +28,7 @@ storiesOf("Application|Layout/", module)
     </Layout>
   ))
 
-  .add("Standard Application Layout (Interactive)", () =>
+  .add("Standard Layout (Interactive)", () =>
     React.createElement(() => {
       // Left
       const [innerState, setInnerState] = useState("leftCover");
@@ -114,7 +114,10 @@ storiesOf("Application|Layout/", module)
               <Layout id="bottom" name="bottomWrapper" state={bottomState}>
                 <Card>
                   <Tabs align="bottom">
-                    <Tab tabLabel="Toggle Bottom Fullscreen" onClick={toggleBottomFullscreen} />
+                    <Tab
+                      tabLabel="Toggle Bottom Fullscreen"
+                      onClick={toggleBottomFullscreen}
+                    />
                   </Tabs>
                 </Card>
               </Layout>
@@ -122,15 +125,26 @@ storiesOf("Application|Layout/", module)
             <Layout id="right" name="rightWrapper" state={rightState}>
               <Card>
                 <Tabs align="bottom">
-                  <Tab tabLabel="Toggle Right Fullscreen" onClick={toggleRightFullscreen} />
+                  <Tab
+                    tabLabel="Toggle Right Fullscreen"
+                    onClick={toggleRightFullscreen}
+                  />
                 </Tabs>
               </Card>
             </Layout>
           </Layout>
           <Layout id="controls" name="controlsWrapper">
             <Tabs align={controlsAlign}>
-              <Tab tabLabel="Toggle Left Wrapper" onClick={toggleLeft} isSelected={activeLeft} />
-              <Tab tabLabel="Toggle Right Wrapper" onClick={toggleRight} isSelected={activeRight} />
+              <Tab
+                tabLabel="Toggle Left Wrapper"
+                onClick={toggleLeft}
+                isSelected={activeLeft}
+              />
+              <Tab
+                tabLabel="Toggle Right Wrapper"
+                onClick={toggleRight}
+                isSelected={activeRight}
+              />
               <Tab
                 tabLabel="Toggle Bottom Wrapper"
                 onClick={toggleBottom}
@@ -140,5 +154,5 @@ storiesOf("Application|Layout/", module)
           </Layout>
         </Layout>
       );
-    }),
+    })
   );
