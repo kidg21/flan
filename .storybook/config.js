@@ -24,6 +24,13 @@ addDecorator(withGlobalStyles);
 
 // Configure Viewport
 const newViewports = {
+  "1080P": {
+    name: "1080P",
+    styles: {
+      width: "1920px",
+      height: "1080px"
+    }
+  },
   kindleFire2: {
     name: "Kindle Fire 2",
     styles: {
