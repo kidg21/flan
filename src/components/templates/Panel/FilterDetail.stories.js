@@ -272,9 +272,9 @@ storiesOf("Templates|Panel/Property Filters", module)
 
       return (
         <Panel>
-          {/* <PanelSection>
-            <PanelHeader title="New Characteristics" navigation={true} />
-          </PanelSection> */}
+          <PanelSection>
+            <NavigationPanelHeader title="New Last Market Sale" />
+          </PanelSection>
           <PanelSection body>
             <Form>
               {/* <Bar onePart={true} secondSlot={<a> Reset </a>} /> */}

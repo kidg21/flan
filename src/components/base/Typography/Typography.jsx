@@ -22,9 +22,9 @@ margin-left: 4em;
 
 const StyledText = styled.h4`
   color: ${props => props.textColor || colors.grey_80};
-  font-size: ${props => props.textSize || '14px'};
+  font-size: ${props => props.textSize || ''};
   font-weight: ${props => props.textWeight || ''};
-  line-height: 1;
+  margin: 0;
   font-style: ${props => props.textStyle || ''};
   text-decoration: ${props => props.textDecoration || ''};
 
@@ -67,16 +67,16 @@ let textDecoration;
 
     switch (size) {
       case "small":
-        textSize = '12px';
+        textSize = '0.75rem';
         break;
       case "normal":
-        textSize = '14px';
+        textSize = '0.875rem';
         break;
       case "large":
-        textSize = '20px';
+        textSize = '1.25rem';
         break;
       case "xlarge":
-        textSize = '24px';
+        textSize = '1.5rem';
         break;
       default:
         break;

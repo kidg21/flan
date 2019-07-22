@@ -6,6 +6,7 @@ import IconBlock from "blocks/IconBlock";
 import Bar from "blocks/Bar";
 import Card, { Piece } from "layout/Card";
 import Title from "base/Typography";
+import { colors } from "Variables";
 
 
 import Switch from "atoms/Switch";
@@ -13,6 +14,10 @@ import Switch from "atoms/Switch";
 
 {/* <Title title="Count Title" number="4" /> */}
 
+const Line = styled.div`
+display: flex;
+border-bottom: 1px solid ${colors.grey_light};
+`
 
 function NavigationCardBar({ id, title, number, disabled, onClick }) {
   return (
@@ -22,6 +27,7 @@ function NavigationCardBar({ id, title, number, disabled, onClick }) {
         right={<Icon icon={["far", "angle-right"]} />}
         onClick={onClick}
       />
+      <Line/>
     </Piece>
   );
 }

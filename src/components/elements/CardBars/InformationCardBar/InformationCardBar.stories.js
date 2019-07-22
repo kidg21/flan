@@ -9,7 +9,4 @@ import Title from "base/Typography";
 storiesOf("Elements|Card Bar/", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  .add("Information Original", () => <InformationCardBar title="Ownership" />)
-  .add("Information", () => (
-    <InformationCardBar title={<Title title="Ownership" />} />
-  ));
+  .add("Information", () => <InformationCardBar title="Ownership" />);
