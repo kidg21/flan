@@ -5,6 +5,8 @@ import Search from "blocks/Search";
 import Tabs, { Tab } from "blocks/Tabs";
 import { colors, shadows } from "Variables";
 
+
+
 const IconWrapper = styled.span`
   /* Needed for passing properties to children (animation, etc.) */
 `;
@@ -28,6 +30,11 @@ function MapSearch({ id, ...searchProps }) {
   return (
     <SearchContainer id={id}>
       <Search {...searchProps} />
+      <Tabs>
+      <Tab tabLabel="Address" size="small"/>
+      <Tab tabLabel="Owner" size="small"/>
+      <Tab tabLabel="APN" size="small"/>
+    </Tabs>
     </SearchContainer>
   );
 }

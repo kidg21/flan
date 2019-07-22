@@ -96,13 +96,13 @@ function Tabs({ id, children, columns, align, isFloating, style, isSearch }) {
   );
 }
 
-function Tab({ id, icon, tabLabel, onClick, isSelected, halfSize, isDisabled }) {
+function Tab({ id, icon, tabLabel, onClick, isSelected, size, isDisabled }) {
   return (
     <Fragment>
       {isSelected ? (
         <Button
           id={id}
-          halfSize={halfSize}
+          size={size}
           icon={icon}
           buttonLabel={tabLabel}
           onClick={onClick}
@@ -114,7 +114,7 @@ function Tab({ id, icon, tabLabel, onClick, isSelected, halfSize, isDisabled }) 
       ) : isDisabled ? (
         <Button
           id={id}
-          halfSize={halfSize}
+          size={size}
           icon={icon}
           buttonLabel={tabLabel}
           onClick={onClick}
@@ -127,7 +127,7 @@ function Tab({ id, icon, tabLabel, onClick, isSelected, halfSize, isDisabled }) 
           id={id}
           icon={icon}
           buttonLabel={tabLabel}
-          halfSize={halfSize}
+          size={size}
           onClick={onClick}
           isSelected={isSelected}
           isDisabled={isDisabled}
@@ -151,7 +151,7 @@ Tab.propTypes = {
   id: PropTypes.string,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   tabLabel: PropTypes.string.isRequired,
-  halfSize: PropTypes.bool,
+  size: PropTypes.string,
   onClick: PropTypes.func.isRequired,
   isSelected: PropTypes.bool,
   isDisabled: PropTypes.bool,
