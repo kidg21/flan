@@ -121,7 +121,7 @@ const GlobalStyles = createGlobalStyle`
             &:before {
               ${Skeleton};
               height: 1.3em;
-              width: 10rem;
+              width: 5em;
             }
           }
     }
@@ -236,7 +236,7 @@ const GlobalStyles = createGlobalStyle`
             &:before {
               ${Skeleton};
               height: 1.3em;
-              width: 30vw;
+              width: 5rem;
             }
           }
     }
@@ -245,7 +245,7 @@ const GlobalStyles = createGlobalStyle`
       &:empty {
         &:before {
           ${Skeleton};
-          height: 3em;
+          height: 2em;
           width: 8rem;
         }
       }

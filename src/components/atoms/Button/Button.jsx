@@ -3,6 +3,8 @@ import styled, { css, keyframes } from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { colors, shadows } from "Variables";
 import PropTypes from "prop-types";
+import {Skeleton} from "helpers/Skeleton.jsx";
+
 
 const buttonHover = css`
   filter: brightness(85%) contrast(150%);
@@ -15,7 +17,7 @@ const StyledButton = styled.button`
   display: flex;
   /* flex: auto; */
   flex-direction: column;
-  /* width: auto; */
+  /* width: auto; */ 
   width: ${props => (props.fullWidth ? "100%" : "auto")};
   padding: ${props => props.buttonPadding || "0.5rem 0.7rem"};
   justify-content: center;
@@ -30,6 +32,7 @@ const StyledButton = styled.button`
   overflow: hidden;
   cursor: pointer;
   transition: all 0.15s ease;
+
   &:hover {
     ${buttonHover}
   }
@@ -51,6 +54,7 @@ const ButtonLabel = styled.label`
   font-weight: inherit;
   user-select: none;
   cursor: pointer;
+
 `;
 
 const ButtonIcon = styled(FontAwesomeIcon)`

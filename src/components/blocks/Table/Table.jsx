@@ -4,6 +4,7 @@ import PropTypes from "prop-types"
 import Card, {Piece} from "layout/Card/Card";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 import {Skeleton} from "helpers/Skeleton.jsx";
+import {SkeletonStatic} from "helpers/SkeletonStatic.jsx"
 
 
 const TableWrapper = styled.table`
@@ -15,7 +16,7 @@ const TableWrapper = styled.table`
   display: flex-block;
   width: 100%;
   &:empty {
-      ${Skeleton};
+      ${SkeletonStatic};
       padding: 5px;
       width: 100 em;
       height: 5rem;

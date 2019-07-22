@@ -106,7 +106,7 @@ storiesOf("Templates|Panel", module)
             <PropertyPanelHeader />
           </PanelSection>
           <PanelSection body>
-            <Table data={data} />
+            <Table />
             <Accordion
               header={<InformationCardBar />}
               visibility={visibility}

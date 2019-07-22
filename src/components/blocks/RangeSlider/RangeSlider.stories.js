@@ -14,4 +14,5 @@ storiesOf("Blocks|RangeSlider", module)
       minLabel="Min Label"
       maxLabel="Max Label"
     />
-  ));
+  ))
+  .add("Skeleton", () => <RangeSlider />);

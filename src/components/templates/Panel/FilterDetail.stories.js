@@ -339,21 +339,29 @@ storiesOf("Templates|Panel/Property Filters", module)
                   firstOptions={options}
                   secondOptions={options}
                   label="Year Built"
+                  labelMin="Min"
+                  labelMax="Max"
                 />
                 <DataRange
                   firstOptions={options}
                   secondOptions={options}
                   label="Number of Units"
+                  labelMin="Min"
+                  labelMax="Max"
                 />
                 <DataRange
                   firstOptions={options}
                   secondOptions={options}
                   label="Range 3"
+                  labelMin="Min"
+                  labelMax="Max"
                 />
                 <DataRange
                   firstOptions={options}
                   secondOptions={options}
                   label="Range 4"
+                  labelMin="Min"
+                  labelMax="Max"
                 />
 
                 <TextInput
