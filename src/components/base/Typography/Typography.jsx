@@ -23,6 +23,8 @@ margin-left: 4em;
 const StyledText = styled.h4`
   color: ${props => props.textColor || colors.grey_80};
   font-size: ${props => props.textSize || '14px'};
+  font-weight: ${props => props.textWeight || ''};
+  line-height: 1;
   font-style: ${props => props.textStyle || ''};
   text-decoration: ${props => props.textDecoration || ''};
 
@@ -33,11 +35,13 @@ function Title({
   title,
   type,
   style,
+  weight,
   number,
   results,
   size,
 }) {
 let textColor;
+let textWeight;
 let textSize;
 let textStyle;
 let textDecoration;
@@ -88,10 +92,22 @@ let textDecoration;
       default:
         break;
         }
+
+        switch (weight) {
+          case "headers":
+            textWeight = '700';
+            break;
+          case "bars":
+            textWeight = '600';
+            break;
+          default:
+            break;
+            }
   return (
     <StyledText
       id={id}
       textColor={textColor}
+      textWeight={textWeight}
       textSize={textSize}
       textStyle={textStyle}
       textDecoration={textDecoration}
@@ -108,6 +124,7 @@ Title.propTypes = {
   title: PropTypes.any,
   number: PropTypes.bool,
   results: PropTypes.bool,
+  weight: PropTypes.string,
   type: PropTypes.string,
   style: PropTypes.string,
   size: PropTypes.string

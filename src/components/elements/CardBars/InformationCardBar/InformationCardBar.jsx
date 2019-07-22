@@ -6,6 +6,7 @@ import IconBlock from "blocks/IconBlock";
 import Bar from "blocks/Bar";
 import Card, { Piece } from "layout/Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Title from "base/Typography";
 
 const Arrow = styled(FontAwesomeIcon)`
   transform: ${props =>
@@ -22,7 +23,7 @@ function InformationCardBar({ id, title}) {
     <Piece id={id}>
       <Bar
         onClick={toggleLeft}
-        left={title}
+  left={ <Title title={title} weight="bars"/> }
         right={<Arrow leftOnscreen={leftOnscreen} icon={["far", "angle-up"]} />}
       />
     </Piece>

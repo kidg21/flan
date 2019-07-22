@@ -5,6 +5,7 @@ import Icon from "atoms/Icon";
 import IconBlock from "blocks/IconBlock";
 import Bar from "blocks/Bar";
 import Card, { Piece } from "layout/Card";
+import Title from "base/Typography";
 
 const HeaderSpace = styled.div`
   padding-top: 0.7rem;
@@ -16,7 +17,7 @@ function PropertyPanelHeader({ id, title, onClick, onClickDirection }) {
     <Piece id={id}>
       <HeaderSpace>
         <Bar
-          left={title}
+          left={<Title title={title} weight="headers"/>}
           center={
             <IconBlock>
               <Icon

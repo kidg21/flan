@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import Bar from "blocks/Bar";
 import Card, { Piece } from "layout/Card";
+import Title from "base/Typography";
 
 const HeaderSpace = styled.div`
   padding-top: 0.7rem;
@@ -15,7 +16,7 @@ function MainPanelHeader({ id, title }) {
     <Piece id={id}>
       <HeaderSpace>
         <Bar
-          left={title}
+          left={<Title title={title} weight="headers"/>}
           right={<Icon icon={["far", "ellipsis-v"]} size="lg" />}
         />
       </HeaderSpace>

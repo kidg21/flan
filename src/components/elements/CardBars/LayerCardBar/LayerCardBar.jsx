@@ -5,6 +5,7 @@ import Icon from "atoms/Icon";
 import IconBlock from "blocks/IconBlock";
 import Bar from "blocks/Bar";
 import Card, { Piece } from "layout/Card";
+import Title from "base/Typography";
 
 import Switch from "atoms/Switch";
 
@@ -54,7 +55,7 @@ function LayerCardBar({ id, title, switchProps, disabled }) {
           left={
             <SwitchContainer disabled="true">
               {" "}
-              <Switch /> <span style={Space} /> {title}{" "}
+              <Switch /> <span style={Space} /> <Title title={title} weight="bars"/>
             </SwitchContainer>
           }
           right={DisabledIcons}
@@ -64,7 +65,7 @@ function LayerCardBar({ id, title, switchProps, disabled }) {
           left={
             <SwitchContainer>
               {" "}
-              <Switch {...switchProps} /> <span style={Space} /> {title}{" "}
+              <Switch {...switchProps} /> <span style={Space} /> <Title title={title} weight="bars"/>
             </SwitchContainer>
           }
           right={Icons}
