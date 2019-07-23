@@ -64,7 +64,7 @@ function Button({
   fullWidth,
   isDisabled,
   onClick,
-  style
+  style,
 }) {
   let buttonColor;
   let textColor;
@@ -143,7 +143,7 @@ Button.propTypes = {
   fullWidth: PropTypes.bool,
   isDisabled: PropTypes.bool,
   onClick: PropTypes.func.isRequired,
-  style: PropTypes.string
+  style: PropTypes.string,
 };
 
 export { Button as default };

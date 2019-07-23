@@ -24,7 +24,7 @@ function Icon({
   pull,
   style,
   onClick,
-  className
+  className,
 }) {
   let iconColor;
   switch (type) {
@@ -103,7 +103,7 @@ Icon.propTypes = {
   style: PropTypes.string,
   onClick: PropTypes.func,
   /** className used for extending styles */
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default Icon;
