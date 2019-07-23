@@ -10,11 +10,6 @@ const CountContainer = styled.div`
 	margin-left: 4em;
 `;
 
-// const Separater = styled.h4`
-// padding-right: 2.2em;
-// padding-left: 2em;
-// `
-
 const StyledText = styled.h4`
 	color: ${props => props.textColor || colors.grey_80};
 	font-size: ${props => props.textSize || ""};
@@ -24,12 +19,13 @@ const StyledText = styled.h4`
 	text-decoration: ${props => props.textDecoration || ""};
 `;
 
-function Title({ id, title, type, style, weight, number, results, size }) {
+function Title({ id, title, type, order, style, weight, count, size }) {
 	let textColor;
 	let textWeight;
 	let textSize;
 	let textStyle;
 	let textDecoration;
+	let flexDirection;
 	switch (type) {
 		case "info":
 			textColor = colors.anchor;
@@ -77,7 +73,16 @@ function Title({ id, title, type, style, weight, number, results, size }) {
 		default:
 			break;
 	}
-
+	switch (order) {
+		case "before":
+			flexDirection = "row";
+			break;
+		case "after":
+			flexDirection = "row-reverse";
+			break;
+		default:
+			break;
+	}
 	switch (weight) {
 		case "light":
 			textWeight = "500";
@@ -101,21 +106,9 @@ function Title({ id, title, type, style, weight, number, results, size }) {
 			textDecoration={textDecoration}
 		>
 			{title}
-			{number ? (
+			{count ? (
 				<CountContainer>
-					{" "}
-					<a>{number}</a>
-				</CountContainer>
-			) : null}
-			{results ? (
-				<CountContainer>
-					{" "}
-					<h3>
-						<a>{results}</a>
-					</h3>{" "}
-					<h4>
-						<sub>results</sub>
-					</h4>
+					<a>{count}</a>
 				</CountContainer>
 			) : null}
 		</StyledText>
@@ -129,6 +122,7 @@ Title.propTypes = {
 	results: PropTypes.bool,
 	weight: PropTypes.string,
 	type: PropTypes.string,
+	order: PropTypes.string,
 	style: PropTypes.string,
 	size: PropTypes.string,
 };
