@@ -5,42 +5,40 @@ import Search from "blocks/Search";
 import Tabs, { Tab } from "blocks/Tabs";
 import { colors, shadows } from "Variables";
 
-
-
 const IconWrapper = styled.span`
-  /* Needed for passing properties to children (animation, etc.) */
+	/* Needed for passing properties to children (animation, etc.) */
 `;
 
 const SearchContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  ${IconWrapper} {
-    position: absolute;
-    right: 0;
-    background-color: ${colors.white};
-    margin: 0.2em;
-    padding: 0.7em;
-    cursor: pointer;
-  }
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	${IconWrapper} {
+		position: absolute;
+		right: 0;
+		background-color: ${colors.white};
+		margin: 0.2em;
+		padding: 0.7em;
+		cursor: pointer;
+	}
 `;
 
 function MapSearch({ id, ...searchProps }) {
-  const [activeSingleTab, setActiveSingleTab] = useState("tab1");
-  return (
-    <SearchContainer id={id}>
-      <Search {...searchProps} />
-      <Tabs>
-      <Tab tabLabel="Address" size="small"/>
-      <Tab tabLabel="Owner" size="small"/>
-      <Tab tabLabel="APN" size="small"/>
-    </Tabs>
-    </SearchContainer>
-  );
+	const [activeSingleTab, setActiveSingleTab] = useState("tab1");
+	return (
+		<SearchContainer id={id}>
+			<Search {...searchProps} />
+			<Tabs>
+				<Tab tabLabel="Address" />
+				<Tab tabLabel="Owner" />
+				<Tab tabLabel="APN" />
+			</Tabs>
+		</SearchContainer>
+	);
 }
 
 MapSearch.propTypes = {
-  id: PropTypes.string,
+	id: PropTypes.string,
 };
 
 export default MapSearch;
