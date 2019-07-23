@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
-import MainPanelHeader from "elements/MainPanelHeader";
+import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
 import CardAccordion from "elements/CardAccordion";
 import MapLegend from "blocks/MapLegend";
-import LayerCardBar from "elements/LayerCardBar";
+import LayerCardBar from "elements/CardBars/LayerCardBar";
 import Panel, { PanelSection } from "layout/Panel";
 
 storiesOf("Templates|Panel", module).add("Layer Panel", () =>

@@ -56,6 +56,7 @@ const Title = styled.h4`
 
 const Description = styled.h5`
   margin: 0;
+  font-weight: 500;
 `;
 
 const Link = styled.h4`
