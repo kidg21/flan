@@ -28,22 +28,6 @@ function Menu() {
   );
 }
 
-function InformationMenu() {
-  return (
-    <Panel>
-      <PanelSection>
-        <PanelHeader main="true" title="Information" />
-      </PanelSection>
-      <PanelSection>
-        <CardBar navigation="true" title="FAQs" />
-        <CardBar navigation="true" title="Documentation" />
-        <CardBar navigation="true" title="Best Practices" />
-        <CardBar navigation="true" title="New Updates" />
-        <CardBar navigation="true" title="Support" />
-        <CardBar navigation="true" title="Contact Us" />
-      </PanelSection>
-    </Panel>
-  );
-}
 
-export { Menu as default, InformationMenu };
+
+export { Menu as default };
