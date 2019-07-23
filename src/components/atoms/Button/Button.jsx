@@ -3,7 +3,6 @@ import styled, { css, keyframes } from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { colors, shadows } from "Variables";
 import PropTypes from "prop-types";
-import {Skeleton} from "helpers/Skeleton.jsx";
 
 
 const buttonHover = css`
