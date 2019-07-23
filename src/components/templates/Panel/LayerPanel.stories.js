@@ -32,8 +32,9 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
                 }}
               />
             }
-            body={<MapLegend />}
-          />
+          >
+            <MapLegend />
+          </CardAccordion>
           <CardAccordion
             header={
               <LayerCardBar
@@ -47,8 +48,9 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
                 }}
               />
             }
-            body={<MapLegend />}
-          />
+          >
+            <MapLegend />
+          </CardAccordion>
           <CardAccordion
             header={
               <LayerCardBar
@@ -62,8 +64,9 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
                 }}
               />
             }
-            body={<MapLegend />}
-          />
+          >
+            <MapLegend />
+          </CardAccordion>
           <CardAccordion
             header={
               <LayerCardBar
@@ -77,8 +80,9 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
                 }}
               />
             }
-            body={<MapLegend />}
-          />
+          >
+            <MapLegend />
+          </CardAccordion>
           <CardAccordion
             header={
               <LayerCardBar
@@ -92,8 +96,9 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
                 }}
               />
             }
-            body={<MapLegend />}
-          />
+          >
+            <MapLegend />
+          </CardAccordion>
         </PanelSection>
       </Panel>
     );

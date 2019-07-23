@@ -2,8 +2,8 @@ import React from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 import { fonts, colors, shadows } from "Variables";
-import { PlaceholderText } from "helpers/Placeholders";
-import Grid from "helpers/Grid";
+import { PlaceholderText } from "helpers/Placeholders.jsx";
+import Grid from "helpers/Grid.jsx";
 
 const Form = styled.form`
   display: grid;

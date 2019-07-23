@@ -16,9 +16,9 @@ const Block = styled.div`
   //   position: ${props => (props.stacked ? "absolute" : "")};
 `;
 
-function IconBlock({ id, stacked, children, style }) {
+function IconBlock({ id, stacked, children, style, className }) {
   return (
-    <Block id={id} stacked={stacked} style={style}>
+    <Block id={id} stacked={stacked} style={style} className={className}>
       {children}
     </Block>
   );
@@ -26,7 +26,9 @@ function IconBlock({ id, stacked, children, style }) {
 
 IconBlock.propTypes = {
   id: PropTypes.string,
-  children: PropTypes.any.isRequired
+  children: PropTypes.any.isRequired,
+  /** className used for extending styles */
+  className: PropTypes.string,
 };
 
 export default IconBlock;
