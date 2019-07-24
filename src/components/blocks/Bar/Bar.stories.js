@@ -80,11 +80,7 @@ storiesOf("Blocks|Bar", module)
       </Card>
     ))
   )
-  .add("Skeleton", () => (
-    <Card>
-      <Bar />
-    </Card>
-  ))
+
   .add("Some Bars", () => (
     <Grid col_1>
       <Section>Command / Text / Command</Section>

@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import Switch from "atoms/Switch";
 import IconBlock from "blocks/IconBlock";
-import {Skeleton} from "helpers/Skeleton.jsx";
+
 
 const Slot = styled.div`
   display: flex;

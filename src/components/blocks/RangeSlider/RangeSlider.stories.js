@@ -6,13 +6,8 @@ import RangeSlider from "blocks/RangeSlider";
 import { withInfo } from "@storybook/addon-info";
 
 storiesOf("Blocks|RangeSlider", module)
-  .addDecorator(withInfo)
-  .addDecorator(Padding)
-  .add("RangeSlider", () => (
-    <RangeSlider
-      label="Range Slider Label"
-      minLabel="Min Label"
-      maxLabel="Max Label"
-    />
-  ))
-  .add("Skeleton", () => <RangeSlider />);
+	.addDecorator(withInfo)
+	.addDecorator(Padding)
+	.add("RangeSlider", () => (
+		<RangeSlider label="Range Slider Label" minLabel="Min Label" maxLabel="Max Label" />
+	));

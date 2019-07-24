@@ -107,7 +107,7 @@ const GlobalStyles = createGlobalStyle`
         line-height: 1.5rem;
         margin: 0 0 1rem;
     }
-    h1, h2, h3, h4, h6 {
+    h1, h2, h3, h4, h5, h6 {
         font-family: ${fonts.headline}; /* Muli */
         font-weight: 700;
         margin: 0 0 .5rem;
@@ -156,7 +156,7 @@ const GlobalStyles = createGlobalStyle`
         &:empty {
             &:before {
               ${Skeleton};
-              height: 1.3em;
+              height: 1.4rem;
               width: 40vw;
             }
           }

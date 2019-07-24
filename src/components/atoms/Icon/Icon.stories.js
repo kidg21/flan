@@ -107,7 +107,6 @@ storiesOf("Atoms|Icon", module)
   .addDecorator(Padding)
   .addDecorator(withKnobs)
   .add("Documentation", withInfo()(() => <Icon icon="coffee" size="lg" />))
-  .add("Skeleton", () => <Icon />)
   .add("Icon Colors", () => (
     <IconGrid style={{ fontSize: "2em" }}>
       <Title>
