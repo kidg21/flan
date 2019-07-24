@@ -5,7 +5,7 @@ import styled from "styled-components";
  
 const AccordionSection = styled.div`
   line-height: normal;
-  border-bottom: 1px solid ${colors.grey_20};
+  border-bottom: 1px solid ${colors.grey_light};
   cursor: pointer;
 `;
 
