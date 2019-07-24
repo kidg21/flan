@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { screen } from "Variables";
-import { PlaceholderText } from "helpers/Placeholders";
+import { PlaceholderText } from "helpers/Placeholders.jsx";
 
 const FlexWrapper = styled.div`
   position: ${props => props.setPosition || "absolute"};
@@ -16,11 +16,7 @@ const FlexWrapper = styled.div`
   flex-direction: ${props => props.flexDirection || "column"};
   flex-wrap: nowrap;
   justify-content: flex-start;
-  align-content: ${props => props.alignContent || ""};
-  align-items: ${props => props.alignItems || ""};
-  align-self: ${props => props.alignSelf || ""};
   flex: ${props => props.setFlex || "1 1 auto"};
-  flex-basis: ${props => props.flexBasis || ""};
   order: 0;
   z-index: ${props => props.zIndex || "0"};
   max-width: 100%;
@@ -38,25 +34,20 @@ const FlexWrapper = styled.div`
 `;
 
 function Layout({
-  alignContent,
-  alignItems,
-  alignSelf,
   backgroundColor,
   bottom,
   children,
-  flexBasis,
   flexDirection,
   height,
   id,
   left,
-  maxWidth,
-  name,
   right,
   setFlex,
   setOverflow,
   setPosition,
   state,
   top,
+  type,
   width,
   zIndex,
 }) {
@@ -64,7 +55,7 @@ function Layout({
   const screenMedium = window.matchMedia(screen.medium);
   const screenLarge = window.matchMedia(screen.large);
   let displayState;
-  switch (name) {
+  switch (type) {
     case "outerWrapper":
       setPosition = "relative";
       backgroundColor = "black";
@@ -90,7 +81,6 @@ function Layout({
         width = "80%";
       }
       break;
-
     case "mainWrapper":
       backgroundColor = "grey";
       break;
@@ -143,47 +133,47 @@ function Layout({
   }
   switch (state) {
     case "leftUncover":
-      if (name === "innerWrapper" && screenLarge.matches) {
+      if (type === "innerWrapper" && screenLarge.matches) {
         displayState = "translate3d(20%, 0, 0)";
-      } else if (name === "innerWrapper" && screenMedium.matches) {
+      } else if (type === "innerWrapper" && screenMedium.matches) {
         displayState = "translate3d(40%, 0, 0)";
-      } else if (name === "innerWrapper" && screenSmall.matches) {
+      } else if (type === "innerWrapper" && screenSmall.matches) {
         displayState = "translate3d(80%, 0, 0)";
       }
       break;
     case "leftCover":
-      if (name === "innerWrapper") {
+      if (type === "innerWrapper") {
         displayState = "translate3d(0, 0, 0)";
       }
       break;
     case "rightOnscreen":
-      if (name === "mainWrapper" && screenLarge.matches) {
+      if (type === "mainWrapper" && screenLarge.matches) {
         width = "80%";
-      } else if (name === "mainWrapper" && screenMedium.matches) {
+      } else if (type === "mainWrapper" && screenMedium.matches) {
         width = "60%";
-      } else if (name === "mainWrapper" && screenSmall.matches) {
+      } else if (type === "mainWrapper" && screenSmall.matches) {
         width = "100%";
       }
       break;
     case "rightOffscreen":
-      if (name === "rightWrapper") {
+      if (type === "rightWrapper") {
         left = "100%";
       }
       break;
 
     case "bottomOnscreen":
-      if (name === "middleWrapper" && screenLarge.matches) {
+      if (type === "middleWrapper" && screenLarge.matches) {
         bottom = "40%";
-      } else if (name === "middleWrapper" && screenMedium.matches) {
+      } else if (type === "middleWrapper" && screenMedium.matches) {
         bottom = "50%";
-      } else if (name === "middleWrapper" && screenSmall.matches) {
+      } else if (type === "middleWrapper" && screenSmall.matches) {
         bottom = "60%";
       }
       break;
     case "bottomOffscreen":
-      if (name === "bottomWrapper") {
+      if (type === "bottomWrapper") {
         top = "100%";
-      } else if (name === "middleWrapper") {
+      } else if (type === "middleWrapper") {
         bottom = "0";
       }
       break;
@@ -201,18 +191,13 @@ function Layout({
   }
   return (
     <FlexWrapper
-      alignContent={alignContent}
-      alignItems={alignItems}
-      alignSelf={alignSelf}
       backgroundColor={backgroundColor}
       bottom={bottom}
       displayState={displayState}
-      flexBasis={flexBasis}
       flexDirection={flexDirection}
       height={height}
       id={id}
       left={left}
-      maxWidth={maxWidth}
       right={right}
       setFlex={setFlex}
       setOverflow={setOverflow}
@@ -227,28 +212,14 @@ function Layout({
 }
 
 Layout.propTypes = {
-  alignContent: PropTypes.string,
-  alignItems: PropTypes.string,
-  alignSelf: PropTypes.string,
+  /** Prototype-only */
   backgroundColor: PropTypes.string,
   bottom: PropTypes.string,
   children: PropTypes.node,
-  flexBasis: PropTypes.string,
   flexDirection: PropTypes.string,
   height: PropTypes.string,
   id: PropTypes.string,
   left: PropTypes.string,
-  maxWidth: PropTypes.string,
-  name: PropTypes.oneOf([
-    "outerWrapper",
-    "innerWrapper",
-    "leftWrapper",
-    "mainWrapper",
-    "middleWrapper",
-    "bottomWrapper",
-    "rightWrapper",
-    "controlsWrapper",
-  ]),
   right: PropTypes.string,
   setFlex: PropTypes.string,
   setOverflow: PropTypes.string,
@@ -263,6 +234,16 @@ Layout.propTypes = {
     "fullScreen",
   ]),
   top: PropTypes.string,
+  type: PropTypes.oneOf([
+    "outerWrapper",
+    "innerWrapper",
+    "leftWrapper",
+    "mainWrapper",
+    "middleWrapper",
+    "bottomWrapper",
+    "rightWrapper",
+    "controlsWrapper",
+  ]),
   width: PropTypes.string,
   zIndex: PropTypes.string,
 };

@@ -1,11 +1,24 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
+import { withInfo } from "@storybook/addon-info";
 import { screen } from "Variables";
 import Tabs, { Tab } from "blocks/Tabs";
 import Card from "layout/Card";
 import Layout from "layout/Layout";
+import LayoutNotes from "./Layout.md";
 
 storiesOf("Layout |App Layout/", module)
+  .addParameters({
+    info: {
+      text: "Layout info goes here...",
+    },
+    notes: {
+      markdown: LayoutNotes,
+    },
+  })
+
+  .add("Documentation", withInfo()(() => <Layout height="25%" />))
+
   .add("2 Panel - Row", () => (
     <Layout>
       <Layout width="70%" />
@@ -106,12 +119,12 @@ storiesOf("Layout |App Layout/", module)
       }
 
       return (
-        <Layout id="outer" name="outerWrapper">
-          <Layout id="inner" name="innerWrapper" state={innerState}>
-            <Layout id="left" name="leftWrapper" />
-            <Layout id="main" name="mainWrapper" state={mainState}>
-              <Layout id="middle" name="middleWrapper" state={middleState} />
-              <Layout id="bottom" name="bottomWrapper" state={bottomState}>
+        <Layout id="outer" type="outerWrapper">
+          <Layout id="inner" type="innerWrapper" state={innerState}>
+            <Layout id="left" type="leftWrapper" />
+            <Layout id="main" type="mainWrapper" state={mainState}>
+              <Layout id="middle" type="middleWrapper" state={middleState} />
+              <Layout id="bottom" type="bottomWrapper" state={bottomState}>
                 <Card>
                   <Tabs align="bottom">
                     <Tab
@@ -122,7 +135,7 @@ storiesOf("Layout |App Layout/", module)
                 </Card>
               </Layout>
             </Layout>
-            <Layout id="right" name="rightWrapper" state={rightState}>
+            <Layout id="right" type="rightWrapper" state={rightState}>
               <Card>
                 <Tabs align="bottom">
                   <Tab
@@ -133,7 +146,7 @@ storiesOf("Layout |App Layout/", module)
               </Card>
             </Layout>
           </Layout>
-          <Layout id="controls" name="controlsWrapper">
+          <Layout id="controls" type="controlsWrapper">
             <Tabs align={controlsAlign}>
               <Tab
                 tabLabel="Toggle Left Wrapper"
@@ -154,5 +167,5 @@ storiesOf("Layout |App Layout/", module)
           </Layout>
         </Layout>
       );
-    })
+    }),
   );
