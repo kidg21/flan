@@ -14,12 +14,12 @@ const GlobalStyles = createGlobalStyle`
 
     /* Import font resources */
     ${
-  "" /* @font-face {
+			"" /* @font-face {
         font-family: Lato;
         src: local("Lato");
         src: url(${Lato_700});
     } */
-}
+		}
 
     /* Document resets */
     html {

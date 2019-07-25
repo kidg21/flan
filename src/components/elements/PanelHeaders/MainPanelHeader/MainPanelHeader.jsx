@@ -6,20 +6,18 @@ import Bar from "blocks/Bar";
 import Card, { Piece } from "layout/Card";
 import Title from "base/Typography";
 
-const HeaderSpace = styled.div`
-	padding-top: 0.7rem;
-	font-weight: 700;
-`;
+// const HeaderSpace = styled.div`
+// 	padding-top: 0.7rem;
+// 	font-weight: 700;
+// `;
 
 function MainPanelHeader({ id, title }) {
 	return (
 		<Piece id={id}>
-			<HeaderSpace>
-				<Bar
-					left={<Title title={title} weight="bold" />}
-					right={<Icon icon={["far", "ellipsis-v"]} size="lg" />}
-				/>
-			</HeaderSpace>
+			<Bar
+				left={<Title title={title} weight="bold" />}
+				right={<Icon icon={["far", "ellipsis-v"]} size="lg" />}
+			/>
 		</Piece>
 	);
 }
