@@ -8,12 +8,13 @@ const Block = styled.div`
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: space-between;
-  // position: ${props => (props.stacked ? "relative" : "")};
-  width: ${props => (props.stacked ? "100%" : "7rem")};
-  // justify-content: ${props => (props.stacked ? "center" : "space-between")};
-  // align-items: ${props => (props.stacked ? "center" : "")};
-  // > * {
-  //   position: ${props => (props.stacked ? "absolute" : "")};
+  /* position: ${props => (props.stacked ? "relative" : "")}; */
+  /* width: ${props => (props.stacked ? "" : "100%")}; */
+  /* justify-content: ${props =>
+    props.stacked ? "center" : "space-between"}; */
+  /* align-items: ${props => (props.stacked ? "center" : "")}; */
+  /* > * { */
+    /* position: ${props => (props.stacked ? "absolute" : "")}; */
 `;
 
 function IconBlock({ id, stacked, children, style, className }) {
