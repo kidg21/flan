@@ -103,7 +103,6 @@ function Tab({ id, icon, tabLabel, onClick, isSelected, isDisabled }) {
 			{isSelected ? (
 				<Button
 					id={id}
-					size={size}
 					icon={icon}
 					buttonLabel={tabLabel}
 					onClick={onClick}

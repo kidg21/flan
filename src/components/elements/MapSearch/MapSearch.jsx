@@ -23,22 +23,18 @@ const SearchContainer = styled.div`
 	}
 `;
 
-function MapSearch({ id, ...searchProps }) {
-	const [activeSingleTab, setActiveSingleTab] = useState("tab1");
+function MapSearch({ id, tabs, ...searchProps }) {
 	return (
 		<SearchContainer id={id}>
 			<Search {...searchProps} />
-			<Tabs>
-				<Tab tabLabel="Address" />
-				<Tab tabLabel="Owner" />
-				<Tab tabLabel="APN" />
-			</Tabs>
+			{tabs}
 		</SearchContainer>
 	);
 }
 
 MapSearch.propTypes = {
 	id: PropTypes.string,
+	tabs: PropTypes.string,
 };
 
 export default MapSearch;
