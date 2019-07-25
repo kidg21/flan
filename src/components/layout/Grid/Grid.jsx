@@ -103,7 +103,12 @@ function Grid({ children, columns, gap, id, rows }) {
 
 Grid.propTypes = {
   id: PropTypes.string,
-  setColumns: PropTypes.oneOf([
+  children: PropTypes.node,
+  /** Defines the widths of grid columns
+   *
+   * Options: Any switch case or any standard value accepted by the CSS Grid property, 'grid-template-columns'.
+   */
+  columns: PropTypes.oneOf([
     "default (auto)",
     "1",
     "2",
@@ -117,19 +122,30 @@ Grid.propTypes = {
     "10",
     "11",
     "12",
-    "[custom]",
+    "[grid-template-columns]",
   ]),
-  setGap: PropTypes.oneOf([
-    "none",
-    "tiny",
-    "small",
-    "default (normal)",
-    "large",
-    "xlarge",
-    "xxlarge",
-    "[custom]",
+  /** Sets the 'gutter' between grid items
+   *
+   * Options: Any switch case or any standard value accepted by the CSS Grid property, 'grid-gap'.
+   */
+  gap: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.oneOf([
+      "none",
+      "tiny",
+      "small",
+      "default (normal)",
+      "large",
+      "xlarge",
+      "xxlarge",
+      "[grid-template-rows]",
+    ]),
   ]),
-  setRows: PropTypes.oneOf(["default (auto)", "[custom]"]),
+  /** Defines the heights of grid rows
+   *
+   * Options: Any switch case or any standard value accepted by the CSS Grid property, 'grid-template-rows'.
+   */
+  rows: PropTypes.oneOf(["default (auto)", "[grid-template-rows]"]),
 };
 
 export { Grid as default };

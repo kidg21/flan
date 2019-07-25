@@ -1,7 +1,5 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import Card from "layout/Card";
-import Grid from "layout/Grid";
 import { withInfo } from "@storybook/addon-info";
 import {
   withKnobs,
@@ -14,6 +12,8 @@ import {
   array,
   optionsKnob as options,
 } from "@storybook/addon-knobs";
+import Card from "layout/Card";
+import Grid from "layout/Grid";
 import GriddNotes from "./Grid.md";
 
 storiesOf("Application|Grid/", module)
@@ -39,21 +39,25 @@ storiesOf("Application|Grid/", module)
   )
   .add("Knobs", () => (
     <Grid
-      // columns={number(
-      //   "# of columns",
-      //   "2",
-      //   {
-      //     range: true,
-      //     min: "1",
-      //     max: "12",
-      //     step: 1,
-      //   },
-      //   "Standard Props",
-      // )}
+      gap={options(
+        "grid gap",
+        {
+          "no gap": "none",
+          tiny: "tiny",
+          small: "small",
+          "normal (default)": "",
+          large: "large",
+          xlarge: "xlarge",
+          xxlarge: "xxlarge",
+        },
+        "",
+        { display: "select" },
+        "Standard Props",
+      )}
       columns={options(
         "# of columns",
         {
-          auto: "",
+          "auto-fit": "",
           "1": "1",
           "2": "2",
           "3": "3",
@@ -71,7 +75,7 @@ storiesOf("Application|Grid/", module)
         { display: "select" },
         "Standard Props",
       )}
-      // columns={text("Custom # of columns", "", "Standard Props")}
+      rows={text("grid-template-rows", "auto", "Standard Props")}
     >
       <Card />
       <Card />
