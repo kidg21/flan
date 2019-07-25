@@ -16,7 +16,7 @@ import Card from "layout/Card";
 import Grid from "layout/Grid";
 import GriddNotes from "./Grid.md";
 
-storiesOf("Application|Grid/", module)
+storiesOf("Layout|Grid/", module)
   .addParameters({
     info: {
       text: "Grid info goes here.",
@@ -91,8 +91,24 @@ storiesOf("Application|Grid/", module)
       <Card />
     </Grid>
   ))
-  .add("WIP", () => (
-    <Grid gap="xxlarge" columns="5fr 2fr 1fr 5fr 1fr" rows="repeat(3, 150px)">
+  .add("Standard Grid", () => (
+    <Grid>
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+    </Grid>
+  ))
+  .add("Custom Grid", () => (
+    <Grid gap="xxlarge" columns="5fr 2fr 1fr 5fr 1fr" rows="100px 3fr 1fr">
       <Card />
       <Card />
       <Card />
