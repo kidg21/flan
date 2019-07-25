@@ -9,10 +9,10 @@ import {
   radios,
   select,
   number,
-  optionsKnob as options
+  optionsKnob as options,
 } from "@storybook/addon-knobs";
 import { Padding } from "helpers/Display";
-import Grid from "helpers/Grid";
+import Grid from "layout/Grid";
 import Card, { CardList } from "layout/Card";
 import Badge from "./Badge";
 import BadgeNotes from "./Badge.md";
@@ -25,27 +25,27 @@ const Title = styled.h6`
 storiesOf("Atoms|Badge", module)
   .addParameters({
     info: {
-      text: "Badge info goes here..."
+      text: "Badge info goes here...",
     },
     notes: {
-      markdown: BadgeNotes
-    }
+      markdown: BadgeNotes,
+    },
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
   .add(
     "Documentation",
     withInfo()(() => (
-      <Grid col_4>
+      <Grid columns="4">
         <Card>
           <Badge label="1" />
           <Title>Badge</Title>
         </Card>
       </Grid>
-    ))
+    )),
   )
   .add("Knobs", () => (
-    <Grid col_4>
+    <Grid columns="4">
       <Card>
         <Badge
           type={options(
@@ -55,11 +55,11 @@ storiesOf("Atoms|Badge", module)
               success: "success",
               warning: "warning",
               "alert (default)": "alert",
-              dark: "dark"
+              dark: "dark",
             },
             "alert",
             { display: "radio" },
-            "Badge"
+            "Badge",
           )}
           label={text("label", "Label", "Badge")}
           icon={options(
@@ -70,11 +70,11 @@ storiesOf("Atoms|Badge", module)
               check: "check",
               exclamation: "exclamation",
               envelope: "envelope",
-              phone: "phone"
+              phone: "phone",
             },
             null,
             { display: "select" },
-            "Badge"
+            "Badge",
           )}
           position={options(
             "align",
@@ -82,11 +82,11 @@ storiesOf("Atoms|Badge", module)
               "top-left": "topLeft",
               "top-right (default)": "topRight",
               "bottom-right": "bottomRight",
-              "bottom-left": "bottomLeft"
+              "bottom-left": "bottomLeft",
             },
             "topRight",
             { display: "radio" },
-            "Badge"
+            "Badge",
           )}
         />
         <Title>Badge</Title>
@@ -95,7 +95,7 @@ storiesOf("Atoms|Badge", module)
   ))
 
   .add("The Badge Family", () => (
-    <CardList col_4>
+    <CardList columns="4">
       <Card>
         <Badge label="1" />
         <Title>1-Digit</Title>

@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import { fonts, colors, shadows } from "Variables";
-import Grid from "helpers/Grid.jsx";
+import Grid from "layout/Grid";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 
 const CardPiece = styled.div`

@@ -2,7 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import styled, { css } from "styled-components";
 import { Padding } from "helpers/Display";
-import Grid from "helpers/Grid";
+import Grid from "layout/Grid";
 import { withInfo } from "@storybook/addon-info";
 import {
   withKnobs,
@@ -13,7 +13,7 @@ import {
   number,
   button,
   array,
-  optionsKnob as options
+  optionsKnob as options,
 } from "@storybook/addon-knobs";
 import { colors, shadows } from "Variables";
 import Command from "atoms/Command";
@@ -37,25 +37,16 @@ const SectionTitle = styled.h4`
   border-top: 2px solid ${colors.grey_light};
 `;
 
-const CommandGrid = styled(Grid)`
-  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
-  @media (min-width: 40.063em) {
-    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
-  }
-  @media (min-width: 64.063em) {
-    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
-  }
-`;
 // Command
 storiesOf("Atoms|Command", module)
   .addParameters({
     info: {
       text:
-        "A Command is like a Button...only less button-y.  Oh, and it usually has an icon...unless it doesn't."
+        "A Command is like a Button...only less button-y.  Oh, and it usually has an icon...unless it doesn't.",
     },
     notes: {
-      markdown: CommandNotes
-    }
+      markdown: CommandNotes,
+    },
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
@@ -79,42 +70,42 @@ storiesOf("Atoms|Command", module)
             settings: "settings",
             share: "share",
             "---------------------": "",
-            "Custom Command": null
+            "Custom Command": null,
           },
           "add to list",
-          "Standard Props"
+          "Standard Props",
         )}
         align={options(
           "align",
           {
             "left ( default )": "default",
             right: "right",
-            center: "center"
+            center: "center",
           },
           "default",
           { display: "radio" },
-          "Standard Props"
+          "Standard Props",
         )}
         state={options(
           "state",
           {
             "active ( default )": "default",
-            disabled: "disabled"
+            disabled: "disabled",
           },
           "default",
           { display: "radio" },
-          "Standard Props"
+          "Standard Props",
         )}
         size={options(
           "size",
           {
             small: "small",
             "standard ( default )": "default",
-            large: "large"
+            large: "large",
           },
           "default",
           { display: "radio" },
-          "Standard Props"
+          "Standard Props",
         )}
         label={text("label", "Custom", "Custom Props")}
         icon={select(
@@ -126,17 +117,17 @@ storiesOf("Atoms|Command", module)
             flag: "flag",
             home: "home",
             cog: "cog",
-            phone: "phone"
+            phone: "phone",
           },
           "user-circle",
-          "Custom Props"
+          "Custom Props",
         )}
       />
-    ))
+    )),
   )
 
   .add("Alignment", () => (
-    <Grid>
+    <Grid columns="3">
       <Title>
         <u>Command Alignment</u>
       </Title>
@@ -167,7 +158,7 @@ storiesOf("Atoms|Command", module)
   ))
 
   .add("Size", () => (
-    <Grid col_1>
+    <Grid>
       <Title>
         <u>Command Size</u>
       </Title>
@@ -184,7 +175,7 @@ storiesOf("Atoms|Command", module)
 storiesOf("Application|Libraries/", module)
   .addDecorator(Padding)
   .add("List of Commands", () => (
-    <CommandGrid>
+    <Grid>
       <Title>
         <u>List of Commands</u>
       </Title>
@@ -206,5 +197,5 @@ storiesOf("Application|Libraries/", module)
       <Command name="profile" />
       <Command name="settings" />
       <Command name="share" />
-    </CommandGrid>
+    </Grid>
   ));

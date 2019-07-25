@@ -16,7 +16,7 @@ import {
 } from "@storybook/addon-knobs";
 import { colors } from "Variables";
 import { Padding } from "helpers/Display";
-import Grid from "helpers/Grid";
+import Grid from "layout/Grid";
 import Card from "layout/Card";
 import Icon from "atoms/Icon";
 import IconBlock from "blocks/IconBlock";
@@ -28,6 +28,7 @@ const Section = styled.h6`
   margin: 0;
   line-height: normal;
   color: ${colors.grey_60};
+  grid-column: 1/-1;
 `;
 const Title = styled.h5`
   margin: 0;
@@ -46,9 +47,11 @@ const image = (
   />
 );
 const shortTitle = <Title>A Standard Title</Title>;
-const longTitle = <Title>A Title So Long That It May Take Up Multiple Lines</Title>;
+const longTitle = (
+  <Title>A Title So Long That It May Take Up Multiple Lines</Title>
+);
 const multipleLines = (
-  <Grid col_1>
+  <Grid>
     <Title>Towgood, Gary T.</Title>
     <SubTitle>3082 Yellowstone Dr. Costa Mesa, CA 92612</SubTitle>
   </Grid>
@@ -80,7 +83,7 @@ storiesOf("Blocks|Bar", module)
   )
 
   .add("Some Bars", () => (
-    <Grid col_1>
+    <Grid>
       <Section>Command / Text / Command</Section>
       <Card>
         <Bar left={<Command />} center={shortTitle} right={<Command />} />
