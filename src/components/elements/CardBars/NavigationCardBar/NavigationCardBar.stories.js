@@ -8,4 +8,4 @@ import { Padding } from "helpers/Display";
 storiesOf("Elements|Card Bar/", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  .add("Navigation", () => <NavigationCardBar title="Property Search" />);
+  .add("Navigation", () => <NavigationCardBar title="Navigator" number="3" />);

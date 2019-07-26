@@ -26,7 +26,7 @@ const CommandContainer = styled.a`
   }
 `;
 
-const CommandName = styled.h6`
+const CommandName = styled.h5`
   grid-area: name;
   font-size: inherit;
   line-height: inherit;

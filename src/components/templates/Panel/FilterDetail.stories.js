@@ -18,8 +18,6 @@ import Radio from "atoms/Radio";
 import Slider from "atoms/Slider";
 import RangeSlider from "blocks/RangeSlider";
 import Button from "atoms/Button";
-import Bar from "blocks/Bar";
-import SelectMenu from "atoms/SelectMenu";
 
 const radio_1 = {
   id: "radio-1",
@@ -272,9 +270,9 @@ storiesOf("Templates|Panel/Property Filters", module)
 
       return (
         <Panel>
-          {/* <PanelSection>
-            <PanelHeader title="New Characteristics" navigation={true} />
-          </PanelSection> */}
+          <PanelSection>
+            <NavigationPanelHeader title="New Last Market Sale" />
+          </PanelSection>
           <PanelSection body>
             <Form>
               {/* <Bar onePart={true} secondSlot={<a> Reset </a>} /> */}

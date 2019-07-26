@@ -12,7 +12,7 @@ import {
   button,
   array,
   object,
-  optionsKnob as options,
+  optionsKnob as options
 } from "@storybook/addon-knobs";
 import { colors } from "Variables";
 import { Padding } from "helpers/Display";
@@ -61,11 +61,11 @@ storiesOf("Blocks|Bar", module)
   .addParameters({
     info: {
       text:
-        "The 'Bar' is a Flexbox-based component that is comprised of three flexible sections that evenly distribute the available space. The 'left', 'center', and 'right' props control the alignment of the content in each.",
+        "The 'Bar' is a Flexbox-based component that is comprised of three flexible sections that evenly distribute the available space. The 'left', 'center', and 'right' props control the alignment of the content in each."
     },
     notes: {
-      markdown: BarNotes,
-    },
+      markdown: BarNotes
+    }
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
@@ -79,14 +79,18 @@ storiesOf("Blocks|Bar", module)
           right={<Title>Right</Title>}
         />
       </Card>
-    )),
+    ))
   )
 
   .add("Some Bars", () => (
     <Grid>
       <Section>Command / Text / Command</Section>
       <Card>
-        <Bar left={<Command />} center={shortTitle} right={<Command />} />
+        <Bar
+          left={<Command />}
+          center={<Title>{shortTitle}</Title>}
+          right={<Command />}
+        />
       </Card>
       <Card>
         <Bar left={<Command />} center={longTitle} right={<Command />} />
