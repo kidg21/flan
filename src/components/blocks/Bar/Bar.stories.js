@@ -51,7 +51,7 @@ const longTitle = (
   <Title>A Title So Long That It May Take Up Multiple Lines</Title>
 );
 const multipleLines = (
-  <Grid>
+  <Grid columns="1">
     <Title>Towgood, Gary T.</Title>
     <SubTitle>3082 Yellowstone Dr. Costa Mesa, CA 92612</SubTitle>
   </Grid>

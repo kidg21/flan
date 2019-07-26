@@ -19,9 +19,7 @@ const BarLayout = styled.div`
   align-items: flex-start;
   flex-wrap: nowrap;
   justify-content: space-between;
-  margin-top: .5em;
-  margin-bottom: .5em;
-  padding: .75em;
+  padding: 0.75em;
 `;
 
 function Bar({ id, left, center, right, onClick }) {
@@ -29,12 +27,12 @@ function Bar({ id, left, center, right, onClick }) {
     <BarLayout id={id} onClick={onClick}>
       {left ? <Slot>{left}</Slot> : null}
       {center ? (
-        <Slot  justifyContent={"center"} textAlign={"center"}>
+        <Slot justifyContent={"center"} textAlign={"center"}>
           {center}
         </Slot>
       ) : null}
       {right ? (
-        <Slot  justifyContent={"flex-end"} textAlign={"right"}>
+        <Slot justifyContent={"flex-end"} textAlign={"right"}>
           {right}
         </Slot>
       ) : null}
