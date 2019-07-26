@@ -49,10 +49,10 @@ function Table({ id, width, data }) {
 			{data.map(item => (
 				<Row key={item.id}>
 					<Cell>
-						<span>{item.color}</span>
+						<span>{item.name}</span>
 					</Cell>{" "}
 					<Cell>
-						<span>{item.name}</span>
+						<span>{item.value}</span>
 					</Cell>
 				</Row>
 			))}
