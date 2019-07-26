@@ -52,12 +52,20 @@ const CardListWrapper = styled(Grid)`
   }
 `;
 
-function Piece({ id, children }) {
-  return <CardPiece id={id}>{children}</CardPiece>;
+function Piece({ id, children, className }) {
+  return (
+    <CardPiece id={id} className={className}>
+      {children}
+    </CardPiece>
+  );
 }
 
-function Card({ id, children }) {
-  return <CardWrapper id={id}>{children}</CardWrapper>;
+function Card({ id, children, className }) {
+  return (
+    <CardWrapper id={id} className={className}>
+      {children}
+    </CardWrapper>
+  );
 }
 
 function CardList({ id, children, columns, gap, rows }) {
@@ -71,10 +79,12 @@ function CardList({ id, children, columns, gap, rows }) {
 Piece.propTypes = {
   id: PropTypes.string,
   children: PropTypes.node,
+  className: PropTypes.string,
 };
 Card.propTypes = {
   id: PropTypes.string,
   children: PropTypes.node,
+  className: PropTypes.string,
 };
 CardList.propTypes = {
   id: PropTypes.string,

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import { Piece } from "layout/Card";
 import Icon from "atoms/Icon";
 import Switch from "atoms/Switch";
 import IconBlock from "blocks/IconBlock";
@@ -13,7 +14,7 @@ const Slot = styled.div`
   // width: ${props => props.widthSlot || ""};
 `;
 
-const BarLayout = styled.div`
+const BarLayout = styled(Piece)`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
