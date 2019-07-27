@@ -25,7 +25,8 @@ const CardWrapper = styled(CardPiece)`
   filter: ${shadows.cardShadow};
   /* box-shadow: ${shadows.dropShadow}; */
   /* Square off rounded edges of any direct children of Cards */
-  > * {
+  > *,
+  input {
     border-radius: 0;
   }
   /* Prototype Content - displays when a Card is empty */
