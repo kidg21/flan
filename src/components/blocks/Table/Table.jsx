@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 const TableWrapper = styled.table`
 	overflow: hidden;
 	cursor: default;
-	margin: 0.5em;
+	margin: 0em 0.5em 0.5em;
 	// box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
 	border-radius: 5px;
 	border-collapse: collapse;
@@ -13,13 +13,13 @@ const TableWrapper = styled.table`
 	width: ${props => props.tableWidth || ""};
 `;
 const Row = styled.tr`
-	&:hover {
-		background-color: #f5f7f9;
-		transition: background-color 0.05s ease-in;
-	}
+	// &:hover {
+	// 	background-color: #f5f7f9;
+	// 	transition: background-color 0.05s ease-in;
+	// }
 `;
 const Cell = styled.td`
-	padding: 0.25em 0.25em 0.5em;
+	padding: 0.25em 0.25em 0.25em;
 	font-size: small;
 
 	// &:first-child {

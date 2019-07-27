@@ -1,17 +1,28 @@
 import React, { useState } from "react";
-import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
+import PropertyPanelHeader from "elements/PanelHeaders/PropertyPanelHeader";
 import Table from "blocks/Table";
+import Title from "base/Typography";
 import PropTypes from "prop-types";
 import Card from "layout/Card";
 import Command from "atoms/Command";
 import Bar from "blocks/Bar";
+import styled, { css } from "styled-components";
 
-function PropertyListCard({ id, address, data }) {
+const Sections = styled.h5`
+	padding-left: 0.8em;
+	padding-bottom: 0em;
+	padding-top: 0.2em;
+`;
+
+function PropertyListCard({ id, address, APN, lotData, buildingData }) {
 	return (
 		<Card id={id}>
-			<MainPanelHeader title={address} />
+			<PropertyPanelHeader title={address} APN={APN} />
 			<Bar left={<Command name="add to list" size="small" />} />
-			<Table data={data} />
+			<Sections>Lot</Sections>
+			<Table data={lotData} />
+			<Sections>Building</Sections>
+			<Table data={buildingData} />
 		</Card>
 	);
 }
@@ -19,7 +30,9 @@ function PropertyListCard({ id, address, data }) {
 PropertyListCard.propTypes = {
 	id: PropTypes.string,
 	address: PropTypes.any,
-	data: PropTypes.any,
+	APN: PropTypes.any,
+	lotData: PropTypes.any,
+	buildingData: PropTypes.any,
 };
 
 export default PropertyListCard;

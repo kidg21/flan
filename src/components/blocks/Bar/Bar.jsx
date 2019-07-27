@@ -19,8 +19,6 @@ const BarLayout = styled.div`
 	align-items: flex-start;
 	flex-wrap: nowrap;
 	justify-content: space-between;
-	// margin-top: 0.5em;
-	// margin-bottom: 0.5em;
 	padding: 0.75em;
 `;
 

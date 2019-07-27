@@ -2,12 +2,19 @@ import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
-import PropertyListCard from "./PropertyListCard";
+import PropertyListCard from "./PropertyListCard.jsx";
 
-const data = [
-	{ id: "a", color: "Owners/Units", name: "Multiple Owners (2 Units)" },
-	{ id: "b", color: "Master Parcel No.", name: "387483675638" },
-	{ id: "c", color: "Zoning", name: "No Zone" },
+const lotData = [
+	{ id: "a", name: "Land Use", value: "Commercial" },
+	{ id: "b", name: "Land Description", value: "Miscellaneous Commercial" },
+	{ id: "c", name: "Lot Area", value: "62,344 SF | 1.43 Acres" },
+];
+
+const buildingData = [
+	{ id: "a", name: "Value", value: "$11,851,071" },
+	{ id: "b", name: "Square Feet", value: "34,529 SF" },
+	{ id: "c", name: "# of Units", value: "1" },
+	{ id: "d", name: "Year Built", value: "1950" },
 ];
 
 storiesOf("Elements|ListCards", module)
@@ -17,8 +24,10 @@ storiesOf("Elements|ListCards", module)
 		React.createElement(() => {
 			return (
 				<PropertyListCard
-					data={data}
+					lotData={lotData}
+					buildingData={buildingData}
 					address="2801 Kelvin Avenue, Irvine, CA 92614"
+					APN="374-342-8957"
 				/>
 			);
 		}),

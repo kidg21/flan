@@ -32,36 +32,39 @@ export { default as Tabs } from "./blocks/Tabs";
 // Publicly exported files from 'elements'
 export { default as CardAccordion } from "./elements/CardAccordion";
 export {
-  default as InformationCardBar
+	default as InformationCardBar,
 } from "./elements/CardBars/InformationCardBar";
 export { default as LayerCardBar } from "./elements/CardBars/LayerCardBar";
 export {
-  default as NavigationCardBar
+	default as NavigationCardBar,
 } from "./elements/CardBars/NavigationCardBar";
 export {
-  default as MainPanelHeader
+	default as MainPanelHeader,
 } from "./elements/PanelHeaders/MainPanelHeader";
 export {
-  default as PropertyPanelHeader
+	default as PropertyPanelHeader,
 } from "./elements/PanelHeaders/PropertyPanelHeader";
 export {
-  default as NavigationPanelHeader
+	default as NavigationPanelHeader,
 } from "./elements/PanelHeaders/NavigationPanelHeader";
 export { default as Notification } from "./elements/Notification";
 export { default as MapSearch } from "./elements/MapSearch";
 export { default as PopupCard } from "./elements/PopupCard";
+export {
+	default as PropertyListCard,
+} from "./elements/ListCards/PropertyListCard";
 
 // Publicly exported files from 'layout'
 export { default as Card, CardList } from "./layout/Card";
 export {
-  default as Form,
-  Title,
-  Section,
-  SectionName,
-  InputLabel,
-  HelpText,
-  ErrorText,
-  InputGroup
+	default as Form,
+	Title,
+	Section,
+	SectionName,
+	InputLabel,
+	HelpText,
+	ErrorText,
+	InputGroup,
 } from "./layout/Form";
 export { default as Layout } from "./layout/Layout";
 // export { default as Modal } from "./layout/Modal";
