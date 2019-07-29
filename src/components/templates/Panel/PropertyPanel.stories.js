@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
-import PropertyPanelHeader from "elements/PropertyPanelHeader";
+import PropertyPanelHeader from "elements/PanelHeaders/PropertyPanelHeader";
 import Table from "blocks/Table";
-import InformationCardBar from "elements/InformationCardBar";
+import InformationCardBar from "elements/CardBars/InformationCardBar";
 import Accordion from "blocks/Accordion";
 import Panel, { PanelSection } from "layout/Panel";
 
