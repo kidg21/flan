@@ -5,6 +5,6 @@ import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
 
 storiesOf("Elements|MapSearch", module)
-  .addDecorator(Padding)
-  .addDecorator(withInfo)
-  .add("Default", () => <MapSearch />);
+	.addDecorator(Padding)
+	.addDecorator(withInfo)
+	.add("Default", () => <MapSearch />);
