@@ -28,6 +28,7 @@ export { default as RangeSlider } from "./blocks/RangeSlider";
 export { default as Search } from "./blocks/Search";
 export { default as Table } from "./blocks/Table";
 export { default as Tabs } from "./blocks/Tabs";
+export * from "./blocks/Table/TableView.jsx";
 
 // Publicly exported files from 'elements'
 export { default as CardAccordion } from "./elements/CardAccordion";
