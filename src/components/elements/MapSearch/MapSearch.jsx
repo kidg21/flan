@@ -23,11 +23,10 @@ const SearchContainer = styled.div`
 	}
 `;
 
-function MapSearch({ id, tabs, ...searchProps }) {
+function MapSearch({ id, ...searchProps }) {
 	return (
 		<SearchContainer id={id}>
 			<Search {...searchProps} />
-			{tabs}
 		</SearchContainer>
 	);
 }
