@@ -14,7 +14,14 @@ const Sections = styled.h5`
 	padding-top: 0.2em;
 `;
 
-function PropertyListCard({ id, address, APN, lotData, buildingData }) {
+function PropertyListCard({
+	id,
+	address,
+	APN,
+	lotData,
+	ownerData,
+	buildingData,
+}) {
 	return (
 		<Card id={id}>
 			<PropertyPanelHeader title={address} APN={APN} />
@@ -23,6 +30,8 @@ function PropertyListCard({ id, address, APN, lotData, buildingData }) {
 			<Table data={lotData} />
 			<Sections>Building</Sections>
 			<Table data={buildingData} />
+			<Sections>Owner</Sections>
+			<Table data={ownerData} />
 		</Card>
 	);
 }

@@ -19,7 +19,7 @@ const Row = styled.tr`
 	// }
 `;
 const Cell = styled.td`
-	padding: 0.25em 0.25em 0.25em;
+	padding: 0.25em 0.25em 0.2em;
 	font-size: small;
 
 	// &:first-child {

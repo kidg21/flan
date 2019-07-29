@@ -13,6 +13,13 @@ const lotData = [
 	{ id: "c", name: "Lot Area", value: "62,344 SF | 1.43 Acres" },
 ];
 
+const ownerData = [
+	{ id: "a", name: "Owner", value: "1830 LA CIENEGA LLC" },
+	{ id: "b", name: "Last Transfer", value: "12/31/14" },
+	{ id: "c", name: "Last Market Sale", value: "10/31/13 for $11,000,110" },
+	{ id: "d", name: "Opportunity Zone ", value: "No" },
+];
+
 const buildingData = [
 	{ id: "a", name: "Value", value: "$11,851,071" },
 	{ id: "b", name: "Square Feet", value: "34,529 SF" },
@@ -39,6 +46,7 @@ storiesOf("Templates|Panel", module).add("Property Panel", () =>
 				<PanelSection>
 					<PropertyListCard
 						lotData={lotData}
+						ownerData={ownerData}
 						buildingData={buildingData}
 						address="2801 Kelvin Avenue, Irvine, CA 92614"
 						APN="374-342-8957"
