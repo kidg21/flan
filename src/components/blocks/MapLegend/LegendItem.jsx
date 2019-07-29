@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { colors, shadows, Lighten, Darken } from "Variables";
-import { Skeleton } from "helpers/Skeleton.jsx";
 
 const LegendText = styled.li`
 	font-size: 0.86em;

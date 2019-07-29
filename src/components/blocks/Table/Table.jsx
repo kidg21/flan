@@ -1,11 +1,8 @@
-import React from "react"
-import styled, { css } from "styled-components"
-import PropTypes from "prop-types"
-import Card, {Piece} from "layout/Card/Card";
-import { PlaceholderText } from "helpers/Placeholders.jsx";
-import {Skeleton} from "helpers/Skeleton.jsx";
-import {SkeletonStatic} from "helpers/SkeletonStatic.jsx"
-
+import React from "react";
+import styled, { css } from "styled-components";
+import PropTypes from "prop-types";
+import Card, { Piece } from "layout/Card/Card";
+import { SkeletonStatic } from "helpers/SkeletonStatic.jsx";
 
 const TableWrapper = styled.table`
   // overflow: hidden;
@@ -22,57 +19,55 @@ const TableWrapper = styled.table`
       height: 5rem;
     }
   }
-`
+`;
 
 const Row = styled.tr`
-
-  &:hover {
-    background-color: #f5f7f9;
-    transition: background-color 0.05s ease-in;
-  }
-
+	&:hover {
+		background-color: #f5f7f9;
+		transition: background-color 0.05s ease-in;
+	}
 `;
 const Cell = styled.td`
-  padding: 0.5em 0.5em 0.5em;
-  font-size: small;
+	padding: 0.5em 0.5em 0.5em;
+	font-size: small;
 
-  &:first-child {
-    color: #83a3c2;
-    font-weight: bold;
-  };
-  &:nth-child(even) {
-    text-align: right;
-  }
-  &:empty {
-    &:before {
-      content: "Not Available";
-    }
-  }
+	&:first-child {
+		color: #83a3c2;
+		font-weight: bold;
+	}
+	&:nth-child(even) {
+		text-align: right;
+	}
+	&:empty {
+		&:before {
+			content: "Not Available";
+		}
+	}
 `;
 
-
-function Table({id, data}) {
-  return(
-    <Piece>
-    <TableWrapper
-    id={id}>
-      { data ? [data.map(item => 
-    <Row key={item.id}>
-    <Cell>{item.color}</Cell> <Cell>{item.name}</Cell> 
-  </Row>)] : null}
-    </TableWrapper>
-    </Piece>
-  );
+function Table({ id, data }) {
+	return (
+		<Piece>
+			<TableWrapper id={id}>
+				{data
+					? [
+							data.map(item => (
+								<Row key={item.id}>
+									<Cell>{item.color}</Cell> <Cell>{item.name}</Cell>
+								</Row>
+							)),
+					  ]
+					: null}
+			</TableWrapper>
+		</Piece>
+	);
 }
 
-
-
 Table.propTypes = {
-  id: PropTypes.string,
-  data: PropTypes.any.isRequired};
-
+	id: PropTypes.string,
+	data: PropTypes.any.isRequired,
+};
 
 export default Table;
-
 
 //Tables currently do not have context props. these props will need to be added so there is no hard coded text. we will meet on this later
