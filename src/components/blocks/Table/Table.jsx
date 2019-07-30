@@ -5,7 +5,6 @@ import PropTypes from "prop-types";
 const TableWrapper = styled.table`
 	overflow: hidden;
 	cursor: default;
-	margin: 0em 0.5em 0.5em;
 	// box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
 	border-radius: 5px;
 	border-collapse: collapse;
@@ -19,7 +18,7 @@ const Row = styled.tr`
 	// }
 `;
 const Cell = styled.td`
-	padding: 0.25em 0.25em 0.2em;
+	padding: 0.25em 0.25em 0.25em;
 	font-size: small;
 
 	// &:first-child {

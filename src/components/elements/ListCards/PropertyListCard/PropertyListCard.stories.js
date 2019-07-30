@@ -3,6 +3,7 @@ import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
 import PropertyListCard from "./PropertyListCard.jsx";
+import PropCard from "./PropCard.jsx";
 
 const lotData = [
 	{ id: "a", name: "Land Use", value: "Commercial" },
@@ -15,6 +16,19 @@ const ownerData = [
 	{ id: "b", name: "Last Transfer", value: "12/31/14" },
 	{ id: "c", name: "Last Market Sale", value: "10/31/13 for $11,000,110" },
 	{ id: "d", name: "Opportunity Zone ", value: "No" },
+];
+
+// const ownerData = [
+// 	{ id: "a", name: "Address", value: "1830 LA CIENEGA LLC" },
+// 	{ id: "b", name: "Last Transfer", value: "12/31/14" },
+// 	{ id: "c", name: "Last Market Sale", value: "10/31/13 for $11,000,110" },
+// 	{ id: "d", name: "Opportunity Zone ", value: "No" },
+// ];
+
+const newData = [
+	{ id: "a", name: "Land Use" },
+	{ id: "b", name: "Land Description" },
+	{ id: "c", name: "Lot Area" },
 ];
 
 const buildingData = [
@@ -38,5 +52,10 @@ storiesOf("Elements|ListCards", module)
 					APN="374-342-8957"
 				/>
 			);
+		}),
+	)
+	.add("PropCard", () =>
+		React.createElement(() => {
+			return <PropCard lotData={newData} />;
 		}),
 	);
