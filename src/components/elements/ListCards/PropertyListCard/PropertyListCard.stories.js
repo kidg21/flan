@@ -4,6 +4,7 @@ import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
 import PropertyListCard from "./PropertyListCard.jsx";
 import PropCard from "./PropCard.jsx";
+import ContactListCard from "./ContactListCard.jsx";
 
 const lotData = [
 	{ id: "a", name: "Land Use", value: "Commercial" },
@@ -25,11 +26,11 @@ const ownerData = [
 // 	{ id: "d", name: "Opportunity Zone ", value: "No" },
 // ];
 
-const newData = [
-	{ id: "a", name: "Land Use" },
-	{ id: "b", name: "Land Description" },
-	{ id: "c", name: "Lot Area" },
-];
+// const newData = [
+// 	{ id: "a", name: "Land Use" },
+// 	{ id: "b", name: "Land Description" },
+// 	{ id: "c", name: "Lot Area" },
+// ];
 
 const buildingData = [
 	{ id: "a", name: "Value", value: "$11,851,071" },
@@ -56,6 +57,22 @@ storiesOf("Elements|ListCards", module)
 	)
 	.add("PropCard", () =>
 		React.createElement(() => {
-			return <PropCard lotData={newData} />;
+			return (
+				<PropCard
+					address="2801 Kelvin Avenue, Irvine, CA 92614"
+					landUse="Commercial"
+					price="$11,209,340"
+				/>
+			);
+		}),
+	)
+	.add("ContactListCard", () =>
+		React.createElement(() => {
+			return (
+				<ContactListCard
+					name="Annabelle Granger"
+					ownerAddress="2801 Kelvin Avenue, Irvine, CA 92614"
+				/>
+			);
 		}),
 	);

@@ -8,31 +8,43 @@ import Command from "atoms/Command";
 import Bar from "blocks/Bar";
 import styled, { css } from "styled-components";
 
-const Sections = styled.h5`
-	padding-left: 0.8em;
-	padding-bottom: 0em;
-	padding-top: 0.2em;
-`;
-
 const image = (
 	<img
 		src="https://images.pexels.com/photos/802112/pexels-photo-802112.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-		width="90px"
-		height="70px"
+		width="120px"
+		height="90px"
 	/>
 );
 
-function PropCard({ id, lotData }) {
+const Titles = styled.div`
+display: inline-block'
+`;
+
+function PropCard({ id, address, landUse, price }) {
 	return (
 		<Card id={id}>
-			<Bar left={<Table data={lotData} />} right={image} />
+			<Bar
+				left={
+					<Titles>
+						<Title title={address} />
+						<p>
+							{landUse} <br />
+							{price}
+						</p>
+						<Command name="add to list" size="small" />
+					</Titles>
+				}
+				right={image}
+			/>
 		</Card>
 	);
 }
 
 PropCard.propTypes = {
 	id: PropTypes.string,
-	lotData: PropTypes.any,
+	address: PropTypes.string,
+	landUse: PropTypes.string,
+	price: PropTypes.string,
 };
 
 export default PropCard;

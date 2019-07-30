@@ -37,5 +37,11 @@ storiesOf("Application|Style Guides/", module)
 			<div>
 				<Title title="Count Title" count="4" />
 			</div>
+			<div style={{ padding: "20px" }} />
+			<div>
+				<Title title="Light Weight" weight="light" />
+				<Title title="Normal Weight" weight="normal" />
+				<Title title="Bold Weight" weight="bold" />
+			</div>
 		</div>
 	));
