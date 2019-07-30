@@ -49,7 +49,7 @@ const CheckboxLabel = styled.label`
   font-family: Arial;
   font-size: 13px;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: normal;
   cursor: pointer;
 `;
 
