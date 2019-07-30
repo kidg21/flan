@@ -11,7 +11,7 @@ const CountContainer = styled.div`
 `;
 
 const StyledText = styled.h4`
-	color: ${props => props.textColor || colors.grey_80};
+	color: ${props => props.textColor || "inherit"};
 	font-size: ${props => props.textSize || ""};
 	font-weight: ${props => props.textWeight || ""};
 	margin: 0;
