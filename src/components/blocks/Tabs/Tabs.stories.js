@@ -9,7 +9,7 @@ import {
   radios,
   select,
   number,
-  optionsKnob as options
+  optionsKnob as options,
 } from "@storybook/addon-knobs";
 import Tabs, { Tab } from "blocks/Tabs";
 import TabsNotes from "./Tabs.md";
@@ -17,11 +17,11 @@ import TabsNotes from "./Tabs.md";
 storiesOf("Blocks|Tabs", module)
   .addParameters({
     info: {
-      text: "Tabs info goes here..."
+      text: "Tabs info goes here...",
     },
     notes: {
-      markdown: TabsNotes
-    }
+      markdown: TabsNotes,
+    },
   })
   .addDecorator(Padding)
   .add(
@@ -32,10 +32,11 @@ storiesOf("Blocks|Tabs", module)
         <Tab tabLabel="Tab" />
         <Tab tabLabel="Tab" />
       </Tabs>
-    ))
+    )),
   );
 
 storiesOf("Blocks|Tabs", module)
+  .addDecorator(Padding)
   .addDecorator(withKnobs)
   .add("Knobs", () => (
     <Tabs
@@ -48,11 +49,11 @@ storiesOf("Blocks|Tabs", module)
           "2 columns / row": "2",
           "3 columns / row": "3",
           "4 columns / row": "4",
-          "5 columns / row": "5"
+          "5 columns / row": "5",
         },
         "default",
         { display: "radio" },
-        "Tab Group"
+        "Tab Group",
       )}
       align={options(
         "align",
@@ -60,11 +61,11 @@ storiesOf("Blocks|Tabs", module)
           "top ( default )": "default",
           "left ( 1 column / vertical )": "left",
           bottom: "bottom",
-          "right ( 1 column / vertical )": "right"
+          "right ( 1 column / vertical )": "right",
         },
         "default",
         { display: "radio" },
-        "Tab Group"
+        "Tab Group",
       )}
       isFloating={boolean("float", false, "Tab Group")}
     >
@@ -77,10 +78,10 @@ storiesOf("Blocks|Tabs", module)
             clone: ["fal", "clone"],
             search: ["far", "search"],
             pencil: "pencil",
-            list: "list"
+            list: "list",
           },
           null,
-          "Tab 1"
+          "Tab 1",
         )}
         tabLabel={text("Tab 1", "Tab 1", "Tab 1")}
         isDisabled={boolean("Disable 1", false, "Tab 1")}
@@ -94,10 +95,10 @@ storiesOf("Blocks|Tabs", module)
             clone: ["fal", "clone"],
             search: ["far", "search"],
             pencil: "pencil",
-            list: "list"
+            list: "list",
           },
           null,
-          "Tab 2"
+          "Tab 2",
         )}
         tabLabel={text("Tab 2", "Tab 2", "Tab 2")}
         isDisabled={boolean("Disable 2", false, "Tab 2")}
@@ -111,10 +112,10 @@ storiesOf("Blocks|Tabs", module)
             clone: ["fal", "clone"],
             search: ["far", "search"],
             pencil: "pencil",
-            list: "list"
+            list: "list",
           },
           null,
-          "Tab 3"
+          "Tab 3",
         )}
         tabLabel={text("Tab 3", "Tab 3", "Tab 3")}
         isDisabled={boolean("Disable 3", false, "Tab 3")}
@@ -128,10 +129,10 @@ storiesOf("Blocks|Tabs", module)
             clone: ["fal", "clone"],
             search: ["far", "search"],
             pencil: "pencil",
-            list: "list"
+            list: "list",
           },
           null,
-          "Tab 4"
+          "Tab 4",
         )}
         tabLabel={text("Tab 4", "Tab 4", "Tab 4")}
         isDisabled={boolean("Disable 4", false, "Tab 4")}
@@ -145,10 +146,10 @@ storiesOf("Blocks|Tabs", module)
             clone: ["fal", "clone"],
             search: ["far", "search"],
             pencil: "pencil",
-            list: "list"
+            list: "list",
           },
           null,
-          "Tab 5"
+          "Tab 5",
         )}
         tabLabel={text("Tab 5", "Tab 5", "Tab 5")}
         isDisabled={boolean("Disable 5", false, "Tab 5")}
@@ -157,6 +158,7 @@ storiesOf("Blocks|Tabs", module)
   ));
 
 storiesOf("Blocks|Tabs", module)
+  .addDecorator(Padding)
   .add("Simgle-Row (default)", () => (
     <Tabs>
       <Tab tabLabel="Tab" />
@@ -284,7 +286,7 @@ storiesOf("Blocks|Tabs", module)
           />
         </Tabs>
       );
-    })
+    }),
   )
   .add("Toggle-Select", () =>
     React.createElement(() => {
@@ -329,7 +331,7 @@ storiesOf("Blocks|Tabs", module)
           />
         </Tabs>
       );
-    })
+    }),
   )
   .add("Multi-Select", () =>
     React.createElement(() => {
@@ -361,5 +363,5 @@ storiesOf("Blocks|Tabs", module)
           />
         </Tabs>
       );
-    })
+    }),
   );

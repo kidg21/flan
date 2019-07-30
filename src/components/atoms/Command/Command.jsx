@@ -41,17 +41,7 @@ const CommandIcon = styled(Icon)`
   grid-area: icon;
 `;
 
-function Command({
-  id,
-  name,
-  label,
-  icon,
-  align,
-  state,
-  size,
-  isDisabled,
-  style
-}) {
+function Command({ id, name, label, icon, align, state, size, isDisabled }) {
   let alignIcon = "'icon name'";
   let justifyCommand = "flex-start";
   let justifyIcon = "flex-start";
@@ -164,12 +154,11 @@ Command.propTypes = {
   align: PropTypes.string,
   state: PropTypes.string,
   size: PropTypes.string,
-  style: PropTypes.string
 };
 
 Command.defaultProps = {
   label: "Command",
-  icon: "user-circle"
+  icon: "user-circle",
 };
 
 export { Command as default };

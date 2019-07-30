@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { colors, shadows } from "Variables";
 import Icon from "atoms/Icon";
 
@@ -10,8 +9,7 @@ const StyledBanner = styled.div`
   align-items: flex-start;
   align-content: flex-start;
   position: relative;
-  background-color: ${props =>
-    props.inverse ? colors.grey_light_glass : colors.grey_dark_glass};
+  background-color: ${props => (props.inverse ? colors.grey_light_glass : colors.grey_dark_glass)};
   color: ${props => (props.inverse ? "" : colors.white)};
   border: 2px solid;
   border-color: ${props => props.borderColor || ""};
@@ -27,10 +25,6 @@ const StatusBadge = styled.div`
   padding: ${props => (props.badgeBG ? ".5em" : "")};
   margin-right: 1em;
   border-radius: 100%;
-  cursor: default;
-`;
-
-const BannerIcon = styled(FontAwesomeIcon)`
   cursor: default;
 `;
 
@@ -93,7 +87,7 @@ function Banner({
   inverse,
   onClick,
   onClose,
-  style
+  style,
 }) {
   let bannerType;
   let color = colors.grey_40;
@@ -102,7 +96,7 @@ function Banner({
     case "media":
       bannerType = icon ? (
         <StatusBadge>
-          <BannerIcon icon={icon} size="2x" fixedWidth />
+          <Icon icon={icon} size="2x" fixedWidth />
         </StatusBadge>
       ) : img ? (
         <BannerImage src={img} inverse={inverse} />
@@ -113,7 +107,7 @@ function Banner({
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
-          <BannerIcon icon="info" fixedWidth anchor />
+          <Icon icon="info" fixedWidth anchor />
         </StatusBadge>
       );
       break;
@@ -122,7 +116,7 @@ function Banner({
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
-          <BannerIcon icon="check" fixedWidth success />
+          <Icon icon="check" fixedWidth success />
         </StatusBadge>
       );
       break;
@@ -131,7 +125,7 @@ function Banner({
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
-          <BannerIcon icon="exclamation" fixedWidth warning />
+          <Icon icon="exclamation" fixedWidth warning />
         </StatusBadge>
       );
       break;
@@ -140,7 +134,7 @@ function Banner({
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
-          <BannerIcon icon="times" fixedWidth alert />
+          <Icon icon="times" fixedWidth alert />
         </StatusBadge>
       );
       break;
@@ -184,7 +178,7 @@ Banner.propTypes = {
   inverse: PropTypes.bool,
   onClick: PropTypes.func,
   onClose: PropTypes.func,
-  style: PropTypes.string
+  style: PropTypes.string,
 };
 
 export default Banner;
