@@ -15,6 +15,7 @@ const CheckboxContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 0.75rem;
+  grid-template-areas: ${props => props.alignInput || ""};
   align-items: inherit;
   color: ${props => props.checkboxColor || ""};
   &[disabled],
@@ -26,6 +27,7 @@ const CheckboxContainer = styled.div`
 `;
 
 const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
+  grid-area: input;
   border: 1px solid;
   background-color: ${props => props.fillColor || colors.white};
   border-color: ${props => props.borderColor || colors.grey_40};
@@ -45,6 +47,7 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
 `;
 
 const CheckboxLabel = styled.label`
+grid-area: label;
   user-select: none;
   font-family: Arial;
   font-size: 13px;
@@ -78,13 +81,14 @@ function CheckboxGroup({ id, columns, onChange, children }) {
   );
 }
 
-function Checkbox({ id, label, type, checked }) {
+function Checkbox({ id, label, type, align, checked }) {
   let checkboxColor;
   let fillColor;
   let borderColor;
   let fillColorChecked;
   let borderColorChecked;
   let isDisabled = false;
+  let alignInput;
   switch (type) {
     case "error":
       checkboxColor = colors.alert;
@@ -102,8 +106,16 @@ function Checkbox({ id, label, type, checked }) {
     default:
       break;
   }
+  switch (align) {
+    case "right":
+      alignInput = "'label input'";
+      break;
+    default:
+      alignInput = "'input label'";
+      break;
+  }
   return (
-    <CheckboxContainer checkboxColor={checkboxColor} disabled={isDisabled}>
+    <CheckboxContainer checkboxColor={checkboxColor} disabled={isDisabled} alignInput={alignInput}>
       <CheckboxInput
         id={id}
         checked={checked}
@@ -120,13 +132,14 @@ function Checkbox({ id, label, type, checked }) {
 CheckboxGroup.propTypes = {
   id: PropTypes.string,
   onChange: PropTypes.func,
-  columns: PropTypes.oneOf(["wrap (default)", "1", "2"])
+  columns: PropTypes.oneOf(["wrap (default)", "1", "2"]),
 };
 
 Checkbox.propTypes = {
   id: PropTypes.string,
   label: PropTypes.string.isRequired,
-  type: PropTypes.oneOf(["error", "disabled"])
+  type: PropTypes.oneOf(["error", "disabled"]),
+  align: PropTypes.oneOf(["default", "right"]),
 };
 
 export { Checkbox as default, CheckboxGroup };
