@@ -125,7 +125,7 @@ function Layout({
         width = "min-content";
       } else if (screenSmall.matches) {
         width = "100%";
-        height = "min-montent";
+        height = "min-content";
       }
       break;
     default:
