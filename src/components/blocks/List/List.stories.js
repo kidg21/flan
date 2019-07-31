@@ -15,8 +15,10 @@ import {
   optionsKnob as options,
 } from "@storybook/addon-knobs";
 import { Padding } from "helpers/Display";
+import Grid from "helpers/Grid.jsx";
 import Card from "layout/Card";
 import TextInput from "atoms/TextInput";
+import Search from "blocks/Search";
 import Command from "atoms/Command";
 import Checkbox from "atoms/Checkbox";
 import List, { ListItem } from "blocks/List";
@@ -38,29 +40,53 @@ storiesOf("Blocks|List", module)
     "Documentation",
     withInfo()(() => (
       <Card>
-        <TextInput />
-        <List>
-          <ListItem title="List Item" />
-          <ListItem
-            title="List Item"
-            description="This is the description"
-            action={<Command />}
-          />
-          <ListItem title="This is a very long and informative title that might even need multiple lines to display it all" />
-          <ListItem
-            title="List Item"
-            onClick={() => {}}
-            description="This description is much longer but that's okay because it will just keep on wrapping to the next line until you run out of things to say in support of the long title that you just typed above this one."
-          />
-          <ListItem
-            title="List Item"
-            action={<Checkbox id="enable" label="Enable" />}
-          />
-          <ListItem
-            title="This is a very long and informative title that might even need multiple lines to display it all"
-            description="This description is much longer but that's okay because it will just keep on wrapping to the next line until you run out of things to say in support of the long title that you just typed above this one."
-          />
+        <List name="A List Can Have A Title">
+          <ListItem label="List Item" />
+          <ListItem label="List Item" />
+          <ListItem label="List Item" />
+          <ListItem label="List Item -- info" type="info" />
+          <ListItem label="List Item -- success" type="success" />
+          <ListItem label="List Item -- warning" type="warning" />
+          <ListItem label="List Item -- alert" type="alert" />
+          <ListItem label="List Item -- inverse" type="inverse" />
         </List>
       </Card>
     )),
-  );
+  )
+
+  .add("Stuff In A List", () => (
+    <Grid col_1>
+      <Card>
+        <Search placeholder="Search by Address or Location" />
+      </Card>
+      <Card>
+        <List name="You Can Give The List A Title">
+          <ListItem label="List Item" />
+          <ListItem
+            label="List Item"
+            description="This is the description"
+            action={<Command />}
+          />
+          <ListItem
+            label="This is a very long and informative title that might even need multiple lines to display it all"
+            description="This is the description"
+          />
+          <ListItem
+            label="List Item"
+            onClick={() => {}}
+            description="This description is much longer but that's okay because it will just keep on wrapping to the next line until you run out of things to say in support of the long title that you just typed above this one."
+            action={<Command name="settings" />}
+          />
+          <ListItem
+            label="List Item"
+            action={<Checkbox id="enable" label="Enable" align="right" />}
+          />
+          <ListItem
+            label="This is a very long and informative title that might even need multiple lines to display it all"
+            description="This description is much longer but that's okay because it will just keep on wrapping to the next line until you run out of things to say in support of the long title that you just typed above this one."
+            action={<Checkbox id="relaxed" label="Relaxed?" align="right" />}
+          />
+        </List>
+      </Card>
+    </Grid>
+  ));
