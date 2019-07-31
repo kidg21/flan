@@ -26,12 +26,21 @@ function Bar({ id, left, center, right, onClick, className }) {
     <BarLayout id={id} onClick={onClick} className={className}>
       {left ? <Slot setMargin="0 .5em 0 0">{left}</Slot> : null}
       {center ? (
-        <Slot justifyContent={"center"} alignItems={"center"} textAlign={"center"}>
+        <Slot
+          justifyContent={"center"}
+          alignItems={"center"}
+          textAlign={"center"}
+        >
           {center}
         </Slot>
       ) : null}
       {right ? (
-        <Slot justifyContent={"flex-end"} alignItems={"flex-end"} textAlign={"right"} setMargin="0 0 0 .5em">
+        <Slot
+          justifyContent={"flex-end"}
+          alignItems={"flex-end"}
+          textAlign={"right"}
+          setMargin="0 0 0 .5em"
+        >
           {right}
         </Slot>
       ) : null}

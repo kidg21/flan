@@ -26,7 +26,7 @@ function IconBlock({ id, stacked, children, style, className }) {
 
 IconBlock.propTypes = {
   id: PropTypes.string,
-  children: PropTypes.any.isRequired,
+  children: PropTypes.node.isRequired,
   /** className used for extending styles */
   className: PropTypes.string,
 };
