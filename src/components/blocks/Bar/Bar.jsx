@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import { colors } from "Variables";
 
 const BarLayout = styled.div`
   display: flex;
@@ -18,28 +19,45 @@ const Slot = styled.div`
   justify-content: ${props => props.justifyContent || "space-between"};
   align-items: ${props => props.alignItems || ""};
   text-align: ${props => props.textAlign || ""};
-  margin: ${props => props.setMargin || ""};
+  padding: ${props => props.setPadding || ""};
+  min-width: ${props => props.slotWidthMin || ""};
+  max-width: ${props => props.slotWidthMax || ""};
 `;
 
-function Bar({ id, left, center, right, onClick, className }) {
+function Bar({
+  id,
+  left,
+  center,
+  right,
+  onClick,
+  slotWidthLeft,
+  slotWidthRight,
+  className,
+}) {
   return (
     <BarLayout id={id} onClick={onClick} className={className}>
-      {left ? <Slot setMargin="0 .5em 0 0">{left}</Slot> : null}
-      {center ? (
+      {left ? (
         <Slot
-          justifyContent={"center"}
-          alignItems={"center"}
-          textAlign={"center"}
+          slotWidthMin={slotWidthLeft}
+          slotWidthMax={slotWidthLeft}
+          setPadding="0 1em 0 0"
         >
+          {left}
+        </Slot>
+      ) : null}
+      {center ? (
+        <Slot justifyContent="center" alignItems="center" textAlign="center">
           {center}
         </Slot>
       ) : null}
       {right ? (
         <Slot
-          justifyContent={"flex-end"}
-          alignItems={"flex-end"}
-          textAlign={"right"}
-          setMargin="0 0 0 .5em"
+          justifyContent="flex-end"
+          alignItems="flex-end"
+          textAlign="right"
+          slotWidthMin={slotWidthRight}
+          slotWidthMax={slotWidthRight}
+          setPadding="0 0 0 1em"
         >
           {right}
         </Slot>

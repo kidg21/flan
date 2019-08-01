@@ -1,54 +1,59 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { colors } from "Variables";
+import { colors, Darken } from "Variables";
 import Bar from "blocks/Bar";
 import Title from "base/Typography";
 
 const ListWrapper = styled.ul`
   display: flex;
   flex-direction: column;
-  /* padding: 0.5em; */
   list-style: none;
   font-weight: 600;
 `;
 
 const ListTitle = styled(Title)`
   color: ${colors.grey_dark};
-  /* border-bottom: 2px solid ${colors.grey_light}; */
   border-bottom: 1px solid ${colors.grey_20};
   padding: 0.75em 1em;
 `;
 
 const ListItemWrapper = styled.li`
-  /* padding: 0.5em; */
-  padding: 0.5em 1em;
   border-bottom: 1px solid ${colors.grey_light};
-  background-color: ${props => props.itemBGColor || ""};
+  background-color: ${props => props.itemBGColor || colors.white};
+  cursor: ${props => (props.onClick ? "pointer" : "")};
   &:last-child {
     border: none;
   }
   &:hover {
-    background-color: ${props => props.itemBGColor || colors.grey_light};
+    ${props => (props.onClick ? Darken : "")};
   }
 `;
 
 const Item = styled(Bar)`
   align-items: center;
-  padding: 0;
   color: ${props => props.itemColor || colors.grey_80};
 `;
 
-function List({ id, name, children }) {
+function List({ id, title, children }) {
   return (
     <>
-      {name ? <ListTitle title={name} weight="bold" /> : null}
+      {title ? <ListTitle title={title} weight="bold" /> : null}
       <ListWrapper id={id}>{children}</ListWrapper>
     </>
   );
 }
 
-function ListItem({ id, label, onClick, description, action, type }) {
+function ListItem({
+  id,
+  label,
+  description,
+  action,
+  actionWidth,
+  type,
+  onClick,
+  ...props
+}) {
   let itemColor;
   let itemBGColor;
   switch (type) {
@@ -76,24 +81,21 @@ function ListItem({ id, label, onClick, description, action, type }) {
       break;
   }
   return (
-    <ListItemWrapper id={id} itemBGColor={itemBGColor}>
+    <ListItemWrapper id={id} itemBGColor={itemBGColor} onClick={onClick}>
       <Item
         left={
           <>
-            {onClick ? (
-              <a onClick={onClick}>
-                <Title title={label} />
-              </a>
-            ) : (
-              <Title title={label} />
-            )}
+            {<Title title={label} />}
             {description ? (
               <Title title={description} size="small" weight="light" />
             ) : null}
           </>
         }
         right={action}
+        slotWidthRight={actionWidth}
         itemColor={itemColor}
+        onClick={onClick}
+        {...props}
       />
     </ListItemWrapper>
   );
@@ -101,17 +103,22 @@ function ListItem({ id, label, onClick, description, action, type }) {
 
 List.propTypes = {
   id: PropTypes.string,
-  name: PropTypes.string,
+  title: PropTypes.string,
   children: PropTypes.node,
 };
 
 ListItem.propTypes = {
   id: PropTypes.string,
   label: PropTypes.string.isRequired,
-  onClick: PropTypes.func,
   description: PropTypes.string,
   action: PropTypes.any,
+  /** If the 'action' element needs more room, use this prop to give it more space.
+   * "actionWidthMin" is used to override the default 'label' / 'action' ratio of a 'ListItem' by increasing the 'min-width' of the action's 'slot'.
+   * Value should be in percentage (%)
+   */
+  actionWidth: PropTypes.string,
   type: PropTypes.oneOf(["info", "success", "warning", "alert", "inverse"]),
+  onClick: PropTypes.func,
 };
 
 export { List as default, ListItem };
