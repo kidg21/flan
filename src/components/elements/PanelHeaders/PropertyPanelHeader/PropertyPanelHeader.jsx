@@ -8,19 +8,24 @@ import { colors, shadows } from "Variables";
 import Card, { Piece } from "layout/Card";
 import Title from "base/Typography";
 
+const PropertyContainer = styled.div`
+	display: flex;
+`;
+
 const HeaderSpace = styled.div`
 	padding-top: 0.7rem;
 	font-weight: 700;
 `;
 
 const ApnSpan = styled.span`
-	font-size: small;
+	font-size: 0.938em;
 	font-weight: 400;
 	color: ${props => (props.badgeBG ? colors.white : colors.grey_60)};
 `;
 
 const Location = styled.div`
 	display: inline-block;
+	padding-right: 1em;
 `;
 
 function PropertyPanelHeader({ id, title, APN }) {
@@ -29,20 +34,18 @@ function PropertyPanelHeader({ id, title, APN }) {
 			<HeaderSpace>
 				<Bar
 					left={
-						<Location>
-							<Title title={title} weight="bold" />
-							<ApnSpan>APN: {APN}</ApnSpan>
-						</Location>
-					}
-					center={
-						<IconBlock>
+						<PropertyContainer>
+							<Location>
+								<Title title={title} weight="bold" />
+								<ApnSpan>APN: {APN}</ApnSpan>
+							</Location>
 							<Icon
 								icon={["fal", "directions"]}
 								size="2x"
 								type="info"
 								onClick
 							/>
-						</IconBlock>
+						</PropertyContainer>
 					}
 					right={<Icon icon={["far", "ellipsis-v"]} size="lg" />}
 				/>

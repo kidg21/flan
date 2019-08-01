@@ -3,13 +3,14 @@ import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 
 const TableWrapper = styled.table`
-	overflow: hidden;
+	// overflow: hidden;
+	table-layout: fixed;
 	cursor: default;
 	// box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
 	border-radius: 5px;
 	border-collapse: collapse;
-	display: flex-block;
-	width: ${props => props.tableWidth || ""};
+	// display: flex-block;
+	width: 100%;
 `;
 const Row = styled.tr`
 	// &:hover {
@@ -20,31 +21,20 @@ const Row = styled.tr`
 const Cell = styled.td`
 	padding: 0.25em 0.25em 0.25em;
 	font-size: small;
+	text-align: left;
 
 	// &:first-child {
 	// 	color: #83a3c2;
 	// 	font-weight: bold;
 	// }
 	&:nth-child(even) {
-		text-align: right;
 		font-weight: bold;
 	}
 `;
 
-function Table({ id, width, data }) {
-	let tableWidth;
-	switch (width) {
-		case "full":
-			tableWidth = "100%";
-			break;
-		case "half":
-			tableWidth = "50%";
-			break;
-		default:
-			break;
-	}
+function Table({ id, data }) {
 	return (
-		<TableWrapper id={id} width={width} tableWidth={tableWidth}>
+		<TableWrapper id={id}>
 			{data.map(item => (
 				<Row key={item.id}>
 					<Cell>
@@ -62,7 +52,6 @@ function Table({ id, width, data }) {
 Table.propTypes = {
 	id: PropTypes.string,
 	data: PropTypes.any.isRequired,
-	width: PropTypes.string,
 };
 
 export default Table;

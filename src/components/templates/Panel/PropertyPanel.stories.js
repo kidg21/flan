@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import PropertyPanelHeader from "elements/PanelHeaders/PropertyPanelHeader";
 import Table from "blocks/Table";
+import { Wrapper } from "layout/Card";
 import InformationCardBar from "elements/CardBars/InformationCardBar";
 import Accordion from "blocks/Accordion";
 import Panel, { PanelSection } from "layout/Panel";
@@ -60,7 +61,9 @@ storiesOf("Templates|Panel", module).add("Property Panel", () =>
 							setVisibility(!visibility);
 						}}
 					>
-						<Table data={data} />
+						<Wrapper>
+							<Table data={data} />
+						</Wrapper>
 					</Accordion>
 					<Accordion
 						header={<InformationCardBar title="Site Information" />}
@@ -69,7 +72,9 @@ storiesOf("Templates|Panel", module).add("Property Panel", () =>
 							setVisibility2(!visibility2);
 						}}
 					>
-						<Table data={data} />
+						<Wrapper>
+							<Table data={data} />
+						</Wrapper>
 					</Accordion>
 					<Accordion
 						header={<InformationCardBar title="Property Characteristics" />}
@@ -78,7 +83,9 @@ storiesOf("Templates|Panel", module).add("Property Panel", () =>
 							setVisibility3(!visibility3);
 						}}
 					>
-						<Table data={data} />
+						<Wrapper>
+							<Table data={data} />
+						</Wrapper>
 					</Accordion>
 					<Accordion
 						header={<InformationCardBar title="Value and Tax" />}
@@ -87,7 +94,9 @@ storiesOf("Templates|Panel", module).add("Property Panel", () =>
 							setVisibility4(!visibility4);
 						}}
 					>
-						<Table data={data} />
+						<Wrapper>
+							<Table data={data} />
+						</Wrapper>
 					</Accordion>
 					<Accordion
 						header={<InformationCardBar title="Last Market Sale" />}
@@ -96,7 +105,9 @@ storiesOf("Templates|Panel", module).add("Property Panel", () =>
 							setVisibility5(!visibility5);
 						}}
 					>
-						<Table data={data} />
+						<Wrapper>
+							<Table data={data} />
+						</Wrapper>
 					</Accordion>
 					<Accordion
 						header={<InformationCardBar title="Site Views" />}
@@ -105,7 +116,9 @@ storiesOf("Templates|Panel", module).add("Property Panel", () =>
 							setVisibility6(!visibility6);
 						}}
 					>
-						<Table data={data} />
+						<Wrapper>
+							<Table data={data} />
+						</Wrapper>
 					</Accordion>
 				</PanelSection>
 			</Panel>

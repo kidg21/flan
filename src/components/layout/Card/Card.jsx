@@ -4,20 +4,24 @@ import { fonts, colors, shadows } from "Variables";
 import Grid from "helpers/Grid.jsx";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 
+const Wrapper = styled.div`
+	margin: 0.5em;
+`;
+
 const CardPiece = styled.div`
-  display: flex;
-  flex-direction: column;
-  flex: none;
-  width: 100%;
-  background: ${colors.white};
-  /* Prototype Content - displays when a Card is empty */
-  &:empty {
-    &:before {
-      ${PlaceholderText}
-      content: "Card Piece";
-      padding: 2rem;
-    }
-  }
+	display: flex;
+	flex-direction: column;
+	flex: none;
+	width: 100%;
+	background: ${colors.white};
+	/* Prototype Content - displays when a Card is empty */
+	&:empty {
+		&:before {
+			${PlaceholderText}
+			content: "Card Piece";
+			padding: 2rem;
+		}
+	}
 `;
 
 const CardWrapper = styled(CardPiece)`
@@ -39,25 +43,25 @@ const CardWrapper = styled(CardPiece)`
 `;
 
 const CardList = styled(Grid)`
-  padding: 1rem;
-  ${CardWrapper} {
-    border-radius: 5px;
-  }
-  /* Prototype Content - displays when a Card List is empty */
-  &:empty {
-    &:before {
-      ${PlaceholderText}
-      content: "{ CardList } \00000A 'Displays a grid of Cards in columns'";
-    }
-  }
+	padding: 1rem;
+	${CardWrapper} {
+		border-radius: 5px;
+	}
+	/* Prototype Content - displays when a Card List is empty */
+	&:empty {
+		&:before {
+			${PlaceholderText}
+			content: "{ CardList } \00000A 'Displays a grid of Cards in columns'";
+		}
+	}
 `;
 
 function Piece({ id, children }) {
-  return <CardPiece id={id}>{children}</CardPiece>;
+	return <CardPiece id={id}>{children}</CardPiece>;
 }
 
 function Card({ id, children }) {
-  return <CardWrapper id={id}>{children}</CardWrapper>;
+	return <CardWrapper id={id}>{children}</CardWrapper>;
 }
 
-export { Card as default, CardList, Piece };
+export { Card as default, CardList, Piece, Wrapper };
