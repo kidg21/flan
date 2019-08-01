@@ -14,6 +14,7 @@ const StyledText = styled.h4`
   color: ${props => props.textColor || "inherit"};
   font-size: ${props => props.textSize || ""};
   font-weight: ${props => props.textWeight || ""};
+  text-align: ${props => props.textAlign || ""};
   margin: 0;
   font-style: ${props => props.textStyle || ""};
   text-decoration: ${props => props.textDecoration || ""};
@@ -29,11 +30,13 @@ function Title({
   weight,
   count,
   size,
+  align,
   className,
 }) {
   let textColor;
   let textWeight;
   let textSize;
+  let textAlign;
   let textStyle;
   let textDecoration;
   let flexDirection;
@@ -56,7 +59,6 @@ function Title({
     default:
       break;
   }
-
   switch (size) {
     case "tiny":
       as = "h6";
@@ -76,7 +78,16 @@ function Title({
     default:
       break;
   }
-
+  switch (align) {
+    case "center":
+      textAlign = "center";
+      break;
+    case "right":
+      textAlign = "right";
+      break;
+    default:
+      break;
+  }
   switch (style) {
     case "underline":
       textDecoration = "underline";
@@ -117,6 +128,7 @@ function Title({
       textColor={textColor}
       textWeight={textWeight}
       textSize={textSize}
+      textAlign={textAlign}
       textStyle={textStyle}
       textDecoration={textDecoration}
       className={className}
@@ -141,6 +153,7 @@ Title.propTypes = {
   order: PropTypes.string,
   style: PropTypes.string,
   size: PropTypes.string,
+  align: PropTypes.string,
   className: PropTypes.string,
 };
 
