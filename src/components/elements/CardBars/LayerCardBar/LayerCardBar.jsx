@@ -15,7 +15,6 @@ const blockStyle = {
 };
 
 const disabledblockStyle = {
-	width: ".5rem",
 	filter: "brightness(200%)",
 	lineHeight: "normal",
 };
@@ -54,7 +53,8 @@ function LayerCardBar({ id, title, switchProps, disabled }) {
 					left={
 						<SwitchContainer disabled="true">
 							{" "}
-							<Switch /> <span style={Space} /> <Title title={title} weight="normal" />
+							<Switch /> <span style={Space} />{" "}
+							<Title title={title} weight="normal" />
 						</SwitchContainer>
 					}
 					right={DisabledIcons}
