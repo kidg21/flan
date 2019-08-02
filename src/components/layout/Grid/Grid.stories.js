@@ -39,21 +39,6 @@ storiesOf("Layout|Grid/", module)
   )
   .add("Knobs", () => (
     <Grid
-      gap={options(
-        "grid gap",
-        {
-          "no gap": "none",
-          tiny: "tiny",
-          small: "small",
-          "normal (default)": "",
-          large: "large",
-          xlarge: "xlarge",
-          xxlarge: "xxlarge",
-        },
-        "",
-        { display: "select" },
-        "Standard Props",
-      )}
       columns={options(
         "# of columns",
         {
@@ -76,6 +61,21 @@ storiesOf("Layout|Grid/", module)
         "Standard Props",
       )}
       rows={text("grid-template-rows", "auto", "Standard Props")}
+      gap={options(
+        "grid gap",
+        {
+          "no gap": "none",
+          tiny: "tiny",
+          small: "small",
+          "normal (default)": "",
+          large: "large",
+          xlarge: "xlarge",
+          xxlarge: "xxlarge",
+        },
+        "",
+        { display: "select" },
+        "Standard Props",
+      )}
     >
       <Card />
       <Card />

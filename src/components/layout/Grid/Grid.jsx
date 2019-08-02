@@ -9,14 +9,20 @@ const GridWrapper = styled.section`
     props.setColumns || "repeat(auto-fit, minmax(22rem, 1fr))"};
   grid-template-rows: ${props => props.setRows || "auto"};
 `;
+
 function Grid({ children, columns, gap, id, rows }) {
-  // 'gutter' between grid items
-  let setGap;
   // 1-12 colums with custom override
   let setColumns;
+  const _columns = parseInt(columns);
+  if (_columns > 0 && columns < 21) {
+    setColumns = `repeat(${_columns}, minmax(0, 1fr))`;
+  } else {
+    setColumns = columns;
+  }
   // 'auto' by default with custom override
-  // Will add specific cases as they come up
-  let setRows;
+  let setRows = rows;
+  // 'gutter' between grid items
+  let setGap;
   switch (gap) {
     case "none":
       setGap = "0";
@@ -39,54 +45,6 @@ function Grid({ children, columns, gap, id, rows }) {
     default:
     case "normal":
       setGap = gap;
-      break;
-  }
-  switch (columns) {
-    case "1":
-      setColumns = "repeat(1, minmax(0, 1fr))";
-      break;
-    case "2":
-      setColumns = "repeat(2, minmax(0, 1fr))";
-      break;
-    case "3":
-      setColumns = "repeat(3, minmax(0, 1fr))";
-      break;
-    case "4":
-      setColumns = "repeat(4, minmax(0, 1fr))";
-      break;
-    case "5":
-      setColumns = "repeat(5, minmax(0, 1fr))";
-      break;
-    case "6":
-      setColumns = "repeat(6, minmax(0, 1fr))";
-      break;
-    case "7":
-      setColumns = "repeat(7, minmax(0, 1fr))";
-      break;
-    case "8":
-      setColumns = "repeat(8, minmax(0, 1fr))";
-      break;
-    case "9":
-      setColumns = "repeat(9, minmax(0, 1fr))";
-      break;
-    case "10":
-      setColumns = "repeat(10, minmax(0, 1fr))";
-      break;
-    case "11":
-      setColumns = "repeat(11, minmax(0, 1fr))";
-      break;
-    case "12":
-      setColumns = "repeat(12, minmax(0, 1fr))";
-      break;
-    default:
-    case "auto":
-      setColumns = columns;
-      break;
-  }
-  switch (rows) {
-    default:
-    case "auto":
-      setRows = rows;
       break;
   }
   return (
