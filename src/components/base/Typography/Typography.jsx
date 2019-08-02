@@ -12,7 +12,6 @@ const CountContainer = styled.div`
 
 const StyledText = styled.h4`
   color: ${props => props.textColor || "inherit"};
-  font-size: ${props => props.textSize || ""};
   font-weight: ${props => props.textWeight || ""};
   text-align: ${props => props.textAlign || ""};
   margin: 0;
@@ -22,7 +21,6 @@ const StyledText = styled.h4`
 
 function Title({
   id,
-  as,
   title,
   type,
   order,
@@ -35,11 +33,11 @@ function Title({
 }) {
   let textColor;
   let textWeight;
-  let textSize;
   let textAlign;
   let textStyle;
   let textDecoration;
   let flexDirection;
+  let as;
   switch (type) {
     case "info":
       textColor = colors.anchor;
@@ -76,6 +74,7 @@ function Title({
       as = "h1";
       break;
     default:
+      as = "h4";
       break;
   }
   switch (align) {
@@ -127,7 +126,6 @@ function Title({
       as={as}
       textColor={textColor}
       textWeight={textWeight}
-      textSize={textSize}
       textAlign={textAlign}
       textStyle={textStyle}
       textDecoration={textDecoration}
