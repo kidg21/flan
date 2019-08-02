@@ -64,7 +64,6 @@ function Badge({ id, label, icon, type, position, style }) {
 				badgeColor = colors.grey_80;
 				break;
 			default:
-			case "alert":
 				badgeColor = colors.alert;
 				break;
 		}
