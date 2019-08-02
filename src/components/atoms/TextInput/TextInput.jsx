@@ -37,7 +37,6 @@ const Input = styled.input`
 function TextInput({
   id,
   type,
-  as,
   pattern,
   value,
   inputLabel,
@@ -48,8 +47,9 @@ function TextInput({
   state,
   isDisabled,
   children,
-  style
+  style,
 }) {
+  let as;
   let inputTextColor;
   let inputFillColor;
   let inputBorderColor;
@@ -75,11 +75,11 @@ function TextInput({
       inputSelectColor = colors.alert;
       break;
     case "search":
-        inputBorderColor = colors.grey_20;
-        inputBorderColorHover = colors.grey_20;
-        placeholderColor = colors.grey_40;
-        inputSelectColor = colors.anchor;
-        break;
+      inputBorderColor = colors.grey_20;
+      inputBorderColorHover = colors.grey_20;
+      placeholderColor = colors.grey_40;
+      inputSelectColor = colors.anchor;
+      break;
     case "disabled":
       inputTextColor = colors.grey_40;
       inputFillColor = colors.grey_20;
@@ -105,9 +105,9 @@ function TextInput({
       ) : null}
       <Input
         id={id} // input attribute
+        as={as}
         name={id} // input attribute
         type={type} // input attribute
-        as={as}
         value={value} // input attribute
         placeholder={placeholder} // input attribute
         pattern={pattern} // input attribute
@@ -137,7 +137,7 @@ TextInput.propTypes = {
   helpText: PropTypes.string,
   errorText: PropTypes.string,
   state: PropTypes.string,
-  style: PropTypes.string
+  style: PropTypes.string,
 };
 
 export { TextInput as default };
