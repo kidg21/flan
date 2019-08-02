@@ -1,8 +1,8 @@
 import React from "react";
-import styled, { css, keyframes } from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { colors, shadows } from "Variables";
+import styled, { css } from "styled-components";
+import { colors } from "Variables";
 import PropTypes from "prop-types";
+import Icon from "atoms/Icon";
 
 
 const buttonHover = css`
@@ -14,9 +14,8 @@ const buttonActive = css`
 
 const StyledButton = styled.button`
   display: flex;
-  /* flex: auto; */
+  flex: auto;
   flex-direction: column;
-  /* width: auto; */ 
   width: ${props => (props.fullWidth ? "100%" : "auto")};
   padding: ${props => props.buttonPadding || "0.5rem 0.7rem"};
   justify-content: center;
@@ -56,7 +55,7 @@ const ButtonLabel = styled.label`
 
 `;
 
-const ButtonIcon = styled(FontAwesomeIcon)`
+const ButtonIcon = styled(Icon)`
   margin: 0.25em 0;
 `;
 

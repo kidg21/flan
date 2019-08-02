@@ -17,6 +17,7 @@ const Block = styled.div`
 
 `;
 
+<<<<<<< HEAD
 function IconBlock({ id, stacked, children, style }) {
 	return (
 		<Block id={id} stacked={stacked} style={style}>
@@ -28,6 +29,21 @@ function IconBlock({ id, stacked, children, style }) {
 IconBlock.propTypes = {
 	id: PropTypes.string,
 	children: PropTypes.any.isRequired,
+=======
+function IconBlock({ id, stacked, children, style, className }) {
+  return (
+    <Block id={id} stacked={stacked} style={style} className={className}>
+      {children}
+    </Block>
+  );
+}
+
+IconBlock.propTypes = {
+  id: PropTypes.string,
+  children: PropTypes.any.isRequired,
+  /** className used for extending styles */
+  className: PropTypes.string,
+>>>>>>> master
 };
 
 export default IconBlock;

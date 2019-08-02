@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
-import NavigationCardBar from "./NavigationCardBar";
+import GroupCardBar from "./GroupCardBar";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
 
@@ -8,4 +8,4 @@ import { Padding } from "helpers/Display";
 storiesOf("Elements|Card Bar/", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  .add("Navigation", () => <NavigationCardBar title="Property Search" />);
+  .add("Group", () => <GroupCardBar title="Ownership" length={2}/>);

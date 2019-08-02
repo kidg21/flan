@@ -3,8 +3,8 @@ import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
 import CardAccordion from "./CardAccordion";
-import LayerCardBar from "elements/LayerCardBar";
-import InformationCardBar from "elements/InformationCardBar";
+import LayerCardBar from "elements/CardBars/LayerCardBar";
+import InformationCardBar from "elements/CardBars/InformationCardBar";
 import Table from "blocks/Table";
 import Checkbox from "atoms/Checkbox";
 import MapLegend from "blocks/MapLegend";
@@ -39,8 +39,9 @@ storiesOf("Elements|Card Accordion", module)
       return (
         <CardAccordion
           header={<InformationCardBar title="Ownership" />}
-          body={<Table data={data} />}
-        />
+        >
+          <Table data={data} />
+        </CardAccordion>
       );
     })
   )
@@ -60,8 +61,9 @@ storiesOf("Elements|Card Accordion", module)
               }}
             />
           }
-          body={<MapLegend />}
-        />
+        >
+          <MapLegend />
+        </CardAccordion>
       );
     })
   )
@@ -85,7 +87,6 @@ storiesOf("Elements|Card Accordion", module)
               }}
             />
           }
-          body={<MapLegend />}
           hasOptions="true"
           options={
             <Section>
@@ -104,7 +105,9 @@ storiesOf("Elements|Card Accordion", module)
               </InputGroup>
             </Section>
           }
-        />
+        >
+          <MapLegend />
+        </CardAccordion>
       );
     })
   );

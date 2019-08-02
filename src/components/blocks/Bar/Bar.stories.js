@@ -85,7 +85,11 @@ storiesOf("Blocks|Bar", module)
     <Grid col_1>
       <Section>Command / Text / Command</Section>
       <Card>
-        <Bar left={<Command />} center={shortTitle} right={<Command />} />
+        <Bar
+          left={<Command />}
+          center={<Title>{shortTitle}</Title>}
+          right={<Command />}
+        />
       </Card>
       <Card>
         <Bar left={<Command />} center={longTitle} right={<Command />} />
