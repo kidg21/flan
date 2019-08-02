@@ -33,6 +33,9 @@ const ListItemWrapper = styled.li`
 const Item = styled(Bar)`
   align-items: center;
   color: ${props => props.itemColor || colors.grey_80};
+  border-style: solid;
+  border-width: ${props => props.itemBorder || "0"};
+  user-select: ${props => props.userSelect || ""};
 `;
 
 function List({ id, title, children }) {
@@ -50,12 +53,15 @@ function ListItem({
   description,
   action,
   actionWidth,
+  state,
   type,
   onClick,
   ...props
 }) {
   let itemColor;
   let itemBGColor;
+  let itemBorder;
+  let userSelect;
   switch (type) {
     case "info":
       itemColor = colors.white;
@@ -75,7 +81,25 @@ function ListItem({
       break;
     case "inverse":
       itemColor = colors.white;
-      itemBGColor = colors.grey_60;
+      itemBGColor = colors.grey_80;
+      break;
+    default:
+      break;
+  }
+  switch (state) {
+    case "active":
+      if (type == null) {
+        itemColor = colors.success;
+      } else {
+        null;
+      }
+      itemBorder = "0 0 0 .5em";
+      break;
+    case "disabled":
+      itemColor = colors.grey_40;
+      itemBGColor = colors.grey_light;
+      userSelect = "none";
+      onClick = false;
       break;
     default:
       break;
@@ -94,6 +118,8 @@ function ListItem({
         right={action}
         slotWidthRight={actionWidth}
         itemColor={itemColor}
+        itemBorder={itemBorder}
+        userSelect={userSelect}
         onClick={onClick}
         {...props}
       />
@@ -104,7 +130,6 @@ function ListItem({
 List.propTypes = {
   id: PropTypes.string,
   title: PropTypes.string,
-  children: PropTypes.node,
 };
 
 ListItem.propTypes = {
@@ -117,6 +142,7 @@ ListItem.propTypes = {
    * Value should be in percentage (%)
    */
   actionWidth: PropTypes.string,
+  state: PropTypes.oneOf(["active", "disabled"]),
   type: PropTypes.oneOf(["info", "success", "warning", "alert", "inverse"]),
   onClick: PropTypes.func,
 };
