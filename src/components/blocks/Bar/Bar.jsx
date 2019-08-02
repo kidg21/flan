@@ -68,8 +68,10 @@ function Bar({
 Bar.propTypes = {
   id: PropTypes.string,
   left: PropTypes.any,
+  slotWidthLeft: PropTypes.string,
   center: PropTypes.any,
   right: PropTypes.any,
+  slotWidthRight: PropTypes.string,
   onClick: PropTypes.func,
 };
 
