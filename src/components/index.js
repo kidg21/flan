@@ -1,6 +1,6 @@
 // Publicly exported files from 'base'
 export * from "./base/Typography";
-export * from "./base/GlobalStyles/GlobalStyles.jsx";
+export {default as GlobalStyles} from "./base/GlobalStyles/GlobalStyles.jsx";
 
 // Publicly exported files from 'atoms'
 export { default as Badge } from "./atoms/Badge";
