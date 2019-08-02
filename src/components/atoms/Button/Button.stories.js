@@ -33,7 +33,7 @@ storiesOf("Atoms|Button", module)
     "Documentation",
     withInfo()(() => <Button buttonLabel="Standard Button" />)
   )
-
+  .add("Skeleton", () => <Button />)
   .add("Knobs", () => (
     <Button
       icon={select(

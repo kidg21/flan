@@ -4,6 +4,7 @@ import { fonts, colors, shadows } from "Variables";
 import Grid from "helpers/Grid.jsx";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 
+
 const CardPiece = styled.div`
   display: flex;
   flex-direction: column;

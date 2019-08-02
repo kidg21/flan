@@ -357,6 +357,11 @@ storiesOf("Blocks|IconBlock", module)
         <Icon icon="circle" type="success" />
       </IconBlock>
     </IconGrid>
+  ))
+  .add("Skeleton", () => (
+    <div>
+      <IconBlock />
+    </div>
   ));
 
 storiesOf("Application|Libraries/", module)
