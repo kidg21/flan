@@ -20,9 +20,9 @@ import SelectMenu from "atoms/SelectMenu";
 import Checkbox from "atoms/Checkbox";
 import Switch from "atoms/Switch";
 import List, { ListItem } from "blocks/List";
-import ListNotes from "./List.md";
+import ListNotes from "blocks/List/List.md";
 
-storiesOf("Blocks|List", module)
+storiesOf("Work|Blocks/List", module)
   .addParameters({
     info: {
       text:
