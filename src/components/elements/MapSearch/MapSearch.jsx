@@ -11,8 +11,10 @@ const IconWrapper = styled.span`
 
 const SearchContainer = styled.div`
 	display: flex;
+	margin: 1em;
+	width: 350px;
 	flex-direction: column;
-	position: relative;
+	position: absolute;
 	${IconWrapper} {
 		position: absolute;
 		right: 0;
