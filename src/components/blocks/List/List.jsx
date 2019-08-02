@@ -19,23 +19,30 @@ const ListTitle = styled(Title)`
 `;
 
 const ListItemWrapper = styled.li`
-  border-bottom: 1px solid ${colors.grey_light};
+  color: ${props => props.itemColor || ""};
   background-color: ${props => props.itemBGColor || colors.white};
+  border-style: solid;
+  border-width: ${props => props.itemBorder || "0"};
+  border-bottom: 1px solid ${colors.grey_light};
   cursor: ${props => (props.onClick ? "pointer" : "")};
   &:last-child {
-    border: none;
+    border-bottom: none;
   }
   &:hover {
     ${props => (props.onClick ? Darken : "")};
+  }
+  &[disabled] {
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
+    color: ${colors.grey_40};
+    background-color: ${colors.grey_light};
+    border-left: none;
   }
 `;
 
 const Item = styled(Bar)`
   align-items: center;
-  color: ${props => props.itemColor || colors.grey_80};
-  border-style: solid;
-  border-width: ${props => props.itemBorder || "0"};
-  user-select: ${props => props.userSelect || ""};
 `;
 
 function List({ id, title, children }) {
@@ -55,13 +62,22 @@ function ListItem({
   actionWidth,
   state,
   type,
+  disabled,
   onClick,
-  ...props
+  slotWidthRight,
 }) {
   let itemColor;
   let itemBGColor;
   let itemBorder;
   let userSelect;
+  switch (state) {
+    case "active":
+      itemColor = colors.success;
+      itemBorder = "0 0 0 .5em";
+      break;
+    default:
+      break;
+  }
   switch (type) {
     case "info":
       itemColor = colors.white;
@@ -86,26 +102,15 @@ function ListItem({
     default:
       break;
   }
-  switch (state) {
-    case "active":
-      if (type == null) {
-        itemColor = colors.success;
-      } else {
-        null;
-      }
-      itemBorder = "0 0 0 .5em";
-      break;
-    case "disabled":
-      itemColor = colors.grey_40;
-      itemBGColor = colors.grey_light;
-      userSelect = "none";
-      onClick = false;
-      break;
-    default:
-      break;
-  }
   return (
-    <ListItemWrapper id={id} itemBGColor={itemBGColor} onClick={onClick}>
+    <ListItemWrapper
+      id={id}
+      itemColor={itemColor}
+      itemBGColor={itemBGColor}
+      itemBorder={itemBorder}
+      onClick={onClick}
+      disabled={disabled}
+    >
       <Item
         left={
           <>
@@ -117,11 +122,6 @@ function ListItem({
         }
         right={action}
         slotWidthRight={actionWidth}
-        itemColor={itemColor}
-        itemBorder={itemBorder}
-        userSelect={userSelect}
-        onClick={onClick}
-        {...props}
       />
     </ListItemWrapper>
   );
@@ -130,6 +130,7 @@ function ListItem({
 List.propTypes = {
   id: PropTypes.string,
   title: PropTypes.string,
+  children: PropTypes.node,
 };
 
 ListItem.propTypes = {
@@ -142,9 +143,10 @@ ListItem.propTypes = {
    * Value should be in percentage (%)
    */
   actionWidth: PropTypes.string,
-  state: PropTypes.oneOf(["active", "disabled"]),
+  state: PropTypes.oneOf(["active"]),
   type: PropTypes.oneOf(["info", "success", "warning", "alert", "inverse"]),
   onClick: PropTypes.func,
+  disabled: PropTypes.bool,
 };
 
 export { List as default, ListItem };

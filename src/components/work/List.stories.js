@@ -57,7 +57,6 @@ storiesOf("Work|Blocks/List", module)
             {
               default: null,
               active: "active",
-              disabled: "disabled",
             },
             null,
             "Item 1",
@@ -76,16 +75,16 @@ storiesOf("Work|Blocks/List", module)
             "Item 1",
           )}
           onClick={boolean("1 - Interactive", false, "Item 1")}
+          disabled={boolean("1 - Disabled", false, "Item 1")}
         />
         <ListItem
-          label={text("2 - Label", "Item 1", "Item 2")}
+          label={text("2 - Label", "Item 2", "Item 2")}
           description={text("2 - Description", "", "Item 2")}
           state={select(
             "2 - State",
             {
               default: null,
               active: "active",
-              disabled: "disabled",
             },
             null,
             "Item 2",
@@ -104,16 +103,16 @@ storiesOf("Work|Blocks/List", module)
             "Item 2",
           )}
           onClick={boolean("2 - Interactive", false, "Item 2")}
+          disabled={boolean("2 - Disabled", false, "Item 2")}
         />
         <ListItem
-          label={text("3 - Label", "Item 1", "Item 3")}
+          label={text("3 - Label", "Item 3", "Item 3")}
           description={text("3 - Description", "", "Item 3")}
           state={select(
             "3 - State",
             {
               default: null,
               active: "active",
-              disabled: "disabled",
             },
             null,
             "Item 3",
@@ -132,6 +131,7 @@ storiesOf("Work|Blocks/List", module)
             "Item 3",
           )}
           onClick={boolean("3 - Interactive", false, "Item 3")}
+          disabled={boolean("3 - Disabled", false, "Item 3")}
         />
       </List>
     </Card>
@@ -145,7 +145,7 @@ storiesOf("Work|Blocks/List", module)
         <ListItem
           label="List Item -- (disabled)"
           type="inverse"
-          state="disabled"
+          disabled={true}
         />
         <ListItem label="List Item -- info" type="info" />
         <ListItem
@@ -193,7 +193,7 @@ storiesOf("Work|Blocks/List", module)
           label="List Item (disabled)"
           description="This is the description"
           onClick={() => []}
-          state="disabled"
+          disabled={true}
         />
         <ListItem
           label="List Item"
@@ -251,7 +251,7 @@ storiesOf("Work|Blocks/List", module)
               type="disabled"
             />
           }
-          state="disabled"
+          disabled={true}
         />
         <ListItem
           label="How About This?"
@@ -275,11 +275,7 @@ storiesOf("Work|Blocks/List", module)
     <Card>
       <List>
         <ListItem label="Do Something?" action={<Switch />} />
-        <ListItem
-          label="Something Else?"
-          action={<Switch />}
-          state="disabled"
-        />
+        <ListItem label="Something Else?" action={<Switch />} disabled={true} />
         <ListItem label="How About This?" action={<Switch />} />
         <ListItem label="Any Ideas?" action={<Switch />} />
         <ListItem label="Flan?" action={<Switch />} />
@@ -314,7 +310,7 @@ storiesOf("Work|Blocks/List", module)
             />
           }
           actionWidth="25%"
-          state="disabled"
+          disabled={true}
         />
         <ListItem
           label="How About This?"
@@ -389,11 +385,9 @@ storiesOf("Work|Blocks/List", module)
         <ListItem
           label="This is a very long and informative title that might even need multiple lines to display it all"
           description="This is the description"
-          onClick={() => []}
         />
         <ListItem
           label="List Item"
-          onClick={() => {}}
           description="This description is much longer but that's okay because it will just keep on wrapping to the next line until you run out of things to say in support of the long title that you just typed above this one."
           action={<Command name="settings" />}
         />
