@@ -64,24 +64,14 @@ Grid.propTypes = {
   children: PropTypes.node,
   /** Defines the widths of grid columns
    *
-   * Options: Any switch case or any standard value accepted by the CSS Grid property, 'grid-template-columns'.
+   * Options: 1-12 or any standard value accepted by the CSS Grid property, 'grid-template-columns'.
    */
-  columns: PropTypes.oneOf([
-    "default (auto)",
-    "1",
-    "2",
-    "3",
-    "4",
-    "5",
-    "6",
-    "7",
-    "8",
-    "9",
-    "10",
-    "11",
-    "12",
-    "[grid-template-columns]",
-  ]),
+  columns: PropTypes.string,
+  /** Defines the heights of grid rows
+   *
+   * Options: Any standard value accepted by the CSS Grid property, 'grid-template-rows'.
+   */
+  rows: PropTypes.string,
   /** Sets the 'gutter' between grid items
    *
    * Options: Any switch case or any standard value accepted by the CSS Grid property, 'grid-gap'.
@@ -99,11 +89,6 @@ Grid.propTypes = {
       "[grid-template-rows]",
     ]),
   ]),
-  /** Defines the heights of grid rows
-   *
-   * Options: Any switch case or any standard value accepted by the CSS Grid property, 'grid-template-rows'.
-   */
-  rows: PropTypes.oneOf(["default (auto)", "[grid-template-rows]"]),
 };
 
 export { Grid as default };
