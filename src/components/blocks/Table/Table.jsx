@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
-import Card, { Piece } from "layout/Card/Card";
+import { Piece } from "layout/Card";
 import { SkeletonStatic } from "helpers/SkeletonStatic.jsx";
 
 const TableWrapper = styled.table`

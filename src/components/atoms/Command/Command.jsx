@@ -156,13 +156,9 @@ Command.propTypes = {
   size: PropTypes.string,
 };
 
-<<<<<<< HEAD
-
-=======
 Command.defaultProps = {
   label: "Command",
   icon: "user-circle",
 };
->>>>>>> master
 
 export { Command as default };

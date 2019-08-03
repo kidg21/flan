@@ -1,21 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-<<<<<<< HEAD
-import Icon from "atoms/Icon";
-import Switch from "atoms/Switch";
-import IconBlock from "blocks/IconBlock";
-
-
-const Slot = styled.div`
-  display: flex;
-  flex: auto;
-  justify-content: ${props => props.justifyContent || "space-between"};
-  text-align: ${props => props.textAlign || ""};
-  // width: ${props => props.widthSlot || ""};
-`;
-=======
->>>>>>> master
 
 const BarLayout = styled.div`
   display: flex;
