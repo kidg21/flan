@@ -5,10 +5,10 @@ import { colors, shadows } from "Variables";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
 
 const TextInputContainer = styled.div`
-  display: grid;
-  grid-gap: 0.35rem;
-  align-content: flex-start;
-  color: ${props => props.inputTextColor || ""};
+	display: grid;
+	grid-gap: 0.35rem;
+	align-content: flex-start;
+	color: ${props => props.inputTextColor || ""};
 `;
 
 const Input = styled.input`

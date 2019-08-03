@@ -134,7 +134,7 @@ storiesOf("Atoms|Command", module)
       />
     ))
   )
-
+  .add("Skeleton", () => <Command />)
   .add("Alignment", () => (
     <Grid>
       <Title>
@@ -165,7 +165,6 @@ storiesOf("Atoms|Command", module)
       <Command label="Disabled" state="disabled" />
     </Grid>
   ))
-
   .add("Size", () => (
     <Grid col_1>
       <Title>

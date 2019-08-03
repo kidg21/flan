@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import Grid from "helpers/Grid";
-import NavigationPanelHeader from "elements/NavigationPanelHeader";
+import NavigationPanelHeader from "elements/PanelHeaders/NavigationPanelHeader";
 // import Card, { CardList } from "layout/Card";
 import Panel, { PanelSection } from "layout/Panel";
 import DataRange from "blocks/DataRange";
@@ -20,8 +20,6 @@ import Radio from "atoms/Radio";
 import Slider from "atoms/Slider";
 import RangeSlider from "blocks/RangeSlider";
 import Button from "atoms/Button";
-import Bar from "blocks/Bar";
-import SelectMenu from "atoms/SelectMenu";
 
 const radio_1 = {
   id: "radio-1",
@@ -216,6 +214,60 @@ storiesOf("Templates|Panel/Property Filters", module)
     })
   )
 
+  .add("Filter Details Skeleton", () =>
+    React.createElement(() => {
+      const [checked, setChecked] = useState({ selectedValue: "" });
+
+      const handleCheckboxChange = event => {
+        setChecked({ selectedValue: event.target.value });
+      };
+
+      return (
+        <Panel>
+          <PanelSection>
+            <NavigationPanelHeader />
+          </PanelSection>
+          <PanelSection body>
+            <Form>
+              {/* <Bar type="one" right={<a> Reset </a>} /> */}
+              {/* <Label right grey content="Reset" /> */}
+              <Section>
+                <InputLabel />
+                <InputGroup>
+                  <Radio />
+
+                  <Radio />
+
+                  <Radio />
+                </InputGroup>
+                <DataRange />
+              </Section>
+              <Section>
+                <RangeSlider />
+              </Section>
+              <Section>
+                <TextInput />
+              </Section>
+              <Section>
+                <InputLabel />
+                <InputGroup>
+                  <Checkbox />
+                  <Checkbox />
+                  <Checkbox />
+                </InputGroup>
+              </Section>
+            </Form>
+          </PanelSection>
+          <PanelSection>
+            <CenteredSection>
+              <Button />
+            </CenteredSection>
+          </PanelSection>
+        </Panel>
+      );
+    })
+  )
+
   .add("Property- Characteristics", () =>
     React.createElement(() => {
       const [checked, setChecked] = useState({ selectedValue: "" });
@@ -274,9 +326,9 @@ storiesOf("Templates|Panel/Property Filters", module)
 
       return (
         <Panel>
-          {/* <PanelSection>
-            <PanelHeader title="New Characteristics" navigation={true} />
-          </PanelSection> */}
+          <PanelSection>
+            <NavigationPanelHeader title="New Last Market Sale" />
+          </PanelSection>
           <PanelSection body>
             <Form>
               {/* <Bar onePart={true} secondSlot={<a> Reset </a>} /> */}
@@ -285,21 +337,29 @@ storiesOf("Templates|Panel/Property Filters", module)
                   firstOptions={options}
                   secondOptions={options}
                   label="Year Built"
+                  labelMin="Min"
+                  labelMax="Max"
                 />
                 <DataRange
                   firstOptions={options}
                   secondOptions={options}
                   label="Number of Units"
+                  labelMin="Min"
+                  labelMax="Max"
                 />
                 <DataRange
                   firstOptions={options}
                   secondOptions={options}
                   label="Range 3"
+                  labelMin="Min"
+                  labelMax="Max"
                 />
                 <DataRange
                   firstOptions={options}
                   secondOptions={options}
                   label="Range 4"
+                  labelMin="Min"
+                  labelMax="Max"
                 />
 
                 <TextInput
