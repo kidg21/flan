@@ -16,7 +16,7 @@ function PropertyPanelHeader({ id, title, onClick, onClickDirection }) {
     <Piece id={id}>
       <HeaderSpace>
         <Bar
-          left={title}
+          left={<h4>{title}</h4>}
           center={
             <IconBlock>
               <Icon

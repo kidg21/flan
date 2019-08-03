@@ -12,7 +12,7 @@ function NavigationCardBar({ id, title, disabled, onClick }) {
   return (
     <Piece id={id} title={title} disabled={disabled}>
       <Bar
-        left={title}
+        left={<h5>{title}</h5>}
         right={<Icon icon={["far", "angle-right"]} />}
         onClick={onClick}
       />

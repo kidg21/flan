@@ -1,6 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
+import Card from "layout/Card";
 
 const Table = styled.table`
   overflow: hidden;
@@ -42,6 +43,7 @@ const Cell = styled.td`
 
 function DataTable() {
   return (
+    <Card>
     <Table>
       <Row>
         <Cell>Row one, first cell</Cell>
@@ -60,6 +62,7 @@ function DataTable() {
         <Cell>Row one, second cell</Cell>
       </Row>
     </Table>
+    </Card>
   );
 }
 

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
-import MainPanelHeader from "elements/MainPanelHeader";
-import NavigationPanelHeader from "elements/NavigationPanelHeader";
-import NavigationCardBar from "elements/NavigationCardBar";
+import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
+import NavigationPanelHeader from "elements/PanelHeaders/NavigationPanelHeader";
+import NavigationCardBar from "elements/CardBars/NavigationCardBar";
 import Panel, { PanelSection } from "layout/Panel";
 
 storiesOf("Templates|Panel", module)
@@ -32,7 +32,32 @@ storiesOf("Templates|Panel", module)
       );
     })
   )
+  .add("Navigation Panel-Skeleton", () =>
+    React.createElement(() => {
+      return (
+        <Panel>
+          <PanelSection>
+            <MainPanelHeader />
+          </PanelSection>
+          <PanelSection body>
+            <NavigationCardBar />
+            <NavigationCardBar />
+            <NavigationCardBar />
 
+            <NavigationCardBar />
+            <NavigationCardBar />
+
+            <NavigationCardBar />
+            <NavigationCardBar />
+            <NavigationCardBar />
+            <NavigationCardBar />
+            <NavigationCardBar />
+            <NavigationCardBar />
+          </PanelSection>
+        </Panel>
+      );
+    })
+  )
   .add("Filter-2nd Panel", () =>
     React.createElement(() => {
       return (

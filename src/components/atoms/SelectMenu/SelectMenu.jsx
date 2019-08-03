@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { fonts, colors, shadows, Lighten, Darken } from "Variables";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
 import Select from "react-select";
+import {Skeleton} from "helpers/Skeleton.jsx";
 
 const selectStyles = {
   // Wrapper
@@ -37,7 +38,7 @@ const selectStyles = {
     fontFamily: fonts.data,
     color: isFocused ? colors.grey_60 : colors.grey_60,
     letterSpacing: ".5px",
-    fontWeight: 400
+    fontWeight: 400,
   }),
   // selected option
   singleValue: (styles, { isDisabled, isFocused, isSelected }) => ({
@@ -123,9 +124,17 @@ const SelectMenuContainer = styled.div`
       : "repeat(1, 1fr)"};
   grid-gap: 0.35rem;
   align-content: flex-start;
+  &:empty {
+    &:before {
+      ${Skeleton};
+      height: 1.3em;
+      width: 10rem;
+    }
+  }
   /* color: ${props => (props.disabled ? colors.grey_40 : "")}; */
   color: ${props =>
     props.error ? colors.alert : props.disabled ? colors.grey_40 : ""};
+    
 `;
 function SelectMenu({
   id,

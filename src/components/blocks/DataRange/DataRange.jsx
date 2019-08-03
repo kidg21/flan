@@ -19,14 +19,13 @@ const InputContainer = styled.div`
   align-items: center;
 `;
 
-const Dash = styled.h1`
+const Dash = styled.div`
   color: ${colors.grey_60};
   margin: auto;
-  ::before {
-    content: "-";
-    vertical-align: sub;
-    vertical-align: -webkit-baseline-middle;
-  }
+  font-size: 20px;
+  padding-top: 12px;
+  display: block;
+  vertical-align: center;
 `;
 
 function DataRange({ id, label, labelMin, optionsMin, labelMax, optionsMax }) {
@@ -35,7 +34,7 @@ function DataRange({ id, label, labelMin, optionsMin, labelMax, optionsMax }) {
       <InputLabel inputLabel={label} />
       <InputContainer>
         <SelectMenu inputLabel={labelMin} options={optionsMin} />
-        <Dash />
+        <Dash>-</Dash>
         <SelectMenu inputLabel={labelMax} options={optionsMax} />
       </InputContainer>
     </Container>
