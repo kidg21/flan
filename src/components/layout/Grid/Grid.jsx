@@ -14,7 +14,7 @@ function Grid({ children, columns, gap, id, rows }) {
   // 1-12 colums with custom override
   let setColumns;
   const _columns = parseInt(columns);
-  if (_columns > 0 && columns < 21) {
+  if (_columns > 0 && columns < 13) {
     setColumns = `repeat(${_columns}, minmax(0, 1fr))`;
   } else {
     setColumns = columns;
