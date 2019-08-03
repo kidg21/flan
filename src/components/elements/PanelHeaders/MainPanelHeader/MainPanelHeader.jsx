@@ -12,18 +12,6 @@ const HeaderSpace = styled.div`
 `;
 
 function MainPanelHeader({ id, title }) {
-<<<<<<< HEAD:src/components/elements/MainPanelHeader/MainPanelHeader.jsx
-  return (
-    <Piece id={id}>
-      <HeaderSpace>
-        <Bar
-          left={<h4>{title}</h4>}
-          right={<Icon icon={["far", "ellipsis-v"]} size="lg" />}
-        />
-      </HeaderSpace>
-    </Piece>
-  );
-=======
 	return (
 		<Piece id={id}>
 			<HeaderSpace>
@@ -34,7 +22,6 @@ function MainPanelHeader({ id, title }) {
 			</HeaderSpace>
 		</Piece>
 	);
->>>>>>> master:src/components/elements/PanelHeaders/MainPanelHeader/MainPanelHeader.jsx
 }
 MainPanelHeader.propTypes = {
 	id: PropTypes.string,
