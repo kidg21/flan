@@ -11,8 +11,11 @@ const IconWrapper = styled.span`
 
 const SearchContainer = styled.div`
 	display: flex;
+	margin: 1em;
+	width: 28rem;
 	flex-direction: column;
-	position: relative;
+	position: absolute;
+
 	${IconWrapper} {
 		position: absolute;
 		right: 0;
@@ -20,6 +23,10 @@ const SearchContainer = styled.div`
 		margin: 0.2em;
 		padding: 0.7em;
 		cursor: pointer;
+	}
+
+	@media only screen and (max-width: 700px) {
+		width: 91vw;
 	}
 `;
 
