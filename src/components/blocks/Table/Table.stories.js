@@ -11,8 +11,16 @@ const data = [
   { id: "c", color: "Zoning", name: "No Zone" }
 ];
 
+const data2 = [
+  { id: "a", color: "", name: "" },
+  { id: "b", color: "", name: "" },
+  { id: "c", color: "", name: "" }
+];
+
 storiesOf("Blocks|Table", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
   .add("Simple", () => <Table data={data} />)
+  .add("Skeleton", () => <Table />)
+  .add("No Data", () => <Table data={data2} />)
   .add("Heavy Data", () => <DataTable />);

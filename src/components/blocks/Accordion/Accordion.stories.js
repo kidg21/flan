@@ -33,5 +33,5 @@ storiesOf("Blocks|Accordion", module)
           <h3>This is the body of my accordion being visible</h3>
         </Accordion>
       );
-    })
+    }),
   );

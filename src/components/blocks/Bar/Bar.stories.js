@@ -16,7 +16,7 @@ import {
 } from "@storybook/addon-knobs";
 import { colors } from "Variables";
 import { Padding } from "helpers/Display";
-import Grid from "helpers/Grid";
+import Grid from "layout/Grid";
 import Card from "layout/Card";
 import Icon from "atoms/Icon";
 import IconBlock from "blocks/IconBlock";
@@ -29,6 +29,7 @@ const Section = styled.h6`
   margin: 0;
   line-height: normal;
   color: ${colors.grey_60};
+  grid-column: 1/-1;
 `;
 
 const image = (
@@ -79,7 +80,7 @@ storiesOf("Blocks|Bar", module)
   )
 
   .add("Some Bars", () => (
-    <Grid col_1>
+    <Grid>
       <Section>Command / Text / Command</Section>
       <Card>
         <Bar left={<Command />} center={shortTitle} right={<Command />} />

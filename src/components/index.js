@@ -64,6 +64,7 @@ export {
   ErrorText,
   InputGroup,
 } from "./layout/Form";
+export { default as Grid } from "./layout/Grid";
 export { default as Layout } from "./layout/Layout";
 // export { default as Modal } from "./layout/Modal";
 export { default as Page } from "./layout/Page";

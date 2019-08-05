@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { fonts, colors, shadows, Lighten, Darken } from "Variables";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
 import Select from "react-select";
+import { Skeleton } from "helpers/Skeleton.jsx";
 
 const selectStyles = {
   // Wrapper
@@ -126,6 +127,13 @@ const SelectMenuContainer = styled.div`
   color: ${props =>
     props.error ? colors.alert : props.disabled ? colors.grey_40 : ""};
   width: 100%;
+  &:empty {
+    &:before {
+      ${Skeleton};
+      height: 1.3em;
+      width: 10rem;
+    }
+  }
 `;
 function SelectMenu({
   id,

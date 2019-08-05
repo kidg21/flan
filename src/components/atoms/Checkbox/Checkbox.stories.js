@@ -48,6 +48,7 @@ storiesOf("Atoms|Checkbox", module)
   .addDecorator(Padding)
   .addDecorator(withKnobs)
   .add("Documentation", withInfo()(() => <Checkbox {...cbox_1} />))
+  .add("Skeleton", () => <Checkbox id="default" />)
   .add("Knobs", () => (
     <CheckboxGroup
       columns={options(

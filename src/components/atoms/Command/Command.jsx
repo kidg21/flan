@@ -7,7 +7,6 @@ import Icon from "atoms/Icon";
 const CommandContainer = styled.a`
   display: grid;
   grid-template-columns: auto 1fr;
-  justify-self: ${props => props.justifyCommand || ""};
   grid-template-areas: ${props => props.alignIcon || ""};
   justify-items: ${props => props.justifyIcon || ""};
   grid-gap: 0.5rem;
@@ -41,17 +40,7 @@ const CommandIcon = styled(Icon)`
   grid-area: icon;
 `;
 
-function Command({
-  id,
-  name,
-  label,
-  icon,
-  align,
-  state,
-  size,
-  isDisabled,
-  style
-}) {
+function Command({ id, name, label, icon, align, state, size, isDisabled }) {
   let alignIcon = "'icon name'";
   let justifyCommand = "flex-start";
   let justifyIcon = "flex-start";
@@ -111,12 +100,10 @@ function Command({
   }
   switch (align) {
     case "center":
-      justifyCommand = "center";
       alignIcon = "'icon' 'name'";
       justifyIcon = "center";
       break;
     case "right":
-      justifyCommand = "flex-end";
       alignIcon = "'name icon'";
       break;
     default:
@@ -164,12 +151,11 @@ Command.propTypes = {
   align: PropTypes.string,
   state: PropTypes.string,
   size: PropTypes.string,
-  style: PropTypes.string
 };
 
 Command.defaultProps = {
   label: "Command",
-  icon: "user-circle"
+  icon: "user-circle",
 };
 
 export { Command as default };

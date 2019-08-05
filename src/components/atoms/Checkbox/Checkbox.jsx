@@ -47,7 +47,7 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
 `;
 
 const CheckboxLabel = styled.label`
-grid-area: label;
+  grid-area: label;
   user-select: none;
   font-family: Arial;
   font-size: 13px;
@@ -115,7 +115,11 @@ function Checkbox({ id, label, type, align, checked }) {
       break;
   }
   return (
-    <CheckboxContainer checkboxColor={checkboxColor} disabled={isDisabled} alignInput={alignInput}>
+    <CheckboxContainer
+      checkboxColor={checkboxColor}
+      disabled={isDisabled}
+      alignInput={alignInput}
+    >
       <CheckboxInput
         id={id}
         checked={checked}

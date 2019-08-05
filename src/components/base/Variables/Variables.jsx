@@ -93,14 +93,14 @@ export const shadows = {
 
 // Media Queries
 const viewport = {
-  small: "0px",
-  medium: "640px",
-  large: "1024px",
-  xlarge: "1440px",
-  xxlarge: "1920px",
+  small: "640px",
+  medium: "641px",
+  large: "1025px",
+  xlarge: "1441px",
+  xxlarge: "1921px",
 };
 export const screen = {
-  small: `only screen and (min-width: ${viewport.small})`,
+  small: `only screen and (max-width: ${viewport.small})`,
   medium: `only screen and (min-width: ${viewport.medium})`,
   // medium: `only screen and (min-width: ${
   //   viewport.medium
