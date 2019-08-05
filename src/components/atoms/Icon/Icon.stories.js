@@ -8,10 +8,10 @@ import {
   radios,
   select,
   number,
-  optionsKnob as options
+  optionsKnob as options,
 } from "@storybook/addon-knobs";
 import { Padding } from "helpers/Display";
-import Grid from "helpers/Grid";
+import Grid from "layout/Grid";
 import styled, { css } from "styled-components";
 import { colors, shadows } from "Variables";
 import Icon from "atoms/Icon";
@@ -21,16 +21,6 @@ import IconNotes from "./Icon.md";
 const Success = styled.span`
   color: ${colors.success};
   font-weight: bold;
-`;
-
-const IconGrid = styled(Grid)`
-  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
-  @media (min-width: 40.063em) {
-    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
-  }
-  @media (min-width: 64.063em) {
-    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
-  }
 `;
 
 const Title = styled.h2`
@@ -88,7 +78,7 @@ const IconLabel = styled.h6`
 `;
 const blockStyle = {
   padding: ".5em",
-  border: "1px solid lightgrey"
+  border: "1px solid lightgrey",
 };
 
 storiesOf("Atoms|Icon", module)
@@ -98,17 +88,17 @@ storiesOf("Atoms|Icon", module)
 storiesOf("Atoms|Icon", module)
   .addParameters({
     info: {
-      text: "Icon info goes here..."
+      text: "Icon info goes here...",
     },
     notes: {
-      markdown: IconNotes
-    }
+      markdown: IconNotes,
+    },
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
   .add("Documentation", withInfo()(() => <Icon icon="coffee" size="lg" />))
   .add("Icon Colors", () => (
-    <IconGrid style={{ fontSize: "2em" }}>
+    <Grid columns="3" style={{ fontSize: "2em" }}>
       <Title>
         <u>Icon Colors</u>
       </Title>
@@ -143,10 +133,10 @@ storiesOf("Atoms|Icon", module)
         <Icon icon="coffee" type="inverse" />
         <IconLabel style={{ color: "white" }}>inverse</IconLabel>
       </StaticIcon>
-    </IconGrid>
+    </Grid>
   ))
   .add("Icon Sizes", () => (
-    <IconGrid>
+    <Grid columns="3">
       <Title>
         <u>Icon Sizes</u>
       </Title>
@@ -210,10 +200,10 @@ storiesOf("Atoms|Icon", module)
         <Icon icon="coffee" size="10x" />
         <IconLabel>10x</IconLabel>
       </StaticIcon>
-    </IconGrid>
+    </Grid>
   ))
   .add("Pulled + Bordered Icons", () => (
-    <Grid col_1>
+    <Grid columns="1">
       <Title>
         <u>Pulled + Bordered</u>
       </Title>
@@ -276,7 +266,7 @@ storiesOf("Atoms|Icon", module)
     </Grid>
   ))
   .add("Animated Icons", () => (
-    <IconGrid style={{ fontSize: "2em" }}>
+    <Grid columns="4" style={{ fontSize: "2em" }}>
       <Title>
         <u>Animated Icons</u>
       </Title>
@@ -292,14 +282,14 @@ storiesOf("Atoms|Icon", module)
         <Icon icon="spinner" pulse={true} />
         <IconLabel>pulse</IconLabel>
       </StaticIcon>
-    </IconGrid>
+    </Grid>
   ));
 
 storiesOf("Blocks|IconBlock", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
   .add("Icon Block", () => (
-    <IconGrid>
+    <Grid columns="3">
       <Title>
         <u>Icon Block</u>
       </Title>
@@ -356,19 +346,14 @@ storiesOf("Blocks|IconBlock", module)
         <Icon icon="circle" type="info" />
         <Icon icon="circle" type="success" />
       </IconBlock>
-    </IconGrid>
-  ))
-  .add("Skeleton", () => (
-    <div>
-      <IconBlock />
-    </div>
+    </Grid>
   ));
 
 storiesOf("Application|Libraries/", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
   .add("Icon Library", () => (
-    <IconGrid style={{ fontSize: "2em" }}>
+    <Grid style={{ fontSize: "2em" }}>
       <Title>
         <u>Icon Library</u>
       </Title>
@@ -643,5 +628,5 @@ storiesOf("Application|Libraries/", module)
         <Icon icon={["fab", "windows"]} />
         <IconLabel>"fab", "windows"</IconLabel>
       </ActiveIcon>
-    </IconGrid>
+    </Grid>
   ));

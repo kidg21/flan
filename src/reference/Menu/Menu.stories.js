@@ -1,7 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
-import Grid from "helpers/Grid";
+import Grid from "display/Grid";
 import { Padding } from "helpers/Display";
 import DropdownMenu from "./EditMenu";
 import WhiteMenu from "./TrialMenu";
@@ -11,7 +11,7 @@ const data = [
   { id: "b", name: "Filter" },
   { id: "c", name: "Something" },
   { id: "d", name: "Filter" },
-  { id: "e", name: "Layer" }
+  { id: "e", name: "Layer" },
 ];
 
 storiesOf("Blocks|Menu", module)
@@ -23,7 +23,7 @@ storiesOf("Blocks|Menu", module)
   ))
   .add("white menu", () => <WhiteMenu data={data} position="bottomRight" />)
   .add("Directions", () => (
-    <Grid col_4>
+    <Grid>
       <div>
         <span>Bottom Right</span>
         <DropdownMenu data={data} position="bottomRight" />

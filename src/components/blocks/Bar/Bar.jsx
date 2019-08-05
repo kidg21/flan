@@ -1,24 +1,22 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-
-const BarLayout = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  padding: 0.75em;
-`;
+import { Piece } from "layout/Card";
 
 const Slot = styled.div`
   display: flex;
   flex: auto;
   justify-content: ${props => props.justifyContent || "space-between"};
   text-align: ${props => props.textAlign || ""};
-  margin: ${props => props.slotMargin || ""};
+`;
+
+const BarLayout = styled(Piece)`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 0.75em;
 `;
 
 function Bar({ id, left, center, right, onClick }) {
@@ -31,7 +29,11 @@ function Bar({ id, left, center, right, onClick }) {
         </Slot>
       ) : null}
       {right ? (
-        <Slot justifyContent={"flex-end"} textAlign={"right"} slotMargin={"0 0 0 0.5em"}>
+        <Slot
+          justifyContent={"flex-end"}
+          textAlign={"right"}
+          slotMargin={"0 0 0 0.5em"}
+        >
           {right}
         </Slot>
       ) : null}
