@@ -131,6 +131,14 @@ storiesOf("Atoms|Checkbox", module)
       <Checkbox id="disabled" label="Disabled" type="disabled" />
     </CheckboxGroup>
   ))
+  .add("Checkbox (Alignment)", () => (
+    <CheckboxGroup>
+      <Checkbox {...cbox_1} align="right" />
+      <Checkbox {...cbox_2} align="right" />
+      <Checkbox {...cbox_3} align="right" />
+      <Checkbox {...cbox_4} align="right" />
+    </CheckboxGroup>
+  ))
   .add("Checkbox Group (Responsive)", () => (
     <CheckboxGroup>
       <Checkbox {...cbox_1} />

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
-import NavigationPanelHeader from "elements/NavigationPanelHeader";
+import NavigationPanelHeader from "elements/PanelHeaders/NavigationPanelHeader";
 import Panel, { PanelSection } from "layout/Panel";
 import DataRange from "blocks/DataRange";
 import Form, {
@@ -263,7 +263,7 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
         </Panel>
       );
-    })
+    }),
   )
 
   .add("Property- Characteristics", () =>
