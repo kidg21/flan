@@ -2,7 +2,14 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
 import { withInfo } from "@storybook/addon-info";
-import { withKnobs, text, boolean, radios, select, number } from "@storybook/addon-knobs";
+import {
+  withKnobs,
+  text,
+  boolean,
+  radios,
+  select,
+  number
+} from "@storybook/addon-knobs";
 import Panel, { PanelSection } from "../../layout/Panel/Panel";
 import Form, { Section, SectionName } from "../../layout/Form/Form";
 import TextInput from "atoms/TextInput";
@@ -12,11 +19,11 @@ storiesOf("Atoms|TextInput", module)
   .addParameters({
     info: {
       text:
-        "TextInputs allow users to enter text into a UI. They typically appear in forms and dialogs",
+        "TextInputs allow users to enter text into a UI. They typically appear in forms and dialogs"
     },
     notes: {
-      markdown: TextInputNotes,
-    },
+      markdown: TextInputNotes
+    }
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
@@ -28,8 +35,9 @@ storiesOf("Atoms|TextInput", module)
         placeholder="I am just keeping things warm"
         helpText="This help text has been passed through a prop!"
       />
-    )),
+    ))
   )
+  .add("Skeleton", () => <TextInput />)
   .add(
     "Knobs",
     withInfo()(() => (
@@ -39,26 +47,29 @@ storiesOf("Atoms|TextInput", module)
           {
             Text: "text",
             Number: "number",
-            Textarea: "textarea",
+            Textarea: "textarea"
           },
-          "text",
+          "text"
         )}
         inputLabel={text("TextInput Label", "TextInput Label")}
         isRequired={boolean("Required", false)}
         placeholder={text("Placeholder Text", "I am just keeping things warm")}
         helpText={text("Help Text", "Have you been helped yet?")}
-        errorMessage={text("Error Text", "Stay with my, buddy...we can fix this!")}
+        errorMessage={text(
+          "Error Text",
+          "Stay with my, buddy...we can fix this!"
+        )}
         state={radios(
           "State",
           {
             Standard: "default",
             Error: "error",
-            Disabled: "disabled",
+            Disabled: "disabled"
           },
-          "default",
+          "default"
         )}
       />
-    )),
+    ))
   );
 // TextInput ( The TextInput Family )
 storiesOf("Atoms|TextInput", module).add("The TextInput Family", props => (

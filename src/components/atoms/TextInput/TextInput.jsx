@@ -5,10 +5,10 @@ import { colors, shadows } from "Variables";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
 
 const TextInputContainer = styled.div`
-  display: grid;
-  grid-gap: 0.35rem;
-  align-content: flex-start;
-  color: ${props => props.inputTextColor || ""};
+	display: grid;
+	grid-gap: 0.35rem;
+	align-content: flex-start;
+	color: ${props => props.inputTextColor || ""};
 `;
 
 const Input = styled.input`
@@ -35,109 +35,107 @@ const Input = styled.input`
 `;
 
 function TextInput({
-  id,
-  type,
-  as,
-  pattern,
-  value,
-  inputLabel,
-  isRequired,
-  placeholder,
-  helpText,
-  errorText,
-  state,
-  isDisabled,
-  children,
-  style
+	id,
+	type,
+	as,
+	pattern,
+	value,
+	inputLabel,
+	isRequired,
+	placeholder,
+	helpText,
+	errorText,
+	state,
+	isDisabled,
+	children,
+	style,
 }) {
-  let inputTextColor;
-  let inputFillColor;
-  let inputBorderColor;
-  let inputBorderColorHover;
-  let inputCaretColor;
-  let placeholderColor;
-  let inputSelectColor;
-  switch (type) {
-    case "textarea":
-      as = "textarea";
-      break;
-    default:
-      break;
-  }
-  switch (state) {
-    case "error":
-      inputTextColor = colors.alert;
-      inputFillColor = colors.alert_tint;
-      inputBorderColor = colors.alert_light;
-      inputBorderColorHover = colors.alert;
-      inputCaretColor = colors.alert;
-      placeholderColor = colors.alert_light;
-      inputSelectColor = colors.alert;
-      break;
-    case "search":
-        inputBorderColor = colors.grey_20;
-        inputBorderColorHover = colors.grey_20;
-        placeholderColor = colors.grey_40;
-        inputSelectColor = colors.anchor;
-        break;
-    case "disabled":
-      inputTextColor = colors.grey_40;
-      inputFillColor = colors.grey_20;
-      inputBorderColor = colors.grey_20;
-      placeholderColor = colors.grey_40;
-      isDisabled = true;
-      break;
-    default:
-      inputBorderColor = colors.grey_20;
-      inputSelectColor = colors.success;
-      break;
-  }
-  return (
-    <TextInputContainer
-      id={id}
-      isRequired={isRequired}
-      disabled={isDisabled}
-      inputTextColor={inputTextColor}
-      style={style}
-    >
-      {inputLabel ? (
-        <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
-      ) : null}
-      <Input
-        id={id} // input attribute
-        name={id} // input attribute
-        type={type} // input attribute
-        as={as}
-        value={value} // input attribute
-        placeholder={placeholder} // input attribute
-        pattern={pattern} // input attribute
-        disabled={isDisabled} // input attribute
-        inputFillColor={inputFillColor}
-        inputBorderColor={inputBorderColor}
-        inputBorderColorHover={inputBorderColorHover}
-        placeholderColor={placeholderColor}
-        inputCaretColor={inputCaretColor}
-        inputSelectColor={inputSelectColor}
-      />
-      {helpText ? <HelpText helpText={helpText} /> : null}
-      {errorText ? <ErrorText errorText={errorText} /> : null}
-      {children}
-    </TextInputContainer>
-  );
+	let inputTextColor;
+	let inputFillColor;
+	let inputBorderColor;
+	let inputBorderColorHover;
+	let inputCaretColor;
+	let placeholderColor;
+	let inputSelectColor;
+	switch (type) {
+		case "textarea":
+			as = "textarea";
+			break;
+		default:
+			break;
+	}
+	switch (state) {
+		case "error":
+			inputTextColor = colors.alert;
+			inputFillColor = colors.alert_tint;
+			inputBorderColor = colors.alert_light;
+			inputBorderColorHover = colors.alert;
+			inputCaretColor = colors.alert;
+			placeholderColor = colors.alert_light;
+			inputSelectColor = colors.alert;
+			break;
+		case "search":
+			inputBorderColor = colors.grey_20;
+			inputBorderColorHover = colors.grey_20;
+			placeholderColor = colors.grey_40;
+			inputSelectColor = colors.anchor;
+			break;
+		case "disabled":
+			inputTextColor = colors.grey_40;
+			inputFillColor = colors.grey_20;
+			inputBorderColor = colors.grey_20;
+			placeholderColor = colors.grey_40;
+			isDisabled = true;
+			break;
+		default:
+			inputBorderColor = colors.grey_20;
+			inputSelectColor = colors.success;
+			break;
+	}
+	return (
+		<TextInputContainer
+			id={id}
+			isRequired={isRequired}
+			disabled={isDisabled}
+			inputTextColor={inputTextColor}
+			style={style}
+		>
+			{inputLabel ? <InputLabel inputLabel={inputLabel} isRequired={isRequired} /> : null}
+			<Input
+				id={id} // input attribute
+				name={id} // input attribute
+				type={type} // input attribute
+				as={as}
+				value={value} // input attribute
+				placeholder={placeholder} // input attribute
+				pattern={pattern} // input attribute
+				disabled={isDisabled} // input attribute
+				inputFillColor={inputFillColor}
+				inputBorderColor={inputBorderColor}
+				inputBorderColorHover={inputBorderColorHover}
+				placeholderColor={placeholderColor}
+				inputCaretColor={inputCaretColor}
+				inputSelectColor={inputSelectColor}
+			/>
+			{helpText ? <HelpText helpText={helpText} /> : null}
+			{errorText ? <ErrorText errorText={errorText} /> : null}
+			{children}
+		</TextInputContainer>
+	);
 }
 
 TextInput.propTypes = {
-  id: PropTypes.string,
-  type: PropTypes.string,
-  pattern: PropTypes.string,
-  value: PropTypes.string,
-  inputLabel: PropTypes.string,
-  isRequired: PropTypes.bool,
-  placeholder: PropTypes.string,
-  helpText: PropTypes.string,
-  errorText: PropTypes.string,
-  state: PropTypes.string,
-  style: PropTypes.string
+	id: PropTypes.string,
+	type: PropTypes.string,
+	pattern: PropTypes.string,
+	value: PropTypes.string,
+	inputLabel: PropTypes.string,
+	isRequired: PropTypes.bool,
+	placeholder: PropTypes.string,
+	helpText: PropTypes.string,
+	errorText: PropTypes.string,
+	state: PropTypes.string,
+	style: PropTypes.string,
 };
 
 export { TextInput as default };

@@ -55,6 +55,7 @@ storiesOf("Atoms|SelectMenu", module)
       />
     ))
   )
+  .add("Skeleton", () => <SelectMenu />)
 
   // Single-Select (Standard)
   .add("Single-Select ( Standard )", () => (

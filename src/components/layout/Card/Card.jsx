@@ -5,6 +5,7 @@ import Grid from "layout/Grid";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 import PropTypes from "prop-types";
 
+
 const CardPiece = styled.div`
   display: flex;
   flex-direction: column;

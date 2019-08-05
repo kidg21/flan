@@ -1,6 +1,5 @@
 import { css } from "styled-components";
 
-
 // Codes for color palette
 export const colors = {
   white: "hsl(0, 100%, 100%)",
@@ -33,16 +32,15 @@ export const colors = {
   government: "hsl(166, 100%, 28%)",
   insurance: "hsl(89, 39%, 50%)",
   homeBuilding: "hsl(43, 65%, 49%)",
-  realEstate: "hsl(12, 61%, 50%)"
+  realEstate: "hsl(12, 61%, 50%)",
 };
 
-
 export const Darken = css`
-  filter: brightness(85%)
+  filter: brightness(85%);
 `;
 
 export const Lighten = css`
-  filter: brightness(105%)
+  filter: brightness(105%);
 `;
 
 // Typefaces
@@ -51,12 +49,12 @@ export const fonts = {
   // headline: "Lato, sans-serif",
   body: "Muli, Arial, sans-serif",
   // body: "Lato, sans-serif",
-  data: "Muli, Arial, sans-serif"
+  data: "Muli, Arial, sans-serif",
 };
 
 // Sizes for typography scale
 export const fontSize = {
-  base: "14px"
+  base: "14px",
   // paragraph: '1rem',
   // h1: '2.75rem',
   // h2: '2.3125rem',
@@ -77,32 +75,30 @@ export const fontSize = {
 export const shadows = {
   cardShadow:
     "drop-shadow(0 0 1px hsl(34, 5%, 72%)) drop-shadow(0.25rem 0.25rem 0.25rem hsla(34, 5%, 58%, 0.333333));",
-  dropShadow:
-    "hsl(34, 5%, 36%) 0rem 0rem 1px, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem;",
+  dropShadow: "hsl(34, 5%, 36%) 0rem 0rem 1px, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem;",
   panelSectionShadow:
     "hsl(34, 5%, 88%)  0rem 0rem 1px, hsla(34, 5%, 92%, 0.333333) 0 0rem 0.5rem 0.25rem;",
   lightBorderShadow:
     "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem",
-  lightBorderInner:
-    "hsl(34, 5%, 72%) -1px -1px 0 0 inset, hsl(34, 5%, 72%) 1px 1px 0 0 inset",
+  lightBorderInner: "hsl(34, 5%, 72%) -1px -1px 0 0 inset, hsl(34, 5%, 72%) 1px 1px 0 0 inset",
   border20: "hsl(34, 5%, 95%) 0px 0px 0px 1px",
   border40: "hsl(34, 5%, 88%) 0px 0px 0px 1px",
   checkedShadow:
     "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
   radioShadow:
-    "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsl(34, 5%, 95%) -1px 1px 0 0 inset, hsl(34, 5%, 95%) 1px -1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px"
+    "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsl(34, 5%, 95%) -1px 1px 0 0 inset, hsl(34, 5%, 95%) 1px -1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
 };
 
 // Media Queries
 const viewport = {
-  small: "0px",
-  medium: "640px",
-  large: "1024px",
-  xlarge: "1440px",
-  xxlarge: "1920px"
+  small: "640px",
+  medium: "641px",
+  large: "1025px",
+  xlarge: "1441px",
+  xxlarge: "1921px",
 };
 export const screen = {
-  small: `only screen and (min-width: ${viewport.small})`,
+  small: `only screen and (max-width: ${viewport.small})`,
   medium: `only screen and (min-width: ${viewport.medium})`,
   // medium: `only screen and (min-width: ${
   //   viewport.medium
@@ -112,5 +108,5 @@ export const screen = {
   // }) and (orientation: landscape)`,
   large: `only screen and (min-width: ${viewport.large})`,
   xlarge: `only screen and (min-width: ${viewport.xlarge})`,
-  xxlarge: `only screen and (min-width: ${viewport.xxlarge})`
+  xxlarge: `only screen and (min-width: ${viewport.xxlarge})`,
 };

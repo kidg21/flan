@@ -36,11 +36,6 @@ const Title = styled.h3`
   line-height: normal;
   letter-spacing: 2px;
   margin: 0;
-  &:empty {
-    &:before {
-      content: "{ Title }";
-    }
-  }
 `;
 
 const CenteredSection = styled.div`
@@ -59,12 +54,6 @@ const Section = styled.section`
   flex: auto;
   margin-bottom: 1.5rem;
   /* Prototype Content - displays when a Form is empty */
-  &:empty {
-    &:before {
-      ${PlaceholderText}
-      content: "{ Section } \00000A ''";
-    }
-  }
 `;
 
 const SectionName = styled.h5`
@@ -72,11 +61,6 @@ const SectionName = styled.h5`
   font-weight: 700;
   // letter-spacing: 1px;
   margin-bottom: 0;
-  &:empty {
-    &:before {
-      content: "{ SectionName }";
-    }
-  }
 `;
 const Label = styled.label`
   display: flex;
