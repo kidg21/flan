@@ -48,6 +48,7 @@ storiesOf("Atoms|Checkbox", module)
   .addDecorator(Padding)
   .addDecorator(withKnobs)
   .add("Documentation", withInfo()(() => <Checkbox {...cbox_1} />))
+  .add("Skeleton", () => <Checkbox id="default" />)
   .add("Knobs", () => (
     <CheckboxGroup
       columns={options(
@@ -128,6 +129,14 @@ storiesOf("Atoms|Checkbox", module)
       <Checkbox id="selected" label="Selected" checked />
       <Checkbox id="error" label="Error" type="error" />
       <Checkbox id="disabled" label="Disabled" type="disabled" />
+    </CheckboxGroup>
+  ))
+  .add("Checkbox (Alignment)", () => (
+    <CheckboxGroup>
+      <Checkbox {...cbox_1} align="right" />
+      <Checkbox {...cbox_2} align="right" />
+      <Checkbox {...cbox_3} align="right" />
+      <Checkbox {...cbox_4} align="right" />
     </CheckboxGroup>
   ))
   .add("Checkbox Group (Responsive)", () => (

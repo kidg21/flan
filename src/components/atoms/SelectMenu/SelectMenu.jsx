@@ -4,12 +4,13 @@ import PropTypes from "prop-types";
 import { fonts, colors, shadows, Lighten, Darken } from "Variables";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
 import Select from "react-select";
+import { Skeleton } from "helpers/Skeleton.jsx";
 
 const selectStyles = {
   // Wrapper
   container: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
-    fontFamily: fonts.data
+    fontFamily: fonts.data,
   }),
   // Toggle UI
   control: (styles, { isDisabled, isFocused, isSelected }) => ({
@@ -28,60 +29,60 @@ const selectStyles = {
     minHeight: "2.75rem",
     cursor: isDisabled ? "not-allowed" : "pointer",
     ":hover": {
-      borderColor: colors.grey_40
+      borderColor: colors.grey_40,
     },
-    boxShadow: "none"
+    boxShadow: "none",
   }),
   placeholder: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
     fontFamily: fonts.data,
     color: isFocused ? colors.grey_60 : colors.grey_60,
     letterSpacing: ".5px",
-    fontWeight: 400
+    fontWeight: 400,
   }),
   // selected option
   singleValue: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
     fontFamily: fonts.data,
     opacity: isDisabled ? 0.5 : 1,
-    transition: "opacity 300ms"
+    transition: "opacity 300ms",
   }),
   // 'X' to clear current selection
   clearIndicator: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
-    color: isFocused ? colors.grey_40 : colors.grey_20
+    color: isFocused ? colors.grey_40 : colors.grey_20,
   }),
   // pipe
   indicatorSeparator: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
-    backgroundColor: isDisabled ? colors.grey_40 : colors.grey_20
+    backgroundColor: isDisabled ? colors.grey_40 : colors.grey_20,
   }),
   // down arrow
   dropdownIndicator: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
-    color: isFocused ? colors.grey_60 : colors.grey_60
+    color: isFocused ? colors.grey_60 : colors.grey_60,
   }),
   // multi element background
   multiValue: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
     fontFamily: fonts.data,
     fontWeight: "normal",
-    letterSpacing: "1px"
+    letterSpacing: "1px",
   }),
   // multi element label background
   multiValueLabel: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
     fontFamily: fonts.data,
-    color: colors.grey_80
+    color: colors.grey_80,
   }),
   // multi element 'x' background
   multiValueRemove: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
     ":hover": {
       backgroundColor: colors.grey_40,
-      color: colors.grey_80
+      color: colors.grey_80,
     },
-    color: colors.grey_60
+    color: colors.grey_60,
   }),
   // options menu
   menu: (styles, { isDisabled, isFocused, isSelected }) => ({
@@ -90,7 +91,7 @@ const selectStyles = {
     textAlign: "left",
     letterSpacing: ".5px",
     margin: ".25rem 0",
-    boxShadow: shadows.dropShadow
+    boxShadow: shadows.dropShadow,
   }),
   // Menu Options
   option: (styles, { isDisabled, isFocused, isSelected }) => {
@@ -104,9 +105,9 @@ const selectStyles = {
         : isFocused
         ? colors.success
         : colors.grey_80,
-      cursor: isDisabled ? "not-allowed" : "pointer"
+      cursor: isDisabled ? "not-allowed" : "pointer",
     };
-  }
+  },
 };
 
 const SelectMenuContainer = styled.div`
@@ -123,9 +124,16 @@ const SelectMenuContainer = styled.div`
       : "repeat(1, 1fr)"};
   grid-gap: 0.35rem;
   align-content: flex-start;
-  /* color: ${props => (props.disabled ? colors.grey_40 : "")}; */
   color: ${props =>
     props.error ? colors.alert : props.disabled ? colors.grey_40 : ""};
+  width: 100%;
+  &:empty {
+    &:before {
+      ${Skeleton};
+      height: 1.3em;
+      width: 10rem;
+    }
+  }
 `;
 function SelectMenu({
   id,
@@ -143,7 +151,7 @@ function SelectMenu({
   multiSelect,
   isLoading,
   isRtl,
-  errorText
+  errorText,
 }) {
   return (
     <SelectMenuContainer
@@ -152,8 +160,9 @@ function SelectMenu({
       error={error}
       displayInline={displayInline}
     >
-      {/* Input Label (required) */}
-      <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
+      {inputLabel ? (
+        <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
+      ) : null}
       <Select
         id={id} // input attribute
         name={name} // input attribute
@@ -180,7 +189,7 @@ SelectMenu.propTypes = {
   name: PropTypes.string,
   placeholder: PropTypes.string,
   options: PropTypes.array,
-  inputLabel: PropTypes.string.isRequired,
+  inputLabel: PropTypes.string,
   isRequired: PropTypes.bool,
   disabled: PropTypes.bool,
   multiSelect: PropTypes.bool,
@@ -189,7 +198,7 @@ SelectMenu.propTypes = {
   isSearchable: PropTypes.bool,
   isLoading: PropTypes.bool,
   displayInline: PropTypes.bool,
-  isRtl: PropTypes.bool
+  isRtl: PropTypes.bool,
 };
 
 export default SelectMenu;

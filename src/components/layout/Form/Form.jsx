@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 import { fonts, colors, shadows } from "Variables";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
-import Grid from "helpers/Grid.jsx";
+import Grid from "layout/Grid";
 
 const Form = styled.form`
   display: grid;
@@ -11,7 +11,8 @@ const Form = styled.form`
   flex: auto;
   align-content: flex-start;
   padding: 1rem 1.5rem;
-  background-color: ${props => (props.bg_light ? colors.grey_light : colors.white)};
+  background-color: ${props =>
+    props.bg_light ? colors.grey_light : colors.white};
   ${props =>
     props.dark &&
     css`
@@ -35,11 +36,6 @@ const Title = styled.h3`
   line-height: normal;
   letter-spacing: 2px;
   margin: 0;
-  &:empty {
-    &:before {
-      content: "{ Title }";
-    }
-  }
 `;
 
 const CenteredSection = styled.div`
@@ -58,12 +54,6 @@ const Section = styled.section`
   flex: auto;
   margin-bottom: 1.5rem;
   /* Prototype Content - displays when a Form is empty */
-  &:empty {
-    &:before {
-      ${PlaceholderText}
-      content: "{ Section } \00000A ''";
-    }
-  }
 `;
 
 const SectionName = styled.h5`
@@ -71,11 +61,6 @@ const SectionName = styled.h5`
   font-weight: 700;
   // letter-spacing: 1px;
   margin-bottom: 0;
-  &:empty {
-    &:before {
-      content: "{ SectionName }";
-    }
-  }
 `;
 const Label = styled.label`
   display: flex;
@@ -97,7 +82,9 @@ const Label = styled.label`
     color: ${colors.alert};
   }
 `;
-const InputLabel = props => <Label isRequired={props.isRequired}>{props.inputLabel}</Label>;
+const InputLabel = props => (
+  <Label isRequired={props.isRequired}>{props.inputLabel}</Label>
+);
 
 const Help = styled.label`
   grid-column: 1 / -1;

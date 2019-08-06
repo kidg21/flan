@@ -4,6 +4,7 @@ import { colors } from "Variables";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 
+
 const buttonHover = css`
   filter: brightness(85%) contrast(150%);
 `;
@@ -29,17 +30,20 @@ const StyledButton = styled.button`
   overflow: hidden;
   cursor: pointer;
   transition: all 0.15s ease;
+
   &:hover {
     ${buttonHover}
   }
   &:active {
     ${buttonActive}
   }
+  
   &[disabled] {
     cursor: not-allowed;
     pointer-events: none;
     user-select: none;
   }
+  
 `;
 
 const ButtonLabel = styled.label`
@@ -48,6 +52,7 @@ const ButtonLabel = styled.label`
   font-weight: inherit;
   user-select: none;
   cursor: pointer;
+
 `;
 
 const ButtonIcon = styled(Icon)`

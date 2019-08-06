@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
-import Icon from "atoms/Icon";
 import IconBlock from "blocks/IconBlock";
 import Bar from "blocks/Bar";
-import Grid from "helpers/Grid";
 import Card, { Piece } from "layout/Card";
 import Title from "base/Typography";
 

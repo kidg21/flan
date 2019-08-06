@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import styledNormalize from "styled-normalize";
+import {Skeleton} from "helpers/Skeleton.jsx";
 // Import variables
 import { colors, fonts, fontSize } from "Variables";
 // Import Fonts
@@ -14,12 +15,12 @@ const GlobalStyles = createGlobalStyle`
 
     /* Import font resources */
     ${
-  "" /* @font-face {
+      "" /* @font-face {
         font-family: Lato;
         src: local("Lato");
         src: url(${Lato_700});
     } */
-}
+    }
 
     /* Document resets */
     html {
@@ -76,11 +77,18 @@ const GlobalStyles = createGlobalStyle`
       ${""}
       text-decoration: none;
       cursor: pointer;
-
+      &:empty {
+        &:before {
+          ${Skeleton};
+          height: 1.3em;
+          width: 10rem;
+        }
+      }
       &:hover,
       &:focus {
         color: ${colors.anchor_light};
       }
+
       ${"" /* &:focus {
         ${colors.grey_60};
         } */}
@@ -91,7 +99,7 @@ const GlobalStyles = createGlobalStyle`
     h1, h2, h3, h4, h5, h6, p {
         font-style: normal;
         color: inherit;
-        letter-spacing: 0.015em;
+        letter-spacing: 0.025em;
     }
     p {
         font-family: inherit;
@@ -109,34 +117,85 @@ const GlobalStyles = createGlobalStyle`
         ${""}
         ${""}
         line-height: 2.4rem;
+        &:empty {
+            &:before {
+              ${Skeleton};
+              height: 1.3em;
+              width: 5em;
+            }
+          }
     }
     h2 {
         font-size: 1.5rem;
         ${""}
         line-height: 2rem;
+        &:empty {
+            &:before {
+              ${Skeleton};
+              height: 1.3em;
+              width: 10rem;
+            }
+          }
     }
     h3 {
         font-size: 1.3rem;
         ${""}
         line-height: 1.8rem;
+        &:empty {
+            &:before {
+              ${Skeleton};
+              height: 1.3em;
+              width: 10rem;
+            }
+          }
     }
     h4 {
         font-size: 1rem;
         ${""}
         line-height: 1.4rem;
+        &:empty {
+            &:before {
+              ${Skeleton};
+              height: 1.4rem;
+              width: 40vw;
+            }
+          }
     }
     h5 {
-        font-size: 0.9rem;
-        ${""}
-        line-height: 1.3rem;
+        font-size: 1rem;
+        font-family: ${fonts.headline}; /* Muli */
+        font-weight: 500;
+        margin: 0 0 .5rem;
+        line-height: 1.4rem;
+        &:empty {
+            &:before {
+              ${Skeleton};
+              height: 1.5em;
+              width: 10rem;
+            }
+          }
     }
     h6 {
         font-size: 0.8rem;
         ${""}
         line-height: 1.2rem;
+        &:empty {
+            &:before {
+              ${Skeleton};
+              height: 1.3em;
+              width: 10rem;
+            }
+          }
     }
     img, object {
         ${""}
+        &:empty {
+            &:before {
+              ${Skeleton};
+              height: 2em;
+              width: 2rem;
+            }
+          }
     }
     code {
         font-family: ${fonts.data};
@@ -156,7 +215,15 @@ const GlobalStyles = createGlobalStyle`
 /* Placeholder */
     ::placeholder {
         color: ${colors.grey_60};
+        &:empty {
+          &:before {
+            ${Skeleton};
+            height: 1.3em;
+            width: 10rem;
+          }
+        }
     }
+
     ::selection {
         color: ${colors.white};
         background-color: ${colors.anchor};
@@ -165,12 +232,23 @@ const GlobalStyles = createGlobalStyle`
     label {
         font-family: ${fonts.data};
         font-size: smaller;
+          &:empty {
+            &:before {
+              ${Skeleton};
+              height: 1.3em;
+              width: 5rem;
+            }
+          }
     }
 /* Buttons */
     button {
-        &:focus {
-            outline: none;
+      &:empty {
+        &:before {
+          ${Skeleton};
+          height: 2em;
+          width: 8rem;
         }
+      }
     }
 /* Inputs */
     input:not([type]),
@@ -200,6 +278,7 @@ const GlobalStyles = createGlobalStyle`
         font-size: 12px;
         transition: border-color 0.1s linear, background 0.1s linear;
         appearance: none;
+        
         &:focus {
             outline: none;
         }
