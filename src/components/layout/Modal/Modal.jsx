@@ -194,27 +194,25 @@ function Modal({
       );
       break;
     case "image":
-      modalType =
-        ((justifyContent = "center"),
-        (
-          <Fragment>
-            <ModalBG onClick={onClose} opacity={opacity} />
-            <Image src={image} />
-            <Close onClick={onClose}>
-              <Icon icon="times" size="lg" inverse fixedWidth />
-            </Close>
-          </Fragment>
-        ));
+      justifyContent = "center";
+      modalType = (
+        <Fragment>
+          <ModalBG onClick={onClose} opacity={opacity} />
+          <Image src={image} />
+          <Close onClick={onClose}>
+            <Icon icon="times" size="lg" inverse fixedWidth />
+          </Close>
+        </Fragment>
+      );
       break;
     default:
-      modalType =
-        ((justifyContent = "center"),
-        (
-          <Fragment>
-            <ModalBG onClick={onClose} opacity={opacity} />
-            <ContentWrapper>{children}</ContentWrapper>
-          </Fragment>
-        ));
+      justifyContent = "center";
+      modalType = (
+        <Fragment>
+          <ModalBG onClick={onClose} opacity={opacity} />
+          <ContentWrapper>{children}</ContentWrapper>
+        </Fragment>
+      );
       break;
   }
   switch (align) {
