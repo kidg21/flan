@@ -20,22 +20,6 @@ const disabledblockStyle = {
   lineHeight: "normal",
 };
 
-const Icons = (
-  <IconBlock style={blockStyle}>
-    <Icon icon={["far", "expand-arrows"]} />
-    <Icon icon={["far", "share"]} />
-    <Icon icon={["far", "filter"]} />
-  </IconBlock>
-);
-
-const DisabledIcons = (
-  <IconBlock style={disabledblockStyle}>
-    <Icon icon={["far", "expand-arrows"]} />
-    <Icon icon={["far", "share"]} />
-    <Icon icon={["far", "filter"]} />
-  </IconBlock>
-);
-
 const SwitchContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
@@ -46,7 +30,7 @@ const SwitchContainer = styled.div`
   }
 `;
 
-function LayerCardBar({ id, title, switchProps, disabled }) {
+function LayerCardBar({ id, title, icons, switchProps, disabled }) {
   return (
     <Piece id={id} title={title} disabled={disabled}>
       {disabled ? (
@@ -58,7 +42,7 @@ function LayerCardBar({ id, title, switchProps, disabled }) {
               <Title title={title} weight="normal" />
             </SwitchContainer>
           }
-          right={DisabledIcons}
+          right={<IconBlock style={disabledblockStyle}>{icons}</IconBlock>}
         />
       ) : (
         <Bar
@@ -69,7 +53,7 @@ function LayerCardBar({ id, title, switchProps, disabled }) {
               <Title title={title} weight="normal" />
             </SwitchContainer>
           }
-          right={Icons}
+          right={<IconBlock style={blockStyle}>{icons}</IconBlock>}
         />
       )}
     </Piece>
@@ -79,5 +63,6 @@ LayerCardBar.propTypes = {
   id: PropTypes.string,
   title: PropTypes.any.isRequired,
   disabled: PropTypes.bool,
+  icons: PropTypes.node,
 };
 export default LayerCardBar;
