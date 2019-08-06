@@ -25,9 +25,6 @@ const SwitchContainer = styled.div`
   grid-template-columns: auto 1fr;
   grid-gap: 1rem;
   filter: ${props => (props.disabled ? "brightness(130%)" : "")};
-  &:last-child {
-    padding-left: 1rem;
-  }
 `;
 
 function LayerCardBar({ id, title, icons, switchProps, disabled }) {
