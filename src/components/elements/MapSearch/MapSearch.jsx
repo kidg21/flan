@@ -15,7 +15,7 @@ const SearchContainer = styled.div`
 	width: 28rem;
 	flex-direction: column;
 	position: absolute;
-
+	z-index: 9001;
 	${IconWrapper} {
 		position: absolute;
 		right: 0;
