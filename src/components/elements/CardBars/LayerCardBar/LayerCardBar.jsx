@@ -9,6 +9,10 @@ import Title from "base/Typography";
 
 import Switch from "atoms/Switch";
 
+const LayerSwitch = styled(Switch)`
+padding-right: 1em;
+`;
+
 const blockStyle = {
 	filter: "brightness(150%)",
 	lineHeight: "normal",
@@ -35,9 +39,6 @@ const DisabledIcons = (
 	</IconBlock>
 );
 
-const Space = {
-	paddingLeft: "1em",
-};
 
 const SwitchContainer = styled.div`
 	display: flex;
@@ -53,7 +54,7 @@ function LayerCardBar({ id, title, switchProps, disabled }) {
 					left={
 						<SwitchContainer disabled="true">
 							{" "}
-							<Switch /> <span style={Space} />{" "}
+							<LayerSwitch /> 
 							<Title title={title} weight="normal" />
 						</SwitchContainer>
 					}
@@ -64,7 +65,7 @@ function LayerCardBar({ id, title, switchProps, disabled }) {
 					left={
 						<SwitchContainer>
 							{" "}
-							<Switch {...switchProps} /> <span style={Space} />{" "}
+							<LayerSwitch {...switchProps} /> 
 							<Title title={title} weight="normal" />
 						</SwitchContainer>
 					}
