@@ -18,33 +18,20 @@ const CountContainer = styled.div`
 `;
 
 const StyledText = styled.h4`
-  color: ${props => props.textColor || "inherit"};
+  color: ${props => props.textColor || colors.grey_80};
+  font-size: ${props => props.textSize || ""};
   font-weight: ${props => props.textWeight || ""};
-  text-align: ${props => props.textAlign || ""};
   margin: 0;
   font-style: ${props => props.textStyle || ""};
   text-decoration: ${props => props.textDecoration || ""};
 `;
 
-function Title({
-  id,
-  title,
-  type,
-  order,
-  style,
-  weight,
-  count,
-  size,
-  align,
-  className,
-}) {
+function Title({ id, title, type, style, weight, count, size }) {
   let textColor;
   let textWeight;
-  let textAlign;
+  let textSize;
   let textStyle;
   let textDecoration;
-  let flexDirection;
-  let as;
   switch (type) {
     case "info":
       textColor = colors.anchor;
@@ -58,58 +45,39 @@ function Title({
     case "alert":
       textColor = colors.alert;
       break;
+    case "inherit":
+      textColor = "inherit";
+      break;
     case "inverse":
       textColor = colors.white;
       break;
     default:
       break;
   }
+
   switch (size) {
-    case "tiny":
-      as = "h6";
-      break;
     case "small":
-      as = "h5";
+      textSize = "0.75rem";
+      break;
+    case "normal":
+      textSize = "0.875rem";
       break;
     case "large":
-      as = "h3";
+      textSize = "1.25rem";
       break;
     case "xlarge":
-      as = "h2";
-      break;
-    case "xxlarge":
-      as = "h1";
-      break;
-    default:
-      as = "h4";
-      break;
-  }
-  switch (align) {
-    case "center":
-      textAlign = "center";
-      break;
-    case "right":
-      textAlign = "right";
+      textSize = "1.5rem";
       break;
     default:
       break;
   }
+
   switch (style) {
     case "underline":
       textDecoration = "underline";
       break;
     case "italic":
       textStyle = "italic";
-      break;
-    default:
-      break;
-  }
-  switch (order) {
-    case "before":
-      flexDirection = "row";
-      break;
-    case "after":
-      flexDirection = "row-reverse";
       break;
     default:
       break;
@@ -130,13 +98,11 @@ function Title({
   return (
     <StyledText
       id={id}
-      as={as}
       textColor={textColor}
       textWeight={textWeight}
-      textAlign={textAlign}
+      textSize={textSize}
       textStyle={textStyle}
       textDecoration={textDecoration}
-      className={className}
     >
       {title}
       {count ? (
@@ -159,7 +125,7 @@ Title.propTypes = {
   size: PropTypes.string,
 };
 
-function Body({ id, body, type, weight, size, className }) {
+function Body({ id, body, type, weight, size }) {
   let textColor;
   let textWeight;
   let textSize;
@@ -233,11 +199,6 @@ Body.propTypes = {
   weight: PropTypes.string,
   type: PropTypes.string,
   size: PropTypes.string,
-  order: PropTypes.string,
-  style: PropTypes.string,
-  size: PropTypes.string,
-  align: PropTypes.string,
-  className: PropTypes.string,
 };
 
 export { Title as default, Body };

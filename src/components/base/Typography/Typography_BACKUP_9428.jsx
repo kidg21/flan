@@ -18,14 +18,28 @@ const CountContainer = styled.div`
 `;
 
 const StyledText = styled.h4`
+<<<<<<< HEAD
+  color: ${props => props.textColor || colors.grey_80};
+  font-size: ${props => props.textSize || ""};
+  font-weight: ${props => props.textWeight || ""};
+=======
   color: ${props => props.textColor || "inherit"};
   font-weight: ${props => props.textWeight || ""};
   text-align: ${props => props.textAlign || ""};
+>>>>>>> master
   margin: 0;
   font-style: ${props => props.textStyle || ""};
   text-decoration: ${props => props.textDecoration || ""};
 `;
 
+<<<<<<< HEAD
+function Title({ id, title, type, style, weight, count, size }) {
+  let textColor;
+  let textWeight;
+  let textSize;
+  let textStyle;
+  let textDecoration;
+=======
 function Title({
   id,
   title,
@@ -45,6 +59,7 @@ function Title({
   let textDecoration;
   let flexDirection;
   let as;
+>>>>>>> master
   switch (type) {
     case "info":
       textColor = colors.anchor;
@@ -58,12 +73,33 @@ function Title({
     case "alert":
       textColor = colors.alert;
       break;
+<<<<<<< HEAD
+    case "inherit":
+      textColor = "inherit";
+      break;
+=======
+>>>>>>> master
     case "inverse":
       textColor = colors.white;
       break;
     default:
       break;
   }
+<<<<<<< HEAD
+
+  switch (size) {
+    case "small":
+      textSize = "0.75rem";
+      break;
+    case "normal":
+      textSize = "0.875rem";
+      break;
+    case "large":
+      textSize = "1.25rem";
+      break;
+    case "xlarge":
+      textSize = "1.5rem";
+=======
   switch (size) {
     case "tiny":
       as = "h6";
@@ -90,10 +126,15 @@ function Title({
       break;
     case "right":
       textAlign = "right";
+>>>>>>> master
       break;
     default:
       break;
   }
+<<<<<<< HEAD
+
+=======
+>>>>>>> master
   switch (style) {
     case "underline":
       textDecoration = "underline";
@@ -104,6 +145,8 @@ function Title({
     default:
       break;
   }
+<<<<<<< HEAD
+=======
   switch (order) {
     case "before":
       flexDirection = "row";
@@ -114,6 +157,7 @@ function Title({
     default:
       break;
   }
+>>>>>>> master
   switch (weight) {
     case "light":
       textWeight = "500";
@@ -130,6 +174,13 @@ function Title({
   return (
     <StyledText
       id={id}
+<<<<<<< HEAD
+      textColor={textColor}
+      textWeight={textWeight}
+      textSize={textSize}
+      textStyle={textStyle}
+      textDecoration={textDecoration}
+=======
       as={as}
       textColor={textColor}
       textWeight={textWeight}
@@ -137,6 +188,7 @@ function Title({
       textStyle={textStyle}
       textDecoration={textDecoration}
       className={className}
+>>>>>>> master
     >
       {title}
       {count ? (
@@ -155,11 +207,12 @@ Title.propTypes = {
   results: PropTypes.bool,
   weight: PropTypes.string,
   type: PropTypes.string,
+<<<<<<< HEAD
   style: PropTypes.string,
   size: PropTypes.string,
 };
 
-function Body({ id, body, type, weight, size, className }) {
+function Body({ id, body, type, weight, size }) {
   let textColor;
   let textWeight;
   let textSize;
@@ -233,11 +286,13 @@ Body.propTypes = {
   weight: PropTypes.string,
   type: PropTypes.string,
   size: PropTypes.string,
+=======
   order: PropTypes.string,
   style: PropTypes.string,
   size: PropTypes.string,
   align: PropTypes.string,
   className: PropTypes.string,
+>>>>>>> master
 };
 
 export { Title as default, Body };

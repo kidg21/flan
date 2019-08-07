@@ -5,6 +5,7 @@ import { PlaceholderText } from "helpers/Placeholders.jsx";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import Mapbox from "layout/Map";
+import { Body } from "base/Typography";
 
 const fadeIn = keyframes`
   from {
@@ -145,11 +146,11 @@ const Close = styled.section`
   }
 `;
 
-const Text = styled.h5`
-  color: ${colors.white};
-  margin: 0;
-  padding: 1rem 0;
-`;
+// const Text = styled.h5`
+//   color: ${colors.white};
+//   margin: 0;
+//   padding: 1rem 0;
+// `;
 
 function Modal({
   id,
@@ -166,7 +167,7 @@ function Modal({
   ariaLabelledby,
   ariaDescribedby,
   children,
-  style
+  style,
 }) {
   let modalType;
   let justifyContent;
@@ -177,7 +178,7 @@ function Modal({
         <Fragment>
           <ModalBG onClick={onClose} opacity={opacity} />
           <ContentWrapper>
-            <Text>{text}</Text>
+            <Body body={text} type="inverse" />
           </ContentWrapper>
         </Fragment>
       );
@@ -193,8 +194,8 @@ function Modal({
       );
       break;
     case "image":
-      modalType = ((justifyContent = "center"),
-      (
+      justifyContent = "center";
+      modalType = (
         <Fragment>
           <ModalBG onClick={onClose} opacity={opacity} />
           <Image src={image} />
@@ -202,16 +203,16 @@ function Modal({
             <Icon icon="times" size="lg" inverse fixedWidth />
           </Close>
         </Fragment>
-      ));
+      );
       break;
     default:
-      modalType = ((justifyContent = "center"),
-      (
+      justifyContent = "center";
+      modalType = (
         <Fragment>
           <ModalBG onClick={onClose} opacity={opacity} />
           <ContentWrapper>{children}</ContentWrapper>
         </Fragment>
-      ));
+      );
       break;
   }
   switch (align) {
@@ -264,5 +265,5 @@ Modal.propTypes = {
   onClick: PropTypes.func,
   "aria-labelledby": PropTypes.string,
   "aria-describedby": PropTypes.string,
-  style: PropTypes.string
+  style: PropTypes.string,
 };
