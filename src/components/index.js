@@ -51,6 +51,7 @@ export {
 export { default as Notification } from "./elements/Notification";
 export { default as MapSearch } from "./elements/MapSearch";
 export { default as PopupCard } from "./elements/PopupCard";
+export { default as UserRoles, UserEntry } from "./elements/UserRoles";
 
 // Publicly exported files from 'layout'
 export { default as Card, CardList } from "./layout/Card";

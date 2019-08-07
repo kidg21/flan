@@ -7,21 +7,12 @@ import SelectMenu from "atoms/SelectMenu";
 import Bar from "blocks/Bar";
 import Button from "atoms/Button";
 
-function UserEntry({ id, user }) {
+function UserEntry({ id, user, options }) {
   return (
     <ListItem
       id={id}
       label={user}
-      action={
-        <SelectMenu
-          options={[
-            { value: "View", label: "View" },
-            { value: "Edit/View", label: "Edit/View" },
-            { value: "Execute", label: "Execute" },
-            { value: "Admin", label: "Admin" },
-          ]}
-        />
-      }
+      action={<SelectMenu options={options} />}
       actionWidth="25%"
     />
   );
@@ -30,6 +21,7 @@ function UserEntry({ id, user }) {
 UserEntry.propTypes = {
   id: PropTypes.string,
   user: PropTypes.string,
+  options: PropTypes.node,
 };
 
 function UserRoles({ id, addUser, children }) {
