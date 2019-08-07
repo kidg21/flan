@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Search from "blocks/Search";
-import Tabs, { Tab } from "blocks/Tabs";
 import { colors, screen } from "Variables";
 
 const IconWrapper = styled.span`
@@ -52,5 +51,3 @@ MapSearch.propTypes = {
 };
 
 export default MapSearch;
-
-///this one will need more work on setting up for logic like Autocomplete and everything else
