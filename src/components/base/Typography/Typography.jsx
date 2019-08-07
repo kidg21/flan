@@ -12,11 +12,13 @@ const CountContainer = styled.div`
 
 const StyledText = styled.h4`
   color: ${props => props.textColor || "inherit"};
-  font-weight: ${props => props.textWeight || ""};
+  font-weight: ${props => props.textWeight || "600"};
   text-align: ${props => props.textAlign || ""};
+  letter-spacing: ${props => props.letterSpacing || ""};
   margin: 0;
   font-style: ${props => props.textStyle || ""};
   text-decoration: ${props => props.textDecoration || ""};
+  user-select: ${props => (props.select ? "all" : "")};
 `;
 
 function Title({
@@ -26,13 +28,16 @@ function Title({
   order,
   style,
   weight,
+  spacing,
   count,
   size,
   align,
+  select,
   className,
 }) {
   let textColor;
   let textWeight;
+  let letterSpacing;
   let textAlign;
   let textStyle;
   let textDecoration;
@@ -54,6 +59,9 @@ function Title({
     case "inverse":
       textColor = colors.white;
       break;
+    case "light":
+      textColor = colors.grey_60;
+      break;
     default:
       break;
   }
@@ -73,6 +81,7 @@ function Title({
     case "xxlarge":
       as = "h1";
       break;
+    case "normal":
     default:
       as = "h4";
       break;
@@ -83,6 +92,16 @@ function Title({
       break;
     case "right":
       textAlign = "right";
+      break;
+    default:
+      break;
+  }
+  switch (spacing) {
+    case "2x":
+      letterSpacing = "0.1em";
+      break;
+    case "3x":
+      letterSpacing = "0.2em";
       break;
     default:
       break;
@@ -109,15 +128,14 @@ function Title({
   }
   switch (weight) {
     case "light":
-      textWeight = "500";
+      textWeight = "300";
       break;
     case "normal":
-      textWeight = "600";
+      textWeight = "500";
       break;
     case "bold":
-      textWeight = "700";
-      break;
     default:
+      textWeight = "700";
       break;
   }
   return (
@@ -126,9 +144,11 @@ function Title({
       as={as}
       textColor={textColor}
       textWeight={textWeight}
+      letterSpacing={letterSpacing}
       textAlign={textAlign}
       textStyle={textStyle}
       textDecoration={textDecoration}
+      select={select}
       className={className}
     >
       {title}
@@ -139,6 +159,24 @@ function Title({
       ) : null}
     </StyledText>
   );
+}
+
+function SubTitle({ id, title, select }) {
+  return (
+    <Title
+      id={id}
+      title={title}
+      select={select}
+      size=""
+      weight=""
+      spacing="2x"
+      type="light"
+    />
+  );
+}
+
+function Description({ id, title }) {
+  return <Title id={id} title={title} size="tiny" weight="light" />;
 }
 
 Title.propTypes = {
@@ -152,7 +190,10 @@ Title.propTypes = {
   style: PropTypes.string,
   size: PropTypes.string,
   align: PropTypes.string,
+  spacing: PropTypes.string,
+  select: PropTypes.bool,
   className: PropTypes.string,
 };
 
-export default Title;
+// export default Title;
+export { Title as default, SubTitle, Description };
