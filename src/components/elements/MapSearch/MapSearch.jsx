@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import Search from "blocks/Search";
 import Tabs, { Tab } from "blocks/Tabs";
-import { colors, shadows } from "Variables";
+import { colors, screen } from "Variables";
 
 const IconWrapper = styled.span`
   /* Needed for passing properties to children (animation, etc.) */
@@ -12,9 +12,11 @@ const IconWrapper = styled.span`
 const SearchContainer = styled.div`
   display: flex;
   margin: 1em;
-  width: 350px;
+  width: 100vw;
   flex-direction: column;
+  z-index: 1002;
   position: absolute;
+
   ${IconWrapper} {
     position: absolute;
     right: 0;
@@ -22,6 +24,17 @@ const SearchContainer = styled.div`
     margin: 0.2em;
     padding: 0.7em;
     cursor: pointer;
+  }
+
+  @media ${screen.small} {
+    width: 100vw;
+  }
+
+  @media ${screen.medium} {
+    width: 40vw;
+  }
+  @media ${screen.large} {
+    width: 30vw;
   }
 `;
 
