@@ -4,9 +4,10 @@ import PropTypes from "prop-types";
 
 const Block = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   align-items: flex-end;
   justify-content: space-between;
+  width: 100%;
 `;
 
 function IconBlock({ id, children, style, className }) {
