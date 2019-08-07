@@ -16,7 +16,7 @@ import styled, { css } from "styled-components";
 import { colors, shadows } from "Variables";
 import Icon from "atoms/Icon";
 import IconBlock from "blocks/IconBlock";
-import IconNotes from "./Icon.md";
+import IconNotes from "atoms/Icon/Icon.md";
 
 const Success = styled.span`
   color: ${colors.success};

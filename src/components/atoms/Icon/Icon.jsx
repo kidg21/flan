@@ -12,8 +12,9 @@ const StyledIcon = styled(FontAwesomeIcon)`
 
 function Icon({
   id,
-  type,
   icon,
+  type,
+  name,
   size,
   fixedWidth,
   rotation,
@@ -27,6 +28,46 @@ function Icon({
   className,
 }) {
   let iconColor;
+  switch (name) {
+    case "apple":
+      icon = ["fab", "apple"];
+      break;
+    case "facebook":
+      icon = ["fab", "facebook"];
+      break;
+    case "firefox":
+      icon = ["fab", "firefox"];
+      break;
+    case "google":
+      icon = ["fab", "google"];
+      break;
+    case "ie":
+      icon = ["fab", "internet-explorer"];
+      break;
+    case "twitter":
+      icon = ["fab", "twitter-square"];
+      break;
+    case "windows":
+      icon = ["fab", "windows"];
+      break;
+    case "menu":
+      icon = "bars";
+      break;
+    case "up":
+      icon = ["far", "angle-up"];
+      break;
+    case "down":
+      icon = ["far", "angle-down"];
+      break;
+    case "left":
+      icon = ["far", "angle-left"];
+      break;
+    case "right":
+      icon = ["far", "angle-right"];
+      break;
+    default:
+      break;
+  }
   switch (type) {
     case "info":
       iconColor = colors.anchor;
@@ -50,6 +91,7 @@ function Icon({
     <StyledIcon
       id={id}
       icon={icon}
+      name={name}
       color={iconColor}
       size={size}
       fixedWidth={fixedWidth}

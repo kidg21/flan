@@ -32,7 +32,7 @@ import {
   faTimes,
   faUser,
   faUsers,
-  faUserCircle
+  faUserCircle,
 } from "@fortawesome/pro-solid-svg-icons";
 // Regular
 import {
@@ -61,7 +61,7 @@ import {
   faShareAlt,
   faSignOut,
   faToggleOff,
-  faToggleOn
+  faToggleOn,
 } from "@fortawesome/pro-regular-svg-icons";
 // Light
 import {
@@ -72,22 +72,22 @@ import {
   faDirections,
   faPlusCircle,
   faMicroscope,
-  faTimes as faTimesLight
+  faTimes as faTimesLight,
 } from "@fortawesome/pro-light-svg-icons";
 // Brand
 import {
   faApple,
-  faApplePay,
-  faEbay,
+  // faApplePay,
+  // faEbay,
   faFacebook,
   faFirefox,
-  faFontAwesome,
+  // faFontAwesome,
   faGoogle,
   faInternetExplorer,
-  faLinkedin,
-  faReact,
+  // faLinkedin,
+  // faReact,
   faTwitterSquare,
-  faWindows
+  faWindows,
 } from "@fortawesome/free-brands-svg-icons";
 
 // Create DMP icon library
@@ -97,7 +97,7 @@ library.add(
   faAngleRight,
   faAngleUp,
   faApple,
-  faApplePay,
+  // faApplePay,
   faArrowFromBottom,
   faBars,
   faBell,
@@ -117,7 +117,7 @@ library.add(
   faCopy,
   faDatabase,
   faDirections,
-  faEbay,
+  // faEbay,
   faEllipsisV,
   faEnvelope,
   faExclamation,
@@ -127,7 +127,7 @@ library.add(
   faFilter,
   faFirefox,
   faFlag,
-  faFontAwesome,
+  // faFontAwesome,
   faGlobe,
   faGoogle,
   faHashtag,
@@ -138,7 +138,7 @@ library.add(
   faInternetExplorer,
   faKey,
   faLayerGroup,
-  faLinkedin,
+  // faLinkedin,
   faList,
   faLocationArrow,
   faMap,
@@ -152,7 +152,7 @@ library.add(
   faPlusCircle,
   faPrint,
   faQuestionCircle,
-  faReact,
+  // faReact,
   faSearch,
   faShare,
   faShareAlt,
@@ -166,5 +166,5 @@ library.add(
   faUser,
   faUsers,
   faUserCircle,
-  faWindows
+  faWindows,
 );
