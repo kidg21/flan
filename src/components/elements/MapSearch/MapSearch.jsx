@@ -10,7 +10,7 @@ const IconWrapper = styled.span`
 
 const SearchContainer = styled.div`
   display: flex;
-  margin: 1em;
+  padding: 1em;
   width: 100vw;
   flex-direction: column;
   z-index: 1002;
