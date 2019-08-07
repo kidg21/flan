@@ -15,7 +15,7 @@ const ListWrapper = styled.ul`
 const ListTitle = styled(Title)`
   color: ${colors.grey_dark};
   border-bottom: 1px solid ${colors.grey_20};
-  padding: 0.75em 1em;
+  padding: 0.75em;
 `;
 
 const ListItemWrapper = styled.li`
@@ -64,12 +64,11 @@ function ListItem({
   type,
   disabled,
   onClick,
-  slotWidthRight,
+  widthRight,
 }) {
   let itemColor;
   let itemBGColor;
   let itemBorder;
-  let userSelect;
   switch (state) {
     case "active":
       itemColor = colors.success;
@@ -121,7 +120,7 @@ function ListItem({
           </>
         }
         right={action}
-        slotWidthRight={actionWidth}
+        widthRight={actionWidth}
       />
     </ListItemWrapper>
   );
