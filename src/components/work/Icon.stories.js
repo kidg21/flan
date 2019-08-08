@@ -20,111 +20,90 @@ const IconGrid = styled(Grid)`
   grid-auto-flow: dense;
 `;
 
+const placeholder = {
+  desc: "Short description of meaning and usage.",
+};
+
+function IconSet({ id, data }) {
+  return [
+    data.map(item => (
+      <Piece id={id} key={item.id}>
+        <Bar
+          left={
+            <Grid columns="1" gap="tiny">
+              <Icon name={item.name} size="2x" />
+              <Title title={item.title} size="large" />
+              <Description title={item.desc} />
+              <Title
+                title={"name=" + "'" + item.name + "'"}
+                size="small"
+                select
+              />
+              <Title
+                title={"icon=" + "'" + item.icon + "'"}
+                size="small"
+                select
+              />
+            </Grid>
+          }
+        />
+      </Piece>
+    )),
+  ];
+}
+
+const iconsBrand = [
+  {
+    id: "1",
+    title: "apple",
+    name: "apple",
+    icon: "{['fab', 'apple']}",
+    desc: placeholder.desc,
+  },
+  {
+    id: "2",
+    title: "facebook",
+    name: "facebook",
+    icon: "{['fab', 'facebook']}",
+    desc: placeholder.desc,
+  },
+  {
+    id: "3",
+    title: "firefox",
+    name: "firefox",
+    icon: "{['fab', 'firefox']}",
+    desc: placeholder.desc,
+  },
+  {
+    id: "4",
+    title: "ie",
+    name: "ie",
+    icon: "{['fab', 'internet-explorer']}",
+    desc: placeholder.desc,
+  },
+  {
+    id: "5",
+    title: "twitter",
+    name: "twitter",
+    icon: "{['fab', 'twitter-square']}",
+    desc: placeholder.desc,
+  },
+  {
+    id: "6",
+    title: "windows",
+    name: "windows",
+    icon: "{['fab', 'windows']}",
+    desc: placeholder.desc,
+  },
+];
+
 storiesOf("Work|Application/Libraries/Icon Library", module)
   .addDecorator(Padding)
   .add("Brand Icons", () => (
     <Grid columns="1">
       <Title title="Brand Icons" size="large" style="underline" />
       <IconGrid>
-        <Piece>
-          <Bar
-            left={
-              <Grid columns="1" gap="tiny">
-                <Icon name="apple" size="2x" />
-                <Title title="apple" size="large" />
-                <Description title="Short description of meaning and usage." />
-                <Title title="name='apple'" size="small" select />
-                <Title title="icon={['fab', 'apple']}" size="small" select />
-              </Grid>
-            }
-          />
-        </Piece>
-        <Piece>
-          <Bar
-            left={
-              <Grid columns="1" gap="tiny">
-                <Icon name="facebook" size="2x" />
-                <Title title="facebook" size="large" />
-                <Description title="Short description of meaning and usage." />
-                <Title title="name='facebook'" size="small" select />
-                <Title title="icon={['fab', 'facebook']}" size="small" select />
-              </Grid>
-            }
-          />
-        </Piece>
-        <Piece>
-          <Bar
-            left={
-              <Grid columns="1" gap="tiny">
-                <Icon name="firefox" size="2x" />
-                <Title title="firefox" size="large" />
-                <Description title="Short description of meaning and usage." />
-                <Title title="name='firefox'" size="small" select />
-                <Title title="icon={['fab', 'firefox']}" size="small" select />
-              </Grid>
-            }
-          />
-        </Piece>
-        <Piece>
-          <Bar
-            left={
-              <Grid columns="1" gap="tiny">
-                <Icon name="google" size="2x" />
-                <Title title="google" size="large" />
-                <Description title="Short description of meaning and usage." />
-                <Title title="name='google'" size="small" select />
-                <Title title="icon={['fab', 'google']}" size="small" select />
-              </Grid>
-            }
-          />
-        </Piece>
-        <Piece>
-          <Bar
-            left={
-              <Grid columns="1" gap="tiny">
-                <Icon name="ie" size="2x" />
-                <Title title="ie" size="large" />
-                <Description title="Short description of meaning and usage." />
-                <Title title="name='ie'" size="small" select />
-                <Title
-                  title="icon={['fab', 'internet-explorer']}"
-                  size="small"
-                  select
-                />
-              </Grid>
-            }
-          />
-        </Piece>
-        <Piece>
-          <Bar
-            left={
-              <Grid columns="1" gap="tiny">
-                <Icon name="twitter" size="2x" />
-                <Title title="twitter" size="large" />
-                <Description title="Short description of meaning and usage." />
-                <Title title="name='twitter'" size="small" select />
-                <Title
-                  title="icon={['fab', 'twitter-square']}"
-                  size="small"
-                  select
-                />
-              </Grid>
-            }
-          />
-        </Piece>
-        <Piece>
-          <Bar
-            left={
-              <Grid columns="1" gap="tiny">
-                <Icon name="windows" size="2x" />
-                <Title title="windows" size="large" />
-                <Description title="Short description of meaning and usage." />
-                <Title title="name='windows'" size="small" select />
-                <Title title="icon={['fab', 'windows']}" size="small" select />
-              </Grid>
-            }
-          />
-        </Piece>
+        <IconSet data={iconsBrand} />
       </IconGrid>
     </Grid>
   ));
@@ -212,6 +191,55 @@ storiesOf("Work|Application/Libraries/Icon Library", module)
             }
           />
         </Piece>
+      </IconGrid>
+    </Grid>
+  ));
+
+const iconsMap = [
+  {
+    id: "1",
+    title: "menu",
+    icon: "menu",
+    name: "menu",
+    desc: placeholder.desc,
+  },
+  {
+    id: "2",
+    title: "up",
+    icon: "up",
+    name: "up",
+    desc: placeholder.desc,
+  },
+  {
+    id: "3",
+    title: "down",
+    icon: "down",
+    name: "down",
+    desc: placeholder.desc,
+  },
+  {
+    id: "4",
+    title: "left",
+    icon: "left",
+    name: "left",
+    desc: placeholder.desc,
+  },
+  {
+    id: "5",
+    title: "right",
+    icon: "right",
+    name: "right",
+    desc: placeholder.desc,
+  },
+];
+
+storiesOf("Work|Application/Libraries/Icon Library", module)
+  .addDecorator(Padding)
+  .add("Map Icons", () => (
+    <Grid columns="1">
+      <Title title="Map Icons" size="large" style="underline" />
+      <IconGrid>
+        <IconSet data={iconsMap} />
       </IconGrid>
     </Grid>
   ));
