@@ -20,17 +20,27 @@ const ListTitle = styled(Title)`
 `;
 
 const ListItemWrapper = styled.li`
-  color: ${(props) => { return props.itemColor || ""; }};
-  background-color: ${(props) => { return props.itemBGColor || colors.white; }};
+  color: ${props => {
+    return props.itemColor || "";
+  }};
+  background-color: ${props => {
+    return props.itemBGColor || colors.white;
+  }};
   border-style: solid;
-  border-width: ${(props) => { return props.itemBorder || "0"; }};
+  border-width: ${props => {
+    return props.itemBorder || "0";
+  }};
   border-bottom: 1px solid ${colors.grey_light};
-  cursor: ${(props) => { return (props.interactive ? "pointer" : ""); }};
+  cursor: ${props => {
+    return props.interactive ? "pointer" : "";
+  }};
   &:last-child {
     border-bottom: none;
   }
   &:hover {
-    ${(props) => { return (props.interactive ? Darken : ""); }};
+    ${props => {
+      return props.interactive ? Darken : "";
+    }};
   }
   &[disabled] {
     cursor: not-allowed;
@@ -46,12 +56,7 @@ const Item = styled(Bar)`
   align-items: center;
 `;
 
-function List({
-  id,
-  title,
-  children,
-  interactive,
-}) {
+function List({ id, title, children, interactive }) {
   return (
     <InteractiveContext.Provider value={interactive}>
       {title ? <ListTitle title={title} weight="bold" /> : null}
@@ -116,18 +121,22 @@ function ListItem({
       itemBorder={itemBorder}
       onClick={onClick}
       disabled={disabled}
-      interactive={typeof interactive === "boolean" ? interactive : useContext(InteractiveContext)}
+      interactive={
+        typeof interactive === "boolean"
+          ? interactive
+          : useContext(InteractiveContext)
+      }
     >
       <DisabledContext.Provider value={disabled}>
         <Item
-          left={(
+          left={
             <>
               {<Title title={label} />}
               {description ? (
                 <Title title={description} size="small" weight="light" />
               ) : null}
             </>
-          )}
+          }
           right={children}
           slotWidthRight={(children && children.props.width) || ""}
         />

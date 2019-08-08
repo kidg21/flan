@@ -2,12 +2,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
-import {
-  withKnobs,
-  text,
-  boolean,
-  select,
-} from "@storybook/addon-knobs";
+import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
 import { Padding } from "helpers/Display";
 import Card from "layout/Card";
 import Command from "atoms/Command";
@@ -46,7 +41,10 @@ storiesOf("Blocks|List", module)
   .add("Knobs", () => {
     return (
       <Card>
-        <List title={text("Title", "", "List")}>
+        <List
+          title={text("Title", "", "List")}
+          interactive={boolean("Interactive", false, "List")}
+        >
           <ListItem
             label={text("1 - Label", "Item 1", "Item 1")}
             description={text("1 - Description", "", "Item 1")}
@@ -72,7 +70,6 @@ storiesOf("Blocks|List", module)
               null,
               "Item 1",
             )}
-            onClick={boolean("1 - Interactive", false, "Item 1")}
             disabled={boolean("1 - Disabled", false, "Item 1")}
           />
           <ListItem
@@ -100,7 +97,6 @@ storiesOf("Blocks|List", module)
               null,
               "Item 2",
             )}
-            onClick={boolean("2 - Interactive", false, "Item 2")}
             disabled={boolean("2 - Disabled", false, "Item 2")}
           />
           <ListItem
@@ -128,7 +124,6 @@ storiesOf("Blocks|List", module)
               null,
               "Item 3",
             )}
-            onClick={boolean("3 - Interactive", false, "Item 3")}
             disabled={boolean("3 - Disabled", false, "Item 3")}
           />
         </List>
@@ -142,11 +137,7 @@ storiesOf("Blocks|List", module)
         <List>
           <ListItem label="List Item -- default" />
           <ListItem label="List Item -- default (active)" state="active" />
-          <ListItem
-            label="List Item -- (disabled)"
-            type="inverse"
-            disabled
-          />
+          <ListItem label="List Item -- (disabled)" type="inverse" disabled />
           <ListItem label="List Item -- info" type="info" />
           <ListItem
             label="List Item -- info (active)"
@@ -187,7 +178,7 @@ storiesOf("Blocks|List", module)
       <Card>
         <List interactive>
           <ListItem
-            label="List Item"
+            label="List Item (not interactive)"
             description="This is the description"
             interactive={false}
           />
@@ -196,10 +187,7 @@ storiesOf("Blocks|List", module)
             description="This is the description"
             disabled
           />
-          <ListItem
-            label="List Item"
-            description="This is the description"
-          />
+          <ListItem label="List Item" description="This is the description" />
           <ListItem
             label="List Item"
             description="This is the description"
@@ -284,7 +272,7 @@ storiesOf("Blocks|List", module)
         <List>
           <ListItem label="Do Something?">
             <SelectMenu
-              width="25%"
+              width="40%"
               options={[
                 { value: "yes", label: "Yes" },
                 { value: "no", label: "No" },
@@ -293,7 +281,7 @@ storiesOf("Blocks|List", module)
           </ListItem>
           <ListItem label="Something Else?" disabled>
             <SelectMenu
-              width="25%"
+              width="40%"
               options={[
                 { value: "yes", label: "Yes" },
                 { value: "no", label: "No" },
@@ -302,7 +290,7 @@ storiesOf("Blocks|List", module)
           </ListItem>
           <ListItem label="How About This?">
             <SelectMenu
-              width="25%"
+              width="40%"
               options={[
                 { value: "yes", label: "Yes" },
                 { value: "no", label: "No" },
@@ -311,7 +299,7 @@ storiesOf("Blocks|List", module)
           </ListItem>
           <ListItem label="Any Ideas?">
             <SelectMenu
-              width="25%"
+              width="40%"
               options={[
                 { value: "yes", label: "Yes" },
                 { value: "no", label: "No" },
@@ -320,7 +308,7 @@ storiesOf("Blocks|List", module)
           </ListItem>
           <ListItem label="Flan?">
             <SelectMenu
-              width="25%"
+              width="40%"
               options={[
                 { value: "yes", label: "Yes" },
                 { value: "yes", label: "I said YES!" },
@@ -370,9 +358,7 @@ storiesOf("Blocks|List", module)
           >
             <Command name="settings" />
           </ListItem>
-          <ListItem
-            label="List Item"
-          >
+          <ListItem label="List Item">
             <Checkbox id="enable" label="Enable" align="right" />
           </ListItem>
           <ListItem
