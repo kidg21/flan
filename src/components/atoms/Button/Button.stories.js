@@ -29,9 +29,13 @@ storiesOf("Atoms|Button", module)
   .addDecorator(withKnobs)
   .add(
     "Documentation",
-    withInfo()(() => { return <Button buttonLabel="Standard Button" />; }),
+    withInfo()(() => {
+      return <Button buttonLabel="Standard Button" />;
+    }),
   )
-  .add("Skeleton", () => { return <Button />; })
+  .add("Skeleton", () => {
+    return <Button />;
+  })
   .add("Knobs", () => {
     return (
       <Button
@@ -39,11 +43,11 @@ storiesOf("Atoms|Button", module)
           "icon",
           {
             "no icon": null,
-            "user": "user",
+            user: "user",
             "angle down": ["far", "angle-down"],
-            "bookmark": ["far", "bookmark"],
-            "plus": "plus",
-            "print": "print",
+            bookmark: ["far", "bookmark"],
+            plus: "plus",
+            print: "print",
           },
           null,
           "Button",
@@ -53,9 +57,9 @@ storiesOf("Atoms|Button", module)
           "color",
           {
             "anchor ( default )": "default",
-            "success": "success",
-            "warning": "warning",
-            "alert": "alert",
+            success: "success",
+            warning: "warning",
+            alert: "alert",
           },
           "default",
           { display: "radio" },
@@ -65,8 +69,7 @@ storiesOf("Atoms|Button", module)
           "type",
           {
             "outline ( default )": "default",
-            "solid": "solid",
-            "disabled": "disabled",
+            solid: "solid",
           },
           "default",
           { display: "radio" },
@@ -75,15 +78,16 @@ storiesOf("Atoms|Button", module)
         size={options(
           "size",
           {
-            "small": "small",
+            small: "small",
             "medium ( default )": "default",
-            "large": "large",
+            large: "large",
           },
           "default",
           { display: "radio" },
           "Button",
         )}
         fullWidth={boolean("full width", false, "Button")}
+        disabled={boolean("disabled", false, "Button")}
       />
     );
   })
