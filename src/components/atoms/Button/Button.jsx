@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled, { css } from "styled-components";
 import { colors } from "Variables";
+import { DisabledContext } from "States";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 
@@ -16,15 +17,15 @@ const StyledButton = styled.button`
   display: flex;
   flex: auto;
   flex-direction: column;
-  width: ${props => (props.fullWidth ? "100%" : "auto")};
-  padding: ${props => props.buttonPadding || "0.5rem 0.7rem"};
+  width: ${(props) => { return (props.fullWidth ? "100%" : "auto"); }};
+  padding: ${(props) => { return props.buttonPadding || "0.5rem 0.7rem"; }};
   justify-content: center;
   align-items: center;
-  color: ${props => props.textColor || colors.anchor};
-  background-color: ${props => props.backgroundColor || colors.white};
+  color: ${(props) => { return props.textColor || colors.anchor; }};
+  background-color: ${(props) => { return props.backgroundColor || colors.white; }};
   border: 1px solid;
   border-radius: 4px;
-  font-size: ${props => props.labelSize || "inherit"};
+  font-size: ${(props) => { return props.labelSize || "inherit"; }};
   font-weight: 600;
   letter-spacing: 1px;
   overflow: hidden;
@@ -67,7 +68,7 @@ function Button({
   type,
   size,
   fullWidth,
-  isDisabled,
+  disabled,
   onClick,
   style,
 }) {
@@ -93,19 +94,16 @@ function Button({
       buttonColor = colors.anchor;
       break;
   }
-  switch (type) {
-    case "solid":
-      backgroundColor = buttonColor;
-      textColor = colors.white;
-      break;
-    case "disabled":
-      textColor = colors.grey_60;
-      backgroundColor = colors.grey_20;
-      isDisabled = true;
-      break;
-    default:
-      break;
+
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  if (isDisabled) {
+    textColor = colors.grey_60;
+    backgroundColor = colors.grey_20;
+  } else if (type && type.toLowerCase() === "solid") {
+    textColor = colors.white;
+    backgroundColor = buttonColor;
   }
+
   switch (size) {
     case "small":
       buttonPadding = "0.4rem 0.6rem";
@@ -142,11 +140,11 @@ Button.propTypes = {
   id: PropTypes.string,
   buttonLabel: PropTypes.any.isRequired,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
-  type: PropTypes.oneOf(["solid", "disabled"]),
+  type: PropTypes.string,
   color: PropTypes.oneOf(["success", "warning", "alert"]),
   size: PropTypes.oneOf(["small", "large"]),
   fullWidth: PropTypes.bool,
-  isDisabled: PropTypes.bool,
+  disabled: PropTypes.bool,
   onClick: PropTypes.func.isRequired,
   style: PropTypes.string,
 };

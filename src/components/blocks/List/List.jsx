@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { colors, Darken } from "Variables";
 import Bar from "blocks/Bar";
 import Title from "base/Typography";
+import { InteractiveContext, DisabledContext } from "States";
 
 const ListWrapper = styled.ul`
   display: flex;
@@ -19,17 +20,17 @@ const ListTitle = styled(Title)`
 `;
 
 const ListItemWrapper = styled.li`
-  color: ${props => props.itemColor || ""};
-  background-color: ${props => props.itemBGColor || colors.white};
+  color: ${(props) => { return props.itemColor || ""; }};
+  background-color: ${(props) => { return props.itemBGColor || colors.white; }};
   border-style: solid;
-  border-width: ${props => props.itemBorder || "0"};
+  border-width: ${(props) => { return props.itemBorder || "0"; }};
   border-bottom: 1px solid ${colors.grey_light};
-  cursor: ${props => (props.onClick ? "pointer" : "")};
+  cursor: ${(props) => { return (props.interactive ? "pointer" : ""); }};
   &:last-child {
     border-bottom: none;
   }
   &:hover {
-    ${props => (props.onClick ? Darken : "")};
+    ${(props) => { return (props.interactive ? Darken : ""); }};
   }
   &[disabled] {
     cursor: not-allowed;
@@ -45,12 +46,17 @@ const Item = styled(Bar)`
   align-items: center;
 `;
 
-function List({ id, title, children }) {
+function List({
+  id,
+  title,
+  children,
+  interactive,
+}) {
   return (
-    <>
+    <InteractiveContext.Provider value={interactive}>
       {title ? <ListTitle title={title} weight="bold" /> : null}
       <ListWrapper id={id}>{children}</ListWrapper>
-    </>
+    </InteractiveContext.Provider>
   );
 }
 
@@ -58,18 +64,17 @@ function ListItem({
   id,
   label,
   description,
-  action,
-  actionWidth,
+  children,
   state,
   type,
   disabled,
+  interactive,
   onClick,
-  slotWidthRight,
 }) {
   let itemColor;
   let itemBGColor;
   let itemBorder;
-  let userSelect;
+  // let userSelect;
   switch (state) {
     case "active":
       itemColor = colors.success;
@@ -102,6 +107,7 @@ function ListItem({
     default:
       break;
   }
+
   return (
     <ListItemWrapper
       id={id}
@@ -110,19 +116,22 @@ function ListItem({
       itemBorder={itemBorder}
       onClick={onClick}
       disabled={disabled}
+      interactive={typeof interactive === "boolean" ? interactive : useContext(InteractiveContext)}
     >
-      <Item
-        left={
-          <>
-            {<Title title={label} />}
-            {description ? (
-              <Title title={description} size="small" weight="light" />
-            ) : null}
-          </>
-        }
-        right={action}
-        slotWidthRight={actionWidth}
-      />
+      <DisabledContext.Provider value={disabled}>
+        <Item
+          left={(
+            <>
+              {<Title title={label} />}
+              {description ? (
+                <Title title={description} size="small" weight="light" />
+              ) : null}
+            </>
+          )}
+          right={children}
+          slotWidthRight={(children && children.props.width) || ""}
+        />
+      </DisabledContext.Provider>
     </ListItemWrapper>
   );
 }
@@ -131,22 +140,19 @@ List.propTypes = {
   id: PropTypes.string,
   title: PropTypes.string,
   children: PropTypes.node,
+  interactive: PropTypes.bool,
 };
 
 ListItem.propTypes = {
   id: PropTypes.string,
   label: PropTypes.string.isRequired,
   description: PropTypes.string,
-  action: PropTypes.any,
-  /** If the 'action' element needs more room, use this prop to give it more space.
-   * "actionWidthMin" is used to override the default 'label' / 'action' ratio of a 'ListItem' by increasing the 'min-width' of the action's 'slot'.
-   * Value should be in percentage (%)
-   */
-  actionWidth: PropTypes.string,
+  children: PropTypes.node,
   state: PropTypes.oneOf(["active"]),
   type: PropTypes.oneOf(["info", "success", "warning", "alert", "inverse"]),
   onClick: PropTypes.func,
   disabled: PropTypes.bool,
+  interactive: PropTypes.bool,
 };
 
 export { List as default, ListItem };
