@@ -5,6 +5,7 @@ import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
 import {
   withKnobs,
+  boolean,
   optionsKnob as options,
 } from "@storybook/addon-knobs";
 import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
@@ -43,8 +44,15 @@ storiesOf("Atoms|Checkbox", module)
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
-  .add("Documentation", withInfo()(() => { return <Checkbox {...cbox1} />; }))
-  .add("Skeleton", () => { return <Checkbox id="default" />; })
+  .add(
+    "Documentation",
+    withInfo()(() => {
+      return <Checkbox {...cbox1} />;
+    }),
+  )
+  .add("Skeleton", () => {
+    return <Checkbox id="default" />;
+  })
   .add("Knobs", () => {
     return (
       <CheckboxGroup
@@ -52,10 +60,10 @@ storiesOf("Atoms|Checkbox", module)
           "columns",
           {
             "wrap ( default )": "default",
-            "one": "1",
-            "two": "2",
-            "three": "3",
-            "four": "4",
+            one: "1",
+            two: "2",
+            three: "3",
+            four: "4",
           },
           "default",
           { display: "radio" },
@@ -74,6 +82,7 @@ storiesOf("Atoms|Checkbox", module)
             { display: "inline-radio" },
             "Box 1",
           )}
+          disabled={boolean("1-disabled", false, "Box 1")}
         />
         <Checkbox
           {...cbox2}
@@ -87,6 +96,7 @@ storiesOf("Atoms|Checkbox", module)
             { display: "inline-radio" },
             "Box 2",
           )}
+          disabled={boolean("2-disabled", false, "Box 2")}
         />
         <Checkbox
           {...cbox3}
@@ -100,6 +110,7 @@ storiesOf("Atoms|Checkbox", module)
             { display: "inline-radio" },
             "Box 3",
           )}
+          disabled={boolean("3-disabled", false, "Box 3")}
         />
         <Checkbox
           {...cbox4}
@@ -113,6 +124,7 @@ storiesOf("Atoms|Checkbox", module)
             { display: "inline-radio" },
             "Box 4",
           )}
+          disabled={boolean("4-disabled", false, "Box 4")}
         />
       </CheckboxGroup>
     );
