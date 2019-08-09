@@ -19,7 +19,12 @@ UserEntry.propTypes = {
   options: PropTypes.node,
 };
 
-function UserRoles({ id, left, right, children }) {
+function UserRoles({
+  id,
+  left,
+  right,
+  children,
+}) {
   return (
     <Piece id={id}>
       <Piece>
@@ -27,7 +32,7 @@ function UserRoles({ id, left, right, children }) {
           left={left}
           right={right}
           slotWidthLeft={left ? left.props.width : ""}
-          slotWidthRight={right.props.width}
+          slotWidthRight={right ? right.props.width : ""}
         />
       </Piece>
       <Bar left="User" right="Roles" />
