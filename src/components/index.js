@@ -36,7 +36,7 @@ export {
   default as InformationCardBar,
 } from "./elements/CardBars/InformationCardBar";
 
-export { default as GroupCardBar } from "./elements/GroupCardBar";
+// export { default as GroupCardBar } from "./elements/GroupCardBar";
 export { default as LayerCardBar } from "./elements/CardBars/LayerCardBar";
 export {
   default as NavigationCardBar,

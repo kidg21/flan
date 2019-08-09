@@ -14,15 +14,20 @@ const Arrow = styled(FontAwesomeIcon)`
   transition: all 0.3s ease;
 `;
 
-function InformationCardBar({ id, title, count }) {
-  const [leftOnscreen, setLeftOnscreen] = useState(false);
+function InformationCardBar({ id, title, count, initOpen, onClick }) {
+  const [leftOnscreen, setLeftOnscreen] = useState(initOpen);
   function toggleLeft() {
     setLeftOnscreen(!leftOnscreen);
   }
   return (
     <Piece id={id}>
       <Bar
-        onClick={toggleLeft}
+        onClick={()=>{
+          toggleLeft();
+          if(typeof onClick === "function"){
+            onClick();
+          }
+        }}
         left={<Title title={title} count={count} weight="normal" />}
         right={<Arrow leftOnscreen={leftOnscreen} icon={["far", "angle-up"]} />}
       />
@@ -33,6 +38,7 @@ InformationCardBar.propTypes = {
   id: PropTypes.string,
   title: PropTypes.any.isRequired,
   count: PropTypes.number,
-  disabled: PropTypes.bool,
+  initOpen: PropTypes.bool,
+  onClick: PropTypes.func
 };
 export default InformationCardBar;
