@@ -8,5 +8,8 @@ storiesOf("Elements|Panel Headers/", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
   .add("Property", () => (
-    <PropertyPanelHeader title="5201 California Ave, Irvine, CA 92614" />
+    <PropertyPanelHeader
+      title="5201 California Ave, Irvine, CA 92614"
+      APN="374-543-4227"
+    />
   ));

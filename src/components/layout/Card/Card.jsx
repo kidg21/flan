@@ -5,6 +5,9 @@ import Grid from "layout/Grid";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 import PropTypes from "prop-types";
 
+const Wrapper = styled.div`
+  margin: 0.5em;
+`;
 
 const CardPiece = styled.div`
   display: flex;
@@ -135,4 +138,4 @@ CardList.propTypes = {
   rows: PropTypes.oneOf(["default (auto)", "[grid-template-rows]"]),
 };
 
-export { Card as default, CardList, Piece };
+export { Card as default, CardList, Piece, Wrapper };
