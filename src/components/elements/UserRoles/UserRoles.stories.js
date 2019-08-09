@@ -2,6 +2,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import Button from "atoms/Button";
+import Grid from "layout/Grid";
 import UserRoles, { UserEntry } from "./UserRoles";
 
 const Options = [
@@ -14,8 +15,12 @@ const Options = [
 storiesOf("Elements|User Roles", module).add("Default", () => {
   return (
     <UserRoles
-      left={<Button width="20%" fulLWidth buttonLabel="Add User" type="solid" />}
-      right={<Button width="20%" fullWidth buttonLabel="Add / Edit Roles" type="solid" />}
+      right={
+        <Grid columns="2">
+          <Button buttonLabel="Add User" />
+          <Button buttonLabel="Add/Edit Roles" />
+        </Grid>
+      }
     >
       <UserEntry user="Bob" options={Options} />
       <UserEntry user="Bob 1" options={Options} />

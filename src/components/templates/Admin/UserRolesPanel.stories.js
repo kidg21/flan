@@ -5,6 +5,7 @@ import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
 import UserRoles, { UserEntry } from "elements/UserRoles";
 import Bar from "blocks/Bar";
 import Button from "atoms/Button";
+import Grid from "layout/Grid";
 import Panel, { PanelSection } from "layout/Panel";
 
 const Options = [
@@ -21,8 +22,12 @@ storiesOf("Templates|Admin", module).add("User Edit Roles", () => {
         <MainPanelHeader title="User Roles / Permissions" />
         <PanelSection body>
           <UserRoles
-            left={<Button width="20%" fullWidth buttonLabel="Add User" type="solid" />}
-            right={<Button width="20%" fullWidth buttonLabel="Add / Edit Roles" type="solid" />}
+            right={
+              <Grid columns="2">
+                <Button buttonLabel="Add User" />
+                <Button buttonLabel="Add/Edit Roles" />
+              </Grid>
+            }
           >
             <UserEntry user="Bob" options={Options} />
             <UserEntry user="Carol" options={Options} />
@@ -38,5 +43,4 @@ storiesOf("Templates|Admin", module).add("User Edit Roles", () => {
       </Panel>
     );
   });
-},
-);
+});

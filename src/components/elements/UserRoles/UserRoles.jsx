@@ -19,19 +19,14 @@ UserEntry.propTypes = {
   options: PropTypes.node,
 };
 
-function UserRoles({
-  id,
-  left,
-  right,
-  children,
-}) {
+function UserRoles({ id, left, right, children }) {
   return (
     <Piece id={id}>
       <Piece>
         <Bar
           left={left}
           right={right}
-          slotWidthLeft={left.props.width}
+          slotWidthLeft={left ? left.props.width : ""}
           slotWidthRight={right.props.width}
         />
       </Piece>
