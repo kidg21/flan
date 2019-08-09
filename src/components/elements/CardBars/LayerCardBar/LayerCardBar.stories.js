@@ -32,7 +32,7 @@ storiesOf("Elements|Card Bar/", module)
           icons={Icons}
         />
       );
-    })
+    }),
   )
   .add("Layer Disabled", () => (
     <LayerCardBar title="Demographics" disabled icons={Icons} />

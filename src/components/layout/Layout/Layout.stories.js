@@ -5,6 +5,8 @@ import { screen } from "Variables";
 import Tabs, { Tab } from "blocks/Tabs";
 import Card from "layout/Card";
 import Layout from "layout/Layout";
+import Mapbox from "layout/Map";
+import MapSearch from "elements/MapSearch";
 import LayoutNotes from "./Layout.md";
 
 storiesOf("Layout |App Layout/", module)
@@ -123,7 +125,10 @@ storiesOf("Layout |App Layout/", module)
           <Layout id="inner" type="innerWrapper" state={innerState}>
             <Layout id="left" type="leftWrapper" />
             <Layout id="main" type="mainWrapper" state={mainState}>
-              <Layout id="middle" type="middleWrapper" state={middleState} />
+              <Layout id="middle" type="middleWrapper" state={middleState}>
+                <Mapbox />
+                <MapSearch />
+              </Layout>
               <Layout id="bottom" type="bottomWrapper" state={bottomState}>
                 <Card>
                   <Tabs align="bottom">
