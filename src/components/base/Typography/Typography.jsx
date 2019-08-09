@@ -161,7 +161,7 @@ function Title({
   );
 }
 
-function SubTitle({ id, title, select }) {
+function SubTitle({ id, title, select, className }) {
   return (
     <Title
       id={id}
@@ -171,12 +171,21 @@ function SubTitle({ id, title, select }) {
       weight=""
       spacing="2x"
       type="light"
+      className={className}
     />
   );
 }
 
-function Description({ id, title }) {
-  return <Title id={id} title={title} size="tiny" weight="light" />;
+function Description({ id, title, className }) {
+  return (
+    <Title
+      id={id}
+      title={title}
+      size="tiny"
+      weight="light"
+      className={className}
+    />
+  );
 }
 
 Title.propTypes = {

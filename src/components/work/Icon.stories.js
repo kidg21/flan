@@ -8,7 +8,11 @@ import Title, { SubTitle, Description } from "base/Typography";
 import Bar from "blocks/Bar";
 import Card, { Piece } from "layout/Card";
 import Icon from "atoms/Icon";
-import { iconsBrand, iconsNavigation } from "atoms/Icon/libraryIcon.data.js";
+import {
+  iconsApp,
+  iconsBrand,
+  iconsNavigation,
+} from "atoms/Icon/libraryIcon.data.js";
 
 const IconGrid = styled(Grid)`
   grid-template-columns: repeat(1, 1fr);
@@ -21,27 +25,39 @@ const IconGrid = styled(Grid)`
   grid-auto-flow: dense;
 `;
 
+const IconItem = styled(Grid)`
+  grid-template-columns: auto 1fr;
+  &:hover {
+    color: ${colors.anchor};
+    cursor: pointer;
+  }
+`;
+
+const IconDescription = styled(Description)`
+  grid-column: 1/-1;
+`;
+
 function IconSet({ data }) {
   return [
     data.map(item => (
       <Piece key={item.name} id={item.name}>
         <Bar
           left={
-            <Grid columns="1" gap="tiny">
-              <Icon name={item.name} size="2x" />
-              <Title title={item.name} size="large" />
-              <Description title={item.desc} />
-              <Title
+            <IconItem gap="tiny">
+              <Icon name={item.name} size="2x" fixedWidth />
+              <Title title={item.name} size="large" select />
+              <IconDescription title={item.desc} />
+              {/* <Title
                 title={"name=" + "'" + item.name + "'"}
                 size="small"
                 select
-              />
-              <Title
+              /> */}
+              {/* <Title
                 title={"icon=" + "'" + item.icon + "'"}
                 size="small"
                 select
-              />
-            </Grid>
+              /> */}
+            </IconItem>
           }
         />
       </Piece>
@@ -51,11 +67,11 @@ function IconSet({ data }) {
 
 storiesOf("Work|Application/Libraries/Icon Library", module)
   .addDecorator(Padding)
-  .add("Brand Icons", () => (
+  .add("App Icons", () => (
     <Grid columns="1">
-      <Title title="Brand Icons" size="large" style="underline" />
+      <Title title="App Icons" size="large" style="underline" />
       <IconGrid>
-        <IconSet data={iconsBrand} />
+        <IconSet data={iconsApp} />
       </IconGrid>
     </Grid>
   ));
@@ -71,3 +87,13 @@ storiesOf("Work|Application/Libraries/Icon Library", module)
     </Grid>
   ));
 
+storiesOf("Work|Application/Libraries/Icon Library", module)
+  .addDecorator(Padding)
+  .add("Brand Icons", () => (
+    <Grid columns="1">
+      <Title title="Brand Icons" size="large" style="underline" />
+      <IconGrid>
+        <IconSet data={iconsBrand} />
+      </IconGrid>
+    </Grid>
+  ));

@@ -5,6 +5,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 // Solid (default)
 import {
   faBars,
+  faBookmark as faBookmarkSolid,
   faCheck,
   faChevronDown,
   faChevronLeft,
@@ -57,6 +58,8 @@ import {
   faMap,
   faQuestionCircle,
   faSearch,
+  faSearchMinus,
+  faSearchPlus,
   faShare,
   faShareAlt,
   faSignOut,
@@ -102,6 +105,7 @@ library.add(
   faBars,
   faBell,
   faBookmark,
+  faBookmarkSolid,
   faCheck,
   faChevronDown,
   faChevronLeft,
@@ -154,6 +158,8 @@ library.add(
   faQuestionCircle,
   // faReact,
   faSearch,
+  faSearchMinus,
+  faSearchPlus,
   faShare,
   faShareAlt,
   faSignOut,

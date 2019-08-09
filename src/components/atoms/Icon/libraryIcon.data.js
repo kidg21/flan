@@ -2,65 +2,94 @@ const placeholder = {
   desc: "Short description of meaning and usage.",
 };
 
+// App
+export const iconsApp = [
+  {
+    name: "search",
+    icon: '{["far", "search"]}',
+    desc: placeholder.desc,
+  },
+  {
+    name: "zoom-out",
+    icon: '{["far", "search-minus"]}',
+    desc: placeholder.desc,
+  },
+  {
+    name: "zoom-in",
+    icon: '{["far", "search-plus"]}',
+    desc: placeholder.desc,
+  },
+  {
+    name: "bookmark",
+    icon: '{["far", "bookmark"]}',
+    desc: placeholder.desc,
+  },
+  {
+    name: "bookmark-solid",
+    icon: "bookmark",
+    desc: placeholder.desc,
+  },
+];
+
 // Navigation
 export const iconsNavigation = [
-    {
-      name: "menu",
-      icon: "menu",
-      desc: placeholder.desc,
-    },
-    {
-      name: "up",
-      icon: "up",
-      desc: placeholder.desc,
-    },
-    {
-      name: "down",
-      icon: "down",
-      desc: placeholder.desc,
-    },
-    {
-      name: "left",
-      icon: "left",
-      desc: placeholder.desc,
-    },
-    {
-      name: "right",
-      icon: "right",
-      desc: placeholder.desc,
-    },
-  ];
+  {
+    name: "menu",
+    icon: "bars",
+    desc: placeholder.desc,
+  },
+  {
+    name: "up",
+    icon: "up",
+    desc: placeholder.desc,
+  },
+  {
+    name: "down",
+    icon: "down",
+    desc: placeholder.desc,
+  },
+  {
+    name: "left",
+    icon: "left",
+    desc: placeholder.desc,
+  },
+  {
+    name: "right",
+    icon: "right",
+    desc: placeholder.desc,
+  },
+];
 
 // Brands
 export const iconsBrand = [
   {
     name: "apple",
-    icon: "{['fab', 'apple']}",
+    icon: '{["far", "apple"]}',
     desc: placeholder.desc,
   },
   {
     name: "facebook",
-    icon: "{['fab', 'facebook']}",
+    icon: '{["far", "facebook"]}',
     desc: placeholder.desc,
   },
   {
     name: "firefox",
-    icon: "{['fab', 'firefox']}",
+    icon: '{["far", "firefox"]}',
     desc: placeholder.desc,
   },
   {
-    name: "ie",
-    icon: "{['fab', 'internet-explorer']}",
+    name: "internet-explorer",
+    icon: '{["far", "internet-explorer"]}',
     desc: placeholder.desc,
   },
   {
     name: "twitter",
-    icon: "{['fab', 'twitter-square']}",
+    icon: '{["far", "twitter-square"]}',
     desc: placeholder.desc,
   },
   {
     name: "windows",
-    icon: "{['fab', 'windows']}",
+    icon: '{["far", "windows"]}',
     desc: placeholder.desc,
   },
 ];

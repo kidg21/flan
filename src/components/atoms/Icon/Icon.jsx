@@ -41,7 +41,7 @@ function Icon({
     case "google":
       icon = ["fab", "google"];
       break;
-    case "ie":
+    case "internet-explorer":
       icon = ["fab", "internet-explorer"];
       break;
     case "twitter":
@@ -64,6 +64,21 @@ function Icon({
       break;
     case "right":
       icon = ["far", "angle-right"];
+      break;
+    case "search":
+      icon = ["far", "search"];
+      break;
+    case "zoom-out":
+      icon = ["far", "search-minus"];
+      break;
+    case "zoom-in":
+      icon = ["far", "search-plus"];
+      break;
+    case "bookmark":
+      icon = ["far", "bookmark"];
+      break;
+    case "bookmark-solid":
+      icon = "bookmark";
       break;
     default:
       break;
