@@ -10,12 +10,6 @@ const data = [
   { id: "c", name: "Zoning", value: "No Zone" },
 ];
 
-const data2 = [
-  { id: "a", color: "", name: "" },
-  { id: "b", color: "", name: "" },
-  { id: "c", color: "", name: "" },
-];
-
 storiesOf("Blocks|Table", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)

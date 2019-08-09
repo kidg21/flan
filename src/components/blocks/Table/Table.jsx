@@ -19,21 +19,18 @@ const TableWrapper = styled.table`
     }
   }
 `;
-const Row = styled.tr`
-  // &:hover {
-  // 	background-color: #f5f7f9;
-  // 	transition: background-color 0.05s ease-in;
-  // }
-`;
+const Row = styled.tr``;
 const Cell = styled.td`
   padding: 0.25em 0.25em 0.25em;
   font-size: small;
   text-align: left;
 
-  // &:first-child {
-  // 	color: #83a3c2;
-  // 	font-weight: bold;
-  // }
+  &:empty {
+    &:before {
+      content: "Not Available";
+    }
+  }
+
   &:nth-child(even) {
     font-weight: bold;
   }
