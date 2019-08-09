@@ -28,6 +28,4 @@ function Menu() {
   );
 }
 
-
-
 export { Menu as default };

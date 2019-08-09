@@ -12,11 +12,6 @@ const PropertyContainer = styled.div`
   display: flex;
 `;
 
-const HeaderSpace = styled.div`
-  padding-top: 0.7rem;
-  font-weight: 700;
-`;
-
 const ApnSpan = styled.span`
   font-size: 0.938em;
   font-weight: 400;
@@ -31,25 +26,18 @@ const Location = styled.div`
 function PropertyPanelHeader({ id, title, APN }) {
   return (
     <Piece id={id}>
-      <HeaderSpace>
-        <Bar
-          left={
-            <PropertyContainer>
-              <Location>
-                <Title title={title} weight="bold" />
-                <ApnSpan>APN: {APN}</ApnSpan>
-              </Location>
-              <Icon
-                icon={["fal", "directions"]}
-                size="2x"
-                type="info"
-                onClick
-              />
-            </PropertyContainer>
-          }
-          right={<Icon icon={["far", "ellipsis-v"]} size="lg" />}
-        />
-      </HeaderSpace>
+      <Bar
+        left={
+          <PropertyContainer>
+            <Location>
+              <Title title={title} weight="bold" />
+              <ApnSpan>APN: {APN}</ApnSpan>
+            </Location>
+            <Icon icon={["fal", "directions"]} size="2x" type="info" onClick />
+          </PropertyContainer>
+        }
+        right={<Icon icon={["far", "ellipsis-v"]} size="lg" />}
+      />
     </Piece>
   );
 }
