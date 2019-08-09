@@ -1,6 +1,7 @@
 import React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import PropTypes from "prop-types";
+import { SkeletonStatic } from "helpers";
 
 const TableWrapper = styled.table`
   // overflow: hidden;
@@ -60,4 +61,4 @@ Table.propTypes = {
 
 export default Table;
 
-//Tables currently do not have context props. these props will need to be added so there is no hard coded text. we will meet on this later
+// Tables currently do not have context props. these props will need to be added so there is no hard coded text. we will meet on this later
