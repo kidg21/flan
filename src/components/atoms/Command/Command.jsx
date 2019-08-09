@@ -41,17 +41,7 @@ const CommandIcon = styled(Icon)`
   grid-area: icon;
 `;
 
-function Command({
-  id,
-  name,
-  label,
-  icon,
-  align,
-  state,
-  size,
-  isDisabled,
-  style,
-}) {
+function Command({ id, name, label, icon, align, state, size, isDisabled }) {
   let alignIcon = "'icon name'";
   let justifyCommand = "flex-start";
   let justifyIcon = "flex-start";
@@ -132,7 +122,7 @@ function Command({
   }
   switch (size) {
     case "small":
-      commandSize = ".9em";
+      commandSize = ".8em";
       break;
     case "large":
       commandSize = "1.2em";
@@ -164,7 +154,6 @@ Command.propTypes = {
   align: PropTypes.string,
   state: PropTypes.string,
   size: PropTypes.string,
-  style: PropTypes.string,
 };
 
 Command.defaultProps = {
