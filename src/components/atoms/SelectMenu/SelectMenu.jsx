@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { fonts, colors, shadows, Lighten, Darken } from "Variables";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
 import Select from "react-select";
 import { Skeleton } from "helpers/Skeleton.jsx";
+import { DisabledContext } from "States";
 
 const selectStyles = {
   // Wrapper
@@ -153,10 +154,11 @@ function SelectMenu({
   isRtl,
   errorText,
 }) {
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   return (
     <SelectMenuContainer
       isRequired={isRequired}
-      disabled={disabled} // input attribute
+      disabled={isDisabled} // input attribute
       error={error}
       displayInline={displayInline}
     >
@@ -172,7 +174,7 @@ function SelectMenu({
         isSearchable={isSearchable}
         isClearable={isClearable}
         isMulti={multiSelect}
-        isDisabled={disabled}
+        isDisabled={isDisabled}
         isLoading={isLoading}
         isRtl={isRtl}
       />
@@ -199,6 +201,8 @@ SelectMenu.propTypes = {
   isLoading: PropTypes.bool,
   displayInline: PropTypes.bool,
   isRtl: PropTypes.bool,
+  helpText: PropTypes.string,
+  errorText: PropTypes.string,
 };
 
 export default SelectMenu;
