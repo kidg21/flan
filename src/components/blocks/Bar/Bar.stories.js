@@ -12,15 +12,16 @@ import {
   button,
   array,
   object,
-  optionsKnob as options
+  optionsKnob as options,
 } from "@storybook/addon-knobs";
 import { colors } from "Variables";
 import { Padding } from "helpers/Display";
-import Grid from "helpers/Grid";
+import Grid from "layout/Grid";
 import Card from "layout/Card";
 import Icon from "atoms/Icon";
 import IconBlock from "blocks/IconBlock";
 import Command from "atoms/Command";
+import Title from "base/Typography";
 import Bar from "blocks/Bar";
 import BarNotes from "./Bar.md";
 
@@ -28,14 +29,7 @@ const Section = styled.h6`
   margin: 0;
   line-height: normal;
   color: ${colors.grey_60};
-`;
-const Title = styled.h5`
-  margin: 0;
-  line-height: normal;
-`;
-const SubTitle = styled.h6`
-  margin: 0;
-  line-height: normal;
+  grid-column: 1/-1;
 `;
 
 const image = (
@@ -45,26 +39,30 @@ const image = (
     height="50px"
   />
 );
-const shortTitle = <Title>A Standard Title</Title>;
+const shortTitle = <Title title="A Standard Title" />;
 const longTitle = (
-  <Title>A Title So Long That It May Take Up Multiple Lines</Title>
+  <Title title="A Title So Long That It May Take Up Multiple Lines" />
 );
 const multipleLines = (
-  <Grid col_1>
-    <Title>Towgood, Gary T.</Title>
-    <SubTitle>3082 Yellowstone Dr. Costa Mesa, CA 92612</SubTitle>
-  </Grid>
+  <>
+    <Title title="Towgood, Gary T." />
+    <Title
+      title="3082 Yellowstone Dr. Costa Mesa, CA 92612"
+      size="small"
+      weight="normal"
+    />
+  </>
 );
 
 storiesOf("Blocks|Bar", module)
   .addParameters({
     info: {
       text:
-        "The 'Bar' is a Flexbox-based component that is comprised of three flexible sections that evenly distribute the available space. The 'left', 'center', and 'right' props control the alignment of the content in each."
+        "The 'Bar' is a Flexbox-based component that is comprised of three flexible sections that evenly distribute the available space. The 'left', 'center', and 'right' props control the alignment of the content in each.",
     },
     notes: {
-      markdown: BarNotes
-    }
+      markdown: BarNotes,
+    },
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
@@ -73,29 +71,38 @@ storiesOf("Blocks|Bar", module)
     withInfo()(() => (
       <Card>
         <Bar
-          left={<Title>Left</Title>}
-          center={<Title>Center</Title>}
-          right={<Title>Right</Title>}
+          left={<Title title="Left" />}
+          center={<Title title="Center" />}
+          right={<Title title="Right" />}
         />
       </Card>
-    ))
+    )),
   )
 
   .add("Some Bars", () => (
-    <Grid col_1>
+    <Grid>
       <Section>Command / Text / Command</Section>
       <Card>
-        <Bar
-          left={<Command />}
-          center={<Title>{shortTitle}</Title>}
-          right={<Command />}
-        />
+        <Bar left={<Command />} center={shortTitle} right={<Command />} />
       </Card>
       <Card>
         <Bar left={<Command />} center={longTitle} right={<Command />} />
       </Card>
       <Card>
-        <Bar left={<Command />} center={multipleLines} right={<Command />} />
+        <Bar
+          left={<Command />}
+          center={
+            <>
+              <Title title="Towgood, Gary T." />
+              <Title
+                title="3082 Yellowstone Dr. Costa Mesa, CA 92612"
+                size="small"
+                weight="normal"
+              />
+            </>
+          }
+          right={<Command />}
+        />
       </Card>
 
       <Section>Text / Command</Section>
@@ -169,7 +176,7 @@ storiesOf("Blocks|Bar", module)
               <Icon icon="circle" success />
             </IconBlock>
           }
-          center={shortTitle}
+          center={longTitle}
           right={
             <IconBlock>
               <Icon icon="circle" />

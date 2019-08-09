@@ -1,10 +1,17 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
+import styled from "styled-components";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
 import CardAccordion from "elements/CardAccordion";
+import InformationCardBar from "elements/CardBars/InformationCardBar";
 import MapLegend from "blocks/MapLegend";
+import Card from "layout/Card";
 import LayerCardBar from "elements/CardBars/LayerCardBar";
 import Panel, { PanelSection } from "layout/Panel";
+
+const Wrapper = styled.div`
+  margin: 0.5em;
+`;
 
 storiesOf("Templates|Panel", module).add("Layer Panel", () =>
   React.createElement(() => {
@@ -13,6 +20,8 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
     const [checked3, setChecked3] = useState("");
     const [checked4, setChecked4] = useState("");
     const [checked5, setChecked5] = useState("");
+    const [checked6, setChecked6] = useState("");
+    const [checked7, setChecked7] = useState("");
     return (
       <Panel>
         <PanelSection>
@@ -28,7 +37,7 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
 
                   onChange: () => {
                     setChecked(!checked);
-                  }
+                  },
                 }}
               />
             }
@@ -44,7 +53,7 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
 
                   onChange: () => {
                     setChecked2(!checked2);
-                  }
+                  },
                 }}
               />
             }
@@ -53,19 +62,55 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
           </CardAccordion>
           <CardAccordion
             header={
-              <LayerCardBar
-                title="Wetlands"
+              <InformationCardBar
+                title="Owner Group"
+                count="2"
                 switchProps={{
                   checked: checked3,
 
                   onChange: () => {
                     setChecked3(!checked3);
-                  }
+                  },
                 }}
               />
             }
           >
-            <MapLegend />
+            <Wrapper>
+              <Card>
+                <CardAccordion
+                  header={
+                    <LayerCardBar
+                      title="Owner part 1"
+                      switchProps={{
+                        checked: checked6,
+
+                        onChange: () => {
+                          setChecked6(!checked6);
+                        },
+                      }}
+                    />
+                  }
+                >
+                  <MapLegend />
+                </CardAccordion>
+                <CardAccordion
+                  header={
+                    <LayerCardBar
+                      title="Owner part 2"
+                      switchProps={{
+                        checked: checked7,
+
+                        onChange: () => {
+                          setChecked7(!checked7);
+                        },
+                      }}
+                    />
+                  }
+                >
+                  <MapLegend />
+                </CardAccordion>
+              </Card>
+            </Wrapper>
           </CardAccordion>
           <CardAccordion
             header={
@@ -76,7 +121,7 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
 
                   onChange: () => {
                     setChecked4(!checked4);
-                  }
+                  },
                 }}
               />
             }
@@ -92,7 +137,7 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
 
                   onChange: () => {
                     setChecked5(!checked5);
-                  }
+                  },
                 }}
               />
             }
@@ -102,7 +147,7 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
         </PanelSection>
       </Panel>
     );
-  })
+  }),
 );
 
 // // storiesOf("Templates|Panel", module).add("Layer Panel", () =>

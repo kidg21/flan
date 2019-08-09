@@ -1,14 +1,14 @@
 import React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import PropTypes from "prop-types";
-import { colors, shadows } from "Variables";
+import { colors } from "Variables";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
 
 const TextInputContainer = styled.div`
-	display: grid;
-	grid-gap: 0.35rem;
-	align-content: flex-start;
-	color: ${props => props.inputTextColor || ""};
+  display: grid;
+  grid-gap: 0.35rem;
+  align-content: flex-start;
+  color: ${props => props.inputTextColor || ""};
 `;
 
 const Input = styled.input`
@@ -37,7 +37,6 @@ const Input = styled.input`
 function TextInput({
   id,
   type,
-  as,
   pattern,
   value,
   inputLabel,
@@ -53,6 +52,7 @@ function TextInput({
   autocompleteList,
   size,
 }) {
+  let as;
   let inputTextColor;
   let inputFillColor;
   let inputBorderColor;
@@ -118,9 +118,9 @@ function TextInput({
       ) : null}
       <Input
         id={id} // input attribute
+        as={as}
         name={id} // input attribute
         type={type} // input attribute
-        as={as}
         value={value} // input attribute
         placeholder={placeholder} // input attribute
         pattern={pattern} // input attribute

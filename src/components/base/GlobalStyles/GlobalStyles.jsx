@@ -15,12 +15,12 @@ const GlobalStyles = createGlobalStyle`
 
     /* Import font resources */
     ${
-  "" /* @font-face {
+      "" /* @font-face {
         font-family: Lato;
         src: local("Lato");
         src: url(${Lato_700});
     } */
-}
+    }
 
     /* Document resets */
     html {
@@ -99,7 +99,7 @@ const GlobalStyles = createGlobalStyle`
     h1, h2, h3, h4, h5, h6, p {
         font-style: normal;
         color: inherit;
-        letter-spacing: 0.015em;
+        letter-spacing: 0.025em;
     }
     p {
         font-family: inherit;

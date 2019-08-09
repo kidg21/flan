@@ -8,30 +8,56 @@ const BarLayout = styled.div`
   align-items: flex-start;
   flex-wrap: nowrap;
   justify-content: space-between;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
   padding: 0.75em;
 `;
 
 const Slot = styled.div`
   display: flex;
   flex: auto;
+  flex-direction: column;
   justify-content: ${props => props.justifyContent || "space-between"};
+  align-items: ${props => props.alignItems || ""};
   text-align: ${props => props.textAlign || ""};
-  margin: ${props => props.slotMargin || ""};
+  padding: ${props => props.setPadding || ""};
+  min-width: ${props => props.slotWidthMin || ""};
+  max-width: ${props => props.slotWidthMax || ""};
 `;
 
-function Bar({ id, left, center, right, onClick }) {
+function Bar({
+  id,
+  left,
+  center,
+  right,
+  onClick,
+  slotWidthLeft,
+  slotWidthRight,
+  className,
+}) {
   return (
-    <BarLayout id={id} onClick={onClick}>
-      {left ? <Slot slotMargin={"0 0.5em 0 0"}>{left}</Slot> : null}
+    <BarLayout id={id} onClick={onClick} className={className}>
+      {left ? (
+        <Slot
+          slotWidthMin={slotWidthLeft}
+          slotWidthMax={slotWidthLeft}
+          setPadding="0 1em 0 0"
+        >
+          {left}
+        </Slot>
+      ) : null}
       {center ? (
-        <Slot justifyContent={"center"} textAlign={"center"}>
+        <Slot justifyContent="center" alignItems="center" textAlign="center">
           {center}
         </Slot>
       ) : null}
       {right ? (
-        <Slot justifyContent={"flex-end"} textAlign={"right"} slotMargin={"0 0 0 0.5em"}>
+        <Slot
+          justifyContent="flex-end"
+          alignItems="flex-end"
+          textAlign="right"
+          slotWidthMin={slotWidthRight}
+          slotWidthMax={slotWidthRight}
+          setPadding="0 0 0 1em"
+        >
           {right}
         </Slot>
       ) : null}
@@ -41,8 +67,10 @@ function Bar({ id, left, center, right, onClick }) {
 Bar.propTypes = {
   id: PropTypes.string,
   left: PropTypes.any,
+  slotWidthLeft: PropTypes.string,
   center: PropTypes.any,
   right: PropTypes.any,
+  slotWidthRight: PropTypes.string,
   onClick: PropTypes.func,
 };
 

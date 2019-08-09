@@ -26,7 +26,7 @@ PopCard.propTypes = {
   title: PropTypes.string,
   message: PropTypes.string.isRequired,
   buttonLabel1: PropTypes.string,
-  buttonLabel2: PropTypes.string
+  buttonLabel2: PropTypes.string,
 };
 
 export default PopCard;

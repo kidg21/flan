@@ -24,26 +24,33 @@ addDecorator(withGlobalStyles);
 
 // Configure Viewport
 const newViewports = {
+  "1080P": {
+    name: "1080P",
+    styles: {
+      width: "1920px",
+      height: "1080px"
+    }
+  },
   kindleFire2: {
     name: "Kindle Fire 2",
     styles: {
       width: "600px",
-      height: "963px"
-    }
+      height: "963px",
+    },
   },
   kindleFireHD: {
     name: "Kindle Fire HD",
     styles: {
       width: "533px",
-      height: "801px"
-    }
-  }
+      height: "801px",
+    },
+  },
 };
 
 // Configure Parameters
 addParameters({
   viewport: {
-    viewports: { ...INITIAL_VIEWPORTS, ...newViewports }
+    viewports: { ...INITIAL_VIEWPORTS, ...newViewports },
     // defaultViewport: "iphone6"
   },
   options: {
@@ -52,14 +59,14 @@ addParameters({
     goFullScreen: false,
     addonPanelInRight: true,
     hierarchySeparator: /\/|\./,
-    hierarchyRootSeparator: /\|/
+    hierarchyRootSeparator: /\|/,
   },
   a11y: {
     // ... axe options
     element: "#root", // optional selector which element to inspect
     config: {}, // axe-core configurationOptions (https://github.com/dequelabs/axe-core/blob/develop/doc/API.md#parameters-1)
-    options: {} // axe-core optionsParameter (https://github.com/dequelabs/axe-core/blob/develop/doc/API.md#options-parameter)
-  }
+    options: {}, // axe-core optionsParameter (https://github.com/dequelabs/axe-core/blob/develop/doc/API.md#options-parameter)
+  },
 });
 
 // a11y
@@ -86,13 +93,13 @@ setDefaults({
   styles: {
     header: {
       h1: {
-        color: colors.grey_80
+        color: colors.grey_80,
       },
       h2: {
-        color: colors.anchor
-      }
-    }
-  }
+        color: colors.anchor,
+      },
+    },
+  },
 });
 
 // const req = require.context("../src/components", true, /.stories.js$/)
@@ -101,23 +108,24 @@ const base = require.context("../src/components/base", true, /.stories.js$/);
 const blocks = require.context(
   "../src/components/blocks",
   true,
-  /.stories.js$/
+  /.stories.js$/,
 );
 const elements = require.context(
   "../src/components/elements",
   true,
-  /.stories.js$/
+  /.stories.js$/,
 );
 const layout = require.context(
   "../src/components/layout",
   true,
-  /.stories.js$/
+  /.stories.js$/,
 );
 const templates = require.context(
   "../src/components/templates",
   true,
-  /.stories.js$/
+  /.stories.js$/,
 );
+const work = require.context("../src/components/work", true, /.stories.js$/);
 function loadStories() {
   // req.keys().forEach(filename => req(filename))
   require("../src/attributes/App.stories.js");
@@ -127,6 +135,7 @@ function loadStories() {
   elements.keys().forEach(filename => elements(filename));
   layout.keys().forEach(filename => layout(filename));
   templates.keys().forEach(filename => templates(filename));
+  work.keys().forEach(filename => work(filename));
 }
 
 configure(loadStories, module);

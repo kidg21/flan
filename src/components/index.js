@@ -21,6 +21,7 @@ export { default as TextInput } from "./atoms/TextInput";
 export { default as Accordion } from "./blocks/Accordion";
 export { default as Banner } from "./blocks/Banner";
 export { default as Bar } from "./blocks/Bar";
+export { default as List, ListItem } from "./blocks/List";
 export { default as IconBlock } from "./blocks/IconBlock";
 export { default as MapLegend } from "./blocks/MapLegend";
 export { default as Menu } from "./blocks/Menu";
@@ -32,22 +33,22 @@ export { default as Tabs, Tab } from "./blocks/Tabs";
 // Publicly exported files from 'elements'
 export { default as CardAccordion } from "./elements/CardAccordion";
 export {
-  default as InformationCardBar
+  default as InformationCardBar,
 } from "./elements/CardBars/InformationCardBar";
 
 export { default as GroupCardBar } from "./elements/GroupCardBar";
 export { default as LayerCardBar } from "./elements/CardBars/LayerCardBar";
 export {
-  default as NavigationCardBar
+  default as NavigationCardBar,
 } from "./elements/CardBars/NavigationCardBar";
 export {
-  default as MainPanelHeader
+  default as MainPanelHeader,
 } from "./elements/PanelHeaders/MainPanelHeader";
 export {
-  default as PropertyPanelHeader
+  default as PropertyPanelHeader,
 } from "./elements/PanelHeaders/PropertyPanelHeader";
 export {
-  default as NavigationPanelHeader
+  default as NavigationPanelHeader,
 } from "./elements/PanelHeaders/NavigationPanelHeader";
 export { default as Notification } from "./elements/Notification";
 export { default as MapSearch } from "./elements/MapSearch";
@@ -63,8 +64,9 @@ export {
   InputLabel,
   HelpText,
   ErrorText,
-  InputGroup
+  InputGroup,
 } from "./layout/Form";
+export { default as Grid } from "./layout/Grid";
 export { default as Layout } from "./layout/Layout";
 // export { default as Modal } from "./layout/Modal";
 export { default as Page } from "./layout/Page";
