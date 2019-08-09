@@ -1,20 +1,15 @@
 import React from "react";
 import List, { ListItem } from "blocks/List";
-import styled from "styled-components";
 import PropTypes from "prop-types";
 import { Piece } from "layout/Card";
 import SelectMenu from "atoms/SelectMenu";
 import Bar from "blocks/Bar";
-import Button from "atoms/Button";
 
 function UserEntry({ id, user, options }) {
   return (
-    <ListItem
-      id={id}
-      label={user}
-      action={<SelectMenu options={options} />}
-      actionWidth="25%"
-    />
+    <ListItem id={id} label={user}>
+      <SelectMenu width="50%" options={options} multiSelect />
+    </ListItem>
   );
 }
 
@@ -24,17 +19,23 @@ UserEntry.propTypes = {
   options: PropTypes.node,
 };
 
-function UserRoles({ id, addUser, children }) {
+function UserRoles({
+  id,
+  left,
+  right,
+  children,
+}) {
   return (
     <Piece id={id}>
       <Piece>
         <Bar
-          right={
-            <Button buttonLabel="Add User" type="solid" onClick={addUser} />
-          }
+          left={left}
+          right={right}
+          slotWidthLeft={left.props.width}
+          slotWidthRight={right.props.width}
         />
       </Piece>
-      <Bar left="User" right="Permission Type" />
+      <Bar left="User" right="Roles" />
       <List>{children}</List>
     </Piece>
   );
@@ -42,7 +43,8 @@ function UserRoles({ id, addUser, children }) {
 
 UserRoles.propTypes = {
   id: PropTypes.string,
-  addUser: PropTypes.func,
+  left: PropTypes.node,
+  right: PropTypes.node,
   children: PropTypes.node,
 };
 
