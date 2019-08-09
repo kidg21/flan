@@ -16,23 +16,23 @@ const StyledButton = styled.button`
   display: flex;
   flex: auto;
   flex-direction: column;
-  width: ${props => {
+  width: ${(props) => {
     return props.fullWidth ? "100%" : "auto";
   }};
-  padding: ${props => {
+  padding: ${(props) => {
     return props.buttonPadding || "0.5rem 0.7rem";
   }};
   justify-content: center;
   align-items: center;
-  color: ${props => {
+  color: ${(props) => {
     return props.textColor || colors.anchor;
   }};
-  background-color: ${props => {
+  background-color: ${(props) => {
     return props.backgroundColor || colors.white;
   }};
   border: 1px solid;
   border-radius: 4px;
-  font-size: ${props => {
+  font-size: ${(props) => {
     return props.labelSize || "inherit";
   }};
   font-weight: 600;
