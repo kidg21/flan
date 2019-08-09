@@ -11,6 +11,13 @@ const TableWrapper = styled.table`
   border-collapse: collapse;
   // display: flex-block;
   width: 100%;
+  &:empty {
+      ${SkeletonStatic};
+      padding: 5px;
+      width: 100 em;
+      height: 5rem;
+    }
+  }
 `;
 const Row = styled.tr`
   // &:hover {

@@ -8,7 +8,6 @@ const StyledIcon = styled(FontAwesomeIcon)`
   border: ${props => (props.border ? "2px solid" : "")};
   border-color: ${props => (props.border ? colors.grey_20 : "")};
   border-radius: ${props => (props.border ? "5px" : "")};
-  grid-area: icon;
 `;
 
 function Icon({
@@ -60,20 +59,17 @@ function Icon({
       pulse={pulse}
       border={border}
       pull={pull}
+      className={className}
       style={style}
       className={className}
     />
   );
 
   if (onClick) {
-    _icon = (<a onClick={onClick}>{_icon}</a>);
+    _icon = <a onClick={onClick}>{_icon}</a>;
   }
 
-  return (
-    <React.Fragment>
-      {_icon}
-    </React.Fragment>
-  );
+  return <React.Fragment>{_icon}</React.Fragment>;
 }
 
 Icon.propTypes = {

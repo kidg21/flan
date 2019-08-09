@@ -71,6 +71,7 @@ import {
   faDatabase,
   faDirections,
   faPlusCircle,
+  faMicroscope,
   faTimes as faTimesLight
 } from "@fortawesome/pro-light-svg-icons";
 // Brand
@@ -142,6 +143,7 @@ library.add(
   faLocationArrow,
   faMap,
   faMapMarkerAlt,
+  faMicroscope,
   faMinus,
   faMoneyBill,
   faPencil,

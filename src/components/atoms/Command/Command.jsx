@@ -7,7 +7,6 @@ import Icon from "atoms/Icon";
 const CommandContainer = styled.a`
   display: grid;
   grid-template-columns: auto 1fr;
-  justify-self: ${props => props.justifyCommand || ""};
   grid-template-areas: ${props => props.alignIcon || ""};
   justify-items: ${props => props.justifyIcon || ""};
   grid-gap: 0.5rem;
@@ -101,12 +100,10 @@ function Command({ id, name, label, icon, align, state, size, isDisabled }) {
   }
   switch (align) {
     case "center":
-      justifyCommand = "center";
       alignIcon = "'icon' 'name'";
       justifyIcon = "center";
       break;
     case "right":
-      justifyCommand = "flex-end";
       alignIcon = "'name icon'";
       break;
     default:

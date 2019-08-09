@@ -73,4 +73,4 @@ Switch.propTypes = {
   id: PropTypes.string
 };
 
-export { Switch as default };
+export default Switch;

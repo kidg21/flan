@@ -1,6 +1,5 @@
 import { css } from "styled-components";
 
-
 // Codes for color palette
 export const colors = {
   white: "hsl(0, 100%, 100%)",
@@ -33,16 +32,15 @@ export const colors = {
   government: "hsl(166, 100%, 28%)",
   insurance: "hsl(89, 39%, 50%)",
   homeBuilding: "hsl(43, 65%, 49%)",
-  realEstate: "hsl(12, 61%, 50%)"
+  realEstate: "hsl(12, 61%, 50%)",
 };
 
-
 export const Darken = css`
-  filter: brightness(85%)
+  filter: brightness(95%);
 `;
 
 export const Lighten = css`
-  filter: brightness(105%)
+  filter: brightness(105%);
 `;
 
 // Typefaces
@@ -51,12 +49,12 @@ export const fonts = {
   // headline: "Lato, sans-serif",
   body: "Muli, Arial, sans-serif",
   // body: "Lato, sans-serif",
-  data: "Muli, Arial, sans-serif"
+  data: "Muli, Arial, sans-serif",
 };
 
 // Sizes for typography scale
 export const fontSize = {
-  base: "14px"
+  base: "14px",
   // paragraph: '1rem',
   // h1: '2.75rem',
   // h2: '2.3125rem',
@@ -90,19 +88,19 @@ export const shadows = {
   checkedShadow:
     "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
   radioShadow:
-    "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsl(34, 5%, 95%) -1px 1px 0 0 inset, hsl(34, 5%, 95%) 1px -1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px"
+    "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsl(34, 5%, 95%) -1px 1px 0 0 inset, hsl(34, 5%, 95%) 1px -1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
 };
 
 // Media Queries
 const viewport = {
-  small: "0px",
-  medium: "640px",
-  large: "1024px",
-  xlarge: "1440px",
-  xxlarge: "1920px"
+  small: "640px",
+  medium: "641px",
+  large: "1025px",
+  xlarge: "1441px",
+  xxlarge: "1921px",
 };
 export const screen = {
-  small: `only screen and (min-width: ${viewport.small})`,
+  small: `only screen and (max-width: ${viewport.small})`,
   medium: `only screen and (min-width: ${viewport.medium})`,
   // medium: `only screen and (min-width: ${
   //   viewport.medium
@@ -112,5 +110,5 @@ export const screen = {
   // }) and (orientation: landscape)`,
   large: `only screen and (min-width: ${viewport.large})`,
   xlarge: `only screen and (min-width: ${viewport.xlarge})`,
-  xxlarge: `only screen and (min-width: ${viewport.xxlarge})`
+  xxlarge: `only screen and (min-width: ${viewport.xxlarge})`,
 };
