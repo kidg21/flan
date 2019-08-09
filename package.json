@@ -60,7 +60,6 @@
     "@storybook/react": "^5.0.10",
     "@storybook/theming": "^5.0.10",
     "babel-plugin-styled-components": "^1.10.0",
-<<<<<<< HEAD
     "babel-plugin-transform-class-properties": "6.24.1",
     "babel-preset-airbnb": "^3.2.1",
     "eslint": "^5.16.0",
@@ -73,8 +72,6 @@
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-chai-friendly": "^0.4.1",
     "eslint-plugin-cypress": "^2.0.1",
-=======
->>>>>>> master
     "mapbox-gl": "^1.0.0",
     "prettier": "^1.17.0",
     "react-mapbox-gl": "^4.4.0",
