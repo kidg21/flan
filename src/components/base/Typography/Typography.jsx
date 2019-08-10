@@ -15,7 +15,7 @@ const StyledText = styled.h4`
   font-weight: ${props => props.textWeight || "600"};
   text-align: ${props => props.textAlign || ""};
   letter-spacing: ${props => props.letterSpacing || ""};
-  margin: 0;
+  /* margin: 0; */
   font-style: ${props => props.textStyle || ""};
   text-decoration: ${props => props.textDecoration || ""};
   user-select: ${props => (props.select ? "all" : "")};
