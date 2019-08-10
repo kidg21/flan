@@ -80,6 +80,9 @@ function Icon({
     case "bookmark-solid":
       icon = "bookmark";
       break;
+    case "edit":
+      icon = ["far", "edit"];
+      break;
     default:
       break;
   }

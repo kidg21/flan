@@ -29,6 +29,11 @@ export const iconsApp = [
     icon: "bookmark",
     desc: placeholder.desc,
   },
+  {
+    name: "edit",
+    icon: "edit",
+    desc: placeholder.desc,
+  },
 ];
 
 // Navigation

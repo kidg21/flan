@@ -25,10 +25,9 @@ const IconGrid = styled(Grid)`
   grid-auto-flow: dense;
 `;
 
-const IconItem = styled(Grid)`
-  grid-template-columns: auto 1fr;
+const IconItem = styled(Bar)`
   &:hover {
-    color: ${colors.anchor};
+    color: ${colors.success};
     cursor: pointer;
   }
 `;
@@ -41,24 +40,17 @@ function IconSet({ data }) {
   return [
     data.map(item => (
       <Piece key={item.name} id={item.name}>
-        <Bar
-          left={
-            <IconItem gap="tiny">
-              <Icon name={item.name} size="2x" fixedWidth />
+        <IconItem
+          barAlign="center"
+          left={<Icon name={item.name} size="2x" fixedWidth />}
+          leftWidth="min-content"
+          center={
+            <>
               <Title title={item.name} size="large" select />
               <IconDescription title={item.desc} />
-              {/* <Title
-                title={"name=" + "'" + item.name + "'"}
-                size="small"
-                select
-              /> */}
-              {/* <Title
-                title={"icon=" + "'" + item.icon + "'"}
-                size="small"
-                select
-              /> */}
-            </IconItem>
+            </>
           }
+          centerAlign="left"
         />
       </Piece>
     )),
