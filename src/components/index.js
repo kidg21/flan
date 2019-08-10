@@ -24,6 +24,7 @@ export { default as Bar } from "./blocks/Bar";
 export { default as List, ListItem } from "./blocks/List";
 export { default as IconBlock } from "./blocks/IconBlock";
 export { default as MapLegend } from "./blocks/MapLegend";
+export { default as MediaBlock } from "./blocks/MediaBlock";
 export { default as Menu } from "./blocks/Menu";
 export { default as RangeSlider } from "./blocks/RangeSlider";
 export { default as Search } from "./blocks/Search";
