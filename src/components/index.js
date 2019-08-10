@@ -73,4 +73,4 @@ export { default as Page } from "./layout/Page";
 export { default as Panel, PanelSection } from "./layout/Panel";
 
 
-export {screen} from "./base/variables/variables.jsx";
+export {screen} from "./base/Variables/Variables.jsx";
