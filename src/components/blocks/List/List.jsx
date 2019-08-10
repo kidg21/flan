@@ -41,10 +41,6 @@ const ListItemWrapper = styled.li`
   }
 `;
 
-const Item = styled(Bar)`
-  align-items: center;
-`;
-
 function List({ id, title, children }) {
   return (
     <>
@@ -64,7 +60,7 @@ function ListItem({
   type,
   disabled,
   onClick,
-  widthRight,
+  rightWidth,
 }) {
   let itemColor;
   let itemBGColor;
@@ -110,7 +106,8 @@ function ListItem({
       onClick={onClick}
       disabled={disabled}
     >
-      <Item
+      <Bar
+        barAlign="center"
         left={
           <>
             {<Title title={label} />}
@@ -120,7 +117,7 @@ function ListItem({
           </>
         }
         right={action}
-        widthRight={actionWidth}
+        rightWidth={actionWidth}
       />
     </ListItemWrapper>
   );

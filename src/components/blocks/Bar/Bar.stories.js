@@ -169,6 +169,7 @@ storiesOf("Blocks|Bar", module)
       <Section>Icon Block / Text / Icon Block</Section>
       <Card>
         <Bar
+          barAlign="center"
           left={
             <IconBlock>
               <Icon icon="circle" />
@@ -190,6 +191,7 @@ storiesOf("Blocks|Bar", module)
       <Section>Text / Icon Block</Section>
       <Card>
         <Bar
+          barAlign="center"
           left={shortTitle}
           right={
             <IconBlock>
@@ -202,6 +204,7 @@ storiesOf("Blocks|Bar", module)
       </Card>
       <Card>
         <Bar
+          barAlign="center"
           left={
             <IconBlock>
               <Icon icon="circle" />
@@ -221,10 +224,10 @@ storiesOf("Blocks|Bar", module)
         <Bar left={image} right={multipleLines} />
       </Card>
       <Card>
-        <Bar center={multipleLines} right={image} />
+        <Bar center={multipleLines} centerAlign="left" right={image} />
       </Card>
       <Card>
-        <Bar left={image} center={multipleLines} />
+        <Bar left={image} center={multipleLines} centerAlign="right" />
       </Card>
     </Grid>
   ));
