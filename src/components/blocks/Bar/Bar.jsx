@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 const BarLayout = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: ${props => props.alignBar || ""};
+  align-items: ${props => props.alignContent || ""};
   flex-wrap: nowrap;
   justify-content: space-between;
   padding: 0.75em;
@@ -37,7 +37,7 @@ const Slot = styled.div`
 function Bar({
   id,
   setDisplay,
-  barAlign,
+  contentAlign,
   left,
   leftWidth,
   center,
@@ -47,15 +47,15 @@ function Bar({
   onClick,
   className,
 }) {
-  let alignBar;
+  let alignContent;
   let alignItems;
   let textAlign;
-  switch (barAlign) {
+  switch (contentAlign) {
     case "center":
-      alignBar = "center";
+      alignContent = "center";
       break;
     case "bottom":
-      alignBar = "flex-end";
+      alignContent = "flex-end";
       break;
     default:
       alignItems = "flex-start";
@@ -78,7 +78,7 @@ function Bar({
   return (
     <BarLayout
       id={id}
-      alignBar={alignBar}
+      alignContent={alignContent}
       onClick={onClick}
       className={className}
     >
@@ -127,7 +127,7 @@ Bar.propTypes = {
   /** Sets the vertical alignment of all content
    * Default: 'top'
    */
-  barAlign: PropTypes.oneOf(["center", "bottom"]),
+  contentAlign: PropTypes.oneOf(["center", "bottom"]),
   /** Used to define the content in the left 'slot' */
   left: PropTypes.any,
   /** Used to override the default flex ratio of the left 'slot' by increasing the setting a 'min-width' and 'max-width'.

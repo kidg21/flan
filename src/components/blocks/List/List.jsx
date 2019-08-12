@@ -129,7 +129,7 @@ function ListItem({
     >
       <DisabledContext.Provider value={disabled}>
         <Bar
-          barAlign="center"
+          contentAlign="center"
           left={
             <>
               {<Title title={label} />}

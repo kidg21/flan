@@ -44,7 +44,7 @@ function IconSet({ data }) {
     data.map(item => (
       <Piece key={item.name} id={item.name}>
         <IconItem
-          barAlign="center"
+          contentAlign="center"
           left={<Icon name={item.name} size="2x" fixedWidth />}
           leftWidth="min-content"
           center={

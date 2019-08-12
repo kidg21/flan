@@ -169,7 +169,7 @@ storiesOf("Blocks|Bar", module)
       <Section>Icon Block / Text / Icon Block</Section>
       <Card>
         <Bar
-          barAlign="center"
+          contentAlign="center"
           left={
             <IconBlock>
               <Icon icon="circle" />
@@ -191,7 +191,7 @@ storiesOf("Blocks|Bar", module)
       <Section>Text / Icon Block</Section>
       <Card>
         <Bar
-          barAlign="center"
+          contentAlign="center"
           left={shortTitle}
           right={
             <IconBlock>
@@ -204,7 +204,7 @@ storiesOf("Blocks|Bar", module)
       </Card>
       <Card>
         <Bar
-          barAlign="center"
+          contentAlign="center"
           left={
             <IconBlock>
               <Icon icon="circle" />
