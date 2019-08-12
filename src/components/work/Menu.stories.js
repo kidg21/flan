@@ -1,10 +1,12 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
-import Grid from "display/Grid";
+import Grid from "layout/Grid";
 import { Padding } from "helpers/Display";
-import DropdownMenu from "./EditMenu";
-import WhiteMenu from "./TrialMenu";
+import DropdownMenu from "blocks/Menu";
+import Title from "base/Typography";
+import Bar from "blocks/Bar";
+// import WhiteMenu from "../blocks/Menu/TrialMenu";
 
 const data = [
   { id: "a", name: "Save" },
@@ -14,14 +16,32 @@ const data = [
   { id: "e", name: "Layer" },
 ];
 
-storiesOf("Blocks|Menu", module)
+storiesOf("Work|Menu", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
   // .add("Trial", () => <TrialMenu />)
   .add("Documentation", () => (
-    <DropdownMenu data={data} position="bottomRight" />
+    <div>
+      <div>
+        <DropdownMenu data={data} position="bottomRight" type="black" />
+      </div>
+      <div>
+        <DropdownMenu data={data} position="bottomRight" type="white" />
+      </div>
+    </div>
   ))
-  .add("white menu", () => <WhiteMenu data={data} position="bottomRight" />)
+  .add("Trial", () => (
+    <Bar
+      right={
+        <DropdownMenu
+          data={data}
+          position="bottomLeft"
+          type="white"
+          object={<Title title="hello open me" />}
+        />
+      }
+    />
+  ))
   .add("Directions", () => (
     <Grid>
       <div>
