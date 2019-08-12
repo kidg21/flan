@@ -1,1 +1,1 @@
-export { default } from "./EditMenu.jsx";
+export { default } from "./Menu.jsx";

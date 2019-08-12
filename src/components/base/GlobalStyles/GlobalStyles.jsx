@@ -221,6 +221,9 @@ const GlobalStyles = createGlobalStyle`
     }
 /* Buttons */
     button {
+      &:focus {
+        outline: none;
+      }
       &:empty {
         &:before {
           ${Skeleton};

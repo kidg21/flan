@@ -32,7 +32,6 @@ storiesOf("Blocks|Banner", module)
       <Banner title="This is a Standard notification telling you stuff." />
     )),
   )
-  .add("Skeleton", withInfo()(() => <Banner />))
   .add("Standard Banners", () => (
     <Grid>
       <Banner title="This is a Standard notification telling you stuff." />
