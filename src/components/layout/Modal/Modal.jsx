@@ -5,7 +5,7 @@ import { PlaceholderText } from "helpers/Placeholders.jsx";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import Mapbox from "layout/Map";
-import { Body } from "base/Typography";
+import { Description } from "base/Typography";
 
 const fadeIn = keyframes`
   from {
@@ -178,7 +178,7 @@ function Modal({
         <Fragment>
           <ModalBG onClick={onClose} opacity={opacity} />
           <ContentWrapper>
-            <Body body={text} type="inverse" />
+            <Description title={text} type="inverse" />
           </ContentWrapper>
         </Fragment>
       );

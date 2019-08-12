@@ -36,6 +36,9 @@ const IconDescription = styled(Description)`
   grid-column: 1/-1;
 `;
 
+/** TODO: figure if this component should be re-usable.
+ * If it can, then find it a home.
+ */
 function IconSet({ data }) {
   return [
     data.map(item => (
@@ -46,7 +49,7 @@ function IconSet({ data }) {
           leftWidth="min-content"
           center={
             <>
-              <Title title={item.name} size="large" select />
+              <Title title={item.name} size="large" select="all" />
               <IconDescription title={item.desc} />
             </>
           }

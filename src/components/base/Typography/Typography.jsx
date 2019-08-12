@@ -1,16 +1,9 @@
 // Import dependencies
-import React, { Fragment } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 // Import colors and sizes variables
 import { colors, shadows, fonts, fontSize } from "Variables";
-
-const StyledDescription = styled.h5`
-  margin: 0;
-  color: ${props => props.textColor || colors.grey_80};
-  font-size: ${props => props.textSize || ""};
-  font-weight: ${props => props.textWeight || "500"};
-`;
 
 const CountContainer = styled.div`
   display: inline-flex;
@@ -22,23 +15,21 @@ const StyledText = styled.h4`
   font-weight: ${props => props.textWeight || "600"};
   text-align: ${props => props.textAlign || ""};
   letter-spacing: ${props => props.letterSpacing || ""};
-  /* margin: 0; */
   font-style: ${props => props.textStyle || ""};
   text-decoration: ${props => props.textDecoration || ""};
-  user-select: ${props => (props.select ? "all" : "")};
+  user-select: ${props => props.userSelect || ""};
 `;
 
-function Title({
+function Text({
   id,
   title,
-  type,
-  order,
-  style,
-  weight,
-  spacing,
   count,
+  type,
   size,
   align,
+  spacing,
+  style,
+  weight,
   select,
   className,
 }) {
@@ -48,7 +39,7 @@ function Title({
   let textAlign;
   let textStyle;
   let textDecoration;
-  let flexDirection;
+  let userSelect;
   let as;
   switch (type) {
     case "info":
@@ -123,16 +114,6 @@ function Title({
     default:
       break;
   }
-  switch (order) {
-    case "before":
-      flexDirection = "row";
-      break;
-    case "after":
-      flexDirection = "row-reverse";
-      break;
-    default:
-      break;
-  }
   switch (weight) {
     case "light":
       textWeight = "300";
@@ -141,8 +122,19 @@ function Title({
       textWeight = "500";
       break;
     case "bold":
-    default:
       textWeight = "700";
+      break;
+    default:
+      break;
+  }
+  switch (select) {
+    case "all":
+      userSelect = "all";
+      break;
+    case "none":
+      userSelect = "none";
+      break;
+    default:
       break;
   }
   return (
@@ -155,7 +147,7 @@ function Title({
       textAlign={textAlign}
       textStyle={textStyle}
       textDecoration={textDecoration}
-      select={select}
+      userSelect={userSelect}
       className={className}
     >
       {title}
@@ -168,126 +160,57 @@ function Title({
   );
 }
 
-function SubTitle({ id, title, select, className }) {
+function Title({ id, title, className, ...textProps }) {
+  return <Text id={id} title={title} className={className} {...textProps} />;
+}
+
+function SubTitle({ id, title, className, ...textProps }) {
   return (
-    <Title
+    <Text
       id={id}
       title={title}
-      select={select}
-      size=""
-      weight=""
       spacing="2x"
       type="light"
       className={className}
+      {...textProps}
     />
   );
 }
 
-function Description({ id, title, className }) {
+function Description({ id, title, className, ...textProps }) {
   return (
-    <Title
+    <Text
       id={id}
       title={title}
       size="tiny"
       weight="light"
       className={className}
+      {...textProps}
     />
   );
 }
 
-Title.propTypes = {
+Text.propTypes = {
   id: PropTypes.string,
-  title: PropTypes.any,
-  number: PropTypes.bool,
-  results: PropTypes.bool,
+  title: PropTypes.string,
+  count: PropTypes.number,
   weight: PropTypes.string,
-  type: PropTypes.string,
-  style: PropTypes.string,
-  size: PropTypes.string,
-};
-
-function Body({ id, body, type, weight, size, className }) {
-  let textColor;
-  let textWeight;
-  let textSize;
-  switch (type) {
-    case "info":
-      textColor = colors.anchor;
-      break;
-    case "success":
-      textColor = colors.success;
-      break;
-    case "warning":
-      textColor = colors.warning;
-      break;
-    case "alert":
-      textColor = colors.alert;
-      break;
-    case "inherit":
-      textColor = "inherit";
-      break;
-    case "inverse":
-      textColor = colors.white;
-      break;
-    default:
-      break;
-  }
-
-  switch (size) {
-    case "small":
-      textSize = "0.75rem";
-      break;
-    case "normal":
-      textSize = "0.875rem";
-      break;
-    case "large":
-      textSize = "1.25rem";
-      break;
-    case "xlarge":
-      textSize = "1.5rem";
-      break;
-    default:
-      break;
-  }
-  switch (weight) {
-    case "light":
-      textWeight = "500";
-      break;
-    case "normal":
-      textWeight = "600";
-      break;
-    case "bold":
-      textWeight = "700";
-      break;
-    default:
-      break;
-  }
-  return (
-    <StyledDescription
-      id={id}
-      textColor={textColor}
-      textWeight={textWeight}
-      textSize={textSize}
-    >
-      {body}
-    </StyledDescription>
-  );
-}
-
-Body.propTypes = {
-  id: PropTypes.string,
-  body: PropTypes.any,
-  weight: PropTypes.string,
-  type: PropTypes.string,
-  size: PropTypes.string,
-  order: PropTypes.string,
-  style: PropTypes.string,
-  size: PropTypes.string,
-  align: PropTypes.string,
-  spacing: PropTypes.string,
-  select: PropTypes.bool,
+  type: PropTypes.oneOf([
+    "info",
+    "success",
+    "warning",
+    "alert",
+    "dark",
+    "inverse",
+    "light",
+  ]),
+  size: PropTypes.oneOf(["tiny", "small", "large", "xlarge", "xxlarge"]),
+  align: PropTypes.oneOf(["center", "right"]),
+  spacing: PropTypes.oneOf(["2x", "3x"]),
+  style: PropTypes.oneOf(["underline", "italic"]),
+  weight: PropTypes.oneOf(["light", "normal", "bold"]),
+  select: PropTypes.oneOf(["all", "none"]),
   className: PropTypes.string,
 };
 
-// export default Title;
-export { Title as default, Body, SubTitle, Description };
+export { Title as default, SubTitle, Description };
