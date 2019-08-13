@@ -6,27 +6,43 @@ import Bar from "blocks/Bar";
 import Card, { Piece } from "layout/Card";
 import Title from "base/Typography";
 
-const HeaderSpace = styled.div`
-	padding-top: 0.7rem;
-	font-weight: 700;
+const Wrapper = styled.div`
+  padding: 1em;
 `;
 
-function NavigationPanelHeader({ id, title, onClickLeftIcon, onClickRightIcon }) {
-	return (
-		<Piece id={id}>
-			<HeaderSpace>
-				<Bar
-					left={<Icon icon={["far", "angle-left"]} size="lg" onClick={onClickLeftIcon} />}
-					center={<Title title={title} weight="bold" />}
-					right={<Icon icon={["far", "ellipsis-v"]} size="lg" onClick={onClickRightIcon} />}
-				/>
-			</HeaderSpace>
-		</Piece>
-	);
+function NavigationPanelHeader({
+  id,
+  title,
+  onClickLeftIcon,
+  onClickRightIcon,
+}) {
+  return (
+    <Piece id={id}>
+      <Wrapper>
+        <Bar
+          left={
+            <Icon
+              icon={["far", "angle-left"]}
+              size="lg"
+              onClick={onClickLeftIcon}
+            />
+          }
+          center={<Title title={title} weight="bold" />}
+          right={
+            <Icon
+              icon={["far", "ellipsis-v"]}
+              size="lg"
+              onClick={onClickRightIcon}
+            />
+          }
+        />
+      </Wrapper>
+    </Piece>
+  );
 }
 NavigationPanelHeader.propTypes = {
-	id: PropTypes.string,
-	title: PropTypes.any.isRequired,
-	onClick: PropTypes.func,
+  id: PropTypes.string,
+  title: PropTypes.any.isRequired,
+  onClick: PropTypes.func,
 };
 export default NavigationPanelHeader;

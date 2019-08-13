@@ -30,15 +30,15 @@ const Logo = styled.img`
 storiesOf("Work|Dialogue Box", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  .add("Default", () => (
+  .add("General/Default", () => (
     <DialogueBox
       header={
-        <Bar left={<Title title="Are you sure you want to do that?" />} />
+        <Bar left={<Title title="Hey are you sure your okay doing this?" />} />
       }
       content={
         <Bar
           left={
-            <Body body="This is the body of your message. So I'll ask again, are you sure you want to delete this layer?" />
+            <Body body="This is the body of your message. Tells you more about the action you are about to commit." />
           }
         />
       }
@@ -46,7 +46,7 @@ storiesOf("Work|Dialogue Box", module)
         <Bar
           right={
             <Grid columns="2">
-              <Button buttonLabel="Delete" />
+              <Button buttonLabel="Create" />
               <Button buttonLabel="Cancel" />
             </Grid>
           }
@@ -54,7 +54,7 @@ storiesOf("Work|Dialogue Box", module)
       }
     />
   ))
-  .add("Login", () => (
+  .add("General/Login", () => (
     <DialogueBox
       header={
         <Bar
@@ -105,7 +105,7 @@ storiesOf("Work|Dialogue Box", module)
       }
     />
   ))
-  .add("Save Box", () => (
+  .add("General/Save Box", () => (
     <DialogueBox
       header={<Bar left={<Title title="Save As" />} />}
       content={
@@ -145,7 +145,33 @@ storiesOf("Work|Dialogue Box", module)
       }
     />
   ))
-  .add("Add User to Role", () => (
+  .add("General/Delete", () => (
+    <DialogueBox
+      header={
+        <Bar
+          left={<Title title="Are you sure you want to delete this user?" />}
+        />
+      }
+      content={
+        <Bar
+          left={
+            <Body body="If you delete this user you will not be able to get back any information or work they have done. Their work will be lost forever." />
+          }
+        />
+      }
+      footer={
+        <Bar
+          right={
+            <Grid columns="2">
+              <Button buttonLabel="Delete" color="alert" type="solid" />
+              <Button buttonLabel="Cancel" color="alert" />
+            </Grid>
+          }
+        />
+      }
+    />
+  ))
+  .add("Role/Edit User List", () => (
     <DialogueBox
       header={<Bar left={<Title title="Edit User List for Role" />} />}
       content={
@@ -233,9 +259,9 @@ storiesOf("Work|Dialogue Box", module)
       }
     />
   ))
-  .add("Edit a Role", () => (
+  .add("Role/Edit Files", () => (
     <DialogueBox
-      header={<Bar left={<Title title="Edit Files for Role" />} />}
+      header={<Bar left={<Title title="Edit Files Role" />} />}
       content={
         <Bar
           left={
@@ -254,18 +280,9 @@ storiesOf("Work|Dialogue Box", module)
               />
               <Container>
                 <List>
-                  <ListItem
-                    label="File 3"
-                    action={<Icon icon={["far", "cog"]} />}
-                  />
-                  <ListItem
-                    label="file 2"
-                    action={<Icon icon={["far", "cog"]} />}
-                  />
-                  <ListItem
-                    label="file 1"
-                    action={<Icon icon={["far", "cog"]} />}
-                  />
+                  <ListItem label="File 3" action={<Icon icon="coffee" />} />
+                  <ListItem label="file 2" action={<Icon icon="coffee" />} />
+                  <ListItem label="file 1" action={<Icon icon="coffee" />} />
                 </List>
               </Container>
             </Section>
@@ -284,7 +301,7 @@ storiesOf("Work|Dialogue Box", module)
       }
     />
   ))
-  .add("Add a new User", () => (
+  .add("User/Add User", () => (
     <DialogueBox
       header={<Bar left={<Title title="+ Add a New User" />} />}
       content={
@@ -318,7 +335,7 @@ storiesOf("Work|Dialogue Box", module)
         <Bar
           right={
             <Grid columns="2">
-              <Button buttonLabel="Create" type="solid" />
+              <Button buttonLabel="Add" type="solid" />
               <Button buttonLabel="Cancel" />
             </Grid>
           }
@@ -326,7 +343,7 @@ storiesOf("Work|Dialogue Box", module)
       }
     />
   ))
-  .add("Edit a User", () => (
+  .add("User/Edit User", () => (
     <DialogueBox
       header={<Bar left={<Title title="Edit User" />} />}
       content={
@@ -363,32 +380,6 @@ storiesOf("Work|Dialogue Box", module)
             <Grid columns="2">
               <Button buttonLabel="Save" type="solid" />
               <Button buttonLabel="Cancel" />
-            </Grid>
-          }
-        />
-      }
-    />
-  ))
-  .add("Delete", () => (
-    <DialogueBox
-      header={
-        <Bar
-          left={<Title title="Are you sure you want to delete this user?" />}
-        />
-      }
-      content={
-        <Bar
-          left={
-            <Body body="If you delete this user you will not be able to get back any information or work they have done. Their work will be lost forever." />
-          }
-        />
-      }
-      footer={
-        <Bar
-          right={
-            <Grid columns="2">
-              <Button buttonLabel="Delete" color="alert" type="solid" />
-              <Button buttonLabel="Cancel" color="alert" />
             </Grid>
           }
         />
