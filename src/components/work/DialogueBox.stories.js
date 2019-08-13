@@ -137,7 +137,7 @@ storiesOf("Work|Dialogue Box", module)
         <Bar
           right={
             <Grid columns="2">
-              <Button buttonLabel="Done" type="solid" />
+              <Button buttonLabel="Save" type="solid" />
               <Button buttonLabel="Cancel" />
             </Grid>
           }
@@ -145,20 +145,17 @@ storiesOf("Work|Dialogue Box", module)
       }
     />
   ))
-  .add("Adding a New User Group", () => (
+  .add("Add User to Role", () => (
     <DialogueBox
-      header={<Bar left={<Title title="Create New User Group" />} />}
+      header={<Bar left={<Title title="Edit User List for Role" />} />}
       content={
         <Bar
           left={
             <Section>
-              <TextInput
-                inputLabel="Group Name"
-                placeholder="Type a descriptive name for your new group."
-              />
+              <Title title="Role: Developer" type="info" />
               <SelectMenu
                 multiSelect="true"
-                inputLabel="+ Add Group Users"
+                inputLabel="+ Add Users"
                 options={[
                   { value: "1", label: "Adam" },
                   { value: "2", label: "Oliver" },
@@ -236,49 +233,37 @@ storiesOf("Work|Dialogue Box", module)
       }
     />
   ))
-  .add("Editing a Role", () => (
+  .add("Edit a Role", () => (
     <DialogueBox
-      header={<Bar left={<Title title="Edit existing User Role" />} />}
+      header={<Bar left={<Title title="Edit Files for Role" />} />}
       content={
         <Bar
           left={
             <Section>
-              <SelectMenu
-                placeholder="Select one or many roles for this user."
-                inputLabel="Assign Roles"
-                options={[
-                  { value: "Marketing", label: "Marketing" },
-                  { value: "Acquisitions", label: "Acquisitions" },
-                  { value: "Developer", label: "Builder / Developer" },
-                  { value: "Admin", label: "Admin" },
-                ]}
-              />
-              <TextInput
-                inputLabel="Group Name"
-                placeholder="Type a descriptive name for your new group."
-              />
+              <Title title="Role: Developer" type="info" />
               <SelectMenu
                 multiSelect="true"
-                inputLabel="+ Add Group Users"
+                inputLabel="+ Files"
+                placeholder="Add Files for Role to access"
                 options={[
-                  { value: "1", label: "Adam" },
-                  { value: "2", label: "Oliver" },
-                  { value: "3", label: "Matt" },
-                  { value: "4", label: "Joe" },
+                  { value: "1", label: "Folder 1" },
+                  { value: "2", label: "Folder 2" },
+                  { value: "3", label: "Folder 3" },
+                  { value: "4", label: "File 24" },
                 ]}
               />
               <Container>
                 <List>
                   <ListItem
-                    label="User 3"
+                    label="File 3"
                     action={<Icon icon={["far", "cog"]} />}
                   />
                   <ListItem
-                    label="User 2"
+                    label="file 2"
                     action={<Icon icon={["far", "cog"]} />}
                   />
                   <ListItem
-                    label="User 1"
+                    label="file 1"
                     action={<Icon icon={["far", "cog"]} />}
                   />
                 </List>
@@ -335,6 +320,75 @@ storiesOf("Work|Dialogue Box", module)
             <Grid columns="2">
               <Button buttonLabel="Create" type="solid" />
               <Button buttonLabel="Cancel" />
+            </Grid>
+          }
+        />
+      }
+    />
+  ))
+  .add("Edit a User", () => (
+    <DialogueBox
+      header={<Bar left={<Title title="Edit User" />} />}
+      content={
+        <Bar
+          left={
+            <Section>
+              <TextInput
+                inputLabel="User Name"
+                placeholder="Elizabeth Gallagher"
+              />
+              <TextInput
+                inputLabel="User Account"
+                placeholder="egallagher@digmap.com "
+              />
+              <SelectMenu
+                multiSelect="true"
+                placeholder="Admin"
+                inputLabel="Roles"
+                options={[
+                  { value: "Marketing", label: "Marketing" },
+                  { value: "Acquisitions", label: "Acquisitions" },
+                  { value: "Developer", label: "Builder / Developer" },
+                  { value: "Admin", label: "Admin" },
+                ]}
+              />
+              <Title title="Delete User?" size="tiny" weight="light" />
+            </Section>
+          }
+        />
+      }
+      footer={
+        <Bar
+          right={
+            <Grid columns="2">
+              <Button buttonLabel="Save" type="solid" />
+              <Button buttonLabel="Cancel" />
+            </Grid>
+          }
+        />
+      }
+    />
+  ))
+  .add("Delete", () => (
+    <DialogueBox
+      header={
+        <Bar
+          left={<Title title="Are you sure you want to delete this user?" />}
+        />
+      }
+      content={
+        <Bar
+          left={
+            <Body body="If you delete this user you will not be able to get back any information or work they have done. Their work will be lost forever." />
+          }
+        />
+      }
+      footer={
+        <Bar
+          right={
+            <Grid columns="2">
+              <Button buttonLabel="Delete" color="alert" type="solid" />
+              <Button buttonLabel="Cancel" color="alert" />
             </Grid>
           }
         />
