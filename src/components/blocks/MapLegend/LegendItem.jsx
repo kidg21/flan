@@ -1,12 +1,10 @@
-import React, { Fragment } from "react";
+import React from "react";
 import styled from "styled-components";
-import PropTypes from "prop-types";
-import { colors, shadows, Lighten, Darken } from "Variables";
-
+import { colors } from "Variables";
 
 const LegendText = styled.li`
-  font-size: .86em;
- font-color: ${colors.grey_80};
+  font-size: 0.86em;
+  font-color: ${colors.grey_80};
   display: flex;
   list-style: none;
   margin-left: 0;
@@ -24,7 +22,7 @@ const LegendBox = styled.div`
 `;
 
 const Item = styled.button`
-  padding: .2em 2em .2em 2em;
+  padding: 0.2em 2em 0.2em 2em;
   border: 1px solid white;
   cursor: pointer;
   background: white;
@@ -35,10 +33,10 @@ const Item = styled.button`
   &:active {
     border-color: ${colors.grey_80};
     ${LegendBox} {
-        border: 1px solid black;
+      border: 1px solid black;
     }
     ${LegendText} {
-        font-weight: bold;
+      font-weight: bold;
     }
   }
   &:disabled {
@@ -51,20 +49,20 @@ const Item = styled.button`
   }
 `;
 
-
-
-function KeyItem ({id, onClick, isSelected, isDisabled, color, name}) { 
-return (
-  <Item
-  id={id}
-  onClick={onClick}
-  isSelected={isSelected}
-  isDisabled={isDisabled}
-  >
-  <LegendBox style={{ background: [color] }} />
-  <LegendText>{name}</LegendText>
-  </Item>
-);
+function KeyItem({
+  id,
+  onClick,
+  isSelected,
+  isDisabled,
+  color,
+  name,
+}) {
+  return (
+    <Item id={id} onClick={onClick} isSelected={isSelected} disabled={isDisabled}>
+      <LegendBox style={{ background: [color] }} />
+      <LegendText>{name}</LegendText>
+    </Item>
+  );
 }
 
 export default KeyItem;

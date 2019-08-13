@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Search from "blocks/Search";
-import Tabs, { Tab } from "blocks/Tabs";
-import { colors, shadows } from "Variables";
+import { colors, screen } from "Variables";
 
 const IconWrapper = styled.span`
   /* Needed for passing properties to children (animation, etc.) */
@@ -11,8 +10,12 @@ const IconWrapper = styled.span`
 
 const SearchContainer = styled.div`
   display: flex;
+  padding: 1em;
+  width: 100vw;
   flex-direction: column;
-  position: relative;
+  z-index: 1002;
+  position: absolute;
+
   ${IconWrapper} {
     position: absolute;
     right: 0;
@@ -21,10 +24,20 @@ const SearchContainer = styled.div`
     padding: 0.7em;
     cursor: pointer;
   }
+
+  @media ${screen.small} {
+    width: 100vw;
+  }
+
+  @media ${screen.medium} {
+    width: 40vw;
+  }
+  @media ${screen.large} {
+    width: 30vw;
+  }
 `;
 
 function MapSearch({ id, ...searchProps }) {
-  const [activeSingleTab, setActiveSingleTab] = useState("tab1");
   return (
     <SearchContainer id={id}>
       <Search {...searchProps} />
@@ -34,8 +47,7 @@ function MapSearch({ id, ...searchProps }) {
 
 MapSearch.propTypes = {
   id: PropTypes.string,
+  tabs: PropTypes.string,
 };
 
 export default MapSearch;
-
-///this one will need more work on setting up for logic like Autocomplete and everything else

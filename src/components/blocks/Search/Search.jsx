@@ -18,7 +18,7 @@ const SearchContainer = styled.div`
     right: 0;
     background-color: ${colors.white};
     margin: 0.2em;
-    padding: 0.7em;
+    padding: 0.6em;
     cursor: pointer;
   }
 `;

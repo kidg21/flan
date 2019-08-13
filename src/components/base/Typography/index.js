@@ -1,1 +1,1 @@
-export { default } from "./Typography.jsx";
+export { default, Body } from "./Typography.jsx";

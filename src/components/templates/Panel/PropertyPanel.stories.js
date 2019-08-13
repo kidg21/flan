@@ -2,14 +2,36 @@ import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import PropertyPanelHeader from "elements/PanelHeaders/PropertyPanelHeader";
 import Table from "blocks/Table";
+import { Wrapper } from "layout/Card";
 import InformationCardBar from "elements/CardBars/InformationCardBar";
 import Accordion from "blocks/Accordion";
 import Panel, { PanelSection } from "layout/Panel";
+import PropertyListCard from "elements/ListCards/PropertyListCard";
+
+const lotData = [
+  { id: "a", name: "Land Use", value: "Commercial" },
+  { id: "b", name: "Land Description", value: "Miscellaneous Commercial" },
+  { id: "c", name: "Lot Area", value: "62,344 SF | 1.43 Acres" },
+];
+
+const ownerData = [
+  { id: "a", name: "Owner", value: "1830 LA CIENEGA LLC" },
+  { id: "b", name: "Last Transfer", value: "12/31/14" },
+  { id: "c", name: "Last Market Sale", value: "10/31/13 for $11,000,110" },
+  { id: "d", name: "Opportunity Zone ", value: "No" },
+];
+
+const buildingData = [
+  { id: "a", name: "Value", value: "$11,851,071" },
+  { id: "b", name: "Square Feet", value: "34,529 SF" },
+  { id: "c", name: "# of Units", value: "1" },
+  { id: "d", name: "Year Built", value: "1950" },
+];
 
 const data = [
-  { id: "a", color: "Owners/Units", name: "Multiple Owners (2 Units)" },
-  { id: "b", color: "Master Parcel No.", name: "387483675638" },
-  { id: "c", color: "Zoning", name: "No Zone" }
+  { id: "a", name: "Owners/Units", value: "Multiple Owners (2 Units)" },
+  { id: "b", name: "Master Parcel No.", value: "387483675638" },
+  { id: "c", name: "Zoning", value: "No Zone" },
 ];
 
 storiesOf("Templates|Panel", module).add("Property Panel", () =>
@@ -23,10 +45,15 @@ storiesOf("Templates|Panel", module).add("Property Panel", () =>
     return (
       <Panel>
         <PanelSection>
-          <PropertyPanelHeader title="5201 California Ave. Irvine, California" />
+          <PropertyListCard
+            lotData={lotData}
+            ownerData={ownerData}
+            buildingData={buildingData}
+            address="2801 Kelvin Avenue, Irvine, CA 92614"
+            APN="374-342-8957"
+          />
         </PanelSection>
         <PanelSection body>
-          <Table data={data} />
           <Accordion
             header={<InformationCardBar title="Ownership" />}
             visibility={visibility}
@@ -34,7 +61,9 @@ storiesOf("Templates|Panel", module).add("Property Panel", () =>
               setVisibility(!visibility);
             }}
           >
-            <Table data={data} />
+            <Wrapper>
+              <Table data={data} />
+            </Wrapper>
           </Accordion>
           <Accordion
             header={<InformationCardBar title="Site Information" />}
@@ -43,9 +72,10 @@ storiesOf("Templates|Panel", module).add("Property Panel", () =>
               setVisibility2(!visibility2);
             }}
           >
-            <Table data={data} />
+            <Wrapper>
+              <Table data={data} />
+            </Wrapper>
           </Accordion>
-
           <Accordion
             header={<InformationCardBar title="Property Characteristics" />}
             visibility={visibility3}
@@ -53,9 +83,10 @@ storiesOf("Templates|Panel", module).add("Property Panel", () =>
               setVisibility3(!visibility3);
             }}
           >
-            <Table data={data} />
+            <Wrapper>
+              <Table data={data} />
+            </Wrapper>
           </Accordion>
-
           <Accordion
             header={<InformationCardBar title="Value and Tax" />}
             visibility={visibility4}
@@ -63,9 +94,10 @@ storiesOf("Templates|Panel", module).add("Property Panel", () =>
               setVisibility4(!visibility4);
             }}
           >
-            <Table data={data} />
+            <Wrapper>
+              <Table data={data} />
+            </Wrapper>
           </Accordion>
-
           <Accordion
             header={<InformationCardBar title="Last Market Sale" />}
             visibility={visibility5}
@@ -73,9 +105,10 @@ storiesOf("Templates|Panel", module).add("Property Panel", () =>
               setVisibility5(!visibility5);
             }}
           >
-            <Table data={data} />
+            <Wrapper>
+              <Table data={data} />
+            </Wrapper>
           </Accordion>
-
           <Accordion
             header={<InformationCardBar title="Site Views" />}
             visibility={visibility6}
@@ -83,10 +116,12 @@ storiesOf("Templates|Panel", module).add("Property Panel", () =>
               setVisibility6(!visibility6);
             }}
           >
-            <Table data={data} />
+            <Wrapper>
+              <Table data={data} />
+            </Wrapper>
           </Accordion>
         </PanelSection>
       </Panel>
     );
-  })
+  }),
 );
