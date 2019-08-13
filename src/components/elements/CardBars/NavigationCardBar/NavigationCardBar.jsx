@@ -8,10 +8,6 @@ import Card, { Piece } from "layout/Card";
 import Title from "base/Typography";
 import { colors } from "Variables";
 
-const Wrapper = styled.div`
-  padding: 0.5em;
-`;
-
 const Line = styled.div`
   display: flex;
   border-bottom: 1px solid ${colors.grey_light};
@@ -20,13 +16,11 @@ const Line = styled.div`
 function NavigationCardBar({ id, title, number, disabled, onClick }) {
   return (
     <Piece id={id} title={title} number={number} disabled={disabled}>
-      <Wrapper>
-        <Bar
-          left={<Title title={title} number={number} weight="normal" />}
-          right={<Icon icon={["far", "angle-right"]} />}
-          onClick={onClick}
-        />
-      </Wrapper>
+      <Bar
+        left={<Title title={title} number={number} weight="normal" />}
+        right={<Icon icon={["far", "angle-right"]} />}
+        onClick={onClick}
+      />
       <Line />
     </Piece>
   );

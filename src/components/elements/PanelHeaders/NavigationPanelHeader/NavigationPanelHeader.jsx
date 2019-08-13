@@ -6,10 +6,6 @@ import Bar from "blocks/Bar";
 import Card, { Piece } from "layout/Card";
 import Title from "base/Typography";
 
-const Wrapper = styled.div`
-  padding: 1em;
-`;
-
 function NavigationPanelHeader({
   id,
   title,
@@ -18,25 +14,23 @@ function NavigationPanelHeader({
 }) {
   return (
     <Piece id={id}>
-      <Wrapper>
-        <Bar
-          left={
-            <Icon
-              icon={["far", "angle-left"]}
-              size="lg"
-              onClick={onClickLeftIcon}
-            />
-          }
-          center={<Title title={title} weight="bold" />}
-          right={
-            <Icon
-              icon={["far", "ellipsis-v"]}
-              size="lg"
-              onClick={onClickRightIcon}
-            />
-          }
-        />
-      </Wrapper>
+      <Bar
+        left={
+          <Icon
+            icon={["far", "angle-left"]}
+            size="lg"
+            onClick={onClickLeftIcon}
+          />
+        }
+        center={<Title title={title} weight="bold" />}
+        right={
+          <Icon
+            icon={["far", "ellipsis-v"]}
+            size="lg"
+            onClick={onClickRightIcon}
+          />
+        }
+      />
     </Piece>
   );
 }
