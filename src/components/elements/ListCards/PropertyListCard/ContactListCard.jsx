@@ -17,7 +17,7 @@ function ContactListCard({ id, name, ownerAddress }) {
       <Bar
         left={
           <Titles>
-            <Title title={name} />
+            <Title text={name} />
             <p>
               {ownerAddress} <br />
               <a>Owner Portfolio</a>

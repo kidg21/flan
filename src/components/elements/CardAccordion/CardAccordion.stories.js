@@ -38,7 +38,7 @@ storiesOf("Elements|Card Accordion", module)
     React.createElement(() => {
       return (
         <CardAccordion
-          header={<InformationCardBar title="Ownership" />}
+          header={<InformationCardBar text="Ownership" />}
         >
           <Table data={data} />
         </CardAccordion>
@@ -52,7 +52,7 @@ storiesOf("Elements|Card Accordion", module)
         <CardAccordion
           header={
             <LayerCardBar
-              title="Demographics"
+              text="Demographics"
               switchProps={{
                 checked: switchChecked,
                 onChange: () => {
@@ -78,7 +78,7 @@ storiesOf("Elements|Card Accordion", module)
         <CardAccordion
           header={
             <LayerCardBar
-              title="Demographics"
+              text="Demographics"
               switchProps={{
                 checked: switchChecked,
                 onChange: () => {

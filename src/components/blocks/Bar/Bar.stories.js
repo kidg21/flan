@@ -39,15 +39,15 @@ const image = (
     height="50px"
   />
 );
-const shortTitle = <Title title="A Standard Title" />;
+const shortTitle = <Title text="A Standard Title" />;
 const longTitle = (
-  <Title title="A Title So Long That It May Take Up Multiple Lines" />
+  <Title text="A Title So Long That It May Take Up Multiple Lines" />
 );
 const multipleLines = (
   <>
-    <Title title="Towgood, Gary T." />
+    <Title text="Towgood, Gary T." />
     <Title
-      title="3082 Yellowstone Dr. Costa Mesa, CA 92612"
+      text="3082 Yellowstone Dr. Costa Mesa, CA 92612"
       size="small"
       weight="normal"
     />
@@ -71,9 +71,9 @@ storiesOf("Blocks|Bar", module)
     withInfo()(() => (
       <Card>
         <Bar
-          left={<Title title="Left" />}
-          center={<Title title="Center" />}
-          right={<Title title="Right" />}
+          left={<Title text="Left" />}
+          center={<Title text="Center" />}
+          right={<Title text="Right" />}
         />
       </Card>
     )),
@@ -93,9 +93,9 @@ storiesOf("Blocks|Bar", module)
           left={<Command />}
           center={
             <>
-              <Title title="Towgood, Gary T." />
+              <Title text="Towgood, Gary T." />
               <Title
-                title="3082 Yellowstone Dr. Costa Mesa, CA 92612"
+                text="3082 Yellowstone Dr. Costa Mesa, CA 92612"
                 size="small"
                 weight="normal"
               />

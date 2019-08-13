@@ -22,7 +22,7 @@ function NavigationPanelHeader({
             onClick={onClickLeftIcon}
           />
         }
-        center={<Title title={title} weight="bold" />}
+        center={<Title text={title} weight="bold" />}
         right={
           <Icon
             icon={["far", "ellipsis-v"]}

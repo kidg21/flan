@@ -10,7 +10,7 @@ function MainPanelHeader({ id, title }) {
   return (
     <Piece id={id}>
       <Bar
-        left={<Title title={title} weight="bold" />}
+        left={<Title text={title} weight="bold" />}
         right={<Icon icon={["far", "ellipsis-v"]} size="lg" />}
       />
     </Piece>

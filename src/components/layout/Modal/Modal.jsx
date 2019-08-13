@@ -178,7 +178,7 @@ function Modal({
         <Fragment>
           <ModalBG onClick={onClose} opacity={opacity} />
           <ContentWrapper>
-            <Description title={text} type="inverse" />
+            <Description text={text} type="inverse" />
           </ContentWrapper>
         </Fragment>
       );

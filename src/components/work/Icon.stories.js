@@ -32,9 +32,9 @@ const IconItem = styled(Bar)`
   }
 `;
 
-const IconDescription = styled(Description)`
-  grid-column: 1/-1;
-`;
+// const IconDescription = styled(Description)`
+//   grid-column: 1/-1;
+// `;
 
 /** TODO: figure if this component should be re-usable.
  * If it can, then find it a home.
@@ -49,8 +49,8 @@ function IconSet({ data }) {
           leftWidth="min-content"
           center={
             <>
-              <Title title={item.name} size="large" select="all" />
-              <IconDescription title={item.desc} />
+              <Title text={item.name} size="large" select="all" />
+              <Description text={item.desc} />
             </>
           }
           centerAlign="left"
@@ -64,7 +64,7 @@ storiesOf("Work|Application/Libraries/Icon Library", module)
   .addDecorator(Padding)
   .add("App Icons", () => (
     <Grid columns="1">
-      <Title title="App Icons" size="large" style="underline" />
+      <Title text="App Icons" size="large" style="underline" />
       <IconGrid>
         <IconSet data={iconsApp} />
       </IconGrid>
@@ -75,7 +75,7 @@ storiesOf("Work|Application/Libraries/Icon Library", module)
   .addDecorator(Padding)
   .add("Navigation Icons", () => (
     <Grid columns="1">
-      <Title title="Map Icons" size="large" style="underline" />
+      <Title text="Map Icons" size="large" style="underline" />
       <IconGrid>
         <IconSet data={iconsNavigation} />
       </IconGrid>
@@ -86,7 +86,7 @@ storiesOf("Work|Application/Libraries/Icon Library", module)
   .addDecorator(Padding)
   .add("Brand Icons", () => (
     <Grid columns="1">
-      <Title title="Brand Icons" size="large" style="underline" />
+      <Title text="Brand Icons" size="large" style="underline" />
       <IconGrid>
         <IconSet data={iconsBrand} />
       </IconGrid>

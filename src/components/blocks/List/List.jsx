@@ -59,7 +59,7 @@ const Item = styled(Bar)`
 function List({ id, title, children, interactive }) {
   return (
     <InteractiveContext.Provider value={interactive}>
-      {title ? <ListTitle title={title} weight="bold" /> : null}
+      {title ? <ListTitle text={title} weight="bold" /> : null}
       <ListWrapper id={id}>{children}</ListWrapper>
     </InteractiveContext.Provider>
   );
@@ -132,9 +132,9 @@ function ListItem({
           contentAlign="center"
           left={
             <>
-              {<Title title={label} />}
+              {<Title text={label} />}
               {description ? (
-                <Title title={description} size="small" weight="light" />
+                <Title text={description} size="small" weight="light" />
               ) : null}
             </>
           }

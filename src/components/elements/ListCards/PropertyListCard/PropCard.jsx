@@ -24,7 +24,7 @@ function PropCard({ id, address, landUse, price }) {
       <Bar
         left={
           <Titles>
-            <Title title={address} />
+            <Title text={address} />
             <p>
               {landUse} <br />
               {price}

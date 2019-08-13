@@ -22,7 +22,7 @@ const StyledText = styled.h4`
 
 function Text({
   id,
-  title,
+  text,
   count,
   type,
   size,
@@ -150,7 +150,7 @@ function Text({
       userSelect={userSelect}
       className={className}
     >
-      {title}
+      {text}
       {count ? (
         <CountContainer>
           <a>{count}</a>
@@ -160,15 +160,15 @@ function Text({
   );
 }
 
-function Title({ id, title, className, ...textProps }) {
-  return <Text id={id} title={title} className={className} {...textProps} />;
+function Title({ id, text, className, ...textProps }) {
+  return <Text id={id} text={text} className={className} {...textProps} />;
 }
 
-function SubTitle({ id, title, className, ...textProps }) {
+function SubTitle({ id, text, className, ...textProps }) {
   return (
     <Text
       id={id}
-      title={title}
+      text={text}
       spacing="2x"
       type="light"
       className={className}
@@ -177,11 +177,11 @@ function SubTitle({ id, title, className, ...textProps }) {
   );
 }
 
-function Description({ id, title, className, ...textProps }) {
+function Description({ id, text, className, ...textProps }) {
   return (
     <Text
       id={id}
-      title={title}
+      text={text}
       size="tiny"
       weight="light"
       className={className}
@@ -192,7 +192,7 @@ function Description({ id, title, className, ...textProps }) {
 
 Text.propTypes = {
   id: PropTypes.string,
-  title: PropTypes.string,
+  text: PropTypes.string,
   count: PropTypes.number,
   weight: PropTypes.string,
   type: PropTypes.oneOf([

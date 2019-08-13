@@ -28,14 +28,13 @@ const SwitchContainer = styled.div`
 
 function LayerCardBar({ id, title, icons, switchProps, disabled }) {
   return (
-    <Piece id={id} title={title} disabled={disabled}>
+    <Piece id={id} disabled={disabled}>
       {disabled ? (
         <Bar
           left={
             <SwitchContainer disabled="true">
-              {" "}
               <Switch />
-              <Title title={title} weight="normal" />
+              <Title text={title} weight="normal" />
             </SwitchContainer>
           }
           right={<IconBlock style={disabledblockStyle}>{icons}</IconBlock>}
@@ -44,9 +43,8 @@ function LayerCardBar({ id, title, icons, switchProps, disabled }) {
         <Bar
           left={
             <SwitchContainer>
-              {" "}
               <Switch {...switchProps} />
-              <Title title={title} weight="normal" />
+              <Title text={title} weight="normal" />
             </SwitchContainer>
           }
           right={<IconBlock style={blockStyle}>{icons}</IconBlock>}

@@ -152,8 +152,8 @@ function Banner({
     >
       {bannerType}
       <Message>
-        <Title title={title} />
-        {description ? <Description title={description} /> : null}
+        <Title text={title} />
+        {description ? <Description text={description} /> : null}
         {link ? <Link onClick={onClick}>{link}</Link> : null}
       </Message>
       <Close onClick={onClose}>
