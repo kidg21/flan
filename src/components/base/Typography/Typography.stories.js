@@ -19,20 +19,11 @@ storiesOf("Application|Style Guides/", module)
       </div>
       <Title title="SIZES" />
       <div>
-<<<<<<< HEAD
         <Title title="Default (Normal) Title" />
         <Title title="Small Title" size="small" />
         <Title title="Normal Title" size="normal" />
         <Title title="Large Title" size="large" />
         <Title title="XLarge Title" size="xlarge" />
-=======
-        <Title title="Tiny Title" size="tiny" />
-        <Title title="Small Title" size="small" />
-        <Title title="Standard Title" />
-        <Title title="Large Title" size="large" />
-        <Title title="XLarge Title" size="xlarge" />
-        <Title title="XXLarge Title" size="xxlarge" />
->>>>>>> master
       </div>
       <div style={{ padding: "20px" }} />
       <Title title="STYLE" />
@@ -46,14 +37,11 @@ storiesOf("Application|Style Guides/", module)
       <div>
         <Title title="Count Title" count="4" />
       </div>
-<<<<<<< HEAD
       <div style={{ padding: "20px" }} />
       <div>
         <Title title="Light Weight" weight="light" />
         <Title title="Normal Weight" weight="normal" />
         <Title title="Bold Weight" weight="bold" />
       </div>
-=======
->>>>>>> master
     </div>
   ));
