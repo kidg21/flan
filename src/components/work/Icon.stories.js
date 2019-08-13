@@ -32,10 +32,6 @@ const IconItem = styled(Bar)`
   }
 `;
 
-// const IconDescription = styled(Description)`
-//   grid-column: 1/-1;
-// `;
-
 /** TODO: figure if this component should be re-usable.
  * If it can, then find it a home.
  */
@@ -65,6 +61,7 @@ storiesOf("Work|Application/Libraries/Icon Library", module)
   .add("App Icons", () => (
     <Grid columns="1">
       <Title text="App Icons" size="large" style="underline" />
+      <SubTitle text="Click the name of the icon to select, copy, and use the value in the Icon's 'name' prop" />
       <IconGrid>
         <IconSet data={iconsApp} />
       </IconGrid>
@@ -75,7 +72,8 @@ storiesOf("Work|Application/Libraries/Icon Library", module)
   .addDecorator(Padding)
   .add("Navigation Icons", () => (
     <Grid columns="1">
-      <Title text="Map Icons" size="large" style="underline" />
+      <Title text="Navigation Icons" size="large" style="underline" />
+      <SubTitle text="Click the name of the icon to select, copy, and use the value in the Icon's 'name' prop" />
       <IconGrid>
         <IconSet data={iconsNavigation} />
       </IconGrid>
@@ -87,6 +85,7 @@ storiesOf("Work|Application/Libraries/Icon Library", module)
   .add("Brand Icons", () => (
     <Grid columns="1">
       <Title text="Brand Icons" size="large" style="underline" />
+      <SubTitle text="Click the name of the icon to select, copy, and use the value in the Icon's 'name' prop" />
       <IconGrid>
         <IconSet data={iconsBrand} />
       </IconGrid>

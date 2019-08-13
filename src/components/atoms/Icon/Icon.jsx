@@ -28,64 +28,46 @@ function Icon({
   className,
 }) {
   let iconColor;
-  switch (name) {
-    case "apple":
-      icon = ["fab", "apple"];
-      break;
-    case "facebook":
-      icon = ["fab", "facebook"];
-      break;
-    case "firefox":
-      icon = ["fab", "firefox"];
-      break;
-    case "google":
-      icon = ["fab", "google"];
-      break;
-    case "internet-explorer":
-      icon = ["fab", "internet-explorer"];
-      break;
-    case "twitter":
-      icon = ["fab", "twitter-square"];
-      break;
-    case "windows":
-      icon = ["fab", "windows"];
-      break;
-    case "menu":
-      icon = "bars";
-      break;
-    case "up":
-      icon = ["far", "angle-up"];
-      break;
-    case "down":
-      icon = ["far", "angle-down"];
-      break;
-    case "left":
-      icon = ["far", "angle-left"];
-      break;
-    case "right":
-      icon = ["far", "angle-right"];
-      break;
-    case "search":
-      icon = ["far", "search"];
-      break;
-    case "zoom-out":
-      icon = ["far", "search-minus"];
-      break;
-    case "zoom-in":
-      icon = ["far", "search-plus"];
-      break;
-    case "bookmark":
-      icon = ["far", "bookmark"];
-      break;
-    case "bookmark-solid":
-      icon = "bookmark";
-      break;
-    case "edit":
-      icon = ["far", "edit"];
-      break;
-    default:
-      break;
-  }
+  const iconHash = {
+    // Brand
+    apple: ["fab", "apple"],
+    facebook: ["fab", "facebook"],
+    firefox: ["fab", "firefox"],
+    internet_explorer: ["fab", "internet-explorer"],
+    twitter: ["fab", "twitter-square"],
+    windows: ["fab", "windows"],
+    // Navigation
+    down: ["far", "chevron-down"],
+    left: ["far", "chevron-left"],
+    menu: ["far", "bars"],
+    right: ["far", "chevron-right"],
+    up: ["far", "chevron-up"],
+    // App
+    address: ["far", "map-marked"],
+    analytics: "analytics",
+    apn: ["far", "hashtag"],
+    bookmark_solid: "bookmark",
+    bookmark: ["far", "bookmark"],
+    check_circle: "check-circle",
+    drawings: ["far", "pencil-ruler"],
+    edit: ["far", "edit"],
+    gps: ["far", "globe"],
+    info_circle: "info-circle",
+    info: "info",
+    layers: ["far", "layer-group"],
+    list: ["far", "list-ul"],
+    location: "map-marker-alt",
+    map: ["far", "map"],
+    my_location: ["far", "location-arrow"],
+    notification_solid: "bell",
+    notification: ["far", "bell"],
+    owner: "user-tag",
+    report: ["far", "file-chart-line"],
+    search: ["far", "search"],
+    zoom_in: ["far", "search-plus"],
+    zoom_out: ["far", "search-minus"],
+  };
+  icon = iconHash[name.toLowerCase()] || ["far", name.toLowerCase()];
   switch (type) {
     case "info":
       iconColor = colors.anchor;

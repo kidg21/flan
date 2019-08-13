@@ -6,32 +6,99 @@ const placeholder = {
 export const iconsApp = [
   {
     name: "search",
-    icon: '{["far", "search"]}',
     desc: placeholder.desc,
   },
   {
-    name: "zoom-out",
-    icon: '{["far", "search-minus"]}',
+    name: "zoom_out",
     desc: placeholder.desc,
   },
   {
-    name: "zoom-in",
-    icon: '{["far", "search-plus"]}',
+    name: "zoom_in",
     desc: placeholder.desc,
   },
   {
     name: "bookmark",
-    icon: '{["far", "bookmark"]}',
     desc: placeholder.desc,
   },
   {
-    name: "bookmark-solid",
-    icon: "bookmark",
+    name: "bookmark_solid",
     desc: placeholder.desc,
   },
   {
     name: "edit",
-    icon: "edit",
+    desc: placeholder.desc,
+  },
+
+  {
+    name: "notification",
+    desc: placeholder.desc,
+  },
+  {
+    name: "notification_solid",
+    desc: placeholder.desc,
+  },
+  {
+    name: "check",
+    desc: placeholder.desc,
+  },
+  {
+    name: "check_circle",
+    desc: placeholder.desc,
+  },
+  {
+    name: "location",
+    desc: placeholder.desc,
+  },
+  {
+    name: "my_location",
+    desc: placeholder.desc,
+  },
+  {
+    name: "map",
+    desc: placeholder.desc,
+  },
+  {
+    name: "address",
+    desc: placeholder.desc,
+  },
+  {
+    name: "owner",
+    desc: placeholder.desc,
+  },
+  {
+    name: "apn",
+    desc: placeholder.desc,
+  },
+  {
+    name: "gps",
+    desc: placeholder.desc,
+  },
+  {
+    name: "layers",
+    desc: placeholder.desc,
+  },
+  {
+    name: "analytics",
+    desc: placeholder.desc,
+  },
+  {
+    name: "report",
+    desc: placeholder.desc,
+  },
+  {
+    name: "info",
+    desc: placeholder.desc,
+  },
+  {
+    name: "info_circle",
+    desc: placeholder.desc,
+  },
+  {
+    name: "drawings",
+    desc: placeholder.desc,
+  },
+  {
+    name: "list",
     desc: placeholder.desc,
   },
 ];
@@ -40,27 +107,22 @@ export const iconsApp = [
 export const iconsNavigation = [
   {
     name: "menu",
-    icon: "bars",
     desc: placeholder.desc,
   },
   {
     name: "up",
-    icon: "up",
     desc: placeholder.desc,
   },
   {
     name: "down",
-    icon: "down",
     desc: placeholder.desc,
   },
   {
     name: "left",
-    icon: "left",
     desc: placeholder.desc,
   },
   {
     name: "right",
-    icon: "right",
     desc: placeholder.desc,
   },
 ];
@@ -69,37 +131,26 @@ export const iconsNavigation = [
 export const iconsBrand = [
   {
     name: "apple",
-    icon: '{["far", "apple"]}',
     desc: placeholder.desc,
   },
   {
     name: "facebook",
-    icon: '{["far", "facebook"]}',
     desc: placeholder.desc,
   },
   {
     name: "firefox",
-    icon: '{["far", "firefox"]}',
     desc: placeholder.desc,
   },
   {
-    name: "internet-explorer",
-    icon: '{["far", "internet-explorer"]}',
+    name: "internet_explorer",
     desc: placeholder.desc,
   },
   {
     name: "twitter",
-    icon: '{["far", "twitter-square"]}',
     desc: placeholder.desc,
   },
   {
     name: "windows",
-    icon: '{["far", "windows"]}',
     desc: placeholder.desc,
   },
 ];
-
-// for (let i = 0; i < iconsBrand.length; i++) {
-//   let brand = iconsBrand[i];
-//   brand.desc = brand.name + "apples";
-// }
