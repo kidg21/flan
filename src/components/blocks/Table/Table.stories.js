@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import Table from "blocks/Table";
 import { withInfo } from "@storybook/addon-info";
@@ -23,14 +23,15 @@ storiesOf("Blocks|Table", module)
   ))
   .add("React Virtualized Table", () =>
     React.createElement(() => {
+      // which data cell should get highlighted, -1 means that none should
+      // rowIndex === 0, is the header and will not get highlighted
+      const [ highlightRowIndex, setHighlightRowIndex ] = useState(-1);
       const cache = new CellMeasurerCache({
         defaultWidth: 100,
         minWidth: 50,
         fixedHeight: true,
       });
       function cellRenderer({ columnIndex, key, parent, style, rowIndex}) {
-        let header = false;
-        if (rowIndex === 0) header = true;
         return (
           <CellMeasurer
             cache={cache}
@@ -39,11 +40,23 @@ storiesOf("Blocks|Table", module)
             parent={parent}
             rowIndex={rowIndex}
           >
-            <CellWrapper style={style} isHeader={header} evenRow={rowIndex % 2 === 0}>
+            <CellWrapper
+              style={style}
+              isHeader={rowIndex === 0}
+              evenRow={rowIndex % 2 === 0}
+              isHighlighted={rowIndex === highlightRowIndex && rowIndex !== 0}
+              onMouseOver={() => {
+                console.log(rowIndex);
+                setHighlightRowIndex(rowIndex);
+              }}
+              onMouseOut={() => {
+                setHighlightRowIndex(-1);
+              }}
+            >
               {"sampleText"}
             </CellWrapper>
           </CellMeasurer>
-        )
+        );
       }
       return (
         <MultiGridWrapper>

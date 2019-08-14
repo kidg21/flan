@@ -17,5 +17,13 @@ export const CellWrapper = styled.div`
   font-size: small;
   color: ${props => props.isHeader ? "#83a3c2" : "black"};
   font-weight: ${props => props.isHeader ? "bold" : null};
-  background-color: ${props => props.evenRow ? "#f0f5fb" : "white"};
+  background-color: ${(props) => {
+    if (props.isHighlighted) {
+      return "pink";
+    }
+    if (props.evenRow) {
+      return "#f0f5fb";
+    }
+    return "white";
+  }};
 `;
