@@ -121,7 +121,7 @@ function Banner({
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
-          <Icon icon="exclamation" fixedWidth warning />
+          <Icon icon="alert" fixedWidth warning />
         </StatusBadge>
       );
       break;
@@ -130,7 +130,7 @@ function Banner({
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
-          <Icon icon="times" fixedWidth alert />
+          <Icon icon="close" fixedWidth alert />
         </StatusBadge>
       );
       break;
@@ -157,7 +157,7 @@ function Banner({
         {link ? <Link onClick={onClick}>{link}</Link> : null}
       </Message>
       <Close onClick={onClose}>
-        <Icon icon="times" />
+        <Icon icon="close" />
       </Close>
     </StyledBanner>
   );

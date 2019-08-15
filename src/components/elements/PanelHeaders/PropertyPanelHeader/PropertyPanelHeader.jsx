@@ -33,10 +33,10 @@ function PropertyPanelHeader({ id, title, APN }) {
               <Title text={title} weight="bold" />
               <ApnSpan>APN: {APN}</ApnSpan>
             </Location>
-            <Icon icon={["fal", "directions"]} size="2x" type="info" onClick />
+            <Icon icon="directions" size="2x" type="info" onClick />
           </PropertyContainer>
         }
-        right={<Icon icon={["far", "ellipsis-v"]} size="lg" />}
+        right={<Icon icon="options" size="lg" />}
       />
     </Piece>
   );

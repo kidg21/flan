@@ -146,12 +146,6 @@ const Close = styled.section`
   }
 `;
 
-// const Text = styled.h5`
-//   color: ${colors.white};
-//   margin: 0;
-//   padding: 1rem 0;
-// `;
-
 function Modal({
   id,
   type,
@@ -188,7 +182,7 @@ function Modal({
         <Fragment>
           <Mapbox />
           <Close onClick={onClose}>
-            <Icon icon="times" size="lg" fixedWidth />
+            <Icon icon="close" type="inverse" size="lg" fixedWidth />
           </Close>
         </Fragment>
       );
@@ -200,7 +194,7 @@ function Modal({
           <ModalBG onClick={onClose} opacity={opacity} />
           <Image src={image} />
           <Close onClick={onClose}>
-            <Icon icon="times" size="lg" inverse fixedWidth />
+            <Icon icon="close" type="inverse" size="lg" inverse fixedWidth />
           </Close>
         </Fragment>
       );

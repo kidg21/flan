@@ -44,8 +44,8 @@ storiesOf("Atoms|Button", module)
           {
             "no icon": null,
             user: "user",
-            "angle down": ["far", "angle-down"],
-            bookmark: ["far", "bookmark"],
+            down: "down",
+            bookmark: "bookmark_solid",
             plus: "plus",
             print: "print",
           },
@@ -114,10 +114,10 @@ storiesOf("Atoms|Button", module)
           <Button buttonLabel="Small Button" size="small" />
           <Button buttonLabel="Large Button" size="large" />
           <Button buttonLabel="Disabled Button" disabled />
-          <Button buttonLabel="Icon Button" icon={["fas", "user"]} />
+          <Button buttonLabel="Icon Button" icon="user" />
           <Button
             buttonLabel="Large / Alert / Icon Button"
-            icon={["fas", "user"]}
+            icon="user"
             size="large"
             type="solid"
             color="alert"

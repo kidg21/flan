@@ -29,9 +29,7 @@ const Item = styled.li`
   color: white;
 `;
 
-
-
-function EditMenu({ id, data, position}) {
+function EditMenu({ id, data, position }) {
   let badgeLeft = "100%";
   let badgeBottom = "100%";
   let badgeTransform = "translate(-90%, 50%)";
@@ -42,7 +40,7 @@ function EditMenu({ id, data, position}) {
       badgeTransform = "translate(-96%, 5%)";
       break;
     case "topRight":
-        badgeTransform = "translate(-2%, 5%)";
+      badgeTransform = "translate(-2%, 5%)";
       break;
     case "bottomRight":
       badgeBottom = "0";
@@ -53,12 +51,12 @@ function EditMenu({ id, data, position}) {
       badgeLeft = "0";
       badgeTransform = "translate(-96%, 95%)";
       break;
-      case "bottomCenter":
+    case "bottomCenter":
       badgeBottom = "0";
       badgeLeft = "0";
       badgeTransform = "translate(-45%, 98%)";
       break;
-      case "topCenter":
+    case "topCenter":
       badgeBottom = "0";
       badgeLeft = "0";
       badgeTransform = "translate(-45%, -20%)";
@@ -68,25 +66,26 @@ function EditMenu({ id, data, position}) {
   }
   return (
     <Container
-    id={id}
+      id={id}
       onClick={() => {
         setVisibility(!visibility);
       }}
     >
-      <Icon icon={["far", "ellipsis-v"]} size="lg" />
+      <Icon icon="options" size="lg" />
       {visibility ? (
-      <Menu
-      badgeTransform={badgeTransform}
-      badgeLeft={badgeLeft}
-      badgeBottom={badgeBottom}
-      >
-      {data.map(item => 
-      <Item key={item.id}>{item.name}</Item>)}
-      </Menu>): null}
+        <Menu
+          badgeTransform={badgeTransform}
+          badgeLeft={badgeLeft}
+          badgeBottom={badgeBottom}
+        >
+          {data.map(item => (
+            <Item key={item.id}>{item.name}</Item>
+          ))}
+        </Menu>
+      ) : null}
     </Container>
   );
-};
-
+}
 
 EditMenu.propTypes = {
   id: PropTypes.string,
@@ -97,9 +96,8 @@ EditMenu.propTypes = {
     "bottomRight",
     "bottomLeft",
     "bottomCenter",
-    "topCenter"
+    "topCenter",
   ]),
-
 };
 
 export default EditMenu;

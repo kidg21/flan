@@ -74,7 +74,7 @@ function Menu({ id, data, position }) {
         setVisibility(!visibility);
       }}
     >
-      <Icon icon={["far", "ellipsis-v"]} size="lg" />
+      <Icon icon="options" size="lg" />
       {visibility ? (
         <MenuContainer
           badgeTransform={badgeTransform}

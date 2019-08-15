@@ -147,9 +147,9 @@ storiesOf("Blocks|Bar", module)
       <Section>One Icon per section</Section>
       <Card>
         <Bar
-          left={<Icon icon="coffee" />}
-          center={<Icon icon="coffee" />}
-          right={<Icon icon="coffee" />}
+          left={<Icon icon="circle_solid" />}
+          center={<Icon icon="circle_solid" />}
+          right={<Icon icon="circle_solid" />}
         />
       </Card>
 
@@ -158,9 +158,9 @@ storiesOf("Blocks|Bar", module)
         <Bar
           left={
             <IconBlock>
-              <Icon icon="circle" />
-              <Icon icon="circle" anchor />
-              <Icon icon="circle" success />
+              <Icon icon="circle_solid" />
+              <Icon icon="circle_solid" anchor />
+              <Icon icon="circle_solid" success />
             </IconBlock>
           }
         />
@@ -172,17 +172,17 @@ storiesOf("Blocks|Bar", module)
           contentAlign="center"
           left={
             <IconBlock>
-              <Icon icon="circle" />
-              <Icon icon="circle" anchor />
-              <Icon icon="circle" success />
+              <Icon icon="circle_solid" />
+              <Icon icon="circle_solid" anchor />
+              <Icon icon="circle_solid" success />
             </IconBlock>
           }
           center={longTitle}
           right={
             <IconBlock>
-              <Icon icon="circle" />
-              <Icon icon="circle" anchor />
-              <Icon icon="circle" success />
+              <Icon icon="circle_solid" />
+              <Icon icon="circle_solid" anchor />
+              <Icon icon="circle_solid" success />
             </IconBlock>
           }
         />
@@ -195,9 +195,9 @@ storiesOf("Blocks|Bar", module)
           left={shortTitle}
           right={
             <IconBlock>
-              <Icon icon="circle" />
-              <Icon icon="circle" anchor />
-              <Icon icon="circle" success />
+              <Icon icon="circle_solid" />
+              <Icon icon="circle_solid" anchor />
+              <Icon icon="circle_solid" success />
             </IconBlock>
           }
         />
@@ -207,9 +207,9 @@ storiesOf("Blocks|Bar", module)
           contentAlign="center"
           left={
             <IconBlock>
-              <Icon icon="circle" />
-              <Icon icon="circle" anchor />
-              <Icon icon="circle" success />
+              <Icon icon="circle_solid" />
+              <Icon icon="circle_solid" anchor />
+              <Icon icon="circle_solid" success />
             </IconBlock>
           }
           right={shortTitle}

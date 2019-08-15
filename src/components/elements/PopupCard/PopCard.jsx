@@ -9,7 +9,7 @@ import Bar from "blocks/Bar";
 function PopCard({ id, title, message, buttonLabel1, buttonLabel2 }) {
   return (
     <Card id={id}>
-      <Bar type="one" right={<Icon icon={["fal", "times"]} />} />
+      <Bar type="one" right={<Icon icon="close" />} />
       <Bar type="three" center={title} />
       <Bar type="three" center={message} />
       <Button buttonLabel={buttonLabel1} isRound={true} />

@@ -407,22 +407,6 @@ export const iconsNavigation = [
     icon: "right",
     desc: placeholder.desc,
   },
-  {
-    icon: "up_angle",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "down_angle",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "left_angle",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "right_angle",
-    desc: placeholder.desc,
-  },
 ];
 
 // Brands

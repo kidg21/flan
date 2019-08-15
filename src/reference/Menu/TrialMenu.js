@@ -76,7 +76,7 @@ function WhiteMenu({ id, data, position }) {
         setVisibility(!visibility);
       }}
     >
-      <Icon icon={["far", "ellipsis-v"]} size="lg" />
+      <Icon icon="options" size="lg" />
       {visibility ? (
         <Menu
           badgeTransform={badgeTransform}

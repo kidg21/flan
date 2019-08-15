@@ -24,7 +24,7 @@ function InformationCardBar({ id, title, count }) {
       <Bar
         onClick={toggleLeft}
         left={<Title text={title} count={count} weight="normal" />}
-        right={<Arrow leftOnscreen={leftOnscreen} icon={["far", "angle-up"]} />}
+        right={<Arrow leftOnscreen={leftOnscreen} icon="up" />}
       />
     </Piece>
   );

@@ -24,13 +24,13 @@ function ContactListCard({ id, name, ownerAddress }) {
             </p>
             <IconBlock>
               <a>
-                <Icon icon="phone" />
+                <Icon icon="call" />
               </a>
               <a>
-                <Icon icon={["far", "share"]} />
+                <Icon icon="share" />
               </a>
               <a>
-                <Icon icon={["fal", "clone"]} />
+                <Icon icon="clone" />
               </a>
             </IconBlock>
           </Titles>

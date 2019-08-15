@@ -15,21 +15,9 @@ function NavigationPanelHeader({
   return (
     <Piece id={id}>
       <Bar
-        left={
-          <Icon
-            icon={["far", "angle-left"]}
-            size="lg"
-            onClick={onClickLeftIcon}
-          />
-        }
+        left={<Icon icon="left" size="lg" onClick={onClickLeftIcon} />}
         center={<Title text={title} weight="bold" />}
-        right={
-          <Icon
-            icon={["far", "ellipsis-v"]}
-            size="lg"
-            onClick={onClickRightIcon}
-          />
-        }
+        right={<Icon icon="options" size="lg" onClick={onClickRightIcon} />}
       />
     </Piece>
   );

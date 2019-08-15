@@ -7,9 +7,9 @@ import { Padding } from "helpers/Display";
 
 const Icons = (
   <React.Fragment>
-    <Icon icon={["far", "expand-arrows"]} />
-    <Icon icon={["far", "share"]} />
-    <Icon icon={["far", "filter"]} />
+    <Icon icon="expand" />
+    <Icon icon="share" />
+    <Icon icon="filter" />
   </React.Fragment>
 );
 
