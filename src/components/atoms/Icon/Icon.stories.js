@@ -83,7 +83,7 @@ const blockStyle = {
 
 storiesOf("Atoms|Icon", module)
   .addDecorator(Padding)
-  .add("Documentation", withInfo()(() => <Icon icon="coffee" />));
+  .add("Documentation", withInfo()(() => <Icon icon="circle" />));
 
 storiesOf("Atoms|Icon", module)
   .addParameters({
@@ -96,7 +96,7 @@ storiesOf("Atoms|Icon", module)
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
-  .add("Documentation", withInfo()(() => <Icon icon="coffee" size="lg" />))
+  .add("Documentation", withInfo()(() => <Icon icon="circle" size="lg" />))
   .add("Icon Colors", () => (
     <Grid columns="3" style={{ fontSize: "2em" }}>
       <Title>
@@ -110,27 +110,27 @@ storiesOf("Atoms|Icon", module)
         'alert', 'inverse'
       </SubTitle>
       <StaticIcon>
-        <Icon icon="coffee" />
+        <Icon icon="circle" />
         <IconLabel>standard</IconLabel>
       </StaticIcon>
       <StaticIcon>
-        <Icon icon="coffee" type="info" />
+        <Icon icon="circle" type="info" />
         <IconLabel>info</IconLabel>
       </StaticIcon>
       <StaticIcon>
-        <Icon icon="coffee" type="success" />
+        <Icon icon="circle" type="success" />
         <IconLabel>success</IconLabel>
       </StaticIcon>
       <StaticIcon>
-        <Icon icon="coffee" type="warning" />
+        <Icon icon="circle" type="warning" />
         <IconLabel>warning</IconLabel>
       </StaticIcon>
       <StaticIcon>
-        <Icon icon="coffee" type="alert" />
+        <Icon icon="circle" type="alert" />
         <IconLabel>alert</IconLabel>
       </StaticIcon>
       <StaticIcon style={{ backgroundColor: "black" }}>
-        <Icon icon="coffee" type="inverse" />
+        <Icon icon="circle" type="inverse" />
         <IconLabel style={{ color: "white" }}>inverse</IconLabel>
       </StaticIcon>
     </Grid>
@@ -149,55 +149,55 @@ storiesOf("Atoms|Icon", module)
         '4x', '5x', '6x', '7x', '8x', '9x', '10x'
       </SubTitle>
       <StaticIcon>
-        <Icon icon="coffee" size="xs" />
+        <Icon icon="circle" size="xs" />
         <IconLabel>xs</IconLabel>
       </StaticIcon>
       <StaticIcon>
-        <Icon icon="coffee" size="sm" />
+        <Icon icon="circle" size="sm" />
         <IconLabel>sm</IconLabel>
       </StaticIcon>
       <StaticIcon>
-        <Icon icon="coffee" />
+        <Icon icon="circle" />
         <IconLabel>default</IconLabel>
       </StaticIcon>
       <StaticIcon>
-        <Icon icon="coffee" size="lg" />
+        <Icon icon="circle" size="lg" />
         <IconLabel>lg</IconLabel>
       </StaticIcon>
       <StaticIcon>
-        <Icon icon="coffee" size="2x" />
+        <Icon icon="circle" size="2x" />
         <IconLabel>2x</IconLabel>
       </StaticIcon>
       <StaticIcon>
-        <Icon icon="coffee" size="3x" />
+        <Icon icon="circle" size="3x" />
         <IconLabel>3x</IconLabel>
       </StaticIcon>
       <StaticIcon>
-        <Icon icon="coffee" size="4x" />
+        <Icon icon="circle" size="4x" />
         <IconLabel>4x</IconLabel>
       </StaticIcon>
       <StaticIcon>
-        <Icon icon="coffee" size="5x" />
+        <Icon icon="circle" size="5x" />
         <IconLabel>5x</IconLabel>
       </StaticIcon>
       <StaticIcon>
-        <Icon icon="coffee" size="6x" />
+        <Icon icon="circle" size="6x" />
         <IconLabel>6x</IconLabel>
       </StaticIcon>
       <StaticIcon>
-        <Icon icon="coffee" size="7x" />
+        <Icon icon="circle" size="7x" />
         <IconLabel>7x</IconLabel>
       </StaticIcon>
       <StaticIcon>
-        <Icon icon="coffee" size="8x" />
+        <Icon icon="circle" size="8x" />
         <IconLabel>8x</IconLabel>
       </StaticIcon>
       <StaticIcon>
-        <Icon icon="coffee" size="9x" />
+        <Icon icon="circle" size="9x" />
         <IconLabel>9x</IconLabel>
       </StaticIcon>
       <StaticIcon>
-        <Icon icon="coffee" size="10x" />
+        <Icon icon="circle" size="10x" />
         <IconLabel>10x</IconLabel>
       </StaticIcon>
     </Grid>
@@ -208,7 +208,7 @@ storiesOf("Atoms|Icon", module)
         <u>Pulled + Bordered</u>
       </Title>
       <div>
-        <Icon icon="coffee" size="3x" pull="left" />
+        <Icon icon="circle" size="3x" pull="left" />
         <p>
           <u>
             <b>Pulled Left</b>
@@ -222,7 +222,7 @@ storiesOf("Atoms|Icon", module)
         </p>
       </div>
       <div>
-        <Icon icon="coffee" size="3x" border={true} pull="left" />
+        <Icon icon="circle" size="3x" border={true} pull="left" />
         <p>
           <u>
             <b>Pulled Left with Border</b>
@@ -236,7 +236,7 @@ storiesOf("Atoms|Icon", module)
         </p>
       </div>
       <div>
-        <Icon icon="coffee" size="3x" pull="right" />
+        <Icon icon="circle" size="3x" pull="right" />
         <p>
           <u>
             <b>Pulled Right</b>
@@ -250,7 +250,7 @@ storiesOf("Atoms|Icon", module)
         </p>
       </div>
       <div>
-        <Icon icon="coffee" size="3x" border={true} pull="right" />
+        <Icon icon="circle" size="3x" border={true} pull="right" />
         <p>
           <u>
             <b>Pulled Right with Border</b>
@@ -275,11 +275,11 @@ storiesOf("Atoms|Icon", module)
         <Success>pulse</Success> to have it rotate with 8 steps.
       </SubTitle>
       <StaticIcon>
-        <Icon icon="spinner" spin={true} />
+        <Icon name="loading" spin={true} />
         <IconLabel>spin</IconLabel>
       </StaticIcon>
       <StaticIcon>
-        <Icon icon="spinner" pulse={true} />
+        <Icon name="loading" pulse={true} />
         <IconLabel>pulse</IconLabel>
       </StaticIcon>
     </Grid>
@@ -436,7 +436,7 @@ storiesOf("Application|Libraries/", module)
         <IconLabel>"far", "code"</IconLabel>
       </ActiveIcon>
       <ActiveIcon>
-        <Icon icon="coffee" />
+        <Icon icon="circle" />
         <IconLabel>coffee</IconLabel>
       </ActiveIcon>
       <ActiveIcon>

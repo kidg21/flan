@@ -2,6 +2,47 @@ const placeholder = {
   desc: "Short description of meaning and usage.",
 };
 
+// Type
+export const iconsType = [
+  {
+    name: "standard",
+    icon: "user_circle",
+    type: "",
+    desc: "By default, Icons inherit color from their parent.",
+  },
+  {
+    name: "info",
+    icon: "user_circle",
+    type: "info",
+    desc: placeholder.desc,
+  },
+  {
+    name: "success",
+    icon: "user_circle",
+    type: "success",
+    desc: placeholder.desc,
+  },
+  {
+    name: "warning",
+    icon: "user_circle",
+    type: "warning",
+    desc: placeholder.desc,
+  },
+  {
+    name: "alert",
+    icon: "user_circle",
+    type: "alert",
+    desc: placeholder.desc,
+  },
+  {
+    name: "inverse",
+    icon: "user_circle",
+    type: "inverse",
+    desc: placeholder.desc,
+    background: "black",
+  },
+];
+
 // App
 export const iconsApp = [
   {

@@ -12,6 +12,7 @@ import {
   iconsApp,
   iconsBrand,
   iconsNavigation,
+  iconsType,
 } from "atoms/Icon/libraryIcon.data.js";
 
 const IconGrid = styled(Grid)`
@@ -26,6 +27,7 @@ const IconGrid = styled(Grid)`
 `;
 
 const IconItem = styled(Bar)`
+  background-color: ${props => props.backgroundColor || ""};
   &:hover {
     color: ${colors.success};
     cursor: pointer;
@@ -35,18 +37,42 @@ const IconItem = styled(Bar)`
 /** TODO: figure if this component should be re-usable.
  * If it can, then find it a home.
  */
-function IconSet({ data }) {
+function IconSet({ data, backgroundColor }) {
   return [
     data.map(item => (
-      <Piece key={item.name} id={item.name}>
+      <Piece key={item.icon} id={item.icon}>
         <IconItem
           contentAlign="center"
-          left={<Icon name={item.name} size="2x" fixedWidth />}
+          backgroundColor={item.background}
+          left={
+            <Icon
+              icon={item.icon}
+              type={item.type}
+              size="2x"
+              fixedWidth={true}
+              spin={item.spin}
+              pulse={item.pulse}
+            />
+          }
           leftWidth="min-content"
           center={
             <>
-              <Title text={item.name} size="large" select="all" />
-              <Description text={item.desc} />
+              {item.name ? (
+                <Title
+                  text={item.name}
+                  size="large"
+                  type={item.type}
+                  select="all"
+                />
+              ) : (
+                <Title
+                  text={item.icon}
+                  size="large"
+                  type={item.type}
+                  select="all"
+                />
+              )}
+              <Description text={item.desc} type={item.type} />
             </>
           }
           centerAlign="left"
@@ -55,6 +81,19 @@ function IconSet({ data }) {
     )),
   ];
 }
+
+storiesOf("Work|Atoms/Icon/", module)
+  .addDecorator(Padding)
+  .add("Type", () => (
+    <Grid columns="1">
+      <Title text="Icon Types" size="large" style="underline" />
+      <SubTitle text="Icons inherit the 'color' of the parent container but can be overridden." />
+      <Description text="Available Props: default (no prop)', 'info', 'success', 'warning', 'alert', 'inverse'" />
+      <IconGrid>
+        <IconSet data={iconsType} />
+      </IconGrid>
+    </Grid>
+  ));
 
 storiesOf("Work|Application/Libraries/Icon Library", module)
   .addDecorator(Padding)
