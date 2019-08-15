@@ -4,9 +4,9 @@ import { Skeleton } from "helpers/Skeleton.jsx";
 // Import variables
 import { colors, fonts, fontSize } from "Variables";
 // Import Fonts
-import "../../../css/fonts.css";
+import "css/fonts.css";
 // Import Icons
-import "../../../icons/fontawesome";
+import "icons/fontawesome";
 
 const GlobalStyles = createGlobalStyle`
 
@@ -26,7 +26,6 @@ const GlobalStyles = createGlobalStyle`
     html {
         box-sizing: border-box;
         font-size: ${fontSize.base};
-        ${"" /* line-height: 1.2; */}
     }
 
     *,
@@ -93,12 +92,9 @@ const GlobalStyles = createGlobalStyle`
     h1, h2, h3, h4, h5, h6, p {
         font-style: normal;
         color: inherit;
-        ${"" /* letter-spacing: 0.025em; */}
     }
     p {
         font-family: inherit;
-        ${"" /* font-size: 1rem; */}
-        ${"" /* line-height: 1.5rem; */}
         margin: 0 0 1rem;
     }
     h1, h2, h3, h4, h5, h6 {
