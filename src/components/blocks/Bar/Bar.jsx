@@ -50,7 +50,7 @@ function Bar({
   let alignContent;
   let alignItems;
   let textAlign;
-  switch (contentAlign) {
+  switch (contentAlign && contentAlign.toLowerCase()) {
     case "center":
       alignContent = "center";
       break;
@@ -61,7 +61,7 @@ function Bar({
       alignItems = "flex-start";
       break;
   }
-  switch (centerAlign) {
+  switch (centerAlign && centerAlign.toLowerCase()) {
     case "left":
       alignItems = "flex-start";
       textAlign = "left";

@@ -19,13 +19,9 @@ const iconHash = {
   twitter: ["fab", "twitter-square"],
   windows: ["fab", "windows"],
   // Navigation
-  // down: ["far", "chevron-down"],
-  // left: ["far", "chevron-left"],
-  menu: ["far", "bars"],
-  // right: ["far", "chevron-right"],
-  // up: ["far", "chevron-up"],
   down: ["far", "angle-down"],
   left: ["far", "angle-left"],
+  menu: ["far", "bars"],
   right: ["far", "angle-right"],
   up: ["far", "angle-up"],
   // App
@@ -134,7 +130,7 @@ function Icon({
 }) {
   let iconColor;
   icon = iconHash[icon.toLowerCase()] || ["far", icon.toLowerCase()];
-  switch (type) {
+  switch (type && type.toLowerCase()) {
     case "info":
       iconColor = colors.anchor;
       break;

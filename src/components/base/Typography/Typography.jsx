@@ -41,7 +41,7 @@ function Text({
   let textDecoration;
   let userSelect;
   let as;
-  switch (type) {
+  switch (type && type.toLowerCase()) {
     case "info":
       textColor = colors.anchor;
       break;
@@ -63,7 +63,7 @@ function Text({
     default:
       break;
   }
-  switch (size) {
+  switch (size && size.toLowerCase()) {
     case "tiny":
       as = "h6";
       break;
@@ -84,7 +84,7 @@ function Text({
       as = "h4";
       break;
   }
-  switch (align) {
+  switch (align && align.toLowerCase()) {
     case "center":
       textAlign = "center";
       break;
@@ -94,7 +94,7 @@ function Text({
     default:
       break;
   }
-  switch (spacing) {
+  switch (spacing && spacing.toLowerCase()) {
     case "2x":
       letterSpacing = "0.1em";
       break;
@@ -104,7 +104,7 @@ function Text({
     default:
       break;
   }
-  switch (style) {
+  switch (style && style.toLowerCase()) {
     case "underline":
       textDecoration = "underline";
       break;
@@ -114,7 +114,7 @@ function Text({
     default:
       break;
   }
-  switch (weight) {
+  switch (weight && weight.toLowerCase()) {
     case "light":
       textWeight = "300";
       break;
@@ -127,7 +127,7 @@ function Text({
     default:
       break;
   }
-  switch (select) {
+  switch (select && select.toLowerCase()) {
     case "all":
       userSelect = "all";
       break;
