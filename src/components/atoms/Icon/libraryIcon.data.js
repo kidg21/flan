@@ -5,100 +5,341 @@ const placeholder = {
 // App
 export const iconsApp = [
   {
-    name: "search",
+    icon: "mail",
     desc: placeholder.desc,
   },
   {
-    name: "zoom_out",
+    icon: "mail_solid",
     desc: placeholder.desc,
   },
   {
-    name: "zoom_in",
+    icon: "circle",
     desc: placeholder.desc,
   },
   {
-    name: "bookmark",
+    icon: "circle_solid",
     desc: placeholder.desc,
   },
   {
-    name: "bookmark_solid",
+    icon: "search",
     desc: placeholder.desc,
   },
   {
-    name: "edit",
+    icon: "zoom_out",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "zoom_in",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "bookmark",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "bookmark_solid",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "edit",
     desc: placeholder.desc,
   },
 
   {
-    name: "notification",
+    icon: "notification",
     desc: placeholder.desc,
   },
   {
-    name: "notification_solid",
+    icon: "notification_solid",
     desc: placeholder.desc,
   },
   {
-    name: "check",
+    icon: "check",
     desc: placeholder.desc,
   },
   {
-    name: "check_circle",
+    icon: "check_circle",
     desc: placeholder.desc,
   },
   {
-    name: "location",
+    icon: "location",
     desc: placeholder.desc,
   },
   {
-    name: "my_location",
+    icon: "map_pin",
     desc: placeholder.desc,
   },
   {
-    name: "map",
+    icon: "my_location",
     desc: placeholder.desc,
   },
   {
-    name: "address",
+    icon: "map",
     desc: placeholder.desc,
   },
   {
-    name: "owner",
+    icon: "address",
     desc: placeholder.desc,
   },
   {
-    name: "apn",
+    icon: "owner",
     desc: placeholder.desc,
   },
   {
-    name: "gps",
+    icon: "apn",
     desc: placeholder.desc,
   },
   {
-    name: "layers",
+    icon: "gps",
     desc: placeholder.desc,
   },
   {
-    name: "analytics",
+    icon: "layers",
     desc: placeholder.desc,
   },
   {
-    name: "report",
+    icon: "analytics",
     desc: placeholder.desc,
   },
   {
-    name: "info",
+    icon: "report",
     desc: placeholder.desc,
   },
   {
-    name: "info_circle",
+    icon: "info",
     desc: placeholder.desc,
   },
   {
-    name: "drawings",
+    icon: "info_circle",
     desc: placeholder.desc,
   },
   {
-    name: "list",
+    icon: "drawings",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "list",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "attach",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "link",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "wifi",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "wifi_none",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "signal",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "signal_none",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "contact",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "contacts",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "close",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "copy",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "help",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "loading",
+    desc: placeholder.desc,
+    spin: true,
+  },
+  {
+    icon: "maximize",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "minimize",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "options",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "more",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "zoom_extents",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "open",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "share",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "print",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "delete",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "filter",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "table",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "heatmap",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "labels",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "clone",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "file",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "draw",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "inclusion",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "exclusion",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "measure",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "message",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "chat",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "call",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "settings",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "settings_user",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "settings_users",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "configure",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "user",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "users",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "user_circle",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "user_add",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "scroll_top",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "star",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "star_solid",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "directions",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "alert",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "alert_triangle",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "home",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "plus",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "plus_square",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "minus",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "minus_square",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "sign_in",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "sign_out",
     desc: placeholder.desc,
   },
 ];
@@ -106,23 +347,39 @@ export const iconsApp = [
 // Navigation
 export const iconsNavigation = [
   {
-    name: "menu",
+    icon: "menu",
     desc: placeholder.desc,
   },
   {
-    name: "up",
+    icon: "up",
     desc: placeholder.desc,
   },
   {
-    name: "down",
+    icon: "down",
     desc: placeholder.desc,
   },
   {
-    name: "left",
+    icon: "left",
     desc: placeholder.desc,
   },
   {
-    name: "right",
+    icon: "right",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "up_angle",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "down_angle",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "left_angle",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "right_angle",
     desc: placeholder.desc,
   },
 ];
@@ -130,27 +387,27 @@ export const iconsNavigation = [
 // Brands
 export const iconsBrand = [
   {
-    name: "apple",
+    icon: "apple",
     desc: placeholder.desc,
   },
   {
-    name: "facebook",
+    icon: "facebook",
     desc: placeholder.desc,
   },
   {
-    name: "firefox",
+    icon: "firefox",
     desc: placeholder.desc,
   },
   {
-    name: "internet_explorer",
+    icon: "internet_explorer",
     desc: placeholder.desc,
   },
   {
-    name: "twitter",
+    icon: "twitter",
     desc: placeholder.desc,
   },
   {
-    name: "windows",
+    icon: "windows",
     desc: placeholder.desc,
   },
 ];

@@ -10,6 +10,110 @@ const StyledIcon = styled(FontAwesomeIcon)`
   border-radius: ${props => (props.border ? "5px" : "")};
 `;
 
+const iconHash = {
+  // Brand
+  apple: ["fab", "apple"],
+  facebook: ["fab", "facebook"],
+  firefox: ["fab", "firefox"],
+  internet_explorer: ["fab", "internet-explorer"],
+  twitter: ["fab", "twitter-square"],
+  windows: ["fab", "windows"],
+  // Navigation
+  down: ["far", "chevron-down"],
+  left: ["far", "chevron-left"],
+  menu: ["far", "bars"],
+  right: ["far", "chevron-right"],
+  up: ["far", "chevron-up"],
+  down_angle: ["far", "angle-down"],
+  left_angle: ["far", "angle-left"],
+  right_angle: ["far", "angle-right"],
+  up_angle: ["far", "angle-up"],
+  // App
+  address: ["far", "map-marked"],
+  alert_triangle: ["far", "exclamation-triangle"],
+  alert: "exclamation",
+  analytics: "analytics",
+  apn: ["far", "hashtag"],
+  attach: ["far", "paperclip"],
+  bookmark_solid: "bookmark",
+  bookmark: ["far", "bookmark"],
+  call: "phone",
+  chat: ["far", "comments-alt"],
+  check_circle: "check-circle",
+  circle_solid: "circle",
+  circle: ["far", "circle"],
+  clone: ["far", "clone"],
+  close: ["far", "times"],
+  configure: "cogs",
+  contact: ["far", "address-card"],
+  contacts: ["far", "address-book"],
+  copy: ["far", "copy"],
+  delete: ["far", "trash-alt"],
+  directions: ["far", "directions"],
+  draw: ["far", "pencil"],
+  drawings: ["far", "pencil-ruler"],
+  edit: ["far", "edit"],
+  exclusion: ["far", "layer-minus"],
+  file: ["far", "file-alt"],
+  filter: ["far", "filter"],
+  gps: ["far", "globe"],
+  heatmap: ["far", "chart-scatter"],
+  help: ["far", "question-circle"],
+  home: "home-alt",
+  inclusion: ["far", "layer-plus"],
+  info_circle: "info-circle",
+  info: "info",
+  labels: ["far", "tags"],
+  layers: ["far", "layer-group"],
+  link: ["far", "link"],
+  list: ["far", "list-ul"],
+  loading: "spinner",
+  location: "map-marker-alt",
+  mail_solid: "envelope",
+  mail: ["far", "envelope"],
+  map_pin: "map-pin",
+  map: ["far", "map"],
+  maximize: ["far", "expand-alt"],
+  measure: ["far", "ruler-combined"],
+  message: ["far", "comment-alt"],
+  minimize: ["far", "compress-alt"],
+  minus_square: ["far", "minus-square"],
+  minus: ["far", "minus"],
+  more: ["far", "ellipsis-h"],
+  my_location: ["far", "location-arrow"],
+  notification_solid: "bell",
+  notification: ["far", "bell"],
+  open: ["far", "folder-open"],
+  options: ["far", "ellipsis-v"],
+  owner: "user-tag",
+  plus_square: ["far", "plus-square"],
+  plus: ["far", "plus"],
+  print: ["far", "print"],
+  report: ["far", "file-chart-line"],
+  scroll_top: ["far", "caret-square-up"],
+  search: ["far", "search"],
+  settings_user: ["far", "user-cog"],
+  settings_users: ["far", "users-cog"],
+  settings: "cog",
+  share: "share-square",
+  sign_in: ["far", "sign-in"],
+  sign_out: ["far", "sign-out"],
+  signal_none: ["far", "signal-slash"],
+  signal: ["far", "signal"],
+  star_solid: "star",
+  star: ["far", "star"],
+  table: ["far", "table"],
+  user_add: "user-plus",
+  user_circle: "user-circle",
+  user: "user",
+  users: "users",
+  wifi_none: ["far", "wifi-slash"],
+  wifi: ["far", "wifi"],
+  zoom_extents: ["far", "expand-arrows"],
+  zoom_in: ["far", "search-plus"],
+  zoom_out: ["far", "search-minus"],
+};
+
 function Icon({
   id,
   icon,
@@ -28,46 +132,7 @@ function Icon({
   className,
 }) {
   let iconColor;
-  const iconHash = {
-    // Brand
-    apple: ["fab", "apple"],
-    facebook: ["fab", "facebook"],
-    firefox: ["fab", "firefox"],
-    internet_explorer: ["fab", "internet-explorer"],
-    twitter: ["fab", "twitter-square"],
-    windows: ["fab", "windows"],
-    // Navigation
-    down: ["far", "chevron-down"],
-    left: ["far", "chevron-left"],
-    menu: ["far", "bars"],
-    right: ["far", "chevron-right"],
-    up: ["far", "chevron-up"],
-    // App
-    address: ["far", "map-marked"],
-    analytics: "analytics",
-    apn: ["far", "hashtag"],
-    bookmark_solid: "bookmark",
-    bookmark: ["far", "bookmark"],
-    check_circle: "check-circle",
-    drawings: ["far", "pencil-ruler"],
-    edit: ["far", "edit"],
-    gps: ["far", "globe"],
-    info_circle: "info-circle",
-    info: "info",
-    layers: ["far", "layer-group"],
-    list: ["far", "list-ul"],
-    location: "map-marker-alt",
-    map: ["far", "map"],
-    my_location: ["far", "location-arrow"],
-    notification_solid: "bell",
-    notification: ["far", "bell"],
-    owner: "user-tag",
-    report: ["far", "file-chart-line"],
-    search: ["far", "search"],
-    zoom_in: ["far", "search-plus"],
-    zoom_out: ["far", "search-minus"],
-  };
-  icon = iconHash[name.toLowerCase()] || ["far", name.toLowerCase()];
+  icon = iconHash[icon.toLowerCase()] || ["far", icon.toLowerCase()];
   switch (type) {
     case "info":
       iconColor = colors.anchor;
@@ -118,11 +183,8 @@ Icon.propTypes = {
   id: PropTypes.string,
   /** Options: 'info', 'success', 'warning', 'alert', 'inverse' */
   type: PropTypes.string,
-  /** Icons can come in multiple weight types.  The default weight is 'fas' (solid)
-   * To use the weight type, simply enter the name of the icon as the prop value. (ex. icon='coffee')
-   * If you want to use an icon of a different weight type, enter the prop value as an arroy of ["weight", "name"]. (ex. icon=["fal", "plus-circle"] uses the 'light' version of the icon instead of the default 'solid' version)
-   */
-  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  /** Enter the name of the icon as the prop value. (ex. icon='circle' */
+  icon: PropTypes.string,
   /** Icons inherit the 'font-size' of the parent container and are relatively sized.
    * Options: 'xs', 'sm', 'lg', '2x', '3x', '4x', '5x', '6x', '7x', '8x', '9x', '10x'
    */
