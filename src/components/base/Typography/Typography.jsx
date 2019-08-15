@@ -17,7 +17,7 @@ const StyledText = styled.h4`
   letter-spacing: ${props => props.letterSpacing || ""};
   font-style: ${props => props.textStyle || ""};
   text-decoration: ${props => props.textDecoration || ""};
-  user-select: ${props => props.userSelect || ""};
+  user-select: ${props => props.select || ""};
 `;
 
 function Text({
@@ -39,7 +39,6 @@ function Text({
   let textAlign;
   let textStyle;
   let textDecoration;
-  let userSelect;
   let as;
   switch (type && type.toLowerCase()) {
     case "info":
@@ -127,16 +126,6 @@ function Text({
     default:
       break;
   }
-  switch (select && select.toLowerCase()) {
-    case "all":
-      userSelect = "all";
-      break;
-    case "none":
-      userSelect = "none";
-      break;
-    default:
-      break;
-  }
   return (
     <StyledText
       id={id}
@@ -147,7 +136,7 @@ function Text({
       textAlign={textAlign}
       textStyle={textStyle}
       textDecoration={textDecoration}
-      userSelect={userSelect}
+      select={select}
       className={className}
     >
       {text}
@@ -209,6 +198,11 @@ Text.propTypes = {
   spacing: PropTypes.oneOf(["2x", "3x"]),
   style: PropTypes.oneOf(["underline", "italic"]),
   weight: PropTypes.oneOf(["light", "normal", "bold"]),
+  /** Sets the 'user-select' CSS property
+   * Text is selectable by default
+   * 'all' selects the complete string with a tap/click
+   * 'none' disables text selection
+   */
   select: PropTypes.oneOf(["all", "none"]),
   className: PropTypes.string,
 };
