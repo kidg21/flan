@@ -19,6 +19,7 @@ function DialogueBox({
   id,
   header,
   footer,
+  title,
   buttonLabel,
   buttonLabel2,
   content,
@@ -67,9 +68,12 @@ function DialogueBox({
       break;
   }
   return (
-    <Card id={id} action={action}>
+    <Card id={id} action={action} title={title}>
       <Wrapper>
         {header ? <Piece>{header}</Piece> : null}
+        <Piece>
+          <Bar left={<Title title={title} />} />
+        </Piece>
         {content ? <Piece>{content}</Piece> : null}
         {action ? <Piece>{buttonType}</Piece> : null}
       </Wrapper>
@@ -80,6 +84,7 @@ DialogueBox.propTypes = {
   id: PropTypes.string,
   header: PropTypes.node,
   content: PropTypes.node,
+  title: PropTypes.node,
   footer: PropTypes.node,
   buttonColor: PropTypes.node,
   buttonLabel: PropTypes.string,

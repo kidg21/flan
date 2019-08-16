@@ -32,9 +32,7 @@ storiesOf("Work|Dialogue Box", module)
   .addDecorator(withInfo)
   .add("General/Default", () => (
     <DialogueBox
-      header={
-        <Bar left={<Title title="Hey are you sure your okay doing this?" />} />
-      }
+      title="Hey are you sure your okay doing this?"
       content={
         <Bar
           left={
@@ -49,17 +47,8 @@ storiesOf("Work|Dialogue Box", module)
   ))
   .add("General/Login", () => (
     <DialogueBox
-      header={
-        <Bar
-          left={
-            <Section>
-              {" "}
-              <Logo src={image.src} alt={image.alt} />
-              <Title title="Welcome" />
-            </Section>
-          }
-        />
-      }
+      header={<Bar left={<Logo src={image.src} alt={image.alt} />} />}
+      title="Welcome"
       content={
         <Bar
           left={
@@ -81,7 +70,7 @@ storiesOf("Work|Dialogue Box", module)
   ))
   .add("General/Save Box", () => (
     <DialogueBox
-      header={<Bar left={<Title title="Save As" />} />}
+      title="Save As"
       content={
         <Bar
           left={
@@ -114,11 +103,7 @@ storiesOf("Work|Dialogue Box", module)
   ))
   .add("General/Delete", () => (
     <DialogueBox
-      header={
-        <Bar
-          left={<Title title="Are you sure you want to delete this user?" />}
-        />
-      }
+      title="Are you sure you want to delete this user?"
       content={
         <Bar
           left={
@@ -134,7 +119,7 @@ storiesOf("Work|Dialogue Box", module)
   ))
   .add("General/Success", () => (
     <DialogueBox
-      header={<Bar left={<Title title="View your report?" />} />}
+      title="View your report?"
       content={
         <Bar
           left={
@@ -150,7 +135,7 @@ storiesOf("Work|Dialogue Box", module)
   ))
   .add("Role/Edit User List", () => (
     <DialogueBox
-      header={<Bar left={<Title title="Edit User List for Role" />} />}
+      title="Edit User List for Role"
       content={
         <Bar
           left={
@@ -231,7 +216,7 @@ storiesOf("Work|Dialogue Box", module)
   ))
   .add("Role/Edit Files", () => (
     <DialogueBox
-      header={<Bar left={<Title title="Edit Files Role" />} />}
+      title="Edit Files Role"
       content={
         <Bar
           left={
@@ -266,7 +251,7 @@ storiesOf("Work|Dialogue Box", module)
   ))
   .add("User/Add User", () => (
     <DialogueBox
-      header={<Bar left={<Title title="+ Add a New User" />} />}
+      title="+ Add a New User"
       content={
         <Bar
           left={
@@ -301,7 +286,7 @@ storiesOf("Work|Dialogue Box", module)
   ))
   .add("User/Edit User", () => (
     <DialogueBox
-      header={<Bar left={<Title title="Edit User" />} />}
+      title="Edit User"
       content={
         <Bar
           left={
