@@ -5,6 +5,7 @@ import { colors, shadows } from "Variables";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const StyledIcon = styled(FontAwesomeIcon)`
+  color: ${props => props.iconColor || ""};
   border: ${props => (props.border ? "2px solid" : "")};
   border-color: ${props => (props.border ? colors.grey_20 : "")};
   border-radius: ${props => (props.border ? "5px" : "")};
@@ -115,7 +116,6 @@ function Icon({
   id,
   icon,
   type,
-  name,
   size,
   fixedWidth,
   rotation,
@@ -153,8 +153,7 @@ function Icon({
     <StyledIcon
       id={id}
       icon={icon}
-      name={name}
-      color={iconColor}
+      iconColor={iconColor}
       size={size}
       fixedWidth={fixedWidth}
       rotation={rotation}
@@ -163,8 +162,6 @@ function Icon({
       pulse={pulse}
       border={border}
       pull={pull}
-      className={className}
-      style={style}
       className={className}
     />
   );
@@ -201,7 +198,6 @@ Icon.propTypes = {
   /** Options: 'left', 'right' */
   pull: PropTypes.string,
   border: PropTypes.bool,
-  style: PropTypes.string,
   onClick: PropTypes.func,
   /** className used for extending styles */
   className: PropTypes.string,
