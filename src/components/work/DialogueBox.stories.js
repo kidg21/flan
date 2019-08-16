@@ -33,9 +33,7 @@ storiesOf("Work|Dialogue Box", module)
   .add("General/Default", () => (
     <DialogueBox
       title="Hey are you sure your okay doing this?"
-      content={
-        <Body body="This is the body of your message. Tells you more about the action you are about to commit." />
-      }
+      message="This is the body of your message. Tells you more about the action you are about to commit."
       action="two"
       buttonLabel="Create"
       buttonLabel2="Cancel"
@@ -92,9 +90,7 @@ storiesOf("Work|Dialogue Box", module)
   .add("General/Delete", () => (
     <DialogueBox
       title="Are you sure you want to delete this user?"
-      content={
-        <Body body="If you delete this user you will not be able to get back any information or work they have done. Their work will be lost forever." />
-      }
+      message="If you delete this user you will not be able to get back any information or work they have done. Their work will be lost forever."
       action="two"
       buttonLabel="Delete"
       buttonLabel2="Cancel"
@@ -104,9 +100,7 @@ storiesOf("Work|Dialogue Box", module)
   .add("General/Success", () => (
     <DialogueBox
       title="View your report?"
-      content={
-        <Body body="Your report successfully downloaded. Do you want to check out the deets." />
-      }
+      message="Your report successfully downloaded. Do you want to check out the deets."
       action="two"
       buttonLabel="View"
       buttonLabel2="Cancel"
@@ -132,38 +126,6 @@ storiesOf("Work|Dialogue Box", module)
           <Piece>
             <Container setHeight="12rem">
               <List>
-                <ListItem
-                  label="User 3"
-                  action={<Icon icon={["far", "cog"]} />}
-                />
-                <ListItem
-                  label="User 2"
-                  action={<Icon icon={["far", "cog"]} />}
-                />
-                <ListItem
-                  label="User 1"
-                  action={<Icon icon={["far", "cog"]} />}
-                />
-                <ListItem
-                  label="User 3"
-                  action={<Icon icon={["far", "cog"]} />}
-                />
-                <ListItem
-                  label="User 3"
-                  action={<Icon icon={["far", "cog"]} />}
-                />
-                <ListItem
-                  label="User 2"
-                  action={<Icon icon={["far", "cog"]} />}
-                />
-                <ListItem
-                  label="User 1"
-                  action={<Icon icon={["far", "cog"]} />}
-                />
-                <ListItem
-                  label="User 3"
-                  action={<Icon icon={["far", "cog"]} />}
-                />
                 <ListItem
                   label="User 3"
                   action={<Icon icon={["far", "cog"]} />}

@@ -20,6 +20,7 @@ function DialogueBox({
   header,
   footer,
   title,
+  message,
   buttonLabel,
   buttonLabel2,
   content,
@@ -74,6 +75,9 @@ function DialogueBox({
         <Piece>
           <Bar left={<Title title={title} />} />
         </Piece>
+        {message ? (
+          <Bar left={<Title title={message} weight="light" />} />
+        ) : null}
         {content ? (
           <Piece>
             <Bar left={<div>{content}</div>} />
@@ -90,6 +94,7 @@ DialogueBox.propTypes = {
   content: PropTypes.node,
   title: PropTypes.node,
   footer: PropTypes.node,
+  message: PropTypes.string,
   buttonColor: PropTypes.node,
   buttonLabel: PropTypes.string,
   buttonLabel2: PropTypes.string,
