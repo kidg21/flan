@@ -1,23 +1,37 @@
 import React, { useContext } from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
-import { colors, shadows } from "Variables";
-import { DisabledContext } from "States";
+import { colors } from "Variables";
+import { Link } from "base/Typography";
+import { InteractiveContext, DisabledContext } from "States";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+/** TODO: move these to Variables */
+const iconHover = css`
+  filter: brightness(85%) contrast(150%);
+`;
+const iconActive = css`
+  filter: brightness(105%);
+`;
+
+const LinkedIcon = styled(Link)`
+  cursor: ${props => (props.onClick ? "pointer" : "")};
+  cursor: ${props => (props.disabled ? "not-allowed" : "")};
+  pointer-events: ${props => (props.disabled ? "none" : "")};
+  user-select: ${props => (props.disabled ? "none" : "")};
+  &:hover {
+    ${props => (props.onClick ? iconHover : "")};
+  }
+  &:active {
+    ${props => (props.onClick ? iconActive : "")};
+  }
+`;
 
 const StyledIcon = styled(FontAwesomeIcon)`
   color: ${props => props.iconColor || "inherit"};
   border: ${props => (props.border ? "2px solid" : "")};
   border-color: ${props => (props.border ? colors.grey_20 : "")};
   border-radius: ${props => (props.border ? "5px" : "")};
-`;
-
-const LinkedIcon = styled.a`
-  &[disabled] {
-    cursor: not-allowed;
-    pointer-events: none;
-    user-select: none;
-  }
 `;
 
 const iconHash = {
@@ -165,32 +179,51 @@ function Icon({
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) iconColor = colors.grey_40;
 
-  let _icon = (
-    <StyledIcon
-      id={id}
-      icon={icon}
-      iconColor={iconColor}
-      size={size}
-      fixedWidth={fixedWidth}
-      rotation={rotation}
-      flip={flip}
-      spin={spin}
-      pulse={pulse}
-      border={border}
-      pull={pull}
-      className={className}
-    />
+  return (
+    <InteractiveContext.Provider value={onClick}>
+      {onClick ? (
+        /** Wrapping anchor tag required for semantics */
+        <LinkedIcon
+          onClick={
+            typeof onClick === "boolean"
+              ? onClick
+              : useContext(InteractiveContext)
+          }
+          disabled={disabled}
+        >
+          <StyledIcon
+            id={id}
+            icon={icon}
+            iconColor={iconColor}
+            size={size}
+            fixedWidth={fixedWidth}
+            rotation={rotation}
+            flip={flip}
+            spin={spin}
+            pulse={pulse}
+            border={border}
+            pull={pull}
+            className={className}
+          />
+        </LinkedIcon>
+      ) : (
+        <StyledIcon
+          id={id}
+          icon={icon}
+          iconColor={iconColor}
+          size={size}
+          fixedWidth={fixedWidth}
+          rotation={rotation}
+          flip={flip}
+          spin={spin}
+          pulse={pulse}
+          border={border}
+          pull={pull}
+          className={className}
+        />
+      )}
+    </InteractiveContext.Provider>
   );
-
-  if (onClick) {
-    _icon = (
-      <LinkedIcon onClick={onClick} disabled={disabled}>
-        {_icon}
-      </LinkedIcon>
-    );
-  }
-
-  return <React.Fragment>{_icon}</React.Fragment>;
 }
 
 Icon.propTypes = {
