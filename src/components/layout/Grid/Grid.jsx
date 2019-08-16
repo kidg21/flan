@@ -6,7 +6,7 @@ const GridWrapper = styled.section`
   display: grid;
   grid-gap: ${props => props.setGap || "1rem"};
   grid-template-columns: ${props =>
-    props.setColumns || "repeat(auto-fit, minmax(22rem, 1fr))"};
+    props.setColumns || "repeat(auto-fill, minmax(22rem, 1fr))"};
   grid-template-rows: ${props => props.setRows || "auto"};
 `;
 
