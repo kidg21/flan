@@ -74,7 +74,11 @@ function DialogueBox({
         <Piece>
           <Bar left={<Title title={title} />} />
         </Piece>
-        {content ? <Piece>{content}</Piece> : null}
+        {content ? (
+          <Piece>
+            <Bar left={<div>{content}</div>} />
+          </Piece>
+        ) : null}
         {action ? <Piece>{buttonType}</Piece> : null}
       </Wrapper>
     </Card>
