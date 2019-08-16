@@ -42,16 +42,9 @@ storiesOf("Work|Dialogue Box", module)
           }
         />
       }
-      footer={
-        <Bar
-          right={
-            <Grid columns="2">
-              <Button buttonLabel="Create" />
-              <Button buttonLabel="Cancel" />
-            </Grid>
-          }
-        />
-      }
+      action="two"
+      buttonLabel="Create"
+      buttonLabel2="Cancel"
     />
   ))
   .add("General/Login", () => (
@@ -82,27 +75,8 @@ storiesOf("Work|Dialogue Box", module)
           }
         />
       }
-      footer={
-        <Bar
-          left={
-            <Section>
-              <Button buttonLabel="Login" />
-              <Bar
-                center={
-                  <Grid columns="1">
-                    <Title title="Sign in using" size="tiny" />
-                    <Grid columns="3">
-                      <Icon icon={["fab", "google"]} />
-                      <Icon icon={["fab", "linkedin"]} />
-                      <Icon icon={["fab", "facebook"]} />
-                    </Grid>
-                  </Grid>
-                }
-              />
-            </Section>
-          }
-        />
-      }
+      action="one"
+      buttonLabel="Login"
     />
   ))
   .add("General/Save Box", () => (
@@ -133,16 +107,9 @@ storiesOf("Work|Dialogue Box", module)
           }
         />
       }
-      footer={
-        <Bar
-          right={
-            <Grid columns="2">
-              <Button buttonLabel="Save" type="solid" />
-              <Button buttonLabel="Cancel" />
-            </Grid>
-          }
-        />
-      }
+      action="two"
+      buttonLabel="Save"
+      buttonLabel2="Cancel"
     />
   ))
   .add("General/Delete", () => (
@@ -159,16 +126,26 @@ storiesOf("Work|Dialogue Box", module)
           }
         />
       }
-      footer={
+      action="two"
+      buttonLabel="Delete"
+      buttonLabel2="Cancel"
+      buttonColor="alert"
+    />
+  ))
+  .add("General/Success", () => (
+    <DialogueBox
+      header={<Bar left={<Title title="View your report?" />} />}
+      content={
         <Bar
-          right={
-            <Grid columns="2">
-              <Button buttonLabel="Delete" color="alert" type="solid" />
-              <Button buttonLabel="Cancel" color="alert" />
-            </Grid>
+          left={
+            <Body body="Your report successfully downloaded. Do you want to check out the deets." />
           }
         />
       }
+      action="two"
+      buttonLabel="View"
+      buttonLabel2="Cancel"
+      buttonColor="success"
     />
   ))
   .add("Role/Edit User List", () => (
@@ -247,16 +224,9 @@ storiesOf("Work|Dialogue Box", module)
           }
         />
       }
-      footer={
-        <Bar
-          right={
-            <Grid columns="2">
-              <Button buttonLabel="Create" type="solid" />
-              <Button buttonLabel="Cancel" />
-            </Grid>
-          }
-        />
-      }
+      action="two"
+      buttonLabel="Edit"
+      buttonLabel2="Cancel"
     />
   ))
   .add("Role/Edit Files", () => (
@@ -289,16 +259,9 @@ storiesOf("Work|Dialogue Box", module)
           }
         />
       }
-      footer={
-        <Bar
-          right={
-            <Grid columns="2">
-              <Button buttonLabel="Save" type="solid" />
-              <Button buttonLabel="Cancel" />
-            </Grid>
-          }
-        />
-      }
+      action="two"
+      buttonLabel="Add"
+      buttonLabel2="Cancel"
     />
   ))
   .add("User/Add User", () => (
@@ -331,16 +294,9 @@ storiesOf("Work|Dialogue Box", module)
           }
         />
       }
-      footer={
-        <Bar
-          right={
-            <Grid columns="2">
-              <Button buttonLabel="Add" type="solid" />
-              <Button buttonLabel="Cancel" />
-            </Grid>
-          }
-        />
-      }
+      action="two"
+      buttonLabel="Add"
+      buttonLabel2="Cancel"
     />
   ))
   .add("User/Edit User", () => (
@@ -374,15 +330,8 @@ storiesOf("Work|Dialogue Box", module)
           }
         />
       }
-      footer={
-        <Bar
-          right={
-            <Grid columns="2">
-              <Button buttonLabel="Save" type="solid" />
-              <Button buttonLabel="Cancel" />
-            </Grid>
-          }
-        />
-      }
+      action="two"
+      buttonLabel="Save"
+      buttonLabel2="Cancel"
     />
   ));
