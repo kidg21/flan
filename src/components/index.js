@@ -1,5 +1,5 @@
 // Publicly exported files from 'base'
-export { default, SubTitle, Description } from "./base/Typography";
+export { default as Title, SubTitle, Description, Link } from "./base/Typography";
 export * from "./base/GlobalStyles/GlobalStyles.jsx";
 
 // Publicly exported files from 'atoms'

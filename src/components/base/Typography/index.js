@@ -1,1 +1,1 @@
-export { default, SubTitle, Description } from "./Typography.jsx";
+export { default, SubTitle, Description, Link } from "./Typography.jsx";

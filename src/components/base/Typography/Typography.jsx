@@ -10,6 +10,8 @@ const CountContainer = styled.div`
   margin-left: 4em;
 `;
 
+const StyledLink = styled.a``;
+
 const StyledText = styled.h4`
   color: ${props => props.textColor || "inherit"};
   font-weight: ${props => props.textWeight || "600"};
@@ -31,6 +33,7 @@ function Text({
   style,
   weight,
   select,
+  children,
   className,
 }) {
   let textColor;
@@ -58,6 +61,10 @@ function Text({
       break;
     case "light":
       textColor = colors.grey_60;
+      break;
+    case "link":
+      as = "a";
+      textColor = colors.anchor;
       break;
     default:
       break;
@@ -139,7 +146,7 @@ function Text({
       select={select}
       className={className}
     >
-      {text}
+      {text ? text : children}
       {count ? (
         <CountContainer>
           <a>{count}</a>
@@ -179,6 +186,14 @@ function Description({ id, text, className, ...textProps }) {
   );
 }
 
+function Link({ id, onClick, children, className }) {
+  return (
+    <StyledLink id={id} onClick={onClick} className={className}>
+      {children}
+    </StyledLink>
+  );
+}
+
 Text.propTypes = {
   id: PropTypes.string,
   text: PropTypes.string,
@@ -207,4 +222,4 @@ Text.propTypes = {
   className: PropTypes.string,
 };
 
-export { Title as default, SubTitle, Description };
+export { Title as default, SubTitle, Description, Link };
