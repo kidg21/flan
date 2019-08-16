@@ -14,7 +14,15 @@ const CardPiece = styled.div`
   flex-direction: column;
   flex: none;
   width: 100%;
+  /* color: ${props => props.textColor || ""}; */
+  /* background-color: ${props => props.backgroundColor || ""}; */
   background: ${colors.white};
+  &:hover {
+    box-shadow: ${props => (props.hover ? shadows.dropShadow : "")};
+    cursor: ${props => (props.hover ? "pointer" : "")};
+    /* box-shadow: ${shadows.dropShadow}; */
+    /* cursor: pointer; */
+  }
   /* Prototype Content - displays when a Card is empty */
   &:empty {
     &:before {
@@ -57,9 +65,42 @@ const CardListWrapper = styled(Grid)`
   }
 `;
 
-function Piece({ id, children, className }) {
+function Piece({ id, type, hover, children, className }) {
+  // let textColor;
+  // let backgroundColor;
+  // switch (type && type.toLowerCase()) {
+  //   case "info":
+  //     backgroundColor = colors.anchor;
+  //     textColor = colors.anchor_tint;
+  //     break;
+  //   case "success":
+  //     backgroundColor = colors.success;
+  //     textColor = colors.success_tint;
+  //     break;
+  //   case "warning":
+  //     backgroundColor = colors.warning;
+  //     textColor = colors.warning_tint;
+  //     break;
+  //   case "alert":
+  //     backgroundColor = colors.alert;
+  //     textColor = colors.alert_tint;
+  //     break;
+  //   case "inverse":
+  //     backgroundColor = colors.black;
+  //     textColor = colors.grey_light;
+  //     break;
+  //   default:
+  //     backgroundColor = colors.white;
+  //     break;
+  // }
   return (
-    <CardPiece id={id} className={className}>
+    <CardPiece
+      id={id}
+      hover={hover}
+      // textColor={textColor}
+      // backgroundColor={backgroundColor}
+      className={className}
+    >
       {children}
     </CardPiece>
   );

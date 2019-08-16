@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import { colors, shadows, screen } from "Variables";
 
 const BarLayout = styled.div`
   display: flex;
@@ -15,7 +16,6 @@ const Slot = styled.div`
   display: ${props => props.setDisplay || "flex"};
   flex: auto;
   flex-direction: column;
-  /* justify-content: ${props => props.justifyContent || ""}; */
   align-items: ${props => props.alignItems || ""};
   text-align: ${props => props.textAlign || ""};
   padding: ${props => props.setPadding || ""};
