@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 import { colors, shadows } from "Variables";
+import { DisabledContext } from "States";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const StyledIcon = styled(FontAwesomeIcon)`
-  color: ${props => props.iconColor || ""};
+  color: ${props => props.iconColor || "inherit"};
   border: ${props => (props.border ? "2px solid" : "")};
   border-color: ${props => (props.border ? colors.grey_20 : "")};
   border-radius: ${props => (props.border ? "5px" : "")};
+`;
+
+const LinkedIcon = styled.a`
+  &[disabled] {
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
+  }
 `;
 
 const iconHash = {
@@ -124,8 +133,8 @@ function Icon({
   pulse,
   border,
   pull,
-  style,
   onClick,
+  disabled,
   className,
 }) {
   let iconColor;
@@ -149,6 +158,13 @@ function Icon({
     default:
       break;
   }
+
+  if (onClick) iconColor = colors.anchor;
+
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  if (isDisabled) iconColor = colors.grey_40;
+
   let _icon = (
     <StyledIcon
       id={id}
@@ -167,7 +183,11 @@ function Icon({
   );
 
   if (onClick) {
-    _icon = <a onClick={onClick}>{_icon}</a>;
+    _icon = (
+      <LinkedIcon onClick={onClick} disabled={disabled}>
+        {_icon}
+      </LinkedIcon>
+    );
   }
 
   return <React.Fragment>{_icon}</React.Fragment>;
@@ -199,6 +219,7 @@ Icon.propTypes = {
   pull: PropTypes.string,
   border: PropTypes.bool,
   onClick: PropTypes.func,
+  disabled: PropTypes.bool,
   /** className used for extending styles */
   className: PropTypes.string,
 };
