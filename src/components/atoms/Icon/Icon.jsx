@@ -146,7 +146,6 @@ function Icon({
   spin,
   pulse,
   border,
-  pull,
   onClick,
   disabled,
   className,
@@ -202,7 +201,6 @@ function Icon({
             spin={spin}
             pulse={pulse}
             border={border}
-            pull={pull}
             className={className}
           />
         </LinkedIcon>
@@ -218,7 +216,6 @@ function Icon({
           spin={spin}
           pulse={pulse}
           border={border}
-          pull={pull}
           className={className}
         />
       )}
@@ -248,8 +245,6 @@ Icon.propTypes = {
   spin: PropTypes.bool,
   /** Rotation with eight (8) steps */
   pulse: PropTypes.bool,
-  /** Options: 'left', 'right' */
-  pull: PropTypes.string,
   border: PropTypes.bool,
   onClick: PropTypes.func,
   disabled: PropTypes.bool,

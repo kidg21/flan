@@ -12,142 +12,124 @@ import {
 } from "@storybook/addon-knobs";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
+import Title, { SubTitle, Description } from "base/Typography";
 import styled, { css } from "styled-components";
 import { colors, shadows } from "Variables";
 import Icon from "atoms/Icon";
 import IconBlock from "blocks/IconBlock";
 import IconNotes from "atoms/Icon/Icon.md";
 
-const Success = styled.span`
-  color: ${colors.success};
-  font-weight: bold;
-`;
+// const Success = styled.span`
+//   color: ${colors.success};
+//   font-weight: bold;
+// `;
 
-const Title = styled.h2`
-  font-weight: 400;
-  grid-column: 1/-1;
-`;
+// const Title = styled.h2`
+//   font-weight: 400;
+//   grid-column: 1/-1;
+// `;
 
-const SubTitle = styled.h5`
-  grid-column: 1/-1;
-  margin: 0;
-`;
+// const SubTitle = styled.h5`
+//   grid-column: 1/-1;
+//   margin: 0;
+// `;
 
-const SectionTitle = styled.h4`
-  grid-column: 1/-1;
-  letter-spacing: 1px;
-  margin: 0;
-  padding-top: 1em;
-  border-top: 2px solid ${colors.grey_light};
-`;
+// const SectionTitle = styled.h4`
+//   grid-column: 1/-1;
+//   letter-spacing: 1px;
+//   margin: 0;
+//   padding-top: 1em;
+//   border-top: 2px solid ${colors.grey_light};
+// `;
 
-const StaticIcon = styled.li`
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  align-items: center;
-  justify-items: center;
-  transition: all 0.15s ease;
-  > svg {
-    margin: 0.5rem 0;
-  }
-`;
-const ActiveIcon = styled(StaticIcon)`
-  cursor: pointer;
-  &:hover {
-    background-color: ${colors.white};
-    color: ${colors.anchor};
-    filter: ${shadows.cardShadow};
-    ${IconLabel} {
-      &:hover {
-        background-color: ${colors.white};
-      }
-    }
-  }
-`;
-const IconLabel = styled.h6`
-  flex: auto;
-  color: inherit;
-  width: 100%;
-  text-align: center;
-  margin: 0;
-  padding: 0.5em 0;
-  line-height: normal;
-  cursor: text;
-  user-select: all;
-`;
+// const StaticIcon = styled.li`
+//   display: flex;
+//   flex-direction: column;
+//   align-content: flex-start;
+//   align-items: center;
+//   justify-items: center;
+//   transition: all 0.15s ease;
+//   > svg {
+//     margin: 0.5rem 0;
+//   }
+// `;
+// const ActiveIcon = styled(StaticIcon)`
+//   cursor: pointer;
+//   &:hover {
+//     background-color: ${colors.white};
+//     color: ${colors.anchor};
+//     filter: ${shadows.cardShadow};
+//     ${IconLabel} {
+//       &:hover {
+//         background-color: ${colors.white};
+//       }
+//     }
+//   }
+// `;
+// const IconLabel = styled.h6`
+//   flex: auto;
+//   color: inherit;
+//   width: 100%;
+//   text-align: center;
+//   margin: 0;
+//   padding: 0.5em 0;
+//   line-height: normal;
+//   cursor: text;
+//   user-select: all;
+// `;
 const blockStyle = {
   padding: ".5em",
   border: "1px solid lightgrey",
 };
 
-storiesOf("Blocks|IconBlock", module)
+storiesOf("Blocks|Icon Block", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
   .add("Icon Block", () => (
-    <Grid columns="3">
-      <Title>
-        <u>Icon Block</u>
-      </Title>
-      <SubTitle>Distributes icons horizontally</SubTitle>
-      <IconBlock style={blockStyle}>
-        <Icon icon="circle" />
-      </IconBlock>
-      <IconBlock style={blockStyle}>
-        <Icon icon="circle" />
-        <Icon icon="circle" type="info" />
-      </IconBlock>
-      <IconBlock style={blockStyle}>
-        <Icon icon="circle" />
-        <Icon icon="circle" type="info" />
-        <Icon icon="circle" type="success" />
-      </IconBlock>
-      <IconBlock style={blockStyle}>
-        <Icon icon="circle" />
-        <Icon icon="circle" type="info" />
-        <Icon icon="circle" type="success" />
-        <Icon icon="circle" type="warning" />
-      </IconBlock>
-      <IconBlock style={blockStyle}>
-        <Icon icon="circle" />
-        <Icon icon="circle" type="info" />
-        <Icon icon="circle" type="success" />
-        <Icon icon="circle" type="warning" />
-        <Icon icon="circle" type="alert" />
-      </IconBlock>
-      <IconBlock style={blockStyle}>
-        <Icon icon="circle" />
-        <Icon icon="circle" type="info" />
-        <Icon icon="circle" type="success" />
-        <Icon icon="circle" type="warning" />
-        <Icon icon="circle" type="alert" />
-        <Icon icon="circle" />
-      </IconBlock>
-      <IconBlock style={blockStyle}>
-        <Icon icon="circle" />
-        <Icon icon="circle" type="info" />
-        <Icon icon="circle" type="success" />
-        <Icon icon="circle" type="warning" />
-        <Icon icon="circle" type="alert" />
-        <Icon icon="circle" />
-        <Icon icon="circle" type="info" />
-      </IconBlock>
-      <IconBlock style={blockStyle}>
-        <Icon icon="circle" />
-        <Icon icon="circle" type="info" />
-        <Icon icon="circle" type="success" />
-        <Icon icon="circle" type="warning" />
-        <Icon icon="circle" type="alert" />
-        <Icon icon="circle" />
-        <Icon icon="circle" type="info" />
-        <Icon icon="circle" type="success" />
-      </IconBlock>
+    <Grid columns="1">
+      <Title text="Icon Block" style="underline" />
+      <SubTitle text="Distributes icons horizontally" />
+      <Grid columns="3">
+        <IconBlock style={blockStyle}>
+          <Icon icon="circle_solid" />
+        </IconBlock>
+        <IconBlock style={blockStyle}>
+          <Icon icon="circle_solid" />
+          <Icon icon="circle_solid" type="info" />
+        </IconBlock>
+        <IconBlock style={blockStyle}>
+          <Icon icon="circle_solid" />
+          <Icon icon="circle_solid" type="info" />
+          <Icon icon="circle_solid" type="success" />
+        </IconBlock>
+        <IconBlock style={blockStyle}>
+          <Icon icon="circle_solid" />
+          <Icon icon="circle_solid" type="info" />
+          <Icon icon="circle_solid" type="success" />
+          <Icon icon="circle_solid" type="warning" />
+        </IconBlock>
+        <IconBlock style={blockStyle}>
+          <Icon icon="circle_solid" />
+          <Icon icon="circle_solid" type="info" />
+          <Icon icon="circle_solid" type="success" />
+          <Icon icon="circle_solid" type="warning" />
+          <Icon icon="circle_solid" type="alert" />
+        </IconBlock>
+        <IconBlock style={blockStyle}>
+          <Icon icon="circle_solid" />
+          <Icon icon="circle_solid" type="info" />
+          <Icon icon="circle_solid" type="success" />
+          <Icon icon="circle_solid" type="warning" />
+          <Icon icon="circle_solid" type="alert" />
+          <Icon icon="circle_solid" />
+        </IconBlock>
+      </Grid>
     </Grid>
   ));
 
 // storiesOf("Atoms|Icon", module)
 //   .addDecorator(Padding)
-//   .add("Documentation", withInfo()(() => <Icon icon="circle" />));
+//   .add("Documentation", withInfo()(() => <Icon icon="circle_solid" />));
 
 // storiesOf("Atoms|Icon", module)
 //   .addParameters({
@@ -160,7 +142,7 @@ storiesOf("Blocks|IconBlock", module)
 //   })
 //   .addDecorator(Padding)
 //   .addDecorator(withKnobs)
-//   .add("Documentation", withInfo()(() => <Icon icon="circle" size="lg" />))
+//   .add("Documentation", withInfo()(() => <Icon icon="circle_solid" size="lg" />))
 //   .add("Icon Colors", () => (
 //     <Grid columns="3" style={{ fontSize: "2em" }}>
 //       <Title>
@@ -174,27 +156,27 @@ storiesOf("Blocks|IconBlock", module)
 //         'alert', 'inverse'
 //       </SubTitle>
 //       <StaticIcon>
-//         <Icon icon="circle" />
+//         <Icon icon="circle_solid" />
 //         <IconLabel>standard</IconLabel>
 //       </StaticIcon>
 //       <StaticIcon>
-//         <Icon icon="circle" type="info" />
+//         <Icon icon="circle_solid" type="info" />
 //         <IconLabel>info</IconLabel>
 //       </StaticIcon>
 //       <StaticIcon>
-//         <Icon icon="circle" type="success" />
+//         <Icon icon="circle_solid" type="success" />
 //         <IconLabel>success</IconLabel>
 //       </StaticIcon>
 //       <StaticIcon>
-//         <Icon icon="circle" type="warning" />
+//         <Icon icon="circle_solid" type="warning" />
 //         <IconLabel>warning</IconLabel>
 //       </StaticIcon>
 //       <StaticIcon>
-//         <Icon icon="circle" type="alert" />
+//         <Icon icon="circle_solid" type="alert" />
 //         <IconLabel>alert</IconLabel>
 //       </StaticIcon>
 //       <StaticIcon style={{ backgroundColor: "black" }}>
-//         <Icon icon="circle" type="inverse" />
+//         <Icon icon="circle_solid" type="inverse" />
 //         <IconLabel style={{ color: "white" }}>inverse</IconLabel>
 //       </StaticIcon>
 //     </Grid>
@@ -213,55 +195,55 @@ storiesOf("Blocks|IconBlock", module)
 //         '4x', '5x', '6x', '7x', '8x', '9x', '10x'
 //       </SubTitle>
 //       <StaticIcon>
-//         <Icon icon="circle" size="xs" />
+//         <Icon icon="circle_solid" size="xs" />
 //         <IconLabel>xs</IconLabel>
 //       </StaticIcon>
 //       <StaticIcon>
-//         <Icon icon="circle" size="sm" />
+//         <Icon icon="circle_solid" size="sm" />
 //         <IconLabel>sm</IconLabel>
 //       </StaticIcon>
 //       <StaticIcon>
-//         <Icon icon="circle" />
+//         <Icon icon="circle_solid" />
 //         <IconLabel>default</IconLabel>
 //       </StaticIcon>
 //       <StaticIcon>
-//         <Icon icon="circle" size="lg" />
+//         <Icon icon="circle_solid" size="lg" />
 //         <IconLabel>lg</IconLabel>
 //       </StaticIcon>
 //       <StaticIcon>
-//         <Icon icon="circle" size="2x" />
+//         <Icon icon="circle_solid" size="2x" />
 //         <IconLabel>2x</IconLabel>
 //       </StaticIcon>
 //       <StaticIcon>
-//         <Icon icon="circle" size="3x" />
+//         <Icon icon="circle_solid" size="3x" />
 //         <IconLabel>3x</IconLabel>
 //       </StaticIcon>
 //       <StaticIcon>
-//         <Icon icon="circle" size="4x" />
+//         <Icon icon="circle_solid" size="4x" />
 //         <IconLabel>4x</IconLabel>
 //       </StaticIcon>
 //       <StaticIcon>
-//         <Icon icon="circle" size="5x" />
+//         <Icon icon="circle_solid" size="5x" />
 //         <IconLabel>5x</IconLabel>
 //       </StaticIcon>
 //       <StaticIcon>
-//         <Icon icon="circle" size="6x" />
+//         <Icon icon="circle_solid" size="6x" />
 //         <IconLabel>6x</IconLabel>
 //       </StaticIcon>
 //       <StaticIcon>
-//         <Icon icon="circle" size="7x" />
+//         <Icon icon="circle_solid" size="7x" />
 //         <IconLabel>7x</IconLabel>
 //       </StaticIcon>
 //       <StaticIcon>
-//         <Icon icon="circle" size="8x" />
+//         <Icon icon="circle_solid" size="8x" />
 //         <IconLabel>8x</IconLabel>
 //       </StaticIcon>
 //       <StaticIcon>
-//         <Icon icon="circle" size="9x" />
+//         <Icon icon="circle_solid" size="9x" />
 //         <IconLabel>9x</IconLabel>
 //       </StaticIcon>
 //       <StaticIcon>
-//         <Icon icon="circle" size="10x" />
+//         <Icon icon="circle_solid" size="10x" />
 //         <IconLabel>10x</IconLabel>
 //       </StaticIcon>
 //     </Grid>
@@ -272,7 +254,7 @@ storiesOf("Blocks|IconBlock", module)
 //         <u>Pulled + Bordered</u>
 //       </Title>
 //       <div>
-//         <Icon icon="circle" size="3x" pull="left" />
+//         <Icon icon="circle_solid" size="3x" pull="left" />
 //         <p>
 //           <u>
 //             <b>Pulled Left</b>
@@ -286,7 +268,7 @@ storiesOf("Blocks|IconBlock", module)
 //         </p>
 //       </div>
 //       <div>
-//         <Icon icon="circle" size="3x" border={true} pull="left" />
+//         <Icon icon="circle_solid" size="3x" border={true} pull="left" />
 //         <p>
 //           <u>
 //             <b>Pulled Left with Border</b>
@@ -300,7 +282,7 @@ storiesOf("Blocks|IconBlock", module)
 //         </p>
 //       </div>
 //       <div>
-//         <Icon icon="circle" size="3x" pull="right" />
+//         <Icon icon="circle_solid" size="3x" pull="right" />
 //         <p>
 //           <u>
 //             <b>Pulled Right</b>
@@ -314,7 +296,7 @@ storiesOf("Blocks|IconBlock", module)
 //         </p>
 //       </div>
 //       <div>
-//         <Icon icon="circle" size="3x" border={true} pull="right" />
+//         <Icon icon="circle_solid" size="3x" border={true} pull="right" />
 //         <p>
 //           <u>
 //             <b>Pulled Right with Border</b>
@@ -424,8 +406,8 @@ storiesOf("Blocks|IconBlock", module)
 //         <IconLabel>chevron-up</IconLabel>
 //       </ActiveIcon>
 //       <ActiveIcon>
-//         <Icon icon="circle" />
-//         <IconLabel>circle</IconLabel>
+//         <Icon icon="circle_solid" />
+//         <IconLabel>circle_solid</IconLabel>
 //       </ActiveIcon>
 //       <ActiveIcon>
 //         <Icon icon={["fal", "clone"]} />
@@ -436,7 +418,7 @@ storiesOf("Blocks|IconBlock", module)
 //         <IconLabel>"far", "code"</IconLabel>
 //       </ActiveIcon>
 //       <ActiveIcon>
-//         <Icon icon="circle" />
+//         <Icon icon="circle_solid" />
 //         <IconLabel>coffee</IconLabel>
 //       </ActiveIcon>
 //       <ActiveIcon>
@@ -528,12 +510,12 @@ storiesOf("Blocks|IconBlock", module)
 //         <IconLabel>plus</IconLabel>
 //       </ActiveIcon>
 //       <ActiveIcon>
-//         <Icon icon={["fal", "plus-circle"]} />
-//         <IconLabel>"fal", "plus-circle"</IconLabel>
+//         <Icon icon={["fal", "plus-circle_solid"]} />
+//         <IconLabel>"fal", "plus-circle_solid"</IconLabel>
 //       </ActiveIcon>
 //       <ActiveIcon>
-//         <Icon icon={["far", "question-circle"]} />
-//         <IconLabel>"far", "question-circle"</IconLabel>
+//         <Icon icon={["far", "question-circle_solid"]} />
+//         <IconLabel>"far", "question-circle_solid"</IconLabel>
 //       </ActiveIcon>
 //       <ActiveIcon>
 //         <Icon icon={["far", "share"]} />
@@ -576,8 +558,8 @@ storiesOf("Blocks|IconBlock", module)
 //         <IconLabel>users</IconLabel>
 //       </ActiveIcon>
 //       <ActiveIcon>
-//         <Icon icon="user-circle" />
-//         <IconLabel>user-circle</IconLabel>
+//         <Icon icon="user-circle_solid" />
+//         <IconLabel>user-circle_solid</IconLabel>
 //       </ActiveIcon>
 //       <SectionTitle>Brand Icons</SectionTitle>
 //       <ActiveIcon>
