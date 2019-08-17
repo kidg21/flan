@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 import { colors } from "Variables";
 import { Link } from "base/Typography";
-import { InteractiveContext, DisabledContext } from "States";
+import { DisabledContext } from "States";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 /** TODO: move these to Variables */
@@ -179,17 +179,10 @@ function Icon({
   if (isDisabled) iconColor = colors.grey_40;
 
   return (
-    <InteractiveContext.Provider value={onClick}>
+    <>
       {onClick ? (
         /** Wrapping anchor tag required for semantics */
-        <LinkedIcon
-          onClick={
-            typeof onClick === "boolean"
-              ? onClick
-              : useContext(InteractiveContext)
-          }
-          disabled={disabled}
-        >
+        <LinkedIcon onClick={onClick} disabled={disabled}>
           <StyledIcon
             id={id}
             icon={icon}
@@ -219,7 +212,7 @@ function Icon({
           className={className}
         />
       )}
-    </InteractiveContext.Provider>
+    </>
   );
 }
 
