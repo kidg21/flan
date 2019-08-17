@@ -86,7 +86,11 @@ storiesOf("Blocks|Bar", module)
         <Bar left={<Command />} center={shortTitle} right={<Command />} />
       </Card>
       <Card>
-        <Bar left={<Command />} center={longTitle} right={<Command />} />
+        <Bar
+          left={<Command />}
+          center={longTitle}
+          right={<Command />}
+        />
       </Card>
       <Card>
         <Bar

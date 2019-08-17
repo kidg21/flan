@@ -58,7 +58,7 @@ function Bar({
       alignContent = "flex-end";
       break;
     default:
-      alignItems = "flex-start";
+      alignContent = "flex-start";
       break;
   }
   switch (centerAlign && centerAlign.toLowerCase()) {
