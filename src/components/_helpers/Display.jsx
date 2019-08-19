@@ -42,11 +42,7 @@ function IconGrid({ data }) {
           leftWidth="min-content"
           center={
             <>
-              {item.name ? (
-                <Title text={item.name} size="large" select="all" />
-              ) : (
-                <Title text={item.icon} size="large" select="all" />
-              )}
+              <Title text={item.name || item.icon} size="large" select="all" />
               <Description text={item.desc} />
             </>
           }
