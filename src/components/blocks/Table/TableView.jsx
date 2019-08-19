@@ -1,28 +1,29 @@
-import React from "react"
-import styled from "styled-components"
-import PropTypes from "prop-types"
+import styled from "styled-components";
+import { colors } from "Variables";
 
 export const MultiGridWrapper = styled.div`
   cursor: default;
-  margin: .5em;
+  margin: 0.5em;
+  overflow: hidden;
+  font-size: 12px;
+
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
   border-collapse: collapse;
   display: flex-block;
-  width: 100%;
 `;
 
 export const CellWrapper = styled.div`
-  padding: 0.5em 0.5em 0.5em;
-  font-size: small;
-  color: ${props => props.isHeader ? "#83a3c2" : "black"};
-  font-weight: ${props => props.isHeader ? "bold" : null};
+  padding: 5px;
+  color: ${colors.grey_80};
+  font-weight: ${(props) => { return props.isHeader ? "" : "bold"; }};
+  border-bottom: 1px solid #eee;
   background-color: ${(props) => {
     if (props.isHighlighted) {
-      return "pink";
-    }
-    if (props.evenRow) {
       return "#f0f5fb";
+    }
+    if (props.isSelected) {
+      return "#669932";
     }
     return "white";
   }};
