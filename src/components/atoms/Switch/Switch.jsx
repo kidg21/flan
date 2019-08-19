@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import { colors } from "Variables";
 
 const SwitchContainer = styled.div`
   position: relative;
@@ -70,7 +71,7 @@ const Switch = ({ checked, id, ...props }) => {
 };
 
 Switch.propTypes = {
-  id: PropTypes.string
+  id: PropTypes.string,
 };
 
 export default Switch;

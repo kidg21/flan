@@ -1,15 +1,14 @@
 import React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import PropTypes from "prop-types";
-import Icon from "atoms/Icon";
 import Grid from "layout/Grid";
 import Button from "atoms/Button";
-import { colors } from "Variables";
-import Title, { Body } from "base/Typography";
+import SelectMenu from "atoms/SelectMenu";
+import { Section } from "layout/Form";
+import Title from "base/Typography";
 import Card, { Piece } from "layout/Card";
 import Bar from "blocks/Bar";
 import TextInput from "atoms/TextInput";
-import { clearDecorators } from "@storybook/react/dist/client/preview";
 
 const Wrapper = styled.div`
   padding: 1em;
@@ -18,7 +17,7 @@ const Wrapper = styled.div`
 function DialogueBox({
   id,
   header,
-  footer,
+  type,
   title,
   message,
   buttonLabel,
@@ -30,6 +29,7 @@ function DialogueBox({
   action,
 }) {
   let buttonType;
+  let inputContent;
   switch (action) {
     case "one":
       buttonType = (
@@ -65,6 +65,31 @@ function DialogueBox({
         />
       );
       break;
+  }
+  switch (type) {
+    case "saving":
+      inputContent = (
+        <Section>
+          <TextInput inputLabel="Name" placeholder="Type Name" />
+          <SelectMenu
+            inputLabel="Location"
+            options={[
+              { value: "1", label: "my folder" },
+              { value: "2", label: "our folder" },
+              { value: "3", label: "dmp" },
+              { value: "4", label: "lightbox" },
+            ]}
+          />
+          <SelectMenu
+            inputLabel="File Type"
+            options={[
+              { value: "jpg", label: ".jpg" },
+              { value: "png", label: ".png" },
+            ]}
+          />{" "}
+        </Section>
+      );
+      break;
     default:
       break;
   }
@@ -77,6 +102,11 @@ function DialogueBox({
         </Piece>
         {message ? (
           <Bar left={<Title title={message} weight="light" />} />
+        ) : null}
+        {type ? (
+          <Piece>
+            <Bar left={<div>{inputContent}</div>} />
+          </Piece>
         ) : null}
         {content ? (
           <Piece>
@@ -93,6 +123,7 @@ DialogueBox.propTypes = {
   header: PropTypes.node,
   content: PropTypes.node,
   title: PropTypes.node,
+  type: PropTypes.node,
   footer: PropTypes.node,
   message: PropTypes.string,
   buttonColor: PropTypes.node,

@@ -4,13 +4,12 @@ import styled, { css } from "styled-components";
 import { colors } from "Variables";
 import Icon from "atoms/Icon";
 
-const CommandContainer = styled.a`
+const CommandContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-areas: ${props => props.alignIcon || ""};
   justify-items: ${props => props.justifyIcon || ""};
   grid-gap: 0.5rem;
-  align-items: center;
   width: max-content;
   font-size: ${props => props.commandSize || ""};
   color: ${props => props.commandColor || ""};
@@ -26,21 +25,42 @@ const CommandContainer = styled.a`
   }
 `;
 
-const CommandName = styled.h5`
+const CommandName = styled.a`
   grid-area: name;
   font-size: inherit;
   line-height: inherit;
   overflow: hidden;
+  tab-index: -1;
+  role: link;
+  aria-hidden: true;
   white-space: nowrap;
   text-overflow: ellipsis;
   margin: 0;
+  &:focus {
+    border: 1px solid ${colors.anchor};
+    outline: none;
+  }
 `;
 
 const CommandIcon = styled(Icon)`
   grid-area: icon;
+  aria-hidden: false;
+  focusable: true;
+  role: link;
 `;
 
-function Command({ id, name, label, icon, align, state, size, isDisabled }) {
+function Command({
+  id,
+  name,
+  label,
+  icon,
+  onClick,
+  onFocus,
+  align,
+  state,
+  size,
+  isDisabled,
+}) {
   let alignIcon = "'icon name'";
   let justifyCommand = "flex-start";
   let justifyIcon = "flex-start";
@@ -138,6 +158,8 @@ function Command({ id, name, label, icon, align, state, size, isDisabled }) {
       commandColor={commandColor}
       commandSize={commandSize}
       isDisabled={isDisabled}
+      onClick={onClick}
+      onFocus={onFocus}
     >
       {icon ? <CommandIcon icon={icon} /> : null}
       <CommandName>{label}</CommandName>

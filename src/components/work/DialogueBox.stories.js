@@ -12,6 +12,7 @@ import Grid from "layout/Grid";
 import List, { ListItem } from "blocks/List";
 import Button from "atoms/Button";
 import TextInput from "atoms/TextInput";
+import Command from "atoms/Command";
 import Icon from "atoms/Icon";
 import Form, { Section, SectionName } from "layout/Form";
 import DMPlogo from "images/DMPlogo.jpg";
@@ -61,27 +62,7 @@ storiesOf("Work|Dialogue Box", module)
   .add("General/Save Box", () => (
     <DialogueBox
       title="Save As"
-      content={
-        <Section>
-          <TextInput inputLabel="Name" placeholder="Type Name" />
-          <SelectMenu
-            inputLabel="Location"
-            options={[
-              { value: "1", label: "my folder" },
-              { value: "2", label: "our folder" },
-              { value: "3", label: "dmp" },
-              { value: "4", label: "lightbox" },
-            ]}
-          />
-          <SelectMenu
-            inputLabel="File Type"
-            options={[
-              { value: "jpg", label: ".jpg" },
-              { value: "png", label: ".png" },
-            ]}
-          />{" "}
-        </Section>
-      }
+      type="saving"
       action="two"
       buttonLabel="Save"
       buttonLabel2="Cancel"
@@ -123,6 +104,7 @@ storiesOf("Work|Dialogue Box", module)
               { value: "4", label: "Joe" },
             ]}
           />
+          <Command label="Command Link" />
           <Piece>
             <Container setHeight="12rem">
               <List>

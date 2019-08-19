@@ -1,7 +1,7 @@
-import React from "react"
-import styled, { css } from "styled-components"
-import PropTypes from "prop-types"
-import { colors, shadows } from "Variables"
+import React from "react";
+import styled, { css } from "styled-components";
+import PropTypes from "prop-types";
+import { colors, shadows } from "Variables";
 
 const RadioContainer = styled.div`
   display: grid;
@@ -16,7 +16,7 @@ const RadioContainer = styled.div`
     user-select: none;
     color: ${colors.grey_40};
   }
-`
+`;
 
 const RadioInput = styled.input.attrs({ type: "radio" })`
   border: 1px solid;
@@ -35,9 +35,10 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
       props.error ? colors.alert_light : colors.success};
   }
   &:focus {
+    border: 1px solid ${colors.anchor};
     outline: none;
   }
-`
+`;
 
 const RadioLabel = styled.label`
   user-select: none;
@@ -46,7 +47,7 @@ const RadioLabel = styled.label`
   font-weight: 400;
   line-height: normal;
   cursor: pointer;
-`
+`;
 
 function Radio({ id, name, label, value, error, onChange, checked, disabled }) {
   return (
@@ -65,7 +66,7 @@ function Radio({ id, name, label, value, error, onChange, checked, disabled }) {
       />
       <RadioLabel htmlFor={id}>{label}</RadioLabel>
     </RadioContainer>
-  )
+  );
 }
 Radio.propTypes = {
   /** This is the Left nav command. */
@@ -77,7 +78,7 @@ Radio.propTypes = {
   name: PropTypes.string.isRequired,
   value: PropTypes.string,
   onChange: PropTypes.func,
-  checked: PropTypes.bool
-}
+  checked: PropTypes.bool,
+};
 
-export { Radio as default }
+export { Radio as default };

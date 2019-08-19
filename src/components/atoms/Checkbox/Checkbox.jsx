@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { colors } from "Variables";
+import { colors, shadows } from "Variables";
 
 const CheckboxWrapper = styled.section`
   display: grid;
@@ -42,12 +42,14 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
     border-color: ${props => props.borderColorChecked || colors.success};
   }
   &:focus {
+    border: 1px solid ${colors.anchor};
     outline: none;
   }
 `;
 
 const CheckboxLabel = styled.label`
   grid-area: label;
+  tab-index: 0;
   user-select: none;
   font-family: Arial;
   font-size: 13px;
