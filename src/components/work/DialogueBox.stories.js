@@ -36,8 +36,8 @@ storiesOf("Work|Dialogue Box", module)
       title="Hey are you sure your okay doing this?"
       message="This is the body of your message. Tells you more about the action you are about to commit."
       action="two"
-      buttonLabel="Create"
-      buttonLabel2="Cancel"
+      primaryLabel="Create"
+      secondaryLabel="Cancel"
     />
   ))
   .add("General/Login", () => (
@@ -56,7 +56,7 @@ storiesOf("Work|Dialogue Box", module)
         </Section>
       }
       action="one"
-      buttonLabel="Login"
+      primaryLabel="Login"
     />
   ))
   .add("General/Save Box", () => (
@@ -64,8 +64,8 @@ storiesOf("Work|Dialogue Box", module)
       title="Save As"
       type="saving"
       action="two"
-      buttonLabel="Save"
-      buttonLabel2="Cancel"
+      primaryLabel="Save"
+      secondaryLabel="Cancel"
     />
   ))
   .add("General/Delete", () => (
@@ -73,8 +73,8 @@ storiesOf("Work|Dialogue Box", module)
       title="Are you sure you want to delete this user?"
       message="If you delete this user you will not be able to get back any information or work they have done. Their work will be lost forever."
       action="two"
-      buttonLabel="Delete"
-      buttonLabel2="Cancel"
+      primaryLabel="Delete"
+      secondaryLabel="Cancel"
       buttonColor="alert"
     />
   ))
@@ -83,8 +83,8 @@ storiesOf("Work|Dialogue Box", module)
       title="View your report?"
       message="Your report successfully downloaded. Do you want to check out the deets."
       action="two"
-      buttonLabel="View"
-      buttonLabel2="Cancel"
+      primaryLabel="View"
+      secondaryLabel="Cancel"
       buttonColor="success"
     />
   ))
@@ -104,7 +104,6 @@ storiesOf("Work|Dialogue Box", module)
               { value: "4", label: "Joe" },
             ]}
           />
-          <Command label="Command Link" />
           <Piece>
             <Container setHeight="12rem">
               <List>
@@ -130,8 +129,8 @@ storiesOf("Work|Dialogue Box", module)
         </Section>
       }
       action="two"
-      buttonLabel="Edit"
-      buttonLabel2="Cancel"
+      primaryLabel="Edit"
+      secondaryLabel="Cancel"
     />
   ))
   .add("Role/Edit Files", () => (
@@ -161,8 +160,8 @@ storiesOf("Work|Dialogue Box", module)
         </Section>
       }
       action="two"
-      buttonLabel="Add"
-      buttonLabel2="Cancel"
+      primaryLabel="Add"
+      secondaryLabel="Cancel"
     />
   ))
   .add("User/Add User", () => (
@@ -192,8 +191,8 @@ storiesOf("Work|Dialogue Box", module)
         </Section>
       }
       action="two"
-      buttonLabel="Add"
-      buttonLabel2="Cancel"
+      primaryLabel="Add"
+      secondaryLabel="Cancel"
     />
   ))
   .add("User/Edit User", () => (
@@ -221,7 +220,7 @@ storiesOf("Work|Dialogue Box", module)
         </Section>
       }
       action="two"
-      buttonLabel="Save"
-      buttonLabel2="Cancel"
+      primaryLabel="Save"
+      secondaryLabel="Cancel"
     />
   ));

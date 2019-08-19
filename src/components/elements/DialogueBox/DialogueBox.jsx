@@ -20,12 +20,12 @@ function DialogueBox({
   type,
   title,
   message,
-  buttonLabel,
-  buttonLabel2,
+  primaryLabel,
+  secondaryLabel,
   content,
   buttonColor,
-  onClickButton,
-  onClickButton2,
+  onClickPrimary,
+  onClickSecondary,
   action,
 }) {
   let buttonType;
@@ -36,8 +36,8 @@ function DialogueBox({
         <Bar
           left={
             <Button
-              buttonLabel={buttonLabel}
-              onClick={onClickButton}
+              buttonLabel={primaryLabel}
+              onClick={onClickPrimary}
               color={buttonColor}
             />
           }
@@ -50,14 +50,14 @@ function DialogueBox({
           right={
             <Grid columns="2">
               <Button
-                buttonLabel={buttonLabel}
+                buttonLabel={primaryLabel}
                 type="solid"
-                onClick={onClickButton}
+                onClick={onClickPrimary}
                 color={buttonColor}
               />
               <Button
-                buttonLabel={buttonLabel2}
-                onClick={onClickButton2}
+                buttonLabel={secondaryLabel}
+                onClick={onClickSecondary}
                 color={buttonColor}
               />
             </Grid>
@@ -127,10 +127,10 @@ DialogueBox.propTypes = {
   footer: PropTypes.node,
   message: PropTypes.string,
   buttonColor: PropTypes.node,
-  buttonLabel: PropTypes.string,
-  buttonLabel2: PropTypes.string,
-  onClickButton: PropTypes.func,
-  onClickButton2: PropTypes.func,
+  primaryLabel: PropTypes.string,
+  secondaryLabel: PropTypes.string,
+  onClickPrimary: PropTypes.func,
+  onClickSecondary: PropTypes.func,
   action: PropTypes.node,
 };
 
