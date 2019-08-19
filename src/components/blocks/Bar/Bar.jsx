@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { colors, shadows, screen } from "Variables";
 
 const BarLayout = styled.div`
   display: flex;
@@ -13,7 +12,7 @@ const BarLayout = styled.div`
 `;
 
 const Slot = styled.div`
-  display: ${props => props.setDisplay || "flex"};
+  display: flex;
   flex: auto;
   flex-direction: column;
   align-items: ${props => props.alignItems || ""};
@@ -36,7 +35,6 @@ const Slot = styled.div`
 
 function Bar({
   id,
-  setDisplay,
   contentAlign,
   left,
   leftWidth,
@@ -83,27 +81,17 @@ function Bar({
       className={className}
     >
       {left ? (
-        <Slot
-          setDisplay={setDisplay}
-          widthMin={leftWidth}
-          widthMax={leftWidth}
-          setPadding="0 1em 0 0"
-        >
+        <Slot widthMin={leftWidth} widthMax={leftWidth} setPadding="0 1em 0 0">
           {left}
         </Slot>
       ) : null}
       {center ? (
-        <Slot
-          setDisplay={setDisplay}
-          alignItems={alignItems}
-          textAlign={textAlign}
-        >
+        <Slot alignItems={alignItems} textAlign={textAlign}>
           {center}
         </Slot>
       ) : null}
       {right ? (
         <Slot
-          setDisplay={setDisplay}
           widthMin={rightWidth}
           widthMax={rightWidth}
           alignItems="flex-end"
@@ -119,11 +107,6 @@ function Bar({
 
 Bar.propTypes = {
   id: PropTypes.string,
-  /** Used to change the default display property
-   * Default: 'flex'
-   * Options: Any valid CSS value for the 'display' property
-   */
-  setDisplay: PropTypes.string,
   /** Sets the vertical alignment of all content
    * Default: 'top'
    */

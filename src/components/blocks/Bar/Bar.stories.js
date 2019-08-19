@@ -5,13 +5,9 @@ import { withInfo } from "@storybook/addon-info";
 import {
   withKnobs,
   text,
-  boolean,
-  radios,
-  select,
   number,
-  button,
-  array,
-  object,
+  boolean,
+  select,
   optionsKnob as options,
 } from "@storybook/addon-knobs";
 import { colors } from "Variables";
@@ -79,6 +75,42 @@ storiesOf("Blocks|Bar", module)
     )),
   )
 
+  .add("Knobs", () => {
+    return (
+      <Card>
+        <Bar
+          contentAlign={options(
+            "align content",
+            {
+              top: "default",
+              center: "center",
+              bottom: "bottom",
+            },
+            "default",
+            { display: "radio" },
+            "Bar",
+          )}
+          centerAlign={options(
+            "center content",
+            {
+              left: "left",
+              center: "default",
+              right: "right",
+            },
+            "default",
+            { display: "radio" },
+            "Bar",
+          )}
+          left={<Title text="Left" />}
+          leftWidth={text("left area width (max 40%)", "", "Bar")}
+          center={multipleLines}
+          right={<Title text="Right" />}
+          rightWidth={text("right area width (max 40%)", "", "Bar")}
+        />
+      </Card>
+    );
+  })
+
   .add("Some Bars", () => (
     <Grid>
       <Section>Command / Text / Command</Section>
@@ -86,11 +118,7 @@ storiesOf("Blocks|Bar", module)
         <Bar left={<Command />} center={shortTitle} right={<Command />} />
       </Card>
       <Card>
-        <Bar
-          left={<Command />}
-          center={longTitle}
-          right={<Command />}
-        />
+        <Bar left={<Command />} center={longTitle} right={<Command />} />
       </Card>
       <Card>
         <Bar
