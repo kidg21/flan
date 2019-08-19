@@ -4,7 +4,7 @@ import styled, { css } from "styled-components";
 import { colors } from "Variables";
 import Icon from "atoms/Icon";
 
-const CommandContainer = styled.div`
+const CommandContainer = styled.a`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-areas: ${props => props.alignIcon || ""};
@@ -25,14 +25,11 @@ const CommandContainer = styled.div`
   }
 `;
 
-const CommandName = styled.a`
+const CommandName = styled.h5`
   grid-area: name;
   font-size: inherit;
   line-height: inherit;
   overflow: hidden;
-  tab-index: -1;
-  role: link;
-  aria-hidden: true;
   white-space: nowrap;
   text-overflow: ellipsis;
   margin: 0;
@@ -44,9 +41,6 @@ const CommandName = styled.a`
 
 const CommandIcon = styled(Icon)`
   grid-area: icon;
-  aria-hidden: false;
-  focusable: true;
-  role: link;
 `;
 
 function Command({
@@ -55,7 +49,6 @@ function Command({
   label,
   icon,
   onClick,
-  onFocus,
   align,
   state,
   size,
@@ -159,7 +152,6 @@ function Command({
       commandSize={commandSize}
       isDisabled={isDisabled}
       onClick={onClick}
-      onFocus={onFocus}
     >
       {icon ? <CommandIcon icon={icon} /> : null}
       <CommandName>{label}</CommandName>
