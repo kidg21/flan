@@ -52,10 +52,6 @@ const ListItemWrapper = styled.li`
   }
 `;
 
-const Item = styled(Bar)`
-  align-items: center;
-`;
-
 function List({ id, title, children, interactive }) {
   return (
     <InteractiveContext.Provider value={interactive}>
