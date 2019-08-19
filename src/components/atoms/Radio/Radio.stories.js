@@ -60,6 +60,7 @@ storiesOf("Atoms|Radio", module)
   .addDecorator(Padding)
   .addDecorator(withKnobs)
   .add("Documentation", withInfo()(() => <Radio {...radio_1} />))
+  .add("Skeleton", () => <Radio />)
   .add("Radio (States)", () => (
     <Section>
       <SectionName>Checkbox Group (States)</SectionName>

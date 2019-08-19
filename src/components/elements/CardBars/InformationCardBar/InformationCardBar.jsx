@@ -9,28 +9,30 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Title from "base/Typography";
 
 const Arrow = styled(FontAwesomeIcon)`
-	transform: ${props => (props.leftOnscreen ? "rotate(-180deg)" : "rotate(0deg)")};
-	transition: all 0.3s ease;
+  transform: ${props =>
+    props.leftOnscreen ? "rotate(-180deg)" : "rotate(0deg)"};
+  transition: all 0.3s ease;
 `;
 
-function InformationCardBar({ id, title }) {
-	const [leftOnscreen, setLeftOnscreen] = useState(false);
-	function toggleLeft() {
-		setLeftOnscreen(!leftOnscreen);
-	}
-	return (
-		<Piece id={id}>
-			<Bar
-				onClick={toggleLeft}
-				left={<Title title={title} weight="normal" />}
-				right={<Arrow leftOnscreen={leftOnscreen} icon={["far", "angle-up"]} />}
-			/>
-		</Piece>
-	);
+function InformationCardBar({ id, title, count }) {
+  const [leftOnscreen, setLeftOnscreen] = useState(false);
+  function toggleLeft() {
+    setLeftOnscreen(!leftOnscreen);
+  }
+  return (
+    <Piece id={id}>
+      <Bar
+        onClick={toggleLeft}
+        left={<Title title={title} count={count} weight="normal" />}
+        right={<Arrow leftOnscreen={leftOnscreen} icon={["far", "angle-up"]} />}
+      />
+    </Piece>
+  );
 }
 InformationCardBar.propTypes = {
-	id: PropTypes.string,
-	title: PropTypes.any.isRequired,
-	disabled: PropTypes.bool,
+  id: PropTypes.string,
+  title: PropTypes.any.isRequired,
+  count: PropTypes.number,
+  disabled: PropTypes.bool,
 };
 export default InformationCardBar;

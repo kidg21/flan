@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { colors, shadows } from "Variables";
 import Icon from "atoms/Icon";
+import Title, { Body } from "base/Typography";
 
 const StyledBanner = styled.div`
   display: flex;
@@ -30,10 +30,6 @@ const StatusBadge = styled.div`
   cursor: default;
 `;
 
-const BannerIcon = styled(FontAwesomeIcon)`
-  cursor: default;
-`;
-
 const BannerImage = styled.img`
   flex: none;
   width: 3em;
@@ -48,15 +44,6 @@ const Message = styled.section`
   flex: auto;
   margin-right: 1.5em;
   align-self: center;
-`;
-
-const Title = styled.h4`
-  margin: 0;
-`;
-
-const Description = styled.h5`
-  margin: 0;
-  font-weight: 500;
 `;
 
 const Link = styled.h4`
@@ -93,7 +80,7 @@ function Banner({
   inverse,
   onClick,
   onClose,
-  style
+  style,
 }) {
   let bannerType;
   let color = colors.grey_40;
@@ -102,7 +89,7 @@ function Banner({
     case "media":
       bannerType = icon ? (
         <StatusBadge>
-          <BannerIcon icon={icon} size="2x" fixedWidth />
+          <Icon icon={icon} size="2x" fixedWidth />
         </StatusBadge>
       ) : img ? (
         <BannerImage src={img} inverse={inverse} />
@@ -113,7 +100,7 @@ function Banner({
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
-          <BannerIcon icon="info" fixedWidth anchor />
+          <Icon icon="info" fixedWidth anchor />
         </StatusBadge>
       );
       break;
@@ -122,7 +109,7 @@ function Banner({
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
-          <BannerIcon icon="check" fixedWidth success />
+          <Icon icon="check" fixedWidth success />
         </StatusBadge>
       );
       break;
@@ -131,7 +118,7 @@ function Banner({
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
-          <BannerIcon icon="exclamation" fixedWidth warning />
+          <Icon icon="exclamation" fixedWidth warning />
         </StatusBadge>
       );
       break;
@@ -140,7 +127,7 @@ function Banner({
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
-          <BannerIcon icon="times" fixedWidth alert />
+          <Icon icon="times" fixedWidth alert />
         </StatusBadge>
       );
       break;
@@ -162,8 +149,8 @@ function Banner({
     >
       {bannerType}
       <Message>
-        <Title>{title}</Title>
-        {description ? <Description>{description}</Description> : null}
+        <Title title={title} type="inherit" />
+        {description ? <Body body={description} type="inherit" /> : null}
         {link ? <Link onClick={onClick}>{link}</Link> : null}
       </Message>
       <Close onClick={onClose}>
@@ -184,7 +171,7 @@ Banner.propTypes = {
   inverse: PropTypes.bool,
   onClick: PropTypes.func,
   onClose: PropTypes.func,
-  style: PropTypes.string
+  style: PropTypes.string,
 };
 
 export default Banner;

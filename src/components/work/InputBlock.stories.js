@@ -9,25 +9,24 @@ import {
   boolean,
   radios,
   select,
-  number
+  number,
 } from "@storybook/addon-knobs";
-import Panel, { PanelSection } from "../../layout/Panel/Panel";
-import Form, { Section, SectionName } from "../../layout/Form/Form";
+import Panel, { PanelSection } from "layout/Panel";
+import Form, { Section, SectionName } from "layout/Form";
 import Icon from "atoms/Icon";
-import TextInput from "atoms/TextInput";
 import InputBlock from "blocks/InputBlock";
-import InputBlockNotes from "./InputBlock.md";
+import InputBlockNotes from "blocks/InputBlock/InputBlock.md";
 
 // Input ( Standard )
-storiesOf("Blocks|InputBlock", module)
+storiesOf("Work|Blocks/InputBlock", module)
   .addParameters({
     info: {
       text:
-        "Input Blocks allow users to enter text into a UI. They typically appear in forms and dialogs"
+        "Input Blocks allow users to enter text into a UI. They typically appear in forms and dialogs",
     },
     notes: {
-      markdown: InputBlockNotes
-    }
+      markdown: InputBlockNotes,
+    },
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
@@ -39,9 +38,9 @@ storiesOf("Blocks|InputBlock", module)
           "Type",
           {
             Text: "text",
-            Number: "number"
+            Number: "number",
           },
-          "text"
+          "text",
         )}
         inputLabel={text("Input Label", "Input Label")}
         isRequired={boolean("Required", false)}
@@ -51,7 +50,7 @@ storiesOf("Blocks|InputBlock", module)
         error={boolean("Error", false)}
         errorMessage={text(
           "Error Text",
-          "Stay with my, buddy...we can fix this!"
+          "Stay with my, buddy...we can fix this!",
         )}
         prefix={text("Prefix", "")}
         postfix={text("Postfix", "")}
@@ -59,7 +58,7 @@ storiesOf("Blocks|InputBlock", module)
         twoInputs={boolean("2 Inputs", false)}
         threeInputs={boolean("3 Inputs", false)}
       />
-    ))
+    )),
   )
   // Text ( Standard )
   .add("InputBlock ( Standard )", () => (
@@ -154,7 +153,7 @@ storiesOf("Blocks|InputBlock", module)
       preSelect={[
         { value: "sir", label: "Sir" },
         { value: "madam", label: "Madam" },
-        { value: "my lord", label: "My Lord" }
+        { value: "my lord", label: "My Lord" },
       ]}
       helpText="This help text has been passed through a prop!"
     />
@@ -174,7 +173,7 @@ storiesOf("Blocks|InputBlock", module)
       postSelect={[
         { value: "com", label: ".com" },
         { value: "org", label: ".org" },
-        { value: "gov", label: ".gov" }
+        { value: "gov", label: ".gov" },
       ]}
       helpText="This help text has been passed through a prop!"
     />
@@ -205,7 +204,7 @@ storiesOf("Blocks|InputBlock", module)
       postSelect={[
         { value: "com", label: ".com" },
         { value: "org", label: ".org" },
-        { value: "gov", label: ".gov" }
+        { value: "gov", label: ".gov" },
       ]}
       helpText="This help text has been passed through a prop!"
     />
@@ -217,7 +216,7 @@ storiesOf("Blocks|InputBlock", module)
       preSelect={[
         { value: "sir", label: "Sir" },
         { value: "madam", label: "Madam" },
-        { value: "my lord", label: "My Lord" }
+        { value: "my lord", label: "My Lord" },
       ]}
       postfix=".com"
       helpText="This help text has been passed through a prop!"
@@ -230,20 +229,20 @@ storiesOf("Blocks|InputBlock", module)
       preSelect={[
         { value: "sir", label: "Sir" },
         { value: "madam", label: "Madam" },
-        { value: "my lord", label: "My Lord" }
+        { value: "my lord", label: "My Lord" },
       ]}
       postSelect={[
         { value: "com", label: ".com" },
         { value: "org", label: ".org" },
-        { value: "gov", label: ".gov" }
+        { value: "gov", label: ".gov" },
       ]}
       helpText="This help text has been passed through a prop!"
     />
   ));
 // InputBlock ( The InputBlock Family )
-storiesOf("Blocks|InputBlock", module).add(
+storiesOf("Work|Blocks/InputBlock", module).add(
   "The InputBlock Block Family",
-  props => (
+  () => (
     <Panel>
       <PanelSection body>
         <Form>
@@ -298,7 +297,7 @@ storiesOf("Blocks|InputBlock", module).add(
               preSelect={[
                 { value: "sir", label: "Sir" },
                 { value: "madam", label: "Madam" },
-                { value: "my lord", label: "My Lord" }
+                { value: "my lord", label: "My Lord" },
               ]}
               helpText="This help text has been passed through a prop!"
             />
@@ -312,7 +311,7 @@ storiesOf("Blocks|InputBlock", module).add(
               postSelect={[
                 { value: "com", label: ".com" },
                 { value: "org", label: ".org" },
-                { value: "gov", label: ".gov" }
+                { value: "gov", label: ".gov" },
               ]}
               helpText="This help text has been passed through a prop!"
             />
@@ -334,7 +333,7 @@ storiesOf("Blocks|InputBlock", module).add(
               postSelect={[
                 { value: "com", label: ".com" },
                 { value: "org", label: ".org" },
-                { value: "gov", label: ".gov" }
+                { value: "gov", label: ".gov" },
               ]}
               helpText="This help text has been passed through a prop!"
             />
@@ -343,7 +342,7 @@ storiesOf("Blocks|InputBlock", module).add(
               preSelect={[
                 { value: "sir", label: "Sir" },
                 { value: "madam", label: "Madam" },
-                { value: "my lord", label: "My Lord" }
+                { value: "my lord", label: "My Lord" },
               ]}
               postfix=".com"
               helpText="This help text has been passed through a prop!"
@@ -353,12 +352,12 @@ storiesOf("Blocks|InputBlock", module).add(
               preSelect={[
                 { value: "sir", label: "Sir" },
                 { value: "madam", label: "Madam" },
-                { value: "my lord", label: "My Lord" }
+                { value: "my lord", label: "My Lord" },
               ]}
               postSelect={[
                 { value: "com", label: ".com" },
                 { value: "org", label: ".org" },
-                { value: "gov", label: ".gov" }
+                { value: "gov", label: ".gov" },
               ]}
               helpText="This help text has been passed through a prop!"
             />
@@ -366,5 +365,5 @@ storiesOf("Blocks|InputBlock", module).add(
         </Form>
       </PanelSection>
     </Panel>
-  )
+  ),
 );

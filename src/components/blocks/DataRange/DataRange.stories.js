@@ -25,4 +25,5 @@ storiesOf("Blocks|Data Range", module)
       labelMax="Max"
       optionsMax={options}
     />
-  ));
+  ))
+  .add("Skeleton", () => <DataRange />);

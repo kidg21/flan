@@ -1,29 +1,38 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useContext } from "react";
 import styled from "styled-components";
-import { colors, shadows } from "Variables";
+import { shadows } from "Variables";
+import { DisabledContext } from "States";
 import PropTypes from "prop-types";
 import Button from "atoms/Button";
 
 const TabsWrapper = styled.section`
-  position: ${props => props.setPosition || ""};
-  display: ${props => props.setOrientation || "grid"};
-  grid-gap: ${props => (props.isSearch ? "" : "2px")};
-  grid-template-columns: ${props => props.setColumns || "repeat(auto-fit, minmax(0, 1fr))"};
+  position: ${(props) => { return props.setPosition || ""; }};
+  display: ${(props) => { return props.setOrientation || "grid"; }};
+  grid-gap: ${(props) => { return (props.isSearch ? "" : "2px"); }};
+  grid-template-columns: ${(props) => { return props.setColumns || "repeat(auto-fit, minmax(0, 1fr))"; }};
   flex-direction: column;
-  bottom: ${props => props.alignBottom || ""};
-  right: ${props => (props.alignRight ? "0" : "")};
-  width: ${props => props.setWidth || "100%"};
-  height: ${props => props.setHeight || ""};
-  padding: ${props => (props.isFloating ? ".25rem" : "")};
-  z-index: ${props => (props.isFloating ? "1001" : "")};
-  filter: ${props => (props.isFloating ? shadows.cardShadow : "")};
+  bottom: ${(props) => { return props.alignBottom || ""; }};
+  right: ${(props) => { return (props.alignRight ? "0" : ""); }};
+  width: ${(props) => { return props.setWidth || "100%"; }};
+  height: ${(props) => { return props.setHeight || "100%"; }};
+  padding: ${(props) => { return (props.isFloating ? ".25rem" : ""); }};
+  z-index: ${(props) => { return (props.isFloating ? "1001" : ""); }};
+  filter: ${(props) => { return (props.isFloating ? shadows.cardShadow : ""); }};
   > * {
-    margin: ${props => (props.isFloating ? ".5rem" : "")};
-    border-radius: ${props => (props.isFloating ? ".5rem" : "0")};
+    margin: ${(props) => { return (props.isFloating ? ".5rem" : ""); }};
+    border-radius: ${(props) => { return (props.isFloating ? ".5rem" : "0"); }};
   }
 `;
 
-function Tabs({ id, children, columns, align, isFloating, style, isSearch }) {
+function Tabs({
+  id,
+  children,
+  columns,
+  align,
+  isFloating,
+  style,
+  isSearch,
+}) {
   let setColumns;
   let setPosition;
   let setWidth;
@@ -55,21 +64,21 @@ function Tabs({ id, children, columns, align, isFloating, style, isSearch }) {
   }
   switch (align) {
     case "bottom":
-      setPosition = "absolute";
+      // setPosition = "absolute";
       alignBottom = "0";
       break;
     case "left":
       setColumns = "none";
-      setPosition = "absolute";
-      setWidth = "min-content";
+      // setPosition = "absolute";
+      setWidth = "auto";
       setHeight = "100%";
       setOrientation = "flex";
       alignBottom = "0";
       break;
     case "right":
       setColumns = "none";
-      setPosition = "absolute";
-      setWidth = "min-content";
+      // setPosition = "absolute";
+      setWidth = "auto";
       setHeight = "100%";
       setOrientation = "flex";
       alignRight = "0";
@@ -96,41 +105,36 @@ function Tabs({ id, children, columns, align, isFloating, style, isSearch }) {
   );
 }
 
-function Tab({ id, icon, tabLabel, onClick, isSelected, halfSize, isDisabled }) {
+function Tab({
+  id,
+  icon,
+  tabLabel,
+  onClick,
+  isSelected,
+  disabled,
+}) {
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   return (
     <Fragment>
       {isSelected ? (
         <Button
           id={id}
-          halfSize={halfSize}
           icon={icon}
           buttonLabel={tabLabel}
           onClick={onClick}
           isSelected={isSelected}
-          isDisabled={isDisabled}
+          disabled={isDisabled}
           type="solid"
           color="success"
-        />
-      ) : isDisabled ? (
-        <Button
-          id={id}
-          halfSize={halfSize}
-          icon={icon}
-          buttonLabel={tabLabel}
-          onClick={onClick}
-          isSelected={isSelected}
-          isDisabled={isDisabled}
-          type="disabled"
         />
       ) : (
         <Button
           id={id}
           icon={icon}
           buttonLabel={tabLabel}
-          halfSize={halfSize}
           onClick={onClick}
           isSelected={isSelected}
-          isDisabled={isDisabled}
+          disabled={isDisabled}
         />
       )}
     </Fragment>
@@ -151,10 +155,9 @@ Tab.propTypes = {
   id: PropTypes.string,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   tabLabel: PropTypes.string.isRequired,
-  halfSize: PropTypes.bool,
   onClick: PropTypes.func.isRequired,
   isSelected: PropTypes.bool,
-  isDisabled: PropTypes.bool,
+  disabled: PropTypes.bool,
 };
 
 export { Tabs as default, Tab };

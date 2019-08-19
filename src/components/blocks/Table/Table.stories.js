@@ -1,15 +1,14 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import Table from "blocks/Table";
-import DataTable from "./DataTable";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
 import { MultiGridWrapper, CellWrapper } from "./TableView";
 import { MultiGrid, AutoSizer } from "react-virtualized";
 const data = [
-  { id: "a", color: "Owners/Units", name: "Multiple Owners (2 Units)" },
-  { id: "b", color: "Master Parcel No.", name: "387483675638" },
-  { id: "c", color: "Zoning", name: "No Zone" }
+  { id: "a", name: "Owners/Units", value: "Multiple Owners (2 Units)" },
+  { id: "b", name: "Master Parcel No.", value: "387483675638" },
+  { id: "c", name: "Zoning", value: "No Zone" },
 ];
 function cellRenderer({ columnIndex, key, parent, style, rowIndex}) {
   let header = false;
@@ -23,8 +22,13 @@ function cellRenderer({ columnIndex, key, parent, style, rowIndex}) {
 storiesOf("Blocks|Table", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  .add("Simple", () => <Table data={data} />)
-  .add("Heavy Data", () => <DataTable />)
+  .add("Simple", () => (
+    <div>
+      <Table data={data} />
+      <Table data={data} width="half" />
+      <Table data={data} width="full" />
+    </div>
+  ))
   .add("React Virtualized Table", () =>
     React.createElement(() => {
       return (
@@ -46,4 +50,4 @@ storiesOf("Blocks|Table", module)
         </MultiGridWrapper>
       )
     })
-  )
+  );
