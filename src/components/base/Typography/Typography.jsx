@@ -10,13 +10,15 @@ const CountContainer = styled.div`
   margin-left: 4em;
 `;
 
-const StyledLink = styled.a``;
+const StyledLink = styled.a`
+  display: block;
+`;
 
 const StyledText = styled.h4`
   color: ${props => props.textColor || "inherit"};
   font-weight: ${props => props.textWeight || "600"};
   text-align: ${props => props.textAlign || ""};
-  letter-spacing: ${props => props.letterSpacing || ""};
+  letter-spacing: ${props => props.letterSpacing || "0"};
   font-style: ${props => props.textStyle || ""};
   text-decoration: ${props => props.textDecoration || ""};
   user-select: ${props => props.select || ""};
@@ -100,16 +102,6 @@ function Text({
     default:
       break;
   }
-  switch (spacing && spacing.toLowerCase()) {
-    case "2x":
-      letterSpacing = "0.1em";
-      break;
-    case "3x":
-      letterSpacing = "0.2em";
-      break;
-    default:
-      break;
-  }
   switch (style && style.toLowerCase()) {
     case "underline":
       textDecoration = "underline";
@@ -133,6 +125,10 @@ function Text({
     default:
       break;
   }
+  const numSpacing = spacing ? parseInt(spacing, 10) : 0;
+  if (numSpacing && !isNaN(numSpacing)) {
+    letterSpacing = `${0.1 * (numSpacing - 1)}em`;
+  }
   return (
     <StyledText
       id={id}
@@ -146,7 +142,7 @@ function Text({
       select={select}
       className={className}
     >
-      {text ? text : children}
+      {text || children}
       {count ? (
         <CountContainer>
           <a>{count}</a>
@@ -165,7 +161,7 @@ function SubTitle({ id, text, className, ...textProps }) {
     <Text
       id={id}
       text={text}
-      spacing="2x"
+      spacing="2"
       type="light"
       className={className}
       {...textProps}
@@ -186,10 +182,10 @@ function Description({ id, text, className, ...textProps }) {
   );
 }
 
-function Link({ id, onClick, children, className }) {
+function Link({ id, text, onClick, children, className }) {
   return (
-    <StyledLink id={id} onClick={onClick} className={className}>
-      {children}
+    <StyledLink id={id} text={text} onClick={onClick} className={className}>
+      {text || children}
     </StyledLink>
   );
 }
@@ -210,7 +206,6 @@ Text.propTypes = {
   ]),
   size: PropTypes.oneOf(["tiny", "small", "large", "xlarge", "xxlarge"]),
   align: PropTypes.oneOf(["center", "right"]),
-  spacing: PropTypes.oneOf(["2x", "3x"]),
   style: PropTypes.oneOf(["underline", "italic"]),
   weight: PropTypes.oneOf(["light", "normal", "bold"]),
   /** Sets the 'user-select' CSS property

@@ -1,13 +1,23 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import Title from "./Typography";
+import Title, { SubTitle, Description, Link } from "./Typography";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
 
+/** TODO: Use standard components for displaying stories */
 storiesOf("Application|Style Guides/", module)
   .addDecorator(Padding)
   .add("Typography", () => (
     <div>
+      <Title text="TYPES" />
+      <div>
+        <Title text="This is a Title" />
+        <SubTitle text="This is a Subtitle" />
+        <Description text="This is a Description" />
+        <Link text="This is a Link using a 'text' prop" />
+        <Link>This is a Link wrapping text</Link>
+      </div>
+      <div style={{ padding: "20px" }} />
       <Title text="COLORS" />
       <div>
         <Title text="Default Title" />
@@ -17,6 +27,7 @@ storiesOf("Application|Style Guides/", module)
         <Title text="Alert Title" type="alert" />
         <Title text="Inverse Title" type="inverse" />
       </div>
+      <div style={{ padding: "20px" }} />
       <Title text="SIZES" />
       <div>
         <Title text="Tiny Title" size="tiny" />
