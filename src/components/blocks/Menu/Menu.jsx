@@ -27,8 +27,6 @@ const EditMenu = styled.ul`
   transform: ${props => props.badgeTransform || ""};
   width: auto;
   min-width: 10em;
-  // border: 1px solid;
-  // border-color: ${props => props.borderColor || ""};
   position: absolute;
 `;
 
@@ -62,20 +60,24 @@ function Menu({ id, data, type, object, onClick, position }) {
   let hoverBackgroundColor;
   let hoverColor;
   let backgroundColor;
-  let badgeTransform = "translate(-90%, 50%)";
+  let badgeTransform;
   const [visibility, setVisibility] = useState(false);
   switch (type) {
     case "white":
       backgroundColor = colors.white;
       textColor = colors.grey_80;
-      activeColor = colors.anchor_light;
-      borderColor = colors.grey_20;
-      hoverColor = colors.anchor_dark;
+      activeColor = colors.grey_60;
+      hoverColor = colors.black;
       break;
     case "black":
       backgroundColor = colors.black;
       textColor = colors.white;
       hoverColor = colors.grey_light;
+      break;
+    case "fill":
+      backgroundColor = colors.white;
+      textColor = colors.grey_80;
+      hoverBackgroundColor = colors.grey_light;
       break;
     default:
       break;

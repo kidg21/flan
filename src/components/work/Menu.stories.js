@@ -21,14 +21,11 @@ storiesOf("Work|Menu", module)
   .addDecorator(withInfo)
   // .add("Trial", () => <TrialMenu />)
   .add("Documentation", () => (
-    <div>
-      <div>
-        <DropdownMenu data={data} position="bottomRight" type="black" />
-      </div>
-      <div>
-        <DropdownMenu data={data} position="bottomRight" type="white" />
-      </div>
-    </div>
+    <Bar
+      // left={<DropdownMenu data={data} position="bottomRight" type="black" />}
+      center={<DropdownMenu data={data} position="bottomRight" type="white" />}
+      right={<DropdownMenu data={data} position="bottomLeft" type="black" />}
+    />
   ))
   .add("Trial", () => (
     <Bar
