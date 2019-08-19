@@ -15,8 +15,14 @@ const iconActive = css`
 `;
 
 const LinkedIcon = styled(Link)`
-  cursor: ${props => (props.onClick ? "pointer" : "")};
-  cursor: ${props => (props.disabled ? "not-allowed" : "")};
+  cursor: ${props => {
+    if (props.disabled) {
+      return "not-allowed";
+    } else if (props.onClick) {
+      return "pointer";
+    }
+    return "";
+  }};
   pointer-events: ${props => (props.disabled ? "none" : "")};
   user-select: ${props => (props.disabled ? "none" : "")};
   &:hover {
@@ -28,7 +34,7 @@ const LinkedIcon = styled(Link)`
 `;
 
 const StyledIcon = styled(FontAwesomeIcon)`
-  color: ${props => props.iconColor || "inherit"};
+  color: ${props => props.color || "inherit"};
   border: ${props => (props.border ? "2px solid" : "")};
   border-color: ${props => (props.border ? colors.grey_20 : "")};
   border-radius: ${props => (props.border ? "5px" : "")};
@@ -150,69 +156,56 @@ function Icon({
   disabled,
   className,
 }) {
-  let iconColor;
+  let color;
   icon = iconHash[icon.toLowerCase()] || ["far", icon.toLowerCase()];
   switch (type && type.toLowerCase()) {
     case "info":
-      iconColor = colors.anchor;
+      color = colors.anchor;
       break;
     case "success":
-      iconColor = colors.success;
+      color = colors.success;
       break;
     case "warning":
-      iconColor = colors.warning;
+      color = colors.warning;
       break;
     case "alert":
-      iconColor = colors.alert;
+      color = colors.alert;
       break;
     case "inverse":
-      iconColor = colors.white;
+      color = colors.white;
       break;
     default:
       break;
   }
 
-  if (onClick) iconColor = colors.anchor;
+  if (onClick) color = colors.anchor;
 
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (isDisabled) iconColor = colors.grey_40;
+  if (isDisabled) color = colors.grey_40;
 
-  return (
-    <>
-      {onClick ? (
-        /** Wrapping anchor tag required for semantics */
-        <LinkedIcon onClick={onClick} disabled={disabled}>
-          <StyledIcon
-            id={id}
-            icon={icon}
-            iconColor={iconColor}
-            size={size}
-            fixedWidth={fixedWidth}
-            rotation={rotation}
-            flip={flip}
-            spin={spin}
-            pulse={pulse}
-            border={border}
-            className={className}
-          />
-        </LinkedIcon>
-      ) : (
-        <StyledIcon
-          id={id}
-          icon={icon}
-          iconColor={iconColor}
-          size={size}
-          fixedWidth={fixedWidth}
-          rotation={rotation}
-          flip={flip}
-          spin={spin}
-          pulse={pulse}
-          border={border}
-          className={className}
-        />
-      )}
-    </>
+  const styledIcon = (
+    <StyledIcon
+      id={id}
+      icon={icon}
+      color={color}
+      size={size}
+      fixedWidth={fixedWidth}
+      rotation={rotation}
+      flip={flip}
+      splin={spin}
+      pulse={pulse}
+      border={border}
+      className={className}
+    />
+  );
+
+  return onClick ? (
+    <LinkedIcon onClick={onClick} disabled={disabled}>
+      {styledIcon}
+    </LinkedIcon>
+  ) : (
+    styledIcon
   );
 }
 
