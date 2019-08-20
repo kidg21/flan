@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import styledNormalize from "styled-normalize";
-import {Skeleton} from "helpers/Skeleton.jsx";
+import { Skeleton } from "helpers/Skeleton.jsx";
 // Import variables
 import { colors, fonts, fontSize } from "Variables";
 // Import Fonts
@@ -242,6 +242,9 @@ const GlobalStyles = createGlobalStyle`
     }
 /* Buttons */
     button {
+      &:focus {
+        outline: none;
+      }
       &:empty {
         &:before {
           ${Skeleton};

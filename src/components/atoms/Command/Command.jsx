@@ -1,21 +1,35 @@
-import React from "react";
+/* eslint-disable no-param-reassign */
+import React, { useContext } from "react";
 import PropTypes from "prop-types";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { colors } from "Variables";
+import { DisabledContext } from "States";
 import Icon from "atoms/Icon";
 
 const CommandContainer = styled.a`
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-areas: ${props => props.alignIcon || ""};
-  justify-items: ${props => props.justifyIcon || ""};
+  grid-template-areas: ${props => {
+    return props.alignIcon || "";
+  }};
+  justify-items: ${props => {
+    return props.justifyIcon || "";
+  }};
   grid-gap: 0.5rem;
   width: max-content;
-  font-size: ${props => props.commandSize || ""};
-  color: ${props => props.commandColor || ""};
+  font-size: ${props => {
+    return props.commandSize || "";
+  }};
+  color: ${props => {
+    return props.commandColor || "";
+  }};
   user-select: none;
-  cursor: ${props => (props.isDisabled ? "not-allowed" : "")};
-  pointer-events: ${props => (props.isDisabled ? "none" : "")};
+  cursor: ${props => {
+    return props.isDisabled ? "not-allowed" : "";
+  }};
+  pointer-events: ${props => {
+    return props.isDisabled ? "none" : "";
+  }};
   transition: all 0.3s ease;
   &:hover {
     color: ${colors.anchor_dark};
@@ -43,19 +57,9 @@ const CommandIcon = styled(Icon)`
   grid-area: icon;
 `;
 
-function Command({
-  id,
-  name,
-  label,
-  icon,
-  onClick,
-  align,
-  state,
-  size,
-  isDisabled,
-}) {
+function Command({ id, name, label, icon, align, size, disabled }) {
   let alignIcon = "'icon name'";
-  let justifyCommand = "flex-start";
+  const justifyCommand = "flex-start";
   let justifyIcon = "flex-start";
   let commandColor = colors.anchor;
   let commandSize = "inherit";
@@ -122,14 +126,11 @@ function Command({
     default:
       break;
   }
-  switch (state) {
-    case "disabled":
-      commandColor = colors.grey_40;
-      isDisabled = true;
-      break;
-    default:
-      break;
-  }
+
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  if (isDisabled) commandColor = colors.grey_40;
+
   switch (size) {
     case "small":
       commandSize = ".8em";
@@ -163,8 +164,10 @@ Command.propTypes = {
   id: PropTypes.string,
   name: PropTypes.string.isRequired,
   align: PropTypes.string,
-  state: PropTypes.string,
+  disabled: PropTypes.boolean,
   size: PropTypes.string,
+  icon: PropTypes.string,
+  label: PropTypes.string,
 };
 
 Command.defaultProps = {
