@@ -1,12 +1,12 @@
 import React, { Fragment } from "react";
-import styled, { css, keyframes } from "styled-components";
-import { fonts, colors, shadows, screen } from "Variables";
-import { PlaceholderText } from "helpers/Placeholders.jsx";
+import styled, { keyframes } from "styled-components";
+import { screen } from "Variables";
+import { PlaceholderText } from "helpers/Placeholders";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
-import Mapbox from "layout/Map";
 import { Description } from "base/Typography";
 
+/** TODO: Add these to an 'Animation' library...also, create 'Animation' library */
 const fadeIn = keyframes`
   from {
     opacity: 0;
@@ -27,25 +27,26 @@ const fadeOut = keyframes`
   }
 `;
 
-const scaleUp = keyframes`
-  from {
-    transform: scale3D(.9, .9, .9);
-  }
+/** COMMENT: Not used but need to keep for above TODO */
+// const scaleUp = keyframes`
+//   from {
+//     transform: scale3D(.9, .9, .9);
+//   }
 
-  to {
-    transform: scale3D(1, 1, 1);
-  }
-`;
+//   to {
+//     transform: scale3D(1, 1, 1);
+//   }
+// `;
 
-const scaleDown = keyframes`
-  from {
-    transform: scale3D(1, 1, 1);
-  }
+// const scaleDown = keyframes`
+//   from {
+//     transform: scale3D(1, 1, 1);
+//   }
 
-  to {
-    transform: scale3D(.6, .6, .6);
-  }
-`;
+//   to {
+//     transform: scale3D(.6, .6, .6);
+//   }
+// `;
 
 const moveUp = keyframes`
   from {
@@ -83,7 +84,7 @@ const Image = styled.img`
 
 const ModalContainer = styled.div`
   position: absolute;
-  display: ${props => (props.visible ? "flex" : "none")};
+  display: ${(props) => { return (props.visible ? "flex" : "none"); }};
   z-index: 1005;
   top: 0px;
   right: 0px;
@@ -91,14 +92,14 @@ const ModalContainer = styled.div`
   left: 0px;
   min-height: 100vh;
   align-items: center;
-  justify-content: ${props => props.justifyContent || ""};
+  justify-content: ${(props) => { return props.justifyContent || ""; }};
   flex-direction: column;
   padding: 0.5rem;
   background-blend-mode: multiply;
-  pointer-events: ${props => props.pointerEvents || ""};
+  pointer-events: ${(props) => { return props.pointerEvents || ""; }};
   overflow: hidden;
   ${ContentWrapper}, ${Image} {
-    animation-name: ${props => (props.position ? moveDown : moveUp)};
+    animation-name: ${(props) => { return (props.position ? moveDown : moveUp); }};
     animation-duration: 0.6s;
     transform-origin: top;
     pointer-events: initial;
@@ -132,7 +133,7 @@ const ModalBG = styled.div`
   background-color: hsla(34, 5%, 12%, 0.8);
   -webkit-tap-highlight-color: transparent;
   touch-action: none;
-  animation-name: ${props => (props.opacity ? fadeIn : fadeOut)};
+  animation-name: ${(props) => { return (props.opacity ? fadeIn : fadeOut); }};
   animation-duration: 0.6s;
 `;
 
@@ -174,16 +175,6 @@ function Modal({
           <ContentWrapper>
             <Description text={text} type="inverse" />
           </ContentWrapper>
-        </Fragment>
-      );
-      break;
-    case "map":
-      modalType = (
-        <Fragment>
-          <Mapbox />
-          <Close onClick={onClose}>
-            <Icon icon="close" type="inverse" size="lg" fixedWidth />
-          </Close>
         </Fragment>
       );
       break;
@@ -237,7 +228,6 @@ function Modal({
       justifyContent={justifyContent}
       pointerEvents={pointerEvents}
       onClick={onClick}
-      children={children}
       style={style}
     >
       {modalType}
@@ -248,16 +238,37 @@ function Modal({
 export default Modal;
 
 Modal.propTypes = {
-  id: PropTypes.string,
-  type: PropTypes.oneOf(["default", "text", "image"]),
   align: PropTypes.oneOf(["default to type", "top", "center", "bottom"]),
-  visible: PropTypes.bool,
+  ariaDescribedby: PropTypes.string,
+  ariaLabelledby: PropTypes.string,
+  children: PropTypes.node,
+  id: PropTypes.string,
   image: PropTypes.string,
+  onClick: PropTypes.func,
+  onClose: PropTypes.func,
+  opacity: PropTypes.oneOf(["fadeIn", "fadeOut"]),
   position: PropTypes.oneOf(["moveUp", "moveDown"]),
   scale: PropTypes.oneOf(["scaleUp", "scaleDown"]),
-  opacity: PropTypes.oneOf(["fadeIn", "fadeOut"]),
-  onClick: PropTypes.func,
-  "aria-labelledby": PropTypes.string,
-  "aria-describedby": PropTypes.string,
   style: PropTypes.string,
+  text: PropTypes.string,
+  type: PropTypes.oneOf(["default", "text", "image"]),
+  visible: PropTypes.bool,
+};
+
+Modal.defaultProps = {
+  align: null,
+  ariaLabelledby: null,
+  ariaDescribedby: null,
+  children: null,
+  id: null,
+  image: null,
+  onClick: null,
+  onClose: null,
+  opacity: null,
+  position: null,
+  scale: null,
+  style: null,
+  text: null,
+  type: null,
+  visible: false,
 };
