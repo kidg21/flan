@@ -3,23 +3,20 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import Icon from "atoms/Icon";
 import Card from "layout/Card";
+import Title from "base/Typography";
 import { colors } from "Variables";
 
 const Container = styled.div`
   cursor: pointer;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  padding-bottom: 0.5em;
-
+  padding: 1em;
   position: relative;
   display: inline-block;
 `;
 
 const EditMenu = styled.ul`
-  background: ${props => props.backgroundColor || colors.white};
+  background: ${colors.white};
   border-radius: 3px;
   list-style: none;
-  margin-top: 4px;
   z-index: 500;
   padding: 0.25em;
   bottom: ${props => props.badgeBottom || ""};
@@ -31,53 +28,31 @@ const EditMenu = styled.ul`
 `;
 
 const Item = styled.li`
-  padding: 0.5em;
+  padding: 0.55em;
   z-index: 501;
   text-align: left;
-  font-weight: 600;
 
-
-  letter-spacing: 0.5px;
-  // border-bottom: 0.5px solid ${colors.grey_light};
-  color: ${props => props.textColor || ""};
-
+  border-bottom: 0.5px solid ${colors.grey_light};
+  &:last-child {
+    border-bottom: none;
+  }
   &:hover {
-    color: ${props => props.hoverColor || ""};
-    background-color: ${props => props.hoverBackgroundColor || ""};
+    background-color: ${colors.grey_light};
   }
 
   &:active {
-    color: ${props => props.activeColor || ""};
+    color: ${colors.black};
   }
 `;
 
 function Menu({ id, data, type, object, onClick, position }) {
   let badgeLeft = "100%";
   let badgeBottom = "100%";
-  let textColor;
-  let borderColor;
-  let activeColor;
-  let hoverBackgroundColor;
-  let hoverColor;
-  let backgroundColor;
   let badgeTransform;
   const [visibility, setVisibility] = useState(false);
   switch (type) {
-    case "white":
-      backgroundColor = colors.white;
-      textColor = colors.grey_80;
-      activeColor = colors.grey_60;
-      hoverColor = colors.black;
-      break;
-    case "black":
-      backgroundColor = colors.black;
-      textColor = colors.white;
-      hoverColor = colors.grey_light;
-      break;
-    case "fill":
-      backgroundColor = colors.white;
-      textColor = colors.grey_80;
-      hoverBackgroundColor = colors.grey_light;
+    case "edit":
+      object = <Icon icon={["far", "ellipsis-v"]} size="lg" />;
       break;
     default:
       break;
@@ -92,12 +67,12 @@ function Menu({ id, data, type, object, onClick, position }) {
       break;
     case "bottomRight":
       badgeBottom = "0";
-      badgeTransform = "translate(1%, 98%)";
+      badgeTransform = "translate(6%, 95%)";
       break;
     case "bottomLeft":
       badgeBottom = "0";
       badgeLeft = "0";
-      badgeTransform = "translate(-101%, 96%)";
+      badgeTransform = "translate(-106%, 95%)";
       break;
     case "bottomCenter":
       badgeBottom = "0";
@@ -119,26 +94,17 @@ function Menu({ id, data, type, object, onClick, position }) {
         setVisibility(!visibility);
       }}
     >
-      <Icon icon={["far", "ellipsis-v"]} size="lg" />
+      {object}
       {visibility ? (
         <Card>
           <EditMenu
             badgeTransform={badgeTransform}
             badgeLeft={badgeLeft}
             badgeBottom={badgeBottom}
-            backgroundColor={backgroundColor}
-            borderColor={borderColor}
           >
             {data.map(item => (
-              <Item
-                textColor={textColor}
-                hoverBackgroundColor={hoverBackgroundColor}
-                activeColor={activeColor}
-                hoverColor={hoverColor}
-                key={item.id}
-                onClick={onClick}
-              >
-                {item.name}
+              <Item key={item.id} onClick={onClick}>
+                <Title title={item.name} weight="normal" />
               </Item>
             ))}
           </EditMenu>
@@ -150,9 +116,9 @@ function Menu({ id, data, type, object, onClick, position }) {
 
 Menu.propTypes = {
   id: PropTypes.string,
-  object: PropTypes.any,
+  object: PropTypes.node,
+  type: PropTypes.any,
   onClick: PropTypes.func,
-  type: PropTypes.node,
   data: PropTypes.any.isRequired,
   position: PropTypes.oneOf([
     "topLeft",

@@ -11,7 +11,7 @@ import Bar from "blocks/Bar";
 const data = [
   { id: "a", name: "Save" },
   { id: "b", name: "Filter" },
-  { id: "c", name: "Something" },
+  { id: "c", name: "Share" },
   { id: "d", name: "Filter" },
   { id: "e", name: "Layer" },
 ];
@@ -23,47 +23,34 @@ storiesOf("Work|Menu", module)
   .add("Documentation", () => (
     <Bar
       // left={<DropdownMenu data={data} position="bottomRight" type="black" />}
-      center={<DropdownMenu data={data} position="bottomRight" type="white" />}
-      right={<DropdownMenu data={data} position="bottomLeft" type="black" />}
-    />
-  ))
-  .add("Trial", () => (
-    <Bar
-      right={
-        <DropdownMenu
-          data={data}
-          position="bottomLeft"
-          type="white"
-          object={<Title title="hello open me" />}
-        />
-      }
+      center={<DropdownMenu data={data} position="bottomLeft" type="edit" />}
     />
   ))
   .add("Directions", () => (
     <Grid>
       <div>
         <span>Bottom Right</span>
-        <DropdownMenu data={data} position="bottomRight" />
+        <DropdownMenu data={data} position="bottomRight" type="edit" />
       </div>
       <div>
         <span>Top Right</span>
-        <DropdownMenu data={data} position="topRight" />
+        <DropdownMenu data={data} position="topRight" type="edit" />
       </div>
       <div>
         <span>Bottom Left</span>
-        <DropdownMenu data={data} position="bottomLeft" />
+        <DropdownMenu data={data} position="bottomLeft" type="edit" />
       </div>
       <div>
         <span>Top Left</span>
-        <DropdownMenu data={data} position="topLeft" />
+        <DropdownMenu data={data} position="topLeft" type="edit" />
       </div>
       <div>
         <span>Bottom Center</span>
-        <DropdownMenu data={data} position="bottomCenter" />
+        <DropdownMenu data={data} position="bottomCenter" type="edit" />
       </div>
       <div>
         <span>Top Center</span>
-        <DropdownMenu data={data} position="topCenter" />
+        <DropdownMenu data={data} position="topCenter" type="edit" />
       </div>
     </Grid>
   ));
