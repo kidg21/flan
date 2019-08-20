@@ -22,8 +22,7 @@ storiesOf("Work|Menu", module)
   // .add("Trial", () => <TrialMenu />)
   .add("Documentation", () => (
     <Bar
-      // left={<DropdownMenu data={data} position="bottomRight" type="black" />}
-      center={<DropdownMenu data={data} position="bottomLeft" type="edit" />}
+      right={<DropdownMenu data={data} position="bottomLeft" type="edit" />}
     />
   ))
   .add("Directions", () => (
