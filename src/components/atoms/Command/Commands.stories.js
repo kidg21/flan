@@ -137,9 +137,9 @@ storiesOf("Atoms|Command", module)
         its Icon atop the label. Set the 'align' prop to 'right' to right-align
         the Command with its Icon on the right.
       </SubTitle>
-      <Command label="Icon-Left" />
-      <Command label="Icon-Top" align="center" />
-      <Command label="Icon-Right" align="right" />
+      <Command label="Icon-Left" icon="home" />
+      <Command label="Icon-Top" align="center" icon="home" />
+      <Command label="Icon-Right" align="right" icon="home" />
     </Grid>
   ))
 
@@ -152,8 +152,10 @@ storiesOf("Atoms|Command", module)
         The standard Command uses an anchor tag and inherits anchor styling. To
         disable a Command, use the 'disabled' prop.
       </SubTitle>
-      <Command label="Active" />
-      <Command label="Disabled" state="disabled" />
+      <Command label="Active" icon="home" />
+      <Command label="Disabled" state="disabled" icon="home" />
+      <Command label="Error" icon="home" type="error" />
+      <Command label="Plain" icon="home" type="plain" />
     </Grid>
   ))
   .add("Size", () => (
@@ -165,9 +167,9 @@ storiesOf("Atoms|Command", module)
         To override the standard size, set the 'size' prop to 'small', or
         'large'.
       </SubTitle>
-      <Command label="Small" size="small" />
-      <Command label="Standard" />
-      <Command label="Large" size="large" />
+      <Command label="Small" size="small" icon="home" />
+      <Command label="Standard" icon="home" />
+      <Command label="Large" size="large" icon="home" />
     </Grid>
   ));
 

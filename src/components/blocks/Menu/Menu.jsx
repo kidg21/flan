@@ -10,6 +10,7 @@ const Container = styled.div`
   cursor: pointer;
   padding: 1em;
   position: relative;
+  line-height: 1.5;
   display: inline-block;
 `;
 
@@ -19,6 +20,8 @@ const EditMenu = styled.ul`
   list-style: none;
   z-index: 500;
   padding: 0.25em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
   bottom: ${props => props.badgeBottom || ""};
   left: ${props => props.badgeLeft || ""};
   transform: ${props => props.badgeTransform || ""};
@@ -31,8 +34,6 @@ const Item = styled.li`
   padding: 0.55em;
   z-index: 501;
   text-align: left;
-
-  border-bottom: 0.5px solid ${colors.grey_light};
   &:last-child {
     border-bottom: none;
   }

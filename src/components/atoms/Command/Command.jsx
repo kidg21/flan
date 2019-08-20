@@ -3,14 +3,14 @@ import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import { colors } from "Variables";
 import Icon from "atoms/Icon";
+import Title from "base/Typography";
 
 const CommandContainer = styled.a`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-areas: ${props => props.alignIcon || ""};
   justify-items: ${props => props.justifyIcon || ""};
-  grid-gap: 0.5rem;
-  align-items: center;
+  grid-gap: 0.7rem;
   width: max-content;
   font-size: ${props => props.commandSize || ""};
   color: ${props => props.commandColor || ""};
@@ -26,21 +26,29 @@ const CommandContainer = styled.a`
   }
 `;
 
-const CommandName = styled.h5`
+const CommandName = styled(Title)`
   grid-area: name;
   font-size: inherit;
+  font-color: inherit;
   line-height: inherit;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  margin: 0;
 `;
 
 const CommandIcon = styled(Icon)`
   grid-area: icon;
+  color: inherit;
 `;
 
-function Command({ id, name, label, icon, align, state, size, isDisabled }) {
+function Command({
+  id,
+  name,
+  label,
+  icon,
+  align,
+  state,
+  size,
+  isDisabled,
+  onClick,
+}) {
   let alignIcon = "'icon name'";
   let justifyCommand = "flex-start";
   let justifyIcon = "flex-start";
@@ -138,9 +146,10 @@ function Command({ id, name, label, icon, align, state, size, isDisabled }) {
       commandColor={commandColor}
       commandSize={commandSize}
       isDisabled={isDisabled}
+      onClick={onClick}
     >
       {icon ? <CommandIcon icon={icon} /> : null}
-      <CommandName>{label}</CommandName>
+      <CommandName title={label} weight="normal" />
     </CommandContainer>
   );
 }
@@ -149,13 +158,15 @@ Command.propTypes = {
   id: PropTypes.string,
   name: PropTypes.string.isRequired,
   align: PropTypes.string,
+
   state: PropTypes.string,
   size: PropTypes.string,
+  onClick: PropTypes.func,
 };
 
 Command.defaultProps = {
   label: "Command",
-  icon: "user-circle",
+  icon: null,
 };
 
 export { Command as default };
