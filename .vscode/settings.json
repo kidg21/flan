@@ -8,7 +8,6 @@
         "textLink.foreground": "#2979FF",
         "progressBar.background": "#2979FF",
         "pickerGroup.foreground": "#2979FF",
-        "tab.activeBorder": "#2979FF",
         "notificationLink.foreground": "#2979FF",
         "editorWidget.resizeBorder": "#2979FF",
         "editorWidget.border": "#2979FF",
@@ -22,5 +21,8 @@
         "titleBar.inactiveBackground": "#00b3e699",
         "titleBar.activeForeground": "#15202b",
         "titleBar.inactiveForeground": "#15202b99"
-    }
+    },
+    "prettier.endOfLine": "lf",
+    "prettier.eslintIntegration": true,
+    "peacock.color": "#00b3e6"
 }
