@@ -10,7 +10,9 @@ const BarLayout = styled.div`
   }};
   flex-wrap: nowrap;
   justify-content: space-between;
-  padding: 0.75em;
+  padding: ${(props) => {
+    return props.barPadding || "0.5em 1em";
+  }};
 `;
 
 const Slot = styled.div`
@@ -52,6 +54,7 @@ function Bar({
   leftWidth,
   center,
   centerAlign,
+  padding,
   right,
   rightWidth,
   onClick,
@@ -59,7 +62,18 @@ function Bar({
 }) {
   let alignContent;
   let alignItems;
+  let barPadding;
   let textAlign;
+  switch (padding && padding.toLowerCase()) {
+    case "2x":
+      barPadding = "1em 1.25em";
+      break;
+    case "3x":
+      barPadding = "1.5em 1.5em";
+      break;
+    default:
+      break;
+  }
   switch (contentAlign && contentAlign.toLowerCase()) {
     case "center":
       alignContent = "center";
@@ -86,7 +100,7 @@ function Bar({
       break;
   }
   return (
-    <BarLayout id={id} alignContent={alignContent} onClick={onClick} className={className}>
+    <BarLayout id={id} barPadding={barPadding} alignContent={alignContent} onClick={onClick} className={className}>
       {left ? (
         <Slot widthMin={leftWidth} widthMax={leftWidth} setPadding="0 1em 0 0">
           {left}
@@ -130,6 +144,8 @@ Bar.propTypes = {
    * Default: 'center'
    */
   centerAlign: PropTypes.oneOf(["left", "right"]),
+  /** Sets the padding of the Bar component */
+  padding: PropTypes.oneOf(["2x", "3x"]),
   /** Used to define the content in the right 'slot' */
   right: PropTypes.node,
   /** Used to override the default flex ratio of the right 'slot' by increasing the setting a 'min-width' and 'max-width'.
@@ -147,6 +163,7 @@ Bar.defaultProps = {
   leftWidth: null,
   center: null,
   centerAlign: null,
+  padding: null,
   right: null,
   rightWidth: null,
   onClick: null,

@@ -79,6 +79,17 @@ storiesOf("Blocks|Bar", module)
     return (
       <Card>
         <Bar
+          padding={options(
+            "padding",
+            {
+              default: "default",
+              "2x": "2x",
+              "3x": "3x",
+            },
+            "default",
+            { display: "radio" },
+            "Bar",
+          )}
           contentAlign={options(
             "align content",
             {
