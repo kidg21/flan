@@ -19,5 +19,6 @@ storiesOf("Elements|Panel Headers/", module)
     <PropertyPanelHeader
       title="5201 California Ave, Irvine, CA 92614"
       menuData={data}
+      APN="374-543-4227"
     />
   ));

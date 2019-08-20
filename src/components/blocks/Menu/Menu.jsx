@@ -8,7 +8,6 @@ import { colors } from "Variables";
 
 const Container = styled.div`
   cursor: pointer;
-  padding: 1em;
   position: relative;
   line-height: 1.5;
   display: inline-block;
@@ -34,9 +33,7 @@ const Item = styled.li`
   padding: 0.55em;
   z-index: 501;
   text-align: left;
-  &:last-child {
-    border-bottom: none;
-  }
+
   &:hover {
     background-color: ${colors.grey_light};
   }
