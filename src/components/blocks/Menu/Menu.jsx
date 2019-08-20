@@ -104,7 +104,7 @@ function Menu({ id, data, type, object, onClick, position }) {
             badgeBottom={badgeBottom}
           >
             {data.map(item => (
-              <Item key={item.id} onClick={onClick}>
+              <Item key={item.id} onClick={item.onClick}>
                 <Title title={item.name} weight="normal" />
               </Item>
             ))}

@@ -9,11 +9,11 @@ import Bar from "blocks/Bar";
 // import WhiteMenu from "../blocks/Menu/TrialMenu";
 
 const data = [
-  { id: "a", name: "Save" },
-  { id: "b", name: "Filter" },
-  { id: "c", name: "Share" },
-  { id: "d", name: "Filter" },
-  { id: "e", name: "Layer" },
+  { id: "a", onClick: "", name: "Save" },
+  { id: "b", onClick: "", name: "Filter" },
+  { id: "c", onClick: "", name: "Share" },
+  { id: "d", onClick: "", name: "Filter" },
+  { id: "e", onClick: "", name: "Layer" },
 ];
 
 storiesOf("Work|Menu", module)
