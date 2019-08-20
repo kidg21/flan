@@ -26,23 +26,28 @@ const SearchContainer = styled.div`
 
 
 
-function Search({ id, ...inputProps }) {
-  const [activeSingleTab, setActiveSingleTab] = useState("tab1");
+function Search({ id, onStartLocate, ...inputProps }) {
   return (
-    <SearchContainer id={id}>
-      <TextInput placeholder="Search" state="search" {...inputProps}>
-        <IconWrapper>
-          <Icon icon={["far", "search"]} type="info" />
-        </IconWrapper>
-      </TextInput>
-    </SearchContainer>
+    <SearchContainer id={id} >
+      <form onSubmit={onStartLocate}>
+        <TextInput placeholder="Search" state="search" {...inputProps} >
+          <IconWrapper>
+            <Icon icon={["far", "search"]} type="info" onClick={onStartLocate} />
+          </IconWrapper>
+        </TextInput>
+      </form>
+    </SearchContainer >
   );
 }
 
 Search.propTypes = {
   id: PropTypes.string,
+  onStartLocate: PropTypes.func,
+  value: PropTypes.string.isRequired,
+  autocompleteList: PropTypes.arrayOf(PropTypes.string),
+  size: PropTypes.string,
 };
 
 export default Search;
 
-///this one will need more work on setting up for logic like Autocomplete and everything else
+// this one will need more work on setting up for logic like Autocomplete and everything else

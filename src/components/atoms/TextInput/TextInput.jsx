@@ -49,6 +49,9 @@ function TextInput({
   disabled,
   children,
   style,
+  onChange,
+  autocompleteList,
+  size,
 }) {
   let as;
   let inputTextColor;
@@ -95,6 +98,15 @@ function TextInput({
     inputBorderColor = colors.grey_20;
     placeholderColor = colors.grey_40;
   }
+  // construct datalist element for autocompletes if appropriate props passed in
+  // the autocompleteListId is used to ensure each textinput only draws from its own datalist element
+  let autocompleteDataList = null;
+  let autoCompleteDataListId = null;
+  if (autocompleteList) {
+    autoCompleteDataListId = Dmp.Util.getGuid();
+    const options = autocompleteList.map((item) => { return (<option key={Dmp.Util.getGuid()} value={item}>{item}</option>); });
+    autocompleteDataList = (<datalist id={autoCompleteDataListId}>{options}</datalist>);
+  }
 
   return (
     <TextInputContainer
@@ -122,7 +134,11 @@ function TextInput({
         placeholderColor={placeholderColor}
         inputCaretColor={inputCaretColor}
         inputSelectColor={inputSelectColor}
+        onChange={onChange}
+        list={autoCompleteDataListId}
+        size={size} // overriding this while developing so it's easier to see
       />
+      {autocompleteDataList}
       {helpText ? <HelpText helpText={helpText} /> : null}
       {errorText ? <ErrorText errorText={errorText} /> : null}
       {children}
@@ -144,6 +160,9 @@ TextInput.propTypes = {
   style: PropTypes.string,
   disabled: PropTypes.bool,
   children: PropTypes.node,
+  onChange: PropTypes.func,
+  autocompleteList: PropTypes.arrayOf(PropTypes.string),
+  size: PropTypes.string
 };
 
 export { TextInput as default };

@@ -1,6 +1,6 @@
 // Publicly exported files from 'base'
 export * from "./base/Typography";
-export * from "./base/GlobalStyles/GlobalStyles.jsx";
+export {default as GlobalStyles} from "./base/GlobalStyles/GlobalStyles.jsx";
 
 // Publicly exported files from 'atoms'
 export { default as Badge } from "./atoms/Badge";
@@ -36,6 +36,8 @@ export { default as CardAccordion } from "./elements/CardAccordion";
 export {
   default as InformationCardBar,
 } from "./elements/CardBars/InformationCardBar";
+
+// export { default as GroupCardBar } from "./elements/GroupCardBar";
 export { default as LayerCardBar } from "./elements/CardBars/LayerCardBar";
 export {
   default as NavigationCardBar,
@@ -74,3 +76,6 @@ export { default as Layout } from "./layout/Layout";
 // export { default as Modal } from "./layout/Modal";
 export { default as Page } from "./layout/Page";
 export { default as Panel, PanelSection } from "./layout/Panel";
+
+
+export {screen} from "./base/Variables/Variables.jsx";
