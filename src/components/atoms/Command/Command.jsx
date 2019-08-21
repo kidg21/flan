@@ -10,16 +10,28 @@ import Title from "base/Typography";
 const CommandContainer = styled.a`
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-areas: ${(props) => { return props.alignIcon || ""; }};
-  justify-items: ${(props) => { return props.justifyIcon || ""; }};
+  grid-template-areas: ${props => {
+    return props.alignIcon || "";
+  }};
+  justify-items: ${props => {
+    return props.justifyIcon || "";
+  }};
   grid-gap: 0.5rem;
   align-items: center;
   width: max-content;
-  font-size: ${(props) => { return props.commandSize || ""; }};
-  color: ${(props) => { return props.commandColor || ""; }};
+  font-size: ${props => {
+    return props.commandSize || "";
+  }};
+  color: ${props => {
+    return props.commandColor || "";
+  }};
   user-select: none;
-  cursor: ${(props) => { return (props.isDisabled ? "not-allowed" : ""); }};
-  pointer-events: ${(props) => { return (props.isDisabled ? "none" : ""); }};
+  cursor: ${props => {
+    return props.isDisabled ? "not-allowed" : "";
+  }};
+  pointer-events: ${props => {
+    return props.isDisabled ? "none" : "";
+  }};
   transition: all 0.3s ease;
   &:hover {
     color: ${colors.anchor_dark};
@@ -41,15 +53,7 @@ const CommandIcon = styled(Icon)`
   color: inherit;
 `;
 
-function Command({
-  id,
-  name,
-  label,
-  icon,
-  align,
-  size,
-  disabled,
-}) {
+function Command({ id, name, label, icon, align, size, onClick, disabled }) {
   let alignIcon = "'icon name'";
   const justifyCommand = "flex-start";
   let justifyIcon = "flex-start";
@@ -119,7 +123,8 @@ function Command({
       break;
   }
 
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) commandColor = colors.grey_40;
 
   switch (size) {
@@ -157,6 +162,7 @@ Command.propTypes = {
   align: PropTypes.string,
   disabled: PropTypes.boolean,
   size: PropTypes.string,
+  onClick: PropTypes.node,
   icon: PropTypes.string,
   label: PropTypes.string,
 };

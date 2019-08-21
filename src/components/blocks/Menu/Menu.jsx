@@ -8,7 +8,7 @@ import { colors } from "Variables";
 
 const Container = styled.div`
   cursor: pointer;
-  position: relative;
+  // position: relative;
   line-height: 1.5;
   display: inline-block;
 `;
@@ -62,9 +62,11 @@ function Menu({ id, data, type, object, onClick, position }) {
       break;
     case "topRight":
       badgeTransform = "translate(1%, -9%)";
+      badgeLeft = "0";
       break;
     case "bottomRight":
       badgeBottom = "0";
+      badgeLeft = "0";
       badgeTransform = "translate(6%, 95%)";
       break;
     case "bottomLeft":

@@ -4,7 +4,7 @@ import { withInfo } from "@storybook/addon-info";
 import Grid from "layout/Grid";
 import { Padding } from "helpers/Display";
 import DropdownMenu from "blocks/Menu";
-import Title from "base/Typography";
+import Card from "layout/Card";
 import Bar from "blocks/Bar";
 // import WhiteMenu from "../blocks/Menu/TrialMenu";
 
@@ -21,35 +21,23 @@ storiesOf("Work|Menu", module)
   .addDecorator(withInfo)
   // .add("Trial", () => <TrialMenu />)
   .add("Documentation", () => (
-    <Bar
-      right={<DropdownMenu data={data} position="bottomLeft" type="edit" />}
-    />
+    <Card>
+      <Bar
+        right={<DropdownMenu data={data} position="bottomLeft" type="edit" />}
+      />
+    </Card>
   ))
   .add("Directions", () => (
-    <Grid>
-      <div>
-        <span>Bottom Right</span>
-        <DropdownMenu data={data} position="bottomRight" type="edit" />
-      </div>
-      <div>
-        <span>Top Right</span>
-        <DropdownMenu data={data} position="topRight" type="edit" />
-      </div>
-      <div>
-        <span>Bottom Left</span>
-        <DropdownMenu data={data} position="bottomLeft" type="edit" />
-      </div>
-      <div>
-        <span>Top Left</span>
-        <DropdownMenu data={data} position="topLeft" type="edit" />
-      </div>
-      <div>
-        <span>Bottom Center</span>
-        <DropdownMenu data={data} position="bottomCenter" type="edit" />
-      </div>
-      <div>
-        <span>Top Center</span>
-        <DropdownMenu data={data} position="topCenter" type="edit" />
-      </div>
+    <Grid columns="3">
+      <DropdownMenu data={data} position="bottomRight" object="Bottom Right" />
+      <DropdownMenu
+        data={data}
+        position="bottomCenter"
+        object="Bottom Center"
+      />
+      <DropdownMenu data={data} position="bottomLeft" object="Bottom Left" />
+      <DropdownMenu data={data} position="topRight" object="Top Right" />
+      <DropdownMenu data={data} position="topCenter" object="Top Center" />
+      <DropdownMenu data={data} position="topLeft" object="Top Left" />
     </Grid>
   ));
