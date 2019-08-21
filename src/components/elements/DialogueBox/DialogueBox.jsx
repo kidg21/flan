@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
 import Button from "atoms/Button";
