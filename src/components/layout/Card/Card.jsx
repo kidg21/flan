@@ -9,6 +9,7 @@ const CardPiece = styled.div`
   display: flex;
   flex-direction: column;
   flex: none;
+  padding: ${props => props.padding || ""};
   width: 100%;
   background: ${colors.white};
   /* Prototype Content - displays when a Card is empty */
@@ -57,9 +58,9 @@ function Piece({ id, children, className }) {
   );
 }
 
-function Card({ id, children, className }) {
+function Card({ id, children, padding, className }) {
   return (
-    <CardWrapper id={id} className={className}>
+    <CardWrapper id={id} padding={padding} className={className}>
       {children}
     </CardWrapper>
   );

@@ -10,10 +10,6 @@ import Card, { Piece } from "layout/Card";
 import Bar from "blocks/Bar";
 import TextInput from "atoms/TextInput";
 
-const Wrapper = styled.div`
-  padding: 1em;
-`;
-
 function DialogueBox({
   id,
   header,
@@ -94,27 +90,23 @@ function DialogueBox({
       break;
   }
   return (
-    <Card id={id} action={action} title={title}>
-      <Wrapper>
-        {header ? <Piece>{header}</Piece> : null}
+    <Card id={id} action={action} title={title} padding="1em">
+      {header ? <Piece>{header}</Piece> : null}
+      <Piece>
+        <Bar left={<Title title={title} />} />
+      </Piece>
+      {message ? <Bar left={<Title title={message} weight="light" />} /> : null}
+      {type ? (
         <Piece>
-          <Bar left={<Title title={title} />} />
+          <Bar left={inputContent} />
         </Piece>
-        {message ? (
-          <Bar left={<Title title={message} weight="light" />} />
-        ) : null}
-        {type ? (
-          <Piece>
-            <Bar left={<div>{inputContent}</div>} />
-          </Piece>
-        ) : null}
-        {content ? (
-          <Piece>
-            <Bar left={<div>{content}</div>} />
-          </Piece>
-        ) : null}
-        {action ? <Piece>{buttonType}</Piece> : null}
-      </Wrapper>
+      ) : null}
+      {content ? (
+        <Piece>
+          <Bar left={content} />
+        </Piece>
+      ) : null}
+      {action ? <Piece>{buttonType}</Piece> : null}
     </Card>
   );
 }
