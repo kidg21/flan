@@ -322,6 +322,10 @@ export const iconsApp = [
     desc: placeholder.desc,
   },
   {
+    icon: "share_content",
+    desc: placeholder.desc,
+  },
+  {
     icon: "print",
     desc: placeholder.desc,
   },

@@ -15,7 +15,7 @@ const iconActive = css`
 `;
 
 const LinkedIcon = styled(Link)`
-  cursor: ${props => {
+  cursor: ${(props) => {
     if (props.disabled) {
       return "not-allowed";
     } else if (props.onClick) {
@@ -23,21 +23,37 @@ const LinkedIcon = styled(Link)`
     }
     return "";
   }};
-  pointer-events: ${props => (props.disabled ? "none" : "")};
-  user-select: ${props => (props.disabled ? "none" : "")};
+  pointer-events: ${(props) => {
+    return props.disabled ? "none" : "";
+  }};
+  user-select: ${(props) => {
+    return props.disabled ? "none" : "";
+  }};
   &:hover {
-    ${props => (props.onClick ? iconHover : "")};
+    ${(props) => {
+    return props.onClick ? iconHover : "";
+  }};
   }
   &:active {
-    ${props => (props.onClick ? iconActive : "")};
+    ${(props) => {
+    return props.onClick ? iconActive : "";
+  }};
   }
 `;
 
 const StyledIcon = styled(FontAwesomeIcon)`
-  color: ${props => props.color || "inherit"};
-  border: ${props => (props.border ? "2px solid" : "")};
-  border-color: ${props => (props.border ? colors.grey_20 : "")};
-  border-radius: ${props => (props.border ? "5px" : "")};
+  color: ${(props) => {
+    return props.color || "inherit";
+  }};
+  border: ${(props) => {
+    return props.border ? "2px solid" : "";
+  }};
+  border-color: ${(props) => {
+    return props.border ? colors.grey_20 : "";
+  }};
+  border-radius: ${(props) => {
+    return props.border ? "5px" : "";
+  }};
 `;
 
 const iconHash = {
@@ -123,6 +139,7 @@ const iconHash = {
   settings_users: ["far", "users-cog"],
   settings: "cog",
   share: "share-square",
+  share_content: ["far", "share-alt"],
   sign_in: ["far", "sign-in"],
   sign_out: ["far", "sign-out"],
   signal_none: ["far", "signal-slash"],
@@ -180,8 +197,7 @@ function Icon({
 
   if (onClick) color = colors.anchor;
 
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) color = colors.grey_40;
 
   const styledIcon = (
@@ -236,6 +252,22 @@ Icon.propTypes = {
   disabled: PropTypes.bool,
   /** className used for extending styles */
   className: PropTypes.string,
+};
+
+Icon.defaultProps = {
+  id: null,
+  type: null,
+  icon: null,
+  size: null,
+  fixedWidth: false,
+  rotation: null,
+  flip: null,
+  spin: false,
+  pulse: false,
+  border: false,
+  onClick: null,
+  disabled: false,
+  className: null,
 };
 
 export default Icon;
