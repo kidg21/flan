@@ -209,7 +209,7 @@ function Icon({
       fixedWidth={fixedWidth}
       rotation={rotation}
       flip={flip}
-      splin={spin}
+      spin={spin}
       pulse={pulse}
       border={border}
       className={className}
