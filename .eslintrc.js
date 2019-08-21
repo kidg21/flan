@@ -100,6 +100,8 @@ module.exports = {
       "jpg": "always",
       "gif": "always",
       "png": "always",
+      "md": "always",
+      "data": "always",
     }],
 
     //We have places in code where we add multiple properties to an object, some of which require square-bracket notation and some of which do not.
