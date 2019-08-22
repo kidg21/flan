@@ -3,13 +3,17 @@ import PropertyPanelHeader from "elements/PanelHeaders/PropertyPanelHeader";
 import Table from "blocks/Table";
 import Title from "base/Typography";
 import PropTypes from "prop-types";
-import Card, { Piece, Wrapper } from "layout/Card";
+import Card, { Piece } from "layout/Card";
 import Command from "atoms/Command";
 import Bar from "blocks/Bar";
 import styled, { css } from "styled-components";
 
 const Space = styled.div`
   padding-top: 0.5em;
+`;
+
+const Wrapper = styled.div`
+  padding: 1em;
 `;
 
 function PropertyListCard({

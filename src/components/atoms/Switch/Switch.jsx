@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import { colors } from "Variables";
 
 const SwitchContainer = styled.div`
   position: relative;
@@ -27,14 +28,20 @@ const HiddenSwitch = styled.input.attrs({ type: "checkbox" })`
 const Circle = styled.div`
   position: absolute;
   z-index: 1;
-  background: ${(props) => { return (props.checked ? "white" : "white"); }};
-  border: ${(props) => { return props.checked ? "1px solid #75ab3f" : "1px solid darkgray"; }};
+  background: ${props => {
+    return props.checked ? "white" : "white";
+  }};
+  border: ${props => {
+    return props.checked ? "1px solid #75ab3f" : "1px solid darkgray";
+  }};
   border-radius: 40px;
   width: 15px;
   line-height: normal;
   height: 14px;
   transition: transform 300ms ease-in-out;
-  transform: ${(props) => { return props.checked ? "translateX(15px)" : "translateX(-1px)"; }};
+  transform: ${props => {
+    return props.checked ? "translateX(15px)" : "translateX(-1px)";
+  }};
 `;
 
 const StyledSwitch = styled.div`
@@ -42,8 +49,12 @@ const StyledSwitch = styled.div`
   display: block;
   height: 16px;
   border-radius: 23px;
-  border: ${(props) => { return props.checked ? "1px solid #94d850" : "1px solid darkgray"; }};
-  background-image: ${(props) => { return props.checked ? "linear-gradient(#75ab3f, #94d850);" : "white"; }};
+  border: ${props => {
+    return props.checked ? "1px solid #94d850" : "1px solid darkgray";
+  }};
+  background-image: ${props => {
+    return props.checked ? "linear-gradient(#75ab3f, #94d850);" : "white";
+  }};
   transition: 0.4s ease;
   cursor: pointer;
 `;
@@ -53,7 +64,9 @@ const Toggle = ({ checked, ...props }) => {
 
   const { onChange, ...remainingProps } = props;
   function onClick(e) {
-    setChecked((state) => { return !state; });
+    setChecked(state => {
+      return !state;
+    });
     e.preventDefault();
     if (onChange) onChange(e);
   }

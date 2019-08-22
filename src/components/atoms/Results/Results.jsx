@@ -6,31 +6,36 @@ import IconBlock from "blocks/IconBlock";
 import Bar from "blocks/Bar";
 import Card, { Piece } from "layout/Card";
 import Title from "base/Typography";
+import { colors } from "Variables";
 
 const Number = styled.a`
-	font-size: 20px;
-	font-weight: 600;
-	padding-right: 0.25em;
+  font-size: 20px;
+  font-weight: 600;
+  padding-right: 0.25em;
+  &:focus {
+    border: 1px solid ${colors.anchor};
+    outline: none;
+  }
 `;
 const ResultsContainer = styled.div`
-	display: inline-block;
+  display: inline-block;
 `;
 
 const StyledLabel = styled.label`
-	vertical-align: sup;
+  vertical-align: sup;
 `;
 
 function Results({ id, count, onClick }) {
-	return (
-		<ResultsContainer id={id}>
-			<Number onClick={onClick}>{count}</Number>
-			<StyledLabel>results</StyledLabel>
-		</ResultsContainer>
-	);
+  return (
+    <ResultsContainer id={id}>
+      <Number onClick={onClick}>{count}</Number>
+      <StyledLabel>results</StyledLabel>
+    </ResultsContainer>
+  );
 }
 Results.propTypes = {
-	id: PropTypes.string,
-	count: PropTypes.string,
-	onClick: PropTypes.func,
+  id: PropTypes.string,
+  count: PropTypes.string,
+  onClick: PropTypes.func,
 };
 export default Results;

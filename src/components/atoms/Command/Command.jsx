@@ -17,7 +17,6 @@ const CommandContainer = styled.a`
     return props.justifyIcon || "";
   }};
   grid-gap: 0.5rem;
-  align-items: center;
   width: max-content;
   font-size: ${props => {
     return props.commandSize || "";
@@ -46,6 +45,14 @@ const CommandName = styled(Title)`
   font-size: inherit;
   font-color: inherit;
   line-height: inherit;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 0;
+  &:focus {
+    border: 1px solid ${colors.anchor};
+    outline: none;
+  }
 `;
 
 const CommandIcon = styled(Icon)`

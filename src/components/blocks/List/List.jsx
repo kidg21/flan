@@ -11,12 +11,14 @@ const ListWrapper = styled.ul`
   flex-direction: column;
   list-style: none;
   font-weight: 600;
+  tabindex: 0;
 `;
 
 const ListTitle = styled(Title)`
   color: ${colors.grey_dark};
   border-bottom: 1px solid ${colors.grey_20};
   padding: 0.75em 1em;
+  tabindex: -1;
 `;
 
 const ListItemWrapper = styled.li`

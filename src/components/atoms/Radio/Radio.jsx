@@ -9,7 +9,9 @@ const RadioContainer = styled.div`
   grid-template-columns: auto 1fr;
   grid-gap: 0.5rem;
   align-items: inherit;
-  color: ${(props) => { return (props.error ? colors.alert : ""); }};
+  color: ${props => {
+    return props.error ? colors.alert : "";
+  }};
   &[disabled],
   &[readonly] {
     cursor: not-allowed;
@@ -21,18 +23,27 @@ const RadioContainer = styled.div`
 
 const RadioInput = styled.input.attrs({ type: "radio" })`
   border: 1px solid;
-  border-color: ${(props) => { return (props.error ? colors.alert_light : colors.grey_40); }};
-  background-color: ${(props) => { return props.disabled ? colors.grey_20 : colors.white; }};
+  border-color: ${props => {
+    return props.error ? colors.alert_light : colors.grey_40;
+  }};
+  background-color: ${props => {
+    return props.disabled ? colors.grey_20 : colors.white;
+  }};
   width: 1rem;
   height: 1rem;
   border-radius: 100%;
   cursor: pointer;
   -webkit-appearance: none;
   &:checked {
-    background-color: ${(props) => { return props.error ? colors.alert_tint : colors.success_light; }};
-    border-color: ${(props) => { return props.error ? colors.alert_light : colors.success; }};
+    background-color: ${props => {
+      return props.error ? colors.alert_tint : colors.success_light;
+    }};
+    border-color: ${props => {
+      return props.error ? colors.alert_light : colors.success;
+    }};
   }
   &:focus {
+    border: 1px solid ${colors.anchor};
     outline: none;
   }
 `;
@@ -46,17 +57,9 @@ const RadioLabel = styled.label`
   cursor: pointer;
 `;
 
-function Radio({
-  id,
-  name,
-  label,
-  value,
-  error,
-  onChange,
-  checked,
-  disabled,
-}) {
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+function Radio({ id, name, label, value, error, onChange, checked, disabled }) {
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   return (
     <RadioContainer
       disabled={isDisabled} // input attribute>
@@ -87,7 +90,7 @@ Radio.propTypes = {
   onChange: PropTypes.func,
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
-  error: PropTypes.bool
+  error: PropTypes.bool,
 };
 
 export { Radio as default };
