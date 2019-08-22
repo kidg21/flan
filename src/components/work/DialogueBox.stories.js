@@ -62,7 +62,27 @@ storiesOf("Work|Dialogue Box", module)
   .add("General/Save Box", () => (
     <DialogueBox
       title="Save As"
-      type="saving"
+      content={
+        <Section>
+          <TextInput inputLabel="Name" placeholder="Type Name" />
+          <SelectMenu
+            inputLabel="Location"
+            options={[
+              { value: "1", label: "my folder" },
+              { value: "2", label: "our folder" },
+              { value: "3", label: "dmp" },
+              { value: "4", label: "lightbox" },
+            ]}
+          />
+          <SelectMenu
+            inputLabel="File Type"
+            options={[
+              { value: "jpg", label: ".jpg" },
+              { value: "png", label: ".png" },
+            ]}
+          />{" "}
+        </Section>
+      }
       action="two"
       primaryLabel="Save"
       secondaryLabel="Cancel"

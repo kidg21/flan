@@ -2,12 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
 import Button from "atoms/Button";
-import SelectMenu from "atoms/SelectMenu";
-import { Section } from "layout/Form";
 import Title from "base/Typography";
 import Card, { Piece } from "layout/Card";
 import Bar from "blocks/Bar";
-import TextInput from "atoms/TextInput";
 
 function DialogueBox({
   id,
@@ -60,31 +57,6 @@ function DialogueBox({
         />
       );
       break;
-  }
-  switch (type) {
-    case "saving":
-      inputContent = (
-        <Section>
-          <TextInput inputLabel="Name" placeholder="Type Name" />
-          <SelectMenu
-            inputLabel="Location"
-            options={[
-              { value: "1", label: "my folder" },
-              { value: "2", label: "our folder" },
-              { value: "3", label: "dmp" },
-              { value: "4", label: "lightbox" },
-            ]}
-          />
-          <SelectMenu
-            inputLabel="File Type"
-            options={[
-              { value: "jpg", label: ".jpg" },
-              { value: "png", label: ".png" },
-            ]}
-          />{" "}
-        </Section>
-      );
-      break;
     default:
       break;
   }
@@ -104,7 +76,6 @@ DialogueBox.propTypes = {
   header: PropTypes.node,
   content: PropTypes.node,
   title: PropTypes.node,
-  type: PropTypes.node,
   footer: PropTypes.node,
   message: PropTypes.string,
   buttonColor: PropTypes.node,
