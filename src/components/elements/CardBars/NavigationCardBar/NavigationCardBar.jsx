@@ -15,9 +15,8 @@ const Line = styled.div`
 
 function NavigationCardBar({ id, title, number, disabled, onClick }) {
 	return (
-		<Piece title={title} number={number} disabled={disabled}>
-			<Bar 
-				id={id}
+		<Piece id={id} title={title} number={number} disabled={disabled}>
+			<Bar
 				left={<Title title={title} number={number} weight="normal" />}
 				right={<Icon icon={["far", "angle-right"]} />}
 				onClick={onClick}
