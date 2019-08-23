@@ -60,13 +60,13 @@ storiesOf("Blocks|Table", module)
       }
       return (
         <MultiGridWrapper>
-          <AutoSizer disableHeight>
-            {({ width }) => (
+          <AutoSizer>
+            {({ width, height }) => (
               <MultiGrid
                 cellRenderer={cellRenderer}
                 columnCount={10}
                 columnWidth={cache.columnWidth}
-                height={200}
+                height={height}
                 rowCount={20}
                 rowHeight={25}
                 width={width}

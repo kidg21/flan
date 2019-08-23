@@ -28,7 +28,7 @@ export { default as Menu } from "./blocks/Menu";
 export { default as RangeSlider } from "./blocks/RangeSlider";
 export { default as Search } from "./blocks/Search";
 export { default as Table } from "./blocks/Table";
-export { default as Tabs } from "./blocks/Tabs";
+export { default as Tabs, Tab } from "./blocks/Tabs";
 export * from "./blocks/Table/TableView.jsx";
 
 // Publicly exported files from 'elements'
