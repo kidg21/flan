@@ -1,9 +1,10 @@
-import React, { useState } from "react";
-import styled, { css } from "styled-components";
+/* eslint-disable react/jsx-one-expression-per-line */
+import React from "react";
+import styled from "styled-components";
 import PropTypes from "prop-types";
 import IconBlock from "blocks/IconBlock";
 import Bar from "blocks/Bar";
-import Card, { Piece } from "layout/Card";
+import { Piece } from "layout/Card";
 import Title from "base/Typography";
 
 import Switch from "atoms/Switch";

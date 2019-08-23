@@ -28,6 +28,7 @@
         // "root": ["ss-styled-components/src"],
         "alias": {
           "Variables": "ss-styled-components/src/components/base/Variables/Variables.jsx",
+          "States": "ss-styled-components/src/components/base/States/States",
           "GlobalStyles": "ss-styled-components/src/components/base/GlobalStyles/GlobalStyles.jsx",
           "images": "ss-styled-components/src/images",
           "helpers": "ss-styled-components/src/components/_helpers",

@@ -52,7 +52,10 @@ export {
 } from "./elements/PanelHeaders/NavigationPanelHeader";
 export { default as Notification } from "./elements/Notification";
 export { default as MapSearch } from "./elements/MapSearch";
-export { default as PopupCard } from "./elements/PopupCard";
+export { default as UserRoles, UserEntry } from "./elements/UserRoles";
+export {
+  default as PropertyListCard,
+} from "./elements/ListCards/PropertyListCard";
 
 // Publicly exported files from 'layout'
 export { default as Card, CardList } from "./layout/Card";

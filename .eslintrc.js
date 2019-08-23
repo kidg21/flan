@@ -94,6 +94,11 @@ module.exports = {
         //I can't see any way this could know how to resolve a require statement appropriately, so turning this off.
         "import/no-unresolved": [0],
 
+        // Only CSS needs an extension.
+        "import/extensions": ["error", "never", {
+          "css": "always",
+        }],
+
         //We have places in code where we add multiple properties to an object, some of which require square-bracket notation and some of which do not.
         //For consistency, set this to warn, so that we can have all of those added in the same way.
         "dot-notation": "warn",

@@ -1,35 +1,36 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { colors } from "Variables";
+import { DisabledContext } from "States";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
 
 const TextInputContainer = styled.div`
   display: grid;
   grid-gap: 0.35rem;
   align-content: flex-start;
-  color: ${props => props.inputTextColor || ""};
+  color: ${(props) => { return props.inputTextColor || ""; }};
 `;
 
 const Input = styled.input`
   border: 1px solid;
-  border-color: ${props => props.inputBorderColor || ""};
-  background-color: ${props => props.inputFillColor || ""};
-  caret-color: ${props => props.inputCaretColor || ""};
+  border-color: ${(props) => { return props.inputBorderColor || ""; }};
+  background-color: ${(props) => { return props.inputFillColor || ""; }};
+  caret-color: ${(props) => { return props.inputCaretColor || ""; }};
   min-height: 2.75rem;
   padding: 0.5rem 0.75rem;
   resize: vertical;
   ::placeholder {
-    color: ${props => props.placeholderColor || ""};
+    color: ${(props) => { return props.placeholderColor || ""; }};
   }
   &:hover {
-    border-color: ${props => props.inputBorderColorHover || colors.grey_40};
+    border-color: ${(props) => { return props.inputBorderColorHover || colors.grey_40; }};
     }
   }
   &:focus {
-    border-color: ${props => props.inputBorderColorHover || colors.success};
+    border-color: ${(props) => { return props.inputBorderColorHover || colors.success; }};
     ::selection {
-      background-color: ${props => props.inputSelectColor || ""};
+      background-color: ${(props) => { return props.inputSelectColor || ""; }};
     }
   }
 `;
@@ -45,7 +46,7 @@ function TextInput({
   helpText,
   errorText,
   state,
-  isDisabled,
+  disabled,
   children,
   style,
   onChange,
@@ -76,19 +77,13 @@ function TextInput({
       inputCaretColor = colors.alert;
       placeholderColor = colors.alert_light;
       inputSelectColor = colors.alert;
+      disabled = false;
       break;
     case "search":
       inputBorderColor = colors.grey_20;
       inputBorderColorHover = colors.grey_20;
       placeholderColor = colors.grey_40;
       inputSelectColor = colors.anchor;
-      break;
-    case "disabled":
-      inputTextColor = colors.grey_40;
-      inputFillColor = colors.grey_20;
-      inputBorderColor = colors.grey_20;
-      placeholderColor = colors.grey_40;
-      isDisabled = true;
       break;
     default:
       inputBorderColor = colors.grey_20;
@@ -103,6 +98,13 @@ function TextInput({
     autoCompleteDataListId = Dmp.Util.getGuid();
     const options = autocompleteList.map((item) => { return (<option key={Dmp.Util.getGuid()} value={item}>{item}</option>); });
     autocompleteDataList = (<datalist id={autoCompleteDataListId}>{options}</datalist>);
+  }
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  if (isDisabled) {
+    inputTextColor = colors.grey_40;
+    inputFillColor = colors.grey_20;
+    inputBorderColor = colors.grey_20;
+    placeholderColor = colors.grey_40;
   }
 
   return (
@@ -157,7 +159,9 @@ TextInput.propTypes = {
   style: PropTypes.string,
   onChange: PropTypes.func,
   autocompleteList: PropTypes.arrayOf(PropTypes.string),
-  size: PropTypes.string
+  size: PropTypes.string,
+  disabled: PropTypes.bool,
+  children: PropTypes.node,
 };
 
 export { TextInput as default };
