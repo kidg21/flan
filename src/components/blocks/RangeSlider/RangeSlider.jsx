@@ -60,4 +60,5 @@ RangeSlider.propTypes = {
   maxLabel: PropTypes.string,
 };
 
-export default RangeSlider;
+
+export { RangeSlider as default, InputContainer};

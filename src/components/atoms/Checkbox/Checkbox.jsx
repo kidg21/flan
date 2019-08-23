@@ -81,7 +81,7 @@ function CheckboxGroup({ id, columns, onChange, children }) {
   );
 }
 
-function Checkbox({ id, label, type, align, checked }) {
+function Checkbox({ id, label, type, align, checked, onChange }) {
   let checkboxColor;
   let fillColor;
   let borderColor;
@@ -127,6 +127,7 @@ function Checkbox({ id, label, type, align, checked }) {
         borderColor={borderColor}
         fillColorChecked={fillColorChecked}
         borderColorChecked={borderColorChecked}
+        onClick={onChange}
       />
       <CheckboxLabel htmlFor={id}>{label}</CheckboxLabel>
     </CheckboxContainer>

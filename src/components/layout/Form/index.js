@@ -7,5 +7,6 @@ export {
   InputLabel,
   HelpText,
   ErrorText,
-  InputGroup
+  InputGroup,
+  Label
 } from "./Form.jsx";

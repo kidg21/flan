@@ -135,4 +135,5 @@ export {
   HelpText,
   ErrorText,
   InputGroup,
+  Label,
 };

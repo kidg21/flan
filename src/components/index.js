@@ -25,7 +25,7 @@ export { default as List, ListItem } from "./blocks/List";
 export { default as IconBlock } from "./blocks/IconBlock";
 export { default as MapLegend } from "./blocks/MapLegend";
 export { default as Menu } from "./blocks/Menu";
-export { default as RangeSlider } from "./blocks/RangeSlider";
+export { default as RangeSlider, InputContainer } from "./blocks/RangeSlider";
 export { default as Search } from "./blocks/Search";
 export { default as Table } from "./blocks/Table";
 export { default as Tabs, Tab } from "./blocks/Tabs";

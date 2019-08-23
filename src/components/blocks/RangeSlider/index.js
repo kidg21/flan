@@ -1,1 +1,1 @@
-export { default } from "./RangeSlider.jsx";
+export { default, InputContainer } from "./RangeSlider.jsx";
