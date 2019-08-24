@@ -10,7 +10,9 @@ const centerStyles = {
   alignItems: "center",
   height: "100vh",
 };
-const Center = ({ children }) => <div style={centerStyles}>{children}</div>;
+const Center = ({ children }) => {
+  return <div style={centerStyles}>{children}</div>;
+};
 
 const padding = {
   padding: "2rem",
@@ -18,39 +20,37 @@ const padding = {
 const Padding = storyFn => <div style={padding}>{storyFn()}</div>;
 
 function IconGrid({ data }) {
-  return [
-    data.map(item => (
-      <Piece
-        key={item.icon}
-        id={item.icon}
-        hover={true}
-        // TODO: Add background props to Card
-        // type={item.background}
-      >
-        <Bar
-          contentAlign="center"
-          left={
-            <Icon
-              icon={item.icon}
-              type={item.type}
-              size={item.size || "2x"}
-              fixedWidth={true}
-              spin={item.spin}
-              pulse={item.pulse}
-            />
-          }
-          leftWidth="min-content"
-          center={
-            <>
-              <Title text={item.name || item.icon} size="large" select="all" />
-              <Description text={item.desc} />
-            </>
-          }
-          centerAlign="left"
-        />
-      </Piece>
-    )),
-  ];
+  return data.map(item => (
+    <Piece
+      key={item.icon}
+      id={item.icon}
+      hover={true}
+      // TODO: Add background props to Card
+      // type={item.background}
+    >
+      <Bar
+        contentAlign="center"
+        left={
+          <Icon
+            icon={item.icon}
+            type={item.type}
+            size={item.size || "2x"}
+            fixedWidth={true}
+            spin={item.spin}
+            pulse={item.pulse}
+          />
+        }
+        leftWidth="min-content"
+        center={
+          <>
+            <Title text={item.name || item.icon} size="large" select="all" />
+            <Description text={item.desc} />
+          </>
+        }
+        centerAlign="left"
+      />
+    </Piece>
+  ));
 }
 
 export { Center, Padding, IconGrid };
