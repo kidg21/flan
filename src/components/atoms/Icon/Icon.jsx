@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 import { colors } from "Variables";
-import { Link } from "base/Typography";
 import { DisabledContext } from "States";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -14,7 +13,7 @@ const iconActive = css`
   filter: brightness(105%);
 `;
 
-const LinkedIcon = styled(Link)`
+const LinkedIcon = styled.a`
   cursor: ${(props) => {
     if (props.disabled) {
       return "not-allowed";
