@@ -5,14 +5,11 @@ import Grid from "layout/Grid";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 import PropTypes from "prop-types";
 
-const Wrapper = styled.div`
-  margin: 0.5em;
-`;
-
 const CardPiece = styled.div`
   display: flex;
   flex-direction: column;
   flex: none;
+  padding: ${props => props.padding || ""};
   width: 100%;
   /** TODO: add 'background' and 'interaction' props */
   /* color: ${props => props.textColor || ""}; */
@@ -36,10 +33,6 @@ const CardWrapper = styled(CardPiece)`
   position: relative;
   filter: ${shadows.cardShadow};
   /* Square off rounded edges of any direct children of Cards */
-  > *,
-  input {
-    border-radius: 0;
-  }
   /* Prototype Content - displays when a Card is empty */
   &:empty {
     &:before {
@@ -113,9 +106,9 @@ function Piece({
   );
 }
 
-function Card({ id, children, className }) {
+function Card({ id, children, padding, className }) {
   return (
-    <CardWrapper id={id} className={className}>
+    <CardWrapper id={id} padding={padding} className={className}>
       {children}
     </CardWrapper>
   );
@@ -186,4 +179,4 @@ CardList.propTypes = {
   rows: PropTypes.oneOf(["default (auto)", "[grid-template-rows]"]),
 };
 
-export { Card as default, CardList, Piece, Wrapper };
+export { Card as default, CardList, Piece };

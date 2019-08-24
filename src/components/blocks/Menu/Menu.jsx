@@ -1,58 +1,78 @@
-import React, { useState, Fragment } from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Icon from "atoms/Icon";
-import { colors, shadows } from "Variables";
+import Card from "layout/Card";
+import Title from "base/Typography";
+import { colors } from "Variables";
 
 const Container = styled.div`
   cursor: pointer;
-  padding: 0.5em;
-  border: 1px solid red;
-  position: relative;
+  // position: relative;
+  line-height: 1.5;
   display: inline-block;
 `;
 
-const MenuContainer = styled.div`
-  background: ${props => props.backgroundColor || colors.white};
+const EditMenu = styled.ul`
+  background: ${colors.white};
   border-radius: 3px;
-  margin-top: 4px;
   list-style: none;
-  content-align: left;
-  text-align: left;
+  z-index: 500;
   padding: 0.25em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
   bottom: ${props => props.badgeBottom || ""};
   left: ${props => props.badgeLeft || ""};
   transform: ${props => props.badgeTransform || ""};
-  width: 150px;
+  width: auto;
+  min-width: 10em;
   position: absolute;
 `;
 
 const Item = styled.li`
-  padding: 0.5em 0.5em 0.5em 0.5em;
-  letter-spacing: 0.5px;
+  padding: 0.55em;
+  z-index: 501;
+  text-align: left;
+
+  &:hover {
+    background-color: ${colors.grey_light};
+  }
+
+  &:active {
+    color: ${colors.black};
+  }
 `;
 
-function Menu({ id, data, position }) {
+function Menu({ id, data, type, object, onClick, position }) {
   let badgeLeft = "100%";
   let badgeBottom = "100%";
-  let badgeTransform = "translate(-90%, 50%)";
+  let badgeTransform;
   const [visibility, setVisibility] = useState(false);
+  switch (type) {
+    case "edit":
+      object = <Icon icon={["far", "ellipsis-v"]} size="lg" />;
+      break;
+    default:
+      break;
+  }
   switch (position) {
     case "topLeft":
       badgeLeft = "0";
-      badgeTransform = "translate(-96%, 5%)";
+      badgeTransform = "translate(-100%, -5%)";
       break;
     case "topRight":
-      badgeTransform = "translate(-2%, 5%)";
+      badgeTransform = "translate(1%, -9%)";
+      badgeLeft = "0";
       break;
     case "bottomRight":
       badgeBottom = "0";
-      badgeTransform = "translate(-2%, 93%)";
+      badgeLeft = "0";
+      badgeTransform = "translate(6%, 95%)";
       break;
     case "bottomLeft":
       badgeBottom = "0";
       badgeLeft = "0";
-      badgeTransform = "translate(-96%, 95%)";
+      badgeTransform = "translate(-106%, 95%)";
       break;
     case "bottomCenter":
       badgeBottom = "0";
@@ -62,7 +82,7 @@ function Menu({ id, data, position }) {
     case "topCenter":
       badgeBottom = "0";
       badgeLeft = "0";
-      badgeTransform = "translate(-45%, -20%)";
+      badgeTransform = "translate(-45%, -17%)";
       break;
     default:
       break;
@@ -74,17 +94,21 @@ function Menu({ id, data, position }) {
         setVisibility(!visibility);
       }}
     >
-      <Icon icon="options" size="lg" />
+      {object}
       {visibility ? (
-        <MenuContainer
-          badgeTransform={badgeTransform}
-          badgeLeft={badgeLeft}
-          badgeBottom={badgeBottom}
-        >
-          {data.map(item => (
-            <Item key={item.id}>{item.name}</Item>
-          ))}
-        </MenuContainer>
+        <Card>
+          <EditMenu
+            badgeTransform={badgeTransform}
+            badgeLeft={badgeLeft}
+            badgeBottom={badgeBottom}
+          >
+            {data.map(item => (
+              <Item key={item.id} onClick={item.onClick}>
+                <Title title={item.name} weight="normal" />
+              </Item>
+            ))}
+          </EditMenu>
+        </Card>
       ) : null}
     </Container>
   );
@@ -92,6 +116,9 @@ function Menu({ id, data, position }) {
 
 Menu.propTypes = {
   id: PropTypes.string,
+  object: PropTypes.node,
+  type: PropTypes.any,
+  onClick: PropTypes.func,
   data: PropTypes.any.isRequired,
   position: PropTypes.oneOf([
     "topLeft",

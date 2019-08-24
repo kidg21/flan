@@ -11,12 +11,14 @@ const ListWrapper = styled.ul`
   flex-direction: column;
   list-style: none;
   font-weight: 600;
+  tabindex: 0;
 `;
 
 const ListTitle = styled(Title)`
   color: ${colors.grey_dark};
   border-bottom: 1px solid ${colors.grey_20};
-  padding: 0.75em;
+  padding: 0.75em 1em;
+  tabindex: -1;
 `;
 
 const ListItemWrapper = styled.li`
@@ -117,11 +119,7 @@ function ListItem({
       itemBorder={itemBorder}
       onClick={onClick}
       disabled={disabled}
-      interactive={
-        typeof interactive === "boolean"
-          ? interactive
-          : useContext(InteractiveContext)
-      }
+      interactive={typeof interactive === "boolean" ? interactive : useContext(InteractiveContext)}
     >
       <DisabledContext.Provider value={disabled}>
         <Bar
@@ -129,9 +127,7 @@ function ListItem({
           left={
             <>
               {<Title text={label} />}
-              {description ? (
-                <Title text={description} size="small" weight="light" />
-              ) : null}
+              {description ? <Title text={description} size="small" weight="light" /> : null}
             </>
           }
           right={children}

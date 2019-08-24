@@ -55,12 +55,14 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
     }};
   }
   &:focus {
+    border: 1px solid ${colors.anchor};
     outline: none;
   }
 `;
 
 const CheckboxLabel = styled.label`
   grid-area: label;
+  tab-index: 0;
   user-select: none;
   font-family: Arial;
   font-size: 13px;

@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { colors } from "Variables";
 import { DisabledContext } from "States";
 import Icon from "atoms/Icon";
+import Title from "base/Typography";
 
 const CommandContainer = styled.a`
   display: grid;
@@ -16,7 +17,6 @@ const CommandContainer = styled.a`
     return props.justifyIcon || "";
   }};
   grid-gap: 0.5rem;
-  align-items: center;
   width: max-content;
   font-size: ${props => {
     return props.commandSize || "";
@@ -40,21 +40,27 @@ const CommandContainer = styled.a`
   }
 `;
 
-const CommandName = styled.h5`
+const CommandName = styled(Title)`
   grid-area: name;
   font-size: inherit;
+  font-color: inherit;
   line-height: inherit;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   margin: 0;
+  &:focus {
+    border: 1px solid ${colors.anchor};
+    outline: none;
+  }
 `;
 
 const CommandIcon = styled(Icon)`
   grid-area: icon;
+  color: inherit;
 `;
 
-function Command({ id, name, label, icon, align, size, disabled }) {
+function Command({ id, name, label, icon, align, size, onClick, disabled }) {
   let alignIcon = "'icon name'";
   const justifyCommand = "flex-start";
   let justifyIcon = "flex-start";
@@ -149,9 +155,10 @@ function Command({ id, name, label, icon, align, size, disabled }) {
       commandColor={commandColor}
       commandSize={commandSize}
       isDisabled={isDisabled}
+      onClick={onClick}
     >
       {icon ? <CommandIcon icon={icon} /> : null}
-      <CommandName>{label}</CommandName>
+      <CommandName title={label} weight="normal" />
     </CommandContainer>
   );
 }
@@ -162,13 +169,14 @@ Command.propTypes = {
   align: PropTypes.string,
   disabled: PropTypes.boolean,
   size: PropTypes.string,
+  onClick: PropTypes.node,
   icon: PropTypes.string,
   label: PropTypes.string,
 };
 
 Command.defaultProps = {
   label: "Command",
-  icon: "user_circle",
+  icon: null,
 };
 
 export { Command as default };
