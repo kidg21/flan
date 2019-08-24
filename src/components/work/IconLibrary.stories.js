@@ -13,7 +13,7 @@ storiesOf("Work|Icon Library", module)
   .add("App Icons", () => {
     return (
       <Grid columns="1">
-        <Title text="App Icons" size="large" style="underline" />
+        <Title text="App Icons" size="large" styling="underline" />
         <SubTitle text="Click the name of the icon to select, copy, and use the value in the Icon's 'name' prop" />
         <CardList>
           <IconGrid data={iconsApp} />
@@ -27,7 +27,7 @@ storiesOf("Work|Icon Library", module)
   .add("Navigation Icons", () => {
     return (
       <Grid columns="1">
-        <Title text="Navigation Icons" size="large" style="underline" />
+        <Title text="Navigation Icons" size="large" styling="underline" />
         <SubTitle text="Click the name of the icon to select, copy, and use the value in the Icon's 'name' prop" />
         <CardList>
           <IconGrid data={iconsNavigation} />
@@ -41,7 +41,7 @@ storiesOf("Work|Icon Library", module)
   .add("Brand Icons", () => {
     return (
       <Grid columns="1">
-        <Title text="Brand Icons" size="large" style="underline" />
+        <Title text="Brand Icons" size="large" styling="underline" />
         <SubTitle text="Click the name of the icon to select, copy, and use the value in the Icon's 'name' prop" />
         <CardList>
           <IconGrid data={iconsBrand} />

@@ -86,7 +86,7 @@ storiesOf("Work|Atoms/Icon/", module)
   .add("Type", () => {
     return (
       <Grid columns="1">
-        <Title text="Icon Types" size="large" style="underline" />
+        <Title text="Icon Types" size="large" styling="underline" />
         <SubTitle text="Icons inherit the 'color' of the parent container but can be overridden." />
         <Description text="Available Props: default (no prop)', 'info', 'success', 'warning', 'alert', 'inverse'" />
         <CardList>
@@ -98,7 +98,7 @@ storiesOf("Work|Atoms/Icon/", module)
   .add("Size", () => {
     return (
       <Grid columns="1">
-        <Title text="Icon Sizes" size="large" style="underline" />
+        <Title text="Icon Sizes" size="large" styling="underline" />
         <SubTitle text="Icons inherit the 'font-size' of the parent container and are relatively sized." />
         <Description text="Available Props: 'xs', 'sm', 'standard (no prop)', 'lg', '2x', '3x', '4x', '5x', '6x', '7x', '8x', '9x', '10x'" />
         <CardList>
