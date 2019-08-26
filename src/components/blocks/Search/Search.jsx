@@ -18,13 +18,10 @@ const SearchContainer = styled.div`
     right: 0;
     background-color: ${colors.white};
     margin: 0.2em;
-    padding: 0.6em;
+    padding: 0.5em;
     cursor: pointer;
   }
 `;
-
-
-
 
 function Search({ id, ...inputProps }) {
   const [activeSingleTab, setActiveSingleTab] = useState("tab1");
@@ -32,7 +29,7 @@ function Search({ id, ...inputProps }) {
     <SearchContainer id={id}>
       <TextInput placeholder="Search" state="search" {...inputProps}>
         <IconWrapper>
-          <Icon icon={["far", "search"]} type="info" />
+          <Icon icon="search" type="info" />
         </IconWrapper>
       </TextInput>
     </SearchContainer>

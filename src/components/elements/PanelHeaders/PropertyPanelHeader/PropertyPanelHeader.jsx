@@ -15,7 +15,7 @@ function PropertyPanelHeader({ id, title, menuData, onClick }) {
         center={
           <IconBlock>
             <Icon
-              icon={["fal", "directions"]}
+              icon="directions"
               size="2x"
               type="info"
               onClick={onClick}

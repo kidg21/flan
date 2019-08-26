@@ -1,5 +1,5 @@
 // Publicly exported files from 'base'
-export * from "./base/Typography";
+export { default as Title, SubTitle, Description, Link, Number } from "./base/Typography";
 export * from "./base/GlobalStyles/GlobalStyles.jsx";
 
 // Publicly exported files from 'atoms'
@@ -24,6 +24,7 @@ export { default as Bar } from "./blocks/Bar";
 export { default as List, ListItem } from "./blocks/List";
 export { default as IconBlock } from "./blocks/IconBlock";
 export { default as MapLegend } from "./blocks/MapLegend";
+export { default as MediaBlock } from "./blocks/MediaBlock";
 export { default as Menu } from "./blocks/Menu";
 export { default as RangeSlider } from "./blocks/RangeSlider";
 export { default as Search } from "./blocks/Search";
@@ -69,6 +70,6 @@ export {
 } from "./layout/Form";
 export { default as Grid } from "./layout/Grid";
 export { default as Layout } from "./layout/Layout";
-// export { default as Modal } from "./layout/Modal";
+export { default as Modal } from "./layout/Modal";
 export { default as Page } from "./layout/Page";
 export { default as Panel, PanelSection } from "./layout/Panel";

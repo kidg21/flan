@@ -11,7 +11,14 @@ const CardPiece = styled.div`
   flex: none;
   padding: ${props => props.padding || ""};
   width: 100%;
+  /** TODO: add 'background' and 'interaction' props */
+  /* color: ${props => props.textColor || ""}; */
+  /* background-color: ${props => props.backgroundColor || ""}; */
   background: ${colors.white};
+  &:hover {
+    box-shadow: ${props => (props.hover ? shadows.dropShadow : "")};
+    cursor: ${props => (props.hover ? "pointer" : "")};
+  }
   /* Prototype Content - displays when a Card is empty */
   &:empty {
     &:before {
@@ -25,7 +32,6 @@ const CardPiece = styled.div`
 const CardWrapper = styled(CardPiece)`
   position: relative;
   filter: ${shadows.cardShadow};
-  /* box-shadow: ${shadows.dropShadow}; */
   /* Square off rounded edges of any direct children of Cards */
   /* Prototype Content - displays when a Card is empty */
   &:empty {
@@ -50,9 +56,51 @@ const CardListWrapper = styled(Grid)`
   }
 `;
 
-function Piece({ id, children, className }) {
+function Piece({
+  id,
+  hover,
+  children,
+  className,
+  /** TODO: add 'background' and 'interaction' props */
+  // type,
+}) {
+  /** TODO: add 'background' and 'interaction' props */
+  // let textColor;
+  // let backgroundColor;
+  // switch (type && type.toLowerCase()) {
+  //   case "info":
+  //     backgroundColor = colors.anchor;
+  //     textColor = colors.anchor_tint;
+  //     break;
+  //   case "success":
+  //     backgroundColor = colors.success;
+  //     textColor = colors.success_tint;
+  //     break;
+  //   case "warning":
+  //     backgroundColor = colors.warning;
+  //     textColor = colors.warning_tint;
+  //     break;
+  //   case "alert":
+  //     backgroundColor = colors.alert;
+  //     textColor = colors.alert_tint;
+  //     break;
+  //   case "inverse":
+  //     backgroundColor = colors.black;
+  //     textColor = colors.grey_light;
+  //     break;
+  //   default:
+  //     backgroundColor = colors.white;
+  //     break;
+  // }
   return (
-    <CardPiece id={id} className={className}>
+    <CardPiece
+      id={id}
+      className={className}
+      hover={hover}
+      /** TODO: add 'background' and 'interaction' props */
+      // textColor={textColor}
+      // backgroundColor={backgroundColor}
+    >
       {children}
     </CardPiece>
   );

@@ -141,7 +141,7 @@ storiesOf("Work|Blocks/InputBlock", module)
   .add("InputBlock ( Prefix Icon )", () => (
     <InputBlock
       inputLabel="Input ( Prefix Icon )"
-      prefix={<Icon icon={["fas", "user"]} size="lg" fixedWidth />}
+      prefix={<Icon icon="user" size="lg" fixedWidth />}
       placeholder="This help text has been passed through a prop!"
       helpText="This help text has been passed through a prop!"
     />
@@ -288,7 +288,7 @@ storiesOf("Work|Blocks/InputBlock", module).add(
             />
             <InputBlock
               inputLabel="Input ( Prefix Icon )"
-              prefix={<Icon icon={["fas", "user"]} size="lg" fixedWidth />}
+              prefix={<Icon icon="user" size="lg" fixedWidth />}
               placeholder="This help text has been passed through a prop!"
               helpText="This help text has been passed through a prop!"
             />

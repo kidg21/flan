@@ -72,23 +72,23 @@ function Command({ id, name, label, icon, align, size, onClick, disabled }) {
       label = "Add To List";
       break;
     case "address":
-      icon = "map-marker-alt";
+      icon = "address";
       label = "Address";
       break;
     case "apn":
-      icon = "hashtag";
+      icon = "apn";
       label = "APN";
       break;
     case "bookmark":
-      icon = ["far", "bookmark"];
+      icon = "bookmark";
       label = "Bookmark";
       break;
     case "contacts":
-      icon = "users";
+      icon = "contacts";
       label = "Contacts";
       break;
     case "gps":
-      icon = ["far", "map"];
+      icon = "gps";
       label = "GPS";
       break;
     case "menu":
@@ -96,7 +96,7 @@ function Command({ id, name, label, icon, align, size, onClick, disabled }) {
       label = "Menu";
       break;
     case "notifications":
-      icon = ["far", "bell"];
+      icon = "notification";
       label = "Notifications";
       break;
     case "print":
@@ -108,11 +108,11 @@ function Command({ id, name, label, icon, align, size, onClick, disabled }) {
       label = "Profile";
       break;
     case "settings":
-      icon = ["far", "cog"];
+      icon = "settings";
       label = "Settings";
       break;
     case "share":
-      icon = ["far", "share"];
+      icon = "share";
       label = "Share";
       break;
     default:

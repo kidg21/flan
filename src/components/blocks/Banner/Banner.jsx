@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import { colors, shadows } from "Variables";
 import Icon from "atoms/Icon";
-import Title, { Body } from "base/Typography";
+import Title, { Description } from "base/Typography";
 
 const StyledBanner = styled.div`
   display: flex;
@@ -44,6 +44,9 @@ const Message = styled.section`
   flex: auto;
   margin-right: 1.5em;
   align-self: center;
+  > * {
+    margin-bottom: 0;
+  }
 `;
 
 const Link = styled.h4`
@@ -118,7 +121,7 @@ function Banner({
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
-          <Icon icon="exclamation" fixedWidth warning />
+          <Icon icon="alert" fixedWidth warning />
         </StatusBadge>
       );
       break;
@@ -127,7 +130,7 @@ function Banner({
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
-          <Icon icon="times" fixedWidth alert />
+          <Icon icon="close" fixedWidth alert />
         </StatusBadge>
       );
       break;
@@ -149,12 +152,12 @@ function Banner({
     >
       {bannerType}
       <Message>
-        <Title title={title} type="inherit" />
-        {description ? <Body body={description} type="inherit" /> : null}
+        <Title text={title} />
+        {description ? <Description text={description} /> : null}
         {link ? <Link onClick={onClick}>{link}</Link> : null}
       </Message>
       <Close onClick={onClose}>
-        <Icon icon="times" />
+        <Icon icon="close" />
       </Close>
     </StyledBanner>
   );
