@@ -50,7 +50,7 @@ function Menu({ id, data, type, object, onClick, position }) {
   const [visibility, setVisibility] = useState(false);
   switch (type) {
     case "edit":
-      object = <Icon icon={["far", "ellipsis-v"]} size="lg" />;
+      object = <Icon icon="options" size="lg" />;
       break;
     default:
       break;
