@@ -94,7 +94,7 @@ function CheckboxGroup({ id, columns, onChange, children }) {
   );
 }
 
-function Checkbox({ id, label, type, align, checked, disabled }) {
+function Checkbox({ id, label, type, align, checked, disabled, onChange }) {
   let checkboxColor;
   let fillColor;
   let borderColor;
@@ -142,6 +142,7 @@ function Checkbox({ id, label, type, align, checked, disabled }) {
         borderColor={borderColor}
         fillColorChecked={fillColorChecked}
         borderColorChecked={borderColorChecked}
+        onChange={onChange}
       />
       <CheckboxLabel htmlFor={id}>{label}</CheckboxLabel>
     </CheckboxContainer>
@@ -162,6 +163,7 @@ Checkbox.propTypes = {
   align: PropTypes.oneOf(["default", "right"]),
   checked: PropTypes.boolean,
   disabled: PropTypes.boolean,
+  onChange: PropTypes.func,
 };
 
 export { Checkbox as default, CheckboxGroup };
