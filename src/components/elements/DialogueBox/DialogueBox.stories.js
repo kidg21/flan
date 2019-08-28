@@ -28,7 +28,7 @@ const Logo = styled.img`
   height: 2.5em;
 `;
 
-storiesOf("Work|Dialogue Box", module)
+storiesOf("Elements|Dialogue Box", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
   .add("General/Default", () => (
@@ -50,7 +50,7 @@ storiesOf("Work|Dialogue Box", module)
           <TextInput inputLabel="Password" placeholder="Password" />
           <Bar
             center={
-              <Title title="Forget Password?" size="tiny" weight="light" />
+              <Title text="Forget Password?" size="tiny" weight="light" />
             }
           />
         </Section>
@@ -113,7 +113,7 @@ storiesOf("Work|Dialogue Box", module)
       title="Edit User List for Role"
       content={
         <Section>
-          <Title title="Role: Developer" type="info" />
+          <Title text="Role: Developer" type="info" />
           <SelectMenu
             multiSelect="true"
             inputLabel="+ Add Users"
@@ -158,7 +158,7 @@ storiesOf("Work|Dialogue Box", module)
       title="Edit Files Role"
       content={
         <Section>
-          <Title title="Role: Developer" type="info" />
+          <Title text="Role: Developer" type="info" />
           <SelectMenu
             multiSelect="true"
             inputLabel="+ Files"

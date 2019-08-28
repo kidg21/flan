@@ -6,11 +6,14 @@ import { Piece } from "layout/Card";
 import Title from "base/Typography";
 import Menu from "blocks/Menu";
 
-function NavigationPanelHeader({ id, title, onClick, menuData }) {
+function NavigationPanelHeader({
+  id, title, onClick, menuData,
+}) {
   return (
     <Piece id={id}>
       <Bar
-        left={<Icon icon="left" size="lg" onClick={onClickLeftIcon} />}
+        padding="3x"
+        left={<Icon icon="left" size="lg" onClick={onClick} />}
         center={<Title text={title} weight="bold" />}
         right={<Menu data={menuData} position="bottomLeft" type="edit" />}
       />

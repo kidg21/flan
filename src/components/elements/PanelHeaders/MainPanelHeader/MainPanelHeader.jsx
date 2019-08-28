@@ -11,7 +11,8 @@ function MainPanelHeader({ id, title, menuData }) {
   return (
     <Piece id={id}>
       <Bar
-        left={<Title title={title} weight="bold" />}
+      padding="3x"
+        left={<Title text={title} weight="bold" />}
         right={<Menu data={menuData} position="bottomLeft" type="edit" />}
       />
     </Piece>

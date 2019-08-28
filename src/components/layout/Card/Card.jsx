@@ -60,6 +60,7 @@ function Piece({
   id,
   hover,
   children,
+  padding,
   className,
   /** TODO: add 'background' and 'interaction' props */
   // type,
@@ -95,8 +96,10 @@ function Piece({
   return (
     <CardPiece
       id={id}
+      padding={padding}
       className={className}
       hover={hover}
+
       /** TODO: add 'background' and 'interaction' props */
       // textColor={textColor}
       // backgroundColor={backgroundColor}
@@ -125,6 +128,7 @@ function CardList({ id, children, columns, gap, rows }) {
 Piece.propTypes = {
   id: PropTypes.string,
   children: PropTypes.node,
+  padding: PropTypes.node,
   className: PropTypes.string,
 };
 Card.propTypes = {

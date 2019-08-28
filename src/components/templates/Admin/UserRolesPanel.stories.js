@@ -2,43 +2,38 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
-import UserRoles, { UserEntry } from "elements/UserRoles";
 import Bar from "blocks/Bar";
+import Container from "atoms/Container";
+import Card, { Piece } from "layout/Card";
 import Button from "atoms/Button";
 import Grid from "layout/Grid";
 import Panel, { PanelSection } from "layout/Panel";
+import Search from "blocks/Search";
 
-const Options = [
-  { value: "Marketing", label: "Marketing" },
-  { value: "Acquisitions", label: "Acquisitions" },
-  { value: "Developer", label: "Builder / Developer" },
-  { value: "Admin", label: "Admin" },
-];
+// const Options = [
+//   { value: "Marketing", label: "Marketing" },
+//   { value: "Acquisitions", label: "Acquisitions" },
+//   { value: "Developer", label: "Builder / Developer" },
+//   { value: "Admin", label: "Admin" },
+// ];
 
 storiesOf("Templates|Admin", module).add("User Edit Roles", () => {
   return React.createElement(() => {
     return (
       <Panel>
-        <MainPanelHeader title="User Roles / Permissions" />
-        <PanelSection body>
-          <UserRoles
-            right={
-              <Grid columns="2">
-                <Button buttonLabel="Add User" />
-                <Button buttonLabel="Add/Edit Roles" />
-              </Grid>
-            }
-          >
-            <UserEntry user="Bob" options={Options} />
-            <UserEntry user="Carol" options={Options} />
-            <UserEntry user="Jane" options={Options} />
-            <UserEntry user="Mark" options={Options} />
-            <UserEntry user="Ben" options={Options} />
-            <UserEntry user="Doug" options={Options} />
-          </UserRoles>
-        </PanelSection>
-        <PanelSection>
-          <Bar center={<Button buttonLabel="Apply" />} />
+        <MainPanelHeader title="User Roles" />
+        <PanelSection >
+          <Bar
+            left={<Search placeholder="Search for a User" />}
+            right={<Button buttonLabel="+Add User" />}
+          />
+          <Container setHeight="100px" >
+            <Bar left="Name" />
+            <Bar left="Name" />
+            <Bar left="Name" />
+            <Bar left="Name" />
+            <Bar left="Name" />
+          </Container>
         </PanelSection>
       </Panel>
     );

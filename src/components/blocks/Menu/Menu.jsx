@@ -21,9 +21,9 @@ const EditMenu = styled.ul`
   padding: 0.25em;
   padding-top: 0.8em;
   padding-bottom: 0.8em;
-  bottom: ${props => props.badgeBottom || ""};
-  left: ${props => props.badgeLeft || ""};
-  transform: ${props => props.badgeTransform || ""};
+  bottom: ${(props) => { return props.badgeBottom || ""; }};
+  left: ${(props) => { return props.badgeLeft || ""; }};
+  transform: ${(props) => { return props.badgeTransform || ""; }};
   width: auto;
   min-width: 10em;
   position: absolute;
@@ -43,14 +43,16 @@ const Item = styled.li`
   }
 `;
 
-function Menu({ id, data, type, object, onClick, position }) {
+function Menu({
+ id, data, type, object, onClick, onClickLink, position 
+}) {
   let badgeLeft = "100%";
   let badgeBottom = "100%";
   let badgeTransform;
   const [visibility, setVisibility] = useState(false);
   switch (type) {
     case "edit":
-      object = <Icon icon={["far", "ellipsis-v"]} size="lg" />;
+      object = <Icon icon="options" size="lg" />;
       break;
     default:
       break;
@@ -102,11 +104,13 @@ function Menu({ id, data, type, object, onClick, position }) {
             badgeLeft={badgeLeft}
             badgeBottom={badgeBottom}
           >
-            {data.map(item => (
-              <Item key={item.id} onClick={item.onClick}>
-                <Title title={item.name} weight="normal" />
+            {data.map((item) => { 
+return (
+              <Item key={item.id} onClick={item.onClickLink}>
+                <Title text={item.name} weight="normal" />
               </Item>
-            ))}
+            );
+ })}
           </EditMenu>
         </Card>
       ) : null}
@@ -119,6 +123,7 @@ Menu.propTypes = {
   object: PropTypes.node,
   type: PropTypes.any,
   onClick: PropTypes.func,
+  onClickLink: PropTypes.func,
   data: PropTypes.any.isRequired,
   position: PropTypes.oneOf([
     "topLeft",

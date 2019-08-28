@@ -5,12 +5,10 @@ import Icon from "atoms/Icon";
 import IconBlock from "blocks/IconBlock";
 import Bar from "blocks/Bar";
 import Card, { Piece } from "layout/Card";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Title from "base/Typography";
 
-const Arrow = styled(FontAwesomeIcon)`
-  transform: ${props =>
-    props.leftOnscreen ? "rotate(-180deg)" : "rotate(0deg)"};
+const Arrow = styled(Icon)`
+  transform: ${(props) => { return (props.leftOnscreen ? "rotate(-180deg)" : "rotate(0deg)"); }};
   transition: all 0.3s ease;
 `;
 
@@ -22,9 +20,10 @@ function InformationCardBar({ id, title, count }) {
   return (
     <Piece id={id}>
       <Bar
+      padding="2x"
         onClick={toggleLeft}
         left={<Title text={title} count={count} weight="normal" />}
-        right={<Arrow leftOnscreen={leftOnscreen} icon="up" />}
+        right={<Arrow icon="up" leftOnscreen={leftOnscreen} />}
       />
     </Piece>
   );
