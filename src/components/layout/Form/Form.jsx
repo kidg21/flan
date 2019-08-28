@@ -11,8 +11,7 @@ const Form = styled.form`
   flex: auto;
   align-content: flex-start;
   padding: 1rem 1.5rem;
-  background-color: ${props =>
-    props.bg_light ? colors.grey_light : colors.white};
+  background-color: ${props => (props.bg_light ? colors.grey_light : colors.white)};
   ${props =>
     props.dark &&
     css`
@@ -83,7 +82,9 @@ const Label = styled.label`
   }
 `;
 const InputLabel = props => (
-  <Label isRequired={props.isRequired}>{props.inputLabel}</Label>
+  <Label isRequired={props.isRequired} className={props.className}>
+    {props.inputLabel}{" "}
+  </Label>
 );
 
 const Help = styled.label`
