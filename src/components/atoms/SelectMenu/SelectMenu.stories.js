@@ -47,7 +47,7 @@ storiesOf("Atoms|SelectMenu", module)
         isLoading={boolean("Loading", false)}
         disabled={boolean("Disabled", false)}
         error={boolean("Error", false)}
-        errorMessage={text(
+        errorText={text(
           "Error Text",
           "Stay with my, buddy...we can fix this!"
         )}

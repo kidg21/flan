@@ -7,9 +7,6 @@ import { DisabledContext } from "States";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
 
 const CalendarContainer = styled(Grid)`
-  /* display: grid;
-  grid-gap: 0.35rem;
-  align-content: flex-start; */
   color: ${(props) => {
     return props.inputTextColor || "";
   }};
@@ -23,58 +20,56 @@ const Input = styled.input`
   background-color: ${(props) => {
     return props.inputFillColor || "";
   }};
-  caret-color: ${(props) => {
-    return props.inputCaretColor || "";
-  }};
   min-height: 2.75rem;
   padding: 0.5rem 0.75rem;
-  resize: vertical;
-  ::placeholder {
-    color: ${(props) => {
-    return props.placeholderColor || "";
-  }};
-  }
+  color: inherit;
   &:hover {
     border-color: ${(props) => {
     return props.inputBorderColorHover || colors.grey_40;
   }};
-    }
   }
   &:focus {
     border-color: ${(props) => {
     return props.inputBorderColorHover || colors.success;
   }};
-  /* ::-webkit-datetime-edit-day-field:focus,
-::-webkit-datetime-edit-month-field:focus,
-::-webkit-datetime-edit-year-field:focus, */
-    ::selection {
-      background-color: ${(props) => {
+    &::-webkit-datetime-edit-day-field,
+    &::-webkit-datetime-edit-week-field,
+    &::-webkit-datetime-edit-month-field,
+    &::-webkit-datetime-edit-year-field,
+    &::-webkit-datetime-edit-hour-field,
+    &::-webkit-datetime-edit-minute-field,
+    &::-webkit-datetime-edit-second-field,
+    &::-webkit-datetime-edit-millisecond-field,
+    &::-webkit-datetime-edit-ampm-field,
+    &::-webkit-datetime-edit-text {
+      color: ${(props) => {
+    return props.inputFieldColor || "";
+  }};
+      &:focus {
+        background-color: ${(props) => {
     return props.inputSelectColor || "";
   }};
-      color: ${(props) => {
-    return props.inputTextColor || colors.white;
-  }};
+      }
     }
+  }
+  &[disabled] {
+    color: ${(props) => {
+    return props.inputFieldColor || "";
+  }};
   }
 `;
 
 function Calendar({
   id,
-  date,
-  time,
   type,
   pattern,
   value,
-  helpText,
-  label,
-  // inputLabel,
+  inputLabel,
   isRequired,
-  placeholder,
-  // helpText,
-  // errorText,
+  helpText,
+  errorText,
   state,
   disabled,
-  // children,
   className,
 }) {
   let InputType;
@@ -82,24 +77,14 @@ function Calendar({
   let inputBorderColor;
   let inputTextColor;
   let inputBorderColorHover;
-  let inputCaretColor;
-  let placeholderColor;
+  let inputFieldColor;
   let inputSelectColor;
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (isDisabled) {
-    inputTextColor = colors.grey_40;
-    inputFillColor = colors.grey_20;
-    inputBorderColor = colors.grey_20;
-    placeholderColor = colors.grey_40;
-  }
   switch (state) {
     case "error":
       inputTextColor = colors.alert;
       inputFillColor = colors.alert_tint;
       inputBorderColor = colors.alert_light;
       inputBorderColorHover = colors.alert;
-      inputCaretColor = colors.alert;
-      placeholderColor = colors.alert_light;
       inputSelectColor = colors.alert;
       break;
     default:
@@ -107,38 +92,47 @@ function Calendar({
       inputSelectColor = colors.success;
       break;
   }
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  if (isDisabled) {
+    inputTextColor = colors.grey_40;
+    inputFillColor = colors.grey_20;
+    inputBorderColor = colors.grey_20;
+    inputFieldColor = colors.grey_40;
+  }
   switch (type) {
     case "date":
       InputType = (
         <Input
-          id={id}
-          name={id}
-          type="date"
-          state={state}
           disabled={isDisabled}
-          inputFillColor={inputFillColor}
+          id={id}
           inputBorderColor={inputBorderColor}
           inputBorderColorHover={inputBorderColorHover}
-          placeholderColor={placeholderColor}
-          inputCaretColor={inputCaretColor}
+          inputFieldColor={inputFieldColor}
+          inputFillColor={inputFillColor}
           inputSelectColor={inputSelectColor}
+          name={id}
+          pattern={pattern}
+          state={state}
+          type="date"
+          value={value}
         />
       );
       break;
     case "time":
       InputType = (
         <Input
-          id={id}
-          name={id}
-          type="time"
-          state={state}
           disabled={isDisabled}
-          inputFillColor={inputFillColor}
+          id={id}
           inputBorderColor={inputBorderColor}
           inputBorderColorHover={inputBorderColorHover}
-          placeholderColor={placeholderColor}
-          inputCaretColor={inputCaretColor}
+          inputFieldColor={inputFieldColor}
+          inputFillColor={inputFillColor}
           inputSelectColor={inputSelectColor}
+          name={id}
+          pattern={pattern}
+          state={state}
+          type="time"
+          value={value}
         />
       );
       break;
@@ -146,30 +140,32 @@ function Calendar({
       InputType = (
         <Grid columns="2">
           <Input
-            id={id}
-            name={id}
-            type="date"
-            state={state}
             disabled={isDisabled}
-            inputFillColor={inputFillColor}
+            id={id}
             inputBorderColor={inputBorderColor}
             inputBorderColorHover={inputBorderColorHover}
-            placeholderColor={placeholderColor}
-            inputCaretColor={inputCaretColor}
+            inputFieldColor={inputFieldColor}
+            inputFillColor={inputFillColor}
             inputSelectColor={inputSelectColor}
+            name={id}
+            state={state}
+            type="date"
+            pattern={pattern}
+            value={value}
           />
           <Input
-            id={id}
-            name={id}
-            type="time"
-            state={state}
             disabled={isDisabled}
-            inputFillColor={inputFillColor}
+            id={id}
             inputBorderColor={inputBorderColor}
             inputBorderColorHover={inputBorderColorHover}
-            placeholderColor={placeholderColor}
-            inputCaretColor={inputCaretColor}
+            inputFieldColor={inputFieldColor}
+            inputFillColor={inputFillColor}
             inputSelectColor={inputSelectColor}
+            name={id}
+            state={state}
+            type="time"
+            pattern={pattern}
+            value={value}
           />
         </Grid>
       );
@@ -181,27 +177,48 @@ function Calendar({
   }
   return (
     <CalendarContainer
-      id={id}
-      gap="small"
+      className={className}
       disabled={isDisabled}
-      InputType={InputType}
+      gap="small"
+      id={id}
       inputTextColor={inputTextColor}
+      InputType={InputType}
+      isRequired={isRequired}
     >
-      {label ? <InputLabel inputLabel={label} isRequired={isRequired} /> : null}
+      {inputLabel ? <InputLabel inputLabel={inputLabel} isRequired={isRequired} /> : null}
       {InputType}
       {helpText ? <HelpText helpText={helpText} /> : null}
+      {state === "error" && !disabled ? <ErrorText errorText={errorText} /> : null}
     </CalendarContainer>
   );
 }
 
 Calendar.propTypes = {
+  className: PropTypes.string,
+  disabled: PropTypes.bool,
+  errorText: PropTypes.string,
+  helpText: PropTypes.string,
   id: PropTypes.string,
-  type: PropTypes.oneOf(["date", "type", "datetime"]),
+  inputLabel: PropTypes.string,
+  isRequired: PropTypes.bool,
+  pattern: PropTypes.string,
+  state: PropTypes.oneOf(["error"]),
+  type: PropTypes.oneOf(["date", "time", "datetime"]),
+  value: PropTypes.string,
 };
 
 Calendar.defaultProps = {
+  className: null,
+  disabled: null,
+  errorText: null,
+  helpText: null,
   id: null,
+  inputLabel: null,
+  isRequired: false,
+  pattern: null,
+  state: null,
   type: "date",
+  value: null,
 };
 
 export default Calendar;

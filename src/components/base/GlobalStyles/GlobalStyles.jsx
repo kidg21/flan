@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import styledNormalize from "styled-normalize";
-import { Skeleton } from "helpers/Skeleton.jsx";
+import { Skeleton } from "helpers/Skeleton";
 // Import variables
 import { colors, fonts, fontSize } from "Variables";
 // Import Fonts
@@ -15,12 +15,12 @@ const GlobalStyles = createGlobalStyle`
 
     /* Import font resources */
     ${
-      "" /* @font-face {
+  "" /* @font-face {
         font-family: Lato;
         src: local("Lato");
         src: url(${Lato_700});
     } */
-    }
+}
 
     /* Document resets */
     html {
@@ -247,35 +247,49 @@ const GlobalStyles = createGlobalStyle`
     input[type="range"],
     textarea,
     select {
-        box-sizing: border-box;
-        width: 100%;
-        color: ${colors.grey_dark};
-        font-family: ${fonts.data};
-        letter-spacing: 1px;
-        border-radius: 5px;
-        font-size: 12px;
-        transition: border-color 0.1s linear, background 0.1s linear;
-        appearance: none;
-        
+      box-sizing: border-box;
+      width: 100%;
+      color: ${colors.grey_dark};
+      font-family: ${fonts.data};
+      letter-spacing: 1px;
+      border-radius: 5px;
+      font-size: 12px;
+      transition: border-color 0.1s linear, background 0.1s linear;
+      appearance: none;
+      &:focus {
+        outline: none;
+      }
+      &[disabled],
+      &[readonly] {
+        cursor: not-allowed;
+        pointer-events: none;
+        user-select: none;
+        background-color: ${colors.grey_20};
+      }
+      ::-webkit-datetime-edit-day-field,
+      ::-webkit-datetime-edit-week-field,
+      ::-webkit-datetime-edit-month-field,
+      ::-webkit-datetime-edit-year-field,
+      ::-webkit-datetime-edit-hour-field,
+      ::-webkit-datetime-edit-minute-field,
+      ::-webkit-datetime-edit-second-field,
+      ::-webkit-datetime-edit-millisecond-field,
+      ::-webkit-datetime-edit-ampm-field,
+      ::-webkit-datetime-edit-text {
         &:focus {
-            outline: none;
+          color: ${colors.white};
+          background-color: ${colors.success};
         }
-        &[disabled],
-        &[readonly] {
-            cursor: not-allowed;
-            pointer-events: none;
-            user-select: none;
-            background-color: ${colors.grey_20};
-        }
+      }
     }
     input[type="checkbox"],
     input[type="radio"] {
-        &[disabled],
-        &[readonly] {
-            cursor: not-allowed;
-            pointer-events: none;
-            user-select: none;
-        }
+      &[disabled],
+      &[readonly] {
+        cursor: not-allowed;
+        pointer-events: none;
+        user-select: none;
+      }
     }
     `;
 

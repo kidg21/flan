@@ -10,8 +10,8 @@ import {
   radios,
 } from "@storybook/addon-knobs";
 import TextInput from "atoms/TextInput";
-import Panel, { PanelSection } from "../../layout/Panel/Panel";
-import Form, { Section, SectionName } from "../../layout/Form/Form";
+import Panel, { PanelSection } from "layout/Panel";
+import Form, { Section, SectionName } from "layout/Form";
 import TextInputNotes from "./TextInput.md";
 
 storiesOf("Atoms|TextInput", module)
@@ -58,7 +58,7 @@ storiesOf("Atoms|TextInput", module)
           disabled={boolean("Disabled", false)}
           placeholder={text("Placeholder Text", "I am just keeping things warm")}
           helpText={text("Help Text", "Have you been helped yet?")}
-          errorMessage={text(
+          errorText={text(
             "Error Text",
             "Stay with my, buddy...we can fix this!",
           )}
@@ -113,7 +113,7 @@ storiesOf("Atoms|TextInput", module).add("The TextInput Family", () => {
               inputLabel="TextInput ( Error )"
               placeholder="I am just keeping things warm"
               helpText="This help text has been passed through a prop!"
-              errorMessage="This error text has been passed through a prop!"
+              errorText="This error text has been passed through a prop!"
               state="error"
             />
           </Section>
