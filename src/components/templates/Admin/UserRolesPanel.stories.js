@@ -27,7 +27,29 @@ storiesOf("Templates|Admin", module).add("User Edit Roles", () => {
             left={<Search placeholder="Search for a User" />}
             right={<Button buttonLabel="+Add User" />}
           />
-          <Container setHeight="100px" >
+          <Container setHeight="250px" >
+            <Bar left="Name" />
+            <Bar left="Name" />
+            <Bar left="Name" />
+            <Bar left="Name" />
+            <Bar left="Name" />
+          </Container>
+        </PanelSection>
+      </Panel>
+    );
+  });
+})
+.add("Edit Roles Files", () => {
+  return React.createElement(() => {
+    return (
+      <Panel>
+        <MainPanelHeader title="Role Permissions" />
+        <PanelSection >
+          <Bar
+            left={<Search placeholder="Search for a Role" />}
+            right={<Button buttonLabel="+Add Role" />}
+          />
+          <Container setHeight="250px" >
             <Bar left="Name" />
             <Bar left="Name" />
             <Bar left="Name" />
@@ -39,3 +61,4 @@ storiesOf("Templates|Admin", module).add("User Edit Roles", () => {
     );
   });
 });
+
