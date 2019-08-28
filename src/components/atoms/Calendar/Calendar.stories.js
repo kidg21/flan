@@ -2,7 +2,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
-import { withKnobs, text, boolean, select, optionsKnob as options } from "@storybook/addon-knobs";
+import { withKnobs, text, boolean, date, optionsKnob as options } from "@storybook/addon-knobs";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
 import Calendar from "atoms/Calendar";

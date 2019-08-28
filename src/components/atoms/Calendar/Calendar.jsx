@@ -60,17 +60,19 @@ const Input = styled.input`
 `;
 
 function Calendar({
+  className,
+  disabled,
+  errorText,
+  helpText,
   id,
-  type,
-  pattern,
-  value,
   inputLabel,
   isRequired,
-  helpText,
-  errorText,
+  max,
+  min,
+  pattern,
   state,
-  disabled,
-  className,
+  type,
+  value,
 }) {
   let InputType;
   let inputFillColor;
@@ -110,6 +112,8 @@ function Calendar({
           inputFieldColor={inputFieldColor}
           inputFillColor={inputFillColor}
           inputSelectColor={inputSelectColor}
+          min={min}
+          max={max}
           name={id}
           pattern={pattern}
           state={state}
@@ -147,6 +151,8 @@ function Calendar({
             inputFieldColor={inputFieldColor}
             inputFillColor={inputFillColor}
             inputSelectColor={inputSelectColor}
+            min={min}
+            max={max}
             name={id}
             state={state}
             type="date"
@@ -201,6 +207,10 @@ Calendar.propTypes = {
   id: PropTypes.string,
   inputLabel: PropTypes.string,
   isRequired: PropTypes.bool,
+  /** Sets or returns the value of the max attribute of the date field */
+  max: PropTypes.string,
+  /** Sets or returns the value of the min attribute of the date field */
+  min: PropTypes.string,
   pattern: PropTypes.string,
   state: PropTypes.oneOf(["error"]),
   type: PropTypes.oneOf(["date", "time", "datetime"]),
@@ -215,6 +225,8 @@ Calendar.defaultProps = {
   id: null,
   inputLabel: null,
   isRequired: false,
+  max: null,
+  min: null,
   pattern: null,
   state: null,
   type: "date",
