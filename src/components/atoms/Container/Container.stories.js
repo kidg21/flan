@@ -9,5 +9,5 @@ storiesOf("Atoms|Container", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
   .add("Container", () => {
-    return <Container setHeight="300px" />;
+    return <Container height="300px" />;
   });

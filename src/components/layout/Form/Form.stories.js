@@ -1,7 +1,8 @@
+/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import Panel, { PanelSection } from "../Panel/Panel";
-import Form, { Title, Section, SectionName, InputGroup } from "./Form";
+import Form, { Header, Section, SectionName, InputGroup } from "./Form";
 import Checkbox from "../../atoms/Checkbox/Checkbox";
 
 const cbox_1 = {
@@ -35,7 +36,7 @@ storiesOf("Layout|Form", module).add("Form Layout", () => (
   <Panel>
     <PanelSection body>
       <Form>
-        <Title>Form Title</Title>
+        <Header>Form Header</Header>
         <Section>
           <SectionName>Section Name</SectionName>
           <InputGroup>
@@ -56,7 +57,7 @@ storiesOf("Layout|Form", module).add("Form Layout", () => (
             <Checkbox {...cbox_6} />
           </InputGroup>
         </Section>
-        <Title />
+        <Header />
         <Section>
           <SectionName />
           <InputGroup>

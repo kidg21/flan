@@ -1,9 +1,8 @@
 import React from "react";
-import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import Bar from "blocks/Bar";
-import Card, { Piece } from "layout/Card";
+import { Piece } from "layout/Card";
 import Title from "base/Typography";
 import Menu from "blocks/Menu";
 

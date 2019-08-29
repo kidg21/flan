@@ -13,15 +13,6 @@ const GlobalStyles = createGlobalStyle`
     /* Browser resets */
     ${styledNormalize}
 
-    /* Import font resources */
-    ${
-      "" /* @font-face {
-        font-family: Lato;
-        src: local("Lato");
-        src: url(${Lato_700});
-    } */
-    }
-
     /* Document resets */
     html {
         box-sizing: border-box;

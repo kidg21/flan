@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
-import { fonts, colors, shadows } from "Variables";
+import { colors } from "Variables";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 import Grid from "layout/Grid";
 
@@ -17,7 +17,7 @@ const Form = styled.form`
     props.dark &&
     css`
       color: ${colors.grey_light};
-      background-color: ${props => colors.grey_dark};
+      background-color: ${colors.grey_dark};
       * {
         color: ${colors.grey_light} !important;
       }
@@ -31,7 +31,7 @@ const Form = styled.form`
   }
 `;
 
-const Title = styled.h3`
+const Header = styled.h3`
   color: ${colors.grey_60};
   line-height: normal;
   letter-spacing: 2px;
@@ -127,7 +127,7 @@ ErrorText.propTypes = {
 
 export {
   Form as default,
-  Title,
+  Header,
   CenteredSection,
   Section,
   SectionName,
