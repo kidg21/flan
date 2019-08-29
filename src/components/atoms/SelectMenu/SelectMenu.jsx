@@ -173,6 +173,7 @@ function SelectMenu({
   options,
   selectOptions,
   disabled,
+  error,
   inputLabel,
   isRequired,
   helpText,
@@ -209,7 +210,7 @@ function SelectMenu({
     });
   }
 
-  const [state, setState] = useState({ selected: selectedOpts, error: errorText });
+  const [state, setState] = useState({ selected: selectedOpts, error: error ? errorText : null });
   function changeSelected(newSelection) {
     if (onChange) {
       onChange(state, { selected: newSelection, ...state }, setState);
@@ -222,7 +223,7 @@ function SelectMenu({
     <SelectMenuContainer
       isRequired={isRequired}
       disabled={isDisabled} // input attribute
-      error={state.error != null && state.error.length > 0}
+      error={state.error != null}
       displayInline={displayInline}
     >
       {inputLabel ? (
@@ -269,6 +270,7 @@ SelectMenu.propTypes = {
   inputLabel: PropTypes.string,
   isRequired: PropTypes.bool,
   disabled: PropTypes.bool,
+  error: PropTypes.bool,
   multiSelect: PropTypes.bool,
   isClearable: PropTypes.bool,
   isSearchable: PropTypes.bool,
@@ -288,6 +290,7 @@ SelectMenu.defaultProps = {
   inputLabel: null,
   isRequired: false,
   disabled: false,
+  error: false,
   multiSelect: false,
   isClearable: true,
   isSearchable: true,
@@ -295,7 +298,7 @@ SelectMenu.defaultProps = {
   displayInline: false,
   isRtl: false,
   helpText: null,
-  errorText: null,
+  errorText: "Error: Invalid Selection!",
   onChange: null,
 };
 
