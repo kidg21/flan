@@ -23,10 +23,8 @@ function InformationCardBar({
 }) {
   const [expanded, setExpanded] = useState(open);
   function toggleOn() {
-    setExpanded((state) => {
-      const changeState = onChange ? onChange({ open: !state }) : true;
-      return typeof changeState !== "boolean" || changeState ? !state : state;
-    });
+    if (onChange) onChange(expanded, !expanded, setExpanded);
+    else setExpanded((state) => { return !state; });
   }
 
   return (

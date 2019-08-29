@@ -92,7 +92,7 @@ const Help = styled.label`
   font-size: smaller;
   letter-spacing: 1px;
 `;
-const HelpText = props => <Help>{props.helpText}</Help>;
+const HelpText = props => <Help>{props.children || props.helpText}</Help>;
 
 const Error = styled.label`
   grid-column: 1 / -1;
@@ -101,7 +101,7 @@ const Error = styled.label`
   font-weight: 700;
   letter-spacing: 1px;
 `;
-const ErrorText = props => <Error>{props.errorText}</Error>;
+const ErrorText = props => <Error>{props.children || props.errorText}</Error>;
 
 const InputGroup = styled(Grid)`
   /* Prototype Content - displays when a Form is empty */

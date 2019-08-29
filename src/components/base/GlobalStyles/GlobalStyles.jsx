@@ -13,6 +13,8 @@ const GlobalStyles = createGlobalStyle`
     /* Browser resets */
     ${styledNormalize}
 
+    /** TODO: Font imports */
+
     /* Document resets */
     html {
         box-sizing: border-box;

@@ -170,7 +170,6 @@ function SelectMenu({
   name,
   placeholder,
   displayInline,
-  error,
   options,
   selectOptions,
   disabled,
@@ -210,17 +209,20 @@ function SelectMenu({
     });
   }
 
-  const [selected, setSelected] = useState(selectedOpts);
-  function changeSelected(state) {
-    const changeState = onChange ? onChange(state) : true;
-    if (typeof changeState !== "boolean" || changeState) setSelected(state);
+  const [state, setState] = useState({ selected: selectedOpts, error: errorText });
+  function changeSelected(newSelection) {
+    if (onChange) {
+      onChange(state, { selected: newSelection, ...state }, setState);
+    } else {
+      setState({ selected: newSelection, error: null });
+    }
   }
 
   return (
     <SelectMenuContainer
       isRequired={isRequired}
       disabled={isDisabled} // input attribute
-      error={error}
+      error={state.error != null && state.error.length > 0}
       displayInline={displayInline}
     >
       {inputLabel ? (
@@ -232,7 +234,7 @@ function SelectMenu({
         placeholder={placeholder} // input attribute
         styles={selectStyles}
         options={options}
-        value={selected}
+        value={state.selected}
         isSearchable={isSearchable}
         isClearable={isClearable}
         isMulti={multiSelect}
@@ -242,9 +244,9 @@ function SelectMenu({
         onChange={changeSelected}
       />
       {/* Help Text */}
-      {helpText ? <HelpText helpText={helpText} /> : null}
+      {helpText ? <HelpText>{helpText}</HelpText> : null}
       {/* Error Message (required) */}
-      {error ? <ErrorText errorText={errorText} /> : null}
+      {state.error ? <ErrorText>{state.error}</ErrorText> : null}
     </SelectMenuContainer>
   );
 }
@@ -268,7 +270,6 @@ SelectMenu.propTypes = {
   isRequired: PropTypes.bool,
   disabled: PropTypes.bool,
   multiSelect: PropTypes.bool,
-  error: PropTypes.bool,
   isClearable: PropTypes.bool,
   isSearchable: PropTypes.bool,
   isLoading: PropTypes.bool,
@@ -288,7 +289,6 @@ SelectMenu.defaultProps = {
   isRequired: false,
   disabled: false,
   multiSelect: false,
-  error: false,
   isClearable: true,
   isSearchable: true,
   isLoading: false,
