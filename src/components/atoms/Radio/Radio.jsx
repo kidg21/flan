@@ -3,31 +3,39 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import { colors } from "Variables";
 import { DisabledContext } from "States";
+import Grid from "layout/Grid";
+
+const RadioWrapper = styled(Grid)`
+  margin-bottom: 1rem;
+`;
 
 const RadioContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-gap: 0.5rem;
+  grid-gap: 0.75rem;
+  grid-template-areas: ${(props) => {
+    return props.alignInput || "";
+  }};
   align-items: inherit;
-  color: ${props => {
-    return props.error ? colors.alert : "";
+  color: ${(props) => {
+    return props.inputTextColor || "";
   }};
   &[disabled],
   &[readonly] {
     cursor: not-allowed;
     pointer-events: none;
     user-select: none;
-    color: ${colors.grey_40};
   }
 `;
 
 const RadioInput = styled.input.attrs({ type: "radio" })`
+  grid-area: input;
   border: 1px solid;
-  border-color: ${props => {
-    return props.error ? colors.alert_light : colors.grey_40;
+  background-color: ${(props) => {
+    return props.fillColor || colors.white;
   }};
-  background-color: ${props => {
-    return props.disabled ? colors.grey_20 : colors.white;
+  border-color: ${(props) => {
+    return props.borderColor || colors.grey_40;
   }};
   width: 1rem;
   height: 1rem;
@@ -35,62 +43,123 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
   cursor: pointer;
   -webkit-appearance: none;
   &:checked {
-    background-color: ${props => {
-      return props.error ? colors.alert_tint : colors.success_light;
-    }};
-    border-color: ${props => {
-      return props.error ? colors.alert_light : colors.success;
-    }};
+    background-color: ${(props) => {
+    return props.fillColorChecked || colors.success_light;
+  }};
+    border-color: ${(props) => {
+    return props.borderColorChecked || colors.success;
+  }};
   }
   &:focus {
-    border: 1px solid ${colors.anchor};
+    border-color: ${colors.success};
     outline: none;
   }
 `;
 
 const RadioLabel = styled.label`
+  grid-area: label;
+  color: inherit;
   user-select: none;
-  font-family: Arial;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: normal;
   cursor: pointer;
 `;
 
-function Radio({ id, name, label, value, error, onChange, checked, disabled }) {
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+function RadioGroup({
+  id, columns, onChange, children,
+}) {
   return (
-    <RadioContainer
-      disabled={isDisabled} // input attribute>
-      error={error} // input attribute>
-    >
+    <RadioWrapper id={id} columns={columns} onChange={onChange}>
+      {children}
+    </RadioWrapper>
+  );
+}
+
+function Radio({
+  id, label, name, value, type, align, checked, disabled,
+}) {
+  let inputTextColor;
+  let fillColor;
+  let borderColor;
+  let fillColorChecked;
+  let borderColorChecked;
+  let alignInput;
+  switch (type) {
+    case "error":
+      inputTextColor = colors.alert;
+      fillColor = colors.alert_tint;
+      borderColor = inputTextColor;
+      fillColorChecked = colors.alert_tint;
+      borderColorChecked = colors.alert;
+      break;
+    default:
+      break;
+  }
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  if (isDisabled) {
+    inputTextColor = colors.grey_40;
+    fillColor = colors.grey_20;
+    borderColor = inputTextColor;
+  }
+  switch (align) {
+    case "right":
+      alignInput = "'label input'";
+      break;
+    default:
+      alignInput = "'input label'";
+      break;
+  }
+  return (
+    <RadioContainer inputTextColor={inputTextColor} disabled={isDisabled} alignInput={alignInput}>
       <RadioInput
         id={id}
         name={name}
-        onChange={onChange}
-        checked={checked}
         value={value}
-        disabled={isDisabled}
-        error={error} // input attribute>
+        checked={checked}
+        fillColor={fillColor}
+        borderColor={borderColor}
+        fillColorChecked={fillColorChecked}
+        borderColorChecked={borderColorChecked}
       />
       <RadioLabel htmlFor={id}>{label}</RadioLabel>
     </RadioContainer>
   );
 }
-Radio.propTypes = {
-  /** This is the Left nav command. */
-  id: PropTypes.string,
 
-  /** This is nav Title.  It is required. */
-  label: PropTypes.string.isRequired,
-  /** This is the Right nav command. */
-  name: PropTypes.string.isRequired,
-  value: PropTypes.string,
+RadioGroup.propTypes = {
+  id: PropTypes.string,
   onChange: PropTypes.func,
-  checked: PropTypes.bool,
-  disabled: PropTypes.bool,
-  error: PropTypes.bool,
+  columns: PropTypes.oneOf(["auto (default)", "1", "2", "3", "4", "5", "6"]),
+  children: PropTypes.node,
 };
 
-export { Radio as default };
+RadioGroup.defaultProps = {
+  id: null,
+  onChange: null,
+  columns: null,
+  children: null,
+};
+
+Radio.propTypes = {
+  id: PropTypes.string,
+  label: PropTypes.string.isRequired,
+  /** The name property sets or returns the value of the name attribute of a radio button.
+   * You define radio button groups with the name property (radio buttons with the same name belong to the same group). */
+  name: PropTypes.string.isRequired,
+  /** The value property sets or returns the value of the value attribute of the radio button.
+   * Define different values for radio buttons in the same group, to identify (on the server side) which one was checked.  */
+  value: PropTypes.string,
+  type: PropTypes.string,
+  align: PropTypes.oneOf(["default", "right"]),
+  checked: PropTypes.bool,
+  disabled: PropTypes.bool,
+};
+
+Radio.defaultProps = {
+  id: null,
+  value: null,
+  type: null,
+  align: null,
+  checked: null,
+  disabled: false,
+};
+
+export { Radio as default, RadioGroup };

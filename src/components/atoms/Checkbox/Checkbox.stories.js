@@ -3,11 +3,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
-import {
-  withKnobs,
-  boolean,
-  optionsKnob as options,
-} from "@storybook/addon-knobs";
+import { withKnobs, boolean, optionsKnob as options } from "@storybook/addon-knobs";
 import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
 import CheckboxNotes from "./Checkbox.md";
 
@@ -132,7 +128,7 @@ storiesOf("Atoms|Checkbox", module)
   .add("Checkbox (States)", () => {
     return (
       <CheckboxGroup>
-        <Checkbox id="default" label="Default" />
+        <Checkbox id="default" label="Default" checked={false} />
         <Checkbox id="selected" label="Selected" checked />
         <Checkbox id="error" label="Error" type="error" />
         <Checkbox id="disabled" label="Disabled" disabled />

@@ -205,15 +205,17 @@ const GlobalStyles = createGlobalStyle`
     }
 /* Labels */
     label {
-        font-family: ${fonts.data};
-        font-size: smaller;
-          &:empty {
-            &:before {
-              ${Skeleton};
-              height: 1.3em;
-              width: 5rem;
-            }
-          }
+      font-family: ${fonts.data};
+      font-size: smaller;
+      letter-spacing: 1px;
+      color: ${colors.grey_dark};
+      &:empty {
+        &:before {
+          ${Skeleton};
+          height: 1.3em;
+          width: 5rem;
+        }
+      }
     }
 /* Buttons */
     button {

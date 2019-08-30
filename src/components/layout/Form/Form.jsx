@@ -62,15 +62,7 @@ const SectionName = styled.h5`
   margin-bottom: 0;
 `;
 const Label = styled.label`
-  display: flex;
-  font-family: Arial;
-  justify-content: space-between;
-  align-items: center;
-  grid-column: 1 / -1;
   user-select: none;
-  font-size: smaller;
-  font-weight: 400;
-  letter-spacing: 1px;
   color: inherit;
   cursor: pointer;
   &:after {
