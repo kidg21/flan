@@ -100,7 +100,7 @@ const ToggleWrapper = styled.label`
   }
 `;
 
-function Toggle({ checked, disabled, ...props }) {
+function Toggle({ checked, disabled }) {
   let checkboxColor;
   let fillColor;
   let borderColor;
@@ -111,7 +111,7 @@ function Toggle({ checked, disabled, ...props }) {
     borderColor = checkboxColor;
   }
   const [isChecked, setChecked] = useState(checked);
-  const { onChange, ...remainingProps } = props;
+  const { onChange, ...remainingProps } = (checked, disabled);
   function onClick(e) {
     setChecked((state) => {
       return !state;
@@ -150,12 +150,12 @@ const ToggleContainer = styled.div`
 `;
 
 function Switch({
-  checked, disabled, id, isRequired, inputLabel, ...props
+  checked, disabled, id, isRequired, inputLabel,
 }) {
   return (
     <ToggleContainer inputLabel={inputLabel} isRequired={isRequired}>
       <ToggleWrapper id={id} disabled={disabled}>
-        <Toggle id={id} checked={checked} disabled={disabled} {...props} />
+        <Toggle id={id} checked={checked} disabled={disabled} />
       </ToggleWrapper>
       {inputLabel ? <ToggleLabel htmlFor={id} inputLabel={inputLabel} disabled={disabled} /> : null}
     </ToggleContainer>
