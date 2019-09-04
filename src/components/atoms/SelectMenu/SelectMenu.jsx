@@ -182,7 +182,6 @@ function SelectMenu({
   multiSelect,
   isLoading,
   isRtl,
-  errorText,
   onChange,
 }) {
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
@@ -210,12 +209,22 @@ function SelectMenu({
     });
   }
 
-  const [state, setState] = useState({ selected: selectedOpts, error: error ? errorText : null });
-  function changeSelected(newSelection) {
+  const [state, setState] = useState({ selected: selectedOpts, error: error });
+  function changeSelected(pNewSelection, { action }) {
+    // If this would leave us with no selection, default to initial value.
+    let newSelection = pNewSelection;
+    if ((!newSelection || newSelection.length === 0) && isRequired) {
+      if (multiSelect && action !== "clear") {
+        newSelection = state.selected;
+      } else {
+        newSelection = selectedOpts;
+      }
+    }
+
     if (onChange) {
-      onChange(state, { selected: newSelection, ...state }, setState);
+      onChange(state, { ...state, selected: newSelection }, setState);
     } else {
-      setState({ selected: newSelection, error: null });
+      setState({ ...state, selected: newSelection });
     }
   }
 
@@ -223,7 +232,7 @@ function SelectMenu({
     <SelectMenuContainer
       isRequired={isRequired}
       disabled={isDisabled} // input attribute
-      error={state.error != null}
+      error={state.error !== null}
       displayInline={displayInline}
     >
       {inputLabel ? (
@@ -263,14 +272,11 @@ SelectMenu.propTypes = {
       value: PropTypes.any,
     }),
   ])).isRequired,
-  selectOptions: PropTypes.oneOfType([
-    PropTypes.array,
-    PropTypes.string,
-  ]),
+  selectOptions: PropTypes.any,
   inputLabel: PropTypes.string,
   isRequired: PropTypes.bool,
   disabled: PropTypes.bool,
-  error: PropTypes.bool,
+  error: PropTypes.string,
   multiSelect: PropTypes.bool,
   isClearable: PropTypes.bool,
   isSearchable: PropTypes.bool,
@@ -278,7 +284,6 @@ SelectMenu.propTypes = {
   displayInline: PropTypes.bool,
   isRtl: PropTypes.bool,
   helpText: PropTypes.string,
-  errorText: PropTypes.string,
   onChange: PropTypes.func,
 };
 
@@ -289,8 +294,8 @@ SelectMenu.defaultProps = {
   selectOptions: null,
   inputLabel: null,
   isRequired: false,
-  disabled: false,
-  error: false,
+  disabled: null,
+  error: null,
   multiSelect: false,
   isClearable: true,
   isSearchable: true,
@@ -298,7 +303,6 @@ SelectMenu.defaultProps = {
   displayInline: false,
   isRtl: false,
   helpText: null,
-  errorText: "Error: Invalid Selection!",
   onChange: null,
 };
 

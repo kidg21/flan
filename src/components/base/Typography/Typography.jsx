@@ -194,7 +194,7 @@ Text.propTypes = {
   font: PropTypes.oneOf(["numbers", "data"]),
   text: PropTypes.string,
   children: PropTypes.node,
-  count: PropTypes.string,
+  count: PropTypes.node,
   type: PropTypes.oneOf(["info", "success", "warning", "alert", "dark", "inverse", "light"]),
   size: PropTypes.oneOf(["tiny", "small", "large", "xlarge", "xxlarge"]),
   align: PropTypes.oneOf(["center", "right"]),

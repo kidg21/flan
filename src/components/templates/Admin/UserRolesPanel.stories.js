@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-filename-extension */
-import React from "react";
+import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
 import Bar from "blocks/Bar";
@@ -9,6 +9,10 @@ import Button from "atoms/Button";
 import Panel, { PanelSection } from "layout/Panel";
 import Search from "blocks/Search";
 import SelectMenu from "atoms/SelectMenu";
+import Command from "atoms/Command";
+import Icon from "atoms/Icon";
+import Title from "base/Typography";
+import Switch from "atoms/Switch";
 
 const roles = [
   { value: "Marketing", label: "Marketing" },
@@ -23,22 +27,83 @@ const permissions = [
   { value: ["Read", "Write"], label: "Read / Write" },
 ];
 
+const commands = [
+  { id: "manageRoles", name: "View / Edit Roles", onClickLink: () => { alert("Manage Roles!"); } },
+];
+
+const users = [
+  { name: "Ben", roles: "Developer", enabled: true },
+  { name: "Erica", roles: null },
+  { name: "Liz", roles: "Marketing", enabled: true },
+  { name: "Mark", roles: "Admin", enabled: true },
+  { name: "Patrick", roles: ["Developer", "Acquisitions"], enabled: true },
+];
+
+const rolePermissions = [{
+  role: "Marketing",
+  folders: [{
+    folder: "BDE811.Marketing",
+    permissions: ["Read"]
+  }]
+}, {
+  role: "Acquisitions",
+  folders: [{
+    folder: "BDE811.Acquisitions",
+    permissions: ["Write"],
+  }]
+}, {
+  role: "Builder / Developer",
+  folders: [{
+    folder: "BDE811.Acquisitions",
+    permissions: ["Read"],
+  }, {
+    folder: "BDE811.Developer",
+    permissions: [["Read", "Write"]]
+  }]
+}, {
+  role: "Admin",
+  folders: [{
+    folder: "BDE811.Public",
+    permissions: [["Read", "Write"]]
+  }, {
+    folder: "BDE811.Marketing",
+    permissions: [["Read", "Write"]]
+  }, {
+    folder: "BDE811.Acquisitions",
+    permissions: [["Read", "Write"]]
+  }, {
+    folder: "BDE811.Developer",
+    permissions: [["Read", "Write"]]
+  }]
+}];
+
 storiesOf("Templates|Admin", module).add("User Edit Roles", () => {
+  function userDetails() {
+    alert("User Details!");
+  }
+
+  function addUser() {
+    alert("Add User!");
+  }
+
   return React.createElement(() => {
     return (
       <Panel>
-        <MainPanelHeader title="User Roles" />
-        <PanelSection >
+        <MainPanelHeader title="User Roles" menuData={commands} />
+        <PanelSection body>
           <Bar
             left={<Search placeholder="Search for a User" />}
-            right={<Button buttonLabel="+Add User" />}
+            right={<Button label="+Add User" onClick={addUser} />}
           />
           <Container height="250px" >
-            <Bar left="Ben" right={<SelectMenu options={roles} selectOptions={["Developer"]} multiSelect />} rightWidth="50%" />
-            <Bar left="Erica" right={<SelectMenu options={roles} multiSelect />} rightWidth="50%" />
-            <Bar left="Liz" right={<SelectMenu options={roles} selectOptions={["Marketing"]} multiSelect />} rightWidth="50%" />
-            <Bar left="Mark" right={<SelectMenu options={roles} selectOptions={["Admin"]} multiSelect />} rightWidth="50%" />
-            <Bar left="Patrick" right={<SelectMenu options={roles} selectOptions={["Developer", "Acquisitions"]} multiSelect />} rightWidth="50%" />
+            {users.map((user) => {
+              const [isEnabled, setEnabled] = useState(user.enabled);
+              function toggleEnabled() {
+                setEnabled((enabled) => { return !enabled; });
+              }
+
+              return <Bar disabled={!isEnabled} left={<Command onClick={userDetails} label={user.name} />} leftWidth="5%" center={<Switch checked={isEnabled} onChange={toggleEnabled} />} centerAlign="left" right={<SelectMenu options={roles} selectOptions={user.roles} multiSelect />} rightWidth="50%" />;
+            })}
           </Container>
         </PanelSection>
       </Panel>
@@ -46,6 +111,23 @@ storiesOf("Templates|Admin", module).add("User Edit Roles", () => {
   });
 })
   .add("Edit Roles Files", () => {
+    function deleteRole(e) {
+      e.stopPropagation();
+      alert("Role Deleted!");
+    }
+
+    function deletePermission() {
+      alert("Permission Removed!");
+    }
+
+    function addPermission() {
+      alert("Permission Added!");
+    }
+
+    function addRole() {
+      alert("Add Role!");
+    }
+
     return React.createElement(() => {
       return (
         <Panel>
@@ -53,25 +135,18 @@ storiesOf("Templates|Admin", module).add("User Edit Roles", () => {
           <PanelSection >
             <Bar
               left={<Search placeholder="Search for a Role" />}
-              right={<Button buttonLabel="+Add Role" />}
+              right={<Button label="+Add Role" onClick={addRole} />}
             />
             <Container height="250px" >
-              <InformationCardBar title="Marketing" size="large">
-                <Bar padding="3x" left="BDE811.Marketing" right={<SelectMenu options={permissions} selectOptions={["Read"]} />} rightWidth="20%" />
-              </InformationCardBar>
-              <InformationCardBar title="Acquisitions" size="large">
-                <Bar padding="3x" left="BDE811.Acquisitions" right={<SelectMenu options={permissions} selectOptions={["Write"]} />} rightWidth="20%" />
-              </InformationCardBar>
-              <InformationCardBar title="Builder / Developer" size="large">
-                <Bar padding="3x" left="BDE811.Acquisitions" right={<SelectMenu options={permissions} selectOptions={["Read"]} />} rightWidth="20%" />
-                <Bar padding="3x" left="BDE811.Developer" right={<SelectMenu options={permissions} selectOptions={[["Read", "Write"]]} />} rightWidth="20%" />
-              </InformationCardBar>
-              <InformationCardBar title="Admin" size="large">
-                <Bar padding="3x" left="BDE811.Public" right={<SelectMenu options={permissions} selectOptions={[["Read", "Write"]]} />} rightWidth="20%" />
-                <Bar padding="3x" left="BDE811.Marketing" right={<SelectMenu options={permissions} selectOptions={[["Read", "Write"]]} />} rightWidth="20%" />
-                <Bar padding="3x" left="BDE811.Acquisitions" right={<SelectMenu options={permissions} selectOptions={[["Read", "Write"]]} />} rightWidth="20%" />
-                <Bar padding="3x" left="BDE811.Developer" right={<SelectMenu options={permissions} selectOptions={[["Read", "Write"]]} />} rightWidth="20%" />
-              </InformationCardBar>
+              {rolePermissions.map((role) => {
+                return (
+                  <InformationCardBar title={<Title>{role.role} <Icon icon="delete" onClick={deleteRole} /></Title>}>
+                    {role.folders.map((folder) => {
+                      return <Bar padding="3x" left={<Title>{folder.folder} <Icon icon="delete" onClick={deletePermission} /></Title>} right={<SelectMenu options={permissions} selectOptions={folder.permissions} isClearable={false} />} rightWidth="20%" />
+                    })}
+                  </InformationCardBar>
+                );
+              })}
             </Container>
           </PanelSection>
         </Panel>

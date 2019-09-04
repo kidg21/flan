@@ -55,17 +55,17 @@ storiesOf("Atoms|Command", module)
             "name",
             {
               "add to list": "add to list",
-              address: "address",
-              apn: "apn",
-              bookmark: "bookmark",
-              contacts: "contacts",
-              gps: "gps",
-              menu: "menu",
-              notifications: "notifications",
-              print: "print",
-              profile: "profile",
-              settings: "settings",
-              share: "share",
+              "address": "address",
+              "apn": "apn",
+              "bookmark": "bookmark",
+              "contacts": "contacts",
+              "gps": "gps",
+              "menu": "menu",
+              "notifications": "notifications",
+              "print": "print",
+              "profile": "profile",
+              "settings": "settings",
+              "share": "share",
               "---------------------": "",
               "Custom Command": null,
             },
@@ -76,8 +76,8 @@ storiesOf("Atoms|Command", module)
             "align",
             {
               "left ( default )": "default",
-              right: "right",
-              center: "center",
+              "right": "right",
+              "center": "center",
             },
             "default",
             { display: "radio" },
@@ -86,9 +86,9 @@ storiesOf("Atoms|Command", module)
           size={options(
             "size",
             {
-              small: "small",
+              "small": "small",
               "standard ( default )": "default",
-              large: "large",
+              "large": "large",
             },
             "default",
             { display: "radio" },
@@ -99,12 +99,12 @@ storiesOf("Atoms|Command", module)
             "icon",
             {
               "user-circle": "user-circle",
-              check: "check",
-              code: ["far", "code"],
-              flag: "flag",
-              home: "home",
-              cog: "cog",
-              phone: "phone",
+              "check": "check",
+              "code": ["far", "code"],
+              "flag": "flag",
+              "home": "home",
+              "cog": "cog",
+              "phone": "phone",
             },
             "user-circle",
             "Custom Props",
@@ -129,9 +129,9 @@ storiesOf("Atoms|Command", module)
           &apos;align&apos; prop to &apos;right&apos; to right-align the Command
           with its Icon on the right.
         </SubTitle>
-        <Command label="Icon-Left" />
-        <Command label="Icon-Top" align="center" />
-        <Command label="Icon-Right" align="right" />
+        <Command label="Icon-Left" icon="bookmark" />
+        <Command label="Icon-Top" icon="bookmark" align="center" />
+        <Command label="Icon-Right" icon="bookmark" align="right" />
       </Grid>
     );
   })
