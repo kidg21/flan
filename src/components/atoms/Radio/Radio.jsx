@@ -30,9 +30,9 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
   -webkit-appearance: none;
   &:checked {
     background-color: ${props =>
-      props.error ? colors.alert_tint : colors.success_light};
+    props.error ? colors.alert_tint : colors.success_light};
     border-color: ${props =>
-      props.error ? colors.alert_light : colors.success};
+    props.error ? colors.alert_light : colors.success};
   }
   &:focus {
     outline: none;
@@ -49,6 +49,8 @@ const RadioLabel = styled.label`
 `
 
 function Radio({ id, name, label, value, error, onChange, checked, disabled }) {
+
+  //const [state, setState] = React.useState({ id, name, label, value, error, onChange, checked, disabled });
   return (
     <RadioContainer
       disabled={disabled} // input attribute>
@@ -57,7 +59,16 @@ function Radio({ id, name, label, value, error, onChange, checked, disabled }) {
       <RadioInput
         id={id}
         name={name}
-        onChange={onChange}
+        onChange={(e) => {
+          if (typeof onChange === "function") {
+            onChange(e);
+          } 
+          // else {
+          //   console.log(state);
+          //   setState(Object.assign({}, state, { checked: !checked }));
+          //   console.log(state);
+          // }
+        }}
         checked={checked}
         value={value}
         disabled={disabled}
@@ -66,6 +77,9 @@ function Radio({ id, name, label, value, error, onChange, checked, disabled }) {
       <RadioLabel htmlFor={id}>{label}</RadioLabel>
     </RadioContainer>
   )
+}
+Radio.defaultProps = {
+  checked: false
 }
 Radio.propTypes = {
   /** This is the Left nav command. */

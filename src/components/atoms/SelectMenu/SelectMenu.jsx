@@ -152,6 +152,8 @@ function SelectMenu({
   isLoading,
   isRtl,
   errorText,
+  onChange,
+  defaultValue
 }) {
   return (
     <SelectMenuContainer
@@ -175,6 +177,8 @@ function SelectMenu({
         isDisabled={disabled}
         isLoading={isLoading}
         isRtl={isRtl}
+        onChange={onChange}
+        defaultValue={defaultValue}
       />
       {/* Help Text */}
       {helpText ? <HelpText helpText={helpText} /> : null}
@@ -199,6 +203,7 @@ SelectMenu.propTypes = {
   isLoading: PropTypes.bool,
   displayInline: PropTypes.bool,
   isRtl: PropTypes.bool,
+  onChange: PropTypes.func,
 };
 
 export default SelectMenu;
