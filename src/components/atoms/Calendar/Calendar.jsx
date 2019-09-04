@@ -74,7 +74,6 @@ function Calendar({
   type,
   value,
 }) {
-  let InputType;
   let inputFillColor;
   let inputBorderColor;
   let inputTextColor;
@@ -101,85 +100,35 @@ function Calendar({
     inputBorderColor = colors.grey_20;
     inputFieldColor = colors.grey_40;
   }
-  switch (type) {
-    case "date":
-      InputType = (
-        <Input
-          disabled={isDisabled}
-          id={id}
-          inputBorderColor={inputBorderColor}
-          inputBorderColorHover={inputBorderColorHover}
-          inputFieldColor={inputFieldColor}
-          inputFillColor={inputFillColor}
-          inputSelectColor={inputSelectColor}
-          min={min}
-          max={max}
-          name={id}
-          pattern={pattern}
-          state={state}
-          type="date"
-          value={value}
-        />
-      );
-      break;
-    case "time":
-      InputType = (
-        <Input
-          disabled={isDisabled}
-          id={id}
-          inputBorderColor={inputBorderColor}
-          inputBorderColorHover={inputBorderColorHover}
-          inputFieldColor={inputFieldColor}
-          inputFillColor={inputFillColor}
-          inputSelectColor={inputSelectColor}
-          name={id}
-          pattern={pattern}
-          state={state}
-          type="time"
-          value={value}
-        />
-      );
-      break;
-    case "datetime":
-      InputType = (
-        <Grid columns="2">
-          <Input
-            disabled={isDisabled}
-            id={id}
-            inputBorderColor={inputBorderColor}
-            inputBorderColorHover={inputBorderColorHover}
-            inputFieldColor={inputFieldColor}
-            inputFillColor={inputFillColor}
-            inputSelectColor={inputSelectColor}
-            min={min}
-            max={max}
-            name={id}
-            state={state}
-            type="date"
-            pattern={pattern}
-            value={value}
-          />
-          <Input
-            disabled={isDisabled}
-            id={id}
-            inputBorderColor={inputBorderColor}
-            inputBorderColorHover={inputBorderColorHover}
-            inputFieldColor={inputFieldColor}
-            inputFillColor={inputFillColor}
-            inputSelectColor={inputSelectColor}
-            name={id}
-            state={state}
-            type="time"
-            pattern={pattern}
-            value={value}
-          />
-        </Grid>
-      );
-      break;
-    default:
-      inputBorderColor = colors.grey_20;
-      inputSelectColor = colors.success;
-      break;
+  const inputTypes = type.toLowerCase() === "datetime" ? ["date", "time"] : [type.toLowerCase()];
+  let inputElements = inputTypes.map((currType) => {
+    return (
+      <Input
+        disabled={isDisabled}
+        id={id}
+        inputBorderColor={inputBorderColor}
+        inputBorderColorHover={inputBorderColorHover}
+        inputFieldColor={inputFieldColor}
+        inputFillColor={inputFillColor}
+        inputSelectColor={inputSelectColor}
+        min={min}
+        max={max}
+        name={id}
+        pattern={pattern}
+        state={state}
+        type={currType}
+        value={value}
+      />
+    );
+  });
+  
+  let inputContainer = inputElements;
+  if (inputTypes.length > 1) {
+    inputContainer = (
+      <Grid columns="2">
+        {inputElements}
+      </Grid>
+    );
   }
   return (
     <CalendarContainer
@@ -188,11 +137,10 @@ function Calendar({
       gap="small"
       id={id}
       inputTextColor={inputTextColor}
-      InputType={InputType}
       isRequired={isRequired}
     >
       {inputLabel ? <InputLabel inputLabel={inputLabel} isRequired={isRequired} /> : null}
-      {InputType}
+      {inputContainer}
       {helpText ? <HelpText helpText={helpText} /> : null}
       {state === "error" && !disabled ? <ErrorText errorText={errorText} /> : null}
     </CalendarContainer>
