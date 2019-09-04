@@ -206,9 +206,8 @@ const GlobalStyles = createGlobalStyle`
 /* Labels */
     label {
       font-family: ${fonts.data};
-      font-size: smaller;
+      font-size: 0.85em;
       letter-spacing: 1px;
-      color: ${colors.grey_dark};
       &:empty {
         &:before {
           ${Skeleton};
@@ -266,7 +265,7 @@ const GlobalStyles = createGlobalStyle`
         cursor: not-allowed;
         pointer-events: none;
         user-select: none;
-        background-color: ${colors.grey_20};
+        background-color: ${colors.grey_light};
       }
       ::-webkit-datetime-edit-day-field,
       ::-webkit-datetime-edit-week-field,

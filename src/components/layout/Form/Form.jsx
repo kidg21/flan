@@ -61,38 +61,45 @@ const SectionName = styled.h5`
   // letter-spacing: 1px;
   margin-bottom: 0;
 `;
+
 const Label = styled.label`
-  color: inherit;
   font-weight: 700;
   user-select: none;
   cursor: pointer;
   &:after {
-    content: "*";
     display: ${props => (props.isRequired ? "" : "none")};
+    content: "*";
     color: ${colors.alert};
-    font-size: 1.5em;
+    font-size: 1.25rem;
     line-height: 0;
     vertical-align: middle;
-    padding-left: .25em;
+    padding-left: 0.25em;
   }
 `;
-const InputLabel = props => (
-  <Label isRequired={props.isRequired} className={props.className}>
-    {props.inputLabel}
-  </Label>
-);
+function InputLabel({ label, isRequired, className, children }) {
+  return (
+    <Label isRequired={isRequired} className={className}>
+      {label || children}
+    </Label>
+  );
+}
 
-const Help = styled.label`
-  grid-column: 1 / -1;
-  color: inherit;
+const Help = styled(Label)`
+  color: initial;
+  font-weight: initial;
+  cursor: initial;
 `;
-const HelpText = props => <Help>{props.helpText}</Help>;
+function HelpText({ children }) {
+  return <Help>{children}</Help>;
+}
 
-const Error = styled.label`
-  grid-column: 1 / -1;
+const Error = styled(Label)`
   color: ${colors.alert};
+  cursor: initial;
 `;
-const ErrorText = props => <Error>{props.errorText}</Error>;
+function ErrorText({ children }) {
+  return <Error>{children}</Error>;
+}
 
 const InputGroup = styled(Grid)`
   /* Prototype Content - displays when a Form is empty */

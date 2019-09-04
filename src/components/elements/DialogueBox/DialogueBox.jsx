@@ -61,10 +61,10 @@ function DialogueBox({
       break;
   }
   return (
-    <Card id={id} action={action} title={title} padding="1em">
+    <Card id={id} action={action} text={title} padding="1em">
       {header ? <Piece>{header}</Piece> : null}
-      <Bar left={<Title title={title} />} />
-      {message ? <Bar left={<Title title={message} weight="light" />} /> : null}
+      <Bar left={<Title text={title} />} />
+      {message ? <Bar left={<Title text={message} weight="light" />} /> : null}
       {type ? <Bar left={inputContent} /> : null}
       {content ? <Bar left={content} /> : null}
       {action ? <Piece>{buttonType}</Piece> : null}

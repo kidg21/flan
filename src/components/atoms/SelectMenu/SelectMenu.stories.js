@@ -40,7 +40,7 @@ storiesOf("Atoms|SelectMenu", module)
     "Documentation",
     withInfo()(() => (
       <SelectMenu
-        inputLabel={text("Input Label", "SelectMenu ( Knobs )")}
+        label={text("Input Label", "SelectMenu ( Knobs )")}
         placeholder={text("Placeholder Text", "I am just keeping things warm")}
         helpText={text("Help Text", "Have you been helped yet?")}
         multiSelect={boolean("Multi-Select", false)}
@@ -60,7 +60,7 @@ storiesOf("Atoms|SelectMenu", module)
   // Single-Select (Standard)
   .add("Single-Select ( Standard )", () => (
     <SelectMenu
-      inputLabel="Single-Select ( Standard )"
+      label="Single-Select ( Standard )"
       placeholder="Choose..."
       helpText="Help text for the SelectMenu component"
       options={options}
@@ -70,7 +70,7 @@ storiesOf("Atoms|SelectMenu", module)
   // Single-Select (Required)
   .add("Single-Select ( Required )", () => (
     <SelectMenu
-      inputLabel="Single-Select ( Required )"
+      label="Single-Select ( Required )"
       placeholder="You Must Choose..."
       helpText="Help text for the SelectMenu component"
       isRequired={true}
@@ -81,7 +81,7 @@ storiesOf("Atoms|SelectMenu", module)
   // Single-Select (Disabled)
   .add("Single-Select ( Disabled )", () => (
     <SelectMenu
-      inputLabel="Single-Select ( Disabled )"
+      label="Single-Select ( Disabled )"
       placeholder="You Can't Choose..."
       helpText="Help text for the SelectMenu component"
       disabled={true}
@@ -92,7 +92,7 @@ storiesOf("Atoms|SelectMenu", module)
   // Single-Select (Error)
   .add("Single-Select ( Error )", () => (
     <SelectMenu
-      inputLabel="Single-Select ( Error )"
+      label="Single-Select ( Error )"
       placeholder="You Chose Poorly..."
       helpText="Help text for the SelectMenu component"
       error={true}
@@ -103,7 +103,7 @@ storiesOf("Atoms|SelectMenu", module)
   // Single-Select (Loading)
   .add("Single-Select ( Loading )", () => (
     <SelectMenu
-      inputLabel="Single-Select ( Loading )"
+      label="Single-Select ( Loading )"
       placeholder="Give Me A Minute..."
       helpText="Help text for the SelectMenu component"
       isLoading={true}
@@ -115,7 +115,7 @@ storiesOf("Atoms|SelectMenu", module)
   .add("Multi-Select ( Multi-Select )", () => (
     <SelectMenu
       multiSelect={true}
-      inputLabel="Multi-Select"
+      label="Multi-Select"
       placeholder="Choose One Or More..."
       helpText="Help text for the SelectMenu component"
       options={options}
@@ -133,34 +133,34 @@ storiesOf("Atoms|SelectMenu", module).add("The SelectMenu Family", () => (
         <Section>
           <SectionName>The SelectMenu Family</SectionName>
           <SelectMenu
-            inputLabel="Single-Select ( Standard )"
+            label="Single-Select ( Standard )"
             placeholder="Choose..."
             helpText="Help text for the SelectMenu component"
             options={options}
           />
           <SelectMenu
-            inputLabel="Single-Select ( Required )"
+            label="Single-Select ( Required )"
             placeholder="You Must Choose..."
             helpText="Help text for the SelectMenu component"
             isRequired={true}
             options={options}
           />
           <SelectMenu
-            inputLabel="Single-Select ( Disabled )"
+            label="Single-Select ( Disabled )"
             placeholder="You Can't Choose..."
             helpText="Help text for the SelectMenu component"
             disabled={true}
             options={options}
           />
           <SelectMenu
-            inputLabel="Single-Select ( Error )"
+            label="Single-Select ( Error )"
             placeholder="You Chose Poorly..."
             helpText="Help text for the SelectMenu component"
             error={true}
             options={options}
           />
           <SelectMenu
-            inputLabel="Single-Select ( Loading )"
+            label="Single-Select ( Loading )"
             placeholder="Give Me A Minute..."
             helpText="Help text for the SelectMenu component"
             isLoading={true}
@@ -168,7 +168,7 @@ storiesOf("Atoms|SelectMenu", module).add("The SelectMenu Family", () => (
           />
           <SelectMenu
             multiSelect={true}
-            inputLabel="Multi-Select"
+            label="Multi-Select"
             placeholder="Choose One Or More..."
             helpText="Help text for the SelectMenu component"
             options={options}

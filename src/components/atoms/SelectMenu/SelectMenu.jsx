@@ -144,7 +144,7 @@ function SelectMenu({
   error,
   options,
   disabled,
-  inputLabel,
+  label,
   isRequired,
   helpText,
   isSearchable,
@@ -162,8 +162,8 @@ function SelectMenu({
       error={error}
       displayInline={displayInline}
     >
-      {inputLabel ? (
-        <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
+      {label ? (
+        <InputLabel label={label} isRequired={isRequired} />
       ) : null}
       <Select
         id={id} // input attribute
@@ -191,7 +191,7 @@ SelectMenu.propTypes = {
   name: PropTypes.string,
   placeholder: PropTypes.string,
   options: PropTypes.array,
-  inputLabel: PropTypes.string,
+  label: PropTypes.string,
   isRequired: PropTypes.bool,
   disabled: PropTypes.bool,
   multiSelect: PropTypes.bool,

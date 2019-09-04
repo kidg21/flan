@@ -15,14 +15,13 @@ const CalendarContainer = styled(Grid)`
 const Input = styled.input`
   border: 1px solid;
   border-color: ${(props) => {
-    return props.inputBorderColor || "";
+    return props.inputBorderColor || colors.grey_20;
   }};
   background-color: ${(props) => {
     return props.inputFillColor || "";
   }};
   min-height: 2.75rem;
   padding: 0.5rem 0.75rem;
-  color: inherit;
   &:hover {
     border-color: ${(props) => {
     return props.inputBorderColorHover || colors.grey_40;
@@ -42,20 +41,12 @@ const Input = styled.input`
     &::-webkit-datetime-edit-millisecond-field,
     &::-webkit-datetime-edit-ampm-field,
     &::-webkit-datetime-edit-text {
-      color: ${(props) => {
-    return props.inputFieldColor || "";
-  }};
       &:focus {
         background-color: ${(props) => {
-    return props.inputSelectColor || "";
+    return props.inputSelectColor || colors.success;
   }};
       }
     }
-  }
-  &[disabled] {
-    color: ${(props) => {
-    return props.inputFieldColor || "";
-  }};
   }
 `;
 
@@ -65,121 +56,53 @@ function Calendar({
   errorText,
   helpText,
   id,
-  inputLabel,
+  label,
   isRequired,
   max,
   min,
   pattern,
-  state,
   type,
   value,
 }) {
-  let InputType;
   let inputFillColor;
   let inputBorderColor;
   let inputTextColor;
   let inputBorderColorHover;
-  let inputFieldColor;
   let inputSelectColor;
-  switch (state) {
-    case "error":
-      inputTextColor = colors.alert;
-      inputFillColor = colors.alert_tint;
-      inputBorderColor = colors.alert_light;
-      inputBorderColorHover = colors.alert;
-      inputSelectColor = colors.alert;
-      break;
-    default:
-      inputBorderColor = colors.grey_20;
-      inputSelectColor = colors.success;
-      break;
+  if (errorText && !disabled) {
+    inputTextColor = colors.alert;
+    inputBorderColor = colors.alert_light;
+    inputBorderColorHover = colors.alert_light;
+    inputSelectColor = colors.alert;
   }
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (isDisabled) {
-    inputTextColor = colors.grey_40;
-    inputFillColor = colors.grey_20;
-    inputBorderColor = colors.grey_20;
-    inputFieldColor = colors.grey_40;
-  }
-  switch (type) {
-    case "date":
-      InputType = (
-        <Input
-          disabled={isDisabled}
-          id={id}
-          inputBorderColor={inputBorderColor}
-          inputBorderColorHover={inputBorderColorHover}
-          inputFieldColor={inputFieldColor}
-          inputFillColor={inputFillColor}
-          inputSelectColor={inputSelectColor}
-          min={min}
-          max={max}
-          name={id}
-          pattern={pattern}
-          state={state}
-          type="date"
-          value={value}
-        />
-      );
-      break;
-    case "time":
-      InputType = (
-        <Input
-          disabled={isDisabled}
-          id={id}
-          inputBorderColor={inputBorderColor}
-          inputBorderColorHover={inputBorderColorHover}
-          inputFieldColor={inputFieldColor}
-          inputFillColor={inputFillColor}
-          inputSelectColor={inputSelectColor}
-          name={id}
-          pattern={pattern}
-          state={state}
-          type="time"
-          value={value}
-        />
-      );
-      break;
-    case "datetime":
-      InputType = (
-        <Grid columns="2">
-          <Input
-            disabled={isDisabled}
-            id={id}
-            inputBorderColor={inputBorderColor}
-            inputBorderColorHover={inputBorderColorHover}
-            inputFieldColor={inputFieldColor}
-            inputFillColor={inputFillColor}
-            inputSelectColor={inputSelectColor}
-            min={min}
-            max={max}
-            name={id}
-            state={state}
-            type="date"
-            pattern={pattern}
-            value={value}
-          />
-          <Input
-            disabled={isDisabled}
-            id={id}
-            inputBorderColor={inputBorderColor}
-            inputBorderColorHover={inputBorderColorHover}
-            inputFieldColor={inputFieldColor}
-            inputFillColor={inputFillColor}
-            inputSelectColor={inputSelectColor}
-            name={id}
-            state={state}
-            type="time"
-            pattern={pattern}
-            value={value}
-          />
-        </Grid>
-      );
-      break;
-    default:
-      inputBorderColor = colors.grey_20;
-      inputSelectColor = colors.success;
-      break;
+  const inputTypes = type.toLowerCase() === "datetime" ? ["date", "time"] : [type.toLowerCase()];
+  let inputElements = inputTypes.map((currType) => {
+    return (
+      <Input
+        disabled={isDisabled}
+        id={id}
+        inputBorderColor={inputBorderColor}
+        inputBorderColorHover={inputBorderColorHover}
+        inputFillColor={inputFillColor}
+        inputSelectColor={inputSelectColor}
+        min={min}
+        max={max}
+        name={id}
+        pattern={pattern}
+        type={currType}
+        value={value}
+      />
+    );
+  });
+  
+  let inputContainer = inputElements;
+  if (inputTypes.length > 1) {
+    inputContainer = (
+      <Grid columns="2">
+        {inputElements}
+      </Grid>
+    );
   }
   return (
     <CalendarContainer
@@ -188,13 +111,12 @@ function Calendar({
       gap="small"
       id={id}
       inputTextColor={inputTextColor}
-      InputType={InputType}
       isRequired={isRequired}
     >
-      {inputLabel ? <InputLabel inputLabel={inputLabel} isRequired={isRequired} /> : null}
-      {InputType}
-      {helpText ? <HelpText helpText={helpText} /> : null}
-      {state === "error" && !disabled ? <ErrorText errorText={errorText} /> : null}
+      {label ? <InputLabel isRequired={isRequired} label={label} /> : null}
+      {inputContainer}
+      {helpText ? <HelpText>{helpText}</HelpText> : null}
+      {errorText && !disabled ? <ErrorText>{errorText}</ErrorText> : null}
     </CalendarContainer>
   );
 }
@@ -205,14 +127,13 @@ Calendar.propTypes = {
   errorText: PropTypes.string,
   helpText: PropTypes.string,
   id: PropTypes.string,
-  inputLabel: PropTypes.string,
+  label: PropTypes.string,
   isRequired: PropTypes.bool,
   /** Sets or returns the value of the max attribute of the date field */
   max: PropTypes.string,
   /** Sets or returns the value of the min attribute of the date field */
   min: PropTypes.string,
   pattern: PropTypes.string,
-  state: PropTypes.oneOf(["error"]),
   type: PropTypes.oneOf(["date", "time", "datetime"]),
   value: PropTypes.string,
 };
@@ -223,12 +144,11 @@ Calendar.defaultProps = {
   errorText: null,
   helpText: null,
   id: null,
-  inputLabel: null,
+  label: null,
   isRequired: false,
   max: null,
   min: null,
   pattern: null,
-  state: null,
   type: "date",
   value: null,
 };

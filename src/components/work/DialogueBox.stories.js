@@ -50,7 +50,7 @@ storiesOf("Work|Dialogue Box", module)
           <TextInput inputLabel="Password" placeholder="Password" />
           <Bar
             center={
-              <Title title="Forget Password?" size="tiny" weight="light" />
+              <Title text="Forget Password?" size="tiny" weight="light" />
             }
           />
         </Section>
