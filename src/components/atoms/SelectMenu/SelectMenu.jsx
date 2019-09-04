@@ -182,7 +182,7 @@ function SelectMenu({
   multiSelect,
   isLoading,
   isRtl,
-  onChange,
+  onChangeState,
 }) {
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let selectedOpts = [];
@@ -221,8 +221,8 @@ function SelectMenu({
       }
     }
 
-    if (onChange) {
-      onChange(state, { ...state, selected: newSelection }, setState);
+    if (onChangeState) {
+      onChangeState(state, { ...state, selected: newSelection }, setState);
     } else {
       setState({ ...state, selected: newSelection });
     }
@@ -284,7 +284,7 @@ SelectMenu.propTypes = {
   displayInline: PropTypes.bool,
   isRtl: PropTypes.bool,
   helpText: PropTypes.string,
-  onChange: PropTypes.func,
+  onChangeState: PropTypes.func,
 };
 
 SelectMenu.defaultProps = {
@@ -303,7 +303,7 @@ SelectMenu.defaultProps = {
   displayInline: false,
   isRtl: false,
   helpText: null,
-  onChange: null,
+  onChangeState: null,
 };
 
 export default SelectMenu;
