@@ -9,28 +9,46 @@ const TextInputContainer = styled.div`
   display: grid;
   grid-gap: 0.35rem;
   align-content: flex-start;
-  color: ${(props) => { return props.inputTextColor || ""; }};
+  color: ${(props) => {
+    return props.inputTextColor || "";
+  }};
 `;
 
 const Input = styled.input`
   border: 1px solid;
-  border-color: ${(props) => { return props.inputBorderColor || ""; }};
-  background-color: ${(props) => { return props.inputFillColor || ""; }};
-  caret-color: ${(props) => { return props.inputCaretColor || ""; }};
+  border-color: ${(props) => {
+    return props.inputBorderColor || colors.grey_20;
+  }};
+  background-color: ${(props) => {
+    return props.inputFillColor || "";
+  }};
+  caret-color: ${(props) => {
+    return props.inputCaretColor || "";
+  }};
   min-height: 2.75rem;
   padding: 0.5rem 0.75rem;
-  resize: vertical;
+  resize: ${(props) => {
+    return props.inputResize || "";
+  }};
   ::placeholder {
-    color: ${(props) => { return props.placeholderColor || ""; }};
+    color: ${(props) => {
+    return props.placeholderColor || "";
+  }};
   }
   &:hover {
-    border-color: ${(props) => { return props.inputBorderColorHover || colors.grey_40; }};
+    border-color: ${(props) => {
+    return props.inputBorderColorHover || colors.grey_40;
+  }};
     }
   }
   &:focus {
-    border-color: ${(props) => { return props.inputBorderColorHover || colors.success; }};
+    border-color: ${(props) => {
+    return props.inputBorderColorHover || colors.success;
+  }};
     ::selection {
-      background-color: ${(props) => { return props.inputSelectColor || ""; }};
+      background-color: ${(props) => {
+    return props.inputSelectColor || colors.success;
+  }};
     }
   }
 `;
@@ -40,15 +58,14 @@ function TextInput({
   type,
   pattern,
   value,
-  inputLabel,
+  label,
   isRequired,
   placeholder,
   helpText,
   errorText,
-  state,
   disabled,
   children,
-  style,
+  className,
 }) {
   let as;
   let inputTextColor;
@@ -56,45 +73,25 @@ function TextInput({
   let inputBorderColor;
   let inputBorderColorHover;
   let inputCaretColor;
+  let inputResize;
   let placeholderColor;
   let inputSelectColor;
+  if (errorText && !disabled) {
+    inputTextColor = colors.alert;
+    inputBorderColor = colors.alert_light;
+    inputBorderColorHover = colors.alert_light;
+    inputSelectColor = colors.alert;
+  }
   switch (type) {
     case "textarea":
       as = "textarea";
+      inputResize = "vertical";
       break;
     default:
-      break;
-  }
-  switch (state) {
-    case "error":
-      inputTextColor = colors.alert;
-      inputFillColor = colors.alert_tint;
-      inputBorderColor = colors.alert_light;
-      inputBorderColorHover = colors.alert;
-      inputCaretColor = colors.alert;
-      placeholderColor = colors.alert_light;
-      inputSelectColor = colors.alert;
-      disabled = false;
-      break;
-    case "search":
-      inputBorderColor = colors.grey_20;
-      inputBorderColorHover = colors.grey_20;
-      placeholderColor = colors.grey_40;
-      inputSelectColor = colors.anchor;
-      break;
-    default:
-      inputBorderColor = colors.grey_20;
-      inputSelectColor = colors.success;
       break;
   }
 
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (isDisabled) {
-    inputTextColor = colors.grey_40;
-    inputFillColor = colors.grey_20;
-    inputBorderColor = colors.grey_20;
-    placeholderColor = colors.grey_40;
-  }
 
   return (
     <TextInputContainer
@@ -102,11 +99,9 @@ function TextInput({
       isRequired={isRequired}
       disabled={isDisabled}
       inputTextColor={inputTextColor}
-      style={style}
+      className={className}
     >
-      {inputLabel ? (
-        <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
-      ) : null}
+      {label ? <InputLabel isRequired={isRequired} label={label} /> : null}
       <Input
         id={id} // input attribute
         as={as}
@@ -121,10 +116,11 @@ function TextInput({
         inputBorderColorHover={inputBorderColorHover}
         placeholderColor={placeholderColor}
         inputCaretColor={inputCaretColor}
+        inputResize={inputResize}
         inputSelectColor={inputSelectColor}
       />
-      {helpText ? <HelpText helpText={helpText} /> : null}
-      {errorText ? <ErrorText errorText={errorText} /> : null}
+      {helpText ? <HelpText>{helpText}</HelpText> : null}
+      {errorText && !disabled ? <ErrorText>{errorText}</ErrorText> : null}
       {children}
     </TextInputContainer>
   );
@@ -135,15 +131,28 @@ TextInput.propTypes = {
   type: PropTypes.string,
   pattern: PropTypes.string,
   value: PropTypes.string,
-  inputLabel: PropTypes.string,
+  label: PropTypes.string,
   isRequired: PropTypes.bool,
   placeholder: PropTypes.string,
   helpText: PropTypes.string,
   errorText: PropTypes.string,
-  state: PropTypes.string,
-  style: PropTypes.string,
+  className: PropTypes.string,
   disabled: PropTypes.bool,
   children: PropTypes.node,
+};
+TextInput.defaultProps = {
+  id: null,
+  type: null,
+  pattern: null,
+  value: null,
+  label: null,
+  isRequired: false,
+  placeholder: null,
+  helpText: null,
+  errorText: null,
+  className: null,
+  disabled: false,
+  children: null,
 };
 
 export { TextInput as default };

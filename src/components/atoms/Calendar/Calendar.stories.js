@@ -57,19 +57,9 @@ storiesOf("Atoms|Calendar", module)
           { display: "radio" },
           "Calendar",
         )}
-        label={text("input label", "Input Label", "Calendar")}
+        label={text("label", "Input Label", "Calendar")}
         helpText={text("help text", "This help text has been passed through a prop!", "Calendar")}
-        state={options(
-          "state",
-          {
-            valid: null,
-            error: "error",
-          },
-          null,
-          { display: "select" },
-          "Calendar",
-        )}
-        errorText={text("error text", "No sweat...we can fix this!", "Calendar")}
+        errorText={text("error text", "", "Calendar")}
         disabled={boolean("disabled", false, "Calendar")}
       />
     );
