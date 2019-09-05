@@ -18,7 +18,7 @@ const image = (
   />
 );
 
-storiesOf("Work|Blocks/MediaBlock", module)
+storiesOf("Blocks|MediaBlock", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
   .add("Simple", () => (

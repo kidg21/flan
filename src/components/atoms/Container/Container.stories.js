@@ -8,4 +8,6 @@ import { Padding } from "helpers/Display";
 storiesOf("Atoms|Container", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  .add("Container", () => <Container />);
+  .add("Container", () => {
+    return <Container height="300px" />;
+  });

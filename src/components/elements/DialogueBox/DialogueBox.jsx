@@ -28,7 +28,7 @@ function DialogueBox({
         <Bar
           left={
             <Button
-              buttonLabel={primaryLabel}
+              label={primaryLabel}
               onClick={onClickPrimary}
               color={buttonColor}
             />
@@ -42,13 +42,13 @@ function DialogueBox({
           right={
             <Grid columns="2">
               <Button
-                buttonLabel={primaryLabel}
+                label={primaryLabel}
                 type="solid"
                 onClick={onClickPrimary}
                 color={buttonColor}
               />
               <Button
-                buttonLabel={secondaryLabel}
+                label={secondaryLabel}
                 onClick={onClickSecondary}
                 color={buttonColor}
               />
@@ -63,8 +63,8 @@ function DialogueBox({
   return (
     <Card id={id} action={action} title={title} padding="1em">
       {header ? <Piece>{header}</Piece> : null}
-      <Bar left={<Title title={title} />} />
-      {message ? <Bar left={<Title title={message} weight="light" />} /> : null}
+      <Bar left={<Title text={title} />} />
+      {message ? <Bar left={<Title text={message} weight="light" />} /> : null}
       {type ? <Bar left={inputContent} /> : null}
       {content ? <Bar left={content} /> : null}
       {action ? <Piece>{buttonType}</Piece> : null}
@@ -76,7 +76,6 @@ DialogueBox.propTypes = {
   header: PropTypes.node,
   content: PropTypes.node,
   title: PropTypes.node,
-  footer: PropTypes.node,
   message: PropTypes.string,
   buttonColor: PropTypes.node,
   primaryLabel: PropTypes.string,
@@ -84,6 +83,20 @@ DialogueBox.propTypes = {
   onClickPrimary: PropTypes.func,
   onClickSecondary: PropTypes.func,
   action: PropTypes.node,
+};
+
+DialogueBox.defaultProps = {
+  id: null,
+  header: null,
+  content: null,
+  title: null,
+  message: null,
+  buttonColor: null,
+  primaryLabel: null,
+  secondaryLabel: null,
+  onClickPrimary: null,
+  onClickSecondary: null,
+  action: null,
 };
 
 export default DialogueBox;

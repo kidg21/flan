@@ -1,46 +1,100 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
-import UserRoles, { UserEntry } from "elements/UserRoles";
-import Bar from "blocks/Bar";
 import Button from "atoms/Button";
-import Grid from "layout/Grid";
-import Panel, { PanelSection } from "layout/Panel";
+import { UserRoles, RolePermissions } from "elements/UserRoles";
 
-const Options = [
+const roles = [
   { value: "Marketing", label: "Marketing" },
   { value: "Acquisitions", label: "Acquisitions" },
   { value: "Developer", label: "Builder / Developer" },
   { value: "Admin", label: "Admin" },
 ];
 
+const commands = [
+  { id: "manageRoles", name: "View / Edit Roles", onClickLink: () => { alert("Manage Roles!"); } },
+];
+
+const users = [
+  { name: "brodarte", roles: "Developer", enabled: true },
+  { name: "egallagher", roles: "Marketing", enabled: true },
+  { name: "esugimoto", roles: null, enabled: false },
+  { name: "mwalker", roles: "Admin", enabled: true },
+  { name: "pnguyen", roles: ["Developer", "Acquisitions"], enabled: true },
+];
+
+const rolePermissions = [{
+  role: "Marketing",
+  folders: [{
+    folder: "BDE811.Marketing",
+    permissions: ["Read"],
+  }],
+}, {
+  role: "Acquisitions",
+  folders: [{
+    folder: "BDE811.Acquisitions",
+    permissions: ["Write"],
+  }],
+}, {
+  role: "Builder / Developer",
+  folders: [{
+    folder: "BDE811.Acquisitions",
+    permissions: ["Read"],
+  }, {
+    folder: "BDE811.Developer",
+    permissions: ["Read", "Write"],
+  }],
+}, {
+  role: "Admin",
+  folders: [{
+    folder: "BDE811.Public",
+    permissions: ["Read", "Write"],
+  }, {
+    folder: "BDE811.Marketing",
+    permissions: ["Read", "Write"],
+  }, {
+    folder: "BDE811.Acquisitions",
+    permissions: ["Read", "Write"],
+  }, {
+    folder: "BDE811.Developer",
+    permissions: ["Read", "Write"],
+  }],
+}];
+
 storiesOf("Templates|Admin", module).add("User Edit Roles", () => {
+  function userDetails(user) {
+    alert(`User "${user.name}" clicked!`);
+  }
+
+  function addUser() {
+    alert("Add User!");
+  }
+
   return React.createElement(() => {
-    return (
-      <Panel>
-        <MainPanelHeader title="User Roles / Permissions" />
-        <PanelSection body>
-          <UserRoles
-            right={
-              <Grid columns="2">
-                <Button buttonLabel="Add User" />
-                <Button buttonLabel="Add/Edit Roles" />
-              </Grid>
-            }
-          >
-            <UserEntry user="Bob" options={Options} />
-            <UserEntry user="Carol" options={Options} />
-            <UserEntry user="Jane" options={Options} />
-            <UserEntry user="Mark" options={Options} />
-            <UserEntry user="Ben" options={Options} />
-            <UserEntry user="Doug" options={Options} />
-          </UserRoles>
-        </PanelSection>
-        <PanelSection>
-          <Bar center={<Button buttonLabel="Apply" />} />
-        </PanelSection>
-      </Panel>
-    );
+    return (<UserRoles
+      users={users}
+      roles={roles}
+      commands={commands}
+      right={<Button label="+Add User" onClick={addUser} />}
+      onClickUser={userDetails}
+    />);
   });
-});
+})
+  .add("Edit Roles Files", () => {
+    function addPermission() {
+      alert("Add Permission!");
+    }
+
+    function addRole() {
+      alert("Add Role!");
+    }
+
+    return React.createElement(() => {
+      return (<RolePermissions
+        roles={rolePermissions}
+        onAddRole={addRole}
+        onAddPermission={addPermission}
+      />);
+    });
+  });
+

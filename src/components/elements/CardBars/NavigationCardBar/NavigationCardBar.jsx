@@ -19,6 +19,7 @@ function NavigationCardBar({ id, title, number, disabled, onClick }) {
       <Bar
         left={<Title text={title} number={number} weight="normal" />}
         right={<Icon icon="right" />}
+        padding="2x"
         onClick={onClick}
       />
       <Line />

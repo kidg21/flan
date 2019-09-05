@@ -147,8 +147,6 @@ function Command({ id, name, label, icon, align, size, onClick, disabled }) {
   return (
     <CommandContainer
       id={id}
-      label={label}
-      icon={icon}
       justifyCommand={justifyCommand}
       alignIcon={alignIcon}
       justifyIcon={justifyIcon}
@@ -158,7 +156,7 @@ function Command({ id, name, label, icon, align, size, onClick, disabled }) {
       onClick={onClick}
     >
       {icon ? <CommandIcon icon={icon} /> : null}
-      <CommandName title={label} weight="normal" />
+      <CommandName weight="normal">{label}</CommandName>
     </CommandContainer>
   );
 }
