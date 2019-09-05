@@ -28,8 +28,8 @@ function FolderEntry({
   }
 
   function onChangePermissions(currState, newState, setState) {
-    const state = (newState && !(newState instanceof Array)) ? [newState] : newState || [];
-    onChange({ ...folder, permissions: state.map((entry) => { return entry.value; }) });
+    const value = newState.selected.value;
+    onChange({ ...folder, permissions: value instanceof Array ? value : [value] });
     setState(newState);
   }
 

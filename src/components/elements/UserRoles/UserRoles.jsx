@@ -17,31 +17,29 @@ function UserEntry({
   onChange,
   onClick,
 }) {
-  let isEnabled = user.enabled;
-  let setEnabled = null;
-  if (!onChange) [isEnabled, setEnabled] = useState(user.enabled);
+  const [isEnabled, setEnabled] = useState(user.enabled);
 
   function toggleEnabled() {
-    if (onChange) {
-      onChange({ ...user, enabled: !isEnabled });
-    } else {
-      setEnabled((enabled) => { return !enabled; });
-    }
+    setEnabled((enabled) => {
+      if (onChange) onChange({ ...user, enabled: !enabled });
+      return !enabled;
+    });
   }
 
   function onCommandClick() {
     if (onClick) onClick(user);
   }
 
-  function onStateChange(currState, newState, setState) {
+  function onChangeRoles(currState, newState, setState) {
     if (onChange) {
-      const selectedRoles = newState instanceof Array ? newState.map((entry) => {
-        return entry.value;
-      }) : [newState.value];
+      let selectedRoles = newState.selected || [];
+      selectedRoles = selectedRoles instanceof Array
+        ? selectedRoles.map((entry) => {
+          return entry.value;
+        }) : [selectedRoles.value];
       onChange({ ...user, roles: selectedRoles });
-    } else {
-      setState(newState);
     }
+    setState(newState);
   }
 
   return (<Bar
@@ -53,7 +51,7 @@ function UserEntry({
     right={<SelectMenu
       options={roles}
       selectOptions={user.roles}
-      onStateChange={onStateChange}
+      onChangeState={onChangeRoles}
       multiSelect
     />}
     rightWidth={selectWidth}
@@ -103,14 +101,18 @@ function UserRoles({
   listHeight,
   searchWidth,
 }) {
+  let activeUsers = users;
+  let setUsers = onChange;
+  if (!onChange) [activeUsers, setUsers] = useState(users);
+
   const [filterState, setFilter] = useState({
     name: null,
     enabled: null,
     role: null,
-    users: users,
+    users: activeUsers,
   });
-  function filterUsers(state) {
-    state.users = users.filter((user) => {
+  function filterUsers(currUsers, state) {
+    state.users = currUsers.filter((user) => {
       const userRoles = (user.roles && !(user.roles instanceof Array))
         ? [user.roles] : user.roles || [];
       return (typeof state.enabled !== "boolean" || user.enabled === state.enabled)
@@ -122,27 +124,29 @@ function UserRoles({
 
   function setNameFilter(e) {
     // nameFilter = e.target.value.toLowerCase();
-    filterUsers({ ...filterState, name: e.target.value.toLowerCase() });
+    filterUsers(activeUsers, { ...filterState, name: e.target.value.toLowerCase() });
   }
 
   function filterUserTypes(currState, newState, setState) {
     const isEnabled = newState.selected && newState.selected instanceof Array
       ? newState.selected[0].value : newState.selected.value;
     setState(newState);
-    filterUsers({ ...filterState, enabled: isEnabled });
+    filterUsers(activeUsers, { ...filterState, enabled: isEnabled });
   }
 
   function filterUserRoles(currState, newState, setState) {
     const role = newState.selected && newState.selected instanceof Array
       ? newState.selected[0].value : newState.selected.value;
     setState(newState);
-    filterUsers({ ...filterState, role });
+    filterUsers(activeUsers, { ...filterState, role });
   }
 
   function onUserChange(userProps) {
-    onChange(users.map((user) => {
+    const currUsers = activeUsers.map((user) => {
       return user.name === userProps.name ? userProps : user;
-    }));
+    });
+    setUsers(currUsers);
+    filterUsers(currUsers, filterState);
   }
 
   const rolesFilter = [{
@@ -181,7 +185,7 @@ function UserRoles({
               user={user}
               roles={roles}
               onClick={onClickUser}
-              onChange={onChange ? onUserChange : null}
+              onChange={onUserChange}
             />);
           })}
         </Container>

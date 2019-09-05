@@ -42,22 +42,22 @@ const rolePermissions = [{
     permissions: ["Read"],
   }, {
     folder: "BDE811.Developer",
-    permissions: [["Read", "Write"]],
+    permissions: ["Read", "Write"],
   }],
 }, {
   role: "Admin",
   folders: [{
     folder: "BDE811.Public",
-    permissions: [["Read", "Write"]],
+    permissions: ["Read", "Write"],
   }, {
     folder: "BDE811.Marketing",
-    permissions: [["Read", "Write"]],
+    permissions: ["Read", "Write"],
   }, {
     folder: "BDE811.Acquisitions",
-    permissions: [["Read", "Write"]],
+    permissions: ["Read", "Write"],
   }, {
     folder: "BDE811.Developer",
-    permissions: [["Read", "Write"]],
+    permissions: ["Read", "Write"],
   }],
 }];
 

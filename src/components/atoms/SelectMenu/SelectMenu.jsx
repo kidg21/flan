@@ -191,10 +191,11 @@ function SelectMenu({
     selectedOpts = options.filter((opt) => {
       if (opt.value instanceof Array) {
         for (let i = 0; i < selectedOpts.length; i++) {
-          if (selectedOpts[i] instanceof Array && selectedOpts[i].length === opt.value.length) {
+          const targetOpts = multiSelect ? selectedOpts[i] : selectedOpts;
+          if (targetOpts instanceof Array && targetOpts.length === opt.value.length) {
             let isMatch = true;
-            for (let j = 0; j < selectedOpts[i].length; j++) {
-              if (!opt.value.includes(selectedOpts[i][j])) {
+            for (let j = 0; j < targetOpts.length; j++) {
+              if (!opt.value.includes(targetOpts[j])) {
                 isMatch = false;
                 break;
               }
@@ -202,6 +203,9 @@ function SelectMenu({
             if (isMatch) return true;
           }
         }
+        return false;
+      } else if (selectedOpts.length > 1 && !multiSelect) {
+        // If the input would select multiple, but that is not allowed, skip it.
         return false;
       }
 
