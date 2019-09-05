@@ -70,7 +70,7 @@ const ButtonIcon = styled(Icon)`
 `;
 
 function Button({
-  id, label, buttonLabel, icon, color, type, size, fullWidth, disabled, onClick, style,
+  id, label, icon, color, type, size, fullWidth, disabled, onClick, style,
 }) {
   let buttonColor;
   let textColor;
@@ -131,7 +131,7 @@ function Button({
       style={style}
     >
       {icon ? <ButtonIcon icon={icon} /> : null}
-      <ButtonLabel>{label || buttonLabel}</ButtonLabel>
+      <ButtonLabel>{label}</ButtonLabel>
     </StyledButton>
   );
 }
@@ -139,7 +139,6 @@ function Button({
 Button.propTypes = {
   id: PropTypes.string,
   label: PropTypes.string.isRequired,
-  buttonLabel: PropTypes.string,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   type: PropTypes.string,
   color: PropTypes.oneOf(["success", "warning", "alert"]),
@@ -152,7 +151,6 @@ Button.propTypes = {
 
 Button.defaultProps = {
   id: null,
-  buttonLabel: null,
   icon: null,
   type: null,
   color: null,

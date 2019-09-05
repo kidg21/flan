@@ -28,7 +28,7 @@ function DialogueBox({
         <Bar
           left={
             <Button
-              buttonLabel={primaryLabel}
+              label={primaryLabel}
               onClick={onClickPrimary}
               color={buttonColor}
             />
@@ -42,13 +42,13 @@ function DialogueBox({
           right={
             <Grid columns="2">
               <Button
-                buttonLabel={primaryLabel}
+                label={primaryLabel}
                 type="solid"
                 onClick={onClickPrimary}
                 color={buttonColor}
               />
               <Button
-                buttonLabel={secondaryLabel}
+                label={secondaryLabel}
                 onClick={onClickSecondary}
                 color={buttonColor}
               />
