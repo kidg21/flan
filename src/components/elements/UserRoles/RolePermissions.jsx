@@ -63,7 +63,7 @@ FolderEntry.defaultProps = {
 
 function RoleEntry({
   role,
-  onAddPermission,
+  editRole,
   onChange,
   folderPadding,
   selectWidth,
@@ -91,6 +91,10 @@ function RoleEntry({
     }
   }
 
+  function addRolePermission() {
+    editRole.onClick(role);
+  }
+
   return (
     <InformationCardBar title={<Title>{role.role} <Icon icon="delete" onClick={onDeleteRole} /></Title>}>
       {role.folders.map((folder) => {
@@ -101,7 +105,8 @@ function RoleEntry({
           selectWidth={selectWidth}
         />);
       })}
-      {onAddPermission ? <Bar right={<Button label="+Add Permission" onClick={onAddPermission} />} /> : null}
+      {editRole
+        ? <Bar right={<Button label={editRole.label} onClick={addRolePermission} />} /> : null}
     </InformationCardBar>
   );
 }
@@ -115,13 +120,16 @@ RoleEntry.propTypes = {
     })),
   }).isRequired,
   onChange: PropTypes.func.isRequired,
-  onAddPermission: PropTypes.func,
+  editRole: PropTypes.shape({
+    label: PropTypes.string,
+    onClick: PropTypes.func,
+  }),
   folderPadding: PropTypes.string,
   selectWidth: PropTypes.string,
 };
 
 RoleEntry.defaultProps = {
-  onAddPermission: null,
+  editRole: null,
   folderPadding: null,
   selectWidth: null,
 };
@@ -129,8 +137,8 @@ RoleEntry.defaultProps = {
 function RolePermissions({
   roles,
   listHeight,
-  onAddRole,
-  onAddPermission,
+  right,
+  editRole,
   onChange,
   folderPadding,
   selectWidth,
@@ -186,7 +194,7 @@ function RolePermissions({
       <PanelSection >
         <Bar
           left={<Search placeholder="Search for a Role" onChange={onSearch} />}
-          right={onAddRole ? <Button label="+Add Role" onClick={onAddRole} /> : null}
+          right={right}
         />
         <Container height={listHeight} >
           {visibleRoles.roles.map((role) => {
@@ -194,7 +202,7 @@ function RolePermissions({
               key={role.role}
               role={role}
               onChange={onRoleChange}
-              onAddPermission={onAddPermission}
+              editRole={editRole}
               folderPadding={folderPadding}
               selectWidth={selectWidth}
             />);
@@ -217,8 +225,11 @@ RolePermissions.propTypes = {
     PropTypes.string,
     PropTypes.number,
   ]),
-  onAddRole: PropTypes.func,
-  onAddPermission: PropTypes.func,
+  right: PropTypes.node,
+  editRole: PropTypes.shape({
+    label: PropTypes.string,
+    onClick: PropTypes.func,
+  }),
   onChange: PropTypes.func,
   folderPadding: PropTypes.string,
   selectWidth: PropTypes.string,
@@ -227,8 +238,8 @@ RolePermissions.propTypes = {
 RolePermissions.defaultProps = {
   roles: null,
   listHeight: "250px",
-  onAddRole: null,
-  onAddPermission: null,
+  right: null,
+  editRole: null,
   onChange: null,
   folderPadding: "3x",
   selectWidth: "20%",

@@ -81,19 +81,24 @@ storiesOf("Templates|Admin", module).add("User Edit Roles", () => {
   });
 })
   .add("Edit Roles Files", () => {
-    function addPermission() {
-      alert("Add Permission!");
+    function addPermission(role) {
+      alert(`Add Permission to role "${role.role}"!`);
     }
 
     function addRole() {
       alert("Add Role!");
     }
 
+    const editRole = {
+      label: "+Add Permission",
+      onClick: addPermission,
+    };
+
     return React.createElement(() => {
       return (<RolePermissions
         roles={rolePermissions}
-        onAddRole={addRole}
-        onAddPermission={addPermission}
+        right={<Button label="+Add Role" onClick={addRole} />}
+        editRole={editRole}
       />);
     });
   });
