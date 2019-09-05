@@ -1,6 +1,6 @@
 // Publicly exported files from 'base'
 export { default as Title, SubTitle, Description, Link, Number } from "./base/Typography";
-export * from "./base/GlobalStyles/GlobalStyles.jsx";
+export { default as GlobalStyles } from "./base/GlobalStyles/GlobalStyles.jsx";
 
 // Publicly exported files from 'atoms'
 export { default as Badge } from "./atoms/Badge";
@@ -33,33 +33,21 @@ export { default as Tabs } from "./blocks/Tabs";
 
 // Publicly exported files from 'elements'
 export { default as CardAccordion } from "./elements/CardAccordion";
-export {
-  default as InformationCardBar,
-} from "./elements/CardBars/InformationCardBar";
+export { default as InformationCardBar } from "./elements/CardBars/InformationCardBar";
 export { default as LayerCardBar } from "./elements/CardBars/LayerCardBar";
-export {
-  default as NavigationCardBar,
-} from "./elements/CardBars/NavigationCardBar";
-export {
-  default as MainPanelHeader,
-} from "./elements/PanelHeaders/MainPanelHeader";
-export {
-  default as PropertyPanelHeader,
-} from "./elements/PanelHeaders/PropertyPanelHeader";
-export {
-  default as NavigationPanelHeader,
-} from "./elements/PanelHeaders/NavigationPanelHeader";
+export { default as NavigationCardBar } from "./elements/CardBars/NavigationCardBar";
+export { default as MainPanelHeader } from "./elements/PanelHeaders/MainPanelHeader";
+export { default as PropertyPanelHeader } from "./elements/PanelHeaders/PropertyPanelHeader";
+export { default as NavigationPanelHeader } from "./elements/PanelHeaders/NavigationPanelHeader";
 export { default as Notification } from "./elements/Notification";
 export { default as MapSearch } from "./elements/MapSearch";
-export {
-  default as PropertyListCard,
-} from "./elements/ListCards/PropertyListCard";
+export { default as PropertyListCard } from "./elements/ListCards/PropertyListCard";
 
 // Publicly exported files from 'layout'
 export { default as Card, CardList } from "./layout/Card";
 export {
   default as Form,
-  Title,
+  Header,
   Section,
   SectionName,
   InputLabel,

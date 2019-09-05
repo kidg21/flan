@@ -1,6 +1,6 @@
 import React from "react";
-import styled, { css } from "styled-components";
-import { fonts, colors, shadows } from "Variables";
+import styled from "styled-components";
+import { colors, shadows } from "Variables";
 import Grid from "layout/Grid";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 import PropTypes from "prop-types";
@@ -11,6 +11,7 @@ const CardPiece = styled.div`
   flex: none;
   padding: ${props => props.padding || ""};
   width: 100%;
+  z-index: ${props => props.header ? 1 : ""};
   /** TODO: add 'background' and 'interaction' props */
   /* color: ${props => props.textColor || ""}; */
   /* background-color: ${props => props.backgroundColor || ""}; */
@@ -62,6 +63,7 @@ function Piece({
   children,
   padding,
   className,
+  header,
   /** TODO: add 'background' and 'interaction' props */
   // type,
 }) {
@@ -98,6 +100,7 @@ function Piece({
       id={id}
       padding={padding}
       className={className}
+      header={header}
       hover={hover}
 
       /** TODO: add 'background' and 'interaction' props */
@@ -130,6 +133,7 @@ Piece.propTypes = {
   children: PropTypes.node,
   padding: PropTypes.node,
   className: PropTypes.string,
+  header: PropTypes.bool,
 };
 Card.propTypes = {
   id: PropTypes.string,

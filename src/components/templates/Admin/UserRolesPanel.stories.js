@@ -1,64 +1,100 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
-import Bar from "blocks/Bar";
-import Container from "atoms/Container";
-import Card, { Piece } from "layout/Card";
 import Button from "atoms/Button";
-import Grid from "layout/Grid";
-import Panel, { PanelSection } from "layout/Panel";
-import Search from "blocks/Search";
+import { UserRoles, RolePermissions } from "elements/UserRoles";
 
-// const Options = [
-//   { value: "Marketing", label: "Marketing" },
-//   { value: "Acquisitions", label: "Acquisitions" },
-//   { value: "Developer", label: "Builder / Developer" },
-//   { value: "Admin", label: "Admin" },
-// ];
+const roles = [
+  { value: "Marketing", label: "Marketing" },
+  { value: "Acquisitions", label: "Acquisitions" },
+  { value: "Developer", label: "Builder / Developer" },
+  { value: "Admin", label: "Admin" },
+];
+
+const commands = [
+  { id: "manageRoles", name: "View / Edit Roles", onClickLink: () => { alert("Manage Roles!"); } },
+];
+
+const users = [
+  { name: "brodarte", roles: "Developer", enabled: true },
+  { name: "egallagher", roles: "Marketing", enabled: true },
+  { name: "esugimoto", roles: null, enabled: false },
+  { name: "mwalker", roles: "Admin", enabled: true },
+  { name: "pnguyen", roles: ["Developer", "Acquisitions"], enabled: true },
+];
+
+const rolePermissions = [{
+  role: "Marketing",
+  folders: [{
+    folder: "BDE811.Marketing",
+    permissions: ["Read"],
+  }],
+}, {
+  role: "Acquisitions",
+  folders: [{
+    folder: "BDE811.Acquisitions",
+    permissions: ["Write"],
+  }],
+}, {
+  role: "Builder / Developer",
+  folders: [{
+    folder: "BDE811.Acquisitions",
+    permissions: ["Read"],
+  }, {
+    folder: "BDE811.Developer",
+    permissions: ["Read", "Write"],
+  }],
+}, {
+  role: "Admin",
+  folders: [{
+    folder: "BDE811.Public",
+    permissions: ["Read", "Write"],
+  }, {
+    folder: "BDE811.Marketing",
+    permissions: ["Read", "Write"],
+  }, {
+    folder: "BDE811.Acquisitions",
+    permissions: ["Read", "Write"],
+  }, {
+    folder: "BDE811.Developer",
+    permissions: ["Read", "Write"],
+  }],
+}];
 
 storiesOf("Templates|Admin", module).add("User Edit Roles", () => {
+  function userDetails(user) {
+    alert(`User "${user.name}" clicked!`);
+  }
+
+  function addUser() {
+    alert("Add User!");
+  }
+
   return React.createElement(() => {
-    return (
-      <Panel>
-        <MainPanelHeader title="User Roles" />
-        <PanelSection >
-          <Bar
-            left={<Search placeholder="Search for a User" />}
-            right={<Button buttonLabel="+Add User" />}
-          />
-          <Container setHeight="250px" >
-            <Bar left="Name" />
-            <Bar left="Name" />
-            <Bar left="Name" />
-            <Bar left="Name" />
-            <Bar left="Name" />
-          </Container>
-        </PanelSection>
-      </Panel>
-    );
+    return (<UserRoles
+      users={users}
+      roles={roles}
+      commands={commands}
+      right={<Button label="+Add User" onClick={addUser} />}
+      onClickUser={userDetails}
+    />);
   });
 })
-.add("Edit Roles Files", () => {
-  return React.createElement(() => {
-    return (
-      <Panel>
-        <MainPanelHeader title="Role Permissions" />
-        <PanelSection >
-          <Bar
-            left={<Search placeholder="Search for a Role" />}
-            right={<Button buttonLabel="+Add Role" />}
-          />
-          <Container setHeight="250px" >
-            <Bar left="Name" />
-            <Bar left="Name" />
-            <Bar left="Name" />
-            <Bar left="Name" />
-            <Bar left="Name" />
-          </Container>
-        </PanelSection>
-      </Panel>
-    );
+  .add("Edit Roles Files", () => {
+    function addPermission() {
+      alert("Add Permission!");
+    }
+
+    function addRole() {
+      alert("Add Role!");
+    }
+
+    return React.createElement(() => {
+      return (<RolePermissions
+        roles={rolePermissions}
+        onAddRole={addRole}
+        onAddPermission={addPermission}
+      />);
+    });
   });
-});
 

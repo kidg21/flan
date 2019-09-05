@@ -53,7 +53,7 @@ storiesOf("Layout|Modal", module)
               />
             </Modal>
             <Button
-              buttonLabel="Open Modal"
+              label="Open Modal"
               style={{ marginLeft: "3rem" }}
               onClick={handleOpen}
             />
@@ -130,7 +130,7 @@ storiesOf("Layout|Modal", module)
           <Panel>
             <PanelSection body>
               <Button
-                buttonLabel="Open Modal"
+                label="Open Modal"
                 onClick={handleOpen}
                 style={buttonStyle}
               />
@@ -173,7 +173,7 @@ storiesOf("Layout|Modal", module)
           <Panel>
             <PanelSection body>
               <Button
-                buttonLabel="Default Modal"
+                label="Default Modal"
                 onClick={handleOpen}
                 style={buttonStyle}
               />
@@ -212,7 +212,7 @@ storiesOf("Layout|Modal", module)
           <Panel>
             <PanelSection body>
               <Button
-                buttonLabel="Text Modal"
+                label="Text Modal"
                 onClick={handleOpen}
                 style={buttonStyle}
               />
@@ -251,7 +251,7 @@ storiesOf("Layout|Modal", module)
           <Panel>
             <PanelSection body>
               <Button
-                buttonLabel="Image Modal"
+                label="Image Modal"
                 onClick={handleOpen}
                 style={buttonStyle}
               />

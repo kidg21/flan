@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import PropTypes from "prop-types";
 import { colors } from "Variables";
 
@@ -13,10 +13,10 @@ const BoxContainer = styled.div`
   overflow-x: auto;
   padding: 0;
   height: ${(props) => {
-    return props.setHeight || "";
+    return props.height || "";
   }};
   width: ${(props) => {
-    return props.setWidth || "";
+    return props.width || "";
   }};
   border: 1px solid ${colors.grey_20};
   border-radius: 5px;
@@ -36,11 +36,11 @@ const BoxContainer = styled.div`
 `;
 
 function Container({
-  id, setHeight, setWidth, children,
+  id, height, width, children,
 }) {
   return (
     <Wrapper>
-      <BoxContainer id={id} setHeight={setHeight} setWidth={setWidth}>
+      <BoxContainer id={id} height={height} width={width}>
         {children}
       </BoxContainer>
     </Wrapper>
@@ -49,9 +49,22 @@ function Container({
 
 Container.propTypes = {
   id: PropTypes.string,
-  setHeight: PropTypes.node,
-  setWidth: PropTypes.node,
+  height: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ]),
+  width: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ]),
   children: PropTypes.node,
 };
+
+Container.defaultProps = {
+  id: null,
+  height: null,
+  width: null,
+  children: null,
+}
 
 export default Container;

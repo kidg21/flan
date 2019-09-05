@@ -125,7 +125,7 @@ storiesOf("Elements|Dialogue Box", module)
             ]}
           />
           <Piece>
-            <Container setHeight="12rem">
+            <Container height="12rem">
               <List>
                 <ListItem
                   label="User 3"
