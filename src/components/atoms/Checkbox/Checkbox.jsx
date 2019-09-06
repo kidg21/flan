@@ -7,7 +7,7 @@ import { InputLabel, HelpText, ErrorText } from "layout/Form";
 import Grid from "layout/Grid";
 
 const CheckboxWrapper = styled(Grid)`
-  color: ${props => {
+  color: ${(props) => {
     return props.inputTextColor || "";
   }};
   margin-bottom: 1rem;
@@ -17,11 +17,11 @@ const CheckboxContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 0.75rem;
-  grid-template-areas: ${props => {
+  grid-template-areas: ${(props) => {
     return props.alignInput || "";
   }};
   align-items: inherit;
-  color: ${props => {
+  color: ${(props) => {
     return props.inputTextColor || "";
   }};
   &[disabled],
@@ -35,10 +35,10 @@ const CheckboxContainer = styled.div`
 const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   grid-area: input;
   border: 1px solid;
-  background-color: ${props => {
+  background-color: ${(props) => {
     return props.fillColor || colors.white;
   }};
-  border-color: ${props => {
+  border-color: ${(props) => {
     return props.borderColor || colors.grey_40;
   }};
   width: 1rem;
@@ -47,51 +47,51 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   cursor: pointer;
   -webkit-appearance: none;
   &:checked {
-    background-color: ${props => {
-      return props.fillColorChecked || colors.success_light;
-    }};
-    border-color: ${props => {
-      return props.borderColorChecked || colors.success;
-    }};
+    background-color: ${(props) => {
+    return props.fillColorChecked || colors.success_light;
+  }};
+    border-color: ${(props) => {
+    return props.borderColor || colors.success;
+  }};
   }
   &:focus {
-    outline-color: ${colors.success};
+    outline-color: ${(props) => {
+    return props.outlineColor || colors.success;
+  }};
   }
 `;
 
 const CheckboxLabel = styled.label`
   grid-area: label;
+  font-weight: 700;
   color: inherit;
   user-select: none;
   cursor: pointer;
 `;
 
-function Checkbox({ align, checked, disabled, id, label, type }) {
+function Checkbox({
+  align, checked, error, disabled, id, label,
+}) {
   let inputTextColor;
   let fillColor;
   let borderColor;
+  let outlineColor;
   let fillColorChecked;
   let borderColorChecked;
   let alignInput;
   let tabIndex;
-  switch (type) {
-    case "error":
-      inputTextColor = colors.alert;
-      fillColor = colors.alert_tint;
-      borderColor = inputTextColor;
-      fillColorChecked = colors.alert_tint;
-      borderColorChecked = colors.alert;
-      break;
-    default:
-      break;
+  if (error && !disabled) {
+    inputTextColor = colors.alert;
+    fillColor = colors.alert_tint;
+    borderColor = colors.alert_light;
+    outlineColor = colors.alert_light;
+    fillColorChecked = colors.alert_tint;
+    borderColorChecked = colors.alert;
   }
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
-    inputTextColor = colors.grey_40;
     fillColor = colors.grey_20;
-    borderColor = inputTextColor;
     fillColorChecked = colors.grey_20;
-    borderColorChecked = colors.grey_40;
     tabIndex = "-1";
   }
   switch (align) {
@@ -106,8 +106,8 @@ function Checkbox({ align, checked, disabled, id, label, type }) {
     <CheckboxContainer
       inputTextColor={inputTextColor}
       disabled={isDisabled}
+      error={error}
       alignInput={alignInput}
-      tabIndex={tabIndex}
     >
       <CheckboxInput
         id={id}
@@ -115,6 +115,7 @@ function Checkbox({ align, checked, disabled, id, label, type }) {
         tabIndex={tabIndex}
         fillColor={fillColor}
         borderColor={borderColor}
+        outlineColor={outlineColor}
         fillColorChecked={fillColorChecked}
         borderColorChecked={borderColorChecked}
       />
@@ -129,38 +130,42 @@ function CheckboxGroup({
   columns,
   data,
   disabled,
-  error,
   errorText,
   helpText,
   id,
-  inputLabel,
+  label,
   isRequired,
   onChange,
 }) {
+  let inputTextColor;
+  if (errorText && !disabled) {
+    inputTextColor = colors.alert;
+  }
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   return (
     <CheckboxWrapper
       align={align}
       columns={columns}
-      disabled={disabled}
-      error={error}
+      disabled={isDisabled}
+      inputTextColor={inputTextColor}
       id={id}
       onChange={onChange}
     >
-      {inputLabel ? <InputLabel inputLabel={inputLabel} isRequired={isRequired} /> : null}
-      {helpText ? <HelpText helpText={helpText} /> : null}
+      {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
+      {helpText ? <HelpText>{helpText}</HelpText> : null}
       {children ||
-        data.map(item => {
+        data.map((item) => {
           return (
             <>
-              {error ? (
+              {errorText ? (
                 <Checkbox
                   key={item.id}
                   id={item.id}
                   label={item.label}
                   htmlFor={item.id}
                   align={align}
-                  type="error"
-                  disabled={item.disabled || disabled}
+                  error
+                  disabled={item.disabled || isDisabled}
                 />
               ) : (
                 <Checkbox
@@ -169,13 +174,13 @@ function CheckboxGroup({
                   label={item.label}
                   htmlFor={item.id}
                   align={align}
-                  disabled={item.disabled || disabled}
+                  disabled={item.disabled || isDisabled}
                 />
               )}
             </>
           );
         })}
-      {error && !disabled ? <ErrorText errorText={errorText} /> : null}
+      {errorText && !disabled ? <ErrorText>{errorText}</ErrorText> : null}
     </CheckboxWrapper>
   );
 }
@@ -184,17 +189,17 @@ Checkbox.propTypes = {
   align: PropTypes.oneOf(["default", "right"]),
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
+  error: PropTypes.bool,
   id: PropTypes.string,
   label: PropTypes.string.isRequired,
-  type: PropTypes.string,
 };
 
 Checkbox.defaultProps = {
   align: null,
   checked: null,
   disabled: false,
+  error: null,
   id: null,
-  type: null,
 };
 
 CheckboxGroup.propTypes = {
@@ -203,11 +208,10 @@ CheckboxGroup.propTypes = {
   columns: PropTypes.oneOf(["auto (default)", "1", "2", "3", "4", "5", "6"]),
   data: PropTypes.oneOfType([PropTypes.array, PropTypes.string]),
   disabled: PropTypes.bool,
-  error: PropTypes.bool,
   errorText: PropTypes.string,
   helpText: PropTypes.string,
   id: PropTypes.string,
-  inputLabel: PropTypes.string,
+  label: PropTypes.string,
   isRequired: PropTypes.bool,
   onChange: PropTypes.func,
 };
@@ -218,11 +222,10 @@ CheckboxGroup.defaultProps = {
   columns: null,
   data: null,
   disabled: false,
-  error: false,
   errorText: null,
   helpText: null,
   id: null,
-  inputLabel: null,
+  label: null,
   isRequired: false,
   onChange: null,
 };

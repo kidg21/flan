@@ -62,17 +62,7 @@ storiesOf("Atoms|Checkbox", module)
     return (
       <Checkbox
         id="cbox1"
-        label="Box 1"
-        type={options(
-          "state",
-          {
-            standard: null,
-            error: "error",
-          },
-          null,
-          { display: "select" },
-          "Checkbox",
-        )}
+        label={text("label", "Checkbox Label", "Checkbox")}
         align={options(
           "align",
           {
@@ -83,6 +73,7 @@ storiesOf("Atoms|Checkbox", module)
           { display: "select" },
           "Checkbox",
         )}
+        error={boolean("error", false, "Checkbox")}
         disabled={boolean("disabled", false, "Checkbox")}
       />
     );
@@ -90,9 +81,9 @@ storiesOf("Atoms|Checkbox", module)
   .add("Checkbox (states)", () => {
     return (
       <CheckboxGroup>
-        <Checkbox id="default" label="Default" checked={false} />
+        <Checkbox id="default" label="Default" />
         <Checkbox id="selected" label="Selected" checked />
-        <Checkbox id="error" label="Error" type="error" />
+        <Checkbox id="error" label="Error" error />
         <Checkbox id="disabled" label="Disabled" disabled />
       </CheckboxGroup>
     );
@@ -123,7 +114,7 @@ storiesOf("Blocks|Checkbox Group", module)
       return (
         <CheckboxGroup
           id="group1"
-          inputLabel="Checkbox Group Label"
+          label="Checkbox Group Label"
           data={shortLabels}
           helpText="This help text has been passed through a prop!"
         />
@@ -151,7 +142,7 @@ storiesOf("Blocks|Checkbox Group", module)
           "Checkbox Group",
         )}
         isRequired={boolean("required", false, "Checkbox Group")}
-        inputLabel={text("Input Label", "Input Label", "Checkbox Group")}
+        label={text("Input Label", "Input Label", "Checkbox Group")}
         helpText={text("Help Text", "Have you been helped yet?", "Checkbox Group")}
         align={options(
           "box align",
@@ -163,8 +154,7 @@ storiesOf("Blocks|Checkbox Group", module)
           { display: "select" },
           "Checkbox Group",
         )}
-        error={boolean("error", false, "Checkbox Group")}
-        errorText={text("Error Text", "Stay with my, buddy...we can fix this!", "Checkbox Group")}
+        errorText={text("Error Text", "", "Checkbox Group")}
         disabled={boolean("disabled", false, "Checkbox Group")}
       ></CheckboxGroup>
     );

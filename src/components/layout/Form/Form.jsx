@@ -63,6 +63,7 @@ const SectionName = styled.h5`
 `;
 
 const Label = styled.label`
+  grid-column: 1 / -1;
   font-weight: 700;
   user-select: none;
   cursor: pointer;
