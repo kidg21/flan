@@ -66,6 +66,7 @@ function TextInput({
   disabled,
   children,
   className,
+  onChange,
 }) {
   let as;
   let inputTextColor;
@@ -96,8 +97,6 @@ function TextInput({
   return (
     <TextInputContainer
       id={id}
-      isRequired={isRequired}
-      disabled={isDisabled}
       inputTextColor={inputTextColor}
       className={className}
     >
@@ -118,6 +117,7 @@ function TextInput({
         inputCaretColor={inputCaretColor}
         inputResize={inputResize}
         inputSelectColor={inputSelectColor}
+        onChange={onChange}
       />
       {helpText ? <HelpText>{helpText}</HelpText> : null}
       {errorText && !disabled ? <ErrorText>{errorText}</ErrorText> : null}
@@ -139,6 +139,24 @@ TextInput.propTypes = {
   className: PropTypes.string,
   disabled: PropTypes.bool,
   children: PropTypes.node,
+  onChange: PropTypes.func,
+};
+
+TextInput.defaultProps = {
+  id: null,
+  type: null,
+  pattern: null,
+  value: null,
+  inputLabel: null,
+  isRequired: false,
+  placeholder: null,
+  helpText: null,
+  errorText: null,
+  state: null,
+  style: null,
+  disabled: null,
+  children: null,
+  onChange: null,
 };
 TextInput.defaultProps = {
   id: null,

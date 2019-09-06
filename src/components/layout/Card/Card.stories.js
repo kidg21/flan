@@ -17,9 +17,9 @@ storiesOf("Layout|Card", module)
   .addDecorator(checkA11y)
   .add("Card- 'playing with children'", () => (
     <Card>
-      <Button buttonLabel="Button" />
-      <Button buttonLabel="Button" />
-      <Button buttonLabel="Button" />
+      <Button label="Button" />
+      <Button label="Button" />
+      <Button label="Button" />
     </Card>
   ));
 

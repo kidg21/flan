@@ -69,15 +69,15 @@ function Calendar({
   let inputTextColor;
   let inputBorderColorHover;
   let inputSelectColor;
-  if (errorText && !disabled) {
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  if (errorText && !isDisabled) {
     inputTextColor = colors.alert;
     inputBorderColor = colors.alert_light;
     inputBorderColorHover = colors.alert_light;
     inputSelectColor = colors.alert;
   }
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   const inputTypes = type.toLowerCase() === "datetime" ? ["date", "time"] : [type.toLowerCase()];
-  let inputElements = inputTypes.map((currType) => {
+  const inputElements = inputTypes.map((currType) => {
     return (
       <Input
         disabled={isDisabled}
@@ -95,7 +95,7 @@ function Calendar({
       />
     );
   });
-  
+
   let inputContainer = inputElements;
   if (inputTypes.length > 1) {
     inputContainer = (
@@ -116,7 +116,7 @@ function Calendar({
       {label ? <InputLabel isRequired={isRequired} label={label} /> : null}
       {inputContainer}
       {helpText ? <HelpText>{helpText}</HelpText> : null}
-      {errorText && !disabled ? <ErrorText>{errorText}</ErrorText> : null}
+      {errorText && !isDisabled ? <ErrorText>{errorText}</ErrorText> : null}
     </CalendarContainer>
   );
 }
