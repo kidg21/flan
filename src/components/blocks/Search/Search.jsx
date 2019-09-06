@@ -16,7 +16,9 @@ const SearchContainer = styled.div`
   ${IconWrapper} {
     position: absolute;
     right: 0;
-    background-color: ${colors.white};
+    background-color: ${(props) => {
+    return props.theme.background;
+  }};
     margin: 0.2em;
     padding: 0.5em;
     cursor: pointer;
@@ -42,4 +44,4 @@ Search.propTypes = {
 
 export default Search;
 
-///this one will need more work on setting up for logic like Autocomplete and everything else
+// /this one will need more work on setting up for logic like Autocomplete and everything else

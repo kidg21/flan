@@ -12,7 +12,9 @@ export const PlaceholderText = css`
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 1px;
-  color: hsl(34, 5%, 36%);
+  color: ${(props) => {
+    return props.theme.textColor;
+  }};
   padding: 0.5rem;
   white-space: pre-wrap;
 `;

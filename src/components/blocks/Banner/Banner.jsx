@@ -11,19 +11,18 @@ const StyledBanner = styled.div`
   align-content: flex-start;
   position: relative;
   background-color: ${props =>
-    props.inverse ? colors.grey_light_glass : colors.grey_dark_glass};
-  color: ${props => (props.inverse ? "" : colors.white)};
-  border: 2px solid;
-  border-color: ${props => props.borderColor || ""};
-  border-width: ${props => (props.inverse ? "1px" : "")};
+    props.theme.background};
+  color: ${props => (props.theme.textColor)};
+  border: 1px solid;
+  border-color: ${props => props.theme[props.borderColor] || props.theme.grey };
   border-radius: 5px;
   padding: 1em;
   width: 100%;
 `;
 
 const StatusBadge = styled.div`
-  background-color: ${props => props.badgeBG || ""};
-  color: ${props => (props.badgeBG ? colors.white : "")};
+  background-color: ${props => props.theme[props.badgeBG] || ""};
+  color: ${props => (props.badgeBG ? props.theme.textColorInverse : "")};
   padding: ${props => (props.badgeBG ? ".5em" : "")};
   margin-right: 1em;
   border-radius: 100%;
@@ -34,8 +33,6 @@ const BannerImage = styled.img`
   flex: none;
   width: 3em;
   margin-right: 1em;
-  border: 1px solid;
-  border-color: ${props => (props.inverse ? colors.grey_60 : colors.grey_40)};
 `;
 
 const Message = styled.section`
@@ -80,13 +77,12 @@ function Banner({
   icon,
   img,
   link,
-  inverse,
   onClick,
   onClose,
   style,
 }) {
   let bannerType;
-  let color = colors.grey_40;
+  let color;
   let badgeBG = color;
   switch (type) {
     case "media":
@@ -95,11 +91,11 @@ function Banner({
           <Icon icon={icon} size="2x" fixedWidth />
         </StatusBadge>
       ) : img ? (
-        <BannerImage src={img} inverse={inverse} />
+        <BannerImage src={img} />
       ) : null;
       break;
     case "info":
-      color = colors.anchor;
+      color = "info";
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
@@ -108,7 +104,7 @@ function Banner({
       );
       break;
     case "success":
-      color = colors.success;
+      color = "success";
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
@@ -117,7 +113,7 @@ function Banner({
       );
       break;
     case "warning":
-      color = colors.warning;
+      color = "warning";
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
@@ -126,7 +122,7 @@ function Banner({
       );
       break;
     case "alert":
-      color = colors.alert;
+      color = "alert";
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
@@ -147,7 +143,6 @@ function Banner({
       icon={icon}
       img={img}
       borderColor={color}
-      inverse={inverse}
       style={style}
     >
       {bannerType}

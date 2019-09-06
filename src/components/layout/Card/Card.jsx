@@ -11,10 +11,9 @@ const CardPiece = styled.div`
   flex: none;
   padding: ${props => props.padding || ""};
   width: 100%;
-  /** TODO: add 'background' and 'interaction' props */
-  /* color: ${props => props.textColor || ""}; */
-  /* background-color: ${props => props.backgroundColor || ""}; */
-  background: ${colors.white};
+  background: ${props => {
+    return props.theme.background;
+  }};
   &:hover {
     box-shadow: ${props => (props.hover ? shadows.dropShadow : "")};
     cursor: ${props => (props.hover ? "pointer" : "")};
@@ -23,6 +22,9 @@ const CardPiece = styled.div`
   &:empty {
     &:before {
       ${PlaceholderText}
+      color: ${props => {
+        return props.theme.textColor;
+      }};
       content: "Card Piece";
       padding: 2rem;
     }
@@ -37,6 +39,9 @@ const CardWrapper = styled(CardPiece)`
   &:empty {
     &:before {
       ${PlaceholderText}
+      color: ${props => {
+        return props.theme.textColor;
+      }};
       content: "Card";
       padding: 2rem;
     }

@@ -1,5 +1,31 @@
 import { css } from "styled-components";
 
+export const lightTheme = {
+  background: "#ffffff",
+  textColor: "#5e5a62",
+  textColorInverse: "#ffffff",
+  primary: "#2b7bb1",
+  secondary: "#759d2d",
+  info: "#206bca",
+  alert: "#b50000",
+  warning: "#ca8720",
+  success: "#008932",
+  grey: "lightgrey",
+};
+
+export const darkTheme = {
+  background: "#333332",
+  textColor: "#ffffff",
+  textColorInverse: "#000000",
+  primary: "#60ccfc",
+  secondary: "#a9cf62",
+  info: "#7bc7fa",
+  alert: "#eb8775",
+  warning: "#e5da66",
+  success: "#afd777",
+  grey: "lightgrey",
+};
+
 // Codes for color palette
 export const colors = {
   white: "hsl(0, 100%, 100%)",
@@ -36,11 +62,11 @@ export const colors = {
 };
 
 export const Darken = css`
-  filter: brightness(95%);
+  filter: brightness(85%) contrast(150%);
 `;
 
 export const Lighten = css`
-  filter: brightness(105%);
+  filter: brightness(115%);
 `;
 
 // Typefaces

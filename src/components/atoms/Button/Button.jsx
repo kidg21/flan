@@ -1,17 +1,11 @@
 import React, { useContext } from "react";
 import styled, { css } from "styled-components";
-import { colors } from "Variables";
+import { Lighten, Darken } from "Variables";
 import { DisabledContext } from "States";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 
 /** TODO: move these to Variables */
-const buttonHover = css`
-  filter: brightness(85%) contrast(150%);
-`;
-const buttonActive = css`
-  filter: brightness(105%);
-`;
 
 const StyledButton = styled.button`
   display: flex;
@@ -26,10 +20,10 @@ const StyledButton = styled.button`
   justify-content: center;
   align-items: center;
   color: ${(props) => {
-    return props.textColor || colors.anchor;
+    return props.theme[props.textColor] || props.theme.primary;
   }};
   background-color: ${(props) => {
-    return props.backgroundColor || colors.white;
+    return props.theme[props.backgroundColor] || props.theme.background;
   }};
   border: 1px solid;
   border-radius: 4px;
@@ -43,11 +37,11 @@ const StyledButton = styled.button`
   transition: all 0.15s ease;
 
   &:hover {
-    ${buttonHover}
+    ${Darken}
   }
 
   &:active {
-  ${buttonActive}
+    ${Lighten}
   }
 
   &[disabled] {
@@ -79,28 +73,28 @@ function Button({
   let labelSize;
   switch (color) {
     case "success":
-      buttonColor = colors.success;
+      buttonColor = "success";
       textColor = buttonColor;
       break;
     case "warning":
-      buttonColor = colors.warning;
+      buttonColor = "warning";
       textColor = buttonColor;
       break;
     case "alert":
-      buttonColor = colors.alert;
+      buttonColor = "alert";
       textColor = buttonColor;
       break;
     default:
-      buttonColor = colors.anchor;
+      buttonColor = "primary";
       break;
   }
 
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
-    textColor = colors.grey_60;
-    backgroundColor = colors.grey_20;
+    textColor = "textColor";
+    backgroundColor = "grey";
   } else if (type && type.toLowerCase() === "solid") {
-    textColor = colors.white;
+    textColor = "textColorInverse";
     backgroundColor = buttonColor;
   }
 

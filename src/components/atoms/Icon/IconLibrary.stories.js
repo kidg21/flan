@@ -8,7 +8,7 @@ import { CardList } from "layout/Card";
 import { iconsApp, iconsBrand, iconsNavigation } from "atoms/Icon/libraryIcon.data";
 
 /** TODO: Break 'App' icon set into subcategories */
-storiesOf("Work|Icon Library", module)
+storiesOf("Application/Libraries/Icon Library", module)
   .addDecorator(Padding)
   .add("App Icons", () => {
     return (
@@ -22,7 +22,7 @@ storiesOf("Work|Icon Library", module)
     );
   });
 
-storiesOf("Work|Icon Library", module)
+storiesOf("Application/Libraries/Icon Library", module)
   .addDecorator(Padding)
   .add("Navigation Icons", () => {
     return (
@@ -36,7 +36,7 @@ storiesOf("Work|Icon Library", module)
     );
   });
 
-storiesOf("Work|Icon Library", module)
+storiesOf("Application/Libraries/Icon Library", module)
   .addDecorator(Padding)
   .add("Brand Icons", () => {
     return (

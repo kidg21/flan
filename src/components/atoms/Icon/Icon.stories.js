@@ -11,7 +11,7 @@ import Icon from "atoms/Icon";
 import IconNotes from "atoms/Icon/Icon.md";
 import { iconsType, iconsSize } from "atoms/Icon/libraryIcon.data";
 
-storiesOf("Work|Atoms/Icon/", module)
+storiesOf("Atoms/Icon/", module)
   .addDecorator(Padding)
   .addDecorator(withKnobs)
   .addParameters({

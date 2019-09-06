@@ -5,12 +5,7 @@ import styled from "styled-components";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
 import { withInfo } from "@storybook/addon-info";
-import {
-  withKnobs,
-  text,
-  select,
-  optionsKnob as options,
-} from "@storybook/addon-knobs";
+import { withKnobs, text, select, optionsKnob as options } from "@storybook/addon-knobs";
 import { colors } from "Variables";
 import Command from "atoms/Command";
 import CommandNotes from "./Command.md";
@@ -55,17 +50,17 @@ storiesOf("Atoms|Command", module)
             "name",
             {
               "add to list": "add to list",
-              address: "address",
-              apn: "apn",
-              bookmark: "bookmark",
-              contacts: "contacts",
-              gps: "gps",
-              menu: "menu",
-              notifications: "notifications",
-              print: "print",
-              profile: "profile",
-              settings: "settings",
-              share: "share",
+              "address": "address",
+              "apn": "apn",
+              "bookmark": "bookmark",
+              "contacts": "contacts",
+              "gps": "gps",
+              "menu": "menu",
+              "notifications": "notifications",
+              "print": "print",
+              "profile": "profile",
+              "settings": "settings",
+              "share": "share",
               "---------------------": "",
               "Custom Command": null,
             },
@@ -76,8 +71,8 @@ storiesOf("Atoms|Command", module)
             "align",
             {
               "left ( default )": "default",
-              right: "right",
-              center: "center",
+              "right": "right",
+              "center": "center",
             },
             "default",
             { display: "radio" },
@@ -86,9 +81,9 @@ storiesOf("Atoms|Command", module)
           size={options(
             "size",
             {
-              small: "small",
+              "small": "small",
               "standard ( default )": "default",
-              large: "large",
+              "large": "large",
             },
             "default",
             { display: "radio" },
@@ -99,12 +94,12 @@ storiesOf("Atoms|Command", module)
             "icon",
             {
               "user-circle": "user-circle",
-              check: "check",
-              code: ["far", "code"],
-              flag: "flag",
-              home: "home",
-              cog: "cog",
-              phone: "phone",
+              "check": "check",
+              "code": ["far", "code"],
+              "flag": "flag",
+              "home": "home",
+              "cog": "cog",
+              "phone": "phone",
             },
             "user-circle",
             "Custom Props",
@@ -123,15 +118,14 @@ storiesOf("Atoms|Command", module)
           <u>Command Alignment</u>
         </Title>
         <SubTitle>
-          The standard Command is left-aligned with its Icon on the left. Set
-          the &apos;align&apos; prop to &apos;center&apos; in order to
-          center-align the Command placing its Icon atop the label. Set the
-          &apos;align&apos; prop to &apos;right&apos; to right-align the Command
-          with its Icon on the right.
+          The standard Command is left-aligned with its Icon on the left. Set the &apos;align&apos;
+          prop to &apos;center&apos; in order to center-align the Command placing its Icon atop the
+          label. Set the &apos;align&apos; prop to &apos;right&apos; to right-align the Command with
+          its Icon on the right.
         </SubTitle>
-        <Command label="Icon-Left" />
-        <Command label="Icon-Top" align="center" />
-        <Command label="Icon-Right" align="right" />
+        <Command label="Icon-Left" icon="edit" />
+        <Command label="Icon-Top" align="center" icon="edit" />
+        <Command label="Icon-Right" align="right" icon="edit" />
       </Grid>
     );
   })
@@ -143,11 +137,11 @@ storiesOf("Atoms|Command", module)
           <u>Command State</u>
         </Title>
         <SubTitle>
-          The standard Command uses an anchor tag and inherits anchor styling.
-          To disable a Command, use the &apos;disabled&apos; prop.
+          The standard Command uses an anchor tag and inherits anchor styling. To disable a Command,
+          use the &apos;disabled&apos; prop.
         </SubTitle>
-        <Command label="Active" />
-        <Command label="Disabled" disabled />
+        <Command label="Active" icon="edit" />
+        <Command label="Disabled" disabled icon="edit" />
       </Grid>
     );
   })
@@ -158,12 +152,12 @@ storiesOf("Atoms|Command", module)
           <u>Command Size</u>
         </Title>
         <SubTitle>
-          To override the standard size, set the &apos;size&apos; prop to
-          &apos;small&apos;, or &apos;large&apos;.
+          To override the standard size, set the &apos;size&apos; prop to &apos;small&apos;, or
+          &apos;large&apos;.
         </SubTitle>
-        <Command label="Small" size="small" />
-        <Command label="Standard" />
-        <Command label="Large" size="large" />
+        <Command label="Small" size="small" icon="edit" />
+        <Command label="Standard" icon="edit" />
+        <Command label="Large" size="large" icon="edit" />
       </Grid>
     );
   });
@@ -177,9 +171,8 @@ storiesOf("Application|Libraries/", module)
           <u>List of Commands</u>
         </Title>
         <SubTitle>
-          The Command is an interactive UI element that pairs an icon and a
-          label. Use a Command when a user&apos;s action is intended to run a
-          workflow or function.
+          The Command is an interactive UI element that pairs an icon and a label. Use a Command
+          when a user&apos;s action is intended to run a workflow or function.
         </SubTitle>
         <SectionTitle>Standard Commands</SectionTitle>
         <Command name="add to list" />

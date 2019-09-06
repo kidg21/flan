@@ -14,13 +14,10 @@ import {
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
 import Card, { CardList } from "layout/Card";
+import Title from "base/Typography";
 import Badge from "./Badge";
 import BadgeNotes from "./Badge.md";
 
-const Title = styled.h6`
-  text-align: center;
-  margin: 1em;
-`;
 
 storiesOf("Atoms|Badge", module)
   .addParameters({
@@ -39,7 +36,7 @@ storiesOf("Atoms|Badge", module)
       <Grid columns="4">
         <Card>
           <Badge label="1" />
-          <Title>Badge</Title>
+          <Title text="Badge"/>
         </Card>
       </Grid>
     )),
@@ -89,7 +86,7 @@ storiesOf("Atoms|Badge", module)
             "Badge",
           )}
         />
-        <Title>Badge</Title>
+        <Title text="Badge"/>
       </Card>
     </Grid>
   ))
@@ -98,104 +95,104 @@ storiesOf("Atoms|Badge", module)
     <CardList columns="4" gap="large">
       <Card>
         <Badge label="1" />
-        <Title>1-Digit</Title>
+        <Title text="1-Digit"/>
       </Card>
       <Card>
         <Badge label="21" />
-        <Title>2-Digit</Title>
+        <Title text="2-Digit"/>
       </Card>
       <Card>
         <Badge label="321" />
-        <Title>3-Digit</Title>
+        <Title text="3-Digit"/>
       </Card>
       <Card>
         <Badge label="4321" />
-        <Title>4-Digit</Title>
+        <Title text="4-Digit"/>
       </Card>
 
       <Card>
         <Badge label="9+" />
-        <Title>Max 10</Title>
+        <Title text="Max 10"/>
       </Card>
       <Card>
         <Badge label="99+" />
-        <Title>Max 100</Title>
+        <Title text="Max 100"/>
       </Card>
       <Card>
         <Badge label="999+" />
-        <Title>Max 1K</Title>
+        <Title text="Max 1k"/>
       </Card>
       <Card>
         <Badge label="9999+" />
-        <Title>Max 10K</Title>
+        <Title text="Max 10k"/>
       </Card>
 
       <Card>
         <Badge icon="user" type="info" />
-        <Title>Icon</Title>
+        <Title text="Icon"/>
       </Card>
       <Card>
         <Badge icon="check" type="success" />
-        <Title>Icon</Title>
+        <Title text="Icon"/>
       </Card>
       <Card>
         <Badge icon="alert" type="warning" />
-        <Title>Icon</Title>
+        <Title text="Icon"/>
       </Card>
       <Card>
         <Badge icon="mail_solid" type="alert" />
-        <Title>Icon</Title>
+        <Title text="Icon"/>
       </Card>
 
       <Card>
         <Badge label="Info" type="info" />
-        <Title>Info</Title>
+        <Title text="Info"/>
       </Card>
       <Card>
         <Badge label="Success" type="success" />
-        <Title>Success</Title>
+        <Title text="Success"/>
       </Card>
       <Card>
         <Badge label="Warning" type="warning" />
-        <Title>Warning</Title>
+        <Title text="Warning"/>
       </Card>
       <Card>
         <Badge label="Alert" />
-        <Title>Alert</Title>
+        <Title text="Alert"/>
       </Card>
 
       <Card>
         <Badge label="call" type="dark" />
-        <Title>Message</Title>
+        <Title text="Message"/>
       </Card>
       <Card>
         <Badge label="the" type="dark" />
-        <Title>Message</Title>
+        <Title text="Message"/>
       </Card>
       <Card>
         <Badge label="police" type="dark" />
-        <Title>Message</Title>
+        <Title text="Message"/>
       </Card>
       <Card>
         <Badge icon="call" type="dark" />
-        <Title>Message</Title>
+        <Title text="Message"/>
       </Card>
 
       <Card>
         <Badge label="1" position="topRight" />
-        <Title>Top-Right</Title>
+        <Title text="Top-Right"/>
       </Card>
       <Card>
         <Badge label="1" position="bottomRight" />
-        <Title>Bottom-Right</Title>
+        <Title text="Bottom-Right"/>
       </Card>
       <Card>
         <Badge label="1" position="topLeft" />
-        <Title>Top-Left</Title>
+        <Title text="Top-Left"/>
       </Card>
       <Card>
         <Badge label="1" position="bottomLeft" />
-        <Title>Bottom-Left</Title>
+        <Title text="Bottom-Left"/>
       </Card>
     </CardList>
   ));

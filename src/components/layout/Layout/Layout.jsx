@@ -6,35 +6,64 @@ import { PlaceholderText } from "helpers/Placeholders.jsx";
 
 const FlexWrapper = styled.div`
   display: flex;
-  flex-direction: ${props => props.flexDirection || "column"};
+  flex-direction: ${(props) => {
+    return props.flexDirection || "column";
+  }};
   flex-wrap: nowrap;
   justify-content: flex-start;
-  flex: ${props => props.setFlex || "1 1 auto"};
+  flex: ${(props) => {
+    return props.setFlex || "1 1 auto";
+  }};
   order: 0;
-  position: ${props => props.setPosition || "absolute"};
-  top: ${props => props.top || "0"};
-  right: ${props => props.right || ""};
-  bottom: ${props => props.bottom || "0"};
-  left: ${props => props.left || ""};
-  width: ${props => props.width || "100%"};
-  height: ${props => props.height || "100%"};
-  z-index: ${props => props.zIndex || "0"};
+  position: ${(props) => {
+    return props.setPosition || "absolute";
+  }};
+  top: ${(props) => {
+    return props.top || "0";
+  }};
+  right: ${(props) => {
+    return props.right || "";
+  }};
+  bottom: ${(props) => {
+    return props.bottom || "0";
+  }};
+  left: ${(props) => {
+    return props.left || "";
+  }};
+  width: ${(props) => {
+    return props.width || "100%";
+  }};
+  height: ${(props) => {
+    return props.height || "100%";
+  }};
+  z-index: ${(props) => {
+    return props.zIndex || "0";
+  }};
   max-width: 100%;
   max-height: 100%;
   transition: all 0.3s ease-in-out;
-  overflow: ${props => props.setOverflow || "hidden"};
-  background-color: ${props => props.backgroundColor || "lightblue"};
-  transform: ${props => props.displayState || ""};
+  border: 1px solid lightgrey;
+  overflow: ${(props) => {
+    return props.setOverflow || "hidden";
+  }};
+  background-color: ${(props) => {
+    return props.theme.background;
+  }};
+  transform: ${(props) => {
+    return props.displayState || "";
+  }};
   &:empty {
     &:before {
       ${PlaceholderText};
       content: "{ Layout Wrapper }";
+      color: ${(props) => {
+    return props.theme.textColor;
+  }};
     }
   }
 `;
 
 function Layout({
-  backgroundColor,
   bottom,
   children,
   flexDirection,
@@ -58,7 +87,6 @@ function Layout({
   switch (type) {
     case "outerWrapper":
       setPosition = "relative";
-      backgroundColor = "black";
       if (screenMedium.matches) {
         flexDirection = "row";
       } else if (screenSmall.matches) {
@@ -68,10 +96,8 @@ function Layout({
     case "innerWrapper":
       setPosition = "relative";
       setOverflow = "visible";
-      backgroundColor = "lightgreen";
       break;
     case "leftWrapper":
-      backgroundColor = "violet";
       displayState = "translate3d(-100%, 0px, 0px)";
       if (screenLarge.matches) {
         width = "20%";
@@ -82,14 +108,11 @@ function Layout({
       }
       break;
     case "mainWrapper":
-      backgroundColor = "grey";
       break;
     case "middleWrapper":
       height = "auto";
-      backgroundColor = "lightgrey";
       break;
     case "bottomWrapper":
-      backgroundColor = "teal";
       if (screenLarge.matches) {
         top = "60%";
         height = "40%";
@@ -103,7 +126,6 @@ function Layout({
       break;
     case "rightWrapper":
       zIndex = "1";
-      backgroundColor = "orange";
       if (screenLarge.matches) {
         left = "80%";
         width = "20%";
@@ -118,7 +140,6 @@ function Layout({
     case "controlsWrapper":
       setPosition = "relative";
       setFlex = "0 0 auto";
-      backgroundColor = "red";
       if (screenLarge.matches) {
         width = "min-content";
       } else if (screenMedium.matches) {
@@ -188,7 +209,6 @@ function Layout({
   }
   return (
     <FlexWrapper
-      backgroundColor={backgroundColor}
       bottom={bottom}
       displayState={displayState}
       flexDirection={flexDirection}

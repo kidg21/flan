@@ -22,7 +22,7 @@ const CommandContainer = styled.a`
     return props.commandSize || "";
   }};
   color: ${props => {
-    return props.commandColor || "";
+    return props.theme[props.commandColor] || "";
   }};
   user-select: none;
   cursor: ${props => {
@@ -33,10 +33,14 @@ const CommandContainer = styled.a`
   }};
   transition: all 0.3s ease;
   &:hover {
-    color: ${colors.anchor_dark};
+    color: ${(props) => {
+      return props.theme.info;
+    }};;
   }
   &:active {
-    color: ${colors.anchor_light};
+    color: ${(props) => {
+      return props.theme.info;
+    }};
   }
 `;
 
@@ -50,7 +54,9 @@ const CommandName = styled(Title)`
   text-overflow: ellipsis;
   margin: 0;
   &:focus {
-    border: 1px solid ${colors.anchor};
+    border: 1px solid  ${(props) => {
+      return props.theme.info;
+    }};
     outline: none;
   }
 `;
@@ -64,7 +70,7 @@ function Command({ id, name, label, icon, align, size, onClick, disabled }) {
   let alignIcon = "'icon name'";
   const justifyCommand = "flex-start";
   let justifyIcon = "flex-start";
-  let commandColor = colors.anchor;
+  let commandColor = "info";
   let commandSize = "inherit";
   switch (name) {
     case "add to list":
@@ -132,7 +138,7 @@ function Command({ id, name, label, icon, align, size, onClick, disabled }) {
 
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (isDisabled) commandColor = colors.grey_40;
+  if (isDisabled) commandColor = "grey";
 
   switch (size) {
     case "small":
@@ -158,7 +164,7 @@ function Command({ id, name, label, icon, align, size, onClick, disabled }) {
       onClick={onClick}
     >
       {icon ? <CommandIcon icon={icon} /> : null}
-      <CommandName title={label} weight="normal" />
+      <CommandName text={label} weight="normal" />
     </CommandContainer>
   );
 }
@@ -174,9 +180,9 @@ Command.propTypes = {
   label: PropTypes.string,
 };
 
-Command.defaultProps = {
-  label: "Command",
-  icon: null,
-};
+// Command.defaultProps = {
+//   label: "Command",
+//   icon: null,
+// };
 
 export { Command as default };

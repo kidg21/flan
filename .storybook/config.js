@@ -1,8 +1,9 @@
 import React, { Fragment } from "react";
 import { configure, addParameters, addDecorator } from "@storybook/react";
-import { fonts, colors, shadows } from "Variables";
-import { themes } from "@storybook/theming";
+import { fonts, colors, lightTheme, darkTheme, shadows } from "Variables";
+import { ThemeProvider } from "styled-components";
 import FlanTheme from "./FlanTheme";
+import { withKnobs, optionsKnob as options } from "@storybook/addon-knobs";
 import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
 import { withA11y } from "@storybook/addon-a11y";
 import { withNotes } from "@storybook/addon-notes";
@@ -12,15 +13,30 @@ import { setDefaults } from "@storybook/addon-info";
 
 // Create and add global styles
 import GlobalStyles from "GlobalStyles";
+
 function withGlobalStyles(storyFn) {
   return (
     <Fragment>
       <GlobalStyles />
-      {storyFn()}
+      <ThemeProvider
+        theme={options(
+          "Theme",
+          {
+            Light: lightTheme,
+            Dark: darkTheme,
+          },
+          lightTheme,
+          { display: "select" },
+          "Badge",
+        )}
+      >
+        {storyFn()}
+      </ThemeProvider>
     </Fragment>
   );
 }
 addDecorator(withGlobalStyles);
+addDecorator(withKnobs);
 
 // Configure Viewport
 const newViewports = {
@@ -28,8 +44,8 @@ const newViewports = {
     name: "1080P",
     styles: {
       width: "1920px",
-      height: "1080px"
-    }
+      height: "1080px",
+    },
   },
   kindleFire2: {
     name: "Kindle Fire 2",
@@ -105,26 +121,10 @@ setDefaults({
 // const req = require.context("../src/components", true, /.stories.js$/)
 const atoms = require.context("../src/components/atoms", true, /.stories.js$/);
 const base = require.context("../src/components/base", true, /.stories.js$/);
-const blocks = require.context(
-  "../src/components/blocks",
-  true,
-  /.stories.js$/,
-);
-const elements = require.context(
-  "../src/components/elements",
-  true,
-  /.stories.js$/,
-);
-const layout = require.context(
-  "../src/components/layout",
-  true,
-  /.stories.js$/,
-);
-const templates = require.context(
-  "../src/components/templates",
-  true,
-  /.stories.js$/,
-);
+const blocks = require.context("../src/components/blocks", true, /.stories.js$/);
+const elements = require.context("../src/components/elements", true, /.stories.js$/);
+const layout = require.context("../src/components/layout", true, /.stories.js$/);
+const templates = require.context("../src/components/templates", true, /.stories.js$/);
 const work = require.context("../src/components/work", true, /.stories.js$/);
 function loadStories() {
   // req.keys().forEach(filename => req(filename))

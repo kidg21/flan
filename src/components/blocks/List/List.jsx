@@ -15,24 +15,32 @@ const ListWrapper = styled.ul`
 `;
 
 const ListTitle = styled(Title)`
-  color: ${colors.grey_dark};
-  border-bottom: 1px solid ${colors.grey_20};
+  color: ${props => {
+    return props.theme.textColor;
+  }};
+  border-bottom: 1px solid
+    ${props => {
+      return props.theme.grey;
+    }};
   padding: 0.75em 1em;
   tabindex: -1;
 `;
 
 const ListItemWrapper = styled.li`
   color: ${props => {
-    return props.itemColor || "";
+    return props.theme[props.itemColor];
   }};
   background-color: ${props => {
-    return props.itemBGColor || colors.white;
+    return props.theme[props.itemBGColor] || props.theme.background;
   }};
   border-style: solid;
   border-width: ${props => {
     return props.itemBorder || "0";
   }};
-  border-bottom: 1px solid ${colors.grey_light};
+  border-bottom: 1px solid
+    ${props => {
+      return props.theme.grey;
+    }};
   cursor: ${props => {
     return props.interactive ? "pointer" : "";
   }};
@@ -48,8 +56,12 @@ const ListItemWrapper = styled.li`
     cursor: not-allowed;
     pointer-events: none;
     user-select: none;
-    color: ${colors.grey_40};
-    background-color: ${colors.grey_light};
+    color: ${props => {
+      return props.theme.grey;
+    }};
+    background-color: ${props => {
+      return props.theme.grey;
+    }};
     border-left: none;
   }
 `;
@@ -80,7 +92,7 @@ function ListItem({
   let itemBorder;
   switch (state) {
     case "active":
-      itemColor = colors.success;
+      itemColor = "success";
       itemBorder = "0 0 0 .5em";
       break;
     default:
@@ -88,24 +100,20 @@ function ListItem({
   }
   switch (type) {
     case "info":
-      itemColor = colors.white;
-      itemBGColor = colors.anchor_light;
+      itemColor = "background";
+      itemBGColor = "info";
       break;
     case "success":
-      itemColor = colors.white;
-      itemBGColor = colors.success_light;
+      itemColor = "background";
+      itemBGColor = "success";
       break;
     case "warning":
-      itemColor = colors.white;
-      itemBGColor = colors.warning_light;
+      itemColor = "background";
+      itemBGColor = "warning";
       break;
     case "alert":
-      itemColor = colors.white;
-      itemBGColor = colors.alert_light;
-      break;
-    case "inverse":
-      itemColor = colors.white;
-      itemBGColor = colors.grey_80;
+      itemColor = "background";
+      itemBGColor = "alert";
       break;
     default:
       break;
@@ -151,7 +159,7 @@ ListItem.propTypes = {
   description: PropTypes.string,
   children: PropTypes.node,
   state: PropTypes.oneOf(["active"]),
-  type: PropTypes.oneOf(["info", "success", "warning", "alert", "inverse"]),
+  type: PropTypes.oneOf(["info", "success", "warning", "alert"]),
   onClick: PropTypes.func,
   disabled: PropTypes.bool,
   interactive: PropTypes.bool,
