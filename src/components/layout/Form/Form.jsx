@@ -86,7 +86,7 @@ function InputLabel({ label, isRequired, className, children }) {
 }
 
 const Help = styled(Label)`
-  color: initial;
+  color: ${colors.grey_80};
   font-weight: initial;
   cursor: initial;
 `;
