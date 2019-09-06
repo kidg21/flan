@@ -3,6 +3,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
 import Panel from "layout/Panel";
+import { withInfo } from "@storybook/addon-info";
 import Grid from "layout/Grid";
 import Title, { Headline, SubTitle, Description, Link, Number } from "base/Typography";
 
