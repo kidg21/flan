@@ -3,9 +3,13 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import { colors } from "Variables";
 import { DisabledContext } from "States";
+import { InputLabel, HelpText, ErrorText } from "layout/Form";
 import Grid from "layout/Grid";
 
 const RadioWrapper = styled(Grid)`
+  color: ${(props) => {
+    return props.inputTextColor || "";
+  }};
   margin-bottom: 1rem;
 `;
 
@@ -47,57 +51,49 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
     return props.fillColorChecked || colors.success_light;
   }};
     border-color: ${(props) => {
-    return props.borderColorChecked || colors.success;
+    return props.borderColor || colors.success;
   }};
   }
   &:focus {
-    border-color: ${colors.success};
+    border-color: ${(props) => {
+    return props.outlineColor || colors.success;
+  }};
     outline: none;
   }
 `;
 
 const RadioLabel = styled.label`
   grid-area: label;
+  font-weight: 700;
   color: inherit;
   user-select: none;
   cursor: pointer;
 `;
 
-function RadioGroup({
-  id, columns, onChange, children,
-}) {
-  return (
-    <RadioWrapper id={id} columns={columns} onChange={onChange}>
-      {children}
-    </RadioWrapper>
-  );
-}
-
 function Radio({
-  id, label, name, value, type, align, checked, disabled,
+  align, checked, disabled, error, id, label, name, value,
 }) {
   let inputTextColor;
   let fillColor;
   let borderColor;
+  let outlineColor;
   let fillColorChecked;
   let borderColorChecked;
   let alignInput;
-  switch (type) {
-    case "error":
-      inputTextColor = colors.alert;
-      fillColor = colors.alert_tint;
-      borderColor = inputTextColor;
-      fillColorChecked = colors.alert_tint;
-      borderColorChecked = colors.alert;
-      break;
-    default:
-      break;
+  let tabIndex;
+  if (error && !disabled) {
+    inputTextColor = colors.alert;
+    fillColor = colors.alert_tint;
+    borderColor = colors.alert_light;
+    outlineColor = colors.alert_light;
+    fillColorChecked = colors.alert_tint;
+    borderColorChecked = colors.alert;
   }
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
-    inputTextColor = colors.grey_40;
     fillColor = colors.grey_20;
-    borderColor = inputTextColor;
+    fillColorChecked = colors.grey_20;
+    tabIndex = "-1";
   }
   switch (align) {
     case "right":
@@ -108,14 +104,21 @@ function Radio({
       break;
   }
   return (
-    <RadioContainer inputTextColor={inputTextColor} disabled={isDisabled} alignInput={alignInput}>
+    <RadioContainer
+      inputTextColor={inputTextColor}
+      disabled={isDisabled}
+      error={error}
+      alignInput={alignInput}
+    >
       <RadioInput
         id={id}
         name={name}
         value={value}
         checked={checked}
+        tabIndex={tabIndex}
         fillColor={fillColor}
         borderColor={borderColor}
+        outlineColor={outlineColor}
         fillColorChecked={fillColorChecked}
         borderColorChecked={borderColorChecked}
       />
@@ -123,6 +126,58 @@ function Radio({
     </RadioContainer>
   );
 }
+
+function RadioGroup({
+  align,
+  children,
+  columns,
+  data,
+  disabled,
+  error,
+  errorText,
+  helpText,
+  id,
+  inputLabel,
+  isRequired,
+  onChange,
+}) {
+  return (
+    <RadioWrapper
+      align={align}
+      columns={columns}
+      disabled={disabled}
+      error={error}
+      id={id}
+      onChange={onChange}
+    >
+      {children}
+    </RadioWrapper>
+  );
+}
+
+Radio.propTypes = {
+  align: PropTypes.oneOf(["default", "right"]),
+  checked: PropTypes.bool,
+  disabled: PropTypes.bool,
+  error: PropTypes.bool,
+  id: PropTypes.string,
+  label: PropTypes.string.isRequired,
+  /** The name property sets or returns the value of the name attribute of a radio button.
+   * You define radio button groups with the name property (radio buttons with the same name belong to the same group). */
+  name: PropTypes.string.isRequired,
+  /** The value property sets or returns the value of the value attribute of the radio button.
+   * Define different values for radio buttons in the same group, to identify (on the server side) which one was checked.  */
+  value: PropTypes.string,
+};
+
+Radio.defaultProps = {
+  align: null,
+  checked: null,
+  disabled: false,
+  error: false,
+  id: null,
+  value: null,
+};
 
 RadioGroup.propTypes = {
   id: PropTypes.string,
@@ -136,30 +191,6 @@ RadioGroup.defaultProps = {
   onChange: null,
   columns: null,
   children: null,
-};
-
-Radio.propTypes = {
-  id: PropTypes.string,
-  label: PropTypes.string.isRequired,
-  /** The name property sets or returns the value of the name attribute of a radio button.
-   * You define radio button groups with the name property (radio buttons with the same name belong to the same group). */
-  name: PropTypes.string.isRequired,
-  /** The value property sets or returns the value of the value attribute of the radio button.
-   * Define different values for radio buttons in the same group, to identify (on the server side) which one was checked.  */
-  value: PropTypes.string,
-  type: PropTypes.string,
-  align: PropTypes.oneOf(["default", "right"]),
-  checked: PropTypes.bool,
-  disabled: PropTypes.bool,
-};
-
-Radio.defaultProps = {
-  id: null,
-  value: null,
-  type: null,
-  align: null,
-  checked: null,
-  disabled: false,
 };
 
 export { Radio as default, RadioGroup };

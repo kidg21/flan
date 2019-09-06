@@ -3,15 +3,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
-import {
-  withKnobs,
-  text,
-  boolean,
-  radios,
-  select,
-  number,
-  optionsKnob as options,
-} from "@storybook/addon-knobs";
+import { withKnobs, text, boolean, optionsKnob as options } from "@storybook/addon-knobs";
 import Radio, { RadioGroup } from "atoms/Radio";
 import RadioNotes from "./Radio.md";
 
@@ -61,7 +53,7 @@ storiesOf("Atoms|Radio", module)
   .add(
     "Documentation",
     withInfo()(() => {
-      return <Radio {...radio1} />;
+      return <Radio id="radio1" label="Radio 1" name="radio-group" value="1" />;
     }),
   )
   .add("Skeleton", () => {
@@ -69,134 +61,94 @@ storiesOf("Atoms|Radio", module)
   })
   .add("Knobs", () => {
     return (
-      <RadioGroup
-        columns={options(
-          "columns",
+      <Radio
+        id="radio1"
+        label={text("label", "Radio Label", "Radio")}
+        name="radio-group"
+        value="1"
+        align={options(
+          "align",
           {
-            "wrap ( default )": "default",
-            one: "1",
-            two: "2",
-            three: "3",
-            four: "4",
+            left: null,
+            right: "right",
           },
-          "default",
-          { display: "radio" },
-          "Radio Group",
+          null,
+          { display: "select" },
+          "Radio",
         )}
-      >
-        <Radio
-          {...radio1}
-          type={options(
-            "radio 1 (state)",
-            {
-              default: "default",
-              error: "error",
-            },
-            "default",
-            { display: "inline-radio" },
-            "Radio 1",
-          )}
-          disabled={boolean("1-disabled", false, "Radio 1")}
-        />
-        <Radio
-          {...radio2}
-          type={options(
-            "radio 2 (state)",
-            {
-              default: "default",
-              error: "error",
-            },
-            "default",
-            { display: "inline-radio" },
-            "Radio 2",
-          )}
-          disabled={boolean("2-disabled", false, "Radio 2")}
-        />
-        <Radio
-          {...radio3}
-          type={options(
-            "radio 3 (state)",
-            {
-              default: "default",
-              error: "error",
-            },
-            "default",
-            { display: "inline-radio" },
-            "Radio 3",
-          )}
-          disabled={boolean("3-disabled", false, "Radio 3")}
-        />
-        <Radio
-          {...radio4}
-          type={options(
-            "radio 4 (state)",
-            {
-              default: "default",
-              error: "error",
-            },
-            "default",
-            { display: "inline-radio" },
-            "Radio 4",
-          )}
-          disabled={boolean("4-disabled", false, "Radio 4")}
-        />
-      </RadioGroup>
+        error={boolean("error", false, "Radio")}
+        disabled={boolean("disabled", false, "Radio")}
+      />
     );
   })
-  .add("Radio (States)", () => {
+  .add("Radio (states)", () => {
     return (
       <RadioGroup>
         <Radio id="default" value="default" label="Default" name="states" />
         <Radio id="selected" value="selected" label="Selected" name="states" checked />
-        <Radio id="error" value="error" label="Error" name="states" type="error" />
+        <Radio id="error" value="error" label="Error" name="states" error />
         <Radio id="disabled" value="disabled" label="Disabled" name="states" disabled />
       </RadioGroup>
     );
   })
-  .add("Radio Group (Responsive)", () => {
+  .add("Radio (alignment)", () => {
     return (
       <RadioGroup>
-        <Radio {...radio1} />
-        <Radio {...radio2} />
-        <Radio {...radio3} />
-        <Radio {...radio4} />
-        <Radio {...radioLong} />
+        <Radio id="standard" value="standard" label="Standard" name="alignment" />
+        <Radio
+          id="align-right"
+          value="align-right"
+          label="Right Aligned"
+          name="alignment"
+          align="right"
+        />
       </RadioGroup>
-    );
-  })
-  .add("Radio Group (2 columns)", () => {
-    return (
-      <RadioGroup columns="2">
-        <Radio {...radio1} />
-        <Radio {...radio2} />
-        <Radio {...radio3} />
-        <Radio {...radio4} />
-        <Radio {...radioLong} />
-      </RadioGroup>
-    );
-  })
-  .add("Radio Group (3 columns)", () => {
-    return (
-      <RadioGroup columns="3">
-        <Radio {...radio1} />
-        <Radio {...radio2} />
-        <Radio {...radio3} />
-        <Radio {...radio4} />
-      </RadioGroup>
-    );
-  })
-  .add("Radio Group (mixed columns)", () => {
-    return (
-      <>
-        <RadioGroup columns="2">
-          <Radio {...radio1} />
-          <Radio {...radio2} />
-          <Radio {...radio3} />
-          <Radio {...radio4} />
-        </RadioGroup>
-        <RadioGroup>
-          <Radio {...radioLong} />
-        </RadioGroup>
-      </>
     );
   });
+// .add("Radio Group (Responsive)", () => {
+//   return (
+//     <RadioGroup>
+//       <Radio {...radio1} />
+//       <Radio {...radio2} />
+//       <Radio {...radio3} />
+//       <Radio {...radio4} />
+//       <Radio {...radioLong} />
+//     </RadioGroup>
+//   );
+// })
+// .add("Radio Group (2 columns)", () => {
+//   return (
+//     <RadioGroup columns="2">
+//       <Radio {...radio1} />
+//       <Radio {...radio2} />
+//       <Radio {...radio3} />
+//       <Radio {...radio4} />
+//       <Radio {...radioLong} />
+//     </RadioGroup>
+//   );
+// })
+// .add("Radio Group (3 columns)", () => {
+//   return (
+//     <RadioGroup columns="3">
+//       <Radio {...radio1} />
+//       <Radio {...radio2} />
+//       <Radio {...radio3} />
+//       <Radio {...radio4} />
+//     </RadioGroup>
+//   );
+// })
+// .add("Radio Group (mixed columns)", () => {
+//   return (
+//     <>
+//       <RadioGroup columns="2">
+//         <Radio {...radio1} />
+//         <Radio {...radio2} />
+//         <Radio {...radio3} />
+//         <Radio {...radio4} />
+//       </RadioGroup>
+//       <RadioGroup>
+//         <Radio {...radioLong} />
+//       </RadioGroup>
+//     </>
+//   );
+// });
