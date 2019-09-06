@@ -153,8 +153,6 @@ function Command({ id, name, label, icon, align, size, onClick, disabled }) {
   return (
     <CommandContainer
       id={id}
-      label={label}
-      icon={icon}
       justifyCommand={justifyCommand}
       alignIcon={alignIcon}
       justifyIcon={justifyIcon}

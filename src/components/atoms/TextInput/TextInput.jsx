@@ -49,6 +49,7 @@ function TextInput({
   disabled,
   children,
   style,
+  onChange,
 }) {
   let as;
   let inputTextColor;
@@ -65,7 +66,9 @@ function TextInput({
     default:
       break;
   }
-  switch (state) {
+
+  let isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  switch (state && state.toLowerCase()) {
     case "error":
       inputTextColor = colors.alert;
       inputFillColor = colors.alert_tint;
@@ -74,7 +77,7 @@ function TextInput({
       inputCaretColor = colors.alert;
       placeholderColor = colors.alert_light;
       inputSelectColor = colors.alert;
-      disabled = false;
+      isDisabled = false;
       break;
     case "search":
       inputBorderColor = colors.grey_20;
@@ -88,7 +91,6 @@ function TextInput({
       break;
   }
 
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
     inputTextColor = colors.grey_40;
     inputFillColor = colors.grey_20;
@@ -99,8 +101,6 @@ function TextInput({
   return (
     <TextInputContainer
       id={id}
-      isRequired={isRequired}
-      disabled={isDisabled}
       inputTextColor={inputTextColor}
       style={style}
     >
@@ -122,6 +122,7 @@ function TextInput({
         placeholderColor={placeholderColor}
         inputCaretColor={inputCaretColor}
         inputSelectColor={inputSelectColor}
+        onChange={onChange}
       />
       {helpText ? <HelpText helpText={helpText} /> : null}
       {errorText ? <ErrorText errorText={errorText} /> : null}
@@ -144,6 +145,24 @@ TextInput.propTypes = {
   style: PropTypes.string,
   disabled: PropTypes.bool,
   children: PropTypes.node,
+  onChange: PropTypes.func,
+};
+
+TextInput.defaultProps = {
+  id: null,
+  type: null,
+  pattern: null,
+  value: null,
+  inputLabel: null,
+  isRequired: false,
+  placeholder: null,
+  helpText: null,
+  errorText: null,
+  state: null,
+  style: null,
+  disabled: null,
+  children: null,
+  onChange: null,
 };
 
 export { TextInput as default };

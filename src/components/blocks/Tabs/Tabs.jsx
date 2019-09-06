@@ -120,7 +120,7 @@ function Tab({
         <Button
           id={id}
           icon={icon}
-          buttonLabel={tabLabel}
+          label={tabLabel}
           onClick={onClick}
           isSelected={isSelected}
           disabled={isDisabled}
@@ -131,7 +131,7 @@ function Tab({
         <Button
           id={id}
           icon={icon}
-          buttonLabel={tabLabel}
+          label={tabLabel}
           onClick={onClick}
           isSelected={isSelected}
           disabled={isDisabled}

@@ -193,7 +193,7 @@ Text.propTypes = {
   font: PropTypes.oneOf(["numbers", "data"]),
   text: PropTypes.string,
   children: PropTypes.node,
-  count: PropTypes.string,
+  count: PropTypes.node,
   type: PropTypes.oneOf(["info", "success", "warning", "alert", "dark", "inverse", "light"]),
   size: PropTypes.oneOf(["tiny", "small", "large", "xlarge", "xxlarge"]),
   align: PropTypes.oneOf(["center", "right"]),
@@ -224,7 +224,7 @@ Text.defaultProps = {
   className: null,
 };
 
-function Headliine({ text, children, ...textProps }) {
+function Headline({ text, children, ...textProps }) {
   return (
     <Text
       separator="pipe"
@@ -238,11 +238,11 @@ function Headliine({ text, children, ...textProps }) {
     </Text>
   );
 }
-Headliine.defaultProps = {
+Headline.propTypes = {
   text: PropTypes.string,
   children: PropTypes.node,
 };
-Headliine.defaultProps = {
+Headline.defaultProps = {
   text: null,
   children: null,
 };
@@ -250,7 +250,7 @@ Headliine.defaultProps = {
 function Title({ text, children, ...textProps }) {
   return <Text {...textProps}>{text || children}</Text>;
 }
-Title.defaultProps = {
+Title.propTypes = {
   text: PropTypes.string,
   children: PropTypes.node,
 };
@@ -266,7 +266,7 @@ function SubTitle({ text, children, ...textProps }) {
     </Text>
   );
 }
-SubTitle.defaultProps = {
+SubTitle.propTypes = {
   text: PropTypes.string,
   children: PropTypes.node,
 };
@@ -282,7 +282,7 @@ function Description({ text, children, ...textProps }) {
     </Text>
   );
 }
-Description.defaultProps = {
+Description.propTypes = {
   text: PropTypes.string,
   children: PropTypes.node,
 };
@@ -300,7 +300,7 @@ function Link({
     </LinkedText>
   );
 }
-Link.defaultProps = {
+Link.propTypes = {
   text: PropTypes.string,
   children: PropTypes.node,
   title: PropTypes.string,
@@ -325,13 +325,12 @@ function Number({ text, children, ...textProps }) {
     </Text>
   );
 }
-Number.defaultProps = {
+Number.propTypes = {
   text: PropTypes.number.isRequired,
   children: PropTypes.node,
 };
 Number.defaultProps = {
-  text: null,
   children: null,
 };
 
-export { Title as default, Headliine, SubTitle, Description, Link, Number };
+export { Title as default, Headline, SubTitle, Description, Link, Number };

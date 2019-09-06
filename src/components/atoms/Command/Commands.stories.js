@@ -123,9 +123,9 @@ storiesOf("Atoms|Command", module)
           label. Set the &apos;align&apos; prop to &apos;right&apos; to right-align the Command with
           its Icon on the right.
         </SubTitle>
-        <Command label="Icon-Left" icon="edit" />
-        <Command label="Icon-Top" align="center" icon="edit" />
-        <Command label="Icon-Right" align="right" icon="edit" />
+        <Command label="Icon-Left" icon="bookmark" />
+        <Command label="Icon-Top" icon="bookmark" align="center" />
+        <Command label="Icon-Right" icon="bookmark" align="right" />
       </Grid>
     );
   })

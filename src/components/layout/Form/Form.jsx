@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
-import { fonts, colors, shadows } from "Variables";
+import { colors } from "Variables";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 import Grid from "layout/Grid";
 
@@ -17,7 +17,7 @@ const Form = styled.form`
     props.dark &&
     css`
       color: ${colors.grey_light};
-      background-color: ${props => colors.grey_dark};
+      background-color: ${colors.grey_dark};
       * {
         color: ${colors.grey_light} !important;
       }
@@ -31,7 +31,7 @@ const Form = styled.form`
   }
 `;
 
-const Title = styled.h3`
+const Header = styled.h3`
   color: ${colors.grey_60};
   line-height: normal;
   letter-spacing: 2px;
@@ -92,7 +92,7 @@ const Help = styled.label`
   font-size: smaller;
   letter-spacing: 1px;
 `;
-const HelpText = props => <Help>{props.helpText}</Help>;
+const HelpText = props => <Help>{props.children || props.helpText}</Help>;
 
 const Error = styled.label`
   grid-column: 1 / -1;
@@ -101,7 +101,7 @@ const Error = styled.label`
   font-weight: 700;
   letter-spacing: 1px;
 `;
-const ErrorText = props => <Error>{props.errorText}</Error>;
+const ErrorText = props => <Error>{props.children || props.errorText}</Error>;
 
 const InputGroup = styled(Grid)`
   /* Prototype Content - displays when a Form is empty */
@@ -127,7 +127,7 @@ ErrorText.propTypes = {
 
 export {
   Form as default,
-  Title,
+  Header,
   CenteredSection,
   Section,
   SectionName,
