@@ -6,6 +6,7 @@ import { Padding } from "helpers/Display";
 import { withKnobs, text, boolean, optionsKnob as options } from "@storybook/addon-knobs";
 import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
 import CheckboxNotes from "./Checkbox.md";
+import CheckboxGroupNotes from "./CheckboxGroup.md";
 
 const shortLabels = [
   {
@@ -100,10 +101,10 @@ storiesOf("Atoms|Checkbox", module)
 storiesOf("Blocks|Checkbox Group", module)
   .addParameters({
     info: {
-      text: "Checkbox info goes here...",
+      text: "Checkbox Group info goes here...",
     },
     notes: {
-      markdown: CheckboxNotes,
+      markdown: CheckboxGroupNotes,
     },
   })
   .addDecorator(Padding)
@@ -176,11 +177,6 @@ storiesOf("Blocks|Checkbox Group", module)
       </>
     );
   })
-  .add("Checkbox Group (alignment)", () => {
-    return (
-      <>
-        <CheckboxGroup data={shortLabels} columns="2" />
-        <CheckboxGroup data={shortLabels} columns="2" align="right" />
-      </>
-    );
+  .add("Checkbox Group (right-aligned)", () => {
+    return <CheckboxGroup data={shortLabels} columns="2" align="right" />;
   });

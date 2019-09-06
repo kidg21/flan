@@ -6,38 +6,50 @@ import { Padding } from "helpers/Display";
 import { withKnobs, text, boolean, optionsKnob as options } from "@storybook/addon-knobs";
 import Radio, { RadioGroup } from "atoms/Radio";
 import RadioNotes from "./Radio.md";
+import RadioGroupNotes from "./RadioGroup.md";
 
-const radio1 = {
-  id: "radio-1",
-  name: "radio-group",
-  value: "1",
-  label: "Radio 1",
-};
-const radio2 = {
-  id: "radio-2",
-  name: "radio-group",
-  value: "2",
-  label: "Radio 2",
-};
-const radio3 = {
-  id: "radio-3",
-  name: "radio-group",
-  value: "3",
-  label: "Radio 3",
-};
-const radio4 = {
-  id: "radio-4",
-  name: "radio-group",
-  value: "4",
-  label: "Radio 4",
-};
-const radioLong = {
-  id: "radio-5",
-  name: "radio-group",
-  value: "5",
-  label:
-    "My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself.",
-};
+const shortLabels = [
+  {
+    id: "radio-1",
+    name: "radio-group",
+    value: "1",
+    label: "Radio 1",
+  },
+  {
+    id: "radio-2",
+    name: "radio-group",
+    value: "2",
+    label: "Radio 2 (disabled)",
+    disabled: true,
+  },
+  {
+    id: "radio-3",
+    name: "radio-group",
+    value: "3",
+    label: "Radio 3",
+  },
+  {
+    id: "radio-4",
+    name: "radio-group",
+    value: "4",
+    label: "Radio 4",
+  },
+];
+const longLabels = [
+  {
+    id: "radio_long",
+    name: "radio-group",
+    value: "5",
+    label:
+      "My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself.",
+  },
+  {
+    id: "radio_long2",
+    name: "radio-group",
+    value: "6",
+    label: "Enough with these long labels already...put it on your blog, Shakespeare.",
+  },
+];
 
 storiesOf("Atoms|Radio", module)
   .addParameters({
@@ -105,50 +117,86 @@ storiesOf("Atoms|Radio", module)
       </RadioGroup>
     );
   });
-// .add("Radio Group (Responsive)", () => {
-//   return (
-//     <RadioGroup>
-//       <Radio {...radio1} />
-//       <Radio {...radio2} />
-//       <Radio {...radio3} />
-//       <Radio {...radio4} />
-//       <Radio {...radioLong} />
-//     </RadioGroup>
-//   );
-// })
-// .add("Radio Group (2 columns)", () => {
-//   return (
-//     <RadioGroup columns="2">
-//       <Radio {...radio1} />
-//       <Radio {...radio2} />
-//       <Radio {...radio3} />
-//       <Radio {...radio4} />
-//       <Radio {...radioLong} />
-//     </RadioGroup>
-//   );
-// })
-// .add("Radio Group (3 columns)", () => {
-//   return (
-//     <RadioGroup columns="3">
-//       <Radio {...radio1} />
-//       <Radio {...radio2} />
-//       <Radio {...radio3} />
-//       <Radio {...radio4} />
-//     </RadioGroup>
-//   );
-// })
-// .add("Radio Group (mixed columns)", () => {
-//   return (
-//     <>
-//       <RadioGroup columns="2">
-//         <Radio {...radio1} />
-//         <Radio {...radio2} />
-//         <Radio {...radio3} />
-//         <Radio {...radio4} />
-//       </RadioGroup>
-//       <RadioGroup>
-//         <Radio {...radioLong} />
-//       </RadioGroup>
-//     </>
-//   );
-// });
+
+storiesOf("Blocks|Radio Group", module)
+  .addParameters({
+    info: {
+      text: "Radio Group info goes here...",
+    },
+    notes: {
+      markdown: RadioGroupNotes,
+    },
+  })
+  .addDecorator(Padding)
+  .addDecorator(withKnobs)
+  .add(
+    "Documentation",
+    withInfo()(() => {
+      return (
+        <RadioGroup
+          id="group1"
+          label="Radio Group Label"
+          data={shortLabels}
+          helpText="This help text has been passed through a prop!"
+        />
+      );
+    }),
+  )
+  .add("Knobs", () => {
+    return (
+      <RadioGroup
+        id="group1"
+        data={shortLabels}
+        columns={options(
+          "columns",
+          {
+            "auto ( default )": "default",
+            one: "1",
+            two: "2",
+            three: "3",
+            four: "4",
+            five: "5",
+            six: "6",
+          },
+          "default",
+          { display: "select" },
+          "Radio Group",
+        )}
+        isRequired={boolean("required", false, "Radio Group")}
+        label={text("Input Label", "Input Label", "Radio Group")}
+        helpText={text("Help Text", "Have you been helped yet?", "Radio Group")}
+        align={options(
+          "box align",
+          {
+            left: null,
+            right: "right",
+          },
+          null,
+          { display: "select" },
+          "Radio Group",
+        )}
+        errorText={text("Error Text", "", "Radio Group")}
+        disabled={boolean("disabled", false, "Radio Group")}
+      />
+    );
+  })
+  .add("Radio Group (responsive)", () => {
+    return <RadioGroup data={shortLabels} />;
+  })
+  .add("Radio Group (2 columns)", () => {
+    return <RadioGroup data={shortLabels} columns="2" />;
+  })
+  .add("Radio Group (3 columns)", () => {
+    return <RadioGroup data={shortLabels} columns="3" />;
+  })
+  .add("Radio Group (mixed columns)", () => {
+    return (
+      <>
+        <RadioGroup data={shortLabels} columns="2" />
+        <RadioGroup data={longLabels} columns="1" />
+      </>
+    );
+  })
+  .add("Radio Group (right-aligned)", () => {
+    return <RadioGroup data={shortLabels} columns="2" align="right" />;
+  });

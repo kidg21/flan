@@ -7,7 +7,7 @@ import { InputLabel, HelpText, ErrorText } from "layout/Form";
 import Grid from "layout/Grid";
 
 const RadioWrapper = styled(Grid)`
-  color: ${(props) => {
+  color: ${props => {
     return props.inputTextColor || "";
   }};
   margin-bottom: 1rem;
@@ -17,11 +17,11 @@ const RadioContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 0.75rem;
-  grid-template-areas: ${(props) => {
+  grid-template-areas: ${props => {
     return props.alignInput || "";
   }};
-  align-items: inherit;
-  color: ${(props) => {
+  line-height: initial;
+  color: ${props => {
     return props.inputTextColor || "";
   }};
   &[disabled],
@@ -35,11 +35,11 @@ const RadioContainer = styled.div`
 const RadioInput = styled.input.attrs({ type: "radio" })`
   grid-area: input;
   border: 1px solid;
-  background-color: ${(props) => {
+  background-color: ${props => {
     return props.fillColor || colors.white;
   }};
-  border-color: ${(props) => {
-    return props.borderColor || colors.grey_40;
+  border-color: ${props => {
+    return props.outlineColor || colors.grey_40;
   }};
   width: 1rem;
   height: 1rem;
@@ -47,17 +47,17 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
   cursor: pointer;
   -webkit-appearance: none;
   &:checked {
-    background-color: ${(props) => {
-    return props.fillColorChecked || colors.success_light;
-  }};
-    border-color: ${(props) => {
-    return props.borderColor || colors.success;
-  }};
+    background-color: ${props => {
+      return props.fillColorChecked || colors.success_light;
+    }};
+    border-color: ${props => {
+      return props.outlineColor || colors.success;
+    }};
   }
   &:focus {
-    border-color: ${(props) => {
-    return props.outlineColor || colors.success;
-  }};
+    border-color: ${props => {
+      return props.outlineColor || colors.success;
+    }};
     outline: none;
   }
 `;
@@ -70,30 +70,26 @@ const RadioLabel = styled.label`
   cursor: pointer;
 `;
 
-function Radio({
-  align, checked, disabled, error, id, label, name, value,
-}) {
+function Radio({ align, checked, disabled, error, id, label, name, value }) {
   let inputTextColor;
   let fillColor;
-  let borderColor;
   let outlineColor;
   let fillColorChecked;
-  let borderColorChecked;
   let alignInput;
   let tabIndex;
-  if (error && !disabled) {
-    inputTextColor = colors.alert;
-    fillColor = colors.alert_tint;
-    borderColor = colors.alert_light;
-    outlineColor = colors.alert_light;
-    fillColorChecked = colors.alert_tint;
-    borderColorChecked = colors.alert;
-  }
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
     fillColor = colors.grey_20;
     fillColorChecked = colors.grey_20;
+    inputTextColor = colors.grey_60;
+    outlineColor = colors.grey_40;
     tabIndex = "-1";
+  }
+  if (error && !isDisabled) {
+    inputTextColor = colors.alert;
+    fillColor = colors.alert_tint;
+    outlineColor = colors.alert_light;
+    fillColorChecked = colors.alert_tint;
   }
   switch (align) {
     case "right":
@@ -117,10 +113,8 @@ function Radio({
         checked={checked}
         tabIndex={tabIndex}
         fillColor={fillColor}
-        borderColor={borderColor}
         outlineColor={outlineColor}
         fillColorChecked={fillColorChecked}
-        borderColorChecked={borderColorChecked}
       />
       <RadioLabel htmlFor={id}>{label}</RadioLabel>
     </RadioContainer>
@@ -133,24 +127,67 @@ function RadioGroup({
   columns,
   data,
   disabled,
-  error,
   errorText,
   helpText,
   id,
-  inputLabel,
+  label,
   isRequired,
   onChange,
 }) {
+  let inputTextColor;
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  if (errorText && !isDisabled) {
+    inputTextColor = colors.alert;
+  }
+  {
+    label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null;
+  }
+  {
+    helpText ? <HelpText>{helpText}</HelpText> : null;
+  }
   return (
     <RadioWrapper
       align={align}
       columns={columns}
-      disabled={disabled}
-      error={error}
+      disabled={isDisabled}
+      inputTextColor={inputTextColor}
       id={id}
       onChange={onChange}
     >
-      {children}
+      {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
+      {helpText ? <HelpText>{helpText}</HelpText> : null}
+      {children ||
+        data.map(item => {
+          return (
+            <>
+              {errorText ? (
+                <Radio
+                  align={align}
+                  disabled={item.disabled || isDisabled}
+                  error
+                  htmlFor={item.id}
+                  id={item.id}
+                  key={item.id}
+                  label={item.label}
+                  name={item.name}
+                  value={item.value}
+                />
+              ) : (
+                <Radio
+                  align={align}
+                  disabled={item.disabled || isDisabled}
+                  htmlFor={item.id}
+                  id={item.id}
+                  key={item.id}
+                  label={item.label}
+                  name={item.name}
+                  value={item.value}
+                />
+              )}
+            </>
+          );
+        })}
+      {errorText && !isDisabled ? <ErrorText>{errorText}</ErrorText> : null}
     </RadioWrapper>
   );
 }

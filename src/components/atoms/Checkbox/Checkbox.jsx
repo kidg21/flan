@@ -7,7 +7,7 @@ import { InputLabel, HelpText, ErrorText } from "layout/Form";
 import Grid from "layout/Grid";
 
 const CheckboxWrapper = styled(Grid)`
-  color: ${(props) => {
+  color: ${props => {
     return props.inputTextColor || "";
   }};
   margin-bottom: 1rem;
@@ -17,11 +17,11 @@ const CheckboxContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 0.75rem;
-  grid-template-areas: ${(props) => {
+  grid-template-areas: ${props => {
     return props.alignInput || "";
   }};
-  align-items: inherit;
-  color: ${(props) => {
+  line-height: initial;
+  color: ${props => {
     return props.inputTextColor || "";
   }};
   &[disabled],
@@ -35,10 +35,10 @@ const CheckboxContainer = styled.div`
 const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   grid-area: input;
   border: 1px solid;
-  background-color: ${(props) => {
+  background-color: ${props => {
     return props.fillColor || colors.white;
   }};
-  border-color: ${(props) => {
+  border-color: ${props => {
     return props.borderColor || colors.grey_40;
   }};
   width: 1rem;
@@ -47,17 +47,17 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   cursor: pointer;
   -webkit-appearance: none;
   &:checked {
-    background-color: ${(props) => {
-    return props.fillColorChecked || colors.success_light;
-  }};
-    border-color: ${(props) => {
-    return props.borderColor || colors.success;
-  }};
+    background-color: ${props => {
+      return props.fillColorChecked || colors.success_light;
+    }};
+    border-color: ${props => {
+      return props.borderColor || colors.success;
+    }};
   }
   &:focus {
-    outline-color: ${(props) => {
-    return props.outlineColor || colors.success;
-  }};
+    outline-color: ${props => {
+      return props.outlineColor || colors.success;
+    }};
   }
 `;
 
@@ -69,9 +69,7 @@ const CheckboxLabel = styled.label`
   cursor: pointer;
 `;
 
-function Checkbox({
-  align, checked, error, disabled, id, label,
-}) {
+function Checkbox({ align, checked, error, disabled, id, label }) {
   let inputTextColor;
   let fillColor;
   let borderColor;
@@ -80,19 +78,20 @@ function Checkbox({
   let borderColorChecked;
   let alignInput;
   let tabIndex;
-  if (error && !disabled) {
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  if (isDisabled) {
+    fillColor = colors.grey_20;
+    fillColorChecked = colors.grey_20;
+    inputTextColor = colors.grey_60;
+    tabIndex = "-1";
+  }
+  if (error && !isDisabled) {
     inputTextColor = colors.alert;
     fillColor = colors.alert_tint;
     borderColor = colors.alert_light;
     outlineColor = colors.alert_light;
     fillColorChecked = colors.alert_tint;
     borderColorChecked = colors.alert;
-  }
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (isDisabled) {
-    fillColor = colors.grey_20;
-    fillColorChecked = colors.grey_20;
-    tabIndex = "-1";
   }
   switch (align) {
     case "right":
@@ -138,10 +137,10 @@ function CheckboxGroup({
   onChange,
 }) {
   let inputTextColor;
-  if (errorText && !disabled) {
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  if (errorText && !isDisabled) {
     inputTextColor = colors.alert;
   }
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   return (
     <CheckboxWrapper
       align={align}
@@ -154,7 +153,7 @@ function CheckboxGroup({
       {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
       {helpText ? <HelpText>{helpText}</HelpText> : null}
       {children ||
-        data.map((item) => {
+        data.map(item => {
           return (
             <>
               {errorText ? (
@@ -180,7 +179,7 @@ function CheckboxGroup({
             </>
           );
         })}
-      {errorText && !disabled ? <ErrorText>{errorText}</ErrorText> : null}
+      {errorText && !isDisabled ? <ErrorText>{errorText}</ErrorText> : null}
     </CheckboxWrapper>
   );
 }
