@@ -7,10 +7,11 @@ import Menu from "blocks/Menu";
 
 function MainPanelHeader({ id, title, menuData }) {
   return (
-    <Piece id={id}>
+    <Piece id={id} header>
       <Bar
+        padding="3x"
         left={<Title text={title} weight="bold" />}
-        right={<Menu data={menuData} position="bottomLeft" type="edit" />}
+        right={menuData ? <Menu data={menuData} position="bottomLeft" type="edit" /> : null}
       />
     </Piece>
   );
@@ -18,8 +19,16 @@ function MainPanelHeader({ id, title, menuData }) {
 
 MainPanelHeader.propTypes = {
   id: PropTypes.string,
-  title: PropTypes.string.isRequired,
-  menuData: PropTypes.node,
+  title: PropTypes.node.isRequired,
+  menuData: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string,
+    name: PropTypes.string,
+    onClickLink: PropTypes.func,
+  })),
+};
+MainPanelHeader.defaultProps = {
+  id: null,
+  menuData: null,
 };
 
 MainPanelHeader.defaultProps = {

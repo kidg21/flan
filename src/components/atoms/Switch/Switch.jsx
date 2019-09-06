@@ -91,12 +91,10 @@ const StyledSwitch = styled.div`
 
 const ToggleWrapper = styled.label`
   grid-area: one;
-  /* background-color: ${colors.grey_light}; */
   &[disabled],
   &[readonly] {
     cursor: not-allowed;
     pointer-events: none;
-    /* user-select: none; */
   }
 `;
 
@@ -144,9 +142,6 @@ const ToggleContainer = styled.div`
   grid-template-areas: 'one two';
   grid-gap: 0.75rem;
   align-content: flex-start;
-  /* color: ${(props) => {
-    return props.inputTextColor || "";
-  }}; */
 `;
 
 function Switch({

@@ -106,7 +106,7 @@ function TrialApp() {
           </PanelSection>
           <LanguageSelect />
           <PanelSection>
-            <Button buttonLabel={translate("Apply")} isRound="true" />
+            <Button label={translate("Apply")} isRound="true" />
           </PanelSection>
         </Panel>
       }

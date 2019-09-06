@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import { DisabledContext } from "States";
 
 const BarLayout = styled.div`
   display: flex;
@@ -59,6 +60,7 @@ function Bar({
   rightWidth,
   onClick,
   className,
+  disabled,
 }) {
   let alignContent;
   let alignItems;
@@ -99,8 +101,15 @@ function Bar({
       textAlign = "center";
       break;
   }
-  return (
-    <BarLayout id={id} barPadding={barPadding} alignContent={alignContent} onClick={onClick} className={className}>
+
+  const barLayout = (
+    <BarLayout
+      id={id}
+      barPadding={barPadding}
+      alignContent={alignContent}
+      onClick={onClick}
+      className={className}
+    >
       {left ? (
         <Slot widthMin={leftWidth} widthMax={leftWidth} setPadding="0 1em 0 0">
           {left}
@@ -124,6 +133,12 @@ function Bar({
       ) : null}
     </BarLayout>
   );
+
+  return typeof disabled === "boolean" ? (
+    <DisabledContext.Provider value={disabled}>
+      {barLayout}
+    </DisabledContext.Provider>
+  ) : barLayout;
 }
 
 Bar.propTypes = {
@@ -154,6 +169,7 @@ Bar.propTypes = {
   rightWidth: PropTypes.string,
   onClick: PropTypes.func,
   className: PropTypes.string,
+  disabled: PropTypes.bool,
 };
 
 Bar.defaultProps = {
@@ -168,6 +184,7 @@ Bar.defaultProps = {
   rightWidth: null,
   onClick: null,
   className: null,
+  disabled: null,
 };
 
 export default Bar;

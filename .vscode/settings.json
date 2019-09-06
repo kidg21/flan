@@ -24,5 +24,6 @@
     },
     "prettier.endOfLine": "lf",
     "prettier.eslintIntegration": true,
-    "peacock.color": "#00b3e6"
+    "peacock.color": "#00b3e6",
+    "files.eol": "\n"
 }

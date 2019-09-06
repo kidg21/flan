@@ -61,7 +61,7 @@ storiesOf("Elements|Notification", module)
               <Banner title="This is a Standard notification." onClose={handleClose} />
             </Notification>
             <Button
-              buttonLabel="Show Notification"
+              label="Show Notification"
               style={{ marginLeft: "3rem" }}
               onClick={handleOpen}
             />
@@ -124,7 +124,7 @@ storiesOf("Elements|Notification", module)
           </Notification>
           <Panel>
             <PanelSection body>
-              <Button buttonLabel="Show Notification" onClick={handleOpen} />
+              <Button label="Show Notification" onClick={handleOpen} />
             </PanelSection>
           </Panel>
         </Fragment>
@@ -167,7 +167,7 @@ storiesOf("Elements|Notification", module).add("Status Notification", () =>
         </Notification>
         <Panel>
           <PanelSection body>
-            <Button buttonLabel="Status Notification" onClick={handleOpen} />
+            <Button label="Status Notification" onClick={handleOpen} />
           </PanelSection>
         </Panel>
       </Fragment>
