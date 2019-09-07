@@ -40,9 +40,13 @@ const TextInputContainer = styled.div`
                 : /* Single Input (default) */
                 "repeat(1, 1fr)";
   }};
-  grid-gap: ${(props) => { return (props.slider ? "0.15rem" : "0.35rem"); }};
+  grid-gap: ${(props) => {
+    return props.slider ? "0.15rem" : "0.35rem";
+  }};
   align-content: flex-start;
-  color: ${(props) => { return props.error ? colors.alert : props.disabled ? colors.grey_40 : ""; }};
+  color: ${(props) => {
+    return props.error ? colors.alert : props.disabled ? colors.grey_40 : "";
+  }};
 `;
 
 const PrePostLabel = styled.label`
@@ -65,29 +69,51 @@ const PrePostLabel = styled.label`
 const TextInput = styled.input`
   border: 1px solid ${colors.grey_20};
   border-bottom: 1px solid ${colors.grey_20};
-  border-color: ${(props) => { return (props.error ? colors.alert : ""); }};
-  border-radius: ${(props) => { return (props.isRound ? "10rem !important" : ""); }};
-  background-color: ${(props) => { return (props.error ? colors.alert_tint : ""); }};
-  caret-color: ${(props) => { return (props.error ? colors.alert : ""); }};
+  border-color: ${(props) => {
+    return props.error ? colors.alert : "";
+  }};
+  border-radius: ${(props) => {
+    return props.isRound ? "10rem !important" : "";
+  }};
+  /* background-color: ${(props) => {
+    return props.error ? colors.alert_tint : "";
+  }}; */
+  caret-color: ${(props) => {
+    return props.error ? colors.alert : "";
+  }};
   min-height: 2.75rem;
-  padding: ${(props) => { return (props.isRound ? "0.75rem 1rem" : "0.5rem 0.75rem"); }};
+  padding: ${(props) => {
+    return props.isRound ? "0.75rem 1rem" : "0.5rem 0.75rem";
+  }};
 
   ::placeholder {
-    color: ${(props) => { return (props.error ? colors.alert : ""); }};
+    color: ${(props) => {
+    return props.error ? colors.alert : "";
+  }};
   }
   &:hover {
     border: 1px solid ${colors.grey_40};
-    border-color: ${(props) => { return (props.error ? colors.alert : ""); }};
+    border-color: ${(props) => {
+    return props.error ? colors.alert : "";
+  }};
     }
   }
   &:focus {
-    background-color: ${(props) => { return (props.error ? colors.alert_tint : ""); }};
-    border-color: ${(props) => { return (props.error ? colors.alert : colors.success_light); }};
+    background-color: ${(props) => {
+    return props.error ? colors.alert_tint : "";
+  }};
+    border-color: ${(props) => {
+    return props.error ? colors.alert : colors.success_light;
+  }};
     ::placeholder {
-      color: ${(props) => { return (props.error ? colors.alert : colors.grey_60); }};
+      color: ${(props) => {
+    return props.error ? colors.alert : colors.grey_60;
+  }};
     }
     ::selection {
-      background-color: ${(props) => { return (props.error ? colors.alert : ""); }};
+      background-color: ${(props) => {
+    return props.error ? colors.alert : "";
+  }};
       
     }
   }
@@ -98,7 +124,7 @@ function InputBlock({
   type,
   pattern,
   value,
-  inputLabel, // Label prop
+  label, // Label prop
   placeholder,
   helpText,
   disabled,
@@ -143,14 +169,14 @@ function InputBlock({
         style={style}
       >
         {/* Input Label */}
-        <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
+        {label ? <InputLabel isRequired={isRequired} label={label} /> : null}
         {/* Prefix Label (conditional) */}
         {prefix ? <PrePostLabel>{prefix}</PrePostLabel> : null}
         {/* Prefix Select Menu (conditional) */}
         {preSelect ? (
           <SelectMenu
             displayInline // Grid Override
-            inputLabel={null}
+            label={null}
             name="Choose"
             isClearable={false}
             options={preSelect}
@@ -199,14 +225,12 @@ function InputBlock({
         {/* Postfix (conditional) */}
         {postfix ? <PrePostLabel>{postfix}</PrePostLabel> : null}
         {/* Postfix Button (conditional) */}
-        {buttonLabel ? (
-          <Button label={buttonLabel} isPrimary />
-        ) : null}
+        {buttonLabel ? <Button label={buttonLabel} isPrimary /> : null}
         {/* Postfix Select Menu (conditional) */}
         {postSelect ? (
           <SelectMenu
             displayInline // Grid Override
-            inputLabel={null}
+            label={null}
             name="Choose"
             isClearable={false}
             options={postSelect}
@@ -214,9 +238,9 @@ function InputBlock({
           />
         ) : null}
         {/* Help Text */}
-        {helpText ? <HelpText helpText={helpText} /> : null}
+        {helpText ? <HelpText>{helpText}</HelpText> : null}
         {/* Error Message (required) */}
-        {error ? <ErrorText errorText={errorText} /> : null}
+        {error ? <ErrorText>{errorText}</ErrorText> : null}
       </TextInputContainer>
     </DisabledContext.Provider>
   );
@@ -227,7 +251,7 @@ InputBlock.propTypes = {
   type: PropTypes.string,
   pattern: PropTypes.string,
   value: PropTypes.string,
-  inputLabel: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
   placeholder: PropTypes.string,
   helpText: PropTypes.string,
   isRequired: PropTypes.bool,
