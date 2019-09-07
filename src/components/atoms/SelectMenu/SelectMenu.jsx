@@ -112,6 +112,8 @@ const selectStyles = {
       textAlign: "left",
       letterSpacing: ".5px",
       margin: ".25rem 0",
+      border: "1px solid",
+      borderColor: colors.grey_40,
       boxShadow: shadows.dropShadow,
     };
   },
@@ -136,18 +138,7 @@ const selectStyles = {
 };
 
 const SelectMenuContainer = styled.div`
-  display: ${(props) => { return (props.displayInline ? "inline-block" : "grid"); }};
-  grid-template-columns: ${(props) => {
-    return props.threeInputs
-      ? "repeat(3, 1fr)"
-      : props.twoInputs
-        ? "repeat(2, 1fr)"
-        : props.prefix
-          ? "minmax(auto, auto) minmax(auto, 3fr)"
-          : props.postfix
-            ? "minmax(auto, 3fr) minmax(auto, auto)"
-            : "repeat(1, 1fr)";
-  }};
+  display: grid;
   grid-gap: 0.35rem;
   align-content: flex-start;
   color: ${(props) => {
@@ -239,9 +230,7 @@ function SelectMenu({
       error={state.error !== null}
       displayInline={displayInline}
     >
-      {label ? (
-        <InputLabel label={label} isRequired={isRequired} />
-      ) : null}
+      {label ? <InputLabel label={label} isRequired={isRequired} /> : null}
       <Select
         id={id} // input attribute
         name={name} // input attribute
