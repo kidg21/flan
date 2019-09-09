@@ -7,7 +7,7 @@ import { Padding } from "helpers/Display";
 
 const Icons = (
   <React.Fragment>
-    <Icon icon="expand" />
+    <Icon icon="maximize" />
     <Icon icon="share" />
     <Icon icon="filter" />
   </React.Fragment>

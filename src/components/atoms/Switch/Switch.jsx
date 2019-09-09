@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { colors } from "Variables";
 
 const SwitchContainer = styled.div`
   position: relative;
@@ -28,10 +27,10 @@ const HiddenSwitch = styled.input.attrs({ type: "checkbox" })`
 const Circle = styled.div`
   position: absolute;
   z-index: 1;
-  background: ${props => {
+  background: ${(props) => {
     return props.checked ? "white" : "white";
   }};
-  border: ${props => {
+  border: ${(props) => {
     return props.checked ? "1px solid #75ab3f" : "1px solid darkgray";
   }};
   border-radius: 40px;
@@ -39,7 +38,7 @@ const Circle = styled.div`
   line-height: normal;
   height: 14px;
   transition: transform 300ms ease-in-out;
-  transform: ${props => {
+  transform: ${(props) => {
     return props.checked ? "translateX(15px)" : "translateX(-1px)";
   }};
 `;
@@ -49,33 +48,30 @@ const StyledSwitch = styled.div`
   display: block;
   height: 16px;
   border-radius: 23px;
-  border: ${props => {
+  border: ${(props) => {
     return props.checked ? "1px solid #94d850" : "1px solid darkgray";
   }};
-  background-image: ${props => {
+  background-image: ${(props) => {
     return props.checked ? "linear-gradient(#75ab3f, #94d850);" : "white";
   }};
   transition: 0.4s ease;
   cursor: pointer;
 `;
 
-const Toggle = ({ checked, ...props }) => {
-  const [isChecked, setChecked] = useState(checked);
+const Toggle = ({ checked, onChange, ...props }) => {
+  let isChecked = checked;
+  let onClick = onChange;
 
-  const { onChange, ...remainingProps } = props;
-  function onClick(e) {
-    setChecked(state => {
-      return !state;
-    });
-    e.preventDefault();
-    if (onChange) onChange(e);
+  if (!onClick) {
+    let setChecked = null;
+    [isChecked, setChecked] = useState(checked);
+    onClick = () => { setChecked(!isChecked); };
   }
 
   return (
     <SwitchContainer>
-      <HiddenSwitch checked={isChecked} onClick={onClick} {...remainingProps} />
-      <StyledSwitch checked={isChecked}>
-        <Circle checked={isChecked} {...remainingProps} />
+      <StyledSwitch checked={isChecked} onClick={onClick}>
+        <Circle checked={isChecked} {...props} />
       </StyledSwitch>
     </SwitchContainer>
   );
@@ -87,17 +83,26 @@ Toggle.propTypes = {
   onChange: PropTypes.func,
 };
 
-const Switch = ({ checked, id, ...props }) => {
+Toggle.defaultProps = {
+  id: null,
+  checked: false,
+  onChange: null,
+};
+
+const Switch = ({ label, ...props }) => {
   return (
-    <label>
-      <Toggle checked={checked} id={id} {...props} />
-    </label>
+    <>
+      {label} <Toggle {...props} />
+    </>
   );
 };
 
 Switch.propTypes = {
-  id: PropTypes.string,
-  checked: PropTypes.bool,
+  label: PropTypes.node,
+};
+
+Switch.defaultProps = {
+  label: null,
 };
 
 export default Switch;

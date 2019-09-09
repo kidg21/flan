@@ -9,14 +9,14 @@ import Bar from "blocks/Bar";
 // import WhiteMenu from "../blocks/Menu/TrialMenu";
 
 const data = [
-  { id: "a", onClick: "", name: "Save" },
-  { id: "b", onClick: "", name: "Filter" },
-  { id: "c", onClick: "", name: "Share" },
-  { id: "d", onClick: "", name: "Filter" },
-  { id: "e", onClick: "", name: "Layer" },
+  { id: "a", onClickLink: "", name: "Save" },
+  { id: "b", onClickLink: "", name: "Filter" },
+  { id: "c", onClickLink: "", name: "Share" },
+  { id: "d", onClickLink: "", name: "Filter" },
+  { id: "e", onClickLink: "", name: "Layer" },
 ];
 
-storiesOf("Work|Menu", module)
+storiesOf("Blocks|Menu", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
   // .add("Trial", () => <TrialMenu />)

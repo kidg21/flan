@@ -21,9 +21,9 @@ const EditMenu = styled.ul`
   padding: 0.25em;
   padding-top: 0.8em;
   padding-bottom: 0.8em;
-  bottom: ${props => props.badgeBottom || ""};
-  left: ${props => props.badgeLeft || ""};
-  transform: ${props => props.badgeTransform || ""};
+  bottom: ${(props) => { return props.badgeBottom || ""; }};
+  left: ${(props) => { return props.badgeLeft || ""; }};
+  transform: ${(props) => { return props.badgeTransform || ""; }};
   width: auto;
   min-width: 10em;
   position: absolute;
@@ -43,14 +43,14 @@ const Item = styled.li`
   }
 `;
 
-function Menu({ id, data, type, object, position }) {
+function Menu({ id, data, type, position }) {
   let badgeLeft = "100%";
   let badgeBottom = "100%";
   let setTransform;
   const [visibility, setVisibility] = useState(false);
   switch (type) {
     case "edit":
-      object = <Icon icon={["far", "ellipsis-v"]} size="lg" />;
+      icon = <Icon icon="options" size="lg" />;
       break;
     default:
       break;
@@ -94,7 +94,7 @@ function Menu({ id, data, type, object, position }) {
         setVisibility(!visibility);
       }}
     >
-      {object}
+      {icon}
       {visibility ? (
         <Card>
           <EditMenu
@@ -102,11 +102,13 @@ function Menu({ id, data, type, object, position }) {
             badgeLeft={badgeLeft}
             badgeBottom={badgeBottom}
           >
-            {data.map(item => (
-              <Item key={item.id} onClick={item.onClick}>
-                <Title title={item.name} weight="normal" />
-              </Item>
-            ))}
+            {data.map((item) => {
+              return (
+                <Item key={item.id} onClick={item.onClickLink}>
+                  <Title text={item.name} weight="normal" />
+                </Item>
+              );
+            })}
           </EditMenu>
         </Card>
       ) : null}
@@ -117,9 +119,12 @@ function Menu({ id, data, type, object, position }) {
 Menu.propTypes = {
   id: PropTypes.string,
   object: PropTypes.node,
-  type: PropTypes.any,
-  onClick: PropTypes.func,
-  data: PropTypes.any.isRequired,
+  type: PropTypes.string,
+  data: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string,
+    name: PropTypes.string,
+    onClickLink: PropTypes.func,
+  })).isRequired,
   position: PropTypes.oneOf([
     "topLeft",
     "topRight",
@@ -127,7 +132,15 @@ Menu.propTypes = {
     "bottomLeft",
     "bottomCenter",
     "topCenter",
+    "default",
   ]),
+};
+
+Menu.defaultProps = {
+  id: null,
+  object: null,
+  type: "edit",
+  position: "default",
 };
 
 export default Menu;

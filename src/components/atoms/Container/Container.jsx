@@ -1,13 +1,23 @@
 import React from "react";
-import styled, { css } from "styled-components";
-import propTypes from "prop-types";
+import styled from "styled-components";
 import PropTypes from "prop-types";
 import { colors } from "Variables";
 
+const Wrapper = styled.div`
+  display: block;
+  padding: 1em;
+`;
+
 const BoxContainer = styled.div`
   overflow-y: auto;
-  height: ${props => props.setHeight || ""};
-  width: ${props => props.setWidth || ""};
+  overflow-x: auto;
+  padding: 0;
+  height: ${(props) => {
+    return props.height || "";
+  }};
+  width: ${(props) => {
+    return props.width || "";
+  }};
   border: 1px solid ${colors.grey_20};
   border-radius: 5px;
 
@@ -25,12 +35,36 @@ const BoxContainer = styled.div`
   }
 `;
 
-function Container({ id, setHeight, setWidth, children }) {
+function Container({
+  id, height, width, children,
+}) {
   return (
-    <BoxContainer id={id} setHeight={setHeight} setWidth={setWidth}>
-      {children}
-    </BoxContainer>
+    <Wrapper>
+      <BoxContainer id={id} height={height} width={width}>
+        {children}
+      </BoxContainer>
+    </Wrapper>
   );
+}
+
+Container.propTypes = {
+  id: PropTypes.string,
+  height: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ]),
+  width: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ]),
+  children: PropTypes.node,
+};
+
+Container.defaultProps = {
+  id: null,
+  height: null,
+  width: null,
+  children: null,
 }
 
 export default Container;
