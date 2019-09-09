@@ -20,22 +20,6 @@ const SwitchContainer = styled.div`
   vertical-align: middle;
 `;
 
-const HiddenSwitch = styled.input.attrs({ type: "checkbox" })`
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  white-space: nowrap;
-  width: 1px;
-`;
-
 const Circle = styled.div`
   position: absolute;
   z-index: 1;
@@ -118,15 +102,14 @@ function Toggle({ checked, disabled }) {
     if (onChange) onChange(e);
   }
   return (
-    <SwitchContainer disabled={disabled}>
-      <HiddenSwitch checked={isChecked} onClick={onClick} {...remainingProps} />
+    <SwitchContainer checked={isChecked} onClick={onClick} disabled={isDisabled} {...remainingProps}>
       <StyledSwitch
         fillColor={fillColor}
         borderColor={borderColor}
         checked={isChecked}
         disabled={disabled}
       >
-        <Circle checked={isChecked} disabled={disabled} {...remainingProps} />
+        <Circle checked={isChecked} disabled={isDisabled} {...remainingProps} />
       </StyledSwitch>
     </SwitchContainer>
   );
