@@ -4,26 +4,45 @@ export const lightTheme = {
   background: "#ffffff",
   textColor: "#5e5a62",
   textColorInverse: "#ffffff",
-  primary: "#2b7bb1",
-  secondary: "#759d2d",
+  link: "#5FD1E2",
+  primary: "#2B82B1",
+  secondary: "#75AB3F",
   info: "#206bca",
   alert: "#b50000",
   warning: "#ca8720",
   success: "#008932",
-  grey: "lightgrey",
+  disabled: "darkgrey",
+  divider: "#E2E1DF",
 };
 
 export const darkTheme = {
   background: "#333332",
   textColor: "#ffffff",
   textColorInverse: "#000000",
-  primary: "#60ccfc",
-  secondary: "#a9cf62",
+  link: "#5FD1E2",
+  primary: "#5FD1E2",
+  secondary: "#CDE575",
   info: "#7bc7fa",
   alert: "#eb8775",
   warning: "#e5da66",
-  success: "#afd777",
-  grey: "lightgrey",
+  success: "#AFE575",
+  disabled: "#E2E1DF",
+  divider: "#E2E1DF",
+};
+
+export const lightboxTheme = {
+  background: "#ffffff",
+  textColor: "#5e5a62",
+  textColorInverse: "#ffffff",
+  link: "#5FD1E2",
+  primary: "#2B82B1",
+  secondary: "#75AB3F",
+  info: "#206bca",
+  alert: "#b50000",
+  warning: "#ca8720",
+  success: "#008932",
+  disabled: "darkgrey",
+  divider: "#E2E1DF",
 };
 
 // Codes for color palette

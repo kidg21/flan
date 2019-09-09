@@ -1,11 +1,13 @@
-import styled, { css } from "styled-components"
-import { fonts, colors } from "Variables"
-import { PlaceholderText } from "helpers/Placeholders.jsx"
+import styled, { css } from "styled-components";
+import { fonts } from "Variables";
+import { PlaceholderText } from "helpers/Placeholders.jsx";
 
 const Page = styled.div`
   display: grid;
   grid-gap: 1rem;
-  background: ${colors.white};
+  background: ${(props) => {
+    return props.theme.background;
+  }};
   padding: 1rem;
   > h1,
   > h2,
@@ -37,6 +39,6 @@ const Page = styled.div`
       It all happens automatically. You can create beautiful things - but you have to see them in your mind first. There we are. Nature is so fantastic, enjoy it. Let it make you happy. Let's put some highlights on these little trees. The sun wouldn't forget them. With practice comes confidence.";
     }
   }
-`
+`;
 
-export default Page
+export default Page;

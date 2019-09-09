@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { colors, Darken } from "Variables";
+import { Darken } from "Variables";
 import Bar from "blocks/Bar";
 import Title from "base/Typography";
 import { InteractiveContext, DisabledContext } from "States";
@@ -20,7 +20,7 @@ const ListTitle = styled(Title)`
   }};
   border-bottom: 1px solid
     ${props => {
-      return props.theme.grey;
+      return props.theme.divider;
     }};
   padding: 0.75em 1em;
   tabindex: -1;
@@ -39,7 +39,7 @@ const ListItemWrapper = styled.li`
   }};
   border-bottom: 1px solid
     ${props => {
-      return props.theme.grey;
+      return props.theme.divider;
     }};
   cursor: ${props => {
     return props.interactive ? "pointer" : "";

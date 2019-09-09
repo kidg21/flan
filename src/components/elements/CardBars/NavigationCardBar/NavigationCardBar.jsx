@@ -6,11 +6,12 @@ import IconBlock from "blocks/IconBlock";
 import Bar from "blocks/Bar";
 import Card, { Piece } from "layout/Card";
 import Title from "base/Typography";
-import { colors } from "Variables";
+
 
 const Line = styled.div`
   display: flex;
-  border-bottom: 1px solid ${colors.grey_light};
+  border-bottom: 1px solid ${(props) => {
+    return props.theme.divider; }};
 `;
 
 function NavigationCardBar({ id, title, number, disabled, onClick }) {

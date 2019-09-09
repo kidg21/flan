@@ -4,14 +4,9 @@ import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
 import { withInfo } from "@storybook/addon-info";
-import {
-  withKnobs,
-  text,
-  boolean,
-  select,
-  optionsKnob as options,
-} from "@storybook/addon-knobs";
+import { withKnobs, text, boolean, select, optionsKnob as options } from "@storybook/addon-knobs";
 import Button from "atoms/Button";
+import Panel from "layout/Panel";
 import ButtonNotes from "./Button.md";
 
 // Button
@@ -43,11 +38,11 @@ storiesOf("Atoms|Button", module)
           "icon",
           {
             "no icon": null,
-            user: "user",
-            down: "down",
-            bookmark: "bookmark_solid",
-            plus: "plus",
-            print: "print",
+            "user": "user",
+            "down": "down",
+            "bookmark": "bookmark_solid",
+            "plus": "plus",
+            "print": "print",
           },
           null,
           "Button",
@@ -57,9 +52,9 @@ storiesOf("Atoms|Button", module)
           "color",
           {
             "anchor ( default )": "default",
-            success: "success",
-            warning: "warning",
-            alert: "alert",
+            "success": "success",
+            "warning": "warning",
+            "alert": "alert",
           },
           "default",
           { display: "radio" },
@@ -69,7 +64,7 @@ storiesOf("Atoms|Button", module)
           "type",
           {
             "outline ( default )": "default",
-            solid: "solid",
+            "solid": "solid",
           },
           "default",
           { display: "radio" },
@@ -78,9 +73,9 @@ storiesOf("Atoms|Button", module)
         size={options(
           "size",
           {
-            small: "small",
+            "small": "small",
             "medium ( default )": "default",
-            large: "large",
+            "large": "large",
           },
           "default",
           { display: "radio" },
@@ -93,24 +88,22 @@ storiesOf("Atoms|Button", module)
   })
   .add("The Button Family", () => {
     return (
-      <>
+      <Panel>
         <Grid>
-          <Button label="Standard Button" />
-          <Button label="Solid Button" type="solid" />
-          <Button label="Success Button" color="success" />
-          <Button
-            label="Solid Success Button"
-            type="solid"
-            color="success"
-          />
+          <Button label="Standard Primary" />
+          <Button label="Solid Primary" type="solid" />
+          <Button label="Standard Secondary" color="secondary" />
+          <Button label="Solid Secondary" type="solid" color="secondary" />
+
           <Button label="Warning Button" color="warning" />
-          <Button
-            label="Solid Warning Button"
-            type="solid"
-            color="warning"
-          />
+          <Button label="Solid Warning Button" type="solid" color="warning" />
           <Button label="Alert Button" color="alert" />
           <Button label="Solid Alert Button" type="solid" color="alert" />
+          <Button label="Success Button" color="success" />
+          <Button label="Solid Success Button" type="solid" color="success" />
+          <Button label="Info Button" color="info" />
+          <Button label="Solid Info Button" type="solid" color="info" />
+
           <Button label="Small Button" size="small" />
           <Button label="Large Button" size="large" />
           <Button label="Disabled Button" disabled />
@@ -123,6 +116,6 @@ storiesOf("Atoms|Button", module)
             color="alert"
           />
         </Grid>
-      </>
+      </Panel>
     );
   });

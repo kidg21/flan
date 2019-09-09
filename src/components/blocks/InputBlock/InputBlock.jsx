@@ -2,7 +2,6 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { colors } from "Variables";
 import { DisabledContext } from "States";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
 import SelectMenu from "atoms/SelectMenu";
@@ -42,7 +41,7 @@ const TextInputContainer = styled.div`
   }};
   grid-gap: ${(props) => { return (props.slider ? "0.15rem" : "0.35rem"); }};
   align-content: flex-start;
-  color: ${(props) => { return props.error ? colors.alert : props.disabled ? colors.grey_40 : ""; }};
+  color: ${(props) => { return props.error ? props.theme.alert : props.disabled ? props.theme.disabled : ""; }};
 `;
 
 const PrePostLabel = styled.label`
@@ -53,41 +52,48 @@ const PrePostLabel = styled.label`
   font-weight: bold;
   letter-spacing: 2px;
   text-transform: lowercase;
-  color: ${colors.grey_60};
-  background-color: ${colors.grey_light};
-  border: 1px solid ${colors.grey_20};
-  border-bottom: 1px solid ${colors.grey_20};
+  color: ${(props) => {
+    return props.theme.textColor; }};
+  background-color: ${(props) => {
+    return props.theme.divider; }};
+  border: 1px solid ${(props) => {
+    return props.theme.divider; }};
+  border-bottom: 1px solid ${(props) => {
+    return props.theme.divider; }};
   border-radius: 4px;
   padding: 0.25rem 1rem;
   white-space: nowrap;
 `;
 
 const TextInput = styled.input`
-  border: 1px solid ${colors.grey_20};
-  border-bottom: 1px solid ${colors.grey_20};
-  border-color: ${(props) => { return (props.error ? colors.alert : ""); }};
+  border: 1px solid ${(props) => {
+    return props.theme.divider; }};
+  border-bottom: 1px solid ${(props) => {
+    return props.theme.divider; }};
+  border-color: ${(props) => { return (props.error ? props.theme.alert : ""); }};
   border-radius: ${(props) => { return (props.isRound ? "10rem !important" : ""); }};
-  background-color: ${(props) => { return (props.error ? colors.alert_tint : ""); }};
-  caret-color: ${(props) => { return (props.error ? colors.alert : ""); }};
+  background-color: ${(props) => { return (props.error ? props.theme.alert : ""); }};
+  caret-color: ${(props) => { return (props.error ? props.theme.alert : ""); }};
   min-height: 2.75rem;
   padding: ${(props) => { return (props.isRound ? "0.75rem 1rem" : "0.5rem 0.75rem"); }};
 
   ::placeholder {
-    color: ${(props) => { return (props.error ? colors.alert : ""); }};
+    color: ${(props) => { return (props.error ? props.theme.alert : ""); }};
   }
   &:hover {
-    border: 1px solid ${colors.grey_40};
-    border-color: ${(props) => { return (props.error ? colors.alert : ""); }};
+    border: 1px solid ${(props) => {
+      return props.theme.disabled; }};
+    border-color: ${(props) => { return (props.error ? props.theme.alert : ""); }};
     }
   }
   &:focus {
-    background-color: ${(props) => { return (props.error ? colors.alert_tint : ""); }};
-    border-color: ${(props) => { return (props.error ? colors.alert : colors.success_light); }};
+    background-color: ${(props) => { return (props.error ? props.theme.alert : ""); }};
+    border-color: ${(props) => { return (props.error ? props.theme.alert : props.theme.primary); }};
     ::placeholder {
-      color: ${(props) => { return (props.error ? colors.alert : colors.grey_60); }};
+      color: ${(props) => { return (props.error ? props.theme.alert : props.theme.disabled ); }};
     }
     ::selection {
-      background-color: ${(props) => { return (props.error ? colors.alert : ""); }};
+      background-color: ${(props) => { return (props.error ? props.theme.alert : ""); }};
       
     }
   }

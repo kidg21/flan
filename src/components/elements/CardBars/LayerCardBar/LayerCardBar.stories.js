@@ -13,7 +13,6 @@ const Icons = (
   </React.Fragment>
 );
 
-// Colors
 storiesOf("Elements|Card Bar/", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)

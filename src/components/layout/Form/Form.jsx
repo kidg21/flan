@@ -1,7 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
-import { colors } from "Variables";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 import Grid from "layout/Grid";
 
@@ -11,15 +10,20 @@ const Form = styled.form`
   flex: auto;
   align-content: flex-start;
   padding: 1rem 1.5rem;
-  background-color: ${props =>
-    props.bg_light ? colors.grey_light : colors.white};
+  background-color: ${props => (props.bg_light ? props.theme.divider : props.theme.background)};
   ${props =>
     props.dark &&
     css`
-      color: ${colors.grey_light};
-      background-color: ${colors.grey_dark};
+      color: ${props => {
+        return props.theme.divider;
+      }};
+      background-color: ${props => {
+        return props.theme.disabled;
+      }};
       * {
-        color: ${colors.grey_light} !important;
+        color: ${props => {
+          return props.theme.divider;
+        }}; !important;
       }
     `}
   /* Prototype Content - displays when a Form is empty */
@@ -32,7 +36,9 @@ const Form = styled.form`
 `;
 
 const Header = styled.h3`
-  color: ${colors.grey_60};
+  color: ${props => {
+    return props.theme.textColor;
+  }};
   line-height: normal;
   letter-spacing: 2px;
   margin: 0;
@@ -57,7 +63,9 @@ const Section = styled.section`
 `;
 
 const SectionName = styled.h5`
-  color: ${colors.grey_80};
+  color: ${props => {
+    return props.theme.textColor;
+  }};
   font-weight: 700;
   // letter-spacing: 1px;
   margin-bottom: 0;
@@ -79,12 +87,12 @@ const Label = styled.label`
     display: ${props => (props.isRequired ? "" : "none")};
     line-height: 0;
     font-size: 1.5rem;
-    color: ${colors.alert};
+    color: ${props => {
+      return props.theme.alert;
+    }};
   }
 `;
-const InputLabel = props => (
-  <Label isRequired={props.isRequired}>{props.inputLabel}</Label>
-);
+const InputLabel = props => <Label isRequired={props.isRequired}>{props.inputLabel}</Label>;
 
 const Help = styled.label`
   grid-column: 1 / -1;
@@ -96,7 +104,9 @@ const HelpText = props => <Help>{props.children || props.helpText}</Help>;
 
 const Error = styled.label`
   grid-column: 1 / -1;
-  color: ${colors.alert};
+  color: ${props => {
+    return props.theme.alert;
+  }};
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 1px;

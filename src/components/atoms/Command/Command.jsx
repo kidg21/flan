@@ -2,7 +2,6 @@
 import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { colors } from "Variables";
 import { DisabledContext } from "States";
 import Icon from "atoms/Icon";
 import Title from "base/Typography";
@@ -138,7 +137,7 @@ function Command({ id, name, label, icon, align, size, onClick, disabled }) {
 
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (isDisabled) commandColor = "grey";
+  if (isDisabled) commandColor = "disabled";
 
   switch (size) {
     case "small":

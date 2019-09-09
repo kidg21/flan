@@ -3,8 +3,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-// Import colors and sizes variables
-import { colors, fonts } from "Variables";
+import { fonts } from "Variables";
 
 const LinkedText = styled.a`
   color: ${(props) => {

@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { colors } from "Variables";
 
 const Wrapper = styled.div`
   display: block;
@@ -18,7 +17,10 @@ const BoxContainer = styled.div`
   width: ${(props) => {
     return props.width || "";
   }};
-  border: 1px solid ${colors.grey_20};
+  border: 1px solid
+    ${(props) => {
+    return props.theme.disabled;
+  }};
   border-radius: 5px;
 
   ::-webkit-scrollbar {
@@ -30,7 +32,9 @@ const BoxContainer = styled.div`
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: ${colors.anchor_light};
+    background-color: ${(props) => {
+    return props.theme.primary;
+  }};
     border-radius: 20px;
   }
 `;
@@ -49,14 +53,8 @@ function Container({
 
 Container.propTypes = {
   id: PropTypes.string,
-  height: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.number,
-  ]),
-  width: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.number,
-  ]),
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   children: PropTypes.node,
 };
 
@@ -65,6 +63,6 @@ Container.defaultProps = {
   height: null,
   width: null,
   children: null,
-}
+};
 
 export default Container;

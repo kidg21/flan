@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { colors, shadows } from "Variables";
 import { InputLabel } from "layout/Form";
 import SelectMenu from "atoms/SelectMenu";
 
@@ -20,7 +19,9 @@ const InputContainer = styled.div`
 `;
 
 const Dash = styled.div`
-  color: ${colors.grey_60};
+  color: ${(props) => {
+    return props.theme.disabled;
+  }};
   margin: auto;
   font-size: 20px;
   padding-top: 12px;
@@ -28,7 +29,9 @@ const Dash = styled.div`
   vertical-align: center;
 `;
 
-function DataRange({ id, label, labelMin, optionsMin, labelMax, optionsMax }) {
+function DataRange({
+  id, label, labelMin, optionsMin, labelMax, optionsMax,
+}) {
   return (
     <Container id={id}>
       <InputLabel inputLabel={label} />

@@ -2,7 +2,7 @@ import React, { useState, Fragment } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Icon from "atoms/Icon";
-import { colors, shadows } from "Variables";
+
 
 const Container = styled.div`
   cursor: pointer;
@@ -12,7 +12,8 @@ const Container = styled.div`
 `;
 
 const Menu = styled.ul`
-  background: ${colors.white};
+  background: ${(props) => {
+    return props.theme.background; }};
   border: 0.5px solid #ddd;
   list-style: none;
   border-radius: 3px;
@@ -30,7 +31,8 @@ const Item = styled.li`
   letter-spacing: 0.5px;
 
   &:hover {
-    color: ${colors.anchor};
+    color: ${(props) => {
+      return props.theme.primary; }};
   }
 `;
 

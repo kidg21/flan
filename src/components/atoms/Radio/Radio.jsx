@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { colors } from "Variables";
 import { DisabledContext } from "States";
 
 const RadioContainer = styled.div`
@@ -9,25 +8,27 @@ const RadioContainer = styled.div`
   grid-template-columns: auto 1fr;
   grid-gap: 0.5rem;
   align-items: inherit;
-  color: ${props => {
-    return props.error ? colors.alert : "";
+  color: ${(props) => {
+    return props.error ? props.theme.alert : "";
   }};
   &[disabled],
   &[readonly] {
     cursor: not-allowed;
     pointer-events: none;
     user-select: none;
-    color: ${colors.grey_40};
+    color: ${(props) => {
+    return props.theme.textColor;
+  }};
   }
 `;
 
 const RadioInput = styled.input.attrs({ type: "radio" })`
   border: 1px solid;
-  border-color: ${props => {
-    return props.error ? colors.alert_light : colors.grey_40;
+  border-color: ${(props) => {
+    return props.error ? props.theme.alert : props.theme.disabled;
   }};
-  background-color: ${props => {
-    return props.disabled ? colors.grey_20 : colors.white;
+  background-color: ${(props) => {
+    return props.disabled ? props.theme.disabled : props.theme.background;
   }};
   width: 1rem;
   height: 1rem;
@@ -35,15 +36,18 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
   cursor: pointer;
   -webkit-appearance: none;
   &:checked {
-    background-color: ${props => {
-      return props.error ? colors.alert_tint : colors.success_light;
-    }};
-    border-color: ${props => {
-      return props.error ? colors.alert_light : colors.success;
-    }};
+    background-color: ${(props) => {
+    return props.error ? props.theme.alert : props.theme.secondary;
+  }};
+    border-color: ${(props) => {
+    return props.error ? props.theme.alert : props.theme.secondary;
+  }};
   }
   &:focus {
-    border: 1px solid ${colors.anchor};
+    border: 1px solid
+      ${(props) => {
+    return props.theme.primary;
+  }};
     outline: none;
   }
 `;
@@ -57,9 +61,10 @@ const RadioLabel = styled.label`
   cursor: pointer;
 `;
 
-function Radio({ id, name, label, value, error, onChange, checked, disabled }) {
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+function Radio({
+  id, name, label, value, error, onChange, checked, disabled,
+}) {
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   return (
     <RadioContainer
       disabled={isDisabled} // input attribute>

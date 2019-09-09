@@ -4,7 +4,7 @@ import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
 import Switch from "./Switch";
 
-// Colors
+
 storiesOf("Atoms|Switch", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)

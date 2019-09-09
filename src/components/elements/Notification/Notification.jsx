@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import styled, { css, keyframes } from "styled-components";
-import { fonts, colors, shadows, screen } from "Variables";
+import { fonts, shadows, screen } from "Variables";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 import PropTypes from "prop-types";
 

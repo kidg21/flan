@@ -2,7 +2,7 @@ import React from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 import { InputLabel } from "layout/Form";
-import { colors, shadows, Lighten, Darken } from "Variables";
+import { Lighten, Darken } from "Variables";
 
 const RangePiece = styled.input.attrs({ type: "range" })`
   -webkit-appearance: none;
@@ -18,15 +18,6 @@ const RangePiece = styled.input.attrs({ type: "range" })`
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
 
-  // &::-ms-thumb {
-  //   width: 18px;
-  //   height: 38px;
-  //   border-radius: 50%;
-  //   background-image: linear-gradient(#528321, #66a22a);
-  //   // background-image: linear-gradient(#00adb5, #30cffc);
-  //   cursor: pointer;
-  // }
-
   &::-webkit-slider-track {
     color: blue;
     background: purple;
@@ -38,8 +29,9 @@ const RangePiece = styled.input.attrs({ type: "range" })`
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background-image: linear-gradient(#528321, #66a22a);
-    // background-image: linear-gradient(#00adb5, #30cffc);
+    color: ${(props) => {
+    return props.theme.secondary;
+  }};
     cursor: pointer;
 
     &:hover {
@@ -69,8 +61,9 @@ const RangePiece = styled.input.attrs({ type: "range" })`
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background-image: linear-gradient(#528321, #66a22a);
-    // background-image: linear-gradient(#00adb5, #30cffc);
+    color: ${(props) => {
+    return props.theme.secondary;
+  }};
     cursor: pointer;
   }
 `;
@@ -88,7 +81,9 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background-image: linear-gradient(${colors.success_light}, ${colors.success_dark});
+    color: ${(props) => {
+    return props.theme.secondary;
+  }};
     cursor: pointer;
 
     &:hover {

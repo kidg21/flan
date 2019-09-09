@@ -10,7 +10,6 @@ import {
   select,
   optionsKnob as options,
 } from "@storybook/addon-knobs";
-import { colors } from "Variables";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
 import Card from "layout/Card";
@@ -24,7 +23,9 @@ import BarNotes from "./Bar.md";
 const Section = styled.h6`
   margin: 0;
   line-height: normal;
-  color: ${colors.grey_60};
+  color: ${props => {
+    return props.theme.textColor;
+  }};
   grid-column: 1/-1;
 `;
 
@@ -36,17 +37,11 @@ const image = (
   />
 );
 const shortTitle = <Title text="A Standard Title" />;
-const longTitle = (
-  <Title text="A Title So Long That It May Take Up Multiple Lines" />
-);
+const longTitle = <Title text="A Title So Long That It May Take Up Multiple Lines" />;
 const multipleLines = (
   <>
     <Title text="Towgood, Gary T." />
-    <Title
-      text="3082 Yellowstone Dr. Costa Mesa, CA 92612"
-      size="small"
-      weight="normal"
-    />
+    <Title text="3082 Yellowstone Dr. Costa Mesa, CA 92612" size="small" weight="normal" />
   </>
 );
 

@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { fonts, colors, shadows } from "Variables";
+import { fonts, shadows } from "Variables";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 
 const Panel = styled.div`

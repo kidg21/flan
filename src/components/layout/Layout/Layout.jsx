@@ -42,7 +42,9 @@ const FlexWrapper = styled.div`
   max-width: 100%;
   max-height: 100%;
   transition: all 0.3s ease-in-out;
-  border: 1px solid lightgrey;
+  border: .25px solid ${(props) => {
+    return props.theme.divider;
+  }};
   overflow: ${(props) => {
     return props.setOverflow || "hidden";
   }};

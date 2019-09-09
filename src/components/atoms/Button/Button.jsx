@@ -84,6 +84,22 @@ function Button({
       buttonColor = "alert";
       textColor = buttonColor;
       break;
+    case "info":
+      buttonColor = "info";
+      textColor = buttonColor;
+      break;
+    case "primary":
+      buttonColor = "primary";
+      textColor = buttonColor;
+      break;
+    case "secondary":
+      buttonColor = "secondary";
+      textColor = buttonColor;
+      break;
+    case "alert":
+      buttonColor = "alert";
+      textColor = buttonColor;
+      break;
     default:
       buttonColor = "primary";
       break;
@@ -91,8 +107,8 @@ function Button({
 
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
-    textColor = "textColor";
-    backgroundColor = "grey";
+    textColor = "textColorInverse";
+    backgroundColor = "disabled";
   } else if (type && type.toLowerCase() === "solid") {
     textColor = "textColorInverse";
     backgroundColor = buttonColor;
@@ -135,7 +151,7 @@ Button.propTypes = {
   label: PropTypes.string.isRequired,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   type: PropTypes.string,
-  color: PropTypes.oneOf(["success", "warning", "alert"]),
+  color: PropTypes.oneOf(["success", "warning", "alert", "info", "primary", "secondary"]),
   size: PropTypes.oneOf(["small", "large"]),
   fullWidth: PropTypes.bool,
   disabled: PropTypes.bool,

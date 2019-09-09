@@ -1,42 +1,28 @@
 import React from "react";
 import styled from "styled-components";
-import Title from "base/Typography";
+import Title, { Description } from "base/Typography";
 import Grid from "layout/Grid";
+import Bar from "blocks/Bar";
 
-const ColorsContainer = styled.div`
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(2, 1fr);
-  @media ${screen.medium} {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  @media ${screen.large} {
-    grid-template-columns: repeat(8, 1fr);
-  }
-  grid-auto-flow: dense;
-`;
-
-// Container for one color sample
-
-// Color thumbnail
 const ColorBlockColor = styled.div`
   width: 5em;
-  border-radius: 5px;
+  border-radius: 100px;
   height: 5em;
   margin: 5px;
-  filter: ${(props) => {
+  filter: ${props => {
     return props.filterShade || "";
   }};
   border: 1px solid
-    ${(props) => {
-    return props.theme.grey;
-  }};
-  background-color: ${(props) => {
+    ${props => {
+      return props.theme.disabled;
+    }};
+
+  background-color: ${props => {
     return props.theme[props.backgroundColor] || props.theme.background;
   }};
 `;
 
-function Colors({ id, shade, type }) {
+function Colors({ id, shade, type, comment, hexcode }) {
   let backgroundColor;
   let filterShade;
   switch (type) {
@@ -64,6 +50,12 @@ function Colors({ id, shade, type }) {
     case "textColor":
       backgroundColor = "textColor";
       break;
+    case "disabled":
+      backgroundColor = "disabled";
+      break;
+    case "divider":
+      backgroundColor = "divider";
+      break;
     default:
       backgroundColor = "primary";
       break;
@@ -79,9 +71,18 @@ function Colors({ id, shade, type }) {
       break;
   }
   return (
-    <ColorsContainer>
-      <ColorBlockColor id={id} backgroundColor={backgroundColor} filterShade={filterShade} />
-    </ColorsContainer>
+    <Bar
+      contentAlign="center"
+      left={<ColorBlockColor backgroundColor={backgroundColor} filterShade={filterShade} />}
+      leftWidth="min-content"
+      center={
+        <>
+          <Title text={backgroundColor} weight="bold" /> <Title text={comment} weight="normal" />
+          <Description text={backgroundColor} />
+        </>
+      }
+      centerAlign="left"
+    />
   );
 }
 export default Colors;

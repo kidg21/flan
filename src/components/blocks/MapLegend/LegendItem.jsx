@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { colors } from "Variables";
 
 const LegendText = styled.li`
   font-size: 0.86em;
-  font-color: ${colors.grey_80};
+  font-color: ${(props) => {
+    return props.theme.textColor;
+  }};
   display: flex;
   list-style: none;
   margin-left: 0;
@@ -31,7 +32,9 @@ const Item = styled.button`
     filter: brightness(96%);
   }
   &:active {
-    border-color: ${colors.grey_80};
+    border-color: ${(props) => {
+    return props.theme.textColor;
+  }};
     ${LegendBox} {
       border: 1px solid black;
     }
@@ -40,9 +43,15 @@ const Item = styled.button`
     }
   }
   &:disabled {
-    color: ${colors.grey_40};
-    background-color: ${colors.grey_light};
-    border-color: ${colors.grey_40};
+    color: ${(props) => {
+    return props.theme.disabled;
+  }};
+    background-color: ${(props) => {
+    return props.theme.disabled;
+  }};
+    border-color: ${(props) => {
+    return props.theme.divider;
+  }};
     cursor: not-allowed;
     pointer-events: none;
     user-select: none;
@@ -50,12 +59,7 @@ const Item = styled.button`
 `;
 
 function KeyItem({
-  id,
-  onClick,
-  isSelected,
-  isDisabled,
-  color,
-  name,
+  id, onClick, isSelected, isDisabled, color, name,
 }) {
   return (
     <Item id={id} onClick={onClick} isSelected={isSelected} disabled={isDisabled}>

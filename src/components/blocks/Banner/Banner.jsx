@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
-import { colors, shadows } from "Variables";
 import Icon from "atoms/Icon";
 import Title, { Description } from "base/Typography";
 

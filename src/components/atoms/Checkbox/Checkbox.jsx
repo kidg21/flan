@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { colors } from "Variables";
 import { DisabledContext } from "States";
 
 const CheckboxWrapper = styled.section`
@@ -39,7 +38,7 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
     return props.theme[props.fillColor] || props.theme.background;
   }};
   border-color: ${(props) => {
-    return props.theme[props.borderColor] || props.theme.grey;
+    return props.theme[props.borderColor] || props.theme.disabled;
   }};
   width: 1rem;
   height: 1rem;
@@ -48,10 +47,10 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   -webkit-appearance: none;
   &:checked {
     background-color: ${(props) => {
-    return props.theme[props.fillColorChecked] || props.theme.success;
+    return props.theme[props.fillColorChecked] || props.theme.secondary;
   }};
     border-color: ${(props) => {
-    return props.theme[props.borderColorChecked] || props.theme.success;
+    return props.theme[props.borderColorChecked] || props.theme.secondary;
   }};
   }
   &:focus {
@@ -124,8 +123,8 @@ function Checkbox({
 
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
-    checkboxColor = "grey";
-    fillColor = "grey";
+    checkboxColor = "disabled";
+    fillColor = "disabled";
     borderColor = checkboxColor;
   }
 

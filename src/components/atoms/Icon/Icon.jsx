@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
-import { colors, Lighten, Darken } from "Variables";
+import {Lighten, Darken } from "Variables";
 import { DisabledContext } from "States";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -30,13 +30,13 @@ const LinkedIcon = styled.a`
 
 const StyledIcon = styled(FontAwesomeIcon)`
   color: ${(props) => {
-    return props.theme[props.color] || "inherit";
+    return props.theme[props.color] || props.theme.textColor ;
   }};
   border: ${(props) => {
     return props.border ? "2px solid" : "";
   }};
   border-color: ${(props) => {
-    return props.border ? colors.grey_20 : "";
+    return props.theme[props.border] ? props.theme.textColor : "";
   }};
   border-radius: ${(props) => {
     return props.border ? "5px" : "";
@@ -175,9 +175,6 @@ function Icon({
     case "alert":
       color = "alert";
       break;
-    case "inverse":
-      color = "textColorInverse";
-      break;
     default:
       break;
   }
@@ -185,7 +182,7 @@ function Icon({
   if (onClick) color = "info";
 
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (isDisabled) color = "grey";
+  if (isDisabled) color = "disabled";
 
   const styledIcon = (
     <StyledIcon

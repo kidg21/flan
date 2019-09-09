@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import Icon from "atoms/Icon";
 import TextInput from "atoms/TextInput";
-import { colors } from "Variables";
 
 const IconWrapper = styled.span`
   /* Needed for passing properties to children (animation, etc.) */

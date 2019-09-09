@@ -6,7 +6,6 @@ import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
 import { withInfo } from "@storybook/addon-info";
 import { withKnobs, text, select, optionsKnob as options } from "@storybook/addon-knobs";
-import { colors } from "Variables";
 import Command from "atoms/Command";
 import CommandNotes from "./Command.md";
 
@@ -20,13 +19,6 @@ const SubTitle = styled.h5`
   margin: 0;
 `;
 
-const SectionTitle = styled.h4`
-  grid-column: 1/-1;
-  letter-spacing: 1px;
-  margin: 0;
-  padding-top: 1em;
-  border-top: 2px solid ${colors.grey_light};
-`;
 
 // Command
 storiesOf("Atoms|Command", module)
@@ -174,7 +166,7 @@ storiesOf("Application|Libraries/", module)
           The Command is an interactive UI element that pairs an icon and a label. Use a Command
           when a user&apos;s action is intended to run a workflow or function.
         </SubTitle>
-        <SectionTitle>Standard Commands</SectionTitle>
+        <SubTitle>Standard Commands</SubTitle>
         <Command name="add to list" />
         <Command name="address" />
         <Command name="apn" />

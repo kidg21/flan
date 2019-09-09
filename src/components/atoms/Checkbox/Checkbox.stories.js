@@ -3,6 +3,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
+import Panel from "layout/Panel";
 import {
   withKnobs,
   boolean,
@@ -184,7 +185,7 @@ storiesOf("Atoms|Checkbox", module)
   })
   .add("Checkbox Group (mixed columns)", () => {
     return (
-      <>
+      <Panel>
         <CheckboxGroup columns="2">
           <Checkbox {...cbox1} />
           <Checkbox {...cbox2} />
@@ -194,6 +195,6 @@ storiesOf("Atoms|Checkbox", module)
         <CheckboxGroup columns="1">
           <Checkbox {...cboxLong} />
         </CheckboxGroup>
-      </>
+        </Panel>
     );
   });
