@@ -70,48 +70,46 @@ const SectionName = styled.h5`
   // letter-spacing: 1px;
   margin-bottom: 0;
 `;
+
 const Label = styled.label`
-  display: flex;
-  font-family: Arial;
-  justify-content: space-between;
-  align-items: center;
-  grid-column: 1 / -1;
+  font-weight: 700;
   user-select: none;
-  font-size: smaller;
-  font-weight: 400;
-  letter-spacing: 1px;
   color: inherit;
   cursor: pointer;
   &:after {
-    content: "*";
     display: ${props => (props.isRequired ? "" : "none")};
+    content: "*";
+    color: ${colors.alert};
+    font-size: 1.25rem;
     line-height: 0;
-    font-size: 1.5rem;
-    color: ${props => {
-      return props.theme.alert;
-    }};
+    vertical-align: middle;
+    padding-left: 0.25em;
   }
 `;
-const InputLabel = props => <Label isRequired={props.isRequired}>{props.inputLabel}</Label>;
+function InputLabel({ label, isRequired, className, children, ...props }) {
+  return (
+    <Label isRequired={isRequired} className={className} {...props}>
+      {label || children}
+    </Label>
+  );
+}
 
-const Help = styled.label`
-  grid-column: 1 / -1;
-  color: inherit;
-  font-size: smaller;
-  letter-spacing: 1px;
+const Help = styled(Label)`
+  color: initial;
+  font-weight: initial;
+  cursor: initial;
 `;
-const HelpText = props => <Help>{props.children || props.helpText}</Help>;
+function HelpText({ helpText, children }) {
+  return <Help>{helpText || children}</Help>;
+}
 
-const Error = styled.label`
-  grid-column: 1 / -1;
-  color: ${props => {
-    return props.theme.alert;
-  }};
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 1px;
+const Error = styled(Label)`
+  color: ${colors.alert};
+  cursor: initial;
 `;
-const ErrorText = props => <Error>{props.children || props.errorText}</Error>;
+function ErrorText({ errorText, children }) {
+  return <Error>{errorText || children}</Error>;
+}
 
 const InputGroup = styled(Grid)`
   /* Prototype Content - displays when a Form is empty */
@@ -123,8 +121,10 @@ const InputGroup = styled(Grid)`
 `;
 
 InputLabel.propTypes = {
-  inputLabel: PropTypes.string,
+  label: PropTypes.string,
   isRequired: PropTypes.bool,
+  className: PropTypes.string,
+  children: PropTypes.node,
 };
 
 HelpText.propTypes = {

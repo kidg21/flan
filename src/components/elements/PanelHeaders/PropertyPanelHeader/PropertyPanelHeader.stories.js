@@ -1,8 +1,9 @@
+/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import PropertyPanelHeader from "./PropertyPanelHeader";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
+import PropertyPanelHeader from "elements/PanelHeaders/PropertyPanelHeader";
 
 const data = [
   { id: "a", name: "Save" },
@@ -21,6 +22,7 @@ storiesOf("Elements|Panel Headers/", module)
         title="5201 California Ave, Irvine, CA 92614"
         menuData={data}
         APN="374-543-4227"
+        onClick={() => {}}
       />
     );
   });

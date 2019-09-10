@@ -1,9 +1,10 @@
+/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import MainPanelHeader from "./MainPanelHeader";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
-// import Group from "./Group";
+import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
+
 const data = [
   { id: "a", name: "Save" },
   { id: "b", name: "Filter" },

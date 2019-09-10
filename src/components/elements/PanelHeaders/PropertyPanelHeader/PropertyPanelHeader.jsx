@@ -20,16 +20,25 @@ function PropertyPanelHeader({
             <Icon icon="directions" size="2x" type="primary" onClick={onClick} />
           </IconBlock>
         }
-        right={<Menu data={menuData} position="bottomLeft" type="edit" />}
+        right={<Menu menuData={menuData} position="bottomLeft" type="edit" />}
       />
     </Piece>
   );
 }
+
 PropertyPanelHeader.propTypes = {
   id: PropTypes.string,
-  title: PropTypes.any.isRequired,
+  title: PropTypes.string.isRequired,
   APN: PropTypes.string,
-  menuDate: PropTypes.node,
+  menuData: PropTypes.node,
   onClick: PropTypes.func,
 };
+
+PropertyPanelHeader.defaultProps = {
+  id: null,
+  APN: null,
+  menuData: null,
+  onClick: null,
+};
+
 export default PropertyPanelHeader;
