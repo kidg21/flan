@@ -3,7 +3,7 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import { colors } from "Variables";
 import { DisabledContext } from "States";
-import { InputLabel, HelpText, ErrorText } from "layout/Form";
+import { InputLabel } from "layout/Form";
 
 const SwitchContainer = styled.div`
   color: ${(props) => {
@@ -82,34 +82,33 @@ const ToggleWrapper = styled.label`
   }
 `;
 
-function Toggle({ checked, disabled }) {
+function Toggle({ checked, disabled, onChange }) {
   let checkboxColor;
   let fillColor;
   let borderColor;
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (isDisabled) {
+  if (disabled) {
     checkboxColor = colors.grey_40;
     fillColor = colors.grey_20;
     borderColor = checkboxColor;
   }
-  const [isChecked, setChecked] = useState(checked);
-  const { onChange, ...remainingProps } = (checked, disabled);
-  function onClick(e) {
-    setChecked((state) => {
-      return !state;
-    });
-    e.preventDefault();
-    if (onChange) onChange(e);
+
+  let isChecked = checked;
+  let onClick = onChange;
+  if (!onClick) {
+    let setChecked = null;
+    [isChecked, setChecked] = useState(checked);
+    onClick = () => { setChecked(!isChecked); };
   }
+
   return (
-    <SwitchContainer checked={isChecked} onClick={onClick} disabled={isDisabled} {...remainingProps}>
-      <StyledSwitch
-        fillColor={fillColor}
-        borderColor={borderColor}
-        checked={isChecked}
-        disabled={disabled}
-      >
-        <Circle checked={isChecked} disabled={isDisabled} {...remainingProps} />
+    <SwitchContainer
+      onClick={onClick}
+      checkboxColor={checkboxColor}
+      fillColor={fillColor}
+      borderColor={borderColor}
+    >
+      <StyledSwitch checked={isChecked} disabled={disabled}>
+        <Circle checked={isChecked} disabled={disabled} />
       </StyledSwitch>
     </SwitchContainer>
   );
@@ -128,26 +127,25 @@ const ToggleContainer = styled.div`
 `;
 
 function Switch({
-  checked, disabled, id, isRequired, inputLabel
+  checked, disabled, id, isRequired, inputLabel, onChange,
 }) {
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   return (
-    <ToggleContainer inputLabel={inputLabel} isRequired={isRequired}>
-      <ToggleWrapper id={id} disabled={disabled}>
-        <Toggle id={id} checked={checked} disabled={disabled} />
+    <ToggleContainer isRequired={isRequired}>
+      <ToggleWrapper id={id} disabled={isDisabled}>
+        <Toggle checked={checked} disabled={isDisabled} onChange={onChange} />
       </ToggleWrapper>
-      {inputLabel ? <ToggleLabel htmlFor={id} inputLabel={inputLabel} disabled={disabled} /> : null}
+      {inputLabel ? <ToggleLabel htmlFor={id} label={inputLabel} disabled={isDisabled} /> : null}
     </ToggleContainer>
   );
 }
 
 Toggle.propTypes = {
-  id: PropTypes.string,
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
   onChange: PropTypes.func,
 };
 Toggle.defaultProps = {
-  id: null,
   checked: false,
   disabled: false,
   onChange: null,
@@ -157,11 +155,17 @@ Switch.propTypes = {
   id: PropTypes.string,
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
+  isRequired: PropTypes.bool,
+  inputLabel: PropTypes.string,
+  onChange: PropTypes.func,
 };
 Switch.defaultProps = {
   id: null,
   checked: false,
   disabled: false,
+  isRequired: false,
+  inputLabel: null,
+  onChange: null,
 };
 
 export default Switch;

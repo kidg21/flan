@@ -77,9 +77,9 @@ const Label = styled.label`
     padding-left: 0.25em;
   }
 `;
-function InputLabel({ label, isRequired, className, children }) {
+function InputLabel({ label, isRequired, className, children, ...props }) {
   return (
-    <Label isRequired={isRequired} className={className}>
+    <Label isRequired={isRequired} className={className} {...props}>
       {label || children}
     </Label>
   );
@@ -112,8 +112,10 @@ const InputGroup = styled(Grid)`
 `;
 
 InputLabel.propTypes = {
-  inputLabel: PropTypes.string,
+  label: PropTypes.string,
   isRequired: PropTypes.bool,
+  className: PropTypes.string,
+  children: PropTypes.node,
 };
 
 HelpText.propTypes = {
