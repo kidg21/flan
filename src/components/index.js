@@ -52,7 +52,6 @@ export {
   InputLabel,
   HelpText,
   ErrorText,
-  InputGroup,
 } from "./layout/Form";
 export { default as Grid } from "./layout/Grid";
 export { default as Layout } from "./layout/Layout";

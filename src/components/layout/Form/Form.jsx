@@ -6,24 +6,6 @@ import { PlaceholderText } from "helpers/Placeholders.jsx";
 import Title, { Headline, SubTitle, Description } from "base/Typography";
 import Grid from "layout/Grid";
 
-const CenteredSection = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-`;
-
-const InputGroup = styled(Grid)`
-  /* Prototype Content - displays when a Form is empty */
-  &:empty {
-    &:before {
-      content: "{ InputGroup }";
-    }
-  }
-`;
-
 const Label = styled.label`
   grid-column: 1 / -1;
   font-weight: 700;
@@ -129,4 +111,4 @@ function Form({ action, children, columns, description, method, subtitle, title 
   );
 }
 
-export { Form as default, CenteredSection, Section, InputLabel, HelpText, ErrorText, InputGroup };
+export { Form as default, Section, InputLabel, HelpText, ErrorText };
