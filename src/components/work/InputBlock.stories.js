@@ -5,13 +5,13 @@ import { Padding } from "helpers/Display";
 import { withInfo } from "@storybook/addon-info";
 import { withKnobs, text, boolean, radios, select, number } from "@storybook/addon-knobs";
 import Panel, { PanelSection } from "layout/Panel";
-import Form, { Section, SectionName } from "layout/Form";
+import Form, { Section } from "layout/Form";
 import Icon from "atoms/Icon";
 import InputBlock from "blocks/InputBlock";
 import InputBlockNotes from "blocks/InputBlock/InputBlock.md";
 
 // Input ( Standard )
-storiesOf("Work|Blocks/InputBlock", module)
+storiesOf("Work|Blocks/Input Block", module)
   .addParameters({
     info: {
       text:
@@ -53,7 +53,7 @@ storiesOf("Work|Blocks/InputBlock", module)
     }),
   )
   // Text ( Standard )
-  .add("InputBlock ( Standard )", () => {
+  .add("Input Block ( Standard )", () => {
     return (
       <InputBlock
         name="Say My Name!"
@@ -64,7 +64,7 @@ storiesOf("Work|Blocks/InputBlock", module)
     );
   })
   // Number ( Number )
-  .add("InputBlock ( Number )", () => {
+  .add("Input Block ( Number )", () => {
     return (
       <InputBlock
         type="number"
@@ -73,8 +73,8 @@ storiesOf("Work|Blocks/InputBlock", module)
       />
     );
   })
-  // InputBlock ( Required )
-  .add("InputBlock ( Required )", () => {
+  // Input Block ( Required )
+  .add("Input Block ( Required )", () => {
     return (
       <InputBlock
         label="Input ( Required )"
@@ -83,8 +83,8 @@ storiesOf("Work|Blocks/InputBlock", module)
       />
     );
   })
-  // InputBlock ( Disabled )
-  .add("InputBlock ( Disabled )", () => {
+  // Input Block ( Disabled )
+  .add("Input Block ( Disabled )", () => {
     return (
       <InputBlock
         label="Input ( Disabled )"
@@ -93,8 +93,8 @@ storiesOf("Work|Blocks/InputBlock", module)
       />
     );
   })
-  // InputBlock ( Error )
-  .add("InputBlock ( Error )", () => {
+  // Input Block ( Error )
+  .add("Input Block ( Error )", () => {
     return (
       <InputBlock
         label="Input ( Error )"
@@ -104,8 +104,8 @@ storiesOf("Work|Blocks/InputBlock", module)
       />
     );
   })
-  // InputBlock ( Round )
-  .add("InputBlock ( Round )", () => {
+  // Input Block ( Round )
+  .add("Input Block ( Round )", () => {
     return (
       <InputBlock
         label="Input ( Round )"
@@ -114,8 +114,8 @@ storiesOf("Work|Blocks/InputBlock", module)
       />
     );
   })
-  // InputBlock ( 2 Inputs )
-  .add("InputBlock ( 2 Inputs )", () => {
+  // Input Block ( 2 Inputs )
+  .add("Input Block ( 2 Inputs )", () => {
     return (
       <InputBlock
         label="Input ( 2 Inputs )"
@@ -124,8 +124,8 @@ storiesOf("Work|Blocks/InputBlock", module)
       />
     );
   })
-  // InputBlock ( 3 Inputs )
-  .add("InputBlock ( 3 Inputs )", () => {
+  // Input Block ( 3 Inputs )
+  .add("Input Block ( 3 Inputs )", () => {
     return (
       <InputBlock
         label="Input ( 3 Inputs )"
@@ -136,8 +136,8 @@ storiesOf("Work|Blocks/InputBlock", module)
       />
     );
   })
-  // InputBlock ( Prefix )
-  .add("InputBlock ( Prefix Label )", () => {
+  // Input Block ( Prefix )
+  .add("Input Block ( Prefix Label )", () => {
     return (
       <InputBlock
         label="Input ( Prefix )"
@@ -147,8 +147,8 @@ storiesOf("Work|Blocks/InputBlock", module)
       />
     );
   })
-  // InputBlock ( Prefix Icon )
-  .add("InputBlock ( Prefix Icon )", () => {
+  // Input Block ( Prefix Icon )
+  .add("Input Block ( Prefix Icon )", () => {
     return (
       <InputBlock
         label="Input ( Prefix Icon )"
@@ -158,8 +158,8 @@ storiesOf("Work|Blocks/InputBlock", module)
       />
     );
   })
-  // InputBlock ( Pre-Select )
-  .add("InputBlock ( Pre-Select )", () => {
+  // Input Block ( Pre-Select )
+  .add("Input Block ( Pre-Select )", () => {
     return (
       <InputBlock
         label="Input ( Pre-Select )"
@@ -172,8 +172,8 @@ storiesOf("Work|Blocks/InputBlock", module)
       />
     );
   })
-  // InputBlock ( Postfix )
-  .add("InputBlock ( Postfix Label )", () => {
+  // Input Block ( Postfix )
+  .add("Input Block ( Postfix Label )", () => {
     return (
       <InputBlock
         label="Input ( Postfix )"
@@ -182,8 +182,8 @@ storiesOf("Work|Blocks/InputBlock", module)
       />
     );
   })
-  // InputBlock ( Post-Select )
-  .add("InputBlock ( Post-Select )", () => {
+  // Input Block ( Post-Select )
+  .add("Input Block ( Post-Select )", () => {
     return (
       <InputBlock
         label="Input ( Post-Select )"
@@ -196,8 +196,8 @@ storiesOf("Work|Blocks/InputBlock", module)
       />
     );
   })
-  // InputBlock ( Post-Button )
-  .add("InputBlock ( Post-Button )", () => {
+  // Input Block ( Post-Button )
+  .add("Input Block ( Post-Button )", () => {
     return (
       <InputBlock
         label="Input ( Post-Button )"
@@ -207,8 +207,8 @@ storiesOf("Work|Blocks/InputBlock", module)
       />
     );
   })
-  // InputBlock ( Prefix / Postfix )
-  .add("InputBlock ( Prefix / Postfix )", () => {
+  // Input Block ( Prefix / Postfix )
+  .add("Input Block ( Prefix / Postfix )", () => {
     return (
       <InputBlock
         label="Input ( Prefix / Postfix )"
@@ -218,8 +218,8 @@ storiesOf("Work|Blocks/InputBlock", module)
       />
     );
   })
-  // InputBlock ( Prefix / Post-Select )
-  .add("InputBlock ( Prefix / Post-Select )", () => {
+  // Input Block ( Prefix / Post-Select )
+  .add("Input Block ( Prefix / Post-Select )", () => {
     return (
       <InputBlock
         label="Input ( Prefix / Post-Select )"
@@ -233,8 +233,8 @@ storiesOf("Work|Blocks/InputBlock", module)
       />
     );
   })
-  // InputBlock ( Pre-Select / Postfix )
-  .add("InputBlock ( Pre-Select / Postfix )", () => {
+  // Input Block ( Pre-Select / Postfix )
+  .add("Input Block ( Pre-Select / Postfix )", () => {
     return (
       <InputBlock
         label="Input ( Pre-Select / Postfix )"
@@ -248,8 +248,8 @@ storiesOf("Work|Blocks/InputBlock", module)
       />
     );
   })
-  // InputBlock ( Pre / Post-Select )
-  .add("InputBlock ( Pre / Post-Select )", () => {
+  // Input Block ( Pre / Post-Select )
+  .add("Input Block ( Pre / Post-Select )", () => {
     return (
       <InputBlock
         label="Input ( Pre / Post-Select )"
@@ -267,14 +267,13 @@ storiesOf("Work|Blocks/InputBlock", module)
       />
     );
   });
-// InputBlock ( The InputBlock Family )
-storiesOf("Work|Blocks/InputBlock", module).add("The InputBlock Block Family", () => {
+// Input Block ( The Input Block Family )
+storiesOf("Work|Blocks/Input Block", module).add("The Input Block Block Family", () => {
   return (
     <Panel>
       <PanelSection body>
         <Form>
-          <Section>
-            <SectionName>The InputBlock Family</SectionName>
+          <Section title="The Input Block Family">
             <InputBlock
               label="Input ( Standard )"
               helpText="This help text has been passed through a prop!"

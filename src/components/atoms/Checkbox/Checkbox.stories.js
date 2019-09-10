@@ -4,6 +4,7 @@ import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
 import { withKnobs, text, boolean, optionsKnob as options } from "@storybook/addon-knobs";
+import { Section } from "layout/Form";
 import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
 import CheckboxNotes from "./Checkbox.md";
 import CheckboxGroupNotes from "./CheckboxGroup.md";
@@ -171,10 +172,10 @@ storiesOf("Blocks|Checkbox Group", module)
   })
   .add("Checkbox Group (mixed columns)", () => {
     return (
-      <>
+      <Section>
         <CheckboxGroup data={shortLabels} columns="2" />
         <CheckboxGroup data={longLabels} columns="1" />
-      </>
+      </Section>
     );
   })
   .add("Checkbox Group (right-aligned)", () => {

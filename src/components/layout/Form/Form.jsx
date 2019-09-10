@@ -1,41 +1,10 @@
 import React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import PropTypes from "prop-types";
 import { colors } from "Variables";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
+import Title, { Headline, SubTitle, Description } from "base/Typography";
 import Grid from "layout/Grid";
-
-const Form = styled.form`
-  display: grid;
-  grid-gap: 0.75rem;
-  flex: auto;
-  align-content: flex-start;
-  padding: 1rem 1.5rem;
-  background-color: ${props => (props.bg_light ? colors.grey_light : colors.white)};
-  ${props =>
-    props.dark &&
-    css`
-      color: ${colors.grey_light};
-      background-color: ${colors.grey_dark};
-      * {
-        color: ${colors.grey_light} !important;
-      }
-    `}
-  /* Prototype Content - displays when a Form is empty */
-  &:empty {
-    &:before {
-      ${PlaceholderText}
-      content: "{ Form } \00000A 'Displays a grid of user inputs in responsive columns'";
-    }
-  }
-`;
-
-const Header = styled.h3`
-  color: ${colors.grey_60};
-  line-height: normal;
-  letter-spacing: 2px;
-  margin: 0;
-`;
 
 const CenteredSection = styled.div`
   display: flex;
@@ -46,20 +15,13 @@ const CenteredSection = styled.div`
   margin-top: 1rem;
 `;
 
-const Section = styled.section`
-  display: grid;
-  /* grid-gap: 0.75rem; */
-  grid-gap: 1rem;
-  flex: auto;
-  margin-bottom: 1.5rem;
+const InputGroup = styled(Grid)`
   /* Prototype Content - displays when a Form is empty */
-`;
-
-const SectionName = styled.h5`
-  color: ${colors.grey_80};
-  font-weight: 700;
-  // letter-spacing: 1px;
-  margin-bottom: 0;
+  &:empty {
+    &:before {
+      content: "{ InputGroup }";
+    }
+  }
 `;
 
 const Label = styled.label`
@@ -77,6 +39,7 @@ const Label = styled.label`
     padding-left: 0.25em;
   }
 `;
+
 function InputLabel({ label, isRequired, className, children }) {
   return (
     <Label isRequired={isRequired} className={className}>
@@ -84,6 +47,10 @@ function InputLabel({ label, isRequired, className, children }) {
     </Label>
   );
 }
+InputLabel.propTypes = {
+  inputLabel: PropTypes.string,
+  isRequired: PropTypes.bool,
+};
 
 const Help = styled(Label)`
   color: ${colors.grey_80};
@@ -93,6 +60,9 @@ const Help = styled(Label)`
 function HelpText({ helpText, children }) {
   return <Help>{helpText || children}</Help>;
 }
+HelpText.propTypes = {
+  helpText: PropTypes.string,
+};
 
 const Error = styled(Label)`
   color: ${colors.alert};
@@ -101,37 +71,63 @@ const Error = styled(Label)`
 function ErrorText({ errorText, children }) {
   return <Error>{errorText || children}</Error>;
 }
-
-const InputGroup = styled(Grid)`
-  /* Prototype Content - displays when a Form is empty */
-  &:empty {
-    &:before {
-      content: "{ InputGroup }";
-    }
-  }
-`;
-
-InputLabel.propTypes = {
-  inputLabel: PropTypes.string,
-  isRequired: PropTypes.bool,
-};
-
-HelpText.propTypes = {
-  helpText: PropTypes.string,
-};
-
 ErrorText.propTypes = {
   errorText: PropTypes.string.isRequired,
 };
 
-export {
-  Form as default,
-  Header,
-  CenteredSection,
-  Section,
-  SectionName,
-  InputLabel,
-  HelpText,
-  ErrorText,
-  InputGroup,
-};
+const FormWrapper = styled.form`
+  height: 100%;
+  padding: 1rem 1rem 1.5rem;
+  background-color: ${colors.white};
+`;
+
+const FormHeader = styled(Grid)`
+  margin-bottom: 1.5rem;
+`;
+
+const FormSection = styled.section`
+  display: grid;
+  grid-gap: 1.5rem;
+  margin-bottom: 1rem;
+`;
+
+function Section({ children, title }) {
+  return (
+    <FormSection>
+      {title ? <Title text={title} /> : null}
+      {children}
+    </FormSection>
+  );
+}
+
+const FormInputs = styled(Grid)`
+  grid-template-columns: ${props => {
+    return props.columns || "repeat(auto-fill, minmax(32rem, 1fr))";
+  }};
+  /* Prototype Content - displays when a Form is empty */
+  &:empty {
+    &:before {
+      ${PlaceholderText}
+      content: "{ Form } \00000A 'Displays a grid of user inputs in responsive columns'";
+    }
+  }
+`;
+
+function Form({ action, children, columns, description, method, subtitle, title }) {
+  return (
+    <FormWrapper action={action} method={method}>
+      {title || subtitle || description ? (
+        <FormHeader gap="tiny">
+          {title ? <Headline text={title} /> : null}
+          {subtitle ? <SubTitle text={subtitle} /> : null}
+          {description ? <Description text={description} /> : null}
+        </FormHeader>
+      ) : null}
+      <FormInputs columns={columns} gap="large">
+        {children}
+      </FormInputs>
+    </FormWrapper>
+  );
+}
+
+export { Form as default, CenteredSection, Section, InputLabel, HelpText, ErrorText, InputGroup };

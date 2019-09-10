@@ -49,7 +49,6 @@ export {
   default as Form,
   Header,
   Section,
-  SectionName,
   InputLabel,
   HelpText,
   ErrorText,

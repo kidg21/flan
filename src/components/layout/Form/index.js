@@ -1,8 +1,6 @@
 export {
   default,
-  Header,
   Section,
-  SectionName,
   CenteredSection,
   InputLabel,
   HelpText,

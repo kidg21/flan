@@ -4,6 +4,7 @@ import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
 import { withKnobs, text, boolean, optionsKnob as options } from "@storybook/addon-knobs";
+import { Section } from "layout/Form";
 import Radio, { RadioGroup } from "atoms/Radio";
 import RadioNotes from "./Radio.md";
 import RadioGroupNotes from "./RadioGroup.md";
@@ -191,10 +192,10 @@ storiesOf("Blocks|Radio Group", module)
   })
   .add("Radio Group (mixed columns)", () => {
     return (
-      <>
+      <Section>
         <RadioGroup data={shortLabels} columns="2" />
         <RadioGroup data={longLabels} columns="1" />
-      </>
+      </Section>
     );
   })
   .add("Radio Group (right-aligned)", () => {

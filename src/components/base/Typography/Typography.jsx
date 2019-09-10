@@ -15,6 +15,7 @@ const StyledNumber = styled.span`
 `;
 
 const StyledText = styled.h4`
+  grid-column: 1 / -1;
   font-family: ${(props) => {
     return props.fontFamily || "inherit";
   }};
@@ -110,10 +111,10 @@ function Text({
   }
   switch (size && size.toLowerCase()) {
     case "tiny":
-      as = "h6";
+      as = "label";
       break;
     case "small":
-      as = "h5";
+      as = "h6";
       break;
     case "large":
       as = "h3";
@@ -262,7 +263,7 @@ Title.defaultProps = {
 
 function SubTitle({ text, children, ...textProps }) {
   return (
-    <Text spacing="2" type="light" {...textProps}>
+    <Text spacing="3" size="small" {...textProps}>
       {text || children}
     </Text>
   );

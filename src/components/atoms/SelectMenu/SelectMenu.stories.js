@@ -9,7 +9,7 @@ import {
   boolean,
 } from "@storybook/addon-knobs";
 import Panel, { PanelSection } from "layout/Panel";
-import Form, { Section, SectionName } from "layout/Form";
+import Form, { Section } from "layout/Form";
 import SelectMenu from "./SelectMenu";
 
 const options = [
@@ -21,8 +21,8 @@ const options = [
   { value: "cookie dough", label: "Cookie Dough" },
 ];
 
-// SelectMenu ( Knobs )
-storiesOf("Atoms|SelectMenu", module)
+// Select Menu ( Knobs )
+storiesOf("Atoms|Select Menu", module)
   .addParameters({
     info: {
       text: "Select Menu info goes here...",
@@ -38,7 +38,7 @@ storiesOf("Atoms|SelectMenu", module)
     withInfo()(() => {
       return (
         <SelectMenu
-          label={text("Input Label", "SelectMenu ( Knobs )")}
+          label={text("Input Label", "Select Menu ( Knobs )")}
           placeholder={text("Placeholder Text", "I am just keeping things warm")}
           helpText={text("Help Text", "Have you been helped yet?")}
           multiSelect={boolean("Multi-Select", false)}
@@ -62,7 +62,7 @@ storiesOf("Atoms|SelectMenu", module)
       <SelectMenu
         label="Single-Select ( Standard )"
         placeholder="Choose..."
-        helpText="Help text for the SelectMenu component"
+        helpText="Help text for the Select Menu component"
         options={options}
       />
     );
@@ -78,14 +78,14 @@ storiesOf("Atoms|SelectMenu", module)
               <SelectMenu
                 label="Single-Select ( Required )"
                 placeholder="You Must Choose..."
-                helpText="Help text for the SelectMenu component"
+                helpText="Help text for the Select Menu component"
                 isRequired
                 isClearable={false}
                 options={options}
               />
               <SelectMenu
                 label="Single-Select ( Required w/ Clearable )"
-                helpText="Help text for the SelectMenu component"
+                helpText="Help text for the Select Menu component"
                 isRequired
                 options={options}
                 selectOptions={options[0].value}
@@ -103,7 +103,7 @@ storiesOf("Atoms|SelectMenu", module)
       <SelectMenu
         label="Single-Select ( Disabled )"
         placeholder="You Can't Choose..."
-        helpText="Help text for the SelectMenu component"
+        helpText="Help text for the Select Menu component"
         disabled
         options={options}
       />
@@ -116,7 +116,7 @@ storiesOf("Atoms|SelectMenu", module)
       <SelectMenu
         label="Single-Select ( Error )"
         placeholder="You Chose Poorly..."
-        helpText="Help text for the SelectMenu component"
+        helpText="Help text for the Select Menu component"
         error="Error: Invalid Selection!"
         options={options}
       />
@@ -129,7 +129,7 @@ storiesOf("Atoms|SelectMenu", module)
       <SelectMenu
         label="Single-Select ( Loading )"
         placeholder="Give Me A Minute..."
-        helpText="Help text for the SelectMenu component"
+        helpText="Help text for the Select Menu component"
         isLoading
         options={options}
       />
@@ -143,7 +143,7 @@ storiesOf("Atoms|SelectMenu", module)
         multiSelect
         label="Multi-Select"
         placeholder="Choose One Or More..."
-        helpText="Help text for the SelectMenu component"
+        helpText="Help text for the Select Menu component"
         options={options}
       />
     );
@@ -161,7 +161,7 @@ storiesOf("Atoms|SelectMenu", module)
                 isRequired
                 label="Multi-Select ( Required )"
                 placeholder="You Must Choose..."
-                helpText="Help text for the SelectMenu component"
+                helpText="Help text for the Select Menu component"
                 isClearable={false}
                 options={options}
               />
@@ -169,7 +169,7 @@ storiesOf("Atoms|SelectMenu", module)
                 multiSelect
                 isRequired
                 label="Multi-Select ( Required w/ Clearable )"
-                helpText="Help text for the SelectMenu component"
+                helpText="Help text for the Select Menu component"
                 options={options}
                 selectOptions={[options[0].value, options[2].value]}
               />
@@ -187,45 +187,44 @@ storiesOf("Atoms|SelectMenu", module)
     );
   });
 
-// SelectMenu (The SelectMenu Family)
-storiesOf("Atoms|SelectMenu", module).add("The SelectMenu Family", () => {
+// Select Menu (The Select Menu Family)
+storiesOf("Atoms|Select Menu", module).add("The Select Menu Family", () => {
   return (
     <Panel>
       <PanelSection body>
-        <Form>
+        <Form title="The Select Menu Family">
           <Section>
-            <SectionName>The SelectMenu Family</SectionName>
             <SelectMenu
               label="Single-Select ( Standard )"
               placeholder="Choose..."
-              helpText="Help text for the SelectMenu component"
+              helpText="Help text for the Select Menu component"
               options={options}
             />
             <SelectMenu
               label="Single-Select ( Required )"
               placeholder="You Must Choose..."
-              helpText="Help text for the SelectMenu component"
+              helpText="Help text for the Select Menu component"
               isRequired
               options={options}
             />
             <SelectMenu
               label="Single-Select ( Disabled )"
               placeholder="You Can't Choose..."
-              helpText="Help text for the SelectMenu component"
+              helpText="Help text for the Select Menu component"
               disabled
               options={options}
             />
             <SelectMenu
               label="Single-Select ( Error )"
               placeholder="You Chose Poorly..."
-              helpText="Help text for the SelectMenu component"
+              helpText="Help text for the Select Menu component"
               error="Error: Invalid Selection!"
               options={options}
             />
             <SelectMenu
               label="Single-Select ( Loading )"
               placeholder="Give Me A Minute..."
-              helpText="Help text for the SelectMenu component"
+              helpText="Help text for the Select Menu component"
               isLoading
               options={options}
             />
@@ -233,7 +232,7 @@ storiesOf("Atoms|SelectMenu", module).add("The SelectMenu Family", () => {
               multiSelect
               label="Multi-Select"
               placeholder="Choose One Or More..."
-              helpText="Help text for the SelectMenu component"
+              helpText="Help text for the Select Menu component"
               options={options}
             />
           </Section>

@@ -10,7 +10,9 @@ const CheckboxWrapper = styled(Grid)`
   color: ${props => {
     return props.inputTextColor || "";
   }};
-  margin-bottom: 1rem;
+  &:last-child {
+    margin-bottom: 1rem;
+  }
 `;
 
 const CheckboxContainer = styled.div`

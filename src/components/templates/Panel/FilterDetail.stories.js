@@ -1,21 +1,13 @@
+/* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import NavigationPanelHeader from "elements/PanelHeaders/NavigationPanelHeader";
 import Panel, { PanelSection } from "layout/Panel";
 import DataRange from "blocks/DataRange";
-import Form, {
-  Title,
-  Section,
-  CenteredSection,
-  SectionName,
-  InputGroup,
-  InputLabel,
-} from "layout/Form";
-import Checkbox from "../../atoms/Checkbox/Checkbox";
-import Command from "atoms/Command";
+import Form, { Section, CenteredSection, InputGroup, InputLabel } from "layout/Form";
+import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
 import TextInput from "atoms/TextInput";
 import Radio from "atoms/Radio";
-import Slider from "atoms/Slider";
 import RangeSlider from "blocks/RangeSlider";
 import Button from "atoms/Button";
 
@@ -38,32 +30,6 @@ const radio_3 = {
   value: "3",
   label: "Last 12 months",
 };
-const radio_4 = {
-  id: "radio-4",
-  name: "radio-group",
-  value: "4",
-  label: "Radio 4",
-};
-
-const radio_long = {
-  id: "radio-5",
-  name: "radio-group",
-  value: "5",
-  label:
-    "My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself.",
-};
-const cbox_1 = {
-  id: "cbox_1",
-  label: "First Checkbox",
-};
-const cbox_2 = {
-  id: "cbox_2",
-  label: "Second Checkbox",
-};
-const cbox_3 = {
-  id: "cbox_3",
-  label: "Little t abottle friend.",
-};
 const cbox_4 = {
   id: "cbox_4",
   label: "Grant Deed / Deed of Trust",
@@ -84,54 +50,59 @@ const cbox_8 = {
   id: "cbox_8",
   label: "No",
 };
-const cbox_9 = {
-  id: "cbox_9",
-  label: "Auto Sales, Services",
-};
-const cbox_10 = {
-  id: "cbox_10",
-  label: "Cemeteries, Mortuaries",
-};
-const cbox_11 = {
-  id: "cbox_11",
-  label: "Restaurant or Bar",
-};
-const cbox_12 = {
-  id: "cbox_12",
-  label: "Hospitals",
-};
-const cbox_13 = {
-  id: "cbox_13",
-  label: "Mobile Home Park",
-};
-const cbox_14 = {
-  id: "cbox_14",
-  label: "Parking",
-};
-const cbox_15 = {
-  id: "cbox_15",
-  label: "Multi-Family",
-};
-const cbox_16 = {
-  id: "cbox_16",
-  label: "Mobile Homes",
-};
-const cbox_17 = {
-  id: "cbox_17",
-  label: "Multi-Family Dwelling",
-};
-const cbox_18 = {
-  id: "cbox_18",
-  label: "Condominium",
-};
-const cbox_19 = {
-  id: "cbox_19",
-  label: "Single-Family",
-};
-const cbox_20 = {
-  id: "cbox_20",
-  label: "Miscellaneous Residential",
-};
+const commercial = [
+  {
+    id: "cbox_9",
+    label: "Auto Sales, Services",
+  },
+  {
+    id: "cbox_10",
+    label: "Cemeteries, Mortuaries",
+  },
+  {
+    id: "cbox_11",
+    label: "Restaurant or Bar",
+  },
+  {
+    id: "cbox_12",
+    label: "Hospitals",
+  },
+  {
+    id: "cbox_13",
+    label: "Mobile Home Park",
+  },
+  {
+    id: "cbox_14",
+    label: "Parking",
+  },
+];
+
+const residential = [
+  {
+    id: "cbox_15",
+    label: "Multi-Family",
+  },
+  {
+    id: "cbox_16",
+    label: "Mobile Homes",
+  },
+  {
+    id: "cbox_17",
+    label: "Multi-Family Dwelling",
+  },
+  {
+    id: "cbox_18",
+    label: "Condominium",
+  },
+  {
+    id: "cbox_19",
+    label: "Single-Family",
+  },
+  {
+    id: "cbox_20",
+    label: "Miscellaneous Residential",
+  },
+];
 
 const options = [
   { value: "chocolate", label: "Chocolate" },
@@ -143,11 +114,11 @@ const options = [
 ];
 
 storiesOf("Templates|Panel/Property Filters", module)
-  .add("Filter Details Panel", () =>
-    React.createElement(() => {
+  .add("Filter Details Panel", () => {
+    return React.createElement(() => {
       const [checked, setChecked] = useState({ selectedValue: "" });
 
-      const handleCheckboxChange = event => {
+      const handleCheckboxChange = (event) => {
         setChecked({ selectedValue: event.target.value });
       };
 
@@ -161,7 +132,7 @@ storiesOf("Templates|Panel/Property Filters", module)
               {/* <Bar type="one" right={<a> Reset </a>} /> */}
               {/* <Label right grey content="Reset" /> */}
               <Section>
-                <InputLabel inputLabel="Last Sale Date" />
+                <InputLabel label="Last Sale Date" />
                 <InputGroup>
                   <Radio
                     {...radio_1}
@@ -186,14 +157,10 @@ storiesOf("Templates|Panel/Property Filters", module)
                 <RangeSlider label="Last Sale Price" />
               </Section>
               <Section>
-                <TextInput
-                  inputLabel="Seller Name"
-                  placeholder="i.e. Mary Williams"
-                  type="text"
-                />
+                <TextInput label="Seller Name" placeholder="i.e. Mary Williams" type="text" />
               </Section>
               <Section>
-                <InputLabel inputLabel="Last Sale Deed Type" />
+                <InputLabel label="Last Sale Deed Type" />
                 <InputGroup>
                   <Checkbox {...cbox_4} />
                   <Checkbox {...cbox_5} />
@@ -209,14 +176,14 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
         </Panel>
       );
-    }),
-  )
+    });
+  })
 
-  .add("Filter Details Skeleton", () =>
-    React.createElement(() => {
+  .add("Filter Details Skeleton", () => {
+    return React.createElement(() => {
       const [checked, setChecked] = useState({ selectedValue: "" });
 
-      const handleCheckboxChange = event => {
+      const handleCheckboxChange = (event) => {
         setChecked({ selectedValue: event.target.value });
       };
 
@@ -263,14 +230,14 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
         </Panel>
       );
-    }),
-  )
+    });
+  })
 
-  .add("Property- Characteristics", () =>
-    React.createElement(() => {
+  .add("Property- Characteristics", () => {
+    return React.createElement(() => {
       const [checked, setChecked] = useState({ selectedValue: "" });
 
-      const handleCheckboxChange = event => {
+      const handleCheckboxChange = (event) => {
         setChecked({ selectedValue: event.target.value });
       };
 
@@ -290,13 +257,13 @@ storiesOf("Templates|Panel/Property Filters", module)
               </Section>
               <Section>
                 <TextInput
-                  inputLabel="Zoning (Assessor)"
+                  label="Zoning (Assessor)"
                   placeholder="i.e. Mary Williams"
                   type="text"
                 />
               </Section>
               <Section>
-                <InputLabel inputLabel="In Opportunity Zone" />
+                <InputLabel label="In Opportunity Zone" />
                 <InputGroup>
                   <Checkbox {...cbox_7} />
                   <Checkbox {...cbox_8} />
@@ -311,14 +278,14 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
         </Panel>
       );
-    }),
-  )
+    });
+  })
 
-  .add("Property- New Characteristics", () =>
-    React.createElement(() => {
+  .add("Property- New Characteristics", () => {
+    return React.createElement(() => {
       const [checked, setChecked] = useState({ selectedValue: "" });
 
-      const handleCheckboxChange = event => {
+      const handleCheckboxChange = (event) => {
         setChecked({ selectedValue: event.target.value });
       };
 
@@ -361,13 +328,13 @@ storiesOf("Templates|Panel/Property Filters", module)
                 />
 
                 <TextInput
-                  inputLabel="Zoning (Assessor)"
+                  label="Zoning (Assessor)"
                   placeholder="i.e. Mary Williams"
                   type="text"
                 />
               </Section>
               <Section>
-                <InputLabel inputLabel="In Opportunity Zone" />
+                <InputLabel label="In Opportunity Zone" />
                 <InputGroup>
                   <Checkbox {...cbox_7} />
                   <Checkbox {...cbox_8} />
@@ -382,14 +349,14 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
         </Panel>
       );
-    }),
-  )
+    });
+  })
 
-  .add("Property- Aggregate", () =>
-    React.createElement(() => {
+  .add("Property- Aggregate", () => {
+    return React.createElement(() => {
       const [checked, setChecked] = useState({ selectedValue: "" });
 
-      const handleCheckboxChange = event => {
+      const handleCheckboxChange = (event) => {
         setChecked({ selectedValue: event.target.value });
       };
 
@@ -408,13 +375,13 @@ storiesOf("Templates|Panel/Property Filters", module)
               </Section>
               <Section>
                 <TextInput
-                  inputLabel="Zoning (Assessor)"
+                  label="Zoning (Assessor)"
                   placeholder="i.e. Mary Williams"
                   type="text"
                 />
               </Section>
               <Section>
-                <InputLabel inputLabel="In Opportunity Zone" />
+                <InputLabel label="In Opportunity Zone" />
                 <InputGroup>
                   <Checkbox {...cbox_7} />
                   <Checkbox {...cbox_8} />
@@ -429,14 +396,14 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
         </Panel>
       );
-    }),
-  )
+    });
+  })
 
-  .add("Property- Value", () =>
-    React.createElement(() => {
+  .add("Property- Value", () => {
+    return React.createElement(() => {
       const [checked, setChecked] = useState({ selectedValue: "" });
 
-      const handleCheckboxChange = event => {
+      const handleCheckboxChange = (event) => {
         setChecked({ selectedValue: event.target.value });
       };
 
@@ -463,14 +430,14 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
         </Panel>
       );
-    }),
-  )
+    });
+  })
 
-  .add("Property- Location", () =>
-    React.createElement(() => {
+  .add("Property- Location", () => {
+    return React.createElement(() => {
       const [checked, setChecked] = useState({ selectedValue: "" });
 
-      const handleCheckboxChange = event => {
+      const handleCheckboxChange = (event) => {
         setChecked({ selectedValue: event.target.value });
       };
 
@@ -483,31 +450,11 @@ storiesOf("Templates|Panel/Property Filters", module)
             <Form>
               {/* <Bar type="one" right={<a> Reset </a>} /> */}
               <Section>
-                <TextInput
-                  inputLabel="Street Name"
-                  placeholder="i.e. Main St."
-                  type="text"
-                />
-                <TextInput
-                  inputLabel="City"
-                  placeholder="i.e. New York City"
-                  type="text"
-                />
-                <TextInput
-                  inputLabel="State"
-                  placeholder="i.e. New York"
-                  type="text"
-                />
-                <TextInput
-                  inputLabel="Zip"
-                  placeholder="i.e. 92614"
-                  type="text"
-                />
-                <TextInput
-                  inputLabel="Country"
-                  placeholder="i.e. United States"
-                  type="text"
-                />
+                <TextInput label="Street Name" placeholder="i.e. Main St." type="text" />
+                <TextInput label="City" placeholder="i.e. New York City" type="text" />
+                <TextInput label="State" placeholder="i.e. New York" type="text" />
+                <TextInput label="Zip" placeholder="i.e. 92614" type="text" />
+                <TextInput label="Country" placeholder="i.e. United States" type="text" />
               </Section>
             </Form>
           </PanelSection>
@@ -518,14 +465,14 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
         </Panel>
       );
-    }),
-  )
+    });
+  })
 
-  .add("Property- Land Use", () =>
-    React.createElement(() => {
+  .add("Property- Land Use", () => {
+    return React.createElement(() => {
       const [checked, setChecked] = useState({ selectedValue: "" });
 
-      const handleCheckboxChange = event => {
+      const handleCheckboxChange = (event) => {
         setChecked({ selectedValue: event.target.value });
       };
 
@@ -536,27 +483,20 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
           <PanelSection body>
             <Form>
-              {/* <Bar type="one" right={<a> Reset </a>} /> */}
-              <Section>
-                <SectionName>Commercial</SectionName>
-                <InputGroup col_2>
-                  <Checkbox {...cbox_9} />
-                  <Checkbox {...cbox_10} />
-                  <Checkbox {...cbox_11} />
-                  <Checkbox {...cbox_12} />
-                  <Checkbox {...cbox_13} />
-                  <Checkbox {...cbox_14} />
-                </InputGroup>
-                <SectionName>Residential</SectionName>
-                <InputGroup col_2>
-                  <Checkbox {...cbox_15} />
-                  <Checkbox {...cbox_16} />
-                  <Checkbox {...cbox_17} />
-                  <Checkbox {...cbox_18} />
-                  <Checkbox {...cbox_19} />
-                  <Checkbox {...cbox_20} />
-                </InputGroup>
-              </Section>
+              <CheckboxGroup
+                id="Commercial"
+                label="Commercial"
+                data={commercial}
+                helpText="Check all that apply"
+                columns="2"
+              />
+              <CheckboxGroup
+                id="Residential"
+                label="Residential"
+                data={residential}
+                helpText="Check all that apply"
+                columns="2"
+              />
             </Form>
           </PanelSection>
           <PanelSection>
@@ -566,5 +506,5 @@ storiesOf("Templates|Panel/Property Filters", module)
           </PanelSection>
         </Panel>
       );
-    }),
-  );
+    });
+  });
