@@ -3,12 +3,8 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import { colors } from "Variables";
 import { DisabledContext } from "States";
-import { InputLabel } from "layout/Form";
 
 const SwitchContainer = styled.div`
-  color: ${(props) => {
-    return props.checkboxColor || "";
-  }};
   background-color: ${(props) => {
     return props.fillColor || colors.white;
   }};
@@ -83,13 +79,14 @@ const ToggleWrapper = styled.label`
 `;
 
 function Toggle({ checked, disabled, onChange }) {
-  let checkboxColor;
-  let fillColor;
-  let borderColor;
+  // let checkboxColor;
+  // let fillColor;
+  // let borderColor;
   if (disabled) {
-    checkboxColor = colors.grey_40;
-    fillColor = colors.grey_20;
-    borderColor = checkboxColor;
+    // checkboxColor = colors.alert;
+    // fillColor = colors.alert;
+    // borderColor = checkboxColor;
+    // borderColor = colors.grey_40;
   }
 
   let isChecked = checked;
@@ -97,45 +94,70 @@ function Toggle({ checked, disabled, onChange }) {
   if (!onClick) {
     let setChecked = null;
     [isChecked, setChecked] = useState(checked);
-    onClick = () => { setChecked(!isChecked); };
+    onClick = () => {
+      setChecked(!isChecked);
+    };
   }
 
   return (
     <SwitchContainer
       onClick={onClick}
-      checkboxColor={checkboxColor}
-      fillColor={fillColor}
-      borderColor={borderColor}
     >
-      <StyledSwitch checked={isChecked} disabled={disabled}>
+      <StyledSwitch
+        checked={isChecked}
+        disabled={disabled}
+      >
         <Circle checked={isChecked} disabled={disabled} />
       </StyledSwitch>
     </SwitchContainer>
   );
 }
 
-const ToggleLabel = styled(InputLabel)`
+const ToggleLabel = styled.label`
   grid-area: two;
+  user-select: none;
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
 `;
 
 const ToggleContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-areas: 'one two';
+  grid-template-areas: "one two";
   grid-gap: 0.75rem;
   align-content: flex-start;
+  color: ${(props) => {
+    return props.checkboxColor || "";
+  }};
+  &[disabled],
+  &[readonly] {
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
+  }
 `;
 
 function Switch({
-  checked, disabled, id, isRequired, inputLabel, onChange,
+  checked, disabled, id, isRequired, label, onChange,
 }) {
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  let checkboxColor;
+  if (disabled) {
+    checkboxColor = colors.grey_40;
+  }
   return (
-    <ToggleContainer isRequired={isRequired}>
-      <ToggleWrapper id={id} disabled={isDisabled}>
-        <Toggle checked={checked} disabled={isDisabled} onChange={onChange} />
+    <ToggleContainer isRequired={isRequired} checkboxColor={checkboxColor} disabled={isDisabled}>
+      <ToggleWrapper disabled={isDisabled}>
+        <Toggle id={id} checked={checked} disabled={isDisabled} onChange={onChange} />
       </ToggleWrapper>
-      {inputLabel ? <ToggleLabel htmlFor={id} label={inputLabel} disabled={isDisabled} /> : null}
+      {label ? (
+        <ToggleLabel htmlFor={id} onChange={onChange} disabled={isDisabled}>
+          {label}
+        </ToggleLabel>
+      ) : null}
     </ToggleContainer>
   );
 }
@@ -156,7 +178,7 @@ Switch.propTypes = {
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
   isRequired: PropTypes.bool,
-  inputLabel: PropTypes.string,
+  label: PropTypes.string,
   onChange: PropTypes.func,
 };
 Switch.defaultProps = {
@@ -164,7 +186,7 @@ Switch.defaultProps = {
   checked: false,
   disabled: false,
   isRequired: false,
-  inputLabel: null,
+  label: null,
   onChange: null,
 };
 
