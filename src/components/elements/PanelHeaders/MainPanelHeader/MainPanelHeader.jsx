@@ -16,6 +16,7 @@ function MainPanelHeader({ id, title, menuData }) {
     </Piece>
   );
 }
+
 MainPanelHeader.propTypes = {
   id: PropTypes.string,
   title: PropTypes.node.isRequired,
@@ -29,4 +30,10 @@ MainPanelHeader.defaultProps = {
   id: null,
   menuData: null,
 };
+
+MainPanelHeader.defaultProps = {
+  id: null,
+  menuData: null,
+};
+
 export default MainPanelHeader;

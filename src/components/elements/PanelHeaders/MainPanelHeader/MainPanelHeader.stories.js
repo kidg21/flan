@@ -1,9 +1,10 @@
+/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import MainPanelHeader from "./MainPanelHeader";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
-// import Group from "./Group";
+import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
+
 const data = [
   { id: "a", name: "Save" },
   { id: "b", name: "Filter" },
@@ -11,8 +12,10 @@ const data = [
   { id: "d", name: "Filter" },
   { id: "e", name: "Layer" },
 ];
-// Colors
+
 storiesOf("Elements|Panel Headers/", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  .add("Main", () => <MainPanelHeader title="Main Header" menuData={data} />);
+  .add("Main", () => {
+    return <MainPanelHeader title="Main Header" menuData={data} />;
+  });
