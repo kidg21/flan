@@ -54,7 +54,7 @@ const CommandName = styled(Title)`
   margin: 0;
   &:focus {
     border: 1px solid  ${(props) => {
-      return props.theme.info;
+      return props.theme.primary;
     }};
     outline: none;
   }
@@ -69,7 +69,7 @@ function Command({ id, name, label, icon, align, size, onClick, disabled }) {
   let alignIcon = "'icon name'";
   const justifyCommand = "flex-start";
   let justifyIcon = "flex-start";
-  let commandColor = "info";
+  let commandColor = "primary";
   let commandSize = "inherit";
   switch (name) {
     case "add to list":

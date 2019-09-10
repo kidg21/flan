@@ -51,8 +51,10 @@ storiesOf("Atoms|Button", module)
         color={options(
           "color",
           {
-            "anchor ( default )": "default",
+            "primary (default)": "primary",
+            "secondary": "secondary",
             "success": "success",
+            "info": "info",
             "warning": "warning",
             "alert": "alert",
           },
@@ -103,18 +105,15 @@ storiesOf("Atoms|Button", module)
           <Button label="Solid Success Button" type="solid" color="success" />
           <Button label="Info Button" color="info" />
           <Button label="Solid Info Button" type="solid" color="info" />
+          <Button label="Grey Button" color="grey" />
+          <Button icon="filter" label="Fitlers" color="primary" />
+          <Button label="Solid Grey Button" type="solid" color="grey" />
 
           <Button label="Small Button" size="small" />
           <Button label="Large Button" size="large" />
           <Button label="Disabled Button" disabled />
-          <Button label="Icon Button" icon="user" />
-          <Button
-            label="Large / Alert / Icon Button"
-            icon="user"
-            size="large"
-            type="solid"
-            color="alert"
-          />
+          <Button label="Icon Button" icon="user" color="grey" />
+          <Button label="Icon Button" icon="user" color="info" type="solid" />
         </Grid>
       </Panel>
     );

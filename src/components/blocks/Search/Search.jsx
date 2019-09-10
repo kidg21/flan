@@ -30,7 +30,7 @@ function Search({ id, onClick, ...inputProps }) {
     <SearchContainer id={id}>
       <TextInput placeholder="Search" state="search" {...inputProps}>
         <IconWrapper>
-          <Icon icon="search" type="info" onClick={onClick} />
+          <Icon icon="search" type="primary" onClick={onClick} />
         </IconWrapper>
       </TextInput>
     </SearchContainer>

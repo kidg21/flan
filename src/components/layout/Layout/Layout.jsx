@@ -129,8 +129,8 @@ function Layout({
     case "rightWrapper":
       zIndex = "1";
       if (screenLarge.matches) {
-        left = "80%";
-        width = "20%";
+        left = "70%";
+        width = "30%";
       } else if (screenMedium.matches) {
         left = "60%";
         width = "40%";

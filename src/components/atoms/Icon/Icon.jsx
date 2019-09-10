@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
-import {Lighten, Darken } from "Variables";
+import { Lighten, Darken } from "Variables";
 import { DisabledContext } from "States";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -30,7 +30,7 @@ const LinkedIcon = styled.a`
 
 const StyledIcon = styled(FontAwesomeIcon)`
   color: ${(props) => {
-    return props.theme[props.color] || props.theme.textColor ;
+    return props.theme[props.color] || props.theme.textColor;
   }};
   border: ${(props) => {
     return props.border ? "2px solid" : "";
@@ -174,6 +174,21 @@ function Icon({
       break;
     case "alert":
       color = "alert";
+      break;
+    case "primary":
+      color = "primary";
+      break;
+    case "secondary":
+      color = "secondary";
+      break;
+    case "disabled":
+      color = "disabled";
+      break;
+    case "white":
+      color = "white";
+      break;
+    case "textColor":
+      color = "textColor";
       break;
     default:
       break;

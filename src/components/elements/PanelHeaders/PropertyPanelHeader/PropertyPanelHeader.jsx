@@ -17,7 +17,7 @@ function PropertyPanelHeader({
         left={<Title text={title} weight="bold" />}
         center={
           <IconBlock>
-            <Icon icon="directions" size="2x" type="info" onClick={onClick} />
+            <Icon icon="directions" size="2x" type="primary" onClick={onClick} />
           </IconBlock>
         }
         right={<Menu data={menuData} position="bottomLeft" type="edit" />}

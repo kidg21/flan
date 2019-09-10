@@ -1,8 +1,9 @@
 import { css } from "styled-components";
 
-export const lightTheme = {
+export const DMPTheme = {
   background: "#ffffff",
   textColor: "#5e5a62",
+  textColorsecondary: "#99958F",
   textColorInverse: "#ffffff",
   link: "#5FD1E2",
   primary: "#2B82B1",
@@ -11,13 +12,16 @@ export const lightTheme = {
   alert: "#b50000",
   warning: "#ca8720",
   success: "#008932",
-  disabled: "darkgrey",
+  disabled: "#99958F",
   divider: "#E2E1DF",
+  white: "#ffffff",
+  appBackground: "#f4f6fc",
 };
 
 export const darkTheme = {
   background: "#333332",
   textColor: "#ffffff",
+  textColorsecondary: "#99958F",
   textColorInverse: "#000000",
   link: "#5FD1E2",
   primary: "#5FD1E2",
@@ -28,21 +32,26 @@ export const darkTheme = {
   success: "#AFE575",
   disabled: "#E2E1DF",
   divider: "#E2E1DF",
+  white: "#ffffff",
+  appBackground: "#f4f6fc",
 };
 
 export const lightboxTheme = {
   background: "#ffffff",
   textColor: "#5e5a62",
+  textColorsecondary: "#99958F",
   textColorInverse: "#ffffff",
   link: "#5FD1E2",
-  primary: "#2B82B1",
-  secondary: "#75AB3F",
+  primary: "#169FDB",
+  secondary: "#113263",
   info: "#206bca",
   alert: "#b50000",
   warning: "#ca8720",
   success: "#008932",
   disabled: "darkgrey",
   divider: "#E2E1DF",
+  white: "#ffffff",
+  appBackground: "#f4f6fc",
 };
 
 // Codes for color palette

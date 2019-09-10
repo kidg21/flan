@@ -56,6 +56,9 @@ function Colors({ id, shade, type, comment, hexcode }) {
     case "divider":
       backgroundColor = "divider";
       break;
+    case "appBackground":
+      backgroundColor = "appBackground";
+      break;
     default:
       backgroundColor = "primary";
       break;

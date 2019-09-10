@@ -20,12 +20,14 @@ const StyledButton = styled.button`
   justify-content: center;
   align-items: center;
   color: ${(props) => {
-    return props.theme[props.textColor] || props.theme.primary;
+    return props.theme[props.fontColor] || props.theme.primary;
   }};
   background-color: ${(props) => {
     return props.theme[props.backgroundColor] || props.theme.background;
   }};
-  border: 1px solid;
+  border: ${(props) => {
+    return props.noBorder ? "0px solid" : "1px solid";
+  }};
   border-radius: 4px;
   font-size: ${(props) => {
     return props.labelSize || "inherit";
@@ -64,53 +66,61 @@ const ButtonIcon = styled(Icon)`
 `;
 
 function Button({
-  id, label, icon, color, type, size, fullWidth, disabled, onClick, style,
+  id, label, icon, color, noBorder, type, size, fullWidth, disabled, onClick, style,
 }) {
   let buttonColor;
-  let textColor;
+  let fontColor;
   let backgroundColor;
   let buttonPadding;
   let labelSize;
   switch (color) {
     case "success":
       buttonColor = "success";
-      textColor = buttonColor;
+      fontColor = buttonColor;
       break;
     case "warning":
       buttonColor = "warning";
-      textColor = buttonColor;
+      fontColor = buttonColor;
       break;
     case "alert":
       buttonColor = "alert";
-      textColor = buttonColor;
+      fontColor = buttonColor;
       break;
     case "info":
       buttonColor = "info";
-      textColor = buttonColor;
+      fontColor = buttonColor;
       break;
     case "primary":
       buttonColor = "primary";
-      textColor = buttonColor;
+      fontColor = buttonColor;
       break;
     case "secondary":
       buttonColor = "secondary";
-      textColor = buttonColor;
+      fontColor = buttonColor;
       break;
+    case "grey":
+      buttonColor = "disabled";
+      fontColor = buttonColor;
+      break;
+      case "textColor":
+        buttonColor = "textColor";
+        fontColor = buttonColor;
+        break;
     case "alert":
       buttonColor = "alert";
-      textColor = buttonColor;
+      fontColor = buttonColor;
       break;
     default:
       buttonColor = "primary";
+      fontColor = buttonColor;
       break;
   }
-
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
-    textColor = "textColorInverse";
+    fontColor = "white";
     backgroundColor = "disabled";
   } else if (type && type.toLowerCase() === "solid") {
-    textColor = "textColorInverse";
+    fontColor = "white";
     backgroundColor = buttonColor;
   }
 
@@ -132,16 +142,18 @@ function Button({
       name={id}
       fullWidth={fullWidth}
       disabled={isDisabled}
+      type={type}
       onClick={onClick}
+      noBorder={noBorder}
       buttonColor={buttonColor}
-      textColor={textColor}
+      fontColor={fontColor}
       backgroundColor={backgroundColor}
       buttonPadding={buttonPadding}
       labelSize={labelSize}
       style={style}
     >
-      {icon ? <ButtonIcon icon={icon} /> : null}
-      <ButtonLabel>{label}</ButtonLabel>
+      {icon ? <ButtonIcon icon={icon} type={fontColor} size="lg" /> : null}
+      {label ? <ButtonLabel>{label}</ButtonLabel> : null}
     </StyledButton>
   );
 }

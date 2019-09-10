@@ -36,6 +36,7 @@ storiesOf("Application|Style Guides/", module)
         </Grid>
         <Grid>
           <Colors type="background" />
+          <Colors type="appBackground" />
           <Colors type="textColor" />
           <Colors type="disabled" />
           <Colors type="divider" />

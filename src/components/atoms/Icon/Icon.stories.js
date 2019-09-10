@@ -51,6 +51,8 @@ storiesOf("Atoms|Icon", module)
             standard: "default",
             success: "success",
             warning: "warning",
+            primary: "primary",
+            secondary: "secondary",
             alert: "alert",
             inverse: "inverse",
           },
