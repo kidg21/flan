@@ -43,18 +43,11 @@ const Item = styled.li`
   }
 `;
 
-function Menu({ id, data, type, position }) {
+function Menu({ id, data, position }) {
   let badgeLeft = "100%";
   let badgeBottom = "100%";
   let setTransform;
   const [visibility, setVisibility] = useState(false);
-  switch (type) {
-    case "edit":
-      icon = <Icon icon="options" size="lg" />;
-      break;
-    default:
-      break;
-  }
   switch (position) {
     case "topLeft":
       badgeLeft = "0";
@@ -94,7 +87,7 @@ function Menu({ id, data, type, position }) {
         setVisibility(!visibility);
       }}
     >
-      {icon}
+      <Icon icon="options" size="lg" />
       {visibility ? (
         <Card>
           <EditMenu
@@ -119,7 +112,6 @@ function Menu({ id, data, type, position }) {
 Menu.propTypes = {
   id: PropTypes.string,
   object: PropTypes.node,
-  type: PropTypes.string,
   data: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
     name: PropTypes.string,
@@ -139,7 +131,6 @@ Menu.propTypes = {
 Menu.defaultProps = {
   id: null,
   object: null,
-  type: "edit",
   position: "default",
 };
 
