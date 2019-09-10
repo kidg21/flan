@@ -19,7 +19,7 @@ const BadgeContainer = styled.div`
   border-radius: 10em;
   bottom: ${props => props.badgeBottom || ""};
   left: ${props => props.badgeLeft || ""};
-  transform: ${props => props.badgeTransform || ""};
+  transform: ${props => props.setTransform || ""};
 `;
 
 const BadgeLabel = styled.span`
@@ -36,7 +36,7 @@ function Badge({ id, label, icon, type, position, style }) {
   let badgePadding;
   let badgeLeft;
   let badgeBottom;
-  let badgeTransform;
+  let setTransform;
   let labelType;
   let iconType;
   if (icon) {
@@ -72,17 +72,17 @@ function Badge({ id, label, icon, type, position, style }) {
     case "topLeft":
       badgeBottom = "100%";
       badgeLeft = "0";
-      badgeTransform = "translate(-10%, 50%)";
+      setTransform = "translate(-10%, 50%)";
       break;
     case "topRight":
       badgeBottom = "100%";
       badgeLeft = "100%";
-      badgeTransform = "translate(-90%, 50%)";
+      setTransform = "translate(-90%, 50%)";
       break;
     case "bottomRight":
       badgeBottom = "0";
       badgeLeft = "100%";
-      badgeTransform = "translate(-90%, 50%)";
+      setTransform = "translate(-90%, 50%)";
       break;
     case "bottomLeft":
       badgeBottom = "0";
@@ -93,7 +93,7 @@ function Badge({ id, label, icon, type, position, style }) {
     case "topRight":
       badgeBottom = "100%";
       badgeLeft = "100%";
-      badgeTransform = "translate(-90%, 50%)";
+      setTransform = "translate(-90%, 50%)";
       break;
   }
   return (
@@ -103,7 +103,7 @@ function Badge({ id, label, icon, type, position, style }) {
       icon={icon}
       badgeColor={badgeColor}
       badgeTextColor={badgeTextColor}
-      badgeTransform={badgeTransform}
+      setTransform={setTransform}
       badgeLeft={badgeLeft}
       badgeBottom={badgeBottom}
       badgePadding={badgePadding}
