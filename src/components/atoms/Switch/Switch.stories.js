@@ -31,8 +31,8 @@ storiesOf("Atoms|Switch", module)
   .add("Disabled", () => {
     return (
       <Grid>
-        <Switch id="switch_1" inputLabel="Label" />
-        <Switch disabled />
+        <Switch id="switch_1" label="Label" />
+        <Switch label="Label" disabled />
         <Checkbox id="disabled" label="Disabled" disabled />
         <Radio label="Disabled" disabled />
         <TextInput
