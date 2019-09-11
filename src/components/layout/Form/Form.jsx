@@ -99,7 +99,6 @@ const Label = styled.label`
   grid-column: 1 / -1;
   font-weight: 700;
   user-select: none;
-  cursor: pointer;
   &:after {
     display: ${props => (props.isRequired ? "" : "none")};
     content: "*";
@@ -129,7 +128,6 @@ InputLabel.defaultProps = {
 const Help = styled(Label)`
   color: ${colors.grey_80};
   font-weight: initial;
-  cursor: initial;
 `;
 function HelpText({ helpText, children }) {
   return <Help>{helpText || children}</Help>;
@@ -143,7 +141,11 @@ HelpText.defaultProps = {
 
 const Error = styled(Label)`
   color: ${colors.alert};
+  user-select: all;
   cursor: initial;
+  &::selection {
+    background-color: ${colors.alert};
+  }
 `;
 function ErrorText({ errorText, children }) {
   return <Error>{errorText || children}</Error>;
