@@ -32,7 +32,7 @@ function Search({ id, onStartLocate, ...inputProps }) {
       <form onSubmit={onStartLocate}>
         <TextInput placeholder="Search" state="search" {...inputProps} >
           <IconWrapper>
-            <Icon icon={["far", "search"]} type="info" onClick={onStartLocate} />
+            <Icon icon={"search"} type="info" onClick={onStartLocate} />
           </IconWrapper>
         </TextInput>
       </form>
