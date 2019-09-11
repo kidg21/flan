@@ -21,9 +21,9 @@ const EditMenu = styled.ul`
   padding: 0.25em;
   padding-top: 0.8em;
   padding-bottom: 0.8em;
-  bottom: ${props => props.badgeBottom || ""};
-  left: ${props => props.badgeLeft || ""};
-  transform: ${props => props.badgeTransform || ""};
+  bottom: ${(props) => { return props.badgeBottom || ""; }};
+  left: ${(props) => { return props.badgeLeft || ""; }};
+  transform: ${(props) => { return props.badgeTransform || ""; }};
   width: auto;
   min-width: 10em;
   position: absolute;
@@ -43,46 +43,39 @@ const Item = styled.li`
   }
 `;
 
-function Menu({ id, data, type, object, onClick, position }) {
+function Menu({ id, data, position }) {
   let badgeLeft = "100%";
   let badgeBottom = "100%";
-  let badgeTransform;
+  let setTransform;
   const [visibility, setVisibility] = useState(false);
-  switch (type) {
-    case "edit":
-      object = <Icon icon={["far", "ellipsis-v"]} size="lg" />;
-      break;
-    default:
-      break;
-  }
   switch (position) {
     case "topLeft":
       badgeLeft = "0";
-      badgeTransform = "translate(-100%, -5%)";
+      setTransform = "translate(-100%, -5%)";
       break;
     case "topRight":
-      badgeTransform = "translate(1%, -9%)";
+      setTransform = "translate(1%, -9%)";
       badgeLeft = "0";
       break;
     case "bottomRight":
       badgeBottom = "0";
       badgeLeft = "0";
-      badgeTransform = "translate(6%, 95%)";
+      setTransform = "translate(6%, 95%)";
       break;
     case "bottomLeft":
       badgeBottom = "0";
       badgeLeft = "0";
-      badgeTransform = "translate(-106%, 95%)";
+      setTransform = "translate(-106%, 95%)";
       break;
     case "bottomCenter":
       badgeBottom = "0";
       badgeLeft = "0";
-      badgeTransform = "translate(-45%, 98%)";
+      setTransform = "translate(-45%, 98%)";
       break;
     case "topCenter":
       badgeBottom = "0";
       badgeLeft = "0";
-      badgeTransform = "translate(-45%, -17%)";
+      setTransform = "translate(-45%, -17%)";
       break;
     default:
       break;
@@ -94,19 +87,21 @@ function Menu({ id, data, type, object, onClick, position }) {
         setVisibility(!visibility);
       }}
     >
-      {object}
+      <Icon icon="options" size="lg" />
       {visibility ? (
         <Card>
           <EditMenu
-            badgeTransform={badgeTransform}
+            setTransform={setTransform}
             badgeLeft={badgeLeft}
             badgeBottom={badgeBottom}
           >
-            {data.map(item => (
-              <Item key={item.id} onClick={item.onClick}>
-                <Title title={item.name} weight="normal" />
-              </Item>
-            ))}
+            {data.map((item) => {
+              return (
+                <Item key={item.id} onClick={item.onClickLink}>
+                  <Title text={item.name} weight="normal" />
+                </Item>
+              );
+            })}
           </EditMenu>
         </Card>
       ) : null}
@@ -117,9 +112,11 @@ function Menu({ id, data, type, object, onClick, position }) {
 Menu.propTypes = {
   id: PropTypes.string,
   object: PropTypes.node,
-  type: PropTypes.any,
-  onClick: PropTypes.func,
-  data: PropTypes.any.isRequired,
+  data: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string,
+    name: PropTypes.string,
+    onClickLink: PropTypes.func,
+  })).isRequired,
   position: PropTypes.oneOf([
     "topLeft",
     "topRight",
@@ -127,7 +124,14 @@ Menu.propTypes = {
     "bottomLeft",
     "bottomCenter",
     "topCenter",
+    "default",
   ]),
+};
+
+Menu.defaultProps = {
+  id: null,
+  object: null,
+  position: "default",
 };
 
 export default Menu;

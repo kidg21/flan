@@ -1,51 +1,92 @@
+/* eslint-disable complexity */
 // Import dependencies
-import React, { Fragment } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 // Import colors and sizes variables
-import { colors, shadows, fonts, fontSize } from "Variables";
+import { colors, fonts } from "Variables";
 
-const StyledDescription = styled.h5`
-  margin: 0;
-  color: ${props => props.textColor || colors.grey_80};
-  font-size: ${props => props.textSize || ""};
-  font-weight: ${props => props.textWeight || "500"};
+const LinkedText = styled.a`
+  color: ${colors.anchor};
 `;
 
-const CountContainer = styled.div`
-  display: inline-flex;
-  margin-left: 4em;
+const StyledNumber = styled.span`
+  font-family: ${fonts.numbers};
 `;
 
 const StyledText = styled.h4`
-  color: ${props => props.textColor || "inherit"};
-  font-weight: ${props => props.textWeight || ""};
-  text-align: ${props => props.textAlign || ""};
-  margin: 0;
-  font-style: ${props => props.textStyle || ""};
-  text-decoration: ${props => props.textDecoration || ""};
+  font-family: ${(props) => {
+    return props.fontFamily || "inherit";
+  }};
+  color: ${(props) => {
+    return props.textColor || "inherit";
+  }};
+  font-weight: ${(props) => {
+    return props.textWeight || "600";
+  }};
+  text-align: ${(props) => {
+    return props.textAlign || "";
+  }};
+  letter-spacing: ${(props) => {
+    return props.letterSpacing || "0";
+  }};
+  font-style: ${(props) => {
+    return props.textStyle || "";
+  }};
+  text-decoration: ${(props) => {
+    return props.textDecoration || "";
+  }};
+  user-select: ${(props) => {
+    return props.select || "";
+  }};
+  ${LinkedText},
+  ${StyledNumber} {
+    display: inline-block;
+    padding: 0 0.25em;
+    /** TODO: Add a 'separator' prop */
+    /* &:before,
+    &:after {
+      content: ${(props) => {
+    return props.separator || "|";
+  }};
+    } */
+  }
 `;
 
-function Title({
+function Text({
   id,
-  title,
-  type,
-  order,
-  style,
-  weight,
+  font,
+  text,
   count,
+  type,
   size,
   align,
+  spacing,
+  styling,
+  weight,
+  select,
+  children,
   className,
 }) {
+  let as;
+  let fontFamily;
   let textColor;
   let textWeight;
+  let letterSpacing;
   let textAlign;
   let textStyle;
   let textDecoration;
-  let flexDirection;
-  let as;
-  switch (type) {
+  switch (font && font.toLowerCase()) {
+    case "numbers":
+      fontFamily = fonts.numbers;
+      break;
+    case "data":
+      fontFamily = fonts.data;
+      break;
+    default:
+      break;
+  }
+  switch (type && type.toLowerCase()) {
     case "info":
       textColor = colors.anchor;
       break;
@@ -61,10 +102,13 @@ function Title({
     case "inverse":
       textColor = colors.white;
       break;
+    case "light":
+      textColor = colors.grey_60;
+      break;
     default:
       break;
   }
-  switch (size) {
+  switch (size && size.toLowerCase()) {
     case "tiny":
       as = "h6";
       break;
@@ -80,11 +124,12 @@ function Title({
     case "xxlarge":
       as = "h1";
       break;
+    case "normal":
     default:
       as = "h4";
       break;
   }
-  switch (align) {
+  switch (align && align.toLowerCase()) {
     case "center":
       textAlign = "center";
       break;
@@ -94,7 +139,7 @@ function Title({
     default:
       break;
   }
-  switch (style) {
+  switch (styling && styling.toLowerCase()) {
     case "underline":
       textDecoration = "underline";
       break;
@@ -104,140 +149,189 @@ function Title({
     default:
       break;
   }
-  switch (order) {
-    case "before":
-      flexDirection = "row";
-      break;
-    case "after":
-      flexDirection = "row-reverse";
-      break;
-    default:
-      break;
-  }
-  switch (weight) {
+  switch (weight && weight.toLowerCase()) {
     case "light":
-      textWeight = "500";
+      textWeight = "300";
       break;
     case "normal":
-      textWeight = "600";
+      textWeight = "500";
       break;
     case "bold":
       textWeight = "700";
       break;
     default:
       break;
+  }
+  const numSpacing = spacing ? parseInt(spacing, 10) : 0;
+  if (numSpacing && !isNaN(numSpacing)) {
+    letterSpacing = `${0.1 * (numSpacing - 1)}em`;
   }
   return (
     <StyledText
       id={id}
       as={as}
+      fontFamily={fontFamily}
       textColor={textColor}
       textWeight={textWeight}
+      letterSpacing={letterSpacing}
       textAlign={textAlign}
       textStyle={textStyle}
       textDecoration={textDecoration}
+      select={select}
       className={className}
     >
-      {title}
+      {text || children}
       {count ? (
-        <CountContainer>
-          <a>{count}</a>
-        </CountContainer>
+        <LinkedText>
+          <StyledNumber>{count}</StyledNumber>
+        </LinkedText>
       ) : null}
     </StyledText>
   );
 }
-
-Title.propTypes = {
+Text.propTypes = {
   id: PropTypes.string,
-  title: PropTypes.any,
-  number: PropTypes.bool,
-  results: PropTypes.bool,
-  weight: PropTypes.string,
-  type: PropTypes.string,
-  style: PropTypes.string,
-  size: PropTypes.string,
-};
-
-function Body({ id, body, type, weight, size, className }) {
-  let textColor;
-  let textWeight;
-  let textSize;
-  switch (type) {
-    case "info":
-      textColor = colors.anchor;
-      break;
-    case "success":
-      textColor = colors.success;
-      break;
-    case "warning":
-      textColor = colors.warning;
-      break;
-    case "alert":
-      textColor = colors.alert;
-      break;
-    case "inherit":
-      textColor = "inherit";
-      break;
-    case "inverse":
-      textColor = colors.white;
-      break;
-    default:
-      break;
-  }
-
-  switch (size) {
-    case "small":
-      textSize = "0.75rem";
-      break;
-    case "normal":
-      textSize = "0.875rem";
-      break;
-    case "large":
-      textSize = "1.25rem";
-      break;
-    case "xlarge":
-      textSize = "1.5rem";
-      break;
-    default:
-      break;
-  }
-  switch (weight) {
-    case "light":
-      textWeight = "500";
-      break;
-    case "normal":
-      textWeight = "600";
-      break;
-    case "bold":
-      textWeight = "700";
-      break;
-    default:
-      break;
-  }
-  return (
-    <StyledDescription
-      id={id}
-      textColor={textColor}
-      textWeight={textWeight}
-      textSize={textSize}
-    >
-      {body}
-    </StyledDescription>
-  );
-}
-
-Body.propTypes = {
-  id: PropTypes.string,
-  body: PropTypes.any,
-  weight: PropTypes.string,
-  type: PropTypes.string,
-  size: PropTypes.string,
-  order: PropTypes.string,
-  style: PropTypes.string,
-  size: PropTypes.string,
-  align: PropTypes.string,
+  font: PropTypes.oneOf(["numbers", "data"]),
+  text: PropTypes.string,
+  children: PropTypes.node,
+  count: PropTypes.node,
+  type: PropTypes.oneOf(["info", "success", "warning", "alert", "dark", "inverse", "light"]),
+  size: PropTypes.oneOf(["tiny", "small", "large", "xlarge", "xxlarge"]),
+  align: PropTypes.oneOf(["center", "right"]),
+  spacing: PropTypes.string,
+  styling: PropTypes.oneOf(["underline", "italic"]),
+  weight: PropTypes.oneOf(["light", "normal", "bold"]),
+  /** Sets the 'user-select' CSS property
+   * Text is selectable by default
+   * 'all' selects the complete string with a tap/click
+   * 'none' disables text selection
+   */
+  select: PropTypes.oneOf(["all", "none"]),
   className: PropTypes.string,
 };
+Text.defaultProps = {
+  id: null,
+  font: null,
+  text: null,
+  count: null,
+  type: null,
+  size: null,
+  align: null,
+  spacing: null,
+  styling: null,
+  weight: null,
+  select: null,
+  children: null,
+  className: null,
+};
 
-export { Title as default, Body };
+function Headline({ text, children, ...textProps }) {
+  return (
+    <Text
+      separator="pipe"
+      size="large"
+      weight="bold"
+      spacing="2"
+      styling="underline"
+      {...textProps}
+    >
+      {text || children}
+    </Text>
+  );
+}
+Headline.propTypes = {
+  text: PropTypes.string,
+  children: PropTypes.node,
+};
+Headline.defaultProps = {
+  text: null,
+  children: null,
+};
+
+function Title({ text, children, ...textProps }) {
+  return <Text {...textProps}>{text || children}</Text>;
+}
+Title.propTypes = {
+  text: PropTypes.string,
+  children: PropTypes.node,
+};
+Title.defaultProps = {
+  text: null,
+  children: null,
+};
+
+function SubTitle({ text, children, ...textProps }) {
+  return (
+    <Text spacing="2" type="light" {...textProps}>
+      {text || children}
+    </Text>
+  );
+}
+SubTitle.propTypes = {
+  text: PropTypes.string,
+  children: PropTypes.node,
+};
+SubTitle.defaultProps = {
+  text: null,
+  children: null,
+};
+
+function Description({ text, children, ...textProps }) {
+  return (
+    <Text size="tiny" spacing="2" {...textProps}>
+      {text || children}
+    </Text>
+  );
+}
+Description.propTypes = {
+  text: PropTypes.string,
+  children: PropTypes.node,
+};
+Description.defaultProps = {
+  text: null,
+  children: null,
+};
+
+function Link({
+  text, children, title, onClick, href, target,
+}) {
+  return (
+    <LinkedText title={title} onClick={onClick} href={href} target={target}>
+      {text || children}
+    </LinkedText>
+  );
+}
+Link.propTypes = {
+  text: PropTypes.string,
+  children: PropTypes.node,
+  title: PropTypes.string,
+  onClick: PropTypes.function,
+  href: PropTypes.string,
+  /** _blank, _parent, _self, _top, framename */
+  target: PropTypes.string,
+};
+Link.defaultProps = {
+  text: null,
+  children: null,
+  title: null,
+  onClick: null,
+  href: null,
+  target: null,
+};
+
+function Number({ text, children, ...textProps }) {
+  return (
+    <Text font="numbers" type="light" size="large" weight="bold" spacing="3" {...textProps}>
+      {text || children}
+    </Text>
+  );
+}
+Number.propTypes = {
+  text: PropTypes.number.isRequired,
+  children: PropTypes.node,
+};
+Number.defaultProps = {
+  children: null,
+};
+
+export { Title as default, Headline, SubTitle, Description, Link, Number };

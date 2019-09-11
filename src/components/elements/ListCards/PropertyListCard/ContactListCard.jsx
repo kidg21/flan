@@ -17,20 +17,20 @@ function ContactListCard({ id, name, ownerAddress }) {
       <Bar
         left={
           <Titles>
-            <Title title={name} />
+            <Title text={name} />
             <p>
               {ownerAddress} <br />
               <a>Owner Portfolio</a>
             </p>
             <IconBlock>
               <a>
-                <Icon icon="phone" />
+                <Icon icon="call" />
               </a>
               <a>
-                <Icon icon={["far", "share"]} />
+                <Icon icon="share" />
               </a>
               <a>
-                <Icon icon={["fal", "clone"]} />
+                <Icon icon="clone" />
               </a>
             </IconBlock>
           </Titles>

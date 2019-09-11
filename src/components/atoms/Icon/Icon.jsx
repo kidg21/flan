@@ -1,19 +1,166 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
-import { colors, shadows } from "Variables";
+import { colors } from "Variables";
+import { DisabledContext } from "States";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const StyledIcon = styled(FontAwesomeIcon)`
-  border: ${props => (props.border ? "2px solid" : "")};
-  border-color: ${props => (props.border ? colors.grey_20 : "")};
-  border-radius: ${props => (props.border ? "5px" : "")};
+/** TODO: move these to Variables */
+const iconHover = css`
+  filter: brightness(85%) contrast(150%);
 `;
+const iconActive = css`
+  filter: brightness(105%);
+`;
+
+const LinkedIcon = styled.a`
+  cursor: ${(props) => {
+    if (props.disabled) {
+      return "not-allowed";
+    } else if (props.onClick) {
+      return "pointer";
+    }
+    return "";
+  }};
+  pointer-events: ${(props) => {
+    return props.disabled ? "none" : "";
+  }};
+  user-select: ${(props) => {
+    return props.disabled ? "none" : "";
+  }};
+  &:hover {
+    ${(props) => {
+    return props.onClick ? iconHover : "";
+  }};
+  }
+  &:active {
+    ${(props) => {
+    return props.onClick ? iconActive : "";
+  }};
+  }
+`;
+
+const StyledIcon = styled(FontAwesomeIcon)`
+  color: ${(props) => {
+    return props.color || "inherit";
+  }};
+  border: ${(props) => {
+    return props.border ? "2px solid" : "";
+  }};
+  border-color: ${(props) => {
+    return props.border ? colors.grey_20 : "";
+  }};
+  border-radius: ${(props) => {
+    return props.border ? "5px" : "";
+  }};
+`;
+
+const iconHash = {
+  // Brand
+  apple: ["fab", "apple"],
+  facebook: ["fab", "facebook"],
+  firefox: ["fab", "firefox"],
+  internet_explorer: ["fab", "internet-explorer"],
+  twitter: ["fab", "twitter-square"],
+  windows: ["fab", "windows"],
+  // Navigation
+  down: ["far", "angle-down"],
+  left: ["far", "angle-left"],
+  menu: ["far", "bars"],
+  right: ["far", "angle-right"],
+  up: ["far", "angle-up"],
+  // App
+  address: ["far", "map-marked"],
+  alert_triangle: ["far", "exclamation-triangle"],
+  alert: "exclamation",
+  analytics: "analytics",
+  apn: ["far", "hashtag"],
+  attach: ["far", "paperclip"],
+  bookmark_solid: "bookmark",
+  bookmark: ["far", "bookmark"],
+  call: "phone",
+  chat: ["far", "comments-alt"],
+  check: ["far", "check"],
+  check_circle: "check-circle",
+  circle_solid: "circle",
+  circle: ["far", "circle"],
+  clone: ["far", "clone"],
+  close: ["far", "times"],
+  configure: "cogs",
+  contact: ["far", "address-card"],
+  contacts: ["far", "address-book"],
+  copy: ["far", "copy"],
+  delete: ["far", "trash-alt"],
+  directions: ["far", "directions"],
+  draw: ["far", "pencil"],
+  drawings: ["far", "pencil-ruler"],
+  edit: ["far", "edit"],
+  exclusion: ["far", "layer-minus"],
+  file: ["far", "file-alt"],
+  filter: ["far", "filter"],
+  gps: ["far", "globe"],
+  heatmap: ["far", "chart-scatter"],
+  help: ["far", "question-circle"],
+  home: "home-alt",
+  inclusion: ["far", "layer-plus"],
+  info_circle: "info-circle",
+  info: "info",
+  labels: ["far", "tags"],
+  layers: ["far", "layer-group"],
+  link: ["far", "link"],
+  list: ["far", "list-ul"],
+  loading: "spinner",
+  location: "map-marker-alt",
+  mail_solid: "envelope",
+  mail: ["far", "envelope"],
+  map_pin: "map-pin",
+  map: ["far", "map"],
+  maximize: ["far", "expand-alt"],
+  measure: ["far", "ruler-combined"],
+  message: ["far", "comment-alt"],
+  minimize: ["far", "compress-alt"],
+  minus_square: ["far", "minus-square"],
+  minus: ["far", "minus"],
+  more: ["far", "ellipsis-h"],
+  my_location: ["far", "location-arrow"],
+  notification_solid: "bell",
+  notification: ["far", "bell"],
+  open: ["far", "folder-open"],
+  options: ["far", "ellipsis-v"],
+  owner: "user-tag",
+  plus_square: ["far", "plus-square"],
+  plus: ["far", "plus"],
+  print: ["far", "print"],
+  report: ["far", "file-chart-line"],
+  scroll_top: ["far", "caret-square-up"],
+  search: ["far", "search"],
+  settings_user: ["far", "user-cog"],
+  settings_users: ["far", "users-cog"],
+  settings: "cog",
+  share: "share-square",
+  share_content: ["far", "share-alt"],
+  sign_in: ["far", "sign-in"],
+  sign_out: ["far", "sign-out"],
+  signal_none: ["far", "signal-slash"],
+  signal: ["far", "signal"],
+  star_solid: "star",
+  star: ["far", "star"],
+  table: ["far", "table"],
+  user_add: "user-plus",
+  user_circle: "user-circle",
+  user: "user",
+  users: "users",
+  wifi_none: ["far", "wifi-slash"],
+  wifi: ["far", "wifi"],
+  zoom_extents: ["far", "expand-arrows"],
+  zoom_in: ["far", "search-plus"],
+  zoom_out: ["far", "search-minus"],
+};
 
 function Icon({
   id,
-  type,
   icon,
+  type,
   size,
   fixedWidth,
   rotation,
@@ -21,36 +168,42 @@ function Icon({
   spin,
   pulse,
   border,
-  pull,
-  style,
   onClick,
+  disabled,
   className,
 }) {
-  let iconColor;
-  switch (type) {
+  let color;
+  icon = iconHash[icon.toLowerCase()] || ["far", icon.toLowerCase()];
+  switch (type && type.toLowerCase()) {
     case "info":
-      iconColor = colors.anchor;
+      color = colors.anchor;
       break;
     case "success":
-      iconColor = colors.success;
+      color = colors.success;
       break;
     case "warning":
-      iconColor = colors.warning;
+      color = colors.warning;
       break;
     case "alert":
-      iconColor = colors.alert;
+      color = colors.alert;
       break;
     case "inverse":
-      iconColor = colors.white;
+      color = colors.white;
       break;
     default:
       break;
   }
-  let _icon = (
+
+  if (onClick) color = colors.anchor;
+
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  if (isDisabled) color = colors.grey_40;
+
+  const styledIcon = (
     <StyledIcon
       id={id}
       icon={icon}
-      color={iconColor}
+      color={color}
       size={size}
       fixedWidth={fixedWidth}
       rotation={rotation}
@@ -58,29 +211,25 @@ function Icon({
       spin={spin}
       pulse={pulse}
       border={border}
-      pull={pull}
-      className={className}
-      style={style}
       className={className}
     />
   );
 
-  if (onClick) {
-    _icon = <a onClick={onClick}>{_icon}</a>;
-  }
-
-  return <React.Fragment>{_icon}</React.Fragment>;
+  return onClick ? (
+    <LinkedIcon onClick={onClick} disabled={disabled}>
+      {styledIcon}
+    </LinkedIcon>
+  ) : (
+    styledIcon
+  );
 }
 
 Icon.propTypes = {
   id: PropTypes.string,
   /** Options: 'info', 'success', 'warning', 'alert', 'inverse' */
   type: PropTypes.string,
-  /** Icons can come in multiple weight types.  The default weight is 'fas' (solid)
-   * To use the weight type, simply enter the name of the icon as the prop value. (ex. icon='coffee')
-   * If you want to use an icon of a different weight type, enter the prop value as an arroy of ["weight", "name"]. (ex. icon=["fal", "plus-circle"] uses the 'light' version of the icon instead of the default 'solid' version)
-   */
-  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  /** Enter the name of the icon as the prop value. (ex. icon='circle' */
+  icon: PropTypes.string,
   /** Icons inherit the 'font-size' of the parent container and are relatively sized.
    * Options: 'xs', 'sm', 'lg', '2x', '3x', '4x', '5x', '6x', '7x', '8x', '9x', '10x'
    */
@@ -97,13 +246,27 @@ Icon.propTypes = {
   spin: PropTypes.bool,
   /** Rotation with eight (8) steps */
   pulse: PropTypes.bool,
-  /** Options: 'left', 'right' */
-  pull: PropTypes.string,
   border: PropTypes.bool,
-  style: PropTypes.string,
   onClick: PropTypes.func,
+  disabled: PropTypes.bool,
   /** className used for extending styles */
   className: PropTypes.string,
+};
+
+Icon.defaultProps = {
+  id: null,
+  type: null,
+  icon: null,
+  size: null,
+  fixedWidth: false,
+  rotation: null,
+  flip: null,
+  spin: false,
+  pulse: false,
+  border: false,
+  onClick: null,
+  disabled: false,
+  className: null,
 };
 
 export default Icon;

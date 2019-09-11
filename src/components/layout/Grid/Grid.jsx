@@ -6,11 +6,11 @@ const GridWrapper = styled.section`
   display: grid;
   grid-gap: ${props => props.setGap || "1rem"};
   grid-template-columns: ${props =>
-    props.setColumns || "repeat(auto-fit, minmax(22rem, 1fr))"};
+    props.setColumns || "repeat(auto-fill, minmax(22rem, 1fr))"};
   grid-template-rows: ${props => props.setRows || "auto"};
 `;
 
-function Grid({ children, columns, gap, id, rows }) {
+function Grid({ children, columns, gap, id, rows, className }) {
   // 1-12 colums with custom override
   let setColumns;
   const _columns = parseInt(columns);
@@ -53,6 +53,7 @@ function Grid({ children, columns, gap, id, rows }) {
       setColumns={setColumns}
       setGap={setGap}
       setRows={setRows}
+      className={className}
     >
       {children}
     </GridWrapper>
@@ -89,6 +90,7 @@ Grid.propTypes = {
       "[grid-template-rows]",
     ]),
   ]),
+  className: PropTypes.string,
 };
 
 export { Grid as default };

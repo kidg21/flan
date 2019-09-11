@@ -30,13 +30,13 @@ function PropertyListCard({
       <Bar left={<Command name="add to list" size="small" />} />
       <Piece>
         <Wrapper>
-          <Title title="Lot" size="normal" />
+          <Title text="Lot" size="normal" />
           <Table data={lotData} />
           <Space />
-          <Title title="Building" size="normal" />
+          <Title text="Building" size="normal" />
           <Table data={buildingData} />
           <Space />
-          <Title title="Owner" size="normal" />
+          <Title text="Owner" size="normal" />
           <Table data={ownerData} />
         </Wrapper>
       </Piece>

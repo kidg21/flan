@@ -4,12 +4,9 @@ import PropTypes from "prop-types";
 
 const Block = styled.div`
   display: flex;
-  flex-wrap: wrap;
   align-items: flex-end;
   width: 100%;
   justify-content: space-between;
-  filter: ${props => props.setFilter || ""};
-  lineheight: ${props => props.setHeight || ""};
 `;
 
 function IconBlock({ id, children, style, className }) {

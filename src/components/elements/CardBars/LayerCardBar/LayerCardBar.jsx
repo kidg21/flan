@@ -23,30 +23,34 @@ const SwitchContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 1rem;
-  filter: ${props => (props.disabled ? "brightness(130%)" : "")};
+  filter: ${(props) => {
+    props.disabled ? "brightness(130%)" : "";
+  }};
 `;
 
-function LayerCardBar({ id, title, icons, switchProps, disabled }) {
+function LayerCardBar({
+  id, title, icons, switchProps, disabled,
+}) {
   return (
-    <Piece id={id} title={title} disabled={disabled}>
+    <Piece id={id} disabled={disabled}>
       {disabled ? (
         <Bar
+          padding="2x"
           left={
             <SwitchContainer disabled="true">
-              {" "}
               <Switch />
-              <Title title={title} weight="normal" />
+              <Title text={title} weight="normal" />
             </SwitchContainer>
           }
           right={<IconBlock style={disabledblockStyle}>{icons}</IconBlock>}
         />
       ) : (
         <Bar
+          padding="2x"
           left={
             <SwitchContainer>
-              {" "}
               <Switch {...switchProps} />
-              <Title title={title} weight="normal" />
+              <Title text={title} weight="normal" />
             </SwitchContainer>
           }
           right={<IconBlock style={blockStyle}>{icons}</IconBlock>}

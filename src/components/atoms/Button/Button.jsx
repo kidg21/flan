@@ -5,6 +5,7 @@ import { DisabledContext } from "States";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 
+/** TODO: move these to Variables */
 const buttonHover = css`
   filter: brightness(85%) contrast(150%);
 `;
@@ -44,8 +45,9 @@ const StyledButton = styled.button`
   &:hover {
     ${buttonHover}
   }
+
   &:active {
-    ${buttonActive}
+  ${buttonActive}
   }
 
   &[disabled] {
@@ -68,16 +70,7 @@ const ButtonIcon = styled(Icon)`
 `;
 
 function Button({
-  id,
-  buttonLabel,
-  icon,
-  color,
-  type,
-  size,
-  fullWidth,
-  disabled,
-  onClick,
-  style,
+  id, label, icon, color, type, size, fullWidth, disabled, onClick, style,
 }) {
   let buttonColor;
   let textColor;
@@ -102,8 +95,7 @@ function Button({
       break;
   }
 
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
     textColor = colors.grey_60;
     backgroundColor = colors.grey_20;
@@ -139,14 +131,14 @@ function Button({
       style={style}
     >
       {icon ? <ButtonIcon icon={icon} /> : null}
-      <ButtonLabel>{buttonLabel}</ButtonLabel>
+      <ButtonLabel>{label}</ButtonLabel>
     </StyledButton>
   );
 }
 
 Button.propTypes = {
   id: PropTypes.string,
-  buttonLabel: PropTypes.any.isRequired,
+  label: PropTypes.string.isRequired,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   type: PropTypes.string,
   color: PropTypes.oneOf(["success", "warning", "alert"]),
@@ -155,6 +147,17 @@ Button.propTypes = {
   disabled: PropTypes.bool,
   onClick: PropTypes.func.isRequired,
   style: PropTypes.string,
+};
+
+Button.defaultProps = {
+  id: null,
+  icon: null,
+  type: null,
+  color: null,
+  size: null,
+  fullWidth: false,
+  disabled: false,
+  style: null,
 };
 
 export { Button as default };
