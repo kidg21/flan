@@ -20,7 +20,14 @@ const RangeContainer = styled(Grid)`
 `;
 
 function RangeSlider({
-  disabled, errorText, helpText, id, isRequired, label,
+  disabled,
+  errorText,
+  helpText,
+  id,
+  isRequired,
+  label,
+  placeholderMin,
+  placeholderMax,
 }) {
   let inputTextColor;
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
@@ -36,7 +43,7 @@ function RangeSlider({
         contentAlign="center"
         leftWidth="6em"
         rightWidth="6em"
-        left={<TextInput type="text" placeholder="Max" disabled={isDisabled} />}
+        left={<TextInput type="text" placeholder={placeholderMin} disabled={isDisabled} />}
         center={
           errorText && !isDisabled ? (
             <Slider error disabled={isDisabled} />
@@ -44,7 +51,7 @@ function RangeSlider({
             <Slider disabled={isDisabled} />
           )
         }
-        right={<TextInput type="text" placeholder="Max" disabled={isDisabled} />}
+        right={<TextInput type="text" placeholder={placeholderMax} disabled={isDisabled} />}
       />
       {errorText && !isDisabled ? <ErrorText>{errorText}</ErrorText> : null}
     </RangeContainer>
@@ -58,6 +65,8 @@ RangeSlider.propTypes = {
   id: PropTypes.string,
   isRequired: PropTypes.bool,
   label: PropTypes.string,
+  placeholderMin: PropTypes.string,
+  placeholderMax: PropTypes.string,
 };
 RangeSlider.defaultProps = {
   disabled: false,
@@ -66,6 +75,8 @@ RangeSlider.defaultProps = {
   id: null,
   isRequired: false,
   label: null,
+  placeholderMin: "Min",
+  placeholderMax: "Max",
 };
 
 export default RangeSlider;
