@@ -1,11 +1,20 @@
+/* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import styled, { css } from "styled-components";
 import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
-import Slider from "atoms/Slider";
 import { withInfo } from "@storybook/addon-info";
+import Grid from "layout/Grid";
+import Slider from "atoms/Slider";
 
 storiesOf("Atoms|Slider", module)
   .addDecorator(withInfo)
   .addDecorator(Padding)
-  .add("Slider", () => <Slider />);
+  .add("Slider", () => {
+    return (
+      <Grid columns="1" gap="xxlarge">
+        <Slider />
+        <Slider error />
+        <Slider disabled />
+      </Grid>
+    );
+  });
