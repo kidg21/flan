@@ -7,22 +7,6 @@ const SwitchContainer = styled.div`
   display: inline-block;
   vertical-align: middle;
 `;
-const HiddenSwitch = styled.input.attrs({ type: "checkbox" })`
-  border: 0;
-  clip: rect(0 0 0 0);
-  /* clipath: inset(50%); */
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  white-space: nowrap;
-  width: 1px;
-`;
 
 const Circle = styled.div`
   position: absolute;
@@ -52,14 +36,25 @@ const StyledSwitch = styled.div`
   cursor: pointer;
 `;
 
-const Toggle = ({ checked, ...props }) => (
-  <SwitchContainer>
-    <HiddenSwitch checked={checked} {...props} />
-    <StyledSwitch checked={checked}>
-      <Circle checked={checked} {...props} />
+const Toggle = ({ checked, onClick, onStateChange, ...props }) => {
+  const [state, setState] = useState({ checked: checked || false });
+
+  return (<SwitchContainer>
+    <StyledSwitch checked={state.checked} onClick={(e) => {
+      let oldState = Object.assign({}, state);
+      let newState = Object.assign({}, state, { checked: !state.checked });
+      setState(newState);
+      if (typeof onClick === "function") {
+        onClick( e);
+      }
+      if(typeof onStateChange === "function"){
+        onStateChange(oldState, newState, setState, e);
+      }
+    }}>
+      <Circle checked={state.checked} {...props} />
     </StyledSwitch>
-  </SwitchContainer>
-);
+  </SwitchContainer>);
+};
 
 const Switch = ({ checked, id, ...props }) => {
   return (
