@@ -285,6 +285,12 @@ const GlobalStyles = createGlobalStyle`
         user-select: none;
       }
     }
+    input[type="range"] {
+      &[disabled],
+      &[readonly] {
+          background-color: ${colors.grey_40};
+        }
+      }
     `;
 
 export default GlobalStyles;
