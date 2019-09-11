@@ -4,7 +4,9 @@ import PropTypes from "prop-types";
 
 const Wrapper = styled.div`
   display: block;
-  padding: 1em;
+  padding: ${(props) => {
+    return props.padding ? "1em" : "";
+  }};
 `;
 
 const BoxContainer = styled.div`
@@ -40,7 +42,7 @@ const BoxContainer = styled.div`
 `;
 
 function Container({
-  id, height, width, children,
+  id, height, width, padding, children,
 }) {
   return (
     <Wrapper>

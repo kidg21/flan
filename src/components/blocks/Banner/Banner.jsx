@@ -13,7 +13,7 @@ const StyledBanner = styled.div`
     props.theme.background.default};
   color: ${props => (props.theme.text.primary)};
   border: 1px solid;
-  border-color: ${props => props.theme.palette[props.borderColor] || props.theme.palette.black };
+  border-color: ${props => props.theme.palette[props.borderColor] || props.theme.palette.disabled };
   border-radius: 5px;
   padding: 1em;
   width: 100%;

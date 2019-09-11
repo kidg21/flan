@@ -48,14 +48,20 @@ storiesOf("Application|Style Guides/", module)
         </Grid>
         <Title text="Palette Colors" size="large" styling="underline" />
         <Grid>
+          <Colors color="#005681" comment="palette.primary dark" />
           <Colors color="#2B82B1" comment="palette.primary" />
           <Colors color="#66b1e3" comment="palette.primary light" />
-          <Colors color="#005681" comment="palette.primary dark" />
 
+          <Colors color="#3d6c05" comment="palette.secondary dark" />
           <Colors color="#6c9b39" comment="palette.secondary" />
           <Colors color="#9dcc67" comment="palette.secondary light" />
-          <Colors color="#3d6c05" comment="palette.secondary dark" />
 
+          <Colors color="#8b878f"  />
+          <Colors color="#343138"  />
+          <Colors color="#cac6bf"  />
+          <Colors color="#6b6762"  />
+          <Colors color="#b0afad"  />
+ 
           <Colors color="#ffffff" comment="palette.white" />
           <Colors color="#000000" comment="palette.black" />
           <Colors color="#E2E1DF" comment="palette.disabled" />
