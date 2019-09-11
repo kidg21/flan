@@ -13,7 +13,7 @@ const SwitchContainer = styled.div`
   }};
   position: relative;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: bottom;
 `;
 
 const Circle = styled.div`
@@ -26,13 +26,13 @@ const Circle = styled.div`
   border-color: ${(props) => {
     return props.checked ? props.theme.palette.secondary : props.theme.text.secondary;
   }};
-  border-radius: 40px;
-  width: 15px;
+  border-radius: 50px;
+  width: 12px;
   line-height: normal;
-  height: 14px;
-  transition: transform 300ms ease-in-out;
+  height: 10px;
+  transition: transform 200ms ease-in-out;
   transform: ${(props) => {
-    return props.checked ? "translateX(12px)" : "translateX(0)";
+    return props.checked ? "translateX(11px)" : "translateX(0)";
   }};
   &[disabled],
   &[readonly] {
@@ -43,17 +43,17 @@ const Circle = styled.div`
 `;
 
 const StyledSwitch = styled.div`
-  width: 30px;
+  width: 24px;
   display: block;
-  height: 16px;
+  height: 12px;
   border: 1px solid;
   border-color: ${(props) => {
     return props.checked ? props.theme.palette.secondary : props.theme.text.secondary;
   }};
-  border-radius: 23px;
+  border-radius: 25px;
   transition: 300ms ease-in-out;
   background-color: ${(props) => {
-    return props.checked ? props.theme.palette.secondary : props.theme.background.default;
+    return props.checked ? props.theme.palette.secondaryLight : props.theme.background.default;
   }};
   cursor: pointer;
   &[disabled],

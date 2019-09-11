@@ -43,6 +43,7 @@ function LayerCardBar({
             </SwitchContainer>
           }
           right={<IconBlock style={disabledblockStyle}>{icons}</IconBlock>}
+          rightWidth="9em"
         />
       ) : (
         <Bar
@@ -54,6 +55,7 @@ function LayerCardBar({
             </SwitchContainer>
           }
           right={<IconBlock style={blockStyle}>{icons}</IconBlock>}
+          rightWidth="9em"
         />
       )}
     </Piece>

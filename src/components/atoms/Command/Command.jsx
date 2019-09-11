@@ -46,9 +46,7 @@ const CommandContainer = styled.a`
 const CommandName = styled(Title)`
   grid-area: name;
   font-size: inherit;
-  font-color: ${props => {
-    return props.theme.palette[props.commandColor] || "";
-  }};
+  font-color: inherit;
   line-height: inherit;
   overflow: hidden;
   white-space: nowrap;

@@ -46,20 +46,26 @@ storiesOf("Application|Style Guides/", module)
           <Colors color="#5FD1E2" comment="text.link" />
           <Colors color="#E2E1DF" comment="text.disabled" />
         </Grid>
-        <Title text="Primary and Secondary Colors" size="large" styling="underline" />
+        <Title text="Palette Colors" size="large" styling="underline" />
         <Grid>
-          <Colors color="#2B82B1" comment="colors.primary" />
-          <Colors color="#6c9b39" comment="colors.secondary" />
-        </Grid>
-        <Title text="App Background Colors" size="large" styling="underline" />
+          <Colors color="#2B82B1" comment="palette.primary" />
+          <Colors color="#66b1e3" comment="palette.primary light" />
+          <Colors color="#005681" comment="palette.primary dark" />
 
-        <Grid>
-          <Colors color="#206bca" comment="status.info" />
-          <Colors color="#b41313" comment="status.alert" />
-          <Colors color="#ca8720" comment="status.warning" />
-          <Colors color="#07843f" comment="status.success" />
+          <Colors color="#6c9b39" comment="palette.secondary" />
+          <Colors color="#9dcc67" comment="palette.secondary light" />
+          <Colors color="#3d6c05" comment="palette.secondary dark" />
+
+          <Colors color="#ffffff" comment="palette.white" />
+          <Colors color="#000000" comment="palette.black" />
+          <Colors color="#E2E1DF" comment="palette.disabled" />
+          <Colors color="#99958F" comment="palette.grey" />
+          <Colors color="#206bca" comment="palette.info" />
+          <Colors color="#b41313" comment="palette.alert" />
+          <Colors color="#ca8720" comment="palette.warning" />
+          <Colors color="#07843f" comment="palette.success" />
         </Grid>
-        <Title text="Accent Colors" size="large" styling="underline" />
+        {/* <Title text="Accent Colors" size="large" styling="underline" />
         <Grid>
           <Colors color="#eff1ed" />
           <Colors color="#f45b69" />
@@ -68,7 +74,7 @@ storiesOf("Application|Style Guides/", module)
           <Colors color="#d32f2f" />
           <Colors color="#78c0e0" />
           <Colors color="#9ece9a" />
-        </Grid>
+        </Grid> */}
       </Panel>
     );
   });

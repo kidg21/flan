@@ -5,13 +5,26 @@ import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
 import CardAccordion from "elements/CardAccordion";
 import InformationCardBar from "elements/CardBars/InformationCardBar";
 import MapLegend from "blocks/MapLegend";
+import Container from "atoms/Container"
+import Icon from "atoms/Icon";
 import Card from "layout/Card";
 import LayerCardBar from "elements/CardBars/LayerCardBar";
 import Panel, { PanelSection } from "layout/Panel";
 
 const Wrapper = styled.div`
   margin: 0.5em;
+  background-color: ${(props) => {
+    return props.theme.background.app;
+  }};
 `;
+
+const Icons = (
+  <React.Fragment>
+    <Icon icon="maximize" />
+    <Icon icon="share" />
+    <Icon icon="filter" />
+  </React.Fragment>
+);
 
 storiesOf("Templates|Panel", module).add("Layer Panel", () =>
   React.createElement(() => {
@@ -32,6 +45,7 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
             header={
               <LayerCardBar
                 title="Demographics"
+                icons={Icons}
                 switchProps={{
                   checked: checked,
 
@@ -48,6 +62,7 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
             header={
               <LayerCardBar
                 title="Parcel"
+                icons={Icons}
                 switchProps={{
                   checked: checked2,
 
@@ -64,6 +79,7 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
             header={
               <InformationCardBar
                 title="Owner Group"
+                icons={Icons}
                 count="2"
                 switchProps={{
                   checked: checked3,
@@ -75,12 +91,12 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
               />
             }
           >
-            <Wrapper>
-              <Card>
+            <Container>
                 <CardAccordion
                   header={
                     <LayerCardBar
                       title="Owner part 1"
+                      icons={Icons}
                       switchProps={{
                         checked: checked6,
 
@@ -97,6 +113,7 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
                   header={
                     <LayerCardBar
                       title="Owner part 2"
+                      icons={Icons}
                       switchProps={{
                         checked: checked7,
 
@@ -109,13 +126,13 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
                 >
                   <MapLegend />
                 </CardAccordion>
-              </Card>
-            </Wrapper>
+                </Container>
           </CardAccordion>
           <CardAccordion
             header={
               <LayerCardBar
                 title="Traffic"
+                icons={Icons}
                 switchProps={{
                   checked: checked4,
 
@@ -132,6 +149,7 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
             header={
               <LayerCardBar
                 title="Schools"
+                icons={Icons}
                 switchProps={{
                   checked: checked5,
 

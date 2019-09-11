@@ -15,7 +15,11 @@ export const DMPTheme = {
   },
   palette: {
     primary: "#2B82B1",
+    primaryLight: "#66b1e3",
+    primaryDark: "#005681",
     secondary: "#6c9b39",
+    secondaryLight: "#9dcc67",
+    secondaryDark: "#3d6c05",
     info: "#206bca",
     alert: "#b41313",
     warning: "#ca8720",
@@ -49,7 +53,11 @@ export const darkTheme = {
   },
   palette: {
     primary: "#5FD1E2",
+    primaryLight: "#66b1e3",
+    primaryDark: "#005681",
     secondary: "#CDE575",
+    secondaryLight: "#9dcc67",
+    secondaryDark: "#3d6c05",
     info: "#7bc7fa",
     alert: "#eb8775",
     warning: "#e5da66",

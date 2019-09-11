@@ -101,7 +101,7 @@ function Text({
       textColor = "alert";
       break;
     case "light":
-      textColor = "secondary";
+      textColor = "grey";
       break;
     default:
       break;

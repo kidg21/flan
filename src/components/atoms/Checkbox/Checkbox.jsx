@@ -56,7 +56,7 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   &:focus {
     border: 1px solid
       ${(props) => {
-    return props.theme.palette.info;
+    return props.theme.palette.secondary;
   }};
     outline: none;
   }

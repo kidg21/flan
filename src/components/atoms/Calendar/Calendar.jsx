@@ -28,7 +28,7 @@ const Input = styled.input`
   }
   &:focus {
     border-color: ${(props) => {
-    return props.theme.palette[props.inputBorderColorHover] || props.theme.palette.success;
+    return props.theme.palette[props.inputBorderColorHover] || props.theme.palette.secondary;
   }};
     &::-webkit-datetime-edit-day-field,
     &::-webkit-datetime-edit-week-field,
@@ -42,7 +42,7 @@ const Input = styled.input`
     &::-webkit-datetime-edit-text {
       &:focus {
         background-color: ${(props) => {
-    return props.theme.palette[props.inputSelectColor] || props.theme.palette.success;
+    return props.theme.palette[props.inputSelectColor] || props.theme.palette.secondary;
   }};
       }
     }

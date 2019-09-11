@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 const AccordionSection = styled.div`
   line-height: normal;
+
   border-bottom: 1px solid
     ${(props) => {
     return props.theme.divider;
@@ -12,6 +13,10 @@ const AccordionSection = styled.div`
 `;
 
 const Wrapper = styled.div`
+  border-bottom: 1px solid
+    ${(props) => {
+    return props.theme.divider;
+  }};
   ${(props) => {
     return props.show ? "" : "display: none;";
   }}
