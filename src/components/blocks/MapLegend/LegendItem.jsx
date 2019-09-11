@@ -33,7 +33,7 @@ const Item = styled.button`
   }
   &:active {
     border-color: ${(props) => {
-    return props.theme.textColor;
+    return props.theme.text.primary;
   }};
     ${LegendBox} {
       border: 1px solid black;
@@ -44,10 +44,10 @@ const Item = styled.button`
   }
   &:disabled {
     color: ${(props) => {
-    return props.theme.disabled;
+    return props.theme.text.disabled;
   }};
     background-color: ${(props) => {
-    return props.theme.disabled;
+    return props.theme.text.disabled;
   }};
     border-color: ${(props) => {
     return props.theme.divider;

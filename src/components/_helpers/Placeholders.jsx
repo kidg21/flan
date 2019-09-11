@@ -13,7 +13,7 @@ export const PlaceholderText = css`
   font-weight: 600;
   letter-spacing: 1px;
   color: ${(props) => {
-    return props.theme.textColor;
+    return props.theme.text.primary;
   }};
   padding: 0.5rem;
   white-space: pre-wrap;

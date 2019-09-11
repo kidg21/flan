@@ -1,57 +1,67 @@
 import { css } from "styled-components";
 
 export const DMPTheme = {
-  background: "#ffffff",
-  textColor: "#5e5a62",
-  textColorsecondary: "#99958F",
-  textColorInverse: "#ffffff",
-  link: "#5FD1E2",
-  primary: "#2B82B1",
-  secondary: "#75AB3F",
-  info: "#206bca",
-  alert: "#b50000",
-  warning: "#ca8720",
-  success: "#008932",
-  disabled: "#99958F",
+  background: {
+    default: "#ffffff",
+    app: "#f4f6fc",
+  },
   divider: "#E2E1DF",
-  white: "#ffffff",
-  appBackground: "#f4f6fc",
+  text: {
+    primary: "#5e5a62",
+    secondary: "#99958F",
+    inverse: "#ffffff",
+    link: "#5FD1E2",
+    disabled: "#E2E1DF",
+  },
+  colors: {
+    primary: "#2B82B1",
+    secondary: "#6c9b39",
+  },
+  status: {
+    info: "#206bca",
+    alert: "#b41313",
+    warning: "#ca8720",
+    success: "#07843f",
+  },
+  accents: {
+    white: "#ffffff",
+    black: "#000000",
+    green: "green",
+    waterwayBlue: "#44A3D8",
+    burntOrange: "#B84438",
+  },
 };
 
 export const darkTheme = {
-  background: "#333332",
-  textColor: "#ffffff",
-  textColorsecondary: "#99958F",
-  textColorInverse: "#000000",
-  link: "#5FD1E2",
-  primary: "#5FD1E2",
-  secondary: "#CDE575",
-  info: "#7bc7fa",
-  alert: "#eb8775",
-  warning: "#e5da66",
-  success: "#AFE575",
-  disabled: "#E2E1DF",
+  background: {
+    default: "#333332",
+    app: "#f4f6fc",
+  },
   divider: "#E2E1DF",
-  white: "#ffffff",
-  appBackground: "#f4f6fc",
-};
-
-export const lightboxTheme = {
-  background: "#ffffff",
-  textColor: "#5e5a62",
-  textColorsecondary: "#99958F",
-  textColorInverse: "#ffffff",
-  link: "#5FD1E2",
-  primary: "#169FDB",
-  secondary: "#113263",
-  info: "#206bca",
-  alert: "#b50000",
-  warning: "#ca8720",
-  success: "#008932",
-  disabled: "darkgrey",
-  divider: "#E2E1DF",
-  white: "#ffffff",
-  appBackground: "#f4f6fc",
+  text: {
+    primary: "#ffffff",
+    secondary: "#99958F",
+    inverse: "#000000",
+    link: "#5FD1E2",
+    disabled: "#E2E1DF",
+  },
+  colors: {
+    primary: "#5FD1E2",
+    secondary: "#CDE575",
+  },
+  status: {
+    info: "#7bc7fa",
+    alert: "#eb8775",
+    warning: "#e5da66",
+    success: "#AFE575",
+  },
+  accents: {
+    white: "#ffffff",
+    black: "#000000",
+    green: "green",
+    waterwayBlue: "#44A3D8",
+    burntOrange: "#B84438",
+  },
 };
 
 // Codes for color palette

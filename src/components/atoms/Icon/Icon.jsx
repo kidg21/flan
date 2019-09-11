@@ -30,13 +30,13 @@ const LinkedIcon = styled.a`
 
 const StyledIcon = styled(FontAwesomeIcon)`
   color: ${(props) => {
-    return props.theme[props.color] || props.theme.textColor;
+    return props.theme[props.color] || props.theme.text.primary;
   }};
   border: ${(props) => {
     return props.border ? "2px solid" : "";
   }};
   border-color: ${(props) => {
-    return props.theme[props.border] ? props.theme.textColor : "";
+    return props.theme[props.border] ? props.theme.text.primary : "";
   }};
   border-radius: ${(props) => {
     return props.border ? "5px" : "";
@@ -164,40 +164,40 @@ function Icon({
   icon = iconHash[icon.toLowerCase()] || ["far", icon.toLowerCase()];
   switch (type && type.toLowerCase()) {
     case "info":
-      color = "info";
+      color = "status.info";
       break;
     case "success":
-      color = "success";
+      color = "status.success";
       break;
     case "warning":
-      color = "warning";
+      color = "status.warning";
       break;
     case "alert":
-      color = "alert";
+      color = "status.alert";
       break;
-    case "primary":
+    case "colors.primary":
       color = "primary";
       break;
     case "secondary":
-      color = "secondary";
+      color = "colors.secondary";
       break;
     case "disabled":
-      color = "disabled";
+      color = "text.disabled";
       break;
     case "white":
-      color = "white";
+      color = "accents.white";
       break;
-    case "textColor":
-      color = "textColor";
+    case "black":
+      color = "accents.black";
       break;
     default:
       break;
   }
 
-  if (onClick) color = "info";
+  if (onClick) color = "status.info";
 
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (isDisabled) color = "disabled";
+  if (isDisabled) color = "text.disabled";
 
   const styledIcon = (
     <StyledIcon

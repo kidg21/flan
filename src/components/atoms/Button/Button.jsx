@@ -75,52 +75,52 @@ function Button({
   let labelSize;
   switch (color) {
     case "success":
-      buttonColor = "success";
+      buttonColor = "status.success";
       fontColor = buttonColor;
       break;
     case "warning":
-      buttonColor = "warning";
+      buttonColor = "status.warning";
       fontColor = buttonColor;
       break;
     case "alert":
-      buttonColor = "alert";
+      buttonColor = "status.alert";
       fontColor = buttonColor;
       break;
     case "info":
-      buttonColor = "info";
+      buttonColor = "status.info";
       fontColor = buttonColor;
       break;
     case "primary":
-      buttonColor = "primary";
+      buttonColor = "colors.primary";
       fontColor = buttonColor;
       break;
     case "secondary":
-      buttonColor = "secondary";
+      buttonColor = "colors.secondary";
       fontColor = buttonColor;
       break;
-    case "grey":
-      buttonColor = "disabled";
+    case "disabled":
+      buttonColor = "text.disabled";
       fontColor = buttonColor;
       break;
-      case "textColor":
-        buttonColor = "textColor";
+      case "black":
+        buttonColor = "black";
         fontColor = buttonColor;
         break;
     case "alert":
-      buttonColor = "alert";
+      buttonColor = "status.alert";
       fontColor = buttonColor;
       break;
     default:
-      buttonColor = "primary";
+      buttonColor = "colors.primary";
       fontColor = buttonColor;
       break;
   }
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
-    fontColor = "white";
-    backgroundColor = "disabled";
+    fontColor = "text.inverse";
+    backgroundColor = "text.disabled";
   } else if (type && type.toLowerCase() === "solid") {
-    fontColor = "white";
+    fontColor = "text.inverse";
     backgroundColor = buttonColor;
   }
 

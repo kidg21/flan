@@ -33,12 +33,12 @@ const CommandContainer = styled.a`
   transition: all 0.3s ease;
   &:hover {
     color: ${(props) => {
-      return props.theme.info;
+      return props.theme.status.info;
     }};;
   }
   &:active {
     color: ${(props) => {
-      return props.theme.info;
+      return props.theme.status.info;
     }};
   }
 `;
@@ -54,7 +54,7 @@ const CommandName = styled(Title)`
   margin: 0;
   &:focus {
     border: 1px solid  ${(props) => {
-      return props.theme.primary;
+      return props.theme.colors.primary;
     }};
     outline: none;
   }
@@ -69,7 +69,7 @@ function Command({ id, name, label, icon, align, size, onClick, disabled }) {
   let alignIcon = "'icon name'";
   const justifyCommand = "flex-start";
   let justifyIcon = "flex-start";
-  let commandColor = "primary";
+  let commandColor = "colors.primary";
   let commandSize = "inherit";
   switch (name) {
     case "add to list":

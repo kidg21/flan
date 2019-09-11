@@ -1,35 +1,34 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { colors } from "Variables";
 import Grid from "layout/Grid";
 import { DisabledContext } from "States";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
 
 const CalendarContainer = styled(Grid)`
   color: ${(props) => {
-    return props.inputTextColor || "";
+    return props.theme[props.inputTextColor] || "";
   }};
 `;
 
 const Input = styled.input`
   border: 1px solid;
   border-color: ${(props) => {
-    return props.inputBorderColor || colors.grey_20;
+    return props.theme[props.inputBorderColor] || props.theme.divider;
   }};
   background-color: ${(props) => {
-    return props.inputFillColor || "";
+    return props.theme[props.inputFillColor] || "";
   }};
   min-height: 2.75rem;
   padding: 0.5rem 0.75rem;
   &:hover {
     border-color: ${(props) => {
-    return props.inputBorderColorHover || colors.grey_40;
+    return props.theme[props.inputBorderColorHover] || props.theme.divider;
   }};
   }
   &:focus {
     border-color: ${(props) => {
-    return props.inputBorderColorHover || colors.success;
+    return props.theme[props.inputBorderColorHover] || props.theme.status.success;
   }};
     &::-webkit-datetime-edit-day-field,
     &::-webkit-datetime-edit-week-field,
@@ -43,7 +42,7 @@ const Input = styled.input`
     &::-webkit-datetime-edit-text {
       &:focus {
         background-color: ${(props) => {
-    return props.inputSelectColor || colors.success;
+    return props.theme[props.inputSelectColor] || props.theme.status.success;
   }};
       }
     }
@@ -71,10 +70,10 @@ function Calendar({
   let inputSelectColor;
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (errorText && !isDisabled) {
-    inputTextColor = colors.alert;
-    inputBorderColor = colors.alert_light;
-    inputBorderColorHover = colors.alert_light;
-    inputSelectColor = colors.alert;
+    inputTextColor = status.alert;
+    inputBorderColor = status.alert;
+    inputBorderColorHover = status.alert;
+    inputSelectColor = status.alert;
   }
   const inputTypes = type.toLowerCase() === "datetime" ? ["date", "time"] : [type.toLowerCase()];
   const inputElements = inputTypes.map((currType) => {
@@ -98,11 +97,7 @@ function Calendar({
 
   let inputContainer = inputElements;
   if (inputTypes.length > 1) {
-    inputContainer = (
-      <Grid columns="2">
-        {inputElements}
-      </Grid>
-    );
+    inputContainer = <Grid columns="2">{inputElements}</Grid>;
   }
   return (
     <CalendarContainer

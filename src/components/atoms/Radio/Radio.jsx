@@ -9,7 +9,7 @@ const RadioContainer = styled.div`
   grid-gap: 0.5rem;
   align-items: inherit;
   color: ${(props) => {
-    return props.error ? props.theme.alert : "";
+    return props.error ? props.theme.status.alert : "";
   }};
   &[disabled],
   &[readonly] {
@@ -17,7 +17,7 @@ const RadioContainer = styled.div`
     pointer-events: none;
     user-select: none;
     color: ${(props) => {
-    return props.theme.textColor;
+    return props.theme.text.primary;
   }};
   }
 `;
@@ -25,10 +25,10 @@ const RadioContainer = styled.div`
 const RadioInput = styled.input.attrs({ type: "radio" })`
   border: 1px solid;
   border-color: ${(props) => {
-    return props.error ? props.theme.alert : props.theme.disabled;
+    return props.error ? props.theme.status.alert : props.theme.text.disabled;
   }};
   background-color: ${(props) => {
-    return props.disabled ? props.theme.disabled : props.theme.background;
+    return props.disabled ? props.theme.text.disabled : props.theme.background.default;
   }};
   width: 1rem;
   height: 1rem;
@@ -37,16 +37,16 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
   -webkit-appearance: none;
   &:checked {
     background-color: ${(props) => {
-    return props.error ? props.theme.alert : props.theme.secondary;
+    return props.error ? props.theme.status.alert : props.theme.colors.secondary;
   }};
     border-color: ${(props) => {
-    return props.error ? props.theme.alert : props.theme.secondary;
+    return props.error ? props.theme.status.alert : props.theme.colors.secondary;
   }};
   }
   &:focus {
     border: 1px solid
       ${(props) => {
-    return props.theme.primary;
+    return props.theme.colors.primary;
   }};
     outline: none;
   }

@@ -5,7 +5,7 @@ import { PlaceholderText } from "helpers/Placeholders.jsx";
 const Panel = styled.div`
   position: absolute;
   background: ${(props) => {
-    return props.theme.background;
+    return props.theme.background.default;
   }};
   display: flex;
   flex-direction: column;
@@ -25,7 +25,9 @@ const Panel = styled.div`
     &:before {
       ${PlaceholderText};
       content: "Panel";
-      color: ${(props) => { return props.theme.textColor; }};
+      color: ${(props) => {
+    return props.theme.text.primary;
+  }};
     }
   }
 `;
@@ -55,7 +57,9 @@ const PanelSection = styled.section`
     &:before {
       ${PlaceholderText};
       content: "PanelSection";
-      color: ${(props) => { return props.theme.textColor; }};
+      color: ${(props) => {
+    return props.theme.text.primary;
+  }};
     }
   }
 `;

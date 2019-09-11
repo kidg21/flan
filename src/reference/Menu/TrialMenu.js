@@ -13,7 +13,7 @@ const Container = styled.div`
 
 const Menu = styled.ul`
   background: ${(props) => {
-    return props.theme.background; }};
+    return props.theme.background.default; }};
   border: 0.5px solid #ddd;
   list-style: none;
   border-radius: 3px;
@@ -32,7 +32,7 @@ const Item = styled.li`
 
   &:hover {
     color: ${(props) => {
-      return props.theme.primary; }};
+      return props.theme.colors.primary; }};
   }
 `;
 

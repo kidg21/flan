@@ -35,10 +35,10 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   grid-area: input;
   border: 1px solid;
   background-color: ${(props) => {
-    return props.theme[props.fillColor] || props.theme.background;
+    return props.theme[props.fillColor] || props.theme.background.default;
   }};
   border-color: ${(props) => {
-    return props.theme[props.borderColor] || props.theme.disabled;
+    return props.theme[props.borderColor] || props.theme.text.disabled;
   }};
   width: 1rem;
   height: 1rem;
@@ -47,16 +47,16 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   -webkit-appearance: none;
   &:checked {
     background-color: ${(props) => {
-    return props.theme[props.fillColorChecked] || props.theme.secondary;
+    return props.theme[props.fillColorChecked] || props.theme.colors.secondary;
   }};
     border-color: ${(props) => {
-    return props.theme[props.borderColorChecked] || props.theme.secondary;
+    return props.theme[props.borderColorChecked] || props.theme.colors.secondary;
   }};
   }
   &:focus {
     border: 1px solid
       ${(props) => {
-    return props.theme.info;
+    return props.theme.status.info;
   }};
     outline: none;
   }
@@ -111,11 +111,11 @@ function Checkbox({
   let alignInput;
   switch (type) {
     case "error":
-      checkboxColor = "alert";
-      fillColor = "alert";
+      checkboxColor = "status.alert";
+      fillColor = "status.alert";
       borderColor = checkboxColor;
-      fillColorChecked = "alert";
-      borderColorChecked = "alert";
+      fillColorChecked = "status.alert";
+      borderColorChecked = "status.alert";
       break;
     default:
       break;
@@ -123,8 +123,8 @@ function Checkbox({
 
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
-    checkboxColor = "disabled";
-    fillColor = "disabled";
+    checkboxColor = "text.disabled";
+    fillColor = "text.disabled";
     borderColor = checkboxColor;
   }
 

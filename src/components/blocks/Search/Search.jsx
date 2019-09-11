@@ -16,7 +16,7 @@ const SearchContainer = styled.div`
     position: absolute;
     right: 0;
     background-color: ${(props) => {
-    return props.theme.background;
+    return props.theme.background.default;
   }};
     margin: 0.2em;
     padding: 0.5em;

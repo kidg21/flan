@@ -24,7 +24,7 @@ const Section = styled.h6`
   margin: 0;
   line-height: normal;
   color: ${props => {
-    return props.theme.textColor;
+    return props.theme.text.primary;
   }};
   grid-column: 1/-1;
 `;

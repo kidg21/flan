@@ -49,7 +49,7 @@ const FlexWrapper = styled.div`
     return props.setOverflow || "hidden";
   }};
   background-color: ${(props) => {
-    return props.theme.background;
+    return props.theme.background.default
   }};
   transform: ${(props) => {
     return props.displayState || "";
@@ -59,7 +59,7 @@ const FlexWrapper = styled.div`
       ${PlaceholderText};
       content: "{ Layout Wrapper }";
       color: ${(props) => {
-    return props.theme.textColor;
+    return props.theme.text.primary;
   }};
     }
   }

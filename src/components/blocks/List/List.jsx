@@ -16,7 +16,7 @@ const ListWrapper = styled.ul`
 
 const ListTitle = styled(Title)`
   color: ${props => {
-    return props.theme.textColor;
+    return props.theme.text.primary;
   }};
   border-bottom: 1px solid
     ${props => {
@@ -31,7 +31,7 @@ const ListItemWrapper = styled.li`
     return props.theme[props.itemColor];
   }};
   background-color: ${props => {
-    return props.theme[props.itemBGColor] || props.theme.background;
+    return props.theme[props.itemBGColor] || props.theme.background.default;
   }};
   border-style: solid;
   border-width: ${props => {
@@ -57,10 +57,10 @@ const ListItemWrapper = styled.li`
     pointer-events: none;
     user-select: none;
     color: ${props => {
-      return props.theme.grey;
+      return props.theme.text.disabled;
     }};
     background-color: ${props => {
-      return props.theme.grey;
+      return props.theme.divider;
     }};
     border-left: none;
   }
@@ -92,7 +92,7 @@ function ListItem({
   let itemBorder;
   switch (state) {
     case "active":
-      itemColor = "success";
+      itemColor = "status.success";
       itemBorder = "0 0 0 .5em";
       break;
     default:
@@ -100,20 +100,20 @@ function ListItem({
   }
   switch (type) {
     case "info":
-      itemColor = "background";
-      itemBGColor = "info";
+      itemColor = "background.default";
+      itemBGColor = "status.info";
       break;
     case "success":
-      itemColor = "background";
-      itemBGColor = "success";
+      itemColor = "background.default";
+      itemBGColor = "status.success";
       break;
     case "warning":
-      itemColor = "background";
-      itemBGColor = "warning";
+      itemColor = "background.default";
+      itemBGColor = "status.warning";
       break;
     case "alert":
-      itemColor = "background";
-      itemBGColor = "alert";
+      itemColor = "background.default";
+      itemBGColor = "status.alert";
       break;
     default:
       break;

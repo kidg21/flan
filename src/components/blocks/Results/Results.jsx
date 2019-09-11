@@ -14,7 +14,7 @@ const Number = styled.a`
   padding-right: 0.25em;
   &:focus {
     border: 1px solid ${(props) => {
-      return props.theme.primary; }};
+      return props.theme.colors.primary; }};
     outline: none;
   }
 `;

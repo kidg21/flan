@@ -15,7 +15,7 @@ const Container = styled.div`
 
 const EditMenu = styled.ul`
   background: ${(props) => {
-    return props.theme.background; }};
+    return props.theme.background.default; }};
   border-radius: 3px;
   list-style: none;
   z-index: 500;

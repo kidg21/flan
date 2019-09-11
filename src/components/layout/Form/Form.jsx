@@ -10,7 +10,8 @@ const Form = styled.form`
   flex: auto;
   align-content: flex-start;
   padding: 1rem 1.5rem;
-  background-color: ${props => (props.bg_light ? props.theme.divider : props.theme.background)};
+  background-color: ${props =>
+    props.theme[props.bg_light] ? props.theme.divider : props.theme.background.default};
   ${props =>
     props.dark &&
     css`
@@ -18,7 +19,7 @@ const Form = styled.form`
         return props.theme.divider;
       }};
       background-color: ${props => {
-        return props.theme.disabled;
+        return props.theme.text.disabled;
       }};
       * {
         color: ${props => {
@@ -37,7 +38,7 @@ const Form = styled.form`
 
 const Header = styled.h3`
   color: ${props => {
-    return props.theme.textColor;
+    return props.theme.text.primary;
   }};
   line-height: normal;
   letter-spacing: 2px;
@@ -64,7 +65,7 @@ const Section = styled.section`
 
 const SectionName = styled.h5`
   color: ${props => {
-    return props.theme.textColor;
+    return props.theme.text.primary;
   }};
   font-weight: 700;
   // letter-spacing: 1px;
@@ -79,7 +80,9 @@ const Label = styled.label`
   &:after {
     display: ${props => (props.isRequired ? "" : "none")};
     content: "*";
-    color: ${colors.alert};
+    color: ${props => {
+      return props.theme.status.alert;
+    }};
     font-size: 1.25rem;
     line-height: 0;
     vertical-align: middle;

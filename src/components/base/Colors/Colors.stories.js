@@ -30,26 +30,44 @@ storiesOf("Application|Style Guides/", module)
   .add("Color Palette", () => {
     return (
       <Panel>
-        <Grid columns="1">
-          <Title text="Color Palette" size="large" styling="underline" />
-          <SubTitle text="Color Palette is controled by themeing. Colors vary depending on theme selected." />
-        </Grid>
+        <Title text="Color Palette" size="large" styling="underline" />
+        <SubTitle text="Color Palette is controled by themeing. Colors vary depending on theme selected." />
+        <Title text="App Background Colors" size="large" styling="underline" />
         <Grid>
-          <Colors type="background" />
-          <Colors type="appBackground" />
-          <Colors type="textColor" />
-          <Colors type="disabled" />
-          <Colors type="divider" />
-          <Colors type="primary" />
-          <Colors type="primary" shade="darken" comment="dark (hover)" />
-          <Colors type="primary" shade="lighten" comment="light (active)" />
-          <Colors type="secondary" />
-          <Colors type="secondary" shade="darken" comment="dark (hover)" />
-          <Colors type="secondary" shade="lighten" comment="light (active)" />
-          <Colors type="info" />
-          <Colors type="warning" />
-          <Colors type="alert" />
-          <Colors type="success" />
+          <Colors color="#ffffff" comment="background.default" />
+          <Colors color="#f4f6fc" comment="background.app" />
+          <Colors color="#E2E1DF" comment="divider" />
+        </Grid>
+        <Title text="Text Colors" size="large" styling="underline" />
+        <Grid>
+          <Colors color="#5e5a62" comment="text.primary" />
+          <Colors color="#99958f" comment="text.secondary" />
+          <Colors color="#ffffff" comment="text.inverse" />
+          <Colors color="#5FD1E2" comment="text.link" />
+          <Colors color="#E2E1DF" comment="text.disabled" />
+        </Grid>
+        <Title text="Primary and Secondary Colors" size="large" styling="underline" />
+        <Grid>
+          <Colors color="#2B82B1" comment="colors.primary" />
+          <Colors color="#6c9b39" comment="colors.secondary" />
+        </Grid>
+        <Title text="App Background Colors" size="large" styling="underline" />
+
+        <Grid>
+          <Colors color="#206bca" comment="status.info" />
+          <Colors color="#b41313" comment="status.alert" />
+          <Colors color="#ca8720" comment="status.warning" />
+          <Colors color="#07843f" comment="status.success" />
+        </Grid>
+        <Title text="Accent Colors" size="large" styling="underline" />
+        <Grid>
+          <Colors color="#eff1ed" />
+          <Colors color="#f45b69" />
+          <Colors color="#C9F0FF" />
+          <Colors color="#eaf4d3" />
+          <Colors color="#d32f2f" />
+          <Colors color="#78c0e0" />
+          <Colors color="#9ece9a" />
         </Grid>
       </Panel>
     );

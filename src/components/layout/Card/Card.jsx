@@ -12,7 +12,7 @@ const CardPiece = styled.div`
   padding: ${props => props.padding || ""};
   width: 100%;
   background: ${props => {
-    return props.theme.background;
+    return props.theme.background.default;
   }};
   &:hover {
     box-shadow: ${props => (props.hover ? shadows.dropShadow : "")};
@@ -23,7 +23,7 @@ const CardPiece = styled.div`
     &:before {
       ${PlaceholderText}
       color: ${props => {
-        return props.theme.textColor;
+        return props.theme.text.primary;
       }};
       content: "Card Piece";
       padding: 2rem;
@@ -40,7 +40,7 @@ const CardWrapper = styled(CardPiece)`
     &:before {
       ${PlaceholderText}
       color: ${props => {
-        return props.theme.textColor;
+        return props.theme.text.primary;
       }};
       content: "Card";
       padding: 2rem;

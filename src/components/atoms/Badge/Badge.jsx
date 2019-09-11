@@ -22,9 +22,9 @@ const BadgeContainer = styled.div`
     return props.badgePadding || "";
   }};
   border-radius: 10em;
-  bottom: ${props => props.badgeBottom || ""};
-  left: ${props => props.badgeLeft || ""};
-  transform: ${props => props.setTransform || ""};
+  bottom: ${(props) => { return props.badgeBottom || ""; }};
+  left: ${(props) => { return props.badgeLeft || ""; }};
+  transform: ${(props) => { return props.setTransform || ""; }};
 `;
 
 const BadgeLabel = styled.span`
@@ -51,27 +51,27 @@ function Badge({
     badgePadding = "0 0.25em";
   } else {
     labelType = <BadgeLabel>{label}</BadgeLabel>;
-    badgeColor = "alert";
-    badgeTextColor = "textColorInverse";
+    badgeColor = "status.alert";
+    badgeTextColor = "text.inverse";
     badgePadding = "0.45em .8em";
     switch (type) {
       case "info":
-        badgeColor = "info";
+        badgeColor = "status.info";
         break;
       case "success":
-        badgeColor = "success";
+        badgeColor = "status.success";
         break;
       case "warning":
-        badgeColor = "warning";
+        badgeColor = "status.warning";
         break;
       case "alert":
-        badgeColor = "alert";
+        badgeColor = "status.alert";
         break;
       case "dark":
-        badgeColor = "textColor";
+        badgeColor = "accents.black";
         break;
       default:
-        badgeColor = "alert";
+        badgeColor = "status.alert";
         break;
     }
   }

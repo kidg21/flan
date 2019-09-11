@@ -20,7 +20,7 @@ const InputContainer = styled.div`
 
 const Dash = styled.div`
   color: ${(props) => {
-    return props.theme.disabled;
+    return props.theme.text.disabled;
   }};
   margin: auto;
   font-size: 20px;

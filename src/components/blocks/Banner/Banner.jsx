@@ -10,10 +10,10 @@ const StyledBanner = styled.div`
   align-content: flex-start;
   position: relative;
   background-color: ${props =>
-    props.theme.background};
-  color: ${props => (props.theme.textColor)};
+    props.theme.background.default};
+  color: ${props => (props.theme.text.primary)};
   border: 1px solid;
-  border-color: ${props => props.theme[props.borderColor] || props.theme.grey };
+  border-color: ${props => props.theme[props.borderColor] || props.theme.accents.black };
   border-radius: 5px;
   padding: 1em;
   width: 100%;
@@ -21,7 +21,7 @@ const StyledBanner = styled.div`
 
 const StatusBadge = styled.div`
   background-color: ${props => props.theme[props.badgeBG] || ""};
-  color: ${props => (props.badgeBG ? props.theme.textColorInverse : "")};
+  color: ${props => (props.badgeBG ? props.theme.text.inverse : "")};
   padding: ${props => (props.badgeBG ? ".5em" : "")};
   margin-right: 1em;
   border-radius: 100%;
@@ -94,7 +94,7 @@ function Banner({
       ) : null;
       break;
     case "info":
-      color = "info";
+      color = "status.info";
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
@@ -103,7 +103,7 @@ function Banner({
       );
       break;
     case "success":
-      color = "success";
+      color = "status.success";
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
@@ -112,7 +112,7 @@ function Banner({
       );
       break;
     case "warning":
-      color = "warning";
+      color = "status.warning";
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
@@ -121,7 +121,7 @@ function Banner({
       );
       break;
     case "alert":
-      color = "alert";
+      color = "status.alert";
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
