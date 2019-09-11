@@ -36,17 +36,11 @@ const image = (
   />
 );
 const shortTitle = <Title text="A Standard Title" />;
-const longTitle = (
-  <Title text="A Title So Long That It May Take Up Multiple Lines" />
-);
+const longTitle = <Title text="A Title So Long That It May Take Up Multiple Lines" />;
 const multipleLines = (
   <>
     <Title text="Towgood, Gary T." />
-    <Title
-      text="3082 Yellowstone Dr. Costa Mesa, CA 92612"
-      size="small"
-      weight="normal"
-    />
+    <Title text="3082 Yellowstone Dr. Costa Mesa, CA 92612" size="small" weight="normal" />
   </>
 );
 
@@ -82,6 +76,7 @@ storiesOf("Blocks|Bar", module)
           padding={options(
             "padding",
             {
+              none: "0",
               default: "default",
               "2x": "2x",
               "3x": "3x",
