@@ -20,15 +20,9 @@ const RangeContainer = styled(Grid)`
 `;
 
 function RangeSlider({
-  id, label, isRequired, error, disabled, helpText, errorText,
+  disabled, errorText, helpText, id, isRequired, label,
 }) {
   let inputTextColor;
-  if (errorText && !disabled) {
-    inputTextColor = colors.alert;
-    // inputBorderColor = colors.alert_light;
-    // inputBorderColorHover = colors.alert_light;
-    // inputSelectColor = colors.alert;
-  }
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (errorText && !isDisabled) {
     inputTextColor = colors.alert;
@@ -58,16 +52,20 @@ function RangeSlider({
 }
 
 RangeSlider.propTypes = {
+  disabled: PropTypes.bool,
+  errorText: PropTypes.string,
+  helpText: PropTypes.string,
   id: PropTypes.string,
+  isRequired: PropTypes.bool,
   label: PropTypes.string,
-  minLabel: PropTypes.string,
-  maxLabel: PropTypes.string,
 };
 RangeSlider.defaultProps = {
+  disabled: false,
+  errorText: null,
+  helpText: null,
   id: null,
+  isRequired: false,
   label: null,
-  minLabel: null,
-  maxLabel: null,
 };
 
 export default RangeSlider;
