@@ -7,28 +7,28 @@ import { InputLabel, HelpText, ErrorText } from "layout/Form";
 
 const CalendarContainer = styled(Grid)`
   color: ${(props) => {
-    return props.theme[props.inputTextColor] || "";
+    return props.theme.palette[props.inputTextColor] || "";
   }};
 `;
 
 const Input = styled.input`
   border: 1px solid;
   border-color: ${(props) => {
-    return props.theme[props.inputBorderColor] || props.theme.divider;
+    return props.theme.palette[props.inputBorderColor] || props.theme.divider;
   }};
   background-color: ${(props) => {
-    return props.theme[props.inputFillColor] || "";
+    return props.theme.palette[props.inputFillColor] || "";
   }};
   min-height: 2.75rem;
   padding: 0.5rem 0.75rem;
   &:hover {
     border-color: ${(props) => {
-    return props.theme[props.inputBorderColorHover] || props.theme.divider;
+    return props.theme.palette[props.inputBorderColorHover] || props.theme.divider;
   }};
   }
   &:focus {
     border-color: ${(props) => {
-    return props.theme[props.inputBorderColorHover] || props.theme.status.success;
+    return props.theme.palette[props.inputBorderColorHover] || props.theme.palette.success;
   }};
     &::-webkit-datetime-edit-day-field,
     &::-webkit-datetime-edit-week-field,
@@ -42,7 +42,7 @@ const Input = styled.input`
     &::-webkit-datetime-edit-text {
       &:focus {
         background-color: ${(props) => {
-    return props.theme[props.inputSelectColor] || props.theme.status.success;
+    return props.theme.palette[props.inputSelectColor] || props.theme.palette.success;
   }};
       }
     }
@@ -70,10 +70,10 @@ function Calendar({
   let inputSelectColor;
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (errorText && !isDisabled) {
-    inputTextColor = status.alert;
-    inputBorderColor = status.alert;
-    inputBorderColorHover = status.alert;
-    inputSelectColor = status.alert;
+    inputTextColor = alert;
+    inputBorderColor = alert;
+    inputBorderColorHover = alert;
+    inputSelectColor = alert;
   }
   const inputTypes = type.toLowerCase() === "datetime" ? ["date", "time"] : [type.toLowerCase()];
   const inputElements = inputTypes.map((currType) => {

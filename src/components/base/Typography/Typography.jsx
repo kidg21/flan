@@ -7,7 +7,7 @@ import { fonts } from "Variables";
 
 const LinkedText = styled.a`
   color: ${(props) => {
-    return props.theme.colors.primary;
+    return props.theme.palette.primary;
   }};
 `;
 
@@ -20,7 +20,7 @@ const StyledText = styled.h4`
     return props.fontFamily || "inherit";
   }};
   color: ${(props) => {
-    return props.theme[props.textColor] || props.theme.text.primary ;
+    return props.theme.palette[props.textColor] || props.theme.text.primary ;
   }};
   font-weight: ${(props) => {
     return props.textWeight || "600";
@@ -89,19 +89,19 @@ function Text({
   }
   switch (type && type.toLowerCase()) {
     case "info":
-      textColor = "status.info";
+      textColor = "info";
       break;
     case "success":
-      textColor = "status.success";
+      textColor = "success";
       break;
     case "warning":
-      textColor = "status.warning";
+      textColor = "warning";
       break;
     case "alert":
-      textColor = "status.alert";
+      textColor = "alert";
       break;
     case "light":
-      textColor = "text.secondary";
+      textColor = "secondary";
       break;
     default:
       break;

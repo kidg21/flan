@@ -30,7 +30,7 @@ const RangePiece = styled.input.attrs({ type: "range" })`
     height: 18px;
     border-radius: 50%;
     color: ${(props) => {
-    return props.theme.colors.secondary;
+    return props.theme.palette.secondary;
   }};
     cursor: pointer;
 
@@ -62,7 +62,7 @@ const RangePiece = styled.input.attrs({ type: "range" })`
     height: 18px;
     border-radius: 50%;
     color: ${(props) => {
-    return props.theme.colors.secondary;
+    return props.theme.palette.secondary;
   }};
     cursor: pointer;
   }
@@ -82,7 +82,7 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
     height: 18px;
     border-radius: 50%;
     color: ${(props) => {
-    return props.theme.colors.secondary;
+    return props.theme.palette.secondary;
   }};
     cursor: pointer;
 

@@ -35,10 +35,10 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   grid-area: input;
   border: 1px solid;
   background-color: ${(props) => {
-    return props.theme[props.fillColor] || props.theme.background.default;
+    return props.theme.palette[props.fillColor] || props.theme.background.default;
   }};
   border-color: ${(props) => {
-    return props.theme[props.borderColor] || props.theme.text.disabled;
+    return props.theme.palette[props.borderColor] || props.theme.palette.disabled;
   }};
   width: 1rem;
   height: 1rem;
@@ -47,16 +47,16 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   -webkit-appearance: none;
   &:checked {
     background-color: ${(props) => {
-    return props.theme[props.fillColorChecked] || props.theme.colors.secondary;
+    return props.theme.palette[props.fillColorChecked] || props.theme.palette.secondary;
   }};
     border-color: ${(props) => {
-    return props.theme[props.borderColorChecked] || props.theme.colors.secondary;
+    return props.theme.palette[props.borderColorChecked] || props.theme.palette.secondary;
   }};
   }
   &:focus {
     border: 1px solid
       ${(props) => {
-    return props.theme.status.info;
+    return props.theme.palette.info;
   }};
     outline: none;
   }
@@ -111,11 +111,11 @@ function Checkbox({
   let alignInput;
   switch (type) {
     case "error":
-      checkboxColor = "status.alert";
-      fillColor = "status.alert";
+      checkboxColor = "alert";
+      fillColor = "alert";
       borderColor = checkboxColor;
-      fillColorChecked = "status.alert";
-      borderColorChecked = "status.alert";
+      fillColorChecked = "alert";
+      borderColorChecked = "alert";
       break;
     default:
       break;
@@ -123,8 +123,8 @@ function Checkbox({
 
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
-    checkboxColor = "text.disabled";
-    fillColor = "text.disabled";
+    checkboxColor = "disabled";
+    fillColor = "disabled";
     borderColor = checkboxColor;
   }
 

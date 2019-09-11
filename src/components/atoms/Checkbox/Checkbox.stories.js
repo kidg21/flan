@@ -4,11 +4,7 @@ import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
 import Panel from "layout/Panel";
-import {
-  withKnobs,
-  boolean,
-  optionsKnob as options,
-} from "@storybook/addon-knobs";
+import { withKnobs, boolean, optionsKnob as options } from "@storybook/addon-knobs";
 import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
 import CheckboxNotes from "./Checkbox.md";
 
@@ -45,12 +41,9 @@ storiesOf("Atoms|Checkbox", module)
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
-  .add(
-    "Documentation",
-    withInfo()(() => {
-      return <Checkbox {...cbox1} />;
-    }),
-  )
+  .add("Documentation", () => {
+    return <Checkbox {...cbox1} />;
+  })
   .add("Skeleton", () => {
     return <Checkbox id="default" />;
   })
@@ -61,10 +54,10 @@ storiesOf("Atoms|Checkbox", module)
           "columns",
           {
             "wrap ( default )": "default",
-            one: "1",
-            two: "2",
-            three: "3",
-            four: "4",
+            "one": "1",
+            "two": "2",
+            "three": "3",
+            "four": "4",
           },
           "default",
           { display: "radio" },
@@ -195,6 +188,6 @@ storiesOf("Atoms|Checkbox", module)
         <CheckboxGroup columns="1">
           <Checkbox {...cboxLong} />
         </CheckboxGroup>
-        </Panel>
+      </Panel>
     );
   });

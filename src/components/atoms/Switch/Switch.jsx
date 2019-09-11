@@ -6,10 +6,10 @@ import { DisabledContext } from "States";
 
 const SwitchContainer = styled.div`
   background-color: ${(props) => {
-    return props.theme[props.fillColor] || props.theme.background.default;
+    return props.theme.palette[props.fillColor] || props.theme.background.default;
   }};
   border-color: ${(props) => {
-    return props.theme[props.borderColor] || props.theme.text.primary;
+    return props.theme.palette[props.borderColor] || props.theme.text.secondary;
   }};
   position: relative;
   display: inline-block;
@@ -20,11 +20,11 @@ const Circle = styled.div`
   position: absolute;
   z-index: 1;
   background: ${(props) => {
-    return props.checked ? props.theme.status.success : props.theme.background.default;
+    return props.checked ? props.theme.palette.white : props.theme.background.default;
   }};
   border: 1px solid;
   border-color: ${(props) => {
-    return props.checked ? props.theme.status.success : props.theme.text.disabled;
+    return props.checked ? props.theme.palette.secondary : props.theme.text.secondary;
   }};
   border-radius: 40px;
   width: 15px;
@@ -37,7 +37,7 @@ const Circle = styled.div`
   &[disabled],
   &[readonly] {
     border-color: ${(props) => {
-    return props.disabled ? props.theme.text.disabled : "";
+    return props.disabled ? props.theme.palette.disabled : "";
   }};
   }
 `;
@@ -48,12 +48,12 @@ const StyledSwitch = styled.div`
   height: 16px;
   border: 1px solid;
   border-color: ${(props) => {
-    return props.checked ? props.theme.colors.secondary : props.theme.text.primary;
+    return props.checked ? props.theme.palette.secondary : props.theme.text.secondary;
   }};
   border-radius: 23px;
-  transition: 3000ms ease-in-out;
-  background-image: ${(props) => {
-    return props.checked ? props.theme.colors.secondary : props.theme.background.default;
+  transition: 300ms ease-in-out;
+  background-color: ${(props) => {
+    return props.checked ? props.theme.palette.secondary : props.theme.background.default;
   }};
   cursor: pointer;
   &[disabled],
@@ -62,7 +62,7 @@ const StyledSwitch = styled.div`
     return props.disabled ? "none" : "";
   }};
     background: ${(props) => {
-    return props.disabled ? props.theme.text.disabled : "";
+    return props.disabled ? props.theme.palette.disabled : "";
   }};
   }
 `;
@@ -81,8 +81,12 @@ function Toggle({ checked, disabled, onChange }) {
   // let fillColor;
   // let borderColor;
   if (disabled) {
+    // checkboxColor = colors.alert;
+    // fillColor = colors.alert;
+    // borderColor = checkboxColor;
+    // borderColor = colors.grey_40;
   }
-
+  // let borderColor;
   let isChecked = checked;
   let onClick = onChange;
   if (!onClick) {
@@ -119,7 +123,7 @@ const ToggleContainer = styled.div`
   grid-gap: 0.75rem;
   align-content: flex-start;
   color: ${(props) => {
-    return props.theme[props.checkboxColor] || "";
+    return props.theme.palette[props.checkboxColor] || "";
   }};
   &[disabled],
   &[readonly] {
@@ -135,7 +139,7 @@ function Switch({
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let checkboxColor;
   if (disabled) {
-    checkboxColor = props.theme.text.disabled;
+    checkboxColor = props.theme.palette.disabled;
   }
   return (
     <ToggleContainer isRequired={isRequired} checkboxColor={checkboxColor} disabled={isDisabled}>

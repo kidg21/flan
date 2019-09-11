@@ -32,7 +32,7 @@ const Item = styled.li`
 
   &:hover {
     color: ${(props) => {
-      return props.theme.colors.primary; }};
+      return props.theme.palette.primary; }};
   }
 `;
 

@@ -24,7 +24,7 @@ storiesOf("Atoms|Icon", module)
   })
   .add(
     "Documentation",
-    withInfo()(() => {
+    (() => {
       return <Icon icon="user_circle" size="2x" />;
     }),
   )

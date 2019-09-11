@@ -19,7 +19,7 @@ const BoxContainer = styled.div`
   }};
   border: 1px solid
     ${(props) => {
-    return props.theme.text.disabled;
+    return props.theme.palette.disabled;
   }};
   border-radius: 5px;
 
@@ -33,7 +33,7 @@ const BoxContainer = styled.div`
 
   ::-webkit-scrollbar-thumb {
     background-color: ${(props) => {
-    return props.theme.colors.primary;
+    return props.theme.palette.primary;
   }};
     border-radius: 20px;
   }

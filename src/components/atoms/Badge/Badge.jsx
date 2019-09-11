@@ -9,10 +9,10 @@ const BadgeContainer = styled.div`
   justify-content: center;
   align-items: center;
   background-color: ${(props) => {
-    return props.theme[props.badgeColor];
+    return props.theme.palette[props.badgeColor];
   }};
   color: ${(props) => {
-    return props.theme[props.badgeTextColor];
+    return props.theme.text[props.badgeTextColor];
   }};
   font-size: 0.55em;
   font-weight: 700;
@@ -22,9 +22,15 @@ const BadgeContainer = styled.div`
     return props.badgePadding || "";
   }};
   border-radius: 10em;
-  bottom: ${(props) => { return props.badgeBottom || ""; }};
-  left: ${(props) => { return props.badgeLeft || ""; }};
-  transform: ${(props) => { return props.setTransform || ""; }};
+  bottom: ${(props) => {
+    return props.badgeBottom || "";
+  }};
+  left: ${(props) => {
+    return props.badgeLeft || "";
+  }};
+  transform: ${(props) => {
+    return props.setTransform || "";
+  }};
 `;
 
 const BadgeLabel = styled.span`
@@ -51,27 +57,27 @@ function Badge({
     badgePadding = "0 0.25em";
   } else {
     labelType = <BadgeLabel>{label}</BadgeLabel>;
-    badgeColor = "status.alert";
-    badgeTextColor = "text.inverse";
+    badgeColor = "alert";
+    badgeTextColor = "inverse";
     badgePadding = "0.45em .8em";
     switch (type) {
       case "info":
-        badgeColor = "status.info";
+        badgeColor = "info";
         break;
       case "success":
-        badgeColor = "status.success";
+        badgeColor = "success";
         break;
       case "warning":
-        badgeColor = "status.warning";
+        badgeColor = "warning";
         break;
       case "alert":
-        badgeColor = "status.alert";
+        badgeColor = "alert";
         break;
       case "dark":
-        badgeColor = "accents.black";
+        badgeColor = "black";
         break;
       default:
-        badgeColor = "status.alert";
+        badgeColor = "alert";
         break;
     }
   }
@@ -94,7 +100,7 @@ function Badge({
     case "bottomLeft":
       badgeBottom = "0";
       badgeLeft = "0";
-      badgeTransform = "translate(-10%, 50%)";
+      setTransform = "translate(-10%, 50%)";
       break;
     default:
     case "topRight":
@@ -123,7 +129,7 @@ function Badge({
 
 Badge.propTypes = {
   id: PropTypes.string,
-  label: PropTypes.string.isRequired,
+  label: PropTypes.string,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   type: PropTypes.oneOf(["info", "success", "warning", "alert", "dark"]),
   position: PropTypes.oneOf(["topLeft", "topRight", "bottomRight", "bottomLeft"]),

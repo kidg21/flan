@@ -4,7 +4,7 @@ import styled from "styled-components";
 const LegendText = styled.li`
   font-size: 0.86em;
   font-color: ${(props) => {
-    return props.theme.textColor;
+    return props.theme.text.primary;
   }};
   display: flex;
   list-style: none;

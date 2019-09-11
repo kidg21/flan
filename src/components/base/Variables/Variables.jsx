@@ -13,15 +13,17 @@ export const DMPTheme = {
     link: "#5FD1E2",
     disabled: "#E2E1DF",
   },
-  colors: {
+  palette: {
     primary: "#2B82B1",
     secondary: "#6c9b39",
-  },
-  status: {
     info: "#206bca",
     alert: "#b41313",
     warning: "#ca8720",
     success: "#07843f",
+    white: "#ffffff",
+    black: "#000000",
+    disabled: "#E2E1DF",
+    grey: "#99958F",
   },
   accents: {
     white: "#ffffff",
@@ -45,15 +47,17 @@ export const darkTheme = {
     link: "#5FD1E2",
     disabled: "#E2E1DF",
   },
-  colors: {
+  palette: {
     primary: "#5FD1E2",
     secondary: "#CDE575",
-  },
-  status: {
     info: "#7bc7fa",
     alert: "#eb8775",
     warning: "#e5da66",
     success: "#AFE575",
+    white: "#ffffff",
+    black: "#000000",
+    disabled: "#E2E1DF",
+    grey: "#99958F",
   },
   accents: {
     white: "#ffffff",

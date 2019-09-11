@@ -20,10 +20,10 @@ const StyledButton = styled.button`
   justify-content: center;
   align-items: center;
   color: ${(props) => {
-    return props.theme[props.fontColor] || props.theme.primary;
+    return props.theme.palette[props.fontColor] || props.theme.text.primary;
   }};
   background-color: ${(props) => {
-    return props.theme[props.backgroundColor] || props.theme.background;
+    return props.theme.palette[props.backgroundColor] || props.theme.background.default;
   }};
   border: ${(props) => {
     return props.noBorder ? "0px solid" : "1px solid";
@@ -66,7 +66,17 @@ const ButtonIcon = styled(Icon)`
 `;
 
 function Button({
-  id, label, icon, color, noBorder, type, size, fullWidth, disabled, onClick, style,
+  id,
+  label,
+  icon,
+  color,
+  noBorder,
+  type,
+  size,
+  fullWidth,
+  disabled,
+  onClick,
+  style,
 }) {
   let buttonColor;
   let fontColor;
@@ -75,52 +85,56 @@ function Button({
   let labelSize;
   switch (color) {
     case "success":
-      buttonColor = "status.success";
+      buttonColor = "success";
       fontColor = buttonColor;
       break;
     case "warning":
-      buttonColor = "status.warning";
+      buttonColor = "warning";
       fontColor = buttonColor;
       break;
     case "alert":
-      buttonColor = "status.alert";
+      buttonColor = "alert";
       fontColor = buttonColor;
       break;
     case "info":
-      buttonColor = "status.info";
+      buttonColor = "info";
       fontColor = buttonColor;
       break;
     case "primary":
-      buttonColor = "colors.primary";
+      buttonColor = "primary";
       fontColor = buttonColor;
       break;
     case "secondary":
-      buttonColor = "colors.secondary";
+      buttonColor = "secondary";
       fontColor = buttonColor;
       break;
     case "disabled":
-      buttonColor = "text.disabled";
+      buttonColor = "disabled";
       fontColor = buttonColor;
       break;
-      case "black":
-        buttonColor = "black";
-        fontColor = buttonColor;
-        break;
+      case "grey":
+          buttonColor = "grey";
+          fontColor = buttonColor;
+          break;
+    case "black":
+      buttonColor = "black";
+      fontColor = buttonColor;
+      break;
     case "alert":
-      buttonColor = "status.alert";
+      buttonColor = "alert";
       fontColor = buttonColor;
       break;
     default:
-      buttonColor = "colors.primary";
+      buttonColor = "primary";
       fontColor = buttonColor;
       break;
   }
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
-    fontColor = "text.inverse";
-    backgroundColor = "text.disabled";
+    fontColor = "white";
+    backgroundColor = "disabled";
   } else if (type && type.toLowerCase() === "solid") {
-    fontColor = "text.inverse";
+    fontColor = "white";
     backgroundColor = buttonColor;
   }
 
@@ -160,14 +174,14 @@ function Button({
 
 Button.propTypes = {
   id: PropTypes.string,
-  label: PropTypes.string.isRequired,
+  label: PropTypes.string,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   type: PropTypes.string,
   color: PropTypes.oneOf(["success", "warning", "alert", "info", "primary", "secondary"]),
   size: PropTypes.oneOf(["small", "large"]),
   fullWidth: PropTypes.bool,
   disabled: PropTypes.bool,
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
   style: PropTypes.string,
 };
 

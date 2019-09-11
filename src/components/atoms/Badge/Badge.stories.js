@@ -32,7 +32,7 @@ storiesOf("Atoms|Badge", module)
   .addDecorator(withKnobs)
   .add(
     "Documentation",
-    withInfo()(() => (
+    (() => (
       <Grid columns="4">
         <Card>
           <Badge label="1" />

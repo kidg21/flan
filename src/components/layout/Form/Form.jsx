@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import PropTypes from "prop-types";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 import Grid from "layout/Grid";
@@ -10,31 +10,19 @@ const Form = styled.form`
   flex: auto;
   align-content: flex-start;
   padding: 1rem 1.5rem;
-  background-color: ${props =>
-    props.theme[props.bg_light] ? props.theme.divider : props.theme.background.default};
-  ${props =>
-    props.dark &&
-    css`
-      color: ${props => {
+  background-color: ${props =>{ return props.theme.background.default;}}
+  color: ${props => {
         return props.theme.divider;
       }};
-      background-color: ${props => {
-        return props.theme.text.disabled;
-      }};
-      * {
-        color: ${props => {
-          return props.theme.divider;
-        }}; !important;
-      }
-    `}
+    `;
   /* Prototype Content - displays when a Form is empty */
-  &:empty {
-    &:before {
-      ${PlaceholderText}
-      content: "{ Form } \00000A 'Displays a grid of user inputs in responsive columns'";
-    }
-  }
-`;
+//   &:empty {
+//     &:before {
+//       ${PlaceholderText}
+//       content: "{ Form } \00000A 'Displays a grid of user inputs in responsive columns'";
+//     }
+//   }
+// `;
 
 const Header = styled.h3`
   color: ${props => {
@@ -81,7 +69,7 @@ const Label = styled.label`
     display: ${props => (props.isRequired ? "" : "none")};
     content: "*";
     color: ${props => {
-      return props.theme.status.alert;
+      return props.theme.palette.alert;
     }};
     font-size: 1.25rem;
     line-height: 0;
@@ -107,7 +95,9 @@ function HelpText({ helpText, children }) {
 }
 
 const Error = styled(Label)`
-  color: ${colors.alert};
+  color: ${props => {
+    return props.theme.palette.alert;
+  }};
   cursor: initial;
 `;
 function ErrorText({ errorText, children }) {

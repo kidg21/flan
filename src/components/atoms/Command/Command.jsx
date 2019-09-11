@@ -21,7 +21,7 @@ const CommandContainer = styled.a`
     return props.commandSize || "";
   }};
   color: ${props => {
-    return props.theme[props.commandColor] || "";
+    return props.theme.palette[props.commandColor] || "";
   }};
   user-select: none;
   cursor: ${props => {
@@ -33,12 +33,12 @@ const CommandContainer = styled.a`
   transition: all 0.3s ease;
   &:hover {
     color: ${(props) => {
-      return props.theme.status.info;
+      return props.theme.palette.info;
     }};;
   }
   &:active {
     color: ${(props) => {
-      return props.theme.status.info;
+      return props.theme.palette.info;
     }};
   }
 `;
@@ -46,7 +46,9 @@ const CommandContainer = styled.a`
 const CommandName = styled(Title)`
   grid-area: name;
   font-size: inherit;
-  font-color: inherit;
+  font-color: ${props => {
+    return props.theme.palette[props.commandColor] || "";
+  }};
   line-height: inherit;
   overflow: hidden;
   white-space: nowrap;
@@ -54,7 +56,7 @@ const CommandName = styled(Title)`
   margin: 0;
   &:focus {
     border: 1px solid  ${(props) => {
-      return props.theme.colors.primary;
+      return props.theme.palette.primary;
     }};
     outline: none;
   }
@@ -69,7 +71,7 @@ function Command({ id, name, label, icon, align, size, onClick, disabled }) {
   let alignIcon = "'icon name'";
   const justifyCommand = "flex-start";
   let justifyIcon = "flex-start";
-  let commandColor = "colors.primary";
+  let commandColor = "primary";
   let commandSize = "inherit";
   switch (name) {
     case "add to list":

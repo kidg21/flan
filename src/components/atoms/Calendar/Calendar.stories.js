@@ -21,7 +21,7 @@ storiesOf("Atoms|Calendar", module)
   .addDecorator(withKnobs)
   .add(
     "Documentation",
-    withInfo()(() => {
+    (() => {
       return (
         <Grid>
           <Calendar

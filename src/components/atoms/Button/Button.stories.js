@@ -24,7 +24,7 @@ storiesOf("Atoms|Button", module)
   .addDecorator(withKnobs)
   .add(
     "Documentation",
-    withInfo()(() => {
+    (() => {
       return <Button label="Standard Button" />;
     }),
   )

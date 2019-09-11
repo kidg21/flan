@@ -35,7 +35,7 @@ storiesOf("Atoms|Command", module)
   .addDecorator(withKnobs)
   .add(
     "Documentation",
-    withInfo()(() => {
+    (() => {
       return (
         <Command
           name={select(
