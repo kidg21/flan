@@ -7,7 +7,7 @@ import { InputLabel, HelpText, ErrorText } from "layout/Form";
 import Grid from "layout/Grid";
 
 const CheckboxWrapper = styled(Grid)`
-  color: ${props => {
+  color: ${(props) => {
     return props.inputTextColor || "";
   }};
   &:last-child {
@@ -19,11 +19,11 @@ const CheckboxContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 0.75rem;
-  grid-template-areas: ${props => {
+  grid-template-areas: ${(props) => {
     return props.alignInput || "";
   }};
   line-height: initial;
-  color: ${props => {
+  color: ${(props) => {
     return props.inputTextColor || "";
   }};
   &[disabled],
@@ -37,10 +37,10 @@ const CheckboxContainer = styled.div`
 const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   grid-area: input;
   border: 1px solid;
-  background-color: ${props => {
+  background-color: ${(props) => {
     return props.fillColor || colors.white;
   }};
-  border-color: ${props => {
+  border-color: ${(props) => {
     return props.borderColor || colors.grey_40;
   }};
   width: 1rem;
@@ -49,17 +49,17 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   cursor: pointer;
   -webkit-appearance: none;
   &:checked {
-    background-color: ${props => {
-      return props.fillColorChecked || colors.success_light;
-    }};
-    border-color: ${props => {
-      return props.borderColor || colors.success;
-    }};
+    background-color: ${(props) => {
+    return props.fillColorChecked || colors.success_light;
+  }};
+    border-color: ${(props) => {
+    return props.borderColor || colors.success;
+  }};
   }
   &:focus {
-    outline-color: ${props => {
-      return props.outlineColor || colors.success;
-    }};
+    outline-color: ${(props) => {
+    return props.outlineColor || colors.success;
+  }};
   }
 `;
 
@@ -72,12 +72,14 @@ const CheckboxLabel = styled.label`
 `;
 
 const InputGroup = styled(Grid)`
-  grid-template-columns: ${props => {
+  grid-template-columns: ${(props) => {
     return props.setColumns || "";
   }};
 `;
 
-function Checkbox({ align, checked, error, disabled, id, label, onChange }) {
+function Checkbox({
+  align, checked, error, disabled, id, label, onChange,
+}) {
   let inputTextColor;
   let fillColor;
   let borderColor;
@@ -153,42 +155,27 @@ function CheckboxGroup({
   return (
     <CheckboxWrapper
       align={align}
-      columns={columns}
       disabled={isDisabled}
       columns="1"
       gap="small"
       inputTextColor={inputTextColor}
       id={id}
-      onChange={onChange}
     >
       {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
       {helpText ? <HelpText>{helpText}</HelpText> : null}
       <InputGroup columns={columns}>
         {children ||
-          data.map(item => {
+          data.map((item) => {
             return (
-              <>
-                {errorText ? (
-                  <Checkbox
-                    key={item.id}
-                    id={item.id}
-                    label={item.label}
-                    htmlFor={item.id}
-                    align={align}
-                    error
-                    disabled={item.disabled || isDisabled}
-                  />
-                ) : (
-                  <Checkbox
-                    key={item.id}
-                    id={item.id}
-                    label={item.label}
-                    htmlFor={item.id}
-                    align={align}
-                    disabled={item.disabled || isDisabled}
-                  />
-                )}
-              </>
+              <Checkbox
+                align={align}
+                disabled={item.disabled || isDisabled}
+                error={!!errorText}
+                id={item.id}
+                key={item.id}
+                label={item.label}
+                onChange={onChange}
+              />
             );
           })}
       </InputGroup>
