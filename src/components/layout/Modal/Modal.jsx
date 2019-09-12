@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import styled, { keyframes } from "styled-components";
 import { screen } from "Variables";
-import { PlaceholderText } from "helpers/Placeholders";
+import { PlaceholderText } from "helpers";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import { Description } from "base/Typography";

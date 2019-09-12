@@ -29,7 +29,7 @@ export { default as Menu } from "./blocks/Menu";
 export { default as RangeSlider } from "./blocks/RangeSlider";
 export { default as Search } from "./blocks/Search";
 export { default as Table } from "./blocks/Table";
-export { default as Tabs } from "./blocks/Tabs";
+export { default as Tabs, Tab } from "./blocks/Tabs";
 
 // Publicly exported files from 'elements'
 export { default as CardAccordion } from "./elements/CardAccordion";
@@ -58,3 +58,6 @@ export { default as Layout } from "./layout/Layout";
 export { default as Modal } from "./layout/Modal";
 export { default as Page } from "./layout/Page";
 export { default as Panel, PanelSection } from "./layout/Panel";
+
+
+export {screen} from "./base/Variables/Variables.jsx";

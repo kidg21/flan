@@ -19,6 +19,7 @@ function InformationCardBar({
   weight,
   onChange,
   open,
+  onClick,
   ...textProps
 }) {
   const [expanded, setExpanded] = useState(open);
@@ -30,6 +31,12 @@ function InformationCardBar({
   return (
     <Piece id={id}>
       <Bar
+        onClick={(e)=>{
+          toggleOn();
+          if(typeof onClick === "function"){
+            onClick(e);
+          }
+        }}
         padding="2x"
         onClick={toggleOn}
         left={<Title text={title} count={count} weight={weight} {...textProps} />}
@@ -44,6 +51,7 @@ InformationCardBar.propTypes = {
   title: PropTypes.node.isRequired,
   children: PropTypes.node,
   count: PropTypes.number,
+  onClick: PropTypes.func,
   weight: PropTypes.string,
   onChange: PropTypes.func,
   open: PropTypes.bool,
