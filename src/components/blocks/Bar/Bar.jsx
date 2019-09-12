@@ -14,6 +14,9 @@ const BarLayout = styled.div`
   padding: ${(props) => {
     return props.barPadding || "0.5em 1em";
   }};
+  padding-top: ${(props) => {
+    return props.topPadding || "";
+  }};
 `;
 
 const Slot = styled.div`
@@ -64,11 +67,15 @@ function Bar({
 }) {
   let alignContent;
   let alignItems;
+  let topPadding;
   let barPadding;
   let textAlign;
   switch (padding && padding.toLowerCase()) {
     case "2x":
       barPadding = "1em 1.25em";
+      break;
+    case "top":
+      topPadding = "1.5em";
       break;
     case "3x":
       barPadding = "1.5em 1.5em";
@@ -108,6 +115,7 @@ function Bar({
       barPadding={barPadding}
       alignContent={alignContent}
       onClick={onClick}
+      topPadding={topPadding}
       className={className}
     >
       {left ? (
@@ -135,10 +143,10 @@ function Bar({
   );
 
   return typeof disabled === "boolean" ? (
-    <DisabledContext.Provider value={disabled}>
-      {barLayout}
-    </DisabledContext.Provider>
-  ) : barLayout;
+    <DisabledContext.Provider value={disabled}>{barLayout}</DisabledContext.Provider>
+  ) : (
+    barLayout
+  );
 }
 
 Bar.propTypes = {

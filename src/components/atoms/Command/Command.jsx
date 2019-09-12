@@ -21,7 +21,7 @@ const CommandContainer = styled.a`
     return props.commandSize || "";
   }};
   color: ${props => {
-    return props.theme.palette[props.commandColor] || "";
+    return props.theme.palette[props.commandColor] || props.theme.palette.info;
   }};
   user-select: none;
   cursor: ${props => {
@@ -46,7 +46,7 @@ const CommandContainer = styled.a`
 const CommandName = styled(Title)`
   grid-area: name;
   font-size: inherit;
-  font-color: inherit;
+  color: inherit;
   line-height: inherit;
   overflow: hidden;
   white-space: nowrap;
@@ -62,6 +62,7 @@ const CommandName = styled(Title)`
 
 const CommandIcon = styled(Icon)`
   grid-area: icon;
+  margin-top: .15em;
   color: inherit;
 `;
 

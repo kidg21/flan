@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
+import Title from "base/Typography";
 
 const CheckboxWrapper = styled.section`
   display: grid;
@@ -42,6 +43,7 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   }};
   width: 1rem;
   height: 1rem;
+  margin-top: .25em;
   border-radius: 2px;
   cursor: pointer;
   -webkit-appearance: none;
@@ -62,14 +64,9 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   }
 `;
 
-const CheckboxLabel = styled.label`
+const CheckboxLabel = styled(Title)`
   grid-area: label;
   tab-index: 0;
-  user-select: none;
-  font-family: Arial;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: normal;
   cursor: pointer;
 `;
 
@@ -146,7 +143,7 @@ function Checkbox({
         fillColorChecked={fillColorChecked}
         borderColorChecked={borderColorChecked}
       />
-      <CheckboxLabel htmlFor={id}>{label}</CheckboxLabel>
+      <CheckboxLabel size="small" text={label}/>
     </CheckboxContainer>
   );
 }

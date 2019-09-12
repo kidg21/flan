@@ -73,9 +73,6 @@ function Badge({
       case "alert":
         badgeColor = "alert";
         break;
-      case "dark":
-        badgeColor = "black";
-        break;
       default:
         badgeColor = "alert";
         break;

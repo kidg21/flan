@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
+import Title from "base/Typography";
 
 const RadioContainer = styled.div`
   display: grid;
@@ -32,6 +33,7 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
   }};
   width: 1rem;
   height: 1rem;
+  margin-top: 0.15em;
   border-radius: 100%;
   cursor: pointer;
   -webkit-appearance: none;
@@ -52,11 +54,8 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
   }
 `;
 
-const RadioLabel = styled.label`
+const RadioLabel = styled(Title)`
   user-select: none;
-  font-family: Arial;
-  font-size: 13px;
-  font-weight: 400;
   line-height: normal;
   cursor: pointer;
 `;
@@ -79,7 +78,7 @@ function Radio({
         disabled={isDisabled}
         error={error} // input attribute>
       />
-      <RadioLabel htmlFor={id}>{label}</RadioLabel>
+      <RadioLabel size="small" text={label} />
     </RadioContainer>
   );
 }

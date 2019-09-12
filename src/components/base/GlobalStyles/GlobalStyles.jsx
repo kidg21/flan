@@ -31,7 +31,7 @@ const GlobalStyles = createGlobalStyle`
         width: 100%;
         height: 100%;
         font-family: ${fonts.body}; /* Muli */
-        color: ${colors.grey_80};
+        // color: ${colors.grey_80};
         font-weight: 400;
         line-height: 1.45;
         overscroll-behavior: none;
@@ -63,7 +63,7 @@ const GlobalStyles = createGlobalStyle`
 
     /* Default Link Styles */
     a {
-      color: ${colors.anchor};
+      // color: ${colors.anchor};
       line-height: inherit;
       text-decoration: none;
       cursor: pointer;
@@ -76,7 +76,7 @@ const GlobalStyles = createGlobalStyle`
       }
       &:hover,
       &:focus {
-        color: ${colors.anchor_light};
+        // color: ${colors.anchor_light};
       }
       img { border: none; }
       }
@@ -171,10 +171,10 @@ const GlobalStyles = createGlobalStyle`
         font-size: 0.85rem;
         line-height: 1rem;
         letter-spacing: 1px;
-        background-color: ${colors.grey_20};
+        // background-color: ${colors.grey_20};
         margin: 0 .1rem;
         padding: 0.125rem 0.3125rem 0.0625rem;
-        border: 1px solid ${colors.grey_60};
+        // border: 1px solid ${colors.grey_60};
         font-weight: normal;
         color: inherit;
     }
@@ -182,7 +182,7 @@ const GlobalStyles = createGlobalStyle`
 /* Forms */
 /* Placeholder */
     ::placeholder {
-        color: ${colors.grey_60};
+        // color: ${colors.grey_60};
         &:empty {
           &:before {
             ${Skeleton};
@@ -193,8 +193,8 @@ const GlobalStyles = createGlobalStyle`
     }
 
     ::selection {
-        color: ${colors.white};
-        background-color: ${colors.anchor};
+        // color: ${colors.white};
+        // background-color: ${colors.anchor};
     }
 /* Labels */
     label {
@@ -243,7 +243,7 @@ const GlobalStyles = createGlobalStyle`
     select {
       box-sizing: border-box;
       width: 100%;
-      color: ${colors.grey_dark};
+      // color: ${colors.grey_dark};
       font-family: ${fonts.data};
       letter-spacing: 1px;
       border-radius: 5px;
@@ -258,7 +258,7 @@ const GlobalStyles = createGlobalStyle`
         cursor: not-allowed;
         pointer-events: none;
         user-select: none;
-        background-color: ${colors.grey_light};
+        // background-color: ${colors.grey_light};
       }
       ::-webkit-datetime-edit-day-field,
       ::-webkit-datetime-edit-week-field,
@@ -271,8 +271,8 @@ const GlobalStyles = createGlobalStyle`
       ::-webkit-datetime-edit-ampm-field,
       ::-webkit-datetime-edit-text {
         &:focus {
-          color: ${colors.white};
-          background-color: ${colors.success};
+          // color: ${colors.white};
+          // background-color: ${colors.success};
         }
       }
     }

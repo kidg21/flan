@@ -30,13 +30,13 @@ const LinkedIcon = styled.a`
 
 const StyledIcon = styled(FontAwesomeIcon)`
   color: ${(props) => {
-    return props.theme.palette[props.color] || "inherit";
+    return props.theme.palette[props.color] || props.theme.text.primary;
   }};
   border: ${(props) => {
     return props.border ? "2px solid" : "";
   }};
   border-color: ${(props) => {
-    return props.theme.palette[props.border] ? props.theme.text.primary : "";
+    return props.theme.palette[props.border]  ||  "";
   }};
   border-radius: ${(props) => {
     return props.border ? "5px" : "";
@@ -186,9 +186,6 @@ function Icon({
       break;
     case "white":
       color = "white";
-      break;
-    case "black":
-      color = "black";
       break;
     default:
       break;

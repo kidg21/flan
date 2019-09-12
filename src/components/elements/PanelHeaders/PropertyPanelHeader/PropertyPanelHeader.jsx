@@ -13,7 +13,7 @@ function PropertyPanelHeader({
   return (
     <Piece id={id}>
       <Bar
-        padding="3x"
+padding="top"
         left={<Title text={title} weight="bold" />}
         center={
           <IconBlock>
