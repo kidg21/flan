@@ -77,7 +77,7 @@ const InputGroup = styled(Grid)`
   }};
 `;
 
-function Checkbox({ align, checked, error, disabled, id, label }) {
+function Checkbox({ align, checked, error, disabled, id, label, onChange }) {
   let inputTextColor;
   let fillColor;
   let borderColor;
@@ -111,20 +111,21 @@ function Checkbox({ align, checked, error, disabled, id, label }) {
   }
   return (
     <CheckboxContainer
-      inputTextColor={inputTextColor}
+      alignInput={alignInput}
       disabled={isDisabled}
       error={error}
-      alignInput={alignInput}
+      inputTextColor={inputTextColor}
     >
       <CheckboxInput
-        id={id}
-        checked={checked}
-        tabIndex={tabIndex}
-        fillColor={fillColor}
         borderColor={borderColor}
-        outlineColor={outlineColor}
-        fillColorChecked={fillColorChecked}
         borderColorChecked={borderColorChecked}
+        checked={checked}
+        fillColor={fillColor}
+        fillColorChecked={fillColorChecked}
+        id={id}
+        onChange={onChange}
+        outlineColor={outlineColor}
+        tabIndex={tabIndex}
       />
       <CheckboxLabel htmlFor={id}>{label}</CheckboxLabel>
     </CheckboxContainer>
@@ -203,6 +204,7 @@ Checkbox.propTypes = {
   error: PropTypes.bool,
   id: PropTypes.string,
   label: PropTypes.string.isRequired,
+  onChange: PropTypes.func,
 };
 
 Checkbox.defaultProps = {
@@ -211,6 +213,7 @@ Checkbox.defaultProps = {
   disabled: false,
   error: null,
   id: null,
+  onChange: null,
 };
 
 CheckboxGroup.propTypes = {
@@ -222,8 +225,8 @@ CheckboxGroup.propTypes = {
   errorText: PropTypes.string,
   helpText: PropTypes.string,
   id: PropTypes.string,
-  label: PropTypes.string,
   isRequired: PropTypes.bool,
+  label: PropTypes.string,
   onChange: PropTypes.func,
 };
 
@@ -236,8 +239,8 @@ CheckboxGroup.defaultProps = {
   errorText: null,
   helpText: null,
   id: null,
-  label: null,
   isRequired: false,
+  label: null,
   onChange: null,
 };
 
