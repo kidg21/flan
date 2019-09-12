@@ -72,6 +72,12 @@ const RadioLabel = styled.label`
   cursor: pointer;
 `;
 
+const InputGroup = styled(Grid)`
+  grid-template-columns: ${props => {
+    return props.setColumns || "";
+  }};
+`;
+
 function Radio({ align, checked, disabled, error, id, label, name, value }) {
   let inputTextColor;
   let fillColor;
@@ -141,54 +147,52 @@ function RadioGroup({
   if (errorText && !isDisabled) {
     inputTextColor = colors.alert;
   }
-  {
-    label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null;
-  }
-  {
-    helpText ? <HelpText>{helpText}</HelpText> : null;
-  }
   return (
     <RadioWrapper
       align={align}
       columns={columns}
       disabled={isDisabled}
+      columns="1"
+      gap="small"
       inputTextColor={inputTextColor}
       id={id}
       onChange={onChange}
     >
       {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
       {helpText ? <HelpText>{helpText}</HelpText> : null}
-      {children ||
-        data.map(item => {
-          return (
-            <>
-              {errorText ? (
-                <Radio
-                  align={align}
-                  disabled={item.disabled || isDisabled}
-                  error
-                  htmlFor={item.id}
-                  id={item.id}
-                  key={item.id}
-                  label={item.label}
-                  name={item.name}
-                  value={item.value}
-                />
-              ) : (
-                <Radio
-                  align={align}
-                  disabled={item.disabled || isDisabled}
-                  htmlFor={item.id}
-                  id={item.id}
-                  key={item.id}
-                  label={item.label}
-                  name={item.name}
-                  value={item.value}
-                />
-              )}
-            </>
-          );
-        })}
+      <InputGroup columns={columns}>
+        {children ||
+          data.map(item => {
+            return (
+              <>
+                {errorText ? (
+                  <Radio
+                    align={align}
+                    disabled={item.disabled || isDisabled}
+                    error
+                    htmlFor={item.id}
+                    id={item.id}
+                    key={item.id}
+                    label={item.label}
+                    name={item.name}
+                    value={item.value}
+                  />
+                ) : (
+                  <Radio
+                    align={align}
+                    disabled={item.disabled || isDisabled}
+                    htmlFor={item.id}
+                    id={item.id}
+                    key={item.id}
+                    label={item.label}
+                    name={item.name}
+                    value={item.value}
+                  />
+                )}
+              </>
+            );
+          })}
+      </InputGroup>
       {errorText && !isDisabled ? <ErrorText>{errorText}</ErrorText> : null}
     </RadioWrapper>
   );

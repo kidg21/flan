@@ -39,6 +39,7 @@ storiesOf("Blocks|Range Slider", module)
         placeholderMin={text("min label", "Min", "Range Slider")}
         placeholderMax={text("max label", "Max", "Range Slider")}
         isRequired={boolean("required", false, "Range Slider")}
+        helpText={text("help text", "Help text goes here...", "Range Slider")}
         errorText={text("error text", "", "Range Slider")}
         disabled={boolean("disabled", false, "Range Slider")}
       />

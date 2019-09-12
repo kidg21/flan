@@ -18,14 +18,18 @@ const FormHeader = styled(Grid)`
 
 const FormSection = styled.section`
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: 1.25rem;
   margin-bottom: 1rem;
+`;
+
+const SectionTitle = styled(Title)`
+  margin-bottom: 0rem;
 `;
 
 function Section({ children, title }) {
   return (
     <FormSection>
-      {title ? <Title text={title} /> : null}
+      {title ? <SectionTitle text={title} /> : null}
       {children}
     </FormSection>
   );
@@ -70,7 +74,7 @@ function Form({ action, children, columns, description, method, subtitle, title 
           {description ? <Description text={description} /> : null}
         </FormHeader>
       ) : null}
-      <FormInputs setColumns={setColumns} gap="small">
+      <FormInputs setColumns={setColumns} gap="large">
         {children}
       </FormInputs>
     </FormWrapper>

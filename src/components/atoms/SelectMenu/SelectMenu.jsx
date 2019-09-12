@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { fonts, colors, shadows } from "Variables";
+import Grid from "layout/Grid";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
 import Select from "react-select";
 import { Skeleton } from "helpers";
@@ -18,7 +19,7 @@ const selectStyles = {
   // Toggle UI
   control: (styles, { isDisabled, isFocused }) => {
     let bgColor = "";
-    if (!isFocused) bgColor = isDisabled ? colors.grey_20 : colors.white;
+    if (!isFocused) bgColor = isDisabled ? colors.grey_light : colors.white;
 
     return {
       ...styles,
@@ -137,10 +138,7 @@ const selectStyles = {
   },
 };
 
-const SelectMenuContainer = styled.div`
-  display: grid;
-  grid-gap: 0.35rem;
-  align-content: flex-start;
+const SelectMenuContainer = styled(Grid)`
   color: ${(props) => {
     let color = "";
     if (props.error) color = colors.alert;
@@ -229,6 +227,8 @@ function SelectMenu({
       disabled={isDisabled} // input attribute
       error={state.error !== null}
       displayInline={displayInline}
+      columns="1"
+      gap="small"
     >
       {label ? <InputLabel label={label} isRequired={isRequired} /> : null}
       <Select

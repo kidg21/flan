@@ -108,6 +108,7 @@ function Calendar({
     <CalendarContainer
       className={className}
       disabled={isDisabled}
+      columns="1"
       gap="small"
       id={id}
       inputTextColor={inputTextColor}

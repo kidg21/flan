@@ -71,6 +71,12 @@ const CheckboxLabel = styled.label`
   cursor: pointer;
 `;
 
+const InputGroup = styled(Grid)`
+  grid-template-columns: ${props => {
+    return props.setColumns || "";
+  }};
+`;
+
 function Checkbox({ align, checked, error, disabled, id, label }) {
   let inputTextColor;
   let fillColor;
@@ -148,39 +154,43 @@ function CheckboxGroup({
       align={align}
       columns={columns}
       disabled={isDisabled}
+      columns="1"
+      gap="small"
       inputTextColor={inputTextColor}
       id={id}
       onChange={onChange}
     >
       {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
       {helpText ? <HelpText>{helpText}</HelpText> : null}
-      {children ||
-        data.map(item => {
-          return (
-            <>
-              {errorText ? (
-                <Checkbox
-                  key={item.id}
-                  id={item.id}
-                  label={item.label}
-                  htmlFor={item.id}
-                  align={align}
-                  error
-                  disabled={item.disabled || isDisabled}
-                />
-              ) : (
-                <Checkbox
-                  key={item.id}
-                  id={item.id}
-                  label={item.label}
-                  htmlFor={item.id}
-                  align={align}
-                  disabled={item.disabled || isDisabled}
-                />
-              )}
-            </>
-          );
-        })}
+      <InputGroup columns={columns}>
+        {children ||
+          data.map(item => {
+            return (
+              <>
+                {errorText ? (
+                  <Checkbox
+                    key={item.id}
+                    id={item.id}
+                    label={item.label}
+                    htmlFor={item.id}
+                    align={align}
+                    error
+                    disabled={item.disabled || isDisabled}
+                  />
+                ) : (
+                  <Checkbox
+                    key={item.id}
+                    id={item.id}
+                    label={item.label}
+                    htmlFor={item.id}
+                    align={align}
+                    disabled={item.disabled || isDisabled}
+                  />
+                )}
+              </>
+            );
+          })}
+      </InputGroup>
       {errorText && !isDisabled ? <ErrorText>{errorText}</ErrorText> : null}
     </CheckboxWrapper>
   );

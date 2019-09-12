@@ -35,7 +35,13 @@ function RangeSlider({
     inputTextColor = colors.alert;
   }
   return (
-    <RangeContainer id={id} disabled={isDisabled} inputTextColor={inputTextColor} columns="1">
+    <RangeContainer
+      id={id}
+      disabled={isDisabled}
+      inputTextColor={inputTextColor}
+      columns="1"
+      gap="small"
+    >
       {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
       {helpText ? <HelpText>{helpText}</HelpText> : null}
       <Bar

@@ -132,12 +132,12 @@ storiesOf("Blocks|Checkbox Group", module)
           "columns",
           {
             "auto ( default )": "default",
-            one: "1",
-            two: "2",
-            three: "3",
-            four: "4",
-            five: "5",
-            six: "6",
+            "one": "1",
+            "two": "2",
+            "three": "3",
+            "four": "4",
+            "five": "5",
+            "six": "6",
           },
           "default",
           { display: "select" },
@@ -158,7 +158,7 @@ storiesOf("Blocks|Checkbox Group", module)
         )}
         errorText={text("Error Text", "", "Checkbox Group")}
         disabled={boolean("disabled", false, "Checkbox Group")}
-      ></CheckboxGroup>
+      />
     );
   })
   .add("Checkbox Group (responsive)", () => {

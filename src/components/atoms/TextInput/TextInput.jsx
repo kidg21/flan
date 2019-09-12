@@ -4,14 +4,13 @@ import PropTypes from "prop-types";
 import { colors } from "Variables";
 import { DisabledContext } from "States";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
+import Grid from "layout/Grid";
 
-const TextInputContainer = styled.div`
-  display: grid;
-  grid-gap: 0.35rem;
-  align-content: flex-start;
+const TextInputContainer = styled(Grid)`
   color: ${(props) => {
     return props.inputTextColor || "";
   }};
+  width: 100%;
 `;
 
 const Input = styled.input`
@@ -25,7 +24,8 @@ const Input = styled.input`
   caret-color: ${(props) => {
     return props.inputCaretColor || "";
   }};
-  min-height: 2.75rem;
+  width: 100%;
+  min-height: 3.167rem;
   padding: 0.5rem 0.75rem;
   resize: ${(props) => {
     return props.inputResize || "";
@@ -98,6 +98,8 @@ function TextInput({
     <TextInputContainer
       id={id}
       inputTextColor={inputTextColor}
+      gap="small"
+      columns="1"
       className={className}
     >
       {label ? <InputLabel isRequired={isRequired} label={label} /> : null}

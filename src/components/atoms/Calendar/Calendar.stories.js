@@ -5,6 +5,7 @@ import { withInfo } from "@storybook/addon-info";
 import { withKnobs, text, boolean, date, optionsKnob as options } from "@storybook/addon-knobs";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
+import Form, { Section } from "layout/Form";
 import Calendar from "atoms/Calendar";
 import CalendarNotes from "./Calendar.md";
 
@@ -23,7 +24,7 @@ storiesOf("Atoms|Calendar", module)
     "Documentation",
     withInfo()(() => {
       return (
-        <Grid>
+        <Form>
           <Calendar
             type="date"
             label="Date Input Label"
@@ -39,7 +40,7 @@ storiesOf("Atoms|Calendar", module)
             label="Date-Time Input Label"
             helpText="This help text has been passed through a prop!"
           />
-        </Grid>
+        </Form>
       );
     }),
   )
