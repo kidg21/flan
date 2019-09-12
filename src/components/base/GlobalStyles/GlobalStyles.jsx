@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import styledNormalize from "styled-normalize";
-import { Skeleton } from "helpers/Skeleton";
+import { Skeleton } from "helpers";
 // Import variables
 import { colors, fonts, fontSize } from "Variables";
 // Import Fonts

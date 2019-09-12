@@ -65,8 +65,10 @@ function TextInput({
   errorText,
   disabled,
   children,
-  className,
   onChange,
+  autocompleteList,
+  size,
+  className,
 }) {
   let as;
   let inputTextColor;
@@ -88,10 +90,24 @@ function TextInput({
       as = "textarea";
       inputResize = "vertical";
       break;
+    case "search":
+      inputBorderColor = colors.grey_20;
+      inputBorderColorHover = colors.grey_20;
+      placeholderColor = colors.grey_40;
+      inputSelectColor = colors.anchor;
+      break;
     default:
       break;
   }
-
+  // construct datalist element for autocompletes if appropriate props passed in
+  // the autocompleteListId is used to ensure each textinput only draws from its own datalist element
+  let autocompleteDataList = null;
+  let autoCompleteDataListId = null;
+  if (autocompleteList) {
+    autoCompleteDataListId = Dmp.Util.getGuid();
+    const options = autocompleteList.map((item) => { return (<option key={Dmp.Util.getGuid()} value={item}>{item}</option>); });
+    autocompleteDataList = (<datalist id={autoCompleteDataListId}>{options}</datalist>);
+  }
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
 
   return (
@@ -118,7 +134,10 @@ function TextInput({
         inputResize={inputResize}
         inputSelectColor={inputSelectColor}
         onChange={onChange}
+        list={autoCompleteDataListId}
+        size={size} // overriding this while developing so it's easier to see
       />
+      {autocompleteDataList}
       {helpText ? <HelpText>{helpText}</HelpText> : null}
       {errorText && !disabled ? <ErrorText>{errorText}</ErrorText> : null}
       {children}
@@ -136,6 +155,11 @@ TextInput.propTypes = {
   placeholder: PropTypes.string,
   helpText: PropTypes.string,
   errorText: PropTypes.string,
+  state: PropTypes.string,
+  style: PropTypes.string,
+  onChange: PropTypes.func,
+  autocompleteList: PropTypes.arrayOf(PropTypes.string),
+  size: PropTypes.string,
   className: PropTypes.string,
   disabled: PropTypes.bool,
   children: PropTypes.node,
