@@ -5,7 +5,9 @@ import { colors } from "Variables";
 
 const Wrapper = styled.div`
   display: block;
-  padding: 1em;
+  padding: ${(props) => {
+    return props.padding ? "1em" : "";
+  }};
 `;
 
 const BoxContainer = styled.div`
@@ -23,6 +25,7 @@ const BoxContainer = styled.div`
 
   ::-webkit-scrollbar {
     width: 0.5em;
+    height: 0.5em;
   }
 
   ::-webkit-scrollbar-track {
@@ -33,14 +36,27 @@ const BoxContainer = styled.div`
     background-color: ${colors.anchor_light};
     border-radius: 20px;
   }
+
+}
+
+::-webkit-scrollbar-track:horizontal {
+  -webkit-box-shadow: inset 0.5px 0 0px rgba(0, 0, 0, 0.3);
+}
+
+
+::-webkit-scrollbar-thumb:horizontal{
+  background-color: ${colors.anchor_light};
+  border-radius: 20px;
+}
+
 `;
 
 function Container({
-  id, height, width, children,
+  id, height, width, padding, children,
 }) {
   return (
     <Wrapper>
-      <BoxContainer id={id} height={height} width={width}>
+      <BoxContainer id={id} padding={padding} height={height} width={width}>
         {children}
       </BoxContainer>
     </Wrapper>
@@ -49,14 +65,8 @@ function Container({
 
 Container.propTypes = {
   id: PropTypes.string,
-  height: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.number,
-  ]),
-  width: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.number,
-  ]),
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   children: PropTypes.node,
 };
 
@@ -65,6 +75,6 @@ Container.defaultProps = {
   height: null,
   width: null,
   children: null,
-}
+};
 
 export default Container;
