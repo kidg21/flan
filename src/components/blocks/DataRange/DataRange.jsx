@@ -27,6 +27,7 @@ function DataRange({
   label,
   labelMax,
   labelMin,
+  onChange,
   optionsMax,
   optionsMin,
 }) {
@@ -34,6 +35,13 @@ function DataRange({
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (errorText && !isDisabled) {
     inputTextColor = colors.alert;
+  }
+  function onChangeMin(e) {
+    if (onChange) onChange({ min: e.selected || e.target.value });
+  }
+
+  function onChangeMax(e) {
+    if (onChange) onChange({ max: e.selected || e.target.value });
   }
   return (
     <RangeContainer
@@ -49,16 +57,36 @@ function DataRange({
         contentAlign="center"
         left={
           optionsMin ? (
-            <SelectMenu label={labelMin} options={optionsMin} disabled={isDisabled} />
+            <SelectMenu
+              label={labelMin}
+              options={optionsMin}
+              onChangeState={onChangeMin}
+              disabled={isDisabled}
+            />
           ) : (
-            <TextInput label={labelMin} disabled={isDisabled} />
+            <TextInput
+              label={labelMin}
+              options={optionsMin}
+              onChange={onChangeMin}
+              disabled={isDisabled}
+            />
           )
         }
         right={
           optionsMax ? (
-            <SelectMenu label={labelMax} options={optionsMax} disabled={isDisabled} />
+            <SelectMenu
+              label={labelMax}
+              options={optionsMax}
+              onChangeState={onChangeMax}
+              disabled={isDisabled}
+            />
           ) : (
-            <TextInput label={labelMax} disabled={isDisabled} />
+            <TextInput
+              label={labelMax}
+              options={optionsMax}
+              onChange={onChangeMax}
+              disabled={isDisabled}
+            />
           )
         }
       />
@@ -77,6 +105,7 @@ DataRange.propTypes = {
   label: PropTypes.string,
   labelMax: PropTypes.string.isRequired,
   labelMin: PropTypes.string.isRequired,
+  onChange: PropTypes.func,
   optionsMax: PropTypes.map,
   optionsMin: PropTypes.map,
 };
@@ -87,6 +116,7 @@ DataRange.defaultProps = {
   id: null,
   isRequired: false,
   label: null,
+  onChange: null,
   optionsMax: null,
   optionsMin: null,
 };
