@@ -1,46 +1,56 @@
-import React, { useState } from "react";
+/* eslint-disable react/jsx-filename-extension */
+import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
-import Grid from "layout/Grid";
-import Radio from "atoms/Radio";
-import Checkbox from "atoms/Checkbox";
-import TextInput from "atoms/TextInput";
+import { withKnobs, text, boolean, optionsKnob as options } from "@storybook/addon-knobs";
+import Form from "layout/Form";
 import Switch from "atoms/Switch";
+import SwitchNotes from "./Switch.md";
 
 // Colors
 storiesOf("Atoms|Switch", module)
+  .addParameters({
+    info: {
+      text: "Switch info goes here...",
+    },
+    notes: {
+      markdown: SwitchNotes,
+    },
+  })
   .addDecorator(Padding)
-  .addDecorator(withInfo)
-  .add("Documentation", () => {
-    return <Switch />;
-  })
-  .add("Switch", () => {
-    return React.createElement(() => {
-      const [checked, setChecked] = useState(false);
-      return (
-        <Switch
-          checked={checked}
-          onChange={() => {
-            setChecked(!checked);
-          }}
-        />
-      );
-    });
-  })
-  .add("Disabled", () => {
+  .addDecorator(withKnobs)
+  .add(
+    "Documentation",
+    withInfo()(() => {
+      return <Switch label="Switch" />;
+    }),
+  )
+  .add("Knobs", () => {
     return (
-      <Grid>
-        <Switch id="switch_1" label="Label" />
-        <Switch label="Label" disabled />
-        <Checkbox id="disabled" label="Disabled" disabled />
-        <Radio label="Disabled" disabled />
-        <TextInput
-          inputLabel="TextInput ( Disabled )"
-          placeholder="I am just keeping things warm"
-          helpText="This help text has been passed through a prop!"
-          disabled
-        />
-      </Grid>
+      <Switch
+        id="switch1"
+        label={text("label", "Switch Label", "Switch")}
+        align={options(
+          "align",
+          {
+            left: null,
+            right: "right",
+          },
+          null,
+          { display: "select" },
+          "Switch",
+        )}
+        // error={boolean("error", false, "Switch")}
+        disabled={boolean("disabled", false, "Switch")}
+      />
+    );
+  })
+  .add("States", () => {
+    return (
+      <Form>
+        <Switch id="active" label="Active" />
+        <Switch id="disabled" label="Disabled" disabled />
+      </Form>
     );
   });

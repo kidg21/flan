@@ -20,19 +20,19 @@ const Circle = styled.div`
   position: absolute;
   z-index: 1;
   background: ${(props) => {
-    return props.checked ? colors.success_tint : colors.grey_light;
+    return props.checked ? colors.white : colors.grey_light;
   }};
   border: 1px solid;
   border-color: ${(props) => {
     return props.checked ? colors.success : colors.grey_40;
   }};
-  border-radius: 40px;
-  width: 15px;
+  border-radius: 100%;
+  width: 1.4em;
+  height: 1.4em;
   line-height: normal;
-  height: 14px;
   transition: transform 300ms ease-in-out;
   transform: ${(props) => {
-    return props.checked ? "translateX(12px)" : "translateX(0)";
+    return props.checked ? "translateX(100%)" : "translateX(0)";
   }};
   &[disabled],
   &[readonly] {
@@ -43,20 +43,20 @@ const Circle = styled.div`
 `;
 
 const StyledSwitch = styled.div`
-  width: 30px;
   display: block;
-  height: 16px;
+  width: 3.2em;
+  height: 1.8em;
   border: 1px solid;
   border-color: ${(props) => {
     return props.checked ? colors.success : colors.grey_40;
   }};
-  border-radius: 23px;
-  transition: 3000ms ease-in-out;
+  border-radius: 1em;
   background-image: ${(props) => {
     return props.checked
       ? `linear-gradient(${colors.success_tint}, ${colors.success_light})`
-      : colors.white;
+      : `linear-gradient(${colors.white}, ${colors.white})`;
   }};
+  padding: 1px;
   cursor: pointer;
   &[disabled],
   &[readonly] {
@@ -70,7 +70,7 @@ const StyledSwitch = styled.div`
 `;
 
 const ToggleWrapper = styled.label`
-  grid-area: one;
+  grid-area: input;
   &[disabled],
   &[readonly] {
     cursor: not-allowed;
@@ -79,16 +79,6 @@ const ToggleWrapper = styled.label`
 `;
 
 function Toggle({ checked, disabled, onChange }) {
-  // let checkboxColor;
-  // let fillColor;
-  // let borderColor;
-  if (disabled) {
-    // checkboxColor = colors.alert;
-    // fillColor = colors.alert;
-    // borderColor = checkboxColor;
-    // borderColor = colors.grey_40;
-  }
-
   let isChecked = checked;
   let onClick = onChange;
   if (!onClick) {
@@ -98,15 +88,9 @@ function Toggle({ checked, disabled, onChange }) {
       setChecked(!isChecked);
     };
   }
-
   return (
-    <SwitchContainer
-      onClick={onClick}
-    >
-      <StyledSwitch
-        checked={isChecked}
-        disabled={disabled}
-      >
+    <SwitchContainer onClick={onClick}>
+      <StyledSwitch checked={isChecked} disabled={disabled}>
         <Circle checked={isChecked} disabled={disabled} />
       </StyledSwitch>
     </SwitchContainer>
@@ -114,25 +98,26 @@ function Toggle({ checked, disabled, onChange }) {
 }
 
 const ToggleLabel = styled.label`
-  grid-area: two;
+  grid-area: label;
   width: max-content;
   user-select: none;
-  font-family: Arial;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: normal;
+  font-weight: 700;
   cursor: pointer;
 `;
 
 const ToggleContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-areas: "one two";
+  /* grid-template-areas: "one two"; */
+  grid-template-areas: ${(props) => {
+    return props.alignInput || "";
+  }};
   grid-gap: 0.75rem;
-  align-content: flex-start;
   color: ${(props) => {
     return props.checkboxColor || "";
   }};
+  align-items: center;
+  line-height: normal;
   &[disabled],
   &[readonly] {
     cursor: not-allowed;
@@ -142,15 +127,29 @@ const ToggleContainer = styled.div`
 `;
 
 function Switch({
-  checked, disabled, id, isRequired, label, onChange,
+  align, checked, disabled, id, isRequired, label, onChange,
 }) {
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let checkboxColor;
-  if (disabled) {
+  let alignInput;
+  if (isDisabled) {
     checkboxColor = colors.grey_40;
   }
+  switch (align) {
+    case "right":
+      alignInput = "'label input'";
+      break;
+    default:
+      alignInput = "'input label'";
+      break;
+  }
   return (
-    <ToggleContainer isRequired={isRequired} checkboxColor={checkboxColor} disabled={isDisabled}>
+    <ToggleContainer
+      isRequired={isRequired}
+      checkboxColor={checkboxColor}
+      alignInput={alignInput}
+      disabled={isDisabled}
+    >
       <ToggleWrapper disabled={isDisabled}>
         <Toggle id={id} checked={checked} disabled={isDisabled} onChange={onChange} />
       </ToggleWrapper>
@@ -175,6 +174,7 @@ Toggle.defaultProps = {
 };
 
 Switch.propTypes = {
+  align: PropTypes.oneOf(["default", "right"]),
   id: PropTypes.string,
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
@@ -183,6 +183,7 @@ Switch.propTypes = {
   onChange: PropTypes.func,
 };
 Switch.defaultProps = {
+  align: null,
   id: null,
   checked: false,
   disabled: false,
