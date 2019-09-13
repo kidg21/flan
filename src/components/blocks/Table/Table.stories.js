@@ -6,12 +6,13 @@ import { Padding } from "helpers/Display";
 import Icon from "atoms/Icon";
 import DataTable from "./DataTable";
 
-
 const data = [
   { id: "a", name: "Owners/Units", value: "Multiple Owners (2 Units)" },
   { id: "b", name: "Master Parcel No.", value: "387483675638" },
   { id: "c", name: "Zoning", value: "No Zone" },
 ];
+
+
 
 const Columns = ["Name", "Roles", "Action"];
 

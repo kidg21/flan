@@ -40,16 +40,18 @@ const Cell = styled.td`
 function Table({ id, data }) {
   return (
     <TableWrapper id={id}>
-      {data.map(item => (
-        <Row key={item.id}>
-          <Cell>
-            <span>{item.name}</span>
-          </Cell>{" "}
-          <Cell>
-            <span>{item.value}</span>
-          </Cell>
-        </Row>
-      ))}
+      {data.map((item) => {
+return (
+  <Row key={item.id}>
+    <Cell>
+      <span>{item.name}</span>
+    </Cell>{" "}
+    <Cell>
+      <span>{item.value}</span>
+    </Cell>
+  </Row>
+      );
+})}
     </TableWrapper>
   );
 }
