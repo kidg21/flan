@@ -115,6 +115,7 @@ function Toggle({ checked, disabled, onChange }) {
 
 const ToggleLabel = styled.label`
   grid-area: two;
+  width: max-content;
   user-select: none;
   font-family: Arial;
   font-size: 13px;

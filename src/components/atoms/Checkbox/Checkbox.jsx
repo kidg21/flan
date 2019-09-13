@@ -22,6 +22,7 @@ const CheckboxContainer = styled.div`
   grid-template-areas: ${(props) => {
     return props.alignInput || "";
   }};
+  width: max-content;
   line-height: initial;
   color: ${(props) => {
     return props.inputTextColor || "";
