@@ -45,7 +45,7 @@ function RangeSlider({
       {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
       {helpText ? <HelpText>{helpText}</HelpText> : null}
       <Bar
-        padding="0"
+        padding="none"
         contentAlign="center"
         leftWidth="6em"
         rightWidth="6em"

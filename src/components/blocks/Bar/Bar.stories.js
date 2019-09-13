@@ -76,7 +76,7 @@ storiesOf("Blocks|Bar", module)
           padding={options(
             "padding",
             {
-              none: "0",
+              none: "none",
               default: "default",
               "2x": "2x",
               "3x": "3x",

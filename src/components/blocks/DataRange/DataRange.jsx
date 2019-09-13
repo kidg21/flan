@@ -45,7 +45,7 @@ function DataRange({
     >
       {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
       <Bar
-        padding="0"
+        padding="none"
         contentAlign="center"
         left={
           optionsMin ? (
