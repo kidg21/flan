@@ -42,7 +42,7 @@ storiesOf("Work|Blocks/Input Block", module)
           helpText={text("Help Text", "Have you been helped yet?")}
           disabled={boolean("Disabled", false)}
           error={boolean("Error", false)}
-          errorText={text("Error Text", "Stay with my, buddy...we can fix this!")}
+          error={text("Error Text", "Stay with my, buddy...we can fix this!")}
           prefix={text("Prefix", "")}
           postfix={text("Postfix", "")}
           buttonLabel={text("Button Label", "")}
@@ -100,7 +100,7 @@ storiesOf("Work|Blocks/Input Block", module)
         label="Input ( Error )"
         helpText="This help text has been passed through a prop!"
         error
-        errorText="This error text has been passed through a prop!"
+        error="This error text has been passed through a prop!"
       />
     );
   })
@@ -292,7 +292,7 @@ storiesOf("Work|Blocks/Input Block", module).add("The Input Block Block Family",
               label="Input ( Error )"
               helpText="This help text has been passed through a prop!"
               error
-              errorText="This error text has been passed through a prop!"
+              error="This error text has been passed through a prop!"
             />
             <InputBlock
               label="Input ( 2 Inputs )"
