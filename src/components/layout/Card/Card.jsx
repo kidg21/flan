@@ -1,20 +1,25 @@
 import React from "react";
-import styled, { css } from "styled-components";
-import { fonts, colors, shadows } from "Variables";
+import styled from "styled-components";
+import { colors, shadows } from "Variables";
 import Grid from "layout/Grid";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 import PropTypes from "prop-types";
-
-const Wrapper = styled.div`
-  margin: 0.5em;
-`;
 
 const CardPiece = styled.div`
   display: flex;
   flex-direction: column;
   flex: none;
+  padding: ${props => props.padding || ""};
   width: 100%;
+  z-index: ${props => props.header ? 1 : ""};
+  /** TODO: add 'background' and 'interaction' props */
+  /* color: ${props => props.textColor || ""}; */
+  /* background-color: ${props => props.backgroundColor || ""}; */
   background: ${colors.white};
+  &:hover {
+    box-shadow: ${props => (props.hover ? shadows.dropShadow : "")};
+    cursor: ${props => (props.hover ? "pointer" : "")};
+  }
   /* Prototype Content - displays when a Card is empty */
   &:empty {
     &:before {
@@ -28,12 +33,7 @@ const CardPiece = styled.div`
 const CardWrapper = styled(CardPiece)`
   position: relative;
   filter: ${shadows.cardShadow};
-  /* box-shadow: ${shadows.dropShadow}; */
   /* Square off rounded edges of any direct children of Cards */
-  > *,
-  input {
-    border-radius: 0;
-  }
   /* Prototype Content - displays when a Card is empty */
   &:empty {
     &:before {
@@ -57,17 +57,64 @@ const CardListWrapper = styled(Grid)`
   }
 `;
 
-function Piece({ id, children, className }) {
+function Piece({
+  id,
+  hover,
+  children,
+  padding,
+  className,
+  header,
+  /** TODO: add 'background' and 'interaction' props */
+  // type,
+}) {
+  /** TODO: add 'background' and 'interaction' props */
+  // let textColor;
+  // let backgroundColor;
+  // switch (type && type.toLowerCase()) {
+  //   case "info":
+  //     backgroundColor = colors.anchor;
+  //     textColor = colors.anchor_tint;
+  //     break;
+  //   case "success":
+  //     backgroundColor = colors.success;
+  //     textColor = colors.success_tint;
+  //     break;
+  //   case "warning":
+  //     backgroundColor = colors.warning;
+  //     textColor = colors.warning_tint;
+  //     break;
+  //   case "alert":
+  //     backgroundColor = colors.alert;
+  //     textColor = colors.alert_tint;
+  //     break;
+  //   case "inverse":
+  //     backgroundColor = colors.black;
+  //     textColor = colors.grey_light;
+  //     break;
+  //   default:
+  //     backgroundColor = colors.white;
+  //     break;
+  // }
   return (
-    <CardPiece id={id} className={className}>
+    <CardPiece
+      id={id}
+      padding={padding}
+      className={className}
+      header={header}
+      hover={hover}
+
+      /** TODO: add 'background' and 'interaction' props */
+      // textColor={textColor}
+      // backgroundColor={backgroundColor}
+    >
       {children}
     </CardPiece>
   );
 }
 
-function Card({ id, children, className }) {
+function Card({ id, children, padding, className }) {
   return (
-    <CardWrapper id={id} className={className}>
+    <CardWrapper id={id} padding={padding} className={className}>
       {children}
     </CardWrapper>
   );
@@ -84,7 +131,9 @@ function CardList({ id, children, columns, gap, rows }) {
 Piece.propTypes = {
   id: PropTypes.string,
   children: PropTypes.node,
+  padding: PropTypes.node,
   className: PropTypes.string,
+  header: PropTypes.bool,
 };
 Card.propTypes = {
   id: PropTypes.string,
@@ -138,4 +187,4 @@ CardList.propTypes = {
   rows: PropTypes.oneOf(["default (auto)", "[grid-template-rows]"]),
 };
 
-export { Card as default, CardList, Piece, Wrapper };
+export { Card as default, CardList, Piece };

@@ -77,9 +77,9 @@ storiesOf("Blocks|Tabs", module)
             {
               "no icon": null,
               "info": "info",
-              "clone": ["fal", "clone"],
-              "search": ["far", "search"],
-              "pencil": "pencil",
+              "clone": "clone",
+              "search": "search",
+              "draw": "draw",
               "list": "list",
             },
             null,
@@ -94,9 +94,9 @@ storiesOf("Blocks|Tabs", module)
             {
               "no icon": null,
               "info": "info",
-              "clone": ["fal", "clone"],
-              "search": ["far", "search"],
-              "pencil": "pencil",
+              "clone": "clone",
+              "search": "search",
+              "draw": "draw",
               "list": "list",
             },
             null,
@@ -111,9 +111,9 @@ storiesOf("Blocks|Tabs", module)
             {
               "no icon": null,
               "info": "info",
-              "clone": ["fal", "clone"],
-              "search": ["far", "search"],
-              "pencil": "pencil",
+              "clone": "clone",
+              "search": "search",
+              "draw": "draw",
               "list": "list",
             },
             null,
@@ -128,9 +128,9 @@ storiesOf("Blocks|Tabs", module)
             {
               "no icon": null,
               "info": "info",
-              "clone": ["fal", "clone"],
-              "search": ["far", "search"],
-              "pencil": "pencil",
+              "clone": "clone",
+              "search": "search",
+              "draw": "draw",
               "list": "list",
             },
             null,
@@ -145,9 +145,9 @@ storiesOf("Blocks|Tabs", module)
             {
               "no icon": null,
               "info": "info",
-              "clone": ["fal", "clone"],
-              "search": ["far", "search"],
-              "pencil": "pencil",
+              "clone": "clone",
+              "search": "search",
+              "draw": "draw",
               "list": "list",
             },
             null,
@@ -276,9 +276,9 @@ storiesOf("Blocks|Tabs", module)
   .add("Icon Tabs", () => {
     return (
       <Tabs>
-        <Tab icon="user" />
-        <Tab icon="user" />
-        <Tab icon="user" />
+        <Tab tabLabel="Tab" icon="user" />
+        <Tab tabLabel="Tab" icon="user" />
+        <Tab tabLabel="Tab" icon="user" />
       </Tabs>
     );
   });

@@ -113,7 +113,9 @@ storiesOf("Atoms|Command", module)
       );
     }),
   )
-  .add("Skeleton", () => { return <Command />; })
+  .add("Skeleton", () => {
+    return <Command />;
+  })
   .add("Alignment", () => {
     return (
       <Grid columns="3">
@@ -121,14 +123,15 @@ storiesOf("Atoms|Command", module)
           <u>Command Alignment</u>
         </Title>
         <SubTitle>
-          The standard Command is left-aligned with its Icon on the left. Set the
-          &apos;align&apos; prop to &apos;center&apos; in order to center-align the Command placing
-          its Icon atop the label. Set the &apos;align&apos; prop to &apos;right&apos; to
-          right-align the Command with its Icon on the right.
+          The standard Command is left-aligned with its Icon on the left. Set
+          the &apos;align&apos; prop to &apos;center&apos; in order to
+          center-align the Command placing its Icon atop the label. Set the
+          &apos;align&apos; prop to &apos;right&apos; to right-align the Command
+          with its Icon on the right.
         </SubTitle>
-        <Command label="Icon-Left" />
-        <Command label="Icon-Top" align="center" />
-        <Command label="Icon-Right" align="right" />
+        <Command label="Icon-Left" icon="bookmark" />
+        <Command label="Icon-Top" icon="bookmark" align="center" />
+        <Command label="Icon-Right" icon="bookmark" align="right" />
       </Grid>
     );
   })
@@ -140,8 +143,8 @@ storiesOf("Atoms|Command", module)
           <u>Command State</u>
         </Title>
         <SubTitle>
-          The standard Command uses an anchor tag and inherits anchor styling. To
-          disable a Command, use the &apos;disabled&apos; prop.
+          The standard Command uses an anchor tag and inherits anchor styling.
+          To disable a Command, use the &apos;disabled&apos; prop.
         </SubTitle>
         <Command label="Active" />
         <Command label="Disabled" disabled />
@@ -155,8 +158,8 @@ storiesOf("Atoms|Command", module)
           <u>Command Size</u>
         </Title>
         <SubTitle>
-          To override the standard size, set the &apos;size&apos; prop to &apos;small&apos;, or
-          &apos;large&apos;.
+          To override the standard size, set the &apos;size&apos; prop to
+          &apos;small&apos;, or &apos;large&apos;.
         </SubTitle>
         <Command label="Small" size="small" />
         <Command label="Standard" />
@@ -174,9 +177,9 @@ storiesOf("Application|Libraries/", module)
           <u>List of Commands</u>
         </Title>
         <SubTitle>
-          The Command is an interactive UI element that pairs an icon and a label.
-          Use a Command when a user&apos;s action is intended to run a workflow or
-          function.
+          The Command is an interactive UI element that pairs an icon and a
+          label. Use a Command when a user&apos;s action is intended to run a
+          workflow or function.
         </SubTitle>
         <SectionTitle>Standard Commands</SectionTitle>
         <Command name="add to list" />

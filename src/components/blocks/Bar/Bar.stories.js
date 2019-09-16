@@ -5,13 +5,9 @@ import { withInfo } from "@storybook/addon-info";
 import {
   withKnobs,
   text,
-  boolean,
-  radios,
-  select,
   number,
-  button,
-  array,
-  object,
+  boolean,
+  select,
   optionsKnob as options,
 } from "@storybook/addon-knobs";
 import { colors } from "Variables";
@@ -39,15 +35,15 @@ const image = (
     height="50px"
   />
 );
-const shortTitle = <Title title="A Standard Title" />;
+const shortTitle = <Title text="A Standard Title" />;
 const longTitle = (
-  <Title title="A Title So Long That It May Take Up Multiple Lines" />
+  <Title text="A Title So Long That It May Take Up Multiple Lines" />
 );
 const multipleLines = (
   <>
-    <Title title="Towgood, Gary T." />
+    <Title text="Towgood, Gary T." />
     <Title
-      title="3082 Yellowstone Dr. Costa Mesa, CA 92612"
+      text="3082 Yellowstone Dr. Costa Mesa, CA 92612"
       size="small"
       weight="normal"
     />
@@ -71,13 +67,60 @@ storiesOf("Blocks|Bar", module)
     withInfo()(() => (
       <Card>
         <Bar
-          left={<Title title="Left" />}
-          center={<Title title="Center" />}
-          right={<Title title="Right" />}
+          left={<Title text="Left" />}
+          center={<Title text="Center" />}
+          right={<Title text="Right" />}
         />
       </Card>
     )),
   )
+
+  .add("Knobs", () => {
+    return (
+      <Card>
+        <Bar
+          padding={options(
+            "padding",
+            {
+              default: "default",
+              "2x": "2x",
+              "3x": "3x",
+            },
+            "default",
+            { display: "radio" },
+            "Bar",
+          )}
+          contentAlign={options(
+            "align content",
+            {
+              top: "default",
+              center: "center",
+              bottom: "bottom",
+            },
+            "default",
+            { display: "radio" },
+            "Bar",
+          )}
+          centerAlign={options(
+            "center content",
+            {
+              left: "left",
+              center: "default",
+              right: "right",
+            },
+            "default",
+            { display: "radio" },
+            "Bar",
+          )}
+          left={<Title text="Left" />}
+          leftWidth={text("left area width (max 40%)", "", "Bar")}
+          center={multipleLines}
+          right={<Title text="Right" />}
+          rightWidth={text("right area width (max 40%)", "", "Bar")}
+        />
+      </Card>
+    );
+  })
 
   .add("Some Bars", () => (
     <Grid>
@@ -93,9 +136,9 @@ storiesOf("Blocks|Bar", module)
           left={<Command />}
           center={
             <>
-              <Title title="Towgood, Gary T." />
+              <Title text="Towgood, Gary T." />
               <Title
-                title="3082 Yellowstone Dr. Costa Mesa, CA 92612"
+                text="3082 Yellowstone Dr. Costa Mesa, CA 92612"
                 size="small"
                 weight="normal"
               />
@@ -147,9 +190,9 @@ storiesOf("Blocks|Bar", module)
       <Section>One Icon per section</Section>
       <Card>
         <Bar
-          left={<Icon icon="coffee" />}
-          center={<Icon icon="coffee" />}
-          right={<Icon icon="coffee" />}
+          left={<Icon icon="circle_solid" />}
+          center={<Icon icon="circle_solid" />}
+          right={<Icon icon="circle_solid" />}
         />
       </Card>
 
@@ -158,9 +201,9 @@ storiesOf("Blocks|Bar", module)
         <Bar
           left={
             <IconBlock>
-              <Icon icon="circle" />
-              <Icon icon="circle" anchor />
-              <Icon icon="circle" success />
+              <Icon icon="circle_solid" />
+              <Icon icon="circle_solid" anchor />
+              <Icon icon="circle_solid" success />
             </IconBlock>
           }
         />
@@ -169,19 +212,20 @@ storiesOf("Blocks|Bar", module)
       <Section>Icon Block / Text / Icon Block</Section>
       <Card>
         <Bar
+          contentAlign="center"
           left={
             <IconBlock>
-              <Icon icon="circle" />
-              <Icon icon="circle" anchor />
-              <Icon icon="circle" success />
+              <Icon icon="circle_solid" />
+              <Icon icon="circle_solid" anchor />
+              <Icon icon="circle_solid" success />
             </IconBlock>
           }
           center={longTitle}
           right={
             <IconBlock>
-              <Icon icon="circle" />
-              <Icon icon="circle" anchor />
-              <Icon icon="circle" success />
+              <Icon icon="circle_solid" />
+              <Icon icon="circle_solid" anchor />
+              <Icon icon="circle_solid" success />
             </IconBlock>
           }
         />
@@ -190,23 +234,25 @@ storiesOf("Blocks|Bar", module)
       <Section>Text / Icon Block</Section>
       <Card>
         <Bar
+          contentAlign="center"
           left={shortTitle}
           right={
             <IconBlock>
-              <Icon icon="circle" />
-              <Icon icon="circle" anchor />
-              <Icon icon="circle" success />
+              <Icon icon="circle_solid" />
+              <Icon icon="circle_solid" anchor />
+              <Icon icon="circle_solid" success />
             </IconBlock>
           }
         />
       </Card>
       <Card>
         <Bar
+          contentAlign="center"
           left={
             <IconBlock>
-              <Icon icon="circle" />
-              <Icon icon="circle" anchor />
-              <Icon icon="circle" success />
+              <Icon icon="circle_solid" />
+              <Icon icon="circle_solid" anchor />
+              <Icon icon="circle_solid" success />
             </IconBlock>
           }
           right={shortTitle}
@@ -221,10 +267,10 @@ storiesOf("Blocks|Bar", module)
         <Bar left={image} right={multipleLines} />
       </Card>
       <Card>
-        <Bar center={multipleLines} right={image} />
+        <Bar center={multipleLines} centerAlign="left" right={image} />
       </Card>
       <Card>
-        <Bar left={image} center={multipleLines} />
+        <Bar left={image} center={multipleLines} centerAlign="right" />
       </Card>
     </Grid>
   ));

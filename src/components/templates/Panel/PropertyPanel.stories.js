@@ -2,11 +2,15 @@ import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import PropertyPanelHeader from "elements/PanelHeaders/PropertyPanelHeader";
 import Table from "blocks/Table";
-import { Wrapper } from "layout/Card";
+import styled from "styled-components";
 import InformationCardBar from "elements/CardBars/InformationCardBar";
 import Accordion from "blocks/Accordion";
 import Panel, { PanelSection } from "layout/Panel";
 import PropertyListCard from "elements/ListCards/PropertyListCard";
+
+const Wrapper = styled.div`
+  padding: 1em;
+`;
 
 const lotData = [
   { id: "a", name: "Land Use", value: "Commercial" },

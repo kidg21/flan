@@ -12,10 +12,10 @@ export const colors = {
   grey_dark: "hsl(34, 5%, 28%)",
   grey_dark_glass: "hsla(34, 5%, 28%, 0.85)",
   black: "hsl(34, 5%, 12%)",
-  anchor: "hsl(201, 56%, 60%)",
-  anchor_tint: "hsl(201, 56%, 80%)",
-  anchor_light: "hsl(201, 56%, 70%)",
-  anchor_dark: "hsl(201, 56%, 52%)",
+  anchor: "hsl(204, 61%, 43%)",
+  anchor_tint: "hsl(204, 61%, 83%)",
+  anchor_light: "hsl(204, 61%, 73%)",
+  anchor_dark: "hsl(204, 61%, 53%)",
   success: "hsl(90, 46%, 46%)",
   success_tint: "hsl(90, 46%, 90%)",
   success_light: "hsl(90, 46%, 59%)",
@@ -46,15 +46,14 @@ export const Lighten = css`
 // Typefaces
 export const fonts = {
   headline: "Muli, Arial, sans-serif",
-  // headline: "Lato, sans-serif",
   body: "Muli, Arial, sans-serif",
-  // body: "Lato, sans-serif",
   data: "Muli, Arial, sans-serif",
+  numbers: "Lato, sans-serif",
 };
 
 // Sizes for typography scale
 export const fontSize = {
-  base: "14px",
+  base: "12px",
   // paragraph: '1rem',
   // h1: '2.75rem',
   // h2: '2.3125rem',
@@ -75,14 +74,12 @@ export const fontSize = {
 export const shadows = {
   cardShadow:
     "drop-shadow(0 0 1px hsl(34, 5%, 72%)) drop-shadow(0.25rem 0.25rem 0.25rem hsla(34, 5%, 58%, 0.333333));",
-  dropShadow:
-    "hsl(34, 5%, 36%) 0rem 0rem 1px, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem;",
+  dropShadow: "hsl(34, 5%, 36%) 0rem 0rem 1px, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem;",
   panelSectionShadow:
     "hsl(34, 5%, 88%)  0rem 0rem 1px, hsla(34, 5%, 92%, 0.333333) 0 0rem 0.5rem 0.25rem;",
   lightBorderShadow:
     "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem",
-  lightBorderInner:
-    "hsl(34, 5%, 72%) -1px -1px 0 0 inset, hsl(34, 5%, 72%) 1px 1px 0 0 inset",
+  lightBorderInner: "hsl(34, 5%, 72%) -1px -1px 0 0 inset, hsl(34, 5%, 72%) 1px 1px 0 0 inset",
   border20: "hsl(34, 5%, 95%) 0px 0px 0px 1px",
   border40: "hsl(34, 5%, 88%) 0px 0px 0px 1px",
   checkedShadow:

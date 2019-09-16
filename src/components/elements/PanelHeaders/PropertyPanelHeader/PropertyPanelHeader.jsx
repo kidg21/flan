@@ -1,50 +1,44 @@
 import React from "react";
-import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import IconBlock from "blocks/IconBlock";
 import Bar from "blocks/Bar";
-import { colors, shadows } from "Variables";
-import Card, { Piece } from "layout/Card";
+import { Piece } from "layout/Card";
 import Title from "base/Typography";
+import Menu from "blocks/Menu";
 
-const PropertyContainer = styled.div`
-  display: flex;
-`;
-
-const ApnSpan = styled.span`
-  font-size: 0.938em;
-  font-weight: 400;
-  color: ${props => (props.badgeBG ? colors.white : colors.grey_60)};
-`;
-
-const Location = styled.div`
-  display: inline-block;
-  padding-right: 1em;
-`;
-
-function PropertyPanelHeader({ id, title, APN }) {
+function PropertyPanelHeader({
+  id, title, menuData, onClick,
+}) {
   return (
     <Piece id={id}>
       <Bar
-        left={
-          <PropertyContainer>
-            <Location>
-              <Title title={title} weight="bold" />
-              <ApnSpan>APN: {APN}</ApnSpan>
-            </Location>
-            <Icon icon={["fal", "directions"]} size="2x" type="info" onClick />
-          </PropertyContainer>
+        padding="3x"
+        left={<Title text={title} weight="bold" />}
+        center={
+          <IconBlock>
+            <Icon icon="directions" size="2x" type="info" onClick={onClick} />
+          </IconBlock>
         }
-        right={<Icon icon={["far", "ellipsis-v"]} size="lg" />}
+        right={<Menu menuData={menuData} position="bottomLeft" type="edit" />}
       />
     </Piece>
   );
 }
+
 PropertyPanelHeader.propTypes = {
   id: PropTypes.string,
-  title: PropTypes.any.isRequired,
+  title: PropTypes.string.isRequired,
   APN: PropTypes.string,
+  menuData: PropTypes.node,
   onClick: PropTypes.func,
 };
+
+PropertyPanelHeader.defaultProps = {
+  id: null,
+  APN: null,
+  menuData: null,
+  onClick: null,
+};
+
 export default PropertyPanelHeader;

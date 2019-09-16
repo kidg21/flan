@@ -48,7 +48,7 @@ storiesOf("Work|Blocks/InputBlock", module)
         helpText={text("Help Text", "Have you been helped yet?")}
         disabled={boolean("Disabled", false)}
         error={boolean("Error", false)}
-        errorMessage={text(
+        errorText={text(
           "Error Text",
           "Stay with my, buddy...we can fix this!",
         )}
@@ -99,7 +99,7 @@ storiesOf("Work|Blocks/InputBlock", module)
       inputLabel="Input ( Error )"
       helpText="This help text has been passed through a prop!"
       error={true}
-      errorMessage="This error text has been passed through a prop!"
+      errorText="This error text has been passed through a prop!"
     />
   ))
   // InputBlock ( Round )
@@ -141,7 +141,7 @@ storiesOf("Work|Blocks/InputBlock", module)
   .add("InputBlock ( Prefix Icon )", () => (
     <InputBlock
       inputLabel="Input ( Prefix Icon )"
-      prefix={<Icon icon={["fas", "user"]} size="lg" fixedWidth />}
+      prefix={<Icon icon="user" size="lg" fixedWidth />}
       placeholder="This help text has been passed through a prop!"
       helpText="This help text has been passed through a prop!"
     />
@@ -266,7 +266,7 @@ storiesOf("Work|Blocks/InputBlock", module).add(
               inputLabel="Input ( Error )"
               helpText="This help text has been passed through a prop!"
               error={true}
-              errorMessage="This error text has been passed through a prop!"
+              errorText="This error text has been passed through a prop!"
             />
             <InputBlock
               inputLabel="Input ( 2 Inputs )"
@@ -288,7 +288,7 @@ storiesOf("Work|Blocks/InputBlock", module).add(
             />
             <InputBlock
               inputLabel="Input ( Prefix Icon )"
-              prefix={<Icon icon={["fas", "user"]} size="lg" fixedWidth />}
+              prefix={<Icon icon="user" size="lg" fixedWidth />}
               placeholder="This help text has been passed through a prop!"
               helpText="This help text has been passed through a prop!"
             />

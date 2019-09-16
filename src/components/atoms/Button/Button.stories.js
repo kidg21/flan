@@ -30,7 +30,7 @@ storiesOf("Atoms|Button", module)
   .add(
     "Documentation",
     withInfo()(() => {
-      return <Button buttonLabel="Standard Button" />;
+      return <Button label="Standard Button" />;
     }),
   )
   .add("Skeleton", () => {
@@ -44,15 +44,15 @@ storiesOf("Atoms|Button", module)
           {
             "no icon": null,
             user: "user",
-            "angle down": ["far", "angle-down"],
-            bookmark: ["far", "bookmark"],
+            down: "down",
+            bookmark: "bookmark_solid",
             plus: "plus",
             print: "print",
           },
           null,
           "Button",
         )}
-        buttonLabel={text("button label", "Button Label", "Button")}
+        label={text("button label", "Button Label", "Button")}
         color={options(
           "color",
           {
@@ -95,29 +95,29 @@ storiesOf("Atoms|Button", module)
     return (
       <>
         <Grid>
-          <Button buttonLabel="Standard Button" />
-          <Button buttonLabel="Solid Button" type="solid" />
-          <Button buttonLabel="Success Button" color="success" />
+          <Button label="Standard Button" />
+          <Button label="Solid Button" type="solid" />
+          <Button label="Success Button" color="success" />
           <Button
-            buttonLabel="Solid Success Button"
+            label="Solid Success Button"
             type="solid"
             color="success"
           />
-          <Button buttonLabel="Warning Button" color="warning" />
+          <Button label="Warning Button" color="warning" />
           <Button
-            buttonLabel="Solid Warning Button"
+            label="Solid Warning Button"
             type="solid"
             color="warning"
           />
-          <Button buttonLabel="Alert Button" color="alert" />
-          <Button buttonLabel="Solid Alert Button" type="solid" color="alert" />
-          <Button buttonLabel="Small Button" size="small" />
-          <Button buttonLabel="Large Button" size="large" />
-          <Button buttonLabel="Disabled Button" disabled />
-          <Button buttonLabel="Icon Button" icon={["fas", "user"]} />
+          <Button label="Alert Button" color="alert" />
+          <Button label="Solid Alert Button" type="solid" color="alert" />
+          <Button label="Small Button" size="small" />
+          <Button label="Large Button" size="large" />
+          <Button label="Disabled Button" disabled />
+          <Button label="Icon Button" icon="user" />
           <Button
-            buttonLabel="Large / Alert / Icon Button"
-            icon={["fas", "user"]}
+            label="Large / Alert / Icon Button"
+            icon="user"
             size="large"
             type="solid"
             color="alert"

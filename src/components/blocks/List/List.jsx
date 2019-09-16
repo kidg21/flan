@@ -11,12 +11,14 @@ const ListWrapper = styled.ul`
   flex-direction: column;
   list-style: none;
   font-weight: 600;
+  tabindex: 0;
 `;
 
 const ListTitle = styled(Title)`
   color: ${colors.grey_dark};
   border-bottom: 1px solid ${colors.grey_20};
   padding: 0.75em 1em;
+  tabindex: -1;
 `;
 
 const ListItemWrapper = styled.li`
@@ -52,14 +54,10 @@ const ListItemWrapper = styled.li`
   }
 `;
 
-const Item = styled(Bar)`
-  align-items: center;
-`;
-
 function List({ id, title, children, interactive }) {
   return (
     <InteractiveContext.Provider value={interactive}>
-      {title ? <ListTitle title={title} weight="bold" /> : null}
+      {title ? <ListTitle text={title} weight="bold" /> : null}
       <ListWrapper id={id}>{children}</ListWrapper>
     </InteractiveContext.Provider>
   );
@@ -72,14 +70,14 @@ function ListItem({
   children,
   state,
   type,
+  onClick,
   disabled,
   interactive,
-  onClick,
+  rightWidth,
 }) {
   let itemColor;
   let itemBGColor;
   let itemBorder;
-  // let userSelect;
   switch (state) {
     case "active":
       itemColor = colors.success;
@@ -121,24 +119,19 @@ function ListItem({
       itemBorder={itemBorder}
       onClick={onClick}
       disabled={disabled}
-      interactive={
-        typeof interactive === "boolean"
-          ? interactive
-          : useContext(InteractiveContext)
-      }
+      interactive={typeof interactive === "boolean" ? interactive : useContext(InteractiveContext)}
     >
       <DisabledContext.Provider value={disabled}>
-        <Item
+        <Bar
+          contentAlign="center"
           left={
             <>
-              {<Title title={label} />}
-              {description ? (
-                <Title title={description} size="small" weight="light" />
-              ) : null}
+              {<Title text={label} />}
+              {description ? <Title text={description} size="small" weight="light" /> : null}
             </>
           }
           right={children}
-          slotWidthRight={(children && children.props.width) || ""}
+          rightWidth={(children && children.props.width) || ""}
         />
       </DisabledContext.Provider>
     </ListItemWrapper>

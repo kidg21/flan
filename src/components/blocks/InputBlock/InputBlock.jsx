@@ -19,20 +19,20 @@ const TextInputContainer = styled.div`
         ? "repeat(2, 1fr)"
         : /* Prefix Label (conditionals) */
         props.prefix
-          ? props.postfix || props.buttonLabel
+          ? props.postfix || props.label
             ? "minmax(auto, auto) minmax(auto, 3fr) minmax(auto, auto)"
             : props.postSelect
               ? "minmax(auto, auto) minmax(auto, 3fr) minmax(auto, 2fr)"
               : "minmax(auto, auto) minmax(auto, 3fr)"
           : /* Postfix Select (conditionals) */
           props.preSelect
-            ? props.postfix || props.buttonLabel
+            ? props.postfix || props.label
               ? "minmax(auto, 2fr) minmax(auto, 3fr) minmax(auto, auto)"
               : props.postSelect
                 ? "minmax(auto, 2fr) minmax(auto, 3fr) minmax(auto, 2fr)"
                 : "minmax(auto, 2fr) minmax(auto, 3fr)"
             : /* Postfix Label */
-            props.postfix || props.buttonLabel
+            props.postfix || props.label
               ? "minmax(auto, 3fr) minmax(auto, auto)"
               : /* Postfix Select */
               props.postSelect
@@ -137,7 +137,7 @@ function InputBlock({
         postfix={postfix}
         preSelect={preSelect}
         postSelect={postSelect}
-        buttonLabel={buttonLabel}
+        label={buttonLabel}
         twoInputs={twoInputs} // 2 inputs in a row
         threeInputs={threeInputs} // 3 inputs in a row
         style={style}
@@ -200,7 +200,7 @@ function InputBlock({
         {postfix ? <PrePostLabel>{postfix}</PrePostLabel> : null}
         {/* Postfix Button (conditional) */}
         {buttonLabel ? (
-          <Button buttonLabel={buttonLabel} isPrimary />
+          <Button label={buttonLabel} isPrimary />
         ) : null}
         {/* Postfix Select Menu (conditional) */}
         {postSelect ? (

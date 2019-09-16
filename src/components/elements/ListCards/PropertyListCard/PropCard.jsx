@@ -4,27 +4,22 @@ import PropTypes from "prop-types";
 import Card from "layout/Card";
 import Command from "atoms/Command";
 import Bar from "blocks/Bar";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
-const image = (
-  <img
-    src="https://images.pexels.com/photos/802112/pexels-photo-802112.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-    width="120px"
-    height="90px"
-  />
-);
 
 const Titles = styled.div`
 display: inline-block'
 `;
 
-function PropCard({ id, address, landUse, price }) {
+function PropCard({
+  id, address, landUse, image, price,
+}) {
   return (
     <Card id={id}>
       <Bar
         left={
           <Titles>
-            <Title title={address} />
+            <Title text={address} />
             <p>
               {landUse} <br />
               {price}
@@ -41,8 +36,17 @@ function PropCard({ id, address, landUse, price }) {
 PropCard.propTypes = {
   id: PropTypes.string,
   address: PropTypes.string,
+  image: PropTypes.node,
   landUse: PropTypes.string,
   price: PropTypes.string,
+};
+
+PropCard.defaultProps = {
+  id: null,
+  address: null,
+  image: null,
+  landUse: null,
+  price: null,
 };
 
 export default PropCard;

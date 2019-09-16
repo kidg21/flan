@@ -1,20 +1,14 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import {
   withKnobs,
   text,
-  boolean,
-  radios,
-  select,
-  number,
-  button,
-  files,
-  optionsKnob as options
+  optionsKnob as options,
 } from "@storybook/addon-knobs";
 import Button from "atoms/Button";
 import Panel, { PanelSection } from "layout/Panel";
-import ModernExterior_1 from "images/residential/modern exterior 1.jpg";
+import ModernExterior1 from "images/residential/modern exterior 1.jpg";
 import Banner from "blocks/Banner";
 import Modal from "layout/Modal";
 import ModalNotes from "./Modal.md";
@@ -22,30 +16,30 @@ import ModalNotes from "./Modal.md";
 storiesOf("Layout|Modal", module)
   .addParameters({
     info: {
-      text: "Modal info goes here..."
+      text: "Modal info goes here...",
     },
     notes: {
-      markdown: ModalNotes
-    }
+      markdown: ModalNotes,
+    },
   })
   .add(
     "Documentation",
-    withInfo()(() =>
-      React.createElement(() => {
+    withInfo()(() => {
+      return React.createElement(() => {
         const [visible, setVisible] = useState(false);
         const [transition, setTransition] = useState(true);
-        const handleOpen = event => {
+        const handleOpen = () => {
           setVisible(true);
           setTransition(true);
         };
-        const handleClose = event => {
+        const handleClose = () => {
           setTransition(false);
           setTimeout(() => {
             setVisible(false);
           }, 500);
         };
         return (
-          <Fragment>
+          <>
             <Modal
               visible={visible}
               onClose={handleClose}
@@ -59,27 +53,27 @@ storiesOf("Layout|Modal", module)
               />
             </Modal>
             <Button
-              buttonLabel="Open Modal"
+              label="Open Modal"
               style={{ marginLeft: "3rem" }}
               onClick={handleOpen}
             />
-          </Fragment>
+          </>
         );
-      })
-    )
+      });
+    }),
   );
 
 storiesOf("Layout|Modal", module)
   .addDecorator(withKnobs)
-  .add("Knobs", () =>
-    React.createElement(() => {
+  .add("Knobs", () => {
+    return React.createElement(() => {
       const [visible, setVisible] = useState(false);
       const [transition, setTransition] = useState(true);
-      const handleOpen = event => {
+      const handleOpen = () => {
         setVisible(true);
         setTransition(true);
       };
-      const handleClose = event => {
+      const handleClose = () => {
         setTransition(false);
         setTimeout(() => {
           setVisible(false);
@@ -87,36 +81,36 @@ storiesOf("Layout|Modal", module)
       };
       const buttonStyle = { margin: "10vh 30vw" };
       return (
-        <Fragment>
+        <>
           <Modal
             type={options(
               "Modal Type",
               {
                 default: "default",
                 text: "text",
-                image: "image"
+                image: "image",
               },
               "default",
               { display: "select" },
-              "Modal"
+              "Modal",
             )}
             text={text(
               "Text",
               "This is a very special message just for you...",
-              "Modal"
+              "Modal",
             )}
-            image={text("Image URL", ModernExterior_1, "Modal")}
+            image={text("Image URL", ModernExterior1, "Modal")}
             align={options(
               "Alignment",
               {
                 "default by type": "default",
-                top: "top",
-                center: "center",
-                bottom: "bottom"
+                "top": "top",
+                "center": "center",
+                "bottom": "bottom",
               },
               "default",
               { display: "radio" },
-              "Modal"
+              "Modal",
             )}
             visible={visible}
             onClose={handleClose}
@@ -128,7 +122,7 @@ storiesOf("Layout|Modal", module)
               title={text(
                 "Status Message",
                 "This is a Standard notification telling you stuff.",
-                "Modal"
+                "Modal",
               )}
               onClose={handleClose}
             />
@@ -136,26 +130,26 @@ storiesOf("Layout|Modal", module)
           <Panel>
             <PanelSection body>
               <Button
-                buttonLabel="Open Modal"
+                label="Open Modal"
                 onClick={handleOpen}
                 style={buttonStyle}
               />
             </PanelSection>
           </Panel>
-        </Fragment>
+        </>
       );
-    })
-  );
+    });
+  });
 storiesOf("Layout|Modal", module)
-  .add("Default Modal", () =>
-    React.createElement(() => {
+  .add("Default Modal", () => {
+    return React.createElement(() => {
       const [visible, setVisible] = useState(false);
       const [transition, setTransition] = useState(true);
-      const handleOpen = event => {
+      const handleOpen = () => {
         setVisible(true);
         setTransition(true);
       };
-      const handleClose = event => {
+      const handleClose = () => {
         setTransition(false);
         setTimeout(() => {
           setVisible(false);
@@ -163,7 +157,7 @@ storiesOf("Layout|Modal", module)
       };
       const buttonStyle = { margin: "10vh 30vw" };
       return (
-        <Fragment>
+        <>
           <Modal
             visible={visible}
             onClose={handleClose}
@@ -179,25 +173,25 @@ storiesOf("Layout|Modal", module)
           <Panel>
             <PanelSection body>
               <Button
-                buttonLabel="Default Modal"
+                label="Default Modal"
                 onClick={handleOpen}
                 style={buttonStyle}
               />
             </PanelSection>
           </Panel>
-        </Fragment>
+        </>
       );
-    })
-  )
-  .add("Text Modal", () =>
-    React.createElement(() => {
+    });
+  })
+  .add("Text Modal", () => {
+    return React.createElement(() => {
       const [visible, setVisible] = useState(false);
       const [transition, setTransition] = useState(true);
-      const handleOpen = event => {
+      const handleOpen = () => {
         setVisible(true);
         setTransition(true);
       };
-      const handleClose = event => {
+      const handleClose = () => {
         setTransition(false);
         setTimeout(() => {
           setVisible(false);
@@ -205,7 +199,7 @@ storiesOf("Layout|Modal", module)
       };
       const buttonStyle = { margin: "10vh 30vw" };
       return (
-        <Fragment>
+        <>
           <Modal
             type="text"
             text="This is a very special message just for you..."
@@ -218,25 +212,25 @@ storiesOf("Layout|Modal", module)
           <Panel>
             <PanelSection body>
               <Button
-                buttonLabel="Text Modal"
+                label="Text Modal"
                 onClick={handleOpen}
                 style={buttonStyle}
               />
             </PanelSection>
           </Panel>
-        </Fragment>
+        </>
       );
-    })
-  )
-  .add("Image Modal", () =>
-    React.createElement(() => {
+    });
+  })
+  .add("Image Modal", () => {
+    return React.createElement(() => {
       const [visible, setVisible] = useState(false);
       const [transition, setTransition] = useState(true);
-      const handleOpen = event => {
+      const handleOpen = () => {
         setVisible(true);
         setTransition(true);
       };
-      const handleClose = event => {
+      const handleClose = () => {
         setTransition(false);
         setTimeout(() => {
           setVisible(false);
@@ -244,10 +238,10 @@ storiesOf("Layout|Modal", module)
       };
       const buttonStyle = { margin: "10vh 30vw" };
       return (
-        <Fragment>
+        <>
           <Modal
             type="image"
-            image={ModernExterior_1}
+            image={ModernExterior1}
             visible={visible}
             onClose={handleClose}
             opacity={transition}
@@ -257,13 +251,13 @@ storiesOf("Layout|Modal", module)
           <Panel>
             <PanelSection body>
               <Button
-                buttonLabel="Image Modal"
+                label="Image Modal"
                 onClick={handleOpen}
                 style={buttonStyle}
               />
             </PanelSection>
           </Panel>
-        </Fragment>
+        </>
       );
-    })
-  );
+    });
+  });
