@@ -117,7 +117,6 @@ storiesOf("Layout|Form", module).add("Form Layout", () => {
               label="Checkbox Group Label"
               data={shortBoxes}
               helpText="This help text has been passed through a prop!"
-              // errorText="This help text has been passed through a prop!"
               columns="2"
             />
             <CheckboxGroup data={longBoxes} columns="1" />
@@ -135,7 +134,6 @@ storiesOf("Layout|Form", module).add("Form Layout", () => {
               label="Radio Group Label"
               data={shortRadios}
               helpText="This help text has been passed through a prop!"
-              // errorText="This help text has been passed through a prop!"
               columns="2"
             />
             <RadioGroup data={longRadios} columns="1" />

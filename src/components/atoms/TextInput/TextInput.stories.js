@@ -113,7 +113,7 @@ storiesOf("Atoms|Text Input", module).add("The Text Input Family", () => {
               label="Text Input ( Error )"
               placeholder="I am just keeping things warm"
               helpText="This help text has been passed through a prop!"
-              errorText="This error text has been passed through a prop!"
+              error="This error text has been passed through a prop!"
             />
           </Section>
         </Form>

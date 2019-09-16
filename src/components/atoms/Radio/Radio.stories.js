@@ -176,7 +176,6 @@ storiesOf("Blocks|Radio Group", module)
           { display: "select" },
           "Radio Group",
         )}
-        // errorText={text("Error Text", "", "Radio Group")}
         error={
           boolean("error", false, "Radio Group") &&
           text("error text", "Error message...", "Radio Group")

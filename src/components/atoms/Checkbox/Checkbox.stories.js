@@ -156,7 +156,6 @@ storiesOf("Blocks|Checkbox Group", module)
           { display: "select" },
           "Checkbox Group",
         )}
-        // errorText={text("Error Text", "", "Checkbox Group")}
         error={
           boolean("error", false, "Checkbox Group") &&
           text("error text", "Error message...", "Checkbox Group")

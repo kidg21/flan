@@ -152,11 +152,11 @@ const Error = styled(Label)`
     background-color: ${colors.alert};
   }
 `;
-function ErrorText({ errorText, children }) {
-  return <Error>{errorText || children}</Error>;
+function ErrorText({ error, children }) {
+  return <Error>{error || children}</Error>;
 }
 ErrorText.propTypes = {
-  errorText: PropTypes.string.isRequired,
+  error: PropTypes.string.isRequired,
 };
 
 export { Form as default, Section, InputLabel, HelpText, ErrorText };
