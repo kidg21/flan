@@ -23,21 +23,20 @@ storiesOf("Blocks|Menu", module)
   .add("Documentation", () => (
     <Card>
       <Bar
-        right={<DropdownMenu data={data} position="bottomLeft" type="edit" />}
+        right={<DropdownMenu data={data} position="bottomLeft"/>}
       />
     </Card>
   ))
   .add("Directions", () => (
     <Grid columns="3">
-      <DropdownMenu data={data} position="bottomRight" object="Bottom Right" />
+      <DropdownMenu data={data} position="bottomRight"  />
       <DropdownMenu
         data={data}
         position="bottomCenter"
-        object="Bottom Center"
       />
-      <DropdownMenu data={data} position="bottomLeft" object="Bottom Left" />
-      <DropdownMenu data={data} position="topRight" object="Top Right" />
-      <DropdownMenu data={data} position="topCenter" object="Top Center" />
-      <DropdownMenu data={data} position="topLeft" object="Top Left" />
+      <DropdownMenu data={data} position="bottomLeft" />
+      <DropdownMenu data={data} position="topRight" />
+      <DropdownMenu data={data} position="topCenter"  />
+      <DropdownMenu data={data} position="topLeft" />
     </Grid>
   ));
