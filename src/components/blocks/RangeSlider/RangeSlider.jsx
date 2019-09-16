@@ -21,7 +21,7 @@ const RangeContainer = styled(Grid)`
 
 function RangeSlider({
   disabled,
-  errorText,
+  error,
   helpText,
   id,
   isRequired,
@@ -31,7 +31,7 @@ function RangeSlider({
 }) {
   let inputTextColor;
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (errorText && !isDisabled) {
+  if (error && !isDisabled) {
     inputTextColor = colors.alert;
   }
   return (
@@ -49,24 +49,24 @@ function RangeSlider({
         contentAlign="center"
         leftWidth="6em"
         rightWidth="6em"
-        left={<TextInput type="text" placeholder={placeholderMin} disabled={isDisabled} />}
+        left={<TextInput type="text" placeholder={placeholderMin} error={!!error} disabled={isDisabled} />}
         center={
-          errorText && !isDisabled ? (
+          error && !isDisabled ? (
             <Slider error disabled={isDisabled} />
           ) : (
             <Slider disabled={isDisabled} />
           )
         }
-        right={<TextInput type="text" placeholder={placeholderMax} disabled={isDisabled} />}
+        right={<TextInput type="text" placeholder={placeholderMax} error={!!error} disabled={isDisabled} />}
       />
-      {errorText && !isDisabled ? <ErrorText>{errorText}</ErrorText> : null}
+      {typeof error === "string" && !isDisabled ? <ErrorText>{error}</ErrorText> : null}
     </RangeContainer>
   );
 }
 
 RangeSlider.propTypes = {
   disabled: PropTypes.bool,
-  errorText: PropTypes.string,
+  error: PropTypes.string,
   helpText: PropTypes.string,
   id: PropTypes.string,
   isRequired: PropTypes.bool,
@@ -76,7 +76,7 @@ RangeSlider.propTypes = {
 };
 RangeSlider.defaultProps = {
   disabled: false,
-  errorText: null,
+  error: null,
   helpText: null,
   id: null,
   isRequired: false,

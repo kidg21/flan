@@ -40,7 +40,10 @@ storiesOf("Blocks|Range Slider", module)
         placeholderMax={text("max label", "Max", "Range Slider")}
         isRequired={boolean("required", false, "Range Slider")}
         helpText={text("help text", "Help text goes here...", "Range Slider")}
-        errorText={text("error text", "", "Range Slider")}
+        error={
+          boolean("error", false, "Range Slider") &&
+          text("error text", "Error message...", "Range Slider")
+        }
         disabled={boolean("disabled", false, "Range Slider")}
       />
     );
@@ -71,7 +74,7 @@ storiesOf("Blocks|Range Slider", module)
             minLabel="Min Label"
             maxLabel="Max Label"
             helpText="This help text has been passed through a prop!"
-            errorText="Out of range!"
+            error="Out of range!"
           />
         </Section>
         <Section title="Disabled">
