@@ -8,7 +8,6 @@ import Form from "layout/Form";
 import Switch from "atoms/Switch";
 import SwitchNotes from "./Switch.md";
 
-// Colors
 storiesOf("Atoms|Switch", module)
   .addParameters({
     info: {
@@ -41,7 +40,7 @@ storiesOf("Atoms|Switch", module)
           { display: "select" },
           "Switch",
         )}
-        // error={boolean("error", false, "Switch")}
+        error={boolean("error", false, "Switch")}
         disabled={boolean("disabled", false, "Switch")}
       />
     );
@@ -49,8 +48,18 @@ storiesOf("Atoms|Switch", module)
   .add("States", () => {
     return (
       <Form>
-        <Switch id="active" label="Active" />
+        <Switch id="inactive" label="Inactive" />
+        <Switch id="active" label="Active" checked />
+        <Switch id="error" label="Error" error />
         <Switch id="disabled" label="Disabled" disabled />
+      </Form>
+    );
+  })
+  .add("Alignment", () => {
+    return (
+      <Form>
+        <Switch id="standard" label="Standard" />
+        <Switch id="align-right" label="Right Aligned" align="right" />
       </Form>
     );
   });
