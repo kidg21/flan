@@ -174,6 +174,7 @@ storiesOf("Layout |App Layout/", module)
                 onClick={toggleLeft}
                 isSelected={activeLeft}
                 noBorder
+                color="grey"
               />
             <Tab
               icon="layers"
@@ -181,6 +182,7 @@ storiesOf("Layout |App Layout/", module)
                 onClick={toggleLeft}
                 isSelected={activeLeft}
                 noBorder
+                color="grey"
               />
               <Tab
               icon="filter"
@@ -188,6 +190,7 @@ storiesOf("Layout |App Layout/", module)
                 onClick={toggleRight}
                 isSelected={activeRight}
                 noBorder
+                color="grey"
               />
 
               <Tab
@@ -196,6 +199,7 @@ storiesOf("Layout |App Layout/", module)
                 onClick={toggleLeft}
                 isSelected={activeLeft}
                 noBorder
+                color="grey"
               />
                         <Tab
               icon="analytics"
@@ -203,6 +207,7 @@ storiesOf("Layout |App Layout/", module)
                 onClick={toggleLeft}
                 isSelected={activeLeft}
                 noBorder
+                color="grey"
               />
             <Tab
               icon="list"
@@ -210,6 +215,7 @@ storiesOf("Layout |App Layout/", module)
                 onClick={toggleBottom}
                 isSelected={activeBottom}
                 noBorder
+                color="grey"
               />
               <Tab
                icon="more"
@@ -217,6 +223,7 @@ storiesOf("Layout |App Layout/", module)
                 onClick={toggleLeft}
                 isSelected={activeLeft}
                 noBorder
+                color="grey"
               />
             </Tabs>
           </Layout>

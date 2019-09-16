@@ -126,7 +126,15 @@ function Tabs({
 }
 
 function Tab({
-  id, icon, tabLabel, onClick, noBorder, isSelected, disabled,
+  id,
+  icon,
+  tabLabel,
+  onClick,
+  noBorder,
+  isSelected,
+  disabled,
+  color,
+  selectedColor,
 }) {
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   return (
@@ -139,7 +147,7 @@ function Tab({
           onClick={onClick}
           isSelected={isSelected}
           disabled={isDisabled}
-          color="primary"
+          color={selectedColor}
           noBorder={noBorder}
         />
       ) : (
@@ -150,7 +158,7 @@ function Tab({
           onClick={onClick}
           isSelected={isSelected}
           disabled={isDisabled}
-          color="grey"
+          color={color}
           noBorder={noBorder}
         />
       )}
