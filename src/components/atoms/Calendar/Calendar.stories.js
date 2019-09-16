@@ -2,10 +2,9 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
-import { withKnobs, text, boolean, date, optionsKnob as options } from "@storybook/addon-knobs";
+import { withKnobs, text, boolean, optionsKnob as options } from "@storybook/addon-knobs";
 import { Padding } from "helpers/Display";
-import Grid from "layout/Grid";
-import Form, { Section } from "layout/Form";
+import Form from "layout/Form";
 import Calendar from "atoms/Calendar";
 import CalendarNotes from "./Calendar.md";
 
@@ -69,7 +68,7 @@ storiesOf("Atoms|Calendar", module)
   })
   .add("Date", () => {
     return (
-      <Grid>
+      <Form>
         <Calendar
           type="date"
           label="Date Input Label"
@@ -91,14 +90,14 @@ storiesOf("Atoms|Calendar", module)
           type="date"
           label="Date Input Label"
           helpText="This help text has been passed through a prop!"
-          errorText="Don't sweat it...we can fix this!"
+          error="Don't sweat it...we can fix this!"
         />
-      </Grid>
+      </Form>
     );
   })
   .add("Time", () => {
     return (
-      <Grid>
+      <Form>
         <Calendar
           type="time"
           label="Time Input Label"
@@ -121,14 +120,14 @@ storiesOf("Atoms|Calendar", module)
           label="Time Input Label"
           helpText="This help text has been passed through a prop!"
           state="error"
-          errorText="Don't sweat it...we can fix this!"
+          error="Don't sweat it...we can fix this!"
         />
-      </Grid>
+      </Form>
     );
   })
   .add("Date / Time", () => {
     return (
-      <Grid>
+      <Form>
         <Calendar
           type="datetime"
           label="Date-Time Input Label"
@@ -151,8 +150,8 @@ storiesOf("Atoms|Calendar", module)
           label="Date-Time Input Label"
           helpText="This help text has been passed through a prop!"
           state="error"
-          errorText="Don't sweat it...we can fix this!"
+          error="Don't sweat it...we can fix this!"
         />
-      </Grid>
+      </Form>
     );
   });
