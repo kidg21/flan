@@ -60,7 +60,9 @@ storiesOf("Atoms|Calendar", module)
         )}
         label={text("label", "Input Label", "Calendar")}
         helpText={text("help text", "This help text has been passed through a prop!", "Calendar")}
-        errorText={text("error text", "", "Calendar")}
+        error={
+          boolean("error", false, "Calendar") && text("error text", "Error message...", "Calendar")
+        }
         disabled={boolean("disabled", false, "Calendar")}
       />
     );
