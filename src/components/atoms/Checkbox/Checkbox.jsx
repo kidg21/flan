@@ -141,7 +141,7 @@ function CheckboxGroup({
   columns,
   data,
   disabled,
-  errorText,
+  error,
   helpText,
   id,
   label,
@@ -150,7 +150,7 @@ function CheckboxGroup({
 }) {
   let inputTextColor;
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (errorText && !isDisabled) {
+  if (error && !isDisabled) {
     inputTextColor = colors.alert;
   }
   return (
@@ -171,7 +171,7 @@ function CheckboxGroup({
               <Checkbox
                 align={align}
                 disabled={item.disabled || isDisabled}
-                error={!!errorText}
+                error={!!error}
                 id={item.id}
                 key={item.id}
                 label={item.label}
@@ -180,7 +180,7 @@ function CheckboxGroup({
             );
           })}
       </InputGroup>
-      {errorText && !isDisabled ? <ErrorText>{errorText}</ErrorText> : null}
+      {error && !isDisabled ? <ErrorText>{error}</ErrorText> : null}
     </CheckboxWrapper>
   );
 }
@@ -210,7 +210,7 @@ CheckboxGroup.propTypes = {
   columns: PropTypes.oneOf(["auto (default)", "1", "2", "3", "4", "5", "6"]),
   data: PropTypes.oneOfType([PropTypes.array, PropTypes.string]),
   disabled: PropTypes.bool,
-  errorText: PropTypes.string,
+  error: PropTypes.string,
   helpText: PropTypes.string,
   id: PropTypes.string,
   isRequired: PropTypes.bool,
@@ -224,7 +224,7 @@ CheckboxGroup.defaultProps = {
   columns: null,
   data: null,
   disabled: false,
-  errorText: null,
+  error: null,
   helpText: null,
   id: null,
   isRequired: false,
