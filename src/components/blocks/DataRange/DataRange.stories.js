@@ -61,7 +61,10 @@ storiesOf("Blocks|Data Range", module)
         optionsMax={object("options (max)", [{ value: "0", label: "0" }], "Data Range")}
         isRequired={boolean("required", false, "Data Range")}
         helpText={text("help text", "Help text goes here...", "Data Range")}
-        errorText={text("error text", "", "Data Range")}
+        error={
+          boolean("error", false, "Data Range") &&
+          text("error text", "Error message...", "Data Range")
+        }
         disabled={boolean("disabled", false, "Data Range")}
       />
     );
@@ -81,7 +84,7 @@ storiesOf("Blocks|Data Range", module)
             labelMin="Min"
             labelMax="Max"
             helpText="This help text has been passed through a prop!"
-            errorText="Out of range!"
+            error="Out of range!"
           />
           <DataRange
             label="Input Range (disabled)"
@@ -107,7 +110,7 @@ storiesOf("Blocks|Data Range", module)
             labelMax="Max"
             optionsMax={options}
             helpText="This help text has been passed through a prop!"
-            errorText="Out of range!"
+            error="Out of range!"
           />
           <DataRange
             label="Select Range (disabled)"

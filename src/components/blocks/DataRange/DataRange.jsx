@@ -20,7 +20,7 @@ const RangeContainer = styled(Grid)`
 
 function DataRange({
   disabled,
-  errorText,
+  error,
   helpText,
   id,
   isRequired,
@@ -33,7 +33,7 @@ function DataRange({
 }) {
   let inputTextColor;
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (errorText && !isDisabled) {
+  if (error && !isDisabled) {
     inputTextColor = colors.alert;
   }
   function onChangeMin(e) {
@@ -68,6 +68,7 @@ function DataRange({
               label={labelMin}
               options={optionsMin}
               onChange={onChangeMin}
+              error={!!error}
               disabled={isDisabled}
             />
           )
@@ -85,20 +86,21 @@ function DataRange({
               label={labelMax}
               options={optionsMax}
               onChange={onChangeMax}
+              error={!!error}
               disabled={isDisabled}
             />
           )
         }
       />
       {helpText ? <HelpText>{helpText}</HelpText> : null}
-      {errorText && !isDisabled ? <ErrorText>{errorText}</ErrorText> : null}
+      {typeof error === "string" && !isDisabled ? <ErrorText>{error}</ErrorText> : null}
     </RangeContainer>
   );
 }
 
 DataRange.propTypes = {
   disabled: PropTypes.bool,
-  errorText: PropTypes.string,
+  error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   helpText: PropTypes.string,
   id: PropTypes.string,
   isRequired: PropTypes.bool,
@@ -111,7 +113,7 @@ DataRange.propTypes = {
 };
 DataRange.defaultProps = {
   disabled: false,
-  errorText: null,
+  error: null,
   helpText: null,
   id: null,
   isRequired: false,
