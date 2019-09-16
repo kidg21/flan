@@ -50,12 +50,15 @@ storiesOf("Atoms|Text Input", module)
             },
             "text",
           )}
-          label={text("Text Input Label", "Text Input Label")}
-          isRequired={boolean("Required", false)}
-          placeholder={text("Placeholder Text", "I am just keeping things warm")}
-          helpText={text("Help Text", "Have you been helped yet?")}
-          errorText={text("Error Text", "")}
-          disabled={boolean("Disabled", false)}
+          label={text("label", "Text Input Label", "Text Input")}
+          isRequired={boolean("required", false, "Text Input")}
+          placeholder={text("placeholder text", "I am just keeping things warm", "Text Input")}
+          helpText={text("help text", "Have you been helped yet?", "Text Input")}
+          error={
+            boolean("error", false, "Text Input") &&
+            text("error text", "Error message...", "Text Input")
+          }
+          disabled={boolean("disabled", false, "Text Input")}
         />
       );
     }),
@@ -67,6 +70,18 @@ storiesOf("Atoms|Text Input", module).add("The Text Input Family", () => {
       <PanelSection body>
         <Form title="The Text Input Family">
           <Section>
+            <TextInput
+              label="Text Input ( error boolean )"
+              placeholder="I am just keeping things warm"
+              helpText="This help text has been passed through a prop!"
+              error
+            />
+            <TextInput
+              label="Text Input ( error string )"
+              placeholder="I am just keeping things warm"
+              helpText="This help text has been passed through a prop!"
+              error="Error Message"
+            />
             <TextInput
               label="Text Input ( Standard )"
               placeholder="I am just keeping things warm"
