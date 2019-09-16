@@ -139,7 +139,7 @@ function RadioGroup({
   columns,
   data,
   disabled,
-  errorText,
+  error,
   helpText,
   id,
   isRequired,
@@ -148,7 +148,7 @@ function RadioGroup({
 }) {
   let inputTextColor;
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (errorText && !isDisabled) {
+  if (error && !isDisabled) {
     inputTextColor = colors.alert;
   }
   return (
@@ -169,7 +169,7 @@ function RadioGroup({
               <Radio
                 align={align}
                 disabled={item.disabled || isDisabled}
-                error={!!errorText}
+                error={!!error}
                 id={item.id}
                 key={item.id}
                 label={item.label}
@@ -180,7 +180,7 @@ function RadioGroup({
             );
           })}
       </InputGroup>
-      {errorText && !isDisabled ? <ErrorText>{errorText}</ErrorText> : null}
+      {error && !isDisabled ? <ErrorText>{error}</ErrorText> : null}
     </RadioWrapper>
   );
 }
@@ -217,7 +217,7 @@ RadioGroup.propTypes = {
   columns: PropTypes.oneOf(["auto (default)", "1", "2", "3", "4", "5", "6"]),
   data: PropTypes.oneOfType([PropTypes.array, PropTypes.string]),
   disabled: PropTypes.bool,
-  errorText: PropTypes.string,
+  error: PropTypes.string,
   helpText: PropTypes.string,
   id: PropTypes.string,
   isRequired: PropTypes.bool,
@@ -231,7 +231,7 @@ RadioGroup.defaultProps = {
   columns: null,
   data: null,
   disabled: false,
-  errorText: null,
+  error: null,
   helpText: null,
   id: null,
   isRequired: false,
