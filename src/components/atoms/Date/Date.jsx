@@ -28,39 +28,35 @@ const StyledTimePicker = styled.input.attrs({ type: "time" })`
 		border-color: ${colors.success_light};
 	}
 `;
-const getDateWidget = (setDate, onChange, currentTimeValue) => {
-	return (<StyledDateRangePicker onChange={(e) => {
-		const newDateValue = e.currentTarget.value;
-		setDate(newDateValue);
+const getDateWidget = (currentDateValue, onChange) => {
+	return (<StyledDateRangePicker value={currentDateValue} onChange={(e) => {
 		if (typeof onChange === "function") {
-			onChange({ dateValue: newDateValue, timeValue: currentTimeValue });
+			onChange(e);
 		}
 	}} />);
 }
 
-const getTimeWidget = (setTime, onChange, currentDateValue) => {
-	return (<StyledTimePicker onChange={(e) => {
-		const newTimeValue = e.currentTarget.value;
-		setTime(newTimeValue);
+const getTimeWidget = (currentTimeValue, onChange) => {
+	return (<StyledTimePicker value={currentTimeValue} onChange={(e) => {
 		if (typeof onChange === "function") {
-			onChange({ dateValue: currentDateValue, timeValue: newTimeValue });
+			onChange(e);
 		}
 	}} />);
 }
 
 
 function Calendar({ id, date, time, datetime, dateValue, timeValue, onChange }) {
-	const [currentDateValue, setDate] = useState(dateValue || "");
-	const [currentTimeValue, setTime] = useState(timeValue || "");
+	const currentDateValue = dateValue || "";
+	const currentTimeValue = timeValue || "";
 	return (
 		<div id={id}>
-			{date ? getDateWidget(setDate, onChange, currentTimeValue) : null}
-			{time ? getTimeWidget(setTime, onChange, currentDateValue) : null}
+			{date ? getDateWidget(currentDateValue, onChange) : null}
+			{time ? getTimeWidget(currentTimeValue, onChange) : null}
 			{datetime ? (
 				<div>
 					{" "}
-					{getDateWidget(setDate, onChange, currentTimeValue)}
-					{getTimeWidget(setTime, onChange, currentDateValue)}
+					{getDateWidget(onChange)}
+					{getTimeWidget(onChange)}
 					{" "}
 				</div>
 			) : null}
