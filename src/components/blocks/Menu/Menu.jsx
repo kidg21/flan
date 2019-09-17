@@ -8,13 +8,14 @@ import { colors } from "Variables";
 
 const Container = styled.div`
   cursor: pointer;
+  background-color: pink;
   // position: relative;
   line-height: 1.5;
   display: inline-block;
 `;
 
 const EditMenu = styled.ul`
-  background: ${colors.white};
+  background: yellowgreen;
   border-radius: 3px;
   list-style: none;
   z-index: 500;
@@ -23,7 +24,24 @@ const EditMenu = styled.ul`
   padding-bottom: 0.8em;
   bottom: ${(props) => { return props.badgeBottom || ""; }};
   left: ${(props) => { return props.badgeLeft || ""; }};
-  transform: ${(props) => { return props.badgeTransform || ""; }};
+  transform: ${(props) => { return props.setTransform || ""; }};
+  width: auto;
+  min-width: 10em;
+  position: absolute;
+`;
+
+
+const SubMenu = styled.ul`
+  background: lightblue;
+  border-radius: 3px;
+  list-style: none;
+  z-index: 500;
+  padding: 0.25em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  bottom: 0;
+  left: 0;
+  transform: ${(props) => { return props.setTransform || ""; }};
   width: auto;
   min-width: 10em;
   position: absolute;
@@ -97,7 +115,12 @@ function Menu({ id, data, position }) {
           >
             {data.map((item) => {
               return (
-                <Item key={item.id} onClick={item.onClickLink}>
+                <Item key={item.id} onClick={item.onClickLink}
+                 onHover={
+                  () => {
+                    setVisibility(!visibility);
+                  }
+                }>
                   <Title text={item.name} weight="normal" />
                 </Item>
               );
@@ -105,6 +128,19 @@ function Menu({ id, data, position }) {
           </EditMenu>
         </Card>
       ) : null}
+      {visibility ? (<Card><SubMenu 
+            setTransform="translate(-200%, 105%)">{data.map((item) => {
+              return (
+                <Item key={item.id} onClick={item.onClickLink}
+                 onHover={
+                  () => {
+                    setVisibility(!visibility);
+                  }
+                }>
+                  <Title text={item.name} weight="normal" />
+                </Item>
+              );
+            })}</SubMenu></Card>) : null}
     </Container>
   );
 }
