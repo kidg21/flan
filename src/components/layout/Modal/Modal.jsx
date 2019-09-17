@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import styled, { keyframes } from "styled-components";
 import { screen } from "Variables";
 import { PlaceholderText } from "helpers";
@@ -83,7 +83,7 @@ const Image = styled.img`
 `;
 
 const ModalContainer = styled.div`
-  position: absolute;
+  position: fixed;
   display: ${(props) => { return (props.visible ? "flex" : "none"); }};
   z-index: 1005;
   top: 0px;
@@ -99,8 +99,13 @@ const ModalContainer = styled.div`
   pointer-events: ${(props) => { return props.pointerEvents || ""; }};
   overflow: hidden;
   ${ContentWrapper}, ${Image} {
-    animation-name: ${(props) => { return (props.position ? moveDown : moveUp); }};
-    animation-duration: 0.6s;
+    animation-name: ${(props) => {
+      if (!props.action) return null;
+      return props.action === "open" ? moveDown : moveUp;
+    }};
+    animation-duration: ${(props) => {
+      return props.action && typeof props.slideDuration === "number" ? `${props.slideDuration}s` : null;
+    }};
     transform-origin: top;
     pointer-events: initial;
     @media ${screen.medium} {
@@ -133,8 +138,11 @@ const ModalBG = styled.div`
   background-color: hsla(34, 5%, 12%, 0.8);
   -webkit-tap-highlight-color: transparent;
   touch-action: none;
-  animation-name: ${(props) => { return (props.opacity ? fadeIn : fadeOut); }};
-  animation-duration: 0.6s;
+  animation-name: ${(props) => {
+    if (!props.action) return null;
+    return props.action === "open" ? fadeIn : fadeOut;
+  }};
+  animation-duration: ${(props) => { return props.action && typeof props.fadeDuration === "number" ? `${props.fadeDuration}s` : null; }};
 `;
 
 const Close = styled.section`
@@ -149,14 +157,14 @@ const Close = styled.section`
 
 function Modal({
   id,
-  type,
   align,
-  visible,
   onClick,
   onClose,
-  position,
+  onDisplayComplete,
+  action,
+  slideDuration,
+  fadeDuration,
   scale,
-  opacity,
   text,
   image,
   ariaLabelledby,
@@ -164,42 +172,31 @@ function Modal({
   children,
   style,
 }) {
-  let modalType;
+  let modalContent;
   let justifyContent;
   let pointerEvents;
-  switch (type) {
-    case "text":
-      modalType = (
-        <Fragment>
-          <ModalBG onClick={onClose} opacity={opacity} />
-          <ContentWrapper>
-            <Description text={text} type="inverse" />
-          </ContentWrapper>
-        </Fragment>
-      );
-      break;
-    case "image":
-      justifyContent = "center";
-      modalType = (
-        <Fragment>
-          <ModalBG onClick={onClose} opacity={opacity} />
-          <Image src={image} />
-          <Close onClick={onClose}>
-            <Icon icon="close" type="inverse" size="lg" inverse fixedWidth />
-          </Close>
-        </Fragment>
-      );
-      break;
-    default:
-      justifyContent = "center";
-      modalType = (
-        <Fragment>
-          <ModalBG onClick={onClose} opacity={opacity} />
-          <ContentWrapper>{children}</ContentWrapper>
-        </Fragment>
-      );
-      break;
+
+  if (text) {
+    modalContent = (
+      <ContentWrapper onClick={onClick} style={style}>
+        <Description text={text} type="inverse" />
+      </ContentWrapper>
+    );
+  } else if (image) {
+    justifyContent = "center";
+    modalContent = (
+      <Fragment>
+        <Image src={image} onClick={onClick} style={style} />
+        <Close onClick={onClose}>
+          <Icon icon="close" type="inverse" size="lg" inverse fixedWidth />
+        </Close>
+      </Fragment>
+    );
+  } else {
+    justifyContent = "center";
+    modalContent = (<ContentWrapper style={style}>{children}</ContentWrapper>);
   }
+
   switch (align) {
     case "top":
       justifyContent = "flex-start";
@@ -213,24 +210,39 @@ function Modal({
     default:
       break;
   }
+
+  // Hide container when fade is complete
+  const [visible, setVisible] = useState(!!action);
+  if (visible) {
+    if (action) {
+      setTimeout(
+        onDisplayComplete,
+        (Math.max((fadeDuration || 0), (slideDuration || 0)) - 0.1) * 1000,
+      );
+    } else {
+      setVisible(false);
+      return null;
+    }
+  } else if (action) {
+    setVisible(true);
+    return null;
+  }
+
   return (
     <ModalContainer
       id={id}
-      type={type}
       align={align}
       visible={visible}
-      image={image}
-      position={position}
+      action={visible ? action : null}
+      slideDuration={slideDuration}
       scale={scale}
-      opacity={opacity}
       aria-labelledby={ariaLabelledby}
       aria-describedby={ariaDescribedby}
       justifyContent={justifyContent}
       pointerEvents={pointerEvents}
-      onClick={onClick}
-      style={style}
     >
-      {modalType}
+      <ModalBG onClick={onClose} action={visible ? action : null} fadeDuration={fadeDuration} />
+      {modalContent}
     </ModalContainer>
   );
 }
@@ -244,15 +256,15 @@ Modal.propTypes = {
   children: PropTypes.node,
   id: PropTypes.string,
   image: PropTypes.string,
-  onClick: PropTypes.func,
   onClose: PropTypes.func,
-  opacity: PropTypes.oneOf(["fadeIn", "fadeOut"]),
-  position: PropTypes.oneOf(["moveUp", "moveDown"]),
+  onClick: PropTypes.func,
+  onDisplayComplete: PropTypes.func,
+  action: PropTypes.oneOf(["open", "close"]),
+  slideDuration: PropTypes.number,
+  fadeDuration: PropTypes.number,
   scale: PropTypes.oneOf(["scaleUp", "scaleDown"]),
-  style: PropTypes.string,
+  style: PropTypes.object,
   text: PropTypes.string,
-  type: PropTypes.oneOf(["default", "text", "image"]),
-  visible: PropTypes.bool,
 };
 
 Modal.defaultProps = {
@@ -262,13 +274,13 @@ Modal.defaultProps = {
   children: null,
   id: null,
   image: null,
-  onClick: null,
   onClose: null,
-  opacity: null,
-  position: null,
+  onClick: null,
+  onDisplayComplete: null,
+  action: null,
+  slideDuration: 0.6,
+  fadeDuration: 0.6,
   scale: null,
   style: null,
   text: null,
-  type: null,
-  visible: false,
 };

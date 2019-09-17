@@ -26,26 +26,22 @@ storiesOf("Layout|Modal", module)
     "Documentation",
     withInfo()(() => {
       return React.createElement(() => {
-        const [visible, setVisible] = useState(false);
-        const [transition, setTransition] = useState(true);
+        const [transition, setTransition] = useState(null);
         const handleOpen = () => {
-          setVisible(true);
-          setTransition(true);
+          setTransition("open");
         };
         const handleClose = () => {
-          setTransition(false);
-          setTimeout(() => {
-            setVisible(false);
-          }, 500);
+          setTransition("close");
+        };
+        const handleTransition = () => {
+          if (transition === "close") setTransition(null);
         };
         return (
           <>
             <Modal
-              visible={visible}
               onClose={handleClose}
-              opacity={transition}
-              scale={transition}
-              position={transition}
+              action={transition}
+              onDisplayComplete={handleTransition}
             >
               <Banner
                 title="This is a Standard notification telling you stuff."
@@ -67,17 +63,15 @@ storiesOf("Layout|Modal", module)
   .addDecorator(withKnobs)
   .add("Knobs", () => {
     return React.createElement(() => {
-      const [visible, setVisible] = useState(false);
-      const [transition, setTransition] = useState(true);
+      const [transition, setTransition] = useState(null);
       const handleOpen = () => {
-        setVisible(true);
-        setTransition(true);
+        setTransition("open");
       };
       const handleClose = () => {
-        setTransition(false);
-        setTimeout(() => {
-          setVisible(false);
-        }, 500);
+        setTransition("close");
+      };
+      const handleTransition = () => {
+        if (transition === "close") setTransition(null);
       };
       const buttonStyle = { margin: "10vh 30vw" };
       return (
@@ -112,11 +106,9 @@ storiesOf("Layout|Modal", module)
               { display: "radio" },
               "Modal",
             )}
-            visible={visible}
             onClose={handleClose}
-            opacity={transition}
-            scale={transition}
-            position={transition}
+            action={transition}
+            onDisplayComplete={handleTransition}
           >
             <Banner
               title={text(
@@ -143,27 +135,23 @@ storiesOf("Layout|Modal", module)
 storiesOf("Layout|Modal", module)
   .add("Default Modal", () => {
     return React.createElement(() => {
-      const [visible, setVisible] = useState(false);
-      const [transition, setTransition] = useState(true);
+      const [transition, setTransition] = useState(null);
       const handleOpen = () => {
-        setVisible(true);
-        setTransition(true);
+        setTransition("open");
       };
       const handleClose = () => {
-        setTransition(false);
-        setTimeout(() => {
-          setVisible(false);
-        }, 500);
+        setTransition("close");
+      };
+      const handleTransition = () => {
+        if (transition === "close") setTransition(null);
       };
       const buttonStyle = { margin: "10vh 30vw" };
       return (
         <>
           <Modal
-            visible={visible}
             onClose={handleClose}
-            opacity={transition}
-            scale={transition}
-            position={transition}
+            action={transition}
+            onDisplayComplete={handleTransition}
           >
             <Banner
               title="This is a Standard notification telling you stuff."
@@ -185,17 +173,15 @@ storiesOf("Layout|Modal", module)
   })
   .add("Text Modal", () => {
     return React.createElement(() => {
-      const [visible, setVisible] = useState(false);
-      const [transition, setTransition] = useState(true);
+      const [transition, setTransition] = useState(null);
       const handleOpen = () => {
-        setVisible(true);
-        setTransition(true);
+        setTransition("open");
       };
       const handleClose = () => {
-        setTransition(false);
-        setTimeout(() => {
-          setVisible(false);
-        }, 500);
+        setTransition("close");
+      };
+      const handleTransition = () => {
+        if (transition === "close") setTransition(null);
       };
       const buttonStyle = { margin: "10vh 30vw" };
       return (
@@ -203,11 +189,9 @@ storiesOf("Layout|Modal", module)
           <Modal
             type="text"
             text="This is a very special message just for you..."
-            visible={visible}
             onClose={handleClose}
-            opacity={transition}
-            scale={transition}
-            position={transition}
+            action={transition}
+            onDisplayComplete={handleTransition}
           />
           <Panel>
             <PanelSection body>
@@ -224,17 +208,18 @@ storiesOf("Layout|Modal", module)
   })
   .add("Image Modal", () => {
     return React.createElement(() => {
-      const [visible, setVisible] = useState(false);
-      const [transition, setTransition] = useState(true);
+      const [transition, setTransition] = useState(null);
       const handleOpen = () => {
-        setVisible(true);
-        setTransition(true);
+        setTransition("open");
       };
       const handleClose = () => {
-        setTransition(false);
-        setTimeout(() => {
-          setVisible(false);
-        }, 500);
+        setTransition("close");
+      };
+      const handleTransition = () => {
+        if (transition === "close") setTransition(null);
+      };
+      const handleOnClick = () => {
+        alert("Image Clicked!");
       };
       const buttonStyle = { margin: "10vh 30vw" };
       return (
@@ -242,11 +227,10 @@ storiesOf("Layout|Modal", module)
           <Modal
             type="image"
             image={ModernExterior1}
-            visible={visible}
+            onClick={handleOnClick}
             onClose={handleClose}
-            opacity={transition}
-            scale={transition}
-            position={transition}
+            action={transition}
+            onDisplayComplete={handleTransition}
           />
           <Panel>
             <PanelSection body>

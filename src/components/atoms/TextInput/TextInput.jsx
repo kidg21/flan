@@ -112,7 +112,6 @@ function TextInput({
 
   return (
     <TextInputContainer
-      id={id}
       inputTextColor={inputTextColor}
       className={className}
     >

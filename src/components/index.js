@@ -43,7 +43,8 @@ export { default as NavigationPanelHeader } from "./elements/PanelHeaders/Naviga
 export { default as Notification } from "./elements/Notification";
 export { default as MapSearch } from "./elements/MapSearch";
 export { default as PropertyListCard } from "./elements/ListCards/PropertyListCard";
-export { default as DialogueBox } from "./elements/DialogueBox"
+export { UserRoles, RolePermissions } from "./elements/UserRoles";
+export { default as Dialog, Alert, Confirm, Prompt } from "./elements/DialogueBox";
 
 // Publicly exported files from 'layout'
 export { default as Card, CardList } from "./layout/Card";

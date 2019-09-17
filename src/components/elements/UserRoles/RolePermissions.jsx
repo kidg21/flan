@@ -96,7 +96,7 @@ function RoleEntry({
   }
 
   return (
-    <InformationCardBar title={<Title>{role.role} <Icon icon="delete" onClick={onDeleteRole} /></Title>}>
+    <InformationCardBar title={<Title>{role.name} <Icon icon="delete" onClick={onDeleteRole} /></Title>}>
       {role.folders.map((folder) => {
         return (<FolderEntry
           folder={folder}
@@ -114,6 +114,7 @@ function RoleEntry({
 RoleEntry.propTypes = {
   role: PropTypes.shape({
     role: PropTypes.string,
+    name: PropTypes.string,
     folders: PropTypes.arrayOf(PropTypes.shape({
       folder: PropTypes.string,
       permissions: PropTypes.arrayOf(PropTypes.string),
@@ -136,12 +137,15 @@ RoleEntry.defaultProps = {
 
 function RolePermissions({
   roles,
+  commands,
   listHeight,
   right,
+  children,
   editRole,
   onChange,
   folderPadding,
   selectWidth,
+  title,
 }) {
   let activeRoles = roles;
   let setRoles = onChange;
@@ -188,10 +192,11 @@ function RolePermissions({
     filterRoles(activeRoles, e.target.value.toLowerCase());
   }
 
+  const childElements = (!children || children instanceof Array) ? children : [children];
   return (
     <Panel>
-      <MainPanelHeader title="Role Permissions" />
-      <PanelSection >
+      <MainPanelHeader title={title} menuData={commands} />
+      <PanelSection body>
         <Bar
           left={<Search placeholder="Search for a Role" onChange={onSearch} />}
           right={right}
@@ -209,6 +214,13 @@ function RolePermissions({
           })}
         </Container>
       </PanelSection>
+      {childElements ? childElements.map((child) => {
+        return (
+          <PanelSection>
+            {child}
+          </PanelSection>
+        );
+      }) : null}
     </Panel>
   );
 }
@@ -216,16 +228,23 @@ function RolePermissions({
 RolePermissions.propTypes = {
   roles: PropTypes.arrayOf(PropTypes.shape({
     role: PropTypes.string,
+    name: PropTypes.string,
     folders: PropTypes.arrayOf(PropTypes.shape({
       folder: PropTypes.string,
       permissions: PropTypes.arrayOf(PropTypes.string),
     })),
+  })),
+  commands: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string,
+    name: PropTypes.string,
+    onClickLink: PropTypes.func,
   })),
   listHeight: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number,
   ]),
   right: PropTypes.node,
+  children: PropTypes.node,
   editRole: PropTypes.shape({
     label: PropTypes.string,
     onClick: PropTypes.func,
@@ -233,16 +252,20 @@ RolePermissions.propTypes = {
   onChange: PropTypes.func,
   folderPadding: PropTypes.string,
   selectWidth: PropTypes.string,
+  title: PropTypes.string,
 };
 
 RolePermissions.defaultProps = {
   roles: null,
+  commands: null,
   listHeight: "250px",
   right: null,
+  children: null,
   editRole: null,
   onChange: null,
   folderPadding: "3x",
   selectWidth: "20%",
+  title: "Role Permissions",
 };
 
 export default RolePermissions;
