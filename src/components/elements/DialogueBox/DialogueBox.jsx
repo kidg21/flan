@@ -25,15 +25,7 @@ function DialogueBox({
   switch (action) {
     case "one":
       buttonType = (
-        <Bar
-          left={
-            <Button
-              label={primaryLabel}
-              onClick={onClickPrimary}
-              color={buttonColor}
-            />
-          }
-        />
+        <Bar left={<Button label={primaryLabel} onClick={onClickPrimary} color={buttonColor} />} />
       );
       break;
     case "two":
@@ -47,11 +39,7 @@ function DialogueBox({
                 onClick={onClickPrimary}
                 color={buttonColor}
               />
-              <Button
-                label={secondaryLabel}
-                onClick={onClickSecondary}
-                color={buttonColor}
-              />
+              <Button label={secondaryLabel} onClick={onClickSecondary} color={buttonColor} />
             </Grid>
           }
         />

@@ -31,7 +31,29 @@ const Logo = styled.img`
 storiesOf("Elements|Dialogue Box", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  .add("General/Default", () => (
+  .addParameters({
+    info: {
+      text:
+        "Dialogue Boxes are used to convey a message between the server/computer and the user. A dialogue box either has one absolute action (button) or two button options; typically an affirmative and dissenting option. If two buttons are selected then they are located on the bottom left corner as to be readily accessbile to the user. The primary button is always solid, the second is outlined. Both buttons must be the same color family. If one button is selected the button is center in the middle of the dialogue box. ",
+    },
+  })
+  .add(
+    "Documentation",
+    withInfo()(() => {
+      return (<DialogueBox
+      title="Dialogue Box Title"
+      message="Dialogue Box Message"
+      action="two"
+      primaryLabel="Affirm"
+      secondaryLabel="Negative"
+      />);
+    }),
+  );
+
+  storiesOf("Elements|Dialogue Box/General", module)
+  .addDecorator(Padding)
+  .addDecorator(withInfo)
+  .add("Default", () => (
     <DialogueBox
       title="Hey are you sure your okay doing this?"
       message="This is the body of your message. Tells you more about the action you are about to commit."
@@ -40,7 +62,7 @@ storiesOf("Elements|Dialogue Box", module)
       secondaryLabel="Cancel"
     />
   ))
-  .add("General/Login", () => (
+  .add("Login", () => (
     <DialogueBox
       header={<Bar left={<Logo src={image.src} alt={image.alt} />} />}
       title="Welcome"
@@ -59,12 +81,12 @@ storiesOf("Elements|Dialogue Box", module)
       primaryLabel="Login"
     />
   ))
-  .add("General/Save Box", () => (
+  .add("Save As", () => (
     <DialogueBox
       title="Save As"
       content={
         <Section>
-          <TextInput inputLabel="Name" placeholder="Type Name" />
+          <TextInput label="Name" placeholder="Type Name" />
           <SelectMenu
             inputLabel="Location"
             options={[
@@ -74,6 +96,7 @@ storiesOf("Elements|Dialogue Box", module)
               { value: "4", label: "lightbox" },
             ]}
           />
+          <Command label="Add new Location" icon="plus"/>
           <SelectMenu
             inputLabel="File Type"
             options={[
@@ -88,7 +111,7 @@ storiesOf("Elements|Dialogue Box", module)
       secondaryLabel="Cancel"
     />
   ))
-  .add("General/Delete", () => (
+  .add("Delete", () => (
     <DialogueBox
       title="Are you sure you want to delete this user?"
       message="If you delete this user you will not be able to get back any information or work they have done. Their work will be lost forever."
@@ -98,7 +121,7 @@ storiesOf("Elements|Dialogue Box", module)
       buttonColor="alert"
     />
   ))
-  .add("General/Success", () => (
+  .add("Success", () => (
     <DialogueBox
       title="View your report?"
       message="Your report successfully downloaded. Do you want to check out the deets."
@@ -107,8 +130,13 @@ storiesOf("Elements|Dialogue Box", module)
       secondaryLabel="Cancel"
       buttonColor="success"
     />
-  ))
-  .add("Role/Edit User List", () => (
+  ));
+
+
+  storiesOf("Elements|Dialogue Box/User Roles", module)
+  .addDecorator(Padding)
+  .addDecorator(withInfo)
+  .add("Edit User List", () => (
     <DialogueBox
       title="Edit User List for Role"
       content={
@@ -153,7 +181,7 @@ storiesOf("Elements|Dialogue Box", module)
       secondaryLabel="Cancel"
     />
   ))
-  .add("Role/Edit Files", () => (
+  .add("Edit Files", () => (
     <DialogueBox
       title="Edit Files Role"
       content={
@@ -184,7 +212,7 @@ storiesOf("Elements|Dialogue Box", module)
       secondaryLabel="Cancel"
     />
   ))
-  .add("User/Add User", () => (
+  .add("Add User", () => (
     <DialogueBox
       title="+ Add a New User"
       content={
@@ -215,7 +243,7 @@ storiesOf("Elements|Dialogue Box", module)
       secondaryLabel="Cancel"
     />
   ))
-  .add("User/Edit User", () => (
+  .add("Edit User", () => (
     <DialogueBox
       title="Edit User"
       content={
