@@ -1,15 +1,15 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { Padding } from "../../_helpers/Display";
+import { Padding } from "helpers/Display";
 import { withInfo } from "@storybook/addon-info";
 import {
   withKnobs,
   text,
   boolean,
 } from "@storybook/addon-knobs";
-import Panel, { PanelSection } from "../../layout/Panel/Panel";
-import Form, { Section, SectionName } from "../../layout/Form/Form";
+import Panel, { PanelSection } from "layout/Panel";
+import Form, { Section } from "layout/Form";
 import SelectMenu from "./SelectMenu";
 
 const options = [
@@ -21,8 +21,8 @@ const options = [
   { value: "cookie dough", label: "Cookie Dough" },
 ];
 
-// SelectMenu ( Knobs )
-storiesOf("Atoms|SelectMenu", module)
+// Select Menu ( Knobs )
+storiesOf("Atoms|Select Menu", module)
   .addParameters({
     info: {
       text: "Select Menu info goes here...",
@@ -38,7 +38,7 @@ storiesOf("Atoms|SelectMenu", module)
     withInfo()(() => {
       return (
         <SelectMenu
-          inputLabel={text("Input Label", "SelectMenu ( Knobs )")}
+          label={text("Input Label", "Select Menu ( Knobs )")}
           placeholder={text("Placeholder Text", "I am just keeping things warm")}
           helpText={text("Help Text", "Have you been helped yet?")}
           multiSelect={boolean("Multi-Select", false)}
@@ -60,9 +60,9 @@ storiesOf("Atoms|SelectMenu", module)
   .add("Single-Select ( Standard )", () => {
     return (
       <SelectMenu
-        inputLabel="Single-Select ( Standard )"
+        label="Single-Select ( Standard )"
         placeholder="Choose..."
-        helpText="Help text for the SelectMenu component"
+        helpText="Help text for the Select Menu component"
         options={options}
       />
     );
@@ -76,16 +76,16 @@ storiesOf("Atoms|SelectMenu", module)
           <Form>
             <Section>
               <SelectMenu
-                inputLabel="Single-Select ( Required )"
+                label="Single-Select ( Required )"
                 placeholder="You Must Choose..."
-                helpText="Help text for the SelectMenu component"
+                helpText="Help text for the Select Menu component"
                 isRequired
                 isClearable={false}
                 options={options}
               />
               <SelectMenu
-                inputLabel="Single-Select ( Required w/ Clearable )"
-                helpText="Help text for the SelectMenu component"
+                label="Single-Select ( Required w/ Clearable )"
+                helpText="Help text for the Select Menu component"
                 isRequired
                 options={options}
                 selectOptions={options[0].value}
@@ -101,9 +101,9 @@ storiesOf("Atoms|SelectMenu", module)
   .add("Single-Select ( Disabled )", () => {
     return (
       <SelectMenu
-        inputLabel="Single-Select ( Disabled )"
+        label="Single-Select ( Disabled )"
         placeholder="You Can't Choose..."
-        helpText="Help text for the SelectMenu component"
+        helpText="Help text for the Select Menu component"
         disabled
         options={options}
       />
@@ -114,9 +114,9 @@ storiesOf("Atoms|SelectMenu", module)
   .add("Single-Select ( Error )", () => {
     return (
       <SelectMenu
-        inputLabel="Single-Select ( Error )"
+        label="Single-Select ( Error )"
         placeholder="You Chose Poorly..."
-        helpText="Help text for the SelectMenu component"
+        helpText="Help text for the Select Menu component"
         error="Error: Invalid Selection!"
         options={options}
       />
@@ -127,9 +127,9 @@ storiesOf("Atoms|SelectMenu", module)
   .add("Single-Select ( Loading )", () => {
     return (
       <SelectMenu
-        inputLabel="Single-Select ( Loading )"
+        label="Single-Select ( Loading )"
         placeholder="Give Me A Minute..."
-        helpText="Help text for the SelectMenu component"
+        helpText="Help text for the Select Menu component"
         isLoading
         options={options}
       />
@@ -141,9 +141,9 @@ storiesOf("Atoms|SelectMenu", module)
     return (
       <SelectMenu
         multiSelect
-        inputLabel="Multi-Select"
+        label="Multi-Select"
         placeholder="Choose One Or More..."
-        helpText="Help text for the SelectMenu component"
+        helpText="Help text for the Select Menu component"
         options={options}
       />
     );
@@ -159,17 +159,17 @@ storiesOf("Atoms|SelectMenu", module)
               <SelectMenu
                 multiSelect
                 isRequired
-                inputLabel="Multi-Select ( Required )"
+                label="Multi-Select ( Required )"
                 placeholder="You Must Choose..."
-                helpText="Help text for the SelectMenu component"
+                helpText="Help text for the Select Menu component"
                 isClearable={false}
                 options={options}
               />
               <SelectMenu
                 multiSelect
                 isRequired
-                inputLabel="Multi-Select ( Required w/ Clearable )"
-                helpText="Help text for the SelectMenu component"
+                label="Multi-Select ( Required w/ Clearable )"
+                helpText="Help text for the Select Menu component"
                 options={options}
                 selectOptions={[options[0].value, options[2].value]}
               />
@@ -187,53 +187,52 @@ storiesOf("Atoms|SelectMenu", module)
     );
   });
 
-// SelectMenu (The SelectMenu Family)
-storiesOf("Atoms|SelectMenu", module).add("The SelectMenu Family", () => {
+// Select Menu (The Select Menu Family)
+storiesOf("Atoms|Select Menu", module).add("The Select Menu Family", () => {
   return (
     <Panel>
       <PanelSection body>
-        <Form>
+        <Form title="The Select Menu Family">
           <Section>
-            <SectionName>The SelectMenu Family</SectionName>
             <SelectMenu
-              inputLabel="Single-Select ( Standard )"
+              label="Single-Select ( Standard )"
               placeholder="Choose..."
-              helpText="Help text for the SelectMenu component"
+              helpText="Help text for the Select Menu component"
               options={options}
             />
             <SelectMenu
-              inputLabel="Single-Select ( Required )"
+              label="Single-Select ( Required )"
               placeholder="You Must Choose..."
-              helpText="Help text for the SelectMenu component"
+              helpText="Help text for the Select Menu component"
               isRequired
               options={options}
             />
             <SelectMenu
-              inputLabel="Single-Select ( Disabled )"
+              label="Single-Select ( Disabled )"
               placeholder="You Can't Choose..."
-              helpText="Help text for the SelectMenu component"
+              helpText="Help text for the Select Menu component"
               disabled
               options={options}
             />
             <SelectMenu
-              inputLabel="Single-Select ( Error )"
+              label="Single-Select ( Error )"
               placeholder="You Chose Poorly..."
-              helpText="Help text for the SelectMenu component"
+              helpText="Help text for the Select Menu component"
               error="Error: Invalid Selection!"
               options={options}
             />
             <SelectMenu
-              inputLabel="Single-Select ( Loading )"
+              label="Single-Select ( Loading )"
               placeholder="Give Me A Minute..."
-              helpText="Help text for the SelectMenu component"
+              helpText="Help text for the Select Menu component"
               isLoading
               options={options}
             />
             <SelectMenu
               multiSelect
-              inputLabel="Multi-Select"
+              label="Multi-Select"
               placeholder="Choose One Or More..."
-              helpText="Help text for the SelectMenu component"
+              helpText="Help text for the Select Menu component"
               options={options}
             />
           </Section>

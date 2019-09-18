@@ -67,6 +67,9 @@ function Bar({
   let barPadding;
   let textAlign;
   switch (padding && padding.toLowerCase()) {
+    case "none":
+      barPadding = "0";
+      break;
     case "2x":
       barPadding = "1em 1.25em";
       break;
@@ -135,10 +138,10 @@ function Bar({
   );
 
   return typeof disabled === "boolean" ? (
-    <DisabledContext.Provider value={disabled}>
-      {barLayout}
-    </DisabledContext.Provider>
-  ) : barLayout;
+    <DisabledContext.Provider value={disabled}>{barLayout}</DisabledContext.Provider>
+  ) : (
+    barLayout
+  );
 }
 
 Bar.propTypes = {
@@ -160,7 +163,7 @@ Bar.propTypes = {
    */
   centerAlign: PropTypes.oneOf(["left", "right"]),
   /** Sets the padding of the Bar component */
-  padding: PropTypes.oneOf(["2x", "3x"]),
+  padding: PropTypes.oneOf(["none", "1x (default)", "2x", "3x"]),
   /** Used to define the content in the right 'slot' */
   right: PropTypes.node,
   /** Used to override the default flex ratio of the right 'slot' by increasing the setting a 'min-width' and 'max-width'.

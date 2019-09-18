@@ -1,20 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import { storiesOf } from "@storybook/react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
 import DialogueBox from "elements/DialogueBox";
-import Title, { Body } from "base/Typography";
+import Title from "base/Typography";
 import Bar from "blocks/Bar";
 import SelectMenu from "atoms/SelectMenu";
-import Card, { Piece } from "layout/Card";
-import Grid from "layout/Grid";
+import { Piece } from "layout/Card";
 import List, { ListItem } from "blocks/List";
-import Button from "atoms/Button";
 import TextInput from "atoms/TextInput";
-import Command from "atoms/Command";
 import Icon from "atoms/Icon";
-import Form, { Section, SectionName } from "layout/Form";
+import { Section } from "layout/Form";
 import DMPlogo from "images/DMPlogo.jpg";
 import Container from "atoms/Container";
 
@@ -68,8 +65,8 @@ storiesOf("Elements|Dialogue Box", module)
       title="Welcome"
       content={
         <Section>
-          <TextInput inputLabel="Username" placeholder="Username" />
-          <TextInput inputLabel="Password" placeholder="Password" />
+          <TextInput label="Username" placeholder="Username" />
+          <TextInput label="Password" placeholder="Password" />
           <Bar
             center={
               <Title text="Forget Password?" size="tiny" weight="light" />
@@ -88,7 +85,7 @@ storiesOf("Elements|Dialogue Box", module)
         <Section>
           <TextInput label="Name" placeholder="Type Name" />
           <SelectMenu
-            inputLabel="Location"
+            label="Location"
             options={[
               { value: "1", label: "my folder" },
               { value: "2", label: "our folder" },
@@ -98,7 +95,7 @@ storiesOf("Elements|Dialogue Box", module)
           />
           <Command label="Add new Location" icon="plus"/>
           <SelectMenu
-            inputLabel="File Type"
+            label="File Type"
             options={[
               { value: "jpg", label: ".jpg" },
               { value: "png", label: ".png" },
@@ -144,7 +141,7 @@ storiesOf("Elements|Dialogue Box", module)
           <Title text="Role: Developer" type="info" />
           <SelectMenu
             multiSelect="true"
-            inputLabel="+ Add Users"
+            label="+ Add Users"
             options={[
               { value: "1", label: "Adam" },
               { value: "2", label: "Oliver" },
@@ -189,7 +186,7 @@ storiesOf("Elements|Dialogue Box", module)
           <Title text="Role: Developer" type="info" />
           <SelectMenu
             multiSelect="true"
-            inputLabel="+ Files"
+            label="+ Files"
             placeholder="Add Files for Role to access"
             options={[
               { value: "1", label: "Folder 1" },
@@ -218,17 +215,17 @@ storiesOf("Elements|Dialogue Box", module)
       content={
         <Section>
           <TextInput
-            inputLabel="User Name"
+            label="User Name"
             placeholder="Type the name for your new user."
           />
           <TextInput
-            inputLabel="User Account"
+            label="User Account"
             placeholder="Type in User email or account name "
           />
           <SelectMenu
             multiSelect="true"
             placeholder="Select one or many roles for this user."
-            inputLabel="Assign Roles"
+            label="Assign Roles"
             options={[
               { value: "Marketing", label: "Marketing" },
               { value: "Acquisitions", label: "Acquisitions" },
@@ -248,15 +245,15 @@ storiesOf("Elements|Dialogue Box", module)
       title="Edit User"
       content={
         <Section>
-          <TextInput inputLabel="User Name" placeholder="Elizabeth Gallagher" />
+          <TextInput label="User Name" placeholder="Elizabeth Gallagher" />
           <TextInput
-            inputLabel="User Account"
+            label="User Account"
             placeholder="egallagher@digmap.com "
           />
           <SelectMenu
             multiSelect="true"
             placeholder="Admin"
-            inputLabel="Roles"
+            label="Roles"
             options={[
               { value: "Marketing", label: "Marketing" },
               { value: "Acquisitions", label: "Acquisitions" },
@@ -264,7 +261,7 @@ storiesOf("Elements|Dialogue Box", module)
               { value: "Admin", label: "Admin" },
             ]}
           />
-          <Title title="Delete User?" size="tiny" weight="light" />
+          <Title text="Delete User?" size="tiny" weight="light" />
         </Section>
       }
       action="two"
