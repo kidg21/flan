@@ -249,7 +249,7 @@ function SelectMenu({
     isSearchable: isSearchable,
     isClearable: isClearable,
     isMulti: multiSelect,
-    isDisabled: isDisabled,
+    disabled: isDisabled,
     isLoading: isLoading,
     isRtl: isRtl,
     onChange: changeSelected,
