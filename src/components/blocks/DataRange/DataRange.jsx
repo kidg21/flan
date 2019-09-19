@@ -36,12 +36,14 @@ function DataRange({
   if (error && !isDisabled) {
     inputTextColor = colors.alert;
   }
-  function onChangeMin(e) {
-    if (onChange) onChange({ min: e.selected || e.target.value });
+  function onChangeMin(currState, newState, setState) {
+    if (onChange) onChange({min: newState ? newState.selected : currState.target.value});
+    if (setState) setState(newState);
   }
-
-  function onChangeMax(e) {
-    if (onChange) onChange({ max: e.selected || e.target.value });
+  
+  function onChangeMax(currState, newState, setState) {
+    if (onChange) onChange({max: newState ? newState.selected : currState.target.value});
+    if (setState) setState(newState);
   }
   return (
     <RangeContainer
