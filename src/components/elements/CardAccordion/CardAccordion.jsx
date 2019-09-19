@@ -22,7 +22,7 @@ function CardAccordion({
       }}
     >
       <Piece>{children}</Piece>
-      {hasOptions ? (<Piece>{options}</Piece>) : null}
+      {hasOptions ? <Piece>{options}</Piece> : null}
     </Accordion>
   );
 }

@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
@@ -6,9 +7,7 @@ import {
   withKnobs,
   text,
   boolean,
-  radios,
   select,
-  number,
   optionsKnob as options,
 } from "@storybook/addon-knobs";
 import Tabs, { Tab } from "blocks/Tabs";
@@ -26,240 +25,268 @@ storiesOf("Blocks|Tabs", module)
   .addDecorator(Padding)
   .add(
     "Documentation",
-    withInfo()(() => (
-      <Tabs>
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-      </Tabs>
-    )),
+    withInfo()(() => {
+      return (
+        <Tabs>
+          <Tab tabLabel="Tab" />
+          <Tab tabLabel="Tab" />
+          <Tab tabLabel="Tab" />
+        </Tabs>
+      );
+    }),
   );
 
 storiesOf("Blocks|Tabs", module)
   .addDecorator(Padding)
   .addDecorator(withKnobs)
-  .add("Knobs", () => (
-    <Tabs
-      columns={options(
-        "columns / row",
-        {
-          "single row ( default )": "default",
-          "row wrap (responsive)": "wrap",
-          "1 column / row": "1",
-          "2 columns / row": "2",
-          "3 columns / row": "3",
-          "4 columns / row": "4",
-          "5 columns / row": "5",
-        },
-        "default",
-        { display: "radio" },
-        "Tab Group",
-      )}
-      align={options(
-        "align",
-        {
-          "top ( default )": "default",
-          "left ( 1 column / vertical )": "left",
-          bottom: "bottom",
-          "right ( 1 column / vertical )": "right",
-        },
-        "default",
-        { display: "radio" },
-        "Tab Group",
-      )}
-      isFloating={boolean("float", false, "Tab Group")}
-    >
-      <Tab
-        icon={select(
-          "icon 1",
+  .add("Knobs", () => {
+    return (
+      <Tabs
+        columns={options(
+          "columns / row",
           {
-            "no icon": null,
-            info: "info",
-            clone: ["fal", "clone"],
-            search: ["far", "search"],
-            pencil: "pencil",
-            list: "list",
+            "single row ( default )": "default",
+            "row wrap (responsive)": "wrap",
+            "1 column / row": "1",
+            "2 columns / row": "2",
+            "3 columns / row": "3",
+            "4 columns / row": "4",
+            "5 columns / row": "5",
           },
-          null,
-          "Tab 1",
+          "default",
+          { display: "radio" },
+          "Tab Group",
         )}
-        tabLabel={text("Tab 1", "Tab 1", "Tab 1")}
-        isDisabled={boolean("Disable 1", false, "Tab 1")}
-      />
-      <Tab
-        icon={select(
-          "icon 2",
+        align={options(
+          "align",
           {
-            "no icon": null,
-            info: "info",
-            clone: ["fal", "clone"],
-            search: ["far", "search"],
-            pencil: "pencil",
-            list: "list",
+            "top ( default )": "default",
+            "left ( 1 column / vertical )": "left",
+            "bottom": "bottom",
+            "right ( 1 column / vertical )": "right",
           },
-          null,
-          "Tab 2",
+          "default",
+          { display: "radio" },
+          "Tab Group",
         )}
-        tabLabel={text("Tab 2", "Tab 2", "Tab 2")}
-        isDisabled={boolean("Disable 2", false, "Tab 2")}
-      />
-      <Tab
-        icon={select(
-          "icon 3",
-          {
-            "no icon": null,
-            info: "info",
-            clone: ["fal", "clone"],
-            search: ["far", "search"],
-            pencil: "pencil",
-            list: "list",
-          },
-          null,
-          "Tab 3",
-        )}
-        tabLabel={text("Tab 3", "Tab 3", "Tab 3")}
-        isDisabled={boolean("Disable 3", false, "Tab 3")}
-      />
-      <Tab
-        icon={select(
-          "icon 4",
-          {
-            "no icon": null,
-            info: "info",
-            clone: ["fal", "clone"],
-            search: ["far", "search"],
-            pencil: "pencil",
-            list: "list",
-          },
-          null,
-          "Tab 4",
-        )}
-        tabLabel={text("Tab 4", "Tab 4", "Tab 4")}
-        isDisabled={boolean("Disable 4", false, "Tab 4")}
-      />
-      <Tab
-        icon={select(
-          "icon 5",
-          {
-            "no icon": null,
-            info: "info",
-            clone: ["fal", "clone"],
-            search: ["far", "search"],
-            pencil: "pencil",
-            list: "list",
-          },
-          null,
-          "Tab 5",
-        )}
-        tabLabel={text("Tab 5", "Tab 5", "Tab 5")}
-        isDisabled={boolean("Disable 5", false, "Tab 5")}
-      />
-    </Tabs>
-  ));
+        isFloating={boolean("float", false, "Tab Group")}
+      >
+        <Tab
+          icon={select(
+            "icon 1",
+            {
+              "no icon": null,
+              "info": "info",
+              "clone": "clone",
+              "search": "search",
+              "draw": "draw",
+              "list": "list",
+            },
+            null,
+            "Tab 1",
+          )}
+          tabLabel={text("Tab 1", "Tab 1", "Tab 1")}
+          disabled={boolean("Disable 1", false, "Tab 1")}
+        />
+        <Tab
+          icon={select(
+            "icon 2",
+            {
+              "no icon": null,
+              "info": "info",
+              "clone": "clone",
+              "search": "search",
+              "draw": "draw",
+              "list": "list",
+            },
+            null,
+            "Tab 2",
+          )}
+          tabLabel={text("Tab 2", "Tab 2", "Tab 2")}
+          disabled={boolean("Disable 2", false, "Tab 2")}
+        />
+        <Tab
+          icon={select(
+            "icon 3",
+            {
+              "no icon": null,
+              "info": "info",
+              "clone": "clone",
+              "search": "search",
+              "draw": "draw",
+              "list": "list",
+            },
+            null,
+            "Tab 3",
+          )}
+          tabLabel={text("Tab 3", "Tab 3", "Tab 3")}
+          disabled={boolean("Disable 3", false, "Tab 3")}
+        />
+        <Tab
+          icon={select(
+            "icon 4",
+            {
+              "no icon": null,
+              "info": "info",
+              "clone": "clone",
+              "search": "search",
+              "draw": "draw",
+              "list": "list",
+            },
+            null,
+            "Tab 4",
+          )}
+          tabLabel={text("Tab 4", "Tab 4", "Tab 4")}
+          disabled={boolean("Disable 4", false, "Tab 4")}
+        />
+        <Tab
+          icon={select(
+            "icon 5",
+            {
+              "no icon": null,
+              "info": "info",
+              "clone": "clone",
+              "search": "search",
+              "draw": "draw",
+              "list": "list",
+            },
+            null,
+            "Tab 5",
+          )}
+          tabLabel={text("Tab 5", "Tab 5", "Tab 5")}
+          disabled={boolean("Disable 5", false, "Tab 5")}
+        />
+      </Tabs>
+    );
+  });
 
 storiesOf("Blocks|Tabs", module)
   .addDecorator(Padding)
-  .add("Simgle-Row (default)", () => (
-    <Tabs>
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-    </Tabs>
-  ))
-  .add("Row-Wrap (responsive)", () => (
-    <Tabs columns="wrap">
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-    </Tabs>
-  ))
-  .add("1 Column per Row", () => (
-    <Tabs columns="1">
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-    </Tabs>
-  ))
-  .add("2 Columns per Row", () => (
-    <Tabs columns="2">
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-    </Tabs>
-  ))
-  .add("3 Columns per Row", () => (
-    <Tabs columns="3">
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-    </Tabs>
-  ))
-  .add("4 Columns per Row", () => (
-    <Tabs columns="4">
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-    </Tabs>
-  ))
-  .add("5 Columns per Row", () => (
-    <Tabs columns="5">
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-    </Tabs>
-  ))
-  .add("Vertical Column - Left", () => (
-    <Tabs align="left">
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-    </Tabs>
-  ))
-  .add("Simgle-Row, Bottom-Aligned", () => (
-    <Tabs align="bottom">
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-    </Tabs>
-  ))
-  .add("Vertical Column - Right", () => (
-    <Tabs align="right">
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-    </Tabs>
-  ))
-  .add("Floating", () => (
-    <Tabs isFloating={true}>
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-      <Tab tabLabel="Tab" />
-    </Tabs>
-  ))
-  .add("Icon Tabs", () => (
-    <Tabs>
-      <Tab icon="user" />
-      <Tab icon="user" />
-      <Tab icon="user" />
-    </Tabs>
-  ));
+  .add("Single-Row (default)", () => {
+    return (
+      <Tabs>
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+      </Tabs>
+    );
+  })
+  .add("Row-Wrap (responsive)", () => {
+    return (
+      <Tabs columns="wrap">
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+      </Tabs>
+    );
+  })
+  .add("1 Column per Row", () => {
+    return (
+      <Tabs columns="1">
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+      </Tabs>
+    );
+  })
+  .add("2 Columns per Row", () => {
+    return (
+      <Tabs columns="2">
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+      </Tabs>
+    );
+  })
+  .add("3 Columns per Row", () => {
+    return (
+      <Tabs columns="3">
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+      </Tabs>
+    );
+  })
+  .add("4 Columns per Row", () => {
+    return (
+      <Tabs columns="4">
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+      </Tabs>
+    );
+  })
+  .add("5 Columns per Row", () => {
+    return (
+      <Tabs columns="5">
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+      </Tabs>
+    );
+  })
+  .add("Vertical Column - Left", () => {
+    return (
+      <Tabs align="left">
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+      </Tabs>
+    );
+  })
+  .add("Single-Row, Bottom-Aligned", () => {
+    return (
+      <Tabs align="bottom">
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+      </Tabs>
+    );
+  })
+  .add("Vertical Column - Right", () => {
+    return (
+      <Tabs align="right">
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+      </Tabs>
+    );
+  })
+  .add("Floating", () => {
+    return (
+      <Tabs isFloating>
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" />
+      </Tabs>
+    );
+  })
+  .add("Icon Tabs", () => {
+    return (
+      <Tabs>
+        <Tab tabLabel="Tab" icon="user" />
+        <Tab tabLabel="Tab" icon="user" />
+        <Tab tabLabel="Tab" icon="user" />
+      </Tabs>
+    );
+  });
 
 storiesOf("Blocks|Tabs", module)
   .addDecorator(Padding)
-  .add("Simgle-Select", () =>
-    React.createElement(() => {
+  .add("Single-Select", () => {
+    return React.createElement(() => {
       const [activeSingleTab, setActiveSingleTab] = useState("tab1");
       return (
         <Tabs columns="" isFloating={false}>
@@ -286,10 +313,10 @@ storiesOf("Blocks|Tabs", module)
           />
         </Tabs>
       );
-    }),
-  )
-  .add("Toggle-Select", () =>
-    React.createElement(() => {
+    });
+  })
+  .add("Toggle-Select", () => {
+    return React.createElement(() => {
       const [activeToggleTab, setActiveToggleTab] = useState("");
       return (
         <Tabs columns="" isFloating={false}>
@@ -331,10 +358,10 @@ storiesOf("Blocks|Tabs", module)
           />
         </Tabs>
       );
-    }),
-  )
-  .add("Multi-Select", () =>
-    React.createElement(() => {
+    });
+  })
+  .add("Multi-Select", () => {
+    return React.createElement(() => {
       const [activeMultiTab, setActiveMultiTab] = useState(false);
       const [activeMultiTab2, setActiveMultiTab2] = useState(false);
       const [activeMultiTab3, setActiveMultiTab3] = useState(false);
@@ -363,5 +390,5 @@ storiesOf("Blocks|Tabs", module)
           />
         </Tabs>
       );
-    }),
-  );
+    });
+  });

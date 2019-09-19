@@ -1,33 +1,26 @@
-// ./components/colors.jsx
-
-// Import dependencies
-import React from "react"
-import styled from "styled-components"
-import PropTypes from "prop-types";
-
-// Import colors and sizes variables
-import { colors, shadows } from "../Variables/Variables"
-// Import Container component
+import React from "react";
+import styled from "styled-components";
+import { colors, shadows, screen } from "Variables";
 
 const ColorsContainer = styled.div`
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
-  @media (min-width: 40.063em) {
+  @media ${screen.medium} {
     grid-template-columns: repeat(4, 1fr);
   }
-  @media (min-width: 64.063em) {
+  @media ${screen.large} {
     grid-template-columns: repeat(8, 1fr);
   }
   grid-auto-flow: dense;
-`
+`;
 
 // Container for one color sample
 const ColorBlock = styled.div`
   display: grid;
   align-content: flex-start;
   background-color: ${props => props.theme};
-`
+`;
 
 // Color thumbnail
 const ColorBlockColor = styled.div`
@@ -35,13 +28,13 @@ const ColorBlockColor = styled.div`
   height: 100px;
   background-color: ${props => props.theme};
   box-shadow: ${shadows.lightBorderShadow};
-`
+`;
 
 // Color label
 const ColorBlockTitle = styled.h4`
   color: ${colors.grey_60};
   margin: 0.5rem 0.5rem 0.5rem;
-`
+`;
 
 // Color codes
 const ColorBlockCode = styled.small`
@@ -59,7 +52,7 @@ const ColorBlockCode = styled.small`
       text-decoration: underline;
     }
   }
-`
+`;
 
 const Colors = () => {
   return (
@@ -156,7 +149,7 @@ const Colors = () => {
           <small>Const</small>
           <h6>colors.grey_60</h6>
         </ColorBlockCode>
-        
+
         <ColorBlockCode>
           <small>HSL</small>
           <h6>34, 5%, 58%</h6>
@@ -318,7 +311,7 @@ const Colors = () => {
         </ColorBlockCode>
       </ColorBlock>
     </ColorsContainer>
-  )
-}
+  );
+};
 
-export default Colors
+export default Colors;

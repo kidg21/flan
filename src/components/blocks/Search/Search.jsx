@@ -1,9 +1,9 @@
-import React, { useState, Fragment } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Icon from "atoms/Icon";
 import TextInput from "atoms/TextInput";
-import { colors, shadows } from "Variables";
+import { colors } from "Variables";
 
 const IconWrapper = styled.span`
   /* Needed for passing properties to children (animation, etc.) */
@@ -18,7 +18,7 @@ const SearchContainer = styled.div`
     right: 0;
     background-color: ${colors.white};
     margin: 0.2em;
-    padding: 0.6em;
+    padding: 0.5em;
     cursor: pointer;
   }
 `;
@@ -32,7 +32,7 @@ function Search({ id, onStartLocate, ...inputProps }) {
       <form onSubmit={onStartLocate}>
         <TextInput placeholder="Search" state="search" {...inputProps} >
           <IconWrapper>
-            <Icon icon={["far", "search"]} type="info" onClick={onStartLocate} />
+            <Icon icon={"search"} type="info" onClick={onStartLocate} />
           </IconWrapper>
         </TextInput>
       </form>
@@ -46,6 +46,12 @@ Search.propTypes = {
   value: PropTypes.string.isRequired,
   autocompleteList: PropTypes.arrayOf(PropTypes.string),
   size: PropTypes.string,
+  onClick: PropTypes.func,
+};
+
+Search.defaultProps = {
+  id: null,
+  onClick: null,
 };
 
 export default Search;

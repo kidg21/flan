@@ -1,32 +1,24 @@
 import { createGlobalStyle } from "styled-components";
 import styledNormalize from "styled-normalize";
-import {Skeleton} from "helpers/Skeleton.jsx";
+import { Skeleton } from "helpers";
 // Import variables
 import { colors, fonts, fontSize } from "Variables";
 // Import Fonts
-import "../../../css/fonts.css";
+import "css/fonts.css";
 // Import Icons
-import "../../../icons/fontawesome";
+import "icons/fontawesome";
 
 const GlobalStyles = createGlobalStyle`
 
     /* Browser resets */
     ${styledNormalize}
 
-    /* Import font resources */
-    ${
-      "" /* @font-face {
-        font-family: Lato;
-        src: local("Lato");
-        src: url(${Lato_700});
-    } */
-    }
+    /** TODO: Font imports */
 
     /* Document resets */
     html {
         box-sizing: border-box;
         font-size: ${fontSize.base};
-        line-height: 1.2;
     }
 
     *,
@@ -41,6 +33,7 @@ const GlobalStyles = createGlobalStyle`
         font-family: ${fonts.body}; /* Muli */
         color: ${colors.grey_80};
         font-weight: 400;
+        line-height: 1.45;
         overscroll-behavior: none;
     }
 
@@ -72,9 +65,6 @@ const GlobalStyles = createGlobalStyle`
     a {
       color: ${colors.anchor};
       line-height: inherit;
-      ${""}
-      ${""}
-      ${""}
       text-decoration: none;
       cursor: pointer;
       &:empty {
@@ -88,10 +78,6 @@ const GlobalStyles = createGlobalStyle`
       &:focus {
         color: ${colors.anchor_light};
       }
-
-      ${"" /* &:focus {
-        ${colors.grey_60};
-        } */}
       img { border: none; }
       }
 
@@ -99,24 +85,19 @@ const GlobalStyles = createGlobalStyle`
     h1, h2, h3, h4, h5, h6, p {
         font-style: normal;
         color: inherit;
-        letter-spacing: 0.025em;
     }
     p {
         font-family: inherit;
-        font-size: 1rem;
-        line-height: 1.5rem;
         margin: 0 0 1rem;
     }
     h1, h2, h3, h4, h5, h6 {
         font-family: ${fonts.headline}; /* Muli */
-        font-weight: 700;
+        font-weight: 600;
         margin: 0 0 .5rem;
+        line-height: 1.35;
     }
     h1 {
-        font-size: 2rem;
-        ${""}
-        ${""}
-        line-height: 2.4rem;
+        font-size: 1.383em;
         &:empty {
             &:before {
               ${Skeleton};
@@ -126,9 +107,7 @@ const GlobalStyles = createGlobalStyle`
           }
     }
     h2 {
-        font-size: 1.5rem;
-        ${""}
-        line-height: 2rem;
+        font-size: 1.296em;
         &:empty {
             &:before {
               ${Skeleton};
@@ -138,9 +117,7 @@ const GlobalStyles = createGlobalStyle`
           }
     }
     h3 {
-        font-size: 1.3rem;
-        ${""}
-        line-height: 1.8rem;
+        font-size: 1.215em;
         &:empty {
             &:before {
               ${Skeleton};
@@ -150,9 +127,7 @@ const GlobalStyles = createGlobalStyle`
           }
     }
     h4 {
-        font-size: 1rem;
-        ${""}
-        line-height: 1.4rem;
+        font-size: 1.138em;
         &:empty {
             &:before {
               ${Skeleton};
@@ -162,11 +137,7 @@ const GlobalStyles = createGlobalStyle`
           }
     }
     h5 {
-        font-size: 1rem;
-        font-family: ${fonts.headline}; /* Muli */
-        font-weight: 500;
-        margin: 0 0 .5rem;
-        line-height: 1.4rem;
+        font-size: 1.067em;
         &:empty {
             &:before {
               ${Skeleton};
@@ -176,9 +147,7 @@ const GlobalStyles = createGlobalStyle`
           }
     }
     h6 {
-        font-size: 0.8rem;
-        ${""}
-        line-height: 1.2rem;
+        font-size: 1em;
         &:empty {
             &:before {
               ${Skeleton};
@@ -188,7 +157,6 @@ const GlobalStyles = createGlobalStyle`
           }
     }
     img, object {
-        ${""}
         &:empty {
             &:before {
               ${Skeleton};
@@ -230,18 +198,22 @@ const GlobalStyles = createGlobalStyle`
     }
 /* Labels */
     label {
-        font-family: ${fonts.data};
-        font-size: smaller;
-          &:empty {
-            &:before {
-              ${Skeleton};
-              height: 1.3em;
-              width: 5rem;
-            }
-          }
+      font-family: ${fonts.data};
+      font-size: 0.85em;
+      letter-spacing: 1px;
+      &:empty {
+        &:before {
+          ${Skeleton};
+          height: 1.3em;
+          width: 5rem;
+        }
+      }
     }
 /* Buttons */
     button {
+      &:focus {
+        outline: none;
+      }
       &:empty {
         &:before {
           ${Skeleton};
@@ -269,36 +241,56 @@ const GlobalStyles = createGlobalStyle`
     input[type="range"],
     textarea,
     select {
-        box-sizing: border-box;
-        width: 100%;
-        color: ${colors.grey_dark};
-        font-family: ${fonts.data};
-        letter-spacing: 1px;
-        border-radius: 5px;
-        font-size: 12px;
-        transition: border-color 0.1s linear, background 0.1s linear;
-        appearance: none;
-        
+      box-sizing: border-box;
+      width: 100%;
+      color: ${colors.grey_dark};
+      font-family: ${fonts.data};
+      letter-spacing: 1px;
+      border-radius: 5px;
+      font-size: 12px;
+      transition: border-color 0.1s linear, background 0.1s linear;
+      appearance: none;
+      &:focus {
+        outline: none;
+      }
+      &[disabled],
+      &[readonly] {
+        cursor: not-allowed;
+        pointer-events: none;
+        user-select: none;
+        background-color: ${colors.grey_light};
+      }
+      ::-webkit-datetime-edit-day-field,
+      ::-webkit-datetime-edit-week-field,
+      ::-webkit-datetime-edit-month-field,
+      ::-webkit-datetime-edit-year-field,
+      ::-webkit-datetime-edit-hour-field,
+      ::-webkit-datetime-edit-minute-field,
+      ::-webkit-datetime-edit-second-field,
+      ::-webkit-datetime-edit-millisecond-field,
+      ::-webkit-datetime-edit-ampm-field,
+      ::-webkit-datetime-edit-text {
         &:focus {
-            outline: none;
+          color: ${colors.white};
+          background-color: ${colors.success};
         }
-        &[disabled],
-        &[readonly] {
-            cursor: not-allowed;
-            pointer-events: none;
-            user-select: none;
-            background-color: ${colors.grey_20};
-        }
+      }
     }
     input[type="checkbox"],
     input[type="radio"] {
-        &[disabled],
-        &[readonly] {
-            cursor: not-allowed;
-            pointer-events: none;
-            user-select: none;
-        }
+      &[disabled],
+      &[readonly] {
+        cursor: not-allowed;
+        pointer-events: none;
+        user-select: none;
+      }
     }
+    input[type="range"] {
+      &[disabled],
+      &[readonly] {
+          background-color: ${colors.grey_40};
+        }
+      }
     `;
 
 export default GlobalStyles;

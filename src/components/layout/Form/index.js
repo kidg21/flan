@@ -1,12 +1,1 @@
-export {
-  default,
-  Title,
-  Section,
-  SectionName,
-  CenteredSection,
-  InputLabel,
-  HelpText,
-  ErrorText,
-  InputGroup,
-  Label
-} from "./Form.jsx";
+export { default, Section, InputLabel, HelpText, ErrorText } from "./Form.jsx";

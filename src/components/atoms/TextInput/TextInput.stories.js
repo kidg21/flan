@@ -1,119 +1,123 @@
+/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
 import { withInfo } from "@storybook/addon-info";
-import {
-  withKnobs,
-  text,
-  boolean,
-  radios,
-  select,
-  number
-} from "@storybook/addon-knobs";
-import Panel, { PanelSection } from "../../layout/Panel/Panel";
-import Form, { Section, SectionName } from "../../layout/Form/Form";
+import { withKnobs, text, boolean, radios } from "@storybook/addon-knobs";
 import TextInput from "atoms/TextInput";
+import Panel, { PanelSection } from "layout/Panel";
+import Form, { Section } from "layout/Form";
 import TextInputNotes from "./TextInput.md";
 
-storiesOf("Atoms|TextInput", module)
+storiesOf("Atoms|Text Input", module)
   .addParameters({
     info: {
       text:
-        "TextInputs allow users to enter text into a UI. They typically appear in forms and dialogs"
+        "Text Inputs allow users to enter text into a UI. They typically appear in forms and dialogs",
     },
     notes: {
-      markdown: TextInputNotes
-    }
+      markdown: TextInputNotes,
+    },
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
   .add(
     "Documentation",
-    withInfo()(() => (
-      <TextInput
-        inputLabel="TextInput ( Standard )"
-        placeholder="I am just keeping things warm"
-        helpText="This help text has been passed through a prop!"
-      />
-    ))
+    withInfo()(() => {
+      return (
+        <TextInput
+          label="Text Input ( Standard )"
+          placeholder="I am just keeping things warm"
+          helpText="This help text has been passed through a prop!"
+        />
+      );
+    }),
   )
-  .add("Skeleton", () => <TextInput />)
+  .add("Skeleton", () => {
+    return <TextInput />;
+  })
   .add(
     "Knobs",
-    withInfo()(() => (
-      <TextInput
-        type={radios(
-          "Type",
-          {
-            Text: "text",
-            Number: "number",
-            Textarea: "textarea"
-          },
-          "text"
-        )}
-        inputLabel={text("TextInput Label", "TextInput Label")}
-        isRequired={boolean("Required", false)}
-        placeholder={text("Placeholder Text", "I am just keeping things warm")}
-        helpText={text("Help Text", "Have you been helped yet?")}
-        errorMessage={text(
-          "Error Text",
-          "Stay with my, buddy...we can fix this!"
-        )}
-        state={radios(
-          "State",
-          {
-            Standard: "default",
-            Error: "error",
-            Disabled: "disabled"
-          },
-          "default"
-        )}
-      />
-    ))
+    withInfo()(() => {
+      return (
+        <TextInput
+          type={radios(
+            "Type",
+            {
+              Text: "text",
+              Number: "number",
+              Textarea: "textarea",
+            },
+            "text",
+          )}
+          label={text("label", "Text Input Label", "Text Input")}
+          isRequired={boolean("required", false, "Text Input")}
+          placeholder={text("placeholder text", "I am just keeping things warm", "Text Input")}
+          helpText={text("help text", "Have you been helped yet?", "Text Input")}
+          error={
+            boolean("error", false, "Text Input") &&
+            text("error text", "Error message...", "Text Input")
+          }
+          disabled={boolean("disabled", false, "Text Input")}
+        />
+      );
+    }),
   );
-// TextInput ( The TextInput Family )
-storiesOf("Atoms|TextInput", module).add("The TextInput Family", props => (
-  <Panel>
-    <PanelSection body>
-      <Form>
-        <Section>
-          <SectionName>The TextInput Family</SectionName>
-          <TextInput
-            inputLabel="TextInput ( Standard )"
-            placeholder="I am just keeping things warm"
-            helpText="This help text has been passed through a prop!"
-          />
-          <TextInput
-            type="number"
-            inputLabel="TextInput ( Number )"
-            helpText="This help text has been passed through a prop!"
-          />
-          <TextInput
-            type="textarea"
-            inputLabel="TextInput ( Text Area )"
-            helpText="This help text has been passed through a prop!"
-          />
-          <TextInput
-            inputLabel="TextInput ( Required )"
-            placeholder="I am just keeping things warm"
-            helpText="This help text has been passed through a prop!"
-            isRequired={true}
-          />
-          <TextInput
-            inputLabel="TextInput ( Disabled )"
-            placeholder="I am just keeping things warm"
-            helpText="This help text has been passed through a prop!"
-            state="disabled"
-          />
-          <TextInput
-            inputLabel="TextInput ( Error )"
-            placeholder="I am just keeping things warm"
-            helpText="This help text has been passed through a prop!"
-            errorMessage="This error text has been passed through a prop!"
-            state="error"
-          />
-        </Section>
-      </Form>
-    </PanelSection>
-  </Panel>
-));
+// Text Input ( The Text Input Family )
+storiesOf("Atoms|Text Input", module).add("The Text Input Family", () => {
+  return (
+    <Panel>
+      <PanelSection body>
+        <Form title="The Text Input Family">
+          <Section>
+            <TextInput
+              label="Text Input ( error boolean )"
+              placeholder="I am just keeping things warm"
+              helpText="This help text has been passed through a prop!"
+              error
+            />
+            <TextInput
+              label="Text Input ( error string )"
+              placeholder="I am just keeping things warm"
+              helpText="This help text has been passed through a prop!"
+              error="Error Message"
+            />
+            <TextInput
+              label="Text Input ( Standard )"
+              placeholder="I am just keeping things warm"
+              helpText="This help text has been passed through a prop!"
+            />
+            <TextInput
+              type="number"
+              label="Text Input ( Number )"
+              helpText="This help text has been passed through a prop!"
+            />
+            <TextInput
+              type="textarea"
+              label="Text Input ( Text Area )"
+              helpText="This help text has been passed through a prop!"
+            />
+            <TextInput
+              label="Text Input ( Required )"
+              placeholder="I am just keeping things warm"
+              helpText="This help text has been passed through a prop!"
+              isRequired
+            />
+            <TextInput
+              label="Text Input ( Disabled )"
+              placeholder="I am just keeping things warm"
+              helpText="This help text has been passed through a prop!"
+              disabled
+            />
+            <TextInput
+              label="Text Input ( Error )"
+              placeholder="I am just keeping things warm"
+              helpText="This help text has been passed through a prop!"
+              error="This error text has been passed through a prop!"
+            />
+          </Section>
+        </Form>
+      </PanelSection>
+    </Panel>
+  );
+});

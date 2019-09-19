@@ -68,9 +68,9 @@ storiesOf("Atoms|Badge", module)
               "no icon": null,
               user: "user",
               check: "check",
-              exclamation: "exclamation",
-              envelope: "envelope",
-              phone: "phone",
+              alert: "alert",
+              mail: "mail_solid",
+              call: "call",
             },
             null,
             { display: "select" },
@@ -95,7 +95,7 @@ storiesOf("Atoms|Badge", module)
   ))
 
   .add("The Badge Family", () => (
-    <CardList columns="4">
+    <CardList columns="4" gap="large">
       <Card>
         <Badge label="1" />
         <Title>1-Digit</Title>
@@ -139,11 +139,11 @@ storiesOf("Atoms|Badge", module)
         <Title>Icon</Title>
       </Card>
       <Card>
-        <Badge icon="exclamation" type="warning" />
+        <Badge icon="alert" type="warning" />
         <Title>Icon</Title>
       </Card>
       <Card>
-        <Badge icon="envelope" type="alert" />
+        <Badge icon="mail_solid" type="alert" />
         <Title>Icon</Title>
       </Card>
 
@@ -177,7 +177,7 @@ storiesOf("Atoms|Badge", module)
         <Title>Message</Title>
       </Card>
       <Card>
-        <Badge icon="phone" type="dark" />
+        <Badge icon="call" type="dark" />
         <Title>Message</Title>
       </Card>
 

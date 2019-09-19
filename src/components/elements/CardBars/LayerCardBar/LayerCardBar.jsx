@@ -1,9 +1,10 @@
-import React, { useState } from "react";
-import styled, { css } from "styled-components";
+/* eslint-disable react/jsx-one-expression-per-line */
+import React from "react";
+import styled from "styled-components";
 import PropTypes from "prop-types";
 import IconBlock from "blocks/IconBlock";
 import Bar from "blocks/Bar";
-import Card, { Piece } from "layout/Card";
+import { Piece } from "layout/Card";
 import Title from "base/Typography";
 
 import Switch from "atoms/Switch";
@@ -22,17 +23,22 @@ const SwitchContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 1rem;
-  filter: ${props => (props.disabled === true ? "brightness(130%)" : "")};
+  filter: ${(props) => {
+    props.disabled ? "brightness(130%)" : "";
+  }};
 `;
 
-function LayerCardBar({ id, title, icons, switchProps, disabled }) {
+function LayerCardBar({
+  id, title, icons, switchProps, disabled,
+}) {
+  const switchComponent = disabled ? <Switch /> : <Switch {...switchProps} />
   return (
     <Piece id={id} title={title} disabled={disabled}>
       <Bar
+        padding="2x"
         left={
           <SwitchContainer disabled={disabled ? true : false}>
-            {" "}
-            <Switch {...switchProps} />
+            {switchComponent}
             <Title title={title} weight="normal" />
           </SwitchContainer>
         }

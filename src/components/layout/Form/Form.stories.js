@@ -1,73 +1,145 @@
+/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import Panel, { PanelSection } from "../Panel/Panel";
-import Form, { Title, Section, SectionName, InputGroup } from "./Form";
-import Checkbox from "../../atoms/Checkbox/Checkbox";
+import Panel, { PanelSection } from "layout/Panel";
+import Form, { Section } from "layout/Form";
+import TextInput from "atoms/TextInput";
+import { CheckboxGroup } from "atoms/Checkbox";
+import { RadioGroup } from "atoms/Radio";
+import SelectMenu from "atoms/SelectMenu";
 
-const cbox_1 = {
-  id: "cbox_1",
-  label: "First Checkbox"
-};
-const cbox_2 = {
-  id: "cbox_2",
-  label: "Second Checkbox"
-};
-const cbox_3 = {
-  id: "cbox_3",
-  label:
-    "Little trees and bushes grow however makes them happy. Just let your mind wander and enjoy. This should make you happy. You don't have to spend all your time thinking about what you're doing, you just let it happen. Let's make a happy little mountain now. If I paint something, I don't want to have to explain what it is.  All you have to learn here is how to have fun. Now, we're going to fluff this cloud. Put it in, leave it alone. Trees get lonely too, so we'll give him a little friend."
-};
-const cbox_4 = {
-  id: "cbox_4",
-  label: "Fourth Checkbox"
-};
-const cbox_5 = {
-  id: "cbox_5",
-  label: "Fifth Checkbox"
-};
-const cbox_6 = {
-  id: "cbox_6",
-  label:
-    "Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.  Let's get crazy. When things happen - enjoy them. They're little gifts. Steve wants reflections, so let's give him reflections. All you need to paint is a few tools, a little instruction, and a vision in your mind. Everybody needs a friend. This is your world."
-};
+const shortBoxes = [
+  {
+    id: "box-1",
+    label: "Label 1",
+  },
+  {
+    id: "box-2",
+    label: "Label 2 (disabled)",
+    disabled: true,
+  },
+  {
+    id: "box-3",
+    label: "Label 3",
+  },
+  {
+    id: "box-4",
+    label: "Label 4",
+  },
+];
+const longBoxes = [
+  {
+    id: "box_long",
+    label:
+      "My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself.",
+  },
+  {
+    id: "box_long2",
+    label: "Enough with these long labels already...put it on your blog, Shakespeare.",
+  },
+];
+const shortRadios = [
+  {
+    id: "radio-1",
+    name: "radio-group",
+    value: "1",
+    label: "Label 1",
+  },
+  {
+    id: "radio-2",
+    name: "radio-group",
+    value: "2",
+    label: "Label 2 (disabled)",
+  },
+  {
+    id: "radio-3",
+    name: "radio-group",
+    value: "3",
+    label: "Label 3",
+    disabled: true,
+  },
+  {
+    id: "radio-4",
+    name: "radio-group",
+    value: "4",
+    label: "Label 4",
+  },
+];
+const longRadios = [
+  {
+    id: "radio_long",
+    name: "radio-group",
+    value: "5",
+    label:
+      "My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself.",
+    disabled: true,
+  },
+  {
+    id: "radio_long2",
+    name: "radio-group",
+    value: "6",
+    label: "Enough with these long labels already...put it on your blog, Shakespeare.",
+  },
+];
+const options = [
+  { value: "chocolate", label: "Chocolate" },
+  { value: "strawberry", label: "Strawberry" },
+  { value: "vanilla", label: "Vanilla" },
+  { value: "pistachio", label: "Pistachio" },
+  { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
+  { value: "cookie dough", label: "Cookie Dough" },
+];
 
-storiesOf("Layout|Form", module).add("Form Layout", () => (
-  <Panel>
-    <PanelSection body>
-      <Form>
-        <Title>Form Title</Title>
-        <Section>
-          <SectionName>Section Name</SectionName>
-          <InputGroup>
-            <Checkbox {...cbox_1} />
-            <Checkbox {...cbox_2} />
-          </InputGroup>
-          <InputGroup oneColumn>
-            <Checkbox {...cbox_3} />
-          </InputGroup>
-        </Section>
-        <Section>
-          <SectionName>Section Name</SectionName>
-          <InputGroup>
-            <Checkbox {...cbox_4} />
-            <Checkbox {...cbox_5} />
-          </InputGroup>
-          <InputGroup oneColumn>
-            <Checkbox {...cbox_6} />
-          </InputGroup>
-        </Section>
-        <Title />
-        <Section>
-          <SectionName />
-          <InputGroup>
-            <Checkbox />
-            <Checkbox />
-          </InputGroup>
-          <InputGroup oneColumn>
-            <Checkbox />
-          </InputGroup>
-        </Section>
-      </Form>
-    </PanelSection>
-  </Panel>
-));
+storiesOf("Layout|Form", module).add("Form Layout", () => {
+  return (
+    <Panel>
+      <PanelSection body>
+        <Form
+          title="Form Header"
+          subtitle="This is the subtitle"
+          description="Just think about these things in your mind - then bring them into your world. Isn't that fantastic?  All you need to paint is a few tools, a little instruction, and a vision in your mind."
+        >
+          <Section title="Group 1">
+            <TextInput
+              label="First Name"
+              placeholder="John"
+              helpText="The one that your parents gave you"
+            />
+            <TextInput
+              label="Last Name"
+              placeholder="Williams"
+              helpText="The one that comes after.."
+            />
+          </Section>
+          <Section title="Group 2">
+            <CheckboxGroup
+              id="Section Name"
+              label="Checkbox Group Label"
+              data={shortBoxes}
+              helpText="This help text has been passed through a prop!"
+              columns="2"
+            />
+            <CheckboxGroup data={longBoxes} columns="1" />
+            <SelectMenu
+              multiSelect
+              label="Multi-Select"
+              placeholder="Choose One Or More..."
+              helpText="Help text for the SelectMenu component"
+              options={options}
+            />
+          </Section>
+          <Section title="Group 3">
+            <RadioGroup
+              id="Section Name"
+              label="Radio Group Label"
+              data={shortRadios}
+              helpText="This help text has been passed through a prop!"
+              columns="2"
+            />
+            <RadioGroup data={longRadios} columns="1" />
+          </Section>
+        </Form>
+      </PanelSection>
+    </Panel>
+  );
+});
