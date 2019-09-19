@@ -47,7 +47,6 @@ export { default as PropertyListCard } from "./elements/ListCards/PropertyListCa
 export { default as Card, CardList } from "./layout/Card";
 export {
   default as Form,
-  Header,
   Section,
   InputLabel,
   HelpText,
