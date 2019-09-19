@@ -1,1 +1,1 @@
-export { default, SubMenu } from "./Menu.jsx";
+export { default } from "./Menu.jsx";

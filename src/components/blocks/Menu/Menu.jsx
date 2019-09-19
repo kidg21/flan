@@ -128,7 +128,7 @@ function Menu({ id, data, position }) {
           </EditMenu>
         </Card>
       ) : null}
-      {visibility ? (<Card><SubMenu 
+      {/* {visibility ? (<Card><SubMenu 
             setTransform="translate(-200%, 105%)">{data.map((item) => {
               return (
                 <Item key={item.id} onClick={item.onClickLink}
@@ -140,7 +140,7 @@ function Menu({ id, data, position }) {
                   <Title text={item.name} weight="normal" />
                 </Item>
               );
-            })}</SubMenu></Card>) : null}
+            })}</SubMenu></Card>) : null} */}
     </Container>
   );
 }

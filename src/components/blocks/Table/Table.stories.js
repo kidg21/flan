@@ -12,8 +12,6 @@ const data = [
   { id: "c", name: "Zoning", value: "No Zone" },
 ];
 
-
-
 const Columns = ["Name", "Roles", "Action"];
 
 const Users = [
@@ -34,17 +32,12 @@ const Users = [
   { name: "pnguyen", roles: ["Developer", "Acquisitions"], action: <Icon icon="edit" /> },
 ];
 
-
 storiesOf("Work|Table", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  .add("Simple", () => (
-    <div>
-      <Table data={data} />
-      <Table data={data} width="half" />
-      <Table data={data} width="full" />
-    </div>
-  ))
+  .add("Simple", () => {
+    return <DataTable data={data} style="legend" />;
+  })
   .add("Data Table", () => {
-    return <DataTable columns={Columns} data={Users} />;
+    return <DataTable columns={Columns} data={Users} scroll header />;
   });

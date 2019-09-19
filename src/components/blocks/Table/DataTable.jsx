@@ -1,22 +1,35 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import Container from "atoms/Container";
-import Icon from "atoms/Icon";
+import { SkeletonStatic } from "helpers";
 
 const Wrapper = styled.div`
   display: block;
 `;
 const TableContainer = styled.table`
   width: 100%;
-  overflow-y: auto;
-  overflow-x: auto;
+  overflow-y: ${(props) => {
+    return props.scroll ? "auto" : "";
+  }};
+  overflow-x: ${(props) => {
+    return props.scroll ? "auto" : "";
+  }};
   table-layout: fixed;
   border-collapse: collapse;
   cell-padding: 1rem;
-  overflow: scroll;
+  overflow: ${(props) => {
+    return props.scroll ? "scroll" : "";
+  }};
   min-width: 400px;
   cell-spacing: 1rem;
-  // border: 1px solid lightgrey;
+
+  &:empty {
+    ${SkeletonStatic};
+    padding: 5px;
+    width: 100 em;
+    height: 5rem;
+  }
+}
 `;
 
 const Row = styled.tr`
@@ -39,17 +52,52 @@ const TH = styled.th`
 `;
 
 const Cell = styled.td`
-  padding: 0.5em;
-  border-bottom: 1px solid #ddd;
+  padding: ${(props) => {
+    return props.cellPadding || "";
+  }};
+  border-bottom: ${(props) => {
+    return props.cellBorder || "";
+  }};
+
+  &:nth-child(even) {
+    font-weight: ${(props) => {
+    return props.fontWeight || "";
+  }};
+  }
+
+  &:empty {
+    &:before {
+      content: "Not Available";
+    }
+  }
 `;
 
-//   &:nth-child(even) {
-//     font-weight: bold;
-//   }
+function DataTable({
+  id, header, scroll, style, data, columns,
+}) {
+  let content;
+  let cellPadding;
+  let fontWeight;
+  let cellBorder;
+  let headerContent;
 
-function DataTable({ id, data, columns }) {
-  return (
-    <Wrapper id={id}>
+  switch (style) {
+    case "legend":
+      cellBorder = "";
+      cellPadding = "0.25em 0.25em 0.25em";
+      fontWeight = "bold";
+      break;
+    case "standard":
+      cellBorder = "1px solid #ddd";
+      cellPadding = "0.5em";
+      break;
+    default:
+      cellBorder = "1px solid #ddd";
+      cellPadding = "0.5em";
+      break;
+  }
+  if (header) {
+    headerContent = (
       <TableContainer>
         <THEAD>
           <Row>
@@ -59,21 +107,59 @@ function DataTable({ id, data, columns }) {
           </Row>
         </THEAD>
       </TableContainer>
-      <Container height="200px">
-        <TableContainer>
-          <Body>
-            {data.map((row) => {
-              return (
-                <Row>
-                  {columns.map((column) => {
-                    return <Cell key={column}>{row[column.toLowerCase()]}</Cell>;
-                  })}
-                </Row>
-              );
-            })}
-          </Body>
-        </TableContainer>
-      </Container>
+    );
+    content = (
+      <Body>
+        {data.map((row) => {
+          return (
+            <Row>
+              {columns.map((column) => {
+                return (
+                  <Cell
+                    key={column}
+                    cellBorder={cellBorder}
+                    cellPadding={cellPadding}
+                    fontWeight={fontWeight}
+                  >
+                    {row[column.toLowerCase()]}
+                  </Cell>
+                );
+              })}
+            </Row>
+          );
+        })}
+      </Body>
+    );
+  } else {
+    content = (
+      <TableContainer id={id}>
+        {data.map((row) => {
+          return (
+            <Row key={row.id}>
+              <Cell cellBorder={cellBorder} cellPadding={cellPadding} fontWeight={fontWeight}>
+                {row.name}
+              </Cell>
+              <Cell cellBorder={cellBorder} cellPadding={cellPadding} fontWeight={fontWeight}>
+                {row.value}
+              </Cell>
+            </Row>
+          );
+        })}
+      </TableContainer>
+    );
+    headerContent = "";
+  }
+
+  return (
+    <Wrapper id={id}>
+      {headerContent}
+      {scroll ? (
+        <Container height="200px">
+          <TableContainer scroll={scroll}>{content}</TableContainer>
+        </Container>
+      ) : (
+        <TableContainer>{content}</TableContainer>
+      )}
     </Wrapper>
   );
 }
