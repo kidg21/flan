@@ -36,7 +36,7 @@ const Row = styled.tr`
   margin: 1em;
 `;
 
-const THEAD = styled.thead``;
+const Head = styled.thead``;
 
 const Body = styled.tbody`
   min-width: 400px;
@@ -99,13 +99,13 @@ function DataTable({
   if (header) {
     headerContent = (
       <TableContainer>
-        <THEAD>
+        <Head>
           <Row>
             {columns.map((column) => {
               return <TH key={column}> {column} </TH>;
             })}
           </Row>
-        </THEAD>
+        </Head>
       </TableContainer>
     );
     content = (
