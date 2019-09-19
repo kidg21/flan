@@ -88,32 +88,49 @@ function Menu({ id, data, type, object, onClick, position }) {
       break;
   }
   return (
-    <Container
-      id={id}
-      onClick={() => {
-        setVisibility(!visibility);
-      }}
-    >
-      <Icon icon="options" size="lg" />
-      {visibility ? (
-        <Card>
-          <EditMenu
-            setTransform={setTransform}
-            badgeLeft={badgeLeft}
-            badgeBottom={badgeBottom}
-          >
-            {data.map((item) => {
-              return (
-                <Item key={item.id} onClick={item.onClickLink}>
-                  <Title text={item.name} weight="normal" />
-                </Item>
-              );
-            })}
-          </EditMenu>
-        </Card>
-      ) : null}
-    </Container>
+    <Card>
+      <EditMenu
+        setTransform={setTransform}
+        badgeLeft={badgeLeft}
+        badgeBottom={badgeBottom}
+      >
+        {data.map((item) => {
+          return (
+            <Item key={item.id} onClick={item.onClickLink}>
+              <Title text={item.name} weight="normal" />
+            </Item>
+          );
+        })}
+      </EditMenu>
+    </Card>
   );
+  // return (
+  //   <Container
+  //     id={id}
+  //     onClick={() => {
+  //       setVisibility(!visibility);
+  //     }}
+  //   >
+  //     <Icon icon="options" size="lg" />
+  //     {visibility ? (
+  //       <Card>
+  //         <EditMenu
+  //           setTransform={setTransform}
+  //           badgeLeft={badgeLeft}
+  //           badgeBottom={badgeBottom}
+  //         >
+  //           {data.map((item) => {
+  //             return (
+  //               <Item key={item.id} onClick={item.onClickLink}>
+  //                 <Title text={item.name} weight="normal" />
+  //               </Item>
+  //             );
+  //           })}
+  //         </EditMenu>
+  //       </Card>
+  //     ) : null}
+  //   </Container>
+  // );
 }
 
 Menu.propTypes = {
