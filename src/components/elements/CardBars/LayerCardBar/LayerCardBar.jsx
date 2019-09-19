@@ -39,7 +39,7 @@ function LayerCardBar({
         left={
           <SwitchContainer disabled={disabled ? true : false}>
             {switchComponent}
-            <Title title={title} weight="normal" />
+            <Title text={title} weight="normal" />
           </SwitchContainer>
         }
         right={<IconBlock style={disabled ? disabledblockStyle : blockStyle}>{icons}</IconBlock>}
