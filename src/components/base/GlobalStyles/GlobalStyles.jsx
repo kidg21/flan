@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import styledNormalize from "styled-normalize";
 import { Skeleton } from "helpers";
 // Import variables
-import { colors, fonts, fontSize } from "Variables";
+import { colors, fonts, fontSize, Lighten, Darken } from "Variables";
 // Import Fonts
 import "css/fonts.css";
 // Import Icons
@@ -76,7 +76,10 @@ const GlobalStyles = createGlobalStyle`
       }
       &:hover,
       &:focus {
-        color: ${colors.anchor_light};
+        ${Darken};
+      }
+      &:active {
+        ${Lighten};
       }
       img { border: none; }
       }
