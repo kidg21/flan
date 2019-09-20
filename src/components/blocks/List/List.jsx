@@ -124,7 +124,8 @@ function ListItem({
       <DisabledContext.Provider value={disabled}>
         <Bar
           contentAlign="center"
-          left={
+          centerAlign="left"
+          center={
             <>
               {<Title text={label} />}
               {description ? <Title text={description} size="small" weight="light" /> : null}
