@@ -22,6 +22,14 @@ const ColorBlockColor = styled.div`
   }};
 `;
 
+const TextStuff = styled.h4`
+  color: ${props => {
+    return props.color || "";
+  }};
+  font-weight: semi-bold;
+  font-size: 14px;
+`;
+
 function Colors({ id, shade, comment, color, hexcode }) {
   let filterShade;
   // switch (type) {
@@ -79,7 +87,7 @@ function Colors({ id, shade, comment, color, hexcode }) {
       leftWidth="min-content"
       center={
         <>
-          <Title text={color} weight="bold" /> <Title text={comment} weight="normal" />
+          <TextStuff color={color}>{color}</TextStuff> <Title text={comment} weight="normal" />
           <Description text={comment} />
         </>
       }

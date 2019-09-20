@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { configure, addParameters, addDecorator } from "@storybook/react";
-import { fonts, colors, DMPTheme, darkTheme, shadows } from "Variables";
+import { fonts, colors, DMPTheme, TrialTheme, darkTheme, shadows } from "Variables";
 import { ThemeProvider } from "styled-components";
 import FlanTheme from "./FlanTheme";
 import { withKnobs, optionsKnob as options } from "@storybook/addon-knobs";
@@ -23,6 +23,7 @@ function withGlobalStyles(storyFn) {
           "Theme",
           {
             DMP: DMPTheme,
+            Trial: TrialTheme,
             Dark: darkTheme,
           },
           DMPTheme,

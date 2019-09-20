@@ -38,6 +38,44 @@ export const DMPTheme = {
   },
 };
 
+export const TrialTheme = {
+  background: {
+    default: "#ffffff",
+    app: "#f4f6fc",
+  },
+  divider: "#E2E1DF",
+  text: {
+    primary: "#5e5a62",
+    secondary: "#99958F",
+    inverse: "#ffffff",
+    link: "#5FD1E2",
+    disabled: "#E2E1DF",
+  },
+  palette: {
+    primary: "#2483C2",
+    primaryLight: "#68B2E3",
+    primaryDark: "#14496C",
+    secondary: "#5a9216",
+    secondaryLight: "#8bc34a",
+    secondaryDark: "#bef67a",
+    info: "#206bca",
+    alert: "#b41313",
+    warning: "#ca8720",
+    success: "#07843f",
+    white: "#ffffff",
+    black: "#000000",
+    disabled: "#E2E1DF",
+    grey: "#99958F",
+  },
+  accents: {
+    white: "#ffffff",
+    black: "#000000",
+    green: "green",
+    waterwayBlue: "#44A3D8",
+    burntOrange: "#B84438",
+  },
+};
+
 export const darkTheme = {
   background: {
     default: "#333332",
