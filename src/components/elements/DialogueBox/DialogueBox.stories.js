@@ -93,7 +93,6 @@ storiesOf("Elements|Dialogue Box", module)
               { value: "4", label: "lightbox" },
             ]}
           />
-          <Command label="Add new Location" icon="plus"/>
           <SelectMenu
             label="File Type"
             options={[
