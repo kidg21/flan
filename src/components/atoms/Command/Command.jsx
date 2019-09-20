@@ -1,71 +1,71 @@
+/* eslint-disable complexity */
 /* eslint-disable no-param-reassign */
 import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { colors } from "Variables";
 import { DisabledContext } from "States";
-import Icon from "atoms/Icon";
 import Title from "base/Typography";
+import Icon from "atoms/Icon";
 
 const CommandContainer = styled.a`
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-areas: ${props => {
-    return props.alignIcon || "";
+  display: ${(props) => {
+    return props.icon ? "grid" : "";
   }};
-  justify-items: ${props => {
+  grid-gap: ${(props) => {
+    return props.icon ? "0.5rem" : "";
+  }};
+  grid-template-columns: ${(props) => {
+    return props.alignCommand || "auto 1fr";
+  }};
+  grid-template-areas: ${(props) => {
+    return props.alignIcon || "'icon name'";
+  }};
+  justify-items: ${(props) => {
     return props.justifyIcon || "";
   }};
-  grid-gap: 0.5rem;
+  align-items: center;
   width: max-content;
-  font-size: ${props => {
+  font-size: ${(props) => {
     return props.commandSize || "";
   }};
-  color: ${props => {
+  color: ${(props) => {
     return props.commandColor || "";
   }};
   user-select: none;
-  cursor: ${props => {
+  cursor: ${(props) => {
     return props.isDisabled ? "not-allowed" : "";
   }};
-  pointer-events: ${props => {
+  pointer-events: ${(props) => {
     return props.isDisabled ? "none" : "";
   }};
   transition: all 0.3s ease;
-  &:hover {
-    color: ${colors.anchor_dark};
-  }
-  &:active {
-    color: ${colors.anchor_light};
-  }
 `;
 
 const CommandName = styled(Title)`
   grid-area: name;
-  font-size: inherit;
-  font-color: inherit;
-  line-height: inherit;
+  font-weight: 700;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   margin: 0;
-  &:focus {
-    border: 1px solid ${colors.anchor};
-    outline: none;
-  }
+  cursor: pointer;
 `;
 
 const CommandIcon = styled(Icon)`
   grid-area: icon;
-  color: inherit;
 `;
 
-function Command({ id, name, label, icon, align, size, onClick, disabled }) {
-  let alignIcon = "'icon name'";
-  const justifyCommand = "flex-start";
+function Command({
+  align, disabled, icon, id, label, name, onClick, size,
+}) {
+  let alignCommand = "";
+  let alignIcon = "";
   let justifyIcon = "flex-start";
   let commandColor = colors.anchor;
-  let commandSize = "inherit";
+  let commandSize = "";
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  if (isDisabled) commandColor = colors.grey_40;
   switch (name) {
     case "add to list":
       icon = "plus";
@@ -80,7 +80,7 @@ function Command({ id, name, label, icon, align, size, onClick, disabled }) {
       label = "APN";
       break;
     case "bookmark":
-      icon = "bookmark";
+      icon = "bookmark_solid";
       label = "Bookmark";
       break;
     case "contacts":
@@ -96,7 +96,7 @@ function Command({ id, name, label, icon, align, size, onClick, disabled }) {
       label = "Menu";
       break;
     case "notifications":
-      icon = "notification";
+      icon = "notification_solid";
       label = "Notifications";
       break;
     case "print":
@@ -120,6 +120,7 @@ function Command({ id, name, label, icon, align, size, onClick, disabled }) {
   }
   switch (align) {
     case "center":
+      alignCommand = "auto";
       alignIcon = "'icon' 'name'";
       justifyIcon = "center";
       break;
@@ -129,11 +130,6 @@ function Command({ id, name, label, icon, align, size, onClick, disabled }) {
     default:
       break;
   }
-
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (isDisabled) commandColor = colors.grey_40;
-
   switch (size) {
     case "small":
       commandSize = ".8em";
@@ -146,35 +142,42 @@ function Command({ id, name, label, icon, align, size, onClick, disabled }) {
   }
   return (
     <CommandContainer
-      id={id}
-      justifyCommand={justifyCommand}
+      alignCommand={alignCommand}
       alignIcon={alignIcon}
-      justifyIcon={justifyIcon}
       commandColor={commandColor}
       commandSize={commandSize}
+      icon={icon}
+      id={id}
       isDisabled={isDisabled}
+      justifyIcon={justifyIcon}
       onClick={onClick}
     >
       {icon ? <CommandIcon icon={icon} /> : null}
-      <CommandName weight="normal">{label}</CommandName>
+      <CommandName>{label}</CommandName>
     </CommandContainer>
   );
 }
 
 Command.propTypes = {
-  id: PropTypes.string,
-  name: PropTypes.string.isRequired,
-  align: PropTypes.string,
+  align: PropTypes.oneOf(["center", "right"]),
   disabled: PropTypes.boolean,
-  size: PropTypes.string,
-  onClick: PropTypes.node,
   icon: PropTypes.string,
+  id: PropTypes.string,
   label: PropTypes.string,
+  name: PropTypes.string,
+  onClick: PropTypes.node,
+  size: PropTypes.oneOf(["small", "large"]),
 };
 
 Command.defaultProps = {
-  label: "Command",
+  align: null,
+  disabled: false,
   icon: null,
+  id: null,
+  label: "Command",
+  name: null,
+  onClick: null,
+  size: null,
 };
 
 export { Command as default };
