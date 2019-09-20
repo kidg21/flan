@@ -4,7 +4,6 @@ import Table from "./Table";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
 import Icon from "atoms/Icon";
-import DataTable from "./DataTable";
 
 const data = [
   { id: "a", name: "Owners/Units", value: "Multiple Owners (2 Units)" },
@@ -36,8 +35,8 @@ storiesOf("Work|Table", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
   .add("Simple", () => {
-    return <DataTable data={data} style="legend" />;
+    return <Table data={data} style="legend" />;
   })
   .add("Data Table", () => {
-    return <DataTable columns={Columns} data={Users} scroll header />;
+    return <Table columns={Columns} data={Users} scroll header />;
   });
