@@ -4,14 +4,13 @@ import PropTypes from "prop-types";
 import { colors } from "Variables";
 import { DisabledContext } from "States";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
+import Grid from "layout/Grid";
 
-const TextInputContainer = styled.div`
-  display: grid;
-  grid-gap: 0.35rem;
-  align-content: flex-start;
+const TextInputContainer = styled(Grid)`
   color: ${(props) => {
     return props.inputTextColor || "";
   }};
+  width: 100%;
 `;
 
 const Input = styled.input`
@@ -25,7 +24,8 @@ const Input = styled.input`
   caret-color: ${(props) => {
     return props.inputCaretColor || "";
   }};
-  min-height: 2.75rem;
+  width: 100%;
+  min-height: 3.167rem;
   padding: 0.5rem 0.75rem;
   resize: ${(props) => {
     return props.inputResize || "";
@@ -62,7 +62,7 @@ function TextInput({
   isRequired,
   placeholder,
   helpText,
-  errorText,
+  error,
   disabled,
   children,
   onChange,
@@ -79,7 +79,7 @@ function TextInput({
   let inputResize;
   let placeholderColor;
   let inputSelectColor;
-  if (errorText && !disabled) {
+  if (error && !disabled) {
     inputTextColor = colors.alert;
     inputBorderColor = colors.alert_light;
     inputBorderColorHover = colors.alert_light;
@@ -105,8 +105,14 @@ function TextInput({
   let autoCompleteDataListId = null;
   if (autocompleteList) {
     autoCompleteDataListId = Dmp.Util.getGuid();
-    const options = autocompleteList.map((item) => { return (<option key={Dmp.Util.getGuid()} value={item}>{item}</option>); });
-    autocompleteDataList = (<datalist id={autoCompleteDataListId}>{options}</datalist>);
+    const options = autocompleteList.map((item) => {
+      return (
+        <option key={Dmp.Util.getGuid()} value={item}>
+          {item}
+        </option>
+      );
+    });
+    autocompleteDataList = <datalist id={autoCompleteDataListId}>{options}</datalist>;
   }
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
 
@@ -114,6 +120,8 @@ function TextInput({
     <TextInputContainer
       id={id}
       inputTextColor={inputTextColor}
+      gap="small"
+      columns="1"
       className={className}
     >
       {label ? <InputLabel isRequired={isRequired} label={label} /> : null}
@@ -139,62 +147,46 @@ function TextInput({
       />
       {autocompleteDataList}
       {helpText ? <HelpText>{helpText}</HelpText> : null}
-      {errorText && !disabled ? <ErrorText>{errorText}</ErrorText> : null}
       {children}
+      {typeof error === "string" && !disabled ? <ErrorText>{error}</ErrorText> : null}
     </TextInputContainer>
   );
 }
 
 TextInput.propTypes = {
-  id: PropTypes.string,
-  type: PropTypes.string,
-  pattern: PropTypes.string,
-  value: PropTypes.string,
-  label: PropTypes.string,
-  isRequired: PropTypes.bool,
-  placeholder: PropTypes.string,
-  helpText: PropTypes.string,
-  errorText: PropTypes.string,
-  state: PropTypes.string,
-  style: PropTypes.string,
-  onChange: PropTypes.func,
   autocompleteList: PropTypes.arrayOf(PropTypes.string),
-  size: PropTypes.string,
+  children: PropTypes.node,
   className: PropTypes.string,
   disabled: PropTypes.bool,
-  children: PropTypes.node,
+  error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  helpText: PropTypes.string,
+  id: PropTypes.string,
+  isRequired: PropTypes.bool,
+  label: PropTypes.string,
   onChange: PropTypes.func,
+  pattern: PropTypes.string,
+  placeholder: PropTypes.string,
+  size: PropTypes.string,
+  type: PropTypes.string,
+  value: PropTypes.string,
 };
 
 TextInput.defaultProps = {
-  id: null,
-  type: null,
-  pattern: null,
-  value: null,
-  inputLabel: null,
-  isRequired: false,
-  placeholder: null,
-  helpText: null,
-  errorText: null,
-  state: null,
-  style: null,
-  disabled: null,
+  autocompleteList: null,
   children: null,
-  onChange: null,
-};
-TextInput.defaultProps = {
+  className: null,
+  disabled: null,
+  error: null,
+  helpText: null,
   id: null,
-  type: null,
-  pattern: null,
-  value: null,
   label: null,
   isRequired: false,
+  onChange: null,
+  pattern: null,
   placeholder: null,
-  helpText: null,
-  errorText: null,
-  className: null,
-  disabled: false,
-  children: null,
+  size: null,
+  type: null,
+  value: null,
 };
 
 export { TextInput as default };

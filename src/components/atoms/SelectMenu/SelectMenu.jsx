@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { fonts, colors, shadows } from "Variables";
+import Grid from "layout/Grid";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
 import Select from "react-select";
 import { Skeleton } from "helpers";
@@ -18,7 +19,7 @@ const selectStyles = {
   // Toggle UI
   control: (styles, { isDisabled, isFocused }) => {
     let bgColor = "";
-    if (!isFocused) bgColor = isDisabled ? colors.grey_20 : colors.white;
+    if (!isFocused) bgColor = isDisabled ? colors.grey_light : colors.white;
 
     return {
       ...styles,
@@ -112,6 +113,8 @@ const selectStyles = {
       textAlign: "left",
       letterSpacing: ".5px",
       margin: ".25rem 0",
+      border: "1px solid",
+      borderColor: colors.grey_40,
       boxShadow: shadows.dropShadow,
     };
   },
@@ -135,21 +138,7 @@ const selectStyles = {
   },
 };
 
-const SelectMenuContainer = styled.div`
-  display: ${(props) => { return (props.displayInline ? "inline-block" : "grid"); }};
-  grid-template-columns: ${(props) => {
-    return props.threeInputs
-      ? "repeat(3, 1fr)"
-      : props.twoInputs
-        ? "repeat(2, 1fr)"
-        : props.prefix
-          ? "minmax(auto, auto) minmax(auto, 3fr)"
-          : props.postfix
-            ? "minmax(auto, 3fr) minmax(auto, auto)"
-            : "repeat(1, 1fr)";
-  }};
-  grid-gap: 0.35rem;
-  align-content: flex-start;
+const SelectMenuContainer = styled(Grid)`
   color: ${(props) => {
     let color = "";
     if (props.error) color = colors.alert;
@@ -174,7 +163,7 @@ function SelectMenu({
   selectOptions,
   disabled,
   error,
-  inputLabel,
+  label,
   isRequired,
   helpText,
   isSearchable,
@@ -238,10 +227,10 @@ function SelectMenu({
       disabled={isDisabled} // input attribute
       error={state.error !== null}
       displayInline={displayInline}
+      columns="1"
+      gap="small"
     >
-      {inputLabel ? (
-        <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
-      ) : null}
+      {label ? <InputLabel label={label} isRequired={isRequired} /> : null}
       <Select
         id={id} // input attribute
         name={name} // input attribute
@@ -277,7 +266,7 @@ SelectMenu.propTypes = {
     }),
   ])).isRequired,
   selectOptions: PropTypes.any,
-  inputLabel: PropTypes.string,
+  label: PropTypes.string,
   isRequired: PropTypes.bool,
   disabled: PropTypes.bool,
   error: PropTypes.string,
@@ -296,7 +285,7 @@ SelectMenu.defaultProps = {
   name: null,
   placeholder: null,
   selectOptions: null,
-  inputLabel: null,
+  label: null,
   isRequired: false,
   disabled: null,
   error: null,

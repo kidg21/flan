@@ -13,7 +13,7 @@ function NewUsers({ columns, users }) {
       <MainPanelHeader title="User Roles" />
       <Bar
         left={<Search placeholder="Search for a User" />}
-        right={<Button label="+Add Role" />}
+        right={<Button label="+Add User" />}
         leftWidth="30%"
       />
       <Table columns={columns} data={users} scroll header setHeight="200px" />

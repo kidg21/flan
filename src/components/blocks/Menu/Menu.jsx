@@ -30,23 +30,6 @@ const EditMenu = styled.ul`
   position: absolute;
 `;
 
-
-const SubMenu = styled.ul`
-  background: lightblue;
-  border-radius: 3px;
-  list-style: none;
-  z-index: 500;
-  padding: 0.25em;
-  padding-top: 0.8em;
-  padding-bottom: 0.8em;
-  bottom: 0;
-  left: 0;
-  transform: ${(props) => { return props.setTransform || ""; }};
-  width: auto;
-  min-width: 10em;
-  position: absolute;
-`;
-
 const Item = styled.li`
   padding: 0.55em;
   z-index: 501;

@@ -53,7 +53,7 @@ const Input = styled.input`
 function Calendar({
   className,
   disabled,
-  errorText,
+  error,
   helpText,
   id,
   label,
@@ -70,7 +70,7 @@ function Calendar({
   let inputBorderColorHover;
   let inputSelectColor;
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (errorText && !isDisabled) {
+  if (error && !isDisabled) {
     inputTextColor = colors.alert;
     inputBorderColor = colors.alert_light;
     inputBorderColorHover = colors.alert_light;
@@ -108,6 +108,7 @@ function Calendar({
     <CalendarContainer
       className={className}
       disabled={isDisabled}
+      columns="1"
       gap="small"
       id={id}
       inputTextColor={inputTextColor}
@@ -116,7 +117,7 @@ function Calendar({
       {label ? <InputLabel isRequired={isRequired} label={label} /> : null}
       {inputContainer}
       {helpText ? <HelpText>{helpText}</HelpText> : null}
-      {errorText && !isDisabled ? <ErrorText>{errorText}</ErrorText> : null}
+      {error && !isDisabled ? <ErrorText>{error}</ErrorText> : null}
     </CalendarContainer>
   );
 }
@@ -124,7 +125,7 @@ function Calendar({
 Calendar.propTypes = {
   className: PropTypes.string,
   disabled: PropTypes.bool,
-  errorText: PropTypes.string,
+  error: PropTypes.string,
   helpText: PropTypes.string,
   id: PropTypes.string,
   label: PropTypes.string,
@@ -141,7 +142,7 @@ Calendar.propTypes = {
 Calendar.defaultProps = {
   className: null,
   disabled: null,
-  errorText: null,
+  error: null,
   helpText: null,
   id: null,
   label: null,

@@ -6,12 +6,12 @@ export { default as GlobalStyles } from "./base/GlobalStyles/GlobalStyles.jsx";
 export { default as Badge } from "./atoms/Badge";
 export { default as Button } from "./atoms/Button";
 export { default as Calendar } from "./atoms/Calendar";
-export { default as Checkbox } from "./atoms/Checkbox";
+export { default as Checkbox, CheckboxGroup } from "./atoms/Checkbox";
 export { default as Command } from "./atoms/Command";
 export { default as Container } from "./atoms/Container";
 export { default as Divider } from "./atoms/Divider";
 export { default as Icon } from "./atoms/Icon";
-export { default as Radio } from "./atoms/Radio";
+export { default as Radio, RadioGroup } from "./atoms/Radio";
 export { default as SelectMenu } from "./atoms/SelectMenu";
 export { default as Slider } from "./atoms/Slider";
 export { default as Switch } from "./atoms/Switch";
@@ -49,11 +49,9 @@ export {
   default as Form,
   Header,
   Section,
-  SectionName,
   InputLabel,
   HelpText,
   ErrorText,
-  InputGroup,
 } from "./layout/Form";
 export { default as Grid } from "./layout/Grid";
 export { default as Layout } from "./layout/Layout";

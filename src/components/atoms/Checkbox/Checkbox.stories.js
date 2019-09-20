@@ -3,35 +3,42 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
-import {
-  withKnobs,
-  boolean,
-  optionsKnob as options,
-} from "@storybook/addon-knobs";
+import { withKnobs, text, boolean, optionsKnob as options } from "@storybook/addon-knobs";
+import { Section } from "layout/Form";
 import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
 import CheckboxNotes from "./Checkbox.md";
+import CheckboxGroupNotes from "./CheckboxGroup.md";
 
-const cbox1 = {
-  id: "cbox_1",
-  label: "Box 1",
-};
-const cbox2 = {
-  id: "cbox_2",
-  label: "Box 2",
-};
-const cbox3 = {
-  id: "cbox_3",
-  label: "Box 3",
-};
-const cbox4 = {
-  id: "cbox_4",
-  label: "Box 4",
-};
-const cboxLong = {
-  id: "cbox_long",
-  label:
-    "My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself.",
-};
+const shortLabels = [
+  {
+    id: "cbox_1",
+    label: "Box 1",
+  },
+  {
+    id: "cbox_2",
+    label: "Box 2 (disabled)",
+    disabled: true,
+  },
+  {
+    id: "cbox_3",
+    label: "Box 3",
+  },
+  {
+    id: "cbox_4",
+    label: "Box 4",
+  },
+];
+const longLabels = [
+  {
+    id: "cbox_long",
+    label:
+      "My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself.",
+  },
+  {
+    id: "cbox_long2",
+    label: "Enough with these long labels already...put it on your blog, Shakespeare.",
+  },
+];
 
 storiesOf("Atoms|Checkbox", module)
   .addParameters({
@@ -47,7 +54,7 @@ storiesOf("Atoms|Checkbox", module)
   .add(
     "Documentation",
     withInfo()(() => {
-      return <Checkbox {...cbox1} />;
+      return <Checkbox id="cbox1" label="Box 1" />;
     }),
   )
   .add("Skeleton", () => {
@@ -55,145 +62,125 @@ storiesOf("Atoms|Checkbox", module)
   })
   .add("Knobs", () => {
     return (
-      <CheckboxGroup
-        columns={options(
-          "columns",
+      <Checkbox
+        id="cbox1"
+        label={text("label", "Checkbox Label", "Checkbox")}
+        align={options(
+          "align",
           {
-            "wrap ( default )": "default",
-            one: "1",
-            two: "2",
-            three: "3",
-            four: "4",
+            left: null,
+            right: "right",
           },
-          "default",
-          { display: "radio" },
-          "Checkbox Group",
+          null,
+          { display: "select" },
+          "Checkbox",
         )}
-      >
-        <Checkbox
-          {...cbox1}
-          type={options(
-            "box 1 (state)",
-            {
-              default: "default",
-              error: "error",
-            },
-            "default",
-            { display: "inline-radio" },
-            "Box 1",
-          )}
-          disabled={boolean("1-disabled", false, "Box 1")}
-        />
-        <Checkbox
-          {...cbox2}
-          type={options(
-            "box 2 (state)",
-            {
-              default: "default",
-              error: "error",
-            },
-            "default",
-            { display: "inline-radio" },
-            "Box 2",
-          )}
-          disabled={boolean("2-disabled", false, "Box 2")}
-        />
-        <Checkbox
-          {...cbox3}
-          type={options(
-            "box 3 (state)",
-            {
-              default: "default",
-              error: "error",
-            },
-            "default",
-            { display: "inline-radio" },
-            "Box 3",
-          )}
-          disabled={boolean("3-disabled", false, "Box 3")}
-        />
-        <Checkbox
-          {...cbox4}
-          type={options(
-            "box 4 (state)",
-            {
-              default: "default",
-              error: "error",
-            },
-            "default",
-            { display: "inline-radio" },
-            "Box 4",
-          )}
-          disabled={boolean("4-disabled", false, "Box 4")}
-        />
-      </CheckboxGroup>
+        error={boolean("error", false, "Checkbox")}
+        disabled={boolean("disabled", false, "Checkbox")}
+      />
     );
   })
-  .add("Checkbox (States)", () => {
+  .add("Checkbox (states)", () => {
     return (
       <CheckboxGroup>
         <Checkbox id="default" label="Default" />
         <Checkbox id="selected" label="Selected" checked />
-        <Checkbox id="error" label="Error" type="error" />
+        <Checkbox id="error" label="Error" error />
         <Checkbox id="disabled" label="Disabled" disabled />
       </CheckboxGroup>
     );
   })
-  .add("Checkbox (Alignment)", () => {
+  .add("Checkbox (alignment)", () => {
     return (
       <CheckboxGroup>
-        <Checkbox {...cbox1} align="right" />
-        <Checkbox {...cbox2} align="right" />
-        <Checkbox {...cbox3} align="right" />
-        <Checkbox {...cbox4} align="right" />
+        <Checkbox id="standard" label="Standard" />
+        <Checkbox id="align-right" label="Right Aligned" align="right" />
       </CheckboxGroup>
+    );
+  });
+
+storiesOf("Blocks|Checkbox Group", module)
+  .addParameters({
+    info: {
+      text: "Checkbox Group info goes here...",
+    },
+    notes: {
+      markdown: CheckboxGroupNotes,
+    },
+  })
+  .addDecorator(Padding)
+  .addDecorator(withKnobs)
+  .add(
+    "Documentation",
+    withInfo()(() => {
+      return (
+        <CheckboxGroup
+          id="group1"
+          label="Checkbox Group Label"
+          data={shortLabels}
+          helpText="This help text has been passed through a prop!"
+        />
+      );
+    }),
+  )
+  .add("Knobs", () => {
+    return (
+      <CheckboxGroup
+        id="group1"
+        data={shortLabels}
+        columns={options(
+          "columns",
+          {
+            "auto ( default )": "default",
+            "one": "1",
+            "two": "2",
+            "three": "3",
+            "four": "4",
+            "five": "5",
+            "six": "6",
+          },
+          "default",
+          { display: "select" },
+          "Checkbox Group",
+        )}
+        isRequired={boolean("required", false, "Checkbox Group")}
+        label={text("Input Label", "Input Label", "Checkbox Group")}
+        helpText={text("Help Text", "Have you been helped yet?", "Checkbox Group")}
+        align={options(
+          "box align",
+          {
+            left: null,
+            right: "right",
+          },
+          null,
+          { display: "select" },
+          "Checkbox Group",
+        )}
+        error={
+          boolean("error", false, "Checkbox Group") &&
+          text("error text", "Error message...", "Checkbox Group")
+        }
+        disabled={boolean("disabled", false, "Checkbox Group")}
+      />
     );
   })
-  .add("Checkbox Group (Responsive)", () => {
-    return (
-      <CheckboxGroup>
-        <Checkbox {...cbox1} />
-        <Checkbox {...cbox2} />
-        <Checkbox {...cbox3} />
-        <Checkbox {...cbox4} />
-        <Checkbox {...cboxLong} />
-      </CheckboxGroup>
-    );
+  .add("Checkbox Group (responsive)", () => {
+    return <CheckboxGroup data={shortLabels} />;
   })
   .add("Checkbox Group (2 columns)", () => {
-    return (
-      <CheckboxGroup columns="2">
-        <Checkbox {...cbox1} />
-        <Checkbox {...cbox2} />
-        <Checkbox {...cbox3} />
-        <Checkbox {...cbox4} />
-        <Checkbox {...cboxLong} />
-      </CheckboxGroup>
-    );
+    return <CheckboxGroup data={shortLabels} columns="2" />;
   })
   .add("Checkbox Group (3 columns)", () => {
-    return (
-      <CheckboxGroup columns="3">
-        <Checkbox {...cbox1} />
-        <Checkbox {...cbox2} />
-        <Checkbox {...cbox3} />
-        <Checkbox {...cbox4} />
-        <Checkbox {...cboxLong} />
-      </CheckboxGroup>
-    );
+    return <CheckboxGroup data={shortLabels} columns="3" />;
   })
   .add("Checkbox Group (mixed columns)", () => {
     return (
-      <>
-        <CheckboxGroup columns="2">
-          <Checkbox {...cbox1} />
-          <Checkbox {...cbox2} />
-          <Checkbox {...cbox3} />
-          <Checkbox {...cbox4} />
-        </CheckboxGroup>
-        <CheckboxGroup columns="1">
-          <Checkbox {...cboxLong} />
-        </CheckboxGroup>
-      </>
+      <Section>
+        <CheckboxGroup data={shortLabels} columns="2" />
+        <CheckboxGroup data={longLabels} columns="1" />
+      </Section>
     );
+  })
+  .add("Checkbox Group (right-aligned)", () => {
+    return <CheckboxGroup data={shortLabels} columns="2" align="right" />;
   });

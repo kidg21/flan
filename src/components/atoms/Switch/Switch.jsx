@@ -5,133 +5,92 @@ import { colors } from "Variables";
 import { DisabledContext } from "States";
 
 const SwitchContainer = styled.div`
+  display: grid;
+  grid-template-columns: ${(props) => {
+    return props.label ? "auto 1fr" : "";
+  }};
+  grid-gap: ${(props) => {
+    return props.label ? "0.75rem" : "";
+  }};
+  grid-template-areas: ${(props) => {
+    return props.alignInput || "";
+  }};
+  color: ${(props) => {
+    return props.checkboxColor || "";
+  }};
   background-color: ${(props) => {
     return props.fillColor || colors.white;
   }};
   border-color: ${(props) => {
     return props.borderColor || colors.grey_40;
   }};
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-`;
-
-const Circle = styled.div`
-  position: absolute;
-  z-index: 1;
-  background: ${(props) => {
-    return props.checked ? colors.success_tint : colors.grey_light;
-  }};
-  border: 1px solid;
-  border-color: ${(props) => {
-    return props.checked ? colors.success : colors.grey_40;
-  }};
-  border-radius: 40px;
-  width: 15px;
+  align-items: center;
   line-height: normal;
-  height: 14px;
-  transition: transform 300ms ease-in-out;
-  transform: ${(props) => {
-    return props.checked ? "translateX(12px)" : "translateX(0)";
-  }};
+  width: max-content;
+  line-height: initial;
   &[disabled],
   &[readonly] {
-    border-color: ${(props) => {
-    return props.disabled ? colors.grey_40 : "";
-  }};
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
   }
 `;
 
 const StyledSwitch = styled.div`
-  width: 30px;
-  display: block;
-  height: 16px;
+  grid-area: input;
+  width: 3rem;
+  height: 1.5rem;
   border: 1px solid;
   border-color: ${(props) => {
-    return props.checked ? colors.success : colors.grey_40;
+    return props.borderColor || colors.grey_40;
   }};
-  border-radius: 23px;
-  transition: 3000ms ease-in-out;
+  border-radius: 1em;
   background-image: ${(props) => {
-    return props.checked
-      ? `linear-gradient(${colors.success_tint}, ${colors.success_light})`
-      : colors.white;
+    return props.fillColor || "";
   }};
   cursor: pointer;
   &[disabled],
   &[readonly] {
-    background-image: ${(props) => {
-    return props.disabled ? "none" : "";
-  }};
     background: ${(props) => {
     return props.disabled ? colors.grey_20 : "";
   }};
   }
 `;
 
-const ToggleWrapper = styled.label`
-  grid-area: one;
+const Circle = styled.div`
+  position: absolute;
+  background: ${(props) => {
+    return props.checked ? colors.white : colors.grey_light;
+  }};
+  border: 1px solid;
+  border-color: ${(props) => {
+    return props.borderColor || colors.grey_40;
+  }};
+  border-radius: 100%;
+  width: 1.2rem;
+  height: 1.2rem;
+  z-index: 1;
+  margin: 1px;
+  transition: transform 300ms ease-in-out;
+  transform: ${(props) => {
+    return props.checked ? "translateX(100%)" : "translateX(0)";
+  }};
   &[disabled],
   &[readonly] {
-    cursor: not-allowed;
-    pointer-events: none;
-  }
-`;
-
-function Toggle({ checked, disabled, onChange }) {
-  // let checkboxColor;
-  // let fillColor;
-  // let borderColor;
-  if (disabled) {
-    // checkboxColor = colors.alert;
-    // fillColor = colors.alert;
-    // borderColor = checkboxColor;
-    // borderColor = colors.grey_40;
-  }
-
-  let isChecked = checked;
-  let onClick = onChange;
-  if (!onClick) {
-    let setChecked = null;
-    [isChecked, setChecked] = useState(checked);
-    onClick = () => {
-      setChecked(!isChecked);
-    };
-  }
-
-  return (
-    <SwitchContainer
-      onClick={onClick}
-    >
-      <StyledSwitch
-        checked={isChecked}
-        disabled={disabled}
-      >
-        <Circle checked={isChecked} disabled={disabled} />
-      </StyledSwitch>
-    </SwitchContainer>
-  );
-}
-
-const ToggleLabel = styled.label`
-  grid-area: two;
-  user-select: none;
-  font-family: Arial;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: normal;
-  cursor: pointer;
-`;
-
-const ToggleContainer = styled.div`
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-areas: "one two";
-  grid-gap: 0.75rem;
-  align-content: flex-start;
-  color: ${(props) => {
-    return props.checkboxColor || "";
+    border-color: ${(props) => {
+    return props.disabled || "";
   }};
+  }
+`;
+
+const SwitchLabel = styled.label`
+  grid-area: label;
+  color: ${(props) => {
+    return props.labelColor || "";
+  }};
+  user-select: none;
+  font-weight: 700;
+  cursor: pointer;
   &[disabled],
   &[readonly] {
     cursor: not-allowed;
@@ -141,53 +100,85 @@ const ToggleContainer = styled.div`
 `;
 
 function Switch({
-  checked, disabled, id, isRequired, label, onChange,
+  align, checked, disabled, error, id, label, onChange,
 }) {
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let checkboxColor;
-  if (disabled) {
+  let fillColor;
+  let borderColor;
+  let alignInput;
+  if (isDisabled) {
     checkboxColor = colors.grey_40;
   }
+  if (error && !isDisabled) {
+    checkboxColor = colors.alert;
+    fillColor = `linear-gradient(${colors.alert_tint}, ${colors.alert_light})`;
+    borderColor = colors.alert_light;
+  }
+  switch (align) {
+    case "right":
+      alignInput = "'label input'";
+      break;
+    default:
+      alignInput = "'input label'";
+      break;
+  }
+  let isChecked = checked;
+  let onClick = onChange;
+  if (!onClick) {
+    let setChecked = null;
+    [isChecked, setChecked] = useState(checked);
+    onClick = () => {
+      setChecked(!isChecked);
+    };
+  }
+  if (isChecked && !error) {
+    fillColor = `linear-gradient(${colors.success_tint}, ${colors.success_light})`;
+    borderColor = colors.success;
+  }
   return (
-    <ToggleContainer isRequired={isRequired} checkboxColor={checkboxColor} disabled={isDisabled}>
-      <ToggleWrapper disabled={isDisabled}>
-        <Toggle id={id} checked={checked} disabled={isDisabled} onChange={onChange} />
-      </ToggleWrapper>
+    <SwitchContainer
+      alignInput={alignInput}
+      checkboxColor={checkboxColor}
+      error={error}
+      disabled={isDisabled}
+      id={id}
+      label={label}
+      onClick={onClick}
+    >
+      <StyledSwitch
+        checked={isChecked}
+        disabled={isDisabled}
+        onChange={onChange}
+        fillColor={fillColor}
+        borderColor={borderColor}
+      >
+        <Circle checked={isChecked} borderColor={borderColor} />
+      </StyledSwitch>
       {label ? (
-        <ToggleLabel htmlFor={id} onChange={onChange} disabled={isDisabled}>
+        <SwitchLabel onChange={onChange} disabled={isDisabled}>
           {label}
-        </ToggleLabel>
+        </SwitchLabel>
       ) : null}
-    </ToggleContainer>
+    </SwitchContainer>
   );
 }
 
-Toggle.propTypes = {
-  checked: PropTypes.bool,
-  disabled: PropTypes.bool,
-  onChange: PropTypes.func,
-};
-Toggle.defaultProps = {
-  checked: false,
-  disabled: false,
-  onChange: null,
-};
-
 Switch.propTypes = {
-  id: PropTypes.string,
+  align: PropTypes.oneOf(["default", "right"]),
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
-  isRequired: PropTypes.bool,
+  id: PropTypes.string,
   label: PropTypes.string,
   onChange: PropTypes.func,
 };
 Switch.defaultProps = {
-  id: null,
+  align: null,
   checked: false,
   disabled: false,
-  isRequired: false,
+  id: null,
   label: null,
   onChange: null,
 };
 
-export default Switch;
+export { Switch as default };
