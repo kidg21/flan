@@ -1,32 +1,14 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import styled from "styled-components";
-import { Padding } from "helpers/Display";
-import Grid from "layout/Grid";
+import { Padding, CommandGrid } from "helpers/Display";
 import { withInfo } from "@storybook/addon-info";
 import { withKnobs, text, select, optionsKnob as options } from "@storybook/addon-knobs";
-import { colors } from "Variables";
+import Title, { Headline, SubTitle, Description } from "base/Typography";
+import Grid from "layout/Grid";
+import commandsStandard from "atoms/Command/libraryCommand.data";
 import Command from "atoms/Command";
 import CommandNotes from "./Command.md";
-
-const Title = styled.h2`
-  font-weight: 400;
-  grid-column: 1/-1;
-`;
-
-const SubTitle = styled.h5`
-  grid-column: 1/-1;
-  margin: 0;
-`;
-
-const SectionTitle = styled.h4`
-  grid-column: 1/-1;
-  letter-spacing: 1px;
-  margin: 0;
-  padding-top: 1em;
-  border-top: 2px solid ${colors.grey_light};
-`;
 
 // Command
 storiesOf("Atoms|Command", module)
@@ -123,12 +105,12 @@ storiesOf("Atoms|Command", module)
         <Title>
           <u>Command Alignment</u>
         </Title>
-        <SubTitle>
-          The standard Command is left-aligned with its Icon on the left. Set the &apos;align&apos;
+        <Description text="The standard Command is left-aligned with its Icon on the left. Set the 'align' prop to 'center' in order to center-align the Command placing its Icon atop the label. Set the 'align' prop to 'right' to right-align the Command with its Icon on the right." />
+        {/* The standard Command is left-aligned with its Icon on the left. Set the &apos;align&apos;
           prop to &apos;center&apos; in order to center-align the Command placing its Icon atop the
           label. Set the &apos;align&apos; prop to &apos;right&apos; to right-align the Command with
           its Icon on the right.
-        </SubTitle>
+        </Description> */}
         <Command label="Icon-Left" icon="circle_solid" />
         <Command label="Icon-Top" icon="circle_solid" align="center" />
         <Command label="Icon-Right" icon="circle_solid" align="right" />
@@ -172,14 +154,11 @@ storiesOf("Application|Libraries/", module)
   .add("Command Library", () => {
     return (
       <Grid>
-        <Title>
-          <u>List of Commands</u>
-        </Title>
-        <SubTitle>
-          The Command is an interactive UI element that pairs an icon and a label. Use a Command
-          when a user&apos;s action is intended to begin an action or workflow.
-        </SubTitle>
-        <SectionTitle>Standard Commands</SectionTitle>
+        <Headline text="List of Commands" />
+        <Description text="The Command is an interactive UI element that pairs an icon and a label. Use a Command when a user's action is intended to begin an action or workflow." />
+        <Command command="bookmark" />
+        <Command icon="list" label="Bookmark2" />
+        {/* <SectionTitle>Standard Commands</SectionTitle>
         <Command name="add to list" />
         <Command name="address" />
         <Command name="apn" />
@@ -191,7 +170,19 @@ storiesOf("Application|Libraries/", module)
         <Command name="print" />
         <Command name="profile" />
         <Command name="settings" />
-        <Command name="share" />
+        <Command name="share" /> */}
+      </Grid>
+    );
+  });
+
+storiesOf("Application|Libraries/Command Library", module)
+  .addDecorator(Padding)
+  .add("Standard Commands", () => {
+    return (
+      <Grid gap="large">
+        <Headline text="Standard Commands" />
+        <Description text="The Command is an interactive UI element that pairs an icon and a label. Use a Command when a user's action is intended to begin an action or workflow." />
+        <CommandGrid data={commandsStandard} />
       </Grid>
     );
   });

@@ -56,9 +56,29 @@ const CommandIcon = styled(Icon)`
   grid-area: icon;
 `;
 
+const commandHash = {
+  "add to list": { icon: "plus", label: "Add To List" },
+  "address": { icon: "address", label: "Address" },
+  "apn": { icon: "apn", label: "APN" },
+  "bookmark": { icon: "bookmark_solid", label: "Bookmark" },
+  "contacts": { icon: "contacts", label: "Contacts" },
+  "delete": { icon: "delete", label: "Delete" },
+  "gps": { icon: "gps", label: "GPS" },
+  "menu": { icon: "bars", label: "Menu" },
+  "notifications": { icon: "notification_solid", label: "Notifications" },
+  "open": { icon: "open", label: "Open" },
+  "print": { icon: "print", label: "Print" },
+  "profile": { icon: "user", label: "Profile" },
+  "report issue": { icon: "mail", label: "Report Issue" },
+  "settings": { icon: "settings", label: "Settings" },
+  "share": { icon: "share", label: "Share" },
+  "view report": { icon: "report", label: "View Report" },
+};
+
 function Command({
-  align, disabled, icon, id, label, name, onClick, size,
+  align, command, disabled, icon, id, label, name, onClick, size,
 }) {
+  command = commandHash[command] || { icon, label };
   let alignCommand = "";
   let alignIcon = "";
   let justifyIcon = "flex-start";
@@ -146,20 +166,22 @@ function Command({
       alignIcon={alignIcon}
       commandColor={commandColor}
       commandSize={commandSize}
-      icon={icon}
+      icon={command.icon}
       id={id}
       isDisabled={isDisabled}
       justifyIcon={justifyIcon}
+      label={label}
       onClick={onClick}
     >
-      {icon ? <CommandIcon icon={icon} /> : null}
-      <CommandName>{label}</CommandName>
+      {command.icon ? <CommandIcon icon={command.icon} /> : null}
+      <CommandName>{command.label}</CommandName>
     </CommandContainer>
   );
 }
 
 Command.propTypes = {
   align: PropTypes.oneOf(["center", "right"]),
+  command: PropTypes.string,
   disabled: PropTypes.boolean,
   icon: PropTypes.string,
   id: PropTypes.string,
@@ -171,6 +193,7 @@ Command.propTypes = {
 
 Command.defaultProps = {
   align: null,
+  command: null,
   disabled: false,
   icon: null,
   id: null,
