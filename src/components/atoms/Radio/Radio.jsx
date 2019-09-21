@@ -2,34 +2,46 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
-import Title from "base/Typography";
+import { InputLabel, HelpText, ErrorText } from "layout/Form";
+import Grid from "layout/Grid";
+
+const RadioWrapper = styled(Grid)`
+  color: ${(props) => {
+    return props.inputTextColor || "";
+  }};
+  &:last-child {
+    margin-bottom: 1rem;
+  }
+`;
 
 const RadioContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-gap: 0.5rem;
-  align-items: inherit;
+  grid-gap: 0.75rem;
+  grid-template-areas: ${(props) => {
+    return props.alignInput || "";
+  }};
+  width: max-content;
+  line-height: initial;
   color: ${(props) => {
-    return props.error ? props.theme.palette.alert : "";
+    return props.theme.text[props.inputTextColor] || "";
   }};
   &[disabled],
   &[readonly] {
     cursor: not-allowed;
     pointer-events: none;
     user-select: none;
-    color: ${(props) => {
-    return props.theme.palette.primary;
-  }};
   }
 `;
 
 const RadioInput = styled.input.attrs({ type: "radio" })`
+  grid-area: input;
   border: 1px solid;
-  border-color: ${(props) => {
-    return props.error ? props.theme.palette.alert : props.theme.palette.disabled;
-  }};
   background-color: ${(props) => {
-    return props.disabled ? props.theme.palette.disabled : props.theme.background.default;
+    return props.theme.palette[props.fillColor] || props.theme.palette.background.default;
+  }};
+  border-color: ${(props) => {
+    return props.theme.palette[props.outlineColor] || props.theme.palette.border;
   }};
   width: 1rem;
   height: 1rem;
@@ -39,62 +51,192 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
   -webkit-appearance: none;
   &:checked {
     background-color: ${(props) => {
-    return props.error ? props.theme.palette.alert : props.theme.palette.secondary;
+    return props.theme.palette[props.fillColorChecked] || props.theme.palette.successLight;
   }};
     border-color: ${(props) => {
-    return props.error ? props.theme.palette.alert : props.theme.palette.secondary;
+    return props.theme.palette[props.outlineColor] || props.theme.palette.success;
   }};
   }
   &:focus {
-    border: 1px solid
-      ${(props) => {
-    return props.theme.palette.primary;
+    border-color: ${(props) => {
+    return props.theme.palette[props.outlineColor] || props.theme.palette.success;
   }};
     outline: none;
   }
 `;
 
-const RadioLabel = styled(Title)`
+const RadioLabel = styled.label`
+  grid-area: label;
+  font-weight: 700;
+  color: inherit;
   user-select: none;
-  line-height: normal;
   cursor: pointer;
 `;
 
+const InputGroup = styled(Grid)`
+  grid-template-columns: ${(props) => {
+    return props.setColumns || "";
+  }};
+`;
+
 function Radio({
-  id, name, label, value, error, onChange, checked, disabled,
+  align, checked, disabled, error, id, label, onChange, name, value,
 }) {
+  let inputTextColor;
+  let fillColor;
+  let outlineColor;
+  let fillColorChecked;
+  let alignInput;
+  let tabIndex;
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  if (isDisabled) {
+    fillColor = "disabled";
+    fillColorChecked = "disabled";
+    inputTextColor = "disabled";
+    outlineColor = "disabled";
+    tabIndex = "-1";
+  }
+  if (error && !isDisabled) {
+    inputTextColor = "error";
+    fillColor = "alertLight";
+    outlineColor = "alertLight";
+    fillColorChecked = "alertLight";
+  }
+  switch (align) {
+    case "right":
+      alignInput = "'label input'";
+      break;
+    default:
+      alignInput = "'input label'";
+      break;
+  }
   return (
     <RadioContainer
-      disabled={isDisabled} // input attribute>
-      error={error} // input attribute>
+      alignInput={alignInput}
+      disabled={isDisabled}
+      error={error}
+      inputTextColor={inputTextColor}
     >
       <RadioInput
+        checked={checked}
+        fillColor={fillColor}
+        fillColorChecked={fillColorChecked}
         id={id}
         name={name}
         onChange={onChange}
-        checked={checked}
+        outlineColor={outlineColor}
+        tabIndex={tabIndex}
         value={value}
-        disabled={isDisabled}
-        error={error} // input attribute>
       />
       <RadioLabel size="small" text={label} />
     </RadioContainer>
   );
 }
-Radio.propTypes = {
-  /** This is the Left nav command. */
-  id: PropTypes.string,
 
-  /** This is nav Title.  It is required. */
-  label: PropTypes.string.isRequired,
-  /** This is the Right nav command. */
-  name: PropTypes.string.isRequired,
-  value: PropTypes.string,
-  onChange: PropTypes.func,
+function RadioGroup({
+  align,
+  children,
+  columns,
+  data,
+  disabled,
+  error,
+  helpText,
+  id,
+  isRequired,
+  label,
+  onChange,
+}) {
+  let inputTextColor;
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  if (error && !isDisabled) {
+    inputTextColor = "error";
+  }
+  return (
+    <RadioWrapper
+      align={align}
+      disabled={isDisabled}
+      columns="1"
+      gap="small"
+      inputTextColor={inputTextColor}
+      id={id}
+    >
+      {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
+      {helpText ? <HelpText>{helpText}</HelpText> : null}
+      <InputGroup columns={columns}>
+        {children ||
+          data.map((item) => {
+            return (
+              <Radio
+                align={align}
+                disabled={item.disabled || isDisabled}
+                error={!!error}
+                id={item.id}
+                key={item.id}
+                label={item.label}
+                onChange={onChange}
+                name={item.name}
+                value={item.value}
+              />
+            );
+          })}
+      </InputGroup>
+      {error && !isDisabled ? <ErrorText>{error}</ErrorText> : null}
+    </RadioWrapper>
+  );
+}
+
+Radio.propTypes = {
+  align: PropTypes.oneOf(["default", "right"]),
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
   error: PropTypes.bool,
+  id: PropTypes.string,
+  label: PropTypes.string.isRequired,
+  /** The name property sets or returns the value of the name attribute of a radio button.
+   * You define radio button groups with the name property (radio buttons with the same name belong to the same group). */
+  name: PropTypes.string.isRequired,
+  onChange: PropTypes.func,
+  /** The value property sets or returns the value of the value attribute of the radio button.
+   * Define different values for radio buttons in the same group, to identify (on the server side) which one was checked.  */
+  value: PropTypes.string,
 };
 
-export { Radio as default };
+Radio.defaultProps = {
+  align: null,
+  checked: null,
+  disabled: false,
+  error: false,
+  id: null,
+  onChange: null,
+  value: null,
+};
+
+RadioGroup.propTypes = {
+  align: PropTypes.oneOf(["default", "right"]),
+  children: PropTypes.node,
+  columns: PropTypes.oneOf(["auto (default)", "1", "2", "3", "4", "5", "6"]),
+  data: PropTypes.oneOfType([PropTypes.array, PropTypes.string]),
+  disabled: PropTypes.bool,
+  error: PropTypes.string,
+  helpText: PropTypes.string,
+  id: PropTypes.string,
+  isRequired: PropTypes.bool,
+  label: PropTypes.string,
+  onChange: PropTypes.func,
+};
+
+RadioGroup.defaultProps = {
+  align: null,
+  children: null,
+  columns: null,
+  data: null,
+  disabled: false,
+  error: null,
+  helpText: null,
+  id: null,
+  isRequired: false,
+  label: null,
+  onChange: null,
+};
+
+export { Radio as default, RadioGroup };

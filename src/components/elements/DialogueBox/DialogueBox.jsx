@@ -9,7 +9,6 @@ import Bar from "blocks/Bar";
 function DialogueBox({
   id,
   header,
-  type,
   title,
   message,
   primaryLabel,
@@ -21,19 +20,10 @@ function DialogueBox({
   action,
 }) {
   let buttonType;
-  let inputContent;
   switch (action) {
     case "one":
       buttonType = (
-        <Bar
-          left={
-            <Button
-              label={primaryLabel}
-              onClick={onClickPrimary}
-              color={buttonColor}
-            />
-          }
-        />
+        <Bar left={<Button label={primaryLabel} onClick={onClickPrimary} color={buttonColor} />} />
       );
       break;
     case "two":
@@ -47,11 +37,7 @@ function DialogueBox({
                 onClick={onClickPrimary}
                 color={buttonColor}
               />
-              <Button
-                label={secondaryLabel}
-                onClick={onClickSecondary}
-                color={buttonColor}
-              />
+              <Button label={secondaryLabel} onClick={onClickSecondary} color={buttonColor} />
             </Grid>
           }
         />
@@ -61,16 +47,16 @@ function DialogueBox({
       break;
   }
   return (
-    <Card id={id} action={action} title={title} padding="1em">
+    <Card id={id} action={action} text={title} padding="1em">
       {header ? <Piece>{header}</Piece> : null}
       <Bar left={<Title text={title} />} />
       {message ? <Bar left={<Title text={message} weight="light" />} /> : null}
-      {type ? <Bar left={inputContent} /> : null}
       {content ? <Bar left={content} /> : null}
       {action ? <Piece>{buttonType}</Piece> : null}
     </Card>
   );
 }
+
 DialogueBox.propTypes = {
   id: PropTypes.string,
   header: PropTypes.node,

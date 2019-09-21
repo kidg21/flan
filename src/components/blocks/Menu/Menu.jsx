@@ -24,7 +24,7 @@ const EditMenu = styled.ul`
   padding-bottom: 0.8em;
   bottom: ${(props) => { return props.badgeBottom || ""; }};
   left: ${(props) => { return props.badgeLeft || ""; }};
-  transform: ${(props) => { return props.badgeTransform || ""; }};
+  transform: ${(props) => { return props.setTransform || ""; }};
   width: auto;
   min-width: 10em;
   position: absolute;

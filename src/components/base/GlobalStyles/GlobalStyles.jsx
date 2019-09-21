@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import styledNormalize from "styled-normalize";
-import { Skeleton } from "helpers/Skeleton";
+import { Skeleton } from "helpers";
 // Import variables
 import { colors, fonts, fontSize } from "Variables";
 // Import Fonts
@@ -285,6 +285,12 @@ const GlobalStyles = createGlobalStyle`
         user-select: none;
       }
     }
+    input[type="range"] {
+      &[disabled],
+      &[readonly] {
+          background-color: ${colors.grey_40};
+        }
+      }
     `;
 
 export default GlobalStyles;

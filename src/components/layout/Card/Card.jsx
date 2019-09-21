@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { colors, shadows } from "Variables";
+import { shadows } from "Variables";
 import Grid from "layout/Grid";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 import PropTypes from "prop-types";
@@ -61,56 +61,9 @@ const CardListWrapper = styled(Grid)`
   }
 `;
 
-function Piece({
-  id,
-  hover,
-  children,
-  padding,
-  className,
-  header,
-  /** TODO: add 'background' and 'interaction' props */
-  // type,
-}) {
-  /** TODO: add 'background' and 'interaction' props */
-  // let textColor;
-  // let backgroundColor;
-  // switch (type && type.toLowerCase()) {
-  //   case "info":
-  //     backgroundColor = colors.anchor;
-  //     textColor = colors.anchor_tint;
-  //     break;
-  //   case "success":
-  //     backgroundColor = colors.success;
-  //     textColor = colors.success_tint;
-  //     break;
-  //   case "warning":
-  //     backgroundColor = colors.warning;
-  //     textColor = colors.warning_tint;
-  //     break;
-  //   case "alert":
-  //     backgroundColor = colors.alert;
-  //     textColor = colors.alert_tint;
-  //     break;
-  //   case "inverse":
-  //     backgroundColor = colors.black;
-  //     textColor = colors.grey_light;
-  //     break;
-  //   default:
-  //     backgroundColor = colors.white;
-  //     break;
-  // }
+function Piece({ id, hover, children, padding, className, header }) {
   return (
-    <CardPiece
-      id={id}
-      padding={padding}
-      className={className}
-      header={header}
-      hover={hover}
-
-      /** TODO: add 'background' and 'interaction' props */
-      // textColor={textColor}
-      // backgroundColor={backgroundColor}
-    >
+    <CardPiece id={id} padding={padding} className={className} header={header} hover={hover}>
       {children}
     </CardPiece>
   );

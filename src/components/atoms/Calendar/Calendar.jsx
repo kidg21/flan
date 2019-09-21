@@ -7,7 +7,7 @@ import { InputLabel, HelpText, ErrorText } from "layout/Form";
 
 const CalendarContainer = styled(Grid)`
   color: ${(props) => {
-    return props.theme.palette[props.inputTextColor] || "";
+    return props.theme.text[props.inputTextColor] || "";
   }};
 `;
 
@@ -52,7 +52,7 @@ const Input = styled.input`
 function Calendar({
   className,
   disabled,
-  errorText,
+  error,
   helpText,
   id,
   label,
@@ -70,10 +70,10 @@ function Calendar({
   let inputSelectColor;
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (errorText && !isDisabled) {
-    inputTextColor = alert;
-    inputBorderColor = alert;
-    inputBorderColorHover = alert;
-    inputSelectColor = alert;
+    inputTextColor = "error";
+    inputBorderColor = "alert";
+    inputBorderColorHover = "alert";
+    inputSelectColor = "alert";
   }
   const inputTypes = type.toLowerCase() === "datetime" ? ["date", "time"] : [type.toLowerCase()];
   const inputElements = inputTypes.map((currType) => {
@@ -103,6 +103,7 @@ function Calendar({
     <CalendarContainer
       className={className}
       disabled={isDisabled}
+      columns="1"
       gap="small"
       id={id}
       inputTextColor={inputTextColor}
@@ -111,7 +112,7 @@ function Calendar({
       {label ? <InputLabel isRequired={isRequired} label={label} /> : null}
       {inputContainer}
       {helpText ? <HelpText>{helpText}</HelpText> : null}
-      {errorText && !isDisabled ? <ErrorText>{errorText}</ErrorText> : null}
+      {error && !isDisabled ? <ErrorText>{error}</ErrorText> : null}
     </CalendarContainer>
   );
 }
@@ -119,7 +120,7 @@ function Calendar({
 Calendar.propTypes = {
   className: PropTypes.string,
   disabled: PropTypes.bool,
-  errorText: PropTypes.string,
+  error: PropTypes.string,
   helpText: PropTypes.string,
   id: PropTypes.string,
   label: PropTypes.string,
@@ -136,7 +137,7 @@ Calendar.propTypes = {
 Calendar.defaultProps = {
   className: null,
   disabled: null,
-  errorText: null,
+  error: null,
   helpText: null,
   id: null,
   label: null,

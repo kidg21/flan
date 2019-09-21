@@ -1,7 +1,8 @@
 import React, { useContext, useState } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { fonts, colors, shadows } from "Variables";
+import { fonts, shadows } from "Variables";
+import Grid from "layout/Grid";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
 import Select from "react-select";
 import { Skeleton } from "helpers";
@@ -18,21 +19,21 @@ const selectStyles = {
   // Toggle UI
   control: (styles, { isDisabled, isFocused }) => {
     let bgColor = "";
-    if (!isFocused) bgColor = isDisabled ? colors.grey_20 : colors.white;
+    if (!isFocused) bgColor = isDisabled ? props.theme.palette.disabled : props.theme.background.default;
 
     return {
       ...styles,
       "backgroundColor": bgColor,
       "borderColor": isFocused
-        ? `${colors.success_light}!important`
-        : colors.grey_20,
-      "borderBottomColor": colors.grey_20,
+        ? `${props.theme.palette.successLight}!important`
+        : props.theme.palette.border,
+      "borderBottomColor": props.theme.palette.border,
       "fontWeight": "normal",
       "letterSpacing": ".5px",
       "minHeight": "2.75rem",
       "cursor": isDisabled ? "not-allowed" : "pointer",
       ":hover": {
-        borderColor: colors.grey_40,
+        borderColor: props.theme.palette.disabled,
       },
       "boxShadow": "none",
     };
@@ -41,7 +42,7 @@ const selectStyles = {
     return {
       ...styles,
       fontFamily: fonts.data,
-      color: isFocused ? colors.grey_60 : colors.grey_60,
+      color: isFocused ? props.theme.text.primary : props.theme.palette.border,
       letterSpacing: ".5px",
       fontWeight: 400,
     };
@@ -59,21 +60,21 @@ const selectStyles = {
   clearIndicator: (styles, { isFocused }) => {
     return {
       ...styles,
-      color: isFocused ? colors.grey_40 : colors.grey_20,
+      color: isFocused ? props.theme.text.primary : props.theme.palette.border,
     };
   },
   // pipe
   indicatorSeparator: (styles, { isDisabled }) => {
     return {
       ...styles,
-      backgroundColor: isDisabled ? colors.grey_40 : colors.grey_20,
+      backgroundColor: isDisabled ? props.theme.text.disabled : props.theme.palette.disabled,
     };
   },
   // down arrow
   dropdownIndicator: (styles, { isFocused }) => {
     return {
       ...styles,
-      color: isFocused ? colors.grey_60 : colors.grey_60,
+      color: isFocused ? props.theme.text.primary : props.theme.palette.border,
     };
   },
   // multi element background
@@ -90,7 +91,7 @@ const selectStyles = {
     return {
       ...styles,
       fontFamily: fonts.data,
-      color: colors.grey_80,
+      color: props.theme.palette.border,
     };
   },
   // multi element 'x' background
@@ -98,10 +99,10 @@ const selectStyles = {
     return {
       ...styles,
       ":hover": {
-        backgroundColor: colors.grey_40,
-        color: colors.grey_80,
+        backgroundColor: props.theme.palette.disabled,
+        color: props.theme.palette.border,
       },
-      "color": colors.grey_60,
+      "color": props.theme.palette.border,
     };
   },
   // options menu
@@ -112,18 +113,20 @@ const selectStyles = {
       textAlign: "left",
       letterSpacing: ".5px",
       margin: ".25rem 0",
+      border: "1px solid",
+      borderColor: props.theme.palette.border,
       boxShadow: shadows.dropShadow,
     };
   },
   // Menu Options
   option: (styles, { isDisabled, isFocused, isSelected }) => {
-    let color = colors.grey_80;
+    let color = props.theme.palette.primary;
     if (isDisabled) {
-      color = colors.grey_40;
+      color = props.theme.palette.border
     } else if (isSelected) {
-      color = colors.black;
+      color = props.theme.text.primary
     } else if (isFocused) {
-      color = colors.success;
+      color = props.theme.palette.success;
     }
 
     return {
@@ -135,25 +138,11 @@ const selectStyles = {
   },
 };
 
-const SelectMenuContainer = styled.div`
-  display: ${(props) => { return (props.displayInline ? "inline-block" : "grid"); }};
-  grid-template-columns: ${(props) => {
-    return props.threeInputs
-      ? "repeat(3, 1fr)"
-      : props.twoInputs
-        ? "repeat(2, 1fr)"
-        : props.prefix
-          ? "minmax(auto, auto) minmax(auto, 3fr)"
-          : props.postfix
-            ? "minmax(auto, 3fr) minmax(auto, auto)"
-            : "repeat(1, 1fr)";
-  }};
-  grid-gap: 0.35rem;
-  align-content: flex-start;
+const SelectMenuContainer = styled(Grid)`
   color: ${(props) => {
     let color = "";
-    if (props.error) color = colors.alert;
-    else if (props.disabled) color = colors.grey_40;
+    if (props.error) color = props.theme.palette.alert;
+    else if (props.disabled) color = props.theme.palette.disabled;
     return color;
   }};
   width: 100%;
@@ -174,7 +163,7 @@ function SelectMenu({
   selectOptions,
   disabled,
   error,
-  inputLabel,
+  label,
   isRequired,
   helpText,
   isSearchable,
@@ -238,10 +227,10 @@ function SelectMenu({
       disabled={isDisabled} // input attribute
       error={state.error !== null}
       displayInline={displayInline}
+      columns="1"
+      gap="small"
     >
-      {inputLabel ? (
-        <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
-      ) : null}
+      {label ? <InputLabel label={label} isRequired={isRequired} /> : null}
       <Select
         id={id} // input attribute
         name={name} // input attribute
@@ -277,7 +266,7 @@ SelectMenu.propTypes = {
     }),
   ])).isRequired,
   selectOptions: PropTypes.any,
-  inputLabel: PropTypes.string,
+  label: PropTypes.string,
   isRequired: PropTypes.bool,
   disabled: PropTypes.bool,
   error: PropTypes.string,
@@ -296,7 +285,7 @@ SelectMenu.defaultProps = {
   name: null,
   placeholder: null,
   selectOptions: null,
-  inputLabel: null,
+  label: null,
   isRequired: false,
   disabled: null,
   error: null,

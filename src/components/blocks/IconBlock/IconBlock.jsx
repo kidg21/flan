@@ -23,7 +23,7 @@ IconBlock.propTypes = {
   /** Currently needed for stories
    * TODO: retructre stories and remove 'style' prop
    */
-  style: PropTypes.string,
+  style: PropTypes.object,
   /** className used for extending styles */
   className: PropTypes.string,
 };

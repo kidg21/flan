@@ -31,7 +31,7 @@ function Grid({ children, columns, gap, id, rows, className }) {
       setGap = ".25rem";
       break;
     case "small":
-      setGap = ".5rem";
+      setGap = ".75rem";
       break;
     case "large":
       setGap = "1.5rem";
