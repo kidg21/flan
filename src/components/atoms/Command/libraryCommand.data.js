@@ -5,7 +5,7 @@ const placeholder = {
 // Type
 const commandsStandard = [
   {
-    command: "add to list",
+    command: "add",
     desc: placeholder.desc,
   },
   {
@@ -17,7 +17,23 @@ const commandsStandard = [
     desc: placeholder.desc,
   },
   {
+    command: "apply",
+    desc: placeholder.desc,
+  },
+  {
     command: "bookmark",
+    desc: placeholder.desc,
+  },
+  {
+    command: "close",
+    desc: placeholder.desc,
+  },
+  {
+    command: "compare",
+    desc: placeholder.desc,
+  },
+  {
+    command: "copy",
     desc: placeholder.desc,
   },
   {
@@ -30,11 +46,43 @@ const commandsStandard = [
     desc: placeholder.desc,
   },
   {
+    command: "edit",
+    desc: placeholder.desc,
+  },
+  {
+    command: "exclude",
+    desc: placeholder.desc,
+  },
+  {
+    command: "filter",
+    desc: placeholder.desc,
+  },
+  {
     command: "gps",
     desc: placeholder.desc,
   },
   {
+    command: "help",
+    desc: placeholder.desc,
+  },
+  {
+    command: "include",
+    desc: placeholder.desc,
+  },
+  {
+    command: "info",
+    desc: placeholder.desc,
+  },
+  {
+    command: "measure",
+    desc: placeholder.desc,
+  },
+  {
     command: "menu",
+    desc: placeholder.desc,
+  },
+  {
+    command: "new",
     desc: placeholder.desc,
   },
   {
@@ -46,6 +94,14 @@ const commandsStandard = [
     desc: placeholder.desc,
   },
   {
+    command: "photos",
+    desc: placeholder.desc,
+  },
+  {
+    command: "preferences",
+    desc: placeholder.desc,
+  },
+  {
     command: "print",
     desc: placeholder.desc,
   },
@@ -54,7 +110,19 @@ const commandsStandard = [
     desc: placeholder.desc,
   },
   {
-    command: "report issue",
+    command: "redo",
+    desc: placeholder.desc,
+  },
+  {
+    command: "reports",
+    desc: placeholder.desc,
+  },
+  {
+    command: "save",
+    desc: placeholder.desc,
+  },
+  {
+    command: "search",
     desc: placeholder.desc,
   },
   {
@@ -66,7 +134,23 @@ const commandsStandard = [
     desc: placeholder.desc,
   },
   {
-    command: "view report",
+    command: "support",
+    desc: placeholder.desc,
+  },
+  {
+    command: "sync",
+    desc: placeholder.desc,
+  },
+  {
+    command: "undo",
+    desc: placeholder.desc,
+  },
+  {
+    command: "view",
+    desc: placeholder.desc,
+  },
+  {
+    command: "zoom extents",
     desc: placeholder.desc,
   },
 ];

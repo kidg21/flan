@@ -149,32 +149,6 @@ storiesOf("Atoms|Command", module)
     );
   });
 
-storiesOf("Application|Libraries/", module)
-  .addDecorator(Padding)
-  .add("Command Library", () => {
-    return (
-      <Grid>
-        <Headline text="List of Commands" />
-        <Description text="The Command is an interactive UI element that pairs an icon and a label. Use a Command when a user's action is intended to begin an action or workflow." />
-        <Command command="bookmark" />
-        <Command icon="list" label="Bookmark2" />
-        {/* <SectionTitle>Standard Commands</SectionTitle>
-        <Command name="add to list" />
-        <Command name="address" />
-        <Command name="apn" />
-        <Command name="bookmark" />
-        <Command name="profile" />
-        <Command name="gps" />
-        <Command name="menu" />
-        <Command name="notifications" />
-        <Command name="print" />
-        <Command name="profile" />
-        <Command name="settings" />
-        <Command name="share" /> */}
-      </Grid>
-    );
-  });
-
 storiesOf("Application|Libraries/Command Library", module)
   .addDecorator(Padding)
   .add("Standard Commands", () => {
