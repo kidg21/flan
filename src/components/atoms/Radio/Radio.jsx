@@ -50,19 +50,12 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
   cursor: pointer;
   -webkit-appearance: none;
   &:checked {
-<<<<<<< HEAD
-    background-color: ${props =>
-    props.error ? colors.alert_tint : colors.success_light};
-    border-color: ${props =>
-    props.error ? colors.alert_light : colors.success};
-=======
     background-color: ${(props) => {
     return props.fillColorChecked || colors.success_light;
   }};
     border-color: ${(props) => {
     return props.outlineColor || colors.success;
   }};
->>>>>>> components/FLAN-75a_Inputs-Switch
   }
   &:focus {
     border-color: ${(props) => {
