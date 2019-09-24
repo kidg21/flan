@@ -58,8 +58,9 @@ storiesOf("Application|Style Guides/", module)
         <Number text="1234567890" />
         <Number text="3.14" />
         <Number text="1/2" />
-        <Headline text="Types" />
+        <Headline text="Code" />
         <Code text="<Command command='search' />" />
+        <Headline text="Types" />
         <Title text="This is 'info' text" type="info" />
         <Title text="This is 'success' text" type="success" />
         <Title text="This is 'warning' text" type="warning" />
