@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { fonts, shadows } from "Variables";
+import { fonts, colors, shadows } from "Variables";
 import Grid from "layout/Grid";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
 import Select from "react-select";
@@ -19,21 +19,21 @@ const selectStyles = {
   // Toggle UI
   control: (styles, { isDisabled, isFocused }) => {
     let bgColor = "";
-    if (!isFocused) bgColor = isDisabled ? props.theme.palette.disabled : props.theme.background.default;
+    if (!isFocused) bgColor = isDisabled ? colors.grey_light : colors.white;
 
     return {
       ...styles,
       "backgroundColor": bgColor,
       "borderColor": isFocused
-        ? `${props.theme.palette.successLight}!important`
-        : props.theme.palette.border,
-      "borderBottomColor": props.theme.palette.border,
+        ? `${colors.success_light}!important`
+        : colors.grey_20,
+      "borderBottomColor": colors.grey_20,
       "fontWeight": "normal",
       "letterSpacing": ".5px",
       "minHeight": "2.75rem",
       "cursor": isDisabled ? "not-allowed" : "pointer",
       ":hover": {
-        borderColor: props.theme.palette.disabled,
+        borderColor: colors.grey_40,
       },
       "boxShadow": "none",
     };
@@ -42,7 +42,7 @@ const selectStyles = {
     return {
       ...styles,
       fontFamily: fonts.data,
-      color: isFocused ? props.theme.text.primary : props.theme.palette.border,
+      color: isFocused ? colors.grey_60 : colors.grey_60,
       letterSpacing: ".5px",
       fontWeight: 400,
     };
@@ -60,21 +60,21 @@ const selectStyles = {
   clearIndicator: (styles, { isFocused }) => {
     return {
       ...styles,
-      color: isFocused ? props.theme.text.primary : props.theme.palette.border,
+      color: isFocused ? colors.grey_40 : colors.grey_20,
     };
   },
   // pipe
   indicatorSeparator: (styles, { isDisabled }) => {
     return {
       ...styles,
-      backgroundColor: isDisabled ? props.theme.text.disabled : props.theme.palette.disabled,
+      backgroundColor: isDisabled ? colors.grey_40 : colors.grey_20,
     };
   },
   // down arrow
   dropdownIndicator: (styles, { isFocused }) => {
     return {
       ...styles,
-      color: isFocused ? props.theme.text.primary : props.theme.palette.border,
+      color: isFocused ? colors.grey_60 : colors.grey_60,
     };
   },
   // multi element background
@@ -91,7 +91,7 @@ const selectStyles = {
     return {
       ...styles,
       fontFamily: fonts.data,
-      color: props.theme.palette.border,
+      color: colors.grey_80,
     };
   },
   // multi element 'x' background
@@ -99,10 +99,10 @@ const selectStyles = {
     return {
       ...styles,
       ":hover": {
-        backgroundColor: props.theme.palette.disabled,
-        color: props.theme.palette.border,
+        backgroundColor: colors.grey_40,
+        color: colors.grey_80,
       },
-      "color": props.theme.palette.border,
+      "color": colors.grey_60,
     };
   },
   // options menu
@@ -114,19 +114,19 @@ const selectStyles = {
       letterSpacing: ".5px",
       margin: ".25rem 0",
       border: "1px solid",
-      borderColor: props.theme.palette.border,
+      borderColor: colors.grey_40,
       boxShadow: shadows.dropShadow,
     };
   },
   // Menu Options
   option: (styles, { isDisabled, isFocused, isSelected }) => {
-    let color = props.theme.palette.primary;
+    let color = colors.grey_80;
     if (isDisabled) {
-      color = props.theme.palette.border
+      color = colors.grey_40;
     } else if (isSelected) {
-      color = props.theme.text.primary
+      color = colors.black;
     } else if (isFocused) {
-      color = props.theme.palette.success;
+      color = colors.success;
     }
 
     return {
@@ -141,8 +141,8 @@ const selectStyles = {
 const SelectMenuContainer = styled(Grid)`
   color: ${(props) => {
     let color = "";
-    if (props.error) color = props.theme.palette.alert;
-    else if (props.disabled) color = props.theme.palette.disabled;
+    if (props.error) color = colors.alert;
+    else if (props.disabled) color = colors.grey_40;
     return color;
   }};
   width: 100%;

@@ -198,8 +198,8 @@ storiesOf("Blocks|Bar", module)
           left={
             <IconBlock>
               <Icon icon="circle_solid" />
-              <Icon icon="circle_solid" anchor />
-              <Icon icon="circle_solid" success />
+              <Icon icon="circle_solid" type="info" />
+              <Icon icon="circle_solid" type="success" />
             </IconBlock>
           }
         />
@@ -212,16 +212,16 @@ storiesOf("Blocks|Bar", module)
           left={
             <IconBlock>
               <Icon icon="circle_solid" />
-              <Icon icon="circle_solid" anchor />
-              <Icon icon="circle_solid" success />
+              <Icon icon="circle_solid" type="info" />
+              <Icon icon="circle_solid" type="success" />
             </IconBlock>
           }
           center={longTitle}
           right={
             <IconBlock>
               <Icon icon="circle_solid" />
-              <Icon icon="circle_solid" anchor />
-              <Icon icon="circle_solid" success />
+              <Icon icon="circle_solid" type="info" />
+              <Icon icon="circle_solid" type="success" />
             </IconBlock>
           }
         />
@@ -235,8 +235,8 @@ storiesOf("Blocks|Bar", module)
           right={
             <IconBlock>
               <Icon icon="circle_solid" />
-              <Icon icon="circle_solid" anchor />
-              <Icon icon="circle_solid" success />
+              <Icon icon="circle_solid" type="info" />
+              <Icon icon="circle_solid" type="success" />
             </IconBlock>
           }
         />
@@ -247,8 +247,8 @@ storiesOf("Blocks|Bar", module)
           left={
             <IconBlock>
               <Icon icon="circle_solid" />
-              <Icon icon="circle_solid" anchor />
-              <Icon icon="circle_solid" success />
+              <Icon icon="circle_solid" type="info" />
+              <Icon icon="circle_solid" type="success" />
             </IconBlock>
           }
           right={shortTitle}

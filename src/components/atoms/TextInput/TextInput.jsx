@@ -15,7 +15,7 @@ const TextInputContainer = styled(Grid)`
 const Input = styled.input`
   border: 1px solid;
   border-color: ${(props) => {
-    return props.theme.palette[props.inputBorderColor] || props.theme.palette.border;
+    return props.theme.palette[props.inputBorderColor] || props.theme.palette.grey5;
   }};
   background-color: ${(props) => {
     return props.theme.palette[props.inputFillColor] || "";
@@ -42,11 +42,11 @@ const Input = styled.input`
   }
   &:focus {
     border-color: ${(props) => {
-    return props.theme.palette[props.inputBorderColorHover] || props.theme.palette.success;
+    return props.theme.palette[props.inputBorderColorHover] || props.theme.palette.secondaryLight;
   }};
     ::selection {
       background-color: ${(props) => {
-    return props.theme.palette[props.inputSelectColor] || props.theme.palette.success;
+    return props.theme.palette[props.inputSelectColor] || props.theme.palette.secondary;
   }};
     }
   }
@@ -81,7 +81,7 @@ function TextInput({
   if (error && !disabled) {
     inputTextColor = "alert";
     inputBorderColor = "alertLight";
-    inputBorderColorHover = "alertLight";
+    inputBorderColorHover = "alert";
     inputSelectColor = "alert";
   }
   switch (type) {

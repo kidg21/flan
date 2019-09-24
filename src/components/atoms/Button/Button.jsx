@@ -112,10 +112,10 @@ function Button({
       buttonColor = "disabled";
       fontColor = buttonColor;
       break;
-      case "grey":
-          buttonColor = "grey";
-          fontColor = buttonColor;
-          break;
+      // case "grey":
+      //     buttonColor = "grey";
+      //     fontColor = buttonColor;
+      //     break;
     case "alert":
       buttonColor = "alert";
       fontColor = buttonColor;

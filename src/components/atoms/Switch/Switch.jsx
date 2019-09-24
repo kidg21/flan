@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import Title from "base/Typography";
 import { DisabledContext } from "States";
 
 const SwitchContainer = styled.div`
@@ -15,7 +16,7 @@ const SwitchContainer = styled.div`
     return props.alignInput || "";
   }};
   color: ${(props) => {
-    return props.checkboxColor || "";
+    return props.theme.palette[props.checkboxColor] || props.theme.text.primary;
   }};
   background-color: ${(props) => {
     return props.theme.palette[props.fillColor] || props.theme.background.default;
@@ -23,10 +24,8 @@ const SwitchContainer = styled.div`
   border-color: ${(props) => {
     return props.theme.palette[props.borderColor] || props.theme.text.secondary;
   }};
-  align-items: center;
-  line-height: normal;
+  align-items: bottom;
   width: max-content;
-  line-height: initial;
   &[disabled],
   &[readonly] {
     cursor: not-allowed;
@@ -37,14 +36,14 @@ const SwitchContainer = styled.div`
 
 const StyledSwitch = styled.div`
   grid-area: input;
-  width: 3rem;
+  width: 2.75rem;
   height: 1.5rem;
   border: 1px solid;
   border-color: ${(props) => {
     return props.theme.palette[props.borderColor] || props.theme.palette.border;
   }};
   border-radius: 1em;
-  background-image: ${(props) => {
+  background-color: ${(props) => {
     return props.theme.palette[props.fillColor] || "";
   }};
   cursor: pointer;
@@ -59,17 +58,16 @@ const StyledSwitch = styled.div`
 const Circle = styled.div`
   position: absolute;
   background: ${(props) => {
-    return props.checked ? props.theme.background.default : props.theme.palette.border;
+    return props.checked ? props.theme.background.default : props.theme.background.default;
   }};
   border: 1px solid;
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.border;
+    return props.theme.palette[props.borderColor] || props.theme.palette.grey;
   }};
   border-radius: 100%;
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1.3rem;
+  height: 1.3rem;
   z-index: 1;
-  margin: 1px;
   transition: transform 300ms ease-in-out;
   transform: ${(props) => {
     return props.checked ? "translateX(100%)" : "translateX(0)";
@@ -82,13 +80,11 @@ const Circle = styled.div`
   }
 `;
 
-const SwitchLabel = styled.label`
+const SwitchLabel = styled(Title)`
   grid-area: label;
-  color: ${(props) => {
-    return props.theme.text[props.labelColor] || "";
-  }};
+  padding-top: 1.5px;
+  color: inherit;
   user-select: none;
-  font-weight: 700;
   cursor: pointer;
   &[disabled],
   &[readonly] {
@@ -110,9 +106,9 @@ function Switch({
     checkboxColor = "disabled";
   }
   if (error && !isDisabled) {
-    checkboxColor = "alert";
-    fillColor = `linear-gradient(${props.theme.palette.alertLight}, ${props.theme.palette.alert})`;
-    borderColor = props.theme.palette.alert;
+    checkboxColor = "alertDark";
+    fillColor = "alert";
+    borderColor = "alertDark";
   }
   switch (align) {
     case "right":
@@ -132,8 +128,8 @@ function Switch({
     };
   }
   if (isChecked && !error) {
-    fillColor = `linear-gradient(${props.theme.palette.successLight}, ${props.theme.palette.success})`;
-    borderColor = "success";
+    fillColor = "secondaryLight";
+    borderColor = "secondary";
   }
   return (
     <SwitchContainer
@@ -155,9 +151,7 @@ function Switch({
         <Circle checked={isChecked} borderColor={borderColor} />
       </StyledSwitch>
       {label ? (
-        <SwitchLabel onChange={onChange} disabled={isDisabled}>
-          {label}
-        </SwitchLabel>
+        <SwitchLabel size="small" onChange={onChange} disabled={isDisabled} text={label} />
       ) : null}
     </SwitchContainer>
   );

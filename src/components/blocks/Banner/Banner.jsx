@@ -11,9 +11,9 @@ const StyledBanner = styled.div`
   position: relative;
   background-color: ${props =>
     props.theme.background.default};
-  color: ${props => (props.theme.text.primary)};
+  color: ${props => (props.theme.palette[props.inverse] ? "" : props.theme.palette.white)};
   border: 1px solid;
-  border-color: ${props => props.theme.palette[props.borderColor] || props.theme.palette.disabled };
+  border-color: ${props => props.theme.palette[props.borderColor] || props.theme.palette.grey5 };
   border-radius: 5px;
   padding: 1em;
   width: 100%;
@@ -21,7 +21,7 @@ const StyledBanner = styled.div`
 
 const StatusBadge = styled.div`
   background-color: ${props => props.theme.palette[props.badgeBG] || ""};
-  color: ${props => (props.badgeBG ? props.theme.palette.white : "")};
+  color: ${props => (props.theme.palette[props.badgeBG] ? props.theme.palette.white : "")};
   padding: ${props => (props.badgeBG ? ".5em" : "")};
   margin-right: 1em;
   border-radius: 100%;
@@ -98,7 +98,7 @@ function Banner({
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
-          <Icon icon="info" fixedWidth anchor />
+          <Icon icon="info" fixedWidth type="inverse"/>
         </StatusBadge>
       );
       break;
@@ -107,7 +107,7 @@ function Banner({
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
-          <Icon icon="check" fixedWidth success />
+          <Icon icon="check" fixedWidth type="inverse"/>
         </StatusBadge>
       );
       break;
@@ -116,7 +116,7 @@ function Banner({
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
-          <Icon icon="alert" fixedWidth warning />
+          <Icon icon="alert" fixedWidth type="inverse"/>
         </StatusBadge>
       );
       break;
@@ -125,7 +125,7 @@ function Banner({
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
-          <Icon icon="close" fixedWidth alert />
+          <Icon icon="close" fixedWidth type="inverse"/>
         </StatusBadge>
       );
       break;

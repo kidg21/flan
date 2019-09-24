@@ -6,24 +6,22 @@ import { Lighten, Darken } from "Variables";
 const SliderPiece = styled.input.attrs({ type: "range" })`
   height: 1px;
   background: ${(props) => {
-    return props.error ? props.theme.palette.alertLight : props.theme.palette.border;
+    return props.error ? props.theme.palette.alertLight : props.theme.palette.grey3;
   }};
   outline: none;
   opacity: 0.7;
   transition: opacity 0.2s;
   &::-webkit-slider-thumb {
     appearance: none;
-    width: 1.25em;
-    height: 1.25em;
+    width: 1.5em;
+    height: 1.5em;
     border: 1px solid;
     border-color: ${(props) => {
-    return props.error ? props.theme.palette.alertDark : props.theme.palette.successDark;
+    return props.error ? props.theme.palette.alertDark : props.theme.palette.secondary;
   }};
     border-radius: 50%;
-    background-image: ${(props) => {
-    return props.error
-      ? `linear-gradient(${props.theme.palette.alertLight}, ${props.theme.palette.alertDark})`
-      : `linear-gradient(${props.theme.palette.successLight}, ${props.theme.palette.successDark})`;
+    background-color: ${(props) => {
+    return props.error ? props.theme.palette.alert : props.theme.palette.secondary;
   }};
     cursor: pointer;
     &:hover {
@@ -61,11 +59,12 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
     pointer-events: none;
     user-select: none;
     &::-webkit-slider-thumb {
-      border-color: ${props.theme.palette.border};
-      background-image: linear-gradient(
-        ${props.theme.palette.successLight},
-        ${props.theme.palette.success}
-      );
+      border-color: ${(props) => {
+    return props.theme.palette.secondaryDark;
+  }};
+      background-color: ${(props) => {
+    return props.theme.palette.disabled;
+  }};
     }
   }
 `;

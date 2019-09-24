@@ -3,6 +3,7 @@ import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
+import Layout from "layout/Layout";
 import {
   withKnobs,
   text,
@@ -88,7 +89,9 @@ storiesOf("Blocks|Banner", module)
       />
     </Grid>
   ))
+  
   .add("The Banner Family", () => (
+    <Layout>
     <Grid>
       <Banner title="This is a Standard notification telling you stuff." />
       <Banner
@@ -119,4 +122,5 @@ storiesOf("Blocks|Banner", module)
         link="Learn More"
       />
     </Grid>
+    </Layout>
   ));

@@ -36,7 +36,7 @@ const StyledIcon = styled(FontAwesomeIcon)`
     return props.border ? "2px solid" : "";
   }};
   border-color: ${(props) => {
-    return props.theme.palette[props.border]  ||  "";
+    return props.theme.palette[props.border] || "";
   }};
   border-radius: ${(props) => {
     return props.border ? "5px" : "";
@@ -179,10 +179,13 @@ function Icon({
       color = "primary";
       break;
     case "secondary":
-      color = "secondary";
+      color = "secondaryDark";
       break;
     case "disabled":
       color = "disabled";
+      break;
+    case "inverse":
+      color = "inverse";
       break;
     case "white":
       color = "white";

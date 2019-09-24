@@ -102,7 +102,7 @@ function Text({
       textColor = "alert";
       break;
     case "light":
-      textColor = "grey";
+      textColor = "disabled";
       break;
     default:
       break;

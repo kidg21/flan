@@ -18,11 +18,11 @@ const ColorBlockColor = styled.div`
     }};
 
   background-color: ${props => {
-    return props.color || "";
+    return props.theme.palette[props.color] || "";
   }};
 `;
 
-const TextStuff = styled.h4`
+const TextStuff = styled(Title)`
   color: ${props => {
     return props.color || "";
   }};
@@ -32,44 +32,6 @@ const TextStuff = styled.h4`
 
 function Colors({ id, shade, comment, color, hexcode }) {
   let filterShade;
-  // switch (type) {
-  //   case "info":
-  //     backgroundColor = "info";
-  //     break;
-  //   case "success":
-  //     backgroundColor = "success";
-  //     break;
-  //   case "warning":
-  //     backgroundColor = "warning";
-  //     break;
-  //   case "alert":
-  //     backgroundColor = "alert";
-  //     break;
-  //   case "primary":
-  //     backgroundColor = "primary";
-  //     break;
-  //   case "secondary":
-  //     backgroundColor = "secondary";
-  //     break;
-  //   case "background":
-  //     backgroundColor = "background";
-  //     break;
-  //   case "textColor":
-  //     backgroundColor = "textColor";
-  //     break;
-  //   case "disabled":
-  //     backgroundColor = "disabled";
-  //     break;
-  //   case "divider":
-  //     backgroundColor = "divider";
-  //     break;
-  //   case "appBackground":
-  //     backgroundColor = "appBackground";
-  //     break;
-  //   default:
-  //     backgroundColor = "primary";
-  //     break;
-  // }
   switch (shade) {
     case "darken":
       filterShade = "brightness(85%) contrast(150%)";
@@ -87,7 +49,7 @@ function Colors({ id, shade, comment, color, hexcode }) {
       leftWidth="min-content"
       center={
         <>
-          <TextStuff color={color}>{color}</TextStuff> <Title text={comment} weight="normal" />
+          <TextStuff color={color} text={color} />
           <Description text={comment} />
         </>
       }

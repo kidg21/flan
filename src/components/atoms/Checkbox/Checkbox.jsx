@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import Title from "base/Typography";
 import { DisabledContext } from "States";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
 import Grid from "layout/Grid";
@@ -24,7 +25,7 @@ const CheckboxContainer = styled.div`
   width: max-content;
   line-height: initial;
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || "";
+    return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
   &[disabled],
   &[readonly] {
@@ -43,30 +44,31 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   border-color: ${(props) => {
     return props.theme.palette[props.borderColor] || props.theme.palette.border;
   }};
-  width: 1rem;
-  height: 1rem;
-  margin-top: .25em;
+  width: 1.1rem;
+  height: 1.1rem;
   border-radius: 2px;
   cursor: pointer;
   -webkit-appearance: none;
   &:checked {
     background-color: ${(props) => {
-    return props.theme.palette[props.fillColorChecked] || props.theme.palette.successLight;
+    return props.theme.palette[props.fillColorChecked] || props.theme.palette.secondaryLight;
   }};
     border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.success;
+    return props.theme.palette[props.borderColor] || props.theme.palette.secondary;
   }};
   }
   &:focus {
     outline-color: ${(props) => {
-    return props.theme.palette[props.outlineColor] || props.theme.palette.success;
+    return props.theme.palette[props.outlineColor] || props.theme.palette.secondary;
   }};
   }
 `;
 
 const CheckboxLabel = styled(Title)`
   grid-area: label;
-  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+  padding-top: 1px;
   color: inherit;
   user-select: none;
   cursor: pointer;
@@ -98,11 +100,11 @@ function Checkbox({
   }
   if (error && !isDisabled) {
     inputTextColor = "error";
-    fillColor = "alertLight";
-    borderColor = "alertLight";
+    fillColor = "alert";
+    borderColor = "alertDark";
     outlineColor = "alertLight";
-    fillColorChecked = "alertLight";
-    borderColorChecked = "alert";
+    fillColorChecked = "alert";
+    borderColorChecked = "alertDark";
   }
   switch (align) {
     case "right":

@@ -31,7 +31,7 @@ const ListItemWrapper = styled.li`
     return props.theme.background[props.itemColor];
   }};
   background-color: ${props => {
-    return props.theme.palette[props.itemBGColor] || props.theme.background.default;
+    return props.theme.palette[props.itemBGColor] || "";
   }};
   border-style: solid;
   border-width: ${props => {
@@ -92,7 +92,7 @@ function ListItem({
   let itemBorder;
   switch (state) {
     case "active":
-      itemColor = "success";
+      itemColor = "app";
       itemBorder = "0 0 0 .5em";
       break;
     default:
