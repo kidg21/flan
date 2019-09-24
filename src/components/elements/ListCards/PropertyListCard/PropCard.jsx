@@ -24,7 +24,7 @@ function PropCard({
               {landUse} <br />
               {price}
             </p>
-            <Command name="add to list" size="small" />
+            <Command icon="plus" label="Add To List" />
           </Titles>
         }
         right={image}

@@ -107,58 +107,6 @@ function Command({
   let commandSize = "";
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) commandColor = colors.grey_40;
-  switch (name) {
-    case "add to list":
-      icon = "plus";
-      label = "Add To List";
-      break;
-    case "address":
-      icon = "address";
-      label = "Address";
-      break;
-    case "apn":
-      icon = "apn";
-      label = "APN";
-      break;
-    case "bookmark":
-      icon = "bookmark_solid";
-      label = "Bookmark";
-      break;
-    case "contacts":
-      icon = "contacts";
-      label = "Contacts";
-      break;
-    case "gps":
-      icon = "gps";
-      label = "GPS";
-      break;
-    case "menu":
-      icon = "bars";
-      label = "Menu";
-      break;
-    case "notifications":
-      icon = "notification_solid";
-      label = "Notifications";
-      break;
-    case "print":
-      icon = "print";
-      label = "Print";
-      break;
-    case "profile":
-      icon = "user";
-      label = "Profile";
-      break;
-    case "settings":
-      icon = "settings";
-      label = "Settings";
-      break;
-    case "share":
-      icon = "share";
-      label = "Share";
-      break;
-    default:
-      break;
-  }
   switch (align) {
     case "center":
       alignCommand = "auto";
@@ -193,6 +141,7 @@ function Command({
       justifyIcon={justifyIcon}
       label={label}
       onClick={onClick}
+      title={command.label || label} // HTML attribute (display on :hover)
     >
       {command.icon ? <CommandIcon icon={command.icon} /> : null}
       <CommandName>{command.label}</CommandName>
@@ -207,7 +156,6 @@ Command.propTypes = {
   icon: PropTypes.string,
   id: PropTypes.string,
   label: PropTypes.string,
-  name: PropTypes.string,
   onClick: PropTypes.node,
   size: PropTypes.oneOf(["small", "large"]),
 };
@@ -219,7 +167,6 @@ Command.defaultProps = {
   icon: null,
   id: null,
   label: "Command",
-  name: null,
   onClick: null,
   size: null,
 };

@@ -106,11 +106,6 @@ storiesOf("Atoms|Command", module)
           <u>Command Alignment</u>
         </Title>
         <Description text="The standard Command is left-aligned with its Icon on the left. Set the 'align' prop to 'center' in order to center-align the Command placing its Icon atop the label. Set the 'align' prop to 'right' to right-align the Command with its Icon on the right." />
-        {/* The standard Command is left-aligned with its Icon on the left. Set the &apos;align&apos;
-          prop to &apos;center&apos; in order to center-align the Command placing its Icon atop the
-          label. Set the &apos;align&apos; prop to &apos;right&apos; to right-align the Command with
-          its Icon on the right.
-        </Description> */}
         <Command label="Icon-Left" icon="circle_solid" />
         <Command label="Icon-Top" icon="circle_solid" align="center" />
         <Command label="Icon-Right" icon="circle_solid" align="right" />
@@ -149,7 +144,7 @@ storiesOf("Atoms|Command", module)
     );
   });
 
-storiesOf("Application|Libraries/Command Library", module)
+storiesOf("Application|Libraries", module)
   .addDecorator(Padding)
   .add("Standard Commands", () => {
     return (

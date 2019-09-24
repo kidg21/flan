@@ -18,11 +18,11 @@ function Menu() {
       </PanelSection>
       <PanelSection>
         <NavigationCardBar title={<Command label="Uploads" />} />
-        <NavigationCardBar title={<Command name="notifications" />} />
+        <NavigationCardBar title={<Command command="notifications" />} />
         <NavigationCardBar title={<Command label="Shared Content" />} />
         <NavigationCardBar title={<Command label="Information" />} />
-        <NavigationCardBar title={<Command name="settings" />} />
-        <NavigationCardBar title={<Command name="profile" />} />
+        <NavigationCardBar title={<Command command="settings" />} />
+        <NavigationCardBar title={<Command command="profile" />} />
       </PanelSection>
     </Panel>
   );
