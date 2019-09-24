@@ -64,8 +64,11 @@ const GlobalStyles = createGlobalStyle`
     /* Default Link Styles */
     a {
       color: ${colors.anchor};
+      width: fit-content;
       line-height: inherit;
       text-decoration: none;
+      padding: .5em;
+      margin: -.5em;
       cursor: pointer;
       &:empty {
         &:before {
@@ -88,6 +91,7 @@ const GlobalStyles = createGlobalStyle`
     h1, h2, h3, h4, h5, h6, p {
         font-style: normal;
         color: inherit;
+        width: fit-content;
     }
     p {
         font-family: inherit;
@@ -199,6 +203,7 @@ const GlobalStyles = createGlobalStyle`
       font-family: ${fonts.data};
       font-size: 0.85em;
       letter-spacing: 1px;
+      width: fit-content;
       &:empty {
         &:before {
           ${Skeleton};
