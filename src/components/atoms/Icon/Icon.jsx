@@ -168,19 +168,20 @@ const iconHash = {
 };
 
 function Icon({
-  id,
-  icon,
-  type,
-  size,
-  fixedWidth,
-  rotation,
-  flip,
-  spin,
-  pulse,
   border,
-  onClick,
-  disabled,
   className,
+  disabled,
+  fixedWidth,
+  flip,
+  icon,
+  id,
+  onClick,
+  pulse,
+  rotation,
+  size,
+  spin,
+  title,
+  type,
 }) {
   let color;
   icon = iconHash[icon.toLowerCase()] || ["far", icon.toLowerCase()];
@@ -211,17 +212,18 @@ function Icon({
 
   const styledIcon = (
     <StyledIcon
-      id={id}
-      icon={icon}
-      color={color}
-      size={size}
-      fixedWidth={fixedWidth}
-      rotation={rotation}
-      flip={flip}
-      spin={spin}
-      pulse={pulse}
       border={border}
       className={className}
+      color={color}
+      fixedWidth={fixedWidth}
+      flip={flip}
+      icon={icon}
+      id={id}
+      pulse={pulse}
+      rotation={rotation}
+      size={size}
+      spin={spin}
+      title={title} // HTML attribute (display on :hover)
     />
   );
 
@@ -235,48 +237,50 @@ function Icon({
 }
 
 Icon.propTypes = {
-  id: PropTypes.string,
-  /** Options: 'info', 'success', 'warning', 'alert', 'inverse' */
-  type: PropTypes.string,
+  border: PropTypes.bool,
+  /** className used for extending styles */
+  className: PropTypes.string,
+  /** Used to set one or more icons to the same fixed width.
+   * Good for vertically aligning a series of icons
+   */
+  disabled: PropTypes.bool,
+  fixedWidth: PropTypes.bool,
+  /** Options: 'horizontal', 'vertical', 'both' */
+  flip: PropTypes.string,
   /** Enter the name of the icon as the prop value. (ex. icon='circle' */
   icon: PropTypes.string,
+  id: PropTypes.string,
+  onClick: PropTypes.func,
+  /** Rotation with eight (8) steps */
+  pulse: PropTypes.bool,
+  /** Options: 'info', 'success', 'warning', 'alert', 'inverse' */
+  /** Options: '90', '180', '270' */
+  rotation: PropTypes.number,
   /** Icons inherit the 'font-size' of the parent container and are relatively sized.
    * Options: 'xs', 'sm', 'lg', '2x', '3x', '4x', '5x', '6x', '7x', '8x', '9x', '10x'
    */
   size: PropTypes.string,
-  /** Used to set one or more icons to the same fixed width.
-   * Good for vertically aligning a series of icons
-   */
-  fixedWidth: PropTypes.bool,
-  /** Options: '90', '180', '270' */
-  rotation: PropTypes.number,
-  /** Options: 'horizontal', 'vertical', 'both' */
-  flip: PropTypes.string,
   /** Smooth rotation */
   spin: PropTypes.bool,
-  /** Rotation with eight (8) steps */
-  pulse: PropTypes.bool,
-  border: PropTypes.bool,
-  onClick: PropTypes.func,
-  disabled: PropTypes.bool,
-  /** className used for extending styles */
-  className: PropTypes.string,
+  title: PropTypes.string,
+  type: PropTypes.string,
 };
 
 Icon.defaultProps = {
-  id: null,
-  type: null,
-  icon: null,
-  size: null,
-  fixedWidth: false,
-  rotation: null,
-  flip: null,
-  spin: false,
-  pulse: false,
   border: false,
-  onClick: null,
-  disabled: false,
   className: null,
+  disabled: false,
+  fixedWidth: false,
+  flip: null,
+  icon: null,
+  id: null,
+  onClick: null,
+  pulse: false,
+  rotation: null,
+  size: null,
+  spin: false,
+  title: null,
+  type: null,
 };
 
 export default Icon;
