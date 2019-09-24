@@ -14,6 +14,14 @@ const StyledNumber = styled.span`
   font-family: ${fonts.numbers};
 `;
 
+const StyledCode = styled.code`
+  background-color: ${colors.grey_light};
+  border: 1px solid ${colors.grey_20};
+  border-radius: .25rem;
+  padding: .5rem .5rem .25rem;
+  user-select: all;
+`;
+
 const StyledText = styled.h4`
   grid-column: 1 / -1;
   font-family: ${(props) => {
@@ -335,4 +343,8 @@ Number.defaultProps = {
   children: null,
 };
 
-export { Title as default, Headline, SubTitle, Description, Link, Number };
+function Code({ text, children }) {
+  return <StyledCode>{text || children}</StyledCode>;
+}
+
+export { Title as default, Headline, SubTitle, Description, Link, Number, Code };

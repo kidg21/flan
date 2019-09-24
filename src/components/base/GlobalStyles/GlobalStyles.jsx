@@ -170,14 +170,9 @@ const GlobalStyles = createGlobalStyle`
     }
     code {
         font-family: ${fonts.data};
-        font-size: 12px;
         font-size: 0.85rem;
         line-height: 1rem;
         letter-spacing: 1px;
-        background-color: ${colors.grey_20};
-        margin: 0 .1rem;
-        padding: 0.125rem 0.3125rem 0.0625rem;
-        border: 1px solid ${colors.grey_60};
         font-weight: normal;
         color: inherit;
     }
