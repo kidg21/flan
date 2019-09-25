@@ -1,14 +1,15 @@
 import React from "react";
-import Title from "base/Typography";
+import Title, {Description} from "base/Typography";
 import PropTypes from "prop-types";
 import Card from "layout/Card";
 import Command from "atoms/Command";
 import Bar from "blocks/Bar";
+import Grid from "layout/Grid";
 import styled from "styled-components";
 
 
 const Titles = styled.div`
-display: inline-block'
+display: inlineblock;
 `;
 
 function PropCard({
@@ -16,19 +17,12 @@ function PropCard({
 }) {
   return (
     <Card id={id}>
-      <Bar
-        left={
-          <Titles>
-            <Title text={address} />
-            <p>
-              {landUse} <br />
-              {price}
-            </p>
-            <Command name="add to list" size="small" />
-          </Titles>
-        }
-        right={image}
-      />
+      <Grid column="1">
+            <Title text={address} weight="bold" />
+            <Description text={landUse} />
+            <Description text={price}/>
+            <Command name="add to list"  />
+        </Grid>
     </Card>
   );
 }

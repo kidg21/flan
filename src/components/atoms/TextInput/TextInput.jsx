@@ -31,7 +31,7 @@ const Input = styled.input`
   }};
   ::placeholder {
     color: ${(props) => {
-    return props.theme.text[props.placeholderColor] || "";
+    return props.theme.text[props.placeholderColor] || props.theme.text.secondary;
   }};
   }
   &:hover {
@@ -42,11 +42,11 @@ const Input = styled.input`
   }
   &:focus {
     border-color: ${(props) => {
-    return props.theme.palette[props.inputBorderColorHover] || props.theme.palette.secondaryLight;
+    return props.theme.palette[props.inputBorderColorHover] || props.theme.palette.primaryLight;
   }};
     ::selection {
       background-color: ${(props) => {
-    return props.theme.palette[props.inputSelectColor] || props.theme.palette.secondary;
+    return props.theme.palette[props.inputSelectColor] || props.theme.palette.grey5;
   }};
     }
   }
@@ -78,12 +78,7 @@ function TextInput({
   let inputResize;
   let placeholderColor;
   let inputSelectColor;
-  if (error && !disabled) {
-    inputTextColor = "alert";
-    inputBorderColor = "alertLight";
-    inputBorderColorHover = "alert";
-    inputSelectColor = "alert";
-  }
+
   switch (type) {
     case "textarea":
       as = "textarea";
@@ -91,7 +86,7 @@ function TextInput({
       break;
     case "search":
       inputBorderColor = "border";
-      inputBorderColorHover = "success";
+      inputBorderColorHover = "primaryLight";
       placeholderColor = "border";
       inputSelectColor = "primary";
       break;
@@ -114,6 +109,17 @@ function TextInput({
     autocompleteDataList = <datalist id={autoCompleteDataListId}>{options}</datalist>;
   }
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  if (isDisabled) {
+    inputFillColor = "disabled";
+    inputBorderColor = "grey4";
+  }
+
+  if (error && !disabled) {
+    inputTextColor = "alert";
+    inputBorderColor = "alertTint";
+    inputBorderColorHover = "alert";
+    inputSelectColor = "alert";
+  }
 
   return (
     <TextInputContainer

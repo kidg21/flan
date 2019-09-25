@@ -112,10 +112,10 @@ function Button({
       buttonColor = "disabled";
       fontColor = buttonColor;
       break;
-      // case "grey":
-      //     buttonColor = "grey";
-      //     fontColor = buttonColor;
-      //     break;
+    // case "grey":
+    //     buttonColor = "grey";
+    //     fontColor = buttonColor;
+    //     break;
     case "alert":
       buttonColor = "alert";
       fontColor = buttonColor;
@@ -128,7 +128,7 @@ function Button({
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
     fontColor = "white";
-    backgroundColor = "disabled";
+    backgroundColor = "grey3";
   } else if (type && type.toLowerCase() === "solid") {
     fontColor = "white";
     backgroundColor = buttonColor;

@@ -63,7 +63,6 @@ const GlobalStyles = createGlobalStyle`
 
     /* Default Link Styles */
     a {
-      // color: ${colors.anchor};
       line-height: inherit;
       text-decoration: none;
       cursor: pointer;
@@ -76,7 +75,6 @@ const GlobalStyles = createGlobalStyle`
       }
       &:hover,
       &:focus {
-        // color: ${colors.anchor_light};
       }
       img { border: none; }
       }
@@ -171,10 +169,8 @@ const GlobalStyles = createGlobalStyle`
         font-size: 0.85rem;
         line-height: 1rem;
         letter-spacing: 1px;
-        // background-color: ${colors.grey_20};
         margin: 0 .1rem;
         padding: 0.125rem 0.3125rem 0.0625rem;
-        // border: 1px solid ${colors.grey_60};
         font-weight: normal;
         color: inherit;
     }
@@ -182,7 +178,6 @@ const GlobalStyles = createGlobalStyle`
 /* Forms */
 /* Placeholder */
     ::placeholder {
-        // color: ${colors.grey_60};
         &:empty {
           &:before {
             ${Skeleton};
@@ -193,8 +188,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     ::selection {
-        // color: ${colors.white};
-        // background-color: ${colors.anchor};
+
     }
 /* Labels */
     label {
@@ -243,7 +237,6 @@ const GlobalStyles = createGlobalStyle`
     select {
       box-sizing: border-box;
       width: 100%;
-      // color: ${colors.grey_dark};
       font-family: ${fonts.data};
       letter-spacing: 1px;
       border-radius: 5px;
@@ -258,7 +251,6 @@ const GlobalStyles = createGlobalStyle`
         cursor: not-allowed;
         pointer-events: none;
         user-select: none;
-        // background-color: ${colors.grey_light};
       }
       ::-webkit-datetime-edit-day-field,
       ::-webkit-datetime-edit-week-field,
@@ -271,8 +263,6 @@ const GlobalStyles = createGlobalStyle`
       ::-webkit-datetime-edit-ampm-field,
       ::-webkit-datetime-edit-text {
         &:focus {
-          // color: ${colors.white};
-          // background-color: ${colors.success};
         }
       }
     }
@@ -288,7 +278,6 @@ const GlobalStyles = createGlobalStyle`
     input[type="range"] {
       &[disabled],
       &[readonly] {
-          background-color: ${colors.grey_40};
         }
       }
     `;

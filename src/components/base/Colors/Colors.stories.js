@@ -36,10 +36,12 @@ storiesOf("Application|Style Guides/", module)
         <Grid>
           <Colors color="primary" />
           <Colors color="primaryLight" />
+          <Colors color="primaryTint" />
           <Colors color="primaryDark" />
 
           <Colors color="secondary" />
           <Colors color="secondaryLight" />
+          <Colors color="secondaryTint" />
           <Colors color="secondaryDark" />
         </Grid>
         <Title text="Greys" size="large" styling="underline" />

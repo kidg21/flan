@@ -8,6 +8,13 @@ import Select from "react-select";
 import { Skeleton } from "helpers";
 import { DisabledContext } from "States";
 
+
+// &:focus {
+//   border-color: ${(props) => {
+//   return props.theme.palette[props.inputBorderColorHover] || props.theme.palette.primaryLight;
+// }};
+
+
 const selectStyles = {
   // Wrapper
   container: (styles) => {
@@ -25,7 +32,7 @@ const selectStyles = {
       ...styles,
       "backgroundColor": bgColor,
       "borderColor": isFocused
-        ? `${colors.success_light}!important`
+        ? `${colors.anchor_light}!important`
         : colors.grey_20,
       "borderBottomColor": colors.grey_20,
       "fontWeight": "normal",
@@ -124,9 +131,9 @@ const selectStyles = {
     if (isDisabled) {
       color = colors.grey_40;
     } else if (isSelected) {
-      color = colors.black;
+      color = colors.grey_20;
     } else if (isFocused) {
-      color = colors.success;
+      color = colors.black;
     }
 
     return {

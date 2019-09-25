@@ -176,7 +176,7 @@ function Icon({
       color = "alert";
       break;
     case "primary":
-      color = "primary";
+      color = "primaryLight";
       break;
     case "secondary":
       color = "secondaryDark";

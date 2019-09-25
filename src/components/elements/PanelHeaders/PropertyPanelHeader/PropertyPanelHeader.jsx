@@ -17,7 +17,7 @@ padding="top"
         left={<Title text={title} weight="bold" />}
         center={
           <IconBlock>
-            <Icon icon="directions" size="2x" type="primary" onClick={onClick} />
+            <Icon icon="directions" size="2x" type="primary" onClick={onClick}/>
           </IconBlock>
         }
         right={<Menu menuData={menuData} position="bottomLeft" type="edit" />}
