@@ -12,6 +12,15 @@ const LinkedText = styled.a`
 
 const StyledNumber = styled.span`
   font-family: ${fonts.numbers};
+  font-size: ${(props) => {
+    return props.bold ? "1.25em" : "";
+  }};
+  font-weight: ${(props) => {
+    return props.bold ? "900" : "";
+  }};
+  letter-spacing: ${(props) => {
+    return props.bold ? "1px" : "";
+  }};
 `;
 
 const StyledCode = styled.code`
@@ -76,6 +85,7 @@ function Text({
   select,
   children,
   className,
+  bold,
 }) {
   let as;
   let fontFamily;
@@ -192,7 +202,7 @@ function Text({
       {text || children}
       {count ? (
         <LinkedText>
-          <StyledNumber>{count}</StyledNumber>
+          <StyledNumber bold={bold}>{count}</StyledNumber>
         </LinkedText>
       ) : null}
     </StyledText>
