@@ -269,7 +269,7 @@ Icon.propTypes = {
 Icon.defaultProps = {
   border: false,
   className: null,
-  disabled: false,
+  disabled: null,
   fixedWidth: false,
   flip: null,
   icon: null,

@@ -1,3 +1,4 @@
+/* eslint-disable security/detect-object-injection */
 /* eslint-disable complexity */
 /* eslint-disable no-param-reassign */
 import React, { useContext } from "react";
@@ -97,7 +98,7 @@ const commandHash = {
 };
 
 function Command({
-  align, command, disabled, icon, id, label, name, onClick, size,
+  align, command, disabled, icon, id, label, onClick, size,
 }) {
   command = commandHash[command] || { icon, label };
   let alignCommand = "";
@@ -141,7 +142,7 @@ function Command({
       justifyIcon={justifyIcon}
       label={label}
       onClick={onClick}
-      title={command.label || label} // HTML attribute (display on :hover)
+      title={command.label} // HTML attribute (display on :hover)
     >
       {command.icon ? <CommandIcon icon={command.icon} /> : null}
       <CommandName>{command.label}</CommandName>
@@ -163,7 +164,7 @@ Command.propTypes = {
 Command.defaultProps = {
   align: null,
   command: null,
-  disabled: false,
+  disabled: null,
   icon: null,
   id: null,
   label: "Command",
