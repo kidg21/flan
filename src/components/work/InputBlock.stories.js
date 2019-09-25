@@ -1,17 +1,92 @@
+/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { storiesOf } from "@storybook/react";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Padding } from "helpers/Display";
 import { withInfo } from "@storybook/addon-info";
 import { withKnobs, text, boolean, radios, select, number } from "@storybook/addon-knobs";
+import Grid from "layout/Grid";
 import Panel, { PanelSection } from "layout/Panel";
 import Form, { Section } from "layout/Form";
 import Icon from "atoms/Icon";
 import InputBlock from "blocks/InputBlock";
 import InputBlockNotes from "blocks/InputBlock/InputBlock.md";
 
+const oneInput = [
+  {
+    label: "Label 1",
+    id: "ID 1",
+    name: "ID 100",
+    type: "text",
+    value: "Value 1",
+    placeholder: "Placeholder 1",
+    pattern: "[A-Za-z]{3}",
+  },
+];
+const twoInputs = [
+  {
+    label: "Label 1",
+    id: "ID 1",
+    type: "password",
+    value: "Value 1",
+    placeholder: "Placeholder 1",
+  },
+  {
+    label: "Label 2",
+    id: "ID 2",
+    type: "textarea",
+    value: "Value 2",
+    placeholder: "Placeholder 2",
+  },
+];
+const threeInputs = [
+  {
+    label: "Label 1",
+    id: "ID 1",
+    type: "email",
+    value: "Value 1",
+    placeholder: "Placeholder 1",
+  },
+  {
+    label: "Label 2",
+    id: "ID 2",
+    type: "search",
+    value: "Value 2",
+    placeholder: "Placeholder 2",
+  },
+  {
+    label: "Label 3",
+    id: "ID 3",
+    type: "url",
+    value: "Value 3",
+    placeholder: "Placeholder 3",
+  },
+];
+
 // Input ( Standard )
 storiesOf("Work|Blocks/Input Block", module)
+  // Input Block ( Testing )
+  .add("Input Block ( Testing )", () => {
+    return (
+      <Grid columns="1">
+        <InputBlock
+          label="Input ( 1 Input )"
+          inputType={oneInput}
+          helpText="This help text has been passed through a prop!"
+        />
+        <InputBlock
+          label="Input ( 2 Inputs )"
+          inputType={twoInputs}
+          helpText="This help text has been passed through a prop!"
+        />
+        <InputBlock
+          label="Input ( 3 Inputs )"
+          inputType={threeInputs}
+          helpText="This help text has been passed through a prop!"
+        />
+      </Grid>
+    );
+  })
   .addParameters({
     info: {
       text:
@@ -29,13 +104,13 @@ storiesOf("Work|Blocks/Input Block", module)
       return (
         <InputBlock
           type={radios(
-          "Type",
-          {
-            Text: "text",
-            Number: "number",
-          },
-          "text",
-        )}
+            "Type",
+            {
+              Text: "text",
+              Number: "number",
+            },
+            "text",
+          )}
           label={text("Input Label", "Input Label")}
           isRequired={boolean("Required", false)}
           placeholder={text("Placeholder Text", "I am just keeping things warm")}
@@ -164,10 +239,10 @@ storiesOf("Work|Blocks/Input Block", module)
       <InputBlock
         label="Input ( Pre-Select )"
         preSelect={[
-        { value: "sir", label: "Sir" },
-        { value: "madam", label: "Madam" },
-        { value: "my lord", label: "My Lord" },
-      ]}
+          { value: "sir", label: "Sir" },
+          { value: "madam", label: "Madam" },
+          { value: "my lord", label: "My Lord" },
+        ]}
         helpText="This help text has been passed through a prop!"
       />
     );
@@ -188,10 +263,10 @@ storiesOf("Work|Blocks/Input Block", module)
       <InputBlock
         label="Input ( Post-Select )"
         postSelect={[
-        { value: "com", label: ".com" },
-        { value: "org", label: ".org" },
-        { value: "gov", label: ".gov" },
-      ]}
+          { value: "com", label: ".com" },
+          { value: "org", label: ".org" },
+          { value: "gov", label: ".gov" },
+        ]}
         helpText="This help text has been passed through a prop!"
       />
     );
@@ -225,10 +300,10 @@ storiesOf("Work|Blocks/Input Block", module)
         label="Input ( Prefix / Post-Select )"
         prefix="http://"
         postSelect={[
-        { value: "com", label: ".com" },
-        { value: "org", label: ".org" },
-        { value: "gov", label: ".gov" },
-      ]}
+          { value: "com", label: ".com" },
+          { value: "org", label: ".org" },
+          { value: "gov", label: ".gov" },
+        ]}
         helpText="This help text has been passed through a prop!"
       />
     );
@@ -239,10 +314,10 @@ storiesOf("Work|Blocks/Input Block", module)
       <InputBlock
         label="Input ( Pre-Select / Postfix )"
         preSelect={[
-        { value: "sir", label: "Sir" },
-        { value: "madam", label: "Madam" },
-        { value: "my lord", label: "My Lord" },
-      ]}
+          { value: "sir", label: "Sir" },
+          { value: "madam", label: "Madam" },
+          { value: "my lord", label: "My Lord" },
+        ]}
         postfix=".com"
         helpText="This help text has been passed through a prop!"
       />
@@ -254,15 +329,15 @@ storiesOf("Work|Blocks/Input Block", module)
       <InputBlock
         label="Input ( Pre / Post-Select )"
         preSelect={[
-        { value: "sir", label: "Sir" },
-        { value: "madam", label: "Madam" },
-        { value: "my lord", label: "My Lord" },
-      ]}
+          { value: "sir", label: "Sir" },
+          { value: "madam", label: "Madam" },
+          { value: "my lord", label: "My Lord" },
+        ]}
         postSelect={[
-        { value: "com", label: ".com" },
-        { value: "org", label: ".org" },
-        { value: "gov", label: ".gov" },
-      ]}
+          { value: "com", label: ".com" },
+          { value: "org", label: ".org" },
+          { value: "gov", label: ".gov" },
+        ]}
         helpText="This help text has been passed through a prop!"
       />
     );
@@ -321,10 +396,10 @@ storiesOf("Work|Blocks/Input Block", module).add("The Input Block Block Family",
             <InputBlock
               label="Input ( Pre-Select )"
               preSelect={[
-              { value: "sir", label: "Sir" },
-              { value: "madam", label: "Madam" },
-              { value: "my lord", label: "My Lord" },
-            ]}
+                { value: "sir", label: "Sir" },
+                { value: "madam", label: "Madam" },
+                { value: "my lord", label: "My Lord" },
+              ]}
               helpText="This help text has been passed through a prop!"
             />
             <InputBlock
@@ -335,10 +410,10 @@ storiesOf("Work|Blocks/Input Block", module).add("The Input Block Block Family",
             <InputBlock
               label="Input ( Post-Select )"
               postSelect={[
-              { value: "com", label: ".com" },
-              { value: "org", label: ".org" },
-              { value: "gov", label: ".gov" },
-            ]}
+                { value: "com", label: ".com" },
+                { value: "org", label: ".org" },
+                { value: "gov", label: ".gov" },
+              ]}
               helpText="This help text has been passed through a prop!"
             />
             <InputBlock
@@ -357,34 +432,34 @@ storiesOf("Work|Blocks/Input Block", module).add("The Input Block Block Family",
               label="Input ( Prefix / Post-Select )"
               prefix="http://"
               postSelect={[
-              { value: "com", label: ".com" },
-              { value: "org", label: ".org" },
-              { value: "gov", label: ".gov" },
-            ]}
+                { value: "com", label: ".com" },
+                { value: "org", label: ".org" },
+                { value: "gov", label: ".gov" },
+              ]}
               helpText="This help text has been passed through a prop!"
             />
             <InputBlock
               label="Input ( Pre-Select / Postfix )"
               preSelect={[
-              { value: "sir", label: "Sir" },
-              { value: "madam", label: "Madam" },
-              { value: "my lord", label: "My Lord" },
-            ]}
+                { value: "sir", label: "Sir" },
+                { value: "madam", label: "Madam" },
+                { value: "my lord", label: "My Lord" },
+              ]}
               postfix=".com"
               helpText="This help text has been passed through a prop!"
             />
             <InputBlock
               label="Input ( Pre / Post-Select )"
               preSelect={[
-              { value: "sir", label: "Sir" },
-              { value: "madam", label: "Madam" },
-              { value: "my lord", label: "My Lord" },
-            ]}
+                { value: "sir", label: "Sir" },
+                { value: "madam", label: "Madam" },
+                { value: "my lord", label: "My Lord" },
+              ]}
               postSelect={[
-              { value: "com", label: ".com" },
-              { value: "org", label: ".org" },
-              { value: "gov", label: ".gov" },
-            ]}
+                { value: "com", label: ".com" },
+                { value: "org", label: ".org" },
+                { value: "gov", label: ".gov" },
+              ]}
               helpText="This help text has been passed through a prop!"
             />
           </Section>
