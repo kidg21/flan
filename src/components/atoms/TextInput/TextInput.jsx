@@ -54,21 +54,23 @@ const Input = styled.input`
 `;
 
 function TextInput({
-  id,
-  type,
-  pattern,
-  value,
-  label,
-  isRequired,
-  placeholder,
-  helpText,
-  error,
-  disabled,
-  children,
-  onChange,
   autocompleteList,
-  size,
+  children,
   className,
+  disabled,
+  error,
+  helpText,
+  id,
+  isRequired,
+  label,
+  onChange,
+  pattern,
+  placeholder,
+  readonly,
+  size,
+  title,
+  type,
+  value,
 }) {
   let as;
   let inputTextColor;
@@ -85,19 +87,9 @@ function TextInput({
     inputBorderColorHover = colors.alert_light;
     inputSelectColor = colors.alert;
   }
-  switch (type) {
-    case "textarea":
-      as = "textarea";
-      inputResize = "vertical";
-      break;
-    case "search":
-      inputBorderColor = colors.grey_20;
-      inputBorderColorHover = colors.grey_20;
-      placeholderColor = colors.grey_40;
-      inputSelectColor = colors.anchor;
-      break;
-    default:
-      break;
+  if (type === "textarea") {
+    as = "textarea";
+    inputResize = "vertical";
   }
   // construct datalist element for autocompletes if appropriate props passed in
   // the autocompleteListId is used to ensure each textinput only draws from its own datalist element
@@ -126,24 +118,26 @@ function TextInput({
     >
       {label ? <InputLabel isRequired={isRequired} label={label} /> : null}
       <Input
-        id={id} // input attribute
         as={as}
-        name={id} // input attribute
-        type={type} // input attribute
-        value={value} // input attribute
-        placeholder={placeholder} // input attribute
-        pattern={pattern} // input attribute
         disabled={isDisabled} // input attribute
-        inputFillColor={inputFillColor}
+        id={id} // input attribute
         inputBorderColor={inputBorderColor}
         inputBorderColorHover={inputBorderColorHover}
-        placeholderColor={placeholderColor}
         inputCaretColor={inputCaretColor}
+        inputFillColor={inputFillColor}
         inputResize={inputResize}
         inputSelectColor={inputSelectColor}
-        onChange={onChange}
         list={autoCompleteDataListId}
+        name={id} // input attribute
+        onChange={onChange}
+        pattern={pattern} // input attribute
+        placeholder={placeholder} // input attribute
+        placeholderColor={placeholderColor}
+        readonly={readonly}
         size={size} // overriding this while developing so it's easier to see
+        title={title} // input attribute
+        type={type} // input attribute
+        value={value}
       />
       {autocompleteDataList}
       {helpText ? <HelpText>{helpText}</HelpText> : null}
@@ -157,6 +151,7 @@ TextInput.propTypes = {
   autocompleteList: PropTypes.arrayOf(PropTypes.string),
   children: PropTypes.node,
   className: PropTypes.string,
+  /** A disabled input field is unusable and un-clickable, and its value will not be sent when submitting the form */
   disabled: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   helpText: PropTypes.string,
@@ -166,8 +161,28 @@ TextInput.propTypes = {
   onChange: PropTypes.func,
   pattern: PropTypes.string,
   placeholder: PropTypes.string,
+  /** The readonly attribute specifies that the input field is read only (cannot be changed) */
+  readonly: PropTypes.bool,
   size: PropTypes.string,
-  type: PropTypes.string,
+  /** The title attribute specifies extra information about an element.
+   * The information is most often shown as a tooltip text when the mouse moves over the element.
+   */
+  title: PropTypes.string,
+  type: PropTypes.oneOf([
+    "date",
+    "email",
+    "hidden",
+    "month",
+    "number",
+    "password",
+    "search",
+    "tel",
+    "text (default)",
+    "textarea",
+    "time",
+    "url",
+  ]),
+  /** The value attribute specifies the initial value for an input field */
   value: PropTypes.string,
 };
 
@@ -184,8 +199,10 @@ TextInput.defaultProps = {
   onChange: null,
   pattern: null,
   placeholder: null,
+  readonly: false,
   size: null,
-  type: null,
+  title: null,
+  type: "text",
   value: null,
 };
 

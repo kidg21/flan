@@ -54,7 +54,7 @@ storiesOf("Atoms|Calendar", module)
             datetime: "datetime",
           },
           "date",
-          { display: "radio" },
+          { display: "select" },
           "Calendar",
         )}
         label={text("label", "Input Label", "Calendar")}

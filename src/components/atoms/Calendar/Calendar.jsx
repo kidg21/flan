@@ -5,49 +5,12 @@ import { colors } from "Variables";
 import Grid from "layout/Grid";
 import { DisabledContext } from "States";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
+import TextInput from "atoms/TextInput";
 
 const CalendarContainer = styled(Grid)`
   color: ${(props) => {
     return props.inputTextColor || "";
   }};
-`;
-
-const Input = styled.input`
-  border: 1px solid;
-  border-color: ${(props) => {
-    return props.inputBorderColor || colors.grey_20;
-  }};
-  background-color: ${(props) => {
-    return props.inputFillColor || "";
-  }};
-  min-height: 2.75rem;
-  padding: 0.5rem 0.75rem;
-  &:hover {
-    border-color: ${(props) => {
-    return props.inputBorderColorHover || colors.grey_40;
-  }};
-  }
-  &:focus {
-    border-color: ${(props) => {
-    return props.inputBorderColorHover || colors.success;
-  }};
-    &::-webkit-datetime-edit-day-field,
-    &::-webkit-datetime-edit-week-field,
-    &::-webkit-datetime-edit-month-field,
-    &::-webkit-datetime-edit-year-field,
-    &::-webkit-datetime-edit-hour-field,
-    &::-webkit-datetime-edit-minute-field,
-    &::-webkit-datetime-edit-second-field,
-    &::-webkit-datetime-edit-millisecond-field,
-    &::-webkit-datetime-edit-ampm-field,
-    &::-webkit-datetime-edit-text {
-      &:focus {
-        background-color: ${(props) => {
-    return props.inputSelectColor || colors.success;
-  }};
-      }
-    }
-  }
 `;
 
 function Calendar({
@@ -79,8 +42,9 @@ function Calendar({
   const inputTypes = type.toLowerCase() === "datetime" ? ["date", "time"] : [type.toLowerCase()];
   const inputElements = inputTypes.map((currType) => {
     return (
-      <Input
+      <TextInput
         disabled={isDisabled}
+        error={!!error}
         id={id}
         inputBorderColor={inputBorderColor}
         inputBorderColorHover={inputBorderColorHover}
@@ -108,6 +72,7 @@ function Calendar({
     <CalendarContainer
       className={className}
       disabled={isDisabled}
+      error={error}
       columns="1"
       gap="small"
       id={id}

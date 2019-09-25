@@ -56,7 +56,7 @@ const FormInputs = styled(Grid)`
   }
 `;
 
-function Form({ action, children, columns, description, method, subtitle, title }) {
+function Form({ action, children, columns, description, method, novalidate, subtitle, title }) {
   // 1-3 colums with custom override
   let setColumns;
   const _columns = parseInt(columns);
@@ -66,7 +66,7 @@ function Form({ action, children, columns, description, method, subtitle, title 
     setColumns = columns;
   }
   return (
-    <FormWrapper action={action} method={method}>
+    <FormWrapper action={action} method={method} novalidate={novalidate}>
       {title || subtitle || description ? (
         <FormHeader gap="tiny">
           {title ? <Headline text={title} /> : null}
@@ -86,6 +86,7 @@ Form.propTypes = {
   columns: PropTypes.oneOf(["1 (default)", "2", "3"]),
   description: PropTypes.string,
   method: PropTypes.string,
+  novalidate: PropTypes.bool,
   subtitle: PropTypes.string,
   title: PropTypes.string,
 };
@@ -95,13 +96,14 @@ Form.defaultProps = {
   columns: "1",
   description: null,
   method: null,
+  novalidate: false,
   subtitle: null,
   title: null,
 };
 
 const Label = styled.label`
   grid-column: 1 / -1;
-  width: max-content;
+  width: 100%;
   font-weight: 700;
   user-select: none;
   &:after {
