@@ -36,7 +36,7 @@ function DataRange({
   let inputTextColor;
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (error && !isDisabled) {
-    inputTextColor = "error";
+    inputTextColor = "alert";
   }
   function onChangeMin(currState, newState, setState) {
     if (onChange) onChange({ min: newState ? newState.selected : currState.target.value });

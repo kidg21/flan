@@ -99,7 +99,7 @@ function Checkbox({
     tabIndex = "-1";
   }
   if (error && !isDisabled) {
-    inputTextColor = "error";
+    inputTextColor = "alert";
     fillColor = "alert";
     borderColor = "alertDark";
     outlineColor = "alertLight";
@@ -153,7 +153,7 @@ function CheckboxGroup({
   let inputTextColor;
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (error && !isDisabled) {
-    inputTextColor = "error";
+    inputTextColor = "alert";
   }
   return (
     <CheckboxWrapper

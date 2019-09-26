@@ -84,7 +84,7 @@ function Calendar({
   }
 
   if (error && !isDisabled) {
-    inputTextColor = "error";
+    inputTextColor = "alert";
     inputBorderColor = "alert";
     inputBorderColorHover = "alert";
     inputSelectColor = "grey4";
