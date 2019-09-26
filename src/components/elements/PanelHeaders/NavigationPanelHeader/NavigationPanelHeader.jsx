@@ -12,6 +12,7 @@ function NavigationPanelHeader({
   return (
     <Piece id={id}>
       <Bar
+              contentAlign="center"
         padding="3x"
         left={<Icon icon="left" size="lg" type="standard" />}
         center={<Title text={title} size="large" />}

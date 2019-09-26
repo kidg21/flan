@@ -5,6 +5,9 @@ import { DisabledContext } from "States";
 
 const BarLayout = styled.div`
   display: flex;
+  cursor: ${(props) => {
+    return props.onClick ? "pointer" : "";
+  }};
   flex-direction: row;
   align-items: ${(props) => {
     return props.alignContent || "";

@@ -12,7 +12,10 @@ const CardPiece = styled.div`
   padding: ${props => props.padding || ""};
   width: 100%;
   background: ${props => {
-    return props.theme.background.default;
+    return props.theme.palette[props.backgroundColor] || props.theme.background.default;
+  }};
+  color: ${props => {
+    return props.theme.text[props.textColor] || props.theme.text.primary;
   }};
   &:hover {
     box-shadow: ${props => (props.hover ? shadows.dropShadow : "")};
@@ -61,9 +64,28 @@ const CardListWrapper = styled(Grid)`
   }
 `;
 
-function Piece({ id, hover, children, padding, className, header }) {
+function Piece({
+  id,
+  hover,
+  children,
+  padding,
+  textColor,
+  backgroundColor,
+  className,
+  header,
+  onClick,
+}) {
   return (
-    <CardPiece id={id} padding={padding} className={className} header={header} hover={hover}>
+    <CardPiece
+      id={id}
+      padding={padding}
+      className={className}
+      textColor={textColor}
+      backgroundColor={backgroundColor}
+      onClick={onClick}
+      header={header}
+      hover={hover}
+    >
       {children}
     </CardPiece>
   );

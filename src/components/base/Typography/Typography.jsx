@@ -21,7 +21,7 @@ const StyledText = styled.h4`
     return props.fontFamily || "inherit";
   }};
   color: ${(props) => {
-    return props.theme.palette[props.textColor] || props.theme.text.primary ;
+    return props.theme.palette[props.textColor] || 'inherit' ;
   }};
   font-weight: ${(props) => {
     return props.textWeight || "600";

@@ -7,7 +7,7 @@ const AccordionSection = styled.div`
 
   border-bottom: 1px solid
     ${(props) => {
-    return props.theme.divider;
+    return props.theme.palette.grey6;
   }};
   cursor: pointer;
 `;
@@ -15,8 +15,9 @@ const AccordionSection = styled.div`
 const Wrapper = styled.div`
   border-bottom: 1px solid
     ${(props) => {
-    return props.theme.divider;
+    return props.theme.palette.grey6;
   }};
+  padding-bottom: 1em;
   ${(props) => {
     return props.show ? "" : "display: none;";
   }}

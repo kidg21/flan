@@ -169,12 +169,11 @@ storiesOf("Layout |App Layout/", module)
           <Layout id="controls" type="controlsWrapper">
             <Tabs align={controlsAlign}>
             <Tab
-            icon="gps"
-                tabLabel="LVX"
+            icon="location"
+                tabLabel="Property"
                 onClick={toggleLeft}
                 isSelected={activeLeft}
                 noBorder
-                color="grey"
               />
             <Tab
               icon="layers"
@@ -182,7 +181,6 @@ storiesOf("Layout |App Layout/", module)
                 onClick={toggleLeft}
                 isSelected={activeLeft}
                 noBorder
-                color="grey"
               />
               <Tab
               icon="filter"
@@ -190,7 +188,7 @@ storiesOf("Layout |App Layout/", module)
                 onClick={toggleRight}
                 isSelected={activeRight}
                 noBorder
-                color="grey"
+
               />
 
               <Tab
@@ -199,15 +197,6 @@ storiesOf("Layout |App Layout/", module)
                 onClick={toggleLeft}
                 isSelected={activeLeft}
                 noBorder
-                color="grey"
-              />
-                        <Tab
-              icon="analytics"
-                tabLabel="Analytics"
-                onClick={toggleLeft}
-                isSelected={activeLeft}
-                noBorder
-                color="grey"
               />
             <Tab
               icon="list"
@@ -215,15 +204,6 @@ storiesOf("Layout |App Layout/", module)
                 onClick={toggleBottom}
                 isSelected={activeBottom}
                 noBorder
-                color="grey"
-              />
-              <Tab
-               icon="more"
-                tabLabel="More"
-                onClick={toggleLeft}
-                isSelected={activeLeft}
-                noBorder
-                color="grey"
               />
             </Tabs>
           </Layout>

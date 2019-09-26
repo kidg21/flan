@@ -6,7 +6,7 @@ const Line = styled.hr`
   height: 0;
   border-top: 0.25px solid
     ${(props) => {
-    return props.theme.divider;
+    return props.theme.palette.grey6;
   }};
   font-size: 0;
 `;

@@ -18,6 +18,14 @@ const Wrapper = styled.div`
   }};
 `;
 
+const data = [
+  { id: 'a', name: 'Save' },
+  { id: 'b', name: 'Open' },
+  { id: 'c', name: 'Share' },
+  { id: 'd', name: 'Create New' },
+  { id: 'e', name: 'Add' }
+];
+
 const Icons = (
   <React.Fragment>
     <Icon icon="zoom_extents" />
@@ -38,7 +46,7 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
     return (
       <Panel>
         <PanelSection>
-          <MainPanelHeader title="Filters" />
+          <MainPanelHeader title="Layers" menuData={data} />
         </PanelSection>
         <PanelSection body>
           <CardAccordion
@@ -75,23 +83,7 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
           >
             <MapLegend />
           </CardAccordion>
-          <CardAccordion
-            header={
-              <InformationCardBar
-                title="Owner Group"
-                icons={Icons}
-                count="2"
-                switchProps={{
-                  checked: checked3,
-
-                  onChange: () => {
-                    setChecked3(!checked3);
-                  },
-                }}
-              />
-            }
-          >
-            <Container>
+        
                 <CardAccordion
                   header={
                     <LayerCardBar
@@ -126,8 +118,7 @@ storiesOf("Templates|Panel", module).add("Layer Panel", () =>
                 >
                   <MapLegend />
                 </CardAccordion>
-                </Container>
-          </CardAccordion>
+        
           <CardAccordion
             header={
               <LayerCardBar

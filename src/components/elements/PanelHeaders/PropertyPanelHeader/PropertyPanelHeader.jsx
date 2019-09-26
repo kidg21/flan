@@ -14,6 +14,7 @@ function PropertyPanelHeader({
     <Piece id={id}>
       <Bar
         padding="top"
+        contentAlign="center"
         left={<Title text={title} weight="bold" size="large" />}
         center={
           <IconBlock>

@@ -21,7 +21,7 @@ const BoxContainer = styled.div`
   }};
   border: 1px solid
     ${(props) => {
-    return props.theme.palette.disabled;
+    return props.theme.palette.grey6;
   }};
   border-radius: 5px;
 
@@ -42,11 +42,11 @@ const BoxContainer = styled.div`
 `;
 
 function Container({
-  id, height, width, padding, children,
+  id, height, width, padding, background, children,
 }) {
   return (
     <Wrapper>
-      <BoxContainer id={id} height={height} width={width}>
+      <BoxContainer id={id} background={background} height={height} width={width}>
         {children}
       </BoxContainer>
     </Wrapper>
