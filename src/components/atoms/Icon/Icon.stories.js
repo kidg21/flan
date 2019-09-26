@@ -14,21 +14,11 @@ import { iconsType, iconsSize } from "atoms/Icon/libraryIcon.data";
 storiesOf("Atoms|Icon", module)
   .addDecorator(Padding)
   .addDecorator(withKnobs)
-  .addParameters({
-    info: {
-      text: "Icon info goes here...",
-    },
-    notes: {
-      markdown: IconNotes,
-    },
-  })
   .add(
-    "Documentation",
-    (() => {
+    "Documentation", withInfo()(() => {
       return <Icon icon="user_circle" size="2x" />;
     }),
   )
-
   .add("Knobs", () => {
     return (
       <Icon

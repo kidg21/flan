@@ -83,7 +83,9 @@ const Circle = styled.div`
 const SwitchLabel = styled(Title)`
   grid-area: label;
   padding-top: 1.5px;
-  color: inherit;
+  color: ${(props) => {
+    return props.disabled ? props.theme.text.disabled : "inherit";
+  }};
   user-select: none;
   cursor: pointer;
   &[disabled],
@@ -104,6 +106,7 @@ function Switch({
   let alignInput;
   if (isDisabled) {
     checkboxColor = "disabled";
+    borderColor = "grey3";
   }
   if (error && !isDisabled) {
     checkboxColor = "alertDark";

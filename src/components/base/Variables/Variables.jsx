@@ -12,7 +12,7 @@ export const DMPTheme = {
     inverse: "#ffffff",
     link: "#5FD1E2",
     error: "#7d0000",
-    disabled: "#E2E1DF",
+    disabled: "#b1b2b3",
     info: "rgb(0, 64, 221)",
     success: "rgb(36, 138, 61)",
     warning: "rgb(178, 80, 0)",

@@ -20,7 +20,7 @@ const Wrapper = styled.div`
 
 const Icons = (
   <React.Fragment>
-    <Icon icon="maximize" />
+    <Icon icon="zoom_extents" />
     <Icon icon="share" />
     <Icon icon="filter" />
   </React.Fragment>

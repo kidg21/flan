@@ -42,7 +42,7 @@ const Input = styled.input`
   }
   &:focus {
     border-color: ${(props) => {
-    return props.theme.palette[props.inputBorderColorHover] || props.theme.palette.primaryLight;
+    return props.theme.palette[props.inputBorderColorHover] || props.theme.palette.secondary;
   }};
     ::selection {
       background-color: ${(props) => {

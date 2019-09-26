@@ -1,5 +1,5 @@
 import React from "react";
-import Title, {Description} from "base/Typography";
+import Title from "base/Typography";
 import PropTypes from "prop-types";
 import Card from "layout/Card";
 import Command from "atoms/Command";
@@ -7,9 +7,8 @@ import Bar from "blocks/Bar";
 import Grid from "layout/Grid";
 import styled from "styled-components";
 
-
 const Titles = styled.div`
-display: inlineblock;
+  display: inline-block;
 `;
 
 function PropCard({
@@ -17,12 +16,17 @@ function PropCard({
 }) {
   return (
     <Card id={id}>
-      <Grid column="1">
+      <Bar
+        left={
+          <Titles>
             <Title text={address} weight="bold" />
-            <Description text={landUse} />
-            <Description text={price}/>
-            <Command name="add to list"  />
-        </Grid>
+            <Title text={landUse} size="small" />
+            <Title text={price} size="small" />
+            <Command name="add to list" />
+          </Titles>
+        }
+        right={image}
+      />
     </Card>
   );
 }

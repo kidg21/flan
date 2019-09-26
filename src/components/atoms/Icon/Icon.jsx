@@ -176,7 +176,7 @@ function Icon({
       color = "alert";
       break;
     case "primary":
-      color = "primaryLight";
+      color = "primary";
       break;
     case "secondary":
       color = "secondaryDark";
@@ -187,6 +187,9 @@ function Icon({
     case "inverse":
       color = "inverse";
       break;
+    case "primarylight":
+      color = "primaryLight";
+      break;
     case "white":
       color = "white";
       break;
@@ -194,7 +197,7 @@ function Icon({
       break;
   }
 
-  if (onClick) color = "info";
+  // if (onClick) color = "info";
 
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) color = "disabled";

@@ -27,6 +27,9 @@ function DataRange({
   labelMax,
   labelMin,
   onChange,
+  withSelector,
+  onChangeSelector,
+  optionsSelect,
   optionsMax,
   optionsMin,
 }) {
@@ -55,6 +58,7 @@ function DataRange({
       {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
       <Bar
         padding="none"
+        withSelector={withSelector}
         contentAlign="center"
         left={
           optionsMin ? (
@@ -73,6 +77,16 @@ function DataRange({
               disabled={isDisabled}
             />
           )
+        }
+        center={
+          withSelector ? (
+            <SelectMenu
+              options={optionsSelect}
+              label="Options"
+              onChangeState={onChangeSelector}
+              disabled={isDisabled}
+            />
+          ) : null
         }
         right={
           optionsMax ? (
@@ -109,6 +123,7 @@ DataRange.propTypes = {
   labelMax: PropTypes.string.isRequired,
   labelMin: PropTypes.string.isRequired,
   onChange: PropTypes.func,
+  optionsSelect: PropTypes.func,
   optionsMax: PropTypes.map,
   optionsMin: PropTypes.map,
 };

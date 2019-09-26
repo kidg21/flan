@@ -7,7 +7,7 @@ import { Padding } from "helpers/Display";
 
 const Icons = (
   <React.Fragment>
-    <Icon icon="maximize" />
+    <Icon icon="zoom_extents" />
     <Icon icon="share" />
     <Icon icon="filter" />
   </React.Fragment>
@@ -16,8 +16,8 @@ const Icons = (
 storiesOf("Elements|Card Bar/", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  .add("Layer", () =>
-    React.createElement(() => {
+  .add("Layer", () => {
+    return React.createElement(() => {
       const [checked, setChecked] = useState("");
       return (
         <LayerCardBar
@@ -31,8 +31,6 @@ storiesOf("Elements|Card Bar/", module)
           icons={Icons}
         />
       );
-    }),
-  )
-  .add("Layer Disabled", () => (
-    <LayerCardBar title="Demographics" disabled icons={Icons} />
-  ));
+    });
+  })
+  .add("Layer Disabled", () => { return <LayerCardBar title="Demographics" disabled icons={Icons} />; });

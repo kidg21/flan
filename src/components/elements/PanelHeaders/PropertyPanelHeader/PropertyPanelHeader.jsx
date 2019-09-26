@@ -13,11 +13,11 @@ function PropertyPanelHeader({
   return (
     <Piece id={id}>
       <Bar
-padding="top"
-        left={<Title text={title} weight="bold" />}
+        padding="top"
+        left={<Title text={title} weight="bold" size="large" />}
         center={
           <IconBlock>
-            <Icon icon="directions" size="2x" type="primary" onClick={onClick}/>
+            <Icon icon="directions" size="2x" type="primarylight" onClick={onClick} />
           </IconBlock>
         }
         right={<Menu menuData={menuData} position="bottomLeft" type="edit" />}

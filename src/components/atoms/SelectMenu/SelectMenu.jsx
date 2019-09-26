@@ -32,7 +32,7 @@ const selectStyles = {
       ...styles,
       "backgroundColor": bgColor,
       "borderColor": isFocused
-        ? `${colors.anchor_light}!important`
+        ? `${colors.success}!important`
         : colors.grey_20,
       "borderBottomColor": colors.grey_20,
       "fontWeight": "normal",

@@ -9,37 +9,37 @@ import Title from "base/Typography";
 const CommandContainer = styled.a`
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-areas: ${props => {
+  grid-template-areas: ${(props) => {
     return props.alignIcon || "";
   }};
-  justify-items: ${props => {
+  justify-items: ${(props) => {
     return props.justifyIcon || "";
   }};
   grid-gap: 0.5rem;
   width: max-content;
-  font-size: ${props => {
+  font-size: ${(props) => {
     return props.commandSize || "";
   }};
-  color: ${props => {
+  color: ${(props) => {
     return props.theme.palette[props.commandColor] || props.theme.palette.info;
   }};
   user-select: none;
-  cursor: ${props => {
+  cursor: ${(props) => {
     return props.isDisabled ? "not-allowed" : "";
   }};
-  pointer-events: ${props => {
+  pointer-events: ${(props) => {
     return props.isDisabled ? "none" : "";
   }};
   transition: all 0.3s ease;
   &:hover {
     color: ${(props) => {
-      return props.theme.palette.info;
-    }};;
+    return props.theme.palette.info;
+  }};
   }
   &:active {
     color: ${(props) => {
-      return props.theme.palette.info;
-    }};
+    return props.theme.palette.info;
+  }};
   }
 `;
 
@@ -53,20 +53,23 @@ const CommandName = styled(Title)`
   text-overflow: ellipsis;
   margin: 0;
   &:focus {
-    border: 1px solid  ${(props) => {
-      return props.theme.palette.primary;
-    }};
+    border: 1px solid
+      ${(props) => {
+    return props.theme.palette.primary;
+  }};
     outline: none;
   }
 `;
 
 const CommandIcon = styled(Icon)`
   grid-area: icon;
-  margin-top: .15em;
+  margin-top: 0.15em;
   color: inherit;
 `;
 
-function Command({ id, name, label, icon, align, size, onClick, disabled }) {
+function Command({
+  id, name, label, icon, align, size, onClick, disabled,
+}) {
   let alignIcon = "'icon name'";
   const justifyCommand = "flex-start";
   let justifyIcon = "flex-start";
@@ -136,9 +139,8 @@ function Command({ id, name, label, icon, align, size, onClick, disabled }) {
       break;
   }
 
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (isDisabled) commandColor = "disabled";
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  if (isDisabled) commandColor = "grey2";
 
   switch (size) {
     case "small":
