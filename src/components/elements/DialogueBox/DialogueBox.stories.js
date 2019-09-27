@@ -123,7 +123,7 @@ storiesOf("Elements|Dialogue Box", module)
         <Section>
           <Title text="Role: Developer" type="info" />
           <SelectMenu
-            multiSelect="true"
+            multiSelect
             inputLabel="+ Add Users"
             options={[
               { value: "1", label: "Adam" },
@@ -167,7 +167,7 @@ storiesOf("Elements|Dialogue Box", module)
         <Section>
           <Title text="Role: Developer" type="info" />
           <SelectMenu
-            multiSelect="true"
+            multiSelect
             inputLabel="+ Files"
             placeholder="Add Files for Role to access"
             options={[
@@ -210,6 +210,7 @@ storiesOf("Elements|Dialogue Box", module)
           <Section>
             <Title text="Role: Developer" type="info" />
             <SelectMenu
+              multiSelect
               inputLabel="+ Folder"
               placeholder="Select Folder to grant Permission to"
               options={folders}
@@ -236,7 +237,7 @@ storiesOf("Elements|Dialogue Box", module)
             placeholder="Type in User email or account name "
           />
           <SelectMenu
-            multiSelect="true"
+            multiSelect
             placeholder="Select one or many roles for this user."
             inputLabel="Assign Roles"
             options={[
@@ -263,7 +264,7 @@ storiesOf("Elements|Dialogue Box", module)
             placeholder="egallagher@digmap.com "
           />
           <SelectMenu
-            multiSelect="true"
+            multiSelect
             placeholder="Admin"
             inputLabel="Roles"
             options={[

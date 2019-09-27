@@ -21,17 +21,18 @@ function InformationCardBar({
   open,
   ...textProps
 }) {
-  const [expanded, setExpanded] = useState(open);
-  function toggleOn() {
-    if (onChange) onChange(expanded, !expanded, setExpanded);
-    else setExpanded((state) => { return !state; });
+  let expanded = open;
+  let setExpanded = onChange;
+  if (!setExpanded) [expanded, setExpanded] = useState(open);
+  function toggleDropdown() {
+    setExpanded(!expanded);
   }
 
   return (
     <Piece id={id}>
       <Bar
         padding="2x"
-        onClick={toggleOn}
+        onClick={toggleDropdown}
         left={<Title text={title} count={count} weight={weight} {...textProps} />}
         right={<Arrow icon="up" toggleOn={expanded} />}
       />
