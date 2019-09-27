@@ -37,7 +37,7 @@ storiesOf("Blocks|Data Range", module)
             label="Data Range (default)"
             labelMin="Min"
             labelMax="Max"
-            helpText="This help text has been passed through a prop!"
+            helpText="Hang in there, buddy, I'm here to help!"
           />
           <DataRange
             label="Data Range (with options)"
@@ -45,7 +45,7 @@ storiesOf("Blocks|Data Range", module)
             optionsMin={options}
             labelMax="Max"
             optionsMax={options}
-            helpText="This help text has been passed through a prop!"
+            helpText="Hang in there, buddy, I'm here to help!"
           />
         </Form>
       );
@@ -77,20 +77,20 @@ storiesOf("Blocks|Data Range", module)
             label="Input Range"
             labelMin="Min"
             labelMax="Max"
-            helpText="This help text has been passed through a prop!"
+            helpText="Hang in there, buddy, I'm here to help!"
           />
           <DataRange
             label="Input Range (error)"
             labelMin="Min"
             labelMax="Max"
-            helpText="This help text has been passed through a prop!"
+            helpText="Hang in there, buddy, I'm here to help!"
             error="Out of range!"
           />
           <DataRange
             label="Input Range (disabled)"
             labelMin="Min"
             labelMax="Max"
-            helpText="This help text has been passed through a prop!"
+            helpText="Hang in there, buddy, I'm here to help!"
             disabled
           />
         </Section>
@@ -101,7 +101,7 @@ storiesOf("Blocks|Data Range", module)
             optionsMin={options}
             labelMax="Max"
             optionsMax={options}
-            helpText="This help text has been passed through a prop!"
+            helpText="Hang in there, buddy, I'm here to help!"
           />
           <DataRange
             label="Select Range (error)"
@@ -109,7 +109,7 @@ storiesOf("Blocks|Data Range", module)
             optionsMin={options}
             labelMax="Max"
             optionsMax={options}
-            helpText="This help text has been passed through a prop!"
+            helpText="Hang in there, buddy, I'm here to help!"
             error="Out of range!"
           />
           <DataRange
@@ -118,7 +118,7 @@ storiesOf("Blocks|Data Range", module)
             optionsMin={options}
             labelMax="Max"
             optionsMax={options}
-            helpText="This help text has been passed through a prop!"
+            helpText="Hang in there, buddy, I'm here to help!"
             disabled
           />
         </Section>

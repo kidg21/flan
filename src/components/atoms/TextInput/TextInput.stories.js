@@ -28,7 +28,7 @@ storiesOf("Atoms|Text Input", module)
         <TextInput
           label="Text Input ( Standard )"
           placeholder="I am just keeping things warm"
-          helpText="This help text has been passed through a prop!"
+          helpText="Hang in there, buddy, I'm here to help!"
         />
       );
     }),
@@ -86,26 +86,26 @@ storiesOf("Atoms|Text Input", module)
           type="textarea"
           label="Text Input ( textarea )"
           placeholder="I am just keeping things warm"
-          helpText="This help text has been passed through a prop!"
+          helpText="Hang in there, buddy, I'm here to help!"
         />
         <TextInput
           type="number"
           label="Text Input ( number )"
           placeholder="I am just keeping things warm"
-          helpText="This help text has been passed through a prop!"
+          helpText="Hang in there, buddy, I'm here to help!"
         />
         <TextInput
           type="search"
           label="Text Input ( search )"
           placeholder="I am just keeping things warm"
-          helpText="This help text has been passed through a prop!"
+          helpText="Hang in there, buddy, I'm here to help!"
         />
         <TextInput
           type="email"
           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
           label="Text Input ( email )"
           placeholder="I am just keeping things warm"
-          helpText="This help text has been passed through a prop!"
+          helpText="Hang in there, buddy, I'm here to help!"
         />
         <TextInput
           autofocus
@@ -120,39 +120,39 @@ storiesOf("Atoms|Text Input", module)
           type="date"
           label="Text Input ( date )"
           placeholder="I am just keeping things warm"
-          helpText="This help text has been passed through a prop!"
+          helpText="Hang in there, buddy, I'm here to help!"
         />
         <TextInput
           type="month"
           label="Text Input ( month )"
           placeholder="I am just keeping things warm"
-          helpText="This help text has been passed through a prop!"
+          helpText="Hang in there, buddy, I'm here to help!"
         />
         <TextInput
           type="time"
           label="Text Input ( time )"
           placeholder="I am just keeping things warm"
-          helpText="This help text has been passed through a prop!"
+          helpText="Hang in there, buddy, I'm here to help!"
         />
         <TextInput
           type="tel"
           pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
           label="Text Input ( tel )"
           placeholder="I am just keeping things warm"
-          helpText="This help text has been passed through a prop!"
+          helpText="Hang in there, buddy, I'm here to help!"
         />
         <TextInput
           type="url"
           pattern="https?://.+"
           label="Text Input ( url )"
           placeholder="I am just keeping things warm"
-          helpText="This help text has been passed through a prop!"
+          helpText="Hang in there, buddy, I'm here to help!"
         />
         <TextInput
           type="hidden"
           label="Text Input ( hidden )"
           placeholder="I am just keeping things warm"
-          helpText="This help text has been passed through a prop!"
+          helpText="Hang in there, buddy, I'm here to help!"
         />
       </Form>
     );
@@ -166,47 +166,47 @@ storiesOf("Atoms|Text Input", module)
               <TextInput
                 label="Text Input ( error boolean )"
                 placeholder="I am just keeping things warm"
-                helpText="This help text has been passed through a prop!"
+                helpText="Hang in there, buddy, I'm here to help!"
                 error
               />
               <TextInput
                 label="Text Input ( error string )"
                 placeholder="I am just keeping things warm"
-                helpText="This help text has been passed through a prop!"
+                helpText="Hang in there, buddy, I'm here to help!"
                 error="Error Message"
               />
               <TextInput
                 label="Text Input ( Standard )"
                 placeholder="I am just keeping things warm"
-                helpText="This help text has been passed through a prop!"
+                helpText="Hang in there, buddy, I'm here to help!"
               />
               <TextInput
                 type="number"
                 label="Text Input ( Number )"
-                helpText="This help text has been passed through a prop!"
+                helpText="Hang in there, buddy, I'm here to help!"
               />
               <TextInput
                 type="textarea"
                 label="Text Input ( Text Area )"
-                helpText="This help text has been passed through a prop!"
+                helpText="Hang in there, buddy, I'm here to help!"
               />
               <TextInput
                 label="Text Input ( Required )"
                 placeholder="I am just keeping things warm"
-                helpText="This help text has been passed through a prop!"
+                helpText="Hang in there, buddy, I'm here to help!"
                 isRequired
               />
               <TextInput
                 label="Text Input ( Disabled )"
                 placeholder="I am just keeping things warm"
-                helpText="This help text has been passed through a prop!"
+                helpText="Hang in there, buddy, I'm here to help!"
                 disabled
               />
               <TextInput
                 label="Text Input ( Error )"
                 placeholder="I am just keeping things warm"
-                helpText="This help text has been passed through a prop!"
-                error="This error text has been passed through a prop!"
+                helpText="Hang in there, buddy, I'm here to help!"
+                error="Don't sweat it...we can fix this!"
               />
             </Section>
           </Form>

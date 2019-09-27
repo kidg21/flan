@@ -39,7 +39,7 @@ function Grid({
       setGap = "0";
       break;
     case "tiny":
-      setGap = ".25rem";
+      setGap = ".35rem";
       break;
     case "small":
       setGap = ".75rem";

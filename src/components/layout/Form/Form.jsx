@@ -101,7 +101,31 @@ Form.defaultProps = {
   title: null,
 };
 
-const Label = styled.label`
+const StyledLabel = styled.label`
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  align-items: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+  color: ${colors.grey_60};
+  background-color: ${colors.grey_light};
+  border: 1px solid ${colors.grey_20};
+  border-radius: 4px;
+  padding: 0.25rem 1rem;
+  white-space: nowrap;
+  user-select: none;
+`;
+function Label({ children, label }) {
+  return <StyledLabel>{children || label}</StyledLabel>;
+}
+Label.propTypes = {
+  label: PropTypes.string.isRequired,
+};
+
+const TextLabel = styled.label`
   grid-column: 1 / -1;
   width: 100%;
   font-weight: 700;
@@ -118,21 +142,20 @@ const Label = styled.label`
 `;
 function InputLabel({ label, isRequired, className, children, ...props }) {
   return (
-    <Label isRequired={isRequired} className={className} {...props}>
+    <TextLabel isRequired={isRequired} className={className} {...props}>
       {label || children}
-    </Label>
+    </TextLabel>
   );
 }
 InputLabel.propTypes = {
-  inputLabel: PropTypes.string,
+  label: PropTypes.string.isRequired,
   isRequired: PropTypes.bool,
 };
 InputLabel.defaultProps = {
-  inputLabel: null,
   isRequired: false,
 };
 
-const Help = styled(Label)`
+const Help = styled(TextLabel)`
   color: ${colors.grey_80};
   font-weight: initial;
 `;
@@ -140,13 +163,10 @@ function HelpText({ helpText, children }) {
   return <Help>{helpText || children}</Help>;
 }
 HelpText.propTypes = {
-  helpText: PropTypes.string,
-};
-HelpText.defaultProps = {
-  helpText: null,
+  helpText: PropTypes.string.isRequired,
 };
 
-const Error = styled(Label)`
+const Error = styled(TextLabel)`
   color: ${colors.alert};
   user-select: all;
   cursor: initial;
@@ -161,4 +181,4 @@ ErrorText.propTypes = {
   error: PropTypes.string.isRequired,
 };
 
-export { Form as default, Section, InputLabel, HelpText, ErrorText };
+export { Form as default, Section, Label, InputLabel, HelpText, ErrorText };

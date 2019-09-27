@@ -51,7 +51,7 @@ function DataRange({
       disabled={isDisabled}
       inputTextColor={inputTextColor}
       columns="1"
-      gap="small"
+      gap="tiny"
     >
       {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
       <Bar

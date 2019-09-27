@@ -27,17 +27,17 @@ storiesOf("Atoms|Calendar", module)
           <Calendar
             type="date"
             label="Date Input Label"
-            helpText="This help text has been passed through a prop!"
+            helpText="Hang in there, buddy, I'm here to help!"
           />
           <Calendar
             type="time"
             label="Time Input Label"
-            helpText="This help text has been passed through a prop!"
+            helpText="Hang in there, buddy, I'm here to help!"
           />
           <Calendar
             type="datetime"
             label="Date-Time Input Label"
-            helpText="This help text has been passed through a prop!"
+            helpText="Hang in there, buddy, I'm here to help!"
           />
         </Form>
       );
@@ -58,7 +58,7 @@ storiesOf("Atoms|Calendar", module)
           "Calendar",
         )}
         label={text("label", "Input Label", "Calendar")}
-        helpText={text("help text", "This help text has been passed through a prop!", "Calendar")}
+        helpText={text("help text", "Hang in there, buddy, I'm here to help!", "Calendar")}
         error={
           boolean("error", false, "Calendar") && text("error text", "Error message...", "Calendar")
         }
@@ -72,24 +72,24 @@ storiesOf("Atoms|Calendar", module)
         <Calendar
           type="date"
           label="Date Input Label"
-          helpText="This help text has been passed through a prop!"
+          helpText="Hang in there, buddy, I'm here to help!"
         />
         <Calendar
           type="date"
           label="Date Input Label (required)"
-          helpText="This help text has been passed through a prop!"
+          helpText="Hang in there, buddy, I'm here to help!"
           isRequired
         />
         <Calendar
           type="date"
           label="Date Input Label"
-          helpText="This help text has been passed through a prop!"
+          helpText="Hang in there, buddy, I'm here to help!"
           disabled
         />
         <Calendar
           type="date"
           label="Date Input Label"
-          helpText="This help text has been passed through a prop!"
+          helpText="Hang in there, buddy, I'm here to help!"
           error="Don't sweat it...we can fix this!"
         />
       </Form>
@@ -101,24 +101,24 @@ storiesOf("Atoms|Calendar", module)
         <Calendar
           type="time"
           label="Time Input Label"
-          helpText="This help text has been passed through a prop!"
+          helpText="Hang in there, buddy, I'm here to help!"
         />
         <Calendar
           type="time"
           label="Time Input Label (required)"
-          helpText="This help text has been passed through a prop!"
+          helpText="Hang in there, buddy, I'm here to help!"
           isRequired
         />
         <Calendar
           type="time"
           label="Time Input Label"
-          helpText="This help text has been passed through a prop!"
+          helpText="Hang in there, buddy, I'm here to help!"
           disabled
         />
         <Calendar
           type="time"
           label="Time Input Label"
-          helpText="This help text has been passed through a prop!"
+          helpText="Hang in there, buddy, I'm here to help!"
           state="error"
           error="Don't sweat it...we can fix this!"
         />
@@ -131,24 +131,24 @@ storiesOf("Atoms|Calendar", module)
         <Calendar
           type="datetime"
           label="Date-Time Input Label"
-          helpText="This help text has been passed through a prop!"
+          helpText="Hang in there, buddy, I'm here to help!"
         />
         <Calendar
           type="datetime"
           label="Date-Time Input Label (required)"
-          helpText="This help text has been passed through a prop!"
+          helpText="Hang in there, buddy, I'm here to help!"
           isRequired
         />
         <Calendar
           type="datetime"
           label="Date-Time Input Label"
-          helpText="This help text has been passed through a prop!"
+          helpText="Hang in there, buddy, I'm here to help!"
           disabled
         />
         <Calendar
           type="datetime"
           label="Date-Time Input Label"
-          helpText="This help text has been passed through a prop!"
+          helpText="Hang in there, buddy, I'm here to help!"
           state="error"
           error="Don't sweat it...we can fix this!"
         />

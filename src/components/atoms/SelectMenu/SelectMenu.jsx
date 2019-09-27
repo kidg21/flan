@@ -227,7 +227,7 @@ function SelectMenu({
       disabled={isDisabled} // input attribute
       error={state.error !== null}
       columns="1"
-      gap="small"
+      gap="tiny"
     >
       {label ? <InputLabel label={label} isRequired={isRequired} /> : null}
       <Select

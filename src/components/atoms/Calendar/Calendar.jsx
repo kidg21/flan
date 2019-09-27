@@ -74,7 +74,7 @@ function Calendar({
       disabled={isDisabled}
       error={error}
       columns="1"
-      gap="small"
+      gap="tiny"
       id={id}
       inputTextColor={inputTextColor}
       isRequired={isRequired}
