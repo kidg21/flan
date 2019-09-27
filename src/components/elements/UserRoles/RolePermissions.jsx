@@ -12,9 +12,9 @@ import Icon from "atoms/Icon";
 import Title from "base/Typography";
 
 const permissions = [
-  { value: "Read", label: "Read" },
-  { value: "Write", label: "Write" },
-  { value: ["Read", "Write"], label: "Read / Write" },
+  { value: "read", label: "Read" },
+  { value: "write", label: "Write" },
+  { value: ["read", "write"], label: "Read / Write" },
 ];
 
 function FolderEntry({
@@ -91,14 +91,19 @@ function RoleEntry({
     }
   }
 
+  function onChangeVisible(open) {
+    onChange({ ...role, open});
+  }
+
   function addRolePermission() {
     editRole.onClick(role);
   }
 
   return (
-    <InformationCardBar title={<Title>{role.name} <Icon icon="delete" onClick={onDeleteRole} /></Title>}>
+    <InformationCardBar open={role.open} onChange={onChangeVisible} title={<Title>{role.name} <Icon icon="delete" onClick={onDeleteRole} /></Title>}>
       {role.folders.map((folder) => {
         return (<FolderEntry
+          key={folder.folder}
           folder={folder}
           onChange={onChangePermission}
           padding={folderPadding}
@@ -135,7 +140,7 @@ RoleEntry.defaultProps = {
   selectWidth: null,
 };
 
-function RolePermissions({
+const RolePermissions = React.forwardRef(({
   roles,
   commands,
   listHeight,
@@ -146,31 +151,11 @@ function RolePermissions({
   folderPadding,
   selectWidth,
   title,
-}) {
+}, ref) => {
   let activeRoles = roles;
   let setRoles = onChange;
   if (!onChange) [activeRoles, setRoles] = useState(roles);
-
-  const [visibleRoles, setVisibleRoles] = useState({
-    roles: activeRoles,
-    searchCriteria: null,
-  });
-
-  function filterRoles(currRoles, searchCriteria) {
-    if (searchCriteria) {
-      setVisibleRoles({
-        roles: currRoles.filter((role) => {
-          return role.role.toLowerCase().includes(searchCriteria);
-        }),
-        searchCriteria: searchCriteria,
-      });
-    } else {
-      setVisibleRoles({
-        roles: currRoles,
-        searchCriteria: null,
-      });
-    }
-  }
+  const [filter, setFilter] = useState(null);
 
   function onRoleChange(role) {
     let currRoles = null;
@@ -185,11 +170,10 @@ function RolePermissions({
     }
 
     setRoles(currRoles);
-    filterRoles(currRoles, visibleRoles.searchCriteria);
   }
 
   function onSearch(e) {
-    filterRoles(activeRoles, e.target.value.toLowerCase());
+    setFilter(e.target.value.toLowerCase());
   }
 
   const childElements = (!children || children instanceof Array) ? children : [children];
@@ -201,8 +185,10 @@ function RolePermissions({
           left={<Search placeholder="Search for a Role" onChange={onSearch} />}
           right={right}
         />
-        <Container height={listHeight} >
-          {visibleRoles.roles.map((role) => {
+        <Container height={listHeight} ref={ref} >
+          {activeRoles.filter((role) => {
+            return filter ? role.name.toLowerCase().includes(filter) : true;
+          }).map((role) => {
             return (<RoleEntry
               key={role.role}
               role={role}
@@ -223,7 +209,7 @@ function RolePermissions({
       }) : null}
     </Panel>
   );
-}
+});
 
 RolePermissions.propTypes = {
   roles: PropTypes.arrayOf(PropTypes.shape({

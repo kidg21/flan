@@ -17,13 +17,13 @@ function UserEntry({
   onChange,
   onClick,
 }) {
-  const [isEnabled, setEnabled] = useState(user.enabled);
+  let isEnabled = user.enabled;
+  let setEnabled = onChange;
+  if (!onChange) [isEnabled, setEnabled] = useState(user.enabled);
 
   function toggleEnabled() {
-    setEnabled((enabled) => {
-      if (onChange) onChange({ ...user, enabled: !enabled });
-      return !enabled;
-    });
+    const newState = onChange ? { ...user, enabled: !isEnabled } : !isEnabled;
+    setEnabled(newState);
   }
 
   function onCommandClick() {
@@ -94,7 +94,7 @@ const userTypes = [
   { value: false, label: "Disabled" },
 ];
 
-function UserRoles({
+const UserRoles = React.forwardRef(({
   users,
   roles,
   commands,
@@ -105,7 +105,7 @@ function UserRoles({
   listHeight,
   searchWidth,
   title,
-}) {
+}, ref) => {
   let activeUsers = users;
   let setUsers = onChange;
   if (!onChange) [activeUsers, setUsers] = useState(users);
@@ -114,36 +114,24 @@ function UserRoles({
     name: null,
     enabled: null,
     role: null,
-    users: activeUsers,
   });
-  function filterUsers(currUsers, state) {
-    state.users = currUsers.filter((user) => {
-      const userRoles = (user.roles && !(user.roles instanceof Array))
-        ? [user.roles] : user.roles || [];
-      return (typeof state.enabled !== "boolean" || user.enabled === state.enabled)
-        && (!state.name || user.name.toLowerCase().includes(state.name))
-        && (!state.role || userRoles.includes(state.role));
-    });
-    setFilter(state);
-  }
 
-  function setNameFilter(e) {
-    // nameFilter = e.target.value.toLowerCase();
-    filterUsers(activeUsers, { ...filterState, name: e.target.value.toLowerCase() });
+  function filterUserName(e) {
+    setFilter({ ...filterState, name: e.target.value.toLowerCase() });
   }
 
   function filterUserTypes(currState, newState, setState) {
     const isEnabled = newState.selected && newState.selected instanceof Array
       ? newState.selected[0].value : newState.selected.value;
     setState(newState);
-    filterUsers(activeUsers, { ...filterState, enabled: isEnabled });
+    setFilter({ ...filterState, enabled: isEnabled });
   }
 
   function filterUserRoles(currState, newState, setState) {
     const role = newState.selected && newState.selected instanceof Array
       ? newState.selected[0].value : newState.selected.value;
     setState(newState);
-    filterUsers(activeUsers, { ...filterState, role });
+    setFilter({ ...filterState, role });
   }
 
   function onUserChange(userProps) {
@@ -151,7 +139,6 @@ function UserRoles({
       return user.name === userProps.name ? userProps : user;
     });
     setUsers(currUsers);
-    filterUsers(currUsers, filterState);
   }
 
   const rolesFilter = [{
@@ -165,7 +152,7 @@ function UserRoles({
       <PanelSection body>
         {right ? <Bar right={right} /> : null}
         <Bar
-          left={<Search placeholder="Search for a User" onChange={setNameFilter} />}
+          left={<Search placeholder="Search for a User" onChange={filterUserName} />}
           leftWidth={searchWidth}
           center={
             <SelectMenu
@@ -184,8 +171,14 @@ function UserRoles({
             />
           }
         />
-        <Container height={listHeight}>
-          {filterState.users.map((user) => {
+        <Container height={listHeight} ref={ref}>
+          {activeUsers.filter((user) => {
+            const userRoles = (user.roles && !(user.roles instanceof Array)) ?
+              [user.roles] : user.roles || [];
+            return (typeof filterState.enabled !== "boolean" || user.enabled === filterState.enabled)
+              && (!filterState.name || user.name.toLowerCase().includes(filterState.name))
+              && (!filterState.role || userRoles.includes(filterState.role));
+          }).map((user) => {
             return (<UserEntry
               key={user.name}
               user={user}
@@ -205,7 +198,7 @@ function UserRoles({
       }) : null}
     </Panel>
   );
-}
+});
 
 UserRoles.propTypes = {
   users: PropTypes.arrayOf(PropTypes.shape({

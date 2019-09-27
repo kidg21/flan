@@ -235,7 +235,7 @@ function SelectMenu({
 
   function handleCreateOption(optionName) {
     onCreateOption(optionName, (newState) => {
-      setState({ ...state, newState });
+      setState(Object.assign({}, state, newState));
     });
   }
 
@@ -249,7 +249,7 @@ function SelectMenu({
     isSearchable: isSearchable,
     isClearable: isClearable,
     isMulti: multiSelect,
-    disabled: isDisabled,
+    isDisabled: isDisabled,
     isLoading: isLoading,
     isRtl: isRtl,
     onChange: changeSelected,

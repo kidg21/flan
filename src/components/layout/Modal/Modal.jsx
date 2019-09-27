@@ -160,8 +160,7 @@ function Modal({
   align,
   onClick,
   onClose,
-  onDisplayComplete,
-  action,
+  visible,
   slideDuration,
   fadeDuration,
   scale,
@@ -212,28 +211,35 @@ function Modal({
   }
 
   // Hide container when fade is complete
-  const [visible, setVisible] = useState(!!action);
-  if (visible) {
-    if (action) {
-      setTimeout(
-        onDisplayComplete,
-        (Math.max((fadeDuration || 0), (slideDuration || 0)) - 0.1) * 1000,
-      );
-    } else {
-      setVisible(false);
-      return null;
+  let action = null;
+  const [state, setState] = useState({
+    visible: false,
+    animation: null,
+  });
+
+  function beginAnimation() {
+    action = visible ? "open" : "close";
+    state.animation = setTimeout(() => {
+      setState({ visible });
+    }, (Math.max((fadeDuration || 0), (slideDuration || 0)) - 0.1) * 1000);
+  }
+
+  if (state.visible !== visible) {
+    if (!state.animation) {
+      beginAnimation();
     }
-  } else if (action) {
-    setVisible(true);
-    return null;
+  } else if (state.animation) {
+    clearTimeout(state.animation);
+    state.visible = !state.visible;
+    beginAnimation();
   }
 
   return (
     <ModalContainer
       id={id}
       align={align}
-      visible={visible}
-      action={visible ? action : null}
+      visible={visible || state.visible}
+      action={action}
       slideDuration={slideDuration}
       scale={scale}
       aria-labelledby={ariaLabelledby}
@@ -241,12 +247,11 @@ function Modal({
       justifyContent={justifyContent}
       pointerEvents={pointerEvents}
     >
-      <ModalBG onClick={onClose} action={visible ? action : null} fadeDuration={fadeDuration} />
+      <ModalBG onClick={onClose} action={action} fadeDuration={fadeDuration} />
       {modalContent}
     </ModalContainer>
   );
 }
-
 export default Modal;
 
 Modal.propTypes = {
@@ -258,8 +263,9 @@ Modal.propTypes = {
   image: PropTypes.string,
   onClose: PropTypes.func,
   onClick: PropTypes.func,
-  onDisplayComplete: PropTypes.func,
-  action: PropTypes.oneOf(["open", "close"]),
+  // onDisplayComplete: PropTypes.func,
+  // action: PropTypes.oneOf(["open", "close"]),
+  visible: PropTypes.bool,
   slideDuration: PropTypes.number,
   fadeDuration: PropTypes.number,
   scale: PropTypes.oneOf(["scaleUp", "scaleDown"]),
@@ -276,8 +282,7 @@ Modal.defaultProps = {
   image: null,
   onClose: null,
   onClick: null,
-  onDisplayComplete: null,
-  action: null,
+  visible: false,
   slideDuration: 0.6,
   fadeDuration: 0.6,
   scale: null,
