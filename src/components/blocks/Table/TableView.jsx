@@ -10,7 +10,7 @@ export const MultiGridWrapper = styled.div`
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
   border-collapse: collapse;
-  display: flex-block;
+  flex: 1 1 auto;
 `;
 
 export const CellWrapper = styled.div`
