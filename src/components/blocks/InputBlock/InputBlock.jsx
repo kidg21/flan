@@ -1,5 +1,5 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable complexity */
-/* eslint-disable no-nested-ternary */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -8,133 +8,107 @@ import { DisabledContext } from "States";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
 import Grid from "layout/Grid";
 import TextInput from "atoms/TextInput";
-import SelectMenu from "atoms/SelectMenu";
-import Button from "atoms/Button";
 
 const TextInputContainer = styled(Grid)`
   color: ${(props) => {
     return props.inputTextColor || "";
   }};
   width: 100%;
-  /* grid-template-columns: ${(props) => {
-    return props.threeInputs
-      ? "repeat(3, 1fr)"
-      : props.twoInputs
-        ? "repeat(2, 1fr)"
-        : props.prefix
-          ? props.postfix || props.label
-            ? "minmax(auto, auto) minmax(auto, 3fr) minmax(auto, auto)"
-            : props.postSelect
-              ? "minmax(auto, auto) minmax(auto, 3fr) minmax(auto, 2fr)"
-              : "minmax(auto, auto) minmax(auto, 3fr)"
-          : props.preSelect
-            ? props.postfix || props.label
-              ? "minmax(auto, 2fr) minmax(auto, 3fr) minmax(auto, auto)"
-              : props.postSelect
-                ? "minmax(auto, 2fr) minmax(auto, 3fr) minmax(auto, 2fr)"
-                : "minmax(auto, 2fr) minmax(auto, 3fr)"
-            : props.postfix || props.label
-              ? "minmax(auto, 3fr) minmax(auto, auto)"
-              : props.postSelect
-                ? "minmax(auto, 3fr) minmax(auto, 2fr)"
-                : "repeat(1, 1fr)";
-  }}; */
 `;
 
-const PrePostLabel = styled.label`
-  display: flex;
-  justify-content: center;
-  border-radius: 5px;
-  align-inputs: center;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: lowercase;
-  color: ${colors.grey_60};
-  background-color: ${colors.grey_light};
-  border: 1px solid ${colors.grey_20};
-  border-bottom: 1px solid ${colors.grey_20};
-  border-radius: 4px;
-  padding: 0.25rem 1rem;
-  white-space: nowrap;
+const InputGroup = styled(Grid)`
+  grid-template-columns: ${(props) => {
+    return props.gridColumns || "";
+  }};
+`;
+
+const PrePost = styled.section`
+  width: 100%;
+  height: 100%;
+  > * {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 function InputBlock({
-  id,
-  type,
-  pattern,
-  value,
-  label,
-  placeholder,
-  helpText,
+  className,
   disabled,
-  isRequired,
-  prefix,
-  postfix,
-  preSelect,
-  postSelect,
-  buttonLabel,
   error,
-  children,
-  inputType,
+  helpText,
+  id,
+  textInputs,
+  isRequired,
+  label,
+  onChange,
+  postfix,
+  prefix,
 }) {
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  const inputElements = inputType.map((input) => {
+  let inputTextColor;
+  if (error && !disabled) {
+    inputTextColor = colors.alert;
+  }
+  const inputElements = textInputs.map((input) => {
     return (
       <TextInput
         disabled={isDisabled}
         error={!!error}
         id={input.id}
         name={input.id}
+        onChange={onChange}
         pattern={input.pattern}
-        placeholder={input.placeholder || placeholder}
+        placeholder={input.placeholder}
+        readonly={input.readonly}
+        title={input.title}
         type={input.type}
+        value={input.value}
       />
     );
   });
   let inputContainer = inputElements;
-  if (inputType.length === 2) {
-    inputContainer = <Grid columns="2">{inputElements}</Grid>;
-  } else if (inputType.length === 3) {
-    inputContainer = <Grid columns="3">{inputElements}</Grid>;
+  if (textInputs.length === 2) {
+    inputContainer = (
+      <Grid columns="2" gap="tiny">
+        {inputElements}
+      </Grid>
+    );
+  } else if (textInputs.length === 3) {
+    inputContainer = (
+      <Grid columns="3" gap="tiny">
+        {inputElements}
+      </Grid>
+    );
+  }
+  let gridColumns;
+  if (prefix && !postfix) {
+    gridColumns = "minmax(auto, 1fr) minmax(auto, 3fr)";
+  } else if (!prefix && postfix) {
+    gridColumns = "minmax(auto, 3fr) minmax(auto, 1fr)";
+  } else {
+    /** If neither prefix/postfix or both (unsupported) */
+    gridColumns = "repeat(1, 1fr)";
   }
   return (
     <DisabledContext.Provider value={isDisabled}>
       <TextInputContainer
-        id={id}
-        isRequired={isRequired}
+        className={className}
+        columns="1"
         disabled={isDisabled}
         error={error}
-        prefix={prefix}
+        gap="tiny"
+        id={id}
+        inputTextColor={inputTextColor}
+        isRequired={isRequired}
         postfix={postfix}
-        preSelect={preSelect}
-        postSelect={postSelect}
-        label={buttonLabel}
+        prefix={prefix}
       >
         {label ? <InputLabel isRequired={isRequired} label={label} /> : null}
-        {prefix ? <PrePostLabel>{prefix}</PrePostLabel> : null}
-        {preSelect ? (
-          <SelectMenu
-            displayInline // Grid Override
-            label={null}
-            name="Choose"
-            isClearable={false}
-            options={preSelect}
-            defaultValue={preSelect[0]}
-          />
-        ) : null}
-        {inputContainer || children}
-        {postfix ? <PrePostLabel>{postfix}</PrePostLabel> : null}
-        {buttonLabel ? <Button label={buttonLabel} isPrimary /> : null}
-        {postSelect ? (
-          <SelectMenu
-            displayInline // Grid Override
-            label={null}
-            name="Choose"
-            isClearable={false}
-            options={postSelect}
-            defaultValue={postSelect[0]}
-          />
-        ) : null}
+        <InputGroup gridColumns={gridColumns} gap="tiny">
+          {prefix && !postfix ? <PrePost>{prefix}</PrePost> : null}
+          {inputContainer}
+          {!prefix && postfix ? <PrePost>{postfix}</PrePost> : null}
+        </InputGroup>
         {helpText ? <HelpText>{helpText}</HelpText> : null}
         {typeof error === "string" && !disabled ? <ErrorText>{error}</ErrorText> : null}
       </TextInputContainer>
@@ -143,21 +117,31 @@ function InputBlock({
 }
 
 InputBlock.propTypes = {
-  id: PropTypes.string,
-  type: PropTypes.string,
-  pattern: PropTypes.string,
-  value: PropTypes.string,
-  label: PropTypes.string.isRequired,
-  placeholder: PropTypes.string,
-  helpText: PropTypes.string,
-  isRequired: PropTypes.bool,
+  className: PropTypes.string,
   disabled: PropTypes.bool,
-  prefix: PropTypes.string,
+  error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  helpText: PropTypes.string,
+  id: PropTypes.string,
+  isRequired: PropTypes.bool,
+  label: PropTypes.string,
+  onChange: PropTypes.func,
+  placeholder: PropTypes.string,
   postfix: PropTypes.string,
-  preSelect: PropTypes.array,
-  postSelect: PropTypes.array,
-  buttonLabel: PropTypes.string,
-  error: PropTypes.bool,
+  prefix: PropTypes.string,
+  textInputs: PropTypes.node.isRequired,
+};
+InputBlock.defaultProps = {
+  className: null,
+  disabled: null,
+  error: null,
+  helpText: null,
+  id: null,
+  isRequired: false,
+  label: null,
+  onChange: null,
+  placeholder: null,
+  postfix: null,
+  prefix: null,
 };
 
 export { InputBlock as default };

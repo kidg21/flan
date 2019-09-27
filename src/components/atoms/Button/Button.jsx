@@ -20,6 +20,7 @@ const StyledButton = styled.button`
   width: ${(props) => {
     return props.fullWidth ? "100%" : "auto";
   }};
+  height: inherit;
   padding: ${(props) => {
     return props.buttonPadding || "0.5rem 0.7rem";
   }};
