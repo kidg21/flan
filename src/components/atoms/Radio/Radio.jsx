@@ -97,7 +97,7 @@ function Radio({
     tabIndex = "-1";
   }
   if (error && !isDisabled) {
-    inputTextColor = "error";
+    inputTextColor = "alert";
     fillColor = "alert";
     outlineColor = "alertDark";
     fillColorChecked = "alert";

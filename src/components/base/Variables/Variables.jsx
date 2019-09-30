@@ -11,7 +11,7 @@ export const DMPTheme = {
     secondary: "#99958F",
     inverse: "#ffffff",
     link: "#5FD1E2",
-    alert: "#7d0000",
+    alert: "hsl(1, 55%, 50%)",
     disabled: "#b1b2b3",
     info: "rgb(0, 64, 221)",
     success: "rgb(36, 138, 61)",

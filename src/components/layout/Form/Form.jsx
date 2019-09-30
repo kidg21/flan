@@ -103,7 +103,6 @@ Form.defaultProps = {
 const Label = styled.label`
   grid-column: 1 / -1;
   width: max-content;
-  color: inherit;
   font-weight: 600;
   user-select: none;
   &:after {
@@ -136,7 +135,7 @@ InputLabel.defaultProps = {
 
 const Help = styled(Label)`
   color: ${props => {
-    return props.theme.text.secondary;
+    return props.theme.text.primary;
   }};
   font-weight: initial;
 `;
@@ -152,7 +151,7 @@ HelpText.defaultProps = {
 
 const Error = styled(Label)`
   color: ${props => {
-    return props.theme.text.error;
+    return props.theme.text.alert;
   }};
   user-select: all;
   cursor: initial;

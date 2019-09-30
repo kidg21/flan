@@ -193,7 +193,7 @@ const GlobalStyles = createGlobalStyle`
 /* Labels */
     label {
       font-family: ${fonts.data};
-      font-size: 0.875rem;
+      font-size: 0.876rem;
       font-weight: 600;
       &:empty {
         &:before {
