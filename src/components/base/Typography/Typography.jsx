@@ -7,7 +7,7 @@ import { fonts } from "Variables";
 
 const LinkedText = styled.a`
   color: ${(props) => {
-    return props.theme.palette.primary;
+    return props.theme.text.info;
   }};
 `;
 
@@ -21,7 +21,7 @@ const StyledText = styled.h4`
     return props.fontFamily || "inherit";
   }};
   color: ${(props) => {
-    return props.theme.palette[props.textColor] || props.theme.text.primary ;
+    return props.theme.text[props.textColor] || props.theme.text.primary ;
   }};
   font-weight: ${(props) => {
     return props.textWeight || "600";
@@ -102,7 +102,7 @@ function Text({
       textColor = "alert";
       break;
     case "light":
-      textColor = "disabled";
+      textColor = "grey3";
       break;
     default:
       break;

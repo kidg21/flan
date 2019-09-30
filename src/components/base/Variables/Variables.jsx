@@ -13,7 +13,7 @@ export const DMPTheme = {
     link: "#5FD1E2",
     alert: "hsl(1, 55%, 50%)",
     disabled: "#b1b2b3",
-    info: "rgb(0, 64, 221)",
+    info: "hsl(204, 61%, 43%)",
     success: "rgb(36, 138, 61)",
     warning: "rgb(178, 80, 0)",
   },
