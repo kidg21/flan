@@ -103,10 +103,8 @@ Form.defaultProps = {
 const Label = styled.label`
   grid-column: 1 / -1;
   width: max-content;
-  color: ${props => {
-    return props.theme.text.primary;
-  }};
-  font-weight: 700;
+  color: inherit;
+  font-weight: 600;
   user-select: none;
   &:after {
     display: ${props => (props.isRequired ? "" : "none")};
