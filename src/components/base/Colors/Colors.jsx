@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import Title, { Description } from "base/Typography";
-import Grid from "layout/Grid";
 import Bar from "blocks/Bar";
+import Panel from "layout/Panel";
+import Title, { SubTitle } from "base/Typography";
+import Grid from "layout/Grid";
 
 const ColorBlockColor = styled.div`
   width: 5em;
@@ -30,7 +31,7 @@ const TextStuff = styled(Title)`
   font-size: 14px;
 `;
 
-function Colors({ id, shade, comment, color, hexcode }) {
+function Colors({ id, shade, color }) {
   let filterShade;
   switch (shade) {
     case "darken":
@@ -50,11 +51,48 @@ function Colors({ id, shade, comment, color, hexcode }) {
       center={
         <>
           <TextStuff color={color} text={color} />
-          <Description text={comment} />
         </>
       }
       centerAlign="left"
     />
   );
 }
-export default Colors;
+
+function ColorPalette() {
+  return (
+    <Panel>
+      <Title text="Color Palette" size="large" styling="underline" />
+      <SubTitle text="Color Palette is controled by themeing. Colors vary depending on theme selected." />
+      <Title text="Main Colors" size="large" styling="underline" />
+      <Grid>
+        <Colors color="primary" />
+        <Colors color="primaryLight" />
+        <Colors color="primaryTint" />
+        <Colors color="primaryDark" />
+
+        <Colors color="secondary" />
+        <Colors color="secondaryLight" />
+        <Colors color="secondaryTint" />
+        <Colors color="secondaryDark" />
+      </Grid>
+      <Title text="Greys" size="large" styling="underline" />
+      <Grid>
+        <Colors color="grey" />
+        <Colors color="grey2" />
+        <Colors color="grey3" />
+        <Colors color="grey4" />
+        <Colors color="grey5" />
+        <Colors color="grey6" />
+      </Grid>
+      <Title text="Notification Colors" size="large" styling="underline" />
+      <Grid>
+        <Colors color="info" />
+        <Colors color="success" />
+        <Colors color="warning" />
+        <Colors color="alert" />
+      </Grid>
+    </Panel>
+  );
+}
+
+export { ColorPalette as default, Colors };
