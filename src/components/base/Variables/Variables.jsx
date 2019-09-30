@@ -1,5 +1,40 @@
 import { css } from "styled-components";
 
+// Codes for color palette
+export const colors = {
+  white: "hsl(0, 100%, 100%)",
+  grey_light: "hsl(34, 5%, 95%)",
+  grey_light_glass: "hsl(34, 5%, 95%, 0.85)",
+  grey_20: "hsl(34, 5%, 88%)",
+  grey_40: "hsl(34, 5%, 72%)",
+  grey_60: "hsl(34, 5%, 58%)",
+  grey_80: "hsl(34, 5%, 36%)",
+  grey_dark: "hsl(34, 5%, 28%)",
+  grey_dark_glass: "hsla(34, 5%, 28%, 0.85)",
+  black: "hsl(34, 5%, 12%)",
+  anchor: "hsl(204, 61%, 43%)",
+  anchor_tint: "hsl(204, 61%, 83%)",
+  anchor_light: "#66b1e3",
+  anchor_dark: "hsl(204, 61%, 53%)",
+  success: "hsl(90, 46%, 46%)",
+  success_tint: "hsl(90, 46%, 90%)",
+  success_light: "hsl(90, 46%, 59%)",
+  success_dark: "hsl(90, 46%, 42%)",
+  warning: "hsl(34, 88%, 52%)",
+  warning_tint: "hsl(34, 88%, 80%)",
+  warning_light: "hsl(34, 88%, 62%)",
+  warning_dark: "hsl(34, 88%, 46%)",
+  alert: "hsl(1, 55%, 50%)",
+  alert_tint: "hsl(1, 55%, 90%)",
+  alert_light: "hsl(1, 55%, 60%)",
+  alert_dark: "hsl(1, 55%, 44%)",
+  generalIndustry: "hsl(194, 59%, 35%)",
+  government: "hsl(166, 100%, 28%)",
+  insurance: "hsl(89, 39%, 50%)",
+  homeBuilding: "hsl(43, 65%, 49%)",
+  realEstate: "hsl(12, 61%, 50%)",
+};
+
 export const DMPTheme = {
   background: {
     default: "#ffffff",
@@ -112,41 +147,6 @@ export const darkTheme = {
     waterwayBlue: "#44A3D8",
     burntOrange: "#B84438",
   },
-};
-
-// Codes for color palette
-export const colors = {
-  white: "hsl(0, 100%, 100%)",
-  grey_light: "hsl(34, 5%, 95%)",
-  grey_light_glass: "hsl(34, 5%, 95%, 0.85)",
-  grey_20: "hsl(34, 5%, 88%)",
-  grey_40: "hsl(34, 5%, 72%)",
-  grey_60: "hsl(34, 5%, 58%)",
-  grey_80: "hsl(34, 5%, 36%)",
-  grey_dark: "hsl(34, 5%, 28%)",
-  grey_dark_glass: "hsla(34, 5%, 28%, 0.85)",
-  black: "hsl(34, 5%, 12%)",
-  anchor: "hsl(204, 61%, 43%)",
-  anchor_tint: "hsl(204, 61%, 83%)",
-  anchor_light: "#66b1e3",
-  anchor_dark: "hsl(204, 61%, 53%)",
-  success: "hsl(90, 46%, 46%)",
-  success_tint: "hsl(90, 46%, 90%)",
-  success_light: "hsl(90, 46%, 59%)",
-  success_dark: "hsl(90, 46%, 42%)",
-  warning: "hsl(34, 88%, 52%)",
-  warning_tint: "hsl(34, 88%, 80%)",
-  warning_light: "hsl(34, 88%, 62%)",
-  warning_dark: "hsl(34, 88%, 46%)",
-  alert: "hsl(1, 55%, 50%)",
-  alert_tint: "hsl(1, 55%, 90%)",
-  alert_light: "hsl(1, 55%, 60%)",
-  alert_dark: "hsl(1, 55%, 44%)",
-  generalIndustry: "hsl(194, 59%, 35%)",
-  government: "hsl(166, 100%, 28%)",
-  insurance: "hsl(89, 39%, 50%)",
-  homeBuilding: "hsl(43, 65%, 49%)",
-  realEstate: "hsl(12, 61%, 50%)",
 };
 
 export const Darken = css`

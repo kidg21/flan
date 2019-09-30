@@ -33,4 +33,6 @@ storiesOf("Elements|Card Bar/", module)
       );
     });
   })
-  .add("Layer Disabled", () => { return <LayerCardBar title="Demographics" disabled icons={Icons} />; });
+  .add("Layer Disabled", () => {
+    return <LayerCardBar title="Demographics" disabled icons={Icons} />;
+  });
