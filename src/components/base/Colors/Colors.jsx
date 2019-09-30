@@ -63,7 +63,6 @@ function ColorPalette() {
     <Panel>
       <Title text="Color Palette" size="large" styling="underline" />
       <SubTitle text="Color Palette is controled by themeing. Colors vary depending on theme selected." />
-      <Title text="Main Colors" size="large" styling="underline" />
       <Grid>
         <Colors color="primary" />
         <Colors color="primaryLight" />
@@ -74,22 +73,23 @@ function ColorPalette() {
         <Colors color="secondaryLight" />
         <Colors color="secondaryTint" />
         <Colors color="secondaryDark" />
-      </Grid>
-      <Title text="Greys" size="large" styling="underline" />
-      <Grid>
+
         <Colors color="grey" />
         <Colors color="grey2" />
         <Colors color="grey3" />
         <Colors color="grey4" />
         <Colors color="grey5" />
         <Colors color="grey6" />
-      </Grid>
-      <Title text="Notification Colors" size="large" styling="underline" />
-      <Grid>
+
         <Colors color="info" />
         <Colors color="success" />
+        <Colors color="successLight" />
+        <Colors color="successDark" />
         <Colors color="warning" />
         <Colors color="alert" />
+        <Colors color="alertLight" />
+        <Colors color="alertTint" />
+        <Colors color="alertDark" />
       </Grid>
     </Panel>
   );
