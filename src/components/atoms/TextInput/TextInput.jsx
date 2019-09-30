@@ -7,7 +7,7 @@ import Grid from "layout/Grid";
 
 const TextInputContainer = styled(Grid)`
   color: ${(props) => {
-    return props.inputTextColor || "";
+    return props.theme.text[props.inputTextColor] || "";
   }};
   width: 100%;
 `;
