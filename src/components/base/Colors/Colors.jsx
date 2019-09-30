@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Bar from "blocks/Bar";
+import { Lighten, Darken } from "Variables";
 import Panel from "layout/Panel";
 import Title, { SubTitle } from "base/Typography";
 import Grid from "layout/Grid";
@@ -21,6 +22,14 @@ const ColorBlockColor = styled.div`
   background-color: ${props => {
     return props.theme.palette[props.color] || "";
   }};
+
+  &:hover {
+    ${Darken}
+  }
+
+  &:active {
+    ${Lighten}
+  }
 `;
 
 const TextStuff = styled(Title)`
@@ -31,22 +40,11 @@ const TextStuff = styled(Title)`
   font-size: 14px;
 `;
 
-function Colors({ id, shade, color }) {
-  let filterShade;
-  switch (shade) {
-    case "darken":
-      filterShade = "brightness(85%) contrast(150%)";
-      break;
-    case "lighten":
-      filterShade = "brightness(115%)";
-      break;
-    default:
-      break;
-  }
+function Colors({ id, color }) {
   return (
     <Bar
       contentAlign="center"
-      left={<ColorBlockColor color={color} filterShade={filterShade} />}
+      left={<ColorBlockColor color={color} />}
       leftWidth="min-content"
       center={
         <>
