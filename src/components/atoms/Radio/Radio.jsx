@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import Title from "base/Typography";
 import { DisabledContext } from "States";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
 import Grid from "layout/Grid";
@@ -46,7 +45,7 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
   }};
   width: 1.1rem;
   height: 1.1rem;
-  margin-top: 0.15em;
+  // margin-top: 0.15em;
   border-radius: 100%;
   cursor: pointer;
   -webkit-appearance: none;
@@ -66,10 +65,10 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
   }
 `;
 
-const RadioLabel = styled(Title)`
+const RadioLabel = styled.label`
   grid-area: label;
-  padding-top: 1px;
   color: inherit;
+  line-height: 1rem;
   user-select: none;
   cursor: pointer;
 `;
@@ -129,7 +128,7 @@ function Radio({
         tabIndex={tabIndex}
         value={value}
       />
-      <RadioLabel size="small" text={label} />
+      <RadioLabel htmlFor={id}>{label}</RadioLabel>
     </RadioContainer>
   );
 }

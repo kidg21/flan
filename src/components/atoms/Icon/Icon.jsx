@@ -197,7 +197,7 @@ function Icon({
       break;
   }
 
-  // if (onClick) color = "info";
+  if (onClick) color = "primary";
 
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) color = "disabled";

@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { DisabledContext } from "States";
 import Icon from "atoms/Icon";
-import Title from "base/Typography";
 
 const CommandContainer = styled.a`
   display: grid;
@@ -43,7 +42,7 @@ const CommandContainer = styled.a`
   }
 `;
 
-const CommandName = styled(Title)`
+const CommandName = styled.label`
   grid-area: name;
   font-size: inherit;
   color: inherit;
@@ -164,7 +163,7 @@ function Command({
       onClick={onClick}
     >
       {icon ? <CommandIcon icon={icon} /> : null}
-      <CommandName text={label} weight="normal" />
+      <CommandName >{label}</CommandName>
     </CommandContainer>
   );
 }

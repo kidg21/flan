@@ -1,7 +1,6 @@
 import React, { useState, useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import Title from "base/Typography";
 import { DisabledContext } from "States";
 
 const SwitchContainer = styled.div`
@@ -36,7 +35,7 @@ const SwitchContainer = styled.div`
 
 const StyledSwitch = styled.div`
   grid-area: input;
-  width: 2.55rem;
+  width: 2.35rem;
   height: 1.2rem;
   border: 1px solid;
   border-color: ${(props) => {
@@ -70,7 +69,7 @@ const Circle = styled.div`
   z-index: 1;
   transition: transform 300ms ease-in-out;
   transform: ${(props) => {
-    return props.checked ? "translateX(120%)" : "translateX(2.5%)";
+    return props.checked ? "translateX(120%)" : "translateX(1%)";
   }};
   &[disabled],
   &[readonly] {
@@ -80,9 +79,8 @@ const Circle = styled.div`
   }
 `;
 
-const SwitchLabel = styled(Title)`
+const SwitchLabel = styled.label`
   grid-area: label;
-  padding-top: 1.5px;
   color: ${(props) => {
     return props.disabled ? props.theme.text.disabled : "inherit";
   }};
@@ -154,7 +152,9 @@ function Switch({
         <Circle checked={isChecked} borderColor={borderColor} />
       </StyledSwitch>
       {label ? (
-        <SwitchLabel size="small" onChange={onChange} disabled={isDisabled} text={label} />
+        <SwitchLabel htmlFor={id} onChange={onChange} disabled={isDisabled}>
+          {label}
+        </SwitchLabel>
       ) : null}
     </SwitchContainer>
   );

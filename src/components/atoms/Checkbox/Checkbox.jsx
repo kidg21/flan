@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import Title from "base/Typography";
 import { DisabledContext } from "States";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
 import Grid from "layout/Grid";
@@ -64,11 +63,10 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   }
 `;
 
-const CheckboxLabel = styled(Title)`
+const CheckboxLabel = styled.label`
   grid-area: label;
-  line-height: 1;
-  margin: 0;
-  padding-top: 1px;
+  font-weight: 600;
+  line-height: 1rem;
   color: inherit;
   user-select: none;
   cursor: pointer;
@@ -132,7 +130,7 @@ function Checkbox({
         outlineColor={outlineColor}
         tabIndex={tabIndex}
       />
-      <CheckboxLabel size="small" text={label}/>
+      <CheckboxLabel htmlFor={id}>{label}</CheckboxLabel>
     </CheckboxContainer>
   );
 }

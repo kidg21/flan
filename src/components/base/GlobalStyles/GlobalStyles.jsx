@@ -193,8 +193,8 @@ const GlobalStyles = createGlobalStyle`
 /* Labels */
     label {
       font-family: ${fonts.data};
-      font-size: 0.85em;
-      letter-spacing: 1px;
+      font-size: 0.875rem;
+      font-weight: 600;
       &:empty {
         &:before {
           ${Skeleton};
