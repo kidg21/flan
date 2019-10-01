@@ -135,7 +135,7 @@ const ModalBG = styled.div`
   bottom: 0px;
   top: 0px;
   left: 0px;
-  background-color: hsla(34, 5%, 12%, 0.8);
+  background-color: ${(props) => { return props.backgroundColor; }};
   -webkit-tap-highlight-color: transparent;
   touch-action: none;
   animation-name: ${(props) => {
@@ -163,6 +163,7 @@ function Modal({
   visible,
   slideDuration,
   fadeDuration,
+  backgroundColor,
   scale,
   text,
   image,
@@ -170,6 +171,7 @@ function Modal({
   ariaDescribedby,
   children,
   style,
+  containerStyle,
 }) {
   let modalContent;
   let justifyContent;
@@ -246,8 +248,14 @@ function Modal({
       aria-describedby={ariaDescribedby}
       justifyContent={justifyContent}
       pointerEvents={pointerEvents}
+      style={containerStyle}
     >
-      <ModalBG onClick={onClose} action={action} fadeDuration={fadeDuration} />
+      <ModalBG
+        onClick={onClose}
+        action={action}
+        fadeDuration={fadeDuration}
+        backgroundColor={backgroundColor}
+      />
       {modalContent}
     </ModalContainer>
   );
@@ -263,6 +271,7 @@ Modal.propTypes = {
   image: PropTypes.string,
   onClose: PropTypes.func,
   onClick: PropTypes.func,
+  backgroundColor: PropTypes.string,
   // onDisplayComplete: PropTypes.func,
   // action: PropTypes.oneOf(["open", "close"]),
   visible: PropTypes.bool,
@@ -270,6 +279,7 @@ Modal.propTypes = {
   fadeDuration: PropTypes.number,
   scale: PropTypes.oneOf(["scaleUp", "scaleDown"]),
   style: PropTypes.object,
+  containerStyle: PropTypes.object,
   text: PropTypes.string,
 };
 
@@ -282,10 +292,12 @@ Modal.defaultProps = {
   image: null,
   onClose: null,
   onClick: null,
+  backgroundColor: "hsla(34, 5%, 12%, 0.8)",
   visible: false,
   slideDuration: 0.6,
   fadeDuration: 0.6,
   scale: null,
   style: null,
+  containerStyle: null,
   text: null,
 };

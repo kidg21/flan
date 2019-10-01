@@ -43,14 +43,34 @@ const Item = styled.li`
   }
 `;
 
+const MenuBG = styled.div`
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: none;
+`;
+
 function Menu({
-  id, data, type, object, position,
+  id, data, type, object, position, visible, onClick,
 }) {
   let badgeLeft = "100%";
   let badgeBottom = "100%";
   let badgeTransform;
   let icon = object;
-  const [visibility, setVisibility] = useState(false);
+
+  let visibility = visible;
+  let setVisibility = onClick;
+  if (!setVisibility) {
+    [visibility, setVisibility] = useState(visible);
+  }
+
+  function toggleVisibility() {
+    setVisibility(!visibility);
+  }
+
   switch (type) {
     case "edit":
       icon = <Icon icon="options" size="lg" />;
@@ -91,31 +111,32 @@ function Menu({
       break;
   }
   return (
-    <Container
-      id={id}
-      onClick={() => {
-        setVisibility(!visibility);
-      }}
-    >
-      {icon}
-      {visibility ? (
-        <Card>
-          <EditMenu
-            badgeTransform={badgeTransform}
-            badgeLeft={badgeLeft}
-            badgeBottom={badgeBottom}
-          >
-            {data.map((item) => {
-              return (
-                <Item key={item.id} onClick={item.onClickLink}>
-                  <Title text={item.name} weight="normal" />
-                </Item>
-              );
-            })}
-          </EditMenu>
-        </Card>
-      ) : null}
-    </Container>
+    <React.Fragment>
+      {visibility ? <MenuBG onClick={toggleVisibility} /> : null}
+      <Container
+        id={id}
+        onClick={toggleVisibility}
+      >
+        {icon}
+        {visibility ? (
+          <Card>
+            <EditMenu
+              badgeTransform={badgeTransform}
+              badgeLeft={badgeLeft}
+              badgeBottom={badgeBottom}
+            >
+              {data.map((item) => {
+                return (
+                  <Item key={item.id} onClick={item.onClickLink}>
+                    <Title text={item.name} weight="normal" />
+                  </Item>
+                );
+              })}
+            </EditMenu>
+          </Card>
+        ) : null}
+      </Container>
+    </React.Fragment>
   );
 }
 
@@ -123,6 +144,8 @@ Menu.propTypes = {
   id: PropTypes.string,
   object: PropTypes.node,
   type: PropTypes.string,
+  visible: PropTypes.bool,
+  onClick: PropTypes.func,
   data: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
     name: PropTypes.string,
@@ -143,6 +166,8 @@ Menu.defaultProps = {
   id: null,
   object: null,
   type: "edit",
+  visible: false,
+  onClick: null,
   position: "default",
 };
 

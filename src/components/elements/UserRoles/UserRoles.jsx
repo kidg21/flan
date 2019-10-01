@@ -95,6 +95,8 @@ const userTypes = [
 ];
 
 const UserRoles = React.forwardRef(({
+  style,
+  panelStyle,
   users,
   roles,
   commands,
@@ -147,12 +149,12 @@ const UserRoles = React.forwardRef(({
 
   const childElements = (!children || children instanceof Array) ? children : [children];
   return (
-    <Panel>
+    <Panel style={style}>
       <MainPanelHeader title={title} menuData={commands} />
-      <PanelSection body>
+      <PanelSection body style={panelStyle}>
         {right ? <Bar right={right} /> : null}
         <Bar
-          left={<Search placeholder="Search for a User" onChange={filterUserName} />}
+          left={<Search placeholder="Search for a User" onChange={filterUserName} inputStyle={{ boxSizing: "border-box" }} />}
           leftWidth={searchWidth}
           center={
             <SelectMenu
@@ -201,6 +203,8 @@ const UserRoles = React.forwardRef(({
 });
 
 UserRoles.propTypes = {
+  style: PropTypes.object,
+  panelStyle: PropTypes.object,
   users: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string,
     enabled: PropTypes.bool,
@@ -237,6 +241,8 @@ UserRoles.propTypes = {
 };
 
 UserRoles.defaultProps = {
+  style: null,
+  panelStyle: null,
   users: null,
   roles: null,
   commands: null,

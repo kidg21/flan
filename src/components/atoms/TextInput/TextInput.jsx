@@ -49,6 +49,7 @@ function TextInput({
   disabled,
   children,
   style,
+  inputStyle,
   onChange,
 }) {
   let as;
@@ -121,6 +122,7 @@ function TextInput({
         placeholderColor={placeholderColor}
         inputCaretColor={inputCaretColor}
         inputSelectColor={inputSelectColor}
+        style={inputStyle}
         onChange={onChange}
       />
       {helpText ? <HelpText helpText={helpText} /> : null}
@@ -141,7 +143,8 @@ TextInput.propTypes = {
   helpText: PropTypes.string,
   errorText: PropTypes.string,
   state: PropTypes.string,
-  style: PropTypes.string,
+  style: PropTypes.object,
+  inputStyle: PropTypes.object,
   disabled: PropTypes.bool,
   children: PropTypes.node,
   onChange: PropTypes.func,
@@ -159,6 +162,7 @@ TextInput.defaultProps = {
   errorText: null,
   state: null,
   style: null,
+  inputStyle: null,
   disabled: null,
   children: null,
   onChange: null,

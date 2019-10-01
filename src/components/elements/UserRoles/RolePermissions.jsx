@@ -92,7 +92,7 @@ function RoleEntry({
   }
 
   function onChangeVisible(open) {
-    onChange({ ...role, open});
+    onChange({ ...role, open });
   }
 
   function addRolePermission() {
@@ -141,6 +141,8 @@ RoleEntry.defaultProps = {
 };
 
 const RolePermissions = React.forwardRef(({
+  style,
+  panelStyle,
   roles,
   commands,
   listHeight,
@@ -159,9 +161,14 @@ const RolePermissions = React.forwardRef(({
 
   function onRoleChange(role) {
     let currRoles = null;
+    let isChange = true;
     if (role.folders) {
       currRoles = activeRoles.map((rolePermissions) => {
-        return role.role === rolePermissions.role ? role : rolePermissions;
+        if (role.role === rolePermissions.role) {
+          if (role.open !== rolePermissions.open) isChange = false;
+          return role;
+        }
+        return rolePermissions;
       });
     } else {
       currRoles = activeRoles.filter((rolePermissions) => {
@@ -169,7 +176,7 @@ const RolePermissions = React.forwardRef(({
       });
     }
 
-    setRoles(currRoles);
+    setRoles(currRoles, isChange);
   }
 
   function onSearch(e) {
@@ -178,11 +185,11 @@ const RolePermissions = React.forwardRef(({
 
   const childElements = (!children || children instanceof Array) ? children : [children];
   return (
-    <Panel>
+    <Panel style={style}>
       <MainPanelHeader title={title} menuData={commands} />
-      <PanelSection body>
+      <PanelSection body style={panelStyle}>
         <Bar
-          left={<Search placeholder="Search for a Role" onChange={onSearch} />}
+          left={<Search placeholder="Search for a Role" onChange={onSearch} inputStyle={{ boxSizing: "border-box " }} />}
           right={right}
         />
         <Container height={listHeight} ref={ref} >
@@ -212,6 +219,8 @@ const RolePermissions = React.forwardRef(({
 });
 
 RolePermissions.propTypes = {
+  style: PropTypes.object,
+  panelStyle: PropTypes.object,
   roles: PropTypes.arrayOf(PropTypes.shape({
     role: PropTypes.string,
     name: PropTypes.string,
@@ -242,6 +251,8 @@ RolePermissions.propTypes = {
 };
 
 RolePermissions.defaultProps = {
+  style: null,
+  panelStyle: null,
   roles: null,
   commands: null,
   listHeight: "250px",
