@@ -163,7 +163,7 @@ function Command({
       onClick={onClick}
     >
       {icon ? <CommandIcon icon={icon} /> : null}
-      <CommandName >{label}</CommandName>
+      <CommandName>{label}</CommandName>
     </CommandContainer>
   );
 }
@@ -179,9 +179,9 @@ Command.propTypes = {
   label: PropTypes.string,
 };
 
-// Command.defaultProps = {
-//   label: "Command",
-//   icon: null,
-// };
+Command.defaultProps = {
+  label: "Command",
+  icon: null,
+};
 
 export { Command as default };

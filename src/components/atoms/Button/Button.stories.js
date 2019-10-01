@@ -6,7 +6,6 @@ import Grid from "layout/Grid";
 import { withInfo } from "@storybook/addon-info";
 import { withKnobs, text, boolean, select, optionsKnob as options } from "@storybook/addon-knobs";
 import Button from "atoms/Button";
-import Panel from "layout/Panel";
 import ButtonNotes from "./Button.md";
 
 // Button
@@ -90,20 +89,11 @@ storiesOf("Atoms|Button", module)
   })
   .add("The Button Family", () => {
     return (
-      <Panel>
         <Grid>
           <Button label="Standard Primary" />
           <Button label="Solid Primary" type="solid" />
           <Button label="Standard Secondary" color="secondary" />
           <Button label="Solid Secondary" type="solid" color="secondary" />
-
-          {/* <Button label="Warning Button" color="warning" />
-          <Button label="Solid Warning Button" type="solid" color="warning" />
-          <Button label="Alert Button" color="alert" />
-          <Button label="Solid Alert Button" type="solid" color="alert" />
-          <Button label="Success Button" color="success" />
-          <Button label="Solid Success Button" type="solid" color="success" />
-          <Button label="Info Button" color="info" /> */}
           <Button label="Solid Info Button" type="solid" />
           <Button icon="filter" label="Fitlers" color="primary" />
 
@@ -112,6 +102,5 @@ storiesOf("Atoms|Button", module)
           <Button label="Disabled Button" disabled />
           <Button label="Icon Button" icon="user"  type="solid" />
         </Grid>
-      </Panel>
     );
   });

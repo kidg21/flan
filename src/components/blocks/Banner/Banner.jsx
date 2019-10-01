@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import Icon from "atoms/Icon";
-import Title, { Description } from "base/Typography";
+import Title, { Description, Link } from "base/Typography";
 
 const StyledBanner = styled.div`
   display: flex;
@@ -11,7 +11,7 @@ const StyledBanner = styled.div`
   position: relative;
   background-color: ${props =>
     props.theme.background.default};
-  color: ${props => (props.theme.palette[props.inverse] ? "" : props.theme.palette.white)};
+  color: ${props => (props.theme.palette[props.inverse] ? "" : props.theme.text.primary)};
   border: 1px solid;
   border-color: ${props => props.theme.palette[props.borderColor] || props.theme.palette.grey5 };
   border-radius: 5px;
@@ -45,18 +45,7 @@ const Message = styled.section`
   }
 `;
 
-const Link = styled.h4`
-  color: inherit;
-  width: max-content;
-  margin: 0;
-  padding-top: 0.5em;
-  opacity: 0.7;
-  cursor: pointer;
-  &:hover {
-    opacity: 1;
-    text-decoration: underline;
-  }
-`;
+
 
 const Close = styled.section`
   position: absolute;
@@ -87,7 +76,7 @@ function Banner({
     case "media":
       bannerType = icon ? (
         <StatusBadge>
-          <Icon icon={icon} size="2x" fixedWidth />
+          <Icon icon={icon} size="2x" fixedWidth/>
         </StatusBadge>
       ) : img ? (
         <BannerImage src={img} />
@@ -150,8 +139,8 @@ function Banner({
         {description ? <Description text={description} /> : null}
         {link ? <Link onClick={onClick}>{link}</Link> : null}
       </Message>
-      <Close onClick={onClose}>
-        <Icon icon="close" />
+      <Close >
+        <Icon icon="close" onClick={onClose}/>
       </Close>
     </StyledBanner>
   );

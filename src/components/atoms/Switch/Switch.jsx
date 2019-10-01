@@ -23,7 +23,6 @@ const SwitchContainer = styled.div`
   border-color: ${(props) => {
     return props.theme.palette[props.borderColor] || props.theme.text.secondary;
   }};
-  align-items: bottom;
   width: max-content;
   &[disabled],
   &[readonly] {
