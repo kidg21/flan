@@ -82,7 +82,7 @@ const iconHash = {
   chat: ["far", "comment-alt"],
   check_solid: "check",
   check: ["far", "check"],
-  check_circle: "check-circle",
+  check_circle: ["far", "check-circle"],
   circle_solid: "circle",
   circle: ["far", "circle"],
   clone: ["far", "clone"],

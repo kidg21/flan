@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 const placeholder = {
   desc: "Short description of meaning and usage.",
 };
