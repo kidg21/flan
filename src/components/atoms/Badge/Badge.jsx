@@ -123,4 +123,9 @@ Badge.propTypes = {
   style: PropTypes.string,
 };
 
+Badge.defaultProps = {
+  label: null,
+  id: null,
+};
+
 export { Badge as default };
