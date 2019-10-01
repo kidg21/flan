@@ -74,11 +74,6 @@ function Badge({ id, label, icon, type, position, style }) {
       badgeLeft = "0";
       setTransform = "translate(-10%, 50%)";
       break;
-    case "topRight":
-      badgeBottom = "100%";
-      badgeLeft = "100%";
-      setTransform = "translate(-90%, 50%)";
-      break;
     case "bottomRight":
       badgeBottom = "0";
       badgeLeft = "100%";
@@ -87,7 +82,7 @@ function Badge({ id, label, icon, type, position, style }) {
     case "bottomLeft":
       badgeBottom = "0";
       badgeLeft = "0";
-      badgeTransform = "translate(-10%, 50%)";
+      setTransform = "translate(-10%, 50%)";
       break;
     default:
     case "topRight":
@@ -126,6 +121,11 @@ Badge.propTypes = {
     "bottomLeft",
   ]),
   style: PropTypes.string,
+};
+
+Badge.defaultProps = {
+  label: null,
+  id: null,
 };
 
 export { Badge as default };

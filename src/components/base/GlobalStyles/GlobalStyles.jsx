@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import styledNormalize from "styled-normalize";
 import { Skeleton } from "helpers";
 // Import variables
-import { colors, fonts, fontSize } from "Variables";
+import { colors, fonts, fontSize, Lighten, Darken } from "Variables";
 // Import Fonts
 import "css/fonts.css";
 // Import Icons
@@ -64,8 +64,11 @@ const GlobalStyles = createGlobalStyle`
     /* Default Link Styles */
     a {
       color: ${colors.anchor};
+      width: fit-content;
       line-height: inherit;
       text-decoration: none;
+      padding: .5em;
+      margin: -.5em;
       cursor: pointer;
       &:empty {
         &:before {
@@ -76,7 +79,10 @@ const GlobalStyles = createGlobalStyle`
       }
       &:hover,
       &:focus {
-        color: ${colors.anchor_light};
+        ${Darken};
+      }
+      &:active {
+        ${Lighten};
       }
       img { border: none; }
       }
@@ -85,6 +91,7 @@ const GlobalStyles = createGlobalStyle`
     h1, h2, h3, h4, h5, h6, p {
         font-style: normal;
         color: inherit;
+        width: fit-content;
     }
     p {
         font-family: inherit;
@@ -167,14 +174,9 @@ const GlobalStyles = createGlobalStyle`
     }
     code {
         font-family: ${fonts.data};
-        font-size: 12px;
         font-size: 0.85rem;
         line-height: 1rem;
         letter-spacing: 1px;
-        background-color: ${colors.grey_20};
-        margin: 0 .1rem;
-        padding: 0.125rem 0.3125rem 0.0625rem;
-        border: 1px solid ${colors.grey_60};
         font-weight: normal;
         color: inherit;
     }
@@ -201,6 +203,7 @@ const GlobalStyles = createGlobalStyle`
       font-family: ${fonts.data};
       font-size: 0.85em;
       letter-spacing: 1px;
+      width: fit-content;
       &:empty {
         &:before {
           ${Skeleton};

@@ -2,7 +2,9 @@ import React from "react";
 import Title, { Description } from "base/Typography";
 import Bar from "blocks/Bar";
 import { Piece } from "layout/Card";
+import Grid from "layout/Grid";
 import Icon from "atoms/Icon";
+import Command from "atoms/Command";
 
 const centerStyles = {
   display: "flex",
@@ -53,4 +55,13 @@ function IconGrid({ data }) {
   ));
 }
 
-export { Center, Padding, IconGrid };
+function CommandGrid({ data }) {
+  return data.map(item => (
+    <Grid gap="tiny">
+      <Command command={item.command} />
+      <Description text={item.desc} />
+    </Grid>
+  ));
+}
+
+export { Center, Padding, IconGrid, CommandGrid };

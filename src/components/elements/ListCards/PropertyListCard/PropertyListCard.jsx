@@ -27,7 +27,7 @@ function PropertyListCard({
   return (
     <Card id={id}>
       <PropertyPanelHeader title={address} APN={APN} />
-      <Bar left={<Command name="add to list" size="small" />} />
+      <Bar left={<Command icon="plus" label="Add To List" />} />
       <Piece>
         <Wrapper>
           <Title text="Lot" size="normal" />
