@@ -1,4 +1,5 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable listitembreak-style */
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -6,11 +7,16 @@ import PropTypes from "prop-types";
 const Block = styled.div`
   display: grid;
   grid-template-columns: ${(props) => {
-    return props.gridColumns || "auto 1fr";
+    return props.gridColumns || "1fr 6fr";
   }};
-  padding: 1rem;
+  padding: ${(props) => {
+    return props.blockPadding || "1rem";
+  }};
   grid-template-areas: ${(props) => {
     return props.gridTemplate || "'content body' '. body'";
+  }};
+  align-items: ${(props) => {
+    return props.alignItems || "";
   }};
 `;
 
@@ -23,59 +29,149 @@ const Media = styled.section`
   padding: ${(props) => {
     return props.mediaPadding || "";
   }};
-  > * {
-    max-width: 100%;
-    height: 100%;
-  }
 `;
 
 const Body = styled.section`
   grid-area: body;
   padding: ${(props) => {
-    return props.bodyPadding || "0.5rem 1rem 0.5rem 1.5rem";
+    return props.bodyPadding || "0 0 0 1.5rem";
   }};
+  overflow: hidden;
+  > * {
+    white-space: normal;
+    display: ${(props) => {
+    return props.listitem ? "none" : "";
+  }};
+    &:first-child {
+      display: ${(props) => {
+    return props.listitem ? "block" : "";
+  }};
+      white-space: ${(props) => {
+    return props.listitem ? "nowrap" : "";
+  }};
+      overflow: ${(props) => {
+    return props.listitem ? "hidden" : "";
+  }};
+      text-overflow: ${(props) => {
+    return props.listitem ? "ellipsis" : "";
+  }};
+  margin-bottom: ${(props) => {
+    return props.listitem ? "0" : "";
+  }};
+    }
+    &:only-child {
+      margin-bottom: 0;
+    }
+  }
+  ${Block} {
+    padding: 1rem 0 0;
+  }
 `;
 
 function MediaBlock({
-  body, className, id, media, layout,
+  align, body, children, className, id, listitem, media, onClick, reverse,
 }) {
   let gridTemplate;
   let gridColumns;
+  let blockPadding;
   let mediaPadding;
   let justifyMedia;
   let bodyPadding;
-  switch (layout && layout.toLowerCase()) {
-    case "flip":
-      gridTemplate = "'body content' 'body .'";
-      gridColumns = " 1fr auto";
-      bodyPadding = "0.5rem 1.5rem 0.5rem 1rem ";
-      justifyMedia = "flex-end";
+  let alignItems;
+  switch (align && align.toLowerCase()) {
+    case "center":
+      alignItems = "center";
       break;
     case "vertical":
       gridTemplate = "'content content' 'body body'";
-      bodyPadding = "1rem 0 0.5rem";
+      gridColumns = "1fr";
+      bodyPadding = "1rem 0.25rem 0.5rem";
       break;
     default:
       break;
   }
+  // reset grid if no media element is present
+  if (!media) {
+    gridColumns = "1fr";
+    bodyPadding = "0";
+  }
+  // flips media and body sections along the x-axis
+  if (reverse) {
+    gridTemplate = "'body content' 'body .'";
+    gridColumns = "6fr 1fr";
+    bodyPadding = "0 1.5rem 0 0";
+    justifyMedia = "flex-end";
+  }
+  // Single-line media block
+  if (listitem) {
+    alignItems = "center";
+    gridColumns = "3rem 1fr";
+    blockPadding = "1px 0 1px 1px";
+  }
+  // Single-line - flipped
+  if (listitem && reverse) {
+    alignItems = "center";
+    gridColumns = "1fr 3rem";
+    blockPadding = "1px 1px 1px 1rem";
+  }
 
   return (
-    <Block id={id} className={className} gridTemplate={gridTemplate} gridColumns={gridColumns}>
+    <Block
+      alignItems={alignItems}
+      blockPadding={blockPadding}
+      className={className}
+      gridColumns={gridColumns}
+      gridTemplate={gridTemplate}
+      id={id}
+      onClick={onClick}
+      reverse={reverse}
+    >
       {media ? (
         <Media mediaPadding={mediaPadding} justifyMedia={justifyMedia}>
           {media}
         </Media>
       ) : null}
-      {body ? <Body bodyPadding={bodyPadding}>{body}</Body> : null}
+      {body ? (
+        <Body bodyPadding={bodyPadding} listitem={listitem}>
+          {body}
+          {children}
+        </Body>
+      ) : null}
     </Block>
   );
 }
 
 MediaBlock.propTypes = {
-  id: PropTypes.string,
-  children: PropTypes.any.isRequired,
+  /** Sets the vertical alignment of all content
+   * Default: 'top'
+   */
+  align: PropTypes.oneOf(["center", "vertical"]),
+  /** Used to define the content in the 'body' section */
+  body: PropTypes.node,
+  /** Meant for use in nesting Media Blocks */
+  children: PropTypes.node,
   /** className used for extending styles */
   className: PropTypes.string,
+  id: PropTypes.string,
+  /** Limits the body section to a single line of text */
+  listitem: PropTypes.bool,
+  /** Used to define the content in the 'media' section */
+  media: PropTypes.node,
+  /** Used to 'flip' the Media and Body elements along the x-axis */
+  onClick: PropTypes.func,
+  reverse: PropTypes.bool,
+};
+
+MediaBlock.defaultProps = {
+  align: null,
+  body: null,
+  children: null,
+  className: null,
+  id: null,
+  listitem: false,
+  media: null,
+  onClick: null,
+  reverse: false,
 };
 
 export { MediaBlock as default };
