@@ -11,7 +11,7 @@ const CardPiece = styled.div`
   flex: none;
   padding: ${props => props.padding || ""};
   width: 100%;
-  z-index: ${props => props.header ? 1 : ""};
+  z-index: ${props => (props.header ? 1 : "")};
   /** TODO: add 'background' and 'interaction' props */
   /* color: ${props => props.textColor || ""}; */
   /* background-color: ${props => props.backgroundColor || ""}; */

@@ -1,10 +1,9 @@
-/* eslint-disable react/jsx-filename-extension */
-import React, { useState } from "react";
+import React from "react";
 import { storiesOf } from "@storybook/react";
 import styled from "styled-components";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
-import Dialog, { Alert, Prompt, Confirm } from "elements/DialogueBox";
+import DialogueBox from "elements/DialogueBox";
 import Title from "base/Typography";
 import Bar from "blocks/Bar";
 import SelectMenu from "atoms/SelectMenu";
@@ -15,6 +14,7 @@ import Icon from "atoms/Icon";
 import { Section } from "layout/Form";
 import DMPlogo from "images/DMPlogo.jpg";
 import Container from "atoms/Container";
+import Command from "atoms/Command";
 
 const image = {
   src: DMPlogo,
@@ -29,53 +29,64 @@ const Logo = styled.img`
 storiesOf("Elements|Dialogue Box", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  .add("General/Default", () => {
-    return (
-      <Confirm
-        title="Hey are you sure your okay doing this?"
-        message="This is the body of your message. Tells you more about the action you are about to commit."
-        accept={{ label: "Create" }}
-      />
-    );
+  .addParameters({
+    info: {
+      text:
+        "Dialogue Boxes are used to convey a message between the server/computer and the user. A dialogue box either has one absolute action (button) or two button options; typically an affirmative and dissenting option. If two buttons are selected then they are located on the bottom left corner as to be readily accessbile to the user. The primary button is always solid, the second is outlined. Both buttons must be the same color family. If one button is selected the button is center in the middle of the dialogue box. ",
+    },
   })
-  .add("General/Alert", () => {
-    return (
-      <Alert
-        title="Something unexpected happened!"
-        message="Just letting you know!"
-      />
-    );
-  })
-  .add("General/Login", () => {
-    return (
-      <Dialog
-        header={<Bar left={<Logo src={image.src} alt={image.alt} />} />}
-        title="Welcome"
-        buttons={{ label: "Login" }}
-      >
+  .add(
+    "Documentation",
+    withInfo()(() => {
+      return (<DialogueBox
+      title="Dialogue Box Title"
+      message="Dialogue Box Message"
+      action="two"
+      primaryLabel="Affirm"
+      secondaryLabel="Negative"
+      />);
+    }),
+  );
+
+  storiesOf("Elements|Dialogue Box/General", module)
+  .addDecorator(Padding)
+  .addDecorator(withInfo)
+  .add("Default", () => (
+    <DialogueBox
+      title="Hey are you sure your okay doing this?"
+      message="This is the body of your message. Tells you more about the action you are about to commit."
+      action="two"
+      primaryLabel="Create"
+      secondaryLabel="Cancel"
+    />
+  ))
+  .add("Login", () => (
+    <DialogueBox
+      header={<Bar left={<Logo src={image.src} alt={image.alt} />} />}
+      title="Welcome"
+      content={
         <Section>
-          <TextInput inputLabel="Username" placeholder="Username" />
-          <TextInput inputLabel="Password" placeholder="Password" />
+          <TextInput label="Username" placeholder="Username" />
+          <TextInput label="Password" placeholder="Password" />
           <Bar
             center={
               <Title text="Forget Password?" size="tiny" weight="light" />
             }
           />
         </Section>
-      </Dialog>
-    );
-  })
-  .add("General/Save Box", () => {
-    return (
-      <Prompt
-        title="Save As"
-        accept={{ label: "Save" }}
-        cancel={{ label: "Cancel" }}
-      >
+      }
+      action="one"
+      primaryLabel="Login"
+    />
+  ))
+  .add("Save As", () => (
+    <DialogueBox
+      title="Save As"
+      content={
         <Section>
-          <TextInput inputLabel="Name" placeholder="Type Name" />
+          <TextInput label="Name" placeholder="Type Name" />
           <SelectMenu
-            inputLabel="Location"
+            label="Location"
             options={[
               { value: "1", label: "my folder" },
               { value: "2", label: "our folder" },
@@ -84,47 +95,53 @@ storiesOf("Elements|Dialogue Box", module)
             ]}
           />
           <SelectMenu
-            inputLabel="File Type"
+            label="File Type"
             options={[
               { value: "jpg", label: ".jpg" },
               { value: "png", label: ".png" },
             ]}
-          />{" "}
+          />
         </Section>
-      </Prompt>
-    );
-  })
-  .add("General/Delete", () => {
-    return (
-      <Confirm
-        title="Are you sure you want to delete this user?"
-        message="If you delete this user you will not be able to get back any information or work they have done. Their work will be lost forever."
-        buttonColor="alert"
-        accept={{ label: "Delete" }}
-      />
-    );
-  })
-  .add("General/Success", () => {
-    return (
-      <Confirm
-        title="View your report?"
-        message="Your report successfully downloaded. Do you want to check out the deets."
-        buttonColor="success"
-        accept={{ label: "View " }}
-      />
-    );
-  })
-  .add("Role/Edit User List", () => {
-    return (
-      <Dialog
-        title="Edit User List for Role"
-        buttons={[{ label: "Edit" }, { label: "Cancel" }]}
-      >
+      }
+      action="two"
+      primaryLabel="Save"
+      secondaryLabel="Cancel"
+    />
+  ))
+  .add("Delete", () => (
+    <DialogueBox
+      title="Are you sure you want to delete this user?"
+      message="If you delete this user you will not be able to get back any information or work they have done. Their work will be lost forever."
+      action="two"
+      primaryLabel="Delete"
+      secondaryLabel="Cancel"
+      buttonColor="alert"
+    />
+  ))
+  .add("Success", () => (
+    <DialogueBox
+      title="View your report?"
+      message="Your report successfully downloaded. Do you want to check out the deets."
+      action="two"
+      primaryLabel="View"
+      secondaryLabel="Cancel"
+      buttonColor="success"
+    />
+  ));
+
+
+  storiesOf("Elements|Dialogue Box/User Roles", module)
+  .addDecorator(Padding)
+  .addDecorator(withInfo)
+  .add("Edit User List", () => (
+    <DialogueBox
+      title="Edit User List for Role"
+      content={
         <Section>
           <Title text="Role: Developer" type="info" />
           <SelectMenu
-            multiSelect
-            inputLabel="+ Add Users"
+            multiSelect="true"
+            label="+ Add Users"
             options={[
               { value: "1", label: "Adam" },
               { value: "2", label: "Oliver" },
@@ -155,20 +172,21 @@ storiesOf("Elements|Dialogue Box", module)
             </Container>
           </Piece>
         </Section>
-      </Dialog>
-    );
-  })
-  .add("Role/Edit Files", () => {
-    return (
-      <Dialog
-        title="Edit Files Role"
-        buttons={[{ label: "Add" }, { label: "Cancel" }]}
-      >
+      }
+      action="two"
+      primaryLabel="Edit"
+      secondaryLabel="Cancel"
+    />
+  ))
+  .add("Edit Files", () => (
+    <DialogueBox
+      title="Edit Files Role"
+      content={
         <Section>
           <Title text="Role: Developer" type="info" />
           <SelectMenu
-            multiSelect
-            inputLabel="+ Files"
+            multiSelect="true"
+            label="+ Files"
             placeholder="Add Files for Role to access"
             options={[
               { value: "1", label: "Folder 1" },
@@ -185,61 +203,29 @@ storiesOf("Elements|Dialogue Box", module)
             </List>
           </Container>
         </Section>
-      </Dialog>
-    );
-  })
-  .add("Role/Add Permission", () => {
-    return React.createElement(() => {
-      const [folders, setFolders] = useState([
-        { value: "bde811.groups.Developer", label: "Developer" },
-        { value: "bde811.groups.Marketing", label: "Marketing" },
-        { value: "bde811.groups.Acquisitions", label: "Acquisitions" },
-      ]);
-
-      function createFolder(folderName, setState) {
-        const newFolder = { label: folderName, value: `bde811.groups.${folderName}` };
-        setFolders([...folders, newFolder]);
-        setState({ selected: newFolder });
       }
-
-      return (
-        <Dialog
-          title="Add Permission"
-          buttons={[{ label: "Add" }, { label: "Cancel" }]}
-        >
-          <Section>
-            <Title text="Role: Developer" type="info" />
-            <SelectMenu
-              multiSelect
-              inputLabel="+ Folder"
-              placeholder="Select Folder to grant Permission to"
-              options={folders}
-              onCreateOption={createFolder}
-            />
-          </Section>
-        </Dialog>
-      );
-    });
-  })
-  .add("User/Add User", () => {
-    return (
-      <Dialog
-        title="+ Add a New User"
-        buttons={[{ label: "Add" }, { label: "Cancel" }]}
-      >
+      action="two"
+      primaryLabel="Add"
+      secondaryLabel="Cancel"
+    />
+  ))
+  .add("Add User", () => (
+    <DialogueBox
+      title="+ Add a New User"
+      content={
         <Section>
           <TextInput
-            inputLabel="User Name"
+            label="User Name"
             placeholder="Type the name for your new user."
           />
           <TextInput
-            inputLabel="User Account"
+            label="User Account"
             placeholder="Type in User email or account name "
           />
           <SelectMenu
-            multiSelect
+            multiSelect="true"
             placeholder="Select one or many roles for this user."
-            inputLabel="Assign Roles"
+            label="Assign Roles"
             options={[
               { value: "Marketing", label: "Marketing" },
               { value: "Acquisitions", label: "Acquisitions" },
@@ -248,25 +234,26 @@ storiesOf("Elements|Dialogue Box", module)
             ]}
           />
         </Section>
-      </Dialog>
-    );
-  })
-  .add("User/Edit User", () => {
-    return (
-      <Dialog
-        title="Edit User"
-        buttons={[{ label: "Save" }, { label: "Cancel" }]}
-      >
+      }
+      action="two"
+      primaryLabel="Add"
+      secondaryLabel="Cancel"
+    />
+  ))
+  .add("Edit User", () => (
+    <DialogueBox
+      title="Edit User"
+      content={
         <Section>
-          <TextInput inputLabel="User Name" placeholder="Elizabeth Gallagher" />
+          <TextInput label="User Name" placeholder="Elizabeth Gallagher" />
           <TextInput
-            inputLabel="User Account"
+            label="User Account"
             placeholder="egallagher@digmap.com "
           />
           <SelectMenu
-            multiSelect
+            multiSelect="true"
             placeholder="Admin"
-            inputLabel="Roles"
+            label="Roles"
             options={[
               { value: "Marketing", label: "Marketing" },
               { value: "Acquisitions", label: "Acquisitions" },
@@ -274,8 +261,11 @@ storiesOf("Elements|Dialogue Box", module)
               { value: "Admin", label: "Admin" },
             ]}
           />
-          <Title size="tiny" weight="light">Delete User?</Title>
+          <Title text="Delete User?" size="tiny" weight="light" />
         </Section>
-      </Dialog>
-    );
-  });
+      }
+      action="two"
+      primaryLabel="Save"
+      secondaryLabel="Cancel"
+    />
+  ));

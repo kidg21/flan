@@ -20,10 +20,18 @@ function NavigationPanelHeader({
     </Piece>
   );
 }
+
 NavigationPanelHeader.propTypes = {
   id: PropTypes.string,
   title: PropTypes.any.isRequired,
   onClick: PropTypes.func,
   menuData: PropTypes.node,
 };
+
+NavigationPanelHeader.defaultProps = {
+  id: null,
+  onClick: null,
+  menuData: null,
+};
+
 export default NavigationPanelHeader;

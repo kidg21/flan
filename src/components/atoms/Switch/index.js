@@ -1,1 +1,2 @@
-export { default } from "./Switch.jsx"
+/* eslint-disable import/extensions */
+export { default } from "./Switch.jsx";

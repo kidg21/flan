@@ -1,3 +1,4 @@
+/* eslint-disable complexity */
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -18,7 +19,9 @@ const BarLayout = styled.div`
 
 const Slot = styled.div`
   display: flex;
-  flex: auto;
+  flex: ${(props) => {
+    return props.setFlex || "auto";
+  }};
   flex-direction: column;
   align-items: ${(props) => {
     return props.alignItems || "";
@@ -66,7 +69,22 @@ function Bar({
   let alignItems;
   let barPadding;
   let textAlign;
+  let leftPadding;
+  let rightPadding;
+  if (center || right) {
+    leftPadding = "0 1em 0 0";
+  } else {
+    leftPadding = "0";
+  }
+  if (left || center) {
+    rightPadding = "0 0 0 1em";
+  } else {
+    rightPadding = "0";
+  }
   switch (padding && padding.toLowerCase()) {
+    case "none":
+      barPadding = "0";
+      break;
     case "2x":
       barPadding = "1em 1.25em";
       break;
@@ -111,7 +129,7 @@ function Bar({
       className={className}
     >
       {left ? (
-        <Slot widthMin={leftWidth} widthMax={leftWidth} setPadding="0 1em 0 0">
+        <Slot setFlex="1 0 25%" widthMin={leftWidth} widthMax={leftWidth} setPadding={leftPadding}>
           {left}
         </Slot>
       ) : null}
@@ -122,11 +140,12 @@ function Bar({
       ) : null}
       {right ? (
         <Slot
+          setFlex="1 0 25%"
           widthMin={rightWidth}
           widthMax={rightWidth}
           alignItems="flex-end"
           textAlign="right"
-          setPadding="0 0 0 1em"
+          setPadding={rightPadding}
         >
           {right}
         </Slot>
@@ -135,10 +154,10 @@ function Bar({
   );
 
   return typeof disabled === "boolean" ? (
-    <DisabledContext.Provider value={disabled}>
-      {barLayout}
-    </DisabledContext.Provider>
-  ) : barLayout;
+    <DisabledContext.Provider value={disabled}>{barLayout}</DisabledContext.Provider>
+  ) : (
+    barLayout
+  );
 }
 
 Bar.propTypes = {
@@ -160,7 +179,7 @@ Bar.propTypes = {
    */
   centerAlign: PropTypes.oneOf(["left", "right"]),
   /** Sets the padding of the Bar component */
-  padding: PropTypes.oneOf(["2x", "3x"]),
+  padding: PropTypes.oneOf(["none", "1x (default)", "2x", "3x"]),
   /** Used to define the content in the right 'slot' */
   right: PropTypes.node,
   /** Used to override the default flex ratio of the right 'slot' by increasing the setting a 'min-width' and 'max-width'.

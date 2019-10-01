@@ -14,7 +14,16 @@ const StyledNumber = styled.span`
   font-family: ${fonts.numbers};
 `;
 
+const StyledCode = styled.code`
+  background-color: ${colors.grey_light};
+  border: 1px solid ${colors.grey_20};
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.5rem 0.25rem;
+  user-select: all;
+`;
+
 const StyledText = styled.h4`
+  grid-column: 1 / -1;
   font-family: ${(props) => {
     return props.fontFamily || "inherit";
   }};
@@ -42,7 +51,7 @@ const StyledText = styled.h4`
   ${LinkedText},
   ${StyledNumber} {
     display: inline-block;
-    padding: 0 0.25em;
+    margin: -.5em 0;
     /** TODO: Add a 'separator' prop */
     /* &:before,
     &:after {
@@ -110,10 +119,10 @@ function Text({
   }
   switch (size && size.toLowerCase()) {
     case "tiny":
-      as = "h6";
+      as = "label";
       break;
     case "small":
-      as = "h5";
+      as = "h6";
       break;
     case "large":
       as = "h3";
@@ -262,7 +271,7 @@ Title.defaultProps = {
 
 function SubTitle({ text, children, ...textProps }) {
   return (
-    <Text spacing="2" type="light" {...textProps}>
+    <Text spacing="3" size="small" {...textProps}>
       {text || children}
     </Text>
   );
@@ -334,4 +343,8 @@ Number.defaultProps = {
   children: null,
 };
 
-export { Title as default, Headline, SubTitle, Description, Link, Number };
+function Code({ text, children }) {
+  return <StyledCode>{text || children}</StyledCode>;
+}
+
+export { Title as default, Headline, SubTitle, Description, Link, Number, Code };

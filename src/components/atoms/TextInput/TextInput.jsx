@@ -4,33 +4,51 @@ import PropTypes from "prop-types";
 import { colors } from "Variables";
 import { DisabledContext } from "States";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
+import Grid from "layout/Grid";
 
-const TextInputContainer = styled.div`
-  display: grid;
-  grid-gap: 0.35rem;
-  align-content: flex-start;
-  color: ${(props) => { return props.inputTextColor || ""; }};
+const TextInputContainer = styled(Grid)`
+  color: ${(props) => {
+    return props.inputTextColor || "";
+  }};
+  width: 100%;
 `;
 
 const Input = styled.input`
   border: 1px solid;
-  border-color: ${(props) => { return props.inputBorderColor || ""; }};
-  background-color: ${(props) => { return props.inputFillColor || ""; }};
-  caret-color: ${(props) => { return props.inputCaretColor || ""; }};
-  min-height: 2.75rem;
+  border-color: ${(props) => {
+    return props.inputBorderColor || colors.grey_20;
+  }};
+  background-color: ${(props) => {
+    return props.inputFillColor || "";
+  }};
+  caret-color: ${(props) => {
+    return props.inputCaretColor || "";
+  }};
+  width: 100%;
+  min-height: 3.167rem;
   padding: 0.5rem 0.75rem;
-  resize: vertical;
+  resize: ${(props) => {
+    return props.inputResize || "";
+  }};
   ::placeholder {
-    color: ${(props) => { return props.placeholderColor || ""; }};
+    color: ${(props) => {
+    return props.placeholderColor || "";
+  }};
   }
   &:hover {
-    border-color: ${(props) => { return props.inputBorderColorHover || colors.grey_40; }};
+    border-color: ${(props) => {
+    return props.inputBorderColorHover || colors.grey_40;
+  }};
     }
   }
   &:focus {
-    border-color: ${(props) => { return props.inputBorderColorHover || colors.success; }};
+    border-color: ${(props) => {
+    return props.inputBorderColorHover || colors.success;
+  }};
     ::selection {
-      background-color: ${(props) => { return props.inputSelectColor || ""; }};
+      background-color: ${(props) => {
+    return props.inputSelectColor || colors.success;
+  }};
     }
   }
 `;
@@ -40,17 +58,19 @@ function TextInput({
   type,
   pattern,
   value,
-  inputLabel,
+  label,
   isRequired,
   placeholder,
   helpText,
-  errorText,
-  state,
+  error,
   disabled,
   children,
   style,
   inputStyle,
   onChange,
+  autocompleteList,
+  size,
+  className,
 }) {
   let as;
   let inputTextColor;
@@ -58,27 +78,19 @@ function TextInput({
   let inputBorderColor;
   let inputBorderColorHover;
   let inputCaretColor;
+  let inputResize;
   let placeholderColor;
   let inputSelectColor;
+  if (error && !disabled) {
+    inputTextColor = colors.alert;
+    inputBorderColor = colors.alert_light;
+    inputBorderColorHover = colors.alert_light;
+    inputSelectColor = colors.alert;
+  }
   switch (type) {
     case "textarea":
       as = "textarea";
-      break;
-    default:
-      break;
-  }
-
-  let isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  switch (state && state.toLowerCase()) {
-    case "error":
-      inputTextColor = colors.alert;
-      inputFillColor = colors.alert_tint;
-      inputBorderColor = colors.alert_light;
-      inputBorderColorHover = colors.alert;
-      inputCaretColor = colors.alert;
-      placeholderColor = colors.alert_light;
-      inputSelectColor = colors.alert;
-      isDisabled = false;
+      inputResize = "vertical";
       break;
     case "search":
       inputBorderColor = colors.grey_20;
@@ -87,26 +99,34 @@ function TextInput({
       inputSelectColor = colors.anchor;
       break;
     default:
-      inputBorderColor = colors.grey_20;
-      inputSelectColor = colors.success;
       break;
   }
-
-  if (isDisabled) {
-    inputTextColor = colors.grey_40;
-    inputFillColor = colors.grey_20;
-    inputBorderColor = colors.grey_20;
-    placeholderColor = colors.grey_40;
+  // construct datalist element for autocompletes if appropriate props passed in
+  // the autocompleteListId is used to ensure each textinput only draws from its own datalist element
+  let autocompleteDataList = null;
+  let autoCompleteDataListId = null;
+  if (autocompleteList) {
+    autoCompleteDataListId = Dmp.Util.getGuid();
+    const options = autocompleteList.map((item) => {
+      return (
+        <option key={Dmp.Util.getGuid()} value={item}>
+          {item}
+        </option>
+      );
+    });
+    autocompleteDataList = <datalist id={autoCompleteDataListId}>{options}</datalist>;
   }
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
 
   return (
     <TextInputContainer
       inputTextColor={inputTextColor}
-      style={style}
+      gap="small"
+      columns="1"
+      className={className}
+	    style={style}
     >
-      {inputLabel ? (
-        <InputLabel inputLabel={inputLabel} isRequired={isRequired} />
-      ) : null}
+      {label ? <InputLabel isRequired={isRequired} label={label} /> : null}
       <Input
         id={id} // input attribute
         as={as}
@@ -121,51 +141,59 @@ function TextInput({
         inputBorderColorHover={inputBorderColorHover}
         placeholderColor={placeholderColor}
         inputCaretColor={inputCaretColor}
+        inputResize={inputResize}
         inputSelectColor={inputSelectColor}
         style={inputStyle}
         onChange={onChange}
+        list={autoCompleteDataListId}
+        size={size} // overriding this while developing so it's easier to see
       />
-      {helpText ? <HelpText helpText={helpText} /> : null}
-      {errorText ? <ErrorText errorText={errorText} /> : null}
+      {autocompleteDataList}
+      {helpText ? <HelpText>{helpText}</HelpText> : null}
       {children}
+      {typeof error === "string" && !disabled ? <ErrorText>{error}</ErrorText> : null}
     </TextInputContainer>
   );
 }
 
 TextInput.propTypes = {
-  id: PropTypes.string,
-  type: PropTypes.string,
-  pattern: PropTypes.string,
-  value: PropTypes.string,
-  inputLabel: PropTypes.string,
-  isRequired: PropTypes.bool,
-  placeholder: PropTypes.string,
-  helpText: PropTypes.string,
-  errorText: PropTypes.string,
-  state: PropTypes.string,
-  style: PropTypes.object,
-  inputStyle: PropTypes.object,
-  disabled: PropTypes.bool,
+  autocompleteList: PropTypes.arrayOf(PropTypes.string),
   children: PropTypes.node,
+  className: PropTypes.string,
+  disabled: PropTypes.bool,
+  error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  helpText: PropTypes.string,
+  id: PropTypes.string,
+  isRequired: PropTypes.bool,
+  label: PropTypes.string,
   onChange: PropTypes.func,
+  pattern: PropTypes.string,
+  placeholder: PropTypes.string,
+  size: PropTypes.string,
+  type: PropTypes.string,
+  value: PropTypes.string,
+	style: PropTypes.object,
+	inputStyle: PropTypes.object,
 };
 
 TextInput.defaultProps = {
-  id: null,
-  type: null,
-  pattern: null,
-  value: null,
-  inputLabel: null,
-  isRequired: false,
-  placeholder: null,
-  helpText: null,
-  errorText: null,
-  state: null,
-  style: null,
-  inputStyle: null,
-  disabled: null,
+  autocompleteList: null,
   children: null,
+  className: null,
+  disabled: null,
+  error: null,
+  helpText: null,
+  id: null,
+  label: null,
+  isRequired: false,
   onChange: null,
+  pattern: null,
+  placeholder: null,
+  size: null,
+  type: null,
+  value: null,
+	style: null,
+	inputStyle: null,
 };
 
 export { TextInput as default };

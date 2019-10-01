@@ -1,108 +1,184 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import { colors } from "Variables";
+import { DisabledContext } from "States";
 
 const SwitchContainer = styled.div`
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
+  display: grid;
+  grid-template-columns: ${(props) => {
+    return props.label ? "auto 1fr" : "";
+  }};
+  grid-gap: ${(props) => {
+    return props.label ? "0.75rem" : "";
+  }};
+  grid-template-areas: ${(props) => {
+    return props.alignInput || "";
+  }};
+  color: ${(props) => {
+    return props.checkboxColor || "";
+  }};
+  background-color: ${(props) => {
+    return props.fillColor || colors.white;
+  }};
+  border-color: ${(props) => {
+    return props.borderColor || colors.grey_40;
+  }};
+  align-items: center;
+  line-height: normal;
+  width: max-content;
+  line-height: initial;
+  &[disabled],
+  &[readonly] {
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
+  }
 `;
-const HiddenSwitch = styled.input.attrs({ type: "checkbox" })`
-  border: 0;
-  clip: rect(0 0 0 0);
-  /* clipath: inset(50%); */
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  white-space: nowrap;
-  width: 1px;
+
+const StyledSwitch = styled.div`
+  grid-area: input;
+  width: 3rem;
+  height: 1.5rem;
+  border: 1px solid;
+  border-color: ${(props) => {
+    return props.borderColor || colors.grey_40;
+  }};
+  border-radius: 1em;
+  background-image: ${(props) => {
+    return props.fillColor || "";
+  }};
+  cursor: pointer;
+  &[disabled],
+  &[readonly] {
+    background: ${(props) => {
+    return props.disabled ? colors.grey_20 : "";
+  }};
+  }
 `;
 
 const Circle = styled.div`
   position: absolute;
-  z-index: 1;
   background: ${(props) => {
-    return props.checked ? "white" : "white";
+    return props.checked ? colors.white : colors.grey_light;
   }};
-  border: ${(props) => {
-    return props.checked ? "1px solid #75ab3f" : "1px solid darkgray";
+  border: 1px solid;
+  border-color: ${(props) => {
+    return props.borderColor || colors.grey_40;
   }};
-  border-radius: 40px;
-  width: 15px;
-  line-height: normal;
-  height: 14px;
+  border-radius: 100%;
+  width: 1.2rem;
+  height: 1.2rem;
+  z-index: 1;
+  margin: 1px;
   transition: transform 300ms ease-in-out;
   transform: ${(props) => {
-    return props.checked ? "translateX(15px)" : "translateX(-1px)";
+    return props.checked ? "translateX(100%)" : "translateX(0)";
   }};
+  &[disabled],
+  &[readonly] {
+    border-color: ${(props) => {
+    return props.disabled || "";
+  }};
+  }
 `;
 
-const StyledSwitch = styled.div`
-  width: 30px;
-  display: block;
-  height: 16px;
-  border-radius: 23px;
-  border: ${(props) => {
-    return props.checked ? "1px solid #94d850" : "1px solid darkgray";
+const SwitchLabel = styled.label`
+  grid-area: label;
+  color: ${(props) => {
+    return props.labelColor || "";
   }};
-  background-image: ${(props) => {
-    return props.checked ? "linear-gradient(#75ab3f, #94d850);" : "white";
-  }};
-  transition: 0.4s ease;
+  user-select: none;
+  font-weight: 700;
   cursor: pointer;
+  &[disabled],
+  &[readonly] {
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
+  }
 `;
 
-const Toggle = ({ checked, onChange, ...props }) => {
+function Switch({
+  align, checked, disabled, error, id, label, onChange,
+}) {
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  let checkboxColor;
+  let fillColor;
+  let borderColor;
+  let alignInput;
+  if (isDisabled) {
+    checkboxColor = colors.grey_40;
+  }
+  if (error && !isDisabled) {
+    checkboxColor = colors.alert;
+    fillColor = `linear-gradient(${colors.alert_tint}, ${colors.alert_light})`;
+    borderColor = colors.alert_light;
+  }
+  switch (align) {
+    case "right":
+      alignInput = "'label input'";
+      break;
+    default:
+      alignInput = "'input label'";
+      break;
+  }
   let isChecked = checked;
   let onClick = onChange;
-
   if (!onClick) {
     let setChecked = null;
     [isChecked, setChecked] = useState(checked);
-    onClick = () => { setChecked(!isChecked); };
+    onClick = () => {
+      setChecked(!isChecked);
+    };
   }
-
+  if (isChecked && !error) {
+    fillColor = `linear-gradient(${colors.success_tint}, ${colors.success_light})`;
+    borderColor = colors.success;
+  }
   return (
-    <SwitchContainer>
-      <StyledSwitch checked={isChecked} onClick={onClick}>
-        <Circle checked={isChecked} {...props} />
+    <SwitchContainer
+      alignInput={alignInput}
+      checkboxColor={checkboxColor}
+      error={error}
+      disabled={isDisabled}
+      id={id}
+      label={label}
+      onClick={onClick}
+    >
+      <StyledSwitch
+        checked={isChecked}
+        disabled={isDisabled}
+        onChange={onChange}
+        fillColor={fillColor}
+        borderColor={borderColor}
+      >
+        <Circle checked={isChecked} borderColor={borderColor} />
       </StyledSwitch>
+      {label ? (
+        <SwitchLabel onChange={onChange} disabled={isDisabled}>
+          {label}
+        </SwitchLabel>
+      ) : null}
     </SwitchContainer>
   );
-};
+}
 
-Toggle.propTypes = {
-  id: PropTypes.string,
+Switch.propTypes = {
+  align: PropTypes.oneOf(["default", "right"]),
   checked: PropTypes.bool,
+  disabled: PropTypes.bool,
+  id: PropTypes.string,
+  label: PropTypes.string,
   onChange: PropTypes.func,
 };
-
-Toggle.defaultProps = {
-  id: null,
+Switch.defaultProps = {
+  align: null,
   checked: false,
+  disabled: false,
+  id: null,
+  label: null,
   onChange: null,
 };
 
-const Switch = ({ label, ...props }) => {
-  return (
-    <>
-      {label} <Toggle {...props} />
-    </>
-  );
-};
-
-Switch.propTypes = {
-  label: PropTypes.node,
-};
-
-Switch.defaultProps = {
-  label: null,
-};
-
-export default Switch;
+export { Switch as default };
