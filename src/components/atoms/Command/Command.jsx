@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { DisabledContext } from "States";
 import Icon from "atoms/Icon";
+import Title from "base/Typography";
 
 const CommandContainer = styled.a`
   display: ${props => {
@@ -38,7 +39,7 @@ const CommandContainer = styled.a`
   transition: all 0.3s ease;
 `;
 
-const CommandName = styled.label`
+const CommandName = styled(Title)`
   grid-area: name;
   font-size: inherit;
   color: inherit;

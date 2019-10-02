@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Bar from "blocks/Bar";
 import { Lighten, Darken } from "Variables";
-import Panel from "layout/Panel";
 import Title, { SubTitle } from "base/Typography";
 import Grid from "layout/Grid";
 
@@ -58,38 +57,36 @@ function Colors({ id, color }) {
 
 function ColorPalette() {
   return (
-    <Panel>
+    <Grid>
       <Title text="Color Palette" size="large" styling="underline" />
       <SubTitle text="Color Palette is controled by themeing. Colors vary depending on theme selected." />
-      <Grid>
-        <Colors color="primary" />
-        <Colors color="primaryLight" />
-        <Colors color="primaryTint" />
-        <Colors color="primaryDark" />
+      <Colors color="primary" />
+      <Colors color="primaryLight" />
+      <Colors color="primaryTint" />
+      <Colors color="primaryDark" />
 
-        <Colors color="secondary" />
-        <Colors color="secondaryLight" />
-        <Colors color="secondaryTint" />
-        <Colors color="secondaryDark" />
+      <Colors color="secondary" />
+      <Colors color="secondaryLight" />
+      <Colors color="secondaryTint" />
+      <Colors color="secondaryDark" />
 
-        <Colors color="grey" />
-        <Colors color="grey2" />
-        <Colors color="grey3" />
-        <Colors color="grey4" />
-        <Colors color="grey5" />
-        <Colors color="grey6" />
+      <Colors color="grey" />
+      <Colors color="grey2" />
+      <Colors color="grey3" />
+      <Colors color="grey4" />
+      <Colors color="grey5" />
+      <Colors color="grey6" />
 
-        <Colors color="info" />
-        <Colors color="success" />
-        <Colors color="successLight" />
-        <Colors color="successDark" />
-        <Colors color="warning" />
-        <Colors color="alert" />
-        <Colors color="alertLight" />
-        <Colors color="alertTint" />
-        <Colors color="alertDark" />
-      </Grid>
-    </Panel>
+      <Colors color="info" />
+      <Colors color="success" />
+      <Colors color="successLight" />
+      <Colors color="successDark" />
+      <Colors color="warning" />
+      <Colors color="alert" />
+      <Colors color="alertLight" />
+      <Colors color="alertTint" />
+      <Colors color="alertDark" />
+    </Grid>
   );
 }
 
