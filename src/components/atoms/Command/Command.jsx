@@ -26,7 +26,7 @@ const CommandContainer = styled.a`
     return props.commandSize || "";
   }};
   color: ${props => {
-    return props.theme.palette[props.commandColor] || props.theme.palette.info;
+    return props.theme.text[props.commandColor] || props.theme.text.info;
   }};
   user-select: none;
   cursor: ${props => {
@@ -110,7 +110,7 @@ function Command({ align, command, disabled, icon, id, label, onClick, size }) {
   let alignCommand = "";
   let alignIcon = "";
   let justifyIcon = "flex-start";
-  let commandColor = colors.anchor;
+  let commandColor = "info";
   let commandSize = "";
 
   switch (align) {
@@ -127,7 +127,7 @@ function Command({ align, command, disabled, icon, id, label, onClick, size }) {
   }
 
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (isDisabled) commandColor = "grey2";
+  if (isDisabled) commandColor = "disabled";
 
   switch (size) {
     case "small":
