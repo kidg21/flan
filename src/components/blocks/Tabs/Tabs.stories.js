@@ -164,7 +164,7 @@ storiesOf("Blocks|Tabs", module)
   .addDecorator(Padding)
   .add("Single-Row (default)", () => {
     return (
-      <Tabs>
+      <Tabs >
         <Tab tabLabel="Tab" />
         <Tab tabLabel="Tab" />
         <Tab tabLabel="Tab" />

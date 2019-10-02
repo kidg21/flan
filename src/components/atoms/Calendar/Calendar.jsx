@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { colors } from "Variables";
 import Grid from "layout/Grid";
 import { DisabledContext } from "States";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
@@ -9,7 +8,7 @@ import TextInput from "atoms/TextInput";
 
 const CalendarContainer = styled(Grid)`
   color: ${(props) => {
-    return props.inputTextColor || "";
+    return props.theme.text[props.inputTextColor] || "";
   }};
 `;
 
@@ -28,16 +27,22 @@ function Calendar({
   value,
 }) {
   let inputFillColor;
+  let placeholderColor;
   let inputBorderColor;
   let inputTextColor;
   let inputBorderColorHover;
   let inputSelectColor;
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  if (isDisabled) {
+    inputFillColor = "disabled";
+    inputBorderColor = "grey5";
+  }
+
   if (error && !isDisabled) {
-    inputTextColor = colors.alert;
-    inputBorderColor = colors.alert_light;
-    inputBorderColorHover = colors.alert_light;
-    inputSelectColor = colors.alert;
+    inputTextColor = "alert";
+    inputBorderColor = "alert";
+    inputBorderColorHover = "alert";
+    inputSelectColor = "grey4";
   }
   const inputTypes = type.toLowerCase() === "datetime" ? ["date", "time"] : [type.toLowerCase()];
   const inputElements = inputTypes.map((currType) => {
@@ -46,6 +51,7 @@ function Calendar({
         disabled={isDisabled}
         error={!!error}
         id={id}
+        placeholderColor={placeholderColor}
         inputBorderColor={inputBorderColor}
         inputBorderColorHover={inputBorderColorHover}
         inputFillColor={inputFillColor}
@@ -62,11 +68,7 @@ function Calendar({
 
   let inputContainer = inputElements;
   if (inputTypes.length > 1) {
-    inputContainer = (
-      <Grid columns="2">
-        {inputElements}
-      </Grid>
-    );
+    inputContainer = <Grid columns="2">{inputElements}</Grid>;
   }
   return (
     <CalendarContainer

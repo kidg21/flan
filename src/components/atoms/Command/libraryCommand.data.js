@@ -28,21 +28,21 @@ const commandsStandard = [
     command: "close",
     desc: placeholder.desc,
   },
-  {
-    command: "compare",
-    desc: placeholder.desc,
-  },
+
   {
     command: "copy",
     desc: placeholder.desc,
   },
   {
     command: "contacts",
-    desc:
-      "The Command is an interactive UI element that pairs an icon and a label. Use a Command when a user's action is intended to begin an action or workflow.",
+    desc: placeholder.desc,
   },
   {
     command: "delete",
+    desc: placeholder.desc,
+  },
+  {
+    command: "download",
     desc: placeholder.desc,
   },
   {
@@ -51,6 +51,10 @@ const commandsStandard = [
   },
   {
     command: "exclude",
+    desc: placeholder.desc,
+  },
+  {
+    command: "favorites",
     desc: placeholder.desc,
   },
   {
@@ -75,14 +79,6 @@ const commandsStandard = [
   },
   {
     command: "measure",
-    desc: placeholder.desc,
-  },
-  {
-    command: "menu",
-    desc: placeholder.desc,
-  },
-  {
-    command: "new",
     desc: placeholder.desc,
   },
   {
@@ -139,6 +135,10 @@ const commandsStandard = [
   },
   {
     command: "sync",
+    desc: placeholder.desc,
+  },
+  {
+    command: "upload",
     desc: placeholder.desc,
   },
   {

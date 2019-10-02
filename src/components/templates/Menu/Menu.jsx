@@ -1,7 +1,6 @@
 import React, { useState, Fragment } from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
-import { colors } from "Variables";
 import Icon from "atoms/Icon";
 import Command from "atoms/Command";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";

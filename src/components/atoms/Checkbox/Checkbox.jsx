@@ -1,14 +1,13 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { colors } from "Variables";
 import { DisabledContext } from "States";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
 import Grid from "layout/Grid";
 
 const CheckboxWrapper = styled(Grid)`
   color: ${(props) => {
-    return props.inputTextColor || "";
+    return props.theme.text[props.inputTextColor] || "";
   }};
   &:last-child {
     margin-bottom: 1rem;
@@ -25,7 +24,7 @@ const CheckboxContainer = styled.div`
   width: 100%;
   line-height: initial;
   color: ${(props) => {
-    return props.inputTextColor || "";
+    return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
   &[disabled],
   &[readonly] {
@@ -39,10 +38,10 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   grid-area: input;
   border: 1px solid;
   background-color: ${(props) => {
-    return props.fillColor || colors.white;
+    return props.theme.palette[props.fillColor] || props.theme.background.default;
   }};
   border-color: ${(props) => {
-    return props.borderColor || colors.grey_40;
+    return props.theme.palette[props.borderColor] || props.theme.palette.border;
   }};
   width: 1rem;
   height: 1rem;
@@ -51,22 +50,23 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   -webkit-appearance: none;
   &:checked {
     background-color: ${(props) => {
-    return props.fillColorChecked || colors.success_light;
+    return props.theme.palette[props.fillColorChecked] || props.theme.palette.secondaryLight;
   }};
     border-color: ${(props) => {
-    return props.borderColor || colors.success;
+    return props.theme.palette[props.borderColor] || props.theme.palette.secondary;
   }};
   }
   &:focus {
     outline-color: ${(props) => {
-    return props.outlineColor || colors.success;
+    return props.theme.palette[props.outlineColor] || props.theme.palette.secondary;
   }};
   }
 `;
 
 const CheckboxLabel = styled.label`
   grid-area: label;
-  font-weight: 700;
+  font-weight: 600;
+  line-height: 1rem;
   color: inherit;
   user-select: none;
   cursor: pointer;
@@ -91,18 +91,18 @@ function Checkbox({
   let tabIndex;
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
-    fillColor = colors.grey_20;
-    fillColorChecked = colors.grey_20;
-    inputTextColor = colors.grey_60;
+    fillColor = "disabled";
+    fillColorChecked = "disabled";
+    inputTextColor = "disabled";
     tabIndex = "-1";
   }
   if (error && !isDisabled) {
-    inputTextColor = colors.alert;
-    fillColor = colors.alert_tint;
-    borderColor = colors.alert_light;
-    outlineColor = colors.alert_light;
-    fillColorChecked = colors.alert_tint;
-    borderColorChecked = colors.alert;
+    inputTextColor = "alert";
+    fillColor = "alert";
+    borderColor = "alertDark";
+    outlineColor = "alertLight";
+    fillColorChecked = "alert";
+    borderColorChecked = "alertDark";
   }
   switch (align) {
     case "right":
@@ -151,7 +151,7 @@ function CheckboxGroup({
   let inputTextColor;
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (error && !isDisabled) {
-    inputTextColor = colors.alert;
+    inputTextColor = "alert";
   }
   return (
     <CheckboxWrapper

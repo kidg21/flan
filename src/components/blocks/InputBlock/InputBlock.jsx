@@ -3,16 +3,15 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { colors } from "Variables";
 import { DisabledContext } from "States";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
 import Grid from "layout/Grid";
 import TextInput from "atoms/TextInput";
 
 const TextInputContainer = styled(Grid)`
-  color: ${(props) => {
-    return props.inputTextColor || "";
-  }};
+color: ${(props) => {
+  return props.theme.text[props.inputTextColor] || "";
+}};
   width: 100%;
 `;
 
@@ -47,7 +46,7 @@ function InputBlock({
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let inputTextColor;
   if (error && !disabled) {
-    inputTextColor = colors.alert;
+    inputTextColor = "alert";
   }
   const inputElements = textInputs.map((input) => {
     return (

@@ -6,6 +6,9 @@ import { DisabledContext } from "States";
 
 const BarLayout = styled.div`
   display: flex;
+  cursor: ${(props) => {
+    return props.onClick ? "pointer" : "";
+  }};
   flex-direction: row;
   align-items: ${(props) => {
     return props.alignContent || "";
@@ -14,6 +17,9 @@ const BarLayout = styled.div`
   justify-content: space-between;
   padding: ${(props) => {
     return props.barPadding || "0.5em 1em";
+  }};
+  padding-top: ${(props) => {
+    return props.topPadding || "";
   }};
 `;
 
@@ -67,6 +73,7 @@ function Bar({
 }) {
   let alignContent;
   let alignItems;
+  let topPadding;
   let barPadding;
   let textAlign;
   let leftPadding;
@@ -87,6 +94,9 @@ function Bar({
       break;
     case "2x":
       barPadding = "1em 1.25em";
+      break;
+    case "top":
+      topPadding = "1.5em";
       break;
     case "3x":
       barPadding = "1.5em 1.5em";
@@ -126,6 +136,7 @@ function Bar({
       barPadding={barPadding}
       alignContent={alignContent}
       onClick={onClick}
+      topPadding={topPadding}
       className={className}
     >
       {left ? (
