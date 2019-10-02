@@ -14,6 +14,7 @@ const TextInputContainer = styled(Grid)`
 `;
 
 const Input = styled.input`
+  line-height: normal;
   border: 1px solid;
   border-color: ${(props) => {
     return props.inputBorderColor || colors.grey_20;

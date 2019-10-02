@@ -135,10 +135,11 @@ const Help = styled(Label)`
   font-weight: initial;
 `;
 function HelpText({ helpText, children }) {
-  if (children) {
-    return (<Help>{children}</Help>);
-  } else {
+  const content = children || helpText;
+  if (typeof content === "string") {
     return (<Help>{helpText.split("\n").map((text) => { return <>{text}<br/></>; })}</Help>);
+  } else {
+    return (<Help>{children}</Help>);
   }
 }
 HelpText.propTypes = {
@@ -157,10 +158,11 @@ const Error = styled(Label)`
   }
 `;
 function ErrorText({ error, children }) {
-  if (children) {
-    return (<Error>{children}</Error>);
+  const content = children || error;
+  if (typeof content === "string") {
+    return (<Error>{content.split("\n").map((text) => { return <>{text}<br/></>; })}</Error>);
   } else {
-    return (<Error>{error.split("\n").map((text) => { return <>{text}<br/></>; })}</Error>);
+    return (<Error>{content}</Error>);
   }
 }
 ErrorText.propTypes = {

@@ -175,7 +175,7 @@ function Modal({
 }) {
   let modalContent;
   let justifyContent;
-  let pointerEvents;
+  const pointerEvents = backgroundColor ? "auto" : "none";
 
   if (text) {
     modalContent = (
@@ -250,12 +250,12 @@ function Modal({
       pointerEvents={pointerEvents}
       style={containerStyle}
     >
-      <ModalBG
+      {backgroundColor ? <ModalBG
         onClick={onClose}
         action={action}
         fadeDuration={fadeDuration}
         backgroundColor={backgroundColor}
-      />
+      /> : null}
       {modalContent}
     </ModalContainer>
   );
