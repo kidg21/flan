@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable listitembreak-style */
+/* eslint-disable inlinebreak-style */
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
@@ -22,10 +22,12 @@ const image = (
 const image2 = <img src={Flan} width="100%" height="100%" alt="alternate description" />;
 const body = (
   <>
-    <Title text="Media Block - Default" />
-    {/* <Title text="Media Block - Default Media Block - Default Media Block - Default Media Block - Default Media Block - Default Media Block - Default" /> */}
+    <Title text="Media Block" />
     <Description text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. " />
   </>
+);
+const description = (
+  <Description text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. " />
 );
 
 storiesOf("Work|Blocks/Media Block", module)
@@ -57,48 +59,15 @@ storiesOf("Work|Blocks/Media Block", module)
               default: null,
               center: "center",
               vertical: "vertical",
+              inline: "inline",
             },
             null,
             { display: "select" },
             "Media Block",
           )}
           reverse={boolean("reverse", false, "Media Block")}
-          listitem={boolean("list item", false, "Media Block")}
         />
       </Card>
-    );
-  })
-  .add("Single-Line Item", () => {
-    return (
-      <CardList>
-        <Card>
-          <MediaBlock media={image} body={body} listitem />
-        </Card>
-        <Card>
-          <MediaBlock media={image} body={body} listitem />
-        </Card>
-        <Card>
-          <MediaBlock media={image} body={body} listitem reverse />
-        </Card>
-      </CardList>
-    );
-  })
-  .add("Alignment", () => {
-    return (
-      <CardList>
-        <Card>
-          <MediaBlock body={body} />
-        </Card>
-        <Card>
-          <MediaBlock media={image} body={body} />
-        </Card>
-        <Card>
-          <MediaBlock media={image} body={body} reverse />
-        </Card>
-        <Card>
-          <MediaBlock media={image} body={body} align="vertical" />
-        </Card>
-      </CardList>
     );
   })
   .add("Nested", () => {
@@ -110,5 +79,102 @@ storiesOf("Work|Blocks/Media Block", module)
         </MediaBlock>
         <MediaBlock media={image} body={body} />
       </MediaBlock>
+    );
+  })
+  .add("The Media Block Family", () => {
+    return (
+      <CardList>
+        <Card>
+          <MediaBlock
+            media={image}
+            body={
+              <>
+                <Title text="Media Block" />
+                {description}
+              </>
+            }
+          />
+        </Card>
+        <Card>
+          <MediaBlock media={image} 
+            body={
+              <>
+                <Title text="Media Block (reverse)" />
+                {description}
+              </>
+            }
+            reverse
+          />
+        </Card>
+        <Card>
+          <MediaBlock media={image} 
+            body={
+              <>
+                <Title text="Media Block - Center" />
+                {description}
+              </>
+            }
+            align="center"
+          />
+        </Card>
+        <Card>
+          <MediaBlock media={image} 
+            body={
+              <>
+                <Title text="Media Block - Center (reverse)" />
+                {description}
+              </>
+            }
+            align="center"
+            reverse
+          />
+        </Card>
+        <Card>
+          <MediaBlock media={image} 
+            body={
+              <>
+                <Title text="Media Block - Vertical" />
+                {description}
+              </>
+            }
+            align="vertical"
+          />
+        </Card>
+        <Card>
+          <MediaBlock media={image} 
+            body={
+              <>
+                <Title text="Media Block - Vertical (reverse)" />
+                {description}
+              </>
+            }
+            align="vertical"
+            reverse
+          />
+        </Card>
+        <Card>
+          <MediaBlock media={image} 
+            body={
+              <>
+                <Title text="Media Block - Inline" />
+                {description}
+              </>
+            }
+            align="inline"
+          />
+        </Card>
+        <Card>
+          <MediaBlock media={image} 
+            body={
+              <>
+                <Title text="Media Block - Inline (reverse)" />
+                {description}
+              </>
+            }
+            align="inline"
+            reverse
+          />
+        </Card>
+      </CardList>
     );
   });
