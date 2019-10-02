@@ -31,7 +31,7 @@ const GlobalStyles = createGlobalStyle`
         width: 100%;
         height: 100%;
         font-family: ${fonts.body}; /* Muli */
-        color: ${colors.grey_80};
+        // color: ${colors.grey_80};
         font-weight: 400;
         line-height: 1.45;
         overscroll-behavior: none;
@@ -63,8 +63,6 @@ const GlobalStyles = createGlobalStyle`
 
     /* Default Link Styles */
     a {
-      color: ${colors.anchor};
-      width: fit-content;
       line-height: inherit;
       text-decoration: none;
       padding: .5em;
@@ -184,7 +182,6 @@ const GlobalStyles = createGlobalStyle`
 /* Forms */
 /* Placeholder */
     ::placeholder {
-        color: ${colors.grey_60};
         &:empty {
           &:before {
             ${Skeleton};
@@ -195,15 +192,13 @@ const GlobalStyles = createGlobalStyle`
     }
 
     ::selection {
-        color: ${colors.white};
-        background-color: ${colors.anchor};
+
     }
 /* Labels */
     label {
       font-family: ${fonts.data};
-      font-size: 0.85em;
-      letter-spacing: 1px;
-      width: fit-content;
+      font-size: 0.876rem;
+      font-weight: 600;
       &:empty {
         &:before {
           ${Skeleton};
@@ -246,7 +241,6 @@ const GlobalStyles = createGlobalStyle`
     select {
       box-sizing: border-box;
       width: 100%;
-      color: ${colors.grey_dark};
       font-family: ${fonts.data};
       letter-spacing: 1px;
       border-radius: 5px;
@@ -261,7 +255,6 @@ const GlobalStyles = createGlobalStyle`
         cursor: not-allowed;
         pointer-events: none;
         user-select: none;
-        background-color: ${colors.grey_light};
       }
       ::-webkit-datetime-edit-day-field,
       ::-webkit-datetime-edit-week-field,
@@ -274,8 +267,6 @@ const GlobalStyles = createGlobalStyle`
       ::-webkit-datetime-edit-ampm-field,
       ::-webkit-datetime-edit-text {
         &:focus {
-          color: ${colors.white};
-          background-color: ${colors.success};
         }
       }
     }
@@ -291,7 +282,6 @@ const GlobalStyles = createGlobalStyle`
     input[type="range"] {
       &[disabled],
       &[readonly] {
-          background-color: ${colors.grey_40};
         }
       }
     `;

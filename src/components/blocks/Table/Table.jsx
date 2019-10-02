@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { SkeletonStatic } from "helpers";
+import Title from "base/Typography";
 
 const TableWrapper = styled.table`
   // overflow: hidden;
@@ -22,7 +23,7 @@ const TableWrapper = styled.table`
 `;
 const Row = styled.tr``;
 const Cell = styled.td`
-  padding: 0.25em 0.25em 0.25em;
+  // padding: 0.25em 0.25em 0.25em;
   font-size: small;
   text-align: left;
 
@@ -40,16 +41,18 @@ const Cell = styled.td`
 function Table({ id, data }) {
   return (
     <TableWrapper id={id}>
-      {data.map(item => (
-        <Row key={item.id}>
-          <Cell>
-            <span>{item.name}</span>
-          </Cell>{" "}
-          <Cell>
-            <span>{item.value}</span>
-          </Cell>
-        </Row>
-      ))}
+      {data.map((item) => {
+        return (
+          <Row key={item.id}>
+            <Cell>
+              <Title text={item.name} size="tiny" weight="normal" />
+            </Cell>{" "}
+            <Cell>
+              <Title text={item.value} size="tiny" weight="bold" />
+            </Cell>
+          </Row>
+        );
+      })}
     </TableWrapper>
   );
 }

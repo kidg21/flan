@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import Icon from "atoms/Icon";
 import TextInput from "atoms/TextInput";
-import { colors } from "Variables";
 
 const IconWrapper = styled.span`
   /* Needed for passing properties to children (animation, etc.) */
@@ -16,7 +15,9 @@ const SearchContainer = styled.div`
   ${IconWrapper} {
     position: absolute;
     right: 0;
-    background-color: ${colors.white};
+    background-color: ${(props) => {
+    return props.theme.background.default;
+  }};
     margin: 0.2em;
     padding: 0.5em;
     cursor: pointer;

@@ -2,12 +2,15 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
+import Panel from "layout/Panel";
+import { withInfo } from "@storybook/addon-info";
 import Grid from "layout/Grid";
 import Title, { Headline, SubTitle, Description, Link, Number, Code } from "base/Typography";
 
 /** TODO: Add 'Documentation' and 'Knobs' stories */
 storiesOf("Application|Style Guides/", module)
   .addDecorator(Padding)
+  .addDecorator(withInfo)
   .add("Typography", () => {
     return (
       <Grid columns="1">
@@ -17,7 +20,7 @@ storiesOf("Application|Style Guides/", module)
         <Title>
           This is a Title that wraps a text string and an inline
           <Link
-            text="Link"
+            text="This is a standard Link"
             title="Stuff about anchor tags"
             href="https://www.w3.org/MarkUp/1995-archive/Elements/A.html"
             target="_blank"

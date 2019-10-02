@@ -8,6 +8,9 @@ import Layout from "layout/Layout";
 import Mapbox from "layout/Map";
 import MapSearch from "elements/MapSearch";
 import LayoutNotes from "./Layout.md";
+import Panel, {PanelSection} from "layout/Panel";
+import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
+import NavigationCardBar from "elements/CardBars/NavigationCardBar";
 
 storiesOf("Layout |App Layout/", module)
   .addParameters({
@@ -141,32 +144,66 @@ storiesOf("Layout |App Layout/", module)
               </Layout>
             </Layout>
             <Layout id="right" type="rightWrapper" state={rightState}>
-              <Card>
-                <Tabs align="bottom">
-                  <Tab
-                    tabLabel="Toggle Right Fullscreen"
-                    onClick={toggleRightFullscreen}
-                  />
-                </Tabs>
-              </Card>
+              <Panel>
+          <PanelSection>
+            <MainPanelHeader title="Filters" />
+          </PanelSection>
+          <PanelSection body>
+            <NavigationCardBar title="Property Search" />
+            <NavigationCardBar title="Builder Sites" />
+            <NavigationCardBar title="Demographics" />
+
+            <NavigationCardBar title="Foreclosures" />
+            <NavigationCardBar title="Points of Interest" />
+
+            <NavigationCardBar title="Public Schools" />
+            <NavigationCardBar title="Qualified Opportunity Zones" />
+            <NavigationCardBar title="School District Rating" />
+            <NavigationCardBar title="Traffic" />
+            <NavigationCardBar title="Transaction" />
+            <NavigationCardBar title="Zones" />
+          </PanelSection>
+        </Panel>
             </Layout>
           </Layout>
           <Layout id="controls" type="controlsWrapper">
             <Tabs align={controlsAlign}>
-              <Tab
-                tabLabel="Toggle Left Wrapper"
+            <Tab
+            icon="location"
+                tabLabel="Property"
                 onClick={toggleLeft}
                 isSelected={activeLeft}
+                noBorder
+              />
+            <Tab
+              icon="layers"
+                tabLabel="Layers"
+                onClick={toggleLeft}
+                isSelected={activeLeft}
+                noBorder
               />
               <Tab
-                tabLabel="Toggle Right Wrapper"
+              icon="filter"
+                tabLabel="Filters"
                 onClick={toggleRight}
                 isSelected={activeRight}
+                noBorder
+
               />
+
               <Tab
-                tabLabel="Toggle Bottom Wrapper"
+              icon="drawings"
+                tabLabel="Draw"
+                onClick={toggleLeft}
+                isSelected={activeLeft}
+                noBorder
+              />
+            <Tab
+              icon="list"
+                tabLabel="List"
                 onClick={toggleBottom}
                 isSelected={activeBottom}
+                noBorder
               />
             </Tabs>
           </Layout>

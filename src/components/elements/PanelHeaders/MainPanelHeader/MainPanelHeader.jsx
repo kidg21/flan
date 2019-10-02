@@ -9,8 +9,9 @@ function MainPanelHeader({ id, title, menuData }) {
   return (
     <Piece id={id} header>
       <Bar
+        contentAlign="center"
         padding="3x"
-        left={<Title text={title} weight="bold" />}
+        left={<Title text={title} size="large" />}
         right={menuData ? <Menu data={menuData} position="bottomLeft" type="edit" /> : null}
       />
     </Piece>

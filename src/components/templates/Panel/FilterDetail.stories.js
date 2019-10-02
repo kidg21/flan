@@ -141,36 +141,6 @@ storiesOf("Templates|Panel/Property Filters", module)
     );
   })
 
-  .add("Filter Details Skeleton", () => {
-    return (
-      <Panel>
-        <PanelSection>
-          <NavigationPanelHeader />
-        </PanelSection>
-        <PanelSection body>
-          <Form>
-            <RadioGroup label="Last Sale Date">
-              <Radio />
-              <Radio />
-              <Radio />
-            </RadioGroup>
-            <DataRange />
-            <RangeSlider />
-            <TextInput />
-            <CheckboxGroup label="Last Sale Price">
-              <Checkbox />
-              <Checkbox />
-              <Checkbox />
-            </CheckboxGroup>
-          </Form>
-        </PanelSection>
-        <PanelSection>
-          <Button />
-        </PanelSection>
-      </Panel>
-    );
-  })
-
   .add("Property- Characteristics", () => {
     return (
       <Panel>

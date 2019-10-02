@@ -177,9 +177,9 @@ storiesOf("Blocks|Bar", module)
         <Bar
           left={
             <IconBlock>
-              <Icon icon="circle" />
-              <Icon icon="circle" anchor />
-              <Icon icon="circle" success />
+              <Icon icon="circle_solid" />
+              <Icon icon="circle_solid" type="info" />
+              <Icon icon="circle_solid" type="success" />
             </IconBlock>
           }
         />
@@ -190,17 +190,17 @@ storiesOf("Blocks|Bar", module)
           contentAlign="center"
           left={
             <IconBlock>
-              <Icon icon="circle" />
-              <Icon icon="circle" anchor />
-              <Icon icon="circle" success />
+              <Icon icon="circle_solid" />
+              <Icon icon="circle_solid" type="info" />
+              <Icon icon="circle_solid" type="success" />
             </IconBlock>
           }
           center={longTitle}
           right={
             <IconBlock>
-              <Icon icon="circle" />
-              <Icon icon="circle" anchor />
-              <Icon icon="circle" success />
+              <Icon icon="circle_solid" />
+              <Icon icon="circle_solid" type="info" />
+              <Icon icon="circle_solid" type="success" />
             </IconBlock>
           }
         />
@@ -212,9 +212,9 @@ storiesOf("Blocks|Bar", module)
           left={shortTitle}
           right={
             <IconBlock>
-              <Icon icon="circle" />
-              <Icon icon="circle" anchor />
-              <Icon icon="circle" success />
+              <Icon icon="circle_solid" />
+              <Icon icon="circle_solid" type="info" />
+              <Icon icon="circle_solid" type="success" />
             </IconBlock>
           }
         />
@@ -224,9 +224,9 @@ storiesOf("Blocks|Bar", module)
           contentAlign="center"
           left={
             <IconBlock>
-              <Icon icon="circle" />
-              <Icon icon="circle" anchor />
-              <Icon icon="circle" success />
+              <Icon icon="circle_solid" />
+              <Icon icon="circle_solid" type="info" />
+              <Icon icon="circle_solid" type="success" />
             </IconBlock>
           }
           right={shortTitle}

@@ -2,7 +2,6 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { colors } from "Variables";
 import { DisabledContext } from "States";
 import Bar from "blocks/Bar";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
@@ -12,7 +11,7 @@ import Slider from "atoms/Slider";
 
 const RangeContainer = styled(Grid)`
   color: ${(props) => {
-    return props.inputTextColor || "";
+    return props.theme.text[props.inputTextColor] || "";
   }};
   &:last-child {
     margin-bottom: 1rem;
@@ -32,7 +31,7 @@ function RangeSlider({
   let inputTextColor;
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (error && !isDisabled) {
-    inputTextColor = colors.alert;
+    inputTextColor = "error";
   }
   return (
     <RangeContainer

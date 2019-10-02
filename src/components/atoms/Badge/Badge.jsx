@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { colors } from "Variables";
 import Icon from "atoms/Icon";
 
 const BadgeContainer = styled.div`
@@ -9,17 +8,29 @@ const BadgeContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ${props => props.badgeColor || ""};
-  color: ${props => props.badgeTextColor || ""};
+  background-color: ${(props) => {
+    return props.theme.palette[props.badgeColor];
+  }};
+  color: ${(props) => {
+    return props.theme.text[props.badgeTextColor];
+  }};
   font-size: 0.55em;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
-  padding: ${props => props.badgePadding || ""};
+  padding: ${(props) => {
+    return props.badgePadding || "";
+  }};
   border-radius: 10em;
-  bottom: ${props => props.badgeBottom || ""};
-  left: ${props => props.badgeLeft || ""};
-  transform: ${props => props.setTransform || ""};
+  bottom: ${(props) => {
+    return props.badgeBottom || "";
+  }};
+  left: ${(props) => {
+    return props.badgeLeft || "";
+  }};
+  transform: ${(props) => {
+    return props.setTransform || "";
+  }};
 `;
 
 const BadgeLabel = styled.span`
@@ -30,7 +41,9 @@ const BadgeLabel = styled.span`
   user-select: none;
 `;
 
-function Badge({ id, label, icon, type, position, style }) {
+function Badge({
+  id, label, icon, type, position, style,
+}) {
   let badgeColor;
   let badgeTextColor;
   let badgePadding;
@@ -44,27 +57,24 @@ function Badge({ id, label, icon, type, position, style }) {
     badgePadding = "0 0.25em";
   } else {
     labelType = <BadgeLabel>{label}</BadgeLabel>;
-    badgeColor = colors.alert;
-    badgeTextColor = colors.white;
+    badgeColor = "alert";
+    badgeTextColor = "inverse";
     badgePadding = "0.45em .8em";
     switch (type) {
       case "info":
-        badgeColor = colors.anchor;
+        badgeColor = "info";
         break;
       case "success":
-        badgeColor = colors.success;
+        badgeColor = "success";
         break;
       case "warning":
-        badgeColor = colors.warning;
+        badgeColor = "warning";
         break;
       case "alert":
-        badgeColor = colors.alert;
-        break;
-      case "dark":
-        badgeColor = colors.grey_80;
+        badgeColor = "alert";
         break;
       default:
-        badgeColor = colors.alert;
+        badgeColor = "alert";
         break;
     }
   }
@@ -104,22 +114,17 @@ function Badge({ id, label, icon, type, position, style }) {
       badgePadding={badgePadding}
       style={style}
     >
-      {iconType ? iconType : labelType}
+      {iconType || labelType}
     </BadgeContainer>
   );
 }
 
 Badge.propTypes = {
   id: PropTypes.string,
-  label: PropTypes.string.isRequired,
+  label: PropTypes.string,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   type: PropTypes.oneOf(["info", "success", "warning", "alert", "dark"]),
-  position: PropTypes.oneOf([
-    "topLeft",
-    "topRight",
-    "bottomRight",
-    "bottomLeft",
-  ]),
+  position: PropTypes.oneOf(["topLeft", "topRight", "bottomRight", "bottomLeft"]),
   style: PropTypes.string,
 };
 
