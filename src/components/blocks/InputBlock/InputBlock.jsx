@@ -9,9 +9,9 @@ import Grid from "layout/Grid";
 import TextInput from "atoms/TextInput";
 
 const TextInputContainer = styled(Grid)`
-color: ${(props) => {
-  return props.theme.text[props.inputTextColor] || "";
-}};
+  color: ${(props) => {
+    return props.theme.text[props.inputTextColor] || "";
+  }};
   width: 100%;
 `;
 
