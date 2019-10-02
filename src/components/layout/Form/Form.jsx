@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { colors } from "Variables";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 import Title, { Headline, SubTitle, Description } from "base/Typography";
 import Grid from "layout/Grid";
@@ -9,7 +8,9 @@ import Grid from "layout/Grid";
 const FormWrapper = styled.form`
   height: 100%;
   padding: 1rem 1rem 1.5rem;
-  background-color: ${colors.white};
+  background-color: ${props => {
+    return props.theme.background.default;
+  }};
 `;
 
 const FormHeader = styled(Grid)`
@@ -56,7 +57,7 @@ const FormInputs = styled(Grid)`
   }
 `;
 
-function Form({ action, children, columns, description, method, subtitle, title }) {
+function Form({ action, children, columns, description, method, novalidate, subtitle, title }) {
   // 1-3 colums with custom override
   let setColumns;
   const _columns = parseInt(columns);
@@ -66,7 +67,7 @@ function Form({ action, children, columns, description, method, subtitle, title 
     setColumns = columns;
   }
   return (
-    <FormWrapper action={action} method={method}>
+    <FormWrapper action={action} method={method} novalidate={novalidate}>
       {title || subtitle || description ? (
         <FormHeader gap="tiny">
           {title ? <Headline text={title} /> : null}
@@ -86,6 +87,7 @@ Form.propTypes = {
   columns: PropTypes.oneOf(["1 (default)", "2", "3"]),
   description: PropTypes.string,
   method: PropTypes.string,
+  novalidate: PropTypes.bool,
   subtitle: PropTypes.string,
   title: PropTypes.string,
 };
@@ -95,19 +97,53 @@ Form.defaultProps = {
   columns: "1",
   description: null,
   method: null,
+  novalidate: false,
   subtitle: null,
   title: null,
 };
 
-const Label = styled.label`
+const StyledLabel = styled.label`
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  align-items: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+  color: ${props => {
+    return props.theme.text.primary;
+  }};
+  background-color: ${props => {
+    return props.theme.palette.grey6;
+  }};
+  border: 1px solid
+    ${props => {
+      return props.theme.palette.grey3;
+    }};
+  border-radius: 4px;
+  padding: 0.25rem 1rem;
+  white-space: nowrap;
+  user-select: none;
+`;
+function Label({ children, label }) {
+  return <StyledLabel>{children || label}</StyledLabel>;
+}
+Label.propTypes = {
+  label: PropTypes.string.isRequired,
+};
+
+const TextLabel = styled.label`
   grid-column: 1 / -1;
-  width: max-content;
+  width: 100%;
   font-weight: 700;
   user-select: none;
   &:after {
     display: ${props => (props.isRequired ? "" : "none")};
     content: "*";
-    color: ${colors.alert};
+    color: ${props => {
+      return props.theme.palette.alert;
+    }};
     font-size: 1.25rem;
     line-height: 0;
     vertical-align: middle;
@@ -116,40 +152,40 @@ const Label = styled.label`
 `;
 function InputLabel({ label, isRequired, className, children, ...props }) {
   return (
-    <Label isRequired={isRequired} className={className} {...props}>
+    <TextLabel isRequired={isRequired} className={className} {...props}>
       {label || children}
-    </Label>
+    </TextLabel>
   );
 }
 InputLabel.propTypes = {
-  inputLabel: PropTypes.string,
+  label: PropTypes.string.isRequired,
   isRequired: PropTypes.bool,
 };
 InputLabel.defaultProps = {
-  inputLabel: null,
   isRequired: false,
 };
 
-const Help = styled(Label)`
-  color: ${colors.grey_80};
+const Help = styled(TextLabel)`
+  color: inherit;
   font-weight: initial;
 `;
 function HelpText({ helpText, children }) {
   return <Help>{helpText || children}</Help>;
 }
 HelpText.propTypes = {
-  helpText: PropTypes.string,
-};
-HelpText.defaultProps = {
-  helpText: null,
+  helpText: PropTypes.string.isRequired,
 };
 
-const Error = styled(Label)`
-  color: ${colors.alert};
+const Error = styled(TextLabel)`
+  color: ${props => {
+    return props.theme.text.alert;
+  }};
   user-select: all;
   cursor: initial;
   &::selection {
-    background-color: ${colors.alert};
+    background-color: ${props => {
+      return props.theme.background.alert;
+    }};
   }
 `;
 function ErrorText({ error, children }) {
@@ -159,4 +195,4 @@ ErrorText.propTypes = {
   error: PropTypes.string.isRequired,
 };
 
-export { Form as default, Section, InputLabel, HelpText, ErrorText };
+export { Form as default, Section, Label, InputLabel, HelpText, ErrorText };

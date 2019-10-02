@@ -14,7 +14,7 @@ export const colors = {
   black: "hsl(34, 5%, 12%)",
   anchor: "hsl(204, 61%, 43%)",
   anchor_tint: "hsl(204, 61%, 83%)",
-  anchor_light: "hsl(204, 61%, 73%)",
+  anchor_light: "#66b1e3",
   anchor_dark: "hsl(204, 61%, 53%)",
   success: "hsl(90, 46%, 46%)",
   success_tint: "hsl(90, 46%, 90%)",
@@ -35,12 +35,126 @@ export const colors = {
   realEstate: "hsl(12, 61%, 50%)",
 };
 
+export const DMPTheme = {
+  background: {
+    default: "#ffffff",
+    app: "#f4f6fc",
+  },
+  divider: "#E2E1DF",
+  text: {
+    primary: "#605C57",
+    secondary: "#99958F",
+    inverse: "#ffffff",
+    link: "#5FD1E2",
+    alert: "hsl(1, 55%, 50%)",
+    disabled: "#b1b2b3",
+    info: "hsl(204, 61%, 43%)",
+    success: "rgb(36, 138, 61)",
+    warning: "rgb(178, 80, 0)",
+  },
+  palette: {
+    primary: "#2B82B1",
+    primaryLight: "#66b1e3",
+    primaryTint: "#bcd6e3",
+    primaryDark: "#005681",
+    secondary: "#6c9b39",
+    secondaryLight: "#80bc3f",
+    secondaryTint: "#cadf90",
+    secondaryDark: "#3d6c05",
+    info: "rgb(0, 122, 225)",
+    alert: "#ed2318",
+    alertLight: "#ffafab",
+    alertTint: "#e09d9d",
+    alertDark: "#7d0000",
+    warning: "rgb(255, 204, 0)",
+    success: "#14a839",
+    successLight: "#c1f9a5",
+    successDark: "#2d4e1f",
+    white: "#ffffff",
+    black: "#000000",
+    disabled: "#f1f1f1",
+    grey: "#99958F",
+    border: "#BBB8B4",
+    inverse: "#ffffff",
+    grey: "rgb(142, 142, 147)",
+    grey2: "rgb(174, 174, 178)",
+    grey3: "rgb(199, 199, 204)",
+    grey4: "rgb(209, 209, 214)",
+    grey5: "rgb(229, 229, 234)",
+    grey6: "rgb(242, 242, 247)",
+  },
+  accents: {
+    white: "#ffffff",
+    black: "#000000",
+    green: "green",
+    waterwayBlue: "#44A3D8",
+    burntOrange: "#B84438",
+  },
+};
+
+export const darkTheme = {
+  background: {
+    default: "rgb(28, 28, 30)",
+    app: "#f4f6fc",
+  },
+  divider: "#E2E1DF",
+  text: {
+    primary: "#ffffff",
+    secondary: "#99958F",
+    inverse: "#000000",
+    link: "#66b1e3",
+    alert: "#7d0000",
+    disabled: "#E2E1DF",
+    info: "#66b1e3",
+    success: "rgb(36, 138, 61)",
+    warning: "rgb(178, 80, 0)",
+  },
+  palette: {
+    primary: "#5FD1E2",
+    primaryLight: "#66b1e3",
+    primaryTint: "#9fc7dc",
+    primaryDark: "#005681",
+    secondary: "#CDE575",
+    secondaryLight: "#9dcc67",
+    secondaryTint: "#cadf90",
+    secondaryDark: "#3d6c05",
+    info: "#0a84ff",
+    alert: "#FF453A",
+    alertLight: "#ffafab",
+    alertTint: "#c98383",
+    alertDark: "#7d0000",
+    warning: "#f5c000",
+    success: "#30D158",
+    successLight: "#c1f9a5",
+    successDark: "#2d4e1f",
+    white: "#ffffff",
+    black: "#000000",
+    disabled: "#E2E1DF",
+    grey: "#99958F",
+    border: "#2935aa",
+    inverse: "#000000",
+    grey: "rgb(142, 142, 147)",
+    grey2: "rgb(99, 99, 102)",
+    grey3: "rgb(72, 72, 74)",
+    grey4: "rgb(58, 58, 60)",
+    grey5: "rgb(44, 44, 46)",
+    grey6: "rgb(28, 28, 30)",
+  },
+  accents: {
+    white: "#ffffff",
+    black: "#000000",
+    green: "green",
+    waterwayBlue: "#44A3D8",
+    burntOrange: "#B84438",
+  },
+};
+
 export const Darken = css`
-  filter: brightness(95%);
+  filter: brightness(85%) contrast(150%);
 `;
 
 export const Lighten = css`
-  filter: brightness(105%);
+  filter: brightness(115%);
 `;
 
 // Typefaces

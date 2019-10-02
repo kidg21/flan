@@ -19,41 +19,26 @@ const disabledblockStyle = {
   lineHeight: "normal",
 };
 
-const SwitchContainer = styled.div`
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-gap: 1rem;
-  filter: ${(props) => {
-    props.disabled ? "brightness(130%)" : "";
-  }};
-`;
-
 function LayerCardBar({
-  id, title, icons, switchProps, disabled,
+  id, title, icons, onChange, disabled,
 }) {
   return (
     <Piece id={id} disabled={disabled}>
       {disabled ? (
         <Bar
+        contentAlign="center"
           padding="2x"
-          left={
-            <SwitchContainer disabled="true">
-              <Switch />
-              <Title text={title} weight="normal" />
-            </SwitchContainer>
-          }
+          left={<Switch label={title} disabled onChange={onChange} />}
           right={<IconBlock style={disabledblockStyle}>{icons}</IconBlock>}
+          rightWidth="9em"
         />
       ) : (
         <Bar
+        contentAlign="center"
           padding="2x"
-          left={
-            <SwitchContainer>
-              <Switch {...switchProps} />
-              <Title text={title} weight="normal" />
-            </SwitchContainer>
-          }
+          left={<Switch label={title} onChange={onChange} />}
           right={<IconBlock style={blockStyle}>{icons}</IconBlock>}
+          rightWidth="9em"
         />
       )}
     </Piece>
@@ -63,6 +48,7 @@ LayerCardBar.propTypes = {
   id: PropTypes.string,
   title: PropTypes.any.isRequired,
   disabled: PropTypes.bool,
+  onChange: PropTypes.func,
   icons: PropTypes.node,
 };
 export default LayerCardBar;

@@ -1,17 +1,9 @@
 import React, { useContext } from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
-import { colors } from "Variables";
+import { Lighten, Darken } from "Variables";
 import { DisabledContext } from "States";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-/** TODO: move these to Variables */
-const iconHover = css`
-  filter: brightness(85%) contrast(150%);
-`;
-const iconActive = css`
-  filter: brightness(105%);
-`;
 
 const LinkedIcon = styled.a`
   cursor: ${(props) => {
@@ -29,26 +21,22 @@ const LinkedIcon = styled.a`
     return props.disabled ? "none" : "";
   }};
   &:hover {
-    ${(props) => {
-    return props.onClick ? iconHover : "";
-  }};
+    ${Darken};
   }
   &:active {
-    ${(props) => {
-    return props.onClick ? iconActive : "";
-  }};
+    ${Lighten};
   }
 `;
 
 const StyledIcon = styled(FontAwesomeIcon)`
   color: ${(props) => {
-    return props.color || "inherit";
+    return props.theme.palette[props.color] || "inherit";
   }};
   border: ${(props) => {
     return props.border ? "2px solid" : "";
   }};
   border-color: ${(props) => {
-    return props.border ? colors.grey_20 : "";
+    return props.theme.palette[props.border] || "";
   }};
   border-radius: ${(props) => {
     return props.border ? "5px" : "";
@@ -70,47 +58,53 @@ const iconHash = {
   right: ["far", "angle-right"],
   up: ["far", "angle-up"],
   // App
-  address: ["far", "map-marked"],
+  address: ["far", "map-marker"],
   alert_triangle: ["far", "exclamation-triangle"],
   alert: "exclamation",
-  analytics: "analytics",
+  analytics: ["far", "chart-bar"],
   apn: ["far", "hashtag"],
   attach: ["far", "paperclip"],
   bookmark_solid: "bookmark",
   bookmark: ["far", "bookmark"],
   call: "phone",
-  chat: ["far", "comments-alt"],
+  chat: ["far", "comment-alt"],
+  check_solid: "check",
   check: ["far", "check"],
-  check_circle: "check-circle",
+  check_circle: ["far", "check-circle"],
   circle_solid: "circle",
   circle: ["far", "circle"],
   clone: ["far", "clone"],
   close: ["far", "times"],
+  close_solid: "times",
+  compare: ["far", "equals"],
   configure: "cogs",
-  contact: ["far", "address-card"],
+  contact: "address-card",
   contacts: ["far", "address-book"],
   copy: ["far", "copy"],
   delete: ["far", "trash-alt"],
   directions: ["far", "directions"],
+  download: ["far", "arrow-to-bottom"],
   draw: ["far", "pencil"],
   drawings: ["far", "pencil-ruler"],
   edit: ["far", "edit"],
-  exclusion: ["far", "layer-minus"],
+  exchange: ["far", "exchange-alt"],
+  exclude: ["far", "minus-circle"],
+  export: ["far", "external-link-alt"],
   file: ["far", "file-alt"],
   filter: ["far", "filter"],
-  gps: ["far", "globe"],
+  gps: ["far", "location-arrow"],
   heatmap: ["far", "chart-scatter"],
-  help: ["far", "question-circle"],
+  help: ["far", "question"],
   home: "home-alt",
-  inclusion: ["far", "layer-plus"],
-  info_circle: "info-circle",
+  include: ["far", "check-circle"],
+  info_circle: ["far", "info-circle"],
   info: "info",
   labels: ["far", "tags"],
   layers: ["far", "layer-group"],
   link: ["far", "link"],
   list: ["far", "list-ul"],
   loading: "spinner",
-  location: "map-marker-alt",
+  location: ["far", "map-marker-alt"],
   mail_solid: "envelope",
   mail: ["far", "envelope"],
   map_pin: "map-pin",
@@ -120,7 +114,7 @@ const iconHash = {
   message: ["far", "comment-alt"],
   minimize: ["far", "compress-alt"],
   minus_square: ["far", "minus-square"],
-  minus: ["far", "minus"],
+  minus: "minus",
   more: ["far", "ellipsis-h"],
   my_location: ["far", "location-arrow"],
   notification_solid: "bell",
@@ -128,16 +122,20 @@ const iconHash = {
   open: ["far", "folder-open"],
   options: ["far", "ellipsis-v"],
   owner: "user-tag",
+  photos: ["far", "images"],
+  plus: ["far", "plus-circle"],
   plus_square: ["far", "plus-square"],
-  plus: ["far", "plus"],
+  preferences: ["far", "sliders-h"],
   print: ["far", "print"],
-  report: ["far", "file-chart-line"],
+  redo: ["far", "redo-alt"],
+  report: ["far", "file-alt"],
+  save: ["far", "save"],
   scroll_top: ["far", "caret-square-up"],
   search: ["far", "search"],
   settings_user: ["far", "user-cog"],
   settings_users: ["far", "users-cog"],
-  settings: "cog",
-  share: "share-square",
+  settings: ["far", "cog"],
+  share: ["far", "share"],
   share_content: ["far", "share-alt"],
   sign_in: ["far", "sign-in"],
   sign_out: ["far", "sign-out"],
@@ -145,11 +143,17 @@ const iconHash = {
   signal: ["far", "signal"],
   star_solid: "star",
   star: ["far", "star"],
+  support: ["far", "comment-alt"],
+  sync: ["far", "sync-alt"],
   table: ["far", "table"],
+  undo: ["far", "undo-alt"],
+  upload: ["far", "arrow-from-bottom"],
   user_add: "user-plus",
-  user_circle: "user-circle",
-  user: "user",
+  user_circle: ["far", "user-circle"],
+  user: ["far", "user"],
+  user_solid: "user",
   users: "users",
+  view: ["far", "eye"],
   wifi_none: ["far", "wifi-slash"],
   wifi: ["far", "wifi"],
   zoom_extents: ["far", "expand-arrows"],
@@ -158,60 +162,77 @@ const iconHash = {
 };
 
 function Icon({
-  id,
-  icon,
-  type,
-  size,
-  fixedWidth,
-  rotation,
-  flip,
-  spin,
-  pulse,
   border,
-  onClick,
-  disabled,
   className,
+  disabled,
+  fixedWidth,
+  flip,
+  icon,
+  id,
+  onClick,
+  pulse,
+  rotation,
+  size,
+  spin,
+  title,
+  type,
 }) {
   let color;
   icon = iconHash[icon.toLowerCase()] || ["far", icon.toLowerCase()];
   switch (type && type.toLowerCase()) {
     case "info":
-      color = colors.anchor;
+      color = "info";
       break;
     case "success":
-      color = colors.success;
+      color = "success";
       break;
     case "warning":
-      color = colors.warning;
+      color = "warning";
       break;
     case "alert":
-      color = colors.alert;
+      color = "alert";
+      break;
+    case "primary":
+      color = "primary";
+      break;
+    case "secondary":
+      color = "secondaryDark";
+      break;
+    case "disabled":
+      color = "disabled";
       break;
     case "inverse":
-      color = colors.white;
+      color = "inverse";
+      break;
+    case "primarylight":
+      color = "primaryLight";
+      break;
+    case "white":
+      color = "white";
       break;
     default:
       break;
   }
 
-  if (onClick) color = colors.anchor;
+  if (onClick) color = "primary";
 
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (isDisabled) color = colors.grey_40;
+  if (isDisabled) color = "disabled";
 
   const styledIcon = (
     <StyledIcon
-      id={id}
-      icon={icon}
-      color={color}
-      size={size}
-      fixedWidth={fixedWidth}
-      rotation={rotation}
-      flip={flip}
-      spin={spin}
-      pulse={pulse}
       border={border}
       className={className}
+      color={color}
+      fixedWidth={fixedWidth}
+      flip={flip}
+      icon={icon}
+      id={id}
+      pulse={pulse}
+      rotation={rotation}
+      size={size}
+      spin={spin}
+      title={title} // HTML attribute (display on :hover)
     />
   );
 
@@ -225,48 +246,50 @@ function Icon({
 }
 
 Icon.propTypes = {
-  id: PropTypes.string,
-  /** Options: 'info', 'success', 'warning', 'alert', 'inverse' */
-  type: PropTypes.string,
+  border: PropTypes.bool,
+  /** className used for extending styles */
+  className: PropTypes.string,
+  /** Used to set one or more icons to the same fixed width.
+   * Good for vertically aligning a series of icons
+   */
+  disabled: PropTypes.bool,
+  fixedWidth: PropTypes.bool,
+  /** Options: 'horizontal', 'vertical', 'both' */
+  flip: PropTypes.string,
   /** Enter the name of the icon as the prop value. (ex. icon='circle' */
   icon: PropTypes.string,
+  id: PropTypes.string,
+  onClick: PropTypes.func,
+  /** Rotation with eight (8) steps */
+  pulse: PropTypes.bool,
+  /** Options: 'info', 'success', 'warning', 'alert', 'inverse' */
+  /** Options: '90', '180', '270' */
+  rotation: PropTypes.number,
   /** Icons inherit the 'font-size' of the parent container and are relatively sized.
    * Options: 'xs', 'sm', 'lg', '2x', '3x', '4x', '5x', '6x', '7x', '8x', '9x', '10x'
    */
   size: PropTypes.string,
-  /** Used to set one or more icons to the same fixed width.
-   * Good for vertically aligning a series of icons
-   */
-  fixedWidth: PropTypes.bool,
-  /** Options: '90', '180', '270' */
-  rotation: PropTypes.number,
-  /** Options: 'horizontal', 'vertical', 'both' */
-  flip: PropTypes.string,
   /** Smooth rotation */
   spin: PropTypes.bool,
-  /** Rotation with eight (8) steps */
-  pulse: PropTypes.bool,
-  border: PropTypes.bool,
-  onClick: PropTypes.func,
-  disabled: PropTypes.bool,
-  /** className used for extending styles */
-  className: PropTypes.string,
+  title: PropTypes.string,
+  type: PropTypes.string,
 };
 
 Icon.defaultProps = {
-  id: null,
-  type: null,
-  icon: null,
-  size: null,
-  fixedWidth: false,
-  rotation: null,
-  flip: null,
-  spin: false,
-  pulse: false,
   border: false,
-  onClick: null,
-  disabled: false,
   className: null,
+  disabled: null,
+  fixedWidth: false,
+  flip: null,
+  icon: null,
+  id: null,
+  onClick: null,
+  pulse: false,
+  rotation: null,
+  size: null,
+  spin: false,
+  title: null,
+  type: null,
 };
 
 export default Icon;

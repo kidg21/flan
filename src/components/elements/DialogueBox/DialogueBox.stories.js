@@ -14,6 +14,7 @@ import Icon from "atoms/Icon";
 import { Section } from "layout/Form";
 import DMPlogo from "images/DMPlogo.jpg";
 import Container from "atoms/Container";
+import Command from "atoms/Command";
 
 const image = {
   src: DMPlogo,
@@ -99,7 +100,7 @@ storiesOf("Elements|Dialogue Box", module)
               { value: "jpg", label: ".jpg" },
               { value: "png", label: ".png" },
             ]}
-          />{" "}
+          />
         </Section>
       }
       action="two"

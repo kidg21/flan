@@ -1,17 +1,11 @@
 import React, { useContext } from "react";
 import styled, { css } from "styled-components";
-import { colors } from "Variables";
+import { Lighten, Darken } from "Variables";
 import { DisabledContext } from "States";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 
 /** TODO: move these to Variables */
-const buttonHover = css`
-  filter: brightness(85%) contrast(150%);
-`;
-const buttonActive = css`
-  filter: brightness(105%);
-`;
 
 const StyledButton = styled.button`
   display: flex;
@@ -20,18 +14,21 @@ const StyledButton = styled.button`
   width: ${(props) => {
     return props.fullWidth ? "100%" : "auto";
   }};
+  height: inherit;
   padding: ${(props) => {
     return props.buttonPadding || "0.5rem 0.7rem";
   }};
   justify-content: center;
   align-items: center;
   color: ${(props) => {
-    return props.textColor || colors.anchor;
+    return props.theme.palette[props.fontColor] || props.theme.text.primary;
   }};
   background-color: ${(props) => {
-    return props.backgroundColor || colors.white;
+    return props.theme.palette[props.backgroundColor] || props.theme.background.default;
   }};
-  border: 1px solid;
+  border: ${(props) => {
+    return props.noBorder ? "0px solid" : "1px solid";
+  }};
   border-radius: 4px;
   font-size: ${(props) => {
     return props.labelSize || "inherit";
@@ -43,11 +40,11 @@ const StyledButton = styled.button`
   transition: all 0.15s ease;
 
   &:hover {
-    ${buttonHover}
+    ${Darken}
   }
 
   &:active {
-  ${buttonActive}
+    ${Lighten}
   }
 
   &[disabled] {
@@ -70,37 +67,71 @@ const ButtonIcon = styled(Icon)`
 `;
 
 function Button({
-  id, label, icon, color, type, size, fullWidth, disabled, onClick, style,
+  id,
+  label,
+  icon,
+  color,
+  noBorder,
+  type,
+  size,
+  fullWidth,
+  disabled,
+  onClick,
+  style,
 }) {
   let buttonColor;
-  let textColor;
+  let fontColor;
   let backgroundColor;
   let buttonPadding;
   let labelSize;
   switch (color) {
     case "success":
-      buttonColor = colors.success;
-      textColor = buttonColor;
+      buttonColor = "success";
+      fontColor = buttonColor;
       break;
     case "warning":
-      buttonColor = colors.warning;
-      textColor = buttonColor;
+      buttonColor = "warning";
+      fontColor = buttonColor;
       break;
     case "alert":
-      buttonColor = colors.alert;
-      textColor = buttonColor;
+      buttonColor = "alert";
+      fontColor = buttonColor;
+      break;
+    case "info":
+      buttonColor = "info";
+      fontColor = buttonColor;
+      break;
+    case "primary":
+      buttonColor = "primary";
+      fontColor = buttonColor;
+      break;
+    case "secondary":
+      buttonColor = "secondary";
+      fontColor = buttonColor;
+      break;
+    case "disabled":
+      buttonColor = "disabled";
+      fontColor = buttonColor;
+      break;
+    // case "grey":
+    //     buttonColor = "grey";
+    //     fontColor = buttonColor;
+    //     break;
+    case "alert":
+      buttonColor = "alert";
+      fontColor = buttonColor;
       break;
     default:
-      buttonColor = colors.anchor;
+      buttonColor = "primary";
+      fontColor = buttonColor;
       break;
   }
-
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
-    textColor = colors.grey_60;
-    backgroundColor = colors.grey_20;
+    fontColor = "white";
+    backgroundColor = "grey3";
   } else if (type && type.toLowerCase() === "solid") {
-    textColor = colors.white;
+    fontColor = "white";
     backgroundColor = buttonColor;
   }
 
@@ -122,30 +153,32 @@ function Button({
       name={id}
       fullWidth={fullWidth}
       disabled={isDisabled}
+      type={type}
       onClick={onClick}
+      noBorder={noBorder}
       buttonColor={buttonColor}
-      textColor={textColor}
+      fontColor={fontColor}
       backgroundColor={backgroundColor}
       buttonPadding={buttonPadding}
       labelSize={labelSize}
       style={style}
     >
-      {icon ? <ButtonIcon icon={icon} /> : null}
-      <ButtonLabel>{label}</ButtonLabel>
+      {icon ? <ButtonIcon icon={icon} type={fontColor} size="lg" /> : null}
+      {label ? <ButtonLabel>{label}</ButtonLabel> : null}
     </StyledButton>
   );
 }
 
 Button.propTypes = {
   id: PropTypes.string,
-  label: PropTypes.string.isRequired,
+  label: PropTypes.string,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   type: PropTypes.string,
-  color: PropTypes.oneOf(["success", "warning", "alert"]),
+  color: PropTypes.oneOf(["success", "warning", "alert", "info", "primary", "secondary"]),
   size: PropTypes.oneOf(["small", "large"]),
   fullWidth: PropTypes.bool,
   disabled: PropTypes.bool,
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
   style: PropTypes.string,
 };
 

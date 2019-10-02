@@ -4,13 +4,23 @@ import PropTypes from "prop-types";
 
 const GridWrapper = styled.section`
   display: grid;
-  grid-gap: ${props => props.setGap || "1rem"};
-  grid-template-columns: ${props =>
-    props.setColumns || "repeat(auto-fill, minmax(22rem, 1fr))"};
-  grid-template-rows: ${props => props.setRows || "auto"};
+  grid-gap: ${(props) => {
+    return props.setGap || "1rem";
+  }};
+  grid-template-columns: ${(props) => {
+    return props.setColumns || "repeat(auto-fill, minmax(22rem, 1fr))";
+  }};
+  grid-template-rows: ${(props) => {
+    return props.setRows || "auto";
+  }};
+  align-items: ${(props) => {
+    return props.alignItems || "flex-start";
+  }};
 `;
 
-function Grid({ children, columns, gap, id, rows, className }) {
+function Grid({
+  align, children, columns, gap, id, rows, className,
+}) {
   // 1-12 colums with custom override
   let setColumns;
   const _columns = parseInt(columns);
@@ -20,15 +30,16 @@ function Grid({ children, columns, gap, id, rows, className }) {
     setColumns = columns;
   }
   // 'auto' by default with custom override
-  let setRows = rows;
+  const setRows = rows;
   // 'gutter' between grid items
   let setGap;
+  let alignItems;
   switch (gap) {
     case "none":
       setGap = "0";
       break;
     case "tiny":
-      setGap = ".25rem";
+      setGap = ".35rem";
       break;
     case "small":
       setGap = ".75rem";
@@ -47,8 +58,19 @@ function Grid({ children, columns, gap, id, rows, className }) {
       setGap = gap;
       break;
   }
+  switch (align) {
+    case "center":
+      alignItems = "center";
+      break;
+    case "bottom":
+      alignItems = "flex-end";
+      break;
+    default:
+      break;
+  }
   return (
     <GridWrapper
+      alignItems={alignItems}
       id={id}
       setColumns={setColumns}
       setGap={setGap}
@@ -90,7 +112,18 @@ Grid.propTypes = {
       "[grid-template-rows]",
     ]),
   ]),
+  align: PropTypes.oneOf(["default (top)", "center", "bottom"]),
   className: PropTypes.string,
+};
+
+Grid.defaultProps = {
+  id: null,
+  children: null,
+  columns: null,
+  rows: null,
+  gap: null,
+  align: null,
+  className: null,
 };
 
 export { Grid as default };

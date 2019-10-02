@@ -29,8 +29,8 @@ const buildingData = [
 storiesOf("Elements|ListCards", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  .add("Property List Card", () =>
-    React.createElement(() => {
+  .add("Property List Card", () => {
+    return React.createElement(() => {
       return (
         <PropertyListCard
           lotData={lotData}
@@ -40,10 +40,10 @@ storiesOf("Elements|ListCards", module)
           APN="374-342-8957"
         />
       );
-    }),
-  )
-  .add("PropCard", () =>
-    React.createElement(() => {
+    });
+  })
+  .add("PropCard", () => {
+    return React.createElement(() => {
       return (
         <PropCard
           address="2801 Kelvin Avenue, Irvine, CA 92614"
@@ -51,15 +51,15 @@ storiesOf("Elements|ListCards", module)
           price="$11,209,340"
         />
       );
-    }),
-  )
-  .add("ContactListCard", () =>
-    React.createElement(() => {
+    });
+  })
+  .add("ContactListCard", () => {
+    return React.createElement(() => {
       return (
         <ContactListCard
           name="Annabelle Granger"
           ownerAddress="2801 Kelvin Avenue, Irvine, CA 92614"
         />
       );
-    }),
-  );
+    });
+  });

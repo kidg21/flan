@@ -5,7 +5,6 @@ import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
 import Title from "base/Typography";
 
-// Colors
 storiesOf("Elements|Card Bar/", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)

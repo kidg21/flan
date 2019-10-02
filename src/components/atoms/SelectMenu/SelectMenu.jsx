@@ -8,6 +8,13 @@ import Select from "react-select";
 import { Skeleton } from "helpers";
 import { DisabledContext } from "States";
 
+
+// &:focus {
+//   border-color: ${(props) => {
+//   return props.theme.palette[props.inputBorderColorHover] || props.theme.palette.primaryLight;
+// }};
+
+
 const selectStyles = {
   // Wrapper
   container: (styles) => {
@@ -25,17 +32,18 @@ const selectStyles = {
       ...styles,
       "backgroundColor": bgColor,
       "borderColor": isFocused
-        ? `${colors.success_light}!important`
+        ? `${colors.success}!important`
         : colors.grey_20,
       "borderBottomColor": colors.grey_20,
+      "boxShadow": "none",
+      "cursor": isDisabled ? "not-allowed" : "pointer",
+      "flexWrap": "nowrap",
       "fontWeight": "normal",
       "letterSpacing": ".5px",
       "minHeight": "2.75rem",
-      "cursor": isDisabled ? "not-allowed" : "pointer",
       ":hover": {
         borderColor: colors.grey_40,
       },
-      "boxShadow": "none",
     };
   },
   placeholder: (styles, { isFocused }) => {
@@ -124,9 +132,9 @@ const selectStyles = {
     if (isDisabled) {
       color = colors.grey_40;
     } else if (isSelected) {
-      color = colors.black;
+      color = colors.grey_20;
     } else if (isFocused) {
-      color = colors.success;
+      color = colors.black;
     }
 
     return {
@@ -158,7 +166,6 @@ function SelectMenu({
   id,
   name,
   placeholder,
-  displayInline,
   options,
   selectOptions,
   disabled,
@@ -226,9 +233,8 @@ function SelectMenu({
       isRequired={isRequired}
       disabled={isDisabled} // input attribute
       error={state.error !== null}
-      displayInline={displayInline}
       columns="1"
-      gap="small"
+      gap="tiny"
     >
       {label ? <InputLabel label={label} isRequired={isRequired} /> : null}
       <Select
@@ -274,7 +280,6 @@ SelectMenu.propTypes = {
   isClearable: PropTypes.bool,
   isSearchable: PropTypes.bool,
   isLoading: PropTypes.bool,
-  displayInline: PropTypes.bool,
   isRtl: PropTypes.bool,
   helpText: PropTypes.string,
   onChangeState: PropTypes.func,
@@ -293,7 +298,6 @@ SelectMenu.defaultProps = {
   isClearable: true,
   isSearchable: true,
   isLoading: false,
-  displayInline: false,
   isRtl: false,
   helpText: null,
   onChangeState: null,

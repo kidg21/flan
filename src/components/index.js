@@ -23,6 +23,7 @@ export { default as Banner } from "./blocks/Banner";
 export { default as Bar } from "./blocks/Bar";
 export { default as List, ListItem } from "./blocks/List";
 export { default as IconBlock } from "./blocks/IconBlock";
+export { default as InputBlock } from "./blocks/InputBlock";
 export { default as MapLegend } from "./blocks/MapLegend";
 export { default as MediaBlock } from "./blocks/MediaBlock";
 export { default as Menu } from "./blocks/Menu";
@@ -49,6 +50,7 @@ export {
   default as Form,
   Header,
   Section,
+  Label,
   InputLabel,
   HelpText,
   ErrorText,
@@ -59,5 +61,4 @@ export { default as Modal } from "./layout/Modal";
 export { default as Page } from "./layout/Page";
 export { default as Panel, PanelSection } from "./layout/Panel";
 
-
-export {screen} from "./base/Variables/Variables.jsx";
+export { screen } from "./base/Variables/Variables.jsx";

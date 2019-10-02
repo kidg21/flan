@@ -1,280 +1,146 @@
-/* eslint-disable no-nested-ternary */
+/* eslint-disable linebreak-style */
+/* eslint-disable complexity */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { colors } from "Variables";
 import { DisabledContext } from "States";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
-import SelectMenu from "atoms/SelectMenu";
-import Button from "atoms/Button";
+import Grid from "layout/Grid";
+import TextInput from "atoms/TextInput";
 
-const TextInputContainer = styled.div`
-  display: grid;
-  grid-template-columns: ${props => {
-    /* 3 Inputs */
-    return props.threeInputs
-      ? "repeat(3, 1fr)"
-      : /* 2 Inputs */
-      props.twoInputs
-      ? "repeat(2, 1fr)"
-      : /* Prefix Label (conditionals) */
-      props.prefix
-      ? props.postfix || props.label
-        ? "minmax(auto, auto) minmax(auto, 3fr) minmax(auto, auto)"
-        : props.postSelect
-        ? "minmax(auto, auto) minmax(auto, 3fr) minmax(auto, 2fr)"
-        : "minmax(auto, auto) minmax(auto, 3fr)"
-      : /* Postfix Select (conditionals) */
-      props.preSelect
-      ? props.postfix || props.label
-        ? "minmax(auto, 2fr) minmax(auto, 3fr) minmax(auto, auto)"
-        : props.postSelect
-        ? "minmax(auto, 2fr) minmax(auto, 3fr) minmax(auto, 2fr)"
-        : "minmax(auto, 2fr) minmax(auto, 3fr)"
-      : /* Postfix Label */
-      props.postfix || props.label
-      ? "minmax(auto, 3fr) minmax(auto, auto)"
-      : /* Postfix Select */
-      props.postSelect
-      ? "minmax(auto, 3fr) minmax(auto, 2fr)"
-      : /* Single Input (default) */
-        "repeat(1, 1fr)";
+const TextInputContainer = styled(Grid)`
+  color: ${(props) => {
+    return props.theme.text[props.inputTextColor] || "";
   }};
-  grid-gap: ${props => {
-    return props.slider ? "0.15rem" : "0.35rem";
-  }};
-  align-content: flex-start;
-  color: ${props => {
-    return props.error ? colors.alert : props.disabled ? colors.grey_40 : "";
+  width: 100%;
+`;
+
+const InputGroup = styled(Grid)`
+  grid-template-columns: ${(props) => {
+    return props.gridColumns || "";
   }};
 `;
 
-const PrePostLabel = styled.label`
-  display: flex;
-  justify-content: center;
-  border-radius: 5px;
-  align-items: center;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: lowercase;
-  color: ${colors.grey_60};
-  background-color: ${colors.grey_light};
-  border: 1px solid ${colors.grey_20};
-  border-bottom: 1px solid ${colors.grey_20};
-  border-radius: 4px;
-  padding: 0.25rem 1rem;
-  white-space: nowrap;
-`;
-
-const TextInput = styled.input`
-  border: 1px solid ${colors.grey_20};
-  border-bottom: 1px solid ${colors.grey_20};
-  border-color: ${props => {
-    return props.error ? colors.alert : "";
-  }};
-  border-radius: ${props => {
-    return props.isRound ? "10rem !important" : "";
-  }};
-  /* background-color: ${props => {
-    return props.error ? colors.alert_tint : "";
-  }}; */
-  caret-color: ${props => {
-    return props.error ? colors.alert : "";
-  }};
-  min-height: 2.75rem;
-  padding: ${props => {
-    return props.isRound ? "0.75rem 1rem" : "0.5rem 0.75rem";
-  }};
-
-  ::placeholder {
-    color: ${props => {
-      return props.error ? colors.alert : "";
-    }};
-  }
-  &:hover {
-    border: 1px solid ${colors.grey_40};
-    border-color: ${props => {
-      return props.error ? colors.alert : "";
-    }};
-    }
-  }
-  &:focus {
-    background-color: ${props => {
-      return props.error ? colors.alert_tint : "";
-    }};
-    border-color: ${props => {
-      return props.error ? colors.alert : colors.success_light;
-    }};
-    ::placeholder {
-      color: ${props => {
-        return props.error ? colors.alert : colors.grey_60;
-      }};
-    }
-    ::selection {
-      background-color: ${props => {
-        return props.error ? colors.alert : "";
-      }};
-      
-    }
+const PrePost = styled.section`
+  width: 100%;
+  height: 100%;
+  > * {
+    width: 100%;
+    height: 100%;
   }
 `;
 
 function InputBlock({
-  id,
-  type,
-  pattern,
-  value,
-  label, // Label prop
-  placeholder,
-  helpText,
+  className,
   disabled,
-  isRequired,
-  isRound,
-  twoInputs,
-  id_2,
-  type_2,
-  value_2,
-  pattern_2,
-  placeholder_2,
-  threeInputs,
-  id_3,
-  type_3,
-  value_3,
-  pattern_3,
-  placeholder_3,
-  prefix,
-  postfix,
-  preSelect,
-  postSelect,
-  buttonLabel,
   error,
-  style,
+  helpText,
+  id,
+  textInputs,
+  isRequired,
+  label,
+  onChange,
+  postfix,
+  prefix,
 }) {
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  let inputTextColor;
+  if (error && !disabled) {
+    inputTextColor = "alert";
+  }
+  const inputElements = textInputs.map((input) => {
+    return (
+      <TextInput
+        disabled={isDisabled}
+        error={!!error}
+        id={input.id}
+        name={input.id}
+        onChange={onChange}
+        pattern={input.pattern}
+        placeholder={input.placeholder}
+        readonly={input.readonly}
+        title={input.title}
+        type={input.type}
+        value={input.value}
+      />
+    );
+  });
+  let inputContainer = inputElements;
+  if (textInputs.length === 2) {
+    inputContainer = (
+      <Grid columns="2" gap="tiny">
+        {inputElements}
+      </Grid>
+    );
+  } else if (textInputs.length === 3) {
+    inputContainer = (
+      <Grid columns="3" gap="tiny">
+        {inputElements}
+      </Grid>
+    );
+  }
+  let gridColumns;
+  if (prefix && !postfix) {
+    gridColumns = "minmax(auto, 1fr) minmax(auto, 3fr)";
+  } else if (!prefix && postfix) {
+    gridColumns = "minmax(auto, 3fr) minmax(auto, 1fr)";
+  } else {
+    /** If neither prefix/postfix or both (unsupported) */
+    gridColumns = "repeat(1, 1fr)";
+  }
   return (
     <DisabledContext.Provider value={isDisabled}>
       <TextInputContainer
-        id={id}
-        isRequired={isRequired}
-        disabled={isDisabled} // input attribute
+        className={className}
+        columns="1"
+        disabled={isDisabled}
         error={error}
-        prefix={prefix}
+        gap="tiny"
+        id={id}
+        inputTextColor={inputTextColor}
+        isRequired={isRequired}
         postfix={postfix}
-        preSelect={preSelect}
-        postSelect={postSelect}
-        label={buttonLabel}
-        twoInputs={twoInputs} // 2 inputs in a row
-        threeInputs={threeInputs} // 3 inputs in a row
-        style={style}
+        prefix={prefix}
       >
-        {/* Input Label */}
         {label ? <InputLabel isRequired={isRequired} label={label} /> : null}
-        {/* Prefix Label (conditional) */}
-        {prefix ? <PrePostLabel>{prefix}</PrePostLabel> : null}
-        {/* Prefix Select Menu (conditional) */}
-        {preSelect ? (
-          <SelectMenu
-            displayInline // Grid Override
-            label={null}
-            name="Choose"
-            isClearable={false}
-            options={preSelect}
-            defaultValue={preSelect[0]}
-          />
-        ) : null}
-        <TextInput
-          id={id} // input attribute
-          name={id} // input attribute
-          type={type} // input attribute
-          value={value} // input attribute
-          placeholder={placeholder} // input attribute
-          pattern={pattern} // input attribute
-          disabled={isDisabled} // input attribute
-          error={error}
-          isRound={isRound}
-        />
-        {/* Column 2 (conditional) */}
-        {twoInputs || threeInputs ? (
-          <TextInput
-            id={id_2} // input attribute
-            name={id_2} // input attribute
-            type={type_2} // input attribute
-            value={value_2} // input attribute
-            placeholder={placeholder_2} // input attribute
-            pattern={pattern_2} // input attribute
-            disabled={isDisabled} // input attribute
-            error={error}
-            isRound={isRound}
-          />
-        ) : null}
-        {/* Column 3 (conditional) */}
-        {threeInputs ? (
-          <TextInput
-            id={id_3} // input attribute
-            name={id_3} // input attribute
-            type={type_3} // input attribute
-            value={value_3} // input attribute
-            placeholder={placeholder_3} // input attribute
-            pattern={pattern_3} // input attribute
-            disabled={isDisabled} // input attribute
-            error={error}
-            isRound={isRound}
-          />
-        ) : null}
-        {/* Postfix (conditional) */}
-        {postfix ? <PrePostLabel>{postfix}</PrePostLabel> : null}
-        {/* Postfix Button (conditional) */}
-        {buttonLabel ? <Button label={buttonLabel} isPrimary /> : null}
-        {/* Postfix Select Menu (conditional) */}
-        {postSelect ? (
-          <SelectMenu
-            displayInline // Grid Override
-            label={null}
-            name="Choose"
-            isClearable={false}
-            options={postSelect}
-            defaultValue={postSelect[0]}
-          />
-        ) : null}
-        {/* Help Text */}
+        <InputGroup gridColumns={gridColumns} gap="tiny">
+          {prefix && !postfix ? <PrePost>{prefix}</PrePost> : null}
+          {inputContainer}
+          {!prefix && postfix ? <PrePost>{postfix}</PrePost> : null}
+        </InputGroup>
         {helpText ? <HelpText>{helpText}</HelpText> : null}
-        {/* Error Message (required) */}
-        {typeof error === "string" && !isDisabled ? <ErrorText>{error}</ErrorText> : null}
+        {typeof error === "string" && !disabled ? <ErrorText>{error}</ErrorText> : null}
       </TextInputContainer>
     </DisabledContext.Provider>
   );
 }
 
 InputBlock.propTypes = {
-  id: PropTypes.string,
-  type: PropTypes.string,
-  pattern: PropTypes.string,
-  value: PropTypes.string,
-  label: PropTypes.string.isRequired,
-  placeholder: PropTypes.string,
-  helpText: PropTypes.string,
-  isRequired: PropTypes.bool,
+  className: PropTypes.string,
   disabled: PropTypes.bool,
-  isRound: PropTypes.bool,
-  twoInputs: PropTypes.bool,
-  id_2: PropTypes.string,
-  type_2: PropTypes.string,
-  value_2: PropTypes.string,
-  pattern_2: PropTypes.string,
-  placeholder_2: PropTypes.string,
-  threeInputs: PropTypes.bool,
-  id_3: PropTypes.string,
-  type_3: PropTypes.string,
-  value_3: PropTypes.string,
-  pattern_3: PropTypes.string,
-  placeholder_3: PropTypes.string,
-  prefix: PropTypes.string,
+  error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  helpText: PropTypes.string,
+  id: PropTypes.string,
+  isRequired: PropTypes.bool,
+  label: PropTypes.string,
+  onChange: PropTypes.func,
+  placeholder: PropTypes.string,
   postfix: PropTypes.string,
-  preSelect: PropTypes.array,
-  postSelect: PropTypes.array,
-  buttonLabel: PropTypes.string,
-  error: PropTypes.bool,
-  style: PropTypes.string,
+  prefix: PropTypes.string,
+  textInputs: PropTypes.node.isRequired,
+};
+InputBlock.defaultProps = {
+  className: null,
+  disabled: null,
+  error: null,
+  helpText: null,
+  id: null,
+  isRequired: false,
+  label: null,
+  onChange: null,
+  placeholder: null,
+  postfix: null,
+  prefix: null,
 };
 
 export { InputBlock as default };
