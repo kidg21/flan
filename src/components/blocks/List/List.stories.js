@@ -313,7 +313,7 @@ storiesOf("Blocks|List", module)
         <List title="You Can Give The List A Title">
           <ListItem label="List Item" />
           <ListItem label="List Item" description="This is the description">
-            <Command />
+            <Command command="edit"/>
           </ListItem>
           <ListItem
             label="List Item"
@@ -343,7 +343,7 @@ storiesOf("Blocks|List", module)
             label="List Item"
             description="This description is much longer but that's okay because it will just keep on wrapping to the next line until you run out of things to say in support of the long title that you just typed above this one."
           >
-            <Command name="settings" />
+            <Command command="settings" />
           </ListItem>
           <ListItem label="List Item">
             <Checkbox id="enable" label="Enable" align="right" />

@@ -1,33 +1,15 @@
-import React, { useState } from "react";
-import styled from "styled-components";
+import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
-import {
-  withKnobs,
-  text,
-  number,
-  boolean,
-  select,
-  optionsKnob as options,
-} from "@storybook/addon-knobs";
+import { withKnobs, text, optionsKnob as options } from "@storybook/addon-knobs";
 import { Padding } from "helpers/Display";
-import Grid from "layout/Grid";
-import Card from "layout/Card";
+import Card, { CardList } from "layout/Card";
 import Icon from "atoms/Icon";
 import IconBlock from "blocks/IconBlock";
 import Command from "atoms/Command";
 import Title from "base/Typography";
 import Bar from "blocks/Bar";
 import BarNotes from "./Bar.md";
-
-const Section = styled.h6`
-  margin: 0;
-  line-height: normal;
-  color: ${props => {
-    return props.theme.text.primary;
-  }};
-  grid-column: 1/-1;
-`;
 
 const image = (
   <img
@@ -119,17 +101,20 @@ storiesOf("Blocks|Bar", module)
   })
 
   .add("Some Bars", () => (
-    <Grid>
-      <Section>Command / Text / Command</Section>
+    <CardList>
       <Card>
         <Bar left={<Command />} center={shortTitle} right={<Command />} />
       </Card>
       <Card>
-        <Bar left={<Command />} center={longTitle} right={<Command />} />
+        <Bar
+          left={<Command align="right" />}
+          center={longTitle}
+          right={<Command align="right" />}
+        />
       </Card>
       <Card>
         <Bar
-          left={<Command />}
+          left={<Command align="center" />}
           center={
             <>
               <Title text="Towgood, Gary T." />
@@ -140,11 +125,10 @@ storiesOf("Blocks|Bar", module)
               />
             </>
           }
-          right={<Command />}
+          right={<Command align="center" />}
         />
       </Card>
 
-      <Section>Text / Command</Section>
       <Card>
         <Bar left={shortTitle} right={<Command />} />
       </Card>
@@ -155,7 +139,6 @@ storiesOf("Blocks|Bar", module)
         <Bar left={multipleLines} right={<Command />} />
       </Card>
 
-      <Section>Text</Section>
       <Card>
         <Bar left={shortTitle} />
       </Card>
@@ -166,7 +149,6 @@ storiesOf("Blocks|Bar", module)
         <Bar left={multipleLines} />
       </Card>
 
-      <Section>Commands</Section>
       <Card>
         <Bar left={<Command />} />
       </Card>
@@ -183,16 +165,14 @@ storiesOf("Blocks|Bar", module)
         <Bar left={<Command />} center={<Command />} right={<Command />} />
       </Card>
 
-      <Section>One Icon per section</Section>
       <Card>
         <Bar
-          left={<Icon icon="circle_solid" />}
-          center={<Icon icon="circle_solid" />}
-          right={<Icon icon="circle_solid" />}
+          left={<Icon icon="circle" />}
+          center={<Icon icon="circle" />}
+          right={<Icon icon="circle" />}
         />
       </Card>
 
-      <Section>Icon Block in single section</Section>
       <Card>
         <Bar
           left={
@@ -205,7 +185,6 @@ storiesOf("Blocks|Bar", module)
         />
       </Card>
 
-      <Section>Icon Block / Text / Icon Block</Section>
       <Card>
         <Bar
           contentAlign="center"
@@ -227,7 +206,6 @@ storiesOf("Blocks|Bar", module)
         />
       </Card>
 
-      <Section>Text / Icon Block</Section>
       <Card>
         <Bar
           contentAlign="center"
@@ -255,7 +233,6 @@ storiesOf("Blocks|Bar", module)
         />
       </Card>
 
-      <Section>Text / Image</Section>
       <Card>
         <Bar left={multipleLines} right={image} />
       </Card>
@@ -268,5 +245,5 @@ storiesOf("Blocks|Bar", module)
       <Card>
         <Bar left={image} center={multipleLines} centerAlign="right" />
       </Card>
-    </Grid>
+    </CardList>
   ));

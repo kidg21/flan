@@ -84,11 +84,6 @@ function Badge({
       badgeLeft = "0";
       setTransform = "translate(-10%, 50%)";
       break;
-    case "topRight":
-      badgeBottom = "100%";
-      badgeLeft = "100%";
-      setTransform = "translate(-90%, 50%)";
-      break;
     case "bottomRight":
       badgeBottom = "0";
       badgeLeft = "100%";
@@ -133,4 +128,9 @@ Badge.propTypes = {
   style: PropTypes.string,
 };
 
-export default Badge;
+Badge.defaultProps = {
+  label: null,
+  id: null,
+};
+
+export { Badge as default };

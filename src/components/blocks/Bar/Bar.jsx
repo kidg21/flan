@@ -1,3 +1,4 @@
+/* eslint-disable complexity */
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -24,7 +25,9 @@ const BarLayout = styled.div`
 
 const Slot = styled.div`
   display: flex;
-  flex: auto;
+  flex: ${(props) => {
+    return props.setFlex || "auto";
+  }};
   flex-direction: column;
   align-items: ${(props) => {
     return props.alignItems || "";
@@ -73,6 +76,18 @@ function Bar({
   let topPadding;
   let barPadding;
   let textAlign;
+  let leftPadding;
+  let rightPadding;
+  if (center || right) {
+    leftPadding = "0 1em 0 0";
+  } else {
+    leftPadding = "0";
+  }
+  if (left || center) {
+    rightPadding = "0 0 0 1em";
+  } else {
+    rightPadding = "0";
+  }
   switch (padding && padding.toLowerCase()) {
     case "none":
       barPadding = "0";
@@ -125,7 +140,7 @@ function Bar({
       className={className}
     >
       {left ? (
-        <Slot widthMin={leftWidth} widthMax={leftWidth} setPadding="0 1em 0 0">
+        <Slot setFlex="1 0 25%" widthMin={leftWidth} widthMax={leftWidth} setPadding={leftPadding}>
           {left}
         </Slot>
       ) : null}
@@ -136,11 +151,12 @@ function Bar({
       ) : null}
       {right ? (
         <Slot
+          setFlex="1 0 25%"
           widthMin={rightWidth}
           widthMax={rightWidth}
           alignItems="flex-end"
           textAlign="right"
-          setPadding="0 0 0 1em"
+          setPadding={rightPadding}
         >
           {right}
         </Slot>

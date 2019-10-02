@@ -22,7 +22,7 @@ function PropCard({
             <Title text={address} weight="bold" />
             <Title text={landUse} size="small" />
             <Title text={price} size="small" />
-            <Command name="add to list" />
+            <Command icon="plus" label="Add to list" />
           </Titles>
         }
         right={image}
