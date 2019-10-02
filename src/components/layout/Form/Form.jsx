@@ -134,9 +134,7 @@ InputLabel.defaultProps = {
 };
 
 const Help = styled(Label)`
-  color: ${props => {
-    return props.theme.text.primary;
-  }};
+  color: inherit;
   font-weight: initial;
 `;
 function HelpText({ helpText, children }) {
