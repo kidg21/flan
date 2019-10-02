@@ -38,5 +38,5 @@ storiesOf("Work|Table", module)
     return <Table data={data} style="legend" />;
   })
   .add("Data Table", () => {
-    return <Table columns={Columns} data={Users} scroll header />;
+    return <Table columns={Columns} setHeight="150px" data={Users} scroll header />;
   });

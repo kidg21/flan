@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import Container from "atoms/Container";
 import { SkeletonStatic } from "helpers";
@@ -9,20 +10,10 @@ const Wrapper = styled.div`
 `;
 const TableContainer = styled.table`
   width: 100%;
-  overflow-y: ${(props) => {
-    return props.scroll ? "auto" : "";
-  }};
-  overflow-x: ${(props) => {
-    return props.scroll ? "auto" : "";
-  }};
   table-layout: fixed;
   border-collapse: collapse;
-  cell-padding: 1rem;
-  overflow: ${(props) => {
-    return props.scroll ? "scroll" : "";
-  }};
   min-width: 400px;
-  cell-spacing: 1rem;
+
 
   &:empty {
     ${SkeletonStatic};
@@ -91,7 +82,7 @@ function Table({
   switch (style) {
     case "legend":
       cellBorder = "";
-      cellPadding = "0.25em 0.25em 0.25em";
+      cellPadding = "0.15em 0.15em 0.15em";
       fontWeight = "bold";
       break;
     case "standard":
@@ -177,7 +168,7 @@ function Table({
       {headerContent}
       {scroll ? (
         <Container height={setHeight}>
-          <TableContainer scroll={scroll}>{content}</TableContainer>
+          <TableContainer>{content}</TableContainer>
         </Container>
       ) : (
         <TableContainer>{content}</TableContainer>
@@ -185,4 +176,27 @@ function Table({
     </Wrapper>
   );
 }
+
+Table.propTypes = {
+  id: PropTypes.string,
+  header: PropTypes.any,
+  scroll: PropTypes.bool,
+  setHeight: PropTypes.string,
+  fontSize: PropTypes.string,
+  style: PropTypes.any,
+  data: PropTypes.any,
+  columns: PropTypes.any,
+};
+
+Table.defaultProps = {
+  id: null,
+  header: null,
+  scroll: false,
+  setHeight: null,
+  fontSize: null,
+  style: null,
+  data: null,
+  columns: null,
+};
+
 export default Table;
