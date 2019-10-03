@@ -1,10 +1,12 @@
-import styled, { css } from "styled-components"
-import { fonts, colors, shadows } from "Variables"
-import { PlaceholderText } from "helpers/Placeholders.jsx"
+import styled, { css } from "styled-components";
+import { fonts, shadows } from "Variables";
+import { PlaceholderText } from "helpers/Placeholders.jsx";
 
 const Panel = styled.div`
   position: absolute;
-  background: ${colors.white};
+  background: ${(props) => {
+    return props.theme.background.default;
+  }};
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -23,6 +25,9 @@ const Panel = styled.div`
     &:before {
       ${PlaceholderText};
       content: "Panel";
+      color: ${(props) => {
+    return props.theme.text.primary;
+  }};
     }
   }
 `;
@@ -31,19 +36,30 @@ const PanelSection = styled.section`
   position: relative;
   display: flex;
   flex-direction: column;
-  flex: ${props => (props.body ? "auto" : "none")};
-  z-index: ${props => (props.body ? "0" : "1")};
+  flex: ${(props) => {
+    return props.body ? "auto" : "none";
+  }};
+  z-index: ${(props) => {
+    return props.body ? "0" : "1";
+  }};
   overflow-x: hidden;
-  overflow-y: ${props => (props.body ? "scroll" : "")};
+  overflow-y: ${(props) => {
+    return props.body ? "scroll" : "";
+  }};
   max-height: 100vh;
 
-  box-shadow: ${props => (props.body ? "none" : shadows.panelSectionShadow)};
+  box-shadow: ${(props) => {
+    return props.body ? "none" : shadows.panelSectionShadow;
+  }};
   transition: all 0.2s ease-in-out;
   /* Prototype Content - displays when a Panel Section is empty */
   &:empty {
     &:before {
       ${PlaceholderText};
       content: "PanelSection";
+      color: ${(props) => {
+    return props.theme.text.primary;
+  }};
     }
   }
 `;

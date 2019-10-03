@@ -4,11 +4,11 @@ import PropTypes from "prop-types";
 import Card from "layout/Card";
 import Command from "atoms/Command";
 import Bar from "blocks/Bar";
+import Grid from "layout/Grid";
 import styled from "styled-components";
 
-
 const Titles = styled.div`
-display: inline-block'
+  display: inline-block;
 `;
 
 function PropCard({
@@ -19,12 +19,10 @@ function PropCard({
       <Bar
         left={
           <Titles>
-            <Title text={address} />
-            <p>
-              {landUse} <br />
-              {price}
-            </p>
-            <Command icon="plus" label="Add To List" />
+            <Title text={address} weight="bold" />
+            <Title text={landUse} size="small" />
+            <Title text={price} size="small" />
+            <Command icon="plus" label="Add to list" />
           </Titles>
         }
         right={image}

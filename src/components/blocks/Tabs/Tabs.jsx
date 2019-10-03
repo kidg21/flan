@@ -6,32 +6,52 @@ import PropTypes from "prop-types";
 import Button from "atoms/Button";
 
 const TabsWrapper = styled.section`
-  position: ${(props) => { return props.setPosition || ""; }};
-  display: ${(props) => { return props.setOrientation || "grid"; }};
-  grid-gap: ${(props) => { return (props.isSearch ? "" : "2px"); }};
-  grid-template-columns: ${(props) => { return props.setColumns || "repeat(auto-fit, minmax(0, 1fr))"; }};
+  position: ${(props) => {
+    return props.setPosition || "";
+  }};
+  display: ${(props) => {
+    return props.setOrientation || "grid";
+  }};
+  grid-gap: ${(props) => {
+    return props.isSearch ? "" : "2px";
+  }};
+  grid-template-columns: ${(props) => {
+    return props.setColumns || "repeat(auto-fit, minmax(0, 1fr))";
+  }};
   flex-direction: column;
-  bottom: ${(props) => { return props.alignBottom || ""; }};
-  right: ${(props) => { return (props.alignRight ? "0" : ""); }};
-  width: ${(props) => { return props.setWidth || "100%"; }};
-  height: ${(props) => { return props.setHeight || "100%"; }};
-  padding: ${(props) => { return (props.isFloating ? ".25rem" : ""); }};
-  z-index: ${(props) => { return (props.isFloating ? "1001" : ""); }};
-  filter: ${(props) => { return (props.isFloating ? shadows.cardShadow : ""); }};
+  bottom: ${(props) => {
+    return props.alignBottom || "";
+  }};
+  right: ${(props) => {
+    return props.alignRight ? "0" : "";
+  }};
+  width: ${(props) => {
+    return props.setWidth || "100%";
+  }};
+  height: ${(props) => {
+    return props.setHeight || "100%";
+  }};
+  padding: ${(props) => {
+    return props.isFloating ? ".25rem" : "";
+  }};
+  z-index: ${(props) => {
+    return props.isFloating ? "1001" : "";
+  }};
+  filter: ${(props) => {
+    return props.isFloating ? shadows.cardShadow : "";
+  }};
   > * {
-    margin: ${(props) => { return (props.isFloating ? ".5rem" : ""); }};
-    border-radius: ${(props) => { return (props.isFloating ? ".5rem" : "0"); }};
+    margin: ${(props) => {
+    return props.isFloating ? ".5rem" : "";
+  }};
+    border-radius: ${(props) => {
+    return props.isFloating ? ".5rem" : "0";
+  }};
   }
 `;
 
 function Tabs({
-  id,
-  children,
-  columns,
-  align,
-  isFloating,
-  style,
-  isSearch,
+  id, children, columns, align, isFloating, style, isSearch,
 }) {
   let setColumns;
   let setPosition;
@@ -110,8 +130,11 @@ function Tab({
   icon,
   tabLabel,
   onClick,
+  noBorder,
   isSelected,
   disabled,
+  color,
+  selectedColor,
 }) {
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   return (
@@ -124,8 +147,9 @@ function Tab({
           onClick={onClick}
           isSelected={isSelected}
           disabled={isDisabled}
-          type="solid"
-          color="success"
+          color={selectedColor}
+          type='solid'
+          noBorder={noBorder}
         />
       ) : (
         <Button
@@ -135,6 +159,8 @@ function Tab({
           onClick={onClick}
           isSelected={isSelected}
           disabled={isDisabled}
+          color={color}
+          noBorder={noBorder}
         />
       )}
     </Fragment>

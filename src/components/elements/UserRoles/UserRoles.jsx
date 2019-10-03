@@ -254,5 +254,4 @@ UserRoles.defaultProps = {
   searchWidth: "25%",
   title: "User Roles",
 };
-
-export default UserRoles;
+export { UserRoles as default, UserEntry };

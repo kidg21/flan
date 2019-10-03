@@ -65,7 +65,6 @@ storiesOf("Blocks|List", module)
                 success: "success",
                 warning: "warning",
                 alert: "alert",
-                inverse: "inverse",
               },
               null,
               "Item 1",
@@ -92,7 +91,6 @@ storiesOf("Blocks|List", module)
                 success: "success",
                 warning: "warning",
                 alert: "alert",
-                inverse: "inverse",
               },
               null,
               "Item 2",
@@ -119,7 +117,6 @@ storiesOf("Blocks|List", module)
                 success: "success",
                 warning: "warning",
                 alert: "alert",
-                inverse: "inverse",
               },
               null,
               "Item 3",
@@ -162,12 +159,6 @@ storiesOf("Blocks|List", module)
             type="alert"
             state="active"
           />
-          <ListItem label="List Item -- inverse" type="inverse" />
-          <ListItem
-            label="List Item -- inverse (active)"
-            type="inverse"
-            state="active"
-          />
         </List>
       </Card>
     );
@@ -208,11 +199,7 @@ storiesOf("Blocks|List", module)
             description="This is the description"
             type="alert"
           />
-          <ListItem
-            label="List Item"
-            description="This is the description"
-            type="inverse"
-          />
+
         </List>
       </Card>
     );

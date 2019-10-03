@@ -17,13 +17,12 @@ function InformationCardBar({
   children,
   count,
   weight,
-  onChange,
   open,
   onClick,
   ...textProps
 }) {
   let expanded = open;
-  let setExpanded = onChange;
+  let setExpanded = onClick;
   if (!setExpanded) [expanded, setExpanded] = useState(open);
   function toggleDropdown() {
     setExpanded(!expanded);
@@ -32,13 +31,8 @@ function InformationCardBar({
   return (
     <Piece id={id}>
       <Bar
-        onClick={(e)=>{
-          toggleOn();
-          if(typeof onClick === "function"){
-            onClick(e);
-          }
-        }}
         padding="2x"
+        contentAlign="center"
         onClick={toggleDropdown}
         left={<Title text={title} count={count} weight={weight} {...textProps} />}
         right={<Arrow icon="up" toggleOn={expanded} />}
@@ -54,7 +48,6 @@ InformationCardBar.propTypes = {
   count: PropTypes.number,
   onClick: PropTypes.func,
   weight: PropTypes.string,
-  onChange: PropTypes.func,
   open: PropTypes.bool,
 };
 
@@ -63,7 +56,7 @@ InformationCardBar.defaultProps = {
   count: null,
   children: null,
   weight: "normal",
-  onChange: null,
+  onClick: null,
   open: false,
 };
 

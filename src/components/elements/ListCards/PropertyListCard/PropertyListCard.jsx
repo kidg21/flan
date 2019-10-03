@@ -22,11 +22,12 @@ function PropertyListCard({
   APN,
   lotData,
   ownerData,
+  onClick,
   buildingData,
 }) {
   return (
     <Card id={id}>
-      <PropertyPanelHeader title={address} APN={APN} />
+      <PropertyPanelHeader title={address} APN={APN} onClick={onClick} />
       <Bar left={<Command icon="plus" label="Add To List" />} />
       <Piece>
         <Wrapper>
@@ -48,6 +49,7 @@ PropertyListCard.propTypes = {
   id: PropTypes.string,
   address: PropTypes.any,
   APN: PropTypes.any,
+  onClick: PropTypes.func,
   lotData: PropTypes.any,
   buildingData: PropTypes.any,
 };

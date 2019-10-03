@@ -1,7 +1,6 @@
 import React, { useState, useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { colors } from "Variables";
 import { DisabledContext } from "States";
 
 const SwitchContainer = styled.div`
@@ -16,18 +15,15 @@ const SwitchContainer = styled.div`
     return props.alignInput || "";
   }};
   color: ${(props) => {
-    return props.checkboxColor || "";
+    return props.theme.palette[props.checkboxColor] || props.theme.text.primary;
   }};
   background-color: ${(props) => {
-    return props.fillColor || colors.white;
+    return props.theme.palette[props.fillColor] || props.theme.background.default;
   }};
   border-color: ${(props) => {
-    return props.borderColor || colors.grey_40;
+    return props.theme.palette[props.borderColor] || props.theme.text.secondary;
   }};
-  align-items: center;
-  line-height: normal;
   width: max-content;
-  line-height: initial;
   &[disabled],
   &[readonly] {
     cursor: not-allowed;
@@ -38,46 +34,45 @@ const SwitchContainer = styled.div`
 
 const StyledSwitch = styled.div`
   grid-area: input;
-  width: 3rem;
-  height: 1.5rem;
+  width: 2.35rem;
+  height: 1.2rem;
   border: 1px solid;
   border-color: ${(props) => {
-    return props.borderColor || colors.grey_40;
+    return props.theme.palette[props.borderColor] || props.theme.palette.border;
   }};
   border-radius: 1em;
-  background-image: ${(props) => {
-    return props.fillColor || "";
+  background-color: ${(props) => {
+    return props.theme.palette[props.fillColor] || "";
   }};
   cursor: pointer;
   &[disabled],
   &[readonly] {
     background: ${(props) => {
-    return props.disabled ? colors.grey_20 : "";
+    return props.disabled ? props.theme.palette.disabled : "";
   }};
   }
 `;
 
 const Circle = styled.div`
   background: ${(props) => {
-    return props.checked ? colors.white : colors.grey_light;
+    return props.checked ? props.theme.background.default : props.theme.background.default;
   }};
   border: 1px solid;
   border-color: ${(props) => {
-    return props.borderColor || colors.grey_40;
+    return props.theme.palette[props.borderColor] || props.theme.palette.border;
   }};
   border-radius: 100%;
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1rem;
+  height: 1rem;
   z-index: 1;
-  margin: 1px;
   transition: transform 300ms ease-in-out;
   transform: ${(props) => {
-    return props.checked ? "translateX(100%)" : "translateX(0)";
+    return props.checked ? "translateX(120%)" : "translateX(1%)";
   }};
   &[disabled],
   &[readonly] {
     border-color: ${(props) => {
-    return props.disabled || "";
+    return props.theme.palette[props.disabled] || "";
   }};
   }
 `;
@@ -85,10 +80,9 @@ const Circle = styled.div`
 const SwitchLabel = styled.label`
   grid-area: label;
   color: ${(props) => {
-    return props.labelColor || "";
+    return props.disabled ? props.theme.text.disabled : "inherit";
   }};
   user-select: none;
-  font-weight: 700;
   cursor: pointer;
   &[disabled],
   &[readonly] {
@@ -107,12 +101,13 @@ function Switch({
   let borderColor;
   let alignInput;
   if (isDisabled) {
-    checkboxColor = colors.grey_40;
+    checkboxColor = "disabled";
+    borderColor = "grey3";
   }
   if (error && !isDisabled) {
-    checkboxColor = colors.alert;
-    fillColor = `linear-gradient(${colors.alert_tint}, ${colors.alert_light})`;
-    borderColor = colors.alert_light;
+    checkboxColor = "alertDark";
+    fillColor = "alert";
+    borderColor = "alertDark";
   }
   switch (align) {
     case "right":
@@ -132,8 +127,8 @@ function Switch({
     };
   }
   if (isChecked && !error) {
-    fillColor = `linear-gradient(${colors.success_tint}, ${colors.success_light})`;
-    borderColor = colors.success;
+    fillColor = "secondaryLight";
+    borderColor = "secondary";
   }
   return (
     <SwitchContainer
@@ -155,7 +150,7 @@ function Switch({
         <Circle checked={isChecked} borderColor={borderColor} />
       </StyledSwitch>
       {label ? (
-        <SwitchLabel onChange={onChange} disabled={isDisabled}>
+        <SwitchLabel htmlFor={id} onChange={onChange} disabled={isDisabled}>
           {label}
         </SwitchLabel>
       ) : null}

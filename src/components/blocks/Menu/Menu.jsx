@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Icon from "atoms/Icon";
 import Card from "layout/Card";
 import Title from "base/Typography";
-import { colors } from "Variables";
+import {  Darken, Lighten } from "Variables";
 
 const Container = styled.div`
   cursor: pointer;
@@ -14,7 +14,8 @@ const Container = styled.div`
 `;
 
 const EditMenu = styled.ul`
-  background: ${colors.white};
+  background: ${(props) => {
+    return props.theme.background.default; }};
   border-radius: 3px;
   list-style: none;
   z-index: 500;
@@ -35,11 +36,11 @@ const Item = styled.li`
   text-align: left;
 
   &:hover {
-    background-color: ${colors.grey_light};
+    ${Darken}
   }
 
   &:active {
-    color: ${colors.black};
+    ${Lighten}
   }
 `;
 

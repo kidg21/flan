@@ -1,17 +1,9 @@
 import React, { useContext } from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
-import { colors } from "Variables";
+import { Lighten, Darken } from "Variables";
 import { DisabledContext } from "States";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-/** TODO: move these to Variables */
-const iconHover = css`
-  filter: brightness(85%) contrast(150%);
-`;
-const iconActive = css`
-  filter: brightness(105%);
-`;
 
 const LinkedIcon = styled.a`
   cursor: ${(props) => {
@@ -29,26 +21,22 @@ const LinkedIcon = styled.a`
     return props.disabled ? "none" : "";
   }};
   &:hover {
-    ${(props) => {
-    return props.onClick ? iconHover : "";
-  }};
+    ${Darken};
   }
   &:active {
-    ${(props) => {
-    return props.onClick ? iconActive : "";
-  }};
+    ${Lighten};
   }
 `;
 
 const StyledIcon = styled(FontAwesomeIcon)`
   color: ${(props) => {
-    return props.color || "inherit";
+    return props.theme.palette[props.color] || "inherit";
   }};
   border: ${(props) => {
     return props.border ? "2px solid" : "";
   }};
   border-color: ${(props) => {
-    return props.border ? colors.grey_20 : "";
+    return props.theme.palette[props.border] || "";
   }};
   border-radius: ${(props) => {
     return props.border ? "5px" : "";
@@ -193,28 +181,43 @@ function Icon({
   icon = iconHash[icon.toLowerCase()] || ["far", icon.toLowerCase()];
   switch (type && type.toLowerCase()) {
     case "info":
-      color = colors.anchor;
+      color = "info";
       break;
     case "success":
-      color = colors.success;
+      color = "success";
       break;
     case "warning":
-      color = colors.warning;
+      color = "warning";
       break;
     case "alert":
-      color = colors.alert;
+      color = "alert";
+      break;
+    case "primary":
+      color = "primary";
+      break;
+    case "secondary":
+      color = "secondaryDark";
+      break;
+    case "disabled":
+      color = "disabled";
       break;
     case "inverse":
-      color = colors.white;
+      color = "inverse";
+      break;
+    case "primarylight":
+      color = "primaryLight";
+      break;
+    case "white":
+      color = "white";
       break;
     default:
       break;
   }
 
-  if (onClick) color = colors.anchor;
+  if (onClick) color = "primary";
 
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (isDisabled) color = colors.grey_40;
+  if (isDisabled) color = "disabled";
 
   const styledIcon = (
     <StyledIcon

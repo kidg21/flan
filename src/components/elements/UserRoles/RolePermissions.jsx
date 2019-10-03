@@ -100,7 +100,7 @@ function RoleEntry({
   }
 
   return (
-    <InformationCardBar open={role.open} onChange={onChangeVisible} title={<Title>{role.name} <Icon icon="delete" onClick={onDeleteRole} /></Title>}>
+    <InformationCardBar open={role.open} onClick={onChangeVisible} title={<Title>{role.name} <Icon icon="delete" onClick={onDeleteRole} /></Title>}>
       {role.folders.map((folder) => {
         return (<FolderEntry
           key={folder.folder}

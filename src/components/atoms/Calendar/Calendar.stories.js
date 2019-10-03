@@ -19,30 +19,27 @@ storiesOf("Atoms|Calendar", module)
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
-  .add(
-    "Documentation",
-    withInfo()(() => {
-      return (
-        <Form>
-          <Calendar
-            type="date"
-            label="Date Input Label"
-            helpText="This help text has been passed through a prop!"
-          />
-          <Calendar
-            type="time"
-            label="Time Input Label"
-            helpText="This help text has been passed through a prop!"
-          />
-          <Calendar
-            type="datetime"
-            label="Date-Time Input Label"
-            helpText="This help text has been passed through a prop!"
-          />
-        </Form>
-      );
-    }),
-  )
+  .add("Documentation", () => {
+    return (
+      <Form>
+        <Calendar
+          type="date"
+          label="Date Input Label"
+          helpText="This help text has been passed through a prop!"
+        />
+        <Calendar
+          type="time"
+          label="Time Input Label"
+          helpText="This help text has been passed through a prop!"
+        />
+        <Calendar
+          type="datetime"
+          label="Date-Time Input Label"
+          helpText="This help text has been passed through a prop!"
+        />
+      </Form>
+    );
+  })
   .add("Knobs", () => {
     return (
       <Calendar

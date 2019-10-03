@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { colors } from "Variables";
 
 const Wrapper = styled.div`
   display: block;
-  padding: 1em;
+  padding: ${(props) => {
+    return props.padding ? "1em" : "";
+  }};
 `;
 
 const BoxContainer = styled.div`
@@ -18,7 +19,10 @@ const BoxContainer = styled.div`
   width: ${(props) => {
     return props.width || "";
   }};
-  border: 1px solid ${colors.grey_20};
+  border: 1px solid
+    ${(props) => {
+    return props.theme.palette.grey6;
+  }};
   border-radius: 5px;
 
   ::-webkit-scrollbar {
@@ -30,16 +34,18 @@ const BoxContainer = styled.div`
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: ${colors.anchor_light};
+    background-color: ${(props) => {
+    return props.theme.palette.primary;
+  }};
     border-radius: 20px;
   }
 `;
 
 const Container = React.forwardRef(({
-  id, height, width, children,
+  id, height, width, padding, children,
 }, ref) => {
   return (
-    <Wrapper>
+    <Wrapper padding={padding}>
       <BoxContainer id={id} height={height} width={width} ref={ref}>
         {children}
       </BoxContainer>
@@ -49,15 +55,10 @@ const Container = React.forwardRef(({
 
 Container.propTypes = {
   id: PropTypes.string,
-  height: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.number,
-  ]),
-  width: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.number,
-  ]),
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   children: PropTypes.node,
+  padding: PropTypes.bool,
 };
 
 Container.defaultProps = {
@@ -65,6 +66,7 @@ Container.defaultProps = {
   height: null,
   width: null,
   children: null,
-}
+  padding: false,
+};
 
 export default Container;
