@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -83,6 +84,10 @@ function TextInput({
   if (type === "textarea") {
     as = "textarea";
     inputResize = "vertical";
+  }
+  if (type === "search") {
+    inputBorderColor = "primaryLight";
+    inputBorderColorHover = "primary";
   }
   // construct datalist element for autocompletes if appropriate props passed in
   // the autocompleteListId is used to ensure each textinput only draws from its own datalist element
