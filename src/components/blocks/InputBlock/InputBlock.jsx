@@ -45,7 +45,7 @@ function InputBlock({
 }) {
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let inputTextColor;
-  if (error && !disabled) {
+  if (error && !isDisabled) {
     inputTextColor = "alert";
   }
   const inputElements = textInputs.map((input) => {
@@ -109,7 +109,7 @@ function InputBlock({
           {!prefix && postfix ? <PrePost>{postfix}</PrePost> : null}
         </InputGroup>
         {helpText ? <HelpText>{helpText}</HelpText> : null}
-        {typeof error === "string" && !disabled ? <ErrorText>{error}</ErrorText> : null}
+        {typeof error === "string" && !isDisabled ? <ErrorText>{error}</ErrorText> : null}
       </TextInputContainer>
     </DisabledContext.Provider>
   );
