@@ -16,13 +16,6 @@ const Line = styled.div`
   }};
 `;
 
-const SwitchContainer = styled.div`
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-gap: 1rem;
-  filter: ${props => (props.disabled ? "brightness(130%)" : "")};
-`;
-
 function NavigationCardBar({
   id,
   title,
@@ -42,12 +35,12 @@ function NavigationCardBar({
   }
   const [state, setState] = useState({ toggle: toggle || false, disabled: isDisabled });
 
-  const titleComponent = (<Title text={title} weight="normal" />);
   let leftComponent = null;
   if (state.toggle === true) {
     leftComponent = (
-      <SwitchContainer>
+      <React.Fragment>
         <Switch
+          label={title}
           checked={!state.disabled}
           onChange={(e) => {
             const oldState = Object.assign({}, state);
@@ -62,19 +55,19 @@ function NavigationCardBar({
           }}
           {...switchProps}
         />
-        {titleComponent}
-      </SwitchContainer>);
+      </React.Fragment>);
   } else {
-    leftComponent = titleComponent;
+    leftComponent = <Title text={title} weight="normal" />;
   }
   return (
-    <Piece title={title} number={number} disabled={state.disabled}>
+    <Piece number={number} disabled={state.disabled}>
       <Bar
         id={id}
         disabled={state.disabled}
         left={leftComponent}
         right={<Icon icon="right" />}
         padding="2x"
+        contentAlign="center"
         onClick={state.disabled ? null : onClick}
       />
       <Line />
