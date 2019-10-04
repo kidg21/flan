@@ -17,7 +17,7 @@ function DialogueBox({
 }) {
   let buttonElements = null;
   if (buttons) {
-    if (buttons instanceof Array && buttons.length > 0) {
+    if (buttons.length > 1) {
       // Multiple buttons
       buttonElements = (
         <Bar
@@ -26,7 +26,7 @@ function DialogueBox({
               {buttons.map((button, index) => {
                 return (<Button
                   label={button.label}
-                  type={index === 0 ? "solid" : null}
+                  fill={typeof button.fill !== "undefined" ? button.fill : index === 0}
                   onClick={button.onClick}
                   color={button.color || buttonColor}
                   disabled={button.disabled}
@@ -42,10 +42,11 @@ function DialogueBox({
         <Bar
           left={
             <Button
-              label={buttons.label}
-              onClick={buttons.onClick}
-              color={buttons.color || buttonColor}
-              disabled={buttons.disabled}
+              label={buttons[0].label}
+              fill={buttons[0].fill}
+              onClick={buttons[0].onClick}
+              color={buttons[0].color || buttonColor}
+              disabled={buttons[0].disabled}
             />
           }
         />
@@ -66,6 +67,7 @@ function DialogueBox({
 
 const buttonType = PropTypes.shape({
   label: PropTypes.string,
+  fill: PropTypes.bool,
   color: PropTypes.string,
   disabled: PropTypes.bool,
   onClick: PropTypes.func,
@@ -82,10 +84,7 @@ DialogueBox.propTypes = {
   ...dialogProps,
   header: PropTypes.node,
   children: PropTypes.node,
-  buttons: PropTypes.oneOfType([
-    buttonType,
-    PropTypes.arrayOf(buttonType),
-  ]),
+  buttons: PropTypes.arrayOf(buttonType),
 };
 
 DialogueBox.defaultProps = {

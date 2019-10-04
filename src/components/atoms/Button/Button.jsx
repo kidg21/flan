@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { Lighten, Darken } from "Variables";
 import { DisabledContext } from "States";
 import PropTypes from "prop-types";
@@ -71,7 +71,7 @@ function Button({
   icon,
   color,
   noBorder,
-  type,
+  fill,
   size,
   fullWidth,
   disabled,
@@ -112,14 +112,6 @@ function Button({
       buttonColor = "disabled";
       fontColor = buttonColor;
       break;
-    // case "grey":
-    //     buttonColor = "grey";
-    //     fontColor = buttonColor;
-    //     break;
-    case "alert":
-      buttonColor = "alert";
-      fontColor = buttonColor;
-      break;
     default:
       buttonColor = "primary";
       fontColor = buttonColor;
@@ -129,7 +121,7 @@ function Button({
   if (isDisabled) {
     fontColor = "white";
     backgroundColor = "grey3";
-  } else if (type && type.toLowerCase() === "solid") {
+  } else if (fill) {
     fontColor = "white";
     backgroundColor = buttonColor;
   }
@@ -152,7 +144,6 @@ function Button({
       name={id}
       fullWidth={fullWidth}
       disabled={isDisabled}
-      type={type}
       onClick={onClick}
       noBorder={noBorder}
       buttonColor={buttonColor}
@@ -172,23 +163,27 @@ Button.propTypes = {
   id: PropTypes.string,
   label: PropTypes.string,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
-  type: PropTypes.string,
   color: PropTypes.oneOf(["success", "warning", "alert", "info", "primary", "secondary"]),
   size: PropTypes.oneOf(["small", "large"]),
   fullWidth: PropTypes.bool,
   disabled: PropTypes.bool,
+  fill: PropTypes.bool,
+  noBorder: PropTypes.bool,
   onClick: PropTypes.func,
   style: PropTypes.string,
 };
 
 Button.defaultProps = {
   id: null,
+  label: null,
   icon: null,
-  type: null,
   color: null,
   size: null,
   fullWidth: false,
   disabled: false,
+  fill: false,
+  noBorder: false,
+  onClick: null,
   style: null,
 };
 
