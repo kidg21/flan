@@ -26,9 +26,11 @@ const StyledButton = styled.button`
     return props.theme.palette[props.backgroundColor] || props.theme.background.default;
   }};
   border: ${(props) => {
-    return props.noBorder ? "0px solid" : "1px solid";
+    return props.border || "1px solid";
   }};
-  border-radius: 4px;
+  border-radius: ${(props) => {
+    return props.borderRadius || "4px";
+  }};
   font-size: ${(props) => {
     return props.labelSize || "inherit";
   }};
@@ -70,7 +72,7 @@ function Button({
   label,
   icon,
   color,
-  noBorder,
+  border,
   type,
   size,
   fullWidth,
@@ -79,10 +81,12 @@ function Button({
   style,
 }) {
   let buttonColor;
+  let borderRadius;
   let fontColor;
   let backgroundColor;
   let buttonPadding;
   let labelSize;
+
   switch (color) {
     case "success":
       buttonColor = "success";
@@ -112,10 +116,6 @@ function Button({
       buttonColor = "disabled";
       fontColor = buttonColor;
       break;
-    // case "grey":
-    //     buttonColor = "grey";
-    //     fontColor = buttonColor;
-    //     break;
     case "alert":
       buttonColor = "alert";
       fontColor = buttonColor;
@@ -125,6 +125,7 @@ function Button({
       fontColor = buttonColor;
       break;
   }
+
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
     fontColor = "white";
@@ -146,15 +147,17 @@ function Button({
     default:
       break;
   }
+
   return (
     <StyledButton
       id={id}
       name={id}
       fullWidth={fullWidth}
       disabled={isDisabled}
+      border={border}
+      borderRadius={borderRadius}
       type={type}
       onClick={onClick}
-      noBorder={noBorder}
       buttonColor={buttonColor}
       fontColor={fontColor}
       backgroundColor={backgroundColor}
@@ -176,6 +179,7 @@ Button.propTypes = {
   color: PropTypes.oneOf(["success", "warning", "alert", "info", "primary", "secondary"]),
   size: PropTypes.oneOf(["small", "large"]),
   fullWidth: PropTypes.bool,
+  tab: PropTypes.bool,
   disabled: PropTypes.bool,
   onClick: PropTypes.func,
   style: PropTypes.string,
@@ -188,6 +192,7 @@ Button.defaultProps = {
   color: null,
   size: null,
   fullWidth: false,
+  tab: false,
   disabled: false,
   style: null,
 };

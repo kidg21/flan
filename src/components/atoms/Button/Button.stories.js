@@ -21,12 +21,9 @@ storiesOf("Atoms|Button", module)
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
-  .add(
-    "Documentation",
-    (() => {
-      return <Button label="Standard Button" />;
-    }),
-  )
+  .add("Documentation", () => {
+    return <Button label="Standard Button" />;
+  })
   .add("Skeleton", () => {
     return <Button />;
   })
@@ -89,18 +86,20 @@ storiesOf("Atoms|Button", module)
   })
   .add("The Button Family", () => {
     return (
-        <Grid>
-          <Button label="Standard Primary" />
-          <Button label="Solid Primary" type="solid" />
-          <Button label="Standard Secondary" color="secondary" />
-          <Button label="Solid Secondary" type="solid" color="secondary" />
-          <Button label="Solid Info Button" type="solid" />
-          <Button icon="filter" label="Fitlers" color="primary" />
+      <Grid>
+        <Button label="Standard Primary" />
+        <Button label="Solid Primary" type="solid" />
+        <Button label="Standard Secondary" color="secondary" />
+        <Button label="Solid Secondary" type="solid" color="secondary" />
+        <Button label="Solid Info Button" type="solid" />
+        <Button icon="filter" label="Fitlers" color="primary" />
 
-          <Button label="Small Button" size="small" />
-          <Button label="Large Button" size="large" />
-          <Button label="Disabled Button" disabled />
-          <Button label="Icon Button" icon="user"  type="solid" />
-        </Grid>
+        <Button label="Small Button" size="small" />
+        <Button label="Large Button" size="large" />
+        <Button label="Disabled Button" disabled />
+        <Button label="Icon Button" icon="user" type="solid" />
+        <Button label="Tab Secondary" color="secondary" tabStyle="inline"  />
+        <Button label="Tab Primary" color="primary" tabStyle="inline"/>
+      </Grid>
     );
   });

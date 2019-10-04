@@ -13,7 +13,7 @@ const TabsWrapper = styled.section`
     return props.setOrientation || "grid";
   }};
   grid-gap: ${(props) => {
-    return props.isSearch ? "" : "2px";
+    return props.gap || "2px";
   }};
   grid-template-columns: ${(props) => {
     return props.setColumns || "repeat(auto-fit, minmax(0, 1fr))";
@@ -31,31 +31,32 @@ const TabsWrapper = styled.section`
   height: ${(props) => {
     return props.setHeight || "100%";
   }};
-  padding: ${(props) => {
-    return props.isFloating ? ".25rem" : "";
-  }};
-  z-index: ${(props) => {
-    return props.isFloating ? "1001" : "";
-  }};
-  filter: ${(props) => {
-    return props.isFloating ? shadows.cardShadow : "";
-  }};
+
   > * {
     margin: ${(props) => {
-    return props.isFloating ? ".5rem" : "";
+    return props.margin || "";
   }};
-    border-radius: ${(props) => {
-    return props.isFloating ? ".5rem" : "0";
-  }};
+  border: ${(props) => {
+  return props.border || "";
+}};
+border-radius: ${(props) => {
+  return props.borderRadius || "";
+}};
   }
 `;
 
+
+
 function Tabs({
-  id, children, columns, align, isFloating, style, isSearch,
+  id, children, columns, align, tabstyle, style,
 }) {
   let setColumns;
+  let border;
+  let borderRadius;
   let setPosition;
   let setWidth;
+  let gap;
+  let margin;
   let setHeight;
   let setOrientation;
   let alignRight;
@@ -106,9 +107,26 @@ function Tabs({
     default:
       break;
   }
+  switch (tabstyle) {
+    case "inline":
+      border = "0px solid";
+      borderRadius = "0px";
+      gap = "0px";
+      break;
+    case "folder":
+        border = "0px solid";
+        borderRadius = "0px";
+        gap = "0px";
+      break;
+    default:
+      break;
+  }
   return (
     <TabsWrapper
       id={id}
+      gap={gap}
+      border={border}
+      borderRadius={borderRadius}
       setColumns={setColumns}
       setPosition={setPosition}
       setWidth={setWidth}
@@ -116,9 +134,8 @@ function Tabs({
       setOrientation={setOrientation}
       alignRight={alignRight}
       alignBottom={alignBottom}
-      isFloating={isFloating}
-      isSearch={isSearch}
       style={style}
+      margin={margin}
     >
       {children}
     </TabsWrapper>
@@ -126,15 +143,7 @@ function Tabs({
 }
 
 function Tab({
-  id,
-  icon,
-  tabLabel,
-  onClick,
-  noBorder,
-  isSelected,
-  disabled,
-  color,
-  selectedColor,
+  id, icon, tabLabel, onClick, isSelected, disabled, color, selectedColor,
 }) {
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   return (
@@ -148,8 +157,7 @@ function Tab({
           isSelected={isSelected}
           disabled={isDisabled}
           color={selectedColor}
-          type='solid'
-          noBorder={noBorder}
+          type="solid"
         />
       ) : (
         <Button
@@ -160,7 +168,6 @@ function Tab({
           isSelected={isSelected}
           disabled={isDisabled}
           color={color}
-          noBorder={noBorder}
         />
       )}
     </Fragment>
@@ -172,8 +179,6 @@ Tabs.propTypes = {
   children: PropTypes.node.isRequired,
   columns: PropTypes.oneOf(["default", "wrap", "1", "2", "3", "4", "5"]),
   align: PropTypes.oneOf(["bottom", "left", "right"]),
-  isFloating: PropTypes.bool,
-  isSearch: PropTypes.bool,
   style: PropTypes.string,
 };
 
