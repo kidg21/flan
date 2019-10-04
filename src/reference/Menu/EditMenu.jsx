@@ -2,7 +2,7 @@ import React, { useState, Fragment } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Icon from "atoms/Icon";
-import { colors, shadows } from "Variables";
+import { shadows } from "Variables";
 
 const Container = styled.div`
   cursor: pointer;

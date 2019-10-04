@@ -1,29 +1,27 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { colors, Lighten, Darken } from "Variables";
+import { Lighten, Darken } from "Variables";
 
 const SliderPiece = styled.input.attrs({ type: "range" })`
   height: 1px;
   background: ${(props) => {
-    return props.error ? colors.alert_light : colors.grey_40;
+    return props.error ? props.theme.palette.alertLight : props.theme.palette.grey3;
   }};
   outline: none;
   opacity: 0.7;
   transition: opacity 0.2s;
   &::-webkit-slider-thumb {
     appearance: none;
-    width: 1.25em;
-    height: 1.25em;
+    width: 1.5em;
+    height: 1.5em;
     border: 1px solid;
     border-color: ${(props) => {
-    return props.error ? colors.alert_dark : colors.success_dark;
+    return props.error ? props.theme.palette.alertDark : props.theme.palette.secondary;
   }};
     border-radius: 50%;
-    background-image: ${(props) => {
-    return props.error
-      ? `linear-gradient(${colors.alert_light}, ${colors.alert_dark})`
-      : `linear-gradient(${colors.success_light}, ${colors.success_dark})`;
+    background-color: ${(props) => {
+    return props.error ? props.theme.palette.alert : props.theme.palette.secondary;
   }};
     cursor: pointer;
     &:hover {
@@ -50,8 +48,9 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background-image: linear-gradient(#528321, #66a22a);
-    // background-image: linear-gradient(#00adb5, #30cffc);
+    color: ${(props) => {
+    return props.theme.palette.secondary;
+  }};
     cursor: pointer;
   }
   &[disabled],
@@ -60,8 +59,12 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
     pointer-events: none;
     user-select: none;
     &::-webkit-slider-thumb {
-      border-color: ${colors.grey_60};
-      background-image: linear-gradient(${colors.grey_20}, ${colors.grey_60});
+      border-color: ${(props) => {
+    return props.theme.palette.secondaryDark;
+  }};
+      background-color: ${(props) => {
+    return props.theme.palette.disabled;
+  }};
     }
   }
 `;

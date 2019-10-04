@@ -17,6 +17,15 @@ const options = [
   { value: "5", label: "5" },
 ];
 
+const selectorOptions = [
+  { value: "0", label: "=" },
+  { value: "1", label: "!=" },
+  { value: "2", label: ">" },
+  { value: "3", label: "<" },
+  { value: "4", label: ">=" },
+  { value: "5", label: "<=" },
+];
+
 storiesOf("Blocks|Data Range", module)
   .addParameters({
     info: {
@@ -98,6 +107,16 @@ storiesOf("Blocks|Data Range", module)
           <DataRange
             label="Select Range"
             labelMin="Min"
+            optionsMin={options}
+            labelMax="Max"
+            optionsMax={options}
+            helpText="This help text has been passed through a prop!"
+          />
+          <DataRange
+            label="Select Range"
+            labelMin="Min"
+            withSelector
+            optionsSelect={selectorOptions}
             optionsMin={options}
             labelMax="Max"
             optionsMax={options}

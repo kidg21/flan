@@ -1,28 +1,33 @@
-/* eslint-disable no-param-reassign */
 import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { colors } from "Variables";
 import { DisabledContext } from "States";
 import Icon from "atoms/Icon";
 import Title from "base/Typography";
 
 const CommandContainer = styled.a`
-  display: grid;
-  grid-template-columns: auto 1fr;
+  display: ${props => {
+    return props.icon ? "grid" : "";
+  }};
+  grid-gap: ${props => {
+    return props.icon ? "0.5rem" : "";
+  }};
+  grid-template-columns: ${props => {
+    return props.alignCommand || "auto 1fr";
+  }};
   grid-template-areas: ${props => {
-    return props.alignIcon || "";
+    return props.alignIcon || "'icon name'";
   }};
   justify-items: ${props => {
     return props.justifyIcon || "";
   }};
-  grid-gap: 0.5rem;
+  align-items: center;
   width: max-content;
   font-size: ${props => {
     return props.commandSize || "";
   }};
   color: ${props => {
-    return props.commandColor || "";
+    return props.theme.text[props.commandColor] || props.theme.text.info;
   }};
   user-select: none;
   cursor: ${props => {
@@ -32,94 +37,86 @@ const CommandContainer = styled.a`
     return props.isDisabled ? "none" : "";
   }};
   transition: all 0.3s ease;
-  &:hover {
-    color: ${colors.anchor_dark};
-  }
-  &:active {
-    color: ${colors.anchor_light};
-  }
 `;
 
 const CommandName = styled(Title)`
   grid-area: name;
   font-size: inherit;
-  font-color: inherit;
+  color: inherit;
   line-height: inherit;
+  font-weight: 700;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   margin: 0;
   &:focus {
-    border: 1px solid ${colors.anchor};
+    border: 1px solid
+      ${props => {
+        return props.theme.palette.primary;
+      }};
     outline: none;
   }
+  cursor: pointer;
 `;
 
 const CommandIcon = styled(Icon)`
   grid-area: icon;
-  color: inherit;
 `;
 
-function Command({ id, name, label, icon, align, size, onClick, disabled }) {
-  let alignIcon = "'icon name'";
-  const justifyCommand = "flex-start";
+const commandHash = {
+  add: { icon: "plus", label: "Add" },
+  address: { icon: "address", label: "Address" },
+  apn: { icon: "apn", label: "APN" },
+  apply: { icon: "check", label: "Apply" },
+  bookmark: { icon: "bookmark", label: "Bookmark" },
+  close: { icon: "close", label: "Close" },
+  compare: { icon: "compare", label: "Compare" },
+  copy: { icon: "copy", label: "Copy" },
+  contacts: { icon: "contacts", label: "Contacts" },
+  delete: { icon: "delete", label: "Delete" },
+  download: { icon: "download", label: "Download" },
+  edit: { icon: "edit", label: "Edit" },
+  exclude: { icon: "exclude", label: "Exclude" },
+  favorites: { icon: "star", label: "Favorites" },
+  filter: { icon: "filter", label: "Filter" },
+  gps: { icon: "gps", label: "GPS" },
+  help: { icon: "help", label: "Help" },
+  include: { icon: "include", label: "Include" },
+  info: { icon: "info_circle", label: "Info" },
+  measure: { icon: "measure", label: "Measure" },
+  menu: { icon: "bars", label: "Menu" },
+  new: { icon: "plus_square", label: "New" },
+  notifications: { icon: "notification", label: "Notifications" },
+  open: { icon: "open", label: "Open" },
+  photos: { icon: "photos", label: "Photos" },
+  preferences: { icon: "preferences", label: "Preferences" },
+  print: { icon: "print", label: "Print" },
+  profile: { icon: "user", label: "Profile" },
+  redo: { icon: "redo", label: "Redo" },
+  reports: { icon: "report", label: "Reports" },
+  save: { icon: "save", label: "Save" },
+  search: { icon: "search", label: "Search" },
+  settings: { icon: "settings", label: "Settings" },
+  share: { icon: "share", label: "Share" },
+  support: { icon: "support", label: "Support" },
+  sync: { icon: "sync", label: "Sync" },
+  undo: { icon: "undo", label: "Undo" },
+  upload: { icon: "upload", label: "Upload" },
+  view: { icon: "view", label: "View" },
+  "zoom extents": { icon: "zoom_extents", label: "Zoom Extents" },
+};
+
+function Command({ align, command, disabled, icon, id, label, onClick, size }) {
+  command = commandHash[command] || { icon, label };
+  let alignCommand = "";
+  let alignIcon = "";
   let justifyIcon = "flex-start";
-  let commandColor = colors.anchor;
-  let commandSize = "inherit";
-  switch (name) {
-    case "add to list":
-      icon = "plus";
-      label = "Add To List";
-      break;
-    case "address":
-      icon = "address";
-      label = "Address";
-      break;
-    case "apn":
-      icon = "apn";
-      label = "APN";
-      break;
-    case "bookmark":
-      icon = "bookmark";
-      label = "Bookmark";
-      break;
-    case "contacts":
-      icon = "contacts";
-      label = "Contacts";
-      break;
-    case "gps":
-      icon = "gps";
-      label = "GPS";
-      break;
-    case "menu":
-      icon = "bars";
-      label = "Menu";
-      break;
-    case "notifications":
-      icon = "notification";
-      label = "Notifications";
-      break;
-    case "print":
-      icon = "print";
-      label = "Print";
-      break;
-    case "profile":
-      icon = "user";
-      label = "Profile";
-      break;
-    case "settings":
-      icon = "settings";
-      label = "Settings";
-      break;
-    case "share":
-      icon = "share";
-      label = "Share";
-      break;
-    default:
-      break;
-  }
+  let commandColor = "info";
+  let commandSize = "";
+
   switch (align) {
     case "center":
+      alignCommand = "auto";
       alignIcon = "'icon' 'name'";
       justifyIcon = "center";
       break;
@@ -130,9 +127,8 @@ function Command({ id, name, label, icon, align, size, onClick, disabled }) {
       break;
   }
 
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (isDisabled) commandColor = colors.grey_40;
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  if (isDisabled) commandColor = "disabled";
 
   switch (size) {
     case "small":
@@ -146,35 +142,44 @@ function Command({ id, name, label, icon, align, size, onClick, disabled }) {
   }
   return (
     <CommandContainer
-      id={id}
-      justifyCommand={justifyCommand}
+      alignCommand={alignCommand}
       alignIcon={alignIcon}
-      justifyIcon={justifyIcon}
       commandColor={commandColor}
       commandSize={commandSize}
+      icon={command.icon}
+      id={id}
       isDisabled={isDisabled}
+      justifyIcon={justifyIcon}
+      label={label}
       onClick={onClick}
+      title={command.label} // HTML attribute (display on :hover)
     >
-      {icon ? <CommandIcon icon={icon} /> : null}
-      <CommandName weight="normal">{label}</CommandName>
+      {command.icon ? <CommandIcon icon={command.icon} /> : null}
+      <CommandName>{command.label}</CommandName>
     </CommandContainer>
   );
 }
 
 Command.propTypes = {
-  id: PropTypes.string,
-  name: PropTypes.string.isRequired,
-  align: PropTypes.string,
+  align: PropTypes.oneOf(["center", "right"]),
+  command: PropTypes.string,
   disabled: PropTypes.boolean,
-  size: PropTypes.string,
-  onClick: PropTypes.node,
   icon: PropTypes.string,
+  id: PropTypes.string,
   label: PropTypes.string,
+  onClick: PropTypes.node,
+  size: PropTypes.oneOf(["small", "large"]),
 };
 
 Command.defaultProps = {
-  label: "Command",
+  align: null,
+  command: null,
+  disabled: null,
   icon: null,
+  id: null,
+  label: "Command",
+  onClick: null,
+  size: null,
 };
 
 export { Command as default };

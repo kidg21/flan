@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { colors, Darken } from "Variables";
+import { Darken } from "Variables";
 import Bar from "blocks/Bar";
 import Title from "base/Typography";
 import { InteractiveContext, DisabledContext } from "States";
@@ -15,24 +15,32 @@ const ListWrapper = styled.ul`
 `;
 
 const ListTitle = styled(Title)`
-  color: ${colors.grey_dark};
-  border-bottom: 1px solid ${colors.grey_20};
+  color: ${props => {
+    return props.theme.text.primary;
+  }};
+  border-bottom: 1px solid
+    ${props => {
+      return props.theme.divider;
+    }};
   padding: 0.75em 1em;
   tabindex: -1;
 `;
 
 const ListItemWrapper = styled.li`
   color: ${props => {
-    return props.itemColor || "";
+    return props.theme.background[props.itemColor];
   }};
   background-color: ${props => {
-    return props.itemBGColor || colors.white;
+    return props.theme.palette[props.itemBGColor] || "";
   }};
   border-style: solid;
   border-width: ${props => {
     return props.itemBorder || "0";
   }};
-  border-bottom: 1px solid ${colors.grey_light};
+  border-bottom: 1px solid
+    ${props => {
+      return props.theme.divider;
+    }};
   cursor: ${props => {
     return props.interactive ? "pointer" : "";
   }};
@@ -48,8 +56,12 @@ const ListItemWrapper = styled.li`
     cursor: not-allowed;
     pointer-events: none;
     user-select: none;
-    color: ${colors.grey_40};
-    background-color: ${colors.grey_light};
+    color: ${props => {
+      return props.theme.palette.disabled;
+    }};
+    background-color: ${props => {
+      return props.theme.divider;
+    }};
     border-left: none;
   }
 `;
@@ -80,7 +92,7 @@ function ListItem({
   let itemBorder;
   switch (state) {
     case "active":
-      itemColor = colors.success;
+      itemColor = "app";
       itemBorder = "0 0 0 .5em";
       break;
     default:
@@ -88,24 +100,20 @@ function ListItem({
   }
   switch (type) {
     case "info":
-      itemColor = colors.white;
-      itemBGColor = colors.anchor_light;
+      itemColor = "default";
+      itemBGColor = "info";
       break;
     case "success":
-      itemColor = colors.white;
-      itemBGColor = colors.success_light;
+      itemColor = "default";
+      itemBGColor = "success";
       break;
     case "warning":
-      itemColor = colors.white;
-      itemBGColor = colors.warning_light;
+      itemColor = "default";
+      itemBGColor = "warning";
       break;
     case "alert":
-      itemColor = colors.white;
-      itemBGColor = colors.alert_light;
-      break;
-    case "inverse":
-      itemColor = colors.white;
-      itemBGColor = colors.grey_80;
+      itemColor = "default";
+      itemBGColor = "alert";
       break;
     default:
       break;
@@ -124,7 +132,8 @@ function ListItem({
       <DisabledContext.Provider value={disabled}>
         <Bar
           contentAlign="center"
-          left={
+          centerAlign="left"
+          center={
             <>
               {<Title text={label} />}
               {description ? <Title text={description} size="small" weight="light" /> : null}
@@ -151,7 +160,7 @@ ListItem.propTypes = {
   description: PropTypes.string,
   children: PropTypes.node,
   state: PropTypes.oneOf(["active"]),
-  type: PropTypes.oneOf(["info", "success", "warning", "alert", "inverse"]),
+  type: PropTypes.oneOf(["info", "success", "warning", "alert"]),
   onClick: PropTypes.func,
   disabled: PropTypes.bool,
   interactive: PropTypes.bool,

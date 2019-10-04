@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { colors, shadows } from "Variables";
+import { shadows } from "Variables";
 import Grid from "layout/Grid";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 import PropTypes from "prop-types";
@@ -11,11 +11,12 @@ const CardPiece = styled.div`
   flex: none;
   padding: ${props => props.padding || ""};
   width: 100%;
-  z-index: ${props => props.header ? 1 : ""};
-  /** TODO: add 'background' and 'interaction' props */
-  /* color: ${props => props.textColor || ""}; */
-  /* background-color: ${props => props.backgroundColor || ""}; */
-  background: ${colors.white};
+  background: ${props => {
+    return props.theme.palette[props.backgroundColor] || props.theme.background.default;
+  }};
+  color: ${props => {
+    return props.theme.text[props.textColor] || props.theme.text.primary;
+  }};
   &:hover {
     box-shadow: ${props => (props.hover ? shadows.dropShadow : "")};
     cursor: ${props => (props.hover ? "pointer" : "")};
@@ -24,6 +25,9 @@ const CardPiece = styled.div`
   &:empty {
     &:before {
       ${PlaceholderText}
+      color: ${props => {
+        return props.theme.text.primary;
+      }};
       content: "Card Piece";
       padding: 2rem;
     }
@@ -38,6 +42,9 @@ const CardWrapper = styled(CardPiece)`
   &:empty {
     &:before {
       ${PlaceholderText}
+      color: ${props => {
+        return props.theme.text.primary;
+      }};
       content: "Card";
       padding: 2rem;
     }
@@ -62,50 +69,22 @@ function Piece({
   hover,
   children,
   padding,
+  textColor,
+  backgroundColor,
   className,
   header,
-  /** TODO: add 'background' and 'interaction' props */
-  // type,
+  onClick,
 }) {
-  /** TODO: add 'background' and 'interaction' props */
-  // let textColor;
-  // let backgroundColor;
-  // switch (type && type.toLowerCase()) {
-  //   case "info":
-  //     backgroundColor = colors.anchor;
-  //     textColor = colors.anchor_tint;
-  //     break;
-  //   case "success":
-  //     backgroundColor = colors.success;
-  //     textColor = colors.success_tint;
-  //     break;
-  //   case "warning":
-  //     backgroundColor = colors.warning;
-  //     textColor = colors.warning_tint;
-  //     break;
-  //   case "alert":
-  //     backgroundColor = colors.alert;
-  //     textColor = colors.alert_tint;
-  //     break;
-  //   case "inverse":
-  //     backgroundColor = colors.black;
-  //     textColor = colors.grey_light;
-  //     break;
-  //   default:
-  //     backgroundColor = colors.white;
-  //     break;
-  // }
   return (
     <CardPiece
       id={id}
       padding={padding}
       className={className}
+      textColor={textColor}
+      backgroundColor={backgroundColor}
+      onClick={onClick}
       header={header}
       hover={hover}
-
-      /** TODO: add 'background' and 'interaction' props */
-      // textColor={textColor}
-      // backgroundColor={backgroundColor}
     >
       {children}
     </CardPiece>

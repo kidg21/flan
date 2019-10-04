@@ -14,6 +14,7 @@ import Icon from "atoms/Icon";
 import { Section } from "layout/Form";
 import DMPlogo from "images/DMPlogo.jpg";
 import Container from "atoms/Container";
+import Command from "atoms/Command";
 
 const image = {
   src: DMPlogo,
@@ -93,14 +94,13 @@ storiesOf("Elements|Dialogue Box", module)
               { value: "4", label: "lightbox" },
             ]}
           />
-          {/* <Command label="Add new Location" icon="plus"/> */}
           <SelectMenu
             label="File Type"
             options={[
               { value: "jpg", label: ".jpg" },
               { value: "png", label: ".png" },
             ]}
-          />{" "}
+          />
         </Section>
       }
       action="two"

@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 const placeholder = {
   desc: "Short description of meaning and usage.",
 };
@@ -128,31 +129,27 @@ export const iconsSize = [
 // App
 export const iconsApp = [
   {
-    icon: "mail",
+    icon: "address",
     desc: placeholder.desc,
   },
   {
-    icon: "mail_solid",
+    icon: "alert",
     desc: placeholder.desc,
   },
   {
-    icon: "circle",
+    icon: "alert_triangle",
     desc: placeholder.desc,
   },
   {
-    icon: "circle_solid",
+    icon: "analytics",
     desc: placeholder.desc,
   },
   {
-    icon: "search",
+    icon: "apn",
     desc: placeholder.desc,
   },
   {
-    icon: "zoom_out",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "zoom_in",
+    icon: "attach",
     desc: placeholder.desc,
   },
   {
@@ -164,16 +161,11 @@ export const iconsApp = [
     desc: placeholder.desc,
   },
   {
-    icon: "edit",
-    desc: placeholder.desc,
-  },
-
-  {
-    icon: "notification",
+    icon: "call",
     desc: placeholder.desc,
   },
   {
-    icon: "notification_solid",
+    icon: "chat",
     desc: placeholder.desc,
   },
   {
@@ -185,87 +177,27 @@ export const iconsApp = [
     desc: placeholder.desc,
   },
   {
-    icon: "location",
+    icon: "circle",
     desc: placeholder.desc,
   },
   {
-    icon: "map_pin",
+    icon: "circle_solid",
     desc: placeholder.desc,
   },
   {
-    icon: "my_location",
+    icon: "clone",
     desc: placeholder.desc,
   },
   {
-    icon: "map",
+    icon: "close",
     desc: placeholder.desc,
   },
   {
-    icon: "address",
+    icon: "compare",
     desc: placeholder.desc,
   },
   {
-    icon: "owner",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "apn",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "gps",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "layers",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "analytics",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "report",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "info",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "info_circle",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "drawings",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "list",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "attach",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "link",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "wifi",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "wifi_none",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "signal",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "signal_none",
+    icon: "configure",
     desc: placeholder.desc,
   },
   {
@@ -277,15 +209,87 @@ export const iconsApp = [
     desc: placeholder.desc,
   },
   {
-    icon: "close",
-    desc: placeholder.desc,
-  },
-  {
     icon: "copy",
     desc: placeholder.desc,
   },
   {
+    icon: "delete",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "directions",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "draw",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "drawings",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "edit",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "exchange",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "exclude",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "file",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "filter",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "gps",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "heatmap",
+    desc: placeholder.desc,
+  },
+  {
     icon: "help",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "home",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "include",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "info",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "info_circle",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "labels",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "layers",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "link",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "list",
     desc: placeholder.desc,
   },
   {
@@ -294,79 +298,27 @@ export const iconsApp = [
     spin: true,
   },
   {
+    icon: "location",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "mail",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "mail_solid",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "map",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "map_pin",
+    desc: placeholder.desc,
+  },
+  {
     icon: "maximize",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "minimize",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "options",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "more",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "zoom_extents",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "open",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "share",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "share_content",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "print",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "delete",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "filter",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "table",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "heatmap",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "labels",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "clone",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "file",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "draw",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "inclusion",
-    desc: placeholder.desc,
-  },
-  {
-    icon: "exclusion",
     desc: placeholder.desc,
   },
   {
@@ -378,11 +330,83 @@ export const iconsApp = [
     desc: placeholder.desc,
   },
   {
-    icon: "chat",
+    icon: "minimize",
     desc: placeholder.desc,
   },
   {
-    icon: "call",
+    icon: "minus",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "minus_square",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "more",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "my_location",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "notification",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "notification_solid",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "open",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "options",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "owner",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "photos",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "plus",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "plus_square",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "preferences",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "print",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "redo",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "report",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "save",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "scroll_top",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "search",
     desc: placeholder.desc,
   },
   {
@@ -398,27 +422,27 @@ export const iconsApp = [
     desc: placeholder.desc,
   },
   {
-    icon: "configure",
+    icon: "share",
     desc: placeholder.desc,
   },
   {
-    icon: "user",
+    icon: "share_content",
     desc: placeholder.desc,
   },
   {
-    icon: "users",
+    icon: "signal",
     desc: placeholder.desc,
   },
   {
-    icon: "user_circle",
+    icon: "signal_none",
     desc: placeholder.desc,
   },
   {
-    icon: "user_add",
+    icon: "sign_in",
     desc: placeholder.desc,
   },
   {
-    icon: "scroll_top",
+    icon: "sign_out",
     desc: placeholder.desc,
   },
   {
@@ -430,43 +454,59 @@ export const iconsApp = [
     desc: placeholder.desc,
   },
   {
-    icon: "directions",
+    icon: "support",
     desc: placeholder.desc,
   },
   {
-    icon: "alert",
+    icon: "sync",
     desc: placeholder.desc,
   },
   {
-    icon: "alert_triangle",
+    icon: "table",
     desc: placeholder.desc,
   },
   {
-    icon: "home",
+    icon: "undo",
     desc: placeholder.desc,
   },
   {
-    icon: "plus",
+    icon: "user",
     desc: placeholder.desc,
   },
   {
-    icon: "plus_square",
+    icon: "users",
     desc: placeholder.desc,
   },
   {
-    icon: "minus",
+    icon: "user_add",
     desc: placeholder.desc,
   },
   {
-    icon: "minus_square",
+    icon: "user_circle",
     desc: placeholder.desc,
   },
   {
-    icon: "sign_in",
+    icon: "view",
     desc: placeholder.desc,
   },
   {
-    icon: "sign_out",
+    icon: "wifi",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "wifi_none",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "zoom_extents",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "zoom_in",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "zoom_out",
     desc: placeholder.desc,
   },
 ];

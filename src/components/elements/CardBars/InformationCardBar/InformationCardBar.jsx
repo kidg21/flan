@@ -38,6 +38,7 @@ function InformationCardBar({
           }
         }}
         padding="2x"
+        contentAlign="center"
         onClick={toggleOn}
         left={<Title text={title} count={count} weight={weight} {...textProps} />}
         right={<Arrow icon="up" toggleOn={expanded} />}

@@ -1,36 +1,43 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { colors } from "Variables";
 import Grid from "layout/Grid";
 import { DisabledContext } from "States";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
 
 const CalendarContainer = styled(Grid)`
   color: ${(props) => {
-    return props.inputTextColor || "";
+    return props.theme.text[props.inputTextColor] || "";
   }};
 `;
 
 const Input = styled.input`
   border: 1px solid;
   border-color: ${(props) => {
-    return props.inputBorderColor || colors.grey_20;
+    return props.theme.palette[props.inputBorderColor] || props.theme.palette.grey5;
   }};
   background-color: ${(props) => {
-    return props.inputFillColor || "";
+    return props.theme.palette[props.inputFillColor] || "";
   }};
   min-height: 2.75rem;
   padding: 0.5rem 0.75rem;
+  color: ${(props) => {
+    return props.theme.text[props.placeholderColor] || props.theme.text.secondary;
+  }};
+  }
   &:hover {
     border-color: ${(props) => {
-    return props.inputBorderColorHover || colors.grey_40;
+    return props.theme.palette[props.inputBorderColorHover] || props.theme.palette.grey3;
   }};
   }
   &:focus {
-    border-color: ${(props) => {
-    return props.inputBorderColorHover || colors.success;
+    color: ${(props) => {
+    return props.theme.text.primary;
   }};
+    border-color: ${(props) => {
+    return props.theme.palette[props.inputBorderColorHover] || props.theme.palette.primaryLight;
+  }};
+
     &::-webkit-datetime-edit-day-field,
     &::-webkit-datetime-edit-week-field,
     &::-webkit-datetime-edit-month-field,
@@ -43,7 +50,7 @@ const Input = styled.input`
     &::-webkit-datetime-edit-text {
       &:focus {
         background-color: ${(props) => {
-    return props.inputSelectColor || colors.success;
+    return props.theme.palette[props.inputSelectColor] || props.theme.palette.grey5;
   }};
       }
     }
@@ -66,16 +73,22 @@ function Calendar({
   onChange,
 }) {
   let inputFillColor;
+  let placeholderColor;
   let inputBorderColor;
   let inputTextColor;
   let inputBorderColorHover;
   let inputSelectColor;
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  if (isDisabled) {
+    inputFillColor = "disabled";
+    inputBorderColor = "grey5";
+  }
+
   if (error && !isDisabled) {
-    inputTextColor = colors.alert;
-    inputBorderColor = colors.alert_light;
-    inputBorderColorHover = colors.alert_light;
-    inputSelectColor = colors.alert;
+    inputTextColor = "alert";
+    inputBorderColor = "alert";
+    inputBorderColorHover = "alert";
+    inputSelectColor = "grey4";
   }
   const inputTypes = type.toLowerCase() === "datetime" ? ["date", "time"] : [type.toLowerCase()];
   const inputElements = inputTypes.map((currType) => {
@@ -83,6 +96,7 @@ function Calendar({
       <Input
         disabled={isDisabled}
         id={id}
+        placeholderColor={placeholderColor}
         inputBorderColor={inputBorderColor}
         inputBorderColorHover={inputBorderColorHover}
         inputFillColor={inputFillColor}
@@ -100,11 +114,7 @@ function Calendar({
 
   let inputContainer = inputElements;
   if (inputTypes.length > 1) {
-    inputContainer = (
-      <Grid columns="2">
-        {inputElements}
-      </Grid>
-    );
+    inputContainer = <Grid columns="2">{inputElements}</Grid>;
   }
   return (
     <CalendarContainer

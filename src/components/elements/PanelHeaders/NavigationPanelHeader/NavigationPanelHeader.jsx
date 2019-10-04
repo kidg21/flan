@@ -12,9 +12,10 @@ function NavigationPanelHeader({
   return (
     <Piece id={id}>
       <Bar
+              contentAlign="center"
         padding="3x"
-        left={<Icon icon="left" size="lg" onClick={onClick} />}
-        center={<Title text={title} weight="bold" />}
+        left={<Icon icon="left" size="lg" type="standard" />}
+        center={<Title text={title} size="large" />}
         right={<Menu data={menuData} position="bottomLeft" type="edit" />}
       />
     </Piece>
