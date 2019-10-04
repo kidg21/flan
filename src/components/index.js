@@ -62,4 +62,4 @@ export { default as Page } from "./layout/Page";
 export { default as Panel, PanelSection } from "./layout/Panel";
 
 
-export {screen} from "./base/Variables/Variables.jsx";
+export { colors, fonts, shadows, screen, DMPTheme, darkTheme } from "./base/Variables/Variables.jsx";
