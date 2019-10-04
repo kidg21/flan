@@ -147,7 +147,9 @@ const UserRoles = React.forwardRef(({
     value: null, label: "All Roles",
   }].concat(roles);
 
-  const childElements = (!children || children instanceof Array) ? children : [children];
+  let childElements = children;
+  if (childElements && !(childElements instanceof Array)) childElements = [childElements];
+
   return (
     <Panel style={style}>
       <MainPanelHeader title={title} menuData={commands} />

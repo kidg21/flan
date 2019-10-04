@@ -183,7 +183,9 @@ const RolePermissions = React.forwardRef(({
     setFilter(e.target.value.toLowerCase());
   }
 
-  const childElements = (!children || children instanceof Array) ? children : [children];
+  let childElements = children;
+  if (childElements && !(childElements instanceof Array)) childElements = [childElements];
+
   return (
     <Panel style={style}>
       <MainPanelHeader title={title} menuData={commands} />
