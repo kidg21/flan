@@ -38,14 +38,20 @@ const StyledButton = styled.button`
   letter-spacing: 1px;
   overflow: hidden;
   cursor: pointer;
+  border-bottom: ${(props) => {
+    return props.borderBottom || "";
+  }};
   transition: all 0.15s ease;
 
   &:hover {
-    ${Darken}
+    ${Darken};
+    border-bottom: ${(props) => {
+    return props.borderBottom || "";
+  }};
   }
 
   &:active {
-    ${Lighten}
+    ${Lighten};
   }
 
   &[disabled] {
@@ -72,6 +78,7 @@ function Button({
   label,
   icon,
   color,
+  underlined,
   border,
   type,
   size,
@@ -82,6 +89,7 @@ function Button({
 }) {
   let buttonColor;
   let borderRadius;
+  let borderBottom;
   let fontColor;
   let backgroundColor;
   let buttonPadding;
@@ -135,6 +143,10 @@ function Button({
     backgroundColor = buttonColor;
   }
 
+  if (type === "underlined") {
+    borderBottom = "3px solid yellow";
+  }
+
   switch (size) {
     case "small":
       buttonPadding = "0.4rem 0.6rem";
@@ -153,6 +165,8 @@ function Button({
       id={id}
       name={id}
       fullWidth={fullWidth}
+      underlined={underlined}
+      borderBottom={borderBottom}
       disabled={isDisabled}
       border={border}
       borderRadius={borderRadius}
@@ -181,6 +195,7 @@ Button.propTypes = {
   fullWidth: PropTypes.bool,
   tab: PropTypes.bool,
   disabled: PropTypes.bool,
+  underlined: PropTypes.bool,
   onClick: PropTypes.func,
   style: PropTypes.string,
 };
@@ -194,6 +209,7 @@ Button.defaultProps = {
   fullWidth: false,
   tab: false,
   disabled: false,
+  underlined: false,
   style: null,
 };
 

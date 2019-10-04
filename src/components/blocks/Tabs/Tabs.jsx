@@ -36,16 +36,20 @@ const TabsWrapper = styled.section`
     margin: ${(props) => {
     return props.margin || "";
   }};
-  border: ${(props) => {
-  return props.border || "";
-}};
-border-radius: ${(props) => {
-  return props.borderRadius || "";
-}};
+    border: ${(props) => {
+    return props.border || "";
+  }};
+    border-radius: ${(props) => {
+    return props.borderRadius || "";
+  }};
+    background-color: ${(props) => {
+    return props.theme.background[props.backgroundColor] || "";
+  }};
+    color: ${(props) => {
+    return props.theme.palette[props.fontColor] || "";
+  }};
   }
 `;
-
-
 
 function Tabs({
   id, children, columns, align, tabstyle, style,
@@ -55,6 +59,8 @@ function Tabs({
   let borderRadius;
   let setPosition;
   let setWidth;
+  let backgroundColor;
+  let fontColor;
   let gap;
   let margin;
   let setHeight;
@@ -109,14 +115,16 @@ function Tabs({
   }
   switch (tabstyle) {
     case "inline":
+      border = "2px solid transparent";
+      borderRadius = "0px";
+      gap = "0px";
+      backgroundColor = "default";
+      fontColor = "primary";
+      break;
+    case "folder":
       border = "0px solid";
       borderRadius = "0px";
       gap = "0px";
-      break;
-    case "folder":
-        border = "0px solid";
-        borderRadius = "0px";
-        gap = "0px";
       break;
     default:
       break;
@@ -129,6 +137,7 @@ function Tabs({
       borderRadius={borderRadius}
       setColumns={setColumns}
       setPosition={setPosition}
+      backgroundColor={backgroundColor}
       setWidth={setWidth}
       setHeight={setHeight}
       setOrientation={setOrientation}
@@ -136,6 +145,7 @@ function Tabs({
       alignBottom={alignBottom}
       style={style}
       margin={margin}
+      fontColor={fontColor}
     >
       {children}
     </TabsWrapper>
@@ -143,7 +153,7 @@ function Tabs({
 }
 
 function Tab({
-  id, icon, tabLabel, onClick, isSelected, disabled, color, selectedColor,
+  id, icon, tabLabel, onClick, isSelected, disabled, color,
 }) {
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   return (
@@ -156,8 +166,8 @@ function Tab({
           onClick={onClick}
           isSelected={isSelected}
           disabled={isDisabled}
-          color={selectedColor}
-          type="solid"
+          color={color}
+          underlined
         />
       ) : (
         <Button
