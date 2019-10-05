@@ -179,7 +179,6 @@ function SelectMenu({
   isLoading,
   isRtl,
   onChangeState,
-  defaultValue,
 }) {
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let selectedOpts = [];
@@ -253,7 +252,6 @@ function SelectMenu({
         isLoading={isLoading}
         isRtl={isRtl}
         onChange={changeSelected}
-        defaultValue={defaultValue}
       />
       {/* Help Text */}
       {helpText ? <HelpText>{helpText}</HelpText> : null}
