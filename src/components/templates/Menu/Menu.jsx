@@ -1,7 +1,6 @@
 import React, { useState, Fragment } from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
-import { colors } from "Variables";
 import Icon from "atoms/Icon";
 import Command from "atoms/Command";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
@@ -18,11 +17,11 @@ function Menu() {
       </PanelSection>
       <PanelSection>
         <NavigationCardBar title={<Command label="Uploads" />} />
-        <NavigationCardBar title={<Command name="notifications" />} />
+        <NavigationCardBar title={<Command command="notifications" />} />
         <NavigationCardBar title={<Command label="Shared Content" />} />
         <NavigationCardBar title={<Command label="Information" />} />
-        <NavigationCardBar title={<Command name="settings" />} />
-        <NavigationCardBar title={<Command name="profile" />} />
+        <NavigationCardBar title={<Command command="settings" />} />
+        <NavigationCardBar title={<Command command="profile" />} />
       </PanelSection>
     </Panel>
   );

@@ -1,8 +1,27 @@
+/* eslint-disable linebreak-style */
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import Colors from "./Colors";
+import ColorPalette from "./Colors";
+import { DMPTheme, darkTheme } from "Variables";
+import { withKnobs, optionsKnob as options } from "@storybook/addon-knobs";
+import { Padding } from "helpers/Display";
+import { ThemeProvider } from "styled-components";
 
-// Colors
-storiesOf("Application|Style Guides/", module)
-  .addDecorator(story => <div style={{ padding: "1rem" }}>{story()}</div>)
-  .add("Color Palette", () => <Colors />);
+storiesOf("Application|Style Guides/", module).add("Color Palette", () => {
+  return (
+    <ThemeProvider
+      theme={options(
+        "Theme",
+        {
+          Light: DMPTheme,
+          Dark: darkTheme,
+        },
+        DMPTheme,
+        { display: "select" },
+        "Theme",
+      )}
+    >
+      <ColorPalette />
+    </ThemeProvider>
+  );
+});

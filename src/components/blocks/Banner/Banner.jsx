@@ -1,9 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
-import { colors, shadows } from "Variables";
 import Icon from "atoms/Icon";
-import Title, { Description } from "base/Typography";
+import Title, { Description, Link } from "base/Typography";
 
 const StyledBanner = styled.div`
   display: flex;
@@ -11,19 +10,18 @@ const StyledBanner = styled.div`
   align-content: flex-start;
   position: relative;
   background-color: ${props =>
-    props.inverse ? colors.grey_light_glass : colors.grey_dark_glass};
-  color: ${props => (props.inverse ? "" : colors.white)};
-  border: 2px solid;
-  border-color: ${props => props.borderColor || ""};
-  border-width: ${props => (props.inverse ? "1px" : "")};
+    props.theme.background.default};
+  color: ${props => (props.theme.palette[props.inverse] ? "" : props.theme.text.primary)};
+  border: 1px solid;
+  border-color: ${props => props.theme.palette[props.borderColor] || props.theme.palette.grey5 };
   border-radius: 5px;
   padding: 1em;
   width: 100%;
 `;
 
 const StatusBadge = styled.div`
-  background-color: ${props => props.badgeBG || ""};
-  color: ${props => (props.badgeBG ? colors.white : "")};
+  background-color: ${props => props.theme.palette[props.badgeBG] || ""};
+  color: ${props => (props.theme.palette[props.badgeBG] ? props.theme.palette.white : "")};
   padding: ${props => (props.badgeBG ? ".5em" : "")};
   margin-right: 1em;
   border-radius: 100%;
@@ -34,8 +32,6 @@ const BannerImage = styled.img`
   flex: none;
   width: 3em;
   margin-right: 1em;
-  border: 1px solid;
-  border-color: ${props => (props.inverse ? colors.grey_60 : colors.grey_40)};
 `;
 
 const Message = styled.section`
@@ -49,18 +45,7 @@ const Message = styled.section`
   }
 `;
 
-const Link = styled.h4`
-  color: inherit;
-  width: max-content;
-  margin: 0;
-  padding-top: 0.5em;
-  opacity: 0.7;
-  cursor: pointer;
-  &:hover {
-    opacity: 1;
-    text-decoration: underline;
-  }
-`;
+
 
 const Close = styled.section`
   position: absolute;
@@ -80,57 +65,56 @@ function Banner({
   icon,
   img,
   link,
-  inverse,
   onClick,
   onClose,
   style,
 }) {
   let bannerType;
-  let color = colors.grey_40;
+  let color;
   let badgeBG = color;
   switch (type) {
     case "media":
       bannerType = icon ? (
         <StatusBadge>
-          <Icon icon={icon} size="2x" fixedWidth />
+          <Icon icon={icon} size="2x" fixedWidth/>
         </StatusBadge>
       ) : img ? (
-        <BannerImage src={img} inverse={inverse} />
+        <BannerImage src={img} />
       ) : null;
       break;
     case "info":
-      color = colors.anchor;
+      color = "info";
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
-          <Icon icon="info" fixedWidth anchor />
+          <Icon icon="info" fixedWidth type="inverse"/>
         </StatusBadge>
       );
       break;
     case "success":
-      color = colors.success;
+      color = "success";
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
-          <Icon icon="check" fixedWidth success />
+          <Icon icon="check" fixedWidth type="inverse"/>
         </StatusBadge>
       );
       break;
     case "warning":
-      color = colors.warning;
+      color = "warning";
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
-          <Icon icon="alert" fixedWidth warning />
+          <Icon icon="alert" fixedWidth type="inverse"/>
         </StatusBadge>
       );
       break;
     case "alert":
-      color = colors.alert;
+      color = "alert";
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
-          <Icon icon="close" fixedWidth alert />
+          <Icon icon="close" fixedWidth type="inverse"/>
         </StatusBadge>
       );
       break;
@@ -147,7 +131,6 @@ function Banner({
       icon={icon}
       img={img}
       borderColor={color}
-      inverse={inverse}
       style={style}
     >
       {bannerType}
@@ -156,8 +139,8 @@ function Banner({
         {description ? <Description text={description} /> : null}
         {link ? <Link onClick={onClick}>{link}</Link> : null}
       </Message>
-      <Close onClick={onClose}>
-        <Icon icon="close" />
+      <Close >
+        <Icon icon="close" onClick={onClose}/>
       </Close>
     </StyledBanner>
   );

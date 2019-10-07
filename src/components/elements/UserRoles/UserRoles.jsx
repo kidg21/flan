@@ -235,5 +235,4 @@ UserRoles.defaultProps = {
   listHeight: "250px",
   searchWidth: "25%",
 };
-
-export default UserRoles;
+export { UserRoles as default, UserEntry };

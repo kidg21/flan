@@ -3,15 +3,26 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-// Import colors and sizes variables
-import { colors, fonts } from "Variables";
+import { fonts } from "Variables";
 
 const LinkedText = styled.a`
-  color: ${colors.anchor};
+  color: ${(props) => {
+    return props.theme.text.info;
+  }};
 `;
 
 const StyledNumber = styled.span`
   font-family: ${fonts.numbers};
+`;
+
+const StyledCode = styled.code`
+  background-color: ${(props) => {
+    return props.theme.palette.grey5 }};
+  border: 1px solid ${(props) => {
+    return props.theme.palette.grey2 }};
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.5rem 0.25rem;
+  user-select: all;
 `;
 
 const StyledText = styled.h4`
@@ -20,7 +31,7 @@ const StyledText = styled.h4`
     return props.fontFamily || "inherit";
   }};
   color: ${(props) => {
-    return props.textColor || "inherit";
+    return props.theme.text[props.textColor] || props.theme.text.primary ;
   }};
   font-weight: ${(props) => {
     return props.textWeight || "600";
@@ -43,7 +54,7 @@ const StyledText = styled.h4`
   ${LinkedText},
   ${StyledNumber} {
     display: inline-block;
-    padding: 0 0.25em;
+    margin: -.5em 0;
     /** TODO: Add a 'separator' prop */
     /* &:before,
     &:after {
@@ -89,22 +100,19 @@ function Text({
   }
   switch (type && type.toLowerCase()) {
     case "info":
-      textColor = colors.anchor;
+      textColor = "info";
       break;
     case "success":
-      textColor = colors.success;
+      textColor = "success";
       break;
     case "warning":
-      textColor = colors.warning;
+      textColor = "warning";
       break;
     case "alert":
-      textColor = colors.alert;
-      break;
-    case "inverse":
-      textColor = colors.white;
+      textColor = "alert";
       break;
     case "light":
-      textColor = colors.grey_60;
+      textColor = "grey3";
       break;
     default:
       break;
@@ -335,4 +343,8 @@ Number.defaultProps = {
   children: null,
 };
 
-export { Title as default, Headline, SubTitle, Description, Link, Number };
+function Code({ text, children }) {
+  return <StyledCode>{text || children}</StyledCode>;
+}
+
+export { Title as default, Headline, SubTitle, Description, Link, Number, Code };

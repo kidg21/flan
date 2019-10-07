@@ -4,18 +4,18 @@ import styled from "styled-components";
 import Icon from "atoms/Icon";
 import Card from "layout/Card";
 import Title from "base/Typography";
-import { colors } from "Variables";
+import {  Darken, Lighten } from "Variables";
 
 const Container = styled.div`
   cursor: pointer;
-  background-color: pink;
   // position: relative;
   line-height: 1.5;
   display: inline-block;
 `;
 
 const EditMenu = styled.ul`
-  background: yellowgreen;
+  background: ${(props) => {
+    return props.theme.background.default; }};
   border-radius: 3px;
   list-style: none;
   z-index: 500;
@@ -36,11 +36,11 @@ const Item = styled.li`
   text-align: left;
 
   &:hover {
-    background-color: ${colors.grey_light};
+    ${Darken}
   }
 
   &:active {
-    color: ${colors.black};
+    ${Lighten}
   }
 `;
 
@@ -111,19 +111,7 @@ function Menu({ id, data, position }) {
           </EditMenu>
         </Card>
       ) : null}
-      {/* {visibility ? (<Card><SubMenu 
-            setTransform="translate(-200%, 105%)">{data.map((item) => {
-              return (
-                <Item key={item.id} onClick={item.onClickLink}
-                 onHover={
-                  () => {
-                    setVisibility(!visibility);
-                  }
-                }>
-                  <Title text={item.name} weight="normal" />
-                </Item>
-              );
-            })}</SubMenu></Card>) : null} */}
+
     </Container>
   );
 }

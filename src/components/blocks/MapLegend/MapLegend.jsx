@@ -1,6 +1,6 @@
 import React, { useState, Fragment } from "react";
 import styled from "styled-components";
-import { colors, shadows } from "Variables";
+
 import PropTypes from "prop-types";
 import Legend, { Item } from "./Legend.jsx";
 

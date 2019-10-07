@@ -108,7 +108,7 @@ storiesOf("Elements|Dialogue Box", module)
               { value: "jpg", label: ".jpg" },
               { value: "png", label: ".png" },
             ]}
-          />{" "}
+          />
         </Section>
       }
       action="two"

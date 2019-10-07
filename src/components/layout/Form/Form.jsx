@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { colors } from "Variables";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 import Title, { Headline, SubTitle, Description } from "base/Typography";
 import Grid from "layout/Grid";
@@ -9,7 +8,9 @@ import Grid from "layout/Grid";
 const FormWrapper = styled.form`
   height: 100%;
   padding: 1rem 1rem 1.5rem;
-  background-color: ${colors.white};
+  background-color: ${props => {
+    return props.theme.background.default;
+  }};
 `;
 
 const FormHeader = styled(Grid)`
@@ -102,12 +103,14 @@ Form.defaultProps = {
 const Label = styled.label`
   grid-column: 1 / -1;
   width: max-content;
-  font-weight: 700;
+  font-weight: 600;
   user-select: none;
   &:after {
     display: ${props => (props.isRequired ? "" : "none")};
     content: "*";
-    color: ${colors.alert};
+    color: ${props => {
+      return props.theme.palette.alert;
+    }};
     font-size: 1.25rem;
     line-height: 0;
     vertical-align: middle;
@@ -131,7 +134,7 @@ InputLabel.defaultProps = {
 };
 
 const Help = styled(Label)`
-  color: ${colors.grey_80};
+  color: inherit;
   font-weight: initial;
 `;
 function HelpText({ helpText, children }) {
@@ -145,11 +148,15 @@ HelpText.defaultProps = {
 };
 
 const Error = styled(Label)`
-  color: ${colors.alert};
+  color: ${props => {
+    return props.theme.text.alert;
+  }};
   user-select: all;
   cursor: initial;
   &::selection {
-    background-color: ${colors.alert};
+    background-color: ${props => {
+      return props.theme.background.alert;
+    }};
   }
 `;
 function ErrorText({ error, children }) {

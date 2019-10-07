@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { colors } from "Variables";
 
 const Wrapper = styled.div`
   display: block;
@@ -20,7 +19,10 @@ const BoxContainer = styled.div`
   width: ${(props) => {
     return props.width || "";
   }};
-  border: 1px solid ${colors.grey_20};
+  border: 1px solid
+    ${(props) => {
+    return props.theme.palette.grey6;
+  }};
   border-radius: 5px;
 
   ::-webkit-scrollbar {
@@ -33,7 +35,9 @@ const BoxContainer = styled.div`
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: ${colors.anchor_light};
+    background-color: ${(props) => {
+    return props.theme.palette.primary;
+  }};
     border-radius: 20px;
   }
 
@@ -45,7 +49,9 @@ const BoxContainer = styled.div`
 
 
 ::-webkit-scrollbar-thumb:horizontal{
-  background-color: ${colors.anchor_light};
+  background-color: ${(props) => {
+    return props.theme.palette.primary;
+  }};
   border-radius: 20px;
 }
 

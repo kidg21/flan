@@ -6,14 +6,15 @@ import IconBlock from "blocks/IconBlock";
 import Bar from "blocks/Bar";
 import Card, { Piece } from "layout/Card";
 import Title from "base/Typography";
-import { colors } from "Variables";
+
 
 const Number = styled.a`
   font-size: 20px;
   font-weight: 600;
   padding-right: 0.25em;
   &:focus {
-    border: 1px solid ${colors.anchor};
+    border: 1px solid ${(props) => {
+      return props.theme.palette.primary; }};
     outline: none;
   }
 `;
