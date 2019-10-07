@@ -49,7 +49,6 @@ export { default as Dialog, Alert, Confirm, Prompt } from "./elements/DialogueBo
 export { default as Card, CardList } from "./layout/Card";
 export {
   default as Form,
-  Header,
   Section,
   InputLabel,
   HelpText,
