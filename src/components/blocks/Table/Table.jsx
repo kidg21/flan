@@ -185,7 +185,7 @@ Table.propTypes = {
   setHeight: PropTypes.string,
   fontSize: PropTypes.string,
   style: PropTypes.any,
-  data: PropTypes.any,
+  data: PropTypes.any.isRequired,
   columns: PropTypes.any,
 };
 
