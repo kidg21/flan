@@ -33,10 +33,10 @@ function NavigationCardBar({
   } else if (toggle) {
     isDisabled = true;
   }
-  const [state, setState] = useState({ toggle: toggle || false, disabled: isDisabled });
+  const [state, setState] = useState({ disabled: isDisabled });
 
   let leftComponent = null;
-  if (state.toggle === true) {
+  if (toggle === true) {
     leftComponent = (
       <React.Fragment>
         <Switch
@@ -45,22 +45,23 @@ function NavigationCardBar({
           onChange={(e) => {
             const oldState = Object.assign({}, state);
             const newState = Object.assign({}, state, { disabled: !state.disabled });
-            setState(newState);
             if (e) {
               e.stopPropagation();
             }
             if (typeof onStateChange === "function") {
               onStateChange(oldState, newState, setState, e);
+            } else {
+              setState(newState);
             }
           }}
           {...switchProps}
         />
       </React.Fragment>);
   } else {
-    leftComponent = <Title text={title} weight="normal" />;
+    leftComponent = <Title text={title} count={number} weight="normal" />;
   }
   return (
-    <Piece number={number} disabled={state.disabled}>
+    <Piece disabled={state.disabled}>
       <Bar
         id={id}
         disabled={state.disabled}
@@ -77,10 +78,22 @@ function NavigationCardBar({
 
 NavigationCardBar.propTypes = {
   id: PropTypes.string,
-  title: PropTypes.any.isRequired,
+  title: PropTypes.string.isRequired,
+  switchProps: PropTypes.shape({}),
   number: PropTypes.string,
   disabled: PropTypes.bool,
   onClick: PropTypes.func,
+  toggle: PropTypes.bool,
+  onStateChange: PropTypes.func,
+};
+NavigationCardBar.defaultProps = {
+  id: "",
+  toggle: false,
+  switchProps: {},
+  number: null,
+  disabled: false,
+  onClick: null,
+  onStateChange: null,
 };
 
 export default NavigationCardBar;
