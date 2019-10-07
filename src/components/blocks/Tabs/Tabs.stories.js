@@ -385,7 +385,7 @@ storiesOf("Blocks|Tabs", module)
   })
   .add("Inline", () => {
     return React.createElement(() => {
-      const [activeMultiTab, setActiveMultiTab] = useState(false);
+      const [activeMultiTab, setActiveMultiTab] = useState(true);
       const [activeMultiTab2, setActiveMultiTab2] = useState(false);
       const [activeMultiTab3, setActiveMultiTab3] = useState(false);
       return (
@@ -419,4 +419,42 @@ storiesOf("Blocks|Tabs", module)
       </Grid>
       );
     });
+  })
+  .add("Inactive", () => {
+    return React.createElement(() => {
+      const [activeMultiTab, setActiveMultiTab] = useState(true);
+      const [activeMultiTab2, setActiveMultiTab2] = useState(false);
+      const [activeMultiTab3, setActiveMultiTab3] = useState(false);
+      return (
+        <Grid columns="1">
+        <Tabs columns="" >
+          <Tab
+          type="inactive"
+            tabLabel="Tab 1"
+            isSelected={activeMultiTab}
+            onClick={() => {
+              setActiveMultiTab(!activeMultiTab);
+            }}
+          />
+          <Tab
+          type="inactive"
+            tabLabel="Tab 2"
+            isSelected={activeMultiTab2}
+            onClick={() => {
+              setActiveMultiTab2(!activeMultiTab2);
+            }}
+          />
+          <Tab
+          type="inactive"
+            tabLabel="Tab 3"
+            isSelected={activeMultiTab3}
+            onClick={() => {
+              setActiveMultiTab3(!activeMultiTab3);
+            }}
+          />
+        </Tabs>
+      </Grid>
+      );
+    });
   });
+

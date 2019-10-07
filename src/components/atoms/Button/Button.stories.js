@@ -98,7 +98,8 @@ storiesOf("Atoms|Button", module)
         <Button label="Disabled Button" disabled />
         <Button label="Icon Button" icon="user" type="solid" />
         <Button label="Tab Secondary" color="secondary" type="inline" />
-        <Button label="Tab Primary" color="primary" type="underlined"  />
+        <Button label="Tab Primary" color="primary" type="underlined" />
+        <Button label="disabled color" color="inactive" />
       </Grid>
     );
   });

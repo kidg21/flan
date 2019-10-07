@@ -142,19 +142,31 @@ function Tab({
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
 
   let selectedType;
-  let buttonType; 
+  let preliminarycolor;
+  let selectedcolor;
+  let buttonType;
   switch (type) {
     case "inline":
       selectedType = "underlined";
       buttonType = "inline";
+      preliminarycolor = {color};
+      selectedcolor = {color};
+      break;
+    case "inactive":
+      selectedType = "solid";
+      preliminarycolor = "grey";
+      selectedcolor = {color};
       break;
     case "default":
       selectedType = "solid";
+      preliminarycolor = {color};
+      selectedcolor = {color};
       break;
-      default:
+    default:
       selectedType = "solid";
       break;
   }
+
 
   return (
     <Fragment>
@@ -167,7 +179,7 @@ function Tab({
           onClick={onClick}
           isSelected={isSelected}
           disabled={isDisabled}
-          color={color}
+          color={selectedcolor}
           type={selectedType}
         />
       ) : (
@@ -179,7 +191,7 @@ function Tab({
           onClick={onClick}
           isSelected={isSelected}
           disabled={isDisabled}
-          color={color}
+          color={preliminarycolor}
           type={buttonType}
         />
       )}
