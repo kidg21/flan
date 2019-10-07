@@ -97,8 +97,8 @@ storiesOf("Atoms|Button", module)
         <Button label="Large Button" size="large" />
         <Button label="Disabled Button" disabled />
         <Button label="Icon Button" icon="user" type="solid" />
-        <Button label="Tab Secondary" color="secondary" type="underlined" />
-        <Button label="Tab Primary" color="primary" />
+        <Button label="Tab Secondary" color="secondary" type="inline" />
+        <Button label="Tab Primary" color="primary" type="underlined"  />
       </Grid>
     );
   });

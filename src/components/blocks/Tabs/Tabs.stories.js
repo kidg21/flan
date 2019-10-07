@@ -280,7 +280,7 @@ storiesOf("Blocks|Tabs", module)
     return React.createElement(() => {
       const [activeSingleTab, setActiveSingleTab] = useState("tab1");
       return (
-        <Tabs columns="" >
+        <Tabs columns=""  >
           <Tab
             tabLabel="Tab 1"
             isSelected={activeSingleTab === "tab1"}
@@ -383,7 +383,7 @@ storiesOf("Blocks|Tabs", module)
       );
     });
   })
-  .add("Trials", () => {
+  .add("Inline", () => {
     return React.createElement(() => {
       const [activeMultiTab, setActiveMultiTab] = useState(false);
       const [activeMultiTab2, setActiveMultiTab2] = useState(false);
@@ -392,6 +392,7 @@ storiesOf("Blocks|Tabs", module)
         <Grid columns="1">
         <Tabs columns="" >
           <Tab
+          type="inline"
             tabLabel="Tab 1"
             isSelected={activeMultiTab}
             onClick={() => {
@@ -399,6 +400,7 @@ storiesOf("Blocks|Tabs", module)
             }}
           />
           <Tab
+          type="inline"
             tabLabel="Tab 2"
             isSelected={activeMultiTab2}
             onClick={() => {
@@ -406,29 +408,7 @@ storiesOf("Blocks|Tabs", module)
             }}
           />
           <Tab
-            tabLabel="Tab 3"
-            isSelected={activeMultiTab3}
-            onClick={() => {
-              setActiveMultiTab3(!activeMultiTab3);
-            }}
-          />
-        </Tabs>
-        <Tabs columns="" tabstyle="inline">
-          <Tab
-            tabLabel="Tab 1"
-            isSelected={activeMultiTab}
-            onClick={() => {
-              setActiveMultiTab(!activeMultiTab);
-            }}
-          />
-          <Tab
-            tabLabel="Tab 2"
-            isSelected={activeMultiTab2}
-            onClick={() => {
-              setActiveMultiTab2(!activeMultiTab2);
-            }}
-          />
-          <Tab
+          type="inline"
             tabLabel="Tab 3"
             isSelected={activeMultiTab3}
             onClick={() => {

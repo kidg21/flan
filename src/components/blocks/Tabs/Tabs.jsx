@@ -52,7 +52,7 @@ const TabsWrapper = styled.section`
 `;
 
 function Tabs({
-  id, children, columns, align, tabstyle, style,
+  id, children, columns, align, style,
 }) {
   let setColumns;
   let border;
@@ -113,22 +113,6 @@ function Tabs({
     default:
       break;
   }
-  switch (tabstyle) {
-    case "inline":
-      border = "2px solid transparent";
-      borderRadius = "0px";
-      gap = "0px";
-      backgroundColor = "default";
-      fontColor = "primary";
-      break;
-    case "folder":
-      border = "0px solid";
-      borderRadius = "0px";
-      gap = "0px";
-      break;
-    default:
-      break;
-  }
   return (
     <TabsWrapper
       id={id}
@@ -153,31 +137,50 @@ function Tabs({
 }
 
 function Tab({
-  id, icon, tabLabel, onClick, isSelected, disabled, color,
+  id, icon, tabLabel, size, onClick, type, isSelected, disabled, color,
 }) {
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+
+  let selectedType;
+  let buttonType; 
+  switch (type) {
+    case "inline":
+      selectedType = "underlined";
+      buttonType = "inline";
+      break;
+    case "default":
+      selectedType = "solid";
+      break;
+      default:
+      selectedType = "solid";
+      break;
+  }
+
   return (
     <Fragment>
       {isSelected ? (
         <Button
           id={id}
           icon={icon}
+          size={size}
           label={tabLabel}
           onClick={onClick}
           isSelected={isSelected}
           disabled={isDisabled}
           color={color}
-          underlined
+          type={selectedType}
         />
       ) : (
         <Button
           id={id}
           icon={icon}
+          size={size}
           label={tabLabel}
           onClick={onClick}
           isSelected={isSelected}
           disabled={isDisabled}
           color={color}
+          type={buttonType}
         />
       )}
     </Fragment>

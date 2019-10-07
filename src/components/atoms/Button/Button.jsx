@@ -34,12 +34,17 @@ const StyledButton = styled.button`
   font-size: ${(props) => {
     return props.labelSize || "inherit";
   }};
-  font-weight: 600;
+  font-weight: ${(props) => {
+    return props.fontWeight || "600";
+  }};
   letter-spacing: 1px;
   overflow: hidden;
   cursor: pointer;
   border-bottom: ${(props) => {
     return props.borderBottom || "";
+  }};
+  border-bottom-color: ${(props) => {
+    return props.theme.palette[props.underlineColor];
   }};
   transition: all 0.15s ease;
 
@@ -47,6 +52,9 @@ const StyledButton = styled.button`
     ${Darken};
     border-bottom: ${(props) => {
     return props.borderBottom || "";
+  }};
+    border-bottom-color: ${(props) => {
+    return props.theme.palette[props.underlineColor];
   }};
   }
 
@@ -78,7 +86,7 @@ function Button({
   label,
   icon,
   color,
-  underlined,
+  underlineColor,
   border,
   type,
   size,
@@ -90,6 +98,7 @@ function Button({
   let buttonColor;
   let borderRadius;
   let borderBottom;
+  let fontWeight;
   let fontColor;
   let backgroundColor;
   let buttonPadding;
@@ -144,13 +153,24 @@ function Button({
   }
 
   if (type === "underlined") {
-    borderBottom = "3px solid yellow";
+    border = "2px solid transparent";
+    backgroundColor = "default";
+    fontWeight = "700";
+    fontColor = buttonColor;
+    borderBottom = "3px solid";
+    underlineColor = fontColor;
+  }
+
+  if (type === "inline") {
+    border = "2px solid transparent";
+    fontWeight = "700";
+    backgroundColor = "default";
   }
 
   switch (size) {
     case "small":
       buttonPadding = "0.4rem 0.6rem";
-      labelSize = ".8em";
+      labelSize = ".9em";
       break;
     case "large":
       buttonPadding = "0.6rem 0.8rem";
@@ -165,11 +185,12 @@ function Button({
       id={id}
       name={id}
       fullWidth={fullWidth}
-      underlined={underlined}
       borderBottom={borderBottom}
+      underlineColor={underlineColor}
       disabled={isDisabled}
       border={border}
       borderRadius={borderRadius}
+      fontWeight={fontWeight}
       type={type}
       onClick={onClick}
       buttonColor={buttonColor}
