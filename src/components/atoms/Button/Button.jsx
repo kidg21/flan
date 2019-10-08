@@ -104,7 +104,7 @@ function Button({
   let buttonPadding;
   let labelSize;
 
-  switch (color) {
+  switch(color && color.toLowerCase()) {
     case "success":
       buttonColor = "success";
       fontColor = buttonColor;
@@ -152,22 +152,24 @@ function Button({
     backgroundColor = buttonColor;
   }
 
-  if (type === "underlined") {
-    border = "2px solid transparent";
-    backgroundColor = "default";
-    fontWeight = "700";
-    fontColor = buttonColor;
-    borderBottom = "3px solid";
-    underlineColor = fontColor;
+
+  if (type) {
+    if (type.toLowerCase() === "underlined") {
+      border = "2px solid transparent";
+      backgroundColor = "default";
+      fontWeight = "700";
+      fontColor = buttonColor;
+      borderBottom = "3px solid";
+      underlineColor = fontColor;
+    } else if (type.toLowerCase() === "inline") {
+      border = "2px solid transparent";
+      fontWeight = "700";
+      backgroundColor = "default";
+    }
   }
 
-  if (type === "inline") {
-    border = "2px solid transparent";
-    fontWeight = "700";
-    backgroundColor = "default";
-  }
 
-  switch (size) {
+  switch(size && size.toLowerCase()) {
     case "small":
       buttonPadding = "0.4rem 0.6rem";
       labelSize = ".9em";
@@ -214,9 +216,9 @@ Button.propTypes = {
   color: PropTypes.oneOf(["success", "warning", "alert", "info", "primary", "secondary"]),
   size: PropTypes.oneOf(["small", "large"]),
   fullWidth: PropTypes.bool,
-  tab: PropTypes.bool,
+  underlineColor: PropTypes.string,
   disabled: PropTypes.bool,
-  underlined: PropTypes.bool,
+  border: PropTypes.string,
   onClick: PropTypes.func,
   style: PropTypes.string,
 };
@@ -228,9 +230,9 @@ Button.defaultProps = {
   color: null,
   size: null,
   fullWidth: false,
-  tab: false,
+  underlineColor: null,
   disabled: false,
-  underlined: false,
+  border: null,
   style: null,
 };
 

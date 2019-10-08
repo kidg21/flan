@@ -99,7 +99,7 @@ storiesOf("Atoms|Button", module)
         <Button label="Icon Button" icon="user" type="solid" />
         <Button label="Tab Secondary" color="secondary" type="inline" />
         <Button label="Tab Primary" color="primary" type="underlined" />
-        <Button label="disabled color" color="inactive" />
+        <Button label="inactive color" color="grey" />
       </Grid>
     );
   });

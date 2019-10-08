@@ -141,31 +141,6 @@ function Tab({
 }) {
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
 
-  let selectedType;
-  let preliminarycolor;
-  let selectedcolor;
-  let buttonType;
-  switch (type) {
-    case "inline":
-      selectedType = "underlined";
-      buttonType = "inline";
-      preliminarycolor = {color};
-      selectedcolor = {color};
-      break;
-    case "inactive":
-      selectedType = "solid";
-      preliminarycolor = "grey";
-      selectedcolor = {color};
-      break;
-    case "default":
-      selectedType = "solid";
-      preliminarycolor = {color};
-      selectedcolor = {color};
-      break;
-    default:
-      selectedType = "solid";
-      break;
-  }
 
 
   return (
@@ -179,8 +154,8 @@ function Tab({
           onClick={onClick}
           isSelected={isSelected}
           disabled={isDisabled}
-          color={selectedcolor}
-          type={selectedType}
+          color={color}
+          type={type && type.toLowerCase() === "inline" ? "underlined" : "solid"}
         />
       ) : (
         <Button
@@ -191,8 +166,8 @@ function Tab({
           onClick={onClick}
           isSelected={isSelected}
           disabled={isDisabled}
-          color={preliminarycolor}
-          type={buttonType}
+          color={type && type.toLowerCase() === "inactive" ? "grey" : color}
+          type={type && type.toLowerCase() === "inline" ? type : null}
         />
       )}
     </Fragment>
@@ -214,6 +189,9 @@ Tab.propTypes = {
   onClick: PropTypes.func.isRequired,
   isSelected: PropTypes.bool,
   disabled: PropTypes.bool,
+  color: PropTypes.string,
+  type: PropTypes.string,
+  size: PropTypes.string,
 };
 
 export { Tabs as default, Tab };
