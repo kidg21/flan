@@ -74,6 +74,7 @@ Container.propTypes = {
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   children: PropTypes.node,
+  padding: PropTypes.string,
 };
 
 Container.defaultProps = {
@@ -81,6 +82,7 @@ Container.defaultProps = {
   height: null,
   width: null,
   children: null,
+  padding: null,
 };
 
 export default Container;
