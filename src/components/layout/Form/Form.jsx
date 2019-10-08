@@ -140,9 +140,9 @@ const Help = styled(Label)`
 function HelpText({ helpText, children }) {
   const content = children || helpText;
   if (typeof content === "string") {
-    return (<Help>{helpText.split("\n").map((text) => { return <>{text}<br/></>; })}</Help>);
+    return (<Help>{content.split("\n").map((text) => { return <>{text}<br/></>; })}</Help>);
   } else {
-    return (<Help>{children}</Help>);
+    return (<Help>{content}</Help>);
   }
 }
 HelpText.propTypes = {
