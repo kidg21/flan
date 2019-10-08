@@ -1,64 +1,202 @@
 import React from "react";
-import styled from "styled-components";
 import PropTypes from "prop-types";
+import styled, { css } from "styled-components";
+import Container from "atoms/Container";
 import { SkeletonStatic } from "helpers";
 import Title from "base/Typography";
 
-const TableWrapper = styled.table`
-  // overflow: hidden;
-  table-layout: fixed;
-  cursor: default;
-  // box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
-  border-radius: 5px;
-  border-collapse: collapse;
-  // display: flex-block;
+const Wrapper = styled.div`
+  display: block;
+  padding: 1em;
+`;
+const TableContainer = styled.table`
   width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  min-width: 400px;
+
+
   &:empty {
-      ${SkeletonStatic};
-      padding: 5px;
-      width: 100 em;
-      height: 5rem;
+    ${SkeletonStatic};
+    padding: 5px;
+    width: 100 em;
+    height: 5rem;
+  }
+}
+`;
+
+const Row = styled.tr`
+  margin: 1em;
+`;
+
+const Head = styled.thead``;
+
+const Body = styled.tbody`
+  min-width: 400px;
+`;
+
+const TH = styled.th`
+  text-align: left;
+  min-width: 400px;
+  color: black;
+  font-size: ${(props) => {
+    return props.fontSize || "small";
+  }};
+  padding-left: 5px;
+  position: sticky;
+  padding-bottom: 10px;
+`;
+
+const Cell = styled.td`
+  padding: ${(props) => {
+    return props.cellPadding || "";
+  }};
+  border-bottom: ${(props) => {
+    return props.cellBorder || "";
+  }};
+  font-size: ${(props) => {
+    return props.fontSize || "small";
+  }};
+
+  &:nth-child(even) {
+    font-weight: ${(props) => {
+    return props.fontWeight || "";
+  }};
+  }
+
+  &:empty {
+    &:before {
+      content: "N/A";
     }
   }
 `;
-const Row = styled.tr``;
-const Cell = styled.td`
-  font-size: small;
-  text-align: left;
 
-  &:empty {
-    content: "Not Available";
+function Table({
+  id, scroll, setHeight, fontSize, style, data, columns, keyField,
+}) {
+  let content;
+  let cellPadding;
+  let fontWeight;
+  let cellBorder;
+  let headerContent;
+
+  switch(style && style.toLowerCase()) {
+    case "legend":
+      cellBorder = "";
+      cellPadding = "0.15em 0.15em 0.15em";
+      fontWeight = "bold";
+      break;
+    case "standard":
+    default:
+      cellBorder = "1px solid #ddd";
+      cellPadding = "0.5em";
+      break;
   }
-
-  &:nth-child(even) {
-    font-weight: bold;
-  }
-`;
-
-function Table({ id, data }) {
-  return (
-    <TableWrapper id={id}>
-      {data.map((item) => {
-        return (
-          <Row key={item.id}>
-            <Cell>
-              <Title text={item.name} size="tiny" weight="normal" />
-            </Cell>{" "}
-            <Cell>
-              <Title text={item.value} size="tiny" weight="bold" />
-            </Cell>
+  if (columns) {
+    headerContent = (
+      <TableContainer>
+        <Head>
+          <Row >
+            {columns.map((column) => {
+              return (
+                <TH key={column} fontSize={fontSize}>
+                  {column}
+                </TH>
+              );
+            })}
           </Row>
-        );
-      })}
-    </TableWrapper>
+        </Head>
+      </TableContainer>
+    );
+    content = (
+      <Body>
+        {data.map((row) => {
+          return (
+            <Row key={row[keyField]}>
+              {columns.map((column) => {
+                return (
+                  <Cell
+                    key={column}
+                    cellBorder={cellBorder}
+                    cellPadding={cellPadding}
+                    fontWeight={fontWeight}
+                    fontSize={fontSize}
+                  >
+                    {row[column.toLowerCase()]}
+                  </Cell>
+                );
+              })}
+            </Row>
+          );
+        })}
+      </Body>
+    );
+  } else {
+    content = (
+      <TableContainer id={id}>
+        {data.map((row) => {
+          return (
+            <Row key={row.id}>
+              <Cell
+                cellBorder={cellBorder}
+                cellPadding={cellPadding}
+                fontWeight={fontWeight}
+                fontSize={fontSize}
+              >
+                {row.name}
+              </Cell>
+              <Cell
+                cellBorder={cellBorder}
+                cellPadding={cellPadding}
+                fontWeight={fontWeight}
+                fontSize={fontSize}
+              >
+                {row.value}
+              </Cell>
+            </Row>
+          );
+        })}
+      </TableContainer>
+    );
+    headerContent = "";
+  }
+
+  return (
+    <Wrapper id={id}>
+      {headerContent}
+      {scroll ? (
+        <Container height={setHeight}>
+          <TableContainer>{content}</TableContainer>
+        </Container>
+      ) : (
+        <TableContainer>{content}</TableContainer>
+      )}
+    </Wrapper>
   );
 }
 
 Table.propTypes = {
   id: PropTypes.string,
+  header: PropTypes.any,
+  scroll: PropTypes.bool,
+  setHeight: PropTypes.string,
+  fontSize: PropTypes.string,
+  style: PropTypes.any,
   data: PropTypes.any.isRequired,
+  columns: PropTypes.arrayOf(PropTypes.string),
+  keyField: PropTypes.string,
+};
+
+Table.defaultProps = {
+  id: null,
+  header: null,
+  scroll: false,
+  setHeight: null,
+  fontSize: null,
+  style: null,
+  data: null,
+  columns: null,
+  keyField: null,
 };
 
 export default Table;
-
-// Tables currently do not have context props. these props will need to be added so there is no hard coded text. we will meet on this later

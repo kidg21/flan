@@ -32,13 +32,13 @@ function PropertyListCard({
       <Piece>
         <Wrapper>
           <Title text="Lot" size="normal" />
-          <Table data={lotData} />
+          <Table data={lotData} style="legend"/>
           <Space />
           <Title text="Building" size="normal" />
-          <Table data={buildingData} />
+          <Table data={buildingData} style="legend"/>
           <Space />
           <Title text="Owner" size="normal" />
-          <Table data={ownerData} />
+          <Table data={ownerData} style="legend"/>
         </Wrapper>
       </Piece>
     </Card>
