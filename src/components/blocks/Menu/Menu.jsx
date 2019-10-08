@@ -98,12 +98,7 @@ function Menu({ id, data, position }) {
           >
             {data.map((item) => {
               return (
-                <Item key={item.id} onClick={item.onClickLink}
-                 onHover={
-                  () => {
-                    setVisibility(!visibility);
-                  }
-                }>
+                <Item key={item.id} onClick={item.onClickLink}>
                   <Title text={item.name} weight="normal" />
                 </Item>
               );
@@ -111,7 +106,6 @@ function Menu({ id, data, position }) {
           </EditMenu>
         </Card>
       ) : null}
-
     </Container>
   );
 }
