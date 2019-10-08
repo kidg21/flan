@@ -72,7 +72,7 @@ const Cell = styled.td`
 `;
 
 function Table({
-  id, header, scroll, setHeight, fontSize, style, data, columns,
+  id, scroll, setHeight, fontSize, style, data, columns, keyField,
 }) {
   let content;
   let cellPadding;
@@ -80,26 +80,23 @@ function Table({
   let cellBorder;
   let headerContent;
 
-  switch (style) {
+  switch(style && style.toLowerCase()) {
     case "legend":
       cellBorder = "";
       cellPadding = "0.15em 0.15em 0.15em";
       fontWeight = "bold";
       break;
     case "standard":
-      cellBorder = "1px solid #ddd";
-      cellPadding = "0.5em";
-      break;
     default:
       cellBorder = "1px solid #ddd";
       cellPadding = "0.5em";
       break;
   }
-  if (header) {
+  if (columns) {
     headerContent = (
       <TableContainer>
         <Head>
-          <Row>
+          <Row >
             {columns.map((column) => {
               return (
                 <TH key={column} fontSize={fontSize}>
@@ -115,7 +112,7 @@ function Table({
       <Body>
         {data.map((row) => {
           return (
-            <Row>
+            <Row key={row[keyField]}>
               {columns.map((column) => {
                 return (
                   <Cell
@@ -186,7 +183,8 @@ Table.propTypes = {
   fontSize: PropTypes.string,
   style: PropTypes.any,
   data: PropTypes.any.isRequired,
-  columns: PropTypes.any,
+  columns: PropTypes.arrayOf(PropTypes.string),
+  keyField: PropTypes.string,
 };
 
 Table.defaultProps = {
@@ -198,6 +196,7 @@ Table.defaultProps = {
   style: null,
   data: null,
   columns: null,
+  keyField: null,
 };
 
 export default Table;
