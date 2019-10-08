@@ -12,9 +12,9 @@ import Icon from "atoms/Icon";
 import Title from "base/Typography";
 
 const permissions = [
-  { value: "Read", label: "Read" },
-  { value: "Write", label: "Write" },
-  { value: ["Read", "Write"], label: "Read / Write" },
+  { value: "read", label: "Read" },
+  { value: "write", label: "Write" },
+  { value: ["read", "write"], label: "Read / Write" },
 ];
 
 function FolderEntry({
@@ -91,14 +91,19 @@ function RoleEntry({
     }
   }
 
+  function onChangeVisible(open) {
+    onChange({ ...role, open });
+  }
+
   function addRolePermission() {
     editRole.onClick(role);
   }
 
   return (
-    <InformationCardBar title={<Title>{role.role} <Icon icon="delete" onClick={onDeleteRole} /></Title>}>
+    <InformationCardBar open={role.open} onClick={onChangeVisible} title={<Title>{role.name} <Icon icon="delete" onClick={onDeleteRole} /></Title>}>
       {role.folders.map((folder) => {
         return (<FolderEntry
+          key={folder.folder}
           folder={folder}
           onChange={onChangePermission}
           padding={folderPadding}
@@ -114,6 +119,7 @@ function RoleEntry({
 RoleEntry.propTypes = {
   role: PropTypes.shape({
     role: PropTypes.string,
+    name: PropTypes.string,
     folders: PropTypes.arrayOf(PropTypes.shape({
       folder: PropTypes.string,
       permissions: PropTypes.arrayOf(PropTypes.string),
@@ -134,45 +140,35 @@ RoleEntry.defaultProps = {
   selectWidth: null,
 };
 
-function RolePermissions({
+const RolePermissions = React.forwardRef(({
+  style,
+  panelStyle,
   roles,
+  commands,
   listHeight,
   right,
+  children,
   editRole,
   onChange,
   folderPadding,
   selectWidth,
-}) {
+  title,
+}, ref) => {
   let activeRoles = roles;
   let setRoles = onChange;
   if (!onChange) [activeRoles, setRoles] = useState(roles);
-
-  const [visibleRoles, setVisibleRoles] = useState({
-    roles: activeRoles,
-    searchCriteria: null,
-  });
-
-  function filterRoles(currRoles, searchCriteria) {
-    if (searchCriteria) {
-      setVisibleRoles({
-        roles: currRoles.filter((role) => {
-          return role.role.toLowerCase().includes(searchCriteria);
-        }),
-        searchCriteria: searchCriteria,
-      });
-    } else {
-      setVisibleRoles({
-        roles: currRoles,
-        searchCriteria: null,
-      });
-    }
-  }
+  const [filter, setFilter] = useState(null);
 
   function onRoleChange(role) {
     let currRoles = null;
+    let isChange = true;
     if (role.folders) {
       currRoles = activeRoles.map((rolePermissions) => {
-        return role.role === rolePermissions.role ? role : rolePermissions;
+        if (role.role === rolePermissions.role) {
+          if (role.open !== rolePermissions.open) isChange = false;
+          return role;
+        }
+        return rolePermissions;
       });
     } else {
       currRoles = activeRoles.filter((rolePermissions) => {
@@ -180,24 +176,28 @@ function RolePermissions({
       });
     }
 
-    setRoles(currRoles);
-    filterRoles(currRoles, visibleRoles.searchCriteria);
+    setRoles(currRoles, isChange);
   }
 
   function onSearch(e) {
-    filterRoles(activeRoles, e.target.value.toLowerCase());
+    setFilter(e.target.value.toLowerCase());
   }
 
+  let childElements = children;
+  if (childElements && !(childElements instanceof Array)) childElements = [childElements];
+
   return (
-    <Panel>
-      <MainPanelHeader title="Role Permissions" />
-      <PanelSection >
+    <Panel style={style}>
+      <MainPanelHeader title={title} menuData={commands} />
+      <PanelSection body style={panelStyle}>
         <Bar
-          left={<Search placeholder="Search for a Role" onChange={onSearch} />}
+          left={<Search placeholder="Search for a Role" onChange={onSearch} inputStyle={{ boxSizing: "border-box " }} />}
           right={right}
         />
-        <Container height={listHeight} >
-          {visibleRoles.roles.map((role) => {
+        <Container height={listHeight} ref={ref} >
+          {activeRoles.filter((role) => {
+            return filter ? role.name.toLowerCase().includes(filter) : true;
+          }).map((role) => {
             return (<RoleEntry
               key={role.role}
               role={role}
@@ -209,23 +209,39 @@ function RolePermissions({
           })}
         </Container>
       </PanelSection>
+      {childElements ? childElements.map((child) => {
+        return (
+          <PanelSection>
+            {child}
+          </PanelSection>
+        );
+      }) : null}
     </Panel>
   );
-}
+});
 
 RolePermissions.propTypes = {
+  style: PropTypes.object,
+  panelStyle: PropTypes.object,
   roles: PropTypes.arrayOf(PropTypes.shape({
     role: PropTypes.string,
+    name: PropTypes.string,
     folders: PropTypes.arrayOf(PropTypes.shape({
       folder: PropTypes.string,
       permissions: PropTypes.arrayOf(PropTypes.string),
     })),
+  })),
+  commands: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string,
+    name: PropTypes.string,
+    onClickLink: PropTypes.func,
   })),
   listHeight: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number,
   ]),
   right: PropTypes.node,
+  children: PropTypes.node,
   editRole: PropTypes.shape({
     label: PropTypes.string,
     onClick: PropTypes.func,
@@ -233,16 +249,22 @@ RolePermissions.propTypes = {
   onChange: PropTypes.func,
   folderPadding: PropTypes.string,
   selectWidth: PropTypes.string,
+  title: PropTypes.string,
 };
 
 RolePermissions.defaultProps = {
+  style: null,
+  panelStyle: null,
   roles: null,
+  commands: null,
   listHeight: "250px",
   right: null,
+  children: null,
   editRole: null,
   onChange: null,
   folderPadding: "3x",
   selectWidth: "20%",
+  title: "Role Permissions",
 };
 
 export default RolePermissions;

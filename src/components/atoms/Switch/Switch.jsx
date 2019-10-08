@@ -54,7 +54,6 @@ const StyledSwitch = styled.div`
 `;
 
 const Circle = styled.div`
-  position: absolute;
   background: ${(props) => {
     return props.checked ? props.theme.background.default : props.theme.background.default;
   }};

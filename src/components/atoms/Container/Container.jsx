@@ -41,23 +41,24 @@ const BoxContainer = styled.div`
   }
 `;
 
-function Container({
-  id, height, width, padding, background, children,
-}) {
+const Container = React.forwardRef(({
+  id, height, width, padding, children,
+}, ref) => {
   return (
-    <Wrapper>
-      <BoxContainer id={id} background={background} height={height} width={width}>
+    <Wrapper padding={padding}>
+      <BoxContainer id={id} height={height} width={width} ref={ref}>
         {children}
       </BoxContainer>
     </Wrapper>
   );
-}
+});
 
 Container.propTypes = {
   id: PropTypes.string,
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   children: PropTypes.node,
+  padding: PropTypes.bool,
 };
 
 Container.defaultProps = {
@@ -65,6 +66,7 @@ Container.defaultProps = {
   height: null,
   width: null,
   children: null,
+  padding: false,
 };
 
 export default Container;

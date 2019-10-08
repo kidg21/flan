@@ -148,8 +148,8 @@ function Tab({
           isSelected={isSelected}
           disabled={isDisabled}
           color={selectedColor}
-          type='solid'
           noBorder={noBorder}
+          fill
         />
       ) : (
         <Button

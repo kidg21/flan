@@ -13,6 +13,7 @@ const TextInputContainer = styled(Grid)`
 `;
 
 const Input = styled.input`
+  line-height: normal;
   border: 1px solid;
   border-color: ${(props) => {
     return props.theme.palette[props.inputBorderColor] || props.theme.palette.grey5;
@@ -64,6 +65,8 @@ function TextInput({
   error,
   disabled,
   children,
+  style,
+  inputStyle,
   onChange,
   autocompleteList,
   size,
@@ -123,11 +126,11 @@ function TextInput({
 
   return (
     <TextInputContainer
-      id={id}
       inputTextColor={inputTextColor}
       gap="small"
       columns="1"
       className={className}
+	    style={style}
     >
       {label ? <InputLabel isRequired={isRequired} label={label} /> : null}
       <Input
@@ -146,6 +149,7 @@ function TextInput({
         inputCaretColor={inputCaretColor}
         inputResize={inputResize}
         inputSelectColor={inputSelectColor}
+        style={inputStyle}
         onChange={onChange}
         list={autoCompleteDataListId}
         size={size} // overriding this while developing so it's easier to see
@@ -174,6 +178,8 @@ TextInput.propTypes = {
   size: PropTypes.string,
   type: PropTypes.string,
   value: PropTypes.string,
+	style: PropTypes.object,
+	inputStyle: PropTypes.object,
 };
 
 TextInput.defaultProps = {
@@ -192,6 +198,8 @@ TextInput.defaultProps = {
   size: null,
   type: null,
   value: null,
+	style: null,
+	inputStyle: null,
 };
 
 export { TextInput as default };

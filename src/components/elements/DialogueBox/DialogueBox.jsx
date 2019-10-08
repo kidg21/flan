@@ -11,78 +11,168 @@ function DialogueBox({
   header,
   title,
   message,
-  primaryLabel,
-  secondaryLabel,
-  content,
+  children,
   buttonColor,
-  onClickPrimary,
-  onClickSecondary,
-  action,
+  buttons,
 }) {
-  let buttonType;
-  switch (action) {
-    case "one":
-      buttonType = (
-        <Bar left={<Button label={primaryLabel} onClick={onClickPrimary} color={buttonColor} />} />
-      );
-      break;
-    case "two":
-      buttonType = (
+  let buttonElements = null;
+  if (buttons) {
+    if (buttons.length > 1) {
+      // Multiple buttons
+      buttonElements = (
         <Bar
           right={
-            <Grid columns="2">
-              <Button
-                label={primaryLabel}
-                type="solid"
-                onClick={onClickPrimary}
-                color={buttonColor}
-              />
-              <Button label={secondaryLabel} onClick={onClickSecondary} color={buttonColor} />
+            <Grid columns={buttons.length}>
+              {buttons.map((button, index) => {
+                return (<Button
+                  label={button.label}
+                  fill={typeof button.fill !== "undefined" ? button.fill : index === 0}
+                  onClick={button.onClick}
+                  color={button.color || buttonColor}
+                  disabled={button.disabled}
+                />);
+              })}
             </Grid>
           }
         />
       );
-      break;
-    default:
-      break;
+    } else {
+      // Single button
+      buttonElements = (
+        <Bar
+          left={
+            <Button
+              label={buttons[0].label}
+              fill={buttons[0].fill}
+              onClick={buttons[0].onClick}
+              color={buttons[0].color || buttonColor}
+              disabled={buttons[0].disabled}
+            />
+          }
+        />
+      );
+    }
   }
+
   return (
-    <Card id={id} action={action} text={title} padding="1em">
+    <Card id={id} padding="1em">
       {header ? <Piece>{header}</Piece> : null}
       <Bar left={<Title text={title} />} />
       {message ? <Bar left={<Title text={message} weight="light" />} /> : null}
-      {content ? <Bar left={content} /> : null}
-      {action ? <Piece>{buttonType}</Piece> : null}
+      {children ? <Bar left={children} /> : null}
+      {buttonElements ? <Piece>{buttonElements}</Piece> : null}
     </Card>
   );
 }
 
-DialogueBox.propTypes = {
+const buttonType = PropTypes.shape({
+  label: PropTypes.string,
+  fill: PropTypes.bool,
+  color: PropTypes.string,
+  disabled: PropTypes.bool,
+  onClick: PropTypes.func,
+});
+
+const dialogProps = {
   id: PropTypes.string,
-  header: PropTypes.node,
-  content: PropTypes.node,
   title: PropTypes.node,
-  message: PropTypes.string,
-  buttonColor: PropTypes.node,
-  primaryLabel: PropTypes.string,
-  secondaryLabel: PropTypes.string,
-  onClickPrimary: PropTypes.func,
-  onClickSecondary: PropTypes.func,
-  action: PropTypes.node,
+  message: PropTypes.node,
+  buttonColor: PropTypes.string,
+};
+
+DialogueBox.propTypes = {
+  ...dialogProps,
+  header: PropTypes.node,
+  children: PropTypes.node,
+  buttons: PropTypes.arrayOf(buttonType),
 };
 
 DialogueBox.defaultProps = {
   id: null,
   header: null,
-  content: null,
+  children: null,
   title: null,
   message: null,
   buttonColor: null,
-  primaryLabel: null,
-  secondaryLabel: null,
-  onClickPrimary: null,
-  onClickSecondary: null,
-  action: null,
+  buttons: null,
 };
 
-export default DialogueBox;
+function Prompt({
+  accept,
+  cancel,
+  buttons,
+  children,
+  ...props
+}) {
+  const promptButtons = cancel ? [accept, cancel] : accept;
+  return <DialogueBox buttons={promptButtons} {...props}>{children}</DialogueBox>;
+}
+
+Prompt.propTypes = {
+  ...dialogProps,
+  accept: buttonType,
+  cancel: buttonType,
+  children: PropTypes.node,
+};
+
+Prompt.defaultProps = {
+  children: null,
+  accept: { label: "OK" },
+  cancel: null,
+};
+
+function Confirm({
+  id,
+  title,
+  message,
+  buttonColor,
+  accept,
+  cancel,
+}) {
+  const buttons = cancel ? [accept, cancel] : accept;
+  return (<DialogueBox
+    id={id}
+    title={title}
+    message={message}
+    buttonColor={buttonColor}
+    buttons={buttons}
+  />);
+}
+
+Confirm.propTypes = {
+  ...dialogProps,
+  accept: buttonType,
+  cancel: buttonType,
+};
+
+Confirm.defaultProps = {
+  accept: { label: "OK" },
+  cancel: { label: "Cancel" },
+};
+
+function Alert({
+  id,
+  title,
+  message,
+  buttonColor,
+  accept,
+}) {
+  return (<DialogueBox
+    id={id}
+    title={title}
+    message={message}
+    buttonColor={buttonColor}
+    buttons={[accept]}
+  />);
+}
+
+Alert.propTypes = {
+  ...dialogProps,
+  accept: buttonType,
+};
+
+Alert.defaultProps = {
+  accept: { label: "OK", color: "alert" },
+};
+
+export { DialogueBox as default, Alert, Confirm, Prompt };
