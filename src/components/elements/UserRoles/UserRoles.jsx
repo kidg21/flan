@@ -12,18 +12,18 @@ import Switch from "atoms/Switch";
 function UserEntry({
   user,
   roles,
-  labelWidth,
+  toggleWidth,
   selectWidth,
   onChange,
   onClick,
 }) {
-  const [isEnabled, setEnabled] = useState(user.enabled);
+  let isEnabled = user.enabled;
+  let setEnabled = onChange;
+  if (!onChange) [isEnabled, setEnabled] = useState(user.enabled);
 
   function toggleEnabled() {
-    setEnabled((enabled) => {
-      if (onChange) onChange({ ...user, enabled: !enabled });
-      return !enabled;
-    });
+    const newState = onChange ? { ...user, enabled: !isEnabled } : !isEnabled;
+    setEnabled(newState);
   }
 
   function onCommandClick() {
@@ -35,8 +35,8 @@ function UserEntry({
       let selectedRoles = newState.selected || [];
       selectedRoles = selectedRoles instanceof Array
         ? selectedRoles.map((entry) => {
-          return entry.value;
-        }) : [selectedRoles.value];
+          return typeof entry === "string" ? entry : entry.value;
+        }) : [typeof selectedRoles === "string" ? selectedRoles : selectedRoles.value];
       onChange({ ...user, roles: selectedRoles });
     }
     setState(newState);
@@ -44,9 +44,9 @@ function UserEntry({
 
   return (<Bar
     disabled={!isEnabled}
-    left={<Command onClick={onCommandClick} label={user.name} />}
-    leftWidth={labelWidth}
-    center={<Switch checked={isEnabled} onChange={toggleEnabled} />}
+    left={<Switch checked={isEnabled} onChange={toggleEnabled} />}
+    leftWidth={toggleWidth}
+    center={<Command onClick={onCommandClick} label={user.name} />}
     centerAlign="left"
     right={<SelectMenu
       options={roles}
@@ -67,13 +67,16 @@ UserEntry.propTypes = {
       PropTypes.string,
     ]),
   }).isRequired,
-  roles: PropTypes.arrayOf(PropTypes.shape({
-    label: PropTypes.string,
-    value: PropTypes.any,
-  })),
+  roles: PropTypes.arrayOf(PropTypes.oneOfType([
+    PropTypes.shape({
+      label: PropTypes.string,
+      value: PropTypes.any,
+    }),
+    PropTypes.string,
+  ])),
   onClick: PropTypes.func,
   onChange: PropTypes.func,
-  labelWidth: PropTypes.string,
+  toggleWidth: PropTypes.string,
   selectWidth: PropTypes.string,
 };
 
@@ -81,7 +84,7 @@ UserEntry.defaultProps = {
   roles: null,
   onChange: null,
   onClick: null,
-  labelWidth: "10%",
+  toggleWidth: "5%",
   selectWidth: "50%",
 };
 
@@ -91,16 +94,20 @@ const userTypes = [
   { value: false, label: "Disabled" },
 ];
 
-function UserRoles({
+const UserRoles = React.forwardRef(({
+  style,
+  panelStyle,
   users,
   roles,
   commands,
   right,
+  children,
   onClickUser,
   onChange,
   listHeight,
   searchWidth,
-}) {
+  title,
+}, ref) => {
   let activeUsers = users;
   let setUsers = onChange;
   if (!onChange) [activeUsers, setUsers] = useState(users);
@@ -109,36 +116,24 @@ function UserRoles({
     name: null,
     enabled: null,
     role: null,
-    users: activeUsers,
   });
-  function filterUsers(currUsers, state) {
-    state.users = currUsers.filter((user) => {
-      const userRoles = (user.roles && !(user.roles instanceof Array))
-        ? [user.roles] : user.roles || [];
-      return (typeof state.enabled !== "boolean" || user.enabled === state.enabled)
-        && (!state.name || user.name.toLowerCase().includes(state.name))
-        && (!state.role || userRoles.includes(state.role));
-    });
-    setFilter(state);
-  }
 
-  function setNameFilter(e) {
-    // nameFilter = e.target.value.toLowerCase();
-    filterUsers(activeUsers, { ...filterState, name: e.target.value.toLowerCase() });
+  function filterUserName(e) {
+    setFilter({ ...filterState, name: e.target.value.toLowerCase() });
   }
 
   function filterUserTypes(currState, newState, setState) {
     const isEnabled = newState.selected && newState.selected instanceof Array
       ? newState.selected[0].value : newState.selected.value;
     setState(newState);
-    filterUsers(activeUsers, { ...filterState, enabled: isEnabled });
+    setFilter({ ...filterState, enabled: isEnabled });
   }
 
   function filterUserRoles(currState, newState, setState) {
     const role = newState.selected && newState.selected instanceof Array
       ? newState.selected[0].value : newState.selected.value;
     setState(newState);
-    filterUsers(activeUsers, { ...filterState, role });
+    setFilter({ ...filterState, role });
   }
 
   function onUserChange(userProps) {
@@ -146,20 +141,22 @@ function UserRoles({
       return user.name === userProps.name ? userProps : user;
     });
     setUsers(currUsers);
-    filterUsers(currUsers, filterState);
   }
 
   const rolesFilter = [{
     value: null, label: "All Roles",
   }].concat(roles);
 
+  let childElements = children;
+  if (childElements && !(childElements instanceof Array)) childElements = [childElements];
+
   return (
-    <Panel>
-      <MainPanelHeader title="User Roles" menuData={commands} />
-      <PanelSection body>
+    <Panel style={style}>
+      <MainPanelHeader title={title} menuData={commands} />
+      <PanelSection body style={panelStyle}>
         {right ? <Bar right={right} /> : null}
         <Bar
-          left={<Search placeholder="Search for a User" onChange={setNameFilter} />}
+          left={<Search placeholder="Search for a User" onChange={filterUserName} inputStyle={{ boxSizing: "border-box" }} />}
           leftWidth={searchWidth}
           center={
             <SelectMenu
@@ -178,8 +175,14 @@ function UserRoles({
             />
           }
         />
-        <Container height={listHeight}>
-          {filterState.users.map((user) => {
+        <Container height={listHeight} ref={ref}>
+          {activeUsers.filter((user) => {
+            const userRoles = (user.roles && !(user.roles instanceof Array)) ?
+              [user.roles] : user.roles || [];
+            return (typeof filterState.enabled !== "boolean" || user.enabled === filterState.enabled)
+              && (!filterState.name || user.name.toLowerCase().includes(filterState.name))
+              && (!filterState.role || userRoles.includes(filterState.role));
+          }).map((user) => {
             return (<UserEntry
               key={user.name}
               user={user}
@@ -190,11 +193,20 @@ function UserRoles({
           })}
         </Container>
       </PanelSection>
+      {childElements ? childElements.map((child) => {
+        return (
+          <PanelSection>
+            {child}
+          </PanelSection>
+        );
+      }) : null}
     </Panel>
   );
-}
+});
 
 UserRoles.propTypes = {
+  style: PropTypes.object,
+  panelStyle: PropTypes.object,
   users: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string,
     enabled: PropTypes.bool,
@@ -203,16 +215,20 @@ UserRoles.propTypes = {
       PropTypes.string,
     ]),
   })),
-  roles: PropTypes.arrayOf(PropTypes.shape({
-    label: PropTypes.string,
-    value: PropTypes.any,
-  })),
+  roles: PropTypes.arrayOf(PropTypes.oneOfType([
+    PropTypes.shape({
+      label: PropTypes.string,
+      value: PropTypes.any,
+    }),
+    PropTypes.string,
+  ])),
   commands: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
     name: PropTypes.string,
     onClickLink: PropTypes.func,
   })),
   right: PropTypes.node,
+  children: PropTypes.node,
   onClickUser: PropTypes.func,
   onChange: PropTypes.func,
   listHeight: PropTypes.oneOfType([
@@ -223,16 +239,21 @@ UserRoles.propTypes = {
     PropTypes.string,
     PropTypes.number,
   ]),
+  title: PropTypes.string,
 };
 
 UserRoles.defaultProps = {
+  style: null,
+  panelStyle: null,
   users: null,
   roles: null,
   commands: null,
   right: null,
+  children: null,
   onClickUser: null,
   onChange: null,
   listHeight: "250px",
   searchWidth: "25%",
+  title: "User Roles",
 };
 export { UserRoles as default, UserEntry };

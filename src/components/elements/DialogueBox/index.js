@@ -1,1 +1,1 @@
-export { default } from "./DialogueBox.jsx";
+export { default, Alert, Confirm, Prompt } from "./DialogueBox.jsx";

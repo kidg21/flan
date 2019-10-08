@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { Lighten, Darken } from "Variables";
 import { DisabledContext } from "States";
 import PropTypes from "prop-types";
@@ -89,6 +89,7 @@ function Button({
   underlineColor,
   border,
   type,
+  fill,
   size,
   fullWidth,
   disabled,
@@ -104,7 +105,7 @@ function Button({
   let buttonPadding;
   let labelSize;
 
-  switch(color && color.toLowerCase()) {
+  switch (color && color.toLowerCase()) {
     case "success":
       buttonColor = "success";
       fontColor = buttonColor;
@@ -144,14 +145,6 @@ function Button({
   }
 
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (isDisabled) {
-    fontColor = "white";
-    backgroundColor = "grey3";
-  } else if (type && type.toLowerCase() === "solid") {
-    fontColor = "white";
-    backgroundColor = buttonColor;
-  }
-
 
   if (type) {
     if (type.toLowerCase() === "underlined") {
@@ -165,11 +158,17 @@ function Button({
       border = "2px solid transparent";
       fontWeight = "700";
       backgroundColor = "default";
+    } else if (type.toLowerCase() === "solid") {
+      fontColor = "white";
+      backgroundColor = buttonColor;
     }
   }
+  if (isDisabled) {
+    fontColor = "white";
+    backgroundColor = "grey3";
+  }
 
-
-  switch(size && size.toLowerCase()) {
+  switch (size && size.toLowerCase()) {
     case "small":
       buttonPadding = "0.4rem 0.6rem";
       labelSize = ".9em";
@@ -212,7 +211,6 @@ Button.propTypes = {
   id: PropTypes.string,
   label: PropTypes.string,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
-  type: PropTypes.string,
   color: PropTypes.oneOf(["success", "warning", "alert", "info", "primary", "secondary"]),
   size: PropTypes.oneOf(["small", "large"]),
   fullWidth: PropTypes.bool,
@@ -225,14 +223,15 @@ Button.propTypes = {
 
 Button.defaultProps = {
   id: null,
+  label: null,
   icon: null,
-  type: null,
   color: null,
   size: null,
   fullWidth: false,
   underlineColor: null,
   disabled: false,
   border: null,
+  onClick: null,
   style: null,
 };
 

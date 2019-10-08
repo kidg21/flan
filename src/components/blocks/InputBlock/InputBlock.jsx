@@ -226,7 +226,7 @@ function InputBlock({
         {/* Postfix (conditional) */}
         {postfix ? <PrePostLabel>{postfix}</PrePostLabel> : null}
         {/* Postfix Button (conditional) */}
-        {buttonLabel ? <Button label={buttonLabel} isPrimary /> : null}
+        {buttonLabel ? <Button label={buttonLabel} /> : null}
         {/* Postfix Select Menu (conditional) */}
         {postSelect ? (
           <SelectMenu
