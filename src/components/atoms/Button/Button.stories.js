@@ -20,12 +20,9 @@ storiesOf("Atoms|Button", module)
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
-  .add(
-    "Documentation",
-    (() => {
-      return <Button label="Standard Button" />;
-    }),
-  )
+  .add("Documentation", () => {
+    return <Button label="Standard Button" />;
+  })
   .add("Skeleton", () => {
     return <Button />;
   })
@@ -82,16 +79,16 @@ storiesOf("Atoms|Button", module)
     return (
       <Grid>
         <Button label="Standard Primary" />
-        <Button label="Solid Primary" fill />
+        <Button label="Solid Primary" type="solid" />
         <Button label="Standard Secondary" color="secondary" />
-        <Button label="Solid Secondary" fill color="secondary" />
-        <Button label="Solid Info Button" fill />
+        <Button label="Solid Secondary" type="solid" color="secondary" />
+        <Button label="Solid Info Button" type="solid" />
         <Button icon="filter" label="Fitlers" color="primary" />
 
         <Button label="Small Button" size="small" />
         <Button label="Large Button" size="large" />
         <Button label="Disabled Button" disabled />
-        <Button label="Icon Button" icon="user" fill />
+        <Button label="Icon Button" icon="user" type="solid" />
       </Grid>
     );
   });

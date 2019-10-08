@@ -26,24 +26,40 @@ const StyledButton = styled.button`
     return props.theme.palette[props.backgroundColor] || props.theme.background.default;
   }};
   border: ${(props) => {
-    return props.noBorder ? "0px solid" : "1px solid";
+    return props.border || "1px solid";
   }};
-  border-radius: 4px;
+  border-radius: ${(props) => {
+    return props.borderRadius || "4px";
+  }};
   font-size: ${(props) => {
     return props.labelSize || "inherit";
   }};
-  font-weight: 600;
+  font-weight: ${(props) => {
+    return props.fontWeight || "600";
+  }};
   letter-spacing: 1px;
   overflow: hidden;
   cursor: pointer;
+  border-bottom: ${(props) => {
+    return props.borderBottom || "";
+  }};
+  border-bottom-color: ${(props) => {
+    return props.theme.palette[props.underlineColor];
+  }};
   transition: all 0.15s ease;
 
   &:hover {
-    ${Darken}
+    ${Darken};
+    border-bottom: ${(props) => {
+    return props.borderBottom || "";
+  }};
+    border-bottom-color: ${(props) => {
+    return props.theme.palette[props.underlineColor];
+  }};
   }
 
   &:active {
-    ${Lighten}
+    ${Lighten};
   }
 
   &[disabled] {
@@ -70,7 +86,9 @@ function Button({
   label,
   icon,
   color,
-  noBorder,
+  underlineColor,
+  border,
+  type,
   fill,
   size,
   fullWidth,
@@ -79,11 +97,15 @@ function Button({
   style,
 }) {
   let buttonColor;
+  let borderRadius;
+  let borderBottom;
+  let fontWeight;
   let fontColor;
   let backgroundColor;
   let buttonPadding;
   let labelSize;
-  switch (color) {
+
+  switch (color && color.toLowerCase()) {
     case "success":
       buttonColor = "success";
       fontColor = buttonColor;
@@ -108,8 +130,12 @@ function Button({
       buttonColor = "secondary";
       fontColor = buttonColor;
       break;
-    case "disabled":
-      buttonColor = "disabled";
+    case "grey":
+      buttonColor = "grey2";
+      fontColor = buttonColor;
+      break;
+    case "alert":
+      buttonColor = "alert";
       fontColor = buttonColor;
       break;
     default:
@@ -117,19 +143,35 @@ function Button({
       fontColor = buttonColor;
       break;
   }
+
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+
+  if (type) {
+    if (type.toLowerCase() === "underlined") {
+      border = "2px solid transparent";
+      backgroundColor = "default";
+      fontWeight = "700";
+      fontColor = buttonColor;
+      borderBottom = "3px solid";
+      underlineColor = fontColor;
+    } else if (type.toLowerCase() === "inline") {
+      border = "2px solid transparent";
+      fontWeight = "700";
+      backgroundColor = "default";
+    } else if (type.toLowerCase() === "solid") {
+      fontColor = "white";
+      backgroundColor = buttonColor;
+    }
+  }
   if (isDisabled) {
     fontColor = "white";
     backgroundColor = "grey3";
-  } else if (fill) {
-    fontColor = "white";
-    backgroundColor = buttonColor;
   }
 
-  switch (size) {
+  switch (size && size.toLowerCase()) {
     case "small":
       buttonPadding = "0.4rem 0.6rem";
-      labelSize = ".8em";
+      labelSize = ".9em";
       break;
     case "large":
       buttonPadding = "0.6rem 0.8rem";
@@ -138,14 +180,20 @@ function Button({
     default:
       break;
   }
+
   return (
     <StyledButton
       id={id}
       name={id}
       fullWidth={fullWidth}
+      borderBottom={borderBottom}
+      underlineColor={underlineColor}
       disabled={isDisabled}
+      border={border}
+      borderRadius={borderRadius}
+      fontWeight={fontWeight}
+      type={type}
       onClick={onClick}
-      noBorder={noBorder}
       buttonColor={buttonColor}
       fontColor={fontColor}
       backgroundColor={backgroundColor}
@@ -166,9 +214,9 @@ Button.propTypes = {
   color: PropTypes.oneOf(["success", "warning", "alert", "info", "primary", "secondary"]),
   size: PropTypes.oneOf(["small", "large"]),
   fullWidth: PropTypes.bool,
+  underlineColor: PropTypes.string,
   disabled: PropTypes.bool,
-  fill: PropTypes.bool,
-  noBorder: PropTypes.bool,
+  border: PropTypes.string,
   onClick: PropTypes.func,
   style: PropTypes.string,
 };
@@ -180,9 +228,9 @@ Button.defaultProps = {
   color: null,
   size: null,
   fullWidth: false,
+  underlineColor: null,
   disabled: false,
-  fill: false,
-  noBorder: false,
+  border: null,
   onClick: null,
   style: null,
 };

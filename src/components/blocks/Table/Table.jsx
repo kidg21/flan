@@ -23,14 +23,11 @@ const TableWrapper = styled.table`
 `;
 const Row = styled.tr``;
 const Cell = styled.td`
-  // padding: 0.25em 0.25em 0.25em;
   font-size: small;
   text-align: left;
 
   &:empty {
-    &:before {
-      content: "Not Available";
-    }
+    content: "Not Available";
   }
 
   &:nth-child(even) {
