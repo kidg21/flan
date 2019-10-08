@@ -68,17 +68,16 @@ function Menu({
   }
 
   const [activeItem, setActiveItem] = useState("");
-  const nestedLevel = level || 0;
 
   function handleMouseEnter(e) {
     setActiveItem(e.target.id);
   }
 
-  function handleMouseLeave(e) {
+  function handleMouseLeave() {
     setActiveItem("");
   }
 
-  function toggleVisibility(e) {
+  function toggleVisibility() {
     setVisibility(!visibility);
     setActiveItem("");
   }
@@ -123,7 +122,7 @@ function Menu({
         onClick={toggleVisibility}
         onMouseLeave={handleMouseLeave}
       >
-        {icon ? icon : <Icon icon="options" size="lg" />}
+        {icon || <Icon icon="options" size="lg" />}
         {visibility ? (
           <Card>
             <EditMenu
@@ -139,19 +138,24 @@ function Menu({
                         <Menu
                           id={item.id}
                           data={item.commands}
-                          visible={true}
+                          visible
                           position={position}
-                          level={nestedLevel + 1}
+                          level={level + 1}
                           icon={(<React.Fragment><Title text={item.name} weight="normal" /><Icon icon="down" /></React.Fragment>)}
                         />) : (
-                        <React.Fragment><Title text={item.name} weight="normal" /><Icon icon="up" /></React.Fragment>
+                          <React.Fragment><Title text={item.name} weight="normal" /><Icon icon="up" /></React.Fragment>
                         )
                       }
                     </Item>
                   );
                 }
                 return (
-                  <Item key={item.id} id={item.id} onClick={item.onClickLink} onMouseEnter={handleMouseEnter}>
+                  <Item
+                    key={item.id}
+                    id={item.id}
+                    onClick={item.onClickLink}
+                    onMouseEnter={handleMouseEnter}
+                  >
                     <Title text={item.name} weight="normal" />
                   </Item>
                 );
@@ -163,6 +167,11 @@ function Menu({
     </React.Fragment>
   );
 }
+
+Menu.defaultProps = {
+  level: 0,
+  icon: null,
+};
 
 Menu.propTypes = {
   id: PropTypes.string,
@@ -183,7 +192,7 @@ Menu.propTypes = {
     "default",
   ]),
   level: PropTypes.number,
-  icon: PropTypes.any,
+  icon: PropTypes.element,
 };
 
 Menu.defaultProps = {
