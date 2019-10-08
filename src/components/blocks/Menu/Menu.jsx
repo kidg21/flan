@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Icon from "atoms/Icon";
 import Card from "layout/Card";
 import Title from "base/Typography";
-import {  Darken, Lighten } from "Variables";
+import { Darken, Lighten } from "Variables";
 
 const Container = styled.div`
   cursor: pointer;
@@ -15,7 +15,8 @@ const Container = styled.div`
 
 const EditMenu = styled.ul`
   background: ${(props) => {
-    return props.theme.background.default; }};
+    return props.theme.background.default;
+  }};
   border-radius: 3px;
   list-style: none;
   z-index: 500;
@@ -55,7 +56,7 @@ const MenuBG = styled.div`
 `;
 
 function Menu({
-  id, data, position, visible, onClick,
+  id, data, position, visible, onClick, icon, level,
 }) {
   let badgeLeft = "100%";
   let badgeBottom = "100%";
@@ -66,9 +67,22 @@ function Menu({
     [visibility, setVisibility] = useState(visible);
   }
 
-  function toggleVisibility() {
-    setVisibility(!visibility);
+  const [activeItem, setActiveItem] = useState("");
+  const nestedLevel = level || 0;
+
+  function handleMouseEnter(e) {
+    setActiveItem(e.target.id);
   }
+
+  function handleMouseLeave(e) {
+    setActiveItem("");
+  }
+
+  function toggleVisibility(e) {
+    setVisibility(!visibility);
+    setActiveItem("");
+  }
+
   switch (position) {
     case "topLeft":
       badgeLeft = "0";
@@ -107,8 +121,9 @@ function Menu({
       <Container
         id={id}
         onClick={toggleVisibility}
+        onMouseLeave={handleMouseLeave}
       >
-        <Icon icon="options" size="lg" />
+        {icon ? icon : <Icon icon="options" size="lg" />}
         {visibility ? (
           <Card>
             <EditMenu
@@ -117,8 +132,26 @@ function Menu({
               badgeBottom={badgeBottom}
             >
               {data.map((item) => {
+                if (item.commands) {
+                  return (
+                    <Item key={item.id} id={item.id} onMouseEnter={handleMouseEnter}>
+                      {activeItem === item.id ? (
+                        <Menu
+                          id={item.id}
+                          data={item.commands}
+                          visible={true}
+                          position={position}
+                          level={nestedLevel + 1}
+                          icon={(<React.Fragment><Title text={item.name} weight="normal" /><Icon icon="down" /></React.Fragment>)}
+                        />) : (
+                        <React.Fragment><Title text={item.name} weight="normal" /><Icon icon="up" /></React.Fragment>
+                        )
+                      }
+                    </Item>
+                  );
+                }
                 return (
-                  <Item key={item.id} onClick={item.onClickLink}>
+                  <Item key={item.id} id={item.id} onClick={item.onClickLink} onMouseEnter={handleMouseEnter}>
                     <Title text={item.name} weight="normal" />
                   </Item>
                 );
@@ -149,6 +182,8 @@ Menu.propTypes = {
     "topCenter",
     "default",
   ]),
+  level: PropTypes.number,
+  icon: PropTypes.any,
 };
 
 Menu.defaultProps = {
