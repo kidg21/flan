@@ -27,7 +27,7 @@ function LayerCardBar({
       <Bar
         contentAlign="center"
         padding="2x"
-        left={<Switch label={title} disabled onChange={onChange} />}
+        left={<Switch label={title} disabled={disabled} onChange={onChange} />}
         right={<IconBlock style={disabled ? disabledblockStyle : blockStyle}>{icons}</IconBlock>}
         rightWidth="9em"
       />

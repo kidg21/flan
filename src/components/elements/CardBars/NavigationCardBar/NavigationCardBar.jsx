@@ -26,17 +26,18 @@ function NavigationCardBar({
   onClick,
   switchProps,
 }) {
-  let isDisabled = false;
+  let isDisabled = null;
 
   if (typeof disabled === "boolean") {
     isDisabled = disabled;
-  } else if (toggle) {
+  }
+  if (toggle && isDisabled === null) {
     isDisabled = true;
   }
   const [state, setState] = useState({ disabled: isDisabled });
 
   let leftComponent = null;
-  if (toggle === true) {
+  if (toggle) {
     leftComponent = (
       <React.Fragment>
         <Switch
