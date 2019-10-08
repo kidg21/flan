@@ -57,17 +57,17 @@ const BoxContainer = styled.div`
 
 `;
 
-function Container({
+const Container = React.forwardRef(({
   id, height, width, padding, children,
-}) {
+}, ref) => {
   return (
     <Wrapper padding={padding}>
-      <BoxContainer id={id} height={height} width={width}>
+      <BoxContainer id={id} height={height} width={width} ref={ref}>
         {children}
       </BoxContainer>
     </Wrapper>
   );
-}
+});
 
 Container.propTypes = {
   id: PropTypes.string,

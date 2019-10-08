@@ -27,25 +27,17 @@ storiesOf("Layout|Modal", module)
     withInfo()(() => {
       return React.createElement(() => {
         const [visible, setVisible] = useState(false);
-        const [transition, setTransition] = useState(true);
         const handleOpen = () => {
           setVisible(true);
-          setTransition(true);
         };
         const handleClose = () => {
-          setTransition(false);
-          setTimeout(() => {
-            setVisible(false);
-          }, 500);
+          setVisible(false);
         };
         return (
           <>
             <Modal
-              visible={visible}
               onClose={handleClose}
-              opacity={transition}
-              scale={transition}
-              position={transition}
+              visible={visible}
             >
               <Banner
                 title="This is a Standard notification telling you stuff."
@@ -68,16 +60,11 @@ storiesOf("Layout|Modal", module)
   .add("Knobs", () => {
     return React.createElement(() => {
       const [visible, setVisible] = useState(false);
-      const [transition, setTransition] = useState(true);
       const handleOpen = () => {
         setVisible(true);
-        setTransition(true);
       };
       const handleClose = () => {
-        setTransition(false);
-        setTimeout(() => {
-          setVisible(false);
-        }, 500);
+        setVisible(false);
       };
       const buttonStyle = { margin: "10vh 30vw" };
       return (
@@ -112,11 +99,8 @@ storiesOf("Layout|Modal", module)
               { display: "radio" },
               "Modal",
             )}
-            visible={visible}
             onClose={handleClose}
-            opacity={transition}
-            scale={transition}
-            position={transition}
+            visible={visible}
           >
             <Banner
               title={text(
@@ -144,26 +128,18 @@ storiesOf("Layout|Modal", module)
   .add("Default Modal", () => {
     return React.createElement(() => {
       const [visible, setVisible] = useState(false);
-      const [transition, setTransition] = useState(true);
       const handleOpen = () => {
         setVisible(true);
-        setTransition(true);
       };
       const handleClose = () => {
-        setTransition(false);
-        setTimeout(() => {
-          setVisible(false);
-        }, 500);
+        setVisible(false);
       };
       const buttonStyle = { margin: "10vh 30vw" };
       return (
         <>
           <Modal
-            visible={visible}
             onClose={handleClose}
-            opacity={transition}
-            scale={transition}
-            position={transition}
+            visible={visible}
           >
             <Banner
               title="This is a Standard notification telling you stuff."
@@ -186,16 +162,11 @@ storiesOf("Layout|Modal", module)
   .add("Text Modal", () => {
     return React.createElement(() => {
       const [visible, setVisible] = useState(false);
-      const [transition, setTransition] = useState(true);
       const handleOpen = () => {
         setVisible(true);
-        setTransition(true);
       };
       const handleClose = () => {
-        setTransition(false);
-        setTimeout(() => {
-          setVisible(false);
-        }, 500);
+        setVisible(false);
       };
       const buttonStyle = { margin: "10vh 30vw" };
       return (
@@ -203,11 +174,8 @@ storiesOf("Layout|Modal", module)
           <Modal
             type="text"
             text="This is a very special message just for you..."
-            visible={visible}
             onClose={handleClose}
-            opacity={transition}
-            scale={transition}
-            position={transition}
+            visible={visible}
           />
           <Panel>
             <PanelSection body>
@@ -225,16 +193,14 @@ storiesOf("Layout|Modal", module)
   .add("Image Modal", () => {
     return React.createElement(() => {
       const [visible, setVisible] = useState(false);
-      const [transition, setTransition] = useState(true);
       const handleOpen = () => {
         setVisible(true);
-        setTransition(true);
       };
       const handleClose = () => {
-        setTransition(false);
-        setTimeout(() => {
-          setVisible(false);
-        }, 500);
+        setVisible(false);
+      };
+      const handleOnClick = () => {
+        alert("Image Clicked!");
       };
       const buttonStyle = { margin: "10vh 30vw" };
       return (
@@ -242,11 +208,9 @@ storiesOf("Layout|Modal", module)
           <Modal
             type="image"
             image={ModernExterior1}
-            visible={visible}
+            onClick={handleOnClick}
             onClose={handleClose}
-            opacity={transition}
-            scale={transition}
-            position={transition}
+            visible={visible}
           />
           <Panel>
             <PanelSection body>

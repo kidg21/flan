@@ -10,12 +10,22 @@ const roles = [
   { value: "Admin", label: "Admin" },
 ];
 
-const commands = [
+const userCommands = [
   {
     id: "manageRoles",
     name: "View / Edit Roles",
     onClickLink: () => {
       alert("Manage Roles!");
+    },
+  },
+];
+
+const roleCommands = [
+  {
+    id: "manageUsers",
+    name: "View / Edit Users",
+    onClickLink: () => {
+      alert("Manage Users!");
     },
   },
 ];
@@ -98,7 +108,7 @@ storiesOf("Templates|Admin", module)
         <UserRoles
           users={users}
           roles={roles}
-          commands={commands}
+          commands={userCommands}
           right={<Button label="+Add User" onClick={addUser} />}
           onClickUser={userDetails}
         />
@@ -123,6 +133,7 @@ storiesOf("Templates|Admin", module)
       return (
         <RolePermissions
           roles={rolePermissions}
+          commands={roleCommands}
           right={<Button label="+Add Role" onClick={addRole} />}
           editRole={editRole}
         />

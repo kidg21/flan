@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import styled from "styled-components";
@@ -47,32 +48,32 @@ storiesOf("Elements|Dialogue Box", module)
     "Documentation",
     withInfo()(() => {
       return (<DialogueBox
-      title="Dialogue Box Title"
-      message="Dialogue Box Message"
-      action="two"
-      primaryLabel="Affirm"
-      secondaryLabel="Negative"
+        title="Dialogue Box Title"
+        message="Dialogue Box Message"
+        buttons={[{ label: "Affirm" }, { label: "Negative" }]}
       />);
     }),
   );
 
-  storiesOf("Elements|Dialogue Box/General", module)
+storiesOf("Elements|Dialogue Box/General", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  .add("Default", () => (
-    <DialogueBox
-      title="Hey are you sure your okay doing this?"
-      message="This is the body of your message. Tells you more about the action you are about to commit."
-      action="two"
-      primaryLabel="Create"
-      secondaryLabel="Cancel"
-    />
-  ))
-  .add("Login", () => (
-    <DialogueBox
-      header={<Bar left={<Logo src={image.src} alt={image.alt} />} />}
-      title="Welcome"
-      content={
+  .add("Default", () => {
+    return (
+      <DialogueBox
+        title="Hey are you sure your okay doing this?"
+        message="This is the body of your message. Tells you more about the action you are about to commit."
+        buttons={[{ label: "Create" }, { label: "Cancel" }]}
+      />
+    );
+  })
+  .add("Login", () => {
+    return (
+      <DialogueBox
+        header={<Bar left={<Logo src={image.src} alt={image.alt} />} />}
+        title="Welcome"
+        buttons={[{ label: "Login" }]}
+      >
         <Section>
           <TextInput label="Username" placeholder="Username" />
           <TextInput label="Password" placeholder="Password" />
@@ -82,15 +83,15 @@ storiesOf("Elements|Dialogue Box", module)
             }
           />
         </Section>
-      }
-      action="one"
-      primaryLabel="Login"
-    />
-  ))
-  .add("Save As", () => (
-    <DialogueBox
-      title="Save As"
-      content={
+      </DialogueBox>
+    );
+  })
+  .add("Save As", () => {
+    return (
+      <DialogueBox
+        title="Save As"
+        buttons={[{ label: "Save" }, { label: "Cancel" }]}
+      >
         <Section>
           <TextInput label="Name" placeholder="Type Name" />
           <SelectMenu
@@ -110,41 +111,39 @@ storiesOf("Elements|Dialogue Box", module)
             ]}
           />
         </Section>
-      }
-      action="two"
-      primaryLabel="Save"
-      secondaryLabel="Cancel"
-    />
-  ))
-  .add("Delete", () => (
-    <DialogueBox
-      title="Are you sure you want to delete this user?"
-      message="If you delete this user you will not be able to get back any information or work they have done. Their work will be lost forever."
-      action="two"
-      primaryLabel="Delete"
-      secondaryLabel="Cancel"
-      buttonColor="alert"
-    />
-  ))
-  .add("Success", () => (
-    <DialogueBox
-      title="View your report?"
-      message="Your report successfully downloaded. Do you want to check out the deets."
-      action="two"
-      primaryLabel="View"
-      secondaryLabel="Cancel"
-      buttonColor="success"
-    />
-  ));
+      </DialogueBox>
+    );
+  })
+  .add("Delete", () => {
+    return (
+      <DialogueBox
+        title="Are you sure you want to delete this user?"
+        message="If you delete this user you will not be able to get back any information or work they have done. Their work will be lost forever."
+        buttons={[{ label: "Delete" }, { label: "Cancel" }]}
+        buttonColor="alert"
+      />
+    );
+  })
+  .add("Success", () => {
+    return (
+      <DialogueBox
+        title="View your report?"
+        message="Your report successfully downloaded. Do you want to check out the deets."
+        buttons={[{ label: "View" }, { label: "Cancel" }]}
+        buttonColor="success"
+      />
+    );
+  });
 
-
-  storiesOf("Elements|Dialogue Box/User Roles", module)
+storiesOf("Elements|Dialogue Box/User Roles", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  .add("Edit User List", () => (
-    <DialogueBox
-      title="Edit User List for Role"
-      content={
+  .add("Edit User List", () => {
+    return (
+      <DialogueBox
+        title="Edit User List for Role"
+        buttons={[{ label: "Edit" }, { label: "Cancel" }]}
+      >
         <Section>
           <Title text="Role: Developer" type="info" />
           <SelectMenu
@@ -197,16 +196,15 @@ storiesOf("Elements|Dialogue Box", module)
             </Container>
           </Piece>
         </Section>
-      }
-      action="two"
-      primaryLabel="Edit"
-      secondaryLabel="Cancel"
-    />
-  ))
-  .add("Edit Role", () => (
-    <DialogueBox
-      title="Edit Role"
-      content={
+      </DialogueBox>
+    );
+  })
+  .add("Edit Files", () => {
+    return (
+      <DialogueBox
+        title="Edit Files Role"
+        buttons={[{ label: "Edit" }, { label: "Cancel" }]}
+      >
         <Section>
           <TextInput label="Role" placeholder="Builder/Developer" />
           <SelectMenu
@@ -221,7 +219,7 @@ storiesOf("Elements|Dialogue Box", module)
             ]}
           />
           <Divider/>
-<Container>
+          <Container>
             <List>
                 <ListItem
                   label="BDE811.Public"
@@ -259,32 +257,30 @@ storiesOf("Elements|Dialogue Box", module)
               </List>
               </Container>
         </Section>
-      }
-      action="two"
-      primaryLabel="Edit"
-      secondaryLabel="Cancel"
-    />
-  ))
-  .add("Add Role", () => (
+        </DialogueBox>
+    );
+  })
+  .add("Add Role", () => {
+    return (
     <DialogueBox
-      title="+ Add a New Role"
-      content={
+    title="+Add Role"
+    buttons={[{ label: "add" }, { label: "Cancel" }]}
+    >
         <Section>
           <TextInput
             label="Role Name"
             placeholder="Type the name for your new role."
           />
         </Section>
-      }
-      action="two"
-      primaryLabel="Add"
-      secondaryLabel="Cancel"
-    />
-  ))
-  .add("Add User", () => (
-    <DialogueBox
-      title="+ Add a New User"
-      content={
+      </DialogueBox>
+    );
+  })
+  .add("Add User", () => {
+    return (
+      <DialogueBox
+        title="+ Add a New User"
+        buttons={[{ label: "Add" }, { label: "Cancel" }]}
+      >
         <Section>
           <TextInput
             label="User Name"
@@ -306,16 +302,15 @@ storiesOf("Elements|Dialogue Box", module)
             ]}
           />
         </Section>
-      }
-      action="two"
-      primaryLabel="Add"
-      secondaryLabel="Cancel"
-    />
-  ))
-  .add("Edit User", () => (
-    <DialogueBox
-      title="Edit User"
-      content={
+      </DialogueBox>
+    );
+  })
+  .add("Edit User", () => {
+    return (
+      <DialogueBox
+        title="Edit User"
+        buttons={[{ label: "Save" }, { label: "Cancel" }]}
+      >
         <Section>
           <TextInput label="User Name" placeholder="Elizabeth Gallagher" />
           <TextInput
@@ -336,9 +331,6 @@ storiesOf("Elements|Dialogue Box", module)
           <Switch label="Enabled"/>
           <Title text="Delete User?" size="tiny" weight="light" />
         </Section>
-      }
-      action="two"
-      primaryLabel="Save"
-      secondaryLabel="Cancel"
-    />
-  ));
+      </DialogueBox>
+    );
+  });
