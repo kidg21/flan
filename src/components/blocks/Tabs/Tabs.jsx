@@ -52,7 +52,7 @@ const TabsWrapper = styled.section`
 `;
 
 function Tabs({
-  id, children, columns, align, style,
+  id, children, columns, align, style, gap, margin
 }) {
   let setColumns;
   let border;
@@ -61,8 +61,6 @@ function Tabs({
   let setWidth;
   let backgroundColor;
   let fontColor;
-  let gap;
-  let margin;
   let setHeight;
   let setOrientation;
   let alignRight;
