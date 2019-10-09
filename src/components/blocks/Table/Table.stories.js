@@ -31,7 +31,7 @@ const Users = [
   { name: "pnguyen", roles: ["Developer", "Acquisitions"], action: <Icon icon="edit" /> },
 ];
 
-storiesOf("Work|Table", module)
+storiesOf("Blocks|Table", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
   .add("Simple", () => {

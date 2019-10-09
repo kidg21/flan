@@ -20,14 +20,10 @@ const data = [
 
 
 
-storiesOf("Work|Results", module)
+storiesOf("Templates|Results", module)
   .add("Results List", () =>
     React.createElement(() => {
-      const [activeMultiTab, setActiveMultiTab] = useState(true);
-      const [activeMultiTab2, setActiveMultiTab2] = useState(false);
-      const [activeMultiTab3, setActiveMultiTab3] = useState(false);
-      const [activeMultiTab4, setActiveMultiTab4] = useState(false);
-      const [activeMultiTab5, setActiveMultiTab5] = useState(false);
+      const [activeSingleTab, setActiveSingleTab] = useState("tab1");
       return (
         <Layout>
         <Layout height="60%" >
@@ -40,48 +36,48 @@ storiesOf("Work|Results", module)
           left = { <Tabs >
           <Tab
           type="inactive"
-            tabLabel="Tab 1"
-            size="small"
-            isSelected={activeMultiTab}
-            onClick={() => {
-              setActiveMultiTab(!activeMultiTab);
-            }}
+          size="small"
+          tabLabel="Tab 1"
+          isSelected={activeSingleTab === "tab1"}
+          onClick={() => {
+            setActiveSingleTab("tab1");
+          }}
           />
           <Tab
           type="inactive"
+            size="small"
             tabLabel="Tab 2"
-            size="small"
-            isSelected={activeMultiTab2}
+            isSelected={activeSingleTab === "tab2"}
             onClick={() => {
-              setActiveMultiTab2(!activeMultiTab2);
+              setActiveSingleTab("tab2");
             }}
           />
           <Tab
           type="inactive"
+            size="small"
             tabLabel="Tab 3"
-            size="small"
-            isSelected={activeMultiTab3}
+            isSelected={activeSingleTab === "tab3"}
             onClick={() => {
-              setActiveMultiTab3(!activeMultiTab3);
+              setActiveSingleTab("tab3");
             }}
           />
                     <Tab
           type="inactive"
-            tabLabel="Tab 4"
-            size="small"
-            isSelected={activeMultiTab3}
-            onClick={() => {
-              setActiveMultiTab4(!activeMultiTab4);
-            }}
+          size="small"
+          tabLabel="Tab 4"
+          isSelected={activeSingleTab === "tab4"}
+          onClick={() => {
+            setActiveSingleTab("tab4");
+          }}
           />
                     <Tab
           type="inactive"
-            tabLabel="Tab 5"
-            size="small"
-            isSelected={activeMultiTab3}
-            onClick={() => {
-              setActiveMultiTab5(!activeMultiTab5);
-            }}
+          size="small"
+          tabLabel="Tab 5"
+          isSelected={activeSingleTab === "tab5"}
+          onClick={() => {
+            setActiveSingleTab("tab5");
+          }}
           />
         </Tabs>}
         right={<Menu data={data} position="bottomLeft"/>}
