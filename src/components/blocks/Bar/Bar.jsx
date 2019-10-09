@@ -5,25 +5,6 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
 
-const BarLayout = styled.div`
-  display: flex;
-  cursor: ${(props) => {
-    return props.onClick ? "pointer" : "";
-  }};
-  flex-direction: row;
-  align-items: ${(props) => {
-    return props.alignContent || "";
-  }};
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  padding: ${(props) => {
-    return props.barPadding || "0.5em 1em";
-  }};
-  padding-top: ${(props) => {
-    return props.topPadding || "";
-  }};
-`;
-
 const Slot = styled.div`
   display: flex;
   flex: ${(props) => {
@@ -58,6 +39,30 @@ const Slot = styled.div`
   }
 `;
 
+const BarLayout = styled.div`
+  display: flex;
+  cursor: ${(props) => {
+    return props.onClick ? "pointer" : "";
+  }};
+  flex-direction: row;
+  align-items: ${(props) => {
+    return props.alignContent || "";
+  }};
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: ${(props) => {
+    return props.barPadding || "0.5em 1em";
+  }};
+  padding-top: ${(props) => {
+    return props.topPadding || "";
+  }};
+  ${Slot} {
+    &:only-child {
+      padding: 0;
+    }
+  }
+`;
+
 function Bar({
   id,
   contentAlign,
@@ -80,17 +85,11 @@ function Bar({
   const leftPadding = "0 0.5em 0 0";
   let centerPadding;
   const rightPadding = "0 0 0 0.5em";
-  if (!left) {
+  if (left) {
+    if (!right) centerPadding = "0 0 0 0.5em";
+    else centerPadding = "0 0.5em 0 0.5em";
+  } else if (right) {
     centerPadding = "0 0.5em 0 0";
-  }
-  if (!right) {
-    centerPadding = "0 0 0 0.5em";
-  }
-  if (!left && !right) {
-    centerPadding = "0";
-  }
-  if (left && right) {
-    centerPadding = "0 0.5em 0 0.5em";
   }
   switch (padding && padding.toLowerCase()) {
     case "none":
