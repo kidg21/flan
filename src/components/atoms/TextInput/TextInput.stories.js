@@ -26,6 +26,7 @@ storiesOf("Atoms|Text Input", module)
     withInfo()(() => {
       return (
         <TextInput
+          id="111"
           label="Text Input ( Standard )"
           placeholder="I am just keeping things warm"
           helpText="Hang in there, buddy, I'm here to help!"

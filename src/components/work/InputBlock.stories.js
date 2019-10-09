@@ -91,6 +91,7 @@ storiesOf("Work|Blocks/Input Block", module)
     withInfo()(() => {
       return (
         <InputBlock
+          id="input block"
           label="Input Block ( Defaults to a standard Text Input )"
           textInputs={[
             {

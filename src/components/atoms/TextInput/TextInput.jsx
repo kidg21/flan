@@ -130,7 +130,7 @@ function TextInput({
       <Input
         as={as}
         disabled={isDisabled} // input attribute
-        id={id} // input attribute
+        id={`i_${id}`} // input attribute
         inputBorderColor={inputBorderColor}
         inputBorderColorHover={inputBorderColorHover}
         inputCaretColor={inputCaretColor}
@@ -138,7 +138,7 @@ function TextInput({
         inputResize={inputResize}
         inputSelectColor={inputSelectColor}
         list={autoCompleteDataListId}
-        name={id} // input attribute
+        name={`i_${id}`} // input attribute
         onChange={onChange}
         pattern={pattern} // input attribute
         placeholder={placeholder} // input attribute
