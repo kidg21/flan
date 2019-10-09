@@ -30,9 +30,8 @@ function InputBlock({
   label,
   onChange,
   options,
-  postfix,
-  prefix,
   selectOptions,
+  text,
   textInputs,
   type,
 }) {
@@ -80,7 +79,7 @@ function InputBlock({
     case "pre_label":
       inputContainer = (
         <Grid columns="minmax(0, 1fr) minmax(auto, 3fr)" gap="tiny">
-          <Label>{prefix}</Label>
+          <Label>{text}</Label>
           {inputElements[0]}
         </Grid>
       );
@@ -107,7 +106,7 @@ function InputBlock({
       inputContainer = (
         <Grid columns="minmax(auto, 3fr) minmax(auto, 1fr)" gap="tiny">
           {inputElements[0]}
-          <Label>{postfix}</Label>
+          <Label>{text}</Label>
         </Grid>
       );
       break;
@@ -142,8 +141,7 @@ function InputBlock({
         id={id}
         inputTextColor={inputTextColor}
         isRequired={isRequired}
-        postfix={postfix}
-        prefix={prefix}
+        text={text}
       >
         {label ? <InputLabel isRequired={isRequired} label={label} /> : null}
         {inputContainer}
@@ -166,9 +164,8 @@ InputBlock.propTypes = {
   label: PropTypes.string,
   onChange: PropTypes.func,
   options: PropTypes.string,
-  postfix: PropTypes.string,
-  prefix: PropTypes.string,
   selectOptions: PropTypes.string,
+  text: PropTypes.string,
   textInputs: PropTypes.node.isRequired,
   type: PropTypes.oneOf([
     "default",
@@ -194,9 +191,8 @@ InputBlock.defaultProps = {
   label: null,
   onChange: null,
   options: null,
-  postfix: "postfix",
-  prefix: "prefix",
   selectOptions: null,
+  text: "label",
   type: null,
 };
 

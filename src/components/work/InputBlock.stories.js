@@ -163,8 +163,7 @@ storiesOf("Work|Blocks/Input Block", module)
           ],
           "Inputs",
         )}
-        prefix={text("pre-label", "prefix", "Labels")}
-        postfix={text("post-label", "postfix", "Labels")}
+        text={text("pre-label", "label", "Labels")}
         icon={options(
           "pre-icon",
           {
@@ -245,7 +244,7 @@ storiesOf("Work|Blocks/Input Block", module)
       <InputBlock
         type="pre_label"
         label="Input Block ( Pre-Label )"
-        prefix="Prefix"
+        text="Prefix"
         textInputs={inputsOne}
         helpText="Hang in there, buddy, I'm here to help!"
       />
@@ -283,7 +282,7 @@ storiesOf("Work|Blocks/Input Block", module)
         type="post_label"
         label="Input Block ( Post-Label )"
         textInputs={inputsOne}
-        postfix="Postfix"
+        text="Postfix"
         helpText="Hang in there, buddy, I'm here to help!"
       />
     );
@@ -359,14 +358,14 @@ storiesOf("Work|Blocks/Input Block", module).add("The Input Block Block Family",
             <InputBlock
               type="pre_label"
               label="Input Block ( pre-label )"
-              prefix="prefix"
+              text="prefix"
               textInputs={inputsOne}
               helpText="Hang in there, buddy, I'm here to help!"
             />
             <InputBlock
               type="post_label"
               label="Input Block ( post-label )"
-              postfix="postfix"
+              text="postfix"
               textInputs={inputsOne}
               helpText="Hang in there, buddy, I'm here to help!"
             />
