@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable complexity */
 import React from "react";
 import styled from "styled-components";
@@ -76,17 +77,20 @@ function Bar({
   let topPadding;
   let barPadding;
   let textAlign;
-  let leftPadding;
-  let rightPadding;
-  if (center || right) {
-    leftPadding = "0 1em 0 0";
-  } else {
-    leftPadding = "0";
+  const leftPadding = "0 0.5em 0 0";
+  let centerPadding;
+  const rightPadding = "0 0 0 0.5em";
+  if (!left) {
+    centerPadding = "0 0.5em 0 0";
   }
-  if (left || center) {
-    rightPadding = "0 0 0 1em";
-  } else {
-    rightPadding = "0";
+  if (!right) {
+    centerPadding = "0 0 0 0.5em";
+  }
+  if (!left && !right) {
+    centerPadding = "0";
+  }
+  if (left && right) {
+    centerPadding = "0 0.5em 0 0.5em";
   }
   switch (padding && padding.toLowerCase()) {
     case "none":
@@ -145,7 +149,7 @@ function Bar({
         </Slot>
       ) : null}
       {center ? (
-        <Slot alignItems={alignItems} textAlign={textAlign}>
+        <Slot alignItems={alignItems} textAlign={textAlign} setPadding={centerPadding}>
           {center}
         </Slot>
       ) : null}
