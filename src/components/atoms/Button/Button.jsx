@@ -14,7 +14,7 @@ const StyledButton = styled.button`
   width: ${(props) => {
     return props.fullWidth ? "100%" : "auto";
   }};
-  height: inherit;
+  height: 100%;
   padding: ${(props) => {
     return props.buttonPadding || "0.5rem 0.7rem";
   }};
@@ -78,6 +78,7 @@ function Button({
   disabled,
   onClick,
   style,
+  className,
 }) {
   let buttonColor;
   let fontColor;
@@ -162,6 +163,7 @@ function Button({
       buttonPadding={buttonPadding}
       labelSize={labelSize}
       style={style}
+      className={className}
     >
       {icon ? <ButtonIcon icon={icon} type={fontColor} size="lg" /> : null}
       {label ? <ButtonLabel>{label}</ButtonLabel> : null}

@@ -125,6 +125,7 @@ const StyledLabel = styled.label`
   padding: 0.25rem 1rem;
   white-space: nowrap;
   user-select: none;
+  height: 100%;
 `;
 function Label({ children, label }) {
   return <StyledLabel>{children || label}</StyledLabel>;

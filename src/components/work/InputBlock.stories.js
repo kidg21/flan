@@ -12,16 +12,12 @@ import {
   object,
   optionsKnob as options,
 } from "@storybook/addon-knobs";
-import Grid from "layout/Grid";
 import Panel, { PanelSection } from "layout/Panel";
-import Form, { Section, Label } from "layout/Form";
-import Button from "atoms/Button";
-import SelectMenu from "atoms/SelectMenu";
-import Icon from "atoms/Icon";
+import Form, { Section } from "layout/Form";
 import InputBlock from "blocks/InputBlock";
 import InputBlockNotes from "blocks/InputBlock/InputBlock.md";
 
-const oneInput = [
+const inputsOne = [
   {
     id: "ID 1",
     name: "ID 100",
@@ -30,7 +26,7 @@ const oneInput = [
     pattern: "[A-Za-z]{3}",
   },
 ];
-const twoInputs = [
+const inputsTwo = [
   {
     id: "ID 1",
     type: "text",
@@ -42,20 +38,23 @@ const twoInputs = [
     placeholder: "Placeholder 2",
   },
 ];
-const threeInputs = [
+const inputsThree = [
   {
     id: "ID 1",
-    type: "text",
+    // type: "text",
+    type: "date",
     placeholder: "Placeholder 1",
   },
   {
     id: "ID 2",
-    type: "text",
+    // type: "text",
+    type: "search",
     placeholder: "Placeholder 2",
   },
   {
     id: "ID 3",
-    type: "text",
+    // type: "text",
+    type: "password",
     placeholder: "Placeholder 3",
   },
 ];
@@ -76,7 +75,6 @@ const domains = [
   { value: "gov", label: ".gov" },
 ];
 
-// Input ( Standard )
 storiesOf("Work|Blocks/Input Block", module)
   .addParameters({
     info: {
@@ -111,12 +109,32 @@ storiesOf("Work|Blocks/Input Block", module)
   .add("Knobs", () => {
     return (
       <InputBlock
-        label={text("label", "Input Block Label", "Input Block")}
+        id="input block"
+        type={options(
+          "type",
+          {
+            "Standard": null,
+            "2 Inputs": "inputs_2",
+            "3 Inputs": "inputs_3",
+            "Pre-Label": "pre_label",
+            "Pre-Select": "pre_select",
+            "Pre-Icon": "pre_icon",
+            "Post-Label": "post_label",
+            "Post-Select": "post_select",
+            "Post-Button": "post_button",
+          },
+          null,
+          { display: "select" },
+          "Input Block",
+        )}
+        label={text("input label", "Input Block Label", "Input Block")}
         isRequired={boolean("required", false, "Input Block")}
-        prefix={
-          boolean("prefix", false, "Input Block") &&
-          object("label", <Label label="Prefix" />, "Input Block")
+        helpText={text("help text", "Have you been helped yet?", "Input Block")}
+        error={
+          boolean("error", false, "Input Block") &&
+          text("error text", "Error message...", "Input Block")
         }
+        disabled={boolean("disabled", false, "Input Block")}
         textInputs={object(
           "text inputs",
           [
@@ -127,23 +145,41 @@ storiesOf("Work|Blocks/Input Block", module)
               placeholder: "Placeholder 1",
               pattern: "[A-Za-z]{3}",
             },
+            {
+              id: "ID 2",
+              name: "ID 200",
+              type: "text",
+              placeholder: "Placeholder 2",
+              pattern: "[A-Za-z]{3}",
+            },
+            {
+              id: "ID 3",
+              name: "ID 300",
+              type: "text",
+              placeholder: "Placeholder 3",
+              pattern: "[A-Za-z]{3}",
+            },
           ],
-          "Input Block",
+          "Inputs",
         )}
-        helpText={text("help text", "Have you been helped yet?", "Input Block")}
-        error={
-          boolean("error", false, "Input Block") &&
-          text("error text", "Error message...", "Input Block")
-        }
-        disabled={boolean("disabled", false, "Input Block")}
-        postfix={
-          boolean("postfix", false, "Input Block") &&
-          object(
-            "select",
-            <SelectMenu options={domains} selectOptions={domains[0].value} isClearable={false} />,
-            "Input Block",
-          )
-        }
+        prefix={text("pre-label", "prefix", "Labels")}
+        postfix={text("post-label", "postfix", "Labels")}
+        icon={options(
+          "pre-icon",
+          {
+            user_circle: "user_circle",
+            down: "down",
+            bookmark: "bookmark_solid",
+            plus: "plus",
+            print: "print",
+          },
+          "user_circle",
+          { display: "select" },
+          "Icon",
+        )}
+        button={text("button label", "Button", "Button")}
+        options={titles}
+        selectOptions={titles[0].value}
       />
     );
   })
@@ -153,121 +189,125 @@ storiesOf("Work|Blocks/Input Block", module)
       <InputBlock
         label="Input Block ( Required )"
         isRequired
-        textInputs={oneInput}
+        textInputs={inputsOne}
         helpText="Hang in there, buddy, I'm here to help!"
       />
     );
   })
-  // Input Block ( Error )
+  // // Input Block ( Error )
   .add("Input Block ( Error )", () => {
     return (
       <InputBlock
         label="Input Block ( Error )"
-        textInputs={oneInput}
+        textInputs={inputsOne}
         helpText="Hang in there, buddy, I'm here to help!"
         error="Don't sweat it...we can fix this!"
       />
     );
   })
-  // Input Block ( Disabled )
+  // // Input Block ( Disabled )
   .add("Input Block ( Disabled )", () => {
     return (
       <InputBlock
         label="Input Block ( Disabled )"
         disabled
-        textInputs={oneInput}
+        textInputs={inputsOne}
         helpText="Hang in there, buddy, I'm here to help!"
       />
     );
   })
-  // Input Block ( 2 Inputs )
+  // // Input Block ( 2 Inputs )
   .add("Input Block ( 2 Inputs )", () => {
     return (
       <InputBlock
+        type="inputs_2"
         label="Input Block ( 2 Inputs )"
-        textInputs={twoInputs}
+        textInputs={inputsTwo}
         helpText="Hang in there, buddy, I'm here to help!"
       />
     );
   })
-  // Input Block ( 3 Inputs )
+  // // Input Block ( 3 Inputs )
   .add("Input Block ( 3 Inputs )", () => {
     return (
       <InputBlock
+        type="inputs_3"
         label="Input Block ( 3 Inputs )"
-        textInputs={threeInputs}
+        textInputs={inputsThree}
         helpText="Hang in there, buddy, I'm here to help!"
       />
     );
   })
-  // Input Block ( Prefix )
+  // // Input Block ( Pre-Label )
   .add("Input Block ( Prefix Label )", () => {
     return (
       <InputBlock
-        label="Input Block ( Prefix Label )"
-        prefix={<Label label="Prefix" />}
-        textInputs={oneInput}
+        type="pre_label"
+        label="Input Block ( Pre-Label )"
+        prefix="Prefix"
+        textInputs={inputsOne}
         helpText="Hang in there, buddy, I'm here to help!"
       />
     );
   })
-  // Input Block ( Prefix Icon )
+  // // Input Block ( Pre-Icon )
   .add("Input Block ( Prefix Icon )", () => {
     return (
       <InputBlock
-        label="Input Block ( Prefix Icon )"
-        prefix={
-          <Label>
-            <Icon icon="user" size="lg" />
-          </Label>
-        }
-        textInputs={oneInput}
+        type="pre_icon"
+        label="Input Block ( Pre-Icon )"
+        icon="user"
+        textInputs={inputsOne}
         helpText="Hang in there, buddy, I'm here to help!"
       />
     );
   })
-  // Input Block ( Pre-Select )
+  // // Input Block ( Pre-Select )
   .add("Input Block ( Pre-Select )", () => {
     return (
       <InputBlock
+        type="pre_select"
         label="Input Block ( Pre-Select )"
-        prefix={<SelectMenu options={titles} selectOptions={titles[0].value} isClearable={false} />}
-        textInputs={oneInput}
+        options={titles}
+        selectOptions={titles[0].value}
+        textInputs={inputsOne}
         helpText="Hang in there, buddy, I'm here to help!"
       />
     );
   })
-  // Input Block ( Postfix )
-  .add("Input Block ( Postfix Label )", () => {
+  // // Input Block ( Postfix )
+  .add("Input Block ( Post-Label )", () => {
     return (
       <InputBlock
-        label="Input Block ( Postfix )"
-        textInputs={oneInput}
-        postfix={<Label label="Postfix" />}
+        type="post_label"
+        label="Input Block ( Post-Label )"
+        textInputs={inputsOne}
+        postfix="Postfix"
         helpText="Hang in there, buddy, I'm here to help!"
       />
     );
   })
-  // Input Block ( Post-Select )
+  // // Input Block ( Post-Select )
   .add("Input Block ( Post-Select )", () => {
     return (
       <InputBlock
+        type="post_select"
         label="Input Block ( Post-Select )"
-        textInputs={oneInput}
-        postfix={
-          <SelectMenu options={domains} selectOptions={domains[0].value} isClearable={false} />
-        }
+        textInputs={inputsOne}
+        options={domains}
+        selectOptions={domains[0].value}
         helpText="Hang in there, buddy, I'm here to help!"
       />
     );
   })
-  // Input Block ( Post-Button )
+  // // Input Block ( Post-Button )
   .add("Input Block ( Post-Button )", () => {
     return (
       <InputBlock
+        type="post_button"
         label="Input Block ( Post-Button )"
-        textInputs={oneInput}
-        postfix={<Button label="Upload" />}
+        textInputs={inputsOne}
+        button="Upload"
         helpText="Hang in there, buddy, I'm here to help!"
       />
     );
@@ -278,82 +318,85 @@ storiesOf("Work|Blocks/Input Block", module).add("The Input Block Block Family",
   return (
     <Panel>
       <PanelSection body>
-        <Form>
-          <Section title="The Input Block Family">
+        <Form title="The Input Block Family">
+          <Section>
             <InputBlock
-              label="Input Block ( Required )"
-              isRequired
-              textInputs={oneInput}
+              label="Input Block ( standard )"
+              textInputs={inputsOne}
               helpText="Hang in there, buddy, I'm here to help!"
             />
             <InputBlock
-              label="Input Block ( Error )"
-              textInputs={oneInput}
+              label="Input Block ( required )"
+              isRequired
+              textInputs={inputsOne}
+              helpText="Hang in there, buddy, I'm here to help!"
+            />
+            <InputBlock
+              label="Input Block ( error )"
+              textInputs={inputsOne}
               helpText="Hang in there, buddy, I'm here to help!"
               error="Don't sweat it...we can fix this!"
             />
             <InputBlock
-              label="Input Block ( Disabled )"
+              label="Input Block ( disabled )"
+              textInputs={inputsOne}
+              helpText="Hang in there, buddy, I'm here to help!"
               disabled
-              textInputs={oneInput}
+            />
+            <InputBlock
+              type="inputs_2"
+              label="Input Block ( 2 inputs )"
+              textInputs={inputsTwo}
               helpText="Hang in there, buddy, I'm here to help!"
             />
             <InputBlock
-              label="Input Block ( 2 Inputs )"
-              textInputs={twoInputs}
+              type="inputs_3"
+              label="Input Block ( 3 inputs )"
+              textInputs={inputsThree}
               helpText="Hang in there, buddy, I'm here to help!"
             />
             <InputBlock
-              label="Input Block ( 3 Inputs )"
-              textInputs={threeInputs}
+              type="pre_label"
+              label="Input Block ( pre-label )"
+              prefix="prefix"
+              textInputs={inputsOne}
               helpText="Hang in there, buddy, I'm here to help!"
             />
             <InputBlock
-              label="Input Block ( Prefix Label )"
-              prefix={<Label label="Prefix" />}
-              textInputs={oneInput}
+              type="post_label"
+              label="Input Block ( post-label )"
+              postfix="postfix"
+              textInputs={inputsOne}
               helpText="Hang in there, buddy, I'm here to help!"
             />
             <InputBlock
-              label="Input Block ( Prefix Icon )"
-              prefix={
-                <Label>
-                  <Icon icon="user" size="lg" />
-                </Label>
-              }
-              textInputs={oneInput}
+              type="pre_select"
+              label="Input Block ( pre-select )"
+              options={titles}
+              selectOptions={titles[0].value}
+              textInputs={inputsOne}
               helpText="Hang in there, buddy, I'm here to help!"
             />
             <InputBlock
-              label="Input Block ( Pre-Select )"
-              prefix={
-                <SelectMenu options={titles} selectOptions={titles[0].value} isClearable={false} />
-              }
-              textInputs={oneInput}
+              type="post_select"
+              label="Input Block ( post-select )"
+              options={domains}
+              selectOptions={domains[0].value}
+              textInputs={inputsOne}
               helpText="Hang in there, buddy, I'm here to help!"
             />
             <InputBlock
-              label="Input Block ( Postfix Label )"
-              textInputs={oneInput}
-              postfix={<Label label="Postfix" />}
+              type="pre_icon"
+              label="Input Block ( pre-icon )"
+              icon="user"
+              textInputs={inputsOne}
               helpText="Hang in there, buddy, I'm here to help!"
             />
             <InputBlock
-              label="Input Block ( Post-Select )"
-              textInputs={oneInput}
-              postfix={
-                <SelectMenu
-                  options={domains}
-                  selectOptions={domains[0].value}
-                  isClearable={false}
-                />
-              }
-              helpText="Hang in there, buddy, I'm here to help!"
-            />
-            <InputBlock
-              label="Input Block ( Post-Button )"
-              textInputs={oneInput}
-              postfix={<Button label="Upload" />}
+              type="post_button"
+              label="Input Block ( post-button )"
+              button="upload"
+              textInputs={inputsOne}
               helpText="Hang in there, buddy, I'm here to help!"
             />
           </Section>
