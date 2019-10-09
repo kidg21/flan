@@ -171,7 +171,12 @@ const Help = styled(TextLabel)`
   font-weight: initial;
 `;
 function HelpText({ helpText, children }) {
-  return <Help>{helpText || children}</Help>;
+  const content = children || helpText;
+  if (typeof content === "string") {
+    return (<Help>{content.split("\n").map((text) => { return <>{text}<br/></>; })}</Help>);
+  } else {
+    return (<Help>{content}</Help>);
+  }
 }
 HelpText.propTypes = {
   helpText: PropTypes.string.isRequired,
@@ -190,7 +195,12 @@ const Error = styled(TextLabel)`
   }
 `;
 function ErrorText({ error, children }) {
-  return <Error>{error || children}</Error>;
+  const content = children || error;
+  if (typeof content === "string") {
+    return (<Error>{content.split("\n").map((text) => { return <>{text}<br/></>; })}</Error>);
+  } else {
+    return (<Error>{content}</Error>);
+  }
 }
 ErrorText.propTypes = {
   error: PropTypes.string.isRequired,
