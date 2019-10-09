@@ -64,6 +64,7 @@ const CardListWrapper = styled(Grid)`
   }
 `;
 
+
 function Piece({
   id,
   hover,
@@ -72,7 +73,7 @@ function Piece({
   textColor,
   backgroundColor,
   className,
-  header,
+  style,
   onClick,
 }) {
   return (
@@ -83,7 +84,7 @@ function Piece({
       textColor={textColor}
       backgroundColor={backgroundColor}
       onClick={onClick}
-      header={header}
+      style={style}
       hover={hover}
     >
       {children}
@@ -113,6 +114,7 @@ Piece.propTypes = {
   padding: PropTypes.node,
   className: PropTypes.string,
   header: PropTypes.bool,
+  style: PropTypes.object,
 };
 Card.propTypes = {
   id: PropTypes.string,

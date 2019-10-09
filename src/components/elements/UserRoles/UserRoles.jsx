@@ -152,7 +152,7 @@ const UserRoles = React.forwardRef(({
 
   return (
     <Panel style={style}>
-      <MainPanelHeader title={title} menuData={commands} />
+      <MainPanelHeader title={title} menuData={commands} style={{ zIndex: 1 }} />
       <PanelSection body style={panelStyle}>
         {right ? <Bar right={right} /> : null}
         <Bar

@@ -5,9 +5,11 @@ import { Piece } from "layout/Card";
 import Title from "base/Typography";
 import Menu from "blocks/Menu";
 
-function MainPanelHeader({ id, title, menuData }) {
+function MainPanelHeader({
+  id, title, style, menuData,
+}) {
   return (
-    <Piece id={id} header>
+    <Piece id={id} style={style}>
       <Bar
         contentAlign="center"
         padding="3x"
@@ -21,20 +23,18 @@ function MainPanelHeader({ id, title, menuData }) {
 MainPanelHeader.propTypes = {
   id: PropTypes.string,
   title: PropTypes.node.isRequired,
+  style: PropTypes.object,
   menuData: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
     name: PropTypes.string,
     onClickLink: PropTypes.func,
   })),
 };
-MainPanelHeader.defaultProps = {
-  id: null,
-  menuData: null,
-};
 
 MainPanelHeader.defaultProps = {
   id: null,
   menuData: null,
+  style: null,
 };
 
 export default MainPanelHeader;
