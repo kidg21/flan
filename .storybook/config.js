@@ -10,6 +10,7 @@ import { withNotes } from "@storybook/addon-notes";
 // import { configureActions } from "@storybook/addon-actions"
 import { withInfo } from "@storybook/addon-info";
 import { setDefaults } from "@storybook/addon-info";
+import { DocsPage, DocsContainer } from "@storybook/addon-docs/blocks";
 
 // Create and add global styles
 import GlobalStyles from "GlobalStyles";
@@ -69,6 +70,7 @@ addParameters({
     viewports: { ...INITIAL_VIEWPORTS, ...newViewports },
     // defaultViewport: "iphone6"
   },
+
   options: {
     theme: FlanTheme,
     // url: 'https://storybook.js.org',
@@ -76,6 +78,10 @@ addParameters({
     addonPanelInRight: true,
     hierarchySeparator: /\/|\./,
     hierarchyRootSeparator: /\|/,
+  },
+  docs: {
+    container: DocsContainer,
+    page: DocsPage,
   },
   a11y: {
     // ... axe options
@@ -138,4 +144,4 @@ function loadStories() {
   work.keys().forEach(filename => work(filename));
 }
 
-configure(loadStories, module);
+configure(require.context("../src", true, /\.stories\.(js|mdx)$/), module);
