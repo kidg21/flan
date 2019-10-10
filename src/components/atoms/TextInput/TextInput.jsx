@@ -85,8 +85,7 @@ function TextInput({
   if (type === "textarea") {
     as = "textarea";
     inputResize = "vertical";
-  }
-  if (type === "search") {
+  } else if (type === "search") {
     inputBorderColor = "primaryLight";
     inputBorderColorHover = "primary";
   }
