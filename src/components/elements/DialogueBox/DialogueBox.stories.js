@@ -15,6 +15,15 @@ import Icon from "atoms/Icon";
 import { Section } from "layout/Form";
 import DMPlogo from "images/DMPlogo.jpg";
 import Container from "atoms/Container";
+import Switch from "atoms/Switch";
+import Divider from "atoms/Divider";
+
+
+const permissions = [
+  { value: "Read", label: "Read" },
+  { value: "Write", label: "Write" },
+  { value: ["Read", "Write"], label: "Read / Write" },
+];
 
 const image = {
   src: DMPlogo,
@@ -151,21 +160,38 @@ storiesOf("Elements|Dialogue Box/User Roles", module)
             <Container height="12rem">
               <List>
                 <ListItem
-                  label="User 3"
-                  action={<Icon icon={["far", "cog"]} />}
-                />
+                  label="BDE811.Public"
+                >
+                   <SelectMenu
+              width="40%"
+              options={permissions}
+            />
+            </ListItem>
+
                 <ListItem
-                  label="User 2"
-                  action={<Icon icon={["far", "cog"]} />}
-                />
+                  label="BDE811.Marketing"
+                  >
+                  <SelectMenu
+             width="40%"
+             options={permissions}
+           />
+           </ListItem>
                 <ListItem
-                  label="User 1"
-                  action={<Icon icon={["far", "cog"]} />}
-                />
+                  label="BDE811.Acquisitions"
+                  >
+                  <SelectMenu
+             width="40%"
+             options={permissions}
+           />
+           </ListItem>
                 <ListItem
-                  label="User 3"
-                  action={<Icon icon={["far", "cog"]} />}
-                />
+                  label="BDE811.Developer"
+                  >
+                  <SelectMenu
+             width="40%"
+             options={permissions}
+           />
+           </ListItem>
               </List>
             </Container>
           </Piece>
@@ -177,14 +203,14 @@ storiesOf("Elements|Dialogue Box/User Roles", module)
     return (
       <DialogueBox
         title="Edit Files Role"
-        buttons={[{ label: "Add" }, { label: "Cancel" }]}
+        buttons={[{ label: "Edit" }, { label: "Cancel" }]}
       >
         <Section>
-          <Title text="Role: Developer" type="info" />
+          <TextInput label="Role" placeholder="Builder/Developer" />
           <SelectMenu
             multiSelect="true"
-            label="+ Files"
-            placeholder="Add Files for Role to access"
+            label="+ Add Folder"
+            placeholder="Add Folder for Role to access"
             options={[
               { value: "1", label: "Folder 1" },
               { value: "2", label: "Folder 2" },
@@ -192,13 +218,59 @@ storiesOf("Elements|Dialogue Box/User Roles", module)
               { value: "4", label: "File 24" },
             ]}
           />
+          <Divider/>
           <Container>
             <List>
-              <ListItem label="File 3" action={<Icon icon="coffee" />} />
-              <ListItem label="file 2" action={<Icon icon="coffee" />} />
-              <ListItem label="file 1" action={<Icon icon="coffee" />} />
-            </List>
-          </Container>
+                <ListItem
+                  label="BDE811.Public"
+                >
+                   <SelectMenu
+              width="40%"
+              options={permissions}
+            />
+            </ListItem>
+
+                <ListItem
+                  label="BDE811.Marketing"
+                  >
+                  <SelectMenu
+             width="40%"
+             options={permissions}
+           />
+           </ListItem>
+                <ListItem
+                  label="BDE811.Acquisitions"
+                  >
+                  <SelectMenu
+             width="40%"
+             options={permissions}
+           />
+           </ListItem>
+                <ListItem
+                  label="BDE811.Developer"
+                  >
+                  <SelectMenu
+             width="40%"
+             options={permissions}
+           />
+           </ListItem>
+              </List>
+              </Container>
+        </Section>
+        </DialogueBox>
+    );
+  })
+  .add("Add Role", () => {
+    return (
+    <DialogueBox
+    title="+Add Role"
+    buttons={[{ label: "add" }, { label: "Cancel" }]}
+    >
+        <Section>
+          <TextInput
+            label="Role Name"
+            placeholder="Type the name for your new role."
+          />
         </Section>
       </DialogueBox>
     );
@@ -256,6 +328,7 @@ storiesOf("Elements|Dialogue Box/User Roles", module)
               { value: "Admin", label: "Admin" },
             ]}
           />
+          <Switch label="Enabled"/>
           <Title text="Delete User?" size="tiny" weight="light" />
         </Section>
       </DialogueBox>

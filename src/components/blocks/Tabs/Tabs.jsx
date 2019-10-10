@@ -13,7 +13,7 @@ const TabsWrapper = styled.section`
     return props.setOrientation || "grid";
   }};
   grid-gap: ${(props) => {
-    return props.isSearch ? "" : "2px";
+    return props.gap || "2px";
   }};
   grid-template-columns: ${(props) => {
     return props.setColumns || "repeat(auto-fit, minmax(0, 1fr))";
@@ -31,31 +31,36 @@ const TabsWrapper = styled.section`
   height: ${(props) => {
     return props.setHeight || "100%";
   }};
-  padding: ${(props) => {
-    return props.isFloating ? ".25rem" : "";
-  }};
-  z-index: ${(props) => {
-    return props.isFloating ? "1001" : "";
-  }};
-  filter: ${(props) => {
-    return props.isFloating ? shadows.cardShadow : "";
-  }};
+
   > * {
     margin: ${(props) => {
-    return props.isFloating ? ".5rem" : "";
+    return props.margin || "";
+  }};
+    border: ${(props) => {
+    return props.border || "";
   }};
     border-radius: ${(props) => {
-    return props.isFloating ? ".5rem" : "0";
+    return props.borderRadius || "";
+  }};
+    background-color: ${(props) => {
+    return props.theme.background[props.backgroundColor] || "";
+  }};
+    color: ${(props) => {
+    return props.theme.palette[props.fontColor] || "";
   }};
   }
 `;
 
 function Tabs({
-  id, children, columns, align, isFloating, style, isSearch,
+  id, children, columns, align, style, gap, margin
 }) {
   let setColumns;
+  let border;
+  let borderRadius;
   let setPosition;
   let setWidth;
+  let backgroundColor;
+  let fontColor;
   let setHeight;
   let setOrientation;
   let alignRight;
@@ -109,16 +114,20 @@ function Tabs({
   return (
     <TabsWrapper
       id={id}
+      gap={gap}
+      border={border}
+      borderRadius={borderRadius}
       setColumns={setColumns}
       setPosition={setPosition}
+      backgroundColor={backgroundColor}
       setWidth={setWidth}
       setHeight={setHeight}
       setOrientation={setOrientation}
       alignRight={alignRight}
       alignBottom={alignBottom}
-      isFloating={isFloating}
-      isSearch={isSearch}
       style={style}
+      margin={margin}
+      fontColor={fontColor}
     >
       {children}
     </TabsWrapper>
@@ -126,41 +135,37 @@ function Tabs({
 }
 
 function Tab({
-  id,
-  icon,
-  tabLabel,
-  onClick,
-  noBorder,
-  isSelected,
-  disabled,
-  color,
-  selectedColor,
+  id, icon, tabLabel, size, onClick, type, isSelected, disabled, color,
 }) {
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+
+
+
   return (
     <Fragment>
       {isSelected ? (
         <Button
           id={id}
           icon={icon}
-          label={tabLabel}
-          onClick={onClick}
-          isSelected={isSelected}
-          disabled={isDisabled}
-          color={selectedColor}
-          noBorder={noBorder}
-          fill
-        />
-      ) : (
-        <Button
-          id={id}
-          icon={icon}
+          size={size}
           label={tabLabel}
           onClick={onClick}
           isSelected={isSelected}
           disabled={isDisabled}
           color={color}
-          noBorder={noBorder}
+          type={type && type.toLowerCase() === "inline" ? "underlined" : "solid"}
+        />
+      ) : (
+        <Button
+          id={id}
+          icon={icon}
+          size={size}
+          label={tabLabel}
+          onClick={onClick}
+          isSelected={isSelected}
+          disabled={isDisabled}
+          color={type && type.toLowerCase() === "inactive" ? "grey" : color}
+          type={type && type.toLowerCase() === "inline" ? type : null}
         />
       )}
     </Fragment>
@@ -172,8 +177,6 @@ Tabs.propTypes = {
   children: PropTypes.node.isRequired,
   columns: PropTypes.oneOf(["default", "wrap", "1", "2", "3", "4", "5"]),
   align: PropTypes.oneOf(["bottom", "left", "right"]),
-  isFloating: PropTypes.bool,
-  isSearch: PropTypes.bool,
   style: PropTypes.string,
 };
 
@@ -184,6 +187,9 @@ Tab.propTypes = {
   onClick: PropTypes.func.isRequired,
   isSelected: PropTypes.bool,
   disabled: PropTypes.bool,
+  color: PropTypes.string,
+  type: PropTypes.string,
+  size: PropTypes.string,
 };
 
 export { Tabs as default, Tab };

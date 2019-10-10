@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 const Wrapper = styled.div`
   display: block;
   padding: ${(props) => {
-    return props.padding ? "1em" : "";
+    return props.padding || "";
   }};
 `;
 
@@ -27,6 +27,7 @@ const BoxContainer = styled.div`
 
   ::-webkit-scrollbar {
     width: 0.5em;
+    height: 0.5em;
   }
 
   ::-webkit-scrollbar-track {
@@ -39,6 +40,21 @@ const BoxContainer = styled.div`
   }};
     border-radius: 20px;
   }
+
+}
+
+::-webkit-scrollbar-track:horizontal {
+  -webkit-box-shadow: inset 0.5px 0 0px rgba(0, 0, 0, 0.3);
+}
+
+
+::-webkit-scrollbar-thumb:horizontal{
+  background-color: ${(props) => {
+    return props.theme.palette.primary;
+  }};
+  border-radius: 20px;
+}
+
 `;
 
 const Container = React.forwardRef(({
@@ -58,7 +74,7 @@ Container.propTypes = {
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   children: PropTypes.node,
-  padding: PropTypes.bool,
+  padding: PropTypes.string,
 };
 
 Container.defaultProps = {
@@ -66,7 +82,7 @@ Container.defaultProps = {
   height: null,
   width: null,
   children: null,
-  padding: false,
+  padding: null,
 };
 
 export default Container;
