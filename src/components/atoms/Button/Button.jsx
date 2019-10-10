@@ -89,7 +89,6 @@ function Button({
   underlineColor,
   border,
   type,
-  fill,
   size,
   fullWidth,
   disabled,
@@ -134,10 +133,6 @@ function Button({
       buttonColor = "grey2";
       fontColor = buttonColor;
       break;
-    case "alert":
-      buttonColor = "alert";
-      fontColor = buttonColor;
-      break;
     default:
       buttonColor = "primary";
       fontColor = buttonColor;
@@ -145,17 +140,18 @@ function Button({
   }
 
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-
+  let borderStyle = border;
+  let underline = underlineColor;
   if (type) {
     if (type.toLowerCase() === "underlined") {
-      border = "2px solid transparent";
+      borderStyle = "2px solid transparent";
       backgroundColor = "default";
       fontWeight = "700";
       fontColor = buttonColor;
       borderBottom = "3px solid";
-      underlineColor = fontColor;
+      underline = fontColor;
     } else if (type.toLowerCase() === "inline") {
-      border = "2px solid transparent";
+      borderStyle = "2px solid transparent";
       fontWeight = "700";
       backgroundColor = "default";
     } else if (type.toLowerCase() === "solid") {
@@ -187,9 +183,9 @@ function Button({
       name={id}
       fullWidth={fullWidth}
       borderBottom={borderBottom}
-      underlineColor={underlineColor}
+      underlineColor={underline}
       disabled={isDisabled}
-      border={border}
+      border={borderStyle}
       borderRadius={borderRadius}
       fontWeight={fontWeight}
       type={type}
@@ -213,6 +209,7 @@ Button.propTypes = {
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   color: PropTypes.oneOf(["success", "warning", "alert", "info", "primary", "secondary"]),
   size: PropTypes.oneOf(["small", "large"]),
+  type: PropTypes.oneOf(["solid", "underlined", "inline"]),
   fullWidth: PropTypes.bool,
   underlineColor: PropTypes.string,
   disabled: PropTypes.bool,
@@ -227,6 +224,7 @@ Button.defaultProps = {
   icon: null,
   color: null,
   size: null,
+  type: null,
   fullWidth: false,
   underlineColor: null,
   disabled: false,
