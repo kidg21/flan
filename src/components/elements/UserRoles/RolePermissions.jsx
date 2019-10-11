@@ -188,7 +188,9 @@ const RolePermissions = React.forwardRef(({
 
   return (
     <Panel style={style}>
-      <MainPanelHeader title={title} menuData={commands} style={{ zIndex: 1 }} />
+      <PanelSection header>
+        <MainPanelHeader title={title} menuData={commands} />
+      </PanelSection>
       <PanelSection body style={panelStyle}>
         <Bar
           left={<Search placeholder="Search for a Role" onChange={onSearch} inputStyle={{ boxSizing: "border-box " }} />}

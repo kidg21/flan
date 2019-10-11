@@ -1,5 +1,5 @@
-import styled, { css } from "styled-components";
-import { fonts, shadows } from "Variables";
+import styled from "styled-components";
+import { shadows } from "Variables";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 
 const Panel = styled.div`
@@ -42,9 +42,16 @@ const PanelSection = styled.section`
   z-index: ${(props) => {
     return props.body ? "0" : "1";
   }};
-  overflow-x: hidden;
+  overflow-x: ${(props) => {
+    return props.header ? "visible" : "hidden";
+  }}
   overflow-y: ${(props) => {
-    return props.body ? "scroll" : "";
+    if (props.body) {
+      return "scroll";
+    } else if (props.header) {
+      return "visible";
+    }
+    return "";
   }};
   max-height: 100vh;
 
