@@ -30,15 +30,17 @@ function InputBlock({
   label,
   onChange,
   options,
+  prefix,
   selectOptions,
   text,
   textInputs,
-  type,
 }) {
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let inputTextColor;
+  let buttonColor;
   if (error && !isDisabled) {
     inputTextColor = "alert";
+    buttonColor = "alert";
   }
   const inputElements = textInputs.map((input) => {
     return (
@@ -58,77 +60,86 @@ function InputBlock({
     );
   });
   let inputContainer = inputElements;
-  switch (type) {
-    case "inputs_2":
-      inputContainer = (
-        <Grid columns="2" gap="tiny">
-          {inputElements[0]}
-          {inputElements[1]}
-        </Grid>
-      );
-      break;
-    case "inputs_3":
-      inputContainer = (
-        <Grid columns="3" gap="tiny">
-          {inputElements[0]}
-          {inputElements[1]}
-          {inputElements[2]}
-        </Grid>
-      );
-      break;
-    case "pre_label":
-      inputContainer = (
-        <Grid columns="minmax(0, 1fr) minmax(auto, 3fr)" gap="tiny">
-          <Label>{text}</Label>
-          {inputElements[0]}
-        </Grid>
-      );
-      break;
-    case "pre_select":
-      inputContainer = (
-        <Grid columns="minmax(auto, 1fr) minmax(auto, 3fr)" gap="tiny">
+  let gridColumns;
+  if (prefix) {
+    gridColumns = "minmax(0, 1fr) minmax(auto, 3fr)";
+    if (icon) {
+      gridColumns = "auto minmax(auto, 3fr)";
+    }
+  } else {
+    gridColumns = "minmax(auto, 3fr) minmax(0, 1fr)";
+    if (icon) {
+      gridColumns = "minmax(auto, 3fr) auto";
+    }
+  }
+  if (inputElements.length > 1) {
+    const numInputs = Math.min(inputElements.length, 3);
+    inputContainer = (
+      <Grid columns={numInputs} gap="tiny">
+        {inputElements.slice(0, numInputs)}
+      </Grid>
+    );
+  } else if (text) {
+    inputContainer = (
+      <Grid columns={gridColumns} gap="tiny">
+        {prefix ? <Label>{text}</Label> : null}
+        {inputElements}
+        {!prefix ? <Label>{text}</Label> : null}
+      </Grid>
+    );
+  } else if (options) {
+    inputContainer = (
+      <Grid columns={gridColumns} gap="tiny">
+        {prefix ? (
           <SelectMenu options={options} selectOptions={selectOptions} isClearable={false} />
-          {inputElements[0]}
-        </Grid>
-      );
-      break;
-    case "pre_icon":
-      inputContainer = (
-        <Grid columns="auto 1fr" gap="tiny">
+        ) : null}
+        {inputElements}
+        {!prefix ? (
+          <SelectMenu options={options} selectOptions={selectOptions} isClearable={false} />
+        ) : null}
+      </Grid>
+    );
+  } else if (icon) {
+    inputContainer = (
+      <Grid columns={gridColumns} gap="tiny">
+        {prefix ? (
           <Label>
             <Icon icon={icon} size="lg" />
           </Label>
-          {inputElements[0]}
-        </Grid>
+        ) : null}
+        {inputElements}
+        {!prefix ? (
+          <Label>
+            <Icon icon={icon} size="lg" />
+          </Label>
+        ) : null}
+      </Grid>
+    );
+  } else if (button) {
+    const buttonElement = button.map((buttonProps) => {
+      return (
+        <Button
+          label={buttonProps.label}
+          type={buttonProps.type}
+          onClick={buttonProps.onClick}
+          color={buttonProps.color || buttonColor}
+          disabled={buttonProps.disabled}
+        />
       );
-      break;
-    case "post_label":
-      inputContainer = (
-        <Grid columns="minmax(auto, 3fr) minmax(auto, 1fr)" gap="tiny">
-          {inputElements[0]}
-          <Label>{text}</Label>
-        </Grid>
-      );
-      break;
-    case "post_select":
-      inputContainer = (
-        <Grid columns="minmax(auto, 3fr) minmax(auto, 1fr)" gap="tiny">
-          {inputElements[0]}
-          <SelectMenu options={options} selectOptions={selectOptions} isClearable={false} />
-        </Grid>
-      );
-      break;
-    case "post_button":
-      inputContainer = (
-        <Grid columns="1fr auto" gap="tiny">
-          {inputElements[0]}
-          <Button label={button} />
-        </Grid>
-      );
-      break;
-    default:
-      inputContainer = inputElements[0];
-      break;
+    });
+    inputContainer = (
+      <Grid columns={gridColumns} gap="tiny">
+        {prefix ? buttonElement : null}
+        {inputElements}
+        {!prefix ? buttonElement : null}
+      </Grid>
+    );
+  } else {
+    inputContainer = (
+      <Grid columns="1" gap="tiny">
+        {inputElements}
+      </Grid>
+    );
   }
   return (
     <DisabledContext.Provider value={isDisabled}>
@@ -141,6 +152,7 @@ function InputBlock({
         id={id}
         inputTextColor={inputTextColor}
         isRequired={isRequired}
+        prefix={prefix}
         text={text}
       >
         {label ? <InputLabel isRequired={isRequired} label={label} /> : null}
@@ -164,36 +176,26 @@ InputBlock.propTypes = {
   label: PropTypes.string,
   onChange: PropTypes.func,
   options: PropTypes.string,
+  prefix: PropTypes.bool,
   selectOptions: PropTypes.string,
   text: PropTypes.string,
   textInputs: PropTypes.node.isRequired,
-  type: PropTypes.oneOf([
-    "default",
-    "inputs_2",
-    "inputs_3",
-    "pre_label",
-    "pre_select",
-    "pre_icon",
-    "post_label",
-    "post_select",
-    "post_button",
-  ]),
 };
 InputBlock.defaultProps = {
-  button: "button",
+  button: null,
   className: null,
   disabled: null,
   error: null,
   helpText: null,
-  icon: "user",
+  icon: null,
   id: null,
   isRequired: false,
   label: null,
   onChange: null,
   options: null,
+  prefix: false,
   selectOptions: null,
-  text: "label",
-  type: null,
+  text: null,
 };
 
 export { InputBlock as default };
