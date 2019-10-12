@@ -106,6 +106,7 @@ function TextInput({
   }
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
+    inputTextColor = "disabled";
     inputFillColor = "disabled";
     inputBorderColor = "grey4";
   }

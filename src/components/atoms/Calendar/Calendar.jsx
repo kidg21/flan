@@ -34,6 +34,7 @@ function Calendar({
   let inputSelectColor;
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
+    inputTextColor = "disabled";
     inputFillColor = "disabled";
     inputBorderColor = "grey5";
   }

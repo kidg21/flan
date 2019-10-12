@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
+import { DisabledContext } from "States";
 import Title, { Headline, SubTitle, Description } from "base/Typography";
 import Grid from "layout/Grid";
 
@@ -112,23 +113,30 @@ const StyledLabel = styled.label`
   letter-spacing: 2px;
   text-transform: lowercase;
   color: ${props => {
-    return props.theme.text.primary;
+    return props.theme.text[props.color] || "inherit";
   }};
   background-color: ${props => {
-    return props.theme.palette.grey6;
+    return props.theme.palette.white;
   }};
   border: 1px solid
     ${props => {
       return props.theme.palette.grey3;
     }};
-  border-radius: 4px;
+  border-radius: 5px;
   padding: 0.25rem 1rem;
   white-space: nowrap;
   user-select: none;
   height: 100%;
 `;
-function Label({ children, label }) {
-  return <StyledLabel>{children || label}</StyledLabel>;
+function Label({ children, disabled, label }) {
+  let color;
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  if (isDisabled) color = "disabled";
+  return (
+    <StyledLabel color={color} disabled={disabled}>
+      {children || label}
+    </StyledLabel>
+  );
 }
 Label.propTypes = {
   label: PropTypes.string.isRequired,
@@ -136,7 +144,10 @@ Label.propTypes = {
 
 const TextLabel = styled.label`
   grid-column: 1 / -1;
-  width: 100%;
+  color: ${props => {
+    return props.theme.text[props.color] || "inherit";
+  }};
+  width: max-content;
   font-weight: 700;
   user-select: none;
   &:after {
@@ -151,9 +162,18 @@ const TextLabel = styled.label`
     padding-left: 0.25em;
   }
 `;
-function InputLabel({ label, isRequired, className, children, ...props }) {
+function InputLabel({ label, isRequired, className, children, disabled, ...props }) {
+  let color;
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  if (isDisabled) color = "disabled";
   return (
-    <TextLabel isRequired={isRequired} className={className} {...props}>
+    <TextLabel
+      isRequired={isRequired}
+      className={className}
+      color={color}
+      disabled={disabled}
+      {...props}
+    >
       {label || children}
     </TextLabel>
   );
@@ -167,15 +187,32 @@ InputLabel.defaultProps = {
 };
 
 const Help = styled(TextLabel)`
-  color: inherit;
   font-weight: initial;
 `;
-function HelpText({ helpText, children }) {
+function HelpText({ helpText, disabled, children }) {
+  let color;
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  if (isDisabled) color = "disabled";
   const content = children || helpText;
   if (typeof content === "string") {
-    return (<Help>{content.split("\n").map((text) => { return <>{text}<br/></>; })}</Help>);
+    return (
+      <Help color={color} disabled={disabled}>
+        {content.split("\n").map(text => {
+          return (
+            <>
+              {text}
+              <br />
+            </>
+          );
+        })}
+      </Help>
+    );
   } else {
-    return (<Help>{content}</Help>);
+    return (
+      <Help color={color} disabled={disabled}>
+        {content}
+      </Help>
+    );
   }
 }
 HelpText.propTypes = {
@@ -197,9 +234,20 @@ const Error = styled(TextLabel)`
 function ErrorText({ error, children }) {
   const content = children || error;
   if (typeof content === "string") {
-    return (<Error>{content.split("\n").map((text) => { return <>{text}<br/></>; })}</Error>);
+    return (
+      <Error>
+        {content.split("\n").map(text => {
+          return (
+            <>
+              {text}
+              <br />
+            </>
+          );
+        })}
+      </Error>
+    );
   } else {
-    return (<Error>{content}</Error>);
+    return <Error>{content}</Error>;
   }
 }
 ErrorText.propTypes = {
