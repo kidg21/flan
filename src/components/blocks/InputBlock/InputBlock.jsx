@@ -56,7 +56,7 @@ function InputBlock({
     if (onChange) {
       const newState = { ...state, selected: currState.selected };
       onChange(state, newState, (updatedState) => {
-        setSelectState({ selected: updatedState.selected, error: null });
+        setSelectState({ selected: updatedState.selected });
         if (updatedState.input !== newState.input) setState(updatedState);
       });
     } else {
