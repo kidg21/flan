@@ -2,7 +2,37 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { MultiGrid, AutoSizer, CellMeasurer, CellMeasurerCache, InfiniteLoader } from "react-virtualized";
-import { CellWrapper, MultiGridWrapper } from "./TableView";
+import styled from "styled-components";
+import { colors } from "Variables";
+
+export const MultiGridWrapper = styled.div`
+  cursor: default;
+  margin: 0.5em;
+  overflow: hidden;
+  font-size: 12px;
+  min-height: 500px;
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  border-collapse: collapse;
+  flex: 1 1 auto;
+`;
+
+export const CellWrapper = styled.div`
+  padding: 5px;
+  color: ${colors.grey_80};
+  font-weight: ${(props) => { return props.isHeader ? "" : "bold"; }};
+  border-bottom: 1px solid #eee;
+  background-color: ${(props) => {
+    if (props.isHighlighted) {
+      return "#f0f5fb";
+    }
+    if (props.isSelected) {
+      return "#669932";
+    }
+    return "white";
+  }};
+`;
 
 function _containedInRowCol(cellRowCol, row, col) {
   if (cellRowCol.rowIndex !== null && cellRowCol.rowIndex !== undefined) {
@@ -21,11 +51,37 @@ function _containedInRowCol(cellRowCol, row, col) {
 class Table extends Component {
   constructor(props) {
     super(props);
-    this.cache = new CellMeasurerCache({
-      defaultWidth: 100,
-      minWidth: 100,
-      fixedHeight: true,
-    });
+    const {
+      rowHeight,
+      columnWidth,
+      minColWidth,
+      minRowHeight,
+    } = this.props;
+
+    if (rowHeight && columnWidth) {
+      // if both provided, no need to use CellMeasurer
+      this.cache = null;
+    } else if (typeof rowHeight === "number") {
+      // rowHeight is fixed and columnWidth will be calculated by CellMeasurer
+      this.fixedHeight = true;
+      this.cache = new CellMeasurerCache({
+        defaultWidth: minColWidth,
+        minWidth: minColWidth,
+        fixedHeight: true,
+      });
+    } else if (typeof columnWidth === "number") {
+      // columnWidth is fixed and rowHeight will be calculated by CellMeasurer
+      this.fixedWidth = true;
+      this.cache = new CellMeasurerCache({
+        defaultHeight: minRowHeight,
+        minHeight: minRowHeight,
+        fixedWidth: true,
+      });
+    }
+
+    // if none of the above cases fit, then neither value was provided
+    // and default min values will be used instead
+
     this._cellRenderer = this._cellRenderer.bind(this);
     this._infiniteLoaderChildren = this._infiniteLoaderChildren.bind(this);
     this._onSectionRendered = this._onSectionRendered.bind(this);
@@ -57,7 +113,7 @@ class Table extends Component {
 
   _loadMoreRows(startIndex) {
     this._loadMoreRowsStartIndex = startIndex;
-    return this.props.loadRows({ startIndex }); // TODO: update to just be a startIndex???
+    return this.props.loadRows({ startIndex });
   }
 
   _cellRenderer({
@@ -126,19 +182,25 @@ class Table extends Component {
       };
     }
 
+    if (this.cache) {
+      return (
+        <CellMeasurer
+          cache={this.cache}
+          columnIndex={columnIndex}
+          key={key}
+          parent={parent}
+          rowIndex={rowIndex}
+        >
+          <CellWrapper style={style} {...cellProps}>
+            {cellData}
+          </CellWrapper>
+        </CellMeasurer>
+      );
+    }
     return (
-      <CellMeasurer
-        cache={this.cache}
-        columnIndex={columnIndex}
-        key={key}
-        parent={parent}
-        rowIndex={rowIndex}
-      >
-        <CellWrapper style={style} {...cellProps}>
-          {cellData}
-        </CellWrapper>
-      </CellMeasurer>
-    );
+      <CellWrapper style={style} {...cellProps}>
+        {cellData}
+      </CellWrapper>);
   }
 
   _onSectionRendered({ rowStartIndex, rowStopIndex }, onRowsRendered) {
@@ -158,6 +220,10 @@ class Table extends Component {
       sortDirection,
       sortColumnId,
       scrollToAlignment,
+      rowHeight,
+      columnWidth,
+      minRowHeight,
+      minColWidth,
     } = this.props;
 
     let scrollToRow;
@@ -165,6 +231,23 @@ class Table extends Component {
       scrollToRow = undefined;
     } else {
       scrollToRow = focusedRow + 1;
+    }
+
+    let rowHeightToUse;
+    let columnWidthToUse;
+
+    // no CellMeasurer used, either both values provided or neither provided and will be defaulted
+    if (!this.cache) {
+      rowHeightToUse = rowHeight || minRowHeight;
+      columnWidthToUse = columnWidth || minColWidth;
+    } else if (this.fixedHeight && this.cache) {
+      // fixed rowHeight and dynamic columnWidth provided by cellMeasurer
+      rowHeightToUse = rowHeight;
+      columnWidthToUse = this.cache.columnWidth;
+    } else if (this.fixedWidth && this.cache) {
+      // fixed columnWidth and dynamic rowHeight provided by cellMeasurer
+      rowHeightToUse = this.cache.rowHeight;
+      columnWidthToUse = columnWidth;
     }
 
     return (
@@ -181,14 +264,14 @@ class Table extends Component {
                 scrollToAlignment={scrollToAlignment}
                 scrollToRow={scrollToRow} // takes precedence over scrollTop
                 scrollTop={scrollTop} // only used for restoring place in the list when swapping lists
-                columnWidth={this.cache.columnWidth}
+                columnWidth={columnWidthToUse}
                 columnCount={headers.length}
-                rowHeight={40}
+                rowHeight={rowHeightToUse}
                 height={height}
-                rowCount={rows.length + 1} // TODO: update showHeader
+                rowCount={rows.length + 1}
                 width={width}
                 cellRenderer={this._cellRenderer}
-                fixedRowCount={1} // TODO: update showHeader
+                fixedRowCount={1}
                 onSectionRendered={(params) => { this._onSectionRendered(params, onRowsRendered); }} // have to pass onRowsRendered through
                 ref={registerChild}
               />
@@ -236,6 +319,10 @@ Table.defaultProps = {
   onCellMouseOut: null,
   onHeaderMouseOver: null,
   onHeaderMouseOut: null,
+  rowHeight: null,
+  columnWidth: null,
+  minColWidth: 120,
+  minRowHeight: 40,
 };
 
 Table.propTypes = {
@@ -263,6 +350,10 @@ Table.propTypes = {
   onCellMouseOut: PropTypes.func,
   onCellMouseOver: PropTypes.func,
   loadRows: PropTypes.func.isRequired,
+  rowHeight: PropTypes.oneOf(PropTypes.number, PropTypes.func),
+  columnWidth: PropTypes.oneOf(PropTypes.number, PropTypes.func),
+  minRowHeight: PropTypes.number,
+  minColWidth: PropTypes.number,
 };
 
 

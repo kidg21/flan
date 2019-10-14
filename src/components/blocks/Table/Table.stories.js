@@ -1,17 +1,16 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
-import Table from "./Table";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
 import Icon from "atoms/Icon";
-import { Divider } from "../..";
+import Card from "layout/Card";
+import Table from "./Table";
 
-// const Columns = ["Name", "Roles", "Action"];
+// Only columns specified here will be displayed
 const headers = [
   { id: "options", label: "" },
   { id: "ACREAGE", label: "Acreage" },
   { id: "AGGR_ACREAGE", label: "Aggregate Acreage" },
-  { id: "AGGR_GROUP", label: "Aggregate Group" },
   { id: "AGGR_LOT_COUNT", label: "Aggregate Lot Count" },
   { id: "APN", label: "APN" },
   { id: "BUILDING_SQFT", label: "Building SQFT" },
@@ -364,7 +363,18 @@ storiesOf("Blocks|Table", module)
     const [highlightedCell, setHighlightCell] = useState(null);
     const [selectedCell, setSelectedCell] = useState(null);
     for (let i = 0; i < data.length; i++) {
-      data[i].options = (<Icon icon={"edit"} type="info" onClick={() => { alert(`data entry edit ${i} clicked`); }} />);
+      data[i].options = React.createElement(
+        Icon,
+        {
+          icon: "edit",
+          type: "info",
+          onClick: (e) => {
+            e.stopPropagation();
+            alert(`data entry edit ${i} clicked`);
+          },
+        },
+        null,
+      );
     }
 
     const onCellClick = (e, { rowIndex }) => {
@@ -380,15 +390,24 @@ storiesOf("Blocks|Table", module)
     };
 
     return (
-      <Table
-        headers={headers}
-        rows={data}
-        listId={"foo"}
-        onCellClick={onCellClick}
-        onHeaderClick={onHeaderClick}
-        onCellMouseOver={onCellMouseOver}
-        highlightedCell={highlightedCell}
-        selectedCell={selectedCell}
-      />
+      React.createElement(
+        Card,
+        null,
+        React.createElement(
+          Table,
+          {
+            headers: headers,
+            rows: data,
+            listId: "foo",
+            onCellClick: onCellClick,
+            onHeaderClick: onHeaderClick,
+            onCellMouseOver: onCellMouseOver,
+            highlightedCell: highlightedCell,
+            selectedCell: selectedCell,
+            columnWidth: 120,
+          },
+          null,
+        ),
+      )
     );
   });
