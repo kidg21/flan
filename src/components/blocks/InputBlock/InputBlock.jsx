@@ -45,16 +45,23 @@ function InputBlock({
 
   function handleChange(e) {
     const newState = { ...state, input: { ...state.input, [e.target.id]: e.target.value } };
-    setState(newState);
-    onChange(newState);
+    if (onChange) {
+      onChange(state, newState, setState);
+    } else {
+      setState(newState);
+    }
   }
 
-  function handleSelectChange(prevState, newState, setSelectState) {
-    setSelectState(newState);
-
-    const inputState = { ...state, selected: newState.selected };
-    setState(inputState);
-    onChange(inputState);
+  function handleSelectChange(prevState, currState, setSelectState) {
+    if (onChange) {
+      const newState = { ...state, selected: currState.selected };
+      onChange(state, newState, (updatedState) => {
+        setSelectState({ selected: updatedState.selected, error: null });
+        if (updatedState.input !== newState.input) setState(updatedState);
+      });
+    } else {
+      setSelectState(currState);
+    }
   }
 
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
