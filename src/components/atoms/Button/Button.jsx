@@ -89,7 +89,6 @@ function Button({
   underlineColor,
   border,
   type,
-  fill,
   size,
   fullWidth,
   disabled,
@@ -131,7 +130,7 @@ function Button({
       fontColor = buttonColor;
       break;
     case "grey":
-      buttonColor = "grey2";
+      buttonColor = "grey5";
       fontColor = buttonColor;
       break;
     case "alert":

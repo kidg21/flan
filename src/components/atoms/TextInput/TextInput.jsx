@@ -7,7 +7,7 @@ import Grid from "layout/Grid";
 
 const TextInputContainer = styled(Grid)`
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || "";
+    return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
   width: 100%;
 `;
@@ -19,7 +19,7 @@ const Input = styled.input`
     return props.theme.palette[props.inputBorderColor] || props.theme.palette.grey5;
   }};
   background-color: ${(props) => {
-    return props.theme.palette[props.inputFillColor] || "";
+    return props.theme.palette[props.inputFillColor] || props.theme.background.default;
   }};
   caret-color: ${(props) => {
     return props.theme.palette[props.inputCaretColor] || "";
@@ -114,7 +114,8 @@ function TextInput({
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
     inputFillColor = "disabled";
-    inputBorderColor = "grey4";
+    inputBorderColor = "grey5";
+    inputTextColor = "disabled";
   }
 
   if (error && !disabled) {

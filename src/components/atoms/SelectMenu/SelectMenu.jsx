@@ -14,6 +14,10 @@ import { DisabledContext } from "States";
 //   return props.theme.palette[props.inputBorderColorHover] || props.theme.palette.primaryLight;
 // }};
 
+const ReactSelectMenu = styled(Select)`
+
+
+`;
 
 const selectStyles = {
   // Wrapper
@@ -147,10 +151,7 @@ const selectStyles = {
 
 const SelectMenuContainer = styled(Grid)`
   color: ${(props) => {
-    let color = "";
-    if (props.error) color = colors.alert;
-    else if (props.disabled) color = colors.grey_40;
-    return color;
+    return props.theme.text[props.textColor] || props.theme.text.primary ;
   }};
   width: 100%;
   &:empty {
@@ -181,6 +182,16 @@ function SelectMenu({
   onChangeState,
   onCreateOption,
 }) {
+  let textColor;
+
+  if (disabled) {
+    textColor = "disabled";
+  }
+
+  if (error && !disabled) {
+    textColor = "alert";
+
+  }
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let selectedOpts = [];
   if (selectOptions) {
@@ -256,6 +267,7 @@ function SelectMenu({
   return (
     <SelectMenuContainer
       isRequired={isRequired}
+      textColor={textColor}
       disabled={isDisabled} // input attribute
       error={state.error !== null}
       displayInline={displayInline}
