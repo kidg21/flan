@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { storiesOf } from "@storybook/react";
@@ -102,13 +103,6 @@ storiesOf("Atoms|Text Input", module)
           helpText="Hang in there, buddy, I'm here to help!"
         />
         <TextInput
-          type="email"
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-          label="Text Input ( email )"
-          placeholder="I am just keeping things warm"
-          helpText="Hang in there, buddy, I'm here to help!"
-        />
-        <TextInput
           autofocus
           type="password"
           pattern=".{6,}"
@@ -118,20 +112,9 @@ storiesOf("Atoms|Text Input", module)
           helpText="Must contain 6 or more characters"
         />
         <TextInput
-          type="date"
-          label="Text Input ( date )"
-          placeholder="I am just keeping things warm"
-          helpText="Hang in there, buddy, I'm here to help!"
-        />
-        <TextInput
-          type="month"
-          label="Text Input ( month )"
-          placeholder="I am just keeping things warm"
-          helpText="Hang in there, buddy, I'm here to help!"
-        />
-        <TextInput
-          type="time"
-          label="Text Input ( time )"
+          type="email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          label="Text Input ( email )"
           placeholder="I am just keeping things warm"
           helpText="Hang in there, buddy, I'm here to help!"
         />
@@ -146,6 +129,42 @@ storiesOf("Atoms|Text Input", module)
           type="url"
           pattern="https?://.+"
           label="Text Input ( url )"
+          placeholder="I am just keeping things warm"
+          helpText="Hang in there, buddy, I'm here to help!"
+        />
+        <TextInput
+          type="color"
+          label="Text Input ( color )"
+          placeholder="I am just keeping things warm"
+          helpText="Hang in there, buddy, I'm here to help!"
+        />
+        <TextInput
+          type="date"
+          label="Text Input ( date )"
+          placeholder="I am just keeping things warm"
+          helpText="Hang in there, buddy, I'm here to help!"
+        />
+        <TextInput
+          type="time"
+          label="Text Input ( time )"
+          placeholder="I am just keeping things warm"
+          helpText="Hang in there, buddy, I'm here to help!"
+        />
+        <TextInput
+          type="datetime-local"
+          label="Text Input ( datetime-local )"
+          placeholder="I am just keeping things warm"
+          helpText="Hang in there, buddy, I'm here to help!"
+        />
+        <TextInput
+          type="month"
+          label="Text Input ( month )"
+          placeholder="I am just keeping things warm"
+          helpText="Hang in there, buddy, I'm here to help!"
+        />
+        <TextInput
+          type="week"
+          label="Text Input ( week )"
           placeholder="I am just keeping things warm"
           helpText="Hang in there, buddy, I'm here to help!"
         />

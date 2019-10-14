@@ -179,7 +179,9 @@ TextInput.propTypes = {
    */
   title: PropTypes.string,
   type: PropTypes.oneOf([
+    "color",
     "date",
+    "datetime-local",
     "email",
     "hidden",
     "month",
@@ -191,6 +193,7 @@ TextInput.propTypes = {
     "textarea",
     "time",
     "url",
+    "week",
   ]),
   /** The value attribute specifies the initial value for an input field */
   value: PropTypes.string,
