@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable complexity */
-import React, { useContext } from "react";
+import React, { useState, useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
@@ -35,6 +35,28 @@ function InputBlock({
   text,
   textInputs,
 }) {
+  const [state, setState] = useState({
+    input: textInputs.reduce((inputMap, input) => {
+      inputMap[input.id] = input.value;
+      return inputMap;
+    }, {}),
+    selected: selectOptions,
+  });
+
+  function handleChange(e) {
+    const newState = { ...state, input: { ...state.input, [e.target.id]: e.target.value } };
+    setState(newState);
+    onChange(newState);
+  }
+
+  function handleSelectChange(prevState, newState, setSelectState) {
+    setSelectState(newState);
+
+    const inputState = { ...state, selected: newState.selected };
+    setState(inputState);
+    onChange(inputState);
+  }
+
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let inputTextColor;
   let buttonColor;
@@ -47,15 +69,16 @@ function InputBlock({
       <TextInput
         disabled={isDisabled}
         error={!!error}
+        key={input.id}
         id={input.id}
         name={input.id}
-        onChange={onChange}
+        onChange={handleChange}
         pattern={input.pattern}
         placeholder={input.placeholder}
         readonly={input.readonly}
         title={input.title}
         type={input.type}
-        value={input.value}
+        value={state.input[input.id]}
       />
     );
   });
@@ -91,11 +114,21 @@ function InputBlock({
     inputContainer = (
       <Grid columns={gridColumns} gap="tiny">
         {prefix ? (
-          <SelectMenu options={options} selectOptions={selectOptions} isClearable={false} />
+          <SelectMenu
+            options={options}
+            selectOptions={selectOptions}
+            isClearable={false}
+            onChange={handleSelectChange}
+          />
         ) : null}
         {inputElements}
         {!prefix ? (
-          <SelectMenu options={options} selectOptions={selectOptions} isClearable={false} />
+          <SelectMenu
+            options={options}
+            selectOptions={selectOptions}
+            isClearable={false}
+            onChange={handleSelectChange}
+          />
         ) : null}
       </Grid>
     );
