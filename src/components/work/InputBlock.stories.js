@@ -4,28 +4,19 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
 import { withInfo } from "@storybook/addon-info";
-import {
-  withKnobs,
-  array,
-  text,
-  boolean,
-  object,
-  optionsKnob as options,
-} from "@storybook/addon-knobs";
+import { withKnobs, text, boolean, object, optionsKnob as options } from "@storybook/addon-knobs";
 import Panel, { PanelSection } from "layout/Panel";
 import Form, { Section } from "layout/Form";
 import InputBlock from "blocks/InputBlock";
 import InputBlockNotes from "blocks/InputBlock/InputBlock.md";
 
-const button = [
-  {
-    label: "upload",
-    type: "",
-    onClick: () => {},
-    color: "",
-    disabled: false,
-  },
-];
+const button = {
+  label: "upload",
+  type: "",
+  onClick: () => {},
+  color: "",
+  disabled: false,
+};
 const inputsOne = [
   {
     id: "ID 1",
@@ -134,7 +125,7 @@ storiesOf("Work|Blocks/Input Block", module)
               type: "text",
               placeholder: "Placeholder 1",
               pattern: "[A-Za-z]{3}",
-            }
+            },
           ],
           "Inputs",
         )}
@@ -142,29 +133,23 @@ storiesOf("Work|Blocks/Input Block", module)
         icon={
           boolean("icon", false, "Input Block") &&
           options(
-          "pre-icon",
-          {
-            user_circle: "user_circle",
-            down: "down",
-            bookmark: "bookmark_solid",
-            plus: "plus",
-            print: "print",
-          },
-          "user_circle",
-          { display: "select" },
-          "Icon",
-        )
+            "pre-icon",
+            {
+              user_circle: "user_circle",
+              down: "down",
+              bookmark: "bookmark_solid",
+              plus: "plus",
+              print: "print",
+            },
+            "user_circle",
+            { display: "select" },
+            "Icon",
+          )
         }
         // button={text("button label", "Button", "Button")}
-        button={
-          boolean("button", false, "Input Block") &&
-          object("button", button, "Button")
-        }
+        button={boolean("button", false, "Input Block") && object("button", button, "Button")}
         // options={titles}
-        options={
-          boolean("options", false, "Input Block") &&
-          object("options", titles, "Options")
-        }
+        options={boolean("options", false, "Input Block") && object("options", titles, "Options")}
         selectOptions={titles[0].value}
       />
     );

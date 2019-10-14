@@ -85,15 +85,9 @@ function InputBlock({
   let inputContainer = inputElements;
   let gridColumns;
   if (prefix) {
-    gridColumns = "minmax(0, 1fr) minmax(auto, 3fr)";
-    if (icon) {
-      gridColumns = "auto minmax(auto, 3fr)";
-    }
+    gridColumns = `${icon ? "auto" : "minmax(0, 1fr)"} minmax(auto, 3fr)`;
   } else {
-    gridColumns = "minmax(auto, 3fr) minmax(0, 1fr)";
-    if (icon) {
-      gridColumns = "minmax(auto, 3fr) auto";
-    }
+    gridColumns = `minmax(auto, 3fr) ${icon ? "auto" : "minmax(0, 1fr)"}`;
   }
   if (inputElements.length > 1) {
     const numInputs = Math.min(inputElements.length, 3);
@@ -149,17 +143,15 @@ function InputBlock({
       </Grid>
     );
   } else if (button) {
-    const buttonElement = button.map((buttonProps) => {
-      return (
-        <Button
-          label={buttonProps.label}
-          type={buttonProps.type}
-          onClick={buttonProps.onClick}
-          color={buttonProps.color || buttonColor}
-          disabled={buttonProps.disabled}
-        />
-      );
-    });
+    const buttonElement = (
+      <Button
+        label={button.label}
+        type={button.type}
+        onClick={button.onClick}
+        color={buttonColor || button.color}
+        disabled={isDisabled || button.disabled}
+      />
+    );
     inputContainer = (
       <Grid columns={gridColumns} gap="tiny">
         {prefix ? buttonElement : null}
@@ -198,7 +190,13 @@ function InputBlock({
 }
 
 InputBlock.propTypes = {
-  button: PropTypes.string,
+  button: PropTypes.shape({
+    color: PropTypes.string,
+    disabled: PropTypes.bool,
+    label: PropTypes.string,
+    onClick: PropTypes.func,
+    type: PropTypes.string,
+  }),
   className: PropTypes.string,
   disabled: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
@@ -208,11 +206,22 @@ InputBlock.propTypes = {
   isRequired: PropTypes.bool,
   label: PropTypes.string,
   onChange: PropTypes.func,
-  options: PropTypes.string,
+  options: PropTypes.arrayOf(PropTypes.shape({
+    label: PropTypes.string,
+    value: PropTypes.any,
+  })),
   prefix: PropTypes.bool,
-  selectOptions: PropTypes.string,
+  selectOptions: PropTypes.arrayOf(PropTypes.any),
   text: PropTypes.string,
-  textInputs: PropTypes.node.isRequired,
+  textInputs: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string,
+    placeholder: PropTypes.string,
+    type: PropTypes.string,
+    pattern: PropTypes.string,
+    title: PropTypes.string,
+    value: PropTypes.string,
+    readonly: PropTypes.bool,
+  })).isRequired,
 };
 InputBlock.defaultProps = {
   button: null,
