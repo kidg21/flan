@@ -148,10 +148,7 @@ const TextLabel = styled.label`
     return props.theme.text[props.color] || "inherit";
   }};
   width: max-content;
-  color: ${props => {
-    return props.theme.text.primary;
-  }};
-  font-weight: 600;
+  font-weight: 700;
   user-select: none;
   &:after {
     display: ${props => (props.isRequired ? "" : "none")};
