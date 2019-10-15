@@ -11,6 +11,7 @@ const Container = styled.div`
   // position: relative;
   line-height: 1.5;
   display: inline-block;
+  z-index: 1;
 `;
 
 const EditMenu = styled.ul`
@@ -29,6 +30,10 @@ const EditMenu = styled.ul`
   width: auto;
   min-width: 10em;
   position: absolute;
+`;
+
+const NestedWrapper = styled.div`
+  display: flex;
 `;
 
 const Item = styled.li`
@@ -70,7 +75,7 @@ function Menu({
   const [activeItem, setActiveItem] = useState("");
 
   function handleMouseEnter(e) {
-    setActiveItem(e.target.id);
+    setActiveItem(e.currentTarget.id);
   }
 
   function handleMouseLeave() {
@@ -111,6 +116,11 @@ function Menu({
       badgeLeft = "0";
       setTransform = "translate(-45%, -17%)";
       break;
+    case "left":
+      badgeBottom = "0";
+      badgeLeft = "0";
+      setTransform = "translate(-100%, 85%)";
+      break;
     default:
       break;
   }
@@ -141,9 +151,9 @@ function Menu({
                           visible
                           position={position}
                           level={level + 1}
-                          icon={(<React.Fragment><Title text={item.name} weight="normal" /><Icon icon="down" /></React.Fragment>)}
+                          icon={(<NestedWrapper><Title text={item.name} weight="normal" /><Icon icon="down" /></NestedWrapper>)}
                         />) : (
-                          <React.Fragment><Title text={item.name} weight="normal" /><Icon icon="up" /></React.Fragment>
+                          <NestedWrapper><Title text={item.name} weight="normal" /><Icon icon="up" /></NestedWrapper>
                         )
                       }
                     </Item>
