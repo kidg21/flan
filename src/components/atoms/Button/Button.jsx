@@ -130,7 +130,7 @@ function Button({
       fontColor = buttonColor;
       break;
     case "grey":
-      buttonColor = "grey5";
+      buttonColor = "grey3";
       fontColor = buttonColor;
       break;
     case "alert":

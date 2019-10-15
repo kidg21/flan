@@ -82,12 +82,22 @@ export const DMPTheme = {
     grey5: "rgb(229, 229, 234)",
     grey6: "rgb(242, 242, 247)",
   },
-  accents: {
-    white: "#ffffff",
-    black: "#000000",
-    green: "green",
-    waterwayBlue: "#44A3D8",
-    burntOrange: "#B84438",
+  shadows: {
+    cardShadow:
+      "drop-shadow(0 0 1px hsl(34, 5%, 72%)) drop-shadow(0.25rem 0.25rem 0.25rem hsla(34, 5%, 58%, 0.333333));",
+    dropShadow:
+      "hsl(34, 5%, 36%) 0rem 0rem 1px, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem;",
+    panelSectionShadow:
+      "hsl(34, 5%, 88%)  0rem 0rem 1px, hsla(34, 5%, 92%, 0.333333) 0 0rem 0.5rem 0.25rem;",
+    lightBorderShadow:
+      "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem",
+    lightBorderInner: "hsl(34, 5%, 72%) -1px -1px 0 0 inset, hsl(34, 5%, 72%) 1px 1px 0 0 inset",
+    border20: "hsl(34, 5%, 95%) 0px 0px 0px 1px",
+    border40: "hsl(34, 5%, 88%) 0px 0px 0px 1px",
+    checkedShadow:
+      "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
+    radioShadow:
+      "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsl(34, 5%, 95%) -1px 1px 0 0 inset, hsl(34, 5%, 95%) 1px -1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
   },
 };
 
@@ -129,21 +139,31 @@ export const darkTheme = {
     white: "#000000",
     black: "#ffffff",
     disabled: "rgb(99, 99, 102)",
-    border: "#2935aa",
+    border: "rgb(99, 99, 102)",
     inverse: "#000000",
-    grey: "rgb(28, 28, 30)",
-    grey2: "rgb(44, 44, 46)",
-    grey3: "rgb(58, 58, 60)",
-    grey4: "rgb(72, 72, 74)",
-    grey5: "rgb(99, 99, 102)",
-    grey6: "rgb(142, 142, 147)",
+    grey: "rgb(142, 142, 147)",
+    grey2: "rgb(99, 99, 102)",
+    grey3: "rgb(72, 72, 74)",
+    grey4: "rgb(58, 58, 60)",
+    grey5: "rgb(44, 44, 46)",
+    grey6: "rgb(28, 28, 30)",
   },
-  accents: {
-    white: "#ffffff",
-    black: "#000000",
-    green: "green",
-    waterwayBlue: "#44A3D8",
-    burntOrange: "#B84438",
+  shadows: {
+    cardShadow:
+      "drop-shadow(0 0 1px rgb(72, 72, 74)) drop-shadow(0.25rem 0.25rem 0.25rem hsla(240, 1%, 29%, 0.333333));",
+    dropShadow:
+      "rgb(142, 142, 147) 0rem 0rem 1px, hsla(240, 2%, 57%, 0.333333) 0.25rem 0.25rem 0.5rem;",
+    panelSectionShadow:
+      "rgb(44, 44, 46)  0rem 0rem 1px, hsla(240, 2%, 18%, 0.333333) 0 0rem 0.5rem 0.25rem;",
+    lightBorderShadow:
+      "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem",
+    lightBorderInner: "hsl(34, 5%, 72%) -1px -1px 0 0 inset, hsl(34, 5%, 72%) 1px 1px 0 0 inset",
+    border20: "hsl(34, 5%, 95%) 0px 0px 0px 1px",
+    border40: "hsl(34, 5%, 88%) 0px 0px 0px 1px",
+    checkedShadow:
+      "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
+    radioShadow:
+      "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsl(34, 5%, 95%) -1px 1px 0 0 inset, hsl(34, 5%, 95%) 1px -1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
   },
 };
 
@@ -183,22 +203,22 @@ export const fontSize = {
 };
 
 // Sizes for typography scale
-export const shadows = {
-  cardShadow:
-    "drop-shadow(0 0 1px hsl(34, 5%, 72%)) drop-shadow(0.25rem 0.25rem 0.25rem hsla(34, 5%, 58%, 0.333333));",
-  dropShadow: "hsl(34, 5%, 36%) 0rem 0rem 1px, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem;",
-  panelSectionShadow:
-    "hsl(34, 5%, 88%)  0rem 0rem 1px, hsla(34, 5%, 92%, 0.333333) 0 0rem 0.5rem 0.25rem;",
-  lightBorderShadow:
-    "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem",
-  lightBorderInner: "hsl(34, 5%, 72%) -1px -1px 0 0 inset, hsl(34, 5%, 72%) 1px 1px 0 0 inset",
-  border20: "hsl(34, 5%, 95%) 0px 0px 0px 1px",
-  border40: "hsl(34, 5%, 88%) 0px 0px 0px 1px",
-  checkedShadow:
-    "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
-  radioShadow:
-    "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsl(34, 5%, 95%) -1px 1px 0 0 inset, hsl(34, 5%, 95%) 1px -1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
-};
+// export const shadows = {
+//   cardShadow:
+//     "drop-shadow(0 0 1px hsl(34, 5%, 72%)) drop-shadow(0.25rem 0.25rem 0.25rem hsla(34, 5%, 58%, 0.333333));",
+//   dropShadow: "hsl(34, 5%, 36%) 0rem 0rem 1px, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem;",
+//   panelSectionShadow:
+//     "hsl(34, 5%, 88%)  0rem 0rem 1px, hsla(34, 5%, 92%, 0.333333) 0 0rem 0.5rem 0.25rem;",
+//   lightBorderShadow:
+//     "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem",
+//   lightBorderInner: "hsl(34, 5%, 72%) -1px -1px 0 0 inset, hsl(34, 5%, 72%) 1px 1px 0 0 inset",
+//   border20: "hsl(34, 5%, 95%) 0px 0px 0px 1px",
+//   border40: "hsl(34, 5%, 88%) 0px 0px 0px 1px",
+//   checkedShadow:
+//     "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
+//   radioShadow:
+//     "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsl(34, 5%, 95%) -1px 1px 0 0 inset, hsl(34, 5%, 95%) 1px -1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
+// };
 
 // Media Queries
 const viewport = {

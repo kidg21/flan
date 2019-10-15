@@ -18,7 +18,7 @@ const CardPiece = styled.div`
     return props.theme.text[props.textColor] || props.theme.text.primary;
   }};
   &:hover {
-    box-shadow: ${props => (props.hover ? shadows.dropShadow : "")};
+    box-shadow: ${props => (props.hover ? props.theme.shadows.dropShadow : "")};
     cursor: ${props => (props.hover ? "pointer" : "")};
   }
   /* Prototype Content - displays when a Card is empty */
@@ -36,7 +36,9 @@ const CardPiece = styled.div`
 
 const CardWrapper = styled(CardPiece)`
   position: relative;
-  filter: ${shadows.cardShadow};
+  filter: ${props => {
+    return props.theme.shadows.cardShadow;
+  }};
   /* Square off rounded edges of any direct children of Cards */
   /* Prototype Content - displays when a Card is empty */
   &:empty {

@@ -103,6 +103,9 @@ Form.defaultProps = {
 const Label = styled.label`
   grid-column: 1 / -1;
   width: max-content;
+  color: ${props => {
+    return props.theme.text.primary;
+  }};
   font-weight: 600;
   user-select: none;
   &:after {
@@ -140,9 +143,20 @@ const Help = styled(Label)`
 function HelpText({ helpText, children }) {
   const content = children || helpText;
   if (typeof content === "string") {
-    return (<Help>{content.split("\n").map((text) => { return <>{text}<br/></>; })}</Help>);
+    return (
+      <Help>
+        {content.split("\n").map(text => {
+          return (
+            <>
+              {text}
+              <br />
+            </>
+          );
+        })}
+      </Help>
+    );
   } else {
-    return (<Help>{content}</Help>);
+    return <Help>{content}</Help>;
   }
 }
 HelpText.propTypes = {
@@ -167,9 +181,20 @@ const Error = styled(Label)`
 function ErrorText({ error, children }) {
   const content = children || error;
   if (typeof content === "string") {
-    return (<Error>{content.split("\n").map((text) => { return <>{text}<br/></>; })}</Error>);
+    return (
+      <Error>
+        {content.split("\n").map(text => {
+          return (
+            <>
+              {text}
+              <br />
+            </>
+          );
+        })}
+      </Error>
+    );
   } else {
-    return (<Error>{content}</Error>);
+    return <Error>{content}</Error>;
   }
 }
 ErrorText.propTypes = {
