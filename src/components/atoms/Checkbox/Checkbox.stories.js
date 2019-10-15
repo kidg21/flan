@@ -118,7 +118,7 @@ storiesOf("Blocks|Checkbox Group", module)
           id="group1"
           label="Checkbox Group Label"
           data={shortLabels}
-          helpText="This help text has been passed through a prop!"
+          helpText="Hang in there, buddy, I'm here to help!"
         />
       );
     }),

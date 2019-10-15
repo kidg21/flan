@@ -23,6 +23,7 @@ export { default as Banner } from "./blocks/Banner";
 export { default as Bar } from "./blocks/Bar";
 export { default as List, ListItem } from "./blocks/List";
 export { default as IconBlock } from "./blocks/IconBlock";
+export { default as InputBlock } from "./blocks/InputBlock";
 export { default as MapLegend } from "./blocks/MapLegend";
 export { default as MediaBlock } from "./blocks/MediaBlock";
 export { default as Menu } from "./blocks/Menu";
@@ -50,6 +51,7 @@ export { default as Card, CardList } from "./layout/Card";
 export {
   default as Form,
   Section,
+  Label,
   InputLabel,
   HelpText,
   ErrorText,

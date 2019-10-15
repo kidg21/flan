@@ -1,27 +1,9 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable complexity */
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
-
-const BarLayout = styled.div`
-  display: flex;
-  cursor: ${(props) => {
-    return props.onClick ? "pointer" : "";
-  }};
-  flex-direction: row;
-  align-items: ${(props) => {
-    return props.alignContent || "";
-  }};
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  padding: ${(props) => {
-    return props.barPadding || "0.5em 1em";
-  }};
-  padding-top: ${(props) => {
-    return props.topPadding || "";
-  }};
-`;
 
 const Slot = styled.div`
   display: flex;
@@ -57,6 +39,30 @@ const Slot = styled.div`
   }
 `;
 
+const BarLayout = styled.div`
+  display: flex;
+  cursor: ${(props) => {
+    return props.onClick ? "pointer" : "";
+  }};
+  flex-direction: row;
+  align-items: ${(props) => {
+    return props.alignContent || "";
+  }};
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: ${(props) => {
+    return props.barPadding || "0.5em 1em";
+  }};
+  padding-top: ${(props) => {
+    return props.topPadding || "";
+  }};
+  ${Slot} {
+    &:only-child {
+      padding: 0;
+    }
+  }
+`;
+
 function Bar({
   id,
   contentAlign,
@@ -76,17 +82,14 @@ function Bar({
   let topPadding;
   let barPadding;
   let textAlign;
-  let leftPadding;
-  let rightPadding;
-  if (center || right) {
-    leftPadding = "0 1em 0 0";
-  } else {
-    leftPadding = "0";
-  }
-  if (left || center) {
-    rightPadding = "0 0 0 1em";
-  } else {
-    rightPadding = "0";
+  const leftPadding = "0 0.5em 0 0";
+  let centerPadding;
+  const rightPadding = "0 0 0 0.5em";
+  if (left) {
+    if (!right) centerPadding = "0 0 0 0.5em";
+    else centerPadding = "0 0.5em 0 0.5em";
+  } else if (right) {
+    centerPadding = "0 0.5em 0 0";
   }
   switch (padding && padding.toLowerCase()) {
     case "none":
@@ -145,7 +148,7 @@ function Bar({
         </Slot>
       ) : null}
       {center ? (
-        <Slot alignItems={alignItems} textAlign={textAlign}>
+        <Slot alignItems={alignItems} textAlign={textAlign} setPadding={centerPadding}>
           {center}
         </Slot>
       ) : null}
