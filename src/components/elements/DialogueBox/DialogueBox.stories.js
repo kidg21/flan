@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import styled from "styled-components";
@@ -14,7 +15,15 @@ import Icon from "atoms/Icon";
 import { Section } from "layout/Form";
 import DMPlogo from "images/DMPlogo.jpg";
 import Container from "atoms/Container";
-import Command from "atoms/Command";
+import Switch from "atoms/Switch";
+import Divider from "atoms/Divider";
+
+
+const permissions = [
+  { value: "Read", label: "Read" },
+  { value: "Write", label: "Write" },
+  { value: ["Read", "Write"], label: "Read / Write" },
+];
 
 const image = {
   src: DMPlogo,
@@ -39,32 +48,32 @@ storiesOf("Elements|Dialogue Box", module)
     "Documentation",
     withInfo()(() => {
       return (<DialogueBox
-      title="Dialogue Box Title"
-      message="Dialogue Box Message"
-      action="two"
-      primaryLabel="Affirm"
-      secondaryLabel="Negative"
+        title="Dialogue Box Title"
+        message="Dialogue Box Message"
+        buttons={[{ label: "Affirm" }, { label: "Negative" }]}
       />);
     }),
   );
 
-  storiesOf("Elements|Dialogue Box/General", module)
+storiesOf("Elements|Dialogue Box/General", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  .add("Default", () => (
-    <DialogueBox
-      title="Hey are you sure your okay doing this?"
-      message="This is the body of your message. Tells you more about the action you are about to commit."
-      action="two"
-      primaryLabel="Create"
-      secondaryLabel="Cancel"
-    />
-  ))
-  .add("Login", () => (
-    <DialogueBox
-      header={<Bar left={<Logo src={image.src} alt={image.alt} />} />}
-      title="Welcome"
-      content={
+  .add("Default", () => {
+    return (
+      <DialogueBox
+        title="Hey are you sure your okay doing this?"
+        message="This is the body of your message. Tells you more about the action you are about to commit."
+        buttons={[{ label: "Create" }, { label: "Cancel" }]}
+      />
+    );
+  })
+  .add("Login", () => {
+    return (
+      <DialogueBox
+        header={<Bar left={<Logo src={image.src} alt={image.alt} />} />}
+        title="Welcome"
+        buttons={[{ label: "Login" }]}
+      >
         <Section>
           <TextInput label="Username" placeholder="Username" />
           <TextInput label="Password" placeholder="Password" />
@@ -74,15 +83,15 @@ storiesOf("Elements|Dialogue Box", module)
             }
           />
         </Section>
-      }
-      action="one"
-      primaryLabel="Login"
-    />
-  ))
-  .add("Save As", () => (
-    <DialogueBox
-      title="Save As"
-      content={
+      </DialogueBox>
+    );
+  })
+  .add("Save As", () => {
+    return (
+      <DialogueBox
+        title="Save As"
+        buttons={[{ label: "Save" }, { label: "Cancel" }]}
+      >
         <Section>
           <TextInput label="Name" placeholder="Type Name" />
           <SelectMenu
@@ -102,41 +111,39 @@ storiesOf("Elements|Dialogue Box", module)
             ]}
           />
         </Section>
-      }
-      action="two"
-      primaryLabel="Save"
-      secondaryLabel="Cancel"
-    />
-  ))
-  .add("Delete", () => (
-    <DialogueBox
-      title="Are you sure you want to delete this user?"
-      message="If you delete this user you will not be able to get back any information or work they have done. Their work will be lost forever."
-      action="two"
-      primaryLabel="Delete"
-      secondaryLabel="Cancel"
-      buttonColor="alert"
-    />
-  ))
-  .add("Success", () => (
-    <DialogueBox
-      title="View your report?"
-      message="Your report successfully downloaded. Do you want to check out the deets."
-      action="two"
-      primaryLabel="View"
-      secondaryLabel="Cancel"
-      buttonColor="success"
-    />
-  ));
+      </DialogueBox>
+    );
+  })
+  .add("Delete", () => {
+    return (
+      <DialogueBox
+        title="Are you sure you want to delete this user?"
+        message="If you delete this user you will not be able to get back any information or work they have done. Their work will be lost forever."
+        buttons={[{ label: "Delete" }, { label: "Cancel" }]}
+        buttonColor="alert"
+      />
+    );
+  })
+  .add("Success", () => {
+    return (
+      <DialogueBox
+        title="View your report?"
+        message="Your report successfully downloaded. Do you want to check out the deets."
+        buttons={[{ label: "View" }, { label: "Cancel" }]}
+        buttonColor="success"
+      />
+    );
+  });
 
-
-  storiesOf("Elements|Dialogue Box/User Roles", module)
+storiesOf("Elements|Dialogue Box/User Roles", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  .add("Edit User List", () => (
-    <DialogueBox
-      title="Edit User List for Role"
-      content={
+  .add("Edit User List", () => {
+    return (
+      <DialogueBox
+        title="Edit User List for Role"
+        buttons={[{ label: "Edit" }, { label: "Cancel" }]}
+      >
         <Section>
           <Title text="Role: Developer" type="info" />
           <SelectMenu
@@ -153,41 +160,57 @@ storiesOf("Elements|Dialogue Box", module)
             <Container height="12rem">
               <List>
                 <ListItem
-                  label="User 3"
-                  action={<Icon icon={["far", "cog"]} />}
-                />
+                  label="BDE811.Public"
+                >
+                   <SelectMenu
+              width="40%"
+              options={permissions}
+            />
+            </ListItem>
+
                 <ListItem
-                  label="User 2"
-                  action={<Icon icon={["far", "cog"]} />}
-                />
+                  label="BDE811.Marketing"
+                  >
+                  <SelectMenu
+             width="40%"
+             options={permissions}
+           />
+           </ListItem>
                 <ListItem
-                  label="User 1"
-                  action={<Icon icon={["far", "cog"]} />}
-                />
+                  label="BDE811.Acquisitions"
+                  >
+                  <SelectMenu
+             width="40%"
+             options={permissions}
+           />
+           </ListItem>
                 <ListItem
-                  label="User 3"
-                  action={<Icon icon={["far", "cog"]} />}
-                />
+                  label="BDE811.Developer"
+                  >
+                  <SelectMenu
+             width="40%"
+             options={permissions}
+           />
+           </ListItem>
               </List>
             </Container>
           </Piece>
         </Section>
-      }
-      action="two"
-      primaryLabel="Edit"
-      secondaryLabel="Cancel"
-    />
-  ))
-  .add("Edit Files", () => (
-    <DialogueBox
-      title="Edit Files Role"
-      content={
+      </DialogueBox>
+    );
+  })
+  .add("Edit Files", () => {
+    return (
+      <DialogueBox
+        title="Edit Files Role"
+        buttons={[{ label: "Edit" }, { label: "Cancel" }]}
+      >
         <Section>
-          <Title text="Role: Developer" type="info" />
+          <TextInput label="Role" placeholder="Builder/Developer" />
           <SelectMenu
             multiSelect="true"
-            label="+ Files"
-            placeholder="Add Files for Role to access"
+            label="+ Add Folder"
+            placeholder="Add Folder for Role to access"
             options={[
               { value: "1", label: "Folder 1" },
               { value: "2", label: "Folder 2" },
@@ -195,24 +218,69 @@ storiesOf("Elements|Dialogue Box", module)
               { value: "4", label: "File 24" },
             ]}
           />
+          <Divider/>
           <Container>
             <List>
-              <ListItem label="File 3" action={<Icon icon="coffee" />} />
-              <ListItem label="file 2" action={<Icon icon="coffee" />} />
-              <ListItem label="file 1" action={<Icon icon="coffee" />} />
-            </List>
-          </Container>
+                <ListItem
+                  label="BDE811.Public"
+                >
+                   <SelectMenu
+              width="40%"
+              options={permissions}
+            />
+            </ListItem>
+
+                <ListItem
+                  label="BDE811.Marketing"
+                  >
+                  <SelectMenu
+             width="40%"
+             options={permissions}
+           />
+           </ListItem>
+                <ListItem
+                  label="BDE811.Acquisitions"
+                  >
+                  <SelectMenu
+             width="40%"
+             options={permissions}
+           />
+           </ListItem>
+                <ListItem
+                  label="BDE811.Developer"
+                  >
+                  <SelectMenu
+             width="40%"
+             options={permissions}
+           />
+           </ListItem>
+              </List>
+              </Container>
         </Section>
-      }
-      action="two"
-      primaryLabel="Add"
-      secondaryLabel="Cancel"
-    />
-  ))
-  .add("Add User", () => (
+        </DialogueBox>
+    );
+  })
+  .add("Add Role", () => {
+    return (
     <DialogueBox
-      title="+ Add a New User"
-      content={
+    title="+Add Role"
+    buttons={[{ label: "add" }, { label: "Cancel" }]}
+    >
+        <Section>
+          <TextInput
+            label="Role Name"
+            placeholder="Type the name for your new role."
+          />
+        </Section>
+      </DialogueBox>
+    );
+  })
+  .add("Add User", () => {
+    return (
+      <DialogueBox
+        title="+ Add a New User"
+        buttons={[{ label: "Add" }, { label: "Cancel" }]}
+      >
         <Section>
           <TextInput
             label="User Name"
@@ -234,16 +302,15 @@ storiesOf("Elements|Dialogue Box", module)
             ]}
           />
         </Section>
-      }
-      action="two"
-      primaryLabel="Add"
-      secondaryLabel="Cancel"
-    />
-  ))
-  .add("Edit User", () => (
-    <DialogueBox
-      title="Edit User"
-      content={
+      </DialogueBox>
+    );
+  })
+  .add("Edit User", () => {
+    return (
+      <DialogueBox
+        title="Edit User"
+        buttons={[{ label: "Save" }, { label: "Cancel" }]}
+      >
         <Section>
           <TextInput label="User Name" placeholder="Elizabeth Gallagher" />
           <TextInput
@@ -261,11 +328,9 @@ storiesOf("Elements|Dialogue Box", module)
               { value: "Admin", label: "Admin" },
             ]}
           />
+          <Switch label="Enabled"/>
           <Title text="Delete User?" size="tiny" weight="light" />
         </Section>
-      }
-      action="two"
-      primaryLabel="Save"
-      secondaryLabel="Cancel"
-    />
-  ));
+      </DialogueBox>
+    );
+  });

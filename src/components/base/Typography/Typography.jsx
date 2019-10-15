@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable complexity */
 // Import dependencies
 import React from "react";
@@ -11,36 +12,13 @@ const LinkedText = styled.a`
   }};
 `;
 
-const StyledNumber = styled.span`
-  font-family: ${fonts.numbers};
-  font-size: ${(props) => {
-    return props.bold ? "1.25em" : "";
-  }};
-  font-weight: ${(props) => {
-    return props.bold ? "900" : "";
-  }};
-  letter-spacing: ${(props) => {
-    return props.bold ? "1px" : "";
-  }};
-`;
-
-const StyledCode = styled.code`
-  background-color: ${(props) => {
-    return props.theme.palette.grey5 }};
-  border: 1px solid ${(props) => {
-    return props.theme.palette.grey2 }};
-  border-radius: 0.25rem;
-  padding: 0.5rem 0.5rem 0.25rem;
-  user-select: all;
-`;
-
 const StyledText = styled.h4`
   grid-column: 1 / -1;
   font-family: ${(props) => {
     return props.fontFamily || "inherit";
   }};
   color: ${(props) => {
-    return props.theme.text[props.textColor] || props.theme.text.primary ;
+    return props.theme.text[props.textColor] || props.theme.text.primary;
   }};
   font-weight: ${(props) => {
     return props.textWeight || "600";
@@ -60,8 +38,7 @@ const StyledText = styled.h4`
   user-select: ${(props) => {
     return props.select || "";
   }};
-  ${LinkedText},
-  ${StyledNumber} {
+  ${LinkedText} {
     display: inline-block;
     margin: -.5em 0;
     /** TODO: Add a 'separator' prop */
@@ -72,6 +49,24 @@ const StyledText = styled.h4`
   }};
     } */
   }
+`;
+
+const StyledNumber = styled(StyledText)`
+  font-family: ${fonts.numbers};
+  color: inherit;
+  letter-spacing: 1px;
+`;
+
+const StyledCode = styled.code`
+  background-color: ${(props) => {
+    return props.theme.palette.grey5; 
+}};
+  border: 1px solid ${(props) => {
+    return props.theme.palette.grey2; 
+}};
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.5rem 0.25rem;
+  user-select: all;
 `;
 
 function Text({
@@ -88,7 +83,6 @@ function Text({
   select,
   children,
   className,
-  bold,
 }) {
   let as;
   let fontFamily;
@@ -202,7 +196,7 @@ function Text({
       {text || children}
       {count ? (
         <LinkedText>
-          <StyledNumber bold={bold}>{count}</StyledNumber>
+          <StyledNumber as="span">{count}</StyledNumber>
         </LinkedText>
       ) : null}
     </StyledText>

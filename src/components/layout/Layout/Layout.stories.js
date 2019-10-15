@@ -173,21 +173,18 @@ storiesOf("Layout |App Layout/", module)
                 tabLabel="Property"
                 onClick={toggleLeft}
                 isSelected={activeLeft}
-                noBorder
               />
             <Tab
               icon="layers"
                 tabLabel="Layers"
                 onClick={toggleLeft}
                 isSelected={activeLeft}
-                noBorder
               />
               <Tab
               icon="filter"
                 tabLabel="Filters"
                 onClick={toggleRight}
                 isSelected={activeRight}
-                noBorder
 
               />
 
@@ -196,14 +193,12 @@ storiesOf("Layout |App Layout/", module)
                 tabLabel="Draw"
                 onClick={toggleLeft}
                 isSelected={activeLeft}
-                noBorder
               />
             <Tab
               icon="list"
                 tabLabel="List"
                 onClick={toggleBottom}
                 isSelected={activeBottom}
-                noBorder
               />
             </Tabs>
           </Layout>

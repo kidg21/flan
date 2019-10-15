@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -13,6 +14,7 @@ const TextInputContainer = styled(Grid)`
 `;
 
 const Input = styled.input`
+  line-height: normal;
   border: 1px solid;
   border-color: ${(props) => {
     return props.theme.palette[props.inputBorderColor] || props.theme.palette.grey5;
@@ -83,6 +85,9 @@ function TextInput({
   if (type === "textarea") {
     as = "textarea";
     inputResize = "vertical";
+  } else if (type === "search") {
+    inputBorderColor = "primaryLight";
+    inputBorderColorHover = "primary";
   }
   // construct datalist element for autocompletes if appropriate props passed in
   // the autocompleteListId is used to ensure each textinput only draws from its own datalist element
@@ -101,6 +106,7 @@ function TextInput({
   }
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
+    inputTextColor = "disabled";
     inputFillColor = "disabled";
     inputBorderColor = "grey4";
   }
@@ -124,7 +130,7 @@ function TextInput({
       <Input
         as={as}
         disabled={isDisabled} // input attribute
-        id={id} // input attribute
+        id={`i_${id}`} // input attribute
         inputBorderColor={inputBorderColor}
         inputBorderColorHover={inputBorderColorHover}
         inputCaretColor={inputCaretColor}
@@ -132,7 +138,7 @@ function TextInput({
         inputResize={inputResize}
         inputSelectColor={inputSelectColor}
         list={autoCompleteDataListId}
-        name={id} // input attribute
+        name={`i_${id}`} // input attribute
         onChange={onChange}
         pattern={pattern} // input attribute
         placeholder={placeholder} // input attribute
@@ -173,7 +179,9 @@ TextInput.propTypes = {
    */
   title: PropTypes.string,
   type: PropTypes.oneOf([
+    "color",
     "date",
+    "datetime-local",
     "email",
     "hidden",
     "month",
@@ -185,6 +193,7 @@ TextInput.propTypes = {
     "textarea",
     "time",
     "url",
+    "week",
   ]),
   /** The value attribute specifies the initial value for an input field */
   value: PropTypes.string,

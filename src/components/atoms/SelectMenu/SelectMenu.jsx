@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { fonts, colors, shadows } from "Variables";
 import Grid from "layout/Grid";
 import { InputLabel, HelpText, ErrorText } from "layout/Form";
-import Select from "react-select";
+import Select, { Creatable } from "react-select";
 import { Skeleton } from "helpers";
 import { DisabledContext } from "States";
 
@@ -179,6 +179,7 @@ function SelectMenu({
   isLoading,
   isRtl,
   onChangeState,
+  onCreateOption,
 }) {
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let selectedOpts = [];
@@ -228,6 +229,30 @@ function SelectMenu({
     }
   }
 
+  function handleCreateOption(optionName) {
+    onCreateOption(optionName, (newState) => {
+      setState(Object.assign({}, state, newState));
+    });
+  }
+
+  const selectProps = {
+    id: id,
+    name: name,
+    placeholder: placeholder,
+    styles: selectStyles,
+    options: options,
+    value: state.selected,
+    isSearchable: isSearchable,
+    isClearable: isClearable,
+    isMulti: multiSelect,
+    isDisabled: isDisabled,
+    isLoading: isLoading,
+    isRtl: isRtl,
+    onChange: changeSelected,
+    onCreateOption: onCreateOption ? handleCreateOption : null,
+  };
+  const select = onCreateOption ? <Creatable {...selectProps} /> : <Select {...selectProps} />;
+
   return (
     <SelectMenuContainer
       isRequired={isRequired}
@@ -237,21 +262,7 @@ function SelectMenu({
       gap="tiny"
     >
       {label ? <InputLabel label={label} isRequired={isRequired} /> : null}
-      <Select
-        id={id} // input attribute
-        name={name} // input attribute
-        placeholder={placeholder} // input attribute
-        styles={selectStyles}
-        options={options}
-        value={state.selected}
-        isSearchable={isSearchable}
-        isClearable={isClearable}
-        isMulti={multiSelect}
-        isDisabled={isDisabled}
-        isLoading={isLoading}
-        isRtl={isRtl}
-        onChange={changeSelected}
-      />
+      {select}
       {/* Help Text */}
       {helpText ? <HelpText>{helpText}</HelpText> : null}
       {/* Error Message (required) */}
@@ -283,6 +294,7 @@ SelectMenu.propTypes = {
   isRtl: PropTypes.bool,
   helpText: PropTypes.string,
   onChangeState: PropTypes.func,
+  onCreateOption: PropTypes.func,
 };
 
 SelectMenu.defaultProps = {
@@ -301,6 +313,7 @@ SelectMenu.defaultProps = {
   isRtl: false,
   helpText: null,
   onChangeState: null,
+  onCreateOption: null,
 };
 
 export default SelectMenu;

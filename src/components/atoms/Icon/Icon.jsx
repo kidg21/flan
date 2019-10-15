@@ -30,7 +30,7 @@ const LinkedIcon = styled.a`
 
 const StyledIcon = styled(FontAwesomeIcon)`
   color: ${(props) => {
-    return props.theme.palette[props.color] || "inherit";
+    return props.theme.text[props.color] || "inherit";
   }};
   border: ${(props) => {
     return props.border ? "2px solid" : "";
@@ -123,7 +123,8 @@ const iconHash = {
   options: ["far", "ellipsis-v"],
   owner: "user-tag",
   photos: ["far", "images"],
-  plus: ["far", "plus-circle"],
+  plus: ["far", "plus"],
+  plus_circle: ["far", "plus-circle"],
   plus_square: ["far", "plus-square"],
   preferences: ["far", "sliders-h"],
   print: ["far", "print"],

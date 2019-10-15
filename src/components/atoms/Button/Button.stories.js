@@ -3,7 +3,6 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
-import { withInfo } from "@storybook/addon-info";
 import { withKnobs, text, boolean, select, optionsKnob as options } from "@storybook/addon-knobs";
 import Button from "atoms/Button";
 import ButtonNotes from "./Button.md";
@@ -21,12 +20,9 @@ storiesOf("Atoms|Button", module)
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
-  .add(
-    "Documentation",
-    (() => {
-      return <Button label="Standard Button" />;
-    }),
-  )
+  .add("Documentation", () => {
+    return <Button label="Standard Button" />;
+  })
   .add("Skeleton", () => {
     return <Button />;
   })
@@ -61,16 +57,6 @@ storiesOf("Atoms|Button", module)
           { display: "radio" },
           "Button",
         )}
-        type={options(
-          "type",
-          {
-            "outline ( default )": "default",
-            "solid": "solid",
-          },
-          "default",
-          { display: "radio" },
-          "Button",
-        )}
         size={options(
           "size",
           {
@@ -83,24 +69,26 @@ storiesOf("Atoms|Button", module)
           "Button",
         )}
         fullWidth={boolean("full width", false, "Button")}
+        fill={boolean("fill", false, "Button")}
+        noBorder={boolean("noBorder", false, "Button")}
         disabled={boolean("disabled", false, "Button")}
       />
     );
   })
   .add("The Button Family", () => {
     return (
-        <Grid>
-          <Button label="Standard Primary" />
-          <Button label="Solid Primary" type="solid" />
-          <Button label="Standard Secondary" color="secondary" />
-          <Button label="Solid Secondary" type="solid" color="secondary" />
-          <Button label="Solid Info Button" type="solid" />
-          <Button icon="filter" label="Fitlers" color="primary" />
+      <Grid>
+        <Button label="Standard Primary" />
+        <Button label="Solid Primary" type="solid" />
+        <Button label="Standard Secondary" color="secondary" />
+        <Button label="Solid Secondary" type="solid" color="secondary" />
+        <Button label="Solid Info Button" type="solid" />
+        <Button icon="filter" label="Fitlers" color="primary" />
 
-          <Button label="Small Button" size="small" />
-          <Button label="Large Button" size="large" />
-          <Button label="Disabled Button" disabled />
-          <Button label="Icon Button" icon="user"  type="solid" />
-        </Grid>
+        <Button label="Small Button" size="small" />
+        <Button label="Large Button" size="large" />
+        <Button label="Disabled Button" disabled />
+        <Button label="Icon Button" icon="user" type="solid" />
+      </Grid>
     );
   });

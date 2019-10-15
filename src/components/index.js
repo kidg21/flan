@@ -30,7 +30,7 @@ export { default as MediaBlock } from "./blocks/MediaBlock";
 export { default as Menu } from "./blocks/Menu";
 export { default as RangeSlider } from "./blocks/RangeSlider";
 export { default as Search } from "./blocks/Search";
-export { default as Table } from "./blocks/Table";
+// export { default as Table } from "./blocks/Table";
 export { default as Tabs, Tab } from "./blocks/Tabs";
 
 // Publicly exported files from 'elements'
@@ -44,12 +44,13 @@ export { default as NavigationPanelHeader } from "./elements/PanelHeaders/Naviga
 export { default as Notification } from "./elements/Notification";
 export { default as MapSearch } from "./elements/MapSearch";
 export { default as PropertyListCard } from "./elements/ListCards/PropertyListCard";
+export { UserRoles, RolePermissions } from "./elements/UserRoles";
+export { default as Dialog, Alert, Confirm, Prompt } from "./elements/DialogueBox";
 
 // Publicly exported files from 'layout'
 export { default as Card, CardList } from "./layout/Card";
 export {
   default as Form,
-  Header,
   Section,
   Label,
   InputLabel,
@@ -62,4 +63,5 @@ export { default as Modal } from "./layout/Modal";
 export { default as Page } from "./layout/Page";
 export { default as Panel, PanelSection } from "./layout/Panel";
 
-export { screen } from "./base/Variables/Variables.jsx";
+
+export { colors, fonts, shadows, screen, DMPTheme, darkTheme } from "./base/Variables/Variables.jsx";

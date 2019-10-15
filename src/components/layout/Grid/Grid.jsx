@@ -16,6 +16,7 @@ const GridWrapper = styled.section`
   align-items: ${(props) => {
     return props.alignItems || "flex-start";
   }};
+  width: 100%;
 `;
 
 function Grid({

@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import { css } from "styled-components";
 
 // Codes for color palette
@@ -47,7 +48,7 @@ export const DMPTheme = {
     inverse: "#ffffff",
     link: "#5FD1E2",
     alert: "hsl(1, 55%, 50%)",
-    disabled: "#b1b2b3",
+    disabled: "hsl(34, 5%, 72%)",
     info: "hsl(204, 61%, 43%)",
     success: "rgb(36, 138, 61)",
     warning: "rgb(178, 80, 0)",
@@ -72,8 +73,7 @@ export const DMPTheme = {
     successDark: "#2d4e1f",
     white: "#ffffff",
     black: "#000000",
-    disabled: "#f1f1f1",
-    grey: "#99958F",
+    disabled: "hsl(34, 5%, 94%)",
     border: "#BBB8B4",
     inverse: "#ffffff",
     grey: "rgb(142, 142, 147)",
@@ -130,7 +130,6 @@ export const darkTheme = {
     white: "#ffffff",
     black: "#000000",
     disabled: "#E2E1DF",
-    grey: "#99958F",
     border: "#2935aa",
     inverse: "#000000",
     grey: "rgb(142, 142, 147)",
