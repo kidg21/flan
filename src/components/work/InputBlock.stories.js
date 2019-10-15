@@ -1,21 +1,81 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { storiesOf } from "@storybook/react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Padding } from "helpers/Display";
 import { withInfo } from "@storybook/addon-info";
-import { withKnobs, text, boolean, radios, select, number } from "@storybook/addon-knobs";
+import { withKnobs, text, boolean, object, optionsKnob as options } from "@storybook/addon-knobs";
 import Panel, { PanelSection } from "layout/Panel";
 import Form, { Section } from "layout/Form";
-import Icon from "atoms/Icon";
 import InputBlock from "blocks/InputBlock";
 import InputBlockNotes from "blocks/InputBlock/InputBlock.md";
 
-// Input ( Standard )
+const button = {
+  label: "upload",
+  type: "",
+  onClick: () => {},
+  color: "",
+  disabled: false,
+};
+const inputsOne = [
+  {
+    id: "ID 1",
+    name: "ID 100",
+    type: "text",
+    placeholder: "Placeholder 1",
+    pattern: "[A-Za-z]{3}",
+  },
+];
+const inputsTwo = [
+  {
+    id: "ID 1",
+    type: "text",
+    placeholder: "Placeholder 1",
+  },
+  {
+    id: "ID 2",
+    type: "text",
+    placeholder: "Placeholder 2",
+  },
+];
+const inputsThree = [
+  {
+    id: "ID 1",
+    type: "text",
+    placeholder: "Placeholder 1",
+  },
+  {
+    id: "ID 2",
+    type: "text",
+    placeholder: "Placeholder 2",
+  },
+  {
+    id: "ID 3",
+    type: "text",
+    placeholder: "Placeholder 3",
+  },
+];
+
+const titles = [
+  { value: "mr", label: "Mr." },
+  { value: "mrs", label: "Mrs." },
+  { value: "ms", label: "Ms." },
+  { value: "sir", label: "Sir" },
+  { value: "madam", label: "Madam" },
+  { value: "my lord", label: "Lord" },
+  { value: "bmoc", label: "BMOC" },
+];
+
+const domains = [
+  { value: "com", label: ".com" },
+  { value: "org", label: ".org" },
+  { value: "gov", label: ".gov" },
+];
+
 storiesOf("Work|Blocks/Input Block", module)
   .addParameters({
     info: {
-      text:
-        "Input Blocks allow users to enter text into a UI. They typically appear in forms and dialogs",
+      text: "Input Block info goes here...",
     },
     notes: {
       markdown: InputBlockNotes,
@@ -28,48 +88,69 @@ storiesOf("Work|Blocks/Input Block", module)
     withInfo()(() => {
       return (
         <InputBlock
-          type={radios(
-          "Type",
-          {
-            Text: "text",
-            Number: "number",
-          },
-          "text",
-        )}
-          label={text("Input Label", "Input Label")}
-          isRequired={boolean("Required", false)}
-          placeholder={text("Placeholder Text", "I am just keeping things warm")}
-          helpText={text("Help Text", "Have you been helped yet?")}
-          disabled={boolean("Disabled", false)}
-          error={boolean("Error", false)}
-          error={text("Error Text", "Stay with my, buddy...we can fix this!")}
-          prefix={text("Prefix", "")}
-          postfix={text("Postfix", "")}
-          buttonLabel={text("Button Label", "")}
-          twoInputs={boolean("2 Inputs", false)}
-          threeInputs={boolean("3 Inputs", false)}
+          id="input block"
+          label="Input Block ( Defaults to a standard Text Input )"
+          textInputs={[
+            {
+              id: "ID 1",
+              name: "ID 100",
+              type: "text",
+              placeholder: "Placeholder 1",
+              pattern: "[A-Za-z]{3}",
+            },
+          ]}
+          helpText="Play with Knobs to see what this baby can do!"
         />
       );
     }),
   )
-  // Text ( Standard )
-  .add("Input Block ( Standard )", () => {
+  .add("Knobs", () => {
     return (
       <InputBlock
-        name="Say My Name!"
-        value="Text Input"
-        label="Text ( Standard )"
-        helpText="This help text has been passed through a prop!"
-      />
-    );
-  })
-  // Number ( Number )
-  .add("Input Block ( Number )", () => {
-    return (
-      <InputBlock
-        type="number"
-        label="Number ( Standard )"
-        helpText="This help text has been passed through a prop!"
+        id="input block"
+        label={text("input label", "Input Block Label", "Input Block")}
+        isRequired={boolean("required", false, "Input Block")}
+        helpText={text("help text", "Have you been helped yet?", "Input Block")}
+        error={
+          boolean("error", false, "Input Block") &&
+          text("error text", "Error message...", "Input Block")
+        }
+        disabled={boolean("disabled", false, "Input Block")}
+        textInputs={object(
+          "text inputs",
+          [
+            {
+              id: "ID 1",
+              name: "ID 100",
+              type: "text",
+              placeholder: "Placeholder 1",
+              pattern: "[A-Za-z]{3}",
+            },
+          ],
+          "Inputs",
+        )}
+        text={text("text", "", "Labels")}
+        icon={
+          boolean("icon", false, "Input Block") &&
+          options(
+            "pre-icon",
+            {
+              user_circle: "user_circle",
+              down: "down",
+              bookmark: "bookmark_solid",
+              plus: "plus",
+              print: "print",
+            },
+            "user_circle",
+            { display: "select" },
+            "Icon",
+          )
+        }
+        // button={text("button label", "Button", "Button")}
+        button={boolean("button", false, "Input Block") && object("button", button, "Button")}
+        // options={titles}
+        options={boolean("options", false, "Input Block") && object("options", titles, "Options")}
+        selectOptions={titles[0].value}
       />
     );
   })
@@ -77,84 +158,98 @@ storiesOf("Work|Blocks/Input Block", module)
   .add("Input Block ( Required )", () => {
     return (
       <InputBlock
-        label="Input ( Required )"
+        label="Input Block ( Required )"
         isRequired
-        helpText="This help text has been passed through a prop!"
+        textInputs={inputsOne}
+        helpText="Hang in there, buddy, I'm here to help!"
       />
     );
   })
-  // Input Block ( Disabled )
-  .add("Input Block ( Disabled )", () => {
-    return (
-      <InputBlock
-        label="Input ( Disabled )"
-        disabled
-        helpText="This help text has been passed through a prop!"
-      />
-    );
-  })
-  // Input Block ( Error )
+  // // Input Block ( Error )
   .add("Input Block ( Error )", () => {
     return (
       <InputBlock
-        label="Input ( Error )"
-        helpText="This help text has been passed through a prop!"
-        error
-        error="This error text has been passed through a prop!"
+        label="Input Block ( Error )"
+        textInputs={inputsOne}
+        helpText="Hang in there, buddy, I'm here to help!"
+        error="Don't sweat it...we can fix this!"
       />
     );
   })
-  // Input Block ( Round )
-  .add("Input Block ( Round )", () => {
+  // // Input Block ( Disabled )
+  .add("Input Block ( Disabled )", () => {
     return (
       <InputBlock
-        label="Input ( Round )"
-        helpText="This help text has been passed through a prop!"
-        isRound
+        label="Input Block ( Disabled )"
+        disabled
+        textInputs={inputsOne}
+        helpText="Hang in there, buddy, I'm here to help!"
       />
     );
   })
-  // Input Block ( 2 Inputs )
+  // // Input Block ( 2 Inputs )
   .add("Input Block ( 2 Inputs )", () => {
     return (
       <InputBlock
-        label="Input ( 2 Inputs )"
-        twoInputs
-        helpText="This help text has been passed through a prop!"
+        label="Input Block ( 2 Inputs )"
+        textInputs={inputsTwo}
+        helpText="Hang in there, buddy, I'm here to help!"
       />
     );
   })
-  // Input Block ( 3 Inputs )
+  // // Input Block ( 3 Inputs )
   .add("Input Block ( 3 Inputs )", () => {
     return (
       <InputBlock
-        label="Input ( 3 Inputs )"
-        threeInputs
-        placeholder_2="Two!!"
-        placeholder_3="Three!!!"
-        helpText="This help text has been passed through a prop!"
+        label="Input Block ( 3 Inputs )"
+        textInputs={inputsThree}
+        helpText="Hang in there, buddy, I'm here to help!"
       />
     );
   })
-  // Input Block ( Prefix )
-  .add("Input Block ( Prefix Label )", () => {
+  // Input Block ( Pre-Label )
+  .add("Input Block ( Pre-Label )", () => {
     return (
       <InputBlock
-        label="Input ( Prefix )"
-        prefix="http://"
-        placeholder="This help text has been passed through a prop!"
-        helpText="This help text has been passed through a prop!"
+        prefix
+        label="Input Block ( Pre-Label )"
+        text="prefix"
+        textInputs={inputsOne}
+        helpText="Hang in there, buddy, I'm here to help!"
       />
     );
   })
-  // Input Block ( Prefix Icon )
-  .add("Input Block ( Prefix Icon )", () => {
+  // Input Block ( Post-Label )
+  .add("Input Block ( Post-Label )", () => {
     return (
       <InputBlock
-        label="Input ( Prefix Icon )"
-        prefix={<Icon icon="user" size="lg" fixedWidth />}
-        placeholder="This help text has been passed through a prop!"
-        helpText="This help text has been passed through a prop!"
+        label="Input Block ( Post-Label )"
+        textInputs={inputsOne}
+        text="postfix"
+        helpText="Hang in there, buddy, I'm here to help!"
+      />
+    );
+  })
+  // Input Block ( Pre-Icon )
+  .add("Input Block ( Pre-Icon )", () => {
+    return (
+      <InputBlock
+        prefix
+        label="Input Block ( Pre-Icon )"
+        icon="user"
+        textInputs={inputsOne}
+        helpText="Hang in there, buddy, I'm here to help!"
+      />
+    );
+  })
+  // Input Block ( Post-Icon )
+  .add("Input Block ( Post-Icon )", () => {
+    return (
+      <InputBlock
+        label="Input Block ( Post-Icon )"
+        icon="user"
+        textInputs={inputsOne}
+        helpText="Hang in there, buddy, I'm here to help!"
       />
     );
   })
@@ -162,23 +257,12 @@ storiesOf("Work|Blocks/Input Block", module)
   .add("Input Block ( Pre-Select )", () => {
     return (
       <InputBlock
-        label="Input ( Pre-Select )"
-        preSelect={[
-        { value: "sir", label: "Sir" },
-        { value: "madam", label: "Madam" },
-        { value: "my lord", label: "My Lord" },
-      ]}
-        helpText="This help text has been passed through a prop!"
-      />
-    );
-  })
-  // Input Block ( Postfix )
-  .add("Input Block ( Postfix Label )", () => {
-    return (
-      <InputBlock
-        label="Input ( Postfix )"
-        postfix=".com"
-        helpText="This help text has been passed through a prop!"
+        prefix
+        label="Input Block ( Pre-Select )"
+        options={titles}
+        selectOptions={titles[0].value}
+        textInputs={inputsOne}
+        helpText="Hang in there, buddy, I'm here to help!"
       />
     );
   })
@@ -186,13 +270,23 @@ storiesOf("Work|Blocks/Input Block", module)
   .add("Input Block ( Post-Select )", () => {
     return (
       <InputBlock
-        label="Input ( Post-Select )"
-        postSelect={[
-        { value: "com", label: ".com" },
-        { value: "org", label: ".org" },
-        { value: "gov", label: ".gov" },
-      ]}
-        helpText="This help text has been passed through a prop!"
+        label="Input Block ( Post-Select )"
+        textInputs={inputsOne}
+        options={domains}
+        selectOptions={domains[0].value}
+        helpText="Hang in there, buddy, I'm here to help!"
+      />
+    );
+  })
+  // Input Block ( Pre-Button )
+  .add("Input Block ( Pre-Button )", () => {
+    return (
+      <InputBlock
+        prefix
+        label="Input Block ( Pre-Button )"
+        textInputs={inputsOne}
+        button={button}
+        helpText="Hang in there, buddy, I'm here to help!"
       />
     );
   })
@@ -200,192 +294,107 @@ storiesOf("Work|Blocks/Input Block", module)
   .add("Input Block ( Post-Button )", () => {
     return (
       <InputBlock
-        label="Input ( Post-Button )"
-        postButton
-        buttonLabel="Upload"
-        helpText="This help text has been passed through a prop!"
-      />
-    );
-  })
-  // Input Block ( Prefix / Postfix )
-  .add("Input Block ( Prefix / Postfix )", () => {
-    return (
-      <InputBlock
-        label="Input ( Prefix / Postfix )"
-        prefix="http://"
-        postfix=".com"
-        helpText="This help text has been passed through a prop!"
-      />
-    );
-  })
-  // Input Block ( Prefix / Post-Select )
-  .add("Input Block ( Prefix / Post-Select )", () => {
-    return (
-      <InputBlock
-        label="Input ( Prefix / Post-Select )"
-        prefix="http://"
-        postSelect={[
-        { value: "com", label: ".com" },
-        { value: "org", label: ".org" },
-        { value: "gov", label: ".gov" },
-      ]}
-        helpText="This help text has been passed through a prop!"
-      />
-    );
-  })
-  // Input Block ( Pre-Select / Postfix )
-  .add("Input Block ( Pre-Select / Postfix )", () => {
-    return (
-      <InputBlock
-        label="Input ( Pre-Select / Postfix )"
-        preSelect={[
-        { value: "sir", label: "Sir" },
-        { value: "madam", label: "Madam" },
-        { value: "my lord", label: "My Lord" },
-      ]}
-        postfix=".com"
-        helpText="This help text has been passed through a prop!"
-      />
-    );
-  })
-  // Input Block ( Pre / Post-Select )
-  .add("Input Block ( Pre / Post-Select )", () => {
-    return (
-      <InputBlock
-        label="Input ( Pre / Post-Select )"
-        preSelect={[
-        { value: "sir", label: "Sir" },
-        { value: "madam", label: "Madam" },
-        { value: "my lord", label: "My Lord" },
-      ]}
-        postSelect={[
-        { value: "com", label: ".com" },
-        { value: "org", label: ".org" },
-        { value: "gov", label: ".gov" },
-      ]}
-        helpText="This help text has been passed through a prop!"
+        label="Input Block ( Post-Button )"
+        textInputs={inputsOne}
+        button={button}
+        helpText="Hang in there, buddy, I'm here to help!"
       />
     );
   });
+
 // Input Block ( The Input Block Family )
 storiesOf("Work|Blocks/Input Block", module).add("The Input Block Block Family", () => {
   return (
     <Panel>
       <PanelSection body>
-        <Form>
-          <Section title="The Input Block Family">
+        <Form title="The Input Block Family">
+          <Section>
             <InputBlock
-              label="Input ( Standard )"
-              helpText="This help text has been passed through a prop!"
+              label="Input Block ( standard )"
+              textInputs={inputsOne}
+              helpText="Hang in there, buddy, I'm here to help!"
             />
             <InputBlock
-              label="Input ( Required )"
+              label="Input Block ( required )"
               isRequired
-              helpText="This help text has been passed through a prop!"
+              textInputs={inputsOne}
+              helpText="Hang in there, buddy, I'm here to help!"
             />
             <InputBlock
-              label="Input ( Disabled )"
+              label="Input Block ( error )"
+              textInputs={inputsOne}
+              helpText="Hang in there, buddy, I'm here to help!"
+              error="Don't sweat it...we can fix this!"
+            />
+            <InputBlock
+              label="Input Block ( disabled )"
+              textInputs={inputsOne}
+              helpText="Hang in there, buddy, I'm here to help!"
               disabled
-              helpText="This help text has been passed through a prop!"
             />
             <InputBlock
-              label="Input ( Error )"
-              helpText="This help text has been passed through a prop!"
-              error
-              error="This error text has been passed through a prop!"
+              label="Input Block ( 2 inputs )"
+              textInputs={inputsTwo}
+              helpText="Hang in there, buddy, I'm here to help!"
             />
             <InputBlock
-              label="Input ( 2 Inputs )"
-              twoInputs
-              helpText="This help text has been passed through a prop!"
+              label="Input Block ( 3 inputs )"
+              textInputs={inputsThree}
+              helpText="Hang in there, buddy, I'm here to help!"
             />
             <InputBlock
-              label="Input ( 3 Inputs )"
-              threeInputs
-              helpText="This help text has been passed through a prop!"
-              placeholder_2="Two!!"
-              placeholder_3="Three!!!"
+              label="Input Block ( pre-label )"
+              prefix
+              text="prefix"
+              textInputs={inputsOne}
+              helpText="Hang in there, buddy, I'm here to help!"
             />
             <InputBlock
-              label="Input ( Prefix Label )"
-              prefix="http://"
-              placeholder="This help text has been passed through a prop!"
-              helpText="This help text has been passed through a prop!"
+              label="Input Block ( post-label )"
+              text="postfix"
+              textInputs={inputsOne}
+              helpText="Hang in there, buddy, I'm here to help!"
             />
             <InputBlock
-              label="Input ( Prefix Icon )"
-              prefix={<Icon icon="user" size="lg" fixedWidth />}
-              placeholder="This help text has been passed through a prop!"
-              helpText="This help text has been passed through a prop!"
+              label="Input Block ( pre-select )"
+              prefix
+              options={titles}
+              selectOptions={titles[0].value}
+              textInputs={inputsOne}
+              helpText="Hang in there, buddy, I'm here to help!"
             />
             <InputBlock
-              label="Input ( Pre-Select )"
-              preSelect={[
-              { value: "sir", label: "Sir" },
-              { value: "madam", label: "Madam" },
-              { value: "my lord", label: "My Lord" },
-            ]}
-              helpText="This help text has been passed through a prop!"
+              label="Input Block ( post-select )"
+              options={domains}
+              selectOptions={domains[0].value}
+              textInputs={inputsOne}
+              helpText="Hang in there, buddy, I'm here to help!"
             />
             <InputBlock
-              label="Input ( Postfix Label )"
-              postfix=".com"
-              helpText="This help text has been passed through a prop!"
+              label="Input Block ( pre-icon )"
+              prefix
+              icon="user"
+              textInputs={inputsOne}
+              helpText="Hang in there, buddy, I'm here to help!"
             />
             <InputBlock
-              label="Input ( Post-Select )"
-              postSelect={[
-              { value: "com", label: ".com" },
-              { value: "org", label: ".org" },
-              { value: "gov", label: ".gov" },
-            ]}
-              helpText="This help text has been passed through a prop!"
+              label="Input Block ( post-icon )"
+              icon="user"
+              textInputs={inputsOne}
+              helpText="Hang in there, buddy, I'm here to help!"
             />
             <InputBlock
-              label="Input ( Post-Button )"
-              postButton
-              buttonLabel="Upload"
-              helpText="This help text has been passed through a prop!"
+              prefix
+              label="Input Block ( pre-button )"
+              button={button}
+              textInputs={inputsOne}
+              helpText="Hang in there, buddy, I'm here to help!"
             />
             <InputBlock
-              label="Input ( Prefix / Postfix )"
-              prefix="http://"
-              postfix=".com"
-              helpText="This help text has been passed through a prop!"
-            />
-            <InputBlock
-              label="Input ( Prefix / Post-Select )"
-              prefix="http://"
-              postSelect={[
-              { value: "com", label: ".com" },
-              { value: "org", label: ".org" },
-              { value: "gov", label: ".gov" },
-            ]}
-              helpText="This help text has been passed through a prop!"
-            />
-            <InputBlock
-              label="Input ( Pre-Select / Postfix )"
-              preSelect={[
-              { value: "sir", label: "Sir" },
-              { value: "madam", label: "Madam" },
-              { value: "my lord", label: "My Lord" },
-            ]}
-              postfix=".com"
-              helpText="This help text has been passed through a prop!"
-            />
-            <InputBlock
-              label="Input ( Pre / Post-Select )"
-              preSelect={[
-              { value: "sir", label: "Sir" },
-              { value: "madam", label: "Madam" },
-              { value: "my lord", label: "My Lord" },
-            ]}
-              postSelect={[
-              { value: "com", label: ".com" },
-              { value: "org", label: ".org" },
-              { value: "gov", label: ".gov" },
-            ]}
-              helpText="This help text has been passed through a prop!"
+              label="Input Block ( post-button )"
+              button={button}
+              textInputs={inputsOne}
+              helpText="Hang in there, buddy, I'm here to help!"
             />
           </Section>
         </Form>
