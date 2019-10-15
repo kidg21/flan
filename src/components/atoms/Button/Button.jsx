@@ -87,11 +87,6 @@ const ButtonIcon = styled(Icon)`
 function Button({
   className,
   color,
-  underlineColor,
-  border,
-  type,
-  size,
-  fullWidth,
   disabled,
   fullWidth,
   icon,
