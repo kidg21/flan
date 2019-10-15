@@ -6,7 +6,8 @@ import Title from "base/Typography";
 
 const ImageContainer = styled.div`
   position: relative;
-  width: 100%;
+  width: min-content;
+  /* height: auto; */
   height: 100%;
 `;
 
@@ -17,9 +18,13 @@ const ImageLabel = styled(Title)`
   bottom: 0;
   width: 100%;
   background: white;
-  margin-bottom: 1em;
-  padding: 1em;
+  /* margin-bottom: 1em; */
+  padding: .25em;
   text-align: center;
+  max-height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 `;
 
 const ImageWrapper = styled.img`
@@ -54,13 +59,16 @@ function Image({
   }
 
   return (
-    <ImageWrapper
-      src={src}
-      width={width}
-      height={height}
-      borderRadius={borderRadius}
-      label={label}
-    />
+    <ImageContainer>
+      <ImageWrapper
+        src={src}
+        width={width}
+        height={height}
+        borderRadius={borderRadius}
+        // label={label}
+      />
+      <ImageLabel>{label}</ImageLabel>
+    </ImageContainer>
   );
 }
 

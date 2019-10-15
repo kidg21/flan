@@ -11,11 +11,6 @@ storiesOf("Atoms|Image", module)
   .add("Default", () => {
     return (
       <Grid>
-        <Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE" />
-        <Image
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-          type="thumb"
-        />
         <Image
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
           label="This is a label"
@@ -33,6 +28,12 @@ storiesOf("Atoms|Image", module)
           type="circle"
           label="This is a label"
         />
+        {/* <Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE" />
+        <Image
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+          type="thumb"
+        />
+         */}
       </Grid>
     );
   });
