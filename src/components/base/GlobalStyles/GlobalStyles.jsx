@@ -209,6 +209,7 @@ const GlobalStyles = createGlobalStyle`
     }
 /* Buttons */
     button {
+      box-sizing: border-box;
       &:focus {
         outline: none;
       }

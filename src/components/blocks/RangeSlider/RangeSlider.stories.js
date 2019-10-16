@@ -27,7 +27,7 @@ storiesOf("Blocks|Range Slider", module)
           label="Range Slider Label"
           minLabel="Min Label"
           maxLabel="Max Label"
-          helpText="This help text has been passed through a prop!"
+          helpText="Hang in there, buddy, I'm here to help!"
         />
       );
     }),
@@ -56,7 +56,7 @@ storiesOf("Blocks|Range Slider", module)
             label="Range Slider Label"
             minLabel="Min Label"
             maxLabel="Max Label"
-            helpText="This help text has been passed through a prop!"
+            helpText="Hang in there, buddy, I'm here to help!"
           />
         </Section>
         <Section title="Required">
@@ -65,7 +65,7 @@ storiesOf("Blocks|Range Slider", module)
             label="Range Slider Label"
             minLabel="Min Label"
             maxLabel="Max Label"
-            helpText="This help text has been passed through a prop!"
+            helpText="Hang in there, buddy, I'm here to help!"
           />
         </Section>
         <Section title="Error">
@@ -73,7 +73,7 @@ storiesOf("Blocks|Range Slider", module)
             label="Range Slider Label"
             minLabel="Min Label"
             maxLabel="Max Label"
-            helpText="This help text has been passed through a prop!"
+            helpText="Hang in there, buddy, I'm here to help!"
             error="Out of range!"
           />
         </Section>
@@ -83,7 +83,7 @@ storiesOf("Blocks|Range Slider", module)
             label="Range Slider Label"
             minLabel="Min Label"
             maxLabel="Max Label"
-            helpText="This help text has been passed through a prop!"
+            helpText="Hang in there, buddy, I'm here to help!"
           />
         </Section>
       </Form>

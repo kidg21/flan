@@ -1,246 +1,195 @@
-/* eslint-disable no-nested-ternary */
-import React, { useContext } from "react";
+/* eslint-disable linebreak-style */
+/* eslint-disable complexity */
+import React, { useState, useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
-import { InputLabel, HelpText, ErrorText } from "layout/Form";
+import { InputLabel, HelpText, ErrorText, Label } from "layout/Form";
+import Grid from "layout/Grid";
+import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";
+import Icon from "atoms/Icon";
 import Button from "atoms/Button";
 
-const TextInputContainer = styled.div`
-  display: grid;
-  grid-template-columns: ${props => {
-    /* 3 Inputs */
-    return props.threeInputs
-      ? "repeat(3, 1fr)"
-      : /* 2 Inputs */
-      props.twoInputs
-      ? "repeat(2, 1fr)"
-      : /* Prefix Label (conditionals) */
-      props.prefix
-      ? props.postfix || props.label
-        ? "minmax(auto, auto) minmax(auto, 3fr) minmax(auto, auto)"
-        : props.postSelect
-        ? "minmax(auto, auto) minmax(auto, 3fr) minmax(auto, 2fr)"
-        : "minmax(auto, auto) minmax(auto, 3fr)"
-      : /* Postfix Select (conditionals) */
-      props.preSelect
-      ? props.postfix || props.label
-        ? "minmax(auto, 2fr) minmax(auto, 3fr) minmax(auto, auto)"
-        : props.postSelect
-        ? "minmax(auto, 2fr) minmax(auto, 3fr) minmax(auto, 2fr)"
-        : "minmax(auto, 2fr) minmax(auto, 3fr)"
-      : /* Postfix Label */
-      props.postfix || props.label
-      ? "minmax(auto, 3fr) minmax(auto, auto)"
-      : /* Postfix Select */
-      props.postSelect
-      ? "minmax(auto, 3fr) minmax(auto, 2fr)"
-      : /* Single Input (default) */
-        "repeat(1, 1fr)";
-  }};
-  grid-gap: ${props => {
-    return props.slider ? "0.15rem" : "0.35rem";
-  }};
-  align-content: flex-start;
-  color: ${props => {
-    return props.error ? props.theme.palette.alert : props.disabled ? props.theme.palette.disabled : "";
-  }};
-`;
-
-const PrePostLabel = styled.label`
-  display: flex;
-  justify-content: center;
-  border-radius: 5px;
-  align-items: center;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: lowercase;
+const TextInputContainer = styled(Grid)`
   color: ${(props) => {
-    return props.theme.text.primary; }};
-  background-color: ${(props) => {
-    return props.theme.divider; }};
-  border: 1px solid ${(props) => {
-    return props.theme.divider; }};
-  border-bottom: 1px solid ${(props) => {
-    return props.theme.divider; }};
-  border-radius: 4px;
-  padding: 0.25rem 1rem;
-  white-space: nowrap;
-`;
-
-const TextInput = styled.input`
-  border: 1px solid ${props => {
-    return props.theme.palette.border}};
-  border-bottom: 1px solid ${props => {
-    return props.theme.palette.border}};
-  border-color: ${props => {
-    return props.error ? props.theme.palette.alert : "";
+    return props.theme.text[props.inputTextColor] || "";
   }};
-  border-radius: ${props => {
-    return props.isRound ? "10rem !important" : "";
-  }};
-  caret-color: ${props => {
-    return props.error ? props.theme.palette.alert : "";
-  }};
-  min-height: 2.75rem;
-  padding: ${props => {
-    return props.isRound ? "0.75rem 1rem" : "0.5rem 0.75rem";
-  }};
-
-  ::placeholder {
-    color: ${props => {
-      return props.error ? props.theme.palette.alert : "";
-    }};
-  }
-  &:hover {
-    border: 1px solid ${props => { return props.theme.palette.border;}}
-    border-color: ${props => {
-      return props.error ? props.theme.palette.alert : "";
-    }};
-    }
-  }
-  &:focus {
-    background-color: ${props => {
-      return props.error ? props.theme.palette.alertLight : "";
-    }};
-    border-color: ${props => {
-      return props.error ? props.theme.palette.alert : props.theme.palette.successLight;
-    }};
-    ::placeholder {
-      color: ${props => {
-        return props.error ? props.theme.palette.alert : props.theme.palette.border;
-      }};
-    }
-    ::selection {
-      background-color: ${props => {
-        return props.error ? props.theme.palette.alert : "";
-      }};
-      
-    }
-  }
+  width: 100%;
 `;
 
 function InputBlock({
-  id,
-  type,
-  pattern,
-  value,
-  label, // Label prop
-  placeholder,
-  helpText,
+  button,
+  className,
   disabled,
-  isRequired,
-  isRound,
-  twoInputs,
-  id_2,
-  type_2,
-  value_2,
-  pattern_2,
-  placeholder_2,
-  threeInputs,
-  id_3,
-  type_3,
-  value_3,
-  pattern_3,
-  placeholder_3,
-  prefix,
-  postfix,
-  preSelect,
-  postSelect,
-  buttonLabel,
   error,
-  style,
+  helpText,
+  icon,
+  id,
+  isRequired,
+  label,
+  onChange,
+  options,
+  prefix,
+  selectOptions,
+  text,
+  textInputs,
 }) {
+  const [state, setState] = useState({
+    input: textInputs.reduce((inputMap, input) => {
+      inputMap[input.id] = input.value;
+      return inputMap;
+    }, {}),
+    selected: selectOptions,
+  });
+
+  function handleChange(e) {
+    const newState = { ...state, input: { ...state.input, [e.target.id]: e.target.value } };
+    if (onChange) {
+      onChange(state, newState, setState);
+    } else {
+      setState(newState);
+    }
+  }
+
+  function handleSelectChange(prevState, currState, setSelectState) {
+    if (onChange) {
+      const newState = { ...state, selected: currState.selected };
+      onChange(state, newState, (updatedState) => {
+        setSelectState({ selected: updatedState.selected });
+        if (updatedState.input !== newState.input) setState(updatedState);
+      });
+    } else {
+      setSelectState(currState);
+    }
+  }
+
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  let inputTextColor;
+  let buttonColor;
+  if (error && !isDisabled) {
+    inputTextColor = "alert";
+    buttonColor = "alert";
+  }
+  const inputElements = textInputs.map((input) => {
+    return (
+      <TextInput
+        disabled={isDisabled}
+        error={!!error}
+        key={input.id}
+        id={input.id}
+        name={input.id}
+        onChange={handleChange}
+        pattern={input.pattern}
+        placeholder={input.placeholder}
+        readonly={input.readonly}
+        title={input.title}
+        type={input.type}
+        value={state.input[input.id]}
+      />
+    );
+  });
+  let inputContainer = inputElements;
+  let gridColumns;
+  if (prefix) {
+    gridColumns = `${icon ? "auto" : "minmax(0, 1fr)"} minmax(auto, 3fr)`;
+  } else {
+    gridColumns = `minmax(auto, 3fr) ${icon ? "auto" : "minmax(0, 1fr)"}`;
+  }
+  if (inputElements.length > 1) {
+    const numInputs = Math.min(inputElements.length, 3);
+    inputContainer = (
+      <Grid columns={numInputs} gap="tiny">
+        {inputElements.slice(0, numInputs)}
+      </Grid>
+    );
+  } else if (text) {
+    inputContainer = (
+      <Grid columns={gridColumns} gap="tiny">
+        {prefix ? <Label>{text}</Label> : null}
+        {inputElements}
+        {!prefix ? <Label>{text}</Label> : null}
+      </Grid>
+    );
+  } else if (options) {
+    inputContainer = (
+      <Grid columns={gridColumns} gap="tiny">
+        {prefix ? (
+          <SelectMenu
+            options={options}
+            selectOptions={selectOptions}
+            isClearable={false}
+            onChange={handleSelectChange}
+          />
+        ) : null}
+        {inputElements}
+        {!prefix ? (
+          <SelectMenu
+            options={options}
+            selectOptions={selectOptions}
+            isClearable={false}
+            onChange={handleSelectChange}
+          />
+        ) : null}
+      </Grid>
+    );
+  } else if (icon) {
+    inputContainer = (
+      <Grid columns={gridColumns} gap="tiny">
+        {prefix ? (
+          <Label>
+            <Icon icon={icon} size="lg" />
+          </Label>
+        ) : null}
+        {inputElements}
+        {!prefix ? (
+          <Label>
+            <Icon icon={icon} size="lg" />
+          </Label>
+        ) : null}
+      </Grid>
+    );
+  } else if (button) {
+    const buttonElement = (
+      <Button
+        label={button.label}
+        type={button.type}
+        onClick={button.onClick}
+        color={buttonColor || button.color}
+        disabled={isDisabled || button.disabled}
+      />
+    );
+    inputContainer = (
+      <Grid columns={gridColumns} gap="tiny">
+        {prefix ? buttonElement : null}
+        {inputElements}
+        {!prefix ? buttonElement : null}
+      </Grid>
+    );
+  } else {
+    inputContainer = (
+      <Grid columns="1" gap="tiny">
+        {inputElements}
+      </Grid>
+    );
+  }
   return (
     <DisabledContext.Provider value={isDisabled}>
       <TextInputContainer
-        id={id}
-        isRequired={isRequired}
-        disabled={isDisabled} // input attribute
+        className={className}
+        columns="1"
+        disabled={isDisabled}
         error={error}
+        gap="tiny"
+        id={id}
+        inputTextColor={inputTextColor}
+        isRequired={isRequired}
         prefix={prefix}
-        postfix={postfix}
-        preSelect={preSelect}
-        postSelect={postSelect}
-        label={buttonLabel}
-        twoInputs={twoInputs} // 2 inputs in a row
-        threeInputs={threeInputs} // 3 inputs in a row
-        style={style}
+        text={text}
       >
-        {/* Input Label */}
         {label ? <InputLabel isRequired={isRequired} label={label} /> : null}
-        {/* Prefix Label (conditional) */}
-        {prefix ? <PrePostLabel>{prefix}</PrePostLabel> : null}
-        {/* Prefix Select Menu (conditional) */}
-        {preSelect ? (
-          <SelectMenu
-            displayInline // Grid Override
-            label={null}
-            name="Choose"
-            isClearable={false}
-            options={preSelect}
-            defaultValue={preSelect[0]}
-          />
-        ) : null}
-        <TextInput
-          id={id} // input attribute
-          name={id} // input attribute
-          type={type} // input attribute
-          value={value} // input attribute
-          placeholder={placeholder} // input attribute
-          pattern={pattern} // input attribute
-          disabled={isDisabled} // input attribute
-          error={error}
-          isRound={isRound}
-        />
-        {/* Column 2 (conditional) */}
-        {twoInputs || threeInputs ? (
-          <TextInput
-            id={id_2} // input attribute
-            name={id_2} // input attribute
-            type={type_2} // input attribute
-            value={value_2} // input attribute
-            placeholder={placeholder_2} // input attribute
-            pattern={pattern_2} // input attribute
-            disabled={isDisabled} // input attribute
-            error={error}
-            isRound={isRound}
-          />
-        ) : null}
-        {/* Column 3 (conditional) */}
-        {threeInputs ? (
-          <TextInput
-            id={id_3} // input attribute
-            name={id_3} // input attribute
-            type={type_3} // input attribute
-            value={value_3} // input attribute
-            placeholder={placeholder_3} // input attribute
-            pattern={pattern_3} // input attribute
-            disabled={isDisabled} // input attribute
-            error={error}
-            isRound={isRound}
-          />
-        ) : null}
-        {/* Postfix (conditional) */}
-        {postfix ? <PrePostLabel>{postfix}</PrePostLabel> : null}
-        {/* Postfix Button (conditional) */}
-        {buttonLabel ? <Button label={buttonLabel} /> : null}
-        {/* Postfix Select Menu (conditional) */}
-        {postSelect ? (
-          <SelectMenu
-            displayInline // Grid Override
-            label={null}
-            name="Choose"
-            isClearable={false}
-            options={postSelect}
-            defaultValue={postSelect[0]}
-          />
-        ) : null}
-        {/* Help Text */}
+        {inputContainer}
         {helpText ? <HelpText>{helpText}</HelpText> : null}
-        {/* Error Message (required) */}
         {typeof error === "string" && !isDisabled ? <ErrorText>{error}</ErrorText> : null}
       </TextInputContainer>
     </DisabledContext.Provider>
@@ -248,35 +197,54 @@ function InputBlock({
 }
 
 InputBlock.propTypes = {
-  id: PropTypes.string,
-  type: PropTypes.string,
-  pattern: PropTypes.string,
-  value: PropTypes.string,
-  label: PropTypes.string.isRequired,
-  placeholder: PropTypes.string,
-  helpText: PropTypes.string,
-  isRequired: PropTypes.bool,
+  button: PropTypes.shape({
+    color: PropTypes.string,
+    disabled: PropTypes.bool,
+    label: PropTypes.string,
+    onClick: PropTypes.func,
+    type: PropTypes.string,
+  }),
+  className: PropTypes.string,
   disabled: PropTypes.bool,
-  isRound: PropTypes.bool,
-  twoInputs: PropTypes.bool,
-  id_2: PropTypes.string,
-  type_2: PropTypes.string,
-  value_2: PropTypes.string,
-  pattern_2: PropTypes.string,
-  placeholder_2: PropTypes.string,
-  threeInputs: PropTypes.bool,
-  id_3: PropTypes.string,
-  type_3: PropTypes.string,
-  value_3: PropTypes.string,
-  pattern_3: PropTypes.string,
-  placeholder_3: PropTypes.string,
-  prefix: PropTypes.string,
-  postfix: PropTypes.string,
-  preSelect: PropTypes.array,
-  postSelect: PropTypes.array,
-  buttonLabel: PropTypes.string,
-  error: PropTypes.bool,
-  style: PropTypes.string,
+  error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  helpText: PropTypes.string,
+  icon: PropTypes.string,
+  id: PropTypes.string,
+  isRequired: PropTypes.bool,
+  label: PropTypes.string,
+  onChange: PropTypes.func,
+  options: PropTypes.arrayOf(PropTypes.shape({
+    label: PropTypes.string,
+    value: PropTypes.any,
+  })),
+  prefix: PropTypes.bool,
+  selectOptions: PropTypes.arrayOf(PropTypes.any),
+  text: PropTypes.string,
+  textInputs: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string,
+    placeholder: PropTypes.string,
+    type: PropTypes.string,
+    pattern: PropTypes.string,
+    title: PropTypes.string,
+    value: PropTypes.string,
+    readonly: PropTypes.bool,
+  })).isRequired,
+};
+InputBlock.defaultProps = {
+  button: null,
+  className: null,
+  disabled: null,
+  error: null,
+  helpText: null,
+  icon: null,
+  id: null,
+  isRequired: false,
+  label: null,
+  onChange: null,
+  options: null,
+  prefix: false,
+  selectOptions: null,
+  text: null,
 };
 
 export { InputBlock as default };

@@ -68,6 +68,7 @@ const CheckboxLabel = styled.label`
   font-weight: 600;
   line-height: 1rem;
   color: inherit;
+  width: max-content;
   user-select: none;
   cursor: pointer;
 `;

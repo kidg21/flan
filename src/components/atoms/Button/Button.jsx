@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import { Lighten, Darken } from "Variables";
@@ -14,6 +15,7 @@ const StyledButton = styled.button`
   width: ${(props) => {
     return props.fullWidth ? "100%" : "auto";
   }};
+  height: 100%;
   padding: ${(props) => {
     return props.buttonPadding || "0.5rem 0.7rem";
   }};
@@ -82,26 +84,27 @@ const ButtonIcon = styled(Icon)`
 `;
 
 function Button({
+  className,
+  color,
+  disabled,
+  fullWidth,
+  icon,
   id,
   label,
-  icon,
-  color,
+  onClick,
   underlineColor,
   border,
-  type,
   size,
-  fullWidth,
-  disabled,
-  onClick,
   style,
+  type,
 }) {
-  let buttonColor;
-  let borderRadius;
-  let borderBottom;
-  let fontWeight;
-  let fontColor;
   let backgroundColor;
+  let borderBottom;
+  let borderRadius;
+  let buttonColor;
   let buttonPadding;
+  let fontColor;
+  let fontWeight;
   let labelSize;
 
   switch (color && color.toLowerCase()) {
@@ -179,23 +182,24 @@ function Button({
 
   return (
     <StyledButton
-      id={id}
-      name={id}
-      fullWidth={fullWidth}
+      backgroundColor={backgroundColor}
+      border={borderStyle}
       borderBottom={borderBottom}
       underlineColor={underline}
       disabled={isDisabled}
-      border={borderStyle}
       borderRadius={borderRadius}
-      fontWeight={fontWeight}
-      type={type}
-      onClick={onClick}
       buttonColor={buttonColor}
-      fontColor={fontColor}
-      backgroundColor={backgroundColor}
       buttonPadding={buttonPadding}
+      className={className}
+      fontColor={fontColor}
+      fontWeight={fontWeight}
+      fullWidth={fullWidth}
+      id={id}
       labelSize={labelSize}
+      name={id}
+      onClick={onClick}
       style={style}
+      type={type}
     >
       {icon ? <ButtonIcon icon={icon} type={fontColor} size="lg" /> : null}
       {label ? <ButtonLabel>{label}</ButtonLabel> : null}
@@ -204,33 +208,35 @@ function Button({
 }
 
 Button.propTypes = {
+  className: PropTypes.string,
+  color: PropTypes.oneOf(["success", "warning", "alert", "info", "primary", "secondary"]),
+  disabled: PropTypes.bool,
+  fullWidth: PropTypes.bool,
+  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   id: PropTypes.string,
   label: PropTypes.string,
-  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
-  color: PropTypes.oneOf(["success", "warning", "alert", "info", "primary", "secondary"]),
-  size: PropTypes.oneOf(["small", "large"]),
-  type: PropTypes.oneOf(["solid", "underlined", "inline"]),
-  fullWidth: PropTypes.bool,
-  underlineColor: PropTypes.string,
-  disabled: PropTypes.bool,
-  border: PropTypes.string,
   onClick: PropTypes.func,
+  size: PropTypes.oneOf(["small", "large"]),
+  underlineColor: PropTypes.string,
+  border: PropTypes.string,
   style: PropTypes.string,
+  type: PropTypes.oneOf(["underlined", "inline", "solid"]),
 };
 
 Button.defaultProps = {
+  className: null,
+  color: null,
+  disabled: false,
+  fullWidth: false,
+  icon: null,
   id: null,
   label: null,
-  icon: null,
-  color: null,
-  size: null,
-  type: null,
-  fullWidth: false,
-  underlineColor: null,
-  disabled: false,
-  border: null,
   onClick: null,
+  size: null,
   style: null,
+  type: null,
+  underlineColor: null,
+  border: null,
 };
 
 export { Button as default };
