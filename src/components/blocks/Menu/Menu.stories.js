@@ -4,6 +4,7 @@ import { withInfo } from "@storybook/addon-info";
 import Grid from "layout/Grid";
 import { Padding } from "helpers/Display";
 import Menu from "blocks/Menu";
+import NestedMenu from "blocks/Menu/NestedMenu.jsx";
 import Card from "layout/Card";
 import Bar from "blocks/Bar";
 
@@ -30,6 +31,15 @@ const nestedData = [
   { id: "c", onClickLink: () => { console.log(`clicked c`) }, name: "Share" },
   { id: "d", onClickLink: () => { console.log(`clicked d`) }, name: "Refresh" },
   { id: "e", onClickLink: () => { console.log(`clicked e`) }, name: "Layer" },
+  {
+    id: "f", onClickLink: () => { console.log(`clicked b`) }, name: "FFilter",
+    commands: [
+      { id: "f.0", onClickLink: () => { console.log("clicked b.0") }, name: "FFilter 0.0" },
+      {
+        id: "f.1", onClickLink: () => { console.log("clicked b.1") }, name: "FFilter 1.0",
+      },
+    ]
+  },
 ];
 
 storiesOf("Blocks|Menu", module)
@@ -58,6 +68,15 @@ storiesOf("Blocks|Menu", module)
   ))
   .add("Nested Menu Example", () => (
     <Card>
-      <Menu data={nestedData} position="bottomRight" id="top" />
+      <Bar
+        center={<Menu data={nestedData} position="bottomLeft" id="top" />}
+      />
+    </Card>
+  ))
+  .add("New Nested Menu Example", () => (
+    <Card>
+      <Bar
+        center={<NestedMenu data={nestedData} position="bottomRight" id="top" />}
+      />
     </Card>
   ));
