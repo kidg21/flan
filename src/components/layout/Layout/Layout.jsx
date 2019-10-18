@@ -102,11 +102,11 @@ function Layout({
     case "leftWrapper":
       displayState = "translate3d(-100%, 0px, 0px)";
       if (screenLarge.matches) {
-        width = "20%";
+        width = "30%";
       } else if (screenMedium.matches) {
         width = "40%";
       } else if (screenSmall.matches) {
-        width = "80%";
+        width = "100%";
       }
       break;
     case "mainWrapper":
@@ -135,8 +135,8 @@ function Layout({
         left = "60%";
         width = "40%";
       } else if (screenSmall.matches) {
-        left = "20%";
-        width = "80%";
+        left = "0";
+        width = "100%";
       }
       break;
     case "controlsWrapper":
@@ -157,11 +157,11 @@ function Layout({
   switch (state) {
     case "leftUncover":
       if (type === "innerWrapper" && screenLarge.matches) {
-        displayState = "translate3d(20%, 0, 0)";
+        displayState = "translate3d(30%, 0, 0)";
       } else if (type === "innerWrapper" && screenMedium.matches) {
         displayState = "translate3d(40%, 0, 0)";
       } else if (type === "innerWrapper" && screenSmall.matches) {
-        displayState = "translate3d(80%, 0, 0)";
+        displayState = "translate3d(100%, 0, 0)";
       }
       break;
     case "leftCover":
@@ -171,7 +171,7 @@ function Layout({
       break;
     case "rightOnscreen":
       if (type === "mainWrapper" && screenLarge.matches) {
-        width = "80%";
+        width = "70%";
       } else if (type === "mainWrapper" && screenMedium.matches) {
         width = "60%";
       } else if (type === "mainWrapper" && screenSmall.matches) {
