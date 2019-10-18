@@ -17,10 +17,18 @@ const ImageWrapper = styled.img`
 `;
 
 function Image({
-  alt, border, circle, src, width,
+  alt, border, circle, className, src, width,
 }) {
   return (
-    <ImageWrapper alt={alt} border={border} circle={circle} src={src} title={alt} width={width} />
+    <ImageWrapper
+      alt={alt}
+      border={border}
+      circle={circle}
+      className={className}
+      src={src}
+      title={alt}
+      width={width}
+    />
   );
 }
 
@@ -28,6 +36,7 @@ Image.propTypes = {
   alt: PropTypes.string.isRequired,
   border: PropTypes.boolean,
   circle: PropTypes.boolean,
+  className: PropTypes.string,
   src: PropTypes.string,
   width: PropTypes.number,
 };
@@ -35,6 +44,7 @@ Image.defaultProps = {
   src: null,
   border: false,
   circle: false,
+  className: null,
   width: null,
 };
 
