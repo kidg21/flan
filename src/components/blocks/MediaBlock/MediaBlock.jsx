@@ -1,3 +1,4 @@
+/* eslint-disable complexity */
 /* eslint-disable linebreak-style */
 /* eslint-disable displayInlinebreak-style */
 import React from "react";
@@ -7,10 +8,10 @@ import PropTypes from "prop-types";
 const Block = styled.div`
   display: grid;
   grid-template-columns: ${(props) => {
-    return props.gridColumns || "1fr 6fr";
+    return props.gridColumns || "1fr 4fr";
   }};
   padding: ${(props) => {
-    return props.blockPadding || "1rem";
+    return props.blockPadding || "0.5rem 1rem 1rem 0.5rem";
   }};
   grid-template-areas: ${(props) => {
     return props.gridTemplate || "'content body' '. body'";
@@ -24,30 +25,38 @@ const Media = styled.section`
   grid-area: content;
   display: flex;
   justify-content: ${(props) => {
-    return props.justifyMedia || "";
+    return props.justify || "";
   }};
-  padding: ${(props) => {
-    return props.mediaPadding || "";
+  padding: 0;
+  width: 100%;
+  height: auto;
+  & > * {
+    border-radius: ${(props) => {
+    return props.circle ? "100%" : "3px";
   }};
+    box-shadow: ${(props) => {
+    return props.border ? `0 0 0 2px ${props.theme.palette.border}` : "";
+  }};
+  }
 `;
 
 const Body = styled.section`
   grid-area: body;
   padding: ${(props) => {
-    return props.bodyPadding || "0 0 0 1.5rem";
+    return props.padding || "0 0 0 1rem";
   }};
   overflow: hidden;
   > * {
-    white-space: normal;
     display: ${(props) => {
     return props.displayInline ? "none" : "";
   }};
     &:first-child {
+      width: inherit;
       display: ${(props) => {
     return props.displayInline ? "block" : "";
   }};
       white-space: ${(props) => {
-    return props.displayInline ? "nowrap" : "";
+    return props.displayInline ? "nowrap" : "normal";
   }};
       overflow: ${(props) => {
     return props.displayInline ? "hidden" : "";
@@ -55,7 +64,7 @@ const Body = styled.section`
       text-overflow: ${(props) => {
     return props.displayInline ? "ellipsis" : "";
   }};
-  margin-bottom: ${(props) => {
+      margin-bottom: ${(props) => {
     return props.displayInline ? "0" : "";
   }};
     }
@@ -69,59 +78,67 @@ const Body = styled.section`
 `;
 
 function MediaBlock({
-  align, body, children, className, id, media, onClick, reverse,
+  align,
+  body,
+  border,
+  children,
+  circle,
+  className,
+  id,
+  media,
+  onClick,
+  reverse,
 }) {
   let gridTemplate;
   let gridColumns;
   let blockPadding;
-  let mediaPadding;
-  let justifyMedia;
-  let bodyPadding;
+  let justify;
+  let padding;
   let alignItems;
   let displayInline;
   switch (align && align.toLowerCase()) {
-    case "center":
-      alignItems = "center";
-      gridTemplate = "'content body' 'content body'";
-      break;
     case "vertical":
-      gridTemplate = "'content content' 'body body'";
       gridColumns = "1fr";
-      bodyPadding = "1rem 0.25rem 0";
+      if (reverse) {
+        blockPadding = "0.75rem 0.5rem 0.5rem 0.5rem";
+        gridTemplate = " 'body body' 'content content'";
+        padding = "0 0.25rem 1rem";
+      } else {
+        blockPadding = "0.5rem 0.5rem 1rem 0.5rem";
+        gridTemplate = "'content content' 'body body'";
+        padding = "1rem 0.25rem 0";
+      }
       break;
     case "inline":
-      displayInline = true;
       alignItems = "center";
-      gridColumns = "3rem 1fr";
-      blockPadding = "1px 0 1px 1px";
+      if (reverse) {
+        displayInline = true;
+        gridColumns = "1fr 3rem";
+        gridTemplate = "'body content'";
+        blockPadding = "1px 1px 1px 1rem";
+        padding = "0 1rem 0 0";
+      } else {
+        displayInline = true;
+        gridColumns = "3rem 1fr";
+        gridTemplate = "'content body'";
+        blockPadding = "1px 0 1px 1px";
+        padding = "0 1rem";
+      }
       break;
     default:
+      if (reverse) {
+        blockPadding = "0.5rem 0.5rem 1rem 1rem";
+        gridTemplate = "'body content' 'body .'";
+        gridColumns = "4fr 1fr";
+        padding = "0 1rem 0 0";
+        justify = "flex-end";
+      }
       break;
-  }
-  // flips media and body sections
-  if (reverse) {
-    gridTemplate = "'body content' 'body .'";
-    gridColumns = "6fr 1fr";
-    bodyPadding = "0 1.5rem 0 0";
-    justifyMedia = "flex-end";
-  }
-  if (reverse && align === "center") {
-    alignItems = "center";
-    gridTemplate = "'body content' 'body content'";
-  }
-  if (reverse && align === "vertical") {
-    gridTemplate = " 'body body' 'content content'";
-    bodyPadding = "0 0.25rem 1rem";
-  }
-  if (reverse && align === "inline") {
-    alignItems = "center";
-    gridColumns = "1fr 3rem";
-    blockPadding = "1px 1px 1px 1rem";
   }
   // reset grid if no media element is present
   if (!media) {
     gridColumns = "1fr";
-    bodyPadding = "0";
+    padding = "0";
   }
 
   return (
@@ -133,15 +150,14 @@ function MediaBlock({
       gridTemplate={gridTemplate}
       id={id}
       onClick={onClick}
-      reverse={reverse}
     >
       {media ? (
-        <Media mediaPadding={mediaPadding} justifyMedia={justifyMedia}>
+        <Media justify={justify} border={border} circle={circle}>
           {media}
         </Media>
       ) : null}
-      {body ? (
-        <Body bodyPadding={bodyPadding} displayInline={displayInline}>
+      {body || children ? (
+        <Body padding={padding} displayInline={displayInline}>
           {body}
           {children}
         </Body>
@@ -154,11 +170,13 @@ MediaBlock.propTypes = {
   /** Sets the vertical alignment of all content
    * Default: 'top'
    */
-  align: PropTypes.oneOf(["default (top)", "center", "vertical", "displayInline"]),
+  align: PropTypes.oneOf(["default (top)", "vertical", "inline"]),
   /** Used to define the content in the 'body' section */
   body: PropTypes.node,
+  border: PropTypes.boolean,
   /** Meant for use in nesting Media Blocks */
   children: PropTypes.node,
+  circle: PropTypes.boolean,
   /** className used for extending styles */
   className: PropTypes.string,
   id: PropTypes.string,
@@ -172,7 +190,9 @@ MediaBlock.propTypes = {
 MediaBlock.defaultProps = {
   align: null,
   body: null,
+  border: false,
   children: null,
+  circle: false,
   className: null,
   id: null,
   media: null,

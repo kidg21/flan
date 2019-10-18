@@ -4,22 +4,23 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
-import { withKnobs, text, boolean, files, optionsKnob as options } from "@storybook/addon-knobs";
+import {
+  withKnobs,
+  boolean,
+  optionsKnob as options,
+} from "@storybook/addon-knobs";
+import Image from "atoms/Image";
 import Card, { CardList } from "layout/Card";
 import Title, { Description } from "base/Typography";
-import Flan from "images/flan.jpg";
 import MediaBlock from "blocks/MediaBlock";
 import MediaBlockNotes from "./MediaBlock.md";
 
 const image = (
-  <img
+  <Image
     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-    width="100%"
-    height="100%"
-    alt="alternate description"
+    alt="This is alt text for this image"
   />
 );
-const image2 = <img src={Flan} width="100%" height="100%" alt="alternate description" />;
 const body = (
   <>
     <Title text="Media Block" />
@@ -27,7 +28,7 @@ const body = (
   </>
 );
 const description = (
-  <Description text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. " />
+  <Description text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy." />
 );
 
 storiesOf("Work|Blocks/Media Block", module)
@@ -57,7 +58,6 @@ storiesOf("Work|Blocks/Media Block", module)
             "align",
             {
               default: null,
-              center: "center",
               vertical: "vertical",
               inline: "inline",
             },
@@ -66,6 +66,8 @@ storiesOf("Work|Blocks/Media Block", module)
             "Media Block",
           )}
           reverse={boolean("reverse", false, "Media Block")}
+          circle={boolean("circle", false, "Media Block")}
+          border={boolean("border", false, "Media Block")}
         />
       </Card>
     );
@@ -96,7 +98,8 @@ storiesOf("Work|Blocks/Media Block", module)
           />
         </Card>
         <Card>
-          <MediaBlock media={image} 
+          <MediaBlock
+            media={image}
             body={
               <>
                 <Title text="Media Block (reverse)" />
@@ -107,30 +110,8 @@ storiesOf("Work|Blocks/Media Block", module)
           />
         </Card>
         <Card>
-          <MediaBlock media={image} 
-            body={
-              <>
-                <Title text="Media Block - Center" />
-                {description}
-              </>
-            }
-            align="center"
-          />
-        </Card>
-        <Card>
-          <MediaBlock media={image} 
-            body={
-              <>
-                <Title text="Media Block - Center (reverse)" />
-                {description}
-              </>
-            }
-            align="center"
-            reverse
-          />
-        </Card>
-        <Card>
-          <MediaBlock media={image} 
+          <MediaBlock
+            media={image}
             body={
               <>
                 <Title text="Media Block - Vertical" />
@@ -141,7 +122,8 @@ storiesOf("Work|Blocks/Media Block", module)
           />
         </Card>
         <Card>
-          <MediaBlock media={image} 
+          <MediaBlock
+            media={image}
             body={
               <>
                 <Title text="Media Block - Vertical (reverse)" />
@@ -153,7 +135,8 @@ storiesOf("Work|Blocks/Media Block", module)
           />
         </Card>
         <Card>
-          <MediaBlock media={image} 
+          <MediaBlock
+            media={image}
             body={
               <>
                 <Title text="Media Block - Inline" />
@@ -164,7 +147,8 @@ storiesOf("Work|Blocks/Media Block", module)
           />
         </Card>
         <Card>
-          <MediaBlock media={image} 
+          <MediaBlock
+            media={image}
             body={
               <>
                 <Title text="Media Block - Inline (reverse)" />
