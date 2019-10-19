@@ -24,23 +24,13 @@ function LayerCardBar({
 }) {
   return (
     <Piece id={id} disabled={disabled}>
-      {disabled ? (
-        <Bar
+      <Bar
         contentAlign="center"
-          padding="2x"
-          left={<Switch label={title} disabled onChange={onChange} />}
-          right={<IconBlock style={disabledblockStyle}>{icons}</IconBlock>}
-          rightWidth="9em"
-        />
-      ) : (
-        <Bar
-        contentAlign="center"
-          padding="2x"
-          left={<Switch label={title} onChange={onChange} />}
-          right={<IconBlock style={blockStyle}>{icons}</IconBlock>}
-          rightWidth="9em"
-        />
-      )}
+        padding="2x"
+        left={<Switch label={title} disabled={disabled} onChange={onChange} />}
+        right={<IconBlock style={disabled ? disabledblockStyle : blockStyle}>{icons}</IconBlock>}
+        rightWidth="9em"
+      />
     </Piece>
   );
 }

@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import Button from "atoms/Button";
@@ -12,11 +11,23 @@ const roles = [
 ];
 
 const userCommands = [
-  { id: "manageRoles", name: "View / Edit Roles", onClickLink: () => { alert("Manage Roles!"); } },
+  {
+    id: "manageRoles",
+    name: "View / Edit Roles",
+    onClickLink: () => {
+      alert("Manage Roles!");
+    },
+  },
 ];
 
 const roleCommands = [
-  { id: "manageUsers", name: "View / Edit Users", onClickLink: () => { alert("Manage Users!"); } },
+  {
+    id: "manageUsers",
+    name: "View / Edit Users",
+    onClickLink: () => {
+      alert("Manage Users!");
+    },
+  },
 ];
 
 const users = [
@@ -27,63 +38,83 @@ const users = [
   { name: "pnguyen", roles: ["Developer", "Acquisitions"], enabled: true },
 ];
 
-const rolePermissions = [{
-  role: "Marketing",
-  folders: [{
-    folder: "BDE811.Marketing",
-    permissions: ["Read"],
-  }],
-}, {
-  role: "Acquisitions",
-  folders: [{
-    folder: "BDE811.Acquisitions",
-    permissions: ["Write"],
-  }],
-}, {
-  role: "Builder / Developer",
-  folders: [{
-    folder: "BDE811.Acquisitions",
-    permissions: ["Read"],
-  }, {
-    folder: "BDE811.Developer",
-    permissions: ["Read", "Write"],
-  }],
-}, {
-  role: "Admin",
-  folders: [{
-    folder: "BDE811.Public",
-    permissions: ["Read", "Write"],
-  }, {
-    folder: "BDE811.Marketing",
-    permissions: ["Read", "Write"],
-  }, {
-    folder: "BDE811.Acquisitions",
-    permissions: ["Read", "Write"],
-  }, {
-    folder: "BDE811.Developer",
-    permissions: ["Read", "Write"],
-  }],
-}];
+const rolePermissions = [
+  {
+    role: "Marketing",
+    folders: [
+      {
+        folder: "BDE811.Marketing",
+        permissions: ["Read"],
+      },
+    ],
+  },
+  {
+    role: "Acquisitions",
+    folders: [
+      {
+        folder: "BDE811.Acquisitions",
+        permissions: ["Write"],
+      },
+    ],
+  },
+  {
+    role: "Builder / Developer",
+    folders: [
+      {
+        folder: "BDE811.Acquisitions",
+        permissions: ["Read"],
+      },
+      {
+        folder: "BDE811.Developer",
+        permissions: ["Read", "Write"],
+      },
+    ],
+  },
+  {
+    role: "Admin",
+    folders: [
+      {
+        folder: "BDE811.Public",
+        permissions: ["Read", "Write"],
+      },
+      {
+        folder: "BDE811.Marketing",
+        permissions: ["Read", "Write"],
+      },
+      {
+        folder: "BDE811.Acquisitions",
+        permissions: ["Read", "Write"],
+      },
+      {
+        folder: "BDE811.Developer",
+        permissions: ["Read", "Write"],
+      },
+    ],
+  },
+];
 
-storiesOf("Templates|Admin", module).add("User Edit Roles", () => {
-  function userDetails(user) {
-    alert(`User "${user.name}" clicked!`);
-  }
+storiesOf("Templates|Admin", module)
+  .add("User Edit Roles", () => {
+    function userDetails(user) {
+      alert(`User "${user.name}" clicked!`);
+    }
 
-  function addUser() {
-    alert("Add User!");
-  }
+    function addUser() {
+      alert("Add User!");
+    }
 
-  return React.createElement(() => {
-    return (<UserRoles
-      users={users}
-      roles={roles}
-      commands={userCommands}
-      right={<Button label="+Add User" onClick={addUser} />}
-      onClickUser={userDetails}
-    />);
-  });
-})
+    return React.createElement(() => {
+      return (
+        <UserRoles
+          users={users}
+          roles={roles}
+          commands={userCommands}
+          right={<Button label="+Add User" onClick={addUser} />}
+          onClickUser={userDetails}
+        />
+      );
+    });
+  })
   .add("Edit Roles Files", () => {
     function addPermission(role) {
       alert(`Add Permission to role "${role.role}"!`);
@@ -99,12 +130,13 @@ storiesOf("Templates|Admin", module).add("User Edit Roles", () => {
     };
 
     return React.createElement(() => {
-      return (<RolePermissions
-        roles={rolePermissions}
-        commands={roleCommands}
-        right={<Button label="+Add Role" onClick={addRole} />}
-        editRole={editRole}
-      />);
+      return (
+        <RolePermissions
+          roles={rolePermissions}
+          commands={roleCommands}
+          right={<Button label="+Add Role" onClick={addRole} />}
+          editRole={editRole}
+        />
+      );
     });
   });
-

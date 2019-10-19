@@ -11,6 +11,7 @@ import {
   optionsKnob as options,
 } from "@storybook/addon-knobs";
 import Tabs, { Tab } from "blocks/Tabs";
+import Grid from "layout/Grid";
 import TabsNotes from "./Tabs.md";
 
 storiesOf("Blocks|Tabs", module)
@@ -69,7 +70,6 @@ storiesOf("Blocks|Tabs", module)
           { display: "radio" },
           "Tab Group",
         )}
-        isFloating={boolean("float", false, "Tab Group")}
       >
         <Tab
           icon={select(
@@ -264,15 +264,6 @@ storiesOf("Blocks|Tabs", module)
       </Tabs>
     );
   })
-  .add("Floating", () => {
-    return (
-      <Tabs isFloating>
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-      </Tabs>
-    );
-  })
   .add("Icon Tabs", () => {
     return (
       <Tabs>
@@ -289,7 +280,7 @@ storiesOf("Blocks|Tabs", module)
     return React.createElement(() => {
       const [activeSingleTab, setActiveSingleTab] = useState("tab1");
       return (
-        <Tabs columns="" isFloating={false}>
+        <Tabs columns=""  >
           <Tab
             tabLabel="Tab 1"
             isSelected={activeSingleTab === "tab1"}
@@ -319,7 +310,7 @@ storiesOf("Blocks|Tabs", module)
     return React.createElement(() => {
       const [activeToggleTab, setActiveToggleTab] = useState("");
       return (
-        <Tabs columns="" isFloating={false}>
+        <Tabs columns="" >
           <Tab
             tabLabel="Tab 1"
             isSelected={activeToggleTab === "tab1"}
@@ -366,7 +357,7 @@ storiesOf("Blocks|Tabs", module)
       const [activeMultiTab2, setActiveMultiTab2] = useState(false);
       const [activeMultiTab3, setActiveMultiTab3] = useState(false);
       return (
-        <Tabs columns="" isFloating={false}>
+        <Tabs columns="" >
           <Tab
             tabLabel="Tab 1"
             isSelected={activeMultiTab}
@@ -391,4 +382,79 @@ storiesOf("Blocks|Tabs", module)
         </Tabs>
       );
     });
+  })
+  .add("Inline", () => {
+    return React.createElement(() => {
+      const [activeMultiTab, setActiveMultiTab] = useState(true);
+      const [activeMultiTab2, setActiveMultiTab2] = useState(false);
+      const [activeMultiTab3, setActiveMultiTab3] = useState(false);
+      return (
+        <Grid columns="1">
+        <Tabs columns="" >
+          <Tab
+          type="inline"
+            tabLabel="Tab 1"
+            isSelected={activeMultiTab}
+            onClick={() => {
+              setActiveMultiTab(!activeMultiTab);
+            }}
+          />
+          <Tab
+          type="inline"
+            tabLabel="Tab 2"
+            isSelected={activeMultiTab2}
+            onClick={() => {
+              setActiveMultiTab2(!activeMultiTab2);
+            }}
+          />
+          <Tab
+          type="inline"
+            tabLabel="Tab 3"
+            isSelected={activeMultiTab3}
+            onClick={() => {
+              setActiveMultiTab3(!activeMultiTab3);
+            }}
+          />
+        </Tabs>
+      </Grid>
+      );
+    });
+  })
+  .add("Inactive", () => {
+    return React.createElement(() => {
+      const [activeMultiTab, setActiveMultiTab] = useState(true);
+      const [activeMultiTab2, setActiveMultiTab2] = useState(false);
+      const [activeMultiTab3, setActiveMultiTab3] = useState(false);
+      return (
+        <Grid columns="1">
+        <Tabs columns="" >
+          <Tab
+          type="inactive"
+            tabLabel="Tab 1"
+            isSelected={activeMultiTab}
+            onClick={() => {
+              setActiveMultiTab(!activeMultiTab);
+            }}
+          />
+          <Tab
+          type="inactive"
+            tabLabel="Tab 2"
+            isSelected={activeMultiTab2}
+            onClick={() => {
+              setActiveMultiTab2(!activeMultiTab2);
+            }}
+          />
+          <Tab
+          type="inactive"
+            tabLabel="Tab 3"
+            isSelected={activeMultiTab3}
+            onClick={() => {
+              setActiveMultiTab3(!activeMultiTab3);
+            }}
+          />
+        </Tabs>
+      </Grid>
+      );
+    });
   });
+

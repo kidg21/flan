@@ -17,6 +17,7 @@ storiesOf("Application|Style Guides/", module)
         <Headline text="Components" />
         <Title text="This is a Title with text being passed through a prop" />
         <Title text="This is a Title that displays a count" count="1" />
+        <Title text="Results" count="235" bold />
         <Title>
           This is a Title that wraps a text string and an inline
           <Link

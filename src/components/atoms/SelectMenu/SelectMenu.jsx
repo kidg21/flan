@@ -35,14 +35,15 @@ const selectStyles = {
         ? `${colors.success}!important`
         : colors.grey_20,
       "borderBottomColor": colors.grey_20,
+      "boxShadow": "none",
+      "cursor": isDisabled ? "not-allowed" : "pointer",
+      "flexWrap": "nowrap",
       "fontWeight": "normal",
       "letterSpacing": ".5px",
       "minHeight": "2.75rem",
-      "cursor": isDisabled ? "not-allowed" : "pointer",
       ":hover": {
         borderColor: colors.grey_40,
       },
-      "boxShadow": "none",
     };
   },
   placeholder: (styles, { isFocused }) => {
@@ -165,7 +166,6 @@ function SelectMenu({
   id,
   name,
   placeholder,
-  displayInline,
   options,
   selectOptions,
   disabled,
@@ -258,9 +258,8 @@ function SelectMenu({
       isRequired={isRequired}
       disabled={isDisabled} // input attribute
       error={state.error !== null}
-      displayInline={displayInline}
       columns="1"
-      gap="small"
+      gap="tiny"
     >
       {label ? <InputLabel label={label} isRequired={isRequired} /> : null}
       {select}
@@ -292,7 +291,6 @@ SelectMenu.propTypes = {
   isClearable: PropTypes.bool,
   isSearchable: PropTypes.bool,
   isLoading: PropTypes.bool,
-  displayInline: PropTypes.bool,
   isRtl: PropTypes.bool,
   helpText: PropTypes.string,
   onChangeState: PropTypes.func,
@@ -312,7 +310,6 @@ SelectMenu.defaultProps = {
   isClearable: true,
   isSearchable: true,
   isLoading: false,
-  displayInline: false,
   isRtl: false,
   helpText: null,
   onChangeState: null,
