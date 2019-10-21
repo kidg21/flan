@@ -2,6 +2,7 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import Placeholder from "images/placeholders/placeholder-photo.png";
 
 const ImageWrapper = styled.img`
   width: ${(props) => {
@@ -25,7 +26,7 @@ function Image({
       border={border}
       circle={circle}
       className={className}
-      src={src}
+      src={src || Placeholder}
       title={alt}
       width={width}
     />
