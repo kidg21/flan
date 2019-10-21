@@ -21,6 +21,7 @@ export { default as TextInput } from "./atoms/TextInput";
 export { default as Accordion } from "./blocks/Accordion";
 export { default as Banner } from "./blocks/Banner";
 export { default as Bar } from "./blocks/Bar";
+export { default as DataRange } from "./blocks/DataRange";
 export { default as List, ListItem } from "./blocks/List";
 export { default as IconBlock } from "./blocks/IconBlock";
 export { default as InputBlock } from "./blocks/InputBlock";

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { DisabledContext } from "States";
@@ -30,22 +30,45 @@ function DataRange({
   withSelector,
   onChangeSelector,
   optionsSelect,
+  optionsSelectedOptions,
   optionsMax,
   optionsMin,
+  disableLeft,
+  disableRight,
 }) {
+
+  let state = {};
+  let setState = null;
+  if (optionsMax) {
+    state.max = null;
+  } else {
+    state.max = "";
+  }
+  if (optionsMin) {
+    state.min = null;
+  } else {
+    state.min = "";
+  }
+  [state, setState] = useState(state);
   let inputTextColor;
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isLeftDisabled = disableLeft || isDisabled;
+  const isRightDisabled = disableRight || isDisabled;
   if (error && !isDisabled) {
     inputTextColor = "alert";
   }
-  function onChangeMin(currState, newState, setState) {
-    if (onChange) onChange({ min: newState ? newState.selected : currState.target.value });
-    if (setState) setState(newState);
+  function onChangeMin(currState, newState, setMinState) {
+    state.min = newState ? newState.selected : currState.target.value;
+    setState(state);
+    if (onChange) onChange(state);
+    if (setMinState) setMinState(newState);
   }
 
-  function onChangeMax(currState, newState, setState) {
-    if (onChange) onChange({ max: newState ? newState.selected : currState.target.value });
-    if (setState) setState(newState);
+  function onChangeMax(currState, newState, setMaxState) {
+    state.max = newState ? newState.selected : currState.target.value;
+    setState(state);
+    if (onChange) onChange(state);
+    if (setMaxState) setMaxState(newState);
   }
   return (
     <RangeContainer
@@ -66,17 +89,16 @@ function DataRange({
               label={labelMin}
               options={optionsMin}
               onChangeState={onChangeMin}
-              disabled={isDisabled}
-            />
-          ) : (
-            <TextInput
+              disabled={isLeftDisabled}
+            />)
+            :
+            (<TextInput
               label={labelMin}
               options={optionsMin}
               onChange={onChangeMin}
               error={!!error}
-              disabled={isDisabled}
-            />
-          )
+              disabled={isLeftDisabled}
+            />)
         }
         center={
           withSelector ? (
@@ -84,6 +106,7 @@ function DataRange({
               options={optionsSelect}
               label="Options"
               onChangeState={onChangeSelector}
+              selectOptions={optionsSelectedOptions}
               disabled={isDisabled}
             />
           ) : null
@@ -94,17 +117,16 @@ function DataRange({
               label={labelMax}
               options={optionsMax}
               onChangeState={onChangeMax}
-              disabled={isDisabled}
-            />
-          ) : (
-            <TextInput
+              disabled={isRightDisabled}
+            />)
+            :
+            (<TextInput
               label={labelMax}
               options={optionsMax}
               onChange={onChangeMax}
               error={!!error}
-              disabled={isDisabled}
-            />
-          )
+              disabled={isRightDisabled}
+            />)
         }
       />
       {helpText ? <HelpText>{helpText}</HelpText> : null}
@@ -126,9 +148,10 @@ DataRange.propTypes = {
   labelMax: PropTypes.string.isRequired,
   labelMin: PropTypes.string.isRequired,
   onChange: PropTypes.func,
-  optionsSelect: PropTypes.func,
   optionsMax: PropTypes.map,
   optionsMin: PropTypes.map,
+  disableLeft: PropTypes.bool,
+  disableRight: PropTypes.bool,
 };
 DataRange.defaultProps = {
   disabled: false,
@@ -143,6 +166,8 @@ DataRange.defaultProps = {
   optionsSelect: null,
   optionsMax: null,
   optionsMin: null,
+  disableLeft: false,
+  disableRight: false,
 };
 
 export default DataRange;
