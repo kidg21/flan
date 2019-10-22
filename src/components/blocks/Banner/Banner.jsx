@@ -133,7 +133,6 @@ function Banner({
       icon={icon}
       id={id}
       img={img}
-      link={link}
       style={style}
       title={title}
       type={type}
