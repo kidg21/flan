@@ -42,10 +42,10 @@ Image.propTypes = {
   width: PropTypes.number,
 };
 Image.defaultProps = {
-  src: null,
   border: false,
   circle: false,
   className: null,
+  src: null,
   width: null,
 };
 
