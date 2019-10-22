@@ -141,7 +141,7 @@ function Card({ children, className, id, padding }) {
 
 function CardList({ children, classname, columns, gap, id, rows }) {
   return (
-    <CardListWrapper id={id} classname={classname} columns={columns} gap={gap} rows={rows}>
+    <CardListWrapper id={id} className={className} columns={columns} gap={gap} rows={rows}>
       {children}
     </CardListWrapper>
   );
