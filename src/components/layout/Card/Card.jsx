@@ -133,7 +133,7 @@ function Card({ children, className, id, padding }) {
       break;
   }
   return (
-    <CardWrapper cardPadding={cardPadding} className={className} id={id} padding={padding}>
+    <CardWrapper cardPadding={cardPadding} className={className} id={id}>
       {children}
     </CardWrapper>
   );
