@@ -59,11 +59,11 @@ const StyledNumber = styled(StyledText)`
 
 const StyledCode = styled.code`
   background-color: ${(props) => {
-    return props.theme.palette.grey5; 
-}};
+    return props.theme.palette.grey5;
+  }};
   border: 1px solid ${(props) => {
-    return props.theme.palette.grey2; 
-}};
+    return props.theme.palette.grey2;
+  }};
   border-radius: 0.25rem;
   padding: 0.5rem 0.5rem 0.25rem;
   user-select: all;
@@ -261,14 +261,19 @@ Headline.defaultProps = {
   children: null,
 };
 
-function Title({ text, children, ...textProps }) {
-  return <Text {...textProps}>{text || children}</Text>;
+function Title({ text, number, children, ...textProps }) {
+  return <Text count={number} {...textProps}>{text || children}</Text>;
 }
 Title.propTypes = {
+  number: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ]),
   text: PropTypes.string,
   children: PropTypes.node,
 };
 Title.defaultProps = {
+  number: null,
   text: null,
   children: null,
 };

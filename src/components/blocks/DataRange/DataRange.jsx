@@ -17,6 +17,7 @@ const RangeContainer = styled(Grid)`
   }
 `;
 
+// eslint-disable-next-line complexity
 function DataRange({
   disabled,
   error,
@@ -26,6 +27,8 @@ function DataRange({
   label,
   labelMax,
   labelMin,
+  maxValue,
+  minValue,
   onChange,
   withSelector,
   onChangeSelector,
@@ -36,20 +39,6 @@ function DataRange({
   disableLeft,
   disableRight,
 }) {
-
-  let state = {};
-  let setState = null;
-  if (optionsMax) {
-    state.max = null;
-  } else {
-    state.max = "";
-  }
-  if (optionsMin) {
-    state.min = null;
-  } else {
-    state.min = "";
-  }
-  [state, setState] = useState(state);
   let inputTextColor;
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   const isLeftDisabled = disableLeft || isDisabled;
@@ -58,16 +47,14 @@ function DataRange({
     inputTextColor = "alert";
   }
   function onChangeMin(currState, newState, setMinState) {
-    state.min = newState ? newState.selected : currState.target.value;
-    setState(state);
-    if (onChange) onChange(state);
+    const newMinValue = newState ? newState.selected : currState.target.value;
+    if (onChange) onChange({ min: newMinValue, max: maxValue });
     if (setMinState) setMinState(newState);
   }
 
   function onChangeMax(currState, newState, setMaxState) {
-    state.max = newState ? newState.selected : currState.target.value;
-    setState(state);
-    if (onChange) onChange(state);
+    const newMaxValue = newState ? newState.selected : currState.target.value;
+    if (onChange) onChange({ min: minValue, max: newMaxValue });
     if (setMaxState) setMaxState(newState);
   }
   return (
@@ -90,6 +77,7 @@ function DataRange({
               options={optionsMin}
               onChangeState={onChangeMin}
               disabled={isLeftDisabled}
+              selectOptions={minValue}
             />)
             :
             (<TextInput
@@ -98,6 +86,7 @@ function DataRange({
               onChange={onChangeMin}
               error={!!error}
               disabled={isLeftDisabled}
+              value={minValue}
             />)
         }
         center={
@@ -118,6 +107,7 @@ function DataRange({
               options={optionsMax}
               onChangeState={onChangeMax}
               disabled={isRightDisabled}
+              selectOptions={maxValue}
             />)
             :
             (<TextInput
@@ -126,6 +116,7 @@ function DataRange({
               onChange={onChangeMax}
               error={!!error}
               disabled={isRightDisabled}
+              value={maxValue}
             />)
         }
       />
@@ -143,8 +134,11 @@ DataRange.propTypes = {
   isRequired: PropTypes.bool,
   label: PropTypes.string,
   withSelector: PropTypes.bool,
+  maxValue: PropTypes.oneOfType([PropTypes.string, PropTypes.shape({})]),
+  minValue: PropTypes.oneOfType([PropTypes.string, PropTypes.shape({})]),
   onChangeSelector: PropTypes.func,
   optionsSelect: PropTypes.map,
+  optionsSelectedOptions: PropTypes.shape({}),
   labelMax: PropTypes.string.isRequired,
   labelMin: PropTypes.string.isRequired,
   onChange: PropTypes.func,
@@ -164,10 +158,13 @@ DataRange.defaultProps = {
   withSelector: false,
   onChangeSelector: null,
   optionsSelect: null,
+  optionsSelectedOptions: null,
   optionsMax: null,
   optionsMin: null,
   disableLeft: false,
   disableRight: false,
+  minValue: null,
+  maxValue: null,
 };
 
 export default DataRange;

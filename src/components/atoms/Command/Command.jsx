@@ -52,8 +52,8 @@ const CommandName = styled(Title)`
   &:focus {
     border: 1px solid
       ${props => {
-        return props.theme.palette.primary;
-      }};
+    return props.theme.palette.primary;
+  }};
     outline: none;
   }
   cursor: pointer;
@@ -163,11 +163,11 @@ function Command({ align, command, disabled, icon, id, label, onClick, size }) {
 Command.propTypes = {
   align: PropTypes.oneOf(["center", "right"]),
   command: PropTypes.string,
-  disabled: PropTypes.boolean,
+  disabled: PropTypes.bool,
   icon: PropTypes.string,
   id: PropTypes.string,
   label: PropTypes.string,
-  onClick: PropTypes.node,
+  onClick: PropTypes.func,
   size: PropTypes.oneOf(["small", "large"]),
 };
 
