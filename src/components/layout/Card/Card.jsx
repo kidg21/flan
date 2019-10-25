@@ -139,7 +139,7 @@ function Card({ children, className, id, padding }) {
   );
 }
 
-function CardList({ children, classname, columns, gap, id, rows }) {
+function CardList({ children, className, columns, gap, id, rows }) {
   return (
     <CardListWrapper id={id} className={className} columns={columns} gap={gap} rows={rows}>
       {children}
