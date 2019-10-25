@@ -2,65 +2,49 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Image from "atoms/Image";
+import Grid from "layout/Grid";
+import Card from "layout/Card";
+import Bar from "blocks/Bar";
 import Icon from "atoms/Icon";
 import Title, { Description, Link } from "base/Typography";
 
-const StyledBanner = styled.div`
-  display: flex;
-  align-items: flex-start;
-  align-content: flex-start;
-  position: relative;
-  background-color: ${(props) => {
-    return props.theme.background.default;
-  }};
-  color: ${(props) => {
-    return props.theme.text.primary;
-  }};
-  border: 1px solid;
+const StyledBanner = styled(Card)`
+  border: 2px solid;
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.grey5;
+    return props.theme.palette[props.borderColor] || props.theme.palette.grey4;
   }};
   border-radius: 5px;
-  padding: 1em;
-  width: 100%;
 `;
 
 const StatusBadge = styled.div`
   background-color: ${(props) => {
-    return props.theme.palette[props.badgeBG] || "";
+    return props.theme.palette[props.badgeBG] || props.theme.palette.grey;
   }};
   color: ${(props) => {
-    return props.theme.palette[props.badgeBG] ? props.theme.palette.white : "";
+    return props.theme.palette.white;
   }};
   padding: ${(props) => {
     return props.badgeBG ? ".5em" : "";
   }};
-  margin-right: 1em;
   border-radius: 100%;
-  cursor: default;
-`;
-
-const BannerImage = styled(Image)`
-  flex: none;
-  margin-right: 1em;
-`;
-
-const Message = styled.section`
-  display: grid;
-  grid-gap: 0.25rem;
-  flex: auto;
-  margin-right: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   align-self: center;
-  > * {
-    margin-bottom: 0;
-  }
+  width: 2.5em;
+  height: 2.5em;
 `;
 
-const Close = styled.section`
+const Message = styled(Grid)`
+  align-self: center;
+  padding-right: 1.5em;
+`;
+
+const Close = styled(Icon)`
   position: absolute;
-  top: 1em;
-  right: 1em;
+  top: 0.75em;
+  right: 0.75em;
+  cursor: pointer;
   opacity: 0.5;
   &:hover {
     opacity: 1;
@@ -68,31 +52,18 @@ const Close = styled.section`
 `;
 
 function Banner({
-  description, href, icon, id, img, link, onClick, onClose, style, title, type,
+  description, href, icon, id, link, onClick, onClose, title, type,
 }) {
   let bannerType;
   let color;
   let badgeBG = color;
   switch (type) {
-    case "media":
-      if (icon) {
-        bannerType = (
-          <StatusBadge>
-            <Icon icon={icon} size="2x" fixedWidth />
-          </StatusBadge>
-        );
-      } else if (img) {
-        bannerType = (
-          <BannerImage src={img} width="3em" />
-        );
-      }
-      break;
     case "info":
       color = "info";
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
-          <Icon icon="info" fixedWidth type="inverse" />
+          <Icon icon="info" size="lg" fixedWidth type="inverse" />
         </StatusBadge>
       );
       break;
@@ -101,7 +72,7 @@ function Banner({
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
-          <Icon icon="check" fixedWidth type="inverse" />
+          <Icon icon="check" size="lg" fixedWidth type="inverse" />
         </StatusBadge>
       );
       break;
@@ -110,7 +81,7 @@ function Banner({
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
-          <Icon icon="alert" fixedWidth type="inverse" />
+          <Icon icon="alert" size="lg" fixedWidth type="inverse" />
         </StatusBadge>
       );
       break;
@@ -119,33 +90,45 @@ function Banner({
       badgeBG = color;
       bannerType = (
         <StatusBadge badgeBG={badgeBG}>
-          <Icon icon="close" fixedWidth type="inverse" />
+          <Icon icon="close" size="lg" fixedWidth type="inverse" />
         </StatusBadge>
       );
       break;
     default:
       break;
   }
+  if (icon) {
+    bannerType = (
+      <StatusBadge badgeBG={badgeBG}>
+        {type ? (
+          <Icon icon={icon} size="lg" fixedWidth />
+        ) : (
+          <Icon icon={icon} size="lg" fixedWidth type={type} />
+        )}
+      </StatusBadge>
+    );
+  }
   return (
-    <StyledBanner
-      borderColor={color}
-      description={description}
-      icon={icon}
-      id={id}
-      img={img}
-      style={style}
-      title={title}
-      type={type}
-    >
-      {bannerType}
-      <Message>
-        <Title text={title} />
-        {description ? <Description text={description} /> : null}
-        {link ? <Link href={href} onClick={onClick}>{link}</Link> : null}
-      </Message>
-      <Close>
-        <Icon icon="close" onClick={onClose} />
-      </Close>
+    <StyledBanner borderColor={color} id={id} type={type} padding="4x">
+      <Bar
+        contentAlign={description || link ? "" : "center"}
+        padding="none"
+        left={bannerType}
+        leftWidth="3em"
+        centerAlign="left"
+        center={
+          <Message columns="1" gap="tiny">
+            <Title text={title} />
+            {description ? <Description text={description} /> : null}
+            {link ? (
+              <Link href={href} onClick={onClick}>
+                {link}
+              </Link>
+            ) : null}
+          </Message>
+        }
+      />
+      <Close icon="close" size="lg" onClick={onClose} />
     </StyledBanner>
   );
 }
@@ -155,11 +138,9 @@ Banner.propTypes = {
   href: PropTypes.string,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   id: PropTypes.string,
-  img: PropTypes.string,
   link: PropTypes.string,
   onClick: PropTypes.func,
   onClose: PropTypes.func,
-  style: PropTypes.string,
   title: PropTypes.string.isRequired,
   type: PropTypes.oneOf(["media", "info", "success", "warning", "alert"]),
 };
@@ -169,12 +150,10 @@ Banner.defaultProps = {
   href: null,
   icon: null,
   id: null,
-  img: null,
   link: null,
   onClick: null,
   onClose: null,
-  style: null,
   type: null,
 };
 
-export default Banner;
+export { Banner as default };
