@@ -4,11 +4,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
-import {
-  withKnobs,
-  boolean,
-  optionsKnob as options,
-} from "@storybook/addon-knobs";
+import { withKnobs, boolean, optionsKnob as options } from "@storybook/addon-knobs";
 import Image from "atoms/Image";
 import Card, { CardList } from "layout/Card";
 import Title, { Description } from "base/Typography";
@@ -31,7 +27,7 @@ const description = (
   <Description text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy." />
 );
 
-storiesOf("Work|Blocks/Media Block", module)
+storiesOf("Blocks|Media Block", module)
   .addParameters({
     info: {
       text: "Media Block info goes here...",
