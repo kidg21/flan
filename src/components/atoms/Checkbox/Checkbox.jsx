@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
-import { InputLabel, HelpText, ErrorText } from "layout/Form";
+import { InputLabel, HelpText, ErrorText, WarningText } from "layout/Form";
 import Grid from "layout/Grid";
 
 const CheckboxWrapper = styled(Grid)`
@@ -71,6 +71,17 @@ const CheckboxLabel = styled.label`
   width: max-content;
   user-select: none;
   cursor: pointer;
+  &:after {
+    display: ${props => (props.isRequired ? "" : "none")};
+    content: "*";
+    color: ${props => {
+      return props.theme.palette.alert;
+    }};
+    font-size: 1.25rem;
+    line-height: 0;
+    vertical-align: middle;
+    padding-left: 0.25em;
+  }
 `;
 
 const InputGroup = styled(Grid)`
@@ -80,7 +91,7 @@ const InputGroup = styled(Grid)`
 `;
 
 function Checkbox({
-  align, checked, error, disabled, id, label, onChange,
+  align, checked, error, disabled, id, label, onChange, isRequired, onFocus, onBlur
 }) {
   let inputTextColor;
   let fillColor;
@@ -130,8 +141,10 @@ function Checkbox({
         onChange={onChange}
         outlineColor={outlineColor}
         tabIndex={tabIndex}
+        onBlur={onBlur}
+        onFocus={onFocus}
       />
-      <CheckboxLabel htmlFor={id}>{label}</CheckboxLabel>
+      <CheckboxLabel htmlFor={id} isRequired={isRequired}>{label}</CheckboxLabel>
     </CheckboxContainer>
   );
 }
@@ -148,6 +161,7 @@ function CheckboxGroup({
   label,
   isRequired,
   onChange,
+  warningText,
 }) {
   let inputTextColor;
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
@@ -181,6 +195,7 @@ function CheckboxGroup({
             );
           })}
       </InputGroup>
+      {warningText && !isDisabled ? <WarningText>{warningText}</WarningText> : null}
       {error && !isDisabled ? <ErrorText>{error}</ErrorText> : null}
     </CheckboxWrapper>
   );
@@ -194,6 +209,8 @@ Checkbox.propTypes = {
   id: PropTypes.string,
   label: PropTypes.string.isRequired,
   onChange: PropTypes.func,
+  onBlur: PropTypes.func,
+  onFocus: PropTypes.func,
 };
 
 Checkbox.defaultProps = {
@@ -203,6 +220,8 @@ Checkbox.defaultProps = {
   error: null,
   id: null,
   onChange: null,
+  onBlur: null,
+  onFocus: null,
 };
 
 CheckboxGroup.propTypes = {
@@ -217,6 +236,7 @@ CheckboxGroup.propTypes = {
   isRequired: PropTypes.bool,
   label: PropTypes.string,
   onChange: PropTypes.func,
+  warningText: PropTypes.string,
 };
 
 CheckboxGroup.defaultProps = {
@@ -231,6 +251,7 @@ CheckboxGroup.defaultProps = {
   isRequired: false,
   label: null,
   onChange: null,
+  warningText: "",
 };
 
 export { Checkbox as default, CheckboxGroup };

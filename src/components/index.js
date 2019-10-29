@@ -56,6 +56,7 @@ export {
   InputLabel,
   HelpText,
   ErrorText,
+  WarningText,
 } from "./layout/Form";
 export { default as Grid } from "./layout/Grid";
 export { default as Layout } from "./layout/Layout";
@@ -65,3 +66,4 @@ export { default as Panel, PanelSection } from "./layout/Panel";
 
 
 export { colors, fonts, shadows, screen, DMPTheme, darkTheme } from "./base/Variables/Variables.jsx";
+export { ThemeProvider } from "styled-components";

@@ -170,7 +170,7 @@ MediaBlock.propTypes = {
   /** Sets the vertical alignment of all content
    * Default: 'top'
    */
-  align: PropTypes.oneOf(["default (top)", "vertical", "inline"]),
+  align: PropTypes.oneOf(["top", "vertical", "inline"]),
   /** Used to define the content in the 'body' section */
   body: PropTypes.node,
   border: PropTypes.boolean,
@@ -188,7 +188,7 @@ MediaBlock.propTypes = {
 };
 
 MediaBlock.defaultProps = {
-  align: null,
+  align: "top",
   body: null,
   border: false,
   children: null,

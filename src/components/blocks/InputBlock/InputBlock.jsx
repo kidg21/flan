@@ -34,6 +34,8 @@ function InputBlock({
   selectOptions,
   text,
   textInputs,
+  onBlur,
+  onFocus,
 }) {
   const [state, setState] = useState({
     input: textInputs.reduce((inputMap, input) => {
@@ -44,9 +46,9 @@ function InputBlock({
   });
 
   function handleChange(e) {
-    const newState = { ...state, input: { ...state.input, [e.target.id]: e.target.value } };
+    const newState = { ...state, input: { ...state.input, [e.currentTarget.id]: e.currentTarget.value } };
     if (onChange) {
-      onChange(state, newState, setState);
+      onChange(state, newState, setState, e);
     } else {
       setState(newState);
     }
@@ -64,6 +66,7 @@ function InputBlock({
     }
   }
 
+
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let inputTextColor;
   let buttonColor;
@@ -78,7 +81,7 @@ function InputBlock({
         error={!!error}
         key={input.id}
         id={input.id}
-        name={input.id}
+        name={input.name || input.id}
         onChange={handleChange}
         pattern={input.pattern}
         placeholder={input.placeholder}
@@ -86,6 +89,8 @@ function InputBlock({
         title={input.title}
         type={input.type}
         value={state.input[input.id]}
+        onBlur={onBlur}
+        onFocus={onFocus}
       />
     );
   });
@@ -228,7 +233,9 @@ InputBlock.propTypes = {
     title: PropTypes.string,
     value: PropTypes.string,
     readonly: PropTypes.bool,
-  })).isRequired,
+  })),
+  onBlur: PropTypes.func,
+  onFocus: PropTypes.func,
 };
 InputBlock.defaultProps = {
   button: null,
@@ -245,6 +252,9 @@ InputBlock.defaultProps = {
   prefix: false,
   selectOptions: null,
   text: null,
+  textInputs: [],
+  onBlur: null,
+  onFocus: null,
 };
 
 export { InputBlock as default };

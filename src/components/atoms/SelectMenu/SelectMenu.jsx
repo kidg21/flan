@@ -180,6 +180,9 @@ function SelectMenu({
   isRtl,
   onChangeState,
   onCreateOption,
+  onBlur,
+  onFocus,
+  isCreatable,
 }) {
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let selectedOpts = [];
@@ -250,8 +253,10 @@ function SelectMenu({
     isRtl: isRtl,
     onChange: changeSelected,
     onCreateOption: onCreateOption ? handleCreateOption : null,
+    onBlur: onBlur,
+    onFocus: onFocus,
   };
-  const select = onCreateOption ? <Creatable {...selectProps} /> : <Select {...selectProps} />;
+  const select = isCreatable || onCreateOption ? <Creatable {...selectProps} /> : <Select {...selectProps} />;
 
   return (
     <SelectMenuContainer
@@ -295,6 +300,9 @@ SelectMenu.propTypes = {
   helpText: PropTypes.string,
   onChangeState: PropTypes.func,
   onCreateOption: PropTypes.func,
+  onBlur: PropTypes.func,
+  onFocus: PropTypes.func,
+  isCreatable: PropTypes.bool,
 };
 
 SelectMenu.defaultProps = {
@@ -314,6 +322,9 @@ SelectMenu.defaultProps = {
   helpText: null,
   onChangeState: null,
   onCreateOption: null,
+  onBlur: null,
+  onFocus: null,
+  isCreatable: false,
 };
 
 export default SelectMenu;

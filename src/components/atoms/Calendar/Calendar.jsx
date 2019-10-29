@@ -3,7 +3,7 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
 import { DisabledContext } from "States";
-import { InputLabel, HelpText, ErrorText } from "layout/Form";
+import { InputLabel, HelpText, ErrorText, WarningText } from "layout/Form";
 import TextInput from "atoms/TextInput";
 
 const CalendarContainer = styled(Grid)`
@@ -26,6 +26,11 @@ function Calendar({
   type,
   value,
   onChange,
+  warningText,
+  onBlur,
+  onFocus,
+  date,
+  time,
 }) {
   let inputFillColor;
   let placeholderColor;
@@ -46,10 +51,30 @@ function Calendar({
     inputBorderColorHover = "alert";
     inputSelectColor = "grey4";
   }
+
+  // datetime might have different props to use
+  // if date/time prop is not passed, uses value/onChange/etc props
+  const inputProps = {
+    date: {
+      value,
+      onChange,
+      onFocus,
+      onBlur,
+      ...date,
+    },
+    time: {
+      value,
+      onChange,
+      onFocus,
+      onBlur,
+      ...time,
+    },
+  };
   const inputTypes = type.toLowerCase() === "datetime" ? ["date", "time"] : [type.toLowerCase()];
   const inputElements = inputTypes.map((currType) => {
     return (
       <TextInput
+        key={`${currType}-${id}`}
         disabled={isDisabled}
         error={!!error}
         id={id}
@@ -61,10 +86,12 @@ function Calendar({
         min={min}
         max={max}
         name={id}
-        onChange={onChange}
+        onChange={inputProps[currType].onChange}
         pattern={pattern}
         type={currType}
-        value={value}
+        value={inputProps[currType].value}
+        onBlur={inputProps[currType].onBlur}
+        onFocus={inputProps[currType].onFocus}
       />
     );
   });
@@ -87,6 +114,7 @@ function Calendar({
       {label ? <InputLabel isRequired={isRequired} label={label} /> : null}
       {inputContainer}
       {helpText ? <HelpText>{helpText}</HelpText> : null}
+      {warningText ? <WarningText>{warningText}</WarningText> : null}
       {error && !isDisabled ? <ErrorText>{error}</ErrorText> : null}
     </CalendarContainer>
   );
@@ -108,6 +136,8 @@ Calendar.propTypes = {
   pattern: PropTypes.string,
   type: PropTypes.oneOf(["date", "time", "datetime"]),
   value: PropTypes.string,
+  date: PropTypes.shape({}),
+  time: PropTypes.shape({}),
 };
 
 Calendar.defaultProps = {
@@ -123,6 +153,9 @@ Calendar.defaultProps = {
   pattern: null,
   type: "date",
   value: null,
+  onChange: () => {},
+  date: {},
+  time: {},
 };
 
 export default Calendar;

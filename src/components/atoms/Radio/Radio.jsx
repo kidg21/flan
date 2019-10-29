@@ -80,7 +80,7 @@ const InputGroup = styled(Grid)`
 `;
 
 function Radio({
-  align, checked, disabled, error, id, label, onChange, name, value,
+  align, checked, disabled, error, id, label, onChange, name, value, onFocus, onBlur,
 }) {
   let inputTextColor;
   let fillColor;
@@ -123,6 +123,8 @@ function Radio({
         id={id}
         name={name}
         onChange={onChange}
+        onFocus={onFocus}
+        onBlur={onBlur}
         outlineColor={outlineColor}
         tabIndex={tabIndex}
         value={value}
@@ -159,7 +161,7 @@ function RadioGroup({
       inputTextColor={inputTextColor}
       id={id}
     >
-     {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
+      {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
       {helpText ? <HelpText>{helpText}</HelpText> : null}
       <InputGroup columns={columns}>
         {children ||
@@ -198,6 +200,8 @@ Radio.propTypes = {
   /** The value property sets or returns the value of the value attribute of the radio button.
    * Define different values for radio buttons in the same group, to identify (on the server side) which one was checked.  */
   value: PropTypes.string,
+  onFocus: PropTypes.func,
+  onBlur: PropTypes.func,
 };
 
 Radio.defaultProps = {
@@ -208,6 +212,8 @@ Radio.defaultProps = {
   id: null,
   onChange: null,
   value: null,
+  onFocus: null,
+  onBlur: null,
 };
 
 RadioGroup.propTypes = {

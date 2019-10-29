@@ -58,7 +58,7 @@ const FormInputs = styled(Grid)`
   }
 `;
 
-function Form({ action, children, columns, description, method, novalidate, subtitle, title }) {
+function Form({ action, children, columns, description, method, novalidate, subtitle, title, onSubmit }) {
   // 1-3 colums with custom override
   let setColumns;
   const _columns = parseInt(columns);
@@ -68,7 +68,7 @@ function Form({ action, children, columns, description, method, novalidate, subt
     setColumns = columns;
   }
   return (
-    <FormWrapper action={action} method={method} novalidate={novalidate}>
+    <FormWrapper action={action} method={method} novalidate={novalidate} onSubmit={onSubmit}>
       {title || subtitle || description ? (
         <FormHeader gap="tiny">
           {title ? <Headline text={title} /> : null}
@@ -85,7 +85,7 @@ function Form({ action, children, columns, description, method, novalidate, subt
 Form.propTypes = {
   action: PropTypes.node,
   children: PropTypes.node,
-  columns: PropTypes.oneOf(["1 (default)", "2", "3"]),
+  columns: PropTypes.oneOf(["1", "2", "3"]),
   description: PropTypes.string,
   method: PropTypes.string,
   novalidate: PropTypes.bool,
@@ -216,26 +216,30 @@ function HelpText({ helpText, disabled, children }) {
   }
 }
 HelpText.propTypes = {
-  helpText: PropTypes.string.isRequired,
+  helpText: PropTypes.string,
+};
+HelpText.propTypes = {
+  helpText: "",
 };
 
 const Error = styled(TextLabel)`
   color: ${props => {
-    return props.theme.text.alert;
+    return props.type === "warning" ? props.theme.text.warning : props.theme.text.alert;
   }};
   user-select: all;
   cursor: initial;
   &::selection {
     background-color: ${props => {
-      return props.theme.background.alert;
+      return props.type === "warning" ? props.theme.text.warning : props.theme.background.alert;
     }};
   }
 `;
-function ErrorText({ error, children }) {
+function ErrorText({type, error, children }) {
   const content = children || error;
+  if (!content) return null;
   if (typeof content === "string") {
     return (
-      <Error>
+      <Error type={type}>
         {content.split("\n").map(text => {
           return (
             <>
@@ -251,7 +255,49 @@ function ErrorText({ error, children }) {
   }
 }
 ErrorText.propTypes = {
-  error: PropTypes.string.isRequired,
+  error: PropTypes.string,
+};
+ErrorText.defaultProps ={
+  error: "",
+}
+
+const Warning = styled(TextLabel)`
+  color: ${props => {
+    return props.theme.text.warning;
+  }};
+  user-select: all;
+  cursor: initial;
+  &::selection {
+    background-color: ${props => {
+      return props.theme.background.warning;
+    }};
+  }
+`;
+function WarningText({ warning, children }) {
+  const content = children || warning;
+  if (!content) return null;
+  if (typeof content === "string") {
+    return (
+      <Warning>
+        {content.split("\n").map(text => {
+          return (
+            <>
+              {text}
+              <br />
+            </>
+          );
+        })}
+      </Warning>
+    );
+  } else {
+    return <Warning>{content}</Warning>;
+  }
+}
+WarningText.propTypes = {
+  warning: PropTypes.string,
+};
+WarningText.defaultProps = {
+  warning: "",
 };
 
-export { Form as default, Section, Label, InputLabel, HelpText, ErrorText };
+export { Form as default, Section, Label, InputLabel, HelpText, ErrorText, WarningText };

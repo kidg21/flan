@@ -163,18 +163,18 @@ function Command({ align, command, disabled, icon, id, label, onClick, size }) {
 Command.propTypes = {
   align: PropTypes.oneOf(["center", "right"]),
   command: PropTypes.string,
-  disabled: PropTypes.boolean,
+  disabled: PropTypes.bool,
   icon: PropTypes.string,
   id: PropTypes.string,
   label: PropTypes.string,
-  onClick: PropTypes.node,
+  onClick: PropTypes.func,
   size: PropTypes.oneOf(["small", "large"]),
 };
 
 Command.defaultProps = {
   align: null,
   command: null,
-  disabled: null,
+  disabled: false,
   icon: null,
   id: null,
   label: "Command",

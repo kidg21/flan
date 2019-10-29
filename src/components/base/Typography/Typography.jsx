@@ -209,7 +209,7 @@ Text.propTypes = {
   children: PropTypes.node,
   count: PropTypes.node,
   type: PropTypes.oneOf(["info", "success", "warning", "alert", "dark", "inverse", "light"]),
-  size: PropTypes.oneOf(["tiny", "small", "large", "xlarge", "xxlarge"]),
+  size: PropTypes.oneOf(["tiny", "small", "large", "xlarge", "xxlarge", "normal"]),
   align: PropTypes.oneOf(["center", "right"]),
   spacing: PropTypes.string,
   styling: PropTypes.oneOf(["underline", "italic"]),
