@@ -46,9 +46,9 @@ function InputBlock({
   });
 
   function handleChange(e) {
-    const newState = { ...state, input: { ...state.input, [e.currentTarget.id]: e.currentTarget.value } };
+    const newState = { ...state, input: { ...state.input, [e.target.id]: e.target.value } };
     if (onChange) {
-      onChange(state, newState, setState, e);
+      onChange(state, newState, setState);
     } else {
       setState(newState);
     }
@@ -65,7 +65,6 @@ function InputBlock({
       setSelectState(currState);
     }
   }
-
 
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let inputTextColor;

@@ -13,7 +13,7 @@ const Arrow = styled(Icon)`
 
 function InformationCardBar({
   id,
-  title, 
+  title,
   children,
   count,
   weight,

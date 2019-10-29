@@ -179,10 +179,11 @@ function InputLabel({ label, isRequired, className, children, disabled, ...props
   );
 }
 InputLabel.propTypes = {
-  label: PropTypes.string.isRequired,
+  label: PropTypes.string,
   isRequired: PropTypes.bool,
 };
 InputLabel.defaultProps = {
+  label: "",
   isRequired: false,
 };
 
@@ -218,28 +219,28 @@ function HelpText({ helpText, disabled, children }) {
 HelpText.propTypes = {
   helpText: PropTypes.string,
 };
-HelpText.propTypes = {
+HelpText.defaultProps = {
   helpText: "",
 };
 
 const Error = styled(TextLabel)`
   color: ${props => {
-    return props.type === "warning" ? props.theme.text.warning : props.theme.text.alert;
+    return props.theme.text.alert;
   }};
   user-select: all;
   cursor: initial;
   &::selection {
     background-color: ${props => {
-      return props.type === "warning" ? props.theme.text.warning : props.theme.background.alert;
+      return props.theme.background.alert;
     }};
   }
 `;
-function ErrorText({type, error, children }) {
+function ErrorText({error, children }) {
   const content = children || error;
   if (!content) return null;
   if (typeof content === "string") {
     return (
-      <Error type={type}>
+      <Error>
         {content.split("\n").map(text => {
           return (
             <>
