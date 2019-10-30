@@ -187,6 +187,15 @@ InputLabel.defaultProps = {
   isRequired: false,
 };
 
+// needed so that each child in the list will have a unique key
+function InnerText({ children }) {
+  return (
+    <React.Fragment>
+      {children}
+      <br />
+    </React.Fragment>
+  );
+}
 const Help = styled(TextLabel)`
   font-weight: initial;
 `;
@@ -198,13 +207,8 @@ function HelpText({ helpText, disabled, children }) {
   if (typeof content === "string") {
     return (
       <Help color={color} disabled={disabled}>
-        {content.split("\n").map(text => {
-          return (
-            <>
-              {text}
-              <br />
-            </>
-          );
+        {content.split("\n").map((text, index) => {
+          return (<InnerText key={`helptext-${index}`}>{text}</InnerText>);
         })}
       </Help>
     );
@@ -241,13 +245,8 @@ function ErrorText({error, children }) {
   if (typeof content === "string") {
     return (
       <Error>
-        {content.split("\n").map(text => {
-          return (
-            <>
-              {text}
-              <br />
-            </>
-          );
+        {content.split("\n").map((text, index) => {
+          return (<InnerText key={`errortext-${index}`}>{text}</InnerText>);
         })}
       </Error>
     );
@@ -280,13 +279,8 @@ function WarningText({ warning, children }) {
   if (typeof content === "string") {
     return (
       <Warning>
-        {content.split("\n").map(text => {
-          return (
-            <>
-              {text}
-              <br />
-            </>
-          );
+        {content.split("\n").map((text, index) => {
+          return (<InnerText key={`warningtext-${index}`}>{text}</InnerText>);
         })}
       </Warning>
     );
