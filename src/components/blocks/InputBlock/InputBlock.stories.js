@@ -72,7 +72,7 @@ const domains = [
   { value: "gov", label: ".gov" },
 ];
 
-storiesOf("Work|Blocks/Input Block", module)
+storiesOf("Blocks|Input Block", module)
   .addParameters({
     info: {
       text: "Input Block info goes here...",
@@ -303,7 +303,7 @@ storiesOf("Work|Blocks/Input Block", module)
   });
 
 // Input Block ( The Input Block Family )
-storiesOf("Work|Blocks/Input Block", module).add("The Input Block Block Family", () => {
+storiesOf("Blocks|Input Block", module).add("The Input Block Block Family", () => {
   return (
     <Panel>
       <PanelSection body>

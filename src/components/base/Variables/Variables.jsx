@@ -74,7 +74,7 @@ export const DMPTheme = {
     white: "#ffffff",
     black: "#000000",
     disabled: "hsl(34, 5%, 94%)",
-    border: "#BBB8B4",
+    border: colors.grey_40,
     inverse: "#ffffff",
     grey: "rgb(142, 142, 147)",
     grey2: "rgb(174, 174, 178)",
