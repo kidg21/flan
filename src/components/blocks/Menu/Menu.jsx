@@ -100,7 +100,7 @@ function MenuComponent({
           return (
             <MenuItem
               key={item.id}
-              onClick={() => { if (item.onClickLink) item.onClickLink(e); }}
+              onClick={() => { if (item.onClickLink) item.onClickLink(item.id); }}
               onMouseOver={closeMenu}
             >
               {item.name}
