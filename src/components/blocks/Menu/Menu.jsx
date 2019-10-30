@@ -1,53 +1,39 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
 import Icon from "atoms/Icon";
-import Card from "layout/Card";
-import Title from "base/Typography";
-import { Darken, Lighten } from "Variables";
+import styled from "styled-components";
 
-const Container = styled.div`
+const MenuContainer = styled.div`
   cursor: pointer;
-  // position: relative;
   line-height: 1.5;
-  display: inline-block;
-  z-index: 1;
 `;
 
-const EditMenu = styled.ul`
-  background: ${(props) => {
-    return props.theme.background.default;
-  }};
-  border-radius: 3px;
-  list-style: none;
-  z-index: 500;
-  padding: 0.25em;
-  padding-top: 0.8em;
-  padding-bottom: 0.8em;
-  bottom: ${(props) => { return props.badgeBottom || ""; }};
-  left: ${(props) => { return props.badgeLeft || ""; }};
-  transform: ${(props) => { return props.setTransform || ""; }};
-  width: auto;
-  min-width: 10em;
-  position: absolute;
-`;
-
-const NestedWrapper = styled.div`
-  display: flex;
-`;
-
-const Item = styled.li`
+const MenuItem = styled.li`
   padding: 0.55em;
   z-index: 501;
   text-align: left;
+`;
 
-  &:hover {
-    ${Darken}
-  }
+const MenuList = styled.ul`
+  background: white;
+  border-radius: 3px;
+  list-style: none;
+  padding: 0.25em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  width: auto;
+  min-width: 10em;
+  max-height: 100px;
+  overflow-x: hidden;
+  overflow-y: auto;
+`;
 
-  &:active {
-    ${Lighten}
-  }
+const MenuPopper = styled.div`
+  position: absolute;
+  z-index: 500;
+  top: ${(props) => { return props.top || ""; }};
+  left: ${(props) => { return props.left || ""; }};
+  transform: ${(props) => { return props.transform || ""; }};
 `;
 
 const MenuBG = styled.div`
@@ -60,128 +46,165 @@ const MenuBG = styled.div`
   touch-action: none;
 `;
 
-function Menu({
-  id, data, position, visible, onClick, icon, level,
+/**
+ * Menu list component that pops out
+ */
+function MenuComponent({
+  id, data, onClick, left, top, transform, submenuDirection,
 }) {
-  let badgeLeft = "100%";
-  let badgeBottom = "100%";
+  const [activeItem, setActiveItem] = useState({});
+
+  function closeMenu() {
+    setActiveItem({});
+  }
+
+  return (
+    <MenuPopper
+      id={id}
+      top={top}
+      left={left}
+      transform={transform}
+      onClick={onClick}
+      onMouseLeave={closeMenu}
+    >
+      <MenuList>
+        {data.map((item) => {
+          // nested submenu
+          if (item.commands) {
+            return (
+              <MenuItem
+                key={item.id}
+                onMouseOver={(e) => {
+                  setActiveItem({
+                    id: item.id,
+                    top: `${e.currentTarget.getBoundingClientRect().top - e.currentTarget.offsetParent.getBoundingClientRect().top}px`,
+                  });
+                }}
+              >
+                {/* TODO: Replace with Command component (need to update branch). use item.icon */}
+                {item.name}
+                <Icon icon={submenuDirection ? "right" : "left"} />
+                {activeItem && activeItem.id === item.id ? (
+                  <MenuComponent
+                    data={item.commands}
+                    onClick={closeMenu}
+                    left={`${submenuDirection ? "" : "-"}100%`}
+                    top={activeItem.top}
+                    submenuDirection={submenuDirection}
+                  />
+                ) : null}
+              </MenuItem>
+            );
+          }
+
+          return (
+            <MenuItem
+              key={item.id}
+              onClick={() => { if (item.onClickLink) item.onClickLink(e); }}
+              onMouseOver={closeMenu}
+            >
+              {item.name}
+            </MenuItem>);
+        })}
+      </MenuList>
+    </MenuPopper>
+  );
+}
+
+MenuComponent.defaultProps = {
+  left: "",
+  top: "",
+  transform: "",
+  submenuDirection: true, // true: right, false: left
+};
+
+MenuComponent.propTypes = {
+  id: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+  data: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string,
+    name: PropTypes.string,
+    onClickLink: PropTypes.func,
+  })).isRequired,
+  left: PropTypes.string,
+  top: PropTypes.string,
+  transform: PropTypes.string,
+  submenuDirection: PropTypes.bool,
+};
+
+/**
+ * Gets the correct css position informatin for the given menu popper position direction
+ * @param {string} position direction the first level menu should open
+ */
+function getCssPosition(position) {
+  let menuLeft;
+  let menuTop;
   let setTransform;
+  let submenuDirection = true;
+  switch (position.toLowerCase()) {
+    case "topleft":
+      setTransform = "translate(-100%, -110%)";
+      submenuDirection = false;
+      break;
+    case "topright":
+      setTransform = "translate(10%, -110%)";
+      break;
+    case "topcenter":
+      setTransform = "translate(-50%, -110%)";
+      break;
+    case "bottomleft":
+      setTransform = "translate(-100%, -5%)";
+      submenuDirection = false;
+      break;
+    case "bottomcenter":
+      setTransform = "translate(-45%, -5%)";
+      break;
+    case "bottomright":
+    default:
+      break;
+  }
+  return ({
+    left: menuLeft, top: menuTop, transform: setTransform, direction: submenuDirection,
+  });
+}
+
+
+/**
+ * Main Menu Component
+ */
+function Menu({
+  id, data, anchorElement, visible, onClick, position,
+}) {
   let visibility = visible;
   let setVisibility = onClick;
   if (!setVisibility) {
     [visibility, setVisibility] = useState(visible);
   }
 
-  const [activeItem, setActiveItem] = useState("");
-
-  function handleMouseEnter(e) {
-    setActiveItem(e.currentTarget.id);
-  }
-
-  function handleMouseLeave() {
-    setActiveItem("");
-  }
-
+  const { top, left, transform, direction } = getCssPosition(position);
   function toggleVisibility() {
     setVisibility(!visibility);
-    setActiveItem("");
   }
 
-  switch (position) {
-    case "topLeft":
-      badgeLeft = "0";
-      setTransform = "translate(-100%, -5%)";
-      break;
-    case "topRight":
-      setTransform = "translate(1%, -9%)";
-      badgeLeft = "0";
-      break;
-    case "bottomRight":
-      badgeBottom = "0";
-      badgeLeft = "0";
-      setTransform = "translate(6%, 95%)";
-      break;
-    case "bottomLeft":
-      badgeBottom = "0";
-      badgeLeft = "0";
-      setTransform = "translate(-106%, 95%)";
-      break;
-    case "bottomCenter":
-      badgeBottom = "0";
-      badgeLeft = "0";
-      setTransform = "translate(-45%, 98%)";
-      break;
-    case "topCenter":
-      badgeBottom = "0";
-      badgeLeft = "0";
-      setTransform = "translate(-45%, -17%)";
-      break;
-    case "left":
-      badgeBottom = "0";
-      badgeLeft = "0";
-      setTransform = "translate(-100%, 85%)";
-      break;
-    default:
-      break;
-  }
   return (
     <React.Fragment>
       {visibility ? <MenuBG onClick={toggleVisibility} /> : null}
-      <Container
-        id={id}
-        onClick={toggleVisibility}
-        onMouseLeave={handleMouseLeave}
-      >
-        {icon || <Icon icon="options" size="lg" />}
+      <MenuContainer onClick={toggleVisibility}>
+        {anchorElement || <Icon icon="settings" />}
         {visibility ? (
-          <Card>
-            <EditMenu
-              setTransform={setTransform}
-              badgeLeft={badgeLeft}
-              badgeBottom={badgeBottom}
-            >
-              {data.map((item) => {
-                if (item.commands) {
-                  return (
-                    <Item key={item.id} id={item.id} onMouseEnter={handleMouseEnter}>
-                      {activeItem === item.id ? (
-                        <Menu
-                          id={item.id}
-                          data={item.commands}
-                          visible
-                          position={position}
-                          level={level + 1}
-                          icon={(<NestedWrapper><Title text={item.name} weight="normal" /><Icon icon="down" /></NestedWrapper>)}
-                        />) : (
-                          <NestedWrapper><Title text={item.name} weight="normal" /><Icon icon="up" /></NestedWrapper>
-                        )
-                      }
-                    </Item>
-                  );
-                }
-                return (
-                  <Item
-                    key={item.id}
-                    id={item.id}
-                    onClick={item.onClickLink}
-                    onMouseEnter={handleMouseEnter}
-                  >
-                    <Title text={item.name} weight="normal" />
-                  </Item>
-                );
-              })}
-            </EditMenu>
-          </Card>
+          <MenuComponent
+            id={id}
+            data={data}
+            left={left}
+            top={top}
+            transform={transform}
+            submenuDirection={direction}
+          />
         ) : null}
-      </Container>
+      </MenuContainer>
     </React.Fragment>
   );
 }
-
-Menu.defaultProps = {
-  level: 0,
-  icon: null,
-};
 
 Menu.propTypes = {
   id: PropTypes.string,
@@ -201,8 +224,7 @@ Menu.propTypes = {
     "topCenter",
     "default",
   ]),
-  level: PropTypes.number,
-  icon: PropTypes.element,
+  anchorElement: PropTypes.element,
 };
 
 Menu.defaultProps = {
@@ -210,6 +232,7 @@ Menu.defaultProps = {
   visible: false,
   onClick: null,
   position: "default",
+  anchorElement: null,
 };
 
 export default Menu;

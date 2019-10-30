@@ -4,7 +4,6 @@ import { withInfo } from "@storybook/addon-info";
 import Grid from "layout/Grid";
 import { Padding } from "helpers/Display";
 import Menu from "blocks/Menu";
-import NestedMenu from "blocks/Menu/NestedMenu.jsx";
 import Card from "layout/Card";
 import Bar from "blocks/Bar";
 
@@ -69,14 +68,7 @@ storiesOf("Blocks|Menu", module)
   .add("Nested Menu Example", () => (
     <Card>
       <Bar
-        center={<Menu data={nestedData} position="bottomLeft" id="top" />}
-      />
-    </Card>
-  ))
-  .add("New Nested Menu Example", () => (
-    <Card>
-      <Bar
-        center={<NestedMenu data={nestedData} position="bottomRight" id="top" />}
+        center={<Menu data={nestedData} position="bottomRight" id="top" />}
       />
     </Card>
   ));
