@@ -7,6 +7,12 @@ const Wrapper = styled.div`
   padding: ${(props) => {
     return props.padding || "";
   }};
+  height: ${(props) => {
+    return props.height || "";
+  }};
+  width: ${(props) => {
+    return props.width || "";
+  }};
 `;
 
 const BoxContainer = styled.div`
@@ -61,8 +67,8 @@ const Container = React.forwardRef(({
   id, height, width, padding, children,
 }, ref) => {
   return (
-    <Wrapper padding={padding}>
-      <BoxContainer id={id} height={height} width={width} ref={ref}>
+    <Wrapper padding={padding} height={height} width={width}>
+      <BoxContainer id={id} height={height ? "100%" : ""} ref={ref}>
         {children}
       </BoxContainer>
     </Wrapper>
