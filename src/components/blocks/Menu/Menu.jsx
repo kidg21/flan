@@ -33,6 +33,7 @@ const MenuPopper = styled.div`
   z-index: 500;
   top: ${(props) => { return props.top || ""; }};
   left: ${(props) => { return props.left || ""; }};
+  right: ${(props) => { return props.right || ""; }};
   transform: ${(props) => { return props.transform || ""; }};
 `;
 
@@ -47,10 +48,10 @@ const MenuBG = styled.div`
 `;
 
 /**
- * Menu list component that pops out
+ * List component that pops out
  */
 function MenuComponent({
-  id, data, onClick, left, top, transform, submenuDirection,
+  id, data, onClick, left, top, transform, submenuDirection, right,
 }) {
   const [activeItem, setActiveItem] = useState({});
 
@@ -63,6 +64,7 @@ function MenuComponent({
       id={id}
       top={top}
       left={left}
+      right={right}
       transform={transform}
       onClick={onClick}
       onMouseLeave={closeMenu}
@@ -78,17 +80,21 @@ function MenuComponent({
                   setActiveItem({
                     id: item.id,
                     top: `${e.currentTarget.getBoundingClientRect().top - e.currentTarget.offsetParent.getBoundingClientRect().top}px`,
+                    left: submenuDirection === "right" ? `${e.currentTarget.offsetParent.getBoundingClientRect().width}px` : "",
+                    right: submenuDirection === "right" ? "" : `${e.currentTarget.offsetParent.getBoundingClientRect().width}px`,
                   });
                 }}
               >
                 {/* TODO: Replace with Command component (need to update branch). use item.icon */}
                 {item.name}
-                <Icon icon={submenuDirection ? "right" : "left"} />
+                <Icon icon={submenuDirection} />
                 {activeItem && activeItem.id === item.id ? (
                   <MenuComponent
+                    id={item.id}
                     data={item.commands}
                     onClick={closeMenu}
-                    left={`${submenuDirection ? "" : "-"}100%`}
+                    right={activeItem.right}
+                    left={activeItem.left}
                     top={activeItem.top}
                     submenuDirection={submenuDirection}
                   />
@@ -114,13 +120,15 @@ function MenuComponent({
 MenuComponent.defaultProps = {
   left: "",
   top: "",
+  right: "",
   transform: "",
-  submenuDirection: true, // true: right, false: left
+  submenuDirection: "right",
+  onClick: null,
 };
 
 MenuComponent.propTypes = {
   id: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
   data: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
     name: PropTypes.string,
@@ -128,8 +136,9 @@ MenuComponent.propTypes = {
   })).isRequired,
   left: PropTypes.string,
   top: PropTypes.string,
+  right: PropTypes.string,
   transform: PropTypes.string,
-  submenuDirection: PropTypes.bool,
+  submenuDirection: PropTypes.string,
 };
 
 /**
@@ -137,37 +146,32 @@ MenuComponent.propTypes = {
  * @param {string} position direction the first level menu should open
  */
 function getCssPosition(position) {
-  let menuLeft;
-  let menuTop;
-  let setTransform;
-  let submenuDirection = true;
+  let transform;
+  let submenuDirection = "right";
   switch (position.toLowerCase()) {
     case "topleft":
-      setTransform = "translate(-100%, -110%)";
-      submenuDirection = false;
+      transform = "translate(-100%, -110%)";
+      submenuDirection = "left";
       break;
     case "topright":
-      setTransform = "translate(10%, -110%)";
+      transform = "translate(10%, -110%)";
       break;
     case "topcenter":
-      setTransform = "translate(-50%, -110%)";
+      transform = "translate(-50%, -110%)";
       break;
     case "bottomleft":
-      setTransform = "translate(-100%, -5%)";
-      submenuDirection = false;
+      transform = "translate(-100%, -5%)";
+      submenuDirection = "left";
       break;
     case "bottomcenter":
-      setTransform = "translate(-45%, -5%)";
+      transform = "translate(-45%, -5%)";
       break;
     case "bottomright":
     default:
       break;
   }
-  return ({
-    left: menuLeft, top: menuTop, transform: setTransform, direction: submenuDirection,
-  });
+  return ({ transform, submenuDirection });
 }
-
 
 /**
  * Main Menu Component
@@ -181,7 +185,7 @@ function Menu({
     [visibility, setVisibility] = useState(visible);
   }
 
-  const { top, left, transform, direction } = getCssPosition(position);
+  const { transform, submenuDirection } = getCssPosition(position);
   function toggleVisibility() {
     setVisibility(!visibility);
   }
@@ -195,10 +199,8 @@ function Menu({
           <MenuComponent
             id={id}
             data={data}
-            left={left}
-            top={top}
             transform={transform}
-            submenuDirection={direction}
+            submenuDirection={submenuDirection}
           />
         ) : null}
       </MenuContainer>
