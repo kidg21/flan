@@ -11,6 +11,7 @@ export { default as Command } from "./atoms/Command";
 export { default as Container } from "./atoms/Container";
 export { default as Divider } from "./atoms/Divider";
 export { default as Icon } from "./atoms/Icon";
+export { default as Image } from "./atoms/Image";
 export { default as Radio, RadioGroup } from "./atoms/Radio";
 export { default as SelectMenu } from "./atoms/SelectMenu";
 export { default as Slider } from "./atoms/Slider";

@@ -53,9 +53,6 @@ const BarLayout = styled.div`
   padding: ${(props) => {
     return props.barPadding || "0.5em 1em";
   }};
-  padding-top: ${(props) => {
-    return props.topPadding || "";
-  }};
   ${Slot} {
     &:only-child {
       padding: 0;
@@ -99,7 +96,7 @@ function Bar({
       barPadding = "1em 1.25em";
       break;
     case "top":
-      topPadding = "1.5em";
+      barPadding = "1.5em 1em 0.5em";
       break;
     case "3x":
       barPadding = "1.5em 1.5em";

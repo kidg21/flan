@@ -7,23 +7,16 @@ import Card, { CardList } from "layout/Card";
 import Icon from "atoms/Icon";
 import IconBlock from "blocks/IconBlock";
 import Command from "atoms/Command";
-import Title from "base/Typography";
+import Title, { Description } from "base/Typography";
 import Bar from "blocks/Bar";
 import BarNotes from "./Bar.md";
 
-const image = (
-  <img
-    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-    width="50px"
-    height="50px"
-  />
-);
 const shortTitle = <Title text="A Standard Title" />;
 const longTitle = <Title text="A Title So Long That It May Take Up Multiple Lines" />;
 const multipleLines = (
   <>
     <Title text="Towgood, Gary T." />
-    <Title text="3082 Yellowstone Dr. Costa Mesa, CA 92612" size="small" weight="normal" />
+    <Description text="3082 Yellowstone Dr. Costa Mesa, CA 92612" />
   </>
 );
 
@@ -115,16 +108,7 @@ storiesOf("Blocks|Bar", module)
       <Card>
         <Bar
           left={<Command align="center" />}
-          center={
-            <>
-              <Title text="Towgood, Gary T." />
-              <Title
-                text="3082 Yellowstone Dr. Costa Mesa, CA 92612"
-                size="small"
-                weight="normal"
-              />
-            </>
-          }
+          center={multipleLines}
           right={<Command align="center" />}
         />
       </Card>
@@ -133,10 +117,10 @@ storiesOf("Blocks|Bar", module)
         <Bar left={shortTitle} right={<Command />} />
       </Card>
       <Card>
-        <Bar left={longTitle} right={<Command />} />
+        <Bar center={longTitle} centerAlign="left" right={<Command />} />
       </Card>
       <Card>
-        <Bar left={multipleLines} right={<Command />} />
+        <Bar center={multipleLines} centerAlign="left" right={<Command />} />
       </Card>
 
       <Card>
@@ -231,19 +215,6 @@ storiesOf("Blocks|Bar", module)
           }
           right={shortTitle}
         />
-      </Card>
-
-      <Card>
-        <Bar left={multipleLines} right={image} />
-      </Card>
-      <Card>
-        <Bar left={image} right={multipleLines} />
-      </Card>
-      <Card>
-        <Bar center={multipleLines} centerAlign="left" right={image} />
-      </Card>
-      <Card>
-        <Bar left={image} center={multipleLines} centerAlign="right" />
       </Card>
     </CardList>
   ));

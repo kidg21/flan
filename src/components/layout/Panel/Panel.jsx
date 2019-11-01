@@ -39,6 +39,9 @@ const PanelSection = styled.section`
   flex: ${(props) => {
     return props.body ? "auto" : "none";
   }};
+  padding: ${(props) => {
+    return props.body ? "1rem" : "";
+  }};
   z-index: ${(props) => {
     return props.body ? "0" : "1";
   }};
@@ -47,9 +50,8 @@ const PanelSection = styled.section`
     return props.body ? "scroll" : "";
   }};
   max-height: 100vh;
-
   box-shadow: ${(props) => {
-    return props.body ? "none" : shadows.panelSectionShadow;
+    return props.body ? "none" : props.theme.shadows.panelSectionShadow;
   }};
   transition: all 0.2s ease-in-out;
   /* Prototype Content - displays when a Panel Section is empty */
