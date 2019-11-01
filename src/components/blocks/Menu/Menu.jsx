@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
+import Command from "atoms/Command";
+import Bar from "blocks/Bar";
 import styled from "styled-components";
 
 const MenuContainer = styled.div`
@@ -85,9 +87,10 @@ function MenuComponent({
                   });
                 }}
               >
-                {/* TODO: Replace with Command component (need to update branch). use item.icon */}
-                {item.name}
-                <Icon icon={submenuDirection} />
+                <Bar
+                  left={<Command icon={item.icon} label={item.name} />}
+                  right={<Icon icon={submenuDirection} />}
+                />
                 {activeItem && activeItem.id === item.id ? (
                   <MenuComponent
                     id={item.id}
@@ -109,7 +112,7 @@ function MenuComponent({
               onClick={() => { if (item.onClickLink) item.onClickLink(item.id); }}
               onMouseOver={closeMenu}
             >
-              {item.name}
+              <Command icon={item.icon} label={item.name} />
             </MenuItem>);
         })}
       </MenuList>
@@ -177,7 +180,7 @@ function getCssPosition(position) {
  * Main Menu Component
  */
 function Menu({
-  id, data, anchorElement, visible, onClick, position,
+  id, data, icon, visible, onClick, position,
 }) {
   let visibility = visible;
   let setVisibility = onClick;
@@ -194,7 +197,7 @@ function Menu({
     <React.Fragment>
       {visibility ? <MenuBG onClick={toggleVisibility} /> : null}
       <MenuContainer onClick={toggleVisibility}>
-        {anchorElement || <Icon icon="settings" />}
+        <Icon icon={icon} />
         {visibility ? (
           <MenuComponent
             id={id}
@@ -226,7 +229,7 @@ Menu.propTypes = {
     "topCenter",
     "default",
   ]),
-  anchorElement: PropTypes.element,
+  icon: PropTypes.string,
 };
 
 Menu.defaultProps = {
@@ -234,7 +237,7 @@ Menu.defaultProps = {
   visible: false,
   onClick: null,
   position: "default",
-  anchorElement: null,
+  icon: "settings",
 };
 
 export default Menu;
