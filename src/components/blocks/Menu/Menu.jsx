@@ -81,7 +81,7 @@ function MenuComponent({
                     id: item.id,
                     top: `${e.currentTarget.getBoundingClientRect().top - e.currentTarget.offsetParent.getBoundingClientRect().top}px`,
                     left: submenuDirection === "right" ? `${e.currentTarget.offsetParent.getBoundingClientRect().width}px` : "",
-                    right: submenuDirection === "right" ? "" : `${e.currentTarget.offsetParent.getBoundingClientRect().width}px`,
+                    right: submenuDirection !== "right" ? `${e.currentTarget.offsetParent.getBoundingClientRect().width}px` : "",
                   });
                 }}
               >
