@@ -198,7 +198,7 @@ const GlobalStyles = createGlobalStyle`
     label {
       font-family: ${fonts.data};
       font-size: 0.876rem;
-      font-weight: 600;
+      font-weight: 500;
       &:empty {
         &:before {
           ${Skeleton};

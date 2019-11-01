@@ -25,6 +25,7 @@ function Calendar({
   pattern,
   type,
   value,
+  onChange,
 }) {
   let inputFillColor;
   let placeholderColor;
@@ -60,6 +61,7 @@ function Calendar({
         min={min}
         max={max}
         name={id}
+        onChange={onChange}
         pattern={pattern}
         type={currType}
         value={value}
@@ -102,6 +104,7 @@ Calendar.propTypes = {
   max: PropTypes.string,
   /** Sets or returns the value of the min attribute of the date field */
   min: PropTypes.string,
+  onChange: PropTypes.func,
   pattern: PropTypes.string,
   type: PropTypes.oneOf(["date", "time", "datetime"]),
   value: PropTypes.string,

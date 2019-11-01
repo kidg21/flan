@@ -1,1 +1,1 @@
-export { default } from "./MediaBlock.jsx"
+export { default } from "./MediaBlock.jsx";

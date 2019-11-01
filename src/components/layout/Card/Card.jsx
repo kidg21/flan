@@ -9,7 +9,9 @@ const CardPiece = styled.div`
   display: flex;
   flex-direction: column;
   flex: none;
-  padding: ${props => props.padding || ""};
+  padding: ${props => {
+    return props.piecePadding || "";
+  }};
   width: 100%;
   background: ${props => {
     return props.theme.palette[props.backgroundColor] || props.theme.background.default;
@@ -18,7 +20,7 @@ const CardPiece = styled.div`
     return props.theme.text[props.textColor] || props.theme.text.primary;
   }};
   &:hover {
-    box-shadow: ${props => (props.hover ? shadows.dropShadow : "")};
+    box-shadow: ${props => (props.hover ? props.theme.shadows.dropShadow : "")};
     cursor: ${props => (props.hover ? "pointer" : "")};
   }
   /* Prototype Content - displays when a Card is empty */
@@ -36,7 +38,9 @@ const CardPiece = styled.div`
 
 const CardWrapper = styled(CardPiece)`
   position: relative;
-  filter: ${shadows.cardShadow};
+  filter: ${props => {
+    return props.theme.shadows.cardShadow;
+  }};
   /* Square off rounded edges of any direct children of Cards */
   /* Prototype Content - displays when a Card is empty */
   &:empty {
@@ -54,6 +58,7 @@ const CardWrapper = styled(CardPiece)`
 const CardListWrapper = styled(Grid)`
   ${CardWrapper} {
     border-radius: 5px;
+    height: 100%;
   }
   /* Prototype Content - displays when a Card List is empty */
   &:empty {
@@ -64,66 +69,99 @@ const CardListWrapper = styled(Grid)`
   }
 `;
 
-
 function Piece({
-  id,
-  hover,
+  backgroundColor,
   children,
+  className,
+  header,
+  hover,
+  id,
+  onClick,
   padding,
   textColor,
-  backgroundColor,
-  className,
-  style,
-  onClick,
 }) {
+  let piecePadding;
+  switch (padding) {
+    case "1x":
+      piecePadding = "0.25em";
+      break;
+    case "2x":
+      piecePadding = "0.5em";
+      break;
+    case "3x":
+      piecePadding = "0.75em";
+      break;
+    case "4x":
+      piecePadding = "1em";
+      break;
+    default:
+      break;
+  }
   return (
     <CardPiece
-      id={id}
-      padding={padding}
-      className={className}
-      textColor={textColor}
       backgroundColor={backgroundColor}
-      onClick={onClick}
-      style={style}
+      className={className}
+      header={header}
       hover={hover}
+      id={id}
+      onClick={onClick}
+      piecePadding={piecePadding}
+      textColor={textColor}
     >
       {children}
     </CardPiece>
   );
 }
 
-function Card({ id, children, padding, className }) {
+function Card({ children, className, id, padding }) {
+  let cardPadding;
+  switch (padding) {
+    case "1x":
+      cardPadding = "0.25em";
+      break;
+    case "2x":
+      cardPadding = "0.5em";
+      break;
+    case "3x":
+      cardPadding = "0.75em";
+      break;
+    case "4x":
+      cardPadding = "1em";
+      break;
+    default:
+      break;
+  }
   return (
-    <CardWrapper id={id} padding={padding} className={className}>
+    <CardWrapper cardPadding={cardPadding} className={className} id={id}>
       {children}
     </CardWrapper>
   );
 }
 
-function CardList({ id, children, columns, gap, rows }) {
+function CardList({ children, className, columns, gap, id, rows }) {
   return (
-    <CardListWrapper id={id} columns={columns} gap={gap} rows={rows}>
+    <CardListWrapper id={id} className={className} columns={columns} gap={gap} rows={rows}>
       {children}
     </CardListWrapper>
   );
 }
 
 Piece.propTypes = {
-  id: PropTypes.string,
   children: PropTypes.node,
-  padding: PropTypes.node,
   className: PropTypes.string,
   header: PropTypes.bool,
-  style: PropTypes.object,
+  id: PropTypes.string,
+  padding: PropTypes.oneOf(["default (none)", "1x", "2x", "3x", "4x"]),
 };
 Card.propTypes = {
-  id: PropTypes.string,
   children: PropTypes.node,
   className: PropTypes.string,
+  id: PropTypes.string,
+  padding: PropTypes.oneOf(["default (none)", "1x", "2x", "3x", "4x"]),
 };
 CardList.propTypes = {
-  id: PropTypes.string,
   children: PropTypes.node,
+  className: PropTypes.string,
   /** Defines the widths of grid columns
    *
    * Options: Any switch case or any standard value accepted by the CSS Grid property, 'grid-template-columns'.
@@ -161,6 +199,7 @@ CardList.propTypes = {
       "[grid-template-rows]",
     ]),
   ]),
+  id: PropTypes.string,
   /** Defines the heights of grid rows
    *
    * Options: Any switch case or any standard value accepted by the CSS Grid property, 'grid-template-rows'.

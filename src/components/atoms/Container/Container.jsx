@@ -27,7 +27,7 @@ const BoxContainer = styled.div`
   }};
   border: 1px solid
     ${(props) => {
-    return props.theme.palette.grey6;
+    return props.theme.palette.grey5;
   }};
   border-radius: 5px;
 
@@ -37,7 +37,9 @@ const BoxContainer = styled.div`
   }
 
   ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0.5px 0 0px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0.5px 0 0px ${(props) => {
+      return props.theme.palette.grey5;
+    }};
   }
 
   ::-webkit-scrollbar-thumb {
@@ -50,7 +52,9 @@ const BoxContainer = styled.div`
 }
 
 ::-webkit-scrollbar-track:horizontal {
-  -webkit-box-shadow: inset 0.5px 0 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0.5px 0 0px ${(props) => {
+    return props.theme.palette.grey5;
+  }};
 }
 
 
