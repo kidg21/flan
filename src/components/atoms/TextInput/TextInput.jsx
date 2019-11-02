@@ -38,7 +38,7 @@ const Input = styled.input`
   }
   &:hover {
     border-color: ${(props) => {
-    return props.theme.palette[props.inputBorderColorHover] || props.theme.palette.border;
+    return props.theme.palette[props.inputBorderColorHover] || props.theme.border;
   }};
     }
   }
@@ -47,8 +47,11 @@ const Input = styled.input`
     return props.theme.palette[props.inputBorderColorHover] || props.theme.palette.secondary;
   }};
     ::selection {
+      color: ${(props) => {
+    return props.theme.text.inverse;
+  }};
       background-color: ${(props) => {
-    return props.theme.palette[props.inputSelectColor] || props.theme.palette.grey5;
+    return props.theme.palette[props.inputSelectColor] || props.theme.palette.primaryLight;
   }};
     }
   }
@@ -108,14 +111,15 @@ function TextInput({
   if (isDisabled) {
     inputTextColor = "disabled";
     inputFillColor = "disabled";
-    inputBorderColor = "grey4";
+    inputBorderColor = "grey5";
   }
 
   if (error && !disabled) {
     inputTextColor = "alert";
-    inputBorderColor = "alertTint";
-    inputBorderColorHover = "alert";
-    inputSelectColor = "alert";
+    inputFillColor = "alertTint";
+    inputBorderColor = "alertLight";
+    inputBorderColorHover = "alertBright";
+    inputSelectColor = "alertLight";
   }
 
   return (

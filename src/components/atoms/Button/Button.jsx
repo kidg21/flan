@@ -51,6 +51,7 @@ const StyledButton = styled.button`
   }};
   transition: all 0.15s ease;
 
+  &:focus,
   &:hover {
     ${Darken};
     border-bottom: ${(props) => {
@@ -164,7 +165,7 @@ function Button({
   }
   if (isDisabled) {
     fontColor = "white";
-    backgroundColor = "grey3";
+    backgroundColor = "grey4";
   }
 
   switch (size && size.toLowerCase()) {
@@ -198,6 +199,7 @@ function Button({
       name={id}
       onClick={onClick}
       style={style}
+      tabIndex={disabled ? "-1" : "1"}
       type={type}
       underlineColor={underlineColor}
     >

@@ -28,10 +28,10 @@ const OuterBlock = styled.div`
       props.warning ||
       props.alert) &&
     css`
-      color: ${colors.grey_light};
+      color: ${colors.greyLight};
       box-shadow: ${shadows.lightBorderShadow};
       a {
-        color: ${colors.grey_light};
+        color: ${colors.greyLight};
       }
     `}
   ${(
@@ -40,8 +40,8 @@ const OuterBlock = styled.div`
   ) =>
     props.dark &&
     css`
-      ${"" /* background-color: ${colors.grey_dark}; */}
-      background-color: ${props => colors.grey_dark};
+      ${"" /* background-color: ${colors.greyDark}; */}
+      background-color: ${props => colors.greyDark};
     `}
   ${(
     // 'Dark Grey' background
@@ -49,7 +49,7 @@ const OuterBlock = styled.div`
   ) =>
     props.greyDark &&
     css`
-      background-color: ${colors.grey_60};
+      background-color: ${colors.grey60};
     `}
   ${(
     // 'Anchor' background
@@ -57,7 +57,7 @@ const OuterBlock = styled.div`
   ) =>
     props.anchor &&
     css`
-      background-color: ${colors.anchor};
+      background-color: ${colors.blue};
     `}
   ${(
     // 'Success' background

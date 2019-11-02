@@ -38,7 +38,7 @@ const StyledSwitch = styled.div`
   height: 1.2rem;
   border: 1px solid;
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.border;
+    return props.theme.palette[props.borderColor] || props.theme.border;
   }};
   border-radius: 1em;
   background-color: ${(props) => {
@@ -59,7 +59,7 @@ const Circle = styled.div`
   }};
   border: 1px solid;
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.border;
+    return props.theme.palette[props.borderColor] || props.theme.border;
   }};
   border-radius: 100%;
   width: 1rem;

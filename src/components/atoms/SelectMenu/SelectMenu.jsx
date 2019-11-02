@@ -26,15 +26,15 @@ const selectStyles = {
   // Toggle UI
   control: (styles, { isDisabled, isFocused }) => {
     let bgColor = "";
-    if (!isFocused) bgColor = isDisabled ? colors.grey_light : colors.white;
+    if (!isFocused) bgColor = isDisabled ? colors.greyLight : colors.white;
 
     return {
       ...styles,
       "backgroundColor": bgColor,
       "borderColor": isFocused
         ? `${colors.success}!important`
-        : colors.grey_20,
-      "borderBottomColor": colors.grey_20,
+        : colors.grey20,
+      "borderBottomColor": colors.grey20,
       "boxShadow": "none",
       "cursor": isDisabled ? "not-allowed" : "pointer",
       "flexWrap": "nowrap",
@@ -42,7 +42,7 @@ const selectStyles = {
       "letterSpacing": ".5px",
       "minHeight": "2.75rem",
       ":hover": {
-        borderColor: colors.grey_40,
+        borderColor: colors.grey40,
       },
     };
   },
@@ -50,7 +50,7 @@ const selectStyles = {
     return {
       ...styles,
       fontFamily: fonts.data,
-      color: isFocused ? colors.grey_60 : colors.grey_60,
+      color: isFocused ? colors.grey60 : colors.grey60,
       letterSpacing: ".5px",
       fontWeight: 400,
     };
@@ -68,21 +68,21 @@ const selectStyles = {
   clearIndicator: (styles, { isFocused }) => {
     return {
       ...styles,
-      color: isFocused ? colors.grey_40 : colors.grey_20,
+      color: isFocused ? colors.grey40 : colors.grey20,
     };
   },
   // pipe
   indicatorSeparator: (styles, { isDisabled }) => {
     return {
       ...styles,
-      backgroundColor: isDisabled ? colors.grey_40 : colors.grey_20,
+      backgroundColor: isDisabled ? colors.grey40 : colors.grey20,
     };
   },
   // down arrow
   dropdownIndicator: (styles, { isFocused }) => {
     return {
       ...styles,
-      color: isFocused ? colors.grey_60 : colors.grey_60,
+      color: isFocused ? colors.grey60 : colors.grey60,
     };
   },
   // multi element background
@@ -99,7 +99,7 @@ const selectStyles = {
     return {
       ...styles,
       fontFamily: fonts.data,
-      color: colors.grey_80,
+      color: colors.grey80,
     };
   },
   // multi element 'x' background
@@ -107,10 +107,10 @@ const selectStyles = {
     return {
       ...styles,
       ":hover": {
-        backgroundColor: colors.grey_40,
-        color: colors.grey_80,
+        backgroundColor: colors.grey40,
+        color: colors.grey80,
       },
-      "color": colors.grey_60,
+      "color": colors.grey60,
     };
   },
   // options menu
@@ -122,17 +122,17 @@ const selectStyles = {
       letterSpacing: ".5px",
       margin: ".25rem 0",
       border: "1px solid",
-      borderColor: colors.grey_40,
+      borderColor: colors.grey40,
       boxShadow: shadows.dropShadow,
     };
   },
   // Menu Options
   option: (styles, { isDisabled, isFocused, isSelected }) => {
-    let color = colors.grey_80;
+    let color = colors.grey80;
     if (isDisabled) {
-      color = colors.grey_40;
+      color = colors.grey40;
     } else if (isSelected) {
-      color = colors.grey_20;
+      color = colors.grey20;
     } else if (isFocused) {
       color = colors.black;
     }
@@ -150,7 +150,7 @@ const SelectMenuContainer = styled(Grid)`
   color: ${(props) => {
     let color = "";
     if (props.error) color = colors.alert;
-    else if (props.disabled) color = colors.grey_40;
+    else if (props.disabled) color = colors.grey40;
     return color;
   }};
   width: 100%;

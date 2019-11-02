@@ -41,7 +41,7 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
     return props.theme.palette[props.fillColor] || props.theme.background.default;
   }};
   border-color: ${(props) => {
-    return props.theme.palette[props.outlineColor] || props.theme.palette.border;
+    return props.theme.palette[props.outlineColor] || props.theme.border;
   }};
   width: 1.1rem;
   height: 1.1rem;

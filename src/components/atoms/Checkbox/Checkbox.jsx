@@ -41,7 +41,7 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
     return props.theme.palette[props.fillColor] || props.theme.background.default;
   }};
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.border;
+    return props.theme.palette[props.borderColor] || props.theme.border;
   }};
   width: 1rem;
   height: 1rem;
