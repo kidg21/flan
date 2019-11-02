@@ -12,8 +12,11 @@ const StyledText = styled.h4`
     return props.fontFamily || "inherit";
   }};
   color: ${(props) => {
-    return props.theme.text[props.textColor] || props.theme.text.primary;
+    return props.theme.text[props.textColor] || "inherit";
   }};
+  /* color: ${(props) => {
+    return props.theme.text[props.textColor] || props.theme.text.primary;
+  }}; */
   font-weight: ${(props) => {
     return props.textWeight || "600";
   }};
@@ -129,6 +132,7 @@ function Text({
       textColor = "grey3";
       break;
     default:
+      // textColor = "primary";
       break;
   }
   switch (size && size.toLowerCase()) {
