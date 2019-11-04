@@ -4,7 +4,7 @@ import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
 import Icon from "atoms/Icon";
 import Card from "layout/Card";
-import NewTable from "./NewTable";
+import DataTable from "./DataTable";
 
 // Only columns specified here will be displayed
 const headers = [
@@ -395,7 +395,7 @@ storiesOf("Blocks|Table", module)
           Card,
           null,
           React.createElement(
-            NewTable,
+            DataTable,
             {
               headers: headers,
               rows: data,

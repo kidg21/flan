@@ -48,7 +48,7 @@ function _containedInRowCol(cellRowCol, row, col) {
   return false;
 }
 
-class NewTable extends Component {
+class DataTable extends Component {
   constructor(props) {
     super(props);
     const {
@@ -304,7 +304,7 @@ class NewTable extends Component {
   }
 }
 
-NewTable.defaultProps = {
+DataTable.defaultProps = {
   focusedRow: null,
   scrollTop: null,
   selectedCell: null,
@@ -325,7 +325,7 @@ NewTable.defaultProps = {
   minRowHeight: 40,
 };
 
-NewTable.propTypes = {
+DataTable.propTypes = {
   listId: PropTypes.string.isRequired,
   focusedRow: PropTypes.number,
   rows: PropTypes.arrayOf(PropTypes.shape).isRequired,
@@ -357,4 +357,4 @@ NewTable.propTypes = {
 };
 
 
-export default NewTable;
+export default DataTable;
