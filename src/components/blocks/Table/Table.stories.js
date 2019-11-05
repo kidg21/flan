@@ -4,7 +4,7 @@ import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
 import Icon from "atoms/Icon";
 import Card from "layout/Card";
-import Table from "./Table";
+import DataTable from "./DataTable";
 
 // Only columns specified here will be displayed
 const headers = [
@@ -359,55 +359,57 @@ const data = [
 storiesOf("Blocks|Table", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  .add("Data Table", () => {
-    const [highlightedCell, setHighlightCell] = useState(null);
-    const [selectedCell, setSelectedCell] = useState(null);
-    for (let i = 0; i < data.length; i++) {
-      data[i].options = React.createElement(
-        Icon,
-        {
-          icon: "edit",
-          type: "info",
-          onClick: (e) => {
-            e.stopPropagation();
-            alert(`data entry edit ${i} clicked`);
-          },
-        },
-        null,
-      );
-    }
-
-    const onCellClick = (e, { rowIndex }) => {
-      setSelectedCell({ rowIndex });
-    };
-
-    const onHeaderClick = (e, { columnIndex }) => {
-      alert(`Header ${columnIndex}: ${headers[columnIndex].id} clicked`);
-    };
-
-    const onCellMouseOver = (e, { rowIndex }) => {
-      setHighlightCell({ rowIndex });
-    };
-
-    return (
-      React.createElement(
-        Card,
-        null,
-        React.createElement(
-          Table,
+  .add("Data Table", () =>
+    React.createElement(() => {
+      const [highlightedCell, setHighlightCell] = useState(null);
+      const [selectedCell, setSelectedCell] = useState(null);
+      for (let i = 0; i < data.length; i++) {
+        data[i].options = React.createElement(
+          Icon,
           {
-            headers: headers,
-            rows: data,
-            listId: "foo",
-            onCellClick: onCellClick,
-            onHeaderClick: onHeaderClick,
-            onCellMouseOver: onCellMouseOver,
-            highlightedCell: highlightedCell,
-            selectedCell: selectedCell,
-            columnWidth: 120,
+            icon: "edit",
+            type: "info",
+            onClick: (e) => {
+              e.stopPropagation();
+              alert(`data entry edit ${i} clicked`);
+            },
           },
           null,
-        ),
-      )
-    );
-  });
+        );
+      }
+
+      const onCellClick = (e, { rowIndex }) => {
+        setSelectedCell({ rowIndex });
+      };
+
+      const onHeaderClick = (e, { columnIndex }) => {
+        alert(`Header ${columnIndex}: ${headers[columnIndex].id} clicked`);
+      };
+
+      const onCellMouseOver = (e, { rowIndex }) => {
+        setHighlightCell({ rowIndex });
+      };
+
+      return (
+        React.createElement(
+          Card,
+          null,
+          React.createElement(
+            DataTable,
+            {
+              headers: headers,
+              rows: data,
+              listId: "foo",
+              onCellClick: onCellClick,
+              onHeaderClick: onHeaderClick,
+              onCellMouseOver: onCellMouseOver,
+              highlightedCell: highlightedCell,
+              selectedCell: selectedCell,
+              columnWidth: 120,
+            },
+            null,
+          ),
+        )
+      );
+    })
+  );
