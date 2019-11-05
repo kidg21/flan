@@ -283,7 +283,7 @@ function SelectMenu({
       columns="1"
       gap="tiny"
     >
-      {label ? <InputLabel label={label} isRequired={isRequired} /> : null}
+      {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
       {select}
       {/* Help Text */}
       {helpText ? <HelpText>{helpText}</HelpText> : null}
