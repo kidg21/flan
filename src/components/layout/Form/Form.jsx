@@ -229,70 +229,48 @@ HelpText.defaultProps = {
 
 const Error = styled(TextLabel)`
   color: ${props => {
+    if (props.isWarning) return props.theme.text.warning;
     return props.theme.text.alert;
   }};
   user-select: all;
   cursor: initial;
   &::selection {
     background-color: ${props => {
+      if (props.isWarning) return props.theme.text.warning;
       return props.theme.background.alert;
     }};
   }
 `;
-function ErrorText({error, children }) {
-  const content = children || error;
-  if (!content) return null;
+function ErrorText({ error, children, warningText }) {
+  let content = children || error;
+  let isWarning = false;
+  if (!content) {
+    if (warningText) {
+      content = warningText;
+      isWarning = true;
+    } else {
+      return null;
+    }
+  }
   if (typeof content === "string") {
     return (
-      <Error>
+      <Error isWarning={isWarning}>
         {content.split("\n").map((text, index) => {
           return (<InnerText key={`errortext-${index}`}>{text}</InnerText>);
         })}
       </Error>
     );
   } else {
-    return <Error>{content}</Error>;
+    return <Error isWarning={isWarning}>{content}</Error>;
   }
 }
 ErrorText.propTypes = {
   error: PropTypes.string,
+  warningText: PropTypes.string,
 };
 ErrorText.defaultProps ={
   error: "",
+  warningText: "",
 }
 
-const Warning = styled(TextLabel)`
-  color: ${props => {
-    return props.theme.text.warning;
-  }};
-  user-select: all;
-  cursor: initial;
-  &::selection {
-    background-color: ${props => {
-      return props.theme.background.warning;
-    }};
-  }
-`;
-function WarningText({ warning, children }) {
-  const content = children || warning;
-  if (!content) return null;
-  if (typeof content === "string") {
-    return (
-      <Warning>
-        {content.split("\n").map((text, index) => {
-          return (<InnerText key={`warningtext-${index}`}>{text}</InnerText>);
-        })}
-      </Warning>
-    );
-  } else {
-    return <Warning>{content}</Warning>;
-  }
-}
-WarningText.propTypes = {
-  warning: PropTypes.string,
-};
-WarningText.defaultProps = {
-  warning: "",
-};
-
-export { Form as default, Section, Label, InputLabel, HelpText, ErrorText, WarningText };
+export { Form as default, Section, Label, InputLabel, HelpText, ErrorText };

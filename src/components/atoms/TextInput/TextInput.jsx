@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
-import { InputLabel, HelpText, ErrorText, WarningText } from "layout/Form";
+import { InputLabel, HelpText, ErrorText } from "layout/Form";
 import Grid from "layout/Grid";
 
 const TextInputContainer = styled(Grid)`
@@ -132,6 +132,7 @@ function TextInput({
     inputSelectColor = "alert";
   }
 
+  const errorText = typeof error === "string" ? error : "";
   return (
     <TextInputContainer
       id={id}
@@ -170,8 +171,7 @@ function TextInput({
       {autocompleteDataList}
       {helpText ? <HelpText>{helpText}</HelpText> : null}
       {children}
-      {warningText && !disabled ? <WarningText>{warningText}</WarningText> : null}
-      {typeof error === "string" && !disabled ? <ErrorText>{error}</ErrorText> : null}
+      {!disabled ? <ErrorText warningText={warningText}>{errorText}</ErrorText> : null}
     </TextInputContainer>
   );
 }

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
 import { DisabledContext } from "States";
-import { InputLabel, HelpText, ErrorText, WarningText } from "layout/Form";
+import { InputLabel, HelpText, ErrorText } from "layout/Form";
 import TextInput from "atoms/TextInput";
 
 const CalendarContainer = styled(Grid)`
@@ -100,6 +100,7 @@ function Calendar({
   if (inputTypes.length > 1) {
     inputContainer = <Grid columns="2">{inputElements}</Grid>;
   }
+
   return (
     <CalendarContainer
       className={className}
@@ -114,8 +115,7 @@ function Calendar({
       {label ? <InputLabel isRequired={isRequired} label={label} /> : null}
       {inputContainer}
       {helpText ? <HelpText>{helpText}</HelpText> : null}
-      {warningText ? <WarningText>{warningText}</WarningText> : null}
-      {error && !isDisabled ? <ErrorText>{error}</ErrorText> : null}
+      {!isDisabled ? <ErrorText warningText={warningText}>{error}</ErrorText> : null}
     </CalendarContainer>
   );
 }
