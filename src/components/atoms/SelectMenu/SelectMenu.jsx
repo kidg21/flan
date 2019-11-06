@@ -127,6 +127,13 @@ const selectStyles = {
       boxShadow: shadows.dropShadow,
     };
   },
+
+  menuList: (styles) => {
+    return {
+      ...styles,
+      backgroundColor: "",
+    };
+  },
   // Menu Options
   option: (styles, { isDisabled, isFocused, isSelected }) => {
     let color = colors.grey80;
@@ -182,6 +189,18 @@ function SelectMenu({
   onChangeState,
   onCreateOption,
 }) {
+  let textColor;
+
+  if (disabled) {
+    textColor = "disabled";
+  }
+
+  if (error && !disabled) {
+    textColor = "alert";
+
+  }
+
+  
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let selectedOpts = [];
   if (selectOptions) {
@@ -252,17 +271,18 @@ function SelectMenu({
     onChange: changeSelected,
     onCreateOption: onCreateOption ? handleCreateOption : null,
   };
-  const select = onCreateOption ? <Creatable {...selectProps} /> : <Select {...selectProps} />;
+  const select = onCreateOption ? <Creatable {...selectProps} /> : <Select {...selectProps}/>;
 
   return (
     <SelectMenuContainer
       isRequired={isRequired}
+      textColor={textColor}
       disabled={isDisabled} // input attribute
       error={state.error !== null}
       columns="1"
       gap="tiny"
     >
-      {label ? <InputLabel label={label} isRequired={isRequired} /> : null}
+      {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
       {select}
       {/* Help Text */}
       {helpText ? <HelpText>{helpText}</HelpText> : null}

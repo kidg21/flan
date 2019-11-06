@@ -68,7 +68,7 @@ const Circle = styled.div`
   z-index: 1;
   transition: transform 300ms ease-in-out;
   transform: ${(props) => {
-    return props.checked ? "translateX(120%)" : "translateX(1%)";
+    return props.checked ? "translateX(100%)" : "translateX(1%)";
   }};
   &[disabled],
   &[readonly] {

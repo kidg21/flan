@@ -1,47 +1,42 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
 import Icon from "atoms/Icon";
-import Card from "layout/Card";
-import Title from "base/Typography";
-import {  Darken, Lighten } from "Variables";
+import Command from "atoms/Command";
+import Bar from "blocks/Bar";
+import styled from "styled-components";
 
-const Container = styled.div`
+const MenuContainer = styled.div`
   cursor: pointer;
-  // position: relative;
   line-height: 1.5;
-  display: inline-block;
 `;
 
-const EditMenu = styled.ul`
-  background: ${(props) => {
-    return props.theme.background.default; }};
-  border-radius: 3px;
-  list-style: none;
-  z-index: 500;
-  padding: 0.25em;
-  padding-top: 0.8em;
-  padding-bottom: 0.8em;
-  bottom: ${(props) => { return props.badgeBottom || ""; }};
-  left: ${(props) => { return props.badgeLeft || ""; }};
-  transform: ${(props) => { return props.setTransform || ""; }};
-  width: auto;
-  min-width: 10em;
-  position: absolute;
-`;
-
-const Item = styled.li`
+const MenuItem = styled.li`
   padding: 0.55em;
   z-index: 501;
   text-align: left;
+`;
 
-  &:hover {
-    ${Darken}
-  }
+const MenuList = styled.ul`
+  background: white;
+  border-radius: 3px;
+  list-style: none;
+  padding: 0.25em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  width: auto;
+  min-width: 10em;
+  max-height: 100px;
+  overflow-x: hidden;
+  overflow-y: auto;
+`;
 
-  &:active {
-    ${Lighten}
-  }
+const MenuPopper = styled.div`
+  position: absolute;
+  z-index: 500;
+  top: ${(props) => { return props.top || ""; }};
+  left: ${(props) => { return props.left || ""; }};
+  right: ${(props) => { return props.right || ""; }};
+  transform: ${(props) => { return props.transform || ""; }};
 `;
 
 const MenuBG = styled.div`
@@ -54,79 +49,164 @@ const MenuBG = styled.div`
   touch-action: none;
 `;
 
-function Menu({
-  id, data, position, visible, onClick,
+/**
+ * List component that pops out
+ */
+function MenuComponent({
+  id, data, onClick, left, top, transform, submenuDirection, right,
 }) {
-  let badgeLeft = "100%";
-  let badgeBottom = "100%";
-  let setTransform;
+  const [activeItem, setActiveItem] = useState({});
+
+  function closeMenu() {
+    setActiveItem({});
+  }
+
+  return (
+    <MenuPopper
+      id={id}
+      top={top}
+      left={left}
+      right={right}
+      transform={transform}
+      onClick={onClick}
+      onMouseLeave={closeMenu}
+    >
+      <MenuList>
+        {data.map((item) => {
+          // nested submenu
+          if (item.commands) {
+            return (
+              <MenuItem
+                key={item.id}
+                onMouseOver={(e) => {
+                  setActiveItem({
+                    id: item.id,
+                    top: `${e.currentTarget.getBoundingClientRect().top - e.currentTarget.offsetParent.getBoundingClientRect().top}px`,
+                    left: submenuDirection === "right" ? `${e.currentTarget.offsetParent.getBoundingClientRect().width}px` : "",
+                    right: submenuDirection !== "right" ? `${e.currentTarget.offsetParent.getBoundingClientRect().width}px` : "",
+                  });
+                }}
+              >
+                <Bar
+                  left={<Command icon={item.icon} label={item.name} />}
+                  right={<Icon icon={submenuDirection} />}
+                />
+                {activeItem && activeItem.id === item.id ? (
+                  <MenuComponent
+                    id={item.id}
+                    data={item.commands}
+                    onClick={closeMenu}
+                    right={activeItem.right}
+                    left={activeItem.left}
+                    top={activeItem.top}
+                    submenuDirection={submenuDirection}
+                  />
+                ) : null}
+              </MenuItem>
+            );
+          }
+
+          return (
+            <MenuItem
+              key={item.id}
+              onClick={() => { if (item.onClickLink) item.onClickLink(item.id); }}
+              onMouseOver={closeMenu}
+            >
+              <Command icon={item.icon} label={item.name} />
+            </MenuItem>);
+        })}
+      </MenuList>
+    </MenuPopper>
+  );
+}
+
+MenuComponent.defaultProps = {
+  left: "",
+  top: "",
+  right: "",
+  transform: "",
+  submenuDirection: "right",
+  onClick: null,
+};
+
+MenuComponent.propTypes = {
+  id: PropTypes.string.isRequired,
+  onClick: PropTypes.func,
+  data: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string,
+    name: PropTypes.string,
+    onClickLink: PropTypes.func,
+  })).isRequired,
+  left: PropTypes.string,
+  top: PropTypes.string,
+  right: PropTypes.string,
+  transform: PropTypes.string,
+  submenuDirection: PropTypes.string,
+};
+
+/**
+ * Gets the correct css position informatin for the given menu popper position direction
+ * @param {string} position direction the first level menu should open
+ */
+function getCssPosition(position) {
+  let transform;
+  let submenuDirection = "right";
+  switch (position.toLowerCase()) {
+    case "topleft":
+      transform = "translate(-100%, -110%)";
+      submenuDirection = "left";
+      break;
+    case "topright":
+      transform = "translate(10%, -110%)";
+      break;
+    case "topcenter":
+      transform = "translate(-50%, -110%)";
+      break;
+    case "bottomleft":
+      transform = "translate(-100%, -5%)";
+      submenuDirection = "left";
+      break;
+    case "bottomcenter":
+      transform = "translate(-45%, -5%)";
+      break;
+    case "bottomright":
+    default:
+      break;
+  }
+  return ({ transform, submenuDirection });
+}
+
+/**
+ * Main Menu Component
+ */
+function Menu({
+  id, data, icon, visible, onClick, position,
+}) {
   let visibility = visible;
   let setVisibility = onClick;
   if (!setVisibility) {
     [visibility, setVisibility] = useState(visible);
   }
 
+  const { transform, submenuDirection } = getCssPosition(position);
   function toggleVisibility() {
     setVisibility(!visibility);
   }
-  switch (position) {
-    case "topLeft":
-      badgeLeft = "0";
-      setTransform = "translate(-100%, -5%)";
-      break;
-    case "topRight":
-      setTransform = "translate(1%, -9%)";
-      badgeLeft = "0";
-      break;
-    case "bottomRight":
-      badgeBottom = "0";
-      badgeLeft = "0";
-      setTransform = "translate(6%, 95%)";
-      break;
-    case "bottomLeft":
-      badgeBottom = "0";
-      badgeLeft = "0";
-      setTransform = "translate(-106%, 95%)";
-      break;
-    case "bottomCenter":
-      badgeBottom = "0";
-      badgeLeft = "0";
-      setTransform = "translate(-45%, 98%)";
-      break;
-    case "topCenter":
-      badgeBottom = "0";
-      badgeLeft = "0";
-      setTransform = "translate(-45%, -17%)";
-      break;
-    default:
-      break;
-  }
+
   return (
     <React.Fragment>
       {visibility ? <MenuBG onClick={toggleVisibility} /> : null}
-      <Container
-        id={id}
-        onClick={toggleVisibility}
-      >
-        <Icon icon="options" size="lg" />
+      <MenuContainer onClick={toggleVisibility}>
+        <Icon icon={icon} />
         {visibility ? (
-          <Card>
-            <EditMenu
-              setTransform={setTransform}
-              badgeLeft={badgeLeft}
-              badgeBottom={badgeBottom}
-            >
-              {data.map((item) => {
-                return (
-                  <Item key={item.id} onClick={item.onClickLink}>
-                    <Title text={item.name} weight="normal" />
-                  </Item>
-                );
-              })}
-            </EditMenu>
-          </Card>
+          <MenuComponent
+            id={id}
+            data={data}
+            transform={transform}
+            submenuDirection={submenuDirection}
+          />
         ) : null}
-      </Container>
+      </MenuContainer>
     </React.Fragment>
   );
 }
@@ -149,6 +229,7 @@ Menu.propTypes = {
     "topCenter",
     "default",
   ]),
+  icon: PropTypes.string,
 };
 
 Menu.defaultProps = {
@@ -156,6 +237,7 @@ Menu.defaultProps = {
   visible: false,
   onClick: null,
   position: "default",
+  icon: "settings",
 };
 
 export default Menu;
