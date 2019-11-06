@@ -21,7 +21,7 @@ const StatusBadge = styled.div`
     return props.theme.palette[props.badgeBG] || props.theme.palette.grey;
   }};
   color: ${(props) => {
-    return props.theme.palette.white;
+    return props.theme.palette.backGround;
   }};
   padding: ${(props) => {
     return props.badgeBG ? ".5em" : "";

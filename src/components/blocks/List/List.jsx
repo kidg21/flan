@@ -16,10 +16,10 @@ const ListWrapper = styled.ul`
 const ListItemWrapper = styled.li`
   position: relative;
   color: ${props => {
-    return props.theme.palette[props.itemColor];
+    return props.theme.text[props.itemColor];
   }};
   background-color: ${props => {
-    return props.theme.background[props.itemBGColor] || props.theme.palette.white;
+    return props.theme.background[props.itemBGColor] || props.theme.palette.backGround;
   }};
   border-style: solid;
   border-width: ${props => {
@@ -47,7 +47,7 @@ const ListItemWrapper = styled.li`
       return props.theme.text.disabled;
     }};
     background-color: ${props => {
-      return props.theme.palette.disabled;
+      return props.theme.background.disabled;
     }};
     border-left: none;
   }
@@ -119,7 +119,7 @@ function ListItem({
     default:
       // itemBGColor = "white";
       if (active) {
-        itemColor = "secondary";
+        itemColor = "active";
         itemBGColor = "active";
       }
       if (disabled) {

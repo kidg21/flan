@@ -50,15 +50,15 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   -webkit-appearance: none;
   &:checked {
     background-color: ${(props) => {
-    return props.theme.palette[props.fillColorChecked] || props.theme.palette.secondaryLight;
+    return props.theme.palette[props.fillColorChecked] || props.theme.background.selected;
   }};
     border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.secondary;
+    return props.theme.palette[props.borderColor] || props.theme.background.selected;
   }};
   }
   &:focus {
     outline-color: ${(props) => {
-    return props.theme.palette[props.outlineColor] || props.theme.palette.secondary;
+    return props.theme.palette[props.outlineColor] || props.theme.palette.secondaryLight;
   }};
   }
 `;
@@ -92,18 +92,19 @@ function Checkbox({
   let tabIndex;
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
-    fillColor = "disabled";
-    fillColorChecked = "disabled";
+    borderColor = "grey4";
+    fillColor = "grey5";
+    fillColorChecked = "grey5";
     inputTextColor = "disabled";
     tabIndex = "-1";
   }
   if (error && !isDisabled) {
+    borderColor = "alert";
+    borderColorChecked = "alert";
+    fillColor = "alertLight";
+    fillColorChecked = "alertLight";
     inputTextColor = "alert";
-    fillColor = "alert";
-    borderColor = "alertDark";
     outlineColor = "alertLight";
-    fillColorChecked = "alert";
-    borderColorChecked = "alertDark";
   }
   switch (align) {
     case "right":

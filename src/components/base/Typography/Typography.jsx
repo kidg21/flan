@@ -52,7 +52,7 @@ const StyledText = styled.h4`
 
 const LinkedText = styled(StyledText)`
   color: ${(props) => {
-    return props.theme.text.info;
+    return props.theme.text.link;
   }};
   /* width: max-content; */
 `;
@@ -195,7 +195,8 @@ function Text({
   }
   if (link) {
     as = "a";
-    textColor = "info";
+    textColor = "link";
+    textWeight = "800";
     textWidth = "max-content";
   }
   return (

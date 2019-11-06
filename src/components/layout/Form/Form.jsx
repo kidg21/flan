@@ -7,8 +7,9 @@ import Title, { Headline, SubTitle, Description } from "base/Typography";
 import Grid from "layout/Grid";
 
 const FormWrapper = styled.form`
-  height: 100%;
-  padding: 1rem 1rem 1.5rem;
+  color: ${props => {
+    return props.theme.text.primary;
+  }};
   background-color: ${props => {
     return props.theme.background.default;
   }};
@@ -116,7 +117,7 @@ const StyledLabel = styled.label`
     return props.theme.text[props.color] || "inherit";
   }};
   background-color: ${props => {
-    return props.theme.palette.white;
+    return props.theme.palette.backGround;
   }};
   border: 1px solid
     ${props => {

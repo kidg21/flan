@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React, { useContext, useState } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -7,13 +8,6 @@ import { InputLabel, HelpText, ErrorText } from "layout/Form";
 import Select, { Creatable } from "react-select";
 import { Skeleton } from "helpers";
 import { DisabledContext } from "States";
-
-
-// &:focus {
-//   border-color: ${(props) => {
-//   return props.theme.palette[props.inputBorderColorHover] || props.theme.palette.primaryLight;
-// }};
-
 
 const selectStyles = {
   // Wrapper
@@ -25,16 +19,23 @@ const selectStyles = {
   },
   // Toggle UI
   control: (styles, { isDisabled, isFocused }) => {
-    let bgColor = "";
+    let bgColor = colors.white;
     if (!isFocused) bgColor = isDisabled ? colors.greyLight : colors.white;
-
+    /** TODO: Get an 'alert' border working on the select input.
+     * Need to handle all standard cases (default, focus, hover, error, and disabled)
+     */
+    let borderColor;
+    if (isDisabled) {
+      borderColor = colors.grey20;
+    } else if (isFocused) {
+      borderColor = `${colors.success}!important`;
+    } else {
+      borderColor = colors.grey40;
+    }
     return {
       ...styles,
       "backgroundColor": bgColor,
-      "borderColor": isFocused
-        ? `${colors.success}!important`
-        : colors.grey20,
-      "borderBottomColor": colors.grey20,
+      "borderColor": borderColor,
       "boxShadow": "none",
       "cursor": isDisabled ? "not-allowed" : "pointer",
       "flexWrap": "nowrap",
@@ -42,7 +43,7 @@ const selectStyles = {
       "letterSpacing": ".5px",
       "minHeight": "2.75rem",
       ":hover": {
-        borderColor: colors.grey40,
+        borderColor: colors.grey60,
       },
     };
   },
@@ -75,14 +76,14 @@ const selectStyles = {
   indicatorSeparator: (styles, { isDisabled }) => {
     return {
       ...styles,
-      backgroundColor: isDisabled ? colors.grey40 : colors.grey20,
+      backgroundColor: isDisabled ? colors.grey20 : colors.grey40,
     };
   },
   // down arrow
-  dropdownIndicator: (styles, { isFocused }) => {
+  dropdownIndicator: (styles, { isDisabled }) => {
     return {
       ...styles,
-      color: isFocused ? colors.grey60 : colors.grey60,
+      color: isDisabled ? colors.grey20 : colors.grey40,
     };
   },
   // multi element background
