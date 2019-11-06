@@ -38,7 +38,7 @@ const StyledSwitch = styled.div`
   height: 1.2rem;
   border: 1px solid;
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.border;
+    return props.theme.palette[props.borderColor] || props.theme.palette.grey4;
   }};
   border-radius: 1em;
   background-color: ${(props) => {
@@ -59,7 +59,7 @@ const Circle = styled.div`
   }};
   border: 1px solid;
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.border;
+    return props.theme.palette[props.borderColor] || props.theme.palette.grey4
   }};
   border-radius: 100%;
   width: 1rem;
@@ -67,7 +67,7 @@ const Circle = styled.div`
   z-index: 1;
   transition: transform 300ms ease-in-out;
   transform: ${(props) => {
-    return props.checked ? "translateX(120%)" : "translateX(1%)";
+    return props.checked ? "translateX(100%)" : "translateX(1%)";
   }};
   &[disabled],
   &[readonly] {

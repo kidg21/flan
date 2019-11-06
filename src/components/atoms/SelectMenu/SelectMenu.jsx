@@ -8,11 +8,13 @@ import Select, { Creatable } from "react-select";
 import { Skeleton } from "helpers";
 import { DisabledContext } from "States";
 
-
 // &:focus {
 //   border-color: ${(props) => {
 //   return props.theme.palette[props.inputBorderColorHover] || props.theme.palette.primaryLight;
 // }};
+
+
+
 
 
 const selectStyles = {
@@ -26,7 +28,7 @@ const selectStyles = {
   // Toggle UI
   control: (styles, { isDisabled, isFocused }) => {
     let bgColor = "";
-    if (!isFocused) bgColor = isDisabled ? colors.grey_light : colors.white;
+    if (!isFocused) bgColor = isDisabled ? colors.grey_light : "";
 
     return {
       ...styles,
@@ -35,14 +37,15 @@ const selectStyles = {
         ? `${colors.success}!important`
         : colors.grey_20,
       "borderBottomColor": colors.grey_20,
+      "boxShadow": "none",
+      "cursor": isDisabled ? "not-allowed" : "pointer",
+      "flexWrap": "nowrap",
       "fontWeight": "normal",
       "letterSpacing": ".5px",
       "minHeight": "2.75rem",
-      "cursor": isDisabled ? "not-allowed" : "pointer",
       ":hover": {
         borderColor: colors.grey_40,
       },
-      "boxShadow": "none",
     };
   },
   placeholder: (styles, { isFocused }) => {
@@ -125,6 +128,13 @@ const selectStyles = {
       boxShadow: shadows.dropShadow,
     };
   },
+
+  menuList: (styles) => {
+    return {
+      ...styles,
+      backgroundColor: "",
+    };
+  },
   // Menu Options
   option: (styles, { isDisabled, isFocused, isSelected }) => {
     let color = colors.grey_80;
@@ -147,10 +157,10 @@ const selectStyles = {
 
 const SelectMenuContainer = styled(Grid)`
   color: ${(props) => {
-    let color = "";
-    if (props.error) color = colors.alert;
-    else if (props.disabled) color = colors.grey_40;
-    return color;
+    return props.theme.text[props.textColor] || props.theme.text.primary ;
+  }};
+  background-color: ${(props) => {
+    return props.theme.background.default;
   }};
   width: 100%;
   &:empty {
@@ -165,7 +175,6 @@ function SelectMenu({
   id,
   name,
   placeholder,
-  displayInline,
   options,
   selectOptions,
   disabled,
@@ -181,6 +190,18 @@ function SelectMenu({
   onChangeState,
   onCreateOption,
 }) {
+  let textColor;
+
+  if (disabled) {
+    textColor = "disabled";
+  }
+
+  if (error && !disabled) {
+    textColor = "alert";
+
+  }
+
+  
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let selectedOpts = [];
   if (selectOptions) {
@@ -251,18 +272,18 @@ function SelectMenu({
     onChange: changeSelected,
     onCreateOption: onCreateOption ? handleCreateOption : null,
   };
-  const select = onCreateOption ? <Creatable {...selectProps} /> : <Select {...selectProps} />;
+  const select = onCreateOption ? <Creatable {...selectProps} /> : <Select {...selectProps}/>;
 
   return (
     <SelectMenuContainer
       isRequired={isRequired}
+      textColor={textColor}
       disabled={isDisabled} // input attribute
       error={state.error !== null}
-      displayInline={displayInline}
       columns="1"
-      gap="small"
+      gap="tiny"
     >
-      {label ? <InputLabel label={label} isRequired={isRequired} /> : null}
+      {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
       {select}
       {/* Help Text */}
       {helpText ? <HelpText>{helpText}</HelpText> : null}
@@ -292,7 +313,6 @@ SelectMenu.propTypes = {
   isClearable: PropTypes.bool,
   isSearchable: PropTypes.bool,
   isLoading: PropTypes.bool,
-  displayInline: PropTypes.bool,
   isRtl: PropTypes.bool,
   helpText: PropTypes.string,
   onChangeState: PropTypes.func,
@@ -312,7 +332,6 @@ SelectMenu.defaultProps = {
   isClearable: true,
   isSearchable: true,
   isLoading: false,
-  displayInline: false,
   isRtl: false,
   helpText: null,
   onChangeState: null,

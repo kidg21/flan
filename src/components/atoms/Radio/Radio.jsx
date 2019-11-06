@@ -45,7 +45,6 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
   }};
   width: 1.1rem;
   height: 1.1rem;
-  // margin-top: 0.15em;
   border-radius: 100%;
   cursor: pointer;
   -webkit-appearance: none;
@@ -69,6 +68,7 @@ const RadioLabel = styled.label`
   grid-area: label;
   color: inherit;
   line-height: 1rem;
+  width: max-content;
   user-select: none;
   cursor: pointer;
 `;
@@ -93,7 +93,6 @@ function Radio({
     fillColor = "disabled";
     fillColorChecked = "disabled";
     inputTextColor = "disabled";
-    outlineColor = "disabled";
     tabIndex = "-1";
   }
   if (error && !isDisabled) {

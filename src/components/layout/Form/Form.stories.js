@@ -116,7 +116,7 @@ storiesOf("Layout|Form", module).add("Form Layout", () => {
               id="Section Name"
               label="Checkbox Group Label"
               data={shortBoxes}
-              helpText="This help text has been passed through a prop!"
+              helpText="Hang in there, buddy, I'm here to help!"
               columns="2"
             />
             <CheckboxGroup data={longBoxes} columns="1" />
@@ -133,7 +133,7 @@ storiesOf("Layout|Form", module).add("Form Layout", () => {
               id="Section Name"
               label="Radio Group Label"
               data={shortRadios}
-              helpText="This help text has been passed through a prop!"
+              helpText="Hang in there, buddy, I'm here to help!"
               columns="2"
             />
             <RadioGroup data={longRadios} columns="1" />

@@ -16,6 +16,7 @@ const GridWrapper = styled.section`
   align-items: ${(props) => {
     return props.alignItems || "flex-start";
   }};
+  width: 100%;
 `;
 
 function Grid({
@@ -39,7 +40,7 @@ function Grid({
       setGap = "0";
       break;
     case "tiny":
-      setGap = ".25rem";
+      setGap = ".35rem";
       break;
     case "small":
       setGap = ".75rem";

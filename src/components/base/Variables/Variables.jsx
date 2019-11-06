@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import { css } from "styled-components";
 
 // Codes for color palette
@@ -47,7 +48,7 @@ export const DMPTheme = {
     inverse: "#ffffff",
     link: "#5FD1E2",
     alert: "hsl(1, 55%, 50%)",
-    disabled: "#b1b2b3",
+    disabled: "hsl(34, 5%, 72%)",
     info: "hsl(204, 61%, 43%)",
     success: "rgb(36, 138, 61)",
     warning: "rgb(178, 80, 0)",
@@ -72,8 +73,8 @@ export const DMPTheme = {
     successDark: "#2d4e1f",
     white: "#ffffff",
     black: "#000000",
-    disabled: "#f1f1f1",
-    border: "#BBB8B4",
+    disabled: "hsl(34, 5%, 94%)",
+    border: colors.grey_40,
     inverse: "#ffffff",
     grey: "rgb(142, 142, 147)",
     grey2: "rgb(174, 174, 178)",
@@ -82,12 +83,22 @@ export const DMPTheme = {
     grey5: "rgb(229, 229, 234)",
     grey6: "rgb(242, 242, 247)",
   },
-  accents: {
-    white: "#ffffff",
-    black: "#000000",
-    green: "green",
-    waterwayBlue: "#44A3D8",
-    burntOrange: "#B84438",
+  shadows: {
+    cardShadow:
+      "drop-shadow(0 0 1px hsl(34, 5%, 72%)) drop-shadow(0.25rem 0.25rem 0.25rem hsla(34, 5%, 58%, 0.333333));",
+    dropShadow:
+      "hsl(34, 5%, 36%) 0rem 0rem 1px, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem;",
+    panelSectionShadow:
+      "hsl(34, 5%, 88%)  0rem 0rem 1px, hsla(34, 5%, 92%, 0.333333) 0 0rem 0.5rem 0.25rem;",
+    lightBorderShadow:
+      "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem",
+    lightBorderInner: "hsl(34, 5%, 72%) -1px -1px 0 0 inset, hsl(34, 5%, 72%) 1px 1px 0 0 inset",
+    border20: "hsl(34, 5%, 95%) 0px 0px 0px 1px",
+    border40: "hsl(34, 5%, 88%) 0px 0px 0px 1px",
+    checkedShadow:
+      "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
+    radioShadow:
+      "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsl(34, 5%, 95%) -1px 1px 0 0 inset, hsl(34, 5%, 95%) 1px -1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
   },
 };
 
@@ -96,20 +107,20 @@ export const darkTheme = {
     default: "rgb(28, 28, 30)",
     app: "#f4f6fc",
   },
-  divider: "#E2E1DF",
+  divider: "rgb(99, 99, 102)",
   text: {
     primary: "#ffffff",
-    secondary: "#99958F",
+    secondary: "#f7f4f0",
     inverse: "#000000",
     link: "#66b1e3",
-    alert: "#7d0000",
+    alert: "#ff5252",
     disabled: "#E2E1DF",
     info: "#66b1e3",
     success: "rgb(36, 138, 61)",
     warning: "rgb(178, 80, 0)",
   },
   palette: {
-    primary: "#5FD1E2",
+    primary: "#4ebbf2",
     primaryLight: "#66b1e3",
     primaryTint: "#9fc7dc",
     primaryDark: "#005681",
@@ -126,10 +137,10 @@ export const darkTheme = {
     success: "#30D158",
     successLight: "#c1f9a5",
     successDark: "#2d4e1f",
-    white: "#ffffff",
-    black: "#000000",
-    disabled: "#E2E1DF",
-    border: "#2935aa",
+    white: "#000000",
+    black: "#ffffff",
+    disabled: "rgb(99, 99, 102)",
+    border: "rgb(99, 99, 102)",
     inverse: "#000000",
     grey: "rgb(142, 142, 147)",
     grey2: "rgb(99, 99, 102)",
@@ -138,12 +149,22 @@ export const darkTheme = {
     grey5: "rgb(44, 44, 46)",
     grey6: "rgb(28, 28, 30)",
   },
-  accents: {
-    white: "#ffffff",
-    black: "#000000",
-    green: "green",
-    waterwayBlue: "#44A3D8",
-    burntOrange: "#B84438",
+  shadows: {
+    cardShadow:
+      "drop-shadow(0 0 1px rgb(72, 72, 74)) drop-shadow(0.25rem 0.25rem 0.25rem hsla(240, 1%, 29%, 0.333333));",
+    dropShadow:
+      "rgb(142, 142, 147) 0rem 0rem 1px, hsla(240, 2%, 57%, 0.333333) 0.25rem 0.25rem 0.5rem;",
+    panelSectionShadow:
+      "rgb(44, 44, 46)  0rem 0rem 1px, hsla(240, 2%, 18%, 0.333333) 0 0rem 0.5rem 0.25rem;",
+    lightBorderShadow:
+      "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem",
+    lightBorderInner: "hsl(34, 5%, 72%) -1px -1px 0 0 inset, hsl(34, 5%, 72%) 1px 1px 0 0 inset",
+    border20: "hsl(34, 5%, 95%) 0px 0px 0px 1px",
+    border40: "hsl(34, 5%, 88%) 0px 0px 0px 1px",
+    checkedShadow:
+      "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
+    radioShadow:
+      "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsl(34, 5%, 95%) -1px 1px 0 0 inset, hsl(34, 5%, 95%) 1px -1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
   },
 };
 

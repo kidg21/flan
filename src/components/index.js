@@ -11,6 +11,7 @@ export { default as Command } from "./atoms/Command";
 export { default as Container } from "./atoms/Container";
 export { default as Divider } from "./atoms/Divider";
 export { default as Icon } from "./atoms/Icon";
+export { default as Image } from "./atoms/Image";
 export { default as Radio, RadioGroup } from "./atoms/Radio";
 export { default as SelectMenu } from "./atoms/SelectMenu";
 export { default as Slider } from "./atoms/Slider";
@@ -23,12 +24,13 @@ export { default as Banner } from "./blocks/Banner";
 export { default as Bar } from "./blocks/Bar";
 export { default as List, ListItem } from "./blocks/List";
 export { default as IconBlock } from "./blocks/IconBlock";
+export { default as InputBlock } from "./blocks/InputBlock";
 export { default as MapLegend } from "./blocks/MapLegend";
 export { default as MediaBlock } from "./blocks/MediaBlock";
 export { default as Menu } from "./blocks/Menu";
 export { default as RangeSlider } from "./blocks/RangeSlider";
 export { default as Search } from "./blocks/Search";
-// export { default as Table } from "./blocks/Table";
+export { DataTable as Table } from "./blocks/Table";
 export { default as Tabs, Tab } from "./blocks/Tabs";
 
 // Publicly exported files from 'elements'
@@ -50,6 +52,7 @@ export { default as Card, CardList } from "./layout/Card";
 export {
   default as Form,
   Section,
+  Label,
   InputLabel,
   HelpText,
   ErrorText,

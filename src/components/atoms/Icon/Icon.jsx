@@ -30,7 +30,7 @@ const LinkedIcon = styled.a`
 
 const StyledIcon = styled(FontAwesomeIcon)`
   color: ${(props) => {
-    return props.theme.palette[props.color] || "inherit";
+    return props.theme.text[props.color] || "inherit";
   }};
   border: ${(props) => {
     return props.border ? "2px solid" : "";
