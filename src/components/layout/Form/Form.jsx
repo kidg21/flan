@@ -242,16 +242,15 @@ const Error = styled(TextLabel)`
   }
 `;
 function ErrorText({ error, children, warningText }) {
-  let content = children || error;
-  let isWarning = false;
-  if (!content) {
-    if (warningText) {
-      content = warningText;
-      isWarning = true;
-    } else {
-      return null;
-    }
+  let content = warningText;
+  let isWarning = true;
+  // error takes priority over warning
+  if (children || error) {
+    content = children || error;
+    isWarning = false;
   }
+  if (!content) return null;
+
   if (typeof content === "string") {
     return (
       <Error isWarning={isWarning}>
