@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -21,8 +22,6 @@ const RadioContainer = styled.div`
   grid-template-areas: ${(props) => {
     return props.alignInput || "";
   }};
-  width: max-content;
-  line-height: initial;
   color: ${(props) => {
     return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
@@ -43,8 +42,9 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
   border-color: ${(props) => {
     return props.theme.palette[props.outlineColor] || props.theme.border;
   }};
-  width: 1.1rem;
-  height: 1.1rem;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 1px;
   border-radius: 100%;
   cursor: pointer;
   -webkit-appearance: none;
@@ -67,8 +67,7 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
 const RadioLabel = styled.label`
   grid-area: label;
   color: inherit;
-  line-height: 1rem;
-  width: max-content;
+  width: fit-content;
   user-select: none;
   cursor: pointer;
 `;
@@ -160,7 +159,7 @@ function RadioGroup({
       inputTextColor={inputTextColor}
       id={id}
     >
-     {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
+      {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
       {helpText ? <HelpText>{helpText}</HelpText> : null}
       <InputGroup columns={columns}>
         {children ||

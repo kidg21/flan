@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -21,8 +22,6 @@ const CheckboxContainer = styled.div`
   grid-template-areas: ${(props) => {
     return props.alignInput || "";
   }};
-  width: max-content;
-  line-height: initial;
   color: ${(props) => {
     return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
@@ -45,6 +44,7 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   }};
   width: 1rem;
   height: 1rem;
+  margin-top: 1px;
   border-radius: 2px;
   cursor: pointer;
   -webkit-appearance: none;
@@ -65,10 +65,8 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
 
 const CheckboxLabel = styled.label`
   grid-area: label;
-  font-weight: 600;
-  line-height: 1rem;
   color: inherit;
-  width: max-content;
+  width: fit-content;
   user-select: none;
   cursor: pointer;
 `;
