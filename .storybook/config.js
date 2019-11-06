@@ -125,13 +125,13 @@ setDefaults({
 });
 
 // const req = require.context("../src/components", true, /.stories.js$/)
-const atoms = require.context("../src/components/atoms", true, /.stories.js$/);
-const base = require.context("../src/components/base", true, /.stories.js$/);
-const blocks = require.context("../src/components/blocks", true, /.stories.js$/);
-const elements = require.context("../src/components/elements", true, /.stories.js$/);
-const layout = require.context("../src/components/layout", true, /.stories.js$/);
-const templates = require.context("../src/components/templates", true, /.stories.js$/);
-const work = require.context("../src/components/work", true, /.stories.js$/);
+const atoms = require.context("../src/components/atoms", true, /\.stories\.(js|mdx)$/);
+const base = require.context("../src/components/base", true, /\.stories\.(js|mdx)$/);
+const blocks = require.context("../src/components/blocks", true, /\.stories\.(js|mdx)$/);
+const elements = require.context("../src/components/elements", true, /\.stories\.(js|mdx)$/);
+const layout = require.context("../src/components/layout", true, /\.stories\.(js|mdx)$/);
+const templates = require.context("../src/components/templates", true, /\.stories\.(js|mdx)$/);
+const work = require.context("../src/components/work", true, /\.stories\.(js|mdx)$/);
 function loadStories() {
   // req.keys().forEach(filename => req(filename))
   require("../src/attributes/App.stories.js");
@@ -144,4 +144,5 @@ function loadStories() {
   work.keys().forEach(filename => work(filename));
 }
 
-configure(require.context("../src", true, /\.stories\.(js|mdx)$/), module);
+configure(loadStories, module);
+// configure(require.context("../src", true, /\.stories\.(js|mdx)$/), module);
