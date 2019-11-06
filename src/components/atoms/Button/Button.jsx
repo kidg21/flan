@@ -1,5 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable complexity */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import { Lighten, Darken } from "Variables";
@@ -93,12 +92,13 @@ function Button({
   id,
   label,
   onClick,
+  underlineColor,
+  border,
   size,
   style,
   type,
 }) {
   let backgroundColor;
-  let border;
   let borderBottom;
   let borderRadius;
   let buttonColor;
@@ -106,7 +106,6 @@ function Button({
   let fontColor;
   let fontWeight;
   let labelSize;
-  let underlineColor;
 
   switch (color && color.toLowerCase()) {
     case "success":
@@ -134,7 +133,7 @@ function Button({
       fontColor = buttonColor;
       break;
     case "grey":
-      buttonColor = "grey2";
+      buttonColor = "grey3";
       fontColor = buttonColor;
       break;
     default:
@@ -144,17 +143,18 @@ function Button({
   }
 
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-
+  let borderStyle = border;
+  let underline = underlineColor;
   if (type) {
     if (type.toLowerCase() === "underlined") {
-      border = "2px solid transparent";
+      borderStyle = "2px solid transparent";
       backgroundColor = "default";
       fontWeight = "700";
       fontColor = buttonColor;
       borderBottom = "3px solid";
-      underlineColor = fontColor;
+      underline = fontColor;
     } else if (type.toLowerCase() === "inline") {
-      border = "2px solid transparent";
+      borderStyle = "2px solid transparent";
       fontWeight = "700";
       backgroundColor = "default";
     } else if (type.toLowerCase() === "solid") {
@@ -183,13 +183,14 @@ function Button({
   return (
     <StyledButton
       backgroundColor={backgroundColor}
-      border={border}
+      border={borderStyle}
       borderBottom={borderBottom}
+      underlineColor={underline}
+      disabled={isDisabled}
       borderRadius={borderRadius}
       buttonColor={buttonColor}
       buttonPadding={buttonPadding}
       className={className}
-      disabled={isDisabled}
       fontColor={fontColor}
       fontWeight={fontWeight}
       fullWidth={fullWidth}
@@ -199,7 +200,6 @@ function Button({
       onClick={onClick}
       style={style}
       type={type}
-      underlineColor={underlineColor}
     >
       {icon ? <ButtonIcon icon={icon} type={fontColor} size="lg" /> : null}
       {label ? <ButtonLabel>{label}</ButtonLabel> : null}
@@ -217,6 +217,8 @@ Button.propTypes = {
   label: PropTypes.string,
   onClick: PropTypes.func,
   size: PropTypes.oneOf(["small", "large"]),
+  underlineColor: PropTypes.string,
+  border: PropTypes.string,
   style: PropTypes.string,
   type: PropTypes.oneOf(["underlined", "inline", "solid"]),
 };
@@ -233,6 +235,8 @@ Button.defaultProps = {
   size: null,
   style: null,
   type: null,
+  underlineColor: null,
+  border: null,
 };
 
 export { Button as default };

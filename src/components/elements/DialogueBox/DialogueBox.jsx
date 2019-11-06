@@ -26,7 +26,7 @@ function DialogueBox({
               {buttons.map((button, index) => {
                 return (<Button
                   label={button.label}
-                  type={button.type || index==0 ? "solid" : "null"}
+                  type={button.type || index === 0 ? "solid" : null}
                   onClick={button.onClick}
                   color={button.color || buttonColor}
                   disabled={button.disabled}
@@ -43,7 +43,7 @@ function DialogueBox({
           left={
             <Button
               label={buttons[0].label}
-              type={buttons[0].solid}
+              type={buttons[0].type}
               onClick={buttons[0].onClick}
               color={buttons[0].color || buttonColor}
               disabled={buttons[0].disabled}
@@ -67,7 +67,7 @@ function DialogueBox({
 
 const buttonType = PropTypes.shape({
   label: PropTypes.string,
-  fill: PropTypes.bool,
+  type: PropTypes.string,
   color: PropTypes.string,
   disabled: PropTypes.bool,
   onClick: PropTypes.func,

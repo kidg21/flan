@@ -6,9 +6,11 @@ import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
 import DialogueBox from "elements/DialogueBox";
 import Title from "base/Typography";
+import Command from "atoms/Command";
 import Bar from "blocks/Bar";
 import SelectMenu from "atoms/SelectMenu";
 import { Piece } from "layout/Card";
+import Search from "blocks/Search"
 import List, { ListItem } from "blocks/List";
 import TextInput from "atoms/TextInput";
 import Icon from "atoms/Icon";
@@ -55,7 +57,7 @@ storiesOf("Elements|Dialogue Box", module)
     }),
   );
 
-storiesOf("Elements|Dialogue Box/General", module)
+storiesOf("Templates|Dialogue Box/General", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
   .add("Default", () => {
@@ -86,34 +88,6 @@ storiesOf("Elements|Dialogue Box/General", module)
       </DialogueBox>
     );
   })
-  .add("Save As", () => {
-    return (
-      <DialogueBox
-        title="Save As"
-        buttons={[{ label: "Save" }, { label: "Cancel" }]}
-      >
-        <Section>
-          <TextInput label="Name" placeholder="Type Name" />
-          <SelectMenu
-            label="Location"
-            options={[
-              { value: "1", label: "my folder" },
-              { value: "2", label: "our folder" },
-              { value: "3", label: "dmp" },
-              { value: "4", label: "lightbox" },
-            ]}
-          />
-          <SelectMenu
-            label="File Type"
-            options={[
-              { value: "jpg", label: ".jpg" },
-              { value: "png", label: ".png" },
-            ]}
-          />
-        </Section>
-      </DialogueBox>
-    );
-  })
   .add("Delete", () => {
     return (
       <DialogueBox
@@ -135,7 +109,96 @@ storiesOf("Elements|Dialogue Box/General", module)
     );
   });
 
-storiesOf("Elements|Dialogue Box/User Roles", module)
+
+
+storiesOf("Templates|Dialogue Box/Files", module)
+  .addDecorator(Padding)
+  .addDecorator(withInfo)
+  .add("Save As", () => {
+    return (
+      <DialogueBox
+        title="Save As"
+        buttons={[{ label: "Save" }, { label: "Cancel" }]}
+      >
+        <Section>
+          <TextInput label="Name" placeholder="i.e. My new Map Composition" />
+          <SelectMenu
+            label="Location"
+            options={[
+              { value: "1", label: "my folder" },
+              { value: "2", label: "our folder" },
+              { value: "3", label: "dmp" },
+              { value: "4", label: "lightbox" },
+            ]}
+          />
+          <Command label="+ Add New Location"/>
+        </Section>
+      </DialogueBox>
+    );
+  })
+  .add("Open", () => {
+    return (
+      <DialogueBox
+        title="Open File"
+        buttons={[{ label: "Open" }, { label: "Cancel" }]}
+      >
+        <Section>
+          <Search/>
+          <Piece>
+            <Container height="12rem">
+              <List>
+                <ListItem
+                  label="Recent Item"/>
+                                  <ListItem
+                  label="Recent Item"/>
+                                  <ListItem
+                  label="Recent Item"/>
+                                  <ListItem
+                  label="Recent Item"/>
+                                  <ListItem
+                  label="Recent Item"/>
+                                  <ListItem
+                  label="Recent Item"/>
+                  </List>
+                  </Container>
+                  </Piece>
+          <SelectMenu
+            label="Location"
+            options={[
+              { value: "1", label: "my folder" },
+              { value: "2", label: "our folder" },
+              { value: "3", label: "dmp" },
+              { value: "4", label: "lightbox" },
+            ]}
+          />
+        </Section>
+      </DialogueBox>
+    );
+  })
+  .add("Add New Folder", () => {
+    return (
+      <DialogueBox
+        title="+ Add New Folder"
+        buttons={[{ label: "Add" }, { label: "Cancel" }]}
+      >
+        <Section>
+          <TextInput label="Name" placeholder="i.e. Potential Sites" />
+          <SelectMenu
+            label="New Folder Location"
+            options={[
+              { value: "1", label: "my folder" },
+              { value: "2", label: "our folder" },
+              { value: "3", label: "dmp" },
+              { value: "4", label: "lightbox" },
+            ]}
+          />
+        </Section>
+      </DialogueBox>
+    );
+  });
+
+
+storiesOf("Templates|Dialogue Box/User Roles", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
   .add("Edit User List", () => {

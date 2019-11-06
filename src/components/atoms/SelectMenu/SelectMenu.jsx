@@ -8,11 +8,13 @@ import Select, { Creatable } from "react-select";
 import { Skeleton } from "helpers";
 import { DisabledContext } from "States";
 
-
 // &:focus {
 //   border-color: ${(props) => {
 //   return props.theme.palette[props.inputBorderColorHover] || props.theme.palette.primaryLight;
 // }};
+
+
+
 
 
 const selectStyles = {
@@ -26,7 +28,7 @@ const selectStyles = {
   // Toggle UI
   control: (styles, { isDisabled, isFocused }) => {
     let bgColor = "";
-    if (!isFocused) bgColor = isDisabled ? colors.grey_light : colors.white;
+    if (!isFocused) bgColor = isDisabled ? colors.grey_light : "";
 
     return {
       ...styles,
@@ -126,6 +128,13 @@ const selectStyles = {
       boxShadow: shadows.dropShadow,
     };
   },
+
+  menuList: (styles) => {
+    return {
+      ...styles,
+      backgroundColor: "",
+    };
+  },
   // Menu Options
   option: (styles, { isDisabled, isFocused, isSelected }) => {
     let color = colors.grey_80;
@@ -148,10 +157,10 @@ const selectStyles = {
 
 const SelectMenuContainer = styled(Grid)`
   color: ${(props) => {
-    let color = "";
-    if (props.error) color = colors.alert;
-    else if (props.disabled) color = colors.grey_40;
-    return color;
+    return props.theme.text[props.textColor] || props.theme.text.primary ;
+  }};
+  background-color: ${(props) => {
+    return props.theme.background.default;
   }};
   width: 100%;
   &:empty {
@@ -184,6 +193,18 @@ function SelectMenu({
   onFocus,
   isCreatable,
 }) {
+  let textColor;
+
+  if (disabled) {
+    textColor = "disabled";
+  }
+
+  if (error && !disabled) {
+    textColor = "alert";
+
+  }
+
+  
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let selectedOpts = [];
   if (selectOptions) {
@@ -261,12 +282,13 @@ function SelectMenu({
   return (
     <SelectMenuContainer
       isRequired={isRequired}
+      textColor={textColor}
       disabled={isDisabled} // input attribute
       error={state.error !== null}
       columns="1"
       gap="tiny"
     >
-      {label ? <InputLabel label={label} isRequired={isRequired} /> : null}
+      {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
       {select}
       {/* Help Text */}
       {helpText ? <HelpText>{helpText}</HelpText> : null}
