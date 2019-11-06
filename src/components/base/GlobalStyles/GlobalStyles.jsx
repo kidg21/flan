@@ -244,9 +244,10 @@ const GlobalStyles = createGlobalStyle`
       box-sizing: border-box;
       width: 100%;
       font-family: ${fonts.data};
-      letter-spacing: 1px;
+      letter-spacing: 2px;
       border-radius: 5px;
       font-size: 12px;
+      font-weight: 700;
       transition: border-color 0.1s linear, background 0.1s linear;
       appearance: none;
       &:focus {

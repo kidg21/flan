@@ -13,6 +13,8 @@ const FormWrapper = styled.form`
   background-color: ${props => {
     return props.theme.background.default;
   }};
+  height: 100%;
+  padding: 1rem 1rem 1.5rem;
 `;
 
 const FormHeader = styled(Grid)`
