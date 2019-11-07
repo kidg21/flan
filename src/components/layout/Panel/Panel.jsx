@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import styled from "styled-components";
 import { shadows } from "Variables";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
@@ -47,7 +48,7 @@ const PanelSection = styled.section`
   }};
   overflow-x: ${(props) => {
     return props.header ? "visible" : "hidden";
-  }}
+  }};
   overflow-y: ${(props) => {
     if (props.body) {
       return "scroll";
