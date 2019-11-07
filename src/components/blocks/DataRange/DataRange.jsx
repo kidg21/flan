@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { DisabledContext } from "States";
@@ -25,37 +25,39 @@ function DataRange({
   id,
   isRequired,
   label,
-  labelMax,
-  labelMin,
-  maxValue,
-  minValue,
-  onChange,
-  withSelector,
-  onChangeSelector,
-  optionsSelect,
-  optionsSelectedOptions,
-  optionsMax,
-  optionsMin,
-  disableLeft,
-  disableRight,
+  // labelMax,
+  // maxValue,
+  // optionsMax,
+  // disableRight,
+  // labelMin,
+  // minValue,
+  // onChange,
+  // optionsMin,
+  // disableLeft,
+  // withSelector,
+  // onChangeSelector,
+  // optionsSelect,
+  // optionsSelectedOptions,
+
+  select,
+  max,
+  min,
 }) {
   let inputTextColor;
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  const isLeftDisabled = disableLeft || isDisabled;
-  const isRightDisabled = disableRight || isDisabled;
   if (error && !isDisabled) {
     inputTextColor = "alert";
   }
   function onChangeMin(currState, newState, setMinState) {
     const newMinValue = newState ? newState.selected : currState.target.value;
-    if (onChange) onChange({ min: newMinValue, max: maxValue });
+    if (typeof min.onChange === "function") min.onChange({ min: newMinValue, max: max.value });
     if (setMinState) setMinState(newState);
   }
 
   function onChangeMax(currState, newState, setMaxState) {
     const newMaxValue = newState ? newState.selected : currState.target.value;
-    if (onChange) onChange({ min: minValue, max: newMaxValue });
-    if (setMaxState) setMaxState(newState);
+    if (typeof max.onChange === "function") max.onChange({ min: min.value, max: newMaxValue });
+    if (typeof setMaxState === "function") setMaxState(newState);
   }
   return (
     <RangeContainer
@@ -68,55 +70,52 @@ function DataRange({
       {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
       <Bar
         padding="none"
-        withSelector={withSelector}
         contentAlign="center"
         left={
-          optionsMin ? (
+          min.options ? (
             <SelectMenu
-              label={labelMin}
-              options={optionsMin}
+              label={min.label}
+              options={min.options}
               onChangeState={onChangeMin}
-              disabled={isLeftDisabled}
-              selectOptions={minValue}
+              disabled={min.disabled || isDisabled}
+              selectOptions={min.value}
             />)
             :
             (<TextInput
-              label={labelMin}
-              options={optionsMin}
+              label={min.label}
               onChange={onChangeMin}
               error={!!error}
-              disabled={isLeftDisabled}
-              value={minValue}
+              disabled={min.disabled || isDisabled}
+              value={min.value}
             />)
         }
         center={
-          withSelector ? (
+          select ? (
             <SelectMenu
-              options={optionsSelect}
-              label="Options"
-              onChangeState={onChangeSelector}
-              selectOptions={optionsSelectedOptions}
+              options={select.options}
+              label={select.label}
+              onChangeState={select.onChange}
+              selectOptions={select.selected}
               disabled={isDisabled}
             />
           ) : null
         }
         right={
-          optionsMax ? (
+          max.options ? (
             <SelectMenu
-              label={labelMax}
-              options={optionsMax}
-              onChangeState={onChangeMax}
-              disabled={isRightDisabled}
-              selectOptions={maxValue}
+              label={max.label}
+              options={max.options}
+              onChangeState={max.onChange}
+              disabled={max.disabled || isDisabled}
+              selectOptions={max.selected}
             />)
             :
             (<TextInput
-              label={labelMax}
-              options={optionsMax}
+              label={max.label}
               onChange={onChangeMax}
               error={!!error}
-              disabled={isRightDisabled}
-              value={maxValue}
+              disabled={max.disabled || isDisabled}
+              value={max.value}
             />)
         }
       />
@@ -126,6 +125,22 @@ function DataRange({
   );
 }
 
+const selectType = PropTypes.shape({
+  options: PropTypes.map,
+  selected: PropTypes.arrayOf(PropTypes.object),
+  onChange: PropTypes.func,
+  disabled: PropTypes.bool,
+  label: PropTypes.string,
+});
+
+const textType = PropTypes.shape({
+  value: PropTypes.string,
+  label: PropTypes.string,
+  error: PropTypes.bool,
+  disabled: PropTypes.bool,
+  onChange: PropTypes.func,
+});
+
 DataRange.propTypes = {
   disabled: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
@@ -133,19 +148,22 @@ DataRange.propTypes = {
   id: PropTypes.string,
   isRequired: PropTypes.bool,
   label: PropTypes.string,
-  withSelector: PropTypes.bool,
-  maxValue: PropTypes.oneOfType([PropTypes.string, PropTypes.shape({})]),
-  minValue: PropTypes.oneOfType([PropTypes.string, PropTypes.shape({})]),
-  onChangeSelector: PropTypes.func,
-  optionsSelect: PropTypes.map,
-  optionsSelectedOptions: PropTypes.shape({}),
-  labelMax: PropTypes.string.isRequired,
-  labelMin: PropTypes.string.isRequired,
-  onChange: PropTypes.func,
-  optionsMax: PropTypes.map,
-  optionsMin: PropTypes.map,
-  disableLeft: PropTypes.bool,
-  disableRight: PropTypes.bool,
+  // withSelector: PropTypes.bool,
+  // onChangeSelector: PropTypes.func,
+  // optionsSelect: PropTypes.map,
+  // optionsSelectedOptions: PropTypes.shape({}),
+  // labelMax: PropTypes.string.isRequired,
+  // maxValue: PropTypes.oneOfType([PropTypes.string, PropTypes.shape({})]),
+  // optionsMax: PropTypes.map,
+  // disableRight: PropTypes.bool,
+  max: PropTypes.oneOf(textType, selectType),
+  min: PropTypes.oneOf(textType, selectType),
+  select: selectType,
+  // onChange: PropTypes.func,
+  // optionsMin: PropTypes.map,
+  // minValue: PropTypes.oneOfType([PropTypes.string, PropTypes.shape({})]),
+  // labelMin: PropTypes.string.isRequired,
+  // disableLeft: PropTypes.bool,
 };
 DataRange.defaultProps = {
   disabled: false,
@@ -154,17 +172,20 @@ DataRange.defaultProps = {
   id: null,
   isRequired: false,
   label: null,
-  onChange: null,
-  withSelector: false,
-  onChangeSelector: null,
-  optionsSelect: null,
-  optionsSelectedOptions: null,
-  optionsMax: null,
-  optionsMin: null,
-  disableLeft: false,
-  disableRight: false,
-  minValue: null,
-  maxValue: null,
+  // onChange: null,
+  // optionsMin: null,
+  // disableLeft: false,
+  // minValue: null,
+  // withSelector: false,
+  // onChangeSelector: null,
+  // optionsSelect: null,
+  // // optionsSelectedOptions: null,
+  // optionsMax: null,
+  // disableRight: false,
+  // maxValue: null,
+  select: null,
+  max: {},
+  min: {},
 };
 
 export default DataRange;

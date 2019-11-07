@@ -176,32 +176,48 @@ storiesOf("Templates|Panel/Property Filters", module)
         <PanelSection body>
           <Form>
             <DataRange
-              firstOptions={options}
-              secondOptions={options}
               label="Year Built"
-              labelMin="Min"
-              labelMax="Max"
+              min={{
+                label: "Min",
+                options: options,
+              }}
+              max={{
+                label: "Max",
+                options: options,
+              }}
             />
             <DataRange
-              firstOptions={options}
-              secondOptions={options}
               label="Number of Units"
-              labelMin="Min"
-              labelMax="Max"
+              min={{
+                label: "Min",
+                options: options,
+              }}
+              max={{
+                label: "Max",
+                options: options,
+              }}
             />
             <DataRange
-              firstOptions={options}
-              secondOptions={options}
               label="Range 3"
-              labelMin="Min"
-              labelMax="Max"
+              min={{
+                label: "Min",
+                options: options,
+              }}
+              max={{
+                label: "Max",
+                options: options,
+              }}
             />
             <DataRange
-              firstOptions={options}
-              secondOptions={options}
               label="Range 4"
-              labelMin="Min"
-              labelMax="Max"
+              min={{
+                label: "Min",
+                options: options,
+              }}
+              max={{
+                label: "Max",
+                options: options,
+              }}
             />
             <TextInput label="Zoning (Assessor)" placeholder="i.e. Mary Williams" type="text" />
             <CheckboxGroup label="In Opportunity Zone">

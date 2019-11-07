@@ -127,7 +127,6 @@ function Checkbox({
         fillColor={fillColor}
         fillColorChecked={fillColorChecked}
         id={id}
-        key={id}
         onChange={onChange}
         outlineColor={outlineColor}
         tabIndex={tabIndex}

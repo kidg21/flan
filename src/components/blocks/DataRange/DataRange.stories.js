@@ -44,17 +44,25 @@ storiesOf("Blocks|Data Range", module)
         <Form columns="1">
           <DataRange
             label="Data Range (default)"
-            labelMin="Min"
-            labelMax="Max"
             helpText="Hang in there, buddy, I'm here to help!"
+            min={{
+              label: "Min",
+            }}
+            max={{
+              label: "Max",
+            }}
           />
           <DataRange
             label="Data Range (with options)"
-            labelMin="Min"
-            optionsMin={options}
-            labelMax="Max"
-            optionsMax={options}
             helpText="Hang in there, buddy, I'm here to help!"
+            min={{
+              label: "Min",
+              options: options,
+            }}
+            max={{
+              label: "Max",
+              options: options,
+            }}
           />
         </Form>
       );
@@ -115,8 +123,7 @@ storiesOf("Blocks|Data Range", module)
           <DataRange
             label="Select Range"
             labelMin="Min"
-            withSelector
-            optionsSelect={selectorOptions}
+            select={{ options: selectorOptions }}
             optionsMin={options}
             labelMax="Max"
             optionsMax={options}
