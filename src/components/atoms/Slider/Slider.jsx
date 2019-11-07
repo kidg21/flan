@@ -6,7 +6,7 @@ import { Lighten, Darken } from "Variables";
 const SliderPiece = styled.input.attrs({ type: "range" })`
   height: 1px;
   background: ${(props) => {
-    return props.error ? props.theme.palette.alertLight : props.theme.palette.grey3;
+    return props.error ? props.theme.palette.alertLight : props.theme.palette.grey4;
   }};
   outline: none;
   opacity: 0.7;

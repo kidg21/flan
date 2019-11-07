@@ -11,6 +11,9 @@ const Wrapper = styled.div`
 `;
 const TableContainer = styled.table`
   width: 100%;
+  color: ${(props) => {
+    return props.theme.text.primary;
+  }};
   table-layout: fixed;
   border-collapse: collapse;
   min-width: 400px;
@@ -38,7 +41,9 @@ const Body = styled.tbody`
 const TH = styled.th`
   text-align: left;
   min-width: 400px;
-  color: black;
+  color: ${(props) => {
+    return props.theme.text.primary;
+  }};
   font-size: ${(props) => {
     return props.fontSize || "small";
   }};
@@ -53,6 +58,9 @@ const Cell = styled.td`
   }};
   border-bottom: ${(props) => {
     return props.cellBorder || "";
+  }};
+  border-bottom-color: ${(props) => {
+    return props.theme.palette[props.cellBorderColor] || "";
   }};
   font-size: ${(props) => {
     return props.fontSize || "small";
@@ -78,6 +86,7 @@ function Table({
   let cellPadding;
   let fontWeight;
   let cellBorder;
+  let cellBorderColor;
   let headerContent;
 
   switch(style && style.toLowerCase()) {
@@ -88,7 +97,8 @@ function Table({
       break;
     case "standard":
     default:
-      cellBorder = "1px solid #ddd";
+      cellBorder = "1px solid";
+      cellBorderColor = "grey5";
       cellPadding = "0.5em";
       break;
   }
@@ -118,6 +128,7 @@ function Table({
                   <Cell
                     key={column}
                     cellBorder={cellBorder}
+                    cellBorderColor={cellBorderColor}
                     cellPadding={cellPadding}
                     fontWeight={fontWeight}
                     fontSize={fontSize}
@@ -140,6 +151,7 @@ function Table({
               <Cell
                 cellBorder={cellBorder}
                 cellPadding={cellPadding}
+                cellBorderColor={cellBorderColor}
                 fontWeight={fontWeight}
                 fontSize={fontSize}
               >
@@ -148,6 +160,7 @@ function Table({
               <Cell
                 cellBorder={cellBorder}
                 cellPadding={cellPadding}
+                cellBorderColor={cellBorderColor}
                 fontWeight={fontWeight}
                 fontSize={fontSize}
               >

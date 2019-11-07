@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React from "react";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
@@ -13,15 +14,14 @@ function PropertyPanelHeader({
   return (
     <Piece id={id}>
       <Bar
-        padding="top"
+        padding="2x"
         contentAlign="center"
-        left={<Title text={title} weight="bold" size="large" />}
-        center={
-          <IconBlock>
-            <Icon icon="directions" size="2x" type="primarylight" onClick={onClick} />
-          </IconBlock>
-        }
+        left={<Icon icon="directions" size="lg" type="primarylight" onClick={onClick} />}
+        leftWidth="min-content"
+        center={<Title text={title} weight="bold" size="" />}
+        centerAlign="left"
         right={<Menu menuData={menuData} position="bottomLeft" type="edit" />}
+        rightWidth="min-content"
       />
     </Piece>
   );
