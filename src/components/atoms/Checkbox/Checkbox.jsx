@@ -72,11 +72,9 @@ const CheckboxLabel = styled.label`
   user-select: none;
   cursor: pointer;
   &:after {
-    display: ${props => (props.isRequired ? "" : "none")};
+    display: ${(props) => { return props.isRequired ? "" : "none"; }};
     content: "*";
-    color: ${props => {
-      return props.theme.palette.alert;
-    }};
+    color: ${(props) => { return props.theme.palette.alert; }};
     font-size: 1.25rem;
     line-height: 0;
     vertical-align: middle;
@@ -91,7 +89,7 @@ const InputGroup = styled(Grid)`
 `;
 
 function Checkbox({
-  align, checked, error, disabled, id, label, onChange, isRequired, onFocus, onBlur
+  align, checked, error, disabled, id, label, onChange, isRequired, onFocus, onBlur,
 }) {
   let inputTextColor;
   let fillColor;
@@ -161,7 +159,7 @@ function CheckboxGroup({
   label,
   isRequired,
   onChange,
-  warningText,
+  warning,
 }) {
   let inputTextColor;
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
@@ -195,7 +193,7 @@ function CheckboxGroup({
             );
           })}
       </InputGroup>
-      {!isDisabled ? <ErrorText warningText={warningText}>{error}</ErrorText> : null}
+      {!isDisabled ? <ErrorText warning={warning}>{error}</ErrorText> : null}
     </CheckboxWrapper>
   );
 }
@@ -210,6 +208,7 @@ Checkbox.propTypes = {
   onChange: PropTypes.func,
   onBlur: PropTypes.func,
   onFocus: PropTypes.func,
+  isRequired: PropTypes.bool,
 };
 
 Checkbox.defaultProps = {
@@ -221,6 +220,7 @@ Checkbox.defaultProps = {
   onChange: null,
   onBlur: null,
   onFocus: null,
+  isRequired: false,
 };
 
 CheckboxGroup.propTypes = {
@@ -235,7 +235,7 @@ CheckboxGroup.propTypes = {
   isRequired: PropTypes.bool,
   label: PropTypes.string,
   onChange: PropTypes.func,
-  warningText: PropTypes.string,
+  warning: PropTypes.string,
 };
 
 CheckboxGroup.defaultProps = {
@@ -250,7 +250,7 @@ CheckboxGroup.defaultProps = {
   isRequired: false,
   label: null,
   onChange: null,
-  warningText: "",
+  warning: "",
 };
 
 export { Checkbox as default, CheckboxGroup };

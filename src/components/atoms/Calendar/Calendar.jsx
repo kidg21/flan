@@ -26,7 +26,7 @@ function Calendar({
   type,
   value,
   onChange,
-  warningText,
+  warning,
   onBlur,
   onFocus,
   date,
@@ -115,7 +115,7 @@ function Calendar({
       {label ? <InputLabel isRequired={isRequired} label={label} /> : null}
       {inputContainer}
       {helpText ? <HelpText>{helpText}</HelpText> : null}
-      {!isDisabled ? <ErrorText warningText={warningText}>{error}</ErrorText> : null}
+      {!isDisabled ? <ErrorText warning={warning}>{error}</ErrorText> : null}
     </CalendarContainer>
   );
 }
@@ -124,6 +124,7 @@ Calendar.propTypes = {
   className: PropTypes.string,
   disabled: PropTypes.bool,
   error: PropTypes.string,
+  warning: PropTypes.string,
   helpText: PropTypes.string,
   id: PropTypes.string,
   label: PropTypes.string,
@@ -133,6 +134,8 @@ Calendar.propTypes = {
   /** Sets or returns the value of the min attribute of the date field */
   min: PropTypes.string,
   onChange: PropTypes.func,
+  onBlur: PropTypes.func,
+  onFocus: PropTypes.func,
   pattern: PropTypes.string,
   type: PropTypes.oneOf(["date", "time", "datetime"]),
   value: PropTypes.string,
@@ -154,6 +157,9 @@ Calendar.defaultProps = {
   type: "date",
   value: null,
   onChange: () => {},
+  onBlur: () => {},
+  onFocus: () => {},
+  warning: null,
   date: {},
   time: {},
 };

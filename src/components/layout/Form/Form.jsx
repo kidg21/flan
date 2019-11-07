@@ -241,8 +241,8 @@ const Error = styled(TextLabel)`
     }};
   }
 `;
-function ErrorText({ error, children, warningText }) {
-  let content = warningText;
+function ErrorText({ error, children, warning }) {
+  let content = warning;
   let isWarning = true;
   // error takes priority over warning
   if (children || error) {
@@ -265,11 +265,11 @@ function ErrorText({ error, children, warningText }) {
 }
 ErrorText.propTypes = {
   error: PropTypes.string,
-  warningText: PropTypes.string,
+  warning: PropTypes.string,
 };
 ErrorText.defaultProps ={
   error: "",
-  warningText: "",
+  warning: "",
 }
 
 export { Form as default, Section, Label, InputLabel, HelpText, ErrorText };

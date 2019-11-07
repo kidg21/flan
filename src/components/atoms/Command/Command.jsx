@@ -6,34 +6,34 @@ import Icon from "atoms/Icon";
 import Title from "base/Typography";
 
 const CommandContainer = styled.a`
-  display: ${props => {
+  display: ${(props) => {
     return props.icon ? "grid" : "";
   }};
-  grid-gap: ${props => {
+  grid-gap: ${(props) => {
     return props.icon ? "0.5rem" : "";
   }};
-  grid-template-columns: ${props => {
+  grid-template-columns: ${(props) => {
     return props.alignCommand || "auto 1fr";
   }};
-  grid-template-areas: ${props => {
+  grid-template-areas: ${(props) => {
     return props.alignIcon || "'icon name'";
   }};
-  justify-items: ${props => {
+  justify-items: ${(props) => {
     return props.justifyIcon || "";
   }};
   align-items: center;
   width: max-content;
-  font-size: ${props => {
+  font-size: ${(props) => {
     return props.commandSize || "";
   }};
-  color: ${props => {
+  color: ${(props) => {
     return props.theme.text[props.commandColor] || props.theme.text.info;
   }};
   user-select: none;
-  cursor: ${props => {
+  cursor: ${(props) => {
     return props.isDisabled ? "not-allowed" : "";
   }};
-  pointer-events: ${props => {
+  pointer-events: ${(props) => {
     return props.isDisabled ? "none" : "";
   }};
   transition: all 0.3s ease;
@@ -51,7 +51,7 @@ const CommandName = styled(Title)`
   margin: 0;
   &:focus {
     border: 1px solid
-      ${props => {
+      ${(props) => {
         return props.theme.palette.primary;
       }};
     outline: none;

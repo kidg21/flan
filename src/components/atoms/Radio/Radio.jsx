@@ -146,6 +146,7 @@ function RadioGroup({
   isRequired,
   label,
   onChange,
+  warning,
 }) {
   let inputTextColor;
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
@@ -181,7 +182,7 @@ function RadioGroup({
             );
           })}
       </InputGroup>
-      {error && !isDisabled ? <ErrorText>{error}</ErrorText> : null}
+      {!isDisabled ? <ErrorText warning={warning}>{error}</ErrorText> : null}
     </RadioWrapper>
   );
 }
@@ -228,6 +229,7 @@ RadioGroup.propTypes = {
   isRequired: PropTypes.bool,
   label: PropTypes.string,
   onChange: PropTypes.func,
+  warning: PropTypes.string,
 };
 
 RadioGroup.defaultProps = {
@@ -242,6 +244,7 @@ RadioGroup.defaultProps = {
   isRequired: false,
   label: null,
   onChange: null,
+  warning: null,
 };
 
 export { Radio as default, RadioGroup };

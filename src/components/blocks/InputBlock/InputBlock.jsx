@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 /* eslint-disable complexity */
 import React, { useState, useContext } from "react";
 import styled from "styled-components";

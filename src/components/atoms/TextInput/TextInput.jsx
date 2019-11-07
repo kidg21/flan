@@ -78,7 +78,7 @@ function TextInput({
   name,
   rows,
   cols,
-  warningText,
+  warning,
 }) {
   let as;
   let inputTextColor;
@@ -133,6 +133,7 @@ function TextInput({
   }
 
   const errorText = typeof error === "string" ? error : "";
+  const warningText = typeof warning === "string" ? warning : "";
   return (
     <TextInputContainer
       id={id}
@@ -171,7 +172,7 @@ function TextInput({
       {autocompleteDataList}
       {helpText ? <HelpText>{helpText}</HelpText> : null}
       {children}
-      {!disabled ? <ErrorText warningText={warningText}>{errorText}</ErrorText> : null}
+      {!disabled ? <ErrorText warning={warningText}>{errorText}</ErrorText> : null}
     </TextInputContainer>
   );
 }
@@ -224,7 +225,7 @@ TextInput.propTypes = {
   name: PropTypes.string,
   rows: PropTypes.string,
   cols: PropTypes.string,
-  warningText: PropTypes.string,
+  warning: PropTypes.string,
 };
 
 TextInput.defaultProps = {
@@ -250,7 +251,7 @@ TextInput.defaultProps = {
   name: "",
   rows: "",
   cols: "",
-  warningText: "",
+  warning: "",
 };
 
 export { TextInput as default };
