@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
-import { InputLabel, HelpText, ErrorText, WarningText } from "layout/Form";
+import { InputLabel, HelpText, ErrorText } from "layout/Form";
 import Grid from "layout/Grid";
 
 const CheckboxWrapper = styled(Grid)`
@@ -195,8 +195,7 @@ function CheckboxGroup({
             );
           })}
       </InputGroup>
-      {warningText && !isDisabled ? <WarningText>{warningText}</WarningText> : null}
-      {error && !isDisabled ? <ErrorText>{error}</ErrorText> : null}
+      {!isDisabled ? <ErrorText warningText={warningText}>{error}</ErrorText> : null}
     </CheckboxWrapper>
   );
 }

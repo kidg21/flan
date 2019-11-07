@@ -47,7 +47,7 @@ const PanelSection = styled.section`
   }};
   overflow-x: ${(props) => {
     return props.header ? "visible" : "hidden";
-  }}
+  }};
   overflow-y: ${(props) => {
     if (props.body) {
       return "scroll";
