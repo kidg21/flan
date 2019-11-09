@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { storiesOf } from "@storybook/react";
@@ -7,7 +8,13 @@ import { withKnobs, text, boolean, select, optionsKnob as options } from "@story
 import Button from "atoms/Button";
 import ButtonNotes from "./Button.md";
 
-// Button
+// CSF format
+export default { title: "Work|Docs/Button (CSF)" };
+export const CSFFormat = () => {
+  return <Button label="Standard Button" />;
+};
+// newStoryFormat.story = { parameters: { docs: { disable: true } } };
+
 storiesOf("Atoms|Button", module)
   .addParameters({
     info: {

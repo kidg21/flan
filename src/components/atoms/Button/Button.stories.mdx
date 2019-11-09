@@ -1,0 +1,55 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+import Button from "atoms/Button";
+
+<Meta title="Work|Docs/Button (MDX)" component={Button} />
+
+# Button
+
+With `MDX` we can define a story for `Button` right in the middle of our markdown documentation.
+
+<Story name="Just Story">
+  <Button label="Standard Button" />
+</Story>
+
+We can drop it in a `Preview` to get a code snippet:
+
+<Preview>
+  <Story name="Wrapped In Preview">
+    <Button label="Standard Button" />
+  </Story>
+</Preview>
+
+We can even preview multiple stories in a block. This
+gets rendered as a group, but defines individual stories
+with unique URLs and isolated snapshot tests.
+
+<Preview>
+  <Story name="First">
+    <Button label="Standard Button" />
+  </Story>
+  <Story name="Second">
+    <Button label="Standard Button" />
+  </Story>
+  <Story name="Third">
+    <Button label="Standard Button" />
+  </Story>
+  <Story name="Fourth">
+    <Button label="Standard Button" />
+  </Story>
+  <Story name="Fifth">
+    <Button label="Standard Button" />
+  </Story>
+  <Story name="Sixth">
+    <Button label="Standard Button" />
+  </Story>
+</Preview>
+
+And markdown here without a code preview
+
+<Story id="atoms-checkbox--checkbox-states" />
+
+And here with a preview
+
+<Preview>
+  <Story id="atoms-checkbox--checkbox-states" />
+</Preview>

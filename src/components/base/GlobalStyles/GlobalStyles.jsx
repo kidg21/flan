@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import { createGlobalStyle } from "styled-components";
 import styledNormalize from "styled-normalize";
 import { Skeleton } from "helpers";
@@ -27,11 +28,10 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: inherit;
     }
     body {
-        position: fixed;
+        /* position: fixed; */
         width: 100%;
         height: 100%;
         font-family: ${fonts.body}; /* Muli */
-        // color: ${colors.grey_80};
         font-weight: 400;
         line-height: 1.45;
         overscroll-behavior: none;
