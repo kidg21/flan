@@ -6,7 +6,7 @@ import FlanTheme from "./FlanTheme";
 import { withKnobs, optionsKnob as options } from "@storybook/addon-knobs";
 import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
 import { withA11y } from "@storybook/addon-a11y";
-import { withNotes } from "@storybook/addon-notes";
+// import { withNotes } from "@storybook/addon-notes";
 // import { configureActions } from "@storybook/addon-actions"
 import { withInfo } from "@storybook/addon-info";
 import { setDefaults } from "@storybook/addon-info";
@@ -79,6 +79,10 @@ addParameters({
     hierarchySeparator: /\/|\./,
     hierarchyRootSeparator: /\|/,
   },
+  // May disable 'info' once Docs are fully integrated
+  // info: {
+  //   disable: true,
+  // },
   docs: {
     container: DocsContainer,
     page: DocsPage,
@@ -95,7 +99,7 @@ addParameters({
 addDecorator(withA11y);
 
 // Notes
-addDecorator(withNotes);
+// addDecorator(withNotes);
 
 // Actions
 // configureActions({
@@ -124,17 +128,14 @@ setDefaults({
   },
 });
 
-// const req = require.context("../src/components", true, /.stories.js$/)
 const atoms = require.context("../src/components/atoms", true, /.stories.js$/);
 const base = require.context("../src/components/base", true, /.stories.js$/);
 const blocks = require.context("../src/components/blocks", true, /.stories.js$/);
 const elements = require.context("../src/components/elements", true, /.stories.js$/);
 const layout = require.context("../src/components/layout", true, /.stories.js$/);
 const templates = require.context("../src/components/templates", true, /.stories.js$/);
-// const templates = require.context("../src/components/templates", true, /.stories.js$/);
 const work = require.context("../src/components/work", true, /.stories.js$/);
 function loadStories() {
-  // req.keys().forEach(filename => req(filename))
   require("../src/attributes/App.stories.js");
   atoms.keys().forEach(filename => atoms(filename));
   base.keys().forEach(filename => base(filename));
