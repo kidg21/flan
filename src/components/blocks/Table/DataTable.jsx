@@ -10,8 +10,6 @@ export const MultiGridWrapper = styled.div`
   margin: 0.5em;
   overflow: hidden;
   font-size: 12px;
-  min-height: 500px;
-
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
   border-collapse: collapse;
