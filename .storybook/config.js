@@ -7,10 +7,10 @@ import { withKnobs, optionsKnob as options } from "@storybook/addon-knobs";
 import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
 import { withA11y } from "@storybook/addon-a11y";
 // import { withNotes } from "@storybook/addon-notes";
-// import { configureActions } from "@storybook/addon-actions"
-import { withInfo } from "@storybook/addon-info";
+import { configureActions } from "@storybook/addon-actions"
 import { setDefaults } from "@storybook/addon-info";
 import { DocsPage, DocsContainer } from "@storybook/addon-docs/blocks";
+import {  } from "@storybook/addon-docs/blocks";
 
 // Create and add global styles
 import GlobalStyles from "GlobalStyles";
@@ -37,7 +37,7 @@ function withGlobalStyles(storyFn) {
   );
 }
 addDecorator(withGlobalStyles);
-addDecorator(withKnobs);
+// addDecorator(withKnobs);
 
 // Configure Viewport
 const newViewports = {
@@ -102,11 +102,11 @@ addDecorator(withA11y);
 // addDecorator(withNotes);
 
 // Actions
-// configureActions({
-//   depth: 100,
-//   // Limit the number of items logged into the actions panel
-//   limit: 20
-// })
+configureActions({
+  depth: 100,
+  // Limit the number of items logged into the actions panel
+  limit: 20
+})
 
 // Info
 /** Removed due to impact on layout.
