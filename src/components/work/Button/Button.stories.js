@@ -24,14 +24,16 @@ const buttonIcons = ["no icon", "user", "down", "bookmark", "plus", "print"];
 
 // CSF format
 export default {
-  title: "Work|Docs/ButtonDocs (CSF)",
+  title: "Work|Docs/Button/Tests",
   component: Button,
+  parameters: {
+    componentSubtitle: "Handy status label",
+    /** Use to disable DocsPage per component */
+    // parameters: { docs: { page: null } },
+  },
+  includeStories: ["Knobs", "Actions"],
   decorators: [Padding, withKnobs],
-  /** Use to disable DocsPage per component */
-  // parameters: { docs: { page: null } },
 };
-// export const foo = () => <Button label="foo" />
-// foo.story = { parameters: { docs: { disable: true } } }
 export const Standard = () => {
   return <Button label="Standard Button" />;
 };
@@ -98,3 +100,4 @@ export const Knobs = () => {
 export const Actions = () => {
   return <Button label="Click Me!" onClick={action("onClick")} />;
 };
+// Actions.story = { parameters: { docs: { disable: true } } };
