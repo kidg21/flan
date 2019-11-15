@@ -12,6 +12,11 @@ const ListWrapper = styled.ul`
   list-style: none;
   font-weight: 600;
   tabindex: 0;
+  ${(props) => {
+    if (props.maxHeight) {
+      return `max-height: ${props.maxHeight}; overflow-y: auto;`
+    }
+  }}
 `;
 
 const ListTitle = styled(Title)`
@@ -66,11 +71,11 @@ const ListItemWrapper = styled.li`
   }
 `;
 
-function List({ id, title, children, interactive }) {
+function List({ id, title, children, interactive, maxHeight }) {
   return (
     <InteractiveContext.Provider value={interactive}>
       {title ? <ListTitle text={title} weight="bold" /> : null}
-      <ListWrapper id={id}>{children}</ListWrapper>
+      <ListWrapper id={id} maxHeight={maxHeight}>{children}</ListWrapper>
     </InteractiveContext.Provider>
   );
 }
