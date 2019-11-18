@@ -4,7 +4,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
-import Grid from "layout/Grid";
+import { CardList } from "layout/Card";
 import { withKnobs, boolean, select, text } from "@storybook/addon-knobs";
 import Banner from "blocks/Banner";
 import BannerNotes from "./Banner.md";
@@ -23,7 +23,7 @@ storiesOf("Blocks|Banner", module)
   .add(
     "Documentation",
     withInfo()(() => {
-      return <Banner title="This is a notification." />;
+      return <Banner title="This is a Banner." />;
     }),
   )
   .add("Knobs", () => {
@@ -58,117 +58,124 @@ storiesOf("Blocks|Banner", module)
         }
         title={
           boolean("title", true, "Options") &&
-          text("title text", "This is a notification", "Settings")
+          text("title text", "This is a Banner", "Settings")
         }
         description={
           boolean("description", false, "Options") &&
-          text("description text", "A description can go here, if necessary.", "Settings")
+          text(
+            "description text",
+            "A description can go here, if necessary.",
+            "Settings",
+          )
         }
-        link={boolean("link", false, "Options") && text("link text", "Link Text", "Settings")}
+        link={
+          boolean("link", false, "Options") &&
+          text("link text", "Link Text", "Settings")
+        }
       />
     );
   })
   .add("Standard Banners", () => {
     return (
-      <Grid>
-        <Banner title="This is a notification." />
+      <CardList>
+        <Banner title="This is a Banner." />
         <Banner
-          title="This is a notification."
+          title="This is a Banner."
           description="A description can go here, if necessary."
         />
         <Banner
-          title="This is a notification."
+          title="This is a Banner."
           description="A description can go here, if necessary."
           link="Link Text"
         />
-      </Grid>
+      </CardList>
     );
   })
   .add("Icon Banner", () => {
     return (
-      <Grid>
+      <CardList>
         <Banner
           type="media"
           icon="user"
-          title="This is a notification."
+          title="This is a Banner."
           description="A description can go here, if necessary."
           link="Link Text"
         />
-      </Grid>
+      </CardList>
     );
   })
   .add("Info Banner", () => {
     return (
-      <Grid>
-        <Banner type="info" title="This is a notification." />
-      </Grid>
+      <CardList>
+        <Banner type="info" title="This is an Info Banner." />
+      </CardList>
     );
   })
   .add("Success Banner", () => {
     return (
-      <Grid>
-        <Banner type="success" title="This is a notification." />
-      </Grid>
+      <CardList>
+        <Banner type="success" title="This is a Success Banner." />
+      </CardList>
     );
   })
   .add("Warning Banner", () => {
     return (
-      <Grid>
-        <Banner type="warning" title="This is a notification." />
-      </Grid>
+      <CardList>
+        <Banner type="warning" title="This is a Warning Banner." />
+      </CardList>
     );
   })
   .add("Alert Banner", () => {
     return (
-      <Grid>
-        <Banner type="alert" title="This is a notification." />
-      </Grid>
+      <CardList>
+        <Banner type="alert" title="This is an Alert Banner." />
+      </CardList>
     );
   })
 
   .add("The Banner Family", () => {
     return (
-      <Grid>
-        <Banner title="This is a notification." />
+      <CardList>
+        <Banner title="This is a Banner." />
         <Banner
-          title="This is a notification."
+          title="This is a Banner."
           description="A description can go here, if necessary."
         />
         <Banner
-          title="This is a notification."
+          title="This is a Banner."
           description="A description can go here, if necessary."
           link="Link Text"
         />
         <Banner
           icon="user"
-          title="This is a notification."
+          title="This is a Banner."
           description="A description can go here, if necessary."
           link="Link Text"
         />
         <Banner
           type="info"
-          title="This is an Info notification."
+          title="This is an Info Banner."
           description="A description can go here, if necessary."
           link="Link Text"
         />
         <Banner
           type="success"
-          title="This is a Success notification."
+          title="This is a Success Banner."
           description="A description can go here, if necessary."
           link="Link Text"
         />
         <Banner
           type="warning"
-          title="This is a Warning notification."
+          title="This is a Warning Banner."
           description="A description can go here, if necessary."
           link="Link Text"
         />
         <Banner
           type="alert"
-          title="This is an Alert notification."
+          title="This is an Alert Banner."
           description="A description can go here, if necessary."
           link="Link Text"
         />
-      </Grid>
+      </CardList>
     );
   });

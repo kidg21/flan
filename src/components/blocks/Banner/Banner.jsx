@@ -17,22 +17,9 @@ const StyledBanner = styled(Card)`
 `;
 
 const StatusBadge = styled.div`
-  background-color: ${(props) => {
-    return props.theme.palette[props.badgeBG] || props.theme.palette.grey;
-  }};
   color: ${(props) => {
-    return props.theme.palette.backGround;
+    return props.theme.palette[props.badgeColor] || props.theme.palette.grey;
   }};
-  padding: ${(props) => {
-    return props.badgeBG ? ".5em" : "";
-  }};
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
-  width: 2.5em;
-  height: 2.5em;
 `;
 
 const Message = styled(Grid)`
@@ -42,7 +29,6 @@ const Message = styled(Grid)`
 
 const Close = styled(Icon)`
   position: absolute;
-  top: 0.75em;
   right: 0.75em;
   cursor: pointer;
   opacity: 0.5;
@@ -52,64 +38,39 @@ const Close = styled(Icon)`
 `;
 
 function Banner({
-  description, href, icon, id, link, onClick, onClose, title, type,
+  description,
+  href,
+  icon,
+  id,
+  link,
+  onClick,
+  onClose,
+  title,
+  type,
 }) {
+  const iconHash = {
+    info: "info",
+    success: "check",
+    warning: "alert",
+    alert: "close",
+  };
   let bannerType;
-  let color;
-  let badgeBG = color;
-  switch (type) {
-    case "info":
-      color = "info";
-      badgeBG = color;
-      bannerType = (
-        <StatusBadge badgeBG={badgeBG}>
-          <Icon icon="info" size="lg" fixedWidth type="inverse" />
-        </StatusBadge>
-      );
-      break;
-    case "success":
-      color = "success";
-      badgeBG = color;
-      bannerType = (
-        <StatusBadge badgeBG={badgeBG}>
-          <Icon icon="check" size="lg" fixedWidth type="inverse" />
-        </StatusBadge>
-      );
-      break;
-    case "warning":
-      color = "warning";
-      badgeBG = color;
-      bannerType = (
-        <StatusBadge badgeBG={badgeBG}>
-          <Icon icon="alert" size="lg" fixedWidth type="inverse" />
-        </StatusBadge>
-      );
-      break;
-    case "alert":
-      color = "alert";
-      badgeBG = color;
-      bannerType = (
-        <StatusBadge badgeBG={badgeBG}>
-          <Icon icon="close" size="lg" fixedWidth type="inverse" />
-        </StatusBadge>
-      );
-      break;
-    default:
-      break;
-  }
+  const badgeColor = type;
   if (icon) {
     bannerType = (
-      <StatusBadge badgeBG={badgeBG}>
-        {type ? (
-          <Icon icon={icon} size="lg" fixedWidth />
-        ) : (
-          <Icon icon={icon} size="lg" fixedWidth type={type} />
-        )}
+      <StatusBadge badgeColor={badgeColor}>
+        <Icon icon={icon} size="2x" fixedWidth />
+      </StatusBadge>
+    );
+  } else if (type) {
+    bannerType = (
+      <StatusBadge badgeColor={badgeColor}>
+        <Icon icon={iconHash[type]} size="2x" fixedWidth />
       </StatusBadge>
     );
   }
   return (
-    <StyledBanner borderColor={color} id={id} type={type} padding="4x">
+    <StyledBanner borderColor={type} id={id} type={type} padding="4x">
       <Bar
         contentAlign={description || link ? "" : "center"}
         padding="none"
@@ -142,7 +103,7 @@ Banner.propTypes = {
   onClick: PropTypes.func,
   onClose: PropTypes.func,
   title: PropTypes.string.isRequired,
-  type: PropTypes.oneOf(["media", "info", "success", "warning", "alert"]),
+  type: PropTypes.oneOf(["info", "success", "warning", "alert"]),
 };
 
 Banner.defaultProps = {
