@@ -5,7 +5,7 @@ export default create({
   base: "light",
 
   // colorPrimary: "hotpink",
-  colorSecondary: colors.anchor,
+  colorSecondary: colors.blue,
 
   // UI
   // appBg: "white",
@@ -32,7 +32,7 @@ export default create({
   //   inputTextColor: "black",
   //   inputBorderRadius: 4,
 
-  brandTitle: "FLAN"
+  brandTitle: "FLAN",
   // brandUrl: "https://example.com",
   // brandImage:
   //   "https://www.nationalgeographic.com/content/dam/travel/2018-digital/best-trips-tahiti/best-trips-tahiti-2.adapt.133.1.jpg"

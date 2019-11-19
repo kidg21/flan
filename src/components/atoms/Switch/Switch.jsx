@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React, { useState, useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -15,13 +16,13 @@ const SwitchContainer = styled.div`
     return props.alignInput || "";
   }};
   color: ${(props) => {
-    return props.theme.palette[props.checkboxColor] || props.theme.text.primary;
+    return props.theme.text[props.checkboxColor] || props.theme.text.primary;
   }};
   background-color: ${(props) => {
     return props.theme.palette[props.fillColor] || props.theme.background.default;
   }};
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.text.secondary;
+    return props.theme.palette[props.borderColor] || props.theme.border;
   }};
   width: max-content;
   &[disabled],
@@ -38,7 +39,7 @@ const StyledSwitch = styled.div`
   height: 1.2rem;
   border: 1px solid;
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.grey4;
+    return props.theme.palette[props.borderColor] || props.theme.border;
   }};
   border-radius: 1em;
   background-color: ${(props) => {
@@ -47,19 +48,19 @@ const StyledSwitch = styled.div`
   cursor: pointer;
   &[disabled],
   &[readonly] {
-    background: ${(props) => {
-    return props.disabled ? props.theme.palette.disabled : "";
+    background-color: ${(props) => {
+    return props.disabled ? props.theme.palette.grey5 : "";
   }};
   }
 `;
 
 const Circle = styled.div`
   background: ${(props) => {
-    return props.checked ? props.theme.background.default : props.theme.background.default;
+    return props.disabled ? props.theme.palette.grey5 : props.theme.palette.white;
   }};
   border: 1px solid;
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.grey4
+    return props.theme.palette[props.borderColor] || props.theme.border;
   }};
   border-radius: 100%;
   width: 1rem;
@@ -147,7 +148,7 @@ function Switch({
         fillColor={fillColor}
         borderColor={borderColor}
       >
-        <Circle checked={isChecked} borderColor={borderColor} />
+        <Circle checked={isChecked} borderColor={borderColor} disabled={isDisabled} />
       </StyledSwitch>
       {label ? (
         <SwitchLabel htmlFor={id} onChange={onChange} disabled={isDisabled}>
@@ -162,6 +163,7 @@ Switch.propTypes = {
   align: PropTypes.oneOf(["default", "right"]),
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
+  error: PropTypes.bool,
   id: PropTypes.string,
   label: PropTypes.string,
   onChange: PropTypes.func,
@@ -170,6 +172,7 @@ Switch.defaultProps = {
   align: null,
   checked: false,
   disabled: false,
+  error: false,
   id: null,
   label: null,
   onChange: null,

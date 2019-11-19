@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -21,8 +22,6 @@ const CheckboxContainer = styled.div`
   grid-template-areas: ${(props) => {
     return props.alignInput || "";
   }};
-  width: max-content;
-  line-height: initial;
   color: ${(props) => {
     return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
@@ -41,34 +40,33 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
     return props.theme.palette[props.fillColor] || props.theme.background.default;
   }};
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.border;
+    return props.theme.palette[props.borderColor] || props.theme.border;
   }};
   width: 1rem;
   height: 1rem;
+  margin-top: 1px;
   border-radius: 2px;
   cursor: pointer;
   -webkit-appearance: none;
   &:checked {
     background-color: ${(props) => {
-    return props.theme.palette[props.fillColorChecked] || props.theme.palette.secondaryLight;
+    return props.theme.palette[props.fillColorChecked] || props.theme.background.selected;
   }};
     border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.secondary;
+    return props.theme.palette[props.borderColor] || props.theme.background.selected;
   }};
   }
   &:focus {
     outline-color: ${(props) => {
-    return props.theme.palette[props.outlineColor] || props.theme.palette.secondary;
+    return props.theme.palette[props.outlineColor] || props.theme.palette.secondaryLight;
   }};
   }
 `;
 
 const CheckboxLabel = styled.label`
   grid-area: label;
-  font-weight: 600;
-  line-height: 1rem;
   color: inherit;
-  width: max-content;
+  width: fit-content;
   user-select: none;
   cursor: pointer;
 `;
@@ -92,18 +90,19 @@ function Checkbox({
   let tabIndex;
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
-    fillColor = "disabled";
-    fillColorChecked = "disabled";
+    borderColor = "grey4";
+    fillColor = "grey5";
+    fillColorChecked = "grey5";
     inputTextColor = "disabled";
     tabIndex = "-1";
   }
   if (error && !isDisabled) {
+    borderColor = "alert";
+    borderColorChecked = "alert";
+    fillColor = "alertLight";
+    fillColorChecked = "alertLight";
     inputTextColor = "alert";
-    fillColor = "alert";
-    borderColor = "alertDark";
     outlineColor = "alertLight";
-    fillColorChecked = "alert";
-    borderColorChecked = "alertDark";
   }
   switch (align) {
     case "right":

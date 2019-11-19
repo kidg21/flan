@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
@@ -58,7 +59,7 @@ function Badge({
   } else {
     labelType = <BadgeLabel>{label}</BadgeLabel>;
     badgeColor = "alert";
-    badgeTextColor = "inverse";
+    badgeTextColor = "light";
     badgePadding = "0.45em .8em";
     switch (type) {
       case "info":
@@ -120,17 +121,21 @@ function Badge({
 }
 
 Badge.propTypes = {
+  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   id: PropTypes.string,
   label: PropTypes.string,
-  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
-  type: PropTypes.oneOf(["info", "success", "warning", "alert", "dark"]),
   position: PropTypes.oneOf(["topLeft", "topRight", "bottomRight", "bottomLeft"]),
   style: PropTypes.string,
+  type: PropTypes.oneOf(["info", "success", "warning", "alert", "dark"]),
 };
 
 Badge.defaultProps = {
-  label: null,
+  icon: null,
   id: null,
+  label: null,
+  position: null,
+  style: null,
+  type: null,
 };
 
 export { Badge as default };

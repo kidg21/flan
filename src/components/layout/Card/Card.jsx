@@ -14,7 +14,10 @@ const CardPiece = styled.div`
   }};
   width: 100%;
   background: ${props => {
-    return props.theme.palette[props.backgroundColor] || props.theme.background.default;
+    return (
+      props.theme.palette[props.backgroundColor] ||
+      props.theme.background.default
+    );
   }};
   color: ${props => {
     return props.theme.text[props.textColor] || props.theme.text.primary;
@@ -38,6 +41,9 @@ const CardPiece = styled.div`
 
 const CardWrapper = styled(CardPiece)`
   position: relative;
+  padding: ${props => {
+    return props.cardPadding || "";
+  }};
   filter: ${props => {
     return props.theme.shadows.cardShadow;
   }};
@@ -78,7 +84,7 @@ function Piece({
   id,
   onClick,
   padding,
-  textColor,
+  textColor
 }) {
   let piecePadding;
   switch (padding) {
@@ -140,7 +146,13 @@ function Card({ children, className, id, padding }) {
 
 function CardList({ children, className, columns, gap, id, rows }) {
   return (
-    <CardListWrapper id={id} className={className} columns={columns} gap={gap} rows={rows}>
+    <CardListWrapper
+      id={id}
+      className={className}
+      columns={columns}
+      gap={gap}
+      rows={rows}
+    >
       {children}
     </CardListWrapper>
   );
@@ -151,13 +163,13 @@ Piece.propTypes = {
   className: PropTypes.string,
   header: PropTypes.bool,
   id: PropTypes.string,
-  padding: PropTypes.oneOf(["default (none)", "1x", "2x", "3x", "4x"]),
+  padding: PropTypes.oneOf(["default (none)", "1x", "2x", "3x", "4x"])
 };
 Card.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   id: PropTypes.string,
-  padding: PropTypes.oneOf(["default (none)", "1x", "2x", "3x", "4x"]),
+  padding: PropTypes.oneOf(["default (none)", "1x", "2x", "3x", "4x"])
 };
 CardList.propTypes = {
   children: PropTypes.node,
@@ -180,7 +192,7 @@ CardList.propTypes = {
     "10",
     "11",
     "12",
-    "[grid-template-columns]",
+    "[grid-template-columns]"
   ]),
   /** Sets the 'gutter' between grid items
    *
@@ -196,15 +208,15 @@ CardList.propTypes = {
       "large",
       "xlarge",
       "xxlarge",
-      "[grid-template-rows]",
-    ]),
+      "[grid-template-rows]"
+    ])
   ]),
   id: PropTypes.string,
   /** Defines the heights of grid rows
    *
    * Options: Any switch case or any standard value accepted by the CSS Grid property, 'grid-template-rows'.
    */
-  rows: PropTypes.oneOf(["default (auto)", "[grid-template-rows]"]),
+  rows: PropTypes.oneOf(["default (auto)", "[grid-template-rows]"])
 };
 
 export { Card as default, CardList, Piece };

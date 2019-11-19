@@ -109,10 +109,10 @@ setDefaults({
   styles: {
     header: {
       h1: {
-        color: colors.grey_80,
+        color: colors.grey80,
       },
       h2: {
-        color: colors.anchor,
+        color: colors.blue,
       },
     },
   },

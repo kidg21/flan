@@ -31,6 +31,7 @@ storiesOf("Layout|Card", module)
 
 // Card List
 storiesOf("Layout|CardList", module)
+  .addDecorator(Padding)
   .addDecorator(checkA11y)
   .add("Card List - 'wrapper for Cards'", () => {
     return (
