@@ -14,13 +14,14 @@ const TextInputContainer = styled(Grid)`
 `;
 
 const Input = styled.input`
+  color: inherit;
   line-height: normal;
   border: 1px solid;
   border-color: ${(props) => {
-    return props.theme.palette[props.inputBorderColor] || props.theme.palette.grey5;
+    return props.theme.palette[props.inputBorderColor] || props.theme.palette.grey4;
   }};
   background-color: ${(props) => {
-    return props.theme.palette[props.inputFillColor] || props.theme.background.default;
+    return props.theme.palette[props.inputFillColor] || props.theme.palette.white;
   }};
   caret-color: ${(props) => {
     return props.theme.palette[props.inputCaretColor] || "";
@@ -32,13 +33,14 @@ const Input = styled.input`
     return props.inputResize || "";
   }};
   ::placeholder {
+    font-weight: initial;
     color: ${(props) => {
     return props.theme.text[props.placeholderColor] || props.theme.text.secondary;
   }};
   }
   &:hover {
     border-color: ${(props) => {
-    return props.theme.palette[props.inputBorderColorHover] || props.theme.palette.border;
+    return props.theme.palette[props.inputBorderColorHover] || props.theme.palette.grey3;
   }};
     }
   }
@@ -47,8 +49,11 @@ const Input = styled.input`
     return props.theme.palette[props.inputBorderColorHover] || props.theme.palette.secondary;
   }};
     ::selection {
+      color: ${(props) => {
+    return props.theme.text.selected;
+  }};
       background-color: ${(props) => {
-    return props.theme.palette[props.inputSelectColor] || props.theme.palette.grey5;
+    return props.theme.palette[props.inputSelectColor] || props.theme.background.selected;
   }};
     }
   }
@@ -106,17 +111,18 @@ function TextInput({
   }
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
-    inputTextColor = "disabled";
-    inputFillColor = "disabled";
     inputBorderColor = "grey5";
+    inputFillColor = "disabled";
     inputTextColor = "disabled";
   }
 
   if (error && !disabled) {
+    inputBorderColor = "alertBright";
+    inputBorderColorHover = "alertLight";
+    inputFillColor = "alertTint";
+    inputSelectColor = "alertBright";
     inputTextColor = "alert";
-    inputBorderColor = "alertTint";
-    inputBorderColorHover = "alert";
-    inputSelectColor = "alert";
+    placeholderColor = "primary";
   }
 
   return (

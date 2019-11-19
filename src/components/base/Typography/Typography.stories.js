@@ -1,8 +1,8 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
-import Panel from "layout/Panel";
 import { withInfo } from "@storybook/addon-info";
 import Grid from "layout/Grid";
 import Title, { Headline, SubTitle, Description, Link, Number, Code } from "base/Typography";
@@ -21,7 +21,7 @@ storiesOf("Application|Style Guides/", module)
         <Title>
           This is a Title that wraps a text string and an inline
           <Link
-            text="This is a standard Link"
+            text="link"
             title="Stuff about anchor tags"
             href="https://www.w3.org/MarkUp/1995-archive/Elements/A.html"
             target="_blank"
@@ -33,7 +33,7 @@ storiesOf("Application|Style Guides/", module)
         <SubTitle>
           This is a SubTitle that wraps a text string and an inline
           <Link
-            text="Link"
+            text="link"
             title="Stuff about anchor tags"
             href="https://www.w3.org/MarkUp/1995-archive/Elements/A.html"
             target="_blank"
@@ -45,7 +45,7 @@ storiesOf("Application|Style Guides/", module)
         <Description>
           This is a Description that wraps a text string and an inline
           <Link
-            text="Link"
+            text="link"
             title="Stuff about anchor tags"
             href="https://www.w3.org/MarkUp/1995-archive/Elements/A.html"
             target="_blank"

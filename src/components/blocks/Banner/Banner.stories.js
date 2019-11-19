@@ -1,19 +1,11 @@
-/* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
+/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
-import Grid from "layout/Grid";
-import {
-  withKnobs,
-  text,
-  boolean,
-  radios,
-  select,
-  number,
-  optionsKnob as options,
-} from "@storybook/addon-knobs";
+import { CardList } from "layout/Card";
+import { withKnobs, boolean, select, text } from "@storybook/addon-knobs";
 import Banner from "blocks/Banner";
 import BannerNotes from "./Banner.md";
 
@@ -31,111 +23,159 @@ storiesOf("Blocks|Banner", module)
   .add(
     "Documentation",
     withInfo()(() => {
-      return <Banner title="This is a Standard notification telling you stuff." />;
+      return <Banner title="This is a Banner." />;
     }),
   )
+  .add("Knobs", () => {
+    return (
+      <Banner
+        type={select(
+          "type",
+          {
+            standard: null,
+            info: "info",
+            success: "success",
+            warning: "warning",
+            alert: "alert",
+          },
+          null,
+          "Settings",
+        )}
+        icon={
+          boolean("icon", false, "Options") &&
+          select(
+            "icon select",
+            {
+              user: "user",
+              down: "down",
+              bookmark: "bookmark_solid",
+              plus: "plus",
+              print: "print",
+            },
+            "user",
+            "Settings",
+          )
+        }
+        title={
+          boolean("title", true, "Options") &&
+          text("title text", "This is a Banner", "Settings")
+        }
+        description={
+          boolean("description", false, "Options") &&
+          text(
+            "description text",
+            "A description can go here, if necessary.",
+            "Settings",
+          )
+        }
+        link={
+          boolean("link", false, "Options") &&
+          text("link text", "Link Text", "Settings")
+        }
+      />
+    );
+  })
   .add("Standard Banners", () => {
     return (
-      <Grid>
-        <Banner title="This is a Standard notification telling you stuff." />
+      <CardList>
+        <Banner title="This is a Banner." />
         <Banner
-          title="This is a Standard notification that includes a description."
-          description="Additional information can go here, if necessary."
+          title="This is a Banner."
+          description="A description can go here, if necessary."
         />
         <Banner
-          title="This is a notification that includes a Call-to-Action link."
-          description="Additional information can go here, if necessary."
-          link="Learn More"
+          title="This is a Banner."
+          description="A description can go here, if necessary."
+          link="Link Text"
         />
-      </Grid>
-    );
-  })
-  .add("Info Banner", () => {
-    return (
-      <Grid>
-        <Banner type="info" title="This is a Standard Info notification." />
-      </Grid>
-    );
-  })
-  .add("Success Banner", () => {
-    return (
-      <Grid>
-        <Banner type="success" title="This is a Standard Success notification." />
-      </Grid>
-    );
-  })
-  .add("Warning Banner", () => {
-    return (
-      <Grid>
-        <Banner type="warning" title="This is a Standard Warning notification." />
-      </Grid>
-    );
-  })
-  .add("Alert Banner", () => {
-    return (
-      <Grid>
-        <Banner type="alert" title="This is a Standard Error notification." />
-      </Grid>
+      </CardList>
     );
   })
   .add("Icon Banner", () => {
     return (
-      <Grid>
+      <CardList>
         <Banner
           type="media"
           icon="user"
-          title="This notification is displaying an optional icon."
-          description="Additional information can go here, if necessary."
-          link="Learn More"
+          title="This is a Banner."
+          description="A description can go here, if necessary."
+          link="Link Text"
         />
-      </Grid>
+      </CardList>
     );
   })
-  .add("Image Banner", () => {
+  .add("Info Banner", () => {
     return (
-      <Grid>
-        <Banner
-          type="media"
-          img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-          title="This notification is displaying an optional image."
-          description="Additional information can go here, if necessary."
-          link="Learn More"
-        />
-      </Grid>
+      <CardList>
+        <Banner type="info" title="This is an Info Banner." />
+      </CardList>
+    );
+  })
+  .add("Success Banner", () => {
+    return (
+      <CardList>
+        <Banner type="success" title="This is a Success Banner." />
+      </CardList>
+    );
+  })
+  .add("Warning Banner", () => {
+    return (
+      <CardList>
+        <Banner type="warning" title="This is a Warning Banner." />
+      </CardList>
+    );
+  })
+  .add("Alert Banner", () => {
+    return (
+      <CardList>
+        <Banner type="alert" title="This is an Alert Banner." />
+      </CardList>
     );
   })
 
   .add("The Banner Family", () => {
     return (
-      <Grid>
-        <Banner title="This is a Standard notification telling you stuff." />
+      <CardList>
+        <Banner title="This is a Banner." />
         <Banner
-          title="This is a Standard notification that includes a description."
-          description="Additional information can go here, if necessary."
+          title="This is a Banner."
+          description="A description can go here, if necessary."
         />
         <Banner
-          title="This is a Standard notification that includes a description."
-          description="Additional information can go here, if necessary."
-          link="Learn More"
+          title="This is a Banner."
+          description="A description can go here, if necessary."
+          link="Link Text"
         />
-        <Banner type="info" title="This is a Standard Info notification." />
-        <Banner type="success" title="This is a Standard Success notification." />
-        <Banner type="warning" title="This is a Standard Warning notification." />
-        <Banner type="alert" title="This is a Standard Error notification." />
         <Banner
-          type="media"
           icon="user"
-          title="This notification is displaying an optional icon."
-          description="Additional information can go here, if necessary."
-          link="Learn More"
+          title="This is a Banner."
+          description="A description can go here, if necessary."
+          link="Link Text"
         />
         <Banner
-          type="media"
-          img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-          title="This notification is displaying an optional image."
-          description="Additional information can go here, if necessary."
-          link="Learn More"
+          type="info"
+          title="This is an Info Banner."
+          description="A description can go here, if necessary."
+          link="Link Text"
         />
-      </Grid>
+        <Banner
+          type="success"
+          title="This is a Success Banner."
+          description="A description can go here, if necessary."
+          link="Link Text"
+        />
+        <Banner
+          type="warning"
+          title="This is a Warning Banner."
+          description="A description can go here, if necessary."
+          link="Link Text"
+        />
+        <Banner
+          type="alert"
+          title="This is an Alert Banner."
+          description="A description can go here, if necessary."
+          link="Link Text"
+        />
+      </CardList>
     );
   });

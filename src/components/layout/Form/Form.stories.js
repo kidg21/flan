@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { storiesOf } from "@storybook/react";
@@ -50,13 +51,13 @@ const shortRadios = [
     name: "radio-group",
     value: "2",
     label: "Label 2 (disabled)",
+    disabled: true,
   },
   {
     id: "radio-3",
     name: "radio-group",
     value: "3",
     label: "Label 3",
-    disabled: true,
   },
   {
     id: "radio-4",
@@ -72,7 +73,6 @@ const longRadios = [
     value: "5",
     label:
       "My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself.",
-    disabled: true,
   },
   {
     id: "radio_long2",
@@ -109,6 +109,7 @@ storiesOf("Layout|Form", module).add("Form Layout", () => {
               label="Last Name"
               placeholder="Williams"
               helpText="The one that comes after.."
+              disabled
             />
           </Section>
           <Section title="Group 2">
@@ -126,6 +127,7 @@ storiesOf("Layout|Form", module).add("Form Layout", () => {
               placeholder="Choose One Or More..."
               helpText="Help text for the SelectMenu component"
               options={options}
+              disabled
             />
           </Section>
           <Section title="Group 3">

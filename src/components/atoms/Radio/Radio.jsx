@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -21,8 +22,6 @@ const RadioContainer = styled.div`
   grid-template-areas: ${(props) => {
     return props.alignInput || "";
   }};
-  width: max-content;
-  line-height: initial;
   color: ${(props) => {
     return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
@@ -41,24 +40,25 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
     return props.theme.palette[props.fillColor] || props.theme.background.default;
   }};
   border-color: ${(props) => {
-    return props.theme.palette[props.outlineColor] || props.theme.palette.border;
+    return props.theme.palette[props.outlineColor] || props.theme.border;
   }};
-  width: 1.1rem;
-  height: 1.1rem;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 1px;
   border-radius: 100%;
   cursor: pointer;
   -webkit-appearance: none;
   &:checked {
     background-color: ${(props) => {
-    return props.theme.palette[props.fillColorChecked] || props.theme.palette.secondaryLight;
+    return props.theme.palette[props.fillColorChecked] || props.theme.background.selected;
   }};
     border-color: ${(props) => {
-    return props.theme.palette[props.outlineColor] || props.theme.palette.secondary;
+    return props.theme.palette[props.outlineColor] || props.theme.background.selected;
   }};
   }
   &:focus {
     border-color: ${(props) => {
-    return props.theme.palette[props.outlineColor] || props.theme.palette.secondary;
+    return props.theme.palette[props.outlineColor] || props.theme.palette.secondaryLight;
   }};
     outline: none;
   }
@@ -67,8 +67,7 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
 const RadioLabel = styled.label`
   grid-area: label;
   color: inherit;
-  line-height: 1rem;
-  width: max-content;
+  width: fit-content;
   user-select: none;
   cursor: pointer;
 `;
@@ -90,16 +89,17 @@ function Radio({
   let tabIndex;
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
-    fillColor = "disabled";
-    fillColorChecked = "disabled";
+    fillColor = "grey5";
+    fillColorChecked = "grey5";
     inputTextColor = "disabled";
+    outlineColor = "grey4";
     tabIndex = "-1";
   }
   if (error && !isDisabled) {
+    fillColor = "alertLight";
+    fillColorChecked = "alertLight";
     inputTextColor = "alert";
-    fillColor = "alert";
-    outlineColor = "alertDark";
-    fillColorChecked = "alert";
+    outlineColor = "alertLight";
   }
   switch (align) {
     case "right":
@@ -159,7 +159,7 @@ function RadioGroup({
       inputTextColor={inputTextColor}
       id={id}
     >
-     {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
+      {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
       {helpText ? <HelpText>{helpText}</HelpText> : null}
       <InputGroup columns={columns}>
         {children ||

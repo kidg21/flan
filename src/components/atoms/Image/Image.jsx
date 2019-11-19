@@ -13,7 +13,7 @@ const ImageWrapper = styled.img`
     return props.circle ? "100%" : "5px";
   }};
   box-shadow: ${(props) => {
-    return props.border ? `0 0 0 2px ${props.theme.palette.border}` : "";
+    return props.border ? `0 0 0 2px ${props.theme.border}` : "";
   }};
 `;
 

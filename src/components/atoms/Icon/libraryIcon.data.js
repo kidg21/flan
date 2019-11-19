@@ -35,13 +35,6 @@ export const iconsType = [
     type: "alert",
     desc: placeholder.desc,
   },
-  {
-    name: "inverse",
-    icon: "user_circle",
-    type: "inverse",
-    desc: placeholder.desc,
-    background: "inverse",
-  },
 ];
 
 // Size
