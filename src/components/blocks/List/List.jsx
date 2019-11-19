@@ -19,11 +19,10 @@ const ListItemWrapper = styled.li`
     return props.theme.text[props.itemColor];
   }};
   background-color: ${props => {
-    return props.theme.background[props.itemBGColor] || props.theme.palette.backGround;
-  }};
-  border-style: solid;
-  border-width: ${props => {
-    return props.itemBorder || "0";
+    return (
+      props.theme.background[props.itemBGColor] ||
+      props.theme.palette.background
+    );
   }};
   border-bottom: 1px solid
     ${props => {
