@@ -37,6 +37,13 @@ const Close = styled(Icon)`
   }
 `;
 
+const iconHash = {
+  info: "info",
+  success: "check",
+  warning: "alert",
+  alert: "close",
+};
+
 function Banner({
   description,
   href,
@@ -48,12 +55,6 @@ function Banner({
   title,
   type,
 }) {
-  const iconHash = {
-    info: "info",
-    success: "check",
-    warning: "alert",
-    alert: "close",
-  };
   let bannerType;
   const badgeColor = type;
   if (icon) {
@@ -70,7 +71,7 @@ function Banner({
     );
   }
   return (
-    <StyledBanner borderColor={type} id={id} type={type} padding="4x">
+    <StyledBanner borderColor={type} id={id} padding="4x">
       <Bar
         contentAlign={description || link ? "" : "center"}
         padding="none"
