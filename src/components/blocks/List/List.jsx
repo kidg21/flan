@@ -85,55 +85,29 @@ function ListItem({
   interactive,
   label,
   onClick,
-  type,
+  type
 }) {
-  let itemColor;
   let itemBGColor;
-  let itemBorder;
-  switch (type) {
-    case "info":
-      itemColor = "info";
-      if (active) {
-        itemBGColor = "info_active";
-      }
-      break;
-    case "success":
-      itemColor = "success";
-      if (active) {
-        itemBGColor = "success_active";
-      }
-      break;
-    case "warning":
-      itemColor = "warning";
-      if (active) {
-        itemBGColor = "warning_active";
-      }
-      break;
-    case "alert":
-      itemColor = "alert";
-      if (active) {
-        itemBGColor = "alert_active";
-      }
-      break;
-    default:
-      // itemBGColor = "white";
-      if (active) {
-        itemColor = "active";
-        itemBGColor = "active";
-      }
-      if (disabled) {
-        active = false;
-      }
-      break;
+  let itemColor = type;
+  if (active) {
+    if (itemColor) itemBGColor = `${itemColor}_active`;
+    else {
+      itemColor = "active";
+      itemBGColor = itemColor;
+    }
+    active = !disabled;
   }
   return (
     <ListItemWrapper
       active={active}
       disabled={disabled}
       id={id}
-      interactive={typeof interactive === "boolean" ? interactive : useContext(InteractiveContext)}
+      interactive={
+        typeof interactive === "boolean"
+          ? interactive
+          : useContext(InteractiveContext)
+      }
       itemBGColor={itemBGColor}
-      itemBorder={itemBorder}
       itemColor={itemColor}
       onClick={onClick}
       tabIndex={disabled ? "-1" : "1"}
@@ -145,7 +119,9 @@ function ListItem({
           center={
             <>
               {<Title text={label} />}
-              {description ? <Title text={description} size="small" weight="light" /> : null}
+              {description ? (
+                <Title text={description} size="small" weight="light" />
+              ) : null}
             </>
           }
           right={children}
@@ -160,13 +136,13 @@ List.propTypes = {
   children: PropTypes.node,
   id: PropTypes.string,
   interactive: PropTypes.bool,
-  title: PropTypes.string,
+  title: PropTypes.string
 };
 List.defaultProps = {
   children: null,
   id: null,
   interactive: false,
-  title: null,
+  title: null
 };
 
 ListItem.propTypes = {
@@ -178,7 +154,7 @@ ListItem.propTypes = {
   interactive: PropTypes.bool,
   label: PropTypes.string.isRequired,
   onClick: PropTypes.func,
-  type: PropTypes.oneOf(["info", "success", "warning", "alert"]),
+  type: PropTypes.oneOf(["info", "success", "warning", "alert"])
 };
 ListItem.defaultProps = {
   active: false,
@@ -188,7 +164,7 @@ ListItem.defaultProps = {
   id: null,
   interactive: null,
   onClick: null,
-  type: null,
+  type: null
 };
 
 export { List as default, ListItem };
