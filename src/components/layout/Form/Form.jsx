@@ -119,7 +119,7 @@ const StyledLabel = styled.label`
     return props.theme.text[props.color] || "inherit";
   }};
   background-color: ${props => {
-    return props.theme.palette.backGround;
+    return props.theme.palette.background;
   }};
   border: 1px solid
     ${props => {
