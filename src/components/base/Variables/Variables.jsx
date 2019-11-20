@@ -171,7 +171,7 @@ export const DMPTheme = {
 
 export const darkTheme = {
   background: {
-    active: colors.greenDark,
+    active: colors.green,
     alert_active: colors.redDark,
     app: colors.greyDark,
     dark: colors.black,
@@ -189,12 +189,12 @@ export const darkTheme = {
   border: colors.grey20,
   divider: colors.greyDark,
   text: {
-    active: colors.greenLight,
+    active: colors.greenTint,
     // alert: "#7d0000",
-    alert: colors.redBright,
+    alert: colors.redTint,
     disabled: colors.grey40,
     // info: "#66b1e3",
-    info: colors.blueBright,
+    info: colors.blueTint,
     inverse: colors.black,
     // link: "#66b1e3",
     link: colors.blue,
@@ -202,9 +202,9 @@ export const darkTheme = {
     secondary: colors.grey60,
     selected: colors.greyLight,
     // success: "rgb(36, 138, 61)",
-    success: colors.greenBright,
+    success: colors.greenTint,
     // warning: "rgb(178, 80, 0)",
-    warning: colors.orangeBright,
+    warning: colors.orangeTint,
   },
   palette: {
     // alert: "#FF453A",
