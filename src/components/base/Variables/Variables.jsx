@@ -84,7 +84,7 @@ export const DMPTheme = {
   border: colors.grey40,
   divider: colors.grey20,
   text: {
-    active: colors.greenLight,
+    active: colors.greenDark,
     alert: colors.redBright,
     dark: colors.black,
     disabled: colors.grey60,
@@ -158,7 +158,8 @@ export const DMPTheme = {
       "hsl(34, 5%, 88%)  0rem 0rem 1px, hsla(34, 5%, 92%, 0.333333) 0 0rem 0.5rem 0.25rem;",
     lightBorderShadow:
       "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem",
-    lightBorderInner: "hsl(34, 5%, 72%) -1px -1px 0 0 inset, hsl(34, 5%, 72%) 1px 1px 0 0 inset",
+    lightBorderInner:
+      "hsl(34, 5%, 72%) -1px -1px 0 0 inset, hsl(34, 5%, 72%) 1px 1px 0 0 inset",
     border20: "hsl(34, 5%, 95%) 0px 0px 0px 1px",
     border40: "hsl(34, 5%, 88%) 0px 0px 0px 1px",
     checkedShadow:
@@ -282,7 +283,8 @@ export const darkTheme = {
       "hsl(34, 5%, 88%)  0rem 0rem 1px, hsla(34, 5%, 92%, 0.333333) 0 0rem 0.5rem 0.25rem;",
     lightBorderShadow:
       "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem",
-    lightBorderInner: "hsl(34, 5%, 72%) -1px -1px 0 0 inset, hsl(34, 5%, 72%) 1px 1px 0 0 inset",
+    lightBorderInner:
+      "hsl(34, 5%, 72%) -1px -1px 0 0 inset, hsl(34, 5%, 72%) 1px 1px 0 0 inset",
     border20: "hsl(34, 5%, 95%) 0px 0px 0px 1px",
     border40: "hsl(34, 5%, 88%) 0px 0px 0px 1px",
     checkedShadow:
@@ -331,12 +333,14 @@ export const fontSize = {
 export const shadows = {
   cardShadow:
     "drop-shadow(0 0 1px hsl(34, 5%, 72%)) drop-shadow(0.25rem 0.25rem 0.25rem hsla(34, 5%, 58%, 0.333333));",
-  dropShadow: "hsl(34, 5%, 36%) 0rem 0rem 1px, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem;",
+  dropShadow:
+    "hsl(34, 5%, 36%) 0rem 0rem 1px, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem;",
   panelSectionShadow:
     "hsl(34, 5%, 88%)  0rem 0rem 1px, hsla(34, 5%, 92%, 0.333333) 0 0rem 0.5rem 0.25rem;",
   lightBorderShadow:
     "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem",
-  lightBorderInner: "hsl(34, 5%, 72%) -1px -1px 0 0 inset, hsl(34, 5%, 72%) 1px 1px 0 0 inset",
+  lightBorderInner:
+    "hsl(34, 5%, 72%) -1px -1px 0 0 inset, hsl(34, 5%, 72%) 1px 1px 0 0 inset",
   border20: "hsl(34, 5%, 95%) 0px 0px 0px 1px",
   border40: "hsl(34, 5%, 88%) 0px 0px 0px 1px",
   checkedShadow:
