@@ -1,3 +1,7 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
@@ -9,20 +13,22 @@ const TagContainer = styled.div`
   display: flex;
   width: fit-content;
   align-items: center;
-  background-color: ${props => {
+  background-color: ${(props) => {
     return props.theme.palette[props.badgeColor];
   }};
-  color: ${props => {
+  color: ${(props) => {
     return props.theme.text[props.badgeTextColor];
   }};
   text-transform: uppercase;
-  padding: ${props => {
+  padding: ${(props) => {
     return props.badgePadding || "";
   }};
   border-radius: 10em;
 `;
 
-function Tag({ id, label, icon, type, style }) {
+function Tag({
+  id, label, icon, style, type,
+}) {
   let badgeColor;
   let badgeTextColor;
   let badgePadding;
@@ -87,13 +93,17 @@ function Tag({ id, label, icon, type, style }) {
 Tag.propTypes = {
   id: PropTypes.string,
   label: PropTypes.string,
+  type: PropTypes.string,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
-  style: PropTypes.string
+  style: PropTypes.string,
 };
 
 Tag.defaultProps = {
   label: null,
-  id: null
+  id: null,
+  type: null,
+  icon: null,
+  style: null,
 };
 
 export { Tag as default };

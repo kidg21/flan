@@ -1,7 +1,8 @@
-import React, { useState, Fragment } from "react";
-import styled from "styled-components";
-
-import PropTypes from "prop-types";
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
+import React, { useState } from "react";
 import Legend, { Item } from "./Legend.jsx";
 
 function MapLegend() {

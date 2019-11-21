@@ -1,3 +1,7 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
@@ -9,7 +13,7 @@ import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";
 
 const RangeContainer = styled(Grid)`
-  color: ${props => {
+  color: ${(props) => {
     return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
   &:last-child {
@@ -31,7 +35,7 @@ function DataRange({
   onChangeSelector,
   optionsSelect,
   optionsMax,
-  optionsMin
+  optionsMin,
 }) {
   let inputTextColor;
   const isDisabled =
@@ -40,14 +44,12 @@ function DataRange({
     inputTextColor = "alert";
   }
   function onChangeMin(currState, newState, setState) {
-    if (onChange)
-      onChange({ min: newState ? newState.selected : currState.target.value });
+    if (onChange) { onChange({ min: newState ? newState.selected : currState.target.value }); }
     if (setState) setState(newState);
   }
 
   function onChangeMax(currState, newState, setState) {
-    if (onChange)
-      onChange({ max: newState ? newState.selected : currState.target.value });
+    if (onChange) { onChange({ max: newState ? newState.selected : currState.target.value }); }
     if (setState) setState(newState);
   }
   return (
@@ -75,13 +77,13 @@ function DataRange({
             />
           ) : (
             <TextInput
-              label={labelMin}
-              options={optionsMin}
-              onChange={onChangeMin}
-              error={!!error}
-              disabled={isDisabled}
-            />
-          )
+                label={labelMin}
+                options={optionsMin}
+                onChange={onChangeMin}
+                error={!!error}
+                disabled={isDisabled}
+              />
+            )
         }
         center={
           withSelector ? (
@@ -103,13 +105,13 @@ function DataRange({
             />
           ) : (
             <TextInput
-              label={labelMax}
-              options={optionsMax}
-              onChange={onChangeMax}
-              error={!!error}
-              disabled={isDisabled}
-            />
-          )
+                label={labelMax}
+                options={optionsMax}
+                onChange={onChangeMax}
+                error={!!error}
+                disabled={isDisabled}
+              />
+            )
         }
       />
       {helpText ? <Label size="sm" text={helpText} /> : null}
@@ -133,9 +135,8 @@ DataRange.propTypes = {
   labelMax: PropTypes.string.isRequired,
   labelMin: PropTypes.string.isRequired,
   onChange: PropTypes.func,
-  optionsSelect: PropTypes.func,
   optionsMax: PropTypes.map,
-  optionsMin: PropTypes.map
+  optionsMin: PropTypes.map,
 };
 DataRange.defaultProps = {
   disabled: false,
@@ -149,7 +150,7 @@ DataRange.defaultProps = {
   onChangeSelector: null,
   optionsSelect: null,
   optionsMax: null,
-  optionsMin: null
+  optionsMin: null,
 };
 
 export default DataRange;

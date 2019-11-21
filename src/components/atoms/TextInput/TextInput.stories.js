@@ -1,10 +1,17 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
 import { withInfo } from "@storybook/addon-info";
-import { withKnobs, text, boolean, optionsKnob as options } from "@storybook/addon-knobs";
+import {
+  withKnobs,
+  text,
+  boolean,
+  optionsKnob as options,
+} from "@storybook/addon-knobs";
 import Panel, { PanelSection } from "layout/Panel";
 import Form, { Section } from "layout/Form";
 import TextInput from "atoms/TextInput";
@@ -63,7 +70,11 @@ storiesOf("Atoms|Text Input", module)
         )}
         label={text("label", "Text Input Label", "Text Input")}
         isRequired={boolean("required", false, "Text Input")}
-        placeholder={text("placeholder text", "I am just keeping things warm", "Text Input")}
+        placeholder={text(
+          "placeholder text",
+          "I am just keeping things warm",
+          "Text Input",
+        )}
         helpText={text("help text", "Have you been helped yet?", "Text Input")}
         error={
           boolean("error", false, "Text Input") &&

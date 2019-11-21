@@ -1,3 +1,9 @@
+/* eslint-disable no-alert */
+/* eslint-disable security/detect-object-injection */
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
@@ -359,8 +365,8 @@ const data = [
 storiesOf("Blocks|Table", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  .add("Data Table", () =>
-    React.createElement(() => {
+  .add("Data Table", () => {
+    return React.createElement(() => {
       const [highlightedCell, setHighlightCell] = useState(null);
       const [selectedCell, setSelectedCell] = useState(null);
       for (let i = 0; i < data.length; i++) {
@@ -390,26 +396,24 @@ storiesOf("Blocks|Table", module)
         setHighlightCell({ rowIndex });
       };
 
-      return (
+      return React.createElement(
+        Card,
+        null,
         React.createElement(
-          Card,
+          DataTable,
+          {
+            headers: headers,
+            rows: data,
+            listId: "foo",
+            onCellClick: onCellClick,
+            onHeaderClick: onHeaderClick,
+            onCellMouseOver: onCellMouseOver,
+            highlightedCell: highlightedCell,
+            selectedCell: selectedCell,
+            columnWidth: 120,
+          },
           null,
-          React.createElement(
-            DataTable,
-            {
-              headers: headers,
-              rows: data,
-              listId: "foo",
-              onCellClick: onCellClick,
-              onHeaderClick: onHeaderClick,
-              onCellMouseOver: onCellMouseOver,
-              highlightedCell: highlightedCell,
-              selectedCell: selectedCell,
-              columnWidth: 120,
-            },
-            null,
-          ),
-        )
+        ),
       );
-    })
-  );
+    });
+  });

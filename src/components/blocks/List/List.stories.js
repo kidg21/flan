@@ -1,5 +1,7 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
@@ -52,7 +54,10 @@ storiesOf("Blocks|List", module)
   .add("Knobs", () => {
     return (
       <Card>
-        <List title={text("Title", "", "List")} interactive={boolean("Interactive", false, "List")}>
+        <List
+          title={text("Title", "", "List")}
+          interactive={boolean("Interactive", false, "List")}
+        >
           <ListItem
             label={text("1 - Label", "Item 1", "Item 1")}
             description={text("1 - Description", "", "Item 1")}
@@ -141,13 +146,41 @@ storiesOf("Blocks|List", module)
             description="This is the description"
             interactive={false}
           />
-          <ListItem label="List Item (disabled)" description="This is the description" disabled />
+          <ListItem
+            label="List Item (disabled)"
+            description="This is the description"
+            disabled
+          />
           <ListItem label="List Item" description="This is the description" />
-          <ListItem label="List Item" description="This is the description" active />
-          <ListItem label="List Item" description="This is the description" type="info" active />
-          <ListItem label="List Item" description="This is the description" type="success" active />
-          <ListItem label="List Item" description="This is the description" type="warning" active />
-          <ListItem label="List Item" description="This is the description" type="alert" active />
+          <ListItem
+            label="List Item"
+            description="This is the description"
+            active
+          />
+          <ListItem
+            label="List Item"
+            description="This is the description"
+            type="info"
+            active
+          />
+          <ListItem
+            label="List Item"
+            description="This is the description"
+            type="success"
+            active
+          />
+          <ListItem
+            label="List Item"
+            description="This is the description"
+            type="warning"
+            active
+          />
+          <ListItem
+            label="List Item"
+            description="This is the description"
+            type="alert"
+            active
+          />
         </List>
       </Card>
     );
@@ -235,31 +268,46 @@ storiesOf("Blocks|List", module)
           <ListItem label="Do Something?">
             <SelectMenu
               width="40%"
-              options={[{ value: "yes", label: "Yes" }, { value: "no", label: "No" }]}
+              options={[
+                { value: "yes", label: "Yes" },
+                { value: "no", label: "No" },
+              ]}
             />
           </ListItem>
           <ListItem label="Something Else?" disabled>
             <SelectMenu
               width="40%"
-              options={[{ value: "yes", label: "Yes" }, { value: "no", label: "No" }]}
+              options={[
+                { value: "yes", label: "Yes" },
+                { value: "no", label: "No" },
+              ]}
             />
           </ListItem>
           <ListItem label="How About This?">
             <SelectMenu
               width="40%"
-              options={[{ value: "yes", label: "Yes" }, { value: "no", label: "No" }]}
+              options={[
+                { value: "yes", label: "Yes" },
+                { value: "no", label: "No" },
+              ]}
             />
           </ListItem>
           <ListItem label="Any Ideas?">
             <SelectMenu
               width="40%"
-              options={[{ value: "yes", label: "Yes" }, { value: "no", label: "No" }]}
+              options={[
+                { value: "yes", label: "Yes" },
+                { value: "no", label: "No" },
+              ]}
             />
           </ListItem>
           <ListItem label="Flan?">
             <SelectMenu
               width="40%"
-              options={[{ value: "yes", label: "Yes" }, { value: "yes", label: "I said YES!" }]}
+              options={[
+                { value: "yes", label: "Yes" },
+                { value: "yes", label: "I said YES!" },
+              ]}
             />
           </ListItem>
         </List>

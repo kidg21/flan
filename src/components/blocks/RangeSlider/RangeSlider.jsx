@@ -1,4 +1,7 @@
-/* eslint-disable complexity */
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -10,7 +13,7 @@ import TextInput from "atoms/TextInput";
 import Slider from "atoms/Slider";
 
 const RangeContainer = styled(Grid)`
-  color: ${props => {
+  color: ${(props) => {
     return props.theme.text[props.inputTextColor] || "";
   }};
   &:last-child {
@@ -26,7 +29,7 @@ function RangeSlider({
   isRequired,
   label,
   placeholderMin,
-  placeholderMax
+  placeholderMax,
 }) {
   let inputTextColor;
   const isDisabled =
@@ -64,7 +67,7 @@ function RangeSlider({
             <Slider error disabled={isDisabled} />
           ) : (
             <Slider disabled={isDisabled} />
-          )
+            )
         }
         right={
           <TextInput
@@ -90,7 +93,7 @@ RangeSlider.propTypes = {
   isRequired: PropTypes.bool,
   label: PropTypes.string,
   placeholderMin: PropTypes.string,
-  placeholderMax: PropTypes.string
+  placeholderMax: PropTypes.string,
 };
 RangeSlider.defaultProps = {
   disabled: false,
@@ -100,7 +103,7 @@ RangeSlider.defaultProps = {
   isRequired: false,
   label: null,
   placeholderMin: "Min",
-  placeholderMax: "Max"
+  placeholderMax: "Max",
 };
 
 export default RangeSlider;

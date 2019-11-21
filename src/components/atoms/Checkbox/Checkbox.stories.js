@@ -1,10 +1,17 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
-import { withKnobs, text, boolean, optionsKnob as options } from "@storybook/addon-knobs";
+import {
+  withKnobs,
+  text,
+  boolean,
+  optionsKnob as options,
+} from "@storybook/addon-knobs";
 import Form, { Section } from "layout/Form";
 import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
 import CheckboxNotes from "./Checkbox.md";
@@ -37,7 +44,8 @@ const longLabels = [
   },
   {
     id: "cbox_long2",
-    label: "Enough with these long labels already...put it on your blog, Shakespeare.",
+    label:
+      "Enough with these long labels already...put it on your blog, Shakespeare.",
   },
 ];
 
@@ -152,7 +160,11 @@ storiesOf("Blocks|Checkbox Group", module)
             )}
             isRequired={boolean("required", false, "Checkbox Group")}
             label={text("Input Label", "Input Label", "Checkbox Group")}
-            helpText={text("Help Text", "Have you been helped yet?", "Checkbox Group")}
+            helpText={text(
+              "Help Text",
+              "Have you been helped yet?",
+              "Checkbox Group",
+            )}
             align={options(
               "box align",
               {

@@ -1,15 +1,20 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 // Publicly exported files from 'base'
 export {
   default as Title,
   SubTitle,
   Description,
   Link,
-  Number
+  Number,
 } from "./base/Typography";
 export { default as Label } from "./base/Label";
 export { default as GlobalStyles } from "./base/GlobalStyles/GlobalStyles.jsx";
 
 // Publicly exported files from 'atoms'
+export { default as Avatar } from "./atoms/Avatar";
 export { default as Badge } from "./atoms/Badge";
 export { default as Button } from "./atoms/Button";
 export { default as Calendar } from "./atoms/Calendar";
@@ -57,7 +62,7 @@ export {
   default as Dialog,
   Alert,
   Confirm,
-  Prompt
+  Prompt,
 } from "./elements/DialogBox";
 
 // Publicly exported files from 'layout'
@@ -75,5 +80,5 @@ export {
   shadows,
   screen,
   DMPTheme,
-  darkTheme
+  darkTheme,
 } from "./base/Variables/Variables.jsx";

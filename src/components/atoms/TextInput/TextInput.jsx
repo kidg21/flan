@@ -1,4 +1,7 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -7,7 +10,7 @@ import Label from "base/Label";
 import Grid from "layout/Grid";
 
 const TextInputContainer = styled(Grid)`
-  color: ${props => {
+  color: ${(props) => {
     return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
   width: 100%;
@@ -17,61 +20,61 @@ const Input = styled.input`
   color: inherit;
   line-height: normal;
   border: 1px solid;
-  border-color: ${props => {
+  border-color: ${(props) => {
     return (
       props.theme.palette[props.inputBorderColor] || props.theme.palette.grey4
     );
   }};
-  background-color: ${props => {
+  background-color: ${(props) => {
     return (
       props.theme.palette[props.inputFillColor] || props.theme.palette.white
     );
   }};
-  caret-color: ${props => {
+  caret-color: ${(props) => {
     return props.theme.palette[props.inputCaretColor] || "";
   }};
   width: 100%;
   min-height: 3.167rem;
   padding: 0.5rem 0.75rem;
-  resize: ${props => {
+  resize: ${(props) => {
     return props.inputResize || "";
   }};
   ::placeholder {
     font-weight: initial;
     font-size: 1rem;
     letter-spacing: .5px;
-    color: ${props => {
-      return (
-        props.theme.text[props.placeholderColor] || props.theme.text.secondary
-      );
-    }};
+    color: ${(props) => {
+    return (
+      props.theme.text[props.placeholderColor] || props.theme.text.secondary
+    );
+  }};
   }
   &:hover {
-    border-color: ${props => {
-      return (
-        props.theme.palette[props.inputBorderColorHover] ||
-        props.theme.palette.grey3
-      );
-    }};
+    border-color: ${(props) => {
+    return (
+      props.theme.palette[props.inputBorderColorHover] ||
+      props.theme.palette.grey3
+    );
+  }};
     }
   }
   &:focus {
-    border-color: ${props => {
-      return (
-        props.theme.palette[props.inputBorderColorHover] ||
-        props.theme.palette.secondary
-      );
-    }};
+    border-color: ${(props) => {
+    return (
+      props.theme.palette[props.inputBorderColorHover] ||
+      props.theme.palette.secondary
+    );
+  }};
     ::selection {
-      color: ${props => {
-        return props.theme.text.selected;
-      }};
-      background-color: ${props => {
-        return (
-          props.theme.palette[props.inputSelectColor] ||
-          props.theme.background.selected
-        );
-      }};
+      color: ${(props) => {
+    return props.theme.text.selected;
+  }};
+      background-color: ${(props) => {
+    return (
+      props.theme.palette[props.inputSelectColor] ||
+      props.theme.background.selected
+    );
+  }};
     }
   }
 `;
@@ -93,7 +96,7 @@ function TextInput({
   size,
   title,
   type,
-  value
+  value,
 }) {
   let as;
   let inputTextColor;
@@ -117,7 +120,7 @@ function TextInput({
   let autoCompleteDataListId = null;
   if (autocompleteList) {
     autoCompleteDataListId = Dmp.Util.getGuid();
-    const options = autocompleteList.map(item => {
+    const options = autocompleteList.map((item) => {
       return (
         <option key={Dmp.Util.getGuid()} value={item}>
           {item}
@@ -224,10 +227,10 @@ TextInput.propTypes = {
     "textarea",
     "time",
     "url",
-    "week"
+    "week",
   ]),
   /** The value attribute specifies the initial value for an input field */
-  value: PropTypes.string
+  value: PropTypes.string,
 };
 
 TextInput.defaultProps = {
@@ -247,7 +250,7 @@ TextInput.defaultProps = {
   size: null,
   title: null,
   type: "text",
-  value: null
+  value: null,
 };
 
 export { TextInput as default };

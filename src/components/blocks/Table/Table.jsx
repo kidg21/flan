@@ -1,9 +1,15 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable security/detect-object-injection */
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React from "react";
 import PropTypes from "prop-types";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import Container from "atoms/Container";
 import { SkeletonStatic } from "helpers";
-import Title from "base/Typography";
+
 
 const Wrapper = styled.div`
   display: block;
@@ -11,7 +17,7 @@ const Wrapper = styled.div`
 `;
 const TableContainer = styled.table`
   width: 100%;
-  color: ${props => {
+  color: ${(props) => {
     return props.theme.text.primary;
   }};
   table-layout: fixed;
@@ -41,10 +47,10 @@ const Body = styled.tbody`
 const TH = styled.th`
   text-align: left;
   min-width: 400px;
-  color: ${props => {
+  color: ${(props) => {
     return props.theme.text.primary;
   }};
-  font-size: ${props => {
+  font-size: ${(props) => {
     return props.fontSize || "small";
   }};
   padding-left: 5px;
@@ -53,23 +59,23 @@ const TH = styled.th`
 `;
 
 const Cell = styled.td`
-  padding: ${props => {
+  padding: ${(props) => {
     return props.cellPadding || "";
   }};
-  border-bottom: ${props => {
+  border-bottom: ${(props) => {
     return props.cellBorder || "";
   }};
-  border-bottom-color: ${props => {
+  border-bottom-color: ${(props) => {
     return props.theme.palette[props.cellBorderColor] || "";
   }};
-  font-size: ${props => {
+  font-size: ${(props) => {
     return props.fontSize || "small";
   }};
 
   &:nth-child(even) {
-    font-weight: ${props => {
-      return props.fontWeight || "";
-    }};
+    font-weight: ${(props) => {
+    return props.fontWeight || "";
+  }};
   }
 
   &:empty {
@@ -87,7 +93,7 @@ function Table({
   style,
   data,
   columns,
-  keyField
+  keyField,
 }) {
   let content;
   let cellPadding;
@@ -114,7 +120,7 @@ function Table({
       <TableContainer>
         <Head>
           <Row>
-            {columns.map(column => {
+            {columns.map((column) => {
               return (
                 <TH key={column} fontSize={fontSize}>
                   {column}
@@ -127,10 +133,10 @@ function Table({
     );
     content = (
       <Body>
-        {data.map(row => {
+        {data.map((row) => {
           return (
             <Row key={row[keyField]}>
-              {columns.map(column => {
+              {columns.map((column) => {
                 return (
                   <Cell
                     key={column}
@@ -152,7 +158,7 @@ function Table({
   } else {
     content = (
       <TableContainer id={id}>
-        {data.map(row => {
+        {data.map((row) => {
           return (
             <Row key={row.id}>
               <Cell
@@ -190,33 +196,30 @@ function Table({
         </Container>
       ) : (
         <TableContainer>{content}</TableContainer>
-      )}
+        )}
     </Wrapper>
   );
 }
 
 Table.propTypes = {
   id: PropTypes.string,
-  header: PropTypes.any,
   scroll: PropTypes.bool,
   setHeight: PropTypes.string,
   fontSize: PropTypes.string,
-  style: PropTypes.any,
-  data: PropTypes.any.isRequired,
+  style: PropTypes.node,
+  data: PropTypes.node.isRequired,
   columns: PropTypes.arrayOf(PropTypes.string),
-  keyField: PropTypes.string
+  keyField: PropTypes.string,
 };
 
 Table.defaultProps = {
   id: null,
-  header: null,
   scroll: false,
   setHeight: null,
   fontSize: null,
   style: null,
-  data: null,
   columns: null,
-  keyField: null
+  keyField: null,
 };
 
 export default Table;

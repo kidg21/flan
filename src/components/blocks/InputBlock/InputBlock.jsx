@@ -1,5 +1,8 @@
-/* eslint-disable linebreak-style */
 /* eslint-disable complexity */
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React, { useState, useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -12,7 +15,7 @@ import Icon from "atoms/Icon";
 import Button from "atoms/Button";
 
 const TextInputContainer = styled(Grid)`
-  color: ${props => {
+  color: ${(props) => {
     return props.theme.text[props.inputTextColor] || "";
   }};
   width: 100%;
@@ -33,20 +36,20 @@ function InputBlock({
   prefix,
   selectOptions,
   text,
-  textInputs
+  textInputs,
 }) {
   const [state, setState] = useState({
     input: textInputs.reduce((inputMap, input) => {
       inputMap[input.id] = input.value;
       return inputMap;
     }, {}),
-    selected: selectOptions
+    selected: selectOptions,
   });
 
   function handleChange(e) {
     const newState = {
       ...state,
-      input: { ...state.input, [e.target.id]: e.target.value }
+      input: { ...state.input, [e.target.id]: e.target.value },
     };
     if (onChange) {
       onChange(state, newState, setState);
@@ -58,7 +61,7 @@ function InputBlock({
   function handleSelectChange(prevState, currState, setSelectState) {
     if (onChange) {
       const newState = { ...state, selected: currState.selected };
-      onChange(state, newState, updatedState => {
+      onChange(state, newState, (updatedState) => {
         setSelectState({ selected: updatedState.selected });
         if (updatedState.input !== newState.input) setState(updatedState);
       });
@@ -75,7 +78,7 @@ function InputBlock({
     inputTextColor = "alert";
     buttonColor = "alert";
   }
-  const inputElements = textInputs.map(input => {
+  const inputElements = textInputs.map((input) => {
     return (
       <TextInput
         disabled={isDisabled}
@@ -208,7 +211,7 @@ InputBlock.propTypes = {
     disabled: PropTypes.bool,
     label: PropTypes.string,
     onClick: PropTypes.func,
-    type: PropTypes.string
+    type: PropTypes.string,
   }),
   className: PropTypes.string,
   disabled: PropTypes.bool,
@@ -219,26 +222,22 @@ InputBlock.propTypes = {
   isRequired: PropTypes.bool,
   label: PropTypes.string,
   onChange: PropTypes.func,
-  options: PropTypes.arrayOf(
-    PropTypes.shape({
-      label: PropTypes.string,
-      value: PropTypes.any
-    })
-  ),
+  options: PropTypes.arrayOf(PropTypes.shape({
+    label: PropTypes.string,
+    value: PropTypes.any,
+  })),
   prefix: PropTypes.bool,
   selectOptions: PropTypes.arrayOf(PropTypes.any),
   text: PropTypes.string,
-  textInputs: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string,
-      placeholder: PropTypes.string,
-      type: PropTypes.string,
-      pattern: PropTypes.string,
-      title: PropTypes.string,
-      value: PropTypes.string,
-      readonly: PropTypes.bool
-    })
-  ).isRequired
+  textInputs: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string,
+    placeholder: PropTypes.string,
+    type: PropTypes.string,
+    pattern: PropTypes.string,
+    title: PropTypes.string,
+    value: PropTypes.string,
+    readonly: PropTypes.bool,
+  })).isRequired,
 };
 InputBlock.defaultProps = {
   button: null,
@@ -254,7 +253,7 @@ InputBlock.defaultProps = {
   options: null,
   prefix: false,
   selectOptions: null,
-  text: null
+  text: null,
 };
 
 export { InputBlock as default };

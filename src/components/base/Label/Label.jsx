@@ -1,30 +1,32 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
 /* eslint-disable complexity */
 // Import dependencies
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { Skeleton } from "helpers";
-import { fonts } from "Variables";
+
 
 const StyledLabel = styled.label`
   color: inherit;
   width: max-content;
   user-select: none;
-  font-size: ${props => {
+  font-size: ${(props) => {
     return props.fontSize || "";
   }};;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: ${props => {
+  font-weight: ${(props) => {
     return props.fontWeight || "500";
   }};;
-  letter-spacing: ${props => {
+  letter-spacing: ${(props) => {
     return props.letterSpacing || ".25px";
   }};;
-  text-transform: ${props => {
+  text-transform: ${(props) => {
     return props.textTransform || "";
   }};;
   &:empty {
@@ -33,9 +35,9 @@ const StyledLabel = styled.label`
 }
 
 &:after {
-  display: ${props => (props.isRequired ? "" : "none")};
+  display: ${(props) => { return (props.isRequired ? "" : "none"); }};
   content: "*";
-  color: ${props => {
+  color: ${(props) => {
     return props.theme.palette.alert;
   }};
   font-size: 1.25rem;
@@ -46,7 +48,9 @@ const StyledLabel = styled.label`
 
 `;
 
-function Label({ text, children, size, weight, isRequired, textTransform }) {
+function Label({
+  text, children, size, weight, isRequired, textTransform,
+}) {
   let fontSize;
   let letterSpacing;
   let fontWeight;
@@ -95,11 +99,19 @@ function Label({ text, children, size, weight, isRequired, textTransform }) {
 }
 Label.propTypes = {
   text: PropTypes.string,
-  children: PropTypes.node
+  children: PropTypes.node,
+  size: PropTypes.string,
+  weight: PropTypes.string,
+  textTransform: PropTypes.string,
+  isRequired: PropTypes.string,
 };
 Label.defaultProps = {
   text: null,
-  children: null
+  children: null,
+  size: null,
+  weight: null,
+  textTransform: null,
+  isRequired: null,
 };
 
 export { Label as default };

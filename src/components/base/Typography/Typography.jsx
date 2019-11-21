@@ -1,3 +1,9 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable react/prop-types */
+/* eslint-disable complexity */
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
@@ -6,34 +12,34 @@ import { fonts } from "Variables";
 
 const StyledText = styled.h4`
   grid-column: 1 / -1;
-  margin: ${props => {
+  margin: ${(props) => {
     return props.margin || "0px 0px 0.25em";
   }};
-  font-family: ${props => {
+  font-family: ${(props) => {
     return props.fontFamily || "inherit";
   }};
-  color: ${props => {
+  color: ${(props) => {
     return props.theme.text[props.textColor] || props.theme.text.primary;
   }};
-  font-weight: ${props => {
+  font-weight: ${(props) => {
     return props.textWeight || "600";
   }};
-  text-align: ${props => {
+  text-align: ${(props) => {
     return props.textAlign || "";
   }};
-  letter-spacing: ${props => {
+  letter-spacing: ${(props) => {
     return props.letterSpacing || "0px";
   }};
-  font-style: ${props => {
+  font-style: ${(props) => {
     return props.textStyle || "";
   }};
-  text-decoration: ${props => {
+  text-decoration: ${(props) => {
     return props.textDecoration || "";
   }};
-  user-select: ${props => {
+  user-select: ${(props) => {
     return props.select || "";
   }};
-  width: ${props => {
+  width: ${(props) => {
     return props.textWidth || "";
   }};
   a {
@@ -41,9 +47,9 @@ const StyledText = styled.h4`
     /** TODO: Add a 'separator' prop */
     /* &:before,
     &:after {
-      content: ${props => {
-        return props.separator || "|";
-      }};
+      content: ${(props) => {
+    return props.separator || "|";
+  }};
     } */
   }
   &:empty {
@@ -53,7 +59,7 @@ const StyledText = styled.h4`
 `;
 
 const LinkedText = styled(StyledText)`
-  color: ${props => {
+  color: ${(props) => {
     return props.theme.text.link;
   }};
   /* width: max-content; */
@@ -70,10 +76,10 @@ const StyledNumber = styled(StyledText)`
 `;
 
 const StyledCode = styled.code`
-  background-color: ${props => {
+  background-color: ${(props) => {
     return props.theme.palette.grey5;
   }};
-  border: 1px solid ${props => {
+  border: 1px solid ${(props) => {
     return props.theme.palette.grey2;
   }};
   border-radius: 0.25rem;
@@ -104,7 +110,7 @@ function Text({
   title,
   type,
   weight,
-  margin
+  margin,
 }) {
   let as;
   let fontFamily;
@@ -249,27 +255,20 @@ Text.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   count: PropTypes.node,
-  // type: PropTypes.oneOf([
-  //   "info",
-  //   "success",
-  //   "warning",
-  //   "alert",
-  //   "dark",
-  //   "inverse",
-  //   "light"
-  // ]),
-  // size: PropTypes.oneOf(["tiny", "small", "large", "xlarge", "xxlarge"]),
-  align: PropTypes.oneOf(["center", "right"]),
+  font: PropTypes.string,
+  href: PropTypes.string,
+  id: PropTypes.string,
+  link: PropTypes.bool,
+  onClick: PropTypes.string,
+  size: PropTypes.string,
+  target: PropTypes.string,
+  text: PropTypes.string,
+  title: PropTypes.string,
+  type: PropTypes.string,
+  weight: PropTypes.string,
+  select: PropTypes.string,
   spacing: PropTypes.string,
   styling: PropTypes.oneOf(["underline", "italic"]),
-  // weight: PropTypes.oneOf(["light", "normal", "bold"]),
-  /** Sets the 'user-select' CSS property
-   * Text is selectable by default
-   * 'all' selects the complete string with a tap/click
-   * 'none' disables text selection
-   */
-  select: PropTypes.oneOf(["all", "none"]),
-  className: PropTypes.string
 };
 Text.defaultProps = {
   align: null,
@@ -290,28 +289,27 @@ Text.defaultProps = {
   title: null,
   type: null,
   weight: null,
-  select: null,
-  children: null,
-  className: null
 };
 
 function Headline({ text, children, ...textProps }) {
   return (
-    <Text separator="pipe" size="xl" weight="bold" {...textProps}>
+    <Text separator="pipe" size="2x" weight="bold" {...textProps}>
       {text || children}
     </Text>
   );
 }
 Headline.propTypes = {
   text: PropTypes.string,
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 Headline.defaultProps = {
   text: null,
-  children: null
+  children: null,
 };
 
-function Title({ text, size, children, ...textProps }) {
+function Title({
+  text, size, children, ...textProps
+}) {
   return (
     <Text size={size} weight="semibold" {...textProps}>
       {text || children}
@@ -320,11 +318,11 @@ function Title({ text, size, children, ...textProps }) {
 }
 Title.propTypes = {
   text: PropTypes.string,
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 Title.defaultProps = {
   text: null,
-  children: null
+  children: null,
 };
 
 function SubTitle({ text, children, ...textProps }) {
@@ -336,14 +334,16 @@ function SubTitle({ text, children, ...textProps }) {
 }
 SubTitle.propTypes = {
   text: PropTypes.string,
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 SubTitle.defaultProps = {
   text: null,
-  children: null
+  children: null,
 };
 
-function Body({ text, weight, children, ...textProps }) {
+function Body({
+  text, weight, children, ...textProps
+}) {
   return (
     <Text size="sm" weight="normal" margin="0px 0px 0.15em" {...textProps}>
       {text || children}
@@ -352,11 +352,11 @@ function Body({ text, weight, children, ...textProps }) {
 }
 Body.propTypes = {
   text: PropTypes.string,
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 Body.defaultProps = {
   text: null,
-  children: null
+  children: null,
 };
 
 function Description({ text, children, ...textProps }) {
@@ -368,14 +368,16 @@ function Description({ text, children, ...textProps }) {
 }
 Description.propTypes = {
   text: PropTypes.string,
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 Description.defaultProps = {
   text: null,
-  children: null
+  children: null,
 };
 
-function Link({ text, children, title, onClick, href, target, ...textProps }) {
+function Link({
+  text, children, title, onClick, href, target, ...textProps
+}) {
   return (
     <Text
       href={href}
@@ -396,12 +398,13 @@ Link.propTypes = {
   href: PropTypes.string,
   onClick: PropTypes.function,
   /** _blank, _parent, _self, _top, framename */
-  target: PropTypes.string
+  target: PropTypes.string,
 };
 Link.defaultProps = {
   children: null,
+  onClick: null,
   href: null,
-  target: null
+  target: null,
 };
 
 function Number({ text, children, ...textProps }) {
@@ -413,10 +416,10 @@ function Number({ text, children, ...textProps }) {
 }
 Number.propTypes = {
   text: PropTypes.number.isRequired,
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 Number.defaultProps = {
-  children: null
+  children: null,
 };
 
 function Code({ text, children }) {
@@ -424,11 +427,11 @@ function Code({ text, children }) {
 }
 Code.propTypes = {
   children: PropTypes.node,
-  text: PropTypes.string
+  text: PropTypes.string,
 };
 Code.defaultProps = {
   children: null,
-  text: null
+  text: null,
 };
 
 export {
@@ -439,5 +442,5 @@ export {
   Body,
   Link,
   Number,
-  Code
+  Code,
 };

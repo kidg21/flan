@@ -1,3 +1,7 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -7,7 +11,7 @@ import Label from "base/Label";
 import TextInput from "atoms/TextInput";
 
 const CalendarContainer = styled(Grid)`
-  color: ${props => {
+  color: ${(props) => {
     return props.theme.text[props.inputTextColor] || "";
   }};
 `;
@@ -25,7 +29,7 @@ function Calendar({
   pattern,
   type,
   value,
-  onChange
+  onChange,
 }) {
   let inputFillColor;
   let placeholderColor;
@@ -49,7 +53,7 @@ function Calendar({
   }
   const inputTypes =
     type.toLowerCase() === "datetime" ? ["date", "time"] : [type.toLowerCase()];
-  const inputElements = inputTypes.map(currType => {
+  const inputElements = inputTypes.map((currType) => {
     return (
       <TextInput
         disabled={isDisabled}
@@ -109,7 +113,7 @@ Calendar.propTypes = {
   onChange: PropTypes.func,
   pattern: PropTypes.string,
   type: PropTypes.oneOf(["date", "time", "datetime"]),
-  value: PropTypes.string
+  value: PropTypes.string,
 };
 
 Calendar.defaultProps = {
@@ -119,12 +123,13 @@ Calendar.defaultProps = {
   helpText: null,
   id: null,
   label: null,
+  onChange: null,
   isRequired: false,
   max: null,
   min: null,
   pattern: null,
   type: "date",
-  value: null
+  value: null,
 };
 
 export default Calendar;

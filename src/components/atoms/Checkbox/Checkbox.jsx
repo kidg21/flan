@@ -1,4 +1,7 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -7,7 +10,7 @@ import Label from "base/Label";
 import Grid from "layout/Grid";
 
 const CheckboxWrapper = styled(Grid)`
-  color: ${props => {
+  color: ${(props) => {
     return props.theme.text[props.inputTextColor] || "";
   }};
 
@@ -20,10 +23,10 @@ const CheckboxContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 0.75rem;
-  grid-template-areas: ${props => {
+  grid-template-areas: ${(props) => {
     return props.alignInput || "";
   }};
-  color: ${props => {
+  color: ${(props) => {
     return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
   &[disabled],
@@ -37,12 +40,12 @@ const CheckboxContainer = styled.div`
 const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   grid-area: input;
   border: 1px solid;
-  background-color: ${props => {
+  background-color: ${(props) => {
     return (
       props.theme.palette[props.fillColor] || props.theme.background.default
     );
   }};
-  border-color: ${props => {
+  border-color: ${(props) => {
     return props.theme.palette[props.borderColor] || props.theme.palette.grey3;
   }};
   width: 1rem;
@@ -52,36 +55,38 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   cursor: pointer;
   -webkit-appearance: none;
   &:checked {
-    background-color: ${props => {
-      return (
-        props.theme.palette[props.fillColorChecked] ||
-        props.theme.background.selected
-      );
-    }};
-    border-color: ${props => {
-      return (
-        props.theme.palette[props.borderColor] ||
-        props.theme.background.selected
-      );
-    }};
+    background-color: ${(props) => {
+    return (
+      props.theme.palette[props.fillColorChecked] ||
+      props.theme.background.selected
+    );
+  }};
+    border-color: ${(props) => {
+    return (
+      props.theme.palette[props.borderColor] ||
+      props.theme.background.selected
+    );
+  }};
   }
   &:focus {
-    outline-color: ${props => {
-      return (
-        props.theme.palette[props.outlineColor] ||
-        props.theme.palette.secondaryLight
-      );
-    }};
+    outline-color: ${(props) => {
+    return (
+      props.theme.palette[props.outlineColor] ||
+      props.theme.palette.secondaryLight
+    );
+  }};
   }
 `;
 
 const InputGroup = styled(Grid)`
-  grid-template-columns: ${props => {
+  grid-template-columns: ${(props) => {
     return props.setColumns || "";
   }};
 `;
 
-function Checkbox({ align, checked, error, disabled, id, label, onChange }) {
+function Checkbox({
+  align, checked, error, disabled, id, label, onChange,
+}) {
   let inputTextColor;
   let fillColor;
   let borderColor;
@@ -149,7 +154,7 @@ function CheckboxGroup({
   id,
   label,
   isRequired,
-  onChange
+  onChange,
 }) {
   let inputTextColor;
   const isDisabled =
@@ -170,7 +175,7 @@ function CheckboxGroup({
       {helpText ? <Label text={helpText} /> : null}
       <InputGroup columns={columns}>
         {children ||
-          data.map(item => {
+          data.map((item) => {
             return (
               <Checkbox
                 align={align}
@@ -196,7 +201,7 @@ Checkbox.propTypes = {
   error: PropTypes.bool,
   id: PropTypes.string,
   label: PropTypes.string.isRequired,
-  onChange: PropTypes.func
+  onChange: PropTypes.func,
 };
 
 Checkbox.defaultProps = {
@@ -205,7 +210,7 @@ Checkbox.defaultProps = {
   disabled: false,
   error: null,
   id: null,
-  onChange: null
+  onChange: null,
 };
 
 CheckboxGroup.propTypes = {
@@ -219,7 +224,7 @@ CheckboxGroup.propTypes = {
   id: PropTypes.string,
   isRequired: PropTypes.bool,
   label: PropTypes.string,
-  onChange: PropTypes.func
+  onChange: PropTypes.func,
 };
 
 CheckboxGroup.defaultProps = {
@@ -233,7 +238,7 @@ CheckboxGroup.defaultProps = {
   id: null,
   isRequired: false,
   label: null,
-  onChange: null
+  onChange: null,
 };
 
 export { Checkbox as default, CheckboxGroup };

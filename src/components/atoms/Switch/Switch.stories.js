@@ -1,9 +1,17 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
-import { withKnobs, text, boolean, optionsKnob as options } from "@storybook/addon-knobs";
+import {
+  withKnobs,
+  text,
+  boolean,
+  optionsKnob as options,
+} from "@storybook/addon-knobs";
 import Form from "layout/Form";
 import Switch from "atoms/Switch";
 import SwitchNotes from "./Switch.md";

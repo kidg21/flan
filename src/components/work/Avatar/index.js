@@ -2,4 +2,4 @@
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
-export { default } from "./Divider.jsx";
+export { default } from "./Avatar.jsx";

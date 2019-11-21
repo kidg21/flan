@@ -1,5 +1,8 @@
-/* eslint-disable linebreak-style */
 /* eslint-disable complexity */
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -7,23 +10,23 @@ import { DisabledContext } from "States";
 
 const Slot = styled.div`
   display: flex;
-  flex: ${props => {
+  flex: ${(props) => {
     return props.setFlex || "auto";
   }};
   flex-direction: column;
-  align-items: ${props => {
+  align-items: ${(props) => {
     return props.alignItems || "";
   }};
-  text-align: ${props => {
+  text-align: ${(props) => {
     return props.textAlign || "";
   }};
-  padding: ${props => {
+  padding: ${(props) => {
     return props.setPadding || "";
   }};
-  min-width: ${props => {
+  min-width: ${(props) => {
     return props.widthMin || "";
   }};
-  max-width: ${props => {
+  max-width: ${(props) => {
     return props.widthMax || "";
   }};
   h1,
@@ -41,18 +44,18 @@ const Slot = styled.div`
 
 const BarLayout = styled.div`
   display: flex;
-  cursor: ${props => {
+  cursor: ${(props) => {
     return props.onClick ? "pointer" : "";
   }};
   flex-direction: row;
-  align-items: ${props => {
+  align-items: ${(props) => {
     return props.alignContent || "";
   }};
   flex-wrap: nowrap;
-  justify-content: ${props => {
+  justify-content: ${(props) => {
     return props.justifyContent || "space-between";
   }};
-  padding: ${props => {
+  padding: ${(props) => {
     return props.barPadding || "";
   }};
   ${Slot} {
@@ -74,7 +77,7 @@ function Bar({
   rightWidth,
   onClick,
   className,
-  disabled
+  disabled,
 }) {
   let justifyContent;
   let alignContent;
@@ -220,7 +223,7 @@ Bar.propTypes = {
   rightWidth: PropTypes.string,
   onClick: PropTypes.func,
   className: PropTypes.string,
-  disabled: PropTypes.bool
+  disabled: PropTypes.bool,
 };
 
 Bar.defaultProps = {
@@ -235,7 +238,7 @@ Bar.defaultProps = {
   rightWidth: null,
   onClick: null,
   className: null,
-  disabled: null
+  disabled: null,
 };
 
 export default Bar;

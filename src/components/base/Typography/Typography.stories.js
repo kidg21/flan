@@ -1,6 +1,8 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import Panel from "layout/Panel";
 import { withInfo } from "@storybook/addon-info";
 import Grid from "layout/Grid";
 import Title, {
@@ -10,7 +12,7 @@ import Title, {
   Body,
   Link,
   Number,
-  Code
+  Code,
 } from "base/Typography";
 
 /** TODO: Add 'Documentation' and 'Knobs' stories */
