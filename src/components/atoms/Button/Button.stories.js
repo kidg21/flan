@@ -3,7 +3,14 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
-import { withKnobs, text, boolean, select, optionsKnob as options } from "@storybook/addon-knobs";
+import { withInfo } from "@storybook/addon-info";
+import {
+  withKnobs,
+  text,
+  boolean,
+  select,
+  optionsKnob as options
+} from "@storybook/addon-knobs";
 import Button from "atoms/Button";
 import ButtonNotes from "./Button.md";
 
@@ -12,17 +19,20 @@ storiesOf("Atoms|Button", module)
   .addParameters({
     info: {
       text:
-        "A control that executes your custom code in response to user interactions.  When you tap a button, or select a button that has focus, the button performs any actions attached to it. You communicate the purpose of a button using a text label, an image, or both. The appearance of buttons is configurable, so you can tint buttons or format titles to match the design of your app. You can add buttons to your interface programmatically or using Interface Builder. -- 'developer.apple.com'",
+        "A control that executes your custom code in response to user interactions.  When you tap a button, or select a button that has focus, the button performs any actions attached to it. You communicate the purpose of a button using a text label, an image, or both. The appearance of buttons is configurable, so you can tint buttons or format titles to match the design of your app. You can add buttons to your interface programmatically or using Interface Builder. -- 'developer.apple.com'"
     },
     notes: {
-      markdown: ButtonNotes,
-    },
+      markdown: ButtonNotes
+    }
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
-  .add("Documentation", () => {
-    return <Button label="Standard Button" />;
-  })
+  .add(
+    "Documentation",
+    withInfo()(() => {
+      return <Button label="Standard Button" />;
+    })
+  )
   .add("Skeleton", () => {
     return <Button />;
   })
@@ -33,40 +43,40 @@ storiesOf("Atoms|Button", module)
           "icon",
           {
             "no icon": null,
-            "user": "user",
-            "down": "down",
-            "bookmark": "bookmark_solid",
-            "plus": "plus",
-            "print": "print",
+            user: "user",
+            down: "down",
+            bookmark: "bookmark_solid",
+            plus: "plus",
+            print: "print"
           },
           null,
-          "Button",
+          "Button"
         )}
         label={text("button label", "Button Label", "Button")}
         color={options(
           "color",
           {
             "primary (default)": "primary",
-            "secondary": "secondary",
-            "success": "success",
-            "info": "info",
-            "warning": "warning",
-            "alert": "alert",
+            secondary: "secondary",
+            success: "success",
+            info: "info",
+            warning: "warning",
+            alert: "alert"
           },
           "default",
           { display: "radio" },
-          "Button",
+          "Button"
         )}
         size={options(
           "size",
           {
-            "small": "small",
+            small: "small",
             "medium ( default )": "default",
-            "large": "large",
+            large: "large"
           },
           "default",
           { display: "radio" },
-          "Button",
+          "Button"
         )}
         fullWidth={boolean("full width", false, "Button")}
         fill={boolean("fill", false, "Button")}
@@ -85,8 +95,8 @@ storiesOf("Atoms|Button", module)
         <Button label="Solid Info Button" type="solid" />
         <Button icon="filter" label="Fitlers" color="primary" />
 
-        <Button label="Small Button" size="small" />
-        <Button label="Large Button" size="large" />
+        {/* <Button label="Small Button" size="small" />
+        <Button label="Large Button" size="large" /> */}
         <Button label="Disabled Button" disabled />
         <Button label="Icon Button" icon="user" type="solid" />
       </Grid>

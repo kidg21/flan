@@ -2,83 +2,26 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Icon from "atoms/Icon";
+import Tag from "atoms/Tag";
 
 const BadgeContainer = styled.div`
   position: absolute;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: ${(props) => {
-    return props.theme.palette[props.badgeColor];
-  }};
-  color: ${(props) => {
-    return props.theme.text[props.badgeTextColor];
-  }};
-  font-size: 0.55em;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  padding: ${(props) => {
-    return props.badgePadding || "";
-  }};
-  border-radius: 10em;
-  bottom: ${(props) => {
+  bottom: ${props => {
     return props.badgeBottom || "";
   }};
-  left: ${(props) => {
+  left: ${props => {
     return props.badgeLeft || "";
   }};
-  transform: ${(props) => {
+  transform: ${props => {
     return props.setTransform || "";
   }};
 `;
 
-const BadgeLabel = styled.span`
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  margin: 0;
-  user-select: none;
-`;
-
-function Badge({
-  id, label, icon, type, position, style,
-}) {
-  let badgeColor;
-  let badgeTextColor;
-  let badgePadding;
+function Badge({ id, label, icon, type, position, style }) {
   let badgeLeft;
   let badgeBottom;
   let setTransform;
-  let labelType;
-  let iconType;
-  if (icon) {
-    iconType = <Icon icon={icon} size="2x" type={type} />;
-    badgePadding = "0 0.25em";
-  } else {
-    labelType = <BadgeLabel>{label}</BadgeLabel>;
-    badgeColor = "alert";
-    badgeTextColor = "light";
-    badgePadding = "0.45em .8em";
-    switch (type) {
-      case "info":
-        badgeColor = "info";
-        break;
-      case "success":
-        badgeColor = "success";
-        break;
-      case "warning":
-        badgeColor = "warning";
-        break;
-      case "alert":
-        badgeColor = "alert";
-        break;
-      default:
-        badgeColor = "alert";
-        break;
-    }
-  }
   switch (position) {
     case "topLeft":
       badgeBottom = "100%";
@@ -105,17 +48,12 @@ function Badge({
   return (
     <BadgeContainer
       id={id}
-      label={label}
-      icon={icon}
-      badgeColor={badgeColor}
-      badgeTextColor={badgeTextColor}
       setTransform={setTransform}
       badgeLeft={badgeLeft}
       badgeBottom={badgeBottom}
-      badgePadding={badgePadding}
       style={style}
     >
-      {iconType || labelType}
+      <Tag label={label} type={type} icon={icon} />
     </BadgeContainer>
   );
 }
@@ -124,9 +62,14 @@ Badge.propTypes = {
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   id: PropTypes.string,
   label: PropTypes.string,
-  position: PropTypes.oneOf(["topLeft", "topRight", "bottomRight", "bottomLeft"]),
-  style: PropTypes.string,
-  type: PropTypes.oneOf(["info", "success", "warning", "alert", "dark"]),
+  position: PropTypes.oneOf([
+    "topLeft",
+    "topRight",
+    "bottomRight",
+    "bottomLeft"
+  ]),
+  style: PropTypes.string
+  // type: PropTypes.oneOf(["info", "success", "warning", "alert", "dark"])
 };
 
 Badge.defaultProps = {
@@ -135,7 +78,7 @@ Badge.defaultProps = {
   label: null,
   position: null,
   style: null,
-  type: null,
+  type: null
 };
 
 export { Badge as default };

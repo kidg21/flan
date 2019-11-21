@@ -1,21 +1,21 @@
-/* eslint-disable react/jsx-filename-extension */
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
-import { Padding } from "helpers/Display";
-import NavigationPanelHeader from "elements/PanelHeaders/NavigationPanelHeader";
+// /* eslint-disable react/jsx-filename-extension */
+// import React from "react";
+// import { storiesOf } from "@storybook/react";
+// import { withInfo } from "@storybook/addon-info";
+// import { Padding } from "helpers/Display";
+// import NavigationPanelHeader from "elements/PanelHeaders/NavigationPanelHeader";
 
-const data = [
-  { id: "a", name: "Save" },
-  { id: "b", name: "Filter" },
-  { id: "c", name: "Something" },
-  { id: "d", name: "Filter" },
-  { id: "e", name: "Layer" },
-];
+// const data = [
+//   { id: "a", name: "Save" },
+//   { id: "b", name: "Filter" },
+//   { id: "c", name: "Something" },
+//   { id: "d", name: "Filter" },
+//   { id: "e", name: "Layer" },
+// ];
 
-storiesOf("Elements|Panel Headers/", module)
-  .addDecorator(Padding)
-  .addDecorator(withInfo)
-  .add("Navigation", () => {
-    return <NavigationPanelHeader title="Main Header" menuData={data} onClick={() => {}} />;
-  });
+// storiesOf("Elements|Panel Headers/", module)
+//   .addDecorator(Padding)
+//   .addDecorator(withInfo)
+//   .add("Navigation", () => {
+//     return <NavigationPanelHeader title="Main Header" menuData={data} onClick={() => {}} />;
+//   });

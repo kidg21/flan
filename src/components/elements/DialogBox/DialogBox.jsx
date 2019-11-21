@@ -6,14 +6,14 @@ import Title from "base/Typography";
 import Card, { Piece } from "layout/Card";
 import Bar from "blocks/Bar";
 
-function DialogueBox({
+function DialogBox({
   id,
   header,
   title,
   message,
   children,
   buttonColor,
-  buttons,
+  buttons
 }) {
   let buttonElements = null;
   if (buttons) {
@@ -24,13 +24,15 @@ function DialogueBox({
           right={
             <Grid columns={buttons.length}>
               {buttons.map((button, index) => {
-                return (<Button
-                  label={button.label}
-                  type={button.type || index === 0 ? "solid" : null}
-                  onClick={button.onClick}
-                  color={button.color || buttonColor}
-                  disabled={button.disabled}
-                />);
+                return (
+                  <Button
+                    label={button.label}
+                    type={button.type || index === 0 ? "solid" : null}
+                    onClick={button.onClick}
+                    color={button.color || buttonColor}
+                    disabled={button.disabled}
+                  />
+                );
               })}
             </Grid>
           }
@@ -70,109 +72,98 @@ const buttonType = PropTypes.shape({
   type: PropTypes.string,
   color: PropTypes.string,
   disabled: PropTypes.bool,
-  onClick: PropTypes.func,
+  onClick: PropTypes.func
 });
 
 const dialogProps = {
   id: PropTypes.string,
   title: PropTypes.node,
   message: PropTypes.node,
-  buttonColor: PropTypes.string,
+  buttonColor: PropTypes.string
 };
 
-DialogueBox.propTypes = {
+DialogBox.propTypes = {
   ...dialogProps,
   header: PropTypes.node,
   children: PropTypes.node,
-  buttons: PropTypes.arrayOf(buttonType),
+  buttons: PropTypes.arrayOf(buttonType)
 };
 
-DialogueBox.defaultProps = {
+DialogBox.defaultProps = {
   id: null,
   header: null,
   children: null,
   title: null,
   message: null,
   buttonColor: null,
-  buttons: null,
+  buttons: null
 };
 
-function Prompt({
-  accept,
-  cancel,
-  buttons,
-  children,
-  ...props
-}) {
+function Prompt({ accept, cancel, buttons, children, ...props }) {
   const promptButtons = cancel ? [accept, cancel] : accept;
-  return <DialogueBox buttons={promptButtons} {...props}>{children}</DialogueBox>;
+  return (
+    <DialogueBox buttons={promptButtons} {...props}>
+      {children}
+    </DialogueBox>
+  );
 }
 
 Prompt.propTypes = {
   ...dialogProps,
   accept: buttonType,
   cancel: buttonType,
-  children: PropTypes.node,
+  children: PropTypes.node
 };
 
 Prompt.defaultProps = {
   children: null,
   accept: { label: "OK" },
-  cancel: null,
+  cancel: null
 };
 
-function Confirm({
-  id,
-  title,
-  message,
-  buttonColor,
-  accept,
-  cancel,
-}) {
+function Confirm({ id, title, message, buttonColor, accept, cancel }) {
   const buttons = cancel ? [accept, cancel] : accept;
-  return (<DialogueBox
-    id={id}
-    title={title}
-    message={message}
-    buttonColor={buttonColor}
-    buttons={buttons}
-  />);
+  return (
+    <DialogueBox
+      id={id}
+      title={title}
+      message={message}
+      buttonColor={buttonColor}
+      buttons={buttons}
+    />
+  );
 }
 
 Confirm.propTypes = {
   ...dialogProps,
   accept: buttonType,
-  cancel: buttonType,
+  cancel: buttonType
 };
 
 Confirm.defaultProps = {
   accept: { label: "OK" },
-  cancel: { label: "Cancel" },
+  cancel: { label: "Cancel" }
 };
 
-function Alert({
-  id,
-  title,
-  message,
-  buttonColor,
-  accept,
-}) {
-  return (<DialogueBox
-    id={id}
-    title={title}
-    message={message}
-    buttonColor={buttonColor}
-    buttons={[accept]}
-  />);
+function Alert({ id, title, message, buttonColor, accept }) {
+  return (
+    <DialogueBox
+      id={id}
+      title={title}
+      message={message}
+      buttonColor={buttonColor}
+      buttons={[accept]}
+    />
+  );
 }
 
 Alert.propTypes = {
   ...dialogProps,
-  accept: buttonType,
+  accept: buttonType
 };
 
 Alert.defaultProps = {
-  accept: { label: "OK", color: "alert" },
+  accept: { label: "OK", color: "alert" }
 };
 
-export { DialogueBox as default, Alert, Confirm, Prompt };
+export { DialogBox as default, Alert, Confirm, Prompt };

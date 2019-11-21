@@ -5,6 +5,8 @@ import { Lighten, Darken } from "Variables";
 import { DisabledContext } from "States";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
+import { Skeleton } from "helpers";
+import Label from "base/Label";
 
 /** TODO: move these to Variables */
 
@@ -12,40 +14,42 @@ const StyledButton = styled.button`
   display: flex;
   flex: auto;
   flex-direction: column;
-  width: ${(props) => {
+  width: ${props => {
     return props.fullWidth ? "100%" : "auto";
   }};
   height: 100%;
-  padding: ${(props) => {
+  padding: ${props => {
     return props.buttonPadding || "0.5rem 0.7rem";
   }};
   justify-content: center;
   align-items: center;
-  color: ${(props) => {
+  color: ${props => {
     return props.theme.palette[props.fontColor] || props.theme.text.primary;
   }};
-  background-color: ${(props) => {
-    return props.theme.palette[props.backgroundColor] || props.theme.background.default;
+  background-color: ${props => {
+    return (
+      props.theme.palette[props.backgroundColor] ||
+      props.theme.background.default
+    );
   }};
-  border: ${(props) => {
+  border: ${props => {
     return props.border || "1px solid";
   }};
-  border-radius: ${(props) => {
+  border-radius: ${props => {
     return props.borderRadius || "4px";
   }};
-  font-size: ${(props) => {
+  font-size: ${props => {
     return props.labelSize || "inherit";
   }};
-  font-weight: ${(props) => {
-    return props.fontWeight || "600";
+  font-weight: ${props => {
+    return props.fontWeight || "400";
   }};
-  letter-spacing: 1px;
   overflow: hidden;
   cursor: pointer;
-  border-bottom: ${(props) => {
+  border-bottom: ${props => {
     return props.borderBottom || "";
   }};
-  border-bottom-color: ${(props) => {
+  border-bottom-color: ${props => {
     return props.theme.palette[props.underlineColor];
   }};
   transition: all 0.15s ease;
@@ -53,13 +57,20 @@ const StyledButton = styled.button`
   &:focus,
   &:hover {
     ${Darken};
-    border-bottom: ${(props) => {
-    return props.borderBottom || "";
-  }};
-    border-bottom-color: ${(props) => {
-    return props.theme.palette[props.underlineColor];
-  }};
+    border-bottom: ${props => {
+      return props.borderBottom || "";
+    }};
+    border-bottom-color: ${props => {
+      return props.theme.palette[props.underlineColor];
+    }};
   }
+
+  &:empty {
+    ${Skeleton};
+    border: 0px solid white;
+    }};
+  }
+}
 
   &:active {
     ${Lighten};
@@ -72,13 +83,13 @@ const StyledButton = styled.button`
   }
 `;
 
-const ButtonLabel = styled.label`
-  line-height: normal;
-  font-size: inherit;
-  font-weight: inherit;
-  user-select: none;
-  cursor: pointer;
-`;
+// const ButtonLabel = styled.label`
+//   line-height: normal;
+//   font-size: inherit;
+//   font-weight: inherit;
+//   user-select: none;
+//   cursor: pointer;
+// `;
 
 const ButtonIcon = styled(Icon)`
   margin: 0.25em 0;
@@ -97,7 +108,7 @@ function Button({
   border,
   size,
   style,
-  type,
+  type
 }) {
   let backgroundColor;
   let borderBottom;
@@ -143,7 +154,8 @@ function Button({
       break;
   }
 
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let borderStyle = border;
   let underline = underlineColor;
   if (type) {
@@ -168,18 +180,19 @@ function Button({
     backgroundColor = "grey4";
   }
 
-  switch (size && size.toLowerCase()) {
-    case "small":
-      buttonPadding = "0.4rem 0.6rem";
-      labelSize = ".9em";
-      break;
-    case "large":
-      buttonPadding = "0.6rem 0.8rem";
-      labelSize = "1.2em";
-      break;
-    default:
-      break;
-  }
+  // switch (size && size.toLowerCase()) {
+  //   case "small":
+  //     buttonPadding = "0.4rem 0.6rem";
+  //     labelSize = ".675em";
+  //     break;
+  //   case "large":
+  //     buttonPadding = "0.6rem 0.8rem";
+  //     labelSize = "1.2em";
+  //     break;
+  //   default:
+  //     buttonPadding = ".5em 3rem";
+  //     break;
+  // }
 
   return (
     <StyledButton
@@ -203,15 +216,22 @@ function Button({
       tabIndex={disabled ? "-1" : "1"}
       type={type}
     >
-      {icon ? <ButtonIcon icon={icon} type={fontColor} size="lg" /> : null}
-      {label ? <ButtonLabel>{label}</ButtonLabel> : null}
+      {icon ? <ButtonIcon icon={icon} size="lg" /> : null}
+      {label ? <Label weight="semibold" text={label} /> : null}
     </StyledButton>
   );
 }
 
 Button.propTypes = {
   className: PropTypes.string,
-  color: PropTypes.oneOf(["success", "warning", "alert", "info", "primary", "secondary"]),
+  color: PropTypes.oneOf([
+    "success",
+    "warning",
+    "alert",
+    "info",
+    "primary",
+    "secondary"
+  ]),
   disabled: PropTypes.bool,
   fullWidth: PropTypes.bool,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
@@ -222,7 +242,7 @@ Button.propTypes = {
   underlineColor: PropTypes.string,
   border: PropTypes.string,
   style: PropTypes.string,
-  type: PropTypes.oneOf(["underlined", "inline", "solid"]),
+  type: PropTypes.oneOf(["underlined", "inline", "solid"])
 };
 
 Button.defaultProps = {
@@ -238,7 +258,7 @@ Button.defaultProps = {
   style: null,
   type: null,
   underlineColor: null,
-  border: null,
+  border: null
 };
 
 export { Button as default };

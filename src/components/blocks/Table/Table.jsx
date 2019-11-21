@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 `;
 const TableContainer = styled.table`
   width: 100%;
-  color: ${(props) => {
+  color: ${props => {
     return props.theme.text.primary;
   }};
   table-layout: fixed;
@@ -41,10 +41,10 @@ const Body = styled.tbody`
 const TH = styled.th`
   text-align: left;
   min-width: 400px;
-  color: ${(props) => {
+  color: ${props => {
     return props.theme.text.primary;
   }};
-  font-size: ${(props) => {
+  font-size: ${props => {
     return props.fontSize || "small";
   }};
   padding-left: 5px;
@@ -53,23 +53,23 @@ const TH = styled.th`
 `;
 
 const Cell = styled.td`
-  padding: ${(props) => {
+  padding: ${props => {
     return props.cellPadding || "";
   }};
-  border-bottom: ${(props) => {
+  border-bottom: ${props => {
     return props.cellBorder || "";
   }};
-  border-bottom-color: ${(props) => {
+  border-bottom-color: ${props => {
     return props.theme.palette[props.cellBorderColor] || "";
   }};
-  font-size: ${(props) => {
+  font-size: ${props => {
     return props.fontSize || "small";
   }};
 
   &:nth-child(even) {
-    font-weight: ${(props) => {
-    return props.fontWeight || "";
-  }};
+    font-weight: ${props => {
+      return props.fontWeight || "";
+    }};
   }
 
   &:empty {
@@ -80,7 +80,14 @@ const Cell = styled.td`
 `;
 
 function Table({
-  id, scroll, setHeight, fontSize, style, data, columns, keyField,
+  id,
+  scroll,
+  setHeight,
+  fontSize,
+  style,
+  data,
+  columns,
+  keyField
 }) {
   let content;
   let cellPadding;
@@ -89,7 +96,7 @@ function Table({
   let cellBorderColor;
   let headerContent;
 
-  switch(style && style.toLowerCase()) {
+  switch (style && style.toLowerCase()) {
     case "legend":
       cellBorder = "";
       cellPadding = "0.15em 0.15em 0.15em";
@@ -106,8 +113,8 @@ function Table({
     headerContent = (
       <TableContainer>
         <Head>
-          <Row >
-            {columns.map((column) => {
+          <Row>
+            {columns.map(column => {
               return (
                 <TH key={column} fontSize={fontSize}>
                   {column}
@@ -120,10 +127,10 @@ function Table({
     );
     content = (
       <Body>
-        {data.map((row) => {
+        {data.map(row => {
           return (
             <Row key={row[keyField]}>
-              {columns.map((column) => {
+              {columns.map(column => {
                 return (
                   <Cell
                     key={column}
@@ -145,7 +152,7 @@ function Table({
   } else {
     content = (
       <TableContainer id={id}>
-        {data.map((row) => {
+        {data.map(row => {
           return (
             <Row key={row.id}>
               <Cell
@@ -197,7 +204,7 @@ Table.propTypes = {
   style: PropTypes.any,
   data: PropTypes.any.isRequired,
   columns: PropTypes.arrayOf(PropTypes.string),
-  keyField: PropTypes.string,
+  keyField: PropTypes.string
 };
 
 Table.defaultProps = {
@@ -209,7 +216,7 @@ Table.defaultProps = {
   style: null,
   data: null,
   columns: null,
-  keyField: null,
+  keyField: null
 };
 
 export default Table;

@@ -9,7 +9,7 @@ import {
   radios,
   select,
   number,
-  optionsKnob as options,
+  optionsKnob as options
 } from "@storybook/addon-knobs";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
@@ -18,29 +18,25 @@ import Title from "base/Typography";
 import Badge from "./Badge";
 import BadgeNotes from "./Badge.md";
 
-
 storiesOf("Atoms|Badge", module)
   .addParameters({
     info: {
-      text: "Badge info goes here...",
+      text: "Badge info goes here..."
     },
     notes: {
-      markdown: BadgeNotes,
-    },
+      markdown: BadgeNotes
+    }
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
-  .add(
-    "Documentation",
-    (() => (
-      <Grid columns="4">
-        <Card>
-          <Badge label="1" />
-          <Title text="Badge"/>
-        </Card>
-      </Grid>
-    )),
-  )
+  .add("Documentation", () => (
+    <Grid columns="4">
+      <Card>
+        <Badge label="1" />
+        <Title text="Badge" />
+      </Card>
+    </Grid>
+  ))
   .add("Knobs", () => (
     <Grid columns="4">
       <Card>
@@ -52,11 +48,11 @@ storiesOf("Atoms|Badge", module)
               success: "success",
               warning: "warning",
               "alert (default)": "alert",
-              dark: "dark",
+              dark: "dark"
             },
             "alert",
             { display: "radio" },
-            "Badge",
+            "Badge"
           )}
           label={text("label", "Label", "Badge")}
           icon={options(
@@ -67,11 +63,11 @@ storiesOf("Atoms|Badge", module)
               check: "check",
               alert: "alert",
               mail: "mail_solid",
-              call: "call",
+              call: "call"
             },
             null,
             { display: "select" },
-            "Badge",
+            "Badge"
           )}
           position={options(
             "align",
@@ -79,14 +75,14 @@ storiesOf("Atoms|Badge", module)
               "top-left": "topLeft",
               "top-right (default)": "topRight",
               "bottom-right": "bottomRight",
-              "bottom-left": "bottomLeft",
+              "bottom-left": "bottomLeft"
             },
             "topRight",
             { display: "radio" },
-            "Badge",
+            "Badge"
           )}
         />
-        <Title text="Badge"/>
+        <Title text="Badge" />
       </Card>
     </Grid>
   ))
@@ -95,104 +91,87 @@ storiesOf("Atoms|Badge", module)
     <CardList columns="4" gap="large">
       <Card>
         <Badge label="1" />
-        <Title text="1-Digit"/>
+        <Title text="1-Digit" />
       </Card>
       <Card>
         <Badge label="21" />
-        <Title text="2-Digit"/>
+        <Title text="2-Digit" />
       </Card>
       <Card>
         <Badge label="321" />
-        <Title text="3-Digit"/>
+        <Title text="3-Digit" />
       </Card>
       <Card>
         <Badge label="4321" />
-        <Title text="4-Digit"/>
+        <Title text="4-Digit" />
       </Card>
 
       <Card>
         <Badge label="9+" />
-        <Title text="Max 10"/>
+        <Title text="Max 10" />
       </Card>
       <Card>
         <Badge label="99+" />
-        <Title text="Max 100"/>
+        <Title text="Max 100" />
       </Card>
       <Card>
         <Badge label="999+" />
-        <Title text="Max 1k"/>
+        <Title text="Max 1k" />
       </Card>
       <Card>
         <Badge label="9999+" />
-        <Title text="Max 10k"/>
+        <Title text="Max 10k" />
       </Card>
 
       <Card>
         <Badge icon="user" type="info" />
-        <Title text="Icon"/>
+        <Title text="Icon" />
       </Card>
       <Card>
         <Badge icon="check" type="success" />
-        <Title text="Icon"/>
+        <Title text="Icon" />
       </Card>
       <Card>
         <Badge icon="alert" type="warning" />
-        <Title text="Icon"/>
+        <Title text="Icon" />
       </Card>
       <Card>
         <Badge icon="mail_solid" type="alert" />
-        <Title text="Icon"/>
+        <Title text="Icon" />
       </Card>
 
       <Card>
         <Badge label="Info" type="info" />
-        <Title text="Info"/>
+        <Title text="Info" />
       </Card>
       <Card>
         <Badge label="Success" type="success" />
-        <Title text="Success"/>
+        <Title text="Success" />
       </Card>
       <Card>
         <Badge label="Warning" type="warning" />
-        <Title text="Warning"/>
+        <Title text="Warning" />
       </Card>
       <Card>
-        <Badge label="Alert" />
-        <Title text="Alert"/>
-      </Card>
-
-      <Card>
-        <Badge label="call" type="dark" />
-        <Title text="Message"/>
-      </Card>
-      <Card>
-        <Badge label="the" type="dark" />
-        <Title text="Message"/>
-      </Card>
-      <Card>
-        <Badge label="police" type="dark" />
-        <Title text="Message"/>
-      </Card>
-      <Card>
-        <Badge icon="call" type="dark" />
-        <Title text="Message"/>
+        <Badge label="Alert" type="alert" />
+        <Title text="Alert" />
       </Card>
 
       <Card>
         <Badge label="1" position="topRight" />
-        <Title text="Top-Right"/>
+        <Title text="Top-Right" />
       </Card>
       <Card>
         <Badge label="1" position="bottomRight" />
-        <Title text="Bottom-Right"/>
+        <Title text="Bottom-Right" />
       </Card>
       <Card>
         <Badge label="1" position="topLeft" />
-        <Title text="Top-Left"/>
+        <Title text="Top-Left" />
       </Card>
       <Card>
         <Badge label="1" position="bottomLeft" />
-        <Title text="Bottom-Left"/>
+        <Title text="Bottom-Left" />
       </Card>
     </CardList>
   ));

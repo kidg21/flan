@@ -3,11 +3,11 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
 import { DisabledContext } from "States";
-import { InputLabel, HelpText, ErrorText } from "layout/Form";
+import Label from "base/Label";
 import TextInput from "atoms/TextInput";
 
 const CalendarContainer = styled(Grid)`
-  color: ${(props) => {
+  color: ${props => {
     return props.theme.text[props.inputTextColor] || "";
   }};
 `;
@@ -25,7 +25,7 @@ function Calendar({
   pattern,
   type,
   value,
-  onChange,
+  onChange
 }) {
   let inputFillColor;
   let placeholderColor;
@@ -33,7 +33,8 @@ function Calendar({
   let inputTextColor;
   let inputBorderColorHover;
   let inputSelectColor;
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
     inputTextColor = "disabled";
     inputFillColor = "disabled";
@@ -46,8 +47,9 @@ function Calendar({
     inputBorderColorHover = "alert";
     inputSelectColor = "grey4";
   }
-  const inputTypes = type.toLowerCase() === "datetime" ? ["date", "time"] : [type.toLowerCase()];
-  const inputElements = inputTypes.map((currType) => {
+  const inputTypes =
+    type.toLowerCase() === "datetime" ? ["date", "time"] : [type.toLowerCase()];
+  const inputElements = inputTypes.map(currType => {
     return (
       <TextInput
         disabled={isDisabled}
@@ -84,10 +86,10 @@ function Calendar({
       inputTextColor={inputTextColor}
       isRequired={isRequired}
     >
-      {label ? <InputLabel isRequired={isRequired} label={label} /> : null}
+      {label ? <Label isRequired={isRequired} text={label} /> : null}
       {inputContainer}
-      {helpText ? <HelpText>{helpText}</HelpText> : null}
-      {error && !isDisabled ? <ErrorText>{error}</ErrorText> : null}
+      {helpText ? <Label text={helpText} /> : null}
+      {error && !isDisabled ? <Label text={error} /> : null}
     </CalendarContainer>
   );
 }
@@ -107,7 +109,7 @@ Calendar.propTypes = {
   onChange: PropTypes.func,
   pattern: PropTypes.string,
   type: PropTypes.oneOf(["date", "time", "datetime"]),
-  value: PropTypes.string,
+  value: PropTypes.string
 };
 
 Calendar.defaultProps = {
@@ -122,7 +124,7 @@ Calendar.defaultProps = {
   min: null,
   pattern: null,
   type: "date",
-  value: null,
+  value: null
 };
 
 export default Calendar;

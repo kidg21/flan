@@ -1,14 +1,13 @@
-/* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
-import { InputLabel, HelpText, ErrorText } from "layout/Form";
+import Label from "base/Label";
 import Grid from "layout/Grid";
 
 const RadioWrapper = styled(Grid)`
-  color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || "";
+  color: ${props => {
+    return props.theme.text[props.inputTextColor] || "inherit";
   }};
   &:last-child {
     margin-bottom: 1rem;
@@ -19,10 +18,12 @@ const RadioContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 0.75rem;
-  grid-template-areas: ${(props) => {
+  grid-template-areas: ${props => {
     return props.alignInput || "";
   }};
-  color: ${(props) => {
+  width: max-content;
+  line-height: initial;
+  color: ${props => {
     return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
   &[disabled],
@@ -36,11 +37,13 @@ const RadioContainer = styled.div`
 const RadioInput = styled.input.attrs({ type: "radio" })`
   grid-area: input;
   border: 1px solid;
-  background-color: ${(props) => {
-    return props.theme.palette[props.fillColor] || props.theme.background.default;
+  background-color: ${props => {
+    return (
+      props.theme.palette[props.fillColor] || props.theme.background.default
+    );
   }};
-  border-color: ${(props) => {
-    return props.theme.palette[props.outlineColor] || props.theme.border;
+  border-color: ${props => {
+    return props.theme.palette[props.outlineColor] || props.theme.palette.grey3;
   }};
   width: 1rem;
   height: 1rem;
@@ -49,37 +52,44 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
   cursor: pointer;
   -webkit-appearance: none;
   &:checked {
-    background-color: ${(props) => {
-    return props.theme.palette[props.fillColorChecked] || props.theme.background.selected;
-  }};
-    border-color: ${(props) => {
-    return props.theme.palette[props.outlineColor] || props.theme.background.selected;
-  }};
+    background-color: ${props => {
+      return (
+        props.theme.palette[props.fillColorChecked] ||
+        props.theme.palette.secondaryLight
+      );
+    }};
+    border-color: ${props => {
+      return (
+        props.theme.palette[props.outlineColor] || props.theme.palette.secondary
+      );
+    }};
   }
   &:focus {
-    border-color: ${(props) => {
-    return props.theme.palette[props.outlineColor] || props.theme.palette.secondaryLight;
-  }};
+    border-color: ${props => {
+      return (
+        props.theme.palette[props.outlineColor] || props.theme.palette.secondary
+      );
+    }};
     outline: none;
   }
 `;
 
-const RadioLabel = styled.label`
-  grid-area: label;
-  color: inherit;
-  width: fit-content;
-  user-select: none;
-  cursor: pointer;
-`;
-
 const InputGroup = styled(Grid)`
-  grid-template-columns: ${(props) => {
+  grid-template-columns: ${props => {
     return props.setColumns || "";
   }};
 `;
 
 function Radio({
-  align, checked, disabled, error, id, label, onChange, name, value,
+  align,
+  checked,
+  disabled,
+  error,
+  id,
+  label,
+  onChange,
+  name,
+  value
 }) {
   let inputTextColor;
   let fillColor;
@@ -87,7 +97,8 @@ function Radio({
   let fillColorChecked;
   let alignInput;
   let tabIndex;
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
     fillColor = "grey5";
     fillColorChecked = "grey5";
@@ -127,7 +138,7 @@ function Radio({
         tabIndex={tabIndex}
         value={value}
       />
-      <RadioLabel htmlFor={id}>{label}</RadioLabel>
+      <Label htmlFor={id} text={label} />
     </RadioContainer>
   );
 }
@@ -143,10 +154,11 @@ function RadioGroup({
   id,
   isRequired,
   label,
-  onChange,
+  onChange
 }) {
   let inputTextColor;
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (error && !isDisabled) {
     inputTextColor = "error";
   }
@@ -159,11 +171,13 @@ function RadioGroup({
       inputTextColor={inputTextColor}
       id={id}
     >
-      {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
-      {helpText ? <HelpText>{helpText}</HelpText> : null}
+      {label ? (
+        <Label isRequired={isRequired} weight="bold" text={label} />
+      ) : null}
+      {helpText ? <Label text={helpText} size="sm" /> : null}
       <InputGroup columns={columns}>
         {children ||
-          data.map((item) => {
+          data.map(item => {
             return (
               <Radio
                 align={align}
@@ -179,7 +193,7 @@ function RadioGroup({
             );
           })}
       </InputGroup>
-      {error && !isDisabled ? <ErrorText>{error}</ErrorText> : null}
+      {error && !isDisabled ? <Label text={error} /> : null}
     </RadioWrapper>
   );
 }
@@ -197,7 +211,7 @@ Radio.propTypes = {
   onChange: PropTypes.func,
   /** The value property sets or returns the value of the value attribute of the radio button.
    * Define different values for radio buttons in the same group, to identify (on the server side) which one was checked.  */
-  value: PropTypes.string,
+  value: PropTypes.string
 };
 
 Radio.defaultProps = {
@@ -207,7 +221,7 @@ Radio.defaultProps = {
   error: false,
   id: null,
   onChange: null,
-  value: null,
+  value: null
 };
 
 RadioGroup.propTypes = {
@@ -221,7 +235,7 @@ RadioGroup.propTypes = {
   id: PropTypes.string,
   isRequired: PropTypes.bool,
   label: PropTypes.string,
-  onChange: PropTypes.func,
+  onChange: PropTypes.func
 };
 
 RadioGroup.defaultProps = {
@@ -235,7 +249,7 @@ RadioGroup.defaultProps = {
   id: null,
   isRequired: false,
   label: null,
-  onChange: null,
+  onChange: null
 };
 
 export { Radio as default, RadioGroup };

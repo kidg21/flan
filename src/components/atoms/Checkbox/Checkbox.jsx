@@ -3,13 +3,14 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
-import { InputLabel, HelpText, ErrorText } from "layout/Form";
+import Label from "base/Label";
 import Grid from "layout/Grid";
 
 const CheckboxWrapper = styled(Grid)`
-  color: ${(props) => {
+  color: ${props => {
     return props.theme.text[props.inputTextColor] || "";
   }};
+
   &:last-child {
     margin-bottom: 1rem;
   }
@@ -19,10 +20,10 @@ const CheckboxContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 0.75rem;
-  grid-template-areas: ${(props) => {
+  grid-template-areas: ${props => {
     return props.alignInput || "";
   }};
-  color: ${(props) => {
+  color: ${props => {
     return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
   &[disabled],
@@ -36,11 +37,13 @@ const CheckboxContainer = styled.div`
 const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   grid-area: input;
   border: 1px solid;
-  background-color: ${(props) => {
-    return props.theme.palette[props.fillColor] || props.theme.background.default;
+  background-color: ${props => {
+    return (
+      props.theme.palette[props.fillColor] || props.theme.background.default
+    );
   }};
-  border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.border;
+  border-color: ${props => {
+    return props.theme.palette[props.borderColor] || props.theme.palette.grey3;
   }};
   width: 1rem;
   height: 1rem;
@@ -49,37 +52,36 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
   cursor: pointer;
   -webkit-appearance: none;
   &:checked {
-    background-color: ${(props) => {
-    return props.theme.palette[props.fillColorChecked] || props.theme.background.selected;
-  }};
-    border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.background.selected;
-  }};
+    background-color: ${props => {
+      return (
+        props.theme.palette[props.fillColorChecked] ||
+        props.theme.background.selected
+      );
+    }};
+    border-color: ${props => {
+      return (
+        props.theme.palette[props.borderColor] ||
+        props.theme.background.selected
+      );
+    }};
   }
   &:focus {
-    outline-color: ${(props) => {
-    return props.theme.palette[props.outlineColor] || props.theme.palette.secondaryLight;
-  }};
+    outline-color: ${props => {
+      return (
+        props.theme.palette[props.outlineColor] ||
+        props.theme.palette.secondaryLight
+      );
+    }};
   }
-`;
-
-const CheckboxLabel = styled.label`
-  grid-area: label;
-  color: inherit;
-  width: fit-content;
-  user-select: none;
-  cursor: pointer;
 `;
 
 const InputGroup = styled(Grid)`
-  grid-template-columns: ${(props) => {
+  grid-template-columns: ${props => {
     return props.setColumns || "";
   }};
 `;
 
-function Checkbox({
-  align, checked, error, disabled, id, label, onChange,
-}) {
+function Checkbox({ align, checked, error, disabled, id, label, onChange }) {
   let inputTextColor;
   let fillColor;
   let borderColor;
@@ -88,7 +90,8 @@ function Checkbox({
   let borderColorChecked;
   let alignInput;
   let tabIndex;
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
     borderColor = "grey4";
     fillColor = "grey5";
@@ -130,7 +133,7 @@ function Checkbox({
         outlineColor={outlineColor}
         tabIndex={tabIndex}
       />
-      <CheckboxLabel htmlFor={id}>{label}</CheckboxLabel>
+      <Label htmlFor={id} text={label} />
     </CheckboxContainer>
   );
 }
@@ -146,10 +149,11 @@ function CheckboxGroup({
   id,
   label,
   isRequired,
-  onChange,
+  onChange
 }) {
   let inputTextColor;
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (error && !isDisabled) {
     inputTextColor = "alert";
   }
@@ -162,11 +166,11 @@ function CheckboxGroup({
       inputTextColor={inputTextColor}
       id={id}
     >
-      {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
-      {helpText ? <HelpText>{helpText}</HelpText> : null}
+      {label ? <Label isRequired={isRequired} text={label} /> : null}
+      {helpText ? <Label text={helpText} /> : null}
       <InputGroup columns={columns}>
         {children ||
-          data.map((item) => {
+          data.map(item => {
             return (
               <Checkbox
                 align={align}
@@ -180,7 +184,7 @@ function CheckboxGroup({
             );
           })}
       </InputGroup>
-      {error && !isDisabled ? <ErrorText>{error}</ErrorText> : null}
+      {error && !isDisabled ? <Label text={error} /> : null}
     </CheckboxWrapper>
   );
 }
@@ -192,7 +196,7 @@ Checkbox.propTypes = {
   error: PropTypes.bool,
   id: PropTypes.string,
   label: PropTypes.string.isRequired,
-  onChange: PropTypes.func,
+  onChange: PropTypes.func
 };
 
 Checkbox.defaultProps = {
@@ -201,7 +205,7 @@ Checkbox.defaultProps = {
   disabled: false,
   error: null,
   id: null,
-  onChange: null,
+  onChange: null
 };
 
 CheckboxGroup.propTypes = {
@@ -215,7 +219,7 @@ CheckboxGroup.propTypes = {
   id: PropTypes.string,
   isRequired: PropTypes.bool,
   label: PropTypes.string,
-  onChange: PropTypes.func,
+  onChange: PropTypes.func
 };
 
 CheckboxGroup.defaultProps = {
@@ -229,7 +233,7 @@ CheckboxGroup.defaultProps = {
   id: null,
   isRequired: false,
   label: null,
-  onChange: null,
+  onChange: null
 };
 
 export { Checkbox as default, CheckboxGroup };

@@ -4,13 +4,13 @@ import { storiesOf } from "@storybook/react";
 import styled from "styled-components";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
-import DialogueBox from "elements/DialogueBox";
+import DialogBox from "elements/DialogBox";
 import Title from "base/Typography";
 import Command from "atoms/Command";
 import Bar from "blocks/Bar";
 import SelectMenu from "atoms/SelectMenu";
 import { Piece } from "layout/Card";
-import Search from "blocks/Search"
+import Search from "blocks/Search";
 import List, { ListItem } from "blocks/List";
 import TextInput from "atoms/TextInput";
 import Icon from "atoms/Icon";
@@ -20,16 +20,15 @@ import Container from "atoms/Container";
 import Switch from "atoms/Switch";
 import Divider from "atoms/Divider";
 
-
 const permissions = [
   { value: "Read", label: "Read" },
   { value: "Write", label: "Write" },
-  { value: ["Read", "Write"], label: "Read / Write" },
+  { value: ["Read", "Write"], label: "Read / Write" }
 ];
 
 const image = {
   src: DMPlogo,
-  alt: "DMP",
+  alt: "DMP"
 };
 
 const Logo = styled.img`
@@ -37,32 +36,34 @@ const Logo = styled.img`
   height: 2.5em;
 `;
 
-storiesOf("Elements|Dialogue Box", module)
+storiesOf("Elements|Dialog Box", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
   .addParameters({
     info: {
       text:
-        "Dialogue Boxes are used to convey a message between the server/computer and the user. A dialogue box either has one absolute action (button) or two button options; typically an affirmative and dissenting option. If two buttons are selected then they are located on the bottom left corner as to be readily accessbile to the user. The primary button is always solid, the second is outlined. Both buttons must be the same color family. If one button is selected the button is center in the middle of the dialogue box. ",
-    },
+        "Dialogue Boxes are used to convey a message between the server/computer and the user. A dialogue box either has one absolute action (button) or two button options; typically an affirmative and dissenting option. If two buttons are selected then they are located on the bottom left corner as to be readily accessbile to the user. The primary button is always solid, the second is outlined. Both buttons must be the same color family. If one button is selected the button is center in the middle of the dialogue box. "
+    }
   })
   .add(
     "Documentation",
     withInfo()(() => {
-      return (<DialogueBox
-        title="Dialogue Box Title"
-        message="Dialogue Box Message"
-        buttons={[{ label: "Affirm" }, { label: "Negative" }]}
-      />);
-    }),
+      return (
+        <DialogBox
+          title="Dialogue Box Title"
+          message="Dialogue Box Message"
+          buttons={[{ label: "Affirm" }, { label: "Negative" }]}
+        />
+      );
+    })
   );
 
-storiesOf("Templates|Dialogue Box/General", module)
+storiesOf("Templates|Dialog Box/General", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
   .add("Default", () => {
     return (
-      <DialogueBox
+      <DialogBox
         title="Hey are you sure your okay doing this?"
         message="This is the body of your message. Tells you more about the action you are about to commit."
         buttons={[{ label: "Create" }, { label: "Cancel" }]}
@@ -71,7 +72,7 @@ storiesOf("Templates|Dialogue Box/General", module)
   })
   .add("Login", () => {
     return (
-      <DialogueBox
+      <DialogBox
         header={<Bar left={<Logo src={image.src} alt={image.alt} />} />}
         title="Welcome"
         buttons={[{ label: "Login" }]}
@@ -85,12 +86,12 @@ storiesOf("Templates|Dialogue Box/General", module)
             }
           />
         </Section>
-      </DialogueBox>
+      </DialogBox>
     );
   })
   .add("Delete", () => {
     return (
-      <DialogueBox
+      <DialogBox
         title="Are you sure you want to delete this user?"
         message="If you delete this user you will not be able to get back any information or work they have done. Their work will be lost forever."
         buttons={[{ label: "Delete" }, { label: "Cancel" }]}
@@ -100,7 +101,7 @@ storiesOf("Templates|Dialogue Box/General", module)
   })
   .add("Success", () => {
     return (
-      <DialogueBox
+      <DialogBox
         title="View your report?"
         message="Your report successfully downloaded. Do you want to check out the deets."
         buttons={[{ label: "View" }, { label: "Cancel" }]}
@@ -109,14 +110,12 @@ storiesOf("Templates|Dialogue Box/General", module)
     );
   });
 
-
-
-storiesOf("Templates|Dialogue Box/Files", module)
+storiesOf("Templates|Dialog Box/Files", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
   .add("Save As", () => {
     return (
-      <DialogueBox
+      <DialogBox
         title="Save As"
         buttons={[{ label: "Save" }, { label: "Cancel" }]}
       >
@@ -128,56 +127,50 @@ storiesOf("Templates|Dialogue Box/Files", module)
               { value: "1", label: "my folder" },
               { value: "2", label: "our folder" },
               { value: "3", label: "dmp" },
-              { value: "4", label: "lightbox" },
+              { value: "4", label: "lightbox" }
             ]}
           />
-          <Command label="+ Add New Location"/>
+          <Command label="+ Add New Location" />
         </Section>
-      </DialogueBox>
+      </DialogBox>
     );
   })
   .add("Open", () => {
     return (
-      <DialogueBox
+      <DialogBox
         title="Open File"
         buttons={[{ label: "Open" }, { label: "Cancel" }]}
       >
         <Section>
-          <Search/>
+          <Search />
           <Piece>
             <Container height="12rem">
               <List>
-                <ListItem
-                  label="Recent Item"/>
-                                  <ListItem
-                  label="Recent Item"/>
-                                  <ListItem
-                  label="Recent Item"/>
-                                  <ListItem
-                  label="Recent Item"/>
-                                  <ListItem
-                  label="Recent Item"/>
-                                  <ListItem
-                  label="Recent Item"/>
-                  </List>
-                  </Container>
-                  </Piece>
+                <ListItem label="Recent Item" />
+                <ListItem label="Recent Item" />
+                <ListItem label="Recent Item" />
+                <ListItem label="Recent Item" />
+                <ListItem label="Recent Item" />
+                <ListItem label="Recent Item" />
+              </List>
+            </Container>
+          </Piece>
           <SelectMenu
             label="Location"
             options={[
               { value: "1", label: "my folder" },
               { value: "2", label: "our folder" },
               { value: "3", label: "dmp" },
-              { value: "4", label: "lightbox" },
+              { value: "4", label: "lightbox" }
             ]}
           />
         </Section>
-      </DialogueBox>
+      </DialogBox>
     );
   })
   .add("Add New Folder", () => {
     return (
-      <DialogueBox
+      <DialogBox
         title="+ Add New Folder"
         buttons={[{ label: "Add" }, { label: "Cancel" }]}
       >
@@ -189,21 +182,20 @@ storiesOf("Templates|Dialogue Box/Files", module)
               { value: "1", label: "my folder" },
               { value: "2", label: "our folder" },
               { value: "3", label: "dmp" },
-              { value: "4", label: "lightbox" },
+              { value: "4", label: "lightbox" }
             ]}
           />
         </Section>
-      </DialogueBox>
+      </DialogBox>
     );
   });
 
-
-storiesOf("Templates|Dialogue Box/User Roles", module)
+storiesOf("Templates|Dialog Box/User Roles", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
   .add("Edit User List", () => {
     return (
-      <DialogueBox
+      <DialogBox
         title="Edit User List for Role"
         buttons={[{ label: "Edit" }, { label: "Cancel" }]}
       >
@@ -216,55 +208,35 @@ storiesOf("Templates|Dialogue Box/User Roles", module)
               { value: "1", label: "Adam" },
               { value: "2", label: "Oliver" },
               { value: "3", label: "Matt" },
-              { value: "4", label: "Joe" },
+              { value: "4", label: "Joe" }
             ]}
           />
           <Piece>
             <Container height="12rem">
               <List>
-                <ListItem
-                  label="BDE811.Public"
-                >
-                   <SelectMenu
-              width="40%"
-              options={permissions}
-            />
-            </ListItem>
+                <ListItem label="BDE811.Public">
+                  <SelectMenu width="40%" options={permissions} />
+                </ListItem>
 
-                <ListItem
-                  label="BDE811.Marketing"
-                  >
-                  <SelectMenu
-             width="40%"
-             options={permissions}
-           />
-           </ListItem>
-                <ListItem
-                  label="BDE811.Acquisitions"
-                  >
-                  <SelectMenu
-             width="40%"
-             options={permissions}
-           />
-           </ListItem>
-                <ListItem
-                  label="BDE811.Developer"
-                  >
-                  <SelectMenu
-             width="40%"
-             options={permissions}
-           />
-           </ListItem>
+                <ListItem label="BDE811.Marketing">
+                  <SelectMenu width="40%" options={permissions} />
+                </ListItem>
+                <ListItem label="BDE811.Acquisitions">
+                  <SelectMenu width="40%" options={permissions} />
+                </ListItem>
+                <ListItem label="BDE811.Developer">
+                  <SelectMenu width="40%" options={permissions} />
+                </ListItem>
               </List>
             </Container>
           </Piece>
         </Section>
-      </DialogueBox>
+      </DialogBox>
     );
   })
   .add("Edit Files", () => {
     return (
-      <DialogueBox
+      <DialogBox
         title="Edit Files Role"
         buttons={[{ label: "Edit" }, { label: "Cancel" }]}
       >
@@ -278,69 +250,49 @@ storiesOf("Templates|Dialogue Box/User Roles", module)
               { value: "1", label: "Folder 1" },
               { value: "2", label: "Folder 2" },
               { value: "3", label: "Folder 3" },
-              { value: "4", label: "File 24" },
+              { value: "4", label: "File 24" }
             ]}
           />
-          <Divider/>
+          <Divider />
           <Container>
             <List>
-                <ListItem
-                  label="BDE811.Public"
-                >
-                   <SelectMenu
-              width="40%"
-              options={permissions}
-            />
-            </ListItem>
+              <ListItem label="BDE811.Public">
+                <SelectMenu width="40%" options={permissions} />
+              </ListItem>
 
-                <ListItem
-                  label="BDE811.Marketing"
-                  >
-                  <SelectMenu
-             width="40%"
-             options={permissions}
-           />
-           </ListItem>
-                <ListItem
-                  label="BDE811.Acquisitions"
-                  >
-                  <SelectMenu
-             width="40%"
-             options={permissions}
-           />
-           </ListItem>
-                <ListItem
-                  label="BDE811.Developer"
-                  >
-                  <SelectMenu
-             width="40%"
-             options={permissions}
-           />
-           </ListItem>
-              </List>
-              </Container>
+              <ListItem label="BDE811.Marketing">
+                <SelectMenu width="40%" options={permissions} />
+              </ListItem>
+              <ListItem label="BDE811.Acquisitions">
+                <SelectMenu width="40%" options={permissions} />
+              </ListItem>
+              <ListItem label="BDE811.Developer">
+                <SelectMenu width="40%" options={permissions} />
+              </ListItem>
+            </List>
+          </Container>
         </Section>
-        </DialogueBox>
+      </DialogBox>
     );
   })
   .add("Add Role", () => {
     return (
-    <DialogueBox
-    title="+Add Role"
-    buttons={[{ label: "add" }, { label: "Cancel" }]}
-    >
+      <DialogBox
+        title="+Add Role"
+        buttons={[{ label: "add" }, { label: "Cancel" }]}
+      >
         <Section>
           <TextInput
             label="Role Name"
             placeholder="Type the name for your new role."
           />
         </Section>
-      </DialogueBox>
+      </DialogBox>
     );
   })
   .add("Add User", () => {
     return (
-      <DialogueBox
+      <DialogBox
         title="+ Add a New User"
         buttons={[{ label: "Add" }, { label: "Cancel" }]}
       >
@@ -361,16 +313,16 @@ storiesOf("Templates|Dialogue Box/User Roles", module)
               { value: "Marketing", label: "Marketing" },
               { value: "Acquisitions", label: "Acquisitions" },
               { value: "Developer", label: "Builder / Developer" },
-              { value: "Admin", label: "Admin" },
+              { value: "Admin", label: "Admin" }
             ]}
           />
         </Section>
-      </DialogueBox>
+      </DialogBox>
     );
   })
   .add("Edit User", () => {
     return (
-      <DialogueBox
+      <DialogBox
         title="Edit User"
         buttons={[{ label: "Save" }, { label: "Cancel" }]}
       >
@@ -388,12 +340,12 @@ storiesOf("Templates|Dialogue Box/User Roles", module)
               { value: "Marketing", label: "Marketing" },
               { value: "Acquisitions", label: "Acquisitions" },
               { value: "Developer", label: "Builder / Developer" },
-              { value: "Admin", label: "Admin" },
+              { value: "Admin", label: "Admin" }
             ]}
           />
-          <Switch label="Enabled"/>
+          <Switch label="Enabled" />
           <Title text="Delete User?" size="tiny" weight="light" />
         </Section>
-      </DialogueBox>
+      </DialogBox>
     );
   });

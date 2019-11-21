@@ -9,22 +9,22 @@ import InformationCardBar from "elements/CardBars/InformationCardBar";
 import Table from "blocks/Table";
 import Checkbox from "atoms/Checkbox";
 import MapLegend from "blocks/MapLegend";
-import Form, { Section } from "layout/Form/Form";
+import Form, { Section } from "layout/Form";
 
 const cbox_1 = {
   id: "cbox_1",
-  label: "Option 1",
+  label: "Option 1"
 };
 
 const cbox_2 = {
   id: "cbox_2",
-  label: "Option 2",
+  label: "Option 2"
 };
 
 const data = [
   { id: "a", color: "Owners/Units", name: "Multiple Owners (2 Units)" },
   { id: "b", color: "Master Parcel No.", name: "387483675638" },
-  { id: "c", color: "Zoning", name: "No Zone" },
+  { id: "c", color: "Zoning", name: "No Zone" }
 ];
 
 storiesOf("Elements|Card Accordion", module)
@@ -51,7 +51,7 @@ storiesOf("Elements|Card Accordion", module)
                 checked: switchChecked,
                 onChange: () => {
                   setSwitchChecked(!switchChecked);
-                },
+                }
               }}
             />
           }
@@ -65,7 +65,7 @@ storiesOf("Elements|Card Accordion", module)
     return React.createElement(() => {
       const [switchChecked, setSwitchChecked] = useState("");
       const [checked, setChecked] = useState(checked);
-      const handleCheckboxChange = (event) => {
+      const handleCheckboxChange = event => {
         setChecked(event.target.value);
       };
       return (
@@ -77,7 +77,7 @@ storiesOf("Elements|Card Accordion", module)
                 checked: switchChecked,
                 onChange: () => {
                   setSwitchChecked(!switchChecked);
-                },
+                }
               }}
             />
           }
@@ -85,8 +85,16 @@ storiesOf("Elements|Card Accordion", module)
           options={
             <Form>
               <Section title="Demographic Options">
-                <Checkbox {...cbox_1} checked={cbox_1.value} onChange={handleCheckboxChange} />
-                <Checkbox {...cbox_2} checked={cbox_2.value} onChange={handleCheckboxChange} />
+                <Checkbox
+                  {...cbox_1}
+                  checked={cbox_1.value}
+                  onChange={handleCheckboxChange}
+                />
+                <Checkbox
+                  {...cbox_2}
+                  checked={cbox_2.value}
+                  onChange={handleCheckboxChange}
+                />
               </Section>
             </Form>
           }

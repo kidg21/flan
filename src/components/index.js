@@ -1,5 +1,12 @@
 // Publicly exported files from 'base'
-export { default as Title, SubTitle, Description, Link, Number } from "./base/Typography";
+export {
+  default as Title,
+  SubTitle,
+  Description,
+  Link,
+  Number
+} from "./base/Typography";
+export { default as Label } from "./base/Label";
 export { default as GlobalStyles } from "./base/GlobalStyles/GlobalStyles.jsx";
 
 // Publicly exported files from 'atoms'
@@ -16,6 +23,7 @@ export { default as Radio, RadioGroup } from "./atoms/Radio";
 export { default as SelectMenu } from "./atoms/SelectMenu";
 export { default as Slider } from "./atoms/Slider";
 export { default as Switch } from "./atoms/Switch";
+export { default as Tag } from "./atoms/Tag";
 export { default as TextInput } from "./atoms/TextInput";
 
 // Publicly exported files from 'blocks'
@@ -45,23 +53,27 @@ export { default as Notification } from "./elements/Notification";
 export { default as MapSearch } from "./elements/MapSearch";
 export { default as PropertyListCard } from "./elements/ListCards/PropertyListCard";
 export { UserRoles, RolePermissions } from "./elements/UserRoles";
-export { default as Dialog, Alert, Confirm, Prompt } from "./elements/DialogueBox";
+export {
+  default as Dialog,
+  Alert,
+  Confirm,
+  Prompt
+} from "./elements/DialogBox";
 
 // Publicly exported files from 'layout'
 export { default as Card, CardList } from "./layout/Card";
-export {
-  default as Form,
-  Section,
-  Label,
-  InputLabel,
-  HelpText,
-  ErrorText,
-} from "./layout/Form";
+export { default as Form, Section } from "./layout/Form";
 export { default as Grid } from "./layout/Grid";
 export { default as Layout } from "./layout/Layout";
 export { default as Modal } from "./layout/Modal";
 export { default as Page } from "./layout/Page";
 export { default as Panel, PanelSection } from "./layout/Panel";
 
-
-export { colors, fonts, shadows, screen, DMPTheme, darkTheme } from "./base/Variables/Variables.jsx";
+export {
+  colors,
+  fonts,
+  shadows,
+  screen,
+  DMPTheme,
+  darkTheme
+} from "./base/Variables/Variables.jsx";

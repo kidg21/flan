@@ -1,41 +1,39 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable complexity */
-// Import dependencies
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import { Skeleton } from "helpers";
 import { fonts } from "Variables";
 
 const StyledText = styled.h4`
   grid-column: 1 / -1;
-  font-family: ${(props) => {
+  margin: ${props => {
+    return props.margin || "0px 0px 0.25em";
+  }};
+  font-family: ${props => {
     return props.fontFamily || "inherit";
   }};
-  color: ${(props) => {
-    return props.theme.text[props.textColor] || "inherit";
-  }};
-  /* color: ${(props) => {
+  color: ${props => {
     return props.theme.text[props.textColor] || props.theme.text.primary;
-  }}; */
-  font-weight: ${(props) => {
+  }};
+  font-weight: ${props => {
     return props.textWeight || "600";
   }};
-  text-align: ${(props) => {
+  text-align: ${props => {
     return props.textAlign || "";
   }};
-  letter-spacing: ${(props) => {
-    return props.letterSpacing || "0";
+  letter-spacing: ${props => {
+    return props.letterSpacing || "0px";
   }};
-  font-style: ${(props) => {
+  font-style: ${props => {
     return props.textStyle || "";
   }};
-  text-decoration: ${(props) => {
+  text-decoration: ${props => {
     return props.textDecoration || "";
   }};
-  user-select: ${(props) => {
+  user-select: ${props => {
     return props.select || "";
   }};
-  width: ${(props) => {
+  width: ${props => {
     return props.textWidth || "";
   }};
   a {
@@ -43,15 +41,19 @@ const StyledText = styled.h4`
     /** TODO: Add a 'separator' prop */
     /* &:before,
     &:after {
-      content: ${(props) => {
-    return props.separator || "|";
-  }};
+      content: ${props => {
+        return props.separator || "|";
+      }};
     } */
   }
+  &:empty {
+    ${Skeleton};
+  }
+}
 `;
 
 const LinkedText = styled(StyledText)`
-  color: ${(props) => {
+  color: ${props => {
     return props.theme.text.link;
   }};
   /* width: max-content; */
@@ -61,19 +63,26 @@ const StyledNumber = styled(StyledText)`
   font-family: ${fonts.numbers};
   color: inherit;
   letter-spacing: 1px;
+  &:empty {
+    ${Skeleton};
+  }
+}
 `;
 
 const StyledCode = styled.code`
-  background-color: ${(props) => {
+  background-color: ${props => {
     return props.theme.palette.grey5;
   }};
-  border: 1px solid
-    ${(props) => {
+  border: 1px solid ${props => {
     return props.theme.palette.grey2;
   }};
   border-radius: 0.25rem;
   padding: 0.5rem 0.5rem 0.25rem;
   user-select: all;
+  &:empty {
+    ${Skeleton};
+  }
+}
 `;
 
 function Text({
@@ -95,6 +104,7 @@ function Text({
   title,
   type,
   weight,
+  margin
 }) {
   let as;
   let fontFamily;
@@ -128,30 +138,32 @@ function Text({
     case "alert":
       textColor = "alert";
       break;
-    case "light":
-      textColor = "grey3";
+    case "secondary":
+      textColor = "secondary";
       break;
     default:
       // textColor = "primary";
       break;
   }
   switch (size && size.toLowerCase()) {
-    case "tiny":
+    case "xs":
       as = "label";
       break;
-    case "small":
-      as = "h6";
+    case "sm":
+      as = "h5";
       break;
-    case "large":
+    case "m":
+      as = "h4";
+      break;
+    case "lg":
       as = "h3";
       break;
-    case "xlarge":
+    case "2x":
       as = "h2";
       break;
-    case "xxlarge":
+    case "3x":
       as = "h1";
       break;
-    case "normal":
     default:
       as = "h4";
       break;
@@ -183,10 +195,14 @@ function Text({
     case "normal":
       textWeight = "500";
       break;
+    case "semibold":
+      textWeight = "600";
+      break;
     case "bold":
       textWeight = "700";
       break;
     default:
+      textWeight = "500";
       break;
   }
   const numSpacing = spacing ? parseInt(spacing, 10) : 0;
@@ -202,6 +218,7 @@ function Text({
   return (
     <StyledText
       as={as}
+      margin={margin}
       className={className}
       fontFamily={fontFamily}
       href={href}
@@ -232,25 +249,27 @@ Text.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   count: PropTypes.node,
-  font: PropTypes.oneOf(["numbers", "data"]),
-  href: PropTypes.string,
-  id: PropTypes.string,
-  link: PropTypes.boolean,
-  onClick: PropTypes.func,
+  // type: PropTypes.oneOf([
+  //   "info",
+  //   "success",
+  //   "warning",
+  //   "alert",
+  //   "dark",
+  //   "inverse",
+  //   "light"
+  // ]),
+  // size: PropTypes.oneOf(["tiny", "small", "large", "xlarge", "xxlarge"]),
+  align: PropTypes.oneOf(["center", "right"]),
+  spacing: PropTypes.string,
+  styling: PropTypes.oneOf(["underline", "italic"]),
+  // weight: PropTypes.oneOf(["light", "normal", "bold"]),
   /** Sets the 'user-select' CSS property
    * Text is selectable by default
    * 'all' selects the complete string with a tap/click
    * 'none' disables text selection
    */
   select: PropTypes.oneOf(["all", "none"]),
-  size: PropTypes.oneOf(["tiny", "small", "large", "xlarge", "xxlarge"]),
-  spacing: PropTypes.string,
-  styling: PropTypes.oneOf(["underline", "italic"]),
-  target: PropTypes.string,
-  text: PropTypes.string,
-  title: PropTypes.string,
-  type: PropTypes.oneOf(["info", "success", "warning", "alert", "dark", "inverse", "light"]),
-  weight: PropTypes.oneOf(["light", "normal", "bold"]),
+  className: PropTypes.string
 };
 Text.defaultProps = {
   align: null,
@@ -271,78 +290,92 @@ Text.defaultProps = {
   title: null,
   type: null,
   weight: null,
+  select: null,
+  children: null,
+  className: null
 };
 
 function Headline({ text, children, ...textProps }) {
   return (
-    <Text
-      separator="pipe"
-      size="large"
-      weight="bold"
-      spacing="2"
-      styling="underline"
-      {...textProps}
-    >
+    <Text separator="pipe" size="xl" weight="bold" {...textProps}>
       {text || children}
     </Text>
   );
 }
 Headline.propTypes = {
-  children: PropTypes.node,
   text: PropTypes.string,
+  children: PropTypes.node
 };
 Headline.defaultProps = {
-  children: null,
   text: null,
+  children: null
 };
 
-function Title({ text, children, ...textProps }) {
-  return <Text {...textProps}>{text || children}</Text>;
+function Title({ text, size, children, ...textProps }) {
+  return (
+    <Text size={size} weight="semibold" {...textProps}>
+      {text || children}
+    </Text>
+  );
 }
 Title.propTypes = {
-  children: PropTypes.node,
   text: PropTypes.string,
+  children: PropTypes.node
 };
 Title.defaultProps = {
-  children: null,
   text: null,
+  children: null
 };
 
 function SubTitle({ text, children, ...textProps }) {
   return (
-    <Text spacing="3" size="small" {...textProps}>
+    <Text spacing="1" type="secondary" margin="0px 0px 0.15em" {...textProps}>
       {text || children}
     </Text>
   );
 }
 SubTitle.propTypes = {
-  children: PropTypes.node,
   text: PropTypes.string,
+  children: PropTypes.node
 };
 SubTitle.defaultProps = {
-  children: null,
   text: null,
+  children: null
+};
+
+function Body({ text, weight, children, ...textProps }) {
+  return (
+    <Text size="sm" weight="normal" margin="0px 0px 0.15em" {...textProps}>
+      {text || children}
+    </Text>
+  );
+}
+Body.propTypes = {
+  text: PropTypes.string,
+  children: PropTypes.node
+};
+Body.defaultProps = {
+  text: null,
+  children: null
 };
 
 function Description({ text, children, ...textProps }) {
   return (
-    <Text size="tiny" spacing="2" {...textProps}>
+    <Text size="xs" spacing="1" {...textProps}>
       {text || children}
     </Text>
   );
 }
 Description.propTypes = {
-  children: PropTypes.node,
   text: PropTypes.string,
+  children: PropTypes.node
 };
 Description.defaultProps = {
-  children: null,
   text: null,
+  children: null
 };
 
-function Link({
-  text, children, title, onClick, href, target, ...textProps
-}) {
+function Link({ text, children, title, onClick, href, target, ...textProps }) {
   return (
     <Text
       href={href}
@@ -363,32 +396,27 @@ Link.propTypes = {
   href: PropTypes.string,
   onClick: PropTypes.function,
   /** _blank, _parent, _self, _top, framename */
-  target: PropTypes.string,
-  text: PropTypes.string,
-  title: PropTypes.string,
+  target: PropTypes.string
 };
 Link.defaultProps = {
   children: null,
   href: null,
-  onClick: null,
-  target: null,
-  text: null,
-  title: null,
+  target: null
 };
 
 function Number({ text, children, ...textProps }) {
   return (
-    <Text font="numbers" type="light" size="large" weight="bold" spacing="3" {...textProps}>
+    <Text font="numbers" weight="normal" spacing="2" {...textProps}>
       {text || children}
     </Text>
   );
 }
 Number.propTypes = {
-  children: PropTypes.node,
   text: PropTypes.number.isRequired,
+  children: PropTypes.node
 };
 Number.defaultProps = {
-  children: null,
+  children: null
 };
 
 function Code({ text, children }) {
@@ -396,11 +424,20 @@ function Code({ text, children }) {
 }
 Code.propTypes = {
   children: PropTypes.node,
-  text: PropTypes.string,
+  text: PropTypes.string
 };
 Code.defaultProps = {
   children: null,
-  text: null,
+  text: null
 };
 
-export { Title as default, Headline, SubTitle, Description, Link, Number, Code };
+export {
+  Title as default,
+  Headline,
+  SubTitle,
+  Description,
+  Body,
+  Link,
+  Number,
+  Code
+};

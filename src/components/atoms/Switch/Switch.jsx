@@ -3,28 +3,32 @@ import React, { useState, useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
+import Label from "base/Label";
 
 const SwitchContainer = styled.div`
   display: grid;
-  grid-template-columns: ${(props) => {
+  grid-template-columns: ${props => {
     return props.label ? "auto 1fr" : "";
   }};
-  grid-gap: ${(props) => {
+  grid-gap: ${props => {
     return props.label ? "0.75rem" : "";
   }};
-  grid-template-areas: ${(props) => {
+  grid-template-areas: ${props => {
     return props.alignInput || "";
   }};
-  color: ${(props) => {
-    return props.theme.text[props.checkboxColor] || props.theme.text.primary;
+  color: ${props => {
+    return props.theme.palette[props.checkboxColor] || "inherit";
   }};
-  background-color: ${(props) => {
-    return props.theme.palette[props.fillColor] || props.theme.background.default;
+  background-color: ${props => {
+    return (
+      props.theme.palette[props.fillColor] || props.theme.background.default
+    );
   }};
-  border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.border;
+  border-color: ${props => {
+    return props.theme.palette[props.borderColor] || props.theme.palette.grey3;
   }};
   width: max-content;
+  line-height: 1rem;
   &[disabled],
   &[readonly] {
     cursor: not-allowed;
@@ -35,68 +39,54 @@ const SwitchContainer = styled.div`
 
 const StyledSwitch = styled.div`
   grid-area: input;
-  width: 2.35rem;
-  height: 1.2rem;
+  width: 2.2rem;
+  height: auto;
   border: 1px solid;
-  border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.border;
+  border-color: ${props => {
+    return props.theme.palette[props.borderColor] || props.theme.palette.grey3;
   }};
-  border-radius: 1em;
-  background-color: ${(props) => {
-    return props.theme.palette[props.fillColor] || "";
+  border-radius: 1rem;
+  background-color: ${props => {
+    return props.theme.palette[props.fillColor] || props.theme.palette.grey5;
   }};
   cursor: pointer;
   &[disabled],
   &[readonly] {
-    background-color: ${(props) => {
-    return props.disabled ? props.theme.palette.grey5 : "";
-  }};
+    background-color: ${props => {
+      return props.disabled ? props.theme.palette.grey5 : "";
+    }};
   }
 `;
 
 const Circle = styled.div`
-  background: ${(props) => {
-    return props.disabled ? props.theme.palette.grey5 : props.theme.palette.white;
+  background: ${props => {
+    return props.disabled
+      ? props.theme.palette.grey5
+      : props.theme.palette.white;
   }};
   border: 1px solid;
-  border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.border;
+  border-color: ${props => {
+    return props.theme.palette[props.borderColor] || props.theme.palette.grey3;
   }};
-  border-radius: 100%;
   width: 1rem;
   height: 1rem;
+  border-radius: 100%;
   z-index: 1;
   transition: transform 300ms ease-in-out;
-  transform: ${(props) => {
+  transform: ${props => {
     return props.checked ? "translateX(100%)" : "translateX(1%)";
   }};
   &[disabled],
   &[readonly] {
-    border-color: ${(props) => {
-    return props.theme.palette[props.disabled] || "";
-  }};
+    border-color: ${props => {
+      return props.theme.palette[props.disabled] || "";
+    }};
   }
 `;
 
-const SwitchLabel = styled.label`
-  grid-area: label;
-  color: ${(props) => {
-    return props.disabled ? props.theme.text.disabled : "inherit";
-  }};
-  user-select: none;
-  cursor: pointer;
-  &[disabled],
-  &[readonly] {
-    cursor: not-allowed;
-    pointer-events: none;
-    user-select: none;
-  }
-`;
-
-function Switch({
-  align, checked, disabled, error, id, label, onChange,
-}) {
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+function Switch({ align, checked, disabled, error, id, label, onChange }) {
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let checkboxColor;
   let fillColor;
   let borderColor;
@@ -148,12 +138,19 @@ function Switch({
         fillColor={fillColor}
         borderColor={borderColor}
       >
-        <Circle checked={isChecked} borderColor={borderColor} disabled={isDisabled} />
+        <Circle
+          checked={isChecked}
+          borderColor={borderColor}
+          disabled={isDisabled}
+        />
       </StyledSwitch>
       {label ? (
-        <SwitchLabel htmlFor={id} onChange={onChange} disabled={isDisabled}>
-          {label}
-        </SwitchLabel>
+        <Label
+          htmlFor={id}
+          onChange={onChange}
+          disabled={isDisabled}
+          text={label}
+        />
       ) : null}
     </SwitchContainer>
   );
@@ -166,7 +163,7 @@ Switch.propTypes = {
   error: PropTypes.bool,
   id: PropTypes.string,
   label: PropTypes.string,
-  onChange: PropTypes.func,
+  onChange: PropTypes.func
 };
 Switch.defaultProps = {
   align: null,
@@ -175,7 +172,7 @@ Switch.defaultProps = {
   error: false,
   id: null,
   label: null,
-  onChange: null,
+  onChange: null
 };
 
 export { Switch as default };

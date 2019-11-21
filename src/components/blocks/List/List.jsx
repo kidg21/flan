@@ -3,7 +3,7 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import { Darken } from "Variables";
 import Bar from "blocks/Bar";
-import Title from "base/Typography";
+import Title, { Description } from "base/Typography";
 import { InteractiveContext, DisabledContext } from "States";
 
 const ListWrapper = styled.ul`
@@ -119,9 +119,7 @@ function ListItem({
           center={
             <>
               {<Title text={label} />}
-              {description ? (
-                <Title text={description} size="small" weight="light" />
-              ) : null}
+              {description ? <Description text={description} /> : null}
             </>
           }
           right={children}

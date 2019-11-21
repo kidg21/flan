@@ -3,13 +3,13 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { DisabledContext } from "States";
 import Bar from "blocks/Bar";
-import { InputLabel, HelpText, ErrorText } from "layout/Form";
+import Label from "base/Label";
 import Grid from "layout/Grid";
 import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";
 
 const RangeContainer = styled(Grid)`
-  color: ${(props) => {
+  color: ${props => {
     return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
   &:last-child {
@@ -31,20 +31,23 @@ function DataRange({
   onChangeSelector,
   optionsSelect,
   optionsMax,
-  optionsMin,
+  optionsMin
 }) {
   let inputTextColor;
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (error && !isDisabled) {
     inputTextColor = "alert";
   }
   function onChangeMin(currState, newState, setState) {
-    if (onChange) onChange({ min: newState ? newState.selected : currState.target.value });
+    if (onChange)
+      onChange({ min: newState ? newState.selected : currState.target.value });
     if (setState) setState(newState);
   }
 
   function onChangeMax(currState, newState, setState) {
-    if (onChange) onChange({ max: newState ? newState.selected : currState.target.value });
+    if (onChange)
+      onChange({ max: newState ? newState.selected : currState.target.value });
     if (setState) setState(newState);
   }
   return (
@@ -55,7 +58,7 @@ function DataRange({
       columns="1"
       gap="tiny"
     >
-      {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
+      {label ? <Label isRequired={isRequired} text={label} /> : null}
       <Bar
         padding="none"
         withSelector={withSelector}
@@ -107,8 +110,8 @@ function DataRange({
           )
         }
       />
-      {helpText ? <HelpText>{helpText}</HelpText> : null}
-      {typeof error === "string" && !isDisabled ? <ErrorText>{error}</ErrorText> : null}
+      {helpText ? <Label text={helpText} /> : null}
+      {typeof error === "string" && !isDisabled ? <Label text={error} /> : null}
     </RangeContainer>
   );
 }
@@ -128,7 +131,7 @@ DataRange.propTypes = {
   onChange: PropTypes.func,
   optionsSelect: PropTypes.func,
   optionsMax: PropTypes.map,
-  optionsMin: PropTypes.map,
+  optionsMin: PropTypes.map
 };
 DataRange.defaultProps = {
   disabled: false,
@@ -142,7 +145,7 @@ DataRange.defaultProps = {
   onChangeSelector: null,
   optionsSelect: null,
   optionsMax: null,
-  optionsMin: null,
+  optionsMin: null
 };
 
 export default DataRange;

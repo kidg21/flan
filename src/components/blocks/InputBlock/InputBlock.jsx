@@ -4,7 +4,7 @@ import React, { useState, useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
-import { InputLabel, HelpText, ErrorText, Label } from "layout/Form";
+import Label from "base/Label";
 import Grid from "layout/Grid";
 import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";
@@ -12,7 +12,7 @@ import Icon from "atoms/Icon";
 import Button from "atoms/Button";
 
 const TextInputContainer = styled(Grid)`
-  color: ${(props) => {
+  color: ${props => {
     return props.theme.text[props.inputTextColor] || "";
   }};
   width: 100%;
@@ -33,18 +33,21 @@ function InputBlock({
   prefix,
   selectOptions,
   text,
-  textInputs,
+  textInputs
 }) {
   const [state, setState] = useState({
     input: textInputs.reduce((inputMap, input) => {
       inputMap[input.id] = input.value;
       return inputMap;
     }, {}),
-    selected: selectOptions,
+    selected: selectOptions
   });
 
   function handleChange(e) {
-    const newState = { ...state, input: { ...state.input, [e.target.id]: e.target.value } };
+    const newState = {
+      ...state,
+      input: { ...state.input, [e.target.id]: e.target.value }
+    };
     if (onChange) {
       onChange(state, newState, setState);
     } else {
@@ -55,7 +58,7 @@ function InputBlock({
   function handleSelectChange(prevState, currState, setSelectState) {
     if (onChange) {
       const newState = { ...state, selected: currState.selected };
-      onChange(state, newState, (updatedState) => {
+      onChange(state, newState, updatedState => {
         setSelectState({ selected: updatedState.selected });
         if (updatedState.input !== newState.input) setState(updatedState);
       });
@@ -64,14 +67,15 @@ function InputBlock({
     }
   }
 
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let inputTextColor;
   let buttonColor;
   if (error && !isDisabled) {
     inputTextColor = "alert";
     buttonColor = "alert";
   }
-  const inputElements = textInputs.map((input) => {
+  const inputElements = textInputs.map(input => {
     return (
       <TextInput
         disabled={isDisabled}
@@ -106,9 +110,9 @@ function InputBlock({
   } else if (text) {
     inputContainer = (
       <Grid columns={gridColumns} gap="tiny">
-        {prefix ? <Label>{text}</Label> : null}
+        {prefix ? <Label text={text} /> : null}
         {inputElements}
-        {!prefix ? <Label>{text}</Label> : null}
+        {!prefix ? <Label text={text} /> : null}
       </Grid>
     );
   } else if (options) {
@@ -187,10 +191,12 @@ function InputBlock({
         prefix={prefix}
         text={text}
       >
-        {label ? <InputLabel isRequired={isRequired} label={label} /> : null}
+        {label ? <Label isRequired={isRequired} text={label} /> : null}
         {inputContainer}
-        {helpText ? <HelpText>{helpText}</HelpText> : null}
-        {typeof error === "string" && !isDisabled ? <ErrorText>{error}</ErrorText> : null}
+        {helpText ? <Label text={helpText} /> : null}
+        {typeof error === "string" && !isDisabled ? (
+          <Label text={error} />
+        ) : null}
       </TextInputContainer>
     </DisabledContext.Provider>
   );
@@ -202,7 +208,7 @@ InputBlock.propTypes = {
     disabled: PropTypes.bool,
     label: PropTypes.string,
     onClick: PropTypes.func,
-    type: PropTypes.string,
+    type: PropTypes.string
   }),
   className: PropTypes.string,
   disabled: PropTypes.bool,
@@ -213,22 +219,26 @@ InputBlock.propTypes = {
   isRequired: PropTypes.bool,
   label: PropTypes.string,
   onChange: PropTypes.func,
-  options: PropTypes.arrayOf(PropTypes.shape({
-    label: PropTypes.string,
-    value: PropTypes.any,
-  })),
+  options: PropTypes.arrayOf(
+    PropTypes.shape({
+      label: PropTypes.string,
+      value: PropTypes.any
+    })
+  ),
   prefix: PropTypes.bool,
   selectOptions: PropTypes.arrayOf(PropTypes.any),
   text: PropTypes.string,
-  textInputs: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.string,
-    placeholder: PropTypes.string,
-    type: PropTypes.string,
-    pattern: PropTypes.string,
-    title: PropTypes.string,
-    value: PropTypes.string,
-    readonly: PropTypes.bool,
-  })).isRequired,
+  textInputs: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      placeholder: PropTypes.string,
+      type: PropTypes.string,
+      pattern: PropTypes.string,
+      title: PropTypes.string,
+      value: PropTypes.string,
+      readonly: PropTypes.bool
+    })
+  ).isRequired
 };
 InputBlock.defaultProps = {
   button: null,
@@ -244,7 +254,7 @@ InputBlock.defaultProps = {
   options: null,
   prefix: false,
   selectOptions: null,
-  text: null,
+  text: null
 };
 
 export { InputBlock as default };

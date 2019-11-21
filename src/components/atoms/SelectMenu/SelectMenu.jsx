@@ -4,7 +4,7 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import { fonts, colors, shadows } from "Variables";
 import Grid from "layout/Grid";
-import { InputLabel, HelpText, ErrorText } from "layout/Form";
+import Label from "base/Label";
 import Select, { Creatable } from "react-select";
 import { Skeleton } from "helpers";
 import { DisabledContext } from "States";
@@ -282,12 +282,12 @@ function SelectMenu({
       columns="1"
       gap="tiny"
     >
-      {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
+      {label ? <Label isRequired={isRequired} text={label} /> : null}
       {select}
       {/* Help Text */}
-      {helpText ? <HelpText>{helpText}</HelpText> : null}
+      {helpText ? <Label text={helpText} /> : null}
       {/* Error Message (required) */}
-      {state.error ? <ErrorText>{state.error}</ErrorText> : null}
+      {state.error ? <Label text={state.error} /> : null}
     </SelectMenuContainer>
   );
 }
