@@ -8,7 +8,7 @@ import Grid from "layout/Grid";
 import Button from "atoms/Button";
 
 // Knob Values
-const knobGroups = ["Button", "Group 2"];
+const knobGroups = ["Button (CSF)", "Group 2"];
 const buttonLabel = "Button Label";
 const buttonTypes = ["standard", "solid", "inline", "underlined"];
 const buttonColors = [
@@ -24,14 +24,15 @@ const buttonIcons = ["no icon", "user", "down", "bookmark", "plus", "print"];
 
 // CSF format
 export default {
-  title: "Work|Docs/Button/Tests",
+  title: "Work|Docs/Button (CSF)",
   component: Button,
   parameters: {
-    componentSubtitle: "Handy status label",
+    componentSubtitle:
+      "Buttons allow users to take actions, and make choices, with a single tap.",
     /** Use to disable DocsPage per component */
     // parameters: { docs: { page: null } },
   },
-  includeStories: ["Knobs", "Actions"],
+  // includeStories: ["Standard", "Knobs", "Actions"],
   decorators: [Padding, withKnobs],
 };
 export const Standard = () => {
@@ -97,7 +98,22 @@ export const Knobs = () => {
     />
   );
 };
+Knobs.story = {
+  parameters: {
+    docs: {
+      storyDescription:
+        "We can add a description for each story to help explain what they represent.  For example, for this 'Knobs' story, you should switch to the 'Canvas' tab to experiment with this story.",
+    },
+  },
+};
 export const Actions = () => {
   return <Button label="Click Me!" onClick={action("onClick")} />;
 };
-// Actions.story = { parameters: { docs: { disable: true } } };
+Actions.story = {
+  parameters: {
+    docs: {
+      storyDescription:
+        "This is another story that should be used in the 'Canvas' tab.",
+    },
+  },
+};

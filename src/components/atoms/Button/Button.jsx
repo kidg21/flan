@@ -25,7 +25,10 @@ const StyledButton = styled.button`
     return props.theme.palette[props.fontColor] || props.theme.text.primary;
   }};
   background-color: ${(props) => {
-    return props.theme.palette[props.backgroundColor] || props.theme.background.default;
+    return (
+      props.theme.palette[props.backgroundColor] ||
+      props.theme.background.default
+    );
   }};
   border: ${(props) => {
     return props.border || "1px solid";
@@ -83,6 +86,26 @@ const ButtonLabel = styled.label`
 const ButtonIcon = styled(Icon)`
   margin: 0.25em 0;
 `;
+
+/**
+ * ( This documentaion is written using 'JSdoc'. This method allows us to use comments written in the Component file. )
+ *
+ * Usage
+ *
+ * Buttons communicate actions that users can take. They are typically placed throughout your UI, in places like:
+ *
+- Dialogs
+- Modal windows
+- Forms
+- Cards
+- Toolbars
+  *
+  * Principles
+  *
+- Identifiable: Buttons should indicate that they can trigger an action.
+- Findable: Buttons should be easy to find among other elements, including other buttons.
+- Clear: A button’s action and state should be clear.
+* */
 
 function Button({
   className,
@@ -143,7 +166,8 @@ function Button({
       break;
   }
 
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let borderStyle = border;
   let underline = underlineColor;
   if (type) {
@@ -211,7 +235,14 @@ function Button({
 
 Button.propTypes = {
   className: PropTypes.string,
-  color: PropTypes.oneOf(["success", "warning", "alert", "info", "primary", "secondary"]),
+  color: PropTypes.oneOf([
+    "success",
+    "warning",
+    "alert",
+    "info",
+    "primary",
+    "secondary",
+  ]),
   disabled: PropTypes.bool,
   fullWidth: PropTypes.bool,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
