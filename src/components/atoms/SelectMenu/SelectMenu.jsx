@@ -11,10 +11,10 @@ import { DisabledContext } from "States";
 
 const selectStyles = {
   // Wrapper
-  container: (styles) => {
+  container: styles => {
     return {
       ...styles,
-      fontFamily: fonts.data,
+      fontFamily: fonts.data
     };
   },
   // Toggle UI
@@ -34,17 +34,17 @@ const selectStyles = {
     }
     return {
       ...styles,
-      "backgroundColor": bgColor,
-      "borderColor": borderColor,
-      "boxShadow": "none",
-      "cursor": isDisabled ? "not-allowed" : "pointer",
-      "flexWrap": "nowrap",
-      "fontWeight": "normal",
-      "letterSpacing": ".5px",
-      "minHeight": "2.75rem",
+      backgroundColor: bgColor,
+      borderColor: borderColor,
+      boxShadow: "none",
+      cursor: isDisabled ? "not-allowed" : "pointer",
+      flexWrap: "nowrap",
+      fontWeight: "normal",
+      letterSpacing: ".5px",
+      minHeight: "2.75rem",
       ":hover": {
-        borderColor: colors.grey60,
-      },
+        borderColor: colors.grey60
+      }
     };
   },
   placeholder: (styles, { isFocused }) => {
@@ -53,7 +53,7 @@ const selectStyles = {
       fontFamily: fonts.data,
       color: isFocused ? colors.grey60 : colors.grey60,
       letterSpacing: ".5px",
-      fontWeight: 400,
+      fontWeight: 400
     };
   },
   // selected option
@@ -62,60 +62,60 @@ const selectStyles = {
       ...styles,
       fontFamily: fonts.data,
       opacity: isDisabled ? 0.5 : 1,
-      transition: "opacity 300ms",
+      transition: "opacity 300ms"
     };
   },
   // 'X' to clear current selection
   clearIndicator: (styles, { isFocused }) => {
     return {
       ...styles,
-      color: isFocused ? colors.grey40 : colors.grey20,
+      color: isFocused ? colors.grey40 : colors.grey20
     };
   },
   // pipe
   indicatorSeparator: (styles, { isDisabled }) => {
     return {
       ...styles,
-      backgroundColor: isDisabled ? colors.grey20 : colors.grey40,
+      backgroundColor: isDisabled ? colors.grey20 : colors.grey40
     };
   },
   // down arrow
   dropdownIndicator: (styles, { isDisabled }) => {
     return {
       ...styles,
-      color: isDisabled ? colors.grey20 : colors.grey40,
+      color: isDisabled ? colors.grey20 : colors.grey40
     };
   },
   // multi element background
-  multiValue: (styles) => {
+  multiValue: styles => {
     return {
       ...styles,
       fontFamily: fonts.data,
       fontWeight: "normal",
-      letterSpacing: "1px",
+      letterSpacing: "1px"
     };
   },
   // multi element label background
-  multiValueLabel: (styles) => {
+  multiValueLabel: styles => {
     return {
       ...styles,
       fontFamily: fonts.data,
-      color: colors.grey80,
+      color: colors.grey80
     };
   },
   // multi element 'x' background
-  multiValueRemove: (styles) => {
+  multiValueRemove: styles => {
     return {
       ...styles,
       ":hover": {
         backgroundColor: colors.grey40,
-        color: colors.grey80,
+        color: colors.grey80
       },
-      "color": colors.grey60,
+      color: colors.grey60
     };
   },
   // options menu
-  menu: (styles) => {
+  menu: styles => {
     return {
       ...styles,
       fontFamily: fonts.data,
@@ -124,14 +124,14 @@ const selectStyles = {
       margin: ".25rem 0",
       border: "1px solid",
       borderColor: colors.grey40,
-      boxShadow: shadows.dropShadow,
+      boxShadow: shadows.dropShadow
     };
   },
 
-  menuList: (styles) => {
+  menuList: styles => {
     return {
       ...styles,
-      backgroundColor: "",
+      backgroundColor: ""
     };
   },
   // Menu Options
@@ -149,13 +149,13 @@ const selectStyles = {
       ...styles,
       backgroundColor: null,
       color: color,
-      cursor: isDisabled ? "not-allowed" : "pointer",
+      cursor: isDisabled ? "not-allowed" : "pointer"
     };
-  },
+  }
 };
 
 const SelectMenuContainer = styled(Grid)`
-  color: ${(props) => {
+  color: ${props => {
     let color = "";
     if (props.error) color = colors.alert;
     else if (props.disabled) color = colors.grey40;
@@ -187,7 +187,7 @@ function SelectMenu({
   isLoading,
   isRtl,
   onChangeState,
-  onCreateOption,
+  onCreateOption
 }) {
   let textColor;
 
@@ -197,19 +197,22 @@ function SelectMenu({
 
   if (error && !disabled) {
     textColor = "alert";
-
   }
 
-  
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let selectedOpts = [];
   if (selectOptions) {
-    selectedOpts = selectOptions instanceof Array ? selectOptions : [selectOptions];
-    selectedOpts = options.filter((opt) => {
+    selectedOpts =
+      selectOptions instanceof Array ? selectOptions : [selectOptions];
+    selectedOpts = options.filter(opt => {
       if (opt.value instanceof Array) {
         for (let i = 0; i < selectedOpts.length; i++) {
           const targetOpts = multiSelect ? selectedOpts[i] : selectedOpts;
-          if (targetOpts instanceof Array && targetOpts.length === opt.value.length) {
+          if (
+            targetOpts instanceof Array &&
+            targetOpts.length === opt.value.length
+          ) {
             let isMatch = true;
             for (let j = 0; j < targetOpts.length; j++) {
               if (!opt.value.includes(targetOpts[j])) {
@@ -250,7 +253,7 @@ function SelectMenu({
   }
 
   function handleCreateOption(optionName) {
-    onCreateOption(optionName, (newState) => {
+    onCreateOption(optionName, newState => {
       setState(Object.assign({}, state, newState));
     });
   }
@@ -269,9 +272,13 @@ function SelectMenu({
     isLoading: isLoading,
     isRtl: isRtl,
     onChange: changeSelected,
-    onCreateOption: onCreateOption ? handleCreateOption : null,
+    onCreateOption: onCreateOption ? handleCreateOption : null
   };
-  const select = onCreateOption ? <Creatable {...selectProps} /> : <Select {...selectProps}/>;
+  const select = onCreateOption ? (
+    <Creatable {...selectProps} />
+  ) : (
+    <Select {...selectProps} />
+  );
 
   return (
     <SelectMenuContainer
@@ -282,12 +289,14 @@ function SelectMenu({
       columns="1"
       gap="tiny"
     >
-      {label ? <Label isRequired={isRequired} text={label} /> : null}
+      {label ? (
+        <Label size="sm" weight="bold" isRequired={isRequired} text={label} />
+      ) : null}
       {select}
       {/* Help Text */}
-      {helpText ? <Label text={helpText} /> : null}
+      {helpText ? <Label size="sm" text={helpText} /> : null}
       {/* Error Message (required) */}
-      {state.error ? <Label text={state.error} /> : null}
+      {state.error ? <Label size="sm" text={state.error} /> : null}
     </SelectMenuContainer>
   );
 }
@@ -296,13 +305,15 @@ SelectMenu.propTypes = {
   id: PropTypes.string,
   name: PropTypes.string,
   placeholder: PropTypes.string,
-  options: PropTypes.arrayOf(PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.shape({
-      label: PropTypes.string,
-      value: PropTypes.any,
-    }),
-  ])).isRequired,
+  options: PropTypes.arrayOf(
+    PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.shape({
+        label: PropTypes.string,
+        value: PropTypes.any
+      })
+    ])
+  ).isRequired,
   selectOptions: PropTypes.any,
   label: PropTypes.string,
   isRequired: PropTypes.bool,
@@ -315,7 +326,7 @@ SelectMenu.propTypes = {
   isRtl: PropTypes.bool,
   helpText: PropTypes.string,
   onChangeState: PropTypes.func,
-  onCreateOption: PropTypes.func,
+  onCreateOption: PropTypes.func
 };
 
 SelectMenu.defaultProps = {
@@ -334,7 +345,7 @@ SelectMenu.defaultProps = {
   isRtl: false,
   helpText: null,
   onChangeState: null,
-  onCreateOption: null,
+  onCreateOption: null
 };
 
 export default SelectMenu;

@@ -58,7 +58,9 @@ function DataRange({
       columns="1"
       gap="tiny"
     >
-      {label ? <Label isRequired={isRequired} text={label} /> : null}
+      {label ? (
+        <Label size="sm" weight="bold" isRequired={isRequired} text={label} />
+      ) : null}
       <Bar
         padding="none"
         withSelector={withSelector}
@@ -110,8 +112,10 @@ function DataRange({
           )
         }
       />
-      {helpText ? <Label text={helpText} /> : null}
-      {typeof error === "string" && !isDisabled ? <Label text={error} /> : null}
+      {helpText ? <Label size="sm" text={helpText} /> : null}
+      {typeof error === "string" && !isDisabled ? (
+        <Label size="sm" text={error} />
+      ) : null}
     </RangeContainer>
   );
 }

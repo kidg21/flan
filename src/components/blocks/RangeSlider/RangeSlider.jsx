@@ -32,7 +32,7 @@ function RangeSlider({
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (error && !isDisabled) {
-    inputTextColor = "error";
+    inputTextColor = "alert";
   }
   return (
     <RangeContainer
@@ -42,8 +42,10 @@ function RangeSlider({
       columns="1"
       gap="small"
     >
-      {label ? <Label isRequired={isRequired} text={label} /> : null}
-      {helpText ? <Label text={helpText} /> : null}
+      {label ? (
+        <Label weight="bold" size="sm" isRequired={isRequired} text={label} />
+      ) : null}
+      {helpText ? <Label size="sm" text={helpText} /> : null}
       <Bar
         padding="none"
         contentAlign="center"
@@ -73,7 +75,9 @@ function RangeSlider({
           />
         }
       />
-      {typeof error === "string" && !isDisabled ? <Label text={error} /> : null}
+      {typeof error === "string" && !isDisabled ? (
+        <Label size="sm" text={error} />
+      ) : null}
     </RangeContainer>
   );
 }

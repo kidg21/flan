@@ -21,6 +21,7 @@ function DialogBox({
       // Multiple buttons
       buttonElements = (
         <Bar
+          rightWidth="50%"
           right={
             <Grid columns={buttons.length}>
               {buttons.map((button, index) => {
@@ -42,7 +43,7 @@ function DialogBox({
       // Single button
       buttonElements = (
         <Bar
-          left={
+          center={
             <Button
               label={buttons[0].label}
               type={buttons[0].type}

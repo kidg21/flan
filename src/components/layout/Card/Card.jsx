@@ -42,7 +42,7 @@ const CardPiece = styled.div`
 const CardWrapper = styled(CardPiece)`
   position: relative;
   padding: ${props => {
-    return props.cardPadding || "";
+    return props.cardPadding || "1em";
   }};
   filter: ${props => {
     return props.theme.shadows.cardShadow;
