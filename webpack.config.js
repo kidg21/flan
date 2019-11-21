@@ -1,13 +1,15 @@
+/* eslint-disable linebreak-style */
 const path = require("path");
+
 const root = `${__dirname}/`;
 const StringReplacePlugin = require("string-replace-webpack-plugin");
+
 const buildOutputPath = "Bundles/";
 
-
-let build = {
+const build = {
   name: "buildScript",
   entry: {
-    "StyledComponents": "./styled-components.js",
+    StyledComponents: "./styled-components.js",
   },
   output: {
     // Output to the "Bundles" folder
@@ -22,12 +24,22 @@ let build = {
     rules: [
       {
         test: /\.jsx$/,
-        exclude: [/(node_modules|bower_components)/, /[\\\/]ss-3rdparty[\\\/]/, /[\\\/]_dhtmlxgrid[\\\/]/, /[\\\/]ui[\\\/]editattributeelements[\\\/]/, /[\\\/]editattributeelements[\\\/]handlers[\\\/]/, /examples/],
+        exclude: [
+          /(node_modules|bower_components)/,
+          /[\\\/]ss-3rdparty[\\\/]/,
+          /[\\\/]_dhtmlxgrid[\\\/]/,
+          /[\\\/]ui[\\\/]editattributeelements[\\\/]/,
+          /[\\\/]editattributeelements[\\\/]handlers[\\\/]/,
+          /examples/,
+        ],
         use: {
           loader: "babel-loader",
           options: {
             presets: ["@babel/preset-env", "@babel/preset-react", "airbnb"],
-            plugins: ["transform-class-properties", "babel-plugin-styled-components"],
+            plugins: [
+              "transform-class-properties",
+              "babel-plugin-styled-components",
+            ],
             babelrcRoots: ["./"],
           },
         },
@@ -39,12 +51,19 @@ let build = {
       {
         test: /\.css$/,
         exclude: [/examples/],
-        loader: StringReplacePlugin.replace("style-loader!css-loader?url=false", {
-          replacements: [{
-            pattern: /\$\(APP_PATH\)/gi,
-            replacement: function replacement() { return "https://localhost:44344/lib/3.0"; },
-          }],
-        }),
+        loader: StringReplacePlugin.replace(
+          "style-loader!css-loader?url=false",
+          {
+            replacements: [
+              {
+                pattern: /\$\(APP_PATH\)/gi,
+                replacement: function replacement() {
+                  return "https://localhost:44344/lib/3.0";
+                },
+              },
+            ],
+          },
+        ),
       },
       {
         test: /\.(ttf|eot|svg|jpg|html$)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
@@ -64,9 +83,7 @@ let build = {
       },
     ],
   },
-  plugins: [
-    StringReplacePlugin,
-  ],
+  plugins: [StringReplacePlugin],
 };
 
 module.exports = [build];
