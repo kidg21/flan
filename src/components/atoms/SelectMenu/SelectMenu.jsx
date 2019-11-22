@@ -1,10 +1,13 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React, { useContext, useState } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { fonts, colors, shadows } from "Variables";
 import Grid from "layout/Grid";
-import { InputLabel, HelpText, ErrorText } from "layout/Form";
+import Label from "base/Label";
 import Select, { Creatable } from "react-select";
 import { Skeleton } from "helpers";
 import { DisabledContext } from "States";
@@ -197,19 +200,22 @@ function SelectMenu({
 
   if (error && !disabled) {
     textColor = "alert";
-
   }
 
-  
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let selectedOpts = [];
   if (selectOptions) {
-    selectedOpts = selectOptions instanceof Array ? selectOptions : [selectOptions];
+    selectedOpts =
+      selectOptions instanceof Array ? selectOptions : [selectOptions];
     selectedOpts = options.filter((opt) => {
       if (opt.value instanceof Array) {
         for (let i = 0; i < selectedOpts.length; i++) {
           const targetOpts = multiSelect ? selectedOpts[i] : selectedOpts;
-          if (targetOpts instanceof Array && targetOpts.length === opt.value.length) {
+          if (
+            targetOpts instanceof Array &&
+            targetOpts.length === opt.value.length
+          ) {
             let isMatch = true;
             for (let j = 0; j < targetOpts.length; j++) {
               if (!opt.value.includes(targetOpts[j])) {
@@ -271,7 +277,11 @@ function SelectMenu({
     onChange: changeSelected,
     onCreateOption: onCreateOption ? handleCreateOption : null,
   };
-  const select = onCreateOption ? <Creatable {...selectProps} /> : <Select {...selectProps}/>;
+  const select = onCreateOption ? (
+    <Creatable {...selectProps} />
+  ) : (
+    <Select {...selectProps} />
+  );
 
   return (
     <SelectMenuContainer
@@ -282,12 +292,14 @@ function SelectMenu({
       columns="1"
       gap="tiny"
     >
-      {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
+      {label ? (
+        <Label size="sm" weight="bold" isRequired={isRequired} text={label} />
+      ) : null}
       {select}
       {/* Help Text */}
-      {helpText ? <HelpText>{helpText}</HelpText> : null}
+      {helpText ? <Label size="sm" text={helpText} /> : null}
       {/* Error Message (required) */}
-      {state.error ? <ErrorText>{state.error}</ErrorText> : null}
+      {state.error ? <Label size="sm" text={state.error} /> : null}
     </SelectMenuContainer>
   );
 }
@@ -297,12 +309,12 @@ SelectMenu.propTypes = {
   name: PropTypes.string,
   placeholder: PropTypes.string,
   options: PropTypes.arrayOf(PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.shape({
-      label: PropTypes.string,
-      value: PropTypes.any,
-    }),
-  ])).isRequired,
+      PropTypes.string,
+      PropTypes.shape({
+        label: PropTypes.string,
+        value: PropTypes.any,
+      }),
+    ]),).isRequired,
   selectOptions: PropTypes.any,
   label: PropTypes.string,
   isRequired: PropTypes.bool,

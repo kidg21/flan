@@ -1,3 +1,7 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -9,7 +13,9 @@ const Block = styled.div`
   justify-content: space-between;
 `;
 
-function IconBlock({ id, children, style, className }) {
+function IconBlock({
+  id, children, style, className,
+}) {
   return (
     <Block id={id} style={style} className={className}>
       {children}
@@ -19,13 +25,20 @@ function IconBlock({ id, children, style, className }) {
 
 IconBlock.propTypes = {
   id: PropTypes.string,
-  children: PropTypes.any.isRequired,
+  children: PropTypes.node.isRequired,
   /** Currently needed for stories
    * TODO: retructre stories and remove 'style' prop
    */
-  style: PropTypes.object,
+  style: PropTypes.shape,
   /** className used for extending styles */
   className: PropTypes.string,
+};
+
+
+IconBlock.defaultProps = {
+  id: null,
+  style: null,
+  className: null,
 };
 
 export default IconBlock;

@@ -1,4 +1,7 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import { css } from "styled-components";
 
 // Codes for color palette
@@ -51,6 +54,19 @@ export const colors = {
   greyDark: "hsl(34, 5%, 28%)",
   greyLight: "hsl(34, 5%, 96%)",
 
+  grey0: "hsl(240, 24%, 96%)",
+  grey1: "hsl(240, 11%, 91%)",
+  grey2: "hsl(240, 6%, 83%)",
+  grey3: "hsl(240, 5%, 79%)",
+  grey4: "hsl(240, 3%, 69%)",
+  grey5: "hsl(240, 2%, 57%)",
+  grey6: "hsl(240, 1%, 39%)",
+  grey7: "hsl(240, 1%, 29%)",
+  grey8: "hsl(240, 2%, 23%)",
+  grey9: "hsl(240, 2%, 18%)",
+  grey10: "hsl(240, 3%, 11%)",
+
+
   orange: "hsl(30, 82%, 48%)",
   orangeBright: "hsl(30, 100%, 50%)",
   orangeDark: "hsl(30, 92%, 24%)",
@@ -63,7 +79,7 @@ export const colors = {
   redLight: "hsl(3, 83%, 76%)",
   redTint: "hsl(3, 96%, 97%)",
 
-  white: "hsl(0, 20%, 99%)",
+  white: "hsl(0, 100%, 100%)",
 };
 
 export const DMPTheme = {
@@ -73,8 +89,6 @@ export const DMPTheme = {
     app: colors.greyLight,
     default: colors.white,
     disabled: colors.greyLight,
-    glass_light: colors.greenLight,
-    glass_dark: colors.greenDark,
     info_active: colors.blueTint,
     inverse: colors.black,
     selected: colors.greenLight,
@@ -108,12 +122,12 @@ export const DMPTheme = {
     black: colors.black,
     disabled: colors.greyLight,
     foreground: colors.black,
-    grey: colors.greyDark,
-    grey2: colors.grey80,
-    grey3: colors.grey60,
-    grey4: colors.grey40,
-    grey5: colors.grey20,
-    grey6: colors.greyLight,
+    grey: colors.grey5,
+    grey2: colors.grey4,
+    grey3: colors.grey3,
+    grey4: colors.grey2,
+    grey5: colors.grey1,
+    grey6: colors.grey0,
     info: colors.blue,
     infoBright: colors.blueBright,
     infoDark: colors.blueDark,
@@ -142,11 +156,7 @@ export const DMPTheme = {
     white: colors.white,
   },
   accents: {
-    alert: colors.red,
     black: colors.black,
-    info: colors.blue,
-    success: colors.green,
-    warning: colors.orange,
     white: colors.white,
   },
   shadows: {
@@ -176,8 +186,6 @@ export const darkTheme = {
     dark: colors.black,
     default: colors.black,
     disabled: colors.grey80,
-    glass_light: colors.greenLight,
-    glass_dark: colors.greenDark,
     info_active: colors.blueDark,
     inverse: colors.white,
     light: colors.white,
@@ -219,12 +227,12 @@ export const darkTheme = {
     black: colors.black,
     disabled: colors.greyDark,
     foreground: colors.white,
-    grey: colors.greyLight,
-    grey2: colors.grey20,
-    grey3: colors.grey40,
-    grey4: colors.grey60,
-    grey5: colors.grey80,
-    grey6: colors.greyDark,
+    grey: colors.grey10,
+    grey2: colors.grey9,
+    grey3: colors.grey8,
+    grey4: colors.grey7,
+    grey5: colors.grey6,
+    grey6: colors.grey5,
     // info: "#0a84ff",
     info: colors.blue,
     infoBright: colors.blueBright,
@@ -266,11 +274,7 @@ export const darkTheme = {
     white: colors.white,
   },
   accents: {
-    alert: colors.red,
     black: colors.black,
-    info: colors.blue,
-    success: colors.green,
-    warning: colors.orange,
     white: colors.white,
   },
   shadows: {

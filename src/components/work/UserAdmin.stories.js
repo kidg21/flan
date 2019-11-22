@@ -1,3 +1,9 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable react/require-default-props */
+/* eslint-disable react/forbid-prop-types */
+/* eslint-disable no-unused-vars */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { storiesOf } from "@storybook/react";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -26,7 +32,8 @@ const Roles = [
   },
   {
     roles: "Admin",
-    folders: "BDE811.Acquisitions, BDE811.Marketing, BDE811.Public, BDE811.Marketing",
+    folders:
+      "BDE811.Acquisitions, BDE811.Marketing, BDE811.Public, BDE811.Marketing",
     action: <Icon icon="edit" onClick="interactive" />,
   },
   {
@@ -46,7 +53,8 @@ const Roles = [
   },
   {
     roles: "Admin",
-    folders: "BDE811.Acquisitions, BDE811.Marketing, BDE811.Public, BDE811.Marketing",
+    folders:
+      "BDE811.Acquisitions, BDE811.Marketing, BDE811.Public, BDE811.Marketing",
     action: <Icon icon="edit" onClick="interactive" />,
   },
 ];
@@ -54,28 +62,76 @@ const Roles = [
 const UserColumns = ["Name", "Roles", "Action"];
 
 const Users = [
-  { name: "brodarte", roles: "Developer", action: <Icon icon="edit" onClick="interactive" /> },
-  { name: "egallagher", roles: "Marketing", action: <Icon icon="edit" onClick="interactive" /> },
-  { name: "esugimoto", roles: null, action: <Icon icon="edit" onClick="interactive" /> },
-  { name: "mwalker", roles: "Admin", action: <Icon icon="edit" onClick="interactive" /> },
+  {
+    name: "brodarte",
+    roles: "Developer",
+    action: <Icon icon="edit" onClick="interactive" />,
+  },
+  {
+    name: "egallagher",
+    roles: "Marketing",
+    action: <Icon icon="edit" onClick="interactive" />,
+  },
+  {
+    name: "esugimoto",
+    roles: null,
+    action: <Icon icon="edit" onClick="interactive" />,
+  },
+  {
+    name: "mwalker",
+    roles: "Admin",
+    action: <Icon icon="edit" onClick="interactive" />,
+  },
   {
     name: "pnguyen",
     roles: ["Developer", "Acquisitions"],
     action: <Icon icon="edit" onClick="interactive" />,
   },
-  { name: "brodarte", roles: "Developer", action: <Icon icon="edit" onClick="interactive" /> },
-  { name: "egallagher", roles: "Marketing", action: <Icon icon="edit" onClick="interactive" /> },
-  { name: "esugimoto", roles: null, action: <Icon icon="edit" onClick="interactive" /> },
-  { name: "mwalker", roles: "Admin", action: <Icon icon="edit" onClick="interactive" /> },
+  {
+    name: "brodarte",
+    roles: "Developer",
+    action: <Icon icon="edit" onClick="interactive" />,
+  },
+  {
+    name: "egallagher",
+    roles: "Marketing",
+    action: <Icon icon="edit" onClick="interactive" />,
+  },
+  {
+    name: "esugimoto",
+    roles: null,
+    action: <Icon icon="edit" onClick="interactive" />,
+  },
+  {
+    name: "mwalker",
+    roles: "Admin",
+    action: <Icon icon="edit" onClick="interactive" />,
+  },
   {
     name: "pnguyen",
     roles: ["Developer", "Acquisitions"],
     action: <Icon icon="edit" onClick="interactive" />,
   },
-  { name: "brodarte", roles: "Developer", action: <Icon icon="edit" onClick="interactive" /> },
-  { name: "egallagher", roles: "Marketing", action: <Icon icon="edit" onClick="interactive" /> },
-  { name: "esugimoto", roles: null, action: <Icon icon="edit" onClick="interactive" /> },
-  { name: "mwalker", roles: "Admin", action: <Icon icon="edit" onClick="interactive" /> },
+  {
+    name: "brodarte",
+    roles: "Developer",
+    action: <Icon icon="edit" onClick="interactive" />,
+  },
+  {
+    name: "egallagher",
+    roles: "Marketing",
+    action: <Icon icon="edit" onClick="interactive" />,
+  },
+  {
+    name: "esugimoto",
+    roles: null,
+    action: <Icon icon="edit" onClick="interactive" />,
+  },
+  {
+    name: "mwalker",
+    roles: "Admin",
+    action: <Icon icon="edit" onClick="interactive" />,
+  },
   {
     name: "pnguyen",
     roles: ["Developer", "Acquisitions"],

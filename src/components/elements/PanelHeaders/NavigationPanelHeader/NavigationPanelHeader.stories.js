@@ -1,3 +1,7 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable react/forbid-prop-types */
+/* eslint-disable no-unused-vars */
+/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { storiesOf } from "@storybook/react";
@@ -17,5 +21,11 @@ storiesOf("Elements|Panel Headers/", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
   .add("Navigation", () => {
-    return <NavigationPanelHeader title="Main Header" menuData={data} onClick={() => {}} />;
+    return (
+      <NavigationPanelHeader
+        title="Main Header"
+        menuData={data}
+        onClick={() => {}}
+      />
+    );
   });

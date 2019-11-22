@@ -1,11 +1,18 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { Padding, IconGrid } from "helpers/Display";
 import Grid from "layout/Grid";
 import Title, { SubTitle } from "base/Typography";
 import { CardList } from "layout/Card";
-import { iconsApp, iconsBrand, iconsNavigation } from "atoms/Icon/libraryIcon.data";
+import {
+  iconsApp,
+  iconsBrand,
+  iconsNavigation,
+} from "atoms/Icon/libraryIcon.data";
 
 /** TODO: Break 'App' icon set into subcategories */
 storiesOf("Application|Libraries/Icon Library", module)

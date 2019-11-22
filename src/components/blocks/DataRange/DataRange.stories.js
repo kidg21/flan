@@ -1,4 +1,7 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
@@ -65,9 +68,17 @@ storiesOf("Blocks|Data Range", module)
       <DataRange
         label={text("label", "Data Label", "Data Range")}
         labelMin={text("min label", "Min", "Data Range")}
-        optionsMin={object("options (min)", [{ value: "0", label: "0" }], "Data Range")}
+        optionsMin={object(
+          "options (min)",
+          [{ value: "0", label: "0" }],
+          "Data Range",
+        )}
         labelMax={text("max label", "Max", "Data Range")}
-        optionsMax={object("options (max)", [{ value: "0", label: "0" }], "Data Range")}
+        optionsMax={object(
+          "options (max)",
+          [{ value: "0", label: "0" }],
+          "Data Range",
+        )}
         isRequired={boolean("required", false, "Data Range")}
         helpText={text("help text", "Help text goes here...", "Data Range")}
         error={

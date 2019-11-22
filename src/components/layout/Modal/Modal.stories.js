@@ -1,10 +1,15 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable react/forbid-prop-types */
+/* eslint-disable no-unused-vars */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import {
   withKnobs,
   text,
-  optionsKnob as options,
+  optionsKnob as options
 } from "@storybook/addon-knobs";
 import Button from "atoms/Button";
 import Panel, { PanelSection } from "layout/Panel";
@@ -16,11 +21,11 @@ import ModalNotes from "./Modal.md";
 storiesOf("Layout|Modal", module)
   .addParameters({
     info: {
-      text: "Modal info goes here...",
+      text: "Modal info goes here..."
     },
     notes: {
-      markdown: ModalNotes,
-    },
+      markdown: ModalNotes
+    }
   })
   .add(
     "Documentation",
@@ -35,10 +40,7 @@ storiesOf("Layout|Modal", module)
         };
         return (
           <>
-            <Modal
-              onClose={handleClose}
-              visible={visible}
-            >
+            <Modal onClose={handleClose} visible={visible}>
               <Banner
                 title="This is a Standard notification telling you stuff."
                 onClose={handleClose}
@@ -52,7 +54,7 @@ storiesOf("Layout|Modal", module)
           </>
         );
       });
-    }),
+    })
   );
 
 storiesOf("Layout|Modal", module)
@@ -75,29 +77,29 @@ storiesOf("Layout|Modal", module)
               {
                 default: "default",
                 text: "text",
-                image: "image",
+                image: "image"
               },
               "default",
               { display: "select" },
-              "Modal",
+              "Modal"
             )}
             text={text(
               "Text",
               "This is a very special message just for you...",
-              "Modal",
+              "Modal"
             )}
             image={text("Image URL", ModernExterior1, "Modal")}
             align={options(
               "Alignment",
               {
                 "default by type": "default",
-                "top": "top",
-                "center": "center",
-                "bottom": "bottom",
+                top: "top",
+                center: "center",
+                bottom: "bottom"
               },
               "default",
               { display: "radio" },
-              "Modal",
+              "Modal"
             )}
             onClose={handleClose}
             visible={visible}
@@ -106,7 +108,7 @@ storiesOf("Layout|Modal", module)
               title={text(
                 "Status Message",
                 "This is a Standard notification telling you stuff.",
-                "Modal",
+                "Modal"
               )}
               onClose={handleClose}
             />
@@ -137,10 +139,7 @@ storiesOf("Layout|Modal", module)
       const buttonStyle = { margin: "10vh 30vw" };
       return (
         <>
-          <Modal
-            onClose={handleClose}
-            visible={visible}
-          >
+          <Modal onClose={handleClose} visible={visible}>
             <Banner
               title="This is a Standard notification telling you stuff."
               onClose={handleClose}

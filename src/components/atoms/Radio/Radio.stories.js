@@ -1,10 +1,17 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
-import { withKnobs, text, boolean, optionsKnob as options } from "@storybook/addon-knobs";
+import {
+  withKnobs,
+  text,
+  boolean,
+  optionsKnob as options,
+} from "@storybook/addon-knobs";
 import Form, { Section } from "layout/Form";
 import Radio, { RadioGroup } from "atoms/Radio";
 import RadioNotes from "./Radio.md";
@@ -49,7 +56,8 @@ const longLabels = [
     id: "radio_long2",
     name: "radio-group",
     value: "6",
-    label: "Enough with these long labels already...put it on your blog, Shakespeare.",
+    label:
+      "Enough with these long labels already...put it on your blog, Shakespeare.",
   },
 ];
 
@@ -99,16 +107,32 @@ storiesOf("Atoms|Radio", module)
     return (
       <RadioGroup>
         <Radio id="default" value="default" label="Default" name="states" />
-        <Radio id="selected" value="selected" label="Selected" name="states" checked />
-        <Radio id="error" value="error" label="Error" name="states" error />
-        <Radio id="disabled" value="disabled" label="Disabled" name="states" disabled />
+        <Radio
+          id="selected"
+          value="selected"
+          label="Selected"
+          name="states"
+          checked
+        />
+        <Radio
+          id="disabled"
+          value="disabled"
+          label="Disabled"
+          name="states"
+          disabled
+        />
       </RadioGroup>
     );
   })
   .add("Radio (alignment)", () => {
     return (
       <RadioGroup>
-        <Radio id="standard" value="standard" label="Standard" name="alignment" />
+        <Radio
+          id="standard"
+          value="standard"
+          label="Standard"
+          name="alignment"
+        />
         <Radio
           id="align-right"
           value="align-right"
@@ -172,7 +196,11 @@ storiesOf("Blocks|Radio Group", module)
             )}
             isRequired={boolean("required", false, "Radio Group")}
             label={text("Input Label", "Input Label", "Radio Group")}
-            helpText={text("Help Text", "Have you been helped yet?", "Radio Group")}
+            helpText={text(
+              "Help Text",
+              "Have you been helped yet?",
+              "Radio Group",
+            )}
             align={options(
               "box align",
               {
