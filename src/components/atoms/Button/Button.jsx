@@ -92,6 +92,26 @@ const ButtonIcon = styled(Icon)`
   margin: 0.25em 0;
 `;
 
+/**
+ * ( This documentaion is written using 'JSdoc'. This method allows us to use comments written in the Component file. )
+ *
+ * Usage
+ *
+ * Buttons communicate actions that users can take. They are typically placed throughout your UI, in places like:
+ *
+- Dialogs
+- Modal windows
+- Forms
+- Cards
+- Toolbars
+  *
+  * Principles
+  *
+- Identifiable: Buttons should indicate that they can trigger an action.
+- Findable: Buttons should be easy to find among other elements, including other buttons.
+- Clear: A button’s action and state should be clear.
+* */
+
 function Button({
   className,
   color,

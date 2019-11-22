@@ -33,7 +33,7 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: inherit;
     }
     body {
-        position: fixed;
+        /* position: fixed; */
         width: 100%;
         height: 100%;
         font-family: ${fonts.body}; /* Muli */

@@ -17,7 +17,6 @@ import {
 import Button from "atoms/Button";
 import ButtonNotes from "./Button.md";
 
-// Button
 storiesOf("Atoms|Button", module)
   .addParameters({
     info: {
