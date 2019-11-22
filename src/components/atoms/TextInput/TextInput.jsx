@@ -111,8 +111,8 @@ function TextInput({
     as = "textarea";
     inputResize = "vertical";
   } else if (type === "search") {
-    inputBorderColor = "primaryLight";
-    inputBorderColorHover = "primary";
+    // inputBorderColor = "primaryLight";
+    // inputBorderColorHover = "primary";
   }
   // construct datalist element for autocompletes if appropriate props passed in
   // the autocompleteListId is used to ensure each textinput only draws from its own datalist element
@@ -142,7 +142,6 @@ function TextInput({
   if (error && !disabled) {
     inputBorderColor = "alertBright";
     inputBorderColorHover = "alertLight";
-    inputFillColor = "alertTint";
     inputSelectColor = "alertBright";
     inputTextColor = "alert";
     placeholderColor = "primary";

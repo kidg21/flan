@@ -1,4 +1,12 @@
-import React, { useContext } from "react";
+/* eslint-disable linebreak-style */
+/* eslint-disable react/default-props-match-prop-types */
+/* eslint-disable radix */
+/* eslint-disable react/require-default-props */
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
@@ -6,10 +14,10 @@ import Title, { SubTitle, Description } from "base/Typography";
 import Grid from "layout/Grid";
 
 const FormWrapper = styled.form`
-  color: ${props => {
+  color: ${(props) => {
     return props.theme.text.primary;
   }};
-  background-color: ${props => {
+  background-color: ${(props) => {
     return props.theme.background.default;
   }};
   height: 100%;
@@ -40,22 +48,22 @@ function Section({ children, title }) {
 }
 Section.propTypes = {
   children: PropTypes.node,
-  title: PropTypes.string
+  title: PropTypes.string,
 };
 Section.defaultProps = {
   children: null,
-  title: null
+  title: null,
 };
 
 const FormInputs = styled(Grid)`
-  grid-template-columns: ${props => {
+  grid-template-columns: ${(props) => {
     return props.setColumns || "repeat(1, minmax(0, 1fr))";
   }};
   /* Prototype Content - displays when a Form is empty */
   &:empty {
     &:before {
       ${PlaceholderText}
-      content: "{ Form } \00000A 'Displays a grid of user inputs in responsive columns'";
+      content: "{ Form }";
     }
   }
 `;
@@ -68,7 +76,7 @@ function Form({
   method,
   novalidate,
   subtitle,
-  title
+  title,
 }) {
   // 1-3 colums with custom override
   let setColumns;
@@ -101,7 +109,7 @@ Form.propTypes = {
   method: PropTypes.string,
   novalidate: PropTypes.bool,
   subtitle: PropTypes.string,
-  title: PropTypes.string
+  title: PropTypes.string,
 };
 Form.defaultProps = {
   action: null,
@@ -111,7 +119,7 @@ Form.defaultProps = {
   method: null,
   novalidate: false,
   subtitle: null,
-  title: null
+  title: null,
 };
 
 export { Form as default, Section };

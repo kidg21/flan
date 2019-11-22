@@ -59,7 +59,7 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
     background-color: ${(props) => {
     return (
       props.theme.palette[props.fillColorChecked] ||
-      props.theme.palette.secondaryLight
+      props.theme.palette.secondary
     );
   }};
     border-color: ${(props) => {

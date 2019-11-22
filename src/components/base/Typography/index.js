@@ -1,3 +1,7 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+
 export {
   default,
   Headline,
@@ -6,5 +10,5 @@ export {
   Link,
   Body,
   Number,
-  Code
+  Code,
 } from "./Typography.jsx";

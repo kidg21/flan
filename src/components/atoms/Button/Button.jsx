@@ -199,7 +199,7 @@ function Button({
       type={type}
     >
       {icon ? <ButtonIcon icon={icon} size="lg" /> : null}
-      {label ? <Label weight="semibold" text={label} /> : null}
+      {label ? <Label letterSpacing="0.075em" weight="semibold" text={label} /> : null}
     </StyledButton>
   );
 }

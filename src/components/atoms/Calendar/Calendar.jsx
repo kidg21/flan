@@ -12,7 +12,7 @@ import TextInput from "atoms/TextInput";
 
 const CalendarContainer = styled(Grid)`
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || "";
+    return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
 `;
 
@@ -90,10 +90,10 @@ function Calendar({
       inputTextColor={inputTextColor}
       isRequired={isRequired}
     >
-      {label ? <Label isRequired={isRequired} text={label} /> : null}
+      {label ? <Label size="sm" weight="bold" isRequired={isRequired} text={label} /> : null}
       {inputContainer}
-      {helpText ? <Label text={helpText} /> : null}
-      {error && !isDisabled ? <Label text={error} /> : null}
+      {helpText ? <Label size="sm" text={helpText} /> : null}
+      {error && !isDisabled ? <Label size="sm" text={error} /> : null}
     </CalendarContainer>
   );
 }

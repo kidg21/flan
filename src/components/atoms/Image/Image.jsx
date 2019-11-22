@@ -13,7 +13,7 @@ const ImageWrapper = styled.img`
   }};
   height: auto;
   border-radius: ${(props) => {
-    return props.circle ? "100%" : "5px";
+    return props.circle ? "100%" : "";
   }};
   box-shadow: ${(props) => {
     return props.border ? `0 0 0 2px ${props.theme.border}` : "";

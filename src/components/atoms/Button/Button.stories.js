@@ -96,12 +96,12 @@ storiesOf("Atoms|Button", module)
         <Button label="Standard Secondary" color="secondary" />
         <Button label="Solid Secondary" type="solid" color="secondary" />
         <Button label="Solid Info Button" type="solid" />
-        <Button icon="filter" label="Fitlers" color="primary" />
+        {/* <Button icon="filter" label="Fitlers" color="primary" /> */}
 
         {/* <Button label="Small Button" size="small" />
         <Button label="Large Button" size="large" /> */}
         <Button label="Disabled Button" disabled />
-        <Button label="Icon Button" icon="user" type="solid" />
+        {/* <Button label="Icon Button" icon="user" type="solid" /> */}
       </Grid>
     );
   });

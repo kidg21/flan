@@ -1,5 +1,5 @@
-/* eslint-disable no-console */
 /* eslint-disable linebreak-style */
+/* eslint-disable no-console */
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
@@ -130,7 +130,7 @@ const nestedData = [
         onClickLink: () => {
           console.log("clicked b.1");
         },
-        name: "FFilter 1.0",
+        name: "Filter 1.0",
       },
     ],
   },

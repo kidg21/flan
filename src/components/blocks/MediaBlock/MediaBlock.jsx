@@ -12,7 +12,7 @@ const Block = styled.div`
     return props.gridColumns || "1fr 4fr";
   }};
   padding: ${(props) => {
-    return props.blockPadding || "0.5rem 1rem 1rem 0.5rem";
+    return props.blockPadding || "";
   }};
   grid-template-areas: ${(props) => {
     return props.gridTemplate || "'content body' '. body'";
@@ -47,11 +47,9 @@ const Body = styled.section`
     return props.padding || "0 0 0 1rem";
   }};
   overflow: hidden;
-  > * {
     display: ${(props) => {
     return props.displayInline ? "none" : "";
   }};
-    &:first-child {
       width: inherit;
       display: ${(props) => {
     return props.displayInline ? "block" : "";
@@ -68,11 +66,9 @@ const Body = styled.section`
       margin-bottom: ${(props) => {
     return props.displayInline ? "0" : "";
   }};
-    }
     &:only-child {
       margin-bottom: 0;
     }
-  }
   ${Block} {
     padding: 1rem 0 0;
   }
@@ -101,11 +97,9 @@ function MediaBlock({
     case "vertical":
       gridColumns = "1fr";
       if (reverse) {
-        blockPadding = "0.75rem 0.5rem 0.5rem 0.5rem";
         gridTemplate = " 'body body' 'content content'";
         padding = "0 0.25rem 1rem";
       } else {
-        blockPadding = "0.5rem 0.5rem 1rem 0.5rem";
         gridTemplate = "'content content' 'body body'";
         padding = "1rem 0.25rem 0";
       }
@@ -116,19 +110,16 @@ function MediaBlock({
         displayInline = true;
         gridColumns = "1fr 3rem";
         gridTemplate = "'body content'";
-        blockPadding = "1px 1px 1px 1rem";
         padding = "0 1rem 0 0";
       } else {
         displayInline = true;
         gridColumns = "3rem 1fr";
         gridTemplate = "'content body'";
-        blockPadding = "1px 0 1px 1px";
         padding = "0 1rem";
       }
       break;
     default:
       if (reverse) {
-        blockPadding = "0.5rem 0.5rem 1rem 1rem";
         gridTemplate = "'body content' 'body .'";
         gridColumns = "4fr 1fr";
         padding = "0 1rem 0 0";

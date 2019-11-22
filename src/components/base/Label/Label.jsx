@@ -49,10 +49,9 @@ const StyledLabel = styled.label`
 `;
 
 function Label({
-  text, children, size, weight, isRequired, textTransform,
+  text, children, size, weight, letterSpacing, isRequired, textTransform,
 }) {
   let fontSize;
-  let letterSpacing;
   let fontWeight;
   switch (size && size.toLowerCase()) {
     case "sm":
@@ -102,6 +101,7 @@ Label.propTypes = {
   children: PropTypes.node,
   size: PropTypes.string,
   weight: PropTypes.string,
+  letterSpacing: PropTypes.string,
   textTransform: PropTypes.string,
   isRequired: PropTypes.string,
 };
@@ -109,6 +109,7 @@ Label.defaultProps = {
   text: null,
   children: null,
   size: null,
+  letterSpacing: null,
   weight: null,
   textTransform: null,
   isRequired: null,

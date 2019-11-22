@@ -38,16 +38,13 @@ export { default as Bar } from "./blocks/Bar";
 export { default as List, ListItem } from "./blocks/List";
 export { default as IconBlock } from "./blocks/IconBlock";
 export { default as InputBlock } from "./blocks/InputBlock";
-export { default as MapLegend } from "./blocks/MapLegend";
 export { default as MediaBlock } from "./blocks/MediaBlock";
 export { default as Menu } from "./blocks/Menu";
 export { default as RangeSlider } from "./blocks/RangeSlider";
-export { default as Search } from "./blocks/Search";
 export { DataTable as Table } from "./blocks/Table";
 export { default as Tabs, Tab } from "./blocks/Tabs";
 
 // Publicly exported files from 'elements'
-export { default as CardAccordion } from "./elements/CardAccordion";
 export { default as InformationCardBar } from "./elements/CardBars/InformationCardBar";
 export { default as LayerCardBar } from "./elements/CardBars/LayerCardBar";
 export { default as NavigationCardBar } from "./elements/CardBars/NavigationCardBar";
@@ -55,7 +52,6 @@ export { default as MainPanelHeader } from "./elements/PanelHeaders/MainPanelHea
 export { default as PropertyPanelHeader } from "./elements/PanelHeaders/PropertyPanelHeader";
 export { default as NavigationPanelHeader } from "./elements/PanelHeaders/NavigationPanelHeader";
 export { default as Notification } from "./elements/Notification";
-export { default as MapSearch } from "./elements/MapSearch";
 export { default as PropertyListCard } from "./elements/ListCards/PropertyListCard";
 export { UserRoles, RolePermissions } from "./elements/UserRoles";
 export {

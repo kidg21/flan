@@ -114,7 +114,6 @@ storiesOf("Atoms|Radio", module)
           name="states"
           checked
         />
-        <Radio id="error" value="error" label="Error" name="states" error />
         <Radio
           id="disabled"
           value="disabled"

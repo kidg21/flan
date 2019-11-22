@@ -1,3 +1,6 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
@@ -13,7 +16,7 @@ function DialogBox({
   message,
   children,
   buttonColor,
-  buttons
+  buttons,
 }) {
   let buttonElements = null;
   if (buttons) {
@@ -73,21 +76,25 @@ const buttonType = PropTypes.shape({
   type: PropTypes.string,
   color: PropTypes.string,
   disabled: PropTypes.bool,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
 });
 
 const dialogProps = {
   id: PropTypes.string,
   title: PropTypes.node,
   message: PropTypes.node,
-  buttonColor: PropTypes.string
+  buttonColor: PropTypes.string,
 };
 
 DialogBox.propTypes = {
   ...dialogProps,
+  id: PropTypes.string,
   header: PropTypes.node,
   children: PropTypes.node,
-  buttons: PropTypes.arrayOf(buttonType)
+  title: PropTypes.node,
+  message: PropTypes.node,
+  buttonColor: PropTypes.string,
+  buttons: PropTypes.arrayOf(buttonType),
 };
 
 DialogBox.defaultProps = {
@@ -97,15 +104,17 @@ DialogBox.defaultProps = {
   title: null,
   message: null,
   buttonColor: null,
-  buttons: null
+  buttons: null,
 };
 
-function Prompt({ accept, cancel, buttons, children, ...props }) {
+function Prompt({
+  accept, cancel, buttons, children, ...props
+}) {
   const promptButtons = cancel ? [accept, cancel] : accept;
   return (
-    <DialogueBox buttons={promptButtons} {...props}>
+    <DialogBox buttons={promptButtons} {...props}>
       {children}
-    </DialogueBox>
+    </DialogBox>
   );
 }
 
@@ -113,19 +122,21 @@ Prompt.propTypes = {
   ...dialogProps,
   accept: buttonType,
   cancel: buttonType,
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 Prompt.defaultProps = {
   children: null,
   accept: { label: "OK" },
-  cancel: null
+  cancel: null,
 };
 
-function Confirm({ id, title, message, buttonColor, accept, cancel }) {
+function Confirm({
+  id, title, message, buttonColor, accept, cancel,
+}) {
   const buttons = cancel ? [accept, cancel] : accept;
   return (
-    <DialogueBox
+    <DialogBox
       id={id}
       title={title}
       message={message}
@@ -138,17 +149,19 @@ function Confirm({ id, title, message, buttonColor, accept, cancel }) {
 Confirm.propTypes = {
   ...dialogProps,
   accept: buttonType,
-  cancel: buttonType
+  cancel: buttonType,
 };
 
 Confirm.defaultProps = {
   accept: { label: "OK" },
-  cancel: { label: "Cancel" }
+  cancel: { label: "Cancel" },
 };
 
-function Alert({ id, title, message, buttonColor, accept }) {
+function Alert({
+  id, title, message, buttonColor, accept,
+}) {
   return (
-    <DialogueBox
+    <DialogBox
       id={id}
       title={title}
       message={message}
@@ -160,11 +173,11 @@ function Alert({ id, title, message, buttonColor, accept }) {
 
 Alert.propTypes = {
   ...dialogProps,
-  accept: buttonType
+  accept: buttonType,
 };
 
 Alert.defaultProps = {
-  accept: { label: "OK", color: "alert" }
+  accept: { label: "OK", color: "alert" },
 };
 
 export { DialogBox as default, Alert, Confirm, Prompt };

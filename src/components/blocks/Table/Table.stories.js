@@ -1,6 +1,6 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable no-alert */
 /* eslint-disable security/detect-object-injection */
-/* eslint-disable linebreak-style */
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
@@ -9,7 +9,6 @@ import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
 import Icon from "atoms/Icon";
-import Card from "layout/Card";
 import DataTable from "./DataTable";
 
 // Only columns specified here will be displayed
@@ -396,24 +395,18 @@ storiesOf("Blocks|Table", module)
         setHighlightCell({ rowIndex });
       };
 
-      return React.createElement(
-        Card,
-        null,
-        React.createElement(
-          DataTable,
-          {
-            headers: headers,
-            rows: data,
-            listId: "foo",
-            onCellClick: onCellClick,
-            onHeaderClick: onHeaderClick,
-            onCellMouseOver: onCellMouseOver,
-            highlightedCell: highlightedCell,
-            selectedCell: selectedCell,
-            columnWidth: 120,
-          },
-          null,
-        ),
+      return (
+        <DataTable
+          headers={headers}
+          rows={data}
+          listId="foo"
+          onCellClick={onCellClick}
+          onHeaderClick={onHeaderClick}
+          onCellMouseOver={onCellMouseOver}
+          highlightedCell={highlightedCell}
+          selectedCell={selectedCell}
+          columnWidth={120}
+        />
       );
     });
   });

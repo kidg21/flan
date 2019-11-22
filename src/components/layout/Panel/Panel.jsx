@@ -1,4 +1,8 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable react/forbid-prop-types */
+/* eslint-disable no-unused-vars */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
 import styled from "styled-components";
 import { shadows } from "Variables";
 import { PlaceholderText } from "helpers/Placeholders.jsx";

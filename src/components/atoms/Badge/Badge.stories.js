@@ -60,20 +60,6 @@ storiesOf("Atoms|Badge", module)
               "Badge",
             )}
             label={text("label", "Label", "Badge")}
-            icon={options(
-              "icon (no label)",
-              {
-                "no icon": null,
-                "user": "user",
-                "check": "check",
-                "alert": "alert",
-                "mail": "mail_solid",
-                "call": "call",
-              },
-              null,
-              { display: "select" },
-              "Badge",
-            )}
             position={options(
               "align",
               {
@@ -129,24 +115,6 @@ storiesOf("Atoms|Badge", module)
           <Badge label="9999+" />
           <Title text="Max 10k" />
         </Card>
-
-        <Card>
-          <Badge icon="user" type="info" />
-          <Title text="Icon" />
-        </Card>
-        <Card>
-          <Badge icon="check" type="success" />
-          <Title text="Icon" />
-        </Card>
-        <Card>
-          <Badge icon="alert" type="warning" />
-          <Title text="Icon" />
-        </Card>
-        <Card>
-          <Badge icon="mail_solid" type="alert" />
-          <Title text="Icon" />
-        </Card>
-
         <Card>
           <Badge label="Info" type="info" />
           <Title text="Info" />
