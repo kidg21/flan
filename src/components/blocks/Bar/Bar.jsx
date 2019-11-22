@@ -56,7 +56,7 @@ const BarLayout = styled.div`
     return props.justifyContent || "space-between";
   }};
   padding: ${(props) => {
-    return props.barPadding || "";
+    return props.barPadding || "0.5em 1em";
   }};
   ${Slot} {
     &:only-child {
