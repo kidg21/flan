@@ -14,11 +14,11 @@ import RangeSliderNotes from "./RangeSlider.md";
 storiesOf("Blocks|Range Slider", module)
   .addParameters({
     info: {
-      text: "Range Slider info goes here...",
+      text: "Range Slider info goes here..."
     },
     notes: {
-      markdown: RangeSliderNotes,
-    },
+      markdown: RangeSliderNotes
+    }
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
@@ -33,7 +33,7 @@ storiesOf("Blocks|Range Slider", module)
           helpText="Hang in there, buddy, I'm here to help!"
         />
       );
-    }),
+    })
   )
   .add("Knobs", () => {
     return (
@@ -69,15 +69,6 @@ storiesOf("Blocks|Range Slider", module)
             minLabel="Min Label"
             maxLabel="Max Label"
             helpText="Hang in there, buddy, I'm here to help!"
-          />
-        </Section>
-        <Section title="Error">
-          <RangeSlider
-            label="Range Slider Label"
-            minLabel="Min Label"
-            maxLabel="Max Label"
-            helpText="Hang in there, buddy, I'm here to help!"
-            error="Out of range!"
           />
         </Section>
         <Section title="Disabled">

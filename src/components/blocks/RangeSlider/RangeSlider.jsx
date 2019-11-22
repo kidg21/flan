@@ -14,7 +14,7 @@ import Slider from "atoms/Slider";
 
 const RangeContainer = styled(Grid)`
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || "";
+    return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
   &:last-child {
     margin-bottom: 1rem;
