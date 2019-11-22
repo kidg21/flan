@@ -11,6 +11,7 @@ import { Skeleton } from "helpers";
 
 const StyledLabel = styled.label`
   color: inherit;
+  
   width: max-content;
   user-select: none;
   font-size: ${(props) => {

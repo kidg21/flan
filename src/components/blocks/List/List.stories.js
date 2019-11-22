@@ -8,7 +8,6 @@ import { withInfo } from "@storybook/addon-info";
 import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
 import { Padding } from "helpers/Display";
 import Card from "layout/Card";
-import Title, { Description } from "base/Typography";
 import Command from "atoms/Command";
 import SelectMenu from "atoms/SelectMenu";
 import Checkbox from "atoms/Checkbox";
