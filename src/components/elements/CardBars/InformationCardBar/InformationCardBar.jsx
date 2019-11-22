@@ -6,7 +6,6 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import Bar from "blocks/Bar";
-import { Piece } from "layout/Card";
 import Title from "base/Typography";
 
 const Arrow = styled(Icon)`
@@ -32,7 +31,7 @@ function InformationCardBar({
   }
 
   return (
-    <Piece id={id}>
+    <React.Fragment id={id}>
       <Bar
         padding="2x"
         contentAlign="center"
@@ -41,7 +40,7 @@ function InformationCardBar({
         right={<Arrow icon="up" toggleOn={expanded} />}
       />
       {expanded ? children : null}
-    </Piece>
+    </React.Fragment>
   );
 }
 InformationCardBar.propTypes = {

@@ -1,10 +1,8 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/forbid-prop-types */
-/* eslint-disable no-unused-vars */
 /* eslint-disable import/extensions */
+/* eslint-disable react/forbid-prop-types */
 /* eslint-disable react/jsx-filename-extension */
 import styled from "styled-components";
-import { shadows } from "Variables";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 
 const Panel = styled.div`
@@ -13,6 +11,9 @@ const Panel = styled.div`
     return props.theme.background.default;
   }};
   display: flex;
+  border: 1px solid ${(props) => {
+    return props.theme.palette.grey6;
+  }};;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;

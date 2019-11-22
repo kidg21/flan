@@ -7,7 +7,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import Bar from "blocks/Bar";
-import { Piece } from "layout/Card";
 import Title from "base/Typography";
 import Menu from "blocks/Menu";
 
@@ -15,7 +14,7 @@ function NavigationPanelHeader({
   id, title, onClick, menuData,
 }) {
   return (
-    <Piece id={id}>
+    <React.Fragment id={id}>
       <Bar
         contentAlign="center"
         padding="3x"
@@ -23,7 +22,7 @@ function NavigationPanelHeader({
         center={<Title text={title} size="large" />}
         right={<Menu data={menuData} position="bottomLeft" type="edit" />}
       />
-    </Piece>
+    </React.Fragment>
   );
 }
 

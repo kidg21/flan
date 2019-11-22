@@ -8,7 +8,7 @@ export {
   SubTitle,
   Description,
   Link,
-  Number,
+  Number
 } from "./base/Typography";
 export { default as Label } from "./base/Label";
 export { default as GlobalStyles } from "./base/GlobalStyles/GlobalStyles.jsx";
@@ -58,7 +58,7 @@ export {
   default as Dialog,
   Alert,
   Confirm,
-  Prompt,
+  Prompt
 } from "./elements/DialogBox";
 
 // Publicly exported files from 'layout'
@@ -76,5 +76,5 @@ export {
   shadows,
   screen,
   DMPTheme,
-  darkTheme,
+  darkTheme
 } from "./base/Variables/Variables.jsx";

@@ -33,7 +33,7 @@ const selectStyles = {
     } else if (isFocused) {
       borderColor = `${colors.success}!important`;
     } else {
-      borderColor = colors.grey40;
+      borderColor = colors.grey2;
     }
     return {
       ...styles,
@@ -309,12 +309,12 @@ SelectMenu.propTypes = {
   name: PropTypes.string,
   placeholder: PropTypes.string,
   options: PropTypes.arrayOf(PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.shape({
-        label: PropTypes.string,
-        value: PropTypes.any,
-      }),
-    ]),).isRequired,
+    PropTypes.string,
+    PropTypes.shape({
+      label: PropTypes.string,
+      value: PropTypes.any,
+    }),
+  ])).isRequired,
   selectOptions: PropTypes.any,
   label: PropTypes.string,
   isRequired: PropTypes.bool,

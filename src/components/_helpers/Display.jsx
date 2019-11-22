@@ -1,7 +1,7 @@
 import React from "react";
 import Title, { Description } from "base/Typography";
 import Bar from "blocks/Bar";
-import { Piece } from "layout/Card";
+import Card from "layout/Card";
 import Grid from "layout/Grid";
 import Icon from "atoms/Icon";
 import Command from "atoms/Command";
@@ -23,12 +23,12 @@ const Padding = storyFn => <div style={padding}>{storyFn()}</div>;
 
 function IconGrid({ data }) {
   return data.map(item => (
-    <Piece
+    <Card
       key={item.icon}
       id={item.icon}
       hover={true}
-      // TODO: Add background props to Card
-      // type={item.background}
+    // TODO: Add background props to Card
+    // type={item.background}
     >
       <Bar
         contentAlign="center"
@@ -51,7 +51,7 @@ function IconGrid({ data }) {
         }
         centerAlign="left"
       />
-    </Piece>
+    </Card>
   ));
 }
 

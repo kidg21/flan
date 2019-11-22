@@ -8,7 +8,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import IconBlock from "blocks/IconBlock";
 import Bar from "blocks/Bar";
-import { Piece } from "layout/Card";
 import Title from "base/Typography";
 
 import Switch from "atoms/Switch";
@@ -27,7 +26,7 @@ function LayerCardBar({
   id, title, icons, onChange, disabled,
 }) {
   return (
-    <Piece id={id} disabled={disabled}>
+    <React.Fragment id={id} disabled={disabled}>
       {disabled ? (
         <Bar
           padding="2x"
@@ -51,7 +50,7 @@ function LayerCardBar({
             rightWidth="9em"
           />
         )}
-    </Piece>
+    </React.Fragment>
   );
 }
 LayerCardBar.propTypes = {

@@ -2,22 +2,12 @@
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
-import styled from "styled-components";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import Bar from "blocks/Bar";
-import { Piece } from "layout/Card";
 import Title from "base/Typography";
-
-
 import Switch from "atoms/Switch";
 
-const Line = styled.div`
-  display: flex;
-  border-bottom: 1px solid ${(props) => {
-    return props.theme.palette.grey6;
-  }};
-`;
 
 function NavigationCardBar({
   id,
@@ -65,7 +55,7 @@ function NavigationCardBar({
     leftComponent = <Title text={title} count={number} weight="normal" />;
   }
   return (
-    <Piece disabled={state.disabled}>
+    <React.Fragment disabled={state.disabled}>
       <Bar
         id={id}
         disabled={state.disabled}
@@ -75,8 +65,7 @@ function NavigationCardBar({
         contentAlign="center"
         onClick={state.disabled ? null : onClick}
       />
-      <Line />
-    </Piece>
+    </React.Fragment>
   );
 }
 

@@ -10,7 +10,7 @@ import PropertyPanelHeader from "elements/PanelHeaders/PropertyPanelHeader";
 import Table from "blocks/Table";
 import Title from "base/Typography";
 import PropTypes from "prop-types";
-import Card, { Piece } from "layout/Card";
+import Card from "layout/Card";
 import Command from "atoms/Command";
 import Bar from "blocks/Bar";
 import styled from "styled-components";
@@ -36,18 +36,16 @@ function PropertyListCard({
     <Card id={id}>
       <PropertyPanelHeader title={address} APN={APN} onClick={onClick} />
       <Bar left={<Command icon="plus" label="Add To List" />} />
-      <Piece>
-        <Wrapper>
-          <Title text="Lot" size="normal" />
-          <Table data={lotData} />
-          <Space />
-          <Title text="Building" size="normal" />
-          <Table data={buildingData} />
-          <Space />
-          <Title text="Owner" size="normal" />
-          <Table data={ownerData} />
-        </Wrapper>
-      </Piece>
+      <Wrapper>
+        <Title text="Lot" size="normal" />
+        <Table data={lotData} />
+        <Space />
+        <Title text="Building" size="normal" />
+        <Table data={buildingData} />
+        <Space />
+        <Title text="Owner" size="normal" />
+        <Table data={ownerData} />
+      </Wrapper>
     </Card>
   );
 }

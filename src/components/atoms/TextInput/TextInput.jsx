@@ -53,7 +53,7 @@ const Input = styled.input`
     border-color: ${(props) => {
     return (
       props.theme.palette[props.inputBorderColorHover] ||
-      props.theme.palette.grey3
+      props.theme.palette.grey2
     );
   }};
     }
