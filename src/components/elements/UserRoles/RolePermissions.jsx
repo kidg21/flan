@@ -1,10 +1,17 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable react/prop-types */
+/* eslint-disable react/no-unused-prop-types */
+/* eslint-disable react/forbid-prop-types */
+/* eslint-disable no-unused-vars */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
 import Bar from "blocks/Bar";
 import Container from "atoms/Container";
 import Panel, { PanelSection } from "layout/Panel";
-import Search from "blocks/Search";
+import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";
 import InformationCardBar from "elements/CardBars/InformationCardBar";
 import Button from "atoms/Button";
@@ -193,7 +200,7 @@ const RolePermissions = React.forwardRef(({
       </PanelSection>
       <PanelSection body style={panelStyle}>
         <Bar
-          left={<Search placeholder="Search for a Role" onChange={onSearch} inputStyle={{ boxSizing: "border-box " }} />}
+          left={<TextInput type="search" placeholder="Search for a Role" onChange={onSearch} inputStyle={{ boxSizing: "border-box " }} />}
           right={right}
         />
         <Container height={listHeight} ref={ref} >

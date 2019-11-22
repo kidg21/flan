@@ -1,4 +1,8 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable react/require-default-props */
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
+/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { storiesOf } from "@storybook/react";
@@ -36,7 +40,8 @@ const longBoxes = [
   },
   {
     id: "box_long2",
-    label: "Enough with these long labels already...put it on your blog, Shakespeare.",
+    label:
+      "Enough with these long labels already...put it on your blog, Shakespeare.",
   },
 ];
 const shortRadios = [
@@ -78,7 +83,8 @@ const longRadios = [
     id: "radio_long2",
     name: "radio-group",
     value: "6",
-    label: "Enough with these long labels already...put it on your blog, Shakespeare.",
+    label:
+      "Enough with these long labels already...put it on your blog, Shakespeare.",
   },
 ];
 const options = [

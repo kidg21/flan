@@ -1,15 +1,13 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable no-unused-vars */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
 import React, { Fragment, useState } from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import {
   withKnobs,
   text,
-  boolean,
-  radios,
-  select,
-  number,
-  button,
-  files,
   optionsKnob as options,
 } from "@storybook/addon-knobs";
 import Button from "atoms/Button";
@@ -29,11 +27,12 @@ storiesOf("Elements|Notification", module)
   })
   .add(
     "Documentation",
-    withInfo()(() =>
-      React.createElement(() => {
+    withInfo()(() => {
+      return React.createElement(() => {
         const [visible, setVisible] = useState(false);
         const [transition, setTransition] = useState(true);
-        const handleOpen = event => {
+        // eslint-disable-next-line no-unused-vars
+        const handleOpen = (event) => {
           setVisible(true);
           setTransition(true);
           setTimeout(() => {
@@ -43,7 +42,7 @@ storiesOf("Elements|Notification", module)
             }, 500);
           }, 3000);
         };
-        const handleClose = event => {
+        const handleClose = (event) => {
           setTransition(false);
           setTimeout(() => {
             setVisible(false);
@@ -58,7 +57,10 @@ storiesOf("Elements|Notification", module)
               scale={transition}
               position={transition}
             >
-              <Banner title="This is a Standard notification." onClose={handleClose} />
+              <Banner
+                title="This is a Standard notification."
+                onClose={handleClose}
+              />
             </Notification>
             <Button
               label="Show Notification"
@@ -67,17 +69,17 @@ storiesOf("Elements|Notification", module)
             />
           </Fragment>
         );
-      }),
-    ),
+      });
+    }),
   );
 
 storiesOf("Elements|Notification", module)
   .addDecorator(withKnobs)
-  .add("Knobs", () =>
-    React.createElement(() => {
+  .add("Knobs", () => {
+    return React.createElement(() => {
       const [visible, setVisible] = useState(false);
       const [transition, setTransition] = useState(true);
-      const handleOpen = event => {
+      const handleOpen = (event) => {
         setVisible(true);
         setTransition(true);
         setTimeout(() => {
@@ -87,7 +89,7 @@ storiesOf("Elements|Notification", module)
           }, 500);
         }, 3000);
       };
-      const handleClose = event => {
+      const handleClose = (event) => {
         setTransition(false);
         setTimeout(() => {
           setVisible(false);
@@ -118,7 +120,11 @@ storiesOf("Elements|Notification", module)
             position={transition}
           >
             <Banner
-              title={text("Status Message", "This is a Standard notification.", "Notification")}
+              title={text(
+                "Status Message",
+                "This is a Standard notification.",
+                "Notification",
+              )}
               onClose={handleClose}
             />
           </Notification>
@@ -129,13 +135,13 @@ storiesOf("Elements|Notification", module)
           </Panel>
         </Fragment>
       );
-    }),
-  );
-storiesOf("Elements|Notification", module).add("Status Notification", () =>
-  React.createElement(() => {
+    });
+  });
+storiesOf("Elements|Notification", module).add("Status Notification", () => {
+  return React.createElement(() => {
     const [visible, setVisible] = useState(false);
     const [transition, setTransition] = useState(true);
-    const handleOpen = event => {
+    const handleOpen = (event) => {
       setVisible(true);
       setTransition(true);
       setTimeout(() => {
@@ -145,7 +151,7 @@ storiesOf("Elements|Notification", module).add("Status Notification", () =>
         }, 500);
       }, 3000);
     };
-    const handleClose = event => {
+    const handleClose = (event) => {
       setTransition(false);
       setTimeout(() => {
         setVisible(false);
@@ -172,5 +178,5 @@ storiesOf("Elements|Notification", module).add("Status Notification", () =>
         </Panel>
       </Fragment>
     );
-  }),
-);
+  });
+});

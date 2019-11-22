@@ -1,10 +1,16 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable inlinebreak-style */
+/* eslint-disable linebreak-style */
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
-import { withKnobs, boolean, optionsKnob as options } from "@storybook/addon-knobs";
+import {
+  withKnobs,
+  boolean,
+  optionsKnob as options
+} from "@storybook/addon-knobs";
 import Image from "atoms/Image";
 import Card, { CardList } from "layout/Card";
 import Title, { Description } from "base/Typography";
@@ -30,11 +36,11 @@ const description = (
 storiesOf("Blocks|Media Block", module)
   .addParameters({
     info: {
-      text: "Media Block info goes here...",
+      text: "Media Block info goes here..."
     },
     notes: {
-      markdown: MediaBlockNotes,
-    },
+      markdown: MediaBlockNotes
+    }
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
@@ -42,11 +48,11 @@ storiesOf("Blocks|Media Block", module)
     "Documentation",
     withInfo()(() => {
       return <MediaBlock media={image} body={body} />;
-    }),
+    })
   )
   .add("Knobs", () => {
     return (
-      <Card>
+      <Card padding="none">
         <MediaBlock
           media={image}
           body={body}
@@ -55,11 +61,11 @@ storiesOf("Blocks|Media Block", module)
             {
               default: null,
               vertical: "vertical",
-              inline: "inline",
+              inline: "inline"
             },
             null,
             { display: "select" },
-            "Media Block",
+            "Media Block"
           )}
           reverse={boolean("reverse", false, "Media Block")}
           circle={boolean("circle", false, "Media Block")}
@@ -82,7 +88,7 @@ storiesOf("Blocks|Media Block", module)
   .add("The Media Block Family", () => {
     return (
       <CardList>
-        <Card>
+        <Card padding="none">
           <MediaBlock
             media={image}
             body={
@@ -93,7 +99,7 @@ storiesOf("Blocks|Media Block", module)
             }
           />
         </Card>
-        <Card>
+        <Card padding="none">
           <MediaBlock
             media={image}
             body={
@@ -105,7 +111,7 @@ storiesOf("Blocks|Media Block", module)
             reverse
           />
         </Card>
-        <Card>
+        <Card padding="none">
           <MediaBlock
             media={image}
             body={
@@ -117,7 +123,7 @@ storiesOf("Blocks|Media Block", module)
             align="vertical"
           />
         </Card>
-        <Card>
+        <Card padding="none">
           <MediaBlock
             media={image}
             body={
@@ -130,7 +136,7 @@ storiesOf("Blocks|Media Block", module)
             reverse
           />
         </Card>
-        <Card>
+        <Card padding="none">
           <MediaBlock
             media={image}
             body={
@@ -142,7 +148,7 @@ storiesOf("Blocks|Media Block", module)
             align="inline"
           />
         </Card>
-        <Card>
+        <Card padding="none">
           <MediaBlock
             media={image}
             body={

@@ -1,13 +1,12 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
 import { withInfo } from "@storybook/addon-info";
-import {
-  withKnobs,
-  text,
-  boolean,
-} from "@storybook/addon-knobs";
+import { withKnobs, text, boolean } from "@storybook/addon-knobs";
 import Panel, { PanelSection } from "layout/Panel";
 import Form, { Section } from "layout/Form";
 import SelectMenu from "./SelectMenu";
@@ -39,7 +38,10 @@ storiesOf("Atoms|Select Menu", module)
       return (
         <SelectMenu
           label={text("Input Label", "Select Menu ( Knobs )")}
-          placeholder={text("Placeholder Text", "I am just keeping things warm")}
+          placeholder={text(
+            "Placeholder Text",
+            "I am just keeping things warm",
+          )}
           helpText={text("Help Text", "Have you been helped yet?")}
           multiSelect={boolean("Multi-Select", false)}
           isLoading={boolean("Loading", false)}
@@ -54,7 +56,9 @@ storiesOf("Atoms|Select Menu", module)
       );
     }),
   )
-  .add("Skeleton", () => { return <SelectMenu />; })
+  .add("Skeleton", () => {
+    return <SelectMenu />;
+  })
 
   // Single-Select (Standard)
   .add("Single-Select ( Standard )", () => {
@@ -182,9 +186,7 @@ storiesOf("Atoms|Select Menu", module)
 
   // Searchable
   .add("Searchable", () => {
-    return (
-      <SelectMenu isSearchable placeholder="Search" options={options} />
-    );
+    return <SelectMenu isSearchable placeholder="Search" options={options} />;
   });
 
 // Select Menu (The Select Menu Family)

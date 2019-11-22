@@ -1,3 +1,7 @@
+/* eslint-disable security/detect-object-injection */
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
 import React from "react";
 import PropTypes from "prop-types";

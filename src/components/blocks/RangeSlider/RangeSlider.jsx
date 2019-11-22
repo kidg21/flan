@@ -1,17 +1,20 @@
-/* eslint-disable complexity */
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
 import Bar from "blocks/Bar";
-import { InputLabel, HelpText, ErrorText } from "layout/Form";
+import Label from "base/Label";
 import Grid from "layout/Grid";
 import TextInput from "atoms/TextInput";
 import Slider from "atoms/Slider";
 
 const RangeContainer = styled(Grid)`
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || "";
+    return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
   &:last-child {
     margin-bottom: 1rem;
@@ -29,9 +32,10 @@ function RangeSlider({
   placeholderMax,
 }) {
   let inputTextColor;
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (error && !isDisabled) {
-    inputTextColor = "error";
+    inputTextColor = "alert";
   }
   return (
     <RangeContainer
@@ -41,24 +45,42 @@ function RangeSlider({
       columns="1"
       gap="small"
     >
-      {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
-      {helpText ? <HelpText>{helpText}</HelpText> : null}
+      {label ? (
+        <Label weight="bold" size="sm" isRequired={isRequired} text={label} />
+      ) : null}
+      {helpText ? <Label size="sm" text={helpText} /> : null}
       <Bar
         padding="none"
         contentAlign="center"
         leftWidth="6em"
         rightWidth="6em"
-        left={<TextInput type="text" placeholder={placeholderMin} error={!!error} disabled={isDisabled} />}
+        left={
+          <TextInput
+            type="text"
+            placeholder={placeholderMin}
+            error={!!error}
+            disabled={isDisabled}
+          />
+        }
         center={
           error && !isDisabled ? (
             <Slider error disabled={isDisabled} />
           ) : (
             <Slider disabled={isDisabled} />
-          )
+            )
         }
-        right={<TextInput type="text" placeholder={placeholderMax} error={!!error} disabled={isDisabled} />}
+        right={
+          <TextInput
+            type="text"
+            placeholder={placeholderMax}
+            error={!!error}
+            disabled={isDisabled}
+          />
+        }
       />
-      {typeof error === "string" && !isDisabled ? <ErrorText>{error}</ErrorText> : null}
+      {typeof error === "string" && !isDisabled ? (
+        <Label size="sm" text={error} />
+      ) : null}
     </RangeContainer>
   );
 }

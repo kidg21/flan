@@ -1,10 +1,14 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 /* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import styled from "styled-components";
 import Bar from "blocks/Bar";
 import { Lighten, Darken } from "Variables";
 import Title, { Headline, SubTitle } from "base/Typography";
-import Panel, { PanelSection } from "layout/Panel";
+import { PanelSection } from "layout/Panel";
 import Grid from "layout/Grid";
 
 const ThemeWrapper = styled.div`

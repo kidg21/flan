@@ -1,4 +1,7 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -10,7 +13,7 @@ const ImageWrapper = styled.img`
   }};
   height: auto;
   border-radius: ${(props) => {
-    return props.circle ? "100%" : "5px";
+    return props.circle ? "100%" : "";
   }};
   box-shadow: ${(props) => {
     return props.border ? `0 0 0 2px ${props.theme.border}` : "";

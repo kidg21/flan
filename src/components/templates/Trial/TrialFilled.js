@@ -1,5 +1,11 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/first */
+/* eslint-disable react/require-default-props */
+/* eslint-disable react/forbid-prop-types */
+/* eslint-disable no-unused-vars */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
 import React, { useContext, useState } from "react";
-import { storiesOf } from "@storybook/react";
 import AppLayout from "./AppLayout";
 // import PanelHeader from "elements/PanelHeader";
 // import CardBar from "elements/CardBar";

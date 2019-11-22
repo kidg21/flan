@@ -1,3 +1,7 @@
+/* eslint-disable complexity */
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
@@ -5,6 +9,8 @@ import { Lighten, Darken } from "Variables";
 import { DisabledContext } from "States";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
+import { Skeleton } from "helpers";
+import Label from "base/Label";
 
 /** TODO: move these to Variables */
 
@@ -40,9 +46,8 @@ const StyledButton = styled.button`
     return props.labelSize || "inherit";
   }};
   font-weight: ${(props) => {
-    return props.fontWeight || "600";
+    return props.fontWeight || "400";
   }};
-  letter-spacing: 1px;
   overflow: hidden;
   cursor: pointer;
   border-bottom: ${(props) => {
@@ -64,6 +69,13 @@ const StyledButton = styled.button`
   }};
   }
 
+  &:empty {
+    ${Skeleton};
+    border: 0px solid white;
+    }};
+  }
+}
+
   &:active {
     ${Lighten};
   }
@@ -75,13 +87,6 @@ const StyledButton = styled.button`
   }
 `;
 
-const ButtonLabel = styled.label`
-  line-height: normal;
-  font-size: inherit;
-  font-weight: inherit;
-  user-select: none;
-  cursor: pointer;
-`;
 
 const ButtonIcon = styled(Icon)`
   margin: 0.25em 0;
@@ -118,7 +123,6 @@ function Button({
   onClick,
   underlineColor,
   border,
-  size,
   style,
   type,
 }) {
@@ -192,19 +196,6 @@ function Button({
     backgroundColor = "grey4";
   }
 
-  switch (size && size.toLowerCase()) {
-    case "small":
-      buttonPadding = "0.4rem 0.6rem";
-      labelSize = ".9em";
-      break;
-    case "large":
-      buttonPadding = "0.6rem 0.8rem";
-      labelSize = "1.2em";
-      break;
-    default:
-      break;
-  }
-
   return (
     <StyledButton
       backgroundColor={backgroundColor}
@@ -227,8 +218,8 @@ function Button({
       tabIndex={disabled ? "-1" : "1"}
       type={type}
     >
-      {icon ? <ButtonIcon icon={icon} type={fontColor} size="lg" /> : null}
-      {label ? <ButtonLabel>{label}</ButtonLabel> : null}
+      {icon ? <ButtonIcon icon={icon} size="lg" /> : null}
+      {label ? <Label letterSpacing="0.075em" weight="semibold" text={label} /> : null}
     </StyledButton>
   );
 }

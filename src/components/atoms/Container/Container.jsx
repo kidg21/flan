@@ -1,3 +1,7 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -38,8 +42,8 @@ const BoxContainer = styled.div`
 
   ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0.5px 0 0px ${(props) => {
-      return props.theme.palette.grey5;
-    }};
+    return props.theme.palette.grey5;
+  }};
   }
 
   ::-webkit-scrollbar-thumb {

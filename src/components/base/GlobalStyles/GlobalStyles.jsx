@@ -1,4 +1,9 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
 import { createGlobalStyle } from "styled-components";
 import styledNormalize from "styled-normalize";
 import { Skeleton } from "helpers";
@@ -246,8 +251,6 @@ const GlobalStyles = createGlobalStyle`
       font-family: ${fonts.data};
       letter-spacing: 2px;
       border-radius: 5px;
-      font-size: 12px;
-      font-weight: 700;
       transition: border-color 0.1s linear, background 0.1s linear;
       appearance: none;
       &:focus {

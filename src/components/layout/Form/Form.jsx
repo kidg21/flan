@@ -1,16 +1,23 @@
-import React, { useContext } from "react";
+/* eslint-disable linebreak-style */
+/* eslint-disable react/default-props-match-prop-types */
+/* eslint-disable radix */
+/* eslint-disable react/require-default-props */
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
-import { DisabledContext } from "States";
-import Title, { Headline, SubTitle, Description } from "base/Typography";
+import Title, { SubTitle, Description } from "base/Typography";
 import Grid from "layout/Grid";
 
 const FormWrapper = styled.form`
-  color: ${props => {
+  color: ${(props) => {
     return props.theme.text.primary;
   }};
-  background-color: ${props => {
+  background-color: ${(props) => {
     return props.theme.background.default;
   }};
   height: 100%;
@@ -34,7 +41,7 @@ const SectionTitle = styled(Title)`
 function Section({ children, title }) {
   return (
     <FormSection>
-      {title ? <SectionTitle text={title} /> : null}
+      {title ? <SectionTitle weight="bold" text={title} /> : null}
       {children}
     </FormSection>
   );
@@ -49,19 +56,28 @@ Section.defaultProps = {
 };
 
 const FormInputs = styled(Grid)`
-  grid-template-columns: ${props => {
+  grid-template-columns: ${(props) => {
     return props.setColumns || "repeat(1, minmax(0, 1fr))";
   }};
   /* Prototype Content - displays when a Form is empty */
   &:empty {
     &:before {
       ${PlaceholderText}
-      content: "{ Form } \00000A 'Displays a grid of user inputs in responsive columns'";
+      content: "{ Form }";
     }
   }
 `;
 
-function Form({ action, children, columns, description, method, novalidate, subtitle, title }) {
+function Form({
+  action,
+  children,
+  columns,
+  description,
+  method,
+  novalidate,
+  subtitle,
+  title,
+}) {
   // 1-3 colums with custom override
   let setColumns;
   const _columns = parseInt(columns);
@@ -74,7 +90,7 @@ function Form({ action, children, columns, description, method, novalidate, subt
     <FormWrapper action={action} method={method} novalidate={novalidate}>
       {title || subtitle || description ? (
         <FormHeader gap="tiny">
-          {title ? <Headline text={title} /> : null}
+          {title ? <Title text={title} /> : null}
           {subtitle ? <SubTitle text={subtitle} /> : null}
           {description ? <Description text={description} /> : null}
         </FormHeader>
@@ -88,7 +104,7 @@ function Form({ action, children, columns, description, method, novalidate, subt
 Form.propTypes = {
   action: PropTypes.node,
   children: PropTypes.node,
-  columns: PropTypes.oneOf(["1 (default)", "2", "3"]),
+  // columns: PropTypes.oneOf(["1 (default)", "2", "3"]),
   description: PropTypes.string,
   method: PropTypes.string,
   novalidate: PropTypes.bool,
@@ -106,155 +122,4 @@ Form.defaultProps = {
   title: null,
 };
 
-const StyledLabel = styled.label`
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  border-radius: 5px;
-  align-items: center;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: lowercase;
-  color: ${props => {
-    return props.theme.text[props.color] || "inherit";
-  }};
-  background-color: ${props => {
-    return props.theme.palette.background;
-  }};
-  border: 1px solid
-    ${props => {
-      return props.theme.palette.grey3;
-    }};
-  border-radius: 5px;
-  padding: 0.25rem 1rem;
-  white-space: nowrap;
-  user-select: none;
-  height: 100%;
-`;
-function Label({ children, disabled, label }) {
-  let color;
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (isDisabled) color = "disabled";
-  return (
-    <StyledLabel color={color} disabled={disabled}>
-      {children || label}
-    </StyledLabel>
-  );
-}
-Label.propTypes = {
-  label: PropTypes.string.isRequired,
-};
-
-const TextLabel = styled.label`
-  grid-column: 1 / -1;
-  color: ${props => {
-    return props.theme.text[props.color] || "inherit";
-  }};
-  width: max-content;
-  font-weight: 700;
-  user-select: none;
-  &:after {
-    display: ${props => (props.isRequired ? "" : "none")};
-    content: "*";
-    color: ${props => {
-      return props.theme.palette.alert;
-    }};
-    font-size: 1.25rem;
-    line-height: 0;
-    vertical-align: middle;
-    padding-left: 0.25em;
-  }
-`;
-function InputLabel({ label, isRequired, className, children, disabled, ...props }) {
-  let color;
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (isDisabled) color = "disabled";
-  return (
-    <TextLabel
-      isRequired={isRequired}
-      className={className}
-      color={color}
-      disabled={disabled}
-      {...props}
-    >
-      {label || children}
-    </TextLabel>
-  );
-}
-InputLabel.propTypes = {
-  label: PropTypes.string.isRequired,
-  isRequired: PropTypes.bool,
-};
-InputLabel.defaultProps = {
-  isRequired: false,
-};
-
-const Help = styled(TextLabel)`
-  font-weight: initial;
-`;
-function HelpText({ helpText, disabled, children }) {
-  let color;
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (isDisabled) color = "disabled";
-  const content = children || helpText;
-  if (typeof content === "string") {
-    return (
-      <Help color={color} disabled={disabled}>
-        {content.split("\n").map(text => {
-          return (
-            <>
-              {text}
-              <br />
-            </>
-          );
-        })}
-      </Help>
-    );
-  } else {
-    return (
-      <Help color={color} disabled={disabled}>
-        {content}
-      </Help>
-    );
-  }
-}
-HelpText.propTypes = {
-  helpText: PropTypes.string.isRequired,
-};
-
-const Error = styled(TextLabel)`
-  color: ${props => {
-    return props.theme.text.alert;
-  }};
-  user-select: all;
-  cursor: initial;
-  &::selection {
-    background-color: ${props => {
-      return props.theme.background.alert;
-    }};
-  }
-`;
-function ErrorText({ error, children }) {
-  const content = children || error;
-  if (typeof content === "string") {
-    return (
-      <Error>
-        {content.split("\n").map(text => {
-          return (
-            <>
-              {text}
-              <br />
-            </>
-          );
-        })}
-      </Error>
-    );
-  } else {
-    return <Error>{content}</Error>;
-  }
-}
-ErrorText.propTypes = {
-  error: PropTypes.string.isRequired,
-};
-
-export { Form as default, Section, Label, InputLabel, HelpText, ErrorText };
+export { Form as default, Section };
