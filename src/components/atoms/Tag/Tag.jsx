@@ -6,7 +6,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Icon from "atoms/Icon";
-import Label from "base/Label";
+import Label from "atoms/Label";
 
 const TagContainer = styled.div`
   justify-content: center;

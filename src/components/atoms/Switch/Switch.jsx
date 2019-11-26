@@ -6,7 +6,7 @@ import React, { useState, useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
-import Label from "base/Label";
+import Label from "atoms/Label";
 
 const SwitchContainer = styled.div`
   display: grid;
