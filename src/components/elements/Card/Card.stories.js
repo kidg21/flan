@@ -21,11 +21,21 @@ storiesOf("Elements|Card", module)
   .add("Default", () => {
     return <Card title="Title" description="Card Description" />;
   })
+  .add("Expands", () => {
+    return <Card title="Title" description="Card Description" expands />;
+  })
   .add("Icon", () => {
     return (
       <Card title="Title" description="Card Description" icon="settings" />
     );
   })
   .add("Media", () => {
-    return <Card title="Title" description="Card Description" media={image} />;
+    return (
+      <Card
+        title="Title"
+        description="Card Description"
+        media={image}
+        expands
+      />
+    );
   });

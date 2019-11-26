@@ -7,29 +7,18 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 
 const AccordionSection = styled.div`
-  line-height: normal;
-  background-color: purple;
-
-  border-bottom: 1px solid
-    ${(props) => {
-    return props.theme.palette.grey5;
-  }};
   cursor: pointer;
 `;
 
 const ChildrenWrapper = styled.div`
-background-color: orange;
-  border-bottom: 1px solid
-    ${(props) => {
-    return props.theme.palette.grey5;
-  }};
   padding-bottom: 1em;
+  padding-top: 1em;
   ${(props) => {
     return props.show ? "" : "display: none;";
   }}
 `;
 
-const Accordion = ({
+const AccordionFunction = ({
   id, header, children, visibility, onClick,
 }) => {
   return (
@@ -43,7 +32,7 @@ const Accordion = ({
 };
 
 
-function CardAccordion({
+function Expander({
   id,
   header,
   children,
@@ -51,7 +40,7 @@ function CardAccordion({
 }) {
   const [isOpen, setIsOpen] = useState(initOpen);
   return (
-    <Accordion
+    <AccordionFunction
       id={id}
       header={header}
       visibility={isOpen}
@@ -59,19 +48,19 @@ function CardAccordion({
         setIsOpen(!isOpen);
       }}
     >
-      <React.Fragement>{children}</React.Fragement>
-    </Accordion>
+      <div>{children}</div>
+    </AccordionFunction>
   );
 }
 
-Accordion.defaultProps = {
+AccordionFunction.defaultProps = {
   visibility: true,
   onClick: () => { },
   children: null,
   id: "",
 };
 
-Accordion.propTypes = {
+AccordionFunction.propTypes = {
   id: PropTypes.string,
   children: PropTypes.node,
   header: PropTypes.node.isRequired,
@@ -79,18 +68,18 @@ Accordion.propTypes = {
   visibility: PropTypes.bool,
 };
 
-CardAccordion.defaultProps = {
+Expander.defaultProps = {
   children: null,
   header: null,
   id: "",
   initOpen: false,
 };
 
-CardAccordion.propTypes = {
+Expander.propTypes = {
   children: PropTypes.node,
   header: PropTypes.node,
   id: PropTypes.string,
   initOpen: PropTypes.bool,
 };
 
-export default CardAccordion;
+export default Expander;

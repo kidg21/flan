@@ -119,6 +119,9 @@ const templates = require.context(
   true,
   /.stories.js$/
 );
+
+const utils = require.context("../src/components/utils", true, /.stories.js$/);
+
 const work = require.context("../src/components/work", true, /.stories.js$/);
 function loadStories() {
   require("../src/attributes/App.stories.js");
@@ -128,6 +131,7 @@ function loadStories() {
   elements.keys().forEach(filename => elements(filename));
   layout.keys().forEach(filename => layout(filename));
   templates.keys().forEach(filename => templates(filename));
+  utils.keys().forEach(filename => utils(filename));
   work.keys().forEach(filename => work(filename));
 }
 

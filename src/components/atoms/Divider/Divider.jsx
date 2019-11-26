@@ -7,9 +7,12 @@ import styled from "styled-components";
 
 const Line = styled.hr`
   height: 0;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   border-top: 0.25px solid
     ${(props) => {
-    return props.theme.palette.grey6;
+    return props.theme.palette.grey5;
   }};
   font-size: 0;
 `;

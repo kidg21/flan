@@ -32,7 +32,6 @@ export { default as Tag } from "./atoms/Tag";
 export { default as TextInput } from "./atoms/TextInput";
 
 // Publicly exported files from 'blocks'
-export { default as Accordion } from "./blocks/Accordion";
 export { default as Banner } from "./blocks/Banner";
 export { default as Bar } from "./blocks/Bar";
 export { default as List, ListItem } from "./blocks/List";
@@ -45,6 +44,7 @@ export { DataTable as Table } from "./blocks/Table";
 export { default as Tabs, Tab } from "./blocks/Tabs";
 
 // Publicly exported files from 'elements'
+export { default as Card } from "./elements/Card";
 export { default as InformationCardBar } from "./elements/CardBars/InformationCardBar";
 export { default as LayerCardBar } from "./elements/CardBars/LayerCardBar";
 export { default as NavigationCardBar } from "./elements/CardBars/NavigationCardBar";
@@ -69,6 +69,8 @@ export { default as Layout } from "./layout/Layout";
 export { default as Modal } from "./layout/Modal";
 export { default as Page } from "./layout/Page";
 export { default as Panel, PanelSection } from "./layout/Panel";
+
+export { default as Expander } from "./utils/Expander";
 
 export {
   colors,
