@@ -13,11 +13,9 @@ import Icon from "atoms/Icon";
 import Title, { Description, Link } from "base/Typography";
 
 const StyledBanner = styled(Card)`
-  border: 2px solid;
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.grey4;
+    return props.theme.palette[props.borderColor] || props.theme.palette.grey;
   }};
-  border-radius: 5px;
 `;
 
 const StatusBadge = styled.div`
@@ -28,7 +26,7 @@ const StatusBadge = styled.div`
 
 const Message = styled(Grid)`
   align-self: center;
-  padding-right: 1.5em;
+  // padding-right: 1.5em;
 `;
 
 const Close = styled(Icon)`

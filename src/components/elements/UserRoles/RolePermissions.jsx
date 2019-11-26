@@ -13,7 +13,6 @@ import Container from "atoms/Container";
 import Panel, { PanelSection } from "layout/Panel";
 import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";
-import InformationCardBar from "elements/CardBars/InformationCardBar";
 import Button from "atoms/Button";
 import Icon from "atoms/Icon";
 import Title from "base/Typography";
@@ -107,7 +106,7 @@ function RoleEntry({
   }
 
   return (
-    <InformationCardBar open={role.open} onClick={onChangeVisible} title={<Title>{role.name} <Icon icon="delete" onClick={onDeleteRole} /></Title>}>
+    <Bar open={role.open} onClick={onChangeVisible} left={<Title>{role.name} <Icon icon="delete" onClick={onDeleteRole} /></Title>}>
       {role.folders.map((folder) => {
         return (<FolderEntry
           key={folder.folder}
@@ -119,7 +118,7 @@ function RoleEntry({
       })}
       {editRole
         ? <Bar right={<Button label={editRole.label} onClick={addRolePermission} />} /> : null}
-    </InformationCardBar>
+    </Bar>
   );
 }
 

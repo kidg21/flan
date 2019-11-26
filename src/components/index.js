@@ -45,9 +45,6 @@ export { default as Tabs, Tab } from "./blocks/Tabs";
 
 // Publicly exported files from 'elements'
 export { default as Card } from "./elements/Card";
-export { default as InformationCardBar } from "./elements/CardBars/InformationCardBar";
-export { default as LayerCardBar } from "./elements/CardBars/LayerCardBar";
-export { default as NavigationCardBar } from "./elements/CardBars/NavigationCardBar";
 export { default as MainPanelHeader } from "./elements/PanelHeaders/MainPanelHeader";
 export { default as PropertyPanelHeader } from "./elements/PanelHeaders/PropertyPanelHeader";
 export { default as NavigationPanelHeader } from "./elements/PanelHeaders/NavigationPanelHeader";

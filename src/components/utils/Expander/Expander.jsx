@@ -11,8 +11,6 @@ const AccordionSection = styled.div`
 `;
 
 const ChildrenWrapper = styled.div`
-  padding-bottom: 1em;
-  padding-top: 1em;
   ${(props) => {
     return props.show ? "" : "display: none;";
   }}
