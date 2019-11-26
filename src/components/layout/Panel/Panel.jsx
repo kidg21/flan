@@ -8,12 +8,9 @@ import { PlaceholderText } from "helpers/Placeholders.jsx";
 const Panel = styled.div`
   position: absolute;
   background: ${(props) => {
-    return props.theme.background.default;
+    return props.theme.background.app;
   }};
   display: flex;
-  border: 1px solid ${(props) => {
-    return props.theme.palette.grey6;
-  }};;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
@@ -64,7 +61,7 @@ const PanelSection = styled.section`
   }};
   max-height: 100vh;
   box-shadow: ${(props) => {
-    return props.body ? "none" : props.theme.shadows.panelSectionShadow;
+    return props.body ? "none" : props.theme.shadows.shadow1;
   }};
   transition: all 0.2s ease-in-out;
   /* Prototype Content - displays when a Panel Section is empty */

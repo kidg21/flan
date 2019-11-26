@@ -4,4 +4,4 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-export { default, CardList } from "./Card.jsx";
+export { default, CardList, CardSection } from "./Card.jsx";

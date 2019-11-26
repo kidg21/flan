@@ -127,7 +127,7 @@ const selectStyles = {
       margin: ".25rem 0",
       border: "1px solid",
       borderColor: colors.grey40,
-      boxShadow: shadows.dropShadow,
+      boxShadow: shadows.shadow2,
     };
   },
 

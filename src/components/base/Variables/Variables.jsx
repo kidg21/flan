@@ -4,6 +4,7 @@
 /* eslint-disable linebreak-style */
 import { css } from "styled-components";
 
+
 // Codes for color palette
 export const colors = {
   // legacy values
@@ -37,9 +38,16 @@ export const colors = {
   blueDark: "hsl(200, 100%, 25%)",
   blueLight: "hsl(204, 69%, 65%)",
   blueTint: "hsl(200, 59%, 95%)",
+  lightBlue: "hsl(201, 100%, 98%)",
 
   glassDark: "hsla(34, 5%, 28%, 0.85)",
   glassLight: "hsl(34, 5%, 95%, 0.85)",
+
+  shadow1: "0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)",
+  shadow2: "0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)",
+  shadow3: "0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)",
+  shadow4: "0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)",
+  shadow5: "0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22)",
 
   green: "hsl(89, 46%, 42%)",
   greenBright: "hsl(135, 79%, 37%)",
@@ -86,7 +94,7 @@ export const DMPTheme = {
   background: {
     active: colors.greenTint,
     alert_active: colors.redTint,
-    app: colors.greyLight,
+    app: colors.lightBlue,
     default: colors.white,
     disabled: colors.greyLight,
     info_active: colors.blueTint,
@@ -160,22 +168,11 @@ export const DMPTheme = {
     white: colors.white,
   },
   shadows: {
-    cardShadow:
-      "drop-shadow(0 0 1px hsl(34, 5%, 72%)) drop-shadow(0.25rem 0.25rem 0.25rem hsla(34, 5%, 58%, 0.333333));",
-    dropShadow:
-      "hsl(34, 5%, 36%) 0rem 0rem 1px, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem;",
-    panelSectionShadow:
-      "hsl(34, 5%, 88%)  0rem 0rem 1px, hsla(34, 5%, 92%, 0.333333) 0 0rem 0.5rem 0.25rem;",
-    lightBorderShadow:
-      "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem",
-    lightBorderInner:
-      "hsl(34, 5%, 72%) -1px -1px 0 0 inset, hsl(34, 5%, 72%) 1px 1px 0 0 inset",
-    border20: "hsl(34, 5%, 95%) 0px 0px 0px 1px",
-    border40: "hsl(34, 5%, 88%) 0px 0px 0px 1px",
-    checkedShadow:
-      "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
-    radioShadow:
-      "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsl(34, 5%, 95%) -1px 1px 0 0 inset, hsl(34, 5%, 95%) 1px -1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
+    shadow1: colors.shadow1,
+    shadow2: colors.shadow2,
+    shadow3: colors.shadow3,
+    shadow4: colors.shadow4,
+    shadow5: colors.shadow5,
   },
 };
 
@@ -279,22 +276,11 @@ export const darkTheme = {
     white: colors.white,
   },
   shadows: {
-    cardShadow:
-      "drop-shadow(0 0 1px hsl(34, 5%, 72%)) drop-shadow(0.25rem 0.25rem 0.25rem hsla(34, 5%, 58%, 0.333333));",
-    dropShadow:
-      "hsl(34, 5%, 36%) 0rem 0rem 1px, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem;",
-    panelSectionShadow:
-      "hsl(34, 5%, 88%)  0rem 0rem 1px, hsla(34, 5%, 92%, 0.333333) 0 0rem 0.5rem 0.25rem;",
-    lightBorderShadow:
-      "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem",
-    lightBorderInner:
-      "hsl(34, 5%, 72%) -1px -1px 0 0 inset, hsl(34, 5%, 72%) 1px 1px 0 0 inset",
-    border20: "hsl(34, 5%, 95%) 0px 0px 0px 1px",
-    border40: "hsl(34, 5%, 88%) 0px 0px 0px 1px",
-    checkedShadow:
-      "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
-    radioShadow:
-      "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsl(34, 5%, 95%) -1px 1px 0 0 inset, hsl(34, 5%, 95%) 1px -1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
+    shadow1: colors.shadow1,
+    shadow2: colors.shadow2,
+    shadow3: colors.shadow3,
+    shadow4: colors.shadow4,
+    shadow5: colors.shadow5,
   },
 };
 

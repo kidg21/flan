@@ -10,13 +10,25 @@ import { checkA11y } from "@storybook/addon-a11y";
 import { Padding } from "helpers/Display";
 import Card, { CardList } from "layout/Card";
 import Button from "atoms/Button";
+import Grid from "layout/Grid";
+import Panel from "layout/Panel";
 
 // Card
 storiesOf("Layout|Card", module)
   .addDecorator(Padding)
   .addDecorator(checkA11y)
-  .add("Default Card - 'wrapper for content modules'", () => {
-    return <Card />;
+  .add("Default", () => {
+    return (
+      <Panel>
+        <Grid columns="1">
+          <Card />
+          <Card type="elevated" />
+        </Grid>
+      </Panel>
+    );
+  })
+  .add("Elevated Card", () => {
+    return <Card type="elevated" />;
   });
 
 // Da Card

@@ -10,20 +10,29 @@ import Grid from "layout/Grid";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 import PropTypes from "prop-types";
 
+const CardSection = styled.div`
+`;
 
 const CardWrapper = styled.div`
 display: flex;
 border-radius: 5px;
+margin: 8px;
 flex-direction: column;
 flex: none;
 box-shadow: ${(props) => {
-    return props.theme.shadows[props.cardShadow] || "";
+    return props.theme.shadows[props.shadow] || "";
   }};
-border: 1px solid ${(props) => {
+border: ${(props) => {
+    return props.border || "";
+  }};
+border-color: ${(props) => {
     return props.theme.palette[props.borderColor] || "";
   }};
 padding: ${(props) => {
     return props.cardPadding || "1em";
+  }};
+  color: ${(props) => {
+    return props.theme.text.primary;
   }};
 width: 100%;
   position: relative;
@@ -59,17 +68,20 @@ const CardListWrapper = styled(Grid)`
 function Card({
   children, className, type, id, padding,
 }) {
-  let cardShadow;
+  let shadow;
+  let border;
   let borderColor;
   let cardPadding;
   switch (type) {
     case "outlined":
+      border = "1px solid";
       borderColor = "grey5";
       break;
     case "elevated":
-      cardShadow = "cardShadow";
+      shadow = "shadow1";
       break;
     default:
+      border = "1px solid";
       borderColor = "grey5";
       break;
   }
@@ -94,7 +106,8 @@ function Card({
   }
   return (
     <CardWrapper
-      cardShadow={cardShadow}
+      border={border}
+      shadow={shadow}
       borderColor={borderColor}
       cardPadding={cardPadding}
       className={className}
@@ -177,4 +190,4 @@ CardList.propTypes = {
   rows: PropTypes.oneOf(["default (auto)", "[grid-template-rows]"]),
 };
 
-export { Card as default, CardList };
+export { Card as default, CardList, CardSection };
