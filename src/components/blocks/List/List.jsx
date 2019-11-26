@@ -5,8 +5,9 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { Darken } from "Variables";
+import { Darken, Lighten } from "Variables";
 import Bar from "blocks/Bar";
+import Divider from "atoms/Divider";
 import Title, { Description } from "base/Typography";
 import { InteractiveContext, DisabledContext } from "States";
 
@@ -14,23 +15,42 @@ const ListWrapper = styled.ul`
   display: flex;
   flex-direction: column;
   list-style: none;
-  font-weight: 600;
+  li:not(:last-child) {
+    border-bottom: ${props => {
+    return props.divider ? "1px solid" : "";
+  }};
+    border-bottom-color: ${props => {
+    return props.divider ? props.theme.palette.grey5 : "";
+  }};
+  }
 `;
+
+// const Identifier = styled.div`
+// position: relative;
+// &:before {
+//   display: ${props => {
+//   return props.active ? "block" : "none";
+// }};
+//   content: "";
+//   position: absolute;
+//   top: 0%;
+//   left: 0%;
+//   height: 100%;
+//   border-style: solid;
+//   border-width: 2px;
+// }
+// `;
 
 const ListItemWrapper = styled.li`
   position: relative;
   color: ${props => {
     return props.theme.text[props.itemColor];
   }};
+  padding: 1em;
   background-color: ${props => {
     return (
-      props.theme.background[props.itemBGColor] ||
       props.theme.palette.background
     );
-  }};
-  border-bottom: 1px solid
-    ${props => {
-    return props.theme.divider;
   }};
   cursor: ${props => {
     return props.interactive ? "pointer" : "";
@@ -40,95 +60,124 @@ const ListItemWrapper = styled.li`
     ${props => {
     return props.interactive ? Darken : "";
   }};
+  &:selected {
     outline: none;
+    ${props => {
+    return props.interactive ? Lighten : "";
+  }};
   }
   &[disabled] {
     cursor: not-allowed;
     pointer-events: none;
     user-select: none;
-    color: ${props => {
-    return props.theme.text.disabled;
-  }};
     background-color: ${props => {
     return props.theme.background.disabled;
   }};
     border-left: none;
-  }
-  &:before {
-    display: ${props => {
-    return props.active ? "block" : "none";
-  }};
-    content: "";
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    height: 100%;
-    border-style: solid;
-    border-width: 2px;
   }
   &:last-child {
     border-bottom: none;
   }
 `;
 
-function List({ children, id, interactive, title }) {
+function List({ children, id, interactive, divider, title }) {
   return (
     <InteractiveContext.Provider value={interactive}>
       {title ? <Bar left={<Title text={title} weight="bold" />} /> : null}
-      <ListWrapper id={id}>{children}</ListWrapper>
+      <ListWrapper divider={divider} id={id}>{children}</ListWrapper>
     </InteractiveContext.Provider>
   );
 }
 
 function ListItem({
   active,
-  children,
   description,
   disabled,
   id,
+  primaryAction,
+  secondaryAction,
   interactive,
   label,
   onClick,
-  type
 }) {
-  let itemBGColor;
-  let itemColor = type;
-  if (active) {
-    if (itemColor) itemBGColor = `${itemColor}_active`;
-    else {
-      itemColor = "active";
-      itemBGColor = itemColor;
-    }
-    active = !disabled;
+  let content;
+
+  if (primaryAction) {
+    <Bar
+      contentAlign="center"
+      centerAlign="left"
+      left={<React.Fragment> {primaryAction} </React.Fragment>}
+      center={
+        <>
+          {<Title text={label} />}
+          {description ? <Description text={description} /> : null}
+        </>
+      }
+    />
   }
+  else {
+    content = (
+      <Bar
+        contentAlign="center"
+        centerAlign="left"
+        left={
+          <>
+            {<Title text={label} />}
+            {description ? <Description text={description} /> : null}
+          </>
+        }
+      />)
+  }
+
+  if (secondaryAction) {
+    content = (
+      <Bar
+        contentAlign="center"
+        centerAlign="left"
+        left={
+          <>
+            {<Title text={label} />}
+            {description ? <Description text={description} /> : null}
+          </>
+        }
+        right={secondaryAction}
+      // rightWidth={(children && children.props.width) || ""}
+      />)
+  }
+
+  if (primaryAction) {
+    if (secondaryAction) {
+      content = (
+        <Bar
+          contentAlign="center"
+          centerAlign="left"
+          left={<React.Fragment> {primaryAction} </React.Fragment>}
+          left={
+            <>
+              {<Title text={label} />}
+              {description ? <Description text={description} /> : null}
+            </>
+          }
+          right={secondaryAction}
+          rightWidth={(secondaryAction && children.props.width) || ""}
+        />)
+    }
+  }
+
   return (
     <ListItemWrapper
       active={active}
-      disabled={disabled}
       id={id}
       interactive={
         typeof interactive === "boolean"
           ? interactive
           : useContext(InteractiveContext)
       }
-      itemBGColor={itemBGColor}
-      itemColor={itemColor}
       onClick={onClick}
       tabIndex={disabled ? "-1" : "1"}
     >
       <DisabledContext.Provider value={disabled}>
-        <Bar
-          contentAlign="center"
-          centerAlign="left"
-          center={
-            <>
-              {<Title text={label} />}
-              {description ? <Description text={description} /> : null}
-            </>
-          }
-          right={children}
-          rightWidth={(children && children.props.width) || ""}
-        />
+        {content}
       </DisabledContext.Provider>
     </ListItemWrapper>
   );
@@ -156,7 +205,6 @@ ListItem.propTypes = {
   interactive: PropTypes.bool,
   label: PropTypes.string.isRequired,
   onClick: PropTypes.func,
-  type: PropTypes.oneOf(["info", "success", "warning", "alert"])
 };
 ListItem.defaultProps = {
   active: false,
@@ -166,7 +214,6 @@ ListItem.defaultProps = {
   id: null,
   interactive: null,
   onClick: null,
-  type: null
 };
 
 export { List as default, ListItem };
