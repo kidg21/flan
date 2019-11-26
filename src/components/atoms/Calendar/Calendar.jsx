@@ -7,7 +7,7 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
 import { DisabledContext } from "States";
-import Label from "base/Label";
+import Label from "atoms/Label";
 import TextInput from "atoms/TextInput";
 
 const CalendarContainer = styled(Grid)`

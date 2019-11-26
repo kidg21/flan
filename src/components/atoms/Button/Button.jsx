@@ -10,7 +10,7 @@ import { DisabledContext } from "States";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import { Skeleton } from "helpers";
-import Label from "base/Label";
+import Label from "atoms/Label";
 
 /** TODO: move these to Variables */
 
