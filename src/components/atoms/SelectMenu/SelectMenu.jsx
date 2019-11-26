@@ -7,7 +7,7 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import { fonts, colors, shadows } from "Variables";
 import Grid from "layout/Grid";
-import Label from "base/Label";
+import Label from "atoms/Label";
 import Select, { Creatable } from "react-select";
 import { Skeleton } from "helpers";
 import { DisabledContext } from "States";
@@ -280,8 +280,8 @@ function SelectMenu({
   const select = onCreateOption ? (
     <Creatable {...selectProps} />
   ) : (
-    <Select {...selectProps} />
-  );
+      <Select {...selectProps} />
+    );
 
   return (
     <SelectMenuContainer

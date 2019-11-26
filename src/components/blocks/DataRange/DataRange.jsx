@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { DisabledContext } from "States";
 import Bar from "blocks/Bar";
-import Label from "base/Label";
+import Label from "atoms/Label";
 import Grid from "layout/Grid";
 import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";

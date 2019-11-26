@@ -10,11 +10,11 @@ export {
   Link,
   Number
 } from "./base/Typography";
-export { default as Label } from "./base/Label";
 export { default as GlobalStyles } from "./base/GlobalStyles/GlobalStyles.jsx";
 
 // Publicly exported files from 'atoms'
 export { default as Avatar } from "./atoms/Avatar";
+export { default as Label } from "./atoms/Label";
 export { default as Badge } from "./atoms/Badge";
 export { default as Button } from "./atoms/Button";
 export { default as Calendar } from "./atoms/Calendar";
