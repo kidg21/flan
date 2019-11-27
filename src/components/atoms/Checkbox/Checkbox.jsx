@@ -138,7 +138,7 @@ function Checkbox({
         outlineColor={outlineColor}
         tabIndex={tabIndex}
       />
-      <Label htmlFor={id} text={label} />
+      {label ? <Label htmlFor={id} text={label} /> : null}
     </CheckboxContainer>
   );
 }
@@ -200,7 +200,7 @@ Checkbox.propTypes = {
   disabled: PropTypes.bool,
   error: PropTypes.bool,
   id: PropTypes.string,
-  label: PropTypes.string.isRequired,
+  label: PropTypes.node,
   onChange: PropTypes.func,
 };
 
@@ -208,6 +208,7 @@ Checkbox.defaultProps = {
   align: null,
   checked: null,
   disabled: false,
+  label: null,
   error: null,
   id: null,
   onChange: null,

@@ -49,7 +49,6 @@ export { default as MainPanelHeader } from "./elements/PanelHeaders/MainPanelHea
 export { default as PropertyPanelHeader } from "./elements/PanelHeaders/PropertyPanelHeader";
 export { default as NavigationPanelHeader } from "./elements/PanelHeaders/NavigationPanelHeader";
 export { default as Notification } from "./elements/Notification";
-export { default as PropertyListCard } from "./elements/ListCards/PropertyListCard";
 export { UserRoles, RolePermissions } from "./elements/UserRoles";
 export {
   default as Dialog,

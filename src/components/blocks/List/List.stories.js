@@ -10,9 +10,11 @@ import { Padding } from "helpers/Display";
 import Card from "layout/Card";
 import Command from "atoms/Command";
 import SelectMenu from "atoms/SelectMenu";
+import Radio from "atoms/Radio";
 import Checkbox from "atoms/Checkbox";
 import Switch from "atoms/Switch";
 import Image from "atoms/Image";
+import Button from "atoms/Button";
 import List, { ListItem } from "blocks/List";
 import ListNotes from "blocks/List/List.md";
 
@@ -126,80 +128,110 @@ storiesOf("Blocks|List", module)
           disabled
         />
         <ListItem label="List Item" description="This is the description" />
+        <ListItem label="List Item" description="This is the description" />
+        <ListItem label="List Item" description="This is the description" />
+        <ListItem label="List Item" description="This is the description" />
+        <ListItem label="List Item" description="This is the description" />
+        <ListItem label="List Item" description="This is the description" />
+      </List>
+    );
+  })
+
+  .add("Checkbox List", () => {
+    return (
+      <List interactive>
         <ListItem
-          label="List Item"
+          label="List Item (not interactive)"
           description="This is the description"
-          active
+          primaryAction={<Checkbox id="Checkbox 1" />}
+        />
+        <ListItem
+          label="List Item (disabled)"
+          description="This is the description"
+          primaryAction={<Checkbox id="Checkbox 2" />}
         />
         <ListItem
           label="List Item"
           description="This is the description"
-          type="info"
-          active
+          primaryAction={<Checkbox id="Checkbox 3" />}
         />
         <ListItem
           label="List Item"
           description="This is the description"
-          type="success"
-          active
+          primaryAction={<Checkbox id="Checkbox 4" />}
         />
         <ListItem
           label="List Item"
           description="This is the description"
-          type="warning"
-          active
+          primaryAction={<Checkbox id="Checkbox 5" />}
         />
         <ListItem
           label="List Item"
           description="This is the description"
-          type="alert"
-          active
+          primaryAction={<Checkbox id="Checkbox 6" />}
+        />
+        <ListItem
+          label="List Item"
+          description="This is the description"
+          primaryAction={<Checkbox id="Checkbox 7" />}
         />
       </List>
     );
   })
 
-  // .add("Checkbox List", () => {
-  //   return (
-  //     <List>
-  //       <ListItem label="Do Something?">
-  //         <Checkbox id="Checkbox 1" label="No" align="right" />
-  //       </ListItem>
-  //       <ListItem label="Something Else?" disabled>
-  //         <Checkbox id="Checkbox 2" label="Yes" align="right" />
-  //       </ListItem>
-  //       <ListItem label={<Checkbox id="Checkbox 3" label="Nah..." />} />
-  //       <ListItem label="Any Ideas?">
-  //         <Checkbox id="Checkbox 4" label="Gimme A Sec..." align="right" />
-  //       </ListItem>
-  //       <ListItem label="Flan?">
-  //         <Checkbox id="Checkbox 5" label="BINGO!!!" align="right" />
-  //       </ListItem>
-  //     </List>
-  //   );
-  // })
+  .add("Toggle List", () => {
+    return (
+      <List>
+        <ListItem label="Do Something?" secondaryAction={<Switch />} />
+        <ListItem label="Something Else?" secondaryAction={<Switch />} />
+        <ListItem label="How About This?" secondaryAction={<Switch />} />
+        <ListItem label="Any Ideas?" secondaryAction={<Switch />} />
+        <ListItem label="Flan?" secondaryAction={<Switch />} />
+      </List>
+    );
+  })
 
-  // .add("Toggle List", () => {
-  //   return (
-  //     <List>
-  //       <ListItem label="Do Something?">
-  //         <Switch />
-  //       </ListItem>
-  //       <ListItem label="Something Else?" disabled>
-  //         <Switch />
-  //       </ListItem>
-  //       <ListItem label="How About This?">
-  //         <Switch />
-  //       </ListItem>
-  //       <ListItem label="Any Ideas?">
-  //         <Switch />
-  //       </ListItem>
-  //       <ListItem label="Flan?">
-  //         <Switch />
-  //       </ListItem>
-  //     </List>
-  //   );
-  // })
+  .add("Action List", () => {
+    return (
+      <List interactive>
+        <ListItem
+          label="List Item (not interactive)"
+          description="This is the description"
+          secondaryAction={<Button label="Action" />}
+        />
+        <ListItem
+          label="List Item (disabled)"
+          description="This is the description"
+          secondaryAction={<Button label="Action" />}
+        />
+        <ListItem
+          label="List Item"
+          description="This is the description"
+          secondaryAction={<Button label="Action" />}
+        />
+        <ListItem
+          label="List Item"
+          description="This is the description"
+          secondaryAction={<Button label="Action" />}
+        />
+        <ListItem
+          label="List Item"
+          description="This is the description"
+          secondaryAction={<Button label="Action" />}
+        />
+        <ListItem
+          label="List Item"
+          description="This is the description"
+          secondaryAction={<Button label="Action" />}
+        />
+        <ListItem
+          label="List Item"
+          description="This is the description"
+          secondaryAction={<Button label="Action" />}
+        />
+      </List>
+    );
+  })
 
   // .add("Image List", () => {
   //   return (
@@ -226,57 +258,72 @@ storiesOf("Blocks|List", module)
   //   );
   // })
 
-  // .add("Select Menu List", () => {
-  //   return (
-  //     <List>
-  //       <ListItem label="Do Something?">
-  //         <SelectMenu
-  //           width="40%"
-  //           options={[
-  //             { value: "yes", label: "Yes" },
-  //             { value: "no", label: "No" }
-  //           ]}
-  //         />
-  //       </ListItem>
-  //       <ListItem label="Something Else?" disabled>
-  //         <SelectMenu
-  //           width="40%"
-  //           options={[
-  //             { value: "yes", label: "Yes" },
-  //             { value: "no", label: "No" }
-  //           ]}
-  //         />
-  //       </ListItem>
-  //       <ListItem label="How About This?">
-  //         <SelectMenu
-  //           width="40%"
-  //           options={[
-  //             { value: "yes", label: "Yes" },
-  //             { value: "no", label: "No" }
-  //           ]}
-  //         />
-  //       </ListItem>
-  //       <ListItem label="Any Ideas?">
-  //         <SelectMenu
-  //           width="40%"
-  //           options={[
-  //             { value: "yes", label: "Yes" },
-  //             { value: "no", label: "No" }
-  //           ]}
-  //         />
-  //       </ListItem>
-  //       <ListItem label="Flan?">
-  //         <SelectMenu
-  //           width="40%"
-  //           options={[
-  //             { value: "yes", label: "Yes" },
-  //             { value: "yes", label: "I said YES!" }
-  //           ]}
-  //         />
-  //       </ListItem>
-  //     </List>
-  //   );
-  // })
+  .add("Select Menu List", () => {
+    return (
+      <List>
+        <ListItem
+          label="Category1"
+          secondaryAction={
+            <SelectMenu
+              width="40%"
+              options={[
+                { value: "yes", label: "Yes" },
+                { value: "no", label: "No" },
+              ]}
+            />
+          }
+        />
+        <ListItem
+          label="Category2"
+          secondaryAction={
+            <SelectMenu
+              width="40%"
+              options={[
+                { value: "yes", label: "Yes" },
+                { value: "no", label: "No" },
+              ]}
+            />
+          }
+        />
+        <ListItem
+          label="Category3"
+          secondaryAction={
+            <SelectMenu
+              width="40%"
+              options={[
+                { value: "yes", label: "Yes" },
+                { value: "no", label: "No" },
+              ]}
+            />
+          }
+        />
+        <ListItem
+          label="Category4"
+          secondaryAction={
+            <SelectMenu
+              width="40%"
+              options={[
+                { value: "yes", label: "Yes" },
+                { value: "no", label: "No" },
+              ]}
+            />
+          }
+        />
+        <ListItem
+          label="Category5"
+          secondaryAction={
+            <SelectMenu
+              width="40%"
+              options={[
+                { value: "yes", label: "Yes" },
+                { value: "yes", label: "I said YES!" },
+              ]}
+            />
+          }
+        />
+      </List>
+    );
+  })
 
   .add("Mixed List", () => {
     return (
@@ -314,18 +361,21 @@ storiesOf("Blocks|List", module)
         <ListItem
           label="List Item"
           description="This description is much longer but that's okay because it will just keep on wrapping to the next line until you run out of things to say in support of the long title that you just typed above this one."
-        >
-          <Command command="settings" />
-        </ListItem>
-        <ListItem label="List Item">
-          <Checkbox id="enable" label="Enable" align="right" />
-        </ListItem>
+          secondaryAction={<Command command="settings" />}
+        />
+        <ListItem
+          label="List Item"
+          secondaryAction={
+            <Checkbox id="enable" label="Enable" align="right" />
+          }
+        />
         <ListItem
           label="This is a very long and informative title that might even need multiple lines to display it all"
           description="This description is much longer but that's okay because it will just keep on wrapping to the next line until you run out of things to say in support of the long title that you just typed above this one."
-        >
-          <Checkbox id="relaxed" label="Relaxed?" align="right" />
-        </ListItem>
+          secondaryAction={
+            <Checkbox id="relaxed" label="Relaxed?" align="right" />
+          }
+        />
       </List>
     );
   });

@@ -25,21 +25,6 @@ const ListWrapper = styled.ul`
   }
 `;
 
-// const Identifier = styled.div`
-// position: relative;
-// &:before {
-//   display: ${props => {
-//   return props.active ? "block" : "none";
-// }};
-//   content: "";
-//   position: absolute;
-//   top: 0%;
-//   left: 0%;
-//   height: 100%;
-//   border-style: solid;
-//   border-width: 2px;
-// }
-// `;
 
 const ListItemWrapper = styled.li`
   position: relative;
@@ -60,12 +45,8 @@ const ListItemWrapper = styled.li`
     ${props => {
     return props.interactive ? Darken : "";
   }};
-  &:selected {
-    outline: none;
-    ${props => {
-    return props.interactive ? Lighten : "";
-  }};
   }
+  outline: none;
   &[disabled] {
     cursor: not-allowed;
     pointer-events: none;
@@ -103,17 +84,19 @@ function ListItem({
   let content;
 
   if (primaryAction) {
-    <Bar
-      contentAlign="center"
-      centerAlign="left"
-      left={<React.Fragment> {primaryAction} </React.Fragment>}
-      center={
-        <>
-          {<Title text={label} />}
-          {description ? <Description text={description} /> : null}
-        </>
-      }
-    />
+    content = (
+      <Bar
+        leftWidth="5%"
+        contentAlign="center"
+        centerAlign="left"
+        left={primaryAction}
+        center={
+          <>
+            {<Title text={label} />}
+            {description ? <Description text={description} /> : null}
+          </>
+        }
+      />)
   }
   else {
     content = (
