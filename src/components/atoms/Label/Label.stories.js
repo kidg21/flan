@@ -9,7 +9,7 @@ import Grid from "layout/Grid";
 import Label from "./Label";
 
 /** TODO: Add 'Documentation' and 'Knobs' stories */
-storiesOf("Application|Style Guides/", module)
+storiesOf("Atoms/Label", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
   .add("Label", () => {

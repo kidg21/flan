@@ -77,6 +77,15 @@ storiesOf("Elements|Card", module)
       <Card title="Title" description="Card Description" icon="settings" />
     );
   })
+  .add("Example Icon", () => {
+    return (
+      <Card
+        title="Appraisal Research"
+        description="19-0942231 - 123 Main St, Woburn, MA 01801"
+        icon="analytics"
+      />
+    );
+  })
   .add("Media", () => {
     return <Card title="Title" description="Card Description" media={image} />;
   });

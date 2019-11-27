@@ -62,6 +62,42 @@ export const colors = {
   greyDark: "hsl(34, 5%, 28%)",
   greyLight: "hsl(34, 5%, 96%)",
 
+  bloodorange0: "hsl(10.3, 74.5%, 90.8%)",
+  bloodorange1: "hsl(11, 73.1%, 86.9%)",
+  bloodorange2: "hsl(11.4, 72.4%, 82.9%)",
+  bloodorange3: "hsl(11.5, 73.6%, 79.2%)",
+  bloodorange4: "hsl(11.7, 73%, 75.3%)",
+  bloodorange5: "hsl(11.3, 72.6%, 71.4%)",
+  bloodorange6: "hsl(11.4, 73.3%, 67.6%)",
+  bloodorange7: "hsl(11.6, 73%, 63.7%)",
+  bloodorange8: "hsl(11.7, 72.7%, 59.8%)",
+  bloodorange9: "hsl(11.7, 73.2%, 56.1%)",
+  bloodorange10: "hsl(11.5, 73%, 52.2%)",
+
+  cyan0: "hsl(195, 41.4%, 88.6%)",
+  cyan1: "hsl(195, 41%, 84.7%)",
+  cyan2: "hsl(193.5, 40.8%, 80.8%)",
+  cyan3: "hsl(193.8, 40.7%, 76.9%)",
+  cyan4: "hsl(195, 41.2%, 73.3%)",
+  cyan5: "hsl(194.1, 41%, 69.4%)",
+  cyan6: "hsl(194.2, 40.9%, 65.5%)",
+  cyan7: "hsl(194.3, 40.8%, 61.6%)",
+  cyan8: "hsl(193.6, 40.7%, 57.6%)",
+  cyan9: "hsl(194.4, 41%, 54.1%)",
+  cyan10: "hsl(194.4, 40.9%, 50.2%)",
+
+  moss0: "hsl(150, 28.6%, 94.5%)",
+  moss1: "hsl(152.3, 27.7%, 90.8%)",
+  moss2: "hsl(150, 27.9%, 83.1%)",
+  moss3: "hsl(152, 28.3%, 79.2%)",
+  moss4: "hsl(151.8, 27%, 75.7%)",
+  moss5: "hsl(153, 27.4%, 71.4%)",
+  moss6: "hsl(152, 27.3%, 67.6%)",
+  moss7: "hsl(151.8, 27.6%, 63.7%)",
+  moss8: "hsl(152.1, 27.5%, 60%)",
+  moss9: "hsl(151.9, 27.7%, 56.1%)",
+  moss10: "hsl(151.8, 27.9%, 52.2%)",
+
   grey0: "hsl(240, 24%, 96%)",
   grey1: "hsl(240, 11%, 91%)",
   grey2: "hsl(240, 6%, 83%)",
@@ -73,6 +109,18 @@ export const colors = {
   grey8: "hsl(240, 2%, 23%)",
   grey9: "hsl(240, 2%, 18%)",
   grey10: "hsl(240, 3%, 11%)",
+
+  gold0: "hsl(43.3, 75%, 95.3%)",
+  gold1: "hsl(44.1, 77.3%, 91.4%)",
+  gold2: "hsl(43.8, 75%, 87.5%)",
+  gold3: "hsl(96.1, 89.4%, 83.7%)",
+  gold4: "hsl(43.9, 75.6%, 75.9%)",
+  gold5: "hsl(43.9, 76.1%, 72.2%)",
+  gold6: "hsl(43.9, 76.4%, 68.4%)",
+  gold7: "hsl(43.9, 75.8%, 64.3%)",
+  gold8: "hsl(43.9, 76.1%, 60.6%)",
+  gold9: "hsl(43.9, 76.4%, 56.9%)",
+  gold10: "hsl(43.8, 75.8%, 52.9%)",
 
 
   orange: "hsl(30, 82%, 48%)",
@@ -166,6 +214,7 @@ export const DMPTheme = {
   accents: {
     black: colors.black,
     white: colors.white,
+    bloodOrange: colors.bloodorange7,
   },
   shadows: {
     shadow1: colors.shadow1,
@@ -274,6 +323,7 @@ export const darkTheme = {
   accents: {
     black: colors.black,
     white: colors.white,
+    bloodOrange: colors.bloodorange3,
   },
   shadows: {
     shadow1: colors.shadow1,

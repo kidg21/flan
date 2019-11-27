@@ -17,31 +17,64 @@ const TagContainer = styled.div`
   justify-content: center;
   vertical-align: center;
   display: flex;
+  margin: .5rem;
   width: 3rem;
   height: 3rem;
   align-items: center;
   background-color: ${(props) => {
     return (
       props.theme.palette[props.backgroundColor] ||
-      props.theme.palette.primaryLight
+      ""
     );
   }};
   color: ${(props) => {
-    return props.theme.palette[props.color] || props.theme.palette.primaryDark;
+    return props.theme.palette[props.textColor] || "";
   }};
   text-transform: uppercase;
   border-radius: 100%;
 `;
 
 function Avatar({
-  id, label, icon, backgroundColor, color, style,
+  id, label, icon, color, style,
 }) {
   let labelType;
   let iconType;
+  let backgroundColor;
+  let textColor;
+  switch (color && color.toLowerCase()) {
+    case "success":
+      backgroundColor = "success";
+      textColor = "successTint";
+      break;
+    case "warning":
+      backgroundColor = "warning";
+      textColor = "warningTint";
+      break;
+    case "alert":
+      backgroundColor = "alert";
+      textColor = "alertLight";
+      break;
+    case "info":
+      backgroundColor = "info";
+      textColor = "infoTint";
+      break;
+    case "primary":
+      backgroundColor = "primary";
+      textColor = "primaryTint";
+      break;
+    case "secondary":
+      backgroundColor = "secondaryLight";
+      textColor = "secondaryTint";
+      break;
+    default:
+      backgroundColor = "primaryLight";
+      textColor = "white";
+      break;
+  }
   if (icon) {
     iconType = <Icon icon={icon} size="lg" />;
   } else {
-    labelType = <AvatarText weight="bold" size="lg" text={label} />;
+    labelType = <AvatarText weight="semibold" size="lg" text={label} />;
   }
 
   return (
@@ -50,7 +83,7 @@ function Avatar({
       label={label}
       icon={icon}
       backgroundColor={backgroundColor}
-      color={color}
+      textColor={textColor}
       style={style}
     >
       {iconType || labelType}
@@ -63,7 +96,6 @@ Avatar.propTypes = {
   label: PropTypes.string,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   color: PropTypes.node,
-  backgroundColor: PropTypes.node,
   style: PropTypes.node,
 };
 
@@ -72,7 +104,6 @@ Avatar.defaultProps = {
   id: null,
   icon: null,
   color: null,
-  backgroundColor: null,
   style: null,
 };
 
