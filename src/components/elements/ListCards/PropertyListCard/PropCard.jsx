@@ -1,10 +1,12 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import Title from "base/Typography";
 import PropTypes from "prop-types";
 import Card from "layout/Card";
 import Command from "atoms/Command";
 import Bar from "blocks/Bar";
-import Grid from "layout/Grid";
 import styled from "styled-components";
 
 const Titles = styled.div`

@@ -1,21 +1,15 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
 import React, { useContext, useState } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { fonts, colors, shadows } from "Variables";
 import Grid from "layout/Grid";
-import { InputLabel, HelpText, ErrorText } from "layout/Form";
+import Label from "atoms/Label";
 import Select, { Creatable } from "react-select";
 import { Skeleton } from "helpers";
 import { DisabledContext } from "States";
-
-// &:focus {
-//   border-color: ${(props) => {
-//   return props.theme.palette[props.inputBorderColorHover] || props.theme.palette.primaryLight;
-// }};
-
-
-
-
 
 const selectStyles = {
   // Wrapper
@@ -27,16 +21,23 @@ const selectStyles = {
   },
   // Toggle UI
   control: (styles, { isDisabled, isFocused }) => {
-    let bgColor = "";
-    if (!isFocused) bgColor = isDisabled ? colors.grey_light : "";
-
+    let bgColor = colors.white;
+    if (!isFocused) bgColor = isDisabled ? colors.greyLight : colors.white;
+    /** TODO: Get an 'alert' border working on the select input.
+     * Need to handle all standard cases (default, focus, hover, error, and disabled)
+     */
+    let borderColor;
+    if (isDisabled) {
+      borderColor = colors.grey20;
+    } else if (isFocused) {
+      borderColor = `${colors.success}!important`;
+    } else {
+      borderColor = colors.grey40;
+    }
     return {
       ...styles,
       "backgroundColor": bgColor,
-      "borderColor": isFocused
-        ? `${colors.success}!important`
-        : colors.grey_20,
-      "borderBottomColor": colors.grey_20,
+      "borderColor": borderColor,
       "boxShadow": "none",
       "cursor": isDisabled ? "not-allowed" : "pointer",
       "flexWrap": "nowrap",
@@ -44,7 +45,7 @@ const selectStyles = {
       "letterSpacing": ".5px",
       "minHeight": "2.75rem",
       ":hover": {
-        borderColor: colors.grey_40,
+        borderColor: colors.grey60,
       },
     };
   },
@@ -52,7 +53,7 @@ const selectStyles = {
     return {
       ...styles,
       fontFamily: fonts.data,
-      color: isFocused ? colors.grey_60 : colors.grey_60,
+      color: isFocused ? colors.grey60 : colors.grey60,
       letterSpacing: ".5px",
       fontWeight: 400,
     };
@@ -70,21 +71,21 @@ const selectStyles = {
   clearIndicator: (styles, { isFocused }) => {
     return {
       ...styles,
-      color: isFocused ? colors.grey_40 : colors.grey_20,
+      color: isFocused ? colors.grey40 : colors.grey20,
     };
   },
   // pipe
   indicatorSeparator: (styles, { isDisabled }) => {
     return {
       ...styles,
-      backgroundColor: isDisabled ? colors.grey_40 : colors.grey_20,
+      backgroundColor: isDisabled ? colors.grey20 : colors.grey40,
     };
   },
   // down arrow
-  dropdownIndicator: (styles, { isFocused }) => {
+  dropdownIndicator: (styles, { isDisabled }) => {
     return {
       ...styles,
-      color: isFocused ? colors.grey_60 : colors.grey_60,
+      color: isDisabled ? colors.grey20 : colors.grey40,
     };
   },
   // multi element background
@@ -101,7 +102,7 @@ const selectStyles = {
     return {
       ...styles,
       fontFamily: fonts.data,
-      color: colors.grey_80,
+      color: colors.grey80,
     };
   },
   // multi element 'x' background
@@ -109,10 +110,10 @@ const selectStyles = {
     return {
       ...styles,
       ":hover": {
-        backgroundColor: colors.grey_40,
-        color: colors.grey_80,
+        backgroundColor: colors.grey40,
+        color: colors.grey80,
       },
-      "color": colors.grey_60,
+      "color": colors.grey60,
     };
   },
   // options menu
@@ -124,7 +125,7 @@ const selectStyles = {
       letterSpacing: ".5px",
       margin: ".25rem 0",
       border: "1px solid",
-      borderColor: colors.grey_40,
+      borderColor: colors.grey40,
       boxShadow: shadows.dropShadow,
     };
   },
@@ -137,11 +138,11 @@ const selectStyles = {
   },
   // Menu Options
   option: (styles, { isDisabled, isFocused, isSelected }) => {
-    let color = colors.grey_80;
+    let color = colors.grey80;
     if (isDisabled) {
-      color = colors.grey_40;
+      color = colors.grey40;
     } else if (isSelected) {
-      color = colors.grey_20;
+      color = colors.grey20;
     } else if (isFocused) {
       color = colors.black;
     }
@@ -157,10 +158,10 @@ const selectStyles = {
 
 const SelectMenuContainer = styled(Grid)`
   color: ${(props) => {
-    return props.theme.text[props.textColor] || props.theme.text.primary ;
-  }};
-  background-color: ${(props) => {
-    return props.theme.background.default;
+    let color = "";
+    if (props.error) color = colors.alert;
+    else if (props.disabled) color = colors.grey40;
+    return color;
   }};
   width: 100%;
   &:empty {
@@ -201,19 +202,22 @@ function SelectMenu({
 
   if (error && !disabled) {
     textColor = "alert";
-
   }
 
-  
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let selectedOpts = [];
   if (selectOptions) {
-    selectedOpts = selectOptions instanceof Array ? selectOptions : [selectOptions];
+    selectedOpts =
+      selectOptions instanceof Array ? selectOptions : [selectOptions];
     selectedOpts = options.filter((opt) => {
       if (opt.value instanceof Array) {
         for (let i = 0; i < selectedOpts.length; i++) {
           const targetOpts = multiSelect ? selectedOpts[i] : selectedOpts;
-          if (targetOpts instanceof Array && targetOpts.length === opt.value.length) {
+          if (
+            targetOpts instanceof Array &&
+            targetOpts.length === opt.value.length
+          ) {
             let isMatch = true;
             for (let j = 0; j < targetOpts.length; j++) {
               if (!opt.value.includes(targetOpts[j])) {
@@ -277,7 +281,8 @@ function SelectMenu({
     onBlur: onBlur,
     onFocus: onFocus,
   };
-  const select = isCreatable || onCreateOption ? <Creatable {...selectProps} /> : <Select {...selectProps} />;
+  const select = (isCreatable || onCreateOption) ?
+    <Creatable {...selectProps} /> : <Select {...selectProps} />;
 
   return (
     <SelectMenuContainer
@@ -288,12 +293,14 @@ function SelectMenu({
       columns="1"
       gap="tiny"
     >
-      {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
+      {label ? (
+        <Label size="sm" weight="bold" isRequired={isRequired} text={label} />
+      ) : null}
       {select}
       {/* Help Text */}
-      {helpText ? <HelpText>{helpText}</HelpText> : null}
+      {helpText ? <Label size="sm" text={helpText} /> : null}
       {/* Error Message (required) */}
-      {state.error ? <ErrorText>{state.error}</ErrorText> : null}
+      {state.error ? <Label size="sm" text={state.error} /> : null}
     </SelectMenuContainer>
   );
 }

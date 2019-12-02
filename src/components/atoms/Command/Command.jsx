@@ -1,3 +1,8 @@
+/* eslint-disable no-param-reassign */
+/* eslint-disable security/detect-object-injection */
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
 import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
@@ -27,7 +32,7 @@ const CommandContainer = styled.a`
     return props.commandSize || "";
   }};
   color: ${(props) => {
-    return props.theme.text[props.commandColor] || props.theme.text.info;
+    return props.theme.text[props.commandColor] || props.theme.text.link;
   }};
   user-select: none;
   cursor: ${(props) => {
@@ -52,8 +57,8 @@ const CommandName = styled(Title)`
   &:focus {
     border: 1px solid
       ${(props) => {
-        return props.theme.palette.primary;
-      }};
+    return props.theme.palette.primary;
+  }};
     outline: none;
   }
   cursor: pointer;
@@ -64,54 +69,56 @@ const CommandIcon = styled(Icon)`
 `;
 
 const commandHash = {
-  add: { icon: "plus", label: "Add" },
-  address: { icon: "address", label: "Address" },
-  apn: { icon: "apn", label: "APN" },
-  apply: { icon: "check", label: "Apply" },
-  bookmark: { icon: "bookmark", label: "Bookmark" },
-  close: { icon: "close", label: "Close" },
-  compare: { icon: "compare", label: "Compare" },
-  copy: { icon: "copy", label: "Copy" },
-  contacts: { icon: "contacts", label: "Contacts" },
-  delete: { icon: "delete", label: "Delete" },
-  download: { icon: "download", label: "Download" },
-  edit: { icon: "edit", label: "Edit" },
-  exclude: { icon: "exclude", label: "Exclude" },
-  favorites: { icon: "star", label: "Favorites" },
-  filter: { icon: "filter", label: "Filter" },
-  gps: { icon: "gps", label: "GPS" },
-  help: { icon: "help", label: "Help" },
-  include: { icon: "include", label: "Include" },
-  info: { icon: "info_circle", label: "Info" },
-  measure: { icon: "measure", label: "Measure" },
-  menu: { icon: "bars", label: "Menu" },
-  new: { icon: "plus_square", label: "New" },
-  notifications: { icon: "notification", label: "Notifications" },
-  open: { icon: "open", label: "Open" },
-  photos: { icon: "photos", label: "Photos" },
-  preferences: { icon: "preferences", label: "Preferences" },
-  print: { icon: "print", label: "Print" },
-  profile: { icon: "user", label: "Profile" },
-  redo: { icon: "redo", label: "Redo" },
-  reports: { icon: "report", label: "Reports" },
-  save: { icon: "save", label: "Save" },
-  search: { icon: "search", label: "Search" },
-  settings: { icon: "settings", label: "Settings" },
-  share: { icon: "share", label: "Share" },
-  support: { icon: "support", label: "Support" },
-  sync: { icon: "sync", label: "Sync" },
-  undo: { icon: "undo", label: "Undo" },
-  upload: { icon: "upload", label: "Upload" },
-  view: { icon: "view", label: "View" },
+  "add": { icon: "plus", label: "Add" },
+  "address": { icon: "address", label: "Address" },
+  "apn": { icon: "apn", label: "APN" },
+  "apply": { icon: "check", label: "Apply" },
+  "bookmark": { icon: "bookmark", label: "Bookmark" },
+  "close": { icon: "close", label: "Close" },
+  "compare": { icon: "compare", label: "Compare" },
+  "copy": { icon: "copy", label: "Copy" },
+  "contacts": { icon: "contacts", label: "Contacts" },
+  "delete": { icon: "delete", label: "Delete" },
+  "download": { icon: "download", label: "Download" },
+  "edit": { icon: "edit", label: "Edit" },
+  "exclude": { icon: "exclude", label: "Exclude" },
+  "favorites": { icon: "star", label: "Favorites" },
+  "filter": { icon: "filter", label: "Filter" },
+  "gps": { icon: "gps", label: "GPS" },
+  "help": { icon: "help", label: "Help" },
+  "include": { icon: "include", label: "Include" },
+  "info": { icon: "info_circle", label: "Info" },
+  "measure": { icon: "measure", label: "Measure" },
+  "menu": { icon: "bars", label: "Menu" },
+  "new": { icon: "plus_square", label: "New" },
+  "notifications": { icon: "notification", label: "Notifications" },
+  "open": { icon: "open", label: "Open" },
+  "photos": { icon: "photos", label: "Photos" },
+  "preferences": { icon: "preferences", label: "Preferences" },
+  "print": { icon: "print", label: "Print" },
+  "profile": { icon: "user", label: "Profile" },
+  "redo": { icon: "redo", label: "Redo" },
+  "reports": { icon: "report", label: "Reports" },
+  "save": { icon: "save", label: "Save" },
+  "search": { icon: "search", label: "Search" },
+  "settings": { icon: "settings", label: "Settings" },
+  "share": { icon: "share", label: "Share" },
+  "support": { icon: "support", label: "Support" },
+  "sync": { icon: "sync", label: "Sync" },
+  "undo": { icon: "undo", label: "Undo" },
+  "upload": { icon: "upload", label: "Upload" },
+  "view": { icon: "view", label: "View" },
   "zoom extents": { icon: "zoom_extents", label: "Zoom Extents" },
 };
 
-function Command({ align, command, disabled, icon, id, label, onClick, size }) {
+function Command({
+  align, command, disabled, icon, id, label, onClick, size,
+}) {
   command = commandHash[command] || { icon, label };
   let alignCommand = "";
   let alignIcon = "";
   let justifyIcon = "flex-start";
-  let commandColor = "info";
+  let commandColor;
   let commandSize = "";
 
   switch (align) {

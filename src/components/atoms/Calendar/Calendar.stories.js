@@ -1,8 +1,16 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
-import { withKnobs, text, boolean, optionsKnob as options } from "@storybook/addon-knobs";
+import {
+  withKnobs,
+  text,
+  boolean,
+  optionsKnob as options,
+} from "@storybook/addon-knobs";
 import { Padding } from "helpers/Display";
 import Form from "layout/Form";
 import Calendar from "atoms/Calendar";
@@ -58,9 +66,14 @@ storiesOf("Atoms|Calendar", module)
           "Calendar",
         )}
         label={text("label", "Input Label", "Calendar")}
-        helpText={text("help text", "Hang in there, buddy, I'm here to help!", "Calendar")}
+        helpText={text(
+          "help text",
+          "Hang in there, buddy, I'm here to help!",
+          "Calendar",
+        )}
         error={
-          boolean("error", false, "Calendar") && text("error text", "Error message...", "Calendar")
+          boolean("error", false, "Calendar") &&
+          text("error text", "Error message...", "Calendar")
         }
         disabled={boolean("disabled", false, "Calendar")}
       />
@@ -91,6 +104,12 @@ storiesOf("Atoms|Calendar", module)
           label="Date Input Label"
           helpText="Hang in there, buddy, I'm here to help!"
           error="Don't sweat it...we can fix this!"
+        />
+        <Calendar
+          type="date"
+          label="Date Input Label"
+          helpText="Hang in there, buddy, I'm here to help!"
+          warning="WARNING!"
         />
       </Form>
     );

@@ -5,7 +5,12 @@ import { css, keyframes } from "styled-components";
 export const Skeleton = css`
   content: "";
   display: block;
-  background-color: linear-gradient(-90deg, #f0f0f0 0%, #f4f4f8 50%, #f0f0f0 100%);
+  background-image: linear-gradient(
+    -90deg,
+    #f0f0f0 0%,
+    #f4f4f8 50%,
+    #f0f0f0 100%
+  );
   background-size: 200px 32px;
   border-radius: 4px;
   animation: pulse 1.5s ease-in-out infinite;

@@ -1,9 +1,11 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
-import { InputLabel, HelpText, ErrorText } from "layout/Form";
+import Label from "atoms/Label";
 import Grid from "layout/Grid";
 
 const TextInputContainer = styled(Grid)`
@@ -15,13 +17,18 @@ const TextInputContainer = styled(Grid)`
 
 
 const Input = styled.input`
+  color: inherit;
   line-height: normal;
   border: 1px solid;
   border-color: ${(props) => {
-    return props.theme.palette[props.inputBorderColor] || props.theme.palette.grey5;
+    return (
+      props.theme.palette[props.inputBorderColor] || props.theme.palette.grey4
+    );
   }};
   background-color: ${(props) => {
-    return props.theme.palette[props.inputFillColor] || props.theme.background.default;
+    return (
+      props.theme.palette[props.inputFillColor] || props.theme.palette.white
+    );
   }};
   caret-color: ${(props) => {
     return props.theme.palette[props.inputCaretColor] || "";
@@ -33,23 +40,40 @@ const Input = styled.input`
     return props.inputResize || "";
   }};
   ::placeholder {
+    font-weight: initial;
+    font-size: 1rem;
+    letter-spacing: .5px;
     color: ${(props) => {
-    return props.theme.text[props.placeholderColor] || props.theme.text.secondary;
+    return (
+      props.theme.text[props.placeholderColor] || props.theme.text.secondary
+    );
   }};
   }
   &:hover {
     border-color: ${(props) => {
-    return props.theme.palette[props.inputBorderColorHover] || props.theme.palette.border;
+    return (
+      props.theme.palette[props.inputBorderColorHover] ||
+      props.theme.palette.grey3
+    );
   }};
     }
   }
   &:focus {
     border-color: ${(props) => {
-    return props.theme.palette[props.inputBorderColorHover] || props.theme.palette.secondary;
+    return (
+      props.theme.palette[props.inputBorderColorHover] ||
+      props.theme.palette.secondary
+    );
   }};
     ::selection {
+      color: ${(props) => {
+    return props.theme.text.selected;
+  }};
       background-color: ${(props) => {
-    return props.theme.palette[props.inputSelectColor] || props.theme.palette.grey5;
+    return (
+      props.theme.palette[props.inputSelectColor] ||
+      props.theme.background.selected
+    );
   }};
     }
   }
@@ -93,8 +117,8 @@ function TextInput({
     as = "textarea";
     inputResize = "vertical";
   } else if (type === "search") {
-    inputBorderColor = "primaryLight";
-    inputBorderColorHover = "primary";
+    // inputBorderColor = "primaryLight";
+    // inputBorderColorHover = "primary";
   }
   // construct datalist element for autocompletes if appropriate props passed in
   // the autocompleteListId is used to ensure each textinput only draws from its own datalist element
@@ -115,25 +139,33 @@ function TextInput({
         </option>
       );
     });
-    autocompleteDataList = <datalist id={autoCompleteDataListId}>{options}</datalist>;
+    autocompleteDataList = (
+      <datalist id={autoCompleteDataListId}>{options}</datalist>
+    );
   }
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  let errorText;
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
-    inputTextColor = "disabled";
-    inputFillColor = "disabled";
     inputBorderColor = "grey5";
+    inputFillColor = "disabled";
     inputTextColor = "disabled";
-  }
-
-  if (error && !disabled) {
+  } else if (error) {
+    inputBorderColor = "alertBright";
+    inputBorderColorHover = "alertLight";
+    inputSelectColor = "alertBright";
     inputTextColor = "alert";
-    inputBorderColor = "alertTint";
-    inputBorderColorHover = "alert";
-    inputSelectColor = "alert";
+    placeholderColor = "primary";
+    errorText = typeof error === "string" ? error : "";
+  } else if (warning) {
+    inputBorderColor = "warningBright";
+    inputBorderColorHover = "warningLight";
+    inputSelectColor = "warningBright";
+    inputTextColor = "warning";
+    placeholderColor = "primary";
+    errorText = typeof warning === "string" ? warning : "";
   }
 
-  const errorText = typeof error === "string" ? error : "";
-  const warningText = typeof warning === "string" ? warning : "";
   return (
     <TextInputContainer
       id={id}
@@ -142,7 +174,9 @@ function TextInput({
       columns="1"
       className={className}
     >
-      {label ? <InputLabel isRequired={isRequired} label={label} /> : null}
+      {label ? (
+        <Label weight="bold" size="sm" isRequired={isRequired} text={label} />
+      ) : null}
       <Input
         as={as}
         disabled={isDisabled} // input attribute
@@ -170,9 +204,9 @@ function TextInput({
         cols={cols} // textarea attribute
       />
       {autocompleteDataList}
-      {helpText ? <HelpText>{helpText}</HelpText> : null}
+      {helpText ? <Label size="sm" text={helpText} /> : null}
       {children}
-      {!disabled ? <ErrorText warning={warningText}>{errorText}</ErrorText> : null}
+      {errorText ? <Label size="sm" text={errorText} /> : null}
     </TextInputContainer>
   );
 }

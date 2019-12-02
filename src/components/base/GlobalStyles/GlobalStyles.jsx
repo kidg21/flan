@@ -1,3 +1,9 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
 import { createGlobalStyle } from "styled-components";
 import styledNormalize from "styled-normalize";
 import { Skeleton } from "helpers";
@@ -27,11 +33,10 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: inherit;
     }
     body {
-        position: fixed;
+        /* position: fixed; */
         width: 100%;
         height: 100%;
         font-family: ${fonts.body}; /* Muli */
-        // color: ${colors.grey_80};
         font-weight: 400;
         line-height: 1.45;
         overscroll-behavior: none;
@@ -198,7 +203,8 @@ const GlobalStyles = createGlobalStyle`
     label {
       font-family: ${fonts.data};
       font-size: 0.876rem;
-      font-weight: 500;
+      font-weight: 600;
+      letter-spacing: 1px;
       &:empty {
         &:before {
           ${Skeleton};
@@ -243,9 +249,8 @@ const GlobalStyles = createGlobalStyle`
       box-sizing: border-box;
       width: 100%;
       font-family: ${fonts.data};
-      letter-spacing: 1px;
+      letter-spacing: 2px;
       border-radius: 5px;
-      font-size: 12px;
       transition: border-color 0.1s linear, background 0.1s linear;
       appearance: none;
       &:focus {

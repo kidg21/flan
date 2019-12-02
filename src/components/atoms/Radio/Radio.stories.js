@@ -1,10 +1,18 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
-import { withKnobs, text, boolean, optionsKnob as options } from "@storybook/addon-knobs";
-import { Section } from "layout/Form";
+import {
+  withKnobs,
+  text,
+  boolean,
+  optionsKnob as options,
+} from "@storybook/addon-knobs";
+import Form, { Section } from "layout/Form";
 import Radio, { RadioGroup } from "atoms/Radio";
 import RadioNotes from "./Radio.md";
 import RadioGroupNotes from "./RadioGroup.md";
@@ -48,7 +56,8 @@ const longLabels = [
     id: "radio_long2",
     name: "radio-group",
     value: "6",
-    label: "Enough with these long labels already...put it on your blog, Shakespeare.",
+    label:
+      "Enough with these long labels already...put it on your blog, Shakespeare.",
   },
 ];
 
@@ -98,16 +107,32 @@ storiesOf("Atoms|Radio", module)
     return (
       <RadioGroup>
         <Radio id="default" value="default" label="Default" name="states" />
-        <Radio id="selected" value="selected" label="Selected" name="states" checked />
-        <Radio id="error" value="error" label="Error" name="states" error />
-        <Radio id="disabled" value="disabled" label="Disabled" name="states" disabled />
+        <Radio
+          id="selected"
+          value="selected"
+          label="Selected"
+          name="states"
+          checked
+        />
+        <Radio
+          id="disabled"
+          value="disabled"
+          label="Disabled"
+          name="states"
+          disabled
+        />
       </RadioGroup>
     );
   })
   .add("Radio (alignment)", () => {
     return (
       <RadioGroup>
-        <Radio id="standard" value="standard" label="Standard" name="alignment" />
+        <Radio
+          id="standard"
+          value="standard"
+          label="Standard"
+          name="alignment"
+        />
         <Radio
           id="align-right"
           value="align-right"
@@ -134,73 +159,111 @@ storiesOf("Blocks|Radio Group", module)
     "Documentation",
     withInfo()(() => {
       return (
-        <RadioGroup
-          id="group1"
-          label="Radio Group Label"
-          data={shortLabels}
-          helpText="Hang in there, buddy, I'm here to help!"
-        />
+        <Form>
+          <Section>
+            <RadioGroup
+              id="group1"
+              label="Radio Group Label"
+              data={shortLabels}
+              helpText="Hang in there, buddy, I'm here to help!"
+            />
+          </Section>
+        </Form>
       );
     }),
   )
   .add("Knobs", () => {
     return (
-      <RadioGroup
-        id="group1"
-        data={shortLabels}
-        columns={options(
-          "columns",
-          {
-            "auto ( default )": "default",
-            one: "1",
-            two: "2",
-            three: "3",
-            four: "4",
-            five: "5",
-            six: "6",
-          },
-          "default",
-          { display: "select" },
-          "Radio Group",
-        )}
-        isRequired={boolean("required", false, "Radio Group")}
-        label={text("Input Label", "Input Label", "Radio Group")}
-        helpText={text("Help Text", "Have you been helped yet?", "Radio Group")}
-        align={options(
-          "box align",
-          {
-            left: null,
-            right: "right",
-          },
-          null,
-          { display: "select" },
-          "Radio Group",
-        )}
-        error={
-          boolean("error", false, "Radio Group") &&
-          text("error text", "Error message...", "Radio Group")
-        }
-        disabled={boolean("disabled", false, "Radio Group")}
-      />
+      <Form>
+        <Section title="Knobs">
+          <RadioGroup
+            id="group1"
+            data={shortLabels}
+            columns={options(
+              "columns",
+              {
+                "auto ( default )": "default",
+                "one": "1",
+                "two": "2",
+                "three": "3",
+                "four": "4",
+                "five": "5",
+                "six": "6",
+              },
+              "default",
+              { display: "select" },
+              "Radio Group",
+            )}
+            isRequired={boolean("required", false, "Radio Group")}
+            label={text("Input Label", "Input Label", "Radio Group")}
+            helpText={text(
+              "Help Text",
+              "Have you been helped yet?",
+              "Radio Group",
+            )}
+            align={options(
+              "box align",
+              {
+                left: null,
+                right: "right",
+              },
+              null,
+              { display: "select" },
+              "Radio Group",
+            )}
+            error={
+              boolean("error", false, "Radio Group") &&
+              text("error text", "Error message...", "Radio Group")
+            }
+            disabled={boolean("disabled", false, "Radio Group")}
+          />
+        </Section>
+      </Form>
     );
   })
   .add("Radio Group (responsive)", () => {
-    return <RadioGroup data={shortLabels} />;
+    return (
+      <Form>
+        <Section title="Checkbox Group (responsive)">
+          <RadioGroup data={shortLabels} />
+        </Section>
+      </Form>
+    );
   })
   .add("Radio Group (2 columns)", () => {
-    return <RadioGroup data={shortLabels} columns="2" />;
+    return (
+      <Form>
+        <Section title="Checkbox Group (2 columns)">
+          <RadioGroup data={shortLabels} columns="2" />
+        </Section>
+      </Form>
+    );
   })
   .add("Radio Group (3 columns)", () => {
-    return <RadioGroup data={shortLabels} columns="3" />;
+    return (
+      <Form>
+        <Section title="Checkbox Group (3 columns)">
+          <RadioGroup data={shortLabels} columns="3" />
+        </Section>
+      </Form>
+    );
   })
   .add("Radio Group (mixed columns)", () => {
     return (
-      <Section>
-        <RadioGroup data={shortLabels} columns="2" />
-        <RadioGroup data={longLabels} columns="1" />
-      </Section>
+      <Form>
+        <Section title="Checkbox Group (mixed columns)">
+          <RadioGroup data={shortLabels} columns="2" />
+          <RadioGroup data={longLabels} columns="1" />
+        </Section>
+      </Form>
     );
   })
   .add("Radio Group (right-aligned)", () => {
-    return <RadioGroup data={shortLabels} columns="2" align="right" />;
+    return (
+      <Form>
+        <Section title="Checkbox Group (right-aligned)">
+          <RadioGroup data={shortLabels} columns="2" align="right" />
+        </Section>
+      </Form>
+    );
   });

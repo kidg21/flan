@@ -1,9 +1,13 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { DisabledContext } from "States";
 import Bar from "blocks/Bar";
-import { InputLabel, HelpText, ErrorText } from "layout/Form";
+import Label from "atoms/Label";
 import Grid from "layout/Grid";
 import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";
@@ -34,17 +38,18 @@ function DataRange({
   optionsMin,
 }) {
   let inputTextColor;
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (error && !isDisabled) {
     inputTextColor = "alert";
   }
   function onChangeMin(currState, newState, setState) {
-    if (onChange) onChange({ min: newState ? newState.selected : currState.target.value });
+    if (onChange) { onChange({ min: newState ? newState.selected : currState.target.value }); }
     if (setState) setState(newState);
   }
 
   function onChangeMax(currState, newState, setState) {
-    if (onChange) onChange({ max: newState ? newState.selected : currState.target.value });
+    if (onChange) { onChange({ max: newState ? newState.selected : currState.target.value }); }
     if (setState) setState(newState);
   }
   return (
@@ -55,7 +60,9 @@ function DataRange({
       columns="1"
       gap="tiny"
     >
-      {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
+      {label ? (
+        <Label size="sm" weight="bold" isRequired={isRequired} text={label} />
+      ) : null}
       <Bar
         padding="none"
         withSelector={withSelector}
@@ -70,13 +77,13 @@ function DataRange({
             />
           ) : (
             <TextInput
-              label={labelMin}
-              options={optionsMin}
-              onChange={onChangeMin}
-              error={!!error}
-              disabled={isDisabled}
-            />
-          )
+                label={labelMin}
+                options={optionsMin}
+                onChange={onChangeMin}
+                error={!!error}
+                disabled={isDisabled}
+              />
+            )
         }
         center={
           withSelector ? (
@@ -98,17 +105,19 @@ function DataRange({
             />
           ) : (
             <TextInput
-              label={labelMax}
-              options={optionsMax}
-              onChange={onChangeMax}
-              error={!!error}
-              disabled={isDisabled}
-            />
-          )
+                label={labelMax}
+                options={optionsMax}
+                onChange={onChangeMax}
+                error={!!error}
+                disabled={isDisabled}
+              />
+            )
         }
       />
-      {helpText ? <HelpText>{helpText}</HelpText> : null}
-      {typeof error === "string" && !isDisabled ? <ErrorText>{error}</ErrorText> : null}
+      {helpText ? <Label size="sm" text={helpText} /> : null}
+      {typeof error === "string" && !isDisabled ? (
+        <Label size="sm" text={error} />
+      ) : null}
     </RangeContainer>
   );
 }
@@ -126,7 +135,6 @@ DataRange.propTypes = {
   labelMax: PropTypes.string.isRequired,
   labelMin: PropTypes.string.isRequired,
   onChange: PropTypes.func,
-  optionsSelect: PropTypes.func,
   optionsMax: PropTypes.map,
   optionsMin: PropTypes.map,
 };

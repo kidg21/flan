@@ -1,10 +1,18 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
 import { withInfo } from "@storybook/addon-info";
-import { withKnobs, text, boolean, object, optionsKnob as options } from "@storybook/addon-knobs";
+import {
+  withKnobs,
+  text,
+  boolean,
+  object,
+  optionsKnob as options,
+} from "@storybook/addon-knobs";
 import Panel, { PanelSection } from "layout/Panel";
 import Form, { Section } from "layout/Form";
 import InputBlock from "blocks/InputBlock";
@@ -147,9 +155,15 @@ storiesOf("Blocks|Input Block", module)
           )
         }
         // button={text("button label", "Button", "Button")}
-        button={boolean("button", false, "Input Block") && object("button", button, "Button")}
+        button={
+          boolean("button", false, "Input Block") &&
+          object("button", button, "Button")
+        }
         // options={titles}
-        options={boolean("options", false, "Input Block") && object("options", titles, "Options")}
+        options={
+          boolean("options", false, "Input Block") &&
+          object("options", titles, "Options")
+        }
         selectOptions={titles[0].value}
       />
     );
@@ -303,102 +317,105 @@ storiesOf("Blocks|Input Block", module)
   });
 
 // Input Block ( The Input Block Family )
-storiesOf("Blocks|Input Block", module).add("The Input Block Block Family", () => {
-  return (
-    <Panel>
-      <PanelSection body>
-        <Form title="The Input Block Family">
-          <Section>
-            <InputBlock
-              label="Input Block ( standard )"
-              textInputs={inputsOne}
-              helpText="Hang in there, buddy, I'm here to help!"
-            />
-            <InputBlock
-              label="Input Block ( required )"
-              isRequired
-              textInputs={inputsOne}
-              helpText="Hang in there, buddy, I'm here to help!"
-            />
-            <InputBlock
-              label="Input Block ( error )"
-              textInputs={inputsOne}
-              helpText="Hang in there, buddy, I'm here to help!"
-              error="Don't sweat it...we can fix this!"
-            />
-            <InputBlock
-              label="Input Block ( disabled )"
-              textInputs={inputsOne}
-              helpText="Hang in there, buddy, I'm here to help!"
-              disabled
-            />
-            <InputBlock
-              label="Input Block ( 2 inputs )"
-              textInputs={inputsTwo}
-              helpText="Hang in there, buddy, I'm here to help!"
-            />
-            <InputBlock
-              label="Input Block ( 3 inputs )"
-              textInputs={inputsThree}
-              helpText="Hang in there, buddy, I'm here to help!"
-            />
-            <InputBlock
-              label="Input Block ( pre-label )"
-              prefix
-              text="prefix"
-              textInputs={inputsOne}
-              helpText="Hang in there, buddy, I'm here to help!"
-            />
-            <InputBlock
-              label="Input Block ( post-label )"
-              text="postfix"
-              textInputs={inputsOne}
-              helpText="Hang in there, buddy, I'm here to help!"
-            />
-            <InputBlock
-              label="Input Block ( pre-select )"
-              prefix
-              options={titles}
-              selectOptions={titles[0].value}
-              textInputs={inputsOne}
-              helpText="Hang in there, buddy, I'm here to help!"
-            />
-            <InputBlock
-              label="Input Block ( post-select )"
-              options={domains}
-              selectOptions={domains[0].value}
-              textInputs={inputsOne}
-              helpText="Hang in there, buddy, I'm here to help!"
-            />
-            <InputBlock
-              label="Input Block ( pre-icon )"
-              prefix
-              icon="user"
-              textInputs={inputsOne}
-              helpText="Hang in there, buddy, I'm here to help!"
-            />
-            <InputBlock
-              label="Input Block ( post-icon )"
-              icon="user"
-              textInputs={inputsOne}
-              helpText="Hang in there, buddy, I'm here to help!"
-            />
-            <InputBlock
-              prefix
-              label="Input Block ( pre-button )"
-              button={button}
-              textInputs={inputsOne}
-              helpText="Hang in there, buddy, I'm here to help!"
-            />
-            <InputBlock
-              label="Input Block ( post-button )"
-              button={button}
-              textInputs={inputsOne}
-              helpText="Hang in there, buddy, I'm here to help!"
-            />
-          </Section>
-        </Form>
-      </PanelSection>
-    </Panel>
-  );
-});
+storiesOf("Blocks|Input Block", module).add(
+  "The Input Block Block Family",
+  () => {
+    return (
+      <Panel>
+        <PanelSection body>
+          <Form title="The Input Block Family">
+            <Section>
+              <InputBlock
+                label="Input Block ( standard )"
+                textInputs={inputsOne}
+                helpText="Hang in there, buddy, I'm here to help!"
+              />
+              <InputBlock
+                label="Input Block ( required )"
+                isRequired
+                textInputs={inputsOne}
+                helpText="Hang in there, buddy, I'm here to help!"
+              />
+              <InputBlock
+                label="Input Block ( error )"
+                textInputs={inputsOne}
+                helpText="Hang in there, buddy, I'm here to help!"
+                error="Don't sweat it...we can fix this!"
+              />
+              <InputBlock
+                label="Input Block ( disabled )"
+                textInputs={inputsOne}
+                helpText="Hang in there, buddy, I'm here to help!"
+                disabled
+              />
+              <InputBlock
+                label="Input Block ( 2 inputs )"
+                textInputs={inputsTwo}
+                helpText="Hang in there, buddy, I'm here to help!"
+              />
+              <InputBlock
+                label="Input Block ( 3 inputs )"
+                textInputs={inputsThree}
+                helpText="Hang in there, buddy, I'm here to help!"
+              />
+              <InputBlock
+                label="Input Block ( pre-label )"
+                prefix
+                text="prefix"
+                textInputs={inputsOne}
+                helpText="Hang in there, buddy, I'm here to help!"
+              />
+              <InputBlock
+                label="Input Block ( post-label )"
+                text="postfix"
+                textInputs={inputsOne}
+                helpText="Hang in there, buddy, I'm here to help!"
+              />
+              <InputBlock
+                label="Input Block ( pre-select )"
+                prefix
+                options={titles}
+                selectOptions={titles[0].value}
+                textInputs={inputsOne}
+                helpText="Hang in there, buddy, I'm here to help!"
+              />
+              <InputBlock
+                label="Input Block ( post-select )"
+                options={domains}
+                selectOptions={domains[0].value}
+                textInputs={inputsOne}
+                helpText="Hang in there, buddy, I'm here to help!"
+              />
+              <InputBlock
+                label="Input Block ( pre-icon )"
+                prefix
+                icon="user"
+                textInputs={inputsOne}
+                helpText="Hang in there, buddy, I'm here to help!"
+              />
+              <InputBlock
+                label="Input Block ( post-icon )"
+                icon="user"
+                textInputs={inputsOne}
+                helpText="Hang in there, buddy, I'm here to help!"
+              />
+              <InputBlock
+                prefix
+                label="Input Block ( pre-button )"
+                button={button}
+                textInputs={inputsOne}
+                helpText="Hang in there, buddy, I'm here to help!"
+              />
+              <InputBlock
+                label="Input Block ( post-button )"
+                button={button}
+                textInputs={inputsOne}
+                helpText="Hang in there, buddy, I'm here to help!"
+              />
+            </Section>
+          </Form>
+        </PanelSection>
+      </Panel>
+    );
+  },
+);
