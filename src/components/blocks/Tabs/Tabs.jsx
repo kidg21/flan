@@ -1,7 +1,9 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React, { Fragment, useContext } from "react";
 import styled from "styled-components";
-import { shadows } from "Variables";
-import { DisabledContext } from "States";
 import PropTypes from "prop-types";
 import Button from "atoms/Button";
 
@@ -52,7 +54,7 @@ const TabsWrapper = styled.section`
 `;
 
 function Tabs({
-  id, children, columns, align, style, gap, margin
+  id, children, columns, align, style, margin, gap,
 }) {
   let setColumns;
   let border;
@@ -140,7 +142,6 @@ function Tab({
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
 
 
-
   return (
     <Fragment>
       {isSelected ? (
@@ -157,17 +158,17 @@ function Tab({
         />
       ) : (
         <Button
-          id={id}
-          icon={icon}
-          size={size}
-          label={tabLabel}
-          onClick={onClick}
-          isSelected={isSelected}
-          disabled={isDisabled}
-          color={type && type.toLowerCase() === "inactive" ? "grey" : color}
-          type={type && type.toLowerCase() === "inline" ? type : null}
-        />
-      )}
+            id={id}
+            icon={icon}
+            size={size}
+            label={tabLabel}
+            onClick={onClick}
+            isSelected={isSelected}
+            disabled={isDisabled}
+            color={type && type.toLowerCase() === "inactive" ? "grey" : color}
+            type={type && type.toLowerCase() === "inline" ? type : null}
+          />
+        )}
     </Fragment>
   );
 }
@@ -190,6 +191,24 @@ Tab.propTypes = {
   color: PropTypes.string,
   type: PropTypes.string,
   size: PropTypes.string,
+};
+
+
+Tabs.defaultProps = {
+  id: null,
+  columns: null,
+  align: null,
+  style: null,
+};
+
+Tab.defaultProps = {
+  id: null,
+  icon: false,
+  isSelected: false,
+  disabled: false,
+  color: null,
+  type: null,
+  size: null,
 };
 
 export { Tabs as default, Tab };

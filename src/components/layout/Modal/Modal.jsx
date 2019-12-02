@@ -1,3 +1,8 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable react/forbid-prop-types */
+/* eslint-disable no-unused-vars */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
 import React, { Fragment, useState } from "react";
 import styled, { keyframes } from "styled-components";
 import { screen } from "Variables";
@@ -100,12 +105,12 @@ const ModalContainer = styled.div`
   overflow: hidden;
   ${ContentWrapper}, ${Image} {
     animation-name: ${(props) => {
-      if (!props.action) return null;
-      return props.action === "open" ? moveDown : moveUp;
-    }};
+    if (!props.action) return null;
+    return props.action === "open" ? moveDown : moveUp;
+  }};
     animation-duration: ${(props) => {
-      return props.action && typeof props.slideDuration === "number" ? `${props.slideDuration}s` : null;
-    }};
+    return props.action && typeof props.slideDuration === "number" ? `${props.slideDuration}s` : null;
+  }};
     transform-origin: top;
     pointer-events: initial;
     @media ${screen.medium} {

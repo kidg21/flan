@@ -1,5 +1,8 @@
-/* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
+/* eslint-disable react/forbid-prop-types */
+/* eslint-disable no-unused-vars */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
@@ -8,7 +11,6 @@ import Tabs, { Tab } from "blocks/Tabs";
 import Card, { CardList } from "layout/Card";
 import Layout from "layout/Layout";
 import Mapbox from "layout/Map";
-import MapSearch from "elements/MapSearch";
 import Panel, { PanelSection } from "layout/Panel";
 import Form, { Section } from "layout/Form";
 import TextInput from "atoms/TextInput";
@@ -45,7 +47,8 @@ const longBoxes = [
   },
   {
     id: "box_long2",
-    label: "Enough with these long labels already...put it on your blog, Shakespeare.",
+    label:
+      "Enough with these long labels already...put it on your blog, Shakespeare.",
   },
 ];
 const shortRadios = [
@@ -88,7 +91,8 @@ const longRadios = [
     id: "radio_long2",
     name: "radio-group",
     value: "6",
-    label: "Enough with these long labels already...put it on your blog, Shakespeare.",
+    label:
+      "Enough with these long labels already...put it on your blog, Shakespeare.",
   },
 ];
 const options = [
@@ -139,7 +143,12 @@ storiesOf("Layout |App Layout/", module)
     return (
       <Layout>
         <Layout width="70%" height="60%" />
-        <Layout width="70%" height="40%" top="60%" backgroundColor="lightgreen" />
+        <Layout
+          width="70%"
+          height="40%"
+          top="60%"
+          backgroundColor="lightgreen"
+        />
         <Layout width="30%" right="0" backgroundColor="lightyellow" />
       </Layout>
     );
@@ -231,7 +240,10 @@ storiesOf("Layout |App Layout/", module)
               <Layout id="bottom" type="bottomWrapper" state={bottomState}>
                 <Card>
                   <Tabs align="bottom">
-                    <Tab tabLabel="Toggle Bottom Fullscreen" onClick={toggleBottomFullscreen} />
+                    <Tab
+                      tabLabel="Toggle Bottom Fullscreen"
+                      onClick={toggleBottomFullscreen}
+                    />
                   </Tabs>
                 </Card>
               </Layout>
@@ -239,15 +251,26 @@ storiesOf("Layout |App Layout/", module)
             <Layout id="right" type="rightWrapper" state={rightState}>
               <Card>
                 <Tabs align="bottom">
-                  <Tab tabLabel="Toggle Right Fullscreen" onClick={toggleRightFullscreen} />
+                  <Tab
+                    tabLabel="Toggle Right Fullscreen"
+                    onClick={toggleRightFullscreen}
+                  />
                 </Tabs>
               </Card>
             </Layout>
           </Layout>
           <Layout id="controls" type="controlsWrapper">
             <Tabs align={controlsAlign}>
-              <Tab tabLabel="Toggle Left Wrapper" onClick={toggleLeft} isSelected={activeLeft} />
-              <Tab tabLabel="Toggle Right Wrapper" onClick={toggleRight} isSelected={activeRight} />
+              <Tab
+                tabLabel="Toggle Left Wrapper"
+                onClick={toggleLeft}
+                isSelected={activeLeft}
+              />
+              <Tab
+                tabLabel="Toggle Right Wrapper"
+                onClick={toggleRight}
+                isSelected={activeRight}
+              />
               <Tab
                 tabLabel="Toggle Bottom Wrapper"
                 onClick={toggleBottom}
@@ -395,7 +418,6 @@ storiesOf("Layout |App Layout/", module)
             <Layout id="main" type="mainWrapper" state={mainState}>
               <Layout id="middle" type="middleWrapper" state={middleState}>
                 <Mapbox />
-                <MapSearch />
               </Layout>
 
               <Layout id="bottom" type="bottomWrapper" state={bottomState}>
@@ -424,7 +446,6 @@ storiesOf("Layout |App Layout/", module)
                     </CardList>
                   </PanelSection>
                 </Panel>
-
               </Layout>
             </Layout>
 
@@ -453,7 +474,7 @@ storiesOf("Layout |App Layout/", module)
               </Panel>
             </Layout>
           </Layout>
-          
+
           <Layout id="controls" type="controlsWrapper">
             <Tabs align={controlsAlign}>
               <Tab

@@ -1,9 +1,12 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
-import LayerCardBar from "./LayerCardBar";
-import Icon from "atoms/Icon";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
+import Icon from "atoms/Icon";
+import LayerCardBar from "./LayerCardBar";
 
 const Icons = (
   <React.Fragment>

@@ -1,3 +1,6 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
@@ -6,7 +9,7 @@ import Title from "base/Typography";
 import Card, { Piece } from "layout/Card";
 import Bar from "blocks/Bar";
 
-function DialogueBox({
+function DialogBox({
   id,
   header,
   title,
@@ -21,16 +24,19 @@ function DialogueBox({
       // Multiple buttons
       buttonElements = (
         <Bar
+          rightWidth="50%"
           right={
             <Grid columns={buttons.length}>
               {buttons.map((button, index) => {
-                return (<Button
-                  label={button.label}
-                  type={button.type || index === 0 ? "solid" : null}
-                  onClick={button.onClick}
-                  color={button.color || buttonColor}
-                  disabled={button.disabled}
-                />);
+                return (
+                  <Button
+                    label={button.label}
+                    type={button.type || index === 0 ? "solid" : null}
+                    onClick={button.onClick}
+                    color={button.color || buttonColor}
+                    disabled={button.disabled}
+                  />
+                );
               })}
             </Grid>
           }
@@ -40,7 +46,7 @@ function DialogueBox({
       // Single button
       buttonElements = (
         <Bar
-          left={
+          center={
             <Button
               label={buttons[0].label}
               type={buttons[0].type}
@@ -80,14 +86,18 @@ const dialogProps = {
   buttonColor: PropTypes.string,
 };
 
-DialogueBox.propTypes = {
+DialogBox.propTypes = {
   ...dialogProps,
+  id: PropTypes.string,
   header: PropTypes.node,
   children: PropTypes.node,
+  title: PropTypes.node,
+  message: PropTypes.node,
+  buttonColor: PropTypes.string,
   buttons: PropTypes.arrayOf(buttonType),
 };
 
-DialogueBox.defaultProps = {
+DialogBox.defaultProps = {
   id: null,
   header: null,
   children: null,
@@ -98,14 +108,14 @@ DialogueBox.defaultProps = {
 };
 
 function Prompt({
-  accept,
-  cancel,
-  buttons,
-  children,
-  ...props
+  accept, cancel, buttons, children, ...props
 }) {
   const promptButtons = cancel ? [accept, cancel] : accept;
-  return <DialogueBox buttons={promptButtons} {...props}>{children}</DialogueBox>;
+  return (
+    <DialogBox buttons={promptButtons} {...props}>
+      {children}
+    </DialogBox>
+  );
 }
 
 Prompt.propTypes = {
@@ -122,21 +132,18 @@ Prompt.defaultProps = {
 };
 
 function Confirm({
-  id,
-  title,
-  message,
-  buttonColor,
-  accept,
-  cancel,
+  id, title, message, buttonColor, accept, cancel,
 }) {
   const buttons = cancel ? [accept, cancel] : accept;
-  return (<DialogueBox
-    id={id}
-    title={title}
-    message={message}
-    buttonColor={buttonColor}
-    buttons={buttons}
-  />);
+  return (
+    <DialogBox
+      id={id}
+      title={title}
+      message={message}
+      buttonColor={buttonColor}
+      buttons={buttons}
+    />
+  );
 }
 
 Confirm.propTypes = {
@@ -151,19 +158,17 @@ Confirm.defaultProps = {
 };
 
 function Alert({
-  id,
-  title,
-  message,
-  buttonColor,
-  accept,
+  id, title, message, buttonColor, accept,
 }) {
-  return (<DialogueBox
-    id={id}
-    title={title}
-    message={message}
-    buttonColor={buttonColor}
-    buttons={[accept]}
-  />);
+  return (
+    <DialogBox
+      id={id}
+      title={title}
+      message={message}
+      buttonColor={buttonColor}
+      buttons={[accept]}
+    />
+  );
 }
 
 Alert.propTypes = {
@@ -175,4 +180,4 @@ Alert.defaultProps = {
   accept: { label: "OK", color: "alert" },
 };
 
-export { DialogueBox as default, Alert, Confirm, Prompt };
+export { DialogBox as default, Alert, Confirm, Prompt };

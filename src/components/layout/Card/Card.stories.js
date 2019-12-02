@@ -1,5 +1,9 @@
-/* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
+/* eslint-disable react/require-default-props */
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { checkA11y } from "@storybook/addon-a11y";
@@ -31,6 +35,7 @@ storiesOf("Layout|Card", module)
 
 // Card List
 storiesOf("Layout|CardList", module)
+  .addDecorator(Padding)
   .addDecorator(checkA11y)
   .add("Card List - 'wrapper for Cards'", () => {
     return (

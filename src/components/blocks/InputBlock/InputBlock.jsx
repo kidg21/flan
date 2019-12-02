@@ -1,10 +1,13 @@
-/* eslint-disable linebreak-style */
 /* eslint-disable complexity */
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React, { useState, useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
-import { InputLabel, HelpText, ErrorText, Label } from "layout/Form";
+import Label from "atoms/Label";
 import Grid from "layout/Grid";
 import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";
@@ -44,7 +47,10 @@ function InputBlock({
   });
 
   function handleChange(e) {
-    const newState = { ...state, input: { ...state.input, [e.target.id]: e.target.value } };
+    const newState = {
+      ...state,
+      input: { ...state.input, [e.target.id]: e.target.value },
+    };
     if (onChange) {
       onChange(state, newState, setState);
     } else {
@@ -64,7 +70,8 @@ function InputBlock({
     }
   }
 
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let inputTextColor;
   let buttonColor;
   if (error && !isDisabled) {
@@ -106,9 +113,9 @@ function InputBlock({
   } else if (text) {
     inputContainer = (
       <Grid columns={gridColumns} gap="tiny">
-        {prefix ? <Label>{text}</Label> : null}
+        {prefix ? <Label text={text} /> : null}
         {inputElements}
-        {!prefix ? <Label>{text}</Label> : null}
+        {!prefix ? <Label text={text} /> : null}
       </Grid>
     );
   } else if (options) {
@@ -187,10 +194,12 @@ function InputBlock({
         prefix={prefix}
         text={text}
       >
-        {label ? <InputLabel isRequired={isRequired} label={label} /> : null}
+        {label ? <Label isRequired={isRequired} text={label} /> : null}
         {inputContainer}
-        {helpText ? <HelpText>{helpText}</HelpText> : null}
-        {typeof error === "string" && !isDisabled ? <ErrorText>{error}</ErrorText> : null}
+        {helpText ? <Label text={helpText} /> : null}
+        {typeof error === "string" && !isDisabled ? (
+          <Label text={error} />
+        ) : null}
       </TextInputContainer>
     </DisabledContext.Provider>
   );

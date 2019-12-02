@@ -1,9 +1,13 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { DisabledContext } from "States";
 import Bar from "blocks/Bar";
-import { InputLabel, HelpText, ErrorText } from "layout/Form";
+import Label from "atoms/Label";
 import Grid from "layout/Grid";
 import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";
@@ -44,7 +48,8 @@ function DataRange({
   min,
 }) {
   let inputTextColor;
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (error && !isDisabled) {
     inputTextColor = "alert";
   }
@@ -67,7 +72,9 @@ function DataRange({
       columns="1"
       gap="tiny"
     >
-      {label ? <InputLabel isRequired={isRequired}>{label}</InputLabel> : null}
+      {label ? (
+        <Label size="sm" weight="bold" isRequired={isRequired} text={label} />
+      ) : null}
       <Bar
         padding="none"
         contentAlign="center"
@@ -119,8 +126,10 @@ function DataRange({
             />)
         }
       />
-      {helpText ? <HelpText>{helpText}</HelpText> : null}
-      {typeof error === "string" && !isDisabled ? <ErrorText>{error}</ErrorText> : null}
+      {helpText ? <Label size="sm" text={helpText} /> : null}
+      {typeof error === "string" && !isDisabled ? (
+        <Label size="sm" text={error} />
+      ) : null}
     </RangeContainer>
   );
 }

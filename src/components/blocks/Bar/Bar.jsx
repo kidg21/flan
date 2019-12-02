@@ -1,5 +1,8 @@
-/* eslint-disable linebreak-style */
 /* eslint-disable complexity */
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -49,7 +52,9 @@ const BarLayout = styled.div`
     return props.alignContent || "";
   }};
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: ${(props) => {
+    return props.justifyContent || "space-between";
+  }};
   padding: ${(props) => {
     return props.barPadding || "0.5em 1em";
   }};
@@ -74,6 +79,7 @@ function Bar({
   className,
   disabled,
 }) {
+  let justifyContent;
   let alignContent;
   let alignItems;
   let topPadding;
@@ -87,6 +93,12 @@ function Bar({
     else centerPadding = "0 0.5em 0 0.5em";
   } else if (right) {
     centerPadding = "0 0.5em 0 0";
+  }
+  if (right) {
+    if (!left) {
+      if (!center) justifyContent = "flex-end";
+      else justifyContent = "space-between";
+    }
   }
   switch (padding && padding.toLowerCase()) {
     case "none":
@@ -133,6 +145,7 @@ function Bar({
   const barLayout = (
     <BarLayout
       id={id}
+      justifyContent={justifyContent}
       barPadding={barPadding}
       alignContent={alignContent}
       onClick={onClick}
@@ -140,12 +153,21 @@ function Bar({
       className={className}
     >
       {left ? (
-        <Slot setFlex="1 0 25%" widthMin={leftWidth} widthMax={leftWidth} setPadding={leftPadding}>
+        <Slot
+          setFlex="1 0 25%"
+          widthMin={leftWidth}
+          widthMax={leftWidth}
+          setPadding={leftPadding}
+        >
           {left}
         </Slot>
       ) : null}
       {center ? (
-        <Slot alignItems={alignItems} textAlign={textAlign} setPadding={centerPadding}>
+        <Slot
+          alignItems={alignItems}
+          textAlign={textAlign}
+          setPadding={centerPadding}
+        >
           {center}
         </Slot>
       ) : null}
@@ -165,7 +187,9 @@ function Bar({
   );
 
   return typeof disabled === "boolean" ? (
-    <DisabledContext.Provider value={disabled}>{barLayout}</DisabledContext.Provider>
+    <DisabledContext.Provider value={disabled}>
+      {barLayout}
+    </DisabledContext.Provider>
   ) : (
     barLayout
   );

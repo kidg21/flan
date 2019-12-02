@@ -1,4 +1,7 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
@@ -9,8 +12,17 @@ import Command from "atoms/Command";
 import SelectMenu from "atoms/SelectMenu";
 import Checkbox from "atoms/Checkbox";
 import Switch from "atoms/Switch";
+import Image from "atoms/Image";
 import List, { ListItem } from "blocks/List";
 import ListNotes from "blocks/List/List.md";
+
+const image = (
+  <Image
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+    alt="This is alt text for this image"
+    width="75"
+  />
+);
 
 storiesOf("Blocks|List", module)
   .addParameters({
@@ -48,15 +60,6 @@ storiesOf("Blocks|List", module)
           <ListItem
             label={text("1 - Label", "Item 1", "Item 1")}
             description={text("1 - Description", "", "Item 1")}
-            state={select(
-              "1 - State",
-              {
-                default: null,
-                active: "active",
-              },
-              null,
-              "Item 1",
-            )}
             type={select(
               "1 - Type",
               {
@@ -69,20 +72,12 @@ storiesOf("Blocks|List", module)
               null,
               "Item 1",
             )}
+            active={boolean("1 - Active", false, "Item 1")}
             disabled={boolean("1 - Disabled", false, "Item 1")}
           />
           <ListItem
             label={text("2 - Label", "Item 2", "Item 2")}
             description={text("2 - Description", "", "Item 2")}
-            state={select(
-              "2 - State",
-              {
-                default: null,
-                active: "active",
-              },
-              null,
-              "Item 2",
-            )}
             type={select(
               "2 - Type",
               {
@@ -95,20 +90,12 @@ storiesOf("Blocks|List", module)
               null,
               "Item 2",
             )}
+            active={boolean("2 - Active", false, "Item 2")}
             disabled={boolean("2 - Disabled", false, "Item 2")}
           />
           <ListItem
             label={text("3 - Label", "Item 3", "Item 3")}
             description={text("3 - Description", "", "Item 3")}
-            state={select(
-              "3 - State",
-              {
-                default: null,
-                active: "active",
-              },
-              null,
-              "Item 3",
-            )}
             type={select(
               "3 - Type",
               {
@@ -121,6 +108,7 @@ storiesOf("Blocks|List", module)
               null,
               "Item 3",
             )}
+            active={boolean("3 - Active", false, "Item 3")}
             disabled={boolean("3 - Disabled", false, "Item 3")}
           />
         </List>
@@ -133,32 +121,16 @@ storiesOf("Blocks|List", module)
       <Card>
         <List>
           <ListItem label="List Item -- default" />
-          <ListItem label="List Item -- default (active)" state="active" />
-          <ListItem label="List Item -- (disabled)" type="inverse" disabled />
-          <ListItem label="List Item -- info" type="info" />
-          <ListItem
-            label="List Item -- info (active)"
-            type="info"
-            state="active"
-          />
-          <ListItem label="List Item -- success" type="success" />
-          <ListItem
-            label="List Item -- success (active)"
-            type="success"
-            state="active"
-          />
-          <ListItem label="List Item -- warning" type="warning" />
-          <ListItem
-            label="List Item -- warning (active)"
-            type="warning"
-            state="active"
-          />
-          <ListItem label="List Item -- alert" type="alert" />
-          <ListItem
-            label="List Item -- alert (active)"
-            type="alert"
-            state="active"
-          />
+          <ListItem label="List Item -- active" active />
+          <ListItem label="List Item -- disabled" disabled />
+          <ListItem label="Info Item" type="info" />
+          <ListItem label="Info Item -- active" type="info" active />
+          <ListItem label="Success Item" type="success" />
+          <ListItem label="Success Item -- active" type="success" active />
+          <ListItem label="Warning Item" type="warning" />
+          <ListItem label="Warning Item -- active" type="warning" active />
+          <ListItem label="Alert Item" type="alert" />
+          <ListItem label="Alert Item -- active" type="alert" active />
         </List>
       </Card>
     );
@@ -182,24 +154,32 @@ storiesOf("Blocks|List", module)
           <ListItem
             label="List Item"
             description="This is the description"
+            active
+          />
+          <ListItem
+            label="List Item"
+            description="This is the description"
             type="info"
+            active
           />
           <ListItem
             label="List Item"
             description="This is the description"
             type="success"
+            active
           />
           <ListItem
             label="List Item"
             description="This is the description"
             type="warning"
+            active
           />
           <ListItem
             label="List Item"
             description="This is the description"
             type="alert"
+            active
           />
-
         </List>
       </Card>
     );
@@ -247,6 +227,33 @@ storiesOf("Blocks|List", module)
           </ListItem>
           <ListItem label="Flan?">
             <Switch />
+          </ListItem>
+        </List>
+      </Card>
+    );
+  })
+
+  .add("Image List", () => {
+    return (
+      <Card>
+        <List title="Image List (interactive)" interactive>
+          <ListItem
+            label="This Kitty?"
+            description="This description is much longer but that's okay because it will just keep on wrapping to the next line until you run out of things to say..."
+          >
+            {image}
+          </ListItem>
+          <ListItem
+            label="Or This One?"
+            description="This description is much longer but that's okay because it will just keep on wrapping to the next line until you run out of things to say..."
+          >
+            {image}
+          </ListItem>
+          <ListItem
+            label="Awwwww..."
+            description="This description is much longer but that's okay because it will just keep on wrapping to the next line until you run out of things to say..."
+          >
+            {image}
           </ListItem>
         </List>
       </Card>
@@ -313,11 +320,10 @@ storiesOf("Blocks|List", module)
         <List title="You Can Give The List A Title">
           <ListItem label="List Item" />
           <ListItem label="List Item" description="This is the description">
-            <Command command="edit"/>
+            <Command command="edit" />
           </ListItem>
           <ListItem
             label="List Item"
-            // description="This is the description"
             description="This description is much longer but that's okay because it will just keep on wrapping to the next line until you run out of things to say in support of the long title that you just typed above this one."
           >
             <SelectMenu

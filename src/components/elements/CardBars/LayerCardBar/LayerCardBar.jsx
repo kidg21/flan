@@ -1,6 +1,10 @@
-/* eslint-disable react/jsx-one-expression-per-line */
+/* eslint-disable linebreak-style */
+/* eslint-disable react/jsx-closing-bracket-location */
+/* eslint-disable react/jsx-indent-props */
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import styled from "styled-components";
 import PropTypes from "prop-types";
 import IconBlock from "blocks/IconBlock";
 import Bar from "blocks/Bar";
@@ -31,30 +35,38 @@ function LayerCardBar({
           centerAlign="left"
           leftWidth="3em"
           left={<Switch disabled onChange={onChange} />}
-          center={<Title text={title}/>}
+          center={<Title text={title} />}
           right={<IconBlock style={disabledblockStyle}>{icons}</IconBlock>}
           rightWidth="9em"
         />
       ) : (
         <Bar
-          padding="2x"
-          contentAlign="center"
-          centerAlign="left"
-          leftWidth="3em"
-          left={<Switch onChange={onChange} />}
-          center={<Title text={title}/>}
-          right={<IconBlock style={blockStyle}>{icons}</IconBlock>}
-          rightWidth="9em"
-        />
-      )}
+            padding="2x"
+            contentAlign="center"
+            centerAlign="left"
+            leftWidth="3em"
+            left={<Switch onChange={onChange} />}
+            center={<Title text={title} />}
+            right={<IconBlock style={blockStyle}>{icons}</IconBlock>}
+            rightWidth="9em"
+          />
+        )}
     </Piece>
   );
 }
 LayerCardBar.propTypes = {
   id: PropTypes.string,
-  title: PropTypes.any.isRequired,
+  title: PropTypes.node.isRequired,
   disabled: PropTypes.bool,
   onChange: PropTypes.func,
   icons: PropTypes.node,
 };
+
+LayerCardBar.defaultProps = {
+  id: null,
+  disabled: false,
+  onChange: null,
+  icons: null,
+};
+
 export default LayerCardBar;
