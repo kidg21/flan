@@ -4,7 +4,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import Card from "./Card";
-import { Body } from "base/Typography";
+import { Body, Description } from "base/Typography";
 import Image from "atoms/Image";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
@@ -87,9 +87,17 @@ storiesOf("Elements|Card", module)
       />
     );
   })
-  .add("Avatar", () => {
-    return <Card title="Title" description="Card Description" avatar="LB" />;
+  .add("SI Example", () => {
+    return (
+      <Card
+        title="5201 California Avenue, Irvine, CA 92614"
+        line1="APN #23947828"
+        line2="Irvine Company"
+        tag="Same Owner"
+      />
+    );
   })
+
   .add("Media", () => {
     return <Card title="Title" description="Card Description" media={image} />;
   });

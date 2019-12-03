@@ -63,6 +63,7 @@ storiesOf("Application|Style Guides/Colors/", module)
         <ThemeColors color="warningDark" />
         <ThemeColors color="alertTint" />
         <ThemeColors color="alertLight" />
+        <ThemeColors color="alertBright" />
         <ThemeColors color="alert" />
         <ThemeColors color="alertDark" />
       </Grid>

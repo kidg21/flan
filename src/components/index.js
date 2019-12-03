@@ -34,6 +34,7 @@ export { default as TextInput } from "./atoms/TextInput";
 // Publicly exported files from 'blocks'
 export { default as Banner } from "./blocks/Banner";
 export { default as Bar } from "./blocks/Bar";
+export { default as Legend } from "./blocks/Legend";
 export { default as List, ListItem } from "./blocks/List";
 export { default as IconBlock } from "./blocks/IconBlock";
 export { default as InputBlock } from "./blocks/InputBlock";

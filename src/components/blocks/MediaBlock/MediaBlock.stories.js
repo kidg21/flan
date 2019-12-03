@@ -11,6 +11,7 @@ import {
   boolean,
   optionsKnob as options
 } from "@storybook/addon-knobs";
+import Avatar from "atoms/Avatar";
 import Image from "atoms/Image";
 import Card, { CardList } from "layout/Card";
 import Title, { Description } from "base/Typography";

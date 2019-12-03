@@ -10,7 +10,7 @@ import { Lighten, Darken } from "Variables";
 const SliderPiece = styled.input.attrs({ type: "range" })`
   height: 1px;
   background: ${(props) => {
-    return props.error ? props.theme.palette.alertLight : props.theme.palette.grey3;
+    return props.error ? props.theme.palette.alertBright : props.theme.palette.grey3;
   }};
   outline: none;
   transition: opacity 0.2s;
@@ -20,11 +20,11 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
     height: 1.5em;
     border: 1px solid;
     border-color: ${(props) => {
-    return props.error ? props.theme.palette.alertDark : props.theme.palette.secondaryDark;
+    return props.error ? props.theme.palette.alert : props.theme.palette.secondary;
   }};
     border-radius: 50%;
     background-color: ${(props) => {
-    return props.error ? props.theme.palette.alert : props.theme.palette.secondary;
+    return props.error ? props.theme.palette.alertBright : props.theme.palette.secondaryLight;
   }};
     cursor: pointer;
     &:hover {
@@ -52,7 +52,7 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
     height: 18px;
     border-radius: 50%;
     color: ${(props) => {
-    return props.theme.palette.secondary;
+    return props.theme.palette.secondaryLight;
   }};
     cursor: pointer;
   }

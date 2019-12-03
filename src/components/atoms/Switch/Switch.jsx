@@ -50,7 +50,7 @@ const StyledSwitch = styled.div`
   }};
   border-radius: 1rem;
   background-color: ${(props) => {
-    return props.theme.palette[props.fillColor] || props.theme.palette.grey5;
+    return props.theme.palette[props.fillColor] || props.theme.background.default;
   }};
   cursor: pointer;
   &[disabled],
@@ -102,9 +102,9 @@ function Switch({
     borderColor = "grey3";
   }
   if (error && !isDisabled) {
-    inputTextColor = "alert";
-    fillColor = "alert";
-    borderColor = "alertDark";
+    inputTextColor = "alertBright";
+    fillColor = "alertBright";
+    borderColor = "alert";
   }
   switch (align) {
     case "right":
@@ -124,8 +124,8 @@ function Switch({
     };
   }
   if (isChecked && !error) {
-    fillColor = "secondary";
-    borderColor = "secondaryDark";
+    fillColor = "secondaryLight";
+    borderColor = "secondary";
   }
   return (
     <SwitchContainer

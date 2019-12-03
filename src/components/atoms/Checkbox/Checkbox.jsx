@@ -58,13 +58,13 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
     background-color: ${(props) => {
     return (
       props.theme.palette[props.fillColorChecked] ||
-      props.theme.palette.secondary
+      props.theme.palette.secondaryLight
     );
   }};
     border-color: ${(props) => {
     return (
       props.theme.palette[props.borderColor] ||
-      props.theme.palette.secondaryDark
+      props.theme.palette.secondary
     );
   }};
   }
@@ -105,12 +105,12 @@ function Checkbox({
     tabIndex = "-1";
   }
   if (error && !isDisabled) {
-    borderColor = "alertDark";
-    borderColorChecked = "alertDark";
-    fillColor = "alert";
-    fillColorChecked = "alert";
+    borderColor = "alert";
+    borderColorChecked = "alert";
+    fillColor = "alertBright";
+    fillColorChecked = "alertBright";
     inputTextColor = "alert";
-    outlineColor = "alertLight";
+    outlineColor = "alertBright";
   }
   switch (align) {
     case "right":

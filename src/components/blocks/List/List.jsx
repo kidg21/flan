@@ -82,6 +82,7 @@ function ListItem({
   disabled,
   id,
   avatar,
+  toggle,
   icon,
   checkbox,
   interactive,
@@ -127,6 +128,7 @@ function ListItem({
             right={
               <React.Fragment>
                 {checkbox ? <Checkbox label="checkbox" /> : null}
+                {toggle ? <Switch /> : null}
               </React.Fragment>}
           />)
           :
@@ -137,6 +139,7 @@ function ListItem({
             right={
               <React.Fragment>
                 {checkbox ? <Checkbox label="checkbox" /> : null}
+                {toggle ? <Switch /> : null}
               </React.Fragment>}
           />}
       </DisabledContext.Provider>

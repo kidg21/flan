@@ -11,14 +11,14 @@ import Bar from "blocks/Bar";
 import Icon from "atoms/Icon";
 import ExpandingSection from "./ExpandingSection";
 import MediaBlock from "blocks/MediaBlock";
-import Avatar from "atoms/Avatar";
+import Tag from "atoms/Tag";
 import Command from "atoms/Command";
 import Card, { CardSection } from "layout/Card";
 import Title, { Description, Body } from "base/Typography";
 
 
 function CardComponent({
-  id, title, type, icon, avatar, media, body, expands, commands, description,
+  id, title, type, icon, tag, media, line1, line2, body, expands, commands, description,
 }) {
   let excess;
   let content;
@@ -27,7 +27,9 @@ function CardComponent({
   const titleBlock =
     (<React.Fragment>
       <Title text={title} />
-      <Description text={description} />
+      {description ? <Description text={description} /> : null}
+      {line1 ? <Body text={line1} /> : null}
+      {line2 ? <Body text={line2} /> : null}
      </React.Fragment>);
   const mainContent =
     (<Bar
@@ -82,12 +84,8 @@ function CardComponent({
   if (icon) {
     rightContent = <Icon icon={icon} size="lg" />;
   }
-  if (avatar) {
-    content = (<Bar
-      contentAlign="center"
-      left={<Avatar label={avatar} />}
-      center={titleBlock} />
-    );
+  if (tag) {
+    rightContent = (<Tag label={tag} />);
   }
   if (media) {
     content = (<MediaBlock media={media} body={mainContent} />);
@@ -101,13 +99,13 @@ function CardComponent({
   return (
     <Card id={id} type={type}>
       {content}
-      {excess ? (<CardSection>
-        {excess}
-                 </CardSection>) : null}
       {body ? (
         <CardSection>
           {body}
         </CardSection>) : null}
+      {excess ? (<CardSection>
+        {excess}
+                 </CardSection>) : null}
       {commandElements ? <CardSection>{commandElements}</CardSection> : null}
     </Card>
   );

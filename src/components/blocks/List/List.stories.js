@@ -30,11 +30,11 @@ storiesOf("Blocks|List", module)
   .addParameters({
     info: {
       text:
-        "A 'List' can be used to display content related to a single subject. The content can consist of multiple elements of varying type and size. -- 'Ant Design'"
+        "A 'List' can be used to display content related to a single subject. The content can consist of multiple elements of varying type and size. -- 'Ant Design'",
     },
     notes: {
-      markdown: ListNotes
-    }
+      markdown: ListNotes,
+    },
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
@@ -48,7 +48,7 @@ storiesOf("Blocks|List", module)
           <ListItem label="List Item" />
         </List>
       );
-    })
+    }),
   )
   .add("Knobs", () => {
     return (
@@ -66,10 +66,10 @@ storiesOf("Blocks|List", module)
               info: "info",
               success: "success",
               warning: "warning",
-              alert: "alert"
+              alert: "alert",
             },
             null,
-            "Item 1"
+            "Item 1",
           )}
           active={boolean("1 - Active", false, "Item 1")}
           disabled={boolean("1 - Disabled", false, "Item 1")}
@@ -84,10 +84,10 @@ storiesOf("Blocks|List", module)
               info: "info",
               success: "success",
               warning: "warning",
-              alert: "alert"
+              alert: "alert",
             },
             null,
-            "Item 2"
+            "Item 2",
           )}
           active={boolean("2 - Active", false, "Item 2")}
           disabled={boolean("2 - Disabled", false, "Item 2")}
@@ -102,10 +102,10 @@ storiesOf("Blocks|List", module)
               info: "info",
               success: "success",
               warning: "warning",
-              alert: "alert"
+              alert: "alert",
             },
             null,
-            "Item 3"
+            "Item 3",
           )}
           active={boolean("3 - Active", false, "Item 3")}
           disabled={boolean("3 - Disabled", false, "Item 3")}
@@ -216,16 +216,53 @@ storiesOf("Blocks|List", module)
     );
   })
 
+  .add("Toggle List", () => {
+    return (
+      <List interactive>
+        <ListItem
+          label="List Item "
+          description="This is the description"
+          toggle
+        />
+        <ListItem
+          label="List Item"
+          description="This is the description"
+          toggle
+        />
+        <ListItem
+          label="List Item"
+          description="This is the description"
+          toggle
+        />
+        <ListItem
+          label="List Item"
+          description="This is the description"
+          toggle
+        />
+        <ListItem
+          label="List Item"
+          description="This is the description"
+          toggle
+        />
+        <ListItem
+          label="List Item"
+          description="This is the description"
+          toggle
+        />
+      </List>
+    );
+  })
+
   .add("Checkbox List", () => {
     return (
       <List interactive>
         <ListItem
-          label="List Item (not interactive)"
+          label="List Item"
           description="This is the description"
           checkbox
         />
         <ListItem
-          label="List Item (disabled)"
+          label="List Item"
           description="This is the description"
           checkbox
         />

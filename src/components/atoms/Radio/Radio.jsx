@@ -59,12 +59,12 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
     background-color: ${(props) => {
     return (
       props.theme.palette[props.fillColorChecked] ||
-      props.theme.palette.secondary
+      props.theme.palette.secondaryLight
     );
   }};
     border-color: ${(props) => {
     return (
-      props.theme.palette[props.outlineColor] || props.theme.palette.secondaryDark
+      props.theme.palette[props.outlineColor] || props.theme.palette.secondary
     );
   }};
   }
@@ -111,10 +111,10 @@ function Radio({
     tabIndex = "-1";
   }
   if (error && !isDisabled) {
-    fillColor = "alertLight";
-    fillColorChecked = "alertLight";
+    fillColor = "alertBright";
+    fillColorChecked = "alertBright";
     inputTextColor = "alert";
-    outlineColor = "alertLight";
+    outlineColor = "alertBright";
   }
   switch (align) {
     case "right":
