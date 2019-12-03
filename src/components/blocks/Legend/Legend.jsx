@@ -7,12 +7,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import Title from "base/Typography";
 import { SkeletonStatic } from "helpers";
 
 
 const Wrapper = styled.div`
   display: block;
-  padding: 1em;
+  padding: .5rem;
 `;
 const TableContainer = styled.table`
   width: 100%;
@@ -39,7 +40,7 @@ const Row = styled.tr`
 
 const Cell = styled.td`
   padding: ${(props) => {
-    return props.cellPadding || "0.15em 0.15em 0.25em";
+    return props.cellPadding || "0.15em 0.15em 0.15em";
   }};
   border-bottom: ${(props) => {
     return props.cellBorder || "";
@@ -53,7 +54,7 @@ const Cell = styled.td`
 
   &:first-child {
     font-weight: ${(props) => {
-    return props.fontWeight || "bold";
+    return props.fontWeight || "";
   }};
   }
 
@@ -68,6 +69,7 @@ function Legend({
   id,
   fontSize,
   data,
+  title,
 }) {
   let cellPadding;
   let fontWeight;
@@ -76,6 +78,7 @@ function Legend({
 
   return (
     <Wrapper id={id}>
+      {title ? <Title text={title} /> : null}
       <TableContainer id={id}>
         {data.map((row) => {
           return (

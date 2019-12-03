@@ -26,7 +26,7 @@ function CardComponent({
   let rightContent;
   const titleBlock =
     (<React.Fragment>
-      <Title text={title} />
+      {title ? <Title text={title} /> : null}
       {description ? <Description text={description} /> : null}
       {line1 ? <Body text={line1} /> : null}
       {line2 ? <Body text={line2} /> : null}
@@ -98,7 +98,7 @@ function CardComponent({
   }
   return (
     <Card id={id} type={type}>
-      {content}
+      {content ? <CardSection>{content} </CardSection> : null}
       {body ? (
         <CardSection>
           {body}

@@ -308,19 +308,24 @@ Headline.defaultProps = {
 };
 
 function Title({
-  text, size, children, ...textProps
+  text, size, children, number, ...textProps
 }) {
   return (
-    <Text size={size} weight="semibold" {...textProps}>
+    <Text size={size} count={number} weight="semibold" {...textProps}>
       {text || children}
     </Text>
   );
 }
 Title.propTypes = {
+  number: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ]),
   text: PropTypes.string,
   children: PropTypes.node,
 };
 Title.defaultProps = {
+  number: null,
   text: null,
   children: null,
 };

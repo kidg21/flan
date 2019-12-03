@@ -17,11 +17,11 @@ function PropertyPanelHeader({
   return (
     <React.Fragment id={id}>
       <Bar
-        padding="2x"
+        padding="3x"
         contentAlign="center"
-        left={<Icon icon="directions" size="lg" type="primarylight" onClick={onClick} />}
+        left={<Icon icon="directions" size="2x" type="primarylight" onClick={onClick} />}
         leftWidth="min-content"
-        center={<Title text={title} weight="bold" size="" />}
+        center={<Title text={title} size="large" />}
         centerAlign="left"
         right={<Menu menuData={menuData} position="bottomLeft" type="edit" />}
         rightWidth="min-content"
