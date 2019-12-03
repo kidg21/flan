@@ -43,7 +43,7 @@ const PanelSection = styled.section`
     return props.body ? "auto" : "none";
   }};
   padding: ${(props) => {
-    return props.body ? "" : "";
+    return props.body ? "1rem" : "";
   }};
   z-index: ${(props) => {
     return props.body ? "0" : "1";
