@@ -17,6 +17,7 @@ storiesOf("Atoms/Label", module)
       <Grid columns="1">
         <Label text="Label" />
         <Label text="Label Cap" textTransform="uppercase" />
+        <Label />
       </Grid>
     );
   });

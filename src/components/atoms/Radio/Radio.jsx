@@ -47,7 +47,7 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
     );
   }};
   border-color: ${(props) => {
-    return props.theme.palette[props.outlineColor] || props.theme.palette.grey3;
+    return props.theme.palette[props.outlineColor] || props.theme.palette.grey;
   }};
   width: 1rem;
   height: 1rem;
@@ -64,7 +64,7 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
   }};
     border-color: ${(props) => {
     return (
-      props.theme.palette[props.outlineColor] || props.theme.palette.secondary
+      props.theme.palette[props.outlineColor] || props.theme.palette.secondaryDark
     );
   }};
   }
@@ -107,7 +107,7 @@ function Radio({
     fillColor = "grey5";
     fillColorChecked = "grey5";
     inputTextColor = "disabled";
-    outlineColor = "grey4";
+    outlineColor = "grey2";
     tabIndex = "-1";
   }
   if (error && !isDisabled) {

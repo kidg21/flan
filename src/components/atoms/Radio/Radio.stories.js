@@ -79,7 +79,7 @@ storiesOf("Atoms|Radio", module)
     }),
   )
   .add("Skeleton", () => {
-    return <Radio />;
+    return <Radio label="" />;
   })
   .add("Knobs", () => {
     return (

@@ -14,7 +14,7 @@ import Title, { Description, Link } from "base/Typography";
 
 const StyledBanner = styled(Card)`
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.grey;
+    return props.theme.palette[props.borderColor] || props.theme.palette.grey3;
   }};
 `;
 

@@ -46,7 +46,7 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
     );
   }};
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.grey3;
+    return props.theme.palette[props.borderColor] || props.theme.palette.grey;
   }};
   width: 1rem;
   height: 1rem;
@@ -58,13 +58,13 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
     background-color: ${(props) => {
     return (
       props.theme.palette[props.fillColorChecked] ||
-      props.theme.background.selected
+      props.theme.palette.secondary
     );
   }};
     border-color: ${(props) => {
     return (
       props.theme.palette[props.borderColor] ||
-      props.theme.background.selected
+      props.theme.palette.secondaryDark
     );
   }};
   }
@@ -72,7 +72,7 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
     outline-color: ${(props) => {
     return (
       props.theme.palette[props.outlineColor] ||
-      props.theme.palette.secondaryLight
+      props.theme.palette.secondary
     );
   }};
   }
@@ -98,17 +98,17 @@ function Checkbox({
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
-    borderColor = "grey4";
+    borderColor = "grey2";
     fillColor = "grey5";
     fillColorChecked = "grey5";
     inputTextColor = "disabled";
     tabIndex = "-1";
   }
   if (error && !isDisabled) {
-    borderColor = "alert";
-    borderColorChecked = "alert";
-    fillColor = "alertLight";
-    fillColorChecked = "alertLight";
+    borderColor = "alertDark";
+    borderColorChecked = "alertDark";
+    fillColor = "alert";
+    fillColorChecked = "alert";
     inputTextColor = "alert";
     outlineColor = "alertLight";
   }

@@ -22,7 +22,7 @@ const Input = styled.input`
   border: 1px solid;
   border-color: ${(props) => {
     return (
-      props.theme.palette[props.inputBorderColor] || props.theme.palette.grey4
+      props.theme.palette[props.inputBorderColor] || props.theme.palette.grey3
     );
   }};
   background-color: ${(props) => {
@@ -72,7 +72,7 @@ const Input = styled.input`
       background-color: ${(props) => {
     return (
       props.theme.palette[props.inputSelectColor] ||
-      props.theme.background.selected
+      props.theme.palette.secondary
     );
   }};
     }

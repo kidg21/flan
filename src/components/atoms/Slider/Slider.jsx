@@ -10,10 +10,9 @@ import { Lighten, Darken } from "Variables";
 const SliderPiece = styled.input.attrs({ type: "range" })`
   height: 1px;
   background: ${(props) => {
-    return props.error ? props.theme.palette.alertLight : props.theme.palette.grey4;
+    return props.error ? props.theme.palette.alertLight : props.theme.palette.grey3;
   }};
   outline: none;
-  opacity: 0.7;
   transition: opacity 0.2s;
   &::-webkit-slider-thumb {
     appearance: none;
@@ -21,7 +20,7 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
     height: 1.5em;
     border: 1px solid;
     border-color: ${(props) => {
-    return props.error ? props.theme.palette.alertDark : props.theme.palette.secondary;
+    return props.error ? props.theme.palette.alertDark : props.theme.palette.secondaryDark;
   }};
     border-radius: 50%;
     background-color: ${(props) => {
@@ -64,10 +63,10 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
     user-select: none;
     &::-webkit-slider-thumb {
       border-color: ${(props) => {
-    return props.theme.palette.secondaryDark;
+    return props.theme.palette.grey3;
   }};
       background-color: ${(props) => {
-    return props.theme.palette.disabled;
+    return props.theme.palette.grey5;
   }};
     }
   }

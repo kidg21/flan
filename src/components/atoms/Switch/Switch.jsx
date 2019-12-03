@@ -20,7 +20,7 @@ const SwitchContainer = styled.div`
     return props.alignInput || "";
   }};
   color: ${(props) => {
-    return props.theme.palette[props.checkboxColor] || "inherit";
+    return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
   background-color: ${(props) => {
     return (
@@ -92,16 +92,17 @@ function Switch({
 }) {
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  let checkboxColor;
+  let inputTextColor;
   let fillColor;
   let borderColor;
   let alignInput;
   if (isDisabled) {
-    checkboxColor = "disabled";
+    inputTextColor = "disabled";
+    fillColor = "grey5";
     borderColor = "grey3";
   }
   if (error && !isDisabled) {
-    checkboxColor = "alertDark";
+    inputTextColor = "alert";
     fillColor = "alert";
     borderColor = "alertDark";
   }
@@ -123,13 +124,13 @@ function Switch({
     };
   }
   if (isChecked && !error) {
-    fillColor = "secondaryLight";
-    borderColor = "secondary";
+    fillColor = "secondary";
+    borderColor = "secondaryDark";
   }
   return (
     <SwitchContainer
       alignInput={alignInput}
-      checkboxColor={checkboxColor}
+      inputTextColor={inputTextColor}
       error={error}
       disabled={isDisabled}
       id={id}

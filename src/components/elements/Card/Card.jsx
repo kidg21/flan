@@ -11,13 +11,14 @@ import Bar from "blocks/Bar";
 import Icon from "atoms/Icon";
 import ExpandingSection from "./ExpandingSection";
 import MediaBlock from "blocks/MediaBlock";
+import Avatar from "atoms/Avatar";
 import Command from "atoms/Command";
 import Card, { CardSection } from "layout/Card";
 import Title, { Description, Body } from "base/Typography";
 
 
 function CardComponent({
-  id, title, type, icon, media, body, expands, commands, description,
+  id, title, type, icon, avatar, media, body, expands, commands, description,
 }) {
   let excess;
   let content;
@@ -81,6 +82,13 @@ function CardComponent({
   if (icon) {
     rightContent = <Icon icon={icon} size="lg" />;
   }
+  if (avatar) {
+    content = (<Bar
+      contentAlign="center"
+      left={<Avatar label={avatar} />}
+      center={titleBlock} />
+    );
+  }
   if (media) {
     content = (<MediaBlock media={media} body={mainContent} />);
   } else {
@@ -107,6 +115,7 @@ function CardComponent({
 CardComponent.propTypes = {
   id: PropTypes.string,
   title: PropTypes.string,
+  avatar: PropTypes.string,
   icon: PropTypes.string,
 
 };
@@ -114,6 +123,7 @@ CardComponent.propTypes = {
 CardComponent.defaultProps = {
   id: null,
   title: null,
+  avatar: null,
   icon: null,
 
 };

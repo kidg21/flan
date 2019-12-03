@@ -20,27 +20,8 @@ storiesOf("Layout|Card", module)
   })
   .add("Elevated Card", () => {
     return <Card type="elevated" />;
-  });
-
-// Da Card
-storiesOf("Layout|Card", module)
-  .addDecorator(Padding)
-  .addDecorator(checkA11y)
-  .add("Card- 'playing with children'", () => {
-    return (
-      <Card>
-        <Button label="Button" />
-        <Button label="Button" />
-        <Button label="Button" />
-      </Card>
-    );
-  });
-
-// Card List
-storiesOf("Layout|CardList", module)
-  .addDecorator(Padding)
-  .addDecorator(checkA11y)
-  .add("Card List - 'wrapper for Cards'", () => {
+  })
+  .add("Card List", () => {
     return (
       <CardList>
         <Card />
@@ -54,3 +35,19 @@ storiesOf("Layout|CardList", module)
       </CardList>
     );
   });
+
+// // Da Card
+// storiesOf("Layout|Card", module)
+//   .addDecorator(Padding)
+//   .addDecorator(checkA11y)
+//   .add("Card- 'playing with children'", () => {
+//     return (
+//       <Card>
+//         <Button label="Button" />
+//         <Button label="Button" />
+//         <Button label="Button" />
+//       </Card>
+//     );
+//   });
+
+// Card List

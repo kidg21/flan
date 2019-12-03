@@ -115,7 +115,6 @@ storiesOf("Layout|Form", module).add("Form Layout", () => {
               label="Last Name"
               placeholder="Williams"
               helpText="The one that comes after.."
-              disabled
             />
           </Section>
           <Section title="Group 2">
@@ -133,7 +132,6 @@ storiesOf("Layout|Form", module).add("Form Layout", () => {
               placeholder="Choose One Or More..."
               helpText="Help text for the SelectMenu component"
               options={options}
-              disabled
             />
           </Section>
           <Section title="Group 3">

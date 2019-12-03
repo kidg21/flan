@@ -8,6 +8,7 @@ import { Body } from "base/Typography";
 import Image from "atoms/Image";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
+import Avatar from "atoms/Avatar";
 
 const image = (
   <Image
@@ -85,6 +86,9 @@ storiesOf("Elements|Card", module)
         icon="analytics"
       />
     );
+  })
+  .add("Avatar", () => {
+    return <Card title="Title" description="Card Description" avatar="LB" />;
   })
   .add("Media", () => {
     return <Card title="Title" description="Card Description" media={image} />;

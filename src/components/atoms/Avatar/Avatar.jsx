@@ -17,9 +17,8 @@ const TagContainer = styled.div`
   justify-content: center;
   vertical-align: center;
   display: flex;
-  margin: .5rem;
-  width: 3rem;
-  height: 3rem;
+  width: 2.7rem;
+  height: 2.7rem;
   align-items: center;
   background-color: ${(props) => {
     return (

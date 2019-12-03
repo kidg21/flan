@@ -36,7 +36,7 @@ function ExpandingSection({
         <Bar
           contentAlign="center"
           onClick={toggleDropdown}
-          left={<Title text={title} />}
+          left={<Title size="sm" text={title} />}
           right={<Arrow icon="up" toggleOn={expanded} size="lg" />}
         />}
     >
