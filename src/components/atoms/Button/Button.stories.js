@@ -1,13 +1,22 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
-import { withKnobs, text, boolean, select, optionsKnob as options } from "@storybook/addon-knobs";
+import { withInfo } from "@storybook/addon-info";
+import {
+  withKnobs,
+  text,
+  boolean,
+  select,
+  optionsKnob as options,
+} from "@storybook/addon-knobs";
 import Button from "atoms/Button";
 import ButtonNotes from "./Button.md";
 
-// Button
 storiesOf("Atoms|Button", module)
   .addParameters({
     info: {
@@ -20,9 +29,12 @@ storiesOf("Atoms|Button", module)
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
-  .add("Documentation", () => {
-    return <Button label="Standard Button" />;
-  })
+  .add(
+    "Documentation",
+    withInfo()(() => {
+      return <Button label="Standard Button" />;
+    }),
+  )
   .add("Skeleton", () => {
     return <Button />;
   })
@@ -83,12 +95,12 @@ storiesOf("Atoms|Button", module)
         <Button label="Standard Secondary" color="secondary" />
         <Button label="Solid Secondary" type="solid" color="secondary" />
         <Button label="Solid Info Button" type="solid" />
-        <Button icon="filter" label="Fitlers" color="primary" />
+        {/* <Button icon="filter" label="Fitlers" color="primary" /> */}
 
-        <Button label="Small Button" size="small" />
-        <Button label="Large Button" size="large" />
+        {/* <Button label="Small Button" size="small" />
+        <Button label="Large Button" size="large" /> */}
         <Button label="Disabled Button" disabled />
-        <Button label="Icon Button" icon="user" type="solid" />
+        {/* <Button label="Icon Button" icon="user" type="solid" /> */}
       </Grid>
     );
   });

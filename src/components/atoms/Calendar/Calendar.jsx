@@ -1,14 +1,18 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
 import { DisabledContext } from "States";
-import { InputLabel, HelpText, ErrorText } from "layout/Form";
+import Label from "atoms/Label";
 import TextInput from "atoms/TextInput";
 
 const CalendarContainer = styled(Grid)`
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || "";
+    return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
 `;
 
@@ -33,7 +37,8 @@ function Calendar({
   let inputTextColor;
   let inputBorderColorHover;
   let inputSelectColor;
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
     inputTextColor = "disabled";
     inputFillColor = "disabled";
@@ -46,7 +51,8 @@ function Calendar({
     inputBorderColorHover = "alert";
     inputSelectColor = "grey4";
   }
-  const inputTypes = type.toLowerCase() === "datetime" ? ["date", "time"] : [type.toLowerCase()];
+  const inputTypes =
+    type.toLowerCase() === "datetime" ? ["date", "time"] : [type.toLowerCase()];
   const inputElements = inputTypes.map((currType) => {
     return (
       <TextInput
@@ -84,10 +90,10 @@ function Calendar({
       inputTextColor={inputTextColor}
       isRequired={isRequired}
     >
-      {label ? <InputLabel isRequired={isRequired} label={label} /> : null}
+      {label ? <Label size="sm" weight="bold" isRequired={isRequired} text={label} /> : null}
       {inputContainer}
-      {helpText ? <HelpText>{helpText}</HelpText> : null}
-      {error && !isDisabled ? <ErrorText>{error}</ErrorText> : null}
+      {helpText ? <Label size="sm" text={helpText} /> : null}
+      {error && !isDisabled ? <Label size="sm" text={error} /> : null}
     </CalendarContainer>
   );
 }
@@ -117,6 +123,7 @@ Calendar.defaultProps = {
   helpText: null,
   id: null,
   label: null,
+  onChange: null,
   isRequired: false,
   max: null,
   min: null,

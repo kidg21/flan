@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
-import PropertyPanelHeader from "elements/PanelHeaders/PropertyPanelHeader";
 import Table from "blocks/Table";
 import styled from "styled-components";
 import InformationCardBar from "elements/CardBars/InformationCardBar";
@@ -15,27 +14,27 @@ const Wrapper = styled.div`
 const lotData = [
   { id: "a", name: "Land Use", value: "Commercial" },
   { id: "b", name: "Land Description", value: "Miscellaneous Commercial" },
-  { id: "c", name: "Lot Area", value: "62,344 SF | 1.43 Acres" },
+  { id: "c", name: "Lot Area", value: "62,344 SF | 1.43 Acres" }
 ];
 
 const ownerData = [
   { id: "a", name: "Owner", value: "1830 LA CIENEGA LLC" },
   { id: "b", name: "Last Transfer", value: "12/31/14" },
   { id: "c", name: "Last Market Sale", value: "10/31/13 for $11,000,110" },
-  { id: "d", name: "Opportunity Zone ", value: "No" },
+  { id: "d", name: "Opportunity Zone ", value: "No" }
 ];
 
 const buildingData = [
   { id: "a", name: "Value", value: "$11,851,071" },
   { id: "b", name: "Square Feet", value: "34,529 SF" },
   { id: "c", name: "# of Units", value: "1" },
-  { id: "d", name: "Year Built", value: "1950" },
+  { id: "d", name: "Year Built", value: "1950" }
 ];
 
 const data = [
   { id: "a", name: "Owners/Units", value: "Multiple Owners (2 Units)" },
   { id: "b", name: "Master Parcel No.", value: "387483675638" },
-  { id: "c", name: "Zoning", value: "No Zone" },
+  { id: "c", name: "Zoning", value: "No Zone" }
 ];
 
 storiesOf("Templates|Panel", module).add("Property Panel", () =>
@@ -127,5 +126,5 @@ storiesOf("Templates|Panel", module).add("Property Panel", () =>
         </PanelSection>
       </Panel>
     );
-  }),
+  })
 );

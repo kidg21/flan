@@ -10,14 +10,14 @@ const centerStyles = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  height: "100vh",
+  height: "100vh"
 };
 const Center = ({ children }) => {
   return <div style={centerStyles}>{children}</div>;
 };
 
 const padding = {
-  padding: "2rem",
+  padding: "2rem"
 };
 const Padding = storyFn => <div style={padding}>{storyFn()}</div>;
 
@@ -45,7 +45,7 @@ function IconGrid({ data }) {
         leftWidth="min-content"
         center={
           <>
-            <Title text={item.name || item.icon} size="large" select="all" />
+            <Title text={item.name || item.icon} size="lg" select="all" />
             <Description text={item.desc} />
           </>
         }

@@ -1,6 +1,14 @@
-import React, { Fragment } from "react";
-import styled, { css, keyframes } from "styled-components";
-import { fonts, shadows, screen } from "Variables";
+/* eslint-disable linebreak-style */
+/* eslint-disable react/no-unused-prop-types */
+/* eslint-disable react/require-default-props */
+/* eslint-disable react/no-children-prop */
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+import React from "react";
+import styled, { keyframes } from "styled-components";
+import { screen } from "Variables";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 import PropTypes from "prop-types";
 
@@ -74,7 +82,7 @@ const ContentWrapper = styled.span`
 
 const NotificationContainer = styled.div`
   position: absolute;
-  display: ${props => (props.visible ? "flex" : "none")};
+  display: ${(props) => { return (props.visible ? "flex" : "none"); }};
   z-index: 1005;
   top: 0px;
   right: 0px;
@@ -82,19 +90,19 @@ const NotificationContainer = styled.div`
   left: 0px;
   min-height: 100vh;
   align-items: center;
-  justify-content: ${props => props.justifyContent || ""};
+  justify-content: ${(props) => { return props.justifyContent || ""; }};
   @media ${screen.medium} {
-    align-items: ${props => props.alignItems || ""};
+    align-items: ${(props) => { return props.alignItems || ""; }};
   }
   @media ${screen.large} {
-    align-items: ${props => props.alignItems || ""};
+    align-items: ${(props) => { return props.alignItems || ""; }};
   }
   flex-direction: column;
   padding: 0.5rem;
   overflow: hidden;
   pointer-events: none;
   ${ContentWrapper} {
-    animation-name: ${props => (props.position ? moveDown : moveUp)};
+    animation-name: ${(props) => { return (props.position ? moveDown : moveUp); }};
     animation-duration: 0.6s;
     transform-origin: top;
     pointer-events: initial;
@@ -129,7 +137,7 @@ function Notification({
   ariaLabelledby,
   ariaDescribedby,
   children,
-  style
+  style,
 }) {
   let justifyContent;
   let alignItems;
@@ -183,21 +191,21 @@ function Notification({
 export default Notification;
 
 Notification.propTypes = {
-  id: PropTypes.string,
-  align: PropTypes.oneOf([
+  "id": PropTypes.string,
+  "align": PropTypes.oneOf([
     "topLeft",
     "topCenter",
     "topRight",
     "bottomLeft",
     "bottomCenter",
-    "bottomRight"
+    "bottomRight",
   ]),
-  visible: PropTypes.bool,
-  position: PropTypes.oneOf(["moveUp", "moveDown"]),
-  scale: PropTypes.oneOf(["scaleUp", "scaleDown"]),
-  opacity: PropTypes.oneOf(["fadeIn", "fadeOut"]),
-  onClick: PropTypes.func,
+  "visible": PropTypes.bool,
+  "position": PropTypes.oneOf(["moveUp", "moveDown"]),
+  "scale": PropTypes.oneOf(["scaleUp", "scaleDown"]),
+  "opacity": PropTypes.oneOf(["fadeIn", "fadeOut"]),
+  "onClick": PropTypes.func,
   "aria-labelledby": PropTypes.string,
   "aria-describedby": PropTypes.string,
-  style: PropTypes.string
+  "style": PropTypes.string,
 };

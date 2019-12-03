@@ -1,9 +1,17 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { Padding, CommandGrid } from "helpers/Display";
 import { withInfo } from "@storybook/addon-info";
-import { withKnobs, text, select, optionsKnob as options } from "@storybook/addon-knobs";
+import {
+  withKnobs,
+  text,
+  select,
+  optionsKnob as options,
+} from "@storybook/addon-knobs";
 import Title, { Headline, SubTitle, Description } from "base/Typography";
 import Grid from "layout/Grid";
 import commandsStandard from "atoms/Command/libraryCommand.data";
@@ -119,8 +127,8 @@ storiesOf("Atoms|Command", module)
           <u>Command State</u>
         </Title>
         <SubTitle>
-          The standard Command uses an anchor tag and inherits anchor styling. To disable a Command,
-          use the &apos;disabled&apos; prop.
+          The standard Command uses an anchor tag and inherits anchor styling.
+          To disable a Command, use the &apos;disabled&apos; prop.
         </SubTitle>
         <Command icon="circle_solid" label="Active" />
         <Command icon="circle_solid" label="Disabled" disabled />
@@ -134,8 +142,8 @@ storiesOf("Atoms|Command", module)
           <u>Command Size</u>
         </Title>
         <SubTitle>
-          To override the standard size, set the &apos;size&apos; prop to &apos;small&apos;, or
-          &apos;large&apos;.
+          To override the standard size, set the &apos;size&apos; prop to
+          &apos;small&apos;, or &apos;large&apos;.
         </SubTitle>
         <Command icon="circle_solid" label="Small" size="small" />
         <Command icon="circle_solid" label="Standard" />

@@ -1,4 +1,7 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
@@ -44,17 +47,25 @@ storiesOf("Blocks|Data Range", module)
         <Form columns="1">
           <DataRange
             label="Data Range (default)"
-            labelMin="Min"
-            labelMax="Max"
             helpText="Hang in there, buddy, I'm here to help!"
+            min={{
+              label: "Min",
+            }}
+            max={{
+              label: "Max",
+            }}
           />
           <DataRange
             label="Data Range (with options)"
-            labelMin="Min"
-            optionsMin={options}
-            labelMax="Max"
-            optionsMax={options}
             helpText="Hang in there, buddy, I'm here to help!"
+            min={{
+              label: "Min",
+              options: options,
+            }}
+            max={{
+              label: "Max",
+              options: options,
+            }}
           />
         </Form>
       );
@@ -65,9 +76,17 @@ storiesOf("Blocks|Data Range", module)
       <DataRange
         label={text("label", "Data Label", "Data Range")}
         labelMin={text("min label", "Min", "Data Range")}
-        optionsMin={object("options (min)", [{ value: "0", label: "0" }], "Data Range")}
+        optionsMin={object(
+          "options (min)",
+          [{ value: "0", label: "0" }],
+          "Data Range",
+        )}
         labelMax={text("max label", "Max", "Data Range")}
-        optionsMax={object("options (max)", [{ value: "0", label: "0" }], "Data Range")}
+        optionsMax={object(
+          "options (max)",
+          [{ value: "0", label: "0" }],
+          "Data Range",
+        )}
         isRequired={boolean("required", false, "Data Range")}
         helpText={text("help text", "Help text goes here...", "Data Range")}
         error={
@@ -115,8 +134,7 @@ storiesOf("Blocks|Data Range", module)
           <DataRange
             label="Select Range"
             labelMin="Min"
-            withSelector
-            optionsSelect={selectorOptions}
+            select={{ options: selectorOptions }}
             optionsMin={options}
             labelMax="Max"
             optionsMax={options}

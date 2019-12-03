@@ -1,13 +1,20 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable jsx-a11y/mouse-events-have-key-events */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
-import Command from "atoms/Command";
 import Bar from "blocks/Bar";
 import styled from "styled-components";
+import Title from "base/Typography";
+import Card from "layout/Card";
 
 const MenuContainer = styled.div`
   cursor: pointer;
   line-height: 1.5;
+  color: ${(props) => { return props.theme.text.primary; }};
 `;
 
 const MenuItem = styled.li`
@@ -17,15 +24,12 @@ const MenuItem = styled.li`
 `;
 
 const MenuList = styled.ul`
-  background: white;
-  border-radius: 3px;
   list-style: none;
-  padding: 0.25em;
-  padding-top: 0.8em;
-  padding-bottom: 0.8em;
+  // padding: 0.25em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
   width: auto;
   min-width: 10em;
-  max-height: 100px;
   overflow-x: hidden;
   overflow-y: auto;
 `;
@@ -71,51 +75,54 @@ function MenuComponent({
       onClick={onClick}
       onMouseLeave={closeMenu}
     >
-      <MenuList>
-        {data.map((item) => {
-          // nested submenu
-          if (item.commands) {
+      <Card>
+        <MenuList>
+          {data.map((item) => {
+            // nested submenu
+            if (item.commands) {
+              return (
+                <MenuItem
+                  key={item.id}
+                  onMouseOver={(e) => {
+                    setActiveItem({
+                      id: item.id,
+                      top: `${e.currentTarget.getBoundingClientRect().top - e.currentTarget.offsetParent.getBoundingClientRect().top}px`,
+                      left: submenuDirection === "right" ? `${e.currentTarget.offsetParent.getBoundingClientRect().width}px` : "",
+                      right: submenuDirection !== "right" ? `${e.currentTarget.offsetParent.getBoundingClientRect().width}px` : "",
+                    });
+                  }}
+                >
+                  <Bar
+                    contentAlign="center"
+                    left={<Title icon={item.icon} text={item.name} />}
+                    right={<Icon icon={submenuDirection} />}
+                  />
+                  {activeItem && activeItem.id === item.id ? (
+                    <MenuComponent
+                      id={item.id}
+                      data={item.commands}
+                      onClick={closeMenu}
+                      right={activeItem.right}
+                      left={activeItem.left}
+                      top={activeItem.top}
+                      submenuDirection={submenuDirection}
+                    />
+                  ) : null}
+                </MenuItem>
+              );
+            }
+
             return (
               <MenuItem
                 key={item.id}
-                onMouseOver={(e) => {
-                  setActiveItem({
-                    id: item.id,
-                    top: `${e.currentTarget.getBoundingClientRect().top - e.currentTarget.offsetParent.getBoundingClientRect().top}px`,
-                    left: submenuDirection === "right" ? `${e.currentTarget.offsetParent.getBoundingClientRect().width}px` : "",
-                    right: submenuDirection !== "right" ? `${e.currentTarget.offsetParent.getBoundingClientRect().width}px` : "",
-                  });
-                }}
+                onClick={() => { if (item.onClickLink) item.onClickLink(item.id); }}
+                onMouseOver={closeMenu}
               >
-                <Bar
-                  left={<Command icon={item.icon} label={item.name} />}
-                  right={<Icon icon={submenuDirection} />}
-                />
-                {activeItem && activeItem.id === item.id ? (
-                  <MenuComponent
-                    id={item.id}
-                    data={item.commands}
-                    onClick={closeMenu}
-                    right={activeItem.right}
-                    left={activeItem.left}
-                    top={activeItem.top}
-                    submenuDirection={submenuDirection}
-                  />
-                ) : null}
-              </MenuItem>
-            );
-          }
-
-          return (
-            <MenuItem
-              key={item.id}
-              onClick={() => { if (item.onClickLink) item.onClickLink(item.id); }}
-              onMouseOver={closeMenu}
-            >
-              <Command icon={item.icon} label={item.name} />
-            </MenuItem>);
-        })}
-      </MenuList>
+                <Title icon={item.icon} text={item.name} />
+              </MenuItem>);
+          })}
+        </MenuList>
+      </Card>
     </MenuPopper>
   );
 }
@@ -197,7 +204,7 @@ function Menu({
     <React.Fragment>
       {visibility ? <MenuBG onClick={toggleVisibility} /> : null}
       <MenuContainer onClick={toggleVisibility}>
-        <Icon icon={icon} />
+        <Icon icon={icon} size="lg" />
         {visibility ? (
           <MenuComponent
             id={id}
@@ -237,7 +244,7 @@ Menu.defaultProps = {
   visible: false,
   onClick: null,
   position: "default",
-  icon: "settings",
+  icon: "options",
 };
 
 export default Menu;
