@@ -23,6 +23,7 @@ RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
 # npm install all dependencies (keep this before COPY source code so that Docker will re-use an existing Image if possible)
 COPY ./.storybook/package-deploy.json /usr/build/package.json
+COPY .npmrc /usr/build/
 WORKDIR /usr/build
 RUN npm install
 
