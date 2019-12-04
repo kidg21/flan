@@ -21,10 +21,7 @@ const TagContainer = styled.div`
   height: 2.7rem;
   align-items: center;
   background-color: ${(props) => {
-    return (
-      props.theme.palette[props.backgroundColor] ||
-      ""
-    );
+    return props.theme.palette[props.backgroundColor] || "";
   }};
   color: ${(props) => {
     return props.theme.palette[props.textColor] || "";
@@ -34,7 +31,7 @@ const TagContainer = styled.div`
 `;
 
 function Avatar({
-  id, label, icon, color, style,
+ id, label, icon, color, style, disabled 
 }) {
   let labelType;
   let iconType;
@@ -70,6 +67,9 @@ function Avatar({
       textColor = "white";
       break;
   }
+  if (disabled) {
+    backgroundColor = "grey3";
+  }
   if (icon) {
     iconType = <Icon icon={icon} size="lg" />;
   } else {
@@ -91,6 +91,7 @@ function Avatar({
 }
 
 Avatar.propTypes = {
+  disabled: PropTypes.bool,
   id: PropTypes.string,
   label: PropTypes.string,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
@@ -99,6 +100,7 @@ Avatar.propTypes = {
 };
 
 Avatar.defaultProps = {
+  disabled: false,
   label: null,
   id: null,
   icon: null,
