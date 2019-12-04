@@ -5,13 +5,12 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { Darken, Lighten } from "Variables";
+import { Darken } from "Variables";
 import Bar from "blocks/Bar";
 import Icon from "atoms/Icon";
 import Avatar from "atoms/Avatar";
 import Checkbox from "atoms/Checkbox";
 import Switch from "atoms/Switch";
-import Divider from "atoms/Divider";
 import Title, { Description } from "base/Typography";
 import { InteractiveContext, DisabledContext } from "States";
 
@@ -29,7 +28,6 @@ const ListWrapper = styled.ul`
   }
 `;
 
-
 const ListItemWrapper = styled.li`
   position: relative;
   color: ${(props) => {
@@ -37,9 +35,7 @@ const ListItemWrapper = styled.li`
   }};
   padding: 1em;
   background-color: ${(props) => {
-    return (
-      props.theme.palette.background
-    );
+    return props.theme.palette.background;
   }};
   cursor: ${(props) => {
     return props.interactive ? "pointer" : "";
@@ -66,12 +62,14 @@ const ListItemWrapper = styled.li`
 `;
 
 function List({
-  children, id, interactive, divider, title,
+ children, divider, id, interactive, title 
 }) {
   return (
     <InteractiveContext.Provider value={interactive}>
       {title ? <Bar left={<Title text={title} weight="bold" />} /> : null}
-      <ListWrapper divider={divider} id={id}>{children}</ListWrapper>
+      <ListWrapper divider={divider} id={id}>
+        {children}
+      </ListWrapper>
     </InteractiveContext.Provider>
   );
 }
@@ -89,17 +87,14 @@ function ListItem({
   label,
   onClick,
 }) {
-  // let mainContent;
-  // let leftContent;
-  let rightContent;
-
   const mainContent = (
     <React.Fragment>
-      <Title text={label} />
-      {description ? <Description text={description} /> : null}
+      <Title text={label} disabled={disabled} />
+      {description ? (
+        <Description text={description} disabled={disabled} />
+      ) : null}
     </React.Fragment>
   );
-
 
   return (
     <ListItemWrapper
@@ -111,37 +106,48 @@ function ListItem({
           : useContext(InteractiveContext)
       }
       onClick={onClick}
+      disabled={disabled}
       tabIndex={disabled ? "-1" : "1"}
     >
       <DisabledContext.Provider value={disabled}>
-        {avatar || icon ?
-          (<Bar
+        {avatar || icon ? (
+          <Bar
             leftWidth="6%"
             contentAlign="center"
             centerAlign="left"
+            disabled={disabled}
             left={
               <React.Fragment>
-                {avatar ? <Avatar label={avatar} /> : null}
-                {icon ? <Icon icon={icon} size="lg" /> : null}
-              </React.Fragment>}
+                {avatar ? <Avatar label={avatar} disabled={disabled} /> : null}
+                {icon ? (
+                  <Icon icon={icon} size="lg" disabled={disabled} />
+                ) : null}
+              </React.Fragment>
+            }
             center={mainContent}
             right={
               <React.Fragment>
-                {checkbox ? <Checkbox label="checkbox" /> : null}
-                {toggle ? <Switch /> : null}
-              </React.Fragment>}
-          />)
-          :
+                {checkbox ? (
+                  <Checkbox label={label} disabled={disabled} />
+                ) : null}
+                {toggle ? <Switch disabled={disabled} /> : null}
+              </React.Fragment>
+            }
+          />
+        ) : (
           <Bar
             contentAlign="center"
             centerAlign="left"
+            disabled={disabled}
             left={mainContent}
             right={
               <React.Fragment>
-                {checkbox ? <Checkbox label="checkbox" /> : null}
-                {toggle ? <Switch /> : null}
-              </React.Fragment>}
-          />}
+                {checkbox ? <Checkbox disabled={disabled} /> : null}
+                {toggle ? <Switch disabled={disabled} /> : null}
+              </React.Fragment>
+            }
+          />
+        )}
       </DisabledContext.Provider>
     </ListItemWrapper>
   );
@@ -189,20 +195,3 @@ ListItem.defaultProps = {
 };
 
 export { List as default, ListItem };
-
-
-// if (secondaryItem) {
-//   content = (
-//     <Bar
-//       contentAlign="center"
-//       centerAlign="left"
-//       left={
-//         <>
-//           {<Title text={label} />}
-//           {description ? <Description text={description} /> : null}
-//         </>
-//       }
-//       right={secondaryItem}
-//     // rightWidth={(children && children.props.width) || ""}
-//     />)
-// }

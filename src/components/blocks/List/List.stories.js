@@ -140,8 +140,16 @@ storiesOf("Blocks|List", module)
   .add("Avatar", () => {
     return (
       <List interactive>
+        {/* <ListItem
+          label="List Item"
+          description="This is the description"
+          avatar="LB"
+          icon="user"
+          toggle
+          checkbox
+        /> */}
         <ListItem
-          label="List Item (not interactive)"
+          label="List Item"
           description="This is the description"
           avatar="LB"
         />
@@ -149,6 +157,7 @@ storiesOf("Blocks|List", module)
           label="List Item (disabled)"
           description="This is the description"
           avatar="LB"
+          disabled
         />
         <ListItem
           label="List Item"
@@ -193,9 +202,10 @@ storiesOf("Blocks|List", module)
           icon="user"
         />
         <ListItem
-          label="List Item "
+          label="List Item (disabled)"
           description="This is the description"
           icon="user"
+          disabled
         />
         <ListItem
           label="List Item"
@@ -225,9 +235,10 @@ storiesOf("Blocks|List", module)
           toggle
         />
         <ListItem
-          label="List Item"
+          label="List Item (disabled)"
           description="This is the description"
           toggle
+          disabled
         />
         <ListItem
           label="List Item"
@@ -262,9 +273,10 @@ storiesOf("Blocks|List", module)
           checkbox
         />
         <ListItem
-          label="List Item"
+          label="List Item (disabled)"
           description="This is the description"
           checkbox
+          disabled
         />
         <ListItem
           label="List Item"
