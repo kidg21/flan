@@ -96,6 +96,7 @@ function Text({
   children,
   className,
   count,
+  disabled,
   font,
   href,
   id,
@@ -221,6 +222,9 @@ function Text({
     textWeight = "800";
     textWidth = "max-content";
   }
+  if (disabled) {
+    textColor = "disabled";
+  }
   return (
     <StyledText
       as={as}
@@ -308,7 +312,7 @@ Headline.defaultProps = {
 };
 
 function Title({
-  text, size, children, number, ...textProps
+ text, size, children, number, ...textProps 
 }) {
   return (
     <Text size={size} count={number} weight="semibold" {...textProps}>
@@ -317,10 +321,7 @@ function Title({
   );
 }
 Title.propTypes = {
-  number: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.number,
-  ]),
+  number: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   text: PropTypes.string,
   children: PropTypes.node,
 };
@@ -347,7 +348,7 @@ SubTitle.defaultProps = {
 };
 
 function Body({
-  text, weight, children, ...textProps
+ text, weight, children, ...textProps 
 }) {
   return (
     <Text size="sm" weight="normal" margin="0px 0px 0.15em" {...textProps}>
@@ -381,7 +382,7 @@ Description.defaultProps = {
 };
 
 function Link({
-  text, children, title, onClick, href, target, ...textProps
+ text, children, title, onClick, href, target, ...textProps 
 }) {
   return (
     <Text
