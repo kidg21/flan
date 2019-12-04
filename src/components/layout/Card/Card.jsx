@@ -10,12 +10,10 @@ import Grid from "layout/Grid";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 import PropTypes from "prop-types";
 
-const CardSection = styled.div`
-`;
+const CardSection = styled.div``;
 
 const CardWrapper = styled.div`
 display: flex;
-border-radius: 5px;
 flex-direction: column;
 flex: none;
 box-shadow: ${(props) => {
@@ -66,9 +64,8 @@ const CardListWrapper = styled(Grid)`
   }
 `;
 
-
 function Card({
-  children, className, type, id, padding,
+ children, className, id, padding, type 
 }) {
   let shadow;
   let border;
@@ -121,7 +118,7 @@ function Card({
 }
 
 function CardList({
-  children, className, columns, gap, id, rows,
+ children, className, columns, gap, id, rows 
 }) {
   return (
     <CardListWrapper
@@ -135,7 +132,6 @@ function CardList({
     </CardListWrapper>
   );
 }
-
 
 Card.propTypes = {
   children: PropTypes.node,
