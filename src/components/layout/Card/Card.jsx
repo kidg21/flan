@@ -16,7 +16,6 @@ const CardSection = styled.div`
 const CardWrapper = styled.div`
 display: flex;
 border-radius: 5px;
-margin: 8px;
 flex-direction: column;
 flex: none;
 box-shadow: ${(props) => {
