@@ -60,11 +60,8 @@ const PanelSection = styled.section`
     return "";
   }};
   max-height: 100vh;
-  border-bottom: ${(props) => {
-    return props.body ? "" : "1px solid";
-  }};
-  border-bottom-color: ${(props) => {
-    return props.body ? "" : props.theme.palette.grey5;
+  box-shadow: ${(props) => {
+    return props.body ? "none" : props.theme.shadows.shadowV;
   }};
   transition: all 0.2s ease-in-out;
   /* Prototype Content - displays when a Panel Section is empty */

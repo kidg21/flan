@@ -4,7 +4,6 @@
 /* eslint-disable linebreak-style */
 import { css } from "styled-components";
 
-
 // Codes for color palette
 export const colors = {
   // legacy values
@@ -44,7 +43,6 @@ export const colors = {
   lightBoxGold: "hsl(46,64.2%,52.9%)",
   lightBoxGrey: "hsl(200,2.6%,77.1%)",
 
-
   glassDark: "hsla(34, 5%, 28%, 0.85)",
   glassLight: "hsl(34, 5%, 95%, 0.85)",
 
@@ -53,6 +51,9 @@ export const colors = {
   shadow3: "0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)",
   shadow4: "0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)",
   shadow5: "0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22)",
+
+  shadowV:
+    "0 0.25em 5px rgba(0, 0, 0, 0.10), 0 -0.25em 5px rgba(0, 0, 0, 0.10)",
 
   green: "hsl(89, 46%, 42%)",
   greenBright: "hsl(135, 79%, 37%)",
@@ -127,7 +128,6 @@ export const colors = {
   gold9: "hsl(43.9, 76.4%, 56.9%)",
   gold10: "hsl(43.9,76.6%,53.1%)",
 
-
   navy0: "hsl(221.5,44.1%,76.9%)",
   navy1: "hsl(222,43.5%,72.9%)",
   navy2: "hsl(221.7,43.9%,69.2%)",
@@ -152,7 +152,6 @@ export const colors = {
   smoke9: "hsl(204,2.2%,54.7%)",
   smoke10: "hsl(204,2%,50.8%)",
 
-
   silver0: "hsl(0,0%,98%)",
   silver1: "hsl(0,0%,94.1%)",
   silver2: "hsl(0,0%,90.2%)",
@@ -164,7 +163,6 @@ export const colors = {
   silver8: "hsl(0,0%,66.7%)",
   silver9: "hsl(0,0%,62.7%)",
   silver10: "hsl(0,0%,58.8%)",
-
 
   orange: "hsl(30, 82%, 48%)",
   orangeBright: "hsl(30, 100%, 50%)",
@@ -264,6 +262,7 @@ export const DMPTheme = {
     shadow3: colors.shadow3,
     shadow4: colors.shadow4,
     shadow5: colors.shadow5,
+    shadowV: colors.shadowV,
   },
 };
 
