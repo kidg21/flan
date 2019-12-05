@@ -73,7 +73,11 @@ addParameters({
     goFullScreen: false,
     addonPanelInRight: true,
     hierarchySeparator: /\/|\./,
-    hierarchyRootSeparator: /\|/
+    hierarchyRootSeparator: /\|/,
+    storySort: (a, b) =>
+      a[1].kind === b[1].kind
+        ? 0
+        : a[1].id.localeCompare(b[1].id, { numeric: true })
   },
   docs: {
     container: DocsContainer,
@@ -97,46 +101,53 @@ configureActions({
   limit: 20
 });
 
-const atoms = require.context("../src/components/atoms", true, /.stories.js$/);
-const base = require.context("../src/components/base", true, /.stories.js$/);
+// Load Stories
+const base = require.context(
+  "../src/components/base",
+  true,
+  /\.stories\.(js|mdx)$/
+);
+const utils = require.context(
+  "../src/components/utils",
+  true,
+  /\.stories\.(js|mdx)$/
+);
+const intro = require.context(
+  "../src/attributes",
+  true,
+  /\.stories\.(js|mdx)$/
+);
+const atoms = require.context(
+  "../src/components/atoms",
+  true,
+  /\.stories\.(js|mdx)$/
+);
 const blocks = require.context(
   "../src/components/blocks",
   true,
-  /.stories.js$/
+  /\.stories\.(js|mdx)$/
 );
 const elements = require.context(
   "../src/components/elements",
   true,
-  /.stories.js$/
+  /\.stories\.(js|mdx)$/
 );
 const layout = require.context(
   "../src/components/layout",
   true,
-  /.stories.js$/
+  /\.stories\.(js|mdx)$/
 );
 const templates = require.context(
   "../src/components/templates",
   true,
-  /.stories.js$/
+  /\.stories\.(js|mdx)$/
 );
-
-const utils = require.context("../src/components/utils", true, /.stories.js$/);
-
-const work = require.context("../src/components/work", true, /.stories.js$/);
-function loadStories() {
-  require("../src/attributes/App.stories.js");
-  atoms.keys().forEach(filename => atoms(filename));
-  base.keys().forEach(filename => base(filename));
-  blocks.keys().forEach(filename => blocks(filename));
-  elements.keys().forEach(filename => elements(filename));
-  layout.keys().forEach(filename => layout(filename));
-  templates.keys().forEach(filename => templates(filename));
-  utils.keys().forEach(filename => utils(filename));
-  work.keys().forEach(filename => work(filename));
-}
-
-configure(loadStories, module);
+const work = require.context(
+  "../src/components/work",
+  true,
+  /\.stories\.(js|mdx)$/
+);
 configure(
-  require.context("../src/components", true, /\.stories\.(js|mdx)$/),
+  [intro, base, utils, atoms, blocks, elements, layout, templates, work],
   module
 );
