@@ -7,7 +7,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { Skeleton } from "helpers";
+// import { Skeleton } from "helpers";
 import { fonts } from "Variables";
 
 const StyledText = styled.h4`
@@ -52,9 +52,6 @@ const StyledText = styled.h4`
   }};
     } */
   }
-  &:empty {
-    ${Skeleton};
-  }
 }
 `;
 
@@ -69,9 +66,6 @@ const StyledNumber = styled(StyledText)`
   font-family: ${fonts.numbers};
   color: inherit;
   letter-spacing: 1px;
-  &:empty {
-    ${Skeleton};
-  }
 }
 `;
 
@@ -85,9 +79,6 @@ const StyledCode = styled.code`
   border-radius: 0.25rem;
   padding: 0.5rem 0.5rem 0.25rem;
   user-select: all;
-  &:empty {
-    ${Skeleton};
-  }
 }
 `;
 
@@ -308,19 +299,24 @@ Headline.defaultProps = {
 };
 
 function Title({
-  text, size, children, ...textProps
+  text, size, children, number, ...textProps
 }) {
   return (
-    <Text size={size} weight="semibold" {...textProps}>
+    <Text size={size} count={number} weight="semibold" {...textProps}>
       {text || children}
     </Text>
   );
 }
 Title.propTypes = {
+  number: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ]),
   text: PropTypes.string,
   children: PropTypes.node,
 };
 Title.defaultProps = {
+  number: null,
   text: null,
   children: null,
 };

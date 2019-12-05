@@ -7,6 +7,7 @@ import PropTypes from "prop-types";
 import { DisabledContext } from "States";
 import Label from "atoms/Label";
 import Grid from "layout/Grid";
+import { getGuid } from "helpers";
 
 const TextInputContainer = styled(Grid)`
   color: ${(props) => {
@@ -120,12 +121,13 @@ function TextInput({
     // inputBorderColor = "primaryLight";
     // inputBorderColorHover = "primary";
   }
+
   // construct datalist element for autocompletes if appropriate props passed in
   // the autocompleteListId is used to ensure each textinput only draws from its own datalist element
   let autocompleteDataList = null;
   let autoCompleteDataListId = null;
   if (autocompleteList) {
-    autoCompleteDataListId = Dmp.Util.getGuid();
+    autoCompleteDataListId = getGuid();
     const options = autocompleteList.map((item) => {
       let itemValue = item;
       let itemLabel = item;
@@ -134,7 +136,7 @@ function TextInput({
         itemLabel = item.label || item.value;
       }
       return (
-        <option key={Dmp.Util.getGuid()} value={itemValue}>
+        <option key={getGuid()} value={itemValue}>
           {itemLabel}
         </option>
       );

@@ -14,7 +14,6 @@ export const MultiGridWrapper = styled.div`
   margin: 0.5em;
   overflow: hidden;
   font-size: 12px;
-  min-height: 500px;
   border-radius: 5px;
   border-collapse: collapse;
   flex: 1 1 auto;
