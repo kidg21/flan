@@ -1,130 +1,117 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable no-console */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable linebreak-style */
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
-import Table from "blocks/Table";
-import styled from "styled-components";
-import InformationCardBar from "elements/CardBars/InformationCardBar";
-import Accordion from "blocks/Accordion";
+import PropertyPanelHeader from "elements/PanelHeaders/PropertyPanelHeader";
+import Legend from "blocks/Legend";
+import Form, { Section } from "layout/Form";
+import Card from "elements/Card";
+import Divider from "atoms/Divider";
+import { CardList } from "layout/Card";
 import Panel, { PanelSection } from "layout/Panel";
-import PropertyListCard from "elements/ListCards/PropertyListCard";
-
-const Wrapper = styled.div`
-  padding: 1em;
-`;
+import List, { ListItem } from "blocks/List";
 
 const lotData = [
   { id: "a", name: "Land Use", value: "Commercial" },
   { id: "b", name: "Land Description", value: "Miscellaneous Commercial" },
-  { id: "c", name: "Lot Area", value: "62,344 SF | 1.43 Acres" }
+  { id: "c", name: "Lot Area", value: "62,344 SF | 1.43 Acres" },
 ];
 
 const ownerData = [
-  { id: "a", name: "Owner", value: "1830 LA CIENEGA LLC" },
+  { id: "a", name: "Owner", value: "1830 La Cienga LLC" },
   { id: "b", name: "Last Transfer", value: "12/31/14" },
   { id: "c", name: "Last Market Sale", value: "10/31/13 for $11,000,110" },
-  { id: "d", name: "Opportunity Zone ", value: "No" }
+  { id: "d", name: "Opportunity Zone ", value: "No" },
 ];
 
 const buildingData = [
   { id: "a", name: "Value", value: "$11,851,071" },
   { id: "b", name: "Square Feet", value: "34,529 SF" },
   { id: "c", name: "# of Units", value: "1" },
-  { id: "d", name: "Year Built", value: "1950" }
+  { id: "d", name: "Year Built", value: "1950" },
 ];
 
 const data = [
-  { id: "a", name: "Owners/Units", value: "Multiple Owners (2 Units)" },
-  { id: "b", name: "Master Parcel No.", value: "387483675638" },
-  { id: "c", name: "Zoning", value: "No Zone" }
+  {
+    id: "a",
+    onClickLink: () => {
+      console.log("clicked Save");
+    },
+    name: "Save",
+  },
+  {
+    id: "b",
+    onClickLink: () => {
+      console.log("clicked Filter");
+    },
+    name: "Filter",
+  },
+  {
+    id: "c",
+    onClickLink: () => {
+      console.log("clicked Share");
+    },
+    name: "Share",
+  },
+  {
+    id: "d",
+    onClickLink: () => {
+      console.log("clicked Refresh");
+    },
+    name: "Refresh",
+  },
+  {
+    id: "e",
+    onClickLink: () => {
+      console.log("clicked Layer");
+    },
+    name: "Layer",
+  },
 ];
 
-storiesOf("Templates|Panel", module).add("Property Panel", () =>
-  React.createElement(() => {
-    const [visibility, setVisibility] = useState(false);
-    const [visibility2, setVisibility2] = useState(false);
-    const [visibility3, setVisibility3] = useState(false);
-    const [visibility4, setVisibility4] = useState(false);
-    const [visibility5, setVisibility5] = useState(false);
-    const [visibility6, setVisibility6] = useState(false);
-    return (
-      <Panel>
-        <PanelSection>
-          <PropertyListCard
-            lotData={lotData}
-            ownerData={ownerData}
-            buildingData={buildingData}
-            address="2801 Kelvin Avenue, Irvine, CA 92614"
-            APN="374-342-8957"
+storiesOf("Templates|Panel", module).add("Property Panel", () => {
+  return (
+    <Panel>
+      <PanelSection>
+        <PropertyPanelHeader
+          title="2801 Kelvin Avenue, Irvine, CA 92614"
+          APN="374-342-8957"
+          menuData={data}
+          onClick={() => {}}
+        />
+      </PanelSection>
+      <PanelSection body>
+        <Card
+          body={
+            <React.Fragment>
+              <Legend title="Lot" data={lotData} />
+              <Legend title="Owner" data={ownerData} />
+              <Legend title="Building" data={buildingData} />
+            </React.Fragment>
+          }
+        />
+
+        <List interactive>
+          <ListItem
+            label="Demographics"
+            description="This is the description"
           />
-        </PanelSection>
-        <PanelSection body>
-          <Accordion
-            header={<InformationCardBar title="Ownership" />}
-            visibility={visibility}
-            onClick={() => {
-              setVisibility(!visibility);
-            }}
-          >
-            <Wrapper>
-              <Table data={data} />
-            </Wrapper>
-          </Accordion>
-          <Accordion
-            header={<InformationCardBar title="Site Information" />}
-            visibility={visibility2}
-            onClick={() => {
-              setVisibility2(!visibility2);
-            }}
-          >
-            <Wrapper>
-              <Table data={data} />
-            </Wrapper>
-          </Accordion>
-          <Accordion
-            header={<InformationCardBar title="Property Characteristics" />}
-            visibility={visibility3}
-            onClick={() => {
-              setVisibility3(!visibility3);
-            }}
-          >
-            <Wrapper>
-              <Table data={data} />
-            </Wrapper>
-          </Accordion>
-          <Accordion
-            header={<InformationCardBar title="Value and Tax" />}
-            visibility={visibility4}
-            onClick={() => {
-              setVisibility4(!visibility4);
-            }}
-          >
-            <Wrapper>
-              <Table data={data} />
-            </Wrapper>
-          </Accordion>
-          <Accordion
-            header={<InformationCardBar title="Last Market Sale" />}
-            visibility={visibility5}
-            onClick={() => {
-              setVisibility5(!visibility5);
-            }}
-          >
-            <Wrapper>
-              <Table data={data} />
-            </Wrapper>
-          </Accordion>
-          <Accordion
-            header={<InformationCardBar title="Site Views" />}
-            visibility={visibility6}
-            onClick={() => {
-              setVisibility6(!visibility6);
-            }}
-          >
-            <Wrapper>
-              <Table data={data} />
-            </Wrapper>
-          </Accordion>
-        </PanelSection>
-      </Panel>
-    );
-  })
-);
+          <ListItem label="Education" description="This is the description" />
+          <ListItem label="Topography" description="This is the description" />
+          <ListItem label="Crime Rates" description="This is the description" />
+          <ListItem label="Elevation" description="This is the description" />
+          <ListItem label="Population" description="This is the description" />
+          <ListItem label="Income" description="This is the description" />
+          <ListItem
+            label="Opportunity Zones"
+            description="This is the description"
+          />
+        </List>
+      </PanelSection>
+    </Panel>
+  );
+});

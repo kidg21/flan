@@ -47,7 +47,7 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
     );
   }};
   border-color: ${(props) => {
-    return props.theme.palette[props.outlineColor] || props.theme.palette.grey3;
+    return props.theme.palette[props.outlineColor] || props.theme.palette.grey;
   }};
   width: 1rem;
   height: 1rem;
@@ -59,7 +59,7 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
     background-color: ${(props) => {
     return (
       props.theme.palette[props.fillColorChecked] ||
-      props.theme.palette.secondary
+      props.theme.palette.secondaryLight
     );
   }};
     border-color: ${(props) => {
@@ -107,14 +107,14 @@ function Radio({
     fillColor = "grey5";
     fillColorChecked = "grey5";
     inputTextColor = "disabled";
-    outlineColor = "grey4";
+    outlineColor = "grey2";
     tabIndex = "-1";
   }
   if (error && !isDisabled) {
-    fillColor = "alertLight";
-    fillColorChecked = "alertLight";
+    fillColor = "alertBright";
+    fillColorChecked = "alertBright";
     inputTextColor = "alert";
-    outlineColor = "alertLight";
+    outlineColor = "alertBright";
   }
   switch (align) {
     case "right":
@@ -142,7 +142,7 @@ function Radio({
         tabIndex={tabIndex}
         value={value}
       />
-      <Label htmlFor={id} text={label} />
+      {label ? <Label htmlFor={id} text={label} /> : null}
     </RadioContainer>
   );
 }
@@ -208,10 +208,10 @@ Radio.propTypes = {
   disabled: PropTypes.bool,
   error: PropTypes.bool,
   id: PropTypes.string,
-  label: PropTypes.string.isRequired,
+  label: PropTypes.string,
   /** The name property sets or returns the value of the name attribute of a radio button.
    * You define radio button groups with the name property (radio buttons with the same name belong to the same group). */
-  name: PropTypes.string.isRequired,
+  name: PropTypes.string,
   onChange: PropTypes.func,
   /** The value property sets or returns the value of the value attribute of the radio button.
    * Define different values for radio buttons in the same group, to identify (on the server side) which one was checked.  */
@@ -221,6 +221,8 @@ Radio.propTypes = {
 Radio.defaultProps = {
   align: null,
   checked: null,
+  label: null,
+  name: null,
   disabled: false,
   error: false,
   id: null,

@@ -22,18 +22,10 @@ storiesOf("Atoms|Avatar", module)
       return (
         <Grid>
           <Avatar label="LG" />
-          <Avatar
-            label="HF"
-            color="secondaryDark"
-            backgroundColor="secondaryLight"
-          />
-          <Avatar label="TX" color="alertDark" backgroundColor="alertTint" />
+          <Avatar label="HF" color="warning" />
+          <Avatar label="TX" color="secondary" />
           <Avatar icon="mail" />
-          <Avatar
-            icon="user"
-            color="secondaryDark"
-            backgroundColor="secondaryLight"
-          />
+          <Avatar icon="user" color="alert" />
         </Grid>
       );
     }),

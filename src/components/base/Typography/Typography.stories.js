@@ -52,12 +52,12 @@ storiesOf("Application|Style Guides/", module)
         <Title text="This is 'warning' text" type="warning" />
         <Title text="This is 'alert' text" type="alert" />
 
-        <Title text="This is a 'tiny' Title" size="tiny" />
-        <Title text="This is a 'small' Title" size="small" />
-        <Title text="This is a standard Title" />
-        <Title text="This is a 'large' Title" size="large" />
-        <Title text="This is an 'xlarge' Title" size="xlarge" />
-        <Title text="This is an 'xxlarge' Title" size="xxlarge" />
+        <Title text="This is a 'xs' Title" size="xs" />
+        <Title text="This is a 'sm' Title" size="sm" />
+        <Title text="This is a standard 'm' Title" />
+        <Title text="This is a 'lg' Title" size="lg" />
+        <Title text="This is an '2x' Title" size="2x" />
+        <Title text="This is an '3x' Title" size="3x" />
 
         <Title text="This is an 'italic' Title" styling="italic" />
         <Title text="This is an 'underline' Title" styling="underline" />

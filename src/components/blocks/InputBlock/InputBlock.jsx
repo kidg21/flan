@@ -1,5 +1,5 @@
-/* eslint-disable complexity */
 /* eslint-disable linebreak-style */
+/* eslint-disable complexity */
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
@@ -11,12 +11,11 @@ import Label from "atoms/Label";
 import Grid from "layout/Grid";
 import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";
-import Icon from "atoms/Icon";
 import Button from "atoms/Button";
 
 const TextInputContainer = styled(Grid)`
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || "";
+    return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
   width: 100%;
 `;
@@ -144,15 +143,11 @@ function InputBlock({
     inputContainer = (
       <Grid columns={gridColumns} gap="tiny">
         {prefix ? (
-          <Label>
-            <Icon icon={icon} size="lg" />
-          </Label>
+          <Button icon={icon} />
         ) : null}
         {inputElements}
         {!prefix ? (
-          <Label>
-            <Icon icon={icon} size="lg" />
-          </Label>
+          <Button icon={icon} />
         ) : null}
       </Grid>
     );
@@ -194,11 +189,11 @@ function InputBlock({
         prefix={prefix}
         text={text}
       >
-        {label ? <Label isRequired={isRequired} text={label} /> : null}
+        {label ? <Label size="sm" weight="bold" isRequired={isRequired} text={label} /> : null}
         {inputContainer}
-        {helpText ? <Label text={helpText} /> : null}
+        {helpText ? <Label size="sm" text={helpText} /> : null}
         {typeof error === "string" && !isDisabled ? (
-          <Label text={error} />
+          <Label size="sm" text={error} />
         ) : null}
       </TextInputContainer>
     </DisabledContext.Provider>

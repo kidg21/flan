@@ -9,9 +9,9 @@ export const PlaceholderText = css`
   justify-content: center;
   text-align: center;
   font-family: "Muli", "Arial", sans-serif;
-  font-size: 0.876rem;
+  font-size: 1rem;
   font-weight: 500;
-  color: ${props => {
+  color: ${(props) => {
     return props.theme.text.primary;
   }};
   padding: 0.5rem;

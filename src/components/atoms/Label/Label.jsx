@@ -50,7 +50,7 @@ const StyledLabel = styled.label`
 `;
 
 function Label({
-  text, children, size, weight, letterSpacing, isRequired, textTransform,
+  text, children, size, weight, htmlFor, letterSpacing, isRequired, textTransform,
 }) {
   let fontSize;
   let fontWeight;
@@ -89,6 +89,7 @@ function Label({
     <StyledLabel
       fontWeight={fontWeight}
       isRequired={isRequired}
+      htmlFor={htmlFor}
       letterSpacing={letterSpacing}
       fontSize={fontSize}
       textTransform={textTransform}
@@ -101,6 +102,7 @@ Label.propTypes = {
   text: PropTypes.string,
   children: PropTypes.node,
   size: PropTypes.string,
+  htmlFor: PropTypes.node,
   weight: PropTypes.string,
   letterSpacing: PropTypes.string,
   textTransform: PropTypes.string,
@@ -110,6 +112,7 @@ Label.defaultProps = {
   text: null,
   children: null,
   size: null,
+  htmlFor: null,
   letterSpacing: null,
   weight: null,
   textTransform: null,

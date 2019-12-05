@@ -1,10 +1,8 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/forbid-prop-types */
-/* eslint-disable no-unused-vars */
 /* eslint-disable import/extensions */
+/* eslint-disable react/forbid-prop-types */
 /* eslint-disable react/jsx-filename-extension */
 import styled from "styled-components";
-import { shadows } from "Variables";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 
 const Panel = styled.div`
@@ -63,7 +61,7 @@ const PanelSection = styled.section`
   }};
   max-height: 100vh;
   box-shadow: ${(props) => {
-    return props.body ? "none" : props.theme.shadows.panelSectionShadow;
+    return props.body ? "none" : props.theme.shadows.shadowV;
   }};
   transition: all 0.2s ease-in-out;
   /* Prototype Content - displays when a Panel Section is empty */

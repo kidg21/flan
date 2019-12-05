@@ -46,7 +46,7 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
     );
   }};
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.grey3;
+    return props.theme.palette[props.borderColor] || props.theme.palette.grey;
   }};
   width: 1rem;
   height: 1rem;
@@ -58,13 +58,13 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
     background-color: ${(props) => {
     return (
       props.theme.palette[props.fillColorChecked] ||
-      props.theme.background.selected
+      props.theme.palette.secondaryLight
     );
   }};
     border-color: ${(props) => {
     return (
       props.theme.palette[props.borderColor] ||
-      props.theme.background.selected
+      props.theme.palette.secondary
     );
   }};
   }
@@ -72,7 +72,7 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
     outline-color: ${(props) => {
     return (
       props.theme.palette[props.outlineColor] ||
-      props.theme.palette.secondaryLight
+      props.theme.palette.secondary
     );
   }};
   }
@@ -98,7 +98,7 @@ function Checkbox({
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
-    borderColor = "grey4";
+    borderColor = "grey2";
     fillColor = "grey5";
     fillColorChecked = "grey5";
     inputTextColor = "disabled";
@@ -107,10 +107,10 @@ function Checkbox({
   if (error && !isDisabled) {
     borderColor = "alert";
     borderColorChecked = "alert";
-    fillColor = "alertLight";
-    fillColorChecked = "alertLight";
+    fillColor = "alertBright";
+    fillColorChecked = "alertBright";
     inputTextColor = "alert";
-    outlineColor = "alertLight";
+    outlineColor = "alertBright";
   }
   switch (align) {
     case "right":
@@ -138,7 +138,7 @@ function Checkbox({
         outlineColor={outlineColor}
         tabIndex={tabIndex}
       />
-      <Label htmlFor={id} text={label} />
+      {label ? <Label htmlFor={id} text={label} /> : null}
     </CheckboxContainer>
   );
 }
@@ -200,7 +200,7 @@ Checkbox.propTypes = {
   disabled: PropTypes.bool,
   error: PropTypes.bool,
   id: PropTypes.string,
-  label: PropTypes.string.isRequired,
+  label: PropTypes.node,
   onChange: PropTypes.func,
 };
 
@@ -208,6 +208,7 @@ Checkbox.defaultProps = {
   align: null,
   checked: null,
   disabled: false,
+  label: null,
   error: null,
   id: null,
   onChange: null,
