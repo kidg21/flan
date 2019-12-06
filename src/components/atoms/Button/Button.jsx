@@ -18,42 +18,42 @@ const StyledButton = styled.button`
   display: flex;
   flex: auto;
   flex-direction: column;
-  width: ${(props) => {
+  width: ${props => {
     return props.fullWidth ? "100%" : "auto";
   }};
   height: 100%;
-  padding: ${(props) => {
+  padding: ${props => {
     return props.buttonPadding || "0.5rem 0.7rem";
   }};
   justify-content: center;
   align-items: center;
-  color: ${(props) => {
+  color: ${props => {
     return props.theme.palette[props.fontColor] || props.theme.text.primary;
   }};
-  background-color: ${(props) => {
+  background-color: ${props => {
     return (
       props.theme.palette[props.backgroundColor] ||
       props.theme.background.default
     );
   }};
-  border: ${(props) => {
+  border: ${props => {
     return props.border || "1px solid";
   }};
-  border-radius: ${(props) => {
+  border-radius: ${props => {
     return props.borderRadius || "4px";
   }};
-  font-size: ${(props) => {
+  font-size: ${props => {
     return props.labelSize || "inherit";
   }};
-  font-weight: ${(props) => {
+  font-weight: ${props => {
     return props.fontWeight || "400";
   }};
   overflow: hidden;
   cursor: pointer;
-  border-bottom: ${(props) => {
+  border-bottom: ${props => {
     return props.borderBottom || "";
   }};
-  border-bottom-color: ${(props) => {
+  border-bottom-color: ${props => {
     return props.theme.palette[props.underlineColor];
   }};
   transition: all 0.15s ease;
@@ -61,12 +61,12 @@ const StyledButton = styled.button`
   &:focus,
   &:hover {
     ${Darken};
-    border-bottom: ${(props) => {
-    return props.borderBottom || "";
-  }};
-    border-bottom-color: ${(props) => {
-    return props.theme.palette[props.underlineColor];
-  }};
+    border-bottom: ${props => {
+      return props.borderBottom || "";
+    }};
+    border-bottom-color: ${props => {
+      return props.theme.palette[props.underlineColor];
+    }};
   }
 
   &:empty {
@@ -86,7 +86,6 @@ const StyledButton = styled.button`
     user-select: none;
   }
 `;
-
 
 const ButtonIcon = styled(Icon)`
   margin: 0.25em 0;
@@ -113,6 +112,7 @@ const ButtonIcon = styled(Icon)`
 * */
 
 function Button({
+  border,
   className,
   color,
   disabled,
@@ -121,10 +121,8 @@ function Button({
   id,
   label,
   onClick,
-  underlineColor,
-  border,
-  style,
   type,
+  underlineColor
 }) {
   let backgroundColor;
   let borderBottom;
@@ -201,12 +199,11 @@ function Button({
       backgroundColor={backgroundColor}
       border={borderStyle}
       borderBottom={borderBottom}
-      underlineColor={underline}
-      disabled={isDisabled}
       borderRadius={borderRadius}
       buttonColor={buttonColor}
       buttonPadding={buttonPadding}
       className={className}
+      disabled={isDisabled}
       fontColor={fontColor}
       fontWeight={fontWeight}
       fullWidth={fullWidth}
@@ -214,17 +211,20 @@ function Button({
       labelSize={labelSize}
       name={id}
       onClick={onClick}
-      style={style}
       tabIndex={disabled ? "-1" : "1"}
       type={type}
+      underlineColor={underline}
     >
       {icon ? <ButtonIcon icon={icon} size="lg" /> : null}
-      {label ? <Label letterSpacing="0.075em" weight="semibold" text={label} /> : null}
+      {label ? (
+        <Label letterSpacing="0.075em" weight="semibold" text={label} />
+      ) : null}
     </StyledButton>
   );
 }
 
 Button.propTypes = {
+  border: PropTypes.string,
   className: PropTypes.string,
   color: PropTypes.oneOf([
     "success",
@@ -232,7 +232,7 @@ Button.propTypes = {
     "alert",
     "info",
     "primary",
-    "secondary",
+    "secondary"
   ]),
   disabled: PropTypes.bool,
   fullWidth: PropTypes.bool,
@@ -240,14 +240,11 @@ Button.propTypes = {
   id: PropTypes.string,
   label: PropTypes.string,
   onClick: PropTypes.func,
-  size: PropTypes.oneOf(["small", "large"]),
-  underlineColor: PropTypes.string,
-  border: PropTypes.string,
-  style: PropTypes.string,
-  type: PropTypes.oneOf(["underlined", "inline", "solid"]),
+  type: PropTypes.oneOf(["underlined", "inline", "solid"])
 };
 
 Button.defaultProps = {
+  border: null,
   className: null,
   color: null,
   disabled: false,
@@ -256,11 +253,7 @@ Button.defaultProps = {
   id: null,
   label: null,
   onClick: null,
-  size: null,
-  style: null,
-  type: null,
-  underlineColor: null,
-  border: null,
+  type: null
 };
 
 export { Button as default };
