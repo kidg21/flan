@@ -136,7 +136,6 @@ function Radio({
     <RadioContainer
       alignInput={alignInput}
       disabled={isDisabled}
-      error={error} // TODO: does this do anything?
       inputTextColor={inputTextColor}
     >
       <RadioInput
@@ -217,7 +216,7 @@ function RadioGroup({
             );
           })}
       </InputGroup>
-      {errorText ? <Label text={errorText} /> : null}
+      {errorText ? <Label size="sm" text={errorText} /> : null}
     </RadioWrapper>
   );
 }

@@ -169,12 +169,14 @@ function CheckboxGroup({
   let errorText;
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (error && !isDisabled) {
-    inputTextColor = "alert";
-    errorText = error;
-  } else if (warning && !isDisabled) {
-    inputTextColor = "warning";
-    errorText = warning;
+  if (!isDisabled) {
+    if (error) {
+      inputTextColor = "alert";
+      errorText = error;
+    } else if (warning) {
+      inputTextColor = "warning";
+      errorText = warning;
+    }
   }
 
   return (
@@ -186,8 +188,8 @@ function CheckboxGroup({
       inputTextColor={inputTextColor}
       id={id}
     >
-      {label ? <Label isRequired={isRequired} text={label} /> : null}
-      {helpText ? <Label text={helpText} /> : null}
+      {label ? <Label weight="bold" isRequired={isRequired} text={label} /> : null}
+      {helpText ? <Label size="sm" text={helpText} /> : null}
       <InputGroup columns={columns}>
         {children ||
           data.map((item) => {
@@ -200,12 +202,16 @@ function CheckboxGroup({
                 id={item.id}
                 key={item.id}
                 label={item.label}
-                onChange={onChange}
+                onChange={item.onChange || onChange}
+                isRequired={item.isRequired}
+                onBlur={item.onBlur}
+                onFocus={item.onFocus}
+                checked={item.checked}
               />
             );
           })}
       </InputGroup>
-      {errorText && !isDisabled ? <Label text={errorText} /> : null}
+      {errorText ? <Label size="sm" text={errorText} /> : null}
     </CheckboxWrapper>
   );
 }

@@ -124,10 +124,10 @@ function Calendar({
       inputTextColor={inputTextColor}
       isRequired={isRequired}
     >
-      {label ? <Label size="sm" weight="bold" isRequired={isRequired} text={label} /> : null}
+      {label ? <Label weight="bold" isRequired={isRequired} text={label} /> : null}
       {inputContainer}
       {helpText ? <Label size="sm" text={helpText} /> : null}
-      {errorText && !isDisabled ? <Label size="sm" text={errorText} /> : null}
+      {errorText ? <Label size="sm" text={errorText} /> : null}
     </CalendarContainer>
   );
 }

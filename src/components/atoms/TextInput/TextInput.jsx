@@ -177,7 +177,7 @@ function TextInput({
       className={className}
     >
       {label ? (
-        <Label weight="bold" size="sm" isRequired={isRequired} text={label} />
+        <Label weight="bold" isRequired={isRequired} text={label} />
       ) : null}
       <Input
         as={as}
@@ -261,7 +261,7 @@ TextInput.propTypes = {
   name: PropTypes.string,
   rows: PropTypes.string,
   cols: PropTypes.string,
-  warning: PropTypes.string,
+  warning: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
 };
 
 TextInput.defaultProps = {
