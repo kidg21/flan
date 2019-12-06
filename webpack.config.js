@@ -17,8 +17,8 @@ const build = {
     // Output 1 file per entry
     filename: "[name].js",
     publicPath: "/",
-    // library: ["Library", "[name]"],
-    // libraryTarget: "umd",
+    library: "",
+    libraryTarget: "umd",
   },
   module: {
     rules: [

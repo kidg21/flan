@@ -2,7 +2,7 @@
   "name": "ss-styled-components",
   "version": "1.0.0",
   "description": "Repository containing our Styled-Component React widgets",
-  "main": "index.js",
+  "main": "./Bundles/StyledComponents.js",
   "scripts": {
     "storybook": "start-storybook -p 9009 -c .storybook",
     "build-storybook": "build-storybook -c .storybook -o ../share/nginx/html",
