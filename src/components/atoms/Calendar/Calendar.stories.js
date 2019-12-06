@@ -105,6 +105,12 @@ storiesOf("Atoms|Calendar", module)
           helpText="Hang in there, buddy, I'm here to help!"
           error="Don't sweat it...we can fix this!"
         />
+        <Calendar
+          type="date"
+          label="Date Input Label"
+          helpText="Hang in there, buddy, I'm here to help!"
+          warning="WARNING!"
+        />
       </Form>
     );
   })

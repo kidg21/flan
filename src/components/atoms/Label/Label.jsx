@@ -1,6 +1,5 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
 /* eslint-disable complexity */
 // Import dependencies
 import React from "react";
@@ -104,7 +103,7 @@ Label.propTypes = {
   weight: PropTypes.string,
   letterSpacing: PropTypes.string,
   textTransform: PropTypes.string,
-  isRequired: PropTypes.string,
+  isRequired: PropTypes.bool,
 };
 Label.defaultProps = {
   text: null,

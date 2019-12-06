@@ -79,3 +79,4 @@ export {
   DMPTheme,
   darkTheme,
 } from "./base/Variables/Variables.jsx";
+export { ThemeProvider } from "styled-components";
