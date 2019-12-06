@@ -94,6 +94,9 @@ function Radio({
   onChange,
   name,
   value,
+  onFocus,
+  onBlur,
+  warning,
 }) {
   let inputTextColor;
   let fillColor;
@@ -109,13 +112,18 @@ function Radio({
     inputTextColor = "disabled";
     outlineColor = "grey4";
     tabIndex = "-1";
-  }
-  if (error && !isDisabled) {
+  } else if (error) {
     fillColor = "alertLight";
     fillColorChecked = "alertLight";
     inputTextColor = "alert";
     outlineColor = "alertLight";
+  } else if (warning) {
+    fillColor = "warningLight";
+    fillColorChecked = "warningLight";
+    inputTextColor = "warning";
+    outlineColor = "warningLight";
   }
+
   switch (align) {
     case "right":
       alignInput = "'label input'";
@@ -128,7 +136,6 @@ function Radio({
     <RadioContainer
       alignInput={alignInput}
       disabled={isDisabled}
-      error={error}
       inputTextColor={inputTextColor}
     >
       <RadioInput
@@ -138,6 +145,8 @@ function Radio({
         id={id}
         name={name}
         onChange={onChange}
+        onFocus={onFocus}
+        onBlur={onBlur}
         outlineColor={outlineColor}
         tabIndex={tabIndex}
         value={value}
@@ -159,13 +168,22 @@ function RadioGroup({
   isRequired,
   label,
   onChange,
+  warning,
 }) {
   let inputTextColor;
+  let errorText;
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (error && !isDisabled) {
-    inputTextColor = "error";
+  if (!isDisabled) {
+    if (error) {
+      inputTextColor = "alert";
+      errorText = error;
+    } else if (warning) {
+      inputTextColor = "warning";
+      errorText = warning;
+    }
   }
+
   return (
     <RadioWrapper
       align={align}
@@ -187,6 +205,7 @@ function RadioGroup({
                 align={align}
                 disabled={item.disabled || isDisabled}
                 error={!!error}
+                warning={!!warning}
                 id={item.id}
                 key={item.id}
                 label={item.label}
@@ -197,7 +216,7 @@ function RadioGroup({
             );
           })}
       </InputGroup>
-      {error && !isDisabled ? <Label text={error} /> : null}
+      {errorText ? <Label size="sm" text={errorText} /> : null}
     </RadioWrapper>
   );
 }
@@ -216,6 +235,9 @@ Radio.propTypes = {
   /** The value property sets or returns the value of the value attribute of the radio button.
    * Define different values for radio buttons in the same group, to identify (on the server side) which one was checked.  */
   value: PropTypes.string,
+  onFocus: PropTypes.func,
+  onBlur: PropTypes.func,
+  warning: PropTypes.bool,
 };
 
 Radio.defaultProps = {
@@ -226,12 +248,15 @@ Radio.defaultProps = {
   id: null,
   onChange: null,
   value: null,
+  onFocus: null,
+  onBlur: null,
+  warning: false,
 };
 
 RadioGroup.propTypes = {
   align: PropTypes.oneOf(["default", "right"]),
   children: PropTypes.node,
-  columns: PropTypes.oneOf(["auto (default)", "1", "2", "3", "4", "5", "6"]),
+  columns: PropTypes.oneOf(["auto" /* default */, "1", "2", "3", "4", "5", "6"]),
   data: PropTypes.oneOfType([PropTypes.array, PropTypes.string]),
   disabled: PropTypes.bool,
   error: PropTypes.string,
@@ -240,6 +265,7 @@ RadioGroup.propTypes = {
   isRequired: PropTypes.bool,
   label: PropTypes.string,
   onChange: PropTypes.func,
+  warning: PropTypes.string,
 };
 
 RadioGroup.defaultProps = {
@@ -254,6 +280,7 @@ RadioGroup.defaultProps = {
   isRequired: false,
   label: null,
   onChange: null,
+  warning: null,
 };
 
 export { Radio as default, RadioGroup };
