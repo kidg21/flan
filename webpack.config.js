@@ -17,7 +17,7 @@ const build = {
     // Output 1 file per entry
     filename: "[name].js",
     publicPath: "/",
-    library: "",
+    library: "OurStyledTest",
     libraryTarget: "umd",
   },
   module: {
