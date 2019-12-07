@@ -9,7 +9,7 @@ const buildOutputPath = "Bundles/";
 const build = {
   name: "buildScript",
   entry: {
-    StyledComponents: "./styled-components.js",
+    StyledComponents: "./component-index.js",
   },
   output: {
     // Output to the "Bundles" folder
