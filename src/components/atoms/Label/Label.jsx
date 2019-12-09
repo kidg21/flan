@@ -8,7 +8,6 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { Skeleton } from "helpers";
 
-
 const StyledLabel = styled.label`
   color: inherit;
   
@@ -36,7 +35,9 @@ const StyledLabel = styled.label`
 }
 
 &:after {
-  display: ${(props) => { return (props.isRequired ? "" : "none"); }};
+  display: ${(props) => {
+    return props.isRequired ? "" : "none";
+  }};
   content: "*";
   color: ${(props) => {
     return props.theme.palette.alert;
@@ -50,10 +51,18 @@ const StyledLabel = styled.label`
 `;
 
 function Label({
-  text, children, size, weight, htmlFor, letterSpacing, isRequired, textTransform,
+  // children,
+  htmlFor,
+  isRequired,
+  // letterSpacing,
+  size,
+  text,
+  weight,
 }) {
   let fontSize;
   let fontWeight;
+  let textTransform;
+  let letterSpacing;
   switch (size && size.toLowerCase()) {
     case "sm":
       fontSize = "0.876em";
@@ -99,24 +108,24 @@ function Label({
   );
 }
 Label.propTypes = {
-  text: PropTypes.string,
-  children: PropTypes.node,
-  size: PropTypes.string,
   htmlFor: PropTypes.node,
-  weight: PropTypes.string,
-  letterSpacing: PropTypes.string,
-  textTransform: PropTypes.string,
+  // textTransform: PropTypes.string,
+  // children: PropTypes.node,
   isRequired: PropTypes.string,
+  // letterSpacing: PropTypes.string,
+  size: PropTypes.string,
+  text: PropTypes.string,
+  weight: PropTypes.string,
 };
 Label.defaultProps = {
-  text: null,
-  children: null,
-  size: null,
   htmlFor: null,
-  letterSpacing: null,
-  weight: null,
-  textTransform: null,
+  // textTransform: null,
+  // children: null,
   isRequired: null,
+  // letterSpacing: null,
+  size: null,
+  text: null,
+  weight: null,
 };
 
 export { Label as default };

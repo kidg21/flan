@@ -4,7 +4,7 @@ import { action } from "@storybook/addon-actions";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
 import Bar from "blocks/Bar";
-import Form, {Section} from "layout/Form";
+import Form, { Section } from "layout/Form";
 import TextInput from "atoms/TextInput";
 import Icon from "atoms/Icon";
 
@@ -12,7 +12,7 @@ import Icon from "atoms/Icon";
 
 # TextInput
 
-### A TextInput is a numeric range selector.
+### Text inputs enable the user to interact with and input content and data. This component can be used for long and short form entries
 
 <Preview withToolbar>
   <Story name="Standard">
@@ -21,6 +21,7 @@ import Icon from "atoms/Icon";
 </Preview>
 
 # Usage
+
 A basic widget for getting the user input is a text field. Keyboard and mouse can be used for providing or changing data.
 
 A user input in a form field is needed.
@@ -35,10 +36,10 @@ A TextInput is typically utilized in the following areas:
 - Filters
 - Settings
 
-
 TextInputs may appear in groups. When a TextInput group is necessary use the TextInputGroup wrapper from the TextInput directory to control the TextInput layout.
 
 # Guidelines
+
 - **Opposing Options:**
   Typically TextInputs would be used where the options are very different from each other so no user would ever consider selecting more than one option. If a user selects Option A, Option B should not be desirable to them.
 - **Clear:**
@@ -46,75 +47,165 @@ TextInputs may appear in groups. When a TextInput group is necessary use the Tex
 - **Be Brief**
   TextInput labels should be short and to the point. They should be one or two words. A label should never be a sentence.
 
-###  Do & Don't
-<Preview >
+### Do & Don't
+
+<Preview>
   <Story name="Usage">
-  <React.Fragment>
-      <Bar 
-    padding="2x"
-    leftWidth="5%"
-  centerAlign="left"
-  contentAlign="center"
-  left={
-  <Icon icon="check" type="success" size="2x"/>}
-  center={
-    <TextInput label="Brief Label" />}
-    />
-  <Bar 
-  padding="2x"
-  leftWidth="5%"
-  centerAlign="left"
-  contentAlign="center"
-  left={
-  <Icon icon="close" type="alert" size="2x"/>}
-  center={
-    <TextInput label="TextInput with a long label because you cannot be concise with your words." />}
-    />
+    <React.Fragment>
+      <Bar
+        padding="2x"
+        leftWidth="5%"
+        centerAlign="left"
+        contentAlign="center"
+        left={<Icon icon="check" type="success" size="2x" />}
+        center={<TextInput label="Brief Label" />}
+      />
+      <Bar
+        padding="2x"
+        leftWidth="5%"
+        centerAlign="left"
+        contentAlign="center"
+        left={<Icon icon="close" type="alert" size="2x" />}
+        center={
+          <TextInput label="TextInput with a long label because you cannot be concise with your words." />
+        }
+      />
     </React.Fragment>
   </Story>
 </Preview>
 
 # Anatomy
+
 TextInputs consist of a circular input and a label. It is important that the label also has an htmlFor TextInput in order to link the TextInput and be another way to select.
 
-A TextInput may appear to the left or right of it's corresponding label. A TextInput may not appear above or below the label. 
+A TextInput may appear to the left or right of it's corresponding label. A TextInput may not appear above or below the label.
 
-##Behavior
+<!-- ## Behavior -->
 
 # Examples
 
 ### States
-We can drop it in a `Preview` to get a code snippet:
+
+<!-- We can drop it in a `Preview` to get a code snippet: -->
+
 <Preview>
   <Story name="States">
-          <Form columns="1">
-        <Section title="Standard">
-          <TextInput />
-        </Section>
-        <Section title="Error">
-          <TextInput error />
-        </Section>
-        <Section title="Disabled">
-          <TextInput disabled />
-        </Section>
-      </Form>
+    <Form columns="1">
+      <Section title="Standard">
+        <TextInput />
+      </Section>
+      <Section title="Error">
+        <TextInput error />
+      </Section>
+      <Section title="Disabled">
+        <TextInput disabled />
+      </Section>
+      <Section title="Hidden">
+        <TextInput type="hidden" />
+      </Section>
+    </Form>
   </Story>
 </Preview>
 
-### Alignment
+### Type
+
 <Preview>
-  <Story name="Alignment">
-    <Grid>
-      <TextInput label="Left Aligned"  />
-      <TextInput label="Right Aligned" align="right" />
-    </Grid>
+  <Story name="Type">
+    <Form>
+      <TextInput
+        pattern="[A-Za-z]{3}"
+        label="Text"
+        placeholder="I am just keeping things warm"
+        helpText="Can contain only three letters (no numbers or special characters"
+      />
+      <TextInput
+        type="textarea"
+        label="Text Area"
+        placeholder="I am just keeping things warm"
+        helpText="Hang in there, buddy, I'm here to help!"
+      />
+      <TextInput
+        type="number"
+        label="Number"
+        placeholder="I am just keeping things warm"
+        helpText="Hang in there, buddy, I'm here to help!"
+      />
+      <TextInput
+        type="search"
+        label="Search"
+        placeholder="I am just keeping things warm"
+        helpText="Hang in there, buddy, I'm here to help!"
+      />
+      <TextInput
+        autofocus
+        type="password"
+        pattern=".{6,}"
+        title="Six or more characters"
+        label="Password"
+        placeholder="I am just keeping things warm"
+        helpText="Must contain 6 or more characters"
+      />
+      <TextInput
+        type="email"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        label="Email"
+        placeholder="I am just keeping things warm"
+        helpText="Hang in there, buddy, I'm here to help!"
+      />
+      <TextInput
+        type="tel"
+        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+        label="Telephone Number"
+        placeholder="I am just keeping things warm"
+        helpText="Hang in there, buddy, I'm here to help!"
+      />
+      <TextInput
+        type="url"
+        pattern="https?://.+"
+        label="URL"
+        placeholder="I am just keeping things warm"
+        helpText="Hang in there, buddy, I'm here to help!"
+      />
+      <TextInput
+        type="color"
+        label="Color"
+        placeholder="I am just keeping things warm"
+        helpText="Hang in there, buddy, I'm here to help!"
+      />
+      <TextInput
+        type="date"
+        label="Date"
+        placeholder="I am just keeping things warm"
+        helpText="Hang in there, buddy, I'm here to help!"
+      />
+      <TextInput
+        type="time"
+        label="Time"
+        placeholder="I am just keeping things warm"
+        helpText="Hang in there, buddy, I'm here to help!"
+      />
+      <TextInput
+        type="datetime-local"
+        label="Local Date/Time"
+        placeholder="I am just keeping things warm"
+        helpText="Hang in there, buddy, I'm here to help!"
+      />
+      <TextInput
+        type="month"
+        label="Month"
+        placeholder="I am just keeping things warm"
+        helpText="Hang in there, buddy, I'm here to help!"
+      />
+      <TextInput
+        type="week"
+        label="Week"
+        placeholder="I am just keeping things warm"
+        helpText="Hang in there, buddy, I'm here to help!"
+      />
+    </Form>
   </Story>
 </Preview>
-
-
-
 
 ### Props
+
 <Props of={TextInput} />
-
-
