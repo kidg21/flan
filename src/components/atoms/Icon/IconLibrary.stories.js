@@ -14,6 +14,44 @@ import {
   iconsNavigation,
 } from "atoms/Icon/libraryIcon.data";
 
+// CSF format
+export default {
+  title: "Work|Docs/Iconography (CSF)",
+  // component: Icon,
+  parameters: {
+    // componentSubtitle:
+    //   "Buttons allow users to take actions, and make choices, with a single tap.",
+    /** Use to disable DocsPage per component */
+    // parameters: { docs: { page: null } },
+  },
+  includeStories: ["App Icons", "Navigation Icons", "Brand Icons"],
+  decorators: [Padding],
+};
+
+export const Standard = () => {
+  return (
+    <CardList columns="3">
+      <IconGrid data={iconsApp} size="10x" />
+    </CardList>
+  );
+};
+
+export const Navigation = () => {
+  return (
+    <CardList columns="3">
+      <IconGrid data={iconsNavigation} />
+    </CardList>
+  );
+};
+
+export const Brand = () => {
+  return (
+    <CardList columns="3">
+      <IconGrid data={iconsBrand} />
+    </CardList>
+  );
+};
+
 /** TODO: Break 'App' icon set into subcategories */
 storiesOf("Application|Libraries/Icon Library", module)
   .addDecorator(Padding)

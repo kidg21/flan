@@ -27,8 +27,8 @@ function IconGrid({ data }) {
       key={item.icon}
       id={item.icon}
       hover={true}
-    // TODO: Add background props to Card
-    // type={item.background}
+      // TODO: Add background props to Card
+      // type={item.background}
     >
       <Bar
         contentAlign="center"
@@ -46,7 +46,7 @@ function IconGrid({ data }) {
         center={
           <>
             <Title text={item.name || item.icon} size="lg" select="all" />
-            <Description text={item.desc} />
+            {/* <Description text={item.desc} /> */}
           </>
         }
         centerAlign="left"
