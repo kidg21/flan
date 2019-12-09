@@ -51,18 +51,22 @@ const StyledLabel = styled.label`
 `;
 
 function Label({
-  // children,
+  children,
   htmlFor,
   isRequired,
   // letterSpacing,
   size,
   text,
+  uppercase,
   weight,
 }) {
   let fontSize;
   let fontWeight;
   let textTransform;
   let letterSpacing;
+  if (uppercase) {
+    textTransform = "uppercase";
+  }
   switch (size && size.toLowerCase()) {
     case "sm":
       fontSize = "0.876em";
@@ -109,22 +113,22 @@ function Label({
 }
 Label.propTypes = {
   htmlFor: PropTypes.node,
-  // textTransform: PropTypes.string,
-  // children: PropTypes.node,
+  children: PropTypes.node,
   isRequired: PropTypes.string,
   // letterSpacing: PropTypes.string,
   size: PropTypes.string,
   text: PropTypes.string,
+  uppercase: PropTypes.bool,
   weight: PropTypes.string,
 };
 Label.defaultProps = {
   htmlFor: null,
-  // textTransform: null,
-  // children: null,
+  children: null,
   isRequired: null,
   // letterSpacing: null,
   size: null,
   text: null,
+  uppercase: false,
   weight: null,
 };
 
