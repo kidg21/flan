@@ -25,21 +25,21 @@ import NavigationPanelHeader from "elements/PanelHeaders/NavigationPanelHeader";
 const lotData = [
   { id: "a", name: "Land Use", value: "Commercial" },
   { id: "b", name: "Land Description", value: "Miscellaneous Commercial" },
-  { id: "c", name: "Lot Area", value: "62,344 SF | 1.43 Acres" },
+  { id: "c", name: "Lot Area", value: "62,344 SF | 1.43 Acres" }
 ];
 
 const ownerData = [
   { id: "a", name: "Owner", value: "1830 La Cienga LLC" },
   { id: "b", name: "Last Transfer", value: "12/31/14" },
   { id: "c", name: "Last Market Sale", value: "10/31/13 for $11,000,110" },
-  { id: "d", name: "Opportunity Zone ", value: "No" },
+  { id: "d", name: "Opportunity Zone ", value: "No" }
 ];
 
 const buildingData = [
   { id: "a", name: "Value", value: "$11,851,071" },
   { id: "b", name: "Square Feet", value: "34,529 SF" },
   { id: "c", name: "# of Units", value: "1" },
-  { id: "d", name: "Year Built", value: "1950" },
+  { id: "d", name: "Year Built", value: "1950" }
 ];
 
 const summaryData = [
@@ -50,7 +50,7 @@ const summaryData = [
   { id: "a", name: "Acreage", value: "298" },
   { id: "b", name: "Topography", value: "Urban" },
   { id: "c", name: "Last Trans Date", value: "1/27/03" },
-  { id: "d", name: "Sites Included", value: "Rockefeller" },
+  { id: "d", name: "Sites Included", value: "Rockefeller" }
 ];
 
 const data = [
@@ -59,36 +59,36 @@ const data = [
     onClickLink: () => {
       console.log("clicked Save");
     },
-    name: "Save",
+    name: "Save"
   },
   {
     id: "b",
     onClickLink: () => {
       console.log("clicked Filter");
     },
-    name: "Filter",
+    name: "Filter"
   },
   {
     id: "c",
     onClickLink: () => {
       console.log("clicked Share");
     },
-    name: "Share",
+    name: "Share"
   },
   {
     id: "d",
     onClickLink: () => {
       console.log("clicked Refresh");
     },
-    name: "Refresh",
+    name: "Refresh"
   },
   {
     id: "e",
     onClickLink: () => {
       console.log("clicked Layer");
     },
-    name: "Layer",
-  },
+    name: "Layer"
+  }
 ];
 
 storiesOf("Templates|SI Panel", module)
@@ -128,7 +128,15 @@ storiesOf("Templates|SI Panel", module)
                   title="5201 California Avenue, Irvine, CA 92614"
                   line1="APN #23947828"
                   line2="Irvine Company"
-                  tag="Same Owner"
+                  tag="Trans Date"
+                  tagType="blue"
+                />
+                <Card
+                  title="5201 California Avenue, Irvine, CA 92614"
+                  line1="APN #23947828"
+                  line2="Irvine Company"
+                  tag="Trans Date"
+                  tagType="blue"
                 />
                 <Card
                   title="5201 California Avenue, Irvine, CA 92614"
@@ -140,19 +148,14 @@ storiesOf("Templates|SI Panel", module)
                   title="5201 California Avenue, Irvine, CA 92614"
                   line1="APN #23947828"
                   line2="Irvine Company"
-                  tag="Same Owner"
+                  tag="Adj Property"
+                  tagType="green"
                 />
                 <Card
                   title="5201 California Avenue, Irvine, CA 92614"
                   line1="APN #23947828"
-                  line2="Irvine Company"
-                  tag="Same Owner"
-                />
-                <Card
-                  title="5201 California Avenue, Irvine, CA 92614"
-                  line1="APN #23947828"
-                  line2="Irvine Company"
-                  tag="Same Owner"
+                  tag="Adj Property"
+                  tagType="green"
                 />
                 <Card
                   title="5201 California Avenue, Irvine, CA 92614"
