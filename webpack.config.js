@@ -9,7 +9,7 @@ const buildOutputPath = "Bundles/";
 const build = {
   name: "buildScript",
   entry: {
-    StyledComponents: "./Styled-Components.js",
+    StyledComponents: "./component-index.js",
   },
   output: {
     // Output to the "Bundles" folder
@@ -17,7 +17,7 @@ const build = {
     // Output 1 file per entry
     filename: "[name].js",
     publicPath: "/",
-    library: "OurStyledTest",
+    library: "",
     libraryTarget: "umd",
   },
   module: {
