@@ -11,7 +11,7 @@ import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";
 import Form, { Section } from "layout/Form";
 
-<Meta title="Work|Docs/Label" component={Label} />
+<Meta title="Atoms|Label" component={Label} />
 
 # Label
 
@@ -35,15 +35,13 @@ Labels are used to identify an input or component. They will always be situated 
 
 <Preview>
   <Story name="Usage">
-    <Grid>
-      <Form>
-        <Radio label="Radio Label" />
-        <Checkbox label="Checkbox Label" />
-        <Switch label="Switch Label" />
-        <TextInput label="TextInput Label" />
-        <SelectMenu label="SelectMenu Label" />
-      </Form>
-    </Grid>
+    <Form columns="3">
+      <Radio label="Radio Label" />
+      <Checkbox label="Checkbox Label" />
+      <Switch label="Switch Label" />
+      <TextInput label="TextInput Label" />
+      <SelectMenu label="SelectMenu Label" />
+    </Form>
   </Story>
 </Preview>
 
@@ -66,9 +64,9 @@ Labels are used to identify an input or component. They will always be situated 
 
 <Preview>
   <Story name="Type">
-    <Grid>
+    <Grid columns="3">
       <Label text="Standard Label" />
-      <Label text="Uppercase Label" textTransform="uppercase" />
+      <Label text="Uppercase Label" uppercase />
     </Grid>
   </Story>
 </Preview>

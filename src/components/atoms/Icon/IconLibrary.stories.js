@@ -53,44 +53,44 @@ export const Brand = () => {
 };
 
 /** TODO: Break 'App' icon set into subcategories */
-storiesOf("Application|Libraries/Icon Library", module)
-  .addDecorator(Padding)
-  .add("App Icons", () => {
-    return (
-      <Grid columns="1">
-        <Title text="App Icons" size="large" styling="underline" />
-        <SubTitle text="Click the name of the icon to select, copy, and use the value in the Icon's 'name' prop" />
-        <CardList>
-          <IconGrid data={iconsApp} />
-        </CardList>
-      </Grid>
-    );
-  });
+// storiesOf("Application|Libraries/Icon Library", module)
+//   .addDecorator(Padding)
+//   .add("App Icons", () => {
+//     return (
+//       <Grid columns="1">
+//         <Title text="App Icons" size="large" styling="underline" />
+//         <SubTitle text="Click the name of the icon to select, copy, and use the value in the Icon's 'name' prop" />
+//         <CardList>
+//           <IconGrid data={iconsApp} />
+//         </CardList>
+//       </Grid>
+//     );
+//   });
 
-storiesOf("Application|Libraries/Icon Library", module)
-  .addDecorator(Padding)
-  .add("Navigation Icons", () => {
-    return (
-      <Grid columns="1">
-        <Title text="Navigation Icons" size="large" styling="underline" />
-        <SubTitle text="Click the name of the icon to select, copy, and use the value in the Icon's 'name' prop" />
-        <CardList>
-          <IconGrid data={iconsNavigation} />
-        </CardList>
-      </Grid>
-    );
-  });
+// storiesOf("Application|Libraries/Icon Library", module)
+//   .addDecorator(Padding)
+//   .add("Navigation Icons", () => {
+//     return (
+//       <Grid columns="1">
+//         <Title text="Navigation Icons" size="large" styling="underline" />
+//         <SubTitle text="Click the name of the icon to select, copy, and use the value in the Icon's 'name' prop" />
+//         <CardList>
+//           <IconGrid data={iconsNavigation} />
+//         </CardList>
+//       </Grid>
+//     );
+//   });
 
-storiesOf("Application|Libraries/Icon Library", module)
-  .addDecorator(Padding)
-  .add("Brand Icons", () => {
-    return (
-      <Grid columns="1">
-        <Title text="Brand Icons" size="large" styling="underline" />
-        <SubTitle text="Click the name of the icon to select, copy, and use the value in the Icon's 'name' prop" />
-        <CardList>
-          <IconGrid data={iconsBrand} />
-        </CardList>
-      </Grid>
-    );
-  });
+// storiesOf("Application|Libraries/Icon Library", module)
+//   .addDecorator(Padding)
+//   .add("Brand Icons", () => {
+//     return (
+//       <Grid columns="1">
+//         <Title text="Brand Icons" size="large" styling="underline" />
+//         <SubTitle text="Click the name of the icon to select, copy, and use the value in the Icon's 'name' prop" />
+//         <CardList>
+//           <IconGrid data={iconsBrand} />
+//         </CardList>
+//       </Grid>
+//     );
+//   });

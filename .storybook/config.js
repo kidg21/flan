@@ -115,12 +115,14 @@ const utils = require.context(
 const intro = require.context(
   "../src/attributes",
   true,
-  /\.stories\.(js|mdx)$/
+  // /\.stories\.(js|mdx)$/
+  /\.stories\.(mdx)$/
 );
 const atoms = require.context(
   "../src/components/atoms",
   true,
-  /\.stories\.(js|mdx)$/
+  // /\.stories\.(js|mdx)$/
+  /\.stories\.(mdx)$/
 );
 const blocks = require.context(
   "../src/components/blocks",
