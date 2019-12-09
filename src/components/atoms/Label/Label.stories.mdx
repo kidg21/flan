@@ -4,6 +4,13 @@ import { action } from "@storybook/addon-actions";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
 import Label from "atoms/Label";
+import Button from "atoms/Button";
+import Radio from "atoms/Radio";
+import Checkbox from "atoms/Checkbox";
+import Switch from "atoms/Switch";
+import TextInput from "atoms/TextInput";
+import SelectMenu from "atoms/SelectMenu";
+import Form, {Section} from "layout/Form";
 
 <Meta title="Work|Docs/Label" component={Label} />
 
@@ -28,6 +35,22 @@ Labels are used to identify an input or component. They will always be situated 
 - Text Input
 - Range Slider
 
+
+<Preview>
+  <Story name="Usage">
+    <Grid>
+    <Form>
+      <Radio label="Radio Label"/>
+      <Checkbox label="Checkbox Label" />
+      <Switch label="Switch Label" />
+      <Button label="Button Label"/>
+      <TextInput label="TextInput Label"/>
+      <SelectMenu label="SelectMenu Label"/>
+      </Form>
+    </Grid>
+  </Story>
+</Preview>
+
 # Guidelines
 - **Dependent:**
   Labels should be paired with another component that needs additional identification or clarification.
@@ -50,50 +73,11 @@ We can drop it in a `Preview` to get a code snippet:
   <Story name="Type">
     <Grid>
       <Label text="Standard Label" />
-      <Label text="Solid Label"  />
-      <Label text="Inline Label"  />
-      <Label text="Underlined Label" />
+      <Label text="Uppercase Label" textTransform="uppercase" />
     </Grid>
   </Story>
 </Preview>
 
-### Size
-<Preview>
-  <Story name="Size">
-    <Grid>
-      <Label text="Small Label"  />
-      <Label text="Standard Label" />
-      <Label text="Large Label" />
-    </Grid>
-  </Story>
-</Preview>
-
-### Color
-<Preview>
-  <Story name="Color">
-    <Grid>
-      <Label text="Standard Label" />
-      <Label text="Secondary Label" />
-      <Label text="Info Label"  />
-      <Label text="Success Label" />
-      <Label text="Warning Label"  />
-      <Label text="Alert Label" />
-    </Grid>
-  </Story>
-</Preview>
-
-### Icons
-<Preview>
-  <Story name="Icons">
-    <Grid>
-      <Label text="Profile"  />
-      <Label text="Expand" />
-      <Label text="Bookmark"  />
-      <Label text="Add"  />
-      <Label text="Print" />
-    </Grid>
-  </Story>
-</Preview>
 
 ## Props
 <Props of={Label} />

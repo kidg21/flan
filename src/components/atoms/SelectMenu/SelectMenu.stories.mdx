@@ -32,33 +32,13 @@ import Icon from "atoms/Icon";
 </Preview>
 
 # Usage
-Select component to select value from options.
+Use Select Menu component to select value from options.
 
-The difference between SelectMenu and Checkbox is that SelectMenu will trigger a state change directly when you toggle it, while Checkbox is generally used for state marking, which should work in conjunction with submit operation.
+Select Menu should be used in conjunction with the Form from Layout. Select Menu allows for a condensed way to show options.
 
-A SelectMenu is typically utilized in the following areas:
-
-- Input Forms
-- Filters
-- Settings
-
-
-SelectMenus may appear in groups. When a SelectMenu group is necessary use the SelectMenuGroup wrapper from the SelectMenu directory to control the SelectMenu layout.
 
 # Guidelines
-- **Opposing Options:**
-  Typically SelectMenus would be used where the options are very different from each other so no user would ever consider selecting more than one option. If a user selects Option A, Option B should not be desirable to them.
-- **Clear:**
-  A SelectMenu’s action and state should be clear.
-- **Be Brief**
-  SelectMenu labels should be short and to the point. They should be one or two words. A label should never be a sentence.
 
-
-
-# Anatomy
-SelectMenus consist of a circular input and a label. It is important that the label also has an htmlFor SelectMenu in order to link the SelectMenu and be another way to select.
-
-A SelectMenu may appear to the left or right of it's corresponding label. A SelectMenu may not appear above or below the label. 
 
 
 # Examples
@@ -160,14 +140,6 @@ We can drop it in a `Preview` to get a code snippet:
 </Preview>
 
 
-const options = [
-  { value: "chocolate", label: "Chocolate" },
-  { value: "strawberry", label: "Strawberry" },
-  { value: "vanilla", label: "Vanilla" },
-  { value: "pistachio", label: "Pistachio" },
-  { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
-  { value: "cookie dough", label: "Cookie Dough" }
-];
 
 
 
