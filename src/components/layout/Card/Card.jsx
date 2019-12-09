@@ -15,6 +15,7 @@ const CardSection = styled.div``;
 const CardWrapper = styled.div`
 display: flex;
 flex-direction: column;
+border-radius: 5px;
 flex: none;
 box-shadow: ${(props) => {
     return props.theme.shadows[props.shadow] || "";
@@ -31,7 +32,6 @@ padding: ${(props) => {
   color: ${(props) => {
     return props.theme.text.primary;
   }};
-width: 100%;
 position: relative;
   /* Square off rounded edges of any direct children of Cards */
   /* Prototype Content - displays when a Card is empty */
@@ -48,10 +48,6 @@ position: relative;
 `;
 
 const CardListWrapper = styled(Grid)`
-  ${CardWrapper} {
-    border-radius: 5px;
-    height: 100%;
-  }
   /* Prototype Content - displays when a Card List is empty */
   &:empty {
     &:before {
