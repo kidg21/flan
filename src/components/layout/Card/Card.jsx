@@ -32,10 +32,7 @@ padding: ${(props) => {
     return props.theme.text.primary;
   }};
 width: 100%;
-div:not(:first-child) {
-  margin-top: 1rem;
-}
-  position: relative;
+position: relative;
   /* Square off rounded edges of any direct children of Cards */
   /* Prototype Content - displays when a Card is empty */
   &:empty {
