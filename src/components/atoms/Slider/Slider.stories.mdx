@@ -4,7 +4,7 @@ import { action } from "@storybook/addon-actions";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
 import Bar from "blocks/Bar";
-import Form, {Section} from "layout/Form";
+import Form, { Section } from "layout/Form";
 import Slider from "atoms/Slider";
 import Icon from "atoms/Icon";
 import RangeSlider from "blocks/RangeSlider";
@@ -13,8 +13,7 @@ import RangeSlider from "blocks/RangeSlider";
 
 # Slider
 
-### A Slider is a numeric range selector.
-
+### Sliders provide a visual indication of adjustable content, where the user can move the handle along a horizontal track to increase or decrease the value.
 
 <Preview withToolbar>
   <Story name="Standard">
@@ -23,6 +22,7 @@ import RangeSlider from "blocks/RangeSlider";
 </Preview>
 
 # Usage
+
 An input range slider lets the user specify a numeric value which must be between two specified values.
 Sliders allow users to make selections from a range of values.
 
@@ -35,9 +35,6 @@ Changes made with sliders are immediate, allowing a user to make slider adjustme
 
 Current state
 Sliders reflect the current state of the settings they control.
-
-
-
 
 <Preview withToolbar>
   <Story name="RangeSlider">
@@ -60,52 +57,48 @@ For languages that are displayed from left-to-right, such as English, the smalle
 For right-to-left languages, like Arabic, this placement would be switched (with the largest value on the left, and the smallest on the right).
 
 - **Adjustable**
-Sliders should only be used for choosing selections from a range of values.
--**Immediate**
-When interacting with a slider, changes should be represented immediately.
+  Sliders should only be used for choosing selections from a range of values. -**Immediate**
+  When interacting with a slider, changes should be represented immediately.
 - **Accessible**
-Sliders should provide the full range of choices available for the user to select from.
-
+  Sliders should provide the full range of choices available for the user to select from.
 
 # Anatomy
+
 A slider can contain the following elements:
+
 1. Track
-The track shows the range available for user selection. For left-to-right (LTR) languages, the smallest value appears on the far left, and the largest value on the far right. For right-to-left (RTL) languages this orientation is reversed, with the smallest value on the far right and the largest value on the far left.
+   The track shows the range available for user selection. For left-to-right (LTR) languages, the smallest value appears on the far left, and the largest value on the far right. For right-to-left (RTL) languages this orientation is reversed, with the smallest value on the far right and the largest value on the far left.
 
 2. Thumb
-The thumb slides along the track, displaying the selected value through its position.
+   The thumb slides along the track, displaying the selected value through its position.
 
 3. Value label (optional)
-A value label displays the currently selected, specific numerical value.
+   A value label displays the currently selected, specific numerical value.
 
-##Behavior
+<!-- ## Behavior -->
 
 # Examples
 
 ### States
-We can drop it in a `Preview` to get a code snippet:
+
+<!-- We can drop it in a `Preview` to get a code snippet: -->
+
 <Preview>
   <Story name="States">
-          <Form columns="1">
-        <Section title="Standard">
-          <Slider />
-        </Section>
-        <Section title="Error">
-          <Slider error />
-        </Section>
-        <Section title="Disabled">
-          <Slider disabled />
-        </Section>
-      </Form>
+    <Form columns="1">
+      <Section title="Standard">
+        <Slider />
+      </Section>
+      <Section title="Error">
+        <Slider error />
+      </Section>
+      <Section title="Disabled">
+        <Slider disabled />
+      </Section>
+    </Form>
   </Story>
 </Preview>
 
-
-
-
 ### Props
+
 <Props of={Slider} />
-
-
-
-

@@ -4,21 +4,18 @@ import { action } from "@storybook/addon-actions";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
 import Label from "atoms/Label";
-import Button from "atoms/Button";
 import Radio from "atoms/Radio";
 import Checkbox from "atoms/Checkbox";
 import Switch from "atoms/Switch";
 import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";
-import Form, {Section} from "layout/Form";
+import Form, { Section } from "layout/Form";
 
 <Meta title="Work|Docs/Label" component={Label} />
 
 # Label
 
 ### Label is used to help identify a component.
-
-
 
 <Preview withToolbar>
   <Story name="Standard">
@@ -27,31 +24,31 @@ import Form, {Section} from "layout/Form";
 </Preview>
 
 # Usage
+
 Labels are used to identify an input or component. They will always be situated above or next to another component in order to help ientify that component's subject or meaning. They are typically used in conjunction with the following components:
 
 - Radio
 - Checkbox
 - Switch
 - Text Input
-- Range Slider
-
+- Select Menu
 
 <Preview>
   <Story name="Usage">
     <Grid>
-    <Form>
-      <Radio label="Radio Label"/>
-      <Checkbox label="Checkbox Label" />
-      <Switch label="Switch Label" />
-      <Button label="Button Label"/>
-      <TextInput label="TextInput Label"/>
-      <SelectMenu label="SelectMenu Label"/>
+      <Form>
+        <Radio label="Radio Label" />
+        <Checkbox label="Checkbox Label" />
+        <Switch label="Switch Label" />
+        <TextInput label="TextInput Label" />
+        <SelectMenu label="SelectMenu Label" />
       </Form>
     </Grid>
   </Story>
 </Preview>
 
 # Guidelines
+
 - **Dependent:**
   Labels should be paired with another component that needs additional identification or clarification.
 - **Findable:**
@@ -59,16 +56,14 @@ Labels are used to identify an input or component. They will always be situated 
 - **Clear:**
   A Label’s action and state should be clear.
 
-
-
-# Anatomy
-
-
+<!-- # Anatomy -->
 
 # Examples
 
 ### Type
-We can drop it in a `Preview` to get a code snippet:
+
+<!-- We can drop it in a `Preview` to get a code snippet: -->
+
 <Preview>
   <Story name="Type">
     <Grid>
@@ -78,8 +73,6 @@ We can drop it in a `Preview` to get a code snippet:
   </Story>
 </Preview>
 
-
 ## Props
+
 <Props of={Label} />
-
-
