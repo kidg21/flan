@@ -12,7 +12,7 @@ import Icon from "atoms/Icon";
 
 # Text Input
 
-### Text inputs enable the user to interact with and input content and data. This component can be used for long and short form entries
+### Text inputs enable the user to interact with and input content and data. This component can be used for long and short form entries.
 
 <Preview withToolbar>
   <Story name="Standard">
@@ -23,31 +23,21 @@ import Icon from "atoms/Icon";
 # Usage
 
 A basic widget for getting the user input is a text field. Keyboard and mouse can be used for providing or changing data.
-
-A user input in a form field is needed.
-
-A search input is required.
-
-The difference between TextInput and Checkbox is that TextInput will trigger a state change directly when you toggle it, while Checkbox is generally used for state marking, which should work in conjunction with submit operation.
-
-A TextInput is typically utilized in the following areas:
-
-- Input Forms
-- Filters
-- Settings
-
-TextInputs may appear in groups. When a TextInput group is necessary use the TextInputGroup wrapper from the TextInput directory to control the TextInput layout.
+Text fields allow users to enter text into a UI. They typically appear in forms and dialogs.
 
 # Guidelines
 
-- **Opposing Options:**
-  Typically TextInputs would be used where the options are very different from each other so no user would ever consider selecting more than one option. If a user selects Option A, Option B should not be desirable to them.
+- **Discoverable:**
+  Text fields should stand out and indicate that users can input information.
 - **Clear:**
-  A TextInput’s action and state should be clear.
-- **Be Brief**
-  TextInput labels should be short and to the point. They should be one or two words. A label should never be a sentence.
+  Text field states should be clearly differentiated from one another.
+- **Efficient**
+  Text fields should make it easy to understand the requested information and to address any errors.
+
+
 
 ### Do & Don't
+Label text is used to inform users as to what information is requested for a text field. Every text field should have a label.
 
 <Preview>
   <Story name="Usage">
@@ -67,7 +57,7 @@ TextInputs may appear in groups. When a TextInput group is necessary use the Tex
         contentAlign="center"
         left={<Icon icon="close" type="alert" size="2x" />}
         center={
-          <TextInput label="TextInput with a long label because you cannot be concise with your words." />
+          <TextInput />
         }
       />
     </React.Fragment>
@@ -91,18 +81,21 @@ A TextInput may appear to the left or right of it's corresponding label. A TextI
 <Preview>
   <Story name="States">
     <Form columns="1">
-      <Section title="Standard">
-        <TextInput />
-      </Section>
-      <Section title="Error">
-        <TextInput error />
-      </Section>
-      <Section title="Disabled">
-        <TextInput disabled />
-      </Section>
-      <Section title="Hidden">
-        <TextInput type="hidden" />
-      </Section>
+        <TextInput  label="Text Input"
+                helpText="Hang in there, buddy, I'm here to help!" />
+        
+              <TextInput
+                label="Text Input ( Disabled )"
+                placeholder="I am just keeping things warm"
+                helpText="Hang in there, buddy, I'm here to help!"
+                disabled
+              />
+              <TextInput
+                label="Text Input ( Error )"
+                placeholder="I am just keeping things warm"
+                helpText="Hang in there, buddy, I'm here to help!"
+                error="Don't sweat it...we can fix this!"
+              />
     </Form>
   </Story>
 </Preview>
@@ -112,6 +105,12 @@ A TextInput may appear to the left or right of it's corresponding label. A TextI
 <Preview>
   <Story name="Type">
     <Form>
+                  <TextInput
+                label="Text Input ( Required )"
+                placeholder="I am just keeping things warm"
+                helpText="Hang in there, buddy, I'm here to help!"
+                isRequired
+              />
       <TextInput
         pattern="[A-Za-z]{3}"
         label="Text"
@@ -205,6 +204,9 @@ A TextInput may appear to the left or right of it's corresponding label. A TextI
     </Form>
   </Story>
 </Preview>
+
+
+
 
 ### Props
 

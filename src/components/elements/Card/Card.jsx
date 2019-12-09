@@ -88,7 +88,7 @@ function CardComponent({
     rightContent = (<Tag label={tag} type={tagType} />);
   }
   if (media) {
-    content = (<MediaBlock media={media} body={mainContent} />);
+    content = (<MediaBlock media={media} align="vertical" body={mainContent} />);
   } else {
     content =
       (<Bar

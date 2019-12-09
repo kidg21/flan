@@ -23,12 +23,12 @@ import Divider from "atoms/Divider";
 const permissions = [
   { value: "Read", label: "Read" },
   { value: "Write", label: "Write" },
-  { value: ["Read", "Write"], label: "Read / Write" }
+  { value: ["Read", "Write"], label: "Read / Write" },
 ];
 
 const image = {
   src: DMPlogo,
-  alt: "DMP"
+  alt: "DMP",
 };
 
 const Logo = styled.img`
@@ -42,8 +42,8 @@ storiesOf("Elements|Dialog Box", module)
   .addParameters({
     info: {
       text:
-        "Dialogue Boxes are used to convey a message between the server/computer and the user. A dialogue box either has one absolute action (button) or two button options; typically an affirmative and dissenting option. If two buttons are selected then they are located on the bottom left corner as to be readily accessbile to the user. The primary button is always solid, the second is outlined. Both buttons must be the same color family. If one button is selected the button is center in the middle of the dialogue box. "
-    }
+        "Dialogue Boxes are used to convey a message between the server/computer and the user. A dialogue box either has one absolute action (button) or two button options; typically an affirmative and dissenting option. If two buttons are selected then they are located on the bottom left corner as to be readily accessbile to the user. The primary button is always solid, the second is outlined. Both buttons must be the same color family. If one button is selected the button is center in the middle of the dialogue box. ",
+    },
   })
   .add(
     "Documentation",
@@ -55,7 +55,7 @@ storiesOf("Elements|Dialog Box", module)
           buttons={[{ label: "Affirm" }, { label: "Negative" }]}
         />
       );
-    })
+    }),
   );
 
 storiesOf("Templates|Dialog Box/General", module)
@@ -127,7 +127,7 @@ storiesOf("Templates|Dialog Box/Files", module)
               { value: "1", label: "my folder" },
               { value: "2", label: "our folder" },
               { value: "3", label: "dmp" },
-              { value: "4", label: "lightbox" }
+              { value: "4", label: "lightbox" },
             ]}
           />
           <Command label="+ Add New Location" />
@@ -158,7 +158,7 @@ storiesOf("Templates|Dialog Box/Files", module)
               { value: "1", label: "my folder" },
               { value: "2", label: "our folder" },
               { value: "3", label: "dmp" },
-              { value: "4", label: "lightbox" }
+              { value: "4", label: "lightbox" },
             ]}
           />
         </Section>
@@ -179,7 +179,7 @@ storiesOf("Templates|Dialog Box/Files", module)
               { value: "1", label: "my folder" },
               { value: "2", label: "our folder" },
               { value: "3", label: "dmp" },
-              { value: "4", label: "lightbox" }
+              { value: "4", label: "lightbox" },
             ]}
           />
         </Section>
@@ -205,7 +205,7 @@ storiesOf("Templates|Dialog Box/User Roles", module)
               { value: "1", label: "Adam" },
               { value: "2", label: "Oliver" },
               { value: "3", label: "Matt" },
-              { value: "4", label: "Joe" }
+              { value: "4", label: "Joe" },
             ]}
           />
           <Container height="12rem">
@@ -245,7 +245,7 @@ storiesOf("Templates|Dialog Box/User Roles", module)
               { value: "1", label: "Folder 1" },
               { value: "2", label: "Folder 2" },
               { value: "3", label: "Folder 3" },
-              { value: "4", label: "File 24" }
+              { value: "4", label: "File 24" },
             ]}
           />
           <Divider />
@@ -308,7 +308,7 @@ storiesOf("Templates|Dialog Box/User Roles", module)
               { value: "Marketing", label: "Marketing" },
               { value: "Acquisitions", label: "Acquisitions" },
               { value: "Developer", label: "Builder / Developer" },
-              { value: "Admin", label: "Admin" }
+              { value: "Admin", label: "Admin" },
             ]}
           />
         </Section>
@@ -335,7 +335,7 @@ storiesOf("Templates|Dialog Box/User Roles", module)
               { value: "Marketing", label: "Marketing" },
               { value: "Acquisitions", label: "Acquisitions" },
               { value: "Developer", label: "Builder / Developer" },
-              { value: "Admin", label: "Admin" }
+              { value: "Admin", label: "Admin" },
             ]}
           />
           <Switch label="Enabled" />

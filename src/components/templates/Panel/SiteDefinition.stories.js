@@ -7,11 +7,13 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import Legend from "blocks/Legend";
+import styled from "styled-components";
 import Form, { Section } from "layout/Form";
 import Card from "elements/Card";
 import Layout from "layout/Layout";
 import Button from "atoms/Button";
 import Bar from "blocks/Bar";
+import LBLogo from "images/LightBoxLogo.png";
 import Title, { Description, SubTitle } from "base/Typography";
 import Icon from "atoms/Icon";
 import Image from "atoms/Image";
@@ -21,6 +23,17 @@ import { CardList } from "layout/Card";
 import Panel, { PanelSection } from "layout/Panel";
 import List, { ListItem } from "blocks/List";
 import NavigationPanelHeader from "elements/PanelHeaders/NavigationPanelHeader";
+
+const Logo = styled.img`
+  width: 9em;
+  margin-left: 1rem;
+  height: 3.8rem;
+`;
+
+const image = {
+  src: LBLogo,
+  alt: "DMP"
+};
 
 const lotData = [
   { id: "a", name: "Land Use", value: "Commercial" },
@@ -98,8 +111,9 @@ storiesOf("Templates|SI Panel", module)
         <Layout>
           <Panel>
             <React.Fragment>
+              <Bar left={<Logo src={image.src} alt={image.alt} />} />
               <Bar
-                padding="3x"
+                padding="2x"
                 contentAlign="center"
                 leftWidth="3%"
                 centerAlign="left"
@@ -114,7 +128,7 @@ storiesOf("Templates|SI Panel", module)
             </React.Fragment>
           </Panel>
         </Layout>
-        <Layout right="0" width="50%" height="90%" top="10%">
+        <Layout right="0" width="50%" height="87%" top="13%">
           <Panel>
             <PanelSection body>
               <CardList columns="1">
@@ -170,7 +184,7 @@ storiesOf("Templates|SI Panel", module)
             </PanelSection>
           </Panel>
         </Layout>
-        <Layout width="50%" height="90%" top="10%">
+        <Layout width="50%" height="87%" top="13%">
           <Mapbox />
         </Layout>
       </Layout>
@@ -183,8 +197,9 @@ storiesOf("Templates|SI Panel", module)
         <Layout>
           <Panel>
             <React.Fragment>
+              <Bar left={<Logo src={image.src} alt={image.alt} />} />
               <Bar
-                padding="3x"
+                padding="2x"
                 contentAlign="center"
                 leftWidth="3%"
                 centerAlign="left"
@@ -199,7 +214,7 @@ storiesOf("Templates|SI Panel", module)
             </React.Fragment>
           </Panel>
         </Layout>
-        <Layout right="0" width="50%" height="90%" top="10%">
+        <Layout right="0" width="50%" height="87%" top="13%">
           <Panel>
             <PanelSection body>
               <Card
@@ -253,7 +268,7 @@ storiesOf("Templates|SI Panel", module)
             </PanelSection>
           </Panel>
         </Layout>
-        <Layout width="50%" height="90%" top="10%">
+        <Layout width="50%" height="87%" top="13%">
           <Mapbox />
         </Layout>
       </Layout>
@@ -266,8 +281,9 @@ storiesOf("Templates|SI Panel", module)
         <Layout>
           <Panel>
             <React.Fragment>
+              <Bar left={<Logo src={image.src} alt={image.alt} />} />
               <Bar
-                padding="3x"
+                padding="2x"
                 contentAlign="center"
                 leftWidth="3%"
                 centerAlign="left"
@@ -282,7 +298,7 @@ storiesOf("Templates|SI Panel", module)
             </React.Fragment>
           </Panel>
         </Layout>
-        <Layout right="0" width="50%" height="90%" top="10%">
+        <Layout right="0" width="50%" height="87%" top="13%">
           <Panel>
             <PanelSection body>
               <Card
@@ -316,7 +332,7 @@ storiesOf("Templates|SI Panel", module)
             </PanelSection>
           </Panel>
         </Layout>
-        <Layout width="50%" height="90%" top="10%">
+        <Layout width="50%" height="87%" top="13%">
           <Mapbox />
         </Layout>
       </Layout>
@@ -329,8 +345,9 @@ storiesOf("Templates|SI Panel", module)
         <Layout>
           <Panel>
             <React.Fragment>
+              <Bar left={<Logo src={image.src} alt={image.alt} />} />
               <Bar
-                padding="3x"
+                padding="2x"
                 contentAlign="center"
                 leftWidth="3%"
                 centerAlign="left"
@@ -338,14 +355,14 @@ storiesOf("Templates|SI Panel", module)
                 center={
                   <React.Fragment>
                     <Title text="Completed Site Definition" size="2x" />
-                    <Description text="Add or remove parcels to your site by clicking directly on the map parcel to add to list" />
+                    <Description text="Submit your completed site definition by selecting the Submit button" />
                   </React.Fragment>
                 }
               />
             </React.Fragment>
           </Panel>
         </Layout>
-        <Layout right="0" width="50%" height="90%" top="10%">
+        <Layout right="0" width="50%" height="87%" top="13%">
           <Panel>
             <PanelSection body>
               <CardList columns="1">
@@ -384,11 +401,11 @@ storiesOf("Templates|SI Panel", module)
               </CardList>
             </PanelSection>
             <PanelSection>
-              <Bar padding="2x" center={<Button label="Continue" />} />
+              <Bar padding="2x" center={<Button label="Submit" />} />
             </PanelSection>
           </Panel>
         </Layout>
-        <Layout width="50%" height="90%" top="10%">
+        <Layout width="50%" height="87%" top="13%">
           <Mapbox />
         </Layout>
       </Layout>
