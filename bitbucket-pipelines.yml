@@ -29,3 +29,5 @@ pipelines:
           script:
             - declare -x VERSION=$(node -p -e "require('./package.json').version")
             - echo $VERSION
+            - git tag $VERSION
+            - git push origin --tags
