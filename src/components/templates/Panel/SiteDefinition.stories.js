@@ -104,7 +104,7 @@ const data = [
   }
 ];
 
-storiesOf("Templates|SI Panel", module)
+storiesOf("Templates|Site Definition", module)
   .add("Recommendations", () => {
     return (
       <Layout>
@@ -115,7 +115,7 @@ storiesOf("Templates|SI Panel", module)
               <Bar
                 padding="2x"
                 contentAlign="center"
-                leftWidth="3%"
+                leftWidth="2%"
                 centerAlign="left"
                 left={<Icon icon="left" type="info" size="lg" />}
                 center={
@@ -128,7 +128,7 @@ storiesOf("Templates|SI Panel", module)
             </React.Fragment>
           </Panel>
         </Layout>
-        <Layout right="0" width="50%" height="87%" top="13%">
+        <Layout right="0" width="50%" height="85%" top="15%">
           <Panel>
             <PanelSection body>
               <CardList columns="1">
@@ -184,7 +184,7 @@ storiesOf("Templates|SI Panel", module)
             </PanelSection>
           </Panel>
         </Layout>
-        <Layout width="50%" height="87%" top="13%">
+        <Layout width="50%" height="85%" top="15%">
           <Mapbox />
         </Layout>
       </Layout>
@@ -214,7 +214,7 @@ storiesOf("Templates|SI Panel", module)
             </React.Fragment>
           </Panel>
         </Layout>
-        <Layout right="0" width="50%" height="87%" top="13%">
+        <Layout right="0" width="50%" height="85%" top="15%">
           <Panel>
             <PanelSection body>
               <Card
@@ -268,7 +268,7 @@ storiesOf("Templates|SI Panel", module)
             </PanelSection>
           </Panel>
         </Layout>
-        <Layout width="50%" height="87%" top="13%">
+        <Layout width="50%" height="85%" top="15%">
           <Mapbox />
         </Layout>
       </Layout>
@@ -298,7 +298,7 @@ storiesOf("Templates|SI Panel", module)
             </React.Fragment>
           </Panel>
         </Layout>
-        <Layout right="0" width="50%" height="87%" top="13%">
+        <Layout right="0" width="50%" height="85%" top="15%">
           <Panel>
             <PanelSection body>
               <Card
@@ -332,7 +332,7 @@ storiesOf("Templates|SI Panel", module)
             </PanelSection>
           </Panel>
         </Layout>
-        <Layout width="50%" height="87%" top="13%">
+        <Layout width="50%" height="85%" top="15%">
           <Mapbox />
         </Layout>
       </Layout>
@@ -362,7 +362,7 @@ storiesOf("Templates|SI Panel", module)
             </React.Fragment>
           </Panel>
         </Layout>
-        <Layout right="0" width="50%" height="87%" top="13%">
+        <Layout right="0" width="50%" height="85%" top="15%">
           <Panel>
             <PanelSection body>
               <CardList columns="1">
@@ -405,7 +405,7 @@ storiesOf("Templates|SI Panel", module)
             </PanelSection>
           </Panel>
         </Layout>
-        <Layout width="50%" height="87%" top="13%">
+        <Layout width="50%" height="85%" top="15%">
           <Mapbox />
         </Layout>
       </Layout>

@@ -16,7 +16,16 @@ import Icon from "atoms/Icon";
 
 <Preview withToolbar>
   <Story name="Standard">
-    <Tag label="Tag" />
+        <Grid columns="6">
+      <Tag label="Tag " />
+      <Tag label="Tag " type="blue" /> <Tag label="Tag " type="darkblue" /> <Tag
+        label="Tag "
+        type="lightgreen"
+      />
+      <Tag label="Tag " type="green" /> <Tag label="Tag " type="darkgreen" />
+       <Tag label="Tag" type="warning" />
+       <Tag label="Tag" type="alert" />{" "}
+    </Grid>
   </Story>
 </Preview>
 
@@ -87,12 +96,6 @@ A Tag may appear to the left or right of it's corresponding label. A Tag may not
 <Preview>
   <Story name="Types">
     <Grid columns="6">
-      <Tag label="Tag " />
-      <Tag label="Tag " type="blue" /> <Tag label="Tag " type="darkblue" /> <Tag
-        label="Tag "
-        type="lightgreen"
-      />
-      <Tag label="Tag " type="green" /> <Tag label="Tag " type="darkgreen" />
       <Tag label="Info" type="info" /> <Tag label="Warning" type="warning" />
       <Tag label="Success" type="success" /> <Tag label="Alert" type="alert" />{" "}
     </Grid>
