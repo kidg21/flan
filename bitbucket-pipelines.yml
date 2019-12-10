@@ -27,6 +27,11 @@ pipelines:
       - step:
           name: Build
           script:
+            # Copy SSH key so that we can pull additional submodules
+            - mkdir -p /root/.ssh
+            - cp id_rsa /root/.ssh/id_rsa
+            - chmod 700 /root/.ssh/id_rsa
+            - echo "Host bitbucket.org\n\tStrictHostKeyChecking no\n" >> /root/.ssh/config
             - npm install
             - npm run build
           artifacts:
