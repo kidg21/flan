@@ -11,8 +11,7 @@ import Button from "atoms/Button";
 
 ### Buttons allow users to take actions, and make choices, with a single tap.
 
-( _This documentaion is written in `MDX` which allows us to use interactive code (JSX) inside of Markdown._
-)
+
 
 <Preview withToolbar>
   <Story name="Standard">
@@ -43,15 +42,15 @@ Buttons communicate actions that users can take. They are typically placed throu
 
 ### Type
 
-We can drop it in a `Preview` to get a code snippet:
 
 <Preview>
   <Story name="Type">
     <Grid>
       <Button label="Standard Button" />
       <Button label="Solid Button" type="solid" />
-      <Button label="Inline Button" type="inline" />
       <Button label="Underlined Button" type="underlined" />
+      <Button label="Inline Button" type="inline" />
+      
     </Grid>
   </Story>
 </Preview>
@@ -79,6 +78,10 @@ We can drop it in a `Preview` to get a code snippet:
       <Button label="Success Button" color="success" />
       <Button label="Warning Button" color="warning" />
       <Button label="Alert Button" color="alert" />
+            <Button label="Solid Info" color="info" type="solid"/>
+      <Button label="Solid Success" color="success" type="solid"/>
+      <Button label="Solid Warning" color="warning" type="solid"/>
+      <Button label="Solid Alert" color="alert" type="solid"/>
     </Grid>
   </Story>
 </Preview>
