@@ -24,8 +24,8 @@ image: node:8.11.3
 pipelines:
   tags:
     testTagging:
-      -step:
-        name: Tagging Version
-        script:
-          - declare -x VERSION=$(node -p -e "require('./package.json').version")
-          - echo $VERSION
+      - step:
+          name: Tagging Version
+          script:
+            - declare -x VERSION=$(node -p -e "require('./package.json').version")
+            - echo $VERSION
