@@ -1,22 +1,34 @@
-# This is a sample build configuration for Docker.
-# Check our guides at https://confluence.atlassian.com/x/O1toN for more examples.
-# Only use spaces to indent your .yml configuration.
-# -----
-# You can specify a custom docker image from Docker Hub as your build environment.
-image: atlassian/default-image:2
+image: node:8.11.3
 
 pipelines:
-  default:
-    - step:
-        services:
-          - docker
-        script: # Modify the commands below to build your repository.
-          # Set $DOCKER_HUB_USERNAME and $DOCKER_HUB_PASSWORD as environment variables in repository settings
-          - export IMAGE_NAME=your-Dockerhub-account/your-docker-image-name:$BITBUCKET_COMMIT
-
-          # build the Docker image (this will use the Dockerfile in the root of the repo)
-          - docker build -t $IMAGE_NAME .
-          # authenticate with the Docker Hub registry
-          - docker login --username $DOCKER_HUB_USERNAME --password $DOCKER_HUB_PASSWORD
-          # push the new Docker image to the Docker registry
-          - docker push $IMAGE_NAME
+  branches:
+    feature/pieplines/automatedeployment:
+      - step:
+          name: Build
+          script:
+            # Copy SSH key so that we can pull additional submodules
+            - mkdir -p /root/.ssh
+            - cp id_rsa /root/.ssh/id_rsa
+            - chmod 700 /root/.ssh/id_rsa
+            - echo "Host bitbucket.org\n\tStrictHostKeyChecking no\n" >> /root/.ssh/config
+            - npm install
+            - npm run build
+          artifacts:
+            - Bundles/**
+      - step:
+          name: Commit Bundle File
+          script:
+            - echo "Made a change in build ${BITBUCKET_BUILD_NUMBER}" >> changes.txt
+            - git add changes.txt
+            - git add Bundles/lbreactcore.js
+            - git commit -m "[skip ci] Update repo with latest bundle"
+            - git push origin $BITBUCKET_BRANCH
+      - step:
+          name: Tagging Version
+          script:
+            # Get the version number from package.json
+            - declare -x VERSION=$(node -p -e "require('./package.json').version")
+            - echo $VERSION
+            # Create/Push tag to commit
+            - git tag $VERSION # if tag already exists, this step will fail
+            - git push origin $VERSION $BITBUCKET_BRANCH # branch name can't be the same as tag name
