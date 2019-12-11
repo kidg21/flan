@@ -9,7 +9,7 @@ const buildOutputPath = "Bundles/";
 const build = {
   name: "buildScript",
   entry: {
-    StyledComponents: "./component-index.js",
+    lbreactcore: "./component-index.js",
   },
   output: {
     // Output to the "Bundles" folder

@@ -1,8 +1,8 @@
 {
-  "name": "ss-styled-components",
+  "name": "lb-react-core",
   "version": "1.0.0",
   "description": "Repository containing our Styled-Component React widgets",
-  "main": "./Bundles/StyledComponents.js",
+  "main": "./Bundles/lbreactcore.js",
   "scripts": {
     "storybook": "start-storybook -p 9009 -c .storybook",
     "build-storybook": "build-storybook -c .storybook -o ../share/nginx/html",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/DigMap/sstream-styled-components.git"
+    "url": "git+ssh://git@bitbucket.org:DigMap/lbox-react-core.git"
   },
   "browserslist": [
     ">0.2%",
@@ -71,7 +71,7 @@
     "react-dom": "^16.8.6",
     "react-storybook-addon-chapters": "^3.1.6",
     "ss-development": "git+ssh://git@bitbucket.org:DigMap/sstream-development.git",
-    "ss-styled-components": ".",
+    "lb-react-core": ".",
     "string-replace-webpack-plugin": "0.1.3"
   },
   "author": "Greg Person, Liz Gallagher",

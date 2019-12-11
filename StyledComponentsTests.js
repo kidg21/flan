@@ -1,1 +1,1 @@
-require("ss-styled-components/cypress/integration/styledcomponents.tests");
+require("lb-react-core/cypress/integration/styledcomponents.tests");

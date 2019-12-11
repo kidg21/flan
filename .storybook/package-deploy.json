@@ -1,5 +1,5 @@
 {
-  "name": "ss-styled-components",
+  "name": "lb-react-core",
   "version": "1.0.0",
   "description": "Repository containing our Styled-Component React widgets",
   "main": "index.js",
@@ -55,7 +55,7 @@
     "react-select": "^2.4.3",
     "react-storybook-addon-chapters": "^3.1.6",
     "react-virtualized": "^9.21.1",
-    "ss-styled-components": ".",
+    "lb-react-core": ".",
     "styled-components": "^4.2.0",
     "styled-normalize": "^8.0.6"
   },
