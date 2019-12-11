@@ -17,31 +17,32 @@ import Icon from "atoms/Icon";
 
 ### Cards contain content and actions about a single subject.
 
-
 <Preview>
   <Story name="Example">
-  <Bar leftWidth="50%" centerAlign="left" left={
-<Card title="Title" description="Card Description"
-body=<Body text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
-media={ <Image
-    src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
-    alt="This is alt text for this image"
-  />} />}
-  center={
-    <Card title="Title" description="Card Description"
-body=<Body text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
-media={ <Image
-    src="http://mowin.org/wp-content/uploads/2017/07/land-development-residential.jpg"
-    alt="This is alt text for this image"
-  />} />
-  }/>
+    <CardList>
+      <Card
+        image="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
+        title="Title"
+        description="Card Description"
+        body={
+          <Body text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+        }
+      />
+      <Card
+        image="http://mowin.org/wp-content/uploads/2017/07/land-development-residential.jpg"
+        title="Title"
+        description="Card Description"
+        body={
+          <Body text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+        }
+      />
+    </CardList>
   </Story>
 </Preview>
 
+# Usage
 
-
-
-<Preview withToolbar>
+<Preview>
   <Story name="Standard">
     <Card
       title="Title"
@@ -51,8 +52,6 @@ media={ <Image
     />
   </Story>
 </Preview>
-
-# Usage
 
 Cards are surfaces that display content and actions on a single topic. They should be easy to scan for relevant and actionable information. Elements, like text and images, should be placed on them in a way that clearly indicates hierarchy.
 
@@ -100,16 +99,14 @@ Cards can be outlined or elevated. The default type is outlined. Using an elevat
 
 <Preview>
   <Story name="Types">
-    <React.Fragment>
-      <Grid columns="2">
-        <Card title="Outlined Card" description="Card Description" />
-        <Card
-          title="Elevated Card"
-          description="Card Description"
-          type="elevated"
-        />
-      </Grid>
-    </React.Fragment>
+    <CardList columns="2">
+      <Card title="Outlined Card" description="Card Description" />
+      <Card
+        title="Elevated Card"
+        description="Card Description"
+        type="elevated"
+      />
+    </CardList>
   </Story>
 </Preview>
 
@@ -185,7 +182,9 @@ Cards can have include images. Images need to be relevant to the card subject ma
     <Card
       title="Title"
       description="Card Description"
-      body=<Body text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+      body={
+        <Body text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+      }
       media={
         <Image
           src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
