@@ -44,6 +44,7 @@
           "templates": "ss-styled-components/src/components/templates",
           "utils": "ss-styled-components/src/components/utils",
           "work": "ss-styled-components/src/components/work",
+          ".storybook": "ss-styled-components/.storybook"
         }
       }
     ]

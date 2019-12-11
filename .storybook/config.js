@@ -8,6 +8,8 @@ import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
 import { withA11y } from "@storybook/addon-a11y";
 import { configureActions } from "@storybook/addon-actions";
 import { DocsPage, DocsContainer } from "@storybook/addon-docs/blocks";
+import { configure  as configureEnzyme } from "enzyme";
+import Adapter from "enzyme-adapter-react-16";
 
 // Create and add global styles
 import GlobalStyles from "GlobalStyles";
@@ -147,6 +149,8 @@ const work = require.context(
   true,
   /\.stories\.(js|mdx)$/
 );
+
+configureEnzyme({ adapter: new Adapter() });
 configure(
   [intro, base, utils, atoms, blocks, elements, layout, templates, work],
   module
