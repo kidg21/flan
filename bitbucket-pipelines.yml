@@ -41,7 +41,7 @@ pipelines:
           script:
             - git add Bundles/StyledComponents.js
             - git commit -m "[skip ci] Update repo with latest bundle"
-            - git push
+            - git push origin feature/StyledComponents/setuplibrary
       - step:
           name: Tagging Version
           script:
