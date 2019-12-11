@@ -1,13 +1,14 @@
 const path = require("path");
+
 const root = `${__dirname}/`;
 const StringReplacePlugin = require("string-replace-webpack-plugin");
+
 const buildOutputPath = "/testBuildOutput/";
 
-
-let build = {
+const build = {
   name: "buildScript",
   entry: {
-    "StyledComponents": "./styled-components.js",
+    StyledComponents: "./component-index.js",
   },
   output: {
     // Output to the "Bundles" folder
