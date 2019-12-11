@@ -12,7 +12,7 @@ import Card, { CardList } from "layout/Card";
 import Button from "atoms/Button";
 
 // Card
-storiesOf("Layout|Card", module)
+storiesOf("Work|Card/Layout", module)
   .addDecorator(Padding)
   .addDecorator(checkA11y)
   .add("Default", () => {
