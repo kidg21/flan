@@ -5,6 +5,8 @@ pipelines:
     feature/pipelines/automatedeployment:
       - step:
           name: Build
+          caches:
+            - node
           script:
             # Copy SSH key so that we can pull additional submodules
             - mkdir -p /root/.ssh
@@ -23,10 +25,7 @@ pipelines:
             - git add Bundles/lbreactcore.js
             - git commit -m "[skip ci] Update repo with latest bundle"
             - git push origin $BITBUCKET_BRANCH
-      - step:
-          name: Tagging Version
-          script:
-            # Get the version number from package.json
+            # Tagging branch with version number from package.json
             - declare -x VERSION=$(node -p -e "require('./package.json').version")
             - echo $VERSION
             # Create/Push tag to commit
