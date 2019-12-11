@@ -2,7 +2,7 @@ image: node:8.11.3
 
 pipelines:
   branches:
-    feature/pieplines/automatedeployment:
+    feature/pipelines/automatedeployment:
       - step:
           name: Build
           script:
