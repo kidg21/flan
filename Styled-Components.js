@@ -1,2 +1,2 @@
-require("ss-styled-components/widgets/menuballoon.jsx");
-require("ss-styled-components/component-index.js");
+require("lb-react-core/widgets/menuballoon.jsx");
+require("lb-react-core/component-index.js");

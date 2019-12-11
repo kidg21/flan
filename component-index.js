@@ -1,1 +1,1 @@
-export * from "ss-styled-components/src/components/index";
+export * from "lb-react-core/src/components/index";
