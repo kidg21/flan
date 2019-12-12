@@ -8,7 +8,7 @@ export {
   SubTitle,
   Description,
   Link,
-  Number,
+  Number
 } from "./base/Typography";
 export { default as GlobalStyles } from "./base/GlobalStyles/GlobalStyles.jsx";
 
@@ -32,9 +32,9 @@ export { default as Tag } from "./atoms/Tag";
 export { default as TextInput } from "./atoms/TextInput";
 
 // Publicly exported files from 'blocks'
-export { default as Accordion } from "./blocks/Accordion";
 export { default as Banner } from "./blocks/Banner";
 export { default as Bar } from "./blocks/Bar";
+export { default as Legend } from "./blocks/Legend";
 export { default as DataRange } from "./blocks/DataRange";
 export { default as List, ListItem } from "./blocks/List";
 export { default as IconBlock } from "./blocks/IconBlock";
@@ -46,20 +46,17 @@ export { DataTable as Table } from "./blocks/Table";
 export { default as Tabs, Tab } from "./blocks/Tabs";
 
 // Publicly exported files from 'elements'
-export { default as InformationCardBar } from "./elements/CardBars/InformationCardBar";
-export { default as LayerCardBar } from "./elements/CardBars/LayerCardBar";
-export { default as NavigationCardBar } from "./elements/CardBars/NavigationCardBar";
+export { default as Card } from "./elements/Card";
 export { default as MainPanelHeader } from "./elements/PanelHeaders/MainPanelHeader";
 export { default as PropertyPanelHeader } from "./elements/PanelHeaders/PropertyPanelHeader";
 export { default as NavigationPanelHeader } from "./elements/PanelHeaders/NavigationPanelHeader";
 export { default as Notification } from "./elements/Notification";
-export { default as PropertyListCard } from "./elements/ListCards/PropertyListCard";
 export { UserRoles, RolePermissions } from "./elements/UserRoles";
 export {
   default as Dialog,
   Alert,
   Confirm,
-  Prompt,
+  Prompt
 } from "./elements/DialogBox";
 
 // Publicly exported files from 'layout'
@@ -71,12 +68,14 @@ export { default as Modal } from "./layout/Modal";
 export { default as Page } from "./layout/Page";
 export { default as Panel, PanelSection } from "./layout/Panel";
 
+export { default as Expander } from "./utils/Expander";
+
 export {
   colors,
   fonts,
   shadows,
   screen,
   DMPTheme,
-  darkTheme,
+  darkTheme
 } from "./base/Variables/Variables.jsx";
 export { ThemeProvider } from "styled-components";

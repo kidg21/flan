@@ -6,7 +6,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Bar from "blocks/Bar";
-import { Piece } from "layout/Card";
 import Title from "base/Typography";
 import Menu from "blocks/Menu";
 
@@ -14,14 +13,14 @@ function MainPanelHeader({
   id, title, style, menuData,
 }) {
   return (
-    <Piece id={id} style={style}>
+    <React.Fragment id={id} style={style}>
       <Bar
         contentAlign="center"
         padding="3x"
         left={<Title text={title} size="large" />}
         right={menuData ? <Menu data={menuData} position="bottomLeft" type="edit" /> : null}
       />
-    </Piece>
+    </React.Fragment>
   );
 }
 

@@ -7,6 +7,10 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import { Darken } from "Variables";
 import Bar from "blocks/Bar";
+import Icon from "atoms/Icon";
+import Avatar from "atoms/Avatar";
+import Checkbox from "atoms/Checkbox";
+import Switch from "atoms/Switch";
 import Title, { Description } from "base/Typography";
 import { InteractiveContext, DisabledContext } from "States";
 
@@ -14,127 +18,136 @@ const ListWrapper = styled.ul`
   display: flex;
   flex-direction: column;
   list-style: none;
-  font-weight: 600;
-  tabindex: 0;
-  ${(props) => {
-    if (props.maxHeight) {
-      return `max-height: ${props.maxHeight}; overflow-y: auto;`
-    }
-  }}
+  li:not(:last-child) {
+    border-bottom: ${(props) => {
+    return props.divider ? "1px solid" : "";
+  }};
+    border-bottom-color: ${(props) => {
+    return props.divider ? props.theme.palette.grey5 : "";
+  }};
+  }
 `;
 
 const ListItemWrapper = styled.li`
   position: relative;
-  color: ${props => {
+  color: ${(props) => {
     return props.theme.text[props.itemColor];
   }};
-  background-color: ${props => {
-    return (
-      props.theme.background[props.itemBGColor] ||
-      props.theme.palette.background
-    );
+  padding: 1em;
+  background-color: ${(props) => {
+    return props.theme.palette.background;
   }};
-  border-bottom: 1px solid
-    ${props => {
-    return props.theme.divider;
-  }};
-  cursor: ${props => {
+  cursor: ${(props) => {
     return props.interactive ? "pointer" : "";
   }};
   &:focus,
   &:hover {
-    ${props => {
+    ${(props) => {
     return props.interactive ? Darken : "";
   }};
-    outline: none;
   }
+  outline: none;
   &[disabled] {
     cursor: not-allowed;
     pointer-events: none;
     user-select: none;
-    color: ${props => {
-    return props.theme.text.disabled;
-  }};
-    background-color: ${props => {
+    background-color: ${(props) => {
     return props.theme.background.disabled;
   }};
     border-left: none;
-  }
-  &:before {
-    display: ${props => {
-    return props.active ? "block" : "none";
-  }};
-    content: "";
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    height: 100%;
-    border-style: solid;
-    border-width: 2px;
   }
   &:last-child {
     border-bottom: none;
   }
 `;
 
-function List({ children, id, interactive, title, maxHeight }) {
+function List({
+ children, divider, id, interactive, title 
+}) {
   return (
     <InteractiveContext.Provider value={interactive}>
       {title ? <Bar left={<Title text={title} weight="bold" />} /> : null}
-      <ListWrapper id={id} maxHeight={maxHeight}>{children}</ListWrapper>
+      <ListWrapper divider={divider} id={id}>
+        {children}
+      </ListWrapper>
     </InteractiveContext.Provider>
   );
 }
 
 function ListItem({
   active,
-  children,
   description,
   disabled,
   id,
+  avatar,
+  toggle,
+  icon,
+  checkbox,
   interactive,
   label,
   onClick,
-  type
 }) {
-  let itemBGColor;
-  let itemColor = type;
-  if (active) {
-    if (itemColor) itemBGColor = `${itemColor}_active`;
-    else {
-      itemColor = "active";
-      itemBGColor = itemColor;
-    }
-    active = !disabled;
-  }
+  const mainContent = (
+    <React.Fragment>
+      <Title text={label} disabled={disabled} />
+      {description ? (
+        <Description text={description} disabled={disabled} />
+      ) : null}
+    </React.Fragment>
+  );
+
   return (
     <ListItemWrapper
       active={active}
-      disabled={disabled}
       id={id}
       interactive={
         typeof interactive === "boolean"
           ? interactive
           : useContext(InteractiveContext)
       }
-      itemBGColor={itemBGColor}
-      itemColor={itemColor}
       onClick={onClick}
+      disabled={disabled}
       tabIndex={disabled ? "-1" : "1"}
     >
       <DisabledContext.Provider value={disabled}>
-        <Bar
-          contentAlign="center"
-          centerAlign="left"
-          center={
-            <>
-              {<Title text={label} />}
-              {description ? <Description text={description} /> : null}
-            </>
-          }
-          right={children}
-          rightWidth={(children && children.props.width) || ""}
-        />
+        {avatar || icon ? (
+          <Bar
+            leftWidth="6%"
+            contentAlign="center"
+            centerAlign="left"
+            disabled={disabled}
+            left={
+              <React.Fragment>
+                {avatar ? <Avatar label={avatar} disabled={disabled} /> : null}
+                {icon ? (
+                  <Icon icon={icon} size="lg" disabled={disabled} />
+                ) : null}
+              </React.Fragment>
+            }
+            center={mainContent}
+            right={
+              <React.Fragment>
+                {checkbox ? (
+                  <Checkbox label={label} disabled={disabled} />
+                ) : null}
+                {toggle ? <Switch disabled={disabled} /> : null}
+              </React.Fragment>
+            }
+          />
+        ) : (
+          <Bar
+            contentAlign="center"
+            centerAlign="left"
+            disabled={disabled}
+            left={mainContent}
+            right={
+              <React.Fragment>
+                {checkbox ? <Checkbox disabled={disabled} /> : null}
+                {toggle ? <Switch disabled={disabled} /> : null}
+              </React.Fragment>
+            }
+          />
+        )}
       </DisabledContext.Provider>
     </ListItemWrapper>
   );
@@ -143,14 +156,16 @@ function ListItem({
 List.propTypes = {
   children: PropTypes.node,
   id: PropTypes.string,
+  divider: PropTypes.bool,
   interactive: PropTypes.bool,
-  title: PropTypes.string
+  title: PropTypes.string,
 };
 List.defaultProps = {
   children: null,
   id: null,
+  divider: false,
   interactive: false,
-  title: null
+  title: null,
 };
 
 ListItem.propTypes = {
@@ -159,20 +174,24 @@ ListItem.propTypes = {
   description: PropTypes.string,
   disabled: PropTypes.bool,
   id: PropTypes.string,
+  icon: PropTypes.node,
+  checkbox: PropTypes.node,
+  avatar: PropTypes.string,
   interactive: PropTypes.bool,
   label: PropTypes.string.isRequired,
   onClick: PropTypes.func,
-  type: PropTypes.oneOf(["info", "success", "warning", "alert"])
 };
 ListItem.defaultProps = {
   active: false,
   children: null,
   description: null,
+  icon: null,
+  checkbox: null,
+  avatar: null,
   disabled: false,
   id: null,
   interactive: null,
   onClick: null,
-  type: null
 };
 
 export { List as default, ListItem };

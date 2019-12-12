@@ -45,7 +45,7 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
     );
   }};
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.grey3;
+    return props.theme.palette[props.borderColor] || props.theme.palette.grey;
   }};
   width: 1rem;
   height: 1rem;
@@ -57,13 +57,13 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
     background-color: ${(props) => {
     return (
       props.theme.palette[props.fillColorChecked] ||
-      props.theme.background.selected
+      props.theme.palette.secondaryLight
     );
   }};
     border-color: ${(props) => {
     return (
       props.theme.palette[props.borderColor] ||
-      props.theme.background.selected
+      props.theme.palette.secondary
     );
   }};
   }
@@ -71,7 +71,7 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
     outline-color: ${(props) => {
     return (
       props.theme.palette[props.outlineColor] ||
-      props.theme.palette.secondaryLight
+      props.theme.palette.secondary
     );
   }};
   }
@@ -97,7 +97,7 @@ function Checkbox({
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
-    borderColor = "grey4";
+    borderColor = "grey2";
     fillColor = "grey5";
     fillColorChecked = "grey5";
     inputTextColor = "disabled";
@@ -105,17 +105,17 @@ function Checkbox({
   } else if (error) {
     borderColor = "alert";
     borderColorChecked = "alert";
-    fillColor = "alertLight";
-    fillColorChecked = "alertLight";
+    fillColor = "alertBright";
+    fillColorChecked = "alertBright";
     inputTextColor = "alert";
-    outlineColor = "alertLight";
+    outlineColor = "alertBright";
   } else if (warning) {
     borderColor = "warning";
     borderColorChecked = "warning";
-    fillColor = "warningLight";
-    fillColorChecked = "warningLight";
+    fillColor = "warningBright";
+    fillColorChecked = "warningBright";
     inputTextColor = "warning";
-    outlineColor = "warningLight";
+    outlineColor = "warningBright";
   }
 
   switch (align) {
@@ -146,7 +146,7 @@ function Checkbox({
         onBlur={onBlur}
         onFocus={onFocus}
       />
-      <Label htmlFor={id} isRequired={isRequired} text={label} />
+      {label ? <Label htmlFor={id} isRequired={isRequired} text={label} /> : null}
     </CheckboxContainer>
   );
 }
@@ -223,7 +223,7 @@ Checkbox.propTypes = {
   error: PropTypes.bool,
   warning: PropTypes.bool,
   id: PropTypes.string,
-  label: PropTypes.string.isRequired,
+  label: PropTypes.node,
   onChange: PropTypes.func,
   onBlur: PropTypes.func,
   onFocus: PropTypes.func,
@@ -234,6 +234,7 @@ Checkbox.defaultProps = {
   align: null,
   checked: null,
   disabled: false,
+  label: null,
   error: null,
   warning: false,
   id: null,

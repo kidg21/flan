@@ -7,7 +7,6 @@ import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
 import { withInfo } from "@storybook/addon-info";
 import { withKnobs, text, boolean } from "@storybook/addon-knobs";
-import Panel, { PanelSection } from "layout/Panel";
 import Form, { Section } from "layout/Form";
 import SelectMenu from "./SelectMenu";
 
@@ -17,18 +16,18 @@ const options = [
   { value: "vanilla", label: "Vanilla" },
   { value: "pistachio", label: "Pistachio" },
   { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
-  { value: "cookie dough", label: "Cookie Dough" },
+  { value: "cookie dough", label: "Cookie Dough" }
 ];
 
 // Select Menu ( Knobs )
 storiesOf("Atoms|Select Menu", module)
   .addParameters({
     info: {
-      text: "Select Menu info goes here...",
+      text: "Select Menu info goes here..."
     },
     notes: {
-      markdown: SelectMenu,
-    },
+      markdown: SelectMenu
+    }
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
@@ -40,7 +39,7 @@ storiesOf("Atoms|Select Menu", module)
           label={text("Input Label", "Select Menu ( Knobs )")}
           placeholder={text(
             "Placeholder Text",
-            "I am just keeping things warm",
+            "I am just keeping things warm"
           )}
           helpText={text("Help Text", "Have you been helped yet?")}
           multiSelect={boolean("Multi-Select", false)}
@@ -49,12 +48,12 @@ storiesOf("Atoms|Select Menu", module)
           error={boolean("Error", false)}
           errorMessage={text(
             "Error Text",
-            "Stay with my, buddy...we can fix this!",
+            "Stay with my, buddy...we can fix this!"
           )}
           options={options}
         />
       );
-    }),
+    })
   )
   .add("Skeleton", () => {
     return <SelectMenu />;
@@ -75,29 +74,25 @@ storiesOf("Atoms|Select Menu", module)
   // Single-Select (Required)
   .add("Single-Select ( Required )", () => {
     return (
-      <Panel>
-        <PanelSection body>
-          <Form>
-            <Section>
-              <SelectMenu
-                label="Single-Select ( Required )"
-                placeholder="You Must Choose..."
-                helpText="Help text for the Select Menu component"
-                isRequired
-                isClearable={false}
-                options={options}
-              />
-              <SelectMenu
-                label="Single-Select ( Required w/ Clearable )"
-                helpText="Help text for the Select Menu component"
-                isRequired
-                options={options}
-                selectOptions={options[0].value}
-              />
-            </Section>
-          </Form>
-        </PanelSection>
-      </Panel>
+      <Form>
+        <Section>
+          <SelectMenu
+            label="Single-Select ( Required )"
+            placeholder="You Must Choose..."
+            helpText="Help text for the Select Menu component"
+            isRequired
+            isClearable={false}
+            options={options}
+          />
+          <SelectMenu
+            label="Single-Select ( Required w/ Clearable )"
+            helpText="Help text for the Select Menu component"
+            isRequired
+            options={options}
+            selectOptions={options[0].value}
+          />
+        </Section>
+      </Form>
     );
   })
 
@@ -156,31 +151,27 @@ storiesOf("Atoms|Select Menu", module)
   // Multi-Select (Required)
   .add("Multi-Select ( Required )", () => {
     return (
-      <Panel>
-        <PanelSection body>
-          <Form>
-            <Section>
-              <SelectMenu
-                multiSelect
-                isRequired
-                label="Multi-Select ( Required )"
-                placeholder="You Must Choose..."
-                helpText="Help text for the Select Menu component"
-                isClearable={false}
-                options={options}
-              />
-              <SelectMenu
-                multiSelect
-                isRequired
-                label="Multi-Select ( Required w/ Clearable )"
-                helpText="Help text for the Select Menu component"
-                options={options}
-                selectOptions={[options[0].value, options[2].value]}
-              />
-            </Section>
-          </Form>
-        </PanelSection>
-      </Panel>
+      <Form>
+        <Section>
+          <SelectMenu
+            multiSelect
+            isRequired
+            label="Multi-Select ( Required )"
+            placeholder="You Must Choose..."
+            helpText="Help text for the Select Menu component"
+            isClearable={false}
+            options={options}
+          />
+          <SelectMenu
+            multiSelect
+            isRequired
+            label="Multi-Select ( Required w/ Clearable )"
+            helpText="Help text for the Select Menu component"
+            options={options}
+            selectOptions={[options[0].value, options[2].value]}
+          />
+        </Section>
+      </Form>
     );
   })
 
@@ -192,54 +183,50 @@ storiesOf("Atoms|Select Menu", module)
 // Select Menu (The Select Menu Family)
 storiesOf("Atoms|Select Menu", module).add("The Select Menu Family", () => {
   return (
-    <Panel>
-      <PanelSection body>
-        <Form title="The Select Menu Family">
-          <Section>
-            <SelectMenu
-              label="Single-Select ( Standard )"
-              placeholder="Choose..."
-              helpText="Help text for the Select Menu component"
-              options={options}
-            />
-            <SelectMenu
-              label="Single-Select ( Required )"
-              placeholder="You Must Choose..."
-              helpText="Help text for the Select Menu component"
-              isRequired
-              options={options}
-            />
-            <SelectMenu
-              label="Single-Select ( Disabled )"
-              placeholder="You Can't Choose..."
-              helpText="Help text for the Select Menu component"
-              disabled
-              options={options}
-            />
-            <SelectMenu
-              label="Single-Select ( Error )"
-              placeholder="You Chose Poorly..."
-              helpText="Help text for the Select Menu component"
-              error="Error: Invalid Selection!"
-              options={options}
-            />
-            <SelectMenu
-              label="Single-Select ( Loading )"
-              placeholder="Give Me A Minute..."
-              helpText="Help text for the Select Menu component"
-              isLoading
-              options={options}
-            />
-            <SelectMenu
-              multiSelect
-              label="Multi-Select"
-              placeholder="Choose One Or More..."
-              helpText="Help text for the Select Menu component"
-              options={options}
-            />
-          </Section>
-        </Form>
-      </PanelSection>
-    </Panel>
+    <Form title="The Select Menu Family">
+      <Section>
+        <SelectMenu
+          label="Single-Select ( Standard )"
+          placeholder="Choose..."
+          helpText="Help text for the Select Menu component"
+          options={options}
+        />
+        <SelectMenu
+          label="Single-Select ( Required )"
+          placeholder="You Must Choose..."
+          helpText="Help text for the Select Menu component"
+          isRequired
+          options={options}
+        />
+        <SelectMenu
+          label="Single-Select ( Disabled )"
+          placeholder="You Can't Choose..."
+          helpText="Help text for the Select Menu component"
+          disabled
+          options={options}
+        />
+        <SelectMenu
+          label="Single-Select ( Error )"
+          placeholder="You Chose Poorly..."
+          helpText="Help text for the Select Menu component"
+          error="Error: Invalid Selection!"
+          options={options}
+        />
+        <SelectMenu
+          label="Single-Select ( Loading )"
+          placeholder="Give Me A Minute..."
+          helpText="Help text for the Select Menu component"
+          isLoading
+          options={options}
+        />
+        <SelectMenu
+          multiSelect
+          label="Multi-Select"
+          placeholder="Choose One Or More..."
+          helpText="Help text for the Select Menu component"
+          options={options}
+        />
+      </Section>
+    </Form>
   );
 });

@@ -20,7 +20,7 @@ const SwitchContainer = styled.div`
     return props.alignInput || "";
   }};
   color: ${(props) => {
-    return props.theme.palette[props.checkboxColor] || "inherit";
+    return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
   background-color: ${(props) => {
     return (
@@ -50,7 +50,7 @@ const StyledSwitch = styled.div`
   }};
   border-radius: 1rem;
   background-color: ${(props) => {
-    return props.theme.palette[props.fillColor] || props.theme.palette.grey5;
+    return props.theme.palette[props.fillColor] || props.theme.background.default;
   }};
   cursor: pointer;
   &[disabled],
@@ -92,18 +92,19 @@ function Switch({
 }) {
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  let checkboxColor;
+  let inputTextColor;
   let fillColor;
   let borderColor;
   let alignInput;
   if (isDisabled) {
-    checkboxColor = "disabled";
+    inputTextColor = "disabled";
+    fillColor = "grey5";
     borderColor = "grey3";
   }
   if (error && !isDisabled) {
-    checkboxColor = "alertDark";
-    fillColor = "alert";
-    borderColor = "alertDark";
+    inputTextColor = "alertBright";
+    fillColor = "alertBright";
+    borderColor = "alert";
   }
   switch (align) {
     case "right":
@@ -129,7 +130,7 @@ function Switch({
   return (
     <SwitchContainer
       alignInput={alignInput}
-      checkboxColor={checkboxColor}
+      inputTextColor={inputTextColor}
       error={error}
       disabled={isDisabled}
       id={id}

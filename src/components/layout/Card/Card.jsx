@@ -10,48 +10,32 @@ import Grid from "layout/Grid";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 import PropTypes from "prop-types";
 
-const CardPiece = styled.div`
-  display: flex;
-  flex-direction: column;
-  flex: none;
-  padding: ${(props) => {
-    return props.piecePadding || "";
+const CardSection = styled.div``;
+
+const CardWrapper = styled.div`
+display: flex;
+flex-direction: column;
+flex: none;
+box-shadow: ${(props) => {
+    return props.theme.shadows[props.shadow] || "";
   }};
-  width: 100%;
-  background: ${(props) => {
-    return (
-      props.theme.palette[props.backgroundColor] ||
-      props.theme.background.default
-    );
+border: ${(props) => {
+    return props.border || "";
+  }};
+border-color: ${(props) => {
+    return props.theme.palette[props.borderColor] || "";
+  }};
+padding: ${(props) => {
+    return props.cardPadding || "1em";
   }};
   color: ${(props) => {
-    return props.theme.text[props.textColor] || props.theme.text.primary;
-  }};
-  &:hover {
-    box-shadow: ${(props) => { return (props.hover ? props.theme.shadows.dropShadow : ""); }};
-    cursor: ${(props) => { return (props.hover ? "pointer" : ""); }};
-  }
-  /* Prototype Content - displays when a Card is empty */
-  &:empty {
-    &:before {
-      ${PlaceholderText}
-      color: ${(props) => {
     return props.theme.text.primary;
   }};
-      content: "Card Piece";
-      padding: 2rem;
-    }
-  }
-`;
-
-const CardWrapper = styled(CardPiece)`
+width: 100%;
+div:not(:first-child) {
+  margin-top: 1rem;
+}
   position: relative;
-  padding: ${(props) => {
-    return props.cardPadding || "";
-  }};
-  filter: ${(props) => {
-    return props.theme.shadows.cardShadow;
-  }};
   /* Square off rounded edges of any direct children of Cards */
   /* Prototype Content - displays when a Card is empty */
   &:empty {
@@ -80,54 +64,26 @@ const CardListWrapper = styled(Grid)`
   }
 `;
 
-function Piece({
-  backgroundColor,
-  children,
-  className,
-  header,
-  hover,
-  id,
-  onClick,
-  padding,
-  textColor,
+function Card({
+ children, className, id, padding, type 
 }) {
-  let piecePadding;
-  switch (padding) {
-    case "1x":
-      piecePadding = "0.25em";
+  let shadow;
+  let border;
+  let borderColor;
+  let cardPadding;
+  switch (type) {
+    case "outlined":
+      border = "1px solid";
+      borderColor = "grey5";
       break;
-    case "2x":
-      piecePadding = "0.5em";
-      break;
-    case "3x":
-      piecePadding = "0.75em";
-      break;
-    case "4x":
-      piecePadding = "1em";
+    case "elevated":
+      shadow = "shadow1";
       break;
     default:
+      border = "1px solid";
+      borderColor = "grey5";
       break;
   }
-  return (
-    <CardPiece
-      backgroundColor={backgroundColor}
-      className={className}
-      header={header}
-      hover={hover}
-      id={id}
-      onClick={onClick}
-      piecePadding={piecePadding}
-      textColor={textColor}
-    >
-      {children}
-    </CardPiece>
-  );
-}
-
-function Card({
-  children, className, id, padding,
-}) {
-  let cardPadding;
   switch (padding) {
     case "none":
       cardPadding = "0em";
@@ -148,14 +104,21 @@ function Card({
       break;
   }
   return (
-    <CardWrapper cardPadding={cardPadding} className={className} id={id}>
+    <CardWrapper
+      border={border}
+      shadow={shadow}
+      borderColor={borderColor}
+      cardPadding={cardPadding}
+      className={className}
+      id={id}
+    >
       {children}
     </CardWrapper>
   );
 }
 
 function CardList({
-  children, className, columns, gap, id, rows,
+ children, className, columns, gap, id, rows 
 }) {
   return (
     <CardListWrapper
@@ -170,15 +133,9 @@ function CardList({
   );
 }
 
-Piece.propTypes = {
-  children: PropTypes.node,
-  className: PropTypes.string,
-  header: PropTypes.bool,
-  id: PropTypes.string,
-  padding: PropTypes.oneOf(["none", "1x", "2x", "3x", "4x"]),
-};
 Card.propTypes = {
   children: PropTypes.node,
+  type: PropTypes.string,
   className: PropTypes.string,
   id: PropTypes.string,
   padding: PropTypes.oneOf(["none", "1x", "2x", "3x", "4x"]),
@@ -231,4 +188,4 @@ CardList.propTypes = {
   rows: PropTypes.oneOf(["default (auto)", "[grid-template-rows]"]),
 };
 
-export { Card as default, CardList, Piece };
+export { Card as default, CardList, CardSection };

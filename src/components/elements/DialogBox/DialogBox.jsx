@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 import Grid from "layout/Grid";
 import Button from "atoms/Button";
 import Title from "base/Typography";
-import Card, { Piece } from "layout/Card";
+import Card from "layout/Card";
 import Bar from "blocks/Bar";
 
 function DialogBox({
@@ -62,11 +62,11 @@ function DialogBox({
 
   return (
     <Card id={id} padding="1em">
-      {header ? <Piece>{header}</Piece> : null}
+      {header ? <>{header}</> : null}
       <Bar left={<Title text={title} />} />
       {message ? <Bar left={<Title text={message} weight="light" />} /> : null}
       {children ? <Bar left={children} /> : null}
-      {buttonElements ? <Piece>{buttonElements}</Piece> : null}
+      {buttonElements ? <>{buttonElements}</> : null}
     </Card>
   );
 }
