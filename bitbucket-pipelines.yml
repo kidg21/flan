@@ -22,7 +22,7 @@ pipelines:
           script:
             # Get version number from package.json
             - declare -x VERSION=$(node -p -e "require('./package.json').version")
-            - echo -e "Pipeline Build - ${BITBUCKET_BUILD_NUMBER}\nPackage Version - ${VERSION}\nCommit Hash - ${BITBUCKET_COMMIT}" >> changes.txt
+            - echo -e "Pipeline Build - ${BITBUCKET_BUILD_NUMBER}\nPackage Version - ${VERSION}\nCommit Hash - ${BITBUCKET_COMMIT}" > changes.txt
             - git add changes.txt
             - git add Bundles/lbreactcore.js
             - git commit -m "[skip ci] Update repo with latest bundle"
