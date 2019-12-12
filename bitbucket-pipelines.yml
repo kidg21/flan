@@ -18,16 +18,17 @@ pipelines:
           artifacts:
             - Bundles/**
       - step:
-          name: Commit Bundle File
+          name: Commit Bundle File & Version Tag
           script:
-            - echo "Made a change in build ${BITBUCKET_BUILD_NUMBER}" >> changes.txt
+            # Get version number from package.json
+            - declare -x VERSION=$(node -p -e "require('./package.json').version")
+            - echo -e "Pipeline Build - ${BITBUCKET_BUILD_NUMBER}\nPackage Version - ${VERSION}\nCommit Hash - ${BITBUCKET_COMMIT}" >> changes.txt
             - git add changes.txt
             - git add Bundles/lbreactcore.js
             - git commit -m "[skip ci] Update repo with latest bundle"
             - git push origin $BITBUCKET_BRANCH
-            # Tagging branch with version number from package.json
-            - declare -x VERSION=$(node -p -e "require('./package.json').version")
-            - echo $VERSION
             # Create/Push tag to commit
+            - set +e
             - git tag $VERSION # if tag already exists, this step will fail
             - git push origin $VERSION $BITBUCKET_BRANCH # branch name can't be the same as tag name
+            - set -e
