@@ -28,7 +28,8 @@ pipelines:
             - git commit -m "[skip ci] Update repo with latest bundle"
             - git push origin $BITBUCKET_BRANCH
             # Create/Push tag to commit
-            - set +e
-            - git tag $VERSION # if tag already exists, this step will fail
-            - git push origin $VERSION $BITBUCKET_BRANCH # branch name can't be the same as tag name
+            # if tag already exists, it does not retag
+            - set +e # disables exiting if error occurs
+            - git tag $VERSION
+            - git push origin $VERSION $BITBUCKET_BRANCH
             - set -e
