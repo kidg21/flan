@@ -1,7 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React, { useContext, useState } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -159,10 +158,7 @@ const selectStyles = {
 
 const SelectMenuContainer = styled(Grid)`
   color: ${(props) => {
-    let color = "";
-    if (props.error) color = colors.alert;
-    else if (props.disabled) color = colors.grey40;
-    return color;
+    return props.theme.text[props.textColor] || props.theme.text.primary;
   }};
   width: 100%;
   &:empty {
@@ -181,6 +177,7 @@ function SelectMenu({
   selectOptions,
   disabled,
   error,
+  warning,
   label,
   isRequired,
   helpText,
@@ -191,19 +188,24 @@ function SelectMenu({
   isRtl,
   onChangeState,
   onCreateOption,
+  onBlur,
+  onFocus,
+  isCreatable,
 }) {
-  let textColor;
-
-  if (disabled) {
-    textColor = "disabled";
-  }
-
-  if (error && !disabled) {
-    textColor = "alert";
-  }
-
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  let textColor;
+  let errorText = "";
+  if (isDisabled) {
+    textColor = "disabled";
+  } else if (error) {
+    textColor = "alert";
+    errorText = error;
+  } else if (warning) {
+    textColor = "warning";
+    errorText = warning;
+  }
+
   let selectedOpts = [];
   if (selectOptions) {
     selectedOpts =
@@ -236,7 +238,7 @@ function SelectMenu({
     });
   }
 
-  const [state, setState] = useState({ selected: selectedOpts, error: error });
+  const [state, setState] = useState({ selected: selectedOpts });
   function changeSelected(pNewSelection, { action }) {
     // If this would leave us with no selection, default to initial value.
     let newSelection = pNewSelection;
@@ -276,30 +278,26 @@ function SelectMenu({
     isRtl: isRtl,
     onChange: changeSelected,
     onCreateOption: onCreateOption ? handleCreateOption : null,
+    onBlur: onBlur,
+    onFocus: onFocus,
   };
-  const select = onCreateOption ? (
-    <Creatable {...selectProps} />
-  ) : (
-      <Select {...selectProps} />
-    );
+  const select = (isCreatable || onCreateOption) ?
+    <Creatable {...selectProps} /> : <Select {...selectProps} />;
 
   return (
     <SelectMenuContainer
       isRequired={isRequired}
       textColor={textColor}
       disabled={isDisabled} // input attribute
-      error={state.error !== null}
       columns="1"
       gap="tiny"
     >
-      {label ? (
-        <Label size="sm" weight="bold" isRequired={isRequired} text={label} />
-      ) : null}
+      {label ? <Label weight="bold" isRequired={isRequired} text={label} /> : null}
       {select}
       {/* Help Text */}
       {helpText ? <Label size="sm" text={helpText} /> : null}
       {/* Error Message (required) */}
-      {state.error ? <Label size="sm" text={state.error} /> : null}
+      {errorText ? <Label size="sm" text={errorText} /> : null}
     </SelectMenuContainer>
   );
 }
@@ -328,6 +326,10 @@ SelectMenu.propTypes = {
   helpText: PropTypes.string,
   onChangeState: PropTypes.func,
   onCreateOption: PropTypes.func,
+  onBlur: PropTypes.func,
+  onFocus: PropTypes.func,
+  isCreatable: PropTypes.bool,
+  warning: PropTypes.string,
 };
 
 SelectMenu.defaultProps = {
@@ -347,6 +349,10 @@ SelectMenu.defaultProps = {
   helpText: null,
   onChangeState: null,
   onCreateOption: null,
+  onBlur: null,
+  onFocus: null,
+  isCreatable: false,
+  warning: "",
 };
 
 export default SelectMenu;

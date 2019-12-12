@@ -1,6 +1,5 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
 /* eslint-disable complexity */
 // Import dependencies
 import React from "react";
@@ -114,7 +113,7 @@ Label.propTypes = {
   size: PropTypes.string,
   text: PropTypes.string,
   textTransform: PropTypes.string,
-  weight: PropTypes.string,
+  isRequired: PropTypes.bool,
 };
 Label.defaultProps = {
   htmlFor: null,

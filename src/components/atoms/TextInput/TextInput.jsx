@@ -1,7 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -16,6 +15,7 @@ const TextInputContainer = styled(Grid)`
   }};
   width: 100%;
 `;
+
 
 const Input = styled.input`
   color: inherit;
@@ -98,6 +98,12 @@ function TextInput({
   title,
   type,
   value,
+  onBlur,
+  onFocus,
+  name,
+  rows,
+  cols,
+  warning,
 }) {
   let as;
   let inputTextColor;
@@ -123,9 +129,15 @@ function TextInput({
   if (autocompleteList) {
     autoCompleteDataListId = getGuid();
     const options = autocompleteList.map((item) => {
+      let itemValue = item;
+      let itemLabel = item;
+      if (typeof item !== "string") {
+        itemValue = item.value;
+        itemLabel = item.label || item.value;
+      }
       return (
-        <option key={getGuid()} value={item}>
-          {item}
+        <option key={getGuid()} value={itemValue}>
+          {itemLabel}
         </option>
       );
     });
@@ -133,20 +145,27 @@ function TextInput({
       <datalist id={autoCompleteDataListId}>{options}</datalist>
     );
   }
+  let errorText;
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
     inputBorderColor = "grey5";
     inputFillColor = "disabled";
     inputTextColor = "disabled";
-  }
-
-  if (error && !disabled) {
+  } else if (error) {
     inputBorderColor = "alertBright";
     inputBorderColorHover = "alertLight";
     inputSelectColor = "alertBright";
     inputTextColor = "alert";
     placeholderColor = "primary";
+    errorText = typeof error === "string" ? error : "";
+  } else if (warning) {
+    inputBorderColor = "warningBright";
+    inputBorderColorHover = "warningLight";
+    inputSelectColor = "warningBright";
+    inputTextColor = "warning";
+    placeholderColor = "primary";
+    errorText = typeof warning === "string" ? warning : "";
   }
 
   return (
@@ -158,12 +177,12 @@ function TextInput({
       className={className}
     >
       {label ? (
-        <Label weight="bold" size="sm" isRequired={isRequired} text={label} />
+        <Label weight="bold" isRequired={isRequired} text={label} />
       ) : null}
       <Input
         as={as}
         disabled={isDisabled} // input attribute
-        id={`i_${id}`} // input attribute
+        id={id} // input attribute
         inputBorderColor={inputBorderColor}
         inputBorderColorHover={inputBorderColorHover}
         inputCaretColor={inputCaretColor}
@@ -171,7 +190,7 @@ function TextInput({
         inputResize={inputResize}
         inputSelectColor={inputSelectColor}
         list={autoCompleteDataListId}
-        name={`i_${id}`} // input attribute
+        name={name || id} // input attribute
         onChange={onChange}
         pattern={pattern} // input attribute
         placeholder={placeholder} // input attribute
@@ -181,19 +200,24 @@ function TextInput({
         title={title} // input attribute
         type={type} // input attribute
         value={value}
+        onBlur={onBlur}
+        onFocus={onFocus}
+        rows={rows} // textarea attribute
+        cols={cols} // textarea attribute
       />
       {autocompleteDataList}
       {helpText ? <Label size="sm" text={helpText} /> : null}
       {children}
-      {typeof error === "string" && !disabled ? (
-        <Label size="sm" text={error} />
-      ) : null}
+      {errorText ? <Label size="sm" text={errorText} /> : null}
     </TextInputContainer>
   );
 }
 
 TextInput.propTypes = {
-  autocompleteList: PropTypes.arrayOf(PropTypes.string),
+  autocompleteList: PropTypes.arrayOf(PropTypes.string || PropTypes.shape({
+    value: PropTypes.string,
+    label: PropTypes.string,
+  })),
   children: PropTypes.node,
   className: PropTypes.string,
   /** A disabled input field is unusable and un-clickable, and its value will not be sent when submitting the form */
@@ -224,7 +248,7 @@ TextInput.propTypes = {
     "password",
     "search",
     "tel",
-    "text (default)",
+    "text", // default
     "textarea",
     "time",
     "url",
@@ -232,6 +256,12 @@ TextInput.propTypes = {
   ]),
   /** The value attribute specifies the initial value for an input field */
   value: PropTypes.string,
+  onBlur: PropTypes.func,
+  onFocus: PropTypes.func,
+  name: PropTypes.string,
+  rows: PropTypes.string,
+  cols: PropTypes.string,
+  warning: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
 };
 
 TextInput.defaultProps = {
@@ -251,7 +281,13 @@ TextInput.defaultProps = {
   size: null,
   title: null,
   type: "text",
-  value: null,
+  value: "",
+  onBlur: null,
+  onFocus: null,
+  name: "",
+  rows: "",
+  cols: "",
+  warning: "",
 };
 
 export { TextInput as default };
