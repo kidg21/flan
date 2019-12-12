@@ -36,6 +36,9 @@ function InputBlock({
   selectOptions,
   text,
   textInputs,
+  onBlur,
+  onFocus,
+  warning,
 }) {
   const [state, setState] = useState({
     input: textInputs.reduce((inputMap, input) => {
@@ -72,19 +75,23 @@ function InputBlock({
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let inputTextColor;
-  let buttonColor;
+  let errorText;
   if (error && !isDisabled) {
     inputTextColor = "alert";
-    buttonColor = "alert";
+    errorText = typeof error === "string" ? error : "";
+  } else if (warning && !isDisabled) {
+    inputTextColor = "warning";
+    errorText = typeof warning === "string" ? warning : "";
   }
   const inputElements = textInputs.map((input) => {
     return (
       <TextInput
         disabled={isDisabled}
         error={!!error}
+        warning={!!warning}
         key={input.id}
         id={input.id}
-        name={input.id}
+        name={input.name || input.id}
         onChange={handleChange}
         pattern={input.pattern}
         placeholder={input.placeholder}
@@ -92,6 +99,8 @@ function InputBlock({
         title={input.title}
         type={input.type}
         value={state.input[input.id]}
+        onBlur={onBlur}
+        onFocus={onFocus}
       />
     );
   });
@@ -157,7 +166,7 @@ function InputBlock({
         label={button.label}
         type={button.type}
         onClick={button.onClick}
-        color={buttonColor || button.color}
+        color={inputTextColor || button.color}
         disabled={isDisabled || button.disabled}
       />
     );
@@ -181,7 +190,6 @@ function InputBlock({
         className={className}
         columns="1"
         disabled={isDisabled}
-        error={error}
         gap="tiny"
         id={id}
         inputTextColor={inputTextColor}
@@ -189,12 +197,10 @@ function InputBlock({
         prefix={prefix}
         text={text}
       >
-        {label ? <Label size="sm" weight="bold" isRequired={isRequired} text={label} /> : null}
+        {label ? <Label weight="bold" isRequired={isRequired} text={label} /> : null}
         {inputContainer}
         {helpText ? <Label size="sm" text={helpText} /> : null}
-        {typeof error === "string" && !isDisabled ? (
-          <Label size="sm" text={error} />
-        ) : null}
+        {errorText ? <Label size="sm" text={errorText} /> : null}
       </TextInputContainer>
     </DisabledContext.Provider>
   );
@@ -211,6 +217,7 @@ InputBlock.propTypes = {
   className: PropTypes.string,
   disabled: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  warning: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   helpText: PropTypes.string,
   icon: PropTypes.string,
   id: PropTypes.string,
@@ -232,7 +239,9 @@ InputBlock.propTypes = {
     title: PropTypes.string,
     value: PropTypes.string,
     readonly: PropTypes.bool,
-  })).isRequired,
+  })),
+  onBlur: PropTypes.func,
+  onFocus: PropTypes.func,
 };
 InputBlock.defaultProps = {
   button: null,
@@ -249,6 +258,10 @@ InputBlock.defaultProps = {
   prefix: false,
   selectOptions: null,
   text: null,
+  textInputs: [],
+  onBlur: null,
+  onFocus: null,
+  warning: false,
 };
 
 export { InputBlock as default };

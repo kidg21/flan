@@ -77,6 +77,7 @@ function Form({
   novalidate,
   subtitle,
   title,
+  onSubmit,
 }) {
   // 1-3 colums with custom override
   let setColumns;
@@ -87,7 +88,7 @@ function Form({
     setColumns = columns;
   }
   return (
-    <FormWrapper action={action} method={method} novalidate={novalidate}>
+    <FormWrapper action={action} method={method} novalidate={novalidate} onSubmit={onSubmit}>
       {title || subtitle || description ? (
         <FormHeader gap="tiny">
           {title ? <Title text={title} /> : null}
