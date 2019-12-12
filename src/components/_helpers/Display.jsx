@@ -1,7 +1,7 @@
 import React from "react";
 import Title, { Description } from "base/Typography";
 import Bar from "blocks/Bar";
-import Card from "layout/Card";
+import Card, { CardSection } from "layout/Card";
 import Grid from "layout/Grid";
 import Icon from "atoms/Icon";
 import Command from "atoms/Command";
@@ -30,27 +30,29 @@ function IconGrid({ data }) {
       // TODO: Add background props to Card
       // type={item.background}
     >
-      <Bar
-        contentAlign="center"
-        left={
-          <Icon
-            icon={item.icon}
-            type={item.type}
-            size={item.size || "2x"}
-            fixedWidth={true}
-            spin={item.spin}
-            pulse={item.pulse}
-          />
-        }
-        leftWidth="min-content"
-        center={
-          <>
-            <Title text={item.name || item.icon} size="lg" select="all" />
-            {/* <Description text={item.desc} /> */}
-          </>
-        }
-        centerAlign="left"
-      />
+      <CardSection>
+        <Bar
+          contentAlign="center"
+          left={
+            <Icon
+              icon={item.icon}
+              type={item.type}
+              size={item.size || "2x"}
+              fixedWidth={true}
+              spin={item.spin}
+              pulse={item.pulse}
+            />
+          }
+          leftWidth="min-content"
+          center={
+            <>
+              <Title text={item.name || item.icon} size="lg" select="all" />
+              <Description text={item.desc} />
+            </>
+          }
+          centerAlign="left"
+        />
+      </CardSection>
     </Card>
   ));
 }

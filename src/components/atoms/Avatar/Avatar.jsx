@@ -91,10 +91,10 @@ function Avatar({
 
 Avatar.propTypes = {
   /** Options: 'primary', 'secondary', 'info', 'success', 'warning', 'alert' */
-  color: PropTypes.node,
+  color: PropTypes.string,
   disabled: PropTypes.bool,
   /** Enter the name of the icon as the prop value. (ex. icon='circle' */
-  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  icon: PropTypes.string,
   id: PropTypes.string,
   label: PropTypes.string,
 };

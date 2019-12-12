@@ -57,7 +57,7 @@ function Badge({
       badgeLeft={badgeLeft}
       badgeBottom={badgeBottom}
     >
-      <Tag label={label} type={type} icon={icon} />
+      <Tag label={label} type={type || "alert"} icon={icon} />
     </BadgeContainer>
   );
 }
@@ -80,8 +80,8 @@ Badge.defaultProps = {
   icon: null,
   id: null,
   label: null,
-  position: "topRight",
-  type: "alert",
+  position: null,
+  type: null,
 };
 
 export { Badge as default };

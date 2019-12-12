@@ -54,19 +54,14 @@ function Label({
   children,
   htmlFor,
   isRequired,
-  // letterSpacing,
+  letterSpacing,
   size,
   text,
-  uppercase,
+  textTransform,
   weight,
 }) {
   let fontSize;
   let fontWeight;
-  let textTransform;
-  let letterSpacing;
-  if (uppercase) {
-    textTransform = "uppercase";
-  }
   switch (size && size.toLowerCase()) {
     case "sm":
       fontSize = "0.876em";
@@ -114,21 +109,21 @@ function Label({
 Label.propTypes = {
   htmlFor: PropTypes.node,
   children: PropTypes.node,
-  isRequired: PropTypes.string,
-  // letterSpacing: PropTypes.string,
+  isRequired: PropTypes.bool,
+  letterSpacing: PropTypes.string,
   size: PropTypes.string,
   text: PropTypes.string,
-  uppercase: PropTypes.bool,
+  textTransform: PropTypes.string,
   weight: PropTypes.string,
 };
 Label.defaultProps = {
   htmlFor: null,
   children: null,
-  isRequired: null,
-  // letterSpacing: null,
+  isRequired: false,
+  letterSpacing: null,
   size: null,
   text: null,
-  uppercase: false,
+  textTransform: null,
   weight: null,
 };
 

@@ -3,7 +3,7 @@ import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
-import Card from "layout/Card";
+import Card, { CardSection } from "layout/Card";
 import Label from "atoms/Label";
 import Badge from "atoms/Badge";
 
@@ -17,8 +17,10 @@ import Badge from "atoms/Badge";
   <Story name="Standard">
     <Grid columns="4">
       <Card>
-        <Badge label="1" />
-        <Label text="Badge" />
+        <CardSection>
+          <Badge label="1" />
+          <Label text="Badge" />
+        </CardSection>
       </Card>
     </Grid>
   </Story>
@@ -43,20 +45,28 @@ A count can display up to a 4-character integer.
   <Story name="Counts">
     <Grid columns="4">
       <Card>
-        <Badge label="1" />
-        <Label text="1-Digit" />
+        <CardSection>
+          <Badge label="1" />
+          <Label text="1-Digit" />
+        </CardSection>
       </Card>
       <Card>
-        <Badge label="21" />
-        <Label text="2-Digit" />
+        <CardSection>
+          <Badge label="21" />
+          <Label text="2-Digit" />
+        </CardSection>
       </Card>
       <Card>
-        <Badge label="321" />
-        <Label text="3-Digit" />
+        <CardSection>
+          <Badge label="321" />
+          <Label text="3-Digit" />
+        </CardSection>
       </Card>
       <Card>
-        <Badge label="4321" />
-        <Label text="4-Digit" />
+        <CardSection>
+          <Badge label="4321" />
+          <Label text="4-Digit" />
+        </CardSection>
       </Card>
     </Grid>
   </Story>
@@ -70,20 +80,28 @@ If a count has a maximum limit, use a label to indicate a count that exceeds thi
   <Story name="Max Count">
     <Grid columns="4">
       <Card>
-        <Badge label="9+" />
-        <Label text="Max 10" />
+        <CardSection>
+          <Badge label="9+" />
+          <Label text="Max 10" />
+        </CardSection>
       </Card>
       <Card>
-        <Badge label="99+" />
-        <Label text="Max 100" />
+        <CardSection>
+          <Badge label="99+" />
+          <Label text="Max 100" />
+        </CardSection>
       </Card>
       <Card>
-        <Badge label="999+" />
-        <Label text="Max 1000" />
+        <CardSection>
+          <Badge label="999+" />
+          <Label text="Max 1000" />
+        </CardSection>
       </Card>
       <Card>
-        <Badge label="9999+" />
-        <Label text="Max 10k" />
+        <CardSection>
+          <Badge label="9999+" />
+          <Label text="Max 10k" />
+        </CardSection>
       </Card>
     </Grid>
   </Story>
@@ -97,20 +115,28 @@ Use a Label along with the 'type' prop to display status information.
   <Story name="Status">
     <Grid columns="4">
       <Card>
-        <Badge label="Info" type="info" />
-        <Label text="Info" />
+        <CardSection>
+          <Badge label="Info" type="info" />
+          <Label text="Info" />
+        </CardSection>
       </Card>
       <Card>
-        <Badge label="Success" type="success" />
-        <Label text="Success" />
+        <CardSection>
+          <Badge label="Success" type="success" />
+          <Label text="Success" />
+        </CardSection>
       </Card>
       <Card>
-        <Badge label="Warning" type="warning" />
-        <Label text="Warning" />
+        <CardSection>
+          <Badge label="Warning" type="warning" />
+          <Label text="Warning" />
+        </CardSection>
       </Card>
       <Card>
-        <Badge label="Alert" type="alert" />
-        <Label text="Alert" />
+        <CardSection>
+          <Badge label="Alert" type="alert" />
+          <Label text="Alert" />
+        </CardSection>
       </Card>
     </Grid>
   </Story>
@@ -124,20 +150,28 @@ A Badge can be positioned on any corner of the element that is applied to.
   <Story name="Position">
     <Grid columns="4">
       <Card>
-        <Badge label="1" position="topLeft" />
-        <Label text="Top-Left" />
+        <CardSection>
+          <Badge label="1" position="topLeft" />
+          <Label text="Top-Left" />
+        </CardSection>
       </Card>
       <Card>
-        <Badge label="1" position="bottomLeft" />
-        <Label text="Bottom-Left" />
+        <CardSection>
+          <Badge label="1" position="bottomLeft" />
+          <Label text="Bottom-Left" />
+        </CardSection>
       </Card>
       <Card>
-        <Badge label="1" position="topRight" />
-        <Label text="Top-Right" />
+        <CardSection>
+          <Badge label="1" position="topRight" />
+          <Label text="Top-Right" />
+        </CardSection>
       </Card>
       <Card>
-        <Badge label="1" position="bottomRight" />
-        <Label text="Bottom-Right" />
+        <CardSection>
+          <Badge label="1" position="bottomRight" />
+          <Label text="Bottom-Right" />
+        </CardSection>
       </Card>
     </Grid>
   </Story>

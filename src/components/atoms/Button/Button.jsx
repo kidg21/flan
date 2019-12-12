@@ -18,42 +18,42 @@ const StyledButton = styled.button`
   display: flex;
   flex: auto;
   flex-direction: column;
-  width: ${props => {
+  width: ${(props) => {
     return props.fullWidth ? "100%" : "auto";
   }};
   height: 100%;
-  padding: ${props => {
+  padding: ${(props) => {
     return props.buttonPadding || "0.5rem 0.7rem";
   }};
   justify-content: center;
   align-items: center;
-  color: ${props => {
+  color: ${(props) => {
     return props.theme.palette[props.fontColor] || props.theme.text.primary;
   }};
-  background-color: ${props => {
+  background-color: ${(props) => {
     return (
       props.theme.palette[props.backgroundColor] ||
       props.theme.background.default
     );
   }};
-  border: ${props => {
+  border: ${(props) => {
     return props.border || "1px solid";
   }};
-  border-radius: ${props => {
+  border-radius: ${(props) => {
     return props.borderRadius || "4px";
   }};
-  font-size: ${props => {
+  font-size: ${(props) => {
     return props.labelSize || "inherit";
   }};
-  font-weight: ${props => {
+  font-weight: ${(props) => {
     return props.fontWeight || "400";
   }};
   overflow: hidden;
   cursor: pointer;
-  border-bottom: ${props => {
+  border-bottom: ${(props) => {
     return props.borderBottom || "";
   }};
-  border-bottom-color: ${props => {
+  border-bottom-color: ${(props) => {
     return props.theme.palette[props.underlineColor];
   }};
   transition: all 0.15s ease;
@@ -61,12 +61,12 @@ const StyledButton = styled.button`
   &:focus,
   &:hover {
     ${Darken};
-    border-bottom: ${props => {
-      return props.borderBottom || "";
-    }};
-    border-bottom-color: ${props => {
-      return props.theme.palette[props.underlineColor];
-    }};
+    border-bottom: ${(props) => {
+    return props.borderBottom || "";
+  }};
+    border-bottom-color: ${(props) => {
+    return props.theme.palette[props.underlineColor];
+  }};
   }
 
   &:empty {
@@ -122,7 +122,7 @@ function Button({
   label,
   onClick,
   type,
-  underlineColor
+  underlineColor,
 }) {
   let backgroundColor;
   let borderBottom;
@@ -232,7 +232,7 @@ Button.propTypes = {
     "alert",
     "info",
     "primary",
-    "secondary"
+    "secondary",
   ]),
   disabled: PropTypes.bool,
   fullWidth: PropTypes.bool,
@@ -240,7 +240,8 @@ Button.propTypes = {
   id: PropTypes.string,
   label: PropTypes.string,
   onClick: PropTypes.func,
-  type: PropTypes.oneOf(["underlined", "inline", "solid"])
+  type: PropTypes.oneOf(["underlined", "inline", "solid"]),
+  underlineColor: PropTypes.string,
 };
 
 Button.defaultProps = {
@@ -253,7 +254,8 @@ Button.defaultProps = {
   id: null,
   label: null,
   onClick: null,
-  type: null
+  type: null,
+  underlineColor: null,
 };
 
 export { Button as default };
