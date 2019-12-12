@@ -2,7 +2,7 @@ image: node:8.11.3
 
 pipelines:
   branches:
-    feature/pipelines/automatedeployment:
+    master:
       - step:
           name: Build
           caches:
@@ -18,14 +18,14 @@ pipelines:
           artifacts:
             - Bundles/**
       - step:
-          name: Commit Bundle File & Version Tag
+          name: Push Bundle File & Version Tag
           script:
             # Get version number from package.json
             - declare -x VERSION=$(node -p -e "require('./package.json').version")
             - echo -e "Pipeline Build - ${BITBUCKET_BUILD_NUMBER}\nPackage Version - ${VERSION}\nCommit Hash - ${BITBUCKET_COMMIT}" > changes.txt
             - git add changes.txt
             - git add Bundles/lbreactcore.js
-            - git commit -m "[skip ci] Update repo with latest bundle"
+            - git commit -m "[skip ci] Updating changes.txt & latest bundle in lb-react-core repo"
             - git push origin $BITBUCKET_BRANCH
             # Create/Push tag to commit
             # if tag already exists, it does not retag
