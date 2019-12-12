@@ -146,7 +146,7 @@ function Checkbox({
         onBlur={onBlur}
         onFocus={onFocus}
       />
-      <Label htmlFor={id} isRequired={isRequired} text={label} />
+      {label ? <Label htmlFor={id} isRequired={isRequired} text={label} /> : null}
     </CheckboxContainer>
   );
 }
