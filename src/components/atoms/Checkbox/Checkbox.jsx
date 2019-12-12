@@ -57,21 +57,19 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
     background-color: ${(props) => {
     return (
       props.theme.palette[props.fillColorChecked] ||
-      props.theme.palette.secondaryLight
+        props.theme.palette.secondaryLight
     );
   }};
     border-color: ${(props) => {
     return (
-      props.theme.palette[props.borderColor] ||
-      props.theme.palette.secondary
+      props.theme.palette[props.borderColor] || props.theme.palette.secondary
     );
   }};
   }
   &:focus {
     outline-color: ${(props) => {
     return (
-      props.theme.palette[props.outlineColor] ||
-      props.theme.palette.secondary
+      props.theme.palette[props.outlineColor] || props.theme.palette.secondary
     );
   }};
   }
@@ -84,7 +82,17 @@ const InputGroup = styled(Grid)`
 `;
 
 function Checkbox({
-  align, checked, error, disabled, id, label, onChange, isRequired, onFocus, onBlur, warning,
+  align,
+  checked,
+  error,
+  disabled,
+  id,
+  label,
+  onChange,
+  isRequired,
+  onFocus,
+  onBlur,
+  warning,
 }) {
   let inputTextColor;
   let fillColor;
@@ -146,7 +154,7 @@ function Checkbox({
         onBlur={onBlur}
         onFocus={onFocus}
       />
-      <Label htmlFor={id} isRequired={isRequired} text={label} />
+      {label ? <Label htmlFor={id} text={label} /> : null}
     </CheckboxContainer>
   );
 }
@@ -188,7 +196,9 @@ function CheckboxGroup({
       inputTextColor={inputTextColor}
       id={id}
     >
-      {label ? <Label weight="bold" isRequired={isRequired} text={label} /> : null}
+      {label ? (
+        <Label weight="bold" isRequired={isRequired} text={label} />
+      ) : null}
       {helpText ? <Label size="sm" text={helpText} /> : null}
       <InputGroup columns={columns}>
         {children ||
