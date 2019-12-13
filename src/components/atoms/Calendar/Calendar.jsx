@@ -1,7 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -30,6 +29,11 @@ function Calendar({
   type,
   value,
   onChange,
+  warning,
+  onBlur,
+  onFocus,
+  date,
+  time,
 }) {
   let inputFillColor;
   let placeholderColor;
@@ -37,27 +41,54 @@ function Calendar({
   let inputTextColor;
   let inputBorderColorHover;
   let inputSelectColor;
+  let errorText;
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
     inputTextColor = "disabled";
     inputFillColor = "disabled";
     inputBorderColor = "grey5";
-  }
-
-  if (error && !isDisabled) {
+  } else if (error) {
     inputTextColor = "alert";
     inputBorderColor = "alert";
     inputBorderColorHover = "alert";
     inputSelectColor = "grey4";
+    errorText = error;
+  } else if (warning) {
+    inputTextColor = "warning";
+    inputBorderColor = "warning";
+    inputBorderColorHover = "warning";
+    inputSelectColor = "grey4";
+    errorText = warning;
   }
+
+  // datetime might have different props to use
+  // if date/time prop is not passed, uses value/onChange/etc props
+  const inputProps = {
+    date: {
+      value,
+      onChange,
+      onFocus,
+      onBlur,
+      ...date,
+    },
+    time: {
+      value,
+      onChange,
+      onFocus,
+      onBlur,
+      ...time,
+    },
+  };
   const inputTypes =
     type.toLowerCase() === "datetime" ? ["date", "time"] : [type.toLowerCase()];
   const inputElements = inputTypes.map((currType) => {
     return (
       <TextInput
+        key={`${currType}-${id}`}
         disabled={isDisabled}
         error={!!error}
+        warning={!!warning}
         id={id}
         placeholderColor={placeholderColor}
         inputBorderColor={inputBorderColor}
@@ -67,10 +98,12 @@ function Calendar({
         min={min}
         max={max}
         name={id}
-        onChange={onChange}
+        onChange={inputProps[currType].onChange}
         pattern={pattern}
         type={currType}
-        value={value}
+        value={inputProps[currType].value}
+        onBlur={inputProps[currType].onBlur}
+        onFocus={inputProps[currType].onFocus}
       />
     );
   });
@@ -79,6 +112,7 @@ function Calendar({
   if (inputTypes.length > 1) {
     inputContainer = <Grid columns="2">{inputElements}</Grid>;
   }
+
   return (
     <CalendarContainer
       className={className}
@@ -90,10 +124,10 @@ function Calendar({
       inputTextColor={inputTextColor}
       isRequired={isRequired}
     >
-      {label ? <Label size="sm" weight="bold" isRequired={isRequired} text={label} /> : null}
+      {label ? <Label weight="bold" isRequired={isRequired} text={label} /> : null}
       {inputContainer}
       {helpText ? <Label size="sm" text={helpText} /> : null}
-      {error && !isDisabled ? <Label size="sm" text={error} /> : null}
+      {errorText ? <Label size="sm" text={errorText} /> : null}
     </CalendarContainer>
   );
 }
@@ -102,6 +136,7 @@ Calendar.propTypes = {
   className: PropTypes.string,
   disabled: PropTypes.bool,
   error: PropTypes.string,
+  warning: PropTypes.string,
   helpText: PropTypes.string,
   id: PropTypes.string,
   label: PropTypes.string,
@@ -111,9 +146,13 @@ Calendar.propTypes = {
   /** Sets or returns the value of the min attribute of the date field */
   min: PropTypes.string,
   onChange: PropTypes.func,
+  onBlur: PropTypes.func,
+  onFocus: PropTypes.func,
   pattern: PropTypes.string,
   type: PropTypes.oneOf(["date", "time", "datetime"]),
   value: PropTypes.string,
+  date: PropTypes.shape({}),
+  time: PropTypes.shape({}),
 };
 
 Calendar.defaultProps = {
@@ -130,6 +169,11 @@ Calendar.defaultProps = {
   pattern: null,
   type: "date",
   value: null,
+  onBlur: () => {},
+  onFocus: () => {},
+  warning: null,
+  date: {},
+  time: {},
 };
 
 export default Calendar;

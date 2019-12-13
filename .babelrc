@@ -27,25 +27,25 @@
     [
       "module-resolver",
       {
-        // "root": ["ss-styled-components/src"],
+        // "root": ["lb-react-core/src"],
         "alias": {
-          "Variables": "ss-styled-components/src/components/base/Variables/Variables.jsx",
-          "States": "ss-styled-components/src/components/base/States/States",
-          "GlobalStyles": "ss-styled-components/src/components/base/GlobalStyles/GlobalStyles.jsx",
-          "css": "ss-styled-components/src/css",
-          "fonts": "ss-styled-components/src/fonts",
-          "icons": "ss-styled-components/src/icons",
-          "images": "ss-styled-components/src/images",
-          "helpers": "ss-styled-components/src/components/_helpers",
-          "attributes": "ss-styled-components/src/attributes",
-          "atoms": "ss-styled-components/src/components/atoms",
-          "base": "ss-styled-components/src/components/base",
-          "blocks": "ss-styled-components/src/components/blocks",
-          "elements": "ss-styled-components/src/components/elements",
-          "layout": "ss-styled-components/src/components/layout",
-          "templates": "ss-styled-components/src/components/templates",
-          "utils": "ss-styled-components/src/components/utils",
-          "work": "ss-styled-components/src/components/work"
+          "Variables": "lb-react-core/src/components/base/Variables/Variables.jsx",
+          "States": "lb-react-core/src/components/base/States/States",
+          "GlobalStyles": "lb-react-core/src/components/base/GlobalStyles/GlobalStyles.jsx",
+          "css": "lb-react-core/src/css",
+          "fonts": "lb-react-core/src/fonts",
+          "icons": "lb-react-core/src/icons",
+          "images": "lb-react-core/src/images",
+          "helpers": "lb-react-core/src/components/_helpers",
+          "attributes": "lb-react-core/src/attributes",
+          "atoms": "lb-react-core/src/components/atoms",
+          "base": "lb-react-core/src/components/base",
+          "blocks": "lb-react-core/src/components/blocks",
+          "elements": "lb-react-core/src/components/elements",
+          "layout": "lb-react-core/src/components/layout",
+          "templates": "lb-react-core/src/components/templates",
+          "utils": "lb-react-core/src/components/utils",
+          "work": "lb-react-core/src/components/work",
         }
       }
     ]

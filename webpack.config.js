@@ -9,7 +9,7 @@ const buildOutputPath = "Bundles/";
 const build = {
   name: "buildScript",
   entry: {
-    StyledComponents: "./styled-components.js",
+    lbreactcore: "./component-index.js",
   },
   output: {
     // Output to the "Bundles" folder
@@ -17,8 +17,8 @@ const build = {
     // Output 1 file per entry
     filename: "[name].js",
     publicPath: "/",
-    // library: ["Library", "[name]"],
-    // libraryTarget: "umd",
+    library: "",
+    libraryTarget: "umd",
   },
   module: {
     rules: [
@@ -84,6 +84,20 @@ const build = {
     ],
   },
   plugins: [StringReplacePlugin],
+  externals: {
+    "react": {
+      commonjs: "react",
+      commonjs2: "react",
+      amd: "React",
+      root: "React",
+    },
+    "react-dom": {
+      commonjs: "react-dom",
+      commonjs2: "react-dom",
+      amd: "ReactDOM",
+      root: "ReactDOM",
+    },
+  },
 };
 
 module.exports = [build];
