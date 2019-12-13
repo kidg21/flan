@@ -42,6 +42,9 @@ const PanelSection = styled.section`
   flex: ${(props) => {
     return props.body ? "auto" : "none";
   }};
+  height: ${(props) => {
+    return props.body ? "inherit" : "";
+  }};
   padding: ${(props) => {
     return props.body ? "1rem" : "";
   }};
