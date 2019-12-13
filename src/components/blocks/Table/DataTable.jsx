@@ -6,23 +6,48 @@
 /* eslint-disable linebreak-style */
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { MultiGrid, AutoSizer, CellMeasurer, CellMeasurerCache, InfiniteLoader } from "react-virtualized";
+import {
+  MultiGrid,
+  AutoSizer,
+  CellMeasurer,
+  CellMeasurerCache,
+  InfiniteLoader,
+} from "react-virtualized";
 import styled from "styled-components";
 
 export const MultiGridWrapper = styled.div`
-  cursor: default;
-  margin: 0.5em;
-  overflow: hidden;
-  font-size: 12px;
-  border-radius: 5px;
-  border-collapse: collapse;
-  flex: 1 1 auto;
+  width: ${(props) => {
+    return props.tableWidth || "inherit";
+  }};
+  height: ${(props) => {
+    return props.tableHeight || "inherit";
+  }};
+  /* background-color: red; */
+  border: 1px solid grey;
+  .ReactVirtualized__Grid {
+    ::-webkit-scrollbar {
+      height: 0.5em;
+      /* display: none; */
+    }
+    ::-webkit-scrollbar-track {
+      /* height: 0.25em; */
+      /* box-shadow: inset 0 0 6px hsla((34, 5%, 36%), 0.5); */
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: orange;
+      border-radius: 5px;
+    }
+  }
 `;
 
 export const CellWrapper = styled.div`
   padding: 5px;
-  color: ${(props) => { return props.theme.text.primary; }};
-  font-weight: ${(props) => { return props.isHeader ? "600" : ""; }};
+  color: ${(props) => {
+    return props.theme.text.primary;
+  }};
+  font-weight: ${(props) => {
+    return props.isHeader ? "600" : "";
+  }};
   border-bottom: 1px solid #eee;
   background-color: ${(props) => {
     if (props.isHighlighted) {
@@ -53,11 +78,8 @@ class DataTable extends Component {
   constructor(props) {
     super(props);
     const {
-      rowHeight,
-      columnWidth,
-      minColWidth,
-      minRowHeight,
-    } = this.props;
+ rowHeight, columnWidth, minColWidth, minRowHeight 
+} = this.props;
 
     if (rowHeight && columnWidth) {
       // if both provided, no need to use CellMeasurer
@@ -103,7 +125,11 @@ class DataTable extends Component {
 
   _loadMissingRowsInView(currRows) {
     let missingRow = this.rowVisibleStartIndex;
-    for (let i = missingRow; (i < this.rowVisibleStopIndex) && i < currRows.length; i++) {
+    for (
+      let i = missingRow;
+      i < this.rowVisibleStopIndex && i < currRows.length;
+      i++
+    ) {
       if (!currRows[i]) {
         missingRow = i;
         this._loadMoreRows(missingRow);
@@ -118,12 +144,8 @@ class DataTable extends Component {
   }
 
   _cellRenderer({
-    columnIndex,
-    rowIndex,
-    key,
-    parent,
-    style,
-  }) {
+ columnIndex, rowIndex, key, parent, style 
+}) {
     const {
       rows,
       headers,
@@ -147,12 +169,20 @@ class DataTable extends Component {
       };
       cellProps.onMouseOver = (e) => {
         if (onHeaderMouseOver) {
-          onHeaderMouseOver(e, { rowIndex: rowIndex - 1, columnIndex: columnIndex, row: row });
+          onHeaderMouseOver(e, {
+            rowIndex: rowIndex - 1,
+            columnIndex: columnIndex,
+            row: row,
+          });
         }
       };
       cellProps.onMouseOut = (e) => {
         if (onHeaderMouseOut) {
-          onHeaderMouseOut(e, { rowIndex: rowIndex - 1, columnIndex: columnIndex, row: row });
+          onHeaderMouseOut(e, {
+            rowIndex: rowIndex - 1,
+            columnIndex: columnIndex,
+            row: row,
+          });
         }
       };
       cellProps.isHeader = true;
@@ -161,24 +191,44 @@ class DataTable extends Component {
       // regular cell from a row that's ready to render
       cellData = row[headers[columnIndex].id];
       if (selectedCell) {
-        cellProps.isSelected = _containedInRowCol(selectedCell, rowIndex, columnIndex);
+        cellProps.isSelected = _containedInRowCol(
+          selectedCell,
+          rowIndex,
+          columnIndex,
+        );
       }
       if (!cellProps.isSelected && highlightedCell) {
-        cellProps.isHighlighted = _containedInRowCol(highlightedCell, rowIndex, columnIndex);
+        cellProps.isHighlighted = _containedInRowCol(
+          highlightedCell,
+          rowIndex,
+          columnIndex,
+        );
       }
       cellProps.onClick = (e) => {
         if (onCellClick) {
-          onCellClick(e, { rowIndex: rowIndex - 1, columnIndex: columnIndex, row: row });
+          onCellClick(e, {
+            rowIndex: rowIndex - 1,
+            columnIndex: columnIndex,
+            row: row,
+          });
         }
       };
       cellProps.onMouseOver = (e) => {
         if (onCellMouseOver) {
-          onCellMouseOver(e, { rowIndex: rowIndex - 1, columnIndex: columnIndex, row: row });
+          onCellMouseOver(e, {
+            rowIndex: rowIndex - 1,
+            columnIndex: columnIndex,
+            row: row,
+          });
         }
       };
       cellProps.onMouseOut = (e) => {
         if (onCellMouseOut) {
-          onCellMouseOut(e, { rowIndex: rowIndex - 1, columnIndex: columnIndex, row: row });
+          onCellMouseOut(e, {
+            rowIndex: rowIndex - 1,
+            columnIndex: columnIndex,
+            row: row,
+          });
         }
       };
     }
@@ -201,7 +251,8 @@ class DataTable extends Component {
     return (
       <CellWrapper style={style} {...cellProps}>
         {cellData}
-      </CellWrapper>);
+      </CellWrapper>
+    );
   }
 
   _onSectionRendered({ rowStartIndex, rowStopIndex }, onRowsRendered) {
@@ -212,19 +263,21 @@ class DataTable extends Component {
 
   _infiniteLoaderChildren({ onRowsRendered, registerChild }) {
     const {
-      focusedRow,
-      rows,
-      headers,
-      scrollTopChanged,
-      scrollTop,
-      listId,
-      sortDirection,
-      sortColumnId,
-      scrollToAlignment,
-      rowHeight,
       columnWidth,
-      minRowHeight,
+      focusedRow,
+      headers,
+      listId,
       minColWidth,
+      minRowHeight,
+      rowHeight,
+      rows,
+      scrollToAlignment,
+      scrollTop,
+      scrollTopChanged,
+      sortColumnId,
+      sortDirection,
+      tableHeight,
+      tableWidth,
     } = this.props;
 
     let scrollToRow;
@@ -250,9 +303,8 @@ class DataTable extends Component {
       rowHeightToUse = this.cache.rowHeight;
       columnWidthToUse = columnWidth;
     }
-
     return (
-      <MultiGridWrapper>
+      <MultiGridWrapper tableHeight={tableHeight} tableWidth={tableWidth}>
         <AutoSizer>
           {({ width, height }) => {
             return (
@@ -260,7 +312,9 @@ class DataTable extends Component {
                 headers={headers}
                 sortColumnId={sortColumnId}
                 sortDirection={sortDirection}
-                onScroll={(params) => { if (scrollTopChanged) scrollTopChanged(params.scrollTop); }}
+                onScroll={(params) => {
+                  if (scrollTopChanged) scrollTopChanged(params.scrollTop);
+                }}
                 listId={listId}
                 scrollToAlignment={scrollToAlignment}
                 scrollToRow={scrollToRow} // takes precedence over scrollTop
@@ -273,7 +327,9 @@ class DataTable extends Component {
                 width={width}
                 cellRenderer={this._cellRenderer}
                 fixedRowCount={1}
-                onSectionRendered={(params) => { this._onSectionRendered(params, onRowsRendered); }} // have to pass onRowsRendered through
+                onSectionRendered={(params) => {
+                  this._onSectionRendered(params, onRowsRendered);
+                }} // have to pass onRowsRendered through
                 ref={registerChild}
               />
             );
@@ -284,10 +340,7 @@ class DataTable extends Component {
   }
 
   render() {
-    const {
-      rows,
-      listId,
-    } = this.props;
+    const { rows, listId } = this.props;
     return (
       <InfiniteLoader
         listId={listId}
@@ -295,7 +348,9 @@ class DataTable extends Component {
           // index given excludes the header (fixedRows)
           return !!rows[index];
         }}
-        loadMoreRows={({ startIndex }) => { this._loadMoreRows(startIndex); }}
+        loadMoreRows={({ startIndex }) => {
+          this._loadMoreRows(startIndex);
+        }}
         rowCount={rows.length + 1}
         threshold={0}
       >
@@ -305,57 +360,60 @@ class DataTable extends Component {
   }
 }
 
-DataTable.defaultProps = {
-  focusedRow: null,
-  scrollTop: null,
-  selectedCell: null,
-  highlightedCell: null,
-  sortColumnId: "",
-  sortDirection: true,
-  scrollTopChanged: null,
-  scrollToAlignment: "start",
-  onCellClick: null,
-  onHeaderClick: null,
-  onCellMouseOver: null,
-  onCellMouseOut: null,
-  onHeaderMouseOver: null,
-  onHeaderMouseOut: null,
-  rowHeight: null,
-  columnWidth: null,
-  minColWidth: 120,
-  minRowHeight: 40,
-};
-
 DataTable.propTypes = {
-  listId: PropTypes.string.isRequired,
+  columnWidth: PropTypes.oneOf(PropTypes.number, PropTypes.func),
   focusedRow: PropTypes.number,
-  rows: PropTypes.arrayOf(PropTypes.shape).isRequired,
-  headers: PropTypes.arrayOf(PropTypes.shape).isRequired,
-  selectedCell: PropTypes.shape({
+  highlightedCell: PropTypes.shape({
     columnIndex: PropTypes.number,
     rowIndex: PropTypes.number,
   }),
-  highlightedCell: PropTypes.shape({
+  headers: PropTypes.arrayOf(PropTypes.shape).isRequired,
+  listId: PropTypes.string.isRequired,
+  loadRows: PropTypes.func.isRequired,
+  minColWidth: PropTypes.number,
+  minRowHeight: PropTypes.number,
+  onCellClick: PropTypes.func,
+  onCellMouseOut: PropTypes.func,
+  rows: PropTypes.arrayOf(PropTypes.shape).isRequired,
+  onCellMouseOver: PropTypes.func,
+  onHeaderClick: PropTypes.func,
+  onHeaderMouseOut: PropTypes.func,
+  onHeaderMouseOver: PropTypes.func,
+  rowHeight: PropTypes.oneOf(PropTypes.number, PropTypes.func),
+  scrollToAlignment: PropTypes.string,
+  scrollTop: PropTypes.number,
+  scrollTopChanged: PropTypes.func,
+  selectedCell: PropTypes.shape({
     columnIndex: PropTypes.number,
     rowIndex: PropTypes.number,
   }),
   sortColumnId: PropTypes.string,
   sortDirection: PropTypes.bool,
-  scrollTop: PropTypes.number,
-  scrollTopChanged: PropTypes.func,
-  scrollToAlignment: PropTypes.string,
-  onHeaderClick: PropTypes.func,
-  onHeaderMouseOver: PropTypes.func,
-  onHeaderMouseOut: PropTypes.func,
-  onCellClick: PropTypes.func,
-  onCellMouseOut: PropTypes.func,
-  onCellMouseOver: PropTypes.func,
-  loadRows: PropTypes.func.isRequired,
-  rowHeight: PropTypes.oneOf(PropTypes.number, PropTypes.func),
-  columnWidth: PropTypes.oneOf(PropTypes.number, PropTypes.func),
-  minRowHeight: PropTypes.number,
-  minColWidth: PropTypes.number,
+  tableHeight: PropTypes.string,
+  tableWidth: PropTypes.string,
 };
 
+DataTable.defaultProps = {
+  columnWidth: null,
+  focusedRow: null,
+  highlightedCell: null,
+  minColWidth: 120,
+  minRowHeight: 40,
+  onCellClick: null,
+  onCellMouseOut: null,
+  onCellMouseOver: null,
+  onHeaderClick: null,
+  onHeaderMouseOut: null,
+  onHeaderMouseOver: null,
+  rowHeight: null,
+  scrollToAlignment: "start",
+  scrollTop: null,
+  scrollTopChanged: null,
+  selectedCell: null,
+  sortColumnId: "",
+  sortDirection: true,
+  tableHeight: null,
+  tableWidth: null,
+};
 
 export default DataTable;

@@ -8,8 +8,10 @@ import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
+import Layout from "layout/Layout";
+import Panel, { PanelSection } from "layout/Panel";
 import Icon from "atoms/Icon";
-import DataTable from "./DataTable";
+import DataTable from "blocks/Table";
 
 // Only columns specified here will be displayed
 const headers = [
@@ -362,51 +364,69 @@ const data = [
 ];
 
 storiesOf("Blocks|Table", module)
-  .addDecorator(Padding)
-  .addDecorator(withInfo)
-  .add("Data Table", () => {
-    return React.createElement(() => {
-      const [highlightedCell, setHighlightCell] = useState(null);
-      const [selectedCell, setSelectedCell] = useState(null);
-      for (let i = 0; i < data.length; i++) {
-        data[i].options = React.createElement(
-          Icon,
-          {
-            icon: "edit",
-            type: "info",
-            onClick: (e) => {
-              e.stopPropagation();
-              alert(`data entry edit ${i} clicked`);
-            },
-          },
-          null,
-        );
-      }
-
-      const onCellClick = (e, { rowIndex }) => {
-        setSelectedCell({ rowIndex });
-      };
-
-      const onHeaderClick = (e, { columnIndex }) => {
-        alert(`Header ${columnIndex}: ${headers[columnIndex].id} clicked`);
-      };
-
-      const onCellMouseOver = (e, { rowIndex }) => {
-        setHighlightCell({ rowIndex });
-      };
-
-      return (
+  // .addDecorator(Padding)
+  // .addDecorator(withInfo)
+  .add("Simple", () => {
+    return (
+      <Layout>
+        {/* <Panel> */}
+        {/* <PanelSection body> */}
         <DataTable
+          tableHeight="50vh"
+          tableWidth="50vw"
           headers={headers}
           rows={data}
           listId="foo"
-          onCellClick={onCellClick}
-          onHeaderClick={onHeaderClick}
-          onCellMouseOver={onCellMouseOver}
-          highlightedCell={highlightedCell}
-          selectedCell={selectedCell}
           columnWidth={120}
         />
-      );
-    });
+        {/* </PanelSection> */}
+        {/* </Panel> */}
+      </Layout>
+    );
   });
+// .add("Data Table", () => {
+//   return React.createElement(() => {
+//     const [highlightedCell, setHighlightCell] = useState(null);
+//     const [selectedCell, setSelectedCell] = useState(null);
+//     for (let i = 0; i < data.length; i++) {
+//       data[i].options = React.createElement(
+//         Icon,
+//         {
+//           icon: "edit",
+//           type: "info",
+//           onClick: (e) => {
+//             e.stopPropagation();
+//             alert(`data entry edit ${i} clicked`);
+//           },
+//         },
+//         null,
+//       );
+//     }
+
+//     const onCellClick = (e, { rowIndex }) => {
+//       setSelectedCell({ rowIndex });
+//     };
+
+//     const onHeaderClick = (e, { columnIndex }) => {
+//       alert(`Header ${columnIndex}: ${headers[columnIndex].id} clicked`);
+//     };
+
+//     const onCellMouseOver = (e, { rowIndex }) => {
+//       setHighlightCell({ rowIndex });
+//     };
+
+//     return (
+//       <DataTable
+//         headers={headers}
+//         rows={data}
+//         listId="foo"
+//         onCellClick={onCellClick}
+//         onHeaderClick={onHeaderClick}
+//         onCellMouseOver={onCellMouseOver}
+//         highlightedCell={highlightedCell}
+//         selectedCell={selectedCell}
+//         columnWidth={120}
+//       />
+//     );
+//   });
+// });
