@@ -36,7 +36,7 @@ const LinkedIcon = styled.a`
 
 const StyledIcon = styled(FontAwesomeIcon)`
   color: ${(props) => {
-    return props.theme.palette[props.color] || "inherit";
+    return props.theme.text[props.color] || "";
   }};
   border: ${(props) => {
     return props.border ? "2px solid" : "";
@@ -220,7 +220,8 @@ function Icon({
 
   if (onClick) color = "primary";
 
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) color = "disabled";
 
   const styledIcon = (
