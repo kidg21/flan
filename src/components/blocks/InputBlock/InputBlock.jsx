@@ -40,7 +40,6 @@ function InputBlock({
   onBlur,
   onFocus,
   warning,
-  autocompleteList,
 }) {
   const [state, setState] = useState({
     input: textInputs.reduce((inputMap, input) => {
@@ -103,7 +102,7 @@ function InputBlock({
         value={state.input[input.id]}
         onBlur={onBlur}
         onFocus={onFocus}
-        autocompleteList={autocompleteList}
+        autocompleteList={input.autocompleteList}
       />
     );
   });
