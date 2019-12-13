@@ -15,6 +15,9 @@ pipelines:
     master:
       - step:
           name: Codacy Coverage
+          caches:
+            # Cache node_modules folders
+            - node
           script:
             # Copy SSH key so that we can pull additional submodules
             - mkdir -p /root/.ssh
@@ -32,6 +35,9 @@ pipelines:
     test:
       - step:
           name: Codacy Coverage
+          caches:
+            # Cache node_modules folders
+            - node
           script:
            # Copy SSH key so that we can pull additional submodules
             - mkdir -p /root/.ssh
