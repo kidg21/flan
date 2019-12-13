@@ -10,9 +10,21 @@
     "compileFontAwesome": "webpack --config ./webpackConfigs/fontAwesome.config.js",
     "testBuild": "webpack --config ./webpackConfigs/testBuild.config.js",
     "build": "webpack",
-    "test": "npx cypress run",
-    "testWithCoverage": "npx cypress run && nyc report --reporter=text-lcov | codacy-coverage --token 6719784c2ae3466ba048e1b7b007c74a",
-    "pushCoverage": "nyc report --reporter=text-lcov | codacy-coverage --token 6719784c2ae3466ba048e1b7b007c74a"
+    "test": "mocha",
+    "testWithCoverage": "nyc mocha | codacy-coverage --token ca0a1dcce45a40e8bd8fe18863b5c017"
+  },
+  "nyc": {
+    "extension": [
+      ".js",
+      ".jsx"
+    ],
+    "include": [
+      "src/**/*"
+    ],
+    "exclude": [
+      "**/*.stories.js"
+    ],
+    "reporter": "text-lcov"
   },
   "repository": {
     "type": "git",
@@ -47,6 +59,7 @@
     "styled-normalize": "^8.0.6"
   },
   "devDependencies": {
+    "@babel/register": "^7.7.4",
     "@storybook/addon-a11y": "^5.2.6",
     "@storybook/addon-actions": "^5.2.6",
     "@storybook/addon-backgrounds": "^5.2.6",
@@ -61,6 +74,7 @@
     "@storybook/addons": "^5.2.6",
     "@storybook/react": "^5.2.6",
     "@storybook/theming": "^5.2.6",
+    "babel-plugin-markdown": "^0.3.0",
     "babel-plugin-styled-components": "^1.10.0",
     "babel-plugin-transform-class-properties": "6.24.1",
     "chai": "^4.2.0",
@@ -68,7 +82,9 @@
     "enzyme-adapter-react-16": "^1.15.1",
     "eslint-plugin-chai-friendly": "^0.4.1",
     "eslint-plugin-cypress": "^2.0.1",
+    "ignore-styles": "^5.0.1",
     "jsdom": "^15.2.1",
+    "mocha": "^6.2.2",
     "prettier": "^1.19.1",
     "react-storybook-addon-chapters": "^3.1.6",
     "ss-development": "git+ssh://git@bitbucket.org:DigMap/sstream-development.git",

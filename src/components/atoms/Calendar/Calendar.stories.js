@@ -3,18 +3,11 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
 import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
-import {
-  withKnobs,
-  text,
-  boolean,
-  optionsKnob as options,
-} from "@storybook/addon-knobs";
 import { Padding } from "helpers/Display";
 import Form from "layout/Form";
 import Calendar from "atoms/Calendar";
-import CalendarNotes from "./Calendar.md";
+
+const CalendarNotes = markdown.require("./Calendar.md");
 
 storiesOf("Atoms|Calendar", module)
   .addParameters({

@@ -1,21 +1,21 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
-import React, { Fragment } from "react";
+import React from "react";
+
+// import GlobalStyles from "GlobalStyles";
+import { DMPTheme } from "Variables";
+import { ThemeProvider } from "styled-components";
+
+import { expect } from "chai";
+import { mount } from "enzyme";
 
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
 
 import Button from "atoms/Button";
-import ButtonNotes from "./Button.md";
-
-import GlobalStyles from "GlobalStyles";
-import { DMPTheme } from "Variables";
-import { ThemeProvider } from "styled-components";
-
-import { storiesOf, withInfo, withKnobs, text, boolean, select, options, specs, describe, it, before, after, expect } from ".storybook/facade";
-import { mount } from "enzyme";
+// import ButtonNotes from "./Button.md";
+const ButtonNotes = markdown.require("./Button.md");
 
 storiesOf("Atoms|Button", module)
   .addParameters({
@@ -54,7 +54,7 @@ storiesOf("Atoms|Button", module)
           null,
           "Button",
         )}
-        label={text("button label", "Button Label", "Button")}
+        label={text("label", "Button Label", "Button")}
         color={options(
           "color",
           {
@@ -65,7 +65,7 @@ storiesOf("Atoms|Button", module)
             "warning": "warning",
             "alert": "alert",
           },
-          "default",
+          "primary",
           { display: "radio" },
           "Button",
         )}
@@ -80,7 +80,7 @@ storiesOf("Atoms|Button", module)
           { display: "radio" },
           "Button",
         )}
-        fullWidth={boolean("full width", false, "Button")}
+        fullWidth={boolean("fullWidth", false, "Button")}
         fill={boolean("fill", false, "Button")}
         noBorder={boolean("noBorder", false, "Button")}
         disabled={boolean("disabled", false, "Button")}
@@ -104,21 +104,17 @@ storiesOf("Atoms|Button", module)
       </Grid>
     );
 
-    setTimeout(() => {
+    specs(() => {
       let output = null;
-
-      specs(() => describe("The Button Family", () => {      
+      return describe("The Button Family", () => {
         before(() => {
           output = mount((
             <ThemeProvider theme={DMPTheme}>
-              <Fragment>
-                <GlobalStyles />
-                {story}
-              </Fragment>
+              {story}
             </ThemeProvider>
           ));
         });
-        
+
         after(() => {
           output.unmount();
         });
@@ -127,29 +123,29 @@ storiesOf("Atoms|Button", module)
           const grid = output.find("Grid");
           expect(grid.prop("columns")).to.equal("repeat(2, minmax(0, 1fr))");
         });
-  
+
         it("Can render multiple Buttons", () => {
           const buttons = output.find("button");
           expect(buttons).to.have.lengthOf(11);
         });
-  
+
         it("Accepts a \"label\" prop", () => {
           const button = output.find("button").first();
           const label = button.children();
           expect(label.text()).to.equal("Standard Primary");
         });
-  
+
         it("Can change the background color", () => {
           const button = output.find("Button").at(1);
           expect(button.prop("fontColor")).to.equal("white");
           expect(button.prop("backgroundColor")).to.equal("primary");
         });
-  
+
         it("Can change the font color", () => {
           const button = output.find("Button").at(2);
           expect(button.prop("fontColor")).to.equal("secondary");
         });
-  
+
         it("Can change font and background color", () => {
           const button = output.find("Button").at(3);
           expect(button.prop("fontColor")).to.equal("white");
@@ -199,8 +195,8 @@ storiesOf("Atoms|Button", module)
           expect(button.prop("border")).to.equal("2px solid transparent");
           expect(button.prop("fontColor")).to.equal("grey4");
         });
-      }));
-    }, 0);
+      });
+    });
 
     return story;
   });

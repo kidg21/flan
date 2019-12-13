@@ -4,8 +4,6 @@
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import { storiesOf } from "@storybook/react";
-import { checkA11y } from "@storybook/addon-a11y";
 import Card, { CardList } from "../Card/Card";
 import Panel, { PanelSection } from "../Panel/Panel";
 

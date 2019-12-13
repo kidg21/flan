@@ -1,8 +1,6 @@
-/* eslint-disable complexity */
 /* eslint-disable linebreak-style */
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import { Lighten, Darken } from "Variables";
@@ -116,7 +114,7 @@ function Button({
 }) {
   let backgroundColor;
   let borderBottom;
-  let buttonColor = buttonType[color ? color.toLowerCase() : "primary"] || "primary";
+  const buttonColor = buttonType[color ? color.toLowerCase() : "primary"] || "primary";
   let fontColor = buttonColor;
   let fontWeight = "400";
 

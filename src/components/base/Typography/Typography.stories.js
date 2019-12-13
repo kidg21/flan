@@ -2,8 +2,8 @@
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
+
+
 import Grid from "layout/Grid";
 import Title, {
   Headline,

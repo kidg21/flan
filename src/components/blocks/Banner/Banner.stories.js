@@ -3,13 +3,11 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
 import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
 import { CardList } from "layout/Card";
-import { withKnobs, boolean, select, text } from "@storybook/addon-knobs";
 import Banner from "blocks/Banner";
-import BannerNotes from "./Banner.md";
+
+const BannerNotes = markdown.require("./Banner.md");
 
 storiesOf("Blocks|Banner", module)
   .addParameters({
