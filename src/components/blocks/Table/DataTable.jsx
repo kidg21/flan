@@ -16,48 +16,80 @@ import {
 import styled from "styled-components";
 
 export const MultiGridWrapper = styled.div`
-  width: ${(props) => {
-    return props.tableWidth || "inherit";
+  width: inherit;
+  height: inherit;
+  border: 1px solid;
+  border-color: ${(props) => {
+    return props.theme.divider;
   }};
-  height: ${(props) => {
-    return props.tableHeight || "inherit";
-  }};
-  /* background-color: red; */
-  border: 1px solid grey;
+  overflow: hidden;
   .ReactVirtualized__Grid {
     ::-webkit-scrollbar {
-      height: 0.5em;
-      /* display: none; */
+      height: 0.75em;
     }
     ::-webkit-scrollbar-track {
-      /* height: 0.25em; */
-      /* box-shadow: inset 0 0 6px hsla((34, 5%, 36%), 0.5); */
+      background-color: ${(props) => {
+    return props.theme.palette.disabled;
+  }};
+      border: 1px solid;
+      border-color: ${(props) => {
+    return props.theme.divider;
+  }};
     }
     ::-webkit-scrollbar-thumb {
-      background-color: orange;
+      background-color: ${(props) => {
+    return props.theme.palette.link;
+  }};
       border-radius: 5px;
+    }
+    :focus {
+      outline: none;
     }
   }
 `;
 
 export const CellWrapper = styled.div`
-  padding: 5px;
+  display: flex;
+  align-items: center;
+  padding: 0.5em 1em;
   color: ${(props) => {
+    if (props.isHeader) {
+      return props.theme.text.dark;
+    } else if (props.isSelected) {
+      return props.theme.text.inverse;
+    }
     return props.theme.text.primary;
   }};
   font-weight: ${(props) => {
-    return props.isHeader ? "600" : "";
+    return props.isHeader ? "700" : "600";
   }};
-  border-bottom: 1px solid #eee;
+  letter-spacing: 1px;
+  border-bottom: ${(props) => {
+    return props.isHeader ? "2px solid" : "1px solid";
+  }};
+  border-color: ${(props) => {
+    return props.theme.divider;
+  }};
   background-color: ${(props) => {
+    if (props.isHeader) {
+      return props.theme.palette.disabled;
+    }
     if (props.isHighlighted) {
-      return "#f0f5fb";
+      return props.theme.palette.primaryTint;
     }
     if (props.isSelected) {
-      return "#669932";
+      return props.theme.palette.success;
     }
     return "";
   }};
+  [class^="Command"] {
+    color: ${(props) => {
+    if (props.isSelected) {
+      return props.theme.text.inverse;
+    }
+    return "";
+  }};
+  }
 `;
 
 function _containedInRowCol(cellRowCol, row, col) {
@@ -276,8 +308,6 @@ class DataTable extends Component {
       scrollTopChanged,
       sortColumnId,
       sortDirection,
-      tableHeight,
-      tableWidth,
     } = this.props;
 
     let scrollToRow;
@@ -304,7 +334,7 @@ class DataTable extends Component {
       columnWidthToUse = columnWidth;
     }
     return (
-      <MultiGridWrapper tableHeight={tableHeight} tableWidth={tableWidth}>
+      <MultiGridWrapper>
         <AutoSizer>
           {({ width, height }) => {
             return (
@@ -389,8 +419,6 @@ DataTable.propTypes = {
   }),
   sortColumnId: PropTypes.string,
   sortDirection: PropTypes.bool,
-  tableHeight: PropTypes.string,
-  tableWidth: PropTypes.string,
 };
 
 DataTable.defaultProps = {
@@ -412,8 +440,6 @@ DataTable.defaultProps = {
   selectedCell: null,
   sortColumnId: "",
   sortDirection: true,
-  tableHeight: null,
-  tableWidth: null,
 };
 
 export default DataTable;
