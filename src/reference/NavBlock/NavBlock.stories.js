@@ -1,19 +1,9 @@
 // import React from "react";
-import React, { useState, useEffect } from "react"
-import { storiesOf } from "@storybook/react"
-import { withInfo } from "@storybook/addon-info"
-import { checkA11y } from "@storybook/addon-a11y"
+import React from "react"
 import Hooks from "./Hooks"
 import NavBlock from "./NavBlock"
-import NavBlockNotes from "./NavBlock.md"
-import { addDecorator } from "@storybook/react"
-import {
-  withKnobs,
-  text,
-  boolean,
-  number,
-  object
-} from "@storybook/addon-knobs"
+
+const NavBlockNotes = markdown.require("./NavBlock.md");
 
 const config = {
   // left: 'Storybook Left Nav',

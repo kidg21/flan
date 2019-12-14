@@ -5,11 +5,8 @@
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import { storiesOf } from "@storybook/react";
-import { checkA11y } from "@storybook/addon-a11y";
 import { Padding } from "helpers/Display";
 import Card, { CardList } from "layout/Card";
-import Button from "atoms/Button";
 
 // Card
 storiesOf("Work|Card/Layout", module)

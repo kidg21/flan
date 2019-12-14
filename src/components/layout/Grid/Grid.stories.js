@@ -5,22 +5,10 @@
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
-import {
-  withKnobs,
-  text,
-  boolean,
-  radios,
-  select,
-  number,
-  button,
-  array,
-  optionsKnob as options,
-} from "@storybook/addon-knobs";
 import Card from "layout/Card";
 import Grid from "layout/Grid";
-import GriddNotes from "./Grid.md";
+
+const GriddNotes = markdown.require("./Grid.md");
 
 storiesOf("Layout|Grid/", module)
   .addParameters({

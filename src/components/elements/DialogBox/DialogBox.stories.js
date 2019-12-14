@@ -3,9 +3,9 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import { storiesOf } from "@storybook/react";
+
 import styled from "styled-components";
-import { withInfo } from "@storybook/addon-info";
+
 import { Padding } from "helpers/Display";
 import DialogBox from "elements/DialogBox";
 import Title from "base/Typography";

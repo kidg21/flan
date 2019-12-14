@@ -3,7 +3,7 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
 import React from "react";
-import { Padding, IconGrid } from "helpers/Display";
+import { IconGrid } from "helpers/Display";
 import { CardList } from "layout/Card";
 import {
   iconsApp,

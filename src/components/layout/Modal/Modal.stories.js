@@ -4,19 +4,13 @@
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
-import {
-  withKnobs,
-  text,
-  optionsKnob as options
-} from "@storybook/addon-knobs";
 import Button from "atoms/Button";
 import Panel, { PanelSection } from "layout/Panel";
 import ModernExterior1 from "images/residential/modern exterior 1.jpg";
 import Banner from "blocks/Banner";
 import Modal from "layout/Modal";
-import ModalNotes from "./Modal.md";
+
+const ModalNotes = markdown.require("./Modal.md");
 
 storiesOf("Layout|Modal", module)
   .addParameters({

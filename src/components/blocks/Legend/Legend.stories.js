@@ -3,10 +3,7 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
 import React from "react";
-import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
-import { withInfo } from "@storybook/addon-info";
-import { withKnobs, text, boolean, object } from "@storybook/addon-knobs";
 import Legend from "./Legend";
 
 const options = [

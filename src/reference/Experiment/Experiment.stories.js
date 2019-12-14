@@ -1,9 +1,7 @@
 import React from "react"
-import { storiesOf } from "@storybook/react"
-import { withInfo } from "@storybook/addon-info"
-import { checkA11y } from "@storybook/addon-a11y"
 import Experiment from "./Experiment"
-import ExperimentNotes from "./Experiment.md"
+
+const ExperimentNotes = markdown.require("./Experiment.md");
 
 // NavBlock
 storiesOf("Reference|Experiments/Experiment", module)

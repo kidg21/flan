@@ -5,8 +5,8 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
 import React, { useState } from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
+
+
 import { Padding } from "helpers/Display";
 import Icon from "atoms/Icon";
 import DataTable from "./DataTable";

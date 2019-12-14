@@ -1,5 +1,5 @@
 // import React from "react";
-// import { storiesOf } from "@storybook/react";
+// 
 // import App from "./Arrow";
 // import AppTwo from "./AppTwo";
 // import { I18nContextProvider } from "../../../locales/index";
