@@ -16,7 +16,6 @@ import Label from "atoms/Label";
 
 const StyledButton = styled.button`
   display: flex;
-  flex: auto;
   flex-direction: column;
   width: ${(props) => {
     return props.fullWidth ? "100%" : "auto";
@@ -86,7 +85,6 @@ const StyledButton = styled.button`
     user-select: none;
   }
 `;
-
 
 const ButtonIcon = styled(Icon)`
   margin: 0.25em 0;
@@ -219,7 +217,9 @@ function Button({
       type={type}
     >
       {icon ? <ButtonIcon icon={icon} size="lg" /> : null}
-      {label ? <Label letterSpacing="0.075em" weight="semibold" text={label} /> : null}
+      {label ? (
+        <Label letterSpacing="0.075em" weight="semibold" text={label} />
+      ) : null}
     </StyledButton>
   );
 }
