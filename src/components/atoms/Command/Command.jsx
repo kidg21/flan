@@ -41,7 +41,6 @@ const CommandContainer = styled.a`
   pointer-events: ${(props) => {
     return props.isDisabled ? "none" : "";
   }};
-  transition: all 0.3s ease;
 `;
 
 const CommandName = styled(Title)`
@@ -112,7 +111,7 @@ const commandHash = {
 };
 
 function Command({
-  align, command, disabled, icon, id, label, onClick, size,
+ align, command, disabled, icon, id, label, onClick, size 
 }) {
   command = commandHash[command] || { icon, label };
   let alignCommand = "";
@@ -134,7 +133,8 @@ function Command({
       break;
   }
 
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) commandColor = "disabled";
 
   switch (size) {
