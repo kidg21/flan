@@ -3,22 +3,20 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
 import React from "react";
-import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
-import { withInfo } from "@storybook/addon-info";
-import { withKnobs, text, boolean } from "@storybook/addon-knobs";
 import Form, { Section } from "layout/Form";
 import RangeSlider from "blocks/RangeSlider";
-import RangeSliderNotes from "./RangeSlider.md";
+
+const RangeSliderNotes = markdown.require("./RangeSlider.md");
 
 storiesOf("Blocks|Range Slider", module)
   .addParameters({
     info: {
-      text: "Range Slider info goes here..."
+      text: "Range Slider info goes here...",
     },
     notes: {
-      markdown: RangeSliderNotes
-    }
+      markdown: RangeSliderNotes,
+    },
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
@@ -33,7 +31,7 @@ storiesOf("Blocks|Range Slider", module)
           helpText="Hang in there, buddy, I'm here to help!"
         />
       );
-    })
+    }),
   )
   .add("Knobs", () => {
     return (

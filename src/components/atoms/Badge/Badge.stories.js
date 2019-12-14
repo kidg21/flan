@@ -3,19 +3,13 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
 import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
-import {
-  withKnobs,
-  text,
-  optionsKnob as options,
-} from "@storybook/addon-knobs";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
 import Card, { CardList } from "layout/Card";
 import Title from "base/Typography";
 import Badge from "./Badge";
-import BadgeNotes from "./Badge.md";
+
+const BadgeNotes = markdown.require("./Badge.md");
 
 storiesOf("Atoms|Badge", module)
   .addParameters({

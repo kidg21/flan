@@ -2,11 +2,11 @@
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import { storiesOf } from "@storybook/react";
+
 import Card from "./Card";
 import { Body, Description } from "base/Typography";
 import Image from "atoms/Image";
-import { withInfo } from "@storybook/addon-info";
+
 import { Padding } from "helpers/Display";
 import Avatar from "atoms/Avatar";
 

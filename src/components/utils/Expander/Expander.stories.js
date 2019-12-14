@@ -3,9 +3,9 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
 // import React, { useState } from "react";
-// import { storiesOf } from "@storybook/react";
+// 
 // import Expander from "./Expander";
-// import { withInfo } from "@storybook/addon-info";
+// 
 // import { Padding } from "helpers/Display";
 // import Table from "blocks/Table";
 // import Title from "base/Typography";

@@ -3,19 +3,12 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
 import React from "react";
-import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
-import { withInfo } from "@storybook/addon-info";
-import {
-  withKnobs,
-  text,
-  boolean,
-  optionsKnob as options,
-} from "@storybook/addon-knobs";
 import Panel, { PanelSection } from "layout/Panel";
 import Form, { Section } from "layout/Form";
 import TextInput from "atoms/TextInput";
-import TextInputNotes from "./TextInput.md";
+
+const TextInputNotes = markdown.require("./TextInput.md");
 
 storiesOf("Atoms|Text Input", module)
   .addParameters({
