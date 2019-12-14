@@ -101,6 +101,7 @@ function InputBlock({
         value={state.input[input.id]}
         onBlur={onBlur}
         onFocus={onFocus}
+        autocompleteList={input.autocompleteList}
       />
     );
   });

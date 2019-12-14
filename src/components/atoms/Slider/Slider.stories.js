@@ -3,13 +3,11 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
 import React from "react";
-import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
-import { withInfo } from "@storybook/addon-info";
-import { withKnobs, boolean } from "@storybook/addon-knobs";
 import Form, { Section } from "layout/Form";
 import Slider from "atoms/Slider";
-import SliderNotes from "./Slider.md";
+
+const SliderNotes = markdown.require("./Slider.md");
 
 storiesOf("Atoms|Slider", module)
   .addParameters({

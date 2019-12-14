@@ -5,7 +5,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
-import { storiesOf } from "@storybook/react";
+
 import PropertyPanelHeader from "elements/PanelHeaders/PropertyPanelHeader";
 import Legend from "blocks/Legend";
 import Form, { Section } from "layout/Form";

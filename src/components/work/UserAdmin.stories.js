@@ -5,7 +5,7 @@
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import { storiesOf } from "@storybook/react";
+
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Padding } from "helpers/Display";
 import Icon from "atoms/Icon";

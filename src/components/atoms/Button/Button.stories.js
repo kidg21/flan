@@ -1,21 +1,21 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React from "react";
-import { storiesOf } from "@storybook/react";
+
+// import GlobalStyles from "GlobalStyles";
+import { DMPTheme } from "Variables";
+import { ThemeProvider } from "styled-components";
+
+import { expect } from "chai";
+import { mount } from "enzyme";
+
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
-import { withInfo } from "@storybook/addon-info";
-import {
-  withKnobs,
-  text,
-  boolean,
-  select,
-  optionsKnob as options,
-} from "@storybook/addon-knobs";
+
 import Button from "atoms/Button";
-import ButtonNotes from "./Button.md";
+// import ButtonNotes from "./Button.md";
+const ButtonNotes = markdown.require("./Button.md");
 
 storiesOf("Atoms|Button", module)
   .addParameters({
@@ -54,7 +54,7 @@ storiesOf("Atoms|Button", module)
           null,
           "Button",
         )}
-        label={text("button label", "Button Label", "Button")}
+        label={text("label", "Button Label", "Button")}
         color={options(
           "color",
           {
@@ -65,7 +65,7 @@ storiesOf("Atoms|Button", module)
             "warning": "warning",
             "alert": "alert",
           },
-          "default",
+          "primary",
           { display: "radio" },
           "Button",
         )}
@@ -80,7 +80,7 @@ storiesOf("Atoms|Button", module)
           { display: "radio" },
           "Button",
         )}
-        fullWidth={boolean("full width", false, "Button")}
+        fullWidth={boolean("fullWidth", false, "Button")}
         fill={boolean("fill", false, "Button")}
         noBorder={boolean("noBorder", false, "Button")}
         disabled={boolean("disabled", false, "Button")}
@@ -88,19 +88,115 @@ storiesOf("Atoms|Button", module)
     );
   })
   .add("The Button Family", () => {
-    return (
-      <Grid>
+    const story = (
+      <Grid columns="2">
         <Button label="Standard Primary" />
         <Button label="Solid Primary" type="solid" />
         <Button label="Standard Secondary" color="secondary" />
         <Button label="Solid Secondary" type="solid" color="secondary" />
-        <Button label="Solid Info Button" type="solid" />
-        {/* <Button icon="filter" label="Fitlers" color="primary" /> */}
-
-        {/* <Button label="Small Button" size="small" />
-        <Button label="Large Button" size="large" /> */}
-        <Button label="Disabled Button" disabled />
-        {/* <Button label="Icon Button" icon="user" type="solid" /> */}
+        <Button label="Underline Primary" type="underlined" />
+        <Button label="Underline Secondary" type="underlined" color="secondary" />
+        <Button label="Inline Primary" type="inline" />
+        <Button label="Inline Secondary" type="inline" color="secondary" />
+        <Button label="Disabled Button" color="secondary" disabled />
+        <Button label="Disabled Underline" type="underlined" disabled />
+        <Button label="Disabled Inline" type="inline" disabled />
       </Grid>
     );
+
+    specs(() => {
+      let output = null;
+      return describe("The Button Family", () => {
+        before(() => {
+          output = mount((
+            <ThemeProvider theme={DMPTheme}>
+              {story}
+            </ThemeProvider>
+          ));
+        });
+
+        after(() => {
+          output.unmount();
+        });
+
+        it("Is wrapped by a Two-Column Grid", () => {
+          const grid = output.find("Grid");
+          expect(grid.prop("columns")).to.equal("repeat(2, minmax(0, 1fr))");
+        });
+
+        it("Can render multiple Buttons", () => {
+          const buttons = output.find("button");
+          expect(buttons).to.have.lengthOf(11);
+        });
+
+        it("Accepts a \"label\" prop", () => {
+          const button = output.find("button").first();
+          const label = button.children();
+          expect(label.text()).to.equal("Standard Primary");
+        });
+
+        it("Can change the background color", () => {
+          const button = output.find("Button").at(1);
+          expect(button.prop("fontColor")).to.equal("white");
+          expect(button.prop("backgroundColor")).to.equal("primary");
+        });
+
+        it("Can change the font color", () => {
+          const button = output.find("Button").at(2);
+          expect(button.prop("fontColor")).to.equal("secondary");
+        });
+
+        it("Can change font and background color", () => {
+          const button = output.find("Button").at(3);
+          expect(button.prop("fontColor")).to.equal("white");
+          expect(button.prop("backgroundColor")).to.equal("secondary");
+        });
+
+        it("Can be underlined", () => {
+          const button = output.find("Button").at(4);
+          expect(button.prop("fontColor")).to.equal("primary");
+          expect(button.prop("underlineColor")).to.equal("primary");
+        });
+
+        it("Can be underlined with a different color", () => {
+          const button = output.find("Button").at(5);
+          expect(button.prop("fontColor")).to.equal("secondary");
+          expect(button.prop("underlineColor")).to.equal("secondary");
+        });
+
+        it("Can be inline", () => {
+          const button = output.find("Button").at(6);
+          expect(button.prop("border")).to.equal("2px solid transparent");
+          expect(button.prop("fontColor")).to.equal("primary");
+          expect(button.prop("backgroundColor")).to.equal("default");
+        });
+
+        it("Can be inline with a different color", () => {
+          const button = output.find("Button").at(7);
+          expect(button.prop("border")).to.equal("2px solid transparent");
+          expect(button.prop("fontColor")).to.equal("secondary");
+          expect(button.prop("backgroundColor")).to.equal("default");
+        });
+
+        it("Can be disabled", () => {
+          const button = output.find("Button").at(8);
+          expect(button.prop("fontColor")).to.equal("white");
+          expect(button.prop("backgroundColor")).to.equal("grey4");
+        });
+
+        it("Can be underlined and disabled", () => {
+          const button = output.find("Button").at(9);
+          expect(button.prop("fontColor")).to.equal("grey4");
+          expect(button.prop("underlineColor")).to.equal("grey4");
+        });
+
+        it("Can be inline and disabled", () => {
+          const button = output.find("Button").at(10);
+          expect(button.prop("border")).to.equal("2px solid transparent");
+          expect(button.prop("fontColor")).to.equal("grey4");
+        });
+      });
+    });
+
+    return story;
   });

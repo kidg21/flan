@@ -3,23 +3,21 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
 import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
-import { withKnobs, text, boolean } from "@storybook/addon-knobs";
 import Grid from "layout/Grid";
 import Title, { Headline } from "base/Typography";
 import Image from "atoms/Image";
-import ImageNotes from "./Image.md";
+
+const ImageNotes = markdown.require("./Image.md");
 
 storiesOf("Atoms|Image", module)
   .addParameters({
     info: {
-      text: "Image info goes here..."
+      text: "Image info goes here...",
     },
     notes: {
-      markdown: ImageNotes
-    }
+      markdown: ImageNotes,
+    },
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
@@ -32,7 +30,7 @@ storiesOf("Atoms|Image", module)
           alt="This is alt text for this image"
         />
       );
-    })
+    }),
   )
   .add("Knobs", () => {
     return (

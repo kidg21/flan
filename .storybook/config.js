@@ -3,11 +3,16 @@ import { configure, addParameters, addDecorator } from "@storybook/react";
 import { DMPTheme, darkTheme } from "Variables";
 import { ThemeProvider } from "styled-components";
 import FlanTheme from "./FlanTheme";
-import { optionsKnob as options } from "@storybook/addon-knobs";
 import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
 import { withA11y } from "@storybook/addon-a11y";
 import { configureActions } from "@storybook/addon-actions";
 import { DocsPage, DocsContainer } from "@storybook/addon-docs/blocks";
+import { configure  as configureEnzyme } from "enzyme";
+import Adapter from "enzyme-adapter-react-16";
+
+// Pick up all Storybook / Mocha methods and make them global
+import * as facade from "./facade";
+Object.assign(global, facade);
 
 // Create and add global styles
 import GlobalStyles from "GlobalStyles";
@@ -147,6 +152,8 @@ const work = require.context(
   true,
   /\.stories\.(js|mdx)$/
 );
+
+configureEnzyme({ adapter: new Adapter() });
 configure(
   [intro, base, utils, atoms, blocks, elements, layout, templates, work],
   module

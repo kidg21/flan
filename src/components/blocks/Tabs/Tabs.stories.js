@@ -1,18 +1,10 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
-import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
-import { withInfo } from "@storybook/addon-info";
-import {
-  withKnobs,
-  text,
-  boolean,
-  select,
-  optionsKnob as options,
-} from "@storybook/addon-knobs";
 import Tabs, { Tab } from "blocks/Tabs";
 import Grid from "layout/Grid";
-import TabsNotes from "./Tabs.md";
+
+const TabsNotes = markdown.require("./Tabs.md");
 
 storiesOf("Blocks|Tabs", module)
   .addParameters({

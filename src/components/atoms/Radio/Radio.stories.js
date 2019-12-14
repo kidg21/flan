@@ -3,19 +3,12 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
 import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
-import {
-  withKnobs,
-  text,
-  boolean,
-  optionsKnob as options,
-} from "@storybook/addon-knobs";
 import Form, { Section } from "layout/Form";
 import Radio, { RadioGroup } from "atoms/Radio";
-import RadioNotes from "./Radio.md";
-import RadioGroupNotes from "./RadioGroup.md";
+
+const RadioNotes = markdown.require("./Radio.md");
+const RadioGroupNotes = markdown.require("./RadioGroup.md");
 
 const shortLabels = [
   {

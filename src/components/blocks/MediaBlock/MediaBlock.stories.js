@@ -3,20 +3,13 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
 import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
-import {
-  withKnobs,
-  boolean,
-  optionsKnob as options
-} from "@storybook/addon-knobs";
-import Avatar from "atoms/Avatar";
 import Image from "atoms/Image";
 import Card, { CardList } from "layout/Card";
 import Title, { Description } from "base/Typography";
 import MediaBlock from "blocks/MediaBlock";
-import MediaBlockNotes from "./MediaBlock.md";
+
+const MediaBlockNotes = markdown.require("./MediaBlock.md");
 
 const image = (
   <Image

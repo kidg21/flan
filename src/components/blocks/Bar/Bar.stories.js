@@ -3,13 +3,6 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
 import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
-import {
-  withKnobs,
-  text,
-  optionsKnob as options
-} from "@storybook/addon-knobs";
 import { Padding } from "helpers/Display";
 import Card, { CardList } from "layout/Card";
 import Icon from "atoms/Icon";
@@ -17,7 +10,8 @@ import IconBlock from "blocks/IconBlock";
 import Command from "atoms/Command";
 import Title, { Description } from "base/Typography";
 import Bar from "blocks/Bar";
-import BarNotes from "./Bar.md";
+
+const BarNotes = markdown.require("./Bar.md");
 
 const shortTitle = <Title text="A Standard Title" />;
 const longTitle = (
