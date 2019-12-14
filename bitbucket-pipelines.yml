@@ -12,7 +12,7 @@ clone:
 pipelines:
   branches:
     # All commits to master will run Code Coverage
-    feature/pipelines/automatedeployment:
+    master:
       - step:
           name: Codacy Coverage
           caches:
