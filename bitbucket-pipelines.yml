@@ -30,10 +30,13 @@ pipelines:
             - npm install --no-package-lock
             # Run tests and push coverage to Codacy
             - npm run testWithCoverage
+            # Build code to push
+            - npm run build
+          artifacts:
+            - Bundles/**
       - step:
           name: Push Bundle File & Version Tag
           script:
-            - npm run build
             # Get version number from package.json
             - declare -x VERSION=$(node -p -e "require('./package.json').version")
             - echo -e "Pipeline Build - ${BITBUCKET_BUILD_NUMBER}\nPackage Version - ${VERSION}\nCommit Hash - ${BITBUCKET_COMMIT}" > changes.txt
