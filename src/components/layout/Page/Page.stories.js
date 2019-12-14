@@ -4,8 +4,6 @@
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import { storiesOf } from "@storybook/react";
-import { checkA11y } from "@storybook/addon-a11y";
 import Page from "./Page";
 
 storiesOf("Layout|Page", module)

@@ -4,78 +4,76 @@
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
 import { screen } from "Variables";
 import Tabs, { Tab } from "blocks/Tabs";
 import Card, { CardList } from "layout/Card";
 import Layout from "layout/Layout";
-import Mapbox from "layout/Map";
 import Panel, { PanelSection } from "layout/Panel";
 import Form, { Section } from "layout/Form";
 import TextInput from "atoms/TextInput";
 import { CheckboxGroup } from "atoms/Checkbox";
 import { RadioGroup } from "atoms/Radio";
 import SelectMenu from "atoms/SelectMenu";
-import LayoutNotes from "./Layout.md";
+
+const LayoutNotes = markdown.require("./Layout.md");
 
 const shortBoxes = [
   {
     id: "box-1",
-    label: "Label 1"
+    label: "Label 1",
   },
   {
     id: "box-2",
     label: "Label 2 (disabled)",
-    disabled: true
+    disabled: true,
   },
   {
     id: "box-3",
-    label: "Label 3"
+    label: "Label 3",
   },
   {
     id: "box-4",
-    label: "Label 4"
-  }
+    label: "Label 4",
+  },
 ];
 const longBoxes = [
   {
     id: "box_long",
     label:
-      "My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself."
+      "My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself.",
   },
   {
     id: "box_long2",
     label:
-      "Enough with these long labels already...put it on your blog, Shakespeare."
-  }
+      "Enough with these long labels already...put it on your blog, Shakespeare.",
+  },
 ];
 const shortRadios = [
   {
     id: "radio-1",
     name: "radio-group",
     value: "1",
-    label: "Label 1"
+    label: "Label 1",
   },
   {
     id: "radio-2",
     name: "radio-group",
     value: "2",
-    label: "Label 2 (disabled)"
+    label: "Label 2 (disabled)",
   },
   {
     id: "radio-3",
     name: "radio-group",
     value: "3",
     label: "Label 3",
-    disabled: true
+    disabled: true,
   },
   {
     id: "radio-4",
     name: "radio-group",
     value: "4",
-    label: "Label 4"
-  }
+    label: "Label 4",
+  },
 ];
 const longRadios = [
   {
@@ -84,15 +82,15 @@ const longRadios = [
     value: "5",
     label:
       "My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself.",
-    disabled: true
+    disabled: true,
   },
   {
     id: "radio_long2",
     name: "radio-group",
     value: "6",
     label:
-      "Enough with these long labels already...put it on your blog, Shakespeare."
-  }
+      "Enough with these long labels already...put it on your blog, Shakespeare.",
+  },
 ];
 const options = [
   { value: "chocolate", label: "Chocolate" },
@@ -100,24 +98,24 @@ const options = [
   { value: "vanilla", label: "Vanilla" },
   { value: "pistachio", label: "Pistachio" },
   { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
-  { value: "cookie dough", label: "Cookie Dough" }
+  { value: "cookie dough", label: "Cookie Dough" },
 ];
 
 storiesOf("Layout |App Layout/", module)
   .addParameters({
     info: {
-      text: "Layout info goes here..."
+      text: "Layout info goes here...",
     },
     notes: {
-      markdown: LayoutNotes
-    }
+      markdown: LayoutNotes,
+    },
   })
 
   .add(
     "Documentation",
     withInfo()(() => {
       return <Layout height="25%" />;
-    })
+    }),
   )
 
   .add("2 Panel - Row", () => {

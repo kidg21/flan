@@ -6,10 +6,6 @@
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import { storiesOf } from "@storybook/react";
-import { colors, DMPTheme, darkTheme } from "Variables";
-import { optionsKnob as options } from "@storybook/addon-knobs";
-import { ThemeProvider } from "styled-components";
 import Grid from "layout/Grid";
 import ThemeColors, { Colors } from "./Colors";
 

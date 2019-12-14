@@ -27,6 +27,15 @@ module.exports = ({ config, mode }) => {
   });
   config.resolve.extensions.push(".js", ".jsx");
 
+  if (!config.externals) config.externals = {};
+  Object.assign(config.externals, {
+    'jsdom': 'window',
+    'cheerio': 'window',
+    'react/lib/ExecutionEnvironment': true,
+    'react/lib/ReactContext': 'window',
+    'react/addons': true,
+  });
+
   return config;
 };
 

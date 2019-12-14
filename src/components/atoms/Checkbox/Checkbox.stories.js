@@ -3,19 +3,12 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
 import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
 import { Padding } from "helpers/Display";
-import {
-  withKnobs,
-  text,
-  boolean,
-  optionsKnob as options,
-} from "@storybook/addon-knobs";
 import Form, { Section } from "layout/Form";
 import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
-import CheckboxNotes from "./Checkbox.md";
-import CheckboxGroupNotes from "./CheckboxGroup.md";
+
+const CheckboxNotes = markdown.require("./Checkbox.md");
+const CheckboxGroupNotes = markdown.require("./CheckboxGroup.md");
 
 const shortLabels = [
   {

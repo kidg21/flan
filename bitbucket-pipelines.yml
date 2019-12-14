@@ -1,11 +1,22 @@
-image: node:8.11.3
+# This is a sample build configuration for JavaScript.
+# Check our guides at https://confluence.atlassian.com/x/14UWN for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# Use Node 8.x.
+image: node:carbon
+
+clone:
+  # Don't clone history when pulling from Git; just get the latest version of the file.
+  depth: 1
 
 pipelines:
   branches:
-    master:
+    # All commits to master will run Code Coverage
+    feature/pipelines/automatedeployment:
       - step:
-          name: Build
+          name: Codacy Coverage
           caches:
+            # Cache node_modules folders
             - node
           script:
             # Copy SSH key so that we can pull additional submodules
@@ -13,13 +24,16 @@ pipelines:
             - cp id_rsa /root/.ssh/id_rsa
             - chmod 700 /root/.ssh/id_rsa
             - echo "Host bitbucket.org\n\tStrictHostKeyChecking no\n" >> /root/.ssh/config
-            - npm install
-            - npm run build
-          artifacts:
-            - Bundles/**
+            # Remove cached modules
+            - rm -rf node_modules/ss-development
+            # Install dependencies
+            - npm install --no-package-lock
+            # Run tests and push coverage to Codacy
+            - npm run testWithCoverage
       - step:
           name: Push Bundle File & Version Tag
           script:
+            - npm run build
             # Get version number from package.json
             - declare -x VERSION=$(node -p -e "require('./package.json').version")
             - echo -e "Pipeline Build - ${BITBUCKET_BUILD_NUMBER}\nPackage Version - ${VERSION}\nCommit Hash - ${BITBUCKET_COMMIT}" > changes.txt
@@ -33,3 +47,23 @@ pipelines:
             - git tag $VERSION
             - git push origin $VERSION $BITBUCKET_BRANCH
             - set -e
+  tags:
+    # Tagging a branch "test" will also cause it to generate Code Coverage (this is only really useful for ensuring the build instructions work)
+    test:
+      - step:
+          name: Codacy Coverage
+          caches:
+            # Cache node_modules folders
+            - node
+          script:
+           # Copy SSH key so that we can pull additional submodules
+            - mkdir -p /root/.ssh
+            - cp id_rsa /root/.ssh/id_rsa
+            - chmod 700 /root/.ssh/id_rsa
+            - echo "Host bitbucket.org\n\tStrictHostKeyChecking no\n" >> /root/.ssh/config
+            # Remove cached modules
+            - rm -rf node_modules/ss-development
+            # Install dependencies
+            - npm install --no-package-lock
+            # Run tests and push coverage to Codacy
+            - npm run testWithCoverage

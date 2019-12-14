@@ -3,9 +3,6 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
 import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
-import { withKnobs, boolean, select } from "@storybook/addon-knobs";
 import { Padding, IconGrid } from "helpers/Display";
 import Grid from "layout/Grid";
 import Title, { SubTitle, Description } from "base/Typography";

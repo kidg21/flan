@@ -3,8 +3,8 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
 import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
+
+
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
 import Card from "layout/Card";

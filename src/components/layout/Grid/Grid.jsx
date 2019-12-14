@@ -12,19 +12,20 @@ import PropTypes from "prop-types";
 const GridWrapper = styled.section`
   display: grid;
   grid-gap: ${(props) => {
-    return props.setGap || "1rem";
+    return props.gap || "1rem";
   }};
   grid-template-columns: ${(props) => {
-    return props.setColumns || "repeat(auto-fill, minmax(22rem, 1fr))";
+    return props.columns || "repeat(auto-fill, minmax(22rem, 1fr))";
   }};
   grid-template-rows: ${(props) => {
-    return props.setRows || "auto";
+    return props.rows || "auto";
   }};
   align-items: ${(props) => {
     return props.alignItems || "flex-start";
   }};
   width: 100%;
 `;
+GridWrapper.displayName = "Grid";
 
 function Grid({
   align, children, columns, gap, id, rows, className,
@@ -80,15 +81,16 @@ function Grid({
     <GridWrapper
       alignItems={alignItems}
       id={id}
-      setColumns={setColumns}
-      setGap={setGap}
-      setRows={setRows}
+      columns={setColumns}
+      gap={setGap}
+      rows={setRows}
       className={className}
     >
       {children}
     </GridWrapper>
   );
 }
+Grid.displayName = "GridWrapper";
 
 Grid.propTypes = {
   id: PropTypes.string,

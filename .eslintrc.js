@@ -230,8 +230,23 @@ module.exports = {
     openIndexedDB: true,
     Handlebars: true,
     XLSX: true,
-    Cypress: true,
-    cy: true,
-    expect: true
+    Mapbox: true,
+    storiesOf: true,
+    withInfo: true,
+    withKnobs: true,
+    checkA11y: true,
+    text: true,
+    boolean: true,
+    object: true,
+    select: true,
+    options: true,
+    specs: true,
+    describe: true,
+    it: true,
+    before: true,
+    beforeEach: true,
+    after: true,
+    afterEach: true,
+    markdown: true
   }
 };

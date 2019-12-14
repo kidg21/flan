@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import { storiesOf } from "@storybook/react";
+
 import NavigationPanelHeader from "elements/PanelHeaders/NavigationPanelHeader";
 import Panel, { PanelSection } from "layout/Panel";
 import DataRange from "blocks/DataRange";

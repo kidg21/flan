@@ -3,18 +3,12 @@
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React, { Fragment, useState } from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
-import {
-  withKnobs,
-  text,
-  optionsKnob as options,
-} from "@storybook/addon-knobs";
 import Button from "atoms/Button";
 import Panel, { PanelSection } from "layout/Panel";
 import Banner from "blocks/Banner";
 import Notification from "elements/Notification";
-import NotificationNotes from "./Notification.md";
+
+const NotificationNotes = markdown.require("./Notification.md");
 
 storiesOf("Elements|Notification", module)
   .addParameters({

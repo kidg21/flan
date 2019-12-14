@@ -3,20 +3,13 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
 import React from "react";
-import { storiesOf } from "@storybook/react";
 import { Padding, CommandGrid } from "helpers/Display";
-import { withInfo } from "@storybook/addon-info";
-import {
-  withKnobs,
-  text,
-  select,
-  optionsKnob as options,
-} from "@storybook/addon-knobs";
 import Title, { Headline, SubTitle, Description } from "base/Typography";
 import Grid from "layout/Grid";
 import commandsStandard from "atoms/Command/libraryCommand.data";
 import Command from "atoms/Command";
-import CommandNotes from "./Command.md";
+
+const CommandNotes = markdown.require("./Command.md");
 
 // Command
 storiesOf("Atoms|Command", module)

@@ -3,28 +3,10 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
 import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
-import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
 import { Padding } from "helpers/Display";
-import Card from "layout/Card";
-import Command from "atoms/Command";
-import SelectMenu from "atoms/SelectMenu";
-import Radio from "atoms/Radio";
-import Checkbox from "atoms/Checkbox";
-import Switch from "atoms/Switch";
-import Image from "atoms/Image";
-import Button from "atoms/Button";
 import List, { ListItem } from "blocks/List";
-import ListNotes from "blocks/List/List.md";
 
-const image = (
-  <Image
-    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-    alt="This is alt text for this image"
-    width="75"
-  />
-);
+const ListNotes = markdown.require("./List.md");
 
 storiesOf("Blocks|List", module)
   .addParameters({
