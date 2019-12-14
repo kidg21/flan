@@ -8,7 +8,7 @@ import { Padding } from "helpers/Display";
 import { withInfo } from "@storybook/addon-info";
 import { withKnobs, text, boolean } from "@storybook/addon-knobs";
 import Form, { Section } from "layout/Form";
-import SelectMenu from "./SelectMenu";
+import SelectMenu from "atoms/SelectMenu";
 
 const options = [
   { value: "chocolate", label: "Chocolate" },
@@ -16,18 +16,18 @@ const options = [
   { value: "vanilla", label: "Vanilla" },
   { value: "pistachio", label: "Pistachio" },
   { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
-  { value: "cookie dough", label: "Cookie Dough" }
+  { value: "cookie dough", label: "Cookie Dough" },
 ];
 
 // Select Menu ( Knobs )
 storiesOf("Atoms|Select Menu", module)
   .addParameters({
     info: {
-      text: "Select Menu info goes here..."
+      text: "Select Menu info goes here...",
     },
     notes: {
-      markdown: SelectMenu
-    }
+      markdown: SelectMenu,
+    },
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
@@ -39,7 +39,7 @@ storiesOf("Atoms|Select Menu", module)
           label={text("Input Label", "Select Menu ( Knobs )")}
           placeholder={text(
             "Placeholder Text",
-            "I am just keeping things warm"
+            "I am just keeping things warm",
           )}
           helpText={text("Help Text", "Have you been helped yet?")}
           multiSelect={boolean("Multi-Select", false)}
@@ -48,12 +48,12 @@ storiesOf("Atoms|Select Menu", module)
           error={boolean("Error", false)}
           errorMessage={text(
             "Error Text",
-            "Stay with my, buddy...we can fix this!"
+            "Stay with my, buddy...we can fix this!",
           )}
           options={options}
         />
       );
-    })
+    }),
   )
   .add("Skeleton", () => {
     return <SelectMenu />;
