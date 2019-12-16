@@ -16,7 +16,7 @@ import Tag from "atoms/Tag";
 import Command from "atoms/Command";
 import Card, { CardSection } from "layout/Card";
 import Title, { Headline, SubTitle, Description, Body } from "base/Typography";
-import ExpandingSection from "./ExpandingSection";
+import ExpandingSection from "./ExpandingSection.jsx";
 
 function CardComponent({
   id,
