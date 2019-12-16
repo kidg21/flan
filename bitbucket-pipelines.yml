@@ -49,7 +49,45 @@ pipelines:
             - set +e # disables exiting if error occurs
             - git tag $VERSION
             - git push origin $VERSION $BITBUCKET_BRANCH
-            - set -e
+            - set -e 
+    develop:
+      - step:
+          name: Codacy Coverage
+          caches:
+            # Cache node_modules folders
+            - node
+          script:
+            # Copy SSH key so that we can pull additional submodules
+            - mkdir -p /root/.ssh
+            - cp id_rsa /root/.ssh/id_rsa
+            - chmod 700 /root/.ssh/id_rsa
+            - echo "Host bitbucket.org\n\tStrictHostKeyChecking no\n" >> /root/.ssh/config
+            # Remove cached modules
+            - rm -rf node_modules/ss-development
+            # Install dependencies
+            - npm install --no-package-lock
+            # Run tests and push coverage to Codacy
+            - npm run testWithCoverage
+            # Build code
+            - npm run build
+          artifacts:
+            - Bundles/**
+      - step:
+          name: Push Bundle File & Version Tag
+          script:
+            # Get version number from package.json
+            - declare -x VERSION=$(node -p -e "require('./package.json').version")
+            - echo -e "Pipeline Build - ${BITBUCKET_BUILD_NUMBER}\nPackage Version - ${VERSION}\nCommit Hash - ${BITBUCKET_COMMIT}" > changes.txt
+            - git add changes.txt
+            - git add Bundles/lbreactcore.js
+            - git commit -m "[skip ci] Updating changes.txt & latest bundle in lb-react-core repo"
+            - git push origin $BITBUCKET_BRANCH
+            # Create/Push tag to commit
+            # if tag already exists, it does not retag
+            - set +e # disables exiting if error occurs
+            - git tag $VERSION
+            - git push origin $VERSION $BITBUCKET_BRANCH
+            - set -e 
   tags:
     # Tagging a branch "test" will also cause it to generate Code Coverage (this is only really useful for ensuring the build instructions work)
     test:
