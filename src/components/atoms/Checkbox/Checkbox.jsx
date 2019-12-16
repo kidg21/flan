@@ -89,7 +89,6 @@ function Checkbox({
   id,
   label,
   onChange,
-  isRequired,
   onFocus,
   onBlur,
   warning,
@@ -237,7 +236,6 @@ Checkbox.propTypes = {
   onChange: PropTypes.func,
   onBlur: PropTypes.func,
   onFocus: PropTypes.func,
-  isRequired: PropTypes.bool,
 };
 
 Checkbox.defaultProps = {
@@ -251,7 +249,6 @@ Checkbox.defaultProps = {
   onChange: null,
   onBlur: null,
   onFocus: null,
-  isRequired: false,
 };
 
 CheckboxGroup.propTypes = {
