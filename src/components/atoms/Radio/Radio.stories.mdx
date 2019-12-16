@@ -16,7 +16,7 @@ import Icon from "atoms/Icon";
 
 <Preview withToolbar>
   <Story name="Standard">
-    <Radio label="Radio" selected />
+    <Radio label="Radio" checked />
   </Story>
 </Preview>
 
@@ -78,7 +78,6 @@ If available options can be collapsed, consider using a dropdown menu instead, a
 
 Radios consist of a circular input and a label. It is important that the label also has an htmlFor tag in order to link the radio and be another way to select.
 
-
 <!-- ## Behavior -->
 
 # Examples
@@ -98,6 +97,7 @@ Radios consist of a circular input and a label. It is important that the label a
 </Preview>
 
 ### Alignment
+
 A radio may appear to the left or right of it's corresponding label. A radio may not appear above or below the label.
 
 <Preview>
@@ -110,8 +110,8 @@ A radio may appear to the left or right of it's corresponding label. A radio may
 </Preview>
 
 ### Group
-Radios may appear in groups. When a radio group is necessary use the RadioGroup wrapper from the Radio directory to control the Radio layout.
 
+Radios may appear in groups. When a radio group is necessary use the RadioGroup wrapper from the Radio directory to control the Radio layout.
 
 <Preview>
   <Story name="Radio Group">

@@ -59,7 +59,7 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
     background-color: ${(props) => {
     return (
       props.theme.palette[props.fillColorChecked] ||
-      props.theme.palette.secondaryLight
+        props.theme.palette.secondaryLight
     );
   }};
     border-color: ${(props) => {
@@ -258,7 +258,15 @@ Radio.defaultProps = {
 RadioGroup.propTypes = {
   align: PropTypes.oneOf(["default", "right"]),
   children: PropTypes.node,
-  columns: PropTypes.oneOf(["auto" /* default */, "1", "2", "3", "4", "5", "6"]),
+  columns: PropTypes.oneOf([
+    "auto" /* default */,
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+  ]),
   data: PropTypes.oneOfType([PropTypes.array, PropTypes.string]),
   disabled: PropTypes.bool,
   error: PropTypes.string,
