@@ -7,7 +7,7 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import Button from "atoms/Button";
 
-const TabsWrapper = styled.section`
+const ControlsWrapper = styled.section`
   position: ${(props) => {
     return props.setPosition || "";
   }};
@@ -15,7 +15,7 @@ const TabsWrapper = styled.section`
     return props.setOrientation || "grid";
   }};
   grid-gap: ${(props) => {
-    return props.gap || "2px";
+    return props.gap || "";
   }};
   grid-template-columns: ${(props) => {
     return props.setColumns || "repeat(auto-fit, minmax(0, 1fr))";
@@ -36,7 +36,7 @@ const TabsWrapper = styled.section`
 
   > * {
     margin: ${(props) => {
-    return props.margin || "";
+    return props.margin || "0 -1px -1px 0";
   }};
     border: ${(props) => {
     return props.border || "";
@@ -53,14 +53,16 @@ const TabsWrapper = styled.section`
   }
 `;
 
-function Tabs({
-  id, children, columns, align, style,
+function Controls({
+  id, children, columns, align, style, margin, gap,
 }) {
   let setColumns;
   let border;
   let borderRadius;
   let setPosition;
   let setWidth;
+  let backgroundColor;
+  let fontColor;
   let setHeight;
   let setOrientation;
   let alignRight;
@@ -92,73 +94,69 @@ function Tabs({
       // setPosition = "absolute";
       alignBottom = "0";
       break;
-    case "vertical":
-      setColumns = "none";
-      // setPosition = "absolute";
-      setWidth = "auto";
-      setHeight = "auto";
-      setOrientation = "flex";
-      alignBottom = "0";
-      break;
     default:
       break;
   }
   return (
-    <TabsWrapper
-      id={id}
-      border={border}
-      borderRadius={borderRadius}
-      setColumns={setColumns}
-      setPosition={setPosition}
-      setWidth={setWidth}
-      setHeight={setHeight}
-      setOrientation={setOrientation}
-      alignRight={alignRight}
-      alignBottom={alignBottom}
-      style={style}
-    >
-      {children}
-    </TabsWrapper>
+      <ControlsWrapper
+          id={id}
+          gap={gap}
+          border={border}
+          borderRadius={borderRadius}
+          setColumns={setColumns}
+          setPosition={setPosition}
+          backgroundColor={backgroundColor}
+          setWidth={setWidth}
+          setHeight={setHeight}
+          setOrientation={setOrientation}
+          alignRight={alignRight}
+          alignBottom={alignBottom}
+          style={style}
+          margin={margin}
+          fontColor={fontColor}
+        >
+          {children}
+        </ControlsWrapper>
   );
 }
 
-function Tab({
-  id, icon, tabLabel, size, onClick, isSelected, type, disabled, color,
+function Control({
+  id, icon, ControlLabel, size, onClick, type, isSelected, disabled, color,
 }) {
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
 
   return (
-    <Fragment>
-      {isSelected ? (
-        <Button
-          id={id}
-          icon={icon}
-          size={size}
-          label={tabLabel}
-          onClick={onClick}
-          isSelected={isSelected}
-          disabled={isDisabled}
-          color={color}
-          type={type && type.toLowerCase() === "solid" ? "solid" : "underlined"}
-        />
-      ) : (
-        <Button
-            id={id}
-            icon={icon}
-            size={size}
-            label={tabLabel}
-            onClick={onClick}
-            isSelected={isSelected}
-            disabled={isDisabled}
-            color="grey"
-            type="plain"
-          />
-        )}
-    </Fragment>
+      <Fragment>
+          {isSelected ? (
+              <Button
+                  id={id}
+                  icon={icon}
+                  size={size}
+                  label={ControlLabel}
+                  onClick={onClick}
+                  isSelected={isSelected}
+                  disabled={isDisabled}
+                  color={color}
+                  type="solid"
+                />
+            ) : (
+              <Button
+                      id={id}
+                      icon={icon}
+                      size={size}
+                      label={ControlLabel}
+                      onClick={onClick}
+                      isSelected={isSelected}
+                      disabled={isDisabled}
+                      color={color}
+                      type={type}
+                    />
+                )}
+        </Fragment>
   );
 }
 
-Tabs.propTypes = {
+Controls.propTypes = {
   id: PropTypes.string,
   children: PropTypes.node.isRequired,
   columns: PropTypes.oneOf(["default", "wrap", "1", "2", "3", "4", "5"]),
@@ -166,10 +164,10 @@ Tabs.propTypes = {
   style: PropTypes.string,
 };
 
-Tab.propTypes = {
+Control.propTypes = {
   id: PropTypes.string,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
-  tabLabel: PropTypes.string.isRequired,
+  ControlLabel: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
   isSelected: PropTypes.bool,
   disabled: PropTypes.bool,
@@ -178,14 +176,14 @@ Tab.propTypes = {
   size: PropTypes.string,
 };
 
-Tabs.defaultProps = {
+Controls.defaultProps = {
   id: null,
   columns: null,
   align: null,
   style: null,
 };
 
-Tab.defaultProps = {
+Control.defaultProps = {
   id: null,
   icon: false,
   isSelected: false,
@@ -195,4 +193,4 @@ Tab.defaultProps = {
   size: null,
 };
 
-export { Tabs as default, Tab };
+export { Controls as default, Control };
