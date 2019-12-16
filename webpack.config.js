@@ -23,13 +23,9 @@ const build = {
   module: {
     rules: [
       {
-        test: /\.jsx$/,
+        test: /\.jsx?$/,
         exclude: [
           /(node_modules|bower_components)/,
-          /[\\\/]ss-3rdparty[\\\/]/,
-          /[\\\/]_dhtmlxgrid[\\\/]/,
-          /[\\\/]ui[\\\/]editattributeelements[\\\/]/,
-          /[\\\/]editattributeelements[\\\/]handlers[\\\/]/,
           /examples/,
         ],
         use: {
