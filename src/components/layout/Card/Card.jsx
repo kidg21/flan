@@ -10,31 +10,48 @@ import Grid from "layout/Grid";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 import PropTypes from "prop-types";
 
-const CardSection = styled.div``;
+const CardSectionWrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  background-color: ${(props) => {
+    return props.theme.palette[props.backgroundColor] || "";
+  }};
+  padding: ${(props) => {
+    return props.sectionPadding || "0.5em 1em";
+  }};
+  z-index: 1;
+  transition: all 0.2s ease;
+`;
 
 const CardWrapper = styled.div`
-display: flex;
-flex-direction: column;
-flex: none;
-box-shadow: ${(props) => {
+  ${CardSectionWrapper} {
+    &:first-of-type {
+      padding: 1em 1em 0.5em;
+    }
+    &:last-of-type {
+      padding: 0.5em 1em 1em;
+    }
+  }
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  flex: none;
+  box-shadow: ${(props) => {
     return props.theme.shadows[props.shadow] || "";
   }};
-border: ${(props) => {
+  border: ${(props) => {
     return props.border || "";
   }};
-border-color: ${(props) => {
+  border-color: ${(props) => {
     return props.theme.palette[props.borderColor] || "";
   }};
-padding: ${(props) => {
-    return props.cardPadding || "1em";
+  padding: ${(props) => {
+    return props.cardPadding || "";
   }};
   color: ${(props) => {
     return props.theme.text.primary;
   }};
-width: 100%;
-div:not(:first-child) {
-  margin-top: 1rem;
-}
   position: relative;
   /* Square off rounded edges of any direct children of Cards */
   /* Prototype Content - displays when a Card is empty */
@@ -51,11 +68,10 @@ div:not(:first-child) {
 `;
 
 const CardListWrapper = styled(Grid)`
+  /* Prototype Content - displays when a Card List is empty */
   ${CardWrapper} {
-    border-radius: 5px;
     height: 100%;
   }
-  /* Prototype Content - displays when a Card List is empty */
   &:empty {
     &:before {
       ${PlaceholderText}
@@ -114,6 +130,58 @@ function Card({
     >
       {children}
     </CardWrapper>
+  );
+}
+
+function CardSection({
+ children, className, id, padding, type 
+}) {
+  let sectionPadding;
+  let backgroundColor;
+  switch (type) {
+    case "info":
+      backgroundColor = "info";
+      break;
+    case "success":
+      backgroundColor = "success";
+      break;
+    case "warning":
+      backgroundColor = "warning";
+      break;
+    case "alert":
+      backgroundColor = "alert";
+      break;
+    default:
+      break;
+  }
+  switch (padding) {
+    case "none":
+      sectionPadding = "0em";
+      break;
+    case "1x":
+      sectionPadding = "0.25em";
+      break;
+    case "2x":
+      sectionPadding = "0.5em";
+      break;
+    case "3x":
+      sectionPadding = "0.75em";
+      break;
+    case "4x":
+      sectionPadding = "1em";
+      break;
+    default:
+      break;
+  }
+  return (
+    <CardSectionWrapper
+      backgroundColor={backgroundColor}
+      sectionPadding={sectionPadding}
+      className={className}
+      id={id}
+    >
+      {children}
+    </CardSectionWrapper>
   );
 }
 

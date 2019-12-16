@@ -1,12 +1,12 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
 /* eslint-disable complexity */
 // Import dependencies
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { Skeleton } from "helpers";
-
 
 const StyledLabel = styled.label`
   color: inherit;
@@ -35,7 +35,9 @@ const StyledLabel = styled.label`
 }
 
 &:after {
-  display: ${(props) => { return (props.isRequired ? "" : "none"); }};
+  display: ${(props) => {
+    return props.isRequired ? "" : "none";
+  }};
   content: "*";
   color: ${(props) => {
     return props.theme.palette.alert;
@@ -49,7 +51,14 @@ const StyledLabel = styled.label`
 `;
 
 function Label({
-  text, children, size, weight, htmlFor, letterSpacing, isRequired, textTransform,
+  children,
+  htmlFor,
+  isRequired,
+  letterSpacing,
+  size,
+  text,
+  textTransform,
+  weight,
 }) {
   let fontSize;
   let fontWeight;
@@ -98,24 +107,24 @@ function Label({
   );
 }
 Label.propTypes = {
-  text: PropTypes.string,
-  children: PropTypes.node,
-  size: PropTypes.string,
   htmlFor: PropTypes.node,
-  weight: PropTypes.string,
-  letterSpacing: PropTypes.string,
-  textTransform: PropTypes.string,
+  children: PropTypes.node,
   isRequired: PropTypes.bool,
+  letterSpacing: PropTypes.string,
+  size: PropTypes.string,
+  text: PropTypes.string,
+  textTransform: PropTypes.string,
+  weight: PropTypes.string,
 };
 Label.defaultProps = {
-  text: null,
-  children: null,
-  size: null,
   htmlFor: null,
+  children: null,
+  isRequired: false,
   letterSpacing: null,
-  weight: null,
+  size: null,
+  text: null,
   textTransform: null,
-  isRequired: null,
+  weight: null,
 };
 
 export { Label as default };

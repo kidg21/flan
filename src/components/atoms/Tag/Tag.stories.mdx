@@ -1,0 +1,107 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { withKnobs, label, boolean, select } from "@storybook/addon-knobs";
+import { action } from "@storybook/addon-actions";
+import { Padding } from "helpers/Display";
+import Grid from "layout/Grid";
+import Bar from "blocks/Bar";
+import Form, { Section } from "layout/Form";
+import Tag from "atoms/Tag";
+import Icon from "atoms/Icon";
+
+<Meta title="Atoms|Tag" component={Tag} />
+
+# Tag
+
+### Tags are used for items that need to be labeled, categorized, or organized using keywords that describe them.
+
+<Preview withToolbar>
+  <Story name="Standard">
+        <Grid columns="6">
+      <Tag label="Tag " />
+      <Tag label="Tag " type="blue" /> <Tag label="Tag " type="darkblue" /> <Tag
+        label="Tag "
+        type="lightgreen"
+      />
+      <Tag label="Tag " type="green" /> <Tag label="Tag " type="darkgreen" />
+       <Tag label="Tag" type="warning" />
+       <Tag label="Tag" type="alert" />{" "}
+    </Grid>
+  </Story>
+</Preview>
+
+# Usage
+
+If you need to represent the Taging between two states or on-off state.
+
+The difference between Tag and Checkbox is that Tag will trigger a state change directly when you toggle it, while Checkbox is generally used for state marking, which should work in conjunction with submit operation.
+
+A Tag is typically utilized in the following areas:
+
+- Input Forms
+- Filters
+- Settings
+
+Tags may appear in groups. When a Tag group is necessary use the TagGroup wrapper from the Tag directory to control the Tag layout.
+
+# Guidelines
+
+- **Opposing Options:**
+  Typically Tags would be used where the options are very different from each other so no user would ever consider selecting more than one option. If a user selects Option A, Option B should not be desirable to them.
+- **Clear:**
+  A Tag’s action and state should be clear.
+- **Be Brief**
+  Tag labels should be short and to the point. They should be one or two words. A label should never be a sentence.
+
+### Do & Don't
+
+<Preview>
+  <Story name="Usage">
+    <React.Fragment>
+      <Bar
+        padding="2x"
+        leftWidth="5%"
+        centerAlign="left"
+        contentAlign="center"
+        left={<Icon icon="check" type="success" size="2x" />}
+        center={<Tag label="Brief Label" />}
+      />
+      <Bar
+        padding="2x"
+        leftWidth="5%"
+        centerAlign="left"
+        contentAlign="center"
+        left={<Icon icon="close" type="alert" size="2x" />}
+        center={
+          <Tag label="Tag with a long label because you cannot be concise with your words." />
+        }
+      />
+    </React.Fragment>
+  </Story>
+</Preview>
+
+# Anatomy
+
+Tags consist of a circular input and a label. It is important that the label also has an htmlFor tag in order to link the Tag and be another way to select.
+
+A Tag may appear to the left or right of it's corresponding label. A Tag may not appear above or below the label.
+
+<!-- ## Behavior -->
+
+# Examples
+
+### Types
+
+<!-- We can drop it in a `Preview` to get a code snippet: -->
+
+<Preview>
+  <Story name="Types">
+    <Grid columns="6">
+      <Tag label="Info" type="info" /> <Tag label="Warning" type="warning" />
+      <Tag label="Success" type="success" /> <Tag label="Alert" type="alert" />{" "}
+    </Grid>
+  </Story>
+</Preview>
+
+### Props
+
+<Props of={Tag} />
