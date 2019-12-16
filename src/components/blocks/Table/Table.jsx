@@ -16,8 +16,8 @@ import {
 import styled from "styled-components";
 
 export const MultiGridWrapper = styled.div`
-  width: inherit;
-  height: inherit;
+  width: 100%;
+  height: 100%;
   border: 1px solid;
   border-color: ${(props) => {
     return props.theme.divider;
@@ -80,7 +80,7 @@ export const CellWrapper = styled.div`
     if (props.isSelected) {
       return props.theme.palette.success;
     }
-    return "";
+    return props.theme.background.default;
   }};
   [class^="Command"] {
     color: ${(props) => {
