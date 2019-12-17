@@ -62,7 +62,7 @@ const ListItemWrapper = styled.li`
 `;
 
 function List({
- children, divider, id, interactive, title 
+  children, divider, id, interactive, title,
 }) {
   return (
     <InteractiveContext.Provider value={interactive}>
@@ -81,6 +81,7 @@ function ListItem({
   id,
   avatar,
   toggle,
+  arrow,
   icon,
   checkbox,
   interactive,
@@ -131,23 +132,29 @@ function ListItem({
                   <Checkbox label={label} disabled={disabled} />
                 ) : null}
                 {toggle ? <Switch disabled={disabled} /> : null}
+                {arrow ? (
+                  <Icon icon={arrow} />
+                ) : null}
               </React.Fragment>
             }
           />
         ) : (
           <Bar
-            contentAlign="center"
-            centerAlign="left"
-            disabled={disabled}
-            left={mainContent}
-            right={
-              <React.Fragment>
-                {checkbox ? <Checkbox disabled={disabled} /> : null}
-                {toggle ? <Switch disabled={disabled} /> : null}
-              </React.Fragment>
-            }
-          />
-        )}
+              contentAlign="center"
+              centerAlign="left"
+              disabled={disabled}
+              left={mainContent}
+              right={
+                <React.Fragment>
+                  {checkbox ? <Checkbox disabled={disabled} /> : null}
+                  {toggle ? <Switch disabled={disabled} /> : null}
+                  {arrow ? (
+                    <Icon icon={arrow} />
+                  ) : null}
+                </React.Fragment>
+              }
+            />
+          )}
       </DisabledContext.Provider>
     </ListItemWrapper>
   );
