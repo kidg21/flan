@@ -35,6 +35,7 @@ const build = {
             plugins: [
               "transform-class-properties",
               "babel-plugin-styled-components",
+              "istanbul",
             ],
             babelrcRoots: ["./"],
           },
