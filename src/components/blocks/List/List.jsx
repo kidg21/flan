@@ -132,9 +132,7 @@ function ListItem({
                   <Checkbox label={label} disabled={disabled} />
                 ) : null}
                 {toggle ? <Switch disabled={disabled} /> : null}
-                {arrow ? (
-                  <Icon icon={arrow} />
-                ) : null}
+                {arrow ? <Icon icon={arrow} /> : null}
               </React.Fragment>
             }
           />
@@ -148,9 +146,7 @@ function ListItem({
                 <React.Fragment>
                   {checkbox ? <Checkbox disabled={disabled} /> : null}
                   {toggle ? <Switch disabled={disabled} /> : null}
-                  {arrow ? (
-                    <Icon icon={arrow} />
-                  ) : null}
+                  {arrow ? <Icon icon={arrow} /> : null}
                 </React.Fragment>
               }
             />
@@ -177,12 +173,13 @@ List.defaultProps = {
 
 ListItem.propTypes = {
   active: PropTypes.bool,
-  children: PropTypes.node,
   description: PropTypes.string,
   disabled: PropTypes.bool,
   id: PropTypes.string,
   icon: PropTypes.node,
   checkbox: PropTypes.node,
+  toggle: PropTypes.node,
+  arrow: PropTypes.node,
   avatar: PropTypes.string,
   interactive: PropTypes.bool,
   label: PropTypes.string.isRequired,
@@ -190,10 +187,11 @@ ListItem.propTypes = {
 };
 ListItem.defaultProps = {
   active: false,
-  children: null,
   description: null,
   icon: null,
   checkbox: null,
+  toggle: null,
+  arrow: null,
   avatar: null,
   disabled: false,
   id: null,
