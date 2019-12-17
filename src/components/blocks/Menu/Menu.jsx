@@ -17,6 +17,8 @@ const MenuContainer = styled.div`
   color: ${(props) => {
     return props.theme.text.primary;
   }};
+  padding: 0.5em;
+  margin: -0.5em;
 `;
 
 const MenuItem = styled.li`
