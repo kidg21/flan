@@ -72,13 +72,13 @@ export const CellWrapper = styled.div`
   }};
   background-color: ${(props) => {
     if (props.isHeader) {
-      return props.theme.palette.disabled;
+      return props.theme.background.app;
     }
     if (props.isHighlighted) {
       return props.theme.palette.primaryTint;
     }
     if (props.isSelected) {
-      return props.theme.palette.success;
+      return props.theme.palette.secondary;
     }
     return props.theme.background.default;
   }};
@@ -91,6 +91,17 @@ export const CellWrapper = styled.div`
     return "";
   }};
   }
+
+  &:after {
+    content: "v";
+    position: absolute;
+    right: 0;
+    display: ${(props) => {
+    return props.isSortable ? "" : "none";
+  }};
+
+  }
+
 `;
 
 function _containedInRowCol(cellRowCol, row, col) {
@@ -111,8 +122,8 @@ class Table extends Component {
   constructor(props) {
     super(props);
     const {
- rowHeight, columnWidth, minColWidth, minRowHeight 
-} = this.props;
+      rowHeight, columnWidth, minColWidth, minRowHeight,
+    } = this.props;
 
     if (rowHeight && columnWidth) {
       // if both provided, no need to use CellMeasurer
@@ -177,8 +188,8 @@ class Table extends Component {
   }
 
   _cellRenderer({
- columnIndex, rowIndex, key, parent, style 
-}) {
+    columnIndex, rowIndex, key, parent, style,
+  }) {
     const {
       rows,
       headers,
@@ -220,6 +231,14 @@ class Table extends Component {
       };
       cellProps.isHeader = true;
       cellData = headers[columnIndex].label || "";
+      if (headers[columnIndex].sortable) {
+        cellData = (<React.Fragment>{cellData}</React.Fragment>);
+        cellProps.isSortable = true;
+      }
+      // if (headers[columnIndex].id === sortColumnId) {
+      //   const arrow = sortDirection ? "up" : "down";
+      //   cellData = (<React.Fragment>{cellData}<Icon icon={arrow} /></React.Fragment>);
+      // }
     } else if (row) {
       // regular cell from a row that's ready to render
       cellData = row[headers[columnIndex].id];

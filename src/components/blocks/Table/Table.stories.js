@@ -21,12 +21,12 @@ import DataTable from "blocks/Table";
 // Only columns specified here will be displayed
 const headers = [
   { id: "options", label: "Actions" },
-  { id: "ACREAGE", label: "Acreage" },
-  { id: "AGGR_ACREAGE", label: "Aggregate Acreage" },
+  { id: "ACREAGE", label: "Acreage", sortable: true },
+  { id: "AGGR_ACREAGE", label: "Aggregate Acreage", sortable: true },
   { id: "AGGR_LOT_COUNT", label: "Aggregate Lot Count" },
   { id: "APN", label: "APN" },
-  { id: "BUILDING_SQFT", label: "Building SQFT" },
-  { id: "DATE_TRANSFER", label: "Date Transfer" },
+  { id: "BUILDING_SQFT", label: "Building SQFT", sortable: true },
+  { id: "DATE_TRANSFER", label: "Date Transfer", sortable: true },
   { id: "LAND_SQFT", label: "Land SQFT" },
   { id: "MAIL_ADDR", label: "Mailing Address" },
   { id: "OWNER_NAME_1", label: "Owner Name 1" },
