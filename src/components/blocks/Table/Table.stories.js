@@ -35,7 +35,7 @@ const headers = [
   { id: "USE_CODE_STD_DESCR", label: "Use Code Description" },
   { id: "VAL_TRANSFER", label: "Value Transfer" },
   { id: "YR_BLT", label: "Year Built" },
-  { id: "ZONING", label: "Zoning" }
+  { id: "ZONING", label: "Zoning" },
 ];
 
 const data = [
@@ -62,7 +62,7 @@ const data = [
     VAL_TRANSFER: "3388000",
     YR_BLT: "1913",
     ZONING: "LAC2",
-    _DMP_ID_FK: "510684071_237050"
+    _DMP_ID_FK: "510684071_237050",
   },
   {
     ACREAGE: "1.11",
@@ -87,7 +87,7 @@ const data = [
     VAL_TRANSFER: "",
     YR_BLT: "1981",
     ZONING: "LAC5",
-    _DMP_ID_FK: "510684071_237208"
+    _DMP_ID_FK: "510684071_237208",
   },
   {
     ACREAGE: "0.94",
@@ -112,7 +112,7 @@ const data = [
     VAL_TRANSFER: "1051800",
     YR_BLT: "2017",
     ZONING: "LAC2",
-    _DMP_ID_FK: "510684071_238978"
+    _DMP_ID_FK: "510684071_238978",
   },
   {
     ACREAGE: "0.07",
@@ -137,7 +137,7 @@ const data = [
     VAL_TRANSFER: "15664500",
     YR_BLT: "",
     ZONING: "LACM",
-    _DMP_ID_FK: "510684071_239101"
+    _DMP_ID_FK: "510684071_239101",
   },
   {
     ACREAGE: "0.12",
@@ -162,7 +162,7 @@ const data = [
     VAL_TRANSFER: "3388000",
     YR_BLT: "1913",
     ZONING: "LAC2",
-    _DMP_ID_FK: "510684071_237050"
+    _DMP_ID_FK: "510684071_237050",
   },
   {
     ACREAGE: "1.11",
@@ -187,7 +187,7 @@ const data = [
     VAL_TRANSFER: "",
     YR_BLT: "1981",
     ZONING: "LAC5",
-    _DMP_ID_FK: "510684071_237208"
+    _DMP_ID_FK: "510684071_237208",
   },
   {
     ACREAGE: "0.94",
@@ -212,7 +212,7 @@ const data = [
     VAL_TRANSFER: "1051800",
     YR_BLT: "2017",
     ZONING: "LAC2",
-    _DMP_ID_FK: "510684071_238978"
+    _DMP_ID_FK: "510684071_238978",
   },
   {
     ACREAGE: "0.07",
@@ -237,7 +237,7 @@ const data = [
     VAL_TRANSFER: "15664500",
     YR_BLT: "",
     ZONING: "LACM",
-    _DMP_ID_FK: "510684071_239101"
+    _DMP_ID_FK: "510684071_239101",
   },
   {
     ACREAGE: "0.12",
@@ -262,7 +262,7 @@ const data = [
     VAL_TRANSFER: "3388000",
     YR_BLT: "1913",
     ZONING: "LAC2",
-    _DMP_ID_FK: "510684071_237050"
+    _DMP_ID_FK: "510684071_237050",
   },
   {
     ACREAGE: "1.11",
@@ -287,7 +287,7 @@ const data = [
     VAL_TRANSFER: "",
     YR_BLT: "1981",
     ZONING: "LAC5",
-    _DMP_ID_FK: "510684071_237208"
+    _DMP_ID_FK: "510684071_237208",
   },
   {
     ACREAGE: "0.94",
@@ -312,7 +312,7 @@ const data = [
     VAL_TRANSFER: "1051800",
     YR_BLT: "2017",
     ZONING: "LAC2",
-    _DMP_ID_FK: "510684071_238978"
+    _DMP_ID_FK: "510684071_238978",
   },
   {
     ACREAGE: "0.07",
@@ -337,7 +337,7 @@ const data = [
     VAL_TRANSFER: "15664500",
     YR_BLT: "",
     ZONING: "LACM",
-    _DMP_ID_FK: "510684071_239101"
+    _DMP_ID_FK: "510684071_239101",
   },
   {
     ACREAGE: "0.12",
@@ -362,8 +362,8 @@ const data = [
     VAL_TRANSFER: "3388000",
     YR_BLT: "1913",
     ZONING: "LAC2",
-    _DMP_ID_FK: "510684071_237050"
-  }
+    _DMP_ID_FK: "510684071_237050",
+  },
 ];
 
 const options = [
@@ -372,7 +372,7 @@ const options = [
   { value: "vanilla", label: "Vanilla" },
   { value: "pistachio", label: "Pistachio" },
   { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
-  { value: "cookie dough", label: "Cookie Dough" }
+  { value: "cookie dough", label: "Cookie Dough" },
 ];
 
 storiesOf("Blocks|Table", module)
@@ -477,12 +477,12 @@ storiesOf("Blocks|Table", module)
           Button,
           {
             label: "Click Me!",
-            onClick: e => {
+            onClick: (e) => {
               e.stopPropagation();
               alert(`data entry edit ${i} clicked`);
-            }
+            },
           },
-          null
+          null,
         );
       }
 
@@ -525,12 +525,12 @@ storiesOf("Blocks|Table", module)
           Command,
           {
             command: "edit",
-            onClick: e => {
+            onClick: (e) => {
               e.stopPropagation();
               alert(`data entry edit ${i} clicked`);
-            }
+            },
           },
-          null
+          null,
         );
       }
 
@@ -574,12 +574,12 @@ storiesOf("Blocks|Table", module)
           {
             placeholder: "Choose...",
             options: options,
-            onClick: e => {
+            onClick: (e) => {
               e.stopPropagation();
               alert(`data entry edit ${i} clicked`);
-            }
+            },
           },
-          null
+          null,
         );
       }
 
