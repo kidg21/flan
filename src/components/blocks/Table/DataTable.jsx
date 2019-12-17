@@ -201,8 +201,6 @@ class DataTable extends Component {
       onCellMouseOut,
       onCellMouseOver,
       onHeaderMouseOver,
-      sortColumnId,
-      sortDirection,
       onHeaderMouseOut,
     } = this.props;
     const row = rows[rowIndex - 1];
