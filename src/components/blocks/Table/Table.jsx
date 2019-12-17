@@ -82,6 +82,7 @@ export const CellWrapper = styled.div`
     }
     return props.theme.background.default;
   }};
+  [class^="Menu"],
   [class^="Command"] {
     color: ${(props) => {
     if (props.isSelected) {

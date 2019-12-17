@@ -6,10 +6,12 @@
 /* eslint-disable linebreak-style */
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
+import { Container } from "helpers/Display";
 import Title from "base/Typography";
 import Layout from "layout/Layout";
 import Panel, { PanelSection } from "layout/Panel";
 import Card from "layout/Card";
+import Menu from "blocks/Menu";
 import Button from "atoms/Button";
 import Command from "atoms/Command";
 import SelectMenu from "atoms/SelectMenu";
@@ -35,7 +37,7 @@ const headers = [
   { id: "USE_CODE_STD_DESCR", label: "Use Code Description" },
   { id: "VAL_TRANSFER", label: "Value Transfer" },
   { id: "YR_BLT", label: "Year Built" },
-  { id: "ZONING", label: "Zoning" }
+  { id: "ZONING", label: "Zoning" },
 ];
 
 const data = [
@@ -62,7 +64,7 @@ const data = [
     VAL_TRANSFER: "3388000",
     YR_BLT: "1913",
     ZONING: "LAC2",
-    _DMP_ID_FK: "510684071_237050"
+    _DMP_ID_FK: "510684071_237050",
   },
   {
     ACREAGE: "1.11",
@@ -87,7 +89,7 @@ const data = [
     VAL_TRANSFER: "",
     YR_BLT: "1981",
     ZONING: "LAC5",
-    _DMP_ID_FK: "510684071_237208"
+    _DMP_ID_FK: "510684071_237208",
   },
   {
     ACREAGE: "0.94",
@@ -112,7 +114,7 @@ const data = [
     VAL_TRANSFER: "1051800",
     YR_BLT: "2017",
     ZONING: "LAC2",
-    _DMP_ID_FK: "510684071_238978"
+    _DMP_ID_FK: "510684071_238978",
   },
   {
     ACREAGE: "0.07",
@@ -137,7 +139,7 @@ const data = [
     VAL_TRANSFER: "15664500",
     YR_BLT: "",
     ZONING: "LACM",
-    _DMP_ID_FK: "510684071_239101"
+    _DMP_ID_FK: "510684071_239101",
   },
   {
     ACREAGE: "0.12",
@@ -162,7 +164,7 @@ const data = [
     VAL_TRANSFER: "3388000",
     YR_BLT: "1913",
     ZONING: "LAC2",
-    _DMP_ID_FK: "510684071_237050"
+    _DMP_ID_FK: "510684071_237050",
   },
   {
     ACREAGE: "1.11",
@@ -187,7 +189,7 @@ const data = [
     VAL_TRANSFER: "",
     YR_BLT: "1981",
     ZONING: "LAC5",
-    _DMP_ID_FK: "510684071_237208"
+    _DMP_ID_FK: "510684071_237208",
   },
   {
     ACREAGE: "0.94",
@@ -212,7 +214,7 @@ const data = [
     VAL_TRANSFER: "1051800",
     YR_BLT: "2017",
     ZONING: "LAC2",
-    _DMP_ID_FK: "510684071_238978"
+    _DMP_ID_FK: "510684071_238978",
   },
   {
     ACREAGE: "0.07",
@@ -237,7 +239,7 @@ const data = [
     VAL_TRANSFER: "15664500",
     YR_BLT: "",
     ZONING: "LACM",
-    _DMP_ID_FK: "510684071_239101"
+    _DMP_ID_FK: "510684071_239101",
   },
   {
     ACREAGE: "0.12",
@@ -262,7 +264,7 @@ const data = [
     VAL_TRANSFER: "3388000",
     YR_BLT: "1913",
     ZONING: "LAC2",
-    _DMP_ID_FK: "510684071_237050"
+    _DMP_ID_FK: "510684071_237050",
   },
   {
     ACREAGE: "1.11",
@@ -287,7 +289,7 @@ const data = [
     VAL_TRANSFER: "",
     YR_BLT: "1981",
     ZONING: "LAC5",
-    _DMP_ID_FK: "510684071_237208"
+    _DMP_ID_FK: "510684071_237208",
   },
   {
     ACREAGE: "0.94",
@@ -312,7 +314,7 @@ const data = [
     VAL_TRANSFER: "1051800",
     YR_BLT: "2017",
     ZONING: "LAC2",
-    _DMP_ID_FK: "510684071_238978"
+    _DMP_ID_FK: "510684071_238978",
   },
   {
     ACREAGE: "0.07",
@@ -337,7 +339,7 @@ const data = [
     VAL_TRANSFER: "15664500",
     YR_BLT: "",
     ZONING: "LACM",
-    _DMP_ID_FK: "510684071_239101"
+    _DMP_ID_FK: "510684071_239101",
   },
   {
     ACREAGE: "0.12",
@@ -362,8 +364,46 @@ const data = [
     VAL_TRANSFER: "3388000",
     YR_BLT: "1913",
     ZONING: "LAC2",
-    _DMP_ID_FK: "510684071_237050"
-  }
+    _DMP_ID_FK: "510684071_237050",
+  },
+];
+
+const menu = [
+  {
+    id: "a",
+    onClickLink: () => {
+      console.log("clicked Save");
+    },
+    name: "Save",
+  },
+  {
+    id: "b",
+    onClickLink: () => {
+      console.log("clicked Filter");
+    },
+    name: "Filter",
+  },
+  {
+    id: "c",
+    onClickLink: () => {
+      console.log("clicked Share");
+    },
+    name: "Share",
+  },
+  {
+    id: "d",
+    onClickLink: () => {
+      console.log("clicked Refresh");
+    },
+    name: "Refresh",
+  },
+  {
+    id: "e",
+    onClickLink: () => {
+      console.log("clicked Layer");
+    },
+    name: "Layer",
+  },
 ];
 
 const options = [
@@ -372,10 +412,64 @@ const options = [
   { value: "vanilla", label: "Vanilla" },
   { value: "pistachio", label: "Pistachio" },
   { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
-  { value: "cookie dough", label: "Cookie Dough" }
+  { value: "cookie dough", label: "Cookie Dough" },
 ];
 
+// export default {
+//   title: "Blocks|Table/Tests",
+//   parameters: {},
+//   includeStories: [],
+// };
+
+// export const Simple = () => {
+//   return (
+//     <Panel>
+//       <DataTable
+//         headers={headers.slice(1)}
+//         rows={data}
+//         listId="foo"
+//         columnWidth={180}
+//       />
+//     </Panel>
+//   );
+// };
+
+// export const Interactive = () => {
+//   return React.createElement(() => {
+//     const [highlightedCell, setHighlightCell] = useState(null);
+//     const [selectedCell, setSelectedCell] = useState(null);
+//     const onCellClick = (e, { rowIndex }) => {
+//       setSelectedCell({ rowIndex });
+//     };
+
+//     const onHeaderClick = (e, { columnIndex }) => {
+//       alert(`Header ${columnIndex}: ${headers[columnIndex].id} clicked`);
+//     };
+
+//     const onCellMouseOver = (e, { rowIndex }) => {
+//       setHighlightCell({ rowIndex });
+//     };
+
+//     return (
+//       <Layout>
+//         <DataTable
+//           headers={headers.slice(1)}
+//           rows={data}
+//           listId="foo"
+//           onCellClick={onCellClick}
+//           onHeaderClick={onHeaderClick}
+//           onCellMouseOver={onCellMouseOver}
+//           highlightedCell={highlightedCell}
+//           selectedCell={selectedCell}
+//           columnWidth={180}
+//         />
+//       </Layout>
+//     );
+//   });
+// };
+
 storiesOf("Blocks|Table", module)
+  // .addDecorator(Container)
   .add("Simple", () => {
     return (
       <Layout>
@@ -468,6 +562,54 @@ storiesOf("Blocks|Table", module)
     });
   })
 
+  .add("With Actions (Menu)", () => {
+    return React.createElement(() => {
+      const [highlightedCell, setHighlightCell] = useState(null);
+      const [selectedCell, setSelectedCell] = useState(null);
+      for (let i = 0; i < data.length; i++) {
+        data[i].options = React.createElement(
+          Menu,
+          {
+            data: menu,
+            // onClick: e => {
+            //   e.stopPropagation();
+            //   alert(`data entry edit ${i} clicked`);
+            // }
+          },
+          null,
+        );
+      }
+
+      const onCellClick = (e, { rowIndex }) => {
+        setSelectedCell({ rowIndex });
+      };
+
+      const onHeaderClick = (e, { columnIndex }) => {
+        alert(`Header ${columnIndex}: ${headers[columnIndex].id} clicked`);
+      };
+
+      const onCellMouseOver = (e, { rowIndex }) => {
+        setHighlightCell({ rowIndex });
+      };
+
+      return (
+        <Layout>
+          <DataTable
+            headers={headers}
+            rows={data}
+            listId="foo"
+            onCellClick={onCellClick}
+            onHeaderClick={onHeaderClick}
+            onCellMouseOver={onCellMouseOver}
+            highlightedCell={highlightedCell}
+            selectedCell={selectedCell}
+            columnWidth={180}
+          />
+        </Layout>
+      );
+    });
+  })
+
   .add("With Actions (Button)", () => {
     return React.createElement(() => {
       const [highlightedCell, setHighlightCell] = useState(null);
@@ -477,12 +619,12 @@ storiesOf("Blocks|Table", module)
           Button,
           {
             label: "Click Me!",
-            onClick: e => {
-              e.stopPropagation();
-              alert(`data entry edit ${i} clicked`);
-            }
+            // onClick: (e) => {
+            //   e.stopPropagation();
+            //   alert(`data entry edit ${i} clicked`);
+            // },
           },
-          null
+          null,
         );
       }
 
@@ -525,12 +667,12 @@ storiesOf("Blocks|Table", module)
           Command,
           {
             command: "edit",
-            onClick: e => {
-              e.stopPropagation();
-              alert(`data entry edit ${i} clicked`);
-            }
+            // onClick: e => {
+            //   e.stopPropagation();
+            //   alert(`data entry edit ${i} clicked`);
+            // }
           },
-          null
+          null,
         );
       }
 
@@ -574,12 +716,12 @@ storiesOf("Blocks|Table", module)
           {
             placeholder: "Choose...",
             options: options,
-            onClick: e => {
-              e.stopPropagation();
-              alert(`data entry edit ${i} clicked`);
-            }
+            // onClick: e => {
+            //   e.stopPropagation();
+            //   alert(`data entry edit ${i} clicked`);
+            // }
           },
-          null
+          null,
         );
       }
 
