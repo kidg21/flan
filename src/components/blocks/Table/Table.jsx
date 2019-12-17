@@ -78,7 +78,7 @@ export const CellWrapper = styled.div`
       return props.theme.palette.primaryTint;
     }
     if (props.isSelected) {
-      return props.theme.palette.primary;
+      return props.theme.palette.secondary;
     }
     return props.theme.background.default;
   }};
