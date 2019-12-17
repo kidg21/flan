@@ -108,6 +108,7 @@ pipelines:
             # Install dependencies
             - npm install --no-package-lock
             # Run tests and push coverage to Codacy
-            - set -eu
-            - set -o pipefail
             - npm run testWithCoverage
+            - echo $?
+          after-script:
+            - echo $BITBUCKET_EXIT_CODE
