@@ -11,7 +11,7 @@
     "testBuild": "webpack --config ./webpackConfigs/testBuild.config.js",
     "build": "webpack",
     "test": "mocha",
-    "testWithCoverage": "nyc mocha | codacy-coverage --token ca0a1dcce45a40e8bd8fe18863b5c017"
+    "testWithCoverage": "nyc npm run test | codacy-coverage --token ca0a1dcce45a40e8bd8fe18863b5c017"
   },
   "nyc": {
     "extension": [
