@@ -95,12 +95,13 @@ storiesOf("Atoms|Button", module)
         <Button label="Standard Secondary" color="secondary" />
         <Button label="Solid Secondary" type="solid" color="secondary" />
         <Button label="Underline Primary" type="underlined" />
-        <Button label="Underline Secondary" type="underlined" color="secondary" />
-        <Button label="Inline Primary" type="inline" />
-        <Button label="Inline Secondary" type="inline" color="secondary" />
+        <Button
+          label="Underline Secondary"
+          type="underlined"
+          color="secondary"
+        />
         <Button label="Disabled Button" color="secondary" disabled />
         <Button label="Disabled Underline" type="underlined" disabled />
-        <Button label="Disabled Inline" type="inline" disabled />
       </Grid>
     );
 
@@ -108,11 +109,7 @@ storiesOf("Atoms|Button", module)
       let output = null;
       return describe("The Button Family", () => {
         before(() => {
-          output = mount((
-            <ThemeProvider theme={DMPTheme}>
-              {story}
-            </ThemeProvider>
-          ));
+          output = mount(<ThemeProvider theme={DMPTheme}>{story}</ThemeProvider>,);
         });
 
         after(() => {

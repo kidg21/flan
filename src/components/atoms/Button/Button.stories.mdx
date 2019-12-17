@@ -5,14 +5,11 @@ import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
 import Button from "atoms/Button";
 
-<Meta title="Work|Docs/Button (MDX)" component={Button} />
+<Meta title="Atoms|Button" component={Button} />
 
 # Button
 
 ### Buttons allow users to take actions, and make choices, with a single tap.
-
-( _This documentaion is written in `MDX` which allows us to use interactive code (JSX) inside of Markdown._
-)
 
 <Preview withToolbar>
   <Story name="Standard">
@@ -20,7 +17,8 @@ import Button from "atoms/Button";
   </Story>
 </Preview>
 
-## Usage
+# Usage
+
 Buttons communicate actions that users can take. They are typically placed throughout your UI, in places like:
 
 - Dialogs
@@ -29,7 +27,8 @@ Buttons communicate actions that users can take. They are typically placed throu
 - Cards
 - Toolbars
 
-## Principles
+# Principles
+
 - **Identifiable:**
   Buttons should indicate that they can trigger an action.
 - **Findable:**
@@ -37,25 +36,21 @@ Buttons communicate actions that users can take. They are typically placed throu
 - **Clear:**
   A button’s action and state should be clear.
 
-## Props
-<Props of={Button} />
-
-## Stories
+# Examples
 
 ### Type
-We can drop it in a `Preview` to get a code snippet:
+
 <Preview>
   <Story name="Type">
     <Grid>
       <Button label="Standard Button" />
       <Button label="Solid Button" type="solid" />
-      <Button label="Inline Button" type="inline" />
-      <Button label="Underlined Button" type="underlined" />
     </Grid>
   </Story>
 </Preview>
 
 ### Size
+
 <Preview>
   <Story name="Size">
     <Grid>
@@ -67,6 +62,7 @@ We can drop it in a `Preview` to get a code snippet:
 </Preview>
 
 ### Color
+
 <Preview>
   <Story name="Color">
     <Grid>
@@ -76,11 +72,16 @@ We can drop it in a `Preview` to get a code snippet:
       <Button label="Success Button" color="success" />
       <Button label="Warning Button" color="warning" />
       <Button label="Alert Button" color="alert" />
+      <Button label="Solid Info" color="info" type="solid" />
+      <Button label="Solid Success" color="success" type="solid" />
+      <Button label="Solid Warning" color="warning" type="solid" />
+      <Button label="Solid Alert" color="alert" type="solid" />
     </Grid>
   </Story>
 </Preview>
 
 ### Icons
+
 <Preview>
   <Story name="Icons">
     <Grid>
@@ -93,7 +94,7 @@ We can drop it in a `Preview` to get a code snippet:
   </Story>
 </Preview>
 
-### Knobs
+<!-- ### Knobs
 Experiment with this story using the Knobs addon in Canvas mode.
 <Story name="Knobs" parameters={{ decorators: [Padding, withKnobs] }}>
   <Button
@@ -105,18 +106,21 @@ Experiment with this story using the Knobs addon in Canvas mode.
     fullWidth={boolean("full width", false, "Button")}
     disabled={boolean("disabled", false, "Button")}
   />
-</Story>
+</Story> -->
 
-### Actions
+<!-- ### Actions
 Actions can be used to display data received by event handlers.  Try it using the Actions addon in Canvas mode.
 <Story name="Actions" parameters={{ decorators: [Padding] }}>
   <Button label="Click Me!" onClick={action("onClick")} />
-</Story>
+</Story> -->
 
-Link a story to a component `ID` here without a code preview
-<Story id="atoms-checkbox--checkbox-states" />
-
-And here with a preview
+<!-- Link a story to a component `ID` here without a code preview
+<Story id="atoms-checkbox--checkbox-states" /> -->
+<!-- And here with a preview
 <Preview>
   <Story id="atoms-checkbox--checkbox-states" />
-</Preview>
+</Preview> -->
+
+## Props
+
+<Props of={Button} />

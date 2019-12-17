@@ -115,6 +115,7 @@ const ButtonIcon = styled(Icon)`
 * */
 
 function Button({
+  border,
   className,
   color,
   disabled,
@@ -124,8 +125,6 @@ function Button({
   label,
   onClick,
   underlineColor,
-  border,
-  style,
   type,
 }) {
   let backgroundColor;
@@ -230,17 +229,19 @@ function Button({
       labelSize={labelSize}
       name={id}
       onClick={onClick}
-      style={style}
       tabIndex={disabled ? "-1" : "1"}
       type={type}
     >
       {icon ? <ButtonIcon icon={icon} size="lg" /> : null}
-      {label ? <Label letterSpacing="0.075em" weight="semibold" text={label} /> : null}
+      {label ? (
+        <Label letterSpacing="0.075em" weight="semibold" text={label} />
+      ) : null}
     </StyledButton>
   );
 }
 
 Button.propTypes = {
+  border: PropTypes.string,
   className: PropTypes.string,
   color: PropTypes.oneOf([
     "success",
@@ -258,12 +259,12 @@ Button.propTypes = {
   onClick: PropTypes.func,
   size: PropTypes.oneOf(["small", "large"]),
   underlineColor: PropTypes.string,
-  border: PropTypes.string,
   style: PropTypes.string,
   type: PropTypes.oneOf(["underlined", "inline", "solid"]),
 };
 
 Button.defaultProps = {
+  border: "1px solid",
   className: null,
   color: null,
   disabled: false,
@@ -276,7 +277,6 @@ Button.defaultProps = {
   style: null,
   type: null,
   underlineColor: null,
-  border: null,
 };
 
 export { Button as default };

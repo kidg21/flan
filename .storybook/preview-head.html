@@ -10,8 +10,16 @@
   #docs-root [class^="sbdocs"] {
     font-family: "Muli";
   }
-  #docs-root [class^="sbdocs-h1"] {
-    font-weight: 600;
+  /* Helps components like 'Select Menu' not get cropped by the Preview container */
+  #docs-root .css-h1ypda {
+    overflow: initial;
+  }
+  #docs-root .sbdocs-h1 {
+    font-weight: 700;
+  }
+  #docs-root a {
+    margin: initial;
+    padding: initial;
   }
 
   ::-webkit-scrollbar {
