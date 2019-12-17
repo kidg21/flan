@@ -24,6 +24,7 @@
       { "ssr": true, "displayName": true, "preprocess": false }
     ],
     ["markdown"],
+    ["istanbul"],
     [
       "module-resolver",
       {
