@@ -144,8 +144,12 @@ CardComponent.propTypes = {
   line1: PropTypes.string,
   line2: PropTypes.string, */
   body: PropTypes.node,
-  expands: PropTypes.node,
-  commands: PropTypes.node,
+  expands: PropTypes.bool,
+  commands: PropTypes.arrayOf(PropTypes.shape({
+    label: PropTypes.string,
+    onClick: PropTypes.func,
+    disabled: PropTypes.bool,
+  })),
   description: PropTypes.string,
 };
 
