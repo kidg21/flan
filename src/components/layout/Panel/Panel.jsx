@@ -15,6 +15,9 @@ const Panel = styled.div`
   align-content: stretch;
   width: 100%;
   height: 100%;
+  border: .5px solid ${(props) => {
+    return props.theme.palette.grey5;
+  }};
   max-height: 100vh;
   overflow: hidden;
   transform: none;

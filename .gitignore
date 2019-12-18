@@ -41,6 +41,9 @@ build/Release
 node_modules/
 jspm_packages/
 
+# Storybook build directory
+storybook-static/
+
 # TypeScript v1 declaration files
 typings/
 

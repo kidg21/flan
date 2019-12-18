@@ -99,6 +99,7 @@ const buttonType = {
 - Clear: A button’s action and state should be clear.
 * */
 function Button({
+  border,
   className,
   color,
   disabled,
@@ -107,8 +108,6 @@ function Button({
   id,
   label,
   onClick,
-  border,
-  style,
   type,
 }) {
   let backgroundColor;
@@ -155,26 +154,28 @@ function Button({
       backgroundColor={backgroundColor}
       border={borderStyle}
       borderBottom={borderBottom}
-      underlineColor={underline}
-      disabled={isDisabled}
       className={className}
+      disabled={isDisabled}
       fontColor={fontColor}
       fontWeight={fontWeight}
       fullWidth={fullWidth}
       id={id}
       name={id}
       onClick={onClick}
-      style={style}
       tabIndex={disabled ? "-1" : "1"}
+      underlineColor={underline}
     >
       {icon ? <ButtonIcon icon={icon} size="lg" /> : null}
-      {label ? <Label letterSpacing="0.075em" weight="semibold" text={label} /> : null}
+      {label ? (
+        <Label letterSpacing="0.075em" weight="semibold" text={label} />
+      ) : null}
     </StyledButton>
   );
 }
 Button.displayName = "ButtonWrapper";
 
 Button.propTypes = {
+  border: PropTypes.string,
   className: PropTypes.string,
   color: PropTypes.oneOf([
     "success",
@@ -190,12 +191,11 @@ Button.propTypes = {
   id: PropTypes.string,
   label: PropTypes.string,
   onClick: PropTypes.func,
-  border: PropTypes.string,
-  style: PropTypes.object,
   type: PropTypes.oneOf(["underlined", "inline", "solid"]),
 };
 
 Button.defaultProps = {
+  border: "1px solid",
   className: null,
   color: "primary",
   disabled: false,
@@ -204,9 +204,7 @@ Button.defaultProps = {
   id: null,
   label: null,
   onClick: null,
-  style: null,
   type: null,
-  border: "1px solid",
 };
 
 export { Button as default };

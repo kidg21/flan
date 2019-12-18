@@ -5,7 +5,7 @@ import { Padding } from "helpers/Display";
 import Card, { CardList } from "layout/Card";
 
 // Card
-storiesOf("Layout|Card", module)
+storiesOf("Work|Card/Layout", module)
   .addDecorator(Padding)
   .addDecorator(checkA11y)
   .add("Default", () => {

@@ -10,7 +10,7 @@ const Block = styled.div`
     return props.gridColumns || "1fr 4fr";
   }};
   padding: ${(props) => {
-    return props.blockPadding || "0.5rem 1rem 1rem 0.5rem";
+    return props.blockPadding || "0";
   }};
   grid-template-areas: ${(props) => {
     return props.gridTemplate || "'content body' '. body'";

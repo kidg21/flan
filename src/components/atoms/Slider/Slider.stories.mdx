@@ -1,0 +1,104 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { withKnobs, label, boolean, select } from "@storybook/addon-knobs";
+import { action } from "@storybook/addon-actions";
+import { Padding } from "helpers/Display";
+import Grid from "layout/Grid";
+import Bar from "blocks/Bar";
+import Form, { Section } from "layout/Form";
+import Slider from "atoms/Slider";
+import Icon from "atoms/Icon";
+import RangeSlider from "blocks/RangeSlider";
+
+<Meta title="Atoms|Slider" component={Slider} />
+
+# Slider
+
+### Sliders provide a visual indication of adjustable content, where the user can move the handle along a horizontal track to increase or decrease the value.
+
+<Preview withToolbar>
+  <Story name="Standard">
+    <Slider label="Slider" />
+  </Story>
+</Preview>
+
+# Usage
+
+An input range slider lets the user specify a numeric value which must be between two specified values.
+Sliders allow users to make selections from a range of values.
+
+Sliders reflect a range of values along a bar, from which users may select a single value. They are ideal for adjusting settings such as volume, brightness, or applying image filters.
+
+Sliders can have icons on both ends of the bar that reflect a range of values.
+
+Immediate effects
+Changes made with sliders are immediate, allowing a user to make slider adjustments until finding their preference. They shouldn’t be paired with settings that have even minor delays in providing user feedback.
+
+Current state
+Sliders reflect the current state of the settings they control.
+
+<Preview withToolbar>
+  <Story name="RangeSlider">
+    <RangeSlider label="Slider" />
+  </Story>
+</Preview>
+
+Sliders may appear in groups. When a Slider group is necessary use the SliderGroup wrapper from the Slider directory to control the Slider layout.
+
+# Guidelines
+
+Editable numeric values
+Editable numeric values allow users to set the exact value of a slider.
+
+Upon pressing the thumb or the value indicator field, the value indicator input becomes editable for text entry. The thumb position immediately is updated to match any change in value.
+
+Order of values
+For languages that are displayed from left-to-right, such as English, the smallest value for the range appears on the left and the largest value appears on the right.
+
+For right-to-left languages, like Arabic, this placement would be switched (with the largest value on the left, and the smallest on the right).
+
+- **Adjustable**
+  Sliders should only be used for choosing selections from a range of values. -**Immediate**
+  When interacting with a slider, changes should be represented immediately.
+- **Accessible**
+  Sliders should provide the full range of choices available for the user to select from.
+
+# Anatomy
+
+A slider can contain the following elements:
+
+1. **Track:**
+   The track shows the range available for user selection. For left-to-right (LTR) languages, the smallest value appears on the far left, and the largest value on the far right. For right-to-left (RTL) languages this orientation is reversed, with the smallest value on the far right and the largest value on the far left.
+
+2. **Thumb:**
+   The thumb slides along the track, displaying the selected value through its position.
+
+3. **Value label (optional):**
+   A value label displays the currently selected, specific numerical value.
+
+<!-- ## Behavior -->
+
+# Examples
+
+### States
+
+<!-- We can drop it in a `Preview` to get a code snippet: -->
+
+<Preview>
+  <Story name="States">
+    <Form columns="1">
+      <Section title="Standard">
+        <Slider />
+      </Section>
+      <Section title="Error">
+        <Slider error />
+      </Section>
+      <Section title="Disabled">
+        <Slider disabled />
+      </Section>
+    </Form>
+  </Story>
+</Preview>
+
+### Props
+
+<Props of={Slider} />
