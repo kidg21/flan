@@ -1,7 +1,5 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React from "react";
 
 import { Padding } from "helpers/Display";
@@ -111,10 +109,7 @@ storiesOf("Blocks|Input Block", module)
         label={text("input label", "Input Block Label", "Input Block")}
         isRequired={boolean("required", false, "Input Block")}
         helpText={text("help text", "Have you been helped yet?", "Input Block")}
-        error={
-          boolean("error", false, "Input Block") &&
-          text("error text", "Error message...", "Input Block")
-        }
+        error={text("error", null, "Input Block")}
         disabled={boolean("disabled", false, "Input Block")}
         textInputs={object(
           "text inputs",
@@ -130,11 +125,10 @@ storiesOf("Blocks|Input Block", module)
           "Inputs",
         )}
         text={text("text", "", "Labels")}
-        icon={
-          boolean("icon", false, "Input Block") &&
-          options(
+        icon={options(
             "pre-icon",
             {
+              none: null,
               user_circle: "user_circle",
               down: "down",
               bookmark: "bookmark_solid",
@@ -147,15 +141,9 @@ storiesOf("Blocks|Input Block", module)
           )
         }
         // button={text("button label", "Button", "Button")}
-        button={
-          boolean("button", false, "Input Block") &&
-          object("button", button, "Button")
-        }
+        button={object("button", button, "Button")}
         // options={titles}
-        options={
-          boolean("options", false, "Input Block") &&
-          object("options", titles, "Options")
-        }
+        options={object("options", titles, "Options")}
         selectOptions={titles[0].value}
       />
     );

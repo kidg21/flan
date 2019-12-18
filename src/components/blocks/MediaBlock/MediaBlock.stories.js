@@ -1,8 +1,6 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
-import React from "react";
+import React, { Fragment } from "react";
 import { Padding } from "helpers/Display";
 import Image from "atoms/Image";
 import Card, { CardList } from "layout/Card";
@@ -18,10 +16,10 @@ const image = (
   />
 );
 const body = (
-  <>
+  <Fragment>
     <Title text="Media Block" />
     <Description text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. " />
-  </>
+  </Fragment>
 );
 const description = (
   <Description text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy." />
@@ -30,11 +28,11 @@ const description = (
 storiesOf("Blocks|Media Block", module)
   .addParameters({
     info: {
-      text: "Media Block info goes here..."
+      text: "Media Block info goes here...",
     },
     notes: {
-      markdown: MediaBlockNotes
-    }
+      markdown: MediaBlockNotes,
+    },
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
@@ -42,7 +40,7 @@ storiesOf("Blocks|Media Block", module)
     "Documentation",
     withInfo()(() => {
       return <MediaBlock media={image} body={body} />;
-    })
+    }),
   )
   .add("Knobs", () => {
     return (
@@ -55,11 +53,11 @@ storiesOf("Blocks|Media Block", module)
             {
               default: null,
               vertical: "vertical",
-              inline: "inline"
+              inline: "inline",
             },
             null,
             { display: "select" },
-            "Media Block"
+            "Media Block",
           )}
           reverse={boolean("reverse", false, "Media Block")}
           circle={boolean("circle", false, "Media Block")}
@@ -86,10 +84,10 @@ storiesOf("Blocks|Media Block", module)
           <MediaBlock
             media={image}
             body={
-              <>
+              <Fragment>
                 <Title text="Media Block" />
                 {description}
-              </>
+              </Fragment>
             }
           />
         </Card>
@@ -97,10 +95,10 @@ storiesOf("Blocks|Media Block", module)
           <MediaBlock
             media={image}
             body={
-              <>
+              <Fragment>
                 <Title text="Media Block (reverse)" />
                 {description}
-              </>
+              </Fragment>
             }
             reverse
           />
@@ -109,10 +107,10 @@ storiesOf("Blocks|Media Block", module)
           <MediaBlock
             media={image}
             body={
-              <>
+              <Fragment>
                 <Title text="Media Block - Vertical" />
                 {description}
-              </>
+              </Fragment>
             }
             align="vertical"
           />
@@ -121,10 +119,10 @@ storiesOf("Blocks|Media Block", module)
           <MediaBlock
             media={image}
             body={
-              <>
+              <Fragment>
                 <Title text="Media Block - Vertical (reverse)" />
                 {description}
-              </>
+              </Fragment>
             }
             align="vertical"
             reverse
@@ -134,10 +132,10 @@ storiesOf("Blocks|Media Block", module)
           <MediaBlock
             media={image}
             body={
-              <>
+              <Fragment>
                 <Title text="Media Block - Inline" />
                 {description}
-              </>
+              </Fragment>
             }
             align="inline"
           />
@@ -146,10 +144,10 @@ storiesOf("Blocks|Media Block", module)
           <MediaBlock
             media={image}
             body={
-              <>
+              <Fragment>
                 <Title text="Media Block - Inline (reverse)" />
                 {description}
-              </>
+              </Fragment>
             }
             align="inline"
             reverse

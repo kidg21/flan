@@ -1,11 +1,6 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/prop-types */
-/* eslint-disable react/no-unused-prop-types */
-/* eslint-disable react/forbid-prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
 import React from "react";
+import PropTypes from "prop-types";
 import Bar from "blocks/Bar";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
 import TextInput from "atoms/TextInput";
@@ -26,5 +21,15 @@ function NewRoles({ columns, roles }) {
     </Panel>
   );
 }
+
+NewRoles.propTypes = {
+  columns: PropTypes.arrayOf(PropTypes.string),
+  roles: PropTypes.arrayOf(PropTypes.object),
+};
+
+NewRoles.defaultProps = {
+  columns: null,
+  roles: null,
+};
 
 export default NewRoles;

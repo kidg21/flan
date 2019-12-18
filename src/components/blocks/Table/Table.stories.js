@@ -1,15 +1,12 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable no-alert */
 /* eslint-disable security/detect-object-injection */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React, { useState } from "react";
 
 
 import { Padding } from "helpers/Display";
 import Icon from "atoms/Icon";
-import DataTable from "./DataTable";
+import DataTable from "./DataTable.jsx";
 
 // Only columns specified here will be displayed
 const headers = [
