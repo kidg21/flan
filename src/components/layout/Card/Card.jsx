@@ -1,8 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/require-default-props */
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import styled from "styled-components";
@@ -65,7 +61,7 @@ const CardListWrapper = styled(Grid)`
 `;
 
 function Card({
- children, className, id, padding, type 
+  children, className, id, padding, type,
 }) {
   let shadow;
   let border;
@@ -118,7 +114,7 @@ function Card({
 }
 
 function CardList({
- children, className, columns, gap, id, rows 
+  children, className, columns, gap, id, rows,
 }) {
   return (
     <CardListWrapper
@@ -140,6 +136,15 @@ Card.propTypes = {
   id: PropTypes.string,
   padding: PropTypes.oneOf(["none", "1x", "2x", "3x", "4x"]),
 };
+Card.defaultProps = {
+  children: null,
+  type: null,
+  className: null,
+  id: null,
+  padding: null,
+};
+
+
 CardList.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
@@ -186,6 +191,14 @@ CardList.propTypes = {
    * Options: Any switch case or any standard value accepted by the CSS Grid property, 'grid-template-rows'.
    */
   rows: PropTypes.oneOf(["default (auto)", "[grid-template-rows]"]),
+};
+CardList.defaultProps = {
+  children: null,
+  className: null,
+  columns: null,
+  gap: null,
+  id: null,
+  rows: null,
 };
 
 export { Card as default, CardList, CardSection };

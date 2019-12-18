@@ -1,7 +1,5 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -62,7 +60,7 @@ const ListItemWrapper = styled.li`
 `;
 
 function List({
- children, divider, id, interactive, title 
+  children, divider, id, interactive, title,
 }) {
   return (
     <InteractiveContext.Provider value={interactive}>
@@ -170,27 +168,27 @@ List.defaultProps = {
 
 ListItem.propTypes = {
   active: PropTypes.bool,
-  children: PropTypes.node,
   description: PropTypes.string,
   disabled: PropTypes.bool,
   id: PropTypes.string,
   icon: PropTypes.node,
-  checkbox: PropTypes.node,
+  checkbox: PropTypes.bool,
   avatar: PropTypes.string,
   interactive: PropTypes.bool,
   label: PropTypes.string.isRequired,
+  toggle: PropTypes.bool,
   onClick: PropTypes.func,
 };
 ListItem.defaultProps = {
   active: false,
-  children: null,
   description: null,
   icon: null,
-  checkbox: null,
+  checkbox: false,
   avatar: null,
   disabled: false,
   id: null,
   interactive: null,
+  toggle: false,
   onClick: null,
 };
 

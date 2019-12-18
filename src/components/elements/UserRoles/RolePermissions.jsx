@@ -1,9 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/prop-types */
-/* eslint-disable react/no-unused-prop-types */
-/* eslint-disable react/forbid-prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
 import PropTypes from "prop-types";
@@ -130,6 +125,7 @@ RoleEntry.propTypes = {
       folder: PropTypes.string,
       permissions: PropTypes.arrayOf(PropTypes.string),
     })),
+    open: PropTypes.bool,
   }).isRequired,
   onChange: PropTypes.func.isRequired,
   editRole: PropTypes.shape({

@@ -1,10 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/default-props-match-prop-types */
-/* eslint-disable radix */
-/* eslint-disable react/require-default-props */
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import styled from "styled-components";
@@ -81,7 +75,7 @@ function Form({
 }) {
   // 1-3 colums with custom override
   let setColumns;
-  const _columns = parseInt(columns);
+  const _columns = parseInt(columns, 10);
   if (_columns > 0 && columns < 4) {
     setColumns = `repeat(${_columns}, minmax(0, 1fr))`;
   } else {
@@ -105,12 +99,13 @@ function Form({
 Form.propTypes = {
   action: PropTypes.node,
   children: PropTypes.node,
-  // columns: PropTypes.oneOf(["1 (default)", "2", "3"]),
+  columns: PropTypes.oneOf(["1", "2", "3"]),
   description: PropTypes.string,
   method: PropTypes.string,
   novalidate: PropTypes.bool,
   subtitle: PropTypes.string,
   title: PropTypes.string,
+  onSubmit: PropTypes.func,
 };
 Form.defaultProps = {
   action: null,
@@ -121,6 +116,7 @@ Form.defaultProps = {
   novalidate: false,
   subtitle: null,
   title: null,
+  onSubmit: null,
 };
 
 export { Form as default, Section };

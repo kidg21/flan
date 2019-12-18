@@ -1,10 +1,6 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/forbid-prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-import styled, { css } from "styled-components";
-import { fonts } from "Variables";
+import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 
 const Page = styled.div`

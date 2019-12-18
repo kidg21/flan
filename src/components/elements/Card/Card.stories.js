@@ -1,14 +1,10 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-
-import Card from "./Card";
-import { Body, Description } from "base/Typography";
+import { Body } from "base/Typography";
 import Image from "atoms/Image";
-
 import { Padding } from "helpers/Display";
-import Avatar from "atoms/Avatar";
+import Card from "./Card.jsx";
 
 const image = (
   <Image

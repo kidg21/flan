@@ -1,7 +1,5 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React from "react";
 import { Padding } from "helpers/Display";
 import Form, { Section } from "layout/Form";
@@ -140,7 +138,7 @@ storiesOf("Blocks|Checkbox Group", module)
             columns={options(
               "columns",
               {
-                "auto ( default )": "default",
+                "auto ( default )": null,
                 "one": "1",
                 "two": "2",
                 "three": "3",
@@ -148,7 +146,7 @@ storiesOf("Blocks|Checkbox Group", module)
                 "five": "5",
                 "six": "6",
               },
-              "default",
+              null,
               { display: "select" },
               "Checkbox Group",
             )}
@@ -169,10 +167,7 @@ storiesOf("Blocks|Checkbox Group", module)
               { display: "select" },
               "Checkbox Group",
             )}
-            error={
-              boolean("error", false, "Checkbox Group") &&
-              text("error text", "Error message...", "Checkbox Group")
-            }
+            error={text("error", null, "Checkbox Group")}
             disabled={boolean("disabled", false, "Checkbox Group")}
           />
         </Section>

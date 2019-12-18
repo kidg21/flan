@@ -1,10 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/no-unused-prop-types */
-/* eslint-disable react/require-default-props */
-/* eslint-disable react/no-children-prop */
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import styled, { keyframes } from "styled-components";
@@ -12,7 +6,7 @@ import { screen } from "Variables";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 import PropTypes from "prop-types";
 
-const fadeIn = keyframes`
+/* const fadeIn = keyframes`
   from {
     opacity: 0;
   }
@@ -50,7 +44,7 @@ const scaleDown = keyframes`
   to {
     transform: scale3D(.6, .6, .6);
   }
-`;
+`; */
 
 const moveUp = keyframes`
   from {
@@ -134,8 +128,8 @@ function Notification({
   position,
   scale,
   opacity,
-  ariaLabelledby,
-  ariaDescribedby,
+  ariaLabelledBy,
+  ariaDescribedBy,
   children,
   style,
 }) {
@@ -175,12 +169,11 @@ function Notification({
       position={position}
       scale={scale}
       opacity={opacity}
-      aria-labelledby={ariaLabelledby}
-      aria-describedby={ariaDescribedby}
+      aria-labelledby={ariaLabelledBy}
+      aria-describedby={ariaDescribedBy}
       onClick={onClick}
       justifyContent={justifyContent}
       alignItems={alignItems}
-      children={children}
       style={style}
     >
       <ContentWrapper>{children}</ContentWrapper>
@@ -191,8 +184,8 @@ function Notification({
 export default Notification;
 
 Notification.propTypes = {
-  "id": PropTypes.string,
-  "align": PropTypes.oneOf([
+  id: PropTypes.string,
+  align: PropTypes.oneOf([
     "topLeft",
     "topCenter",
     "topRight",
@@ -200,12 +193,27 @@ Notification.propTypes = {
     "bottomCenter",
     "bottomRight",
   ]),
-  "visible": PropTypes.bool,
-  "position": PropTypes.oneOf(["moveUp", "moveDown"]),
-  "scale": PropTypes.oneOf(["scaleUp", "scaleDown"]),
-  "opacity": PropTypes.oneOf(["fadeIn", "fadeOut"]),
-  "onClick": PropTypes.func,
-  "aria-labelledby": PropTypes.string,
-  "aria-describedby": PropTypes.string,
-  "style": PropTypes.string,
+  visible: PropTypes.bool,
+  position: PropTypes.oneOf(["moveUp", "moveDown"]),
+  scale: PropTypes.oneOf(["scaleUp", "scaleDown"]),
+  opacity: PropTypes.oneOf(["fadeIn", "fadeOut"]),
+  onClick: PropTypes.func,
+  ariaLabelledBy: PropTypes.string,
+  ariaDescribedBy: PropTypes.string,
+  children: PropTypes.node,
+  style: PropTypes.object,
+};
+
+Notification.defaultProps = {
+  id: null,
+  align: null,
+  visible: false,
+  position: null,
+  scale: null,
+  opacity: null,
+  onClick: null,
+  ariaLabelledBy: null,
+  ariaDescribedBy: null,
+  children: null,
+  style: null,
 };

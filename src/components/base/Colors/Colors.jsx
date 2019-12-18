@@ -1,14 +1,11 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
 import Bar from "blocks/Bar";
 import { colors, Lighten, Darken } from "Variables";
-import Title, { Headline, SubTitle } from "base/Typography";
-
+import Title from "base/Typography";
 
 const ThemeColorBlockColor = styled.div`
   width: 5em;
@@ -57,7 +54,7 @@ const ColorBlockColor = styled.div`
   }
 `;
 
-function ThemeColors({ id, color }) {
+function ThemeColors({ color }) {
   return (
     <Bar
       contentAlign="center"
@@ -68,8 +65,14 @@ function ThemeColors({ id, color }) {
     />
   );
 }
+ThemeColors.propTypes = {
+  color: PropTypes.string,
+};
+ThemeColors.defaultProps = {
+  color: null,
+};
 
-function Colors({ id, color }) {
+function Colors({ color }) {
   return (
     <Bar
       contentAlign="center"
@@ -80,6 +83,11 @@ function Colors({ id, color }) {
     />
   );
 }
-
+Colors.propTypes = {
+  color: PropTypes.string,
+};
+Colors.defaultProps = {
+  color: null,
+};
 
 export { ThemeColors as default, Colors };

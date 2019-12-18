@@ -1,9 +1,5 @@
-/* eslint-disable complexity */
-/* eslint-disable no-param-reassign */
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -168,6 +164,18 @@ const iconHash = {
   zoom_out: ["far", "search-minus"],
 };
 
+const colorHash = {
+  info: "info",
+  success: "success",
+  warning: "warning",
+  alert: "alert",
+  primary: "primary",
+  secondary: "secondaryDark",
+  disabled: "disabled",
+  primarylight: "primaryLight",
+  white: "white",
+};
+
 function Icon({
   border,
   className,
@@ -184,45 +192,13 @@ function Icon({
   title,
   type,
 }) {
-  let color;
-  icon = iconHash[icon.toLowerCase()] || ["far", icon.toLowerCase()];
-  switch (type && type.toLowerCase()) {
-    case "info":
-      color = "info";
-      break;
-    case "success":
-      color = "success";
-      break;
-    case "warning":
-      color = "warning";
-      break;
-    case "alert":
-      color = "alert";
-      break;
-    case "primary":
-      color = "primary";
-      break;
-    case "secondary":
-      color = "secondaryDark";
-      break;
-    case "disabled":
-      color = "disabled";
-      break;
-    case "primarylight":
-      color = "primaryLight";
-      break;
-    case "white":
-      color = "white";
-      break;
-    default:
-      break;
-  }
-
-  if (onClick) color = "primary";
+  const iconValue = iconHash[icon.toLowerCase()] || ["far", icon.toLowerCase()];
+  let color = type ? colorHash[type.toLowerCase()] : null;
 
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) color = "disabled";
+  else if (onClick) color = "primary";
 
   const styledIcon = (
     <StyledIcon
@@ -231,7 +207,7 @@ function Icon({
       color={color}
       fixedWidth={fixedWidth}
       flip={flip}
-      icon={icon}
+      icon={iconValue}
       id={id}
       pulse={pulse}
       rotation={rotation}

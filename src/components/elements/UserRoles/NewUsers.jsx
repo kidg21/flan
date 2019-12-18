@@ -1,12 +1,7 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/prop-types */
-/* eslint-disable react/no-unused-prop-types */
-/* eslint-disable react/forbid-prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import styled from "styled-components";
+import PropTypes from "prop-types";
 import Bar from "blocks/Bar";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
 import TextInput from "atoms/TextInput";
@@ -27,5 +22,15 @@ function NewUsers({ columns, users }) {
     </Panel>
   );
 }
+
+NewUsers.propTypes = {
+  columns: PropTypes.arrayOf(PropTypes.string),
+  users: PropTypes.arrayOf(PropTypes.object),
+};
+
+NewUsers.defaultProps = {
+  columns: null,
+  users: null,
+};
 
 export default NewUsers;

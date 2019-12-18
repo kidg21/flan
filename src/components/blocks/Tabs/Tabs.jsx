@@ -1,8 +1,7 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
-import React, { Fragment, useContext } from "react";
+import React, { useContext } from "react";
+import { DisabledContext } from "States";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import Button from "atoms/Button";
@@ -67,28 +66,16 @@ function Tabs({
   let setOrientation;
   let alignRight;
   let alignBottom;
-  switch (columns) {
-    case "wrap":
+
+  if (columns) {
+    const numColumns = parseInt(columns, 10);
+    if (!isNaN(numColumns) && columns > 0 && columns < 6) {
+      setColumns = `repeat(${columns}, 1fr)`;
+    } else if (columns === "wrap") {
       setColumns = "repeat(auto-fit, minmax(8rem, 1fr))";
-      break;
-    case "1":
-      setColumns = "repeat(1, 1fr)";
-      break;
-    case "2":
-      setColumns = "repeat(2, 1fr)";
-      break;
-    case "3":
-      setColumns = "repeat(3, 1fr)";
-      break;
-    case "4":
-      setColumns = "repeat(4, 1fr)";
-      break;
-    case "5":
-      setColumns = "repeat(5, 1fr)";
-      break;
-    default:
-      break;
+    }
   }
+
   switch (align) {
     case "bottom":
       // setPosition = "absolute";
@@ -110,6 +97,7 @@ function Tabs({
       setOrientation = "flex";
       alignRight = "0";
       break;
+    case "top":
     default:
       break;
   }
@@ -141,51 +129,46 @@ function Tab({
 }) {
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
 
+  let buttonColor = color;
+  if (!isSelected && type && type.toLowerCase() === "inactive") {
+    buttonColor = "grey";
+  }
+
+  let buttonType = type;
+  if (isSelected) {
+    buttonType = type && type.toLowerCase() === "inline" ? "underlined" : "solid";
+  }
 
   return (
-    <Fragment>
-      {isSelected ? (
-        <Button
-          id={id}
-          icon={icon}
-          size={size}
-          label={tabLabel}
-          onClick={onClick}
-          isSelected={isSelected}
-          disabled={isDisabled}
-          color={color}
-          type={type && type.toLowerCase() === "inline" ? "underlined" : "solid"}
-        />
-      ) : (
-        <Button
-            id={id}
-            icon={icon}
-            size={size}
-            label={tabLabel}
-            onClick={onClick}
-            isSelected={isSelected}
-            disabled={isDisabled}
-            color={type && type.toLowerCase() === "inactive" ? "grey" : color}
-            type={type && type.toLowerCase() === "inline" ? type : null}
-          />
-        )}
-    </Fragment>
+    <Button
+      id={id}
+      icon={icon}
+      size={size}
+      label={tabLabel}
+      onClick={onClick}
+      isSelected={isSelected}
+      disabled={isDisabled}
+      color={buttonColor}
+      type={buttonType}
+    />
   );
 }
 
 Tabs.propTypes = {
   id: PropTypes.string,
   children: PropTypes.node.isRequired,
-  columns: PropTypes.oneOf(["default", "wrap", "1", "2", "3", "4", "5"]),
-  align: PropTypes.oneOf(["bottom", "left", "right"]),
+  columns: PropTypes.oneOf(["wrap", "1", "2", "3", "4", "5"]),
+  align: PropTypes.oneOf(["bottom", "left", "right", "top"]),
   style: PropTypes.string,
+  margin: PropTypes.string,
+  gap: PropTypes.string,
 };
 
 Tab.propTypes = {
   id: PropTypes.string,
-  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  icon: PropTypes.string,
   tabLabel: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
   isSelected: PropTypes.bool,
   disabled: PropTypes.bool,
   color: PropTypes.string,
@@ -199,16 +182,19 @@ Tabs.defaultProps = {
   columns: null,
   align: null,
   style: null,
+  margin: null,
+  gap: null,
 };
 
 Tab.defaultProps = {
   id: null,
-  icon: false,
+  icon: null,
   isSelected: false,
   disabled: false,
   color: null,
   type: null,
   size: null,
+  onClick: null,
 };
 
 export { Tabs as default, Tab };

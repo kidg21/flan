@@ -1,7 +1,5 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
@@ -157,22 +155,9 @@ DataRange.propTypes = {
   id: PropTypes.string,
   isRequired: PropTypes.bool,
   label: PropTypes.string,
-  // withSelector: PropTypes.bool,
-  // onChangeSelector: PropTypes.func,
-  // optionsSelect: PropTypes.map,
-  // optionsSelectedOptions: PropTypes.shape({}),
-  // labelMax: PropTypes.string.isRequired,
-  // maxValue: PropTypes.oneOfType([PropTypes.string, PropTypes.shape({})]),
-  // optionsMax: PropTypes.map,
-  // disableRight: PropTypes.bool,
-  max: PropTypes.oneOf(textType, selectType),
-  min: PropTypes.oneOf(textType, selectType),
+  max: PropTypes.oneOfType([textType, selectType]),
+  min: PropTypes.oneOfType([textType, selectType]),
   select: selectType,
-  // onChange: PropTypes.func,
-  // optionsMin: PropTypes.map,
-  // minValue: PropTypes.oneOfType([PropTypes.string, PropTypes.shape({})]),
-  // labelMin: PropTypes.string.isRequired,
-  // disableLeft: PropTypes.bool,
 };
 DataRange.defaultProps = {
   disabled: false,
@@ -181,17 +166,6 @@ DataRange.defaultProps = {
   id: null,
   isRequired: false,
   label: null,
-  // onChange: null,
-  // optionsMin: null,
-  // disableLeft: false,
-  // minValue: null,
-  // withSelector: false,
-  // onChangeSelector: null,
-  // optionsSelect: null,
-  // // optionsSelectedOptions: null,
-  // optionsMax: null,
-  // disableRight: false,
-  // maxValue: null,
   select: null,
   max: {},
   min: {},

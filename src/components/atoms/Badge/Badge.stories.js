@@ -1,13 +1,11 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React from "react";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
 import Card, { CardList } from "layout/Card";
 import Title from "base/Typography";
-import Badge from "./Badge";
+import Badge from "./Badge.jsx";
 
 const BadgeNotes = markdown.require("./Badge.md");
 

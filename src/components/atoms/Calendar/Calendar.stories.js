@@ -1,7 +1,5 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React from "react";
 import { Padding } from "helpers/Display";
 import Form from "layout/Form";
@@ -64,10 +62,7 @@ storiesOf("Atoms|Calendar", module)
           "Hang in there, buddy, I'm here to help!",
           "Calendar",
         )}
-        error={
-          boolean("error", false, "Calendar") &&
-          text("error text", "Error message...", "Calendar")
-        }
+        error={text("error", null, "Calendar")}
         disabled={boolean("disabled", false, "Calendar")}
       />
     );

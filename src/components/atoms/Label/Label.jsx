@@ -1,6 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable complexity */
 // Import dependencies
 import React from "react";
 import PropTypes from "prop-types";

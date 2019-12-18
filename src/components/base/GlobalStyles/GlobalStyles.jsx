@@ -1,14 +1,10 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
-/* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import { createGlobalStyle } from "styled-components";
 import styledNormalize from "styled-normalize";
 import { Skeleton } from "helpers";
 // Import variables
-import { colors, fonts, fontSize, Lighten, Darken } from "Variables";
+import { fonts, fontSize, Lighten, Darken } from "Variables";
 // Import Fonts
 import "css/fonts.css";
 // Import Icons
