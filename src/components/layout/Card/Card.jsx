@@ -5,20 +5,31 @@
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import styled from "styled-components";
-import Grid from "layout/Grid";
-import { PlaceholderText } from "helpers/Placeholders.jsx";
 import PropTypes from "prop-types";
+import styled from "styled-components";
+import { PlaceholderText } from "helpers/Placeholders.jsx";
+import Grid from "layout/Grid";
+import Bar from "blocks/Bar";
+import Title, { Headline, SubTitle, Description, Body } from "base/Typography";
+import Icon from "atoms/Icon";
+import Command from "atoms/Command";
+import Image from "atoms/Image";
+import Avatar from "atoms/Avatar";
+import Menu from "blocks/Menu";
+import MediaBlock from "blocks/MediaBlock";
 
 const CardSectionWrapper = styled.section`
   display: flex;
   flex-direction: column;
   flex: 0 0 auto;
-  background-color: ${(props) => {
+  background-color: ${props => {
     return props.theme.palette[props.backgroundColor] || "";
   }};
-  padding: ${(props) => {
+  padding: ${props => {
     return props.sectionPadding || "0.5em 1em";
+  }};
+  cursor: ${props => {
+    return props.onClick ? "pointer" : "";
   }};
   z-index: 1;
   transition: all 0.2s ease;
@@ -32,24 +43,27 @@ const CardWrapper = styled.div`
     &:last-of-type {
       padding: 0.5em 1em 1em;
     }
+    &:only-of-type {
+      padding: 1em;
+    }
   }
   display: flex;
   flex-direction: column;
   border-radius: 5px;
   flex: none;
-  box-shadow: ${(props) => {
+  box-shadow: ${props => {
     return props.theme.shadows[props.shadow] || "";
   }};
-  border: ${(props) => {
+  border: ${props => {
     return props.border || "";
   }};
-  border-color: ${(props) => {
+  border-color: ${props => {
     return props.theme.palette[props.borderColor] || "";
   }};
-  padding: ${(props) => {
+  padding: ${props => {
     return props.cardPadding || "";
   }};
-  color: ${(props) => {
+  color: ${props => {
     return props.theme.text.primary;
   }};
   position: relative;
@@ -58,9 +72,9 @@ const CardWrapper = styled.div`
   &:empty {
     &:before {
       ${PlaceholderText}
-      color: ${(props) => {
-    return props.theme.text.primary;
-  }};
+      color: ${props => {
+        return props.theme.text.primary;
+      }};
       content: "Card";
       padding: 2rem;
     }
@@ -80,62 +94,7 @@ const CardListWrapper = styled(Grid)`
   }
 `;
 
-function Card({
- children, className, id, padding, type 
-}) {
-  let shadow;
-  let border;
-  let borderColor;
-  let cardPadding;
-  switch (type) {
-    case "outlined":
-      border = "1px solid";
-      borderColor = "grey5";
-      break;
-    case "elevated":
-      shadow = "shadow1";
-      break;
-    default:
-      border = "1px solid";
-      borderColor = "grey5";
-      break;
-  }
-  switch (padding) {
-    case "none":
-      cardPadding = "0em";
-      break;
-    case "1x":
-      cardPadding = "0.25em";
-      break;
-    case "2x":
-      cardPadding = "0.5em";
-      break;
-    case "3x":
-      cardPadding = "0.75em";
-      break;
-    case "4x":
-      cardPadding = "1em";
-      break;
-    default:
-      break;
-  }
-  return (
-    <CardWrapper
-      border={border}
-      shadow={shadow}
-      borderColor={borderColor}
-      cardPadding={cardPadding}
-      className={className}
-      id={id}
-    >
-      {children}
-    </CardWrapper>
-  );
-}
-
-function CardSection({
- children, className, id, padding, type 
-}) {
+function CardSection({ children, className, id, padding, type, onClick }) {
   let sectionPadding;
   let backgroundColor;
   switch (type) {
@@ -179,15 +138,173 @@ function CardSection({
       sectionPadding={sectionPadding}
       className={className}
       id={id}
+      onClick={onClick}
     >
       {children}
     </CardSectionWrapper>
   );
 }
 
-function CardList({
- children, className, columns, gap, id, rows 
+function Card({
+  children,
+  className,
+  id,
+  padding,
+  type,
+  title,
+  description,
+  body,
+  media,
+  icon,
+  label,
+  commands,
+  onClick
 }) {
+  let shadow;
+  let border;
+  let borderColor;
+  let cardPadding;
+  switch (type) {
+    case "outlined":
+      border = "1px solid";
+      borderColor = "grey5";
+      break;
+    case "elevated":
+      shadow = "shadow1";
+      break;
+    default:
+      border = "1px solid";
+      borderColor = "grey5";
+      break;
+  }
+  switch (padding) {
+    case "none":
+      cardPadding = "0em";
+      break;
+    case "1x":
+      cardPadding = "0.25em";
+      break;
+    case "2x":
+      cardPadding = "0.5em";
+      break;
+    case "3x":
+      cardPadding = "0.75em";
+      break;
+    case "4x":
+      cardPadding = "1em";
+      break;
+    default:
+      break;
+  }
+
+  let commandElements = null;
+  if (commands) {
+    if (commands.length > 2) {
+      // More than 2 Commands
+      commandElements = (
+        <Bar
+          leftWidth="80%"
+          left={
+            <Grid columns="2">
+              <Command
+                label={commands[0].label}
+                onClick={commands[0].onClick}
+                disabled={commands[0].disabled}
+              />
+              <Command
+                label={commands[1].label}
+                onClick={commands[1].onClick}
+                disabled={commands[1].disabled}
+              />
+            </Grid>
+          }
+          rightWidth="max-content"
+          right={<Menu data={commands.slice(2)} position="topLeft" />}
+        />
+      );
+    } else if (commands.length === 2) {
+      // Exactly 2 Commands
+      commandElements = (
+        <Bar
+          leftWidth="80%"
+          left={
+            <Grid columns="2">
+              <Command
+                label={commands[0].label}
+                onClick={commands[0].onClick}
+                disabled={commands[0].disabled}
+              />
+              <Command
+                label={commands[1].label}
+                onClick={commands[1].onClick}
+                disabled={commands[1].disabled}
+              />
+            </Grid>
+          }
+          // rightWidth="max-content"
+          // right={<Menu data={commands.slice(2)} position="topLeft" />}
+        />
+      );
+    } else {
+      // Single Command
+      commandElements = (
+        <Bar
+          left={
+            <Command
+              label={commands[0].label}
+              onClick={commands[0].onClick}
+              disabled={commands[0].disabled}
+            />
+          }
+        />
+      );
+    }
+  }
+  return (
+    <CardWrapper
+      border={border}
+      shadow={shadow}
+      borderColor={borderColor}
+      cardPadding={cardPadding}
+      className={className}
+      id={id}
+    >
+      {media ? (
+        <Image
+          src={media}
+          alt={`${"Card Image:" + " "}${media}`}
+          width="100%"
+          onClick={onClick}
+        />
+      ) : null}
+      {title || description ? (
+        <CardSection onClick={onClick}>
+          <Bar
+            contentAlign="center"
+            left={
+              <>
+                <Headline text={title} />
+                <SubTitle text={description} />
+              </>
+            }
+            rightWidth="max-content"
+            right={label || icon ? <Avatar label={label} icon={icon} /> : null}
+          ></Bar>
+        </CardSection>
+      ) : null}
+      {body ? (
+        <CardSection onClick={onClick}>
+          <Body text={body} />
+        </CardSection>
+      ) : null}
+      {commandElements ? <CardSection>{commandElements}</CardSection> : null}
+      {/* {children ? <CardSection>{children}</CardSection> : null} */}
+      {children}
+    </CardWrapper>
+  );
+}
+
+function CardList({ children, className, columns, gap, id, rows }) {
   return (
     <CardListWrapper
       id={id}
@@ -206,7 +323,7 @@ Card.propTypes = {
   type: PropTypes.string,
   className: PropTypes.string,
   id: PropTypes.string,
-  padding: PropTypes.oneOf(["none", "1x", "2x", "3x", "4x"]),
+  padding: PropTypes.oneOf(["none", "1x", "2x", "3x", "4x"])
 };
 CardList.propTypes = {
   children: PropTypes.node,
@@ -229,7 +346,7 @@ CardList.propTypes = {
     "10",
     "11",
     "12",
-    "[grid-template-columns]",
+    "[grid-template-columns]"
   ]),
   /** Sets the 'gutter' between grid items
    *
@@ -245,15 +362,15 @@ CardList.propTypes = {
       "large",
       "xlarge",
       "xxlarge",
-      "[grid-template-rows]",
-    ]),
+      "[grid-template-rows]"
+    ])
   ]),
   id: PropTypes.string,
   /** Defines the heights of grid rows
    *
    * Options: Any switch case or any standard value accepted by the CSS Grid property, 'grid-template-rows'.
    */
-  rows: PropTypes.oneOf(["default (auto)", "[grid-template-rows]"]),
+  rows: PropTypes.oneOf(["default (auto)", "[grid-template-rows]"])
 };
 
 export { Card as default, CardList, CardSection };

@@ -26,9 +26,6 @@ function CardComponent({
   tag,
   tagType,
   media,
-  image,
-  line1,
-  line2,
   body,
   expands,
   commands,
@@ -38,23 +35,6 @@ function CardComponent({
   let content;
   let commandElements = null;
   let rightContent;
-
-  // const titleBlock = (
-  //   <React.Fragment>
-  //     {title ? <Title text={title} /> : null}
-  //     {description ? <Description text={description} /> : null}
-  //     {line1 ? <Body text={line1} /> : null}
-  //     {line2 ? <Body text={line2} /> : null}
-  //   </React.Fragment>
-  // );
-
-  // const mainContent = (
-  //   <Bar
-  //     contentAlign="center"
-  //     left={titleBlock}
-  //     right={rightContent}
-  //   />
-  // );
 
   if (commands) {
     if (commands.length > 1) {
@@ -109,20 +89,12 @@ function CardComponent({
     rightContent = <Tag label={tag} type={tagType} />;
   }
 
-  // if (media) {
-  //   content = <MediaBlock media={media} align="vertical" body={mainContent} />;
-  // } else {
-  //   content = (
-  //     <Bar contentAlign="center" left={mainContent} right={rightContent} />
-  //   );
-  // }
-
   return (
     <Card id={id} type={type}>
-      {image ? (
+      {media ? (
         <Image
-          src={image}
-          alt={`${"Card Image:" + " "}${image}`}
+          src={media}
+          alt={`${"Card Image:" + " "}${media}`}
           width="100%"
         />
       ) : null}
@@ -132,7 +104,6 @@ function CardComponent({
           <SubTitle text={description} />
         </CardSection>
       ) : null}
-      {/* {content ? <CardSection>{content}</CardSection> : null} */}
       {body ? (
         <CardSection>
           <Body text={body} />
@@ -151,8 +122,6 @@ CardComponent.propTypes = {
   tag: PropTypes.string,
   tagType: PropTypes.string,
   media: PropTypes.node,
-  line1: PropTypes.string,
-  line2: PropTypes.string,
   body: PropTypes.node,
   expands: PropTypes.node,
   commands: PropTypes.node,
@@ -167,8 +136,6 @@ CardComponent.defaultProps = {
   tag: null,
   tagType: null,
   media: null,
-  line1: null,
-  line2: null,
   body: null,
   expands: null,
   commands: null,
