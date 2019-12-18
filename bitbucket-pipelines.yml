@@ -109,4 +109,4 @@ pipelines:
             - npm install --no-package-lock
             # Run tests and push coverage to Codacy
             - set -o pipefail
-            - npm run create-coverage | push-coverage
+            - npm run create-coverage | npm run push-coverage
