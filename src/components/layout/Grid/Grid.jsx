@@ -1,10 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable radix */
-/* eslint-disable react/require-default-props */
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -32,7 +26,7 @@ function Grid({
 }) {
   // 1-12 colums with custom override
   let setColumns;
-  const _columns = parseInt(columns);
+  const _columns = parseInt(columns, 10);
   if (_columns > 0 && columns < 13) {
     setColumns = `repeat(${_columns}, minmax(0, 1fr))`;
   } else {
@@ -74,6 +68,7 @@ function Grid({
     case "bottom":
       alignItems = "flex-end";
       break;
+    case "top":
     default:
       break;
   }
@@ -122,7 +117,7 @@ Grid.propTypes = {
       "[grid-template-rows]",
     ]),
   ]),
-  align: PropTypes.oneOf(["default (top)", "center", "bottom"]),
+  align: PropTypes.oneOf(["top", "center", "bottom"]),
   className: PropTypes.string,
 };
 
@@ -136,4 +131,4 @@ Grid.defaultProps = {
   className: null,
 };
 
-export { Grid as default };
+export default Grid;

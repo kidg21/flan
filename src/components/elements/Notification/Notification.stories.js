@@ -1,6 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React, { Fragment, useState } from "react";
 import Button from "atoms/Button";
@@ -26,7 +24,7 @@ storiesOf("Elements|Notification", module)
         const [visible, setVisible] = useState(false);
         const [transition, setTransition] = useState(true);
         // eslint-disable-next-line no-unused-vars
-        const handleOpen = (event) => {
+        const handleOpen = (/* event */) => {
           setVisible(true);
           setTransition(true);
           setTimeout(() => {
@@ -36,7 +34,7 @@ storiesOf("Elements|Notification", module)
             }, 500);
           }, 3000);
         };
-        const handleClose = (event) => {
+        const handleClose = (/* event */) => {
           setTransition(false);
           setTimeout(() => {
             setVisible(false);
@@ -73,7 +71,7 @@ storiesOf("Elements|Notification", module)
     return React.createElement(() => {
       const [visible, setVisible] = useState(false);
       const [transition, setTransition] = useState(true);
-      const handleOpen = (event) => {
+      const handleOpen = (/* event */) => {
         setVisible(true);
         setTransition(true);
         setTimeout(() => {
@@ -83,13 +81,13 @@ storiesOf("Elements|Notification", module)
           }, 500);
         }, 3000);
       };
-      const handleClose = (event) => {
+      const handleClose = (/* event */) => {
         setTransition(false);
         setTimeout(() => {
           setVisible(false);
         }, 500);
       };
-      const buttonStyle = { margin: "30vh 30vw" };
+      // const buttonStyle = { margin: "30vh 30vw" };
       return (
         <Fragment>
           <Notification
@@ -135,7 +133,7 @@ storiesOf("Elements|Notification", module).add("Status Notification", () => {
   return React.createElement(() => {
     const [visible, setVisible] = useState(false);
     const [transition, setTransition] = useState(true);
-    const handleOpen = (event) => {
+    const handleOpen = (/* event */) => {
       setVisible(true);
       setTransition(true);
       setTimeout(() => {
@@ -145,7 +143,7 @@ storiesOf("Elements|Notification", module).add("Status Notification", () => {
         }, 500);
       }, 3000);
     };
-    const handleClose = (event) => {
+    const handleClose = (/* event */) => {
       setTransition(false);
       setTimeout(() => {
         setVisible(false);

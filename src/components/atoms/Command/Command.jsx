@@ -1,8 +1,5 @@
-/* eslint-disable no-param-reassign */
-/* eslint-disable security/detect-object-injection */
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable security/detect-object-injection */
 import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
@@ -113,7 +110,7 @@ const commandHash = {
 function Command({
  align, command, disabled, icon, id, label, onClick, size 
 }) {
-  command = commandHash[command] || { icon, label };
+  const cmd = commandHash[command] || { icon, label };
   let alignCommand = "";
   let alignIcon = "";
   let justifyIcon = "flex-start";
@@ -153,16 +150,16 @@ function Command({
       alignIcon={alignIcon}
       commandColor={commandColor}
       commandSize={commandSize}
-      icon={command.icon}
+      icon={cmd.icon}
       id={id}
       isDisabled={isDisabled}
       justifyIcon={justifyIcon}
       label={label}
       onClick={onClick}
-      title={command.label} // HTML attribute (display on :hover)
+      title={cmd.label} // HTML attribute (display on :hover)
     >
-      {command.icon ? <CommandIcon icon={command.icon} /> : null}
-      <CommandName>{command.label}</CommandName>
+      {cmd.icon ? <CommandIcon icon={cmd.icon} /> : null}
+      <CommandName>{cmd.label}</CommandName>
     </CommandContainer>
   );
 }
@@ -189,4 +186,4 @@ Command.defaultProps = {
   size: null,
 };
 
-export { Command as default };
+export default Command;

@@ -1,7 +1,5 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React from "react";
 
 import { Padding } from "helpers/Display";
@@ -43,18 +41,14 @@ storiesOf("Atoms|Select Menu", module)
           multiSelect={boolean("Multi-Select", false)}
           isLoading={boolean("Loading", false)}
           disabled={boolean("Disabled", false)}
-          error={boolean("Error", false)}
-          errorMessage={text(
-            "Error Text",
-            "Stay with my, buddy...we can fix this!",
-          )}
+          error={text("Error Text", null)}
           options={options}
         />
       );
     }),
   )
   .add("Skeleton", () => {
-    return <SelectMenu />;
+    return <SelectMenu options={options} />;
   })
 
   // Single-Select (Standard)

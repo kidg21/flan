@@ -1,12 +1,7 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable no-alert */
 /* eslint-disable security/detect-object-injection */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React, { useState } from "react";
-import { storiesOf } from "@storybook/react";
-import { Container } from "helpers/Display";
 import Title from "base/Typography";
 import Layout from "layout/Layout";
 import Panel, { PanelSection } from "layout/Panel";

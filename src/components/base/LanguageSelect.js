@@ -1,12 +1,10 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useContext } from "react";
 
 import { I18nContext } from "../../locales";
 
-const LanguageSelect = (props) => {
+const LanguageSelect = (/* props */) => {
   /* Another hook here: useContext will receive a Context
   and return anything provided in the Provider */
   const { langCode, dispatch } = useContext(I18nContext);

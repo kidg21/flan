@@ -109,7 +109,8 @@ module.exports = {
         gif: "always",
         png: "always",
         md: "always",
-        data: "always"
+        data: "always",
+        jsx: "always",
       }
     ],
 

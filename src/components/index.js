@@ -1,14 +1,12 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 // Publicly exported files from 'base'
 export {
   default as Title,
   SubTitle,
   Description,
   Link,
-  Number
+  Number,
 } from "./base/Typography";
 export { default as GlobalStyles } from "./base/GlobalStyles/GlobalStyles.jsx";
 
@@ -56,11 +54,11 @@ export {
   default as Dialog,
   Alert,
   Confirm,
-  Prompt
+  Prompt,
 } from "./elements/DialogBox";
 
 // Publicly exported files from 'layout'
-export { default as Card, CardList } from "./layout/Card";
+export { default as CardLayout, CardList } from "./layout/Card"; // TODO: deprecated Card, fix
 export { default as Form, Section } from "./layout/Form";
 export { default as Grid } from "./layout/Grid";
 export { default as Layout } from "./layout/Layout";
@@ -76,6 +74,6 @@ export {
   shadows,
   screen,
   DMPTheme,
-  darkTheme
+  darkTheme,
 } from "./base/Variables/Variables.jsx";
 export { ThemeProvider } from "styled-components";
