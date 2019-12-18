@@ -57,21 +57,6 @@ storiesOf("Blocks|Tabs", module)
   .add("Knobs", () => {
     return (
       <Tabs
-        columns={options(
-          "columns / row",
-          {
-            "single row ( default )": "default",
-            "row wrap (responsive)": "wrap",
-            "1 column / row": "1",
-            "2 columns / row": "2",
-            "3 columns / row": "3",
-            "4 columns / row": "4",
-            "5 columns / row": "5",
-          },
-          "default",
-          { display: "radio" },
-          "Tab Group",
-        )}
         align={options(
           "align",
           {
@@ -185,93 +170,18 @@ storiesOf("Blocks|Tabs", module)
       </Tabs>
     );
   })
-  .add("Row-Wrap (responsive)", () => {
+  .add("Vertical Column", () => {
     return (
-      <Tabs columns="wrap">
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-      </Tabs>
-    );
-  })
-  .add("1 Column per Row", () => {
-    return (
-      <Tabs columns="1">
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-      </Tabs>
-    );
-  })
-  .add("2 Columns per Row", () => {
-    return (
-      <Tabs columns="2">
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-      </Tabs>
-    );
-  })
-  .add("3 Columns per Row", () => {
-    return (
-      <Tabs columns="3">
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-      </Tabs>
-    );
-  })
-  .add("4 Columns per Row", () => {
-    return (
-      <Tabs columns="4">
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-      </Tabs>
-    );
-  })
-  .add("5 Columns per Row", () => {
-    return (
-      <Tabs columns="5">
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-      </Tabs>
-    );
-  })
-  .add("Vertical Column - Left", () => {
-    return (
-      <Tabs align="left">
+      <Tabs align="vertical">
         <Tab tabLabel="Tab" type="solid" />
         <Tab tabLabel="Tab" type="solid" isSelected />
         <Tab tabLabel="Tab" type="solid" />
       </Tabs>
     );
   })
-  .add("Single-Row, Bottom-Aligned", () => {
+  .add("Bottom-Aligned", () => {
     return (
       <Tabs align="bottom">
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-      </Tabs>
-    );
-  })
-  .add("Vertical Column - Right", () => {
-    return (
-      <Tabs align="right">
         <Tab tabLabel="Tab" />
         <Tab tabLabel="Tab" />
         <Tab tabLabel="Tab" />

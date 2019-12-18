@@ -7,6 +7,24 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import Button from "atoms/Button";
 
+const ControlButton = styled(Button)`
+margin: ${(props) => {
+    return props.margin || "0 -1px -1px 0";
+  }};
+  border: ${(props) => {
+    return props.border || "";
+  }};
+  border-radius: ${(props) => {
+    return props.borderRadius || "0px";
+  }};
+  background-color: ${(props) => {
+    return props.theme.background[props.backgroundColor] || "";
+  }};
+  color: ${(props) => {
+    return props.theme.palette[props.fontColor] || "";
+  }};
+;`;
+
 const ControlsWrapper = styled.section`
   position: ${(props) => {
     return props.setPosition || "";
@@ -34,27 +52,10 @@ const ControlsWrapper = styled.section`
     return props.setHeight || "100%";
   }};
 
-  > * {
-    margin: ${(props) => {
-    return props.margin || "0 -1px -1px 0";
-  }};
-    border: ${(props) => {
-    return props.border || "";
-  }};
-    border-radius: ${(props) => {
-    return props.borderRadius || "0px";
-  }};
-    background-color: ${(props) => {
-    return props.theme.background[props.backgroundColor] || "";
-  }};
-    color: ${(props) => {
-    return props.theme.palette[props.fontColor] || "";
-  }};
-  }
 `;
 
 function Controls({
-  id, children, columns, align, style, margin, gap,
+  id, children, columns, style, margin, gap,
 }) {
   let setColumns;
   let border;
@@ -89,70 +90,63 @@ function Controls({
     default:
       break;
   }
-  switch (align) {
-    case "bottom":
-      // setPosition = "absolute";
-      alignBottom = "0";
-      break;
-    default:
-      break;
-  }
+
   return (
-      <ControlsWrapper
-          id={id}
-          gap={gap}
-          border={border}
-          borderRadius={borderRadius}
-          setColumns={setColumns}
-          setPosition={setPosition}
-          backgroundColor={backgroundColor}
-          setWidth={setWidth}
-          setHeight={setHeight}
-          setOrientation={setOrientation}
-          alignRight={alignRight}
-          alignBottom={alignBottom}
-          style={style}
-          margin={margin}
-          fontColor={fontColor}
-        >
-          {children}
-        </ControlsWrapper>
+    <ControlsWrapper
+      id={id}
+      gap={gap}
+      border={border}
+      borderRadius={borderRadius}
+      setColumns={setColumns}
+      setPosition={setPosition}
+      backgroundColor={backgroundColor}
+      setWidth={setWidth}
+      setHeight={setHeight}
+      setOrientation={setOrientation}
+      alignRight={alignRight}
+      alignBottom={alignBottom}
+      style={style}
+      margin={margin}
+      fontColor={fontColor}
+    >
+      {children}
+    </ControlsWrapper>
   );
 }
 
 function Control({
-  id, icon, ControlLabel, size, onClick, type, isSelected, disabled, color,
+  id, icon, label, size, onClick, type, isSelected, disabled, color,
 }) {
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
 
   return (
-      <Fragment>
-          {isSelected ? (
-              <Button
-                  id={id}
-                  icon={icon}
-                  size={size}
-                  label={ControlLabel}
-                  onClick={onClick}
-                  isSelected={isSelected}
-                  disabled={isDisabled}
-                  color={color}
-                  type="solid"
-                />
-            ) : (
-              <Button
-                      id={id}
-                      icon={icon}
-                      size={size}
-                      label={ControlLabel}
-                      onClick={onClick}
-                      isSelected={isSelected}
-                      disabled={isDisabled}
-                      color={color}
-                      type={type}
-                    />
-                )}
-        </Fragment>
+    <Fragment>
+      {isSelected ? (
+        <ControlButton
+          id={id}
+          icon={icon}
+          size={size}
+          label={label}
+          onClick={onClick}
+          isSelected={isSelected}
+          disabled={isDisabled}
+          color={color}
+          type="solid"
+        />
+      ) : (
+        <ControlButton
+            id={id}
+            icon={icon}
+            size={size}
+            label={label}
+            onClick={onClick}
+            isSelected={isSelected}
+            disabled={isDisabled}
+            color={color}
+            type={type}
+          />
+        )}
+    </Fragment>
   );
 }
 
@@ -160,14 +154,13 @@ Controls.propTypes = {
   id: PropTypes.string,
   children: PropTypes.node.isRequired,
   columns: PropTypes.oneOf(["default", "wrap", "1", "2", "3", "4", "5"]),
-  align: PropTypes.oneOf(["bottom", "left", "right"]),
   style: PropTypes.string,
 };
 
 Control.propTypes = {
   id: PropTypes.string,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
-  ControlLabel: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
   isSelected: PropTypes.bool,
   disabled: PropTypes.bool,
@@ -179,7 +172,6 @@ Control.propTypes = {
 Controls.defaultProps = {
   id: null,
   columns: null,
-  align: null,
   style: null,
 };
 

@@ -7,6 +7,25 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import Button from "atoms/Button";
 
+const TabButton = styled(Button)`
+margin: ${(props) => {
+    return props.margin || "";
+  }};
+border: ${(props) => {
+    return props.border || "";
+  }};
+  border-radius: ${(props) => {
+    return props.borderRadius || "0px";
+  }};
+  background-color: ${(props) => {
+    return props.theme.background[props.backgroundColor] || "";
+  }};
+  color: ${(props) => {
+    return props.theme.palette[props.fontColor] || "";
+  }};
+`;
+
+
 const TabsWrapper = styled.section`
   position: ${(props) => {
     return props.setPosition || "";
@@ -34,27 +53,10 @@ const TabsWrapper = styled.section`
     return props.setHeight || "100%";
   }};
 
-  > * {
-    margin: ${(props) => {
-    return props.margin || "";
-  }};
-    border: ${(props) => {
-    return props.border || "";
-  }};
-    border-radius: ${(props) => {
-    return props.borderRadius || "0px";
-  }};
-    background-color: ${(props) => {
-    return props.theme.background[props.backgroundColor] || "";
-  }};
-    color: ${(props) => {
-    return props.theme.palette[props.fontColor] || "";
-  }};
-  }
 `;
 
 function Tabs({
-  id, children, columns, align, style,
+  id, children, align, style,
 }) {
   let setColumns;
   let border;
@@ -65,28 +67,6 @@ function Tabs({
   let setOrientation;
   let alignRight;
   let alignBottom;
-  switch (columns) {
-    case "wrap":
-      setColumns = "repeat(auto-fit, minmax(8rem, 1fr))";
-      break;
-    case "1":
-      setColumns = "repeat(1, 1fr)";
-      break;
-    case "2":
-      setColumns = "repeat(2, 1fr)";
-      break;
-    case "3":
-      setColumns = "repeat(3, 1fr)";
-      break;
-    case "4":
-      setColumns = "repeat(4, 1fr)";
-      break;
-    case "5":
-      setColumns = "repeat(5, 1fr)";
-      break;
-    default:
-      break;
-  }
   switch (align) {
     case "bottom":
       // setPosition = "absolute";
@@ -130,7 +110,7 @@ function Tab({
   return (
     <Fragment>
       {isSelected ? (
-        <Button
+        <TabButton
           id={id}
           icon={icon}
           size={size}
@@ -142,7 +122,7 @@ function Tab({
           type={type && type.toLowerCase() === "solid" ? "solid" : "underlined"}
         />
       ) : (
-        <Button
+        <TabButton
             id={id}
             icon={icon}
             size={size}
@@ -161,7 +141,6 @@ function Tab({
 Tabs.propTypes = {
   id: PropTypes.string,
   children: PropTypes.node.isRequired,
-  columns: PropTypes.oneOf(["default", "wrap", "1", "2", "3", "4", "5"]),
   align: PropTypes.oneOf(["bottom", "left", "right"]),
   style: PropTypes.string,
 };
@@ -180,7 +159,6 @@ Tab.propTypes = {
 
 Tabs.defaultProps = {
   id: null,
-  columns: null,
   align: null,
   style: null,
 };
