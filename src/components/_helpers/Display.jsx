@@ -21,6 +21,10 @@ const padding = {
 };
 const Padding = storyFn => <div style={padding}>{storyFn()}</div>;
 
+function Spacer() {
+  return <span>&nbsp;</span>;
+}
+
 function IconGrid({ data }) {
   return data.map(item => (
     <Card
@@ -66,4 +70,4 @@ function CommandGrid({ data }) {
   ));
 }
 
-export { Center, Padding, IconGrid, CommandGrid };
+export { Center, Padding, Spacer, IconGrid, CommandGrid };
