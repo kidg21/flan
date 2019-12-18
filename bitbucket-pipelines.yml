@@ -30,7 +30,7 @@ pipelines:
             - npm install --no-package-lock
             # Run tests and push coverage to Codacy
             - set -o pipefail
-            # Next line fails immediate if any command fails
+            # Next line fails immediately if any command fails
             - npm run test-coverage | npm run push-coverage
             - set +o pipefail
             # Build code to push
@@ -71,7 +71,7 @@ pipelines:
             - npm install --no-package-lock
             # Run tests and push coverage to Codacy
             - set -o pipefail
-            # Next line fails immediate if any command fails
+            # Next line fails immediately if any command fails
             - npm run test-coverage | npm run push-coverage
             - set +o pipefail
             # Build code
@@ -114,6 +114,6 @@ pipelines:
             - npm install --no-package-lock
             # Run tests and push coverage to Codacy
             - set -o pipefail
-            # Next line fails immediate if any command fails
+            # Next line fails immediately if any command fails
             - npm run test-coverage | npm run push-coverage
             - set +o pipefail
