@@ -29,8 +29,10 @@ pipelines:
             # Install dependencies
             - npm install --no-package-lock
             # Run tests and push coverage to Codacy
-            - set -e
-            - npm run testWithCoverage
+            - set -o pipefail
+            # Next line fails immediate if any command fails
+            - npm run test-coverage | npm run push-coverage
+            - set +o pipefail
             # Build code to push
             - npm run build
           artifacts:
@@ -68,7 +70,10 @@ pipelines:
             # Install dependencies
             - npm install --no-package-lock
             # Run tests and push coverage to Codacy
-            - npm run testWithCoverage
+            - set -o pipefail
+            # Next line fails immediate if any command fails
+            - npm run test-coverage | npm run push-coverage
+            - set +o pipefail
             # Build code
             - npm run build
           artifacts:
@@ -109,4 +114,6 @@ pipelines:
             - npm install --no-package-lock
             # Run tests and push coverage to Codacy
             - set -o pipefail
-            - npm run create-coverage | npm run push-coverage
+            # Next line fails immediate if any command fails
+            - npm run test-coverage | npm run push-coverage
+            - set +o pipefail
