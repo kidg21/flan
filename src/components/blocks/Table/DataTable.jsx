@@ -1,6 +1,5 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable security/detect-object-injection */
-/* eslint-disable react/jsx-filename-extension */
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { MultiGrid, AutoSizer, CellMeasurer, CellMeasurerCache, InfiniteLoader } from "react-virtualized";
@@ -348,8 +347,8 @@ DataTable.propTypes = {
   onCellMouseOut: PropTypes.func,
   onCellMouseOver: PropTypes.func,
   loadRows: PropTypes.func.isRequired,
-  rowHeight: PropTypes.oneOf([PropTypes.number, PropTypes.func]),
-  columnWidth: PropTypes.oneOf([PropTypes.number, PropTypes.func]),
+  rowHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.func]),
+  columnWidth: PropTypes.oneOfType([PropTypes.number, PropTypes.func]),
   minRowHeight: PropTypes.number,
   minColWidth: PropTypes.number,
 };

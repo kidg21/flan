@@ -1,6 +1,5 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable security/detect-object-injection */
-/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
@@ -111,7 +110,7 @@ function parseType({
   let displayState = null;
 
   const screenSize = Object.keys(screenHash).find((size) => {
-    return window.matchMedia(screen[size]);
+    return window.matchMedia(screen[size]).matches;
   });
 
   switch (type) {
@@ -172,7 +171,7 @@ function parseType({
 
 function parseState(state, props) {
   const screenSize = Object.keys(screenHash).find((size) => {
-    return window.matchMedia(screen[size]);
+    return window.matchMedia(screen[size]).matches;
   });
 
   switch (state) {

@@ -1,5 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";

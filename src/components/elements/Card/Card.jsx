@@ -1,10 +1,11 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
 import Bar from "blocks/Bar";
+// import Icon from "atoms/Icon";
 import Image from "atoms/Image";
+// import Tag from "atoms/Tag";
 import Command from "atoms/Command";
 import Card, { CardSection } from "layout/Card";
 import { Headline, SubTitle, Body } from "base/Typography";
@@ -16,6 +17,7 @@ function CardComponent({
   type,
   icon,
   tag,
+  // tagType,
   image,
   body,
   expands,
@@ -24,6 +26,7 @@ function CardComponent({
 }) {
   let excess;
   let commandElements = null;
+  // let rightContent = null;
 
   // const titleBlock = (
   //   <React.Fragment>
@@ -88,11 +91,11 @@ function CardComponent({
   }
 
   if (icon) {
-    // do something
+    // rightContent = <Icon icon={icon} size="lg" />;
   }
 
   if (tag) {
-    // do something
+    // rightContent = <Tag label={tag} type={tagType} />;
   }
 
   // if (media) {

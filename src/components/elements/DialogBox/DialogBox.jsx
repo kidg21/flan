@@ -1,5 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
@@ -61,11 +60,11 @@ function DialogBox({
 
   return (
     <Card id={id} padding="1em">
-      {header ? <>{header}</> : null}
+      {header ? <React.Fragment>{header}</React.Fragment> : null}
       <Bar left={<Title text={title} />} />
       {message ? <Bar left={<Title text={message} weight="light" />} /> : null}
       {children ? <Bar left={children} /> : null}
-      {buttonElements ? <>{buttonElements}</> : null}
+      {buttonElements ? <React.Fragment>{buttonElements}</React.Fragment> : null}
     </Card>
   );
 }

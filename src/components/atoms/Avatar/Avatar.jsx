@@ -1,5 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
@@ -29,7 +28,7 @@ const TagContainer = styled.div`
 `;
 
 function Avatar({
- color, disabled, icon, id, label 
+  color, disabled, icon, id, label,
 }) {
   let labelType;
   let iconType;
@@ -105,4 +104,4 @@ Avatar.defaultProps = {
   label: null,
 };
 
-export { Avatar as default };
+export default Avatar;

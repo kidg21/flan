@@ -1,5 +1,5 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable security/detect-object-injection */
 import React, { useContext, useState } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -199,7 +199,7 @@ function SelectMenu({
     textColor = "disabled";
   } else if (error) {
     textColor = "alert";
-    errorText = error;
+    if (typeof error === "string") errorText = error;
   } else if (warning) {
     textColor = "warning";
     errorText = warning;

@@ -1,5 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -190,4 +189,4 @@ MediaBlock.defaultProps = {
   reverse: false,
 };
 
-export { MediaBlock as default };
+export default MediaBlock;

@@ -1,5 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/jsx-filename-extension */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -177,7 +176,7 @@ function CheckboxGroup({
   if (!isDisabled) {
     if (error) {
       inputTextColor = "alert";
-      errorText = error;
+      if (typeof error === "string") errorText = error;
     } else if (warning) {
       inputTextColor = "warning";
       errorText = warning;

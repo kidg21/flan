@@ -1,5 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import styled from "styled-components";
 import Grid from "layout/Grid";
@@ -130,45 +129,20 @@ function Card({
 }
 
 function CardSection({
- children, className, id, padding, type 
+  children, className, id, padding, type,
 }) {
+  const backgroundColor = type && type.toLowerCase();
+
   let sectionPadding;
-  let backgroundColor;
-  switch (type) {
-    case "info":
-      backgroundColor = "info";
-      break;
-    case "success":
-      backgroundColor = "success";
-      break;
-    case "warning":
-      backgroundColor = "warning";
-      break;
-    case "alert":
-      backgroundColor = "alert";
-      break;
-    default:
-      break;
+  if (padding && padding.toLowerCase() === "none") {
+    sectionPadding = "0em";
+  } else {
+    const paddingValue = parseInt(padding, 10);
+    if (!isNaN(paddingValue)) {
+      sectionPadding = `${paddingValue * 0.25}em`;
+    }
   }
-  switch (padding) {
-    case "none":
-      sectionPadding = "0em";
-      break;
-    case "1x":
-      sectionPadding = "0.25em";
-      break;
-    case "2x":
-      sectionPadding = "0.5em";
-      break;
-    case "3x":
-      sectionPadding = "0.75em";
-      break;
-    case "4x":
-      sectionPadding = "1em";
-      break;
-    default:
-      break;
-  }
+
   return (
     <CardSectionWrapper
       backgroundColor={backgroundColor}
@@ -180,6 +154,22 @@ function CardSection({
     </CardSectionWrapper>
   );
 }
+
+CardSection.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string,
+  id: PropTypes.string,
+  padding: PropTypes.string,
+  type: PropTypes.string,
+};
+
+CardSection.defaultProps = {
+  children: null,
+  className: null,
+  id: null,
+  padding: null,
+  type: null,
+};
 
 function CardList({
   children, className, columns, gap, id, rows,

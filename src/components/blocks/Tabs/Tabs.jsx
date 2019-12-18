@@ -1,5 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/jsx-filename-extension */
 import React, { useContext } from "react";
 import { DisabledContext } from "States";
 import styled from "styled-components";

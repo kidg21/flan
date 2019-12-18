@@ -1,6 +1,5 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable security/detect-object-injection */
-/* eslint-disable react/jsx-filename-extension */
 import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
@@ -187,4 +186,4 @@ Command.defaultProps = {
   size: null,
 };
 
-export { Command as default };
+export default Command;

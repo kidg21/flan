@@ -1,5 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/jsx-filename-extension */
 import { createGlobalStyle } from "styled-components";
 import styledNormalize from "styled-normalize";
 import { Skeleton } from "helpers";

@@ -106,4 +106,4 @@ Label.defaultProps = {
   weight: null,
 };
 
-export { Label as default };
+export default Label;

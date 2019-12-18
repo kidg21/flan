@@ -1,5 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/jsx-filename-extension */
 import React, { useState, useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -179,4 +178,4 @@ Switch.defaultProps = {
   onChange: null,
 };
 
-export { Switch as default };
+export default Switch;

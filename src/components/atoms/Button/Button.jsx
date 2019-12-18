@@ -1,5 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/jsx-filename-extension */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import { Lighten, Darken } from "Variables";
@@ -207,4 +206,4 @@ Button.defaultProps = {
   type: null,
 };
 
-export { Button as default };
+export default Button;
