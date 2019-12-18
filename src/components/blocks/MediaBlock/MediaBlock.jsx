@@ -1,7 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -165,10 +162,10 @@ MediaBlock.propTypes = {
   align: PropTypes.oneOf(["top", "vertical", "inline"]),
   /** Used to define the content in the 'body' section */
   body: PropTypes.node,
-  border: PropTypes.boolean,
+  border: PropTypes.bool,
   /** Meant for use in nesting Media Blocks */
   children: PropTypes.node,
-  circle: PropTypes.boolean,
+  circle: PropTypes.bool,
   /** className used for extending styles */
   className: PropTypes.string,
   id: PropTypes.string,
@@ -192,4 +189,4 @@ MediaBlock.defaultProps = {
   reverse: false,
 };
 
-export { MediaBlock as default };
+export default MediaBlock;

@@ -1,12 +1,11 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 
 import { Padding } from "helpers/Display";
 
 import Grid from "layout/Grid";
-import Label from "./Label";
+import Label from "./Label.jsx";
 
 /** TODO: Add 'Documentation' and 'Knobs' stories */
 storiesOf("Atoms/Label", module)

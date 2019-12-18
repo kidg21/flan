@@ -155,4 +155,4 @@ const commandsStandard = [
   },
 ];
 
-export { commandsStandard as default };
+export default commandsStandard;

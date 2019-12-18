@@ -1,7 +1,5 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 // Publicly exported files from 'base'
 export {
   default as Title,

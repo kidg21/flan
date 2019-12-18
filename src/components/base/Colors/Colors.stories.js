@@ -1,13 +1,8 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/first */
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
-/* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import Grid from "layout/Grid";
-import ThemeColors, { Colors } from "./Colors";
+import ThemeColors, { Colors } from "./Colors.jsx";
 
 // CSF format
 export default {

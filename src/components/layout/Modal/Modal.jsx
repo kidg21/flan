@@ -1,8 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/forbid-prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
 import React, { Fragment, useState } from "react";
 import styled, { keyframes } from "styled-components";
 import { screen } from "Variables";
