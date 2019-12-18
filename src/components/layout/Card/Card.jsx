@@ -8,6 +8,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
+import { Spacer } from "helpers/Display";
 import Grid from "layout/Grid";
 import Bar from "blocks/Bar";
 import Title, { Headline, SubTitle, Description, Body } from "base/Typography";
@@ -199,11 +200,11 @@ function Card({
 
   let commandElements = null;
   if (commands) {
-    if (commands.length > 2) {
-      // More than 2 Commands
+    // Exactly 2 Commands
+    if (commands.length >= 2) {
       commandElements = (
         <Bar
-          leftWidth="80%"
+          leftWidth="90%"
           left={
             <Grid columns="2">
               <Command
@@ -218,35 +219,19 @@ function Card({
               />
             </Grid>
           }
-          rightWidth="max-content"
-          right={<Menu data={commands.slice(2)} position="topLeft" />}
-        />
-      );
-    } else if (commands.length === 2) {
-      // Exactly 2 Commands
-      commandElements = (
-        <Bar
-          leftWidth="80%"
-          left={
-            <Grid columns="2">
-              <Command
-                label={commands[0].label}
-                onClick={commands[0].onClick}
-                disabled={commands[0].disabled}
-              />
-              <Command
-                label={commands[1].label}
-                onClick={commands[1].onClick}
-                disabled={commands[1].disabled}
-              />
-            </Grid>
+          rightWidth="10%"
+          right={
+            // More than 2 Commands
+            commands.length > 2 ? (
+              <Menu data={commands.slice(2)} position="topLeft" />
+            ) : (
+              <Spacer />
+            )
           }
-          // rightWidth="max-content"
-          // right={<Menu data={commands.slice(2)} position="topLeft" />}
         />
       );
-    } else {
       // Single Command
+    } else {
       commandElements = (
         <Bar
           left={
