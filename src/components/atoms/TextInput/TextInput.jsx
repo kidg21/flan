@@ -80,6 +80,8 @@ const Input = styled.input`
   }
 `;
 
+Input.displayName = "WrappedInput";
+
 function TextInput({
   autocompleteList,
   children,
@@ -212,6 +214,8 @@ function TextInput({
     </TextInputContainer>
   );
 }
+
+TextInput.displayName = "WrappedInput";
 
 TextInput.propTypes = {
   autocompleteList: PropTypes.arrayOf(PropTypes.string || PropTypes.shape({
