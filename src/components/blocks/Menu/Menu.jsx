@@ -110,16 +110,16 @@ function MenuComponent({
                       left:
                         submenuDirection === "right"
                           ? `${
-                              e.currentTarget.offsetParent.getBoundingClientRect()
-                                .width
-                            }px`
+                          e.currentTarget.offsetParent.getBoundingClientRect()
+                            .width
+                          }px`
                           : "",
                       right:
                         submenuDirection !== "right"
                           ? `${
-                              e.currentTarget.offsetParent.getBoundingClientRect()
-                                .width
-                            }px`
+                          e.currentTarget.offsetParent.getBoundingClientRect()
+                            .width
+                          }px`
                           : "",
                     });
                   }}
@@ -162,28 +162,25 @@ function MenuComponent({
   );
 }
 
-MenuComponent.defaultProps = {
-  left: "",
-  top: "",
-  right: "",
-  transform: "",
-  submenuDirection: "right",
-  onClick: null,
+MenuComponent.propTypes = {
+  data: PropTypes.oneOfType([PropTypes.array, PropTypes.string]),
+  id: PropTypes.string.isRequired,
+  left: PropTypes.string,
+  onClick: PropTypes.func,
+  right: PropTypes.string,
+  submenuDirection: PropTypes.string,
+  top: PropTypes.string,
+  transform: PropTypes.string,
 };
 
-MenuComponent.propTypes = {
-  id: PropTypes.string.isRequired,
-  onClick: PropTypes.func,
-  data: PropTypes.arrayOf(PropTypes.shape({
-      id: PropTypes.string,
-      name: PropTypes.string,
-      onClickLink: PropTypes.func,
-    }),).isRequired,
-  left: PropTypes.string,
-  top: PropTypes.string,
-  right: PropTypes.string,
-  transform: PropTypes.string,
-  submenuDirection: PropTypes.string,
+MenuComponent.defaultProps = {
+  data: null,
+  left: "",
+  onClick: null,
+  right: "",
+  submenuDirection: "right",
+  top: "",
+  transform: "",
 };
 
 /**
@@ -222,7 +219,7 @@ function getCssPosition(position) {
  * Main Menu Component
  */
 function Menu({
- id, data, icon, visible, onClick, position 
+  id, data, icon, visible, onClick, position,
 }) {
   let visibility = visible;
   let setVisibility = onClick;
@@ -254,14 +251,11 @@ function Menu({
 }
 
 Menu.propTypes = {
+  data: PropTypes.oneOfType([PropTypes.array, PropTypes.string]),
+  icon: PropTypes.string,
   id: PropTypes.string,
-  visible: PropTypes.bool,
   onClick: PropTypes.func,
-  data: PropTypes.arrayOf(PropTypes.shape({
-      id: PropTypes.string,
-      name: PropTypes.string,
-      onClickLink: PropTypes.func,
-    }),).isRequired,
+  visible: PropTypes.bool,
   position: PropTypes.oneOf([
     "topLeft",
     "topRight",
@@ -271,15 +265,15 @@ Menu.propTypes = {
     "topCenter",
     "default",
   ]),
-  icon: PropTypes.string,
 };
 
 Menu.defaultProps = {
+  data: null,
+  icon: "options",
   id: null,
-  visible: false,
   onClick: null,
   position: "default",
-  icon: "options",
+  visible: false,
 };
 
 export default Menu;

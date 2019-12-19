@@ -108,7 +108,7 @@ const commandHash = {
 };
 
 function Command({
- align, command, disabled, icon, id, label, onClick, size 
+  align, command, disabled, icon, id, label, onClick, size,
 }) {
   const cmd = commandHash[command] || { icon, label };
   let alignCommand = "";

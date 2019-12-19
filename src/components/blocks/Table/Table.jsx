@@ -42,6 +42,9 @@ export const MultiGridWrapper = styled.div`
       outline: none;
     }
   }
+  .ReactVirtualized__Grid__innerScrollContainer {
+    overflow: visible !important;
+  }
 `;
 
 export const CellWrapper = styled.div`
@@ -116,8 +119,8 @@ class Table extends Component {
   constructor(props) {
     super(props);
     const {
- rowHeight, columnWidth, minColWidth, minRowHeight 
-} = this.props;
+      rowHeight, columnWidth, minColWidth, minRowHeight,
+    } = this.props;
 
     if (rowHeight && columnWidth) {
       // if both provided, no need to use CellMeasurer
@@ -182,8 +185,8 @@ class Table extends Component {
   }
 
   _cellRenderer({
- columnIndex, rowIndex, key, parent, style 
-}) {
+    columnIndex, rowIndex, key, parent, style,
+  }) {
     const {
       rows,
       headers,
@@ -226,7 +229,6 @@ class Table extends Component {
       cellProps.isHeader = true;
       cellData = headers[columnIndex].label || "";
       if (headers[columnIndex].sortable) {
-        cellData = <React.Fragment>{cellData}</React.Fragment>;
         cellProps.isSortable = true;
       }
       // if (headers[columnIndex].id === sortColumnId) {
