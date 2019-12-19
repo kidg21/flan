@@ -4,7 +4,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
@@ -18,6 +18,7 @@ import Image from "atoms/Image";
 import Avatar from "atoms/Avatar";
 import Menu from "blocks/Menu";
 import MediaBlock from "blocks/MediaBlock";
+import Expander from "utils/Expander";
 
 const CardSectionWrapper = styled.section`
   display: flex;
@@ -34,6 +35,15 @@ const CardSectionWrapper = styled.section`
   }};
   z-index: 1;
   transition: all 0.2s ease;
+`;
+
+const CardDivider = styled(CardSectionWrapper)`
+  padding: 0;
+  margin: 0.5em 1em;
+  border-bottom: 1px solid;
+  border-bottom-color: ${props => {
+    return props.theme.palette.grey5;
+  }};
 `;
 
 const CardWrapper = styled.div`
@@ -95,6 +105,16 @@ const CardListWrapper = styled(Grid)`
   }
 `;
 
+const Text = (
+  <Body text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+);
+
+const Arrow = styled(Icon)`
+  transform: ${props => {
+    return props.toggleOn ? "rotate(-180deg)" : "rotate(0deg)";
+  }};
+`;
+
 function CardSection({ children, className, id, padding, type, onClick }) {
   let sectionPadding;
   let backgroundColor;
@@ -146,6 +166,31 @@ function CardSection({ children, className, id, padding, type, onClick }) {
   );
 }
 
+function ExpandingSection({ id, title, onClick, open, extra }) {
+  let expanded = open;
+  let setExpanded = onClick;
+  if (!setExpanded) [expanded, setExpanded] = useState(open);
+  function toggleDropdown() {
+    setExpanded(!expanded);
+  }
+  return (
+    <Expander
+      id={id}
+      header={
+        <Bar
+          contentAlign="center"
+          onClick={toggleDropdown}
+          left={<Title size="sm" text={title} />}
+          right={<Arrow icon="up" toggleOn={expanded} size="lg" />}
+        />
+      }
+    >
+      {extra}
+      {expanded ? <Description text={Text} /> : null}
+    </Expander>
+  );
+}
+
 function Card({
   children,
   className,
@@ -159,12 +204,15 @@ function Card({
   icon,
   label,
   commands,
+  more,
+  expands,
   onClick
 }) {
   let shadow;
   let border;
   let borderColor;
   let cardPadding;
+  let excess;
   switch (type) {
     case "outlined":
       border = "1px solid";
@@ -245,6 +293,15 @@ function Card({
       );
     }
   }
+
+  if (expands) {
+    excess = (
+      <React.Fragment>
+        <ExpandingSection title="Expand Me" />
+      </React.Fragment>
+    );
+  }
+
   return (
     <CardWrapper
       border={border}
@@ -282,9 +339,24 @@ function Card({
           <Body text={body} />
         </CardSection>
       ) : null}
-      {commandElements ? <CardSection>{commandElements}</CardSection> : null}
-      {/* {children ? <CardSection>{children}</CardSection> : null} */}
+      {excess ? <CardSection>{excess}</CardSection> : null}
+      {more ? (
+        <CardSection>
+          <Bar
+            contentAlign="center"
+            left={
+              <>
+                <Title text="More Stuff" />
+              </>
+            }
+            rightWidth="max-content"
+            right={<Icon icon="down" size="lg" />}
+          ></Bar>
+        </CardSection>
+      ) : null}
+      <CardDivider />
       {children}
+      {commandElements ? <CardSection>{commandElements}</CardSection> : null}
     </CardWrapper>
   );
 }

@@ -46,11 +46,13 @@ storiesOf("Work|Card/Layout", module)
           }
         ]}
         onClick={action("Primary Action Area Clicked")}
+        // more
+        expands
       >
-        {/* <CardSection onClick={action("Secondary Action Area Clicked")}> */}
-        {/* <Button label="Button" type="solid" /> */}
-        {/* <Button label="Button" type="solid" /> */}
-        {/* </CardSection> */}
+        <CardSection onClick={action("Secondary Action Area Clicked")}>
+          <Button label="Button" type="solid" />
+          <Button label="Button" type="solid" />
+        </CardSection>
       </Card>
     );
   })
