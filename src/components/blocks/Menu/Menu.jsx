@@ -163,7 +163,11 @@ function MenuComponent({
 }
 
 MenuComponent.propTypes = {
-  data: PropTypes.oneOfType([PropTypes.array, PropTypes.string]),
+  data: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string,
+    name: PropTypes.string,
+    onClickLink: PropTypes.func,
+  })).isRequired,
   id: PropTypes.string.isRequired,
   left: PropTypes.string,
   onClick: PropTypes.func,
@@ -174,7 +178,6 @@ MenuComponent.propTypes = {
 };
 
 MenuComponent.defaultProps = {
-  data: null,
   left: "",
   onClick: null,
   right: "",
