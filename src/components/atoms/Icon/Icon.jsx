@@ -197,7 +197,7 @@ function Icon({
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) color = "disabled";
-  else if (onClick) color = "primary";
+  else if (onClick) color = "link";
 
   const styledIcon = (
     <StyledIcon

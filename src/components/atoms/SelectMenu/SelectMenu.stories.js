@@ -4,7 +4,7 @@ import React from "react";
 
 import { Padding } from "helpers/Display";
 import Form, { Section } from "layout/Form";
-import SelectMenu from "./SelectMenu.jsx";
+import SelectMenu from "atoms/SelectMenu";
 
 const options = [
   { value: "chocolate", label: "Chocolate" },

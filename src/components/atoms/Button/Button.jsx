@@ -19,30 +19,56 @@ const StyledButton = styled.button.attrs((props) => {
   };
 })`
   display: flex;
-  flex: auto;
   flex-direction: column;
-  width: ${(props) => { return props.width; }};
+  width: ${(props) => {
+    return props.width;
+  }};
   height: 100%;
-  padding: ${(props) => { return props.padding; }};
+  padding: ${(props) => {
+    return props.padding;
+  }};
   justify-content: center;
   align-items: center;
-  color: ${(props) => { return props.theme.palette[props.fontColor] || props.theme.text.primary; }};
-  background-color: ${(props) => { return props.theme.palette[props.backgroundColor] || props.theme.background.default; }};
-  border: ${(props) => { return props.border; }};
-  border-radius: ${(props) => { return props.borderRadius; }};
-  font-size: ${(props) => { return props.fontSize; }};
-  font-weight: ${(props) => { return props.fontWeight; }};
+  color: ${(props) => {
+    return props.theme.palette[props.fontColor] || props.theme.text.primary;
+  }};
+  background-color: ${(props) => {
+    return (
+      props.theme.palette[props.backgroundColor] ||
+      props.theme.background.default
+    );
+  }};
+  border: ${(props) => {
+    return props.border;
+  }};
+  border-radius: ${(props) => {
+    return props.borderRadius;
+  }};
+  font-size: ${(props) => {
+    return props.fontSize;
+  }};
+  font-weight: ${(props) => {
+    return props.fontWeight;
+  }};
   overflow: hidden;
   cursor: pointer;
-  border-bottom: ${(props) => { return props.borderBottom || ""; }};
-  border-bottom-color: ${(props) => { return props.theme.palette[props.underlineColor]; }};
+  border-bottom: ${(props) => {
+    return props.borderBottom || "";
+  }};
+  border-bottom-color: ${(props) => {
+    return props.theme.palette[props.underlineColor];
+  }};
   transition: all 0.15s ease;
 
   &:focus,
   &:hover {
     ${Darken};
-    border-bottom: ${(props) => { return props.borderBottom || ""; }};
-    border-bottom-color: ${(props) => { return props.theme.palette[props.underlineColor]; }};
+    border-bottom: ${(props) => {
+    return props.borderBottom || "";
+  }};
+    border-bottom-color: ${(props) => {
+    return props.theme.palette[props.underlineColor];
+  }};
   }
 
   &:empty {
@@ -62,6 +88,7 @@ const StyledButton = styled.button.attrs((props) => {
     user-select: none;
   }
 `;
+
 StyledButton.displayName = "Button";
 
 const ButtonIcon = styled(Icon)`
@@ -111,7 +138,8 @@ function Button({
 }) {
   let backgroundColor;
   let borderBottom;
-  const buttonColor = buttonType[color ? color.toLowerCase() : "primary"] || "primary";
+  const buttonColor =
+    buttonType[color ? color.toLowerCase() : "primary"] || "primary";
   let fontColor = buttonColor;
   let fontWeight = "400";
 

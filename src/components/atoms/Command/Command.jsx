@@ -38,7 +38,6 @@ const CommandContainer = styled.a`
   pointer-events: ${(props) => {
     return props.isDisabled ? "none" : "";
   }};
-  transition: all 0.3s ease;
 `;
 
 const CommandName = styled(Title)`
@@ -131,7 +130,8 @@ function Command({
       break;
   }
 
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) commandColor = "disabled";
 
   switch (size) {
