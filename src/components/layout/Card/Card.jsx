@@ -34,7 +34,10 @@ const CardSectionWrapper = styled.section`
     return props.onClick ? "pointer" : "";
   }};
   z-index: 1;
-  transition: all 0.2s ease;
+  max-height: ${props => {
+    return props.collapsed ? "0" : "100vh";
+  }}; 
+  transition: all 0.25s ease-in-out;
 `;
 
 const CardDivider = styled(CardSectionWrapper)`
@@ -84,8 +87,8 @@ const CardWrapper = styled.div`
     &:before {
       ${PlaceholderText}
       color: ${props => {
-        return props.theme.text.primary;
-      }};
+    return props.theme.text.primary;
+  }};
       content: "Card";
       padding: 2rem;
     }
@@ -105,17 +108,13 @@ const CardListWrapper = styled(Grid)`
   }
 `;
 
-const Text = (
-  <Body text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
-);
-
 const Arrow = styled(Icon)`
   transform: ${props => {
     return props.toggleOn ? "rotate(-180deg)" : "rotate(0deg)";
   }};
 `;
 
-function CardSection({ children, className, id, padding, type, onClick }) {
+function CardSection({ children, className, collapsed, id, padding, type, onClick }) {
   let sectionPadding;
   let backgroundColor;
   switch (type) {
@@ -158,6 +157,7 @@ function CardSection({ children, className, id, padding, type, onClick }) {
       backgroundColor={backgroundColor}
       sectionPadding={sectionPadding}
       className={className}
+      collapsed={collapsed}
       id={id}
       onClick={onClick}
     >
@@ -166,10 +166,10 @@ function CardSection({ children, className, id, padding, type, onClick }) {
   );
 }
 
-function ExpandingSection({ id, title, onClick, open, extra }) {
-  let expanded = open;
+function ExpandingSection({ id, more, onClick, title, }) {
+  let expanded;
   let setExpanded = onClick;
-  if (!setExpanded) [expanded, setExpanded] = useState(open);
+  if (!setExpanded) [expanded, setExpanded] = useState(!expanded);
   function toggleDropdown() {
     setExpanded(!expanded);
   }
@@ -177,16 +177,17 @@ function ExpandingSection({ id, title, onClick, open, extra }) {
     <Expander
       id={id}
       header={
-        <Bar
-          contentAlign="center"
-          onClick={toggleDropdown}
-          left={<Title size="sm" text={title} />}
-          right={<Arrow icon="up" toggleOn={expanded} size="lg" />}
-        />
+        <CardSection>
+          <Bar
+            contentAlign="center"
+            onClick={toggleDropdown}
+            left={<Title size="sm" text={title} />}
+            right={<Arrow icon="up" toggleOn={expanded} size="lg" />}
+          />
+        </CardSection>
       }
     >
-      {extra}
-      {expanded ? <Description text={Text} /> : null}
+      <CardSection collapsed={expanded}>{more}</CardSection>
     </Expander>
   );
 }
@@ -273,8 +274,8 @@ function Card({
             commands.length > 2 ? (
               <Menu data={commands.slice(2)} position="topLeft" />
             ) : (
-              <Spacer />
-            )
+                <Spacer />
+              )
           }
         />
       );
@@ -339,8 +340,9 @@ function Card({
           <Body text={body} />
         </CardSection>
       ) : null}
-      {excess ? <CardSection>{excess}</CardSection> : null}
-      {more ? (
+      {more ? <ExpandingSection title="Expand Me" more={more} /> : null}
+      {/* {excess} */}
+      {/* {more ? (
         <CardSection>
           <Bar
             contentAlign="center"
@@ -353,7 +355,7 @@ function Card({
             right={<Icon icon="down" size="lg" />}
           ></Bar>
         </CardSection>
-      ) : null}
+      ) : null} */}
       <CardDivider />
       {children}
       {commandElements ? <CardSection>{commandElements}</CardSection> : null}

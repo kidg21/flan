@@ -7,6 +7,7 @@
 import React from "react";
 import { Padding } from "helpers/Display";
 import { action } from "@storybook/addon-actions";
+import Image from "atoms/Image";
 import Card, { CardSection, CardList } from "layout/Card";
 import Title, { Description } from "base/Typography";
 import MediaBlock from "blocks/MediaBlock";
@@ -27,27 +28,33 @@ storiesOf("Work|Card/Layout", module)
           {
             label: "Command One",
             name: "Command One",
-            onClick: action("Command One Clicked")
+            onClick: action("Command One Clicked"),
           },
           {
             label: "Command Two",
             name: "Command Two",
-            onClick: action("Command Two Clicked")
+            onClick: action("Command Two Clicked"),
           },
           {
             label: "Command Three",
             name: "Command Three",
-            onClick: action("Command Three Clicked")
+            onClick: action("Command Three Clicked"),
           },
           {
             label: "Command Four",
             name: "Command Four",
-            onClick: action("Command Four Clicked")
-          }
+            onClick: action("Command Four Clicked"),
+          },
         ]}
         onClick={action("Primary Action Area Clicked")}
-        // more
-        expands
+        // more={<Button label="Button" type="solid" />}
+        more={<MediaBlock media={<Image
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+          alt="This is alt text for this image"
+        />} body={<>
+          <Title text="Media Block" />
+          <Description text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. " />
+        </>} />}
       >
         <CardSection onClick={action("Secondary Action Area Clicked")}>
           <Button label="Button" type="solid" />
