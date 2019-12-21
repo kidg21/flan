@@ -48,18 +48,27 @@ storiesOf("Work|Card/Layout", module)
         ]}
         onClick={action("Primary Action Area Clicked")}
         // more={<Button label="Button" type="solid" />}
-        more={<MediaBlock media={<Image
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-          alt="This is alt text for this image"
-        />} body={<>
-          <Title text="Media Block" />
-          <Description text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. " />
-        </>} />}
+        more={
+          <MediaBlock
+            media={
+              <Image
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+                alt="This is alt text for this image"
+              />
+            }
+            body={
+              <>
+                <Title text="Media Block" />
+                <Description text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. " />
+              </>
+            }
+          />
+        }
       >
-        <CardSection onClick={action("Secondary Action Area Clicked")}>
+        {/* <CardSection onClick={action("Secondary Action Area Clicked")}>
           <Button label="Button" type="solid" />
           <Button label="Button" type="solid" />
-        </CardSection>
+        </CardSection> */}
       </Card>
     );
   })

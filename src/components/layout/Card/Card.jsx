@@ -6,9 +6,10 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 import { Spacer } from "helpers/Display";
+import { Lighten, Darken } from "Variables";
 import Grid from "layout/Grid";
 import Bar from "blocks/Bar";
 import Title, { Headline, SubTitle, Description, Body } from "base/Typography";
@@ -21,37 +22,56 @@ import MediaBlock from "blocks/MediaBlock";
 import Expander from "utils/Expander";
 
 const CardSectionWrapper = styled.section`
+  position: relative;
   display: flex;
   flex-direction: column;
   flex: 0 0 auto;
+  /* order: ${props => {
+    return props.order || "1";
+  }}; */
   background-color: ${props => {
-    return props.theme.palette[props.backgroundColor] || "";
+    return props.theme.palette[props.backgroundColor] || props.theme.palette.default;
   }};
   padding: ${props => {
-    return props.sectionPadding || "0.5em 1em";
+    return props.sectionPadding || "1em";
+    /* return props.sectionPadding || "0.5em 1em"; */
   }};
   cursor: ${props => {
     return props.onClick ? "pointer" : "";
   }};
   z-index: 1;
   max-height: ${props => {
-    return props.collapsed ? "0" : "100vh";
+    return props.open ? "0" : "100vh";
   }}; 
   transition: all 0.25s ease-in-out;
-`;
-
-const CardDivider = styled(CardSectionWrapper)`
-  padding: 0;
-  margin: 0.5em 1em;
-  border-bottom: 1px solid;
-  border-bottom-color: ${props => {
-    return props.theme.palette.grey5;
+  &:after {
+    /* content: "";
+    position: absolute;
+    background-color: ${props => {
+    return props.divider ? props.theme.palette.alert : "";
   }};
+    height: ${props => {
+    return props.divider ? "1px" : "";
+  }}; */
+    ${props => {
+    return props.divider && css`
+        content: "";
+        position: absolute;
+        left: 1rem;
+        right: 1rem;
+        bottom: 0;
+        background-color: ${props => {
+        return props.theme.palette.grey5;
+      }};
+        height: 1px;
+      `;
+  }};
+  }
 `;
 
 const CardWrapper = styled.div`
   ${CardSectionWrapper} {
-    &:first-of-type {
+    /* &:first-of-type {
       padding: 1em 1em 0.5em;
     }
     &:last-of-type {
@@ -59,15 +79,13 @@ const CardWrapper = styled.div`
     }
     &:only-of-type {
       padding: 1em;
-    }
+    } */
   }
+  position: relative;
   display: flex;
   flex-direction: column;
   border-radius: 5px;
   flex: none;
-  box-shadow: ${props => {
-    return props.theme.shadows[props.shadow] || "";
-  }};
   border: ${props => {
     return props.border || "";
   }};
@@ -80,8 +98,9 @@ const CardWrapper = styled.div`
   color: ${props => {
     return props.theme.text.primary;
   }};
-  position: relative;
-  /* Square off rounded edges of any direct children of Cards */
+  box-shadow: ${props => {
+    return props.theme.shadows[props.shadow] || "";
+  }};
   /* Prototype Content - displays when a Card is empty */
   &:empty {
     &:before {
@@ -96,10 +115,20 @@ const CardWrapper = styled.div`
 `;
 
 const CardListWrapper = styled(Grid)`
-  /* Prototype Content - displays when a Card List is empty */
   ${CardWrapper} {
     height: 100%;
+    box-shadow: ${props => {
+    return props.theme.shadows[props.shadow] || props.theme.shadows.shadow1;
+  }};
+    transition: all 0.25s ease-in-out;
+    &:hover {
+      ${Darken};
+      box-shadow: ${props => {
+    return props.theme.shadows.shadow2;
+  }};
+    }
   }
+  /* Prototype Content - displays when a Card List is empty */
   &:empty {
     &:before {
       ${PlaceholderText}
@@ -112,9 +141,10 @@ const Arrow = styled(Icon)`
   transform: ${props => {
     return props.toggleOn ? "rotate(-180deg)" : "rotate(0deg)";
   }};
+  transition: all 0.25s ease-in-out;
 `;
 
-function CardSection({ children, className, collapsed, id, padding, type, onClick }) {
+function CardSection({ children, className, divider, open, id, padding, type, onClick }) {
   let sectionPadding;
   let backgroundColor;
   switch (type) {
@@ -157,7 +187,8 @@ function CardSection({ children, className, collapsed, id, padding, type, onClic
       backgroundColor={backgroundColor}
       sectionPadding={sectionPadding}
       className={className}
-      collapsed={collapsed}
+      divider={divider}
+      open={open}
       id={id}
       onClick={onClick}
     >
@@ -167,28 +198,30 @@ function CardSection({ children, className, collapsed, id, padding, type, onClic
 }
 
 function ExpandingSection({ id, more, onClick, title, }) {
-  let expanded;
-  let setExpanded = onClick;
-  if (!setExpanded) [expanded, setExpanded] = useState(!expanded);
+  let open;
+  let setOpen = onClick;
+  if (!setOpen) [open, setOpen] = useState(!open);
   function toggleDropdown() {
-    setExpanded(!expanded);
+    setOpen(!open);
   }
   return (
-    <Expander
-      id={id}
-      header={
-        <CardSection>
-          <Bar
-            contentAlign="center"
-            onClick={toggleDropdown}
-            left={<Title size="sm" text={title} />}
-            right={<Arrow icon="up" toggleOn={expanded} size="lg" />}
-          />
-        </CardSection>
-      }
-    >
-      <CardSection collapsed={expanded}>{more}</CardSection>
-    </Expander>
+    <CardSection padding="none" divider>
+      <Expander
+        id={id}
+        header={
+          <CardSection>
+            <Bar
+              contentAlign="center"
+              onClick={toggleDropdown}
+              left={<Title size="sm" text={title} />}
+              right={<Arrow icon="up" toggleOn={open} size="lg" />}
+            />
+          </CardSection>
+        }
+      >
+        <CardSection open={open}>{more}</CardSection>
+      </Expander>
+    </CardSection>
   );
 }
 
@@ -213,7 +246,6 @@ function Card({
   let border;
   let borderColor;
   let cardPadding;
-  let excess;
   switch (type) {
     case "outlined":
       border = "1px solid";
@@ -295,14 +327,6 @@ function Card({
     }
   }
 
-  if (expands) {
-    excess = (
-      <React.Fragment>
-        <ExpandingSection title="Expand Me" />
-      </React.Fragment>
-    );
-  }
-
   return (
     <CardWrapper
       border={border}
@@ -320,18 +344,19 @@ function Card({
           onClick={onClick}
         />
       ) : null}
-      {title || description ? (
+      {title || description || label || icon ? (
         <CardSection onClick={onClick}>
           <Bar
             contentAlign="center"
             left={
               <>
-                <Headline text={title} />
-                <SubTitle text={description} />
+                {label || icon && !title && !description ? <Avatar label={label} icon={icon} /> : null}
+                {title ? <Headline text={title} /> : null}
+                {description ? <SubTitle text={description} /> : null}
               </>
             }
             rightWidth="max-content"
-            right={label || icon ? <Avatar label={label} icon={icon} /> : null}
+            right={label || icon && title || description ? <Avatar label={label} icon={icon} /> : null}
           ></Bar>
         </CardSection>
       ) : null}
@@ -340,23 +365,7 @@ function Card({
           <Body text={body} />
         </CardSection>
       ) : null}
-      {more ? <ExpandingSection title="Expand Me" more={more} /> : null}
-      {/* {excess} */}
-      {/* {more ? (
-        <CardSection>
-          <Bar
-            contentAlign="center"
-            left={
-              <>
-                <Title text="More Stuff" />
-              </>
-            }
-            rightWidth="max-content"
-            right={<Icon icon="down" size="lg" />}
-          ></Bar>
-        </CardSection>
-      ) : null} */}
-      <CardDivider />
+      {more ? <ExpandingSection title="More" more={more} /> : null}
       {children}
       {commandElements ? <CardSection>{commandElements}</CardSection> : null}
     </CardWrapper>

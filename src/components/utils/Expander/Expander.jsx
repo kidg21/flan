@@ -5,27 +5,29 @@ import styled from "styled-components";
 
 const AccordionSection = styled.div`
   cursor: pointer;
+  /* order: 1; */
 `;
 
 const ChildrenWrapper = styled.div`
+  /* order: 1; */
   max-height: ${(props) => {
-    return props.collapsed ? "0" : "100%";
+    return props.open ? "100%" : "0";
   }};
   opacity: ${(props) => {
-    return props.collapsed ? "0" : "100%";
+    return props.open ? "100%" : "0";
   }};
   transition: all 0.25s ease-in-out;
 `;
 
 const AccordionFunction = ({
-  id, header, children, visibility, onClick,
+  id, header, children, open, onClick,
 }) => {
   return (
     <Fragment>
       <AccordionSection id={id} onClick={onClick}>
         {header}
       </AccordionSection>
-      <ChildrenWrapper collapsed={visibility}>{children}</ChildrenWrapper>
+      <ChildrenWrapper open={open}>{children}</ChildrenWrapper>
     </Fragment>
   );
 };
@@ -41,7 +43,7 @@ function Expander({
     <AccordionFunction
       id={id}
       header={header}
-      visibility={!isOpen}
+      open={isOpen}
       onClick={() => {
         setIsOpen(!isOpen);
       }}
@@ -56,14 +58,14 @@ AccordionFunction.propTypes = {
   header: PropTypes.node.isRequired,
   id: PropTypes.string,
   onClick: PropTypes.func,
-  visibility: PropTypes.bool,
+  open: PropTypes.bool,
 };
 
 AccordionFunction.defaultProps = {
   children: null,
   id: "",
   onClick: () => { },
-  visibility: true,
+  open: true,
 };
 
 Expander.propTypes = {

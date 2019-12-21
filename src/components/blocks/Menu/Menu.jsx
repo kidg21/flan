@@ -16,10 +16,10 @@ const MenuContainer = styled.div`
   padding: 0.5em;
   margin: -0.5em;
   line-height: 1.5;
-  color: ${props => {
+  color: ${(props) => {
     return props.theme.text.primary;
   }};
-  /* background-color: ${props => {
+  /* background-color: ${(props) => {
     return props.theme.background.default;
   }}; */
 `;
@@ -39,7 +39,7 @@ const MenuList = styled.ul`
   min-width: 10em;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: ${props => {
+  background-color: ${(props) => {
     return props.theme.background.default;
   }};
 `;
@@ -47,16 +47,16 @@ const MenuList = styled.ul`
 const MenuPopper = styled.div`
   position: absolute;
   z-index: 500;
-  top: ${props => {
+  top: ${(props) => {
     return props.top || "";
   }};
-  left: ${props => {
+  left: ${(props) => {
     return props.left || "";
   }};
-  right: ${props => {
+  right: ${(props) => {
     return props.right || "";
   }};
-  transform: ${props => {
+  transform: ${(props) => {
     return props.transform || "";
   }};
 `;
@@ -82,7 +82,7 @@ function MenuComponent({
   top,
   transform,
   submenuDirection,
-  right
+  right,
 }) {
   const [activeItem, setActiveItem] = useState({});
 
@@ -100,15 +100,15 @@ function MenuComponent({
       onClick={onClick}
       onMouseLeave={closeMenu}
     >
-      <Card>
+      <Card type="elevated">
         <MenuList>
-          {data.map(item => {
+          {data.map((item) => {
             // nested submenu
             if (item.commands) {
               return (
                 <MenuItem
                   key={item.id}
-                  onMouseOver={e => {
+                  onMouseOver={(e) => {
                     setActiveItem({
                       id: item.id,
                       top: `${e.currentTarget.getBoundingClientRect().top -
@@ -117,17 +117,17 @@ function MenuComponent({
                       left:
                         submenuDirection === "right"
                           ? `${
-                              e.currentTarget.offsetParent.getBoundingClientRect()
-                                .width
-                            }px`
+                          e.currentTarget.offsetParent.getBoundingClientRect()
+                            .width
+                          }px`
                           : "",
                       right:
                         submenuDirection !== "right"
                           ? `${
-                              e.currentTarget.offsetParent.getBoundingClientRect()
-                                .width
-                            }px`
-                          : ""
+                          e.currentTarget.offsetParent.getBoundingClientRect()
+                            .width
+                          }px`
+                          : "",
                     });
                   }}
                 >
@@ -175,24 +175,22 @@ MenuComponent.defaultProps = {
   right: "",
   transform: "",
   submenuDirection: "right",
-  onClick: null
+  onClick: null,
 };
 
 MenuComponent.propTypes = {
   id: PropTypes.string.isRequired,
   onClick: PropTypes.func,
-  data: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string,
-      name: PropTypes.string,
-      onClickLink: PropTypes.func
-    })
-  ).isRequired,
+  data: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string,
+    name: PropTypes.string,
+    onClickLink: PropTypes.func,
+  })).isRequired,
   left: PropTypes.string,
   top: PropTypes.string,
   right: PropTypes.string,
   transform: PropTypes.string,
-  submenuDirection: PropTypes.string
+  submenuDirection: PropTypes.string,
 };
 
 /**
@@ -230,7 +228,9 @@ function getCssPosition(position) {
 /**
  * Main Menu Component
  */
-function Menu({ id, data, icon, visible, onClick, position }) {
+function Menu({
+  id, data, icon, visible, onClick, position,
+}) {
   let visibility = visible;
   let setVisibility = onClick;
   if (!setVisibility) {
@@ -264,13 +264,11 @@ Menu.propTypes = {
   id: PropTypes.string,
   visible: PropTypes.bool,
   onClick: PropTypes.func,
-  data: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string,
-      name: PropTypes.string,
-      onClickLink: PropTypes.func
-    })
-  ).isRequired,
+  data: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string,
+    name: PropTypes.string,
+    onClickLink: PropTypes.func,
+  })).isRequired,
   position: PropTypes.oneOf([
     "topLeft",
     "topRight",
@@ -278,9 +276,9 @@ Menu.propTypes = {
     "bottomLeft",
     "bottomCenter",
     "topCenter",
-    "default"
+    "default",
   ]),
-  icon: PropTypes.string
+  icon: PropTypes.string,
 };
 
 Menu.defaultProps = {
@@ -288,7 +286,7 @@ Menu.defaultProps = {
   visible: false,
   onClick: null,
   position: "default",
-  icon: "options"
+  icon: "options",
 };
 
 export default Menu;
