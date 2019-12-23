@@ -4,6 +4,15 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 
 const AccordionSection = styled.div`
+  /* background-color: ${(props) => {
+    return props.theme.palette.disabled;
+  }}; */
+  padding: 0.5rem 1rem;
+  /* border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: ${(props) => {
+    return props.theme.palette.grey5;
+  }}; */
   cursor: pointer;
   /* order: 1; */
 `;

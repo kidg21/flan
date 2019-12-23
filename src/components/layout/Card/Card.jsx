@@ -33,8 +33,8 @@ const CardSectionWrapper = styled.section`
     return props.theme.palette[props.backgroundColor] || props.theme.palette.default;
   }};
   padding: ${props => {
-    return props.sectionPadding || "1em";
-    /* return props.sectionPadding || "0.5em 1em"; */
+    /* return props.sectionPadding || "1em"; */
+    return props.sectionPadding || "0.75em 1em";
   }};
   cursor: ${props => {
     return props.onClick ? "pointer" : "";
@@ -44,26 +44,26 @@ const CardSectionWrapper = styled.section`
     return props.open ? "0" : "100vh";
   }}; 
   transition: all 0.25s ease-in-out;
+  &:before,
   &:after {
-    /* content: "";
-    position: absolute;
-    background-color: ${props => {
-    return props.divider ? props.theme.palette.alert : "";
-  }};
-    height: ${props => {
-    return props.divider ? "1px" : "";
-  }}; */
     ${props => {
-    return props.divider && css`
+    return (props.border || props.divider) && css`
         content: "";
         position: absolute;
+        top: 100%;
         left: 1rem;
         right: 1rem;
-        bottom: 0;
+        height: 1px;
         background-color: ${props => {
         return props.theme.palette.grey5;
       }};
-        height: 1px;
+      `;
+  }};
+  }
+  &:after {
+    ${props => {
+    return props.border && css`
+        top: 0;
       `;
   }};
   }
@@ -73,11 +73,11 @@ const CardWrapper = styled.div`
   ${CardSectionWrapper} {
     /* &:first-of-type {
       padding: 1em 1em 0.5em;
-    }
-    &:last-of-type {
+    } */
+    /* &:last-of-type {
       padding: 0.5em 1em 1em;
-    }
-    &:only-of-type {
+    } */
+    /* &:only-of-type {
       padding: 1em;
     } */
   }
@@ -144,7 +144,7 @@ const Arrow = styled(Icon)`
   transition: all 0.25s ease-in-out;
 `;
 
-function CardSection({ children, className, divider, open, id, padding, type, onClick }) {
+function CardSection({ border, children, className, divider, open, id, padding, type, onClick }) {
   let sectionPadding;
   let backgroundColor;
   switch (type) {
@@ -188,6 +188,7 @@ function CardSection({ children, className, divider, open, id, padding, type, on
       sectionPadding={sectionPadding}
       className={className}
       divider={divider}
+      border={border}
       open={open}
       id={id}
       onClick={onClick}
@@ -205,18 +206,25 @@ function ExpandingSection({ id, more, onClick, title, }) {
     setOpen(!open);
   }
   return (
-    <CardSection padding="none" divider>
+    <CardSection padding="none">
       <Expander
         id={id}
         header={
-          <CardSection>
-            <Bar
-              contentAlign="center"
-              onClick={toggleDropdown}
-              left={<Title size="sm" text={title} />}
-              right={<Arrow icon="up" toggleOn={open} size="lg" />}
-            />
-          </CardSection>
+          // <CardSection padding="" border>
+          <Bar
+            contentAlign="center"
+            // leftWidth="max-content"
+            // left={<Arrow icon="up" toggleOn={open} size="lg" />}
+            onClick={toggleDropdown}
+            // left={<Title size="sm" text={title} />}
+            centerAlign="right"
+            center={
+              <Title size="sm" text={title} />
+            }
+            rightWidth="max-content"
+            right={<Arrow icon="up" toggleOn={open} size="lg" />}
+          />
+          // </CardSection>
         }
       >
         <CardSection open={open}>{more}</CardSection>
@@ -360,12 +368,12 @@ function Card({
           ></Bar>
         </CardSection>
       ) : null}
+      {more ? <ExpandingSection title="More" more={more} /> : null}
       {body ? (
         <CardSection onClick={onClick}>
           <Body text={body} />
         </CardSection>
       ) : null}
-      {more ? <ExpandingSection title="More" more={more} /> : null}
       {children}
       {commandElements ? <CardSection>{commandElements}</CardSection> : null}
     </CardWrapper>

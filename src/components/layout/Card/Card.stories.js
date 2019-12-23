@@ -19,7 +19,7 @@ storiesOf("Work|Card/Layout", module)
   .add("WIP", () => {
     return (
       <Card
-        media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
+        // media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
         title="Title"
         description="Card Description"
         icon="bookmark_solid"
