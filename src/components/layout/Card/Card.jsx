@@ -198,57 +198,58 @@ function CardSection({ border, children, className, divider, open, id, padding, 
   );
 }
 
-function ExpandingSection({ id, more, onClick, title, }) {
-  let open;
-  let setOpen = onClick;
-  if (!setOpen) [open, setOpen] = useState(!open);
+function ExpandingSection({ id, more, onClick, title, description, label, icon, }) {
+  // let open;
+  // let setOpen = onClick;
+  const [open, setOpen] = useState(!open);
   function toggleDropdown() {
     setOpen(!open);
   }
   return (
-    <CardSection padding="none">
-      <Expander
-        id={id}
-        header={
-          // <CardSection padding="" border>
+    <Expander
+      id={id}
+      header={
+        title || description || label || icon ? (
           <Bar
             contentAlign="center"
-            // leftWidth="max-content"
-            // left={<Arrow icon="up" toggleOn={open} size="lg" />}
             onClick={toggleDropdown}
-            // left={<Title size="sm" text={title} />}
-            centerAlign="right"
+            leftWidth="max-content"
+            left={
+              label || icon ? <Avatar label={label} icon={icon} /> : null
+            }
+            centerAlign="left"
             center={
-              <Title size="sm" text={title} />
+              <>
+                {title ? <Headline text={title} /> : null}
+                {description ? <SubTitle text={description} /> : null}
+              </>
             }
             rightWidth="max-content"
-            right={<Arrow icon="up" toggleOn={open} size="lg" />}
-          />
-          // </CardSection>
-        }
-      >
-        <CardSection open={open}>{more}</CardSection>
-      </Expander>
-    </CardSection>
+            right={more ? <Arrow icon="up" toggleOn={open} size="lg" /> : null}
+          ></Bar>
+        ) : null}
+    >
+      <CardSection open={open}>{more}</CardSection>
+    </Expander>
   );
 }
 
 function Card({
+  body,
   children,
   className,
-  id,
-  padding,
-  type,
-  title,
-  description,
-  body,
-  media,
-  icon,
-  label,
   commands,
+  description,
+  icon,
+  id,
+  label,
+  media,
+  mediaDesc,
   more,
-  expands,
-  onClick
+  onClick,
+  padding,
+  title,
+  type,
 }) {
   let shadow;
   let border;
@@ -287,6 +288,39 @@ function Card({
       break;
   }
 
+  let headerSection;
+  if (more) {
+    headerSection = (
+      <ExpandingSection
+        title={title}
+        description={description}
+        label={label}
+        icon={icon}
+        more={more}
+      />
+    )
+  } else {
+    headerSection = (
+      <CardSection onClick={onClick}>
+        <Bar
+          contentAlign="center"
+          leftWidth="max-content"
+          left={
+            label || icon ? <Avatar label={label} icon={icon} /> : null
+          }
+          centerAlign="left"
+          center={
+            <>
+              {title ? <Headline text={title} /> : null}
+              {description ? <SubTitle text={description} /> : null}
+            </>
+          }
+        ></Bar>
+      </CardSection>
+    )
+  }
+
+
   let commandElements = null;
   if (commands) {
     // Exactly 2 Commands
@@ -320,7 +354,7 @@ function Card({
         />
       );
       // Single Command
-    } else {
+    } else if (commands.length === 1) {
       commandElements = (
         <Bar
           left={
@@ -347,28 +381,12 @@ function Card({
       {media ? (
         <Image
           src={media}
-          alt={`${"Card Image:" + " "}${media}`}
+          alt={mediaDesc || `${"Card Media:" + " "}${media}`}
           width="100%"
           onClick={onClick}
         />
       ) : null}
-      {title || description || label || icon ? (
-        <CardSection onClick={onClick}>
-          <Bar
-            contentAlign="center"
-            left={
-              <>
-                {label || icon && !title && !description ? <Avatar label={label} icon={icon} /> : null}
-                {title ? <Headline text={title} /> : null}
-                {description ? <SubTitle text={description} /> : null}
-              </>
-            }
-            rightWidth="max-content"
-            right={label || icon && title || description ? <Avatar label={label} icon={icon} /> : null}
-          ></Bar>
-        </CardSection>
-      ) : null}
-      {more ? <ExpandingSection title="More" more={more} /> : null}
+      {title || description || label || icon ? headerSection : null}
       {body ? (
         <CardSection onClick={onClick}>
           <Body text={body} />

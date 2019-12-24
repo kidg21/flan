@@ -19,7 +19,8 @@ storiesOf("Work|Card/Layout", module)
   .add("WIP", () => {
     return (
       <Card
-        // media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
+        media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
+        mediaDesc="Media Description"
         title="Title"
         description="Card Description"
         icon="bookmark_solid"
@@ -44,6 +45,11 @@ storiesOf("Work|Card/Layout", module)
             label: "Command Four",
             name: "Command Four",
             onClick: action("Command Four Clicked"),
+          },
+          {
+            label: "Command Five",
+            name: "Command Five",
+            onClick: action("Command Five Clicked"),
           },
         ]}
         onClick={action("Primary Action Area Clicked")}
