@@ -46,15 +46,6 @@ export const colors = {
   glassDark: "hsla(34, 5%, 28%, 0.85)",
   glassLight: "hsl(34, 5%, 95%, 0.85)",
 
-  shadow1: "0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)",
-  shadow2: "0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)",
-  shadow3: "0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)",
-  shadow4: "0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)",
-  shadow5: "0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22)",
-
-  shadowV:
-    "0 0.25em 5px rgba(0, 0, 0, 0.10), 0 -0.25em 5px rgba(0, 0, 0, 0.10)",
-
   green: "hsl(89, 46%, 42%)",
   greenBright: "hsl(135, 79%, 37%)",
   greenDark: "hsl(87, 91%, 22%)",
@@ -177,6 +168,48 @@ export const colors = {
   redTint: "hsl(3, 96%, 97%)",
 
   white: "hsl(0, 100%, 100%)",
+
+  shade1: "hsla(34, 5%, 12%, 0.05)",
+  shade2: "hsla(34, 5%, 12%, 0.1)",
+  shade3: "hsla(34, 5%, 12%, 0.15)",
+  shade4: "hsla(34, 5%, 12%, 0.2)",
+  shade5: "hsla(34, 5%, 12%, 0.25)",
+  shade6: "hsla(34, 5%, 12%, 0.3)",
+  shade7: "hsla(34, 5%, 12%, 0.35)",
+  shade8: "hsla(34, 5%, 12%, 0.4)",
+  shade9: "hsla(34, 5%, 12%, 0.45)",
+  shade10: "hsla(34, 5%, 12%, 0.5)",
+
+  // shadowV: "0 0.25em 5px rgba(0, 0, 0, 0.10), 0 -0.25em 5px rgba(0, 0, 0, 0.10)",
+
+};
+
+export const shadows = {
+  shadow0: `drop-shadow(${colors.shade6} 0 0 1px)`,
+  shadow1: `
+    drop-shadow(${colors.shade6} 0 0 1px)
+    drop-shadow(${colors.shade6} 0.1rem 0.1rem 0.15rem)
+  `,
+  shadow2: `
+    drop-shadow(${colors.shade6} 0 0 1px)
+    drop-shadow(${colors.shade5} 0.2rem 0.2rem 0.25rem)
+  `,
+  shadow3: `
+    drop-shadow(${colors.shade6} 0 0 1px)
+    drop-shadow(${colors.shade4} 0.3rem 0.3rem 0.35rem)
+  `,
+  shadow4: `
+    drop-shadow(${colors.shade6} 0 0 1px)
+    drop-shadow(${colors.shade3} 0.4rem 0.4rem 0.45rem)
+  `,
+  shadow5: `
+    drop-shadow(${colors.shade6} 0 0 1px)
+    drop-shadow(${colors.shade2} 0.5rem 0.5rem 0.55rem)
+  `,
+  dropShadow: `
+    ${colors.shade6} 0 0 1px,
+    ${colors.shade5} 0.2rem 0.2rem 0.25rem;
+  `,
 };
 
 export const DMPTheme = {
@@ -257,12 +290,13 @@ export const DMPTheme = {
     bloodOrange: colors.bloodorange7,
   },
   shadows: {
-    shadow1: colors.shadow1,
-    shadow2: colors.shadow2,
-    shadow3: colors.shadow3,
-    shadow4: colors.shadow4,
-    shadow5: colors.shadow5,
-    shadowV: colors.shadowV,
+    shadow0: shadows.shadow0,
+    shadow1: shadows.shadow1,
+    shadow2: shadows.shadow2,
+    shadow3: shadows.shadow3,
+    shadow4: shadows.shadow4,
+    shadow5: shadows.shadow5,
+    // shadowV: colors.shadowV,
   },
 };
 
@@ -379,7 +413,7 @@ export const Darken = css`
 `;
 
 export const Lighten = css`
-  filter: brightness(115%);
+filter: brightness(115 %);
 `;
 
 // Typefaces
@@ -393,40 +427,6 @@ export const fonts = {
 // Sizes for typography scale
 export const fontSize = {
   base: "12px",
-  // paragraph: '1rem',
-  // h1: '2.75rem',
-  // h2: '2.3125rem',
-  // h3: '1.6875rem',
-  // h4: '1.4375rem',
-  // h5: '1.125rem',
-  // h6: '1rem',
-  // xs: '12px',
-  // sm: '14px',
-  // lg: '18px',
-  // xl: '20px',
-  // xxl: '24px',
-  // xxxl: '30px',
-  // xxxxl: '36px'
-};
-
-// Sizes for typography scale
-export const shadows = {
-  cardShadow:
-    "drop-shadow(0 0 1px hsl(34, 5%, 72%)) drop-shadow(0.25rem 0.25rem 0.25rem hsla(34, 5%, 58%, 0.333333));",
-  dropShadow:
-    "hsl(34, 5%, 36%) 0rem 0rem 1px, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem;",
-  panelSectionShadow:
-    "hsl(34, 5%, 88%)  0rem 0rem 1px, hsla(34, 5%, 92%, 0.333333) 0 0rem 0.5rem 0.25rem;",
-  lightBorderShadow:
-    "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.333333) 0.25rem 0.25rem 0.5rem",
-  lightBorderInner:
-    "hsl(34, 5%, 72%) -1px -1px 0 0 inset, hsl(34, 5%, 72%) 1px 1px 0 0 inset",
-  border20: "hsl(34, 5%, 95%) 0px 0px 0px 1px",
-  border40: "hsl(34, 5%, 88%) 0px 0px 0px 1px",
-  checkedShadow:
-    "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
-  radioShadow:
-    "hsl(34, 5%, 95%) -1px -1px 0 0 inset, hsl(34, 5%, 95%) 1px 1px 0 0 inset, hsl(34, 5%, 95%) -1px 1px 0 0 inset, hsl(34, 5%, 95%) 1px -1px 0 0 inset, hsla(34, 5%, 36%, 0.2) 2px 2px 2px",
 };
 
 // Media Queries
@@ -438,9 +438,9 @@ const viewport = {
   xxlarge: "1921px",
 };
 export const screen = {
-  small: `only screen and (max-width: ${viewport.small})`,
-  medium: `only screen and (min-width: ${viewport.medium})`,
-  // medium: `only screen and (min-width: ${
+  small: `only screen and(max - width: ${viewport.small})`,
+  medium: `only screen and(min - width: ${viewport.medium})`,
+  // medium: `only screen and(min - width: ${
   //   viewport.medium
   // }) and (orientation: portrait)`,
   // medium_l: `only screen and (min-width: ${
