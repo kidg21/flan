@@ -100,7 +100,7 @@ function MenuComponent({
       onClick={onClick}
       onMouseLeave={closeMenu}
     >
-      <Card type="elevated">
+      <Card raised>
         <MenuList>
           {data.map((item) => {
             // nested submenu
