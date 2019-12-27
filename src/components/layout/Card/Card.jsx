@@ -1,9 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/require-default-props */
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
@@ -95,7 +90,7 @@ const CardWrapper = styled.div`
     return props.theme.text.primary;
   }};
   filter: ${props => {
-    return props.raised ? props.theme.shadows.shadow1 : props.theme.shadows.shadow0;
+    return props.theme.shadows[props.cardShadow] || "";
   }};
 
   /* Prototype Content - displays when a Card is empty */
@@ -134,7 +129,7 @@ const CardListWrapper = styled(Grid)`
   }
 `;
 
-function CardSection({ border, children, className, divider, open, id, padding, type, onClick }) {
+function CardSection({ border, children, className, divider, id, onClick, padding, type }) {
   let sectionPadding;
   let backgroundColor;
   switch (type) {
@@ -175,20 +170,19 @@ function CardSection({ border, children, className, divider, open, id, padding, 
   return (
     <CardSectionWrapper
       backgroundColor={backgroundColor}
-      sectionPadding={sectionPadding}
+      border={border}
       className={className}
       divider={divider}
-      border={border}
-      open={open}
       id={id}
       onClick={onClick}
+      sectionPadding={sectionPadding}
     >
       {children}
     </CardSectionWrapper>
   );
 }
 
-function ExpandingSection({ id, more, onClick, title, description, label, icon, }) {
+function ExpandingSection({ description, icon, id, label, more, onClick, title, }) {
   const [open, setOpen] = useState(!open);
   function toggleDropdown() {
     setOpen(!open);
@@ -224,6 +218,7 @@ function ExpandingSection({ id, more, onClick, title, description, label, icon, 
 
 function Card({
   body,
+  borderless,
   children,
   className,
   commands,
@@ -260,6 +255,15 @@ function Card({
       break;
   }
 
+  let cardShadow;
+  if (raised) {
+    cardShadow = "shadow1";
+  } else if (borderless) {
+    cardShadow = null;
+  } else {
+    cardShadow = "shadow0";
+  }
+
   let headerSection;
   if (more) {
     headerSection = (
@@ -291,7 +295,6 @@ function Card({
       </CardSection>
     )
   }
-
 
   let commandElements = null;
   if (commands) {
@@ -343,7 +346,9 @@ function Card({
 
   return (
     <CardWrapper
+      borderless={borderless}
       cardPadding={cardPadding}
+      cardShadow={cardShadow}
       className={className}
       id={id}
       raised={raised}
@@ -371,10 +376,10 @@ function Card({
 function CardList({ children, className, columns, gap, id, rows }) {
   return (
     <CardListWrapper
-      id={id}
       className={className}
       columns={columns}
       gap={gap}
+      id={id}
       rows={rows}
     >
       {children}
@@ -383,12 +388,45 @@ function CardList({ children, className, columns, gap, id, rows }) {
 }
 
 Card.propTypes = {
+  borderless: PropTypes.bool,
   children: PropTypes.node,
   className: PropTypes.string,
   id: PropTypes.string,
   padding: PropTypes.oneOf(["none", "1x", "2x", "3x", "4x"]),
   raised: PropTypes.bool,
 };
+Card.defaultProps = {
+  borderless: false,
+  children: null,
+  className: null,
+  id: null,
+  padding: null,
+  raised: false,
+}
+
+CardSection.propTypes = {
+  /** Adds a divider at the top and bottom of section */
+  border: PropTypes.bool,
+  children: PropTypes.node,
+  className: PropTypes.string,
+  /** Adds a divider at the bottom of section */
+  divider: PropTypes.bool,
+  id: PropTypes.string,
+  padding: PropTypes.oneOf(["none", "1x", "2x", "3x", "4x"]),
+  type: PropTypes.oneOf(["info", "success", "warning", "alert"]),
+  onClick: PropTypes.func,
+};
+CardSection.defaultProps = {
+  border: false,
+  children: null,
+  className: null,
+  divider: false,
+  id: null,
+  padding: null,
+  type: null,
+  onClick: null,
+}
+
 CardList.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
@@ -436,5 +474,13 @@ CardList.propTypes = {
    */
   rows: PropTypes.oneOf(["default (auto)", "[grid-template-rows]"])
 };
+CardList.defaultProps = {
+  children: null,
+  className: null,
+  columns: null,
+  gap: null,
+  id: null,
+  rows: null,
+}
 
-export { Card as default, CardList, CardSection };
+export { Card as default, CardSection, CardList };

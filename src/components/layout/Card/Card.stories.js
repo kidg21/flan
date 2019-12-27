@@ -85,6 +85,7 @@ storiesOf("Work|Card/Layout", module)
   .add("Elevations", () => {
     return (
       <Grid gap="large">
+        <Card description="Borderless" borderless />
         <Card description="Standard" />
         <Card description="Raised" raised />
       </Grid>
