@@ -9,6 +9,7 @@ import { Padding } from "helpers/Display";
 import { action } from "@storybook/addon-actions";
 import Image from "atoms/Image";
 import Card, { CardSection, CardList } from "layout/Card";
+import Grid from "layout/Grid";
 import Title, { Description } from "base/Typography";
 import MediaBlock from "blocks/MediaBlock";
 import Button from "atoms/Button";
@@ -81,14 +82,17 @@ storiesOf("Work|Card/Layout", module)
   .add("Default", () => {
     return <Card />;
   })
-  .add("Elevated Card", () => {
-    return <Card type="elevated" />;
+  .add("Elevations", () => {
+    return (
+      <Grid gap="large">
+        <Card description="Standard" />
+        <Card description="Raised" raised />
+      </Grid>
+    );
   })
   .add("Card List", () => {
     return (
       <CardList>
-        <Card />
-        <Card />
         <Card />
         <Card />
         <Card />

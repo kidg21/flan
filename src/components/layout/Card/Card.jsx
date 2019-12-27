@@ -33,7 +33,6 @@ const CardSectionWrapper = styled.section`
     return props.theme.palette[props.backgroundColor] || props.theme.palette.default;
   }};
   padding: ${props => {
-    /* return props.sectionPadding || "1em"; */
     return props.sectionPadding || "0.75em 1em";
   }};
   cursor: ${props => {
@@ -86,11 +85,8 @@ const CardWrapper = styled.div`
   flex-direction: column;
   border-radius: 5px;
   flex: none;
-  border: ${props => {
-    return props.border || "";
-  }};
-  border-color: ${props => {
-    return props.theme.palette[props.borderColor] || "";
+  background-color: ${props => {
+    return props.theme.background.default;
   }};
   padding: ${props => {
     return props.cardPadding || "";
@@ -98,9 +94,10 @@ const CardWrapper = styled.div`
   color: ${props => {
     return props.theme.text.primary;
   }};
-  box-shadow: ${props => {
-    return props.theme.shadows[props.shadow] || "";
+  filter: ${props => {
+    return props.raised ? props.theme.shadows.shadow1 : props.theme.shadows.shadow0;
   }};
+
   /* Prototype Content - displays when a Card is empty */
   &:empty {
     &:before {
@@ -117,14 +114,14 @@ const CardWrapper = styled.div`
 const CardListWrapper = styled(Grid)`
   ${CardWrapper} {
     height: 100%;
-    box-shadow: ${props => {
-    return props.theme.shadows[props.shadow] || props.theme.shadows.shadow1;
+    filter: ${props => {
+    return props.theme.shadows.shadow1;
   }};
     transition: all 0.25s ease-in-out;
     &:hover {
       ${Darken};
-      box-shadow: ${props => {
-    return props.theme.shadows.shadow2;
+      filter: ${props => {
+    return props.theme.shadows.shadow3;
   }};
     }
   }
@@ -239,26 +236,10 @@ function Card({
   more,
   onClick,
   padding,
+  raised,
   title,
-  type,
 }) {
-  let shadow;
-  let border;
-  let borderColor;
   let cardPadding;
-  switch (type) {
-    case "outlined":
-      border = "1px solid";
-      borderColor = "grey5";
-      break;
-    case "elevated":
-      shadow = "shadow1";
-      break;
-    default:
-      border = "1px solid";
-      borderColor = "grey5";
-      break;
-  }
   switch (padding) {
     case "none":
       cardPadding = "0em";
@@ -362,12 +343,10 @@ function Card({
 
   return (
     <CardWrapper
-      border={border}
-      shadow={shadow}
-      borderColor={borderColor}
       cardPadding={cardPadding}
       className={className}
       id={id}
+      raised={raised}
     >
       {media ? (
         <Image
@@ -405,10 +384,10 @@ function CardList({ children, className, columns, gap, id, rows }) {
 
 Card.propTypes = {
   children: PropTypes.node,
-  type: PropTypes.string,
   className: PropTypes.string,
   id: PropTypes.string,
-  padding: PropTypes.oneOf(["none", "1x", "2x", "3x", "4x"])
+  padding: PropTypes.oneOf(["none", "1x", "2x", "3x", "4x"]),
+  raised: PropTypes.bool,
 };
 CardList.propTypes = {
   children: PropTypes.node,
