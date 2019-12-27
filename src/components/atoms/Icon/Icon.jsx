@@ -1,9 +1,8 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable complexity */
 /* eslint-disable no-param-reassign */
-/* eslint-disable linebreak-style */
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -12,7 +11,7 @@ import { DisabledContext } from "States";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const LinkedIcon = styled.a`
-  cursor: ${props => {
+  cursor: ${(props) => {
     if (props.disabled) {
       return "not-allowed";
     } else if (props.onClick) {
@@ -20,10 +19,10 @@ const LinkedIcon = styled.a`
     }
     return "";
   }};
-  pointer-events: ${props => {
+  pointer-events: ${(props) => {
     return props.disabled ? "none" : "";
   }};
-  user-select: ${props => {
+  user-select: ${(props) => {
     return props.disabled ? "none" : "";
   }};
   &:hover {
@@ -35,18 +34,22 @@ const LinkedIcon = styled.a`
 `;
 
 const StyledIcon = styled(FontAwesomeIcon)`
-  color: ${props => {
+  color: ${(props) => {
     return props.theme.text[props.color] || "";
   }};
-  border: ${props => {
+  border: ${(props) => {
     return props.border ? "2px solid" : "";
   }};
-  border-color: ${props => {
+  border-color: ${(props) => {
     return props.theme.palette[props.border] || "";
   }};
-  border-radius: ${props => {
+  border-radius: ${(props) => {
     return props.border ? "5px" : "";
   }};
+  transform: ${(props) => {
+    return props.toggle ? "rotate(-180deg)" : "";
+  }};
+  transition: all 0.25s ease-in-out;
 `;
 
 const iconHash = {
@@ -165,7 +168,7 @@ const iconHash = {
   wifi: ["far", "wifi"],
   zoom_extents: ["far", "expand-arrows"],
   zoom_in: ["far", "search-plus"],
-  zoom_out: ["far", "search-minus"]
+  zoom_out: ["far", "search-minus"],
 };
 
 function Icon({
@@ -182,7 +185,8 @@ function Icon({
   size,
   spin,
   title,
-  type
+  type,
+  toggle,
 }) {
   let color;
   icon = iconHash[icon.toLowerCase()] || ["far", icon.toLowerCase()];
@@ -238,6 +242,7 @@ function Icon({
       size={size}
       spin={spin}
       title={title} // HTML attribute (display on :hover)
+      toggle={toggle}
     />
   );
 
@@ -245,9 +250,7 @@ function Icon({
     <LinkedIcon onClick={onClick} disabled={disabled}>
       {styledIcon}
     </LinkedIcon>
-  ) : (
-    styledIcon
-  );
+  ) : styledIcon;
 }
 
 Icon.propTypes = {
@@ -277,7 +280,8 @@ Icon.propTypes = {
   /** Smooth rotation */
   spin: PropTypes.bool,
   title: PropTypes.string,
-  type: PropTypes.string
+  toggle: PropTypes.bool,
+  type: PropTypes.string,
 };
 
 Icon.defaultProps = {
@@ -294,7 +298,8 @@ Icon.defaultProps = {
   size: null,
   spin: false,
   title: null,
-  type: null
+  toggle: null,
+  type: null,
 };
 
 export default Icon;

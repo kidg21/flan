@@ -137,13 +137,6 @@ const CardListWrapper = styled(Grid)`
   }
 `;
 
-const Arrow = styled(Icon)`
-  transform: ${props => {
-    return props.toggleOn ? "rotate(-180deg)" : "rotate(0deg)";
-  }};
-  transition: all 0.25s ease-in-out;
-`;
-
 function CardSection({ border, children, className, divider, open, id, padding, type, onClick }) {
   let sectionPadding;
   let backgroundColor;
@@ -199,8 +192,6 @@ function CardSection({ border, children, className, divider, open, id, padding, 
 }
 
 function ExpandingSection({ id, more, onClick, title, description, label, icon, }) {
-  // let open;
-  // let setOpen = onClick;
   const [open, setOpen] = useState(!open);
   function toggleDropdown() {
     setOpen(!open);
@@ -225,7 +216,7 @@ function ExpandingSection({ id, more, onClick, title, description, label, icon, 
               </>
             }
             rightWidth="max-content"
-            right={more ? <Arrow icon="up" toggleOn={open} size="lg" /> : null}
+            right={more ? <Icon icon="up" size="lg" toggle={open} /> : null}
           ></Bar>
         ) : null}
     >
