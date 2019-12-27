@@ -20,6 +20,7 @@ storiesOf("Work|Card/Layout", module)
   .add("WIP", () => {
     return (
       <Card
+        // mediaHeader
         media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
         mediaDesc="Media Description"
         title="Title"
@@ -28,26 +29,31 @@ storiesOf("Work|Card/Layout", module)
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         commands={[
           {
+            id: "Command One",
             label: "Command One",
             name: "Command One",
             onClick: action("Command One Clicked"),
           },
           {
+            id: "Command Two",
             label: "Command Two",
             name: "Command Two",
             onClick: action("Command Two Clicked"),
           },
           {
+            id: "Command Three",
             label: "Command Three",
             name: "Command Three",
             onClick: action("Command Three Clicked"),
           },
           {
+            id: "Command Four",
             label: "Command Four",
             name: "Command Four",
             onClick: action("Command Four Clicked"),
           },
           {
+            id: "Command Five",
             label: "Command Five",
             name: "Command Five",
             onClick: action("Command Five Clicked"),

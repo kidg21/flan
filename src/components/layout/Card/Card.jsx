@@ -21,9 +21,9 @@ const CardSectionWrapper = styled.section`
   display: flex;
   flex-direction: column;
   flex: 0 0 auto;
-  /* order: ${props => {
+  order: ${props => {
     return props.order || "1";
-  }}; */
+  }};
   background-color: ${props => {
     return props.theme.palette[props.backgroundColor] || props.theme.palette.default;
   }};
@@ -129,7 +129,7 @@ const CardListWrapper = styled(Grid)`
   }
 `;
 
-function CardSection({ border, children, className, divider, id, onClick, padding, type }) {
+function CardSection({ border, children, className, divider, id, onClick, order, padding, type }) {
   let sectionPadding;
   let backgroundColor;
   switch (type) {
@@ -175,6 +175,7 @@ function CardSection({ border, children, className, divider, id, onClick, paddin
       divider={divider}
       id={id}
       onClick={onClick}
+      order={order}
       sectionPadding={sectionPadding}
     >
       {children}
@@ -182,7 +183,7 @@ function CardSection({ border, children, className, divider, id, onClick, paddin
   );
 }
 
-function ExpandingSection({ description, icon, id, label, more, onClick, title, }) {
+function ExpandingSection({ description, icon, id, label, more, title, }) {
   const [open, setOpen] = useState(!open);
   function toggleDropdown() {
     setOpen(!open);
@@ -228,6 +229,7 @@ function Card({
   label,
   media,
   mediaDesc,
+  mediaHeader,
   more,
   onClick,
   padding,
@@ -267,13 +269,15 @@ function Card({
   let headerSection;
   if (more) {
     headerSection = (
-      <ExpandingSection
-        title={title}
-        description={description}
-        label={label}
-        icon={icon}
-        more={more}
-      />
+      <CardSection padding="none">
+        <ExpandingSection
+          title={title}
+          description={description}
+          label={label}
+          icon={icon}
+          more={more}
+        />
+      </CardSection>
     )
   } else {
     headerSection = (
@@ -294,6 +298,13 @@ function Card({
         ></Bar>
       </CardSection>
     )
+  }
+
+  // Sets the media section as the first section
+  if (mediaHeader) {
+    mediaHeader = "0";
+  } else {
+    mediaHeader = "";
   }
 
   let commandElements = null;
@@ -353,15 +364,16 @@ function Card({
       id={id}
       raised={raised}
     >
-      {media ? (
-        <Image
-          src={media}
-          alt={mediaDesc || `${"Card Media:" + " "}${media}`}
-          width="100%"
-          onClick={onClick}
-        />
-      ) : null}
       {title || description || label || icon ? headerSection : null}
+      {media ? (
+        <CardSection padding="none" order={mediaHeader} onClick={onClick}>
+          <Image
+            src={media}
+            alt={mediaDesc || `${"Card Media:" + " "}${media}`}
+            width="100%"
+          />
+        </CardSection>
+      ) : null}
       {body ? (
         <CardSection onClick={onClick}>
           <Body text={body} />
@@ -388,20 +400,46 @@ function CardList({ children, className, columns, gap, id, rows }) {
 }
 
 Card.propTypes = {
+  body: PropTypes.string,
   borderless: PropTypes.bool,
   children: PropTypes.node,
   className: PropTypes.string,
+  commands: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string,
+    label: PropTypes.string,
+    name: PropTypes.string,
+    onClick: PropTypes.func,
+  })),
+  description: PropTypes.string,
+  icon: PropTypes.string,
   id: PropTypes.string,
+  label: PropTypes.string,
+  media: PropTypes.string,
+  mediaDesc: PropTypes.string,
+  mediaHeader: PropTypes.bool,
+  more: PropTypes.node,
+  onClick: PropTypes.func,
   padding: PropTypes.oneOf(["none", "1x", "2x", "3x", "4x"]),
   raised: PropTypes.bool,
+  title: PropTypes.string,
 };
 Card.defaultProps = {
+  body: null,
   borderless: false,
   children: null,
   className: null,
+  commands: null,
+  description: null,
+  icon: null,
   id: null,
+  label: null,
+  media: null,
+  mediaDesc: null,
+  mediaHeader: null,
+  more: null,
   padding: null,
   raised: false,
+  title: null,
 }
 
 CardSection.propTypes = {
@@ -412,6 +450,7 @@ CardSection.propTypes = {
   /** Adds a divider at the bottom of section */
   divider: PropTypes.bool,
   id: PropTypes.string,
+  order: PropTypes.string,
   padding: PropTypes.oneOf(["none", "1x", "2x", "3x", "4x"]),
   type: PropTypes.oneOf(["info", "success", "warning", "alert"]),
   onClick: PropTypes.func,
@@ -422,6 +461,7 @@ CardSection.defaultProps = {
   className: null,
   divider: false,
   id: null,
+  order: null,
   padding: null,
   type: null,
   onClick: null,
