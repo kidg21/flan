@@ -55,7 +55,7 @@ storiesOf("Work|Card/Layout", module)
           {
             id: "Command Five",
             label: "Command Five",
-            name: "Command Five",
+            name: "Command FiveCommand Five CommandFiveCommand Five",
             onClick: action("Command Five Clicked"),
           },
         ]}

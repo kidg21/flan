@@ -13,30 +13,15 @@ import Card from "layout/Card";
 
 const MenuContainer = styled.div`
   cursor: pointer;
-  padding: 0.5em;
-  margin: -0.5em;
   line-height: 1.5;
   color: ${(props) => {
     return props.theme.text.primary;
   }};
-  /* background-color: ${(props) => {
-    return props.theme.background.default;
-  }}; */
-`;
-
-const MenuItem = styled.li`
-  padding: 0.55em;
-  z-index: 501;
-  text-align: left;
 `;
 
 const MenuList = styled.ul`
   list-style: none;
-  // padding: 0.25em;
-  padding-top: 0.4em;
-  padding-bottom: 0.4em;
-  width: auto;
-  min-width: 10em;
+  padding: .25em;
   overflow-x: hidden;
   overflow-y: auto;
   background-color: ${(props) => {
@@ -44,9 +29,21 @@ const MenuList = styled.ul`
   }};
 `;
 
+const MenuItem = styled.li`
+  text-align: left;
+  padding: 0.5em;
+  z-index: 501;
+  &:hover {
+  background-color: ${(props) => {
+    return props.theme.background.disabled;
+  }};
+  }
+`;
+
 const MenuPopper = styled.div`
   position: absolute;
   z-index: 500;
+  width: 12em;
   top: ${(props) => {
     return props.top || "";
   }};
