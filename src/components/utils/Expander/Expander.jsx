@@ -4,23 +4,11 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 
 const AccordionSection = styled.div`
-  /* background-color: ${(props) => {
-    return props.theme.palette.disabled;
-  }}; */
   padding: 0.75rem 1rem;
-  /* border-top: 1px solid;
-  border-bottom: 1px solid;
-  border-color: ${(props) => {
-    return props.theme.palette.grey5;
-  }}; */
   cursor: pointer;
-  /* box-shadow:
-    rgba(75,72,68,0.25) 0 2px 8px -3px; */
-  /* order: 1; */
 `;
 
 const ChildrenWrapper = styled.div`
-  /* order: 1; */
   max-height: ${(props) => {
     return props.open ? "100%" : "0";
   }};
@@ -31,13 +19,9 @@ const ChildrenWrapper = styled.div`
   background-color: ${(props) => {
     return props.theme.background.disabled;
   }};
-  /* border-bottom: 1px solid;
-  border-color: ${(props) => {
-    return props.theme.palette.grey5;
-  }}; */
-  box-shadow:
-    rgba(75,72,68,0.25) 0 4px 4px -4px inset
-    /* rgba(75,72,68,0.25) 0 -4px 4px -4px inset */
+  box-shadow: ${(props) => {
+    return props.theme.shadows.innerShadow;
+  }};
 `;
 
 const AccordionFunction = ({

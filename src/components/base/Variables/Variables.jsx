@@ -206,9 +206,16 @@ export const shadows = {
     drop-shadow(${colors.shade6} 0 0 1px)
     drop-shadow(${colors.shade2} 0.5rem 0.5rem 0.55rem)
   `,
+  inner: `
+    drop-shadow(${colors.shade6} 0 0 1px inset)
+    drop-shadow(${colors.shade2} 0.5rem 0.5rem 0.55rem inset)
+  `,
   dropShadow: `
     ${colors.shade6} 0 0 1px,
-    ${colors.shade5} 0.2rem 0.2rem 0.25rem;
+    ${colors.shade5} 0.2rem 0.2rem 0.25rem
+    `,
+  innerShadow: `
+    ${colors.shade8} 0 0.25rem 0.25rem -0.25rem inset
   `,
 };
 
@@ -296,6 +303,7 @@ export const DMPTheme = {
     shadow3: shadows.shadow3,
     shadow4: shadows.shadow4,
     shadow5: shadows.shadow5,
+    innerShadow: shadows.innerShadow,
     // shadowV: colors.shadowV,
   },
 };
@@ -405,6 +413,7 @@ export const darkTheme = {
     shadow3: colors.shadow3,
     shadow4: colors.shadow4,
     shadow5: colors.shadow5,
+    innerShadow: shadows.innerShadow,
   },
 };
 
