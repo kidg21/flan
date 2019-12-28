@@ -64,17 +64,6 @@ const CardSectionWrapper = styled.section`
 `;
 
 const CardWrapper = styled.div`
-  ${CardSectionWrapper} {
-    /* &:first-of-type {
-      padding: 1em 1em 0.5em;
-    } */
-    /* &:last-of-type {
-      padding: 0.5em 1em 1em;
-    } */
-    /* &:only-of-type {
-      padding: 1em;
-    } */
-  }
   position: relative;
   display: flex;
   flex-direction: column;
@@ -150,19 +139,19 @@ function CardSection({ border, children, className, divider, id, onClick, order,
   }
   switch (padding) {
     case "none":
-      sectionPadding = "0em";
+      sectionPadding = "0";
       break;
     case "1x":
-      sectionPadding = "0.25em";
+      sectionPadding = "0.25em 1em";
       break;
     case "2x":
-      sectionPadding = "0.5em";
+      sectionPadding = "0.5em 1em";
       break;
     case "3x":
-      sectionPadding = "0.75em";
+      sectionPadding = "1em";
       break;
     case "4x":
-      sectionPadding = "1em";
+      sectionPadding = "1.25em 1em";
       break;
     default:
       break;
@@ -230,6 +219,7 @@ function Card({
   media,
   mediaDesc,
   mediaHeader,
+  mediaPadding,
   more,
   onClick,
   padding,
@@ -239,7 +229,7 @@ function Card({
   let cardPadding;
   switch (padding) {
     case "none":
-      cardPadding = "0em";
+      cardPadding = "0";
       break;
     case "1x":
       cardPadding = "0.25em";
@@ -303,8 +293,10 @@ function Card({
   // Sets the media section as the first section
   if (mediaHeader) {
     mediaHeader = "0";
+    mediaPadding = "none";
   } else {
     mediaHeader = "";
+    mediaPadding = "none";
   }
 
   let commandElements = null;
@@ -366,7 +358,7 @@ function Card({
     >
       {title || description || label || icon ? headerSection : null}
       {media ? (
-        <CardSection padding="none" order={mediaHeader} onClick={onClick}>
+        <CardSection padding={mediaPadding} order={mediaHeader} onClick={onClick}>
           <Image
             src={media}
             alt={mediaDesc || `${"Card Media:" + " "}${media}`}
