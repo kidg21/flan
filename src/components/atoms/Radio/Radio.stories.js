@@ -1,7 +1,5 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React from "react";
 import { Padding } from "helpers/Display";
 import Form, { Section } from "layout/Form";
@@ -175,7 +173,7 @@ storiesOf("Blocks|Radio Group", module)
             columns={options(
               "columns",
               {
-                "auto ( default )": "default",
+                "auto ( default )": null,
                 "one": "1",
                 "two": "2",
                 "three": "3",
@@ -183,7 +181,7 @@ storiesOf("Blocks|Radio Group", module)
                 "five": "5",
                 "six": "6",
               },
-              "default",
+              null,
               { display: "select" },
               "Radio Group",
             )}
@@ -204,10 +202,7 @@ storiesOf("Blocks|Radio Group", module)
               { display: "select" },
               "Radio Group",
             )}
-            error={
-              boolean("error", false, "Radio Group") &&
-              text("error text", "Error message...", "Radio Group")
-            }
+            error={text("error", null, "Radio Group")}
             disabled={boolean("disabled", false, "Radio Group")}
           />
         </Section>

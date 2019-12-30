@@ -1,11 +1,8 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/forbid-prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import Card, { CardList } from "../Card/Card";
-import Panel, { PanelSection } from "../Panel/Panel";
+import Card, { CardList } from "../Card/Card.jsx";
+import Panel, { PanelSection } from "../Panel/Panel.jsx";
 
 storiesOf("Layout|Panel", module)
   .addDecorator(checkA11y)
