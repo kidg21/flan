@@ -11,12 +11,12 @@ import styled from "styled-components";
 import Title from "base/Typography";
 import Card from "layout/Card";
 
-const MenuContainer = styled.div`
+const MenuContainer = styled.a`
   cursor: pointer;
   line-height: 1.5;
-  color: ${(props) => {
-    return props.theme.text.primary;
-  }};
+  &:hover {
+    filter: none;
+  }
 `;
 
 const MenuList = styled.ul`
@@ -43,7 +43,7 @@ const MenuItem = styled.li`
 const MenuPopper = styled.div`
   position: absolute;
   z-index: 500;
-  width: 12em;
+  min-width: 12em;
   top: ${(props) => {
     return props.top || "";
   }};
