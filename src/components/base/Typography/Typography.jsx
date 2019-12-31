@@ -19,7 +19,7 @@ const StyledText = styled.h4`
     return props.fontFamily || "inherit";
   }};
   color: ${(props) => {
-    return props.theme.text[props.textColor] || props.theme.text.primary;
+    return props.theme.text[props.textColor] || "inherit";
   }};
   font-weight: ${(props) => {
     return props.textWeight || "600";
@@ -35,6 +35,9 @@ const StyledText = styled.h4`
   }};
   text-decoration: ${(props) => {
     return props.textDecoration || "";
+  }};
+  opacity: ${(props) => {
+    return props.opacity || "";
   }};
   user-select: ${(props) => {
     return props.select || "";
@@ -93,6 +96,7 @@ function Text({
   id,
   link,
   onClick,
+  opacity,
   select,
   size,
   spacing,
@@ -224,6 +228,7 @@ function Text({
       fontFamily={fontFamily}
       href={href}
       onClick={onClick}
+      opacity={opacity}
       target={target}
       title={title}
       id={id}
@@ -255,6 +260,7 @@ Text.propTypes = {
   id: PropTypes.string,
   link: PropTypes.bool,
   onClick: PropTypes.string,
+  opacity: PropTypes.string,
   size: PropTypes.string,
   target: PropTypes.string,
   text: PropTypes.string,
@@ -275,6 +281,7 @@ Text.defaultProps = {
   id: null,
   link: false,
   onClick: null,
+  opacity: null,
   select: null,
   size: null,
   spacing: null,
@@ -288,7 +295,7 @@ Text.defaultProps = {
 
 function Headline({ text, children, ...textProps }) {
   return (
-    <Text separator="pipe" size="2x" weight="bold" {...textProps}>
+    <Text spacing="2" size="3x" weight="bold" {...textProps}>
       {text || children}
     </Text>
   );
@@ -303,7 +310,7 @@ Headline.defaultProps = {
 };
 
 function Title({
- text, size, children, number, ...textProps 
+  text, size, children, number, ...textProps
 }) {
   return (
     <Text size={size} count={number} weight="semibold" {...textProps}>
@@ -322,9 +329,11 @@ Title.defaultProps = {
   children: null,
 };
 
-function SubTitle({ text, children, ...textProps }) {
+function SubTitle({
+  text, textColor, children, ...textProps
+}) {
   return (
-    <Text spacing="1" type="secondary" margin="0px 0px 0.15em" {...textProps}>
+    <Text spacing="2" opacity="0.8" size="lg" margin="0px 0px 0.15em" {...textProps}>
       {text || children}
     </Text>
   );
@@ -339,7 +348,7 @@ SubTitle.defaultProps = {
 };
 
 function Body({
- text, weight, children, ...textProps 
+  text, weight, children, ...textProps
 }) {
   return (
     <Text size="sm" weight="normal" margin="0px 0px 0.15em" {...textProps}>
@@ -373,7 +382,7 @@ Description.defaultProps = {
 };
 
 function Link({
- text, children, title, onClick, href, target, ...textProps 
+  text, children, title, onClick, href, target, ...textProps
 }) {
   return (
     <Text
