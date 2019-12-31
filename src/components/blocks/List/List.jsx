@@ -31,7 +31,7 @@ const ListWrapper = styled.ul`
 const ListItemWrapper = styled.li`
   position: relative;
   color: ${(props) => {
-    return props.theme.text[props.itemColor];
+    return props.theme.text.primary;
   }};
   padding: 1em;
   background-color: ${(props) => {
@@ -62,7 +62,7 @@ const ListItemWrapper = styled.li`
 `;
 
 function List({
- children, divider, id, interactive, title 
+  children, divider, id, interactive, title,
 }) {
   return (
     <InteractiveContext.Provider value={interactive}>
@@ -135,19 +135,19 @@ function ListItem({
             }
           />
         ) : (
-          <Bar
-            contentAlign="center"
-            centerAlign="left"
-            disabled={disabled}
-            left={mainContent}
-            right={
-              <React.Fragment>
-                {checkbox ? <Checkbox disabled={disabled} /> : null}
-                {toggle ? <Switch disabled={disabled} /> : null}
-              </React.Fragment>
-            }
-          />
-        )}
+            <Bar
+              contentAlign="center"
+              centerAlign="left"
+              disabled={disabled}
+              left={mainContent}
+              right={
+                <React.Fragment>
+                  {checkbox ? <Checkbox disabled={disabled} /> : null}
+                  {toggle ? <Switch disabled={disabled} /> : null}
+                </React.Fragment>
+              }
+            />
+          )}
       </DisabledContext.Provider>
     </ListItemWrapper>
   );
@@ -155,43 +155,43 @@ function ListItem({
 
 List.propTypes = {
   children: PropTypes.node,
-  id: PropTypes.string,
   divider: PropTypes.bool,
+  id: PropTypes.string,
   interactive: PropTypes.bool,
   title: PropTypes.string,
 };
 List.defaultProps = {
   children: null,
-  id: null,
   divider: false,
+  id: null,
   interactive: false,
   title: null,
 };
 
 ListItem.propTypes = {
   active: PropTypes.bool,
-  children: PropTypes.node,
+  avatar: PropTypes.string,
+  checkbox: PropTypes.node,
   description: PropTypes.string,
   disabled: PropTypes.bool,
-  id: PropTypes.string,
   icon: PropTypes.node,
-  checkbox: PropTypes.node,
-  avatar: PropTypes.string,
+  id: PropTypes.string,
   interactive: PropTypes.bool,
   label: PropTypes.string.isRequired,
   onClick: PropTypes.func,
+  toggle: PropTypes.node,
 };
 ListItem.defaultProps = {
   active: false,
-  children: null,
-  description: null,
-  icon: null,
-  checkbox: null,
   avatar: null,
+  checkbox: null,
+  description: null,
   disabled: false,
+  icon: null,
   id: null,
   interactive: null,
   onClick: null,
+  toggle: null,
 };
 
 export { List as default, ListItem };
