@@ -15,7 +15,7 @@ import LBLogo from "images/LightBoxLogo.png";
 import Title, { Description, SubTitle } from "base/Typography";
 import Icon from "atoms/Icon";
 import Mapbox from "layout/Map";
-import { CardList } from "layout/Card";
+import { CardList } from "elements/Card";
 import Panel, { PanelSection } from "layout/Panel";
 import List, { ListItem } from "blocks/List";
 

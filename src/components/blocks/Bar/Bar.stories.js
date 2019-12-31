@@ -4,7 +4,7 @@
 /* eslint-disable linebreak-style */
 import React from "react";
 import { Padding } from "helpers/Display";
-import Card, { CardList } from "layout/Card";
+import Card, { CardList } from "elements/Card";
 import Icon from "atoms/Icon";
 import IconBlock from "blocks/IconBlock";
 import Command from "atoms/Command";

@@ -6,7 +6,7 @@
 import React, { useState } from "react";
 import { screen } from "Variables";
 import Tabs, { Tab } from "blocks/Tabs";
-import Card, { CardList } from "layout/Card";
+import Card, { CardList } from "elements/Card";
 import Layout from "layout/Layout";
 import Panel, { PanelSection } from "layout/Panel";
 import Form, { Section } from "layout/Form";

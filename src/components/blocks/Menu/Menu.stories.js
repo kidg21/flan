@@ -9,7 +9,7 @@ import React from "react";
 import Grid from "layout/Grid";
 import { Padding } from "helpers/Display";
 import Menu from "blocks/Menu";
-import Card from "layout/Card";
+import Card from "elements/Card";
 import Bar from "blocks/Bar";
 
 const data = [

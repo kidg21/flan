@@ -46,7 +46,7 @@ export { DataTable as Table } from "./blocks/Table";
 export { default as Tabs, Tab } from "./blocks/Tabs";
 
 // Publicly exported files from 'elements'
-export { default as Card } from "./elements/Card";
+export { default as Card, CardSection, CardList } from "./elements/Card";
 export { default as MainPanelHeader } from "./elements/PanelHeaders/MainPanelHeader";
 export { default as PropertyPanelHeader } from "./elements/PanelHeaders/PropertyPanelHeader";
 export { default as NavigationPanelHeader } from "./elements/PanelHeaders/NavigationPanelHeader";
@@ -60,7 +60,6 @@ export {
 } from "./elements/DialogBox";
 
 // Publicly exported files from 'layout'
-export { default as CardLayout, CardList } from "./layout/Card"; // TODO: deprecated Card, fix
 export { default as Form, Section } from "./layout/Form";
 export { default as Grid } from "./layout/Grid";
 export { default as Layout } from "./layout/Layout";

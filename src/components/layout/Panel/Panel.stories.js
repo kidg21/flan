@@ -4,7 +4,7 @@
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import Card, { CardList } from "../Card/Card";
+import Card, { CardList } from "elements/Card";
 import Panel, { PanelSection } from "../Panel/Panel";
 
 storiesOf("Layout|Panel", module)

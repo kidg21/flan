@@ -4,7 +4,7 @@
 /* eslint-disable linebreak-style */
 import React from "react";
 import { IconGrid } from "helpers/Display";
-import { CardList } from "layout/Card";
+import { CardList } from "elements/Card";
 import {
   iconsApp,
   iconsBrand,

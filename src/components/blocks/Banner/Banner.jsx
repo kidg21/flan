@@ -7,7 +7,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Grid from "layout/Grid";
-import Card from "layout/Card";
+import Card from "elements/Card";
 import Bar from "blocks/Bar";
 import Icon from "atoms/Icon";
 import Title, { Description, Link } from "base/Typography";

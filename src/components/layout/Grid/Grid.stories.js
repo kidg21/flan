@@ -5,7 +5,7 @@
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import Card from "layout/Card";
+import Card from "elements/Card";
 import Grid from "layout/Grid";
 
 const GriddNotes = markdown.require("./Grid.md");

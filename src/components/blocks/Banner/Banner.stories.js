@@ -4,7 +4,7 @@
 /* eslint-disable linebreak-style */
 import React from "react";
 import { Padding } from "helpers/Display";
-import { CardList } from "layout/Card";
+import { CardList } from "elements/Card";
 import Banner from "blocks/Banner";
 
 const BannerNotes = markdown.require("./Banner.md");

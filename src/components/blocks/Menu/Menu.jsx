@@ -9,7 +9,7 @@ import Icon from "atoms/Icon";
 import Bar from "blocks/Bar";
 import styled from "styled-components";
 import Title from "base/Typography";
-import Card from "layout/Card";
+import Card from "elements/Card";
 
 const MenuContainer = styled.a`
   cursor: pointer;

@@ -5,7 +5,7 @@
 import React from "react";
 import { Padding } from "helpers/Display";
 import Image from "atoms/Image";
-import Card, { CardList } from "layout/Card";
+import Card, { CardList } from "elements/Card";
 import Title, { Description } from "base/Typography";
 import MediaBlock from "blocks/MediaBlock";
 

@@ -11,7 +11,7 @@ import Legend from "blocks/Legend";
 import Form, { Section } from "layout/Form";
 import Card from "elements/Card";
 import Divider from "atoms/Divider";
-import { CardList } from "layout/Card";
+import { CardList } from "elements/Card";
 import Panel, { PanelSection } from "layout/Panel";
 import List, { ListItem } from "blocks/List";
 

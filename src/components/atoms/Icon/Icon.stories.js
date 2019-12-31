@@ -6,7 +6,7 @@ import React from "react";
 import { Padding, IconGrid } from "helpers/Display";
 import Grid from "layout/Grid";
 import Title, { SubTitle, Description } from "base/Typography";
-import { CardList } from "layout/Card";
+import { CardList } from "elements/Card";
 import Icon from "atoms/Icon";
 import { iconsType, iconsSize } from "atoms/Icon/libraryIcon.data";
 

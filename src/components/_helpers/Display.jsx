@@ -1,7 +1,7 @@
 import React from "react";
 import Title, { Description } from "base/Typography";
 import Bar from "blocks/Bar";
-import Card, { CardSection } from "layout/Card";
+import Card, { CardSection } from "elements/Card";
 import Grid from "layout/Grid";
 import Icon from "atoms/Icon";
 import Command from "atoms/Command";
