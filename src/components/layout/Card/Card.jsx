@@ -24,6 +24,9 @@ const CardSectionWrapper = styled.section`
   order: ${props => {
     return props.order || "1";
   }};
+  color: ${props => {
+    return props.theme.text[props.textColor] || "";
+  }};
   background-color: ${props => {
     return props.theme.palette[props.backgroundColor] || props.theme.palette.default;
   }};
@@ -38,6 +41,11 @@ const CardSectionWrapper = styled.section`
     return props.open ? "0" : "100vh";
   }}; 
   transition: all 0.25s ease-in-out;
+  a {
+  color: ${(props) => {
+    return props.theme.text[props.textColor] || "";
+  }};
+  }
   &:before,
   &:after {
     ${props => {
@@ -49,7 +57,7 @@ const CardSectionWrapper = styled.section`
         right: 1rem;
         height: 1px;
         background-color: ${props => {
-        return props.theme.palette.grey5;
+        return props.theme.divider;
       }};
       `;
   }};
@@ -81,7 +89,7 @@ const CardWrapper = styled.div`
   filter: ${props => {
     return props.theme.shadows[props.cardShadow] || "";
   }};
-
+  overflow: hidden;
   /* Prototype Content - displays when a Card is empty */
   &:empty {
     &:before {
@@ -118,20 +126,25 @@ const CardListWrapper = styled(Grid)`
   }
 `;
 
-function CardSection({ border, children, className, divider, id, onClick, order, padding, type }) {
+function CardSection({ border, children, className, divider, footer, header, id, onClick, order, padding, type }) {
   let sectionPadding;
+  let textColor;
   let backgroundColor;
   switch (type) {
     case "info":
-      backgroundColor = "info";
+      textColor = "inverse";
+      backgroundColor = "info ";
       break;
     case "success":
+      textColor = "inverse";
       backgroundColor = "success";
       break;
     case "warning":
+      textColor = "inverse";
       backgroundColor = "warning";
       break;
     case "alert":
+      textColor = "inverse";
       backgroundColor = "alert";
       break;
     default:
@@ -166,6 +179,7 @@ function CardSection({ border, children, className, divider, id, onClick, order,
       onClick={onClick}
       order={order}
       sectionPadding={sectionPadding}
+      textColor={textColor}
     >
       {children}
     </CardSectionWrapper>
@@ -225,6 +239,7 @@ function Card({
   padding,
   raised,
   title,
+  type,
 }) {
   let cardPadding;
   switch (padding) {
@@ -259,7 +274,7 @@ function Card({
   let headerSection;
   if (more) {
     headerSection = (
-      <CardSection padding="none">
+      <CardSection type={type} padding="none">
         <ExpandingSection
           title={title}
           description={description}
@@ -271,7 +286,7 @@ function Card({
     )
   } else {
     headerSection = (
-      <CardSection onClick={onClick}>
+      <CardSection type={type} onClick={onClick}>
         <Bar
           contentAlign="center"
           leftWidth="max-content"
@@ -345,6 +360,7 @@ function Card({
         />
       );
     }
+
   }
 
   return (
@@ -354,6 +370,7 @@ function Card({
       cardShadow={cardShadow}
       className={className}
       id={id}
+      tyoe={type}
       raised={raised}
     >
       {title || description || label || icon ? headerSection : null}

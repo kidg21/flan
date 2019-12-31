@@ -16,9 +16,6 @@ const ChildrenWrapper = styled.div`
     return props.open ? "100%" : "0";
   }};
   transition: all 0.25s ease-in-out;
-  background-color: ${(props) => {
-    return props.theme.background.disabled;
-  }};
   box-shadow: ${(props) => {
     return props.theme.shadows.innerShadow;
   }};
