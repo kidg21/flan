@@ -28,10 +28,10 @@ const CardSectionWrapper = styled.section`
     return props.theme.text[props.textColor] || "";
   }};
   background-color: ${props => {
-    return props.theme.palette[props.backgroundColor] || props.theme.palette.default;
+    return props.theme.background[props.backgroundColor] || "";
   }};
   padding: ${props => {
-    return props.sectionPadding || "0.75em 1em";
+    return props.sectionPadding || "0.5em 1em";
   }};
   cursor: ${props => {
     return props.onClick ? "pointer" : "";
@@ -71,6 +71,20 @@ const CardSectionWrapper = styled.section`
   }
 `;
 
+const Media = styled(CardSection)`
+  padding: 0;
+  border-top: ${props => {
+    return `1px solid ${props.theme.divider}`;
+  }};
+  border-bottom: ${props => {
+    return `1px solid ${props.theme.divider}`;
+  }};
+  border-radius: ${props => {
+    return props.header ? "5px 5px 0 0" : "";
+  }};
+  overflow: hidden;
+`;
+
 const CardWrapper = styled.div`
   position: relative;
   display: flex;
@@ -89,7 +103,6 @@ const CardWrapper = styled.div`
   filter: ${props => {
     return props.theme.shadows[props.cardShadow] || "";
   }};
-  overflow: hidden;
   /* Prototype Content - displays when a Card is empty */
   &:empty {
     &:before {
@@ -133,7 +146,7 @@ function CardSection({ border, children, className, divider, footer, header, id,
   switch (type) {
     case "info":
       textColor = "inverse";
-      backgroundColor = "info ";
+      backgroundColor = "info";
       break;
     case "success":
       textColor = "inverse";
@@ -146,6 +159,10 @@ function CardSection({ border, children, className, divider, footer, header, id,
     case "alert":
       textColor = "inverse";
       backgroundColor = "alert";
+      break;
+    case "inverse":
+      textColor = "inverse";
+      backgroundColor = "neutral";
       break;
     default:
       break;
@@ -169,12 +186,20 @@ function CardSection({ border, children, className, divider, footer, header, id,
     default:
       break;
   }
+  if (header) {
+    order = "0";
+  }
+  if (footer) {
+    order = "2";
+  }
   return (
     <CardSectionWrapper
       backgroundColor={backgroundColor}
       border={border}
       className={className}
       divider={divider}
+      footer={footer}
+      header={header}
       id={id}
       onClick={onClick}
       order={order}
@@ -233,7 +258,6 @@ function Card({
   media,
   mediaDesc,
   mediaHeader,
-  mediaPadding,
   more,
   onClick,
   padding,
@@ -305,15 +329,6 @@ function Card({
     )
   }
 
-  // Sets the media section as the first section
-  if (mediaHeader) {
-    mediaHeader = "0";
-    mediaPadding = "none";
-  } else {
-    mediaHeader = "";
-    mediaPadding = "none";
-  }
-
   let commandElements = null;
   if (commands) {
     // Exactly 2 Commands
@@ -375,13 +390,13 @@ function Card({
     >
       {title || description || label || icon ? headerSection : null}
       {media ? (
-        <CardSection padding={mediaPadding} order={mediaHeader} onClick={onClick}>
+        <Media header={mediaHeader} onClick={onClick}>
           <Image
             src={media}
             alt={mediaDesc || `${"Card Media:" + " "}${media}`}
             width="100%"
           />
-        </CardSection>
+        </Media>
       ) : null}
       {body ? (
         <CardSection onClick={onClick}>
@@ -458,6 +473,8 @@ CardSection.propTypes = {
   className: PropTypes.string,
   /** Adds a divider at the bottom of section */
   divider: PropTypes.bool,
+  footer: PropTypes.bool,
+  header: PropTypes.bool,
   id: PropTypes.string,
   order: PropTypes.string,
   padding: PropTypes.oneOf(["none", "1x", "2x", "3x", "4x"]),
@@ -468,7 +485,8 @@ CardSection.defaultProps = {
   border: false,
   children: null,
   className: null,
-  divider: false,
+  footer: false,
+  header: false,
   id: null,
   order: null,
   padding: null,
