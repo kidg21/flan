@@ -14,13 +14,84 @@ import Title, { Description } from "base/Typography";
 import MediaBlock from "blocks/MediaBlock";
 import Button from "atoms/Button";
 
+const data = [
+  {
+    id: "a",
+    type: "inverse",
+    icon: "bookmark_solid",
+    title: "First Card",
+    description: "Card Description Goes Here",
+    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    commands: [
+      {
+        id: "Command One",
+        label: "Command One",
+      },
+      {
+        id: "Command Two",
+        label: "Command Two",
+      },
+    ],
+  },
+  {
+    id: "b",
+    // type: "inverse",
+    label: "GP",
+    title: "Second Card",
+    // body: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    media: "https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg",
+    // mediaHeader: true,
+    // commands: [
+    //   {
+    //     id: "Command One",
+    //     label: "Command One",
+    //   }
+    // ],
+  },
+  {
+    id: "c",
+    // type: "inverse",
+    icon: "home",
+    title: "Third Card",
+    description: "Nothing To See Here",
+    body: " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    commands: [
+      {
+        id: "Command One",
+        label: "Command One",
+        name: "Command One",
+      },
+      {
+        id: "Command Two",
+        label: "Command Two",
+        name: "Command Two",
+      },
+      {
+        id: "Command Three",
+        label: "Command Three",
+        name: "Command Three",
+      },
+      {
+        id: "Command Four",
+        label: "Command Four",
+        name: "Command Four",
+      },
+      {
+        id: "Command Five",
+        label: "Command Five",
+        name: "Command FiveCommand Five CommandFiveCommand Five",
+      },
+    ],
+  },
+];
+
 storiesOf("Work|Card/Elements", module)
   .addDecorator(Padding)
   .addDecorator(checkA11y)
   .add("WIP", () => {
     return (
       <Card
-        type="inverse"
+        type="success"
         mediaHeader
         media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
         mediaDesc="Media Description"
@@ -96,6 +167,11 @@ storiesOf("Work|Card/Elements", module)
         <Card description="Standard" />
         <Card description="Raised" raised />
       </Grid>
+    );
+  })
+  .add("Card List (data)", () => {
+    return (
+      <CardList columns="" data={data} />
     );
   })
   .add("Card List", () => {

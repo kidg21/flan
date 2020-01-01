@@ -1,5 +1,5 @@
 /* eslint-disable linebreak-style */
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
@@ -29,6 +29,9 @@ const CardSectionWrapper = styled.section`
   }};
   background-color: ${props => {
     return props.theme.background[props.backgroundColor] || "";
+  }};
+  border-radius: ${props => {
+    return props.borderRadius || "";
   }};
   padding: ${props => {
     return props.sectionPadding || "0.5em 1em";
@@ -72,20 +75,36 @@ const CardSectionWrapper = styled.section`
 `;
 
 const Media = styled(CardSection)`
-  padding: 0;
-  border-top: ${props => {
+  padding: 5px;
+  /* padding: 0; */
+  /* border-top: ${props => {
+    return `1px solid ${props.theme.divider}`;
+  }};
+  border-right: ${props => {
     return `1px solid ${props.theme.divider}`;
   }};
   border-bottom: ${props => {
     return `1px solid ${props.theme.divider}`;
   }};
-  border-radius: ${props => {
-    return props.header ? "5px 5px 0 0" : "";
-  }};
+  border-left: ${props => {
+    return `1px solid ${props.theme.divider}`;
+  }}; */
   overflow: hidden;
 `;
 
 const CardWrapper = styled.div`
+    ${CardSectionWrapper}:not(${Media}) {
+      &:first-child,
+      &:last-child,
+      &:only-child {
+        padding: 0.75em 1em;
+      }
+    }
+    ${CardSectionWrapper} {
+      &:last-child {
+        border-radius: 0 0 5px 5px;
+      }
+    }
   position: relative;
   display: flex;
   flex-direction: column;
@@ -102,6 +121,9 @@ const CardWrapper = styled.div`
   }};
   filter: ${props => {
     return props.theme.shadows[props.cardShadow] || "";
+  }};
+  box-shadow: ${props => {
+    return props.cardType ? `${props.theme.background[props.cardType]} 0 0 0 3px inset` : "";
   }};
   /* Prototype Content - displays when a Card is empty */
   &:empty {
@@ -129,6 +151,13 @@ const CardListWrapper = styled(Grid)`
     return props.theme.shadows.shadow3;
   }};
     }
+    ${CardSectionWrapper} {
+      &:last-child {
+        flex: auto;
+        justify-content: flex-end;
+        height: inherit;
+      }
+    }
   }
   /* Prototype Content - displays when a Card List is empty */
   &:empty {
@@ -143,6 +172,7 @@ function CardSection({ border, children, className, divider, footer, header, id,
   let sectionPadding;
   let textColor;
   let backgroundColor;
+  let borderRadius;
   switch (type) {
     case "info":
       textColor = "inverse";
@@ -188,13 +218,16 @@ function CardSection({ border, children, className, divider, footer, header, id,
   }
   if (header) {
     order = "0";
+    borderRadius = "5px 5px 0 0";
   }
   if (footer) {
     order = "2";
+    borderRadius = "0 0 5px 5px";
   }
   return (
     <CardSectionWrapper
       backgroundColor={backgroundColor}
+      borderRadius={borderRadius}
       border={border}
       className={className}
       divider={divider}
@@ -205,13 +238,14 @@ function CardSection({ border, children, className, divider, footer, header, id,
       order={order}
       sectionPadding={sectionPadding}
       textColor={textColor}
+      type={type}
     >
       {children}
     </CardSectionWrapper>
   );
 }
 
-function ExpandingSection({ description, icon, id, label, more, title, }) {
+function ExpandingSection({ description, icon, id, label, more, title, type, }) {
   const [open, setOpen] = useState(!open);
   function toggleDropdown() {
     setOpen(!open);
@@ -219,6 +253,7 @@ function ExpandingSection({ description, icon, id, label, more, title, }) {
   return (
     <Expander
       id={id}
+      type={type}
       header={
         title || description || label || icon ? (
           <Bar
@@ -240,7 +275,7 @@ function ExpandingSection({ description, icon, id, label, more, title, }) {
           ></Bar>
         ) : null}
     >
-      <CardSection open={open}>{more}</CardSection>
+      {more}
     </Expander>
   );
 }
@@ -265,6 +300,24 @@ function Card({
   title,
   type,
 }) {
+  let cardType;
+  switch (type) {
+    case "info":
+      cardType = "info";
+      break;
+    case "success":
+      cardType = "success";
+      break;
+    case "warning":
+      cardType = "warning";
+      break;
+    case "alert":
+      cardType = "alert";
+      break;
+    default:
+      break;
+  }
+
   let cardPadding;
   switch (padding) {
     case "none":
@@ -298,19 +351,19 @@ function Card({
   let headerSection;
   if (more) {
     headerSection = (
-      <CardSection type={type} padding="none">
-        <ExpandingSection
-          title={title}
-          description={description}
-          label={label}
-          icon={icon}
-          more={more}
-        />
-      </CardSection>
+      <ExpandingSection
+        header={mediaHeader ? false : true}
+        title={title}
+        description={description}
+        label={label}
+        icon={icon}
+        more={more}
+        type={type}
+      />
     )
   } else {
     headerSection = (
-      <CardSection type={type} onClick={onClick}>
+      <CardSection header={mediaHeader ? false : true} type={type} onClick={onClick}>
         <Bar
           contentAlign="center"
           leftWidth="max-content"
@@ -383,6 +436,7 @@ function Card({
       borderless={borderless}
       cardPadding={cardPadding}
       cardShadow={cardShadow}
+      cardType={cardType}
       className={className}
       id={id}
       tyoe={type}
@@ -409,7 +463,7 @@ function Card({
   );
 }
 
-function CardList({ children, className, columns, gap, id, rows }) {
+function CardList({ children, className, columns, data, gap, id, rows }) {
   return (
     <CardListWrapper
       className={className}
@@ -418,7 +472,24 @@ function CardList({ children, className, columns, gap, id, rows }) {
       id={id}
       rows={rows}
     >
-      {children}
+      {children ||
+        data.map((item) => {
+          return (
+            <Card
+              key={item.id}
+              id={item.id}
+              type={item.type}
+              media={item.media}
+              mediaHeader={item.mediaHeader}
+              label={item.label}
+              icon={item.icon}
+              title={item.title}
+              description={item.description}
+              body={item.body}
+              commands={item.commands}
+            />
+          );
+        })}
     </CardListWrapper>
   );
 }

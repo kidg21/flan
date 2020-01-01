@@ -2,13 +2,18 @@
 import React, { Fragment, useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import Card, { CardSection, CardList } from "elements/Card";
 
 const AccordionSection = styled.div`
-  padding: 0.75rem 1rem;
+  /* padding: 0.5rem 1rem; */
+  /* padding-bottom: 0.5em; */
   cursor: pointer;
 `;
 
 const ChildrenWrapper = styled.div`
+  padding: ${(props) => {
+    return props.open ? "0.5em 1em" : "0 1em";
+  }};
   max-height: ${(props) => {
     return props.open ? "100%" : "0";
   }};
@@ -16,20 +21,22 @@ const ChildrenWrapper = styled.div`
     return props.open ? "100%" : "0";
   }};
   transition: all 0.25s ease-in-out;
-  box-shadow: ${(props) => {
+  /* box-shadow: ${(props) => {
     return props.theme.shadows.innerShadow;
-  }};
+  }}; */
 `;
 
 const AccordionFunction = ({
-  id, header, children, open, onClick,
+  id, header, children, open, onClick, type, ...props
 }) => {
   return (
     <Fragment>
-      <AccordionSection id={id} onClick={onClick}>
+      <CardSection id={id} type={type} onClick={onClick} {...props}>
         {header}
-      </AccordionSection>
-      <ChildrenWrapper open={open}>{children}</ChildrenWrapper>
+      </CardSection>
+      <CardSection padding="none">
+        <ChildrenWrapper open={open}>{children}</ChildrenWrapper>
+      </CardSection>
     </Fragment>
   );
 };
