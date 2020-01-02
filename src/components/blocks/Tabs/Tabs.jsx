@@ -99,7 +99,7 @@ function Tabs({
 }
 
 function Tab({
-  id, icon, tabLabel, size, onClick, isSelected, type, disabled, color,
+  id, icon, tabLabel, size, onClick, isSelected, disabled, color,
 }) {
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
 
@@ -115,7 +115,7 @@ function Tab({
           isSelected={isSelected}
           disabled={isDisabled}
           color={color}
-          type={type && type.toLowerCase() === "solid" ? "solid" : "underlined"}
+          type="underlined"
         />
       ) : (
           <TabButton
@@ -126,7 +126,7 @@ function Tab({
             onClick={onClick}
             isSelected={isSelected}
             disabled={isDisabled}
-            color="grey"
+            color={color}
             type="plain"
           />
         )}

@@ -39,13 +39,13 @@ storiesOf("Blocks|Tabs", module)
     })
   )
   .add(
-    "Documentation Solid",
+    "Secondary",
     withInfo()(() => {
       return (
         <Tabs>
-          <Tab tabLabel="Tab" type="solid" isSelected />
-          <Tab tabLabel="Tab" type="solid" />
-          <Tab tabLabel="Tab" type="solid" />
+          <Tab tabLabel="Tab" color="secondary" isSelected />
+          <Tab tabLabel="Tab" color="secondary" />
+          <Tab tabLabel="Tab" color="secondary" />
         </Tabs>
       );
     })

@@ -14,6 +14,7 @@ import Label from "atoms/Label";
 
 /** TODO: move these to Variables */
 
+
 const StyledButton = styled.button`
   display: flex;
   flex: auto;
@@ -62,8 +63,11 @@ const StyledButton = styled.button`
   transition: all 0.15s ease;
 
   &:focus,
-  &:hover {
-    ${Darken};
+  &:hover { 
+    background-color: ${(props) => {
+    return (
+      props.theme.palette[props.hoverColor]);
+  }};
     border-bottom: ${(props) => {
     return props.borderBottom || "";
   }};
@@ -130,37 +134,52 @@ function Button({
   let backgroundColor;
   let borderBottom;
   let borderRadius;
+  let hoverColor;
   let borderColor;
   let buttonColor;
   let buttonPadding;
   let fontColor;
   let fontWeight;
+  let shadeColor;
   let labelSize;
+  let tintColor;
 
   switch (color && color.toLowerCase()) {
     case "success":
       buttonColor = "success";
       fontColor = buttonColor;
+      tintColor = "successTint";
+      shadeColor = "successDark";
       break;
     case "warning":
       buttonColor = "warning";
       fontColor = buttonColor;
+      tintColor = "warningTint";
+      shadeColor = "warningDark";
       break;
     case "alert":
       buttonColor = "alert";
       fontColor = buttonColor;
+      tintColor = "alertTint";
+      shadeColor = "alertDark";
       break;
     case "info":
       buttonColor = "info";
       fontColor = buttonColor;
+      tintColor = "infoTint";
+      shadeColor = "infoDark";
       break;
     case "primary":
       buttonColor = "primary";
       fontColor = buttonColor;
+      tintColor = "primaryTint";
+      shadeColor = "primaryDark";
       break;
     case "secondary":
       buttonColor = "secondary";
       fontColor = buttonColor;
+      tintColor = "secondaryTint";
+      shadeColor = "secondaryDark";
       break;
     case "grey":
       buttonColor = "grey";
@@ -169,8 +188,11 @@ function Button({
     default:
       buttonColor = "primary";
       fontColor = buttonColor;
+      tintColor = "primaryTint";
+      shadeColor = "primaryDark";
       break;
   }
+
 
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
@@ -183,27 +205,34 @@ function Button({
       fontWeight = "700";
       borderRadius = "2px";
       fontColor = buttonColor;
+      hoverColor = tintColor;
       borderBottom = "2px solid";
       underline = fontColor;
     } else if (type.toLowerCase() === "plain") {
       borderStyle = "2px solid transparent";
       fontWeight = "700";
+      hoverColor = tintColor;
       backgroundColor = "default";
     } else if (type.toLowerCase() === "round") {
       fontWeight = "700";
       borderRadius = "20px";
       backgroundColor = "default";
+      hoverColor = tintColor;
     } else if (type.toLowerCase() === "roundsolid") {
       fontWeight = "700";
       borderRadius = "20px";
       fontColor = "white";
+      hoverColor = shadeColor;
       borderColor = buttonColor;
       backgroundColor = buttonColor;
     } else if (type.toLowerCase() === "solid") {
       fontColor = "white";
       borderColor = buttonColor;
+      hoverColor = shadeColor;
       backgroundColor = buttonColor;
     }
+  } else {
+    hoverColor = tintColor;
   }
   if (isDisabled) {
     fontColor = "white";
@@ -218,6 +247,7 @@ function Button({
       underlineColor={underline}
       disabled={isDisabled}
       borderRadius={borderRadius}
+      hoverColor={hoverColor}
       borderColor={borderColor}
       buttonColor={buttonColor}
       buttonPadding={buttonPadding}

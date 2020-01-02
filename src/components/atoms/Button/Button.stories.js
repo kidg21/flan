@@ -21,11 +21,11 @@ storiesOf("Atoms|Button", module)
   .addParameters({
     info: {
       text:
-        "A control that executes your custom code in response to user interactions.  When you tap a button, or select a button that has focus, the button performs any actions attached to it. You communicate the purpose of a button using a text label, an image, or both. The appearance of buttons is configurable, so you can tint buttons or format titles to match the design of your app. You can add buttons to your interface programmatically or using Interface Builder. -- 'developer.apple.com'",
+        "A control that executes your custom code in response to user interactions.  When you tap a button, or select a button that has focus, the button performs any actions attached to it. You communicate the purpose of a button using a text label, an image, or both. The appearance of buttons is configurable, so you can tint buttons or format titles to match the design of your app. You can add buttons to your interface programmatically or using Interface Builder. -- 'developer.apple.com'"
     },
     notes: {
-      markdown: ButtonNotes,
-    },
+      markdown: ButtonNotes
+    }
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
@@ -33,7 +33,7 @@ storiesOf("Atoms|Button", module)
     "Documentation",
     withInfo()(() => {
       return <Button label="Standard Button" />;
-    }),
+    })
   )
   .add("Skeleton", () => {
     return <Button />;
@@ -45,40 +45,40 @@ storiesOf("Atoms|Button", module)
           "icon",
           {
             "no icon": null,
-            "user": "user",
-            "down": "down",
-            "bookmark": "bookmark_solid",
-            "plus": "plus",
-            "print": "print",
+            user: "user",
+            down: "down",
+            bookmark: "bookmark_solid",
+            plus: "plus",
+            print: "print"
           },
           null,
-          "Button",
+          "Button"
         )}
         label={text("label", "Button Label", "Button")}
         color={options(
           "color",
           {
             "primary (default)": "primary",
-            "secondary": "secondary",
-            "success": "success",
-            "info": "info",
-            "warning": "warning",
-            "alert": "alert",
+            secondary: "secondary",
+            success: "success",
+            info: "info",
+            warning: "warning",
+            alert: "alert"
           },
           "primary",
           { display: "radio" },
-          "Button",
+          "Button"
         )}
         size={options(
           "size",
           {
-            "small": "small",
+            small: "small",
             "medium ( default )": "default",
-            "large": "large",
+            large: "large"
           },
           "default",
           { display: "radio" },
-          "Button",
+          "Button"
         )}
         fullWidth={boolean("fullWidth", false, "Button")}
         fill={boolean("fill", false, "Button")}
@@ -109,7 +109,9 @@ storiesOf("Atoms|Button", module)
       let output = null;
       return describe("The Button Family", () => {
         before(() => {
-          output = mount(<ThemeProvider theme={DMPTheme}>{story}</ThemeProvider>,);
+          output = mount(
+            <ThemeProvider theme={DMPTheme}>{story}</ThemeProvider>
+          );
         });
 
         after(() => {
@@ -126,7 +128,7 @@ storiesOf("Atoms|Button", module)
           expect(buttons).to.have.lengthOf(11);
         });
 
-        it("Accepts a \"label\" prop", () => {
+        it('Accepts a "label" prop', () => {
           const button = output.find("button").first();
           const label = button.children();
           expect(label.text()).to.equal("Standard Primary");
