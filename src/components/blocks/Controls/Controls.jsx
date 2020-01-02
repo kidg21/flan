@@ -134,7 +134,7 @@ function Control({
           type="solid"
         />
       ) : (
-        <ControlButton
+          <ControlButton
             id={id}
             icon={icon}
             size={size}

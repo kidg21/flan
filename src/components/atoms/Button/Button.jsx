@@ -74,7 +74,7 @@ const StyledButton = styled.button`
 
   &:empty {
     ${Skeleton};
-    border: 0px solid white;
+    border: 1px solid;
     }};
   }
 }

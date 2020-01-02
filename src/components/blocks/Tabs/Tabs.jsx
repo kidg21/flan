@@ -68,10 +68,6 @@ function Tabs({
   let alignRight;
   let alignBottom;
   switch (align) {
-    case "bottom":
-      // setPosition = "absolute";
-      alignBottom = "0";
-      break;
     case "vertical":
       setColumns = "none";
       // setPosition = "absolute";
@@ -122,7 +118,7 @@ function Tab({
           type={type && type.toLowerCase() === "solid" ? "solid" : "underlined"}
         />
       ) : (
-        <TabButton
+          <TabButton
             id={id}
             icon={icon}
             size={size}
