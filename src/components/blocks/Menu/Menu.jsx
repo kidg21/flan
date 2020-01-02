@@ -30,6 +30,9 @@ const ItemWrapper = styled.li`
 const ListWrapper = styled.div`
   width: auto;
   min-width: 10rem;
+  background: ${(props) => {
+    return props.theme.background.default;
+  }};
   overflow-x: hidden;
   overflow-y: auto;
 `;
