@@ -255,7 +255,7 @@ TextInput.propTypes = {
     "week",
   ]),
   /** The value attribute specifies the initial value for an input field */
-  value: PropTypes.string,
+  value: PropTypes.string.isRequired,
   onBlur: PropTypes.func,
   onFocus: PropTypes.func,
   name: PropTypes.string,
@@ -281,7 +281,6 @@ TextInput.defaultProps = {
   size: null,
   title: null,
   type: "text",
-  value: "",
   onBlur: null,
   onFocus: null,
   name: "",
