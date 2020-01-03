@@ -381,10 +381,10 @@ export const Lighten = css`
 
 // Typefaces
 export const fonts = {
-  headline: "Muli, Arial, sans-serif",
-  body: "Muli, Arial, sans-serif",
-  data: "Muli, Arial, sans-serif",
-  numbers: "Lato, sans-serif",
+  headline: "Nunito, Arial, sans-serif",
+  body: "Nunito, Arial, sans-serif",
+  data: "Nunito, Arial, sans-serif",
+  numbers: "Nunito, sans-serif",
 };
 
 // Sizes for typography scale

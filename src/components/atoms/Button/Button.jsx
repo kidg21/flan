@@ -194,7 +194,7 @@ function Button({
     >
       {icon ? <ButtonIcon icon={icon} size="lg" /> : null}
       {label ? (
-        <Label letterSpacing="0.075em" weight="semibold" text={label} />
+        <Label letterSpacing="0.075em" weight="600" text={label} />
       ) : null}
     </StyledButton>
   );

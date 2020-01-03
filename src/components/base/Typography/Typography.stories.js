@@ -2,7 +2,6 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 
-
 import Grid from "layout/Grid";
 import Title, {
   Headline,
@@ -11,7 +10,7 @@ import Title, {
   Body,
   Link,
   Number,
-  Code,
+  Code
 } from "base/Typography";
 
 /** TODO: Add 'Documentation' and 'Knobs' stories */

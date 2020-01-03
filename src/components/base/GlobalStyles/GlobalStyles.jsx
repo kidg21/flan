@@ -31,7 +31,7 @@ const GlobalStyles = createGlobalStyle`
         /* position: fixed; */
         width: 100%;
         height: 100%;
-        font-family: ${fonts.body}; /* Muli */
+        font-family: ${fonts.body};
         font-weight: 400;
         line-height: 1.45;
         overscroll-behavior: none;
@@ -96,13 +96,13 @@ const GlobalStyles = createGlobalStyle`
         margin: 0 0 1rem;
     }
     h1, h2, h3, h4, h5, h6 {
-        font-family: ${fonts.headline}; /* Muli */
-        font-weight: 600;
+        font-family: ${fonts.headline};
         margin: 0 0 .5rem;
         line-height: 1.35;
     }
     h1 {
         font-size: 1.383em;
+        font-weight: 800;
         &:empty {
             &:before {
               ${Skeleton};
@@ -113,6 +113,7 @@ const GlobalStyles = createGlobalStyle`
     }
     h2 {
         font-size: 1.296em;
+        font-weight: 700;
         &:empty {
             &:before {
               ${Skeleton};
@@ -123,6 +124,7 @@ const GlobalStyles = createGlobalStyle`
     }
     h3 {
         font-size: 1.215em;
+        font-weight: 600;
         &:empty {
             &:before {
               ${Skeleton};
@@ -133,6 +135,7 @@ const GlobalStyles = createGlobalStyle`
     }
     h4 {
         font-size: 1.138em;
+        font-weight: 400;
         &:empty {
             &:before {
               ${Skeleton};
@@ -143,6 +146,7 @@ const GlobalStyles = createGlobalStyle`
     }
     h5 {
         font-size: 1.067em;
+        font-weight: 300;
         &:empty {
             &:before {
               ${Skeleton};
@@ -153,6 +157,7 @@ const GlobalStyles = createGlobalStyle`
     }
     h6 {
         font-size: 1em;
+        font-weight: 200;
         &:empty {
             &:before {
               ${Skeleton};
@@ -198,7 +203,7 @@ const GlobalStyles = createGlobalStyle`
     label {
       font-family: ${fonts.data};
       font-size: 0.876rem;
-      font-weight: 600;
+      font-weight: 400;
       letter-spacing: 1px;
       &:empty {
         &:before {

@@ -5,7 +5,7 @@ import styled from "styled-components";
 // import { Skeleton } from "helpers";
 import { fonts } from "Variables";
 
-const StyledText = styled.h4`
+const StyledText = styled.h3`
   grid-column: 1 / -1;
   margin: ${(props) => {
     return props.margin || "0px 0px 0.25em";
@@ -17,7 +17,7 @@ const StyledText = styled.h4`
     return props.theme.text[props.textColor] || props.theme.text.primary;
   }};
   font-weight: ${(props) => {
-    return props.textWeight || "600";
+    return props.textWeight || "inherit";
   }};
   text-align: ${(props) => {
     return props.textAlign || "";
@@ -87,8 +87,8 @@ const sizeHash = {
 };
 
 const weightHash = {
-  light: "300",
-  normal: "500",
+  light: "200",
+  normal: "400",
   semibold: "600",
   bold: "700",
 };
@@ -156,7 +156,7 @@ function Text({
   if (link) {
     textProps.as = "a";
     textProps.textColor = "link";
-    textProps.textWeight = "800";
+    textProps.textWeight = "700";
     textProps.textWidth = "max-content";
   }
   if (disabled) {

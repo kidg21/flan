@@ -8,7 +8,7 @@ export const PlaceholderText = css`
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-family: "Muli", "Arial", sans-serif;
+  font-family: Nunito;
   font-size: 1rem;
   font-weight: 500;
   color: ${(props) => {

@@ -11,14 +11,14 @@ const StyledLabel = styled.label`
   width: max-content;
   user-select: none;
   font-size: ${(props) => {
-    return props.fontSize || "";
+    return props.fontSize || "1rem";
   }};;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: ${(props) => {
-    return props.fontWeight || "500";
+    return props.fontWeight || "700";
   }};;
   letter-spacing: ${(props) => {
     return props.letterSpacing || ".25px";
@@ -47,18 +47,6 @@ const StyledLabel = styled.label`
 
 `;
 
-const sizeHash = {
-  sm: "0.876rem",
-  m: "0.8rem",
-  lg: "1.25rem",
-};
-
-const weightHash = {
-  light: "300",
-  normal: "500",
-  semibold: "600",
-  bold: "bold",
-};
 
 function Label({
   children,
@@ -70,15 +58,13 @@ function Label({
   textTransform,
   weight,
 }) {
-  const fontSize = sizeHash[size && size.toLowerCase()] || "1rem";
-  const fontWeight = weightHash[weight && weight.toLowerCase()] || "500";
   return (
     <StyledLabel
-      fontWeight={fontWeight}
+      fontWeight={weight}
       isRequired={isRequired}
       htmlFor={htmlFor}
       letterSpacing={letterSpacing}
-      fontSize={fontSize}
+      fontSize={size}
       textTransform={textTransform}
     >
       {text || children}

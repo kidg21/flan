@@ -3,6 +3,13 @@ import React, { useState } from "react";
 import { Padding } from "helpers/Display";
 import Tabs, { Tab } from "blocks/Tabs";
 import Grid from "layout/Grid";
+import Title, {Headline,
+SubTitle,
+Description,
+Body,
+Link,
+Number,
+Code} from "base/Typography";
 
 const TabsNotes = markdown.require("./Tabs.md");
 
@@ -161,11 +168,44 @@ storiesOf("Blocks|Tabs", module)
   .addDecorator(Padding)
   .add("Single-Row (default)", () => {
     return (
+      <div>
       <Tabs >
         <Tab tabLabel="Tab" />
         <Tab tabLabel="Tab" />
         <Tab tabLabel="Tab" />
       </Tabs>
+      <div>
+        <Title text="trial"/>
+        <Title text="Title with count" count="1" />
+        <Body text="this is body"/>
+       <Title text="Results" count="235" bold />
+       <Title>
+         This is a Title that wraps a text string and an inline
+         <Link
+           text="link"
+           title="Stuff about anchor tags"
+           href="https://www.w3.org/MarkUp/1995-archive/Elements/A.html"
+           target="_blank"
+         />
+         component as a child.
+       </Title>
+       <Title text="This is 'info' text" type="info" />
+       <Title text="This is 'success' text" type="success" />
+       <Title text="This is 'warning' text" type="warning" />
+       <Title text="This is 'alert' text" type="alert" />
+
+       <Title text="This is a 'xs' Title" size="xs" />
+       <Title text="This is a 'sm' Title" size="sm" />
+       <Title text="This is a standard 'm' Title" />
+       <Title text="This is a 'lg' Title" size="lg" />
+       <Title text="This is an '2x' Title" size="2x" />
+       <Title text="This is an '3x' Title" size="3x" />
+
+
+        
+        </div>
+
+      </div>
     );
   })
   .add("Row-Wrap (responsive)", () => {
