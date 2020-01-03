@@ -92,80 +92,85 @@ const GlobalStyles = createGlobalStyle`
         width: fit-content;
     }
     p {
-        font-family: inherit;
-        margin: 0 0 1rem;
+        // font-family: inherit;
+        // margin: 0 0 1rem;
     }
     h1, h2, h3, h4, h5, h6 {
-        font-family: ${fonts.headline};
-        margin: 0 0 .5rem;
-        line-height: 1.35;
+        // font-family: ${fonts.headline};
+        // margin: 0 0 .5rem;
     }
-    h1 {
-        font-size: 1.383em;
-        font-weight: 800;
-        &:empty {
-            &:before {
-              ${Skeleton};
-              height: 1.3em;
-              width: 5em;
-            }
-          }
-    }
-    h2 {
-        font-size: 1.296em;
-        font-weight: 700;
-        &:empty {
-            &:before {
-              ${Skeleton};
-              height: 1.3em;
-              width: 10rem;
-            }
-          }
-    }
-    h3 {
-        font-size: 1.215em;
-        font-weight: 600;
-        &:empty {
-            &:before {
-              ${Skeleton};
-              height: 1.3em;
-              width: 10rem;
-            }
-          }
-    }
-    h4 {
-        font-size: 1.138em;
-        font-weight: 400;
-        &:empty {
-            &:before {
-              ${Skeleton};
-              height: 1.4rem;
-              width: 40vw;
-            }
-          }
-    }
-    h5 {
-        font-size: 1.067em;
-        font-weight: 300;
-        &:empty {
-            &:before {
-              ${Skeleton};
-              height: 1.5em;
-              width: 10rem;
-            }
-          }
-    }
-    h6 {
-        font-size: 1em;
-        font-weight: 200;
-        &:empty {
-            &:before {
-              ${Skeleton};
-              height: 1.3em;
-              width: 10rem;
-            }
-          }
-    }
+    // h1 {
+    //     font-size: 70px;
+    //     font-weight: 300;
+    //     letter-spacing: -1.5;
+    //     &:empty {
+    //         &:before {
+    //           ${Skeleton};
+    //           height: 1.3em;
+    //           width: 5em;
+    //         }
+    //       }
+    // }
+    // h2 {
+    //     font-size: 60px;
+    //     font-weight: 300;
+    //     letter-spacing: -0.5;
+    //     &:empty {
+    //         &:before {
+    //           ${Skeleton};
+    //           height: 1.3em;
+    //           width: 10rem;
+    //         }
+    //       }
+    // }
+    // h3 {
+    //     font-size: 48px;
+    //     font-weight: 400;
+    //     letter-spacing: 0;
+    //     &:empty {
+    //         &:before {
+    //           ${Skeleton};
+    //           height: 1.3em;
+    //           width: 10rem;
+    //         }
+    //       }
+    // }
+    // h4 {
+    //     font-size: 16px;
+    //     font-weight: 400;
+    //     letter-spacing: 0.25;
+    //     &:empty {
+    //         &:before {
+    //           ${Skeleton};
+    //           height: 1.4rem;
+    //           width: 40vw;
+    //         }
+    //       }
+    // }
+    // h5 {
+    //     font-size: 24px;
+    //     font-weight: 400;
+    //     letter-spacing: 0;
+    //     &:empty {
+    //         &:before {
+    //           ${Skeleton};
+    //           height: 1.5em;
+    //           width: 10rem;
+    //         }
+    //       }
+    // }
+    // h6 {
+    //     font-size: 20px;
+    //     font-weight: 700;
+    //     letter-spacing: 0.15;
+    //     &:empty {
+    //         &:before {
+    //           ${Skeleton};
+    //           height: 1.3em;
+    //           width: 10rem;
+    //         }
+    //       }
+    // }
     img, object {
         &:empty {
             &:before {
@@ -213,20 +218,20 @@ const GlobalStyles = createGlobalStyle`
         }
       }
     }
-/* Buttons */
-    button {
-      box-sizing: border-box;
-      &:focus {
-        outline: none;
-      }
-      &:empty {
-        &:before {
-          ${Skeleton};
-          height: 2em;
-          width: 8rem;
-        }
-      }
-    }
+// /* Buttons */
+//     button {
+//       box-sizing: border-box;
+//       &:focus {
+//         outline: none;
+//       }
+//       &:empty {
+//         &:before {
+//           ${Skeleton};
+//           height: 2em;
+//           width: 8rem;
+//         }
+//       }
+//     }
 /* Inputs */
     input:not([type]),
     input[type="text"],

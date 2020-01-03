@@ -3,24 +3,27 @@ import React, { useState } from "react";
 import { Padding } from "helpers/Display";
 import Tabs, { Tab } from "blocks/Tabs";
 import Grid from "layout/Grid";
-import Title, {Headline,
-SubTitle,
-Description,
-Body,
-Link,
-Number,
-Code} from "base/Typography";
+// import Title, {
+//   Headline,
+//   SubTitle,
+//   Description,
+//   Body,
+//   Link,
+//   Number,
+//   Code
+// } from "base/Typography";
+import Text, {Title, SubTitle, Link} from "./NewText.jsx";
 
 const TabsNotes = markdown.require("./Tabs.md");
 
 storiesOf("Blocks|Tabs", module)
   .addParameters({
     info: {
-      text: "Tabs info goes here...",
+      text: "Tabs info goes here..."
     },
     notes: {
-      markdown: TabsNotes,
-    },
+      markdown: TabsNotes
+    }
   })
   .addDecorator(Padding)
   .add(
@@ -33,7 +36,7 @@ storiesOf("Blocks|Tabs", module)
           <Tab tabLabel="Tab" />
         </Tabs>
       );
-    }),
+    })
   );
 
 storiesOf("Blocks|Tabs", module)
@@ -51,23 +54,23 @@ storiesOf("Blocks|Tabs", module)
             "2 columns / row": "2",
             "3 columns / row": "3",
             "4 columns / row": "4",
-            "5 columns / row": "5",
+            "5 columns / row": "5"
           },
           null,
           { display: "radio" },
-          "Tab Group",
+          "Tab Group"
         )}
         align={options(
           "align",
           {
             "top ( default )": "top",
             "left ( 1 column / vertical )": "left",
-            "bottom": "bottom",
-            "right ( 1 column / vertical )": "right",
+            bottom: "bottom",
+            "right ( 1 column / vertical )": "right"
           },
           "top",
           { display: "radio" },
-          "Tab Group",
+          "Tab Group"
         )}
       >
         <Tab
@@ -75,90 +78,100 @@ storiesOf("Blocks|Tabs", module)
             "icon 1",
             {
               "no icon": null,
-              "info": "info",
-              "clone": "clone",
-              "search": "search",
-              "draw": "draw",
-              "list": "list",
+              info: "info",
+              clone: "clone",
+              search: "search",
+              draw: "draw",
+              list: "list"
             },
             null,
-            "Tab 1",
+            "Tab 1"
           )}
           tabLabel={text("Tab 1", "Tab 1", "Tab 1")}
           disabled={boolean("Disable 1", false, "Tab 1")}
-          onClick={() => { alert("Tab 1 clicked!"); }}
+          onClick={() => {
+            alert("Tab 1 clicked!");
+          }}
         />
         <Tab
           icon={select(
             "icon 2",
             {
               "no icon": null,
-              "info": "info",
-              "clone": "clone",
-              "search": "search",
-              "draw": "draw",
-              "list": "list",
+              info: "info",
+              clone: "clone",
+              search: "search",
+              draw: "draw",
+              list: "list"
             },
             null,
-            "Tab 2",
+            "Tab 2"
           )}
           tabLabel={text("Tab 2", "Tab 2", "Tab 2")}
           disabled={boolean("Disable 2", false, "Tab 2")}
-          onClick={() => { alert("Tab 2 clicked!"); }}
+          onClick={() => {
+            alert("Tab 2 clicked!");
+          }}
         />
         <Tab
           icon={select(
             "icon 3",
             {
               "no icon": null,
-              "info": "info",
-              "clone": "clone",
-              "search": "search",
-              "draw": "draw",
-              "list": "list",
+              info: "info",
+              clone: "clone",
+              search: "search",
+              draw: "draw",
+              list: "list"
             },
             null,
-            "Tab 3",
+            "Tab 3"
           )}
           tabLabel={text("Tab 3", "Tab 3", "Tab 3")}
           disabled={boolean("Disable 3", false, "Tab 3")}
-          onClick={() => { alert("Tab 3 clicked!"); }}
+          onClick={() => {
+            alert("Tab 3 clicked!");
+          }}
         />
         <Tab
           icon={select(
             "icon 4",
             {
               "no icon": null,
-              "info": "info",
-              "clone": "clone",
-              "search": "search",
-              "draw": "draw",
-              "list": "list",
+              info: "info",
+              clone: "clone",
+              search: "search",
+              draw: "draw",
+              list: "list"
             },
             null,
-            "Tab 4",
+            "Tab 4"
           )}
           tabLabel={text("Tab 4", "Tab 4", "Tab 4")}
           disabled={boolean("Disable 4", false, "Tab 4")}
-          onClick={() => { alert("Tab 4 clicked!"); }}
+          onClick={() => {
+            alert("Tab 4 clicked!");
+          }}
         />
         <Tab
           icon={select(
             "icon 5",
             {
               "no icon": null,
-              "info": "info",
-              "clone": "clone",
-              "search": "search",
-              "draw": "draw",
-              "list": "list",
+              info: "info",
+              clone: "clone",
+              search: "search",
+              draw: "draw",
+              list: "list"
             },
             null,
-            "Tab 5",
+            "Tab 5"
           )}
           tabLabel={text("Tab 5", "Tab 5", "Tab 5")}
           disabled={boolean("Disable 5", false, "Tab 5")}
-          onClick={() => { alert("Tab 5 clicked!"); }}
+          onClick={() => {
+            alert("Tab 5 clicked!");
+          }}
         />
       </Tabs>
     );
@@ -169,42 +182,28 @@ storiesOf("Blocks|Tabs", module)
   .add("Single-Row (default)", () => {
     return (
       <div>
-      <Tabs >
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-      </Tabs>
-      <div>
-        <Title text="trial"/>
-        <Title text="Title with count" count="1" />
-        <Body text="this is body"/>
-       <Title text="Results" count="235" bold />
-       <Title>
-         This is a Title that wraps a text string and an inline
-         <Link
-           text="link"
-           title="Stuff about anchor tags"
-           href="https://www.w3.org/MarkUp/1995-archive/Elements/A.html"
-           target="_blank"
-         />
-         component as a child.
-       </Title>
-       <Title text="This is 'info' text" type="info" />
-       <Title text="This is 'success' text" type="success" />
-       <Title text="This is 'warning' text" type="warning" />
-       <Title text="This is 'alert' text" type="alert" />
+        <Tabs>
+          <Tab tabLabel="Tab" />
+          <Tab tabLabel="Tab" />
+          <Tab tabLabel="Tab" />
+        </Tabs>
+        <div>
 
-       <Title text="This is a 'xs' Title" size="xs" />
-       <Title text="This is a 'sm' Title" size="sm" />
-       <Title text="This is a standard 'm' Title" />
-       <Title text="This is a 'lg' Title" size="lg" />
-       <Title text="This is an '2x' Title" size="2x" />
-       <Title text="This is an '3x' Title" size="3x" />
-
-
-        
+          <Title text="H1 new" size="h1"/>
+          <Title text="H2 new" size="h2"/>
+          <Title text="H3 new" size="h3"/>
+          <Title text="H4 new" size="h4"/>
+          <Title text="H5 new" size="h5"/>
+          <Title text="H6 new" size="h6"/>
+          <SubTitle text="Subtitle 1" size="normal"/>
+          <SubTitle text="Subtitle 2" size="small"/>
+          <Text text="Body 1" size="body1"/>
+          <Text text="Body 2" size="body2"/>
+          <Text text="BUTTON" size="button"/>
+          <Text text="Caption" size="caption"/>
+          <Text text="Overline" size="overline"/>
+          <Link text="Link"/>
         </div>
-
       </div>
     );
   })
@@ -347,7 +346,7 @@ storiesOf("Blocks|Tabs", module)
     return React.createElement(() => {
       const [activeToggleTab, setActiveToggleTab] = useState("");
       return (
-        <Tabs columns="" >
+        <Tabs columns="">
           <Tab
             tabLabel="Tab 1"
             isSelected={activeToggleTab === "tab1"}
@@ -394,7 +393,7 @@ storiesOf("Blocks|Tabs", module)
       const [activeMultiTab2, setActiveMultiTab2] = useState(false);
       const [activeMultiTab3, setActiveMultiTab3] = useState(false);
       return (
-        <Tabs columns="" >
+        <Tabs columns="">
           <Tab
             tabLabel="Tab 1"
             isSelected={activeMultiTab}
@@ -427,7 +426,7 @@ storiesOf("Blocks|Tabs", module)
       const [activeMultiTab3, setActiveMultiTab3] = useState(false);
       return (
         <Grid columns="1">
-          <Tabs columns="" >
+          <Tabs columns="">
             <Tab
               type="inline"
               tabLabel="Tab 1"
@@ -464,7 +463,7 @@ storiesOf("Blocks|Tabs", module)
       const [activeMultiTab3, setActiveMultiTab3] = useState(false);
       return (
         <Grid columns="1">
-          <Tabs columns="" >
+          <Tabs columns="">
             <Tab
               type="inactive"
               tabLabel="Tab 1"
@@ -494,4 +493,3 @@ storiesOf("Blocks|Tabs", module)
       );
     });
   });
-

@@ -6,7 +6,7 @@ import { DisabledContext } from "States";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import { Skeleton } from "helpers";
-import Label from "atoms/Label";
+
 
 /** TODO: move these to Variables */
 
@@ -124,6 +124,16 @@ const buttonType = {
 - Findable: Buttons should be easy to find among other elements, including other buttons.
 - Clear: A button’s action and state should be clear.
 * */
+
+
+const Lab = styled.h4`
+font-size: 13px;
+font-family: Nunito;
+font-weight: 600;
+text-transform: uppercase;
+letter-spacing: 1.25px;
+`;
+
 function Button({
   border,
   className,
@@ -194,7 +204,7 @@ function Button({
     >
       {icon ? <ButtonIcon icon={icon} size="lg" /> : null}
       {label ? (
-        <Label letterSpacing="0.075em" weight="600" text={label} />
+        <Lab>{label}</Lab>
       ) : null}
     </StyledButton>
   );
