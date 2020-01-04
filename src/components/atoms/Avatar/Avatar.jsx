@@ -3,12 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Icon from "atoms/Icon";
-import Title from "base/Typography";
-
-const AvatarText = styled(Title)`
-  color: inherit;
-  margin: 0px 0px 0em;
-`;
+import Label from "atoms/Label";
 
 const TagContainer = styled.div`
   justify-content: center;
@@ -70,7 +65,7 @@ function Avatar({
   if (icon) {
     iconType = <Icon icon={icon} size="lg" />;
   } else {
-    labelType = <AvatarText weight="semibold" size="lg" text={label} />;
+    labelType = <Label type="bold" text={label} size="14px" />;
   }
 
   return (

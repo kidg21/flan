@@ -3,16 +3,13 @@ import React, { useState } from "react";
 import { Padding } from "helpers/Display";
 import Tabs, { Tab } from "blocks/Tabs";
 import Grid from "layout/Grid";
-// import Title, {
-//   Headline,
-//   SubTitle,
-//   Description,
-//   Body,
-//   Link,
-//   Number,
-//   Code
-// } from "base/Typography";
-import Text, {Title, SubTitle, Link} from "./NewText.jsx";
+import Title, {
+  Headline,
+  SubTitle,
+  Description,
+  Body,
+  Link,
+} from "base/Typography";
 
 const TabsNotes = markdown.require("./Tabs.md");
 
@@ -181,30 +178,11 @@ storiesOf("Blocks|Tabs", module)
   .addDecorator(Padding)
   .add("Single-Row (default)", () => {
     return (
-      <div>
         <Tabs>
           <Tab tabLabel="Tab" />
           <Tab tabLabel="Tab" />
           <Tab tabLabel="Tab" />
         </Tabs>
-        <div>
-
-          <Title text="H1 new" size="h1"/>
-          <Title text="H2 new" size="h2"/>
-          <Title text="H3 new" size="h3"/>
-          <Title text="H4 new" size="h4"/>
-          <Title text="H5 new" size="h5"/>
-          <Title text="H6 new" size="h6"/>
-          <SubTitle text="Subtitle 1" size="normal"/>
-          <SubTitle text="Subtitle 2" size="small"/>
-          <Text text="Body 1" size="body1"/>
-          <Text text="Body 2" size="body2"/>
-          <Text text="BUTTON" size="button"/>
-          <Text text="Caption" size="caption"/>
-          <Text text="Overline" size="overline"/>
-          <Link text="Link"/>
-        </div>
-      </div>
     );
   })
   .add("Row-Wrap (responsive)", () => {

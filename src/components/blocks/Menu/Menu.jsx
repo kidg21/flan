@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import Bar from "blocks/Bar";
 import styled from "styled-components";
-import Title from "base/Typography";
+import { Title, SubTitle } from "base/Typography";
 import Card from "layout/Card";
 
 const MenuContainer = styled.div`
@@ -126,7 +126,7 @@ function MenuComponent({
                 >
                   <Bar
                     contentAlign="center"
-                    left={<Title icon={item.icon} text={item.name} />}
+                    left={<SubTitle size="small" icon={item.icon} text={item.name} />}
                     right={<Icon icon={submenuDirection} />}
                   />
                   {activeItem && activeItem.id === item.id ? (
@@ -152,7 +152,7 @@ function MenuComponent({
                 }}
                 onMouseOver={closeMenu}
               >
-                <Title icon={item.icon} text={item.name} />
+                <SubTitle size="small" icon={item.icon} text={item.name} />
               </MenuItem>
             );
           })}

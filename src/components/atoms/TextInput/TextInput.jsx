@@ -4,6 +4,7 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
 import Label from "atoms/Label";
+import Text from "base/Typography";
 import Grid from "layout/Grid";
 import { getGuid } from "helpers";
 
@@ -175,7 +176,7 @@ function TextInput({
       className={className}
     >
       {label ? (
-        <Label weight="bold" isRequired={isRequired} text={label} />
+        <Text size="overline" isRequired={isRequired} text={label} />
       ) : null}
       <Input
         as={as}
@@ -204,9 +205,9 @@ function TextInput({
         cols={cols} // textarea attribute
       />
       {autocompleteDataList}
-      {helpText ? <Label size="sm" text={helpText} /> : null}
+      {helpText ? <Text size="caption" text={helpText} /> : null}
       {children}
-      {errorText ? <Label size="sm" text={errorText} /> : null}
+      {errorText ? <Text size="caption" text={errorText} /> : null}
     </TextInputContainer>
   );
 }

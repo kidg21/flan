@@ -1,402 +1,329 @@
 /* eslint-disable linebreak-style */
-import React from "react";
+import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import { DisabledContext } from "States";
 // import { Skeleton } from "helpers";
-import { fonts } from "Variables";
+import { fonts, Lighten, Darken } from "Variables";
 
-const StyledText = styled.h3`
-  grid-column: 1 / -1;
-  margin: ${(props) => {
-    return props.margin || "0px 0px 0.25em";
-  }};
-  font-family: ${(props) => {
-    return props.fontFamily || "inherit";
-  }};
-  color: ${(props) => {
-    return props.theme.text[props.textColor] || props.theme.text.primary;
-  }};
-  font-weight: ${(props) => {
-    return props.textWeight || "inherit";
-  }};
-  text-align: ${(props) => {
-    return props.textAlign || "";
-  }};
-  letter-spacing: ${(props) => {
-    return props.letterSpacing || "0px";
-  }};
-  font-style: ${(props) => {
-    return props.textStyle || "";
-  }};
-  text-decoration: ${(props) => {
-    return props.textDecoration || "";
-  }};
-  user-select: ${(props) => {
-    return props.select || "";
-  }};
-  width: ${(props) => {
-    return props.textWidth || "";
-  }};
-  a {
-    margin: initial;
-    /** TODO: Add a 'separator' prop */
-    /* &:before,
-    &:after {
-      content: ${(props) => {
-    return props.separator || "|";
-  }};
-    } */
-  }
+const LinkText = styled.a`
+line-height: inherit;
+font-weight: 700;
+font-size: 14px;
+text-decoration: none;
+padding: .5em;
+letter-spacing: 0.5px;
+color: ${(props) => {
+    return props.theme.text[props.linkColor] || props.theme.text.link;
+  }};;
+margin: -.5em;
+cursor: pointer;
+
+&:hover,
+&:focus {
+  ${Darken};
 }
-`;
-
-const LinkedText = styled(StyledText)`
-  color: ${(props) => {
-    return props.theme.text.link;
-  }};
-  /* width: max-content; */
-`;
-
-const StyledNumber = styled(StyledText)`
-  font-family: ${fonts.numbers};
-  color: inherit;
-  letter-spacing: 1px;
+&:active {
+  ${Lighten};
 }
+
 `;
 
-const StyledCode = styled.code`
-  background-color: ${(props) => {
-    return props.theme.palette.grey5;
-  }};
-  border: 1px solid ${(props) => {
-    return props.theme.palette.grey2;
-  }};
-  border-radius: 0.25rem;
-  padding: 0.5rem 0.5rem 0.25rem;
-  user-select: all;
-}
+const H1 = styled.h1`
+font-size: 70px;
+font-weight: 300;
+line-height: 1;
+font-family: ${fonts.body};
+letter-spacing: -1.25px;
 `;
 
-const sizeHash = {
-  "xs": "label",
-  "sm": "h5",
-  "m": "h4",
-  "lg": "h3",
-  "2x": "h2",
-  "3x": "h1",
-};
+const H2 = styled.h2`
+font-size: 60px;
+font-weight: 300;
+line-height: 1;
+font-family: ${fonts.body};
+letter-spacing: -0.5px;
+`;
 
-const weightHash = {
-  light: "200",
-  normal: "400",
-  semibold: "600",
-  bold: "700",
-};
+const H3 = styled.h3`
+font-size: 48px;
+font-weight: 400;
+line-height: 1.15;
+font-family: ${fonts.body};
+letter-spacing: 0px;
+`;
 
-function parseProps({
-  font, type, size, align, weight, styling, spacing,
-}) {
-  let letterSpacing;
-  let textStyle;
-  let textDecoration;
-  let textWidth;
+const H4 = styled.h4`
+font-size: 34px;
+font-weight: 400;
+line-height: 1.15;
+font-family: ${fonts.body};
+letter-spacing: 0.25px;
+`;
 
-  const fontFamily = font ? fonts[font.toLowerCase()] : null;
-  const textColor = type ? type.toLowerCase() : null;
-  const as = size ? (sizeHash[size.toLowerCase()] || "h4") : "h4";
-  const textAlign = align ? align.toLowerCase() : null;
-  const textWeight = weight ? (weightHash[weight.toLowerCase()] || "500") : "500";
+const H5 = styled.h5`
+font-size: 24px;
+font-weight: 400;
+line-height: 1.5;
+font-family: ${fonts.body};
+letter-spacing: 0px;
+`;
 
-  switch (styling && styling.toLowerCase()) {
-    case "underline":
-      textDecoration = "underline";
+const H6 = styled.h6`
+font-size: 20px;
+font-weight: 600;
+line-height: 1.5;
+font-family: ${fonts.body};
+letter-spacing: 0.15px;
+`;
+
+
+function Title({ text, size }) {
+  let content;
+  switch (size && size.toLowerCase()) {
+    case "h1":
+      content = <H1>{text}</H1>;
       break;
-    case "italic":
-      textStyle = "italic";
+    case "h2":
+      content = <H2>{text}</H2>;
+      break;
+    case "h3":
+      content = <H3>{text}</H3>;
+      break;
+    case "h4":
+      content = <H4>{text}</H4>;
+      break;
+    case "h5":
+      content = <H5>{text}</H5>;
+      break;
+    case "h6":
+      content = <H6>{text}</H6>;
       break;
     default:
+      content = <H4>{text}</H4>;
       break;
   }
-
-  const numSpacing = spacing ? parseInt(spacing, 10) : 0;
-  if (numSpacing && !isNaN(numSpacing)) {
-    letterSpacing = `${0.1 * (numSpacing - 1)}em`;
-  }
-
-  return {
-    letterSpacing,
-    textStyle,
-    textDecoration,
-    textWidth,
-    fontFamily,
-    textColor,
-    as,
-    textAlign,
-    textWeight,
-  };
+  return (
+    <React.Fragment>
+      {content}
+    </React.Fragment>
+  );
 }
 
-function Text({
-  children,
-  className,
-  count,
-  disabled,
-  href,
-  id,
-  link,
-  onClick,
-  select,
-  target,
-  text,
-  title,
-  margin,
-  ...props
+
+const Subtitle1 = styled.h4`
+font-size: 16px;
+font-weight: 400;
+line-height: 2;
+font-family: ${fonts.body};
+letter-spacing: 0.15px;
+`;
+
+const Subtitle2 = styled.h4`
+font-size: 14px;
+font-weight: 600;
+line-height: 2;
+font-family: ${fonts.body};
+letter-spacing: 0.1px;
+`;
+
+const Body1 = styled.h4`
+font-size: 16px;
+font-weight: 400;
+line-height: 1.35;
+font-family: ${fonts.body};
+letter-spacing: 0.5px;
+`;
+
+const Body2 = styled.h4`
+font-size: 14px;
+line-height: 1.25;
+font-weight: 400;
+font-family: ${fonts.body};
+letter-spacing: 0.25px;
+`;
+
+const Button = styled.h4`
+font-size: 13px;
+font-weight: 650;
+text-transform: uppercase;
+font-family: ${fonts.body};
+letter-spacing: 1.25px;
+`;
+
+const Caption = styled.h4`
+font-size: 12px;
+font-weight: 400;
+line-height: 1.5;
+font-family: ${fonts.body};
+letter-spacing: 0.4px;
+`;
+
+const Overline = styled.h4`
+font-size: 10px;
+font-weight: 400;
+line-height: 2;
+text-transform: uppercase;
+font-family: ${fonts.body};
+letter-spacing: 1.5px;
+`;
+
+
+function Link({
+  text, onClick, href, target, disabled,
 }) {
-  const textProps = parseProps(props);
-  if (link) {
-    textProps.as = "a";
-    textProps.textColor = "link";
-    textProps.textWeight = "700";
-    textProps.textWidth = "max-content";
-  }
-  if (disabled) {
-    textProps.textColor = "disabled";
-  }
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  if (isDisabled) linkColor = "disabled";
   return (
-    <StyledText
-      as={textProps.as}
-      margin={margin}
-      className={className}
-      fontFamily={textProps.fontFamily}
+    <LinkText
       href={href}
+      isDisabled={isDisabled}
       onClick={onClick}
       target={target}
-      title={title}
-      id={id}
-      letterSpacing={textProps.letterSpacing}
-      select={select}
-      textAlign={textProps.textAlign}
-      textColor={textProps.textColor}
-      textDecoration={textProps.textDecoration}
-      textStyle={textProps.textStyle}
-      textWeight={textProps.textWeight}
-      textWidth={textProps.textWidth}
     >
-      {text || children}
-      {count ? (
-        <LinkedText as="a">
-          <StyledNumber as="span">{count}</StyledNumber>
-        </LinkedText>
-      ) : null}
-    </StyledText>
+      {text}
+    </LinkText>
   );
 }
-Text.propTypes = {
-  align: PropTypes.oneOf(["center", "right"]),
-  children: PropTypes.node,
-  className: PropTypes.string,
-  count: PropTypes.node,
-  font: PropTypes.string,
-  href: PropTypes.string,
-  id: PropTypes.string,
-  link: PropTypes.bool,
-  onClick: PropTypes.string,
-  size: PropTypes.string,
-  target: PropTypes.string,
-  text: PropTypes.string,
-  title: PropTypes.string,
-  type: PropTypes.string,
-  weight: PropTypes.string,
-  select: PropTypes.string,
-  spacing: PropTypes.string,
-  styling: PropTypes.oneOf(["underline", "italic"]),
-  disabled: PropTypes.bool,
-  margin: PropTypes.string,
-};
-Text.defaultProps = {
-  align: null,
-  children: null,
-  className: null,
-  count: null,
-  font: null,
-  href: null,
-  id: null,
-  link: false,
-  onClick: null,
-  select: null,
-  size: null,
-  spacing: null,
-  styling: null,
-  target: null,
-  text: null,
-  title: null,
-  type: null,
-  weight: null,
-  disabled: null,
-  margin: null,
-};
 
-function Headline({ text, children, ...textProps }) {
-  return (
-    <Text separator="pipe" size="2x" weight="bold" {...textProps}>
-      {text || children}
-    </Text>
-  );
-}
-Headline.propTypes = {
-  text: PropTypes.string,
-  children: PropTypes.node,
-};
-Headline.defaultProps = {
-  text: null,
-  children: null,
-};
 
-function Title({
-  text, size, children, number, ...textProps
-}) {
+function Body({ text }) {
   return (
-    <Text size={size} count={number} weight="semibold" {...textProps}>
-      {text || children}
-    </Text>
+    <Body1>
+      {text}
+    </Body1>
   );
 }
+
+function Description({ text }) {
+  return (
+    <Caption>
+      {text}
+    </Caption>
+  );
+}
+
+function Headline({ text }) {
+  return (
+    <H3>
+      {text}
+    </H3>
+  );
+}
+
+function SubTitle({ text, size }) {
+  let content;
+  switch (size && size.toLowerCase()) {
+    case "normal":
+      content = <Subtitle1>{text}</Subtitle1>;
+      break;
+    case "small":
+      content = <Subtitle2>{text}</Subtitle2>;
+      break;
+    default:
+      content = <Subtitle1>{text}</Subtitle1>;
+      break;
+  }
+  return (
+    <React.Fragment>
+      {content}
+    </React.Fragment>
+  );
+}
+
+function Text({ text, size }) {
+  let content;
+  switch (size && size.toLowerCase()) {
+    case "body1":
+      content = <Body1>{text}</Body1>;
+      break;
+    case "body2":
+      content = <Body2>{text}</Body2>;
+      break;
+    case "button":
+      content = <Button>{text}</Button>;
+      break;
+    case "caption":
+      content = <Caption>{text}</Caption>;
+      break;
+    case "overline":
+      content = <Overline>{text}</Overline>;
+      break;
+    default:
+      content = <Body2>{text}</Body2>;
+      break;
+  }
+  return (
+    <React.Fragment>
+      {content}
+    </React.Fragment>
+  );
+}
+
+
 Title.propTypes = {
-  number: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   text: PropTypes.string,
-  size: PropTypes.string,
-  children: PropTypes.node,
+  size: PropTypes.node,
 };
 Title.defaultProps = {
-  number: null,
   text: null,
   size: null,
-  children: null,
 };
 
-function SubTitle({ text, children, ...textProps }) {
-  return (
-    <Text spacing="1" type="secondary" margin="0px 0px 0.15em" {...textProps}>
-      {text || children}
-    </Text>
-  );
-}
+
 SubTitle.propTypes = {
   text: PropTypes.string,
-  children: PropTypes.node,
+  size: PropTypes.node,
 };
 SubTitle.defaultProps = {
   text: null,
-  children: null,
+  size: null,
 };
 
-function Body({
-  text, weight, children, ...textProps
-}) {
-  return (
-    <Text size="sm" weight="normal" margin="0px 0px 0.15em" {...textProps}>
-      {text || children}
-    </Text>
-  );
-}
-Body.propTypes = {
+Text.propTypes = {
   text: PropTypes.string,
-  weight: PropTypes.string,
-  children: PropTypes.node,
+  size: PropTypes.node,
 };
-Body.defaultProps = {
+Text.defaultProps = {
   text: null,
-  weight: null,
-  children: null,
+  size: null,
 };
 
-function Description({ text, children, ...textProps }) {
-  return (
-    <Text size="xs" spacing="1" {...textProps}>
-      {text || children}
-    </Text>
-  );
-}
-Description.propTypes = {
-  text: PropTypes.string,
-  children: PropTypes.node,
-};
-Description.defaultProps = {
-  text: null,
-  children: null,
-};
-
-function Link({
-  text, children, title, onClick, href, target, ...textProps
-}) {
-  return (
-    <Text
-      href={href}
-      link
-      onClick={onClick}
-      spacing="2"
-      target={target}
-      title={title}
-      weight="bold"
-      {...textProps}
-    >
-      {text || children}
-    </Text>
-  );
-}
 Link.propTypes = {
-  text: PropTypes.node,
-  children: PropTypes.node,
-  title: PropTypes.string,
-  href: PropTypes.string,
-  onClick: PropTypes.func,
-  /** _blank, _parent, _self, _top, framename */
-  target: PropTypes.string,
+  text: PropTypes.string,
+  target: PropTypes.node,
+  onClick: PropTypes.node,
+  href: PropTypes.node,
+  disabled: PropTypes.bool,
 };
 Link.defaultProps = {
   text: null,
-  children: null,
-  title: null,
+  target: null,
   onClick: null,
   href: null,
-  target: null,
+  disabled: false,
 };
 
-function Number({ text, children, ...textProps }) {
-  return (
-    <Text font="numbers" weight="normal" spacing="2" {...textProps}>
-      {text || children}
-    </Text>
-  );
-}
-Number.propTypes = {
-  text: PropTypes.string,
-  children: PropTypes.node,
-};
-Number.defaultProps = {
-  text: null,
-  children: null,
-};
-
-function Code({ text, children }) {
-  return <StyledCode>{text || children}</StyledCode>;
-}
-Code.propTypes = {
-  children: PropTypes.node,
+Body.propTypes = {
   text: PropTypes.string,
 };
-Code.defaultProps = {
-  children: null,
+Body.defaultProps = {
   text: null,
 };
 
-export {
-  Title as default,
-  Headline,
-  SubTitle,
-  Description,
-  Body,
-  Link,
-  Number,
-  Code,
+Description.propTypes = {
+  text: PropTypes.string,
 };
+Description.defaultProps = {
+  text: null,
+};
+
+Headline.propTypes = {
+  text: PropTypes.string,
+};
+Headline.defaultProps = {
+  text: null,
+};
+
+export { Text as default, Title, Link, Body, SubTitle, Description, Headline };

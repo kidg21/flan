@@ -8,7 +8,7 @@ import Icon from "atoms/Icon";
 import Avatar from "atoms/Avatar";
 import Checkbox from "atoms/Checkbox";
 import Switch from "atoms/Switch";
-import Title, { Description } from "base/Typography";
+import Text, { Title, SubTitle, Description } from "base/Typography";
 import { InteractiveContext, DisabledContext } from "States";
 
 const ListWrapper = styled.ul`
@@ -63,7 +63,7 @@ function List({
 }) {
   return (
     <InteractiveContext.Provider value={interactive}>
-      {title ? <Bar left={<Title text={title} weight="bold" />} /> : null}
+      {title ? <Bar left={<Text text={title} weight="bold" />} /> : null}
       <ListWrapper divider={divider} id={id}>
         {children}
       </ListWrapper>
@@ -86,9 +86,9 @@ function ListItem({
 }) {
   const mainContent = (
     <React.Fragment>
-      <Title text={label} disabled={disabled} />
+      <Text text={label} disabled={disabled} />
       {description ? (
-        <Description text={description} disabled={disabled} />
+        <Text size="caption" text={description} disabled={disabled} />
       ) : null}
     </React.Fragment>
   );
@@ -132,19 +132,19 @@ function ListItem({
             }
           />
         ) : (
-          <Bar
-            contentAlign="center"
-            centerAlign="left"
-            disabled={disabled}
-            left={mainContent}
-            right={
-              <React.Fragment>
-                {checkbox ? <Checkbox disabled={disabled} /> : null}
-                {toggle ? <Switch disabled={disabled} /> : null}
-              </React.Fragment>
-            }
-          />
-        )}
+            <Bar
+              contentAlign="center"
+              centerAlign="left"
+              disabled={disabled}
+              left={mainContent}
+              right={
+                <React.Fragment>
+                  {checkbox ? <Checkbox disabled={disabled} /> : null}
+                  {toggle ? <Switch disabled={disabled} /> : null}
+                </React.Fragment>
+              }
+            />
+          )}
       </DisabledContext.Provider>
     </ListItemWrapper>
   );

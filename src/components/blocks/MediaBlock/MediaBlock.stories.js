@@ -4,7 +4,7 @@ import React, { Fragment } from "react";
 import { Padding } from "helpers/Display";
 import Image from "atoms/Image";
 import Card, { CardList } from "layout/Card";
-import Title, { Description } from "base/Typography";
+import Text, { Title, Description } from "base/Typography";
 import MediaBlock from "blocks/MediaBlock";
 
 const MediaBlockNotes = markdown.require("./MediaBlock.md");
@@ -17,22 +17,22 @@ const image = (
 );
 const body = (
   <Fragment>
-    <Title text="Media Block" />
-    <Description text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. " />
+    <Title size="h6" text="Media Block" />
+    <Text text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. " />
   </Fragment>
 );
 const description = (
-  <Description text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy." />
+  <Text text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy." />
 );
 
 storiesOf("Blocks|Media Block", module)
   .addParameters({
     info: {
-      text: "Media Block info goes here...",
+      text: "Media Block info goes here..."
     },
     notes: {
-      markdown: MediaBlockNotes,
-    },
+      markdown: MediaBlockNotes
+    }
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
@@ -40,7 +40,7 @@ storiesOf("Blocks|Media Block", module)
     "Documentation",
     withInfo()(() => {
       return <MediaBlock media={image} body={body} />;
-    }),
+    })
   )
   .add("Knobs", () => {
     return (
@@ -53,11 +53,11 @@ storiesOf("Blocks|Media Block", module)
             {
               default: null,
               vertical: "vertical",
-              inline: "inline",
+              inline: "inline"
             },
             null,
             { display: "select" },
-            "Media Block",
+            "Media Block"
           )}
           reverse={boolean("reverse", false, "Media Block")}
           circle={boolean("circle", false, "Media Block")}
@@ -85,7 +85,7 @@ storiesOf("Blocks|Media Block", module)
             media={image}
             body={
               <Fragment>
-                <Title text="Media Block" />
+                <Title size="h6" text="Media Block" />
                 {description}
               </Fragment>
             }
@@ -96,7 +96,7 @@ storiesOf("Blocks|Media Block", module)
             media={image}
             body={
               <Fragment>
-                <Title text="Media Block (reverse)" />
+                <Title size="h6" text="Media Block (reverse)" />
                 {description}
               </Fragment>
             }
@@ -108,7 +108,7 @@ storiesOf("Blocks|Media Block", module)
             media={image}
             body={
               <Fragment>
-                <Title text="Media Block - Vertical" />
+                <Title size="h6" text="Media Block - Vertical" />
                 {description}
               </Fragment>
             }
@@ -120,7 +120,7 @@ storiesOf("Blocks|Media Block", module)
             media={image}
             body={
               <Fragment>
-                <Title text="Media Block - Vertical (reverse)" />
+                <Title size="h6" text="Media Block - Vertical (reverse)" />
                 {description}
               </Fragment>
             }
@@ -133,7 +133,7 @@ storiesOf("Blocks|Media Block", module)
             media={image}
             body={
               <Fragment>
-                <Title text="Media Block - Inline" />
+                <Title size="h6" text="Media Block - Inline" />
                 {description}
               </Fragment>
             }
@@ -145,7 +145,7 @@ storiesOf("Blocks|Media Block", module)
             media={image}
             body={
               <Fragment>
-                <Title text="Media Block - Inline (reverse)" />
+                <Title size="h6" text="Media Block - Inline (reverse)" />
                 {description}
               </Fragment>
             }

@@ -5,6 +5,7 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import { fonts, colors, shadows } from "Variables";
 import Grid from "layout/Grid";
+import Text from "base/Typography";
 import Label from "atoms/Label";
 import Select, { Creatable } from "react-select";
 import { Skeleton } from "helpers";
@@ -291,12 +292,12 @@ function SelectMenu({
       columns="1"
       gap="tiny"
     >
-      {label ? <Label weight="bold" isRequired={isRequired} text={label} /> : null}
+      {label ? <Text size="overline" isRequired={isRequired} text={label} /> : null}
       {select}
       {/* Help Text */}
-      {helpText ? <Label size="sm" text={helpText} /> : null}
+      {helpText ? <Text size="caption" text={helpText} /> : null}
       {/* Error Message (required) */}
-      {errorText ? <Label size="sm" text={errorText} /> : null}
+      {errorText ? <Text size="caption" text={errorText} /> : null}
     </SelectMenuContainer>
   );
 }

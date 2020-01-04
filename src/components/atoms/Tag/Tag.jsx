@@ -35,9 +35,9 @@ function Tag({
     iconType = <Icon icon={icon} size="2x" type={type} />;
     badgePadding = "0 0.25em";
   } else {
-    labelType = <Label size="sm" weight="bold" text={label} />;
+    labelType = <Label type="bold" size="12px" text={label} />;
     badgeTextColor = "inverse";
-    badgePadding = "0.15em .5em";
+    badgePadding = "0.105em .58em";
     switch (type) {
       case "info":
         badgeColor = "info";

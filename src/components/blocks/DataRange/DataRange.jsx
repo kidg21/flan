@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { DisabledContext } from "States";
 import Bar from "blocks/Bar";
 import Label from "atoms/Label";
+import Text from "base/Typography";
 import Grid from "layout/Grid";
 import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";
@@ -70,7 +71,7 @@ function DataRange({
       gap="tiny"
     >
       {label ? (
-        <Label size="sm" weight="bold" isRequired={isRequired} text={label} />
+        <Text size="overline" isRequired={isRequired} text={label} />
       ) : null}
       <Bar
         padding="none"
@@ -123,9 +124,9 @@ function DataRange({
             />)
         }
       />
-      {helpText ? <Label size="sm" text={helpText} /> : null}
+      {helpText ? <Text size="caption" text={helpText} /> : null}
       {typeof error === "string" && !isDisabled ? (
-        <Label size="sm" text={error} />
+        <Text size="caption" text={error} />
       ) : null}
     </RangeContainer>
   );

@@ -5,9 +5,8 @@ export {
   default,
   Headline,
   SubTitle,
+  Title,
   Description,
   Link,
-  Body,
-  Number,
-  Code,
+  Body
 } from "./Typography.jsx";

@@ -20,6 +20,7 @@ const CheckboxContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 0.75rem;
+  align-items: center;
   grid-template-areas: ${(props) => {
     return props.alignInput || "";
   }};
@@ -55,7 +56,7 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
     background-color: ${(props) => {
     return (
       props.theme.palette[props.fillColorChecked] ||
-        props.theme.palette.secondaryLight
+      props.theme.palette.secondaryLight
     );
   }};
     border-color: ${(props) => {
@@ -150,7 +151,7 @@ function Checkbox({
         onBlur={onBlur}
         onFocus={onFocus}
       />
-      {label ? <Label htmlFor={id} text={label} /> : null}
+      {label ? <Label weight="400" htmlFor={id} text={label} /> : null}
     </CheckboxContainer>
   );
 }

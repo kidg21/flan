@@ -7,6 +7,7 @@ import Label from "atoms/Label";
 
 const SwitchContainer = styled.div`
   display: grid;
+  align-items: center;
   grid-template-columns: ${(props) => {
     return props.label ? "auto 1fr" : "";
   }};

@@ -205,19 +205,19 @@ const GlobalStyles = createGlobalStyle`
 
     }
 /* Labels */
-    label {
-      font-family: ${fonts.data};
-      font-size: 0.876rem;
-      font-weight: 400;
-      letter-spacing: 1px;
-      &:empty {
-        &:before {
-          ${Skeleton};
-          height: 1.3em;
-          width: 5rem;
-        }
-      }
-    }
+    // label {
+    //   font-family: ${fonts.data};
+    //   font-size: 0.876rem;
+    //   font-weight: 400;
+    //   letter-spacing: 1px;
+    //   &:empty {
+    //     &:before {
+    //       ${Skeleton};
+    //       height: 1.3em;
+    //       width: 5rem;
+    //     }
+    //   }
+    // }
 // /* Buttons */
 //     button {
 //       box-sizing: border-box;

@@ -5,6 +5,7 @@ import { Lighten, Darken } from "Variables";
 import { DisabledContext } from "States";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
+import Text from "base/Typography";
 import { Skeleton } from "helpers";
 
 
@@ -19,6 +20,7 @@ const StyledButton = styled.button.attrs((props) => {
   };
 })`
   display: flex;
+  line-height: 1.25;
   flex-direction: column;
   width: ${(props) => {
     return props.width;
@@ -126,14 +128,6 @@ const buttonType = {
 * */
 
 
-const Lab = styled.h4`
-font-size: 13px;
-font-family: Nunito;
-font-weight: 600;
-text-transform: uppercase;
-letter-spacing: 1.25px;
-`;
-
 function Button({
   border,
   className,
@@ -204,7 +198,7 @@ function Button({
     >
       {icon ? <ButtonIcon icon={icon} size="lg" /> : null}
       {label ? (
-        <Lab>{label}</Lab>
+        <Text size="button" text={label} />
       ) : null}
     </StyledButton>
   );

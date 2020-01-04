@@ -3,7 +3,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Title from "base/Typography";
+import Text, { SubTitle } from "base/Typography";
 import { SkeletonStatic } from "helpers";
 
 
@@ -74,7 +74,7 @@ function Legend({
 
   return (
     <Wrapper id={id}>
-      {title ? <Title text={title} /> : null}
+      {title ? <SubTitle size="small" text={title} /> : null}
       <TableContainer id={id}>
         {data.map((row) => {
           return (
@@ -86,7 +86,7 @@ function Legend({
                 fontWeight={fontWeight}
                 fontSize={fontSize}
               >
-                {row.name}
+                <Text size="body2" text={row.name} />
               </Cell>
               <Cell
                 cellBorder={cellBorder}
@@ -95,7 +95,7 @@ function Legend({
                 fontWeight={fontWeight}
                 fontSize={fontSize}
               >
-                {row.value}
+                <Text size="body2" text={row.value} />
               </Cell>
             </Row>
           );

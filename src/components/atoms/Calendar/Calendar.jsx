@@ -6,6 +6,7 @@ import PropTypes from "prop-types";
 import Grid from "layout/Grid";
 import { DisabledContext } from "States";
 import Label from "atoms/Label";
+import Text from "base/Typography";
 import TextInput from "atoms/TextInput";
 
 const CalendarContainer = styled(Grid)`
@@ -123,10 +124,10 @@ function Calendar({
       inputTextColor={inputTextColor}
       isRequired={isRequired}
     >
-      {label ? <Label weight="bold" isRequired={isRequired} text={label} /> : null}
+      {label ? <Text size="overline" isRequired={isRequired} text={label} /> : null}
       {inputContainer}
-      {helpText ? <Label size="sm" text={helpText} /> : null}
-      {errorText ? <Label size="sm" text={errorText} /> : null}
+      {helpText ? <Text size="caption" text={helpText} /> : null}
+      {errorText ? <Text size="caption" text={errorText} /> : null}
     </CalendarContainer>
   );
 }
@@ -168,8 +169,8 @@ Calendar.defaultProps = {
   pattern: null,
   type: "date",
   value: null,
-  onBlur: () => {},
-  onFocus: () => {},
+  onBlur: () => { },
+  onFocus: () => { },
   warning: null,
   date: {},
   time: {},

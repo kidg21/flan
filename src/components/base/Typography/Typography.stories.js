@@ -8,9 +8,7 @@ import Title, {
   SubTitle,
   Description,
   Body,
-  Link,
-  Number,
-  Code
+  Link
 } from "base/Typography";
 
 /** TODO: Add 'Documentation' and 'Knobs' stories */

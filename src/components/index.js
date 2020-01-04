@@ -5,8 +5,7 @@ export {
   default as Title,
   SubTitle,
   Description,
-  Link,
-  Number,
+  Link
 } from "./base/Typography";
 export { default as GlobalStyles } from "./base/GlobalStyles/GlobalStyles.jsx";
 
@@ -54,7 +53,7 @@ export {
   default as Dialog,
   Alert,
   Confirm,
-  Prompt,
+  Prompt
 } from "./elements/DialogBox";
 
 // Publicly exported files from 'layout'
@@ -74,6 +73,6 @@ export {
   shadows,
   screen,
   DMPTheme,
-  darkTheme,
+  darkTheme
 } from "./base/Variables/Variables.jsx";
 export { ThemeProvider } from "styled-components";

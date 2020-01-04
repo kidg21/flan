@@ -7,21 +7,22 @@ import { Skeleton } from "helpers";
 
 const StyledLabel = styled.label`
   color: inherit;
-  
+  font-family: Nunito;
+  margin: 0px 0px 0px 0px;
   width: max-content;
+  line-height: ${(props) => {
+    return props.lineHeight || "1.5";
+  }};;
   user-select: none;
   font-size: ${(props) => {
-    return props.fontSize || "1rem";
+    return props.fontSize || "14px";
   }};;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-weight: ${(props) => {
-    return props.fontWeight || "700";
+    return props.fontWeight || "600";
   }};;
   letter-spacing: ${(props) => {
-    return props.letterSpacing || ".25px";
+    return props.letterSpacing || "0.5px";
   }};;
   text-transform: ${(props) => {
     return props.textTransform || "";
@@ -52,17 +53,36 @@ function Label({
   children,
   htmlFor,
   isRequired,
-  letterSpacing,
+  type,
   size,
   text,
   textTransform,
-  weight,
 }) {
+  let letterSpacing;
+  let lineHeight;
+  let weight;
+  switch (type && type.toLowerCase()) {
+    case "normal":
+      weight = "400";
+      letterSpacing = "0.125px";
+      lineHeight = "1px";
+      break;
+    case "bold":
+      weight = "600";
+      letterSpacing = "0.5px";
+      break;
+    default:
+      weight = "400";
+      letterSpacing = "0.125px";
+      lineHeight = "1px";
+      break;
+  }
   return (
     <StyledLabel
       fontWeight={weight}
       isRequired={isRequired}
       htmlFor={htmlFor}
+      lineHeight={lineHeight}
       letterSpacing={letterSpacing}
       fontSize={size}
       textTransform={textTransform}
@@ -75,21 +95,19 @@ Label.propTypes = {
   htmlFor: PropTypes.node,
   children: PropTypes.node,
   isRequired: PropTypes.bool,
-  letterSpacing: PropTypes.string,
   size: PropTypes.string,
+  type: PropTypes.string,
   text: PropTypes.string,
   textTransform: PropTypes.string,
-  weight: PropTypes.string,
 };
 Label.defaultProps = {
   htmlFor: null,
   children: null,
   isRequired: false,
-  letterSpacing: null,
   size: null,
+  type: null,
   text: null,
   textTransform: null,
-  weight: null,
 };
 
 export default Label;

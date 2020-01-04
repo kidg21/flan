@@ -19,6 +19,7 @@ const RadioContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 0.75rem;
+  align-items: center;
   grid-template-areas: ${(props) => {
     return props.alignInput || "";
   }};
@@ -56,7 +57,7 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
     background-color: ${(props) => {
     return (
       props.theme.palette[props.fillColorChecked] ||
-        props.theme.palette.secondaryLight
+      props.theme.palette.secondaryLight
     );
   }};
     border-color: ${(props) => {
