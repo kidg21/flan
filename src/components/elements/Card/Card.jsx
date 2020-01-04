@@ -1,5 +1,5 @@
 /* eslint-disable linebreak-style */
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
@@ -13,7 +13,6 @@ import Command from "atoms/Command";
 import Image from "atoms/Image";
 import Avatar from "atoms/Avatar";
 import Menu from "blocks/Menu";
-import MediaBlock from "blocks/MediaBlock";
 import Expander from "utils/Expander";
 
 const CardSectionWrapper = styled.section`
@@ -21,115 +20,98 @@ const CardSectionWrapper = styled.section`
   display: flex;
   flex-direction: column;
   flex: 0 0 auto;
-  order: ${props => {
-    return props.order || "1";
+  color: ${(props) => {
+    return props.theme.text[props.sectionColor] || "";
   }};
-  color: ${props => {
-    return props.theme.text[props.textColor] || "";
+  background-color: ${(props) => {
+    return props.theme.background[props.sectionBackground] || "";
   }};
-  background-color: ${props => {
-    return props.theme.background[props.backgroundColor] || "";
-  }};
-  border-radius: ${props => {
-    return props.borderRadius || "";
-  }};
-  padding: ${props => {
+  padding: ${(props) => {
     return props.sectionPadding || "0.5em 1em";
   }};
-  cursor: ${props => {
+  justify-content: ${(props) => {
+    return props.sectionJustify || "";
+  }};
+  cursor: ${(props) => {
     return props.onClick ? "pointer" : "";
   }};
   z-index: 1;
-  max-height: ${props => {
+  max-height: ${(props) => {
     return props.open ? "0" : "100vh";
   }}; 
   transition: all 0.25s ease-in-out;
   a {
   color: ${(props) => {
-    return props.theme.text[props.textColor] || "";
-  }};
-  }
-  &:before,
-  &:after {
-    ${props => {
-    return (props.border || props.divider) && css`
-        content: "";
-        position: absolute;
-        top: 100%;
-        left: 1rem;
-        right: 1rem;
-        height: 1px;
-        background-color: ${props => {
-        return props.theme.divider;
-      }};
-      `;
-  }};
-  }
-  &:after {
-    ${props => {
-    return props.border && css`
-        top: 0;
-      `;
+    return props.theme.text[props.sectionColor] || "";
   }};
   }
 `;
 
-const Media = styled(CardSection)`
-  padding: 5px;
-  /* padding: 0; */
-  /* border-top: ${props => {
-    return `1px solid ${props.theme.divider}`;
-  }};
-  border-right: ${props => {
-    return `1px solid ${props.theme.divider}`;
-  }};
-  border-bottom: ${props => {
-    return `1px solid ${props.theme.divider}`;
-  }};
-  border-left: ${props => {
-    return `1px solid ${props.theme.divider}`;
-  }}; */
+const Media = styled(CardSectionWrapper)`
+  padding: 0;
+  max-height: 12em;
+  justify-content: center;
   overflow: hidden;
+  + ${CardSectionWrapper} {
+    margin-top: 1px;
+  }
 `;
 
 const CardWrapper = styled.div`
-    ${CardSectionWrapper}:not(${Media}) {
-      &:first-child,
-      &:last-child,
-      &:only-child {
-        padding: 0.75em 1em;
-      }
-    }
-    ${CardSectionWrapper} {
-      &:last-child {
-        border-radius: 0 0 5px 5px;
-      }
-    }
   position: relative;
   display: flex;
   flex-direction: column;
   border-radius: 5px;
   flex: none;
-  background-color: ${props => {
-    return props.theme.background.default;
+  background-color: ${(props) => {
+    return props.cardBackground ? props.theme.background[props.cardBackground] : props.theme.background.default;
   }};
-  padding: ${props => {
+  padding: ${(props) => {
     return props.cardPadding || "";
   }};
-  color: ${props => {
-    return props.theme.text.primary;
+  color: ${(props) => {
+    return props.cardColor ? props.theme.text[props.cardColor] : props.theme.text.primary;
   }};
-  filter: ${props => {
+  filter: ${(props) => {
     return props.theme.shadows[props.cardShadow] || "";
   }};
-  box-shadow: ${props => {
-    return props.cardType ? `${props.theme.background[props.cardType]} 0 0 0 3px inset` : "";
+  a {
+  color: ${(props) => {
+    return props.theme.text[props.cardColor] || "";
   }};
+  }
+  ${CardSectionWrapper} {
+    &:first-of-type {
+      border-radius: 5px 5px 0 0;
+    }
+    &:last-of-type {
+      border-radius: 0 0 5px 5px;
+    }
+    &:only-of-type {
+      border-radius: 5px;
+    }
+  }
+  ${CardSectionWrapper}:not(${Media}) {
+    &:first-of-type {
+      padding: 0.75em 1em 0.5em;
+    }
+    &:last-of-type {
+      padding: 0.5em 1em 0.75em;
+    }
+    &:only-of-type {
+      padding: 0.75em 1em;
+    }
+    &:last-of-type,
+    &:only-of-type {
+      flex: auto;
+      height: inherit;
+    }
+  }
   /* Prototype Content - displays when a Card is empty */
   &:empty {
     &:before {
       ${PlaceholderText}
-      color: ${props => {
+      color: ${(props) => {
     return props.theme.text.primary;
   }};
       content: "Card";
@@ -141,22 +123,15 @@ const CardWrapper = styled.div`
 const CardListWrapper = styled(Grid)`
   ${CardWrapper} {
     height: 100%;
-    filter: ${props => {
+    filter: ${(props) => {
     return props.theme.shadows.shadow1;
   }};
     transition: all 0.25s ease-in-out;
     &:hover {
       ${Darken};
-      filter: ${props => {
+      filter: ${(props) => {
     return props.theme.shadows.shadow3;
   }};
-    }
-    ${CardSectionWrapper} {
-      &:last-child {
-        flex: auto;
-        justify-content: flex-end;
-        height: inherit;
-      }
     }
   }
   /* Prototype Content - displays when a Card List is empty */
@@ -168,84 +143,7 @@ const CardListWrapper = styled(Grid)`
   }
 `;
 
-function CardSection({ border, children, className, divider, footer, header, id, onClick, order, padding, type }) {
-  let sectionPadding;
-  let textColor;
-  let backgroundColor;
-  let borderRadius;
-  switch (type) {
-    case "info":
-      textColor = "inverse";
-      backgroundColor = "info";
-      break;
-    case "success":
-      textColor = "inverse";
-      backgroundColor = "success";
-      break;
-    case "warning":
-      textColor = "inverse";
-      backgroundColor = "warning";
-      break;
-    case "alert":
-      textColor = "inverse";
-      backgroundColor = "alert";
-      break;
-    case "inverse":
-      textColor = "inverse";
-      backgroundColor = "neutral";
-      break;
-    default:
-      break;
-  }
-  switch (padding) {
-    case "none":
-      sectionPadding = "0";
-      break;
-    case "1x":
-      sectionPadding = "0.25em 1em";
-      break;
-    case "2x":
-      sectionPadding = "0.5em 1em";
-      break;
-    case "3x":
-      sectionPadding = "1em";
-      break;
-    case "4x":
-      sectionPadding = "1.25em 1em";
-      break;
-    default:
-      break;
-  }
-  if (header) {
-    order = "0";
-    borderRadius = "5px 5px 0 0";
-  }
-  if (footer) {
-    order = "2";
-    borderRadius = "0 0 5px 5px";
-  }
-  return (
-    <CardSectionWrapper
-      backgroundColor={backgroundColor}
-      borderRadius={borderRadius}
-      border={border}
-      className={className}
-      divider={divider}
-      footer={footer}
-      header={header}
-      id={id}
-      onClick={onClick}
-      order={order}
-      sectionPadding={sectionPadding}
-      textColor={textColor}
-      type={type}
-    >
-      {children}
-    </CardSectionWrapper>
-  );
-}
-
-function ExpandingSection({ description, icon, id, label, more, title, type, }) {
+function ExpandingSection({ description, icon, id, label, more, title, }) {
   const [open, setOpen] = useState(!open);
   function toggleDropdown() {
     setOpen(!open);
@@ -253,7 +151,6 @@ function ExpandingSection({ description, icon, id, label, more, title, type, }) 
   return (
     <Expander
       id={id}
-      type={type}
       header={
         title || description || label || icon ? (
           <Bar
@@ -280,6 +177,91 @@ function ExpandingSection({ description, icon, id, label, more, title, type, }) 
   );
 }
 
+function CardSection({ children, className, header, footer, id, onClick, padding, type }) {
+  let sectionColor;
+  let sectionBackground;
+  let sectionPadding;
+  let sectionJustify;
+  switch (type) {
+    case "info":
+      sectionColor = "inverse";
+      sectionBackground = "info";
+      break;
+    case "success":
+      sectionColor = "inverse";
+      sectionBackground = "success";
+      break;
+    case "warning":
+      sectionColor = "inverse";
+      sectionBackground = "warning";
+      break;
+    case "alert":
+      sectionColor = "inverse";
+      sectionBackground = "alert";
+      break;
+    default:
+      break;
+  }
+  switch (padding) {
+    case "none":
+      sectionPadding = "0";
+      break;
+    case "1x":
+      sectionPadding = "0.25em 1em";
+      break;
+    case "2x":
+      sectionPadding = "0.5em 1em";
+      break;
+    case "3x":
+      sectionPadding = "1em";
+      break;
+    case "4x":
+      sectionPadding = "1.25em 1em";
+      break;
+    default:
+      break;
+  }
+  if (header) {
+    sectionJustify = "flex-start";
+  }
+  if (footer) {
+    sectionJustify = "flex-end";
+  }
+  return (
+    <CardSectionWrapper
+      className={className}
+      footer={footer}
+      header={header}
+      id={id}
+      onClick={onClick}
+      sectionBackground={sectionBackground}
+      sectionColor={sectionColor}
+      sectionPadding={sectionPadding}
+      sectionJustify={sectionJustify}
+      type={type}
+    >
+      {children}
+    </CardSectionWrapper>
+  );
+}
+
+CardSection.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string,
+  id: PropTypes.string,
+  padding: PropTypes.oneOf(["none", "1x", "2x", "3x", "4x"]),
+  type: PropTypes.oneOf(["info", "success", "warning", "alert"]),
+  onClick: PropTypes.func,
+};
+CardSection.defaultProps = {
+  children: null,
+  className: null,
+  id: null,
+  padding: null,
+  type: null,
+  onClick: null,
+}
+
 function Card({
   body,
   borderless,
@@ -289,10 +271,10 @@ function Card({
   description,
   icon,
   id,
+  inverse,
   label,
   media,
   mediaDesc,
-  mediaHeader,
   more,
   onClick,
   padding,
@@ -300,22 +282,11 @@ function Card({
   title,
   type,
 }) {
-  let cardType;
-  switch (type) {
-    case "info":
-      cardType = "info";
-      break;
-    case "success":
-      cardType = "success";
-      break;
-    case "warning":
-      cardType = "warning";
-      break;
-    case "alert":
-      cardType = "alert";
-      break;
-    default:
-      break;
+  let cardBackground;
+  let cardColor;
+  if (inverse) {
+    cardColor = "inverse";
+    cardBackground = "inverse";
   }
 
   let cardPadding;
@@ -351,19 +322,19 @@ function Card({
   let headerSection;
   if (more) {
     headerSection = (
-      <ExpandingSection
-        header={mediaHeader ? false : true}
-        title={title}
-        description={description}
-        label={label}
-        icon={icon}
-        more={more}
-        type={type}
-      />
+      <CardSection type={type}>
+        <ExpandingSection
+          title={title}
+          description={description}
+          label={label}
+          icon={icon}
+          more={more}
+        />
+      </CardSection>
     )
   } else {
     headerSection = (
-      <CardSection header={mediaHeader ? false : true} type={type} onClick={onClick}>
+      <CardSection type={type} onClick={onClick}>
         <Bar
           contentAlign="center"
           leftWidth="max-content"
@@ -434,17 +405,18 @@ function Card({
   return (
     <CardWrapper
       borderless={borderless}
+      cardBackground={cardBackground}
+      cardColor={cardColor}
       cardPadding={cardPadding}
       cardShadow={cardShadow}
-      cardType={cardType}
       className={className}
       id={id}
+      inverse={inverse}
       tyoe={type}
       raised={raised}
     >
-      {title || description || label || icon ? headerSection : null}
       {media ? (
-        <Media header={mediaHeader} onClick={onClick}>
+        <Media onClick={onClick}>
           <Image
             src={media}
             alt={mediaDesc || `${"Card Media:" + " "}${media}`}
@@ -452,45 +424,15 @@ function Card({
           />
         </Media>
       ) : null}
+      {title || description || label || icon ? headerSection : null}
       {body ? (
         <CardSection onClick={onClick}>
           <Body text={body} />
         </CardSection>
       ) : null}
       {children}
-      {commandElements ? <CardSection>{commandElements}</CardSection> : null}
+      {commandElements ? <CardSection footer>{commandElements}</CardSection> : null}
     </CardWrapper>
-  );
-}
-
-function CardList({ children, className, columns, data, gap, id, rows }) {
-  return (
-    <CardListWrapper
-      className={className}
-      columns={columns}
-      gap={gap}
-      id={id}
-      rows={rows}
-    >
-      {children ||
-        data.map((item) => {
-          return (
-            <Card
-              key={item.id}
-              id={item.id}
-              type={item.type}
-              media={item.media}
-              mediaHeader={item.mediaHeader}
-              label={item.label}
-              icon={item.icon}
-              title={item.title}
-              description={item.description}
-              body={item.body}
-              commands={item.commands}
-            />
-          );
-        })}
-    </CardListWrapper>
   );
 }
 
@@ -508,6 +450,7 @@ Card.propTypes = {
   description: PropTypes.string,
   icon: PropTypes.string,
   id: PropTypes.string,
+  inverse: PropTypes.bool,
   label: PropTypes.string,
   media: PropTypes.string,
   mediaDesc: PropTypes.string,
@@ -527,6 +470,7 @@ Card.defaultProps = {
   description: null,
   icon: null,
   id: null,
+  inverse: null,
   label: null,
   media: null,
   mediaDesc: null,
@@ -537,32 +481,38 @@ Card.defaultProps = {
   title: null,
 }
 
-CardSection.propTypes = {
-  /** Adds a divider at the top and bottom of section */
-  border: PropTypes.bool,
-  children: PropTypes.node,
-  className: PropTypes.string,
-  /** Adds a divider at the bottom of section */
-  divider: PropTypes.bool,
-  footer: PropTypes.bool,
-  header: PropTypes.bool,
-  id: PropTypes.string,
-  order: PropTypes.string,
-  padding: PropTypes.oneOf(["none", "1x", "2x", "3x", "4x"]),
-  type: PropTypes.oneOf(["info", "success", "warning", "alert"]),
-  onClick: PropTypes.func,
-};
-CardSection.defaultProps = {
-  border: false,
-  children: null,
-  className: null,
-  footer: false,
-  header: false,
-  id: null,
-  order: null,
-  padding: null,
-  type: null,
-  onClick: null,
+function CardList({ children, className, columns, data, gap, id, inverse, rows, }) {
+  return (
+    <CardListWrapper
+      className={className}
+      columns={columns}
+      gap={gap}
+      id={id}
+      rows={rows}
+    >
+      {children ||
+        data.map((item) => {
+          return (
+            <Card
+              body={item.body}
+              commands={item.commands}
+              description={item.description}
+              icon={item.icon}
+              id={item.id}
+              inverse={inverse}
+              key={item.id}
+              label={item.label}
+              media={item.media}
+              more={item.more}
+              mediaDesc={item.mediaDesc}
+              onClick={item.onClick}
+              title={item.title}
+              type={item.type}
+            />
+          );
+        })}
+    </CardListWrapper>
+  );
 }
 
 CardList.propTypes = {

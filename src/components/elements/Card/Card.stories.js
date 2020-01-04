@@ -8,6 +8,9 @@ import React from "react";
 import { Padding } from "helpers/Display";
 import { action } from "@storybook/addon-actions";
 import Image from "atoms/Image";
+import ModernExterior1 from "images/residential/modern exterior 1.jpg";
+import ModernExterior2 from "images/residential/modern exterior 2.jpg";
+import ModernExterior3 from "images/residential/modern exterior 3.jpg";
 import Card, { CardSection, CardList } from "elements/Card";
 import Grid from "layout/Grid";
 import Title, { Description } from "base/Typography";
@@ -17,11 +20,44 @@ import Button from "atoms/Button";
 const data = [
   {
     id: "a",
-    type: "inverse",
+    type: "success",
+    media: ModernExterior1,
+    mediaDesc: "ModernExterior 1",
     icon: "bookmark_solid",
     title: "First Card",
     description: "Card Description Goes Here",
     body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    commands: [
+      {
+        id: "Command One",
+        label: "Command One",
+      },
+    ],
+    more:
+      <MediaBlock
+        media={
+          <Image
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+            alt="This is alt text for this image"
+          />
+        }
+        body={
+          <>
+            <Title text="Media Block" />
+            <Description text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. " />
+          </>
+        }
+      />,
+    onClick: action("First Card Clicked"),
+  },
+  {
+    id: "b",
+    type: "alert",
+    media: ModernExterior2,
+    mediaDesc: "ModernExterior 2",
+    label: "GP",
+    title: "Second Card",
+    body: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     commands: [
       {
         id: "Command One",
@@ -32,25 +68,13 @@ const data = [
         label: "Command Two",
       },
     ],
-  },
-  {
-    id: "b",
-    // type: "inverse",
-    label: "GP",
-    title: "Second Card",
-    // body: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    media: "https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg",
-    // mediaHeader: true,
-    // commands: [
-    //   {
-    //     id: "Command One",
-    //     label: "Command One",
-    //   }
-    // ],
+    onClick: action("Second Card Clicked"),
   },
   {
     id: "c",
-    // type: "inverse",
+    type: "info",
+    media: ModernExterior3,
+    mediaDesc: "ModernExterior 3",
     icon: "home",
     title: "Third Card",
     description: "Nothing To See Here",
@@ -82,6 +106,8 @@ const data = [
         name: "Command FiveCommand Five CommandFiveCommand Five",
       },
     ],
+    more: <Button label="Button" type="solid" />,
+    onClick: action("Third Card Clicked"),
   },
 ];
 
@@ -91,8 +117,8 @@ storiesOf("Work|Card/Elements", module)
   .add("WIP", () => {
     return (
       <Card
-        type="success"
-        mediaHeader
+        // inverse
+        type="info"
         media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
         mediaDesc="Media Description"
         title="Card Title"
@@ -132,23 +158,8 @@ storiesOf("Work|Card/Elements", module)
           },
         ]}
         onClick={action("Primary Action Area Clicked")}
-        // more={<Button label="Button" type="solid" />}
-        more={
-          <MediaBlock
-            media={
-              <Image
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-                alt="This is alt text for this image"
-              />
-            }
-            body={
-              <>
-                <Title text="Media Block" />
-                <Description text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. " />
-              </>
-            }
-          />
-        }
+        more={<Button label="Button" type="solid" color="secondary" fullWidth />}
+
       >
         {/* <CardSection onClick={action("Secondary Action Area Clicked")}>
           <Button label="Button" type="solid" />
@@ -171,7 +182,7 @@ storiesOf("Work|Card/Elements", module)
   })
   .add("Card List (data)", () => {
     return (
-      <CardList columns="" data={data} />
+      <CardList columns="" data={data} inverse2 />
     );
   })
   .add("Card List", () => {
@@ -186,19 +197,3 @@ storiesOf("Work|Card/Elements", module)
       </CardList>
     );
   });
-
-// // Da Card
-// storiesOf("Layout|Card", module)
-//   .addDecorator(Padding)
-//   .addDecorator(checkA11y)
-//   .add("Card- 'playing with children'", () => {
-//     return (
-//       <Card>
-//         <Button label="Button" />
-//         <Button label="Button" />
-//         <Button label="Button" />
-//       </Card>
-//     );
-//   });
-
-// Card List

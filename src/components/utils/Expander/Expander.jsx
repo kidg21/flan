@@ -2,17 +2,20 @@
 import React, { Fragment, useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Card, { CardSection, CardList } from "elements/Card";
 
-const AccordionSection = styled.div`
-  /* padding: 0.5rem 1rem; */
-  /* padding-bottom: 0.5em; */
+const HeaderWrapper = styled.div`
   cursor: pointer;
 `;
 
 const ChildrenWrapper = styled.div`
-  padding: ${(props) => {
-    return props.open ? "0.5em 1em" : "0 1em";
+  margin-top: ${(props) => {
+    return props.open ? "0.5em" : "0";
+  }};
+  padding-top: ${(props) => {
+    return props.open ? "0.5em" : "0";
+  }};
+  padding-bottom: ${(props) => {
+    return props.open ? "0.25em" : "0";
   }};
   max-height: ${(props) => {
     return props.open ? "100%" : "0";
@@ -21,22 +24,17 @@ const ChildrenWrapper = styled.div`
     return props.open ? "100%" : "0";
   }};
   transition: all 0.25s ease-in-out;
-  /* box-shadow: ${(props) => {
-    return props.theme.shadows.innerShadow;
-  }}; */
 `;
 
 const AccordionFunction = ({
-  id, header, children, open, onClick, type, ...props
+  id, header, children, open, onClick,
 }) => {
   return (
     <Fragment>
-      <CardSection id={id} type={type} onClick={onClick} {...props}>
+      <HeaderWrapper id={id} onClick={onClick}>
         {header}
-      </CardSection>
-      <CardSection padding="none">
-        <ChildrenWrapper open={open}>{children}</ChildrenWrapper>
-      </CardSection>
+      </HeaderWrapper>
+      <ChildrenWrapper open={open}>{children}</ChildrenWrapper>
     </Fragment>
   );
 };
