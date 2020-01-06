@@ -505,7 +505,7 @@ storiesOf("Blocks|List", module)
 
   .add("Icon", () => {
     return (
-      <List interactive divider title="wow">
+      <List interactive>
         <ListItem
           label="List Item"
           description="This is the description"
