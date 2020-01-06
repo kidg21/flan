@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { List, AutoSizer, CellMeasurer, CellMeasurerCache, InfiniteLoader } from "react-virtualized";
 import styled from "styled-components";
 
+/* eslint-disable security/detect-object-injection */
 const ListWrapper = styled.div`
   width: 100%;
   height: 100%;
