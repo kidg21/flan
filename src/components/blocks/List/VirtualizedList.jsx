@@ -3,6 +3,11 @@ import PropTypes from "prop-types";
 import { List, AutoSizer, CellMeasurer, CellMeasurerCache, InfiniteLoader } from "react-virtualized";
 import styled from "styled-components";
 
+const ListWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+`;
+
 const RowWrapper = styled.div`
   padding: 5px;
   color: ${(props) => { return props.theme.text.primary; }};
@@ -36,23 +41,41 @@ class VirtualizedList extends Component {
       });
     }
     this._rowRenderer = this._rowRenderer.bind(this);
+    this._loadMissingRowsInView = this._loadMissingRowsInView.bind(this);
+    this._setRefList = this._setRefList.bind(this);
+    this._loadMoreRows = this._loadMoreRows.bind(this);
   }
 
   componentDidUpdate(prevProps) {
-    // const currRows = this.props.rows;
-    // const prevRows = prevProps.rows;
+    const currRows = this.props.rows;
+    const prevRows = prevProps.rows;
     if (this.props.id !== prevProps.id) {
       // need to force update of entire MultiGrid when active list changes
       // otherwise rows don't update due to possible cachcing issues
+      if (this.cache) {
+        this.cache.clearAll();
+        if (this._list) this._list.recomputeRowHeights();
+      }
+      this._loadMissingRowsInView(currRows);
       this.forceUpdate();
+    } else if (prevRows.length !== currRows.length) {
+      this._loadMissingRowsInView(currRows);
+    }
+  }
+
+  _loadMissingRowsInView(currRows) {
+    for (let i = this.rowVisibleStartIndex;
+      i <= this.rowVisibleStopIndex && i < currRows.length; i++) {
+      if (!currRows[i]) {
+        this._loadMoreRows({ startIndex: i });
+        break;
+      }
     }
   }
 
   _rowRenderer({
     key,
     index,
-    isScrolling,
-    isVisible,
     parent,
     style,
   }) {
@@ -108,10 +131,32 @@ class VirtualizedList extends Component {
     ) : content;
   }
 
+  _setRefList(ref) {
+    this._list = ref;
+    this._registerChild(ref);
+  }
+
+  _loadMoreRows({ startIndex }) {
+    if (this.props.loadRows) {
+      return this.props.loadRows({ startIndex }).then((e) => {
+        if (e) {
+          if (typeof e.endIndex === "number") {
+            const _startIndex = typeof e.startIndex === "number" ? e.startIndex : startIndex;
+            for (let i = _startIndex; i <= e.endIndex && i < this.props.rows.length; i++) {
+              this.cache.clear(i); // dynamic row height
+              if (this._list) this._list.recomputeRowHeights(i);
+            }
+          }
+        }
+      });
+    }
+    return Promise.resolve();
+  }
+
   render() {
     const {
-      id, rows, loadMoreRows, width,
-      height, rowHeight, highlightedCell, selectedCell,
+      id, rows, highlightedCell, selectedCell,
+      width, height, rowHeight,
       focusedRow, scrollToAlignment, scrollTop, scrollTopChanged,
     } = this.props;
     const _rowHeight = this.cache ? this.cache.rowHeight : rowHeight;
@@ -122,38 +167,44 @@ class VirtualizedList extends Component {
         isRowLoaded={({ index }) => {
           return !!rows[index];
         }}
-        loadMoreRows={({ startIndex }) => {
-          if (loadMoreRows) loadMoreRows({ startIndex });
-        }}
+        loadMoreRows={this._loadMoreRows}
         rowCount={rows.length}
         threshold={0}
       >
         {({ onRowsRendered, registerChild }) => {
+          this._registerChild = registerChild;
           return (
-            <AutoSizer>
-              {(autoSizer) => {
-                return (
-                  <List
-                    id={id}
-                    width={width || autoSizer.width}
-                    height={height || autoSizer.height}
-                    rowCount={rows.length}
-                    rowHeight={_rowHeight}
-                    rowRenderer={this._rowRenderer}
-                    highlightedCell={highlightedCell}
-                    selectedCell={selectedCell}
-                    scrollToIndex={scrollToRow} // takes precedence over scrollTop
-                    scrollTop={scrollTop}
-                    scrollToAlignment={scrollToAlignment}
-                    onScroll={(params) => {
-                      if (scrollTopChanged) scrollTopChanged(params.scrollTop);
-                    }}
-                    onRowsRendered={onRowsRendered}
-                    ref={registerChild}
-                  />
-                );
-              }}
-            </AutoSizer>
+            <ListWrapper>
+              <AutoSizer>
+                {(autoSizer) => {
+                  return (
+                    <List
+                      id={id}
+                      width={width || autoSizer.width}
+                      height={height || autoSizer.height}
+                      rowCount={rows.length}
+                      rowHeight={_rowHeight}
+                      rowRenderer={this._rowRenderer}
+                      highlightedCell={highlightedCell}
+                      selectedCell={selectedCell}
+                      scrollToIndex={scrollToRow} // takes precedence over scrollTop
+                      scrollTop={scrollTop}
+                      scrollToAlignment={scrollToAlignment}
+                      onScroll={(params) => {
+                        if (scrollTopChanged) scrollTopChanged(params.scrollTop);
+                      }}
+                      onRowsRendered={(e) => {
+                        this.rowVisibleStartIndex = e.startIndex;
+                        this.rowVisibleStopIndex = e.stopIndex;
+                        onRowsRendered(e);
+                      }}
+                      ref={this._setRefList}
+                      deferredMeasurementCache={this.cache}
+                    />
+                  );
+                }}
+              </AutoSizer>
+            </ListWrapper>
           );
         }}
       </InfiniteLoader>
@@ -171,11 +222,13 @@ VirtualizedList.defaultProps = {
   onCellClick: null,
   onCellMouseOut: null,
   onCellMouseOver: null,
+  onCellMouseLeave: null,
+  onCellMouseEnter: null,
   focusedRow: null,
   scrollToAlignment: "auto",
   scrollTop: null,
   scrollTopChanged: null,
-  loadMoreRows: null,
+  loadRows: null,
 };
 
 VirtualizedList.propTypes = {
@@ -197,10 +250,12 @@ VirtualizedList.propTypes = {
   onCellClick: PropTypes.func,
   onCellMouseOut: PropTypes.func,
   onCellMouseOver: PropTypes.func,
+  onCellMouseLeave: PropTypes.func,
+  onCellMouseEnter: PropTypes.func,
   focusedRow: PropTypes.number,
   scrollToAlignment: PropTypes.string,
   scrollTop: PropTypes.number,
   scrollTopChanged: PropTypes.func,
-  loadMoreRows:  PropTypes.func,
+  loadRows: PropTypes.func,
 };
 export default VirtualizedList;
