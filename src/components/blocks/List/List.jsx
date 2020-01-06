@@ -9,6 +9,7 @@ import { Darken } from "Variables";
 import Bar from "blocks/Bar";
 import Icon from "atoms/Icon";
 import Avatar from "atoms/Avatar";
+import Grid from "layout/Grid";
 import Checkbox from "atoms/Checkbox";
 import Switch from "atoms/Switch";
 import Title, { Description } from "base/Typography";
@@ -89,12 +90,12 @@ function ListItem({
   onClick,
 }) {
   const mainContent = (
-    <React.Fragment>
+    <Grid columns="1" gap="none">
       <Title text={label} disabled={disabled} />
       {description ? (
         <Description text={description} disabled={disabled} />
       ) : null}
-    </React.Fragment>
+    </Grid>
   );
 
   return (
@@ -113,19 +114,14 @@ function ListItem({
       <DisabledContext.Provider value={disabled}>
         {avatar || icon ? (
           <Bar
-            leftWidth="6%"
             contentAlign="center"
-            centerAlign="left"
             disabled={disabled}
             left={
               <React.Fragment>
-                {avatar ? <Avatar label={avatar} disabled={disabled} /> : null}
-                {icon ? (
-                  <Icon icon={icon} size="lg" disabled={disabled} />
-                ) : null}
+                {avatar ? (<Grid columns="2" gap="none" ><Avatar label={avatar} disabled={disabled} /> {mainContent}</Grid> ): null}
+                {icon ? (<div> <Icon icon={icon} size="lg" disabled={disabled} /> {mainContent}</div>) : null}
               </React.Fragment>
             }
-            center={mainContent}
             right={
               <React.Fragment>
                 {checkbox ? (
@@ -137,7 +133,7 @@ function ListItem({
             }
           />
         ) : (
-          <Bar
+            <Bar
               contentAlign="center"
               centerAlign="left"
               disabled={disabled}

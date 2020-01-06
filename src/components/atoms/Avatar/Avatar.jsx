@@ -17,8 +17,8 @@ const TagContainer = styled.div`
   justify-content: center;
   vertical-align: center;
   display: flex;
-  width: 2.7rem;
-  height: 2.7rem;
+  width: 33px;
+  height: 33px;
   align-items: center;
   background-color: ${(props) => {
     return props.theme.palette[props.backgroundColor] || "";
@@ -31,7 +31,7 @@ const TagContainer = styled.div`
 `;
 
 function Avatar({
- color, disabled, icon, id, label 
+  color, disabled, icon, id, label,
 }) {
   let labelType;
   let iconType;
