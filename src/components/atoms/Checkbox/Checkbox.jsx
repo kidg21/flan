@@ -3,6 +3,7 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
+import Text, { Title } from "base/Typography";
 import Label from "atoms/Label";
 import Grid from "layout/Grid";
 
@@ -189,14 +190,13 @@ function CheckboxGroup({
       align={align}
       disabled={isDisabled}
       columns="1"
-      gap="small"
       inputTextColor={inputTextColor}
       id={id}
     >
       {label ? (
-        <Label weight="bold" isRequired={isRequired} text={label} />
+        <Text isRequired={isRequired} text={label} />
       ) : null}
-      {helpText ? <Label size="sm" text={helpText} /> : null}
+      {helpText ? <Text size="caption" text={helpText} /> : null}
       <InputGroup columns={columns}>
         {children ||
           data.map((item) => {
@@ -218,7 +218,7 @@ function CheckboxGroup({
             );
           })}
       </InputGroup>
-      {errorText ? <Label size="sm" text={errorText} /> : null}
+      {errorText ? <Text size="caption" text={errorText} /> : null}
     </CheckboxWrapper>
   );
 }

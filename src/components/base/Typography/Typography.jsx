@@ -100,7 +100,7 @@ function Title({ text, size }) {
       content = <H6>{text}</H6>;
       break;
     default:
-      content = <H4>{text}</H4>;
+      content = <H6>{text}</H6>;
       break;
   }
   return (

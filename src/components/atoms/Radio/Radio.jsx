@@ -3,6 +3,7 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
+import Text, { Title } from "base/Typography";
 import Label from "atoms/Label";
 import Grid from "layout/Grid";
 
@@ -187,14 +188,13 @@ function RadioGroup({
     <RadioWrapper
       disabled={isDisabled}
       columns="1"
-      gap="small"
       inputTextColor={inputTextColor}
       id={id}
     >
       {label ? (
-        <Label isRequired={isRequired} weight="bold" text={label} />
+        <Text isRequired={isRequired} text={label} />
       ) : null}
-      {helpText ? <Label text={helpText} size="sm" /> : null}
+      {helpText ? <Text size="caption" text={helpText} /> : null}
       <InputGroup columns={columns}>
         {children ||
           data.map((item) => {
@@ -214,7 +214,7 @@ function RadioGroup({
             );
           })}
       </InputGroup>
-      {errorText ? <Label size="sm" text={errorText} /> : null}
+      {errorText ? <Text size="caption" text={errorText} /> : null}
     </RadioWrapper>
   );
 }
