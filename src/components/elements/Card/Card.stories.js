@@ -21,8 +21,8 @@ const data = [
   {
     id: "a",
     type: "success",
-    media: ModernExterior1,
-    mediaDesc: "ModernExterior 1",
+    image: ModernExterior1,
+    imageDesc: "ModernExterior 1",
     icon: "bookmark_solid",
     title: "First Card",
     description: "Card Description Goes Here",
@@ -35,7 +35,7 @@ const data = [
     ],
     more:
       <MediaBlock
-        media={
+        image={
           <Image
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
             alt="This is alt text for this image"
@@ -53,8 +53,8 @@ const data = [
   {
     id: "b",
     type: "alert",
-    media: ModernExterior2,
-    mediaDesc: "ModernExterior 2",
+    image: ModernExterior2,
+    imageDesc: "ModernExterior 2",
     label: "GP",
     title: "Second Card",
     body: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
@@ -73,8 +73,8 @@ const data = [
   {
     id: "c",
     type: "info",
-    media: ModernExterior3,
-    mediaDesc: "ModernExterior 3",
+    image: ModernExterior3,
+    imageDesc: "ModernExterior 3",
     icon: "home",
     title: "Third Card",
     description: "Nothing To See Here",
@@ -119,8 +119,8 @@ storiesOf("Work|Card/Elements", module)
       <Card
         // inverse
         type="info"
-        media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
-        mediaDesc="Media Description"
+        image="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
+        imageDesc="Media Description"
         title="Card Title"
         description="Card Description"
         icon="bookmark_solid"

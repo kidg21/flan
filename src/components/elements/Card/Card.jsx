@@ -48,13 +48,18 @@ const CardSectionWrapper = styled.section`
 `;
 
 const Media = styled(CardSectionWrapper)`
+  height: 12em;
   padding: 0;
-  max-height: 12em;
-  justify-content: center;
   overflow: hidden;
   + ${CardSectionWrapper} {
     margin-top: 1px;
   }
+`;
+
+const CardImage = styled(Image)`
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 `;
 
 const CardWrapper = styled.div`
@@ -273,8 +278,8 @@ function Card({
   id,
   inverse,
   label,
-  media,
-  mediaDesc,
+  image,
+  imageDesc,
   more,
   onClick,
   padding,
@@ -415,11 +420,11 @@ function Card({
       tyoe={type}
       raised={raised}
     >
-      {media ? (
+      {image ? (
         <Media onClick={onClick}>
-          <Image
-            src={media}
-            alt={mediaDesc || `${"Card Media:" + " "}${media}`}
+          <CardImage
+            src={image}
+            alt={imageDesc || `${"Card Media:" + " "}${image}`}
             width="100%"
           />
         </Media>
@@ -452,8 +457,8 @@ Card.propTypes = {
   id: PropTypes.string,
   inverse: PropTypes.bool,
   label: PropTypes.string,
-  media: PropTypes.string,
-  mediaDesc: PropTypes.string,
+  image: PropTypes.string,
+  imageDesc: PropTypes.string,
   mediaHeader: PropTypes.bool,
   more: PropTypes.node,
   onClick: PropTypes.func,
@@ -472,8 +477,8 @@ Card.defaultProps = {
   id: null,
   inverse: null,
   label: null,
-  media: null,
-  mediaDesc: null,
+  image: null,
+  imageDesc: null,
   mediaHeader: null,
   more: null,
   padding: null,
@@ -502,9 +507,9 @@ function CardList({ children, className, columns, data, gap, id, inverse, rows, 
               inverse={inverse}
               key={item.id}
               label={item.label}
-              media={item.media}
+              image={item.image}
               more={item.more}
-              mediaDesc={item.mediaDesc}
+              imageDesc={item.imageDesc}
               onClick={item.onClick}
               title={item.title}
               type={item.type}
