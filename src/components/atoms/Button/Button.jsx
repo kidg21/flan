@@ -107,7 +107,6 @@ grid-template-areas: ${(props) => {
 `;
 
 
-
 const ButtonIcon = styled(Icon)`
 grid-area: icon;
 margin-right: 0.5em;
@@ -115,8 +114,7 @@ margin-right: 0.5em;
 
 const ButtonTag = styled(Tag)`
 grid-area: icon;
-display: inline-block;
-padding: 5px;
+margin-left: 0.5em;
 `;
 
 /**
