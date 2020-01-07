@@ -22,7 +22,7 @@ const data = [
     id: "a",
     type: "success",
     image: ModernExterior1,
-    imageDesc: "ModernExterior 1",
+    imageAlt: "ModernExterior 1",
     // audio: "https://www.w3schools.com/html/horse.mp3",
     // video: "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
     icon: "bookmark_solid",
@@ -56,7 +56,7 @@ const data = [
     id: "b",
     type: "alert",
     image: ModernExterior2,
-    imageDesc: "ModernExterior 2",
+    imageAlt: "ModernExterior 2",
     // youtube: "https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0",
     label: "GP",
     title: "Second Card",
@@ -77,7 +77,7 @@ const data = [
     id: "c",
     type: "info",
     image: ModernExterior3,
-    imageDesc: "ModernExterior 3",
+    imageAlt: "ModernExterior 3",
     // vimeo: "https://player.vimeo.com/video/798022",
     icon: "home",
     title: "Third Card",
@@ -118,13 +118,142 @@ const data = [
 storiesOf("Work|Card/Elements", module)
   .addDecorator(Padding)
   .addDecorator(checkA11y)
+  .addDecorator(withKnobs)
+  .add("Knobs", () => {
+    return (
+      <Card
+        type={select(
+          "type",
+          {
+            standard: null,
+            info: "info",
+            success: "success",
+            warning: "warning",
+            alert: "alert",
+          },
+          null,
+          "Settings",
+        )}
+        image={
+          boolean("image", false, "Options") &&
+          text("image path", "https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg", "Settings")
+        }
+        imageAlt={
+          boolean("imageAlt", false, "Options") &&
+          text("image alt text", "Image Alt Text", "Settings")
+        }
+        audio={
+          boolean("audio", false, "Options") &&
+          text("audio path", "https://www.w3schools.com/html/horse.mp3", "Settings")
+        }
+        icon={
+          boolean("icon", false, "Options") &&
+          select(
+            "icon select",
+            {
+              user: "user",
+              down: "down",
+              bookmark: "bookmark_solid",
+              plus: "plus",
+              print: "print",
+            },
+            "user",
+            "Settings",
+          )
+        }
+        label={
+          boolean("label", true, "Options") &&
+          text("label text", "GP", "Settings")
+        }
+        title={
+          boolean("title", true, "Options") &&
+          text("title text", "Card Title", "Settings")
+        }
+        description={
+          boolean("description", false, "Options") &&
+          text(
+            "description text",
+            "Card Description",
+            "Settings",
+          )
+        }
+        body={
+          boolean("body", false, "Options") &&
+          text(
+            "body text",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "Settings",
+          )
+        }
+        commands={
+          boolean("commands", false, "Options") &&
+          object(
+            "commands list",
+            [
+              {
+                id: "Command One",
+                label: "Command One",
+                name: "Command One",
+                onClick: action("Command One Clicked"),
+              },
+              {
+                id: "Command Two",
+                label: "Command Two",
+                name: "Command Two",
+                onClick: action("Command Two Clicked"),
+              },
+              {
+                id: "Command Three",
+                label: "Command Three",
+                name: "Command Three",
+                onClick: action("Command Three Clicked"),
+              },
+              {
+                id: "Command Four",
+                label: "Command Four",
+                name: "Command Four",
+                onClick: action("Command Four Clicked"),
+              },
+              {
+                id: "Command Five",
+                label: "Command Five",
+                name: "Command FiveCommand Five CommandFiveCommand Five",
+                onClick: action("Command Five Clicked"),
+              },
+            ],
+            "Settings",
+          )
+        }
+        more={
+          boolean("more", false, "Options") &&
+          object(
+            "extra content",
+            <Button label="Button" type="solid" color="secondary" fullWidth />,
+            "Settings",
+          )
+        }
+        onClick={
+          boolean("onClick", false, "Options")
+        }
+        inverse={
+          boolean("inverse", false, "Options")
+        }
+        ghost={
+          boolean("ghost", false, "Options")
+        }
+        raised={
+          boolean("raised", false, "Options")
+        }
+      />
+    );
+  })
   .add("WIP", () => {
     return (
       <Card
         // inverse
         // type="info"
         image="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
-        imageDesc="Media Description"
+        imageAlt="Image Alt Text"
         audio="https://www.w3schools.com/html/horse.mp3"
         video="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
         youtube="https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0"
@@ -183,7 +312,7 @@ storiesOf("Work|Card/Elements", module)
   .add("Elevations", () => {
     return (
       <Grid gap="large">
-        <Card description="Borderless" borderless />
+        <Card description="Ghost" ghost />
         <Card description="Standard" />
         <Card description="Raised" raised />
       </Grid>

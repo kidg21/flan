@@ -51,7 +51,6 @@ const Media = styled(CardSectionWrapper)`
   height: ${(props) => {
     return props.image ? "12em" : "";
   }};
-  /* height: 12em; */
   padding: 0;
   overflow: hidden;
   + ${CardSectionWrapper} {
@@ -76,6 +75,9 @@ const CardWrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
+  border-bottom: ${(props) => {
+    return props.ghost ? `1px solid ${props.theme.divider}` : "";
+  }};
   border-radius: 5px;
   flex: none;
   background-color: ${(props) => {
@@ -280,15 +282,15 @@ CardSection.defaultProps = {
 function Card({
   audio,
   body,
-  borderless,
   children,
   className,
   commands,
   description,
+  ghost,
   icon,
   id,
   image,
-  imageDesc,
+  imageAlt,
   inverse,
   label,
   more,
@@ -332,7 +334,7 @@ function Card({
   let cardShadow;
   if (raised) {
     cardShadow = "shadow1";
-  } else if (borderless) {
+  } else if (ghost) {
     cardShadow = null;
   } else {
     cardShadow = "shadow0";
@@ -378,7 +380,7 @@ function Card({
       <Media image>
         <CardImage
           src={image}
-          alt={imageDesc || `${"Card Media:" + " "}${image}`}
+          alt={imageAlt || `${"Card Media:" + " "}${image}`}
           width="100%"
         />
       </Media>
@@ -482,12 +484,12 @@ function Card({
 
   return (
     <CardWrapper
-      borderless={borderless}
       cardBackground={cardBackground}
       cardColor={cardColor}
       cardPadding={cardPadding}
       cardShadow={cardShadow}
       className={className}
+      ghost={ghost}
       id={id}
       inverse={inverse}
       raised={raised}
@@ -509,7 +511,6 @@ function Card({
 Card.propTypes = {
   audio: PropTypes.string,
   body: PropTypes.string,
-  borderless: PropTypes.bool,
   children: PropTypes.node,
   className: PropTypes.string,
   commands: PropTypes.arrayOf(PropTypes.shape({
@@ -519,12 +520,13 @@ Card.propTypes = {
     onClick: PropTypes.func,
   })),
   description: PropTypes.string,
+  ghost: PropTypes.bool,
   icon: PropTypes.string,
   id: PropTypes.string,
   inverse: PropTypes.bool,
   label: PropTypes.string,
   image: PropTypes.string,
-  imageDesc: PropTypes.string,
+  imageAlt: PropTypes.string,
   mediaHeader: PropTypes.bool,
   more: PropTypes.node,
   onClick: PropTypes.func,
@@ -538,17 +540,17 @@ Card.propTypes = {
 Card.defaultProps = {
   audio: null,
   body: null,
-  borderless: false,
   children: null,
   className: null,
   commands: null,
   description: null,
+  ghost: false,
   icon: null,
   id: null,
   inverse: null,
   label: null,
   image: null,
-  imageDesc: null,
+  imageAlt: null,
   mediaHeader: null,
   more: null,
   padding: null,
@@ -583,7 +585,7 @@ function CardList({ children, className, columns, data, gap, id, inverse, rows, 
               label={item.label}
               image={item.image}
               more={item.more}
-              imageDesc={item.imageDesc}
+              imageAlt={item.imageAlt}
               onClick={item.onClick}
               title={item.title}
               type={item.type}

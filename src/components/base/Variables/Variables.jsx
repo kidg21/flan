@@ -236,7 +236,7 @@ export const DMPTheme = {
     warning: colors.orange,
   },
   border: colors.grey40,
-  divider: colors.grey20,
+  divider: colors.shade2,
   text: {
     active: colors.greenDark,
     alert: colors.redBright,
