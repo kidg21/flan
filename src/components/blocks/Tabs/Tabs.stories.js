@@ -32,7 +32,7 @@ storiesOf("Blocks|Tabs", module)
       return (
         <Tabs>
           <Tab tabLabel="Tab" isSelected />
-          <Tab tabLabel="Tab" />
+          <Tab tabLabel="Tab" count="2" />
           <Tab tabLabel="Tab" />
         </Tabs>
       );

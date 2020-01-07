@@ -8,6 +8,7 @@ import styled from "styled-components";
 import { Lighten, Darken } from "Variables";
 import { DisabledContext } from "States";
 import PropTypes from "prop-types";
+import Tag from "atoms/Tag";
 import Icon from "atoms/Icon";
 import { Skeleton } from "helpers";
 import Label from "atoms/Label";
@@ -16,9 +17,21 @@ import Label from "atoms/Label";
 
 
 const StyledButton = styled.button`
-  display: flex;
+display: ${(props) => {
+    return props.count ? "grid" : "flex";
+  }};
+grid-gap: ${(props) => {
+    return props.count ? "1rem" : "";
+  }};
+grid-template-columns: ${(props) => {
+    return props.count ? "auto" : "";
+  }};
+grid-template-areas: ${(props) => {
+    return props.count ? "'icon name'" : "";
+  }};
   flex: auto;
-  flex-direction: column;
+  z-index: 0;
+  flex-direction: row;
   width: ${(props) => {
     return props.fullWidth ? "100%" : "auto";
   }};
@@ -52,7 +65,6 @@ const StyledButton = styled.button`
   font-weight: ${(props) => {
     return props.fontWeight || "400";
   }};
-  overflow: hidden;
   cursor: pointer;
   border-bottom: ${(props) => {
     return props.borderBottom || "";
@@ -94,8 +106,17 @@ const StyledButton = styled.button`
   }
 `;
 
+
+
 const ButtonIcon = styled(Icon)`
-  margin: 0.25em 0;
+grid-area: icon;
+margin-right: 0.5em;
+`;
+
+const ButtonTag = styled(Tag)`
+grid-area: icon;
+display: inline-block;
+padding: 5px;
 `;
 
 /**
@@ -122,7 +143,9 @@ function Button({
   border,
   className,
   color,
+  count,
   disabled,
+  htmlFor,
   fullWidth,
   icon,
   id,
@@ -244,6 +267,7 @@ function Button({
       backgroundColor={backgroundColor}
       border={borderStyle}
       borderBottom={borderBottom}
+      htmlFor={htmlFor}
       underlineColor={underline}
       disabled={isDisabled}
       borderRadius={borderRadius}
@@ -263,15 +287,15 @@ function Button({
       type={type}
     >
       {icon ? <ButtonIcon icon={icon} size="lg" /> : null}
-      {label ? (
-        <Label letterSpacing="0.075em" weight="semibold" text={label} />
-      ) : null}
+      {label ? <Label letterSpacing="0.075em" weight="semibold" text={label} /> : null}
+      {count ? <ButtonTag label={count} /> : null}
     </StyledButton>
   );
 }
 
 Button.propTypes = {
   border: PropTypes.string,
+  htmlFor: PropTypes.node,
   className: PropTypes.string,
   color: PropTypes.oneOf([
     "success",
@@ -286,6 +310,7 @@ Button.propTypes = {
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   id: PropTypes.string,
   label: PropTypes.string,
+  count: PropTypes.string,
   onClick: PropTypes.func,
   size: PropTypes.oneOf(["small", "large"]),
   underlineColor: PropTypes.string,
@@ -296,10 +321,12 @@ Button.propTypes = {
 Button.defaultProps = {
   border: "1px solid",
   className: null,
+  htmlFor: null,
   color: null,
   disabled: false,
   fullWidth: false,
   icon: null,
+  count: null,
   id: null,
   label: null,
   onClick: null,
