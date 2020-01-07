@@ -1,12 +1,10 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React from "react";
 
 
 import Grid from "layout/Grid";
-import Tag from "./Tag";
+import Tag from "./Tag.jsx";
 
 storiesOf("Atoms|Tag", module)
   .addDecorator(withInfo)

@@ -1,6 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -290,4 +288,4 @@ TextInput.defaultProps = {
   warning: "",
 };
 
-export { TextInput as default };
+export default TextInput;

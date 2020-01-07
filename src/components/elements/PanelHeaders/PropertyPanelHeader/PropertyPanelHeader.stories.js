@@ -1,8 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/no-unused-prop-types */
-/* eslint-disable react/forbid-prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 
@@ -26,7 +22,6 @@ storiesOf("Elements|Panel Headers/", module)
       <PropertyPanelHeader
         title="5201 California Ave, Irvine, CA 92614"
         menuData={data}
-        APN="374-543-4227"
         onClick={() => {}}
       />
     );

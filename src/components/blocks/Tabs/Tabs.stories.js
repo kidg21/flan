@@ -60,12 +60,12 @@ storiesOf("Blocks|Tabs", module)
         align={options(
           "align",
           {
-            "top ( default )": "default",
+            "top ( default )": "top",
             "left ( 1 column / vertical )": "left",
             bottom: "bottom",
             "right ( 1 column / vertical )": "right"
           },
-          "default",
+          "top",
           { display: "radio" },
           "Tab Group"
         )}
@@ -86,6 +86,7 @@ storiesOf("Blocks|Tabs", module)
           )}
           tabLabel={text("Tab 1", "Tab 1", "Tab 1")}
           disabled={boolean("Disable 1", false, "Tab 1")}
+          onClick={() => { alert("Tab 1 clicked!"); }}
         />
         <Tab
           icon={select(
@@ -103,6 +104,7 @@ storiesOf("Blocks|Tabs", module)
           )}
           tabLabel={text("Tab 2", "Tab 2", "Tab 2")}
           disabled={boolean("Disable 2", false, "Tab 2")}
+          onClick={() => { alert("Tab 2 clicked!"); }}
         />
         <Tab
           icon={select(
@@ -120,6 +122,7 @@ storiesOf("Blocks|Tabs", module)
           )}
           tabLabel={text("Tab 3", "Tab 3", "Tab 3")}
           disabled={boolean("Disable 3", false, "Tab 3")}
+          onClick={() => { alert("Tab 3 clicked!"); }}
         />
         <Tab
           icon={select(
@@ -137,6 +140,7 @@ storiesOf("Blocks|Tabs", module)
           )}
           tabLabel={text("Tab 4", "Tab 4", "Tab 4")}
           disabled={boolean("Disable 4", false, "Tab 4")}
+          onClick={() => { alert("Tab 4 clicked!"); }}
         />
         <Tab
           icon={select(
@@ -154,6 +158,7 @@ storiesOf("Blocks|Tabs", module)
           )}
           tabLabel={text("Tab 5", "Tab 5", "Tab 5")}
           disabled={boolean("Disable 5", false, "Tab 5")}
+          onClick={() => { alert("Tab 5 clicked!"); }}
         />
       </Tabs>
     );

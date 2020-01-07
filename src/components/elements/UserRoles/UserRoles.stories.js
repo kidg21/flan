@@ -1,11 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable no-alert */
-/* eslint-disable react/prop-types */
-/* eslint-disable react/no-unused-prop-types */
-/* eslint-disable react/forbid-prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 

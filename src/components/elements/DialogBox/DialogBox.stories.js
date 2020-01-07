@@ -1,6 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 
@@ -199,7 +197,7 @@ storiesOf("Templates|Dialog Box/User Roles", module)
         <Section>
           <Title text="Role: Developer" type="info" />
           <SelectMenu
-            multiSelect="true"
+            multiSelect
             label="+ Add Users"
             options={[
               { value: "1", label: "Adam" },
@@ -238,7 +236,7 @@ storiesOf("Templates|Dialog Box/User Roles", module)
         <Section>
           <TextInput label="Role" placeholder="Builder/Developer" />
           <SelectMenu
-            multiSelect="true"
+            multiSelect
             label="+ Add Folder"
             placeholder="Add Folder for Role to access"
             options={[
@@ -301,7 +299,7 @@ storiesOf("Templates|Dialog Box/User Roles", module)
             placeholder="Type in User email or account name "
           />
           <SelectMenu
-            multiSelect="true"
+            multiSelect
             placeholder="Select one or many roles for this user."
             label="Assign Roles"
             options={[
@@ -328,7 +326,7 @@ storiesOf("Templates|Dialog Box/User Roles", module)
             placeholder="egallagher@digmap.com "
           />
           <SelectMenu
-            multiSelect="true"
+            multiSelect
             placeholder="Admin"
             label="Roles"
             options={[

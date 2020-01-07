@@ -1,8 +1,6 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
-import React, { Fragment, useContext } from "react";
+import React, { useContext } from "react";
+import { DisabledContext } from "States";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import Button from "atoms/Button";
@@ -104,7 +102,7 @@ function Tab({
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
 
   return (
-    <Fragment>
+    <React.Fragment>
       {isSelected ? (
         <TabButton
           id={id}
@@ -134,7 +132,7 @@ function Tab({
             type="plain"
           />
         )}
-    </Fragment>
+    </React.Fragment>
   );
 }
 
@@ -147,9 +145,9 @@ Tabs.propTypes = {
 
 Tab.propTypes = {
   id: PropTypes.string,
-  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  icon: PropTypes.string,
   tabLabel: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
   isSelected: PropTypes.bool,
   count: PropTypes.string,
   disabled: PropTypes.bool,
@@ -175,6 +173,7 @@ Tab.defaultProps = {
   color: null,
   type: null,
   size: null,
+  onClick: null,
 };
 
 export { Tabs as default, Tab };

@@ -1,11 +1,8 @@
 /* eslint-disable complexity */
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
-import { Lighten, Darken } from "Variables";
+import { Lighten } from "Variables";
 import { DisabledContext } from "States";
 import PropTypes from "prop-types";
 import Tag from "atoms/Tag";
@@ -106,6 +103,7 @@ grid-template-areas: ${(props) => {
   }
 `;
 
+StyledButton.displayName = "Button";
 
 const ButtonIcon = styled(Icon)`
 grid-area: icon;
@@ -310,9 +308,7 @@ Button.propTypes = {
   label: PropTypes.string,
   count: PropTypes.string,
   onClick: PropTypes.func,
-  size: PropTypes.oneOf(["small", "large"]),
   underlineColor: PropTypes.string,
-  style: PropTypes.string,
   type: PropTypes.oneOf(["underlined", "inline", "solid"]),
 };
 
@@ -328,10 +324,8 @@ Button.defaultProps = {
   id: null,
   label: null,
   onClick: null,
-  size: null,
-  style: null,
   type: null,
   underlineColor: null,
 };
 
-export { Button as default };
+export default Button;

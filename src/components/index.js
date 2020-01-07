@@ -1,7 +1,5 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 // Publicly exported files from 'base'
 export {
   default as Title,
@@ -43,7 +41,7 @@ export { default as InputBlock } from "./blocks/InputBlock";
 export { default as MediaBlock } from "./blocks/MediaBlock";
 export { default as Menu } from "./blocks/Menu";
 export { default as RangeSlider } from "./blocks/RangeSlider";
-export { DataTable as Table } from "./blocks/Table";
+export { default as Table } from "./blocks/Table";
 export { default as Tabs, Tab } from "./blocks/Tabs";
 
 // Publicly exported files from 'elements'

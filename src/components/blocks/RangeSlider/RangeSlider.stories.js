@@ -1,7 +1,5 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React from "react";
 import { Padding } from "helpers/Display";
 import Form, { Section } from "layout/Form";
@@ -41,10 +39,7 @@ storiesOf("Blocks|Range Slider", module)
         placeholderMax={text("max label", "Max", "Range Slider")}
         isRequired={boolean("required", false, "Range Slider")}
         helpText={text("help text", "Help text goes here...", "Range Slider")}
-        error={
-          boolean("error", false, "Range Slider") &&
-          text("error text", "Error message...", "Range Slider")
-        }
+        error={text("error", null, "Range Slider")}
         disabled={boolean("disabled", false, "Range Slider")}
       />
     );
