@@ -28,6 +28,7 @@ const CheckboxContainer = styled.div`
   color: ${(props) => {
     return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
+  line-height: initial;
   &[disabled],
   &[readonly] {
     cursor: not-allowed;
@@ -57,7 +58,7 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
     background-color: ${(props) => {
     return (
       props.theme.palette[props.fillColorChecked] ||
-        props.theme.palette.secondaryLight
+      props.theme.palette.secondaryLight
     );
   }};
     border-color: ${(props) => {

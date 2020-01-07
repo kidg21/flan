@@ -25,7 +25,6 @@ const RadioContainer = styled.div`
   grid-template-areas: ${(props) => {
     return props.alignInput || "";
   }};
-  width: max-content;
   line-height: initial;
   color: ${(props) => {
     return props.theme.text[props.inputTextColor] || props.theme.text.primary;
@@ -59,7 +58,7 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
     background-color: ${(props) => {
     return (
       props.theme.palette[props.fillColorChecked] ||
-        props.theme.palette.secondaryLight
+      props.theme.palette.secondaryLight
     );
   }};
     border-color: ${(props) => {
