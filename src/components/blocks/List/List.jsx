@@ -1,7 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -118,7 +115,7 @@ function ListItem({
             disabled={disabled}
             left={
               <React.Fragment>
-                {avatar ? (<Grid columns="2" gap="none" ><Avatar label={avatar} disabled={disabled} /> {mainContent}</Grid> ): null}
+                {avatar ? (<Grid columns="2" gap="none" ><Avatar label={avatar} disabled={disabled} /> {mainContent}</Grid>) : null}
                 {icon ? (<div> <Icon icon={icon} size="lg" disabled={disabled} /> {mainContent}</div>) : null}
               </React.Fragment>
             }

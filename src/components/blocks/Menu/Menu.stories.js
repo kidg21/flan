@@ -1,8 +1,5 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable no-console */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React from "react";
 
 import Grid from "layout/Grid";

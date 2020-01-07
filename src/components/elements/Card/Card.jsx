@@ -1,21 +1,14 @@
-/* eslint-disable complexity */
 /* eslint-disable linebreak-style */
-/* eslint-disable react/jsx-closing-bracket-location */
-/* eslint-disable react/jsx-indent-props */
-/* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
 import Bar from "blocks/Bar";
-import Icon from "atoms/Icon";
+// import Icon from "atoms/Icon";
 import Image from "atoms/Image";
-import MediaBlock from "blocks/MediaBlock";
-import Tag from "atoms/Tag";
+// import Tag from "atoms/Tag";
 import Command from "atoms/Command";
 import Card, { CardSection } from "layout/Card";
-import Title, { Headline, SubTitle, Description, Body } from "base/Typography";
+import { Headline, SubTitle, Body } from "base/Typography";
 import ExpandingSection from "./ExpandingSection.jsx";
 
 function CardComponent({
@@ -24,20 +17,16 @@ function CardComponent({
   type,
   icon,
   tag,
-  tagType,
-  media,
+  // tagType,
   image,
-  line1,
-  line2,
   body,
   expands,
   commands,
   description,
 }) {
   let excess;
-  let content;
   let commandElements = null;
-  let rightContent;
+  // let rightContent = null;
 
   // const titleBlock = (
   //   <React.Fragment>
@@ -102,11 +91,11 @@ function CardComponent({
   }
 
   if (icon) {
-    rightContent = <Icon icon={icon} size="lg" />;
+    // rightContent = <Icon icon={icon} size="lg" />;
   }
 
   if (tag) {
-    rightContent = <Tag label={tag} type={tagType} />;
+    // rightContent = <Tag label={tag} type={tagType} />;
   }
 
   // if (media) {
@@ -122,7 +111,7 @@ function CardComponent({
       {image ? (
         <Image
           src={image}
-          alt={`${"Card Image:" + " "}${image}`}
+          alt={`Card Image: ${image}`}
           width="100%"
         />
       ) : null}
@@ -148,14 +137,19 @@ CardComponent.propTypes = {
   title: PropTypes.string,
   type: PropTypes.string,
   icon: PropTypes.string,
+  image: PropTypes.string,
   tag: PropTypes.string,
-  tagType: PropTypes.string,
+  /* tagType: PropTypes.string,
   media: PropTypes.node,
   line1: PropTypes.string,
-  line2: PropTypes.string,
+  line2: PropTypes.string, */
   body: PropTypes.node,
-  expands: PropTypes.node,
-  commands: PropTypes.node,
+  expands: PropTypes.bool,
+  commands: PropTypes.arrayOf(PropTypes.shape({
+    label: PropTypes.string,
+    onClick: PropTypes.func,
+    disabled: PropTypes.bool,
+  })),
   description: PropTypes.string,
 };
 
@@ -164,11 +158,12 @@ CardComponent.defaultProps = {
   title: null,
   type: null,
   icon: null,
+  image: null,
   tag: null,
-  tagType: null,
+  /* tagType: null,
   media: null,
   line1: null,
-  line2: null,
+  line2: null, */
   body: null,
   expands: null,
   commands: null,

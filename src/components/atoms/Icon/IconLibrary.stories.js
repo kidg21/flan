@@ -1,7 +1,5 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React from "react";
 import { IconGrid } from "helpers/Display";
 import { CardList } from "layout/Card";

@@ -1,10 +1,8 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React from "react";
 import { Padding } from "helpers/Display";
-import Legend from "./Legend";
+import Legend from "./Legend.jsx";
 
 const options = [
   { name: "Category 0", value: "Value 0" },

@@ -13,13 +13,18 @@ const centerStyles = {
   height: "100vh"
 };
 const Center = ({ children }) => {
-  return <div style={centerStyles}>{children}</div>;
+  return (<div style={centerStyles}>{children}</div>);
 };
 
 const padding = {
   padding: "2rem"
 };
-const Padding = storyFn => <div style={padding}>{storyFn()}</div>;
+const Padding = (storyFn) => { return (<div style={padding}>{storyFn()}</div>); };
+
+const container = {
+  height: "250px"
+};
+const Container = (storyFn) => { return (<div style={container}>{storyFn()}</div>); };
 
 function IconGrid({ data }) {
   return data.map(item => (
@@ -27,8 +32,8 @@ function IconGrid({ data }) {
       key={item.icon}
       id={item.icon}
       hover={true}
-      // TODO: Add background props to Card
-      // type={item.background}
+    // TODO: Add background props to Card
+    // type={item.background}
     >
       <CardSection>
         <Bar
@@ -66,4 +71,4 @@ function CommandGrid({ data }) {
   ));
 }
 
-export { Center, Padding, IconGrid, CommandGrid };
+export { Center, Padding, Container, IconGrid, CommandGrid };

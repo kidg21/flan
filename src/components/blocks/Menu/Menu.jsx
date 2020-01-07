@@ -1,8 +1,5 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
@@ -13,7 +10,11 @@ import List, { ListItem } from "blocks/List";
 const MenuContainer = styled.div`
   cursor: pointer;
   line-height: 1.5;
-  color: ${(props) => { return props.theme.text.primary; }};
+  color: ${(props) => {
+    return props.theme.text.primary;
+  }};
+  padding: 0.5em;
+  margin: -0.5em;
 `;
 
 const ItemWrapper = styled.li`
@@ -27,7 +28,12 @@ const ItemWrapper = styled.li`
   }
 `;
 
+// const ListWrapper = styled.div`
+// `;
 const ListWrapper = styled.div`
+  list-style: none;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
   width: auto;
   min-width: 10rem;
   background: ${(props) => {
@@ -35,15 +41,26 @@ const ListWrapper = styled.div`
   }};
   overflow-x: hidden;
   overflow-y: auto;
+  background-color: ${(props) => {
+    return props.theme.background.default;
+  }};
 `;
 
 const MenuPopper = styled.div`
   position: absolute;
   z-index: 500;
-  top: ${(props) => { return props.top || ""; }};
-  left: ${(props) => { return props.left || ""; }};
-  right: ${(props) => { return props.right || ""; }};
-  transform: ${(props) => { return props.transform || ""; }};
+  top: ${(props) => {
+    return props.top || "";
+  }};
+  left: ${(props) => {
+    return props.left || "";
+  }};
+  right: ${(props) => {
+    return props.right || "";
+  }};
+  transform: ${(props) => {
+    return props.transform || "";
+  }};
 `;
 
 const MenuBG = styled.div`
@@ -60,7 +77,14 @@ const MenuBG = styled.div`
  * List component that pops out
  */
 function MenuComponent({
-  id, data, onClick, left, top, transform, submenuDirection, right,
+  id,
+  data,
+  onClick,
+  left,
+  top,
+  transform,
+  submenuDirection,
+  right,
 }) {
   const [activeItem, setActiveItem] = useState({});
 
@@ -128,28 +152,28 @@ function MenuComponent({
   );
 }
 
-MenuComponent.defaultProps = {
-  left: "",
-  top: "",
-  right: "",
-  transform: "",
-  submenuDirection: "right",
-  onClick: null,
-};
-
 MenuComponent.propTypes = {
-  id: PropTypes.string.isRequired,
-  onClick: PropTypes.func,
   data: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
     name: PropTypes.string,
     onClickLink: PropTypes.func,
   })).isRequired,
+  id: PropTypes.string.isRequired,
   left: PropTypes.string,
-  top: PropTypes.string,
+  onClick: PropTypes.func,
   right: PropTypes.string,
-  transform: PropTypes.string,
   submenuDirection: PropTypes.string,
+  top: PropTypes.string,
+  transform: PropTypes.string,
+};
+
+MenuComponent.defaultProps = {
+  left: "",
+  onClick: null,
+  right: "",
+  submenuDirection: "right",
+  top: "",
+  transform: "",
 };
 
 /**
@@ -181,7 +205,7 @@ function getCssPosition(position) {
     default:
       break;
   }
-  return ({ transform, submenuDirection });
+  return { transform, submenuDirection };
 }
 
 /**
@@ -220,14 +244,11 @@ function Menu({
 }
 
 Menu.propTypes = {
+  data: PropTypes.oneOfType([PropTypes.array, PropTypes.string]),
+  icon: PropTypes.string,
   id: PropTypes.string,
-  visible: PropTypes.bool,
   onClick: PropTypes.func,
-  data: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.string,
-    name: PropTypes.string,
-    onClickLink: PropTypes.func,
-  })).isRequired,
+  visible: PropTypes.bool,
   position: PropTypes.oneOf([
     "topLeft",
     "topRight",
@@ -237,15 +258,15 @@ Menu.propTypes = {
     "topCenter",
     "default",
   ]),
-  icon: PropTypes.string,
 };
 
 Menu.defaultProps = {
+  data: null,
+  icon: "options",
   id: null,
-  visible: false,
   onClick: null,
   position: "default",
-  icon: "options",
+  visible: false,
 };
 
 export default Menu;
