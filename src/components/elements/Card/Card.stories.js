@@ -23,6 +23,8 @@ const data = [
     type: "success",
     image: ModernExterior1,
     imageDesc: "ModernExterior 1",
+    // audio: "https://www.w3schools.com/html/horse.mp3",
+    // video: "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
     icon: "bookmark_solid",
     title: "First Card",
     description: "Card Description Goes Here",
@@ -55,6 +57,7 @@ const data = [
     type: "alert",
     image: ModernExterior2,
     imageDesc: "ModernExterior 2",
+    // youtube: "https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0",
     label: "GP",
     title: "Second Card",
     body: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
@@ -75,6 +78,7 @@ const data = [
     type: "info",
     image: ModernExterior3,
     imageDesc: "ModernExterior 3",
+    // vimeo: "https://player.vimeo.com/video/798022",
     icon: "home",
     title: "Third Card",
     description: "Nothing To See Here",
@@ -118,11 +122,16 @@ storiesOf("Work|Card/Elements", module)
     return (
       <Card
         // inverse
-        type="info"
+        // type="info"
         image="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
         imageDesc="Media Description"
+        audio="https://www.w3schools.com/html/horse.mp3"
+        video="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+        youtube="https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0"
+        vimeo="https://player.vimeo.com/video/798022"
         title="Card Title"
         description="Card Description"
+        // label="GP"
         icon="bookmark_solid"
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         commands={[
@@ -157,8 +166,8 @@ storiesOf("Work|Card/Elements", module)
             onClick: action("Command Five Clicked"),
           },
         ]}
-        onClick={action("Primary Action Area Clicked")}
         more={<Button label="Button" type="solid" color="secondary" fullWidth />}
+        onClick={action("Primary Action Area Clicked")}
 
       >
         {/* <CardSection onClick={action("Secondary Action Area Clicked")}>

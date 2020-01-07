@@ -48,7 +48,10 @@ const CardSectionWrapper = styled.section`
 `;
 
 const Media = styled(CardSectionWrapper)`
-  height: 12em;
+  height: ${(props) => {
+    return props.image ? "12em" : "";
+  }};
+  /* height: 12em; */
   padding: 0;
   overflow: hidden;
   + ${CardSectionWrapper} {
@@ -60,6 +63,13 @@ const CardImage = styled(Image)`
   object-fit: cover;
   width: 100%;
   height: 100%;
+`;
+
+const CardAudio = styled.audio`
+  width: 100%;
+  &:focus {
+    outline: none;
+  }
 `;
 
 const CardWrapper = styled.div`
@@ -268,6 +278,7 @@ CardSection.defaultProps = {
 }
 
 function Card({
+  audio,
   body,
   borderless,
   children,
@@ -276,16 +287,19 @@ function Card({
   description,
   icon,
   id,
-  inverse,
-  label,
   image,
   imageDesc,
+  inverse,
+  label,
   more,
   onClick,
   padding,
   raised,
   title,
   type,
+  video,
+  vimeo,
+  youtube,
 }) {
   let cardBackground;
   let cardColor;
@@ -358,6 +372,65 @@ function Card({
     )
   }
 
+  let mediaSection;
+  if (image) {
+    mediaSection = (
+      <Media image>
+        <CardImage
+          src={image}
+          alt={imageDesc || `${"Card Media:" + " "}${image}`}
+          width="100%"
+        />
+      </Media>
+    )
+  } else if (audio) {
+    mediaSection = (
+      <CardSection>
+        <CardAudio width="auto" controls>
+          <source
+            src={audio}
+            type="audio/mp3"
+          />
+          <source
+            src={audio}
+            type="audio/ogg"
+          />
+          <source
+            src={audio}
+            type="audio/wav"
+          />
+          Your browser does not support the audio element.
+        </CardAudio>
+      </CardSection>
+    )
+  } else if (video) {
+    mediaSection = (
+      <Media>
+        <video width="100%" controls>
+          <source
+            src={video}
+            type="video/mp4"
+          />
+          <source
+            src={video}
+            type="video/webm"
+          />
+          <source
+            src={video}
+            type="video/ogg"
+          />
+          Your browser does not support the video element.
+        </video>
+      </Media>
+    )
+  } else if (youtube || vimeo) {
+    mediaSection = (
+      <Media>
+        <iframe src={youtube || vimeo} width="100%" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
+      </Media>
+    )
+  }
+
   let commandElements = null;
   if (commands) {
     // Exactly 2 Commands
@@ -417,18 +490,10 @@ function Card({
       className={className}
       id={id}
       inverse={inverse}
-      tyoe={type}
       raised={raised}
+      tyoe={type}
     >
-      {image ? (
-        <Media onClick={onClick}>
-          <CardImage
-            src={image}
-            alt={imageDesc || `${"Card Media:" + " "}${image}`}
-            width="100%"
-          />
-        </Media>
-      ) : null}
+      {image || audio || video || youtube || vimeo ? mediaSection : null}
       {title || description || label || icon ? headerSection : null}
       {body ? (
         <CardSection onClick={onClick}>
@@ -442,6 +507,7 @@ function Card({
 }
 
 Card.propTypes = {
+  audio: PropTypes.string,
   body: PropTypes.string,
   borderless: PropTypes.bool,
   children: PropTypes.node,
@@ -465,8 +531,12 @@ Card.propTypes = {
   padding: PropTypes.oneOf(["none", "1x", "2x", "3x", "4x"]),
   raised: PropTypes.bool,
   title: PropTypes.string,
+  video: PropTypes.string,
+  vimeo: PropTypes.string,
+  youtube: PropTypes.string,
 };
 Card.defaultProps = {
+  audio: null,
   body: null,
   borderless: false,
   children: null,
@@ -484,6 +554,9 @@ Card.defaultProps = {
   padding: null,
   raised: false,
   title: null,
+  video: null,
+  vimeo: null,
+  youtube: null,
 }
 
 function CardList({ children, className, columns, data, gap, id, inverse, rows, }) {
@@ -499,6 +572,7 @@ function CardList({ children, className, columns, data, gap, id, inverse, rows, 
         data.map((item) => {
           return (
             <Card
+              audio={item.audio}
               body={item.body}
               commands={item.commands}
               description={item.description}
@@ -513,6 +587,9 @@ function CardList({ children, className, columns, data, gap, id, inverse, rows, 
               onClick={item.onClick}
               title={item.title}
               type={item.type}
+              video={item.video}
+              vimeo={item.vimeo}
+              youtube={item.youtube}
             />
           );
         })}
