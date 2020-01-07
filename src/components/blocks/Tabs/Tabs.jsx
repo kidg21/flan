@@ -38,12 +38,6 @@ const TabsWrapper = styled.section`
     return props.setColumns || "repeat(auto-fit, minmax(0, 1fr))";
   }};
   flex-direction: column;
-  bottom: ${(props) => {
-    return props.alignBottom || "";
-  }};
-  right: ${(props) => {
-    return props.alignRight ? "0" : "";
-  }};
   width: ${(props) => {
     return props.setWidth || "100%";
   }};
@@ -54,7 +48,7 @@ const TabsWrapper = styled.section`
 `;
 
 function Tabs({
-  id, children, align, style,
+  id, children, style,
 }) {
   let setColumns;
   let border;
@@ -63,20 +57,7 @@ function Tabs({
   let setWidth;
   let setHeight;
   let setOrientation;
-  let alignRight;
-  let alignBottom;
-  switch (align) {
-    case "vertical":
-      setColumns = "none";
-      // setPosition = "absolute";
-      setWidth = "auto";
-      setHeight = "auto";
-      setOrientation = "flex";
-      alignBottom = "0";
-      break;
-    default:
-      break;
-  }
+
   return (
     <TabsWrapper
       id={id}
@@ -87,8 +68,6 @@ function Tabs({
       setWidth={setWidth}
       setHeight={setHeight}
       setOrientation={setOrientation}
-      alignRight={alignRight}
-      alignBottom={alignBottom}
       style={style}
     >
       {children}
@@ -139,7 +118,6 @@ function Tab({
 Tabs.propTypes = {
   id: PropTypes.string,
   children: PropTypes.node.isRequired,
-  align: PropTypes.oneOf(["bottom", "left", "right"]),
   style: PropTypes.string,
 };
 
