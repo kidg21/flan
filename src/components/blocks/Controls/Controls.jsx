@@ -55,7 +55,7 @@ const ControlsWrapper = styled.section`
 `;
 
 function Controls({
-  id, children, columns, style, margin, gap,
+  id, children, columns, style,
 }) {
   let setColumns;
   let border;
@@ -94,7 +94,6 @@ function Controls({
   return (
     <ControlsWrapper
       id={id}
-      gap={gap}
       border={border}
       borderRadius={borderRadius}
       setColumns={setColumns}
@@ -106,7 +105,6 @@ function Controls({
       alignRight={alignRight}
       alignBottom={alignBottom}
       style={style}
-      margin={margin}
       fontColor={fontColor}
     >
       {children}

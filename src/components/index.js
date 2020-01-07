@@ -8,7 +8,7 @@ export {
   SubTitle,
   Description,
   Link,
-  Number,
+  Number
 } from "./base/Typography";
 export { default as GlobalStyles } from "./base/GlobalStyles/GlobalStyles.jsx";
 
@@ -35,6 +35,7 @@ export { default as TextInput } from "./atoms/TextInput";
 export { default as Banner } from "./blocks/Banner";
 export { default as Bar } from "./blocks/Bar";
 export { default as Legend } from "./blocks/Legend";
+export { default as Controls, Control } from "./blocks/Controls";
 export { default as DataRange } from "./blocks/DataRange";
 export { default as List, ListItem } from "./blocks/List";
 export { default as IconBlock } from "./blocks/IconBlock";
@@ -56,7 +57,7 @@ export {
   default as Dialog,
   Alert,
   Confirm,
-  Prompt,
+  Prompt
 } from "./elements/DialogBox";
 
 // Publicly exported files from 'layout'
@@ -76,6 +77,6 @@ export {
   shadows,
   screen,
   DMPTheme,
-  darkTheme,
+  darkTheme
 } from "./base/Variables/Variables.jsx";
 export { ThemeProvider } from "styled-components";
