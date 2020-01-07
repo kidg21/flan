@@ -65,8 +65,11 @@ class VirtualizedList extends Component {
   }
 
   _loadMissingRowsInView(currRows) {
-    for (let i = this.rowVisibleStartIndex;
-      i <= this.rowVisibleStopIndex && i < currRows.length; i++) {
+    for (
+      let i = this.rowVisibleStartIndex;
+      i <= this.rowVisibleStopIndex && i < currRows.length;
+      i++
+    ) {
       if (!currRows[i]) {
         this._loadMoreRows({ startIndex: i });
         break;
@@ -234,7 +237,7 @@ VirtualizedList.defaultProps = {
 
 VirtualizedList.propTypes = {
   id: PropTypes.string.isRequired,
-  rows: PropTypes.arrayOf(PropTypes.shape).isRequired,
+  rows: PropTypes.arrayOf(PropTypes.object).isRequired,
   Template: PropTypes.elementType.isRequired,
   width: PropTypes.number,
   height: PropTypes.number,
