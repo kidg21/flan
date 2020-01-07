@@ -1,7 +1,5 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React from "react";
 import { Padding, IconGrid } from "helpers/Display";
 import Grid from "layout/Grid";
@@ -68,7 +66,10 @@ storiesOf("Atoms|Icon", module)
           "default",
           "Icon",
         )}
-        onClick={boolean("interactive", false, "Icon")}
+        onClick={select("interactive", {
+          false: null,
+          true: function onClick() { },
+        }, null, "Icon")}
         disabled={boolean("disabled", false, "Icon")}
       />
     );

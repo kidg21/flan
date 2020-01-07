@@ -1,7 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable complexity */
 // Import dependencies
 import React from "react";
 import PropTypes from "prop-types";
@@ -50,6 +47,19 @@ const StyledLabel = styled.label`
 
 `;
 
+const sizeHash = {
+  sm: "0.876rem",
+  m: "0.8rem",
+  lg: "1.25rem",
+};
+
+const weightHash = {
+  light: "300",
+  normal: "500",
+  semibold: "600",
+  bold: "bold",
+};
+
 function Label({
   children,
   htmlFor,
@@ -60,39 +70,8 @@ function Label({
   textTransform,
   weight,
 }) {
-  let fontSize;
-  let fontWeight;
-  switch (size && size.toLowerCase()) {
-    case "sm":
-      fontSize = "0.876em";
-      break;
-    case "m":
-      fontSize = "0.8rem";
-      break;
-    case "lg":
-      fontSize = "1.25rem";
-      break;
-    default:
-      fontSize = "1rem";
-      break;
-  }
-  switch (weight && weight.toLowerCase()) {
-    case "light":
-      fontWeight = "300";
-      break;
-    case "normal":
-      fontWeight = "500";
-      break;
-    case "semibold":
-      fontWeight = "600";
-      break;
-    case "bold":
-      fontWeight = "bold";
-      break;
-    default:
-      fontWeight = "500";
-      break;
-  }
+  const fontSize = sizeHash[size && size.toLowerCase()] || "1rem";
+  const fontWeight = weightHash[weight && weight.toLowerCase()] || "500";
   return (
     <StyledLabel
       fontWeight={fontWeight}
@@ -127,4 +106,4 @@ Label.defaultProps = {
   weight: null,
 };
 
-export { Label as default };
+export default Label;

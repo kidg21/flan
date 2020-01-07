@@ -11,7 +11,9 @@
     "testBuild": "webpack --config ./webpackConfigs/testBuild.config.js",
     "build": "webpack",
     "test": "mocha",
-    "testWithCoverage": "nyc mocha | codacy-coverage --token ca0a1dcce45a40e8bd8fe18863b5c017"
+    "test-coverage": "nyc npm run test",
+    "push-coverage": "codacy-coverage --token ca0a1dcce45a40e8bd8fe18863b5c017",
+    "testWithCoverage": "npm run test-coverage | npm run push-coverage"
   },
   "nyc": {
     "extension": [
@@ -87,7 +89,6 @@
     "jsdom": "^15.2.1",
     "lb-react-core": ".",
     "mocha": "^6.2.2",
-    "prettier": "^1.19.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-storybook-addon-chapters": "^3.1.6",

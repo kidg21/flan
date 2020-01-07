@@ -1,6 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -137,7 +135,6 @@ function Checkbox({
     <CheckboxContainer
       alignInput={alignInput}
       disabled={isDisabled}
-      error={error}
       inputTextColor={inputTextColor}
     >
       <CheckboxInput
@@ -179,7 +176,7 @@ function CheckboxGroup({
   if (!isDisabled) {
     if (error) {
       inputTextColor = "alert";
-      errorText = error;
+      if (typeof error === "string") errorText = error;
     } else if (warning) {
       inputTextColor = "warning";
       errorText = warning;
@@ -254,10 +251,10 @@ Checkbox.defaultProps = {
 CheckboxGroup.propTypes = {
   align: PropTypes.oneOf(["default", "right"]),
   children: PropTypes.node,
-  columns: PropTypes.oneOf(["auto (default)", "1", "2", "3", "4", "5", "6"]),
+  columns: PropTypes.oneOf(["1", "2", "3", "4", "5", "6"]),
   data: PropTypes.oneOfType([PropTypes.array, PropTypes.string]),
   disabled: PropTypes.bool,
-  error: PropTypes.string,
+  error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   helpText: PropTypes.string,
   id: PropTypes.string,
   isRequired: PropTypes.bool,

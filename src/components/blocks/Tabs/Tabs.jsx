@@ -1,8 +1,6 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
-import React, { Fragment, useContext } from "react";
+import React, { useContext } from "react";
+import { DisabledContext } from "States";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import Button from "atoms/Button";
@@ -104,7 +102,7 @@ function Tab({
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
 
   return (
-    <Fragment>
+    <React.Fragment>
       {isSelected ? (
         <TabButton
           id={id}
@@ -130,7 +128,7 @@ function Tab({
             type="plain"
           />
         )}
-    </Fragment>
+    </React.Fragment>
   );
 }
 
@@ -139,13 +137,15 @@ Tabs.propTypes = {
   children: PropTypes.node.isRequired,
   align: PropTypes.oneOf(["bottom", "left", "right"]),
   style: PropTypes.string,
+  margin: PropTypes.string,
+  gap: PropTypes.string,
 };
 
 Tab.propTypes = {
   id: PropTypes.string,
-  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  icon: PropTypes.string,
   tabLabel: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
   isSelected: PropTypes.bool,
   disabled: PropTypes.bool,
   color: PropTypes.string,
@@ -157,16 +157,19 @@ Tabs.defaultProps = {
   id: null,
   align: null,
   style: null,
+  margin: null,
+  gap: null,
 };
 
 Tab.defaultProps = {
   id: null,
-  icon: false,
+  icon: null,
   isSelected: false,
   disabled: false,
   color: null,
   type: null,
   size: null,
+  onClick: null,
 };
 
 export { Tabs as default, Tab };

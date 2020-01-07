@@ -1,9 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/no-unused-prop-types */
-/* eslint-disable react/forbid-prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
@@ -33,14 +28,18 @@ function PropertyPanelHeader({
 PropertyPanelHeader.propTypes = {
   id: PropTypes.string,
   title: PropTypes.string.isRequired,
-  APN: PropTypes.string,
-  menuData: PropTypes.node,
+  // APN: PropTypes.string,
+  menuData: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string,
+    name: PropTypes.string,
+    onClickLink: PropTypes.func,
+  })),
   onClick: PropTypes.func,
 };
 
 PropertyPanelHeader.defaultProps = {
   id: null,
-  APN: null,
+  // APN: null,
   menuData: null,
   onClick: null,
 };

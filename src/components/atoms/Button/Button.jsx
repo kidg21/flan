@@ -17,7 +17,6 @@ import Label from "atoms/Label";
 
 const StyledButton = styled.button`
   display: flex;
-  flex: auto;
   flex-direction: column;
   width: ${(props) => {
     return props.fullWidth ? "100%" : "auto";
@@ -93,6 +92,8 @@ const StyledButton = styled.button`
     user-select: none;
   }
 `;
+
+StyledButton.displayName = "Button";
 
 const ButtonIcon = styled(Icon)`
   margin: 0.25em 0;
@@ -309,4 +310,4 @@ Button.defaultProps = {
   underlineColor: null,
 };
 
-export { Button as default };
+export default Button;

@@ -1,9 +1,5 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable no-console */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
-/* eslint-disable no-unused-vars */
 import React from "react";
 import Legend from "blocks/Legend";
 import styled from "styled-components";
@@ -14,7 +10,6 @@ import Bar from "blocks/Bar";
 import LBLogo from "images/LightBoxLogo.png";
 import Title, { Description, SubTitle } from "base/Typography";
 import Icon from "atoms/Icon";
-import Mapbox from "layout/Map";
 import { CardList } from "layout/Card";
 import Panel, { PanelSection } from "layout/Panel";
 import List, { ListItem } from "blocks/List";

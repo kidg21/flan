@@ -1,6 +1,5 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable security/detect-object-injection */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -53,7 +52,7 @@ function Calendar({
     inputBorderColor = "alert";
     inputBorderColorHover = "alert";
     inputSelectColor = "grey4";
-    errorText = error;
+    if (typeof error === "string") errorText = error;
   } else if (warning) {
     inputTextColor = "warning";
     inputBorderColor = "warning";
@@ -135,7 +134,7 @@ function Calendar({
 Calendar.propTypes = {
   className: PropTypes.string,
   disabled: PropTypes.bool,
-  error: PropTypes.string,
+  error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   warning: PropTypes.string,
   helpText: PropTypes.string,
   id: PropTypes.string,

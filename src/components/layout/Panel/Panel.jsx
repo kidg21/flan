@@ -1,7 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/forbid-prop-types */
-/* eslint-disable react/jsx-filename-extension */
 import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 
@@ -44,6 +41,9 @@ const PanelSection = styled.section`
   flex-direction: column;
   flex: ${(props) => {
     return props.body ? "auto" : "none";
+  }};
+  height: ${(props) => {
+    return props.body ? "inherit" : "";
   }};
   padding: ${(props) => {
     return props.body ? "1rem" : "";

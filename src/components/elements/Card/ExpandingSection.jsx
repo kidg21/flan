@@ -1,9 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/jsx-closing-bracket-location */
-/* eslint-disable react/jsx-indent-props */
-/* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -45,10 +40,17 @@ function ExpandingSection({
 }
 
 ExpandingSection.propTypes = {
+  id: PropTypes.string,
+  title: PropTypes.node,
+  onClick: PropTypes.func,
+  open: PropTypes.bool,
 };
 
 ExpandingSection.defaultProps = {
-
+  id: null,
+  title: null,
+  onClick: null,
+  open: false,
 };
 
 export default ExpandingSection;

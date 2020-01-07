@@ -1,7 +1,3 @@
-/* eslint-disable complexity */
-/* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
 import React from "react";
 import styled from "styled-components";
@@ -65,6 +61,40 @@ const BarLayout = styled.div`
   }
 `;
 
+function getPadding(left, right, center) {
+  const padding = {
+    left: null,
+    right: null,
+    center: null,
+    justify: null,
+  };
+
+  padding.left = "0 0.5em 0 0";
+  padding.right = "0 0 0 0.5em";
+  if (left) {
+    if (!right) padding.center = "0 0 0 0.5em";
+    else padding.center = "0 0.5em 0 0.5em";
+  } else if (right) {
+    padding.center = "0 0.5em 0 0";
+    padding.justify = center ? "space-between" : "flex-end";
+  }
+
+  return padding;
+}
+
+const paddingHash = {
+  "none": "0",
+  "2x": "1em 1.25em",
+  "top": "1.5em 1em 0.5em",
+  "3x": "1.5em 1.5em",
+};
+
+const alignHash = {
+  center: "center",
+  bottom: "flex-end",
+  top: "flex-start",
+};
+
 function Bar({
   id,
   contentAlign,
@@ -79,54 +109,13 @@ function Bar({
   className,
   disabled,
 }) {
-  let justifyContent;
-  let alignContent;
+  const slotPadding = getPadding(left, right, center);
+  const barPadding = padding ? paddingHash[padding.toLowerCase()] : null;
+  const alignContent = alignHash[contentAlign && contentAlign.toLowerCase()] || "flex-start";
+
   let alignItems;
-  let topPadding;
-  let barPadding;
+  // let topPadding;
   let textAlign;
-  const leftPadding = "0 0.5em 0 0";
-  let centerPadding;
-  const rightPadding = "0 0 0 0.5em";
-  if (left) {
-    if (!right) centerPadding = "0 0 0 0.5em";
-    else centerPadding = "0 0.5em 0 0.5em";
-  } else if (right) {
-    centerPadding = "0 0.5em 0 0";
-  }
-  if (right) {
-    if (!left) {
-      if (!center) justifyContent = "flex-end";
-      else justifyContent = "space-between";
-    }
-  }
-  switch (padding && padding.toLowerCase()) {
-    case "none":
-      barPadding = "0";
-      break;
-    case "2x":
-      barPadding = "1em 1.25em";
-      break;
-    case "top":
-      barPadding = "1.5em 1em 0.5em";
-      break;
-    case "3x":
-      barPadding = "1.5em 1.5em";
-      break;
-    default:
-      break;
-  }
-  switch (contentAlign && contentAlign.toLowerCase()) {
-    case "center":
-      alignContent = "center";
-      break;
-    case "bottom":
-      alignContent = "flex-end";
-      break;
-    default:
-      alignContent = "flex-start";
-      break;
-  }
   switch (centerAlign && centerAlign.toLowerCase()) {
     case "left":
       alignItems = "flex-start";
@@ -136,6 +125,7 @@ function Bar({
       alignItems = "flex-end";
       textAlign = "right";
       break;
+    case "center":
     default:
       alignItems = "center";
       textAlign = "center";
@@ -145,11 +135,11 @@ function Bar({
   const barLayout = (
     <BarLayout
       id={id}
-      justifyContent={justifyContent}
+      justifyContent={slotPadding.justify}
       barPadding={barPadding}
       alignContent={alignContent}
       onClick={onClick}
-      topPadding={topPadding}
+      // topPadding={topPadding}
       className={className}
     >
       {left ? (
@@ -157,7 +147,7 @@ function Bar({
           setFlex="1 0 25%"
           widthMin={leftWidth}
           widthMax={leftWidth}
-          setPadding={leftPadding}
+          setPadding={slotPadding.left}
         >
           {left}
         </Slot>
@@ -166,7 +156,7 @@ function Bar({
         <Slot
           alignItems={alignItems}
           textAlign={textAlign}
-          setPadding={centerPadding}
+          setPadding={slotPadding.center}
         >
           {center}
         </Slot>
@@ -178,7 +168,7 @@ function Bar({
           widthMax={rightWidth}
           alignItems="flex-end"
           textAlign="right"
-          setPadding={rightPadding}
+          setPadding={slotPadding.right}
         >
           {right}
         </Slot>
@@ -200,7 +190,7 @@ Bar.propTypes = {
   /** Sets the vertical alignment of all content
    * Default: 'top'
    */
-  contentAlign: PropTypes.oneOf(["center", "bottom"]),
+  contentAlign: PropTypes.oneOf(["center", "bottom", "top"]),
   /** Used to define the content in the left 'slot' */
   left: PropTypes.node,
   /** Used to override the default flex ratio of the left 'slot' by increasing the setting a 'min-width' and 'max-width'.
@@ -212,9 +202,9 @@ Bar.propTypes = {
   /** Sets the horizontal alignment of 'center' content
    * Default: 'center'
    */
-  centerAlign: PropTypes.oneOf(["left", "right"]),
+  centerAlign: PropTypes.oneOf(["left", "right", "center"]),
   /** Sets the padding of the Bar component */
-  padding: PropTypes.oneOf(["none", "1x (default)", "2x", "3x"]),
+  padding: PropTypes.oneOf(["none", "1x", "2x", "3x", "top"]),
   /** Used to define the content in the right 'slot' */
   right: PropTypes.node,
   /** Used to override the default flex ratio of the right 'slot' by increasing the setting a 'min-width' and 'max-width'.
