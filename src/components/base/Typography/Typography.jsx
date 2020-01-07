@@ -111,7 +111,7 @@ function Title({ text, size }) {
 }
 
 
-const Subtitle1 = styled.h4`
+const Subtitle1 = styled.h7`
 font-size: 16px;
 font-weight: 400;
 line-height: 2;
@@ -119,7 +119,7 @@ font-family: ${fonts.body};
 letter-spacing: 0.15px;
 `;
 
-const Subtitle2 = styled.h4`
+const Subtitle2 = styled.h8`
 font-size: 14px;
 font-weight: 600;
 line-height: 2;
@@ -127,7 +127,7 @@ font-family: ${fonts.body};
 letter-spacing: 0.1px;
 `;
 
-const Body1 = styled.h4`
+const Body1 = styled.text`
 font-size: 16px;
 font-weight: 400;
 line-height: 1.35;
@@ -135,7 +135,7 @@ font-family: ${fonts.body};
 letter-spacing: 0.5px;
 `;
 
-const Body2 = styled.h4`
+const Body2 = styled.text`
 font-size: 14px;
 line-height: 1.25;
 font-weight: 400;
@@ -143,15 +143,14 @@ font-family: ${fonts.body};
 letter-spacing: 0.25px;
 `;
 
-const Button = styled.h4`
+const Button = styled.text`
 font-size: 13px;
 font-weight: 650;
-text-transform: uppercase;
 font-family: ${fonts.body};
 letter-spacing: 1.25px;
 `;
 
-const Caption = styled.h4`
+const Caption = styled.text`
 font-size: 12px;
 font-weight: 400;
 line-height: 1.5;
@@ -159,13 +158,11 @@ font-family: ${fonts.body};
 letter-spacing: 0.4px;
 `;
 
-const Overline = styled.h4`
-font-size: 10px;
+const Overline = styled.text`
+font-size: 11px;
 font-weight: 400;
-line-height: 2;
-text-transform: uppercase;
 font-family: ${fonts.body};
-letter-spacing: 1.5px;
+letter-spacing: 1.2px;
 `;
 
 
