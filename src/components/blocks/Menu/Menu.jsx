@@ -17,7 +17,7 @@ const MenuContainer = styled.div`
   margin: -0.5em;
 `;
 
-const ItemWrapper = styled.li`
+const ItemWrapper = styled.div`
   z-index: 501;
   text-align: left;
   &:last-child {
