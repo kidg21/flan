@@ -2,7 +2,7 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { Darken } from "Variables";
+import { Darken, Lighten } from "Variables";
 import Bar from "blocks/Bar";
 import Icon from "atoms/Icon";
 import Avatar from "atoms/Avatar";
@@ -33,7 +33,7 @@ const ListItemWrapper = styled.li`
   }};
   padding: 1em;
   background-color: ${(props) => {
-    return props.theme.palette.background;
+    return props.theme.background.default;
   }};
   cursor: ${(props) => {
     return props.interactive ? "pointer" : "";
@@ -42,6 +42,11 @@ const ListItemWrapper = styled.li`
   &:hover {
     ${(props) => {
     return props.interactive ? Darken : "";
+  }};
+  }
+  &:active {
+    ${(props) => {
+    return props.interactive ? Lighten : "";
   }};
   }
   outline: none;
@@ -87,12 +92,11 @@ function ListItem({
   onClick,
 }) {
   const mainContent = (
-    <Grid columns="1" gap="none">
+    <React.Fragment>
       <Title text={label} disabled={disabled} />
-      {description ? (
-        <Description text={description} disabled={disabled} />
+      {description ? (<Description text={description} disabled={disabled} />
       ) : null}
-    </Grid>
+    </React.Fragment>
   );
 
   return (
@@ -112,18 +116,19 @@ function ListItem({
         {avatar || icon ? (
           <Bar
             contentAlign="center"
+            leftWidth="max-content"
+            centerAlign="left"
             disabled={disabled}
             left={
               <React.Fragment>
-                {avatar ? (<Grid columns="2" gap="none" ><Avatar label={avatar} disabled={disabled} /> {mainContent}</Grid>) : null}
-                {icon ? (<div> <Icon icon={icon} size="lg" disabled={disabled} /> {mainContent}</div>) : null}
+                {avatar ? <Avatar label={avatar} disabled={disabled} /> : null}
+                {icon ? <Icon icon={icon} size="lg" disabled={disabled} /> : null}
               </React.Fragment>
             }
+            center={mainContent}
             right={
               <React.Fragment>
-                {checkbox ? (
-                  <Checkbox label={label} disabled={disabled} />
-                ) : null}
+                {checkbox ? <Checkbox label={label} disabled={disabled} /> : null}
                 {toggle ? <Switch disabled={disabled} /> : null}
                 {arrow ? <Icon icon={arrow} /> : null}
               </React.Fragment>

@@ -376,7 +376,7 @@ export const Darken = css`
 `;
 
 export const Lighten = css`
-  filter: brightness(115%);
+  filter: brightness(115%) contrast(1);
 `;
 
 // Typefaces
