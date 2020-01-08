@@ -1,8 +1,9 @@
+/* eslint-disable complexity */
 /* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { Darken } from "Variables";
+import { Darken, Shade} from "Variables";
 import Bar from "blocks/Bar";
 import Icon from "atoms/Icon";
 import Avatar from "atoms/Avatar";
@@ -30,10 +31,10 @@ const ListItemWrapper = styled.li`
   color: ${(props) => {
     return props.theme.text[props.itemColor];
   }};
-  padding: 1em;
   background-color: ${(props) => {
-    return props.theme.palette.background;
+    return props.theme.background.default;
   }};
+  padding: 1em;
   cursor: ${(props) => {
     return props.interactive ? "pointer" : "";
   }};
@@ -41,6 +42,11 @@ const ListItemWrapper = styled.li`
   &:hover {
     ${(props) => {
     return props.interactive ? Darken : "";
+  }};
+  }
+  &:active {
+    ${(props) => {
+    return props.interactive ? Shade : "";
   }};
   }
   outline: none;
@@ -84,6 +90,9 @@ function ListItem({
   label,
   onClick,
 }) {
+  let leftContent;
+  let rightContent;
+
   const mainContent = (
     <React.Fragment>
       <Title text={label} disabled={disabled} />
@@ -92,6 +101,50 @@ function ListItem({
       ) : null}
     </React.Fragment>
   );
+
+  if (avatar) {
+    if (icon) {
+      leftContent = (
+        <Avatar label={avatar} disabled={disabled} />
+      );
+    }
+  }
+  if (avatar) {
+    leftContent = (
+      <Avatar label={avatar} disabled={disabled} />
+    );
+  } else if (icon) {
+    leftContent = (
+      <Icon icon={icon} disabled={disabled} size="lg" />
+    );
+  } else {
+    leftContent = (
+      null
+    );
+  }
+
+
+  if (checkbox) {
+    if (toggle) {
+      rightContent = (
+        <Checkbox label={checkbox} disabled={disabled} />
+      );
+    }
+  }
+  if (checkbox) {
+    rightContent = (
+      <Checkbox label={checkbox} disabled={disabled} />
+    );
+  } else if (toggle) {
+    rightContent = (
+      <Switch disabled={disabled} />
+    );
+  } else {
+    rightContent = (
+      null
+    );
+  }
+
 
   return (
     <ListItemWrapper
@@ -107,44 +160,15 @@ function ListItem({
       tabIndex={disabled ? "-1" : "1"}
     >
       <DisabledContext.Provider value={disabled}>
-        {avatar || icon ? (
-          <Bar
-            leftWidth="6%"
-            contentAlign="center"
-            centerAlign="left"
-            disabled={disabled}
-            left={
-              <React.Fragment>
-                {avatar ? <Avatar label={avatar} disabled={disabled} /> : null}
-                {icon ? (
-                  <Icon icon={icon} size="lg" disabled={disabled} />
-                ) : null}
-              </React.Fragment>
-            }
-            center={mainContent}
-            right={
-              <React.Fragment>
-                {checkbox ? (
-                  <Checkbox label={label} disabled={disabled} />
-                ) : null}
-                {toggle ? <Switch disabled={disabled} /> : null}
-              </React.Fragment>
-            }
-          />
-        ) : (
-          <Bar
-            contentAlign="center"
-            centerAlign="left"
-            disabled={disabled}
-            left={mainContent}
-            right={
-              <React.Fragment>
-                {checkbox ? <Checkbox disabled={disabled} /> : null}
-                {toggle ? <Switch disabled={disabled} /> : null}
-              </React.Fragment>
-            }
-          />
-        )}
+        <Bar
+          contentAlign="center"
+          centerAlign="left"
+          leftWidth="max-content"
+          disabled={disabled}
+          left={leftContent}
+          center={mainContent}
+          right={rightContent}
+        />
       </DisabledContext.Provider>
     </ListItemWrapper>
   );

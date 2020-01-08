@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { Padding } from "helpers/Display";
 import Layout from "layout/Layout";
 import List, { ListItem } from "blocks/List";
-import Card from "elements/Card";
+import Panel from "layout/Panel";
 import VirtualizedList from "./VirtualizedList.jsx";
 
 const ListNotes = markdown.require("./List.md");
@@ -424,7 +424,7 @@ storiesOf("Blocks|List", module)
     );
   })
 
-  .add("Interactive (hover)", () => {
+  .add("Interactive States", () => {
     return (
       <List interactive>
         <ListItem
@@ -438,68 +438,38 @@ storiesOf("Blocks|List", module)
           disabled
         />
         <ListItem label="List Item" description="This is the description" />
-        <ListItem label="List Item" description="This is the description" />
-        <ListItem label="List Item" description="This is the description" />
-        <ListItem label="List Item" description="This is the description" />
-        <ListItem label="List Item" description="This is the description" />
-        <ListItem label="List Item" description="This is the description" />
+
       </List>
     );
   })
 
   .add("Avatar", () => {
     return (
-      <List interactive>
-        {/* <ListItem
-          label="List Item"
-          description="This is the description"
-          avatar="LB"
-          icon="user"
-          toggle
-          checkbox
-        /> */}
-        <ListItem
-          label="List Item"
-          description="This is the description"
-          avatar="LB"
-        />
-        <ListItem
-          label="List Item (disabled)"
-          description="This is the description"
-          avatar="LB"
-          disabled
-        />
-        <ListItem
-          label="List Item"
-          description="This is the description"
-          avatar="LB"
-        />
-        <ListItem
-          label="List Item"
-          description="This is the description"
-          avatar="LB"
-        />
-        <ListItem
-          label="List Item"
-          description="This is the description"
-          avatar="LB"
-        />
-        <ListItem
-          label="List Item"
-          description="This is the description"
-          avatar="LB"
-        />
-        <ListItem
-          label="List Item"
-          description="This is the description"
-          avatar="LB"
-        />
-        <ListItem
-          label="List Item"
-          description="This is the description"
-          avatar="LB"
-        />
-      </List>
+      <Panel>
+        <List interactive>
+          <ListItem
+            label="List Item"
+            description="This is the description"
+            avatar="LB"
+          />
+          <ListItem
+            label="List Item"
+            description="This is the description"
+            avatar="LB"
+            icon="user"
+          />
+          <ListItem
+            label="List Item"
+            description="This is the description"
+            avatar="LB"
+          />
+          <ListItem
+            label="List Item"
+            description="This is the description"
+            avatar="LB"
+          />
+        </List>
+      </Panel>
     );
   })
 
@@ -512,7 +482,7 @@ storiesOf("Blocks|List", module)
           icon="user"
         />
         <ListItem
-          label="List Item (disabled)"
+          label="List Item"
           description="This is the description"
           icon="user"
           disabled
@@ -520,73 +490,57 @@ storiesOf("Blocks|List", module)
         <ListItem
           label="List Item"
           description="This is the description"
-          icon="circle"
+          icon="user"
         />
         <ListItem
           label="List Item"
           description="This is the description"
-          icon="circle_solid"
-        />
-        <ListItem
-          label="List Item"
-          description="This is the description"
-          icon="settings"
+          icon="user"
         />
       </List>
     );
   })
-  .add("Virtualized List", () => {
-    return React.createElement(() => {
-      const [highlightedCell, setHighlightCell] = useState(null);
-      const [selectedCell, setSelectedCell] = useState(null);
-      const onCellClick = (e, { rowIndex }) => {
-        setSelectedCell({ rowIndex });
-      };
-      const Template = (props) => {
-        return (
-          <Card
-            id={props._DMP_ID_FK}
-            title={`${props.index}: ${props.SITE_ADDR}`}
-            body={props.APN}
-          />
-        );
-      };
-      const onCellMouseEnter = (e, { rowIndex }) => {
-        setHighlightCell({ rowIndex });
-      };
+  // .add("Virtualized List", () => {
+  //   return React.createElement(() => {
+  //     const [highlightedCell, setHighlightCell] = useState(null);
+  //     const [selectedCell, setSelectedCell] = useState(null);
+  //     const onCellClick = (e, { rowIndex }) => {
+  //       setSelectedCell({ rowIndex });
+  //     };
+  //     const Template = (props) => {
+  //       return (
+  //         <Card
+  //           id={props._DMP_ID_FK}
+  //           title={`${props.index}: ${props.SITE_ADDR}`}
+  //           body={props.APN}
+  //         />
+  //       );
+  //     };
+  //     const onCellMouseEnter = (e, { rowIndex }) => {
+  //       setHighlightCell({ rowIndex });
+  //     };
 
-      return (
-        <Layout>
-          <VirtualizedList
-            rows={data}
-            Template={Template}
-            id="foo"
-            onCellClick={onCellClick}
-            onCellMouseEnter={onCellMouseEnter}
-            onCellMouseLeave={() => {
-              setHighlightCell(null);
-            }}
-            highlightedCell={highlightedCell}
-            selectedCell={selectedCell}
-          />
-        </Layout>
-      );
-    });
-  })
+  //     return (
+  //       <Layout>
+  //         <VirtualizedList
+  //           rows={data}
+  //           Template={Template}
+  //           id="foo"
+  //           onCellClick={onCellClick}
+  //           onCellMouseEnter={onCellMouseEnter}
+  //           onCellMouseLeave={() => {
+  //             setHighlightCell(null);
+  //           }}
+  //           highlightedCell={highlightedCell}
+  //           selectedCell={selectedCell}
+  //         />
+  //       </Layout>
+  //     );
+  //   });
+  // })
   .add("Toggle List", () => {
     return (
       <List interactive>
-        <ListItem
-          label="List Item "
-          description="This is the description"
-          toggle
-        />
-        <ListItem
-          label="List Item (disabled)"
-          description="This is the description"
-          toggle
-          disabled
-        />
         <ListItem
           label="List Item"
           description="This is the description"
@@ -614,22 +568,6 @@ storiesOf("Blocks|List", module)
   .add("Checkbox List", () => {
     return (
       <List interactive>
-        <ListItem
-          label="List Item"
-          description="This is the description"
-          checkbox
-        />
-        <ListItem
-          label="List Item (disabled)"
-          description="This is the description"
-          checkbox
-          disabled
-        />
-        <ListItem
-          label="List Item"
-          description="This is the description"
-          checkbox
-        />
         <ListItem
           label="List Item"
           description="This is the description"

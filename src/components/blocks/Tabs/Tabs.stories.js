@@ -11,7 +11,7 @@ import {
   text,
   boolean,
   select,
-  optionsKnob as options
+  optionsKnob as options,
 } from "@storybook/addon-knobs";
 import Tabs, { Tab } from "blocks/Tabs";
 import TabsNotes from "./Tabs.md";
@@ -19,11 +19,11 @@ import TabsNotes from "./Tabs.md";
 storiesOf("Blocks|Tabs", module)
   .addParameters({
     info: {
-      text: "Tabs info goes here..."
+      text: "Tabs info goes here...",
     },
     notes: {
-      markdown: TabsNotes
-    }
+      markdown: TabsNotes,
+    },
   })
   .addDecorator(Padding)
   .add(
@@ -32,11 +32,11 @@ storiesOf("Blocks|Tabs", module)
       return (
         <Tabs>
           <Tab tabLabel="Tab" isSelected />
-          <Tab tabLabel="Tab" count="2" />
+          <Tab tabLabel="Tab" />
           <Tab tabLabel="Tab" />
         </Tabs>
       );
-    })
+    }),
   )
   .add(
     "Secondary",
@@ -48,7 +48,7 @@ storiesOf("Blocks|Tabs", module)
           <Tab tabLabel="Tab" color="secondary" />
         </Tabs>
       );
-    })
+    }),
   );
 
 storiesOf("Blocks|Tabs", module)
@@ -62,12 +62,12 @@ storiesOf("Blocks|Tabs", module)
           {
             "top ( default )": "top",
             "left ( 1 column / vertical )": "left",
-            bottom: "bottom",
-            "right ( 1 column / vertical )": "right"
+            "bottom": "bottom",
+            "right ( 1 column / vertical )": "right",
           },
           "top",
           { display: "radio" },
-          "Tab Group"
+          "Tab Group",
         )}
       >
         <Tab
@@ -75,14 +75,14 @@ storiesOf("Blocks|Tabs", module)
             "icon 1",
             {
               "no icon": null,
-              info: "info",
-              clone: "clone",
-              search: "search",
-              draw: "draw",
-              list: "list"
+              "info": "info",
+              "clone": "clone",
+              "search": "search",
+              "draw": "draw",
+              "list": "list",
             },
             null,
-            "Tab 1"
+            "Tab 1",
           )}
           tabLabel={text("Tab 1", "Tab 1", "Tab 1")}
           disabled={boolean("Disable 1", false, "Tab 1")}
@@ -95,14 +95,14 @@ storiesOf("Blocks|Tabs", module)
             "icon 2",
             {
               "no icon": null,
-              info: "info",
-              clone: "clone",
-              search: "search",
-              draw: "draw",
-              list: "list"
+              "info": "info",
+              "clone": "clone",
+              "search": "search",
+              "draw": "draw",
+              "list": "list",
             },
             null,
-            "Tab 2"
+            "Tab 2",
           )}
           tabLabel={text("Tab 2", "Tab 2", "Tab 2")}
           disabled={boolean("Disable 2", false, "Tab 2")}
@@ -115,14 +115,14 @@ storiesOf("Blocks|Tabs", module)
             "icon 3",
             {
               "no icon": null,
-              info: "info",
-              clone: "clone",
-              search: "search",
-              draw: "draw",
-              list: "list"
+              "info": "info",
+              "clone": "clone",
+              "search": "search",
+              "draw": "draw",
+              "list": "list",
             },
             null,
-            "Tab 3"
+            "Tab 3",
           )}
           tabLabel={text("Tab 3", "Tab 3", "Tab 3")}
           disabled={boolean("Disable 3", false, "Tab 3")}
@@ -135,14 +135,14 @@ storiesOf("Blocks|Tabs", module)
             "icon 4",
             {
               "no icon": null,
-              info: "info",
-              clone: "clone",
-              search: "search",
-              draw: "draw",
-              list: "list"
+              "info": "info",
+              "clone": "clone",
+              "search": "search",
+              "draw": "draw",
+              "list": "list",
             },
             null,
-            "Tab 4"
+            "Tab 4",
           )}
           tabLabel={text("Tab 4", "Tab 4", "Tab 4")}
           disabled={boolean("Disable 4", false, "Tab 4")}
@@ -155,14 +155,14 @@ storiesOf("Blocks|Tabs", module)
             "icon 5",
             {
               "no icon": null,
-              info: "info",
-              clone: "clone",
-              search: "search",
-              draw: "draw",
-              list: "list"
+              "info": "info",
+              "clone": "clone",
+              "search": "search",
+              "draw": "draw",
+              "list": "list",
             },
             null,
-            "Tab 5"
+            "Tab 5",
           )}
           tabLabel={text("Tab 5", "Tab 5", "Tab 5")}
           disabled={boolean("Disable 5", false, "Tab 5")}
@@ -200,6 +200,24 @@ storiesOf("Blocks|Tabs", module)
         <Tab tabLabel="Tab" icon="user" />
         <Tab tabLabel="Tab" icon="user" />
         <Tab tabLabel="Tab" icon="user" />
+      </Tabs>
+    );
+  })
+  .add("Icon Only Tabs", () => {
+    return (
+      <Tabs>
+        <Tab icon="user" />
+        <Tab icon="settings" />
+        <Tab icon="report" />
+      </Tabs>
+    );
+  })
+  .add("Count Tabs", () => {
+    return (
+      <Tabs>
+        <Tab tabLabel="Tab" count="1" />
+        <Tab tabLabel="Tab" count="87" />
+        <Tab tabLabel="Tab" count="2" />
       </Tabs>
     );
   });

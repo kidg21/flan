@@ -32,9 +32,6 @@ const MenuList = styled.ul`
   min-width: 10em;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: ${(props) => {
-    return props.theme.background.default;
-  }};
 `;
 
 const MenuPopper = styled.div`

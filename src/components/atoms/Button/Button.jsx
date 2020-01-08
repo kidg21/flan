@@ -7,6 +7,7 @@ import { DisabledContext } from "States";
 import PropTypes from "prop-types";
 import Tag from "atoms/Tag";
 import Icon from "atoms/Icon";
+import Bar from "blocks/Bar";
 import { Skeleton } from "helpers";
 import Label from "atoms/Label";
 
@@ -14,18 +15,7 @@ import Label from "atoms/Label";
 
 
 const StyledButton = styled.button`
-display: ${(props) => {
-    return props.count ? "grid" : "flex";
-  }};
-grid-gap: ${(props) => {
-    return props.count ? "1rem" : "";
-  }};
-grid-template-columns: ${(props) => {
-    return props.count ? "auto" : "";
-  }};
-grid-template-areas: ${(props) => {
-    return props.count ? "'icon name'" : "";
-  }};
+display: flex;
   flex: auto;
   z-index: 0;
   flex-direction: row;
@@ -105,15 +95,6 @@ grid-template-areas: ${(props) => {
 
 StyledButton.displayName = "Button";
 
-const ButtonIcon = styled(Icon)`
-grid-area: icon;
-margin-right: 0.5em;
-`;
-
-const ButtonTag = styled(Tag)`
-grid-area: icon;
-margin-left: 0.5em;
-`;
 
 /**
  * ( This documentaion is written using 'JSdoc'. This method allows us to use comments written in the Component file. )
@@ -258,6 +239,60 @@ function Button({
     backgroundColor = "grey4";
   }
 
+  let content;
+
+  if (icon) {
+    if (label) {
+      content = (
+        <Bar
+          contentAlign="center"
+          leftWidth="max-content"
+          centerAlign="left"
+          left={<Icon icon={icon} size="lg" />}
+          center={<Label letterSpacing="0.075em" weight="semibold" text={label} />}
+        />
+      );
+    }
+  }
+  if (icon) {
+    if (!label) {
+      content = (
+        <Bar
+          contentAlign="center"
+          center={<Icon icon={icon} size="lg" />}
+        />
+      );
+    }
+  } if (icon) {
+    if (count) {
+      content = (
+        <Bar
+          contentAlign="center"
+          leftWidth="max-content"
+          rightWidth="max-content"
+          centerAlign="center"
+          left={<Icon icon={icon} size="lg" />}
+          center={<Label letterSpacing="0.075em" weight="semibold" text={label} />}
+          right={<Tag label={count} />}
+        />
+      );
+    }
+  } else if (count) {
+    content = (
+      <Bar
+        contentAlign="center"
+        rightWidth="max-content"
+        centerAlign="right"
+        center={<Label letterSpacing="0.075em" weight="semibold" text={label} />}
+        right={<Tag label={count} />}
+      />
+    );
+  } else {
+    content = (
+      <Label letterSpacing="0.075em" weight="semibold" text={label} />
+    );
+  }
+
   return (
     <StyledButton
       backgroundColor={backgroundColor}
@@ -282,9 +317,7 @@ function Button({
       tabIndex={disabled ? "-1" : "1"}
       type={type}
     >
-      {icon ? <ButtonIcon icon={icon} size="lg" /> : null}
-      {label ? <Label letterSpacing="0.075em" weight="semibold" text={label} /> : null}
-      {count ? <ButtonTag label={count} /> : null}
+      {content}
     </StyledButton>
   );
 }
