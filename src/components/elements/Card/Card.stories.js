@@ -1,8 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/require-default-props */
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { Padding } from "helpers/Display";
@@ -16,6 +12,7 @@ import Grid from "layout/Grid";
 import Title, { Description } from "base/Typography";
 import MediaBlock from "blocks/MediaBlock";
 import Button from "atoms/Button";
+import { withKnobs, array } from "@storybook/addon-knobs";
 
 const data = [
   {
@@ -134,43 +131,58 @@ storiesOf("Work|Card/Elements", module)
           null,
           "Settings",
         )}
-        image={
-          boolean("image", false, "Options") &&
-          text("image path", "https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg", "Settings")
-        }
+        media={options(
+          "type",
+          {
+            "no media": null,
+            "image": "image",
+            "audio": "audio",
+            "video": "video",
+            "iframe": "iframe",
+          },
+          null,
+          { display: "select" },
+          "Media",
+        )}
+        mediaSource={options(
+          "source",
+          {
+            "no source": null,
+            "image url": "https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg",
+            "audio url": "https://www.w3schools.com/html/horse.mp3",
+            "video url": "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+            "iframe url": "https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0",
+          },
+          null,
+          { display: "select" },
+          "Media",
+        )}
         imageAlt={
-          boolean("imageAlt", false, "Options") &&
-          text("image alt text", "Image Alt Text", "Settings")
-        }
-        audio={
-          boolean("audio", false, "Options") &&
-          text("audio path", "https://www.w3schools.com/html/horse.mp3", "Settings")
+          boolean("alt image text", false, "Media") &&
+          text("alt image text", "Image Description", "Media")
         }
         icon={
-          boolean("icon", false, "Options") &&
           select(
             "icon select",
             {
-              user: "user",
-              down: "down",
-              bookmark: "bookmark_solid",
-              plus: "plus",
-              print: "print",
+              "no icon": null,
+              "user": "user",
+              "down": "down",
+              "bookmark": "bookmark_solid",
+              "plus": "plus",
+              "print": "print",
             },
-            "user",
+            null,
             "Settings",
           )
         }
         label={
-          boolean("label", true, "Options") &&
           text("label text", "GP", "Settings")
         }
         title={
-          boolean("title", true, "Options") &&
           text("title text", "Card Title", "Settings")
         }
         description={
-          boolean("description", false, "Options") &&
           text(
             "description text",
             "Card Description",
@@ -178,7 +190,6 @@ storiesOf("Work|Card/Elements", module)
           )
         }
         body={
-          boolean("body", false, "Options") &&
           text(
             "body text",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -186,7 +197,6 @@ storiesOf("Work|Card/Elements", module)
           )
         }
         commands={
-          boolean("commands", false, "Options") &&
           object(
             "commands list",
             [
@@ -252,12 +262,13 @@ storiesOf("Work|Card/Elements", module)
       <Card
         // inverse
         // type="info"
-        image="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
+        media="image"
         imageAlt="Image Alt Text"
-        audio="https://www.w3schools.com/html/horse.mp3"
-        video="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
-        youtube="https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0"
-        vimeo="https://player.vimeo.com/video/798022"
+        mediaSource="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" // Image
+        // mediaSource="https://www.w3schools.com/html/horse.mp3" // HTML5 Audio
+        // mediaSource="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" // HTML5 Video
+        // mediaSource="https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0" // Youtube
+        // mediaSource="https://player.vimeo.com/video/798022" // Vimeo
         title="Card Title"
         description="Card Description"
         // label="GP"

@@ -302,9 +302,12 @@ function Card({
   video,
   vimeo,
   youtube,
+  media,
+  source,
+  mediaSource,
 }) {
-  let cardBackground;
   let cardColor;
+  let cardBackground;
   if (inverse) {
     cardColor = "inverse";
     cardBackground = "inverse";
@@ -374,61 +377,78 @@ function Card({
     )
   }
 
+  let mediaType;
+  switch (media) {
+    case "audio":
+      mediaType = "audio";
+      break;
+    case "video":
+      mediaType = "video";
+      break;
+    case "iframe":
+      mediaType = "iframe";
+      break;
+    default:
+    case "image":
+      mediaType = "image";
+      break;
+  }
+
   let mediaSection;
-  if (image) {
+  if (mediaType === "image") {
     mediaSection = (
       <Media image>
         <CardImage
-          src={image}
-          alt={imageAlt || `${"Card Media:" + " "}${image}`}
+          src={mediaSource}
+          alt={imageAlt || `${"Card Image:" + " "}${mediaSource}`}
           width="100%"
         />
       </Media>
     )
-  } else if (audio) {
+  } else if (mediaType === "audio") {
     mediaSection = (
       <CardSection>
-        <CardAudio width="auto" controls>
+        <CardAudio controls>
           <source
-            src={audio}
+            src={mediaSource}
             type="audio/mp3"
           />
           <source
-            src={audio}
+            src={mediaSource}
             type="audio/ogg"
           />
           <source
-            src={audio}
+            src={mediaSource}
             type="audio/wav"
           />
           Your browser does not support the audio element.
         </CardAudio>
       </CardSection>
     )
-  } else if (video) {
+  } else if (mediaType === "video") {
     mediaSection = (
       <Media>
         <video width="100%" controls>
           <source
-            src={video}
+            src={mediaSource}
             type="video/mp4"
           />
           <source
-            src={video}
+            src={mediaSource}
             type="video/webm"
           />
           <source
-            src={video}
+            src={mediaSource}
             type="video/ogg"
           />
           Your browser does not support the video element.
         </video>
       </Media>
     )
-  } else if (youtube || vimeo) {
+  } else if (mediaType === "iframe") {
     mediaSection = (
       <Media>
-        <iframe src={youtube || vimeo} width="100%" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
+        <iframe src={mediaSource} width="100%" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
       </Media>
     )
   }
@@ -486,17 +506,22 @@ function Card({
     <CardWrapper
       cardBackground={cardBackground}
       cardColor={cardColor}
+      mediaType={mediaType}
       cardPadding={cardPadding}
       cardShadow={cardShadow}
       className={className}
       ghost={ghost}
       id={id}
       inverse={inverse}
+      media={media}
+      source={source}
+      mediaSource={mediaSource}
       raised={raised}
       tyoe={type}
     >
-      {image || audio || video || youtube || vimeo ? mediaSection : null}
-      {title || description || label || icon ? headerSection : null}
+      {/* {image || audio || video || youtube || vimeo ? mediaSection : null} */}
+      {mediaSource ? mediaSection : null}
+      {title || description ? headerSection : null}
       {body ? (
         <CardSection onClick={onClick}>
           <Body text={body} />
