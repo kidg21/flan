@@ -8,5 +8,5 @@ export {
   Title,
   Description,
   Link,
-  Body
+  Body,
 } from "./Typography.jsx";

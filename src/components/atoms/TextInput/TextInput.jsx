@@ -205,9 +205,9 @@ function TextInput({
         cols={cols} // textarea attribute
       />
       {autocompleteDataList}
-      {helpText ? <Text size="caption" text={helpText} /> : null}
+      {helpText ? <Text size="underline" text={helpText} /> : null}
       {children}
-      {errorText ? <Text size="caption" text={errorText} /> : null}
+      {errorText ? <Text size="underline" text={errorText} /> : null}
     </TextInputContainer>
   );
 }

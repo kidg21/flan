@@ -1,8 +1,7 @@
 /* eslint-disable linebreak-style */
-import React, { useContext } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { DisabledContext } from "States";
 // import { Skeleton } from "helpers";
 import { fonts, Lighten, Darken } from "Variables";
 
@@ -111,7 +110,7 @@ function Title({ text, size }) {
 }
 
 
-const Subtitle1 = styled.h7`
+const Subtitle1 = styled.h4`
 font-size: 16px;
 font-weight: 400;
 line-height: 2;
@@ -119,7 +118,7 @@ font-family: ${fonts.body};
 letter-spacing: 0.15px;
 `;
 
-const Subtitle2 = styled.h8`
+const Subtitle2 = styled.h4`
 font-size: 14px;
 font-weight: 600;
 line-height: 2;
@@ -128,7 +127,7 @@ letter-spacing: 0.1px;
 `;
 
 const Body1 = styled.text`
-font-size: 16px;
+font-size: 15px;
 font-weight: 400;
 line-height: 1.35;
 font-family: ${fonts.body};
@@ -140,7 +139,7 @@ font-size: 14px;
 line-height: 1.25;
 font-weight: 400;
 font-family: ${fonts.body};
-letter-spacing: 0.25px;
+letter-spacing: 0.4px;
 `;
 
 const Button = styled.text`
@@ -153,29 +152,35 @@ letter-spacing: 1.25px;
 const Caption = styled.text`
 font-size: 12px;
 font-weight: 400;
-line-height: 1.5;
+line-height: 2;
 font-family: ${fonts.body};
-letter-spacing: 0.4px;
+letter-spacing: .2px;
 `;
 
 const Overline = styled.text`
 font-size: 11px;
-font-weight: 400;
+font-weight: 500;
+line-height: 1.5;
 font-family: ${fonts.body};
-letter-spacing: 1.2px;
+letter-spacing: 0.8px;
+`;
+
+const Underline = styled.text`
+font-size: 10.5px;
+font-weight: 300;
+line-height: 2;
+font-family: ${fonts.body};
+letter-spacing: 0.6px;
 `;
 
 
 function Link({
   text, onClick, href, target, disabled,
 }) {
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (isDisabled) linkColor = "disabled";
   return (
     <LinkText
       href={href}
-      isDisabled={isDisabled}
+      isDisabled={disabled}
       onClick={onClick}
       target={target}
     >
@@ -246,6 +251,9 @@ function Text({ text, size }) {
       break;
     case "overline":
       content = <Overline>{text}</Overline>;
+      break;
+    case "underline":
+      content = <Underline>{text}</Underline>;
       break;
     default:
       content = <Body2>{text}</Body2>;

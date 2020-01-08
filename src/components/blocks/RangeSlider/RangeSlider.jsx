@@ -75,9 +75,9 @@ function RangeSlider({
           />
         }
       />
-      {helpText ? <Text size="caption" text={helpText} /> : null}
+      {helpText ? <Text size="underline" text={helpText} /> : null}
       {typeof error === "string" && !isDisabled ? (
-        <Label size="sm" text={error} />
+        <Text size="underline" text={error} />
       ) : null}
     </RangeContainer>
   );

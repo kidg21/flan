@@ -124,9 +124,9 @@ function DataRange({
             />)
         }
       />
-      {helpText ? <Text size="caption" text={helpText} /> : null}
+      {helpText ? <Text size="underline" text={helpText} /> : null}
       {typeof error === "string" && !isDisabled ? (
-        <Text size="caption" text={error} />
+        <Text size="underline" text={error} />
       ) : null}
     </RangeContainer>
   );

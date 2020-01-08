@@ -295,9 +295,9 @@ function SelectMenu({
       {label ? <Text size="overline" isRequired={isRequired} text={label} /> : null}
       {select}
       {/* Help Text */}
-      {helpText ? <Text size="caption" text={helpText} /> : null}
+      {helpText ? <Text size="underline" text={helpText} /> : null}
       {/* Error Message (required) */}
-      {errorText ? <Text size="caption" text={errorText} /> : null}
+      {errorText ? <Text size="underline" text={errorText} /> : null}
     </SelectMenuContainer>
   );
 }

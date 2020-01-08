@@ -1,5 +1,5 @@
 import React from "react";
-import Title, { Description } from "base/Typography";
+import { Title, Description } from "base/Typography";
 import Bar from "blocks/Bar";
 import Card, { CardSection } from "layout/Card";
 import Grid from "layout/Grid";

@@ -126,8 +126,8 @@ function Calendar({
     >
       {label ? <Text size="overline" isRequired={isRequired} text={label} /> : null}
       {inputContainer}
-      {helpText ? <Text size="caption" text={helpText} /> : null}
-      {errorText ? <Text size="caption" text={errorText} /> : null}
+      {helpText ? <Text size="underline" text={helpText} /> : null}
+      {errorText ? <Text size="underline" text={errorText} /> : null}
     </CalendarContainer>
   );
 }
