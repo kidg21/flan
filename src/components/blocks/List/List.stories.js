@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { Padding } from "helpers/Display";
 import Layout from "layout/Layout";
 import List, { ListItem } from "blocks/List";
-import Panel from "layout/Panel";
 import VirtualizedList from "./VirtualizedList.jsx";
 
 const ListNotes = markdown.require("./List.md");
@@ -445,7 +444,6 @@ storiesOf("Blocks|List", module)
 
   .add("Avatar", () => {
     return (
-      <Panel>
         <List interactive>
           <ListItem
             label="List Item"
@@ -469,7 +467,6 @@ storiesOf("Blocks|List", module)
             avatar="LB"
           />
         </List>
-      </Panel>
     );
   })
 
@@ -564,6 +561,31 @@ storiesOf("Blocks|List", module)
       </List>
     );
   })
+  .add("Count List", () => {
+    return (
+      <List interactive>
+        <ListItem
+          label="List Item"
+          description="This is the description"
+          count="2"
+        />
+        <ListItem
+          label="List Item"
+          description="This is the description"
+          count="3"
+        />
+        <ListItem
+          label="List Item"
+          description="This is the description"
+          count="5"
+        />
+        <ListItem
+          label="List Item"
+          description="This is the description"
+        />
+      </List>
+    );
+  })
 
   .add("Checkbox List", () => {
     return (
@@ -591,204 +613,3 @@ storiesOf("Blocks|List", module)
       </List>
     );
   });
-
-// .add("Toggle List", () => {
-//   return (
-//     <List>
-//       <ListItem label="Do Something?" secondaryAction={<Switch />} />
-//       <ListItem label="Something Else?" secondaryAction={<Switch />} />
-//       <ListItem label="How About This?" secondaryAction={<Switch />} />
-//       <ListItem label="Any Ideas?" secondaryAction={<Switch />} />
-//       <ListItem label="Flan?" secondaryAction={<Switch />} />
-//     </List>
-//   );
-// })
-
-// .add("Action List", () => {
-//   return (
-//     <List interactive>
-//       <ListItem
-//         label="List Item (not interactive)"
-//         description="This is the description"
-//         secondaryAction={<Button label="Action" />}
-//       />
-//       <ListItem
-//         label="List Item (disabled)"
-//         description="This is the description"
-//         secondaryAction={<Button label="Action" />}
-//       />
-//       <ListItem
-//         label="List Item"
-//         description="This is the description"
-//         secondaryAction={<Button label="Action" />}
-//       />
-//       <ListItem
-//         label="List Item"
-//         description="This is the description"
-//         secondaryAction={<Button label="Action" />}
-//       />
-//       <ListItem
-//         label="List Item"
-//         description="This is the description"
-//         secondaryAction={<Button label="Action" />}
-//       />
-//       <ListItem
-//         label="List Item"
-//         description="This is the description"
-//         secondaryAction={<Button label="Action" />}
-//       />
-//       <ListItem
-//         label="List Item"
-//         description="This is the description"
-//         secondaryAction={<Button label="Action" />}
-//       />
-//     </List>
-//   );
-// })
-
-// .add("Image List", () => {
-//   return (
-//     <List title="Image List (interactive)" interactive>
-//       <ListItem
-//         label="This Kitty?"
-//         description="This description is much longer but that's okay because it will just keep on wrapping to the next line until you run out of things to say..."
-//       >
-//         {image}
-//       </ListItem>
-//       <ListItem
-//         label="Or This One?"
-//         description="This description is much longer but that's okay because it will just keep on wrapping to the next line until you run out of things to say..."
-//       >
-//         {image}
-//       </ListItem>
-//       <ListItem
-//         label="Awwwww..."
-//         description="This description is much longer but that's okay because it will just keep on wrapping to the next line until you run out of things to say..."
-//       >
-//         {image}
-//       </ListItem>
-//     </List>
-//   );
-// })
-
-// .add("Select Menu List", () => {
-//   return (
-//     <List>
-//       <ListItem
-//         label="Category1"
-//         secondaryAction={
-//           <SelectMenu
-//             width="40%"
-//             options={[
-//               { value: "yes", label: "Yes" },
-//               { value: "no", label: "No" },
-//             ]}
-//           />
-//         }
-//       />
-//       <ListItem
-//         label="Category2"
-//         secondaryAction={
-//           <SelectMenu
-//             width="40%"
-//             options={[
-//               { value: "yes", label: "Yes" },
-//               { value: "no", label: "No" },
-//             ]}
-//           />
-//         }
-//       />
-//       <ListItem
-//         label="Category3"
-//         secondaryAction={
-//           <SelectMenu
-//             width="40%"
-//             options={[
-//               { value: "yes", label: "Yes" },
-//               { value: "no", label: "No" },
-//             ]}
-//           />
-//         }
-//       />
-//       <ListItem
-//         label="Category4"
-//         secondaryAction={
-//           <SelectMenu
-//             width="40%"
-//             options={[
-//               { value: "yes", label: "Yes" },
-//               { value: "no", label: "No" },
-//             ]}
-//           />
-//         }
-//       />
-//       <ListItem
-//         label="Category5"
-//         secondaryAction={
-//           <SelectMenu
-//             width="40%"
-//             options={[
-//               { value: "yes", label: "Yes" },
-//               { value: "yes", label: "I said YES!" },
-//             ]}
-//           />
-//         }
-//       />
-//     </List>
-//   );
-// })
-
-// .add("Mixed List", () => {
-//   return (
-//     <List title="You Can Give The List A Title" interactive>
-//       <ListItem label="List Item" />
-//       <ListItem
-//         label="List Item"
-//         description="This is the description"
-//         secondaryAction={<Command command="edit" />}
-//       />
-//       <ListItem
-//         label="List Item"
-//         description="This description is much longer but that's okay because it will just keep on wrapping to the next line until you run out of things to say in support of the long title that you just typed above this one."
-//         secondaryAction={
-//           <SelectMenu
-//             width="25%"
-//             options={[
-//               { value: "chocolate", label: "Chocolate" },
-//               { value: "strawberry", label: "Strawberry" },
-//               { value: "vanilla", label: "Vanilla" },
-//               { value: "pistachio", label: "Pistachio" },
-//               {
-//                 value: "mint chocolate chip",
-//                 label: "Mint Chocolate Chip",
-//               },
-//               { value: "cookie dough", label: "Cookie Dough" },
-//             ]}
-//           />
-//         }
-//       />
-//       <ListItem
-//         label="This is a very long and informative title that might even need multiple lines to display it all"
-//         description="This is the description"
-//       />
-//       <ListItem
-//         label="List Item"
-//         description="This description is much longer but that's okay because it will just keep on wrapping to the next line until you run out of things to say in support of the long title that you just typed above this one."
-//         secondaryAction={<Command command="settings" />}
-//       />
-//       <ListItem
-//         label="List Item"
-//         secondaryAction={
-//           <Checkbox id="enable" label="Enable" align="right" />
-//         }
-//       />
-//       <ListItem
-//         label="This is a very long and informative title that might even need multiple lines to display it all"
-//         description="This description is much longer but that's okay because it will just keep on wrapping to the next line until you run out of things to say in support of the long title that you just typed above this one."
-//         secondaryAction={
-//           <Checkbox id="relaxed" label="Relaxed?" align="right" />
-//         }
-//       />
-//     </List>
-//   );
-// });

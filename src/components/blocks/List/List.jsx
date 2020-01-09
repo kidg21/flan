@@ -3,8 +3,9 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { Darken, Shade} from "Variables";
+import { Darken, Shade } from "Variables";
 import Bar from "blocks/Bar";
+import Tag from "atoms/Tag";
 import Icon from "atoms/Icon";
 import Avatar from "atoms/Avatar";
 import Checkbox from "atoms/Checkbox";
@@ -84,6 +85,7 @@ function ListItem({
   id,
   avatar,
   toggle,
+  count,
   icon,
   checkbox,
   interactive,
@@ -126,12 +128,13 @@ function ListItem({
 
   if (checkbox) {
     if (toggle) {
-      rightContent = (
-        <Checkbox label={checkbox} disabled={disabled} />
-      );
+      if (count) {
+        rightContent = (
+          <Checkbox label={checkbox} disabled={disabled} />
+        );
+      }
     }
-  }
-  if (checkbox) {
+  } if (checkbox) {
     rightContent = (
       <Checkbox label={checkbox} disabled={disabled} />
     );
@@ -145,6 +148,11 @@ function ListItem({
     );
   }
 
+  if (count) {
+    rightContent = (
+      <Tag label={count} />
+    );
+  }
 
   return (
     <ListItemWrapper
@@ -195,6 +203,7 @@ ListItem.propTypes = {
   disabled: PropTypes.bool,
   id: PropTypes.string,
   icon: PropTypes.node,
+  count: PropTypes.string,
   checkbox: PropTypes.bool,
   avatar: PropTypes.string,
   interactive: PropTypes.bool,
@@ -207,6 +216,7 @@ ListItem.defaultProps = {
   description: null,
   icon: null,
   checkbox: false,
+  count: null,
   avatar: null,
   disabled: false,
   id: null,
