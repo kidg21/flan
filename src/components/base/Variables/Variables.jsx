@@ -180,8 +180,6 @@ export const colors = {
   shade9: "hsla(34, 5%, 12%, 0.45)",
   shade10: "hsla(34, 5%, 12%, 0.5)",
 
-  // shadowV: "0 0.25em 5px rgba(0, 0, 0, 0.10), 0 -0.25em 5px rgba(0, 0, 0, 0.10)",
-
 };
 
 export const shadows = {
@@ -205,10 +203,6 @@ export const shadows = {
   shadow5: `
     drop-shadow(${colors.shade6} 0 0 1px)
     drop-shadow(${colors.shade2} 0.5rem 0.5rem 0.55rem)
-  `,
-  inner: `
-    drop-shadow(${colors.shade6} 0 0 1px inset)
-    drop-shadow(${colors.shade2} 0.5rem 0.5rem 0.55rem inset)
   `,
   dropShadow: `
     ${colors.shade6} 0 0 1px,
@@ -308,7 +302,6 @@ export const DMPTheme = {
     shadow4: shadows.shadow4,
     shadow5: shadows.shadow5,
     innerShadow: shadows.innerShadow,
-    // shadowV: colors.shadowV,
   },
 };
 

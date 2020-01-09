@@ -7,7 +7,7 @@ import Image from "atoms/Image";
 import ModernExterior1 from "images/residential/modern exterior 1.jpg";
 import ModernExterior2 from "images/residential/modern exterior 2.jpg";
 import ModernExterior3 from "images/residential/modern exterior 3.jpg";
-import Card, { CardSection, CardList } from "elements/Card";
+import Card, { CardList } from "elements/Card";
 import Grid from "layout/Grid";
 import Title, { Description } from "base/Typography";
 import MediaBlock from "blocks/MediaBlock";
@@ -116,155 +116,14 @@ storiesOf("Work|Card/Elements", module)
   .addDecorator(Padding)
   .addDecorator(checkA11y)
   .addDecorator(withKnobs)
-  .add("Knobs", () => {
-    return (
-      <Card
-        type={select(
-          "type",
-          {
-            standard: null,
-            info: "info",
-            success: "success",
-            warning: "warning",
-            alert: "alert",
-          },
-          null,
-          "Settings",
-        )}
-        media={options(
-          "type",
-          {
-            "no media": null,
-            "image": "image",
-            "audio": "audio",
-            "video": "video",
-            "iframe": "iframe",
-          },
-          null,
-          { display: "select" },
-          "Media",
-        )}
-        mediaSource={options(
-          "source",
-          {
-            "no source": null,
-            "image url": "https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg",
-            "audio url": "https://www.w3schools.com/html/horse.mp3",
-            "video url": "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
-            "iframe url": "https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0",
-          },
-          null,
-          { display: "select" },
-          "Media",
-        )}
-        imageAlt={
-          boolean("alt image text", false, "Media") &&
-          text("alt image text", "Image Description", "Media")
-        }
-        icon={
-          select(
-            "icon select",
-            {
-              "no icon": null,
-              "user": "user",
-              "down": "down",
-              "bookmark": "bookmark_solid",
-              "plus": "plus",
-              "print": "print",
-            },
-            null,
-            "Settings",
-          )
-        }
-        label={
-          text("label text", "GP", "Settings")
-        }
-        title={
-          text("title text", "Card Title", "Settings")
-        }
-        description={
-          text(
-            "description text",
-            "Card Description",
-            "Settings",
-          )
-        }
-        body={
-          text(
-            "body text",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "Settings",
-          )
-        }
-        commands={
-          object(
-            "commands list",
-            [
-              {
-                id: "Command One",
-                label: "Command One",
-                name: "Command One",
-                onClick: action("Command One Clicked"),
-              },
-              {
-                id: "Command Two",
-                label: "Command Two",
-                name: "Command Two",
-                onClick: action("Command Two Clicked"),
-              },
-              {
-                id: "Command Three",
-                label: "Command Three",
-                name: "Command Three",
-                onClick: action("Command Three Clicked"),
-              },
-              {
-                id: "Command Four",
-                label: "Command Four",
-                name: "Command Four",
-                onClick: action("Command Four Clicked"),
-              },
-              {
-                id: "Command Five",
-                label: "Command Five",
-                name: "Command FiveCommand Five CommandFiveCommand Five",
-                onClick: action("Command Five Clicked"),
-              },
-            ],
-            "Settings",
-          )
-        }
-        more={
-          boolean("more", false, "Options") &&
-          object(
-            "extra content",
-            <Button label="Button" type="solid" color="secondary" fullWidth />,
-            "Settings",
-          )
-        }
-        onClick={
-          boolean("onClick", false, "Options")
-        }
-        inverse={
-          boolean("inverse", false, "Options")
-        }
-        ghost={
-          boolean("ghost", false, "Options")
-        }
-        raised={
-          boolean("raised", false, "Options")
-        }
-      />
-    );
-  })
-  .add("WIP", () => {
+  .add("Standard (configured)", () => {
     return (
       <Card
         // inverse
         // type="info"
         media="image"
-        imageAlt="Image Alt Text"
         mediaSource="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" // Image
+        imageAlt="Image Alt Text"
         // mediaSource="https://www.w3schools.com/html/horse.mp3" // HTML5 Audio
         // mediaSource="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" // HTML5 Video
         // mediaSource="https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0" // Youtube
@@ -317,24 +176,169 @@ storiesOf("Work|Card/Elements", module)
       </Card>
     );
   })
-  .add("Default", () => {
+  .add("Standard (container-only)", () => {
     return <Card />;
   })
-  .add("Elevations", () => {
+  .add("Knobs", () => {
+    return (
+      <Card
+        type={select(
+          "type",
+          {
+            standard: null,
+            info: "info",
+            success: "success",
+            warning: "warning",
+            alert: "alert",
+          },
+          null,
+          "Settings",
+        )}
+        shadow={select(
+          "shadow",
+          {
+            "none": "none",
+            "standard": null,
+            "2x": "2x",
+          },
+          null,
+          "Settings",
+        )}
+        inverse={
+          boolean("inverse", false, "Settings")
+        }
+        onClick={
+          boolean("onClick", false, "Settings")
+        }
+        title={
+          text("title", "Card Title", "Options")
+        }
+        description={
+          text(
+            "description",
+            "Card Description",
+            "Options",
+          )
+        }
+        label={
+          text("label (requires Title or Description)", "GP", "Options")
+        }
+        icon={
+          select(
+            "icon (requires Title or Description)",
+            {
+              "no icon": null,
+              "user": "user",
+              "down": "down",
+              "bookmark": "bookmark_solid",
+              "plus": "plus",
+              "print": "print",
+            },
+            null,
+            "Options",
+          )
+        }
+        more={
+          boolean("more", false, "Options") &&
+          array(
+            "extra content",
+            [<Button label="Button" type="solid" color="secondary" fullWidth />],
+            "Options",
+          )
+        }
+        body={
+          text(
+            "body",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "Options",
+          )
+        }
+        commands={
+          object(
+            "commands",
+            [
+              {
+                id: "Command One",
+                label: "Command One",
+                name: "Command One",
+                onClick: action("Command One Clicked"),
+              },
+              {
+                id: "Command Two",
+                label: "Command Two",
+                name: "Command Two",
+                onClick: action("Command Two Clicked"),
+              },
+              {
+                id: "Command Three",
+                label: "Command Three",
+                name: "Command Three",
+                onClick: action("Command Three Clicked"),
+              },
+              {
+                id: "Command Four",
+                label: "Command Four",
+                name: "Command Four",
+                onClick: action("Command Four Clicked"),
+              },
+              {
+                id: "Command Five",
+                label: "Command Five",
+                name: "Command FiveCommand Five CommandFiveCommand Five",
+                onClick: action("Command Five Clicked"),
+              },
+            ],
+            "Options",
+          )
+        }
+        media={options(
+          "type",
+          {
+            "no media": null,
+            "image": "image",
+            "audio": "audio",
+            "video": "video",
+            "iframe": "iframe",
+          },
+          null,
+          { display: "select" },
+          "Media",
+        )}
+        mediaSource={options(
+          "source",
+          {
+            "no source": null,
+            "image url": "https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg",
+            "audio url": "https://www.w3schools.com/html/horse.mp3",
+            "video url": "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+            "iframe url": "https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0",
+          },
+          null,
+          { display: "select" },
+          "Media",
+        )}
+        imageAlt={
+          boolean("alt image text", false, "Media") &&
+          text("alt image text", "Image Description", "Media")
+        }
+      />
+    );
+  })
+  .add("Shadows", () => {
     return (
       <Grid gap="large">
-        <Card description="Ghost" ghost />
+        <Card description="None" shadow="none" />
         <Card description="Standard" />
-        <Card description="Raised" raised />
+        <Card description="2x" shadow="2x" />
       </Grid>
     );
   })
-  .add("Card List (data)", () => {
+  .add("Card List (configured)", () => {
     return (
-      <CardList columns="" data={data} inverse2 />
+      <CardList columns="" data={data} />
     );
   })
-  .add("Card List", () => {
+  .add("Card List (containers-only)", () => {
     return (
       <CardList>
         <Card />

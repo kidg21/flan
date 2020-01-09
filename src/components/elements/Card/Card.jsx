@@ -1,13 +1,13 @@
 /* eslint-disable linebreak-style */
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 import { Spacer } from "helpers/Display";
-import { Lighten, Darken } from "Variables";
+import { Darken } from "Variables";
 import Grid from "layout/Grid";
 import Bar from "blocks/Bar";
-import Title, { Headline, SubTitle, Description, Body } from "base/Typography";
+import { Headline, SubTitle, Body } from "base/Typography";
 import Icon from "atoms/Icon";
 import Command from "atoms/Command";
 import Image from "atoms/Image";
@@ -280,30 +280,24 @@ CardSection.defaultProps = {
 }
 
 function Card({
-  audio,
   body,
   children,
   className,
   commands,
   description,
-  ghost,
   icon,
   id,
-  image,
   imageAlt,
   inverse,
   label,
   more,
   onClick,
   padding,
-  raised,
   title,
   type,
-  video,
-  vimeo,
-  youtube,
   media,
   source,
+  shadow,
   mediaSource,
 }) {
   let cardColor;
@@ -335,12 +329,16 @@ function Card({
   }
 
   let cardShadow;
-  if (raised) {
-    cardShadow = "shadow1";
-  } else if (ghost) {
-    cardShadow = null;
-  } else {
-    cardShadow = "shadow0";
+  switch (shadow) {
+    case "none":
+      cardShadow = null;
+      break;
+    case "2x":
+      cardShadow = "shadow1";
+      break;
+    default:
+      cardShadow = "shadow0";
+      break;
   }
 
   let headerSection;
@@ -455,7 +453,7 @@ function Card({
 
   let commandElements = null;
   if (commands) {
-    // Exactly 2 Commands
+    // 2 Commands
     if (commands.length >= 2) {
       commandElements = (
         <Bar
@@ -476,7 +474,7 @@ function Card({
           }
           rightWidth="10%"
           right={
-            // More than 2 Commands
+            // More than 2 Commands sends overflow to Menu
             commands.length > 2 ? (
               <Menu data={commands.slice(2)} position="topLeft" />
             ) : (
@@ -510,16 +508,14 @@ function Card({
       cardPadding={cardPadding}
       cardShadow={cardShadow}
       className={className}
-      ghost={ghost}
       id={id}
       inverse={inverse}
       media={media}
       source={source}
       mediaSource={mediaSource}
-      raised={raised}
+      shadow={shadow}
       tyoe={type}
     >
-      {/* {image || audio || video || youtube || vimeo ? mediaSection : null} */}
       {mediaSource ? mediaSection : null}
       {title || description ? headerSection : null}
       {body ? (
@@ -545,7 +541,6 @@ Card.propTypes = {
     onClick: PropTypes.func,
   })),
   description: PropTypes.string,
-  ghost: PropTypes.bool,
   icon: PropTypes.string,
   id: PropTypes.string,
   inverse: PropTypes.bool,
@@ -556,7 +551,7 @@ Card.propTypes = {
   more: PropTypes.node,
   onClick: PropTypes.func,
   padding: PropTypes.oneOf(["none", "1x", "2x", "3x", "4x"]),
-  raised: PropTypes.bool,
+  shadow: PropTypes.oneOf(["none", "standard", "2x"]),
   title: PropTypes.string,
   video: PropTypes.string,
   vimeo: PropTypes.string,
@@ -569,7 +564,6 @@ Card.defaultProps = {
   className: null,
   commands: null,
   description: null,
-  ghost: false,
   icon: null,
   id: null,
   inverse: null,
@@ -579,7 +573,7 @@ Card.defaultProps = {
   mediaHeader: null,
   more: null,
   padding: null,
-  raised: false,
+  shadow: null,
   title: null,
   video: null,
   vimeo: null,
