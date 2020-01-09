@@ -3,10 +3,9 @@
 
 export {
   default,
-  Headline,
-  SubTitle,
   Title,
-  Description,
+  Caption,
+  Subscript,
+  Label,
   Link,
-  Body,
 } from "./Typography.jsx";

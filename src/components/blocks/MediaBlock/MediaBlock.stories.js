@@ -4,7 +4,7 @@ import React, { Fragment } from "react";
 import { Padding } from "helpers/Display";
 import Image from "atoms/Image";
 import Card, { CardList } from "layout/Card";
-import Text, { Title, Description } from "base/Typography";
+import Text, { Title } from "base/Typography";
 import MediaBlock from "blocks/MediaBlock";
 
 const MediaBlockNotes = markdown.require("./MediaBlock.md");
@@ -28,11 +28,11 @@ const description = (
 storiesOf("Blocks|Media Block", module)
   .addParameters({
     info: {
-      text: "Media Block info goes here..."
+      text: "Media Block info goes here...",
     },
     notes: {
-      markdown: MediaBlockNotes
-    }
+      markdown: MediaBlockNotes,
+    },
   })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
@@ -40,7 +40,7 @@ storiesOf("Blocks|Media Block", module)
     "Documentation",
     withInfo()(() => {
       return <MediaBlock media={image} body={body} />;
-    })
+    }),
   )
   .add("Knobs", () => {
     return (
@@ -53,11 +53,11 @@ storiesOf("Blocks|Media Block", module)
             {
               default: null,
               vertical: "vertical",
-              inline: "inline"
+              inline: "inline",
             },
             null,
             { display: "select" },
-            "Media Block"
+            "Media Block",
           )}
           reverse={boolean("reverse", false, "Media Block")}
           circle={boolean("circle", false, "Media Block")}

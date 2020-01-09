@@ -3,7 +3,7 @@ import React, { useState, useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
-import Label from "atoms/Label";
+import { Label } from "base/Typography";
 
 const SwitchContainer = styled.div`
   display: grid;

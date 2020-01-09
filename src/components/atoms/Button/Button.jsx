@@ -198,7 +198,7 @@ function Button({
     >
       {icon ? <ButtonIcon icon={icon} size="lg" /> : null}
       {label ? (
-        <Text size="button" text={label} />
+        <Text weight="bold" size="2x" text={label} />
       ) : null}
     </StyledButton>
   );

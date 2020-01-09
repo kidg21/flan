@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
-import Text, { SubTitle, Title, Description } from "base/Typography";
+import Text, { Title } from "base/Typography";
 import Grid from "layout/Grid";
 
 const FormWrapper = styled.form`
@@ -31,7 +31,7 @@ const FormSection = styled.section`
 function Section({ children, title }) {
   return (
     <FormSection>
-      {title ? <SubTitle text={title} /> : null}
+      {title ? <Title text={title} /> : null}
       {children}
     </FormSection>
   );
@@ -82,7 +82,7 @@ function Form({
       {title || subtitle || description ? (
         <FormHeader gap="tiny">
           {title ? <Title text={title} /> : null}
-          {subtitle ? <SubTitle text={subtitle} /> : null}
+          {subtitle ? <Title text={subtitle} /> : null}
           {description ? <Text text={description} /> : null}
         </FormHeader>
       ) : null}

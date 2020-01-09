@@ -3,18 +3,62 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 // import { Skeleton } from "helpers";
-import { fonts, Lighten, Darken } from "Variables";
+import { Lighten, Darken } from "Variables";
+
+const SubText = styled.sub`
+font-size: 10.5px;
+font-weight: 300;
+line-height: 2;
+font-family: ${(props) => { return props.theme.typography.primary; }};
+letter-spacing: 0.6px;
+`;
+
+const StyledLabel = styled.label`
+  color: inherit;
+  font-family: Nunito;
+  margin: 0px 0px 0px 0px;
+  width: max-content;
+  line-height: ${(props) => {
+    return props.lineHeight || "1.5";
+  }};;
+  user-select: none;
+  font-size: ${(props) => {
+    return props.fontSize || "14px";
+  }};;
+  cursor: pointer;
+  font-weight: ${(props) => {
+    return props.fontWeight || "600";
+  }};;
+  letter-spacing: ${(props) => {
+    return props.letterSpacing || "0.5px";
+  }};;
+}
+
+&:after {
+  display: ${(props) => {
+    return props.isRequired ? "" : "none";
+  }};
+  content: "*";
+  color: ${(props) => {
+    return props.theme.palette.alert;
+  }};
+  font-size: 1.25rem;
+  line-height: 0;
+  vertical-align: middle;
+  padding-left: 0.25em;
+}
+
+`;
+
 
 const LinkText = styled.a`
 line-height: inherit;
-font-weight: 700;
+font-weight: 600;
 font-size: 14px;
 text-decoration: none;
 padding: .5em;
 letter-spacing: 0.5px;
-color: ${(props) => {
-    return props.theme.text[props.linkColor] || props.theme.text.link;
-  }};;
+color: ${(props) => { return props.theme.text.link; }};
 margin: -.5em;
 cursor: pointer;
 
@@ -28,150 +72,150 @@ cursor: pointer;
 
 `;
 
+const TitleWrapper = styled.section`
+color: ${(props) => { return props.theme.text[props.textColor] || props.theme.text.primary; }};
+`;
+
+const TextWrapper = styled.section`
+font-weight: ${(props) => { return props.weightValue || "400"; }};
+`;
+
+
 const H1 = styled.h1`
-font-size: 70px;
+font-size: 55px;
 font-weight: 300;
 line-height: 1;
-font-family: ${fonts.body};
+color: inherit;
+font-family: ${(props) => { return props.theme.typography.primary; }};
 letter-spacing: -1.25px;
 `;
 
 const H2 = styled.h2`
-font-size: 60px;
-font-weight: 300;
+font-size: 48px;
+font-weight: 200;
 line-height: 1;
-font-family: ${fonts.body};
+color: inherit;
+font-family: ${(props) => { return props.theme.typography.primary; }};
 letter-spacing: -0.5px;
 `;
 
 const H3 = styled.h3`
-font-size: 48px;
+font-size: 40px;
 font-weight: 400;
 line-height: 1.15;
-font-family: ${fonts.body};
-letter-spacing: 0px;
+color: inherit;
+font-family: ${(props) => { return props.theme.typography.primary; }};
+letter-spacing: .25px;
 `;
 
 const H4 = styled.h4`
-font-size: 34px;
+font-size: 30px;
 font-weight: 400;
 line-height: 1.15;
-font-family: ${fonts.body};
+color: inherit;
+font-family: ${(props) => { return props.theme.typography.primary; }};
 letter-spacing: 0.25px;
 `;
 
 const H5 = styled.h5`
 font-size: 24px;
-font-weight: 400;
+font-weight: 600;
 line-height: 1.5;
-font-family: ${fonts.body};
+color: inherit;
+font-family: ${(props) => { return props.theme.typography.primary; }};
 letter-spacing: 0px;
 `;
 
 const H6 = styled.h6`
-font-size: 20px;
+font-size: 17px;
 font-weight: 600;
-line-height: 1.5;
-font-family: ${fonts.body};
-letter-spacing: 0.15px;
+color: inherit;
+font-family: ${(props) => { return props.theme.typography.primary; }};
+letter-spacing: 1px;
 `;
 
 
-function Title({ text, size }) {
-  let content;
-  switch (size && size.toLowerCase()) {
-    case "h1":
-      content = <H1>{text}</H1>;
-      break;
-    case "h2":
-      content = <H2>{text}</H2>;
-      break;
-    case "h3":
-      content = <H3>{text}</H3>;
-      break;
-    case "h4":
-      content = <H4>{text}</H4>;
-      break;
-    case "h5":
-      content = <H5>{text}</H5>;
-      break;
-    case "h6":
-      content = <H6>{text}</H6>;
-      break;
-    default:
-      content = <H6>{text}</H6>;
-      break;
-  }
-  return (
-    <React.Fragment>
-      {content}
-    </React.Fragment>
-  );
-}
-
-
-const Subtitle1 = styled.h4`
-font-size: 16px;
-font-weight: 400;
-line-height: 2;
-font-family: ${fonts.body};
-letter-spacing: 0.15px;
-`;
-
-const Subtitle2 = styled.h4`
-font-size: 14px;
-font-weight: 600;
-line-height: 2;
-font-family: ${fonts.body};
-letter-spacing: 0.1px;
-`;
-
-const Body1 = styled.text`
+const Body1 = styled.p`
 font-size: 15px;
-font-weight: 400;
+color: inherit;
 line-height: 1.35;
-font-family: ${fonts.body};
+font-family: ${(props) => { return props.theme.typography.primary; }};
 letter-spacing: 0.5px;
 `;
 
-const Body2 = styled.text`
+const Body2 = styled.p`
 font-size: 14px;
 line-height: 1.25;
-font-weight: 400;
-font-family: ${fonts.body};
+color: inherit;
+font-family: ${(props) => { return props.theme.typography.primary; }};
 letter-spacing: 0.4px;
 `;
 
-const Button = styled.text`
-font-size: 13px;
-font-weight: 650;
-font-family: ${fonts.body};
-letter-spacing: 1.25px;
-`;
 
-const Caption = styled.text`
-font-size: 12px;
-font-weight: 400;
-line-height: 2;
-font-family: ${fonts.body};
-letter-spacing: .2px;
-`;
-
-const Overline = styled.text`
-font-size: 11px;
-font-weight: 500;
-line-height: 1.5;
-font-family: ${fonts.body};
-letter-spacing: 0.8px;
-`;
-
-const Underline = styled.text`
-font-size: 10.5px;
+const CaptionText = styled.caption`
+font-size: 12.5px;
 font-weight: 300;
-line-height: 2;
-font-family: ${fonts.body};
-letter-spacing: 0.6px;
+text-align: left;
+color: inherit;
+line-height: 1;
+font-family: ${(props) => { return props.theme.typography.secondary; }};
+letter-spacing: .25px;
 `;
+
+function Title({
+  text, size, type,
+}) {
+  let content;
+  let textColor;
+
+  switch (size && size.toLowerCase()) {
+    case "6x":
+      content = <H1 >{text}</H1>;
+      break;
+    case "5x":
+      content = <H2 >{text}</H2>;
+      break;
+    case "4x":
+      content = <H3 >{text}</H3>;
+      break;
+    case "3x":
+      content = <H4 >{text}</H4>;
+      break;
+    case "2x":
+      content = <H5 >{text}</H5>;
+      break;
+    case "1x":
+      content = <H6 >{text}</H6>;
+      break;
+    default:
+      content = <H6 >{text}</H6>;
+      break;
+  }
+
+  switch (type && type.toLowerCase()) {
+    case "primary":
+      textColor = "primary";
+      break;
+    case "secondary":
+      textColor = "secondary";
+      break;
+    case "inverse":
+      textColor = "inverse";
+      break;
+    default:
+      textColor = "primary";
+      break;
+  }
+
+
+  return (
+    <TitleWrapper
+      textColor={textColor}
+    >
+      {content}
+    </TitleWrapper>
+  );
+}
 
 
 function Link({
@@ -190,110 +234,178 @@ function Link({
 }
 
 
-function Body({ text }) {
+function Caption({ text }) {
   return (
-    <Body1>
+    <CaptionText>
       {text}
-    </Body1>
+    </CaptionText>
   );
 }
 
-function Description({ text }) {
+function Subscript({ text }) {
   return (
-    <Caption>
+    <SubText>
       {text}
-    </Caption>
+    </SubText>
   );
 }
 
-function Headline({ text }) {
-  return (
-    <H3>
-      {text}
-    </H3>
-  );
-}
-
-function SubTitle({ text, size }) {
+function Text({
+  text, size, type, weight,
+}) {
+  let textColor;
   let content;
+  let weightValue;
   switch (size && size.toLowerCase()) {
-    case "normal":
-      content = <Subtitle1>{text}</Subtitle1>;
-      break;
-    case "small":
-      content = <Subtitle2>{text}</Subtitle2>;
-      break;
-    default:
-      content = <Subtitle1>{text}</Subtitle1>;
-      break;
-  }
-  return (
-    <React.Fragment>
-      {content}
-    </React.Fragment>
-  );
-}
-
-function Text({ text, size }) {
-  let content;
-  switch (size && size.toLowerCase()) {
-    case "body1":
+    case "2x":
       content = <Body1>{text}</Body1>;
       break;
-    case "body2":
+    case "1x":
       content = <Body2>{text}</Body2>;
-      break;
-    case "button":
-      content = <Button>{text}</Button>;
-      break;
-    case "caption":
-      content = <Caption>{text}</Caption>;
-      break;
-    case "overline":
-      content = <Overline>{text}</Overline>;
-      break;
-    case "underline":
-      content = <Underline>{text}</Underline>;
       break;
     default:
       content = <Body2>{text}</Body2>;
       break;
   }
+
+  switch (type && type.toLowerCase()) {
+    case "info":
+      textColor = "info";
+      break;
+    case "success":
+      textColor = "success";
+      break;
+    case "inverse":
+      textColor = "inverse";
+      break;
+    case "warning":
+      textColor = "warning";
+      break;
+    case "alert":
+      textColor = "alert";
+      break;
+    default:
+      textColor = "primary";
+      break;
+  }
+
+  switch (weight && weight.toLowerCase()) {
+    case "bold":
+      weightValue = "600";
+      break;
+    default:
+      break;
+  }
+
   return (
-    <React.Fragment>
+    <TextWrapper
+      weightValue={weightValue}
+      textColor={textColor}
+    >
       {content}
-    </React.Fragment>
+    </TextWrapper>
   );
 }
+
+
+function Label({
+  children,
+  htmlFor,
+  isRequired,
+  type,
+  size,
+  text,
+}) {
+  let letterSpacing;
+  let lineHeight;
+  let weight;
+  switch (type && type.toLowerCase()) {
+    case "normal":
+      weight = "400";
+      letterSpacing = "0.125px";
+      lineHeight = "1px";
+      break;
+    case "bold":
+      weight = "600";
+      letterSpacing = "0.5px";
+      break;
+    default:
+      weight = "400";
+      letterSpacing = "0.125px";
+      lineHeight = "1px";
+      break;
+  }
+  return (
+    <StyledLabel
+      fontWeight={weight}
+      isRequired={isRequired}
+      htmlFor={htmlFor}
+      lineHeight={lineHeight}
+      letterSpacing={letterSpacing}
+      fontSize={size}
+    >
+      {text || children}
+    </StyledLabel>
+  );
+}
+Label.propTypes = {
+  htmlFor: PropTypes.node,
+  children: PropTypes.node,
+  isRequired: PropTypes.bool,
+  size: PropTypes.string,
+  type: PropTypes.string,
+  text: PropTypes.string,
+};
+Label.defaultProps = {
+  htmlFor: null,
+  children: null,
+  isRequired: false,
+  size: null,
+  type: null,
+  text: null,
+};
 
 
 Title.propTypes = {
   text: PropTypes.string,
   size: PropTypes.node,
+  type: PropTypes.string,
 };
 Title.defaultProps = {
   text: null,
   size: null,
+  type: null,
 };
 
-
-SubTitle.propTypes = {
-  text: PropTypes.string,
-  size: PropTypes.node,
-};
-SubTitle.defaultProps = {
-  text: null,
-  size: null,
-};
 
 Text.propTypes = {
   text: PropTypes.string,
   size: PropTypes.node,
+  type: PropTypes.node,
+  weight: PropTypes.node,
 };
 Text.defaultProps = {
   text: null,
   size: null,
+  type: null,
+  weight: null,
 };
+
+
+Caption.propTypes = {
+  text: PropTypes.string,
+};
+Caption.defaultProps = {
+  text: null,
+};
+
+Subscript.propTypes = {
+  text: PropTypes.string,
+};
+Subscript.defaultProps = {
+  text: null,
+};
+
 
 Link.propTypes = {
   text: PropTypes.string,
@@ -310,25 +422,5 @@ Link.defaultProps = {
   disabled: false,
 };
 
-Body.propTypes = {
-  text: PropTypes.string,
-};
-Body.defaultProps = {
-  text: null,
-};
 
-Description.propTypes = {
-  text: PropTypes.string,
-};
-Description.defaultProps = {
-  text: null,
-};
-
-Headline.propTypes = {
-  text: PropTypes.string,
-};
-Headline.defaultProps = {
-  text: null,
-};
-
-export { Text as default, Title, Link, Body, SubTitle, Description, Headline };
+export { Text as default, Title, Caption, Subscript, Label, Link };

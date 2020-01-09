@@ -3,8 +3,7 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
-import Text, { Title } from "base/Typography";
-import Label from "atoms/Label";
+import Text, { Subscript, Label } from "base/Typography";
 import Grid from "layout/Grid";
 
 const CheckboxWrapper = styled(Grid)`
@@ -152,7 +151,7 @@ function Checkbox({
         onBlur={onBlur}
         onFocus={onFocus}
       />
-      {label ? <Label weight="400" htmlFor={id} text={label} /> : null}
+      {label ? <Label htmlFor={id} text={label} /> : null}
     </CheckboxContainer>
   );
 }
@@ -194,9 +193,9 @@ function CheckboxGroup({
       id={id}
     >
       {label ? (
-        <Text isRequired={isRequired} text={label} />
+        <Text weight="bold" isRequired={isRequired} text={label} />
       ) : null}
-      {helpText ? <Text size="caption" text={helpText} /> : null}
+      {helpText ? <Subscript text={helpText} /> : null}
       <InputGroup columns={columns}>
         {children ||
           data.map((item) => {
@@ -218,7 +217,7 @@ function CheckboxGroup({
             );
           })}
       </InputGroup>
-      {errorText ? <Text size="caption" text={errorText} /> : null}
+      {errorText ? <Subscript text={errorText} /> : null}
     </CheckboxWrapper>
   );
 }

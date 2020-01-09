@@ -4,9 +4,8 @@ import React, { useState, useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
-import Label from "atoms/Label";
 import Grid from "layout/Grid";
-import Text from "base/Typography";
+import Text, { Caption, Subscript } from "base/Typography";
 import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";
 import Button from "atoms/Button";
@@ -121,9 +120,9 @@ function InputBlock({
   } else if (text) {
     inputContainer = (
       <Grid columns={gridColumns} gap="tiny">
-        {prefix ? <Label type="bold" text={text} /> : null}
+        {prefix ? <Text type="bold" text={text} /> : null}
         {inputElements}
-        {!prefix ? <Label type="bold" text={text} /> : null}
+        {!prefix ? <Text type="bold" text={text} /> : null}
       </Grid>
     );
   } else if (options) {
@@ -197,10 +196,10 @@ function InputBlock({
         prefix={prefix}
         text={text}
       >
-        {label ? <Text size="overline" isRequired={isRequired} text={label} /> : null}
+        {label ? <Caption isRequired={isRequired} text={label} /> : null}
         {inputContainer}
-        {helpText ? <Text size="underline" text={helpText} /> : null}
-        {errorText ? <Text size="underline" text={errorText} /> : null}
+        {helpText ? <Subscript text={helpText} /> : null}
+        {errorText ? <Subscript text={errorText} /> : null}
       </TextInputContainer>
     </DisabledContext.Provider>
   );

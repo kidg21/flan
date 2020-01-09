@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 import styledNormalize from "styled-normalize";
 import { Skeleton } from "helpers";
 // Import variables
-import { fonts, fontSize, Lighten, Darken } from "Variables";
+import { fonts, fontSize } from "Variables";
 // Import Fonts
 import "css/fonts.css";
 // Import Icons
@@ -27,15 +27,7 @@ const GlobalStyles = createGlobalStyle`
     *::after {
         box-sizing: inherit;
     }
-    body {
-        /* position: fixed; */
-        width: 100%;
-        height: 100%;
-        font-family: ${fonts.body};
-        font-weight: 400;
-        line-height: 1.45;
-        overscroll-behavior: none;
-    }
+
 
     /* Typography resets */
     div,
@@ -63,111 +55,48 @@ const GlobalStyles = createGlobalStyle`
 
     /* Default Link Styles */
     a {
-      line-height: inherit;
-      text-decoration: none;
-      padding: .5em;
-      margin: -.5em;
-      cursor: pointer;
-      &:empty {
-        &:before {
-          ${Skeleton};
-          height: 1.3em;
-          width: 10rem;
-        }
-      }
-      &:hover,
-      &:focus {
-        ${Darken};
-      }
-      &:active {
-        ${Lighten};
+      
       }
       img { border: none; }
       }
 
     /* Default paragraph styles */
     h1, h2, h3, h4, h5, h6, p {
-        font-style: normal;
-        color: inherit;
-        width: fit-content;
+     
     }
     p {
         // font-family: inherit;
         // margin: 0 0 1rem;
     }
     h1, h2, h3, h4, h5, h6 {
-        // font-family: ${fonts.headline};
-        // margin: 0 0 .5rem;
     }
     // h1 {
-    //     font-size: 70px;
-    //     font-weight: 300;
-    //     letter-spacing: -1.5;
-    //     &:empty {
-    //         &:before {
-    //           ${Skeleton};
-    //           height: 1.3em;
-    //           width: 5em;
+  
     //         }
     //       }
     // }
     // h2 {
-    //     font-size: 60px;
-    //     font-weight: 300;
-    //     letter-spacing: -0.5;
-    //     &:empty {
-    //         &:before {
-    //           ${Skeleton};
-    //           height: 1.3em;
-    //           width: 10rem;
+  
     //         }
     //       }
     // }
     // h3 {
-    //     font-size: 48px;
-    //     font-weight: 400;
-    //     letter-spacing: 0;
-    //     &:empty {
-    //         &:before {
-    //           ${Skeleton};
-    //           height: 1.3em;
-    //           width: 10rem;
+  
     //         }
     //       }
     // }
     // h4 {
-    //     font-size: 16px;
-    //     font-weight: 400;
-    //     letter-spacing: 0.25;
-    //     &:empty {
-    //         &:before {
-    //           ${Skeleton};
-    //           height: 1.4rem;
-    //           width: 40vw;
+    //
     //         }
     //       }
     // }
     // h5 {
-    //     font-size: 24px;
-    //     font-weight: 400;
-    //     letter-spacing: 0;
-    //     &:empty {
-    //         &:before {
-    //           ${Skeleton};
-    //           height: 1.5em;
-    //           width: 10rem;
+    //   
     //         }
     //       }
     // }
     // h6 {
-    //     font-size: 20px;
-    //     font-weight: 700;
-    //     letter-spacing: 0.15;
-    //     &:empty {
-    //         &:before {
-    //           ${Skeleton};
-    //           height: 1.3em;
-    //           width: 10rem;
+    //  
     //         }
     //       }
     // }

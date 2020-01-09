@@ -5,8 +5,7 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
 import { DisabledContext } from "States";
-import Label from "atoms/Label";
-import Text from "base/Typography";
+import { Caption, Subscript } from "base/Typography";
 import TextInput from "atoms/TextInput";
 
 const CalendarContainer = styled(Grid)`
@@ -124,10 +123,10 @@ function Calendar({
       inputTextColor={inputTextColor}
       isRequired={isRequired}
     >
-      {label ? <Text size="overline" isRequired={isRequired} text={label} /> : null}
+      {label ? <Caption isRequired={isRequired} text={label} /> : null}
       {inputContainer}
-      {helpText ? <Text size="underline" text={helpText} /> : null}
-      {errorText ? <Text size="underline" text={errorText} /> : null}
+      {helpText ? <Subscript text={helpText} /> : null}
+      {errorText ? <Subscript text={errorText} /> : null}
     </CalendarContainer>
   );
 }

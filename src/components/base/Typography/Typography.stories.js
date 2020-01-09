@@ -3,13 +3,6 @@
 import React from "react";
 
 import Grid from "layout/Grid";
-import Title, {
-  Headline,
-  SubTitle,
-  Description,
-  Body,
-  Link
-} from "base/Typography";
 
 /** TODO: Add 'Documentation' and 'Knobs' stories */
 storiesOf("Application|Style Guides/", module).addDecorator(withInfo);

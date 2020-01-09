@@ -3,13 +3,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Icon from "atoms/Icon";
-import Label from "atoms/Label";
+import { Caption } from "base/Typography";
 
 const TagContainer = styled.div`
   justify-content: center;
   display: flex;
   width: fit-content;
   align-items: center;
+  weight: 600;
   background-color: ${(props) => {
     return props.theme.palette[props.badgeColor];
   }};
@@ -35,7 +36,7 @@ function Tag({
     iconType = <Icon icon={icon} size="2x" type={type} />;
     badgePadding = "0 0.25em";
   } else {
-    labelType = <Label type="bold" size="12px" text={label} />;
+    labelType = <Caption text={label} />;
     badgeTextColor = "inverse";
     badgePadding = "0.105em .58em";
     switch (type) {

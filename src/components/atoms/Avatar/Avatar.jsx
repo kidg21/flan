@@ -3,14 +3,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Icon from "atoms/Icon";
-import Label from "atoms/Label";
+import Text from "base/Typography";
 
 const TagContainer = styled.div`
   justify-content: center;
   vertical-align: center;
   display: flex;
-  width: 2.7rem;
-  height: 2.7rem;
+  width: 30px;
+  height: 30px;
   align-items: center;
   background-color: ${(props) => {
     return props.theme.palette[props.backgroundColor] || "";
@@ -65,7 +65,7 @@ function Avatar({
   if (icon) {
     iconType = <Icon icon={icon} size="lg" />;
   } else {
-    labelType = <Label type="bold" text={label} size="14px" />;
+    labelType = <Text weight="bold" type="inverse" text={label} />;
   }
 
   return (

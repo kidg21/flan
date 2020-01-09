@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import Bar from "blocks/Bar";
 import styled from "styled-components";
-import Text, { Title, SubTitle } from "base/Typography";
+import Text, { Title } from "base/Typography";
 import Card from "layout/Card";
 
 const MenuContainer = styled.div`

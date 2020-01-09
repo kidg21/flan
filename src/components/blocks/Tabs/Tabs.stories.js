@@ -4,10 +4,6 @@ import { Padding } from "helpers/Display";
 import Tabs, { Tab } from "blocks/Tabs";
 import Grid from "layout/Grid";
 import Title, {
-  Headline,
-  SubTitle,
-  Description,
-  Body,
   Link,
 } from "base/Typography";
 

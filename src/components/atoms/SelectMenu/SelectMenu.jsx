@@ -5,8 +5,7 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import { fonts, colors, shadows } from "Variables";
 import Grid from "layout/Grid";
-import Text from "base/Typography";
-import Label from "atoms/Label";
+import { Subscript, Caption } from "base/Typography";
 import Select, { Creatable } from "react-select";
 import { Skeleton } from "helpers";
 import { DisabledContext } from "States";
@@ -292,12 +291,12 @@ function SelectMenu({
       columns="1"
       gap="tiny"
     >
-      {label ? <Text size="overline" isRequired={isRequired} text={label} /> : null}
+      {label ? <Caption isRequired={isRequired} text={label} /> : null}
       {select}
       {/* Help Text */}
-      {helpText ? <Text size="underline" text={helpText} /> : null}
+      {helpText ? <Subscript text={helpText} /> : null}
       {/* Error Message (required) */}
-      {errorText ? <Text size="underline" text={errorText} /> : null}
+      {errorText ? <Subscript text={errorText} /> : null}
     </SelectMenuContainer>
   );
 }
@@ -310,10 +309,10 @@ SelectMenu.propTypes = {
     PropTypes.string,
     PropTypes.shape({
       label: PropTypes.string,
-      value: PropTypes.any,
+      value: PropTypes.node,
     }),
-  ])).isRequired,
-  selectOptions: PropTypes.any,
+  ])),
+  selectOptions: PropTypes.node,
   label: PropTypes.string,
   isRequired: PropTypes.bool,
   disabled: PropTypes.bool,
@@ -336,6 +335,7 @@ SelectMenu.defaultProps = {
   id: null,
   name: null,
   placeholder: null,
+  options: null,
   selectOptions: null,
   label: null,
   isRequired: false,

@@ -8,7 +8,7 @@ import Image from "atoms/Image";
 // import Tag from "atoms/Tag";
 import Command from "atoms/Command";
 import Card, { CardSection } from "layout/Card";
-import { Headline, SubTitle, Body } from "base/Typography";
+import Text, { Title } from "base/Typography";
 import ExpandingSection from "./ExpandingSection.jsx";
 
 function CardComponent({
@@ -117,14 +117,14 @@ function CardComponent({
       ) : null}
       {title || description ? (
         <CardSection>
-          <Headline text={title} />
-          <SubTitle text={description} />
+          <Title text={title} />
+          <Title text={description} />
         </CardSection>
       ) : null}
       {/* {content ? <CardSection>{content}</CardSection> : null} */}
       {body ? (
         <CardSection>
-          <Body text={body} />
+          <Text text={body} />
         </CardSection>
       ) : null}
       {excess ? <CardSection>{excess}</CardSection> : null}

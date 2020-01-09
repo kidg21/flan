@@ -4,8 +4,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { DisabledContext } from "States";
 import Bar from "blocks/Bar";
-import Label from "atoms/Label";
-import Text from "base/Typography";
+import { Caption, Subscript } from "base/Typography";
 import Grid from "layout/Grid";
 import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";
@@ -71,7 +70,7 @@ function DataRange({
       gap="tiny"
     >
       {label ? (
-        <Text size="overline" isRequired={isRequired} text={label} />
+        <Caption isRequired={isRequired} text={label} />
       ) : null}
       <Bar
         padding="none"
@@ -124,9 +123,9 @@ function DataRange({
             />)
         }
       />
-      {helpText ? <Text size="underline" text={helpText} /> : null}
+      {helpText ? <Subscript text={helpText} /> : null}
       {typeof error === "string" && !isDisabled ? (
-        <Text size="underline" text={error} />
+        <Subscript text={error} />
       ) : null}
     </RangeContainer>
   );

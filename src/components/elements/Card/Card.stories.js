@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import { Body } from "base/Typography";
+import Text from "base/Typography";
 import Image from "atoms/Image";
 import { Padding } from "helpers/Display";
 import Card from "./Card.jsx";
@@ -13,8 +13,8 @@ const image = (
   />
 );
 
-const Text = (
-  <Body text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+const BodyText = (
+  <Text text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
 );
 
 storiesOf("Work|Card/Element", module)
@@ -32,14 +32,14 @@ storiesOf("Work|Card/Element", module)
     return <Card title="Title" description="Card Description" expands />;
   })
   .add("Body Text", () => {
-    return <Card title="Title" description="Card Description" body={Text} />;
+    return <Card title="Title" description="Card Description" body={BodyText} />;
   })
   .add("command", () => {
     return (
       <Card
         title="Title"
         description="Card Description"
-        body={Text}
+        body={BodyText}
         commands={[{ label: "Search" }, { label: "View" }]}
       />
     );
@@ -49,7 +49,7 @@ storiesOf("Work|Card/Element", module)
       <Card
         title="Title"
         description="Card Description"
-        body={Text}
+        body={BodyText}
         commands={[
           { label: "Search" },
           { label: "View" },
@@ -64,7 +64,7 @@ storiesOf("Work|Card/Element", module)
       <Card
         title="Title"
         description="Card Description"
-        body={Text}
+        body={BodyText}
         commands={[{ label: "Learn More" }]}
       />
     );

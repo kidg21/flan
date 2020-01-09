@@ -4,8 +4,7 @@ import { action } from "@storybook/addon-actions";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
 import Card, { CardSection } from "layout/Card";
-import Bade from "atoms/Badge";
-import Text, {Title, SubTitle, Link} from "base/Typography";
+import Text, {Title, Link, Caption, Subscript, Label} from "base/Typography";
 
 <Meta title="Application Guidelines|Typography" component={Text} />
 
@@ -16,25 +15,46 @@ import Text, {Title, SubTitle, Link} from "base/Typography";
 <Preview withToolbar>
   <Story name="Standard">
     <Grid columns="1">
-     <Title size="h1" text="H1 Title"/>
-     <Title size="h2" text="H2 Title"/>
-     <Title size="h3" text="H3 Title"/>
-     <Title size="h4" text="H4 Title"/>
-     <Title size="h5" text="H5 Title"/>
-     <Title size="h6" text="H6 Title"/>
-     <SubTitle text="Subtitle"/>
-     <SubTitle size="small" text="Subtitle 2"/>
-     <Text size="body1" text="Body text 1"/>
-     <Text size="body2" text="Body text 2"/>
-     <Text size="button" text="Button text"/>
-     <Text size="caption" text="Caption"/>
-     <Text size="overline" text="Overline"/>
-     <Text size="underline" text="Underline"/>
+     <Title size="6x" text="H1 Title"/>
+     <Title size="5x" text="H2 Title"/>
+     <Title size="4x" text="H3 Title"/>
+     <Title size="3x" text="H4 Title"/>
+     <Title size="2x" text="H5 Title"/>
+     <Title size="1x" text="H6 Title"/>
+     <Text size="2x" text="Body1"/>
+     <Text size="1x" text="Body2"/>
+     <Caption text="Caption"/>
+     <Subscript text="Subscript"/>
+    <Label text="Label"/>
+     <Link text="this is a link"/>
     </Grid>
   </Story>
 </Preview>
 
-# Usage
+# Title Colors
+
+<Preview withToolbar>
+  <Story name="Colors">
+    <Grid columns="1">
+    <Title type="primary" text="Primary Color"/>
+     <Title type="secondary" text="Secondary Color"/>
+    </Grid>
+  </Story>
+</Preview>
+
+# Text Colors
+
+<Preview withToolbar>
+  <Story name="TextColors">
+    <Grid columns="1">
+    <Text type="primary" text="Primary Color"/>
+     <Text type="info" text="Info Color"/>
+         <Text type="warning" text="Warning Color"/>
+     <Text type="alert" text="Alert Color"/>
+         <Text type="success" text="Success Color"/>
+    </Grid>
+  </Story>
+</Preview>
 
 Badges contain numeric values and indicate a running tally, such as the number of unread messages in a room. Use badges to label page items with a small amount of information that draws attention to new, updated or removed content. Badges are normally placed before or after the label of the thing they're quantifying. They can contain numbers, a max count (using a "+" sign to indicate a quantity greater than the displayed number), or a label to display status information.
 

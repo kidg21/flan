@@ -3,7 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
 import Button from "atoms/Button";
-import Text, { Title, SubTitle } from "base/Typography";
+import Text, { Title } from "base/Typography";
 import Card from "layout/Card";
 import Bar from "blocks/Bar";
 

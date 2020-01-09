@@ -1,6 +1,14 @@
 /* eslint-disable linebreak-style */
 import { css } from "styled-components";
 
+
+export const fonts = {
+  headline: "Nunito, Arial, sans-serif",
+  body: "Nunito, Arial, sans-serif",
+  data: "Nunito, Arial, sans-serif",
+  numbers: "Nunito, sans-serif",
+};
+
 // Codes for color palette
 export const colors = {
   // legacy values
@@ -177,6 +185,10 @@ export const colors = {
 };
 
 export const DMPTheme = {
+  typography: {
+    primary: fonts.body,
+    secondary: fonts.headline,
+  },
   background: {
     active: colors.greenTint,
     alert_active: colors.redTint,
@@ -264,6 +276,10 @@ export const DMPTheme = {
 };
 
 export const darkTheme = {
+  typography: {
+    primary: fonts.body,
+    secondary: fonts.headline,
+  },
   background: {
     active: colors.green,
     alert_active: colors.redDark,
@@ -379,13 +395,6 @@ export const Lighten = css`
   filter: brightness(115%);
 `;
 
-// Typefaces
-export const fonts = {
-  headline: "Nunito, Arial, sans-serif",
-  body: "Nunito, Arial, sans-serif",
-  data: "Nunito, Arial, sans-serif",
-  numbers: "Nunito, sans-serif",
-};
 
 // Sizes for typography scale
 export const fontSize = {
