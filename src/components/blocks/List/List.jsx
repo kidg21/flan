@@ -136,7 +136,7 @@ function ListItem({
     }
   } if (checkbox) {
     rightContent = (
-      <Checkbox label={checkbox} disabled={disabled} />
+      <Checkbox disabled={disabled} />
     );
   } else if (toggle) {
     rightContent = (

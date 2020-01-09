@@ -127,8 +127,10 @@ function Button({
   id,
   label,
   onClick,
-  underlineColor,
-  type,
+  round,
+  plain,
+  underlined,
+  solid,
 }) {
   let backgroundColor;
   let borderRadius;
@@ -196,52 +198,71 @@ function Button({
 
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  let underline = underlineColor;
-  if (type) {
-    if (type.toLowerCase() === "underlined") {
-      borderWidth = "0 0 2px 0";
-      borderStyle = "solid";
-      backgroundColor = "default";
-      fontWeight = "700";
-      borderRadius = "2px";
-      fontColor = buttonColor;
-      hoverColor = tintColor;
-      underline = fontColor;
-    } else if (type.toLowerCase() === "plain") {
-      borderWidth = "0px";
-      fontWeight = "700";
-      hoverColor = tintColor;
-      backgroundColor = "default";
-    } else if (type.toLowerCase() === "round") {
-      fontWeight = "700";
-      borderWidth = "1px 1px 1px 1px";
-      borderStyle = "solid";
-      borderRadius = "20px";
-      backgroundColor = "default";
-      hoverColor = tintColor;
-    } else if (type.toLowerCase() === "roundsolid") {
-      fontWeight = "700";
-      borderWidth = "1px 1px 1px 1px";
-      borderStyle = "solid";
-      borderRadius = "20px";
-      fontColor = "white";
-      hoverColor = shadeColor;
-      borderColor = buttonColor;
-      backgroundColor = buttonColor;
-    } else if (type.toLowerCase() === "solid") {
-      fontColor = "white";
-      borderWidth = "1px 1px 1px 1px";
-      borderStyle = "solid";
-      borderColor = buttonColor;
-      hoverColor = shadeColor;
-      backgroundColor = buttonColor;
-    }
+
+
+  if (underlined) {
+    borderWidth = "0 0 2px 0";
+    borderStyle = "solid";
+  } else if (plain) {
+    borderWidth = "0px";
   } else {
-    hoverColor = tintColor;
     borderWidth = "1px";
-    borderColor = buttonColor;
     borderStyle = "solid";
   }
+
+  if (solid) {
+    fontColor = "white";
+    borderColor = buttonColor;
+    hoverColor = shadeColor;
+    backgroundColor = buttonColor;
+  } else {
+    hoverColor = tintColor;
+    borderColor = buttonColor;
+  }
+
+  if (round) {
+    borderRadius = "20px";
+  } else {
+    borderRadius = "4px";
+  }
+
+  //   if (underlined) {
+  //     borderWidth = "0 0 2px 0";
+  //     borderStyle = "solid";
+  //     backgroundColor = "default";
+  //     fontWeight = "700";
+  //     borderRadius = "2px";
+  //     fontColor = buttonColor;
+  //     hoverColor = tintColor;
+  //     underline = fontColor;
+  //   } else if (plain) {
+  //     borderWidth = "0px";
+  //     fontWeight = "700";
+  //     hoverColor = tintColor;
+  //     backgroundColor = "default";
+
+
+  //   } else if (type.toLowerCase() === "round") {
+  //     fontWeight = "700";
+  //     borderWidth = "1px 1px 1px 1px";
+  //     borderStyle = "solid";
+  //     borderRadius = "20px";
+  //     backgroundColor = "default";
+  //     hoverColor = tintColor;
+  //   }  else if (solid) {
+  //     fontColor = "white";
+  //     borderWidth = "1px 1px 1px 1px";
+  //     borderStyle = "solid";
+  //     borderColor = buttonColor;
+  //     hoverColor = shadeColor;
+  //     backgroundColor = buttonColor;
+  //   }
+  // } else {
+  //   hoverColor = tintColor;
+  //   borderWidth = "1px";
+  //   borderColor = buttonColor;
+  //   borderStyle = "solid";
+  // }
   if (isDisabled) {
     fontColor = "white";
     borderWidth = "1px";
@@ -310,7 +331,6 @@ function Button({
       borderWidth={borderWidth}
       borderStyle={borderStyle}
       htmlFor={htmlFor}
-      underlineColor={underline}
       disabled={isDisabled}
       borderRadius={borderRadius}
       hoverColor={hoverColor}
@@ -326,7 +346,10 @@ function Button({
       name={id}
       onClick={onClick}
       tabIndex={disabled ? "-1" : "1"}
-      type={type}
+      underlined={underlined}
+      plain={plain}
+      round={round}
+      solid={solid}
     >
       {content}
     </StyledButton>
@@ -351,8 +374,11 @@ Button.propTypes = {
   label: PropTypes.string,
   count: PropTypes.string,
   onClick: PropTypes.func,
-  underlineColor: PropTypes.string,
-  type: PropTypes.oneOf(["underlined", "inline", "solid"]),
+  round: PropTypes.bool,
+  underlined: PropTypes.bool,
+  solid: PropTypes.bool,
+  plain: PropTypes.bool,
+
 };
 
 Button.defaultProps = {
@@ -366,8 +392,10 @@ Button.defaultProps = {
   id: null,
   label: null,
   onClick: null,
-  type: null,
-  underlineColor: null,
+  round: null,
+  underlined: null,
+  solid: null,
+  plain: null,
 };
 
 export default Button;

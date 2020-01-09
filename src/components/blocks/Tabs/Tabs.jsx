@@ -94,7 +94,7 @@ function Tab({
           isSelected={isSelected}
           disabled={isDisabled}
           color={color}
-          type="underlined"
+          underlined
         />
       ) : (
           <TabButton
@@ -108,7 +108,7 @@ function Tab({
             isSelected={isSelected}
             disabled={isDisabled}
             color={color}
-            type="plain"
+            plain
           />
         )}
     </React.Fragment>

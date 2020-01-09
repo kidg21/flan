@@ -90,17 +90,17 @@ storiesOf("Atoms|Button", module)
     const story = (
       <Grid columns="2">
         <Button label="Standard Primary" />
-        <Button label="Solid Primary" type="solid" />
+        <Button label="Solid Primary" solid />
         <Button label="Standard Secondary" color="secondary" />
-        <Button label="Solid Secondary" type="solid" color="secondary" />
-        <Button label="Underline Primary" type="underlined" />
+        <Button label="Solid Secondary" solid color="secondary" />
+        <Button label="Underline Primary" underlined />
         <Button
           label="Underline Secondary"
-          type="underlined"
+          underlined
           color="secondary"
         />
         <Button label="Disabled Button" color="secondary" disabled />
-        <Button label="Disabled Underline" type="underlined" disabled />
+        <Button label="Disabled Underline" underlined disabled />
       </Grid>
     );
 
