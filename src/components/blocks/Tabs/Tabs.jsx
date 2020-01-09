@@ -48,7 +48,7 @@ const TabsWrapper = styled.section`
 `;
 
 function Tabs({
-  id, children, style,
+  id, children, style, vertical,
 }) {
   let setColumns;
   let border;
@@ -57,6 +57,13 @@ function Tabs({
   let setWidth;
   let setHeight;
   let setOrientation;
+
+
+  if (vertical) {
+    setColumns = "none";
+    setWidth = "auto";
+    setHeight = "100%";
+  }
 
   return (
     <TabsWrapper
@@ -117,6 +124,7 @@ function Tab({
 
 Tabs.propTypes = {
   id: PropTypes.string,
+  vertical: PropTypes.bool,
   children: PropTypes.node.isRequired,
   style: PropTypes.string,
 };
@@ -137,7 +145,7 @@ Tab.propTypes = {
 
 Tabs.defaultProps = {
   id: null,
-  align: null,
+  vertical: false,
   style: null,
 };
 

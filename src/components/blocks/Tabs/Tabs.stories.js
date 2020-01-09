@@ -187,10 +187,10 @@ storiesOf("Blocks|Tabs", module)
   })
   .add("Vertical Column", () => {
     return (
-      <Tabs align="vertical">
-        <Tab tabLabel="Tab" type="solid" />
-        <Tab tabLabel="Tab" type="solid" isSelected />
-        <Tab tabLabel="Tab" type="solid" />
+      <Tabs vertical>
+        <Tab tabLabel="Tab" />
+        <Tab tabLabel="Tab" isSelected />
+        <Tab tabLabel="Tab" />
       </Tabs>
     );
   })

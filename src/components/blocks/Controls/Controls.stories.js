@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
@@ -11,7 +12,6 @@ import {
   optionsKnob as options,
 } from "@storybook/addon-knobs";
 import Controls, { Control } from "blocks/Controls";
-import Grid from "layout/Grid";
 
 storiesOf("Blocks|Controls", module)
   .addDecorator(Padding)
@@ -150,15 +150,6 @@ storiesOf("Blocks|Controls", module)
       </Controls>
     );
   })
-  .add("Row-Wrap (responsive)", () => {
-    return (
-      <Controls columns="wrap">
-        <Control label="Control" />
-        <Control label="Control" />
-        <Control label="Control" />
-      </Controls>
-    );
-  })
 
   .add("Icon Controls", () => {
     return (
@@ -174,9 +165,7 @@ storiesOf("Blocks|Controls", module)
   .addDecorator(Padding)
   .add("Single-Select", () => {
     return React.createElement(() => {
-      const [activeSingleControl, setActiveSingleControl] = useState(
-        "Control1",
-      );
+      const [activeSingleControl, setActiveSingleControl] = useState("Control1");
       return (
         <Controls columns="">
           <Control
