@@ -593,24 +593,21 @@ function CardList({ children, className, columns, data, gap, id, inverse, rows, 
         data.map((item) => {
           return (
             <Card
-              audio={item.audio}
               body={item.body}
               commands={item.commands}
               description={item.description}
               icon={item.icon}
               id={item.id}
+              imageAlt={item.imageAlt}
               inverse={inverse}
               key={item.id}
               label={item.label}
-              image={item.image}
+              media={item.media}
+              mediaSource={item.mediaSource}
               more={item.more}
-              imageAlt={item.imageAlt}
               onClick={item.onClick}
               title={item.title}
               type={item.type}
-              video={item.video}
-              vimeo={item.vimeo}
-              youtube={item.youtube}
             />
           );
         })}
@@ -659,6 +656,7 @@ CardList.propTypes = {
     ])
   ]),
   id: PropTypes.string,
+  inverse: PropTypes.bool,
   /** Defines the heights of grid rows
    *
    * Options: Any switch case or any standard value accepted by the CSS Grid property, 'grid-template-rows'.
@@ -671,6 +669,7 @@ CardList.defaultProps = {
   columns: null,
   gap: null,
   id: null,
+  inverse: false,
   rows: null,
 }
 

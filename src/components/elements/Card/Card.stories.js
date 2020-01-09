@@ -335,7 +335,7 @@ storiesOf("Work|Card/Elements", module)
   })
   .add("Card List (configured)", () => {
     return (
-      <CardList columns="" data={data} />
+      <CardList data={data} />
     );
   })
   .add("Card List (containers-only)", () => {
