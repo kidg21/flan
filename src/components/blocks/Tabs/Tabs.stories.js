@@ -38,7 +38,7 @@ storiesOf("Blocks|Tabs", module)
         columns={options(
           "columns / row",
           {
-            "single row ( default )": "default",
+            "single row ( default )": null,
             "row wrap (responsive)": "wrap",
             "1 column / row": "1",
             "2 columns / row": "2",
@@ -46,19 +46,19 @@ storiesOf("Blocks|Tabs", module)
             "4 columns / row": "4",
             "5 columns / row": "5",
           },
-          "default",
+          null,
           { display: "radio" },
           "Tab Group",
         )}
         align={options(
           "align",
           {
-            "top ( default )": "default",
+            "top ( default )": "top",
             "left ( 1 column / vertical )": "left",
             "bottom": "bottom",
             "right ( 1 column / vertical )": "right",
           },
-          "default",
+          "top",
           { display: "radio" },
           "Tab Group",
         )}
@@ -79,6 +79,7 @@ storiesOf("Blocks|Tabs", module)
           )}
           tabLabel={text("Tab 1", "Tab 1", "Tab 1")}
           disabled={boolean("Disable 1", false, "Tab 1")}
+          onClick={() => { alert("Tab 1 clicked!"); }}
         />
         <Tab
           icon={select(
@@ -96,6 +97,7 @@ storiesOf("Blocks|Tabs", module)
           )}
           tabLabel={text("Tab 2", "Tab 2", "Tab 2")}
           disabled={boolean("Disable 2", false, "Tab 2")}
+          onClick={() => { alert("Tab 2 clicked!"); }}
         />
         <Tab
           icon={select(
@@ -113,6 +115,7 @@ storiesOf("Blocks|Tabs", module)
           )}
           tabLabel={text("Tab 3", "Tab 3", "Tab 3")}
           disabled={boolean("Disable 3", false, "Tab 3")}
+          onClick={() => { alert("Tab 3 clicked!"); }}
         />
         <Tab
           icon={select(
@@ -130,6 +133,7 @@ storiesOf("Blocks|Tabs", module)
           )}
           tabLabel={text("Tab 4", "Tab 4", "Tab 4")}
           disabled={boolean("Disable 4", false, "Tab 4")}
+          onClick={() => { alert("Tab 4 clicked!"); }}
         />
         <Tab
           icon={select(
@@ -147,6 +151,7 @@ storiesOf("Blocks|Tabs", module)
           )}
           tabLabel={text("Tab 5", "Tab 5", "Tab 5")}
           disabled={boolean("Disable 5", false, "Tab 5")}
+          onClick={() => { alert("Tab 5 clicked!"); }}
         />
       </Tabs>
     );
@@ -272,7 +277,7 @@ storiesOf("Blocks|Tabs", module)
     return React.createElement(() => {
       const [activeSingleTab, setActiveSingleTab] = useState("tab1");
       return (
-        <Tabs columns=""  >
+        <Tabs columns="">
           <Tab
             tabLabel="Tab 1"
             isSelected={activeSingleTab === "tab1"}
@@ -382,33 +387,33 @@ storiesOf("Blocks|Tabs", module)
       const [activeMultiTab3, setActiveMultiTab3] = useState(false);
       return (
         <Grid columns="1">
-        <Tabs columns="" >
-          <Tab
-          type="inline"
-            tabLabel="Tab 1"
-            isSelected={activeMultiTab}
-            onClick={() => {
-              setActiveMultiTab(!activeMultiTab);
-            }}
-          />
-          <Tab
-          type="inline"
-            tabLabel="Tab 2"
-            isSelected={activeMultiTab2}
-            onClick={() => {
-              setActiveMultiTab2(!activeMultiTab2);
-            }}
-          />
-          <Tab
-          type="inline"
-            tabLabel="Tab 3"
-            isSelected={activeMultiTab3}
-            onClick={() => {
-              setActiveMultiTab3(!activeMultiTab3);
-            }}
-          />
-        </Tabs>
-      </Grid>
+          <Tabs columns="" >
+            <Tab
+              type="inline"
+              tabLabel="Tab 1"
+              isSelected={activeMultiTab}
+              onClick={() => {
+                setActiveMultiTab(!activeMultiTab);
+              }}
+            />
+            <Tab
+              type="inline"
+              tabLabel="Tab 2"
+              isSelected={activeMultiTab2}
+              onClick={() => {
+                setActiveMultiTab2(!activeMultiTab2);
+              }}
+            />
+            <Tab
+              type="inline"
+              tabLabel="Tab 3"
+              isSelected={activeMultiTab3}
+              onClick={() => {
+                setActiveMultiTab3(!activeMultiTab3);
+              }}
+            />
+          </Tabs>
+        </Grid>
       );
     });
   })
@@ -419,33 +424,33 @@ storiesOf("Blocks|Tabs", module)
       const [activeMultiTab3, setActiveMultiTab3] = useState(false);
       return (
         <Grid columns="1">
-        <Tabs columns="" >
-          <Tab
-          type="inactive"
-            tabLabel="Tab 1"
-            isSelected={activeMultiTab}
-            onClick={() => {
-              setActiveMultiTab(!activeMultiTab);
-            }}
-          />
-          <Tab
-          type="inactive"
-            tabLabel="Tab 2"
-            isSelected={activeMultiTab2}
-            onClick={() => {
-              setActiveMultiTab2(!activeMultiTab2);
-            }}
-          />
-          <Tab
-          type="inactive"
-            tabLabel="Tab 3"
-            isSelected={activeMultiTab3}
-            onClick={() => {
-              setActiveMultiTab3(!activeMultiTab3);
-            }}
-          />
-        </Tabs>
-      </Grid>
+          <Tabs columns="" >
+            <Tab
+              type="inactive"
+              tabLabel="Tab 1"
+              isSelected={activeMultiTab}
+              onClick={() => {
+                setActiveMultiTab(!activeMultiTab);
+              }}
+            />
+            <Tab
+              type="inactive"
+              tabLabel="Tab 2"
+              isSelected={activeMultiTab2}
+              onClick={() => {
+                setActiveMultiTab2(!activeMultiTab2);
+              }}
+            />
+            <Tab
+              type="inactive"
+              tabLabel="Tab 3"
+              isSelected={activeMultiTab3}
+              onClick={() => {
+                setActiveMultiTab3(!activeMultiTab3);
+              }}
+            />
+          </Tabs>
+        </Grid>
       );
     });
   });

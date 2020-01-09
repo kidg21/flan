@@ -1,7 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -127,6 +124,7 @@ function Radio({
     case "right":
       alignInput = "'label input'";
       break;
+    case "left":
     default:
       alignInput = "'input label'";
       break;
@@ -176,7 +174,7 @@ function RadioGroup({
   if (!isDisabled) {
     if (error) {
       inputTextColor = "alert";
-      errorText = error;
+      if (typeof error === "string") errorText = error;
     } else if (warning) {
       inputTextColor = "warning";
       errorText = warning;
@@ -185,7 +183,6 @@ function RadioGroup({
 
   return (
     <RadioWrapper
-      align={align}
       disabled={isDisabled}
       columns="1"
       gap="small"
@@ -221,7 +218,7 @@ function RadioGroup({
 }
 
 Radio.propTypes = {
-  align: PropTypes.oneOf(["default", "right"]),
+  align: PropTypes.oneOf(["left", "right"]),
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
   error: PropTypes.bool,
@@ -255,17 +252,9 @@ Radio.defaultProps = {
 };
 
 RadioGroup.propTypes = {
-  align: PropTypes.oneOf(["default", "right"]),
+  align: PropTypes.oneOf(["left", "right"]),
   children: PropTypes.node,
-  columns: PropTypes.oneOf([
-    "auto" /* default */,
-    "1",
-    "2",
-    "3",
-    "4",
-    "5",
-    "6",
-  ]),
+  columns: PropTypes.oneOf(["1", "2", "3", "4", "5", "6"]),
   data: PropTypes.oneOfType([PropTypes.array, PropTypes.string]),
   disabled: PropTypes.bool,
   error: PropTypes.string,

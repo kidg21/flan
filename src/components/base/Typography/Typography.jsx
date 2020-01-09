@@ -1,9 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/prop-types */
-/* eslint-disable complexity */
-/* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
@@ -85,101 +80,36 @@ const StyledCode = styled.code`
 }
 `;
 
-function Text({
-  align,
-  children,
-  className,
-  count,
-  disabled,
-  font,
-  href,
-  id,
-  link,
-  onClick,
-  opacity,
-  select,
-  size,
-  spacing,
-  styling,
-  target,
-  text,
-  title,
-  type,
-  weight,
-  margin,
+const sizeHash = {
+  "xs": "label",
+  "sm": "h5",
+  "m": "h4",
+  "lg": "h3",
+  "2x": "h2",
+  "3x": "h1",
+};
+
+const weightHash = {
+  light: "300",
+  normal: "500",
+  semibold: "600",
+  bold: "700",
+};
+
+function parseProps({
+  font, type, size, align, weight, styling, spacing,
 }) {
-  let as;
-  let fontFamily;
-  let textColor;
-  let textWeight;
   let letterSpacing;
-  let textAlign;
   let textStyle;
   let textDecoration;
   let textWidth;
-  switch (font && font.toLowerCase()) {
-    case "numbers":
-      fontFamily = fonts.numbers;
-      break;
-    case "data":
-      fontFamily = fonts.data;
-      break;
-    default:
-      break;
-  }
-  switch (type && type.toLowerCase()) {
-    case "info":
-      textColor = "info";
-      break;
-    case "success":
-      textColor = "success";
-      break;
-    case "warning":
-      textColor = "warning";
-      break;
-    case "alert":
-      textColor = "alert";
-      break;
-    case "secondary":
-      textColor = "secondary";
-      break;
-    default:
-      // textColor = "primary";
-      break;
-  }
-  switch (size && size.toLowerCase()) {
-    case "xs":
-      as = "label";
-      break;
-    case "sm":
-      as = "h5";
-      break;
-    case "m":
-      as = "h4";
-      break;
-    case "lg":
-      as = "h3";
-      break;
-    case "2x":
-      as = "h2";
-      break;
-    case "3x":
-      as = "h1";
-      break;
-    default:
-      as = "h4";
-      break;
-  }
-  switch (align && align.toLowerCase()) {
-    case "center":
-      textAlign = "center";
-      break;
-    case "right":
-      textAlign = "right";
-      break;
-    default:
-      break;
-  }
+
+  const fontFamily = font ? fonts[font.toLowerCase()] : null;
+  const textColor = type ? type.toLowerCase() : null;
+  const as = size ? (sizeHash[size.toLowerCase()] || "h4") : "h4";
+  const textAlign = align ? align.toLowerCase() : null;
+  const textWeight = weight ? (weightHash[weight.toLowerCase()] || "500") : "500";
+
   switch (styling && styling.toLowerCase()) {
     case "underline":
       textDecoration = "underline";
@@ -190,56 +120,72 @@ function Text({
     default:
       break;
   }
-  switch (weight && weight.toLowerCase()) {
-    case "light":
-      textWeight = "300";
-      break;
-    case "normal":
-      textWeight = "500";
-      break;
-    case "semibold":
-      textWeight = "600";
-      break;
-    case "bold":
-      textWeight = "700";
-      break;
-    default:
-      textWeight = "500";
-      break;
-  }
+
   const numSpacing = spacing ? parseInt(spacing, 10) : 0;
   if (numSpacing && !isNaN(numSpacing)) {
     letterSpacing = `${0.1 * (numSpacing - 1)}em`;
   }
+
+  return {
+    letterSpacing,
+    textStyle,
+    textDecoration,
+    textWidth,
+    fontFamily,
+    textColor,
+    as,
+    textAlign,
+    textWeight,
+  };
+}
+
+function Text({
+  children,
+  className,
+  count,
+  disabled,
+  href,
+  id,
+  link,
+  onClick,
+  opacity,
+  select,
+  target,
+  text,
+  title,
+  margin,
+  ...props
+}) {
+  const textProps = parseProps(props);
   if (link) {
-    as = "a";
-    textColor = "link";
-    textWeight = "800";
-    textWidth = "max-content";
+    textProps.as = "a";
+    textProps.textColor = "link";
+    textProps.textWeight = "800";
+    textProps.textWidth = "max-content";
   }
   if (disabled) {
-    textColor = "disabled";
+    textProps.textColor = "disabled";
   }
   return (
     <StyledText
-      as={as}
+      as={textProps.as}
       margin={margin}
       className={className}
-      fontFamily={fontFamily}
+      fontFamily={textProps.fontFamily}
       href={href}
       onClick={onClick}
       opacity={opacity}
       target={target}
       title={title}
       id={id}
-      letterSpacing={letterSpacing}
+      letterSpacing={textProps.letterSpacing}
       select={select}
-      textAlign={textAlign}
-      textColor={textColor}
-      textDecoration={textDecoration}
-      textStyle={textStyle}
-      textWeight={textWeight}
-      textWidth={textWidth}
+      textAlign={textProps.textAlign}
+      textColor={textProps.textColor}
+      textDecoration={textProps.textDecoration}
+      textStyle={textProps.textStyle}
+      textWeight={textProps.textWeight}
+      textWidth={textProps.textWidth}
     >
       {text || children}
       {count ? (
@@ -270,6 +216,8 @@ Text.propTypes = {
   select: PropTypes.string,
   spacing: PropTypes.string,
   styling: PropTypes.oneOf(["underline", "italic"]),
+  disabled: PropTypes.bool,
+  margin: PropTypes.string,
 };
 Text.defaultProps = {
   align: null,
@@ -291,6 +239,8 @@ Text.defaultProps = {
   title: null,
   type: null,
   weight: null,
+  disabled: null,
+  margin: null,
 };
 
 function Headline({ text, children, ...textProps }) {
@@ -321,11 +271,13 @@ function Title({
 Title.propTypes = {
   number: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   text: PropTypes.string,
+  size: PropTypes.string,
   children: PropTypes.node,
 };
 Title.defaultProps = {
   number: null,
   text: null,
+  size: null,
   children: null,
 };
 
@@ -340,10 +292,12 @@ function SubTitle({
 }
 SubTitle.propTypes = {
   text: PropTypes.string,
+  textColor: PropTypes.string,
   children: PropTypes.node,
 };
 SubTitle.defaultProps = {
   text: null,
+  textColor: null,
   children: null,
 };
 
@@ -358,10 +312,12 @@ function Body({
 }
 Body.propTypes = {
   text: PropTypes.string,
+  weight: PropTypes.string,
   children: PropTypes.node,
 };
 Body.defaultProps = {
   text: null,
+  weight: null,
   children: null,
 };
 
@@ -400,14 +356,18 @@ function Link({
   );
 }
 Link.propTypes = {
+  text: PropTypes.node,
   children: PropTypes.node,
+  title: PropTypes.string,
   href: PropTypes.string,
-  onClick: PropTypes.function,
+  onClick: PropTypes.func,
   /** _blank, _parent, _self, _top, framename */
   target: PropTypes.string,
 };
 Link.defaultProps = {
+  text: null,
   children: null,
+  title: null,
   onClick: null,
   href: null,
   target: null,
@@ -421,10 +381,11 @@ function Number({ text, children, ...textProps }) {
   );
 }
 Number.propTypes = {
-  text: PropTypes.number.isRequired,
+  text: PropTypes.string,
   children: PropTypes.node,
 };
 Number.defaultProps = {
+  text: null,
   children: null,
 };
 

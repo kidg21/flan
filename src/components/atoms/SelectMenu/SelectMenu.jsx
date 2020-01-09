@@ -1,6 +1,5 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable security/detect-object-injection */
 import React, { useContext, useState } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -200,7 +199,7 @@ function SelectMenu({
     textColor = "disabled";
   } else if (error) {
     textColor = "alert";
-    errorText = error;
+    if (typeof error === "string") errorText = error;
   } else if (warning) {
     textColor = "warning";
     errorText = warning;
@@ -317,7 +316,7 @@ SelectMenu.propTypes = {
   label: PropTypes.string,
   isRequired: PropTypes.bool,
   disabled: PropTypes.bool,
-  error: PropTypes.string,
+  error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   multiSelect: PropTypes.bool,
   isClearable: PropTypes.bool,
   isSearchable: PropTypes.bool,

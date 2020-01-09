@@ -1,7 +1,5 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React from "react";
 import { Padding } from "helpers/Display";
 import { CardList } from "elements/Card";
@@ -41,10 +39,8 @@ storiesOf("Blocks|Banner", module)
           null,
           "Settings",
         )}
-        icon={
-          boolean("icon", false, "Options") &&
-          select(
-            "icon select",
+        icon={select(
+            "icon",
             {
               user: "user",
               down: "down",
@@ -61,17 +57,13 @@ storiesOf("Blocks|Banner", module)
           text("title text", "This is a Banner", "Settings")
         }
         description={
-          boolean("description", false, "Options") &&
           text(
-            "description text",
+            "description",
             "A description can go here, if necessary.",
             "Settings",
           )
         }
-        link={
-          boolean("link", false, "Options") &&
-          text("link text", "Link Text", "Settings")
-        }
+        link={text("link", "Link Text", "Settings")}
       />
     );
   })
@@ -95,7 +87,6 @@ storiesOf("Blocks|Banner", module)
     return (
       <CardList>
         <Banner
-          type="media"
           icon="user"
           title="This is a Banner."
           description="A description can go here, if necessary."

@@ -1,17 +1,10 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable no-console */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
-/* eslint-disable no-unused-vars */
-import React, { useState } from "react";
+import React from "react";
 
 import PropertyPanelHeader from "elements/PanelHeaders/PropertyPanelHeader";
 import Legend from "blocks/Legend";
-import Form, { Section } from "layout/Form";
 import Card from "elements/Card";
-import Divider from "atoms/Divider";
-import { CardList } from "elements/Card";
 import Panel, { PanelSection } from "layout/Panel";
 import List, { ListItem } from "blocks/List";
 
@@ -81,7 +74,7 @@ storiesOf("Templates|Panel", module).add("Property Panel", () => {
           title="2801 Kelvin Avenue, Irvine, CA 92614"
           APN="374-342-8957"
           menuData={data}
-          onClick={() => {}}
+          onClick={() => { }}
         />
       </PanelSection>
       <PanelSection body>

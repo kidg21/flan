@@ -1,25 +1,27 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable no-alert */
 /* eslint-disable security/detect-object-injection */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React, { useState } from "react";
-
-
-import { Padding } from "helpers/Display";
-import Icon from "atoms/Icon";
-import DataTable from "./DataTable";
+import Title from "base/Typography";
+import Layout from "layout/Layout";
+import Panel, { PanelSection } from "layout/Panel";
+import Card from "elements/Card";
+import Menu from "blocks/Menu";
+import Button from "atoms/Button";
+import Command from "atoms/Command";
+import SelectMenu from "atoms/SelectMenu";
+import Bar from "blocks/Bar";
+import DataTable from "blocks/Table";
 
 // Only columns specified here will be displayed
 const headers = [
-  { id: "options", label: "" },
-  { id: "ACREAGE", label: "Acreage" },
-  { id: "AGGR_ACREAGE", label: "Aggregate Acreage" },
+  { id: "options", label: "Actions" },
+  { id: "ACREAGE", label: "Acreage", sortable: true },
+  { id: "AGGR_ACREAGE", label: "Aggregate Acreage", sortable: true },
   { id: "AGGR_LOT_COUNT", label: "Aggregate Lot Count" },
   { id: "APN", label: "APN" },
-  { id: "BUILDING_SQFT", label: "Building SQFT" },
-  { id: "DATE_TRANSFER", label: "Date Transfer" },
+  { id: "BUILDING_SQFT", label: "Building SQFT", sortable: true },
+  { id: "DATE_TRANSFER", label: "Date Transfer", sortable: true },
   { id: "LAND_SQFT", label: "Land SQFT" },
   { id: "MAIL_ADDR", label: "Mailing Address" },
   { id: "OWNER_NAME_1", label: "Owner Name 1" },
@@ -361,23 +363,213 @@ const data = [
   },
 ];
 
+const menu = [
+  {
+    id: "a",
+    onClickLink: () => {
+      console.log("clicked Save");
+    },
+    name: "Save",
+  },
+  {
+    id: "b",
+    onClickLink: () => {
+      console.log("clicked Filter");
+    },
+    name: "Filter",
+  },
+  {
+    id: "c",
+    onClickLink: () => {
+      console.log("clicked Share");
+    },
+    name: "Share",
+  },
+  {
+    id: "d",
+    onClickLink: () => {
+      console.log("clicked Refresh");
+    },
+    name: "Refresh",
+  },
+  {
+    id: "e",
+    onClickLink: () => {
+      console.log("clicked Layer");
+    },
+    name: "Layer",
+  },
+];
+
+const options = [
+  { value: "chocolate", label: "Chocolate" },
+  { value: "strawberry", label: "Strawberry" },
+  { value: "vanilla", label: "Vanilla" },
+  { value: "pistachio", label: "Pistachio" },
+  { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
+  { value: "cookie dough", label: "Cookie Dough" },
+];
+
+// export default {
+//   title: "Blocks|Table/Tests",
+//   parameters: {},
+//   includeStories: [],
+// };
+
+// export const Simple = () => {
+//   return (
+//     <Panel>
+//       <DataTable
+//         headers={headers.slice(1)}
+//         rows={data}
+//         listId="foo"
+//         columnWidth={180}
+//       />
+//     </Panel>
+//   );
+// };
+
+// export const Interactive = () => {
+//   return React.createElement(() => {
+//     const [highlightedCell, setHighlightCell] = useState(null);
+//     const [selectedCell, setSelectedCell] = useState(null);
+//     const onCellClick = (e, { rowIndex }) => {
+//       setSelectedCell({ rowIndex });
+//     };
+
+//     const onHeaderClick = (e, { columnIndex }) => {
+//       alert(`Header ${columnIndex}: ${headers[columnIndex].id} clicked`);
+//     };
+
+//     const onCellMouseOver = (e, { rowIndex }) => {
+//       setHighlightCell({ rowIndex });
+//     };
+
+//     return (
+//       <Layout>
+//         <DataTable
+//           headers={headers.slice(1)}
+//           rows={data}
+//           listId="foo"
+//           onCellClick={onCellClick}
+//           onHeaderClick={onHeaderClick}
+//           onCellMouseOver={onCellMouseOver}
+//           highlightedCell={highlightedCell}
+//           selectedCell={selectedCell}
+//           columnWidth={180}
+//         />
+//       </Layout>
+//     );
+//   });
+// };
+
 storiesOf("Blocks|Table", module)
-  .addDecorator(Padding)
-  .addDecorator(withInfo)
-  .add("Data Table", () => {
+  // .addDecorator(Container)
+  .add("Simple", () => {
+    return (
+      <Layout>
+        <DataTable
+          headers={headers.slice(1)}
+          rows={data}
+          listId="foo"
+          columnWidth={180}
+        />
+      </Layout>
+    );
+  })
+
+  .add("Interactive", () => {
+    return React.createElement(() => {
+      const [highlightedCell, setHighlightCell] = useState(null);
+      const [selectedCell, setSelectedCell] = useState(null);
+      const onCellClick = (e, { rowIndex }) => {
+        setSelectedCell({ rowIndex });
+      };
+
+      const onHeaderClick = (e, { columnIndex }) => {
+        alert(`Header ${columnIndex}: ${headers[columnIndex].id} clicked`);
+      };
+
+      const onCellMouseOver = (e, { rowIndex }) => {
+        setHighlightCell({ rowIndex });
+      };
+
+      return (
+        <Layout>
+          <DataTable
+            headers={headers.slice(1)}
+            rows={data}
+            listId="foo"
+            onCellClick={onCellClick}
+            onHeaderClick={onHeaderClick}
+            onCellMouseOver={onCellMouseOver}
+            highlightedCell={highlightedCell}
+            selectedCell={selectedCell}
+            columnWidth={180}
+          />
+        </Layout>
+      );
+    });
+  })
+
+  .add("In a Panel (with Header and Footer)", () => {
+    return React.createElement(() => {
+      const [highlightedCell, setHighlightCell] = useState(null);
+      const [selectedCell, setSelectedCell] = useState(null);
+      const onCellClick = (e, { rowIndex }) => {
+        setSelectedCell({ rowIndex });
+      };
+
+      const onHeaderClick = (e, { columnIndex }) => {
+        alert(`Header ${columnIndex}: ${headers[columnIndex].id} clicked`);
+      };
+
+      const onCellMouseOver = (e, { rowIndex }) => {
+        setHighlightCell({ rowIndex });
+      };
+      return (
+        <Layout>
+          <Panel>
+            <PanelSection>
+              <Card>
+                <Bar center={<Title text="Header Section" />} />
+              </Card>
+            </PanelSection>
+            <DataTable
+              headers={headers.slice(1)}
+              rows={data}
+              listId="foo"
+              onCellClick={onCellClick}
+              onHeaderClick={onHeaderClick}
+              onCellMouseOver={onCellMouseOver}
+              highlightedCell={highlightedCell}
+              selectedCell={selectedCell}
+              columnWidth={180}
+            />
+            <PanelSection>
+              <Card>
+                <Bar center={<Title text="Footer Section" />} />
+              </Card>
+            </PanelSection>
+          </Panel>
+        </Layout>
+      );
+    });
+  })
+
+  .add("With Actions (Menu)", () => {
     return React.createElement(() => {
       const [highlightedCell, setHighlightCell] = useState(null);
       const [selectedCell, setSelectedCell] = useState(null);
       for (let i = 0; i < data.length; i++) {
         data[i].options = React.createElement(
-          Icon,
+          Menu,
           {
-            icon: "edit",
-            type: "info",
-            onClick: (e) => {
-              e.stopPropagation();
-              alert(`data entry edit ${i} clicked`);
-            },
+            data: menu,
+            // onClick: e => {
+            //   e.stopPropagation();
+            //   alert(`data entry edit ${i} clicked`);
+            // }
           },
           null,
         );
@@ -396,17 +588,164 @@ storiesOf("Blocks|Table", module)
       };
 
       return (
-        <DataTable
-          headers={headers}
-          rows={data}
-          listId="foo"
-          onCellClick={onCellClick}
-          onHeaderClick={onHeaderClick}
-          onCellMouseOver={onCellMouseOver}
-          highlightedCell={highlightedCell}
-          selectedCell={selectedCell}
-          columnWidth={120}
-        />
+        <Layout>
+          <DataTable
+            headers={headers}
+            rows={data}
+            listId="foo"
+            onCellClick={onCellClick}
+            onHeaderClick={onHeaderClick}
+            onCellMouseOver={onCellMouseOver}
+            highlightedCell={highlightedCell}
+            selectedCell={selectedCell}
+            columnWidth={180}
+          />
+        </Layout>
+      );
+    });
+  })
+
+  .add("With Actions (Button)", () => {
+    return React.createElement(() => {
+      const [highlightedCell, setHighlightCell] = useState(null);
+      const [selectedCell, setSelectedCell] = useState(null);
+      for (let i = 0; i < data.length; i++) {
+        data[i].options = React.createElement(
+          Button,
+          {
+            label: "Click Me!",
+            // onClick: (e) => {
+            //   e.stopPropagation();
+            //   alert(`data entry edit ${i} clicked`);
+            // },
+          },
+          null,
+        );
+      }
+
+      const onCellClick = (e, { rowIndex }) => {
+        setSelectedCell({ rowIndex });
+      };
+
+      const onHeaderClick = (e, { columnIndex }) => {
+        alert(`Header ${columnIndex}: ${headers[columnIndex].id} clicked`);
+      };
+
+      const onCellMouseOver = (e, { rowIndex }) => {
+        setHighlightCell({ rowIndex });
+      };
+
+      return (
+        <Layout>
+          <DataTable
+            headers={headers}
+            rows={data}
+            listId="foo"
+            onCellClick={onCellClick}
+            onHeaderClick={onHeaderClick}
+            onCellMouseOver={onCellMouseOver}
+            highlightedCell={highlightedCell}
+            selectedCell={selectedCell}
+            columnWidth={180}
+          />
+        </Layout>
+      );
+    });
+  })
+
+  .add("With Actions (Command)", () => {
+    return React.createElement(() => {
+      const [highlightedCell, setHighlightCell] = useState(null);
+      const [selectedCell, setSelectedCell] = useState(null);
+      for (let i = 0; i < data.length; i++) {
+        data[i].options = React.createElement(
+          Command,
+          {
+            command: "edit",
+            // onClick: e => {
+            //   e.stopPropagation();
+            //   alert(`data entry edit ${i} clicked`);
+            // }
+          },
+          null,
+        );
+      }
+
+      const onCellClick = (e, { rowIndex }) => {
+        setSelectedCell({ rowIndex });
+      };
+
+      const onHeaderClick = (e, { columnIndex }) => {
+        alert(`Header ${columnIndex}: ${headers[columnIndex].id} clicked`);
+      };
+
+      const onCellMouseOver = (e, { rowIndex }) => {
+        setHighlightCell({ rowIndex });
+      };
+
+      return (
+        <Layout>
+          <DataTable
+            headers={headers}
+            rows={data}
+            listId="foo"
+            onCellClick={onCellClick}
+            onHeaderClick={onHeaderClick}
+            onCellMouseOver={onCellMouseOver}
+            highlightedCell={highlightedCell}
+            selectedCell={selectedCell}
+            columnWidth={180}
+          />
+        </Layout>
+      );
+    });
+  })
+
+  .add("With Actions (Select)", () => {
+    return React.createElement(() => {
+      const [highlightedCell, setHighlightCell] = useState(null);
+      const [selectedCell, setSelectedCell] = useState(null);
+      for (let i = 0; i < data.length; i++) {
+        data[i].options = React.createElement(
+          SelectMenu,
+          {
+            placeholder: "Choose...",
+            options: options,
+            // onClick: e => {
+            //   e.stopPropagation();
+            //   alert(`data entry edit ${i} clicked`);
+            // }
+          },
+          null,
+        );
+      }
+
+      const onCellClick = (e, { rowIndex }) => {
+        setSelectedCell({ rowIndex });
+      };
+
+      const onHeaderClick = (e, { columnIndex }) => {
+        alert(`Header ${columnIndex}: ${headers[columnIndex].id} clicked`);
+      };
+
+      const onCellMouseOver = (e, { rowIndex }) => {
+        setHighlightCell({ rowIndex });
+      };
+
+      return (
+        <Layout>
+          <DataTable
+            headers={headers}
+            rows={data}
+            listId="foo"
+            onCellClick={onCellClick}
+            onHeaderClick={onHeaderClick}
+            onCellMouseOver={onCellMouseOver}
+            highlightedCell={highlightedCell}
+            selectedCell={selectedCell}
+            columnWidth={180}
+          />
+        </Layout>
       );
     });
   });
