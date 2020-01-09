@@ -37,11 +37,14 @@ display: flex;
       props.theme.background.default
     );
   }};
-  border: ${(props) => {
-    return props.border || "1px solid";
-  }};
   border-color: ${(props) => {
     return props.theme.palette[props.borderColor] || "";
+  }};
+  border-width: ${(props) => {
+    return props.borderWidth || "";
+  }};
+  border-style: ${(props) => {
+    return props.borderStyle || "";
   }};
   border-radius: ${(props) => {
     return props.borderRadius || "4px";
@@ -67,11 +70,8 @@ display: flex;
     return (
       props.theme.palette[props.hoverColor]);
   }};
-    border-bottom: ${(props) => {
-    return props.borderBottom || "";
-  }};
-    border-bottom-color: ${(props) => {
-    return props.theme.palette[props.underlineColor];
+    border: ${(props) => {
+    return props.hoverBorder || "";
   }};
   }
 
@@ -117,7 +117,6 @@ StyledButton.displayName = "Button";
 * */
 
 function Button({
-  border,
   className,
   color,
   count,
@@ -132,9 +131,10 @@ function Button({
   type,
 }) {
   let backgroundColor;
-  let borderBottom;
   let borderRadius;
   let hoverColor;
+  let borderWidth;
+  let borderStyle;
   let borderColor;
   let buttonColor;
   let buttonPadding;
@@ -196,30 +196,33 @@ function Button({
 
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  let borderStyle = border;
   let underline = underlineColor;
   if (type) {
     if (type.toLowerCase() === "underlined") {
-      borderStyle = "2px solid transparent";
+      borderWidth = "0 0 2px 0";
+      borderStyle = "solid";
       backgroundColor = "default";
       fontWeight = "700";
       borderRadius = "2px";
       fontColor = buttonColor;
       hoverColor = tintColor;
-      borderBottom = "2px solid";
       underline = fontColor;
     } else if (type.toLowerCase() === "plain") {
-      borderStyle = "2px solid transparent";
+      borderWidth = "0px";
       fontWeight = "700";
       hoverColor = tintColor;
       backgroundColor = "default";
     } else if (type.toLowerCase() === "round") {
       fontWeight = "700";
+      borderWidth = "1px 1px 1px 1px";
+      borderStyle = "solid";
       borderRadius = "20px";
       backgroundColor = "default";
       hoverColor = tintColor;
     } else if (type.toLowerCase() === "roundsolid") {
       fontWeight = "700";
+      borderWidth = "1px 1px 1px 1px";
+      borderStyle = "solid";
       borderRadius = "20px";
       fontColor = "white";
       hoverColor = shadeColor;
@@ -227,16 +230,24 @@ function Button({
       backgroundColor = buttonColor;
     } else if (type.toLowerCase() === "solid") {
       fontColor = "white";
+      borderWidth = "1px 1px 1px 1px";
+      borderStyle = "solid";
       borderColor = buttonColor;
       hoverColor = shadeColor;
       backgroundColor = buttonColor;
     }
   } else {
     hoverColor = tintColor;
+    borderWidth = "1px";
+    borderColor = buttonColor;
+    borderStyle = "solid";
   }
   if (isDisabled) {
     fontColor = "white";
+    borderWidth = "1px";
+    borderStyle = "solid";
     backgroundColor = "grey4";
+    borderColor = backgroundColor;
   }
 
   let content;
@@ -296,8 +307,8 @@ function Button({
   return (
     <StyledButton
       backgroundColor={backgroundColor}
-      border={borderStyle}
-      borderBottom={borderBottom}
+      borderWidth={borderWidth}
+      borderStyle={borderStyle}
       htmlFor={htmlFor}
       underlineColor={underline}
       disabled={isDisabled}
@@ -323,7 +334,6 @@ function Button({
 }
 
 Button.propTypes = {
-  border: PropTypes.string,
   htmlFor: PropTypes.node,
   className: PropTypes.string,
   color: PropTypes.oneOf([
@@ -346,7 +356,6 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  border: "1px solid",
   className: null,
   htmlFor: null,
   color: null,
