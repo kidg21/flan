@@ -17,6 +17,7 @@ import Label from "atoms/Label";
 const StyledButton = styled.button`
 display: flex;
   flex: auto;
+  box-sizing: border-box;
   z-index: 0;
   flex-direction: row;
   width: ${(props) => {
@@ -64,7 +65,9 @@ display: flex;
   }};
   transition: all 0.15s ease;
 
-  &:focus,
+  &:focus {
+    outline: none;
+  }
   &:hover { 
     background-color: ${(props) => {
     return (
@@ -77,6 +80,8 @@ display: flex;
 
   &:empty {
     ${Skeleton};
+    height: 2em;
+    weight: 8rem;
     border: 1px solid;
     }};
   }

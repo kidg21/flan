@@ -36,18 +36,18 @@ const ControlsWrapper = styled.section`
     return props.setHeight || "100%";
   }};
   ${ControlButton}:first-child {
-    border-radius: 20px 0 0 20px;
+    border-radius: 2rem 0 0 2rem;
     }};
   }
   ${ControlButton}:last-child {
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 2rem 2rem 0;
     }};
   }
 
 `;
 
 function Controls({
-  id, children, columns, style,
+  id, children, columns, style, disabled,
 }) {
   let setColumns;
   let border;
@@ -83,12 +83,15 @@ function Controls({
       break;
   }
 
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+
   return (
     <ControlsWrapper
       id={id}
       border={border}
       borderRadius={borderRadius}
       setColumns={setColumns}
+      disabled={isDisabled}
       setPosition={setPosition}
       backgroundColor={backgroundColor}
       setWidth={setWidth}
@@ -115,10 +118,10 @@ function Control({
           icon={icon}
           size={size}
           label={label}
+          type={type}
           onClick={onClick}
           isSelected={isSelected}
           solid
-          round
         />
       ) : (
           <ControlButton
@@ -129,7 +132,6 @@ function Control({
             onClick={onClick}
             isSelected={isSelected}
             type={type}
-            round
           />
         )}
     </Fragment>
@@ -141,6 +143,7 @@ Controls.propTypes = {
   children: PropTypes.node.isRequired,
   columns: PropTypes.oneOf(["default", "wrap", "1", "2", "3", "4", "5"]),
   style: PropTypes.string,
+  disabled: PropTypes.bool,
 };
 
 Control.propTypes = {
@@ -149,7 +152,6 @@ Control.propTypes = {
   label: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
   isSelected: PropTypes.bool,
-  color: PropTypes.string,
   type: PropTypes.string,
   size: PropTypes.string,
 };
@@ -158,13 +160,13 @@ Controls.defaultProps = {
   id: null,
   columns: null,
   style: null,
+  disabled: false,
 };
 
 Control.defaultProps = {
   id: null,
   icon: false,
   isSelected: false,
-  color: null,
   type: null,
   size: null,
 };
