@@ -4,8 +4,6 @@
 export {
   default,
   Title,
-  Caption,
-  Subscript,
   Label,
   Link,
 } from "./Typography.jsx";

@@ -65,7 +65,7 @@ function Avatar({
   if (icon) {
     iconType = <Icon icon={icon} size="lg" />;
   } else {
-    labelType = <Text weight="bold" type="inverse" text={label} />;
+    labelType = <Text weight="bold" text={label} />;
   }
 
   return (

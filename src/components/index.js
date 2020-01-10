@@ -5,8 +5,6 @@ export {
   default as Title,
   Link,
   Label,
-  Subscript,
-  Caption,
 } from "./base/Typography";
 export { default as GlobalStyles } from "./base/GlobalStyles/GlobalStyles.jsx";
 

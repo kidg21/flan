@@ -4,7 +4,7 @@ import { action } from "@storybook/addon-actions";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
 import Card, { CardSection } from "layout/Card";
-import Text, {Title, Link, Caption, Subscript, Label} from "base/Typography";
+import Text, {Title, Link, Label} from "base/Typography";
 
 <Meta title="Application Guidelines|Typography" component={Text} />
 
@@ -15,17 +15,20 @@ import Text, {Title, Link, Caption, Subscript, Label} from "base/Typography";
 <Preview withToolbar>
   <Story name="Standard">
     <Grid columns="1">
-     <Title size="6x" text="H1 Title"/>
-     <Title size="5x" text="H2 Title"/>
-     <Title size="4x" text="H3 Title"/>
-     <Title size="3x" text="H4 Title"/>
-     <Title size="2x" text="H5 Title"/>
-     <Title size="1x" text="H6 Title"/>
-     <Text size="2x" text="Body1"/>
-     <Text size="1x" text="Body2"/>
-     <Caption text="Caption"/>
-     <Subscript text="Subscript"/>
-    <Label text="Label"/>
+     <Title size="6x" text="6x Title"/>
+     <Title size="5x" text="5x Title"/>
+     <Title size="4x" text="4x Title"/>
+     <Title size="3x" text="3x Title"/>
+     <Title size="2x" text="2x Title"/>
+     <Title size="1x" text="1x Title"/>
+     <Text size="4x" text="4x Text"/>
+     <Text size="3x" text="3x Text"/>
+     <Text size="2x" text="2x Text"/>
+     <Text size="1x" text="1x Text"/>
+     <Label size="4x" text="Label"/>
+     <Label size="3x" text="Label"/>
+     <Label size="2x" text="Label"/>
+     <Label size="1x" text="Label"/>
      <Link text="this is a link"/>
     </Grid>
   </Story>

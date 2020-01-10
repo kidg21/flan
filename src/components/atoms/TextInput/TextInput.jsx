@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
-import { Caption, Subscript } from "base/Typography";
+import Text, { Label } from "base/Typography";
 import Grid from "layout/Grid";
 import { getGuid } from "helpers";
 
@@ -175,7 +175,7 @@ function TextInput({
       className={className}
     >
       {label ? (
-        <Caption isRequired={isRequired} text={label} />
+        <Label isRequired={isRequired} text={label} />
       ) : null}
       <Input
         as={as}
@@ -204,9 +204,9 @@ function TextInput({
         cols={cols} // textarea attribute
       />
       {autocompleteDataList}
-      {helpText ? <Subscript text={helpText} /> : null}
+      {helpText ? <Text size="1x" text={helpText} /> : null}
       {children}
-      {errorText ? <Subscript text={errorText} /> : null}
+      {errorText ? <Text size="1x" text={errorText} /> : null}
     </TextInputContainer>
   );
 }

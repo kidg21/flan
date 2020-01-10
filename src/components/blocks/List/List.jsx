@@ -8,7 +8,7 @@ import Icon from "atoms/Icon";
 import Avatar from "atoms/Avatar";
 import Checkbox from "atoms/Checkbox";
 import Switch from "atoms/Switch";
-import Text, { Caption } from "base/Typography";
+import Text from "base/Typography";
 import { InteractiveContext, DisabledContext } from "States";
 
 const ListWrapper = styled.ul`
@@ -88,7 +88,7 @@ function ListItem({
     <React.Fragment>
       <Text text={label} disabled={disabled} />
       {description ? (
-        <Caption text={description} disabled={disabled} />
+        <Text text={description} disabled={disabled} />
       ) : null}
     </React.Fragment>
   );

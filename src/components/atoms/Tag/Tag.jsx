@@ -3,7 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Icon from "atoms/Icon";
-import { Caption } from "base/Typography";
+import Text from "base/Typography";
 
 const TagContainer = styled.div`
   justify-content: center;
@@ -36,7 +36,7 @@ function Tag({
     iconType = <Icon icon={icon} size="2x" type={type} />;
     badgePadding = "0 0.25em";
   } else {
-    labelType = <Caption text={label} />;
+    labelType = <Text size="2x" weight="bold" text={label} />;
     badgeTextColor = "inverse";
     badgePadding = "0.105em .58em";
     switch (type) {

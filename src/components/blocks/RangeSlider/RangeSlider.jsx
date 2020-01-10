@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import { DisabledContext } from "States";
 import Bar from "blocks/Bar";
 import Grid from "layout/Grid";
-import { Caption, Subscript } from "base/Typography";
+import Text, { Label } from "base/Typography";
 import TextInput from "atoms/TextInput";
 import Slider from "atoms/Slider";
 
@@ -43,7 +43,7 @@ function RangeSlider({
       gap="small"
     >
       {label ? (
-        <Caption isRequired={isRequired} text={label} />
+        <Label isRequired={isRequired} text={label} />
       ) : null}
 
       <Bar
@@ -75,9 +75,9 @@ function RangeSlider({
           />
         }
       />
-      {helpText ? <Subscript text={helpText} /> : null}
+      {helpText ? <Text size="1x" text={helpText} /> : null}
       {typeof error === "string" && !isDisabled ? (
-        <Subscript text={error} />
+        <Text size="1x" text={error} />
       ) : null}
     </RangeContainer>
   );

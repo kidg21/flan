@@ -5,7 +5,7 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
 import Grid from "layout/Grid";
-import Text, { Caption, Subscript } from "base/Typography";
+import Text, { Label } from "base/Typography";
 import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";
 import Button from "atoms/Button";
@@ -196,10 +196,10 @@ function InputBlock({
         prefix={prefix}
         text={text}
       >
-        {label ? <Caption isRequired={isRequired} text={label} /> : null}
+        {label ? <Label isRequired={isRequired} text={label} /> : null}
         {inputContainer}
-        {helpText ? <Subscript text={helpText} /> : null}
-        {errorText ? <Subscript text={errorText} /> : null}
+        {helpText ? <Text size="1x" text={helpText} /> : null}
+        {errorText ? <Text size="1x" text={errorText} /> : null}
       </TextInputContainer>
     </DisabledContext.Provider>
   );
