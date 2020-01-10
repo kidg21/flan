@@ -372,11 +372,15 @@ export const darkTheme = {
 };
 
 export const Darken = css`
-  filter: brightness(0.96) saturate(1.25) contrast(1);
+  filter: brightness(0.90) saturate(1.25) contrast(1);
 `;
 
 export const Lighten = css`
-  filter: brightness(115%) contrast(1);
+  filter: brightness(115%) saturate(80%) ;
+`;
+
+export const Shade = css`
+filter: brightness(0.95) saturate(1.25) contrast(1);
 `;
 
 // Typefaces

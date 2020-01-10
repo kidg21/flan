@@ -1,9 +1,11 @@
+/* eslint-disable complexity */
 /* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { Darken, Lighten } from "Variables";
+import { Darken, Shade } from "Variables";
 import Bar from "blocks/Bar";
+import Tag from "atoms/Tag";
 import Icon from "atoms/Icon";
 import Avatar from "atoms/Avatar";
 import Grid from "layout/Grid";
@@ -31,10 +33,10 @@ const ListItemWrapper = styled.li`
   color: ${(props) => {
     return props.theme.text[props.itemColor];
   }};
-  padding: 1em;
   background-color: ${(props) => {
     return props.theme.background.default;
   }};
+  padding: 1em;
   cursor: ${(props) => {
     return props.interactive ? "pointer" : "";
   }};
@@ -46,7 +48,7 @@ const ListItemWrapper = styled.li`
   }
   &:active {
     ${(props) => {
-    return props.interactive ? Lighten : "";
+    return props.interactive ? Shade : "";
   }};
   }
   outline: none;
@@ -84,13 +86,16 @@ function ListItem({
   id,
   avatar,
   toggle,
-  arrow,
+  count,
   icon,
   checkbox,
   interactive,
   label,
   onClick,
 }) {
+  let leftContent;
+  let rightContent;
+
   const mainContent = (
     <React.Fragment>
       <Title text={label} disabled={disabled} />
@@ -98,6 +103,56 @@ function ListItem({
       ) : null}
     </React.Fragment>
   );
+
+  if (avatar) {
+    if (icon) {
+      leftContent = (
+        <Avatar label={avatar} disabled={disabled} />
+      );
+    }
+  }
+  if (avatar) {
+    leftContent = (
+      <Avatar label={avatar} disabled={disabled} />
+    );
+  } else if (icon) {
+    leftContent = (
+      <Icon icon={icon} disabled={disabled} size="lg" />
+    );
+  } else {
+    leftContent = (
+      null
+    );
+  }
+
+
+  if (checkbox) {
+    if (toggle) {
+      if (count) {
+        rightContent = (
+          <Checkbox label={checkbox} disabled={disabled} />
+        );
+      }
+    }
+  } if (checkbox) {
+    rightContent = (
+      <Checkbox disabled={disabled} />
+    );
+  } else if (toggle) {
+    rightContent = (
+      <Switch disabled={disabled} />
+    );
+  } else {
+    rightContent = (
+      null
+    );
+  }
+
+  if (count) {
+    rightContent = (
+      <Tag label={count} />
+    );
+  }
 
   return (
     <ListItemWrapper
@@ -113,42 +168,15 @@ function ListItem({
       tabIndex={disabled ? "-1" : "1"}
     >
       <DisabledContext.Provider value={disabled}>
-        {avatar || icon ? (
-          <Bar
-            contentAlign="center"
-            leftWidth="max-content"
-            centerAlign="left"
-            disabled={disabled}
-            left={
-              <React.Fragment>
-                {avatar ? <Avatar label={avatar} disabled={disabled} /> : null}
-                {icon ? <Icon icon={icon} size="lg" disabled={disabled} /> : null}
-              </React.Fragment>
-            }
-            center={mainContent}
-            right={
-              <React.Fragment>
-                {checkbox ? <Checkbox label={label} disabled={disabled} /> : null}
-                {toggle ? <Switch disabled={disabled} /> : null}
-                {arrow ? <Icon icon={arrow} /> : null}
-              </React.Fragment>
-            }
-          />
-        ) : (
-            <Bar
-              contentAlign="center"
-              centerAlign="left"
-              disabled={disabled}
-              left={mainContent}
-              right={
-                <React.Fragment>
-                  {checkbox ? <Checkbox disabled={disabled} /> : null}
-                  {toggle ? <Switch disabled={disabled} /> : null}
-                  {arrow ? <Icon icon={arrow} /> : null}
-                </React.Fragment>
-              }
-            />
-          )}
+        <Bar
+          contentAlign="center"
+          centerAlign="left"
+          leftWidth="max-content"
+          disabled={disabled}
+          left={leftContent}
+          center={mainContent}
+          right={rightContent}
+        />
       </DisabledContext.Provider>
     </ListItemWrapper>
   );
@@ -175,9 +203,8 @@ ListItem.propTypes = {
   disabled: PropTypes.bool,
   id: PropTypes.string,
   icon: PropTypes.node,
-  checkbox: PropTypes.node,
-  toggle: PropTypes.node,
-  arrow: PropTypes.node,
+  count: PropTypes.string,
+  checkbox: PropTypes.bool,
   avatar: PropTypes.string,
   interactive: PropTypes.bool,
   label: PropTypes.string.isRequired,
@@ -187,9 +214,8 @@ ListItem.defaultProps = {
   active: false,
   description: null,
   icon: null,
-  checkbox: null,
-  toggle: null,
-  arrow: null,
+  checkbox: false,
+  count: null,
   avatar: null,
   disabled: false,
   id: null,

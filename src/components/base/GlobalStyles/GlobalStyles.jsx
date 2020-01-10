@@ -208,20 +208,8 @@ const GlobalStyles = createGlobalStyle`
         }
       }
     }
-/* Buttons */
-    button {
-      box-sizing: border-box;
-      &:focus {
-        outline: none;
-      }
-      &:empty {
-        &:before {
-          ${Skeleton};
-          height: 2em;
-          width: 8rem;
-        }
-      }
-    }
+
+   
 /* Inputs */
     input:not([type]),
     input[type="text"],
