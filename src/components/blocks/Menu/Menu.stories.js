@@ -2,7 +2,6 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 
-
 import Grid from "layout/Grid";
 import { Padding } from "helpers/Display";
 import Menu from "blocks/Menu";
@@ -15,36 +14,36 @@ const data = [
     onClickLink: () => {
       console.log("clicked Save");
     },
-    name: "Save",
+    name: "Save"
   },
   {
     id: "b",
     onClickLink: () => {
       console.log("clicked Filter");
     },
-    name: "Filter",
+    name: "Filter"
   },
   {
     id: "c",
     onClickLink: () => {
       console.log("clicked Share");
     },
-    name: "Share",
+    name: "Share"
   },
   {
     id: "d",
     onClickLink: () => {
       console.log("clicked Refresh");
     },
-    name: "Refresh",
+    name: "Refresh"
   },
   {
     id: "e",
     onClickLink: () => {
       console.log("clicked Layer");
     },
-    name: "Layer",
-  },
+    name: "Layer"
+  }
 ];
 
 const nestedData = [
@@ -53,7 +52,7 @@ const nestedData = [
     onClickLink: () => {
       console.log(`clicked a`);
     },
-    name: "Save",
+    name: "Save"
   },
   {
     id: "b",
@@ -67,7 +66,7 @@ const nestedData = [
         onClickLink: () => {
           console.log("clicked b.0");
         },
-        name: "Filter 0.0",
+        name: "Filter 0.0"
       },
       {
         id: "b.1",
@@ -81,56 +80,56 @@ const nestedData = [
             onClickLink: () => {
               console.log("clicked b.1.0");
             },
-            name: "Filter 1.1.1",
-          },
-        ],
-      },
-    ],
+            name: "Filter 1.1.1"
+          }
+        ]
+      }
+    ]
   },
   {
     id: "c",
     onClickLink: () => {
       console.log(`clicked c`);
     },
-    name: "Share",
+    name: "Share"
   },
   {
     id: "d",
     onClickLink: () => {
       console.log(`clicked d`);
     },
-    name: "Refresh",
+    name: "Refresh"
   },
   {
     id: "e",
     onClickLink: () => {
       console.log(`clicked e`);
     },
-    name: "Layer",
+    name: "Layer"
   },
   {
     id: "f",
     onClickLink: () => {
       console.log(`clicked b`);
     },
-    name: "FFilter",
+    name: "Filter",
     commands: [
       {
         id: "f.0",
         onClickLink: () => {
           console.log("clicked b.0");
         },
-        name: "FFilter 0.0",
+        name: "Filter 0.0"
       },
       {
         id: "f.1",
         onClickLink: () => {
           console.log("clicked b.1");
         },
-        name: "Filter 1.0",
-      },
-    ],
-  },
+        name: "Filter 1.0"
+      }
+    ]
+  }
 ];
 
 storiesOf("Blocks|Menu", module)

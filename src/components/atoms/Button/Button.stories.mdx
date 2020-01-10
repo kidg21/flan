@@ -38,46 +38,33 @@ Buttons communicate actions that users can take. They are typically placed throu
 
 # Examples
 
+### Style
+
+<Preview>
+  <Story name="Style">
+    <Grid columns="3">
+      <Button label="Standard Button" />
+      <Button label="Solid Button" solid />
+      <Button label="Disabled Button" disabled/>
+    </Grid>
+  </Story>
+</Preview>
+
 ### Type
 
 <Preview>
   <Story name="Type">
     <Grid>
       <Button label="Standard Button" />
-      <Button label="Solid Button" type="solid" />
-      <Button label="Underlined Button" type="underlined" />
-      <Button label="Inline Button" type="inline" />
-    </Grid>
-  </Story>
-</Preview>
-
-### Size
-
-<Preview>
-  <Story name="Size">
-    <Grid>
-      <Button label="Small Button" size="small" />
-      <Button label="Standard Button" />
-      <Button label="Large Button" size="large" />
-    </Grid>
-  </Story>
-</Preview>
-
-### Color
-
-<Preview>
-  <Story name="Color">
-    <Grid>
-      <Button label="Standard Button" />
-      <Button label="Secondary Button" color="secondary" />
-      <Button label="Info Button" color="info" />
-      <Button label="Success Button" color="success" />
-      <Button label="Warning Button" color="warning" />
-      <Button label="Alert Button" color="alert" />
-      <Button label="Solid Info" color="info" type="solid" />
-      <Button label="Solid Success" color="success" type="solid" />
-      <Button label="Solid Warning" color="warning" type="solid" />
-      <Button label="Solid Alert" color="alert" type="solid" />
+      <Button label="Secondary Button" type="secondary" />
+      <Button label="Info Button" type="info" />
+      <Button label="Success Button" type="success" />
+      <Button label="Warning Button" type="warning" />
+      <Button label="Alert Button" type="alert" />
+      <Button label="Solid Info" type="info" solid />
+      <Button label="Solid Success" type="success" solid />
+      <Button label="Solid Warning" type="warning" solid />
+      <Button label="Solid Alert" type="alert" solid />
     </Grid>
   </Story>
 </Preview>
@@ -92,6 +79,17 @@ Buttons communicate actions that users can take. They are typically placed throu
       <Button label="Bookmark" icon="bookmark" />
       <Button label="Add" icon="plus" />
       <Button label="Print" icon="print" />
+    </Grid>
+  </Story>
+</Preview>
+
+### Counts
+
+<Preview>
+  <Story name="Counts">
+    <Grid>
+      <Button label="Count Button"  count="2" />
+      <Button label="Count Button" count="2" icon="user"/>
     </Grid>
   </Story>
 </Preview>
