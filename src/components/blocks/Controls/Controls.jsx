@@ -105,7 +105,7 @@ function Controls({
 }
 
 function Control({
-  id, icon, label, size, onClick, type, isSelected, color,
+  id, icon, label, size, onClick, type, isSelected,
 }) {
   return (
     <Fragment>
@@ -117,7 +117,6 @@ function Control({
           label={label}
           onClick={onClick}
           isSelected={isSelected}
-          color={color}
           solid
           round
         />
@@ -129,7 +128,6 @@ function Control({
             label={label}
             onClick={onClick}
             isSelected={isSelected}
-            color={color}
             type={type}
             round
           />

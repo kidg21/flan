@@ -118,7 +118,7 @@ StyledButton.displayName = "Button";
 
 function Button({
   className,
-  color,
+  type,
   count,
   disabled,
   htmlFor,
@@ -146,7 +146,7 @@ function Button({
   let labelSize;
   let tintColor;
 
-  switch (color && color.toLowerCase()) {
+  switch (type && type.toLowerCase()) {
     case "success":
       buttonColor = "success";
       fontColor = buttonColor;
@@ -226,43 +226,6 @@ function Button({
     borderRadius = "4px";
   }
 
-  //   if (underlined) {
-  //     borderWidth = "0 0 2px 0";
-  //     borderStyle = "solid";
-  //     backgroundColor = "default";
-  //     fontWeight = "700";
-  //     borderRadius = "2px";
-  //     fontColor = buttonColor;
-  //     hoverColor = tintColor;
-  //     underline = fontColor;
-  //   } else if (plain) {
-  //     borderWidth = "0px";
-  //     fontWeight = "700";
-  //     hoverColor = tintColor;
-  //     backgroundColor = "default";
-
-
-  //   } else if (type.toLowerCase() === "round") {
-  //     fontWeight = "700";
-  //     borderWidth = "1px 1px 1px 1px";
-  //     borderStyle = "solid";
-  //     borderRadius = "20px";
-  //     backgroundColor = "default";
-  //     hoverColor = tintColor;
-  //   }  else if (solid) {
-  //     fontColor = "white";
-  //     borderWidth = "1px 1px 1px 1px";
-  //     borderStyle = "solid";
-  //     borderColor = buttonColor;
-  //     hoverColor = shadeColor;
-  //     backgroundColor = buttonColor;
-  //   }
-  // } else {
-  //   hoverColor = tintColor;
-  //   borderWidth = "1px";
-  //   borderColor = buttonColor;
-  //   borderStyle = "solid";
-  // }
   if (isDisabled) {
     fontColor = "white";
     borderWidth = "1px";
@@ -359,14 +322,7 @@ function Button({
 Button.propTypes = {
   htmlFor: PropTypes.node,
   className: PropTypes.string,
-  color: PropTypes.oneOf([
-    "success",
-    "warning",
-    "alert",
-    "info",
-    "primary",
-    "secondary",
-  ]),
+  type: PropTypes.node,
   disabled: PropTypes.bool,
   fullWidth: PropTypes.bool,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
@@ -384,7 +340,7 @@ Button.propTypes = {
 Button.defaultProps = {
   className: null,
   htmlFor: null,
-  color: null,
+  type: null,
   disabled: false,
   fullWidth: false,
   icon: null,

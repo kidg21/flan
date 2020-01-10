@@ -83,7 +83,7 @@ function Tabs({
 }
 
 function Tab({
-  id, icon, tabLabel, htmlFor, count, size, onClick, isSelected, disabled, color,
+  id, icon, tabLabel, htmlFor, count, size, onClick, isSelected, disabled, type,
 }) {
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
 
@@ -100,7 +100,7 @@ function Tab({
           onClick={onClick}
           isSelected={isSelected}
           disabled={isDisabled}
-          color={color}
+          type={type}
           underlined
         />
       ) : (
@@ -114,7 +114,7 @@ function Tab({
             onClick={onClick}
             isSelected={isSelected}
             disabled={isDisabled}
-            color={color}
+            type={type}
             plain
           />
         )}
@@ -138,7 +138,6 @@ Tab.propTypes = {
   count: PropTypes.string,
   disabled: PropTypes.bool,
   htmlFor: PropTypes.node,
-  color: PropTypes.string,
   type: PropTypes.string,
   size: PropTypes.string,
 };
@@ -156,7 +155,6 @@ Tab.defaultProps = {
   count: null,
   isSelected: false,
   disabled: false,
-  color: null,
   type: null,
   size: null,
   onClick: null,

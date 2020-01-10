@@ -29,9 +29,8 @@ function DialogBox({
                 return (
                   <Button
                     label={button.label}
-                    type={button.type || index === 0 ? "solid" : null}
                     onClick={button.onClick}
-                    color={button.color || buttonColor}
+                    type={button.type || button.type}
                     disabled={button.disabled}
                   />
                 );

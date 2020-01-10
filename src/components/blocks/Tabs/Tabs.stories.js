@@ -43,9 +43,9 @@ storiesOf("Blocks|Tabs", module)
     withInfo()(() => {
       return (
         <Tabs>
-          <Tab tabLabel="Tab" color="secondary" isSelected />
-          <Tab tabLabel="Tab" color="secondary" />
-          <Tab tabLabel="Tab" color="secondary" />
+          <Tab tabLabel="Tab" type="secondary" isSelected />
+          <Tab tabLabel="Tab" type="secondary" />
+          <Tab tabLabel="Tab" type="secondary" />
         </Tabs>
       );
     }),

@@ -164,7 +164,6 @@ function InputBlock({
         label={button.label}
         type={button.type}
         onClick={button.onClick}
-        color={inputTextColor || button.color}
         disabled={isDisabled || button.disabled}
       />
     );
@@ -206,7 +205,6 @@ function InputBlock({
 
 InputBlock.propTypes = {
   button: PropTypes.shape({
-    color: PropTypes.string,
     disabled: PropTypes.bool,
     label: PropTypes.string,
     onClick: PropTypes.func,
