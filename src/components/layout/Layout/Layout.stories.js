@@ -463,36 +463,36 @@ storiesOf("Layout |App Layout/", module)
                 tabLabel="Property"
                 onClick={toggleLeft}
                 isSelected={activeLeft}
-                // noBorder
+              // noBorder
               />
               <Tab
                 icon="layers"
                 tabLabel="Layers"
-                // onClick={toggleLeft}
-                // isSelected={activeLeft}
-                // noBorder
+              // onClick={toggleLeft}
+              // isSelected={activeLeft}
+              // noBorder
               />
               <Tab
                 icon="filter"
                 tabLabel="Filters"
                 onClick={toggleRight}
                 isSelected={activeRight}
-                // noBorder
+              // noBorder
               />
 
               <Tab
                 icon="drawings"
                 tabLabel="Draw"
-                // onClick={toggleLeft}
-                // isSelected={activeLeft}
-                // noBorder
+              // onClick={toggleLeft}
+              // isSelected={activeLeft}
+              // noBorder
               />
               <Tab
                 icon="list"
                 tabLabel="List"
                 onClick={toggleBottom}
                 isSelected={activeBottom}
-                // noBorder
+              // noBorder
               />
             </Tabs>
           </Layout>
