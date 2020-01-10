@@ -8,6 +8,7 @@ import Layout from "layout/Layout";
 import Panel, { PanelSection } from "layout/Panel";
 import Form, { Section } from "layout/Form";
 import TextInput from "atoms/TextInput";
+import NewLayout from "./NewLayout.jsx";
 import { CheckboxGroup } from "atoms/Checkbox";
 import { RadioGroup } from "atoms/Radio";
 import SelectMenu from "atoms/SelectMenu";
@@ -114,6 +115,13 @@ storiesOf("Layout |App Layout/", module)
       return <Layout height="25%" />;
     }),
   )
+
+  .add("New", () => {
+    return (
+      <NewLayout />
+    );
+  })
+
 
   .add("2 Panel - Row", () => {
     return (
