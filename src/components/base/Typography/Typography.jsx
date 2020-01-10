@@ -36,7 +36,7 @@ const StyledLabel = styled.label`
 const LinkText = styled.a`
 line-height: inherit;
 font-weight: 600;
-font-size: 14px;
+font-size: 1em;
 text-decoration: none;
 padding: .5em;
 letter-spacing: 0.5px;
@@ -168,23 +168,23 @@ function Text({
 
   switch (size && size.toLowerCase()) {
     case "4x":
-      fontSize = "16px";
+      fontSize = "1.5em";
       letterSpacing = "0px";
       break;
     case "3x":
-      fontSize = "14px";
+      fontSize = "1em";
       letterSpacing = "0px";
       break;
     case "2x":
-      fontSize = "12px";
+      fontSize = "0.8em";
       letterSpacing = "0px";
       break;
     case "1x":
-      fontSize = "10.5";
+      fontSize = "0.6em";
       letterSpacing = "0.6px";
       break;
     default:
-      fontSize = "14px";
+      fontSize = "1em";
       letterSpacing = "0px";
       break;
   }
@@ -228,23 +228,23 @@ function Label({
 
   switch (size && size.toLowerCase()) {
     case "4x":
-      fontSize = "16px";
+      fontSize = "1em";
       letterSpacing = "0px";
       break;
     case "3x":
-      fontSize = "14px";
+      fontSize = "0.8em";
       letterSpacing = "0px";
       break;
     case "2x":
-      fontSize = "12px";
+      fontSize = "0.6em";
       letterSpacing = "0px";
       break;
     case "1x":
-      fontSize = "10.5";
+      fontSize = "0.55em";
       letterSpacing = "0.6px";
       break;
     default:
-      fontSize = "14px";
+      fontSize = "1em";
       letterSpacing = "0.5px";
       break;
   }
