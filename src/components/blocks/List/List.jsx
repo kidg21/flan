@@ -8,6 +8,7 @@ import Bar from "blocks/Bar";
 import Tag from "atoms/Tag";
 import Icon from "atoms/Icon";
 import Avatar from "atoms/Avatar";
+import Grid from "layout/Grid";
 import Checkbox from "atoms/Checkbox";
 import Switch from "atoms/Switch";
 import Title, { Description } from "base/Typography";
@@ -98,8 +99,7 @@ function ListItem({
   const mainContent = (
     <React.Fragment>
       <Title text={label} disabled={disabled} />
-      {description ? (
-        <Description text={description} disabled={disabled} />
+      {description ? (<Description text={description} disabled={disabled} />
       ) : null}
     </React.Fragment>
   );
@@ -208,7 +208,6 @@ ListItem.propTypes = {
   avatar: PropTypes.string,
   interactive: PropTypes.bool,
   label: PropTypes.string.isRequired,
-  toggle: PropTypes.bool,
   onClick: PropTypes.func,
 };
 ListItem.defaultProps = {
@@ -221,7 +220,6 @@ ListItem.defaultProps = {
   disabled: false,
   id: null,
   interactive: null,
-  toggle: false,
   onClick: null,
 };
 
