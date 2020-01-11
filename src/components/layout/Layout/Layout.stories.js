@@ -116,9 +116,19 @@ storiesOf("Layout |App Layout/", module)
     }),
   )
 
-  .add("New", () => {
+  .add("New1", () => {
     return (
       <NewLayout />
+    );
+  })
+  .add("New2", () => {
+    return (
+      <NewLayout theme="one" />
+    );
+  })
+  .add("New3", () => {
+    return (
+      <NewLayout theme="two" />
     );
   })
 
