@@ -1,7 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import Title from "base/Typography";
 import Card, { CardList } from "layout/Card";
 import Panel from "layout/Panel";
 
@@ -25,52 +24,29 @@ storiesOf("Layout|Panel", module)
         </CardList>
       </Panel>
     );
+  })
+  .add("Panel", () => {
+    return <Panel />;
+  })
+  .add("Panel with header", () => {
+    return (
+      <Panel
+        header={<Card />}
+      />
+    );
+  })
+  .add("Panel with footer", () => {
+    return (
+      <Panel
+        footer={<Card />}
+      />
+    );
+  })
+  .add("Panel with header/footer", () => {
+    return (
+      <Panel
+        header={<Card />}
+        footer={<Card />}
+      />
+    );
   });
-// .add("Panel - Outer Wrapper", () => {
-//   return <Panel />;
-// })
-// .add("Panel - 1 Section (default)", () => {
-//   return (
-//     <Panel>
-//       <PanelSection body />
-//     </Panel>
-//   );
-// })
-// .add("Panel - 2 Sections", () => {
-//   return (
-//     <Panel>
-//       <PanelSection />
-//       <PanelSection body />
-//     </Panel>
-//   );
-// })
-// .add("Panel - 3 Sections", () => {
-//   return (
-//     <Panel>
-//       <PanelSection />
-//       <PanelSection body />
-//       <PanelSection />
-//     </Panel>
-//   );
-// })
-// .add("Panel - 4 Sections (2 body)", () => {
-//   return (
-//     <Panel>
-//       <PanelSection />
-//       <PanelSection body />
-//       <PanelSection body />
-//       <PanelSection />
-//     </Panel>
-//   );
-// })
-// .add("Panel - 5 Sections (2 body)", () => {
-//   return (
-//     <Panel>
-//       <PanelSection />
-//       <PanelSection body />
-//       <PanelSection />
-//       <PanelSection body />
-//       <PanelSection />
-//     </Panel>
-//   );
-// })

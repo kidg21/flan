@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
 import Button from "atoms/Button";
-import Panel, { PanelSection } from "layout/Panel";
+import Panel from "layout/Panel";
 import ModernExterior1 from "images/residential/modern exterior 1.jpg";
 import Banner from "blocks/Banner";
 import Modal from "layout/Modal";
@@ -104,15 +104,15 @@ storiesOf("Layout|Modal", module)
               onClose={handleClose}
             />
           </Modal>
-          <Panel>
-            <PanelSection body>
+          <Panel
+            header={
               <Button
                 label="Open Modal"
                 onClick={handleOpen}
                 style={buttonStyle}
               />
-            </PanelSection>
-          </Panel>
+            }
+          />
         </>
       );
     });
@@ -136,14 +136,15 @@ storiesOf("Layout|Modal", module)
               onClose={handleClose}
             />
           </Modal>
-          <Panel>
-            <PanelSection body>
+          <Panel
+            header={
               <Button
                 label="Default Modal"
                 onClick={handleOpen}
                 style={buttonStyle}
               />
-            </PanelSection>
+            }
+          >
           </Panel>
         </>
       );
@@ -167,15 +168,15 @@ storiesOf("Layout|Modal", module)
             onClose={handleClose}
             visible={visible}
           />
-          <Panel>
-            <PanelSection body>
+          <Panel
+            header={
               <Button
                 label="Text Modal"
                 onClick={handleOpen}
                 style={buttonStyle}
               />
-            </PanelSection>
-          </Panel>
+            }
+          />
         </>
       );
     });
@@ -202,15 +203,15 @@ storiesOf("Layout|Modal", module)
             onClose={handleClose}
             visible={visible}
           />
-          <Panel>
-            <PanelSection body>
+          <Panel
+            header={
               <Button
                 label="Image Modal"
                 onClick={handleOpen}
                 style={buttonStyle}
               />
-            </PanelSection>
-          </Panel>
+            }
+          />
         </>
       );
     });

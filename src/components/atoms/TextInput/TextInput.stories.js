@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { Padding } from "helpers/Display";
-import Panel, { PanelSection } from "layout/Panel";
+import Panel from "layout/Panel";
 import Form, { Section } from "layout/Form";
 import TextInput from "atoms/TextInput";
 
@@ -182,57 +182,55 @@ storiesOf("Atoms|Text Input", module)
   .add("The Text Input Family", () => {
     return (
       <Panel>
-        <PanelSection body>
-          <Form title="The Text Input Family">
-            <Section>
-              <TextInput
-                label="Text Input ( error boolean )"
-                placeholder="I am just keeping things warm"
-                helpText="Hang in there, buddy, I'm here to help!"
-                error
-              />
-              <TextInput
-                label="Text Input ( error string )"
-                placeholder="I am just keeping things warm"
-                helpText="Hang in there, buddy, I'm here to help!"
-                error="Error Message"
-              />
-              <TextInput
-                label="Text Input ( Standard )"
-                placeholder="I am just keeping things warm"
-                helpText="Hang in there, buddy, I'm here to help!"
-              />
-              <TextInput
-                type="number"
-                label="Text Input ( Number )"
-                helpText="Hang in there, buddy, I'm here to help!"
-              />
-              <TextInput
-                type="textarea"
-                label="Text Input ( Text Area )"
-                helpText="Hang in there, buddy, I'm here to help!"
-              />
-              <TextInput
-                label="Text Input ( Required )"
-                placeholder="I am just keeping things warm"
-                helpText="Hang in there, buddy, I'm here to help!"
-                isRequired
-              />
-              <TextInput
-                label="Text Input ( Disabled )"
-                placeholder="I am just keeping things warm"
-                helpText="Hang in there, buddy, I'm here to help!"
-                disabled
-              />
-              <TextInput
-                label="Text Input ( Error )"
-                placeholder="I am just keeping things warm"
-                helpText="Hang in there, buddy, I'm here to help!"
-                error="Don't sweat it...we can fix this!"
-              />
-            </Section>
-          </Form>
-        </PanelSection>
+        <Form title="The Text Input Family">
+          <Section>
+            <TextInput
+              label="Text Input ( error boolean )"
+              placeholder="I am just keeping things warm"
+              helpText="Hang in there, buddy, I'm here to help!"
+              error
+            />
+            <TextInput
+              label="Text Input ( error string )"
+              placeholder="I am just keeping things warm"
+              helpText="Hang in there, buddy, I'm here to help!"
+              error="Error Message"
+            />
+            <TextInput
+              label="Text Input ( Standard )"
+              placeholder="I am just keeping things warm"
+              helpText="Hang in there, buddy, I'm here to help!"
+            />
+            <TextInput
+              type="number"
+              label="Text Input ( Number )"
+              helpText="Hang in there, buddy, I'm here to help!"
+            />
+            <TextInput
+              type="textarea"
+              label="Text Input ( Text Area )"
+              helpText="Hang in there, buddy, I'm here to help!"
+            />
+            <TextInput
+              label="Text Input ( Required )"
+              placeholder="I am just keeping things warm"
+              helpText="Hang in there, buddy, I'm here to help!"
+              isRequired
+            />
+            <TextInput
+              label="Text Input ( Disabled )"
+              placeholder="I am just keeping things warm"
+              helpText="Hang in there, buddy, I'm here to help!"
+              disabled
+            />
+            <TextInput
+              label="Text Input ( Error )"
+              placeholder="I am just keeping things warm"
+              helpText="Hang in there, buddy, I'm here to help!"
+              error="Don't sweat it...we can fix this!"
+            />
+          </Section>
+        </Form>
       </Panel>
     );
   });
