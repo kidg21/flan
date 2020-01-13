@@ -14,17 +14,8 @@ import {
   optionsKnob as options,
 } from "@storybook/addon-knobs";
 import Tabs, { Tab } from "blocks/Tabs";
-import TabsNotes from "./Tabs.md";
 
 storiesOf("Blocks|Tabs", module)
-  .addParameters({
-    info: {
-      text: "Tabs info goes here...",
-    },
-    notes: {
-      markdown: TabsNotes,
-    },
-  })
   .addDecorator(Padding)
   .add(
     "Documentation",
