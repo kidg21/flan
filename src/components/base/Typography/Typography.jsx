@@ -282,7 +282,7 @@ Title.defaultProps = {
 };
 
 function SubTitle({
-  text, textColor, children, ...textProps
+  text, children, ...textProps
 }) {
   return (
     <Text spacing="2" opacity="0.8" size="lg" margin="0px 0px 0.15em" {...textProps}>
@@ -292,12 +292,10 @@ function SubTitle({
 }
 SubTitle.propTypes = {
   text: PropTypes.string,
-  textColor: PropTypes.string,
   children: PropTypes.node,
 };
 SubTitle.defaultProps = {
   text: null,
-  textColor: null,
   children: null,
 };
 
