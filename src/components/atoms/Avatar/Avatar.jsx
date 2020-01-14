@@ -12,7 +12,7 @@ const AvatarText = styled(Title)`
   font-size: ${(props) => {
     return props.fontSize || "inherit";
   }};
-  margin: 0px 0px 0em;
+  margin: 0;
 `;
 
 const TagContainer = styled.div`
