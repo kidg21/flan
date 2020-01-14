@@ -9,7 +9,7 @@ import Tag from "atoms/Tag";
 import Icon from "atoms/Icon";
 import Bar from "blocks/Bar";
 import { Skeleton } from "helpers";
-import Label from "atoms/Label";
+import Title from "base/Typogrpahy";
 
 /** TODO: move these to Variables */
 
@@ -249,7 +249,7 @@ function Button({
           leftWidth="max-content"
           centerAlign="left"
           left={<Icon icon={icon} size="lg" />}
-          center={<Label letterSpacing="0.075em" weight="semibold" text={label} />}
+          center={<Title weight="semibold" text={label} />}
         />
       );
     }
@@ -272,7 +272,7 @@ function Button({
           rightWidth="max-content"
           centerAlign="center"
           left={<Icon icon={icon} size="lg" />}
-          center={<Label letterSpacing="0.075em" weight="semibold" text={label} />}
+          center={<Title letterSpacing="0.075em" weight="semibold" text={label} />}
           right={<Tag label={count} />}
         />
       );
@@ -283,13 +283,13 @@ function Button({
         contentAlign="center"
         rightWidth="max-content"
         centerAlign="right"
-        center={<Label letterSpacing="0.075em" weight="semibold" text={label} />}
+        center={<Title letterSpacing="0.075em" weight="semibold" text={label} />}
         right={<Tag label={count} />}
       />
     );
   } else {
     content = (
-      <Label letterSpacing="0.075em" weight="semibold" text={label} />
+      <Title letterSpacing="0.075em" weight="semibold" text={label} />
     );
   }
 
