@@ -28,13 +28,13 @@ const TagContainer = styled.div`
 `;
 
 function Avatar({
-  color, disabled, icon, id, label,
+  type, disabled, icon, id, label,
 }) {
   let labelType;
   let iconType;
   let backgroundColor;
   let textColor;
-  switch (color && color.toLowerCase()) {
+  switch (type && type.toLowerCase()) {
     case "success":
       backgroundColor = "success";
       textColor = "successTint";
@@ -45,7 +45,7 @@ function Avatar({
       break;
     case "alert":
       backgroundColor = "alert";
-      textColor = "alertLight";
+      textColor = "alertTint";
       break;
     case "info":
       backgroundColor = "info";
@@ -88,7 +88,7 @@ function Avatar({
 
 Avatar.propTypes = {
   /** Options: 'primary', 'secondary', 'info', 'success', 'warning', 'alert' */
-  color: PropTypes.string,
+  type: PropTypes.string,
   disabled: PropTypes.bool,
   /** Enter the name of the icon as the prop value. (ex. icon='circle' */
   icon: PropTypes.string,
@@ -97,7 +97,7 @@ Avatar.propTypes = {
 };
 
 Avatar.defaultProps = {
-  color: null,
+  type: null,
   disabled: false,
   icon: null,
   id: null,
