@@ -5,22 +5,24 @@ import PropTypes from "prop-types";
 import Placeholder from "images/placeholders/placeholder-photo.png";
 
 const ImageWrapper = styled.img`
-  width: ${props => {
+  width: ${(props) => {
     return props.width || "inherit";
   }};
   height: auto;
-  border-radius: ${props => {
+  border-radius: ${(props) => {
     return props.circle ? "100%" : "";
   }};
-  box-shadow: ${props => {
+  box-shadow: ${(props) => {
     return props.border ? `0 0 0 2px ${props.theme.border}` : "";
   }};
-  cursor: ${props => {
+  cursor: ${(props) => {
     return props.onClick ? "pointer" : "";
   }};
 `;
 
-function Image({ alt, border, circle, className, onClick, src, width }) {
+function Image({
+  alt, border, circle, className, onClick, src, width,
+}) {
   return (
     <ImageWrapper
       alt={alt}
@@ -42,7 +44,7 @@ Image.propTypes = {
   className: PropTypes.string,
   onClick: PropTypes.func,
   src: PropTypes.string,
-  width: PropTypes.number
+  width: PropTypes.number,
 };
 Image.defaultProps = {
   border: false,
@@ -50,7 +52,7 @@ Image.defaultProps = {
   className: null,
   onClick: null,
   src: null,
-  width: null
+  width: null,
 };
 
 export default Image;
