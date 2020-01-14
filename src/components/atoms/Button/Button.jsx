@@ -5,13 +5,14 @@ import styled from "styled-components";
 import { Lighten } from "Variables";
 import { DisabledContext } from "States";
 import PropTypes from "prop-types";
+import Title from "base/Typography";
 import Tag from "atoms/Tag";
 import Icon from "atoms/Icon";
 import Bar from "blocks/Bar";
 import { Skeleton } from "helpers";
-import Title from "base/Typogrpahy";
 
-/** TODO: move these to Variables */
+// const Title = styled.h4`
+// `;
 
 
 const StyledButton = styled.button`
@@ -249,7 +250,7 @@ function Button({
           leftWidth="max-content"
           centerAlign="left"
           left={<Icon icon={icon} size="lg" />}
-          center={<Title weight="semibold" text={label} />}
+          center={<Title text={label} />}
         />
       );
     }
@@ -272,7 +273,7 @@ function Button({
           rightWidth="max-content"
           centerAlign="center"
           left={<Icon icon={icon} size="lg" />}
-          center={<Title letterSpacing="0.075em" weight="semibold" text={label} />}
+          center={<Title text={label} />}
           right={<Tag label={count} />}
         />
       );
@@ -283,13 +284,13 @@ function Button({
         contentAlign="center"
         rightWidth="max-content"
         centerAlign="right"
-        center={<Title letterSpacing="0.075em" weight="semibold" text={label} />}
+        center={<Title text={label} />}
         right={<Tag label={count} />}
       />
     );
   } else {
     content = (
-      <Title letterSpacing="0.075em" weight="semibold" text={label} />
+      <Title text={label} />
     );
   }
 
