@@ -12,8 +12,8 @@ const ImageWrapper = styled.img`
   border-radius: ${(props) => {
     return props.circle ? "100%" : "";
   }};
-  box-shadow: ${(props) => {
-    return props.border ? `0 0 0 2px ${props.theme.border}` : "";
+  filter: ${(props) => {
+    return props.border ? props.theme.shadows.shadow1 : "";
   }};
   cursor: ${(props) => {
     return props.onClick ? "pointer" : "";

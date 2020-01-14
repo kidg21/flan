@@ -14,9 +14,8 @@ import styled from "styled-components";
 export const MultiGridWrapper = styled.div`
   width: 100%;
   height: 100%;
-  border: 1px solid;
-  border-color: ${(props) => {
-    return props.theme.divider;
+  border: ${(props) => {
+    return props.theme.borders.border;
   }};
   overflow: hidden;
   .ReactVirtualized__Grid {
@@ -27,16 +26,17 @@ export const MultiGridWrapper = styled.div`
       background-color: ${(props) => {
     return props.theme.palette.disabled;
   }};
-      border: 1px solid;
-      border-color: ${(props) => {
-    return props.theme.divider;
+    border: ${(props) => {
+    return props.theme.borders.border;
   }};
     }
     ::-webkit-scrollbar-thumb {
       background-color: ${(props) => {
     return props.theme.palette.link;
   }};
-      border-radius: 5px;
+    border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
+  }};
     }
     :focus {
       outline: none;
@@ -64,10 +64,7 @@ export const CellWrapper = styled.div`
   }};
   letter-spacing: 1px;
   border-bottom: ${(props) => {
-    return props.isHeader ? "2px solid" : "1px solid";
-  }};
-  border-color: ${(props) => {
-    return props.theme.divider;
+    return props.isHeader ? `2px solid ${props.theme.palette.grey5}` : `1px solid ${props.theme.palette.grey5}`;
   }};
   background-color: ${(props) => {
     if (props.isHeader) {

@@ -75,7 +75,9 @@ const CardWrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  border-radius: 5px;
+  border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
+  }};
   flex: none;
   background-color: ${(props) => {
     return props.cardBackground ? props.theme.background[props.cardBackground] : props.theme.background.default;
@@ -96,13 +98,19 @@ const CardWrapper = styled.div`
   }
   ${CardSectionWrapper} {
     &:first-of-type {
-      border-radius: 5px 5px 0 0;
+      border-radius: ${(props) => {
+    return `${props.theme.borders.radiusMin} ${props.theme.borders.radiusMin} 0 0`;
+  }};
     }
     &:last-of-type {
-      border-radius: 0 0 5px 5px;
+      border-radius: ${(props) => {
+    return `0 0 ${props.theme.borders.radiusMin} ${props.theme.borders.radiusMin}`;
+  }};
     }
     &:only-of-type {
-      border-radius: 5px;
+      border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
+  }};
     }
   }
   ${CardSectionWrapper}:not(${Media}) {

@@ -7,7 +7,7 @@ import Image from "atoms/Image";
 import ModernExterior1 from "images/residential/modern exterior 1.jpg";
 import ModernExterior2 from "images/residential/modern exterior 2.jpg";
 import ModernExterior3 from "images/residential/modern exterior 3.jpg";
-import Card, { CardList } from "elements/Card";
+import Card, { CardSection, CardList } from "elements/Card";
 import Grid from "layout/Grid";
 import Title, { Description } from "base/Typography";
 import MediaBlock from "blocks/MediaBlock";
@@ -18,10 +18,9 @@ const data = [
   {
     id: "a",
     type: "success",
-    image: ModernExterior1,
+    media: "image",
+    mediaSource: ModernExterior1,
     imageAlt: "ModernExterior 1",
-    // audio: "https://www.w3schools.com/html/horse.mp3",
-    // video: "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
     icon: "bookmark_solid",
     title: "First Card",
     description: "Card Description Goes Here",
@@ -52,9 +51,9 @@ const data = [
   {
     id: "b",
     type: "alert",
-    image: ModernExterior2,
+    media: "image",
+    mediaSource: ModernExterior2,
     imageAlt: "ModernExterior 2",
-    // youtube: "https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0",
     label: "GP",
     title: "Second Card",
     body: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
@@ -73,9 +72,9 @@ const data = [
   {
     id: "c",
     type: "info",
-    image: ModernExterior3,
+    media: "image",
+    mediaSource: ModernExterior3,
     imageAlt: "ModernExterior 3",
-    // vimeo: "https://player.vimeo.com/video/798022",
     icon: "home",
     title: "Third Card",
     description: "Nothing To See Here",
@@ -169,6 +168,7 @@ storiesOf("Work|Card/Elements", module)
         onClick={action("Primary Action Area Clicked")}
 
       >
+        {/* Any type of child content is supported */}
         {/* <CardSection onClick={action("Secondary Action Area Clicked")}>
           <Button label="Button" type="solid" />
           <Button label="Button" type="solid" />

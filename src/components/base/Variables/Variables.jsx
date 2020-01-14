@@ -213,6 +213,12 @@ export const shadows = {
   `,
 };
 
+export const borders = {
+  borderPrimary: `1px solid ${colors.grey40}`,
+  radiusMin: "0.5rem",
+  radiusMax: "5rem",
+};
+
 export const DMPTheme = {
   background: {
     active: colors.greenTint,
@@ -226,8 +232,6 @@ export const DMPTheme = {
     success: colors.green,
     warning: colors.orange,
   },
-  border: colors.grey40,
-  divider: colors.shade2,
   text: {
     active: colors.greenDark,
     alert: colors.redBright,
@@ -242,6 +246,25 @@ export const DMPTheme = {
     selected: colors.greyLight,
     success: colors.greenBright,
     warning: colors.orangeBright,
+  },
+  accents: {
+    black: colors.black,
+    white: colors.white,
+    bloodOrange: colors.bloodorange7,
+  },
+  borders: {
+    border: borders.borderPrimary,
+    radiusMin: borders.radiusMin,
+    radiusMax: borders.radiusMax,
+  },
+  shadows: {
+    shadow0: shadows.shadow0,
+    shadow1: shadows.shadow1,
+    shadow2: shadows.shadow2,
+    shadow3: shadows.shadow3,
+    shadow4: shadows.shadow4,
+    shadow5: shadows.shadow5,
+    innerShadow: shadows.innerShadow,
   },
   palette: {
     alert: colors.red,
@@ -286,20 +309,6 @@ export const DMPTheme = {
     warningTint: colors.orangeTint,
     white: colors.white,
   },
-  accents: {
-    black: colors.black,
-    white: colors.white,
-    bloodOrange: colors.bloodorange7,
-  },
-  shadows: {
-    shadow0: shadows.shadow0,
-    shadow1: shadows.shadow1,
-    shadow2: shadows.shadow2,
-    shadow3: shadows.shadow3,
-    shadow4: shadows.shadow4,
-    shadow5: shadows.shadow5,
-    innerShadow: shadows.innerShadow,
-  },
 };
 
 export const darkTheme = {
@@ -315,8 +324,6 @@ export const darkTheme = {
     success: colors.greenDark,
     warning: colors.orangeDark,
   },
-  border: colors.grey20,
-  divider: colors.greyDark,
   text: {
     active: colors.greenTint,
     // alert: "#7d0000",
@@ -334,6 +341,25 @@ export const darkTheme = {
     success: colors.greenTint,
     // warning: "rgb(178, 80, 0)",
     warning: colors.orangeTint,
+  },
+  accents: {
+    black: colors.black,
+    white: colors.white,
+    bloodOrange: colors.bloodorange3,
+  },
+  borders: {
+    border: borders.borderPrimary,
+    radiusMin: borders.radiusMin,
+    radiusMax: borders.radiusMax,
+  },
+  shadows: {
+    shadow0: shadows.shadow0,
+    shadow1: shadows.shadow1,
+    shadow2: shadows.shadow2,
+    shadow3: shadows.shadow3,
+    shadow4: shadows.shadow4,
+    shadow5: shadows.shadow5,
+    innerShadow: shadows.innerShadow,
   },
   palette: {
     // alert: "#FF453A",
@@ -395,20 +421,6 @@ export const darkTheme = {
     warningTint: colors.orangeTint,
     white: colors.white,
   },
-  accents: {
-    black: colors.black,
-    white: colors.white,
-    bloodOrange: colors.bloodorange3,
-  },
-  shadows: {
-    shadow0: colors.shadow0,
-    shadow1: colors.shadow1,
-    shadow2: colors.shadow2,
-    shadow3: colors.shadow3,
-    shadow4: colors.shadow4,
-    shadow5: colors.shadow5,
-    innerShadow: shadows.innerShadow,
-  },
 };
 
 export const Darken = css`
@@ -420,7 +432,7 @@ export const Lighten = css`
 `;
 
 export const Shade = css`
-filter: brightness(0.95) saturate(1.25) contrast(1);
+  filter: brightness(0.95) saturate(1.25) contrast(1);
 `;
 
 // Typefaces
