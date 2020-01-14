@@ -9,6 +9,9 @@ import Title from "base/Typography";
 
 const AvatarText = styled(Title)`
   color: inherit;
+  font-size: ${(props) => {
+    return props.fontSize || "inherit";
+  }};
   margin: 0px 0px 0em;
 `;
 
@@ -39,6 +42,7 @@ function Avatar({
   let labelType;
   let iconType;
   let backgroundColor;
+  let fontSize;
   let textColor;
   let avatarSize;
 
@@ -46,18 +50,23 @@ function Avatar({
   switch (size && size.toLowerCase()) {
     case "4x":
       avatarSize = "5rem";
+      fontSize = "2.5em";
       break;
     case "3x":
       avatarSize = "4rem";
+      fontSize = "2em";
       break;
     case "2x":
       avatarSize = "3rem";
+      fontSize = "1.5em";
       break;
     case "1x":
       avatarSize = "2.5rem";
+      fontSize = "1em";
       break;
     default:
       avatarSize = "2.5rem";
+      fontSize = "1em";
       break;
   }
 
@@ -72,7 +81,7 @@ function Avatar({
       break;
     case "alert":
       backgroundColor = "alert";
-      textColor = "alertLight";
+      textColor = "alertTint";
       break;
     case "info":
       backgroundColor = "info";
@@ -104,7 +113,7 @@ function Avatar({
   } else if (icon) {
     iconType = <Icon icon={icon} size="lg" />;
   } else {
-    labelType = <AvatarText weight="semibold" size="lg" text={label.substring(0, 2)} />;
+    labelType = <AvatarText weight="semibold" fontSize={fontSize} text={label.substring(0, 2)} />;
   }
 
   return (
