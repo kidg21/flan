@@ -306,7 +306,6 @@ storiesOf("Layout |App Layout/", module)
 //           </Layout>
 //         </Layout>
 
-<<<<<<< HEAD
 //         <Layout id="controls" type="controlsWrapper">
 //           <Tabs align={controlsAlign}>
 //             <Tab
@@ -351,49 +350,3 @@ storiesOf("Layout |App Layout/", module)
 //     );
 //   });
 // });
-=======
-          <Layout id="controls" type="controlsWrapper">
-            <Tabs align={controlsAlign}>
-              <Tab
-                icon="location"
-                tabLabel="Property"
-                onClick={toggleLeft}
-                isSelected={activeLeft}
-              // noBorder
-              />
-              <Tab
-                icon="layers"
-                tabLabel="Layers"
-              // onClick={toggleLeft}
-              // isSelected={activeLeft}
-              // noBorder
-              />
-              <Tab
-                icon="filter"
-                tabLabel="Filters"
-                onClick={toggleRight}
-                isSelected={activeRight}
-              // noBorder
-              />
-
-              <Tab
-                icon="drawings"
-                tabLabel="Draw"
-              // onClick={toggleLeft}
-              // isSelected={activeLeft}
-              // noBorder
-              />
-              <Tab
-                icon="list"
-                tabLabel="List"
-                onClick={toggleBottom}
-                isSelected={activeBottom}
-              // noBorder
-              />
-            </Tabs>
-          </Layout>
-        </Layout>
-      );
-    });
-  });
->>>>>>> 361826af33e49296fab60f7eb58f666f5c2130ee
