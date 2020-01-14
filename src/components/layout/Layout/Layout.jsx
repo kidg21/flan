@@ -45,7 +45,7 @@ const FlexWrapper = styled.div`
   max-height: 100%;
   transition: all 0.3s ease-in-out;
   border: .25px solid ${(props) => {
-    return props.theme.divider;
+    return props.theme.palette.grey5;
   }};
   overflow: ${(props) => {
     return props.setOverflow || "hidden";

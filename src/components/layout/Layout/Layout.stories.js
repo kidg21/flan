@@ -9,6 +9,7 @@ import MobileLayout from "./MobileLayout.jsx";
 import Panel, { PanelSection } from "layout/Panel";
 import Form, { Section } from "layout/Form";
 import TextInput from "atoms/TextInput";
+import NewLayout from "./NewLayout.jsx";
 import { CheckboxGroup } from "atoms/Checkbox";
 import { RadioGroup } from "atoms/Radio";
 import SelectMenu from "atoms/SelectMenu";
@@ -31,6 +32,23 @@ storiesOf("Layout |App Layout/", module)
       return <Layout height="25%" />;
     }),
   )
+
+  .add("New1", () => {
+    return (
+      <NewLayout />
+    );
+  })
+  .add("New2", () => {
+    return (
+      <NewLayout theme="one" />
+    );
+  })
+  .add("New3", () => {
+    return (
+      <NewLayout theme="two" />
+    );
+  })
+
 
   .add("2 Panel - Row", () => {
     return (
@@ -288,6 +306,7 @@ storiesOf("Layout |App Layout/", module)
 //           </Layout>
 //         </Layout>
 
+<<<<<<< HEAD
 //         <Layout id="controls" type="controlsWrapper">
 //           <Tabs align={controlsAlign}>
 //             <Tab
@@ -332,3 +351,49 @@ storiesOf("Layout |App Layout/", module)
 //     );
 //   });
 // });
+=======
+          <Layout id="controls" type="controlsWrapper">
+            <Tabs align={controlsAlign}>
+              <Tab
+                icon="location"
+                tabLabel="Property"
+                onClick={toggleLeft}
+                isSelected={activeLeft}
+              // noBorder
+              />
+              <Tab
+                icon="layers"
+                tabLabel="Layers"
+              // onClick={toggleLeft}
+              // isSelected={activeLeft}
+              // noBorder
+              />
+              <Tab
+                icon="filter"
+                tabLabel="Filters"
+                onClick={toggleRight}
+                isSelected={activeRight}
+              // noBorder
+              />
+
+              <Tab
+                icon="drawings"
+                tabLabel="Draw"
+              // onClick={toggleLeft}
+              // isSelected={activeLeft}
+              // noBorder
+              />
+              <Tab
+                icon="list"
+                tabLabel="List"
+                onClick={toggleBottom}
+                isSelected={activeBottom}
+              // noBorder
+              />
+            </Tabs>
+          </Layout>
+        </Layout>
+      );
+    });
+  });
+>>>>>>> 361826af33e49296fab60f7eb58f666f5c2130ee
