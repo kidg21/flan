@@ -444,29 +444,29 @@ storiesOf("Blocks|List", module)
 
   .add("Avatar", () => {
     return (
-        <List interactive>
-          <ListItem
-            label="List Item"
-            description="This is the description"
-            avatar="LB"
-          />
-          <ListItem
-            label="List Item"
-            description="This is the description"
-            avatar="LB"
-            icon="user"
-          />
-          <ListItem
-            label="List Item"
-            description="This is the description"
-            avatar="LB"
-          />
-          <ListItem
-            label="List Item"
-            description="This is the description"
-            avatar="LB"
-          />
-        </List>
+      <List interactive>
+        <ListItem
+          label="List Item"
+          description="This is the description"
+          avatar="LB"
+        />
+        <ListItem
+          label="List Item"
+          description="This is the description"
+          avatar="LB"
+          icon="user"
+        />
+        <ListItem
+          label="List Item"
+          description="This is the description"
+          avatar="LB"
+        />
+        <ListItem
+          label="List Item"
+          description="This is the description"
+          avatar="LB"
+        />
+      </List>
     );
   })
 
@@ -488,6 +488,7 @@ storiesOf("Blocks|List", module)
           label="List Item"
           description="This is the description"
           icon="user"
+          isSelected
         />
         <ListItem
           label="List Item"

@@ -40,16 +40,15 @@ const ListItemWrapper = styled.li`
   cursor: ${(props) => {
     return props.interactive ? "pointer" : "";
   }};
+  filter: ${(props) => {
+    return props.isSelected ? Shade : "";
+  }};
   &:focus,
   &:hover {
     ${(props) => {
     return props.interactive ? Darken : "";
   }};
   }
-  &:active {
-    ${(props) => {
-    return props.interactive ? Shade : "";
-  }};
   }
   outline: none;
   &[disabled] {
@@ -80,7 +79,7 @@ function List({
 }
 
 function ListItem({
-  active,
+  isSelected,
   description,
   disabled,
   id,
@@ -156,7 +155,7 @@ function ListItem({
 
   return (
     <ListItemWrapper
-      active={active}
+      isSelected={isSelected}
       id={id}
       interactive={
         typeof interactive === "boolean"
@@ -198,7 +197,7 @@ List.defaultProps = {
 };
 
 ListItem.propTypes = {
-  active: PropTypes.bool,
+  isSelected: PropTypes.bool,
   description: PropTypes.string,
   disabled: PropTypes.bool,
   id: PropTypes.string,
@@ -211,7 +210,7 @@ ListItem.propTypes = {
   onClick: PropTypes.func,
 };
 ListItem.defaultProps = {
-  active: false,
+  isSelected: false,
   description: null,
   icon: null,
   checkbox: false,

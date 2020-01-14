@@ -380,7 +380,7 @@ export const Lighten = css`
 `;
 
 export const Shade = css`
-filter: brightness(0.95) saturate(1.25) contrast(1);
+brightness(0.95) saturate(1.25) contrast(1);
 `;
 
 // Typefaces
