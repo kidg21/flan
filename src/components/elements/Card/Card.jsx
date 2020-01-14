@@ -161,9 +161,15 @@ const CardListWrapper = styled(Grid)`
 `;
 
 function ExpandingSection({ description, icon, id, label, more, title, }) {
-  const [open, setOpen] = useState(!open);
+  const [open, setOpen] = useState(true);
+  const [rotation, setRotation] = useState("0");
   function toggleDropdown() {
     setOpen(!open);
+    if (rotation === "0") {
+      setRotation("180");
+    } else {
+      setRotation("0");
+    }
   }
   return (
     <Expander
@@ -185,7 +191,7 @@ function ExpandingSection({ description, icon, id, label, more, title, }) {
               </>
             }
             rightWidth="max-content"
-            right={more ? <Icon icon="up" size="lg" toggle={open} /> : null}
+            right={more ? <Icon icon="up" size="lg" rotation={rotation} /> : null}
           ></Bar>
         ) : null}
     >

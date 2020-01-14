@@ -42,9 +42,6 @@ const StyledIcon = styled(FontAwesomeIcon)`
   border-radius: ${(props) => {
     return props.border ? "5px" : "";
   }};
-  transform: ${(props) => {
-    return props.toggle ? "rotate(-180deg)" : "";
-  }};
   transition: all 0.25s ease-in-out;
 `;
 
@@ -194,7 +191,6 @@ function Icon({
   spin,
   title,
   type,
-  toggle,
 }) {
   const iconValue = iconHash[icon.toLowerCase()] || ["far", icon.toLowerCase()];
   let color = type ? colorHash[type.toLowerCase()] : null;
@@ -218,7 +214,6 @@ function Icon({
       size={size}
       spin={spin}
       title={title} // HTML attribute (display on :hover)
-      toggle={toggle}
     />
   );
 
@@ -256,7 +251,6 @@ Icon.propTypes = {
   /** Smooth rotation */
   spin: PropTypes.bool,
   title: PropTypes.string,
-  toggle: PropTypes.bool,
   type: PropTypes.string,
 };
 
@@ -274,7 +268,6 @@ Icon.defaultProps = {
   size: null,
   spin: false,
   title: null,
-  toggle: null,
   type: null,
 };
 
