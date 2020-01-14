@@ -3,10 +3,9 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
-import Bar from "blocks/Bar";
 import styled from "styled-components";
-import Title from "base/Typography";
 import Card from "elements/Card";
+import List, { ListItem } from "blocks/List";
 
 const MenuContainer = styled.a`
   cursor: pointer;
@@ -16,24 +15,32 @@ const MenuContainer = styled.a`
   }
 `;
 
-const MenuList = styled.ul`
+const ListWrapper = styled(List)`
   list-style: none;
-  padding: .25em;
-  overflow-x: hidden;
-  overflow-y: auto;
-  background-color: ${(props) => {
+  background: ${(props) => {
     return props.theme.background.default;
   }};
+  overflow-x: hidden;
+  overflow-y: auto;
 `;
 
-const MenuItem = styled.li`
+const ItemWrapper = styled.li`
   text-align: left;
-  padding: 0.5em;
   z-index: 501;
-  &:hover {
-  background-color: ${(props) => {
+  &[disabled] {
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
+    color: ${(props) => {
+    return props.theme.text.disabled;
+  }};
+    background-color: ${(props) => {
     return props.theme.background.disabled;
   }};
+    > * {
+      color: inherit;
+      background-color: inherit;
+    }
   }
 `;
 
@@ -71,6 +78,7 @@ const MenuBG = styled.div`
 function MenuComponent({
   id,
   data,
+  disabled,
   onClick,
   left,
   top,
@@ -94,42 +102,26 @@ function MenuComponent({
       onClick={onClick}
       onMouseLeave={closeMenu}
     >
-      <Card raised>
-        <MenuList>
+      <Card shadow="2x">
+        <ListWrapper interactive>
           {data.map((item) => {
             // nested submenu
             if (item.commands) {
               return (
-                <MenuItem
+                <ItemWrapper
                   key={item.id}
+                  disabled={item.disabled}
+                  tabIndex="1"
                   onMouseOver={(e) => {
                     setActiveItem({
                       id: item.id,
-                      top: `${e.currentTarget.getBoundingClientRect().top -
-                        e.currentTarget.offsetParent.getBoundingClientRect()
-                          .top}px`,
-                      left:
-                        submenuDirection === "right"
-                          ? `${
-                          e.currentTarget.offsetParent.getBoundingClientRect()
-                            .width
-                          }px`
-                          : "",
-                      right:
-                        submenuDirection !== "right"
-                          ? `${
-                          e.currentTarget.offsetParent.getBoundingClientRect()
-                            .width
-                          }px`
-                          : "",
+                      top: `${e.currentTarget.getBoundingClientRect().top - e.currentTarget.offsetParent.getBoundingClientRect().top}px`,
+                      left: submenuDirection === "right" ? `${e.currentTarget.offsetParent.getBoundingClientRect().width}px` : "",
+                      right: submenuDirection !== "right" ? `${e.currentTarget.offsetParent.getBoundingClientRect().width}px` : "",
                     });
                   }}
                 >
-                  <Bar
-                    contentAlign="center"
-                    left={<Title icon={item.icon} text={item.name} />}
-                    right={<Icon icon={submenuDirection} />}
-                  />
+                  <ListItem as="section" label={item.name} icon={item.icon} arrow={submenuDirection} disabled={disabled} />
                   {activeItem && activeItem.id === item.id ? (
                     <MenuComponent
                       id={item.id}
@@ -141,23 +133,21 @@ function MenuComponent({
                       submenuDirection={submenuDirection}
                     />
                   ) : null}
-                </MenuItem>
+                </ItemWrapper>
               );
             }
 
             return (
-              <MenuItem
+              <ItemWrapper
                 key={item.id}
-                onClick={() => {
-                  if (item.onClickLink) item.onClickLink(item.id);
-                }}
+                disabled={item.disabled}
+                onClick={() => { if (item.onClickLink) item.onClickLink(item.id); }}
                 onMouseOver={closeMenu}
               >
-                <Title icon={item.icon} text={item.name} />
-              </MenuItem>
-            );
+                <ListItem as="section" label={item.name} icon={item.icon} disabled={disabled} />
+              </ItemWrapper>);
           })}
-        </MenuList>
+        </ListWrapper>
       </Card>
     </MenuPopper>
   );
@@ -169,6 +159,7 @@ MenuComponent.propTypes = {
     name: PropTypes.string,
     onClickLink: PropTypes.func,
   })).isRequired,
+  disabled: PropTypes.bool,
   id: PropTypes.string.isRequired,
   left: PropTypes.string,
   onClick: PropTypes.func,
@@ -179,6 +170,7 @@ MenuComponent.propTypes = {
 };
 
 MenuComponent.defaultProps = {
+  disabled: null,
   left: "",
   onClick: null,
   right: "",

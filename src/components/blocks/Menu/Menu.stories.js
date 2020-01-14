@@ -2,7 +2,6 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 
-
 import Grid from "layout/Grid";
 import { Padding } from "helpers/Display";
 import Menu from "blocks/Menu";
@@ -30,6 +29,7 @@ const data = [
       console.log("clicked Share");
     },
     name: "Share",
+    disabled: true,
   },
   {
     id: "d",
@@ -113,14 +113,14 @@ const nestedData = [
     onClickLink: () => {
       console.log(`clicked b`);
     },
-    name: "FFilter",
+    name: "Filter",
     commands: [
       {
         id: "f.0",
         onClickLink: () => {
           console.log("clicked b.0");
         },
-        name: "FFilter 0.0",
+        name: "Filter 0.0",
       },
       {
         id: "f.1",
