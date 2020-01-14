@@ -14,8 +14,8 @@ const TagContainer = styled.div`
   justify-content: center;
   vertical-align: center;
   display: flex;
-  width: 33px;
-  height: 33px;
+  width: 2.5rem;
+  height: 2.5rem;
   align-items: center;
   background-color: ${(props) => {
     return props.theme.palette[props.backgroundColor] || "";
@@ -70,19 +70,21 @@ function Avatar({
   if (icon) {
     iconType = <Icon icon={icon} size="lg" />;
   } else {
-    labelType = <AvatarText weight="semibold" size="lg" text={label} />;
+    labelType = <AvatarText weight="semibold" size="lg" text={label.substring(0, 2)} />;
   }
 
   return (
-    <TagContainer
-      backgroundColor={backgroundColor}
-      icon={icon}
-      id={id}
-      label={label}
-      textColor={textColor}
-    >
-      {iconType || labelType}
-    </TagContainer>
+    <div>
+      <TagContainer
+        backgroundColor={backgroundColor}
+        icon={icon}
+        id={id}
+        label={label}
+        textColor={textColor}
+      >
+        {iconType || labelType}
+      </TagContainer>
+    </div >
   );
 }
 

@@ -37,7 +37,7 @@ function Tag({
   } else {
     labelType = <Label size="sm" weight="bold" text={label} />;
     badgeTextColor = "inverse";
-    badgePadding = "0.15em .5em";
+    badgePadding = "0.1em .5em";
     switch (type) {
       case "info":
         badgeColor = "info";
