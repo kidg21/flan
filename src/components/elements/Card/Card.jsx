@@ -75,9 +75,6 @@ const CardWrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  border-bottom: ${(props) => {
-    return props.ghost ? `1px solid ${props.theme.divider}` : "";
-  }};
   border-radius: 5px;
   flex: none;
   background-color: ${(props) => {
@@ -520,7 +517,6 @@ function Card({
       source={source}
       mediaSource={mediaSource}
       shadow={shadow}
-      tyoe={type}
     >
       {mediaSource ? mediaSection : null}
       {title || description ? headerSection : null}
