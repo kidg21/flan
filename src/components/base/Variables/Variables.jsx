@@ -178,7 +178,7 @@ export const colors = {
 
 export const DMPTheme = {
   background: {
-    active: colors.blueLight,
+    active: colors.greenLight,
     alert_active: colors.redTint,
     app: colors.lightBlue,
     default: colors.white,
