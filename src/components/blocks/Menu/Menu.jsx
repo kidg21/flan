@@ -144,7 +144,7 @@ function MenuComponent({
                 onClick={() => { if (item.onClickLink) item.onClickLink(item.id); }}
                 onMouseOver={closeMenu}
               >
-                <ListItem as="section" label={item.name} icon={item.icon} disabled={disabled} />
+                <ListItem as="section" label={item.name} icon={item.icon} />
               </ItemWrapper>);
           })}
         </ListWrapper>
