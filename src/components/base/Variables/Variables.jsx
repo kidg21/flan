@@ -221,7 +221,7 @@ export const borders = {
 
 export const DMPTheme = {
   background: {
-    active: colors.greenTint,
+    active: colors.greenLight,
     alert: colors.red,
     app: colors.lightBlue,
     default: colors.white,
@@ -429,10 +429,6 @@ export const Darken = css`
 
 export const Lighten = css`
   filter: brightness(115%) saturate(80%) ;
-`;
-
-export const Shade = css`
-  filter: brightness(0.95) saturate(1.25) contrast(1);
 `;
 
 // Typefaces
