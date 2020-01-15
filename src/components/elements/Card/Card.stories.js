@@ -33,7 +33,7 @@ const data = [
     ],
     more:
       <MediaBlock
-        image={
+        media={
           <Image
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
             alt="This is alt text for this image"
