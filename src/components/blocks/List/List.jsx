@@ -34,14 +34,11 @@ const ListItemWrapper = styled.li`
     return props.theme.text[props.itemColor];
   }};
   background-color: ${(props) => {
-    return props.theme.background.default;
+    return props.isSelected ? props.theme.background.active : props.theme.background.default;
   }};
   padding: 1em;
   cursor: ${(props) => {
     return props.interactive ? "pointer" : "";
-  }};
-  filter: ${(props) => {
-    return props.isSelected ? Shade : "";
   }};
   &:focus,
   &:hover {
