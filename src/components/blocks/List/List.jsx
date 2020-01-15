@@ -3,7 +3,7 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { Darken, Shade } from "Variables";
+import { Darken } from "Variables";
 import Bar from "blocks/Bar";
 import Tag from "atoms/Tag";
 import Icon from "atoms/Icon";

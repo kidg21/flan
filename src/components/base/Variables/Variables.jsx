@@ -379,10 +379,6 @@ export const Lighten = css`
   filter: brightness(115%) saturate(80%) ;
 `;
 
-export const Shade = css`
-brightness(0.95) saturate(1.25) contrast(1);
-`;
-
 // Typefaces
 export const fonts = {
   headline: "Muli, Arial, sans-serif",
