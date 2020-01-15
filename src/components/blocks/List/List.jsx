@@ -31,10 +31,10 @@ const ListWrapper = styled.ul`
 const ListItemWrapper = styled.li`
   position: relative;
   color: ${(props) => {
-    return props.theme.text[props.itemColor];
+    return props.isSelected ? props.theme.text.inverse : props.theme.text.primary;
   }};
   background-color: ${(props) => {
-    return props.isSelected ? props.theme.background.active : props.theme.background.default;
+    return props.isSelected ? props.theme.background.inverse : props.theme.background.default;
   }};
   padding: 1em;
   cursor: ${(props) => {
