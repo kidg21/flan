@@ -257,15 +257,7 @@ export const DMPTheme = {
     radiusMin: borders.radiusMin,
     radiusMax: borders.radiusMax,
   },
-  shadows: {
-    shadow0: shadows.shadow0,
-    shadow1: shadows.shadow1,
-    shadow2: shadows.shadow2,
-    shadow3: shadows.shadow3,
-    shadow4: shadows.shadow4,
-    shadow5: shadows.shadow5,
-    innerShadow: shadows.innerShadow,
-  },
+  shadows: shadows,
   palette: {
     alert: colors.red,
     alertBright: colors.redBright,
@@ -352,15 +344,7 @@ export const darkTheme = {
     radiusMin: borders.radiusMin,
     radiusMax: borders.radiusMax,
   },
-  shadows: {
-    shadow0: shadows.shadow0,
-    shadow1: shadows.shadow1,
-    shadow2: shadows.shadow2,
-    shadow3: shadows.shadow3,
-    shadow4: shadows.shadow4,
-    shadow5: shadows.shadow5,
-    innerShadow: shadows.innerShadow,
-  },
+  shadows: shadows,
   palette: {
     // alert: "#FF453A",
     // alertDark: "#7d0000",
