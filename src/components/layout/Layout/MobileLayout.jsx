@@ -2,7 +2,7 @@
 /* eslint-disable indent */
 /* eslint-disable linebreak-style */
 /* eslint-disable security/detect-object-injection */
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Layout from "layout/Layout";
@@ -42,16 +42,7 @@ const MenuButton = styled(Button)`
 `;
 
 
-{ /* <FixedControls>
-<Bar
-    padding="2x"
-    center={
-        <MenuButton round solid icon="menu" />}
-/>
-</FixedControls> */ }
-
-
-const SideBar = styled.div`
+const SideBar = styled(Layout)`
 @media ${screen.small} {
     color: purple;
     border: 1px solid black;
@@ -70,7 +61,7 @@ const SideBar = styled.div`
   }
 `;
 
-const Footer = styled.div`
+const Header = styled(Layout)`
 @media ${screen.small} {
     color: purple;
     border: 1px solid black;
@@ -89,7 +80,7 @@ const Footer = styled.div`
   }
 `;
 
-const MainLayout = styled.div`
+const MainLayout = styled(Layout)`
 @media ${screen.small} {
     color: blue;
     border: 1px solid purple;
@@ -108,66 +99,53 @@ const MainLayout = styled.div`
   }
 `;
 
-const ParentLayout = styled.div`
+const ParentLayout = styled(Layout)`
 display: flex;
 height: 100vh;
 width: 100vw;
-@media ${screen.small} {
-    ${MainLayout} {
-        width: 100%;
-    }
-    ${SideBar} {
-        width: 0%;
-    }
-  }
-  @media ${screen.medium} {
-    ${MainLayout} {
-        width: 100%;
-    }
-    ${SideBar} {
-        width: 0%;
-    }
-  }
-  @media ${screen.large} {
-    ${MainLayout} {
-        width: 87%;
-    }
-    ${SideBar} {
-        width: 13%;
-    }
-  }
-  @media ${screen.xlarge} {
-    ${MainLayout} {
-        width: 87%;
-    }
-    ${SideBar} {
-        width: 13%;
-    }
-  }
 `;
 
-function MobileLayout() {
-    return (
-        <Wrapper >
-            <ParentLayout>
-                <SideBar />
-                <MainLayout />
-            </ParentLayout>
-        </Wrapper >
 
-    );
+function MobileLayout() {
+  const [innerState, setInnerState] = useState("leftCover");
+  // const [activeLeft, setActiveLeft] = useState(false);
+  function toggleLeft() {
+    if (innerState === "leftUncover") {
+      setInnerState("leftCover");
+    } else {
+      setInnerState("leftUncover");
+    }
+    return false;
+  }
+  return (
+    <Wrapper >
+      <ParentLayout>
+        <SideBar id="innerWrapper" state={innerState} />
+        <Header height="6%" right="0" />
+        <MainLayout height="94%" right="0" top="6" />
+        <FixedControls>
+          <Bar
+            padding="2x"
+            center={
+              <MenuButton icon="menu" onClick={toggleLeft} />}
+          />
+        </FixedControls>
+      </ParentLayout>
+    </Wrapper >
+
+  );
 }
 
 MobileLayout.propTypes = {
-    // theme: PropTypes.node,
-    // sidebar: PropTypes.node,
-    // main: PropTypes.node,
+  // theme: PropTypes.node,
+  // sidebar: PropTypes.node,
+  // main: PropTypes.node,
 };
 
 MobileLayout.defaultProps = {
-    // theme: null,
-    // sidebar: null,
-    // main: null,
+  // theme: null,
+  // sidebar: null,
+  // main: null,
 };
 
 export default MobileLayout;
