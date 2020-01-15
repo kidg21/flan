@@ -190,10 +190,10 @@ function ExpandingSection({ description, icon, id, label, more, title, }) {
             }
             centerAlign="left"
             center={
-              <>
+              <React.Fragment>
                 {title ? <Headline text={title} /> : null}
                 {description ? <SubTitle text={description} /> : null}
-              </>
+              </React.Fragment>
             }
             rightWidth="max-content"
             right={more ? <Icon icon="up" size="lg" rotation={rotation} /> : null}
@@ -210,25 +210,9 @@ function CardSection({ children, className, header, footer, id, onClick, padding
   let sectionBackground;
   let sectionPadding;
   let sectionJustify;
-  switch (type) {
-    case "info":
-      sectionColor = "inverse";
-      sectionBackground = "info";
-      break;
-    case "success":
-      sectionColor = "inverse";
-      sectionBackground = "success";
-      break;
-    case "warning":
-      sectionColor = "inverse";
-      sectionBackground = "warning";
-      break;
-    case "alert":
-      sectionColor = "inverse";
-      sectionBackground = "alert";
-      break;
-    default:
-      break;
+  if (type) {
+    sectionColor = "inverse";
+    sectionBackground = type.toLowerCase();
   }
   switch (padding) {
     case "none":
@@ -266,7 +250,6 @@ function CardSection({ children, className, header, footer, id, onClick, padding
       sectionColor={sectionColor}
       sectionPadding={sectionPadding}
       sectionJustify={sectionJustify}
-      type={type}
     >
       {children}
     </CardSectionWrapper>
@@ -278,7 +261,6 @@ CardSection.propTypes = {
   className: PropTypes.string,
   id: PropTypes.string,
   padding: PropTypes.oneOf(["none", "1x", "2x", "3x", "4x"]),
-  type: PropTypes.oneOf(["info", "success", "warning", "alert"]),
   onClick: PropTypes.func,
 };
 CardSection.defaultProps = {
@@ -286,7 +268,6 @@ CardSection.defaultProps = {
   className: null,
   id: null,
   padding: null,
-  type: null,
   onClick: null,
 }
 
@@ -307,7 +288,6 @@ function Card({
   title,
   type,
   media,
-  source,
   shadow,
   mediaSource,
 }) {
@@ -353,19 +333,7 @@ function Card({
   }
 
   let headerSection;
-  if (more) {
-    headerSection = (
-      <CardSection type={type}>
-        <ExpandingSection
-          title={title}
-          description={description}
-          label={label}
-          icon={icon}
-          more={more}
-        />
-      </CardSection>
-    )
-  } else {
+  if (title || description) {
     headerSection = (
       <CardSection type={type} onClick={onClick}>
         <Bar
@@ -384,32 +352,29 @@ function Card({
         ></Bar>
       </CardSection>
     )
+    if (more) {
+      headerSection = (
+        <CardSection type={type}>
+          <ExpandingSection
+            title={title}
+            description={description}
+            label={label}
+            icon={icon}
+            more={more}
+          />
+        </CardSection>
+      )
+    }
   }
 
-  let mediaType;
-  switch (media) {
-    case "audio":
-      mediaType = "audio";
-      break;
-    case "video":
-      mediaType = "video";
-      break;
-    case "iframe":
-      mediaType = "iframe";
-      break;
-    default:
-    case "image":
-      mediaType = "image";
-      break;
-  }
-
+  const mediaType = media ? media.toLowerCase() : "image";
   let mediaSection;
   if (mediaType === "image") {
     mediaSection = (
       <Media image>
         <CardImage
           src={mediaSource}
-          alt={imageAlt || `${"Card Image:" + " "}${mediaSource}`}
+          alt={imageAlt || `Card Image: ${mediaSource}`}
           width="100%"
         />
       </Media>
@@ -522,12 +487,11 @@ function Card({
       id={id}
       inverse={inverse}
       media={media}
-      source={source}
       mediaSource={mediaSource}
       shadow={shadow}
     >
       {mediaSource ? mediaSection : null}
-      {title || description ? headerSection : null}
+      {headerSection}
       {body ? (
         <CardSection onClick={onClick}>
           <Body text={body} />
