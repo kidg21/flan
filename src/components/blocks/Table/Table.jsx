@@ -351,7 +351,7 @@ class Table extends Component {
     }
     return (
       <MultiGridWrapper>
-        <AutoSizer>
+        <AutoSizer defaultWidth={200} defaultHeight={100}>
           {({ width, height }) => {
             return (
               <MultiGrid
