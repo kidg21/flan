@@ -11,7 +11,6 @@ const Panel = styled.div`
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  align-content: stretch;
   width: 100%;
   height: 100%;
   border: .5px solid ${(props) => {

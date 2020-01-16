@@ -7,17 +7,12 @@ import { screen } from "Variables";
 import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 
-const CenterWrapper = styled.div`
-display: flex;
-width: 100vw;
-height: 100vh;
-align-items: stretch;
-background: grey;
-`;
 
 const FlexWrapper = styled.div`
   display: flex;
   height: 100%;
+  background-color: azure;
+  border: 8px solid silver;
   width: 100%;
   @media ${screen.small} {
     z-index: 0;
@@ -42,14 +37,12 @@ function LayoutWrapper({
   id,
 }) {
   return (
-    <CenterWrapper>
-      <FlexWrapper
-        width={width}
-        id={id}
-      >
-        {children}
-      </FlexWrapper>
-    </CenterWrapper>
+    <FlexWrapper
+      width={width}
+      id={id}
+    >
+      {children}
+    </FlexWrapper>
   );
 }
 

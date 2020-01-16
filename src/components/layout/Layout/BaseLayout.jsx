@@ -2,45 +2,43 @@
 /* eslint-disable security/detect-object-injection */
 import React from "react";
 import PropTypes from "prop-types";
+import Panel from "layout/Panel";
+import { screen } from "Variables";
 import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 
-
-const ReactWrapper = styled.div`
+const CenterWrapper = styled.div`
 display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-width: 100%;
-height: 100%;
-justify-content: flex-start;
+width: 100vw;
+height: 100vh;
+align-items: stretch;
+background: grey;
 `;
 
-
-function Parent({
+function BaseLayout({
     children,
+
     id,
 }) {
     return (
-        <ReactWrapper>
+        <CenterWrapper>
             {children}
-        </ReactWrapper>
 
+        </CenterWrapper>
     );
 }
 
-
-Parent.propTypes = {
+BaseLayout.propTypes = {
     children: PropTypes.node,
     id: PropTypes.string,
 
-
 };
 
-Parent.defaultProps = {
+BaseLayout.defaultProps = {
     children: null,
     id: null,
 
-
 };
 
-export default Parent;
+
+export default BaseLayout;

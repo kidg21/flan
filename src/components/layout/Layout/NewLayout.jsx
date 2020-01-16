@@ -2,36 +2,27 @@
 /* eslint-disable indent */
 /* eslint-disable linebreak-style */
 /* eslint-disable security/detect-object-injection */
-import React from "react";
+import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Layout from "layout/Layout";
+import ActionLayout from "./ActionLayout.jsx";
 import { screen } from "Variables";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 
-const Wrapper = styled.div`
-display: flex;
-height: 100vh;
-width: 100vw;
-color: blue;
-background-color: azure;
 
-`;
-
-
-function NewLayout({ theme }) {
+function NewLayout({
+    theme, leftContent, rightContent, mainContent,
+}) {
     let content;
 
     switch (theme && theme.toLowerCase()) {
-        case "one":
+        case "dynamic":
             content = (
-                <Layout>
-                    <Layout width="13%" />
-                    <Layout width="87%" right="0" />
-                </Layout>
+                <ActionLayout leftContent={leftContent} rightContent={rightContent} mainContent={mainContent} />
             );
             break;
-        case "two":
+        case "static":
             content = (
                 <Layout>
                     <Layout width="13%" />
@@ -48,9 +39,9 @@ function NewLayout({ theme }) {
     }
 
     return (
-        <Wrapper>
+        <Fragment>
             {content}
-        </Wrapper>
+        </Fragment>
 
     );
 }
@@ -58,10 +49,16 @@ function NewLayout({ theme }) {
 
 Layout.propTypes = {
     theme: PropTypes.node,
+    leftContent: PropTypes.node,
+    rightContent: PropTypes.node,
+    mainContent: PropTypes.node,
 };
 
 Layout.defaultProps = {
     theme: null,
+    leftContent: null,
+    rightContent: null,
+    mainContent: null,
 };
 
 
