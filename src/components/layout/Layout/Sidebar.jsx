@@ -7,25 +7,35 @@ import { screen } from "Variables";
 import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 
+
 const FlexWrapper = styled.div`
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: ${(props) => {
-    return props.height || "100%";
+  right: ${(props) => {
+    return props.right;
   }};
-  @media ${screen.small} {
-    z-index: 0;
-  }
+
   transition: all 1s ease-in-out;
   border: .25px solid ${(props) => {
     return props.theme.palette.grey5;
   }};
+  @media ${screen.small} {
+    transform: ${(props) => {
+    return props.visible ? "translateX(0%)" : "translateX(-100%)";
+  }};
+  width: 300%;
+  }
+
+  @media ${screen.large} {
+    transform: ${(props) => {
+    return props.visible ? "translateX(0%)" : "translateX(-100%)";
+  }};
+  width: 20%;
+  }
   background-color: azure;
   &:empty {
     &:before {
       ${PlaceholderText};
-      content: "{ Layout Wrapper }";
+      content: "{ Sidebar Wrapper }";
       color: ${(props) => {
     return props.theme.text.primary;
   }};
@@ -34,8 +44,10 @@ const FlexWrapper = styled.div`
 `;
 
 
-function LayoutWrapper({
+function Sidebar({
   children,
+  right,
+  visible,
   height,
   width,
   id,
@@ -43,6 +55,8 @@ function LayoutWrapper({
   return (
     <FlexWrapper
       width={width}
+      visible={visible}
+      right={right}
       height={height}
       id={id}
     >
@@ -51,21 +65,25 @@ function LayoutWrapper({
   );
 }
 
-LayoutWrapper.propTypes = {
+Sidebar.propTypes = {
   children: PropTypes.node,
   id: PropTypes.string,
   height: PropTypes.node,
+  visible: PropTypes.bool,
+  right: PropTypes.node,
   width: PropTypes.node,
 
 };
 
-LayoutWrapper.defaultProps = {
+Sidebar.defaultProps = {
   children: null,
+  visible: null,
   id: null,
+  right: null,
   height: null,
   width: null,
 
 };
 
 
-export default LayoutWrapper;
+export default Sidebar;
