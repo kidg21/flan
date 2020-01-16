@@ -9,7 +9,6 @@ import { PlaceholderText } from "helpers/Placeholders.jsx";
 
 const FlexWrapper = styled.div`
   display: flex;
-  flex-direction: column;
   width: 100%;
   height: ${(props) => {
     return props.height || "100%";

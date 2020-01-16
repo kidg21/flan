@@ -5,8 +5,12 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import Bar from "blocks/Bar";
 import Panel from "layout/Panel";
+import TextInput from "atoms/TextInput";
+import Icon from "atoms/Icon";
 import Button from "atoms/Button";
+import Grid from "layout/Grid";
 import Sidebar from "./Sidebar.jsx";
+import IconBlock from "blocks/IconBlock";
 import Parent from "./ParentWrapper.jsx";
 import Header from "./Header.jsx";
 import Rightbar from "./Rightbar.jsx";
@@ -26,34 +30,40 @@ function ActionLayout({
     }
     return (
         <Parent >
-            {leftVisible ? <Sidebar visible={leftVisible} ><Panel/></Sidebar> : null}
+            {leftVisible ? <Sidebar visible={leftVisible} ><Panel /></Sidebar> : null}
             <LayoutWrapper>
-            <Header>
+                <Panel>
                 <Bar
+                contentAlign="center"
+                    padding="2x"
+                    leftWidth="10%"
+                    rightWidth="40%"
                     left={
-                        <Button
+                        <Icon
                             icon="menu"
                             onClick={seeSidebar}
                         />
-                         }
-                    right={
-                        <React.Fragment>
-                         <Button
-                            icon="user"
-                            
-                        />
-
-                        <Button
-                            icon="settings"
-                            onClick={seeRightbar}
-                        />
-                        </React.Fragment>
                     }
-
+            
+                    right={
+                            <IconBlock>
+                            <Icon
+                                icon="user"
+                            />
+                            <Icon
+                                icon="notification"
+                            />
+                            <Icon
+                                icon="settings"
+                                onClick={seeRightbar}
+                            />
+                            </IconBlock>
+                      
+                    }
                 />
-                </Header>
-                </LayoutWrapper>
-            {rightVisible ? <Rightbar visible={rightVisible} ><Panel/></Rightbar> : null}
+                </Panel>
+            </LayoutWrapper>
+            {rightVisible ? <Rightbar visible={rightVisible} ><Panel /></Rightbar> : null}
         </Parent>
     );
 }

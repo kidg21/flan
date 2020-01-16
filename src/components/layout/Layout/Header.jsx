@@ -6,7 +6,6 @@ import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 
 const FlexWrapper = styled.div`
-  display: flex;
   top: 0;
   height: ${(props) => {
         return props.height || "8%";
