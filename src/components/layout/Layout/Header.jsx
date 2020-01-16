@@ -2,57 +2,47 @@
 /* eslint-disable security/detect-object-injection */
 import React from "react";
 import PropTypes from "prop-types";
+import { screen } from "Variables";
+import Bar from "blocks/Bar";
+import Panel from "layout/Panel";
 import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 
-const FlexWrapper = styled.div`
+const HeaderWrapper = styled(Bar)`
   top: 0;
-  height: ${(props) => {
-        return props.height || "8%";
-    }};
-  transition: all 1s ease-in-out;
-  border: .25px solid ${(props) => {
+  border-bottom: .25px solid ${(props) => {
         return props.theme.palette.grey5;
     }};
-  background-color: white;
-  &:empty {
-    &:before {
-      ${PlaceholderText};
-      content: "{ Header Wrapper }";
-      color: ${(props) => {
-        return props.theme.text.primary;
-    }};
-    }
-  }
+ 
 `;
 
 
 function Header({
-    children,
-    height,
+    right,
+    left,
     id,
 }) {
     return (
-        <FlexWrapper
-            height={height}
-            id={id}
-        >
-            {children}
-        </FlexWrapper>
+        <HeaderWrapper
+            contentAlign="center"
+            padding="2x"
+            left={left}
+            right={right}
+        />
     );
 }
 
 Header.propTypes = {
-    children: PropTypes.node,
+    right: PropTypes.node,
     id: PropTypes.string,
-    height: PropTypes.node,
+    left: PropTypes.node,
 
 };
 
 Header.defaultProps = {
-    children: null,
+    right: null,
     id: null,
-    height: null,
+    left: null,
 
 };
 

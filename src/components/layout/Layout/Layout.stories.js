@@ -33,7 +33,7 @@ storiesOf("Layout |App Layout/", module)
 
   .add("New1", () => {
     return (
-      <ActionLayout />
+      <ActionLayout leftContent={<h4>hello im a side</h4>} rightContent={<h4>hello im right</h4>} mainContent={<h1>MAIN</h1>} />
     );
   })
   .add("New2", () => {

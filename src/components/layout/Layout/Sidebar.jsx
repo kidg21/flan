@@ -15,9 +15,6 @@ const FlexWrapper = styled.div`
   }};
 
   transition: all 1s ease-in-out;
-  border: .25px solid ${(props) => {
-    return props.theme.palette.grey5;
-  }};
   @media ${screen.small} {
     transform: ${(props) => {
     return props.visible ? "translateX(0%)" : "translateX(-100%)";

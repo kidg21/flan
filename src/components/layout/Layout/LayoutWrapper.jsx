@@ -7,20 +7,22 @@ import { screen } from "Variables";
 import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 
+const CenterWrapper = styled.div`
+display: flex;
+width: 100vw;
+height: 100vh;
+align-items: stretch;
+background: grey;
+`;
+
 const FlexWrapper = styled.div`
   display: flex;
+  height: 100%;
   width: 100%;
-  height: ${(props) => {
-    return props.height || "100%";
-  }};
   @media ${screen.small} {
     z-index: 0;
   }
   transition: all 1s ease-in-out;
-  border: .25px solid ${(props) => {
-    return props.theme.palette.grey5;
-  }};
-  background-color: azure;
   &:empty {
     &:before {
       ${PlaceholderText};
@@ -35,25 +37,25 @@ const FlexWrapper = styled.div`
 
 function LayoutWrapper({
   children,
-  height,
   width,
+
   id,
 }) {
   return (
-    <FlexWrapper
-      width={width}
-      height={height}
-      id={id}
-    >
-      {children}
-    </FlexWrapper>
+    <CenterWrapper>
+      <FlexWrapper
+        width={width}
+        id={id}
+      >
+        {children}
+      </FlexWrapper>
+    </CenterWrapper>
   );
 }
 
 LayoutWrapper.propTypes = {
   children: PropTypes.node,
   id: PropTypes.string,
-  height: PropTypes.node,
   width: PropTypes.node,
 
 };
@@ -61,7 +63,6 @@ LayoutWrapper.propTypes = {
 LayoutWrapper.defaultProps = {
   children: null,
   id: null,
-  height: null,
   width: null,
 
 };
