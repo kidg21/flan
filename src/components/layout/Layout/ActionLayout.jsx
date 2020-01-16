@@ -8,17 +8,10 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import Bar from "blocks/Bar";
 import Panel from "layout/Panel";
-import TextInput from "atoms/TextInput";
 import Icon from "atoms/Icon";
-import Title from "base/Typography";
-import Button from "atoms/Button";
-import Grid from "layout/Grid";
 import Sidebar from "./Sidebar.jsx";
-import IconBlock from "blocks/IconBlock";
-import Parent from "./ParentWrapper.jsx";
-import Header from "./Header.jsx";
 import Rightbar from "./Rightbar.jsx";
-import BaseLayout from "./BaseLayout.jsx";
+// import BaseLayout from "./BaseLayout.jsx";
 import LayoutWrapper from "./LayoutWrapper.jsx";
 
 
@@ -29,11 +22,19 @@ flex-wrap: nowrap;
 justify-content: flex-start;
 width: 100%;
 height: 100%;
+`;
 
+const ReactWrapper = styled.div`
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+width: 100%;
+height: 100%;
+justify-content: flex-start;
 `;
 
 
-const ParentWrapper = styled.div`
+const Base = styled.div`
 width: 100vw;
 height: 100vh;
 
@@ -51,8 +52,6 @@ function ActionLayout({
     rightContent,
     mainContent,
 }) {
-    let dynamicWidth;
-
     const [leftVisible, setLeftVisible] = useState(false);
     function seeSidebar() {
         setLeftVisible(!leftVisible);
@@ -63,17 +62,11 @@ function ActionLayout({
         setRightVisible(!rightVisible);
     }
 
-    if (leftVisible) {
-        dynamicWidth = "80%";
-    } else {
-        dynamicWidth = "100%";
-    }
-
     return (
-        <ParentWrapper>
-            <Parent >
-                {leftVisible ? <Sidebar visible={leftVisible} ><Panel> {leftContent} </Panel> </Sidebar> : null}
-                <LayoutWrapper width={dynamicWidth}>
+        <Base>
+            <ReactWrapper>
+                {leftVisible ? <Sidebar visible={leftVisible} > {leftContent}  </Sidebar> : null}
+                <LayoutWrapper >
                     <InnerWrapper>
                         <Bar
                             contentAlign="center"
@@ -94,15 +87,13 @@ function ActionLayout({
                 </LayoutWrapper>
                 {rightVisible ?
                     (
-                        <Rightbar visible={rightVisible} >
-                            <Panel>
-                                <Exit icon="close" onClick={seeRightbar} />
-                                {rightContent}
-                            </Panel>
+                        <Rightbar right visible={rightVisible} >
+                            <Exit icon="close" onClick={seeRightbar} />
+                            {rightContent}
                         </Rightbar>) : null
                 }
-            </Parent >
-        </ParentWrapper >
+            </ReactWrapper >
+        </Base >
     );
 }
 

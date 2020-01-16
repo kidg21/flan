@@ -10,9 +10,6 @@ import { PlaceholderText } from "helpers/Placeholders.jsx";
 
 const FlexWrapper = styled.div`
   display: flex;
-  right: ${(props) => {
-    return props.right;
-  }};
 
   transition: all 1s ease-in-out;
   @media ${screen.small} {

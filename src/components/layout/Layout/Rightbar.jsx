@@ -12,19 +12,16 @@ import { PlaceholderText } from "helpers/Placeholders.jsx";
 
 const FlexWrapper = styled.div`
   display: flex;
-
-  height: ${(props) => {
-    return props.height || "100%";
-  }};
   transition: all 1s ease-in-out;
-  right: 0;
+  right: ${(props) => {
+    return props.right ? "0" : "";
+  }};
   @media ${screen.small} {
     transform: ${(props) => {
     return props.visible ? "translateX(0%)" : "translateX(-100%)";
   }};
     width: 300%;
   }
-
   @media ${screen.xlarge} {
     transform: ${(props) => {
     return props.visible ? "translateX(0%)" : "translateX(-100%)";
