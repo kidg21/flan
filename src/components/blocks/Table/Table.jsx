@@ -351,6 +351,8 @@ class Table extends Component {
     }
     return (
       <MultiGridWrapper>
+        {/* providing non-zero defaultWidth and defaultHeight props so grid will render when unit testing.
+            In the browser they are immediately overwritten once the component mounts */}
         <AutoSizer defaultWidth={200} defaultHeight={100}>
           {({ width, height }) => {
             return (
