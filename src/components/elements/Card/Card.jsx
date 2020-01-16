@@ -208,31 +208,18 @@ function ExpandingSection({ description, icon, id, label, more, title, }) {
 function CardSection({ children, className, header, footer, id, onClick, padding, type }) {
   let sectionColor;
   let sectionBackground;
-  let sectionPadding;
-  let sectionJustify;
   if (type) {
     sectionColor = "inverse";
     sectionBackground = type.toLowerCase();
   }
-  switch (padding) {
-    case "none":
-      sectionPadding = "0";
-      break;
-    case "1x":
-      sectionPadding = "0.25em 1em";
-      break;
-    case "2x":
-      sectionPadding = "0.5em 1em";
-      break;
-    case "3x":
-      sectionPadding = "1em";
-      break;
-    case "4x":
-      sectionPadding = "1.25em 1em";
-      break;
-    default:
-      break;
+  let sectionPadding;
+  const numPadding = padding ? parseInt(padding, 10) : NaN;
+  if (padding && padding.toLowerCase() === "0") {
+    sectionPadding = "0";
+  } else if (!isNaN(numPadding) && numPadding < 5) {
+    sectionPadding = `${0.25 * numPadding}em 1em`;
   }
+  let sectionJustify;
   if (header) {
     sectionJustify = "flex-start";
   }
@@ -260,7 +247,7 @@ CardSection.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   id: PropTypes.string,
-  padding: PropTypes.oneOf(["none", "1x", "2x", "3x", "4x"]),
+  padding: PropTypes.oneOf(["0", "1x", "2x", "3x", "4x"]),
   onClick: PropTypes.func,
 };
 CardSection.defaultProps = {
@@ -299,24 +286,9 @@ function Card({
   }
 
   let cardPadding;
-  switch (padding) {
-    case "none":
-      cardPadding = "0";
-      break;
-    case "1x":
-      cardPadding = "0.25em";
-      break;
-    case "2x":
-      cardPadding = "0.5em";
-      break;
-    case "3x":
-      cardPadding = "0.75em";
-      break;
-    case "4x":
-      cardPadding = "1em";
-      break;
-    default:
-      break;
+  const numPadding = padding ? parseInt(padding, 10) : NaN;
+  if (numPadding > 0 && numPadding < 5) {
+    cardPadding = `${0.25 * numPadding}em`;
   }
 
   let cardShadow;
@@ -524,7 +496,7 @@ Card.propTypes = {
   mediaHeader: PropTypes.bool,
   more: PropTypes.node,
   onClick: PropTypes.func,
-  padding: PropTypes.oneOf(["none", "1x", "2x", "3x", "4x"]),
+  padding: PropTypes.oneOf(["0", "1x", "2x", "3x", "4x"]),
   shadow: PropTypes.oneOf(["none", "standard", "2x"]),
   title: PropTypes.string,
   video: PropTypes.string,

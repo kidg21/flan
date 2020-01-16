@@ -166,7 +166,6 @@ storiesOf("Work|Card/Elements", module)
         ]}
         more={<Button label="Button" type="solid" color="secondary" fullWidth />}
         onClick={action("Primary Action Area Clicked")}
-
       >
         {/* Any type of child content is supported */}
         {/* <CardSection onClick={action("Secondary Action Area Clicked")}>
