@@ -123,7 +123,7 @@ function Calendar({
       inputTextColor={inputTextColor}
       isRequired={isRequired}
     >
-      {label ? <Label size="3x" isRequired={isRequired} text={label} /> : null}
+      {label ? <Label size="2x" isRequired={isRequired} text={label} /> : null}
       {inputContainer}
       {helpText ? <Text size="1x" text={helpText} /> : null}
       {errorText ? <Text size="1x" text={errorText} /> : null}

@@ -8,7 +8,7 @@ import Icon from "atoms/Icon";
 import Avatar from "atoms/Avatar";
 import Checkbox from "atoms/Checkbox";
 import Switch from "atoms/Switch";
-import Text from "base/Typography";
+import Text, {Title} from "base/Typography";
 import { InteractiveContext, DisabledContext } from "States";
 
 const ListWrapper = styled.ul`
@@ -63,7 +63,7 @@ function List({
 }) {
   return (
     <InteractiveContext.Provider value={interactive}>
-      {title ? <Bar left={<Text text={title} weight="bold" />} /> : null}
+      {title ? <Bar left={<Title text={title} weight="bold" />} /> : null}
       <ListWrapper divider={divider} id={id}>
         {children}
       </ListWrapper>
@@ -86,9 +86,9 @@ function ListItem({
 }) {
   const mainContent = (
     <React.Fragment>
-      <Text text={label} disabled={disabled} />
+      <Text size="4x" text={label} disabled={disabled} />
       {description ? (
-        <Text text={description} disabled={disabled} />
+        <Text size="2x" text={description} disabled={disabled} />
       ) : null}
     </React.Fragment>
   );

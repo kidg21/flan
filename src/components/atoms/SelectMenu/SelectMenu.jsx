@@ -42,7 +42,6 @@ const selectStyles = {
       "flexWrap": "nowrap",
       "fontWeight": "normal",
       "letterSpacing": ".5px",
-      "minHeight": "2.75rem",
       ":hover": {
         borderColor: colors.grey60,
       },
@@ -93,7 +92,6 @@ const selectStyles = {
       ...styles,
       fontFamily: fonts.data,
       fontWeight: "normal",
-      letterSpacing: "1px",
     };
   },
   // multi element label background
@@ -121,8 +119,6 @@ const selectStyles = {
       ...styles,
       fontFamily: fonts.data,
       textAlign: "left",
-      letterSpacing: ".5px",
-      margin: ".25rem 0",
       border: "1px solid",
       borderColor: colors.grey40,
       boxShadow: shadows.shadow2,
@@ -159,7 +155,7 @@ const SelectMenuContainer = styled(Grid)`
   color: ${(props) => {
     return props.theme.text[props.textColor] || props.theme.text.primary;
   }};
-  font-size: 0.876em;
+  font-size: 0.876rem;
   width: 100%;
   &:empty {
     &:before {
@@ -292,7 +288,7 @@ function SelectMenu({
       columns="1"
       gap="tiny"
     >
-      {label ? <Label size="3x" isRequired={isRequired} text={label} /> : null}
+      {label ? <Label size="2x" isRequired={isRequired} text={label} /> : null}
       {select}
       {/* Help Text */}
       {helpText ? <Text size="1x" text={helpText} /> : null}

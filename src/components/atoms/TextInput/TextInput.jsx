@@ -17,9 +17,7 @@ const TextInputContainer = styled(Grid)`
 
 const Input = styled.input`
   color: inherit;
-  line-height: 1;
   border: 1px solid;
-  font-size: 0.876em;
   font-family: ${(props) => { return props.theme.typography.primary; }};
   border-color: ${(props) => {
     return (
@@ -177,7 +175,7 @@ function TextInput({
       className={className}
     >
       {label ? (
-        <Label size="3x" isRequired={isRequired} text={label} />
+        <Label size="2x" isRequired={isRequired} text={label} />
       ) : null}
       <Input
         as={as}

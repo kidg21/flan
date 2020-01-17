@@ -177,11 +177,11 @@ function Text({
       letterSpacing = "0px";
       break;
     case "2x":
-      fontSize = "0.8em";
-      letterSpacing = "0px";
+      fontSize = "0.75em";
+      letterSpacing = "0.2px";
       break;
     case "1x":
-      fontSize = "0.6em";
+      fontSize = "0.65em";
       letterSpacing = "0.6px";
       break;
     default:
@@ -234,19 +234,19 @@ function Label({
       break;
     case "3x":
       fontSize = "0.876em";
-      letterSpacing = "0.5px";
+      letterSpacing = "0px";
       break;
     case "2x":
-      fontSize = "0.6em";
+      fontSize = "0.82em";
       letterSpacing = "0px";
       break;
     case "1x":
-      fontSize = "0.55em";
+      fontSize = "0.65em";
       letterSpacing = "0.6px";
       break;
     default:
       fontSize = "0.876em";
-      letterSpacing = "0.5px";
+      letterSpacing = "0px";
       break;
   }
 

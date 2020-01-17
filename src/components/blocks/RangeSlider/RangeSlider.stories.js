@@ -46,33 +46,27 @@ storiesOf("Blocks|Range Slider", module)
   })
   .add("States", () => {
     return (
-      <Form title="States" columns="1">
-        <Section title="Standard">
-          <RangeSlider
-            label="Range Slider Label"
-            minLabel="Min Label"
-            maxLabel="Max Label"
-            helpText="Hang in there, buddy, I'm here to help!"
-          />
-        </Section>
-        <Section title="Required">
-          <RangeSlider
-            isRequired
-            label="Range Slider Label"
-            minLabel="Min Label"
-            maxLabel="Max Label"
-            helpText="Hang in there, buddy, I'm here to help!"
-          />
-        </Section>
-        <Section title="Disabled">
-          <RangeSlider
-            disabled
-            label="Range Slider Label"
-            minLabel="Min Label"
-            maxLabel="Max Label"
-            helpText="Hang in there, buddy, I'm here to help!"
-          />
-        </Section>
+      <Form columns="1">
+        <RangeSlider
+          label="Standard Slider"
+          minLabel="Min Label"
+          maxLabel="Max Label"
+          helpText="Hang in there, buddy, I'm here to help!"
+        />
+        <RangeSlider
+          isRequired
+          label="Required Slider"
+          minLabel="Min Label"
+          maxLabel="Max Label"
+          helpText="Hang in there, buddy, I'm here to help!"
+        />
+        <RangeSlider
+          disabled
+          label="Disabled Slider"
+          minLabel="Min Label"
+          maxLabel="Max Label"
+          helpText="Hang in there, buddy, I'm here to help!"
+        />
       </Form>
     );
   });

@@ -196,7 +196,7 @@ function InputBlock({
         prefix={prefix}
         text={text}
       >
-        {label ? <Label isRequired={isRequired} text={label} /> : null}
+        {label ? <Label size="2x" isRequired={isRequired} text={label} /> : null}
         {inputContainer}
         {helpText ? <Text size="1x" text={helpText} /> : null}
         {errorText ? <Text size="1x" text={errorText} /> : null}

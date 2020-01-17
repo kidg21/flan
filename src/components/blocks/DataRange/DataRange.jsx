@@ -70,7 +70,7 @@ function DataRange({
       gap="tiny"
     >
       {label ? (
-        <Label isRequired={isRequired} text={label} />
+        <Label size="2x" isRequired={isRequired} text={label} />
       ) : null}
       <Bar
         padding="none"
