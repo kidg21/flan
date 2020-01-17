@@ -5,6 +5,7 @@ import styled from "styled-components";
 import Icon from "atoms/Icon";
 import Label from "atoms/Label";
 
+
 const TagContainer = styled.div`
   justify-content: center;
   display: flex;
@@ -31,46 +32,51 @@ function Tag({
   let badgePadding;
   let labelType;
   let iconType;
+
   if (icon) {
     iconType = <Icon icon={icon} size="2x" type={type} />;
     badgePadding = "0 0.25em";
-  } else {
+  } else if (label) {
     labelType = <Label size="sm" weight="bold" text={label} />;
     badgeTextColor = "inverse";
     badgePadding = "0.15em .5em";
-    switch (type) {
-      case "info":
-        badgeColor = "info";
-        break;
-      case "success":
-        badgeColor = "success";
-        break;
-      case "warning":
-        badgeColor = "warning";
-        break;
-      case "alert":
-        badgeColor = "alert";
-        break;
-      case "blue":
-        badgeColor = "primaryLight";
-        break;
-      case "lightgreen":
-        badgeColor = "secondaryLight";
-        break;
-      case "green":
-        badgeColor = "secondary";
-        break;
-      case "darkgreen":
-        badgeColor = "secondaryDark";
-        break;
-      case "darkblue":
-        badgeColor = "primaryDark";
-        break;
-      default:
-        badgeColor = "primary";
-        break;
-    }
+  } else {
+    badgePadding = "0.35rem";
   }
+
+  switch (type) {
+    case "info":
+      badgeColor = "info";
+      break;
+    case "success":
+      badgeColor = "success";
+      break;
+    case "warning":
+      badgeColor = "warning";
+      break;
+    case "alert":
+      badgeColor = "alert";
+      break;
+    case "blue":
+      badgeColor = "primaryLight";
+      break;
+    case "lightgreen":
+      badgeColor = "secondaryLight";
+      break;
+    case "green":
+      badgeColor = "secondary";
+      break;
+    case "darkgreen":
+      badgeColor = "secondaryDark";
+      break;
+    case "darkblue":
+      badgeColor = "primaryDark";
+      break;
+    default:
+      badgeColor = "primary";
+      break;
+  }
+
 
   return (
     <TagContainer
