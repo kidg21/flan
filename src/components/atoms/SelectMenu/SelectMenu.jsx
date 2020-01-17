@@ -159,6 +159,7 @@ const SelectMenuContainer = styled(Grid)`
   color: ${(props) => {
     return props.theme.text[props.textColor] || props.theme.text.primary;
   }};
+  font-size: 0.876em;
   width: 100%;
   &:empty {
     &:before {
@@ -291,7 +292,7 @@ function SelectMenu({
       columns="1"
       gap="tiny"
     >
-      {label ? <Label isRequired={isRequired} text={label} /> : null}
+      {label ? <Label size="3x" isRequired={isRequired} text={label} /> : null}
       {select}
       {/* Help Text */}
       {helpText ? <Text size="1x" text={helpText} /> : null}

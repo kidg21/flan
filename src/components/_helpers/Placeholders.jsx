@@ -9,8 +9,8 @@ export const PlaceholderText = css`
   justify-content: center;
   text-align: center;
   font-family: Nunito;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1em;
+  font-family: ${(props) => { return props.theme.typography.primary; }};
   color: ${(props) => {
     return props.theme.text.primary;
   }};

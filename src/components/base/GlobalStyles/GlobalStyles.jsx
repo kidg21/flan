@@ -182,7 +182,7 @@ const GlobalStyles = createGlobalStyle`
     select {
       box-sizing: border-box;
       width: 100%;
-      font-family: ${fonts.data};
+      font-family: ${fonts.body};
       letter-spacing: 2px;
       border-radius: 5px;
       transition: border-color 0.1s linear, background 0.1s linear;

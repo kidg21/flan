@@ -8,9 +8,9 @@ import { Lighten, Darken } from "Variables";
 
 const StyledLabel = styled.label`
   color: inherit;
-  font-family: Nunito;
-  margin: 0px 0px 0px 0px;
+  margin: 0;
   width: max-content;
+  font-family: ${(props) => { return props.theme.typography.primary; }};
   line-height: ${(props) => { return props.lineHeight; }};
   user-select: none;
   font-size: ${(props) => { return props.fontSize; }};
@@ -26,8 +26,8 @@ const StyledLabel = styled.label`
   color: ${(props) => {
     return props.theme.palette.alert;
   }};
-  font-size: 1.25rem;
-  line-height: 0;
+  font-size: ${(props) => { return props.fontSize; }};
+  line-height: ${(props) => { return props.lineHeight; }};
   vertical-align: middle;
   padding-left: 0.25em;
 }
@@ -37,6 +37,7 @@ const LinkText = styled.a`
 line-height: inherit;
 font-weight: 600;
 font-size: 1em;
+font-family: ${(props) => { return props.theme.typography.primary; }};
 text-decoration: none;
 padding: .5em;
 letter-spacing: 0.5px;
@@ -80,27 +81,27 @@ function Title({
 
   switch (size && size.toLowerCase()) {
     case "6x":
-      fontSize = "1.383em";
+      fontSize = "2em";
       as = "H1";
       letterSpacing = "0px";
       break;
     case "5x":
-      fontSize = "1.296em";
+      fontSize = "1.65em";
       as = "H2";
       letterSpacing = "0px";
       break;
     case "4x":
-      fontSize = "1.215em";
+      fontSize = "1.45em";
       as = "H3";
       letterSpacing = "0px";
       break;
     case "3x":
-      fontSize = "1.138em";
+      fontSize = "1.25em";
       as = "H4";
       letterSpacing = "0px";
       break;
     case "2x":
-      fontSize = "1.067em";
+      fontSize = "1.15em";
       as = "H5";
       letterSpacing = "0px";
       break;
@@ -168,11 +169,11 @@ function Text({
 
   switch (size && size.toLowerCase()) {
     case "4x":
-      fontSize = "1.5em";
+      fontSize = "1em";
       letterSpacing = "0px";
       break;
     case "3x":
-      fontSize = "1em";
+      fontSize = "0.876em";
       letterSpacing = "0px";
       break;
     case "2x":
@@ -184,7 +185,7 @@ function Text({
       letterSpacing = "0.6px";
       break;
     default:
-      fontSize = "1em";
+      fontSize = "0.876em";
       letterSpacing = "0px";
       break;
   }
@@ -232,8 +233,8 @@ function Label({
       letterSpacing = "0px";
       break;
     case "3x":
-      fontSize = "0.8em";
-      letterSpacing = "0px";
+      fontSize = "0.876em";
+      letterSpacing = "0.5px";
       break;
     case "2x":
       fontSize = "0.6em";
@@ -244,7 +245,7 @@ function Label({
       letterSpacing = "0.6px";
       break;
     default:
-      fontSize = "1em";
+      fontSize = "0.876em";
       letterSpacing = "0.5px";
       break;
   }
