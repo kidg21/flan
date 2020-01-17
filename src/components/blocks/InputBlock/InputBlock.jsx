@@ -42,7 +42,7 @@ function InputBlock({
       inputMap[input.id] = input.value;
       return inputMap;
     }, {}),
-    selected: selectOptions,
+    selected: null,
   });
 
   function handleChange(e) {
@@ -132,7 +132,7 @@ function InputBlock({
             options={options}
             selectOptions={selectOptions}
             isClearable={false}
-            onChange={handleSelectChange}
+            onChangeState={handleSelectChange}
           />
         ) : null}
         {inputElements}
@@ -141,7 +141,7 @@ function InputBlock({
             options={options}
             selectOptions={selectOptions}
             isClearable={false}
-            onChange={handleSelectChange}
+            onChangeState={handleSelectChange}
           />
         ) : null}
       </Grid>
