@@ -8,6 +8,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import Bar from "blocks/Bar";
 import Panel from "layout/Panel";
+import IconBlock from "blocks/IconBlock";
 import Icon from "atoms/Icon";
 import Sidebar from "./Sidebar.jsx";
 import Rightbar from "./Rightbar.jsx";
@@ -15,14 +16,14 @@ import Rightbar from "./Rightbar.jsx";
 import LayoutWrapper from "./LayoutWrapper.jsx";
 
 
-const InnerWrapper = styled.div`
-display: flex;
-flex-direction: column;
-flex-wrap: nowrap;
-justify-content: flex-start;
-width: 100%;
-height: 100%;
-`;
+// const InnerWrapper = styled.div`
+// display: flex;
+// flex-direction: column;
+// flex-wrap: nowrap;
+// justify-content: flex-start;
+// width: 100%;
+// height: 100%;
+// `;
 
 const ReactWrapper = styled.div`
 display: flex;
@@ -65,11 +66,12 @@ function ActionLayout({
     return (
         <Base>
             <ReactWrapper>
-                {leftVisible ? <Sidebar visible={leftVisible} > {leftContent}  </Sidebar> : null}
+                {leftVisible ? <Sidebar visible={leftVisible} > <Panel>{leftContent} </Panel> </Sidebar> : null}
                 <LayoutWrapper >
-                    <InnerWrapper>
+                    <Panel>
                         <Bar
                             contentAlign="center"
+                            rightWidth="10%"
                             padding="2x"
                             left={
                                 <Icon
@@ -77,19 +79,36 @@ function ActionLayout({
                                     onClick={seeSidebar}
                                 />}
                             right={
-                                <Icon
-                                    icon="settings"
-                                    onClick={seeRightbar}
-                                />}
+                                <IconBlock>
+                                    <Icon
+                                        icon="list"
+                                        onClick={seeRightbar}
+                                    />
+                                    <Icon
+                                        icon="chat"
+                                        onClick={seeRightbar}
+                                    />
+                                    <Icon
+                                        icon="notification"
+                                        onClick={seeRightbar}
+                                    />
+                                    <Icon
+                                        icon="settings"
+                                        onClick={seeRightbar}
+                                    />
+                                </IconBlock>
+                            }
                         />
                         {mainContent}
-                    </InnerWrapper>
+                    </Panel>
                 </LayoutWrapper>
                 {rightVisible ?
                     (
                         <Rightbar right visible={rightVisible} >
-                            <Exit icon="close" onClick={seeRightbar} />
-                            {rightContent}
+                            <Panel>
+                                <Exit icon="close" onClick={seeRightbar} />
+                                {rightContent}
+                            </Panel>
                         </Rightbar>) : null
                 }
             </ReactWrapper >

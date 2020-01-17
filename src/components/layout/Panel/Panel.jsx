@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 
 const Panel = styled.div`
-  position: absolute;
+  // position: absolute;
   background: ${(props) => {
     return props.theme.background.default;
   }};

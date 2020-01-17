@@ -22,13 +22,22 @@ const FlexWrapper = styled.div`
   }};
     width: 300%;
   }
+  @media ${screen.medium} {
+    transform: ${(props) => {
+    return props.visible ? "translateX(0%)" : "translateX(-100%)";
+  }};
+    width: 300%;
+  }
+  @media ${screen.large} {
+    transform: ${(props) => {
+    return props.visible ? "translateX(0%)" : "translateX(-100%)";
+  }};
   @media ${screen.xlarge} {
     transform: ${(props) => {
     return props.visible ? "translateX(0%)" : "translateX(-100%)";
   }};
     width: 20%;
   }
-  background-color: lightcyan;
   &:empty {
     &:before {
       ${PlaceholderText};

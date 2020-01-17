@@ -18,6 +18,12 @@ const FlexWrapper = styled.div`
   }};
   width: 300%;
   }
+  @media ${screen.medium} {
+    transform: ${(props) => {
+    return props.visible ? "translateX(0%)" : "translateX(-100%)";
+  }};
+  width: 300%;
+  }
 
   @media ${screen.large} {
     transform: ${(props) => {
@@ -25,7 +31,12 @@ const FlexWrapper = styled.div`
   }};
   width: 20%;
   }
-  background-color: azure;
+  @media ${screen.xlarge} {
+    transform: ${(props) => {
+    return props.visible ? "translateX(0%)" : "translateX(-100%)";
+  }};
+  width: 20%;
+  }
   &:empty {
     &:before {
       ${PlaceholderText};

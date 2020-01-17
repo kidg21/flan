@@ -10,7 +10,7 @@ import Bar from "blocks/Bar";
 import Button from "atoms/Button";
 import NewLayout from "./NewLayout.jsx";
 import ActionLayout from "./ActionLayout.jsx";
-import StaticLayout from "./StaticLayout.jsx";
+// import StaticLayout from "./StaticLayout.jsx";
 
 const LayoutNotes = markdown.require("./Layout.md");
 
@@ -33,14 +33,14 @@ storiesOf("Layout |App Layout/", module)
 
   .add("New1", () => {
     return (
-      <ActionLayout leftContent={<h4>hello im a side</h4>} rightContent={<h4>hello im right</h4>} mainContent={<h1>hello im main</h1>} />
+      <ActionLayout leftContent={<h4>hello im a side</h4>} />
     );
   })
-  .add("New2", () => {
-    return (
-      <StaticLayout leftContent={<h4>hello im a side</h4>} rightContent={<h4>hello im right</h4>} mainContent={<h1>hello im main</h1>} />
-    );
-  })
+  // .add("New2", () => {
+  //   return (
+  //     <StaticLayout leftContent={<h4>hello im a side</h4>} rightContent={<h4>hello im right</h4>} mainContent={<h1>hello im main</h1>} />
+  //   );
+  // })
   .add("New3", () => {
     return (
       <NewLayout theme="static" />
