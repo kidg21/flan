@@ -82,37 +82,37 @@ function Title({
   switch (size && size.toLowerCase()) {
     case "6x":
       fontSize = "2em";
-      as = "H1";
+      as = "h1";
       letterSpacing = "0px";
       break;
     case "5x":
       fontSize = "1.65em";
-      as = "H2";
+      as = "h2";
       letterSpacing = "0px";
       break;
     case "4x":
       fontSize = "1.45em";
-      as = "H3";
+      as = "h3";
       letterSpacing = "0px";
       break;
     case "3x":
       fontSize = "1.25em";
-      as = "H4";
+      as = "h4";
       letterSpacing = "0px";
       break;
     case "2x":
       fontSize = "1.15em";
-      as = "H5";
+      as = "h5";
       letterSpacing = "0px";
       break;
     case "1x":
       fontSize = "1.05em";
-      as = "H6";
+      as = "h6";
       letterSpacing = "0px";
       break;
     default:
       fontSize = "1.05em";
-      as = "H6";
+      as = "h6";
       letterSpacing = "0px";
       break;
   }
@@ -157,7 +157,7 @@ function Link({
       letterSpacing = "0px";
       break;
     case "3x":
-      fontSize = "0.876em";
+      fontSize = "0.9em";
       letterSpacing = "0px";
       break;
     case "2x":
@@ -169,7 +169,7 @@ function Link({
       letterSpacing = "0.6px";
       break;
     default:
-      fontSize = "0.876em";
+      fontSize = "0.9em";
       letterSpacing = "0px";
       break;
   }
@@ -179,11 +179,14 @@ function Link({
     case "bold":
       fontWeight = "600";
       break;
+    case "regular":
+      fontWeight = "400";
+      break;
     case "light":
       fontWeight = "300";
       break;
     default:
-      fontWeight = "400";
+      fontWeight = "600";
       break;
   }
 
@@ -239,14 +242,11 @@ function Text({
     case "bold":
       fontWeight = "600";
       break;
-    case "regular":
-      fontWeight = "400";
-      break;
     case "light":
       fontWeight = "300";
       break;
     default:
-      fontWeight = "600";
+      fontWeight = "400";
       break;
   }
 
