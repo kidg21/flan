@@ -1,14 +1,17 @@
+/* eslint-disable complexity */
 /* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { Darken } from "Variables";
 import Bar from "blocks/Bar";
+import Tag from "atoms/Tag";
 import Icon from "atoms/Icon";
 import Avatar from "atoms/Avatar";
+import Grid from "layout/Grid";
 import Checkbox from "atoms/Checkbox";
 import Switch from "atoms/Switch";
-import Text, {Title} from "base/Typography";
+import Text, { Title } from "base/Typography";
 import { InteractiveContext, DisabledContext } from "States";
 
 const ListWrapper = styled.ul`
@@ -28,12 +31,12 @@ const ListWrapper = styled.ul`
 const ListItemWrapper = styled.li`
   position: relative;
   color: ${(props) => {
-    return props.theme.text[props.itemColor];
+    return props.isSelected ? props.theme.text.inverse : props.theme.text.primary;
+  }};
+  background-color: ${(props) => {
+    return props.isSelected ? props.theme.background.inverse : props.theme.background.default;
   }};
   padding: 1em;
-  background-color: ${(props) => {
-    return props.theme.palette.background;
-  }};
   cursor: ${(props) => {
     return props.interactive ? "pointer" : "";
   }};
@@ -42,6 +45,7 @@ const ListItemWrapper = styled.li`
     ${(props) => {
     return props.interactive ? Darken : "";
   }};
+  }
   }
   outline: none;
   &[disabled] {
@@ -72,18 +76,22 @@ function List({
 }
 
 function ListItem({
-  active,
+  isSelected,
   description,
   disabled,
   id,
   avatar,
   toggle,
+  count,
   icon,
   checkbox,
   interactive,
   label,
   onClick,
 }) {
+  let leftContent;
+  let rightContent;
+
   const mainContent = (
     <React.Fragment>
       <Text size="4x" text={label} disabled={disabled} />
@@ -93,9 +101,59 @@ function ListItem({
     </React.Fragment>
   );
 
+  if (avatar) {
+    if (icon) {
+      leftContent = (
+        <Avatar label={avatar} disabled={disabled} />
+      );
+    }
+  }
+  if (avatar) {
+    leftContent = (
+      <Avatar label={avatar} disabled={disabled} />
+    );
+  } else if (icon) {
+    leftContent = (
+      <Icon icon={icon} disabled={disabled} size="lg" />
+    );
+  } else {
+    leftContent = (
+      null
+    );
+  }
+
+
+  if (checkbox) {
+    if (toggle) {
+      if (count) {
+        rightContent = (
+          <Checkbox label={checkbox} disabled={disabled} />
+        );
+      }
+    }
+  } if (checkbox) {
+    rightContent = (
+      <Checkbox disabled={disabled} />
+    );
+  } else if (toggle) {
+    rightContent = (
+      <Switch disabled={disabled} />
+    );
+  } else {
+    rightContent = (
+      null
+    );
+  }
+
+  if (count) {
+    rightContent = (
+      <Tag label={count} />
+    );
+  }
+
   return (
     <ListItemWrapper
-      active={active}
+      isSelected={isSelected}
       id={id}
       interactive={
         typeof interactive === "boolean"
@@ -107,44 +165,15 @@ function ListItem({
       tabIndex={disabled ? "-1" : "1"}
     >
       <DisabledContext.Provider value={disabled}>
-        {avatar || icon ? (
-          <Bar
-            leftWidth="6%"
-            contentAlign="center"
-            centerAlign="left"
-            disabled={disabled}
-            left={
-              <React.Fragment>
-                {avatar ? <Avatar label={avatar} disabled={disabled} /> : null}
-                {icon ? (
-                  <Icon icon={icon} size="lg" disabled={disabled} />
-                ) : null}
-              </React.Fragment>
-            }
-            center={mainContent}
-            right={
-              <React.Fragment>
-                {checkbox ? (
-                  <Checkbox label={label} disabled={disabled} />
-                ) : null}
-                {toggle ? <Switch disabled={disabled} /> : null}
-              </React.Fragment>
-            }
-          />
-        ) : (
-            <Bar
-              contentAlign="center"
-              centerAlign="left"
-              disabled={disabled}
-              left={mainContent}
-              right={
-                <React.Fragment>
-                  {checkbox ? <Checkbox disabled={disabled} /> : null}
-                  {toggle ? <Switch disabled={disabled} /> : null}
-                </React.Fragment>
-              }
-            />
-          )}
+        <Bar
+          contentAlign="center"
+          centerAlign="left"
+          leftWidth="max-content"
+          disabled={disabled}
+          left={leftContent}
+          center={mainContent}
+          right={rightContent}
+        />
       </DisabledContext.Provider>
     </ListItemWrapper>
   );
@@ -166,28 +195,28 @@ List.defaultProps = {
 };
 
 ListItem.propTypes = {
-  active: PropTypes.bool,
+  isSelected: PropTypes.bool,
   description: PropTypes.string,
   disabled: PropTypes.bool,
   id: PropTypes.string,
   icon: PropTypes.node,
+  count: PropTypes.string,
   checkbox: PropTypes.bool,
   avatar: PropTypes.string,
   interactive: PropTypes.bool,
   label: PropTypes.string.isRequired,
-  toggle: PropTypes.bool,
   onClick: PropTypes.func,
 };
 ListItem.defaultProps = {
-  active: false,
+  isSelected: false,
   description: null,
   icon: null,
   checkbox: false,
+  count: null,
   avatar: null,
   disabled: false,
   id: null,
   interactive: null,
-  toggle: false,
   onClick: null,
 };
 

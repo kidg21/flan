@@ -5,6 +5,25 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import Button from "atoms/Button";
 
+const TabButton = styled(Button)`
+margin: ${(props) => {
+    return props.margin || "";
+  }};
+border: ${(props) => {
+    return props.border || "";
+  }};
+  border-radius: ${(props) => {
+    return props.borderRadius || "0px";
+  }};
+  background-color: ${(props) => {
+    return props.theme.background[props.backgroundColor] || "";
+  }};
+  color: ${(props) => {
+    return props.theme.palette[props.fontColor] || "";
+  }};
+`;
+
+
 const TabsWrapper = styled.section`
   position: ${(props) => {
     return props.setPosition || "";
@@ -19,12 +38,6 @@ const TabsWrapper = styled.section`
     return props.setColumns || "repeat(auto-fit, minmax(0, 1fr))";
   }};
   flex-direction: column;
-  bottom: ${(props) => {
-    return props.alignBottom || "";
-  }};
-  right: ${(props) => {
-    return props.alignRight ? "0" : "";
-  }};
   width: ${(props) => {
     return props.setWidth || "100%";
   }};
@@ -32,91 +45,37 @@ const TabsWrapper = styled.section`
     return props.setHeight || "100%";
   }};
 
-  > * {
-    margin: ${(props) => {
-    return props.margin || "";
-  }};
-    border: ${(props) => {
-    return props.border || "";
-  }};
-    border-radius: ${(props) => {
-    return props.borderRadius || "";
-  }};
-    background-color: ${(props) => {
-    return props.theme.background[props.backgroundColor] || "";
-  }};
-    color: ${(props) => {
-    return props.theme.palette[props.fontColor] || "";
-  }};
-  }
 `;
 
 function Tabs({
-  id, children, columns, align, style, margin, gap,
+  id, children, style, vertical,
 }) {
   let setColumns;
   let border;
   let borderRadius;
   let setPosition;
   let setWidth;
-  let backgroundColor;
-  let fontColor;
   let setHeight;
   let setOrientation;
-  let alignRight;
-  let alignBottom;
 
-  if (columns) {
-    const numColumns = parseInt(columns, 10);
-    if (!isNaN(numColumns) && columns > 0 && columns < 6) {
-      setColumns = `repeat(${columns}, 1fr)`;
-    } else if (columns === "wrap") {
-      setColumns = "repeat(auto-fit, minmax(8rem, 1fr))";
-    }
+
+  if (vertical) {
+    setColumns = "none";
+    setWidth = "auto";
+    setHeight = "100%";
   }
 
-  switch (align) {
-    case "bottom":
-      // setPosition = "absolute";
-      alignBottom = "0";
-      break;
-    case "left":
-      setColumns = "none";
-      // setPosition = "absolute";
-      setWidth = "auto";
-      setHeight = "100%";
-      setOrientation = "flex";
-      alignBottom = "0";
-      break;
-    case "right":
-      setColumns = "none";
-      // setPosition = "absolute";
-      setWidth = "auto";
-      setHeight = "100%";
-      setOrientation = "flex";
-      alignRight = "0";
-      break;
-    case "top":
-    default:
-      break;
-  }
   return (
     <TabsWrapper
       id={id}
-      gap={gap}
       border={border}
       borderRadius={borderRadius}
       setColumns={setColumns}
       setPosition={setPosition}
-      backgroundColor={backgroundColor}
       setWidth={setWidth}
       setHeight={setHeight}
       setOrientation={setOrientation}
-      alignRight={alignRight}
-      alignBottom={alignBottom}
       style={style}
-      margin={margin}
-      fontColor={fontColor}
     >
       {children}
     </TabsWrapper>
@@ -124,43 +83,50 @@ function Tabs({
 }
 
 function Tab({
-  id, icon, tabLabel, size, onClick, type, isSelected, disabled, color,
+  id, icon, tabLabel, htmlFor, count, size, onClick, isSelected, disabled, type,
 }) {
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
 
-  let buttonColor = color;
-  if (!isSelected && type && type.toLowerCase() === "inactive") {
-    buttonColor = "grey";
-  }
-
-  let buttonType = type;
-  if (isSelected) {
-    buttonType = type && type.toLowerCase() === "inline" ? "underlined" : "solid";
-  }
-
   return (
-    <Button
-      id={id}
-      icon={icon}
-      size={size}
-      label={tabLabel}
-      onClick={onClick}
-      isSelected={isSelected}
-      disabled={isDisabled}
-      color={buttonColor}
-      type={buttonType}
-    />
+    <React.Fragment>
+      {isSelected ? (
+        <TabButton
+          id={id}
+          icon={icon}
+          htmlFor={htmlFor}
+          size={size}
+          label={tabLabel}
+          count={count}
+          onClick={onClick}
+          isSelected={isSelected}
+          disabled={isDisabled}
+          type={type}
+          underlined
+        />
+      ) : (
+          <TabButton
+            id={id}
+            icon={icon}
+            htmlFor={htmlFor}
+            size={size}
+            label={tabLabel}
+            count={count}
+            onClick={onClick}
+            isSelected={isSelected}
+            disabled={isDisabled}
+            type={type}
+            plain
+          />
+        )}
+    </React.Fragment>
   );
 }
 
 Tabs.propTypes = {
   id: PropTypes.string,
+  vertical: PropTypes.bool,
   children: PropTypes.node.isRequired,
-  columns: PropTypes.oneOf(["wrap", "1", "2", "3", "4", "5"]),
-  align: PropTypes.oneOf(["bottom", "left", "right", "top"]),
   style: PropTypes.string,
-  margin: PropTypes.string,
-  gap: PropTypes.string,
 };
 
 Tab.propTypes = {
@@ -169,28 +135,26 @@ Tab.propTypes = {
   tabLabel: PropTypes.string.isRequired,
   onClick: PropTypes.func,
   isSelected: PropTypes.bool,
+  count: PropTypes.string,
   disabled: PropTypes.bool,
-  color: PropTypes.string,
+  htmlFor: PropTypes.node,
   type: PropTypes.string,
   size: PropTypes.string,
 };
 
-
 Tabs.defaultProps = {
   id: null,
-  columns: null,
-  align: null,
+  vertical: false,
   style: null,
-  margin: null,
-  gap: null,
 };
 
 Tab.defaultProps = {
   id: null,
-  icon: null,
+  icon: false,
+  htmlFor: null,
+  count: null,
   isSelected: false,
   disabled: false,
-  color: null,
   type: null,
   size: null,
   onClick: null,

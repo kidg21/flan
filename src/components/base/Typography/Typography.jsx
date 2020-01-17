@@ -35,12 +35,12 @@ const StyledLabel = styled.label`
 
 const LinkText = styled.a`
 line-height: inherit;
-font-weight: 600;
-font-size: 1em;
+font-size: ${(props) => { return props.fontSize; }};
+font-weight: ${(props) => { return props.fontWeight; }};
 font-family: ${(props) => { return props.theme.typography.primary; }};
 text-decoration: none;
 padding: .5em;
-letter-spacing: 0.5px;
+letter-spacing: ${(props) => { return props.letterSpacing; }};
 color: ${(props) => { return props.theme.text.link; }};
 margin: -.5em;
 cursor: pointer;
@@ -106,12 +106,12 @@ function Title({
       letterSpacing = "0px";
       break;
     case "1x":
-      fontSize = "1em";
+      fontSize = "1.05em";
       as = "H6";
       letterSpacing = "0px";
       break;
     default:
-      fontSize = "1em";
+      fontSize = "1.05em";
       as = "H6";
       letterSpacing = "0px";
       break;
@@ -145,13 +145,57 @@ function Title({
 
 
 function Link({
-  text, onClick, href, target, disabled,
+  text, onClick, href, target, disabled, size, weight,
 }) {
+  let fontSize;
+  let letterSpacing;
+  let fontWeight;
+
+  switch (size && size.toLowerCase()) {
+    case "4x":
+      fontSize = "1em";
+      letterSpacing = "0px";
+      break;
+    case "3x":
+      fontSize = "0.876em";
+      letterSpacing = "0px";
+      break;
+    case "2x":
+      fontSize = "0.75em";
+      letterSpacing = "0.2px";
+      break;
+    case "1x":
+      fontSize = "0.65em";
+      letterSpacing = "0.6px";
+      break;
+    default:
+      fontSize = "0.876em";
+      letterSpacing = "0px";
+      break;
+  }
+
+
+  switch (weight && weight.toLowerCase()) {
+    case "bold":
+      fontWeight = "600";
+      break;
+    case "light":
+      fontWeight = "300";
+      break;
+    default:
+      fontWeight = "400";
+      break;
+  }
+
+
   return (
     <LinkText
       href={href}
       isDisabled={disabled}
       onClick={onClick}
+      fontSize={fontSize}
+      letterSpacing={letterSpacing}
+      fontWeight={fontWeight}
       target={target}
     >
       {text}
@@ -195,11 +239,14 @@ function Text({
     case "bold":
       fontWeight = "600";
       break;
+    case "regular":
+      fontWeight = "400";
+      break;
     case "light":
       fontWeight = "300";
       break;
     default:
-      fontWeight = "400";
+      fontWeight = "600";
       break;
   }
 
@@ -296,13 +343,11 @@ Label.defaultProps = {
 Title.propTypes = {
   text: PropTypes.string,
   size: PropTypes.node,
-  type: PropTypes.string,
   weight: PropTypes.node,
 };
 Title.defaultProps = {
   text: null,
   size: null,
-  type: null,
   weight: null,
 };
 
@@ -310,13 +355,11 @@ Title.defaultProps = {
 Text.propTypes = {
   text: PropTypes.string,
   size: PropTypes.node,
-  type: PropTypes.node,
   weight: PropTypes.node,
 };
 Text.defaultProps = {
   text: null,
   size: null,
-  type: null,
   weight: null,
 };
 
@@ -325,6 +368,8 @@ Link.propTypes = {
   text: PropTypes.string,
   target: PropTypes.node,
   onClick: PropTypes.node,
+  size: PropTypes.node,
+  weight: PropTypes.node,
   href: PropTypes.node,
   disabled: PropTypes.bool,
 };
@@ -334,6 +379,8 @@ Link.defaultProps = {
   onClick: null,
   href: null,
   disabled: false,
+  size: null,
+  weight: null,
 };
 
 

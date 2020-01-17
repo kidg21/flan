@@ -9,7 +9,7 @@ export {
 export { default as GlobalStyles } from "./base/GlobalStyles/GlobalStyles.jsx";
 
 // Publicly exported files from 'atoms'
-// export { default as Avatar } from "./atoms/Avatar";
+export { default as Avatar } from "./atoms/Avatar";
 export { default as Badge } from "./atoms/Badge";
 export { default as Button } from "./atoms/Button";
 export { default as Calendar } from "./atoms/Calendar";
@@ -30,6 +30,7 @@ export { default as TextInput } from "./atoms/TextInput";
 export { default as Banner } from "./blocks/Banner";
 export { default as Bar } from "./blocks/Bar";
 export { default as Legend } from "./blocks/Legend";
+export { default as Controls, Control } from "./blocks/Controls";
 export { default as DataRange } from "./blocks/DataRange";
 export { default as List, ListItem } from "./blocks/List";
 export { default as IconBlock } from "./blocks/IconBlock";

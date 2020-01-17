@@ -212,10 +212,10 @@ function TextInput({
 }
 
 TextInput.propTypes = {
-  autocompleteList: PropTypes.arrayOf(PropTypes.string || PropTypes.shape({
+  autocompleteList: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string, PropTypes.shape({
     value: PropTypes.string,
     label: PropTypes.string,
-  })),
+  })])),
   children: PropTypes.node,
   className: PropTypes.string,
   /** A disabled input field is unusable and un-clickable, and its value will not be sent when submitting the form */

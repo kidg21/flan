@@ -3,10 +3,10 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
-import Bar from "blocks/Bar";
 import styled from "styled-components";
 import Text, { Title } from "base/Typography";
 import Card from "layout/Card";
+import List, { ListItem } from "blocks/List";
 
 const MenuContainer = styled.div`
   cursor: pointer;
@@ -18,23 +18,30 @@ const MenuContainer = styled.div`
   margin: -0.5em;
 `;
 
-const MenuItem = styled.li`
-  padding: 0.55em;
+const ItemWrapper = styled.div`
   z-index: 501;
   text-align: left;
+  &:last-child {
+    padding-bottom: 1rem;
+  }
+  &:first-child{
+    padding-top: 1rem;
+  }
 `;
 
-const MenuList = styled.ul`
+// const ListWrapper = styled.div`
+// `;
+const ListWrapper = styled.div`
   list-style: none;
   padding-top: 0.4em;
   padding-bottom: 0.4em;
   width: auto;
-  min-width: 10em;
-  overflow-x: hidden;
-  overflow-y: auto;
-  background-color: ${(props) => {
+  min-width: 10rem;
+  background: ${(props) => {
     return props.theme.background.default;
   }};
+  overflow-x: hidden;
+  overflow-y: auto;
 `;
 
 const MenuPopper = styled.div`
@@ -94,69 +101,50 @@ function MenuComponent({
       onMouseLeave={closeMenu}
     >
       <Card>
-        <MenuList>
-          {data.map((item) => {
-            // nested submenu
-            if (item.commands) {
-              return (
-                <MenuItem
-                  key={item.id}
-                  onMouseOver={(e) => {
-                    setActiveItem({
-                      id: item.id,
-                      top: `${e.currentTarget.getBoundingClientRect().top -
-                        e.currentTarget.offsetParent.getBoundingClientRect()
-                          .top}px`,
-                      left:
-                        submenuDirection === "right"
-                          ? `${
-                          e.currentTarget.offsetParent.getBoundingClientRect()
-                            .width
-                          }px`
-                          : "",
-                      right:
-                        submenuDirection !== "right"
-                          ? `${
-                          e.currentTarget.offsetParent.getBoundingClientRect()
-                            .width
-                          }px`
-                          : "",
-                    });
-                  }}
-                >
-                  <Bar
-                    contentAlign="center"
-                    left={<Text icon={item.icon} text={item.name} />}
-                    right={<Icon icon={submenuDirection} />}
-                  />
-                  {activeItem && activeItem.id === item.id ? (
-                    <MenuComponent
-                      id={item.id}
-                      data={item.commands}
-                      onClick={closeMenu}
-                      right={activeItem.right}
-                      left={activeItem.left}
-                      top={activeItem.top}
-                      submenuDirection={submenuDirection}
-                    />
-                  ) : null}
-                </MenuItem>
-              );
-            }
+        <ListWrapper>
+          <List interactive>
+            {data.map((item) => {
+              // nested submenu
+              if (item.commands) {
+                return (
+                  <ItemWrapper
+                    key={item.id}
+                    onMouseOver={(e) => {
+                      setActiveItem({
+                        id: item.id,
+                        top: `${e.currentTarget.getBoundingClientRect().top - e.currentTarget.offsetParent.getBoundingClientRect().top}px`,
+                        left: submenuDirection === "right" ? `${e.currentTarget.offsetParent.getBoundingClientRect().width}px` : "",
+                        right: submenuDirection !== "right" ? `${e.currentTarget.offsetParent.getBoundingClientRect().width}px` : "",
+                      });
+                    }}
+                  >
+                    <ListItem label={item.name} icon={item.icon} arrow={submenuDirection} />
+                    {activeItem && activeItem.id === item.id ? (
+                      <MenuComponent
+                        id={item.id}
+                        data={item.commands}
+                        onClick={closeMenu}
+                        right={activeItem.right}
+                        left={activeItem.left}
+                        top={activeItem.top}
+                        submenuDirection={submenuDirection}
+                      />
+                    ) : null}
+                  </ItemWrapper>
+                );
+              }
 
-            return (
-              <MenuItem
-                key={item.id}
-                onClick={() => {
-                  if (item.onClickLink) item.onClickLink(item.id);
-                }}
-                onMouseOver={closeMenu}
-              >
-                <Text icon={item.icon} text={item.name} />
-              </MenuItem>
-            );
-          })}
-        </MenuList>
+              return (
+                <ItemWrapper
+                  key={item.id}
+                  onClick={() => { if (item.onClickLink) item.onClickLink(item.id); }}
+                  onMouseOver={closeMenu}
+                >
+                  <ListItem label={item.name} icon={item.icon} />
+                </ItemWrapper>);
+            })}
+          </List>
+        </ListWrapper>
       </Card>
     </MenuPopper>
   );
