@@ -1,8 +1,8 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
-import { Padding } from "helpers/Display";
 import Layout from "layout/Layout";
+import Card from "elements/Card";
 import List, { ListItem } from "blocks/List";
 import VirtualizedList from "./VirtualizedList.jsx";
 
@@ -345,7 +345,6 @@ storiesOf("Blocks|List", module)
       markdown: ListNotes,
     },
   })
-  .addDecorator(Padding)
   .addDecorator(withKnobs)
   .add(
     "Documentation",
@@ -368,55 +367,121 @@ storiesOf("Blocks|List", module)
         <ListItem
           label={text("1 - Label", "Item 1", "Item 1")}
           description={text("1 - Description", "", "Item 1")}
-          type={select(
-            "1 - Type",
+          pre={select(
+            "1 - Pre",
             {
               default: null,
-              info: "info",
-              success: "success",
-              warning: "warning",
-              alert: "alert",
+              icon: "icon",
+              avatar: "avatar",
             },
             null,
             "Item 1",
           )}
-          active={boolean("1 - Active", false, "Item 1")}
+          preLabel={text("1 - Pre-Label", "A", "Item 1")}
+          preIcon={select(
+            "1 - Pre-Icon",
+            {
+              home: "home",
+              user: "user",
+              bookmark: "bookmark",
+              print: "print",
+            },
+            "home",
+            "Item 1",
+          )}
+          post={select(
+            "1 - Post",
+            {
+              default: null,
+              checkbox: "checkbox",
+              toggle: "toggle",
+              label: "label",
+            },
+            null,
+            "Item 1",
+          )}
+          postLabel={text("1 - Post-Label", "Label", "Item 1")}
+          isSelected={boolean("1 - Selected", false, "Item 1")}
           disabled={boolean("1 - Disabled", false, "Item 1")}
         />
         <ListItem
-          label={text("2 - Label", "Item 2", "Item 2")}
+          label={text("1 - Label", "Item 2", "Item 2")}
           description={text("2 - Description", "", "Item 2")}
-          type={select(
-            "2 - Type",
+          pre={select(
+            "2 - Pre",
             {
               default: null,
-              info: "info",
-              success: "success",
-              warning: "warning",
-              alert: "alert",
+              icon: "icon",
+              avatar: "avatar",
             },
             null,
             "Item 2",
           )}
-          active={boolean("2 - Active", false, "Item 2")}
+          preLabel={text("2 - Pre-Label", "A", "Item 2")}
+          preIcon={select(
+            "2 - Pre-Icon",
+            {
+              home: "home",
+              user: "user",
+              bookmark: "bookmark",
+              print: "print",
+            },
+            "home",
+            "Item 2",
+          )}
+          post={select(
+            "2 - Post",
+            {
+              default: null,
+              checkbox: "checkbox",
+              toggle: "toggle",
+              label: "label",
+            },
+            null,
+            "Item 2",
+          )}
+          postLabel={text("2 - Post-Label", "Label", "Item 2")}
+          isSelected={boolean("2 - Selected", false, "Item 2")}
           disabled={boolean("2 - Disabled", false, "Item 2")}
         />
         <ListItem
           label={text("3 - Label", "Item 3", "Item 3")}
           description={text("3 - Description", "", "Item 3")}
-          type={select(
-            "3 - Type",
+          pre={select(
+            "3 - Pre",
             {
               default: null,
-              info: "info",
-              success: "success",
-              warning: "warning",
-              alert: "alert",
+              icon: "icon",
+              avatar: "avatar",
             },
             null,
             "Item 3",
           )}
-          active={boolean("3 - Active", false, "Item 3")}
+          preLabel={text("3 - Pre-Label", "A", "Item 3")}
+          preIcon={select(
+            "3 - Pre-Icon",
+            {
+              home: "home",
+              user: "user",
+              bookmark: "bookmark",
+              print: "print",
+            },
+            "home",
+            "Item 3",
+          )}
+          post={select(
+            "3 - Post",
+            {
+              default: null,
+              checkbox: "checkbox",
+              toggle: "toggle",
+              label: "label",
+            },
+            null,
+            "Item 3",
+          )}
+          postLabel={text("3 - Post-Label", "Label", "Item 3")}
+          isSelected={boolean("3 - Selected", false, "Item 3")}
           disabled={boolean("3 - Disabled", false, "Item 3")}
         />
       </List>
@@ -462,173 +527,194 @@ storiesOf("Blocks|List", module)
     );
   })
 
-  .add("Avatar", () => {
+  .add("Pre-Avatar", () => {
     return (
       <List interactive>
         <ListItem
           label="List Item"
           description="This is the description"
-          avatar="LB"
+          pre="avatar"
+          preLabel="AB"
         />
         <ListItem
           label="List Item"
           description="This is the description"
-          avatar="LB"
-          icon="user"
+          pre="avatar"
+          preIcon="user"
         />
         <ListItem
           label="List Item"
           description="This is the description"
-          avatar="LB"
+          pre="avatar"
+          preLabel="CD"
         />
         <ListItem
           label="List Item"
           description="This is the description"
-          avatar="LB"
+          pre="avatar"
+          preIcon="file"
         />
       </List>
     );
   })
 
-  .add("Icon", () => {
+  .add("Pre-Icon", () => {
     return (
       <List interactive>
         <ListItem
           label="List Item"
           description="This is the description"
-          icon="user"
+          pre="icon"
+          preLabel="home"
         />
         <ListItem
           label="List Item"
           description="This is the description"
-          icon="user"
+          pre="icon"
+          preLabel="user"
         />
         <ListItem
           label="List Item"
           description="This is the description"
-          icon="user"
+          pre="icon"
+          preLabel="bookmark"
         />
         <ListItem
           label="List Item"
           description="This is the description"
-          icon="user"
-        />
-      </List>
-    );
-  })
-  // .add("Virtualized List", () => {
-  //   return React.createElement(() => {
-  //     const [highlightedCell, setHighlightCell] = useState(null);
-  //     const [selectedCell, setSelectedCell] = useState(null);
-  //     const onCellClick = (e, { rowIndex }) => {
-  //       setSelectedCell({ rowIndex });
-  //     };
-  //     const Template = (props) => {
-  //       return (
-  //         <Card
-  //           id={props._DMP_ID_FK}
-  //           title={`${props.index}: ${props.SITE_ADDR}`}
-  //           body={props.APN}
-  //         />
-  //       );
-  //     };
-  //     const onCellMouseEnter = (e, { rowIndex }) => {
-  //       setHighlightCell({ rowIndex });
-  //     };
-
-  //     return (
-  //       <Layout>
-  //         <VirtualizedList
-  //           rows={data}
-  //           Template={Template}
-  //           id="foo"
-  //           onCellClick={onCellClick}
-  //           onCellMouseEnter={onCellMouseEnter}
-  //           onCellMouseLeave={() => {
-  //             setHighlightCell(null);
-  //           }}
-  //           highlightedCell={highlightedCell}
-  //           selectedCell={selectedCell}
-  //         />
-  //       </Layout>
-  //     );
-  //   });
-  // })
-  .add("Toggle List", () => {
-    return (
-      <List interactive>
-        <ListItem
-          label="List Item"
-          description="This is the description"
-          toggle
-        />
-        <ListItem
-          label="List Item"
-          description="This is the description"
-          toggle
-        />
-        <ListItem
-          label="List Item"
-          description="This is the description"
-          toggle
-        />
-        <ListItem
-          label="List Item"
-          description="This is the description"
-          toggle
-        />
-      </List>
-    );
-  })
-  .add("Count List", () => {
-    return (
-      <List interactive>
-        <ListItem
-          label="List Item"
-          description="This is the description"
-          count="2"
-        />
-        <ListItem
-          label="List Item"
-          description="This is the description"
-          count="3"
-        />
-        <ListItem
-          label="List Item"
-          description="This is the description"
-          count="5"
-        />
-        <ListItem
-          label="List Item"
-          description="This is the description"
+          pre="icon"
+          preLabel="print"
         />
       </List>
     );
   })
 
-  .add("Checkbox List", () => {
+  .add("Post-Toggle", () => {
     return (
       <List interactive>
         <ListItem
           label="List Item"
           description="This is the description"
-          checkbox
+          post="toggle"
+          postLabel="optional"
         />
         <ListItem
           label="List Item"
           description="This is the description"
-          checkbox
+          post="toggle"
+          postLabel="toggle"
         />
         <ListItem
           label="List Item"
           description="This is the description"
-          checkbox
+          post="toggle"
+          postLabel="label"
         />
         <ListItem
           label="List Item"
           description="This is the description"
-          checkbox
+          post="toggle"
         />
       </List>
     );
+  })
+
+  .add("Post-Label", () => {
+    return (
+      <List interactive>
+        <ListItem
+          label="List Item"
+          description="This is the description"
+          post="label"
+          postLabel="label"
+        />
+        <ListItem
+          label="List Item"
+          description="This is the description"
+          post="label"
+          postLabel="6"
+        />
+        <ListItem
+          label="List Item"
+          description="This is the description"
+          post="label"
+          postLabel="NEW!"
+        />
+        <ListItem
+          label="List Item"
+          description="This is the description"
+          post="label"
+          postLabel="9"
+        />
+      </List>
+    );
+  })
+
+  .add("Post-Checkbox", () => {
+    return (
+      <List interactive>
+        <ListItem
+          label="List Item"
+          description="This is the description"
+          post="checkbox"
+          postLabel="optional"
+        />
+        <ListItem
+          label="List Item"
+          description="This is the description"
+          post="checkbox"
+          postLabel="checkbox"
+        />
+        <ListItem
+          label="List Item"
+          description="This is the description"
+          post="checkbox"
+          postLabel="label"
+        />
+        <ListItem
+          label="List Item"
+          description="This is the description"
+          post="checkbox"
+        />
+      </List>
+    );
+  })
+
+  .add("Virtualized List", () => {
+    return React.createElement(() => {
+      const [highlightedCell, setHighlightCell] = useState(null);
+      const [selectedCell, setSelectedCell] = useState(null);
+      const onCellClick = (e, { rowIndex }) => {
+        setSelectedCell({ rowIndex });
+      };
+      const Template = (props) => {
+        return (
+          <Card
+            id={props._DMP_ID_FK}
+            title={`${props.index}: ${props.SITE_ADDR}`}
+            description={props.APN}
+          />
+        );
+      };
+      const onCellMouseEnter = (e, { rowIndex }) => {
+        setHighlightCell({ rowIndex });
+      };
+
+      return (
+        <Layout>
+          <VirtualizedList
+            rows={data}
+            Template={Template}
+            id="foo"
+            onCellClick={onCellClick}
+            onCellMouseEnter={onCellMouseEnter}
+            onCellMouseLeave={() => {
+              setHighlightCell(null);
+            }}
+            highlightedCell={highlightedCell}
+            selectedCell={selectedCell}
+          />
+        </Layout>
+      );
+    });
   });
