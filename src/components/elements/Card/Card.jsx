@@ -165,16 +165,11 @@ const CardListWrapper = styled(Grid)`
   }
 `;
 
-function ExpandingSection({ description, icon, id, label, more, title, }) {
-  const [open, setOpen] = useState(true);
-  const [rotation, setRotation] = useState("0");
-  function toggleDropdown() {
-    setOpen(!open);
-    if (rotation === "0") {
-      setRotation("180");
-    } else {
-      setRotation("0");
-    }
+function ExpandingSection({ description, icon, id, label, more, open, rotation, title, }) {
+  if (open) {
+    rotation = "180"
+  } else {
+    rotation = "0"
   }
   return (
     <Expander
@@ -183,7 +178,6 @@ function ExpandingSection({ description, icon, id, label, more, title, }) {
         title || description || label || icon ? (
           <Bar
             contentAlign="center"
-            onClick={toggleDropdown}
             leftWidth="max-content"
             left={
               label || icon ? <Avatar label={label} icon={icon} /> : null
@@ -205,7 +199,7 @@ function ExpandingSection({ description, icon, id, label, more, title, }) {
   );
 }
 
-function CardSection({ children, className, header, footer, id, onClick, padding, type }) {
+function CardSection({ children, className, footer, header, id, onClick, padding, type, }) {
   let sectionColor;
   let sectionBackground;
   if (type) {
@@ -269,14 +263,14 @@ function Card({
   imageAlt,
   inverse,
   label,
+  media,
+  mediaSource,
   more,
   onClick,
   padding,
+  shadow,
   title,
   type,
-  media,
-  shadow,
-  mediaSource,
 }) {
   let cardColor;
   let cardBackground;
@@ -304,6 +298,15 @@ function Card({
       break;
   }
 
+  const [open, setOpen] = useState(false);
+  function toggleDropdown() {
+    if (open) {
+      setOpen(false);
+    } else {
+      setOpen(true);
+    }
+  }
+
   let headerSection;
   if (title || description) {
     headerSection = (
@@ -326,13 +329,14 @@ function Card({
     )
     if (more) {
       headerSection = (
-        <CardSection type={type}>
+        <CardSection type={type} onClick={toggleDropdown}>
           <ExpandingSection
-            title={title}
             description={description}
-            label={label}
             icon={icon}
+            label={label}
             more={more}
+            open={open}
+            title={title}
           />
         </CardSection>
       )
@@ -452,7 +456,6 @@ function Card({
     <CardWrapper
       cardBackground={cardBackground}
       cardColor={cardColor}
-      mediaType={mediaType}
       cardPadding={cardPadding}
       cardShadow={cardShadow}
       className={className}
@@ -460,6 +463,7 @@ function Card({
       inverse={inverse}
       media={media}
       mediaSource={mediaSource}
+      mediaType={mediaType}
       shadow={shadow}
     >
       {mediaSource ? mediaSection : null}
