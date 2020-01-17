@@ -3,7 +3,7 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { Darken, Shade } from "Variables";
+import { Darken } from "Variables";
 import Bar from "blocks/Bar";
 import Tag from "atoms/Tag";
 import Icon from "atoms/Icon";
@@ -31,10 +31,10 @@ const ListWrapper = styled.ul`
 const ListItemWrapper = styled.li`
   position: relative;
   color: ${(props) => {
-    return props.theme.text[props.itemColor];
+    return props.isSelected ? props.theme.text.inverse : props.theme.text.primary;
   }};
   background-color: ${(props) => {
-    return props.theme.background.default;
+    return props.isSelected ? props.theme.background.inverse : props.theme.background.default;
   }};
   padding: 1em;
   cursor: ${(props) => {
@@ -46,10 +46,6 @@ const ListItemWrapper = styled.li`
     return props.interactive ? Darken : "";
   }};
   }
-  &:active {
-    ${(props) => {
-    return props.interactive ? Shade : "";
-  }};
   }
   outline: none;
   &[disabled] {
@@ -80,7 +76,7 @@ function List({
 }
 
 function ListItem({
-  active,
+  isSelected,
   description,
   disabled,
   id,
@@ -156,7 +152,7 @@ function ListItem({
 
   return (
     <ListItemWrapper
-      active={active}
+      isSelected={isSelected}
       id={id}
       interactive={
         typeof interactive === "boolean"
@@ -198,7 +194,7 @@ List.defaultProps = {
 };
 
 ListItem.propTypes = {
-  active: PropTypes.bool,
+  isSelected: PropTypes.bool,
   description: PropTypes.string,
   disabled: PropTypes.bool,
   id: PropTypes.string,
@@ -211,7 +207,7 @@ ListItem.propTypes = {
   onClick: PropTypes.func,
 };
 ListItem.defaultProps = {
-  active: false,
+  isSelected: false,
   description: null,
   icon: null,
   checkbox: false,

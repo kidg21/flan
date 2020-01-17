@@ -1,21 +1,30 @@
+/* eslint-disable complexity */
 /* eslint-disable linebreak-style */
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Icon from "atoms/Icon";
+import Image from "atoms/Image";
 import Title from "base/Typography";
 
 const AvatarText = styled(Title)`
   color: inherit;
-  margin: 0px 0px 0em;
+  font-size: ${(props) => {
+    return props.fontSize || "inherit";
+  }};
+  margin: 0;
 `;
 
 const TagContainer = styled.div`
   justify-content: center;
   vertical-align: center;
   display: flex;
-  width: 33px;
-  height: 33px;
+  width: ${(props) => {
+    return props.avatarSize;
+  }};
+  height: ${(props) => {
+    return props.avatarSize;
+  }};
   align-items: center;
   background-color: ${(props) => {
     return props.theme.palette[props.backgroundColor] || "";
@@ -28,12 +37,39 @@ const TagContainer = styled.div`
 `;
 
 function Avatar({
-  type, disabled, icon, id, label,
+  type, disabled, icon, id, src, alt, image, label, size,
 }) {
   let labelType;
   let iconType;
   let backgroundColor;
+  let fontSize;
   let textColor;
+  let avatarSize;
+
+
+  switch (size && size.toLowerCase()) {
+    case "4x":
+      avatarSize = "5rem";
+      fontSize = "2.5em";
+      break;
+    case "3x":
+      avatarSize = "4rem";
+      fontSize = "2em";
+      break;
+    case "2x":
+      avatarSize = "3rem";
+      fontSize = "1.5em";
+      break;
+    case "1x":
+      avatarSize = "2.5rem";
+      fontSize = "1em";
+      break;
+    default:
+      avatarSize = "2.5rem";
+      fontSize = "1em";
+      break;
+  }
+
   switch (type && type.toLowerCase()) {
     case "success":
       backgroundColor = "success";
@@ -67,16 +103,27 @@ function Avatar({
   if (disabled) {
     backgroundColor = "grey3";
   }
-  if (icon) {
+  if (image) {
+    iconType = (<Image
+      circle
+      src={src}
+      width={avatarSize}
+      alt={alt}
+    />);
+  } else if (icon) {
     iconType = <Icon icon={icon} size="lg" />;
   } else {
-    labelType = <AvatarText weight="semibold" size="lg" text={label} />;
+    labelType = <AvatarText weight="semibold" fontSize={fontSize} text={label.substring(0, 2)} />;
   }
 
   return (
     <TagContainer
       backgroundColor={backgroundColor}
       icon={icon}
+      src={src}
+      alt={alt}
+      image={image}
+      avatarSize={avatarSize}
       id={id}
       label={label}
       textColor={textColor}
@@ -92,13 +139,21 @@ Avatar.propTypes = {
   disabled: PropTypes.bool,
   /** Enter the name of the icon as the prop value. (ex. icon='circle' */
   icon: PropTypes.string,
+  image: PropTypes.node,
+  src: PropTypes.node,
+  alt: PropTypes.string,
   id: PropTypes.string,
+  size: PropTypes.node,
   label: PropTypes.string,
 };
 
 Avatar.defaultProps = {
   type: null,
   disabled: false,
+  image: null,
+  src: null,
+  alt: null,
+  size: null,
   icon: null,
   id: null,
   label: null,
