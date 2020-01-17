@@ -4,43 +4,49 @@ import React from "react";
 import PropTypes from "prop-types";
 import Panel from "layout/Panel";
 import { screen } from "Variables";
+import Icon from "atoms/Icon";
+import Bar from "blocks/Bar";
 import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 
 
 const FlexWrapper = styled.div`
-  display: flex;
-
+  position: fixed;
+  z-index: 500;
+  border: 1px  ${(props) => {
+    return props.theme.palette.grey6;
+  }};
   transition: all 1s ease-in-out;
+  right: 0;
+  height: 100%;
   @media ${screen.small} {
     transform: ${(props) => {
     return props.visible ? "translateX(0%)" : "translateX(-100%)";
   }};
-  width: 300%;
+    width: 90%;
   }
   @media ${screen.medium} {
     transform: ${(props) => {
     return props.visible ? "translateX(0%)" : "translateX(-100%)";
   }};
-  width: 300%;
+    width: 20%;
   }
-
   @media ${screen.large} {
     transform: ${(props) => {
     return props.visible ? "translateX(0%)" : "translateX(-100%)";
   }};
   width: 20%;
-  }
+}
   @media ${screen.xlarge} {
     transform: ${(props) => {
     return props.visible ? "translateX(0%)" : "translateX(-100%)";
   }};
-  width: 20%;
+    width: 20%;
   }
   &:empty {
     &:before {
       ${PlaceholderText};
-      content: "{ Sidebar Wrapper }";
+      content: "{ rightcontent }";
       color: ${(props) => {
     return props.theme.text.primary;
   }};
@@ -49,7 +55,7 @@ const FlexWrapper = styled.div`
 `;
 
 
-function Sidebar({
+function Rightbar({
   children,
   right,
   visible,
@@ -70,7 +76,7 @@ function Sidebar({
   );
 }
 
-Sidebar.propTypes = {
+Rightbar.propTypes = {
   children: PropTypes.node,
   id: PropTypes.string,
   height: PropTypes.node,
@@ -80,7 +86,7 @@ Sidebar.propTypes = {
 
 };
 
-Sidebar.defaultProps = {
+Rightbar.defaultProps = {
   children: null,
   visible: null,
   id: null,
@@ -91,4 +97,4 @@ Sidebar.defaultProps = {
 };
 
 
-export default Sidebar;
+export default Rightbar;

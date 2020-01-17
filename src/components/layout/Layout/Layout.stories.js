@@ -9,7 +9,6 @@ import Layout from "layout/Layout";
 import Bar from "blocks/Bar";
 import Button from "atoms/Button";
 import NewLayout from "./NewLayout.jsx";
-import ActionLayout from "./ActionLayout.jsx";
 // import StaticLayout from "./StaticLayout.jsx";
 
 const LayoutNotes = markdown.require("./Layout.md");
@@ -27,56 +26,17 @@ storiesOf("Layout |App Layout/", module)
   .add(
     "Documentation",
     withInfo()(() => {
-      return <Layout height="25%" />;
+      return <NewLayout />;
     }),
   )
 
-  .add("New1", () => {
+  .add("Dynamic", () => {
     return (
-      <ActionLayout leftContent={<h4>hello im a side</h4>} />
+      <NewLayout theme="dynamic" />
     );
   })
-  // .add("New2", () => {
-  //   return (
-  //     <StaticLayout leftContent={<h4>hello im a side</h4>} rightContent={<h4>hello im right</h4>} mainContent={<h1>hello im main</h1>} />
-  //   );
-  // })
-  .add("New3", () => {
+  .add("Static", () => {
     return (
       <NewLayout theme="static" />
-    );
-  })
-
-
-  .add("2 Panel - Row", () => {
-    return (
-      <Layout>
-        <Layout width="70%" />
-        <Layout width="30%" right="0" backgroundColor="lightyellow" />
-      </Layout>
-    );
-  })
-
-  .add("2 Panel - Column", () => {
-    return (
-      <Layout>
-        <Layout height="60%" />
-        <Layout height="40%" top="60%" backgroundColor="lightgreen" />
-      </Layout>
-    );
-  })
-
-  .add("3 Panel", () => {
-    return (
-      <Layout>
-        <Layout width="70%" height="60%" />
-        <Layout
-          width="70%"
-          height="40%"
-          top="60%"
-          backgroundColor="lightgreen"
-        />
-        <Layout width="30%" right="0" backgroundColor="lightyellow" />
-      </Layout>
     );
   });

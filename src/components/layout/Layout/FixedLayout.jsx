@@ -11,8 +11,6 @@ import Panel from "layout/Panel";
 import IconBlock from "blocks/IconBlock";
 import Icon from "atoms/Icon";
 import Sidebar from "./Regions/Sidebar.jsx";
-import Grid from "layout/Grid";
-import TextInput from "atoms/TextInput";
 import Rightbar from "./Regions/Rightbar.jsx";
 // import BaseLayout from "./BaseLayout.jsx";
 import LayoutWrapper from "./Regions/LayoutWrapper.jsx";
@@ -55,16 +53,11 @@ padding: 1em;
 z-index: 100;
 `;
 
-function ActionLayout({
+function FixedLayout({
     leftContent,
     rightContent,
     mainContent,
 }) {
-    const [leftVisible, setLeftVisible] = useState(false);
-    function seeSidebar() {
-        setLeftVisible(!leftVisible);
-    }
-
     const [rightVisible, setRightVisible] = useState(false);
     function seeRightbar() {
         setRightVisible(!rightVisible);
@@ -73,18 +66,13 @@ function ActionLayout({
     return (
         <Base>
             <ReactWrapper>
-                {leftVisible ? <Sidebar visible={leftVisible} > {leftContent}  </Sidebar> : null}
+                <Sidebar visible > {leftContent}  </Sidebar>
                 <LayoutWrapper >
                     <Panel>
                         <Header
                             contentAlign="center"
                             rightWidth="15%"
                             padding="2x"
-                            left={
-                                <Icon
-                                    icon="menu"
-                                    onClick={seeSidebar}
-                                />}
                             right={
 
                                 <IconBlock>
@@ -126,7 +114,7 @@ function ActionLayout({
     );
 }
 
-ActionLayout.propTypes = {
+FixedLayout.propTypes = {
     leftContent: PropTypes.node,
     rightContent: PropTypes.node,
     mainContent: PropTypes.node,
@@ -134,7 +122,7 @@ ActionLayout.propTypes = {
 
 };
 
-ActionLayout.defaultProps = {
+FixedLayout.defaultProps = {
     leftContent: null,
     rightContent: null,
     mainContent: null,
@@ -143,4 +131,4 @@ ActionLayout.defaultProps = {
 };
 
 
-export default ActionLayout;
+export default FixedLayout;

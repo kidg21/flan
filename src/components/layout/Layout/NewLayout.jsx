@@ -6,9 +6,10 @@ import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Layout from "layout/Layout";
-import ActionLayout from "./ActionLayout.jsx";
 import { screen } from "Variables";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
+import ActionLayout from "./ActionLayout.jsx";
+import FixedLayout from "./FixedLayout.jsx";
 
 
 function NewLayout({
@@ -24,11 +25,7 @@ function NewLayout({
             break;
         case "static":
             content = (
-                <Layout>
-                    <Layout width="13%" />
-                    <Layout width="87%" height="6%" right="0" />
-                    <Layout width="87%" height="94%" right="0" top="6" />
-                </Layout>
+                <FixedLayout leftContent={leftContent} rightContent={rightContent} mainContent={mainContent} />
             );
             break;
         default:

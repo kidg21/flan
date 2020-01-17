@@ -6,7 +6,7 @@ const Page = styled.div`
   display: grid;
   grid-gap: 1rem;
   background: ${(props) => {
-    return props.theme.background.app;
+    return props.theme.background.default;
   }};
   padding: 1rem;
   > h1,
