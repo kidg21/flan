@@ -280,7 +280,7 @@ class CardList extends Component {
   render() {
     const {
       rows, id, rowHeight, minRowHeight, selectedCell, highlightedCell,
-      scrollToAlignment, scrollTop, focusedRow, onScroll,
+      scrollToAlignment, scrollTop, focusedRow, onScroll, minimumBatchSize,
     } = this.props;
 
     let scrollToRow = focusedRow;
@@ -320,7 +320,7 @@ class CardList extends Component {
         rowCount={this.rowCount}
         threshold={0}
         ref={(ref) => { this._infiniteScroller = ref; }}
-        minimumBatchSize={2}
+        minimumBatchSize={minimumBatchSize}
       >
         {({ onRowsRendered, registerChild }) => {
           this._registerInfiniteChild = registerChild;
@@ -403,6 +403,7 @@ CardList.defaultProps = {
   focusedRow: null,
   loadRows: null,
   listId: null,
+  minimumBatchSize: 10,
 };
 
 CardList.propTypes = {
@@ -434,6 +435,7 @@ CardList.propTypes = {
   onScroll: PropTypes.func,
   focusedRow: PropTypes.number,
   loadRows: PropTypes.func,
+  minimumBatchSize: PropTypes.number,
 };
 
 export default CardList;
