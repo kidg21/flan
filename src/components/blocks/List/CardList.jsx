@@ -121,7 +121,7 @@ class CardList extends Component {
   }
 
   // remeasures dynamic rows/columns & refreshes grid
-  remeasureCells(e) {
+  remeasureCells(e, skipGridUpdate) {
     if (e) {
       if (this.cache) this.cache.clear(e.rowIndex, e.columnIndex);
       this._grid.recomputeGridSize(e);
@@ -129,7 +129,7 @@ class CardList extends Component {
       if (this.cache) this.cache.clearAll();
       this._grid.recomputeGridSize();
     }
-    this._grid.forceUpdate();
+    if (!skipGridUpdate) this._grid.forceUpdate();
   }
 
   _cellRenderer({
@@ -264,14 +264,13 @@ class CardList extends Component {
     // remeasure cells if rowHeight is auto
     // for when loading placeholder height & template height are different
     if (promise && this.cache) {
-      return promise.then((refreshRows) => {
-        const _startRowIndex = refreshRows && typeof refreshRows.startRowIndex === "number" ? refreshRows.startRowIndex : e.startIndex;
-        const _stopRowIndex = refreshRows && typeof refreshRows.stopRowIndex === "number" ? refreshRows.stopRowIndex : e.stopIndex;
-        for (let i = _startRowIndex; i <= _stopRowIndex; i++) {
-          for (let j = 0; j < this.columnCount; j++) {
-            this.remeasureCells({ rowIndex: i, columnIndex: j });
-          }
+      return promise.then((refreshIndex) => {
+        const refreshStartIndex = refreshIndex && typeof refreshIndex.startIndex === "number" ? refreshIndex.startIndex : _startIndex;
+        const refreshStopIndex = refreshIndex && typeof refreshIndex.stopIndex === "number" ? refreshIndex.stopIndex : _stopIndex;
+        for (let i = refreshStartIndex; i <= refreshStopIndex && i < rows.length; i++) {
+          this.remeasureCells(this.getCellInfo(i), true);
         }
+        this._grid.forceUpdate();
       });
     }
     return promise;

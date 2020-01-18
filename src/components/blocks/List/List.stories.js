@@ -895,7 +895,7 @@ storiesOf("Blocks|List", module)
                     ..._rows,
                     [id]: newRows,
                   });
-                  resolve({ startRowIndex, stopRowIndex });
+                  resolve({ startIndex, stopIndex });
                 }, 2000);
               });
             }}
