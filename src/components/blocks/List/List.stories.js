@@ -423,18 +423,38 @@ storiesOf("Blocks|List", module)
     );
   })
 
-  .add("Interactive States", () => {
+  .add("States", () => {
     return (
-      <List interactive>
+      <List>
         <ListItem
-          label="List Item (not interactive)"
+          label="List Item (standard)"
           description="This is the description"
-          interactive={false}
+        />
+        <ListItem
+          label="List Item (selected)"
+          description="This is the description"
+          isSelected
         />
         <ListItem
           label="List Item (disabled)"
           description="This is the description"
           disabled
+        />
+
+      </List>
+    );
+  })
+
+  .add("Interactive", () => {
+    return (
+      <List interactive>
+        <ListItem label="List Item" description="This is the description" />
+        <ListItem label="List Item" description="This is the description" />
+        <ListItem label="List Item" description="This is the description" />
+        <ListItem
+          label="List Item (interaction disabled)"
+          description="This is the description"
+          interactive={false}
         />
         <ListItem label="List Item" description="This is the description" />
 
@@ -444,29 +464,29 @@ storiesOf("Blocks|List", module)
 
   .add("Avatar", () => {
     return (
-        <List interactive>
-          <ListItem
-            label="List Item"
-            description="This is the description"
-            avatar="LB"
-          />
-          <ListItem
-            label="List Item"
-            description="This is the description"
-            avatar="LB"
-            icon="user"
-          />
-          <ListItem
-            label="List Item"
-            description="This is the description"
-            avatar="LB"
-          />
-          <ListItem
-            label="List Item"
-            description="This is the description"
-            avatar="LB"
-          />
-        </List>
+      <List interactive>
+        <ListItem
+          label="List Item"
+          description="This is the description"
+          avatar="LB"
+        />
+        <ListItem
+          label="List Item"
+          description="This is the description"
+          avatar="LB"
+          icon="user"
+        />
+        <ListItem
+          label="List Item"
+          description="This is the description"
+          avatar="LB"
+        />
+        <ListItem
+          label="List Item"
+          description="This is the description"
+          avatar="LB"
+        />
+      </List>
     );
   })
 
@@ -482,7 +502,6 @@ storiesOf("Blocks|List", module)
           label="List Item"
           description="This is the description"
           icon="user"
-          disabled
         />
         <ListItem
           label="List Item"

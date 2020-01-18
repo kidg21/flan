@@ -40,20 +40,20 @@ A 2-character label can be defined using the 'label' prop.
   </Story>
 </Preview>
 
-### Colors
+### Types
 
 Default Avatar color is a light version of our primary color. Primary and secondary colors are supported in addition to our funciontal colors.
 
 <Preview>
-  <Story name="Colors">
+  <Story name="Types">
     <Grid columns="4">
       <Avatar label="DF" />
-      <Avatar label="PR" color="primary" />
-      <Avatar label="SC" color="secondary" />
-      <Avatar label="IN" color="info" />
-      <Avatar label="SC" color="success" />
-      <Avatar label="WN" color="warning" />
-      <Avatar label="AL" color="alert" />
+      <Avatar label="PR" type="primary" />
+      <Avatar label="SC" type="secondary" />
+      <Avatar label="IN" type="info" />
+      <Avatar label="SC" type="success" />
+      <Avatar label="WN" type="warning" />
+      <Avatar label="AL" type="alert" />
     </Grid>
   </Story>
 </Preview>
@@ -72,6 +72,37 @@ An Avatar can be configured to use any icon from our **[Icon Library](/?path=/do
     </Grid>
   </Story>
 </Preview>
+
+
+### Image
+
+An Avatar can come in many sizes based on the need and UI region. Inherently the avatar is set to a standard size.
+
+<Preview>
+  <Story name="Image">
+    <Grid columns="4">
+      <Avatar size="3x" image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"/>
+       <Avatar size="4x" image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"/>
+    </Grid>
+  </Story>
+</Preview>
+
+### Sizes
+
+An Avatar can come in many sizes based on the need and UI region. Inherently the avatar is set to a standard size.
+
+<Preview>
+  <Story name="Sizes">
+    <Grid columns="4">
+      <Avatar label="1x" size="1x" />
+      <Avatar label="2x" size="2x" />
+      <Avatar label="3x" size="3x" />
+      <Avatar label="4x" size="4x" />
+    </Grid>
+  </Story>
+</Preview>
+
+
 
 ## Props
 

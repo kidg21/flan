@@ -205,8 +205,15 @@ A TextInput may appear to the left or right of it's corresponding label. A TextI
   </Story>
 </Preview>
 
+### Autocomplete
 
-
+<Preview>
+  <Story name="Autocomplete">
+    <TextInput autocompleteList={["Red", "Green", "Blue", "Cyan", "Magenta", "Yellow", "Black"]} label="Colors" placeholder="Pick a Color" onChange={(e) => {
+      alert(e.currentTarget.value);
+    }} />
+  </Story>
+</Preview>
 
 ### Props
 

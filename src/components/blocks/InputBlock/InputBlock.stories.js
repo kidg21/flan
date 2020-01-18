@@ -255,6 +255,10 @@ storiesOf("Blocks|Input Block", module)
         label="Input Block ( Pre-Select )"
         options={titles}
         selectOptions={titles[0].value}
+        onChange={(prevState, newState, setState) => {
+          alert(newState.selected.value);
+          setState(newState);
+        }}
         textInputs={inputsOne}
         helpText="Hang in there, buddy, I'm here to help!"
       />
