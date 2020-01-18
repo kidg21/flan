@@ -58,7 +58,7 @@ function Banner({
         contentAlign={description || link ? "" : "center"}
         padding="none"
         left={bannerType}
-        leftWidth="3em"
+        leftWidth="max-content"
         centerAlign="left"
         center={
           <Grid columns="1" gap="tiny">
