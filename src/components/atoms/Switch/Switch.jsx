@@ -27,7 +27,6 @@ const SwitchContainer = styled.div`
   border-color: ${(props) => {
     return props.theme.palette[props.borderColor] || props.theme.palette.grey3;
   }};
-  width: max-content;
   line-height: 1rem;
   &[disabled],
   &[readonly] {
