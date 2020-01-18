@@ -28,7 +28,7 @@ const TagContainer = styled.div`
 `;
 
 function Avatar({
-  color, disabled, icon, id, label,
+  color, disabled, icon, id, label, onClick,
 }) {
   let labelType;
   let iconType;
@@ -80,6 +80,7 @@ function Avatar({
       id={id}
       label={label}
       textColor={textColor}
+      onClick={onClick}
     >
       {iconType || labelType}
     </TagContainer>
@@ -89,6 +90,7 @@ function Avatar({
 Avatar.propTypes = {
   /** Options: 'primary', 'secondary', 'info', 'success', 'warning', 'alert' */
   color: PropTypes.string,
+  onClick: PropTypes.node,
   disabled: PropTypes.bool,
   /** Enter the name of the icon as the prop value. (ex. icon='circle' */
   icon: PropTypes.string,
@@ -99,6 +101,7 @@ Avatar.propTypes = {
 Avatar.defaultProps = {
   color: null,
   disabled: false,
+  onClick: null,
   icon: null,
   id: null,
   label: null,

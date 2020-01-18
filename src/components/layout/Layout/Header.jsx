@@ -2,11 +2,15 @@
 /* eslint-disable security/detect-object-injection */
 import React from "react";
 import PropTypes from "prop-types";
+import LightBoxIcon from "images/LightBoxIconLogo.png";
 import { screen } from "Variables";
+import Avatar from "atoms/Avatar";
 import Bar from "blocks/Bar";
-import Panel from "layout/Panel";
+import Icon from "atoms/Icon";
+import Image from "atoms/Image";
 import styled from "styled-components";
-import { PlaceholderText } from "helpers/Placeholders.jsx";
+
+
 
 const HeaderWrapper = styled(Bar)`
   top: 0;
@@ -16,33 +20,47 @@ const HeaderWrapper = styled(Bar)`
  
 `;
 
-
 function Header({
-    right,
-    left,
     id,
+    logoClick,
+    rightClick,
+    headerContent,
 }) {
     return (
         <HeaderWrapper
+            id={id}
             contentAlign="center"
             padding="2x"
-            left={left}
-            right={right}
+            left={<Image
+                circle
+                width="32"
+                src={LightBoxIcon}
+                alt="logo"
+            />
+            }
+            center={headerContent}
+            right={
+                <Icon
+                    icon="settings"
+                    onClick={rightClick}
+                />}
         />
     );
 }
 
 Header.propTypes = {
-    right: PropTypes.node,
+    rightClick: PropTypes.node,
     id: PropTypes.string,
-    left: PropTypes.node,
+    logoClick: PropTypes.node,
+    headerContent: PropTypes.node,
 
 };
 
 Header.defaultProps = {
-    right: null,
+    rightClick: null,
     id: null,
-    left: null,
+    logoClick: null,
+    headerContent: null,
 
 };
 

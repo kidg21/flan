@@ -6,8 +6,8 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Bar from "blocks/Bar";
 import Panel from "layout/Panel";
+import Header from "./Header.jsx";
 import IconBlock from "blocks/IconBlock";
 import Icon from "atoms/Icon";
 import Sidebar from "./Regions/Sidebar.jsx";
@@ -17,11 +17,6 @@ import Rightbar from "./Regions/Rightbar.jsx";
 // import BaseLayout from "./BaseLayout.jsx";
 import LayoutWrapper from "./Regions/LayoutWrapper.jsx";
 
-const Header = styled(Bar)`
-border: 1px solid ${(props) => {
-        return props.theme.palette.grey6;
-    }};
-`;
 
 // const InnerWrapper = styled.div`
 // display: flex;
@@ -77,38 +72,9 @@ function ActionLayout({
                 <LayoutWrapper >
                     <Panel>
                         <Header
-                            contentAlign="center"
-                            rightWidth="15%"
-                            padding="2x"
-                            left={
-                                <Icon
-                                    icon="menu"
-                                    onClick={seeSidebar}
-                                />}
-                            right={
-
-                                <IconBlock>
-                                    <Icon
-                                        icon="list"
-                                        onClick={seeRightbar}
-                                    />
-                                    <Icon
-                                        icon="chat"
-                                        onClick={seeRightbar}
-                                    />
-                                    <Icon
-                                        icon="notification"
-                                        onClick={seeRightbar}
-                                    />
-                                    <Icon
-                                        icon="settings"
-                                        onClick={seeRightbar}
-                                    />
-                                </IconBlock>
-
-                            }
+                            rightClick={seeRightbar}
+                            logoClick={seeSidebar}
                         />
-
                         {mainContent}
                     </Panel>
                 </LayoutWrapper>
