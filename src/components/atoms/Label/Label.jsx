@@ -13,12 +13,11 @@ const StyledLabel = styled.label`
   }};;
   cursor: pointer;
   display: flex;
-  align-items: center;
   font-weight: ${(props) => {
     return props.fontWeight || "500";
   }};;
   letter-spacing: ${(props) => {
-    return props.letterSpacing || ".25px";
+    return props.letterSpacing || "";
   }};;
   text-transform: ${(props) => {
     return props.textTransform || "";
