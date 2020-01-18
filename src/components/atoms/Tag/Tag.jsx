@@ -8,19 +8,21 @@ import Label from "atoms/Label";
 const TagContainer = styled.div`
   justify-content: center;
   display: flex;
-  width: fit-content;
-  align-items: center;
+  width: auto;
   background-color: ${(props) => {
     return props.theme.palette[props.badgeColor];
   }};
   color: ${(props) => {
     return props.theme.text[props.badgeTextColor];
   }};
+  text-align: center;
   text-transform: uppercase;
   padding: ${(props) => {
     return props.badgePadding || "";
   }};
-  border-radius: 5em;
+  border-radius: ${(props) => {
+    return props.theme.borders.radiusMax;
+  }};
 `;
 
 function Tag({
@@ -37,7 +39,7 @@ function Tag({
   } else {
     labelType = <Label size="sm" weight="bold" text={label} />;
     badgeTextColor = "inverse";
-    badgePadding = "0.15em .5em";
+    badgePadding = "0.25em .75em";
     switch (type) {
       case "info":
         badgeColor = "info";
