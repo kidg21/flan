@@ -2,51 +2,60 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import Card, { CardList } from "layout/Card";
+import Layout from "layout/Layout";
 import Panel from "layout/Panel";
 
 storiesOf("Layout|Panel", module)
   .addDecorator(checkA11y)
-  .add("Panel - with Card List", () => {
-    return (
-      <Panel
-        id="Panel"
-        header={<Card />}
-        footer={<Card />}
-      >
-        <CardList>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-        </CardList>
-      </Panel>
-    );
-  })
   .add("Panel", () => {
-    return <Panel />;
+    return <Layout><Panel /></Layout>;
   })
   .add("Panel with header", () => {
     return (
-      <Panel
-        header={<Card />}
-      />
+      <Layout>
+        <Panel
+          header={<Card />}
+        />
+      </Layout>
     );
   })
   .add("Panel with footer", () => {
     return (
-      <Panel
-        footer={<Card />}
-      />
+      <Layout>
+        <Panel
+          footer={<Card />}
+        />
+      </Layout>
     );
   })
   .add("Panel with header/footer", () => {
     return (
-      <Panel
-        header={<Card />}
-        footer={<Card />}
-      />
+      <Layout>
+        <Panel
+          header={<Card />}
+          footer={<Card />}
+        />
+      </Layout>
+    );
+  })
+  .add("Panel - with Card List", () => {
+    return (
+      <Layout>
+        <Panel
+          id="Panel"
+          header={<Card />}
+          footer={<Card />}
+        >
+          <CardList>
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+          </CardList>
+        </Panel>
+      </Layout>
     );
   });

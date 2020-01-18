@@ -4,20 +4,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 
-// Temporary: These variables will be removed once Card updates are merged
-const colors = {
-  shade5: "hsla(34, 5%, 12%, 0.25)",
-  shade6: "hsla(34, 5%, 12%, 0.3)",
-};
-const shadows = {
-  outerShadow: `
-    ${colors.shade6} 0 0 1px,
-    ${colors.shade5} 0 0 1rem
-    `,
-};
-
 const PanelWrapper = styled.div`
-  position: absolute;
   background: ${(props) => {
     return props.theme.background.default;
   }};
@@ -56,7 +43,7 @@ const SectionWrapper = styled.section`
   &:empty {
     &:before {
       ${PlaceholderText};
-      content: "PanelBody";
+      content: "Header / Footer";
       color: ${(props) => {
     return props.theme.text.primary;
   }};
@@ -90,7 +77,8 @@ const PanelSection = styled(PanelBody)`
   padding: 0;
   overflow: hidden;
   z-index: 1;
-  box-shadow: ${shadows.outerShadow};
+  /** TODO: change to variable once 'Card' branch is merged */
+  border: 1px solid hsl(240,11%,91%);
 `;
 function Panel({
   id, children, footer, header,
@@ -109,8 +97,8 @@ function Panel({
 Panel.propTypes = {
   id: PropTypes.string,
   children: PropTypes.node,
-  footer: PropTypes.string,
-  header: PropTypes.string,
+  footer: PropTypes.node,
+  header: PropTypes.node,
 };
 Panel.defaultProps = {
   id: null,
@@ -119,4 +107,4 @@ Panel.defaultProps = {
   header: null,
 };
 
-export { Panel as default };
+export default Panel;
