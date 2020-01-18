@@ -1,10 +1,17 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
+/* global number */
 import React, { useState } from "react";
 import { Padding } from "helpers/Display";
 import Layout from "layout/Layout";
 import List, { ListItem } from "blocks/List";
-import VirtualizedList from "./VirtualizedList.jsx";
+import InputBlock from "blocks/InputBlock";
+import SelectMenu from "atoms/SelectMenu";
+import { CheckboxGroup } from "atoms/Checkbox";
+import Button from "atoms/Button";
+import Grid from "layout/Grid";
+import CardList from "./CardList.jsx";
+// import VirtualizedList from "./VirtualizedList.jsx";
 
 const ListNotes = markdown.require("./List.md");
 
@@ -631,4 +638,269 @@ storiesOf("Blocks|List", module)
         />
       </List>
     );
+  })
+  .add("CardList Infinite Scroller", () => {
+    const randomData = Array.from(Array(50), (x, i) => { return { label: `FOO-${Math.floor(Math.random() * 1000)}-${i}` }; });
+    const randomData2 = Array.from(Array(100), (x, i) => { return { label: `FOO-THE-SECOND-${Math.floor(Math.random() * 1000)}-${i}` }; });
+    return React.createElement(() => {
+      const [_rows, setRows] = useState({
+        id1: Array(randomData.length),
+        id2: Array(randomData2.length),
+      }); // ideally your store could track this
+      const [selectedCell, setSelectedCell] = useState(null);
+      const [highlightedCell, setHighlightedCell] = useState(null);
+      const [focusedRow, setFocusedRow] = useState(null);
+      const [scrollAlignment, setAlignment] = useState(null);
+      const [clearScroll, setClearScroll] = useState(true);
+      const [scrollTop, setScrollTop] = useState(null);
+      const [columnCount, setColCount] = useState(2);
+      const [columnWidth, setColWidth] = useState(null);
+      const [rowHeight, setRowHeight] = useState(100);
+      const [id, setId] = useState("id1");
+
+      let clRef;
+      return (
+        <Layout>
+          <Grid columns="4" align="center">
+            <Button
+              label="Add Entry"
+              onClick={() => {
+                const appendRandomItem = { label: `Added-${Math.floor(Math.random() * 1000)}-${_rows[id].length}` };
+                if (id === "id1") randomData.push(appendRandomItem);
+                if (id === "id2") randomData2.push(appendRandomItem);
+                setRows({
+                  ..._rows,
+                  [id]: [..._rows[id], null],
+                });
+              }}
+            />
+            <SelectMenu
+              label="List id"
+              options={[
+                { value: "id1", label: "ID1" },
+                { value: "id2", label: "ID2" },
+              ]}
+              selectOptions={id}
+              isClearable={false}
+              onChangeState={(state, newState, setState) => {
+                setId(newState.selected.value);
+                setState(newState);
+              }}
+            />
+            <InputBlock
+              label="Delete cell index"
+              button={{
+                label: "Delete",
+                onClick: (e, state) => {
+                  if (state.input["delete-input"]) {
+                    const index = parseInt(state.input["delete-input"], 10);
+                    if (!isNaN(index)) {
+                      if (id === "id1") randomData.splice(index, 1);
+                      if (id === "id2") randomData2.splice(index, 1);
+                      const newRows = _rows[id].slice();
+                      newRows.splice(index, 1);
+                      setRows({
+                        ..._rows,
+                        [id]: newRows,
+                      });
+                    }
+                  }
+                },
+              }}
+              textInputs={[{
+                id: "delete-input",
+                pattern: "^[0-9]*$",
+              }]}
+            />
+            <CheckboxGroup
+              label="onScroll Options"
+              data={[{
+                checked: clearScroll,
+                onChange: () => {
+                  setClearScroll(!clearScroll);
+                },
+                label: "clear out focusRow/scrollTop",
+              }]}
+            />
+            <InputBlock
+              label="Focus Row"
+              button={{
+                label: "Enter",
+                onClick: (e, state) => {
+                  if (!state.input["focus-input"]) {
+                    setFocusedRow(null);
+                  } else {
+                    const focusIndex = parseInt(state.input["focus-input"], 10);
+                    setFocusedRow(focusIndex);
+                    setHighlightedCell(clRef.getCellInfo({ rowIndex: focusIndex }));
+                  }
+                },
+              }}
+              textInputs={[{
+                id: "focus-input",
+                pattern: "^[0-9]*$",
+              }]}
+            />
+            <SelectMenu
+              label="Scroll Alignment"
+              options={[
+                { value: "start", label: "start" },
+                { value: "auto", label: "auto" },
+                { value: "center", label: "center" },
+                { value: "end", label: "end" },
+              ]}
+              placeholder={"start (default)"}
+              onChangeState={(state, newState, setState) => {
+                const newAlignment = newState.selected ? newState.selected.value : null;
+                setAlignment(newAlignment);
+                setState(newState);
+              }}
+            />
+            <InputBlock
+              label="Set Scroll Top"
+              button={{
+                label: "Enter",
+                onClick: (e, state) => {
+                  if (!state.input["scrolltop-input"]) {
+                    setScrollTop(null);
+                  } else {
+                    setScrollTop(parseInt(state.input["scrolltop-input"], 10));
+                  }
+                },
+              }}
+              textInputs={[{
+                id: "scrolltop-input",
+                pattern: "^[0-9]*$",
+              }]}
+            />
+            <InputBlock
+              label="Column Count"
+              button={{
+                label: "Enter",
+                onClick: (e, state) => {
+                  const input = state.input["count-input"];
+                  if (!input) {
+                    setColCount(null);
+                  } else {
+                    setColCount(parseInt(input, 10));
+                  }
+                },
+              }}
+              textInputs={[{
+                id: "count-input",
+                pattern: "^[0-9]*$",
+                value: columnCount,
+              }]}
+            />
+            <InputBlock
+              label="Column Width"
+              button={{
+                label: "Enter",
+                onClick: (e, state) => {
+                  const input = state.input["colWidth-input"];
+                  const parsedInput = parseInt(input, 10);
+                  if (!parsedInput) {
+                    setColWidth(null);
+                  } else {
+                    setColWidth(parsedInput);
+                  }
+                },
+              }}
+              textInputs={[{
+                id: "colWidth-input",
+                pattern: "^[0-9]*$|auto",
+                placeholder: "use column count",
+              }]}
+            />
+            <InputBlock
+              label="Row Height"
+              button={{
+                label: "Enter",
+                onClick: (e, state) => {
+                  const input = state.input["rowHeight-input"];
+                  const parsedInput = parseInt(input, 10);
+                  if (!parsedInput || input === "auto") {
+                    setRowHeight(null);
+                  } else {
+                    setRowHeight(parsedInput);
+                  }
+                },
+              }}
+              textInputs={[{
+                id: "rowHeight-input",
+                pattern: "^[0-9]*$|auto",
+                placeholder: "auto",
+                value: rowHeight,
+              }]}
+            />
+          </Grid>
+          <CardList
+            id={"cardList"}
+            listId={id}
+            ref={(r) => { clRef = r; }}
+            rows={_rows[id]}
+            // simple template
+            Template={(props) => {
+              if (!props.data || props.data.status === "loading") return <div style={{height: "100px"}}>loading</div>;
+              return <div>{`${props.index}: ${props.data.label}`}</div>;
+            }}
+            // simple onClick interaction
+            onCellClick={(e, selectIndex) => {
+              if (selectedCell && selectedCell.rowIndex === selectIndex.rowIndex && selectedCell.columnIndex === selectIndex.columnIndex) {
+                setSelectedCell(null);
+              } else {
+                setSelectedCell(selectIndex);
+              }
+            }}
+            height={number("height", 300)}
+            columnCount={columnCount}
+            columnWidth={columnWidth}
+            width={number("width", null)}
+            rowHeight={rowHeight}
+            onCellMouseEnter={(e, highlightIndex) => {
+              setHighlightedCell(highlightIndex);
+            }}
+            onCellMouseLeave={() => {
+              setHighlightedCell(null);
+            }}
+            selectedCell={selectedCell}
+            highlightedCell={highlightedCell}
+            scrollToAlignment={scrollAlignment}
+            scrollTop={scrollTop}
+            focusedRow={focusedRow}
+            onScroll={() => {
+              // reset focusRow if we scroll away from it
+              if (typeof focusedRow === "number" && clearScroll) {
+                setFocusedRow(null);
+              }
+              if (typeof scrollTop === "number" && clearScroll) {
+                setScrollTop(null);
+              }
+              console.log("scroll changed");
+            }}
+            loadRows={({ startIndex, stopIndex, startRowIndex, stopRowIndex }) => {
+              return new Promise((resolve) => {
+                console.log(`startIndex: ${startIndex}, stopIndex: ${stopIndex}`);
+                for (let i = startIndex; i < _rows[id].length && i <= stopIndex; i++) {
+                  _rows[id][i] = { status: "loading" };
+                }
+                setTimeout(() => {
+                  console.log(`loaded ${startIndex} to ${stopIndex}`);
+                  const newRows = _rows[id].slice();
+                  for (let i = startIndex; i < _rows[id].length && i <= stopIndex; i++) {
+                    if (id === "id1") newRows.splice(i, 1, randomData[i]);
+                    if (id === "id2") newRows.splice(i, 1, randomData2[i]);
+                  }
+                  setRows({
+                    ..._rows,
+                    [id]: newRows,
+                  });
+                  resolve({ startRowIndex, stopRowIndex });
+                }, 2000);
+              });
+            }}
+          />
+        </Layout>
+      );
+    });
   });

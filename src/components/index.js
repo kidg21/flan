@@ -6,7 +6,7 @@ export {
   SubTitle,
   Description,
   Link,
-  Number
+  Number,
 } from "./base/Typography";
 export { default as GlobalStyles } from "./base/GlobalStyles/GlobalStyles.jsx";
 
@@ -43,6 +43,7 @@ export { default as Menu } from "./blocks/Menu";
 export { default as RangeSlider } from "./blocks/RangeSlider";
 export { default as Table } from "./blocks/Table";
 export { default as Tabs, Tab } from "./blocks/Tabs";
+export { CardList } from "./blocks/List";
 
 // Publicly exported files from 'elements'
 export { default as Card } from "./elements/Card";
