@@ -546,7 +546,7 @@ storiesOf("Blocks|List", module)
   //     return (
   //       <Layout>
   //         <VirtualizedList
-  //           rows={data}
+  //           data={data}
   //           Template={Template}
   //           id="foo"
   //           onCellClick={onCellClick}
@@ -643,7 +643,7 @@ storiesOf("Blocks|List", module)
     const randomData = Array.from(Array(50), (x, i) => { return { label: `FOO-${Math.floor(Math.random() * 1000)}-${i}` }; });
     const randomData2 = Array.from(Array(100), (x, i) => { return { label: `FOO-THE-SECOND-${Math.floor(Math.random() * 1000)}-${i}` }; });
     return React.createElement(() => {
-      const [_rows, setRows] = useState({
+      const [_data, setData] = useState({
         id1: Array(randomData.length),
         id2: Array(randomData2.length),
       }); // ideally your store could track this
@@ -665,12 +665,12 @@ storiesOf("Blocks|List", module)
             <Button
               label="Add Entry"
               onClick={() => {
-                const appendRandomItem = { label: `Added-${Math.floor(Math.random() * 1000)}-${_rows[id].length}` };
+                const appendRandomItem = { label: `Added-${Math.floor(Math.random() * 1000)}-${_data[id].length}` };
                 if (id === "id1") randomData.push(appendRandomItem);
                 if (id === "id2") randomData2.push(appendRandomItem);
-                setRows({
-                  ..._rows,
-                  [id]: [..._rows[id], null],
+                setData({
+                  ..._data,
+                  [id]: [..._data[id], null],
                 });
               }}
             />
@@ -697,10 +697,10 @@ storiesOf("Blocks|List", module)
                     if (!isNaN(index)) {
                       if (id === "id1") randomData.splice(index, 1);
                       if (id === "id2") randomData2.splice(index, 1);
-                      const newRows = _rows[id].slice();
+                      const newRows = _data[id].slice();
                       newRows.splice(index, 1);
-                      setRows({
-                        ..._rows,
+                      setData({
+                        ..._data,
                         [id]: newRows,
                       });
                     }
@@ -838,7 +838,7 @@ storiesOf("Blocks|List", module)
             id={"cardList"}
             listId={id}
             ref={(r) => { clRef = r; }}
-            rows={_rows[id]}
+            data={_data[id]}
             // simple template
             Template={(props) => {
               if (!props.data || props.data.status === "loading") return <div style={{height: "100px"}}>loading</div>;
@@ -878,21 +878,21 @@ storiesOf("Blocks|List", module)
               }
               console.log("scroll changed");
             }}
-            loadRows={({ startIndex, stopIndex, startRowIndex, stopRowIndex }) => {
+            loadRows={({ startIndex, stopIndex }) => {
               return new Promise((resolve) => {
                 console.log(`startIndex: ${startIndex}, stopIndex: ${stopIndex}`);
-                for (let i = startIndex; i < _rows[id].length && i <= stopIndex; i++) {
-                  _rows[id][i] = { status: "loading" };
+                for (let i = startIndex; i < _data[id].length && i <= stopIndex; i++) {
+                  _data[id][i] = { status: "loading" };
                 }
                 setTimeout(() => {
                   console.log(`loaded ${startIndex} to ${stopIndex}`);
-                  const newRows = _rows[id].slice();
-                  for (let i = startIndex; i < _rows[id].length && i <= stopIndex; i++) {
+                  const newRows = _data[id].slice();
+                  for (let i = startIndex; i < _data[id].length && i <= stopIndex; i++) {
                     if (id === "id1") newRows.splice(i, 1, randomData[i]);
                     if (id === "id2") newRows.splice(i, 1, randomData2[i]);
                   }
-                  setRows({
-                    ..._rows,
+                  setData({
+                    ..._data,
                     [id]: newRows,
                   });
                   resolve({ startIndex, stopIndex });

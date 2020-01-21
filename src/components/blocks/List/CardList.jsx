@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import { Grid, CellMeasurerCache, CellMeasurer, ColumnSizer, AutoSizer, InfiniteLoader } from "react-virtualized";
 import styled from "styled-components";
@@ -12,20 +12,11 @@ const GridWrapper = styled.div`
 const CellWrapper = styled.div`
   align-items: center;
   color: ${(props) => { return props.theme.text.primary; }};
-  font-weight: ${(props) => { return props.isHeader ? "600" : ""; }};
   border-bottom: 1px solid #eee;
-  background-color: ${(props) => {
-    if (props.isHighlighted) {
-      return "#f0f5fb";
-    }
-    if (props.isSelected) {
-      return "#669932";
-    }
-    return "";
-  }};
+  background-color: ${(props) => { return props.isSelected ? "#669932" : ""; }};
 `;
 
-class CardList extends Component {
+class CardList extends PureComponent {
   constructor(props) {
     super(props);
     this.columnCount = props.columnCount;
@@ -52,10 +43,10 @@ class CardList extends Component {
 
   componentDidUpdate(prevProps) {
     if (prevProps.listId !== this.props.listId
-      || prevProps.rows.length !== this.props.rows.length) {
+      || prevProps.data.length !== this.props.data.length) {
       this._recalculateGridSize();
       this._loadMissingRowsInView(
-        this.props.rows,
+        this.props.data,
         this._visibleRowStartIndex,
         this._visibleRowStopIndex,
       );
@@ -93,11 +84,12 @@ class CardList extends Component {
     return Math.floor(index / this.columnCount);
   }
 
-  _loadMissingRowsInView(rows, startRowIndex, stopRowIndex) {
+  _loadMissingRowsInView(data, startRowIndex, stopRowIndex) {
     const startCellIndex = this._getCellIndex(startRowIndex);
     const stopCellIndex = this._getCellIndex(stopRowIndex, this.columnCount - 1);
-    for (let i = startCellIndex; i <= stopCellIndex && i < rows.length; i++) {
-      if (!rows[i]) {
+    for (let i = startCellIndex; i <= stopCellIndex && i < data.length; i++) {
+      // if any cell data in the row is missing, load that row
+      if (!data[i]) {
         return this._loadMoreRows({
           startIndex: this._getRowIndex(i),
           stopIndex: stopRowIndex,
@@ -110,14 +102,14 @@ class CardList extends Component {
   // recalculates the number of rows/columns
   // call this._grid.forceUpdate after
   _recalculateGridSize() {
-    const { columnCount, columnWidth, rows } = this.props;
+    const { columnCount, columnWidth, data } = this.props;
     let newColCount = columnWidth ? Math.floor(this.width / columnWidth) : columnCount;
     newColCount = newColCount || 1;
     if (this.columnCount !== newColCount) {
       if (this._infiniteScroller) this._infiniteScroller.resetLoadMoreRowsCache();
       this.columnCount = newColCount;
     }
-    this.rowCount = Math.ceil(rows.length / this.columnCount);
+    this.rowCount = Math.ceil(data.length / this.columnCount);
   }
 
   // remeasures dynamic rows/columns & refreshes grid
@@ -140,7 +132,7 @@ class CardList extends Component {
     style,
   }) {
     const {
-      Template, rows, selectedCell, highlightedCell,
+      Template, data, selectedCell, highlightedCell,
       onCellClick, onCellMouseEnter, onCellMouseLeave, onCellMouseOut, onCellMouseOver,
     } = this.props;
     const cellProps = {
@@ -148,12 +140,14 @@ class CardList extends Component {
       isHighlighted: false,
     };
     const index = this._getCellIndex(rowIndex, columnIndex); // calculate index
-    if (index >= rows.length) {
+    if (index >= data.length) {
       return null;
     }
-    if (selectedCell && selectedCell.rowIndex === rowIndex && selectedCell.columnIndex === columnIndex) {
+    if (selectedCell && selectedCell.rowIndex === rowIndex
+      && selectedCell.columnIndex === columnIndex) {
       cellProps.isSelected = true;
-    } else if (highlightedCell && highlightedCell.rowIndex === rowIndex && highlightedCell.columnIndex === columnIndex) {
+    } else if (highlightedCell && highlightedCell.rowIndex === rowIndex
+      && highlightedCell.columnIndex === columnIndex) {
       cellProps.isHighlighted = true;
     }
     cellProps.onClick = (e) => {
@@ -175,7 +169,7 @@ class CardList extends Component {
     const content = (
       <CellWrapper style={{ ...style, width: this._columnWidth }} {...cellProps}>
         <Template
-          data={rows[index]}
+          data={data[index]}
           isHighlighted={cellProps.isHighlighted}
           isSelected={cellProps.isSelected}
           index={index}
@@ -246,13 +240,15 @@ class CardList extends Component {
     });
   }
 
+  // callback for loading more rows
+  // e.startIndex & e.stopIndex are the row indexes
   _loadMoreRows(e) {
-    const { loadRows, rows } = this.props;
+    const { loadRows, data } = this.props;
     if (!loadRows) return null;
     // get the data/cell index given the row index
     const _startIndex = this._getCellIndex(e.startIndex, 0);
     let _stopIndex = this._getCellIndex(e.stopIndex, this.columnCount - 1);
-    _stopIndex = _stopIndex < rows.length ? _stopIndex : rows.length - 1;
+    _stopIndex = _stopIndex < data.length ? _stopIndex : data.length - 1;
 
     const promise = loadRows({
       startRowIndex: e.startIndex,
@@ -267,7 +263,7 @@ class CardList extends Component {
       return promise.then((refreshIndex) => {
         const refreshStartIndex = refreshIndex && typeof refreshIndex.startIndex === "number" ? refreshIndex.startIndex : _startIndex;
         const refreshStopIndex = refreshIndex && typeof refreshIndex.stopIndex === "number" ? refreshIndex.stopIndex : _stopIndex;
-        for (let i = refreshStartIndex; i <= refreshStopIndex && i < rows.length; i++) {
+        for (let i = refreshStartIndex; i <= refreshStopIndex && i < data.length; i++) {
           this.remeasureCells(this.getCellInfo(i), true);
         }
         this._grid.forceUpdate();
@@ -278,7 +274,7 @@ class CardList extends Component {
 
   render() {
     const {
-      rows, id, rowHeight, minRowHeight, selectedCell, highlightedCell,
+      data, id, rowHeight, minRowHeight, selectedCell, highlightedCell,
       scrollToAlignment, scrollTop, focusedRow, onScroll, minimumBatchSize,
     } = this.props;
 
@@ -307,9 +303,9 @@ class CardList extends Component {
         isRowLoaded={({ index }) => {
           const startCellIndex = this._getCellIndex(index);
           const stopCellIndex = this._getCellIndex(index, this.columnCount - 1);
-          for (let i = startCellIndex; i <= stopCellIndex && i < rows.length; i++) {
+          for (let i = startCellIndex; i <= stopCellIndex && i < data.length; i++) {
             // at least one card cell in row is not loaded
-            if (!rows[i]) {
+            if (!data[i]) {
               return false;
             }
           }
@@ -332,7 +328,7 @@ class CardList extends Component {
                 defaultWidth={200}
 
                 // props to re-render children
-                __width={this.width}
+                _width={this.width}
               >
                 {() => {
                   return (
@@ -340,7 +336,11 @@ class CardList extends Component {
                       columnCount={this.columnCount}
                       width={this.width}
                     >
-                      {({ adjustedWidth, columnWidth: _columnWidth, registerChild: registerColumnChild }) => {
+                      {({
+                        adjustedWidth,
+                        columnWidth: _columnWidth,
+                        registerChild: registerColumnChild,
+                      }) => {
                         this._columnWidth = _columnWidth;
                         this._registerColumnChild = registerColumnChild;
                         return (
@@ -364,9 +364,8 @@ class CardList extends Component {
                             onSectionRendered={this._onSectionRendered}
 
                             // props to cause re-render children
-                            __selectedCell={selectedCell}
-                            __highlightedCell={highlightedCell}
-                            // __rows={rows}
+                            _selectedCell={selectedCell}
+                            _highlightedCell={highlightedCell}
                           />
                         );
                       }}
@@ -408,7 +407,7 @@ CardList.defaultProps = {
 CardList.propTypes = {
   id: PropTypes.string.isRequired,
   listId: PropTypes.string,
-  rows: PropTypes.arrayOf(PropTypes.object).isRequired,
+  data: PropTypes.arrayOf(PropTypes.object).isRequired,
   Template: PropTypes.elementType.isRequired,
   columnCount: PropTypes.number,
   columnWidth: PropTypes.number,
