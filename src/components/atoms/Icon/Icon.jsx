@@ -5,6 +5,8 @@ import PropTypes from "prop-types";
 import { Lighten, Darken } from "Variables";
 import { DisabledContext } from "States";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Badge from "atoms/Badge";
+
 
 const LinkedIcon = styled.a`
   cursor: ${(props) => {
@@ -30,6 +32,7 @@ const LinkedIcon = styled.a`
 `;
 
 const StyledIcon = styled(FontAwesomeIcon)`
+ position: relative;
   color: ${(props) => {
     return props.theme.text[props.color] || "";
   }};
@@ -43,6 +46,11 @@ const StyledIcon = styled(FontAwesomeIcon)`
     return props.border ? "5px" : "";
   }};
   transition: all 0.25s ease-in-out;
+`;
+
+const BadgeWrapper = styled.div`
+position: relative;
+width: max-content;
 `;
 
 const iconHash = {
@@ -68,6 +76,7 @@ const iconHash = {
   attach: ["far", "paperclip"],
   bookmark_solid: "bookmark",
   bookmark: ["far", "bookmark"],
+  calendar: ["far", "calendar-alt"],
   call: "phone",
   chat: ["far", "comment-alt"],
   check_solid: "check",
@@ -180,6 +189,8 @@ function Icon({
   border,
   className,
   disabled,
+  badgeType,
+  badge,
   fixedWidth,
   flip,
   icon,
@@ -194,11 +205,13 @@ function Icon({
 }) {
   const iconValue = iconHash[icon.toLowerCase()] || ["far", icon.toLowerCase()];
   let color = type ? colorHash[type.toLowerCase()] : null;
+  let content;
 
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) color = "disabled";
   else if (onClick) color = "link";
+
 
   const styledIcon = (
     <StyledIcon
@@ -213,21 +226,44 @@ function Icon({
       rotation={rotation}
       size={size}
       spin={spin}
-      title={title} // HTML attribute (display on :hover)
+      title={title}
     />
   );
 
-  return onClick ? (
-    <LinkedIcon onClick={onClick} disabled={disabled}>
-      {styledIcon}
-    </LinkedIcon>
-  ) : styledIcon;
+
+  if (onClick) {
+    content = (
+      <LinkedIcon onClick={onClick} disabled={disabled}>
+        {styledIcon}
+      </LinkedIcon>
+    );
+  } else if (badge) {
+    content = (
+      <BadgeWrapper>
+        {styledIcon}
+        <Badge type={badgeType} />
+      </BadgeWrapper>
+    );
+  } else {
+    content = (
+      styledIcon
+    );
+  }
+
+
+  return (
+    <React.Fragment>
+      {content}
+    </React.Fragment>
+  );
 }
 
 Icon.propTypes = {
   border: PropTypes.bool,
   /** className used for extending styles */
   className: PropTypes.string,
+  badgeType: PropTypes.node,
+  badge: PropTypes.node,
   /** Used to set one or more icons to the same fixed width.
    * Good for vertically aligning a series of icons
    */
@@ -257,6 +293,8 @@ Icon.propTypes = {
 Icon.defaultProps = {
   border: false,
   className: null,
+  badgeType: null,
+  badge: null,
   disabled: null,
   fixedWidth: false,
   flip: null,

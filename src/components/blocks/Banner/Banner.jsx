@@ -6,6 +6,7 @@ import styled from "styled-components";
 import Grid from "layout/Grid";
 import Card from "elements/Card";
 import Bar from "blocks/Bar";
+import Avatar from "atoms/Avatar";
 import Icon from "atoms/Icon";
 import Title, { Description, Link } from "base/Typography";
 
@@ -13,17 +14,6 @@ const StyledBanner = styled(Card)`
   border-color: ${(props) => {
     return props.theme.palette[props.borderColor] || props.theme.palette.grey3;
   }};
-`;
-
-const StatusBadge = styled.div`
-  color: ${(props) => {
-    return props.theme.palette[props.badgeColor] || props.theme.palette.grey;
-  }};
-`;
-
-const Message = styled(Grid)`
-  align-self: center;
-  // padding-right: 1.5em;
 `;
 
 const Close = styled(Icon)`
@@ -55,13 +45,10 @@ function Banner({
   type,
 }) {
   let bannerType;
-  const badgeColor = type;
   const iconValue = icon || iconHash[type && type.toLowerCase()];
   if (iconValue) {
     bannerType = (
-      <StatusBadge badgeColor={badgeColor}>
-        <Icon icon={iconValue} size="2x" fixedWidth />
-      </StatusBadge>
+      <Avatar type={type} icon={iconValue} size="2x" fixedWidth />
     );
   }
 
@@ -71,10 +58,10 @@ function Banner({
         contentAlign={description || link ? "" : "center"}
         padding="none"
         left={bannerType}
-        leftWidth="3em"
+        leftWidth="max-content"
         centerAlign="left"
         center={
-          <Message columns="1" gap="tiny">
+          <Grid columns="1" gap="tiny">
             <Title text={title} />
             {description ? <Description text={description} /> : null}
             {link ? (
@@ -82,7 +69,7 @@ function Banner({
                 {link}
               </Link>
             ) : null}
-          </Message>
+          </Grid>
         }
       />
       <Close icon="close" size="lg" onClick={onClose} />

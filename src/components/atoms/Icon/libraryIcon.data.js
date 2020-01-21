@@ -154,6 +154,10 @@ export const iconsApp = [
     desc: placeholder.desc,
   },
   {
+    icon: "calendar",
+    desc: placeholder.desc,
+  },
+  {
     icon: "call",
     desc: placeholder.desc,
   },
