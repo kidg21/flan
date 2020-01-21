@@ -1,9 +1,10 @@
 /* eslint-disable linebreak-style */
+import React from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 
-const Panel = styled.div`
-  position: absolute;
+const PanelWrapper = styled.div`
   background: ${(props) => {
     return props.theme.background.default;
   }};
@@ -14,14 +15,8 @@ const Panel = styled.div`
   align-content: stretch;
   width: 100%;
   height: 100%;
-  border: .5px solid ${(props) => {
-    return props.theme.palette.grey5;
-  }};
   max-height: 100vh;
   overflow: hidden;
-  transform: none;
-  transition: all 0.3s ease-in-out;
-  box-sizing: content-box;
   -webkit-overflow-scrolling: touch;
   /* Prototype Content - displays when a Panel Section is empty */
   &:empty {
@@ -35,43 +30,20 @@ const Panel = styled.div`
   }
 `;
 
-const PanelSection = styled.section`
+const SectionWrapper = styled.section`
   position: relative;
   display: flex;
   flex-direction: column;
-  flex: ${(props) => {
-    return props.body ? "auto" : "none";
-  }};
-  height: ${(props) => {
-    return props.body ? "inherit" : "";
-  }};
-  padding: ${(props) => {
-    return props.body ? "1rem" : "";
-  }};
-  z-index: ${(props) => {
-    return props.body ? "0" : "1";
-  }};
-  overflow-x: ${(props) => {
-    return props.header ? "visible" : "hidden";
-  }};
-  overflow-y: ${(props) => {
-    if (props.body) {
-      return "scroll";
-    } else if (props.header) {
-      return "visible";
-    }
-    return "";
-  }};
+  flex: auto;
+  padding: 1rem;
+  z-index: 0;
+  overflow-y: scroll;
   max-height: 100vh;
-  box-shadow: ${(props) => {
-    return props.body ? "none" : props.theme.shadows.shadowV;
-  }};
-  transition: all 0.2s ease-in-out;
   /* Prototype Content - displays when a Panel Section is empty */
   &:empty {
     &:before {
       ${PlaceholderText};
-      content: "PanelSection";
+      content: "Header / Footer";
       color: ${(props) => {
     return props.theme.text.primary;
   }};
@@ -79,4 +51,60 @@ const PanelSection = styled.section`
   }
 `;
 
-export { Panel as default, PanelSection };
+function PanelBody({
+  children, className,
+}) {
+  return (
+    <SectionWrapper
+      className={className}
+    >
+      {children}
+    </SectionWrapper>
+  );
+}
+
+PanelBody.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string,
+};
+PanelBody.defaultProps = {
+  children: null,
+  className: null,
+};
+
+const PanelSection = styled(PanelBody)`
+  flex: none;
+  padding: 0;
+  overflow: hidden;
+  z-index: 1;
+  /** TODO: change to variable once 'Card' branch is merged */
+  border: 1px solid hsl(240,11%,91%);
+`;
+function Panel({
+  id, children, footer, header,
+}) {
+  return (
+    <PanelWrapper
+      id={id}
+    >
+      {header ? <PanelSection>{header}</PanelSection> : null}
+      <PanelBody>{children}</PanelBody>
+      {footer ? <PanelSection>{footer}</PanelSection> : null}
+    </PanelWrapper>
+  );
+}
+
+Panel.propTypes = {
+  id: PropTypes.string,
+  children: PropTypes.node,
+  footer: PropTypes.node,
+  header: PropTypes.node,
+};
+Panel.defaultProps = {
+  id: null,
+  children: null,
+  footer: null,
+  header: null,
+};
+
+export default Panel;

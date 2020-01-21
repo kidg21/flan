@@ -2,7 +2,7 @@
 import React from "react";
 
 import NavigationPanelHeader from "elements/PanelHeaders/NavigationPanelHeader";
-import Panel, { PanelSection } from "layout/Panel";
+import Panel from "layout/Panel";
 import DataRange from "blocks/DataRange";
 import Form from "layout/Form";
 import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
@@ -114,220 +114,185 @@ const options = [
 storiesOf("Templates|Panel/Property Filters", module)
   .add("Filter Details Panel", () => {
     return (
-      <Panel>
-        <PanelSection>
-          <NavigationPanelHeader title="Last Market Sale" />
-        </PanelSection>
-        <PanelSection body>
-          <Form>
-            <RadioGroup label="Last Sale Date">
-              <Radio {...radio1} />
-              <Radio {...radio2} />
-              <Radio {...radio3} />
-            </RadioGroup>
-            <RangeSlider label="Last Sale Price" />
-            <TextInput label="Seller Name" placeholder="i.e. Mary Williams" type="text" />
-            <CheckboxGroup label="Last Sale Deed Type">
-              <Checkbox {...cbox4} />
-              <Checkbox {...cbox5} />
-              <Checkbox {...cbox6} />
-            </CheckboxGroup>
-          </Form>
-        </PanelSection>
-        <PanelSection>
-          <Button label="Apply" />
-        </PanelSection>
+      <Panel
+        header={<NavigationPanelHeader title="Last Market Sale" />}
+        footer={<Button label="Apply" />}
+      >
+        <Form>
+          <RadioGroup label="Last Sale Date">
+            <Radio {...radio1} />
+            <Radio {...radio2} />
+            <Radio {...radio3} />
+          </RadioGroup>
+          <RangeSlider label="Last Sale Price" />
+          <TextInput label="Seller Name" placeholder="i.e. Mary Williams" type="text" />
+          <CheckboxGroup label="Last Sale Deed Type">
+            <Checkbox {...cbox4} />
+            <Checkbox {...cbox5} />
+            <Checkbox {...cbox6} />
+          </CheckboxGroup>
+        </Form>
       </Panel>
     );
   })
 
   .add("Property- Characteristics", () => {
     return (
-      <Panel>
-        <PanelSection>
-          <NavigationPanelHeader title="Characteristics" />
-        </PanelSection>
-        <PanelSection body>
-          <Form>
-            <RangeSlider label="Year Built" />
-            <RangeSlider label="Number of Units" />
-            <RangeSlider label="Lot Size (Acre)" />
-            <RangeSlider label="Lot Size (ft2)" />
-            <TextInput label="Zoning (Assessor)" placeholder="i.e. Mary Williams" type="text" />
-            <CheckboxGroup label="In Opportunity Zone">
-              <Checkbox {...cbox7} />
-              <Checkbox {...cbox8} />
-            </CheckboxGroup>
-          </Form>
-        </PanelSection>
-        <PanelSection>
-          <Button label="Apply" />
-        </PanelSection>
+      <Panel
+        header={<NavigationPanelHeader title="Characteristics" />}
+        footer={<Button label="Apply" />}
+      >
+        <Form>
+          <RangeSlider label="Year Built" />
+          <RangeSlider label="Number of Units" />
+          <RangeSlider label="Lot Size (Acre)" />
+          <RangeSlider label="Lot Size (ft2)" />
+          <TextInput label="Zoning (Assessor)" placeholder="i.e. Mary Williams" type="text" />
+          <CheckboxGroup label="In Opportunity Zone">
+            <Checkbox {...cbox7} />
+            <Checkbox {...cbox8} />
+          </CheckboxGroup>
+        </Form>
       </Panel>
     );
   })
 
   .add("Property- New Characteristics", () => {
     return (
-      <Panel>
-        <PanelSection>
-          <NavigationPanelHeader title="New Last Market Sale" />
-        </PanelSection>
-        <PanelSection body>
-          <Form>
-            <DataRange
-              label="Year Built"
-              min={{
-                label: "Min",
-                options: options,
-              }}
-              max={{
-                label: "Max",
-                options: options,
-              }}
-            />
-            <DataRange
-              label="Number of Units"
-              min={{
-                label: "Min",
-                options: options,
-              }}
-              max={{
-                label: "Max",
-                options: options,
-              }}
-            />
-            <DataRange
-              label="Range 3"
-              min={{
-                label: "Min",
-                options: options,
-              }}
-              max={{
-                label: "Max",
-                options: options,
-              }}
-            />
-            <DataRange
-              label="Range 4"
-              min={{
-                label: "Min",
-                options: options,
-              }}
-              max={{
-                label: "Max",
-                options: options,
-              }}
-            />
-            <TextInput label="Zoning (Assessor)" placeholder="i.e. Mary Williams" type="text" />
-            <CheckboxGroup label="In Opportunity Zone">
-              <Checkbox {...cbox7} />
-              <Checkbox {...cbox8} />
-            </CheckboxGroup>
-          </Form>
-        </PanelSection>
-        <PanelSection>
-          <Button label="Apply" />
-        </PanelSection>
+      <Panel
+        header={<NavigationPanelHeader title="New Last Market Sale" />}
+        footer={<Button label="Apply" />}
+      >
+        <Form>
+          <DataRange
+            label="Year Built"
+            min={{
+              label: "Min",
+              options: options,
+            }}
+            max={{
+              label: "Max",
+              options: options,
+            }}
+          />
+          <DataRange
+            label="Number of Units"
+            min={{
+              label: "Min",
+              options: options,
+            }}
+            max={{
+              label: "Max",
+              options: options,
+            }}
+          />
+          <DataRange
+            label="Range 3"
+            min={{
+              label: "Min",
+              options: options,
+            }}
+            max={{
+              label: "Max",
+              options: options,
+            }}
+          />
+          <DataRange
+            label="Range 4"
+            min={{
+              label: "Min",
+              options: options,
+            }}
+            max={{
+              label: "Max",
+              options: options,
+            }}
+          />
+          <TextInput label="Zoning (Assessor)" placeholder="i.e. Mary Williams" type="text" />
+          <CheckboxGroup label="In Opportunity Zone">
+            <Checkbox {...cbox7} />
+            <Checkbox {...cbox8} />
+          </CheckboxGroup>
+        </Form>
       </Panel>
     );
   })
 
   .add("Property- Aggregate", () => {
     return (
-      <Panel>
-        <PanelSection>
-          <NavigationPanelHeader title="Aggregate Property" />
-        </PanelSection>
-        <PanelSection body>
-          <Form>
-            <RangeSlider label="Aggregate Acreage" />
-            <RangeSlider label="Aggregate Lot Count" />
-            <RangeSlider label="Aggregated Lot Width Median" />
-            <TextInput label="Zoning (Assessor)" placeholder="i.e. Mary Williams" type="text" />
-            <CheckboxGroup label="In Opportunity Zone">
-              <Checkbox {...cbox7} />
-              <Checkbox {...cbox8} />
-            </CheckboxGroup>
-          </Form>
-        </PanelSection>
-        <PanelSection>
-          <Button label="Apply" />
-        </PanelSection>
+      <Panel
+        header={<NavigationPanelHeader title="Aggregate Property" />}
+        footer={<Button label="Apply" />}
+      >
+        <Form>
+          <RangeSlider label="Aggregate Acreage" />
+          <RangeSlider label="Aggregate Lot Count" />
+          <RangeSlider label="Aggregated Lot Width Median" />
+          <TextInput label="Zoning (Assessor)" placeholder="i.e. Mary Williams" type="text" />
+          <CheckboxGroup label="In Opportunity Zone">
+            <Checkbox {...cbox7} />
+            <Checkbox {...cbox8} />
+          </CheckboxGroup>
+        </Form>
       </Panel>
     );
   })
 
   .add("Property- Value", () => {
     return (
-      <Panel>
-        <PanelSection>
-          <NavigationPanelHeader title="Property Value" />
-        </PanelSection>
-        <PanelSection body>
-          <Form>
-            <RangeSlider label="Assessed Value" />
-            <RangeSlider label="Improvement Percentage" />
-            <RangeSlider label="Assessed Land Value" />
-            <RangeSlider label="Assessed Improvement Value" />
-          </Form>
-        </PanelSection>
-        <PanelSection>
-          <Button label="Apply" />
-        </PanelSection>
+      <Panel
+        header={<NavigationPanelHeader title="Property Value" />}
+        footer={<Button label="Apply" />}
+      >
+        <Form>
+          <RangeSlider label="Assessed Value" />
+          <RangeSlider label="Improvement Percentage" />
+          <RangeSlider label="Assessed Land Value" />
+          <RangeSlider label="Assessed Improvement Value" />
+        </Form>
       </Panel>
     );
   })
 
   .add("Property- Location", () => {
     return (
-      <Panel>
-        <PanelSection>
-          <NavigationPanelHeader title="Location" />
-        </PanelSection>
-        <PanelSection body>
-          <Form>
-            <TextInput label="Street Name" placeholder="i.e. Main St." type="text" />
-            <TextInput label="City" placeholder="i.e. New York City" type="text" />
-            <TextInput label="State" placeholder="i.e. New York" type="text" />
-            <TextInput label="Zip" placeholder="i.e. 92614" type="text" />
-            <TextInput label="Country" placeholder="i.e. United States" type="text" />
-          </Form>
-        </PanelSection>
-        <PanelSection>
-          <Button label="Apply" />
-        </PanelSection>
+      <Panel
+        header={<NavigationPanelHeader title="Location" />}
+        footer={<Button label="Apply" />}
+      >
+        <Form>
+          <TextInput label="Street Name" placeholder="i.e. Main St." type="text" />
+          <TextInput label="City" placeholder="i.e. New York City" type="text" />
+          <TextInput label="State" placeholder="i.e. New York" type="text" />
+          <TextInput label="Zip" placeholder="i.e. 92614" type="text" />
+          <TextInput label="Country" placeholder="i.e. United States" type="text" />
+        </Form>
       </Panel>
     );
   })
 
   .add("Property- Land Use", () => {
     return (
-      <Panel>
-        <PanelSection>
-          <NavigationPanelHeader title="Land Use" />
-        </PanelSection>
-        <PanelSection body>
-          <Form>
-            <CheckboxGroup
-              id="Commercial"
-              label="Commercial"
-              data={commercial}
-              helpText="Check all that apply"
-              columns="2"
-            />
-            <CheckboxGroup
-              id="Residential"
-              label="Residential"
-              data={residential}
-              helpText="Check all that apply"
-              columns="2"
-            />
-          </Form>
-        </PanelSection>
-        <PanelSection>
-          <Button label="Apply" />
-        </PanelSection>
+      <Panel
+        header={<NavigationPanelHeader title="Land Use" />}
+        footer={<Button label="Apply" />}
+      >
+        <Form>
+          <CheckboxGroup
+            id="Commercial"
+            label="Commercial"
+            data={commercial}
+            helpText="Check all that apply"
+            columns="2"
+          />
+          <CheckboxGroup
+            id="Residential"
+            label="Residential"
+            data={residential}
+            helpText="Check all that apply"
+            columns="2"
+          />
+        </Form>
       </Panel>
     );
   });

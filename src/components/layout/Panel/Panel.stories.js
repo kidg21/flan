@@ -1,64 +1,51 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import Card, { CardList } from "../Card/Card.jsx";
-import Panel, { PanelSection } from "../Panel/Panel.jsx";
+import Card, { CardList } from "layout/Card";
+import Layout from "layout/Layout";
+import Panel from "layout/Panel";
 
 storiesOf("Layout|Panel", module)
   .addDecorator(checkA11y)
-  .add("Panel - Outer Wrapper", () => {
-    return <Panel />;
+  .add("Panel", () => {
+    return <Layout><Panel /></Layout>;
   })
-  .add("Panel - 1 Section (default)", () => {
+  .add("Panel with header", () => {
     return (
-      <Panel>
-        <PanelSection body />
-      </Panel>
+      <Layout>
+        <Panel
+          header={<Card />}
+        />
+      </Layout>
     );
   })
-  .add("Panel - 2 Sections", () => {
+  .add("Panel with footer", () => {
     return (
-      <Panel>
-        <PanelSection />
-        <PanelSection body />
-      </Panel>
+      <Layout>
+        <Panel
+          footer={<Card />}
+        />
+      </Layout>
     );
   })
-  .add("Panel - 3 Sections", () => {
+  .add("Panel with header/footer", () => {
     return (
-      <Panel>
-        <PanelSection />
-        <PanelSection body />
-        <PanelSection />
-      </Panel>
-    );
-  })
-  .add("Panel - 4 Sections (2 body)", () => {
-    return (
-      <Panel>
-        <PanelSection />
-        <PanelSection body />
-        <PanelSection body />
-        <PanelSection />
-      </Panel>
-    );
-  })
-  .add("Panel - 5 Sections (2 body)", () => {
-    return (
-      <Panel>
-        <PanelSection />
-        <PanelSection body />
-        <PanelSection />
-        <PanelSection body />
-        <PanelSection />
-      </Panel>
+      <Layout>
+        <Panel
+          header={<Card />}
+          footer={<Card />}
+        />
+      </Layout>
     );
   })
   .add("Panel - with Card List", () => {
     return (
-      <Panel>
-        <PanelSection />
-        <PanelSection body>
+      <Layout>
+        <Panel
+          id="Panel"
+          header={<Card />}
+          footer={<Card />}
+        >
           <CardList>
             <Card />
             <Card />
@@ -68,8 +55,7 @@ storiesOf("Layout|Panel", module)
             <Card />
             <Card />
           </CardList>
-        </PanelSection>
-        <PanelSection />
-      </Panel>
+        </Panel>
+      </Layout>
     );
   });
