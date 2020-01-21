@@ -3,20 +3,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 import LightBoxIcon from "images/LightBoxIconLogo.png";
-import { screen } from "Variables";
 import Avatar from "atoms/Avatar";
 import Bar from "blocks/Bar";
 import Icon from "atoms/Icon";
-import Image from "atoms/Image";
 import styled from "styled-components";
-
 
 
 const HeaderWrapper = styled(Bar)`
   top: 0;
-  border-bottom: 1px solid ${(props) => {
-        return props.theme.palette.grey5;
-    }};
  
 `;
 
@@ -38,13 +32,14 @@ function Header({
                 alt="logo"
             />
             }
-center = { headerContent }
-right = {
-                < Icon
-icon = "settings"
-onClick = { rightClick }
-    />}
-/>
+            center={headerContent}
+            right={
+                <Icon
+                    size="lg"
+                    icon="settings"
+                    onClick={rightClick}
+                />}
+        />
     );
 }
 

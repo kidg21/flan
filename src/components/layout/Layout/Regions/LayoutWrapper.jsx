@@ -12,6 +12,9 @@ const FlexWrapper = styled.div`
   display: flex;
   height: 100%;
   width: 100%;
+  border-top: 1px solid ${(props) => {
+    return props.theme.palette.grey5;
+  }};
   @media ${screen.small} {
     z-index: 0;
   }

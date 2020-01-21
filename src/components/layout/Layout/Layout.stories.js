@@ -2,9 +2,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
 
-import DynamicLayout from "./DynamicLayout.jsx";
-import NewLayout from "./NewLayout.jsx";
-// import StaticLayout from "./StaticLayout.jsx";
+import Layout from "./Layout.jsx";
 
 const LayoutNotes = markdown.require("./Layout.md");
 
@@ -21,12 +19,6 @@ storiesOf("Layout |App Layout/", module)
   .add(
     "Documentation",
     () => {
-      return <DynamicLayout />;
+      return <Layout />;
     },
-  )
-
-  .add("Dynamic", () => {
-    return (
-      <NewLayout theme="dynamic" />
-    );
-  });
+  );
