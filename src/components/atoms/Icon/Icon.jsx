@@ -48,9 +48,9 @@ const StyledIcon = styled(FontAwesomeIcon)`
   transition: all 0.25s ease-in-out;
 `;
 
-const BadgeWrapper = styled.div`
-position: relative;
-width: max-content;
+const IconWrapper = styled.div`
+  position: relative;
+  width: max-content;
 `;
 
 const iconHash = {
@@ -178,18 +178,12 @@ const colorHash = {
   success: "success",
   warning: "warning",
   alert: "alert",
-  primary: "primary",
-  secondary: "secondaryDark",
-  disabled: "disabled",
-  primarylight: "primaryLight",
-  white: "white",
 };
 
 function Icon({
   border,
   className,
   disabled,
-  badgeType,
   badge,
   fixedWidth,
   flip,
@@ -230,26 +224,35 @@ function Icon({
     />
   );
 
-
-  if (onClick) {
-    content = (
-      <LinkedIcon onClick={onClick} disabled={disabled}>
-        {styledIcon}
-      </LinkedIcon>
-    );
-  } else if (badge) {
-    content = (
-      <BadgeWrapper>
-        {styledIcon}
-        <Badge type={badgeType} />
-      </BadgeWrapper>
-    );
+  if (badge && !disabled) {
+    if (badge === "info" || badge === "success" || badge === "warning") {
+      content = (
+        <IconWrapper>
+          {styledIcon}
+          <Badge type={badge} />
+        </IconWrapper>
+      );
+    } else {
+      content = (
+        <IconWrapper>
+          {styledIcon}
+          <Badge type="alert" />
+        </IconWrapper>
+      );
+    }
   } else {
     content = (
       styledIcon
     );
   }
 
+  if (onClick) {
+    content = (
+      <LinkedIcon onClick={onClick} disabled={disabled}>
+        {content}
+      </LinkedIcon>
+    );
+  }
 
   return (
     <React.Fragment>
@@ -262,12 +265,12 @@ Icon.propTypes = {
   border: PropTypes.bool,
   /** className used for extending styles */
   className: PropTypes.string,
-  badgeType: PropTypes.node,
-  badge: PropTypes.node,
-  /** Used to set one or more icons to the same fixed width.
-   * Good for vertically aligning a series of icons
-   */
+  /** Options: 'info', 'success', 'warning', 'alert' */
+  badge: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   disabled: PropTypes.bool,
+  /** Used to set one or more icons to the same fixed width.
+    * Good for vertically aligning a series of icons
+    */
   fixedWidth: PropTypes.bool,
   /** Options: 'horizontal', 'vertical', 'both' */
   flip: PropTypes.string,
@@ -277,7 +280,6 @@ Icon.propTypes = {
   onClick: PropTypes.func,
   /** Rotation with eight (8) steps */
   pulse: PropTypes.bool,
-  /** Options: 'info', 'success', 'warning', 'alert' */
   /** Options: '90', '180', '270' */
   rotation: PropTypes.number,
   /** Icons inherit the 'font-size' of the parent container and are relatively sized.
@@ -293,8 +295,7 @@ Icon.propTypes = {
 Icon.defaultProps = {
   border: false,
   className: null,
-  badgeType: null,
-  badge: null,
+  badge: false,
   disabled: null,
   fixedWidth: false,
   flip: null,

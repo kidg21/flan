@@ -51,7 +51,7 @@ Icons inherit the 'color' of the parent container by default but can be overridd
 
 <Preview>
   <Story name="Type">
-    <Grid columns="5">
+    <Grid columns="6">
       <Icon icon="user_circle" size="2x" />
       <Icon icon="user_circle" size="2x" type="info" />
       <Icon icon="user_circle" size="2x" type="success" />
@@ -61,22 +61,24 @@ Icons inherit the 'color' of the parent container by default but can be overridd
   </Story>
 </Preview>
 
-
 ### Badge
 
 To show new updates or an active state for icon use the badge prop.
 
 <Preview>
   <Story name="Badge">
-    <Grid columns="5">
-      <Icon icon="user_circle" size="2x"  badge  />
-      <Icon icon="user_circle" size="2x"  badge badgeType="success"/>
-      <Icon icon="user_circle" size="2x"  badge badgeType="info"/>
+    <Grid columns="6">
+      <Icon icon="user_circle" size="2x" badge/>
+      <Icon icon="home" size="2x" badge="info"/>
+      <Icon icon="bookmark" size="2x" badge="success" />
+      <Icon icon="print" size="2x" badge="warning" />
+      <Icon icon="user" size="2x" badge onClick={() => {}}  />
+      <Icon icon="user_circle" size="2x" badge="info"  onClick={() => {}} />
+      <Icon icon="user_circle" size="2x" badge="success" onClick={() => {}} />
+      <Icon icon="user_circle" size="2x" badge="warning" onClick />
     </Grid>
   </Story>
 </Preview>
-
-
 
 ### Size
 
@@ -84,7 +86,7 @@ Icons inherit the 'font-size' of the parent container and are relatively sized.
 
 <Preview>
   <Story name="Size">
-    <Grid columns="5" gap="xxlarge">
+    <Grid columns="4" gap="xxlarge">
       <Icon icon="user_circle" size="xs" />
       <Icon icon="user_circle" size="sm" />
       <Icon icon="user_circle" />

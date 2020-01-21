@@ -21,6 +21,9 @@ const TagContainer = styled.div`
   padding: ${(props) => {
     return props.badgePadding || "";
   }};
+  border: ${(props) => {
+    return `2px solid ${props.theme.text.inverse}`;
+  }};
   border-radius: ${(props) => {
     return props.theme.borders.radiusMax;
   }};
