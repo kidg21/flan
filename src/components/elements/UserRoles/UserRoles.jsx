@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
 import Bar from "blocks/Bar";
 import Container from "atoms/Container";
-import Panel, { PanelSection } from "layout/Panel";
+import Panel from "layout/Panel";
 import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";
 import Command from "atoms/Command";
@@ -152,55 +152,51 @@ const UserRoles = React.forwardRef(({
   if (childElements && !(childElements instanceof Array)) childElements = [childElements];
 
   return (
-    <Panel style={style}>
-      <PanelSection header>
-        <MainPanelHeader title={title} menuData={commands} />
-      </PanelSection>
-      <PanelSection body style={panelStyle}>
-        {right ? <Bar right={right} /> : null}
-        <Bar
-          left={<TextInput type="search" placeholder="Search for a User" onChange={filterUserName} inputStyle={{ boxSizing: "border-box" }} />}
-          leftWidth={searchWidth}
-          center={
-            <SelectMenu
-              options={userTypes}
-              selectOptions={[null]}
-              onChangeState={filterUserTypes}
-              isClearable={false}
-            />
-          }
-          right={
-            <SelectMenu
-              options={rolesFilter}
-              selectOptions={[null]}
-              onChangeState={filterUserRoles}
-              isClearable={false}
-            />
-          }
-        />
-        <Container height={listHeight} ref={ref}>
-          {activeUsers.filter((user) => {
-            const userRoles = (user.roles && !(user.roles instanceof Array)) ?
-              [user.roles] : user.roles || [];
-            return (typeof filterState.enabled !== "boolean" || user.enabled === filterState.enabled)
-              && (!filterState.name || user.name.toLowerCase().includes(filterState.name))
-              && (!filterState.role || userRoles.includes(filterState.role));
-          }).map((user) => {
-            return (<UserEntry
-              key={user.name}
-              user={user}
-              roles={roles}
-              onClick={onClickUser}
-              onChange={onUserChange}
-            />);
-          })}
-        </Container>
-      </PanelSection>
+    <Panel
+      style={panelStyle}
+      header={<MainPanelHeader title={title} menuData={commands} />}
+    >
+      {right ? <Bar right={right} /> : null}
+      <Bar
+        left={<TextInput type="search" placeholder="Search for a User" onChange={filterUserName} inputStyle={{ boxSizing: "border-box" }} />}
+        leftWidth={searchWidth}
+        center={
+          <SelectMenu
+            options={userTypes}
+            selectOptions={[null]}
+            onChangeState={filterUserTypes}
+            isClearable={false}
+          />
+        }
+        right={
+          <SelectMenu
+            options={rolesFilter}
+            selectOptions={[null]}
+            onChangeState={filterUserRoles}
+            isClearable={false}
+          />
+        }
+      />
+      <Container height={listHeight} ref={ref}>
+        {activeUsers.filter((user) => {
+          const userRoles = (user.roles && !(user.roles instanceof Array)) ?
+            [user.roles] : user.roles || [];
+          return (typeof filterState.enabled !== "boolean" || user.enabled === filterState.enabled)
+            && (!filterState.name || user.name.toLowerCase().includes(filterState.name))
+            && (!filterState.role || userRoles.includes(filterState.role));
+        }).map((user) => {
+          return (<UserEntry
+            key={user.name}
+            user={user}
+            roles={roles}
+            onClick={onClickUser}
+            onChange={onUserChange}
+          />);
+        })}
+      </Container>
       {childElements ? childElements.map((child) => {
         return (
-          <PanelSection>
-            {child}
-          </PanelSection>
+          { child }
         );
       }) : null}
     </Panel>

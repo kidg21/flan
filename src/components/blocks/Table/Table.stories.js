@@ -2,15 +2,11 @@
 /* eslint-disable security/detect-object-injection */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
-import Title from "base/Typography";
 import Layout from "layout/Layout";
-import Panel, { PanelSection } from "layout/Panel";
-import Card from "elements/Card";
 import Menu from "blocks/Menu";
 import Button from "atoms/Button";
 import Command from "atoms/Command";
 import SelectMenu from "atoms/SelectMenu";
-import Bar from "blocks/Bar";
 import DataTable from "blocks/Table";
 
 // Only columns specified here will be displayed
@@ -410,59 +406,6 @@ const options = [
   { value: "cookie dough", label: "Cookie Dough" },
 ];
 
-// export default {
-//   title: "Blocks|Table/Tests",
-//   parameters: {},
-//   includeStories: [],
-// };
-
-// export const Simple = () => {
-//   return (
-//     <Panel>
-//       <DataTable
-//         headers={headers.slice(1)}
-//         rows={data}
-//         listId="foo"
-//         columnWidth={180}
-//       />
-//     </Panel>
-//   );
-// };
-
-// export const Interactive = () => {
-//   return React.createElement(() => {
-//     const [highlightedCell, setHighlightCell] = useState(null);
-//     const [selectedCell, setSelectedCell] = useState(null);
-//     const onCellClick = (e, { rowIndex }) => {
-//       setSelectedCell({ rowIndex });
-//     };
-
-//     const onHeaderClick = (e, { columnIndex }) => {
-//       alert(`Header ${columnIndex}: ${headers[columnIndex].id} clicked`);
-//     };
-
-//     const onCellMouseOver = (e, { rowIndex }) => {
-//       setHighlightCell({ rowIndex });
-//     };
-
-//     return (
-//       <Layout>
-//         <DataTable
-//           headers={headers.slice(1)}
-//           rows={data}
-//           listId="foo"
-//           onCellClick={onCellClick}
-//           onHeaderClick={onHeaderClick}
-//           onCellMouseOver={onCellMouseOver}
-//           highlightedCell={highlightedCell}
-//           selectedCell={selectedCell}
-//           columnWidth={180}
-//         />
-//       </Layout>
-//     );
-//   });
-// };
-
 storiesOf("Blocks|Table", module)
   // .addDecorator(Container)
   .add("Simple", () => {
@@ -507,51 +450,6 @@ storiesOf("Blocks|Table", module)
             selectedCell={selectedCell}
             columnWidth={180}
           />
-        </Layout>
-      );
-    });
-  })
-
-  .add("In a Panel (with Header and Footer)", () => {
-    return React.createElement(() => {
-      const [highlightedCell, setHighlightCell] = useState(null);
-      const [selectedCell, setSelectedCell] = useState(null);
-      const onCellClick = (e, { rowIndex }) => {
-        setSelectedCell({ rowIndex });
-      };
-
-      const onHeaderClick = (e, { columnIndex }) => {
-        alert(`Header ${columnIndex}: ${headers[columnIndex].id} clicked`);
-      };
-
-      const onCellMouseOver = (e, { rowIndex }) => {
-        setHighlightCell({ rowIndex });
-      };
-      return (
-        <Layout>
-          <Panel>
-            <PanelSection>
-              <Card>
-                <Bar center={<Title text="Header Section" />} />
-              </Card>
-            </PanelSection>
-            <DataTable
-              headers={headers.slice(1)}
-              rows={data}
-              listId="foo"
-              onCellClick={onCellClick}
-              onHeaderClick={onHeaderClick}
-              onCellMouseOver={onCellMouseOver}
-              highlightedCell={highlightedCell}
-              selectedCell={selectedCell}
-              columnWidth={180}
-            />
-            <PanelSection>
-              <Card>
-                <Bar center={<Title text="Footer Section" />} />
-              </Card>
-            </PanelSection>
-          </Panel>
         </Layout>
       );
     });

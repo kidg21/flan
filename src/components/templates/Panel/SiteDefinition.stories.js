@@ -10,7 +10,7 @@ import Bar from "blocks/Bar";
 import LBLogo from "images/LightBoxLogo.png";
 import Title, { Description, SubTitle } from "base/Typography";
 import Icon from "atoms/Icon";
-import Panel, { PanelSection } from "layout/Panel";
+import Panel from "layout/Panel";
 import List, { ListItem } from "blocks/List";
 
 const Logo = styled.img`
@@ -81,59 +81,56 @@ storiesOf("Templates|Site Definition", module)
           </Panel>
         </Layout>
         <Layout right="0" width="50%" height="85%" top="15%">
-          <Panel>
-            <PanelSection body>
-              <CardList columns="1">
-                <Card
-                  title="5201 California Avenue, Irvine, CA 92614"
-                  line1="APN #23947828"
-                  line2="Irvine Company"
-                  tag="Same Owner"
-                />
-                <Card
-                  title="5201 California Avenue, Irvine, CA 92614"
-                  line1="APN #23947828"
-                  line2="Irvine Company"
-                  tag="Trans Date"
-                  tagType="blue"
-                />
-                <Card
-                  title="5201 California Avenue, Irvine, CA 92614"
-                  line1="APN #23947828"
-                  line2="Irvine Company"
-                  tag="Trans Date"
-                  tagType="blue"
-                />
-                <Card
-                  title="5201 California Avenue, Irvine, CA 92614"
-                  line1="APN #23947828"
-                  line2="Irvine Company"
-                  tag="Same Owner"
-                />
-                <Card
-                  title="5201 California Avenue, Irvine, CA 92614"
-                  line1="APN #23947828"
-                  line2="Irvine Company"
-                  tag="Adj Property"
-                  tagType="green"
-                />
-                <Card
-                  title="5201 California Avenue, Irvine, CA 92614"
-                  line1="APN #23947828"
-                  tag="Adj Property"
-                  tagType="green"
-                />
-                <Card
-                  title="5201 California Avenue, Irvine, CA 92614"
-                  line1="APN #23947828"
-                  line2="Irvine Company"
-                  tag="Same Owner"
-                />
-              </CardList>
-            </PanelSection>
-            <PanelSection>
-              <Bar padding="2x" center={<Button label="Continue" />} />
-            </PanelSection>
+          <Panel
+            header={<Bar padding="2x" center={<Button label="Continue" />} />}
+          >
+            <CardList columns="1">
+              <Card
+                title="5201 California Avenue, Irvine, CA 92614"
+                line1="APN #23947828"
+                line2="Irvine Company"
+                tag="Same Owner"
+              />
+              <Card
+                title="5201 California Avenue, Irvine, CA 92614"
+                line1="APN #23947828"
+                line2="Irvine Company"
+                tag="Trans Date"
+                tagType="blue"
+              />
+              <Card
+                title="5201 California Avenue, Irvine, CA 92614"
+                line1="APN #23947828"
+                line2="Irvine Company"
+                tag="Trans Date"
+                tagType="blue"
+              />
+              <Card
+                title="5201 California Avenue, Irvine, CA 92614"
+                line1="APN #23947828"
+                line2="Irvine Company"
+                tag="Same Owner"
+              />
+              <Card
+                title="5201 California Avenue, Irvine, CA 92614"
+                line1="APN #23947828"
+                line2="Irvine Company"
+                tag="Adj Property"
+                tagType="green"
+              />
+              <Card
+                title="5201 California Avenue, Irvine, CA 92614"
+                line1="APN #23947828"
+                tag="Adj Property"
+                tagType="green"
+              />
+              <Card
+                title="5201 California Avenue, Irvine, CA 92614"
+                line1="APN #23947828"
+                line2="Irvine Company"
+                tag="Same Owner"
+              />
+            </CardList>
           </Panel>
         </Layout>
         <Layout width="50%" height="85%" top="15%">
@@ -167,57 +164,54 @@ storiesOf("Templates|Site Definition", module)
           </Panel>
         </Layout>
         <Layout right="0" width="50%" height="85%" top="15%">
-          <Panel>
-            <PanelSection body>
-              <Card
-                title="5201 California Avenue, Irvine CA 92614"
-                icon="directions"
-                body={
-                  <React.Fragment>
-                    <Legend title="Lot" data={lotData} />
-                    <Legend title="Owner" data={ownerData} />
-                    <Legend title="Building" data={buildingData} />
-                  </React.Fragment>
-                }
+          <Panel
+            header={<Bar padding="2x" center={<Button label="Continue" />} />}
+          >
+            <Card
+              title="5201 California Avenue, Irvine CA 92614"
+              icon="directions"
+              body={
+                <React.Fragment>
+                  <Legend title="Lot" data={lotData} />
+                  <Legend title="Owner" data={ownerData} />
+                  <Legend title="Building" data={buildingData} />
+                </React.Fragment>
+              }
+            />
+            <List interactive divider>
+              <ListItem
+                label="Demographics"
+                description="This is the description"
               />
-              <List interactive divider>
-                <ListItem
-                  label="Demographics"
-                  description="This is the description"
-                />
-                <ListItem
-                  label="Education"
-                  description="This is the description"
-                />
-                <ListItem
-                  label="Topography"
-                  description="This is the description"
-                />
-                <ListItem
-                  label="Crime Rates"
-                  description="This is the description"
-                />
-                <ListItem
-                  label="Elevation"
-                  description="This is the description"
-                />
-                <ListItem
-                  label="Population"
-                  description="This is the description"
-                />
-                <ListItem
-                  label="Income"
-                  description="This is the description"
-                />
-                <ListItem
-                  label="Opportunity Zones"
-                  description="This is the description"
-                />
-              </List>
-            </PanelSection>
-            <PanelSection>
-              <Bar padding="2x" center={<Button label="Continue" />} />
-            </PanelSection>
+              <ListItem
+                label="Education"
+                description="This is the description"
+              />
+              <ListItem
+                label="Topography"
+                description="This is the description"
+              />
+              <ListItem
+                label="Crime Rates"
+                description="This is the description"
+              />
+              <ListItem
+                label="Elevation"
+                description="This is the description"
+              />
+              <ListItem
+                label="Population"
+                description="This is the description"
+              />
+              <ListItem
+                label="Income"
+                description="This is the description"
+              />
+              <ListItem
+                label="Opportunity Zones"
+                description="This is the description"
+              />
+            </List>
           </Panel>
         </Layout>
         <Layout width="50%" height="85%" top="15%">
@@ -251,37 +245,34 @@ storiesOf("Templates|Site Definition", module)
           </Panel>
         </Layout>
         <Layout right="0" width="50%" height="85%" top="15%">
-          <Panel>
-            <PanelSection body>
+          <Panel
+            header={<Bar padding="2x" center={<Button label="Continue" />} />}
+          >
+            <Card
+              title="5201 California Avenue, Irvine CA 92614"
+              icon="directions"
+              body={
+                <React.Fragment>
+                  <Legend title="Lot" data={lotData} />
+                  <Legend title="Owner" data={ownerData} />
+                  <Legend title="Building" data={buildingData} />
+                </React.Fragment>
+              }
+            />
+            <Bar
+              padding="2x"
+              left={<SubTitle size="sm" text="Properties Added" />}
+            />
+            <CardList columns="1">
               <Card
-                title="5201 California Avenue, Irvine CA 92614"
-                icon="directions"
-                body={
-                  <React.Fragment>
-                    <Legend title="Lot" data={lotData} />
-                    <Legend title="Owner" data={ownerData} />
-                    <Legend title="Building" data={buildingData} />
-                  </React.Fragment>
-                }
+                title="Empire State Building"
+                description="This is the description"
               />
-              <Bar
-                padding="2x"
-                left={<SubTitle size="sm" text="Properties Added" />}
+              <Card
+                title="Eiffel Tower"
+                description="This is the description"
               />
-              <CardList columns="1">
-                <Card
-                  title="Empire State Building"
-                  description="This is the description"
-                />
-                <Card
-                  title="Eiffel Tower"
-                  description="This is the description"
-                />
-              </CardList>
-            </PanelSection>
-            <PanelSection>
-              <Bar padding="2x" center={<Button label="Continue" />} />
-            </PanelSection>
+            </CardList>
           </Panel>
         </Layout>
         <Layout width="50%" height="85%" top="15%">
@@ -315,46 +306,43 @@ storiesOf("Templates|Site Definition", module)
           </Panel>
         </Layout>
         <Layout right="0" width="50%" height="85%" top="15%">
-          <Panel>
-            <PanelSection body>
-              <CardList columns="1">
-                <Card
-                  icon="download"
-                  title="Site Summary"
-                  body={
-                    <React.Fragment>
-                      <Legend data={summaryData} />
-                    </React.Fragment>
-                  }
-                />
-                <Card
-                  title="5201 California Avenue, Irvine CA 92614"
-                  icon="directions"
-                  body={
-                    <React.Fragment>
-                      <Legend title="Lot" data={lotData} />
-                      <Legend title="Owner" data={ownerData} />
-                      <Legend title="Building" data={buildingData} />
-                    </React.Fragment>
-                  }
-                />
-                <Bar
-                  padding="2x"
-                  left={<Title size="sm" text="Properties Added" />}
-                />
-                <Card
-                  title="Empire State Building"
-                  description="This is the description"
-                />
-                <Card
-                  title="Eiffel Tower"
-                  description="This is the description"
-                />
-              </CardList>
-            </PanelSection>
-            <PanelSection>
-              <Bar padding="2x" center={<Button label="Submit" />} />
-            </PanelSection>
+          <Panel
+            header={<Bar padding="2x" center={<Button label="Submit" />} />}
+          >
+            <CardList columns="1">
+              <Card
+                icon="download"
+                title="Site Summary"
+                body={
+                  <React.Fragment>
+                    <Legend data={summaryData} />
+                  </React.Fragment>
+                }
+              />
+              <Card
+                title="5201 California Avenue, Irvine CA 92614"
+                icon="directions"
+                body={
+                  <React.Fragment>
+                    <Legend title="Lot" data={lotData} />
+                    <Legend title="Owner" data={ownerData} />
+                    <Legend title="Building" data={buildingData} />
+                  </React.Fragment>
+                }
+              />
+              <Bar
+                padding="2x"
+                left={<Title size="sm" text="Properties Added" />}
+              />
+              <Card
+                title="Empire State Building"
+                description="This is the description"
+              />
+              <Card
+                title="Eiffel Tower"
+                description="This is the description"
+              />
+            </CardList>
           </Panel>
         </Layout>
         <Layout width="50%" height="85%" top="15%">
