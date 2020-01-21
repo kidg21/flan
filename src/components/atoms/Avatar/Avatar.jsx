@@ -18,6 +18,9 @@ const AvatarText = styled(Title)`
 const TagContainer = styled.div`
   justify-content: center;
   vertical-align: center;
+  cursor: ${(props) => {
+    return props.onClick ? "pointer" : "";
+  }};
   display: flex;
   width: ${(props) => {
     return props.avatarSize;
@@ -37,7 +40,7 @@ const TagContainer = styled.div`
 `;
 
 function Avatar({
-  type, disabled, icon, id, src, alt, image, label, size,
+  type, disabled, icon, id, src, alt, image, label, onClick, size,
 }) {
   let labelType;
   let iconType;
@@ -110,6 +113,7 @@ function Avatar({
       width={avatarSize}
       alt={alt}
     />);
+    backgroundColor = "white";
   } else if (icon) {
     iconType = <Icon icon={icon} size="lg" />;
   } else {
@@ -144,6 +148,7 @@ Avatar.propTypes = {
   src: PropTypes.node,
   alt: PropTypes.string,
   id: PropTypes.string,
+  onClick: PropTypes.node,
   size: PropTypes.node,
   label: PropTypes.string,
 };
@@ -155,6 +160,7 @@ Avatar.defaultProps = {
   src: null,
   alt: null,
   size: null,
+  onClick: null,
   icon: null,
   id: null,
   label: null,

@@ -4,12 +4,10 @@
 /* eslint-disable security/detect-object-injection */
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
 import Layout from "layout/Layout";
-import { screen } from "Variables";
-import { PlaceholderText } from "helpers/Placeholders.jsx";
-import ActionLayout from "./ActionLayout.jsx";
-import FixedLayout from "./FixedLayout.jsx";
+import DynamicLayout from "./DynamicLayout.jsx";
+import SemiDynamicLayout from "./SemiDynamicLayout.jsx";
+import StaticLayout from "./StaticLayout.jsx";
 
 
 function NewLayout({
@@ -18,14 +16,18 @@ function NewLayout({
     let content;
 
     switch (theme && theme.toLowerCase()) {
+        case "semi":
+            content = (
+                <SemiDynamicLayout leftContent={leftContent} rightContent={rightContent} mainContent={mainContent} />
+            );
         case "dynamic":
             content = (
-                <ActionLayout leftContent={leftContent} rightContent={rightContent} mainContent={mainContent} />
+                <DynamicLayout leftContent={leftContent} rightContent={rightContent} mainContent={mainContent} />
             );
             break;
         case "static":
             content = (
-                <FixedLayout leftContent={leftContent} rightContent={rightContent} mainContent={mainContent} />
+                <StaticLayout leftContent={leftContent} rightContent={rightContent} mainContent={mainContent} />
             );
             break;
         default:

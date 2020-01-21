@@ -2,7 +2,6 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
 import { Padding } from "helpers/Display";
-import Layout from "layout/Layout";
 import List, { ListItem } from "blocks/List";
 import VirtualizedList from "./VirtualizedList.jsx";
 
@@ -537,7 +536,7 @@ storiesOf("Blocks|List", module)
   //     };
 
   //     return (
-  //       <Layout>
+  //       <div>
   //         <VirtualizedList
   //           rows={data}
   //           Template={Template}
@@ -550,7 +549,7 @@ storiesOf("Blocks|List", module)
   //           highlightedCell={highlightedCell}
   //           selectedCell={selectedCell}
   //         />
-  //       </Layout>
+  //       </div>
   //     );
   //   });
   // })

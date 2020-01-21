@@ -11,7 +11,6 @@ import { PlaceholderText } from "helpers/Placeholders.jsx";
 const FlexWrapper = styled.div`
   display: flex;
   height: 100%;
-  background-color: azure;
   width: 100%;
   @media ${screen.small} {
     z-index: 0;

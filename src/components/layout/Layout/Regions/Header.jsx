@@ -14,7 +14,7 @@ import styled from "styled-components";
 
 const HeaderWrapper = styled(Bar)`
   top: 0;
-  border-bottom: .25px solid ${(props) => {
+  border-bottom: 1px solid ${(props) => {
         return props.theme.palette.grey5;
     }};
  
@@ -31,20 +31,20 @@ function Header({
             id={id}
             contentAlign="center"
             padding="2x"
-            left={<Image
-                circle
-                width="32"
+            left={<Avatar
+                onClick={logoClick}
+                image
                 src={LightBoxIcon}
                 alt="logo"
             />
             }
-            center={headerContent}
-            right={
-                <Icon
-                    icon="settings"
-                    onClick={rightClick}
-                />}
-        />
+center = { headerContent }
+right = {
+                < Icon
+icon = "settings"
+onClick = { rightClick }
+    />}
+/>
     );
 }
 

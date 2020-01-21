@@ -11,10 +11,9 @@ import { PlaceholderText } from "helpers/Placeholders.jsx";
 
 
 const FlexWrapper = styled.div`
-  position: fixed;
-  z-index: 500;
-  border: 1px  ${(props) => {
-    return props.theme.palette.grey6;
+  display: flex;
+  border: 2px  ${(props) => {
+    return props.theme.palette.primary;
   }};
   transition: all 1s ease-in-out;
   right: 0;

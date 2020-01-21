@@ -3,7 +3,6 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
 import Title from "base/Typography";
-import Layout from "layout/Layout";
 import Panel, { PanelSection } from "layout/Panel";
 import Card from "layout/Card";
 import Menu from "blocks/Menu";
@@ -446,7 +445,7 @@ const options = [
 //     };
 
 //     return (
-//       <Layout>
+//       <div>
 //         <DataTable
 //           headers={headers.slice(1)}
 //           rows={data}
@@ -458,7 +457,7 @@ const options = [
 //           selectedCell={selectedCell}
 //           columnWidth={180}
 //         />
-//       </Layout>
+//       </div>
 //     );
 //   });
 // };
@@ -467,14 +466,14 @@ storiesOf("Blocks|Table", module)
   // .addDecorator(Container)
   .add("Simple", () => {
     return (
-      <Layout>
+      <Panel>
         <DataTable
           headers={headers.slice(1)}
           rows={data}
           listId="foo"
           columnWidth={180}
         />
-      </Layout>
+      </Panel>
     );
   })
 
@@ -495,7 +494,7 @@ storiesOf("Blocks|Table", module)
       };
 
       return (
-        <Layout>
+        <Panel>
           <DataTable
             headers={headers.slice(1)}
             rows={data}
@@ -507,7 +506,7 @@ storiesOf("Blocks|Table", module)
             selectedCell={selectedCell}
             columnWidth={180}
           />
-        </Layout>
+        </Panel>
       );
     });
   })
@@ -528,7 +527,7 @@ storiesOf("Blocks|Table", module)
         setHighlightCell({ rowIndex });
       };
       return (
-        <Layout>
+        <Panel>
           <Panel>
             <PanelSection>
               <Card>
@@ -552,7 +551,7 @@ storiesOf("Blocks|Table", module)
               </Card>
             </PanelSection>
           </Panel>
-        </Layout>
+        </Panel>
       );
     });
   })
@@ -588,7 +587,7 @@ storiesOf("Blocks|Table", module)
       };
 
       return (
-        <Layout>
+        <Panel>
           <DataTable
             headers={headers}
             rows={data}
@@ -600,7 +599,7 @@ storiesOf("Blocks|Table", module)
             selectedCell={selectedCell}
             columnWidth={180}
           />
-        </Layout>
+        </Panel>
       );
     });
   })
@@ -636,7 +635,7 @@ storiesOf("Blocks|Table", module)
       };
 
       return (
-        <Layout>
+        <Panel>
           <DataTable
             headers={headers}
             rows={data}
@@ -648,7 +647,7 @@ storiesOf("Blocks|Table", module)
             selectedCell={selectedCell}
             columnWidth={180}
           />
-        </Layout>
+        </Panel>
       );
     });
   })
@@ -684,7 +683,7 @@ storiesOf("Blocks|Table", module)
       };
 
       return (
-        <Layout>
+        <Panel>
           <DataTable
             headers={headers}
             rows={data}
@@ -696,7 +695,7 @@ storiesOf("Blocks|Table", module)
             selectedCell={selectedCell}
             columnWidth={180}
           />
-        </Layout>
+        </Panel>
       );
     });
   })
@@ -733,7 +732,7 @@ storiesOf("Blocks|Table", module)
       };
 
       return (
-        <Layout>
+        <Panel>
           <DataTable
             headers={headers}
             rows={data}
@@ -745,7 +744,7 @@ storiesOf("Blocks|Table", module)
             selectedCell={selectedCell}
             columnWidth={180}
           />
-        </Layout>
+        </Panel>
       );
     });
   });

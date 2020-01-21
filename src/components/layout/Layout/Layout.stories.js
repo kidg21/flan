@@ -1,13 +1,8 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
-import { screen } from "Variables";
-import Tabs, { Tab } from "blocks/Tabs";
-import Card, { CardList } from "layout/Card";
-import Panel from "layout/Panel";
-import Layout from "layout/Layout";
-import Bar from "blocks/Bar";
-import Button from "atoms/Button";
+
+import DynamicLayout from "./DynamicLayout.jsx";
 import NewLayout from "./NewLayout.jsx";
 // import StaticLayout from "./StaticLayout.jsx";
 
@@ -25,18 +20,13 @@ storiesOf("Layout |App Layout/", module)
 
   .add(
     "Documentation",
-    withInfo()(() => {
-      return <NewLayout />;
-    }),
+    () => {
+      return <DynamicLayout />;
+    },
   )
 
   .add("Dynamic", () => {
     return (
       <NewLayout theme="dynamic" />
-    );
-  })
-  .add("Static", () => {
-    return (
-      <NewLayout theme="static" />
     );
   });

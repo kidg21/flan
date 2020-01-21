@@ -7,25 +7,12 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Panel from "layout/Panel";
-import Header from "./Header.jsx";
-import IconBlock from "blocks/IconBlock";
 import Icon from "atoms/Icon";
 import Sidebar from "./Regions/Sidebar.jsx";
-import Grid from "layout/Grid";
-import TextInput from "atoms/TextInput";
-import Rightbar from "./Regions/Rightbar.jsx";
-// import BaseLayout from "./BaseLayout.jsx";
+import Header from "./Regions/Header.jsx";
+import RightScreen from "./Regions/RightScreen.jsx";
 import LayoutWrapper from "./Regions/LayoutWrapper.jsx";
 
-
-// const InnerWrapper = styled.div`
-// display: flex;
-// flex-direction: column;
-// flex-wrap: nowrap;
-// justify-content: flex-start;
-// width: 100%;
-// height: 100%;
-// `;
 
 const ReactWrapper = styled.div`
 display: flex;
@@ -50,16 +37,11 @@ padding: 1em;
 z-index: 100;
 `;
 
-function ActionLayout({
+function StaticLayout({
     leftContent,
     rightContent,
     mainContent,
 }) {
-    const [leftVisible, setLeftVisible] = useState(false);
-    function seeSidebar() {
-        setLeftVisible(!leftVisible);
-    }
-
     const [rightVisible, setRightVisible] = useState(false);
     function seeRightbar() {
         setRightVisible(!rightVisible);
@@ -68,31 +50,30 @@ function ActionLayout({
     return (
         <Base>
             <ReactWrapper>
-                {leftVisible ? <Sidebar visible={leftVisible} > {leftContent}  </Sidebar> : null}
+                <Sidebar visible > {leftContent}  </Sidebar>
                 <LayoutWrapper >
                     <Panel>
                         <Header
                             rightClick={seeRightbar}
-                            logoClick={seeSidebar}
                         />
                         {mainContent}
                     </Panel>
                 </LayoutWrapper>
                 {rightVisible ?
                     (
-                        <Rightbar visible={rightVisible} >
+                        <RightScreen visible={rightVisible} >
                             <Panel>
                                 <Exit icon="close" onClick={seeRightbar} />
                                 {rightContent}
                             </Panel>
-                        </Rightbar>) : null
+                        </RightScreen>) : null
                 }
             </ReactWrapper >
         </Base >
     );
 }
 
-ActionLayout.propTypes = {
+StaticLayout.propTypes = {
     leftContent: PropTypes.node,
     rightContent: PropTypes.node,
     mainContent: PropTypes.node,
@@ -100,7 +81,7 @@ ActionLayout.propTypes = {
 
 };
 
-ActionLayout.defaultProps = {
+StaticLayout.defaultProps = {
     leftContent: null,
     rightContent: null,
     mainContent: null,
@@ -109,4 +90,4 @@ ActionLayout.defaultProps = {
 };
 
 
-export default ActionLayout;
+export default StaticLayout;

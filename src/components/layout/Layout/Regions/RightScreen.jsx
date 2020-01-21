@@ -8,38 +8,42 @@ import { PlaceholderText } from "helpers/Placeholders.jsx";
 
 
 const FlexWrapper = styled.div`
-  display: flex;
-  background: blue;
+  position: fixed;
+  z-index: 500;
+  border: 1px  ${(props) => {
+    return props.theme.palette.primary;
+  }};
   transition: all 1s ease-in-out;
+  right: 0;
+  height: 100%;
   @media ${screen.small} {
     transform: ${(props) => {
     return props.visible ? "translateX(0%)" : "translateX(-100%)";
   }};
-  width: 300%;
+    width: 90%;
   }
   @media ${screen.medium} {
     transform: ${(props) => {
     return props.visible ? "translateX(0%)" : "translateX(-100%)";
   }};
-  width: 300%;
+    width: 20%;
   }
-
   @media ${screen.large} {
     transform: ${(props) => {
     return props.visible ? "translateX(0%)" : "translateX(-100%)";
   }};
   width: 20%;
-  }
+}
   @media ${screen.xlarge} {
     transform: ${(props) => {
     return props.visible ? "translateX(0%)" : "translateX(-100%)";
   }};
-  width: 20%;
+    width: 20%;
   }
   &:empty {
     &:before {
       ${PlaceholderText};
-      content: "{ leftContent }";
+      content: "{ rightcontent }";
       color: ${(props) => {
     return props.theme.text.primary;
   }};
@@ -48,7 +52,7 @@ const FlexWrapper = styled.div`
 `;
 
 
-function Sidebar({
+function SideScreen({
   children,
   right,
   visible,
@@ -69,25 +73,25 @@ function Sidebar({
   );
 }
 
-Sidebar.propTypes = {
+SideScreen.propTypes = {
   children: PropTypes.node,
   id: PropTypes.string,
   height: PropTypes.node,
   visible: PropTypes.bool,
-  right: PropTypes.node,
+  right: PropTypes.bool,
   width: PropTypes.node,
 
 };
 
-Sidebar.defaultProps = {
+SideScreen.defaultProps = {
   children: null,
   visible: null,
   id: null,
-  right: null,
+  right: false,
   height: null,
   width: null,
 
 };
 
 
-export default Sidebar;
+export default SideScreen;
