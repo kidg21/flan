@@ -12,33 +12,32 @@ import { PlaceholderText } from "helpers/Placeholders.jsx";
 
 const FlexWrapper = styled.div`
   display: flex;
-  border: 2px  ${(props) => {
-    return props.theme.palette.primary;
+  border-left: 1px solid ${(props) => {
+    return props.theme.palette.grey5;
   }};
-  transition: all 1s ease-in-out;
+  transition: all 0.25s ease-in-out;
   right: 0;
-  height: 100%;
   @media ${screen.small} {
+    width: 100%;
     transform: ${(props) => {
-    return props.visible ? "translateX(0%)" : "translateX(-100%)";
+    return props.visible ? "translateX(0%)" : "translateX(100%)";
   }};
-    width: 90%;
   }
   @media ${screen.medium} {
+    width: 100%;
     transform: ${(props) => {
-    return props.visible ? "translateX(0%)" : "translateX(-100%)";
+    return props.visible ? "translateX(0%)" : "translateX(100%)";
   }};
-    width: 20%;
   }
   @media ${screen.large} {
     transform: ${(props) => {
-    return props.visible ? "translateX(0%)" : "translateX(-100%)";
+    return props.visible ? "translateX(0%)" : "translateX(100%)";
   }};
   width: 20%;
 }
   @media ${screen.xlarge} {
     transform: ${(props) => {
-    return props.visible ? "translateX(0%)" : "translateX(-100%)";
+    return props.visible ? "translateX(0%)" : "translateX(100%)";
   }};
     width: 20%;
   }

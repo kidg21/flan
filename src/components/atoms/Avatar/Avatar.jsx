@@ -44,68 +44,48 @@ function Avatar({
 }) {
   let labelType;
   let iconType;
-  let backgroundColor;
-  let fontSize;
-  let textColor;
-  let avatarSize;
+
+  const sizeHash = {
+    "4x": {
+      avatar: "5rem",
+      font: "2.5em",
+    },
+    "3x": {
+      avatar: "4rem",
+      font: "2em",
+    },
+    "2x": {
+      avatar: "3rem",
+      font: "1.5em",
+    },
+    "1x": {
+      avatar: "2.5rem",
+      font: "1em",
+    },
+  };
+
+  const avatarSize = (size && sizeHash[size.toLowerCase()]) || "2.5rem";
+  const fontSize = (size && sizeHash[size.toLowerCase()]) || "1em";
 
 
-  switch (size && size.toLowerCase()) {
-    case "4x":
-      avatarSize = "5rem";
-      fontSize = "2.5em";
-      break;
-    case "3x":
-      avatarSize = "4rem";
-      fontSize = "2em";
-      break;
-    case "2x":
-      avatarSize = "3rem";
-      fontSize = "1.5em";
-      break;
-    case "1x":
-      avatarSize = "2.5rem";
-      fontSize = "1em";
-      break;
-    default:
-      avatarSize = "2.5rem";
-      fontSize = "1em";
-      break;
-  }
+  const typeHash = {
+    success: "success",
+    warning: "warning",
+    alert: "alert",
+    info: "info",
+    primary: "primary",
+    secondary: "secondary",
+  };
 
-  switch (type && type.toLowerCase()) {
-    case "success":
-      backgroundColor = "success";
-      textColor = "successTint";
-      break;
-    case "warning":
-      backgroundColor = "warning";
-      textColor = "warningTint";
-      break;
-    case "alert":
-      backgroundColor = "alert";
-      textColor = "alertTint";
-      break;
-    case "info":
-      backgroundColor = "info";
-      textColor = "infoTint";
-      break;
-    case "primary":
-      backgroundColor = "primary";
-      textColor = "primaryTint";
-      break;
-    case "secondary":
-      backgroundColor = "secondaryLight";
-      textColor = "secondaryTint";
-      break;
-    default:
-      backgroundColor = "primaryLight";
-      textColor = "white";
-      break;
-  }
+
+  const backgroundColor = type ? (typeHash[type] || type.toLowerCase()) : "primaryLight";
+  const textColor = type ? `${type.toLowerCase()}Tint` : "white";
+
+
   if (disabled) {
     backgroundColor = "grey3";
   }
+
   if (image) {
     iconType = (<Image
       circle
@@ -113,7 +93,6 @@ function Avatar({
       width={avatarSize}
       alt={alt}
     />);
-    backgroundColor = "white";
   } else if (icon) {
     iconType = <Icon icon={icon} size="lg" />;
   } else {

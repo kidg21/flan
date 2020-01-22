@@ -11,8 +11,9 @@ import styled from "styled-components";
 
 const HeaderWrapper = styled(Bar)`
   top: 0;
-  order: 0;
-  z-index: -50;
+  border-bottom: 1px solid ${(props) => {
+        return props.theme.palette.grey5;
+    }};
  
 `;
 

@@ -1,14 +1,7 @@
-/* eslint-disable indent */
-/* eslint-disable react/jsx-indent */
-/* eslint-disable react/jsx-indent-props */
-/* eslint-disable linebreak-style */
-/* eslint-disable security/detect-object-injection */
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Panel from "layout/Panel";
 import Header from "./Regions/Header.jsx";
-import Icon from "atoms/Icon";
 import Sidebar from "./Regions/Sidebar.jsx";
 import RightBar from "./Regions/Rightbar.jsx";
 import LayoutWrapper from "./Regions/LayoutWrapper.jsx";
@@ -23,35 +16,31 @@ height: 100%;
 justify-content: flex-start;
 `;
 
-
 const Base = styled.div`
 width: 100vw;
 height: 100vh;
-
 `;
-
-const Exit = styled(Icon)`
-align-self: right;
-float: right;
-padding: 1em;
-z-index: 100;
-`;
-
 
 function Layout({
-  leftContent,
-  rightContent,
-  headerContent,
-  mainContent,
+  left,
+  right,
+  header,
+  main,
 }) {
-  const [leftVisible, setLeftVisible] = useState(false);
-  function seeSidebar() {
-    setLeftVisible(!leftVisible);
+  let seeSidebar = null;
+  let leftVisible = left ? left.visible : false;
+  let setLeftVisible = left ? left.toggle : null;
+  if (left) {
+    if (!setLeftVisible) [leftVisible, setLeftVisible] = useState(leftVisible);
+    seeSidebar = () => { setLeftVisible(!leftVisible); };
   }
 
-  const [rightVisible, setRightVisible] = useState(false);
-  function seeRightbar() {
-    setRightVisible(!rightVisible);
+  let seeRightbar = null;
+  let rightVisible = right ? right.visible : false;
+  let setRightVisible = right ? right.toggle : null;
+  if (right) {
+    if (!setRightVisible) [rightVisible, setRightVisible] = useState(rightVisible);
+    seeRightbar = () => { setRightVisible(!rightVisible); };
   }
 
   return (
@@ -59,24 +48,14 @@ function Layout({
       <Header
         rightClick={seeRightbar}
         logoClick={seeSidebar}
-        headerContent={headerContent}
+        headerContent={header}
       />
       <ReactWrapper>
-        {leftVisible ? <Sidebar visible={leftVisible} > <Panel>{leftContent} </Panel>  </Sidebar> : null}
+        {left ? <Sidebar visible={leftVisible} > {left.content} </Sidebar> : null}
         <LayoutWrapper >
-
-          {mainContent}
+          {main}
         </LayoutWrapper>
-        {rightVisible ?
-          (
-            <RightBar visible={rightVisible} >
-              <Panel>
-                <Exit icon="close" onClick={seeRightbar} />
-                {rightContent}
-              </Panel>
-            </RightBar>) : null
-        }
-
+        {right ? <RightBar visible={rightVisible}> {right.content} </RightBar> : null}
       </ReactWrapper >
     </Base >
   );
@@ -84,21 +63,33 @@ function Layout({
 
 
 Layout.propTypes = {
-  headerContent: PropTypes.node,
-  leftContent: PropTypes.node,
-  rightContent: PropTypes.node,
-  mainContent: PropTypes.node,
-
-
+  left: {
+    content: PropTypes.node.isRequired,
+    visible: PropTypes.bool,
+    toggle: PropTypes.func,
+  },
+  right: {
+    content: PropTypes.node.isRequired,
+    visible: PropTypes.bool,
+    toggle: PropTypes.func,
+  },
+  header: PropTypes.node,
+  main: PropTypes.node,
 };
 
 Layout.defaultProps = {
-  headerContent: null,
-  leftContent: null,
-  rightContent: null,
-  mainContent: null,
-
-
+  left: {
+    content: null,
+    visible: null,
+    toggle: null,
+  },
+  right: {
+    content: null,
+    visible: null,
+    toggle: null,
+  },
+  header: null,
+  main: null,
 };
 
 

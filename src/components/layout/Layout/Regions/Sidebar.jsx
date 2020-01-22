@@ -9,20 +9,21 @@ import { PlaceholderText } from "helpers/Placeholders.jsx";
 
 const FlexWrapper = styled.div`
   display: flex;
-  order: 0;
-  background: blue;
-  transition: all 1s ease-in-out;
+  border-right: 1px solid ${(props) => {
+    return props.theme.palette.grey5;
+  }};
+  transition: all 0.25s ease-in-out;
   @media ${screen.small} {
+    width: 100%;
     transform: ${(props) => {
     return props.visible ? "translateX(0%)" : "translateX(-100%)";
   }};
-  width: 300%;
   }
   @media ${screen.medium} {
     transform: ${(props) => {
     return props.visible ? "translateX(0%)" : "translateX(-100%)";
   }};
-  width: 300%;
+  width: 100%;
   }
 
   @media ${screen.large} {

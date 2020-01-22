@@ -10,16 +10,8 @@ import { PlaceholderText } from "helpers/Placeholders.jsx";
 
 const FlexWrapper = styled.div`
   display: flex;
-  order: 0;
   height: 100%;
   width: 100%;
-  border-top: 1px solid ${(props) => {
-    return props.theme.palette.grey5;
-  }};
-  @media ${screen.small} {
-    z-index: 0;
-  }
-  transition: all 1s ease-in-out;
   &:empty {
     &:before {
       ${PlaceholderText};
