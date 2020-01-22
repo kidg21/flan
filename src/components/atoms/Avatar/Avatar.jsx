@@ -6,6 +6,7 @@ import styled from "styled-components";
 import Icon from "atoms/Icon";
 import Image from "atoms/Image";
 import Title from "base/Typography";
+import { DisabledContext } from "States";
 
 const AvatarText = styled(Title)`
   color: inherit;
@@ -47,24 +48,24 @@ function Avatar({
 
   const sizeHash = {
     "4x": {
-      avatar: "5rem",
+      avatar: "5em",
       font: "2.5em",
     },
     "3x": {
-      avatar: "4rem",
+      avatar: "4em",
       font: "2em",
     },
     "2x": {
-      avatar: "3rem",
+      avatar: "3em",
       font: "1.5em",
     },
     "1x": {
-      avatar: "2.5rem",
+      avatar: "2.5em",
       font: "1em",
     },
   };
 
-  const avatarSize = (size && sizeHash[size.toLowerCase()]) || "2.5rem";
+  const avatarSize = (size && sizeHash[size.toLowerCase()]) || "2.5em";
   const fontSize = (size && sizeHash[size.toLowerCase()]) || "1em";
 
 
@@ -80,6 +81,10 @@ function Avatar({
 
   const backgroundColor = type ? (typeHash[type] || type.toLowerCase()) : "primaryLight";
   const textColor = type ? `${type.toLowerCase()}Tint` : "white";
+
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  if (isDisabled) type = "disabled";
 
 
   if (image) {

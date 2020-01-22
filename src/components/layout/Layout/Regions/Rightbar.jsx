@@ -13,6 +13,7 @@ const FlexWrapper = styled.div`
   border-left: 1px solid ${(props) => {
     return props.theme.palette.grey5;
   }};
+  background: azure;
   transition: all 0.25s ease-in-out;
   right: 0;
   @media ${screen.small} {
