@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { Fragment, useState } from "react";
 import Button from "atoms/Button";
-import Panel, { PanelSection } from "layout/Panel";
+import Panel from "layout/Panel";
 import Banner from "blocks/Banner";
 import Notification from "elements/Notification";
 
@@ -120,11 +120,11 @@ storiesOf("Elements|Notification", module)
               onClose={handleClose}
             />
           </Notification>
-          <Panel>
-            <PanelSection body>
+          <Panel
+            header={
               <Button label="Show Notification" onClick={handleOpen} />
-            </PanelSection>
-          </Panel>
+            }
+          />
         </Fragment>
       );
     });
@@ -163,11 +163,11 @@ storiesOf("Elements|Notification", module).add("Status Notification", () => {
             onClose={handleClose}
           />
         </Notification>
-        <Panel>
-          <PanelSection body>
+        <Panel
+          header={
             <Button label="Status Notification" onClick={handleOpen} />
-          </PanelSection>
-        </Panel>
+          }
+        />
       </Fragment>
     );
   });
