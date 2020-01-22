@@ -13,7 +13,15 @@ const CellWrapper = styled.div`
   align-items: center;
   color: ${(props) => { return props.theme.text.primary; }};
   border-bottom: 1px solid #eee;
-  background-color: ${(props) => { return props.isSelected ? "#669932" : ""; }};
+  background-color: ${(props) => {
+    if (props.isHighlighted) {
+      return "#f0f5fb";
+    }
+    if (props.isSelected) {
+      return "#669932";
+    }
+    return "";
+  }};
 `;
 
 class CardList extends PureComponent {
