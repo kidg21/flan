@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { Fragment } from "react";
 import { Padding } from "helpers/Display";
-import Card, { CardList } from "elements/Card";
+import Card, { CardGrid } from "elements/Card";
 import Icon from "atoms/Icon";
 import IconBlock from "blocks/IconBlock";
 import Command from "atoms/Command";
@@ -100,7 +100,7 @@ storiesOf("Blocks|Bar", module)
 
   .add("Some Bars", () => {
     return (
-      <CardList>
+      <CardGrid>
         <Card>
           <Bar left={<Command />} center={shortTitle} right={<Command />} />
         </Card>
@@ -222,6 +222,6 @@ storiesOf("Blocks|Bar", module)
             right={shortTitle}
           />
         </Card>
-      </CardList>
+      </CardGrid>
     );
   });

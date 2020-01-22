@@ -3,7 +3,7 @@
 import React from "react";
 import Legend from "blocks/Legend";
 import styled from "styled-components";
-import Card, { CardList } from "elements/Card";
+import Card, { CardGrid } from "elements/Card";
 import Layout from "layout/Layout";
 import Button from "atoms/Button";
 import Bar from "blocks/Bar";
@@ -84,7 +84,7 @@ storiesOf("Templates|Site Definition", module)
           <Panel
             header={<Bar padding="2x" center={<Button label="Continue" />} />}
           >
-            <CardList columns="1">
+            <CardGrid columns="1">
               <Card
                 title="5201 California Avenue, Irvine, CA 92614"
                 line1="APN #23947828"
@@ -130,7 +130,7 @@ storiesOf("Templates|Site Definition", module)
                 line2="Irvine Company"
                 tag="Same Owner"
               />
-            </CardList>
+            </CardGrid>
           </Panel>
         </Layout>
         <Layout width="50%" height="85%" top="15%">
@@ -263,7 +263,7 @@ storiesOf("Templates|Site Definition", module)
               padding="2x"
               left={<SubTitle size="sm" text="Properties Added" />}
             />
-            <CardList columns="1">
+            <CardGrid columns="1">
               <Card
                 title="Empire State Building"
                 description="This is the description"
@@ -272,7 +272,7 @@ storiesOf("Templates|Site Definition", module)
                 title="Eiffel Tower"
                 description="This is the description"
               />
-            </CardList>
+            </CardGrid>
           </Panel>
         </Layout>
         <Layout width="50%" height="85%" top="15%">
@@ -309,7 +309,7 @@ storiesOf("Templates|Site Definition", module)
           <Panel
             header={<Bar padding="2x" center={<Button label="Submit" />} />}
           >
-            <CardList columns="1">
+            <CardGrid columns="1">
               <Card
                 icon="download"
                 title="Site Summary"
@@ -342,7 +342,7 @@ storiesOf("Templates|Site Definition", module)
                 title="Eiffel Tower"
                 description="This is the description"
               />
-            </CardList>
+            </CardGrid>
           </Panel>
         </Layout>
         <Layout width="50%" height="85%" top="15%">

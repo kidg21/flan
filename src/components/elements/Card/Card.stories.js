@@ -7,7 +7,7 @@ import Image from "atoms/Image";
 import ModernExterior1 from "images/residential/modern exterior 1.jpg";
 import ModernExterior2 from "images/residential/modern exterior 2.jpg";
 import ModernExterior3 from "images/residential/modern exterior 3.jpg";
-import Card, { CardSection, CardList } from "elements/Card";
+import Card, { CardSection, CardGrid } from "elements/Card";
 import Grid from "layout/Grid";
 import Title, { Description } from "base/Typography";
 import MediaBlock from "blocks/MediaBlock";
@@ -316,20 +316,20 @@ storiesOf("Work|Card/Elements", module)
       </Grid>
     );
   })
-  .add("Card List (configured)", () => {
+  .add("Card Grid (configured)", () => {
     return (
-      <CardList data={data} />
+      <CardGrid data={data} />
     );
   })
-  .add("Card List (containers-only)", () => {
+  .add("Card Grid (containers-only)", () => {
     return (
-      <CardList>
+      <CardGrid>
         <Card />
         <Card />
         <Card />
         <Card />
         <Card />
         <Card />
-      </CardList>
+      </CardGrid>
     );
   });

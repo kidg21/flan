@@ -144,7 +144,7 @@ const CardWrapper = styled.div`
   }
 `;
 
-const CardListWrapper = styled(Grid)`
+const CardGridWrapper = styled(Grid)`
   ${CardWrapper} {
     height: 100%;
     filter: ${(props) => {
@@ -162,7 +162,7 @@ const CardListWrapper = styled(Grid)`
   &:empty {
     &:before {
       ${PlaceholderText}
-      content: "{ CardList }";
+      content: "{ CardGrid }";
     }
   }
 `;
@@ -535,9 +535,9 @@ Card.defaultProps = {
   title: null,
 }
 
-function CardList({ children, className, columns, data, gap, id, inverse, rows, }) {
+function CardGrid({ children, className, columns, data, gap, id, inverse, rows, }) {
   return (
-    <CardListWrapper
+    <CardGridWrapper
       className={className}
       columns={columns}
       gap={gap}
@@ -565,11 +565,11 @@ function CardList({ children, className, columns, data, gap, id, inverse, rows, 
             />
           );
         })}
-    </CardListWrapper>
+    </CardGridWrapper>
   );
 }
 
-CardList.propTypes = {
+CardGrid.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   /** Defines the widths of grid columns
@@ -617,7 +617,7 @@ CardList.propTypes = {
    */
   rows: PropTypes.oneOf(["default (auto)", "[grid-template-rows]"])
 };
-CardList.defaultProps = {
+CardGrid.defaultProps = {
   children: null,
   className: null,
   columns: null,
@@ -627,4 +627,4 @@ CardList.defaultProps = {
   rows: null,
 }
 
-export { Card as default, CardSection, CardList };
+export { Card as default, CardSection, CardGrid };
