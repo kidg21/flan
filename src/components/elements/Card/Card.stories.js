@@ -18,8 +18,7 @@ const data = [
   {
     id: "a",
     type: "success",
-    media: "image",
-    mediaSource: ModernExterior1,
+    media: ModernExterior1,
     imageAlt: "ModernExterior 1",
     icon: "bookmark_solid",
     title: "First Card",
@@ -51,8 +50,7 @@ const data = [
   {
     id: "b",
     type: "alert",
-    media: "image",
-    mediaSource: ModernExterior2,
+    media: ModernExterior2,
     imageAlt: "ModernExterior 2",
     label: "GP",
     title: "Second Card",
@@ -72,8 +70,7 @@ const data = [
   {
     id: "c",
     type: "info",
-    media: "image",
-    mediaSource: ModernExterior3,
+    media: ModernExterior3,
     imageAlt: "ModernExterior 3",
     icon: "home",
     title: "Third Card",
@@ -120,13 +117,12 @@ storiesOf("Work|Card/Elements", module)
       <Card
         // inverse
         // type="info"
-        media="image"
-        mediaSource="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" // Image
+        media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" // Image
         imageAlt="Image Alt Text"
-        // mediaSource="https://www.w3schools.com/html/horse.mp3" // HTML5 Audio
-        // mediaSource="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" // HTML5 Video
-        // mediaSource="https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0" // Youtube
-        // mediaSource="https://player.vimeo.com/video/798022" // Vimeo
+        // media="https://www.w3schools.com/html/horse.mp3" // HTML5 Audio
+        // media="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" // HTML5 Video
+        // media="https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0" // Youtube
+        // media="https://player.vimeo.com/video/798022" // Vimeo
         title="Card Title"
         description="Card Description"
         // label="GP"
@@ -291,26 +287,14 @@ storiesOf("Work|Card/Elements", module)
           )
         }
         media={options(
-          "type",
+          "media",
           {
-            "no media": null,
-            "image": "image",
-            "audio": "audio",
-            "video": "video",
-            "iframe": "iframe",
-          },
-          null,
-          { display: "select" },
-          "Media",
-        )}
-        mediaSource={options(
-          "source",
-          {
-            "no source": null,
-            "image url": "https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg",
-            "audio url": "https://www.w3schools.com/html/horse.mp3",
-            "video url": "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
-            "iframe url": "https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0",
+            "No Media": null,
+            "Image": "https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg",
+            "HTML5 Audio": "https://www.w3schools.com/html/horse.mp3",
+            "HTML5 Video": "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+            "Youtube": "https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0",
+            "Vimeo": "https://player.vimeo.com/video/798022",
           },
           null,
           { display: "select" },

@@ -47,6 +47,8 @@ const CardSectionWrapper = styled.section`
   }
 `;
 
+const mime = require('mime');
+
 const Media = styled(CardSectionWrapper)`
   height: ${(props) => {
     return props.image ? "12em" : "";
@@ -264,7 +266,6 @@ function Card({
   inverse,
   label,
   media,
-  mediaSource,
   more,
   onClick,
   padding,
@@ -343,62 +344,78 @@ function Card({
     }
   }
 
-  const mediaType = media ? media.toLowerCase() : "image";
+  const mimeType = mime.getType(media);
   let mediaSection;
-  if (mediaType === "image") {
-    mediaSection = (
-      <Media image>
-        <CardImage
-          src={mediaSource}
-          alt={imageAlt || `Card Image: ${mediaSource}`}
-          width="100%"
-        />
-      </Media>
-    )
-  } else if (mediaType === "audio") {
-    mediaSection = (
-      <CardSection>
-        <CardAudio controls>
-          <source
-            src={mediaSource}
-            type="audio/mp3"
+  if (mimeType) {
+    if (mimeType.startsWith("image")) {
+      mediaSection = (
+        <Media image>
+          <CardImage
+            src={media}
+            alt={imageAlt || `Card Image: ${media}`}
+            width="100%"
           />
-          <source
-            src={mediaSource}
-            type="audio/ogg"
-          />
-          <source
-            src={mediaSource}
-            type="audio/wav"
-          />
-          Your browser does not support the audio element.
-        </CardAudio>
-      </CardSection>
-    )
-  } else if (mediaType === "video") {
+        </Media>
+      )
+    } else if (mimeType.startsWith("video")) {
+      mediaSection = (
+        <Media>
+          <video width="100%" controls>
+            <source
+              src={media}
+              type="video/mp4"
+            />
+            <source
+              src={media}
+              type="video/webm"
+            />
+            <source
+              src={media}
+              type="video/ogg"
+            />
+            Your browser does not support the video element.
+            </video>
+        </Media>
+      )
+    } else if (mimeType.startsWith("audio")) {
+      mediaSection = (
+        <CardSection>
+          <CardAudio controls>
+            <source
+              src={media}
+              type="audio/mp3"
+            />
+            <source
+              src={media}
+              type="audio/ogg"
+            />
+            <source
+              src={media}
+              type="audio/wav"
+            />
+            Your browser does not support the audio element.
+          </CardAudio>
+        </CardSection>
+      )
+      // Currently redundant to the 'else' case
+      // but captured should we need to handle
+      // supported mime-types in a specific way 
+    } else if
+      (
+      mimeType.startsWith("text") ||
+      mimeType.startsWith("application")
+    ) {
+      mediaSection = (
+        <Media>
+          <iframe src={media} width="100%" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
+        </Media>
+      )
+    }
+    // Fallback for Youtube, Vimeo and other unsupported mime-types
+  } else {
     mediaSection = (
       <Media>
-        <video width="100%" controls>
-          <source
-            src={mediaSource}
-            type="video/mp4"
-          />
-          <source
-            src={mediaSource}
-            type="video/webm"
-          />
-          <source
-            src={mediaSource}
-            type="video/ogg"
-          />
-          Your browser does not support the video element.
-        </video>
-      </Media>
-    )
-  } else if (mediaType === "iframe") {
-    mediaSection = (
-      <Media>
-        <iframe src={mediaSource} width="100%" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
+        <iframe src={media} width="100%" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
       </Media>
     )
   }
@@ -462,11 +479,9 @@ function Card({
       id={id}
       inverse={inverse}
       media={media}
-      mediaSource={mediaSource}
-      mediaType={mediaType}
       shadow={shadow}
     >
-      {mediaSource ? mediaSection : null}
+      {media ? mediaSection : null}
       {headerSection}
       {body ? (
         <CardSection onClick={onClick}>
@@ -480,7 +495,6 @@ function Card({
 }
 
 Card.propTypes = {
-  audio: PropTypes.string,
   body: PropTypes.string,
   children: PropTypes.node,
   className: PropTypes.string,
@@ -495,20 +509,15 @@ Card.propTypes = {
   id: PropTypes.string,
   inverse: PropTypes.bool,
   label: PropTypes.string,
-  image: PropTypes.string,
   imageAlt: PropTypes.string,
-  mediaHeader: PropTypes.bool,
+  media: PropTypes.string,
   more: PropTypes.node,
   onClick: PropTypes.func,
   padding: PropTypes.oneOf(["0", "1x", "2x", "3x", "4x"]),
   shadow: PropTypes.oneOf(["none", "standard", "2x"]),
   title: PropTypes.string,
-  video: PropTypes.string,
-  vimeo: PropTypes.string,
-  youtube: PropTypes.string,
 };
 Card.defaultProps = {
-  audio: null,
   body: null,
   children: null,
   className: null,
@@ -518,16 +527,12 @@ Card.defaultProps = {
   id: null,
   inverse: null,
   label: null,
-  image: null,
   imageAlt: null,
-  mediaHeader: null,
+  media: null,
   more: null,
   padding: null,
   shadow: null,
   title: null,
-  video: null,
-  vimeo: null,
-  youtube: null,
 }
 
 function CardList({ children, className, columns, data, gap, id, inverse, rows, }) {
@@ -553,7 +558,6 @@ function CardList({ children, className, columns, data, gap, id, inverse, rows, 
               key={item.id}
               label={item.label}
               media={item.media}
-              mediaSource={item.mediaSource}
               more={item.more}
               onClick={item.onClick}
               title={item.title}
