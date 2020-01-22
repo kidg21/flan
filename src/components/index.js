@@ -11,7 +11,7 @@ export {
 export { default as GlobalStyles } from "./base/GlobalStyles/GlobalStyles.jsx";
 
 // Publicly exported files from 'atoms'
-// export { default as Avatar } from "./atoms/Avatar";
+export { default as Avatar } from "./atoms/Avatar";
 export { default as Label } from "./atoms/Label";
 export { default as Badge } from "./atoms/Badge";
 export { default as Button } from "./atoms/Button";
@@ -66,7 +66,7 @@ export { default as Grid } from "./layout/Grid";
 export { default as Layout } from "./layout/Layout";
 export { default as Modal } from "./layout/Modal";
 export { default as Page } from "./layout/Page";
-export { default as Panel, PanelSection } from "./layout/Panel";
+export { default as Panel } from "./layout/Panel";
 
 export { default as Expander } from "./utils/Expander";
 

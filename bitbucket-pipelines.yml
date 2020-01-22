@@ -33,20 +33,11 @@ pipelines:
             # Next line fails immediately if any command fails
             - npm run test-coverage | npm run push-coverage
             - set +o pipefail
-            # Build code to push
-            - npm run build
-          artifacts:
-            - Bundles/**
       - step:
-          name: Push Bundle File & Version Tag
+          name: Tag Package Version
           script:
             # Get version number from package.json
             - declare -x VERSION=$(node -p -e "require('./package.json').version")
-            - echo -e "Pipeline Build - ${BITBUCKET_BUILD_NUMBER}\nPackage Version - ${VERSION}\nCommit Hash - ${BITBUCKET_COMMIT}" > changes.txt
-            - git add changes.txt
-            - git add Bundles/lbreactcore.js
-            - git commit -m "[skip ci] Updating changes.txt & latest bundle in lb-react-core repo"
-            - git push origin $BITBUCKET_BRANCH
             # Create/Push tag to commit
             # if tag already exists, it does not retag
             - set +e # disables exiting if error occurs
@@ -79,21 +70,17 @@ pipelines:
           artifacts:
             - Bundles/**
       - step:
-          name: Push Bundle File & Version Tag
+          name: Push Bundle File
           script:
             # Get version number from package.json
             - declare -x VERSION=$(node -p -e "require('./package.json').version")
+             # Generate build metadata
             - echo -e "Pipeline Build - ${BITBUCKET_BUILD_NUMBER}\nPackage Version - ${VERSION}\nCommit Hash - ${BITBUCKET_COMMIT}" > changes.txt
+            # Push bundled file and commit info
             - git add changes.txt
             - git add Bundles/lbreactcore.js
             - git commit -m "[skip ci] Updating changes.txt & latest bundle in lb-react-core repo"
             - git push origin $BITBUCKET_BRANCH
-            # Create/Push tag to commit
-            # if tag already exists, it does not retag
-            - set +e # disables exiting if error occurs
-            - git tag $VERSION
-            - git push origin $VERSION $BITBUCKET_BRANCH
-            - set -e 
   tags:
     # Tagging a branch "test" will also cause it to generate Code Coverage (this is only really useful for ensuring the build instructions work)
     test:

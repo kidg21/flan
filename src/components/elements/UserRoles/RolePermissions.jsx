@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
 import Bar from "blocks/Bar";
 import Container from "atoms/Container";
-import Panel, { PanelSection } from "layout/Panel";
+import Panel from "layout/Panel";
 import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";
 import Button from "atoms/Button";
@@ -188,35 +188,31 @@ const RolePermissions = React.forwardRef(({
   if (childElements && !(childElements instanceof Array)) childElements = [childElements];
 
   return (
-    <Panel style={style}>
-      <PanelSection header>
-        <MainPanelHeader title={title} menuData={commands} />
-      </PanelSection>
-      <PanelSection body style={panelStyle}>
-        <Bar
-          left={<TextInput type="search" placeholder="Search for a Role" onChange={onSearch} inputStyle={{ boxSizing: "border-box " }} />}
-          right={right}
-        />
-        <Container height={listHeight} ref={ref} >
-          {activeRoles.filter((role) => {
-            return filter ? role.name.toLowerCase().includes(filter) : true;
-          }).map((role) => {
-            return (<RoleEntry
-              key={role.role}
-              role={role}
-              onChange={onRoleChange}
-              editRole={editRole}
-              folderPadding={folderPadding}
-              selectWidth={selectWidth}
-            />);
-          })}
-        </Container>
-      </PanelSection>
+    <Panel
+      style={panelStyle}
+      header={<MainPanelHeader title={title} menuData={commands} />}
+    >
+      <Bar
+        left={<TextInput type="search" placeholder="Search for a Role" onChange={onSearch} inputStyle={{ boxSizing: "border-box " }} />}
+        right={right}
+      />
+      <Container height={listHeight} ref={ref} >
+        {activeRoles.filter((role) => {
+          return filter ? role.name.toLowerCase().includes(filter) : true;
+        }).map((role) => {
+          return (<RoleEntry
+            key={role.role}
+            role={role}
+            onChange={onRoleChange}
+            editRole={editRole}
+            folderPadding={folderPadding}
+            selectWidth={selectWidth}
+          />);
+        })}
+      </Container>
       {childElements ? childElements.map((child) => {
         return (
-          <PanelSection>
-            {child}
-          </PanelSection>
+          { child }
         );
       }) : null}
     </Panel>
