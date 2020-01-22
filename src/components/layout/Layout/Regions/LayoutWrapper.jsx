@@ -10,6 +10,7 @@ import { PlaceholderText } from "helpers/Placeholders.jsx";
 
 const FlexWrapper = styled.div`
   display: flex;
+  order: 0;
   height: 100%;
   width: 100%;
   border-top: 1px solid ${(props) => {

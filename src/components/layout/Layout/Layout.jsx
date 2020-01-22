@@ -10,7 +10,7 @@ import Panel from "layout/Panel";
 import Header from "./Regions/Header.jsx";
 import Icon from "atoms/Icon";
 import Sidebar from "./Regions/Sidebar.jsx";
-import RightScreen from "./Regions/RightScreen.jsx";
+import RightBar from "./Regions/Rightbar.jsx";
 import LayoutWrapper from "./Regions/LayoutWrapper.jsx";
 
 
@@ -37,9 +37,11 @@ padding: 1em;
 z-index: 100;
 `;
 
+
 function Layout({
   leftContent,
   rightContent,
+  headerContent,
   mainContent,
 }) {
   const [leftVisible, setLeftVisible] = useState(false);
@@ -57,6 +59,7 @@ function Layout({
       <Header
         rightClick={seeRightbar}
         logoClick={seeSidebar}
+        headerContent={headerContent}
       />
       <ReactWrapper>
         {leftVisible ? <Sidebar visible={leftVisible} > <Panel>{leftContent} </Panel>  </Sidebar> : null}
@@ -66,19 +69,22 @@ function Layout({
         </LayoutWrapper>
         {rightVisible ?
           (
-            <RightScreen visible={rightVisible} >
+            <RightBar visible={rightVisible} >
               <Panel>
                 <Exit icon="close" onClick={seeRightbar} />
                 {rightContent}
               </Panel>
-            </RightScreen>) : null
+            </RightBar>) : null
         }
+
       </ReactWrapper >
     </Base >
   );
 }
 
+
 Layout.propTypes = {
+  headerContent: PropTypes.node,
   leftContent: PropTypes.node,
   rightContent: PropTypes.node,
   mainContent: PropTypes.node,
@@ -87,6 +93,7 @@ Layout.propTypes = {
 };
 
 Layout.defaultProps = {
+  headerContent: null,
   leftContent: null,
   rightContent: null,
   mainContent: null,

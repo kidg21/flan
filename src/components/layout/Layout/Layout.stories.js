@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 
 import Layout from "./Layout.jsx";
+import Modal from "layout/Modal";
+import Banner from "blocks/Banner";
 
 const LayoutNotes = markdown.require("./Layout.md");
 

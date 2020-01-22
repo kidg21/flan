@@ -9,6 +9,7 @@ import { PlaceholderText } from "helpers/Placeholders.jsx";
 
 const FlexWrapper = styled.div`
   display: flex;
+  order: 0;
   background: blue;
   transition: all 1s ease-in-out;
   @media ${screen.small} {
