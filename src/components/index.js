@@ -2,7 +2,8 @@
 /* eslint-disable react/jsx-filename-extension */
 // Publicly exported files from 'base'
 export {
-  default as Title,
+  default as Text,
+  Title,
   Link,
   Label,
 } from "./base/Typography";
@@ -62,7 +63,7 @@ export { default as Grid } from "./layout/Grid";
 export { default as Layout } from "./layout/Layout";
 export { default as Modal } from "./layout/Modal";
 export { default as Page } from "./layout/Page";
-export { default as Panel, PanelSection } from "./layout/Panel";
+export { default as Panel } from "./layout/Panel";
 
 export { default as Expander } from "./utils/Expander";
 

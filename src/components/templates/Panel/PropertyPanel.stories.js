@@ -5,7 +5,7 @@ import React from "react";
 import PropertyPanelHeader from "elements/PanelHeaders/PropertyPanelHeader";
 import Legend from "blocks/Legend";
 import Card from "elements/Card";
-import Panel, { PanelSection } from "layout/Panel";
+import Panel from "layout/Panel";
 import List, { ListItem } from "blocks/List";
 
 const lotData = [
@@ -68,43 +68,41 @@ const data = [
 
 storiesOf("Templates|Panel", module).add("Property Panel", () => {
   return (
-    <Panel>
-      <PanelSection>
+    <Panel
+      header={
         <PropertyPanelHeader
           title="2801 Kelvin Avenue, Irvine, CA 92614"
           APN="374-342-8957"
           menuData={data}
-          onClick={() => {}}
+          onClick={() => { }}
         />
-      </PanelSection>
-      <PanelSection body>
-        <Card
-          body={
-            <React.Fragment>
-              <Legend title="Lot" data={lotData} />
-              <Legend title="Owner" data={ownerData} />
-              <Legend title="Building" data={buildingData} />
-            </React.Fragment>
-          }
+      }
+    >
+      <Card
+        body={
+          <React.Fragment>
+            <Legend title="Lot" data={lotData} />
+            <Legend title="Owner" data={ownerData} />
+            <Legend title="Building" data={buildingData} />
+          </React.Fragment>
+        }
+      />
+      <List interactive>
+        <ListItem
+          label="Demographics"
+          description="This is the description"
         />
-
-        <List interactive>
-          <ListItem
-            label="Demographics"
-            description="This is the description"
-          />
-          <ListItem label="Education" description="This is the description" />
-          <ListItem label="Topography" description="This is the description" />
-          <ListItem label="Crime Rates" description="This is the description" />
-          <ListItem label="Elevation" description="This is the description" />
-          <ListItem label="Population" description="This is the description" />
-          <ListItem label="Income" description="This is the description" />
-          <ListItem
-            label="Opportunity Zones"
-            description="This is the description"
-          />
-        </List>
-      </PanelSection>
+        <ListItem label="Education" description="This is the description" />
+        <ListItem label="Topography" description="This is the description" />
+        <ListItem label="Crime Rates" description="This is the description" />
+        <ListItem label="Elevation" description="This is the description" />
+        <ListItem label="Population" description="This is the description" />
+        <ListItem label="Income" description="This is the description" />
+        <ListItem
+          label="Opportunity Zones"
+          description="This is the description"
+        />
+      </List>
     </Panel>
   );
 });

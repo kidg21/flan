@@ -5,7 +5,7 @@ import { screen } from "Variables";
 import Tabs, { Tab } from "blocks/Tabs";
 import Card, { CardList } from "layout/Card";
 import Layout from "layout/Layout";
-import Panel, { PanelSection } from "layout/Panel";
+import Panel from "layout/Panel";
 import Form, { Section } from "layout/Form";
 import TextInput from "atoms/TextInput";
 import { CheckboxGroup } from "atoms/Checkbox";
@@ -359,53 +359,51 @@ storiesOf("Layout |App Layout/", module)
           <Layout id="inner" type="innerWrapper" state={innerState}>
             <Layout id="left" type="leftWrapper">
               <Panel>
-                <PanelSection body>
-                  <Form
-                    title="Form Header"
-                    subtitle="This is the subtitle"
-                    description="Just think about these things in your mind - then bring them into your world. Isn't that fantastic?  All you need to paint is a few tools, a little instruction, and a vision in your mind."
-                  >
-                    <Section title="Group 1">
-                      <TextInput
-                        label="First Name"
-                        placeholder="John"
-                        helpText="The one that your parents gave you"
-                      />
-                      <TextInput
-                        label="Last Name"
-                        placeholder="Williams"
-                        helpText="The one that comes after.."
-                      />
-                    </Section>
-                    <Section title="Group 2">
-                      <CheckboxGroup
-                        id="Section Name"
-                        label="Checkbox Group Label"
-                        data={shortBoxes}
-                        helpText="Hang in there, buddy, I'm here to help!"
-                        columns="2"
-                      />
-                      <CheckboxGroup data={longBoxes} columns="1" />
-                      <SelectMenu
-                        multiSelect
-                        label="Multi-Select"
-                        placeholder="Choose One Or More..."
-                        helpText="Help text for the SelectMenu component"
-                        options={options}
-                      />
-                    </Section>
-                    <Section title="Group 3">
-                      <RadioGroup
-                        id="Section Name"
-                        label="Radio Group Label"
-                        data={shortRadios}
-                        helpText="Hang in there, buddy, I'm here to help!"
-                        columns="2"
-                      />
-                      <RadioGroup data={longRadios} columns="1" />
-                    </Section>
-                  </Form>
-                </PanelSection>
+                <Form
+                  title="Form Header"
+                  subtitle="This is the subtitle"
+                  description="Just think about these things in your mind - then bring them into your world. Isn't that fantastic?  All you need to paint is a few tools, a little instruction, and a vision in your mind."
+                >
+                  <Section title="Group 1">
+                    <TextInput
+                      label="First Name"
+                      placeholder="John"
+                      helpText="The one that your parents gave you"
+                    />
+                    <TextInput
+                      label="Last Name"
+                      placeholder="Williams"
+                      helpText="The one that comes after.."
+                    />
+                  </Section>
+                  <Section title="Group 2">
+                    <CheckboxGroup
+                      id="Section Name"
+                      label="Checkbox Group Label"
+                      data={shortBoxes}
+                      helpText="Hang in there, buddy, I'm here to help!"
+                      columns="2"
+                    />
+                    <CheckboxGroup data={longBoxes} columns="1" />
+                    <SelectMenu
+                      multiSelect
+                      label="Multi-Select"
+                      placeholder="Choose One Or More..."
+                      helpText="Help text for the SelectMenu component"
+                      options={options}
+                    />
+                  </Section>
+                  <Section title="Group 3">
+                    <RadioGroup
+                      id="Section Name"
+                      label="Radio Group Label"
+                      data={shortRadios}
+                      helpText="Hang in there, buddy, I'm here to help!"
+                      columns="2"
+                    />
+                    <RadioGroup data={longRadios} columns="1" />
+                  </Section>
+                </Form>
               </Panel>
             </Layout>
 
@@ -415,44 +413,43 @@ storiesOf("Layout |App Layout/", module)
               </Layout>
 
               <Layout id="bottom" type="bottomWrapper" state={bottomState}>
-                <Panel>
-                  <PanelSection>
+                <Panel
+                  header={
                     <Card>
                       <Tabs>
                         <Tab tabLabel="List" onClick={toggleBottomFullscreen} />
                       </Tabs>
                     </Card>
-                  </PanelSection>
-                  <PanelSection body>
-                    <CardList>
-                      <Card />
-                      <Card />
-                      <Card />
-                      <Card />
-                      <Card />
-                      <Card />
-                      <Card />
-                      <Card />
-                      <Card />
-                      <Card />
-                      <Card />
-                      <Card />
-                    </CardList>
-                  </PanelSection>
+                  }
+                >
+                  <CardList>
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                  </CardList>
                 </Panel>
               </Layout>
             </Layout>
 
             <Layout id="right" type="rightWrapper" state={rightState}>
-              <Panel>
-                <PanelSection>
+              <Panel
+                header={
                   <Card>
                     <Tabs>
                       <Tab tabLabel="Filters" onClick={toggleRightFullscreen} />
                     </Tabs>
                   </Card>
-                </PanelSection>
-              </Panel>
+                }
+              />
             </Layout>
           </Layout>
 
@@ -463,36 +460,36 @@ storiesOf("Layout |App Layout/", module)
                 tabLabel="Property"
                 onClick={toggleLeft}
                 isSelected={activeLeft}
-                // noBorder
+              // noBorder
               />
               <Tab
                 icon="layers"
                 tabLabel="Layers"
-                // onClick={toggleLeft}
-                // isSelected={activeLeft}
-                // noBorder
+              // onClick={toggleLeft}
+              // isSelected={activeLeft}
+              // noBorder
               />
               <Tab
                 icon="filter"
                 tabLabel="Filters"
                 onClick={toggleRight}
                 isSelected={activeRight}
-                // noBorder
+              // noBorder
               />
 
               <Tab
                 icon="drawings"
                 tabLabel="Draw"
-                // onClick={toggleLeft}
-                // isSelected={activeLeft}
-                // noBorder
+              // onClick={toggleLeft}
+              // isSelected={activeLeft}
+              // noBorder
               />
               <Tab
                 icon="list"
                 tabLabel="List"
                 onClick={toggleBottom}
                 isSelected={activeBottom}
-                // noBorder
+              // noBorder
               />
             </Tabs>
           </Layout>
