@@ -40,7 +40,7 @@ const TagContainer = styled.div`
 `;
 
 function Avatar({
-  type, disabled, icon, id, src, alt, image, label, onClick, size,
+  type, icon, id, disabled, src, alt, image, label, onClick, size,
 }) {
   let labelType;
   let iconType;
@@ -81,10 +81,6 @@ function Avatar({
   const backgroundColor = type ? (typeHash[type] || type.toLowerCase()) : "primaryLight";
   const textColor = type ? `${type.toLowerCase()}Tint` : "white";
 
-
-  if (disabled) {
-    backgroundColor = "grey3";
-  }
 
   if (image) {
     iconType = (<Image

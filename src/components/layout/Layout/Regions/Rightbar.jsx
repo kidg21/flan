@@ -2,7 +2,6 @@
 /* eslint-disable security/detect-object-injection */
 import React from "react";
 import PropTypes from "prop-types";
-import Panel from "layout/Panel";
 import { screen } from "Variables";
 import Icon from "atoms/Icon";
 import Bar from "blocks/Bar";
@@ -11,7 +10,6 @@ import { PlaceholderText } from "helpers/Placeholders.jsx";
 
 
 const FlexWrapper = styled.div`
-  display: flex;
   border-left: 1px solid ${(props) => {
     return props.theme.palette.grey5;
   }};
@@ -19,23 +17,29 @@ const FlexWrapper = styled.div`
   right: 0;
   @media ${screen.small} {
     width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 500;
     transform: ${(props) => {
     return props.visible ? "translateX(0%)" : "translateX(100%)";
   }};
   }
   @media ${screen.medium} {
+    display: flex;
     width: 100%;
     transform: ${(props) => {
     return props.visible ? "translateX(0%)" : "translateX(100%)";
   }};
   }
   @media ${screen.large} {
+    display: flex;
     transform: ${(props) => {
     return props.visible ? "translateX(0%)" : "translateX(100%)";
   }};
   width: 20%;
 }
   @media ${screen.xlarge} {
+    display: flex;
     transform: ${(props) => {
     return props.visible ? "translateX(0%)" : "translateX(100%)";
   }};

@@ -8,18 +8,21 @@ import { PlaceholderText } from "helpers/Placeholders.jsx";
 
 
 const FlexWrapper = styled.div`
-  display: flex;
   border-right: 1px solid ${(props) => {
     return props.theme.palette.grey5;
   }};
   transition: all 0.25s ease-in-out;
   @media ${screen.small} {
+    position: fixed;
+    z-index: 500;
+    height: 100%;
     width: 100%;
     transform: ${(props) => {
     return props.visible ? "translateX(0%)" : "translateX(-100%)";
   }};
   }
   @media ${screen.medium} {
+    display: flex;
     transform: ${(props) => {
     return props.visible ? "translateX(0%)" : "translateX(-100%)";
   }};
@@ -27,12 +30,14 @@ const FlexWrapper = styled.div`
   }
 
   @media ${screen.large} {
+    display: flex;
     transform: ${(props) => {
     return props.visible ? "translateX(0%)" : "translateX(-100%)";
   }};
   width: 20%;
   }
   @media ${screen.xlarge} {
+    display: flex;
     transform: ${(props) => {
     return props.visible ? "translateX(0%)" : "translateX(-100%)";
   }};
