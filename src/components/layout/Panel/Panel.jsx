@@ -72,7 +72,7 @@ PanelBody.defaultProps = {
   className: null,
 };
 
-export const PanelSection = styled(PanelBody)`
+const PanelSection = styled(PanelBody)`
   flex: none;
   padding: 0;
   overflow: hidden;
