@@ -84,9 +84,9 @@ const Image = styled.img`
 `;
 
 const ModalContainer = styled.div`
-  position: absolute;
+  position: fixed;
   display: ${(props) => { return (props.visible ? "flex" : "none"); }};
-  z-index: 5005;
+  z-index: 1005;
   top: 0px;
   right: 0px;
   bottom: 0px;

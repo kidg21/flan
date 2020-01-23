@@ -1,10 +1,22 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Header from "./Regions/Header.jsx";
 import Sidebar from "./Regions/Sidebar.jsx";
+import Bar from "blocks/Bar";
 import RightBar from "./Regions/Rightbar.jsx";
 import LayoutWrapper from "./Regions/LayoutWrapper.jsx";
+import Avatar from "atoms/Avatar";
+import LightBoxIcon from "images/LightBoxIconLogo.png";
+import Icon from "atoms/Icon";
+
+
+const Header = styled(Bar)`
+  top: 0;
+  border-bottom: 1px solid ${(props) => {
+    return props.theme.palette.grey5;
+  }};
+ 
+`;
 
 
 const ReactWrapper = styled.div`
@@ -43,19 +55,31 @@ function Layout({
     seeRightbar = () => { setRightVisible(!rightVisible); };
   }
 
+
   return (
     <Base>
       <Header
-        rightClick={seeRightbar}
-        logoClick={seeSidebar}
-        headerContent={header}
+        contentAlign="center"
+        padding="2x"
+        left={<Avatar
+          onClick={seeSidebar}
+          image
+          src={LightBoxIcon}
+          alt="logo"
+        />}
+        right={<Icon
+          size="lg"
+          icon="settings"
+          onClick={seeRightbar}
+        />}
+        center={header}
       />
       <ReactWrapper>
-        {left ? <Sidebar visible={leftVisible} > {left.content} </Sidebar> : null}
+        {leftVisible ? <Sidebar visible={leftVisible} > {left.content} </Sidebar> : null}
         <LayoutWrapper >
           {main}
         </LayoutWrapper>
-        {right ? <RightBar visible={rightVisible}> {right.content} </RightBar> : null}
+        {rightVisible ? <RightBar visible={rightVisible}> {right.content} </RightBar> : null}
       </ReactWrapper >
     </Base >
   );

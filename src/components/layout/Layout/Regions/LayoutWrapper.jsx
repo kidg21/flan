@@ -2,8 +2,6 @@
 /* eslint-disable security/detect-object-injection */
 import React from "react";
 import PropTypes from "prop-types";
-import Panel from "layout/Panel";
-import { screen } from "Variables";
 import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 
@@ -11,7 +9,13 @@ import { PlaceholderText } from "helpers/Placeholders.jsx";
 const FlexWrapper = styled.div`
   display: flex;
   height: 100%;
-  width: 100%;
+  transition: all 0.25s ease-in-out;
+  background: ${(props) => {
+    return props.theme.background.app;
+  }};
+  width: ${(props) => {
+    return props.weight || "100%";
+  }};
   &:empty {
     &:before {
       ${PlaceholderText};
@@ -26,13 +30,11 @@ const FlexWrapper = styled.div`
 
 function LayoutWrapper({
   children,
-  width,
 
   id,
 }) {
   return (
     <FlexWrapper
-      width={width}
       id={id}
     >
       {children}
@@ -43,14 +45,11 @@ function LayoutWrapper({
 LayoutWrapper.propTypes = {
   children: PropTypes.node,
   id: PropTypes.string,
-  width: PropTypes.node,
-
 };
 
 LayoutWrapper.defaultProps = {
   children: null,
   id: null,
-  width: null,
 
 };
 

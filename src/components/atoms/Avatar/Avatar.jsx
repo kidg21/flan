@@ -6,7 +6,6 @@ import styled from "styled-components";
 import Icon from "atoms/Icon";
 import Image from "atoms/Image";
 import Title from "base/Typography";
-import { DisabledContext } from "States";
 
 const AvatarText = styled(Title)`
   color: inherit;
@@ -41,7 +40,7 @@ const TagContainer = styled.div`
 `;
 
 function Avatar({
-  type, icon, id, disabled, src, alt, image, label, onClick, size,
+  type, icon, id, src, alt, image, label, onClick, size,
 }) {
   let labelType;
   let iconType;
@@ -65,9 +64,9 @@ function Avatar({
     },
   };
 
-  const avatarSize = (size && sizeHash[size.toLowerCase()]) || "2.5em";
-  const fontSize = (size && sizeHash[size.toLowerCase()]) || "1em";
-
+  const selectedSize = size && sizeHash[size.toLowerCase()];
+  const avatarSize = selectedSize ? selectedSize.avatar : "2.5rem";
+  const fontSize = selectedSize ? selectedSize.font : "1em";
 
   const typeHash = {
     success: "success",
@@ -82,15 +81,11 @@ function Avatar({
   const backgroundColor = type ? (typeHash[type] || type.toLowerCase()) : "primaryLight";
   const textColor = type ? `${type.toLowerCase()}Tint` : "white";
 
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (isDisabled) type = "disabled";
-
-
   if (image) {
     iconType = (<Image
       circle
       src={src}
+      height={avatarSize}
       width={avatarSize}
       alt={alt}
     />);
@@ -121,7 +116,6 @@ function Avatar({
 Avatar.propTypes = {
   /** Options: 'primary', 'secondary', 'info', 'success', 'warning', 'alert' */
   type: PropTypes.string,
-  disabled: PropTypes.bool,
   /** Enter the name of the icon as the prop value. (ex. icon='circle' */
   icon: PropTypes.string,
   image: PropTypes.node,
@@ -135,7 +129,6 @@ Avatar.propTypes = {
 
 Avatar.defaultProps = {
   type: null,
-  disabled: false,
   image: null,
   src: null,
   alt: null,
