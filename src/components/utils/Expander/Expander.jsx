@@ -43,9 +43,12 @@ function Expander({
   id,
   header,
   children,
-  initOpen,
+  open,
+  onClick,
 }) {
-  const [isOpen, setIsOpen] = useState(initOpen);
+  let isOpen = open;
+  let setIsOpen = onClick;
+  if (!setIsOpen) [isOpen, setIsOpen] = useState(isOpen);
   return (
     <AccordionFunction
       id={id}
@@ -79,14 +82,16 @@ Expander.propTypes = {
   children: PropTypes.node,
   header: PropTypes.node,
   id: PropTypes.string,
-  initOpen: PropTypes.bool,
+  onClick: PropTypes.func,
+  open: PropTypes.bool,
 };
 
 Expander.defaultProps = {
   children: null,
   header: null,
   id: "",
-  initOpen: false,
+  onClick: null,
+  open: false,
 };
 
 export default Expander;

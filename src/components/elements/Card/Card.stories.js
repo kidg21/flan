@@ -19,7 +19,7 @@ const data = [
     id: "a",
     type: "success",
     media: ModernExterior1,
-    imageAlt: "ModernExterior 1",
+    mediaDesc: "ModernExterior 1",
     icon: "bookmark_solid",
     title: "First Card",
     description: "Card Description Goes Here",
@@ -51,7 +51,7 @@ const data = [
     id: "b",
     type: "alert",
     media: ModernExterior2,
-    imageAlt: "ModernExterior 2",
+    mediaDesc: "ModernExterior 2",
     label: "GP",
     title: "Second Card",
     body: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
@@ -71,7 +71,7 @@ const data = [
     id: "c",
     type: "info",
     media: ModernExterior3,
-    imageAlt: "ModernExterior 3",
+    mediaDesc: "ModernExterior 3",
     icon: "home",
     title: "Third Card",
     description: "Nothing To See Here",
@@ -80,27 +80,22 @@ const data = [
       {
         id: "Command One",
         label: "Command One",
-        name: "Command One",
       },
       {
         id: "Command Two",
         label: "Command Two",
-        name: "Command Two",
       },
       {
         id: "Command Three",
         label: "Command Three",
-        name: "Command Three",
       },
       {
         id: "Command Four",
         label: "Command Four",
-        name: "Command Four",
       },
       {
         id: "Command Five",
         label: "Command Five",
-        name: "Command FiveCommand Five CommandFiveCommand Five",
       },
     ],
     more: <Button label="Button" type="solid" />,
@@ -118,7 +113,7 @@ storiesOf("Work|Card/Elements", module)
         // inverse
         // type="info"
         media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" // Image
-        imageAlt="Image Alt Text"
+        mediaDesc="Media Description"
         // media="https://www.w3schools.com/html/horse.mp3" // HTML5 Audio
         // media="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" // HTML5 Video
         // media="https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0" // Youtube
@@ -132,31 +127,26 @@ storiesOf("Work|Card/Elements", module)
           {
             id: "Command One",
             label: "Command One",
-            name: "Command One",
             onClick: action("Command One Clicked"),
           },
           {
             id: "Command Two",
             label: "Command Two",
-            name: "Command Two",
             onClick: action("Command Two Clicked"),
           },
           {
             id: "Command Three",
             label: "Command Three",
-            name: "Command Three",
             onClick: action("Command Three Clicked"),
           },
           {
             id: "Command Four",
             label: "Command Four",
-            name: "Command Four",
             onClick: action("Command Four Clicked"),
           },
           {
             id: "Command Five",
             label: "Command Five",
-            name: "Command FiveCommand Five CommandFiveCommand Five",
             onClick: action("Command Five Clicked"),
           },
         ]}
@@ -255,31 +245,26 @@ storiesOf("Work|Card/Elements", module)
               {
                 id: "Command One",
                 label: "Command One",
-                name: "Command One",
                 onClick: action("Command One Clicked"),
               },
               {
                 id: "Command Two",
                 label: "Command Two",
-                name: "Command Two",
                 onClick: action("Command Two Clicked"),
               },
               {
                 id: "Command Three",
                 label: "Command Three",
-                name: "Command Three",
                 onClick: action("Command Three Clicked"),
               },
               {
                 id: "Command Four",
                 label: "Command Four",
-                name: "Command Four",
                 onClick: action("Command Four Clicked"),
               },
               {
                 id: "Command Five",
                 label: "Command Five",
-                name: "Command FiveCommand Five CommandFiveCommand Five",
                 onClick: action("Command Five Clicked"),
               },
             ],
@@ -300,9 +285,9 @@ storiesOf("Work|Card/Elements", module)
           { display: "select" },
           "Media",
         )}
-        imageAlt={
-          boolean("alt image text", false, "Media") &&
-          text("alt image text", "Image Description", "Media")
+        mediaDesc={
+          boolean("media description", false, "Media") &&
+          text("media description", "Media Description", "Media")
         }
       />
     );

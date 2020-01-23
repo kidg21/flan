@@ -1,4 +1,6 @@
+/* eslint-disable jsx-a11y/media-has-caption */
 /* eslint-disable linebreak-style */
+/* eslint-disable complexity */
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
@@ -47,7 +49,7 @@ const CardSectionWrapper = styled.section`
   }
 `;
 
-const mime = require('mime');
+const mime = require("mime");
 
 const Media = styled(CardSectionWrapper)`
   height: ${(props) => {
@@ -167,15 +169,20 @@ const CardGridWrapper = styled(Grid)`
   }
 `;
 
-function ExpandingSection({ description, icon, id, label, more, open, rotation, title, }) {
+function ExpandingSection({
+  description, icon, id, label, more, onClick, open, title,
+}) {
+  let rotation;
   if (open) {
-    rotation = "180"
+    rotation = "180";
   } else {
-    rotation = "0"
+    rotation = "0";
   }
   return (
     <Expander
       id={id}
+      onClick={onClick}
+      open={open}
       header={
         title || description || label || icon ? (
           <Bar
@@ -193,7 +200,7 @@ function ExpandingSection({ description, icon, id, label, more, open, rotation, 
             }
             rightWidth="max-content"
             right={more ? <Icon icon="up" size="lg" rotation={rotation} /> : null}
-          ></Bar>
+          />
         ) : null}
     >
       {more}
@@ -201,7 +208,30 @@ function ExpandingSection({ description, icon, id, label, more, open, rotation, 
   );
 }
 
-function CardSection({ children, className, footer, header, id, onClick, padding, type, }) {
+ExpandingSection.propTypes = {
+  description: PropTypes.node,
+  icon: PropTypes.string,
+  id: PropTypes.string,
+  label: PropTypes.string,
+  more: PropTypes.string,
+  onClick: PropTypes.func,
+  open: PropTypes.bool,
+  title: PropTypes.string,
+};
+ExpandingSection.defaultProps = {
+  description: null,
+  icon: null,
+  id: null,
+  label: null,
+  more: null,
+  onClick: null,
+  open: false,
+  title: null,
+};
+
+function CardSection({
+  children, className, footer, header, id, onClick, padding, type,
+}) {
   let sectionColor;
   let sectionBackground;
   if (type) {
@@ -242,17 +272,23 @@ function CardSection({ children, className, footer, header, id, onClick, padding
 CardSection.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
+  footer: PropTypes.string,
+  header: PropTypes.string,
   id: PropTypes.string,
   padding: PropTypes.oneOf(["0", "1x", "2x", "3x", "4x"]),
   onClick: PropTypes.func,
+  type: PropTypes.string,
 };
 CardSection.defaultProps = {
   children: null,
   className: null,
+  footer: null,
+  header: null,
   id: null,
   padding: null,
   onClick: null,
-}
+  type: null,
+};
 
 function Card({
   body,
@@ -262,7 +298,7 @@ function Card({
   description,
   icon,
   id,
-  imageAlt,
+  mediaDesc,
   inverse,
   label,
   media,
@@ -320,27 +356,28 @@ function Card({
           }
           centerAlign="left"
           center={
-            <>
+            <React.Fragment>
               {title ? <Headline text={title} /> : null}
               {description ? <SubTitle text={description} /> : null}
-            </>
+            </React.Fragment>
           }
-        ></Bar>
+        />
       </CardSection>
-    )
+    );
     if (more) {
       headerSection = (
-        <CardSection type={type} onClick={toggleDropdown}>
+        <CardSection type={type}>
           <ExpandingSection
             description={description}
             icon={icon}
             label={label}
             more={more}
+            onClick={toggleDropdown}
             open={open}
             title={title}
           />
         </CardSection>
-      )
+      );
     }
   }
 
@@ -352,15 +389,15 @@ function Card({
         <Media image>
           <CardImage
             src={media}
-            alt={imageAlt || `Card Image: ${media}`}
+            alt={mediaDesc || `Image: ${media}`}
             width="100%"
           />
         </Media>
-      )
+      );
     } else if (mimeType.startsWith("video")) {
       mediaSection = (
         <Media>
-          <video width="100%" controls>
+          <video width="100%" title={mediaDesc || `Video: ${media}`} controls>
             <source
               src={media}
               type="video/mp4"
@@ -374,13 +411,13 @@ function Card({
               type="video/ogg"
             />
             Your browser does not support the video element.
-            </video>
+          </video>
         </Media>
-      )
+      );
     } else if (mimeType.startsWith("audio")) {
       mediaSection = (
         <CardSection>
-          <CardAudio controls>
+          <CardAudio title={mediaDesc || `Audio: ${media}`} controls>
             <source
               src={media}
               type="audio/mp3"
@@ -396,28 +433,28 @@ function Card({
             Your browser does not support the audio element.
           </CardAudio>
         </CardSection>
-      )
+      );
       // Currently redundant to the 'else' case
       // but captured should we need to handle
-      // supported mime-types in a specific way 
+      // supported mime-types in a specific way
     } else if
-      (
+    (
       mimeType.startsWith("text") ||
       mimeType.startsWith("application")
     ) {
       mediaSection = (
         <Media>
-          <iframe src={media} width="100%" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
+          <iframe src={media} title={mediaDesc || `Media: ${media}`} width="100%" frameBorder="0" allow="fullscreen" allowFullScreen />
         </Media>
-      )
+      );
     }
     // Fallback for Youtube, Vimeo and other unsupported mime-types
   } else {
     mediaSection = (
       <Media>
-        <iframe src={media} width="100%" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
+        <iframe src={media} title={mediaDesc || `Media: ${media}`} width="100%" frameBorder="0" allow="fullscreen" allowFullScreen />
       </Media>
-    )
+    );
   }
 
   let commandElements = null;
@@ -447,7 +484,7 @@ function Card({
             commands.length > 2 ? (
               <Menu data={commands.slice(2)} position="topLeft" />
             ) : (
-                <Spacer />
+              <Spacer />
               )
           }
         />
@@ -466,7 +503,6 @@ function Card({
         />
       );
     }
-
   }
 
   return (
@@ -501,21 +537,22 @@ Card.propTypes = {
   commands: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
     label: PropTypes.string,
-    name: PropTypes.string,
     onClick: PropTypes.func,
+    disabled: PropTypes.bool,
   })),
   description: PropTypes.string,
   icon: PropTypes.string,
   id: PropTypes.string,
   inverse: PropTypes.bool,
   label: PropTypes.string,
-  imageAlt: PropTypes.string,
+  mediaDesc: PropTypes.string,
   media: PropTypes.string,
   more: PropTypes.node,
   onClick: PropTypes.func,
   padding: PropTypes.oneOf(["0", "1x", "2x", "3x", "4x"]),
   shadow: PropTypes.oneOf(["none", "standard", "2x"]),
   title: PropTypes.string,
+  type: PropTypes.string,
 };
 Card.defaultProps = {
   body: null,
@@ -527,15 +564,19 @@ Card.defaultProps = {
   id: null,
   inverse: null,
   label: null,
-  imageAlt: null,
+  mediaDesc: null,
   media: null,
   more: null,
+  onClick: null,
   padding: null,
   shadow: null,
   title: null,
-}
+  type: null,
+};
 
-function CardGrid({ children, className, columns, data, gap, id, inverse, rows, }) {
+function CardGrid({
+  children, className, columns, data, gap, id, inverse, rows,
+}) {
   return (
     <CardGridWrapper
       className={className}
@@ -553,7 +594,7 @@ function CardGrid({ children, className, columns, data, gap, id, inverse, rows, 
               description={item.description}
               icon={item.icon}
               id={item.id}
-              imageAlt={item.imageAlt}
+              mediaDesc={item.mediaDesc}
               inverse={inverse}
               key={item.id}
               label={item.label}
@@ -590,8 +631,9 @@ CardGrid.propTypes = {
     "10",
     "11",
     "12",
-    "[grid-template-columns]"
+    "[grid-template-columns]",
   ]),
+  data: PropTypes.oneOfType([PropTypes.array, PropTypes.string]),
   /** Sets the 'gutter' between grid items
    *
    * Options: Any switch case or any standard value accepted by the CSS Grid property, 'grid-gap'.
@@ -606,8 +648,8 @@ CardGrid.propTypes = {
       "large",
       "xlarge",
       "xxlarge",
-      "[grid-template-rows]"
-    ])
+      "[grid-template-rows]",
+    ]),
   ]),
   id: PropTypes.string,
   inverse: PropTypes.bool,
@@ -615,16 +657,17 @@ CardGrid.propTypes = {
    *
    * Options: Any switch case or any standard value accepted by the CSS Grid property, 'grid-template-rows'.
    */
-  rows: PropTypes.oneOf(["default (auto)", "[grid-template-rows]"])
+  rows: PropTypes.oneOf(["default (auto)", "[grid-template-rows]"]),
 };
 CardGrid.defaultProps = {
   children: null,
   className: null,
   columns: null,
+  data: null,
   gap: null,
   id: null,
   inverse: false,
   rows: null,
-}
+};
 
 export { Card as default, CardSection, CardGrid };
