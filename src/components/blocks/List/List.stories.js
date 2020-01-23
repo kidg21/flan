@@ -11,7 +11,6 @@ import { CheckboxGroup } from "atoms/Checkbox";
 import Button from "atoms/Button";
 import Grid from "layout/Grid";
 import CardList from "./CardList.jsx";
-// import VirtualizedList from "./VirtualizedList.jsx";
 
 const ListNotes = markdown.require("./List.md");
 
@@ -523,44 +522,6 @@ storiesOf("Blocks|List", module)
       </List>
     );
   })
-  // .add("Virtualized List", () => {
-  //   return React.createElement(() => {
-  //     const [highlightedCell, setHighlightCell] = useState(null);
-  //     const [selectedCell, setSelectedCell] = useState(null);
-  //     const onCellClick = (e, { rowIndex }) => {
-  //       setSelectedCell({ rowIndex });
-  //     };
-  //     const Template = (props) => {
-  //       return (
-  //         <Card
-  //           id={props._DMP_ID_FK}
-  //           title={`${props.index}: ${props.SITE_ADDR}`}
-  //           body={props.APN}
-  //         />
-  //       );
-  //     };
-  //     const onCellMouseEnter = (e, { rowIndex }) => {
-  //       setHighlightCell({ rowIndex });
-  //     };
-
-  //     return (
-  //       <Layout>
-  //         <VirtualizedList
-  //           data={data}
-  //           Template={Template}
-  //           id="foo"
-  //           onCellClick={onCellClick}
-  //           onCellMouseEnter={onCellMouseEnter}
-  //           onCellMouseLeave={() => {
-  //             setHighlightCell(null);
-  //           }}
-  //           highlightedCell={highlightedCell}
-  //           selectedCell={selectedCell}
-  //         />
-  //       </Layout>
-  //     );
-  //   });
-  // })
   .add("Toggle List", () => {
     return (
       <List interactive>
