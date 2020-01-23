@@ -41,6 +41,7 @@ export { default as Menu } from "./blocks/Menu";
 export { default as RangeSlider } from "./blocks/RangeSlider";
 export { default as Table } from "./blocks/Table";
 export { default as Tabs, Tab } from "./blocks/Tabs";
+export { CardList } from "./blocks/List";
 
 // Publicly exported files from 'elements'
 export { default as Card } from "./elements/Card";
@@ -57,7 +58,7 @@ export {
 } from "./elements/DialogBox";
 
 // Publicly exported files from 'layout'
-export { default as CardLayout, CardList } from "./layout/Card"; // TODO: deprecated Card, fix
+export { default as CardLayout, CardList as oldCardList } from "./layout/Card"; // TODO: deprecated Card, fix
 export { default as Form, Section } from "./layout/Form";
 export { default as Grid } from "./layout/Grid";
 export { default as Layout } from "./layout/Layout";

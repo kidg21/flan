@@ -164,7 +164,7 @@ function InputBlock({
       <Button
         label={button.label}
         type={button.type}
-        onClick={button.onClick}
+        onClick={(e) => { if (button.onClick) button.onClick(e, state); }}
         disabled={isDisabled || button.disabled}
       />
     );
