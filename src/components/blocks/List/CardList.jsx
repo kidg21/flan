@@ -53,16 +53,19 @@ class CardList extends PureComponent {
     if (prevProps.listId !== this.props.listId
       || prevProps.data.length !== this.props.data.length) {
       this._recalculateGridSize();
+      this.remeasureCells(null, true);
       this._loadMissingRowsInView(
         this.props.data,
         this._visibleRowStartIndex,
         this._visibleRowStopIndex,
-      );
+      ).then(() => {
+        this.forceUpdate();
+      });
     } else if (prevProps.columnWidth !== this.props.columnWidth
       || prevProps.columnCount !== this.props.columnCount) {
       // if any of these props are NaNi, the component will break
       this._recalculateGridSize();
-      this.remeasureCells();
+      this.remeasureCells(null, true);
       this.forceUpdate();
     }
   }
@@ -234,7 +237,7 @@ class CardList extends PureComponent {
     this.width = this.props.width || width;
     this.height = this.props.height || height;
     this._recalculateGridSize();
-    this.remeasureCells();
+    this.remeasureCells(null, true);
     this.forceUpdate();
   }
 
