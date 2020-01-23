@@ -306,10 +306,10 @@ SelectMenu.propTypes = {
     PropTypes.string,
     PropTypes.shape({
       label: PropTypes.string,
-      value: PropTypes.node,
+      value: PropTypes.any,
     }),
   ])),
-  selectOptions: PropTypes.node,
+  selectOptions: PropTypes.any,
   label: PropTypes.string,
   isRequired: PropTypes.bool,
   disabled: PropTypes.bool,

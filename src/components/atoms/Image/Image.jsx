@@ -39,7 +39,7 @@ Image.propTypes = {
   circle: PropTypes.bool,
   className: PropTypes.string,
   src: PropTypes.string,
-  width: PropTypes.node,
+  width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 Image.defaultProps = {
   border: false,

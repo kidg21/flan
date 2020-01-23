@@ -409,7 +409,7 @@ class Table extends Component {
 }
 
 Table.propTypes = {
-  columnWidth: PropTypes.node,
+  columnWidth: PropTypes.number,
   focusedRow: PropTypes.number,
   highlightedCell: PropTypes.shape({
     columnIndex: PropTypes.number,
@@ -427,7 +427,7 @@ Table.propTypes = {
   onHeaderClick: PropTypes.func,
   onHeaderMouseOut: PropTypes.func,
   onHeaderMouseOver: PropTypes.func,
-  rowHeight: PropTypes.node,
+  rowHeight: PropTypes.number,
   scrollToAlignment: PropTypes.string,
   scrollTop: PropTypes.number,
   scrollTopChanged: PropTypes.func,

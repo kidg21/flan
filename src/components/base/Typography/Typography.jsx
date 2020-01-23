@@ -74,61 +74,44 @@ letter-spacing: ${(props) => { return props.letterSpacing; }};
 function Title({
   text, size, weight,
 }) {
-  let fontWeight;
-  let fontSize;
-  let as;
-  let letterSpacing;
+  const sizeHash = {
+    "6x": {
+      fontSize: "2em",
+      as: "h1",
+    },
+    "5x": {
+      fontSize: "1.65em",
+      as: "h2",
+    },
+    "4x": {
+      fontSize: "1.45em",
+      as: "h3",
+    },
+    "3x": {
+      fontSize: "1.25em",
+      as: "h4",
+    },
+    "2x": {
+      fontSize: "1.15em",
+      as: "h5",
+    },
+    "1x": {
+      fontSize: "1.05em",
+      as: "h6",
+    },
+  };
 
-  switch (size && size.toLowerCase()) {
-    case "6x":
-      fontSize = "2em";
-      as = "h1";
-      letterSpacing = "0px";
-      break;
-    case "5x":
-      fontSize = "1.65em";
-      as = "h2";
-      letterSpacing = "0px";
-      break;
-    case "4x":
-      fontSize = "1.45em";
-      as = "h3";
-      letterSpacing = "0px";
-      break;
-    case "3x":
-      fontSize = "1.25em";
-      as = "h4";
-      letterSpacing = "0px";
-      break;
-    case "2x":
-      fontSize = "1.15em";
-      as = "h5";
-      letterSpacing = "0px";
-      break;
-    case "1x":
-      fontSize = "1.05em";
-      as = "h6";
-      letterSpacing = "0px";
-      break;
-    default:
-      fontSize = "1.05em";
-      as = "h6";
-      letterSpacing = "0px";
-      break;
-  }
+  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "1.05em", as: "h6" };
+  const { fontSize, as } = selectedSize;
+  const letterSpacing = "0px";
 
+  const weightHash = {
+    light: 300,
+    bold: 600,
+  };
 
-  switch (weight && weight.toLowerCase()) {
-    case "bold":
-      fontWeight = "600";
-      break;
-    case "light":
-      fontWeight = "300";
-      break;
-    default:
-      fontWeight = "400";
-      break;
-  }
+  let fontWeight = parseInt(weight, 10);
+  if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 400;
 
 
   return (
@@ -147,48 +130,37 @@ function Title({
 function Link({
   text, onClick, href, target, disabled, size, weight,
 }) {
-  let fontSize;
-  let letterSpacing;
-  let fontWeight;
+  const sizeHash = {
+    "4x": {
+      fontSize: "1em",
+      letterSpacing: "0px",
+    },
+    "3x": {
+      fontSize: "0.9em",
+      letterSpacing: "0px",
+    },
+    "2x": {
+      fontSize: "0.75em",
+      letterSpacing: "0.2px",
+    },
+    "1x": {
+      fontSize: "0.65em",
+      letterSpacing: "0.6px",
+    },
+  };
 
-  switch (size && size.toLowerCase()) {
-    case "4x":
-      fontSize = "1em";
-      letterSpacing = "0px";
-      break;
-    case "3x":
-      fontSize = "0.9em";
-      letterSpacing = "0px";
-      break;
-    case "2x":
-      fontSize = "0.75em";
-      letterSpacing = "0.2px";
-      break;
-    case "1x":
-      fontSize = "0.65em";
-      letterSpacing = "0.6px";
-      break;
-    default:
-      fontSize = "0.9em";
-      letterSpacing = "0px";
-      break;
-  }
+  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.9em", letterSpacing: "0px" };
+  const { fontSize, letterSpacing } = selectedSize;
 
 
-  switch (weight && weight.toLowerCase()) {
-    case "bold":
-      fontWeight = "600";
-      break;
-    case "regular":
-      fontWeight = "400";
-      break;
-    case "light":
-      fontWeight = "300";
-      break;
-    default:
-      fontWeight = "600";
-      break;
-  }
+  const weightHash = {
+    light: 300,
+    regular: 400,
+    bold: 600,
+  };
+
+  let fontWeight = parseInt(weight, 10);
+  if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 600;
 
 
   return (
@@ -210,45 +182,36 @@ function Link({
 function Text({
   text, size, weight,
 }) {
-  let fontSize;
-  let letterSpacing;
-  let fontWeight;
+  const sizeHash = {
+    "4x": {
+      fontSize: "1em",
+      letterSpacing: "0px",
+    },
+    "3x": {
+      fontSize: "0.876em",
+      letterSpacing: "0px",
+    },
+    "2x": {
+      fontSize: "0.75em",
+      letterSpacing: "0.2px",
+    },
+    "1x": {
+      fontSize: "0.65em",
+      letterSpacing: "0.6px",
+    },
+  };
 
-  switch (size && size.toLowerCase()) {
-    case "4x":
-      fontSize = "1em";
-      letterSpacing = "0px";
-      break;
-    case "3x":
-      fontSize = "0.876em";
-      letterSpacing = "0px";
-      break;
-    case "2x":
-      fontSize = "0.75em";
-      letterSpacing = "0.2px";
-      break;
-    case "1x":
-      fontSize = "0.65em";
-      letterSpacing = "0.6px";
-      break;
-    default:
-      fontSize = "0.876em";
-      letterSpacing = "0px";
-      break;
-  }
+  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.876em", letterSpacing: "0px" };
+  const { fontSize, letterSpacing } = selectedSize;
 
+  const weightHash = {
+    light: 300,
+    bold: 600,
+  };
 
-  switch (weight && weight.toLowerCase()) {
-    case "bold":
-      fontWeight = "600";
-      break;
-    case "light":
-      fontWeight = "300";
-      break;
-    default:
-      fontWeight = "400";
-      break;
-  }
+  let fontWeight = parseInt(weight, 10);
+  if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 400;
+
 
   return (
     <Paragraph
@@ -270,44 +233,35 @@ function Label({
   size,
   text,
 }) {
-  let fontSize;
-  let letterSpacing;
-  let fontWeight;
+  const sizeHash = {
+    "4x": {
+      fontSize: "1em",
+      letterSpacing: "0px",
+    },
+    "3x": {
+      fontSize: "0.876em",
+      letterSpacing: "0px",
+    },
+    "2x": {
+      fontSize: "0.82em",
+      letterSpacing: "0px",
+    },
+    "1x": {
+      fontSize: "0.65em",
+      letterSpacing: "0.6px",
+    },
+  };
 
-  switch (size && size.toLowerCase()) {
-    case "4x":
-      fontSize = "1em";
-      letterSpacing = "0px";
-      break;
-    case "3x":
-      fontSize = "0.876em";
-      letterSpacing = "0px";
-      break;
-    case "2x":
-      fontSize = "0.82em";
-      letterSpacing = "0px";
-      break;
-    case "1x":
-      fontSize = "0.65em";
-      letterSpacing = "0.6px";
-      break;
-    default:
-      fontSize = "0.876em";
-      letterSpacing = "0px";
-      break;
-  }
+  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.876em", letterSpacing: "0px" };
+  const { fontSize, letterSpacing } = selectedSize;
 
-  switch (weight && weight.toLowerCase()) {
-    case "bold":
-      fontWeight = "600";
-      break;
-    case "light":
-      fontWeight = "300";
-      break;
-    default:
-      fontWeight = "400";
-      break;
-  }
+  const weightHash = {
+    light: 300,
+    bold: 600,
+  };
+
+  let fontWeight = parseInt(weight, 10);
+  if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 400;
 
 
   return (
@@ -323,9 +277,9 @@ function Label({
   );
 }
 Label.propTypes = {
-  htmlFor: PropTypes.node,
+  htmlFor: PropTypes.string,
   children: PropTypes.node,
-  weight: PropTypes.node,
+  weight: PropTypes.string,
   isRequired: PropTypes.bool,
   size: PropTypes.string,
   text: PropTypes.string,
@@ -343,7 +297,7 @@ Label.defaultProps = {
 Title.propTypes = {
   text: PropTypes.string,
   size: PropTypes.node,
-  weight: PropTypes.node,
+  weight: PropTypes.string,
 };
 Title.defaultProps = {
   text: null,
@@ -355,7 +309,7 @@ Title.defaultProps = {
 Text.propTypes = {
   text: PropTypes.string,
   size: PropTypes.node,
-  weight: PropTypes.node,
+  weight: PropTypes.string,
 };
 Text.defaultProps = {
   text: null,
@@ -369,7 +323,7 @@ Link.propTypes = {
   target: PropTypes.node,
   onClick: PropTypes.node,
   size: PropTypes.node,
-  weight: PropTypes.node,
+  weight: PropTypes.string,
   href: PropTypes.node,
   disabled: PropTypes.bool,
 };
