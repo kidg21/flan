@@ -14,21 +14,21 @@ const data = [
     onClickLink: () => {
       console.log("clicked Save");
     },
-    name: "Save",
+    label: "Save",
   },
   {
     id: "b",
     onClickLink: () => {
       console.log("clicked Filter");
     },
-    name: "Filter",
+    label: "Filter",
   },
   {
     id: "c",
     onClickLink: () => {
       console.log("clicked Share");
     },
-    name: "Share",
+    label: "Share",
     disabled: true,
   },
   {
@@ -36,14 +36,14 @@ const data = [
     onClickLink: () => {
       console.log("clicked Refresh");
     },
-    name: "Refresh",
+    label: "Refresh",
   },
   {
     id: "e",
     onClickLink: () => {
       console.log("clicked Layer");
     },
-    name: "Layer",
+    label: "Layer",
   },
 ];
 
@@ -53,35 +53,35 @@ const nestedData = [
     onClickLink: () => {
       console.log(`clicked a`);
     },
-    name: "Save",
+    label: "Save",
   },
   {
     id: "b",
     onClickLink: () => {
       console.log(`clicked b`);
     },
-    name: "Filter",
+    label: "Filter",
     commands: [
       {
         id: "b.0",
         onClickLink: () => {
           console.log("clicked b.0");
         },
-        name: "Filter 0.0",
+        label: "Filter 0.0",
       },
       {
         id: "b.1",
         onClickLink: () => {
           console.log("clicked b.1");
         },
-        name: "Filter 1.0",
+        label: "Filter 1.0",
         commands: [
           {
             id: "b.1.0",
             onClickLink: () => {
               console.log("clicked b.1.0");
             },
-            name: "Filter 1.1.1",
+            label: "Filter 1.1.1",
           },
         ],
       },
@@ -92,42 +92,42 @@ const nestedData = [
     onClickLink: () => {
       console.log(`clicked c`);
     },
-    name: "Share",
+    label: "Share",
   },
   {
     id: "d",
     onClickLink: () => {
       console.log(`clicked d`);
     },
-    name: "Refresh",
+    label: "Refresh",
   },
   {
     id: "e",
     onClickLink: () => {
       console.log(`clicked e`);
     },
-    name: "Layer",
+    label: "Layer",
   },
   {
     id: "f",
     onClickLink: () => {
       console.log(`clicked b`);
     },
-    name: "Filter",
+    label: "Filter",
     commands: [
       {
         id: "f.0",
         onClickLink: () => {
           console.log("clicked b.0");
         },
-        name: "Filter 0.0",
+        label: "Filter 0.0",
       },
       {
         id: "f.1",
         onClickLink: () => {
           console.log("clicked b.1");
         },
-        name: "Filter 1.0",
+        label: "Filter 1.0",
       },
     ],
   },

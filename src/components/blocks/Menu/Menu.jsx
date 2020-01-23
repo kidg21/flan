@@ -45,7 +45,7 @@ const ItemWrapper = styled.li`
 `;
 
 const MenuPopper = styled.div`
-  position: absolute;
+  position: fixed;
   z-index: 500;
   min-width: 12em;
   top: ${(props) => {
@@ -111,7 +111,7 @@ function MenuComponent({
                 <ItemWrapper
                   key={item.id}
                   disabled={item.disabled}
-                  tabIndex="1"
+                  tabIndex="0"
                   onMouseOver={(e) => {
                     setActiveItem({
                       id: item.id,
@@ -121,7 +121,7 @@ function MenuComponent({
                     });
                   }}
                 >
-                  <ListItem as="section" label={item.name} icon={item.icon} arrow={submenuDirection} disabled={disabled} />
+                  <ListItem as="section" title={item.label} icon={item.icon} arrow={submenuDirection} disabled={disabled} />
                   {activeItem && activeItem.id === item.id ? (
                     <MenuComponent
                       id={item.id}
@@ -144,7 +144,7 @@ function MenuComponent({
                 onClick={() => { if (item.onClickLink) item.onClickLink(item.id); }}
                 onMouseOver={closeMenu}
               >
-                <ListItem as="section" label={item.name} icon={item.icon} />
+                <ListItem as="section" title={item.label} icon={item.icon} />
               </ItemWrapper>);
           })}
         </ListWrapper>
@@ -156,7 +156,7 @@ function MenuComponent({
 MenuComponent.propTypes = {
   data: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
-    name: PropTypes.string,
+    label: PropTypes.string,
     onClickLink: PropTypes.func,
   })).isRequired,
   disabled: PropTypes.bool,

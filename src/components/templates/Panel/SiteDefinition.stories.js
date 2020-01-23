@@ -25,34 +25,34 @@ const image = {
 };
 
 const lotData = [
-  { id: "a", name: "Land Use", value: "Commercial" },
-  { id: "b", name: "Land Description", value: "Miscellaneous Commercial" },
-  { id: "c", name: "Lot Area", value: "62,344 SF | 1.43 Acres" },
+  { id: "a", label: "Land Use", value: "Commercial" },
+  { id: "b", label: "Land Description", value: "Miscellaneous Commercial" },
+  { id: "c", label: "Lot Area", value: "62,344 SF | 1.43 Acres" },
 ];
 
 const ownerData = [
-  { id: "a", name: "Owner", value: "1830 La Cienga LLC" },
-  { id: "b", name: "Last Transfer", value: "12/31/14" },
-  { id: "c", name: "Last Market Sale", value: "10/31/13 for $11,000,110" },
-  { id: "d", name: "Opportunity Zone ", value: "No" },
+  { id: "a", label: "Owner", value: "1830 La Cienga LLC" },
+  { id: "b", label: "Last Transfer", value: "12/31/14" },
+  { id: "c", label: "Last Market Sale", value: "10/31/13 for $11,000,110" },
+  { id: "d", label: "Opportunity Zone ", value: "No" },
 ];
 
 const buildingData = [
-  { id: "a", name: "Value", value: "$11,851,071" },
-  { id: "b", name: "Square Feet", value: "34,529 SF" },
-  { id: "c", name: "# of Units", value: "1" },
-  { id: "d", name: "Year Built", value: "1950" },
+  { id: "a", label: "Value", value: "$11,851,071" },
+  { id: "b", label: "Square Feet", value: "34,529 SF" },
+  { id: "c", label: "# of Units", value: "1" },
+  { id: "d", label: "Year Built", value: "1950" },
 ];
 
 const summaryData = [
-  { id: "a", name: "Parcels", value: "1" },
-  { id: "b", name: "Owners", value: "1" },
-  { id: "c", name: "Buildings", value: "1" },
-  { id: "d", name: "Square Footage", value: "1950" },
-  { id: "a", name: "Acreage", value: "298" },
-  { id: "b", name: "Topography", value: "Urban" },
-  { id: "c", name: "Last Trans Date", value: "1/27/03" },
-  { id: "d", name: "Sites Included", value: "Rockefeller" },
+  { id: "a", label: "Parcels", value: "1" },
+  { id: "b", label: "Owners", value: "1" },
+  { id: "c", label: "Buildings", value: "1" },
+  { id: "d", label: "Square Footage", value: "1950" },
+  { id: "a", label: "Acreage", value: "298" },
+  { id: "b", label: "Topography", value: "Urban" },
+  { id: "c", label: "Last Trans Date", value: "1/27/03" },
+  { id: "d", label: "Sites Included", value: "Rockefeller" },
 ];
 
 

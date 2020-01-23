@@ -365,35 +365,35 @@ const menu = [
     onClickLink: () => {
       console.log("clicked Save");
     },
-    name: "Save",
+    label: "Save",
   },
   {
     id: "b",
     onClickLink: () => {
       console.log("clicked Filter");
     },
-    name: "Filter",
+    label: "Filter",
   },
   {
     id: "c",
     onClickLink: () => {
       console.log("clicked Share");
     },
-    name: "Share",
+    label: "Share",
   },
   {
     id: "d",
     onClickLink: () => {
       console.log("clicked Refresh");
     },
-    name: "Refresh",
+    label: "Refresh",
   },
   {
     id: "e",
     onClickLink: () => {
       console.log("clicked Layer");
     },
-    name: "Layer",
+    label: "Layer",
   },
 ];
 

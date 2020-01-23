@@ -5,12 +5,12 @@ import { Padding } from "helpers/Display";
 import Legend from "./Legend.jsx";
 
 const options = [
-  { name: "Category 0", value: "Value 0" },
-  { name: "Category 1", value: "Value 1" },
-  { name: "Category 2", value: "Value 2" },
-  { name: "Category 3", value: "Value 3" },
-  { name: "Category 4", value: "Value 4" },
-  { name: "Category 5", value: "Value 5" },
+  { label: "Category 0", value: "Value 0" },
+  { label: "Category 1", value: "Value 1" },
+  { label: "Category 2", value: "Value 2" },
+  { label: "Category 3", value: "Value 3" },
+  { label: "Category 4", value: "Value 4" },
+  { label: "Category 5", value: "Value 5" },
 ];
 
 storiesOf("Blocks|Legend", module)

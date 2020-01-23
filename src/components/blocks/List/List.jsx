@@ -5,7 +5,6 @@ import PropTypes from "prop-types";
 import { Darken } from "Variables";
 import Bar from "blocks/Bar";
 import Tag from "atoms/Tag";
-import Icon from "atoms/Icon";
 import Avatar from "atoms/Avatar";
 import Checkbox from "atoms/Checkbox";
 import Switch from "atoms/Switch";
