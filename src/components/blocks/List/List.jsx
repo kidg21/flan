@@ -60,17 +60,29 @@ const ListItemWrapper = styled.li`
 `;
 
 function List({
-  children, divider, id, interactive, title,
+  children, divider, id, interactive,
 }) {
   return (
     <InteractiveContext.Provider value={interactive}>
-      {title ? <Bar padding="2x" left={<Title text={title} weight="bold" />} /> : null}
       <ListWrapper divider={divider} id={id}>
         {children}
       </ListWrapper>
     </InteractiveContext.Provider>
   );
 }
+
+List.propTypes = {
+  children: PropTypes.node,
+  divider: PropTypes.bool,
+  id: PropTypes.string,
+  interactive: PropTypes.bool,
+};
+List.defaultProps = {
+  children: null,
+  divider: false,
+  id: null,
+  interactive: false,
+};
 
 function ListItem({
   active,
@@ -81,45 +93,36 @@ function ListItem({
   id,
   interactive,
   isSelected,
-  label,
+  title,
   onClick,
   post,
-  postLabel,
   pre,
-  preIcon,
-  preLabel,
   tabIndex,
 }) {
   let leftContent;
-  if (pre) {
-    if (pre.toLowerCase() === "icon") {
-      leftContent = <Icon icon={preIcon} disabled={disabled} size="lg" />;
-    } else if (pre.toLowerCase() === "avatar") {
-      if (preLabel) {
-        leftContent = <Avatar label={preLabel} disabled={disabled} />;
-      } else {
-        leftContent = <Avatar icon={preIcon} disabled={disabled} />;
-      }
-    }
-  }
-  let rightContent;
-  if (post) {
-    if (post.toLowerCase() === "checkbox") {
-      rightContent = <Checkbox id={postLabel} label={postLabel} align="right" disabled={disabled} />;
-    } else if (post.toLowerCase() === "toggle") {
-      rightContent = <Switch label={postLabel} align="right" disabled={disabled} />;
-    } else if (post.toLowerCase() === "label") {
-      rightContent = <Tag label={postLabel} />;
-    }
+  if (pre && (pre.label || pre.icon)) {
+    leftContent = <Avatar label={pre.label} icon={pre.icon} disabled={disabled} />;
   }
 
   const centerContent = (
     <React.Fragment>
-      <Title text={label} disabled={disabled} />
+      <Title text={title} disabled={disabled} />
       {description ? (<Description text={description} disabled={disabled} />
       ) : null}
     </React.Fragment>
   );
+
+  let rightContent;
+  if (post && post.type) {
+    const postType = post.type.toLowerCase();
+    if (postType === "checkbox") {
+      rightContent = <Checkbox id={post.label} label={post.label} align="right" disabled={disabled} />;
+    } else if (postType === "toggle") {
+      rightContent = <Switch label={post.label} align="right" disabled={disabled} />;
+    } else if (postType === "label" && post.label) {
+      rightContent = <Tag label={post.label} />;
+    }
+  }
 
   return (
     <ListItemWrapper
@@ -152,21 +155,6 @@ function ListItem({
   );
 }
 
-List.propTypes = {
-  children: PropTypes.node,
-  divider: PropTypes.bool,
-  id: PropTypes.string,
-  interactive: PropTypes.bool,
-  title: PropTypes.string,
-};
-List.defaultProps = {
-  children: null,
-  divider: false,
-  id: null,
-  interactive: false,
-  title: null,
-};
-
 ListItem.propTypes = {
   active: PropTypes.bool,
   as: PropTypes.string,
@@ -176,18 +164,16 @@ ListItem.propTypes = {
   id: PropTypes.string,
   interactive: PropTypes.bool,
   isSelected: PropTypes.bool,
-  label: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   onClick: PropTypes.func,
-  post: PropTypes.oneOf(["label", "checkbox", "toggle"]),
-  /** Required for post-type 'label'
-   * Optional for post-types 'checkbox' and 'toggle'
-   */
-  postLabel: PropTypes.string,
-  pre: PropTypes.oneOf(["icon", "avatar"]),
-  /** Required for pre-type 'icon' */
-  preIcon: PropTypes.string,
-  /** Required for pre-type 'avatar' */
-  preLabel: PropTypes.string,
+  post: PropTypes.shape({
+    type: PropTypes.string.isRequired,
+    label: PropTypes.string,
+  }),
+  pre: PropTypes.shape({
+    label: PropTypes.string,
+    icon: PropTypes.string,
+  }),
   tabIndex: PropTypes.string,
 };
 ListItem.defaultProps = {
@@ -201,10 +187,7 @@ ListItem.defaultProps = {
   isSelected: false,
   onClick: null,
   post: null,
-  postLabel: null,
   pre: null,
-  preIcon: null,
-  preLabel: null,
   tabIndex: "0",
 };
 
