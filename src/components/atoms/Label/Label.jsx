@@ -14,7 +14,7 @@ const StyledLabel = styled.label`
   cursor: pointer;
   display: flex;
   font-weight: ${(props) => {
-    return props.fontWeight || "500";
+    return props.fontWeight || "";
   }};;
   letter-spacing: ${(props) => {
     return props.letterSpacing || "";
@@ -66,8 +66,8 @@ function Label({
   textTransform,
   weight,
 }) {
-  const fontSize = sizeHash[size && size.toLowerCase()] || "1rem";
-  const fontWeight = weightHash[weight && weight.toLowerCase()] || "500";
+  const fontSize = sizeHash[size && size.toLowerCase()] || "";
+  const fontWeight = weightHash[weight && weight.toLowerCase()] || "";
   return (
     <StyledLabel
       fontWeight={fontWeight}

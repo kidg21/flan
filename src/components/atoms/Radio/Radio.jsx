@@ -22,10 +22,10 @@ const RadioContainer = styled.div`
   grid-template-areas: ${(props) => {
     return props.alignInput || "";
   }};
-  line-height: initial;
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || props.theme.text.primary;
+    return props.theme.text[props.inputTextColor] || "";
   }};
+  line-height: initial;
   &[disabled],
   &[readonly] {
     cursor: not-allowed;

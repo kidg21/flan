@@ -272,22 +272,22 @@ storiesOf("Blocks|List", module)
         <ListItem
           title="List Item"
           description="This is the description"
-          post={{ type: "checkbox", label: "Checkbox 1" }}
+          post={{ type: "checkbox", label: "Box 1" }}
         />
         <ListItem
           title="List Item"
           description="This is the description"
-          post={{ type: "checkbox", label: "Checkbox 2" }}
+          post={{ type: "checkbox", label: "Box 2" }}
         />
         <ListItem
           title="List Item"
           description="This is the description"
-          post={{ type: "checkbox" }}
+          post={{ type: "checkbox", label: "Box 3" }}
         />
         <ListItem
           title="List Item"
           description="This is the description"
-          post={{ type: "checkbox", label: "Checkbox 4" }}
+          post={{ type: "checkbox", label: "Box 4" }}
         />
       </List>
     );

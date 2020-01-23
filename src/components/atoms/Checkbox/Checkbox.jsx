@@ -24,7 +24,7 @@ const CheckboxContainer = styled.div`
     return props.alignInput || "";
   }};
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || props.theme.text.primary;
+    return props.theme.text[props.inputTextColor] || "";
   }};
   line-height: initial;
   &[disabled],
