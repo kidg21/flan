@@ -66,7 +66,8 @@ export { default as Grid } from "./layout/Grid";
 export { default as Layout } from "./layout/Layout";
 export { default as Modal } from "./layout/Modal";
 export { default as Page } from "./layout/Page";
-export { default as Panel } from "./layout/Panel";
+// panel section is deprecated, but our existing components will break if this is removed.
+export { default as Panel, PanelSection } from "./layout/Panel";
 
 export { default as Expander } from "./utils/Expander";
 
