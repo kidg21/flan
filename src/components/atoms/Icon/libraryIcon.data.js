@@ -6,31 +6,25 @@ const placeholder = {
 // Type
 export const iconsType = [
   {
-    name: "standard",
     icon: "user_circle",
-    type: "",
     desc: "By default, Icons inherit color from their parent.",
   },
   {
-    name: "info",
     icon: "user_circle",
     type: "info",
     desc: placeholder.desc,
   },
   {
-    name: "success",
     icon: "user_circle",
     type: "success",
     desc: placeholder.desc,
   },
   {
-    name: "warning",
     icon: "user_circle",
     type: "warning",
     desc: placeholder.desc,
   },
   {
-    name: "alert",
     icon: "user_circle",
     type: "alert",
     desc: placeholder.desc,
@@ -40,79 +34,66 @@ export const iconsType = [
 // Size
 export const iconsSize = [
   {
-    name: "xs",
     icon: "user_circle",
     size: "xs",
     desc: placeholder.desc,
   },
   {
-    name: "sm",
     icon: "user_circle",
     size: "sm",
     desc: placeholder.desc,
   },
   {
-    name: "standard",
     icon: "user_circle",
     size: "inherit",
     desc: "By default, Icons inherit color from their parent.",
   },
   {
-    name: "lg",
     icon: "user_circle",
     size: "lg",
     desc: placeholder.desc,
   },
   {
-    name: "2x",
     icon: "user_circle",
     size: "2x",
     desc: placeholder.desc,
   },
   {
-    name: "3x",
     icon: "user_circle",
     size: "3x",
     desc: placeholder.desc,
   },
   {
-    name: "4x",
     icon: "user_circle",
     size: "4x",
     desc: placeholder.desc,
   },
   {
-    name: "5x",
     icon: "user_circle",
     size: "5x",
     desc: placeholder.desc,
   },
   {
-    name: "6x",
     icon: "user_circle",
     size: "6x",
     desc: placeholder.desc,
   },
   {
-    name: "7x",
     icon: "user_circle",
     size: "7x",
     desc: placeholder.desc,
   },
   {
-    name: "8x",
     icon: "user_circle",
     size: "8x",
     desc: placeholder.desc,
   },
   {
-    name: "9x",
     icon: "user_circle",
     size: "9x",
     desc: placeholder.desc,
   },
   {
-    name: "10x",
     icon: "user_circle",
     size: "10x",
     desc: placeholder.desc,

@@ -24,7 +24,6 @@ const CommandContainer = styled.a`
     return props.justifyIcon || "";
   }};
   align-items: center;
-  width: max-content;
   font-size: ${(props) => {
     return props.commandSize || "";
   }};

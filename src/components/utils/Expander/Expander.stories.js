@@ -3,18 +3,18 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable linebreak-style */
 // import React, { useState } from "react";
-// 
+//
 // import Expander from "./Expander";
-// 
+//
 // import { Padding } from "helpers/Display";
 // import Table from "blocks/Table";
 // import Title from "base/Typography";
 // import Card from "elements/Card";
 
 // const data = [
-//   { id: "a", color: "Owners/Units", name: "Multiple Owners (2 Units)" },
-//   { id: "b", color: "Master Parcel No.", name: "387483675638" },
-//   { id: "c", color: "Zoning", name: "No Zone" },
+//   { id: "a", color: "Owners/Units", label: "Multiple Owners (2 Units)" },
+//   { id: "b", color: "Master Parcel No.", label: "387483675638" },
+//   { id: "c", color: "Zoning", label: "No Zone" },
 // ];
 
 // storiesOf("Utils|Expander", module)

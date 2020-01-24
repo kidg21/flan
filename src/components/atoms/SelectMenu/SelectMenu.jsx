@@ -121,7 +121,7 @@ const selectStyles = {
       textAlign: "left",
       border: "1px solid",
       borderColor: colors.grey40,
-      boxShadow: shadows.shadow2,
+      boxShadow: shadows.dropShadow,
     };
   },
 

@@ -14,7 +14,6 @@ const TextInputContainer = styled(Grid)`
   width: 100%;
 `;
 
-
 const Input = styled.input`
   color: inherit;
   border: 1px solid;
@@ -56,7 +55,6 @@ const Input = styled.input`
     );
   }};
     }
-  }
   &:focus {
     border-color: ${(props) => {
     return (
@@ -279,7 +277,7 @@ TextInput.defaultProps = {
   size: null,
   title: null,
   type: "text",
-  value: "",
+  value: null,
   onBlur: null,
   onFocus: null,
   name: "",

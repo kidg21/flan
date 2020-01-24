@@ -26,7 +26,7 @@ MainPanelHeader.propTypes = {
   style: PropTypes.object,
   menuData: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
-    name: PropTypes.string,
+    label: PropTypes.string,
     onClickLink: PropTypes.func,
   })),
 };

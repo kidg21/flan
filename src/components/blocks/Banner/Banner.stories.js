@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { Padding } from "helpers/Display";
-import { CardList } from "layout/Card";
+import { CardGrid } from "elements/Card";
 import Banner from "blocks/Banner";
 
 const BannerNotes = markdown.require("./Banner.md");
@@ -40,17 +40,17 @@ storiesOf("Blocks|Banner", module)
           "Settings",
         )}
         icon={select(
-            "icon",
-            {
-              user: "user",
-              down: "down",
-              bookmark: "bookmark_solid",
-              plus: "plus",
-              print: "print",
-            },
-            "user",
-            "Settings",
-          )
+          "icon",
+          {
+            user: "user",
+            down: "down",
+            bookmark: "bookmark_solid",
+            plus: "plus",
+            print: "print",
+          },
+          "user",
+          "Settings",
+        )
         }
         title={
           boolean("title", true, "Options") &&
@@ -69,7 +69,7 @@ storiesOf("Blocks|Banner", module)
   })
   .add("Standard Banners", () => {
     return (
-      <CardList>
+      <CardGrid>
         <Banner title="This is a Banner." />
         <Banner
           title="This is a Banner."
@@ -80,53 +80,53 @@ storiesOf("Blocks|Banner", module)
           description="A description can go here, if necessary."
           link="Link Text"
         />
-      </CardList>
+      </CardGrid>
     );
   })
   .add("Icon Banner", () => {
     return (
-      <CardList>
+      <CardGrid>
         <Banner
           icon="user"
           title="This is a Banner."
           description="A description can go here, if necessary."
           link="Link Text"
         />
-      </CardList>
+      </CardGrid>
     );
   })
   .add("Info Banner", () => {
     return (
-      <CardList>
+      <CardGrid>
         <Banner type="info" title="This is an Info Banner." />
-      </CardList>
+      </CardGrid>
     );
   })
   .add("Success Banner", () => {
     return (
-      <CardList>
+      <CardGrid>
         <Banner type="success" title="This is a Success Banner." />
-      </CardList>
+      </CardGrid>
     );
   })
   .add("Warning Banner", () => {
     return (
-      <CardList>
+      <CardGrid>
         <Banner type="warning" title="This is a Warning Banner." />
-      </CardList>
+      </CardGrid>
     );
   })
   .add("Alert Banner", () => {
     return (
-      <CardList>
+      <CardGrid>
         <Banner type="alert" title="This is an Alert Banner." />
-      </CardList>
+      </CardGrid>
     );
   })
 
   .add("The Banner Family", () => {
     return (
-      <CardList>
+      <CardGrid>
         <Banner title="This is a Banner." />
         <Banner
           title="This is a Banner."
@@ -167,6 +167,6 @@ storiesOf("Blocks|Banner", module)
           description="A description can go here, if necessary."
           link="Link Text"
         />
-      </CardList>
+      </CardGrid>
     );
   });

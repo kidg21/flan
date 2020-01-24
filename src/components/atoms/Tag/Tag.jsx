@@ -18,11 +18,17 @@ const TagContainer = styled.div`
   color: ${(props) => {
     return props.theme.text[props.badgeTextColor];
   }};
+  text-align: center;
   text-transform: uppercase;
   padding: ${(props) => {
     return props.badgePadding || "";
   }};
-  border-radius: 5em;
+  border: ${(props) => {
+    return `2px solid ${props.theme.text.inverse}`;
+  }};
+  border-radius: ${(props) => {
+    return props.theme.borders.radiusMax;
+  }};
 `;
 
 function Tag({

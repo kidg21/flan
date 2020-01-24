@@ -5,8 +5,8 @@ import React from "react";
 
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
-import Card from "layout/Card";
 import { Title } from "base/Typography";
+import Card from "elements/Card";
 import Icon from "atoms/Icon";
 import IconBlock from "blocks/IconBlock";
 /** TODO: Add documentation */

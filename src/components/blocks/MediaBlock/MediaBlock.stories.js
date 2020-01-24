@@ -3,8 +3,8 @@
 import React, { Fragment } from "react";
 import { Padding } from "helpers/Display";
 import Image from "atoms/Image";
-import Card, { CardList } from "layout/Card";
 import Text, { Title } from "base/Typography";
+import Card, { CardGrid } from "elements/Card";
 import MediaBlock from "blocks/MediaBlock";
 
 const MediaBlockNotes = markdown.require("./MediaBlock.md");
@@ -79,7 +79,7 @@ storiesOf("Blocks|Media Block", module)
   })
   .add("The Media Block Family", () => {
     return (
-      <CardList>
+      <CardGrid>
         <Card padding="none">
           <MediaBlock
             media={image}
@@ -153,6 +153,6 @@ storiesOf("Blocks|Media Block", module)
             reverse
           />
         </Card>
-      </CardList>
+      </CardGrid>
     );
   });

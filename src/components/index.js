@@ -44,7 +44,7 @@ export { default as Tabs, Tab } from "./blocks/Tabs";
 export { CardList } from "./blocks/List";
 
 // Publicly exported files from 'elements'
-export { default as Card } from "./elements/Card";
+export { default as Card, CardSection, CardGrid } from "./elements/Card";
 export { default as MainPanelHeader } from "./elements/PanelHeaders/MainPanelHeader";
 export { default as PropertyPanelHeader } from "./elements/PanelHeaders/PropertyPanelHeader";
 export { default as NavigationPanelHeader } from "./elements/PanelHeaders/NavigationPanelHeader";

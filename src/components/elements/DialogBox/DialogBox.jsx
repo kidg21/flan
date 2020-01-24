@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import Grid from "layout/Grid";
 import Button from "atoms/Button";
 import Text, { Title } from "base/Typography";
-import Card from "layout/Card";
+import Card from "elements/Card";
 import Bar from "blocks/Bar";
 
 function DialogBox({

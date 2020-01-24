@@ -4,7 +4,7 @@ import React from "react";
 import { Padding, IconGrid } from "helpers/Display";
 import Grid from "layout/Grid";
 import Text, { Title } from "base/Typography";
-import { CardList } from "layout/Card";
+import { CardGrid } from "elements/Card";
 import Icon from "atoms/Icon";
 import { iconsType, iconsSize } from "atoms/Icon/libraryIcon.data";
 
@@ -81,9 +81,9 @@ storiesOf("Atoms|Icon", module)
         <Title text="Icon Types" size="large" styling="underline" />
         <Text text="Icons inherit the 'color' of the parent container but can be overridden." />
         <Text text="Available Props: default (no prop)', 'info', 'success', 'warning', 'alert'" />
-        <CardList>
+        <CardGrid>
           <IconGrid data={iconsType} />
-        </CardList>
+        </CardGrid>
       </Grid>
     );
   })
@@ -93,9 +93,9 @@ storiesOf("Atoms|Icon", module)
         <Title text="Icon Sizes" size="large" styling="underline" />
         <Text text="Icons inherit the 'font-size' of the parent container and are relatively sized." />
         <Text text="Available Props: 'xs', 'sm', 'standard (no prop)', 'lg', '2x', '3x', '4x', '5x', '6x', '7x', '8x', '9x', '10x'" />
-        <CardList>
+        <CardGrid>
           <IconGrid data={iconsSize} />
-        </CardList>
+        </CardGrid>
       </Grid>
     );
   });

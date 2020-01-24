@@ -3,78 +3,95 @@ import React, { Fragment, useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-const AccordionSection = styled.div`
+const HeaderWrapper = styled.div`
   cursor: pointer;
 `;
 
 const ChildrenWrapper = styled.div`
-  ${(props) => {
-    return props.show ? "" : "display: none;";
-  }}
+  margin-top: ${(props) => {
+    return props.open ? "0.5em" : "0";
+  }};
+  padding-top: ${(props) => {
+    return props.open ? "0.5em" : "0";
+  }};
+  padding-bottom: ${(props) => {
+    return props.open ? "0.25em" : "0";
+  }};
+  max-height: ${(props) => {
+    return props.open ? "100%" : "0";
+  }};
+  opacity: ${(props) => {
+    return props.open ? "100%" : "0";
+  }};
+  transition: all 0.25s ease-in-out;
 `;
 
 const AccordionFunction = ({
-  id, header, children, visibility, onClick,
+  id, header, children, open, onClick,
 }) => {
   return (
     <Fragment>
-      <AccordionSection id={id} onClick={onClick}>
+      <HeaderWrapper id={id} onClick={onClick}>
         {header}
-      </AccordionSection>
-      <ChildrenWrapper show={visibility}>{children}</ChildrenWrapper>
+      </HeaderWrapper>
+      <ChildrenWrapper open={open}>{children}</ChildrenWrapper>
     </Fragment>
   );
 };
-
 
 function Expander({
   id,
   header,
   children,
-  initOpen,
+  open,
+  onClick,
 }) {
-  const [isOpen, setIsOpen] = useState(initOpen);
+  let isOpen = open;
+  let setIsOpen = onClick;
+  if (!setIsOpen) [isOpen, setIsOpen] = useState(isOpen);
   return (
     <AccordionFunction
       id={id}
       header={header}
-      visibility={isOpen}
+      open={isOpen}
       onClick={() => {
         setIsOpen(!isOpen);
       }}
     >
-      <div>{children}</div>
+      {children}
     </AccordionFunction>
   );
 }
 
-AccordionFunction.defaultProps = {
-  visibility: true,
-  onClick: () => { },
-  children: null,
-  id: "",
-};
-
 AccordionFunction.propTypes = {
-  id: PropTypes.string,
   children: PropTypes.node,
   header: PropTypes.node.isRequired,
+  id: PropTypes.string,
   onClick: PropTypes.func,
-  visibility: PropTypes.bool,
+  open: PropTypes.bool,
 };
 
-Expander.defaultProps = {
+AccordionFunction.defaultProps = {
   children: null,
-  header: null,
   id: "",
-  initOpen: false,
+  onClick: () => { },
+  open: true,
 };
 
 Expander.propTypes = {
   children: PropTypes.node,
   header: PropTypes.node,
   id: PropTypes.string,
-  initOpen: PropTypes.bool,
+  onClick: PropTypes.func,
+  open: PropTypes.bool,
+};
+
+Expander.defaultProps = {
+  children: null,
+  header: null,
+  id: "",
+  onClick: null,
+  open: false,
 };
 
 export default Expander;
