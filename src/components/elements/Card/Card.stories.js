@@ -103,7 +103,7 @@ const data = [
   },
 ];
 
-storiesOf("Work|Card/Elements", module)
+storiesOf("Elements|Card", module)
   .addDecorator(Padding)
   .addDecorator(checkA11y)
   .addDecorator(withKnobs)
