@@ -58,7 +58,7 @@ const FlexWrapper = styled.div`
 `;
 
 
-function Sidebar({
+function LeftRegion({
   children,
   right,
   visible,
@@ -75,7 +75,7 @@ function Sidebar({
   );
 }
 
-Sidebar.propTypes = {
+LeftRegion.propTypes = {
   children: PropTypes.node,
   id: PropTypes.string,
   visible: PropTypes.bool,
@@ -83,7 +83,7 @@ Sidebar.propTypes = {
 
 };
 
-Sidebar.defaultProps = {
+LeftRegion.defaultProps = {
   children: null,
   visible: null,
   id: null,
@@ -92,4 +92,4 @@ Sidebar.defaultProps = {
 };
 
 
-export default Sidebar;
+export default LeftRegion;

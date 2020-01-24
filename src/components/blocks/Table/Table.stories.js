@@ -2,7 +2,7 @@
 /* eslint-disable security/detect-object-injection */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
-import Layout from "layout/Layout";
+import Panel from "layout/Panel";
 import Menu from "blocks/Menu";
 import Button from "atoms/Button";
 import Command from "atoms/Command";
@@ -410,15 +410,14 @@ storiesOf("Blocks|Table", module)
   // .addDecorator(Container)
   .add("Simple", () => {
     return (
-      <Layout 
-      main={
+      <Panel>
         <DataTable
           headers={headers.slice(1)}
           rows={data}
           listId="foo"
           columnWidth={180}
-        />}
-      />
+        />
+      </Panel>
     );
   })
 
@@ -439,8 +438,7 @@ storiesOf("Blocks|Table", module)
       };
 
       return (
-        <Layout 
-        main={
+        <Panel>
           <DataTable
             headers={headers.slice(1)}
             rows={data}
@@ -451,8 +449,8 @@ storiesOf("Blocks|Table", module)
             highlightedCell={highlightedCell}
             selectedCell={selectedCell}
             columnWidth={180}
-          />}
-        />
+          />
+        </Panel>
       );
     });
   })
@@ -488,8 +486,7 @@ storiesOf("Blocks|Table", module)
       };
 
       return (
-        <Layout
-        main={
+        <Panel>
           <DataTable
             headers={headers}
             rows={data}
@@ -500,8 +497,8 @@ storiesOf("Blocks|Table", module)
             highlightedCell={highlightedCell}
             selectedCell={selectedCell}
             columnWidth={180}
-          />}
-        />
+          />
+          </Panel>
       );
     });
   })
@@ -537,8 +534,7 @@ storiesOf("Blocks|Table", module)
       };
 
       return (
-        <Layout 
-        main={
+        <Panel>
           <DataTable
             headers={headers}
             rows={data}
@@ -549,8 +545,8 @@ storiesOf("Blocks|Table", module)
             highlightedCell={highlightedCell}
             selectedCell={selectedCell}
             columnWidth={180}
-          />}
-        />
+          />
+        </Panel>
       );
     });
   })
@@ -586,8 +582,7 @@ storiesOf("Blocks|Table", module)
       };
 
       return (
-        <Layout 
-        main={
+        <Panel>
           <DataTable
             headers={headers}
             rows={data}
@@ -598,8 +593,8 @@ storiesOf("Blocks|Table", module)
             highlightedCell={highlightedCell}
             selectedCell={selectedCell}
             columnWidth={180}
-          />}
-        />
+          />
+        </Panel>
       );
     });
   })
@@ -636,8 +631,7 @@ storiesOf("Blocks|Table", module)
       };
 
       return (
-        <Layout
-        main={
+        <Panel>
           <DataTable
             headers={headers}
             rows={data}
@@ -648,8 +642,8 @@ storiesOf("Blocks|Table", module)
             highlightedCell={highlightedCell}
             selectedCell={selectedCell}
             columnWidth={180}
-          />}
-        />
+          />
+          </Panel>
       );
     });
   });

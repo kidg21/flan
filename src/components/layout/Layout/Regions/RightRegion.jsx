@@ -60,7 +60,7 @@ const FlexWrapper = styled.div`
 `;
 
 
-function Rightbar({
+function RightRegion({
   children,
   right,
   visible,
@@ -77,7 +77,7 @@ function Rightbar({
   );
 }
 
-Rightbar.propTypes = {
+RightRegion.propTypes = {
   children: PropTypes.node,
   id: PropTypes.string,
   visible: PropTypes.bool,
@@ -85,7 +85,7 @@ Rightbar.propTypes = {
 
 };
 
-Rightbar.defaultProps = {
+RightRegion.defaultProps = {
   children: null,
   visible: null,
   id: null,
@@ -94,4 +94,4 @@ Rightbar.defaultProps = {
 };
 
 
-export default Rightbar;
+export default RightRegion;

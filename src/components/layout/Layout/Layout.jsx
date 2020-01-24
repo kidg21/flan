@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Sidebar from "./Regions/Sidebar.jsx";
+import LeftRegion from "./Regions/LeftRegion.jsx";
 import Bar from "blocks/Bar";
-import RightBar from "./Regions/Rightbar.jsx";
+import RightRegion from "./Regions/RightRegion.jsx";
 import LayoutWrapper from "./Regions/LayoutWrapper.jsx";
 import Avatar from "atoms/Avatar";
 import LightBoxIcon from "images/LightBoxIconLogo.png";
@@ -36,23 +36,23 @@ height: 100vh;
 function Layout({
   left,
   right,
-  header,
-  main,
+  headerContent,
+  mainContent,
 }) {
-  let seeSidebar = null;
+  let seeLeftRegion = null;
   let leftVisible = left ? left.visible : false;
   let setLeftVisible = left ? left.toggle : null;
   if (left) {
     if (!setLeftVisible) [leftVisible, setLeftVisible] = useState(leftVisible);
-    seeSidebar = () => { setLeftVisible(!leftVisible); };
+    seeLeftRegion = () => { setLeftVisible(!leftVisible); };
   }
 
-  let seeRightbar = null;
+  let seeRightRegion = null;
   let rightVisible = right ? right.visible : false;
   let setRightVisible = right ? right.toggle : null;
   if (right) {
     if (!setRightVisible) [rightVisible, setRightVisible] = useState(rightVisible);
-    seeRightbar = () => { setRightVisible(!rightVisible); };
+    seeRightRegion = () => { setRightVisible(!rightVisible); };
   }
 
 
@@ -62,7 +62,7 @@ function Layout({
         contentAlign="center"
         padding="2x"
         left={<Avatar
-          onClick={seeSidebar}
+          onClick={seeLeftRegion}
           image
           src={LightBoxIcon}
           alt="logo"
@@ -70,16 +70,16 @@ function Layout({
         right={<Icon
           size="lg"
           icon="settings"
-          onClick={seeRightbar}
+          onClick={seeRightRegion}
         />}
-        center={header}
+        center={headerContent}
       />
       <ReactWrapper>
-        {leftVisible ? <Sidebar visible={leftVisible} > {left.content} </Sidebar> : null}
+        {leftVisible ? <LeftRegion visible={leftVisible} > {left.content} </LeftRegion> : null}
         <LayoutWrapper >
-          {main}
+          {mainContent}
         </LayoutWrapper>
-        {rightVisible ? <RightBar visible={rightVisible}> {right.content} </RightBar> : null}
+        {rightVisible ? <RightRegion visible={rightVisible}> {right.content} </RightRegion> : null}
       </ReactWrapper >
     </Base >
   );
@@ -97,8 +97,8 @@ Layout.propTypes = {
     visible: PropTypes.bool,
     toggle: PropTypes.func,
   },
-  header: PropTypes.node,
-  main: PropTypes.node,
+  headerContent: PropTypes.node,
+  mainContent: PropTypes.node,
 };
 
 Layout.defaultProps = {
@@ -112,8 +112,8 @@ Layout.defaultProps = {
     visible: null,
     toggle: null,
   },
-  header: null,
-  main: null,
+  headerContent: null,
+  mainContent: null,
 };
 
 
