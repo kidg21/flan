@@ -31,6 +31,9 @@ const StyledText = styled.h4`
   text-decoration: ${(props) => {
     return props.textDecoration || "";
   }};
+  opacity: ${(props) => {
+    return props.opacity || "";
+  }};
   user-select: ${(props) => {
     return props.select || "";
   }};
@@ -145,6 +148,7 @@ function Text({
   id,
   link,
   onClick,
+  opacity,
   select,
   target,
   text,
@@ -170,6 +174,7 @@ function Text({
       fontFamily={textProps.fontFamily}
       href={href}
       onClick={onClick}
+      opacity={opacity}
       target={target}
       title={title}
       id={id}
@@ -201,6 +206,7 @@ Text.propTypes = {
   id: PropTypes.string,
   link: PropTypes.bool,
   onClick: PropTypes.string,
+  opacity: PropTypes.string,
   size: PropTypes.string,
   target: PropTypes.string,
   text: PropTypes.string,
@@ -223,6 +229,7 @@ Text.defaultProps = {
   id: null,
   link: false,
   onClick: null,
+  opacity: null,
   select: null,
   size: null,
   spacing: null,
@@ -238,7 +245,7 @@ Text.defaultProps = {
 
 function Headline({ text, children, ...textProps }) {
   return (
-    <Text separator="pipe" size="2x" weight="bold" {...textProps}>
+    <Text spacing="2" size="3x" weight="bold" {...textProps}>
       {text || children}
     </Text>
   );
@@ -274,9 +281,11 @@ Title.defaultProps = {
   children: null,
 };
 
-function SubTitle({ text, children, ...textProps }) {
+function SubTitle({
+  text, children, ...textProps
+}) {
   return (
-    <Text spacing="1" type="secondary" margin="0px 0px 0.15em" {...textProps}>
+    <Text spacing="2" opacity="0.8" size="lg" margin="0px 0px 0.15em" {...textProps}>
       {text || children}
     </Text>
   );

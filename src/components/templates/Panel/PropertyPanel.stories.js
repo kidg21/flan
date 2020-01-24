@@ -9,23 +9,23 @@ import Panel from "layout/Panel";
 import List, { ListItem } from "blocks/List";
 
 const lotData = [
-  { id: "a", name: "Land Use", value: "Commercial" },
-  { id: "b", name: "Land Description", value: "Miscellaneous Commercial" },
-  { id: "c", name: "Lot Area", value: "62,344 SF | 1.43 Acres" },
+  { id: "a", label: "Land Use", value: "Commercial" },
+  { id: "b", label: "Land Description", value: "Miscellaneous Commercial" },
+  { id: "c", label: "Lot Area", value: "62,344 SF | 1.43 Acres" },
 ];
 
 const ownerData = [
-  { id: "a", name: "Owner", value: "1830 La Cienga LLC" },
-  { id: "b", name: "Last Transfer", value: "12/31/14" },
-  { id: "c", name: "Last Market Sale", value: "10/31/13 for $11,000,110" },
-  { id: "d", name: "Opportunity Zone ", value: "No" },
+  { id: "a", label: "Owner", value: "1830 La Cienga LLC" },
+  { id: "b", label: "Last Transfer", value: "12/31/14" },
+  { id: "c", label: "Last Market Sale", value: "10/31/13 for $11,000,110" },
+  { id: "d", label: "Opportunity Zone ", value: "No" },
 ];
 
 const buildingData = [
-  { id: "a", name: "Value", value: "$11,851,071" },
-  { id: "b", name: "Square Feet", value: "34,529 SF" },
-  { id: "c", name: "# of Units", value: "1" },
-  { id: "d", name: "Year Built", value: "1950" },
+  { id: "a", label: "Value", value: "$11,851,071" },
+  { id: "b", label: "Square Feet", value: "34,529 SF" },
+  { id: "c", label: "# of Units", value: "1" },
+  { id: "d", label: "Year Built", value: "1950" },
 ];
 
 const data = [
@@ -34,35 +34,35 @@ const data = [
     onClickLink: () => {
       console.log("clicked Save");
     },
-    name: "Save",
+    label: "Save",
   },
   {
     id: "b",
     onClickLink: () => {
       console.log("clicked Filter");
     },
-    name: "Filter",
+    label: "Filter",
   },
   {
     id: "c",
     onClickLink: () => {
       console.log("clicked Share");
     },
-    name: "Share",
+    label: "Share",
   },
   {
     id: "d",
     onClickLink: () => {
       console.log("clicked Refresh");
     },
-    name: "Refresh",
+    label: "Refresh",
   },
   {
     id: "e",
     onClickLink: () => {
       console.log("clicked Layer");
     },
-    name: "Layer",
+    label: "Layer",
   },
 ];
 

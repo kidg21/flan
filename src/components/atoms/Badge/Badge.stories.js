@@ -3,7 +3,7 @@
 import React from "react";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
-import Card, { CardSection, CardList } from "layout/Card";
+import Card, { CardSection, CardGrid } from "layout/Card";
 import Title from "base/Typography";
 import Badge from "./Badge.jsx";
 
@@ -77,7 +77,7 @@ storiesOf("Atoms|Badge", module)
 
   .add("The Badge Family", () => {
     return (
-      <CardList columns="4" gap="large">
+      <CardGrid columns="4" gap="large">
         <Card>
           <CardSection>
             <Badge label="1" />
@@ -176,6 +176,6 @@ storiesOf("Atoms|Badge", module)
             <Title text="Bottom-Left" />
           </CardSection>
         </Card>
-      </CardList>
+      </CardGrid>
     );
   });

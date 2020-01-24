@@ -86,7 +86,7 @@ function Legend({
                 fontWeight={fontWeight}
                 fontSize={fontSize}
               >
-                {row.name}
+                {row.label}
               </Cell>
               <Cell
                 cellBorder={cellBorder}
@@ -110,7 +110,7 @@ Legend.propTypes = {
   fontSize: PropTypes.string,
   data: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
-    name: PropTypes.string,
+    label: PropTypes.string,
     value: PropTypes.node,
   })).isRequired,
   title: PropTypes.node,
