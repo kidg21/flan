@@ -65,7 +65,9 @@ display: flex;
     return props.theme.palette[props.underlineColor];
   }};
   transition: all 0.15s ease;
-
+  & > * {
+    margin: 0;
+  }
   &:focus {
     outline: none;
   }

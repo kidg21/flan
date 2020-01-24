@@ -2,15 +2,11 @@
 /* eslint-disable security/detect-object-injection */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
-import Title from "base/Typography";
 import Layout from "layout/Layout";
-import Panel from "layout/Panel";
-import Card from "layout/Card";
 import Menu from "blocks/Menu";
 import Button from "atoms/Button";
 import Command from "atoms/Command";
 import SelectMenu from "atoms/SelectMenu";
-import Bar from "blocks/Bar";
 import DataTable from "blocks/Table";
 
 // Only columns specified here will be displayed
@@ -369,35 +365,35 @@ const menu = [
     onClickLink: () => {
       console.log("clicked Save");
     },
-    name: "Save",
+    label: "Save",
   },
   {
     id: "b",
     onClickLink: () => {
       console.log("clicked Filter");
     },
-    name: "Filter",
+    label: "Filter",
   },
   {
     id: "c",
     onClickLink: () => {
       console.log("clicked Share");
     },
-    name: "Share",
+    label: "Share",
   },
   {
     id: "d",
     onClickLink: () => {
       console.log("clicked Refresh");
     },
-    name: "Refresh",
+    label: "Refresh",
   },
   {
     id: "e",
     onClickLink: () => {
       console.log("clicked Layer");
     },
-    name: "Layer",
+    label: "Layer",
   },
 ];
 

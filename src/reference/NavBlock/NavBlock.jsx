@@ -20,7 +20,7 @@
 //   text-align: center;
 //   justify-items: center;
 //   padding: .25rem 1rem;
-//   box-shadow: ${shadows.dropShadow};
+//   box-shadow: ${shadows.shadow1};
 //   ${props =>
 //     (props.dark ||
 //       props.greyDark ||
@@ -30,7 +30,7 @@
 //       props.alert) &&
 //     css`
 //       color: ${colors.grey_light};
-//       box-shadow: ${shadows.lightBorderShadow};
+//       box-shadow: ${shadows.shadow0};
 //       a {
 //         color: ${colors.grey_light};
 //       }

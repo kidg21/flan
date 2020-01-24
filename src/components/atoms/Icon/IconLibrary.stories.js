@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { IconGrid } from "helpers/Display";
-import { CardList } from "layout/Card";
+import { CardGrid } from "elements/Card";
 import {
   iconsApp,
   iconsBrand,
@@ -18,24 +18,24 @@ export default {
 /** TODO: Break 'App' icon set into subcategories */
 export const Standard = () => {
   return (
-    <CardList columns="3">
+    <CardGrid columns="3">
       <IconGrid data={iconsApp} size="10x" />
-    </CardList>
+    </CardGrid>
   );
 };
 
 export const Navigation = () => {
   return (
-    <CardList columns="3">
+    <CardGrid columns="3">
       <IconGrid data={iconsNavigation} />
-    </CardList>
+    </CardGrid>
   );
 };
 
 export const Brand = () => {
   return (
-    <CardList columns="3">
+    <CardGrid columns="3">
       <IconGrid data={iconsBrand} />
-    </CardList>
+    </CardGrid>
   );
 };

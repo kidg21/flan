@@ -7,20 +7,17 @@ import { Skeleton } from "helpers";
 
 const StyledLabel = styled.label`
   color: inherit;
-  width: max-content;
   user-select: none;
   font-size: ${(props) => {
     return props.fontSize || "";
   }};;
   cursor: pointer;
   display: flex;
-  justify-content: center;
-  align-items: center;
   font-weight: ${(props) => {
-    return props.fontWeight || "500";
+    return props.fontWeight || "";
   }};;
   letter-spacing: ${(props) => {
-    return props.letterSpacing || ".25px";
+    return props.letterSpacing || "";
   }};;
   text-transform: ${(props) => {
     return props.textTransform || "";
@@ -69,8 +66,8 @@ function Label({
   textTransform,
   weight,
 }) {
-  const fontSize = sizeHash[size && size.toLowerCase()] || "1rem";
-  const fontWeight = weightHash[weight && weight.toLowerCase()] || "500";
+  const fontSize = sizeHash[size && size.toLowerCase()] || "";
+  const fontWeight = weightHash[weight && weight.toLowerCase()] || "";
   return (
     <StyledLabel
       fontWeight={fontWeight}

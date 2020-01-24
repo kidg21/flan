@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
-import React, { useState } from "react";
+import React from "react";
 import Panel from "layout/Panel";
 import List, { ListItem } from "blocks/List";
 import Layout from "./Layout.jsx";
