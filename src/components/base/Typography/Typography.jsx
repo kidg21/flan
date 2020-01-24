@@ -296,7 +296,7 @@ Label.defaultProps = {
 
 Title.propTypes = {
   text: PropTypes.string,
-  size: PropTypes.node,
+  size: PropTypes.string,
   weight: PropTypes.string,
 };
 Title.defaultProps = {
@@ -308,7 +308,7 @@ Title.defaultProps = {
 
 Text.propTypes = {
   text: PropTypes.string,
-  size: PropTypes.node,
+  size: PropTypes.string,
   weight: PropTypes.string,
 };
 Text.defaultProps = {
@@ -320,11 +320,11 @@ Text.defaultProps = {
 
 Link.propTypes = {
   text: PropTypes.string,
-  target: PropTypes.node,
-  onClick: PropTypes.node,
-  size: PropTypes.node,
+  target: PropTypes.string,
+  onClick: PropTypes.func,
+  size: PropTypes.string,
   weight: PropTypes.string,
-  href: PropTypes.node,
+  href: PropTypes.string,
   disabled: PropTypes.bool,
 };
 Link.defaultProps = {
