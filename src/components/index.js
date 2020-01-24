@@ -58,7 +58,6 @@ export {
 } from "./elements/DialogBox";
 
 // Publicly exported files from 'layout'
-export { default as CardLayout, CardList as oldCardList } from "./layout/Card"; // TODO: deprecated Card, fix
 export { default as Form, Section } from "./layout/Form";
 export { default as Grid } from "./layout/Grid";
 export { default as Layout } from "./layout/Layout";
