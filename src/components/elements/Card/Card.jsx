@@ -209,11 +209,11 @@ function ExpandingSection({
 }
 
 ExpandingSection.propTypes = {
-  description: PropTypes.node,
+  description: PropTypes.string,
   icon: PropTypes.string,
   id: PropTypes.string,
   label: PropTypes.string,
-  more: PropTypes.string,
+  more: PropTypes.node,
   onClick: PropTypes.func,
   open: PropTypes.bool,
   title: PropTypes.string,
@@ -272,8 +272,8 @@ function CardSection({
 CardSection.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
-  footer: PropTypes.string,
-  header: PropTypes.string,
+  footer: PropTypes.node,
+  header: PropTypes.node,
   id: PropTypes.string,
   padding: PropTypes.oneOf(["0", "1x", "2x", "3x", "4x"]),
   onClick: PropTypes.func,
@@ -438,7 +438,7 @@ function Card({
       // but captured should we need to handle
       // supported mime-types in a specific way
     } else if
-    (
+      (
       mimeType.startsWith("text") ||
       mimeType.startsWith("application")
     ) {
@@ -484,7 +484,7 @@ function Card({
             commands.length > 2 ? (
               <Menu data={commands.slice(2)} position="topLeft" />
             ) : (
-              <Spacer />
+                <Spacer />
               )
           }
         />
