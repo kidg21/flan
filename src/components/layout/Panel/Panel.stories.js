@@ -2,60 +2,55 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import Card, { CardGrid } from "elements/Card";
-import Layout from "layout/Layout";
 import Panel from "layout/Panel";
+import Layout from "layout/Layout";
 
 storiesOf("Layout|Panel", module)
   .addDecorator(checkA11y)
   .add("Panel", () => {
-    return <Layout><Panel /></Layout>;
+    return <Panel />;
   })
   .add("Panel with header", () => {
     return (
-      <Layout>
-        <Panel
-          header={<Card />}
-        />
-      </Layout>
+      <Panel
+        header={<Card />}
+      />
     );
   })
   .add("Panel with footer", () => {
     return (
-      <Layout>
-        <Panel
-          footer={<Card />}
-        />
-      </Layout>
+      <Panel
+        footer={<Card />}
+      />
     );
   })
   .add("Panel with header/footer", () => {
     return (
-      <Layout>
-        <Panel
-          header={<Card />}
-          footer={<Card />}
-        />
-      </Layout>
+      <Panel
+        header={<Card />}
+        footer={<Card />}
+      />
     );
   })
   .add("Panel - with Card List", () => {
     return (
-      <Layout>
-        <Panel
-          id="Panel"
-          header={<Card />}
-          footer={<Card />}
-        >
-          <CardGrid>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-          </CardGrid>
-        </Panel>
-      </Layout>
+      <Layout
+        mainContent={
+          <Panel
+            id="Panel"
+            header={<Card />}
+            footer={<Card />}
+          >
+            <CardGrid>
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+            </CardGrid>
+          </Panel>}
+      />
     );
   });
