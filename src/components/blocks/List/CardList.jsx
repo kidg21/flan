@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
+
 import { Grid, CellMeasurerCache, CellMeasurer, ColumnSizer, AutoSizer, InfiniteLoader } from "react-virtualized";
 import styled from "styled-components";
 
@@ -29,8 +30,8 @@ class CardList extends PureComponent {
     super(props);
     this.columnCount = props.columnCount;
     this.rowCount = 1;
-    this.width = props.width;
-    this.height = props.height;
+    this.width = props.width || 0;
+    this.height = props.height || 0;
     this.cache = null;
 
     this._cellRenderer = this._cellRenderer.bind(this);
@@ -154,6 +155,7 @@ class CardList extends PureComponent {
     if (index >= data.length) {
       return null;
     }
+
     if (selectedCell && selectedCell.rowIndex === rowIndex
       && selectedCell.columnIndex === columnIndex) {
       cellProps.isSelected = true;
@@ -162,23 +164,23 @@ class CardList extends PureComponent {
       cellProps.isHighlighted = true;
     }
     cellProps.onClick = (e) => {
-      if (onCellClick) onCellClick(e, { rowIndex, columnIndex });
+      if (onCellClick) onCellClick(e, { index, rowIndex, columnIndex });
     };
     cellProps.onMouseOver = (e) => {
-      if (onCellMouseOver) onCellMouseOver(e, { rowIndex, columnIndex });
+      if (onCellMouseOver) onCellMouseOver(e, { index, rowIndex, columnIndex });
     };
     cellProps.onMouseOut = (e) => {
-      if (onCellMouseOut) onCellMouseOut(e, { rowIndex, columnIndex });
+      if (onCellMouseOut) onCellMouseOut(e, { index, rowIndex, columnIndex });
     };
     cellProps.onMouseLeave = (e) => {
-      if (onCellMouseLeave) onCellMouseLeave(e, { rowIndex, columnIndex });
+      if (onCellMouseLeave) onCellMouseLeave(e, { index, rowIndex, columnIndex });
     };
     cellProps.onMouseEnter = (e) => {
-      if (onCellMouseEnter) onCellMouseEnter(e, { rowIndex, columnIndex });
+      if (onCellMouseEnter) onCellMouseEnter(e, { index, rowIndex, columnIndex });
     };
 
     const content = (
-      <CellWrapper style={{ ...style, width: this._columnWidth }} {...cellProps}>
+      <CellWrapper id={`cellwrapper-${rowIndex}-${columnIndex}`} key={key} style={{ ...style, width: this._columnWidth }} {...cellProps}>
         <Template
           data={data[index]}
           isHighlighted={cellProps.isHighlighted}
@@ -194,7 +196,7 @@ class CardList extends PureComponent {
       <CellMeasurer
         cache={this.cache}
         columnIndex={columnIndex}
-        key={key}
+        key={`cellmeasurer-${key}`}
         parent={parent}
         rowIndex={rowIndex}
       >
@@ -255,7 +257,7 @@ class CardList extends PureComponent {
   // e.startIndex & e.stopIndex are the row indexes
   _loadMoreRows(e) {
     const { loadRows, data } = this.props;
-    if (!loadRows) return null;
+    if (!loadRows) return Promise.resolve();
     // get the data/cell index given the row index
     const _startIndex = this._getCellIndex(e.startIndex, 0);
     let _stopIndex = this._getCellIndex(e.stopIndex, this.columnCount - 1);
@@ -446,5 +448,7 @@ CardList.propTypes = {
   loadRows: PropTypes.func,
   minimumBatchSize: PropTypes.number,
 };
+
+CardList.displayName = "cardList";
 
 export default CardList;
