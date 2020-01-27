@@ -333,10 +333,10 @@ storiesOf("Blocks|CardList", module)
         });
 
         after(() => {
-          // output.getWrappingComponent().unmount();
+          // needed so that promises from cardlist can finish
           setTimeout(() => {
             output.unmount();
-          }, 0)
+          }, 0);
         });
 
         it("everything is fine :D", () => {
