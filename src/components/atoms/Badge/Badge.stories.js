@@ -3,7 +3,7 @@
 import React from "react";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
-import Card, { CardSection, CardGrid } from "layout/Card";
+import Card, { CardSection, CardGrid } from "elements/Card";
 import Title from "base/Typography";
 import Badge from "./Badge.jsx";
 
