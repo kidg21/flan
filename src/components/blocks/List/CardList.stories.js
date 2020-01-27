@@ -334,7 +334,9 @@ storiesOf("Blocks|CardList", module)
 
         after(() => {
           // output.getWrappingComponent().unmount();
-          output.unmount();
+          setTimeout(() => {
+            output.unmount();
+          }, 0)
         });
 
         it("everything is fine :D", () => {
