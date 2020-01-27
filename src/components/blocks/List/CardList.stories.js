@@ -1,7 +1,7 @@
-/* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 /* global number */
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import { expect } from "chai";
 import { mount } from "enzyme";
 import { spy } from "sinon";
@@ -15,6 +15,7 @@ import SelectMenu from "atoms/SelectMenu";
 import { CheckboxGroup } from "atoms/Checkbox";
 import Button from "atoms/Button";
 import Grid from "layout/Grid";
+import Card from "elements/Card";
 import CardList from "./CardList.jsx";
 
 storiesOf("Blocks|CardList", module)
@@ -97,11 +98,13 @@ storiesOf("Blocks|CardList", module)
               textInputs={[{
                 id: "delete-input",
                 pattern: "^[0-9]*$",
+                value: "",
               }]}
             />
             <CheckboxGroup
               label="onScroll Options"
               data={[{
+                id: "check-scroll",
                 checked: clearScroll,
                 onChange: () => {
                   setClearScroll(!clearScroll);
@@ -126,6 +129,7 @@ storiesOf("Blocks|CardList", module)
               textInputs={[{
                 id: "focus-input",
                 pattern: "^[0-9]*$",
+                value: "",
               }]}
             />
             <SelectMenu
@@ -158,6 +162,7 @@ storiesOf("Blocks|CardList", module)
               textInputs={[{
                 id: "scrolltop-input",
                 pattern: "^[0-9]*$",
+                value: "",
               }]}
             />
             <InputBlock
@@ -176,7 +181,8 @@ storiesOf("Blocks|CardList", module)
               textInputs={[{
                 id: "count-input",
                 pattern: "^[0-9]*$",
-                value: columnCount.toString(10),
+                placeholder: "1",
+                value: typeof columnCount === "number" ? columnCount.toString(10) : "",
               }]}
             />
             <InputBlock
@@ -197,6 +203,7 @@ storiesOf("Blocks|CardList", module)
                 id: "colWidth-input",
                 pattern: "^[0-9]*$|auto",
                 placeholder: "use column count",
+                value: "",
               }]}
             />
             <InputBlock
@@ -215,9 +222,9 @@ storiesOf("Blocks|CardList", module)
               }}
               textInputs={[{
                 id: "rowHeight-input",
-                pattern: "^[0-9]*$|auto",
+                pattern: "^[0-9]*$",
                 placeholder: "auto",
-                value: rowHeight.toString(10),
+                value: typeof rowHeight === "number" ? rowHeight.toString(10) : "",
               }]}
             />
           </Grid>
@@ -228,7 +235,7 @@ storiesOf("Blocks|CardList", module)
             data={_data[id]}
             // simple template
             Template={(props) => {
-              if (!props.data || props.data.status === "loading") return <div style={{height: "100px"}}>loading</div>;
+              if (!props.data || props.data.status === "loading") return <div style={{ height: "100px" }}>loading</div>;
               return <div>{`${props.index}: ${props.data.label}`}</div>;
             }}
             // simple onClick interaction
@@ -508,7 +515,7 @@ storiesOf("Blocks|CardList", module)
           })).to.be.true;
         });
 
-        it("should attach onCellClick callback to click event", () =>{
+        it("should attach onCellClick callback to click event", () => {
           output.setProps(resetProps);
           const spyCell = spy(() => {});
           output.setProps({
@@ -527,7 +534,7 @@ storiesOf("Blocks|CardList", module)
           expect(spyCell.args[1][1].columnIndex).to.equal(0);
         });
 
-        it("should attach onCellMouseOver callback to mouseOver event", () =>{
+        it("should attach onCellMouseOver callback to mouseOver event", () => {
           output.setProps(resetProps);
           const spyCell = spy(() => {});
           output.setProps({
@@ -546,7 +553,7 @@ storiesOf("Blocks|CardList", module)
           expect(spyCell.args[1][1].columnIndex).to.equal(0);
         });
 
-        it("should attach onCellMouseOut callback to mouseOut event", () =>{
+        it("should attach onCellMouseOut callback to mouseOut event", () => {
           output.setProps(resetProps);
           const spyCell = spy(() => {});
           output.setProps({
@@ -565,7 +572,7 @@ storiesOf("Blocks|CardList", module)
           expect(spyCell.args[1][1].columnIndex).to.equal(0);
         });
 
-        it("should attach onCellMouseEnter callback to mouseEnter event", () =>{
+        it("should attach onCellMouseEnter callback to mouseEnter event", () => {
           output.setProps(resetProps);
           const spyCell = spy(() => {});
           output.setProps({
@@ -584,7 +591,7 @@ storiesOf("Blocks|CardList", module)
           expect(spyCell.args[1][1].columnIndex).to.equal(0);
         });
 
-        it("should attach onCellMouseLeave callback to mouseLeave event", () =>{
+        it("should attach onCellMouseLeave callback to mouseLeave event", () => {
           output.setProps(resetProps);
           const spyCell = spy(() => {});
           output.setProps({
@@ -605,5 +612,53 @@ storiesOf("Blocks|CardList", module)
       });
     });
 
+    return story;
+  })
+  .add("Simple CardList w/Card Template", () => {
+    const randomData = Array.from(Array(50), (x, i) => { return { id: i, label: `FOO-${Math.floor(Math.random() * 1000)}-${i}` }; });
+    const cardTemplate = (props) => {
+      if (!props.data || props.data.status === "loading") return <div style={{ height: "100px" }}>loading</div>;
+      return (
+        <Card
+          id={props.data.id.toString()}
+          title={`${props.index}: ${props.data.label}`}
+          description="wow cards"
+          more={{
+            element: <Button label="Button" />,
+            onToggle: () => {
+              if (props.remeasureCells) {
+                props.remeasureCells({ rowIndex: props.rowIndex, columnIndex: props.columnIndex });
+              }
+            },
+          }}
+          disableTransition
+        />
+      );
+    };
+
+    cardTemplate.propTypes = {
+      data: PropTypes.shape({
+        status: PropTypes.string,
+        id: PropTypes.number,
+        label: PropTypes.string,
+      }).isRequired,
+      index: PropTypes.number.isRequired,
+      rowIndex: PropTypes.number.isRequired,
+      columnIndex: PropTypes.number.isRequired,
+      remeasureCells: PropTypes.func.isRequired,
+    };
+
+    const story = React.createElement(() => {
+      return (
+        <Layout>
+          <CardList
+            id="simple-cardlist"
+            data={randomData}
+            Template={cardTemplate}
+            columnCount={4}
+          />
+        </Layout>
+      );
+    });
     return story;
   });

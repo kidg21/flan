@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 import { Grid, CellMeasurerCache, CellMeasurer, ColumnSizer, AutoSizer, InfiniteLoader } from "react-virtualized";
 import styled from "styled-components";
+import { DisableTransitionContext } from "States";
 
 /* eslint-disable security/detect-object-injection */
 const GridWrapper = styled.div`
@@ -334,59 +335,63 @@ class CardList extends PureComponent {
           this._registerInfiniteChild = registerChild;
           this._onRowsRendered = onRowsRendered;
           return (
-            <GridWrapper>
-              <AutoSizer
-                onResize={this._onResize}
-                defaultHeight={100}
-                defaultWidth={200}
+          // DisableTransitionContext used to disable transitions on cards for accurate cell measurements
+            <DisableTransitionContext.Provider value>
+              <GridWrapper>
+                <AutoSizer
+                  onResize={this._onResize}
+                  defaultHeight={100}
+                  defaultWidth={200}
 
-                // props to re-render children
-                _width={this.width}
-              >
-                {() => {
-                  return (
-                    <ColumnSizer
-                      columnCount={this.columnCount}
-                      width={this.width}
-                    >
-                      {({
-                        adjustedWidth,
-                        columnWidth: _columnWidth,
-                        registerChild: registerColumnChild,
-                      }) => {
-                        this._columnWidth = _columnWidth;
-                        this._registerColumnChild = registerColumnChild;
-                        return (
-                          <Grid
-                            id={id}
-                            ref={this._setRefGrid}
-                            cellRenderer={this._cellRenderer}
-                            columnCount={this.columnCount}
-                            columnWidth={_columnWidth}
-                            deferredMeasurementCache={this.cache}
-                            height={this.height}
-                            rowCount={this.rowCount}
-                            rowHeight={this.cache ? this.cache.rowHeight : rowHeight}
-                            width={adjustedWidth}
-                            scrollToAlignment={typeof scrollToAlignment === "string" ? scrollToAlignment : "start"}
-                            scrollToRow={scrollToRow}
-                            scrollTop={scrollToTop}
-                            onScroll={(params) => {
-                              if (onScroll) onScroll(params);
-                            }}
-                            onSectionRendered={this._onSectionRendered}
+                  // props to re-render children
+                  _width={this.width}
+                >
+                  {() => {
+                    return (
+                      <ColumnSizer
+                        columnCount={this.columnCount}
+                        width={this.width}
+                      >
+                        {({
+                          adjustedWidth,
+                          columnWidth: _columnWidth,
+                          registerChild: registerColumnChild,
+                        }) => {
+                          this._columnWidth = _columnWidth;
+                          this._registerColumnChild = registerColumnChild;
+                          return (
+                            <Grid
+                              id={id}
+                              ref={this._setRefGrid}
+                              cellRenderer={this._cellRenderer}
+                              columnCount={this.columnCount}
+                              columnWidth={_columnWidth}
+                              deferredMeasurementCache={this.cache}
+                              height={this.height}
+                              rowCount={this.rowCount}
+                              rowHeight={this.cache ? this.cache.rowHeight : rowHeight}
+                              width={adjustedWidth}
+                              scrollToAlignment={typeof scrollToAlignment === "string" ? scrollToAlignment : "start"}
+                              scrollToRow={scrollToRow}
+                              scrollTop={scrollToTop}
+                              onScroll={(params) => {
+                                if (onScroll) onScroll(params);
+                              }}
+                              onSectionRendered={this._onSectionRendered}
 
-                            // props to cause re-render children
-                            _selectedCell={selectedCell}
-                            _highlightedCell={highlightedCell}
-                          />
-                        );
-                      }}
-                    </ColumnSizer>
-                  );
-                }}
-              </AutoSizer>
-            </GridWrapper>
+                              // props to cause re-render children
+                              _selectedCell={selectedCell}
+                              _highlightedCell={highlightedCell}
+                            />
+                          );
+                        }}
+                      </ColumnSizer>
+                    );
+                  }}
+                </AutoSizer>
+              </GridWrapper>
+
+            </DisableTransitionContext.Provider>
           );
         }}
       </InfiniteLoader>

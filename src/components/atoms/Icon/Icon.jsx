@@ -206,6 +206,8 @@ function Icon({
   if (isDisabled) color = "disabled";
   else if (onClick) color = "link";
 
+  // FontAwesomeIcon only allows values of 90, 180, or 270
+  const _rotation = rotation === 0 ? null : rotation;
 
   const styledIcon = (
     <StyledIcon
@@ -217,7 +219,7 @@ function Icon({
       icon={iconValue}
       id={id}
       pulse={pulse}
-      rotation={rotation}
+      rotation={_rotation}
       size={size}
       spin={spin}
       title={title}

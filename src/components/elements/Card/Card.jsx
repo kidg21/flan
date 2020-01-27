@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/media-has-caption */
 /* eslint-disable linebreak-style */
 /* eslint-disable complexity */
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
@@ -16,6 +16,7 @@ import Image from "atoms/Image";
 import Avatar from "atoms/Avatar";
 import Menu from "blocks/Menu";
 import Expander from "utils/Expander";
+import { DisableTransitionContext } from "States";
 
 const CardSectionWrapper = styled.section`
   position: relative;
@@ -41,7 +42,9 @@ const CardSectionWrapper = styled.section`
   max-height: ${(props) => {
     return props.open ? "0" : "100vh";
   }}; 
-  transition: all 0.25s ease-in-out;
+  transition: ${(props) => {
+    return props.disableTransition ? "" : "all 0.25s ease-in-out";
+  }};
   a {
   color: ${(props) => {
     return props.theme.text[props.sectionColor] || "";
@@ -170,13 +173,13 @@ const CardGridWrapper = styled(Grid)`
 `;
 
 function ExpandingSection({
-  description, icon, id, label, more, onClick, open, title,
+  children, description, icon, id, label, onClick, open, title,
 }) {
   let rotation;
   if (open) {
-    rotation = "180";
+    rotation = 180;
   } else {
-    rotation = "0";
+    rotation = 0;
   }
   return (
     <Expander
@@ -199,31 +202,31 @@ function ExpandingSection({
               </React.Fragment>
             }
             rightWidth="max-content"
-            right={more ? <Icon icon="up" size="lg" rotation={rotation} /> : null}
+            right={children ? <Icon icon="up" size="lg" rotation={rotation} /> : null}
           />
         ) : null}
     >
-      {more}
+      {children}
     </Expander>
   );
 }
 
 ExpandingSection.propTypes = {
+  children: PropTypes.node,
   description: PropTypes.string,
   icon: PropTypes.string,
   id: PropTypes.string,
   label: PropTypes.string,
-  more: PropTypes.node,
   onClick: PropTypes.func,
   open: PropTypes.bool,
   title: PropTypes.string,
 };
 ExpandingSection.defaultProps = {
+  children: null,
   description: null,
   icon: null,
   id: null,
   label: null,
-  more: null,
   onClick: null,
   open: false,
   title: null,
@@ -335,6 +338,7 @@ function Card({
       break;
   }
 
+  const disableTransition = useContext(DisableTransitionContext);
   const [open, setOpen] = useState(false);
   function toggleDropdown() {
     if (open) {
@@ -364,18 +368,22 @@ function Card({
         />
       </CardSection>
     );
-    if (more) {
+    if (more && more.element) {
       headerSection = (
-        <CardSection type={type}>
+        <CardSection type={type} disableTransition={disableTransition}>
           <ExpandingSection
             description={description}
             icon={icon}
             label={label}
-            more={more}
-            onClick={toggleDropdown}
+            onClick={(e) => {
+              toggleDropdown(e);
+              if (more.onToggle) more.onToggle(e);
+            }}
             open={open}
             title={title}
-          />
+          >
+            {more.element}
+          </ExpandingSection>
         </CardSection>
       );
     }
@@ -547,7 +555,10 @@ Card.propTypes = {
   label: PropTypes.string,
   mediaDesc: PropTypes.string,
   media: PropTypes.string,
-  more: PropTypes.node,
+  more: PropTypes.shape({
+    element: PropTypes.node,
+    onToggle: PropTypes.func,
+  }),
   onClick: PropTypes.func,
   padding: PropTypes.oneOf(["0", "1x", "2x", "3x", "4x"]),
   shadow: PropTypes.oneOf(["none", "standard", "2x"]),
