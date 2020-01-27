@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { screen } from "Variables";
 import Tabs, { Tab } from "blocks/Tabs";
-import Card, { CardList } from "layout/Card";
+import Card, { CardGrid } from "elements/Card";
 import Layout from "layout/Layout";
 import Panel from "layout/Panel";
 import Form, { Section } from "layout/Form";
@@ -422,7 +422,7 @@ storiesOf("Layout |App Layout/", module)
                     </Card>
                   }
                 >
-                  <CardList>
+                  <CardGrid>
                     <Card />
                     <Card />
                     <Card />
@@ -435,7 +435,7 @@ storiesOf("Layout |App Layout/", module)
                     <Card />
                     <Card />
                     <Card />
-                  </CardList>
+                  </CardGrid>
                 </Panel>
               </Layout>
             </Layout>

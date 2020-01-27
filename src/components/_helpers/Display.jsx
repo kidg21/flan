@@ -1,7 +1,7 @@
 import React from "react";
 import Title, { Description } from "base/Typography";
 import Bar from "blocks/Bar";
-import Card, { CardSection } from "layout/Card";
+import Card, { CardSection } from "elements/Card";
 import Grid from "layout/Grid";
 import Icon from "atoms/Icon";
 import Command from "atoms/Command";
@@ -25,6 +25,10 @@ const container = {
   height: "250px"
 };
 const Container = (storyFn) => { return (<div style={container}>{storyFn()}</div>); };
+
+function Spacer() {
+  return <span>&nbsp;</span>;
+}
 
 function IconGrid({ data }) {
   return data.map(item => (
@@ -71,4 +75,4 @@ function CommandGrid({ data }) {
   ));
 }
 
-export { Center, Padding, Container, IconGrid, CommandGrid };
+export { Center, Padding, Container, Spacer, IconGrid, CommandGrid };

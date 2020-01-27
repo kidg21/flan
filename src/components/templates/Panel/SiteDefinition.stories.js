@@ -3,14 +3,13 @@
 import React from "react";
 import Legend from "blocks/Legend";
 import styled from "styled-components";
-import Card from "elements/Card";
+import Card, { CardGrid } from "elements/Card";
 import Layout from "layout/Layout";
 import Button from "atoms/Button";
 import Bar from "blocks/Bar";
 import LBLogo from "images/LightBoxLogo.png";
 import Title, { Description, SubTitle } from "base/Typography";
 import Icon from "atoms/Icon";
-import { CardList } from "layout/Card";
 import Panel from "layout/Panel";
 import List, { ListItem } from "blocks/List";
 
@@ -26,34 +25,34 @@ const image = {
 };
 
 const lotData = [
-  { id: "a", name: "Land Use", value: "Commercial" },
-  { id: "b", name: "Land Description", value: "Miscellaneous Commercial" },
-  { id: "c", name: "Lot Area", value: "62,344 SF | 1.43 Acres" },
+  { id: "a", label: "Land Use", value: "Commercial" },
+  { id: "b", label: "Land Description", value: "Miscellaneous Commercial" },
+  { id: "c", label: "Lot Area", value: "62,344 SF | 1.43 Acres" },
 ];
 
 const ownerData = [
-  { id: "a", name: "Owner", value: "1830 La Cienga LLC" },
-  { id: "b", name: "Last Transfer", value: "12/31/14" },
-  { id: "c", name: "Last Market Sale", value: "10/31/13 for $11,000,110" },
-  { id: "d", name: "Opportunity Zone ", value: "No" },
+  { id: "a", label: "Owner", value: "1830 La Cienga LLC" },
+  { id: "b", label: "Last Transfer", value: "12/31/14" },
+  { id: "c", label: "Last Market Sale", value: "10/31/13 for $11,000,110" },
+  { id: "d", label: "Opportunity Zone ", value: "No" },
 ];
 
 const buildingData = [
-  { id: "a", name: "Value", value: "$11,851,071" },
-  { id: "b", name: "Square Feet", value: "34,529 SF" },
-  { id: "c", name: "# of Units", value: "1" },
-  { id: "d", name: "Year Built", value: "1950" },
+  { id: "a", label: "Value", value: "$11,851,071" },
+  { id: "b", label: "Square Feet", value: "34,529 SF" },
+  { id: "c", label: "# of Units", value: "1" },
+  { id: "d", label: "Year Built", value: "1950" },
 ];
 
 const summaryData = [
-  { id: "a", name: "Parcels", value: "1" },
-  { id: "b", name: "Owners", value: "1" },
-  { id: "c", name: "Buildings", value: "1" },
-  { id: "d", name: "Square Footage", value: "1950" },
-  { id: "a", name: "Acreage", value: "298" },
-  { id: "b", name: "Topography", value: "Urban" },
-  { id: "c", name: "Last Trans Date", value: "1/27/03" },
-  { id: "d", name: "Sites Included", value: "Rockefeller" },
+  { id: "a", label: "Parcels", value: "1" },
+  { id: "b", label: "Owners", value: "1" },
+  { id: "c", label: "Buildings", value: "1" },
+  { id: "d", label: "Square Footage", value: "1950" },
+  { id: "a", label: "Acreage", value: "298" },
+  { id: "b", label: "Topography", value: "Urban" },
+  { id: "c", label: "Last Trans Date", value: "1/27/03" },
+  { id: "d", label: "Sites Included", value: "Rockefeller" },
 ];
 
 
@@ -85,7 +84,7 @@ storiesOf("Templates|Site Definition", module)
           <Panel
             header={<Bar padding="2x" center={<Button label="Continue" />} />}
           >
-            <CardList columns="1">
+            <CardGrid columns="1">
               <Card
                 title="5201 California Avenue, Irvine, CA 92614"
                 line1="APN #23947828"
@@ -131,7 +130,7 @@ storiesOf("Templates|Site Definition", module)
                 line2="Irvine Company"
                 tag="Same Owner"
               />
-            </CardList>
+            </CardGrid>
           </Panel>
         </Layout>
         <Layout width="50%" height="85%" top="15%">
@@ -264,7 +263,7 @@ storiesOf("Templates|Site Definition", module)
               padding="2x"
               left={<SubTitle size="sm" text="Properties Added" />}
             />
-            <CardList columns="1">
+            <CardGrid columns="1">
               <Card
                 title="Empire State Building"
                 description="This is the description"
@@ -273,7 +272,7 @@ storiesOf("Templates|Site Definition", module)
                 title="Eiffel Tower"
                 description="This is the description"
               />
-            </CardList>
+            </CardGrid>
           </Panel>
         </Layout>
         <Layout width="50%" height="85%" top="15%">
@@ -310,7 +309,7 @@ storiesOf("Templates|Site Definition", module)
           <Panel
             header={<Bar padding="2x" center={<Button label="Submit" />} />}
           >
-            <CardList columns="1">
+            <CardGrid columns="1">
               <Card
                 icon="download"
                 title="Site Summary"
@@ -343,7 +342,7 @@ storiesOf("Templates|Site Definition", module)
                 title="Eiffel Tower"
                 description="This is the description"
               />
-            </CardList>
+            </CardGrid>
           </Panel>
         </Layout>
         <Layout width="50%" height="85%" top="15%">

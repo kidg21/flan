@@ -37,7 +37,7 @@ const SectionWrapper = styled.section`
   flex: auto;
   padding: 1rem;
   z-index: 0;
-  overflow-y: scroll;
+  overflow-y: auto;
   max-height: 100vh;
   /* Prototype Content - displays when a Panel Section is empty */
   &:empty {

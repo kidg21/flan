@@ -2,7 +2,6 @@
 /* eslint-disable react/jsx-filename-extension */
 /* global number */
 import React, { useState } from "react";
-import { Padding } from "helpers/Display";
 import Layout from "layout/Layout";
 import List, { ListItem } from "blocks/List";
 import InputBlock from "blocks/InputBlock";
@@ -11,337 +10,9 @@ import { CheckboxGroup } from "atoms/Checkbox";
 import Button from "atoms/Button";
 import Grid from "layout/Grid";
 import CardList from "./CardList.jsx";
-// import VirtualizedList from "./VirtualizedList.jsx";
 
 const ListNotes = markdown.require("./List.md");
 
-const data = [
-  {
-    ACREAGE: "0.12",
-    AGGR_ACREAGE: "0.12",
-    AGGR_GROUP: "510684071_237050",
-    AGGR_LOT_COUNT: "1",
-    APN: "5149-015-023",
-    BUILDING_SQFT: "34658",
-    DATE_TRANSFER: "2019/09/04 00:00:00",
-    DRAW_TYPE: "",
-    LAND_SQFT: "5027",
-    MAIL_ADDR: "353 S BROADWAY # 500",
-    OWNER_NAME_1: "CHANDLER, HARRY BRANT",
-    RECORD_HANDLE: "0",
-    RECORD_LABEL: "1",
-    SITE_ADDR: "353 S BROADWAY",
-    SITE_CITY: "LOS ANGELES",
-    SITE_ZIP: "90013",
-    UNITS_NUMBER: "",
-    USE_CODE_STD_CTGR_DESC: "COMMERCIAL",
-    USE_CODE_STD_DESC: "STORE / OFFICE COMBO",
-    VAL_TRANSFER: "3388000",
-    YR_BLT: "1913",
-    ZONING: "LAC2",
-    _DMP_ID_FK: "510684071_237050",
-  },
-  {
-    ACREAGE: "1.11",
-    AGGR_ACREAGE: "1.11",
-    AGGR_GROUP: "510684071_237208",
-    AGGR_LOT_COUNT: "1",
-    APN: "5149-032-019",
-    BUILDING_SQFT: "399256",
-    DATE_TRANSFER: "2019/07/24 00:00:00",
-    DRAW_TYPE: "",
-    LAND_SQFT: "48504",
-    MAIL_ADDR: "250 W 55TH ST",
-    OWNER_NAME_1: "IDC MANAGING MEMBER TIC LLC",
-    RECORD_HANDLE: "1",
-    RECORD_LABEL: "2",
-    SITE_ADDR: "550 S HILL ST",
-    SITE_CITY: "LOS ANGELES",
-    SITE_ZIP: "90013",
-    UNITS_NUMBER: "",
-    USE_CODE_STD_CTGR_DESC: "COMMERCIAL",
-    USE_CODE_STD_DESC: "OFFICE BUILDING",
-    VAL_TRANSFER: "",
-    YR_BLT: "1981",
-    ZONING: "LAC5",
-    _DMP_ID_FK: "510684071_237208",
-  },
-  {
-    ACREAGE: "0.94",
-    AGGR_ACREAGE: "0.94",
-    AGGR_GROUP: "510684071_238978",
-    AGGR_LOT_COUNT: "1",
-    APN: "5161-026-040",
-    BUILDING_SQFT: "223783",
-    DATE_TRANSFER: "2019/07/11 00:00:00",
-    DRAW_TYPE: "",
-    LAND_SQFT: "41050",
-    MAIL_ADDR: "",
-    OWNER_NAME_1: "EQR STOA LP",
-    RECORD_HANDLE: "2",
-    RECORD_LABEL: "3",
-    SITE_ADDR: "222 S MAIN ST",
-    SITE_CITY: "LOS ANGELES",
-    SITE_ZIP: "90012",
-    UNITS_NUMBER: "237",
-    USE_CODE_STD_CTGR_DESC: "RESIDENTIAL",
-    USE_CODE_STD_DESC: "MULTI-FAMILY RES (5+ UNITS)",
-    VAL_TRANSFER: "1051800",
-    YR_BLT: "2017",
-    ZONING: "LAC2",
-    _DMP_ID_FK: "510684071_238978",
-  },
-  {
-    ACREAGE: "0.07",
-    AGGR_ACREAGE: "0.684631",
-    AGGR_GROUP: "510684071_239100",
-    AGGR_LOT_COUNT: "3",
-    APN: "5163-002-006",
-    BUILDING_SQFT: "600",
-    DATE_TRANSFER: "2019/09/09 00:00:00",
-    DRAW_TYPE: "",
-    LAND_SQFT: "3182",
-    MAIL_ADDR: "",
-    OWNER_NAME_1: "EAST 1ST STREET PROPERTY LLC",
-    RECORD_HANDLE: "3",
-    RECORD_LABEL: "4",
-    SITE_ADDR: "622 E 1ST ST",
-    SITE_CITY: "LOS ANGELES",
-    SITE_ZIP: "90012",
-    UNITS_NUMBER: "",
-    USE_CODE_STD_CTGR_DESC: "COMMERCIAL",
-    USE_CODE_STD_DESC: "STORES, RETAIL OUTLET",
-    VAL_TRANSFER: "15664500",
-    YR_BLT: "",
-    ZONING: "LACM",
-    _DMP_ID_FK: "510684071_239101",
-  },
-  {
-    ACREAGE: "0.12",
-    AGGR_ACREAGE: "0.12",
-    AGGR_GROUP: "510684071_237050",
-    AGGR_LOT_COUNT: "1",
-    APN: "5149-015-023",
-    BUILDING_SQFT: "34658",
-    DATE_TRANSFER: "2019/09/04 00:00:00",
-    DRAW_TYPE: "",
-    LAND_SQFT: "5027",
-    MAIL_ADDR: "353 S BROADWAY # 500",
-    OWNER_NAME_1: "CHANDLER, HARRY BRANT",
-    RECORD_HANDLE: "0",
-    RECORD_LABEL: "1",
-    SITE_ADDR: "353 S BROADWAY",
-    SITE_CITY: "LOS ANGELES",
-    SITE_ZIP: "90013",
-    UNITS_NUMBER: "",
-    USE_CODE_STD_CTGR_DESC: "COMMERCIAL",
-    USE_CODE_STD_DESC: "STORE / OFFICE COMBO",
-    VAL_TRANSFER: "3388000",
-    YR_BLT: "1913",
-    ZONING: "LAC2",
-    _DMP_ID_FK: "510684071_237050",
-  },
-  {
-    ACREAGE: "1.11",
-    AGGR_ACREAGE: "1.11",
-    AGGR_GROUP: "510684071_237208",
-    AGGR_LOT_COUNT: "1",
-    APN: "5149-032-019",
-    BUILDING_SQFT: "399256",
-    DATE_TRANSFER: "2019/07/24 00:00:00",
-    DRAW_TYPE: "",
-    LAND_SQFT: "48504",
-    MAIL_ADDR: "250 W 55TH ST",
-    OWNER_NAME_1: "IDC MANAGING MEMBER TIC LLC",
-    RECORD_HANDLE: "1",
-    RECORD_LABEL: "2",
-    SITE_ADDR: "550 S HILL ST",
-    SITE_CITY: "LOS ANGELES",
-    SITE_ZIP: "90013",
-    UNITS_NUMBER: "",
-    USE_CODE_STD_CTGR_DESC: "COMMERCIAL",
-    USE_CODE_STD_DESC: "OFFICE BUILDING",
-    VAL_TRANSFER: "",
-    YR_BLT: "1981",
-    ZONING: "LAC5",
-    _DMP_ID_FK: "510684071_237208",
-  },
-  {
-    ACREAGE: "0.94",
-    AGGR_ACREAGE: "0.94",
-    AGGR_GROUP: "510684071_238978",
-    AGGR_LOT_COUNT: "1",
-    APN: "5161-026-040",
-    BUILDING_SQFT: "223783",
-    DATE_TRANSFER: "2019/07/11 00:00:00",
-    DRAW_TYPE: "",
-    LAND_SQFT: "41050",
-    MAIL_ADDR: "",
-    OWNER_NAME_1: "EQR STOA LP",
-    RECORD_HANDLE: "2",
-    RECORD_LABEL: "3",
-    SITE_ADDR: "222 S MAIN ST",
-    SITE_CITY: "LOS ANGELES",
-    SITE_ZIP: "90012",
-    UNITS_NUMBER: "237",
-    USE_CODE_STD_CTGR_DESC: "RESIDENTIAL",
-    USE_CODE_STD_DESC: "MULTI-FAMILY RES (5+ UNITS)",
-    VAL_TRANSFER: "1051800",
-    YR_BLT: "2017",
-    ZONING: "LAC2",
-    _DMP_ID_FK: "510684071_238978",
-  },
-  {
-    ACREAGE: "0.07",
-    AGGR_ACREAGE: "0.684631",
-    AGGR_GROUP: "510684071_239100",
-    AGGR_LOT_COUNT: "3",
-    APN: "5163-002-006",
-    BUILDING_SQFT: "600",
-    DATE_TRANSFER: "2019/09/09 00:00:00",
-    DRAW_TYPE: "",
-    LAND_SQFT: "3182",
-    MAIL_ADDR: "",
-    OWNER_NAME_1: "EAST 1ST STREET PROPERTY LLC",
-    RECORD_HANDLE: "3",
-    RECORD_LABEL: "4",
-    SITE_ADDR: "622 E 1ST ST",
-    SITE_CITY: "LOS ANGELES",
-    SITE_ZIP: "90012",
-    UNITS_NUMBER: "",
-    USE_CODE_STD_CTGR_DESC: "COMMERCIAL",
-    USE_CODE_STD_DESC: "STORES, RETAIL OUTLET",
-    VAL_TRANSFER: "15664500",
-    YR_BLT: "",
-    ZONING: "LACM",
-    _DMP_ID_FK: "510684071_239101",
-  },
-  {
-    ACREAGE: "0.12",
-    AGGR_ACREAGE: "0.12",
-    AGGR_GROUP: "510684071_237050",
-    AGGR_LOT_COUNT: "1",
-    APN: "5149-015-023",
-    BUILDING_SQFT: "34658",
-    DATE_TRANSFER: "2019/09/04 00:00:00",
-    DRAW_TYPE: "",
-    LAND_SQFT: "5027",
-    MAIL_ADDR: "353 S BROADWAY # 500",
-    OWNER_NAME_1: "CHANDLER, HARRY BRANT",
-    RECORD_HANDLE: "0",
-    RECORD_LABEL: "1",
-    SITE_ADDR: "353 S BROADWAY",
-    SITE_CITY: "LOS ANGELES",
-    SITE_ZIP: "90013",
-    UNITS_NUMBER: "",
-    USE_CODE_STD_CTGR_DESC: "COMMERCIAL",
-    USE_CODE_STD_DESC: "STORE / OFFICE COMBO",
-    VAL_TRANSFER: "3388000",
-    YR_BLT: "1913",
-    ZONING: "LAC2",
-    _DMP_ID_FK: "510684071_237050",
-  },
-  {
-    ACREAGE: "1.11",
-    AGGR_ACREAGE: "1.11",
-    AGGR_GROUP: "510684071_237208",
-    AGGR_LOT_COUNT: "1",
-    APN: "5149-032-019",
-    BUILDING_SQFT: "399256",
-    DATE_TRANSFER: "2019/07/24 00:00:00",
-    DRAW_TYPE: "",
-    LAND_SQFT: "48504",
-    MAIL_ADDR: "250 W 55TH ST",
-    OWNER_NAME_1: "IDC MANAGING MEMBER TIC LLC",
-    RECORD_HANDLE: "1",
-    RECORD_LABEL: "2",
-    SITE_ADDR: "550 S HILL ST",
-    SITE_CITY: "LOS ANGELES",
-    SITE_ZIP: "90013",
-    UNITS_NUMBER: "",
-    USE_CODE_STD_CTGR_DESC: "COMMERCIAL",
-    USE_CODE_STD_DESC: "OFFICE BUILDING",
-    VAL_TRANSFER: "",
-    YR_BLT: "1981",
-    ZONING: "LAC5",
-    _DMP_ID_FK: "510684071_237208",
-  },
-  {
-    ACREAGE: "0.94",
-    AGGR_ACREAGE: "0.94",
-    AGGR_GROUP: "510684071_238978",
-    AGGR_LOT_COUNT: "1",
-    APN: "5161-026-040",
-    BUILDING_SQFT: "223783",
-    DATE_TRANSFER: "2019/07/11 00:00:00",
-    DRAW_TYPE: "",
-    LAND_SQFT: "41050",
-    MAIL_ADDR: "",
-    OWNER_NAME_1: "EQR STOA LP",
-    RECORD_HANDLE: "2",
-    RECORD_LABEL: "3",
-    SITE_ADDR: "222 S MAIN ST",
-    SITE_CITY: "LOS ANGELES",
-    SITE_ZIP: "90012",
-    UNITS_NUMBER: "237",
-    USE_CODE_STD_CTGR_DESC: "RESIDENTIAL",
-    USE_CODE_STD_DESC: "MULTI-FAMILY RES (5+ UNITS)",
-    VAL_TRANSFER: "1051800",
-    YR_BLT: "2017",
-    ZONING: "LAC2",
-    _DMP_ID_FK: "510684071_238978",
-  },
-  {
-    ACREAGE: "0.07",
-    AGGR_ACREAGE: "0.684631",
-    AGGR_GROUP: "510684071_239100",
-    AGGR_LOT_COUNT: "3",
-    APN: "5163-002-006",
-    BUILDING_SQFT: "600",
-    DATE_TRANSFER: "2019/09/09 00:00:00",
-    DRAW_TYPE: "",
-    LAND_SQFT: "3182",
-    MAIL_ADDR: "",
-    OWNER_NAME_1: "EAST 1ST STREET PROPERTY LLC",
-    RECORD_HANDLE: "3",
-    RECORD_LABEL: "4",
-    SITE_ADDR: "622 E 1ST ST",
-    SITE_CITY: "LOS ANGELES",
-    SITE_ZIP: "90012",
-    UNITS_NUMBER: "",
-    USE_CODE_STD_CTGR_DESC: "COMMERCIAL",
-    USE_CODE_STD_DESC: "STORES, RETAIL OUTLET",
-    VAL_TRANSFER: "15664500",
-    YR_BLT: "",
-    ZONING: "LACM",
-    _DMP_ID_FK: "510684071_239101",
-  },
-  {
-    ACREAGE: "0.12",
-    AGGR_ACREAGE: "0.12",
-    AGGR_GROUP: "510684071_237050",
-    AGGR_LOT_COUNT: "1",
-    APN: "5149-015-023",
-    BUILDING_SQFT: "34658",
-    DATE_TRANSFER: "2019/09/04 00:00:00",
-    DRAW_TYPE: "",
-    LAND_SQFT: "5027",
-    MAIL_ADDR: "353 S BROADWAY # 500",
-    OWNER_NAME_1: "CHANDLER, HARRY BRANT",
-    RECORD_HANDLE: "0",
-    RECORD_LABEL: "1",
-    SITE_ADDR: "353 S BROADWAY",
-    SITE_CITY: "LOS ANGELES",
-    SITE_ZIP: "90013",
-    UNITS_NUMBER: "",
-    USE_CODE_STD_CTGR_DESC: "COMMERCIAL",
-    USE_CODE_STD_DESC: "STORE / OFFICE COMBO",
-    VAL_TRANSFER: "3388000",
-    YR_BLT: "1913",
-    ZONING: "LAC2",
-    _DMP_ID_FK: "510684071_237050",
-  },
-];
 storiesOf("Blocks|List", module)
   .addParameters({
     info: {
@@ -352,16 +23,15 @@ storiesOf("Blocks|List", module)
       markdown: ListNotes,
     },
   })
-  .addDecorator(Padding)
   .addDecorator(withKnobs)
   .add(
     "Documentation",
     withInfo()(() => {
       return (
         <List>
-          <ListItem label="List Item" />
-          <ListItem label="List Item" />
-          <ListItem label="List Item" />
+          <ListItem title="List Item" />
+          <ListItem title="List Item" />
+          <ListItem title="List Item" />
         </List>
       );
     }),
@@ -369,81 +39,106 @@ storiesOf("Blocks|List", module)
   .add("Knobs", () => {
     return (
       <List
-        title={text("Title", "", "List")}
         interactive={boolean("Interactive", false, "List")}
       >
         <ListItem
-          label={text("1 - Label", "Item 1", "Item 1")}
+          title={text("1 - Title", "Item 1", "Item 1")}
           description={text("1 - Description", "", "Item 1")}
-          type={select(
-            "1 - Type",
+          pre={select(
+            "1 - Pre",
             {
               default: null,
-              info: "info",
-              success: "success",
-              warning: "warning",
-              alert: "alert",
+              icon: { icon: "home" },
+              label: { label: "AB" },
             },
             null,
             "Item 1",
           )}
-          active={boolean("1 - Active", false, "Item 1")}
+          post={select(
+            "1 - Post",
+            {
+              default: null,
+              checkbox: { type: "checkbox", label: "Checkbox" },
+              toggle: { type: "toggle", label: "Toggle" },
+              label: { type: "label", label: "Label" },
+            },
+            null,
+            "Item 1",
+          )}
+          isSelected={boolean("1 - Selected", false, "Item 1")}
           disabled={boolean("1 - Disabled", false, "Item 1")}
         />
         <ListItem
-          label={text("2 - Label", "Item 2", "Item 2")}
+          title={text("1 - Label", "Item 2", "Item 2")}
           description={text("2 - Description", "", "Item 2")}
-          type={select(
-            "2 - Type",
+          pre={select(
+            "2 - Pre",
             {
               default: null,
-              info: "info",
-              success: "success",
-              warning: "warning",
-              alert: "alert",
+              icon: { icon: "home" },
+              label: { label: "AB" },
             },
             null,
             "Item 2",
           )}
-          active={boolean("2 - Active", false, "Item 2")}
+          post={select(
+            "2 - Post",
+            {
+              default: null,
+              checkbox: { type: "checkbox", label: "Checkbox" },
+              toggle: { type: "toggle", label: "Toggle" },
+              label: { type: "label", label: "Label" },
+            },
+            null,
+            "Item 2",
+          )}
+          isSelected={boolean("2 - Selected", false, "Item 2")}
           disabled={boolean("2 - Disabled", false, "Item 2")}
         />
         <ListItem
-          label={text("3 - Label", "Item 3", "Item 3")}
+          title={text("3 - Label", "Item 3", "Item 3")}
           description={text("3 - Description", "", "Item 3")}
-          type={select(
-            "3 - Type",
+          pre={select(
+            "3 - Pre",
             {
               default: null,
-              info: "info",
-              success: "success",
-              warning: "warning",
-              alert: "alert",
+              icon: { icon: "home" },
+              label: { label: "AB" },
             },
             null,
             "Item 3",
           )}
-          active={boolean("3 - Active", false, "Item 3")}
+          post={select(
+            "3 - Post",
+            {
+              default: null,
+              checkbox: { type: "checkbox", label: "Checkbox" },
+              toggle: { type: "toggle", label: "Toggle" },
+              label: { type: "label", label: "Label" },
+            },
+            null,
+            "Item 3",
+          )}
+          isSelected={boolean("3 - Selected", false, "Item 3")}
           disabled={boolean("3 - Disabled", false, "Item 3")}
         />
       </List>
     );
   })
-
   .add("States", () => {
     return (
       <List>
         <ListItem
-          label="List Item (standard)"
+          title="List Item (standard)"
           description="This is the description"
         />
         <ListItem
-          label="List Item (selected)"
+          title="List Item (selected)"
           description="This is the description"
           isSelected
         />
         <ListItem
-          label="List Item (disabled)"
+          title="List Item (disabled)"
           description="This is the description"
           disabled
         />
@@ -451,190 +146,148 @@ storiesOf("Blocks|List", module)
       </List>
     );
   })
-
   .add("Interactive", () => {
     return (
       <List interactive>
-        <ListItem label="List Item" description="This is the description" />
-        <ListItem label="List Item" description="This is the description" />
-        <ListItem label="List Item" description="This is the description" />
+        <ListItem title="List Item" description="This is the description" />
+        <ListItem title="List Item" description="This is the description" />
+        <ListItem title="List Item" description="This is the description" />
         <ListItem
-          label="List Item (interaction disabled)"
+          title="List Item (interaction disabled)"
           description="This is the description"
           interactive={false}
         />
-        <ListItem label="List Item" description="This is the description" />
+        <ListItem title="List Item" description="This is the description" />
 
       </List>
     );
   })
-
-  .add("Avatar", () => {
+  .add("Pre-Label", () => {
     return (
       <List interactive>
         <ListItem
-          label="List Item"
+          title="List Item"
           description="This is the description"
-          avatar="LB"
+          pre={{ label: "AB" }}
         />
         <ListItem
-          label="List Item"
+          title="List Item"
           description="This is the description"
-          avatar="LB"
-          icon="user"
+          pre={{ label: "CD" }}
         />
         <ListItem
-          label="List Item"
+          title="List Item"
           description="This is the description"
-          avatar="LB"
+          pre={{ label: "EF" }}
         />
         <ListItem
-          label="List Item"
+          title="List Item"
           description="This is the description"
-          avatar="LB"
+          pre={{ label: "GH" }}
         />
       </List>
     );
   })
-
-  .add("Icon", () => {
+  .add("Pre-Icon", () => {
     return (
       <List interactive>
         <ListItem
-          label="List Item"
+          title="List Item"
           description="This is the description"
-          icon="user"
+          pre={{ icon: "home" }}
         />
         <ListItem
-          label="List Item"
+          title="List Item"
           description="This is the description"
-          icon="user"
+          pre={{ icon: "user" }}
         />
         <ListItem
-          label="List Item"
+          title="List Item"
           description="This is the description"
-          icon="user"
+          pre={{ icon: "bookmark" }}
         />
         <ListItem
-          label="List Item"
+          title="List Item"
           description="This is the description"
-          icon="user"
+          pre={{ icon: "print" }}
         />
       </List>
     );
   })
-  // .add("Virtualized List", () => {
-  //   return React.createElement(() => {
-  //     const [highlightedCell, setHighlightCell] = useState(null);
-  //     const [selectedCell, setSelectedCell] = useState(null);
-  //     const onCellClick = (e, { rowIndex }) => {
-  //       setSelectedCell({ rowIndex });
-  //     };
-  //     const Template = (props) => {
-  //       return (
-  //         <Card
-  //           id={props._DMP_ID_FK}
-  //           title={`${props.index}: ${props.SITE_ADDR}`}
-  //           body={props.APN}
-  //         />
-  //       );
-  //     };
-  //     const onCellMouseEnter = (e, { rowIndex }) => {
-  //       setHighlightCell({ rowIndex });
-  //     };
-
-  //     return (
-  //       <Layout>
-  //         <VirtualizedList
-  //           data={data}
-  //           Template={Template}
-  //           id="foo"
-  //           onCellClick={onCellClick}
-  //           onCellMouseEnter={onCellMouseEnter}
-  //           onCellMouseLeave={() => {
-  //             setHighlightCell(null);
-  //           }}
-  //           highlightedCell={highlightedCell}
-  //           selectedCell={selectedCell}
-  //         />
-  //       </Layout>
-  //     );
-  //   });
-  // })
-  .add("Toggle List", () => {
+  .add("Post-Toggle", () => {
     return (
       <List interactive>
         <ListItem
-          label="List Item"
+          title="List Item"
           description="This is the description"
-          toggle
+          post={{ type: "toggle", label: "Toggle 1" }}
         />
         <ListItem
-          label="List Item"
+          title="List Item"
           description="This is the description"
-          toggle
+          post={{ type: "toggle", label: "Toggle 2" }}
         />
         <ListItem
-          label="List Item"
+          title="List Item"
           description="This is the description"
-          toggle
+          post={{ type: "toggle" }}
         />
         <ListItem
-          label="List Item"
+          title="List Item"
           description="This is the description"
-          toggle
+          post={{ type: "toggle", label: "Toggle 4" }}
         />
       </List>
     );
   })
-  .add("Count List", () => {
+  .add("Post-Label", () => {
     return (
       <List interactive>
         <ListItem
-          label="List Item"
+          title="List Item"
           description="This is the description"
-          count="2"
+          post={{ type: "label", label: "Label" }}
         />
         <ListItem
-          label="List Item"
+          title="List Item"
           description="This is the description"
-          count="3"
+          post={{ type: "label", label: "6" }}
         />
         <ListItem
-          label="List Item"
+          title="List Item"
           description="This is the description"
-          count="5"
+          post={{ type: "label", label: "NEW!" }}
         />
         <ListItem
-          label="List Item"
+          title="List Item"
           description="This is the description"
+          post={{ type: "label", label: "9" }}
         />
       </List>
     );
   })
-
-  .add("Checkbox List", () => {
+  .add("Post-Checkbox", () => {
     return (
       <List interactive>
         <ListItem
-          label="List Item"
+          title="List Item"
           description="This is the description"
-          checkbox
+          post={{ type: "checkbox", label: "Box 1" }}
         />
         <ListItem
-          label="List Item"
+          title="List Item"
           description="This is the description"
-          checkbox
+          post={{ type: "checkbox", label: "Box 2" }}
         />
         <ListItem
-          label="List Item"
+          title="List Item"
           description="This is the description"
-          checkbox
+          post={{ type: "checkbox", label: "Box 3" }}
         />
         <ListItem
-          label="List Item"
+          title="List Item"
           description="This is the description"
-          checkbox
+          post={{ type: "checkbox", label: "Box 4" }}
         />
       </List>
     );
@@ -841,7 +494,7 @@ storiesOf("Blocks|List", module)
             data={_data[id]}
             // simple template
             Template={(props) => {
-              if (!props.data || props.data.status === "loading") return <div style={{height: "100px"}}>loading</div>;
+              if (!props.data || props.data.status === "loading") return <div style={{ height: "100px" }}>loading</div>;
               return <div>{`${props.index}: ${props.data.label}`}</div>;
             }}
             // simple onClick interaction

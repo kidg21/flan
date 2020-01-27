@@ -46,7 +46,7 @@ export { default as Tabs, Tab } from "./blocks/Tabs";
 export { CardList } from "./blocks/List";
 
 // Publicly exported files from 'elements'
-export { default as Card } from "./elements/Card";
+export { default as Card, CardSection, CardGrid } from "./elements/Card";
 export { default as MainPanelHeader } from "./elements/PanelHeaders/MainPanelHeader";
 export { default as PropertyPanelHeader } from "./elements/PanelHeaders/PropertyPanelHeader";
 export { default as NavigationPanelHeader } from "./elements/PanelHeaders/NavigationPanelHeader";
@@ -56,11 +56,10 @@ export {
   default as Dialog,
   Alert,
   Confirm,
-  Prompt
+  Prompt,
 } from "./elements/DialogBox";
 
 // Publicly exported files from 'layout'
-export { default as CardLayout, CardList as oldCardList } from "./layout/Card"; // TODO: deprecated Card, fix
 export { default as Form, Section } from "./layout/Form";
 export { default as Grid } from "./layout/Grid";
 export { default as Layout } from "./layout/Layout";
@@ -76,6 +75,6 @@ export {
   shadows,
   screen,
   DMPTheme,
-  darkTheme
+  darkTheme,
 } from "./base/Variables/Variables.jsx";
 export { ThemeProvider } from "styled-components";

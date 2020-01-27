@@ -17,18 +17,12 @@ const SwitchContainer = styled.div`
     return props.alignInput || "";
   }};
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || props.theme.text.primary;
-  }};
-  background-color: ${(props) => {
-    return (
-      props.theme.palette[props.fillColor] || props.theme.background.default
-    );
+    return props.theme.text[props.inputTextColor] || "";
   }};
   border-color: ${(props) => {
     return props.theme.palette[props.borderColor] || props.theme.palette.grey3;
   }};
-  width: max-content;
-  line-height: 1rem;
+  line-height: initial;
   &[disabled],
   &[readonly] {
     cursor: not-allowed;
@@ -39,8 +33,8 @@ const SwitchContainer = styled.div`
 
 const StyledSwitch = styled.div`
   grid-area: input;
+  align-self: center;
   width: 2.2rem;
-  height: auto;
   border: 1px solid;
   border-color: ${(props) => {
     return props.theme.palette[props.borderColor] || props.theme.palette.grey2;

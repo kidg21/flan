@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import Card, { CardList } from "layout/Card";
+import Card, { CardGrid } from "elements/Card";
 import Layout from "layout/Layout";
 import Panel from "layout/Panel";
 
@@ -46,7 +46,7 @@ storiesOf("Layout|Panel", module)
           header={<Card />}
           footer={<Card />}
         >
-          <CardList>
+          <CardGrid>
             <Card />
             <Card />
             <Card />
@@ -54,7 +54,7 @@ storiesOf("Layout|Panel", module)
             <Card />
             <Card />
             <Card />
-          </CardList>
+          </CardGrid>
         </Panel>
       </Layout>
     );
