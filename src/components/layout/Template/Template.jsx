@@ -1,0 +1,282 @@
+/* eslint-disable complexity */
+/* eslint-disable linebreak-style */
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import { PlaceholderText } from "helpers/Placeholders.jsx";
+import { viewport } from "Variables";
+import LightBoxIcon from "images/LightBoxIconLogo.png";
+import Bar from "blocks/Bar";
+import Avatar from "atoms/Avatar";
+import Icon from "atoms/Icon";
+import Layout from "layout/Layout";
+
+const TemplateWrapper = styled(Layout)`
+  width: 100vw;
+  height: 100vh;
+`;
+
+const Header = styled(Bar)`
+/* For Dev purposes */
+  border-bottom: 1px solid ${(props) => {
+    return props.theme.palette.grey5;
+  }};
+`;
+
+const Footer = styled(Bar)`
+/* For Dev purposes */
+  border-top: 1px solid ${(props) => {
+    return props.theme.palette.grey5;
+  }};
+`;
+
+const Body = styled(Layout)`
+  flex-direction: row;
+  align-content: stretch;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+`;
+
+const RegionLeft = styled(Layout)`
+  position: ${(props) => {
+    return props.leftPosition || "";
+  }};
+  flex: 0 1 auto;
+  align-self: stretch;
+  width: ${(props) => {
+    return props.leftWidth || "";
+  }};
+  height: 100%;
+  @media (min-width: ${viewport.medium}) {
+    max-width: ${(props) => {
+    return props.open ? "0" : "";
+  }};
+  }
+  transform: ${(props) => {
+    return props.open ? "translateX(-100%)" : "translateX(0%)";
+  }};
+  /* For Dev purposes */
+  border-right: 1px solid ${(props) => {
+    return props.theme.palette.grey5;
+  }};
+  &:empty {
+    &:before {
+      ${PlaceholderText};
+      content: "{ Left }";
+      color: ${(props) => {
+    return props.theme.text.primary;
+  }};
+    }
+  }
+`;
+
+const RegionMain = styled(Layout)`
+  align-self: stretch;
+  &:empty {
+    &:before {
+      ${PlaceholderText};
+      content: "{ Main }";
+      color: ${(props) => {
+    return props.theme.text.primary;
+  }};
+    }
+  }
+`;
+
+const RegionRight = styled(Layout)`
+  right: 0;
+  flex: 0 1 auto;
+  align-self: stretch;
+  width: ${(props) => {
+    return props.rightWidth || "";
+  }};
+  height: 100%;
+  @media (min-width: ${viewport.medium}) {
+    max-width: ${(props) => {
+    return props.open ? "0" : "";
+  }};
+  }
+  transform: ${(props) => {
+    return props.open ? "translateX(100%)" : "translateX(0%)";
+  }};
+  /* For Dev purposes */
+  border-left: 1px solid ${(props) => {
+    return props.theme.palette.grey5;
+  }};
+  &:empty {
+    &:before {
+      ${PlaceholderText};
+      content: "{ Right }";
+      color: ${(props) => {
+    return props.theme.text.primary;
+  }};
+    }
+  }
+`;
+
+function Template({
+  header,
+  left,
+  main,
+  right,
+  footer,
+}) {
+  const screenMedium = window.matchMedia(`(min-width: ${viewport.medium})`);
+  const screenLarge = window.matchMedia(`(min-width: ${viewport.large})`);
+  let leftPosition;
+  let leftWidth;
+  let leftIndex;
+  let rightPosition;
+  let rightWidth;
+  let rightIndex;
+  if (screenLarge.matches) {
+    leftWidth = "20vw";
+    rightWidth = "20vw";
+  } else if (screenMedium.matches) {
+    leftWidth = "30vw";
+    rightWidth = "30vw";
+  } else {
+    leftPosition = "absolute";
+    leftWidth = "100vw";
+    leftIndex = "1";
+    rightPosition = "absolute";
+    rightWidth = "100vw";
+    rightIndex = "1";
+  }
+
+  let seeLeftRegion = null;
+  let leftOpen = left ? left.visible : false;
+  let setLeftOpen = left ? left.toggle : null;
+  let seeRightRegion = null;
+  let rightOpen = right ? right.visible : false;
+  let setRightOpen = right ? right.toggle : null;
+  if (left) {
+    if (!setLeftOpen) [leftOpen, setLeftOpen] = useState(true);
+    if (screenLarge.matches || screenMedium.matches) {
+      seeLeftRegion = () => { setLeftOpen(!leftOpen); };
+    } else {
+      // On small screens, only 1 region open at a time
+      seeLeftRegion = () => { setLeftOpen(!leftOpen); setRightOpen(true); };
+    }
+  }
+  if (right) {
+    if (!setRightOpen) [rightOpen, setRightOpen] = useState(true);
+    if (screenLarge.matches || screenMedium.matches) {
+      seeRightRegion = () => { setRightOpen(!rightOpen); };
+    } else {
+      // On small screens, only 1 region open at a time
+      seeRightRegion = () => { setRightOpen(!rightOpen); setLeftOpen(true); };
+    }
+  }
+
+  return (
+    <TemplateWrapper>
+      <Header
+        contentAlign="center"
+        padding="2x"
+        left={
+          header.iconLeft ? (
+            <Icon
+              size="lg"
+              icon={header.iconLeft}
+              onClick={seeLeftRegion}
+            />
+          ) : (
+              <Avatar
+                onClick={seeLeftRegion}
+                image
+                src={LightBoxIcon}
+                alt="logo"
+              />
+            )
+        }
+        center={header.content}
+        right={
+          <Icon
+            size="lg"
+            icon={header.iconRight || "settings"}
+            onClick={seeRightRegion}
+          />
+        }
+      />
+      <Body>
+        {left ? (
+          <RegionLeft
+            position={leftPosition}
+            width={leftWidth}
+            zIndex={leftIndex}
+            open={leftOpen}
+          >
+            {left.content}
+          </RegionLeft>
+        ) : null}
+        <RegionMain>{main}</RegionMain>
+        {right ? (
+          <RegionRight
+            position={rightPosition}
+            width={rightWidth}
+            zIndex={rightIndex}
+            open={rightOpen}
+          >
+            {right.content}
+          </RegionRight>
+        ) : null}
+      </Body>
+      {footer.content ? (
+        <Footer
+          contentAlign="center"
+          padding="2x"
+          centerAlign="left"
+          center={footer.content}
+        />
+      ) : null}
+    </TemplateWrapper>
+  );
+}
+
+Template.propTypes = {
+  header: {
+    content: PropTypes.node.isRequired,
+    iconLeft: PropTypes.string,
+    iconRight: PropTypes.string,
+  },
+  left: {
+    content: PropTypes.node.isRequired,
+    visible: PropTypes.bool,
+    toggle: PropTypes.func,
+  },
+  main: PropTypes.node.isRequired,
+  right: {
+    content: PropTypes.node.isRequired,
+    visible: PropTypes.bool,
+    toggle: PropTypes.func,
+  },
+  footer: {
+    contentPrimary: PropTypes.node.isRequired,
+  },
+};
+
+Template.defaultProps = {
+  header: {
+    content: null,
+    iconLeft: null,
+    iconRight: null,
+  },
+  left: {
+    content: null,
+    visible: null,
+    toggle: null,
+  },
+  right: {
+    content: null,
+    visible: null,
+    toggle: null,
+  },
+  footer: {
+    contentPrimary: null,
+  },
+};
+
+
+export default Template;

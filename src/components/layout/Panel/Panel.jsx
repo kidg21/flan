@@ -17,6 +17,9 @@ const PanelWrapper = styled.div`
   max-height: 100vh;
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
+  filter: ${(props) => {
+    return props.theme.shadows.shadow0;
+  }};
   /* Prototype Content - displays when a Panel Section is empty */
   &:empty {
     &:before {
@@ -38,11 +41,14 @@ const SectionWrapper = styled.section`
   z-index: 0;
   overflow-y: auto;
   max-height: 100vh;
+  filter: ${(props) => {
+    return props.theme.shadows.shadow0;
+  }};
   /* Prototype Content - displays when a Panel Section is empty */
   &:empty {
     &:before {
       ${PlaceholderText};
-      content: "Header / Footer";
+      content: "Panel Body";
       color: ${(props) => {
     return props.theme.text.primary;
   }};
@@ -76,8 +82,16 @@ const PanelSection = styled(PanelBody)`
   padding: 0;
   overflow: hidden;
   z-index: 1;
-  /** TODO: change to variable once 'Card' branch is merged */
-  border: 1px solid hsl(240,11%,91%);
+  &:first-of-type {
+    border-bottom: ${(props) => {
+    return props.theme.borders.border;
+  }};
+  }
+  &:last-of-type {
+    border-top: ${(props) => {
+    return props.theme.borders.border;
+  }};
+  }
 `;
 function Panel({
   id, children, footer, header,

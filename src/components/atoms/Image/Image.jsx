@@ -8,7 +8,9 @@ const ImageWrapper = styled.img`
   width: ${(props) => {
     return props.width || "inherit";
   }};
+  max-width: fit-content;
   height: auto;
+  max-height: fit-content;
   border-radius: ${(props) => {
     return props.circle ? "100%" : "";
   }};
