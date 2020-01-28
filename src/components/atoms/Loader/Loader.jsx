@@ -4,10 +4,11 @@ import styled, { keyframes } from "styled-components";
 const Fill = styled.div`
 height: 0.65rem;
 position: relative;
-border-radius: 10px;
 width: 100px;
 animation: slide 1.5s linear infinite;
-background-image: linear-gradient( to right, #2B82B1, #10B0F6);
+background: ${(props) => {
+    return props.theme.palette.primary;
+  }};
 
 
   @keyframes slide
@@ -34,7 +35,9 @@ const Dot = styled.div`
   margin: 1rem;
   width: 1.25rem;
   border-radius: 50%;
-  background-image: linear-gradient( to left, #2B82B1, #10B0F6);
+  background: ${(props) => {
+    return props.theme.palette.primary;
+  }};
   animation: grow 1s ease-in-out infinite alternate;
   
   

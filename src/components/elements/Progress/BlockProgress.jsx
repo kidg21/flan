@@ -7,20 +7,19 @@ import Title, { Description } from "base/Typography";
 
 
 const StepItem = styled.li`
-float: left;
 display: flex;
-align-items: baseline;
-justify-content: center;
-padding-left: 1rem;
+align-items: center;
+text-align: left;
+flex-direction: column;
 padding: 0.5rem;
-width: 100%;
+width: 20%;
 background: ${(props) => { return props.isSelected ? props.theme.palette.primary : ""; }};
 color: ${(props) => { return props.isSelected ? props.theme.palette.white : props.theme.text.primary; }};
 &:before {
     content: "Step " counter(step) ". ";
     counter-increment: step;
-    padding-left: 1rem;
     padding-right: .5rem;
+    font-size: 14px;
     font-weight: 600;
 }
 
@@ -29,11 +28,13 @@ color: ${(props) => { return props.isSelected ? props.theme.palette.white : prop
 
 const Container = styled.ul`
 display: flex;
+flex-direction: row;
+justify-content: center;
 list-style: none;
 counter-reset: step;
-align-items: flex-start;
+align-items: center;
 width: 100%;
-justify-content: space-between;
+
 z-index: 1;
 ${StepItem}:first-child {
     border-radius: 3rem 0 0 3rem;
@@ -46,31 +47,17 @@ ${StepItem}:first-child {
     `;
 
 
-const ItemContainer = styled.div`
-display: flex;
-flex-direction: column;
-`;
-
-// const mainContent = (
-//     <React.Fragment>
-//       <Title text={text} disabled={disabled} />
-//       {description ? (<Description text={description} disabled={disabled} />
-//       ) : null}
-//     </React.Fragment>
-//   );
-
-
 function BlockStep({
     id, text, description, isSelected,
 }) {
     return (
+
         <StepItem isSelected={isSelected}>
-            <ItemContainer>
-                <Title text={text} />
-                {description ? (<Description text={description} />
-                ) : null}
-            </ItemContainer>
+            <Title text={text} />
+            {description ? (<Description text={description} />
+            ) : null}
         </StepItem >
+
 
     );
 }
