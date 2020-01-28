@@ -5,21 +5,33 @@
 import React from "react";
 
 import { Padding } from "helpers/Display";
+import NewProgressBar, { NewStep } from "./NewProgress.jsx";
+import BlockProgressBar, { BlockStep } from "./BlockProgress.jsx";
 import ProgressBar, { Step } from "./ProgressBar.jsx";
 
 storiesOf("Elements|Progress", module)
     .addDecorator(Padding)
     .addDecorator(withInfo)
     .add("Flow", () => {
-        return (<ProgressBar >
-            <Step active icon="draw" text="draw" />
-            <Step active icon="report" text="report" />
-            <Step active icon="user" text="user" />
-            <Step icon="user" text="user" />
-            <Step icon="user" text="user" />
-            <Step icon="user" text="user" />
-            <Step icon="user" text="user" />
-        </ProgressBar>);
+        return (
+            <NewProgressBar >
+                <NewStep active text="Draw" description="this is what you do" />
+                <NewStep active text="Report" />
+                <NewStep isSelected text="user" description="this is what you do" />
+                <NewStep text="user" description="this is what you do" />
+                <NewStep text="user" />
+
+            </NewProgressBar>
+        );
+    })
+    .add("Block", () => {
+        return (
+            <BlockProgressBar >
+                <BlockStep  text="Draw" description="this is what you do" />
+                <BlockStep isSelected text="Action" description="this is what you do" />
+                <BlockStep text="Action" description="this is what you do" />
+            </BlockProgressBar>
+        );
     })
     .add("Simple", () => {
         return (<ProgressBar >
