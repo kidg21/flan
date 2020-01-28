@@ -2,12 +2,120 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import Panel from "layout/Panel";
+import DataTable from "blocks/Table";
 import Card, { CardGrid } from "elements/Card";
 import Title from "base/Typography";
-import Image from "atoms/Image";
 import Template from "./Template.jsx";
 
 const TemplateNotes = markdown.require("./Template.md");
+
+const headers = [
+  { id: "options", label: "Actions" },
+  { id: "ACREAGE", label: "Acreage", sortable: true },
+  { id: "AGGR_ACREAGE", label: "Aggregate Acreage", sortable: true },
+  { id: "AGGR_LOT_COUNT", label: "Aggregate Lot Count" },
+  { id: "APN", label: "APN" },
+  { id: "BUILDING_SQFT", label: "Building SQFT", sortable: true },
+  { id: "DATE_TRANSFER", label: "Date Transfer", sortable: true },
+  { id: "LAND_SQFT", label: "Land SQFT" },
+  { id: "MAIL_ADDR", label: "Mailing Address" },
+  { id: "OWNER_NAME_1", label: "Owner Name 1" },
+];
+
+const data = [
+  {
+    ACREAGE: "0.12",
+    AGGR_ACREAGE: "0.12",
+    AGGR_GROUP: "510684071_237050",
+    AGGR_LOT_COUNT: "1",
+    APN: "5149-015-023",
+    BUILDING_SQFT: "34658",
+    DATE_TRANSFER: "2019/09/04 00:00:00",
+    DRAW_TYPE: "",
+    LAND_SQFT: "5027",
+    MAIL_ADDR: "353 S BROADWAY # 500",
+    OWNER_NAME_1: "CHANDLER, HARRY BRANT",
+  },
+  {
+    ACREAGE: "1.11",
+    AGGR_ACREAGE: "1.11",
+    AGGR_GROUP: "510684071_237208",
+    AGGR_LOT_COUNT: "1",
+    APN: "5149-032-019",
+    BUILDING_SQFT: "399256",
+    DATE_TRANSFER: "2019/07/24 00:00:00",
+    DRAW_TYPE: "",
+    LAND_SQFT: "48504",
+    MAIL_ADDR: "250 W 55TH ST",
+    OWNER_NAME_1: "IDC MANAGING MEMBER TIC LLC",
+  },
+  {
+    ACREAGE: "0.94",
+    AGGR_ACREAGE: "0.94",
+    AGGR_GROUP: "510684071_238978",
+    AGGR_LOT_COUNT: "1",
+    APN: "5161-026-040",
+    BUILDING_SQFT: "223783",
+    DATE_TRANSFER: "2019/07/11 00:00:00",
+    DRAW_TYPE: "",
+    LAND_SQFT: "41050",
+    MAIL_ADDR: "",
+    OWNER_NAME_1: "EQR STOA LP",
+  },
+  {
+    ACREAGE: "0.07",
+    AGGR_ACREAGE: "0.684631",
+    AGGR_GROUP: "510684071_239100",
+    AGGR_LOT_COUNT: "3",
+    APN: "5163-002-006",
+    BUILDING_SQFT: "600",
+    DATE_TRANSFER: "2019/09/09 00:00:00",
+    DRAW_TYPE: "",
+    LAND_SQFT: "3182",
+    MAIL_ADDR: "",
+    OWNER_NAME_1: "EAST 1ST STREET PROPERTY LLC",
+  },
+  {
+    ACREAGE: "0.12",
+    AGGR_ACREAGE: "0.12",
+    AGGR_GROUP: "510684071_237050",
+    AGGR_LOT_COUNT: "1",
+    APN: "5149-015-023",
+    BUILDING_SQFT: "34658",
+    DATE_TRANSFER: "2019/09/04 00:00:00",
+    DRAW_TYPE: "",
+    LAND_SQFT: "5027",
+    MAIL_ADDR: "353 S BROADWAY # 500",
+    OWNER_NAME_1: "CHANDLER, HARRY BRANT",
+  },
+];
+
+const dataTable = (
+  <DataTable
+    headers={headers.slice(1)}
+    rows={data}
+    listId="foo"
+    columnWidth={180}
+  />
+);
+
+const cardGrid = {
+  content: (
+    <Panel
+      id="Panel"
+    >
+      <CardGrid>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </CardGrid>
+    </Panel>
+  ),
+};
 
 storiesOf("Layout |App Layout/", module)
   .addParameters({
@@ -24,11 +132,11 @@ storiesOf("Layout |App Layout/", module)
     () => {
       return (
         <Template
-          header
-          left
-          main
-          right
-          footer={{content: ""}}
+          header={{ content: <Title text="Header Title Goes Here" /> }}
+          left={{ content: "" }}
+          main=""
+          right={{ content: "" }}
+          footer={{ content: "" }}
         />
       );
     },
@@ -41,45 +149,13 @@ storiesOf("Layout |App Layout/", module)
           header={{
             iconLeft: "left",
             content: <Title text="Header Title Goes Here" />,
-            iconRight: "right"
+            iconRight: "right",
           }}
-          left={{
-            content:
-              <Panel>
-                <Image
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-                  alt="This is alt text for this image"
-                  width={"100%"}
-                />
-              </Panel>,
-          }}
-          main={
-            <Panel
-              id="Panel"
-            >
-              <CardGrid>
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-              </CardGrid>
-            </Panel>
-          }
-          right={{
-            content:
-              <Panel>
-                <Image
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-                  alt="This is alt text for this image"
-                  width={"100%"}
-                />
-              </Panel>,
-          }}
+          left={cardGrid}
+          main={dataTable || cardGrid}
+          right={cardGrid}
           footer={{
-            content: <Title text="Primary footer content goes here." />,
+            content: <Title text="Footer content goes here." />,
           }}
         />
       );

@@ -152,54 +152,58 @@ function Template({
   let rightOpen = right ? right.visible : false;
   let setRightOpen = right ? right.toggle : null;
   if (left) {
-    if (!setLeftOpen) [leftOpen, setLeftOpen] = useState(true);
+    if (!setLeftOpen) [leftOpen, setLeftOpen] = useState(left.visible);
     if (screenLarge.matches || screenMedium.matches) {
+      // On larger screens, both left and right regions can be open at the same time
       seeLeftRegion = () => { setLeftOpen(!leftOpen); };
     } else {
-      // On small screens, only 1 region open at a time
-      seeLeftRegion = () => { setLeftOpen(!leftOpen); setRightOpen(true); };
+      // On small screens, either the left or right region can be open, not both
+      seeLeftRegion = () => { setLeftOpen(!leftOpen); setRightOpen(!right.visible); };
     }
   }
   if (right) {
-    if (!setRightOpen) [rightOpen, setRightOpen] = useState(true);
+    if (!setRightOpen) [rightOpen, setRightOpen] = useState(!right.visible);
     if (screenLarge.matches || screenMedium.matches) {
+      // On larger screens, both left and right regions can be open at the same time
       seeRightRegion = () => { setRightOpen(!rightOpen); };
     } else {
-      // On small screens, only 1 region open at a time
-      seeRightRegion = () => { setRightOpen(!rightOpen); setLeftOpen(true); };
+      // On small screens, either the left or right region can be open, not both
+      seeRightRegion = () => { setRightOpen(!rightOpen); setLeftOpen(!left.visible); };
     }
   }
 
   return (
     <TemplateWrapper>
-      <Header
-        contentAlign="center"
-        padding="2x"
-        left={
-          header.iconLeft ? (
+      {header.content ? (
+        <Header
+          contentAlign="center"
+          padding="2x"
+          left={
+            header.iconLeft ? (
+              <Icon
+                size="lg"
+                icon={header.iconLeft}
+                onClick={seeLeftRegion}
+              />
+            ) : (
+                <Avatar
+                  onClick={seeLeftRegion}
+                  image
+                  src={LightBoxIcon}
+                  alt="logo"
+                />
+              )
+          }
+          center={header.content}
+          right={
             <Icon
               size="lg"
-              icon={header.iconLeft}
-              onClick={seeLeftRegion}
+              icon={header.iconRight || "settings"}
+              onClick={seeRightRegion}
             />
-          ) : (
-              <Avatar
-                onClick={seeLeftRegion}
-                image
-                src={LightBoxIcon}
-                alt="logo"
-              />
-            )
-        }
-        center={header.content}
-        right={
-          <Icon
-            size="lg"
-            icon={header.iconRight || "settings"}
-            onClick={seeRightRegion}
-          />
-        }
-      />
+          }
+        />
+      ) : null}
       <Body>
         {left ? (
           <RegionLeft
