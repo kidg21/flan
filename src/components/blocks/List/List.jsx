@@ -8,7 +8,7 @@ import Tag from "atoms/Tag";
 import Avatar from "atoms/Avatar";
 import Checkbox from "atoms/Checkbox";
 import Switch from "atoms/Switch";
-import Title, { Description } from "base/Typography";
+import Text, { Title } from "base/Typography";
 import { InteractiveContext, DisabledContext } from "States";
 
 const ListWrapper = styled.ul`
@@ -106,7 +106,7 @@ function ListItem({
   const centerContent = (
     <React.Fragment>
       <Title text={title} disabled={disabled} />
-      {description ? (<Description text={description} disabled={disabled} />
+      {description ? (<Text text={description} disabled={disabled} />
       ) : null}
     </React.Fragment>
   );

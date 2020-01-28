@@ -2,17 +2,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 
-
 import Grid from "layout/Grid";
-import Title, {
-  Headline,
-  SubTitle,
-  Description,
-  Body,
-  Link,
-  Number,
-  Code,
-} from "base/Typography";
 
 /** TODO: Add 'Documentation' and 'Knobs' stories */
 storiesOf("Application|Style Guides/", module).addDecorator(withInfo);

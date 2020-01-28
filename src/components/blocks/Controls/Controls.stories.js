@@ -33,23 +33,7 @@ storiesOf("Blocks|Controls", module)
   .addDecorator(withKnobs)
   .add("Knobs", () => {
     return (
-      <Controls
-        columns={options(
-          "columns / row",
-          {
-            "single row ( default )": "default",
-            "row wrap (responsive)": "wrap",
-            "1 column / row": "1",
-            "2 columns / row": "2",
-            "3 columns / row": "3",
-            "4 columns / row": "4",
-            "5 columns / row": "5",
-          },
-          "default",
-          { display: "radio" },
-          "Control Group",
-        )}
-      >
+      <Controls >
         <Control
           icon={select(
             "icon 1",
@@ -141,7 +125,7 @@ storiesOf("Blocks|Controls", module)
 
 storiesOf("Blocks|Controls", module)
   .addDecorator(Padding)
-  .add("Single-Row (default)", () => {
+  .add("Default", () => {
     return (
       <Controls>
         <Control label="Control" />

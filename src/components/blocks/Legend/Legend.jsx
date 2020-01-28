@@ -3,7 +3,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Title from "base/Typography";
+import Text, { Title } from "base/Typography";
 import { SkeletonStatic } from "helpers";
 
 
@@ -95,7 +95,7 @@ function Legend({
                 fontWeight={fontWeight}
                 fontSize={fontSize}
               >
-                {row.value}
+                <Text text={row.value} />
               </Cell>
             </Row>
           );
