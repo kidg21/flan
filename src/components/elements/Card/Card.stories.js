@@ -29,21 +29,24 @@ const data = [
         label: "Command One",
       },
     ],
-    more:
-      <MediaBlock
-        media={
-          <Image
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-            alt="This is alt text for this image"
-          />
-        }
-        body={
-          <>
-            <Title text="Media Block" />
-            <Description text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. " />
-          </>
-        }
-      />,
+    more: {
+      element: (
+        <MediaBlock
+          media={
+            <Image
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+              alt="This is alt text for this image"
+            />
+          }
+          body={
+            <React.Fragment>
+              <Title text="Media Block" />
+              <Description text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. " />
+            </React.Fragment>
+          }
+        />
+      ),
+    },
     onClick: action("First Card Clicked"),
   },
   {
@@ -97,7 +100,9 @@ const data = [
         label: "Command Five",
       },
     ],
-    more: <Button label="Button" type="solid" />,
+    more: {
+      element: <Button label="Button" type="solid" />,
+    },
     onClick: action("Third Card Clicked"),
   },
 ];
@@ -149,7 +154,7 @@ storiesOf("Elements|Card", module)
             onClick: action("Command Five Clicked"),
           },
         ]}
-        more={<Button label="Button" type="solid" color="secondary" fullWidth />}
+        more={{ element: <Button label="Button" type="solid" color="secondary" fullWidth /> }}
         onClick={action("Primary Action Area Clicked")}
       >
         {/* Any type of child content is supported */}
@@ -224,9 +229,9 @@ storiesOf("Elements|Card", module)
         }
         more={
           boolean("more", false, "Options") &&
-          array(
+          object(
             "extra content",
-            [<Button label="Button" type="solid" color="secondary" fullWidth />],
+            { element: [<Button label="Button" type="solid" color="secondary" fullWidth />] },
             "Options",
           )
         }
