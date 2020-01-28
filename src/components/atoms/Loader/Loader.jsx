@@ -31,32 +31,51 @@ position: relative;
 
 const Dot = styled.div`
   will-change: transform;
-  height: 1.25rem;
-  margin: 1rem;
-  width: 1.25rem;
+  height: 0.8rem;
+  margin: 0.8rem;
+  width: 0.8rem;
   border-radius: 50%;
-  background: ${(props) => {
+
+
+  
+  
+  &:nth-child(1) {
+    animation: ld4 4s linear infinite 0s; }
+  &:nth-child(2) {
+    animation: ld4 4s linear infinite 0.15s; }
+  &:nth-child(3) {
+    animation: ld4 4s linear infinite 0.3s; }
+  &:nth-child(4) {
+    animation: ld4 4s linear infinite 0.45s; }
+
+@keyframes ld4 {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+    background: ${(props) => {
     return props.theme.palette.primary;
-  }};
-  animation: grow 1s ease-in-out infinite alternate;
-  
-  
-  &:first-child{
-
+  }}; }
+  25% {
+    opacity: 1;
+    transform: scale(1.5);
+    background: ${(props) => {
+    return props.theme.palette.primary;
+  }}; }
+  50% {
+    opacity: 0;
+    transform: scale(0.5);
+    background: ${(props) => {
+    return props.theme.palette.primary;
+  }}; }
+  75% {
+    opacity: 1;
+    transform: scale(1.5);
+    background: ${(props) => {
+    return props.theme.palette.primary;
+  }}; }
+  100% {
+    opacity: 0;
   }
-  &:nth-child(2){
-    animation-delay: 0.33s;
-  }
-  &:last-child{
-    animation-delay: 0.66s;
-  }
-}
-
-@keyframes grow{
-  to{
-    transform: translateX(-50%) scale(0);
-  }
-}
   `;
 
 function Loader({ line, id }) {
@@ -68,6 +87,7 @@ function Loader({ line, id }) {
   } else {
     content = (
       <Chase>
+        <Dot />
         <Dot />
         <Dot />
         <Dot />

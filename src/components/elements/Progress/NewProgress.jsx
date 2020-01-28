@@ -7,19 +7,17 @@ import Title, { Description } from "base/Typography";
 
 
 const StepItem = styled.li`
-float: left;
+align-items: center;
+align-self: center;
+vertical-align: center;
+justify-content: center;
+padding-bottom: 0.5rem;
 display: flex;
+border-bottom: 2px solid ${(props) => { return props.active ? props.theme.palette.grey4 : props.isSelected ? props.theme.palette.primary : props.theme.palette.grey4; }};
 align-items: baseline;
-justify-content: left;
-padding-left: 1rem;
-padding: 0.5rem;
 width: 100%;
-color: ${(props) => { return props.active ? props.theme.palette.primary : props.isSelected ? props.theme.palette.secondary : props.theme.text.primary; }};
+color: ${(props) => { return props.active ? props.theme.text.secondary : props.isSelected ? props.theme.palette.primary : props.theme.text.secondary; }};
 &:before {
-    // content: "Step " counter(step) ". ";
-    // counter-increment: step;
-    // padding-right: .5rem;
-    // font-weight: 600;
     content: counter(step);
     counter-increment: step;
     height: 1.5rem;
@@ -29,7 +27,7 @@ color: ${(props) => { return props.active ? props.theme.palette.primary : props.
     justify-content: center;
     margin-right: 1rem;
     width: 1.5rem;
-    border: 1px solid ${(props) => { return props.active ? props.theme.palette.primary : props.isSelected ? props.theme.palette.secondary : props.theme.text.primary; }};
+    border: 1px solid ${(props) => { return props.active ? props.theme.text.secondary : props.isSelected ? props.theme.palette.primary : props.theme.text.secondary; }};
     border-radius: 50%;
     font-weight: 600;
 }
@@ -45,29 +43,17 @@ align-items: flex-start;
 width: 100%;
 justify-content: space-between;
 z-index: 1;
-${StepItem}:first-child {
-    border-radius: 3rem 0 0 3rem;
-    }};
-  }
-  ${StepItem}:last-child {
-    border-radius: 0 3rem 3rem 0;
-    }};
-  }
+
     `;
 
 
 const ItemContainer = styled.div`
 display: flex;
+justify-content: ${(props) => { return props.line ? "space-between" : ""; }};
 flex-direction: column;
-`;
+width: ${(props) => { return props.line ? "100%" : ""; }};
 
-// const mainContent = (
-//     <React.Fragment>
-//       <Title text={text} disabled={disabled} />
-//       {description ? (<Description text={description} disabled={disabled} />
-//       ) : null}
-//     </React.Fragment>
-//   );
+`;
 
 
 function NewStep({
