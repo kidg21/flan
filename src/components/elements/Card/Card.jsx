@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
-import { Spacer } from "helpers/Display";
+import { Spacer } from "helpers/Display.jsx";
 import { Darken } from "Variables";
 import Grid from "layout/Grid";
 import Bar from "blocks/Bar";

@@ -12,7 +12,6 @@ import Grid from "layout/Grid";
 import Title, { Description } from "base/Typography";
 import MediaBlock from "blocks/MediaBlock";
 import Button from "atoms/Button";
-import { withKnobs, array } from "@storybook/addon-knobs";
 
 const data = [
   {
