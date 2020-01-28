@@ -54,7 +54,7 @@ cursor: pointer;
 }
 `;
 
-const TitleText = styled.text`
+const TitleText = styled.h6`
 font-size: ${(props) => { return props.fontSize; }};
 font-weight: ${(props) => { return props.fontWeight; }};
 color: inherit;
@@ -72,7 +72,7 @@ letter-spacing: ${(props) => { return props.letterSpacing; }};
 
 
 function Title({
-  text, size, weight,
+  text, size, weight, children,
 }) {
   const sizeHash = {
     "6x": {
@@ -121,14 +121,14 @@ function Title({
       fontWeight={fontWeight}
       letterSpacing={letterSpacing}
     >
-      {text}
+      {text || children}
     </TitleText>
   );
 }
 
 
 function Link({
-  text, onClick, href, target, disabled, size, weight,
+  text, onClick, href, target, disabled, size, weight, children,
 }) {
   const sizeHash = {
     "4x": {
@@ -149,7 +149,7 @@ function Link({
     },
   };
 
-  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.9em", letterSpacing: "0px" };
+  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "inherit", letterSpacing: "0px" };
   const { fontSize, letterSpacing } = selectedSize;
 
 
@@ -173,14 +173,14 @@ function Link({
       fontWeight={fontWeight}
       target={target}
     >
-      {text}
+      {text || children}
     </LinkText>
   );
 }
 
 
 function Text({
-  text, size, weight,
+  text, size, weight, children,
 }) {
   const sizeHash = {
     "4x": {
@@ -219,7 +219,7 @@ function Text({
       fontSize={fontSize}
       letterSpacing={letterSpacing}
     >
-      {text}
+      {text || children}
     </Paragraph>
   );
 }
@@ -296,6 +296,7 @@ Label.defaultProps = {
 
 Title.propTypes = {
   text: PropTypes.string,
+  children: PropTypes.node,
   size: PropTypes.string,
   weight: PropTypes.string,
 };
@@ -303,11 +304,13 @@ Title.defaultProps = {
   text: null,
   size: null,
   weight: null,
+  children: null,
 };
 
 
 Text.propTypes = {
   text: PropTypes.string,
+  children: PropTypes.node,
   size: PropTypes.string,
   weight: PropTypes.string,
 };
@@ -315,11 +318,13 @@ Text.defaultProps = {
   text: null,
   size: null,
   weight: null,
+  children: null,
 };
 
 
 Link.propTypes = {
   text: PropTypes.string,
+  children: PropTypes.node,
   target: PropTypes.string,
   onClick: PropTypes.func,
   size: PropTypes.string,
@@ -335,6 +340,7 @@ Link.defaultProps = {
   disabled: false,
   size: null,
   weight: null,
+  children: null,
 };
 
 
