@@ -1,4 +1,4 @@
-/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/jsx-filename-extension, security/detect-object-injection */
 /* global number */
 import React, { useState } from "react";
 import PropTypes from "prop-types";
@@ -8,7 +8,6 @@ import { spy } from "sinon";
 import { ThemeProvider } from "styled-components";
 import { DMPTheme } from "Variables";
 
-import { Padding } from "helpers/Display";
 import Layout from "layout/Layout";
 import InputBlock from "blocks/InputBlock";
 import SelectMenu from "atoms/SelectMenu";
@@ -240,7 +239,8 @@ storiesOf("Blocks|CardList", module)
             }}
             // simple onClick interaction
             onCellClick={(e, selectIndex) => {
-              if (selectedCell && selectedCell.rowIndex === selectIndex.rowIndex && selectedCell.columnIndex === selectIndex.columnIndex) {
+              if (selectedCell && selectedCell.rowIndex === selectIndex.rowIndex &&
+                selectedCell.columnIndex === selectIndex.columnIndex) {
                 setSelectedCell(null);
               } else {
                 setSelectedCell(selectIndex);
@@ -270,16 +270,13 @@ storiesOf("Blocks|CardList", module)
               if (typeof scrollTop === "number" && clearScroll) {
                 setScrollTop(null);
               }
-              console.log("scroll changed");
             }}
             loadRows={({ startIndex, stopIndex }) => {
               return new Promise((resolve) => {
-                console.log(`startIndex: ${startIndex}, stopIndex: ${stopIndex}`);
                 for (let i = startIndex; i < _data[id].length && i <= stopIndex; i++) {
                   _data[id][i] = { status: "loading" };
                 }
                 setTimeout(() => {
-                  console.log(`loaded ${startIndex} to ${stopIndex}`);
                   const newRows = _data[id].slice();
                   for (let i = startIndex; i < _data[id].length && i <= stopIndex; i++) {
                     if (id === "id1") newRows.splice(i, 1, randomData[i]);
