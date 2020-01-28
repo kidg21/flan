@@ -6,6 +6,12 @@ import Grid from "layout/Grid";
 import Icon from "atoms/Icon";
 import Command from "atoms/Command";
 
+const fullscreen = {
+  width: "100%",
+  height: "100vh"
+};
+const FullScreen = (storyFn) => { return (<div style={fullscreen}>{storyFn()}</div>); };
+
 const centerStyles = {
   display: "flex",
   justifyContent: "center",
@@ -75,4 +81,4 @@ function CommandGrid({ data }) {
   ));
 }
 
-export { Center, Padding, Container, Spacer, IconGrid, CommandGrid };
+export { FullScreen, Center, Padding, Container, Spacer, IconGrid, CommandGrid };

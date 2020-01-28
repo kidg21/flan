@@ -2,7 +2,7 @@
 /* eslint-disable security/detect-object-injection */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
-import Panel from "layout/Panel";
+import { FullScreen } from "helpers/Display";
 import Menu from "blocks/Menu";
 import Button from "atoms/Button";
 import Command from "atoms/Command";
@@ -407,17 +407,15 @@ const options = [
 ];
 
 storiesOf("Blocks|Table", module)
-  // .addDecorator(Container)
+  .addDecorator(FullScreen)
   .add("Simple", () => {
     return (
-      <Panel>
-        <DataTable
-          headers={headers.slice(1)}
-          rows={data}
-          listId="foo"
-          columnWidth={180}
-        />
-      </Panel>
+      <DataTable
+        headers={headers.slice(1)}
+        rows={data}
+        listId="foo"
+        columnWidth={180}
+      />
     );
   })
 
@@ -438,19 +436,17 @@ storiesOf("Blocks|Table", module)
       };
 
       return (
-        <Panel>
-          <DataTable
-            headers={headers.slice(1)}
-            rows={data}
-            listId="foo"
-            onCellClick={onCellClick}
-            onHeaderClick={onHeaderClick}
-            onCellMouseOver={onCellMouseOver}
-            highlightedCell={highlightedCell}
-            selectedCell={selectedCell}
-            columnWidth={180}
-          />
-        </Panel>
+        <DataTable
+          headers={headers.slice(1)}
+          rows={data}
+          listId="foo"
+          onCellClick={onCellClick}
+          onHeaderClick={onHeaderClick}
+          onCellMouseOver={onCellMouseOver}
+          highlightedCell={highlightedCell}
+          selectedCell={selectedCell}
+          columnWidth={180}
+        />
       );
     });
   })
@@ -486,19 +482,17 @@ storiesOf("Blocks|Table", module)
       };
 
       return (
-        <Panel>
-          <DataTable
-            headers={headers}
-            rows={data}
-            listId="foo"
-            onCellClick={onCellClick}
-            onHeaderClick={onHeaderClick}
-            onCellMouseOver={onCellMouseOver}
-            highlightedCell={highlightedCell}
-            selectedCell={selectedCell}
-            columnWidth={180}
-          />
-          </Panel>
+        <DataTable
+          headers={headers}
+          rows={data}
+          listId="foo"
+          onCellClick={onCellClick}
+          onHeaderClick={onHeaderClick}
+          onCellMouseOver={onCellMouseOver}
+          highlightedCell={highlightedCell}
+          selectedCell={selectedCell}
+          columnWidth={180}
+        />
       );
     });
   })
@@ -534,19 +528,17 @@ storiesOf("Blocks|Table", module)
       };
 
       return (
-        <Panel>
-          <DataTable
-            headers={headers}
-            rows={data}
-            listId="foo"
-            onCellClick={onCellClick}
-            onHeaderClick={onHeaderClick}
-            onCellMouseOver={onCellMouseOver}
-            highlightedCell={highlightedCell}
-            selectedCell={selectedCell}
-            columnWidth={180}
-          />
-        </Panel>
+        <DataTable
+          headers={headers}
+          rows={data}
+          listId="foo"
+          onCellClick={onCellClick}
+          onHeaderClick={onHeaderClick}
+          onCellMouseOver={onCellMouseOver}
+          highlightedCell={highlightedCell}
+          selectedCell={selectedCell}
+          columnWidth={180}
+        />
       );
     });
   })
@@ -582,19 +574,17 @@ storiesOf("Blocks|Table", module)
       };
 
       return (
-        <Panel>
-          <DataTable
-            headers={headers}
-            rows={data}
-            listId="foo"
-            onCellClick={onCellClick}
-            onHeaderClick={onHeaderClick}
-            onCellMouseOver={onCellMouseOver}
-            highlightedCell={highlightedCell}
-            selectedCell={selectedCell}
-            columnWidth={180}
-          />
-        </Panel>
+        <DataTable
+          headers={headers}
+          rows={data}
+          listId="foo"
+          onCellClick={onCellClick}
+          onHeaderClick={onHeaderClick}
+          onCellMouseOver={onCellMouseOver}
+          highlightedCell={highlightedCell}
+          selectedCell={selectedCell}
+          columnWidth={180}
+        />
       );
     });
   })
@@ -631,19 +621,17 @@ storiesOf("Blocks|Table", module)
       };
 
       return (
-        <Panel>
-          <DataTable
-            headers={headers}
-            rows={data}
-            listId="foo"
-            onCellClick={onCellClick}
-            onHeaderClick={onHeaderClick}
-            onCellMouseOver={onCellMouseOver}
-            highlightedCell={highlightedCell}
-            selectedCell={selectedCell}
-            columnWidth={180}
-          />
-          </Panel>
+        <DataTable
+          headers={headers}
+          rows={data}
+          listId="foo"
+          onCellClick={onCellClick}
+          onHeaderClick={onHeaderClick}
+          onCellMouseOver={onCellMouseOver}
+          highlightedCell={highlightedCell}
+          selectedCell={selectedCell}
+          columnWidth={180}
+        />
       );
     });
   });
