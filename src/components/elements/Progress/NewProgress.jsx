@@ -16,9 +16,21 @@ padding: 0.5rem;
 width: 100%;
 color: ${(props) => { return props.active ? props.theme.palette.primary : props.isSelected ? props.theme.palette.secondary : props.theme.text.primary; }};
 &:before {
-    content: "Step " counter(step) ". ";
+    // content: "Step " counter(step) ". ";
+    // counter-increment: step;
+    // padding-right: .5rem;
+    // font-weight: 600;
+    content: counter(step);
     counter-increment: step;
-    padding-right: .5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    vertical-align: bottom;
+    justify-content: center;
+    margin-right: 1rem;
+    width: 1.5rem;
+    border: 1px solid ${(props) => { return props.active ? props.theme.palette.primary : props.isSelected ? props.theme.palette.secondary : props.theme.text.primary; }};
+    border-radius: 50%;
     font-weight: 600;
 }
 

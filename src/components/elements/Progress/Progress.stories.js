@@ -15,24 +15,16 @@ storiesOf("Elements|Progress", module)
     .add("Flow", () => {
         return (
             <NewProgressBar >
-                <NewStep active text="Draw" description="this is what you do" />
-                <NewStep active text="Report" />
-                <NewStep isSelected text="user" description="this is what you do" />
-                <NewStep text="user" description="this is what you do" />
-                <NewStep text="user" />
+                <NewStep active text="Task" description="this is what you do" />
+                <NewStep active text="Task" description="this is what you do" />
+                <NewStep isSelected text="Task" description="this is what you do" />
+                <NewStep text="Task" description="this is what you do" />
+                <NewStep text="Task"  description="this is what you do" />
 
             </NewProgressBar>
         );
     })
-    .add("Block", () => {
-        return (
-            <BlockProgressBar >
-                <BlockStep  text="Draw" description="this is what you do" />
-                <BlockStep isSelected text="Action" description="this is what you do" />
-                <BlockStep text="Action" description="this is what you do" />
-            </BlockProgressBar>
-        );
-    })
+
     .add("Simple", () => {
         return (<ProgressBar >
             <Step active />
