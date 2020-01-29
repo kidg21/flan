@@ -17,7 +17,7 @@ function NewRoles({ columns, roles }) {
         right={<Button label="+Add Role" />}
         leftWidth="30%"
       />
-      <Table columns={columns} data={roles} scroll header setHeight="200px" />
+      {/* <Table columns={columns} data={roles} scroll header setHeight="200px" /> */}
     </Panel>
   );
 }
