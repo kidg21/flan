@@ -49,6 +49,7 @@ export { default as Card, CardSection, CardGrid } from "./elements/Card";
 export { default as MainPanelHeader } from "./elements/PanelHeaders/MainPanelHeader";
 export { default as PropertyPanelHeader } from "./elements/PanelHeaders/PropertyPanelHeader";
 export { default as NavigationPanelHeader } from "./elements/PanelHeaders/NavigationPanelHeader";
+export { default as ProgressBar, Step } from "./elements/Progress";
 export { default as Notification } from "./elements/Notification";
 export { UserRoles, RolePermissions } from "./elements/UserRoles";
 export {
