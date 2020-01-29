@@ -240,25 +240,29 @@ function Template({
 }
 
 Template.propTypes = {
-  header: {
+  header: PropTypes.oneOfType([PropTypes.object, PropTypes.arrayOf(PropTypes.shape({
     content: PropTypes.node,
     iconLeft: PropTypes.string,
     iconRight: PropTypes.string,
-  },
-  left: {
+  })),
+  ]),
+  left: PropTypes.oneOfType([PropTypes.object, PropTypes.arrayOf(PropTypes.shape({
     content: PropTypes.node.isRequired,
-    visible: PropTypes.bool,
-    toggle: PropTypes.func,
-  },
+    iconLeft: PropTypes.string,
+    iconRight: PropTypes.string,
+  })),
+  ]),
   main: PropTypes.node.isRequired,
-  right: {
+  right: PropTypes.oneOfType([PropTypes.object, PropTypes.arrayOf(PropTypes.shape({
     content: PropTypes.node.isRequired,
-    visible: PropTypes.bool,
-    toggle: PropTypes.func,
-  },
-  footer: {
+    iconLeft: PropTypes.string,
+    iconRight: PropTypes.string,
+  })),
+  ]),
+  footer: PropTypes.oneOfType([PropTypes.object, PropTypes.arrayOf(PropTypes.shape({
     content: PropTypes.node.isRequired,
-  },
+  })),
+  ]),
 };
 
 Template.defaultProps = {
