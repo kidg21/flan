@@ -1,10 +1,25 @@
 /* eslint-disable linebreak-style */
 import React from "react";
+import styled from "styled-components";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
 import Button from "atoms/Button";
-import Card from "elements/Card";
-import Bar from "blocks/Bar";
+import Card, { CardSection } from "elements/Card";
+
+const ButtonGrid = styled(Grid)`
+grid-template-columns: auto auto auto;
+grid-template-areas: 'blank one two';
+
+`;
+
+
+const FirstButton = styled(Button)`
+grid-area: one;
+`;
+
+const SecondButton = styled(Button)`
+grid-area: two;
+`;
 
 function DialogBox({
   id,
@@ -18,38 +33,28 @@ function DialogBox({
     if (buttons.length === 2) {
       // Multiple buttons
       buttonElements = (
-        <Bar
-          padding="2x"
-          rightWidth="50%"
-          right={
-            <Grid columns="2">
-              <Button
-                label={buttons[0].label}
-                onClick={buttons[0].onClick}
-                disabled={buttons[0].disabled}
-                type={buttons[0].type}
-              />
-              <Button
-                label={buttons[1].label}
-                onClick={buttons[1].onClick}
-                disabled={buttons[1].disabled}
-                type={buttons[1].type}
-                solid
-              />
-            </Grid>}
-        />);
+        <ButtonGrid columns="3">
+          <FirstButton
+            label={buttons[0].label}
+            onClick={buttons[0].onClick}
+            disabled={buttons[0].disabled}
+            type={buttons[0].type}
+          />
+          <SecondButton
+            label={buttons[1].label}
+            onClick={buttons[1].onClick}
+            disabled={buttons[1].disabled}
+            type={buttons[1].type}
+            solid
+          />
+        </ButtonGrid >);
     } else if (buttons.length === 1) {
       buttonElements = (
-        <Bar
-          padding="2x"
-          center={
-            <Button
-              label={buttons[0].label}
-              onClick={buttons[0].onClick}
-              disabled={buttons[0].disabled}
-              type={buttons[0].type}
-            />
-          }
+        <FirstButton
+          label={buttons[0].label}
+          onClick={buttons[0].onClick}
+          disabled={buttons[0].disabled}
+          type={buttons[0].type}
         />
       );
     }
@@ -61,8 +66,8 @@ function DialogBox({
       title={title}
       body={body}
     >
-      {children}
-      {buttonElements ? <React.Fragment>{buttonElements}</React.Fragment> : null}
+      {children ? <CardSection>{children}</CardSection> : null}
+      {buttonElements ? <CardSection>{buttonElements}</CardSection> : null}
     </Card>
   );
 }
