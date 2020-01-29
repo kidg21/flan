@@ -59,6 +59,7 @@ export {
 
 // Publicly exported files from 'layout'
 export { default as Form, Section } from "./layout/Form";
+export { default as Flex } from "./layout/Flex";
 export { default as Grid } from "./layout/Grid";
 export { default as Layout } from "./layout/Layout";
 export { default as Modal } from "./layout/Modal";
