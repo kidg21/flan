@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import styled from "styled-components";
-import Text, { Title } from "base/Typography";
 import Card from "elements/Card";
 import List, { ListItem } from "blocks/List";
 
