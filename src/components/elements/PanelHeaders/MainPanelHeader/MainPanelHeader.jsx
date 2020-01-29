@@ -2,7 +2,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Bar from "blocks/Bar";
-import Title from "base/Typography";
+import Text, { Title } from "base/Typography";
 import Menu from "blocks/Menu";
 
 function MainPanelHeader({

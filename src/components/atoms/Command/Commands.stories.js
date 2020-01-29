@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { Padding, CommandGrid } from "helpers/Display";
-import Title, { Headline, SubTitle, Description } from "base/Typography";
+import Text, { Title } from "base/Typography";
 import Grid from "layout/Grid";
 import commandsStandard from "atoms/Command/libraryCommand.data";
 import Command from "atoms/Command";
@@ -104,7 +104,7 @@ storiesOf("Atoms|Command", module)
         <Title>
           <u>Command Alignment</u>
         </Title>
-        <Description text="The standard Command is left-aligned with its Icon on the left. Set the 'align' prop to 'center' in order to center-align the Command placing its Icon atop the label. Set the 'align' prop to 'right' to right-align the Command with its Icon on the right." />
+        <Text text="The standard Command is left-aligned with its Icon on the left. Set the 'align' prop to 'center' in order to center-align the Command placing its Icon atop the label. Set the 'align' prop to 'right' to right-align the Command with its Icon on the right." />
         <Command label="Icon-Left" icon="circle_solid" />
         <Command label="Icon-Top" icon="circle_solid" align="center" />
         <Command label="Icon-Right" icon="circle_solid" align="right" />
@@ -117,10 +117,10 @@ storiesOf("Atoms|Command", module)
         <Title>
           <u>Command State</u>
         </Title>
-        <SubTitle>
+        <Text>
           The standard Command uses an anchor tag and inherits anchor styling.
           To disable a Command, use the &apos;disabled&apos; prop.
-        </SubTitle>
+        </Text>
         <Command icon="circle_solid" label="Active" />
         <Command icon="circle_solid" label="Disabled" disabled />
       </Grid>
@@ -132,10 +132,10 @@ storiesOf("Atoms|Command", module)
         <Title>
           <u>Command Size</u>
         </Title>
-        <SubTitle>
+        <Text>
           To override the standard size, set the &apos;size&apos; prop to
           &apos;small&apos;, or &apos;large&apos;.
-        </SubTitle>
+        </Text>
         <Command icon="circle_solid" label="Small" size="small" />
         <Command icon="circle_solid" label="Standard" />
         <Command icon="circle_solid" label="Large" size="large" />
@@ -148,8 +148,8 @@ storiesOf("Application|Libraries", module)
   .add("Standard Commands", () => {
     return (
       <Grid gap="large">
-        <Headline text="Standard Commands" />
-        <Description text="The Command is an interactive UI element that pairs an icon and a label. Use a Command when a user's action is intended to begin an action or workflow." />
+        <Title text="Standard Commands" />
+        <Text text="The Command is an interactive UI element that pairs an icon and a label. Use a Command when a user's action is intended to begin an action or workflow." />
         <CommandGrid data={commandsStandard} />
       </Grid>
     );

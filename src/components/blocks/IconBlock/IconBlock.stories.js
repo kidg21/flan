@@ -5,8 +5,8 @@ import React from "react";
 
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
+import { Title } from "base/Typography";
 import Card from "elements/Card";
-import Title, { SubTitle } from "base/Typography";
 import Icon from "atoms/Icon";
 import IconBlock from "blocks/IconBlock";
 /** TODO: Add documentation */
@@ -19,7 +19,7 @@ storiesOf("Blocks|Icon Block", module)
     return (
       <Grid columns="1">
         <Title text="Icon Block" styling="underline" />
-        <SubTitle text="Distributes icons horizontally" />
+        <Title text="Distributes icons horizontally" />
         <Grid columns="3">
           <Card>
             <IconBlock>

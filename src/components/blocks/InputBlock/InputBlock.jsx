@@ -4,8 +4,8 @@ import React, { useState, useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
-import Label from "atoms/Label";
 import Grid from "layout/Grid";
+import Text, { Label } from "base/Typography";
 import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";
 import Button from "atoms/Button";
@@ -14,6 +14,7 @@ const TextInputContainer = styled(Grid)`
   color: ${(props) => {
     return props.theme.text[props.inputTextColor] || props.theme.text.primary;
   }};
+  align-items: center;
   width: 100%;
 `;
 
@@ -119,9 +120,9 @@ function InputBlock({
   } else if (text) {
     inputContainer = (
       <Grid columns={gridColumns} gap="tiny">
-        {prefix ? <Label text={text} /> : null}
+        {prefix ? <Text type="bold" text={text} /> : null}
         {inputElements}
-        {!prefix ? <Label text={text} /> : null}
+        {!prefix ? <Text type="bold" text={text} /> : null}
       </Grid>
     );
   } else if (options) {
@@ -194,10 +195,10 @@ function InputBlock({
         prefix={prefix}
         text={text}
       >
-        {label ? <Label weight="bold" isRequired={isRequired} text={label} /> : null}
+        {label ? <Label size="2x" isRequired={isRequired} text={label} /> : null}
         {inputContainer}
-        {helpText ? <Label size="sm" text={helpText} /> : null}
-        {errorText ? <Label size="sm" text={errorText} /> : null}
+        {helpText ? <Text size="1x" text={helpText} /> : null}
+        {errorText ? <Text size="1x" text={errorText} /> : null}
       </TextInputContainer>
     </DisabledContext.Provider>
   );

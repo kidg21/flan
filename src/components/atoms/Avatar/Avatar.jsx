@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import Icon from "atoms/Icon";
 import Image from "atoms/Image";
-import Title from "base/Typography";
+import { Title } from "base/Typography";
 
 const AvatarText = styled(Title)`
   color: inherit;

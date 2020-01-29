@@ -1,5 +1,5 @@
 import React from "react";
-import Title, { Description } from "base/Typography";
+import Text, { Title } from "base/Typography";
 import Bar from "blocks/Bar";
 import Card, { CardSection } from "elements/Card";
 import Grid from "layout/Grid";
@@ -62,7 +62,7 @@ function IconGrid({ data }) {
           center={
             <>
               <Title text={item.name || item.icon} size="lg" select="all" />
-              <Description text={item.desc} />
+              <Text text={item.desc} />
             </>
           }
           centerAlign="left"
@@ -76,7 +76,7 @@ function CommandGrid({ data }) {
   return data.map(item => (
     <Grid gap="tiny">
       <Command command={item.command} />
-      <Description text={item.desc} />
+      <Text text={item.desc} />
     </Grid>
   ));
 }

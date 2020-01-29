@@ -9,7 +9,7 @@ import { Spacer } from "helpers/Display.jsx";
 import { Darken } from "Variables";
 import Grid from "layout/Grid";
 import Bar from "blocks/Bar";
-import { Headline, SubTitle, Body } from "base/Typography";
+import Text, { Title } from "base/Typography";
 import Icon from "atoms/Icon";
 import Command from "atoms/Command";
 import Image from "atoms/Image";
@@ -195,8 +195,8 @@ function ExpandingSection({
             centerAlign="left"
             center={
               <React.Fragment>
-                {title ? <Headline text={title} /> : null}
-                {description ? <SubTitle text={description} /> : null}
+                {title ? <Title text={title} /> : null}
+                {description ? <Text text={description} /> : null}
               </React.Fragment>
             }
             rightWidth="max-content"
@@ -358,8 +358,8 @@ function Card({
           centerAlign="left"
           center={
             <React.Fragment>
-              {title ? <Headline text={title} /> : null}
-              {description ? <SubTitle text={description} /> : null}
+              {title ? <Title text={title} /> : null}
+              {description ? <Text text={description} /> : null}
             </React.Fragment>
           }
         />
@@ -522,7 +522,7 @@ function Card({
       {headerSection}
       {body ? (
         <CardSection onClick={onClick}>
-          <Body text={body} />
+          <Text text={body} />
         </CardSection>
       ) : null}
       {children}
