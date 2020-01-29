@@ -6,7 +6,7 @@ import Card, { CardGrid } from "elements/Card";
 import Icon from "atoms/Icon";
 import IconBlock from "blocks/IconBlock";
 import Command from "atoms/Command";
-import Title, { Description } from "base/Typography";
+import Text, {Title} from "base/Typography";
 import Bar from "blocks/Bar";
 
 const BarNotes = markdown.require("./Bar.md");
@@ -18,7 +18,7 @@ const longTitle = (
 const multipleLines = (
   <Fragment>
     <Title text="Towgood, Gary T." />
-    <Description text="3082 Yellowstone Dr. Costa Mesa, CA 92612" />
+    <Text text="3082 Yellowstone Dr. Costa Mesa, CA 92612" />
   </Fragment>
 );
 
@@ -119,44 +119,44 @@ storiesOf("Blocks|Bar", module)
           />
         </Card>
 
-        <Card>
-          <Bar left={shortTitle} right={<Command />} />
-        </Card>
-        <Card>
-          <Bar center={longTitle} centerAlign="left" right={<Command />} />
-        </Card>
-        <Card>
-          <Bar center={multipleLines} centerAlign="left" right={<Command />} />
-        </Card>
+//         <Card>
+//           <Bar left={shortTitle} right={<Command />} />
+//         </Card>
+//         <Card>
+//           <Bar center={longTitle} centerAlign="left" right={<Command />} />
+//         </Card>
+//         <Card>
+//           <Bar center={multipleLines} centerAlign="left" right={<Command />} />
+//         </Card>
 
-        <Card>
-          <Bar left={shortTitle} />
-        </Card>
-        <Card>
-          <Bar left={longTitle} />
-        </Card>
-        <Card>
-          <Bar left={multipleLines} />
-        </Card>
+//         <Card>
+//           <Bar left={shortTitle} />
+//         </Card>
+//         <Card>
+//           <Bar left={longTitle} />
+//         </Card>
+//         <Card>
+//           <Bar left={multipleLines} />
+//         </Card>
 
-        <Card>
-          <Bar left={<Command />} />
-        </Card>
-        <Card>
-          <Bar center={<Command />} />
-        </Card>
-        <Card>
-          <Bar right={<Command />} />
-        </Card>
-        <Card>
-          <Bar left={<Command />} right={<Command />} />
-        </Card>
-        <Card>
-          <Bar left={<Command />} center={<Command />} right={<Command />} />
-        </Card>
+//         <Card>
+//           <Bar left={<Command />} />
+//         </Card>
+//         <Card>
+//           <Bar center={<Command />} />
+//         </Card>
+//         <Card>
+//           <Bar right={<Command />} />
+//         </Card>
+//         <Card>
+//           <Bar left={<Command />} right={<Command />} />
+//         </Card>
+//         <Card>
+//           <Bar left={<Command />} center={<Command />} right={<Command />} />
+//         </Card>
 
-        <Card>
-          <Bar
+//         <Card>
+//           <Bar
             left={<Icon icon="circle" />}
             center={<Icon icon="circle" />}
             right={<Icon icon="circle" />}

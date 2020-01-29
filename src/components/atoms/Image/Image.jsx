@@ -44,7 +44,7 @@ Image.propTypes = {
   className: PropTypes.string,
   onClick: PropTypes.func,
   src: PropTypes.string,
-  width: PropTypes.number,
+  width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 Image.defaultProps = {
   border: false,

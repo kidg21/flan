@@ -3,7 +3,7 @@
 import React from "react";
 import { Padding, IconGrid } from "helpers/Display";
 import Grid from "layout/Grid";
-import Title, { SubTitle, Description } from "base/Typography";
+import Text, { Title } from "base/Typography";
 import { CardGrid } from "elements/Card";
 import Icon from "atoms/Icon";
 import { iconsType, iconsSize } from "atoms/Icon/libraryIcon.data";
@@ -79,8 +79,8 @@ storiesOf("Atoms|Icon", module)
     return (
       <Grid columns="1">
         <Title text="Icon Types" size="large" styling="underline" />
-        <SubTitle text="Icons inherit the 'color' of the parent container but can be overridden." />
-        <Description text="Available Props: default (no prop)', 'info', 'success', 'warning', 'alert'" />
+        <Text text="Icons inherit the 'color' of the parent container but can be overridden." />
+        <Text text="Available Props: default (no prop)', 'info', 'success', 'warning', 'alert'" />
         <CardGrid>
           <IconGrid data={iconsType} />
         </CardGrid>
@@ -91,8 +91,8 @@ storiesOf("Atoms|Icon", module)
     return (
       <Grid columns="1">
         <Title text="Icon Sizes" size="large" styling="underline" />
-        <SubTitle text="Icons inherit the 'font-size' of the parent container and are relatively sized." />
-        <Description text="Available Props: 'xs', 'sm', 'standard (no prop)', 'lg', '2x', '3x', '4x', '5x', '6x', '7x', '8x', '9x', '10x'" />
+        <Text text="Icons inherit the 'font-size' of the parent container and are relatively sized." />
+        <Text text="Available Props: 'xs', 'sm', 'standard (no prop)', 'lg', '2x', '3x', '4x', '5x', '6x', '7x', '8x', '9x', '10x'" />
         <CardGrid>
           <IconGrid data={iconsSize} />
         </CardGrid>

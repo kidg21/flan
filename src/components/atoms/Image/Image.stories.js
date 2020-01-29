@@ -3,7 +3,7 @@
 import React from "react";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
-import Title, { Headline } from "base/Typography";
+import { Title } from "base/Typography";
 import Image from "atoms/Image";
 
 const ImageNotes = markdown.require("./Image.md");
@@ -44,7 +44,7 @@ storiesOf("Atoms|Image", module)
   .add("Type", () => {
     return (
       <Grid gap="tiny">
-        <Headline text="Type" />
+        <Title text="Type" />
         <Image
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
           alt="This is alt text for this image"
