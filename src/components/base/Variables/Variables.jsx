@@ -89,9 +89,14 @@ export const colors = {
   shade9: "hsla(34, 5%, 12%, 0.45)",
   shade10: "hsla(34, 5%, 12%, 0.5)",
 
-  // softGrey: "hsl(270, 5%, 92.2%)",
-  // soft
-
+  softGrey: "hsl(270, 5%, 92.2%)",
+  softBlue: "hsl(180, 33.3%, 88.8%)",
+  moss: "hsl(197, 12.9%, 55.9%)",
+  robinBlue: "hsl(196, 51.5%, 59.6%)",
+  seafoam: "hsl(179, 93.4%, 35.9%)",
+  blueSteel: "hsl(207, 88.5%, 30.6%)",
+  tangerine: "hsl(26, 89.3%, 56.1%)",
+  lemon: "hsl(45, 100%, 50%)",
 
 };
 
