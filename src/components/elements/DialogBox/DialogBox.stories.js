@@ -23,15 +23,57 @@ storiesOf("Elements|Dialog Box", module)
           body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
           buttons={[
             {
-              id: "Button One",
-              label: "Button One",
+              id: "Negative Action",
+              label: "Negative Action",
             },
             {
-              id: "Button Two",
-              label: "Button Two",
+              id: "Affirmative Action",
+              label: "Affirmative Action",
             },
           ]}
         />
       );
     }),
-  );
+  )
+
+  .add("Success", () => {
+    return (
+      <DialogBox
+        title="Successful Dialog"
+        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        buttons={[
+          {
+            id: "Negative Action",
+            label: "Negative Action",
+            type: "success",
+          },
+          {
+            id: "Affirmative Action",
+            label: "Affirmative Action",
+            type: "success",
+          },
+        ]}
+      />
+    );
+  })
+  .add("Error", () => {
+    return (
+      <DialogBox
+        title="Error Dialog"
+        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        buttons={[
+          {
+            id: "Negative Action",
+            label: "Negative Action",
+            type: "alert",
+          },
+          {
+            id: "Affirmative Action",
+            label: "Affirmative Action",
+            type: "alert",
+          },
+        ]}
+      />
+    );
+  });
+
