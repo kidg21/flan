@@ -11,6 +11,7 @@ export { default as GlobalStyles } from "./base/GlobalStyles/GlobalStyles.jsx";
 
 // Publicly exported files from 'atoms'
 export { default as Avatar } from "./atoms/Avatar";
+export { default as Loader } from "./atoms/Loader";
 export { default as Badge } from "./atoms/Badge";
 export { default as Button } from "./atoms/Button";
 export { default as Calendar } from "./atoms/Calendar";
@@ -48,6 +49,7 @@ export { default as Card, CardSection, CardGrid } from "./elements/Card";
 export { default as MainPanelHeader } from "./elements/PanelHeaders/MainPanelHeader";
 export { default as PropertyPanelHeader } from "./elements/PanelHeaders/PropertyPanelHeader";
 export { default as NavigationPanelHeader } from "./elements/PanelHeaders/NavigationPanelHeader";
+export { default as ProgressBar, Step } from "./elements/Progress";
 export { default as Notification } from "./elements/Notification";
 export { UserRoles, RolePermissions } from "./elements/UserRoles";
 export {
