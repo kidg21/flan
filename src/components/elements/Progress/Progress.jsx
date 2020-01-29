@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import Text, { Title } from "base/Typography";
@@ -20,6 +20,7 @@ color: ${(props) => { return props.success ? props.theme.text.secondary : props.
     counter-increment: step;
     height: 1.5rem;
     display: flex;
+    padding: 0.5em;
     align-items: center;
     vertical-align: bottom;
     justify-content: center;
@@ -61,7 +62,7 @@ function Step({
     id, success, text, description, isSelected,
 }) {
     return (
-        <StepItem success={success} isSelected={isSelected}>
+        <StepItem id={id} success={success} isSelected={isSelected}>
             <ItemContainer>
                 <Title text={text} />
                 {description ? (<Text text={description} />
@@ -77,7 +78,7 @@ function ProgressBar({
     id, children,
 }) {
     return (
-        <Container>
+        <Container id={id}>
             {children}
         </Container>
     );
@@ -86,6 +87,7 @@ function ProgressBar({
 Step.propTypes = {
     id: PropTypes.string,
     success: PropTypes.bool,
+    description: PropTypes.string,
     text: PropTypes.string,
     isSelected: PropTypes.bool,
 };
@@ -98,6 +100,7 @@ ProgressBar.propTypes = {
 Step.defaultProps = {
     id: null,
     success: false,
+    description: null,
     text: null,
     isSelected: false,
 };

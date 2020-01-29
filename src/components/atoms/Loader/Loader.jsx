@@ -1,5 +1,7 @@
 import React, { Fragment } from "react";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
+import PropTypes from "prop-types";
+
 
 const Fill = styled.div`
 height: 0.65rem;
@@ -100,6 +102,18 @@ function Loader({ line, id }) {
     </Fragment>
   );
 }
+
+
+Loader.propTypes = {
+  id: PropTypes.string,
+  line: PropTypes.cool,
+};
+
+Loader.defaultProps = {
+  id: null,
+  line: null,
+};
+
 
 export default Loader;
 
