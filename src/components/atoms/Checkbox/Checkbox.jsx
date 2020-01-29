@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
-import Label from "atoms/Label";
+import Text, { Label } from "base/Typography";
 import Grid from "layout/Grid";
 
 const CheckboxWrapper = styled(Grid)`
@@ -20,12 +20,14 @@ const CheckboxContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 0.75rem;
+  align-items: center;
   grid-template-areas: ${(props) => {
     return props.alignInput || "";
   }};
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || props.theme.text.primary;
+    return props.theme.text[props.inputTextColor] || "";
   }};
+  line-height: initial;
   &[disabled],
   &[readonly] {
     cursor: not-allowed;
@@ -55,7 +57,7 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
     background-color: ${(props) => {
     return (
       props.theme.palette[props.fillColorChecked] ||
-        props.theme.palette.secondaryLight
+      props.theme.palette.secondaryLight
     );
   }};
     border-color: ${(props) => {
@@ -188,14 +190,13 @@ function CheckboxGroup({
       align={align}
       disabled={isDisabled}
       columns="1"
-      gap="small"
       inputTextColor={inputTextColor}
       id={id}
     >
       {label ? (
-        <Label weight="bold" isRequired={isRequired} text={label} />
+        <Text weight="bold" isRequired={isRequired} text={label} />
       ) : null}
-      {helpText ? <Label size="sm" text={helpText} /> : null}
+      {helpText ? <Text text={helpText} /> : null}
       <InputGroup columns={columns}>
         {children ||
           data.map((item) => {
@@ -217,7 +218,7 @@ function CheckboxGroup({
             );
           })}
       </InputGroup>
-      {errorText ? <Label size="sm" text={errorText} /> : null}
+      {errorText ? <Text text={errorText} /> : null}
     </CheckboxWrapper>
   );
 }

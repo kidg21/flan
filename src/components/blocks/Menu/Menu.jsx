@@ -4,38 +4,20 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import styled from "styled-components";
-import Card from "layout/Card";
+import Text, { Title } from "base/Typography";
+import Card from "elements/Card";
 import List, { ListItem } from "blocks/List";
 
-const MenuContainer = styled.div`
+const MenuContainer = styled.a`
   cursor: pointer;
   line-height: 1.5;
-  color: ${(props) => {
-    return props.theme.text.primary;
-  }};
-  padding: 0.5em;
-  margin: -0.5em;
-`;
-
-const ItemWrapper = styled.div`
-  z-index: 501;
-  text-align: left;
-  &:last-child {
-    padding-bottom: 1rem;
-  }
-  &:first-child{
-    padding-top: 1rem;
+  &:hover {
+    filter: none;
   }
 `;
 
-// const ListWrapper = styled.div`
-// `;
-const ListWrapper = styled.div`
+const ListWrapper = styled(List)`
   list-style: none;
-  padding-top: 0.4em;
-  padding-bottom: 0.4em;
-  width: auto;
-  min-width: 10rem;
   background: ${(props) => {
     return props.theme.background.default;
   }};
@@ -43,9 +25,30 @@ const ListWrapper = styled.div`
   overflow-y: auto;
 `;
 
+const ItemWrapper = styled.li`
+  text-align: left;
+  z-index: 501;
+  &[disabled] {
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
+    color: ${(props) => {
+    return props.theme.text.disabled;
+  }};
+    background-color: ${(props) => {
+    return props.theme.background.disabled;
+  }};
+    > * {
+      color: inherit;
+      background-color: inherit;
+    }
+  }
+`;
+
 const MenuPopper = styled.div`
-  position: absolute;
+  position: fixed;
   z-index: 500;
+  min-width: 12em;
   top: ${(props) => {
     return props.top || "";
   }};
@@ -76,6 +79,7 @@ const MenuBG = styled.div`
 function MenuComponent({
   id,
   data,
+  disabled,
   onClick,
   left,
   top,
@@ -99,50 +103,51 @@ function MenuComponent({
       onClick={onClick}
       onMouseLeave={closeMenu}
     >
-      <Card>
-        <ListWrapper>
-          <List interactive>
-            {data.map((item) => {
-              // nested submenu
-              if (item.commands) {
-                return (
-                  <ItemWrapper
-                    key={item.id}
-                    onMouseOver={(e) => {
-                      setActiveItem({
-                        id: item.id,
-                        top: `${e.currentTarget.getBoundingClientRect().top - e.currentTarget.offsetParent.getBoundingClientRect().top}px`,
-                        left: submenuDirection === "right" ? `${e.currentTarget.offsetParent.getBoundingClientRect().width}px` : "",
-                        right: submenuDirection !== "right" ? `${e.currentTarget.offsetParent.getBoundingClientRect().width}px` : "",
-                      });
-                    }}
-                  >
-                    <ListItem label={item.name} icon={item.icon} arrow={submenuDirection} />
-                    {activeItem && activeItem.id === item.id ? (
-                      <MenuComponent
-                        id={item.id}
-                        data={item.commands}
-                        onClick={closeMenu}
-                        right={activeItem.right}
-                        left={activeItem.left}
-                        top={activeItem.top}
-                        submenuDirection={submenuDirection}
-                      />
-                    ) : null}
-                  </ItemWrapper>
-                );
-              }
-
+      <Card shadow="2x">
+        <ListWrapper interactive>
+          {data.map((item) => {
+            // nested submenu
+            if (item.commands) {
               return (
                 <ItemWrapper
                   key={item.id}
-                  onClick={() => { if (item.onClickLink) item.onClickLink(item.id); }}
-                  onMouseOver={closeMenu}
+                  disabled={item.disabled}
+                  tabIndex="0"
+                  onMouseOver={(e) => {
+                    setActiveItem({
+                      id: item.id,
+                      top: `${e.currentTarget.getBoundingClientRect().top - e.currentTarget.offsetParent.getBoundingClientRect().top}px`,
+                      left: submenuDirection === "right" ? `${e.currentTarget.offsetParent.getBoundingClientRect().width}px` : "",
+                      right: submenuDirection !== "right" ? `${e.currentTarget.offsetParent.getBoundingClientRect().width}px` : "",
+                    });
+                  }}
                 >
-                  <ListItem label={item.name} icon={item.icon} />
-                </ItemWrapper>);
-            })}
-          </List>
+                  <ListItem as="section" title={item.label} icon={item.icon} arrow={submenuDirection} disabled={disabled} />
+                  {activeItem && activeItem.id === item.id ? (
+                    <MenuComponent
+                      id={item.id}
+                      data={item.commands}
+                      onClick={closeMenu}
+                      right={activeItem.right}
+                      left={activeItem.left}
+                      top={activeItem.top}
+                      submenuDirection={submenuDirection}
+                    />
+                  ) : null}
+                </ItemWrapper>
+              );
+            }
+
+            return (
+              <ItemWrapper
+                key={item.id}
+                disabled={item.disabled}
+                onClick={() => { if (item.onClickLink) item.onClickLink(item.id); }}
+                onMouseOver={closeMenu}
+              >
+                <ListItem as="section" title={item.label} icon={item.icon} />
+              </ItemWrapper>);
+          })}
         </ListWrapper>
       </Card>
     </MenuPopper>
@@ -152,9 +157,10 @@ function MenuComponent({
 MenuComponent.propTypes = {
   data: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
-    name: PropTypes.string,
+    label: PropTypes.string,
     onClickLink: PropTypes.func,
   })).isRequired,
+  disabled: PropTypes.bool,
   id: PropTypes.string.isRequired,
   left: PropTypes.string,
   onClick: PropTypes.func,
@@ -165,6 +171,7 @@ MenuComponent.propTypes = {
 };
 
 MenuComponent.defaultProps = {
+  disabled: null,
   left: "",
   onClick: null,
   right: "",

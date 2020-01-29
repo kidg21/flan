@@ -3,23 +3,23 @@ import React from "react";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import Bar from "blocks/Bar";
-import Title from "base/Typography";
+import Text, { Title } from "base/Typography";
 import Menu from "blocks/Menu";
 
 function PropertyPanelHeader({
-  id, title, menuData, onClick,
+  id, title, onClick, menuData,
 }) {
   return (
     <React.Fragment id={id}>
       <Bar
         padding="3x"
         contentAlign="center"
-        left={<Icon icon="directions" size="2x" type="primarylight" onClick={onClick} />}
         leftWidth="min-content"
-        center={<Title text={title} size="large" />}
+        left={<Icon icon="directions" size="2x" type="primarylight" onClick={onClick} />}
         centerAlign="left"
-        right={<Menu menuData={menuData} position="bottomLeft" type="edit" />}
+        center={<Title text={title} size="large" />}
         rightWidth="min-content"
+        right={<Menu data={menuData} position="bottomLeft" type="edit" />}
       />
     </React.Fragment>
   );
@@ -27,21 +27,20 @@ function PropertyPanelHeader({
 
 PropertyPanelHeader.propTypes = {
   id: PropTypes.string,
-  title: PropTypes.string.isRequired,
-  // APN: PropTypes.string,
+  title: PropTypes.node.isRequired,
+  onClick: PropTypes.func,
   menuData: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
-    name: PropTypes.string,
+    label: PropTypes.string,
     onClickLink: PropTypes.func,
   })),
-  onClick: PropTypes.func,
 };
 
 PropertyPanelHeader.defaultProps = {
   id: null,
-  // APN: null,
-  menuData: null,
   onClick: null,
+  menuData: null,
 };
 
 export default PropertyPanelHeader;
+

@@ -5,10 +5,10 @@ import PropTypes from "prop-types";
 import Bar from "blocks/Bar";
 import Icon from "atoms/Icon";
 import Expander from "utils/Expander";
-import Title, { Description, Body } from "base/Typography";
+import Text, { Title } from "base/Typography";
 
-const Text = (
-  <Body text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+const CardText = (
+  <Text text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
 );
 
 const Arrow = styled(Icon)`
@@ -35,7 +35,7 @@ function ExpandingSection({
           right={<Arrow icon="up" toggleOn={expanded} size="lg" />}
         />}
     >
-      {expanded ? <Description text={Text} /> : null}
+      {expanded ? <Text text={CardText} /> : null}
     </Expander>);
 }
 

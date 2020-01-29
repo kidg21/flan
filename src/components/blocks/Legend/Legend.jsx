@@ -3,7 +3,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Title from "base/Typography";
+import Text, { Title } from "base/Typography";
 import { SkeletonStatic } from "helpers";
 
 
@@ -86,7 +86,7 @@ function Legend({
                 fontWeight={fontWeight}
                 fontSize={fontSize}
               >
-                {row.name}
+                {row.label}
               </Cell>
               <Cell
                 cellBorder={cellBorder}
@@ -95,7 +95,7 @@ function Legend({
                 fontWeight={fontWeight}
                 fontSize={fontSize}
               >
-                {row.value}
+                <Text text={row.value} />
               </Cell>
             </Row>
           );
@@ -110,7 +110,7 @@ Legend.propTypes = {
   fontSize: PropTypes.string,
   data: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
-    name: PropTypes.string,
+    label: PropTypes.string,
     value: PropTypes.node,
   })).isRequired,
   title: PropTypes.node,

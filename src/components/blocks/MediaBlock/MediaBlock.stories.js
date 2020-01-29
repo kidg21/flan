@@ -3,8 +3,8 @@
 import React, { Fragment } from "react";
 import { Padding } from "helpers/Display";
 import Image from "atoms/Image";
-import Card, { CardList } from "layout/Card";
-import Title, { Description } from "base/Typography";
+import Text, { Title } from "base/Typography";
+import Card, { CardGrid } from "elements/Card";
 import MediaBlock from "blocks/MediaBlock";
 
 const MediaBlockNotes = markdown.require("./MediaBlock.md");
@@ -17,12 +17,12 @@ const image = (
 );
 const body = (
   <Fragment>
-    <Title text="Media Block" />
-    <Description text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. " />
+    <Title size="h6" text="Media Block" />
+    <Text text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. " />
   </Fragment>
 );
 const description = (
-  <Description text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy." />
+  <Text text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy." />
 );
 
 storiesOf("Blocks|Media Block", module)
@@ -79,13 +79,13 @@ storiesOf("Blocks|Media Block", module)
   })
   .add("The Media Block Family", () => {
     return (
-      <CardList>
+      <CardGrid>
         <Card padding="none">
           <MediaBlock
             media={image}
             body={
               <Fragment>
-                <Title text="Media Block" />
+                <Title size="h6" text="Media Block" />
                 {description}
               </Fragment>
             }
@@ -96,7 +96,7 @@ storiesOf("Blocks|Media Block", module)
             media={image}
             body={
               <Fragment>
-                <Title text="Media Block (reverse)" />
+                <Title size="h6" text="Media Block (reverse)" />
                 {description}
               </Fragment>
             }
@@ -108,7 +108,7 @@ storiesOf("Blocks|Media Block", module)
             media={image}
             body={
               <Fragment>
-                <Title text="Media Block - Vertical" />
+                <Title size="h6" text="Media Block - Vertical" />
                 {description}
               </Fragment>
             }
@@ -120,7 +120,7 @@ storiesOf("Blocks|Media Block", module)
             media={image}
             body={
               <Fragment>
-                <Title text="Media Block - Vertical (reverse)" />
+                <Title size="h6" text="Media Block - Vertical (reverse)" />
                 {description}
               </Fragment>
             }
@@ -133,7 +133,7 @@ storiesOf("Blocks|Media Block", module)
             media={image}
             body={
               <Fragment>
-                <Title text="Media Block - Inline" />
+                <Title size="h6" text="Media Block - Inline" />
                 {description}
               </Fragment>
             }
@@ -145,7 +145,7 @@ storiesOf("Blocks|Media Block", module)
             media={image}
             body={
               <Fragment>
-                <Title text="Media Block - Inline (reverse)" />
+                <Title size="h6" text="Media Block - Inline (reverse)" />
                 {description}
               </Fragment>
             }
@@ -153,6 +153,6 @@ storiesOf("Blocks|Media Block", module)
             reverse
           />
         </Card>
-      </CardList>
+      </CardGrid>
     );
   });

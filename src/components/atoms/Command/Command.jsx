@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { DisabledContext } from "States";
 import Icon from "atoms/Icon";
-import Title from "base/Typography";
+import { Link } from "base/Typography";
 
 const CommandContainer = styled.a`
   display: ${(props) => {
@@ -24,7 +24,6 @@ const CommandContainer = styled.a`
     return props.justifyIcon || "";
   }};
   align-items: center;
-  width: max-content;
   font-size: ${(props) => {
     return props.commandSize || "";
   }};
@@ -40,12 +39,11 @@ const CommandContainer = styled.a`
   }};
 `;
 
-const CommandName = styled(Title)`
+const CommandName = styled(Link)`
   grid-area: name;
   font-size: inherit;
   color: inherit;
   line-height: inherit;
-  font-weight: 700;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -159,7 +157,7 @@ function Command({
       title={cmd.label} // HTML attribute (display on :hover)
     >
       {cmd.icon ? <CommandIcon icon={cmd.icon} /> : null}
-      <CommandName>{cmd.label}</CommandName>
+      <CommandName text={cmd.label} />
     </CommandContainer>
   );
 }

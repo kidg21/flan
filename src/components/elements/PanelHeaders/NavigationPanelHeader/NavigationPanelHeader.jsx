@@ -3,7 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import Bar from "blocks/Bar";
-import Title from "base/Typography";
+import Text, { Title } from "base/Typography";
 import Menu from "blocks/Menu";
 
 function NavigationPanelHeader({
@@ -28,7 +28,7 @@ NavigationPanelHeader.propTypes = {
   onClick: PropTypes.func,
   menuData: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
-    name: PropTypes.string,
+    label: PropTypes.string,
     onClickLink: PropTypes.func,
   })),
 };

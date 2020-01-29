@@ -2,17 +2,15 @@
 /* eslint-disable react/jsx-filename-extension */
 // Publicly exported files from 'base'
 export {
-  default as Title,
-  SubTitle,
-  Description,
+  default as Text,
+  Title,
   Link,
-  Number,
+  Label,
 } from "./base/Typography";
 export { default as GlobalStyles } from "./base/GlobalStyles/GlobalStyles.jsx";
 
 // Publicly exported files from 'atoms'
 export { default as Avatar } from "./atoms/Avatar";
-export { default as Label } from "./atoms/Label";
 export { default as Loader } from "./atoms/Loader";
 export { default as Badge } from "./atoms/Badge";
 export { default as Button } from "./atoms/Button";
@@ -44,9 +42,10 @@ export { default as Menu } from "./blocks/Menu";
 export { default as RangeSlider } from "./blocks/RangeSlider";
 export { default as Table } from "./blocks/Table";
 export { default as Tabs, Tab } from "./blocks/Tabs";
+export { CardList } from "./blocks/List";
 
 // Publicly exported files from 'elements'
-export { default as Card } from "./elements/Card";
+export { default as Card, CardSection, CardGrid } from "./elements/Card";
 export { default as MainPanelHeader } from "./elements/PanelHeaders/MainPanelHeader";
 export { default as PropertyPanelHeader } from "./elements/PanelHeaders/PropertyPanelHeader";
 export { default as NavigationPanelHeader } from "./elements/PanelHeaders/NavigationPanelHeader";
@@ -60,7 +59,6 @@ export {
 } from "./elements/DialogBox";
 
 // Publicly exported files from 'layout'
-export { default as CardLayout, CardList } from "./layout/Card"; // TODO: deprecated Card, fix
 export { default as Form, Section } from "./layout/Form";
 export { default as Grid } from "./layout/Grid";
 export { default as Layout } from "./layout/Layout";

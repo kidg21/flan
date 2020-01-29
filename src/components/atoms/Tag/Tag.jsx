@@ -3,7 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Icon from "atoms/Icon";
-import Label from "atoms/Label";
+import Text from "base/Typography";
 
 
 const TagContainer = styled.div`
@@ -11,17 +11,24 @@ const TagContainer = styled.div`
   display: flex;
   width: fit-content;
   align-items: center;
+  weight: 600;
   background-color: ${(props) => {
     return props.theme.palette[props.badgeColor];
   }};
   color: ${(props) => {
     return props.theme.text[props.badgeTextColor];
   }};
+  text-align: center;
   text-transform: uppercase;
   padding: ${(props) => {
     return props.badgePadding || "";
   }};
-  border-radius: 5em;
+  border: ${(props) => {
+    return `2px solid ${props.theme.text.inverse}`;
+  }};
+  border-radius: ${(props) => {
+    return props.theme.borders.radiusMax;
+  }};
 `;
 
 function Tag({
@@ -37,9 +44,9 @@ function Tag({
     iconType = <Icon icon={icon} size="2x" type={type} />;
     badgePadding = "0 0.25em";
   } else if (label) {
-    labelType = <Label size="sm" weight="bold" text={label} />;
+    labelType = <Text size="2x" weight="bold" text={label} />;
     badgeTextColor = "inverse";
-    badgePadding = "0.15em .5em";
+    badgePadding = "0.25em .58em";
   } else {
     badgePadding = "0.35rem";
   }

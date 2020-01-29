@@ -5,19 +5,19 @@
 import React from "react";
 
 import { Padding } from "helpers/Display";
-import NewProgressBar, { NewStep } from "./NewProgress.jsx";
+import ProgressBar, { Step } from "./Progress.jsx";
 
 storiesOf("Elements|Progress", module)
     .addDecorator(Padding)
     .addDecorator(withInfo)
     .add("Flow", () => {
         return (
-            <NewProgressBar >
-                <NewStep active text="Task" description="this is what you do" />
-                <NewStep active text="Task" description="this is what you do" />
-                <NewStep isSelected text="Task" description="this is what you do" />
-                <NewStep text="Task" description="this is what you do" />
-                <NewStep text="Task" description="this is what you do" />
-            </NewProgressBar>
+            <ProgressBar >
+                <Step active text="Task" description="this is what you do" />
+                <Step active text="Task" description="this is what you do" />
+                <Step isSelected text="Task" description="this is what you do" />
+                <Step text="Task" description="this is what you do" />
+                <Step text="Task" description="this is what you do" />
+            </ProgressBar>
         );
     });

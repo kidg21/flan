@@ -4,8 +4,8 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
 import Bar from "blocks/Bar";
-import Label from "atoms/Label";
 import Grid from "layout/Grid";
+import Text, { Label } from "base/Typography";
 import TextInput from "atoms/TextInput";
 import Slider from "atoms/Slider";
 
@@ -43,9 +43,9 @@ function RangeSlider({
       gap="small"
     >
       {label ? (
-        <Label weight="bold" size="sm" isRequired={isRequired} text={label} />
+        <Label size="2x" isRequired={isRequired} text={label} />
       ) : null}
-      {helpText ? <Label size="sm" text={helpText} /> : null}
+
       <Bar
         padding="none"
         contentAlign="center"
@@ -63,7 +63,7 @@ function RangeSlider({
           error && !isDisabled ? (
             <Slider error disabled={isDisabled} />
           ) : (
-            <Slider disabled={isDisabled} />
+              <Slider disabled={isDisabled} />
             )
         }
         right={
@@ -75,8 +75,9 @@ function RangeSlider({
           />
         }
       />
+      {helpText ? <Text size="1x" text={helpText} /> : null}
       {typeof error === "string" && !isDisabled ? (
-        <Label size="sm" text={error} />
+        <Text size="1x" text={error} />
       ) : null}
     </RangeContainer>
   );

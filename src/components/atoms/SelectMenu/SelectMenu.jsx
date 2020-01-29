@@ -5,7 +5,7 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import { fonts, colors, shadows } from "Variables";
 import Grid from "layout/Grid";
-import Label from "atoms/Label";
+import Text, { Label } from "base/Typography";
 import Select, { Creatable } from "react-select";
 import { Skeleton } from "helpers";
 import { DisabledContext } from "States";
@@ -42,7 +42,6 @@ const selectStyles = {
       "flexWrap": "nowrap",
       "fontWeight": "normal",
       "letterSpacing": ".5px",
-      "minHeight": "2.75rem",
       ":hover": {
         borderColor: colors.grey60,
       },
@@ -93,7 +92,6 @@ const selectStyles = {
       ...styles,
       fontFamily: fonts.data,
       fontWeight: "normal",
-      letterSpacing: "1px",
     };
   },
   // multi element label background
@@ -121,11 +119,9 @@ const selectStyles = {
       ...styles,
       fontFamily: fonts.data,
       textAlign: "left",
-      letterSpacing: ".5px",
-      margin: ".25rem 0",
       border: "1px solid",
       borderColor: colors.grey40,
-      boxShadow: shadows.shadow2,
+      boxShadow: shadows.dropShadow,
     };
   },
 
@@ -159,6 +155,7 @@ const SelectMenuContainer = styled(Grid)`
   color: ${(props) => {
     return props.theme.text[props.textColor] || props.theme.text.primary;
   }};
+  font-size: 0.876rem;
   width: 100%;
   &:empty {
     &:before {
@@ -291,12 +288,12 @@ function SelectMenu({
       columns="1"
       gap="tiny"
     >
-      {label ? <Label weight="bold" isRequired={isRequired} text={label} /> : null}
+      {label ? <Label size="2x" isRequired={isRequired} text={label} /> : null}
       {select}
       {/* Help Text */}
-      {helpText ? <Label size="sm" text={helpText} /> : null}
+      {helpText ? <Text size="1x" text={helpText} /> : null}
       {/* Error Message (required) */}
-      {errorText ? <Label size="sm" text={errorText} /> : null}
+      {errorText ? <Text size="1x" text={errorText} /> : null}
     </SelectMenuContainer>
   );
 }
@@ -311,7 +308,7 @@ SelectMenu.propTypes = {
       label: PropTypes.string,
       value: PropTypes.any,
     }),
-  ])).isRequired,
+  ])),
   selectOptions: PropTypes.any,
   label: PropTypes.string,
   isRequired: PropTypes.bool,
@@ -335,6 +332,7 @@ SelectMenu.defaultProps = {
   id: null,
   name: null,
   placeholder: null,
+  options: null,
   selectOptions: null,
   label: null,
   isRequired: false,

@@ -3,8 +3,8 @@ import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
-import Card, { CardSection } from "layout/Card";
-import Label from "atoms/Label";
+import Text from "base/Typography";
+import Card, { CardSection } from "elements/Card";
 import Badge from "atoms/Badge";
 
 <Meta title="Atoms|Badge" component={Badge} />
@@ -19,7 +19,7 @@ import Badge from "atoms/Badge";
       <Card>
         <CardSection>
           <Badge label="1" />
-          <Label text="Badge" />
+          <Text text="Badge" />
         </CardSection>
       </Card>
     </Grid>
@@ -47,25 +47,25 @@ A count can display up to a 4-character integer.
       <Card>
         <CardSection>
           <Badge label="1" />
-          <Label text="1-Digit" />
+          <Text text="1-Digit" />
         </CardSection>
       </Card>
       <Card>
         <CardSection>
           <Badge label="21" />
-          <Label text="2-Digit" />
+          <Text text="2-Digit" />
         </CardSection>
       </Card>
       <Card>
         <CardSection>
           <Badge label="321" />
-          <Label text="3-Digit" />
+          <Text text="3-Digit" />
         </CardSection>
       </Card>
       <Card>
         <CardSection>
           <Badge label="4321" />
-          <Label text="4-Digit" />
+          <Text text="4-Digit" />
         </CardSection>
       </Card>
     </Grid>
@@ -82,25 +82,25 @@ If a count has a maximum limit, use a label to indicate a count that exceeds thi
       <Card>
         <CardSection>
           <Badge label="9+" />
-          <Label text="Max 10" />
+          <Text text="Max 10" />
         </CardSection>
       </Card>
       <Card>
         <CardSection>
           <Badge label="99+" />
-          <Label text="Max 100" />
+          <Text text="Max 100" />
         </CardSection>
       </Card>
       <Card>
         <CardSection>
           <Badge label="999+" />
-          <Label text="Max 1000" />
+          <Text text="Max 1000" />
         </CardSection>
       </Card>
       <Card>
         <CardSection>
           <Badge label="9999+" />
-          <Label text="Max 10k" />
+          <Text text="Max 10k" />
         </CardSection>
       </Card>
     </Grid>
@@ -117,25 +117,25 @@ Use a Label along with the 'type' prop to display status information.
       <Card>
         <CardSection>
           <Badge label="Info" type="info" />
-          <Label text="Info" />
+          <Text text="Info" />
         </CardSection>
       </Card>
       <Card>
         <CardSection>
           <Badge label="Success" type="success" />
-          <Label text="Success" />
+          <Text text="Success" />
         </CardSection>
       </Card>
       <Card>
         <CardSection>
           <Badge label="Warning" type="warning" />
-          <Label text="Warning" />
+          <Text text="Warning" />
         </CardSection>
       </Card>
       <Card>
         <CardSection>
           <Badge label="Alert" type="alert" />
-          <Label text="Alert" />
+          <Text text="Alert" />
         </CardSection>
       </Card>
     </Grid>
@@ -152,25 +152,25 @@ A Badge can be positioned on any corner of the element that is applied to.
       <Card>
         <CardSection>
           <Badge label="1" position="topLeft" />
-          <Label text="Top-Left" />
+          <Text text="Top-Left" />
         </CardSection>
       </Card>
       <Card>
         <CardSection>
           <Badge label="1" position="bottomLeft" />
-          <Label text="Bottom-Left" />
+          <Text text="Bottom-Left" />
         </CardSection>
       </Card>
       <Card>
         <CardSection>
           <Badge label="1" position="topRight" />
-          <Label text="Top-Right" />
+          <Text text="Top-Right" />
         </CardSection>
       </Card>
       <Card>
         <CardSection>
           <Badge label="1" position="bottomRight" />
-          <Label text="Bottom-Right" />
+          <Text text="Bottom-Right" />
         </CardSection>
       </Card>
     </Grid>

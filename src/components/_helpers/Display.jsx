@@ -1,7 +1,7 @@
 import React from "react";
-import Title, { Description } from "base/Typography";
+import Text, { Title } from "base/Typography";
 import Bar from "blocks/Bar";
-import Card, { CardSection } from "layout/Card";
+import Card, { CardSection } from "elements/Card";
 import Grid from "layout/Grid";
 import Icon from "atoms/Icon";
 import Command from "atoms/Command";
@@ -25,6 +25,10 @@ const container = {
   height: "250px"
 };
 const Container = (storyFn) => { return (<div style={container}>{storyFn()}</div>); };
+
+function Spacer() {
+  return <span>&nbsp;</span>;
+}
 
 function IconGrid({ data }) {
   return data.map(item => (
@@ -52,7 +56,7 @@ function IconGrid({ data }) {
           center={
             <>
               <Title text={item.name || item.icon} size="lg" select="all" />
-              <Description text={item.desc} />
+              <Text text={item.desc} />
             </>
           }
           centerAlign="left"
@@ -66,9 +70,9 @@ function CommandGrid({ data }) {
   return data.map(item => (
     <Grid gap="tiny">
       <Command command={item.command} />
-      <Description text={item.desc} />
+      <Text text={item.desc} />
     </Grid>
   ));
 }
 
-export { Center, Padding, Container, IconGrid, CommandGrid };
+export { Center, Padding, Container, Spacer, IconGrid, CommandGrid };

@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
-import Label from "atoms/Label";
+import Text, { Label } from "base/Typography";
 import Grid from "layout/Grid";
 import { getGuid } from "helpers";
 
@@ -14,11 +14,10 @@ const TextInputContainer = styled(Grid)`
   width: 100%;
 `;
 
-
 const Input = styled.input`
   color: inherit;
-  line-height: normal;
   border: 1px solid;
+  font-family: ${(props) => { return props.theme.typography.primary; }};
   border-color: ${(props) => {
     return (
       props.theme.palette[props.inputBorderColor] || props.theme.palette.grey3
@@ -40,7 +39,7 @@ const Input = styled.input`
   }};
   ::placeholder {
     font-weight: initial;
-    font-size: 1rem;
+    font-size: 0.876em;
     letter-spacing: .5px;
     color: ${(props) => {
     return (
@@ -56,7 +55,6 @@ const Input = styled.input`
     );
   }};
     }
-  }
   &:focus {
     border-color: ${(props) => {
     return (
@@ -175,7 +173,7 @@ function TextInput({
       className={className}
     >
       {label ? (
-        <Label weight="bold" isRequired={isRequired} text={label} />
+        <Label size="2x" isRequired={isRequired} text={label} />
       ) : null}
       <Input
         as={as}
@@ -204,9 +202,9 @@ function TextInput({
         cols={cols} // textarea attribute
       />
       {autocompleteDataList}
-      {helpText ? <Label size="sm" text={helpText} /> : null}
+      {helpText ? <Text size="1x" text={helpText} /> : null}
       {children}
-      {errorText ? <Label size="sm" text={errorText} /> : null}
+      {errorText ? <Text size="1x" text={errorText} /> : null}
     </TextInputContainer>
   );
 }
@@ -279,7 +277,7 @@ TextInput.defaultProps = {
   size: null,
   title: null,
   type: "text",
-  value: "",
+  value: null,
   onBlur: null,
   onFocus: null,
   name: "",

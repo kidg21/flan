@@ -3,8 +3,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
 import Button from "atoms/Button";
-import Title from "base/Typography";
-import Card from "layout/Card";
+import Text, { Title } from "base/Typography";
+import Card from "elements/Card";
 import Bar from "blocks/Bar";
 
 function DialogBox({
@@ -61,7 +61,7 @@ function DialogBox({
     <Card id={id} padding="1em">
       {header ? <React.Fragment>{header}</React.Fragment> : null}
       <Bar left={<Title text={title} />} />
-      {message ? <Bar left={<Title text={message} weight="light" />} /> : null}
+      {message ? <Bar left={<Text text={message} weight="light" />} /> : null}
       {children ? <Bar left={children} /> : null}
       {buttonElements ? <React.Fragment>{buttonElements}</React.Fragment> : null}
     </Card>

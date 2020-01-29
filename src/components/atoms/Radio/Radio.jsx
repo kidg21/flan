@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
-import Label from "atoms/Label";
+import Text, { Label } from "base/Typography";
 import Grid from "layout/Grid";
 
 const RadioWrapper = styled(Grid)`
@@ -19,14 +19,14 @@ const RadioContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 0.75rem;
+  align-items: center;
   grid-template-areas: ${(props) => {
     return props.alignInput || "";
   }};
-  width: max-content;
-  line-height: initial;
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || props.theme.text.primary;
+    return props.theme.text[props.inputTextColor] || "";
   }};
+  line-height: initial;
   &[disabled],
   &[readonly] {
     cursor: not-allowed;
@@ -56,7 +56,7 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
     background-color: ${(props) => {
     return (
       props.theme.palette[props.fillColorChecked] ||
-        props.theme.palette.secondaryLight
+      props.theme.palette.secondaryLight
     );
   }};
     border-color: ${(props) => {
@@ -186,14 +186,13 @@ function RadioGroup({
     <RadioWrapper
       disabled={isDisabled}
       columns="1"
-      gap="small"
       inputTextColor={inputTextColor}
       id={id}
     >
       {label ? (
-        <Label isRequired={isRequired} weight="bold" text={label} />
+        <Text weight="bold" isRequired={isRequired} text={label} />
       ) : null}
-      {helpText ? <Label text={helpText} size="sm" /> : null}
+      {helpText ? <Text text={helpText} /> : null}
       <InputGroup columns={columns}>
         {children ||
           data.map((item) => {
@@ -213,7 +212,7 @@ function RadioGroup({
             );
           })}
       </InputGroup>
-      {errorText ? <Label size="sm" text={errorText} /> : null}
+      {errorText ? <Text text={errorText} /> : null}
     </RadioWrapper>
   );
 }

@@ -4,11 +4,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Grid from "layout/Grid";
-import Card from "layout/Card";
+import Card from "elements/Card";
 import Bar from "blocks/Bar";
 import Avatar from "atoms/Avatar";
 import Icon from "atoms/Icon";
-import Title, { Description, Link } from "base/Typography";
+import Text, { Link, Title } from "base/Typography";
 
 const StyledBanner = styled(Card)`
   border-color: ${(props) => {
@@ -63,11 +63,9 @@ function Banner({
         center={
           <Grid columns="1" gap="tiny">
             <Title text={title} />
-            {description ? <Description text={description} /> : null}
+            {description ? <Text size="2x" text={description} /> : null}
             {link ? (
-              <Link href={href} onClick={onClick}>
-                {link}
-              </Link>
+              <Link href={href} onClick={onClick} text={link} />
             ) : null}
           </Grid>
         }

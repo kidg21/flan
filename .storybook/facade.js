@@ -7,6 +7,8 @@ import {
     select as selectReal,
     object as objectReal,
     optionsKnob as optionsReal,
+    number as numberReal,
+    array as arrayReal,
   } from "@storybook/addon-knobs";
 import { specs as specsReal, describe as describeReal, it as itReal, before as beforeReal, beforeEach as beforeEachReal, after as afterReal, afterEach as afterEachReal } from "storybook-addon-specifications";
 import { checkA11y as checkA11yReal } from "@storybook/addon-a11y";
@@ -21,6 +23,8 @@ export const boolean = booleanReal;
 export const select = selectReal;
 export const object = objectReal;
 export const options = optionsReal;
+export const number = numberReal;
+export const array = arrayReal;
 export const specs = function(func) {
   setTimeout(() => {
     specsReal(func);

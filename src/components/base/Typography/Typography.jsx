@@ -3,400 +3,345 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 // import { Skeleton } from "helpers";
-import { fonts } from "Variables";
+import { Lighten, Darken } from "Variables";
 
-const StyledText = styled.h4`
-  grid-column: 1 / -1;
-  margin: ${(props) => {
-    return props.margin || "0px 0px 0.25em";
-  }};
-  font-family: ${(props) => {
-    return props.fontFamily || "inherit";
-  }};
-  color: ${(props) => {
-    return props.theme.text[props.textColor] || "inherit";
-  }};
-  font-weight: ${(props) => {
-    return props.textWeight || "600";
-  }};
-  text-align: ${(props) => {
-    return props.textAlign || "";
-  }};
-  letter-spacing: ${(props) => {
-    return props.letterSpacing || "0px";
-  }};
-  font-style: ${(props) => {
-    return props.textStyle || "";
-  }};
-  text-decoration: ${(props) => {
-    return props.textDecoration || "";
-  }};
-  user-select: ${(props) => {
-    return props.select || "";
-  }};
-  width: ${(props) => {
-    return props.textWidth || "";
-  }};
-  a {
-    margin: initial;
-    /** TODO: Add a 'separator' prop */
-    /* &:before,
-    &:after {
-      content: ${(props) => {
-    return props.separator || "|";
-  }};
-    } */
-  }
-}
-`;
 
-const LinkedText = styled(StyledText)`
-  color: ${(props) => {
-    return props.theme.text.link;
-  }};
-  /* width: max-content; */
-`;
-
-const StyledNumber = styled(StyledText)`
-  font-family: ${fonts.numbers};
+const StyledLabel = styled.label`
   color: inherit;
-  letter-spacing: 1px;
+  margin: 0;
+  width: max-content;
+  font-family: ${(props) => { return props.theme.typography.primary; }};
+  line-height: ${(props) => { return props.lineHeight; }};
+  user-select: none;
+  font-size: ${(props) => { return props.fontSize; }};
+  cursor: pointer;
+  font-weight: ${(props) => { return props.fontWeight; }};
+  letter-spacing: ${(props) => { return props.letterSpacing; }};
+
+&:after {
+  display: ${(props) => {
+    return props.isRequired ? "" : "none";
+  }};
+  content: "*";
+  color: ${(props) => {
+    return props.theme.palette.alert;
+  }};
+  font-size: ${(props) => { return props.fontSize; }};
+  line-height: ${(props) => { return props.lineHeight; }};
+  vertical-align: middle;
+  padding-left: 0.25em;
 }
 `;
 
-const StyledCode = styled.code`
-  background-color: ${(props) => {
-    return props.theme.palette.grey5;
-  }};
-  border: 1px solid ${(props) => {
-    return props.theme.palette.grey2;
-  }};
-  border-radius: 0.25rem;
-  padding: 0.5rem 0.5rem 0.25rem;
-  user-select: all;
+const LinkText = styled.a`
+line-height: inherit;
+font-size: ${(props) => { return props.fontSize; }};
+font-weight: ${(props) => { return props.fontWeight; }};
+font-family: ${(props) => { return props.theme.typography.primary; }};
+text-decoration: none;
+padding: .5em;
+letter-spacing: ${(props) => { return props.letterSpacing; }};
+color: ${(props) => { return props.theme.text.link; }};
+margin: -.5em;
+cursor: pointer;
+
+&:hover,
+&:focus {
+  ${Darken};
+}
+&:active {
+  ${Lighten};
 }
 `;
 
-const sizeHash = {
-  "xs": "label",
-  "sm": "h5",
-  "m": "h4",
-  "lg": "h3",
-  "2x": "h2",
-  "3x": "h1",
-};
+const TitleText = styled.h6`
+font-size: ${(props) => { return props.fontSize; }};
+font-weight: ${(props) => { return props.fontWeight; }};
+color: inherit;
+font-family: ${(props) => { return props.theme.typography.primary; }};
+letter-spacing: ${(props) => { return props.letterSpacing; }};
+`;
 
-const weightHash = {
-  light: "300",
-  normal: "500",
-  semibold: "600",
-  bold: "700",
-};
+const Paragraph = styled.p`
+font-size: ${(props) => { return props.fontSize; }};
+font-weight: ${(props) => { return props.fontWeight; }};
+color: inherit;
+font-family: ${(props) => { return props.theme.typography.primary; }};
+letter-spacing: ${(props) => { return props.letterSpacing; }};
+`;
 
-function parseProps({
-  font, type, size, align, weight, styling, spacing,
-}) {
-  let letterSpacing;
-  let textStyle;
-  let textDecoration;
-  let textWidth;
-
-  const fontFamily = font ? fonts[font.toLowerCase()] : null;
-  const textColor = type ? type.toLowerCase() : null;
-  const as = size ? (sizeHash[size.toLowerCase()] || "h4") : "h4";
-  const textAlign = align ? align.toLowerCase() : null;
-  const textWeight = weight ? (weightHash[weight.toLowerCase()] || "500") : "500";
-
-  switch (styling && styling.toLowerCase()) {
-    case "underline":
-      textDecoration = "underline";
-      break;
-    case "italic":
-      textStyle = "italic";
-      break;
-    default:
-      break;
-  }
-
-  const numSpacing = spacing ? parseInt(spacing, 10) : 0;
-  if (numSpacing && !isNaN(numSpacing)) {
-    letterSpacing = `${0.1 * (numSpacing - 1)}em`;
-  }
-
-  return {
-    letterSpacing,
-    textStyle,
-    textDecoration,
-    textWidth,
-    fontFamily,
-    textColor,
-    as,
-    textAlign,
-    textWeight,
-  };
-}
-
-function Text({
-  children,
-  className,
-  count,
-  disabled,
-  href,
-  id,
-  link,
-  onClick,
-  select,
-  target,
-  text,
-  title,
-  margin,
-  ...props
-}) {
-  const textProps = parseProps(props);
-  if (link) {
-    textProps.as = "a";
-    textProps.textColor = "link";
-    textProps.textWeight = "800";
-    textProps.textWidth = "max-content";
-  }
-  if (disabled) {
-    textProps.textColor = "disabled";
-  }
-  return (
-    <StyledText
-      as={textProps.as}
-      margin={margin}
-      className={className}
-      fontFamily={textProps.fontFamily}
-      href={href}
-      onClick={onClick}
-      target={target}
-      title={title}
-      id={id}
-      letterSpacing={textProps.letterSpacing}
-      select={select}
-      textAlign={textProps.textAlign}
-      textColor={textProps.textColor}
-      textDecoration={textProps.textDecoration}
-      textStyle={textProps.textStyle}
-      textWeight={textProps.textWeight}
-      textWidth={textProps.textWidth}
-    >
-      {text || children}
-      {count ? (
-        <LinkedText as="a">
-          <StyledNumber as="span">{count}</StyledNumber>
-        </LinkedText>
-      ) : null}
-    </StyledText>
-  );
-}
-Text.propTypes = {
-  align: PropTypes.oneOf(["center", "right"]),
-  children: PropTypes.node,
-  className: PropTypes.string,
-  count: PropTypes.node,
-  font: PropTypes.string,
-  href: PropTypes.string,
-  id: PropTypes.string,
-  link: PropTypes.bool,
-  onClick: PropTypes.string,
-  size: PropTypes.string,
-  target: PropTypes.string,
-  text: PropTypes.string,
-  title: PropTypes.string,
-  type: PropTypes.string,
-  weight: PropTypes.string,
-  select: PropTypes.string,
-  spacing: PropTypes.string,
-  styling: PropTypes.oneOf(["underline", "italic"]),
-  disabled: PropTypes.bool,
-  margin: PropTypes.string,
-};
-Text.defaultProps = {
-  align: null,
-  children: null,
-  className: null,
-  count: null,
-  font: null,
-  href: null,
-  id: null,
-  link: false,
-  onClick: null,
-  select: null,
-  size: null,
-  spacing: null,
-  styling: null,
-  target: null,
-  text: null,
-  title: null,
-  type: null,
-  weight: null,
-  disabled: null,
-  margin: null,
-};
-
-function Headline({ text, children, ...textProps }) {
-  return (
-    <Text separator="pipe" size="2x" weight="bold" {...textProps}>
-      {text || children}
-    </Text>
-  );
-}
-Headline.propTypes = {
-  text: PropTypes.string,
-  children: PropTypes.node,
-};
-Headline.defaultProps = {
-  text: null,
-  children: null,
-};
 
 function Title({
-  text, size, children, number, ...textProps
+  text, size, weight, children,
 }) {
+  const sizeHash = {
+    "6x": {
+      fontSize: "2em",
+      as: "h1",
+    },
+    "5x": {
+      fontSize: "1.65em",
+      as: "h2",
+    },
+    "4x": {
+      fontSize: "1.45em",
+      as: "h3",
+    },
+    "3x": {
+      fontSize: "1.25em",
+      as: "h4",
+    },
+    "2x": {
+      fontSize: "1.15em",
+      as: "h5",
+    },
+    "1x": {
+      fontSize: "1.05em",
+      as: "h6",
+    },
+  };
+
+  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "1.05em", as: "h6" };
+  const { fontSize, as } = selectedSize;
+  const letterSpacing = "0px";
+
+  const weightHash = {
+    light: 300,
+    bold: 600,
+  };
+
+  let fontWeight = parseInt(weight, 10);
+  if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 400;
+
+
   return (
-    <Text size={size} count={number} weight="semibold" {...textProps}>
+    <TitleText
+      as={as}
+      fontSize={fontSize}
+      fontWeight={fontWeight}
+      letterSpacing={letterSpacing}
+    >
       {text || children}
-    </Text>
+    </TitleText>
   );
 }
-Title.propTypes = {
-  number: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  text: PropTypes.string,
-  size: PropTypes.string,
+
+
+function Link({
+  text, onClick, href, target, disabled, size, weight, children,
+}) {
+  const sizeHash = {
+    "4x": {
+      fontSize: "1em",
+      letterSpacing: "0px",
+    },
+    "3x": {
+      fontSize: "0.9em",
+      letterSpacing: "0px",
+    },
+    "2x": {
+      fontSize: "0.75em",
+      letterSpacing: "0.2px",
+    },
+    "1x": {
+      fontSize: "0.65em",
+      letterSpacing: "0.6px",
+    },
+  };
+
+  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "inherit", letterSpacing: "0px" };
+  const { fontSize, letterSpacing } = selectedSize;
+
+
+  const weightHash = {
+    light: 300,
+    regular: 400,
+    bold: 600,
+  };
+
+  let fontWeight = parseInt(weight, 10);
+  if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 600;
+
+
+  return (
+    <LinkText
+      href={href}
+      isDisabled={disabled}
+      onClick={onClick}
+      fontSize={fontSize}
+      letterSpacing={letterSpacing}
+      fontWeight={fontWeight}
+      target={target}
+    >
+      {text || children}
+    </LinkText>
+  );
+}
+
+
+function Text({
+  text, size, weight, children,
+}) {
+  const sizeHash = {
+    "4x": {
+      fontSize: "1em",
+      letterSpacing: "0px",
+    },
+    "3x": {
+      fontSize: "0.876em",
+      letterSpacing: "0px",
+    },
+    "2x": {
+      fontSize: "0.75em",
+      letterSpacing: "0.2px",
+    },
+    "1x": {
+      fontSize: "0.65em",
+      letterSpacing: "0.6px",
+    },
+  };
+
+  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.876em", letterSpacing: "0px" };
+  const { fontSize, letterSpacing } = selectedSize;
+
+  const weightHash = {
+    light: 300,
+    bold: 600,
+  };
+
+  let fontWeight = parseInt(weight, 10);
+  if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 400;
+
+
+  return (
+    <Paragraph
+      fontWeight={fontWeight}
+      fontSize={fontSize}
+      letterSpacing={letterSpacing}
+    >
+      {text || children}
+    </Paragraph>
+  );
+}
+
+
+function Label({
+  children,
+  htmlFor,
+  weight,
+  isRequired,
+  size,
+  text,
+}) {
+  const sizeHash = {
+    "4x": {
+      fontSize: "1em",
+      letterSpacing: "0px",
+    },
+    "3x": {
+      fontSize: "0.876em",
+      letterSpacing: "0px",
+    },
+    "2x": {
+      fontSize: "0.82em",
+      letterSpacing: "0px",
+    },
+    "1x": {
+      fontSize: "0.65em",
+      letterSpacing: "0.6px",
+    },
+  };
+
+  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.876em", letterSpacing: "0px" };
+  const { fontSize, letterSpacing } = selectedSize;
+
+  const weightHash = {
+    light: 300,
+    bold: 600,
+  };
+
+  let fontWeight = parseInt(weight, 10);
+  if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 400;
+
+
+  return (
+    <StyledLabel
+      fontWeight={fontWeight}
+      fontSize={fontSize}
+      isRequired={isRequired}
+      htmlFor={htmlFor}
+      letterSpacing={letterSpacing}
+    >
+      {text || children}
+    </StyledLabel>
+  );
+}
+Label.propTypes = {
+  htmlFor: PropTypes.string,
   children: PropTypes.node,
+  weight: PropTypes.string,
+  isRequired: PropTypes.bool,
+  size: PropTypes.string,
+  text: PropTypes.string,
+};
+Label.defaultProps = {
+  htmlFor: null,
+  children: null,
+  weight: null,
+  isRequired: false,
+  size: null,
+  text: null,
+};
+
+
+Title.propTypes = {
+  text: PropTypes.string,
+  children: PropTypes.node,
+  size: PropTypes.string,
+  weight: PropTypes.string,
 };
 Title.defaultProps = {
-  number: null,
   text: null,
   size: null,
-  children: null,
-};
-
-function SubTitle({ text, children, ...textProps }) {
-  return (
-    <Text spacing="1" type="secondary" margin="0px 0px 0.15em" {...textProps}>
-      {text || children}
-    </Text>
-  );
-}
-SubTitle.propTypes = {
-  text: PropTypes.string,
-  children: PropTypes.node,
-};
-SubTitle.defaultProps = {
-  text: null,
-  children: null,
-};
-
-function Body({
-  text, weight, children, ...textProps
-}) {
-  return (
-    <Text size="sm" weight="normal" margin="0px 0px 0.15em" {...textProps}>
-      {text || children}
-    </Text>
-  );
-}
-Body.propTypes = {
-  text: PropTypes.string,
-  weight: PropTypes.string,
-  children: PropTypes.node,
-};
-Body.defaultProps = {
-  text: null,
   weight: null,
   children: null,
 };
 
-function Description({ text, children, ...textProps }) {
-  return (
-    <Text size="xs" spacing="1" {...textProps}>
-      {text || children}
-    </Text>
-  );
-}
-Description.propTypes = {
+
+Text.propTypes = {
   text: PropTypes.string,
   children: PropTypes.node,
+  size: PropTypes.string,
+  weight: PropTypes.string,
 };
-Description.defaultProps = {
+Text.defaultProps = {
   text: null,
+  size: null,
+  weight: null,
   children: null,
 };
 
-function Link({
-  text, children, title, onClick, href, target, ...textProps
-}) {
-  return (
-    <Text
-      href={href}
-      link
-      onClick={onClick}
-      spacing="2"
-      target={target}
-      title={title}
-      weight="bold"
-      {...textProps}
-    >
-      {text || children}
-    </Text>
-  );
-}
+
 Link.propTypes = {
-  text: PropTypes.node,
+  text: PropTypes.string,
   children: PropTypes.node,
-  title: PropTypes.string,
-  href: PropTypes.string,
-  onClick: PropTypes.func,
-  /** _blank, _parent, _self, _top, framename */
   target: PropTypes.string,
+  onClick: PropTypes.func,
+  size: PropTypes.string,
+  weight: PropTypes.string,
+  href: PropTypes.string,
+  disabled: PropTypes.bool,
 };
 Link.defaultProps = {
   text: null,
-  children: null,
-  title: null,
+  target: null,
   onClick: null,
   href: null,
-  target: null,
-};
-
-function Number({ text, children, ...textProps }) {
-  return (
-    <Text font="numbers" weight="normal" spacing="2" {...textProps}>
-      {text || children}
-    </Text>
-  );
-}
-Number.propTypes = {
-  text: PropTypes.string,
-  children: PropTypes.node,
-};
-Number.defaultProps = {
-  text: null,
+  disabled: false,
+  size: null,
+  weight: null,
   children: null,
 };
 
-function Code({ text, children }) {
-  return <StyledCode>{text || children}</StyledCode>;
-}
-Code.propTypes = {
-  children: PropTypes.node,
-  text: PropTypes.string,
-};
-Code.defaultProps = {
-  children: null,
-  text: null,
-};
 
-export {
-  Title as default,
-  Headline,
-  SubTitle,
-  Description,
-  Body,
-  Link,
-  Number,
-  Code,
-};
+export { Text as default, Title, Label, Link };

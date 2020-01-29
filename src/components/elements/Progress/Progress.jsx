@@ -1,15 +1,13 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
-import Icon from "atoms/Icon";
 import PropTypes from "prop-types";
-import Avatar from "atoms/Avatar";
-import Title, { Description } from "base/Typography";
-
+import Text, { Title } from "base/Typography";
 
 const StepItem = styled.li`
 align-items: center;
 align-self: center;
 vertical-align: center;
+font-family: Nunito;
 justify-content: center;
 padding-bottom: 0.5rem;
 display: flex;
@@ -27,10 +25,13 @@ color: ${(props) => { return props.active ? props.theme.text.secondary : props.i
     justify-content: center;
     margin-right: 1rem;
     width: 1.5rem;
-    border: 1px solid ${(props) => { return props.active ? props.theme.text.secondary : props.isSelected ? props.theme.palette.primary : props.theme.text.secondary; }};
+    color: ${(props) => { return props.active ? props.theme.palette.white : props.isSelected ? props.theme.palette.white : ""; }};
+    background: ${(props) => { return props.active ? props.theme.palette.secondary : props.isSelected ? props.theme.palette.primary : ""; }};
+    border: 1px solid ${(props) => { return props.active ? props.theme.palette.secondary : props.isSelected ? props.theme.palette.primary : props.theme.text.secondary; }};
     border-radius: 50%;
     font-weight: 600;
 }
+
 
 `;
 
@@ -56,14 +57,14 @@ width: ${(props) => { return props.line ? "100%" : ""; }};
 `;
 
 
-function NewStep({
+function Step({
     id, active, text, description, isSelected,
 }) {
     return (
         <StepItem active={active} isSelected={isSelected}>
             <ItemContainer>
                 <Title text={text} />
-                {description ? (<Description text={description} />
+                {description ? (<Text text={description} />
                 ) : null}
             </ItemContainer>
         </StepItem >
@@ -72,7 +73,7 @@ function NewStep({
 }
 
 
-function NewProgressBar({
+function ProgressBar({
     id, children,
 }) {
     return (
@@ -82,28 +83,28 @@ function NewProgressBar({
     );
 }
 
-NewStep.propTypes = {
+Step.propTypes = {
     id: PropTypes.string,
     active: PropTypes.bool,
     text: PropTypes.string,
     isSelected: PropTypes.bool,
 };
 
-NewProgressBar.propTypes = {
+ProgressBar.propTypes = {
     id: PropTypes.string,
     children: PropTypes.node,
 };
 
-NewStep.defaultProps = {
+Step.defaultProps = {
     id: null,
     active: false,
     text: null,
     isSelected: false,
 };
 
-NewProgressBar.defaultProps = {
+ProgressBar.defaultProps = {
     id: null,
     children: null,
 };
 
-export { NewProgressBar as default, NewStep };
+export { ProgressBar as default, Step };
