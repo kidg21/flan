@@ -117,7 +117,7 @@ const cardGrid = {
   ),
 };
 
-storiesOf("Layout |App Layout/", module)
+storiesOf("Layout |Templates/Template A/", module)
   .addParameters({
     info: {
       text: "Layout info goes here...",
@@ -126,13 +126,12 @@ storiesOf("Layout |App Layout/", module)
       markdown: TemplateNotes,
     },
   })
-
   .add(
-    "Template (base)",
+    "Base",
     () => {
       return (
         <Template
-          header={{ content: <Title text="Header Title Goes Here" /> }}
+          header={{ content: "" }}
           left={{ content: "" }}
           main=""
           right={{ content: "" }}
@@ -142,12 +141,13 @@ storiesOf("Layout |App Layout/", module)
     },
   )
   .add(
-    "Template (configured)",
+    "Configured",
     () => {
       return (
         <Template
           header={{
             iconLeft: "left",
+            content: <Title text="Header Title Goes Here" />,
             iconRight: "right",
           }}
           left={cardGrid}

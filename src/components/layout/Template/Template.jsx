@@ -6,12 +6,12 @@ import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 import { viewport } from "Variables";
 import LightBoxIcon from "images/LightBoxIconLogo.png";
+import Flex from "layout/Flex";
 import Bar from "blocks/Bar";
 import Avatar from "atoms/Avatar";
 import Icon from "atoms/Icon";
-import Layout from "layout/Layout";
 
-const TemplateWrapper = styled(Layout)`
+const TemplateWrapper = styled(Flex)`
   width: 100vw;
   height: 100vh;
 `;
@@ -30,7 +30,7 @@ const Footer = styled(Bar)`
   }};
 `;
 
-const Body = styled(Layout)`
+const Body = styled(Flex)`
   flex-direction: row;
   align-content: stretch;
   align-items: flex-start;
@@ -38,7 +38,7 @@ const Body = styled(Layout)`
   height: 100%;
 `;
 
-const RegionLeft = styled(Layout)`
+const RegionLeft = styled(Flex)`
   position: ${(props) => {
     return props.leftPosition || "";
   }};
@@ -71,7 +71,7 @@ const RegionLeft = styled(Layout)`
   }
 `;
 
-const RegionMain = styled(Layout)`
+const RegionMain = styled(Flex)`
   align-self: stretch;
   &:empty {
     &:before {
@@ -84,7 +84,7 @@ const RegionMain = styled(Layout)`
   }
 `;
 
-const RegionRight = styled(Layout)`
+const RegionRight = styled(Flex)`
   right: 0;
   flex: 0 1 auto;
   align-self: stretch;
