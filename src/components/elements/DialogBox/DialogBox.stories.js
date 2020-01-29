@@ -11,7 +11,7 @@ storiesOf("Elements|Dialog Box", module)
   .addParameters({
     info: {
       text:
-        "Dialogue Boxes are used to convey a body between the server/computer and the user. A dialogue box either has one absolute action (button) or two button options; typically an affirmative and dissenting option. If two buttons are selected then they are located on the bottom left corner as to be readily accessbile to the user. The primary button is always solid, the second is outlined. Both buttons must be the same color family. If one button is selected the button is center in the middle of the dialogue box. ",
+        "Dialogue Boxes are used to convey a body between the server/computer and the user. A dialogue box either has one absolute (button) or two button options; typically an affirmative and dissenting option. If two buttons are selected then they are located on the bottom left corner as to be readily accessbile to the user. The primary button is always solid, the second is outlined. Both buttons must be the same color family. If one button is selected the button is center in the middle of the dialogue box. ",
     },
   })
   .add(
@@ -23,12 +23,12 @@ storiesOf("Elements|Dialog Box", module)
           body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
           buttons={[
             {
-              id: "Negative Action",
-              label: "Negative Action",
+              id: "Negative",
+              label: "Negative",
             },
             {
-              id: "Affirmative Action",
-              label: "Affirmative Action",
+              id: "Affirmative",
+              label: "Affirmative",
             },
           ]}
         />
@@ -43,13 +43,13 @@ storiesOf("Elements|Dialog Box", module)
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         buttons={[
           {
-            id: "Negative Action",
-            label: "Negative Action",
+            id: "Negative",
+            label: "Negative",
             type: "success",
           },
           {
-            id: "Affirmative Action",
-            label: "Affirmative Action",
+            id: "Affirmative",
+            label: "Affirmative",
             type: "success",
           },
         ]}
@@ -63,13 +63,13 @@ storiesOf("Elements|Dialog Box", module)
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         buttons={[
           {
-            id: "Negative Action",
-            label: "Negative Action",
+            id: "Negative",
+            label: "Negative",
             type: "alert",
           },
           {
-            id: "Affirmative Action",
-            label: "Affirmative Action",
+            id: "Affirmative",
+            label: "Affirmative",
             type: "alert",
           },
         ]}
