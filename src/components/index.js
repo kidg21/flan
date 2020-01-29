@@ -50,12 +50,7 @@ export { default as PropertyPanelHeader } from "./elements/PanelHeaders/Property
 export { default as NavigationPanelHeader } from "./elements/PanelHeaders/NavigationPanelHeader";
 export { default as Notification } from "./elements/Notification";
 export { UserRoles, RolePermissions } from "./elements/UserRoles";
-export {
-  default as Dialog,
-  Alert,
-  Confirm,
-  Prompt,
-} from "./elements/DialogBox";
+export { default as Dialog } from "./elements/DialogBox";
 
 // Publicly exported files from 'layout'
 export { default as Form, Section } from "./layout/Form";
