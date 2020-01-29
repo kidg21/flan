@@ -78,7 +78,6 @@ const MenuBG = styled.div`
 function MenuComponent({
   id,
   data,
-  disabled,
   onClick,
   left,
   top,
@@ -94,7 +93,7 @@ function MenuComponent({
 
   return (
     <MenuPopper
-      id={id}
+      id={`menupopper-${id}`}
       top={top}
       left={left}
       right={right}
@@ -103,13 +102,14 @@ function MenuComponent({
       onMouseLeave={closeMenu}
     >
       <Card shadow="2x">
-        <ListWrapper interactive>
+        <ListWrapper id={`listwrapper-${id}`} interactive>
           {data.map((item) => {
             // nested submenu
             if (item.commands) {
               return (
                 <ItemWrapper
-                  key={item.id}
+                  id={`item-${item.id}`}
+                  key={`item-${item.id}`}
                   disabled={item.disabled}
                   tabIndex="0"
                   onMouseOver={(e) => {
@@ -121,7 +121,7 @@ function MenuComponent({
                     });
                   }}
                 >
-                  <ListItem as="section" title={item.label} icon={item.icon} arrow={submenuDirection} disabled={disabled} />
+                  <ListItem as="section" title={item.label} disabled={item.disabled} />
                   {activeItem && activeItem.id === item.id ? (
                     <MenuComponent
                       id={item.id}
@@ -139,12 +139,18 @@ function MenuComponent({
 
             return (
               <ItemWrapper
-                key={item.id}
+                id={`item-${item.id}`}
+                key={`item-${item.id}`}
                 disabled={item.disabled}
-                onClick={() => { if (item.onClickLink) item.onClickLink(item.id); }}
+                onClick={() => {
+                  if (!item.disabled) {
+                    if (item.onClick) item.onClick(item.id);
+                    if (item.onClickLink) item.onClickLink(item.id); // deprecated
+                  }
+                }}
                 onMouseOver={closeMenu}
               >
-                <ListItem as="section" title={item.label} icon={item.icon} />
+                <ListItem as="section" title={item.label} disabled={item.disabled} />
               </ItemWrapper>);
           })}
         </ListWrapper>
@@ -157,9 +163,9 @@ MenuComponent.propTypes = {
   data: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
     label: PropTypes.string,
-    onClickLink: PropTypes.func,
+    onClick: PropTypes.func,
+    onClickLink: PropTypes.func, // deprecated
   })).isRequired,
-  disabled: PropTypes.bool,
   id: PropTypes.string.isRequired,
   left: PropTypes.string,
   onClick: PropTypes.func,
@@ -170,7 +176,6 @@ MenuComponent.propTypes = {
 };
 
 MenuComponent.defaultProps = {
-  disabled: null,
   left: "",
   onClick: null,
   right: "",
@@ -247,7 +252,7 @@ function Menu({
 }
 
 Menu.propTypes = {
-  data: PropTypes.oneOfType([PropTypes.array, PropTypes.string]),
+  data: PropTypes.arrayOf(PropTypes.object),
   icon: PropTypes.string,
   id: PropTypes.string,
   onClick: PropTypes.func,
@@ -272,4 +277,5 @@ Menu.defaultProps = {
   visible: false,
 };
 
+Menu.displayName = "Menu";
 export default Menu;

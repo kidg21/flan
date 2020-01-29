@@ -362,35 +362,35 @@ const data = [
 const menu = [
   {
     id: "a",
-    onClickLink: () => {
+    onClick: () => {
       console.log("clicked Save");
     },
     label: "Save",
   },
   {
     id: "b",
-    onClickLink: () => {
+    onClick: () => {
       console.log("clicked Filter");
     },
     label: "Filter",
   },
   {
     id: "c",
-    onClickLink: () => {
+    onClick: () => {
       console.log("clicked Share");
     },
     label: "Share",
   },
   {
     id: "d",
-    onClickLink: () => {
+    onClick: () => {
       console.log("clicked Refresh");
     },
     label: "Refresh",
   },
   {
     id: "e",
-    onClickLink: () => {
+    onClick: () => {
       console.log("clicked Layer");
     },
     label: "Layer",
