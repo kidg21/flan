@@ -5,7 +5,7 @@ import { css } from "styled-components";
 export const fonts = {
   headline: "Nunito, Arial, sans-serif",
   body: "Nunito, Arial, sans-serif",
-  data: "Nunito, Arial, sans-serif",
+  data: "Lato, Arial, sans-serif",
   numbers: "Nunito, sans-serif",
 };
 
@@ -230,7 +230,7 @@ export const borders = {
 export const DMPTheme = {
   typography: {
     primary: fonts.body,
-    secondary: fonts.headline,
+    secondary: fonts.data,
   },
   background: {
     active: colors.greenLight,

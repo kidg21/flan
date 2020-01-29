@@ -60,9 +60,9 @@ export const CellWrapper = styled.div`
     return props.theme.text.primary;
   }};
   font-weight: ${(props) => {
-    return props.isHeader ? "700" : "600";
+    return props.isHeader ? "600" : "400";
   }};
-  letter-spacing: 1px;
+  font-family: ${(props) => { return props.isHeader ? props.theme.typography.primary : props.theme.typography.secondary; }};
   border-bottom: ${(props) => {
     return props.isHeader ? `2px solid ${props.theme.palette.grey5}` : `1px solid ${props.theme.palette.grey5}`;
   }};
