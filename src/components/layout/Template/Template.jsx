@@ -174,7 +174,7 @@ function Template({
 
   return (
     <TemplateWrapper>
-      {header.content ? (
+      {header ? (
         <Header
           contentAlign="center"
           padding="2x"
@@ -241,7 +241,7 @@ function Template({
 
 Template.propTypes = {
   header: {
-    content: PropTypes.node.isRequired,
+    content: PropTypes.node,
     iconLeft: PropTypes.string,
     iconRight: PropTypes.string,
   },
@@ -257,7 +257,7 @@ Template.propTypes = {
     toggle: PropTypes.func,
   },
   footer: {
-    contentPrimary: PropTypes.node.isRequired,
+    content: PropTypes.node.isRequired,
   },
 };
 
@@ -278,7 +278,7 @@ Template.defaultProps = {
     toggle: null,
   },
   footer: {
-    contentPrimary: null,
+    content: null,
   },
 };
 

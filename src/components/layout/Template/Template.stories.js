@@ -148,7 +148,6 @@ storiesOf("Layout |App Layout/", module)
         <Template
           header={{
             iconLeft: "left",
-            content: <Title text="Header Title Goes Here" />,
             iconRight: "right",
           }}
           left={cardGrid}
