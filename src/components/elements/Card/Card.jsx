@@ -16,6 +16,7 @@ import Image from "atoms/Image";
 import Avatar from "atoms/Avatar";
 import Menu from "blocks/Menu";
 import Expander from "utils/Expander";
+import mime from "mime";
 
 const CardSectionWrapper = styled.section`
   position: relative;
@@ -48,8 +49,6 @@ const CardSectionWrapper = styled.section`
   }};
   }
 `;
-
-const mime = require("mime");
 
 const Media = styled(CardSectionWrapper)`
   height: ${(props) => {
