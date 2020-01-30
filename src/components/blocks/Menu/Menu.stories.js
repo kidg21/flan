@@ -1,9 +1,9 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/jsx-filename-extension, security/detect-object-injection */
 import React from "react";
 
 import { expect } from "chai";
-import { mount, shallow } from "enzyme";
+import { mount } from "enzyme";
 import { spy } from "sinon";
 
 import { ThemeProvider } from "styled-components";
@@ -153,12 +153,21 @@ storiesOf("Blocks|Menu", module)
 
     specs(() => {
       let output;
-      const spyClick = spy(() => {});
-      const testData = [
-        { id: "a", label: "A", onClick: spyClick },
-        { id: "b", label: "B", onClick: spyClick, disabled: true },
-        { id: "c", label: "C", commands: [{ id: "c0", label: "C0", onClick: spyClick }, { id: "c1", label: "C1" }] },
-      ];
+      const spyClick = spy(() => { });
+      const testData = [{
+        id: "a",
+        label: "A",
+        onClick: spyClick,
+      }, {
+        id: "b",
+        label: "B",
+        onClick: spyClick,
+        disabled: true,
+      }, {
+        id: "c",
+        label: "C",
+        commands: [{ id: "c0", label: "C0", onClick: spyClick }, { id: "c1", label: "C1" }],
+      }];
       return describe("Menu Tests", () => {
         before(() => {
           output = mount(<Menu id="menu-test" data={testData} />, {
