@@ -1,5 +1,10 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable security/detect-object-injection */
+/* eslint-disable complexity */
+/* eslint-disable react/require-default-props */
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
@@ -44,8 +49,8 @@ const FlexWrapper = styled.div`
   max-width: 100%;
   max-height: 100%;
   transition: all 0.3s ease-in-out;
-  border: ${(props) => {
-    return `1px solid ${props.theme.palette.borderLight}`;
+  border: .25px solid ${(props) => {
+    return props.theme.divider;
   }};
   overflow: ${(props) => {
     return props.setOverflow || "hidden";
@@ -67,36 +72,26 @@ const FlexWrapper = styled.div`
   }
 `;
 
-const screenHash = {
-  large: {
-    direction: "row",
-    width: "30%",
-    top: "60%",
-    height: "40%",
-    left: "70%",
-    right: "70%",
-  },
-  medium: {
-    direction: "row",
-    width: "40%",
-    top: "50%",
-    height: "50%",
-    left: "60%",
-    right: "60%",
-  },
-  small: {
-    direction: "column",
-    width: "100%",
-    top: "40%",
-    height: "60%",
-    left: "0",
-    right: "100%",
-  },
-};
-
-function parseType({
-  type, setPosition, flexDirection, setOverflow, width, height, left, top, bottom, setFlex, zIndex,
+function Layout({
+  bottom,
+  children,
+  flexDirection,
+  height,
+  id,
+  left,
+  right,
+  setFlex,
+  setOverflow,
+  setPosition,
+  state,
+  top,
+  type,
+  width,
+  zIndex,
 }) {
+  const screenSmall = window.matchMedia(screen.small);
+  const screenMedium = window.matchMedia(screen.medium);
+  const screenLarge = window.matchMedia(screen.large);
   let position = setPosition;
   let direction = flexDirection;
   let overflow = setOverflow;
@@ -104,19 +99,18 @@ function parseType({
   let screenHeight = height;
   let offsetLeft = left;
   let offsetTop = top;
-  const offsetBottom = bottom;
-  let flex = setFlex;
+  let offsetBottom = bottom;
   let z = zIndex;
-  let displayState = null;
-
-  const screenSize = Object.keys(screenHash).find((size) => {
-    return window.matchMedia(screen[size]).matches;
-  });
-
+  let flex = setFlex;
+  let displayState;
   switch (type) {
     case "outerWrapper":
       position = "relative";
-      direction = screenHash[screenSize].direction;
+      if (screenMedium.matches) {
+        direction = "row";
+      } else if (screenSmall.matches) {
+        direction = "column";
+      }
       break;
     case "innerWrapper":
       position = "relative";
@@ -124,125 +118,128 @@ function parseType({
       break;
     case "leftWrapper":
       displayState = "translate3d(-100%, 0px, 0px)";
-      screenWidth = screenHash[screenSize].width;
+      if (screenLarge.matches) {
+        screenWidth = "30%";
+      } else if (screenMedium.matches) {
+        screenWidth = "40%";
+      } else if (screenSmall.matches) {
+        screenWidth = "100%";
+      }
       break;
     case "middleWrapper":
       screenHeight = "auto";
       break;
     case "bottomWrapper":
-      offsetTop = screenHash[screenSize].top;
-      screenHeight = screenHash[screenSize].height;
+      if (screenLarge.matches) {
+        offsetTop = "60%";
+        screenHeight = "40%";
+      } else if (screenMedium.matches) {
+        offsetTop = "50%";
+        screenHeight = "50%";
+      } else if (screenSmall.matches) {
+        offsetTop = "40%";
+        screenHeight = "60%";
+      }
       break;
     case "rightWrapper":
       z = "1";
-      offsetLeft = screenHash[screenSize].left;
-      screenWidth = screenHash[screenSize].width;
+      if (screenLarge.matches) {
+        offsetLeft = "70%";
+        screenWidth = "30%";
+      } else if (screenMedium.matches) {
+        offsetLeft = "60%";
+        screenWidth = "40%";
+      } else if (screenSmall.matches) {
+        offsetLeft = "0";
+        screenWidth = "100%";
+      }
       break;
     case "controlsWrapper":
       position = "relative";
       flex = "0 0 auto";
-      if (screenHash[screenSize].width !== "100%") {
+      if (screenLarge.matches) {
         screenWidth = "min-content";
-      } else {
+      } else if (screenMedium.matches) {
+        screenWidth = "min-content";
+      } else if (screenSmall.matches) {
         screenWidth = "100%";
-        screenHeight = "min-content";
+        screenHeight = "min-montent";
       }
       break;
     case "mainWrapper":
     default:
       break;
   }
-
-  return {
-    type,
-    position,
-    direction,
-    overflow,
-    screenWidth,
-    screenHeight,
-    offsetLeft,
-    offsetTop,
-    offsetBottom,
-    flex,
-    displayState,
-    z,
-  };
-}
-
-function parseState(state, props) {
-  const screenSize = Object.keys(screenHash).find((size) => {
-    return window.matchMedia(screen[size]).matches;
-  });
-
   switch (state) {
     case "leftUncover":
-      if (props.type === "innerWrapper") {
-        props.displayState = `translate3d(${screenHash[screenSize].width}, 0, 0)`;
+      if (type === "innerWrapper" && screenLarge.matches) {
+        displayState = "translate3d(30%, 0, 0)";
+      } else if (type === "innerWrapper" && screenMedium.matches) {
+        displayState = "translate3d(40%, 0, 0)";
+      } else if (type === "innerWrapper" && screenSmall.matches) {
+        displayState = "translate3d(100%, 0, 0)";
       }
       break;
     case "leftCover":
-      if (props.type === "innerWrapper") {
-        props.displayState = "translate3d(0, 0, 0)";
+      if (type === "innerWrapper") {
+        displayState = "translate3d(0, 0, 0)";
       }
       break;
     case "rightOnscreen":
-      if (props.type === "mainWrapper") {
-        props.screenWidth = screenHash[screenSize].right;
+      if (type === "mainWrapper" && screenLarge.matches) {
+        screenWidth = "70%";
+      } else if (type === "mainWrapper" && screenMedium.matches) {
+        screenWidth = "60%";
+      } else if (type === "mainWrapper" && screenSmall.matches) {
+        screenWidth = "100%";
       }
       break;
     case "rightOffscreen":
-      if (props.type === "rightWrapper") {
-        props.offsetLeft = "100%";
+      if (type === "rightWrapper") {
+        offsetLeft = "100%";
       }
       break;
     case "bottomOnscreen":
-      if (props.type === "middleWrapper") {
-        props.offsetBottom = screenHash[screenSize].height;
+      if (type === "middleWrapper" && screenLarge.matches) {
+        offsetBottom = "40%";
+      } else if (type === "middleWrapper" && screenMedium.matches) {
+        offsetBottom = "50%";
+      } else if (type === "middleWrapper" && screenSmall.matches) {
+        offsetBottom = "60%";
       }
       break;
     case "bottomOffscreen":
-      if (props.type === "bottomWrapper") {
-        props.offsetTop = "100%";
-      } else if (props.type === "middleWrapper") {
-        props.offsetBottom = "0";
+      if (type === "bottomWrapper") {
+        offsetTop = "100%";
+      } else if (type === "middleWrapper") {
+        offsetBottom = "0";
       }
       break;
     case "fullScreen":
-      props.screenWidth = "100%";
-      props.screenHeight = "100%";
-      props.offsetTop = "0";
-      props.offsetLeft = "0";
-      props.z = "1";
+      screenWidth = "100%";
+      screenHeight = "100%";
+      offsetTop = "0";
+      offsetLeft = "0";
+      z = "1";
       break;
     default:
       break;
   }
-}
-
-function Layout({
-  children,
-  id,
-  right,
-  state,
-  ...props
-}) {
-  const pos = parseType(props);
-  parseState(state, pos);
   return (
     <FlexWrapper
-      bottom={pos.offsetBottom}
-      displayState={pos.displayState}
-      flexDirection={pos.direction}
-      height={pos.screenHeight}
+      bottom={offsetBottom}
+      displayState={displayState}
+      flexDirection={direction}
+      height={screenHeight}
       id={id}
-      left={pos.offsetLeft}
+      left={offsetLeft}
       right={right}
-      setFlex={pos.flex}
-      setOverflow={pos.overflow}
-      setPosition={pos.position}
-      top={pos.offsetTop}
-      width={pos.screenWidth}
-      zIndex={pos.z}
+      setFlex={flex}
+      setOverflow={overflow}
+      setPosition={position}
+      top={offsetTop}
+      width={screenWidth}
+      zIndex={z}
     >
       {children}
     </FlexWrapper>

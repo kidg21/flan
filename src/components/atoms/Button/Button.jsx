@@ -185,10 +185,6 @@ function Button({
       tintColor = "actionTint";
       shadeColor = "actionDark";
       break;
-    case "grey":
-      buttonColor = "disabled";
-      fontColor = buttonColor;
-      break;
     default:
       buttonColor = "action";
       fontColor = buttonColor;

@@ -169,7 +169,7 @@ export const DMPTheme = {
     infoLight: colors.blue40,
     infoTint: colors.blue20,
     inverse: colors.white60, // inverse is the same as background.default
-    link: colors.blue60,
+    link: colors.blue80,
     success: colors.green80,
     successBright: colors.green60,
     successDark: colors.green100,
@@ -262,7 +262,7 @@ export const fontSize = {
 };
 
 // Media Queries
-const viewport = {
+export const viewport = {
   small: "640px",
   medium: "641px",
   large: "1025px",
@@ -270,8 +270,8 @@ const viewport = {
   xxlarge: "1921px",
 };
 export const screen = {
-  small: `only screen and(max - width: ${viewport.small})`,
-  medium: `only screen and(min - width: ${viewport.medium})`,
+  small: `only screen and(max-width: ${viewport.small})`,
+  medium: `only screen and(min-width: ${viewport.medium})`,
   // medium: `only screen and(min - width: ${
   //   viewport.medium
   // }) and (orientation: portrait)`,

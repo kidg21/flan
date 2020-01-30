@@ -18,6 +18,9 @@ const AvatarText = styled(Title)`
 const TagContainer = styled.div`
   justify-content: center;
   vertical-align: center;
+  cursor: ${(props) => {
+    return props.onClick ? "pointer" : "";
+  }};
   display: flex;
   width: ${(props) => {
     return props.avatarSize;
@@ -37,38 +40,45 @@ const TagContainer = styled.div`
 `;
 
 function Avatar({
-  type, disabled, icon, id, src, alt, image, label, size,
+  type, icon, id, src, alt, image, label, onClick, size,
 }) {
   let labelType;
   let iconType;
-  let backgroundColor;
-  let fontSize;
-  let textColor;
-  let avatarSize;
+
+  const sizeHash = {
+    "4x": {
+      avatar: "5em",
+      font: "2.5em",
+    },
+    "3x": {
+      avatar: "4em",
+      font: "2em",
+    },
+    "2x": {
+      avatar: "3em",
+      font: "1.5em",
+    },
+    "1x": {
+      avatar: "2.5em",
+      font: "1em",
+    },
+  };
+
+  const selectedSize = size && sizeHash[size.toLowerCase()];
+  const avatarSize = selectedSize ? selectedSize.avatar : "2.5rem";
+  const fontSize = selectedSize ? selectedSize.font : "1em";
+
+  const typeHash = {
+    success: "success",
+    warning: "warning",
+    alert: "alert",
+    info: "info",
+    action: "action",
+  };
 
 
-  switch (size && size.toLowerCase()) {
-    case "4x":
-      avatarSize = "5rem";
-      fontSize = "2.5em";
-      break;
-    case "3x":
-      avatarSize = "4rem";
-      fontSize = "2em";
-      break;
-    case "2x":
-      avatarSize = "3rem";
-      fontSize = "1.5em";
-      break;
-    case "1x":
-      avatarSize = "2.5rem";
-      fontSize = "1em";
-      break;
-    default:
-      avatarSize = "2.5rem";
-      fontSize = "1em";
-      break;
-  }
+  let backgroundColor = type ? (typeHash[type] || type.toLowerCase()) : "actionLight";
+  let textColor = type ? `${type.toLowerCase()}Tint` : "inverse";
 
   switch (type && type.toLowerCase()) {
     case "success":
@@ -96,13 +106,12 @@ function Avatar({
       textColor = "inverse";
       break;
   }
-  if (disabled) {
-    backgroundColor = "disabled";
-  }
+
   if (image) {
     iconType = (<Image
       circle
       src={src}
+      height={avatarSize}
       width={avatarSize}
       alt={alt}
     />);
@@ -123,6 +132,7 @@ function Avatar({
       id={id}
       label={label}
       textColor={textColor}
+      onClick={onClick}
     >
       {iconType || labelType}
     </TagContainer>
@@ -132,24 +142,24 @@ function Avatar({
 Avatar.propTypes = {
   /** Options: 'action',  'info', 'success', 'warning', 'alert' */
   type: PropTypes.string,
-  disabled: PropTypes.bool,
   /** Enter the name of the icon as the prop value. (ex. icon='circle' */
   icon: PropTypes.string,
-  image: PropTypes.any,
+  image: PropTypes.node,
   src: PropTypes.node,
   alt: PropTypes.string,
   id: PropTypes.string,
+  onClick: PropTypes.node,
   size: PropTypes.node,
   label: PropTypes.string,
 };
 
 Avatar.defaultProps = {
   type: null,
-  disabled: false,
   image: null,
   src: null,
   alt: null,
   size: null,
+  onClick: null,
   icon: null,
   id: null,
   label: null,

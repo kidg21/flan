@@ -280,7 +280,6 @@ storiesOf("Elements|Card", module)
           "Media",
         )}
         mediaDesc={
-          boolean("media description", false, "Media") &&
           text("media description", "Media Description", "Media")
         }
       />

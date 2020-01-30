@@ -119,25 +119,5 @@ storiesOf("Atoms|Button", module)
     //     });
 
 
-    //     it("Can be disabled", () => {
-    //       const button = output.find("Button").at(8);
-    //       expect(button.prop("fontColor")).to.equal("white");
-    //       expect(button.prop("backgroundColor")).to.equal("grey4");
-    //     });
-
-    //     it("Can be underlined and disabled", () => {
-    //       const button = output.find("Button").at(9);
-    //       expect(button.prop("fontColor")).to.equal("grey4");
-    //       expect(button.prop("underlineColor")).to.equal("grey4");
-    //     });
-
-    //     it("Can be inline and disabled", () => {
-    //       const button = output.find("Button").at(10);
-    //       expect(button.prop("border")).to.equal("2px solid transparent");
-    //       expect(button.prop("fontColor")).to.equal("grey4");
-    //     });
-    //   });
-    // });
-
     return story;
   });
