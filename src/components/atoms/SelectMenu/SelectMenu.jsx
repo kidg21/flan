@@ -21,7 +21,7 @@ const selectStyles = {
   // Toggle UI
   control: (styles, { isDisabled, isFocused }) => {
     let bgColor = colors.white;
-    if (!isFocused) bgColor = isDisabled ? colors.greyLight : colors.white;
+    if (!isFocused) bgColor = isDisabled ? colors.grey20 : colors.white;
     /** TODO: Get an 'alert' border working on the select input.
      * Need to handle all standard cases (default, focus, hover, error, and disabled)
      */
