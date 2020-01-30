@@ -6,7 +6,6 @@
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useContext, useState } from "react";
-import AppLayout from "./AppLayout";
 // import PanelHeader from "elements/PanelHeader";
 // import CardBar from "elements/CardBar";
 import Accordion from "blocks/Accordion";
@@ -25,76 +24,64 @@ function TrialApp() {
   const [visibility5, setVisibility5] = useState(false);
   const [visibility6, setVisibility6] = useState(false);
   return (
-    <AppLayout
-      leftOpen="true"
-      rightOpen="false"
-      leftchild={
-        <Panel>
-          <Table />
-          <Accordion
-            // header={<CardBar title="Ownership" info={true} />}
-            visibility={visibility}
-            onClick={() => {
-              setVisibility(!visibility);
-            }}
-          >
-            <Table />
-          </Accordion>
-          <Accordion
-            // header={<CardBar title="Site Information" info={true} />}
-            visibility={visibility2}
-            onClick={() => {
-              setVisibility2(!visibility2);
-            }}
-          >
-            <Table />
-          </Accordion>
-          <Accordion
-            // header={<CardBar title="Property Characteristics" info={true} />}
-            visibility={visibility3}
-            onClick={() => {
-              setVisibility3(!visibility3);
-            }}
-          >
-            <Table />
-          </Accordion>
-          <Accordion
-            // header={<CardBar title="Value and Tax" info={true} />}
-            visibility={visibility4}
-            onClick={() => {
-              setVisibility4(!visibility4);
-            }}
-          >
-            <Table />
-          </Accordion>
-          <Accordion
-            // header={<CardBar title="Last Market Sale" info={true} />}
-            visibility={visibility5}
-            onClick={() => {
-              setVisibility5(!visibility5);
-            }}
-          >
-            <Table />
-          </Accordion>
-          <Accordion
-            // header={<CardBar title="Site Views" info={true} />}
-            visibility={visibility6}
-            onClick={() => {
-              setVisibility6(!visibility6);
-            }}
-          >
-            <Table />
-          </Accordion>
-        </Panel>
-      }
-      rightchild={
-        <Panel
-          footer={<Button label={translate("Apply")} isRound="true" />}
-        >
-          <LanguageSelect />
-        </Panel>
-      }
-    />
+    <Panel>
+      <Table />
+      <Accordion
+        // header={<CardBar title="Ownership" info={true} />}
+        visibility={visibility}
+        onClick={() => {
+          setVisibility(!visibility);
+        }}
+      >
+        <Table />
+      </Accordion>
+      <Accordion
+        // header={<CardBar title="Site Information" info={true} />}
+        visibility={visibility2}
+        onClick={() => {
+          setVisibility2(!visibility2);
+        }}
+      >
+        <Table />
+      </Accordion>
+      <Accordion
+        // header={<CardBar title="Property Characteristics" info={true} />}
+        visibility={visibility3}
+        onClick={() => {
+          setVisibility3(!visibility3);
+        }}
+      >
+        <Table />
+      </Accordion>
+      <Accordion
+        // header={<CardBar title="Value and Tax" info={true} />}
+        visibility={visibility4}
+        onClick={() => {
+          setVisibility4(!visibility4);
+        }}
+      >
+        <Table />
+      </Accordion>
+      <Accordion
+        // header={<CardBar title="Last Market Sale" info={true} />}
+        visibility={visibility5}
+        onClick={() => {
+          setVisibility5(!visibility5);
+        }}
+      >
+        <Table />
+      </Accordion>
+      <Accordion
+        // header={<CardBar title="Site Views" info={true} />}
+        visibility={visibility6}
+        onClick={() => {
+          setVisibility6(!visibility6);
+        }}
+      >
+        <Table />
+        <Button label={translate("Apply")} isRound="true" />
+      </Accordion>
+    </Panel>
   );
 }
 

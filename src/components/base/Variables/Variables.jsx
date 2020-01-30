@@ -438,7 +438,7 @@ export const fontSize = {
 };
 
 // Media Queries
-const viewport = {
+export const viewport = {
   small: "640px",
   medium: "641px",
   large: "1025px",
@@ -446,8 +446,8 @@ const viewport = {
   xxlarge: "1921px",
 };
 export const screen = {
-  small: `only screen and(max - width: ${viewport.small})`,
-  medium: `only screen and(min - width: ${viewport.medium})`,
+  small: `only screen and(max-width: ${viewport.small})`,
+  medium: `only screen and(min-width: ${viewport.medium})`,
   // medium: `only screen and(min - width: ${
   //   viewport.medium
   // }) and (orientation: portrait)`,

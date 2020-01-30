@@ -44,7 +44,7 @@ storiesOf("Blocks|Media Block", module)
   )
   .add("Knobs", () => {
     return (
-      <Card padding="none">
+      <Card padding="0">
         <MediaBlock
           media={image}
           body={body}
@@ -80,7 +80,7 @@ storiesOf("Blocks|Media Block", module)
   .add("The Media Block Family", () => {
     return (
       <CardGrid>
-        <Card padding="none">
+        <Card padding="0">
           <MediaBlock
             media={image}
             body={
@@ -91,7 +91,7 @@ storiesOf("Blocks|Media Block", module)
             }
           />
         </Card>
-        <Card padding="none">
+        <Card padding="0">
           <MediaBlock
             media={image}
             body={
@@ -103,7 +103,7 @@ storiesOf("Blocks|Media Block", module)
             reverse
           />
         </Card>
-        <Card padding="none">
+        <Card padding="0">
           <MediaBlock
             media={image}
             body={
@@ -115,7 +115,7 @@ storiesOf("Blocks|Media Block", module)
             align="vertical"
           />
         </Card>
-        <Card padding="none">
+        <Card padding="0">
           <MediaBlock
             media={image}
             body={
@@ -128,7 +128,7 @@ storiesOf("Blocks|Media Block", module)
             reverse
           />
         </Card>
-        <Card padding="none">
+        <Card padding="0">
           <MediaBlock
             media={image}
             body={
@@ -140,7 +140,7 @@ storiesOf("Blocks|Media Block", module)
             align="inline"
           />
         </Card>
-        <Card padding="none">
+        <Card padding="0">
           <MediaBlock
             media={image}
             body={

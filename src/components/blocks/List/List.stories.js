@@ -2,13 +2,13 @@
 /* eslint-disable react/jsx-filename-extension */
 /* global number */
 import React, { useState } from "react";
-import Layout from "layout/Layout";
 import List, { ListItem } from "blocks/List";
 import InputBlock from "blocks/InputBlock";
 import SelectMenu from "atoms/SelectMenu";
 import { CheckboxGroup } from "atoms/Checkbox";
 import Button from "atoms/Button";
 import Grid from "layout/Grid";
+import Panel from "layout/Panel";
 import CardList from "./CardList.jsx";
 
 const ListNotes = markdown.require("./List.md");
@@ -313,7 +313,7 @@ storiesOf("Blocks|List", module)
 
       let clRef;
       return (
-        <Layout>
+        <Panel>
           <Grid columns="4" align="center">
             <Button
               label="Add Entry"
@@ -553,7 +553,7 @@ storiesOf("Blocks|List", module)
               });
             }}
           />
-        </Layout>
+        </Panel>
       );
     });
   });
