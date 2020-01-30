@@ -52,12 +52,7 @@ export { default as NavigationPanelHeader } from "./elements/PanelHeaders/Naviga
 export { default as ProgressBar, Step } from "./elements/Progress";
 export { default as Notification } from "./elements/Notification";
 export { UserRoles, RolePermissions } from "./elements/UserRoles";
-export {
-  default as Dialog,
-  Alert,
-  Confirm,
-  Prompt,
-} from "./elements/DialogBox";
+export { default as Dialog } from "./elements/DialogBox";
 
 // Publicly exported files from 'layout'
 export { default as Form, Section } from "./layout/Form";
