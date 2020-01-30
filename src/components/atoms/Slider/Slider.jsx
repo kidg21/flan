@@ -7,7 +7,7 @@ import { Lighten, Darken } from "Variables";
 const SliderPiece = styled.input.attrs({ type: "range" })`
   height: 1px;
   background: ${(props) => {
-    return props.error ? props.theme.palette.alertBright : props.theme.palette.grey3;
+    return props.error ? props.theme.palette.alertBright : props.theme.palette.border;
   }};
   outline: none;
   transition: opacity 0.2s;
@@ -17,11 +17,11 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
     height: 1.5em;
     border: 1px solid;
     border-color: ${(props) => {
-    return props.error ? props.theme.palette.alert : props.theme.palette.secondary;
+    return props.error ? props.theme.palette.alert : props.theme.palette.success;
   }};
     border-radius: 50%;
     background-color: ${(props) => {
-    return props.error ? props.theme.palette.alertBright : props.theme.palette.secondaryLight;
+    return props.error ? props.theme.palette.alertBright : props.theme.palette.successLight;
   }};
     cursor: pointer;
     &:hover {
@@ -49,7 +49,7 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
     height: 18px;
     border-radius: 50%;
     color: ${(props) => {
-    return props.theme.palette.secondaryLight;
+    return props.theme.palette.successLight;
   }};
     cursor: pointer;
   }
@@ -60,10 +60,10 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
     user-select: none;
     &::-webkit-slider-thumb {
       border-color: ${(props) => {
-    return props.theme.palette.grey3;
+    return props.theme.palette.border;
   }};
       background-color: ${(props) => {
-    return props.theme.palette.grey5;
+    return props.theme.palette.borderLight;
   }};
     }
   }

@@ -65,22 +65,22 @@ function Tag({
       badgeColor = "alert";
       break;
     case "blue":
-      badgeColor = "primaryLight";
+      badgeColor = "actionLight";
       break;
     case "lightgreen":
-      badgeColor = "secondaryLight";
+      badgeColor = "successLight";
       break;
     case "green":
-      badgeColor = "secondary";
+      badgeColor = "success";
       break;
     case "darkgreen":
-      badgeColor = "secondaryDark";
+      badgeColor = "successDark";
       break;
     case "darkblue":
-      badgeColor = "primaryDark";
+      badgeColor = "actionDark";
       break;
     default:
-      badgeColor = "primary";
+      badgeColor = "action";
       break;
   }
 

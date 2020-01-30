@@ -87,21 +87,17 @@ function Avatar({
       backgroundColor = "info";
       textColor = "infoTint";
       break;
-    case "primary":
-      backgroundColor = "primary";
-      textColor = "primaryTint";
-      break;
-    case "secondary":
-      backgroundColor = "secondaryLight";
-      textColor = "secondaryTint";
+    case "action":
+      backgroundColor = "action";
+      textColor = "actionTint";
       break;
     default:
-      backgroundColor = "primaryLight";
-      textColor = "white";
+      backgroundColor = "actionLight";
+      textColor = "inverse";
       break;
   }
   if (disabled) {
-    backgroundColor = "grey3";
+    backgroundColor = "disabled";
   }
   if (image) {
     iconType = (<Image
@@ -134,12 +130,12 @@ function Avatar({
 }
 
 Avatar.propTypes = {
-  /** Options: 'primary', 'secondary', 'info', 'success', 'warning', 'alert' */
+  /** Options: 'action',  'info', 'success', 'warning', 'alert' */
   type: PropTypes.string,
   disabled: PropTypes.bool,
   /** Enter the name of the icon as the prop value. (ex. icon='circle' */
   icon: PropTypes.string,
-  image: PropTypes.node,
+  image: PropTypes.any,
   src: PropTypes.node,
   alt: PropTypes.string,
   id: PropTypes.string,

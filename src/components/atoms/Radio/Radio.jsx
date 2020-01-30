@@ -44,7 +44,7 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
     );
   }};
   border-color: ${(props) => {
-    return props.theme.palette[props.outlineColor] || props.theme.palette.grey;
+    return props.theme.palette[props.outlineColor] || props.theme.palette.borderDark;
   }};
   width: 1rem;
   height: 1rem;
@@ -56,19 +56,19 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
     background-color: ${(props) => {
     return (
       props.theme.palette[props.fillColorChecked] ||
-      props.theme.palette.secondaryLight
+      props.theme.palette.successLight
     );
   }};
     border-color: ${(props) => {
     return (
-      props.theme.palette[props.outlineColor] || props.theme.palette.secondary
+      props.theme.palette[props.outlineColor] || props.theme.palette.success
     );
   }};
   }
   &:focus {
     border-color: ${(props) => {
     return (
-      props.theme.palette[props.outlineColor] || props.theme.palette.secondary
+      props.theme.palette[props.outlineColor] || props.theme.palette.success
     );
   }};
     outline: none;
@@ -104,10 +104,10 @@ function Radio({
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
-    fillColor = "grey5";
-    fillColorChecked = "grey5";
+    fillColor = "borderLight";
+    fillColorChecked = "borderLight";
     inputTextColor = "disabled";
-    outlineColor = "grey2";
+    outlineColor = "border";
     tabIndex = "-1";
   } else if (error) {
     fillColor = "alertBright";

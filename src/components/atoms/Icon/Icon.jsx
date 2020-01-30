@@ -34,7 +34,7 @@ const LinkedIcon = styled.a`
 const StyledIcon = styled(FontAwesomeIcon)`
  position: relative;
   color: ${(props) => {
-    return props.theme.text[props.color] || "";
+    return props.theme.palette[props.color] || "";
   }};
   border: ${(props) => {
     return props.border ? "2px solid" : "";

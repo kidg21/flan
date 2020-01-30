@@ -110,7 +110,7 @@ function TableAlt({
     case "standard":
     default:
       cellBorder = "1px solid";
-      cellBorderColor = "grey5";
+      cellBorderColor = "borderLight";
       cellPadding = "0.5em";
       break;
   }
@@ -194,8 +194,8 @@ function TableAlt({
           <TableContainer>{content}</TableContainer>
         </Container>
       ) : (
-        <TableContainer>{content}</TableContainer>
-      )}
+          <TableContainer>{content}</TableContainer>
+        )}
     </Wrapper>
   );
 }

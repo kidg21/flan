@@ -45,7 +45,7 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
     );
   }};
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.grey;
+    return props.theme.palette[props.borderColor] || props.theme.palette.borderDark;
   }};
   width: 1rem;
   height: 1rem;
@@ -57,19 +57,19 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
     background-color: ${(props) => {
     return (
       props.theme.palette[props.fillColorChecked] ||
-      props.theme.palette.secondaryLight
+      props.theme.palette.successLight
     );
   }};
     border-color: ${(props) => {
     return (
-      props.theme.palette[props.borderColor] || props.theme.palette.secondary
+      props.theme.palette[props.borderColor] || props.theme.palette.success
     );
   }};
   }
   &:focus {
     outline-color: ${(props) => {
     return (
-      props.theme.palette[props.outlineColor] || props.theme.palette.secondary
+      props.theme.palette[props.outlineColor] || props.theme.palette.success
     );
   }};
   }
@@ -104,9 +104,9 @@ function Checkbox({
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
-    borderColor = "grey2";
-    fillColor = "grey5";
-    fillColorChecked = "grey5";
+    borderColor = "border";
+    fillColor = "borderLight";
+    fillColorChecked = "borderLight";
     inputTextColor = "disabled";
     tabIndex = "-1";
   } else if (error) {

@@ -20,12 +20,12 @@ const Input = styled.input`
   font-family: ${(props) => { return props.theme.typography.primary; }};
   border-color: ${(props) => {
     return (
-      props.theme.palette[props.inputBorderColor] || props.theme.palette.grey3
+      props.theme.palette[props.inputBorderColor] || props.theme.palette.border
     );
   }};
   background-color: ${(props) => {
     return (
-      props.theme.palette[props.inputFillColor] || props.theme.palette.white
+      props.theme.palette[props.inputFillColor] || props.theme.background.default
     );
   }};
   caret-color: ${(props) => {
@@ -43,7 +43,7 @@ const Input = styled.input`
     letter-spacing: .5px;
     color: ${(props) => {
     return (
-      props.theme.text[props.placeholderColor] || props.theme.text.secondary
+      props.theme.text[props.placeholderColor] || props.theme.text.success
     );
   }};
   }
@@ -51,7 +51,7 @@ const Input = styled.input`
     border-color: ${(props) => {
     return (
       props.theme.palette[props.inputBorderColorHover] ||
-      props.theme.palette.grey2
+      props.theme.palette.border
     );
   }};
     }
@@ -59,7 +59,7 @@ const Input = styled.input`
     border-color: ${(props) => {
     return (
       props.theme.palette[props.inputBorderColorHover] ||
-      props.theme.palette.secondary
+      props.theme.palette.success
     );
   }};
     ::selection {
@@ -69,7 +69,7 @@ const Input = styled.input`
       background-color: ${(props) => {
     return (
       props.theme.palette[props.inputSelectColor] ||
-      props.theme.palette.secondary
+      props.theme.palette.success
     );
   }};
     }
@@ -114,8 +114,6 @@ function TextInput({
     as = "textarea";
     inputResize = "vertical";
   } else if (type === "search") {
-    // inputBorderColor = "primaryLight";
-    // inputBorderColorHover = "primary";
   }
 
   // construct datalist element for autocompletes if appropriate props passed in
@@ -145,7 +143,7 @@ function TextInput({
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
-    inputBorderColor = "grey5";
+    inputBorderColor = "borderLight";
     inputFillColor = "disabled";
     inputTextColor = "disabled";
   } else if (error) {
@@ -153,14 +151,14 @@ function TextInput({
     inputBorderColorHover = "alertLight";
     inputSelectColor = "alertBright";
     inputTextColor = "alert";
-    placeholderColor = "primary";
+    placeholderColor = "secondary";
     errorText = typeof error === "string" ? error : "";
   } else if (warning) {
     inputBorderColor = "warningBright";
     inputBorderColorHover = "warningLight";
     inputSelectColor = "warningBright";
     inputTextColor = "warning";
-    placeholderColor = "primary";
+    placeholderColor = "secondary";
     errorText = typeof warning === "string" ? warning : "";
   }
 

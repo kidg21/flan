@@ -46,18 +46,18 @@ function Calendar({
   if (isDisabled) {
     inputTextColor = "disabled";
     inputFillColor = "disabled";
-    inputBorderColor = "grey5";
+    inputBorderColor = "borderLight";
   } else if (error) {
     inputTextColor = "alert";
     inputBorderColor = "alert";
     inputBorderColorHover = "alert";
-    inputSelectColor = "grey4";
+    inputSelectColor = "borderBright";
     if (typeof error === "string") errorText = error;
   } else if (warning) {
     inputTextColor = "warning";
     inputBorderColor = "warning";
     inputBorderColorHover = "warning";
-    inputSelectColor = "grey4";
+    inputSelectColor = "borderBright";
     errorText = warning;
   }
 

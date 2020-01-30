@@ -21,7 +21,7 @@ const SwitchContainer = styled.div`
     return props.theme.text[props.inputTextColor] || "";
   }};
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.grey3;
+    return props.theme.palette[props.borderColor] || props.theme.palette.border;
   }};
   line-height: initial;
   &[disabled],
@@ -38,7 +38,7 @@ const StyledSwitch = styled.div`
   width: 2.2rem;
   border: 1px solid;
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.grey2;
+    return props.theme.palette[props.borderColor] || props.theme.palette.border;
   }};
   border-radius: 1rem;
   background-color: ${(props) => {
@@ -48,7 +48,7 @@ const StyledSwitch = styled.div`
   &[disabled],
   &[readonly] {
     background-color: ${(props) => {
-    return props.disabled ? props.theme.palette.grey5 : "";
+    return props.disabled ? props.theme.palette.borderLight : "";
   }};
   }
 `;
@@ -56,12 +56,12 @@ const StyledSwitch = styled.div`
 const Circle = styled.div`
   background: ${(props) => {
     return props.disabled
-      ? props.theme.palette.grey5
-      : props.theme.palette.white;
+      ? props.theme.palette.borderLight
+      : props.theme.palette.inverse;
   }};
   border: 1px solid;
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.grey;
+    return props.theme.palette[props.borderColor] || props.theme.palette.borderDark;
   }};
   width: 1rem;
   height: 1rem;
@@ -90,11 +90,11 @@ function Switch({
   let alignInput;
   if (isDisabled) {
     inputTextColor = "disabled";
-    fillColor = "grey5";
-    borderColor = "grey3";
+    fillColor = "borderLight";
+    borderColor = "border";
   }
   if (error && !isDisabled) {
-    inputTextColor = "alertBright";
+    inputTextColor = "alert";
     fillColor = "alertBright";
     borderColor = "alert";
   }
@@ -116,8 +116,8 @@ function Switch({
     };
   }
   if (isChecked && !error) {
-    fillColor = "secondaryLight";
-    borderColor = "secondary";
+    fillColor = "successLight";
+    borderColor = "success";
   }
   return (
     <SwitchContainer

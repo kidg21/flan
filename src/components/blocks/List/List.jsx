@@ -20,7 +20,7 @@ const ListWrapper = styled.ul`
     return props.divider ? "1px solid" : "";
   }};
     border-bottom-color: ${(props) => {
-    return props.divider ? props.theme.palette.grey5 : "";
+    return props.divider ? props.theme.palette.borderLight : "";
   }};
   }
 `;

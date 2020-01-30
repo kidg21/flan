@@ -28,7 +28,7 @@ const BoxContainer = styled.div`
   }};
   border: 1px solid
     ${(props) => {
-    return props.theme.palette.grey5;
+    return props.theme.palette.borderLight;
   }};
   border-radius: 5px;
 
@@ -39,13 +39,13 @@ const BoxContainer = styled.div`
 
   ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0.5px 0 0px ${(props) => {
-    return props.theme.palette.grey5;
+    return props.theme.palette.borderLight;
   }};
   }
 
   ::-webkit-scrollbar-thumb {
     background-color: ${(props) => {
-    return props.theme.palette.primary;
+    return props.theme.palette.action;
   }};
     border-radius: 20px;
   }
@@ -54,14 +54,14 @@ const BoxContainer = styled.div`
 
 ::-webkit-scrollbar-track:horizontal {
   -webkit-box-shadow: inset 0.5px 0 0px ${(props) => {
-    return props.theme.palette.grey5;
+    return props.theme.palette.borderLight;
   }};
 }
 
 
 ::-webkit-scrollbar-thumb:horizontal{
   background-color: ${(props) => {
-    return props.theme.palette.primary;
+    return props.theme.palette.action;
   }};
   border-radius: 20px;
 }

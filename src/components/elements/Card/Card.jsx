@@ -26,7 +26,7 @@ const CardSectionWrapper = styled.section`
     return props.theme.text[props.sectionColor] || "";
   }};
   background-color: ${(props) => {
-    return props.theme.background[props.sectionBackground] || "";
+    return props.theme.palette[props.sectionBackground] || "";
   }};
   padding: ${(props) => {
     return props.sectionPadding || "0.5em 1em";
@@ -84,7 +84,7 @@ const CardWrapper = styled.div`
   }};
   flex: none;
   background-color: ${(props) => {
-    return props.cardBackground ? props.theme.background[props.cardBackground] : props.theme.background.default;
+    return props.cardBackground ? props.theme.palette[props.cardBackground] : props.theme.background.default;
   }};
   padding: ${(props) => {
     return props.cardPadding || "";

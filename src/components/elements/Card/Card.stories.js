@@ -149,14 +149,9 @@ storiesOf("Elements|Card", module)
             onClick: action("Command Five Clicked"),
           },
         ]}
-        more={<Button label="Button" type="solid" color="secondary" fullWidth />}
+        more={<Button label="Button" type="solid" color="success" fullWidth />}
         onClick={action("Primary Action Area Clicked")}
       >
-        {/* Any type of child content is supported */}
-        {/* <CardSection onClick={action("Secondary Action Area Clicked")}>
-          <Button label="Button" type="solid" />
-          <Button label="Button" type="solid" />
-        </CardSection> */}
       </Card>
     );
   })
@@ -226,7 +221,7 @@ storiesOf("Elements|Card", module)
           boolean("more", false, "Options") &&
           array(
             "extra content",
-            [<Button label="Button" type="solid" color="secondary" fullWidth />],
+            [<Button label="Button" type="solid" color="success" fullWidth />],
             "Options",
           )
         }

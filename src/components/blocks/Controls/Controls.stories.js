@@ -148,9 +148,9 @@ storiesOf("Blocks|Controls", module)
   .add("Types", () => {
     return (
       <Controls>
-        <Control label="Control" type="secondary" isSelected />
-        <Control label="Control" type="secondary" />
-        <Control label="Control" type="secondary" />
+        <Control label="Control" type="success" isSelected />
+        <Control label="Control" type="success" />
+        <Control label="Control" type="success" />
       </Controls>
     );
   });

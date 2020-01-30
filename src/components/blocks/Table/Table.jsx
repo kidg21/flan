@@ -53,7 +53,7 @@ export const CellWrapper = styled.div`
   padding: 0.5em 1em;
   color: ${(props) => {
     if (props.isHeader) {
-      return props.theme.text.dark;
+      return props.theme.text.primary;
     } else if (props.isSelected) {
       return props.theme.text.inverse;
     }
@@ -64,17 +64,17 @@ export const CellWrapper = styled.div`
   }};
   font-family: ${(props) => { return props.isHeader ? props.theme.typography.primary : props.theme.typography.secondary; }};
   border-bottom: ${(props) => {
-    return props.isHeader ? `2px solid ${props.theme.palette.grey5}` : `1px solid ${props.theme.palette.grey5}`;
+    return props.isHeader ? `2px solid ${props.theme.palette.borderLight}` : `1px solid ${props.theme.palette.borderLight}`;
   }};
   background-color: ${(props) => {
     if (props.isHeader) {
       return props.theme.background.app;
     }
     if (props.isHighlighted) {
-      return props.theme.palette.grey6;
+      return props.theme.palette.borderTint;
     }
     if (props.isSelected) {
-      return props.theme.palette.secondary;
+      return props.theme.palette.success;
     }
     return props.theme.background.default;
   }};

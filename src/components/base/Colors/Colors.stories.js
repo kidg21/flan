@@ -32,22 +32,18 @@ export const Brand = () => {
 
 export const Primary = () => {
   return (
-    <Grid columns="3">
-      <ThemeColors color="primaryTint" />
-      <ThemeColors color="primaryLight" />
-      <ThemeColors color="primary" />
-      <ThemeColors color="primaryDark" />
-      <ThemeColors color="secondaryTint" />
-      <ThemeColors color="secondaryLight" />
-      <ThemeColors color="secondary" />
-      <ThemeColors color="secondaryDark" />
+    <Grid columns="4">
+      <ThemeColors color="actionTint" />
+      <ThemeColors color="actionLight" />
+      <ThemeColors color="action" />
+      <ThemeColors color="actionDark" />
     </Grid>
   );
 };
 
 export const Secondary = () => {
   return (
-    <Grid columns="3">
+    <Grid columns="5">
       <ThemeColors color="infoTint" />
       <ThemeColors color="infoLight" />
       <ThemeColors color="infoBright" />
@@ -74,7 +70,7 @@ export const Secondary = () => {
 
 export const Neutral = () => {
   return (
-    <Grid columns="3">
+    <Grid columns="5">
       <Colors color="grey10" />
       <Colors color="grey20" />
       <Colors color="grey30" />

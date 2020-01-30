@@ -12,7 +12,7 @@ import Text, { Link, Title } from "base/Typography";
 
 const StyledBanner = styled(Card)`
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.grey3;
+    return props.theme.palette[props.borderColor] || props.theme.palette.border;
   }};
 `;
 

@@ -119,7 +119,7 @@ storiesOf("Layout |App Layout/", module)
     return (
       <Layout>
         <Layout width="70%" />
-        <Layout width="30%" right="0" backgroundColor="lightyellow" />
+        <Layout width="30%" right="0" />
       </Layout>
     );
   })
@@ -128,7 +128,7 @@ storiesOf("Layout |App Layout/", module)
     return (
       <Layout>
         <Layout height="60%" />
-        <Layout height="40%" top="60%" backgroundColor="lightgreen" />
+        <Layout height="40%" top="60%" />
       </Layout>
     );
   })
@@ -141,9 +141,8 @@ storiesOf("Layout |App Layout/", module)
           width="70%"
           height="40%"
           top="60%"
-          backgroundColor="lightgreen"
         />
-        <Layout width="30%" right="0" backgroundColor="lightyellow" />
+        <Layout width="30%" right="0" />
       </Layout>
     );
   })

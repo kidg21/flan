@@ -179,27 +179,21 @@ function Button({
       tintColor = "infoTint";
       shadeColor = "infoDark";
       break;
-    case "primary":
-      buttonColor = "primary";
+    case "action":
+      buttonColor = "action";
       fontColor = buttonColor;
-      tintColor = "primaryTint";
-      shadeColor = "primaryDark";
-      break;
-    case "secondary":
-      buttonColor = "secondary";
-      fontColor = buttonColor;
-      tintColor = "secondaryTint";
-      shadeColor = "secondaryDark";
+      tintColor = "actionTint";
+      shadeColor = "actionDark";
       break;
     case "grey":
-      buttonColor = "grey";
+      buttonColor = "disabled";
       fontColor = buttonColor;
       break;
     default:
-      buttonColor = "primary";
+      buttonColor = "action";
       fontColor = buttonColor;
-      tintColor = "primaryTint";
-      shadeColor = "primaryDark";
+      tintColor = "actionTint";
+      shadeColor = "actionDark";
       break;
   }
 
@@ -219,7 +213,7 @@ function Button({
   }
 
   if (solid) {
-    fontColor = "white";
+    fontColor = "inverse";
     borderColor = buttonColor;
     hoverColor = shadeColor;
     backgroundColor = buttonColor;
@@ -235,10 +229,10 @@ function Button({
   }
 
   if (isDisabled) {
-    fontColor = "white";
+    fontColor = "inverse";
     borderWidth = "1px";
     borderStyle = "solid";
-    backgroundColor = "grey4";
+    backgroundColor = "disabled";
     borderColor = backgroundColor;
   }
 

@@ -12,8 +12,7 @@ const knobGroups = ["Button (CSF)", "Group 2"];
 const buttonLabel = "Button Label";
 const buttonTypes = ["standard", "solid", "inline", "underlined"];
 const buttonColors = [
-  "primary",
-  "secondary",
+  "action",
   "info",
   "success",
   "warning",
@@ -61,7 +60,6 @@ export const Color = () => {
   return (
     <Grid>
       <Button label="Standard Button" />
-      <Button label="Secondary Button" color="secondary" />
       <Button label="Info Button" color="info" />
       <Button label="Success Button" color="success" />
       <Button label="Warning Button" color="warning" />
