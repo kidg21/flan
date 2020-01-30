@@ -50,7 +50,7 @@ function DialogBox({
         </ButtonGrid >);
     } else if (buttons.length === 1) {
       buttonElements = (
-        <FirstButton
+        <SecondButton
           label={buttons[0].label}
           onClick={buttons[0].onClick}
           disabled={buttons[0].disabled}
