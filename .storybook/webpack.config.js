@@ -9,6 +9,7 @@
 const path = require("path");
 
 module.exports = ({ config, mode }) => {
+  config.target = "node";
   // Extend defaultConfig as you need.
   config.module.rules.push({
     test: /\.(js|jsx)$/,
