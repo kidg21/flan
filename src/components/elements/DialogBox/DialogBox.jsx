@@ -13,11 +13,11 @@ grid-template-areas: 'blank one two';
 `;
 
 
-const FirstButton = styled(Button)`
+const PrimaryButton = styled(Button)`
 grid-area: one;
 `;
 
-const SecondButton = styled(Button)`
+const SecondaryButton = styled(Button)`
 grid-area: two;
 `;
 
@@ -34,13 +34,13 @@ function DialogBox({
       // Multiple buttons
       buttonElements = (
         <ButtonGrid columns="3">
-          <FirstButton
+          <PrimaryButton
             label={buttons[0].label}
             onClick={buttons[0].onClick}
             disabled={buttons[0].disabled}
             type={buttons[0].type}
           />
-          <SecondButton
+          <SecondaryButton
             label={buttons[1].label}
             onClick={buttons[1].onClick}
             disabled={buttons[1].disabled}
@@ -50,7 +50,7 @@ function DialogBox({
         </ButtonGrid >);
     } else if (buttons.length === 1) {
       buttonElements = (
-        <SecondButton
+        <SecondaryButton
           label={buttons[0].label}
           onClick={buttons[0].onClick}
           disabled={buttons[0].disabled}
