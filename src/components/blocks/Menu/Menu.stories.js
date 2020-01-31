@@ -29,7 +29,6 @@ const data = [
       console.log("clicked Share");
     },
     label: "Share",
-    disabled: true,
   },
   {
     id: "d",

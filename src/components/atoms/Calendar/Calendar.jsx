@@ -46,18 +46,18 @@ function Calendar({
   if (isDisabled) {
     inputTextColor = "disabled";
     inputFillColor = "disabled";
-    inputBorderColor = "borderLight";
+    inputBorderColor = "neutral40";
   } else if (error) {
     inputTextColor = "alert";
-    inputBorderColor = "alert";
-    inputBorderColorHover = "alert";
-    inputSelectColor = "borderBright";
+    inputBorderColor = "alert80";
+    inputBorderColorHover = "alert80";
+    inputSelectColor = "neutral60";
     if (typeof error === "string") errorText = error;
   } else if (warning) {
     inputTextColor = "warning";
-    inputBorderColor = "warning";
-    inputBorderColorHover = "warning";
-    inputSelectColor = "borderBright";
+    inputBorderColor = "warning80";
+    inputBorderColorHover = "warning80";
+    inputSelectColor = "neutral60";
     errorText = warning;
   }
 

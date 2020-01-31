@@ -32,11 +32,12 @@ export const Brand = () => {
 
 export const Primary = () => {
   return (
-    <Grid columns="4">
-      <ThemeColors color="actionTint" />
-      <ThemeColors color="actionLight" />
-      <ThemeColors color="action" />
-      <ThemeColors color="actionDark" />
+    <Grid columns="5">
+      <ThemeColors color="action20" />
+      <ThemeColors color="action40" />
+      <ThemeColors color="action60" />
+      <ThemeColors color="action80" />
+      <ThemeColors color="action100" />
     </Grid>
   );
 };
@@ -44,26 +45,26 @@ export const Primary = () => {
 export const Secondary = () => {
   return (
     <Grid columns="5">
-      <ThemeColors color="infoTint" />
-      <ThemeColors color="infoLight" />
-      <ThemeColors color="infoBright" />
-      <ThemeColors color="info" />
-      <ThemeColors color="infoDark" />
-      <ThemeColors color="successTint" />
-      <ThemeColors color="successLight" />
-      <ThemeColors color="successBright" />
-      <ThemeColors color="success" />
-      <ThemeColors color="successDark" />
-      <ThemeColors color="warningTint" />
-      <ThemeColors color="warningLight" />
-      <ThemeColors color="warningBright" />
-      <ThemeColors color="warning" />
-      <ThemeColors color="warningDark" />
-      <ThemeColors color="alertTint" />
-      <ThemeColors color="alertLight" />
-      <ThemeColors color="alertBright" />
-      <ThemeColors color="alert" />
-      <ThemeColors color="alertDark" />
+      <ThemeColors color="info20" />
+      <ThemeColors color="info40" />
+      <ThemeColors color="info60" />
+      <ThemeColors color="info80" />
+      <ThemeColors color="info100" />
+      <ThemeColors color="success20" />
+      <ThemeColors color="success40" />
+      <ThemeColors color="success60" />
+      <ThemeColors color="success80" />
+      <ThemeColors color="success100" />
+      <ThemeColors color="warning20" />
+      <ThemeColors color="warning40" />
+      <ThemeColors color="warning60" />
+      <ThemeColors color="warning80" />
+      <ThemeColors color="warning100" />
+      <ThemeColors color="alert20" />
+      <ThemeColors color="alert40" />
+      <ThemeColors color="alert60" />
+      <ThemeColors color="alert80" />
+      <ThemeColors color="alert100" />
     </Grid>
   );
 };

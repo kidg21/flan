@@ -156,40 +156,40 @@ function Button({
 
   switch (type && type.toLowerCase()) {
     case "success":
-      buttonColor = "success";
+      buttonColor = "success80";
       fontColor = buttonColor;
-      tintColor = "successTint";
-      shadeColor = "successDark";
+      tintColor = "success20";
+      shadeColor = "success100";
       break;
     case "warning":
-      buttonColor = "warning";
+      buttonColor = "warning80";
       fontColor = buttonColor;
-      tintColor = "warningTint";
-      shadeColor = "warningDark";
+      tintColor = "warning20";
+      shadeColor = "warning100";
       break;
     case "alert":
-      buttonColor = "alert";
+      buttonColor = "alert80";
       fontColor = buttonColor;
-      tintColor = "alertTint";
-      shadeColor = "alertDark";
+      tintColor = "alert20";
+      shadeColor = "alert100";
       break;
     case "info":
-      buttonColor = "info";
+      buttonColor = "info80";
       fontColor = buttonColor;
-      tintColor = "infoTint";
-      shadeColor = "infoDark";
+      tintColor = "info20";
+      shadeColor = "info100";
       break;
     case "action":
-      buttonColor = "action";
+      buttonColor = "action80";
       fontColor = buttonColor;
-      tintColor = "actionTint";
-      shadeColor = "actionDark";
+      tintColor = "action20";
+      shadeColor = "action100";
       break;
     default:
-      buttonColor = "action";
+      buttonColor = "action80";
       fontColor = buttonColor;
-      tintColor = "actionTint";
-      shadeColor = "actionDark";
+      tintColor = "action20";
+      shadeColor = "action100";
       break;
   }
 

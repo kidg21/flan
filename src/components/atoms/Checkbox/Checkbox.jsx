@@ -45,7 +45,7 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
     );
   }};
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.borderDark;
+    return props.theme.palette[props.borderColor] || props.theme.palette.neutral80;
   }};
   width: 1rem;
   height: 1rem;
@@ -57,19 +57,19 @@ const CheckboxInput = styled.input.attrs({ type: "checkbox" })`
     background-color: ${(props) => {
     return (
       props.theme.palette[props.fillColorChecked] ||
-      props.theme.palette.successLight
+      props.theme.palette.selectedLight
     );
   }};
     border-color: ${(props) => {
     return (
-      props.theme.palette[props.borderColor] || props.theme.palette.success
+      props.theme.palette[props.borderColor] || props.theme.palette.selected
     );
   }};
   }
   &:focus {
     outline-color: ${(props) => {
     return (
-      props.theme.palette[props.outlineColor] || props.theme.palette.success
+      props.theme.palette[props.outlineColor] || props.theme.palette.selected
     );
   }};
   }
@@ -104,25 +104,25 @@ function Checkbox({
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
-    borderColor = "border";
-    fillColor = "borderLight";
-    fillColorChecked = "borderLight";
+    borderColor = "neutral80";
+    fillColor = "neutral40";
+    fillColorChecked = "neutral40";
     inputTextColor = "disabled";
     tabIndex = "-1";
   } else if (error) {
-    borderColor = "alert";
-    borderColorChecked = "alert";
-    fillColor = "alertBright";
-    fillColorChecked = "alertBright";
+    borderColor = "alert80";
+    borderColorChecked = "alert80";
+    fillColor = "alert60";
+    fillColorChecked = "alert60";
     inputTextColor = "alert";
-    outlineColor = "alertBright";
+    outlineColor = "alert60";
   } else if (warning) {
-    borderColor = "warning";
-    borderColorChecked = "warning";
-    fillColor = "warningBright";
-    fillColorChecked = "warningBright";
+    borderColor = "warning80";
+    borderColorChecked = "warning80";
+    fillColor = "warning60";
+    fillColorChecked = "warning60";
     inputTextColor = "warning";
-    outlineColor = "warningBright";
+    outlineColor = "warning60";
   }
 
   switch (align) {

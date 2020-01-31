@@ -13,7 +13,7 @@ const ThemeColorBlockColor = styled.div`
   margin: 5px;
   border: 1px solid
     ${(props) => {
-    return props.theme.palette.border;
+    return props.theme.palette.neutral80;
   }};
 
   background-color: ${(props) => {
@@ -37,7 +37,7 @@ const ColorBlockColor = styled.div`
   margin: 5px;
   border: 1px solid
     ${(props) => {
-    return props.theme.palette.border;
+    return props.theme.palette.neutral80;
   }};
 
   background-color: ${(props) => {

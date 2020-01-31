@@ -15,7 +15,7 @@ function PropertyPanelHeader({
         padding="3x"
         contentAlign="center"
         leftWidth="min-content"
-        left={<Icon icon="directions" size="2x" type="actionLight" onClick={onClick} />}
+        left={<Icon icon="directions" size="2x" type="action40" onClick={onClick} />}
         centerAlign="left"
         center={<Title text={title} size="large" />}
         rightWidth="min-content"

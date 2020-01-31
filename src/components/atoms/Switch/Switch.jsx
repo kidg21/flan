@@ -21,7 +21,7 @@ const SwitchContainer = styled.div`
     return props.theme.text[props.inputTextColor] || "";
   }};
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.border;
+    return props.theme.palette[props.borderColor] || props.theme.palette.neutral80;
   }};
   line-height: initial;
   &[disabled],
@@ -38,17 +38,17 @@ const StyledSwitch = styled.div`
   width: 2.2rem;
   border: 1px solid;
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.border;
+    return props.theme.palette[props.borderColor] || props.theme.palette.neutral80;
   }};
   border-radius: 1rem;
   background-color: ${(props) => {
-    return props.theme.palette[props.fillColor] || props.theme.background.default;
+    return props.theme.palette[props.fillColor] || props.theme.palette.neutral80;
   }};
   cursor: pointer;
   &[disabled],
   &[readonly] {
     background-color: ${(props) => {
-    return props.disabled ? props.theme.palette.borderLight : "";
+    return props.disabled ? props.theme.palette.neutral60 : "";
   }};
   }
 `;
@@ -56,12 +56,12 @@ const StyledSwitch = styled.div`
 const Circle = styled.div`
   background: ${(props) => {
     return props.disabled
-      ? props.theme.palette.borderLight
+      ? props.theme.palette.neutral40
       : props.theme.palette.inverse;
   }};
   border: 1px solid;
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.borderDark;
+    return props.theme.palette[props.borderColor] || props.theme.palette.neutral80;
   }};
   width: 1rem;
   height: 1rem;
@@ -90,13 +90,13 @@ function Switch({
   let alignInput;
   if (isDisabled) {
     inputTextColor = "disabled";
-    fillColor = "borderLight";
-    borderColor = "border";
+    fillColor = "neutral60";
+    borderColor = "neutral60";
   }
   if (error && !isDisabled) {
     inputTextColor = "alert";
-    fillColor = "alertBright";
-    borderColor = "alert";
+    fillColor = "alert60";
+    borderColor = "alert80";
   }
   switch (align) {
     case "right":
@@ -116,8 +116,8 @@ function Switch({
     };
   }
   if (isChecked && !error) {
-    fillColor = "successLight";
-    borderColor = "success";
+    fillColor = "selectedLight";
+    borderColor = "selected";
   }
   return (
     <SwitchContainer

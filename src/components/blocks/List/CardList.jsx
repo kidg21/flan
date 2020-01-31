@@ -12,7 +12,7 @@ const GridWrapper = styled.div`
 const CellWrapper = styled.div`
   align-items: center;
   color: ${(props) => { return props.theme.text.primary; }};
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid ${(props) => { return props.theme.palette.neutral40; }};
   background-color: ${(props) => {
     if (props.isHighlighted) {
       return "#f0f5fb";

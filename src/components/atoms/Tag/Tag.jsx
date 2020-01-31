@@ -53,34 +53,34 @@ function Tag({
 
   switch (type) {
     case "info":
-      badgeColor = "info";
+      badgeColor = "info80";
       break;
     case "success":
-      badgeColor = "success";
+      badgeColor = "success80";
       break;
     case "warning":
-      badgeColor = "warning";
+      badgeColor = "warning80";
       break;
     case "alert":
-      badgeColor = "alert";
+      badgeColor = "alert80";
       break;
     case "blue":
-      badgeColor = "actionLight";
+      badgeColor = "action40";
       break;
     case "lightgreen":
-      badgeColor = "successLight";
+      badgeColor = "success40";
       break;
     case "green":
-      badgeColor = "success";
+      badgeColor = "success80";
       break;
     case "darkgreen":
-      badgeColor = "successDark";
+      badgeColor = "success100";
       break;
     case "darkblue":
-      badgeColor = "actionDark";
+      badgeColor = "action100";
       break;
     default:
-      badgeColor = "action";
+      badgeColor = "action80";
       break;
   }
 

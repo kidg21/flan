@@ -174,10 +174,10 @@ const iconHash = {
 };
 
 const colorHash = {
-  info: "info",
-  success: "success",
-  warning: "warning",
-  alert: "alert",
+  info: "info80",
+  success: "success80",
+  warning: "warning80",
+  alert: "alert80",
 };
 
 function Icon({

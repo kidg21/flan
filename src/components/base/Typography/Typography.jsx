@@ -24,7 +24,7 @@ const StyledLabel = styled.label`
   }};
   content: "*";
   color: ${(props) => {
-    return props.theme.palette.alert;
+    return props.theme.palette.alert80;
   }};
   font-size: ${(props) => { return props.fontSize; }};
   line-height: ${(props) => { return props.lineHeight; }};

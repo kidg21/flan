@@ -83,13 +83,13 @@ const PanelSection = styled(PanelBody)`
   overflow: hidden;
   z-index: 1;
   &:first-of-type {
-    border-bottom: ${(props) => {
-    return props.theme.borders.border;
+    border-bottom: 1px solid ${(props) => {
+    return props.theme.palette.neutral60;
   }};
   }
   &:last-of-type {
-    border-top: ${(props) => {
-    return props.theme.borders.border;
+    border-top: 1px solid ${(props) => {
+    return props.theme.palette.neutral60;
   }};
   }
 `;

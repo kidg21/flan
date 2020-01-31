@@ -77,32 +77,32 @@ function Avatar({
   };
 
 
-  let backgroundColor = type ? (typeHash[type] || type.toLowerCase()) : "actionLight";
+  let backgroundColor = type ? (typeHash[type] || type.toLowerCase()) : "action40";
   let textColor = type ? `${type.toLowerCase()}Tint` : "inverse";
 
   switch (type && type.toLowerCase()) {
     case "success":
-      backgroundColor = "success";
-      textColor = "successTint";
+      backgroundColor = "success80";
+      textColor = "success20";
       break;
     case "warning":
-      backgroundColor = "warning";
-      textColor = "warningTint";
+      backgroundColor = "warning80";
+      textColor = "warning20";
       break;
     case "alert":
-      backgroundColor = "alert";
-      textColor = "alertTint";
+      backgroundColor = "alert80";
+      textColor = "alert20";
       break;
     case "info":
-      backgroundColor = "info";
-      textColor = "infoTint";
+      backgroundColor = "info80";
+      textColor = "info20";
       break;
     case "action":
-      backgroundColor = "action";
-      textColor = "actionTint";
+      backgroundColor = "action80";
+      textColor = "action20";
       break;
     default:
-      backgroundColor = "actionLight";
+      backgroundColor = "action40";
       textColor = "inverse";
       break;
   }

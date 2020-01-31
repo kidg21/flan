@@ -143,16 +143,6 @@ storiesOf("Blocks|Controls", module)
         <Control label="Control" icon="user" />
       </Controls>
     );
-  })
-
-  .add("Types", () => {
-    return (
-      <Controls>
-        <Control label="Control" type="success" isSelected />
-        <Control label="Control" type="success" />
-        <Control label="Control" type="success" />
-      </Controls>
-    );
   });
 
 storiesOf("Blocks|Controls", module)
