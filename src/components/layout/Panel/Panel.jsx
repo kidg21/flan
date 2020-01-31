@@ -17,9 +17,6 @@ const PanelWrapper = styled.div`
   max-height: 100vh;
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
-  filter: ${(props) => {
-    return props.theme.shadows.shadow0;
-  }};
   /* Prototype Content - displays when a Panel Section is empty */
   &:empty {
     &:before {
@@ -41,9 +38,6 @@ const SectionWrapper = styled.section`
   z-index: 0;
   overflow-y: auto;
   max-height: 100vh;
-  filter: ${(props) => {
-    return props.theme.shadows.shadow0;
-  }};
   /* Prototype Content - displays when a Panel Section is empty */
   &:empty {
     &:before {
