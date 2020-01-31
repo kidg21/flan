@@ -32,7 +32,7 @@ const TagContainer = styled.div`
 `;
 
 function Tag({
-  id, label, icon, style, type,
+  id, label, icon, style, type, brand,
 }) {
   let badgeColor;
   let badgeTextColor;
@@ -69,6 +69,26 @@ function Tag({
       break;
   }
 
+  if (!type) {
+    if (brand === "research") {
+      badgeColor = "research";
+    } if (brand === "bi") {
+      badgeColor = "bi";
+    } if (brand === "jobs") {
+      badgeColor = "jobs";
+    } if (brand === "broker") {
+      badgeColor = "broker";
+    } if (brand === "brand1") {
+      badgeColor = "brand1";
+    } if (brand === "brand2") {
+      badgeColor = "brand2";
+    } if (brand === "brand3") {
+      badgeColor = "brand3";
+    } if (brand === "brand4") {
+      badgeColor = "brand4";
+    } else { null; }
+  }
+
 
   return (
     <TagContainer
@@ -89,6 +109,7 @@ Tag.propTypes = {
   id: PropTypes.string,
   label: PropTypes.string,
   type: PropTypes.string,
+  brand: PropTypes.string,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   style: PropTypes.string,
 };
@@ -96,6 +117,7 @@ Tag.propTypes = {
 Tag.defaultProps = {
   label: null,
   id: null,
+  brand: null,
   type: null,
   icon: null,
   style: null,
