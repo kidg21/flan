@@ -7,6 +7,7 @@ import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
 import { withA11y } from "@storybook/addon-a11y";
 import { configureActions } from "@storybook/addon-actions";
 import { DocsPage, DocsContainer } from "@storybook/addon-docs/blocks";
+import { withConsole, setConsoleOptions } from '@storybook/addon-console';
 import { configure as configureEnzyme } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 
@@ -109,5 +110,11 @@ configureActions({
   // Limit the number of items logged into the actions panel
   limit: 20
 });
+
+// Consolde logging in 'Actions' panel
+addDecorator((storyFn, context) => withConsole()(storyFn)(context));
+// setConsoleOptions({
+//   panelExclude: [],
+// });
 
 configureEnzyme({ adapter: new Adapter() });
