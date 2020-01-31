@@ -20,11 +20,12 @@ module.exports = {
       },
     },
     '@storybook/addon-viewport',
+    '@storybook/addon-links/register',
+    '@storybook/addon-backgrounds/register',
     '@storybook/addon-storysource',
     '@storybook/addon-knobs',
     '@storybook/addon-a11y',
     '@storybook/addon-actions',
     'storybook-addon-specifications',
-    // '@storybook/addon-links',
   ],
 };
