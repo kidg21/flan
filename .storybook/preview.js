@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { configure, addParameters, addDecorator } from "@storybook/react";
+import { addParameters, addDecorator } from "@storybook/react";
 import { DMPTheme, darkTheme } from "Variables";
 import { ThemeProvider } from "styled-components";
 import FlanTheme from "./FlanTheme";
@@ -106,58 +106,4 @@ configureActions({
   limit: 20
 });
 
-// Load Stories
-const base = require.context(
-  "../src/components/base",
-  true,
-  /\.stories\.(js|mdx)$/
-);
-const utils = require.context(
-  "../src/components/utils",
-  true,
-  /\.stories\.(js|mdx)$/
-);
-const intro = require.context(
-  "../src/attributes",
-  true,
-  // /\.stories\.(js|mdx)$/
-  /\.stories\.(mdx)$/
-);
-const atoms = require.context(
-  "../src/components/atoms",
-  true,
-  // /\.stories\.(js|mdx)$/
-  /\.stories\.(mdx)$/
-);
-const blocks = require.context(
-  "../src/components/blocks",
-  true,
-  /\.stories\.(js|mdx)$/
-  // /\.stories\.(mdx)$/
-);
-const elements = require.context(
-  "../src/components/elements",
-  true,
-  /\.stories\.(js|mdx)$/
-);
-const layout = require.context(
-  "../src/components/layout",
-  true,
-  /\.stories\.(js|mdx)$/
-);
-const templates = require.context(
-  "../src/components/templates",
-  true,
-  /\.stories\.(js|mdx)$/
-);
-const work = require.context(
-  "../src/components/work",
-  true,
-  /\.stories\.(js|mdx)$/
-);
-
 configureEnzyme({ adapter: new Adapter() });
-configure(
-  [intro, base, utils, atoms, blocks, elements, layout, templates, work],
-  module
-);
