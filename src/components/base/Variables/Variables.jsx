@@ -132,7 +132,7 @@ export const DMPTheme = {
   },
   text: {
     alert: colors.red80,
-    disabled: colors.grey70,
+    disabled: colors.grey50,
     inverse: colors.white60,
     link: colors.blue80,
     primary: colors.grey100,
