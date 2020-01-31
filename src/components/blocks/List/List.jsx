@@ -31,7 +31,7 @@ const ListItemWrapper = styled.li`
     return props.isSelected ? props.theme.text.inverse : props.theme.text.primary;
   }};
   background-color: ${(props) => {
-    return props.isSelected ? props.theme.background.inverse : props.theme.background.default;
+    return props.isSelected ? props.theme.palette.primary : props.theme.background.default;
   }};
   padding: 1em;
   cursor: ${(props) => {
