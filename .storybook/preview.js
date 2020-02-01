@@ -113,8 +113,8 @@ configureActions({
 
 // Consolde logging in 'Actions' panel
 addDecorator((storyFn, context) => withConsole()(storyFn)(context));
-// setConsoleOptions({
-//   panelExclude: [],
-// });
+setConsoleOptions({
+  panelExclude: [],
+});
 
 configureEnzyme({ adapter: new Adapter() });
