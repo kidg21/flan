@@ -3,7 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import Bar from "blocks/Bar";
-import Text, { Title } from "base/Typography";
+import { Title } from "base/Typography";
 import Menu from "blocks/Menu";
 
 function NavigationPanelHeader({
@@ -14,8 +14,10 @@ function NavigationPanelHeader({
       <Bar
         contentAlign="center"
         padding="3x"
-        left={<Icon icon="left" size="lg" type="standard" onClick={onClick} />}
-        center={<Title text={title} size="large" />}
+        leftWidth="min-content"
+        centerAlign="left"
+        left={<Icon icon="left" onClick={onClick} />}
+        center={<Title text={title} size="2x" weight="bold" />}
         right={<Menu data={menuData} position="bottomLeft" type="edit" />}
       />
     </React.Fragment>

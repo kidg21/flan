@@ -3,7 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import Bar from "blocks/Bar";
-import Text, { Title } from "base/Typography";
+import { Title } from "base/Typography";
 import Menu from "blocks/Menu";
 
 function PropertyPanelHeader({
@@ -17,7 +17,7 @@ function PropertyPanelHeader({
         leftWidth="min-content"
         left={<Icon icon="directions" size="2x" type="action40" onClick={onClick} />}
         centerAlign="left"
-        center={<Title text={title} size="large" />}
+        center={<Title text={title} size="2x" weight="bold" />}
         rightWidth="min-content"
         right={<Menu data={menuData} position="bottomLeft" type="edit" />}
       />

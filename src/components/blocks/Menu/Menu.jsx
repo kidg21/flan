@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import styled from "styled-components";
-import Text, { Title } from "base/Typography";
 import Card from "elements/Card";
 import List, { ListItem } from "blocks/List";
 
@@ -23,6 +22,15 @@ const ListWrapper = styled(List)`
   }};
   overflow-x: hidden;
   overflow-y: auto;
+  border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
+  }};
+  padding: ${(props) => {
+    return props.cardPadding || "";
+  }};
+    filter: ${(props) => {
+    return props.theme.shadows.shadow1;
+  }};
 `;
 
 const ItemWrapper = styled.li`
@@ -103,7 +111,7 @@ function MenuComponent({
       onClick={onClick}
       onMouseLeave={closeMenu}
     >
-      <Card shadow="2x">
+      <Card shadow="1x">
         <ListWrapper interactive>
           {data.map((item) => {
             // nested submenu

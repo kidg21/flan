@@ -185,6 +185,7 @@ function Icon({
   className,
   disabled,
   badge,
+  brand,
   fixedWidth,
   flip,
   icon,
@@ -205,6 +206,27 @@ function Icon({
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) color = "disabled";
   else if (onClick) color = "link";
+
+
+  if (!type) {
+    if (brand === "research") {
+      color = "research";
+    } if (brand === "bi") {
+      color = "bi";
+    } if (brand === "jobs") {
+      color = "jobs";
+    } if (brand === "broker") {
+      color = "broker";
+    } if (brand === "brand1") {
+      color = "brand1";
+    } if (brand === "brand2") {
+      color = "brand2";
+    } if (brand === "brand3") {
+      color = "brand3";
+    } if (brand === "brand4") {
+      color = "brand4";
+    } else { null; }
+  }
 
 
   const styledIcon = (
@@ -268,6 +290,7 @@ Icon.propTypes = {
   /** Options: 'info', 'success', 'warning', 'alert' */
   badge: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   disabled: PropTypes.bool,
+  brand: PropTypes.string,
   /** Used to set one or more icons to the same fixed width.
     * Good for vertically aligning a series of icons
     */
@@ -299,6 +322,7 @@ Icon.defaultProps = {
   disabled: null,
   fixedWidth: false,
   flip: null,
+  brand: null,
   icon: null,
   id: null,
   onClick: null,

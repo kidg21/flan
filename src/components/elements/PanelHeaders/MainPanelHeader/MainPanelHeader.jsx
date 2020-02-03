@@ -2,7 +2,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Bar from "blocks/Bar";
-import Text, { Title } from "base/Typography";
+import { Title } from "base/Typography";
 import Menu from "blocks/Menu";
 
 function MainPanelHeader({
@@ -13,7 +13,7 @@ function MainPanelHeader({
       <Bar
         contentAlign="center"
         padding="3x"
-        left={<Title text={title} size="large" />}
+        left={<Title text={title} size="2x" weight="bold" />}
         right={menuData ? <Menu data={menuData} position="bottomLeft" type="edit" /> : null}
       />
     </React.Fragment>
@@ -23,7 +23,7 @@ function MainPanelHeader({
 MainPanelHeader.propTypes = {
   id: PropTypes.string,
   title: PropTypes.node.isRequired,
-  style: PropTypes.object,
+  style: PropTypes.node,
   menuData: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
     label: PropTypes.string,
