@@ -14,8 +14,8 @@ import styled from "styled-components";
 export const MultiGridWrapper = styled.div`
   width: 100%;
   height: 100%;
-  border: ${(props) => {
-    return props.theme.borders.border;
+  border: 1px solid ${(props) => {
+    return props.theme.palette.grey5;
   }};
   overflow: hidden;
   .ReactVirtualized__Grid {

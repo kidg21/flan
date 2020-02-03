@@ -1,8 +1,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-
-import Panel from "layout/Panel";
+import { FullScreen, Padding } from "helpers/Display";
 import Form, { Section } from "layout/Form";
 import TextInput from "atoms/TextInput";
 import { CheckboxGroup } from "atoms/Checkbox";
@@ -92,9 +91,11 @@ const options = [
   { value: "cookie dough", label: "Cookie Dough" },
 ];
 
-storiesOf("Layout|Form", module).add("Form Layout", () => {
-  return (
-    <Panel>
+storiesOf("Layout|Form", module)
+  .addDecorator(FullScreen)
+  .addDecorator(Padding)
+  .add("Form Layout", () => {
+    return (
       <Form
         title="Form Header"
         subtitle="This is the subtitle"
@@ -140,6 +141,5 @@ storiesOf("Layout|Form", module).add("Form Layout", () => {
           <RadioGroup data={longRadios} columns="1" />
         </Section>
       </Form>
-    </Panel>
-  );
-});
+    );
+  });
