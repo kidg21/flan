@@ -9,7 +9,7 @@ import { Spacer } from "helpers/Display.jsx";
 import { Darken } from "Variables";
 import Grid from "layout/Grid";
 import Bar from "blocks/Bar";
-import { Headline, SubTitle, Body } from "base/Typography";
+import Text, { Title } from "base/Typography";
 import Icon from "atoms/Icon";
 import Command from "atoms/Command";
 import Image from "atoms/Image";
@@ -17,6 +17,7 @@ import Avatar from "atoms/Avatar";
 import Menu from "blocks/Menu";
 import Expander from "utils/Expander";
 import { DisableTransitionContext } from "States";
+import mime from "mime";
 
 const CardSectionWrapper = styled.section`
   position: relative;
@@ -52,8 +53,6 @@ const CardSectionWrapper = styled.section`
   }
 `;
 
-const mime = require("mime");
-
 const Media = styled(CardSectionWrapper)`
   height: ${(props) => {
     return props.image ? "12em" : "";
@@ -68,6 +67,7 @@ const Media = styled(CardSectionWrapper)`
 const CardImage = styled(Image)`
   object-fit: cover;
   width: 100%;
+  max-width: inherit;
   height: 100%;
 `;
 
@@ -197,8 +197,8 @@ function ExpandingSection({
             centerAlign="left"
             center={
               <React.Fragment>
-                {title ? <Headline text={title} /> : null}
-                {description ? <SubTitle text={description} /> : null}
+                {title ? <Title text={title} /> : null}
+                {description ? <Text text={description} /> : null}
               </React.Fragment>
             }
             rightWidth="max-content"
@@ -361,8 +361,8 @@ function Card({
           centerAlign="left"
           center={
             <React.Fragment>
-              {title ? <Headline text={title} /> : null}
-              {description ? <SubTitle text={description} /> : null}
+              {title ? <Title text={title} /> : null}
+              {description ? <Text text={description} /> : null}
             </React.Fragment>
           }
         />
@@ -445,11 +445,8 @@ function Card({
       // Currently redundant to the 'else' case
       // but captured should we need to handle
       // supported mime-types in a specific way
-    } else if
-      (
-      mimeType.startsWith("text") ||
-      mimeType.startsWith("application")
-    ) {
+    } else if (mimeType.startsWith("text")
+      || mimeType.startsWith("application")) {
       mediaSection = (
         <Media>
           <iframe src={media} title={mediaDesc || `Media: ${media}`} width="100%" frameBorder="0" allow="fullscreen" allowFullScreen />
@@ -489,11 +486,7 @@ function Card({
           rightWidth="10%"
           right={
             // More than 2 Commands sends overflow to Menu
-            commands.length > 2 ? (
-              <Menu data={commands.slice(2)} position="topLeft" />
-            ) : (
-                <Spacer />
-              )
+            commands.length > 2 ? <Menu data={commands.slice(2)} position="topLeft" /> : <Spacer />
           }
         />
       );
@@ -529,7 +522,7 @@ function Card({
       {headerSection}
       {body ? (
         <CardSection onClick={onClick}>
-          <Body text={body} />
+          <Text text={body} />
         </CardSection>
       ) : null}
       {children}

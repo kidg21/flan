@@ -14,8 +14,8 @@ import styled from "styled-components";
 export const MultiGridWrapper = styled.div`
   width: 100%;
   height: 100%;
-  border: ${(props) => {
-    return props.theme.borders.border;
+  border: 1px solid ${(props) => {
+    return props.theme.palette.grey5;
   }};
   overflow: hidden;
   .ReactVirtualized__Grid {
@@ -60,9 +60,9 @@ export const CellWrapper = styled.div`
     return props.theme.text.primary;
   }};
   font-weight: ${(props) => {
-    return props.isHeader ? "700" : "600";
+    return props.isHeader ? "600" : "400";
   }};
-  letter-spacing: 1px;
+  font-family: ${(props) => { return props.isHeader ? props.theme.typography.primary : props.theme.typography.secondary; }};
   border-bottom: ${(props) => {
     return props.isHeader ? `2px solid ${props.theme.palette.grey5}` : `1px solid ${props.theme.palette.grey5}`;
   }};
@@ -406,7 +406,7 @@ class Table extends Component {
 }
 
 Table.propTypes = {
-  columnWidth: PropTypes.oneOf(PropTypes.number, PropTypes.func),
+  columnWidth: PropTypes.number,
   focusedRow: PropTypes.number,
   highlightedCell: PropTypes.shape({
     columnIndex: PropTypes.number,
@@ -424,7 +424,7 @@ Table.propTypes = {
   onHeaderClick: PropTypes.func,
   onHeaderMouseOut: PropTypes.func,
   onHeaderMouseOver: PropTypes.func,
-  rowHeight: PropTypes.oneOf(PropTypes.number, PropTypes.func),
+  rowHeight: PropTypes.number,
   scrollToAlignment: PropTypes.string,
   scrollTop: PropTypes.number,
   scrollTopChanged: PropTypes.func,

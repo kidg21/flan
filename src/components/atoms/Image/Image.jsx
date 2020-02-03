@@ -8,7 +8,9 @@ const ImageWrapper = styled.img`
   width: ${(props) => {
     return props.width || "inherit";
   }};
+  max-width: fit-content;
   height: auto;
+  max-height: fit-content;
   border-radius: ${(props) => {
     return props.circle ? "100%" : "";
   }};
@@ -43,8 +45,8 @@ Image.propTypes = {
   circle: PropTypes.bool,
   className: PropTypes.string,
   onClick: PropTypes.func,
-  src: PropTypes.string,
-  width: PropTypes.number,
+  src: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+  width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 Image.defaultProps = {
   border: false,

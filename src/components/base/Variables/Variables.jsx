@@ -1,6 +1,14 @@
 /* eslint-disable linebreak-style */
 import { css } from "styled-components";
 
+
+export const fonts = {
+  headline: "Nunito, Arial, sans-serif",
+  body: "Nunito, Arial, sans-serif",
+  data: "Lato, Arial, sans-serif",
+  numbers: "Nunito, sans-serif",
+};
+
 // Codes for color palette
 export const colors = {
   // legacy values
@@ -220,6 +228,10 @@ export const borders = {
 };
 
 export const DMPTheme = {
+  typography: {
+    primary: fonts.body,
+    secondary: fonts.data,
+  },
   background: {
     active: colors.greenLight,
     alert: colors.red,
@@ -304,6 +316,10 @@ export const DMPTheme = {
 };
 
 export const darkTheme = {
+  typography: {
+    primary: fonts.body,
+    secondary: fonts.headline,
+  },
   background: {
     active: colors.green,
     alert: colors.redDark,
@@ -415,21 +431,14 @@ export const Lighten = css`
   filter: brightness(115%) saturate(80%) ;
 `;
 
-// Typefaces
-export const fonts = {
-  headline: "Muli, Arial, sans-serif",
-  body: "Muli, Arial, sans-serif",
-  data: "Muli, Arial, sans-serif",
-  numbers: "Lato, sans-serif",
-};
 
 // Sizes for typography scale
 export const fontSize = {
-  base: "12px",
+  base: "14px",
 };
 
 // Media Queries
-const viewport = {
+export const viewport = {
   small: "640px",
   medium: "641px",
   large: "1025px",
@@ -437,8 +446,8 @@ const viewport = {
   xxlarge: "1921px",
 };
 export const screen = {
-  small: `only screen and(max - width: ${viewport.small})`,
-  medium: `only screen and(min - width: ${viewport.medium})`,
+  small: `only screen and(max-width: ${viewport.small})`,
+  medium: `only screen and(min-width: ${viewport.medium})`,
   // medium: `only screen and(min - width: ${
   //   viewport.medium
   // }) and (orientation: portrait)`,

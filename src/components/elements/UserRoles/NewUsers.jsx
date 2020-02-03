@@ -17,7 +17,7 @@ function NewUsers({ columns, users }) {
         right={<Button label="+Add User" />}
         leftWidth="30%"
       />
-      <Table columns={columns} data={users} scroll header setHeight="200px" />
+      {/* <Table columns={columns} data={users} scroll header setHeight="200px" /> */}
     </Panel>
   );
 }

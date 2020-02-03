@@ -1,180 +1,103 @@
 /* eslint-disable linebreak-style */
 import React from "react";
+import styled from "styled-components";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
 import Button from "atoms/Button";
-import Title from "base/Typography";
-import Card from "elements/Card";
-import Bar from "blocks/Bar";
+import Card, { CardSection } from "elements/Card";
+
+const ButtonGrid = styled(Grid)`
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-areas: 'blank one two';
+
+`;
+
+
+const PrimaryButton = styled(Button)`
+grid-area: one;
+`;
+
+const SecondaryButton = styled(Button)`
+grid-area: two;
+`;
 
 function DialogBox({
   id,
-  header,
   title,
-  message,
+  body,
   children,
-  buttonColor,
   buttons,
 }) {
   let buttonElements = null;
   if (buttons) {
-    if (buttons.length > 1) {
+    if (buttons.length === 2) {
       // Multiple buttons
       buttonElements = (
-        <Bar
-          rightWidth="50%"
-          right={
-            <Grid columns={buttons.length}>
-              {buttons.map((button, index) => {
-                return (
-                  <Button
-                    label={button.label}
-                    onClick={button.onClick}
-                    type={button.type || button.type}
-                    disabled={button.disabled}
-                  />
-                );
-              })}
-            </Grid>
-          }
-        />
-      );
-    } else {
-      // Single button
+        <ButtonGrid columns="3">
+          <PrimaryButton
+            label={buttons[0].label}
+            onClick={buttons[0].onClick}
+            disabled={buttons[0].disabled}
+            type={buttons[0].type}
+          />
+          <SecondaryButton
+            label={buttons[1].label}
+            onClick={buttons[1].onClick}
+            disabled={buttons[1].disabled}
+            type={buttons[1].type}
+            solid
+          />
+        </ButtonGrid >);
+    } else if (buttons.length === 1) {
       buttonElements = (
-        <Bar
-          center={
-            <Button
-              label={buttons[0].label}
-              type={buttons[0].type}
-              onClick={buttons[0].onClick}
-              color={buttons[0].color || buttonColor}
-              disabled={buttons[0].disabled}
-            />
-          }
+        <SecondaryButton
+          label={buttons[0].label}
+          onClick={buttons[0].onClick}
+          disabled={buttons[0].disabled}
+          type={buttons[0].type}
         />
       );
     }
   }
 
   return (
-    <Card id={id} padding="1em">
-      {header ? <React.Fragment>{header}</React.Fragment> : null}
-      <Bar left={<Title text={title} />} />
-      {message ? <Bar left={<Title text={message} weight="light" />} /> : null}
-      {children ? <Bar left={children} /> : null}
-      {buttonElements ? <React.Fragment>{buttonElements}</React.Fragment> : null}
+    <Card
+      id={id}
+      title={title}
+      body={body}
+    >
+      {children ? <CardSection>{children}</CardSection> : null}
+      {buttonElements ? <CardSection>{buttonElements}</CardSection> : null}
     </Card>
   );
 }
 
-const buttonType = PropTypes.shape({
-  label: PropTypes.string,
-  type: PropTypes.string,
-  color: PropTypes.string,
-  disabled: PropTypes.bool,
-  onClick: PropTypes.func,
-});
-
-const dialogProps = {
-  id: PropTypes.string,
-  title: PropTypes.node,
-  message: PropTypes.node,
-  buttonColor: PropTypes.string,
-};
 
 DialogBox.propTypes = {
-  ...dialogProps,
   id: PropTypes.string,
-  header: PropTypes.node,
-  children: PropTypes.node,
   title: PropTypes.node,
-  message: PropTypes.node,
-  buttonColor: PropTypes.string,
-  buttons: PropTypes.arrayOf(buttonType),
+  body: PropTypes.node,
+  children: PropTypes.node,
+  buttons: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string,
+    label: PropTypes.string,
+    onClick: PropTypes.func,
+    disabled: PropTypes.bool,
+    type: PropTypes.string,
+  })),
 };
-
 DialogBox.defaultProps = {
   id: null,
-  header: null,
-  children: null,
   title: null,
-  message: null,
-  buttonColor: null,
-  buttons: null,
-};
-
-function Prompt({
-  accept, cancel, buttons, children, ...props
-}) {
-  const promptButtons = cancel ? [accept, cancel] : accept;
-  return (
-    <DialogBox buttons={promptButtons} {...props}>
-      {children}
-    </DialogBox>
-  );
-}
-
-Prompt.propTypes = {
-  ...dialogProps,
-  accept: buttonType,
-  cancel: buttonType,
-  children: PropTypes.node,
-};
-
-Prompt.defaultProps = {
+  body: null,
   children: null,
-  accept: { label: "OK" },
-  cancel: null,
+  buttons: PropTypes.arrayOf(PropTypes.shape({
+    id: null,
+    label: null,
+    onClick: null,
+    disabled: null,
+    type: null,
+  })),
 };
 
-function Confirm({
-  id, title, message, buttonColor, accept, cancel,
-}) {
-  const buttons = cancel ? [accept, cancel] : accept;
-  return (
-    <DialogBox
-      id={id}
-      title={title}
-      message={message}
-      buttonColor={buttonColor}
-      buttons={buttons}
-    />
-  );
-}
-
-Confirm.propTypes = {
-  ...dialogProps,
-  accept: buttonType,
-  cancel: buttonType,
-};
-
-Confirm.defaultProps = {
-  accept: { label: "OK" },
-  cancel: { label: "Cancel" },
-};
-
-function Alert({
-  id, title, message, buttonColor, accept,
-}) {
-  return (
-    <DialogBox
-      id={id}
-      title={title}
-      message={message}
-      buttonColor={buttonColor}
-      buttons={[accept]}
-    />
-  );
-}
-
-Alert.propTypes = {
-  ...dialogProps,
-  accept: buttonType,
-};
-
-Alert.defaultProps = {
-  accept: { label: "OK", color: "alert" },
-};
-
-export { DialogBox as default, Alert, Confirm, Prompt };
+export default DialogBox;

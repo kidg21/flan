@@ -12,7 +12,6 @@ const PanelWrapper = styled.div`
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  align-content: stretch;
   width: 100%;
   height: 100%;
   max-height: 100vh;
@@ -43,7 +42,7 @@ const SectionWrapper = styled.section`
   &:empty {
     &:before {
       ${PlaceholderText};
-      content: "Header / Footer";
+      content: "Panel Body";
       color: ${(props) => {
     return props.theme.text.primary;
   }};
@@ -77,8 +76,16 @@ const PanelSection = styled(PanelBody)`
   padding: 0;
   overflow: hidden;
   z-index: 1;
-  /** TODO: change to variable once 'Card' branch is merged */
-  border: 1px solid hsl(240,11%,91%);
+  &:first-of-type {
+    border-bottom: 1px solid ${(props) => {
+    return props.theme.palette.grey5;
+  }};
+  }
+  &:last-of-type {
+    border-top: 1px solid ${(props) => {
+    return props.theme.palette.grey5;
+  }};
+  }
 `;
 function Panel({
   id, children, footer, header,

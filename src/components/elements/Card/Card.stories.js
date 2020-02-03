@@ -7,9 +7,9 @@ import Image from "atoms/Image";
 import ModernExterior1 from "images/residential/modern exterior 1.jpg";
 import ModernExterior2 from "images/residential/modern exterior 2.jpg";
 import ModernExterior3 from "images/residential/modern exterior 3.jpg";
-import Card, { CardSection, CardGrid } from "elements/Card";
+import Card, { CardGrid } from "elements/Card";
 import Grid from "layout/Grid";
-import Title, { Description } from "base/Typography";
+import Text, { Title } from "base/Typography";
 import MediaBlock from "blocks/MediaBlock";
 import Button from "atoms/Button";
 
@@ -41,7 +41,7 @@ const data = [
           body={
             <React.Fragment>
               <Title text="Media Block" />
-              <Description text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. " />
+              <Text text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. " />
             </React.Fragment>
           }
         />
@@ -290,7 +290,6 @@ storiesOf("Elements|Card", module)
           "Media",
         )}
         mediaDesc={
-          boolean("media description", false, "Media") &&
           text("media description", "Media Description", "Media")
         }
       />

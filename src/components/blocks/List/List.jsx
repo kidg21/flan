@@ -8,7 +8,7 @@ import Tag from "atoms/Tag";
 import Avatar from "atoms/Avatar";
 import Checkbox from "atoms/Checkbox";
 import Switch from "atoms/Switch";
-import Title, { Description } from "base/Typography";
+import Text, { Title } from "base/Typography";
 import { InteractiveContext, DisabledContext } from "States";
 
 const ListWrapper = styled.ul`
@@ -31,7 +31,7 @@ const ListItemWrapper = styled.li`
     return props.isSelected ? props.theme.text.inverse : props.theme.text.primary;
   }};
   background-color: ${(props) => {
-    return props.isSelected ? props.theme.background.inverse : props.theme.background.default;
+    return props.isSelected ? props.theme.palette.primary : props.theme.background.default;
   }};
   padding: 1em;
   cursor: ${(props) => {
@@ -106,7 +106,7 @@ function ListItem({
   const centerContent = (
     <React.Fragment>
       <Title text={title} disabled={disabled} />
-      {description ? (<Description text={description} disabled={disabled} />
+      {description ? (<Text text={description} disabled={disabled} />
       ) : null}
     </React.Fragment>
   );

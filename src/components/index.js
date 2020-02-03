@@ -2,17 +2,16 @@
 /* eslint-disable react/jsx-filename-extension */
 // Publicly exported files from 'base'
 export {
-  default as Title,
-  SubTitle,
-  Description,
+  default as Text,
+  Title,
   Link,
-  Number,
+  Label,
 } from "./base/Typography";
 export { default as GlobalStyles } from "./base/GlobalStyles/GlobalStyles.jsx";
 
 // Publicly exported files from 'atoms'
 export { default as Avatar } from "./atoms/Avatar";
-export { default as Label } from "./atoms/Label";
+export { default as Loader } from "./atoms/Loader";
 export { default as Badge } from "./atoms/Badge";
 export { default as Button } from "./atoms/Button";
 export { default as Calendar } from "./atoms/Calendar";
@@ -50,22 +49,20 @@ export { default as Card, CardSection, CardGrid } from "./elements/Card";
 export { default as MainPanelHeader } from "./elements/PanelHeaders/MainPanelHeader";
 export { default as PropertyPanelHeader } from "./elements/PanelHeaders/PropertyPanelHeader";
 export { default as NavigationPanelHeader } from "./elements/PanelHeaders/NavigationPanelHeader";
+export { default as ProgressBar, Step } from "./elements/Progress";
 export { default as Notification } from "./elements/Notification";
 export { UserRoles, RolePermissions } from "./elements/UserRoles";
-export {
-  default as Dialog,
-  Alert,
-  Confirm,
-  Prompt,
-} from "./elements/DialogBox";
+export { default as Dialog } from "./elements/DialogBox";
 
 // Publicly exported files from 'layout'
 export { default as Form, Section } from "./layout/Form";
+export { default as Flex } from "./layout/Flex";
 export { default as Grid } from "./layout/Grid";
 export { default as Layout } from "./layout/Layout";
 export { default as Modal } from "./layout/Modal";
 export { default as Page } from "./layout/Page";
 export { default as Panel } from "./layout/Panel";
+export { default as Template } from "./layout/Template";
 
 export { default as Expander } from "./utils/Expander";
 

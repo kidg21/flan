@@ -5,7 +5,7 @@ import { screen } from "Variables";
 import { PlaceholderText } from "helpers";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
-import { Description } from "base/Typography";
+import { Title } from "base/Typography";
 
 /** TODO: Add these to an 'Animation' library...also, create 'Animation' library */
 const fadeIn = keyframes`
@@ -181,7 +181,7 @@ function Modal({
   if (text) {
     modalContent = (
       <ContentWrapper onClick={onClick} style={style}>
-        <Description text={text} type="inverse" />
+        <Title text={text} type="inverse" />
       </ContentWrapper>
     );
   } else if (image) {

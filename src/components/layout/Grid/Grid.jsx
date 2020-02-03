@@ -2,15 +2,19 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import { viewport } from "Variables";
 
 const GridWrapper = styled.section`
   display: grid;
   grid-gap: ${(props) => {
     return props.gap || "1rem";
   }};
-  grid-template-columns: ${(props) => {
-    return props.columns || "repeat(auto-fill, minmax(22rem, 1fr))";
+  grid-template-columns: 1fr;
+  @media(min-width: ${viewport.medium}) {
+    grid-template-columns: ${(props) => {
+    return props.columns || "repeat(auto-fill, minmax(18rem, 1fr))";
   }};
+  }
   grid-template-rows: ${(props) => {
     return props.rows || "auto";
   }};
