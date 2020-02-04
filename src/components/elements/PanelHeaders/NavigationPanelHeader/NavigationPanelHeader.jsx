@@ -10,8 +10,9 @@ function NavigationPanelHeader({
   id, title, onClick, menuData,
 }) {
   return (
-    <React.Fragment id={id}>
+    <React.Fragment>
       <Bar
+        id={id}
         contentAlign="center"
         padding="3x"
         left={<Icon icon="left" size="lg" type="standard" onClick={onClick} />}

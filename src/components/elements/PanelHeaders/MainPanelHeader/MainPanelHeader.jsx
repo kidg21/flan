@@ -9,8 +9,9 @@ function MainPanelHeader({
   id, title, style, menuData,
 }) {
   return (
-    <React.Fragment id={id} style={style}>
+    <React.Fragment style={style}>
       <Bar
+        id={id}
         contentAlign="center"
         padding="3x"
         left={<Title text={title} size="large" />}
