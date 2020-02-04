@@ -22,6 +22,7 @@ const data = [
       console.log("clicked Save");
     },
     label: "Save",
+    icon: "save",
   },
   {
     id: "b",
@@ -54,123 +55,53 @@ const data = [
   },
 ];
 
-const nestedData = [
-  {
-    id: "a",
-    onClick: () => {
-      console.log(`clicked a`);
-    },
-    label: "Save",
-  },
-  {
-    id: "b",
-    onClick: () => {
-      console.log(`clicked b`);
-    },
-    label: "Filter",
-    commands: [
-      {
-        id: "b.0",
-        onClick: () => {
-          console.log("clicked b.0");
-        },
-        label: "Filter 0.0",
-      },
-      {
-        id: "b.1",
-        onClick: () => {
-          console.log("clicked b.1");
-        },
-        label: "Filter 1.0",
-        commands: [
-          {
-            id: "b.1.0",
-            onClick: () => {
-              console.log("clicked b.1.0");
-            },
-            label: "Filter 1.1.1",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: "c",
-    onClick: () => {
-      console.log(`clicked c`);
-    },
-    label: "Share",
-  },
-  {
-    id: "d",
-    onClick: () => {
-      console.log(`clicked d`);
-    },
-    label: "Refresh",
-  },
-  {
-    id: "e",
-    onClick: () => {
-      console.log(`clicked e`);
-    },
-    label: "Layer",
-  },
-  {
-    id: "f",
-    onClick: () => {
-      console.log(`clicked b`);
-    },
-    label: "Filter 2",
-    commands: [
-      {
-        id: "f.0",
-        onClick: () => {
-          console.log("clicked b.0");
-        },
-        label: "Filter 0.0",
-      },
-      {
-        id: "f.1",
-        onClick: () => {
-          console.log("clicked b.1");
-        },
-        label: "Filter 1.0",
-      },
-    ],
-  },
-];
-
 storiesOf("Blocks|Menu", module)
   .addDecorator(Padding)
   .addDecorator(withInfo)
-  // .add("Trial", () => <TrialMenu />)
   .add("Documentation", () => {
-    const story = (
+    return (
       <Card>
         <Bar right={<Menu id="menu-story" data={data} position="bottomLeft" />} />
       </Card>
     );
+  })
+  .add("Directions", () => {
+    return (
+      <Grid columns="3">
+        <Menu id="menu-bottomRight" data={data} position="bottomRight" />
+        <Menu id="menu-bottomCenter" data={data} position="bottomCenter" />
+        <Menu id="menu-bottomLeft" data={data} position="bottomLeft" />
+        <Menu id="menu-topRight" data={data} position="topRight" />
+        <Menu id="menu-topCenter" data={data} position="topCenter" />
+        <Menu id="menu-topLeft" data={data} position="topLeft" />
+      </Grid>
+    );
+  })
+  .add("Nested Menu Example", () => {
+    const spyClick = spy(() => { });
+    const testData = [{
+      id: "a",
+      label: "A",
+      icon: "save",
+      onClick: spyClick,
+    }, {
+      id: "b",
+      label: "B",
+      onClick: spyClick,
+      disabled: true,
+    }, {
+      id: "c",
+      label: "C",
+      commands: [{ id: "c0", label: "C0", onClick: spyClick }, { id: "c1", label: "C1" }],
+    }];
+
+    const story = <Menu id="menu-test" data={testData} />;
 
     specs(() => {
       let output;
-      const spyClick = spy(() => { });
-      const testData = [{
-        id: "a",
-        label: "A",
-        onClick: spyClick,
-      }, {
-        id: "b",
-        label: "B",
-        onClick: spyClick,
-        disabled: true,
-      }, {
-        id: "c",
-        label: "C",
-        commands: [{ id: "c0", label: "C0", onClick: spyClick }, { id: "c1", label: "C1" }],
-      }];
       return describe("Menu Tests", () => {
         before(() => {
-          output = mount(<Menu id="menu-test" data={testData} />, {
+          output = mount(story, {
             wrappingComponent: ThemeProvider,
             wrappingComponentProps: { theme: DMPTheme },
           });
@@ -185,76 +116,93 @@ storiesOf("Blocks|Menu", module)
         });
 
         it("should make the menu visible on click", () => {
-          expect(output.find("div#menupopper-menu-test").length).to.equal(0);
+          expect(output.find("div#menupopper-menu-test")).to.have.lengthOf(0);
           output.find("Menu").childAt(0).simulate("click"); // open menu
-          expect(output.find("div#menupopper-menu-test").length).to.equal(1);
-          expect(output.find("Menu").children().length).to.equal(2);
+          expect(output.find("div#menupopper-menu-test")).to.have.lengthOf(1);
+          expect(output.find("Menu").children()).to.have.lengthOf(2);
         });
 
         it("should create list items from the data prop", () => {
-          expect(output.find("li").length).to.equal(3);
+          expect(output.find("li")).to.have.lengthOf(3);
           for (let i = 0; i < testData.length; i++) {
             const item = output.find(`li#item-${testData[i].id}`).childAt(0);
-            expect(item.prop("title")).to.equal(testData[i].label);
-            expect(item.prop("disabled")).to.equal(!!testData[i].disabled);
+            expect(item.props()).to.deep.include({
+              title: testData[i].label,
+              disabled: !!testData[i].disabled,
+              pre: { icon: testData[i].icon },
+            });
           }
         });
 
         it("should close when clicking outside the menu", () => {
           output.find("Menu").childAt(0).simulate("click"); // close menu
-          expect(output.find("div#menupopper-menu-test").length).to.equal(0);
-          expect(output.find("Menu").children().length).to.equal(1);
+          expect(output.find("div#menupopper-menu-test")).to.have.lengthOf(0);
+          expect(output.find("Menu").children()).to.have.lengthOf(1);
         });
 
         it("should change the open direction", () => {
           output.find("Menu").childAt(0).simulate("click"); // open menu
           let menu = output.find("#menu-test").at(1);
-          expect(menu.prop("transform")).to.equal("");
-          expect(menu.prop("submenuDirection")).to.equal("right");
+          expect(menu.props()).to.include({
+            transform: "",
+            submenuDirection: "right",
+          });
 
           output.setProps({ position: "topLeft" });
           menu = output.find("#menu-test").at(1);
-          expect(menu.prop("transform")).to.equal("translate(-100%, -110%)");
-          expect(menu.prop("submenuDirection")).to.equal("left");
+          expect(menu.props()).to.include({
+            transform: "translate(-100%, -110%)",
+            submenuDirection: "left",
+          });
 
           output.setProps({ position: "topRight" });
           menu = output.find("#menu-test").at(1);
-          expect(menu.prop("transform")).to.equal("translate(10%, -110%)");
-          expect(menu.prop("submenuDirection")).to.equal("right");
+          expect(menu.props()).to.include({
+            transform: "translate(10%, -110%)",
+            submenuDirection: "right",
+          });
 
           output.setProps({ position: "topCenter" });
           menu = output.find("#menu-test").at(1);
-          expect(menu.prop("transform")).to.equal("translate(-50%, -110%)");
-          expect(menu.prop("submenuDirection")).to.equal("right");
+          expect(menu.props()).to.include({
+            transform: "translate(-50%, -110%)",
+            submenuDirection: "right",
+          });
 
           output.setProps({ position: "bottomLeft" });
           menu = output.find("#menu-test").at(1);
-          expect(menu.prop("transform")).to.equal("translate(-100%, -5%)");
-          expect(menu.prop("submenuDirection")).to.equal("left");
+          expect(menu.props()).to.include({
+            transform: "translate(-100%, -5%)",
+            submenuDirection: "left",
+          });
 
           output.setProps({ position: "bottomCenter" });
           menu = output.find("#menu-test").at(1);
-          expect(menu.prop("transform")).to.equal("translate(-45%, -5%)");
-          expect(menu.prop("submenuDirection")).to.equal("right");
+          expect(menu.props()).to.include({
+            transform: "translate(-45%, -5%)",
+            submenuDirection: "right",
+          });
 
           output.setProps({ position: "bottomRight" });
           menu = output.find("#menu-test").at(1);
-          expect(menu.prop("transform")).to.equal("");
-          expect(menu.prop("submenuDirection")).to.equal("right");
+          expect(menu.props()).to.include({
+            transform: "",
+            submenuDirection: "right",
+          });
         });
 
         it("should click an entry and close the menu", () => {
           output.find("li#item-a").simulate("click"); // close menu
-          expect(output.find("div#menupopper-menu-test").length).to.equal(0);
-          expect(output.find("Menu").children().length).to.equal(1);
+          expect(output.find("div#menupopper-menu-test")).to.have.lengthOf(0);
+          expect(output.find("Menu").children()).to.have.lengthOf(1);
           expect(spyClick.withArgs("a").callCount).to.equal(1);
         });
 
         it("should not call onClick on a disabled entry", () => {
           output.find("Menu").childAt(0).simulate("click"); // open menu
           output.find("li#item-b").simulate("click"); // close menu
-          expect(output.find("div#menupopper-menu-test").length).to.equal(0);
-          expect(output.find("Menu").children().length).to.equal(1);
+          expect(output.find("div#menupopper-menu-test")).to.have.lengthOf(0);
+          expect(output.find("Menu").children()).to.have.lengthOf(1);
           expect(spyClick.withArgs("b").callCount).to.equal(0);
         });
 
@@ -279,43 +227,29 @@ storiesOf("Blocks|Menu", module)
             },
           });
           output.update();
-          expect(output.find("div#menupopper-c").length).to.equal(1);
-          expect(output.find("ul#listwrapper-c").children().length).to.equal(2);
+          expect(output.find("div#menupopper-c")).to.have.lengthOf(1);
+          expect(output.find("ul#listwrapper-c").children()).to.have.lengthOf(2);
           let item = output.find("li#item-c0");
-          expect(item.length).to.equal(1);
+          expect(item).to.have.lengthOf(1);
           expect(item.childAt(0).prop("title")).to.equal(testData[2].commands[0].label);
           item = output.find("li#item-c1");
-          expect(item.length).to.equal(1);
+          expect(item).to.have.lengthOf(1);
           expect(item.childAt(0).prop("title")).to.equal(testData[2].commands[1].label);
         });
 
         it("should click a nested entry and close all menus", () => {
           output.find("li#item-c0").simulate("click");
-          expect(output.find("div#menupopper-menu-test").length).to.equal(0);
-          expect(output.find("Menu").children().length).to.equal(1);
+          expect(output.find("div#menupopper-menu-test")).to.have.lengthOf(0);
+          expect(output.find("Menu").children()).to.have.lengthOf(1);
           expect(spyClick.withArgs("c0").callCount).to.equal(1);
         });
       });
     });
-    return story;
-  })
-  .add("Directions", () => {
-    return (
-      <Grid columns="3">
-        <Menu id="menu-bottomRight" data={data} position="bottomRight" />
-        <Menu id="menu-bottomCenter" data={data} position="bottomCenter" />
-        <Menu id="menu-bottomLeft" data={data} position="bottomLeft" />
-        <Menu id="menu-topRight" data={data} position="topRight" />
-        <Menu id="menu-topCenter" data={data} position="topCenter" />
-        <Menu id="menu-topLeft" data={data} position="topLeft" />
-      </Grid>
-    );
-  })
-  .add("Nested Menu Example", () => {
+
     return (
       <Card>
         <Bar
-          center={<Menu id="menu-nested" data={nestedData} position="bottomRight" />}
+          center={story}
         />
       </Card>
     );

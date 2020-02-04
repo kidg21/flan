@@ -121,7 +121,7 @@ function MenuComponent({
                     });
                   }}
                 >
-                  <ListItem as="section" title={item.label} disabled={item.disabled} />
+                  <ListItem as="section" title={item.label} disabled={item.disabled} pre={{ icon: item.icon }} />
                   {activeItem && activeItem.id === item.id ? (
                     <MenuComponent
                       id={item.id}
@@ -150,7 +150,7 @@ function MenuComponent({
                 }}
                 onMouseOver={closeMenu}
               >
-                <ListItem as="section" title={item.label} disabled={item.disabled} />
+                <ListItem as="section" title={item.label} disabled={item.disabled} pre={{ icon: item.icon }} />
               </ItemWrapper>);
           })}
         </ListWrapper>
