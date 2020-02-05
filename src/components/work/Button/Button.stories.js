@@ -1,108 +1,58 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import { Padding } from "helpers/Display";
-import { action } from "@storybook/addon-actions";
-import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
 import Grid from "layout/Grid";
 import Button from "atoms/Button";
 
 // Knob Values
 const knobGroups = ["Button (CSF)", "Group 2"];
 const buttonLabel = "Button Label";
-const buttonTypes = ["standard", "solid", "inline", "underlined"];
-const buttonColors = [
-  "primary",
+const buttonTypes = [
+  "standard",
   "secondary",
   "info",
   "success",
   "warning",
   "alert",
 ];
-const buttonSizes = ["small", "standard", "large"];
-const buttonIcons = ["no icon", "user", "down", "bookmark", "plus", "print"];
+const buttonIcons = ["", "user", "down", "bookmark", "plus", "print"];
 
 // CSF format
 export default {
-  title: "Work|Docs/Button (CSF)",
+  title: "Atoms/Button/Tests",
   component: Button,
   parameters: {
-    componentSubtitle:
-      "Buttons allow users to take actions, and make choices, with a single tap.",
-    /** Use to disable DocsPage per component */
-    // parameters: { docs: { page: null } },
+    docs: { page: null },
   },
-  // includeStories: ["Standard", "Knobs", "Actions"],
+  includeStories: ["Knobs", "Actions", "Specs"],
   decorators: [Padding, withKnobs],
 };
-export const Standard = () => {
-  return <Button label="Standard Button" />;
-};
-export const Type = () => {
-  return (
-    <Grid>
-      <Button label="Standard Button" />
-      <Button label="Solid Button" type="solid" />
-      <Button label="Inline Button" type="inline" />
-      <Button label="Underlined Button" type="underlined" />
-    </Grid>
-  );
-};
-export const Size = () => {
-  return (
-    <Grid>
-      <Button label="Small Button" size="small" />
-      <Button label="Standard Button" />
-      <Button label="Large Button" size="large" />
-    </Grid>
-  );
-};
-export const Color = () => {
-  return (
-    <Grid>
-      <Button label="Standard Button" />
-      <Button label="Secondary Button" color="secondary" />
-      <Button label="Info Button" color="info" />
-      <Button label="Success Button" color="success" />
-      <Button label="Warning Button" color="warning" />
-      <Button label="Alert Button" color="alert" />
-    </Grid>
-  );
-};
-export const Icons = () => {
-  return (
-    <Grid>
-      <Button label="Profile" icon="user" />
-      <Button label="Expand" icon="down" />
-      <Button label="Bookmark" icon="bookmark" />
-      <Button label="Add" icon="plus" />
-      <Button label="Print" icon="print" />
-    </Grid>
-  );
-};
+
 export const Knobs = () => {
   const label = text("label", buttonLabel, knobGroups[0]);
   const type = select("type", buttonTypes, buttonTypes[0], knobGroups[0]);
-  const color = select("color", buttonColors, buttonColors[0], knobGroups[0]);
-  const size = select("size", buttonSizes, buttonSizes[1], knobGroups[0]);
   const icon = select("icon", buttonIcons, buttonIcons[0], knobGroups[0]);
+  const count = text("count", "", knobGroups[0]);
   return (
     <Button
       label={label}
       type={type}
-      color={color}
-      size={size}
       icon={icon}
+      count={count}
+      solid={boolean("solid", false, knobGroups[0])}
+      round={boolean("round", false, knobGroups[0])}
+      underlined={boolean("underlined", false, knobGroups[0])}
+      plain={boolean("plain", false, knobGroups[0])}
       fullWidth={boolean("full width", false, knobGroups[0])}
       disabled={boolean("disabled", false, knobGroups[0])}
+      vertical={boolean("vertical", false, knobGroups[0])}
     />
   );
 };
 Knobs.story = {
   parameters: {
-    docs: {
-      storyDescription:
-        "We can add a description for each story to help explain what they represent.  For example, for this 'Knobs' story, you should switch to the 'Canvas' tab to experiment with this story.",
+    parameters: {
+      viewMode: "story",
     },
   },
 };
@@ -111,9 +61,60 @@ export const Actions = () => {
 };
 Actions.story = {
   parameters: {
-    docs: {
-      storyDescription:
-        "This is another story that should be used in the 'Canvas' tab.",
-    },
+    viewMode: "story",
+  },
+};
+export const Specs = () => {
+  const story = (
+    <Grid columns="2">
+      <Button label="Standard Primary" />
+      <Button label="Solid Primary" solid />
+      <Button label="Standard Secondary" color="secondary" />
+      <Button label="Solid Secondary" solid color="secondary" />
+      <Button label="Underline Primary" underlined />
+      <Button
+        label="Underline Secondary"
+        underlined
+        color="secondary"
+      />
+      <Button label="Disabled Button" color="secondary" disabled />
+      <Button label="Disabled Underline" underlined disabled />
+    </Grid>
+  );
+
+  specs(() => {
+    let output = null;
+    return describe("Specs", () => {
+      before(() => {
+        output = mount(<ThemeProvider theme={DMPTheme}>{story}</ThemeProvider>);
+      });
+
+      after(() => {
+        output.unmount();
+      });
+
+      it("Is wrapped by a Two-Column Grid", () => {
+        const grid = output.find("Grid");
+        expect(grid.prop("columns")).to.equal("repeat(2, minmax(0, 1fr))");
+      });
+
+      it("Can render multiple Buttons", () => {
+        const buttons = output.find("button");
+        expect(buttons).to.have.lengthOf(8);
+      });
+
+      it("Accepts a \"label\" prop", () => {
+        const button = output.find("button").first();
+        const label = button.children();
+        expect(label.text()).to.equal("Standard Primary");
+      });
+    });
+  });
+
+  return story;
+};
+Specs.story = {
+  parameters: {
+    viewMode: "story",
   },
 };

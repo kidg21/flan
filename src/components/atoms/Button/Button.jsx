@@ -5,18 +5,14 @@ import styled from "styled-components";
 import { Lighten } from "Variables";
 import { DisabledContext } from "States";
 import PropTypes from "prop-types";
+import Grid from "layout/Grid";
 import Text from "base/Typography";
 import Tag from "atoms/Tag";
 import Icon from "atoms/Icon";
-import Bar from "blocks/Bar";
 import { Skeleton } from "helpers";
 
-// const Text = styled.h4`
-// `;
-
-
 const StyledButton = styled.button`
-display: flex;
+  display: flex;
   flex: auto;
   box-sizing: border-box;
   z-index: 0;
@@ -25,9 +21,7 @@ display: flex;
     return props.fullWidth ? "100%" : "auto";
   }};
   height: 100%;
-  padding: ${(props) => {
-    return props.buttonPadding || "0.5rem 0.7rem";
-  }};
+  padding: 0.5em 0.75em;
   justify-content: center;
   align-items: center;
   color: ${(props) => {
@@ -80,20 +74,15 @@ display: flex;
     return props.hoverBorder || "";
   }};
   }
-
   &:empty {
     ${Skeleton};
     height: 2em;
-    weight: 8rem;
+    width: 8rem;
     border: 1px solid;
-    }};
   }
-}
-
   &:active {
     ${Lighten};
   }
-
   &[disabled] {
     cursor: not-allowed;
     pointer-events: none;
@@ -101,44 +90,35 @@ display: flex;
   }
 `;
 
+const LabelWrapper = styled(Grid)`
+  grid-gap: ${(props) => {
+    return props.vertical ? "0.25rem" : "0.5rem";
+  }};
+  align-items: center;
+  justify-items: ${(props) => {
+    return props.vertical ? "center" : "";
+  }};
+  width: auto;
+`;
+
 StyledButton.displayName = "Button";
-
-
-/**
- * ( This documentaion is written using 'JSdoc'. This method allows us to use comments written in the Component file. )
- *
- * Usage
- *
- * Buttons communicate actions that users can take. They are typically placed throughout your UI, in places like:
- *
-- Dialogs
-- Modal windows
-- Forms
-- Cards
-- Toolbars
-  *
-  * Principles
-  *
-- Identifiable: Buttons should indicate that they can trigger an action.
-- Findable: Buttons should be easy to find among other elements, including other buttons.
-- Clear: A button’s action and state should be clear.
-* */
 
 function Button({
   className,
-  type,
   count,
   disabled,
-  htmlFor,
   fullWidth,
+  htmlFor,
   icon,
   id,
   label,
   onClick,
-  round,
   plain,
-  underlined,
+  round,
   solid,
+  type,
+  underlined,
+  vertical,
 }) {
   let backgroundColor;
   let borderRadius;
@@ -147,7 +127,6 @@ function Button({
   let borderStyle;
   let borderColor;
   let buttonColor;
-  let buttonPadding;
   let fontColor;
   let fontWeight;
   let shadeColor;
@@ -203,10 +182,11 @@ function Button({
       break;
   }
 
-
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-
+  if (round) {
+    borderRadius = "20px";
+  } else {
+    borderRadius = "4px";
+  }
 
   if (underlined) {
     borderWidth = "0 0 2px 0";
@@ -223,104 +203,101 @@ function Button({
     borderColor = buttonColor;
     hoverColor = shadeColor;
     backgroundColor = buttonColor;
+    borderWidth = "0";
   } else {
     hoverColor = tintColor;
     borderColor = buttonColor;
   }
 
-  if (round) {
-    borderRadius = "20px";
-  } else {
-    borderRadius = "4px";
-  }
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
 
   if (isDisabled) {
-    fontColor = "white";
-    borderWidth = "1px";
-    borderStyle = "solid";
-    backgroundColor = "grey4";
-    borderColor = backgroundColor;
+    fontColor = "grey4";
+    borderColor = "grey4";
+    if (solid) {
+      fontColor = "white";
+      backgroundColor = "grey4";
+    }
   }
 
   let content;
 
+
   if (icon) {
-    if (label) {
-      content = (
-        <Bar
-          contentAlign="center"
-          leftWidth="max-content"
-          centerAlign="left"
-          left={<Icon icon={icon} size="lg" />}
-          center={<Text size="4x" weight="bold" text={label} />}
-        />
-      );
-    }
-  }
-  if (icon) {
+    content = (
+      <LabelWrapper columns="1fr max-content">
+        <Icon icon={icon} />
+        <Text size="4x" weight="bold" text={label} />
+      </LabelWrapper>
+    );
     if (!label) {
       content = (
-        <Bar
-          contentAlign="center"
-          center={<Icon size="4x" icon={icon} size="lg" />}
-        />
+        <LabelWrapper columns="1fr">
+          <Icon icon={icon} size="2x" />
+        </LabelWrapper>
       );
     }
-  } if (icon) {
+    if (vertical) {
+      content = (
+        <LabelWrapper
+          columns="1fr"
+          rows="max-content 1fr"
+          vertical={vertical}
+        >
+          <Icon icon={icon} size="lg" />
+          <Text size="4x" weight="bold" text={label} />
+        </LabelWrapper>
+      );
+    }
     if (count) {
       content = (
-        <Bar
-          contentAlign="center"
-          leftWidth="max-content"
-          rightWidth="max-content"
-          centerAlign="center"
-          left={<Icon icon={icon} size="lg" />}
-          center={<Text size="4x" weight="bold" text={label} />}
-          right={<Tag label={count} />}
-        />
+        <LabelWrapper columns="max-content max-content 1fr">
+          <Icon icon={icon} />
+          <Text size="4x" weight="bold" text={label} />
+          {!isDisabled ? <Tag label={count} /> : null}
+        </LabelWrapper>
       );
     }
   } else if (count) {
     content = (
-      <Bar
-        contentAlign="center"
-        rightWidth="max-content"
-        centerAlign="right"
-        center={<Text size="4x" weight="bold" text={label} />}
-        right={<Tag label={count} />}
-      />
+      <LabelWrapper columns="1fr max-content">
+        <Text size="4x" weight="bold" text={label} />
+        {!isDisabled ? <Tag label={count} /> : null}
+      </LabelWrapper>
     );
   } else {
     content = (
-      <Text weight="bold" size="4x" text={label} />
+      <LabelWrapper columns="1fr">
+        <Text size="4x" weight="bold" text={label} />
+      </LabelWrapper>
     );
   }
 
   return (
     <StyledButton
       backgroundColor={backgroundColor}
-      borderWidth={borderWidth}
-      borderStyle={borderStyle}
-      htmlFor={htmlFor}
-      disabled={isDisabled}
-      borderRadius={borderRadius}
-      hoverColor={hoverColor}
       borderColor={borderColor}
+      borderRadius={borderRadius}
+      borderStyle={borderStyle}
+      borderWidth={borderWidth}
       buttonColor={buttonColor}
-      buttonPadding={buttonPadding}
       className={className}
+      disabled={isDisabled}
       fontColor={fontColor}
       fontWeight={fontWeight}
       fullWidth={fullWidth}
+      hoverColor={hoverColor}
+      htmlFor={htmlFor}
       id={id}
       labelSize={labelSize}
       name={id}
       onClick={onClick}
-      tabIndex={disabled ? "-1" : "1"}
-      underlined={underlined}
       plain={plain}
       round={round}
       solid={solid}
+      tabIndex={disabled ? "-1" : "1"}
+      underlined={underlined}
     >
       {content}
     </StyledButton>
@@ -328,38 +305,40 @@ function Button({
 }
 
 Button.propTypes = {
-  htmlFor: PropTypes.node,
   className: PropTypes.string,
-  type: PropTypes.node,
+  count: PropTypes.string,
   disabled: PropTypes.bool,
   fullWidth: PropTypes.bool,
+  htmlFor: PropTypes.node,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   id: PropTypes.string,
   label: PropTypes.string,
-  count: PropTypes.string,
   onClick: PropTypes.func,
-  round: PropTypes.bool,
-  underlined: PropTypes.bool,
-  solid: PropTypes.bool,
   plain: PropTypes.bool,
+  round: PropTypes.bool,
+  solid: PropTypes.bool,
+  type: PropTypes.node,
+  underlined: PropTypes.bool,
+  vertical: PropTypes.bool,
 
 };
 
 Button.defaultProps = {
   className: null,
-  htmlFor: null,
-  type: null,
+  count: null,
   disabled: false,
   fullWidth: false,
+  htmlFor: null,
   icon: null,
-  count: null,
   id: null,
   label: null,
   onClick: null,
-  round: null,
-  underlined: null,
-  solid: null,
   plain: null,
+  round: null,
+  solid: null,
+  type: null,
+  underlined: null,
+  vertical: null,
 };
 
 export default Button;
