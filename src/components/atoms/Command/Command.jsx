@@ -157,7 +157,7 @@ function Command({
       title={cmd.label} // HTML attribute (display on :hover)
     >
       {cmd.icon ? <CommandIcon icon={cmd.icon} /> : null}
-      <CommandName text={cmd.label} />
+      <h4>{cmd.label}</h4>
     </CommandContainer>
   );
 }
