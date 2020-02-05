@@ -61,6 +61,8 @@ function DataRange({
     if (typeof max.onChange === "function") max.onChange({ min: min.value, max: newMaxValue });
     if (typeof setMaxState === "function") setMaxState(newState);
   }
+  console.log(min);
+  console.log(select);
   return (
     <RangeContainer
       id={id}
@@ -99,7 +101,7 @@ function DataRange({
               options={select.options}
               label={select.label}
               onChangeState={select.onChange}
-              selectOptions={select.selected}
+              // selectOptions={select.selected}
               disabled={isDisabled}
             />
           ) : null
