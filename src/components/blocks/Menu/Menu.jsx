@@ -162,6 +162,7 @@ function MenuComponent({
 MenuComponent.propTypes = {
   data: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
+    icon: PropTypes.string,
     label: PropTypes.string,
     onClick: PropTypes.func,
     onClickLink: PropTypes.func, // deprecated
