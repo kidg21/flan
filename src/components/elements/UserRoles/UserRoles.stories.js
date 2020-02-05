@@ -16,7 +16,7 @@
 //   {
 //     id: "manageRoles",
 //     name: "View / Edit Roles",
-//     onClickLink: () => {
+//     onClick: () => {
 //       alert("Manage Roles!");
 //     },
 //   },
