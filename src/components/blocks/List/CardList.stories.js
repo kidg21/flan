@@ -249,7 +249,7 @@ storiesOf("Blocks|CardList", module)
             height={number("height", 300)}
             columnCount={columnCount}
             columnWidth={columnWidth}
-            width={number("width", null)}
+            width={number("width", 0)}
             rowHeight={rowHeight}
             onCellMouseEnter={(e, highlightIndex) => {
               setHighlightedCell(highlightIndex);
@@ -350,17 +350,23 @@ storiesOf("Blocks|CardList", module)
         it("should have a default columnCount of 1 & rowCount of 50", () => {
           expect(output.find("cardList").prop("columnCount")).to.equal(1);
           const cardList = output.find("cardList").instance();
-          expect(cardList.columnCount).to.equal(1);
-          expect(cardList.rowCount).to.equal(50);
+          expect(cardList).to.include({
+            columnCount: 1,
+            rowCount: 50,
+          });
         });
 
         it("should update the columnCount to 2", () => {
           output.setProps(resetProps);
           output.setProps({ columnCount: 2 });
           const cardList = output.find("cardList").instance();
-          expect(cardList.columnCount).to.equal(2);
-          expect(cardList.rowCount).to.equal(25);
-          expect(cardList._grid.props.columnWidth).to.equal(50);
+          expect(cardList).to.include({
+            columnCount: 2,
+            rowCount: 25,
+          });
+          expect(cardList._grid.props).to.include({
+            columnWidth: 50,
+          });
         });
 
         it("should get the cell info of index 6 when columnCount is 2", () => {
@@ -368,11 +374,13 @@ storiesOf("Blocks|CardList", module)
           output.setProps({ columnCount: 2 });
           const cardList = output.find("cardList").instance();
           const info = cardList.getCellInfo(6);
-          expect(info.columnCount).to.equal(2);
-          expect(info.rowCount).to.equal(25);
-          expect(info.rowIndex).to.equal(3);
-          expect(info.columnIndex).to.equal(0);
-          expect(info.index).to.equal(6);
+          expect(info).to.include({
+            columnCount: 2,
+            rowCount: 25,
+            rowIndex: 3,
+            columnIndex: 0,
+            index: 6,
+          });
         });
 
         it("should get the cell info of rowIndex 5 and columnIndex 1 when columnCount is 2", () => {
@@ -380,33 +388,43 @@ storiesOf("Blocks|CardList", module)
           output.setProps({ columnCount: 2 });
           const cardList = output.find("cardList").instance();
           const info = cardList.getCellInfo({ rowIndex: 5, columnIndex: 1 });
-          expect(info.rowIndex).to.equal(5);
-          expect(info.columnIndex).to.equal(1);
-          expect(info.index).to.equal(11);
+          expect(info).to.include({
+            rowIndex: 5,
+            columnIndex: 1,
+            index: 11,
+          });
         });
 
         it("should update the columnWidth and calculate the columnCount and rowCount", () => {
           output.setProps(resetProps);
           output.setProps({ columnWidth: 25 });
           const cardList = output.find("cardList").instance();
-          expect(cardList.columnCount).to.equal(4);
-          expect(cardList.rowCount).to.equal(13);
-          expect(cardList._grid.props.columnWidth).to.equal(25);
+          expect(cardList).to.include({
+            columnCount: 4,
+            rowCount: 13,
+          });
+          expect(cardList._grid.props).to.include({
+            columnWidth: 25,
+          });
         });
 
         it("should have a cache for rowHeight", () => {
           output.setProps(resetProps);
           const cardList = output.find("cardList").instance();
           expect(cardList.cache).to.exist;
-          expect(cardList._grid.props.rowHeight).to.equal(cardList.cache.rowHeight);
+          expect(cardList._grid.props).to.include({
+            rowHeight: cardList.cache.rowHeight,
+          });
         });
 
         it("should update the rowHeight to 25 and set cache to null", () => {
           output.setProps(resetProps);
           output.setProps({ rowHeight: 25 });
           const cardList = output.find("cardList").instance();
-          expect(cardList._grid.props.rowHeight).to.equal(25);
           expect(cardList.cache).to.be.null;
+          expect(cardList._grid.props).to.include({
+            rowHeight: 25,
+          });
         });
 
         it("should call load rows with correct indexes when columnCount is 4", () => {
@@ -433,28 +451,38 @@ storiesOf("Blocks|CardList", module)
         it("should set focusedRow to 3", () => {
           output.setProps(resetProps);
           output.setProps({ focusedRow: 3 });
-          expect(output.find("cardList").instance()._grid.props.scrollToRow).to.equal(3);
+          expect(output.find("cardList").instance()._grid.props).to.include({
+            scrollToRow: 3,
+          });
         });
 
         it("should set scrollToAlignment to 'end'", () => {
           output.setProps(resetProps);
-          expect(output.find("cardList").instance()._grid.props.scrollToAlignment).to.equal("start"); // default
+          expect(output.find("cardList").instance()._grid.props).to.include({ // default
+            scrollToAlignment: "start",
+          });
           output.setProps({ scrollToAlignment: "end" });
-          expect(output.find("cardList").instance()._grid.props.scrollToAlignment).to.equal("end");
+          expect(output.find("cardList").instance()._grid.props).to.include({
+            scrollToAlignment: "end",
+          });
         });
 
         it("should set scrollTop", () => {
           output.setProps(resetProps);
           output.setProps({ scrollTop: 100 });
-          expect(output.find("cardList").instance()._grid.props.scrollTop).to.equal(100);
+          expect(output.find("cardList").instance()._grid.props).to.include({
+            scrollTop: 100,
+          });
         });
 
         it("should prioritize focusedRow over scrollTop", () => {
           output.setProps(resetProps);
           output.setProps({ focusedRow: 4, scrollTop: 101 });
           const cardList = output.find("cardList").instance();
-          expect(cardList._grid.props.scrollToRow).to.equal(4);
-          expect(cardList._grid.props.scrollTop).to.be.undefined;
+          expect(cardList._grid.props).to.include({
+            scrollToRow: 4,
+            scrollTop: undefined,
+          });
         });
 
         it("should call onScroll prop once", () => {
@@ -521,14 +549,18 @@ storiesOf("Blocks|CardList", module)
           });
           output.find("#cellwrapper-0-0").at(0).simulate("click");
           expect(spyCell.callCount).to.equal(1);
-          expect(spyCell.args[0][1].index).to.equal(0);
-          expect(spyCell.args[0][1].rowIndex).to.equal(0);
-          expect(spyCell.args[0][1].columnIndex).to.equal(0);
+          expect(spyCell.args[0][1]).to.include({
+            index: 0,
+            rowIndex: 0,
+            columnIndex: 0,
+          });
           output.find("#cellwrapper-1-0").at(0).simulate("click");
           expect(spyCell.callCount).to.equal(2);
-          expect(spyCell.args[1][1].index).to.equal(1);
-          expect(spyCell.args[1][1].rowIndex).to.equal(1);
-          expect(spyCell.args[1][1].columnIndex).to.equal(0);
+          expect(spyCell.args[1][1]).to.include({
+            index: 1,
+            rowIndex: 1,
+            columnIndex: 0,
+          });
         });
 
         it("should attach onCellMouseOver callback to mouseOver event", () => {
@@ -540,14 +572,18 @@ storiesOf("Blocks|CardList", module)
           });
           output.find("#cellwrapper-0-0").at(0).simulate("mouseOver");
           expect(spyCell.callCount).to.equal(1);
-          expect(spyCell.args[0][1].index).to.equal(0);
-          expect(spyCell.args[0][1].rowIndex).to.equal(0);
-          expect(spyCell.args[0][1].columnIndex).to.equal(0);
+          expect(spyCell.args[0][1]).to.include({
+            index: 0,
+            rowIndex: 0,
+            columnIndex: 0,
+          });
           output.find("#cellwrapper-1-0").at(0).simulate("mouseOver");
           expect(spyCell.callCount).to.equal(2);
-          expect(spyCell.args[1][1].index).to.equal(1);
-          expect(spyCell.args[1][1].rowIndex).to.equal(1);
-          expect(spyCell.args[1][1].columnIndex).to.equal(0);
+          expect(spyCell.args[1][1]).to.include({
+            index: 1,
+            rowIndex: 1,
+            columnIndex: 0,
+          });
         });
 
         it("should attach onCellMouseOut callback to mouseOut event", () => {
@@ -559,14 +595,18 @@ storiesOf("Blocks|CardList", module)
           });
           output.find("#cellwrapper-0-0").at(0).simulate("mouseOut");
           expect(spyCell.callCount).to.equal(1);
-          expect(spyCell.args[0][1].index).to.equal(0);
-          expect(spyCell.args[0][1].rowIndex).to.equal(0);
-          expect(spyCell.args[0][1].columnIndex).to.equal(0);
+          expect(spyCell.args[0][1]).to.include({
+            index: 0,
+            rowIndex: 0,
+            columnIndex: 0,
+          });
           output.find("#cellwrapper-1-0").at(0).simulate("mouseOut");
           expect(spyCell.callCount).to.equal(2);
-          expect(spyCell.args[1][1].index).to.equal(1);
-          expect(spyCell.args[1][1].rowIndex).to.equal(1);
-          expect(spyCell.args[1][1].columnIndex).to.equal(0);
+          expect(spyCell.args[1][1]).to.include({
+            index: 1,
+            rowIndex: 1,
+            columnIndex: 0,
+          });
         });
 
         it("should attach onCellMouseEnter callback to mouseEnter event", () => {
@@ -578,14 +618,18 @@ storiesOf("Blocks|CardList", module)
           });
           output.find("#cellwrapper-0-0").at(0).simulate("mouseEnter");
           expect(spyCell.callCount).to.equal(1);
-          expect(spyCell.args[0][1].index).to.equal(0);
-          expect(spyCell.args[0][1].rowIndex).to.equal(0);
-          expect(spyCell.args[0][1].columnIndex).to.equal(0);
+          expect(spyCell.args[0][1]).to.include({
+            index: 0,
+            rowIndex: 0,
+            columnIndex: 0,
+          });
           output.find("#cellwrapper-1-0").at(0).simulate("mouseEnter");
           expect(spyCell.callCount).to.equal(2);
-          expect(spyCell.args[1][1].index).to.equal(1);
-          expect(spyCell.args[1][1].rowIndex).to.equal(1);
-          expect(spyCell.args[1][1].columnIndex).to.equal(0);
+          expect(spyCell.args[1][1]).to.include({
+            index: 1,
+            rowIndex: 1,
+            columnIndex: 0,
+          });
         });
 
         it("should attach onCellMouseLeave callback to mouseLeave event", () => {
@@ -597,14 +641,18 @@ storiesOf("Blocks|CardList", module)
           });
           output.find("#cellwrapper-0-0").at(0).simulate("mouseLeave");
           expect(spyCell.callCount).to.equal(1);
-          expect(spyCell.args[0][1].index).to.equal(0);
-          expect(spyCell.args[0][1].rowIndex).to.equal(0);
-          expect(spyCell.args[0][1].columnIndex).to.equal(0);
+          expect(spyCell.args[0][1]).to.include({
+            index: 0,
+            rowIndex: 0,
+            columnIndex: 0,
+          });
           output.find("#cellwrapper-1-0").at(0).simulate("mouseLeave");
           expect(spyCell.callCount).to.equal(2);
-          expect(spyCell.args[1][1].index).to.equal(1);
-          expect(spyCell.args[1][1].rowIndex).to.equal(1);
-          expect(spyCell.args[1][1].columnIndex).to.equal(0);
+          expect(spyCell.args[1][1]).to.include({
+            index: 1,
+            rowIndex: 1,
+            columnIndex: 0,
+          });
         });
       });
     });

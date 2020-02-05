@@ -31,8 +31,8 @@ class CardList extends PureComponent {
     super(props);
     this.columnCount = props.columnCount;
     this.rowCount = 1;
-    this.width = props.width || 0;
-    this.height = props.height || 0;
+    this.width = props.width;
+    this.height = props.height;
     this.cache = null;
 
     this._cellRenderer = this._cellRenderer.bind(this);
@@ -402,8 +402,8 @@ class CardList extends PureComponent {
 CardList.defaultProps = {
   columnCount: 1,
   columnWidth: null,
-  width: null,
-  height: null,
+  width: 0,
+  height: 0,
   rowHeight: null,
   minRowHeight: 10,
   selectedCell: null,

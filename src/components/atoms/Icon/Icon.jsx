@@ -207,7 +207,8 @@ function Icon({
   else if (onClick) color = "link";
 
   // FontAwesomeIcon only allows values of 90, 180, or 270
-  const _rotation = rotation === 0 ? null : rotation;
+  let _rotation = typeof rotation === "number" ? Math.round(rotation / 90) % 4 : null;
+  _rotation = _rotation > 0 ? _rotation * 90 : null;
 
   const styledIcon = (
     <StyledIcon
