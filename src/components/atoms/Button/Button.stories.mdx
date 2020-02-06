@@ -1,8 +1,10 @@
 import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
-import Grid from "layout/Grid";
-import Button from "atoms/Button";
+import Button, { ButtonGroup } from "atoms/Button";
 
-<Meta title="Atoms/Button" component={Button} />
+<Meta
+  title="Atoms/Button"
+  component={Button}
+/>
 
 # Button
 
@@ -39,7 +41,7 @@ Buttons communicate actions that users can take. They are typically placed throu
 
 <Preview>
   <Story name="Style">
-    <Grid columns="4">
+    <ButtonGroup>
       <Button label="Standard" />
       <Button label="Disabled" disabled />
       <Button label="Solid" solid />
@@ -52,7 +54,9 @@ Buttons communicate actions that users can take. They are typically placed throu
       <Button label="Disabled" underlined disabled />
       <Button label="Plain" plain />
       <Button label="Disabled" plain disabled />
-    </Grid>
+      <Button label="Bookmark" icon="bookmark" plain />
+      <Button label="Disabled" icon="bookmark" plain disabled />
+    </ButtonGroup>
   </Story>
 </Preview>
 
@@ -60,7 +64,7 @@ Buttons communicate actions that users can take. They are typically placed throu
 
 <Preview>
   <Story name="Type">
-    <Grid columns="4">
+    <ButtonGroup>
       <Button label="Standard" />
       <Button label="Secondary" type="secondary" />
       <Button label="Info" type="info" />
@@ -73,7 +77,7 @@ Buttons communicate actions that users can take. They are typically placed throu
       <Button label="Solid Success" type="success" solid />
       <Button label="Solid Warning" type="warning" solid />
       <Button label="Solid Alert" type="alert" solid />
-    </Grid>
+    </ButtonGroup>
   </Story>
 </Preview>
 
@@ -81,23 +85,41 @@ Buttons communicate actions that users can take. They are typically placed throu
 
 <Preview>
   <Story name="Icons">
-    <Grid columns="6">
+    <ButtonGroup>
       <Button label="Profile" icon="user" />
-      <Button label="Profile" icon="user" vertical />
-      <Button icon="user" />
       <Button label="Expand" icon="down" />
-      <Button label="Expand" icon="down" vertical />
-      <Button icon="down" />
       <Button label="Bookmark" icon="bookmark" />
-      <Button label="Bookmark" icon="bookmark" vertical />
-      <Button icon="bookmark" />
       <Button label="Add" icon="plus" />
-      <Button label="Add" icon="plus" vertical />
-      <Button icon="plus" />
       <Button label="Print" icon="print" />
+    </ButtonGroup>
+  </Story>
+</Preview>
+
+### Vertical Icons
+
+<Preview>
+  <Story name="Vertical Icons">
+    <ButtonGroup>
+      <Button label="Profile" icon="user" vertical />
+      <Button label="Expand" icon="down" vertical />
+      <Button label="Bookmark" icon="bookmark" vertical />
+      <Button label="Add" icon="plus" vertical />
       <Button label="Print" icon="print" vertical/>
+    </ButtonGroup>
+  </Story>
+</Preview>
+
+### Icon-Only
+
+<Preview>
+  <Story name="Icon-Only">
+    <ButtonGroup>
+      <Button icon="user" />
+      <Button icon="down" />
+      <Button icon="bookmark" />
+      <Button icon="plus" />
       <Button icon="print" />
-    </Grid>
+    </ButtonGroup>
   </Story>
 </Preview>
 
@@ -105,16 +127,33 @@ Buttons communicate actions that users can take. They are typically placed throu
 
 <Preview>
   <Story name="Counts">
-    <Grid>
+    <ButtonGroup>
       <Button label="Count Button"  count="2" />
       <Button label="Count Button" count="2" icon="user"/>
-    </Grid>
+    </ButtonGroup>
+  </Story>
+</Preview>
+
+## 'Button' Props
+
+<Props of={Button} />
+
+### Button Group
+
+<Preview withToolbar>
+  <Story name="Button Group">
+    <ButtonGroup>
+      <Button label="Button" />
+      <Button label="Button" />
+      <Button label="Button" />
+      <Button label="Button" />
+    </ButtonGroup>
   </Story>
 </Preview>
 
 <!-- Link a story to a component `ID` here without a code preview -->
 <!-- <Story id="atoms-checkbox--checkbox-states" /> -->
 
-## Props
+## 'ButtonGroup' Props
 
-<Props of={Button} />
+<Props of={ButtonGroup} />

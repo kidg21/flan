@@ -103,6 +103,34 @@ const LabelWrapper = styled(Grid)`
 
 StyledButton.displayName = "Button";
 
+function ButtonGroup({
+  children, className, columns, id,
+}) {
+  return (
+    <Grid className={className} columns={columns} id={id}>
+      {children}
+    </Grid>
+  );
+}
+
+ButtonGroup.propTypes = {
+  id: PropTypes.string,
+  children: PropTypes.node,
+  /** Defines the widths of grid columns
+   *
+   * Options: 1-12 or any standard value accepted by the CSS Grid property, 'grid-template-columns'.
+   */
+  columns: PropTypes.string,
+  className: PropTypes.string,
+};
+
+ButtonGroup.defaultProps = {
+  id: null,
+  children: null,
+  columns: null,
+  className: null,
+};
+
 function Button({
   className,
   count,
@@ -341,4 +369,5 @@ Button.defaultProps = {
   vertical: null,
 };
 
-export default Button;
+// export default Button;
+export { Button as default, ButtonGroup };
