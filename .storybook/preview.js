@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { configure, addParameters, addDecorator } from "@storybook/react";
+import { addParameters, addDecorator } from "@storybook/react";
 import { DMPTheme, darkTheme } from "Variables";
 import { ThemeProvider } from "styled-components";
 import FlanTheme from "./FlanTheme";
@@ -7,6 +7,7 @@ import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
 import { withA11y } from "@storybook/addon-a11y";
 import { configureActions } from "@storybook/addon-actions";
 import { DocsPage, DocsContainer } from "@storybook/addon-docs/blocks";
+import { withConsole, setConsoleOptions } from '@storybook/addon-console';
 import { configure as configureEnzyme } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 
@@ -67,16 +68,25 @@ const newViewports = {
 
 // Configure Parameters
 addParameters({
-  viewport: {
-    viewports: { ...INITIAL_VIEWPORTS, ...newViewports }
-    // defaultViewport: "iphone6"
+  a11y: {
+    // ... axe options
+    element: "#root", // optional selector which element to inspect
+    config: {}, // axe-core configurationOptions (https://github.com/dequelabs/axe-core/blob/develop/doc/API.md#parameters-1)
+    options: {} // axe-core optionsParameter (https://github.com/dequelabs/axe-core/blob/develop/doc/API.md#options-parameter)
   },
-
+  backgrounds: [
+    { name: 'twitter', value: '#00aced' },
+    { name: 'facebook', value: '#3b5998' },
+  ],
+  docs: {
+    container: DocsContainer,
+    page: DocsPage
+  },
   options: {
     theme: FlanTheme,
     // url: 'https://storybook.js.org',
     goFullScreen: false,
-    addonPanelInRight: true,
+    addonPanelInRight: false,
     hierarchySeparator: /\/|\./,
     hierarchyRootSeparator: /\|/,
     storySort: (a, b) =>
@@ -84,16 +94,11 @@ addParameters({
         ? 0
         : a[1].id.localeCompare(b[1].id, { numeric: true })
   },
-  docs: {
-    container: DocsContainer,
-    page: DocsPage
+  showRoots: true,
+  viewport: {
+    viewports: { ...INITIAL_VIEWPORTS, ...newViewports }
+    // defaultViewport: "iphone6"
   },
-  a11y: {
-    // ... axe options
-    element: "#root", // optional selector which element to inspect
-    config: {}, // axe-core configurationOptions (https://github.com/dequelabs/axe-core/blob/develop/doc/API.md#parameters-1)
-    options: {} // axe-core optionsParameter (https://github.com/dequelabs/axe-core/blob/develop/doc/API.md#options-parameter)
-  }
 });
 
 // a11y
@@ -106,58 +111,10 @@ configureActions({
   limit: 20
 });
 
-// Load Stories
-const base = require.context(
-  "../src/components/base",
-  true,
-  /\.stories\.(js|mdx)$/
-);
-const utils = require.context(
-  "../src/components/utils",
-  true,
-  /\.stories\.(js|mdx)$/
-);
-const intro = require.context(
-  "../src/attributes",
-  true,
-  // /\.stories\.(js|mdx)$/
-  /\.stories\.(mdx)$/
-);
-const atoms = require.context(
-  "../src/components/atoms",
-  true,
-  // /\.stories\.(js|mdx)$/
-  /\.stories\.(mdx)$/
-);
-const blocks = require.context(
-  "../src/components/blocks",
-  true,
-  /\.stories\.(js|mdx)$/
-  // /\.stories\.(mdx)$/
-);
-const elements = require.context(
-  "../src/components/elements",
-  true,
-  /\.stories\.(js|mdx)$/
-);
-const layout = require.context(
-  "../src/components/layout",
-  true,
-  /\.stories\.(js|mdx)$/
-);
-const templates = require.context(
-  "../src/components/templates",
-  true,
-  /\.stories\.(js|mdx)$/
-);
-const work = require.context(
-  "../src/components/work",
-  true,
-  /\.stories\.(js|mdx)$/
-);
+// Consolde logging in 'Actions' panel
+addDecorator((storyFn, context) => withConsole()(storyFn)(context));
+setConsoleOptions({
+  panelExclude: [],
+});
 
 configureEnzyme({ adapter: new Adapter() });
-configure(
-  [intro, base, utils, atoms, blocks, elements, layout, templates, work],
-  module
-);
