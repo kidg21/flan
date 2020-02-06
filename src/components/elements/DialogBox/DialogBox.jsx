@@ -35,12 +35,14 @@ function DialogBox({
       buttonElements = (
         <ButtonGrid columns="3">
           <PrimaryButton
+            id={buttons[0].id}
             label={buttons[0].label}
             onClick={buttons[0].onClick}
             disabled={buttons[0].disabled}
             type={buttons[0].type}
           />
           <SecondaryButton
+            id={buttons[0].id}
             label={buttons[1].label}
             onClick={buttons[1].onClick}
             disabled={buttons[1].disabled}
@@ -51,6 +53,7 @@ function DialogBox({
     } else if (buttons.length === 1) {
       buttonElements = (
         <SecondaryButton
+          id={buttons[0].id}
           label={buttons[0].label}
           onClick={buttons[0].onClick}
           disabled={buttons[0].disabled}
