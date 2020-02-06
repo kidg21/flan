@@ -233,7 +233,7 @@ RolePermissions.propTypes = {
   commands: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
     name: PropTypes.string,
-    onClickLink: PropTypes.func,
+    onClick: PropTypes.func,
   })),
   listHeight: PropTypes.oneOfType([
     PropTypes.string,

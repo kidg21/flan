@@ -1,7 +1,9 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
+
 import { Grid, CellMeasurerCache, CellMeasurer, ColumnSizer, AutoSizer, InfiniteLoader } from "react-virtualized";
 import styled from "styled-components";
+import { DisableTransitionContext } from "States";
 
 /* eslint-disable security/detect-object-injection */
 const GridWrapper = styled.div`
@@ -154,6 +156,7 @@ class CardList extends PureComponent {
     if (index >= data.length) {
       return null;
     }
+
     if (selectedCell && selectedCell.rowIndex === rowIndex
       && selectedCell.columnIndex === columnIndex) {
       cellProps.isSelected = true;
@@ -162,23 +165,23 @@ class CardList extends PureComponent {
       cellProps.isHighlighted = true;
     }
     cellProps.onClick = (e) => {
-      if (onCellClick) onCellClick(e, { rowIndex, columnIndex });
+      if (onCellClick) onCellClick(e, { index, rowIndex, columnIndex });
     };
     cellProps.onMouseOver = (e) => {
-      if (onCellMouseOver) onCellMouseOver(e, { rowIndex, columnIndex });
+      if (onCellMouseOver) onCellMouseOver(e, { index, rowIndex, columnIndex });
     };
     cellProps.onMouseOut = (e) => {
-      if (onCellMouseOut) onCellMouseOut(e, { rowIndex, columnIndex });
+      if (onCellMouseOut) onCellMouseOut(e, { index, rowIndex, columnIndex });
     };
     cellProps.onMouseLeave = (e) => {
-      if (onCellMouseLeave) onCellMouseLeave(e, { rowIndex, columnIndex });
+      if (onCellMouseLeave) onCellMouseLeave(e, { index, rowIndex, columnIndex });
     };
     cellProps.onMouseEnter = (e) => {
-      if (onCellMouseEnter) onCellMouseEnter(e, { rowIndex, columnIndex });
+      if (onCellMouseEnter) onCellMouseEnter(e, { index, rowIndex, columnIndex });
     };
 
     const content = (
-      <CellWrapper style={{ ...style, width: this._columnWidth }} {...cellProps}>
+      <CellWrapper id={`cellwrapper-${rowIndex}-${columnIndex}`} key={key} style={{ ...style, width: this._columnWidth }} {...cellProps}>
         <Template
           data={data[index]}
           isHighlighted={cellProps.isHighlighted}
@@ -194,7 +197,7 @@ class CardList extends PureComponent {
       <CellMeasurer
         cache={this.cache}
         columnIndex={columnIndex}
-        key={key}
+        key={`cellmeasurer-${key}`}
         parent={parent}
         rowIndex={rowIndex}
       >
@@ -255,7 +258,7 @@ class CardList extends PureComponent {
   // e.startIndex & e.stopIndex are the row indexes
   _loadMoreRows(e) {
     const { loadRows, data } = this.props;
-    if (!loadRows) return null;
+    if (!loadRows) return Promise.resolve();
     // get the data/cell index given the row index
     const _startIndex = this._getCellIndex(e.startIndex, 0);
     let _stopIndex = this._getCellIndex(e.stopIndex, this.columnCount - 1);
@@ -332,59 +335,63 @@ class CardList extends PureComponent {
           this._registerInfiniteChild = registerChild;
           this._onRowsRendered = onRowsRendered;
           return (
-            <GridWrapper>
-              <AutoSizer
-                onResize={this._onResize}
-                defaultHeight={100}
-                defaultWidth={200}
+          // DisableTransitionContext used to disable transitions on cards for accurate cell measurements
+            <DisableTransitionContext.Provider value>
+              <GridWrapper>
+                <AutoSizer
+                  onResize={this._onResize}
+                  defaultHeight={100}
+                  defaultWidth={200}
 
-                // props to re-render children
-                _width={this.width}
-              >
-                {() => {
-                  return (
-                    <ColumnSizer
-                      columnCount={this.columnCount}
-                      width={this.width}
-                    >
-                      {({
-                        adjustedWidth,
-                        columnWidth: _columnWidth,
-                        registerChild: registerColumnChild,
-                      }) => {
-                        this._columnWidth = _columnWidth;
-                        this._registerColumnChild = registerColumnChild;
-                        return (
-                          <Grid
-                            id={id}
-                            ref={this._setRefGrid}
-                            cellRenderer={this._cellRenderer}
-                            columnCount={this.columnCount}
-                            columnWidth={_columnWidth}
-                            deferredMeasurementCache={this.cache}
-                            height={this.height}
-                            rowCount={this.rowCount}
-                            rowHeight={this.cache ? this.cache.rowHeight : rowHeight}
-                            width={adjustedWidth}
-                            scrollToAlignment={typeof scrollToAlignment === "string" ? scrollToAlignment : "start"}
-                            scrollToRow={scrollToRow}
-                            scrollTop={scrollToTop}
-                            onScroll={(params) => {
-                              if (onScroll) onScroll(params);
-                            }}
-                            onSectionRendered={this._onSectionRendered}
+                  // props to re-render children
+                  _width={this.width}
+                >
+                  {() => {
+                    return (
+                      <ColumnSizer
+                        columnCount={this.columnCount}
+                        width={this.width}
+                      >
+                        {({
+                          adjustedWidth,
+                          columnWidth: _columnWidth,
+                          registerChild: registerColumnChild,
+                        }) => {
+                          this._columnWidth = _columnWidth;
+                          this._registerColumnChild = registerColumnChild;
+                          return (
+                            <Grid
+                              id={id}
+                              ref={this._setRefGrid}
+                              cellRenderer={this._cellRenderer}
+                              columnCount={this.columnCount}
+                              columnWidth={_columnWidth}
+                              deferredMeasurementCache={this.cache}
+                              height={this.height}
+                              rowCount={this.rowCount}
+                              rowHeight={this.cache ? this.cache.rowHeight : rowHeight}
+                              width={adjustedWidth}
+                              scrollToAlignment={typeof scrollToAlignment === "string" ? scrollToAlignment : "start"}
+                              scrollToRow={scrollToRow}
+                              scrollTop={scrollToTop}
+                              onScroll={(params) => {
+                                if (onScroll) onScroll(params);
+                              }}
+                              onSectionRendered={this._onSectionRendered}
 
-                            // props to cause re-render children
-                            _selectedCell={selectedCell}
-                            _highlightedCell={highlightedCell}
-                          />
-                        );
-                      }}
-                    </ColumnSizer>
-                  );
-                }}
-              </AutoSizer>
-            </GridWrapper>
+                              // props to cause re-render children
+                              _selectedCell={selectedCell}
+                              _highlightedCell={highlightedCell}
+                            />
+                          );
+                        }}
+                      </ColumnSizer>
+                    );
+                  }}
+                </AutoSizer>
+              </GridWrapper>
+
+            </DisableTransitionContext.Provider>
           );
         }}
       </InfiniteLoader>
@@ -395,8 +402,8 @@ class CardList extends PureComponent {
 CardList.defaultProps = {
   columnCount: 1,
   columnWidth: null,
-  width: null,
-  height: null,
+  width: 0,
+  height: 0,
   rowHeight: null,
   minRowHeight: 10,
   selectedCell: null,
@@ -446,5 +453,7 @@ CardList.propTypes = {
   loadRows: PropTypes.func,
   minimumBatchSize: PropTypes.number,
 };
+
+CardList.displayName = "cardList";
 
 export default CardList;

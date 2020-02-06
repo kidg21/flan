@@ -224,7 +224,7 @@ UserRoles.propTypes = {
   commands: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
     name: PropTypes.string,
-    onClickLink: PropTypes.func,
+    onClick: PropTypes.func,
   })),
   right: PropTypes.node,
   children: PropTypes.node,
