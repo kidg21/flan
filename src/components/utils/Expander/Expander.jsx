@@ -1,7 +1,8 @@
 /* eslint-disable linebreak-style */
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import { DisableTransitionContext } from "States";
 
 const HeaderWrapper = styled.div`
   cursor: pointer;
@@ -23,18 +24,21 @@ const ChildrenWrapper = styled.div`
   opacity: ${(props) => {
     return props.open ? "100%" : "0";
   }};
-  transition: all 0.25s ease-in-out;
+  transition: ${(props) => {
+    return props.disableTransition ? "" : "all 0.25s ease-in-out";
+  }};
 `;
 
 const AccordionFunction = ({
   id, header, children, open, onClick,
 }) => {
+  const disableTransition = useContext(DisableTransitionContext);
   return (
     <Fragment>
       <HeaderWrapper id={id} onClick={onClick}>
         {header}
       </HeaderWrapper>
-      <ChildrenWrapper open={open}>{children}</ChildrenWrapper>
+      <ChildrenWrapper disableTransition={disableTransition} open={open}>{children}</ChildrenWrapper>
     </Fragment>
   );
 };
