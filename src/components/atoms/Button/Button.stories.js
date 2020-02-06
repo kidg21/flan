@@ -17,7 +17,6 @@ const buttonTypes = [
 ];
 const buttonIcons = ["", "user", "down", "bookmark", "plus", "print"];
 
-// CSF format
 export default {
   title: "Atoms/Button/Tests",
   component: Button,

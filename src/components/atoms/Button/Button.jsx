@@ -106,8 +106,14 @@ StyledButton.displayName = "Button";
 function ButtonGroup({
   children, className, columns, id,
 }) {
+  // 1-6 colums
+  let setColumns;
+  const _columns = parseInt(columns, 10);
+  if (_columns > 0 && columns < 7) {
+    setColumns = `repeat(${_columns}, minmax(0, 1fr))`;
+  }
   return (
-    <Grid className={className} columns={columns} id={id}>
+    <Grid className={className} columns={setColumns} id={id}>
       {children}
     </Grid>
   );
@@ -118,7 +124,7 @@ ButtonGroup.propTypes = {
   children: PropTypes.node,
   /** Defines the widths of grid columns
    *
-   * Options: 1-12 or any standard value accepted by the CSS Grid property, 'grid-template-columns'.
+   * Options: 1-6
    */
   columns: PropTypes.string,
   className: PropTypes.string,

@@ -1,0 +1,40 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import Button, { ButtonGroup } from "atoms/Button";
+
+<Meta
+  title="Blocks/Button Group"
+  component={ButtonGroup}
+/>
+
+# Button Group
+
+### Button Groups...
+
+<Preview withToolbar>
+  <Story name="Standard">
+    <ButtonGroup>
+      <Button label="Button" />
+      <Button label="Button" />
+      <Button label="Button" />
+      <Button label="Button" />
+    </ButtonGroup>
+  </Story>
+</Preview>
+
+<!-- # Usage
+
+Buttons communicate actions that users can take. They are typically placed throughout your UI, in places like:
+
+- Dialogs
+- Modal windows
+- Forms
+- Cards
+- Toolbars -->
+
+<!-- # Principles -->
+
+<!-- # Examples -->
+
+## 'ButtonGroup' Props
+
+<Props of={ButtonGroup} />
