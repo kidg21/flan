@@ -2,7 +2,7 @@ import { create } from "@storybook/theming";
 import { fonts, colors, shadows } from "Variables";
 
 export default create({
-  base: "dark",
+  base: "light",
 
   // colorPrimary: "hotpink",
   colorSecondary: colors.blue80,
