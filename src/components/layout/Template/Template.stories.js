@@ -4,6 +4,8 @@ import React from "react";
 import Panel from "layout/Panel";
 import DataTable from "blocks/Table";
 import Card, { CardGrid } from "elements/Card";
+import List, { ListItem } from "blocks/List";
+import Mapbox from "layout/Map";
 import Title from "base/Typography";
 import Template from "./Template.jsx";
 
@@ -99,20 +101,17 @@ const dataTable = (
   />
 );
 
-const cardGrid = {
+const navBar = {
   content: (
     <Panel
       id="Panel"
     >
-      <CardGrid>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </CardGrid>
+      <List interactive>
+        <ListItem title="Layers" />
+        <ListItem title="Results" />
+        <ListItem title="Form" />
+        <ListItem title="Research" />
+      </List>
     </Panel>
   ),
 };
@@ -146,16 +145,11 @@ storiesOf("Layout |Templates/Template A/", module)
       return (
         <Template
           header={{
-            iconLeft: "left",
-            content: <Title text="Header Title Goes Here" />,
-            iconRight: "right",
+            content: "",
           }}
-          left={cardGrid}
-          main={dataTable || cardGrid}
-          right={cardGrid}
-          footer={{
-            content: <Title text="Footer content goes here." />,
-          }}
+          left={navBar}
+          main={<React.Fragment> <Mapbox /> {dataTable}</React.Fragment>}
+          right={navBar}
         />
       );
     },
