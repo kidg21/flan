@@ -7,7 +7,7 @@ import Image from "atoms/Image";
 import ModernExterior1 from "images/residential/modern exterior 1.jpg";
 import ModernExterior2 from "images/residential/modern exterior 2.jpg";
 import ModernExterior3 from "images/residential/modern exterior 3.jpg";
-import Card, { CardSection, CardGrid } from "elements/Card";
+import Card, { CardGrid } from "elements/Card";
 import Grid from "layout/Grid";
 import Text, { Title } from "base/Typography";
 import MediaBlock from "blocks/MediaBlock";
@@ -29,21 +29,24 @@ const data = [
         label: "Command One",
       },
     ],
-    more:
-      <MediaBlock
-        media={
-          <Image
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-            alt="This is alt text for this image"
-          />
-        }
-        body={
-          <>
-            <Title text="Media Block" />
-            <Text text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. " />
-          </>
-        }
-      />,
+    more: {
+      element: (
+        <MediaBlock
+          media={
+            <Image
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+              alt="This is alt text for this image"
+            />
+          }
+          body={
+            <React.Fragment>
+              <Title text="Media Block" />
+              <Text text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. " />
+            </React.Fragment>
+          }
+        />
+      ),
+    },
     onClick: action("First Card Clicked"),
   },
   {
@@ -97,7 +100,9 @@ const data = [
         label: "Command Five",
       },
     ],
-    more: <Button label="Button" type="solid" />,
+    more: {
+      element: <Button label="Button" type="solid" />,
+    },
     onClick: action("Third Card Clicked"),
   },
 ];
@@ -149,10 +154,9 @@ storiesOf("Elements|Card", module)
             onClick: action("Command Five Clicked"),
           },
         ]}
-        more={<Button label="Button" type="solid" color="success" fullWidth />}
+        more={{ element: <Button label="Button" type="solid" color="success" fullWidth /> }}
         onClick={action("Primary Action Area Clicked")}
-      >
-      </Card>
+      />
     );
   })
   .add("Standard (container-only)", () => {
@@ -219,9 +223,9 @@ storiesOf("Elements|Card", module)
         }
         more={
           boolean("more", false, "Options") &&
-          array(
+          object(
             "extra content",
-            [<Button label="Button" type="solid" color="success" fullWidth />],
+            { element: [<Button label="Button" type="solid" color="success" fullWidth />] },
             "Options",
           )
         }

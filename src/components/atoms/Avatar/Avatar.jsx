@@ -69,43 +69,17 @@ function Avatar({
   const fontSize = selectedSize ? selectedSize.font : "1em";
 
   const typeHash = {
-    success: "success",
-    warning: "warning",
-    alert: "alert",
-    info: "info",
-    action: "action",
+    success: "success80",
+    warning: "warning80",
+    alert: "alert80",
+    info: "info80",
+    action: "action80",
   };
 
 
   let backgroundColor = type ? (typeHash[type] || type.toLowerCase()) : "action40";
-  let textColor = type ? `${type.toLowerCase()}Tint` : "inverse";
+  const textColor = "inverse";
 
-  switch (type && type.toLowerCase()) {
-    case "success":
-      backgroundColor = "success80";
-      textColor = "success20";
-      break;
-    case "warning":
-      backgroundColor = "warning80";
-      textColor = "warning20";
-      break;
-    case "alert":
-      backgroundColor = "alert80";
-      textColor = "alert20";
-      break;
-    case "info":
-      backgroundColor = "info80";
-      textColor = "info20";
-      break;
-    case "action":
-      backgroundColor = "action80";
-      textColor = "action20";
-      break;
-    default:
-      backgroundColor = "action40";
-      textColor = "inverse";
-      break;
-  }
 
   if (image) {
     iconType = (<Image

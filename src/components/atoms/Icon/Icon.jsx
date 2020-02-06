@@ -207,6 +207,9 @@ function Icon({
   if (isDisabled) color = "disabled";
   else if (onClick) color = "link";
 
+  // FontAwesomeIcon only allows values of 90, 180, or 270
+  let _rotation = typeof rotation === "number" ? Math.round(rotation / 90) % 4 : null;
+  _rotation = _rotation > 0 ? _rotation * 90 : null;
 
   if (!type) {
     if (brand === "research") {
@@ -239,7 +242,7 @@ function Icon({
       icon={iconValue}
       id={id}
       pulse={pulse}
-      rotation={rotation}
+      rotation={_rotation}
       size={size}
       spin={spin}
       title={title}
