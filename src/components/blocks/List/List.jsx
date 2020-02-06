@@ -93,6 +93,7 @@ function ListItem({
   interactive,
   isSelected,
   title,
+  href,
   onClick,
   post,
   pre,
@@ -127,6 +128,7 @@ function ListItem({
     <ListItemWrapper
       active={active}
       as={as}
+      href={href}
       id={id}
       interactive={
         typeof interactive === "boolean"
@@ -157,6 +159,7 @@ function ListItem({
 ListItem.propTypes = {
   active: PropTypes.bool,
   as: PropTypes.string,
+  href: PropTypes.node,
   children: PropTypes.node,
   description: PropTypes.string,
   disabled: PropTypes.bool,
@@ -178,6 +181,7 @@ ListItem.propTypes = {
 ListItem.defaultProps = {
   active: false,
   as: null,
+  href: null,
   children: null,
   description: null,
   disabled: false,
