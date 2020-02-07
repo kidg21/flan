@@ -1,7 +1,8 @@
 /* eslint-disable linebreak-style */
 import React, { Fragment, useState } from "react";
-import styled, { keyframes } from "styled-components";
-import { screen } from "Variables";
+import GlobalStyles from "GlobalStyles";
+import styled, { keyframes, ThemeProvider } from "styled-components";
+import { DMPTheme, screen } from "Variables";
 import { PlaceholderText } from "helpers";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
@@ -238,27 +239,32 @@ function Modal({
   }
 
   return (
-    <ModalContainer
-      id={id}
-      align={align}
-      visible={visible || state.visible}
-      action={action}
-      slideDuration={slideDuration}
-      scale={scale}
-      aria-labelledby={ariaLabelledby}
-      aria-describedby={ariaDescribedby}
-      justifyContent={justifyContent}
-      pointerEvents={pointerEvents}
-      style={containerStyle}
-    >
-      {backgroundColor ? <ModalBG
-        onClick={onClose}
-        action={action}
-        fadeDuration={fadeDuration}
-        backgroundColor={backgroundColor}
-      /> : null}
-      {modalContent}
-    </ModalContainer>
+    <React.Fragment>
+      <GlobalStyles />
+      <ThemeProvider theme={DMPTheme}>
+        <ModalContainer
+          id={id}
+          align={align}
+          visible={visible || state.visible}
+          action={action}
+          slideDuration={slideDuration}
+          scale={scale}
+          aria-labelledby={ariaLabelledby}
+          aria-describedby={ariaDescribedby}
+          justifyContent={justifyContent}
+          pointerEvents={pointerEvents}
+          style={containerStyle}
+        >
+          {backgroundColor ? <ModalBG
+            onClick={onClose}
+            action={action}
+            fadeDuration={fadeDuration}
+            backgroundColor={backgroundColor}
+          /> : null}
+          {modalContent}
+        </ModalContainer>
+      </ThemeProvider>
+    </React.Fragment>
   );
 }
 export default Modal;
@@ -267,38 +273,36 @@ Modal.propTypes = {
   align: PropTypes.oneOf(["default to type", "top", "center", "bottom"]),
   ariaDescribedby: PropTypes.string,
   ariaLabelledby: PropTypes.string,
+  backgroundColor: PropTypes.string,
   children: PropTypes.node,
+  containerStyle: PropTypes.string,
+  fadeDuration: PropTypes.number,
   id: PropTypes.string,
   image: PropTypes.string,
-  onClose: PropTypes.func,
   onClick: PropTypes.func,
-  backgroundColor: PropTypes.string,
-  // onDisplayComplete: PropTypes.func,
-  // action: PropTypes.oneOf(["open", "close"]),
-  visible: PropTypes.bool,
-  slideDuration: PropTypes.number,
-  fadeDuration: PropTypes.number,
+  onClose: PropTypes.func,
   scale: PropTypes.oneOf(["scaleUp", "scaleDown"]),
-  style: PropTypes.object,
-  containerStyle: PropTypes.object,
+  slideDuration: PropTypes.number,
+  style: PropTypes.string,
   text: PropTypes.string,
+  visible: PropTypes.bool,
 };
 
 Modal.defaultProps = {
   align: null,
-  ariaLabelledby: null,
   ariaDescribedby: null,
+  ariaLabelledby: null,
+  backgroundColor: "hsla(34, 5%, 12%, 0.8)",
   children: null,
+  containerStyle: null,
+  fadeDuration: 0.6,
   id: null,
   image: null,
-  onClose: null,
   onClick: null,
-  backgroundColor: "hsla(34, 5%, 12%, 0.8)",
-  visible: false,
-  slideDuration: 0.6,
-  fadeDuration: 0.6,
+  onClose: null,
   scale: null,
+  slideDuration: 0.6,
   style: null,
-  containerStyle: null,
   text: null,
+  visible: false,
 };

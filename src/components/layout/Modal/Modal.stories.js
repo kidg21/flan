@@ -7,20 +7,20 @@ import ModernExterior1 from "images/residential/modern exterior 1.jpg";
 import Banner from "blocks/Banner";
 import Modal from "layout/Modal";
 
-const ModalNotes = markdown.require("./Modal.md");
+// const ModalNotes = markdown.require("./Modal.md");
 
 storiesOf("Layout|Modal", module)
-  .addParameters({
-    info: {
-      text: "Modal info goes here..."
-    },
-    notes: {
-      markdown: ModalNotes
-    }
-  })
+  // .addParameters({
+  //   info: {
+  //     text: "Modal info goes here..."
+  //   },
+  //   notes: {
+  //     markdown: ModalNotes
+  //   }
+  // })
   .add(
     "Documentation",
-    withInfo()(() => {
+    () => {
       return React.createElement(() => {
         const [visible, setVisible] = useState(false);
         const handleOpen = () => {
@@ -45,8 +45,7 @@ storiesOf("Layout|Modal", module)
           </>
         );
       });
-    })
-  );
+    });
 
 storiesOf("Layout|Modal", module)
   .addDecorator(withKnobs)
