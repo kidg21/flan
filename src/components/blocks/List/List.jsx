@@ -85,7 +85,6 @@ List.defaultProps = {
 
 function ListItem({
   active,
-  as,
   children,
   description,
   disabled,
@@ -104,9 +103,14 @@ function ListItem({
     leftContent = <Avatar label={pre.label} icon={pre.icon} disabled={disabled} />;
   }
 
+  let as;
+  if (onClick) {
+    as = "a";
+  }
+
   const centerContent = (
     <React.Fragment>
-      <Title text={title} disabled={disabled} />
+      <Title as={as} text={title} disabled={disabled} />
       {description ? (<Text text={description} disabled={disabled} />
       ) : null}
     </React.Fragment>
@@ -127,7 +131,6 @@ function ListItem({
   return (
     <ListItemWrapper
       active={active}
-      as={as}
       href={href}
       id={id}
       interactive={
@@ -158,7 +161,6 @@ function ListItem({
 
 ListItem.propTypes = {
   active: PropTypes.bool,
-  as: PropTypes.string,
   href: PropTypes.node,
   children: PropTypes.node,
   description: PropTypes.string,
@@ -180,7 +182,6 @@ ListItem.propTypes = {
 };
 ListItem.defaultProps = {
   active: false,
-  as: null,
   href: null,
   children: null,
   description: null,

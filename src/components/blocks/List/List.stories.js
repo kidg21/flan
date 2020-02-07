@@ -156,28 +156,34 @@ storiesOf("Blocks|List", module)
   })
   .add("Pre-Label", () => {
     return (
-      <List interactive>
-        <ListItem
-          title="List Item"
-          description="This is the description"
-          pre={{ label: "AB" }}
-        />
-        <ListItem
-          title="List Item"
-          description="This is the description"
-          pre={{ label: "CD" }}
-        />
-        <ListItem
-          title="List Item"
-          description="This is the description"
-          pre={{ label: "EF" }}
-        />
-        <ListItem
-          title="List Item"
-          description="This is the description"
-          pre={{ label: "GH" }}
-        />
-      </List>
+      <div style={{ display: "flex" }}>
+        <List interactive>
+          <ListItem
+            title="List Item"
+            description="This is the description"
+            pre={{ label: "AB" }}
+            onClick
+          />
+          <ListItem
+            title="List Item"
+            description="This is the description"
+            pre={{ label: "CD" }}
+            onClick
+          />
+          <ListItem
+            title="List Item"
+            description="This is the description"
+            pre={{ label: "EF" }}
+            onClick
+          />
+          <ListItem
+            title="List Item"
+            description="This is the description"
+            pre={{ label: "GH" }}
+          />
+        </List>
+
+      </div>
     );
   })
   .add("Pre-Icon", () => {
