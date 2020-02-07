@@ -30,7 +30,6 @@ const TableContainer = styled.table`
     width: 100 em;
     height: 5rem;
   }
-}
 `;
 
 const Row = styled.tr`
@@ -194,8 +193,8 @@ function TableAlt({
           <TableContainer>{content}</TableContainer>
         </Container>
       ) : (
-        <TableContainer>{content}</TableContainer>
-      )}
+          <TableContainer>{content}</TableContainer>
+        )}
     </Wrapper>
   );
 }
@@ -205,7 +204,7 @@ TableAlt.propTypes = {
   scroll: PropTypes.bool,
   setHeight: PropTypes.string,
   fontSize: PropTypes.string,
-  style: PropTypes.node,
+  style: PropTypes.string,
   data: PropTypes.node.isRequired,
   columns: PropTypes.arrayOf(PropTypes.string),
   keyField: PropTypes.string,

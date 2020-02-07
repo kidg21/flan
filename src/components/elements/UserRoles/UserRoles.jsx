@@ -204,8 +204,8 @@ const UserRoles = React.forwardRef(({
 });
 
 UserRoles.propTypes = {
-  style: PropTypes.object,
-  panelStyle: PropTypes.object,
+  style: PropTypes.string,
+  panelStyle: PropTypes.string,
   users: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string,
     enabled: PropTypes.bool,
