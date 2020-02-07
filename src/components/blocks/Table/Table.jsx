@@ -15,7 +15,7 @@ export const MultiGridWrapper = styled.div`
   width: 100%;
   height: 100%;
   border: 1px solid ${(props) => {
-    return props.theme.palette.grey5;
+    return props.theme.palette.neutral60;
   }};
   overflow: hidden;
   .ReactVirtualized__Grid {
@@ -26,8 +26,8 @@ export const MultiGridWrapper = styled.div`
       background-color: ${(props) => {
     return props.theme.palette.disabled;
   }};
-    border: ${(props) => {
-    return props.theme.borders.border;
+    border: 1px solid ${(props) => {
+    return props.theme.palette.neutral60;
   }};
     }
     ::-webkit-scrollbar-thumb {
@@ -53,7 +53,7 @@ export const CellWrapper = styled.div`
   padding: 0.5em 1em;
   color: ${(props) => {
     if (props.isHeader) {
-      return props.theme.text.dark;
+      return props.theme.text.primary;
     } else if (props.isSelected) {
       return props.theme.text.inverse;
     }
@@ -64,17 +64,17 @@ export const CellWrapper = styled.div`
   }};
   font-family: ${(props) => { return props.isHeader ? props.theme.typography.primary : props.theme.typography.secondary; }};
   border-bottom: ${(props) => {
-    return props.isHeader ? `2px solid ${props.theme.palette.grey5}` : `1px solid ${props.theme.palette.grey5}`;
+    return props.isHeader ? `2px solid ${props.theme.palette.neutral40}` : `1px solid ${props.theme.palette.neutral40}`;
   }};
   background-color: ${(props) => {
     if (props.isHeader) {
       return props.theme.background.app;
     }
     if (props.isHighlighted) {
-      return props.theme.palette.grey6;
+      return props.theme.palette.neutral20;
     }
     if (props.isSelected) {
-      return props.theme.palette.secondary;
+      return props.theme.background.selected;
     }
     return props.theme.background.default;
   }};

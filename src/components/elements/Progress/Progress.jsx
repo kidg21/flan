@@ -11,10 +11,10 @@ font-family: Nunito;
 justify-content: center;
 padding-bottom: 0.5rem;
 display: flex;
-border-bottom: 2px solid ${(props) => { return props.success ? props.theme.palette.grey4 : props.isSelected ? props.theme.palette.primary : props.theme.palette.grey4; }};
+border-bottom: 2px solid ${(props) => { return props.success ? props.theme.palette.neutral40 : props.isSelected ? props.theme.palette.selected : props.theme.palette.neutral40; }};
 align-items: baseline;
 width: 100%;
-color: ${(props) => { return props.success ? props.theme.text.secondary : props.isSelected ? props.theme.palette.primary : props.theme.text.secondary; }};
+color: ${(props) => { return props.success ? props.theme.text.secondary : props.isSelected ? props.theme.palette.selected : props.theme.text.secondary; }};
 &:before {
     content: counter(step);
     counter-increment: step;
@@ -26,9 +26,9 @@ color: ${(props) => { return props.success ? props.theme.text.secondary : props.
     justify-content: center;
     margin-right: 1rem;
     width: 1.5rem;
-    color: ${(props) => { return props.success ? props.theme.palette.white : props.isSelected ? props.theme.palette.white : ""; }};
-    background: ${(props) => { return props.success ? props.theme.palette.secondary : props.isSelected ? props.theme.palette.primary : ""; }};
-    border: 1px solid ${(props) => { return props.success ? props.theme.palette.secondary : props.isSelected ? props.theme.palette.primary : props.theme.text.secondary; }};
+    color: ${(props) => { return props.success ? props.theme.palette.inverse : props.isSelected ? props.theme.palette.inverse : ""; }};
+    background: ${(props) => { return props.success ? props.theme.palette.success80 : props.isSelected ? props.theme.palette.selected : ""; }};
+    border: 1px solid ${(props) => { return props.success ? props.theme.palette.success80 : props.isSelected ? props.theme.palette.selected : props.theme.text.secondary; }};
     border-radius: 50%;
     font-weight: 600;
 }

@@ -42,18 +42,35 @@ A 2-character label can be defined using the 'label' prop.
 
 ### Types
 
-Default Avatar color is a light version of our primary color. Primary and secondary colors are supported in addition to our funciontal colors.
+Default Avatar color is a light version of our action color. Action colors are supported in addition to our funciontal colors.
 
 <Preview>
   <Story name="Types">
     <Grid columns="4">
       <Avatar label="DF" />
-      <Avatar label="PR" type="primary" />
-      <Avatar label="SC" type="secondary" />
+      <Avatar label="PR" type="action" />
       <Avatar label="IN" type="info" />
       <Avatar label="SC" type="success" />
       <Avatar label="WN" type="warning" />
       <Avatar label="AL" type="alert" />
+    </Grid>
+  </Story>
+</Preview>
+
+### Brands
+
+
+<Preview>
+  <Story name="Brands">
+    <Grid columns="4">
+      <Avatar label="PR" brand="research" />
+      <Avatar label="IN" brand="bi" />
+      <Avatar label="SC" brand="broker" />
+      <Avatar label="WN" brand="jobs" />
+      <Avatar label="PR" brand="brand1" />
+      <Avatar label="IN" brand="brand2" />
+      <Avatar label="SC" brand="brand3" />
+      <Avatar label="WN" brand="brand4" />
     </Grid>
   </Story>
 </Preview>

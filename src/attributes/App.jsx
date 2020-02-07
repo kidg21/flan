@@ -1,25 +1,25 @@
-import React, { Component } from "react"
-import styled, { css } from "styled-components"
-import { colors } from "Variables"
-import logo from "images/flan.jpg"
+import React, { Component } from "react";
+import styled, { css } from "styled-components";
+import { colors } from "Variables";
+import logo from "images/flan.jpg";
 
 const image = {
   src: logo,
-  alt: "my image"
-}
+  alt: "my image",
+};
 
 const Container = styled.div`
   padding: 3rem 2rem 1rem;
-`
-const Logo = styled.img``
+`;
+const Logo = styled.img``;
 
 const Header = styled.h1`
-  color: ${colors.success};
+  color: ${colors.success80};
   margin-bottom: 1rem;
-`
-const Body = styled.div``
+`;
+const Body = styled.div``;
 
-const Link = styled.a``
+const Link = styled.a``;
 
 function App() {
   return (
@@ -42,7 +42,7 @@ function App() {
         <Logo src={image.src} alt={image.alt} />
       </Body>
     </Container>
-  )
+  );
 }
 
-export default App
+export default App;

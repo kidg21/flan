@@ -32,7 +32,7 @@ const TagContainer = styled.div`
 `;
 
 function Tag({
-  id, label, icon, style, type,
+  id, label, icon, style, type, brand,
 }) {
   let badgeColor;
   let badgeTextColor;
@@ -53,35 +53,40 @@ function Tag({
 
   switch (type) {
     case "info":
-      badgeColor = "info";
+      badgeColor = "info80";
       break;
     case "success":
-      badgeColor = "success";
+      badgeColor = "success80";
       break;
     case "warning":
-      badgeColor = "warning";
+      badgeColor = "warning80";
       break;
     case "alert":
-      badgeColor = "alert";
-      break;
-    case "blue":
-      badgeColor = "primaryLight";
-      break;
-    case "lightgreen":
-      badgeColor = "secondaryLight";
-      break;
-    case "green":
-      badgeColor = "secondary";
-      break;
-    case "darkgreen":
-      badgeColor = "secondaryDark";
-      break;
-    case "darkblue":
-      badgeColor = "primaryDark";
+      badgeColor = "alert80";
       break;
     default:
-      badgeColor = "primary";
+      badgeColor = "action80";
       break;
+  }
+
+  if (!type) {
+    if (brand === "research") {
+      badgeColor = "research";
+    } if (brand === "bi") {
+      badgeColor = "bi";
+    } if (brand === "jobs") {
+      badgeColor = "jobs";
+    } if (brand === "broker") {
+      badgeColor = "broker";
+    } if (brand === "brand1") {
+      badgeColor = "brand1";
+    } if (brand === "brand2") {
+      badgeColor = "brand2";
+    } if (brand === "brand3") {
+      badgeColor = "brand3";
+    } if (brand === "brand4") {
+      badgeColor = "brand4";
+    } else { null; }
   }
 
 
@@ -104,6 +109,7 @@ Tag.propTypes = {
   id: PropTypes.string,
   label: PropTypes.string,
   type: PropTypes.string,
+  brand: PropTypes.string,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   style: PropTypes.string,
 };
@@ -111,6 +117,7 @@ Tag.propTypes = {
 Tag.defaultProps = {
   label: null,
   id: null,
+  brand: null,
   type: null,
   icon: null,
   style: null,

@@ -28,18 +28,6 @@ storiesOf("Blocks|Tabs", module)
         </Tabs>
       );
     }),
-  )
-  .add(
-    "Secondary",
-    withInfo()(() => {
-      return (
-        <Tabs>
-          <Tab tabLabel="Tab" type="secondary" isSelected />
-          <Tab tabLabel="Tab" type="secondary" />
-          <Tab tabLabel="Tab" type="secondary" />
-        </Tabs>
-      );
-    }),
   );
 
 storiesOf("Blocks|Tabs", module)

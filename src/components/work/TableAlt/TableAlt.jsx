@@ -109,7 +109,7 @@ function TableAlt({
     case "standard":
     default:
       cellBorder = "1px solid";
-      cellBorderColor = "grey5";
+      cellBorderColor = "neutral40";
       cellPadding = "0.5em";
       break;
   }

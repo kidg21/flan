@@ -51,7 +51,7 @@ const CommandName = styled(Link)`
   &:focus {
     border: 1px solid
       ${(props) => {
-    return props.theme.palette.primary;
+    return props.theme.palette.action80;
   }};
     outline: none;
   }

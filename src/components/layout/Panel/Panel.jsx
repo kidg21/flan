@@ -78,12 +78,12 @@ const PanelSection = styled(PanelBody)`
   z-index: 1;
   &:first-of-type {
     border-bottom: 1px solid ${(props) => {
-    return props.theme.palette.grey5;
+    return props.theme.palette.neutral40;
   }};
   }
   &:last-of-type {
     border-top: 1px solid ${(props) => {
-    return props.theme.palette.grey5;
+    return props.theme.palette.neutral40;
   }};
   }
 `;
