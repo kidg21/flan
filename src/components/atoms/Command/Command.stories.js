@@ -143,14 +143,19 @@ storiesOf("Atoms|Command", module)
     );
   });
 
-storiesOf("Application|Libraries", module)
-  .addDecorator(Padding)
-  .add("Standard Commands", () => {
-    return (
-      <Grid gap="large">
-        <Title text="Standard Commands" />
-        <Text text="The Command is an interactive UI element that pairs an icon and a label. Use a Command when a user's action is intended to begin an action or workflow." />
-        <CommandGrid data={commandsStandard} />
-      </Grid>
-    );
-  });
+export default {
+  title: "Atoms/Command/Tests",
+  component: Command,
+  parameters: {
+    docs: { page: null },
+  },
+  includeStories: ["Knobs", "Actions", "Specs"],
+  decorators: [Padding, withKnobs],
+};
+export const CommandLibrary = () => {
+  return (
+    <Grid gap="large">
+      <CommandGrid data={commandsStandard} />
+    </Grid>
+  );
+};
