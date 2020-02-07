@@ -13,6 +13,7 @@ import { InteractiveContext, DisabledContext } from "States";
 
 const ListWrapper = styled.ul`
   display: flex;
+  flex: auto;
   flex-direction: column;
   list-style: none;
   li:not(:last-child) {
@@ -25,8 +26,13 @@ const ListWrapper = styled.ul`
   }
 `;
 
+const LinkedWrapper = styled.a`
+flex: auto;
+`;
+
 const ListItemWrapper = styled.li`
   position: relative;
+  
   color: ${(props) => {
     return props.isSelected ? props.theme.text.inverse : props.theme.text.primary;
   }};
@@ -103,18 +109,27 @@ function ListItem({
     leftContent = <Avatar label={pre.label} icon={pre.icon} disabled={disabled} />;
   }
 
-  let as;
+  let centerContent;
+
   if (onClick) {
-    as = "a";
+    centerContent = (
+      <LinkedWrapper onClick={onClick}>
+        <React.Fragment >
+          <Title text={title} disabled={disabled} />
+          {description ? (<Text text={description} disabled={disabled} />
+          ) : null}
+        </React.Fragment>
+      </LinkedWrapper>
+    );
+  } else {
+    centerContent = (
+      <React.Fragment >
+        <Title text={title} disabled={disabled} />
+        {description ? (<Text text={description} disabled={disabled} />
+        ) : null}
+      </React.Fragment>);
   }
 
-  const centerContent = (
-    <React.Fragment>
-      <Title as={as} text={title} disabled={disabled} />
-      {description ? (<Text text={description} disabled={disabled} />
-      ) : null}
-    </React.Fragment>
-  );
 
   let rightContent;
   if (post && post.type) {
@@ -130,6 +145,7 @@ function ListItem({
 
   return (
     <ListItemWrapper
+
       active={active}
       href={href}
       id={id}
