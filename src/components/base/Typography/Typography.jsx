@@ -24,7 +24,7 @@ const StyledLabel = styled.label`
   }};
   content: "*";
   color: ${(props) => {
-    return props.theme.palette.alert;
+    return props.theme.palette.alert80;
   }};
   font-size: ${(props) => { return props.fontSize; }};
   line-height: ${(props) => { return props.lineHeight; }};
@@ -58,6 +58,7 @@ const TitleText = styled.h6`
 font-size: ${(props) => { return props.fontSize; }};
 font-weight: ${(props) => { return props.fontWeight; }};
 color: inherit;
+line-height: normal;
 font-family: ${(props) => { return props.theme.typography.primary; }};
 letter-spacing: ${(props) => { return props.letterSpacing; }};
 `;
@@ -66,6 +67,7 @@ const Paragraph = styled.p`
 font-size: ${(props) => { return props.fontSize; }};
 font-weight: ${(props) => { return props.fontWeight; }};
 color: inherit;
+line-height: normal;
 font-family: ${(props) => { return props.theme.typography.primary; }};
 letter-spacing: ${(props) => { return props.letterSpacing; }};
 `;

@@ -31,7 +31,7 @@ const FormSection = styled.section`
 function Section({ children, title }) {
   return (
     <FormSection>
-      {title ? <Title text={title} /> : null}
+      {title ? <Title weight="bold" text={title} /> : null}
       {children}
     </FormSection>
   );
@@ -80,9 +80,9 @@ function Form({
   return (
     <FormWrapper action={action} method={method} novalidate={novalidate} onSubmit={onSubmit}>
       {title || subtitle || description ? (
-        <FormHeader gap="tiny">
-          {title ? <Title text={title} /> : null}
-          {subtitle ? <Title text={subtitle} /> : null}
+        <FormHeader columns="1" gap="tiny">
+          {title ? <Title size="2x" weight="bold" text={title} /> : null}
+          {subtitle ? <Text size="4x" text={subtitle} /> : null}
           {description ? <Text text={description} /> : null}
         </FormHeader>
       ) : null}

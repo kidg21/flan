@@ -20,7 +20,7 @@ const ListWrapper = styled.ul`
     return props.divider ? "1px solid" : "";
   }};
     border-bottom-color: ${(props) => {
-    return props.divider ? props.theme.palette.grey5 : "";
+    return props.divider ? props.theme.palette.neutral40 : "";
   }};
   }
 `;
@@ -31,7 +31,7 @@ const ListItemWrapper = styled.li`
     return props.isSelected ? props.theme.text.inverse : props.theme.text.primary;
   }};
   background-color: ${(props) => {
-    return props.isSelected ? props.theme.palette.primary : props.theme.background.default;
+    return props.isSelected ? props.theme.background.selected : props.theme.background.default;
   }};
   padding: 1em;
   cursor: ${(props) => {
