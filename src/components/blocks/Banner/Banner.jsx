@@ -17,8 +17,7 @@ const StyledBanner = styled(Card)`
 `;
 
 const Close = styled(Icon)`
-  position: absolute;
-  right: 0.75em;
+  color: inherit;
   cursor: pointer;
   opacity: 0.5;
   &:hover {
@@ -57,8 +56,8 @@ function Banner({
       <Bar
         contentAlign={description || link ? "" : "center"}
         padding="none"
-        left={bannerType}
         leftWidth="max-content"
+        left={bannerType}
         centerAlign="left"
         center={
           <Grid columns="1" gap="tiny">
@@ -69,8 +68,9 @@ function Banner({
             ) : null}
           </Grid>
         }
+        rightWidth="max-content"
+        right={(<Close icon="close" size="lg" onClick={onClose} />)}
       />
-      <Close icon="close" size="lg" onClick={onClose} />
     </StyledBanner>
   );
 }
