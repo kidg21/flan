@@ -23,7 +23,7 @@ function MainPanelHeader({
 MainPanelHeader.propTypes = {
   id: PropTypes.string,
   title: PropTypes.node.isRequired,
-  style: PropTypes.node,
+  style: PropTypes.string,
   menuData: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
     label: PropTypes.string,

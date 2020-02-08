@@ -5,22 +5,23 @@ import Button from "atoms/Button";
 import Panel from "layout/Panel";
 import ModernExterior1 from "images/residential/modern exterior 1.jpg";
 import Banner from "blocks/Banner";
+import DialogBox from "elements/DialogBox";
 import Modal from "layout/Modal";
 
-const ModalNotes = markdown.require("./Modal.md");
+// const ModalNotes = markdown.require("./Modal.md");
 
 storiesOf("Layout|Modal", module)
-  .addParameters({
-    info: {
-      text: "Modal info goes here..."
-    },
-    notes: {
-      markdown: ModalNotes
-    }
-  })
+  // .addParameters({
+  //   info: {
+  //     text: "Modal info goes here..."
+  //   },
+  //   notes: {
+  //     markdown: ModalNotes
+  //   }
+  // })
   .add(
     "Documentation",
-    withInfo()(() => {
+    () => {
       return React.createElement(() => {
         const [visible, setVisible] = useState(false);
         const handleOpen = () => {
@@ -45,8 +46,7 @@ storiesOf("Layout|Modal", module)
           </>
         );
       });
-    })
-  );
+    });
 
 storiesOf("Layout|Modal", module)
   .addDecorator(withKnobs)
@@ -134,6 +134,51 @@ storiesOf("Layout|Modal", module)
             <Banner
               title="This is a Standard notification telling you stuff."
               onClose={handleClose}
+            />
+          </Modal>
+          <Panel
+            header={
+              <Button
+                label="Default Modal"
+                onClick={handleOpen}
+                style={buttonStyle}
+              />
+            }
+          >
+          </Panel>
+        </>
+      );
+    });
+  })
+  .add("Dialog Modal", () => {
+    return React.createElement(() => {
+      const [visible, setVisible] = useState(false);
+      const handleOpen = () => {
+        setVisible(true);
+      };
+      const handleClose = () => {
+        setVisible(false);
+      };
+      const buttonStyle = { margin: "10vh 30vw" };
+      return (
+        <>
+          <Modal onClose={handleClose} visible={visible}>
+            <DialogBox
+              title="Default Dialog"
+              body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              buttons={[
+                {
+                  id: "Cancel",
+                  label: "Nevermind...",
+                  onClick: handleClose,
+                },
+                {
+                  id: "Confirm",
+                  label: "Let's Do It!",
+                  type: "Success",
+                  onClick: handleClose,
+                },
+              ]}
             />
           </Modal>
           <Panel
