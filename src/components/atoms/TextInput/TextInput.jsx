@@ -200,6 +200,7 @@ function TextInput({
         onFocus={onFocus}
         rows={rows} // textarea attribute
         cols={cols} // textarea attribute
+        autoComplete={autocompleteList && autocompleteList.length > 0 ? "on" : "off"}
       />
       {autocompleteDataList}
       {helpText ? <Text size="1x" text={helpText} /> : null}
