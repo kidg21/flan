@@ -12,13 +12,12 @@ import Text, { Link, Title } from "base/Typography";
 
 const StyledBanner = styled(Card)`
   border-color: ${(props) => {
-    return props.theme.palette[props.borderColor] || props.theme.palette.grey3;
+    return props.theme.palette[props.borderColor] || props.theme.palette.neutral80;
   }};
 `;
 
 const Close = styled(Icon)`
-  position: absolute;
-  right: 0.75em;
+  color: inherit;
   cursor: pointer;
   opacity: 0.5;
   &:hover {
@@ -57,8 +56,8 @@ function Banner({
       <Bar
         contentAlign={description || link ? "" : "center"}
         padding="none"
-        left={bannerType}
         leftWidth="max-content"
+        left={bannerType}
         centerAlign="left"
         center={
           <Grid columns="1" gap="tiny">
@@ -69,8 +68,9 @@ function Banner({
             ) : null}
           </Grid>
         }
+        rightWidth="max-content"
+        right={(<Close icon="close" size="lg" onClick={onClose} />)}
       />
-      <Close icon="close" size="lg" onClick={onClose} />
     </StyledBanner>
   );
 }

@@ -5,7 +5,7 @@ export default create({
   base: "light",
 
   // colorPrimary: "hotpink",
-  colorSecondary: colors.blue,
+  colorSecondary: colors.blue80,
 
   // UI
   // appBg: "white",

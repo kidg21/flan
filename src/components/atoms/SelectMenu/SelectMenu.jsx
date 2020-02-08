@@ -15,23 +15,23 @@ const selectStyles = {
   container: (styles) => {
     return {
       ...styles,
-      fontFamily: fonts.data,
+      fontFamily: fonts.body,
     };
   },
   // Toggle UI
   control: (styles, { isDisabled, isFocused }) => {
-    let bgColor = colors.white;
-    if (!isFocused) bgColor = isDisabled ? colors.greyLight : colors.white;
+    let bgColor = colors.white60;
+    if (!isFocused) bgColor = isDisabled ? colors.grey10 : colors.white60;
     /** TODO: Get an 'alert' border working on the select input.
      * Need to handle all standard cases (default, focus, hover, error, and disabled)
      */
     let borderColor;
     if (isDisabled) {
-      borderColor = colors.grey20;
+      borderColor = colors.grey30;
     } else if (isFocused) {
-      borderColor = `${colors.success}!important`;
+      borderColor = `${colors.blue80}!important`;
     } else {
-      borderColor = colors.grey2;
+      borderColor = colors.grey30;
     }
     return {
       ...styles,
@@ -43,26 +43,26 @@ const selectStyles = {
       "fontWeight": "normal",
       "letterSpacing": ".5px",
       ":hover": {
-        borderColor: colors.grey60,
+        borderColor: colors.grey40,
       },
     };
   },
   placeholder: (styles, { isFocused }) => {
     return {
       ...styles,
-      fontFamily: fonts.data,
-      color: isFocused ? colors.grey60 : colors.grey60,
-      letterSpacing: ".5px",
-      fontWeight: 400,
+      fontFamily: fonts.body,
+      color: isFocused ? colors.grey50 : colors.grey50,
+      fontSize: "0.876rem",
     };
   },
   // selected option
   singleValue: (styles, { isDisabled }) => {
     return {
       ...styles,
-      fontFamily: fonts.data,
+      fontFamily: fonts.body,
       opacity: isDisabled ? 0.5 : 1,
       transition: "opacity 300ms",
+      fontSize: "0.876rem",
     };
   },
   // 'X' to clear current selection
@@ -117,7 +117,8 @@ const selectStyles = {
   menu: (styles) => {
     return {
       ...styles,
-      fontFamily: fonts.data,
+      fontFamily: fonts.body,
+      fontSize: "0.876rem",
       textAlign: "left",
       border: "1px solid",
       borderColor: colors.grey40,
@@ -139,7 +140,7 @@ const selectStyles = {
     } else if (isSelected) {
       color = colors.grey20;
     } else if (isFocused) {
-      color = colors.black;
+      color = colors.grey110;
     }
 
     return {
@@ -155,7 +156,6 @@ const SelectMenuContainer = styled(Grid)`
   color: ${(props) => {
     return props.theme.text[props.textColor] || props.theme.text.primary;
   }};
-  font-size: 0.876rem;
   width: 100%;
   &:empty {
     &:before {

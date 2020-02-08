@@ -19,14 +19,14 @@ const TemplateWrapper = styled(Flex)`
 const Header = styled(Bar)`
 /* For Dev purposes */
   border-bottom: 1px solid ${(props) => {
-    return props.theme.palette.grey5;
+    return props.theme.palette.neutral40;
   }};
 `;
 
 const Footer = styled(Bar)`
 /* For Dev purposes */
   border-top: 1px solid ${(props) => {
-    return props.theme.palette.grey5;
+    return props.theme.palette.neutral40;
   }};
 `;
 
@@ -58,7 +58,7 @@ const RegionLeft = styled(Flex)`
   }};
   /* For Dev purposes */
   border-right: 1px solid ${(props) => {
-    return props.theme.palette.grey5;
+    return props.theme.palette.neutral40;
   }};
   &:empty {
     &:before {
@@ -102,7 +102,7 @@ const RegionRight = styled(Flex)`
   }};
   /* For Dev purposes */
   border-left: 1px solid ${(props) => {
-    return props.theme.palette.grey5;
+    return props.theme.palette.neutral40;
   }};
   &:empty {
     &:before {

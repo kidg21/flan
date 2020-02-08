@@ -18,7 +18,7 @@ storiesOf("Atoms|Avatar", module)
         <Grid>
           <Avatar label="LG" />
           <Avatar label="HF" color="warning" />
-          <Avatar label="TX" color="secondary" />
+          <Avatar label="TX" color="success" />
           <Avatar icon="mail" />
           <Avatar icon="user" color="alert" />
         </Grid>

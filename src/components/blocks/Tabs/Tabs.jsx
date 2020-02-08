@@ -15,9 +15,6 @@ border: ${(props) => {
   border-radius: ${(props) => {
     return props.borderRadius || "0px";
   }};
-  background-color: ${(props) => {
-    return props.theme.background[props.backgroundColor] || "";
-  }};
   color: ${(props) => {
     return props.theme.palette[props.fontColor] || "";
   }};

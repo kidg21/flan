@@ -9,7 +9,7 @@ position: relative;
 width: 100px;
 animation: slide 1.5s linear infinite;
 background: ${(props) => {
-    return props.theme.palette.primary;
+    return props.theme.palette.action80;
   }};
 
 
@@ -55,25 +55,25 @@ const Dot = styled.div`
     opacity: 0;
     transform: scale(0.5);
     background: ${(props) => {
-    return props.theme.palette.primary;
+    return props.theme.palette.action80;
   }}; }
   25% {
     opacity: 1;
     transform: scale(1.5);
     background: ${(props) => {
-    return props.theme.palette.primary;
+    return props.theme.palette.action80;
   }}; }
   50% {
     opacity: 0;
     transform: scale(0.5);
     background: ${(props) => {
-    return props.theme.palette.primary;
+    return props.theme.palette.action80;
   }}; }
   75% {
     opacity: 1;
     transform: scale(1.5);
     background: ${(props) => {
-    return props.theme.palette.primary;
+    return props.theme.palette.action80;
   }}; }
   100% {
     opacity: 0;

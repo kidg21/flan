@@ -220,8 +220,8 @@ const RolePermissions = React.forwardRef(({
 });
 
 RolePermissions.propTypes = {
-  style: PropTypes.object,
-  panelStyle: PropTypes.object,
+  style: PropTypes.string,
+  panelStyle: PropTypes.string,
   roles: PropTypes.arrayOf(PropTypes.shape({
     role: PropTypes.string,
     name: PropTypes.string,

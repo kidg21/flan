@@ -169,50 +169,40 @@ function Button({
 
   switch (type && type.toLowerCase()) {
     case "success":
-      buttonColor = "success";
+      buttonColor = "success80";
       fontColor = buttonColor;
-      tintColor = "successTint";
-      shadeColor = "successDark";
+      tintColor = "success20";
+      shadeColor = "success100";
       break;
     case "warning":
-      buttonColor = "warning";
+      buttonColor = "warning80";
       fontColor = buttonColor;
-      tintColor = "warningTint";
-      shadeColor = "warningDark";
+      tintColor = "warning20";
+      shadeColor = "warning100";
       break;
     case "alert":
-      buttonColor = "alert";
+      buttonColor = "alert80";
       fontColor = buttonColor;
-      tintColor = "alertTint";
-      shadeColor = "alertDark";
+      tintColor = "alert20";
+      shadeColor = "alert100";
       break;
     case "info":
-      buttonColor = "info";
+      buttonColor = "info80";
       fontColor = buttonColor;
-      tintColor = "infoTint";
-      shadeColor = "infoDark";
+      tintColor = "info20";
+      shadeColor = "info100";
       break;
-    case "primary":
-      buttonColor = "primary";
+    case "action":
+      buttonColor = "action80";
       fontColor = buttonColor;
-      tintColor = "primaryTint";
-      shadeColor = "primaryDark";
-      break;
-    case "secondary":
-      buttonColor = "secondary";
-      fontColor = buttonColor;
-      tintColor = "secondaryTint";
-      shadeColor = "secondaryDark";
-      break;
-    case "grey":
-      buttonColor = "grey";
-      fontColor = buttonColor;
+      tintColor = "action20";
+      shadeColor = "action100";
       break;
     default:
-      buttonColor = "primary";
+      buttonColor = "action80";
       fontColor = buttonColor;
-      tintColor = "primaryTint";
-      shadeColor = "primaryDark";
+      tintColor = "action20";
+      shadeColor = "action100";
       break;
   }
 
@@ -233,7 +223,7 @@ function Button({
   }
 
   if (solid) {
-    fontColor = "white";
+    fontColor = "inverse";
     borderColor = buttonColor;
     hoverColor = shadeColor;
     backgroundColor = buttonColor;
@@ -247,11 +237,11 @@ function Button({
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
 
   if (isDisabled) {
-    fontColor = "grey4";
-    borderColor = "grey4";
+    fontColor = "disabled";
+    borderColor = "disabled";
     if (solid) {
-      fontColor = "white";
-      backgroundColor = "grey4";
+      fontColor = "inverse";
+      backgroundColor = "disabled";
     }
   }
 
