@@ -99,11 +99,10 @@ pipelines:
             - rm -rf node_modules/ss-development
             # Install dependencies
             - npm install --no-package-lock
-            # fix for react-syntax-highligher importing esm instead of cjs
-            - ls
-            - cat node_modules/@storybook/components/dist/syntaxhighlighter/syntaxhighlighter.js
+            # fix for react-syntax-highligher importing esm instead of cjs - discussion here: https://github.com/storybookjs/storybook/pull/9292
+            # once SB merges in a fix we can remove this line as it will no longer be doing anything (all it does is replace /esm/ with /cjs/ in 
+            # the syntaxhighlighter.js file that is causing issues).
             - sed -i "s/\/esm\//\/cjs\//g" node_modules/@storybook/components/dist/syntaxhighlighter/syntaxhighlighter.js
-            - cat node_modules/@storybook/components/dist/syntaxhighlighter/syntaxhighlighter.js
             # Run tests and push coverage to Codacy
             - set -o pipefail
             # Next line fails immediately if any command fails
