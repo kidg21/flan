@@ -100,9 +100,10 @@ pipelines:
             # Install dependencies
             - npm install --no-package-lock
             # fix for react-syntax-highligher importing esm instead of cjs
-            - cat node_modules\@storybook\components\dist\syntaxhighlighter\syntaxhighlighter.js
-            - sed -i "s/\/esm\//\/cjs\//g" node_modules\@storybook\components\dist\syntaxhighlighter\syntaxhighlighter.js
-            - cat node_modules\@storybook\components\dist\syntaxhighlighter\syntaxhighlighter.js
+            - ls
+            - cat node_modules/@storybook/components/dist/syntaxhighlighter/syntaxhighlighter.js
+            - sed -i "s/\/esm\//\/cjs\//g" node_modules/@storybook/components/dist/syntaxhighlighter/syntaxhighlighter.js
+            - cat node_modules/@storybook/components/dist/syntaxhighlighter/syntaxhighlighter.js
             # Run tests and push coverage to Codacy
             - set -o pipefail
             # Next line fails immediately if any command fails
