@@ -114,6 +114,7 @@ function Avatar({
       backgroundColor = "brand4";
     } else { null; }
   }
+  
 
 
   return (
