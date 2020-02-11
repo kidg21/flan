@@ -36,6 +36,7 @@ function InputBlock({
   textInputs,
   onBlur,
   onFocus,
+  onKeyPress,
   warning,
 }) {
   const [state, setState] = useState({
@@ -99,6 +100,7 @@ function InputBlock({
         value={state.input[input.id]}
         onBlur={onBlur}
         onFocus={onFocus}
+        onKeyPress={onKeyPress}
         autocompleteList={input.autocompleteList}
       />
     );
@@ -239,6 +241,7 @@ InputBlock.propTypes = {
   })),
   onBlur: PropTypes.func,
   onFocus: PropTypes.func,
+  onKeyPress: PropTypes.func,
 };
 InputBlock.defaultProps = {
   button: null,
@@ -258,6 +261,7 @@ InputBlock.defaultProps = {
   textInputs: [],
   onBlur: null,
   onFocus: null,
+  onKeyPress: null,
   warning: false,
 };
 

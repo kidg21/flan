@@ -96,6 +96,7 @@ function TextInput({
   value,
   onBlur,
   onFocus,
+  onKeyPress,
   name,
   rows,
   cols,
@@ -198,6 +199,7 @@ function TextInput({
         value={value}
         onBlur={onBlur}
         onFocus={onFocus}
+        onKeyPress={onKeyPress}
         rows={rows} // textarea attribute
         cols={cols} // textarea attribute
         autoComplete={autocompleteList && autocompleteList.length > 0 ? "on" : "off"}
@@ -255,6 +257,7 @@ TextInput.propTypes = {
   value: PropTypes.string,
   onBlur: PropTypes.func,
   onFocus: PropTypes.func,
+  onKeyPress: PropTypes.func,
   name: PropTypes.string,
   rows: PropTypes.string,
   cols: PropTypes.string,
@@ -281,6 +284,7 @@ TextInput.defaultProps = {
   value: null,
   onBlur: null,
   onFocus: null,
+  onKeyPress: null,
   name: "",
   rows: "",
   cols: "",
