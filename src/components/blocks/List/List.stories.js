@@ -156,25 +156,21 @@ storiesOf("Blocks|List", module)
   })
   .add("Pre-Label", () => {
     return (
-      <div style={{ display: "flex" }}>
         <List interactive>
           <ListItem
             title="List Item"
             description="This is the description"
             pre={{ label: "AB" }}
-            onClick
           />
           <ListItem
             title="List Item"
             description="This is the description"
             pre={{ label: "CD" }}
-            onClick
           />
           <ListItem
             title="List Item"
             description="This is the description"
             pre={{ label: "EF" }}
-            onClick
           />
           <ListItem
             title="List Item"
@@ -182,8 +178,6 @@ storiesOf("Blocks|List", module)
             pre={{ label: "GH" }}
           />
         </List>
-
-      </div>
     );
   })
   .add("Pre-Icon", () => {
@@ -288,5 +282,31 @@ storiesOf("Blocks|List", module)
           post={{ type: "checkbox", label: "Box 4" }}
         />
       </List>
+    );
+  })
+  .add("List with onClick", () => {
+    return (
+        <List interactive>
+          <ListItem
+            title="List Item"
+            description="This is the description"
+            onClick
+          />
+          <ListItem
+            title="List Item"
+            description="This is the description"
+            onClick
+          />
+          <ListItem
+            title="List Item"
+            description="This is the description"
+            onClick
+          />
+          <ListItem
+            title="List Item"
+            description="This is the description"
+            onClick
+          />
+        </List>
     );
   });
