@@ -5,7 +5,6 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
-import { withInfo } from "@storybook/addon-info";
 import {
   withKnobs,
   text,
@@ -19,7 +18,7 @@ storiesOf("Blocks|Tabs", module)
   .addDecorator(Padding)
   .add(
     "Documentation",
-    withInfo()(() => {
+    () => {
       return (
         <Tabs>
           <Tab tabLabel="Tab" isSelected />
@@ -27,8 +26,7 @@ storiesOf("Blocks|Tabs", module)
           <Tab tabLabel="Tab" />
         </Tabs>
       );
-    }),
-  );
+    });
 
 storiesOf("Blocks|Tabs", module)
   .addDecorator(Padding)

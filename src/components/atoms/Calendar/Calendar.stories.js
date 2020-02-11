@@ -5,22 +5,13 @@ import { Padding } from "helpers/Display";
 import Form from "layout/Form";
 import Calendar from "atoms/Calendar";
 
-const CalendarNotes = markdown.require("./Calendar.md");
 
 storiesOf("Atoms|Calendar", module)
-  .addParameters({
-    info: {
-      text: "Calendar info goes here...",
-    },
-    notes: {
-      markdown: CalendarNotes,
-    },
-  })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
   .add(
     "Documentation",
-    withInfo()(() => {
+    () => {
       return (
         <Form>
           <Calendar
@@ -40,8 +31,7 @@ storiesOf("Atoms|Calendar", module)
           />
         </Form>
       );
-    }),
-  )
+    })
   .add("Knobs", () => {
     return (
       <Calendar

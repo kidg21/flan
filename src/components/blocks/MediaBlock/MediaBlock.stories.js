@@ -7,8 +7,6 @@ import Text, { Title } from "base/Typography";
 import Card, { CardGrid } from "elements/Card";
 import MediaBlock from "blocks/MediaBlock";
 
-const MediaBlockNotes = markdown.require("./MediaBlock.md");
-
 const image = (
   <Image
     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
@@ -26,22 +24,13 @@ const description = (
 );
 
 storiesOf("Blocks|Media Block", module)
-  .addParameters({
-    info: {
-      text: "Media Block info goes here...",
-    },
-    notes: {
-      markdown: MediaBlockNotes,
-    },
-  })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
   .add(
     "Documentation",
-    withInfo()(() => {
+    () => {
       return <MediaBlock media={image} body={body} />;
-    }),
-  )
+    })
   .add("Knobs", () => {
     return (
       <Card padding="0">

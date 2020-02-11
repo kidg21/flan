@@ -18,7 +18,6 @@ storiesOf("Blocks|Legend", module)
   .addDecorator(withKnobs)
   .add(
     "Documentation",
-    withInfo()(() => {
+    () => {
       return <Legend data={options} />;
-    }),
-  );
+    });

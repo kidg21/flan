@@ -5,15 +5,9 @@ import Grid from "layout/Grid";
 import Avatar from "./Avatar.jsx";
 
 storiesOf("Atoms|Avatar", module)
-  .addParameters({
-    info: {
-      text: "Avatar info goes here...",
-    },
-  })
   .addDecorator(withKnobs)
   .add(
-    "Documentation",
-    withInfo()(() => {
+    "Documentation",() => {
       return (
         <Grid>
           <Avatar label="LG" />
@@ -23,5 +17,4 @@ storiesOf("Atoms|Avatar", module)
           <Avatar icon="user" color="alert" />
         </Grid>
       );
-    }),
-  );
+    });

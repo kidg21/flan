@@ -5,25 +5,16 @@ import { Padding } from "helpers/Display";
 import Form from "layout/Form";
 import Switch from "atoms/Switch";
 
-const SwitchNotes = markdown.require("./Switch.md");
 
 storiesOf("Atoms|Switch", module)
-  .addParameters({
-    info: {
-      text: "Switch info goes here...",
-    },
-    notes: {
-      markdown: SwitchNotes,
-    },
-  })
+
   .addDecorator(Padding)
   .addDecorator(withKnobs)
   .add(
     "Documentation",
-    withInfo()(() => {
+    () => {
       return <Switch label="Switch" />;
-    }),
-  )
+    })
   .add("Knobs", () => {
     return (
       <Switch

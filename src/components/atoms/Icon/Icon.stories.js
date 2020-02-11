@@ -13,10 +13,9 @@ storiesOf("Atoms|Icon", module)
   .addDecorator(withKnobs)
   .add(
     "Documentation",
-    withInfo()(() => {
+    () => {
       return <Icon icon="user_circle" size="2x" />;
-    }),
-  )
+    })
   .add("Knobs", () => {
     return (
       <Icon

@@ -7,30 +7,18 @@ import Grid from "layout/Grid";
 import commandsStandard from "atoms/Command/libraryCommand.data";
 import Command from "atoms/Command";
 
-const CommandNotes = markdown.require("./Command.md");
-
 // Command
 storiesOf("Atoms|Command", module)
-  .addParameters({
-    info: {
-      text:
-        "A Command is like a Button...only less button-y.  Oh, and it usually has an icon...unless it doesn't.",
-    },
-    notes: {
-      markdown: CommandNotes,
-    },
-  })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
   .add(
     "Documentation",
-    withInfo()(() => {
+   () => {
       return <Command label="Command" icon="circle_solid" />;
-    }),
-  )
+    })
   .add(
     "Knobs",
-    withInfo()(() => {
+    () => {
       return (
         <Command
           name={select(
@@ -93,8 +81,7 @@ storiesOf("Atoms|Command", module)
           )}
         />
       );
-    }),
-  )
+    })
   .add("Skeleton", () => {
     return <Command icon="" />;
   })

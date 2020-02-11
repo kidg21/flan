@@ -4,21 +4,13 @@ import React from "react";
 import Card from "elements/Card";
 import Grid from "layout/Grid";
 
-const GriddNotes = markdown.require("./Grid.md");
 
 storiesOf("Layout|Grid/", module)
-  .addParameters({
-    info: {
-      text: "Grid info goes here.",
-    },
-    notes: {
-      markdown: GriddNotes,
-    },
-  })
+
   .addDecorator(withKnobs)
   .add(
     "Documentation",
-    withInfo()(() => {
+    () => {
       return (
         <Grid>
           <Card />
@@ -27,8 +19,7 @@ storiesOf("Layout|Grid/", module)
           <Card />
         </Grid>
       );
-    }),
-  )
+    })
   .add("Knobs", () => {
     return (
       <Grid

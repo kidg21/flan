@@ -29,11 +29,9 @@
 //   .addDecorator(Padding)
 //   .addDecorator(withKnobs)
 //   .add(
-//     "Documentation",
-//     withInfo()(() => {
+//     "Documentation",() => {
 //       return <Button label="Standard Button" />;
-//     }),
-//   )
+//     })
 //   .add("Skeleton", () => {
 //     return <Button />;
 //   })

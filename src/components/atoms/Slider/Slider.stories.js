@@ -5,25 +5,16 @@ import { Padding } from "helpers/Display";
 import Form, { Section } from "layout/Form";
 import Slider from "atoms/Slider";
 
-const SliderNotes = markdown.require("./Slider.md");
+
 
 storiesOf("Atoms|Slider", module)
-  .addParameters({
-    info: {
-      text: "Range Slider info goes here...",
-    },
-    notes: {
-      markdown: SliderNotes,
-    },
-  })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
   .add(
     "Documentation",
-    withInfo()(() => {
+    () => {
       return <Slider />;
-    }),
-  )
+    })
   .add("Knobs", () => {
     return (
       <Slider
