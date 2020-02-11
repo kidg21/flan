@@ -37,6 +37,7 @@ function InputBlock({
   onBlur,
   onFocus,
   warning,
+  onKeyPress,
 }) {
   const [state, setState] = useState({
     input: textInputs.reduce((inputMap, input) => {
