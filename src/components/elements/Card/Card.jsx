@@ -554,7 +554,7 @@ Card.propTypes = {
   }),
   onClick: PropTypes.func,
   padding: PropTypes.oneOf(["0", "1x", "2x", "3x", "4x"]),
-  shadow: PropTypes.oneOf(["none", "standard", "2x"]),
+  shadow: PropTypes.oneOf(["none", "1x", "2x"]),
   title: PropTypes.string,
   type: PropTypes.string,
 };

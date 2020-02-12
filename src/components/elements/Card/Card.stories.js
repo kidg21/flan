@@ -181,7 +181,7 @@ storiesOf("Elements|Card", module)
           "shadow",
           {
             "none": "none",
-            "standard": null,
+            "1x": null,
             "2x": "2x",
           },
           null,
