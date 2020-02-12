@@ -2,39 +2,66 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import { Darken } from "Variables";
 import Icon from "atoms/Icon";
-import Card from "elements/Card";
-import IconBlock from "blocks/IconBlock";
+import Grid from "layout/Grid";
 
-const CardPicker = styled(Card)`
-width: 35%;
+
+const Swatch = styled.button`
+width: 2rem;
+height: 2rem;
+color: white;
+border: 0px solid white;
+cursor: pointer;
+border-radius: 100%;
+background-color: ${(props) => {
+  return props.theme.palette[props.color];
+}};
+&:hover { 
+  ${Darken};
+};
+&:focus {
+  outline: none;
+}
 `;
 
-function Picker({
-  id,
+
+function ColorSwatch({isSelected, color, onClick}) {
+  return (
+    
+    <React.Fragment>
+      {isSelected ? (
+       <Swatch
+       onClick={onClick}
+       color={color}
+                >
+         <Icon icon="check"/>
+        </Swatch>
+      
+      ) : (
+        <Swatch
+        onClick={onClick}
+        color={color}
+      />
+        )}
+    </React.Fragment>
+  )
+};
+
+
+function Picker({children
 }) {
 
   return (
-    <CardPicker
-      id={id}
-      padding="2x"
+    <Grid
+      columns="8"
     >
-        <IconBlock>
-            <Icon icon="circle_solid" size="2x" type="warning"/>
-            <Icon icon="circle_solid" size="2x" type="success"/>
-            <Icon icon="circle_solid" size="2x" type="alert"/>
-            <Icon icon="circle_solid" size="2x" type="info"/>
-            <Icon icon="circle_solid" size="2x" brand="research"/>
-            <Icon icon="circle_solid" size="2x" brand="bi"/>
-            <Icon icon="circle_solid" size="2x" brand="jobs"/>
-            <Icon icon="circle_solid" size="2x" brand="brand1"/>
-            <Icon icon="circle_solid" size="2x" brand="brand2"/>
-        </IconBlock>
+      {children}
 
-    </CardPicker>
+    </Grid>
   );
-}
+};
 
 
 
-export default Picker;
+export { Picker as default, ColorSwatch };
