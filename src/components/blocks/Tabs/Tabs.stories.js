@@ -21,9 +21,9 @@ storiesOf("Blocks|Tabs", module)
     () => {
       return (
         <Tabs>
-          <Tab tabLabel="Tab" isSelected />
-          <Tab tabLabel="Tab" />
-          <Tab tabLabel="Tab" />
+          <Tab label="Tab" isSelected />
+          <Tab label="Tab" />
+          <Tab label="Tab" />
         </Tabs>
       );
     });
@@ -61,7 +61,7 @@ storiesOf("Blocks|Tabs", module)
             null,
             "Tab 1",
           )}
-          tabLabel={text("Tab 1", "Tab 1", "Tab 1")}
+          label={text("Tab 1", "Tab 1", "Tab 1")}
           disabled={boolean("Disable 1", false, "Tab 1")}
           onClick={() => {
             alert("Tab 1 clicked!");
@@ -81,7 +81,7 @@ storiesOf("Blocks|Tabs", module)
             null,
             "Tab 2",
           )}
-          tabLabel={text("Tab 2", "Tab 2", "Tab 2")}
+          label={text("Tab 2", "Tab 2", "Tab 2")}
           disabled={boolean("Disable 2", false, "Tab 2")}
           onClick={() => {
             alert("Tab 2 clicked!");
@@ -101,7 +101,7 @@ storiesOf("Blocks|Tabs", module)
             null,
             "Tab 3",
           )}
-          tabLabel={text("Tab 3", "Tab 3", "Tab 3")}
+          label={text("Tab 3", "Tab 3", "Tab 3")}
           disabled={boolean("Disable 3", false, "Tab 3")}
           onClick={() => {
             alert("Tab 3 clicked!");
@@ -121,7 +121,7 @@ storiesOf("Blocks|Tabs", module)
             null,
             "Tab 4",
           )}
-          tabLabel={text("Tab 4", "Tab 4", "Tab 4")}
+          label={text("Tab 4", "Tab 4", "Tab 4")}
           disabled={boolean("Disable 4", false, "Tab 4")}
           onClick={() => {
             alert("Tab 4 clicked!");
@@ -141,7 +141,7 @@ storiesOf("Blocks|Tabs", module)
             null,
             "Tab 5",
           )}
-          tabLabel={text("Tab 5", "Tab 5", "Tab 5")}
+          label={text("Tab 5", "Tab 5", "Tab 5")}
           disabled={boolean("Disable 5", false, "Tab 5")}
           onClick={() => {
             alert("Tab 5 clicked!");
@@ -156,27 +156,27 @@ storiesOf("Blocks|Tabs", module)
   .add("Single-Row (default)", () => {
     return (
       <Tabs>
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" />
+        <Tab label="Tab" />
+        <Tab label="Tab" />
+        <Tab label="Tab" />
       </Tabs>
     );
   })
   .add("Vertical Column", () => {
     return (
       <Tabs vertical>
-        <Tab tabLabel="Tab" />
-        <Tab tabLabel="Tab" isSelected />
-        <Tab tabLabel="Tab" />
+        <Tab label="Tab" />
+        <Tab label="Tab" isSelected />
+        <Tab label="Tab" />
       </Tabs>
     );
   })
   .add("Icon Tabs", () => {
     return (
       <Tabs>
-        <Tab tabLabel="Tab" icon="user" />
-        <Tab tabLabel="Tab" icon="user" />
-        <Tab tabLabel="Tab" icon="user" />
+        <Tab label="Tab" icon="user" />
+        <Tab label="Tab" icon="user" />
+        <Tab label="Tab" icon="user" />
       </Tabs>
     );
   })
@@ -192,9 +192,9 @@ storiesOf("Blocks|Tabs", module)
   .add("Count Tabs", () => {
     return (
       <Tabs>
-        <Tab tabLabel="Tab" count="1" />
-        <Tab tabLabel="Tab" count="87" />
-        <Tab tabLabel="Tab" count="2" />
+        <Tab label="Tab" count="1" />
+        <Tab label="Tab" count="87" />
+        <Tab label="Tab" count="2" />
       </Tabs>
     );
   });
@@ -207,21 +207,21 @@ storiesOf("Blocks|Tabs", module)
       return (
         <Tabs columns="">
           <Tab
-            tabLabel="Tab 1"
+            label="Tab 1"
             isSelected={activeSingleTab === "tab1"}
             onClick={() => {
               setActiveSingleTab("tab1");
             }}
           />
           <Tab
-            tabLabel="Tab 2"
+            label="Tab 2"
             isSelected={activeSingleTab === "tab2"}
             onClick={() => {
               setActiveSingleTab("tab2");
             }}
           />
           <Tab
-            tabLabel="Tab 3"
+            label="Tab 3"
             isSelected={activeSingleTab === "tab3"}
             onClick={() => {
               setActiveSingleTab("tab3");
@@ -237,7 +237,7 @@ storiesOf("Blocks|Tabs", module)
       return (
         <Tabs columns="">
           <Tab
-            tabLabel="Tab 1"
+            label="Tab 1"
             isSelected={activeToggleTab === "tab1"}
             onClick={() => {
               if (activeToggleTab === "tab1") {
@@ -249,7 +249,7 @@ storiesOf("Blocks|Tabs", module)
             }}
           />
           <Tab
-            tabLabel="Tab 2"
+            label="Tab 2"
             isSelected={activeToggleTab === "tab2"}
             onClick={() => {
               if (activeToggleTab === "tab2") {
@@ -261,7 +261,7 @@ storiesOf("Blocks|Tabs", module)
             }}
           />
           <Tab
-            tabLabel="Tab 3"
+            label="Tab 3"
             isSelected={activeToggleTab === "tab3"}
             onClick={() => {
               if (activeToggleTab === "tab3") {
@@ -284,21 +284,21 @@ storiesOf("Blocks|Tabs", module)
       return (
         <Tabs columns="">
           <Tab
-            tabLabel="Tab 1"
+            label="Tab 1"
             isSelected={activeMultiTab}
             onClick={() => {
               setActiveMultiTab(!activeMultiTab);
             }}
           />
           <Tab
-            tabLabel="Tab 2"
+            label="Tab 2"
             isSelected={activeMultiTab2}
             onClick={() => {
               setActiveMultiTab2(!activeMultiTab2);
             }}
           />
           <Tab
-            tabLabel="Tab 3"
+            label="Tab 3"
             isSelected={activeMultiTab3}
             onClick={() => {
               setActiveMultiTab3(!activeMultiTab3);
