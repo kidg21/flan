@@ -77,19 +77,4 @@ storiesOf("Elements|Dialog Box", module)
         ]}
       />
     );
-  })
-  .add("Upload", () => {
-    return (
-      <DialogBox
-        title="Upload Map File"
-        body="Upload a file from your computer."
-        buttons={[
-          {
-            id: "Upload",
-            label: "Choose File",
-          }
-        ]}
-      />
-    );
   });
-
