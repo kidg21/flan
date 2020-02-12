@@ -3,6 +3,8 @@
 import React from "react";
 import { Padding } from "helpers/Display";
 import DialogBox from "elements/DialogBox";
+import Icon from "atoms/Icon";
+import Bar from "blocks/Bar";
 
 
 storiesOf("Elements|Dialog Box", module)
@@ -72,6 +74,20 @@ storiesOf("Elements|Dialog Box", module)
             label: "Affirmative",
             type: "alert",
           },
+        ]}
+      />
+    );
+  })
+  .add("Upload", () => {
+    return (
+      <DialogBox
+        title="Upload Map File"
+        body="Upload a file from your computer."
+        buttons={[
+          {
+            id: "Upload",
+            label: "Choose File",
+          }
         ]}
       />
     );
