@@ -361,7 +361,7 @@ function Card({
           centerAlign="left"
           center={
             <React.Fragment>
-              {title ? <Title text={title} /> : null}
+              {title ? <Title  text={title} /> : null}
               {description ? <Text text={description} /> : null}
             </React.Fragment>
           }
