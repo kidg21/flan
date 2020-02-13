@@ -10,6 +10,7 @@ export {
 export { default as GlobalStyles } from "./base/GlobalStyles/GlobalStyles.jsx";
 
 // Publicly exported files from 'atoms'
+export { default as Accordion } from "./atoms/Accordion";
 export { default as Avatar } from "./atoms/Avatar";
 export { default as Loader } from "./atoms/Loader";
 export { default as Badge } from "./atoms/Badge";

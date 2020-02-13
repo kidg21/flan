@@ -8,12 +8,26 @@ import Grid from "layout/Grid";
 
 
 const Swatch = styled.button`
-width: 2rem;
-height: 2rem;
-color: white;
-border: 0px solid white;
+width: ${(props) => {
+  return props.width ;
+}};
+height: ${(props) => {
+  return props.height ;
+}};
+justify-content: center;
+display: flex;
+vertical-align: center;
+align-items: center;
+color: ${(props) => {
+  return props.theme.palette.inverse ;
+}};
+border: 0px solid ${(props) => {
+  return props.theme.palette.inverse ;
+}};
 cursor: pointer;
-border-radius: 100%;
+border-radius: ${(props) => {
+  return props.borderRadius ;
+}};
 background-color: ${(props) => {
   return props.theme.palette[props.color];
 }};
@@ -26,12 +40,26 @@ background-color: ${(props) => {
 `;
 
 
-function ColorSwatch({isSelected, color, onClick}) {
+function ColorSwatch({isSelected, color, square, onClick}) {
+  let borderRadius;
+  let width = "1.5rem";
+  let height = "1.5rem";
+
+  if (square) {
+    borderRadius = "4px";
+  } else {
+    borderRadius = "100%";
+  }
+
+
   return (
     
     <React.Fragment>
       {isSelected ? (
        <Swatch
+       borderRadius={borderRadius}
+       width={width}
+       height={height}
        onClick={onClick}
        color={color}
                 >
@@ -40,6 +68,9 @@ function ColorSwatch({isSelected, color, onClick}) {
       
       ) : (
         <Swatch
+        borderRadius={borderRadius}
+        width={width}
+        height={height}
         onClick={onClick}
         color={color}
       />
@@ -49,12 +80,12 @@ function ColorSwatch({isSelected, color, onClick}) {
 };
 
 
-function Picker({children
+function Picker({children, columns
 }) {
 
   return (
     <Grid
-      columns="8"
+      columns={columns}
     >
       {children}
 

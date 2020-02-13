@@ -122,7 +122,7 @@ const selectStyles = {
       textAlign: "left",
       border: "1px solid",
       borderColor: colors.grey40,
-      boxShadow: shadows.dropShadow,
+      boxShadow: shadows.shadows,
     };
   },
 
