@@ -147,7 +147,7 @@ Tabs.defaultProps = {
 
 Tab.defaultProps = {
   id: null,
-  icon: false,
+  icon: "",
   htmlFor: null,
   count: null,
   isSelected: false,
