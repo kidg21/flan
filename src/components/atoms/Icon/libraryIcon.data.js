@@ -167,6 +167,14 @@ export const iconsApp = [
     desc: placeholder.desc,
   },
   {
+    icon: "cloud_download",
+    desc: placeholder.desc,
+  },
+  {
+    icon: "cloud_upload",
+    desc: placeholder.desc,
+  },
+  {
     icon: "close",
     desc: placeholder.desc,
   },
