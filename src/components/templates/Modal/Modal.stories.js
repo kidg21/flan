@@ -12,6 +12,7 @@ import TextInput from "atoms/TextInput";
 import Text, { Title } from "base/Typography";
 import SelectMenu from "atoms/SelectMenu";
 import Accordion from "atoms/Accordion";
+import Picker, {ColorSwatch} from "elements/Picker";
 
 
 const options = [
@@ -21,9 +22,9 @@ const options = [
     { value: "dataset4", label: "dataset4" },
   ];
 
-const Arrow = styled(Icon)`
-  transform: ${(props) => { return (props.toggleOn ? "rotate(-180deg)" : "rotate(0deg)"); }};
-`;
+
+
+
 
 storiesOf("Templates|Modal", module)
   .addDecorator(Padding)
@@ -38,6 +39,48 @@ storiesOf("Templates|Modal", module)
             setOpen(true);
           }
         }
+
+
+        const ColorPicker = (
+          <Picker 
+          text="Color Swatch" 
+          columns="12">
+                    <ColorSwatch
+                    color="jobs"
+                    
+                    />
+                    <ColorSwatch
+                    color="research"
+                     
+                    />
+                    <ColorSwatch
+                    color="bi"
+                     
+                    />
+                                <ColorSwatch
+                    color="jobs"
+                    isSelected
+                     
+                    />
+                                <ColorSwatch
+                    color="brand1"
+                     
+                    />
+                                <ColorSwatch
+                    color="brand2"
+                    
+                    />
+                                <ColorSwatch
+                    color="brand3"
+                     
+                    />
+                                <ColorSwatch
+                    color="brand4"
+                     
+                    />
+                  </Picker>
+        )
+
       return (
         <DialogBox
         title="Edit Legend"
@@ -58,11 +101,12 @@ storiesOf("Templates|Modal", module)
         placeholder="dataset1"
         options={options}
       />
-        <SelectMenu
+        {/* <SelectMenu
         label="Color Array"
         placeholder="dataset1"
         options={options}
-      />
+      />   */}
+     {ColorPicker}
             <Accordion
             onClick={(e) => {
               toggleDropdown(e);

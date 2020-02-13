@@ -4,6 +4,7 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import { Darken } from "Variables";
 import Icon from "atoms/Icon";
+import Text from "base/Typography";
 import Grid from "layout/Grid";
 
 
@@ -80,16 +81,19 @@ function ColorSwatch({isSelected, color, square, onClick}) {
 };
 
 
-function Picker({children, columns
+function Picker({children, columns, text
 }) {
 
   return (
+    <React.Fragment>
+      { text ? <Text text={text} /> : null}
     <Grid
       columns={columns}
     >
       {children}
 
     </Grid>
+    </React.Fragment>
   );
 };
 
