@@ -46,6 +46,7 @@
           "templates": "lb-react-core/src/components/templates",
           "utils": "lb-react-core/src/components/utils",
           "work": "lb-react-core/src/components/work",
+          "react-syntax-highlighter/dist/esm/languages/prism/jsx.js": "react-syntax-highlighter/dist/cjs/languages/prism/jsx.js"
         }
       }
     ]

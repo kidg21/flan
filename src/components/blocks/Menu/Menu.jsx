@@ -22,6 +22,15 @@ const ListWrapper = styled(List)`
   }};
   overflow-x: hidden;
   overflow-y: auto;
+  border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
+  }};
+  padding: ${(props) => {
+    return props.cardPadding || "";
+  }};
+    filter: ${(props) => {
+    return props.theme.shadows.shadow1;
+  }};
 `;
 
 const ItemWrapper = styled.li`
@@ -101,7 +110,7 @@ function MenuComponent({
       onClick={onClick}
       onMouseLeave={closeMenu}
     >
-      <Card shadow="2x">
+      <Card shadow="1x">
         <ListWrapper id={`listwrapper-${id}`} interactive>
           {data.map((item) => {
             // nested submenu

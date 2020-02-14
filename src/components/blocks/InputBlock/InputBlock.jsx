@@ -98,9 +98,9 @@ function InputBlock({
         title={input.title}
         type={input.type}
         value={state.input[input.id]}
+        onKeyPress={onKeyPress}
         onBlur={onBlur}
         onFocus={onFocus}
-        onKeyPress={onKeyPress}
         autocompleteList={input.autocompleteList}
       />
     );
@@ -223,6 +223,7 @@ InputBlock.propTypes = {
   isRequired: PropTypes.bool,
   label: PropTypes.string,
   onChange: PropTypes.func,
+  onKeyPress: PropTypes.func,
   options: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string,
     value: PropTypes.any,
@@ -241,7 +242,6 @@ InputBlock.propTypes = {
   })),
   onBlur: PropTypes.func,
   onFocus: PropTypes.func,
-  onKeyPress: PropTypes.func,
 };
 InputBlock.defaultProps = {
   button: null,
@@ -254,6 +254,7 @@ InputBlock.defaultProps = {
   isRequired: false,
   label: null,
   onChange: null,
+  onKeyPress: null,
   options: null,
   prefix: false,
   selectOptions: null,
@@ -261,7 +262,6 @@ InputBlock.defaultProps = {
   textInputs: [],
   onBlur: null,
   onFocus: null,
-  onKeyPress: null,
   warning: false,
 };
 

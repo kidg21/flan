@@ -40,7 +40,7 @@ const TagContainer = styled.div`
 `;
 
 function Avatar({
-  type, icon, id, src, alt, image, label, onClick, size,
+  type, icon, id, src, alt, image, label, brand, onClick, size,
 }) {
   let labelType;
   let iconType;
@@ -69,17 +69,17 @@ function Avatar({
   const fontSize = selectedSize ? selectedSize.font : "1em";
 
   const typeHash = {
-    success: "success",
-    warning: "warning",
-    alert: "alert",
-    info: "info",
-    primary: "primary",
-    secondary: "secondary",
+    success: "success80",
+    warning: "warning80",
+    alert: "alert80",
+    info: "info80",
+    action: "action80",
   };
 
 
-  const backgroundColor = type ? (typeHash[type] || type.toLowerCase()) : "primaryLight";
-  const textColor = type ? `${type.toLowerCase()}Tint` : "white";
+  let backgroundColor = type ? (typeHash[type] || type.toLowerCase()) : "action40";
+  const textColor = "inverse";
+
 
   if (image) {
     iconType = (<Image
@@ -95,12 +95,35 @@ function Avatar({
     labelType = <AvatarText weight="semibold" fontSize={fontSize} text={label.substring(0, 2)} />;
   }
 
+  if (!type) {
+    if (brand === "research") {
+      backgroundColor = "research";
+    } if (brand === "bi") {
+      backgroundColor = "bi";
+    } if (brand === "jobs") {
+      backgroundColor = "jobs";
+    } if (brand === "broker") {
+      backgroundColor = "broker";
+    } if (brand === "brand1") {
+      backgroundColor = "brand1";
+    } if (brand === "brand2") {
+      backgroundColor = "brand2";
+    } if (brand === "brand3") {
+      backgroundColor = "brand3";
+    } if (brand === "brand4") {
+      backgroundColor = "brand4";
+    } else { null; }
+  }
+  
+
+
   return (
     <TagContainer
       backgroundColor={backgroundColor}
       icon={icon}
       src={src}
       alt={alt}
+      brand={brand}
       image={image}
       avatarSize={avatarSize}
       id={id}
@@ -114,12 +137,13 @@ function Avatar({
 }
 
 Avatar.propTypes = {
-  /** Options: 'primary', 'secondary', 'info', 'success', 'warning', 'alert' */
+  /** Options: 'action',  'info', 'success', 'warning', 'alert' */
   type: PropTypes.string,
   /** Enter the name of the icon as the prop value. (ex. icon='circle' */
   icon: PropTypes.string,
   image: PropTypes.node,
   src: PropTypes.node,
+  brand: PropTypes.string,
   alt: PropTypes.string,
   id: PropTypes.string,
   onClick: PropTypes.node,
@@ -131,6 +155,7 @@ Avatar.defaultProps = {
   type: null,
   image: null,
   src: null,
+  brand: null,
   alt: null,
   size: null,
   onClick: null,

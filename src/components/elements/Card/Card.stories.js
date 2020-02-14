@@ -154,15 +154,9 @@ storiesOf("Elements|Card", module)
             onClick: action("Command Five Clicked"),
           },
         ]}
-        more={{ element: <Button label="Button" type="solid" color="secondary" fullWidth /> }}
+        more={{ element: <Button label="Button" type="solid" color="success" fullWidth /> }}
         onClick={action("Primary Action Area Clicked")}
-      >
-        {/* Any type of child content is supported */}
-        {/* <CardSection onClick={action("Secondary Action Area Clicked")}>
-          <Button label="Button" type="solid" />
-          <Button label="Button" type="solid" />
-        </CardSection> */}
-      </Card>
+      />
     );
   })
   .add("Standard (container-only)", () => {
@@ -187,7 +181,7 @@ storiesOf("Elements|Card", module)
           "shadow",
           {
             "none": "none",
-            "standard": null,
+            "1x": null,
             "2x": "2x",
           },
           null,
@@ -231,7 +225,7 @@ storiesOf("Elements|Card", module)
           boolean("more", false, "Options") &&
           object(
             "extra content",
-            { element: [<Button label="Button" type="solid" color="secondary" fullWidth />] },
+            { element: [<Button label="Button" type="solid" color="success" fullWidth />] },
             "Options",
           )
         }
@@ -293,6 +287,11 @@ storiesOf("Elements|Card", module)
           text("media description", "Media Description", "Media")
         }
       />
+    );
+  })
+  .add("Card with onClick", () => {
+    return (
+      <Card title="Linkable Card" description="This creates an a tag wrapper" onClick />
     );
   })
   .add("Shadows", () => {

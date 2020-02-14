@@ -7,22 +7,13 @@ import Card, { CardSection, CardGrid } from "elements/Card";
 import Title from "base/Typography";
 import Badge from "./Badge.jsx";
 
-const BadgeNotes = markdown.require("./Badge.md");
 
 storiesOf("Atoms|Badge", module)
-  .addParameters({
-    info: {
-      text: "Badge info goes here...",
-    },
-    notes: {
-      markdown: BadgeNotes,
-    },
-  })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
   .add(
     "Documentation",
-    withInfo()(() => {
+    () => {
       return (
         <Grid columns="4">
           <Card>
@@ -33,8 +24,7 @@ storiesOf("Atoms|Badge", module)
           </Card>
         </Grid>
       );
-    }),
-  )
+    })
   .add("Knobs", () => {
     return (
       <Grid columns="4">

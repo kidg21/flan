@@ -19,14 +19,14 @@ const TemplateWrapper = styled(Flex)`
 const Header = styled(Bar)`
 /* For Dev purposes */
   border-bottom: 1px solid ${(props) => {
-    return props.theme.palette.grey5;
+    return props.theme.palette.neutral40;
   }};
 `;
 
 const Footer = styled(Bar)`
 /* For Dev purposes */
   border-top: 1px solid ${(props) => {
-    return props.theme.palette.grey5;
+    return props.theme.palette.neutral40;
   }};
 `;
 
@@ -58,7 +58,7 @@ const RegionLeft = styled(Flex)`
   }};
   /* For Dev purposes */
   border-right: 1px solid ${(props) => {
-    return props.theme.palette.grey5;
+    return props.theme.palette.neutral40;
   }};
   &:empty {
     &:before {
@@ -102,7 +102,7 @@ const RegionRight = styled(Flex)`
   }};
   /* For Dev purposes */
   border-left: 1px solid ${(props) => {
-    return props.theme.palette.grey5;
+    return props.theme.palette.neutral40;
   }};
   &:empty {
     &:before {
@@ -134,8 +134,8 @@ function Template({
     leftWidth = "20vw";
     rightWidth = "20vw";
   } else if (screenMedium.matches) {
-    leftWidth = "30vw";
-    rightWidth = "30vw";
+    leftWidth = "20vw";
+    rightWidth = "20vw";
   } else {
     leftPosition = "absolute";
     leftWidth = "100vw";

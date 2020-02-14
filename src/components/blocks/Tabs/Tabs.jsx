@@ -15,9 +15,6 @@ border: ${(props) => {
   border-radius: ${(props) => {
     return props.borderRadius || "0px";
   }};
-  background-color: ${(props) => {
-    return props.theme.background[props.backgroundColor] || "";
-  }};
   color: ${(props) => {
     return props.theme.palette[props.fontColor] || "";
   }};
@@ -83,7 +80,7 @@ function Tabs({
 }
 
 function Tab({
-  id, icon, tabLabel, htmlFor, count, size, onClick, isSelected, disabled, type,
+  id, icon, label, htmlFor, count, size, onClick, isSelected, disabled, type,
 }) {
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
 
@@ -95,7 +92,7 @@ function Tab({
           icon={icon}
           htmlFor={htmlFor}
           size={size}
-          label={tabLabel}
+          label={label}
           count={count}
           onClick={onClick}
           isSelected={isSelected}
@@ -109,7 +106,7 @@ function Tab({
             icon={icon}
             htmlFor={htmlFor}
             size={size}
-            label={tabLabel}
+            label={label}
             count={count}
             onClick={onClick}
             isSelected={isSelected}
@@ -132,7 +129,7 @@ Tabs.propTypes = {
 Tab.propTypes = {
   id: PropTypes.string,
   icon: PropTypes.string,
-  tabLabel: PropTypes.string.isRequired,
+  label: PropTypes.string,
   onClick: PropTypes.func,
   isSelected: PropTypes.bool,
   count: PropTypes.string,
@@ -150,7 +147,8 @@ Tabs.defaultProps = {
 
 Tab.defaultProps = {
   id: null,
-  icon: false,
+  icon: null,
+  label: null,
   htmlFor: null,
   count: null,
   isSelected: false,

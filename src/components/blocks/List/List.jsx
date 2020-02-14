@@ -13,6 +13,7 @@ import { InteractiveContext, DisabledContext } from "States";
 
 const ListWrapper = styled.ul`
   display: flex;
+  flex: auto;
   flex-direction: column;
   list-style: none;
   li:not(:last-child) {
@@ -20,18 +21,23 @@ const ListWrapper = styled.ul`
     return props.divider ? "1px solid" : "";
   }};
     border-bottom-color: ${(props) => {
-    return props.divider ? props.theme.palette.grey5 : "";
+    return props.divider ? props.theme.palette.neutral40 : "";
   }};
   }
 `;
 
+const LinkedWrapper = styled.a`
+flex: auto;
+`;
+
 const ListItemWrapper = styled.li`
   position: relative;
+  
   color: ${(props) => {
     return props.isSelected ? props.theme.text.inverse : props.theme.text.primary;
   }};
   background-color: ${(props) => {
-    return props.isSelected ? props.theme.palette.primary : props.theme.background.default;
+    return props.isSelected ? props.theme.background.selected : props.theme.background.default;
   }};
   padding: 1em;
   cursor: ${(props) => {
@@ -85,7 +91,6 @@ List.defaultProps = {
 
 function ListItem({
   active,
-  as,
   children,
   description,
   disabled,
@@ -93,6 +98,7 @@ function ListItem({
   interactive,
   isSelected,
   title,
+  href,
   onClick,
   post,
   pre,
@@ -103,13 +109,27 @@ function ListItem({
     leftContent = <Avatar label={pre.label} icon={pre.icon} disabled={disabled} />;
   }
 
-  const centerContent = (
-    <React.Fragment>
-      <Title text={title} disabled={disabled} />
-      {description ? (<Text text={description} disabled={disabled} />
-      ) : null}
-    </React.Fragment>
-  );
+  let centerContent;
+
+  if (onClick) {
+    centerContent = (
+      <LinkedWrapper onClick={onClick}>
+        <React.Fragment >
+          <Title text={title} disabled={disabled} />
+          {description ? (<Text text={description} disabled={disabled} />
+          ) : null}
+        </React.Fragment>
+      </LinkedWrapper>
+    );
+  } else {
+    centerContent = (
+      <React.Fragment >
+        <Title text={title} disabled={disabled} />
+        {description ? (<Text text={description} disabled={disabled} />
+        ) : null}
+      </React.Fragment>);
+  }
+
 
   let rightContent;
   if (post && post.type) {
@@ -125,8 +145,9 @@ function ListItem({
 
   return (
     <ListItemWrapper
+
       active={active}
-      as={as}
+      href={href}
       id={id}
       interactive={
         typeof interactive === "boolean"
@@ -156,7 +177,7 @@ function ListItem({
 
 ListItem.propTypes = {
   active: PropTypes.bool,
-  as: PropTypes.string,
+  href: PropTypes.node,
   children: PropTypes.node,
   description: PropTypes.string,
   disabled: PropTypes.bool,
@@ -177,7 +198,7 @@ ListItem.propTypes = {
 };
 ListItem.defaultProps = {
   active: false,
-  as: null,
+  href: null,
   children: null,
   description: null,
   disabled: false,

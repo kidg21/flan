@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
-import { withInfo } from "@storybook/addon-info";
 import {
   withKnobs,
   text,
@@ -17,7 +16,7 @@ storiesOf("Blocks|Controls", module)
   .addDecorator(Padding)
   .add(
     "Documentation",
-    withInfo()(() => {
+    () => {
       return (
         <Controls>
           <Control label="Control" isSelected />
@@ -25,8 +24,7 @@ storiesOf("Blocks|Controls", module)
           <Control label="Control" />
         </Controls>
       );
-    }),
-  );
+    });
 
 storiesOf("Blocks|Controls", module)
   .addDecorator(Padding)
@@ -141,16 +139,6 @@ storiesOf("Blocks|Controls", module)
         <Control label="Control" icon="user" />
         <Control label="Control" icon="user" />
         <Control label="Control" icon="user" />
-      </Controls>
-    );
-  })
-
-  .add("Types", () => {
-    return (
-      <Controls>
-        <Control label="Control" type="secondary" isSelected />
-        <Control label="Control" type="secondary" />
-        <Control label="Control" type="secondary" />
       </Controls>
     );
   });

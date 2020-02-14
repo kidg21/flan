@@ -9,7 +9,7 @@ const Line = styled.hr`
   margin-bottom: 1rem;
   border-top: 0.25px solid
     ${(props) => {
-    return props.theme.palette.grey5;
+    return props.theme.palette.neutral40;
   }};
   font-size: 0;
 `;

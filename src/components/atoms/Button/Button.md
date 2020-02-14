@@ -2,8 +2,6 @@
 
 **Props**:
 
-- isPrimary
-- isSecondary
 - icon
 - isRound
 - isFloating

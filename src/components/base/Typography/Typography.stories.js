@@ -5,7 +5,7 @@ import React from "react";
 import Grid from "layout/Grid";
 
 /** TODO: Add 'Documentation' and 'Knobs' stories */
-storiesOf("Application|Style Guides/", module).addDecorator(withInfo);
+storiesOf("Application|Style Guides/", module)
 // .add("Typography", () => {
 //   return (
 //     <Grid columns="1">

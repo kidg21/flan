@@ -200,7 +200,7 @@ Notification.propTypes = {
   ariaLabelledBy: PropTypes.string,
   ariaDescribedBy: PropTypes.string,
   children: PropTypes.node,
-  style: PropTypes.object,
+  style: PropTypes.string,
 };
 
 Notification.defaultProps = {

@@ -9,7 +9,7 @@ import { getGuid } from "helpers";
 
 const TextInputContainer = styled(Grid)`
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || props.theme.text.primary;
+    return props.theme.text[props.inputTextColor] || props.theme.text.secondary;
   }};
   width: 100%;
 `;
@@ -20,20 +20,20 @@ const Input = styled.input`
   font-family: ${(props) => { return props.theme.typography.primary; }};
   border-color: ${(props) => {
     return (
-      props.theme.palette[props.inputBorderColor] || props.theme.palette.grey3
+      props.theme.palette[props.inputBorderColor] || props.theme.palette.neutral60
     );
   }};
   background-color: ${(props) => {
     return (
-      props.theme.palette[props.inputFillColor] || props.theme.palette.white
+      props.theme.background[props.inputFillColor] || props.theme.background.default
     );
   }};
   caret-color: ${(props) => {
     return props.theme.palette[props.inputCaretColor] || "";
   }};
   width: 100%;
-  min-height: 3.167rem;
-  padding: 0.5rem 0.75rem;
+  min-height: 2.7rem;
+  padding: 0.3rem 0.75rem;
   resize: ${(props) => {
     return props.inputResize || "";
   }};
@@ -51,7 +51,7 @@ const Input = styled.input`
     border-color: ${(props) => {
     return (
       props.theme.palette[props.inputBorderColorHover] ||
-      props.theme.palette.grey2
+      props.theme.palette.neutral80
     );
   }};
     }
@@ -59,7 +59,7 @@ const Input = styled.input`
     border-color: ${(props) => {
     return (
       props.theme.palette[props.inputBorderColorHover] ||
-      props.theme.palette.secondary
+      props.theme.palette.selected
     );
   }};
     ::selection {
@@ -69,13 +69,14 @@ const Input = styled.input`
       background-color: ${(props) => {
     return (
       props.theme.palette[props.inputSelectColor] ||
-      props.theme.palette.secondary
+      props.theme.palette.selected
     );
   }};
     }
   }
 `;
 
+// eslint-disable-next-line complexity
 function TextInput({
   autocompleteList,
   children,
@@ -114,10 +115,9 @@ function TextInput({
   if (type === "textarea") {
     as = "textarea";
     inputResize = "vertical";
-  } else if (type === "search") {
-    // inputBorderColor = "primaryLight";
-    // inputBorderColorHover = "primary";
   }
+  // else if (type === "search") {
+  // }
 
   // construct datalist element for autocompletes if appropriate props passed in
   // the autocompleteListId is used to ensure each textinput only draws from its own datalist element
@@ -146,22 +146,22 @@ function TextInput({
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
-    inputBorderColor = "grey5";
+    inputBorderColor = "neutral40";
     inputFillColor = "disabled";
     inputTextColor = "disabled";
   } else if (error) {
-    inputBorderColor = "alertBright";
-    inputBorderColorHover = "alertLight";
-    inputSelectColor = "alertBright";
+    inputBorderColor = "alert60";
+    inputBorderColorHover = "alert40";
+    inputSelectColor = "alert60";
     inputTextColor = "alert";
-    placeholderColor = "primary";
+    placeholderColor = "secondary";
     errorText = typeof error === "string" ? error : "";
   } else if (warning) {
-    inputBorderColor = "warningBright";
-    inputBorderColorHover = "warningLight";
-    inputSelectColor = "warningBright";
+    inputBorderColor = "warning60";
+    inputBorderColorHover = "warning40";
+    inputSelectColor = "warning60";
     inputTextColor = "warning";
-    placeholderColor = "primary";
+    placeholderColor = "secondary";
     errorText = typeof warning === "string" ? warning : "";
   }
 

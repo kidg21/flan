@@ -2,7 +2,6 @@
 /* eslint-disable react/jsx-filename-extension */
 // import React, { useState } from "react";
 // import { storiesOf } from "@storybook/react";
-// import { withInfo } from "@storybook/addon-info";
 // import { screen } from "Variables";
 // import Tabs, { Tab } from "blocks/Tabs";
 // import Card, { CardGrid } from "elements/Card";
@@ -112,11 +111,9 @@
 //   })
 
 //   .add(
-//     "Documentation",
-//     withInfo()(() => {
+//     "Documentation",() => {
 //       return <Layout height="25%" />;
-//     }),
-//   )
+//     })
 
 //   .add("2 Panel - Row", () => {
 //     return (

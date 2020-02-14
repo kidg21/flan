@@ -14,7 +14,6 @@ import IconBlock from "blocks/IconBlock";
 
 storiesOf("Blocks|Icon Block", module)
   .addDecorator(Padding)
-  .addDecorator(withInfo)
   .add("Icon Block", () => {
     return (
       <Grid columns="1">

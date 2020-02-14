@@ -34,7 +34,7 @@ const LinkedIcon = styled.a`
 const StyledIcon = styled(FontAwesomeIcon)`
  position: relative;
   color: ${(props) => {
-    return props.theme.text[props.color] || "";
+    return props.theme.palette[props.color] || "";
   }};
   border: ${(props) => {
     return props.border ? "2px solid" : "";
@@ -174,10 +174,10 @@ const iconHash = {
 };
 
 const colorHash = {
-  info: "info",
-  success: "success",
-  warning: "warning",
-  alert: "alert",
+  info: "info80",
+  success: "success80",
+  warning: "warning80",
+  alert: "alert80",
 };
 
 function Icon({
@@ -185,6 +185,7 @@ function Icon({
   className,
   disabled,
   badge,
+  brand,
   fixedWidth,
   flip,
   icon,
@@ -209,6 +210,27 @@ function Icon({
   // FontAwesomeIcon only allows values of 90, 180, or 270
   let _rotation = typeof rotation === "number" ? Math.round(rotation / 90) % 4 : null;
   _rotation = _rotation > 0 ? _rotation * 90 : null;
+
+  if (!type) {
+    if (brand === "research") {
+      color = "research";
+    } if (brand === "bi") {
+      color = "bi";
+    } if (brand === "jobs") {
+      color = "jobs";
+    } if (brand === "broker") {
+      color = "broker";
+    } if (brand === "brand1") {
+      color = "brand1";
+    } if (brand === "brand2") {
+      color = "brand2";
+    } if (brand === "brand3") {
+      color = "brand3";
+    } if (brand === "brand4") {
+      color = "brand4";
+    } else { null; }
+  }
+
 
   const styledIcon = (
     <StyledIcon
@@ -266,11 +288,13 @@ function Icon({
 
 Icon.propTypes = {
   border: PropTypes.bool,
+  href: PropTypes.string,
   /** className used for extending styles */
   className: PropTypes.string,
   /** Options: 'info', 'success', 'warning', 'alert' */
   badge: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   disabled: PropTypes.bool,
+  brand: PropTypes.string,
   /** Used to set one or more icons to the same fixed width.
     * Good for vertically aligning a series of icons
     */
@@ -297,11 +321,13 @@ Icon.propTypes = {
 
 Icon.defaultProps = {
   border: false,
+  href: null,
   className: null,
   badge: false,
   disabled: null,
   fixedWidth: false,
   flip: null,
+  brand: null,
   icon: null,
   id: null,
   onClick: null,
