@@ -121,8 +121,8 @@ const selectStyles = {
       fontSize: "0.876rem",
       textAlign: "left",
       border: "1px solid",
-      borderColor: colors.grey40,
-      boxShadow: shadows.shadows,
+      borderColor: colors.grey20,
+      boxShadow: shadows.shadow0,
     };
   },
 
