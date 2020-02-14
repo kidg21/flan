@@ -5,8 +5,6 @@ import { Padding } from "helpers/Display";
 import Form, { Section } from "layout/Form";
 import Radio, { RadioGroup } from "atoms/Radio";
 
-const RadioNotes = markdown.require("./Radio.md");
-const RadioGroupNotes = markdown.require("./RadioGroup.md");
 
 const shortLabels = [
   {
@@ -53,22 +51,13 @@ const longLabels = [
 ];
 
 storiesOf("Atoms|Radio", module)
-  .addParameters({
-    info: {
-      text: "Radio info goes here...",
-    },
-    notes: {
-      markdown: RadioNotes,
-    },
-  })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
   .add(
     "Documentation",
-    withInfo()(() => {
+    () => {
       return <Radio id="radio1" label="Radio 1" name="radio-group" value="1" />;
-    }),
-  )
+    })
   .add("Skeleton", () => {
     return <Radio label="" />;
   })
@@ -136,19 +125,11 @@ storiesOf("Atoms|Radio", module)
   });
 
 storiesOf("Blocks|Radio Group", module)
-  .addParameters({
-    info: {
-      text: "Radio Group info goes here...",
-    },
-    notes: {
-      markdown: RadioGroupNotes,
-    },
-  })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
   .add(
     "Documentation",
-    withInfo()(() => {
+    () => {
       return (
         <Form>
           <Section>
@@ -161,8 +142,7 @@ storiesOf("Blocks|Radio Group", module)
           </Section>
         </Form>
       );
-    }),
-  )
+    })
   .add("Knobs", () => {
     return (
       <Form>

@@ -56,7 +56,6 @@ const data = [
 
 storiesOf("Blocks|Menu", module)
   .addDecorator(Padding)
-  .addDecorator(withInfo)
   .add("Documentation", () => {
     return (
       <Card>

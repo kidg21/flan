@@ -17,19 +17,11 @@ const options = [
 
 // Select Menu ( Knobs )
 storiesOf("Atoms|Select Menu", module)
-  .addParameters({
-    info: {
-      text: "Select Menu info goes here...",
-    },
-    notes: {
-      markdown: SelectMenu,
-    },
-  })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
   .add(
     "Documentation",
-    withInfo()(() => {
+    () => {
       return (
         <SelectMenu
           label={text("Input Label", "Select Menu ( Knobs )")}
@@ -45,8 +37,7 @@ storiesOf("Atoms|Select Menu", module)
           options={options}
         />
       );
-    }),
-  )
+    })
   .add("Skeleton", () => {
     return <SelectMenu options={options} />;
   })

@@ -5,9 +5,6 @@ import { Padding } from "helpers/Display";
 import Form, { Section } from "layout/Form";
 import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
 
-const CheckboxNotes = markdown.require("./Checkbox.md");
-const CheckboxGroupNotes = markdown.require("./CheckboxGroup.md");
-
 const shortLabels = [
   {
     id: "cbox_1",
@@ -41,22 +38,13 @@ const longLabels = [
 ];
 
 storiesOf("Atoms|Checkbox", module)
-  .addParameters({
-    info: {
-      text: "Checkbox info goes here...",
-    },
-    notes: {
-      markdown: CheckboxNotes,
-    },
-  })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
   .add(
     "Documentation",
-    withInfo()(() => {
+    () => {
       return <Checkbox id="cbox1" label="Box 1" />;
-    }),
-  )
+    })
   .add("Skeleton", () => {
     return <Checkbox id="default" />;
   })
@@ -101,19 +89,11 @@ storiesOf("Atoms|Checkbox", module)
   });
 
 storiesOf("Blocks|Checkbox Group", module)
-  .addParameters({
-    info: {
-      text: "Checkbox Group info goes here...",
-    },
-    notes: {
-      markdown: CheckboxGroupNotes,
-    },
-  })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
   .add(
     "Documentation",
-    withInfo()(() => {
+    () => {
       return (
         <Form>
           <Section>
@@ -126,8 +106,7 @@ storiesOf("Blocks|Checkbox Group", module)
           </Section>
         </Form>
       );
-    }),
-  )
+    })
   .add("Knobs", () => {
     return (
       <Form>

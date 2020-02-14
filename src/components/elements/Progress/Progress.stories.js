@@ -9,7 +9,6 @@ import ProgressBar, { Step } from "./Progress.jsx";
 
 storiesOf("Elements|Progress", module)
     .addDecorator(Padding)
-    .addDecorator(withInfo)
     .add("Flow", () => {
         return (
             <ProgressBar >
