@@ -54,11 +54,11 @@ const GlobalStyles = createGlobalStyle`
     }
 
     /* Default Link Styles */
-    a {
+    // a {
       
-      }
-      img { border: none; }
-      }
+    //   }
+    //   img { border: none; }
+    //   }
 
     /* Default paragraph styles */
     h1, h2, h3, h4, h5, h6, p {

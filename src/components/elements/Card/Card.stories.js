@@ -289,6 +289,11 @@ storiesOf("Elements|Card", module)
       />
     );
   })
+  .add("Card with onClick", () => {
+    return (
+      <Card title="Linkable Card" description="This creates an a tag wrapper" onClick />
+    );
+  })
   .add("Shadows", () => {
     return (
       <Grid gap="large">

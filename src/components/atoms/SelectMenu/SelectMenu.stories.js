@@ -131,6 +131,20 @@ storiesOf("Atoms|Select Menu", module)
     );
   })
 
+  // Multi-Select (Multi-Select)
+  .add("Multi-Select and Creatable", () => {
+    return (
+      <SelectMenu
+        multiSelect
+        label="Multi-Select"
+        placeholder="Choose One Or More..."
+        helpText="Help text for the Select Menu component"
+        onCreateOption={(optionName, setState) => { alert(`New option entered: ${optionName}`); }}
+        options={options}
+      />
+    );
+  })
+
   // Multi-Select (Required)
   .add("Multi-Select ( Required )", () => {
     return (
