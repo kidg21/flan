@@ -19,6 +19,10 @@ import Expander from "utils/Expander";
 import { DisableTransitionContext } from "States";
 import mime from "mime";
 
+const LinkedWrapper = styled.a`
+flex: auto;
+`;
+
 const CardSectionWrapper = styled.section`
   position: relative;
   display: flex;
@@ -81,6 +85,9 @@ const CardAudio = styled.audio`
 const CardWrapper = styled.div`
   position: relative;
   display: flex;
+  cursor: ${(props) => {
+    return props.onClick ? "pointer" : "";
+  }};
   flex-direction: column;
   border-radius: ${(props) => {
     return props.theme.borders.radiusMin;
@@ -305,6 +312,7 @@ function Card({
   inverse,
   label,
   media,
+  href,
   more,
   onClick,
   padding,
@@ -348,10 +356,32 @@ function Card({
     }
   }
 
+
+  let centerContent;
+
+  if (onClick) {
+    centerContent = (
+      <LinkedWrapper >
+        <React.Fragment >
+          {title ? <Title text={title}  /> : null}
+          {description ? (<Text text={description} />
+          ) : null}
+        </React.Fragment>
+      </LinkedWrapper>
+    );
+  } else {
+    centerContent = (
+      <React.Fragment >
+        {title ? <Title text={title} /> : null}
+        {description ? (<Text text={description}  />
+        ) : null}
+      </React.Fragment>);
+  }
+
   let headerSection;
   if (title || description) {
     headerSection = (
-      <CardSection type={type} onClick={onClick}>
+      <CardSection type={type} >
         <Bar
           contentAlign="center"
           leftWidth="max-content"
@@ -359,12 +389,7 @@ function Card({
             label || icon ? <Avatar label={label} icon={icon} /> : null
           }
           centerAlign="left"
-          center={
-            <React.Fragment>
-              {title ? <Title text={title} /> : null}
-              {description ? <Text text={description} /> : null}
-            </React.Fragment>
-          }
+          center={centerContent}
         />
       </CardSection>
     );
@@ -513,7 +538,9 @@ function Card({
       cardPadding={cardPadding}
       cardShadow={cardShadow}
       className={className}
+      onClick={onClick}
       id={id}
+      href={href}
       inverse={inverse}
       media={media}
       shadow={shadow}
@@ -535,6 +562,7 @@ Card.propTypes = {
   body: PropTypes.string,
   children: PropTypes.node,
   className: PropTypes.string,
+  href: PropTypes.node,
   commands: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
     label: PropTypes.string,
@@ -554,7 +582,7 @@ Card.propTypes = {
   }),
   onClick: PropTypes.func,
   padding: PropTypes.oneOf(["0", "1x", "2x", "3x", "4x"]),
-  shadow: PropTypes.oneOf(["none", "standard", "2x"]),
+  shadow: PropTypes.oneOf(["none", "1x", "2x"]),
   title: PropTypes.string,
   type: PropTypes.string,
 };
@@ -564,6 +592,7 @@ Card.defaultProps = {
   className: null,
   commands: null,
   description: null,
+  href: null,
   icon: null,
   id: null,
   inverse: null,

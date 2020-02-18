@@ -134,8 +134,8 @@ function Template({
     leftWidth = "20vw";
     rightWidth = "20vw";
   } else if (screenMedium.matches) {
-    leftWidth = "30vw";
-    rightWidth = "30vw";
+    leftWidth = "20vw";
+    rightWidth = "20vw";
   } else {
     leftPosition = "absolute";
     leftWidth = "100vw";

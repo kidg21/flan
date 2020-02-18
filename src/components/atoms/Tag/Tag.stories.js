@@ -7,7 +7,6 @@ import Grid from "layout/Grid";
 import Tag from "./Tag.jsx";
 
 storiesOf("Atoms|Tag", module)
-  .addDecorator(withInfo)
   .add("Tag", () => {
     return (
       <Grid columns="8">

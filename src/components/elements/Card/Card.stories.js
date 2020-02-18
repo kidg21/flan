@@ -181,7 +181,7 @@ storiesOf("Elements|Card", module)
           "shadow",
           {
             "none": "none",
-            "standard": null,
+            "1x": null,
             "2x": "2x",
           },
           null,
@@ -287,6 +287,11 @@ storiesOf("Elements|Card", module)
           text("media description", "Media Description", "Media")
         }
       />
+    );
+  })
+  .add("Card with onClick", () => {
+    return (
+      <Card title="Linkable Card" description="This creates an a tag wrapper" onClick />
     );
   })
   .add("Shadows", () => {

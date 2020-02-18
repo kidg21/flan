@@ -37,6 +37,7 @@ function InputBlock({
   onBlur,
   onFocus,
   warning,
+  onKeyPress,
 }) {
   const [state, setState] = useState({
     input: textInputs.reduce((inputMap, input) => {
@@ -97,6 +98,7 @@ function InputBlock({
         title={input.title}
         type={input.type}
         value={state.input[input.id]}
+        onKeyPress={onKeyPress}
         onBlur={onBlur}
         onFocus={onFocus}
         autocompleteList={input.autocompleteList}
@@ -221,6 +223,7 @@ InputBlock.propTypes = {
   isRequired: PropTypes.bool,
   label: PropTypes.string,
   onChange: PropTypes.func,
+  onKeyPress: PropTypes.func,
   options: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string,
     value: PropTypes.any,
@@ -251,6 +254,7 @@ InputBlock.defaultProps = {
   isRequired: false,
   label: null,
   onChange: null,
+  onKeyPress: null,
   options: null,
   prefix: false,
   selectOptions: null,

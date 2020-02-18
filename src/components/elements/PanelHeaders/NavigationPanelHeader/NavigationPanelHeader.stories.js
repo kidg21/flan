@@ -16,7 +16,6 @@ const data = [
 
 storiesOf("Elements|Panel Headers/", module)
   .addDecorator(Padding)
-  .addDecorator(withInfo)
   .add("Navigation", () => {
     return (
       <NavigationPanelHeader

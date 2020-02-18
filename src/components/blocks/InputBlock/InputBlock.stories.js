@@ -6,8 +6,6 @@ import { Padding } from "helpers/Display";
 import Form, { Section } from "layout/Form";
 import InputBlock from "blocks/InputBlock";
 
-const InputBlockNotes = markdown.require("./InputBlock.md");
-
 const button = {
   label: "upload",
   type: "",
@@ -71,19 +69,11 @@ const domains = [
 ];
 
 storiesOf("Blocks|Input Block", module)
-  .addParameters({
-    info: {
-      text: "Input Block info goes here...",
-    },
-    notes: {
-      markdown: InputBlockNotes,
-    },
-  })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
   .add(
     "Documentation",
-    withInfo()(() => {
+    () => {
       return (
         <InputBlock
           id="input block"
@@ -100,8 +90,7 @@ storiesOf("Blocks|Input Block", module)
           helpText="Play with Knobs to see what this baby can do!"
         />
       );
-    }),
-  )
+    })
   .add("Knobs", () => {
     return (
       <InputBlock

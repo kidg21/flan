@@ -6,20 +6,13 @@ import Panel from "layout/Panel";
 import Banner from "blocks/Banner";
 import Notification from "elements/Notification";
 
-const NotificationNotes = markdown.require("./Notification.md");
+
 
 storiesOf("Elements|Notification", module)
-  .addParameters({
-    info: {
-      text: "Notification info goes here...",
-    },
-    notes: {
-      markdown: NotificationNotes,
-    },
-  })
+
   .add(
     "Documentation",
-    withInfo()(() => {
+    () => {
       return React.createElement(() => {
         const [visible, setVisible] = useState(false);
         const [transition, setTransition] = useState(true);
@@ -62,8 +55,7 @@ storiesOf("Elements|Notification", module)
           </Fragment>
         );
       });
-    }),
-  );
+    });
 
 storiesOf("Elements|Notification", module)
   .addDecorator(withKnobs)

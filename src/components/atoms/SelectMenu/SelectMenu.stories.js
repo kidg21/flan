@@ -17,19 +17,11 @@ const options = [
 
 // Select Menu ( Knobs )
 storiesOf("Atoms|Select Menu", module)
-  .addParameters({
-    info: {
-      text: "Select Menu info goes here...",
-    },
-    notes: {
-      markdown: SelectMenu,
-    },
-  })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
   .add(
     "Documentation",
-    withInfo()(() => {
+    () => {
       return (
         <SelectMenu
           label={text("Input Label", "Select Menu ( Knobs )")}
@@ -45,8 +37,7 @@ storiesOf("Atoms|Select Menu", module)
           options={options}
         />
       );
-    }),
-  )
+    })
   .add("Skeleton", () => {
     return <SelectMenu options={options} />;
   })
@@ -135,6 +126,20 @@ storiesOf("Atoms|Select Menu", module)
         label="Multi-Select"
         placeholder="Choose One Or More..."
         helpText="Help text for the Select Menu component"
+        options={options}
+      />
+    );
+  })
+
+  // Multi-Select (Multi-Select)
+  .add("Multi-Select and Creatable", () => {
+    return (
+      <SelectMenu
+        multiSelect
+        label="Multi-Select"
+        placeholder="Choose One Or More..."
+        helpText="Help text for the Select Menu component"
+        onCreateOption={(optionName, setState) => { alert(`New option entered: ${optionName}`); }}
         options={options}
       />
     );
