@@ -177,6 +177,7 @@ function Template({
       {header ? (
         <Header
           contentAlign="center"
+          rightWidth="10%"
           padding="2x"
           left={
             header.iconLeft ? (

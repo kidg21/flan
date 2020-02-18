@@ -145,14 +145,30 @@ storiesOf("Layout |Templates/Template A/", module)
     "Configured",
     () => {
       return React.createElement(() => {
-        /* let seeRightRegion = null;
-        let rightOpen = right.visible;
-        let setRightOpen = right.toggle; */
         const [rightOpen, setRightOpen] = useState(true);
         const seeRightRegion = () => { setRightOpen(!rightOpen); };
-        // else {null};
+
+        const [leftOpen, setLeftOpen] = useState(false);
+        const seeLeftRegion = () => { setLeftOpen(!leftOpen); };
 
         const navBar = {
+          content: (
+            <Panel
+              id="Panel"
+            >
+              <List interactive>
+                <ListItem title="Layers" />
+                <ListItem title="Results" />
+                <ListItem title="Form" />
+                <ListItem title="Research" />
+              </List>
+            </Panel>
+          ),
+          visible: leftOpen,
+          toggle: seeLeftRegion,
+        };
+
+        const appBar = {
           content: (
             <Panel
               id="Panel"
@@ -169,6 +185,7 @@ storiesOf("Layout |Templates/Template A/", module)
           toggle: seeRightRegion,
         };
 
+
               return (
         <Template
           header={{
@@ -181,9 +198,9 @@ storiesOf("Layout |Templates/Template A/", module)
               </IconBlock>
             ),
           }}
-          left={{ content: ""}}
+          left={navBar}
           main={<React.Fragment> <Mapbox /> {dataTable}</React.Fragment>}
-          right={navBar}
+          right={appBar}
           />
       )}
       )}

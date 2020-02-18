@@ -6,6 +6,7 @@ import PropTypes from "prop-types";
 
 const Block = styled.div`
   display: flex;
+  vertical-align: center;
   align-items: flex-end;
   width: 100%;
   justify-content: space-between;
