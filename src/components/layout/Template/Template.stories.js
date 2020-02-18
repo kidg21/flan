@@ -1,11 +1,13 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
-import React from "react";
+import React, {useState} from "react";
 import Panel from "layout/Panel";
 import DataTable from "blocks/Table";
 import Card, { CardGrid } from "elements/Card";
 import List, { ListItem } from "blocks/List";
 import Mapbox from "layout/Map";
+import Icon from "atoms/Icon";
+import IconBlock from "blocks/IconBlock";
 import Title from "base/Typography";
 import Template from "./Template.jsx";
 
@@ -142,15 +144,47 @@ storiesOf("Layout |Templates/Template A/", module)
   .add(
     "Configured",
     () => {
-      return (
+      return React.createElement(() => {
+        /* let seeRightRegion = null;
+        let rightOpen = right.visible;
+        let setRightOpen = right.toggle; */
+        const [rightOpen, setRightOpen] = useState(true);
+        const seeRightRegion = () => { setRightOpen(!rightOpen); };
+        // else {null};
+
+        const navBar = {
+          content: (
+            <Panel
+              id="Panel"
+            >
+              <List interactive>
+                <ListItem title="Layers" />
+                <ListItem title="Results" />
+                <ListItem title="Form" />
+                <ListItem title="Research" />
+              </List>
+            </Panel>
+          ),
+          visible: rightOpen,
+          toggle: seeRightRegion,
+        };
+
+              return (
         <Template
           header={{
             content: "",
+            right:(
+              <IconBlock>
+              <Icon icon="list"  onClick={seeRightRegion}/>
+              <Icon icon="chat" onClick={seeRightRegion}/>
+              <Icon icon="calendar" onClick={seeRightRegion}/>
+              </IconBlock>
+            ),
           }}
-          left={navBar}
+          left={{ content: ""}}
           main={<React.Fragment> <Mapbox /> {dataTable}</React.Fragment>}
           right={navBar}
-        />
-      );
-    },
+          />
+      )}
+      )}
   );

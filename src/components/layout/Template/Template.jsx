@@ -1,6 +1,6 @@
 /* eslint-disable complexity */
 /* eslint-disable linebreak-style */
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
@@ -195,7 +195,11 @@ function Template({
               )
           }
           center={header.content}
-          right={
+          right={ header.right ? (
+            <Fragment>
+              {header.right}
+            </Fragment>
+          ) : 
             <Icon
               size="lg"
               icon={header.iconRight || "settings"}
@@ -242,6 +246,7 @@ function Template({
 Template.propTypes = {
   header: PropTypes.oneOfType([PropTypes.object, PropTypes.arrayOf(PropTypes.shape({
     content: PropTypes.node,
+    right: PropTypes.node,
     iconLeft: PropTypes.string,
     iconRight: PropTypes.string,
   })),
@@ -268,6 +273,7 @@ Template.propTypes = {
 Template.defaultProps = {
   header: {
     content: null,
+    right: null,
     iconLeft: null,
     iconRight: null,
   },
