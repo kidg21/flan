@@ -34,6 +34,7 @@ storiesOf("Blocks|Data Range", module)
       return (
         <Form columns="1">
           <DataRange
+            id="default"
             label="Data Range (default)"
             helpText="Hang in there, buddy, I'm here to help!"
             min={{
@@ -44,6 +45,7 @@ storiesOf("Blocks|Data Range", module)
             }}
           />
           <DataRange
+            id="options"
             label="Data Range (with options)"
             helpText="Hang in there, buddy, I'm here to help!"
             min={{
@@ -61,6 +63,7 @@ storiesOf("Blocks|Data Range", module)
   .add("Knobs", () => {
     return (
       <DataRange
+        id="knobs"
         label={text("label", "Data Label", "Data Range")}
         labelMin={text("min label", "Min", "Data Range")}
         optionsMin={object(
@@ -89,12 +92,14 @@ storiesOf("Blocks|Data Range", module)
       <Form title="States" columns="1">
         <Section title="Input Range (default)">
           <DataRange
+            id="input"
             label="Input Range"
             labelMin="Min"
             labelMax="Max"
             helpText="Hang in there, buddy, I'm here to help!"
           />
           <DataRange
+            id="inputError"
             label="Input Range (error)"
             labelMin="Min"
             labelMax="Max"
@@ -102,6 +107,7 @@ storiesOf("Blocks|Data Range", module)
             error="Out of range!"
           />
           <DataRange
+            id="inputDisabled"
             label="Input Range (disabled)"
             labelMin="Min"
             labelMax="Max"
@@ -111,6 +117,7 @@ storiesOf("Blocks|Data Range", module)
         </Section>
         <Section title="Select Range">
           <DataRange
+            id="select"
             label="Select Range"
             labelMin="Min"
             optionsMin={options}
@@ -119,6 +126,7 @@ storiesOf("Blocks|Data Range", module)
             helpText="Hang in there, buddy, I'm here to help!"
           />
           <DataRange
+            id="selectOperation"
             label="Select Range"
             labelMin="Min"
             select={{ options: selectorOptions }}
@@ -128,6 +136,7 @@ storiesOf("Blocks|Data Range", module)
             helpText="This help text has been passed through a prop!"
           />
           <DataRange
+            id="selectError"
             label="Select Range (error)"
             labelMin="Min"
             optionsMin={options}
@@ -137,6 +146,7 @@ storiesOf("Blocks|Data Range", module)
             error="Out of range!"
           />
           <DataRange
+            id="selectDisabled"
             label="Select Range (disabled)"
             labelMin="Min"
             optionsMin={options}
@@ -150,5 +160,5 @@ storiesOf("Blocks|Data Range", module)
     );
   })
   .add("Skeleton", () => {
-    return <DataRange />;
+    return <DataRange id="skeleton" />;
   });

@@ -1,0 +1,1379 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <form
+    action={null}
+    className="Form__FormWrapper-v2wrel-0 geeIqY"
+    method={null}
+    onSubmit={null}
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 eGbheC Form__FormInputs-v2wrel-3 bZGKXs"
+      id={null}
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL DataRange__RangeContainer-u3cy9q-0 iSEnRZ"
+        id="default"
+        rows={null}
+      >
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
+          fontSize="0.82em"
+          fontWeight={400}
+          htmlFor={null}
+          letterSpacing="0px"
+        >
+          Data Range (default)
+        </label>
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 hfFaih"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 iylbCl"
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+              id="default_left_container"
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
+                fontSize="0.82em"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing="0px"
+              >
+                Min
+              </label>
+              <input
+                className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+                cols=""
+                disabled={false}
+                id="default_left"
+                list={null}
+                name="default_left"
+                onBlur={null}
+                onChange={[Function]}
+                onFocus={null}
+                onKeyPress={null}
+                pattern={null}
+                placeholder={null}
+                rows=""
+                size={null}
+                title={null}
+                type="text"
+                value={null}
+              />
+            </section>
+          </div>
+          <div
+            className="Bar__Slot-sc-1c4axau-0 ikxUaE"
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+              id="default_right_container"
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
+                fontSize="0.82em"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing="0px"
+              >
+                Max
+              </label>
+              <input
+                className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+                cols=""
+                disabled={false}
+                id="default_right"
+                list={null}
+                name="default_right"
+                onBlur={null}
+                onChange={[Function]}
+                onFocus={null}
+                onKeyPress={null}
+                pattern={null}
+                placeholder={null}
+                rows=""
+                size={null}
+                title={null}
+                type="text"
+                value={null}
+              />
+            </section>
+          </div>
+        </div>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
+          fontSize="0.65em"
+          fontWeight={400}
+          letterSpacing="0.6px"
+        >
+          Hang in there, buddy, I'm here to help!
+        </p>
+      </section>
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL DataRange__RangeContainer-u3cy9q-0 iSEnRZ"
+        id="options"
+        rows={null}
+      >
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
+          fontSize="0.82em"
+          fontWeight={400}
+          htmlFor={null}
+          letterSpacing="0px"
+        >
+          Data Range (with options)
+        </label>
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 hfFaih"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 iylbCl"
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL SelectMenu__SelectMenuContainer-sc-12n3hw0-0 ewaOwo"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
+                fontSize="0.82em"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing="0px"
+              >
+                Min
+              </label>
+              <div
+                className=" css-jf3hug-container"
+                id="options_left"
+                onKeyDown={[Function]}
+              >
+                <div
+                  className=" css-enwceb-control"
+                  onMouseDown={[Function]}
+                  onTouchEnd={[Function]}
+                >
+                  <div
+                    className=" css-1hwfws3"
+                  >
+                    <div
+                      className=" css-gxjmgv-placeholder"
+                    />
+                    <div
+                      className="css-b8ldur-Input"
+                    >
+                      <div
+                        className=""
+                        style={
+                          Object {
+                            "display": "inline-block",
+                          }
+                        }
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          autoCapitalize="none"
+                          autoComplete="off"
+                          autoCorrect="off"
+                          disabled={false}
+                          id="react-select-33-input"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          onFocus={[Function]}
+                          spellCheck="false"
+                          style={
+                            Object {
+                              "background": 0,
+                              "border": 0,
+                              "boxSizing": "content-box",
+                              "color": "inherit",
+                              "fontSize": "inherit",
+                              "label": "input",
+                              "opacity": 1,
+                              "outline": 0,
+                              "padding": 0,
+                              "width": "1px",
+                            }
+                          }
+                          tabIndex="0"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          style={
+                            Object {
+                              "height": 0,
+                              "left": 0,
+                              "overflow": "scroll",
+                              "position": "absolute",
+                              "top": 0,
+                              "visibility": "hidden",
+                              "whiteSpace": "pre",
+                            }
+                          }
+                        >
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className=" css-1hb7zxy-IndicatorsContainer"
+                  >
+                    <span
+                      className=" css-rci3ok-indicatorSeparator"
+                    />
+                    <div
+                      aria-hidden="true"
+                      className=" css-1jw44s5-indicatorContainer"
+                      onMouseDown={[Function]}
+                      onTouchEnd={[Function]}
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="css-6q0nyr-Svg"
+                        focusable="false"
+                        height={20}
+                        viewBox="0 0 20 20"
+                        width={20}
+                      >
+                        <path
+                          d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div
+            className="Bar__Slot-sc-1c4axau-0 ikxUaE"
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL SelectMenu__SelectMenuContainer-sc-12n3hw0-0 ewaOwo"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
+                fontSize="0.82em"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing="0px"
+              >
+                Max
+              </label>
+              <div
+                className=" css-jf3hug-container"
+                id="options_right"
+                onKeyDown={[Function]}
+              >
+                <div
+                  className=" css-enwceb-control"
+                  onMouseDown={[Function]}
+                  onTouchEnd={[Function]}
+                >
+                  <div
+                    className=" css-1hwfws3"
+                  >
+                    <div
+                      className=" css-gxjmgv-placeholder"
+                    />
+                    <div
+                      className="css-b8ldur-Input"
+                    >
+                      <div
+                        className=""
+                        style={
+                          Object {
+                            "display": "inline-block",
+                          }
+                        }
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          autoCapitalize="none"
+                          autoComplete="off"
+                          autoCorrect="off"
+                          disabled={false}
+                          id="react-select-34-input"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          onFocus={[Function]}
+                          spellCheck="false"
+                          style={
+                            Object {
+                              "background": 0,
+                              "border": 0,
+                              "boxSizing": "content-box",
+                              "color": "inherit",
+                              "fontSize": "inherit",
+                              "label": "input",
+                              "opacity": 1,
+                              "outline": 0,
+                              "padding": 0,
+                              "width": "1px",
+                            }
+                          }
+                          tabIndex="0"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          style={
+                            Object {
+                              "height": 0,
+                              "left": 0,
+                              "overflow": "scroll",
+                              "position": "absolute",
+                              "top": 0,
+                              "visibility": "hidden",
+                              "whiteSpace": "pre",
+                            }
+                          }
+                        >
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className=" css-1hb7zxy-IndicatorsContainer"
+                  >
+                    <span
+                      className=" css-rci3ok-indicatorSeparator"
+                    />
+                    <div
+                      aria-hidden="true"
+                      className=" css-1jw44s5-indicatorContainer"
+                      onMouseDown={[Function]}
+                      onTouchEnd={[Function]}
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="css-6q0nyr-Svg"
+                        focusable="false"
+                        height={20}
+                        viewBox="0 0 20 20"
+                        width={20}
+                      >
+                        <path
+                          d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
+          fontSize="0.65em"
+          fontWeight={400}
+          letterSpacing="0.6px"
+        >
+          Hang in there, buddy, I'm here to help!
+        </p>
+      </section>
+    </section>
+  </form>
+</div>
+`;
+
+exports[` 2`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL DataRange__RangeContainer-u3cy9q-0 iSEnRZ"
+    id="knobs"
+    rows={null}
+  >
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
+      fontSize="0.82em"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing="0px"
+    >
+      Data Label
+    </label>
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 hfFaih"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 iylbCl"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+          id="knobs_left_container"
+          rows={null}
+        >
+          <input
+            className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+            cols=""
+            disabled={false}
+            id="knobs_left"
+            list={null}
+            name="knobs_left"
+            onBlur={null}
+            onChange={[Function]}
+            onFocus={null}
+            onKeyPress={null}
+            pattern={null}
+            placeholder={null}
+            rows=""
+            size={null}
+            title={null}
+            type="text"
+            value={null}
+          />
+        </section>
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 ikxUaE"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+          id="knobs_right_container"
+          rows={null}
+        >
+          <input
+            className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+            cols=""
+            disabled={false}
+            id="knobs_right"
+            list={null}
+            name="knobs_right"
+            onBlur={null}
+            onChange={[Function]}
+            onFocus={null}
+            onKeyPress={null}
+            pattern={null}
+            placeholder={null}
+            rows=""
+            size={null}
+            title={null}
+            type="text"
+            value={null}
+          />
+        </section>
+      </div>
+    </div>
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
+      fontSize="0.65em"
+      fontWeight={400}
+      letterSpacing="0.6px"
+    >
+      Help text goes here...
+    </p>
+  </section>
+</div>
+`;
+
+exports[` 3`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <form
+    action={null}
+    className="Form__FormWrapper-v2wrel-0 geeIqY"
+    method={null}
+    onSubmit={null}
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL Form__FormHeader-v2wrel-1 dPFQVY"
+      id={null}
+      rows={null}
+    >
+      <h5
+        className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+        fontSize="1.15em"
+        fontWeight={600}
+        letterSpacing="0px"
+      >
+        States
+      </h5>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 eGbheC Form__FormInputs-v2wrel-3 bZGKXs"
+      id={null}
+      rows={null}
+    >
+      <section
+        className="Form__FormSection-v2wrel-2 kbyyVh"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 gfzBkI"
+          fontSize="1.05em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Input Range (default)
+        </h6>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL DataRange__RangeContainer-u3cy9q-0 iSEnRZ"
+          id="input"
+          rows={null}
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
+            fontSize="0.82em"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing="0px"
+          >
+            Input Range
+          </label>
+          <div
+            className="Bar__BarLayout-sc-1c4axau-1 hfFaih"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-sc-1c4axau-0 iylbCl"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+                id="input_left_container"
+                rows={null}
+              >
+                <input
+                  className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+                  cols=""
+                  disabled={false}
+                  id="input_left"
+                  list={null}
+                  name="input_left"
+                  onBlur={null}
+                  onChange={[Function]}
+                  onFocus={null}
+                  onKeyPress={null}
+                  pattern={null}
+                  placeholder={null}
+                  rows=""
+                  size={null}
+                  title={null}
+                  type="text"
+                  value={null}
+                />
+              </section>
+            </div>
+            <div
+              className="Bar__Slot-sc-1c4axau-0 ikxUaE"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+                id="input_right_container"
+                rows={null}
+              >
+                <input
+                  className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+                  cols=""
+                  disabled={false}
+                  id="input_right"
+                  list={null}
+                  name="input_right"
+                  onBlur={null}
+                  onChange={[Function]}
+                  onFocus={null}
+                  onKeyPress={null}
+                  pattern={null}
+                  placeholder={null}
+                  rows=""
+                  size={null}
+                  title={null}
+                  type="text"
+                  value={null}
+                />
+              </section>
+            </div>
+          </div>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
+            fontSize="0.65em"
+            fontWeight={400}
+            letterSpacing="0.6px"
+          >
+            Hang in there, buddy, I'm here to help!
+          </p>
+        </section>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL DataRange__RangeContainer-u3cy9q-0 fXSQss"
+          id="inputError"
+          rows={null}
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
+            fontSize="0.82em"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing="0px"
+          >
+            Input Range (error)
+          </label>
+          <div
+            className="Bar__BarLayout-sc-1c4axau-1 hfFaih"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-sc-1c4axau-0 iylbCl"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL TextInput__TextInputContainer-sc-1fep8p8-0 inWPqt"
+                id="inputError_left_container"
+                rows={null}
+              >
+                <input
+                  className="TextInput__Input-sc-1fep8p8-1 gZOQGf"
+                  cols=""
+                  disabled={false}
+                  id="inputError_left"
+                  list={null}
+                  name="inputError_left"
+                  onBlur={null}
+                  onChange={[Function]}
+                  onFocus={null}
+                  onKeyPress={null}
+                  pattern={null}
+                  placeholder={null}
+                  rows=""
+                  size={null}
+                  title={null}
+                  type="text"
+                  value={null}
+                />
+              </section>
+            </div>
+            <div
+              className="Bar__Slot-sc-1c4axau-0 ikxUaE"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL TextInput__TextInputContainer-sc-1fep8p8-0 inWPqt"
+                id="inputError_right_container"
+                rows={null}
+              >
+                <input
+                  className="TextInput__Input-sc-1fep8p8-1 gZOQGf"
+                  cols=""
+                  disabled={false}
+                  id="inputError_right"
+                  list={null}
+                  name="inputError_right"
+                  onBlur={null}
+                  onChange={[Function]}
+                  onFocus={null}
+                  onKeyPress={null}
+                  pattern={null}
+                  placeholder={null}
+                  rows=""
+                  size={null}
+                  title={null}
+                  type="text"
+                  value={null}
+                />
+              </section>
+            </div>
+          </div>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
+            fontSize="0.65em"
+            fontWeight={400}
+            letterSpacing="0.6px"
+          >
+            Hang in there, buddy, I'm here to help!
+          </p>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
+            fontSize="0.65em"
+            fontWeight={400}
+            letterSpacing="0.6px"
+          >
+            Out of range!
+          </p>
+        </section>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL DataRange__RangeContainer-u3cy9q-0 iSEnRZ"
+          id="inputDisabled"
+          rows={null}
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
+            fontSize="0.82em"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing="0px"
+          >
+            Input Range (disabled)
+          </label>
+          <div
+            className="Bar__BarLayout-sc-1c4axau-1 hfFaih"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-sc-1c4axau-0 iylbCl"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL TextInput__TextInputContainer-sc-1fep8p8-0 eqpqb"
+                id="inputDisabled_left_container"
+                rows={null}
+              >
+                <input
+                  className="TextInput__Input-sc-1fep8p8-1 sNkdI"
+                  cols=""
+                  disabled={true}
+                  id="inputDisabled_left"
+                  list={null}
+                  name="inputDisabled_left"
+                  onBlur={null}
+                  onChange={[Function]}
+                  onFocus={null}
+                  onKeyPress={null}
+                  pattern={null}
+                  placeholder={null}
+                  rows=""
+                  size={null}
+                  title={null}
+                  type="text"
+                  value={null}
+                />
+              </section>
+            </div>
+            <div
+              className="Bar__Slot-sc-1c4axau-0 ikxUaE"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL TextInput__TextInputContainer-sc-1fep8p8-0 eqpqb"
+                id="inputDisabled_right_container"
+                rows={null}
+              >
+                <input
+                  className="TextInput__Input-sc-1fep8p8-1 sNkdI"
+                  cols=""
+                  disabled={true}
+                  id="inputDisabled_right"
+                  list={null}
+                  name="inputDisabled_right"
+                  onBlur={null}
+                  onChange={[Function]}
+                  onFocus={null}
+                  onKeyPress={null}
+                  pattern={null}
+                  placeholder={null}
+                  rows=""
+                  size={null}
+                  title={null}
+                  type="text"
+                  value={null}
+                />
+              </section>
+            </div>
+          </div>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
+            fontSize="0.65em"
+            fontWeight={400}
+            letterSpacing="0.6px"
+          >
+            Hang in there, buddy, I'm here to help!
+          </p>
+        </section>
+      </section>
+      <section
+        className="Form__FormSection-v2wrel-2 kbyyVh"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 gfzBkI"
+          fontSize="1.05em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Select Range
+        </h6>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL DataRange__RangeContainer-u3cy9q-0 iSEnRZ"
+          id="select"
+          rows={null}
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
+            fontSize="0.82em"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing="0px"
+          >
+            Select Range
+          </label>
+          <div
+            className="Bar__BarLayout-sc-1c4axau-1 hfFaih"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-sc-1c4axau-0 iylbCl"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+                id="select_left_container"
+                rows={null}
+              >
+                <input
+                  className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+                  cols=""
+                  disabled={false}
+                  id="select_left"
+                  list={null}
+                  name="select_left"
+                  onBlur={null}
+                  onChange={[Function]}
+                  onFocus={null}
+                  onKeyPress={null}
+                  pattern={null}
+                  placeholder={null}
+                  rows=""
+                  size={null}
+                  title={null}
+                  type="text"
+                  value={null}
+                />
+              </section>
+            </div>
+            <div
+              className="Bar__Slot-sc-1c4axau-0 ikxUaE"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+                id="select_right_container"
+                rows={null}
+              >
+                <input
+                  className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+                  cols=""
+                  disabled={false}
+                  id="select_right"
+                  list={null}
+                  name="select_right"
+                  onBlur={null}
+                  onChange={[Function]}
+                  onFocus={null}
+                  onKeyPress={null}
+                  pattern={null}
+                  placeholder={null}
+                  rows=""
+                  size={null}
+                  title={null}
+                  type="text"
+                  value={null}
+                />
+              </section>
+            </div>
+          </div>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
+            fontSize="0.65em"
+            fontWeight={400}
+            letterSpacing="0.6px"
+          >
+            Hang in there, buddy, I'm here to help!
+          </p>
+        </section>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL DataRange__RangeContainer-u3cy9q-0 iSEnRZ"
+          id="selectOperation"
+          rows={null}
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
+            fontSize="0.82em"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing="0px"
+          >
+            Select Range
+          </label>
+          <div
+            className="Bar__BarLayout-sc-1c4axau-1 hfFaih"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-sc-1c4axau-0 iylbCl"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+                id="selectOperation_left_container"
+                rows={null}
+              >
+                <input
+                  className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+                  cols=""
+                  disabled={false}
+                  id="selectOperation_left"
+                  list={null}
+                  name="selectOperation_left"
+                  onBlur={null}
+                  onChange={[Function]}
+                  onFocus={null}
+                  onKeyPress={null}
+                  pattern={null}
+                  placeholder={null}
+                  rows=""
+                  size={null}
+                  title={null}
+                  type="text"
+                  value={null}
+                />
+              </section>
+            </div>
+            <div
+              className="Bar__Slot-sc-1c4axau-0 hODMTq"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL SelectMenu__SelectMenuContainer-sc-12n3hw0-0 ewaOwo"
+                id={null}
+                rows={null}
+              >
+                <div
+                  className=" css-jf3hug-container"
+                  id="selectOperation_center"
+                  onKeyDown={[Function]}
+                >
+                  <div
+                    className=" css-enwceb-control"
+                    onMouseDown={[Function]}
+                    onTouchEnd={[Function]}
+                  >
+                    <div
+                      className=" css-1hwfws3"
+                    >
+                      <div
+                        className=" css-gxjmgv-placeholder"
+                      />
+                      <div
+                        className="css-b8ldur-Input"
+                      >
+                        <div
+                          className=""
+                          style={
+                            Object {
+                              "display": "inline-block",
+                            }
+                          }
+                        >
+                          <input
+                            aria-autocomplete="list"
+                            autoCapitalize="none"
+                            autoComplete="off"
+                            autoCorrect="off"
+                            disabled={false}
+                            id="react-select-35-input"
+                            onBlur={[Function]}
+                            onChange={[Function]}
+                            onFocus={[Function]}
+                            spellCheck="false"
+                            style={
+                              Object {
+                                "background": 0,
+                                "border": 0,
+                                "boxSizing": "content-box",
+                                "color": "inherit",
+                                "fontSize": "inherit",
+                                "label": "input",
+                                "opacity": 1,
+                                "outline": 0,
+                                "padding": 0,
+                                "width": "1px",
+                              }
+                            }
+                            tabIndex="0"
+                            type="text"
+                            value=""
+                          />
+                          <div
+                            style={
+                              Object {
+                                "height": 0,
+                                "left": 0,
+                                "overflow": "scroll",
+                                "position": "absolute",
+                                "top": 0,
+                                "visibility": "hidden",
+                                "whiteSpace": "pre",
+                              }
+                            }
+                          >
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      className=" css-1hb7zxy-IndicatorsContainer"
+                    >
+                      <span
+                        className=" css-rci3ok-indicatorSeparator"
+                      />
+                      <div
+                        aria-hidden="true"
+                        className=" css-1jw44s5-indicatorContainer"
+                        onMouseDown={[Function]}
+                        onTouchEnd={[Function]}
+                      >
+                        <svg
+                          aria-hidden="true"
+                          className="css-6q0nyr-Svg"
+                          focusable="false"
+                          height={20}
+                          viewBox="0 0 20 20"
+                          width={20}
+                        >
+                          <path
+                            d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div
+              className="Bar__Slot-sc-1c4axau-0 ikxUaE"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+                id="selectOperation_right_container"
+                rows={null}
+              >
+                <input
+                  className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+                  cols=""
+                  disabled={false}
+                  id="selectOperation_right"
+                  list={null}
+                  name="selectOperation_right"
+                  onBlur={null}
+                  onChange={[Function]}
+                  onFocus={null}
+                  onKeyPress={null}
+                  pattern={null}
+                  placeholder={null}
+                  rows=""
+                  size={null}
+                  title={null}
+                  type="text"
+                  value={null}
+                />
+              </section>
+            </div>
+          </div>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
+            fontSize="0.65em"
+            fontWeight={400}
+            letterSpacing="0.6px"
+          >
+            This help text has been passed through a prop!
+          </p>
+        </section>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL DataRange__RangeContainer-u3cy9q-0 fXSQss"
+          id="selectError"
+          rows={null}
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
+            fontSize="0.82em"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing="0px"
+          >
+            Select Range (error)
+          </label>
+          <div
+            className="Bar__BarLayout-sc-1c4axau-1 hfFaih"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-sc-1c4axau-0 iylbCl"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL TextInput__TextInputContainer-sc-1fep8p8-0 inWPqt"
+                id="selectError_left_container"
+                rows={null}
+              >
+                <input
+                  className="TextInput__Input-sc-1fep8p8-1 gZOQGf"
+                  cols=""
+                  disabled={false}
+                  id="selectError_left"
+                  list={null}
+                  name="selectError_left"
+                  onBlur={null}
+                  onChange={[Function]}
+                  onFocus={null}
+                  onKeyPress={null}
+                  pattern={null}
+                  placeholder={null}
+                  rows=""
+                  size={null}
+                  title={null}
+                  type="text"
+                  value={null}
+                />
+              </section>
+            </div>
+            <div
+              className="Bar__Slot-sc-1c4axau-0 ikxUaE"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL TextInput__TextInputContainer-sc-1fep8p8-0 inWPqt"
+                id="selectError_right_container"
+                rows={null}
+              >
+                <input
+                  className="TextInput__Input-sc-1fep8p8-1 gZOQGf"
+                  cols=""
+                  disabled={false}
+                  id="selectError_right"
+                  list={null}
+                  name="selectError_right"
+                  onBlur={null}
+                  onChange={[Function]}
+                  onFocus={null}
+                  onKeyPress={null}
+                  pattern={null}
+                  placeholder={null}
+                  rows=""
+                  size={null}
+                  title={null}
+                  type="text"
+                  value={null}
+                />
+              </section>
+            </div>
+          </div>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
+            fontSize="0.65em"
+            fontWeight={400}
+            letterSpacing="0.6px"
+          >
+            Hang in there, buddy, I'm here to help!
+          </p>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
+            fontSize="0.65em"
+            fontWeight={400}
+            letterSpacing="0.6px"
+          >
+            Out of range!
+          </p>
+        </section>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL DataRange__RangeContainer-u3cy9q-0 iSEnRZ"
+          id="selectDisabled"
+          rows={null}
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
+            fontSize="0.82em"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing="0px"
+          >
+            Select Range (disabled)
+          </label>
+          <div
+            className="Bar__BarLayout-sc-1c4axau-1 hfFaih"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-sc-1c4axau-0 iylbCl"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL TextInput__TextInputContainer-sc-1fep8p8-0 eqpqb"
+                id="selectDisabled_left_container"
+                rows={null}
+              >
+                <input
+                  className="TextInput__Input-sc-1fep8p8-1 sNkdI"
+                  cols=""
+                  disabled={true}
+                  id="selectDisabled_left"
+                  list={null}
+                  name="selectDisabled_left"
+                  onBlur={null}
+                  onChange={[Function]}
+                  onFocus={null}
+                  onKeyPress={null}
+                  pattern={null}
+                  placeholder={null}
+                  rows=""
+                  size={null}
+                  title={null}
+                  type="text"
+                  value={null}
+                />
+              </section>
+            </div>
+            <div
+              className="Bar__Slot-sc-1c4axau-0 ikxUaE"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL TextInput__TextInputContainer-sc-1fep8p8-0 eqpqb"
+                id="selectDisabled_right_container"
+                rows={null}
+              >
+                <input
+                  className="TextInput__Input-sc-1fep8p8-1 sNkdI"
+                  cols=""
+                  disabled={true}
+                  id="selectDisabled_right"
+                  list={null}
+                  name="selectDisabled_right"
+                  onBlur={null}
+                  onChange={[Function]}
+                  onFocus={null}
+                  onKeyPress={null}
+                  pattern={null}
+                  placeholder={null}
+                  rows=""
+                  size={null}
+                  title={null}
+                  type="text"
+                  value={null}
+                />
+              </section>
+            </div>
+          </div>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
+            fontSize="0.65em"
+            fontWeight={400}
+            letterSpacing="0.6px"
+          >
+            Hang in there, buddy, I'm here to help!
+          </p>
+        </section>
+      </section>
+    </section>
+  </form>
+</div>
+`;
+
+exports[` 4`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL DataRange__RangeContainer-u3cy9q-0 iSEnRZ"
+    id="skeleton"
+    rows={null}
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 hfFaih"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 iylbCl"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+          id="skeleton_left_container"
+          rows={null}
+        >
+          <input
+            className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+            cols=""
+            disabled={false}
+            id="skeleton_left"
+            list={null}
+            name="skeleton_left"
+            onBlur={null}
+            onChange={[Function]}
+            onFocus={null}
+            onKeyPress={null}
+            pattern={null}
+            placeholder={null}
+            rows=""
+            size={null}
+            title={null}
+            type="text"
+            value={null}
+          />
+        </section>
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 ikxUaE"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+          id="skeleton_right_container"
+          rows={null}
+        >
+          <input
+            className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+            cols=""
+            disabled={false}
+            id="skeleton_right"
+            list={null}
+            name="skeleton_right"
+            onBlur={null}
+            onChange={[Function]}
+            onFocus={null}
+            onKeyPress={null}
+            pattern={null}
+            placeholder={null}
+            rows=""
+            size={null}
+            title={null}
+            type="text"
+            value={null}
+          />
+        </section>
+      </div>
+    </div>
+  </section>
+</div>
+`;

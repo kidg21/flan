@@ -1,0 +1,711 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 jiteLd"
+  id={null}
+  rows={null}
+>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
+    id={null}
+    label="LG"
+    onClick={null}
+    src={null}
+  >
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      LG
+    </h6>
+  </div>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
+    id={null}
+    label="HF"
+    onClick={null}
+    src={null}
+  >
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      HF
+    </h6>
+  </div>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
+    id={null}
+    label="TX"
+    onClick={null}
+    src={null}
+  >
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      TX
+    </h6>
+  </div>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
+    id={null}
+    label={null}
+    onClick={null}
+    src={null}
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-envelope fa-w-16 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+      color={null}
+      data-icon="envelope"
+      data-prefix="far"
+      focusable="false"
+      id={null}
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </div>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
+    id={null}
+    label={null}
+    onClick={null}
+    src={null}
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-user fa-w-14 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+      color={null}
+      data-icon="user"
+      data-prefix="far"
+      focusable="false"
+      id={null}
+      role="img"
+      style={Object {}}
+      viewBox="0 0 448 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </div>
+</section>
+`;
+
+exports[` 2`] = `
+<div
+  alt={null}
+  className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
+  id={null}
+  label="LG"
+  onClick={null}
+  src={null}
+>
+  <h6
+    className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+    fontSize="1.05em"
+    fontWeight={400}
+    letterSpacing="0px"
+  >
+    LG
+  </h6>
+</div>
+`;
+
+exports[` 3`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cRfulb"
+  id={null}
+  rows={null}
+>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
+    id={null}
+    label="AB"
+    onClick={null}
+    src={null}
+  >
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      AB
+    </h6>
+  </div>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
+    id={null}
+    label="CD"
+    onClick={null}
+    src={null}
+  >
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      CD
+    </h6>
+  </div>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
+    id={null}
+    label="ST"
+    onClick={null}
+    src={null}
+  >
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      ST
+    </h6>
+  </div>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
+    id={null}
+    label="UV"
+    onClick={null}
+    src={null}
+  >
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      UV
+    </h6>
+  </div>
+</section>
+`;
+
+exports[` 4`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cRfulb"
+  id={null}
+  rows={null}
+>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
+    id={null}
+    label="DF"
+    onClick={null}
+    src={null}
+  >
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      DF
+    </h6>
+  </div>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 dsRWF"
+    id={null}
+    label="PR"
+    onClick={null}
+    src={null}
+  >
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      PR
+    </h6>
+  </div>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 dsRWF"
+    id={null}
+    label="IN"
+    onClick={null}
+    src={null}
+  >
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      IN
+    </h6>
+  </div>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 iAhOqz"
+    id={null}
+    label="SC"
+    onClick={null}
+    src={null}
+  >
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      SC
+    </h6>
+  </div>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 gNWQHL"
+    id={null}
+    label="WN"
+    onClick={null}
+    src={null}
+  >
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      WN
+    </h6>
+  </div>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 jPiOzu"
+    id={null}
+    label="AL"
+    onClick={null}
+    src={null}
+  >
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      AL
+    </h6>
+  </div>
+</section>
+`;
+
+exports[` 5`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cRfulb"
+  id={null}
+  rows={null}
+>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 dXWasH"
+    id={null}
+    label="PR"
+    onClick={null}
+    src={null}
+  >
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      PR
+    </h6>
+  </div>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 iYfXAX"
+    id={null}
+    label="IN"
+    onClick={null}
+    src={null}
+  >
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      IN
+    </h6>
+  </div>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 kJiqGP"
+    id={null}
+    label="SC"
+    onClick={null}
+    src={null}
+  >
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      SC
+    </h6>
+  </div>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 bmMHqs"
+    id={null}
+    label="WN"
+    onClick={null}
+    src={null}
+  >
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      WN
+    </h6>
+  </div>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 hAJdaW"
+    id={null}
+    label="PR"
+    onClick={null}
+    src={null}
+  >
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      PR
+    </h6>
+  </div>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 gXQcUG"
+    id={null}
+    label="IN"
+    onClick={null}
+    src={null}
+  >
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      IN
+    </h6>
+  </div>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 eLFnhp"
+    id={null}
+    label="SC"
+    onClick={null}
+    src={null}
+  >
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      SC
+    </h6>
+  </div>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 fllQOo"
+    id={null}
+    label="WN"
+    onClick={null}
+    src={null}
+  >
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      WN
+    </h6>
+  </div>
+</section>
+`;
+
+exports[` 6`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cRfulb"
+  id={null}
+  rows={null}
+>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
+    id={null}
+    label={null}
+    onClick={null}
+    src={null}
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-exclamation fa-w-6 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+      color={null}
+      data-icon="exclamation"
+      data-prefix="fas"
+      focusable="false"
+      id={null}
+      role="img"
+      style={Object {}}
+      viewBox="0 0 192 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M176 432c0 44.112-35.888 80-80 80s-80-35.888-80-80 35.888-80 80-80 80 35.888 80 80zM25.26 25.199l13.6 272C39.499 309.972 50.041 320 62.83 320h66.34c12.789 0 23.331-10.028 23.97-22.801l13.6-272C167.425 11.49 156.496 0 142.77 0H49.23C35.504 0 24.575 11.49 25.26 25.199z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </div>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
+    id={null}
+    label={null}
+    onClick={null}
+    src={null}
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-bookmark fa-w-12 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+      color={null}
+      data-icon="bookmark"
+      data-prefix="fas"
+      focusable="false"
+      id={null}
+      role="img"
+      style={Object {}}
+      viewBox="0 0 384 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 512V48C0 21.49 21.49 0 48 0h288c26.51 0 48 21.49 48 48v464L192 400 0 512z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </div>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
+    id={null}
+    label={null}
+    onClick={null}
+    src={null}
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-home-alt fa-w-18 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+      color={null}
+      data-icon="home-alt"
+      data-prefix="fas"
+      focusable="false"
+      id={null}
+      role="img"
+      style={Object {}}
+      viewBox="0 0 576 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </div>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
+    id={null}
+    label={null}
+    onClick={null}
+    src={null}
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-envelope fa-w-16 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+      color={null}
+      data-icon="envelope"
+      data-prefix="far"
+      focusable="false"
+      id={null}
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </div>
+</section>
+`;
+
+exports[` 7`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cRfulb"
+  id={null}
+  rows={null}
+>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 hwNdUE"
+    id={null}
+    label={null}
+    onClick={null}
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+  >
+    <img
+      alt={null}
+      className="Image__ImageWrapper-sc-18abvff-0 lswpE"
+      onClick={null}
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+      title={null}
+      width="4em"
+    />
+  </div>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 bMnnvY"
+    id={null}
+    label={null}
+    onClick={null}
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+  >
+    <img
+      alt={null}
+      className="Image__ImageWrapper-sc-18abvff-0 ffGwWR"
+      onClick={null}
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+      title={null}
+      width="5em"
+    />
+  </div>
+</section>
+`;
+
+exports[` 8`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cRfulb"
+  id={null}
+  rows={null}
+>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 ilkJsU"
+    id={null}
+    label="1x"
+    onClick={null}
+    src={null}
+  >
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      1x
+    </h6>
+  </div>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 eMkMqM"
+    id={null}
+    label="2x"
+    onClick={null}
+    src={null}
+  >
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      2x
+    </h6>
+  </div>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 hwNdUE"
+    id={null}
+    label="3x"
+    onClick={null}
+    src={null}
+  >
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      3x
+    </h6>
+  </div>
+  <div
+    alt={null}
+    className="Avatar__TagContainer-sc-1vuf9om-1 bMnnvY"
+    id={null}
+    label="4x"
+    onClick={null}
+    src={null}
+  >
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      4x
+    </h6>
+  </div>
+</section>
+`;
