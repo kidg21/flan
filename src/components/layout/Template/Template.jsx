@@ -83,6 +83,55 @@ const RegionMain = styled(Flex)`
     }
   }
 `;
+const RegionTop = styled(Flex)`
+  align-self: stretch;
+  flex: 0 1 auto;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  &:empty {
+    &:before {
+      ${PlaceholderText};
+      content: "{ Bottom }";
+      color: ${(props) => {
+    return props.theme.text.primary;
+  }};
+    }
+  }
+`;
+
+const RegionBottom = styled(Flex)`
+  flex: 0 1 auto;
+  left: 0;
+  bottom: 0;
+  
+  height: ${(props) => {
+    return props.bottomHeight || "";
+  }};
+  width: 100%;
+  @media (min-height: ${viewport.medium}) {
+    max-height: ${(props) => {
+    return props.open ? "0" : "";
+  }};
+  }
+  transform: ${(props) => {
+    return props.open ? "translateY(100%)" : "translateY(0%)";
+  }};
+  /* For Dev purposes */
+  border-top: 1px solid ${(props) => {
+    return props.theme.palette.neutral40;
+  }};
+  &:empty {
+    &:before {
+      ${PlaceholderText};
+      content: "{ Bottom }";
+      color: ${(props) => {
+    return props.theme.text.primary;
+  }};
+    }
+  }
+`;
 
 const RegionRight = styled(Flex)`
   right: 0;
@@ -119,6 +168,7 @@ function Template({
   header,
   left,
   main,
+  bottom,
   right,
   footer,
 }) {
@@ -127,22 +177,28 @@ function Template({
   let leftPosition;
   let leftWidth;
   let leftIndex;
+  let bottomIndex;
   let rightPosition;
+  let bottomHeight;
   let rightWidth;
   let rightIndex;
   if (screenLarge.matches) {
     leftWidth = "20vw";
     rightWidth = "20vw";
+    bottomHeight = "50vh";
   } else if (screenMedium.matches) {
     leftWidth = "20vw";
     rightWidth = "20vw";
+    bottomHeight = "50vh";
   } else {
     leftPosition = "absolute";
     leftWidth = "100vw";
     leftIndex = "1";
     rightPosition = "absolute";
+    bottomHeight = "50vh";
     rightWidth = "100vw";
     rightIndex = "1";
+    bottomIndex = "1";
   }
 
   let seeLeftRegion = null;
@@ -151,6 +207,9 @@ function Template({
   let seeRightRegion = null;
   let rightOpen = right ? right.visible : false;
   let setRightOpen = right ? right.toggle : null;
+  let seeBottomRegion = null;
+  let bottomOpen = bottom ? bottom.visible : false;
+  let setBottomOpen = bottom ? bottom.toggle : null;
   if (left) {
     if (!setLeftOpen) [leftOpen, setLeftOpen] = useState(left.visible);
     if (screenLarge.matches || screenMedium.matches) {
@@ -169,6 +228,16 @@ function Template({
     } else {
       // On small screens, either the left or right region can be open, not both
       seeRightRegion = () => { setRightOpen(!rightOpen); setLeftOpen(!left.visible); };
+    }
+  }
+  if (bottom) {
+    if (!setBottomOpen) [bottomOpen, setBottomOpen] = useState(bottom.visible);
+    if (screenLarge.matches || screenMedium.matches) {
+      // On larger screens, both left and right regions can be open at the same time
+      seeBottomRegion = () => { setBottomOpen(!bottomOpen); };
+    } else {
+      // On small screens, either the left or right region can be open, not both
+      seeBottomRegion = () => { setBottomOpen(!bottomOpen); setBottomOpen(!bottom.visible); };
     }
   }
 
@@ -220,7 +289,17 @@ function Template({
             {left.content}
           </RegionLeft>
         ) : null}
-        <RegionMain>{main}</RegionMain>
+        <RegionMain><RegionTop flexDirection="row">{main}</RegionTop>
+        { bottom ? (
+          <RegionBottom
+          flexDirection="row"
+            height={bottomHeight}
+            zIndex={bottomIndex}
+            open={bottomOpen}
+          >
+            {bottom.content}
+          </RegionBottom>) : null }
+        </RegionMain>
         {right ? (
           <RegionRight
             position={rightPosition}
@@ -259,6 +338,10 @@ Template.propTypes = {
   })),
   ]),
   main: PropTypes.node.isRequired,
+  bottom: PropTypes.oneOfType([PropTypes.object, PropTypes.arrayOf(PropTypes.shape({
+    content: PropTypes.node.isRequired,
+  })),
+]),
   right: PropTypes.oneOfType([PropTypes.object, PropTypes.arrayOf(PropTypes.shape({
     content: PropTypes.node.isRequired,
     iconLeft: PropTypes.string,
@@ -279,6 +362,11 @@ Template.defaultProps = {
     iconRight: null,
   },
   left: {
+    content: null,
+    visible: null,
+    toggle: null,
+  },
+  bottom: {
     content: null,
     visible: null,
     toggle: null,

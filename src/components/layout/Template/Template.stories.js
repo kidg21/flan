@@ -142,7 +142,7 @@ storiesOf("Layout |Templates/Template A/", module)
     },
   )
   .add(
-    "Configured",
+    "Configured Icons",
     () => {
       return React.createElement(() => {
         const [rightOpen, setRightOpen] = useState(true);
@@ -204,4 +204,85 @@ storiesOf("Layout |Templates/Template A/", module)
           />
       )}
       )}
+  )
+  .add(
+    "With Bottom",
+    () => {
+      return React.createElement(() => {
+        const [rightOpen, setRightOpen] = useState(true);
+        const seeRightRegion = () => { setRightOpen(!rightOpen); };
+
+        const [leftOpen, setLeftOpen] = useState(false);
+        const seeLeftRegion = () => { setLeftOpen(!leftOpen); };
+
+        const [bottomOpen, setBottomOpen] = useState(true);
+        const seeBottomRegion = () => { setBottomOpen(!bottomOpen); };
+
+        const navBar = {
+          content: (
+            <Panel
+              id="Panel"
+            >
+              <List interactive>
+                <ListItem title="Layers" />
+                <ListItem title="Results" />
+                <ListItem title="Form" />
+                <ListItem title="Research" />
+              </List>
+            </Panel>
+          ),
+          visible: leftOpen,
+          toggle: seeLeftRegion,
+        };
+
+        const appBar = {
+          content: (
+            <Panel
+              id="Panel"
+            >
+              <List interactive>
+                <ListItem title="Layers" />
+                <ListItem title="Results" />
+                <ListItem title="Form" />
+                <ListItem title="Research" />
+              </List>
+            </Panel>
+          ),
+          visible: rightOpen,
+          toggle: seeRightRegion,
+        };
+        
+        const bottomBar = {
+          content: (
+            <DataTable
+            headers={headers.slice(1)}
+            rows={data}
+            listId="foo"
+            columnWidth={180}
+          />
+          ),
+          visible: bottomOpen,
+          toggle: seeBottomRegion,
+        };
+
+              return (
+        <Template
+          header={{
+            content: "",
+            right:(
+              <IconBlock>
+              <Icon icon="list"  onClick={seeBottomRegion}/>
+              <Icon icon="chat" onClick={seeRightRegion}/>
+              <Icon icon="calendar" onClick={seeRightRegion}/>
+              </IconBlock>
+            ),
+          }}
+          left={navBar}
+          bottom={bottomBar}
+          main={<React.Fragment> <Mapbox /></React.Fragment>}
+          right={appBar}
+          />
+      )}
+      )}
   );
+
