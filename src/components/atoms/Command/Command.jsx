@@ -23,7 +23,6 @@ const CommandContainer = styled.a`
   justify-items: ${(props) => {
     return props.justifyIcon || "";
   }};
-  align-items: center;
   font-size: ${(props) => {
     return props.commandSize || "";
   }};
@@ -43,7 +42,6 @@ const CommandName = styled(Link)`
   grid-area: name;
   font-size: inherit;
   color: inherit;
-  line-height: inherit;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
