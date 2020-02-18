@@ -76,7 +76,6 @@ const Input = styled.input`
   }
 `;
 
-// eslint-disable-next-line complexity
 function TextInput({
   autocompleteList,
   children,
