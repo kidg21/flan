@@ -72,7 +72,11 @@ const RegionLeft = styled(Flex)`
 `;
 
 const RegionMain = styled(Flex)`
-  align-self: stretch;
+flex-direction: column;
+flex: auto;
+width: 100%;
+height: 100%;
+
   &:empty {
     &:before {
       ${PlaceholderText};
@@ -83,17 +87,14 @@ const RegionMain = styled(Flex)`
     }
   }
 `;
+
 const RegionTop = styled(Flex)`
+  flex: auto;
   align-self: stretch;
-  flex: 0 1 auto;
-  left: 0;
-  top: 0;
-  height: 100vh;
-  width: 100vw;
   &:empty {
     &:before {
       ${PlaceholderText};
-      content: "{ Bottom }";
+      content: "{ Top }";
       color: ${(props) => {
     return props.theme.text.primary;
   }};
@@ -102,26 +103,20 @@ const RegionTop = styled(Flex)`
 `;
 
 const RegionBottom = styled(Flex)`
-  flex: 0 1 auto;
-  left: 0;
+  flex:  none;
   bottom: 0;
-  
   height: ${(props) => {
     return props.bottomHeight || "";
   }};
-  width: 100%;
-  @media (min-height: ${viewport.medium}) {
+  @media (min-width: ${viewport.medium}) {
     max-height: ${(props) => {
-    return props.open ? "0" : "";
+    return props.open ? "" : "0";
   }};
   }
   transform: ${(props) => {
-    return props.open ? "translateY(100%)" : "translateY(0%)";
+    return props.open ? "translateY(0%)" : "translateY(100%)";
   }};
-  /* For Dev purposes */
-  border-top: 1px solid ${(props) => {
-    return props.theme.palette.neutral40;
-  }};
+
   &:empty {
     &:before {
       ${PlaceholderText};
@@ -147,7 +142,7 @@ const RegionRight = styled(Flex)`
   }};
   }
   transform: ${(props) => {
-    return props.open ? "translateX(100%)" : "translateX(0%)";
+    return props.open ? "translateX(100%)" : "translateX(-100%)";
   }};
   /* For Dev purposes */
   border-left: 1px solid ${(props) => {
@@ -289,10 +284,13 @@ function Template({
             {left.content}
           </RegionLeft>
         ) : null}
-        <RegionMain><RegionTop flexDirection="row">{main}</RegionTop>
-        { bottom ? (
+        <RegionMain>
+          <RegionTop>
+          {main}
+          </RegionTop>
+          {bottom ? (
           <RegionBottom
-          flexDirection="row"
+            flexDirection="row"
             height={bottomHeight}
             zIndex={bottomIndex}
             open={bottomOpen}

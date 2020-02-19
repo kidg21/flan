@@ -199,7 +199,7 @@ storiesOf("Layout |Templates/Template A/", module)
             ),
           }}
           left={navBar}
-          main={<React.Fragment> <Mapbox /> {dataTable}</React.Fragment>}
+          main={<React.Fragment> <Mapbox /></React.Fragment>}
           right={appBar}
           />
       )}
@@ -215,7 +215,7 @@ storiesOf("Layout |Templates/Template A/", module)
         const [leftOpen, setLeftOpen] = useState(false);
         const seeLeftRegion = () => { setLeftOpen(!leftOpen); };
 
-        const [bottomOpen, setBottomOpen] = useState(true);
+        const [bottomOpen, setBottomOpen] = useState(false);
         const seeBottomRegion = () => { setBottomOpen(!bottomOpen); };
 
         const navBar = {
