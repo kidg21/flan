@@ -5,7 +5,7 @@ import { Padding } from "helpers/Display";
 import Form, { Section } from "layout/Form";
 import DataRange from "blocks/DataRange";
 
-const DataRangeNotes = markdown.require("./DataRange.md");
+
 
 const options = [
   { value: "0", label: "0" },
@@ -26,19 +26,11 @@ const selectorOptions = [
 ];
 
 storiesOf("Blocks|Data Range", module)
-  .addParameters({
-    info: {
-      text: "Range Slider info goes here...",
-    },
-    notes: {
-      markdown: DataRangeNotes,
-    },
-  })
   .addDecorator(Padding)
   .addDecorator(withKnobs)
   .add(
     "Documentation",
-    withInfo()(() => {
+    () => {
       return (
         <Form columns="1">
           <DataRange
@@ -65,8 +57,7 @@ storiesOf("Blocks|Data Range", module)
           />
         </Form>
       );
-    }),
-  )
+    })
   .add("Knobs", () => {
     return (
       <DataRange

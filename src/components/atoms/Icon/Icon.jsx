@@ -290,6 +290,7 @@ function Icon({
 
 Icon.propTypes = {
   border: PropTypes.bool,
+  href: PropTypes.string,
   /** className used for extending styles */
   className: PropTypes.string,
   /** Options: 'info', 'success', 'warning', 'alert' */
@@ -322,6 +323,7 @@ Icon.propTypes = {
 
 Icon.defaultProps = {
   border: false,
+  href: null,
   className: null,
   badge: false,
   disabled: null,

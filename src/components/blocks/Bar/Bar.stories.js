@@ -9,7 +9,6 @@ import Command from "atoms/Command";
 import Text, {Title} from "base/Typography";
 import Bar from "blocks/Bar";
 
-const BarNotes = markdown.require("./Bar.md");
 
 const shortTitle = <Title text="A Standard Title" />;
 const longTitle = (
@@ -23,20 +22,12 @@ const multipleLines = (
 );
 
 storiesOf("Blocks|Bar", module)
-  .addParameters({
-    info: {
-      text:
-        "The 'Bar' is a Flexbox-based component that is comprised of three flexible sections that evenly distribute the available space. The 'left', 'center', and 'right' props control the alignment of the content in each.",
-    },
-    notes: {
-      markdown: BarNotes,
-    },
-  })
+
   .addDecorator(Padding)
   .addDecorator(withKnobs)
   .add(
     "Documentation",
-    withInfo()(() => {
+    () => {
       return (
         <Card>
           <Bar
@@ -46,8 +37,7 @@ storiesOf("Blocks|Bar", module)
           />
         </Card>
       );
-    }),
-  )
+    })
 
   .add("Knobs", () => {
     return (

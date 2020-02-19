@@ -12,30 +12,21 @@ const logo = {
   alt: "logo",
 };
 
-const ImageNotes = markdown.require("./Image.md");
 
 storiesOf("Atoms|Image", module)
-  .addParameters({
-    info: {
-      text: "Image info goes here...",
-    },
-    notes: {
-      markdown: ImageNotes,
-    },
-  })
+
   .addDecorator(Padding)
   .addDecorator(withKnobs)
   .add(
     "Documentation",
-    withInfo()(() => {
+    () => {
       return (
         <Image
           src={logo.src}
           alt={logo.alt}
         />
       );
-    }),
-  )
+    })
   .add("Knobs", () => {
     return (
       <Image

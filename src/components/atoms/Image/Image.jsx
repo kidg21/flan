@@ -49,6 +49,7 @@ Image.propTypes = {
   width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 Image.defaultProps = {
+  alt: "alt",
   border: false,
   circle: false,
   className: null,

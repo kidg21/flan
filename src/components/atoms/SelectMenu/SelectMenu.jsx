@@ -6,7 +6,8 @@ import PropTypes from "prop-types";
 import { fonts, colors, shadows } from "Variables";
 import Grid from "layout/Grid";
 import Text, { Label } from "base/Typography";
-import Select, { Creatable } from "react-select";
+import Select from "react-select";
+import Creatable from "react-select/creatable";
 import { Skeleton } from "helpers";
 import { DisabledContext } from "States";
 

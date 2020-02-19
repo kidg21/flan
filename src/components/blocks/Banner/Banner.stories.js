@@ -5,25 +5,17 @@ import { Padding } from "helpers/Display";
 import { CardGrid } from "elements/Card";
 import Banner from "blocks/Banner";
 
-const BannerNotes = markdown.require("./Banner.md");
+
 
 storiesOf("Blocks|Banner", module)
-  .addParameters({
-    info: {
-      text: "Banner info goes here...",
-    },
-    notes: {
-      markdown: BannerNotes,
-    },
-  })
+
   .addDecorator(Padding)
   .addDecorator(withKnobs)
   .add(
     "Documentation",
-    withInfo()(() => {
+    () => {
       return <Banner title="This is a Banner." />;
-    }),
-  )
+    })
   .add("Knobs", () => {
     return (
       <Banner

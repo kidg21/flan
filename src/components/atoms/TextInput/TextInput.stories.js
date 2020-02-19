@@ -6,23 +6,14 @@ import Panel from "layout/Panel";
 import Form, { Section } from "layout/Form";
 import TextInput from "atoms/TextInput";
 
-const TextInputNotes = markdown.require("./TextInput.md");
 
 storiesOf("Atoms|Text Input", module)
-  .addParameters({
-    info: {
-      text:
-        "Text Inputs allow users to enter text into a UI. They typically appear in forms and dialogs",
-    },
-    notes: {
-      markdown: TextInputNotes,
-    },
-  })
+
   .addDecorator(Padding)
   .addDecorator(withKnobs)
   .add(
     "Documentation",
-    withInfo()(() => {
+    () => {
       return (
         <TextInput
           id="111"
@@ -31,8 +22,7 @@ storiesOf("Atoms|Text Input", module)
           helpText="Hang in there, buddy, I'm here to help!"
         />
       );
-    }),
-  )
+    })
   .add("Skeleton", () => {
     return <TextInput />;
   })

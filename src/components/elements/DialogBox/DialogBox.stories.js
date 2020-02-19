@@ -9,16 +9,9 @@ import Bar from "blocks/Bar";
 
 storiesOf("Elements|Dialog Box", module)
   .addDecorator(Padding)
-  .addDecorator(withInfo)
-  .addParameters({
-    info: {
-      text:
-        "Dialogue Boxes are used to convey a body between the server/computer and the user. A dialogue box either has one absolute (button) or two button options; typically an affirmative and dissenting option. If two buttons are selected then they are located on the bottom left corner as to be readily accessbile to the user. The primary button is always solid, the second is outlined. Both buttons must be the same color family. If one button is selected the button is center in the middle of the dialogue box. ",
-    },
-  })
   .add(
     "Documentation",
-    withInfo()(() => {
+    () => {
       return (
         <DialogBox
           title="Default Dialog"
@@ -35,8 +28,7 @@ storiesOf("Elements|Dialog Box", module)
           ]}
         />
       );
-    }),
-  )
+    })
 
   .add("Success", () => {
     return (

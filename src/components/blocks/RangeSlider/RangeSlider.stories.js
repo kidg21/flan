@@ -5,22 +5,14 @@ import { Padding } from "helpers/Display";
 import Form, { Section } from "layout/Form";
 import RangeSlider from "blocks/RangeSlider";
 
-const RangeSliderNotes = markdown.require("./RangeSlider.md");
 
 storiesOf("Blocks|Range Slider", module)
-  .addParameters({
-    info: {
-      text: "Range Slider info goes here...",
-    },
-    notes: {
-      markdown: RangeSliderNotes,
-    },
-  })
+
   .addDecorator(Padding)
   .addDecorator(withKnobs)
   .add(
     "Documentation",
-    withInfo()(() => {
+    () => {
       return (
         <RangeSlider
           label="Range Slider Label"
@@ -29,8 +21,7 @@ storiesOf("Blocks|Range Slider", module)
           helpText="Hang in there, buddy, I'm here to help!"
         />
       );
-    }),
-  )
+    })
   .add("Knobs", () => {
     return (
       <RangeSlider
