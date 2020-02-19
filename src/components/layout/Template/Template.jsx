@@ -241,7 +241,7 @@ function Template({
       {header ? (
         <Header
           contentAlign="center"
-          rightWidth="10%"
+          rightWidth={header.rightWidth}
           padding="2x"
           left={
             header.iconLeft ? (
@@ -325,6 +325,7 @@ Template.propTypes = {
   header: PropTypes.oneOfType([PropTypes.object, PropTypes.arrayOf(PropTypes.shape({
     content: PropTypes.node,
     right: PropTypes.node,
+    rightWidth: PropTypes.string,
     iconLeft: PropTypes.string,
     iconRight: PropTypes.string,
   })),
@@ -356,6 +357,7 @@ Template.defaultProps = {
   header: {
     content: null,
     right: null,
+    rightWidth: null,
     iconLeft: null,
     iconRight: null,
   },
