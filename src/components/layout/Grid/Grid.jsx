@@ -19,7 +19,7 @@ const GridWrapper = styled.section`
     return props.rows || "auto";
   }};
   align-items: ${(props) => {
-    return props.alignItems || "flex-start";
+    return props.alignItems || "stretch";
   }};
   width: 100%;
 `;
