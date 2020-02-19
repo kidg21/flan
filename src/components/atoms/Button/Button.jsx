@@ -245,58 +245,23 @@ function Button({
     }
   }
 
-  let content;
+  let iconSize = null;
+  if (vertical) iconSize = "lg";
+  else if (!label && !count) iconSize = "2x";
 
+  const columns = count ? "max-content max-content 1fr" : `1fr ${!vertical && label ? "max-content" : ""}`;
 
-  if (icon) {
-    content = (
-      <LabelWrapper columns="1fr max-content">
-        <Icon icon={icon} />
-        <Text size="4x" weight="bold" text={label} />
-      </LabelWrapper>
-    );
-    if (!label) {
-      content = (
-        <LabelWrapper columns="1fr">
-          <Icon icon={icon} size="2x" />
-        </LabelWrapper>
-      );
-    }
-    if (vertical) {
-      content = (
-        <LabelWrapper
-          columns="1fr"
-          rows="max-content 1fr"
-          vertical={vertical}
-        >
-          <Icon icon={icon} size="lg" />
-          <Text size="4x" weight="bold" text={label} />
-        </LabelWrapper>
-      );
-    }
-    if (count) {
-      content = (
-        <LabelWrapper columns="max-content max-content 1fr">
-          <Icon icon={icon} />
-          <Text size="4x" weight="bold" text={label} />
-          {!isDisabled ? <Tag label={count} /> : null}
-        </LabelWrapper>
-      );
-    }
-  } else if (count) {
-    content = (
-      <LabelWrapper columns="1fr max-content">
-        <Text size="4x" weight="bold" text={label} />
-        {!isDisabled ? <Tag label={count} /> : null}
-      </LabelWrapper>
-    );
-  } else {
-    content = (
-      <LabelWrapper columns="1fr">
-        <Text size="4x" weight="bold" text={label} />
-      </LabelWrapper>
-    );
-  }
+  const content = (
+    <LabelWrapper
+      columns={columns}
+      rows={vertical ? "max-content 1fr" : null}
+      vertical={vertical}
+    >
+      {icon ? <Icon icon={icon} size={iconSize} /> : null}
+      {label ? <Text size="4x" weight="bold" text={label} /> : null}
+      {count && !isDisabled ? <Tag label={count} /> : null}
+    </LabelWrapper>
+  );
 
   return (
     <StyledButton
