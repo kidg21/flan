@@ -35,6 +35,7 @@ function decorator(getStory) {
 }
 export const withKnobs = decorator;
 export const checkA11y = decorator;
+export const action = decorator;
 
 function inputSelector(name, value) {
   return value;
@@ -55,4 +56,4 @@ export const specs = (spec) => {
 
 export const Mapbox = function Mapbox() {
   return <div style={{ width: "100%", height: "100%" }} />;
-}
+};

@@ -1,6 +1,11 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
+import { DMPTheme } from "Variables";
+import { ThemeProvider } from "styled-components";
+import { expect } from "chai";
+import { mount } from "enzyme";
+import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
 import Button from "atoms/Button";
 
@@ -23,7 +28,7 @@ export default {
   parameters: {
     docs: { page: null },
   },
-  includeStories: ["Knobs", "Actions", "Specs"],
+  includeStories: ["Knobs", "Actions"],
   decorators: [Padding, withKnobs],
 };
 
@@ -65,57 +70,57 @@ Actions.story = {
   },
 };
 
-export const Specs = () => {
-  const story = (
-    <Grid columns="2">
-      <Button label="Standard Primary" />
-      <Button label="Solid Primary" solid />
-      <Button label="Standard Secondary" color="secondary" />
-      <Button label="Solid Secondary" solid color="secondary" />
-      <Button label="Underline Primary" underlined />
-      <Button
-        label="Underline Secondary"
-        underlined
-        color="secondary"
-      />
-      <Button label="Disabled Button" color="secondary" disabled />
-      <Button label="Disabled Underline" underlined disabled />
-    </Grid>
-  );
+// export const Specs = () => {
+//   const story = (
+//     <Grid columns="2">
+//       <Button label="Standard Primary" />
+//       <Button label="Solid Primary" solid />
+//       <Button label="Standard Secondary" color="secondary" />
+//       <Button label="Solid Secondary" solid color="secondary" />
+//       <Button label="Underline Primary" underlined />
+//       <Button
+//         label="Underline Secondary"
+//         underlined
+//         color="secondary"
+//       />
+//       <Button label="Disabled Button" color="secondary" disabled />
+//       <Button label="Disabled Underline" underlined disabled />
+//     </Grid>
+//   );
 
-  specs(() => {
-    let output = null;
-    return describe("Specs", () => {
-      before(() => {
-        output = mount(<ThemeProvider theme={DMPTheme}>{story}</ThemeProvider>);
-      });
+//   specs(() => {
+//     let output = null;
+//     return describe("Specs", () => {
+//       before(() => {
+//         output = mount(<ThemeProvider theme={DMPTheme}>{story}</ThemeProvider>);
+//       });
 
-      after(() => {
-        output.unmount();
-      });
+//       after(() => {
+//         output.unmount();
+//       });
 
-      it("Is wrapped by a Two-Column Grid", () => {
-        const grid = output.find("Grid");
-        expect(grid.prop("columns")).to.equal("repeat(2, minmax(0, 1fr))");
-      });
+//       it("Is wrapped by a Two-Column Grid", () => {
+//         const grid = output.find("Grid");
+//         expect(grid.prop("columns")).to.equal("repeat(2, minmax(0, 1fr))");
+//       });
 
-      it("Can render multiple Buttons", () => {
-        const buttons = output.find("button");
-        expect(buttons).to.have.lengthOf(8);
-      });
+//       it("Can render multiple Buttons", () => {
+//         const buttons = output.find("button");
+//         expect(buttons).to.have.lengthOf(8);
+//       });
 
-      it("Accepts a \"label\" prop", () => {
-        const button = output.find("button").first();
-        const label = button.children();
-        expect(label.text()).to.equal("Standard Primary");
-      });
-    });
-  });
+//       it("Accepts a \"label\" prop", () => {
+//         const button = output.find("button").first();
+//         const label = button.children();
+//         expect(label.text()).to.equal("Standard Primary");
+//       });
+//     });
+//   });
 
-  return story;
-};
-Specs.story = {
-  parameters: {
-    viewMode: "story",
-  },
-};
+//   return story;
+// };
+// Specs.story = {
+//   parameters: {
+//     viewMode: "story",
+//   },
+// };
