@@ -249,7 +249,8 @@ function Button({
   if (vertical) iconSize = "lg";
   else if (!label && !count) iconSize = "2x";
 
-  const columns = count ? "max-content max-content 1fr" : `1fr ${!vertical && label ? "max-content" : ""}`;
+  const columns =
+    count || icon ? `${!vertical && icon ? "max-content" : ""} 1fr ${count ? "max-content" : ""}` : "1fr";
 
   const content = (
     <LabelWrapper
