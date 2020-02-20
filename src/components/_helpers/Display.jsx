@@ -36,6 +36,10 @@ function Spacer() {
   return <span>&nbsp;</span>;
 }
 
+const DisplayGrid = (storyFn) => {
+  return (<Grid>{storyFn()}</Grid>);
+};
+
 function IconGrid({ data }) {
   return data.map(item => (
     <Card
@@ -81,4 +85,4 @@ function CommandGrid({ data }) {
   ));
 }
 
-export { FullScreen, Center, Padding, Container, Spacer, IconGrid, CommandGrid };
+export { FullScreen, Center, Padding, Container, Spacer, DisplayGrid, IconGrid, CommandGrid };
