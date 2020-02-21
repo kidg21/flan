@@ -1,0 +1,1259 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 iAZTTM"
+  id={null}
+  rows={null}
+>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ColorBlockColor-x3fy5-1 hgSanj"
+        color="lightBoxNavy"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        lightBoxNavy
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ColorBlockColor-x3fy5-1 eNcFre"
+        color="lightBoxCyan"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        lightBoxCyan
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ColorBlockColor-x3fy5-1 kmhxOA"
+        color="lightBoxGold"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        lightBoxGold
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ColorBlockColor-x3fy5-1 dcpAIz"
+        color="lightBoxGrey"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        lightBoxGrey
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ColorBlockColor-x3fy5-1 biFuWr"
+        color="softGrey"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        softGrey
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ColorBlockColor-x3fy5-1 iurHLG"
+        color="softBlue"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        softBlue
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ColorBlockColor-x3fy5-1 hRobJU"
+        color="moss"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        moss
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ColorBlockColor-x3fy5-1 trrVx"
+        color="robinBlue"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        robinBlue
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ColorBlockColor-x3fy5-1 grNUhm"
+        color="seafoam"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        seafoam
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ColorBlockColor-x3fy5-1 zCBol"
+        color="blueSteel"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        blueSteel
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ColorBlockColor-x3fy5-1 hsnqsA"
+        color="tangerine"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        tangerine
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ColorBlockColor-x3fy5-1 iYplUR"
+        color="lemon"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        lemon
+      </p>
+    </div>
+  </div>
+</section>
+`;
+
+exports[` 2`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 bIajwu"
+  id={null}
+  rows={null}
+>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ThemeColorBlockColor-x3fy5-0 hrVbkS"
+        color="action20"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        action20
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ThemeColorBlockColor-x3fy5-0 eFJXBG"
+        color="action40"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        action40
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ThemeColorBlockColor-x3fy5-0 kJzwDj"
+        color="action60"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        action60
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ThemeColorBlockColor-x3fy5-0 gMIfzb"
+        color="action80"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        action80
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ThemeColorBlockColor-x3fy5-0 gfwKiY"
+        color="action100"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        action100
+      </p>
+    </div>
+  </div>
+</section>
+`;
+
+exports[` 3`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 bIajwu"
+  id={null}
+  rows={null}
+>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ThemeColorBlockColor-x3fy5-0 hrVbkS"
+        color="info20"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        info20
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ThemeColorBlockColor-x3fy5-0 eFJXBG"
+        color="info40"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        info40
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ThemeColorBlockColor-x3fy5-0 kJzwDj"
+        color="info60"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        info60
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ThemeColorBlockColor-x3fy5-0 gMIfzb"
+        color="info80"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        info80
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ThemeColorBlockColor-x3fy5-0 gfwKiY"
+        color="info100"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        info100
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ThemeColorBlockColor-x3fy5-0 jjcsau"
+        color="success20"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        success20
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ThemeColorBlockColor-x3fy5-0 ebWjvl"
+        color="success40"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        success40
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ThemeColorBlockColor-x3fy5-0 glhlYt"
+        color="success60"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        success60
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ThemeColorBlockColor-x3fy5-0 gXTUR"
+        color="success80"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        success80
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ThemeColorBlockColor-x3fy5-0 cFBTmX"
+        color="success100"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        success100
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ThemeColorBlockColor-x3fy5-0 hAREsm"
+        color="warning20"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        warning20
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ThemeColorBlockColor-x3fy5-0 bUhbdh"
+        color="warning40"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        warning40
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ThemeColorBlockColor-x3fy5-0 ixuOsz"
+        color="warning60"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        warning60
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ThemeColorBlockColor-x3fy5-0 dpgByJ"
+        color="warning80"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        warning80
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ThemeColorBlockColor-x3fy5-0 bnmqdC"
+        color="warning100"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        warning100
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ThemeColorBlockColor-x3fy5-0 cmCxkm"
+        color="alert20"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        alert20
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ThemeColorBlockColor-x3fy5-0 jotxCV"
+        color="alert40"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        alert40
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ThemeColorBlockColor-x3fy5-0 dJxnYV"
+        color="alert60"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        alert60
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ThemeColorBlockColor-x3fy5-0 hpCyhw"
+        color="alert80"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        alert80
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ThemeColorBlockColor-x3fy5-0 lgyiVC"
+        color="alert100"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        alert100
+      </p>
+    </div>
+  </div>
+</section>
+`;
+
+exports[` 4`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 bIajwu"
+  id={null}
+  rows={null}
+>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ColorBlockColor-x3fy5-1 hSXzCz"
+        color="grey10"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        grey10
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ColorBlockColor-x3fy5-1 bhMnai"
+        color="grey20"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        grey20
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ColorBlockColor-x3fy5-1 CvcZX"
+        color="grey30"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        grey30
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ColorBlockColor-x3fy5-1 grlToK"
+        color="grey40"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        grey40
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ColorBlockColor-x3fy5-1 fFucCW"
+        color="grey50"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        grey50
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ColorBlockColor-x3fy5-1 DUEbx"
+        color="grey60"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        grey60
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ColorBlockColor-x3fy5-1 cukwUs"
+        color="grey70"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        grey70
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ColorBlockColor-x3fy5-1 hliSFx"
+        color="grey80"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        grey80
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ColorBlockColor-x3fy5-1 jEphlF"
+        color="grey90"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        grey90
+      </p>
+    </div>
+  </div>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <div
+        className="Colors__ColorBlockColor-x3fy5-1 cieXJR"
+        color="grey100"
+      />
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        grey100
+      </p>
+    </div>
+  </div>
+</section>
+`;

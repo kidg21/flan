@@ -7,6 +7,7 @@ import Grid from "layout/Grid";
 import { DisabledContext } from "States";
 import Text, { Label } from "base/Typography";
 import TextInput from "atoms/TextInput";
+import { getGuid } from "helpers";
 
 const CalendarContainer = styled(Grid)`
   color: ${(props) => {
@@ -79,16 +80,18 @@ function Calendar({
       ...time,
     },
   };
+
+  const uId = id || getGuid();
   const inputTypes =
     type.toLowerCase() === "datetime" ? ["date", "time"] : [type.toLowerCase()];
   const inputElements = inputTypes.map((currType) => {
     return (
       <TextInput
-        key={`${currType}-${id}`}
+        key={`${currType}-${uId}`}
         disabled={isDisabled}
         error={!!error}
         warning={!!warning}
-        id={id}
+        id={`${uId}_${currType}`}
         placeholderColor={placeholderColor}
         inputBorderColor={inputBorderColor}
         inputBorderColorHover={inputBorderColorHover}
@@ -96,7 +99,7 @@ function Calendar({
         inputSelectColor={inputSelectColor}
         min={min}
         max={max}
-        name={id}
+        name={`${uId}_${currType}`}
         onChange={inputProps[currType].onChange}
         pattern={pattern}
         type={currType}
@@ -119,7 +122,7 @@ function Calendar({
       error={error}
       columns="1"
       gap="tiny"
-      id={id}
+      id={uId}
       inputTextColor={inputTextColor}
       isRequired={isRequired}
     >

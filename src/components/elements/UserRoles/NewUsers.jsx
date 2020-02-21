@@ -7,14 +7,17 @@ import TextInput from "atoms/TextInput";
 import Button from "atoms/Button";
 import Table from "blocks/Table";
 import Panel from "layout/Panel";
+import { getGuid } from "helpers";
 
-function NewUsers({ columns, users }) {
+function NewUsers({ id, columns, users }) {
+  const uId = id || getGuid();
+
   return (
-    <Panel>
-      <MainPanelHeader title="User Roles" />
+    <Panel id={uId}>
+      <MainPanelHeader id={`${uId}_header`} title="User Roles" />
       <Bar
-        left={<TextInput type="search" placeholder="Search for a User" />}
-        right={<Button label="+Add User" />}
+        left={<TextInput id={`${uId}_search`} type="search" placeholder="Search for a User" />}
+        right={<Button id={`${uId}_addUser`} label="+Add User" />}
         leftWidth="30%"
       />
       {/* <Table columns={columns} data={users} scroll header setHeight="200px" /> */}
@@ -23,11 +26,13 @@ function NewUsers({ columns, users }) {
 }
 
 NewUsers.propTypes = {
+  id: PropTypes.string,
   columns: PropTypes.arrayOf(PropTypes.string),
   users: PropTypes.arrayOf(PropTypes.object),
 };
 
 NewUsers.defaultProps = {
+  id: null,
   columns: null,
   users: null,
 };

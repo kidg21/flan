@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <div
+    className="Bar__BarLayout-sc-1c4axau-1 bskYLt"
+    id={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__Slot-sc-1c4axau-0 fJOmjx"
+    >
+      <a
+        className="Icon__LinkedIcon-sc-1oa9m1v-0 kzNrBw"
+        disabled={null}
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-angle-left fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 egNihH"
+          color="link"
+          data-icon="angle-left"
+          data-prefix="far"
+          focusable="false"
+          id={null}
+          role="img"
+          style={Object {}}
+          viewBox="0 0 192 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4.2 247.5L151 99.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17L69.3 256l118.5 119.7c4.7 4.7 4.7 12.3 0 17L168 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 264.5c-4.7-4.7-4.7-12.3 0-17z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </a>
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 kJMvlj"
+    >
+      <h5
+        className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+        fontSize="1.15em"
+        fontWeight={600}
+        letterSpacing="0px"
+      >
+        Main Header
+      </h5>
+    </div>
+    <div
+      className="Bar__Slot-sc-1c4axau-0 ikxUaE"
+    >
+      <a
+        className="Menu__MenuContainer-sc-17iwn6x-0 lhgeCh"
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-ellipsis-v fa-w-4 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+          color={null}
+          data-icon="ellipsis-v"
+          data-prefix="far"
+          focusable="false"
+          id={null}
+          role="img"
+          style={Object {}}
+          viewBox="0 0 128 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+`;

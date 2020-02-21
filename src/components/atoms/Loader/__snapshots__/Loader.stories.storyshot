@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  className="Loader__Chase-codnj1-1 fESJsW"
+>
+  <div
+    className="Loader__Dot-codnj1-2 iflaQM"
+  />
+  <div
+    className="Loader__Dot-codnj1-2 iflaQM"
+  />
+  <div
+    className="Loader__Dot-codnj1-2 iflaQM"
+  />
+  <div
+    className="Loader__Dot-codnj1-2 iflaQM"
+  />
+</div>
+`;
+
+exports[` 2`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 iqLncG"
+  id={null}
+  rows={null}
+>
+  <div
+    className="Loader__Fill-codnj1-0 bCvLPp"
+  />
+  <div
+    className="Loader__Chase-codnj1-1 fESJsW"
+  >
+    <div
+      className="Loader__Dot-codnj1-2 iflaQM"
+    />
+    <div
+      className="Loader__Dot-codnj1-2 iflaQM"
+    />
+    <div
+      className="Loader__Dot-codnj1-2 iflaQM"
+    />
+    <div
+      className="Loader__Dot-codnj1-2 iflaQM"
+    />
+  </div>
+</section>
+`;
