@@ -40,7 +40,7 @@ const TagContainer = styled.div`
 `;
 
 function Avatar({
-  type, icon, id, src, alt, image, label, brand, onClick, size,
+  alt, brand, icon, id, label, media, onClick, size, type,
 }) {
   let labelType;
   let iconType;
@@ -81,13 +81,13 @@ function Avatar({
   const textColor = "inverse";
 
 
-  if (image) {
+  if (media) {
     iconType = (<Image
-      circle
-      src={src}
-      height={avatarSize}
-      width={avatarSize}
       alt={alt}
+      circle
+      height={avatarSize}
+      src={media}
+      width={avatarSize}
     />);
   } else if (icon) {
     iconType = <Icon icon={icon} size="lg" />;
@@ -112,24 +112,24 @@ function Avatar({
       backgroundColor = "brand3";
     } if (brand === "brand4") {
       backgroundColor = "brand4";
-    } else { null; }
+    } else {
+      backgroundColor = null;
+    }
   }
-  
 
 
   return (
     <TagContainer
-      backgroundColor={backgroundColor}
-      icon={icon}
-      src={src}
       alt={alt}
-      brand={brand}
-      image={image}
       avatarSize={avatarSize}
+      backgroundColor={backgroundColor}
+      brand={brand}
+      icon={icon}
       id={id}
       label={label}
-      textColor={textColor}
+      media={media}
       onClick={onClick}
+      textColor={textColor}
     >
       {iconType || labelType}
     </TagContainer>
@@ -137,31 +137,29 @@ function Avatar({
 }
 
 Avatar.propTypes = {
-  /** Options: 'action',  'info', 'success', 'warning', 'alert' */
-  type: PropTypes.string,
+  alt: PropTypes.string,
+  brand: PropTypes.string,
   /** Enter the name of the icon as the prop value. (ex. icon='circle' */
   icon: PropTypes.string,
-  image: PropTypes.node,
-  src: PropTypes.node,
-  brand: PropTypes.string,
-  alt: PropTypes.string,
   id: PropTypes.string,
+  label: PropTypes.string,
+  media: PropTypes.string,
   onClick: PropTypes.node,
   size: PropTypes.node,
-  label: PropTypes.string,
+  /** Options: 'action',  'info', 'success', 'warning', 'alert' */
+  type: PropTypes.string,
 };
 
 Avatar.defaultProps = {
-  type: null,
-  image: null,
-  src: null,
-  brand: null,
   alt: null,
-  size: null,
-  onClick: null,
+  brand: null,
   icon: null,
   id: null,
   label: null,
+  media: null,
+  onClick: null,
+  size: null,
+  type: null,
 };
 
 export default Avatar;
