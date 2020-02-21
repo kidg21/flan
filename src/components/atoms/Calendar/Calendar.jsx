@@ -16,23 +16,23 @@ const CalendarContainer = styled(Grid)`
 
 function Calendar({
   className,
+  date,
   disabled,
   error,
   helpText,
   id,
-  label,
   isRequired,
+  label,
   max,
   min,
+  onBlur,
+  onChange,
+  onFocus,
   pattern,
+  time,
   type,
   value,
-  onChange,
   warning,
-  onBlur,
-  onFocus,
-  date,
-  time,
 }) {
   let inputFillColor;
   let placeholderColor;
@@ -84,25 +84,25 @@ function Calendar({
   const inputElements = inputTypes.map((currType) => {
     return (
       <TextInput
-        key={`${currType}-${id}`}
         disabled={isDisabled}
         error={!!error}
-        warning={!!warning}
         id={id}
-        placeholderColor={placeholderColor}
         inputBorderColor={inputBorderColor}
         inputBorderColorHover={inputBorderColorHover}
         inputFillColor={inputFillColor}
         inputSelectColor={inputSelectColor}
-        min={min}
+        key={`${currType}-${id}`}
         max={max}
+        min={min}
         name={id}
+        onBlur={inputProps[currType].onBlur}
         onChange={inputProps[currType].onChange}
+        onFocus={inputProps[currType].onFocus}
         pattern={pattern}
+        placeholderColor={placeholderColor}
         type={currType}
         value={inputProps[currType].value}
-        onBlur={inputProps[currType].onBlur}
-        onFocus={inputProps[currType].onFocus}
+        warning={!!warning}
       />
     );
   });
@@ -115,9 +115,9 @@ function Calendar({
   return (
     <CalendarContainer
       className={className}
+      columns="1"
       disabled={isDisabled}
       error={error}
-      columns="1"
       gap="tiny"
       id={id}
       inputTextColor={inputTextColor}
@@ -133,46 +133,46 @@ function Calendar({
 
 Calendar.propTypes = {
   className: PropTypes.string,
+  date: PropTypes.shape({}),
   disabled: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
-  warning: PropTypes.string,
   helpText: PropTypes.string,
   id: PropTypes.string,
-  label: PropTypes.string,
   isRequired: PropTypes.bool,
+  label: PropTypes.string,
   /** Sets or returns the value of the max attribute of the date field */
   max: PropTypes.string,
   /** Sets or returns the value of the min attribute of the date field */
   min: PropTypes.string,
-  onChange: PropTypes.func,
   onBlur: PropTypes.func,
+  onChange: PropTypes.func,
   onFocus: PropTypes.func,
   pattern: PropTypes.string,
+  time: PropTypes.shape({}),
   type: PropTypes.oneOf(["date", "time", "datetime"]),
   value: PropTypes.string,
-  date: PropTypes.shape({}),
-  time: PropTypes.shape({}),
+  warning: PropTypes.string,
 };
 
 Calendar.defaultProps = {
   className: null,
+  date: {},
   disabled: null,
   error: null,
   helpText: null,
   id: null,
-  label: null,
-  onChange: null,
   isRequired: false,
+  label: null,
   max: null,
   min: null,
+  onBlur: () => { },
+  onChange: null,
+  onFocus: () => { },
   pattern: null,
+  time: {},
   type: "date",
   value: null,
-  onBlur: () => { },
-  onFocus: () => { },
   warning: null,
-  date: {},
-  time: {},
 };
 
 export default Calendar;
