@@ -96,11 +96,11 @@ function TextInput({
   value,
   onBlur,
   onFocus,
+  onKeyPress,
   name,
   rows,
   cols,
   warning,
-  onKeyPress,
 }) {
   let as;
   let inputTextColor;
@@ -114,9 +114,9 @@ function TextInput({
   if (type === "textarea") {
     as = "textarea";
     inputResize = "vertical";
-  } else if (type === "search") {
-    // do nothing
   }
+  // else if (type === "search") {
+  // }
 
   const uId = id || getGuid();
 
@@ -208,9 +208,10 @@ function TextInput({
         value={value}
         onBlur={onBlur}
         onFocus={onFocus}
+        onKeyPress={onKeyPress}
         rows={rows} // textarea attribute
         cols={cols} // textarea attribute
-        onKeyPress={onKeyPress}
+        autoComplete={autocompleteList && autocompleteList.length > 0 ? "on" : "off"}
       />
       {autocompleteDataList}
       {helpText ? <Text size="1x" text={helpText} /> : null}
@@ -265,11 +266,11 @@ TextInput.propTypes = {
   value: PropTypes.string,
   onBlur: PropTypes.func,
   onFocus: PropTypes.func,
+  onKeyPress: PropTypes.func,
   name: PropTypes.string,
   rows: PropTypes.string,
   cols: PropTypes.string,
   warning: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
-  onKeyPress: PropTypes.func,
 };
 
 TextInput.defaultProps = {
@@ -292,11 +293,11 @@ TextInput.defaultProps = {
   value: null,
   onBlur: null,
   onFocus: null,
+  onKeyPress: null,
   name: "",
   rows: "",
   cols: "",
   warning: "",
-  onKeyPress: null,
 };
 
 export default TextInput;
