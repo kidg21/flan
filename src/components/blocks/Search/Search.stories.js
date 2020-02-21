@@ -3,7 +3,7 @@
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import Search from "./Search.jsx";
+import SearchBar from "./Search.jsx";
 
 
 
@@ -38,17 +38,17 @@ const data = [
 storiesOf("Blocks|Search", module)
     .add("Default", () => {
         return (
-            <Search/>
+            <SearchBar/>
         );
     })
     .add("Advance", () => {
         return (
-            <Search showAdvanced/>
+            <SearchBar showAdvanced/>
         );
     })
     .add("Results", () => {
         return (
-            <Search showResults/>
+            <SearchBar showResults/>
         );
     });
 
