@@ -1,10 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import SummaryPanel from "./SurfaceTemplates/SummaryPanelTemplate.jsx";
-
-const templateComponents = {
-  SummaryPanel,
-};
+import * as lbReactCore from "../../index";
 
 const interpolate = (templateString, records) => {
   const funcBody = `"use strict"; return (function (records) { return \`${templateString}\`})`;
@@ -48,12 +44,22 @@ const parseContent = (rawContent) => {
 };
 
 const GenericSurface = (props) => {
-  const Template = templateComponents[props.templateName || "SummaryPanel"];
-  return (<Template content={parseContent(props.content)} />);
+  let output = null;
+  if (typeof props.template === "function") {
+    // Built-in template
+    output = (<props.template content={parseContent(props.content)} />);
+  } else if (typeof props.template === "string") {
+    // Custom template string we need to execute to render html
+    const funcBody = `return (function (props, React, lbReactCore) { return (${props.template})})`;
+    output = Function(`${funcBody}`)()({ content: parseContent(props.content) }, React, lbReactCore);
+  } else {
+    console.log("Invalid template format: Please use a React component or a JS string");
+  }
+  return output;
 };
 
 GenericSurface.propTypes = {
-  templateName: PropTypes.string.isRequired,
+  template: PropTypes.oneOf([PropTypes.node, PropTypes.string]).isRequired,
   content: PropTypes.shape({
     title: PropTypes.string.isRequired,
     sections: PropTypes.arrayOf(PropTypes.shape({
