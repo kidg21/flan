@@ -84,13 +84,13 @@ const InputGroup = styled(Grid)`
 function Checkbox({
   align,
   checked,
-  error,
   disabled,
+  error,
   id,
   label,
+  onBlur,
   onChange,
   onFocus,
-  onBlur,
   warning,
 }) {
   let inputTextColor;
@@ -146,11 +146,11 @@ function Checkbox({
         fillColor={fillColor}
         fillColorChecked={fillColorChecked}
         id={id}
+        onBlur={onBlur}
         onChange={onChange}
+        onFocus={onFocus}
         outlineColor={outlineColor}
         tabIndex={tabIndex}
-        onBlur={onBlur}
-        onFocus={onFocus}
       />
       {label ? <Label htmlFor={id} text={label} /> : null}
     </CheckboxContainer>
@@ -166,8 +166,8 @@ function CheckboxGroup({
   error,
   helpText,
   id,
-  label,
   isRequired,
+  label,
   onChange,
   warning,
 }) {
@@ -188,10 +188,10 @@ function CheckboxGroup({
   return (
     <CheckboxWrapper
       align={align}
-      disabled={isDisabled}
       columns="1"
-      inputTextColor={inputTextColor}
+      disabled={isDisabled}
       id={id}
+      inputTextColor={inputTextColor}
     >
       {label ? (
         <Text weight="bold" isRequired={isRequired} text={label} />
@@ -203,17 +203,17 @@ function CheckboxGroup({
             return (
               <Checkbox
                 align={align}
+                checked={item.checked}
                 disabled={item.disabled || isDisabled}
                 error={!!error}
-                warning={!!warning}
                 id={item.id}
+                isRequired={item.isRequired}
                 key={item.id}
                 label={item.label}
-                onChange={item.onChange || onChange}
-                isRequired={item.isRequired}
                 onBlur={item.onBlur}
+                onChange={item.onChange || onChange}
                 onFocus={item.onFocus}
-                checked={item.checked}
+                warning={!!warning}
               />
             );
           })}
@@ -228,25 +228,25 @@ Checkbox.propTypes = {
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
   error: PropTypes.bool,
-  warning: PropTypes.bool,
   id: PropTypes.string,
   label: PropTypes.node,
-  onChange: PropTypes.func,
   onBlur: PropTypes.func,
+  onChange: PropTypes.func,
   onFocus: PropTypes.func,
+  warning: PropTypes.bool,
 };
 
 Checkbox.defaultProps = {
   align: null,
   checked: null,
   disabled: false,
-  label: null,
   error: null,
-  warning: false,
   id: null,
-  onChange: null,
+  label: null,
   onBlur: null,
+  onChange: null,
   onFocus: null,
+  warning: false,
 };
 
 CheckboxGroup.propTypes = {
