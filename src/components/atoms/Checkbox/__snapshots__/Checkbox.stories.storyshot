@@ -102,12 +102,12 @@ exports[` 4`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 iqLncG Checkbox__CheckboxWrapper-sc-1gwp7am-0 cfHVch"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 eTxJUf Checkbox__CheckboxWrapper-sc-1gwp7am-0 cfHVch"
     id={null}
     rows={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 jiteLd Checkbox__InputGroup-sc-1gwp7am-3 LNZza"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 fGkTyc Checkbox__InputGroup-sc-1gwp7am-3 LNZza"
       id={null}
       rows={null}
     >
@@ -181,7 +181,7 @@ exports[` 4`] = `
         </label>
       </div>
       <div
-        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 eDFMlj"
+        className="Checkbox__CheckboxContainer-sc-1gwp7am-1 flPALf"
         disabled={true}
       >
         <input
@@ -241,12 +241,12 @@ exports[` 5`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 iqLncG Checkbox__CheckboxWrapper-sc-1gwp7am-0 cfHVch"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 eTxJUf Checkbox__CheckboxWrapper-sc-1gwp7am-0 cfHVch"
     id={null}
     rows={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 jiteLd Checkbox__InputGroup-sc-1gwp7am-3 LNZza"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 fGkTyc Checkbox__InputGroup-sc-1gwp7am-3 LNZza"
       id={null}
       rows={null}
     >
@@ -329,7 +329,7 @@ exports[` 6`] = `
 
 exports[` 7`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 jiteLd"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 fGkTyc"
   id={null}
   rows={null}
 >
@@ -403,7 +403,7 @@ exports[` 7`] = `
     </label>
   </div>
   <div
-    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 eDFMlj"
+    className="Checkbox__CheckboxContainer-sc-1gwp7am-1 flPALf"
     disabled={true}
   >
     <input
@@ -431,7 +431,7 @@ exports[` 7`] = `
 
 exports[` 8`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 jiteLd"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 fGkTyc"
   id={null}
   rows={null}
 >
@@ -486,7 +486,7 @@ exports[` 8`] = `
 
 exports[` 9`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 jiteLd"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 fGkTyc"
   id={null}
   rows={null}
 >
@@ -497,7 +497,7 @@ exports[` 9`] = `
     onSubmit={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 eGbheC Form__FormInputs-v2wrel-3 bZGKXs"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 eVqRaz Form__FormInputs-v2wrel-3 bZGKXs"
       id={null}
       rows={null}
     >
@@ -513,12 +513,12 @@ exports[` 9`] = `
           Checkbox Group (2 Columns)
         </h6>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 iqLncG Checkbox__CheckboxWrapper-sc-1gwp7am-0 cfHVch"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 eTxJUf Checkbox__CheckboxWrapper-sc-1gwp7am-0 cfHVch"
           id={null}
           rows={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jKfeIt Checkbox__InputGroup-sc-1gwp7am-3 LNZza"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 iPJgzA Checkbox__InputGroup-sc-1gwp7am-3 LNZza"
             id={null}
             rows={null}
           >
@@ -637,7 +637,7 @@ exports[` 10`] = `
     onSubmit={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 eGbheC Form__FormInputs-v2wrel-3 bZGKXs"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 eVqRaz Form__FormInputs-v2wrel-3 bZGKXs"
       id={null}
       rows={null}
     >
@@ -645,7 +645,7 @@ exports[` 10`] = `
         className="Form__FormSection-v2wrel-2 kbyyVh"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 iqLncG Checkbox__CheckboxWrapper-sc-1gwp7am-0 cfHVch"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 eTxJUf Checkbox__CheckboxWrapper-sc-1gwp7am-0 cfHVch"
           id="group1"
           rows={null}
         >
@@ -666,7 +666,7 @@ exports[` 10`] = `
             Hang in there, buddy, I'm here to help!
           </p>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jiteLd Checkbox__InputGroup-sc-1gwp7am-3 LNZza"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 fGkTyc Checkbox__InputGroup-sc-1gwp7am-3 LNZza"
             id={null}
             rows={null}
           >
@@ -694,7 +694,7 @@ exports[` 10`] = `
               </label>
             </div>
             <div
-              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 eDFMlj"
+              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 flPALf"
               disabled={true}
             >
               <input
@@ -786,7 +786,7 @@ exports[` 11`] = `
     onSubmit={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 eGbheC Form__FormInputs-v2wrel-3 bZGKXs"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 eVqRaz Form__FormInputs-v2wrel-3 bZGKXs"
       id={null}
       rows={null}
     >
@@ -802,7 +802,7 @@ exports[` 11`] = `
           Knobs
         </h6>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 iqLncG Checkbox__CheckboxWrapper-sc-1gwp7am-0 cfHVch"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 eTxJUf Checkbox__CheckboxWrapper-sc-1gwp7am-0 cfHVch"
           id="group1"
           rows={null}
         >
@@ -823,7 +823,7 @@ exports[` 11`] = `
             Have you been helped yet?
           </p>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jiteLd Checkbox__InputGroup-sc-1gwp7am-3 LNZza"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 fGkTyc Checkbox__InputGroup-sc-1gwp7am-3 LNZza"
             id={null}
             rows={null}
           >
@@ -851,7 +851,7 @@ exports[` 11`] = `
               </label>
             </div>
             <div
-              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 eDFMlj"
+              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 flPALf"
               disabled={true}
             >
               <input
@@ -943,7 +943,7 @@ exports[` 12`] = `
     onSubmit={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 eGbheC Form__FormInputs-v2wrel-3 bZGKXs"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 eVqRaz Form__FormInputs-v2wrel-3 bZGKXs"
       id={null}
       rows={null}
     >
@@ -959,12 +959,12 @@ exports[` 12`] = `
           Checkbox Group (responsive)
         </h6>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 iqLncG Checkbox__CheckboxWrapper-sc-1gwp7am-0 cfHVch"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 eTxJUf Checkbox__CheckboxWrapper-sc-1gwp7am-0 cfHVch"
           id={null}
           rows={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jiteLd Checkbox__InputGroup-sc-1gwp7am-3 LNZza"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 fGkTyc Checkbox__InputGroup-sc-1gwp7am-3 LNZza"
             id={null}
             rows={null}
           >
@@ -992,7 +992,7 @@ exports[` 12`] = `
               </label>
             </div>
             <div
-              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 eDFMlj"
+              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 flPALf"
               disabled={true}
             >
               <input
@@ -1084,7 +1084,7 @@ exports[` 13`] = `
     onSubmit={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 eGbheC Form__FormInputs-v2wrel-3 bZGKXs"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 eVqRaz Form__FormInputs-v2wrel-3 bZGKXs"
       id={null}
       rows={null}
     >
@@ -1100,12 +1100,12 @@ exports[` 13`] = `
           Checkbox Group (2 columns)
         </h6>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 iqLncG Checkbox__CheckboxWrapper-sc-1gwp7am-0 cfHVch"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 eTxJUf Checkbox__CheckboxWrapper-sc-1gwp7am-0 cfHVch"
           id={null}
           rows={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jKfeIt Checkbox__InputGroup-sc-1gwp7am-3 LNZza"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 iPJgzA Checkbox__InputGroup-sc-1gwp7am-3 LNZza"
             id={null}
             rows={null}
           >
@@ -1133,7 +1133,7 @@ exports[` 13`] = `
               </label>
             </div>
             <div
-              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 eDFMlj"
+              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 flPALf"
               disabled={true}
             >
               <input
@@ -1225,7 +1225,7 @@ exports[` 14`] = `
     onSubmit={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 eGbheC Form__FormInputs-v2wrel-3 bZGKXs"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 eVqRaz Form__FormInputs-v2wrel-3 bZGKXs"
       id={null}
       rows={null}
     >
@@ -1241,12 +1241,12 @@ exports[` 14`] = `
           Checkbox Group (3 columns)
         </h6>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 iqLncG Checkbox__CheckboxWrapper-sc-1gwp7am-0 cfHVch"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 eTxJUf Checkbox__CheckboxWrapper-sc-1gwp7am-0 cfHVch"
           id={null}
           rows={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 iAZTTM Checkbox__InputGroup-sc-1gwp7am-3 LNZza"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 iArnTB Checkbox__InputGroup-sc-1gwp7am-3 LNZza"
             id={null}
             rows={null}
           >
@@ -1274,7 +1274,7 @@ exports[` 14`] = `
               </label>
             </div>
             <div
-              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 eDFMlj"
+              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 flPALf"
               disabled={true}
             >
               <input
@@ -1366,7 +1366,7 @@ exports[` 15`] = `
     onSubmit={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 eGbheC Form__FormInputs-v2wrel-3 bZGKXs"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 eVqRaz Form__FormInputs-v2wrel-3 bZGKXs"
       id={null}
       rows={null}
     >
@@ -1382,12 +1382,12 @@ exports[` 15`] = `
           Checkbox Group (mixed columns)
         </h6>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 iqLncG Checkbox__CheckboxWrapper-sc-1gwp7am-0 cfHVch"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 eTxJUf Checkbox__CheckboxWrapper-sc-1gwp7am-0 cfHVch"
           id={null}
           rows={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jKfeIt Checkbox__InputGroup-sc-1gwp7am-3 LNZza"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 iPJgzA Checkbox__InputGroup-sc-1gwp7am-3 LNZza"
             id={null}
             rows={null}
           >
@@ -1415,7 +1415,7 @@ exports[` 15`] = `
               </label>
             </div>
             <div
-              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 eDFMlj"
+              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 flPALf"
               disabled={true}
             >
               <input
@@ -1487,12 +1487,12 @@ exports[` 15`] = `
           </section>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 iqLncG Checkbox__CheckboxWrapper-sc-1gwp7am-0 cfHVch"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 eTxJUf Checkbox__CheckboxWrapper-sc-1gwp7am-0 cfHVch"
           id={null}
           rows={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 iqLncG Checkbox__InputGroup-sc-1gwp7am-3 LNZza"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 eTxJUf Checkbox__InputGroup-sc-1gwp7am-3 LNZza"
             id={null}
             rows={null}
           >
@@ -1565,7 +1565,7 @@ exports[` 16`] = `
     onSubmit={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 eGbheC Form__FormInputs-v2wrel-3 bZGKXs"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 eVqRaz Form__FormInputs-v2wrel-3 bZGKXs"
       id={null}
       rows={null}
     >
@@ -1581,12 +1581,12 @@ exports[` 16`] = `
           Checkbox Group (right-aligned)
         </h6>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 iqLncG Checkbox__CheckboxWrapper-sc-1gwp7am-0 cfHVch"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 eTxJUf Checkbox__CheckboxWrapper-sc-1gwp7am-0 cfHVch"
           id={null}
           rows={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 jKfeIt Checkbox__InputGroup-sc-1gwp7am-3 LNZza"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 iPJgzA Checkbox__InputGroup-sc-1gwp7am-3 LNZza"
             id={null}
             rows={null}
           >
@@ -1614,7 +1614,7 @@ exports[` 16`] = `
               </label>
             </div>
             <div
-              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 ehjbGv"
+              className="Checkbox__CheckboxContainer-sc-1gwp7am-1 ePsQgr"
               disabled={true}
             >
               <input

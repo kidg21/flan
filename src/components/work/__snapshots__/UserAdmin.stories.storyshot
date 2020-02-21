@@ -35,11 +35,12 @@ exports[` 1`] = `
         className="Bar__Slot-sc-1c4axau-0 dWVqUt"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
           id="editRoles_search_container"
           rows={null}
         >
           <input
+            autoComplete="off"
             className="TextInput__Input-sc-1fep8p8-1 hrazvq"
             cols=""
             disabled={false}
@@ -64,7 +65,7 @@ exports[` 1`] = `
         className="Bar__Slot-sc-1c4axau-0 ikxUaE"
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 hlnPdT"
+          className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
           disabled={false}
           htmlFor={null}
           id="editRoles_addRole"
@@ -72,14 +73,20 @@ exports[` 1`] = `
           onClick={null}
           tabIndex="1"
         >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-            fontSize="1em"
-            fontWeight={600}
-            letterSpacing="0px"
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+            id={null}
+            rows={null}
           >
-            +Add Role
-          </p>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              fontSize="1em"
+              fontWeight={600}
+              letterSpacing="0px"
+            >
+              +Add Role
+            </p>
+          </section>
         </button>
       </div>
     </div>
@@ -122,11 +129,12 @@ exports[` 2`] = `
         className="Bar__Slot-sc-1c4axau-0 dWVqUt"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
           id="editUsers_search_container"
           rows={null}
         >
           <input
+            autoComplete="off"
             className="TextInput__Input-sc-1fep8p8-1 hrazvq"
             cols=""
             disabled={false}
@@ -151,7 +159,7 @@ exports[` 2`] = `
         className="Bar__Slot-sc-1c4axau-0 ikxUaE"
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 hlnPdT"
+          className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
           disabled={false}
           htmlFor={null}
           id="editUsers_addUser"
@@ -159,14 +167,20 @@ exports[` 2`] = `
           onClick={null}
           tabIndex="1"
         >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-            fontSize="1em"
-            fontWeight={600}
-            letterSpacing="0px"
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+            id={null}
+            rows={null}
           >
-            +Add User
-          </p>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              fontSize="1em"
+              fontWeight={600}
+              letterSpacing="0px"
+            >
+              +Add User
+            </p>
+          </section>
         </button>
       </div>
     </div>

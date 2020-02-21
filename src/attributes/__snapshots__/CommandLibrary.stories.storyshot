@@ -8,226 +8,18 @@ exports[` 1`] = `
     }
   }
 >
-  <div
-    style={
-      Object {
-        "position": "relative",
-        "zIndex": 0,
-      }
-    }
-  >
-    <a
-      className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
-      id={null}
-      label="Command"
-      onClick={null}
-      title="Command"
-    >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Command__CommandIcon-sc-13akgtp-2 kHbmnU"
-        color={null}
-        data-icon="circle"
-        data-prefix="fas"
-        focusable="false"
-        id={null}
-        role="img"
-        style={Object {}}
-        viewBox="0 0 512 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
-      <a
-        className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-        fontSize="inherit"
-        fontWeight={600}
-        href={null}
-        letterSpacing="0px"
-        onClick={null}
-        target={null}
-      >
-        Command
-      </a>
-    </a>
-  </div>
-  <button
-    className="info__show-button"
-    onClick={[Function]}
-    style={
-      Object {
-        "background": "#027ac5",
-        "border": "none",
-        "borderRadius": "0 0 0 5px",
-        "color": "#fff",
-        "cursor": "pointer",
-        "display": "block",
-        "fontFamily": "sans-serif",
-        "fontSize": 12,
-        "padding": "5px 15px",
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-      }
-    }
-    type="button"
-  >
-    Show Info
-  </button>
-</div>
-`;
-
-exports[` 2`] = `
-<div
-  style={
-    Object {
-      "padding": "2rem",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "position": "relative",
-        "zIndex": 0,
-      }
-    }
-  >
-    <a
-      className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
-      id={null}
-      label="Command"
-      onClick={null}
-      title="Command"
-    >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Command__CommandIcon-sc-13akgtp-2 kHbmnU"
-        color={null}
-        data-icon="circle"
-        data-prefix="fas"
-        focusable="false"
-        id={null}
-        role="img"
-        style={Object {}}
-        viewBox="0 0 512 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
-      <a
-        className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-        fontSize="inherit"
-        fontWeight={600}
-        href={null}
-        letterSpacing="0px"
-        onClick={null}
-        target={null}
-      >
-        Command
-      </a>
-    </a>
-  </div>
-  <button
-    className="info__show-button"
-    onClick={[Function]}
-    style={
-      Object {
-        "background": "#027ac5",
-        "border": "none",
-        "borderRadius": "0 0 0 5px",
-        "color": "#fff",
-        "cursor": "pointer",
-        "display": "block",
-        "fontFamily": "sans-serif",
-        "fontSize": 12,
-        "padding": "5px 15px",
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-      }
-    }
-    type="button"
-  >
-    Show Info
-  </button>
-</div>
-`;
-
-exports[` 3`] = `
-<div
-  style={
-    Object {
-      "padding": "2rem",
-    }
-  }
->
-  <a
-    className="Command__CommandContainer-sc-13akgtp-0 eSPTBZ"
-    id={null}
-    label="Command"
-    onClick={null}
-    title="Command"
-  >
-    <a
-      className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-      fontSize="inherit"
-      fontWeight={600}
-      href={null}
-      letterSpacing="0px"
-      onClick={null}
-      target={null}
-    >
-      Command
-    </a>
-  </a>
-</div>
-`;
-
-exports[` 4`] = `
-<div
-  style={
-    Object {
-      "padding": "2rem",
-    }
-  }
->
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 eGbheC"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 eVqRaz"
     id={null}
     rows={null}
   >
-    <h6
-      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-      fontSize="1.05em"
-      fontWeight={400}
-      letterSpacing="0px"
-    >
-      Standard Commands
-    </h6>
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-      fontSize="0.876em"
-      fontWeight={400}
-      letterSpacing="0px"
-    >
-      The Command is an interactive UI element that pairs an icon and a label. Use a Command when a user's action is intended to begin an action or workflow.
-    </p>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -252,17 +44,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Add
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -274,12 +64,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -304,17 +94,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Address
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -326,12 +114,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -356,17 +144,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           APN
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -378,12 +164,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -408,17 +194,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Apply
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -430,12 +214,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -460,17 +244,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Bookmark
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -482,12 +264,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -512,17 +294,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Close
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -534,12 +314,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -564,17 +344,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Copy
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -586,12 +364,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -616,17 +394,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Contacts
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -638,12 +414,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -668,17 +444,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Delete
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -690,12 +464,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -720,17 +494,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Download
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -742,12 +514,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -772,17 +544,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Edit
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -794,12 +564,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -824,17 +594,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Exclude
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -846,12 +614,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -876,17 +644,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Favorites
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -898,12 +664,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -928,17 +694,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Filter
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -950,12 +714,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -980,17 +744,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           GPS
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -1002,12 +764,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -1032,17 +794,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Help
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -1054,12 +814,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -1084,17 +844,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Include
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -1106,12 +864,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -1136,17 +894,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Info
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -1158,12 +914,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -1188,17 +944,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Measure
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -1210,12 +964,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -1240,17 +994,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Notifications
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -1262,12 +1014,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -1292,17 +1044,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Open
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -1314,12 +1064,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -1344,17 +1094,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Photos
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -1366,12 +1114,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -1396,17 +1144,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Preferences
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -1418,12 +1164,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -1448,17 +1194,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Print
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -1470,12 +1214,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -1500,17 +1244,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Profile
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -1522,12 +1264,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -1552,17 +1294,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Redo
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -1574,12 +1314,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -1604,17 +1344,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Reports
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -1626,12 +1364,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -1656,17 +1394,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Save
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -1678,12 +1414,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -1708,17 +1444,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Search
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -1730,12 +1464,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -1760,17 +1494,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Settings
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -1782,12 +1514,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -1812,17 +1544,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Share
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -1834,12 +1564,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -1864,17 +1594,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Support
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -1886,12 +1614,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -1916,17 +1644,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Sync
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -1938,12 +1664,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -1968,17 +1694,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Upload
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -1990,12 +1714,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -2020,17 +1744,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Undo
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -2042,12 +1764,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -2072,17 +1794,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           View
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"
@@ -2094,12 +1814,12 @@ exports[` 4`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 inMyHk"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
       id={null}
       rows={null}
     >
       <a
-        className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+        className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
         id={null}
         label="Command"
         onClick={null}
@@ -2124,17 +1844,15 @@ exports[` 4`] = `
             style={Object {}}
           />
         </svg>
-        <a
-          className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-          fontSize="inherit"
-          fontWeight={600}
-          href={null}
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+          fontSize="0.876em"
+          fontWeight={400}
+          htmlFor={null}
           letterSpacing="0px"
-          onClick={null}
-          target={null}
         >
           Zoom Extents
-        </a>
+        </label>
       </a>
       <p
         className="Typography__Paragraph-sc-19auepv-3 dIbntl"

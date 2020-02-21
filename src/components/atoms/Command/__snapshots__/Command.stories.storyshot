@@ -2,7 +2,7 @@
 
 exports[` 1`] = `
 <a
-  className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+  className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
   id={null}
   label="Command"
   onClick={null}
@@ -27,28 +27,26 @@ exports[` 1`] = `
       style={Object {}}
     />
   </svg>
-  <a
-    className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-    fontSize="inherit"
-    fontWeight={600}
-    href={null}
+  <label
+    className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+    fontSize="0.876em"
+    fontWeight={400}
+    htmlFor={null}
     letterSpacing="0px"
-    onClick={null}
-    target={null}
   >
     Command
-  </a>
+  </label>
 </a>
 `;
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 iAZTTM"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 iArnTB"
   id={null}
   rows={null}
 >
   <a
-    className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+    className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
     id={null}
     label="Active"
     onClick={null}
@@ -73,20 +71,18 @@ exports[` 2`] = `
         style={Object {}}
       />
     </svg>
-    <a
-      className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-      fontSize="inherit"
-      fontWeight={600}
-      href={null}
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+      fontSize="0.876em"
+      fontWeight={400}
+      htmlFor={null}
       letterSpacing="0px"
-      onClick={null}
-      target={null}
     >
       Active
-    </a>
+    </label>
   </a>
   <a
-    className="Command__CommandContainer-sc-13akgtp-0 fdcIZT"
+    className="Command__CommandContainer-sc-13akgtp-0 hEeUzR"
     id={null}
     label="Disabled"
     onClick={null}
@@ -111,29 +107,27 @@ exports[` 2`] = `
         style={Object {}}
       />
     </svg>
-    <a
-      className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-      fontSize="inherit"
-      fontWeight={600}
-      href={null}
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+      fontSize="0.876em"
+      fontWeight={400}
+      htmlFor={null}
       letterSpacing="0px"
-      onClick={null}
-      target={null}
     >
       Disabled
-    </a>
+    </label>
   </a>
 </section>
 `;
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 iAZTTM"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 iArnTB"
   id={null}
   rows={null}
 >
   <a
-    className="Command__CommandContainer-sc-13akgtp-0 hRAXMa"
+    className="Command__CommandContainer-sc-13akgtp-0 dJQJNT"
     id={null}
     label="Small"
     onClick={null}
@@ -158,20 +152,18 @@ exports[` 3`] = `
         style={Object {}}
       />
     </svg>
-    <a
-      className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-      fontSize="inherit"
-      fontWeight={600}
-      href={null}
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+      fontSize="0.876em"
+      fontWeight={400}
+      htmlFor={null}
       letterSpacing="0px"
-      onClick={null}
-      target={null}
     >
       Small
-    </a>
+    </label>
   </a>
   <a
-    className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+    className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
     id={null}
     label="Standard"
     onClick={null}
@@ -196,20 +188,18 @@ exports[` 3`] = `
         style={Object {}}
       />
     </svg>
-    <a
-      className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-      fontSize="inherit"
-      fontWeight={600}
-      href={null}
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+      fontSize="0.876em"
+      fontWeight={400}
+      htmlFor={null}
       letterSpacing="0px"
-      onClick={null}
-      target={null}
     >
       Standard
-    </a>
+    </label>
   </a>
   <a
-    className="Command__CommandContainer-sc-13akgtp-0 ekpceJ"
+    className="Command__CommandContainer-sc-13akgtp-0 dNCibE"
     id={null}
     label="Large"
     onClick={null}
@@ -234,29 +224,27 @@ exports[` 3`] = `
         style={Object {}}
       />
     </svg>
-    <a
-      className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-      fontSize="inherit"
-      fontWeight={600}
-      href={null}
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+      fontSize="0.876em"
+      fontWeight={400}
+      htmlFor={null}
       letterSpacing="0px"
-      onClick={null}
-      target={null}
     >
       Large
-    </a>
+    </label>
   </a>
 </section>
 `;
 
 exports[` 4`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 iAZTTM"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 iArnTB"
   id={null}
   rows={null}
 >
   <a
-    className="Command__CommandContainer-sc-13akgtp-0 kpOwVk"
+    className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
     id={null}
     label="Icon-Left"
     onClick={null}
@@ -281,20 +269,18 @@ exports[` 4`] = `
         style={Object {}}
       />
     </svg>
-    <a
-      className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-      fontSize="inherit"
-      fontWeight={600}
-      href={null}
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+      fontSize="0.876em"
+      fontWeight={400}
+      htmlFor={null}
       letterSpacing="0px"
-      onClick={null}
-      target={null}
     >
       Icon-Left
-    </a>
+    </label>
   </a>
   <a
-    className="Command__CommandContainer-sc-13akgtp-0 fdpUKs"
+    className="Command__CommandContainer-sc-13akgtp-0 dqWQOd"
     id={null}
     label="Icon-Top"
     onClick={null}
@@ -319,20 +305,18 @@ exports[` 4`] = `
         style={Object {}}
       />
     </svg>
-    <a
-      className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-      fontSize="inherit"
-      fontWeight={600}
-      href={null}
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+      fontSize="0.876em"
+      fontWeight={400}
+      htmlFor={null}
       letterSpacing="0px"
-      onClick={null}
-      target={null}
     >
       Icon-Top
-    </a>
+    </label>
   </a>
   <a
-    className="Command__CommandContainer-sc-13akgtp-0 hvWYKg"
+    className="Command__CommandContainer-sc-13akgtp-0 bmuFIF"
     id={null}
     label="Icon-Right"
     onClick={null}
@@ -357,17 +341,15 @@ exports[` 4`] = `
         style={Object {}}
       />
     </svg>
-    <a
-      className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-      fontSize="inherit"
-      fontWeight={600}
-      href={null}
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+      fontSize="0.876em"
+      fontWeight={400}
+      htmlFor={null}
       letterSpacing="0px"
-      onClick={null}
-      target={null}
     >
       Icon-Right
-    </a>
+    </label>
   </a>
 </section>
 `;

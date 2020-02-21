@@ -12,7 +12,7 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 kdHAlj RangeSlider__RangeContainer-sc-455qos-0 flvWwI"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 ccQKIO RangeSlider__RangeContainer-sc-455qos-0 flvWwI"
   id="defaultRange"
   rows={null}
 >
@@ -34,11 +34,12 @@ exports[` 2`] = `
       className="Bar__Slot-sc-1c4axau-0 vWSKB"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
         id="defaultRange_min_container"
         rows={null}
       >
         <input
+          autoComplete="off"
           className="TextInput__Input-sc-1fep8p8-1 hrazvq"
           cols=""
           disabled={false}
@@ -74,11 +75,12 @@ exports[` 2`] = `
       className="Bar__Slot-sc-1c4axau-0 fCBoFY"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
         id="defaultRange_max_container"
         rows={null}
       >
         <input
+          autoComplete="off"
           className="TextInput__Input-sc-1fep8p8-1 hrazvq"
           cols=""
           disabled={false}
@@ -111,7 +113,7 @@ exports[` 3`] = `
   onSubmit={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 eGbheC Form__FormInputs-v2wrel-3 bZGKXs"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 eVqRaz Form__FormInputs-v2wrel-3 bZGKXs"
     id={null}
     rows={null}
   >

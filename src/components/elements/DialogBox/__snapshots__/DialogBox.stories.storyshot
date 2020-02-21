@@ -59,12 +59,12 @@ exports[` 1`] = `
       onClick={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 iAZTTM DialogBox__ButtonGrid-iv0dnf-0 cUZJkB"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 iArnTB DialogBox__ButtonGrid-iv0dnf-0 cUZJkB"
         id={null}
         rows={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 hlnPdT DialogBox__PrimaryButton-iv0dnf-1 iGGcWN"
+          className="Button__StyledButton-sc-1v7sls2-0 kaCTht DialogBox__PrimaryButton-iv0dnf-1 iGGcWN"
           disabled={false}
           htmlFor={null}
           id="Negative"
@@ -72,17 +72,23 @@ exports[` 1`] = `
           onClick={null}
           tabIndex="1"
         >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-            fontSize="1em"
-            fontWeight={600}
-            letterSpacing="0px"
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+            id={null}
+            rows={null}
           >
-            Negative
-          </p>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              fontSize="1em"
+              fontWeight={600}
+              letterSpacing="0px"
+            >
+              Negative
+            </p>
+          </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 kAUTHR DialogBox__SecondaryButton-iv0dnf-2 oXoXM"
+          className="Button__StyledButton-sc-1v7sls2-0 jLfFwi DialogBox__SecondaryButton-iv0dnf-2 oXoXM"
           disabled={false}
           htmlFor={null}
           id="Negative"
@@ -90,14 +96,20 @@ exports[` 1`] = `
           onClick={null}
           tabIndex="1"
         >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-            fontSize="1em"
-            fontWeight={600}
-            letterSpacing="0px"
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+            id={null}
+            rows={null}
           >
-            Affirmative
-          </p>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              fontSize="1em"
+              fontWeight={600}
+              letterSpacing="0px"
+            >
+              Affirmative
+            </p>
+          </section>
         </button>
       </section>
     </section>
@@ -164,12 +176,12 @@ exports[` 2`] = `
       onClick={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 iAZTTM DialogBox__ButtonGrid-iv0dnf-0 cUZJkB"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 iArnTB DialogBox__ButtonGrid-iv0dnf-0 cUZJkB"
         id={null}
         rows={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 eJPISz DialogBox__PrimaryButton-iv0dnf-1 iGGcWN"
+          className="Button__StyledButton-sc-1v7sls2-0 hlLLip DialogBox__PrimaryButton-iv0dnf-1 iGGcWN"
           disabled={false}
           htmlFor={null}
           id="Negative"
@@ -177,17 +189,23 @@ exports[` 2`] = `
           onClick={null}
           tabIndex="1"
         >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-            fontSize="1em"
-            fontWeight={600}
-            letterSpacing="0px"
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+            id={null}
+            rows={null}
           >
-            Negative
-          </p>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              fontSize="1em"
+              fontWeight={600}
+              letterSpacing="0px"
+            >
+              Negative
+            </p>
+          </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 kRMoXy DialogBox__SecondaryButton-iv0dnf-2 oXoXM"
+          className="Button__StyledButton-sc-1v7sls2-0 iywOmJ DialogBox__SecondaryButton-iv0dnf-2 oXoXM"
           disabled={false}
           htmlFor={null}
           id="Negative"
@@ -195,14 +213,20 @@ exports[` 2`] = `
           onClick={null}
           tabIndex="1"
         >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-            fontSize="1em"
-            fontWeight={600}
-            letterSpacing="0px"
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+            id={null}
+            rows={null}
           >
-            Affirmative
-          </p>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              fontSize="1em"
+              fontWeight={600}
+              letterSpacing="0px"
+            >
+              Affirmative
+            </p>
+          </section>
         </button>
       </section>
     </section>
@@ -269,12 +293,12 @@ exports[` 3`] = `
       onClick={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 iAZTTM DialogBox__ButtonGrid-iv0dnf-0 cUZJkB"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 iArnTB DialogBox__ButtonGrid-iv0dnf-0 cUZJkB"
         id={null}
         rows={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 iIZCbL DialogBox__PrimaryButton-iv0dnf-1 iGGcWN"
+          className="Button__StyledButton-sc-1v7sls2-0 cZdgDl DialogBox__PrimaryButton-iv0dnf-1 iGGcWN"
           disabled={false}
           htmlFor={null}
           id="Negative"
@@ -282,17 +306,23 @@ exports[` 3`] = `
           onClick={null}
           tabIndex="1"
         >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-            fontSize="1em"
-            fontWeight={600}
-            letterSpacing="0px"
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+            id={null}
+            rows={null}
           >
-            Negative
-          </p>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              fontSize="1em"
+              fontWeight={600}
+              letterSpacing="0px"
+            >
+              Negative
+            </p>
+          </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 inqEDX DialogBox__SecondaryButton-iv0dnf-2 oXoXM"
+          className="Button__StyledButton-sc-1v7sls2-0 injEsc DialogBox__SecondaryButton-iv0dnf-2 oXoXM"
           disabled={false}
           htmlFor={null}
           id="Negative"
@@ -300,14 +330,20 @@ exports[` 3`] = `
           onClick={null}
           tabIndex="1"
         >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-            fontSize="1em"
-            fontWeight={600}
-            letterSpacing="0px"
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+            id={null}
+            rows={null}
           >
-            Affirmative
-          </p>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              fontSize="1em"
+              fontWeight={600}
+              letterSpacing="0px"
+            >
+              Affirmative
+            </p>
+          </section>
         </button>
       </section>
     </section>

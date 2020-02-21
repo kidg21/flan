@@ -37,7 +37,7 @@ Array [
             className="Bar__Slot-sc-1c4axau-0 cSnMzs"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
               id={null}
               rows={null}
             >
@@ -85,7 +85,7 @@ Array [
     </span>
   </div>,
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 hlnPdT"
+    className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -93,14 +93,20 @@ Array [
     onClick={[Function]}
     tabIndex="1"
   >
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-      fontSize="1em"
-      fontWeight={600}
-      letterSpacing="0px"
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+      id={null}
+      rows={null}
     >
-      Open Modal
-    </p>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+        fontSize="1em"
+        fontWeight={600}
+        letterSpacing="0px"
+      >
+        Open Modal
+      </p>
+    </section>
   </button>,
 ]
 `;
@@ -145,7 +151,7 @@ Array [
       className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 cYHdrc"
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 hlnPdT"
+        className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -153,14 +159,20 @@ Array [
         onClick={[Function]}
         tabIndex="1"
       >
-        <p
-          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-          fontSize="1em"
-          fontWeight={600}
-          letterSpacing="0px"
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+          id={null}
+          rows={null}
         >
-          Open Modal
-        </p>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+            fontSize="1em"
+            fontWeight={600}
+            letterSpacing="0px"
+          >
+            Open Modal
+          </p>
+        </section>
       </button>
     </section>
     <section
@@ -207,7 +219,7 @@ Array [
             className="Bar__Slot-sc-1c4axau-0 cSnMzs"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 iUqfxL"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
               id={null}
               rows={null}
             >
@@ -262,7 +274,7 @@ Array [
       className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 cYHdrc"
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 hlnPdT"
+        className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -270,14 +282,20 @@ Array [
         onClick={[Function]}
         tabIndex="1"
       >
-        <p
-          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-          fontSize="1em"
-          fontWeight={600}
-          letterSpacing="0px"
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+          id={null}
+          rows={null}
         >
-          Default Modal
-        </p>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+            fontSize="1em"
+            fontWeight={600}
+            letterSpacing="0px"
+          >
+            Default Modal
+          </p>
+        </section>
       </button>
     </section>
     <section
@@ -359,12 +377,12 @@ Array [
           onClick={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 iAZTTM DialogBox__ButtonGrid-iv0dnf-0 cUZJkB"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 iArnTB DialogBox__ButtonGrid-iv0dnf-0 cUZJkB"
             id={null}
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 hlnPdT DialogBox__PrimaryButton-iv0dnf-1 iGGcWN"
+              className="Button__StyledButton-sc-1v7sls2-0 kaCTht DialogBox__PrimaryButton-iv0dnf-1 iGGcWN"
               disabled={false}
               htmlFor={null}
               id="Cancel"
@@ -372,17 +390,23 @@ Array [
               onClick={[Function]}
               tabIndex="1"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                letterSpacing="0px"
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+                id={null}
+                rows={null}
               >
-                Nevermind...
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  letterSpacing="0px"
+                >
+                  Nevermind...
+                </p>
+              </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 kRMoXy DialogBox__SecondaryButton-iv0dnf-2 oXoXM"
+              className="Button__StyledButton-sc-1v7sls2-0 iywOmJ DialogBox__SecondaryButton-iv0dnf-2 oXoXM"
               disabled={false}
               htmlFor={null}
               id="Cancel"
@@ -390,14 +414,20 @@ Array [
               onClick={[Function]}
               tabIndex="1"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                letterSpacing="0px"
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+                id={null}
+                rows={null}
               >
-                Let's Do It!
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  letterSpacing="0px"
+                >
+                  Let's Do It!
+                </p>
+              </section>
             </button>
           </section>
         </section>
@@ -412,7 +442,7 @@ Array [
       className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 cYHdrc"
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 hlnPdT"
+        className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -420,14 +450,20 @@ Array [
         onClick={[Function]}
         tabIndex="1"
       >
-        <p
-          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-          fontSize="1em"
-          fontWeight={600}
-          letterSpacing="0px"
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+          id={null}
+          rows={null}
         >
-          Default Modal
-        </p>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+            fontSize="1em"
+            fontWeight={600}
+            letterSpacing="0px"
+          >
+            Default Modal
+          </p>
+        </section>
       </button>
     </section>
     <section
@@ -477,7 +513,7 @@ Array [
       className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 cYHdrc"
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 hlnPdT"
+        className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -485,14 +521,20 @@ Array [
         onClick={[Function]}
         tabIndex="1"
       >
-        <p
-          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-          fontSize="1em"
-          fontWeight={600}
-          letterSpacing="0px"
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+          id={null}
+          rows={null}
         >
-          Text Modal
-        </p>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+            fontSize="1em"
+            fontWeight={600}
+            letterSpacing="0px"
+          >
+            Text Modal
+          </p>
+        </section>
       </button>
     </section>
     <section
@@ -557,7 +599,7 @@ Array [
       className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 cYHdrc"
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 hlnPdT"
+        className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -565,14 +607,20 @@ Array [
         onClick={[Function]}
         tabIndex="1"
       >
-        <p
-          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-          fontSize="1em"
-          fontWeight={600}
-          letterSpacing="0px"
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+          id={null}
+          rows={null}
         >
-          Image Modal
-        </p>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+            fontSize="1em"
+            fontWeight={600}
+            letterSpacing="0px"
+          >
+            Image Modal
+          </p>
+        </section>
       </button>
     </section>
     <section

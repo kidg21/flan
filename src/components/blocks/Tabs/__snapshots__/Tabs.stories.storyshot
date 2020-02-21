@@ -14,7 +14,7 @@ exports[` 1`] = `
     style={null}
   >
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 dHPBYY Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 bVMaCm Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -22,17 +22,23 @@ exports[` 1`] = `
       onClick={null}
       tabIndex="1"
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        id={null}
+        rows={null}
       >
-        Tab
-      </p>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Tab
+        </p>
+      </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 eZKkkD Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -40,17 +46,23 @@ exports[` 1`] = `
       onClick={null}
       tabIndex="1"
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        id={null}
+        rows={null}
       >
-        Tab
-      </p>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Tab
+        </p>
+      </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 eZKkkD Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -58,14 +70,20 @@ exports[` 1`] = `
       onClick={null}
       tabIndex="1"
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        id={null}
+        rows={null}
       >
-        Tab
-      </p>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Tab
+        </p>
+      </section>
     </button>
   </section>
 </div>
@@ -85,7 +103,7 @@ exports[` 2`] = `
     style={null}
   >
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 eZKkkD Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -93,17 +111,23 @@ exports[` 2`] = `
       onClick={[Function]}
       tabIndex="1"
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        id={null}
+        rows={null}
       >
-        Tab 1
-      </p>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Tab 1
+        </p>
+      </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 eZKkkD Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -111,17 +135,23 @@ exports[` 2`] = `
       onClick={[Function]}
       tabIndex="1"
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        id={null}
+        rows={null}
       >
-        Tab 2
-      </p>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Tab 2
+        </p>
+      </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 eZKkkD Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -129,17 +159,23 @@ exports[` 2`] = `
       onClick={[Function]}
       tabIndex="1"
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        id={null}
+        rows={null}
       >
-        Tab 3
-      </p>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Tab 3
+        </p>
+      </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 eZKkkD Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -147,17 +183,23 @@ exports[` 2`] = `
       onClick={[Function]}
       tabIndex="1"
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        id={null}
+        rows={null}
       >
-        Tab 4
-      </p>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Tab 4
+        </p>
+      </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 eZKkkD Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -165,14 +207,20 @@ exports[` 2`] = `
       onClick={[Function]}
       tabIndex="1"
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        id={null}
+        rows={null}
       >
-        Tab 5
-      </p>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Tab 5
+        </p>
+      </section>
     </button>
   </section>
 </div>
@@ -192,7 +240,7 @@ exports[` 3`] = `
     style={null}
   >
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 eZKkkD Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -200,17 +248,23 @@ exports[` 3`] = `
       onClick={null}
       tabIndex="1"
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        id={null}
+        rows={null}
       >
-        Tab
-      </p>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Tab
+        </p>
+      </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 eZKkkD Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -218,17 +272,23 @@ exports[` 3`] = `
       onClick={null}
       tabIndex="1"
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        id={null}
+        rows={null}
       >
-        Tab
-      </p>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Tab
+        </p>
+      </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 eZKkkD Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -236,14 +296,20 @@ exports[` 3`] = `
       onClick={null}
       tabIndex="1"
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        id={null}
+        rows={null}
       >
-        Tab
-      </p>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Tab
+        </p>
+      </section>
     </button>
   </section>
 </div>
@@ -263,7 +329,7 @@ exports[` 4`] = `
     style={null}
   >
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 eZKkkD Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -271,17 +337,23 @@ exports[` 4`] = `
       onClick={null}
       tabIndex="1"
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        id={null}
+        rows={null}
       >
-        Tab
-      </p>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Tab
+        </p>
+      </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 dHPBYY Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 bVMaCm Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -289,17 +361,23 @@ exports[` 4`] = `
       onClick={null}
       tabIndex="1"
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        id={null}
+        rows={null}
       >
-        Tab
-      </p>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Tab
+        </p>
+      </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 eZKkkD Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -307,14 +385,20 @@ exports[` 4`] = `
       onClick={null}
       tabIndex="1"
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        id={null}
+        rows={null}
       >
-        Tab
-      </p>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Tab
+        </p>
+      </section>
     </button>
   </section>
 </div>
@@ -334,7 +418,7 @@ exports[` 5`] = `
     style={null}
   >
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 eZKkkD Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -342,50 +426,42 @@ exports[` 5`] = `
       onClick={null}
       tabIndex="1"
     >
-      <div
-        className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 gOxAef Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
         id={null}
-        onClick={null}
+        rows={null}
       >
-        <div
-          className="Bar__Slot-sc-1c4axau-0 fJwGTh"
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-user fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+          color={null}
+          data-icon="user"
+          data-prefix="far"
+          focusable="false"
+          id={null}
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-user fa-w-14 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
-            color={null}
-            data-icon="user"
-            data-prefix="far"
-            focusable="false"
-            id={null}
-            role="img"
+          <path
+            d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"
+            fill="currentColor"
             style={Object {}}
-            viewBox="0 0 448 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
-        </div>
-        <div
-          className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+          />
+        </svg>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
         >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-            fontSize="1em"
-            fontWeight={600}
-            letterSpacing="0px"
-          >
-            Tab
-          </p>
-        </div>
-      </div>
+          Tab
+        </p>
+      </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 eZKkkD Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -393,50 +469,42 @@ exports[` 5`] = `
       onClick={null}
       tabIndex="1"
     >
-      <div
-        className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 gOxAef Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
         id={null}
-        onClick={null}
+        rows={null}
       >
-        <div
-          className="Bar__Slot-sc-1c4axau-0 fJwGTh"
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-user fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+          color={null}
+          data-icon="user"
+          data-prefix="far"
+          focusable="false"
+          id={null}
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-user fa-w-14 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
-            color={null}
-            data-icon="user"
-            data-prefix="far"
-            focusable="false"
-            id={null}
-            role="img"
+          <path
+            d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"
+            fill="currentColor"
             style={Object {}}
-            viewBox="0 0 448 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
-        </div>
-        <div
-          className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+          />
+        </svg>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
         >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-            fontSize="1em"
-            fontWeight={600}
-            letterSpacing="0px"
-          >
-            Tab
-          </p>
-        </div>
-      </div>
+          Tab
+        </p>
+      </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 eZKkkD Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -444,47 +512,39 @@ exports[` 5`] = `
       onClick={null}
       tabIndex="1"
     >
-      <div
-        className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 gOxAef Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
         id={null}
-        onClick={null}
+        rows={null}
       >
-        <div
-          className="Bar__Slot-sc-1c4axau-0 fJwGTh"
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-user fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+          color={null}
+          data-icon="user"
+          data-prefix="far"
+          focusable="false"
+          id={null}
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-user fa-w-14 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
-            color={null}
-            data-icon="user"
-            data-prefix="far"
-            focusable="false"
-            id={null}
-            role="img"
+          <path
+            d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"
+            fill="currentColor"
             style={Object {}}
-            viewBox="0 0 448 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
-        </div>
-        <div
-          className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+          />
+        </svg>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
         >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-            fontSize="1em"
-            fontWeight={600}
-            letterSpacing="0px"
-          >
-            Tab
-          </p>
-        </div>
-      </div>
+          Tab
+        </p>
+      </section>
     </button>
   </section>
 </div>
@@ -504,7 +564,7 @@ exports[` 6`] = `
     style={null}
   >
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 eZKkkD Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -512,38 +572,34 @@ exports[` 6`] = `
       onClick={null}
       tabIndex="1"
     >
-      <div
-        className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 gOxAef Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
         id={null}
-        onClick={null}
+        rows={null}
       >
-        <div
-          className="Bar__Slot-sc-1c4axau-0 dirCQm"
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-user fa-w-14 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+          color={null}
+          data-icon="user"
+          data-prefix="far"
+          focusable="false"
+          id={null}
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-user fa-w-14 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
-            color={null}
-            data-icon="user"
-            data-prefix="far"
-            focusable="false"
-            id={null}
-            role="img"
+          <path
+            d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"
+            fill="currentColor"
             style={Object {}}
-            viewBox="0 0 448 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
-        </div>
-      </div>
+          />
+        </svg>
+      </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 eZKkkD Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -551,38 +607,34 @@ exports[` 6`] = `
       onClick={null}
       tabIndex="1"
     >
-      <div
-        className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 gOxAef Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
         id={null}
-        onClick={null}
+        rows={null}
       >
-        <div
-          className="Bar__Slot-sc-1c4axau-0 dirCQm"
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-cog fa-w-16 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+          color={null}
+          data-icon="cog"
+          data-prefix="far"
+          focusable="false"
+          id={null}
+          role="img"
+          style={Object {}}
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-cog fa-w-16 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
-            color={null}
-            data-icon="cog"
-            data-prefix="far"
-            focusable="false"
-            id={null}
-            role="img"
+          <path
+            d="M452.515 237l31.843-18.382c9.426-5.441 13.996-16.542 11.177-27.054-11.404-42.531-33.842-80.547-64.058-110.797-7.68-7.688-19.575-9.246-28.985-3.811l-31.785 18.358a196.276 196.276 0 0 0-32.899-19.02V39.541a24.016 24.016 0 0 0-17.842-23.206c-41.761-11.107-86.117-11.121-127.93-.001-10.519 2.798-17.844 12.321-17.844 23.206v36.753a196.276 196.276 0 0 0-32.899 19.02l-31.785-18.358c-9.41-5.435-21.305-3.877-28.985 3.811-30.216 30.25-52.654 68.265-64.058 110.797-2.819 10.512 1.751 21.613 11.177 27.054L59.485 237a197.715 197.715 0 0 0 0 37.999l-31.843 18.382c-9.426 5.441-13.996 16.542-11.177 27.054 11.404 42.531 33.842 80.547 64.058 110.797 7.68 7.688 19.575 9.246 28.985 3.811l31.785-18.358a196.202 196.202 0 0 0 32.899 19.019v36.753a24.016 24.016 0 0 0 17.842 23.206c41.761 11.107 86.117 11.122 127.93.001 10.519-2.798 17.844-12.321 17.844-23.206v-36.753a196.34 196.34 0 0 0 32.899-19.019l31.785 18.358c9.41 5.435 21.305 3.877 28.985-3.811 30.216-30.25 52.654-68.266 64.058-110.797 2.819-10.512-1.751-21.613-11.177-27.054L452.515 275c1.22-12.65 1.22-25.35 0-38zm-52.679 63.019l43.819 25.289a200.138 200.138 0 0 1-33.849 58.528l-43.829-25.309c-31.984 27.397-36.659 30.077-76.168 44.029v50.599a200.917 200.917 0 0 1-67.618 0v-50.599c-39.504-13.95-44.196-16.642-76.168-44.029l-43.829 25.309a200.15 200.15 0 0 1-33.849-58.528l43.819-25.289c-7.63-41.299-7.634-46.719 0-88.038l-43.819-25.289c7.85-21.229 19.31-41.049 33.849-58.529l43.829 25.309c31.984-27.397 36.66-30.078 76.168-44.029V58.845a200.917 200.917 0 0 1 67.618 0v50.599c39.504 13.95 44.196 16.642 76.168 44.029l43.829-25.309a200.143 200.143 0 0 1 33.849 58.529l-43.819 25.289c7.631 41.3 7.634 46.718 0 88.037zM256 160c-52.935 0-96 43.065-96 96s43.065 96 96 96 96-43.065 96-96-43.065-96-96-96zm0 144c-26.468 0-48-21.532-48-48 0-26.467 21.532-48 48-48s48 21.533 48 48c0 26.468-21.532 48-48 48z"
+            fill="currentColor"
             style={Object {}}
-            viewBox="0 0 512 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M452.515 237l31.843-18.382c9.426-5.441 13.996-16.542 11.177-27.054-11.404-42.531-33.842-80.547-64.058-110.797-7.68-7.688-19.575-9.246-28.985-3.811l-31.785 18.358a196.276 196.276 0 0 0-32.899-19.02V39.541a24.016 24.016 0 0 0-17.842-23.206c-41.761-11.107-86.117-11.121-127.93-.001-10.519 2.798-17.844 12.321-17.844 23.206v36.753a196.276 196.276 0 0 0-32.899 19.02l-31.785-18.358c-9.41-5.435-21.305-3.877-28.985 3.811-30.216 30.25-52.654 68.265-64.058 110.797-2.819 10.512 1.751 21.613 11.177 27.054L59.485 237a197.715 197.715 0 0 0 0 37.999l-31.843 18.382c-9.426 5.441-13.996 16.542-11.177 27.054 11.404 42.531 33.842 80.547 64.058 110.797 7.68 7.688 19.575 9.246 28.985 3.811l31.785-18.358a196.202 196.202 0 0 0 32.899 19.019v36.753a24.016 24.016 0 0 0 17.842 23.206c41.761 11.107 86.117 11.122 127.93.001 10.519-2.798 17.844-12.321 17.844-23.206v-36.753a196.34 196.34 0 0 0 32.899-19.019l31.785 18.358c9.41 5.435 21.305 3.877 28.985-3.811 30.216-30.25 52.654-68.266 64.058-110.797 2.819-10.512-1.751-21.613-11.177-27.054L452.515 275c1.22-12.65 1.22-25.35 0-38zm-52.679 63.019l43.819 25.289a200.138 200.138 0 0 1-33.849 58.528l-43.829-25.309c-31.984 27.397-36.659 30.077-76.168 44.029v50.599a200.917 200.917 0 0 1-67.618 0v-50.599c-39.504-13.95-44.196-16.642-76.168-44.029l-43.829 25.309a200.15 200.15 0 0 1-33.849-58.528l43.819-25.289c-7.63-41.299-7.634-46.719 0-88.038l-43.819-25.289c7.85-21.229 19.31-41.049 33.849-58.529l43.829 25.309c31.984-27.397 36.66-30.078 76.168-44.029V58.845a200.917 200.917 0 0 1 67.618 0v50.599c39.504 13.95 44.196 16.642 76.168 44.029l43.829-25.309a200.143 200.143 0 0 1 33.849 58.529l-43.819 25.289c7.631 41.3 7.634 46.718 0 88.037zM256 160c-52.935 0-96 43.065-96 96s43.065 96 96 96 96-43.065 96-96-43.065-96-96-96zm0 144c-26.468 0-48-21.532-48-48 0-26.467 21.532-48 48-48s48 21.533 48 48c0 26.468-21.532 48-48 48z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
-        </div>
-      </div>
+          />
+        </svg>
+      </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 eZKkkD Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -590,35 +642,31 @@ exports[` 6`] = `
       onClick={null}
       tabIndex="1"
     >
-      <div
-        className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 gOxAef Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
         id={null}
-        onClick={null}
+        rows={null}
       >
-        <div
-          className="Bar__Slot-sc-1c4axau-0 dirCQm"
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-file-alt fa-w-12 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+          color={null}
+          data-icon="file-alt"
+          data-prefix="far"
+          focusable="false"
+          id={null}
+          role="img"
+          style={Object {}}
+          viewBox="0 0 384 512"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-file-alt fa-w-12 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
-            color={null}
-            data-icon="file-alt"
-            data-prefix="far"
-            focusable="false"
-            id={null}
-            role="img"
+          <path
+            d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
+            fill="currentColor"
             style={Object {}}
-            viewBox="0 0 384 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
-        </div>
-      </div>
+          />
+        </svg>
+      </section>
     </button>
   </section>
 </div>
@@ -638,7 +686,7 @@ exports[` 7`] = `
     style={null}
   >
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 eZKkkD Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -646,46 +694,38 @@ exports[` 7`] = `
       onClick={null}
       tabIndex="1"
     >
-      <div
-        className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 krZHvb Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
         id={null}
-        onClick={null}
+        rows={null}
       >
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Tab
+        </p>
         <div
-          className="Bar__Slot-sc-1c4axau-0 hhnAuc"
+          className="Tag__TagContainer-sc-128kb3h-0 jDTvba"
+          id={null}
+          label="1"
+          style={null}
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            fontSize="0.75em"
             fontWeight={600}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
-            Tab
+            1
           </p>
         </div>
-        <div
-          className="Bar__Slot-sc-1c4axau-0 hQRtOo"
-        >
-          <div
-            className="Tag__TagContainer-sc-128kb3h-0 jDTvba"
-            id={null}
-            label="1"
-            style={null}
-          >
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-              fontSize="0.75em"
-              fontWeight={600}
-              letterSpacing="0.2px"
-            >
-              1
-            </p>
-          </div>
-        </div>
-      </div>
+      </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 eZKkkD Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -693,46 +733,38 @@ exports[` 7`] = `
       onClick={null}
       tabIndex="1"
     >
-      <div
-        className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 krZHvb Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
         id={null}
-        onClick={null}
+        rows={null}
       >
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Tab
+        </p>
         <div
-          className="Bar__Slot-sc-1c4axau-0 hhnAuc"
+          className="Tag__TagContainer-sc-128kb3h-0 jDTvba"
+          id={null}
+          label="87"
+          style={null}
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            fontSize="0.75em"
             fontWeight={600}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
-            Tab
+            87
           </p>
         </div>
-        <div
-          className="Bar__Slot-sc-1c4axau-0 hQRtOo"
-        >
-          <div
-            className="Tag__TagContainer-sc-128kb3h-0 jDTvba"
-            id={null}
-            label="87"
-            style={null}
-          >
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-              fontSize="0.75em"
-              fontWeight={600}
-              letterSpacing="0.2px"
-            >
-              87
-            </p>
-          </div>
-        </div>
-      </div>
+      </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 eZKkkD Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -740,43 +772,35 @@ exports[` 7`] = `
       onClick={null}
       tabIndex="1"
     >
-      <div
-        className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 krZHvb Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
         id={null}
-        onClick={null}
+        rows={null}
       >
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Tab
+        </p>
         <div
-          className="Bar__Slot-sc-1c4axau-0 hhnAuc"
+          className="Tag__TagContainer-sc-128kb3h-0 jDTvba"
+          id={null}
+          label="2"
+          style={null}
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            fontSize="0.75em"
             fontWeight={600}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
-            Tab
+            2
           </p>
         </div>
-        <div
-          className="Bar__Slot-sc-1c4axau-0 hQRtOo"
-        >
-          <div
-            className="Tag__TagContainer-sc-128kb3h-0 jDTvba"
-            id={null}
-            label="2"
-            style={null}
-          >
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-              fontSize="0.75em"
-              fontWeight={600}
-              letterSpacing="0.2px"
-            >
-              2
-            </p>
-          </div>
-        </div>
-      </div>
+      </section>
     </button>
   </section>
 </div>
@@ -796,7 +820,7 @@ exports[` 8`] = `
     style={null}
   >
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 dHPBYY Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 bVMaCm Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -804,17 +828,23 @@ exports[` 8`] = `
       onClick={[Function]}
       tabIndex="1"
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        id={null}
+        rows={null}
       >
-        Tab 1
-      </p>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Tab 1
+        </p>
+      </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 eZKkkD Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -822,17 +852,23 @@ exports[` 8`] = `
       onClick={[Function]}
       tabIndex="1"
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        id={null}
+        rows={null}
       >
-        Tab 2
-      </p>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Tab 2
+        </p>
+      </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 eZKkkD Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -840,14 +876,20 @@ exports[` 8`] = `
       onClick={[Function]}
       tabIndex="1"
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        id={null}
+        rows={null}
       >
-        Tab 3
-      </p>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Tab 3
+        </p>
+      </section>
     </button>
   </section>
 </div>
@@ -867,7 +909,7 @@ exports[` 9`] = `
     style={null}
   >
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 eZKkkD Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -875,17 +917,23 @@ exports[` 9`] = `
       onClick={[Function]}
       tabIndex="1"
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        id={null}
+        rows={null}
       >
-        Tab 1
-      </p>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Tab 1
+        </p>
+      </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 eZKkkD Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -893,17 +941,23 @@ exports[` 9`] = `
       onClick={[Function]}
       tabIndex="1"
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        id={null}
+        rows={null}
       >
-        Tab 2
-      </p>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Tab 2
+        </p>
+      </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 eZKkkD Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -911,14 +965,20 @@ exports[` 9`] = `
       onClick={[Function]}
       tabIndex="1"
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        id={null}
+        rows={null}
       >
-        Tab 3
-      </p>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Tab 3
+        </p>
+      </section>
     </button>
   </section>
 </div>
@@ -938,7 +998,7 @@ exports[` 10`] = `
     style={null}
   >
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 eZKkkD Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -946,17 +1006,23 @@ exports[` 10`] = `
       onClick={[Function]}
       tabIndex="1"
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        id={null}
+        rows={null}
       >
-        Tab 1
-      </p>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Tab 1
+        </p>
+      </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 eZKkkD Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -964,17 +1030,23 @@ exports[` 10`] = `
       onClick={[Function]}
       tabIndex="1"
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        id={null}
+        rows={null}
       >
-        Tab 2
-      </p>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Tab 2
+        </p>
+      </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 eZKkkD Tabs__TabButton-sc-1aqycph-0 kqVluy"
+      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV Tabs__TabButton-sc-1aqycph-0 kqVluy"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -982,14 +1054,20 @@ exports[` 10`] = `
       onClick={[Function]}
       tabIndex="1"
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        id={null}
+        rows={null}
       >
-        Tab 3
-      </p>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Tab 3
+        </p>
+      </section>
     </button>
   </section>
 </div>

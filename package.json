@@ -11,8 +11,8 @@
     "testBuild": "webpack --config ./webpackConfigs/testBuild.config.js",
     "build": "webpack",
     "test": "mocha",
-    "test-storyshots": "jest",
-    "update-storyshots": "jest \"-u\"",
+    "test-storyshots": "jest storyshots.test.js",
+    "update-storyshots": "jest \"-u\" storyshots.test.js",
     "test-coverage": "nyc npm run test",
     "push-coverage": "codacy-coverage --token ca0a1dcce45a40e8bd8fe18863b5c017",
     "testWithCoverage": "npm run test-coverage | npm run push-coverage"
