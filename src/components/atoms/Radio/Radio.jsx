@@ -88,11 +88,11 @@ function Radio({
   error,
   id,
   label,
-  onChange,
   name,
-  value,
-  onFocus,
   onBlur,
+  onChange,
+  onFocus,
+  value,
   warning,
 }) {
   let inputTextColor;
@@ -142,9 +142,9 @@ function Radio({
         fillColorChecked={fillColorChecked}
         id={id}
         name={name}
+        onBlur={onBlur}
         onChange={onChange}
         onFocus={onFocus}
-        onBlur={onBlur}
         outlineColor={outlineColor}
         tabIndex={tabIndex}
         value={value}
@@ -201,13 +201,13 @@ function RadioGroup({
                 align={align}
                 disabled={item.disabled || isDisabled}
                 error={!!error}
-                warning={!!warning}
                 id={item.id}
                 key={item.id}
                 label={item.label}
-                onChange={onChange}
                 name={item.name}
+                onChange={onChange}
                 value={item.value}
+                warning={!!warning}
               />
             );
           })}
@@ -227,27 +227,27 @@ Radio.propTypes = {
   /** The name property sets or returns the value of the name attribute of a radio button.
    * You define radio button groups with the name property (radio buttons with the same name belong to the same group). */
   name: PropTypes.string,
+  onBlur: PropTypes.func,
   onChange: PropTypes.func,
+  onFocus: PropTypes.func,
   /** The value property sets or returns the value of the value attribute of the radio button.
    * Define different values for radio buttons in the same group, to identify (on the server side) which one was checked.  */
   value: PropTypes.string,
-  onFocus: PropTypes.func,
-  onBlur: PropTypes.func,
   warning: PropTypes.bool,
 };
 
 Radio.defaultProps = {
   align: null,
   checked: null,
-  label: null,
-  name: null,
   disabled: false,
   error: false,
   id: null,
-  onChange: null,
-  value: null,
-  onFocus: null,
+  label: null,
+  name: null,
   onBlur: null,
+  onChange: null,
+  onFocus: null,
+  value: null,
   warning: false,
 };
 
