@@ -14,21 +14,17 @@ const ImageWrapper = styled.img`
   border-radius: ${(props) => {
     return props.circle ? "100%" : "";
   }};
-  filter: ${(props) => {
-    return props.border ? props.theme.shadows.shadow1 : "";
-  }};
   cursor: ${(props) => {
     return props.onClick ? "pointer" : "";
   }};
 `;
 
 function Image({
-  alt, border, circle, className, onClick, src, width,
+  alt, circle, className, onClick, src, width,
 }) {
   return (
     <ImageWrapper
       alt={alt}
-      border={border}
       circle={circle}
       className={className}
       onClick={onClick}
@@ -41,7 +37,6 @@ function Image({
 
 Image.propTypes = {
   alt: PropTypes.string.isRequired,
-  border: PropTypes.bool,
   circle: PropTypes.bool,
   className: PropTypes.string,
   onClick: PropTypes.func,
@@ -49,8 +44,6 @@ Image.propTypes = {
   width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 Image.defaultProps = {
-  alt: "alt",
-  border: false,
   circle: false,
   className: null,
   onClick: null,
