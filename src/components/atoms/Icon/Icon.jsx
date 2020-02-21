@@ -1,3 +1,4 @@
+/* eslint-disable complexity */
 /* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
@@ -12,7 +13,7 @@ const LinkedIcon = styled.a`
   cursor: ${(props) => {
     if (props.disabled) {
       return "not-allowed";
-    } else if (props.onClick) {
+    } else if (props.onClick || props.href) {
       return "pointer";
     }
     return "";
@@ -32,18 +33,9 @@ const LinkedIcon = styled.a`
 `;
 
 const StyledIcon = styled(FontAwesomeIcon)`
- position: relative;
+  position: relative;
   color: ${(props) => {
     return props.theme.palette[props.color] || "";
-  }};
-  border: ${(props) => {
-    return props.border ? "2px solid" : "";
-  }};
-  border-color: ${(props) => {
-    return props.theme.palette[props.border] || "";
-  }};
-  border-radius: ${(props) => {
-    return props.border ? "5px" : "";
   }};
   transition: all 0.25s ease-in-out;
 `;
@@ -181,13 +173,13 @@ const colorHash = {
 };
 
 function Icon({
-  border,
-  className,
-  disabled,
   badge,
   brand,
+  className,
+  disabled,
   fixedWidth,
   flip,
+  href,
   icon,
   id,
   onClick,
@@ -195,7 +187,6 @@ function Icon({
   rotation,
   size,
   spin,
-  title,
   type,
 }) {
   const iconValue = iconHash[icon.toLowerCase()] || ["far", icon.toLowerCase()];
@@ -205,7 +196,7 @@ function Icon({
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) color = "disabled";
-  else if (onClick) color = "link";
+  else if (onClick || href) color = "link";
 
   // FontAwesomeIcon only allows values of 90, 180, or 270
   let _rotation = typeof rotation === "number" ? Math.round(rotation / 90) % 4 : null;
@@ -231,10 +222,8 @@ function Icon({
     } else { null; }
   }
 
-
   const styledIcon = (
     <StyledIcon
-      border={border}
       className={className}
       color={color}
       fixedWidth={fixedWidth}
@@ -245,7 +234,7 @@ function Icon({
       rotation={_rotation}
       size={size}
       spin={spin}
-      title={title}
+      title={id}
     />
   );
 
@@ -271,9 +260,9 @@ function Icon({
     );
   }
 
-  if (onClick) {
+  if (onClick || href) {
     content = (
-      <LinkedIcon onClick={onClick} disabled={disabled}>
+      <LinkedIcon onClick={onClick} href={href} disabled={disabled}>
         {content}
       </LinkedIcon>
     );
@@ -287,20 +276,19 @@ function Icon({
 }
 
 Icon.propTypes = {
-  border: PropTypes.bool,
-  href: PropTypes.string,
-  /** className used for extending styles */
-  className: PropTypes.string,
   /** Options: 'info', 'success', 'warning', 'alert' */
   badge: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
-  disabled: PropTypes.bool,
   brand: PropTypes.string,
+  /** className used for extending styles */
+  className: PropTypes.string,
+  disabled: PropTypes.bool,
   /** Used to set one or more icons to the same fixed width.
     * Good for vertically aligning a series of icons
     */
   fixedWidth: PropTypes.bool,
   /** Options: 'horizontal', 'vertical', 'both' */
   flip: PropTypes.string,
+  href: PropTypes.string,
   /** Enter the name of the icon as the prop value. (ex. icon='circle' */
   icon: PropTypes.string,
   id: PropTypes.string,
@@ -315,19 +303,17 @@ Icon.propTypes = {
   size: PropTypes.string,
   /** Smooth rotation */
   spin: PropTypes.bool,
-  title: PropTypes.string,
   type: PropTypes.string,
 };
 
 Icon.defaultProps = {
-  border: false,
-  href: null,
-  className: null,
   badge: false,
+  brand: null,
+  className: null,
   disabled: null,
   fixedWidth: false,
   flip: null,
-  brand: null,
+  href: null,
   icon: null,
   id: null,
   onClick: null,
@@ -335,7 +321,6 @@ Icon.defaultProps = {
   rotation: null,
   size: null,
   spin: false,
-  title: null,
   type: null,
 };
 
