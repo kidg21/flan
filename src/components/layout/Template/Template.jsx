@@ -35,6 +35,7 @@ const Body = styled(Flex)`
   align-content: stretch;
   align-items: flex-start;
   width: 100%;
+  background: purple;
   height: 100%;
 `;
 
@@ -72,9 +73,11 @@ const RegionLeft = styled(Flex)`
 `;
 
 const RegionMain = styled(Flex)`
-flex-direction: column;
 flex: auto;
+flex-direction: column;
 height: 100%;
+width: 100%;
+background: green;
   &:empty {
     &:before {
       ${PlaceholderText};
@@ -92,6 +95,7 @@ const RegionTop = styled(Flex)`
   &:empty {
     &:before {
       ${PlaceholderText};
+      background: goldenrod;
       content: "{ Top }";
       color: ${(props) => {
     return props.theme.text.primary;
@@ -101,10 +105,10 @@ const RegionTop = styled(Flex)`
 `;
 
 const RegionBottom = styled(Flex)`
-  flex:  none;
+  flex: none;
   bottom: 0;
   height: ${(props) => {
-    return props.bottomHeight || "";
+    return props.bottomHeight ;
   }};
   @media (min-width: ${viewport.medium}) {
     max-height: ${(props) => {
@@ -118,6 +122,7 @@ const RegionBottom = styled(Flex)`
   &:empty {
     &:before {
       ${PlaceholderText};
+      background: blue;
       content: "{ Bottom }";
       color: ${(props) => {
     return props.theme.text.primary;
@@ -131,8 +136,7 @@ position: ${(props) => {
   return props.position || "";
 }};
   right: 0;
-  flex: 0 1 auto;
-  align-self: stretch;
+  flex: auto;
   width: ${(props) => {
     return props.rightWidth || "";
   }};
@@ -193,16 +197,18 @@ if (screenMedium.matches || screenLarge.matches) {
   let seeRightRegion = null;
   let rightOpen = right ? right.visible : false;
   let setRightOpen = right ? right.toggle : null;
+  // let seeBottomRegion = null;
   let bottomOpen = bottom ? bottom.visible : false;
+  // let setBottomOpen = bottom ? bottom.toggle : false;
   if (left) {
-    if (!setLeftOpen) [leftOpen, setLeftOpen] = useState(left.visible);
+    if (!setLeftOpen) [leftOpen, setLeftOpen] = useState(!left.visible);
     if (screenLarge.matches || screenMedium.matches) {
       // On larger screens, both left and right regions can be open at the same time
       seeLeftRegion = () => { setLeftOpen(!leftOpen); };
     } else {
       // On small screens, either the left or right region can be open, not both
       seeLeftRegion = () => { setLeftOpen(!leftOpen); setRightOpen(!right.visible); 
-      if (!leftOpen) setRightOpen(false)};
+      if (!leftOpen) rightOpen(false)};
     }
   }
   if (right) {
@@ -212,8 +218,8 @@ if (screenMedium.matches || screenLarge.matches) {
       seeRightRegion = () => { setRightOpen(!rightOpen); };
     } else {
       // On small screens, either the left or right region can be open, not both
-      seeRightRegion = () => { setRightOpen(!rightOpen); 
-      if (!rightOpen) setLeftOpen(false); };
+      seeRightRegion = () => { setRightOpen(!rightOpen); setLeftOpen(!left.visible)
+      if (!rightOpen) leftOpen(false); };
     }
   }
 
@@ -270,13 +276,12 @@ if (screenMedium.matches || screenLarge.matches) {
           <RegionTop>
           {main}
           </RegionTop>
-          {bottom ? (
-          <RegionBottom
-            flexDirection="row"
+            {bottom ? (
+              <RegionBottom
             height={bottomHeight}
             zIndex={zIndex}
             open={bottomOpen}
-          >
+              >
             {bottom.content}
           </RegionBottom>) : null }
         </RegionMain>

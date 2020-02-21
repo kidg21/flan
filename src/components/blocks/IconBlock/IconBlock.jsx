@@ -9,6 +9,9 @@ const Block = styled.div`
   align-items: center;
   width: 100%;
   justify-content: space-between;
+  > a {
+    display: flex;
+  }
 `;
 
 function IconBlock({

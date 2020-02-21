@@ -20,7 +20,6 @@ const LinkedIcon = styled.a`
   pointer-events: ${(props) => {
     return props.disabled ? "none" : "";
   }};
-  height: 1rem;
   user-select: ${(props) => {
     return props.disabled ? "none" : "";
   }};

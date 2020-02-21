@@ -145,42 +145,20 @@ storiesOf("Layout |Templates/Template A/", module)
     "Configured Icons",
     () => {
       return React.createElement(() => {
-        const [rightOpen, setRightOpen] = useState(true);
-        const seeRightRegion = () => { setRightOpen(!rightOpen); };
+        const [rightOpen, setRightOpen] = useState(false);
+        const seeRightRegion = () => {  setRightOpen(!rightOpen);  };
 
-        const [leftOpen, setLeftOpen] = useState(false);
-        const seeLeftRegion = () => { setLeftOpen(!leftOpen); };
+        const [leftOpen, setLeftOpen] = useState(true);
+        const seeLeftRegion = () => { setLeftOpen(!leftOpen);  };
 
         const navBar = {
-          content: (
-            <Panel
-              id="Panel"
-            >
-              <List interactive>
-                <ListItem title="Layers" />
-                <ListItem title="Results" />
-                <ListItem title="Form" />
-                <ListItem title="Research" />
-              </List>
-            </Panel>
-          ),
+          content: "",
           visible: leftOpen,
           toggle: seeLeftRegion,
         };
 
         const appBar = {
-          content: (
-            <Panel
-              id="Panel"
-            >
-              <List interactive>
-                <ListItem title="Layers" />
-                <ListItem title="Results" />
-                <ListItem title="Form" />
-                <ListItem title="Research" />
-              </List>
-            </Panel>
-          ),
+          content: "",
           visible: rightOpen,
           toggle: seeRightRegion,
         };
@@ -212,7 +190,7 @@ storiesOf("Layout |Templates/Template A/", module)
         const [rightOpen, setRightOpen] = useState(true);
         const seeRightRegion = () => { setRightOpen(!rightOpen); };
 
-        const [leftOpen, setLeftOpen] = useState(false);
+        const [leftOpen, setLeftOpen] = useState(true);
         const seeLeftRegion = () => { setLeftOpen(!leftOpen); };
 
         const [bottomOpen, setBottomOpen] = useState(false);
@@ -241,10 +219,7 @@ storiesOf("Layout |Templates/Template A/", module)
               id="Panel"
             >
               <List interactive>
-                <ListItem title="Layers" />
-                <ListItem title="Results" />
-                <ListItem title="Form" />
-                <ListItem title="Research" />
+                <ListItem title="No" />
               </List>
             </Panel>
           ),
