@@ -19,7 +19,7 @@ const BadgeContainer = styled.div`
 `;
 
 function Badge({
-  id, label, icon, type, position,
+  icon, id, label, position, type,
 }) {
   let badgeLeft;
   let badgeBottom;
@@ -49,10 +49,10 @@ function Badge({
   }
   return (
     <BadgeContainer
+      badgeBottom={badgeBottom}
+      badgeLeft={badgeLeft}
       id={id}
       setTransform={setTransform}
-      badgeLeft={badgeLeft}
-      badgeBottom={badgeBottom}
     >
       <Tag label={label} type={type || "alert"} icon={icon} />
     </BadgeContainer>
