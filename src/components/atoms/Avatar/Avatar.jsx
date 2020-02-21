@@ -82,13 +82,15 @@ function Avatar({
 
 
   if (media) {
-    iconType = (<Image
-      alt={alt}
-      circle
-      height={avatarSize}
-      src={media}
-      width={avatarSize}
-    />);
+    iconType = (
+      <Image
+        alt={alt}
+        circle
+        height={avatarSize}
+        src={media}
+        width={avatarSize}
+      />
+    );
   } else if (icon) {
     iconType = <Icon icon={icon} size="lg" />;
   } else {
@@ -112,8 +114,6 @@ function Avatar({
       backgroundColor = "brand3";
     } if (brand === "brand4") {
       backgroundColor = "brand4";
-    } else {
-      backgroundColor = null;
     }
   }
 
