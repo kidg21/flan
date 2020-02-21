@@ -121,16 +121,23 @@ const content = [
         YR_BLT_EFFECT: null,
         ZONING: "LAPF",
       },
+      {
+        FOO: "BAR",
+      },
     ],
     displayFields: [
       {
         label: "Site Address",
-        value: "${records[0].SITE_ADDR} ${records[0].SITE_CITY}, ${records[0].SITE_STATE} ${records[0].SITE_CITY}",
+        value: "${records[0].SITE_ADDR} ${records[0].SITE_CITY.toLowerCase()}, ${records[0].SITE_STATE} ${records[0].SITE_CITY}",
       },
       {
         label: "Assessed Value",
         value: "${records[0].VAL_ASSD.toLocaleString('en-us', {style: 'currency', currency: 'USD'})}",
       },
+      {
+        label: "FOO",
+        value: "${records[1].FOO} -- ${records[0].ZONING}"
+      }
     ],
     commands: [
       {

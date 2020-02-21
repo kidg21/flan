@@ -19,6 +19,8 @@ const templateComponents = {
 
 const interpolate = (template, records) => {
   const funcBody = `"use strict"; return (function (records, numberFormatter) { return \`${template.value}\`})`;
+  // eslint doesn't like this, but it's better than eval according to MDN:
+  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval#Never_use_eval!
   // eslint-disable-next-line no-new-func
   const output = Function(`${funcBody}`)()(records, Intl.NumberFormat);
   return output;
