@@ -269,6 +269,7 @@ storiesOf("Layout |Templates/Template A/", module)
         <Template
           header={{
             content: "",
+            width: "15%",
             right:(
               <IconBlock>
               <Icon icon="list"  onClick={seeBottomRegion}/>

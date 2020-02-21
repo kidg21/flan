@@ -40,7 +40,7 @@ const Body = styled(Flex)`
 
 const RegionLeft = styled(Flex)`
   position: ${(props) => {
-    return props.leftPosition || "";
+    return props.position || "";
   }};
   flex: 0 1 auto;
   align-self: stretch;
@@ -74,9 +74,7 @@ const RegionLeft = styled(Flex)`
 const RegionMain = styled(Flex)`
 flex-direction: column;
 flex: auto;
-width: 100%;
 height: 100%;
-
   &:empty {
     &:before {
       ${PlaceholderText};
@@ -129,6 +127,9 @@ const RegionBottom = styled(Flex)`
 `;
 
 const RegionRight = styled(Flex)`
+position: ${(props) => {
+  return props.position || "";
+}};
   right: 0;
   flex: 0 1 auto;
   align-self: stretch;
@@ -142,7 +143,7 @@ const RegionRight = styled(Flex)`
   }};
   }
   transform: ${(props) => {
-    return props.open ? "translateX(100%)" : "translateX(-100%)";
+    return props.open ? "translateX(100%)" : "translateX(0%)";
   }};
   /* For Dev purposes */
   border-left: 1px solid ${(props) => {
@@ -169,32 +170,22 @@ function Template({
 }) {
   const screenMedium = window.matchMedia(`(min-width: ${viewport.medium})`);
   const screenLarge = window.matchMedia(`(min-width: ${viewport.large})`);
-  let leftPosition;
-  let leftWidth;
-  let leftIndex;
-  let bottomIndex;
-  let rightPosition;
-  let bottomHeight;
-  let rightWidth;
-  let rightIndex;
-  if (screenLarge.matches) {
-    leftWidth = "20vw";
-    rightWidth = "20vw";
-    bottomHeight = "50vh";
-  } else if (screenMedium.matches) {
-    leftWidth = "20vw";
-    rightWidth = "20vw";
-    bottomHeight = "50vh";
-  } else {
-    leftPosition = "absolute";
-    leftWidth = "100vw";
-    leftIndex = "1";
-    rightPosition = "absolute";
-    bottomHeight = "50vh";
-    rightWidth = "100vw";
-    rightIndex = "1";
-    bottomIndex = "1";
-  }
+
+
+const bottomHeight = "50vh";
+let leftWidth = "100vw";
+let rightWidth = "100vw";
+let zIndex = null;  // shared by all
+let position = null;  // shared by all
+if (screenMedium.matches || screenLarge.matches) {
+  leftWidth = "15vw"; //these will most likely need different sizes
+  rightWidth = "20vw";
+} else {
+  position = "absolute";
+  zIndex = "1";
+}
+
+
 
   let seeLeftRegion = null;
   let leftOpen = left ? left.visible : false;
@@ -202,9 +193,7 @@ function Template({
   let seeRightRegion = null;
   let rightOpen = right ? right.visible : false;
   let setRightOpen = right ? right.toggle : null;
-  let seeBottomRegion = null;
   let bottomOpen = bottom ? bottom.visible : false;
-  let setBottomOpen = bottom ? bottom.toggle : null;
   if (left) {
     if (!setLeftOpen) [leftOpen, setLeftOpen] = useState(left.visible);
     if (screenLarge.matches || screenMedium.matches) {
@@ -212,7 +201,8 @@ function Template({
       seeLeftRegion = () => { setLeftOpen(!leftOpen); };
     } else {
       // On small screens, either the left or right region can be open, not both
-      seeLeftRegion = () => { setLeftOpen(!leftOpen); setRightOpen(!right.visible); };
+      seeLeftRegion = () => { setLeftOpen(!leftOpen); setRightOpen(!right.visible); 
+      if (!leftOpen) setRightOpen(false)};
     }
   }
   if (right) {
@@ -222,26 +212,18 @@ function Template({
       seeRightRegion = () => { setRightOpen(!rightOpen); };
     } else {
       // On small screens, either the left or right region can be open, not both
-      seeRightRegion = () => { setRightOpen(!rightOpen); setLeftOpen(!left.visible); };
+      seeRightRegion = () => { setRightOpen(!rightOpen); 
+      if (!rightOpen) setLeftOpen(false); };
     }
   }
-  if (bottom) {
-    if (!setBottomOpen) [bottomOpen, setBottomOpen] = useState(bottom.visible);
-    if (screenLarge.matches || screenMedium.matches) {
-      // On larger screens, both left and right regions can be open at the same time
-      seeBottomRegion = () => { setBottomOpen(!bottomOpen); };
-    } else {
-      // On small screens, either the left or right region can be open, not both
-      seeBottomRegion = () => { setBottomOpen(!bottomOpen); setBottomOpen(!bottom.visible); };
-    }
-  }
+
 
   return (
     <TemplateWrapper>
       {header ? (
         <Header
           contentAlign="center"
-          rightWidth={header.rightWidth}
+          rightWidth={header.width}
           padding="2x"
           left={
             header.iconLeft ? (
@@ -276,9 +258,9 @@ function Template({
       <Body>
         {left ? (
           <RegionLeft
-            position={leftPosition}
+            position={position}
             width={leftWidth}
-            zIndex={leftIndex}
+            zIndex={zIndex}
             open={leftOpen}
           >
             {left.content}
@@ -292,7 +274,7 @@ function Template({
           <RegionBottom
             flexDirection="row"
             height={bottomHeight}
-            zIndex={bottomIndex}
+            zIndex={zIndex}
             open={bottomOpen}
           >
             {bottom.content}
@@ -300,9 +282,9 @@ function Template({
         </RegionMain>
         {right ? (
           <RegionRight
-            position={rightPosition}
+            position={position}
             width={rightWidth}
-            zIndex={rightIndex}
+            zIndex={zIndex}
             open={rightOpen}
           >
             {right.content}
@@ -322,42 +304,37 @@ function Template({
 }
 
 Template.propTypes = {
-  header: PropTypes.oneOfType([PropTypes.object, PropTypes.arrayOf(PropTypes.shape({
+  header: PropTypes.shape({
     content: PropTypes.node,
     right: PropTypes.node,
-    rightWidth: PropTypes.string,
+    width: PropTypes.string,
     iconLeft: PropTypes.string,
     iconRight: PropTypes.string,
-  })),
-  ]),
-  left: PropTypes.oneOfType([PropTypes.object, PropTypes.arrayOf(PropTypes.shape({
+  }),
+  left: PropTypes.shape({
     content: PropTypes.node.isRequired,
     iconLeft: PropTypes.string,
     iconRight: PropTypes.string,
-  })),
-  ]),
+  }),
   main: PropTypes.node.isRequired,
-  bottom: PropTypes.oneOfType([PropTypes.object, PropTypes.arrayOf(PropTypes.shape({
+  bottom: PropTypes.shape({
     content: PropTypes.node.isRequired,
-  })),
-]),
-  right: PropTypes.oneOfType([PropTypes.object, PropTypes.arrayOf(PropTypes.shape({
+  }),
+  right: PropTypes.shape({
     content: PropTypes.node.isRequired,
     iconLeft: PropTypes.string,
     iconRight: PropTypes.string,
-  })),
-  ]),
-  footer: PropTypes.oneOfType([PropTypes.object, PropTypes.arrayOf(PropTypes.shape({
+  }),
+  footer: PropTypes.shape({
     content: PropTypes.node.isRequired,
-  })),
-  ]),
+  }),
 };
 
 Template.defaultProps = {
   header: {
     content: null,
     right: null,
-    rightWidth: null,
+    width: null,
     iconLeft: null,
     iconRight: null,
   },
