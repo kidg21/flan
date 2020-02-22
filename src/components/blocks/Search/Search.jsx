@@ -5,17 +5,25 @@ import PropTypes from "prop-types";
 import Bar from "blocks/Bar";
 import SelectMenu from "atoms/SelectMenu";
 import {Link} from "base/Typography";
+import { viewport } from "Variables";
 import Button from "atoms/Button";
 import Form from "layout/Form";
 import Grid from "layout/Grid";
+import Menu from "blocks/Menu";
 import TextInput from "atoms/TextInput";
-import Command from "atoms/Command";
+import Container from "atoms/Container";
 import Icon from "atoms/Icon";
 import styled from "styled-components";
 import InputBlock from "blocks/InputBlock";
 import Card from "elements/Card";
 import List, { ListItem } from "blocks/List";
 
+const ResultsContainer = styled(Container)`
+position: relative;
+z-index: 3;
+margin-top: -1px;
+display: block;
+`;
 
 const inputsAPN = [
     {
@@ -69,16 +77,27 @@ const Advanced = (
 );
 
 
+const data = [
+  {
+    id: "a",
+    onClick: () => {
+      console.log("clicked Advanced");
+    },
+    label: "Advanced",
+    icon: "Advanced",
+  },
+];
+
 
 const Results = (
-    <Card>
+    <ResultsContainer>
         <List interactive>
             <ListItem title="Address" description="23928 Malibu Dr."/>
             <ListItem title="Address" description="23928 Malibu Dr."/>
             <ListItem title="Address" description="23928 Malibu Dr." isSelected/>
             <ListItem title="Address" description="23928 Malibu Dr."/>
         </List>
-    </Card>
+    </ResultsContainer>
 );
 
 
@@ -87,24 +106,41 @@ function Search({ showAdvanced, showResults
 }) {
 
 
+  const screenMedium = window.matchMedia(`(min-width: ${viewport.medium})`);
+  const screenLarge = window.matchMedia(`(min-width: ${viewport.large})`);
+  let rightContent;
+  let leftWidth;
+  let rightWidth;
+
+  if (screenLarge.matches || screenMedium.matches) {
+    leftWidth = "25%";
+    rightContent = (
+      <Link size="3x" text="Advanced" />
+    )
+  } else {
+    leftWidth = "88%";
+  }
+
   return (
       <React.Fragment>
     <Bar
-    padding="2x"
-    contentAlign="center"
+    leftWidth={leftWidth}
+    rightWidth={rightWidth}
+    contentAlign="top"
     centerAlign="left"
-    left ={<Grid columns="2fr .3fr"><TextInput
+    left ={<div style={{display: "block"}}><TextInput
+    style={{margin: "0 auto"}}
         id="111"
         placeholder="Search Location"
         type="search"
-      />
-      <Button icon="search" solid/>
-      </Grid>
+      >
+        { showResults ? <React.Fragment>{Results}</React.Fragment> : null}
+        </TextInput>
+        </div>
     }
-    center={
-      <Link size="3x" text="Advanced" />}
+    center={<Button icon="search" solid/>}
+    right={rightContent}
       />
-      { showResults ? <React.Fragment>{Results}</React.Fragment> : null}
       { showAdvanced ? <React.Fragment>{Advanced}</React.Fragment> : null}
       </React.Fragment>
   );
