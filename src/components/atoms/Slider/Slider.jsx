@@ -36,8 +36,6 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
     appearance: none;
     width: 98%;
     height: 1px;
-    x: align.center;
-    y: align.center;
     border-radius: 5px;
     background: #ccc;
     outline: none;
