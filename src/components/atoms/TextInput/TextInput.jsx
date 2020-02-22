@@ -75,31 +75,27 @@ const Input = styled.input`
     }
   }
 `;
-
 function TextInput({
   autocompleteList,
   children,
   className,
+  columns,
   disabled,
   error,
   helpText,
   id,
   isRequired,
   label,
+  onBlur,
   onChange,
+  onFocus,
+  onKeyPress,
   pattern,
   placeholder,
   readonly,
-  size,
-  title,
+  rows,
   type,
   value,
-  onBlur,
-  onFocus,
-  onKeyPress,
-  name,
-  rows,
-  cols,
   warning,
 }) {
   let as;
@@ -115,8 +111,6 @@ function TextInput({
     as = "textarea";
     inputResize = "vertical";
   }
-  // else if (type === "search") {
-  // }
 
   // construct datalist element for autocompletes if appropriate props passed in
   // the autocompleteListId is used to ensure each textinput only draws from its own datalist element
@@ -166,17 +160,19 @@ function TextInput({
 
   return (
     <TextInputContainer
+      className={className}
+      columns="1"
+      gap="tiny"
       id={id}
       inputTextColor={inputTextColor}
-      gap="tiny"
-      columns="1"
-      className={className}
     >
       {label ? (
         <Label size="2x" isRequired={isRequired} text={label} />
       ) : null}
       <Input
         as={as}
+        autoComplete={autocompleteList && autocompleteList.length > 0 ? "on" : "off"}
+        cols={columns} // textarea attribute
         disabled={isDisabled} // input attribute
         id={id} // input attribute
         inputBorderColor={inputBorderColor}
@@ -186,22 +182,19 @@ function TextInput({
         inputResize={inputResize}
         inputSelectColor={inputSelectColor}
         list={autoCompleteDataListId}
-        name={name || id} // input attribute
+        name={id} // input attribute
+        onBlur={onBlur}
         onChange={onChange}
+        onFocus={onFocus}
+        onKeyPress={onKeyPress}
         pattern={pattern} // input attribute
         placeholder={placeholder} // input attribute
         placeholderColor={placeholderColor}
         readonly={readonly}
-        size={size} // overriding this while developing so it's easier to see
-        title={title} // input attribute
+        rows={rows} // textarea attribute
+        title={id} // input attribute
         type={type} // input attribute
         value={value}
-        onBlur={onBlur}
-        onFocus={onFocus}
-        onKeyPress={onKeyPress}
-        rows={rows} // textarea attribute
-        cols={cols} // textarea attribute
-        autoComplete={autocompleteList && autocompleteList.length > 0 ? "on" : "off"}
       />
       {autocompleteDataList}
       {helpText ? <Text size="1x" text={helpText} /> : null}
@@ -218,6 +211,7 @@ TextInput.propTypes = {
   })])),
   children: PropTypes.node,
   className: PropTypes.string,
+  columns: PropTypes.string,
   /** A disabled input field is unusable and un-clickable, and its value will not be sent when submitting the form */
   disabled: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
@@ -225,16 +219,15 @@ TextInput.propTypes = {
   id: PropTypes.string,
   isRequired: PropTypes.bool,
   label: PropTypes.string,
+  onBlur: PropTypes.func,
   onChange: PropTypes.func,
+  onFocus: PropTypes.func,
+  onKeyPress: PropTypes.func,
   pattern: PropTypes.string,
   placeholder: PropTypes.string,
   /** The readonly attribute specifies that the input field is read only (cannot be changed) */
   readonly: PropTypes.bool,
-  size: PropTypes.string,
-  /** The title attribute specifies extra information about an element.
-   * The information is most often shown as a tooltip text when the mouse moves over the element.
-   */
-  title: PropTypes.string,
+  rows: PropTypes.string,
   type: PropTypes.oneOf([
     "color",
     "date",
@@ -254,12 +247,6 @@ TextInput.propTypes = {
   ]),
   /** The value attribute specifies the initial value for an input field */
   value: PropTypes.string,
-  onBlur: PropTypes.func,
-  onFocus: PropTypes.func,
-  onKeyPress: PropTypes.func,
-  name: PropTypes.string,
-  rows: PropTypes.string,
-  cols: PropTypes.string,
   warning: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
 };
 
@@ -267,26 +254,23 @@ TextInput.defaultProps = {
   autocompleteList: null,
   children: null,
   className: null,
+  columns: "",
   disabled: null,
   error: null,
   helpText: null,
   id: null,
-  label: null,
   isRequired: false,
+  label: null,
+  onBlur: null,
   onChange: null,
+  onFocus: null,
+  onKeyPress: null,
   pattern: null,
   placeholder: null,
   readonly: false,
-  size: null,
-  title: null,
+  rows: "",
   type: "text",
   value: null,
-  onBlur: null,
-  onFocus: null,
-  onKeyPress: null,
-  name: "",
-  rows: "",
-  cols: "",
   warning: "",
 };
 
