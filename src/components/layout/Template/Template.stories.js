@@ -146,10 +146,11 @@ storiesOf("Layout |Templates/Template A/", module)
     () => {
       return React.createElement(() => {
         const [rightOpen, setRightOpen] = useState(true);
-        const seeRightRegion = () => { setRightOpen(!rightOpen);};
+        const seeRightRegion = () => { setRightOpen(!rightOpen); };
 
         const [leftOpen, setLeftOpen] = useState(true);
         const seeLeftRegion = () => { setLeftOpen(!leftOpen); rightOpen(false) };
+
 
         const navBar = {
           content: "",
