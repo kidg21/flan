@@ -1,0 +1,1902 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<ul
+  className="List__ListWrapper-sc-43f2zq-0 iOWfKZ"
+  id={null}
+>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item
+        </h6>
+      </div>
+    </div>
+  </li>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item
+        </h6>
+      </div>
+    </div>
+  </li>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item
+        </h6>
+      </div>
+    </div>
+  </li>
+</ul>
+`;
+
+exports[` 2`] = `
+<ul
+  className="List__ListWrapper-sc-43f2zq-0 iOWfKZ"
+  id={null}
+>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          Item 1
+        </h6>
+      </div>
+    </div>
+  </li>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          Item 2
+        </h6>
+      </div>
+    </div>
+  </li>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          Item 3
+        </h6>
+      </div>
+    </div>
+  </li>
+</ul>
+`;
+
+exports[` 3`] = `
+<ul
+  className="List__ListWrapper-sc-43f2zq-0 iOWfKZ"
+  id={null}
+>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item (standard)
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          This is the description
+        </p>
+      </div>
+    </div>
+  </li>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 glQZlZ"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item (selected)
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          This is the description
+        </p>
+      </div>
+    </div>
+  </li>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+    disabled={true}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="-1"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item (disabled)
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          This is the description
+        </p>
+      </div>
+    </div>
+  </li>
+</ul>
+`;
+
+exports[` 4`] = `
+<ul
+  className="List__ListWrapper-sc-43f2zq-0 iOWfKZ"
+  id={null}
+>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 ejxGCs"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          This is the description
+        </p>
+      </div>
+    </div>
+  </li>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 ejxGCs"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          This is the description
+        </p>
+      </div>
+    </div>
+  </li>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 ejxGCs"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          This is the description
+        </p>
+      </div>
+    </div>
+  </li>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item (interaction disabled)
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          This is the description
+        </p>
+      </div>
+    </div>
+  </li>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 ejxGCs"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          This is the description
+        </p>
+      </div>
+    </div>
+  </li>
+</ul>
+`;
+
+exports[` 5`] = `
+<ul
+  className="List__ListWrapper-sc-43f2zq-0 iOWfKZ"
+  id={null}
+>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 ejxGCs"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 fJwGTh"
+      >
+        <div
+          alt={null}
+          className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
+          id={null}
+          label="AB"
+          onClick={null}
+          src={null}
+        >
+          <h6
+            className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
+            fontSize="1.05em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            AB
+          </h6>
+        </div>
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          This is the description
+        </p>
+      </div>
+    </div>
+  </li>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 ejxGCs"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 fJwGTh"
+      >
+        <div
+          alt={null}
+          className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
+          id={null}
+          label="CD"
+          onClick={null}
+          src={null}
+        >
+          <h6
+            className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
+            fontSize="1.05em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            CD
+          </h6>
+        </div>
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          This is the description
+        </p>
+      </div>
+    </div>
+  </li>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 ejxGCs"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 fJwGTh"
+      >
+        <div
+          alt={null}
+          className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
+          id={null}
+          label="EF"
+          onClick={null}
+          src={null}
+        >
+          <h6
+            className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
+            fontSize="1.05em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            EF
+          </h6>
+        </div>
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          This is the description
+        </p>
+      </div>
+    </div>
+  </li>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 ejxGCs"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 fJwGTh"
+      >
+        <div
+          alt={null}
+          className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
+          id={null}
+          label="GH"
+          onClick={null}
+          src={null}
+        >
+          <h6
+            className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
+            fontSize="1.05em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            GH
+          </h6>
+        </div>
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          This is the description
+        </p>
+      </div>
+    </div>
+  </li>
+</ul>
+`;
+
+exports[` 6`] = `
+<ul
+  className="List__ListWrapper-sc-43f2zq-0 iOWfKZ"
+  id={null}
+>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 ejxGCs"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 fJwGTh"
+      >
+        <div
+          alt={null}
+          className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
+          id={null}
+          label={null}
+          onClick={null}
+          src={null}
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-home-alt fa-w-18 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+            color={null}
+            data-icon="home-alt"
+            data-prefix="fas"
+            focusable="false"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          This is the description
+        </p>
+      </div>
+    </div>
+  </li>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 ejxGCs"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 fJwGTh"
+      >
+        <div
+          alt={null}
+          className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
+          id={null}
+          label={null}
+          onClick={null}
+          src={null}
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-user fa-w-14 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+            color={null}
+            data-icon="user"
+            data-prefix="far"
+            focusable="false"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          This is the description
+        </p>
+      </div>
+    </div>
+  </li>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 ejxGCs"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 fJwGTh"
+      >
+        <div
+          alt={null}
+          className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
+          id={null}
+          label={null}
+          onClick={null}
+          src={null}
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-bookmark fa-w-12 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+            color={null}
+            data-icon="bookmark"
+            data-prefix="far"
+            focusable="false"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 384 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M336 0H48C21.49 0 0 21.49 0 48v464l192-112 192 112V48c0-26.51-21.49-48-48-48zm0 428.43l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.314 0 6 2.683 6 5.996V428.43z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          This is the description
+        </p>
+      </div>
+    </div>
+  </li>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 ejxGCs"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 fJwGTh"
+      >
+        <div
+          alt={null}
+          className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
+          id={null}
+          label={null}
+          onClick={null}
+          src={null}
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-print fa-w-16 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+            color={null}
+            data-icon="print"
+            data-prefix="far"
+            focusable="false"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M400 264c-13.25 0-24 10.74-24 24 0 13.25 10.75 24 24 24s24-10.75 24-24c0-13.26-10.75-24-24-24zm32-88V99.88c0-12.73-5.06-24.94-14.06-33.94l-51.88-51.88c-9-9-21.21-14.06-33.94-14.06H110.48C93.64 0 80 14.33 80 32v144c-44.18 0-80 35.82-80 80v128c0 8.84 7.16 16 16 16h64v96c0 8.84 7.16 16 16 16h320c8.84 0 16-7.16 16-16v-96h64c8.84 0 16-7.16 16-16V256c0-44.18-35.82-80-80-80zM128 48h192v48c0 8.84 7.16 16 16 16h48v64H128V48zm256 416H128v-64h256v64zm80-112H48v-96c0-17.64 14.36-32 32-32h352c17.64 0 32 14.36 32 32v96z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          This is the description
+        </p>
+      </div>
+    </div>
+  </li>
+</ul>
+`;
+
+exports[` 7`] = `
+<ul
+  className="List__ListWrapper-sc-43f2zq-0 iOWfKZ"
+  id={null}
+>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 ejxGCs"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 cSnMzs"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          This is the description
+        </p>
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 ikxUaE"
+      >
+        <div
+          className="Switch__SwitchContainer-sc-1bvlvzt-0 kJWxTM"
+          disabled={false}
+          id={null}
+          label="Toggle 1"
+          onClick={[Function]}
+        >
+          <div
+            checked={false}
+            className="Switch__StyledSwitch-sc-1bvlvzt-1 gEzAJR"
+            disabled={false}
+            onChange={null}
+          >
+            <div
+              checked={false}
+              className="Switch__Circle-sc-1bvlvzt-2 gXgoDz"
+              disabled={false}
+            />
+          </div>
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 Jgtkr"
+            fontSize="0.876em"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing="0px"
+          >
+            Toggle 1
+          </label>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 ejxGCs"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 cSnMzs"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          This is the description
+        </p>
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 ikxUaE"
+      >
+        <div
+          className="Switch__SwitchContainer-sc-1bvlvzt-0 kJWxTM"
+          disabled={false}
+          id={null}
+          label="Toggle 2"
+          onClick={[Function]}
+        >
+          <div
+            checked={false}
+            className="Switch__StyledSwitch-sc-1bvlvzt-1 gEzAJR"
+            disabled={false}
+            onChange={null}
+          >
+            <div
+              checked={false}
+              className="Switch__Circle-sc-1bvlvzt-2 gXgoDz"
+              disabled={false}
+            />
+          </div>
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 Jgtkr"
+            fontSize="0.876em"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing="0px"
+          >
+            Toggle 2
+          </label>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 ejxGCs"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 cSnMzs"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          This is the description
+        </p>
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 ikxUaE"
+      >
+        <div
+          className="Switch__SwitchContainer-sc-1bvlvzt-0 hGOHyg"
+          disabled={false}
+          id={null}
+          label={null}
+          onClick={[Function]}
+        >
+          <div
+            checked={false}
+            className="Switch__StyledSwitch-sc-1bvlvzt-1 gEzAJR"
+            disabled={false}
+            onChange={null}
+          >
+            <div
+              checked={false}
+              className="Switch__Circle-sc-1bvlvzt-2 gXgoDz"
+              disabled={false}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 ejxGCs"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 cSnMzs"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          This is the description
+        </p>
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 ikxUaE"
+      >
+        <div
+          className="Switch__SwitchContainer-sc-1bvlvzt-0 kJWxTM"
+          disabled={false}
+          id={null}
+          label="Toggle 4"
+          onClick={[Function]}
+        >
+          <div
+            checked={false}
+            className="Switch__StyledSwitch-sc-1bvlvzt-1 gEzAJR"
+            disabled={false}
+            onChange={null}
+          >
+            <div
+              checked={false}
+              className="Switch__Circle-sc-1bvlvzt-2 gXgoDz"
+              disabled={false}
+            />
+          </div>
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 Jgtkr"
+            fontSize="0.876em"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing="0px"
+          >
+            Toggle 4
+          </label>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
+`;
+
+exports[` 8`] = `
+<ul
+  className="List__ListWrapper-sc-43f2zq-0 iOWfKZ"
+  id={null}
+>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 ejxGCs"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 cSnMzs"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          This is the description
+        </p>
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 ikxUaE"
+      >
+        <div
+          className="Tag__TagContainer-sc-128kb3h-0 jDTvba"
+          id={null}
+          label="Label"
+          style={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            fontSize="0.75em"
+            fontWeight={600}
+            letterSpacing="0.2px"
+          >
+            Label
+          </p>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 ejxGCs"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 cSnMzs"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          This is the description
+        </p>
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 ikxUaE"
+      >
+        <div
+          className="Tag__TagContainer-sc-128kb3h-0 jDTvba"
+          id={null}
+          label="6"
+          style={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            fontSize="0.75em"
+            fontWeight={600}
+            letterSpacing="0.2px"
+          >
+            6
+          </p>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 ejxGCs"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 cSnMzs"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          This is the description
+        </p>
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 ikxUaE"
+      >
+        <div
+          className="Tag__TagContainer-sc-128kb3h-0 jDTvba"
+          id={null}
+          label="NEW!"
+          style={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            fontSize="0.75em"
+            fontWeight={600}
+            letterSpacing="0.2px"
+          >
+            NEW!
+          </p>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 ejxGCs"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 cSnMzs"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          This is the description
+        </p>
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 ikxUaE"
+      >
+        <div
+          className="Tag__TagContainer-sc-128kb3h-0 jDTvba"
+          id={null}
+          label="9"
+          style={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            fontSize="0.75em"
+            fontWeight={600}
+            letterSpacing="0.2px"
+          >
+            9
+          </p>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
+`;
+
+exports[` 9`] = `
+<ul
+  className="List__ListWrapper-sc-43f2zq-0 iOWfKZ"
+  id={null}
+>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 ejxGCs"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 cSnMzs"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          This is the description
+        </p>
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 ikxUaE"
+      >
+        <div
+          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 gughwT"
+          disabled={false}
+        >
+          <input
+            checked={null}
+            className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+            id="Box 1"
+            onBlur={null}
+            onChange={null}
+            onFocus={null}
+            type="checkbox"
+          />
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 Jgtkr"
+            fontSize="0.876em"
+            fontWeight={400}
+            htmlFor="Box 1"
+            letterSpacing="0px"
+          >
+            Box 1
+          </label>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 ejxGCs"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 cSnMzs"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          This is the description
+        </p>
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 ikxUaE"
+      >
+        <div
+          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 gughwT"
+          disabled={false}
+        >
+          <input
+            checked={null}
+            className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+            id="Box 2"
+            onBlur={null}
+            onChange={null}
+            onFocus={null}
+            type="checkbox"
+          />
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 Jgtkr"
+            fontSize="0.876em"
+            fontWeight={400}
+            htmlFor="Box 2"
+            letterSpacing="0px"
+          >
+            Box 2
+          </label>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 ejxGCs"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 cSnMzs"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          This is the description
+        </p>
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 ikxUaE"
+      >
+        <div
+          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 gughwT"
+          disabled={false}
+        >
+          <input
+            checked={null}
+            className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+            id="Box 3"
+            onBlur={null}
+            onChange={null}
+            onFocus={null}
+            type="checkbox"
+          />
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 Jgtkr"
+            fontSize="0.876em"
+            fontWeight={400}
+            htmlFor="Box 3"
+            letterSpacing="0px"
+          >
+            Box 3
+          </label>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 ejxGCs"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={null}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 cSnMzs"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          List Item
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          This is the description
+        </p>
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 ikxUaE"
+      >
+        <div
+          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 gughwT"
+          disabled={false}
+        >
+          <input
+            checked={null}
+            className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+            id="Box 4"
+            onBlur={null}
+            onChange={null}
+            onFocus={null}
+            type="checkbox"
+          />
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 Jgtkr"
+            fontSize="0.876em"
+            fontWeight={400}
+            htmlFor="Box 4"
+            letterSpacing="0px"
+          >
+            Box 4
+          </label>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
+`;
+
+exports[` 10`] = `
+<ul
+  className="List__ListWrapper-sc-43f2zq-0 iOWfKZ"
+  id={null}
+>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 ejxGCs"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={true}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+      >
+        <a
+          className="List__LinkedWrapper-sc-43f2zq-1 kzQnGy"
+          onClick={true}
+        >
+          <h6
+            className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+            fontSize="1.05em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            List Item
+          </h6>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+            fontSize="0.876em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            This is the description
+          </p>
+        </a>
+      </div>
+    </div>
+  </li>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 ejxGCs"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={true}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+      >
+        <a
+          className="List__LinkedWrapper-sc-43f2zq-1 kzQnGy"
+          onClick={true}
+        >
+          <h6
+            className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+            fontSize="1.05em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            List Item
+          </h6>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+            fontSize="0.876em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            This is the description
+          </p>
+        </a>
+      </div>
+    </div>
+  </li>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 ejxGCs"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={true}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+      >
+        <a
+          className="List__LinkedWrapper-sc-43f2zq-1 kzQnGy"
+          onClick={true}
+        >
+          <h6
+            className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+            fontSize="1.05em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            List Item
+          </h6>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+            fontSize="0.876em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            This is the description
+          </p>
+        </a>
+      </div>
+    </div>
+  </li>
+  <li
+    className="List__ListItemWrapper-sc-43f2zq-2 ejxGCs"
+    disabled={false}
+    href={null}
+    id={null}
+    onClick={true}
+    tabIndex="0"
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+      >
+        <a
+          className="List__LinkedWrapper-sc-43f2zq-1 kzQnGy"
+          onClick={true}
+        >
+          <h6
+            className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+            fontSize="1.05em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            List Item
+          </h6>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+            fontSize="0.876em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            This is the description
+          </p>
+        </a>
+      </div>
+    </div>
+  </li>
+</ul>
+`;

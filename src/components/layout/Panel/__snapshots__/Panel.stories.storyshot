@@ -1,0 +1,289 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  style={
+    Object {
+      "height": "100vh",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="Panel__PanelWrapper-sc-48epke-0 kObpyG"
+    id={null}
+  >
+    <section
+      className="Panel__SectionWrapper-sc-48epke-1 jZYywS"
+    />
+  </div>
+</div>
+`;
+
+exports[` 2`] = `
+<div
+  style={
+    Object {
+      "height": "100vh",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="Panel__PanelWrapper-sc-48epke-0 kObpyG"
+    id={null}
+  >
+    <section
+      className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 cYHdrc"
+    >
+      <div
+        className="Bar__BarLayout-sc-1c4axau-1 bRfHqU"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-sc-1c4axau-0 dirCQm"
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+            fontSize="0.876em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            Header
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      className="Panel__SectionWrapper-sc-48epke-1 jZYywS"
+    />
+  </div>
+</div>
+`;
+
+exports[` 3`] = `
+<div
+  style={
+    Object {
+      "height": "100vh",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="Panel__PanelWrapper-sc-48epke-0 kObpyG"
+    id={null}
+  >
+    <section
+      className="Panel__SectionWrapper-sc-48epke-1 jZYywS"
+    />
+    <section
+      className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 cYHdrc"
+    >
+      <div
+        className="Bar__BarLayout-sc-1c4axau-1 bRfHqU"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-sc-1c4axau-0 dirCQm"
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+            fontSize="0.876em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            Footer
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+`;
+
+exports[` 4`] = `
+<div
+  style={
+    Object {
+      "height": "100vh",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="Panel__PanelWrapper-sc-48epke-0 kObpyG"
+    id={null}
+  >
+    <section
+      className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 cYHdrc"
+    >
+      <div
+        className="Bar__BarLayout-sc-1c4axau-1 bRfHqU"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-sc-1c4axau-0 dirCQm"
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+            fontSize="0.876em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            Header
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      className="Panel__SectionWrapper-sc-48epke-1 jZYywS"
+    />
+    <section
+      className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 cYHdrc"
+    >
+      <div
+        className="Bar__BarLayout-sc-1c4axau-1 bRfHqU"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-sc-1c4axau-0 dirCQm"
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+            fontSize="0.876em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            Footer
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+`;
+
+exports[` 5`] = `
+<div
+  style={
+    Object {
+      "height": "100vh",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="Panel__PanelWrapper-sc-48epke-0 kObpyG"
+    id="Panel"
+  >
+    <section
+      className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 cYHdrc"
+    >
+      <div
+        className="Bar__BarLayout-sc-1c4axau-1 bRfHqU"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-sc-1c4axau-0 dirCQm"
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+            fontSize="0.876em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            Header
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      className="Panel__SectionWrapper-sc-48epke-1 jZYywS"
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 fGkTyc Card__CardGridWrapper-sc-1g3s676-6 dqRWfz"
+        id={null}
+        rows={null}
+      >
+        <div
+          className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+          href={null}
+          id={null}
+          media={null}
+          onClick={null}
+        />
+        <div
+          className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+          href={null}
+          id={null}
+          media={null}
+          onClick={null}
+        />
+        <div
+          className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+          href={null}
+          id={null}
+          media={null}
+          onClick={null}
+        />
+        <div
+          className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+          href={null}
+          id={null}
+          media={null}
+          onClick={null}
+        />
+        <div
+          className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+          href={null}
+          id={null}
+          media={null}
+          onClick={null}
+        />
+        <div
+          className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+          href={null}
+          id={null}
+          media={null}
+          onClick={null}
+        />
+        <div
+          className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+          href={null}
+          id={null}
+          media={null}
+          onClick={null}
+        />
+      </section>
+    </section>
+    <section
+      className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 cYHdrc"
+    >
+      <div
+        className="Bar__BarLayout-sc-1c4axau-1 bRfHqU"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-sc-1c4axau-0 dirCQm"
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+            fontSize="0.876em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            Footer
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+`;

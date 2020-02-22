@@ -1,0 +1,547 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 ccQKIO RangeSlider__RangeContainer-sc-455qos-0 flvWwI"
+    id="documentation"
+    rows={null}
+  >
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
+      fontSize="0.82em"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing="0px"
+    >
+      Range Slider Label
+    </label>
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 hfFaih"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 vWSKB"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+          id="documentation_min_container"
+          rows={null}
+        >
+          <input
+            autoComplete="off"
+            className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+            cols=""
+            disabled={false}
+            id="documentation_min"
+            list={null}
+            name="documentation_min"
+            onBlur={null}
+            onChange={null}
+            onFocus={null}
+            onKeyPress={null}
+            pattern={null}
+            placeholder="Min"
+            rows=""
+            size={null}
+            title={null}
+            type="text"
+            value={null}
+          />
+        </section>
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 hODMTq"
+      >
+        <input
+          className="Slider__SliderPiece-sc-1hp9era-0 cdvxbj"
+          disabled={false}
+          id={null}
+          onChange={null}
+          type="range"
+        />
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 fCBoFY"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+          id="documentation_max_container"
+          rows={null}
+        >
+          <input
+            autoComplete="off"
+            className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+            cols=""
+            disabled={false}
+            id="documentation_max"
+            list={null}
+            name="documentation_max"
+            onBlur={null}
+            onChange={null}
+            onFocus={null}
+            onKeyPress={null}
+            pattern={null}
+            placeholder="Max"
+            rows=""
+            size={null}
+            title={null}
+            type="text"
+            value={null}
+          />
+        </section>
+      </div>
+    </div>
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
+      fontSize="0.65em"
+      fontWeight={400}
+      letterSpacing="0.6px"
+    >
+      Hang in there, buddy, I'm here to help!
+    </p>
+  </section>
+</div>
+`;
+
+exports[` 2`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 ccQKIO RangeSlider__RangeContainer-sc-455qos-0 flvWwI"
+    id="knobs"
+    rows={null}
+  >
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
+      fontSize="0.82em"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing="0px"
+    >
+      Range Slider Label
+    </label>
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 hfFaih"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 vWSKB"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+          id="knobs_min_container"
+          rows={null}
+        >
+          <input
+            autoComplete="off"
+            className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+            cols=""
+            disabled={false}
+            id="knobs_min"
+            list={null}
+            name="knobs_min"
+            onBlur={null}
+            onChange={null}
+            onFocus={null}
+            onKeyPress={null}
+            pattern={null}
+            placeholder="Min"
+            rows=""
+            size={null}
+            title={null}
+            type="text"
+            value={null}
+          />
+        </section>
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 hODMTq"
+      >
+        <input
+          className="Slider__SliderPiece-sc-1hp9era-0 cdvxbj"
+          disabled={false}
+          id={null}
+          onChange={null}
+          type="range"
+        />
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 fCBoFY"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+          id="knobs_max_container"
+          rows={null}
+        >
+          <input
+            autoComplete="off"
+            className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+            cols=""
+            disabled={false}
+            id="knobs_max"
+            list={null}
+            name="knobs_max"
+            onBlur={null}
+            onChange={null}
+            onFocus={null}
+            onKeyPress={null}
+            pattern={null}
+            placeholder="Max"
+            rows=""
+            size={null}
+            title={null}
+            type="text"
+            value={null}
+          />
+        </section>
+      </div>
+    </div>
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
+      fontSize="0.65em"
+      fontWeight={400}
+      letterSpacing="0.6px"
+    >
+      Help text goes here...
+    </p>
+  </section>
+</div>
+`;
+
+exports[` 3`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <form
+    action={null}
+    className="Form__FormWrapper-v2wrel-0 geeIqY"
+    method={null}
+    onSubmit={null}
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 eVqRaz Form__FormInputs-v2wrel-3 bZGKXs"
+      id={null}
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ccQKIO RangeSlider__RangeContainer-sc-455qos-0 flvWwI"
+        id="standard"
+        rows={null}
+      >
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
+          fontSize="0.82em"
+          fontWeight={400}
+          htmlFor={null}
+          letterSpacing="0px"
+        >
+          Standard Slider
+        </label>
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 hfFaih"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 vWSKB"
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+              id="standard_min_container"
+              rows={null}
+            >
+              <input
+                autoComplete="off"
+                className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+                cols=""
+                disabled={false}
+                id="standard_min"
+                list={null}
+                name="standard_min"
+                onBlur={null}
+                onChange={null}
+                onFocus={null}
+                onKeyPress={null}
+                pattern={null}
+                placeholder="Min"
+                rows=""
+                size={null}
+                title={null}
+                type="text"
+                value={null}
+              />
+            </section>
+          </div>
+          <div
+            className="Bar__Slot-sc-1c4axau-0 hODMTq"
+          >
+            <input
+              className="Slider__SliderPiece-sc-1hp9era-0 cdvxbj"
+              disabled={false}
+              id={null}
+              onChange={null}
+              type="range"
+            />
+          </div>
+          <div
+            className="Bar__Slot-sc-1c4axau-0 fCBoFY"
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+              id="standard_max_container"
+              rows={null}
+            >
+              <input
+                autoComplete="off"
+                className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+                cols=""
+                disabled={false}
+                id="standard_max"
+                list={null}
+                name="standard_max"
+                onBlur={null}
+                onChange={null}
+                onFocus={null}
+                onKeyPress={null}
+                pattern={null}
+                placeholder="Max"
+                rows=""
+                size={null}
+                title={null}
+                type="text"
+                value={null}
+              />
+            </section>
+          </div>
+        </div>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
+          fontSize="0.65em"
+          fontWeight={400}
+          letterSpacing="0.6px"
+        >
+          Hang in there, buddy, I'm here to help!
+        </p>
+      </section>
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ccQKIO RangeSlider__RangeContainer-sc-455qos-0 flvWwI"
+        id="required"
+        rows={null}
+      >
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 hUZhUB"
+          fontSize="0.82em"
+          fontWeight={400}
+          htmlFor={null}
+          letterSpacing="0px"
+        >
+          Required Slider
+        </label>
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 hfFaih"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 vWSKB"
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+              id="required_min_container"
+              rows={null}
+            >
+              <input
+                autoComplete="off"
+                className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+                cols=""
+                disabled={false}
+                id="required_min"
+                list={null}
+                name="required_min"
+                onBlur={null}
+                onChange={null}
+                onFocus={null}
+                onKeyPress={null}
+                pattern={null}
+                placeholder="Min"
+                rows=""
+                size={null}
+                title={null}
+                type="text"
+                value={null}
+              />
+            </section>
+          </div>
+          <div
+            className="Bar__Slot-sc-1c4axau-0 hODMTq"
+          >
+            <input
+              className="Slider__SliderPiece-sc-1hp9era-0 cdvxbj"
+              disabled={false}
+              id={null}
+              onChange={null}
+              type="range"
+            />
+          </div>
+          <div
+            className="Bar__Slot-sc-1c4axau-0 fCBoFY"
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+              id="required_max_container"
+              rows={null}
+            >
+              <input
+                autoComplete="off"
+                className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+                cols=""
+                disabled={false}
+                id="required_max"
+                list={null}
+                name="required_max"
+                onBlur={null}
+                onChange={null}
+                onFocus={null}
+                onKeyPress={null}
+                pattern={null}
+                placeholder="Max"
+                rows=""
+                size={null}
+                title={null}
+                type="text"
+                value={null}
+              />
+            </section>
+          </div>
+        </div>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
+          fontSize="0.65em"
+          fontWeight={400}
+          letterSpacing="0.6px"
+        >
+          Hang in there, buddy, I'm here to help!
+        </p>
+      </section>
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ccQKIO RangeSlider__RangeContainer-sc-455qos-0 flvWwI"
+        id="disabled"
+        rows={null}
+      >
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
+          fontSize="0.82em"
+          fontWeight={400}
+          htmlFor={null}
+          letterSpacing="0px"
+        >
+          Disabled Slider
+        </label>
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 hfFaih"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 vWSKB"
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 eaRsCT"
+              id="disabled_min_container"
+              rows={null}
+            >
+              <input
+                autoComplete="off"
+                className="TextInput__Input-sc-1fep8p8-1 sNkdI"
+                cols=""
+                disabled={true}
+                id="disabled_min"
+                list={null}
+                name="disabled_min"
+                onBlur={null}
+                onChange={null}
+                onFocus={null}
+                onKeyPress={null}
+                pattern={null}
+                placeholder="Min"
+                rows=""
+                size={null}
+                title={null}
+                type="text"
+                value={null}
+              />
+            </section>
+          </div>
+          <div
+            className="Bar__Slot-sc-1c4axau-0 hODMTq"
+          >
+            <input
+              className="Slider__SliderPiece-sc-1hp9era-0 cdvxbj"
+              disabled={true}
+              id={null}
+              onChange={null}
+              type="range"
+            />
+          </div>
+          <div
+            className="Bar__Slot-sc-1c4axau-0 fCBoFY"
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 eaRsCT"
+              id="disabled_max_container"
+              rows={null}
+            >
+              <input
+                autoComplete="off"
+                className="TextInput__Input-sc-1fep8p8-1 sNkdI"
+                cols=""
+                disabled={true}
+                id="disabled_max"
+                list={null}
+                name="disabled_max"
+                onBlur={null}
+                onChange={null}
+                onFocus={null}
+                onKeyPress={null}
+                pattern={null}
+                placeholder="Max"
+                rows=""
+                size={null}
+                title={null}
+                type="text"
+                value={null}
+              />
+            </section>
+          </div>
+        </div>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
+          fontSize="0.65em"
+          fontWeight={400}
+          letterSpacing="0.6px"
+        >
+          Hang in there, buddy, I'm here to help!
+        </p>
+      </section>
+    </section>
+  </form>
+</div>
+`;

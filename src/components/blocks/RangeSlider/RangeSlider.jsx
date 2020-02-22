@@ -8,6 +8,7 @@ import Grid from "layout/Grid";
 import Text, { Label } from "base/Typography";
 import TextInput from "atoms/TextInput";
 import Slider from "atoms/Slider";
+import { getGuid } from "helpers";
 
 const RangeContainer = styled(Grid)`
   color: ${(props) => {
@@ -34,9 +35,11 @@ function RangeSlider({
   if (error && !isDisabled) {
     inputTextColor = "alert";
   }
+
+  const uId = id || getGuid();
   return (
     <RangeContainer
-      id={id}
+      id={uId}
       disabled={isDisabled}
       inputTextColor={inputTextColor}
       columns="1"
@@ -53,21 +56,17 @@ function RangeSlider({
         rightWidth="6em"
         left={
           <TextInput
+            id={`${uId}_min`}
             type="text"
             placeholder={placeholderMin}
             error={!!error}
             disabled={isDisabled}
           />
         }
-        center={
-          error && !isDisabled ? (
-            <Slider error disabled={isDisabled} />
-          ) : (
-              <Slider disabled={isDisabled} />
-            )
-        }
+        center={<Slider error={error && !isDisabled} disabled={isDisabled} />}
         right={
           <TextInput
+            id={`${uId}_max`}
             type="text"
             placeholder={placeholderMax}
             error={!!error}

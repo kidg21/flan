@@ -112,12 +112,15 @@ function TextInput({
     inputResize = "vertical";
   }
 
+  const uId = id || getGuid();
+
   // construct datalist element for autocompletes if appropriate props passed in
   // the autocompleteListId is used to ensure each textinput only draws from its own datalist element
   let autocompleteDataList = null;
   let autoCompleteDataListId = null;
   if (autocompleteList) {
-    autoCompleteDataListId = getGuid();
+    const itemHash = {};
+    autoCompleteDataListId = `${uId}_dataList`;
     const options = autocompleteList.map((item) => {
       let itemValue = item;
       let itemLabel = item;
@@ -125,11 +128,18 @@ function TextInput({
         itemValue = item.value;
         itemLabel = item.label || item.value;
       }
-      return (
-        <option key={getGuid()} value={itemValue}>
-          {itemLabel}
-        </option>
-      );
+
+      const key = `${itemValue && itemValue.toUpperCase()}_${itemLabel && itemLabel.toUpperCase()}`;
+      if (!itemHash[key]) {
+        itemHash[key] = true;
+        return (
+          <option key={key} value={itemValue}>
+            {itemLabel}
+          </option>
+        );
+      }
+
+      return null;
     });
     autocompleteDataList = (
       <datalist id={autoCompleteDataListId}>{options}</datalist>
@@ -163,7 +173,7 @@ function TextInput({
       className={className}
       columns="1"
       gap="tiny"
-      id={id}
+      id={`${uId}_container`}
       inputTextColor={inputTextColor}
     >
       {label ? (
@@ -174,7 +184,7 @@ function TextInput({
         autoComplete={autocompleteList && autocompleteList.length > 0 ? "on" : "off"}
         cols={columns} // textarea attribute
         disabled={isDisabled} // input attribute
-        id={id} // input attribute
+        id={uId} // input attribute
         inputBorderColor={inputBorderColor}
         inputBorderColorHover={inputBorderColorHover}
         inputCaretColor={inputCaretColor}
@@ -182,7 +192,7 @@ function TextInput({
         inputResize={inputResize}
         inputSelectColor={inputSelectColor}
         list={autoCompleteDataListId}
-        name={id} // input attribute
+        name={uId} // input attribute
         onBlur={onBlur}
         onChange={onChange}
         onFocus={onFocus}

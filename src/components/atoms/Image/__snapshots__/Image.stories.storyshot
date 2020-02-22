@@ -1,0 +1,189 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <img
+    alt="logo"
+    className="Image__ImageWrapper-sc-18abvff-0 ehzHeN"
+    onClick={null}
+    src={Object {}}
+    title="logo"
+    width={null}
+  />
+</div>
+`;
+
+exports[` 2`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <img
+    alt="This is alt text for this image"
+    className="Image__ImageWrapper-sc-18abvff-0 cvnRlN"
+    onClick={null}
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+    title="This is alt text for this image"
+    width={100}
+  />
+</div>
+`;
+
+exports[` 3`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 jsMwhF"
+    id={null}
+    rows={null}
+  >
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      Type
+    </h6>
+    <img
+      alt="This is alt text for this image"
+      className="Image__ImageWrapper-sc-18abvff-0 ehzHeN"
+      onClick={null}
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+      title="This is alt text for this image"
+      width={null}
+    />
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      Default - ( Fills parent container )
+    </h6>
+    <img
+      alt="This is alt text for this image"
+      className="Image__ImageWrapper-sc-18abvff-0 jsBBwS"
+      onClick={null}
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+      title="This is alt text for this image"
+      width={125}
+    />
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      Specified Width ( width='125' )
+    </h6>
+    <img
+      alt="This is alt text for this image"
+      className="Image__ImageWrapper-sc-18abvff-0 llLyW"
+      onClick={null}
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+      title="This is alt text for this image"
+      width={125}
+    />
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      Circle ( width='125' )
+    </h6>
+  </section>
+</div>
+`;
+
+exports[` 4`] = `
+<img
+  alt="This is alt text for this image"
+  className="Image__ImageWrapper-sc-18abvff-0 ehzHeN"
+  onClick={null}
+  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+  title="This is alt text for this image"
+  width={null}
+/>
+`;
+
+exports[` 5`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 ihnaIG"
+  id={null}
+  rows={null}
+>
+  <img
+    alt="This is alt text for this image"
+    className="Image__ImageWrapper-sc-18abvff-0 jsBBwS"
+    onClick={null}
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+    title="This is alt text for this image"
+    width="125"
+  />
+  <img
+    alt="This is alt text for this image"
+    className="Image__ImageWrapper-sc-18abvff-0 dTwoQy"
+    onClick={null}
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+    title="This is alt text for this image"
+    width="75"
+  />
+  <img
+    alt="This is alt text for this image"
+    className="Image__ImageWrapper-sc-18abvff-0 bbVfBB"
+    onClick={null}
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+    title="This is alt text for this image"
+    width="50"
+  />
+  <img
+    alt="This is alt text for this image"
+    className="Image__ImageWrapper-sc-18abvff-0 dmoEQD"
+    onClick={null}
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+    title="This is alt text for this image"
+    width="25"
+  />
+</section>
+`;
+
+exports[` 6`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 ihnaIG"
+  id={null}
+  rows={null}
+>
+  <img
+    alt="This is alt text for this image"
+    className="Image__ImageWrapper-sc-18abvff-0 ehzHeN"
+    onClick={null}
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+    title="This is alt text for this image"
+    width={null}
+  />
+  <img
+    alt="This is alt text for this image"
+    className="Image__ImageWrapper-sc-18abvff-0 glDrFx"
+    onClick={null}
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+    title="This is alt text for this image"
+    width={null}
+  />
+</section>
+`;
