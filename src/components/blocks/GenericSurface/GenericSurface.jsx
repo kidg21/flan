@@ -51,6 +51,7 @@ const GenericSurface = (props) => {
   } else if (typeof props.template === "string") {
     // Custom template string we need to execute to render html
     const funcBody = `return (function (props, React, lbReactCore) { return (${props.template})})`;
+    // eslint-disable-next-line no-new-func
     output = Function(`${funcBody}`)()({ content: parseContent(props.content) }, React, lbReactCore);
   } else {
     console.log("Invalid template format: Please use a React component or a JS string");
@@ -59,7 +60,7 @@ const GenericSurface = (props) => {
 };
 
 GenericSurface.propTypes = {
-  template: PropTypes.oneOf([PropTypes.node, PropTypes.string]).isRequired,
+  template: PropTypes.oneOf([PropTypes.function, PropTypes.string]).isRequired,
   content: PropTypes.shape({
     title: PropTypes.string.isRequired,
     sections: PropTypes.arrayOf(PropTypes.shape({

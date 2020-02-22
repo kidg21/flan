@@ -1,6 +1,41 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+/*
+content passed in via props will look like this:
+{
+  title: "The title of the surface",
+  sections: [
+    {
+      title: "The title of the first section",
+      displayFields: [
+        {
+          label: "The label of a key-val pair in section 1",
+          value: "The value of a key-val pair in section 1",
+          onClick: () => { // a func to be executed when the user clicks on this field},
+        }
+        {
+          // another field
+        }
+      ],
+      commands: [
+        {
+          label: "A command to be included in the 1st section",
+          icon: "an icon to use -- not sure on format yet...",
+          onClick: () => { // a func to be executed when the user clicks on this command },
+        },
+        {
+          // another command
+        }
+      ]
+    },
+    {
+      // another section
+    }
+  ]
+}
+*/
+
 const SummaryPanelTemplate = (props) => {
   return (
     <div>
