@@ -145,11 +145,11 @@ storiesOf("Layout |Templates/Template A/", module)
     "Configured Icons",
     () => {
       return React.createElement(() => {
-        const [rightOpen, setRightOpen] = useState(false);
-        const seeRightRegion = () => {  setRightOpen(!rightOpen);  };
+        const [rightOpen, setRightOpen] = useState(true);
+        const seeRightRegion = () => { setRightOpen(!rightOpen);};
 
         const [leftOpen, setLeftOpen] = useState(true);
-        const seeLeftRegion = () => { setLeftOpen(!leftOpen);  };
+        const seeLeftRegion = () => { setLeftOpen(!leftOpen); rightOpen(false) };
 
         const navBar = {
           content: "",
@@ -187,41 +187,52 @@ storiesOf("Layout |Templates/Template A/", module)
     "With Bottom",
     () => {
       return React.createElement(() => {
-        const [rightOpen, setRightOpen] = useState(true);
-        const seeRightRegion = () => { setRightOpen(!rightOpen); };
 
-        const [leftOpen, setLeftOpen] = useState(true);
-        const seeLeftRegion = () => { setLeftOpen(!leftOpen); };
+        const [rightOpen, setRightOpen] = useState(true);
+        const seeRightRegion = () => { setRightOpen(!rightOpen);};
 
         const [bottomOpen, setBottomOpen] = useState(false);
         const seeBottomRegion = () => { setBottomOpen(!bottomOpen); };
 
-        const navBar = {
+        const [leftOpen, setLeftOpen] = useState(true);
+        const seeLeftRegion = () => { setLeftOpen(!leftOpen); rightOpen(false) };
+
+        // const navBar = {
+        //   content: (
+        //     <Panel
+        //       id="Panel"
+        //     >
+        //       <List interactive>
+        //         <ListItem title="Layers" />
+        //         <ListItem title="Results" />
+        //         <ListItem title="Form" />
+        //         <ListItem title="Research" />
+        //       </List>
+        //     </Panel>
+        //   )
+        // };
+
+        const leftBar = {
           content: (
-            <Panel
-              id="Panel"
-            >
-              <List interactive>
-                <ListItem title="Layers" />
-                <ListItem title="Results" />
-                <ListItem title="Form" />
-                <ListItem title="Research" />
-              </List>
-            </Panel>
+            <DataTable
+            headers={headers.slice(1)}
+            rows={data}
+            listId="foo"
+            columnWidth={180}
+          />
           ),
           visible: leftOpen,
           toggle: seeLeftRegion,
         };
 
-        const appBar = {
+        const rightBar = {
           content: (
-            <Panel
-              id="Panel"
-            >
-              <List interactive>
-                <ListItem title="No" />
-              </List>
-            </Panel>
+            <DataTable
+            headers={headers.slice(1)}
+            rows={data}
+            listId="foo"
+            columnWidth={180}
+          />
           ),
           visible: rightOpen,
           toggle: seeRightRegion,
@@ -241,23 +252,25 @@ storiesOf("Layout |Templates/Template A/", module)
         };
 
               return (
-        <Template
-          header={{
-            content: "",
-            width: "15%",
-            right:(
-              <IconBlock>
-              <Icon icon="list"  onClick={seeBottomRegion}/>
-              <Icon icon="chat" onClick={seeRightRegion}/>
-              <Icon icon="calendar" onClick={seeRightRegion}/>
-              </IconBlock>
-            ),
-          }}
-          left={navBar}
-          bottom={bottomBar}
-          main={<React.Fragment> <Mapbox /></React.Fragment>}
-          right={appBar}
-          />
+
+
+                <Template
+                header={{
+                  content: "",
+                  width: "15%",
+                  right:(
+                    <IconBlock>
+                    <Icon icon="list"  onClick={seeBottomRegion}/>
+                    <Icon icon="chat" onClick={seeRightRegion}/>
+                    <Icon icon="calendar" onClick/>
+                    </IconBlock>
+                  ),
+                }}
+                main=""
+                right={rightBar}
+                left={leftBar}
+                bottom={bottomBar}
+              />
       )}
       )}
   );

@@ -90,8 +90,11 @@ background: green;
 `;
 
 const RegionTop = styled(Flex)`
-  flex: auto;
+  flex: ${(props) => {
+    return props.flexTop ;
+  }};
   align-self: stretch;
+  height: 100%;
   &:empty {
     &:before {
       ${PlaceholderText};
@@ -177,6 +180,7 @@ function Template({
 
 
 const bottomHeight = "50vh";
+let flexTop;
 let leftWidth = "100vw";
 let rightWidth = "100vw";
 let zIndex = null;  // shared by all
@@ -200,6 +204,15 @@ if (screenMedium.matches || screenLarge.matches) {
   // let seeBottomRegion = null;
   let bottomOpen = bottom ? bottom.visible : false;
   // let setBottomOpen = bottom ? bottom.toggle : false;
+
+  if (bottomOpen) {
+    flexTop = "auto";
+  } else {
+    flexTop = "none";
+  }
+  
+
+
   if (left) {
     if (!setLeftOpen) [leftOpen, setLeftOpen] = useState(!left.visible);
     if (screenLarge.matches || screenMedium.matches) {
@@ -273,7 +286,7 @@ if (screenMedium.matches || screenLarge.matches) {
           </RegionLeft>
         ) : null}
         <RegionMain>
-          <RegionTop>
+          <RegionTop flexTop={flexTop}>
           {main}
           </RegionTop>
             {bottom ? (
