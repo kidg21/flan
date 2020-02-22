@@ -1,3 +1,4 @@
+/* eslint-disable complexity */
 /* eslint-disable linebreak-style */
 import React from "react";
 import PropTypes from "prop-types";
@@ -5,13 +6,11 @@ import styled from "styled-components";
 import Icon from "atoms/Icon";
 import Text from "base/Typography";
 
-
 const TagContainer = styled.div`
   justify-content: center;
   display: flex;
   width: fit-content;
   align-items: center;
-  weight: 600;
   background-color: ${(props) => {
     return props.theme.palette[props.badgeColor];
   }};
@@ -32,7 +31,7 @@ const TagContainer = styled.div`
 `;
 
 function Tag({
-  id, label, icon, style, type, brand,
+  brand, icon, id, label, type,
 }) {
   let badgeColor;
   let badgeTextColor;
@@ -86,19 +85,18 @@ function Tag({
       badgeColor = "brand3";
     } if (brand === "brand4") {
       badgeColor = "brand4";
-    } else { null; }
+    }
   }
 
 
   return (
     <TagContainer
+      badgeColor={badgeColor}
+      badgePadding={badgePadding}
+      badgeTextColor={badgeTextColor}
+      icon={icon}
       id={id}
       label={label}
-      icon={icon}
-      badgeColor={badgeColor}
-      badgeTextColor={badgeTextColor}
-      badgePadding={badgePadding}
-      style={style}
     >
       {iconType || labelType}
     </TagContainer>
@@ -106,21 +104,19 @@ function Tag({
 }
 
 Tag.propTypes = {
+  brand: PropTypes.string,
+  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   id: PropTypes.string,
   label: PropTypes.string,
   type: PropTypes.string,
-  brand: PropTypes.string,
-  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
-  style: PropTypes.string,
 };
 
 Tag.defaultProps = {
-  label: null,
-  id: null,
   brand: null,
-  type: null,
   icon: null,
-  style: null,
+  id: null,
+  label: null,
+  type: null,
 };
 
 export default Tag;
