@@ -4,6 +4,21 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import SearchBar from "./Search.jsx";
+import {ListItem} from "blocks/List";
+
+const Results = (
+  <React.Fragment>
+  <ListItem title="Address" description="23928 Malibu Dr."/>
+  <ListItem title="Address" description="23928 Malibu Dr."/>
+  <ListItem title="Address" description="23928 Malibu Dr." isSelected/>
+  <ListItem title="Address" description="23928 Malibu Dr."/>
+  <ListItem title="Address" description="23928 Malibu Dr."/>
+  <ListItem title="Address" description="23928 Malibu Dr."/>
+  <ListItem title="Address" description="23928 Malibu Dr."/>
+  <ListItem title="Address" description="23928 Malibu Dr."/>
+  </React.Fragment>
+);
+
 
 
 
@@ -48,17 +63,17 @@ storiesOf("Blocks|Search", module)
     })
     .add("Results", () => {
         return (
-            <SearchBar showResults/>
+            <SearchBar results={Results}/>
         );
     })
     .add("Error Message", () => {
       return (
-          <SearchBar showResults message="We search for that but found this"/>
+          <SearchBar  message="We reommend the following based on your search key words." />
       );
   })
   .add("More results", () => {
     return (
-        <SearchBar showResults moreResults/>
+        <SearchBar moreResults/>
     );
 });
 

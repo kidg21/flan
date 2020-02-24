@@ -80,7 +80,7 @@ const Advanced = (
 
 
 
-function Search({ showAdvanced, showResults, message, moreResults
+function Search({ showAdvanced, showResults, message, moreResults, results,
 }) {
   const screenMedium = window.matchMedia(`(min-width: ${viewport.medium})`);
   const screenLarge = window.matchMedia(`(min-width: ${viewport.large})`);
@@ -107,7 +107,7 @@ function Search({ showAdvanced, showResults, message, moreResults
   const more = (
     <Bar 
     padding="2x"
-    center={<Link text="View More Results"/>}
+    center={<Link size="2x" text="View More Results"/>}
     />
   );
 
@@ -115,14 +115,7 @@ function Search({ showAdvanced, showResults, message, moreResults
     <Container maxHeight="25rem" >
       { message ? <React.Fragment>{messages}</React.Fragment> : null}
         <List interactive>
-            <ListItem title="Address" description="23928 Malibu Dr."/>
-            <ListItem title="Address" description="23928 Malibu Dr."/>
-            <ListItem title="Address" description="23928 Malibu Dr." isSelected/>
-            <ListItem title="Address" description="23928 Malibu Dr."/>
-            <ListItem title="Address" description="23928 Malibu Dr."/>
-            <ListItem title="Address" description="23928 Malibu Dr."/>
-            <ListItem title="Address" description="23928 Malibu Dr."/>
-            <ListItem title="Address" description="23928 Malibu Dr."/>
+          {results}
         </List>
         { moreResults ? <React.Fragment>{more}</React.Fragment> : null}
     </Container>
