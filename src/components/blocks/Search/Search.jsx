@@ -7,6 +7,7 @@ import SelectMenu from "atoms/SelectMenu";
 import {Link} from "base/Typography";
 import { viewport } from "Variables";
 import Button from "atoms/Button";
+import Text from "base/Typography";
 import Form from "layout/Form";
 import Grid from "layout/Grid";
 import Menu from "blocks/Menu";
@@ -18,11 +19,13 @@ import InputBlock from "blocks/InputBlock";
 import Card from "elements/Card";
 import List, { ListItem } from "blocks/List";
 
-const ResultsContainer = styled(Container)`
-position: relative;
-z-index: 3;
-margin-top: -1px;
-display: block;
+const SearchWrapper = styled.section`
+padding: 1rem;
+`;
+
+
+const AdvancedCard = styled(Card)`
+margin-top: 0.5rem;
 `;
 
 const inputsAPN = [
@@ -52,10 +55,7 @@ const inputsAPN = [
   ];
 
 const Advanced = (
-    <Bar
-    padding="2x"
-    left={
-    <Card 
+    <AdvancedCard 
     description="Advanced Search">
         <Form>
         <InputBlock
@@ -67,45 +67,21 @@ const Advanced = (
       textInputs={inputsOwner}
     />
       <Grid columns="6fr .5fr .5fr">
-          <Link size="2x" text="idk"/>
+          <Link size="2x" text=""/>
       <Button label="Reset" plain/>
       <Button label="Search" solid />
       </Grid>
       </Form>
-    </Card>}
-    />
+    </AdvancedCard>
 );
 
 
-const data = [
-  {
-    id: "a",
-    onClick: () => {
-      console.log("clicked Advanced");
-    },
-    label: "Advanced",
-    icon: "Advanced",
-  },
-];
 
 
-const Results = (
-    <ResultsContainer>
-        <List interactive>
-            <ListItem title="Address" description="23928 Malibu Dr."/>
-            <ListItem title="Address" description="23928 Malibu Dr."/>
-            <ListItem title="Address" description="23928 Malibu Dr." isSelected/>
-            <ListItem title="Address" description="23928 Malibu Dr."/>
-        </List>
-    </ResultsContainer>
-);
 
 
-function Search({ showAdvanced, showResults
-
+function Search({ showAdvanced, showResults, message, moreResults
 }) {
-
-
   const screenMedium = window.matchMedia(`(min-width: ${viewport.medium})`);
   const screenLarge = window.matchMedia(`(min-width: ${viewport.large})`);
   let rightContent;
@@ -121,28 +97,59 @@ function Search({ showAdvanced, showResults
     leftWidth = "88%";
   }
 
+  const messages = (
+    <Bar 
+    padding="2x"
+    center={<Text size="2x" text={message}/>}
+    />
+  );
+
+  const more = (
+    <Bar 
+    padding="2x"
+    center={<Link text="View More Results"/>}
+    />
+  );
+
+  const Results = (
+    <Container maxHeight="25rem" >
+      { message ? <React.Fragment>{messages}</React.Fragment> : null}
+        <List interactive>
+            <ListItem title="Address" description="23928 Malibu Dr."/>
+            <ListItem title="Address" description="23928 Malibu Dr."/>
+            <ListItem title="Address" description="23928 Malibu Dr." isSelected/>
+            <ListItem title="Address" description="23928 Malibu Dr."/>
+            <ListItem title="Address" description="23928 Malibu Dr."/>
+            <ListItem title="Address" description="23928 Malibu Dr."/>
+            <ListItem title="Address" description="23928 Malibu Dr."/>
+            <ListItem title="Address" description="23928 Malibu Dr."/>
+        </List>
+        { moreResults ? <React.Fragment>{more}</React.Fragment> : null}
+    </Container>
+);
+
+
   return (
-      <React.Fragment>
+      <SearchWrapper>
     <Bar
+    padding="none"
     leftWidth={leftWidth}
     rightWidth={rightWidth}
     contentAlign="top"
     centerAlign="left"
-    left ={<div style={{display: "block"}}><TextInput
-    style={{margin: "0 auto"}}
+    left ={<TextInput
         id="111"
         placeholder="Search Location"
         type="search"
       >
         { showResults ? <React.Fragment>{Results}</React.Fragment> : null}
         </TextInput>
-        </div>
     }
     center={<Button icon="search" solid/>}
     right={rightContent}
       />
       { showAdvanced ? <React.Fragment>{Advanced}</React.Fragment> : null}
-      </React.Fragment>
+      </SearchWrapper>
   );
 }
 

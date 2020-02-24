@@ -50,5 +50,15 @@ storiesOf("Blocks|Search", module)
         return (
             <SearchBar showResults/>
         );
-    });
+    })
+    .add("Error Message", () => {
+      return (
+          <SearchBar showResults message="We search for that but found this"/>
+      );
+  })
+  .add("More results", () => {
+    return (
+        <SearchBar showResults moreResults/>
+    );
+});
 
