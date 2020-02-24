@@ -8,6 +8,7 @@ import {Link} from "base/Typography";
 import { viewport } from "Variables";
 import Button from "atoms/Button";
 import Text from "base/Typography";
+import Divider from "atoms/Divider";
 import Form from "layout/Form";
 import Grid from "layout/Grid";
 import Menu from "blocks/Menu";
@@ -80,7 +81,7 @@ const Advanced = (
 
 
 
-function Search({ showAdvanced, showResults, message, moreResults, results,
+function Search({ showAdvanced, message, moreResults, results,
 }) {
   const screenMedium = window.matchMedia(`(min-width: ${viewport.medium})`);
   const screenLarge = window.matchMedia(`(min-width: ${viewport.large})`);
@@ -106,7 +107,7 @@ function Search({ showAdvanced, showResults, message, moreResults, results,
 
   const more = (
     <Bar 
-    padding="2x"
+    padding="top"
     center={<Link size="2x" text="View More Results"/>}
     />
   );
@@ -135,7 +136,7 @@ function Search({ showAdvanced, showResults, message, moreResults, results,
         placeholder="Search Location"
         type="search"
       >
-        { showResults ? <React.Fragment>{Results}</React.Fragment> : null}
+        { results ? <React.Fragment>{Results}</React.Fragment> : null}
         </TextInput>
     }
     center={<Button icon="search" solid/>}

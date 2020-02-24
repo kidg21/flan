@@ -68,12 +68,12 @@ storiesOf("Blocks|Search", module)
     })
     .add("Error Message", () => {
       return (
-          <SearchBar  message="We reommend the following based on your search key words." />
+          <SearchBar results={Results} message="We reommend the following based on your key word search" />
       );
   })
   .add("More results", () => {
     return (
-        <SearchBar moreResults/>
+        <SearchBar results={Results} moreResults/>
     );
 });
 
