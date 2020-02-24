@@ -1,22 +1,22 @@
 import React from "react";
 import { Padding } from "helpers/Display";
-import GenericSurface from "./GenericSurface.jsx";
-import { mockContent, mockJSXString } from "./surface.mocks";
+import Surface from "./Surface.jsx";
+import { mockContent, mockStringTemplate } from "./Surface.mocks";
 import SummaryPanelTemplate from "./SurfaceTemplates/SummaryPanelTemplate.jsx";
 import AnotherTemplate from "./SurfaceTemplates/AnotherTemplate.jsx";
 
-storiesOf("Blocks|Generic Surface", module)
+storiesOf("Blocks|Surface", module)
   .addDecorator(Padding)
   .add("Summary Panel", () => {
     return (
-      <GenericSurface template={SummaryPanelTemplate} content={mockContent} />
+      <Surface template={SummaryPanelTemplate} content={mockContent} />
     );
   })
   .add("Another Template", () => {
     return (
-      <GenericSurface template={AnotherTemplate} content={mockContent} />
+      <Surface template={AnotherTemplate} content={mockContent} />
     );
   })
   .add("Template from string", () => {
-    return (<GenericSurface template={mockJSXString} content={mockContent} />);
+    return (<Surface template={mockStringTemplate} content={mockContent} />);
   });

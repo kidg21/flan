@@ -36,17 +36,23 @@ content passed in via props will look like this:
 }
 */
 
+// The following component is just to show how to iterate through all the data
 const SummaryPanelTemplate = (props) => {
   return (
     <div>
+      {/* surface title */}
       <h2>{props.content.title}</h2>
       <br />
+      {/* map through each section */}
       {props.content.sections.map((section) => {
         return (
           <div>
             <h4>{section.title}</h4>
+            {/* map through eac section's display field (key-value pairs) */}
             {section.displayFields.map((displayField) => {
               let displayFieldValue = displayField.value;
+              // some displayFields have an onClick, those need to be attached to the value
+              // so the value becomes like a link/command instead of just plain text
               if (displayField.onClick) {
                 displayFieldValue = (
                   <button onClick={displayField.onClick}>
@@ -57,6 +63,7 @@ const SummaryPanelTemplate = (props) => {
                 <div>{displayField.label} : {displayFieldValue}</div>
               );
             })}
+            {/* finally, map through the section's standalone commands */}
             Commands:
             {section.commands.map((command) => {
               return (<button onClick={command.onClick}>{command.label}</button>);

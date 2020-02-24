@@ -413,7 +413,7 @@ export const mockContent = {
   ],
 };
 
-export const mockJSXString = `React.createElement("div", null, React.createElement("h2", null, "This is being rendered from a string and using our LB-React-Core components!"), props.content.sections.map(function (section) {
+export const mockStringTemplate = `React.createElement("div", null, React.createElement("h2", null, "This is being rendered from a string and using our LB-React-Core components!"), props.content.sections.map(function (section) {
   return React.createElement(lbReactCore.List, null, section.displayFields.map(function (displayField) {
     return React.createElement(lbReactCore.ListItem, {
       title: displayField.label,

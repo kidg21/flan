@@ -43,7 +43,7 @@ const parseContent = (rawContent) => {
   };
 };
 
-const GenericSurface = (props) => {
+const Surface = (props) => {
   let output = null;
   if (typeof props.template === "function") {
     // Built-in template
@@ -59,7 +59,7 @@ const GenericSurface = (props) => {
   return output;
 };
 
-GenericSurface.propTypes = {
+Surface.propTypes = {
   template: PropTypes.oneOf([PropTypes.function, PropTypes.string]).isRequired,
   content: PropTypes.shape({
     title: PropTypes.string.isRequired,
@@ -80,4 +80,4 @@ GenericSurface.propTypes = {
   }).isRequired,
 };
 
-export default GenericSurface;
+export default Surface;
