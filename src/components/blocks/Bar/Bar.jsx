@@ -85,7 +85,6 @@ function getPadding(left, right, center) {
 const paddingHash = {
   "none": "0",
   "2x": "1em 1.25em",
-  "top": "1.5em 1em 0.5em",
   "3x": "1.5em 1.5em",
 };
 
@@ -96,25 +95,24 @@ const alignHash = {
 };
 
 function Bar({
-  id,
-  contentAlign,
-  left,
-  leftWidth,
   center,
   centerAlign,
+  className,
+  contentAlign,
+  disabled,
+  id,
+  left,
+  leftWidth,
+  onClick,
   padding,
   right,
   rightWidth,
-  onClick,
-  className,
-  disabled,
 }) {
   const slotPadding = getPadding(left, right, center);
   const barPadding = padding ? paddingHash[padding.toLowerCase()] : null;
   const alignContent = alignHash[contentAlign && contentAlign.toLowerCase()] || "flex-start";
 
   let alignItems;
-  // let topPadding;
   let textAlign;
   switch (centerAlign && centerAlign.toLowerCase()) {
     case "left":
@@ -134,20 +132,19 @@ function Bar({
 
   const barLayout = (
     <BarLayout
+      alignContent={alignContent}
+      barPadding={barPadding}
+      className={className}
       id={id}
       justifyContent={slotPadding.justify}
-      barPadding={barPadding}
-      alignContent={alignContent}
       onClick={onClick}
-      // topPadding={topPadding}
-      className={className}
     >
       {left ? (
         <Slot
           setFlex="1 0 25%"
-          widthMin={leftWidth}
-          widthMax={leftWidth}
           setPadding={slotPadding.left}
+          widthMax={leftWidth}
+          widthMin={leftWidth}
         >
           {left}
         </Slot>
@@ -155,20 +152,20 @@ function Bar({
       {center ? (
         <Slot
           alignItems={alignItems}
-          textAlign={textAlign}
           setPadding={slotPadding.center}
+          textAlign={textAlign}
         >
           {center}
         </Slot>
       ) : null}
       {right ? (
         <Slot
-          setFlex="1 0 25%"
-          widthMin={rightWidth}
-          widthMax={rightWidth}
           alignItems="flex-end"
-          textAlign="right"
+          setFlex="1 0 25%"
           setPadding={slotPadding.right}
+          textAlign="right"
+          widthMax={rightWidth}
+          widthMin={rightWidth}
         >
           {right}
         </Slot>
@@ -181,54 +178,54 @@ function Bar({
       {barLayout}
     </DisabledContext.Provider>
   ) : (
-    barLayout
-  );
+      barLayout
+    );
 }
 
 Bar.propTypes = {
-  id: PropTypes.string,
-  /** Sets the vertical alignment of all content
-   * Default: 'top'
-   */
-  contentAlign: PropTypes.oneOf(["center", "bottom", "top"]),
-  /** Used to define the content in the left 'slot' */
-  left: PropTypes.node,
-  /** Used to override the default flex ratio of the left 'slot' by increasing the setting a 'min-width' and 'max-width'.
-   * Value should be in percentage (%)
-   */
-  leftWidth: PropTypes.string,
   /** Used to define the content in the center 'slot' */
   center: PropTypes.node,
   /** Sets the horizontal alignment of 'center' content
    * Default: 'center'
    */
   centerAlign: PropTypes.oneOf(["left", "right", "center"]),
+  className: PropTypes.string,
+  /** Sets the vertical alignment of all content
+   * Default: 'top'
+   */
+  contentAlign: PropTypes.oneOf(["center", "bottom", "top"]),
+  disabled: PropTypes.bool,
+  id: PropTypes.string,
+  /** Used to define the content in the left 'slot' */
+  left: PropTypes.node,
+  /** Used to override the default flex ratio of the left 'slot' by increasing the setting of 'min-width' and 'max-width'.
+   * Value should be in percentage (%)
+   */
+  leftWidth: PropTypes.string,
+  onClick: PropTypes.func,
   /** Sets the padding of the Bar component */
-  padding: PropTypes.oneOf(["none", "1x", "2x", "3x", "top"]),
+  padding: PropTypes.oneOf(["none", "2x", "3x"]),
   /** Used to define the content in the right 'slot' */
   right: PropTypes.node,
-  /** Used to override the default flex ratio of the right 'slot' by increasing the setting a 'min-width' and 'max-width'.
+  /** Used to override the default flex ratio of the right 'slot' by increasing the setting of 'min-width' and 'max-width'.
    * Value should be in percentage (%)
    */
   rightWidth: PropTypes.string,
-  onClick: PropTypes.func,
-  className: PropTypes.string,
-  disabled: PropTypes.bool,
 };
 
 Bar.defaultProps = {
-  id: null,
-  contentAlign: null,
-  left: null,
-  leftWidth: null,
   center: null,
   centerAlign: null,
+  className: null,
+  contentAlign: null,
+  disabled: null,
+  id: null,
+  left: null,
+  leftWidth: null,
+  onClick: null,
   padding: null,
   right: null,
   rightWidth: null,
-  onClick: null,
-  className: null,
-  disabled: null,
 };
 
 export default Bar;
