@@ -7,42 +7,22 @@ import Button from "atoms/Button";
 
 const SegmentButton = styled(Button)`
   margin: ${(props) => { return props.margin || "0 -1px -1px 0"; }};
-  border-radius: ${(props) => { return props.borderRadius || "0px"; }};
 `;
 
 const ControlWrapper = styled.section`
-  position: ${(props) => {
-    return props.setPosition || "";
-  }};
-  display: ${(props) => {
-    return props.setOrientation || "grid";
-  }};
+  display: grid;
   grid-gap: ${(props) => {
     return props.gap || "";
   }};
   grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-  flex-direction: column;
-  bottom: ${(props) => {
-    return props.alignBottom || "";
-  }};
-  right: ${(props) => {
-    return props.alignRight ? "0" : "";
-  }};
-  width: ${(props) => {
-    return props.setWidth || "100%";
-  }};
-  height: ${(props) => {
-    return props.setHeight || "100%";
-  }};
+  width: 100%;
+  height: 100%;
   ${SegmentButton}:first-child {
     border-radius: 2rem 0 0 2rem;
-    }};
-  }
+  };
   ${SegmentButton}:last-child {
     border-radius: 0 2rem 2rem 0;
-    }};
-  }
-
+  };
 `;
 
 function Segment({
@@ -59,7 +39,7 @@ function Segment({
         id={id}
         label={label}
         onClick={onClick}
-        solid={isSelected ? "solid" : null}
+        solid={isSelected ? true : null}
       />
     </Fragment>
   );
@@ -68,17 +48,6 @@ function Segment({
 function Control({
   children, data, disabled, id,
 }) {
-  let border;
-  let borderRadius;
-  let setPosition;
-  let setWidth;
-  let backgroundColor;
-  let fontColor;
-  let setHeight;
-  let setOrientation;
-  let alignRight;
-  let alignBottom;
-
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
 
@@ -86,17 +55,7 @@ function Control({
     <DisabledContext.Provider value={disabled}>
       <ControlWrapper
         id={id}
-        border={border}
-        borderRadius={borderRadius}
         disabled={isDisabled}
-        setPosition={setPosition}
-        backgroundColor={backgroundColor}
-        setWidth={setWidth}
-        setHeight={setHeight}
-        setOrientation={setOrientation}
-        alignRight={alignRight}
-        alignBottom={alignBottom}
-        fontColor={fontColor}
       >
         {children ||
           data.map((item) => {
