@@ -227,7 +227,6 @@ function Button({
     borderColor = buttonColor;
     hoverColor = shadeColor;
     backgroundColor = buttonColor;
-    borderWidth = "0";
   } else {
     hoverColor = tintColor;
     borderColor = buttonColor;
