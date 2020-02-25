@@ -73,7 +73,6 @@ function Legend({
   id,
   fontSize,
   data,
-  title,
 }) {
   let cellPadding;
   let fontWeight;
@@ -82,7 +81,6 @@ function Legend({
 
   return (
     <Wrapper id={id}>
-      {title ? <Title text={title} /> : null}
       <TableContainer id={id}>
         {data.map((row) => {
           return (
@@ -121,7 +119,6 @@ Legend.propTypes = {
     label: PropTypes.string,
     value: PropTypes.node,
   })).isRequired,
-  title: PropTypes.node,
 };
 
 Legend.defaultProps = {

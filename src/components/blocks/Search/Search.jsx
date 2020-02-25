@@ -29,7 +29,29 @@ const AdvancedCard = styled(Card)`
 margin-top: 0.5rem;
 `;
 
-const inputsAPN = [
+
+
+
+
+
+function Search({ showAdvanced, message, moreResults, results, onClickMoreResults, onClickSearch, onClickAdvancedSearch, onClickReset, 
+}) {
+  const screenMedium = window.matchMedia(`(min-width: ${viewport.medium})`);
+  const screenLarge = window.matchMedia(`(min-width: ${viewport.large})`);
+  let rightContent;
+  let leftWidth;
+  let rightWidth;
+
+  if (screenLarge.matches || screenMedium.matches) {
+    leftWidth = "25%";
+    rightContent = (
+      <Link size="3x" text="Advanced" />
+    )
+  } else {
+    leftWidth = "88%";
+  }
+
+  const inputsAPN = [
     {
       id: "ID 1",
       type: "text",
@@ -69,34 +91,14 @@ const Advanced = (
     />
       <Grid columns="6fr .5fr .5fr">
           <Link size="2x" text=""/>
-      <Button label="Reset" plain/>
-      <Button label="Search" solid />
+      <Button label="Reset" plain onClick={onClickReset}/>
+      <Button label="Search" solid onClick={onClickAdvancedSearch}/>
       </Grid>
       </Form>
     </AdvancedCard>
 );
 
 
-
-
-
-
-function Search({ showAdvanced, message, moreResults, results,
-}) {
-  const screenMedium = window.matchMedia(`(min-width: ${viewport.medium})`);
-  const screenLarge = window.matchMedia(`(min-width: ${viewport.large})`);
-  let rightContent;
-  let leftWidth;
-  let rightWidth;
-
-  if (screenLarge.matches || screenMedium.matches) {
-    leftWidth = "25%";
-    rightContent = (
-      <Link size="3x" text="Advanced" />
-    )
-  } else {
-    leftWidth = "88%";
-  }
 
   const messages = (
     <Bar 
@@ -108,7 +110,7 @@ function Search({ showAdvanced, message, moreResults, results,
   const more = (
     <Bar 
     padding="top"
-    center={<Link size="2x" text="View More Results"/>}
+    center={<Link size="2x" text="View More Results" onClick={onClickMoreResults}/>}
     />
   );
 
@@ -139,7 +141,7 @@ function Search({ showAdvanced, message, moreResults, results,
         { results ? <React.Fragment>{Results}</React.Fragment> : null}
         </TextInput>
     }
-    center={<Button icon="search" solid/>}
+    center={<Button icon="search" solid onClick={onClickSearch}/>}
     right={rightContent}
       />
       { showAdvanced ? <React.Fragment>{Advanced}</React.Fragment> : null}
@@ -147,13 +149,16 @@ function Search({ showAdvanced, message, moreResults, results,
   );
 }
 
-// Search.propTypes = {
-// };
+Search.propTypes = {
+  id: PropTypes.string,
+  onClickSearch: PropTypes.func,
+  results: PropTypes.node,
+};
 
-// Search.defaultProps = {
-
-// };
-
+Search.defaultProps = {
+  id: null,
+  
+};
 
 export default Search;
 
