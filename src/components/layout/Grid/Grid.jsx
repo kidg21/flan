@@ -9,12 +9,9 @@ const GridWrapper = styled.section`
   grid-gap: ${(props) => {
     return props.gap || "1rem";
   }};
-  grid-template-columns: 1fr;
-  @media(min-width: ${viewport.medium}) {
-    grid-template-columns: ${(props) => {
+  grid-template-columns: ${(props) => {
     return props.columns || "repeat(auto-fill, minmax(18rem, 1fr))";
   }};
-  }
   grid-template-rows: ${(props) => {
     return props.rows || "auto";
   }};
