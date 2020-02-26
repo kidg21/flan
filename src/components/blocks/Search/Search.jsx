@@ -60,6 +60,14 @@ const Advanced = (
 );
 
 
+// switch (error && error.toLowerCase()) {
+//   case "connection":
+//     buttonColor = "success80";
+//     fontColor = buttonColor;
+//     tintColor = "success20";
+//     shadeColor = "success100";
+//     break;
+//   case "warning":
 
   const messages = (
     <Bar 
@@ -87,7 +95,7 @@ const Advanced = (
 
 
   return (
-      <SearchWrapper>
+      <Grid columns="1" gap="tiny">
     <Grid columns="9fr .5fr .5fr">
       <TextInput
         id="111"
@@ -97,11 +105,11 @@ const Advanced = (
         </TextInput>
     
     <Button icon="search" solid onClick={onClickSearch}/>
-    <Icon icon="more"/>
+    <Button icon="more" plain/>
     </Grid>
     { results ? <Grid columns="9fr .5fr .5fr">{Results}</Grid> : null}
       { showAdvanced ? <React.Fragment>{Advanced}</React.Fragment> : null}
-      </SearchWrapper>
+      </Grid>
   );
 }
 
@@ -117,6 +125,3 @@ Search.defaultProps = {
 };
 
 export default Search;
-
-
-
