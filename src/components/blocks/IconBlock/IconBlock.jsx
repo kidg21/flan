@@ -3,6 +3,7 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import Icon from "atoms/Icon";
 
 const Block = styled.div`
   display: flex;
@@ -12,31 +13,50 @@ const Block = styled.div`
 `;
 
 function IconBlock({
-  id, children, style, className,
+  children, className, data, id, large,
 }) {
   return (
-    <Block id={id} style={style} className={className}>
-      {children}
+    <Block id={id} className={className} large={large} >
+      {children ||
+        data.map((item) => {
+          return (
+            <Icon
+              badge={item.badge}
+              brand={item.brand}
+              disabled={item.disabled}
+              fixedWidth
+              flip={item.flip}
+              href={item.href}
+              icon={item.icon}
+              id={item.id}
+              onClick={item.onClick}
+              pulse={item.pulse}
+              rotation={item.rotation}
+              size={large ? "2x" : item.size}
+              spin={item.spin}
+              type={item.type}
+            />
+          );
+        })}
     </Block>
   );
 }
 
 IconBlock.propTypes = {
-  id: PropTypes.string,
   children: PropTypes.node.isRequired,
-  /** Currently needed for stories
-   * TODO: retructre stories and remove 'style' prop
-   */
-  style: PropTypes.string,
   /** className used for extending styles */
   className: PropTypes.string,
+  data: PropTypes.oneOfType([PropTypes.array, PropTypes.string]),
+  id: PropTypes.string,
+  large: PropTypes.boolean,
 };
 
 
 IconBlock.defaultProps = {
-  id: null,
-  style: null,
   className: null,
+  data: null,
+  id: null,
+  large: false,
 };
 
 export default IconBlock;
