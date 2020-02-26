@@ -1,0 +1,523 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 eTxJUf"
+    id={null}
+    rows={null}
+  >
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      Icon Block
+    </h6>
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+      fontSize="1.05em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      Distributes icons horizontally
+    </h6>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 iArnTB"
+      id={null}
+      rows={null}
+    >
+      <div
+        className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+        href={null}
+        id={null}
+        media={null}
+        onClick={null}
+      >
+        <div
+          className="IconBlock__Block-nokc92-0 cBGvyz"
+          id={null}
+          style={null}
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+            color={null}
+            data-icon="circle"
+            data-prefix="fas"
+            focusable="false"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+        href={null}
+        id={null}
+        media={null}
+        onClick={null}
+      >
+        <div
+          className="IconBlock__Block-nokc92-0 cBGvyz"
+          id={null}
+          style={null}
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+            color={null}
+            data-icon="circle"
+            data-prefix="fas"
+            focusable="false"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 egNihH"
+            color="info80"
+            data-icon="circle"
+            data-prefix="fas"
+            focusable="false"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+        href={null}
+        id={null}
+        media={null}
+        onClick={null}
+      >
+        <div
+          className="IconBlock__Block-nokc92-0 cBGvyz"
+          id={null}
+          style={null}
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+            color={null}
+            data-icon="circle"
+            data-prefix="fas"
+            focusable="false"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 egNihH"
+            color="info80"
+            data-icon="circle"
+            data-prefix="fas"
+            focusable="false"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 OvdFF"
+            color="success80"
+            data-icon="circle"
+            data-prefix="fas"
+            focusable="false"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+        href={null}
+        id={null}
+        media={null}
+        onClick={null}
+      >
+        <div
+          className="IconBlock__Block-nokc92-0 cBGvyz"
+          id={null}
+          style={null}
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+            color={null}
+            data-icon="circle"
+            data-prefix="fas"
+            focusable="false"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 egNihH"
+            color="info80"
+            data-icon="circle"
+            data-prefix="fas"
+            focusable="false"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 OvdFF"
+            color="success80"
+            data-icon="circle"
+            data-prefix="fas"
+            focusable="false"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 eKrDaR"
+            color="warning80"
+            data-icon="circle"
+            data-prefix="fas"
+            focusable="false"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+        href={null}
+        id={null}
+        media={null}
+        onClick={null}
+      >
+        <div
+          className="IconBlock__Block-nokc92-0 cBGvyz"
+          id={null}
+          style={null}
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+            color={null}
+            data-icon="circle"
+            data-prefix="fas"
+            focusable="false"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 egNihH"
+            color="info80"
+            data-icon="circle"
+            data-prefix="fas"
+            focusable="false"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 OvdFF"
+            color="success80"
+            data-icon="circle"
+            data-prefix="fas"
+            focusable="false"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 eKrDaR"
+            color="warning80"
+            data-icon="circle"
+            data-prefix="fas"
+            focusable="false"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 fyNWBU"
+            color="alert80"
+            data-icon="circle"
+            data-prefix="fas"
+            focusable="false"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+        href={null}
+        id={null}
+        media={null}
+        onClick={null}
+      >
+        <div
+          className="IconBlock__Block-nokc92-0 cBGvyz"
+          id={null}
+          style={null}
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+            color={null}
+            data-icon="circle"
+            data-prefix="fas"
+            focusable="false"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 egNihH"
+            color="info80"
+            data-icon="circle"
+            data-prefix="fas"
+            focusable="false"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 OvdFF"
+            color="success80"
+            data-icon="circle"
+            data-prefix="fas"
+            focusable="false"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 eKrDaR"
+            color="warning80"
+            data-icon="circle"
+            data-prefix="fas"
+            focusable="false"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 fyNWBU"
+            color="alert80"
+            data-icon="circle"
+            data-prefix="fas"
+            focusable="false"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+            color={null}
+            data-icon="circle"
+            data-prefix="fas"
+            focusable="false"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </div>
+    </section>
+  </section>
+</div>
+`;

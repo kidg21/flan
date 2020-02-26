@@ -12,9 +12,8 @@ export { default as GlobalStyles } from "./base/GlobalStyles/GlobalStyles.jsx";
 // Publicly exported files from 'atoms'
 export { default as Accordion } from "./atoms/Accordion";
 export { default as Avatar } from "./atoms/Avatar";
-export { default as Loader } from "./atoms/Loader";
 export { default as Badge } from "./atoms/Badge";
-export { default as Button } from "./atoms/Button";
+export { default as Button, ButtonGroup } from "./atoms/Button";
 export { default as Calendar } from "./atoms/Calendar";
 export { default as Checkbox, CheckboxGroup } from "./atoms/Checkbox";
 export { default as Command } from "./atoms/Command";
@@ -22,6 +21,7 @@ export { default as Container } from "./atoms/Container";
 export { default as Divider } from "./atoms/Divider";
 export { default as Icon } from "./atoms/Icon";
 export { default as Image } from "./atoms/Image";
+export { default as Loader } from "./atoms/Loader";
 export { default as Radio, RadioGroup } from "./atoms/Radio";
 export { default as SelectMenu } from "./atoms/SelectMenu";
 export { default as Slider } from "./atoms/Slider";

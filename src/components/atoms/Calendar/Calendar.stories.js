@@ -15,16 +15,19 @@ storiesOf("Atoms|Calendar", module)
       return (
         <Form>
           <Calendar
+            id="date"
             type="date"
             label="Date Input Label"
             helpText="Hang in there, buddy, I'm here to help!"
           />
           <Calendar
+            id="time"
             type="time"
             label="Time Input Label"
             helpText="Hang in there, buddy, I'm here to help!"
           />
           <Calendar
+            id="datetime"
             type="datetime"
             label="Date-Time Input Label"
             helpText="Hang in there, buddy, I'm here to help!"
@@ -35,6 +38,7 @@ storiesOf("Atoms|Calendar", module)
   .add("Knobs", () => {
     return (
       <Calendar
+        id="knobs"
         type={options(
           "type",
           {
@@ -61,29 +65,34 @@ storiesOf("Atoms|Calendar", module)
     return (
       <Form>
         <Calendar
+          id="dateLabel"
           type="date"
           label="Date Input Label"
           helpText="Hang in there, buddy, I'm here to help!"
         />
         <Calendar
+          id="dateRequired"
           type="date"
           label="Date Input Label (required)"
           helpText="Hang in there, buddy, I'm here to help!"
           isRequired
         />
         <Calendar
+          id="dateDisabled"
           type="date"
           label="Date Input Label"
           helpText="Hang in there, buddy, I'm here to help!"
           disabled
         />
         <Calendar
+          id="dateError"
           type="date"
           label="Date Input Label"
           helpText="Hang in there, buddy, I'm here to help!"
           error="Don't sweat it...we can fix this!"
         />
         <Calendar
+          id="dateWarning"
           type="date"
           label="Date Input Label"
           helpText="Hang in there, buddy, I'm here to help!"
@@ -96,23 +105,27 @@ storiesOf("Atoms|Calendar", module)
     return (
       <Form>
         <Calendar
+          id="timeLabel"
           type="time"
           label="Time Input Label"
           helpText="Hang in there, buddy, I'm here to help!"
         />
         <Calendar
+          id="timeRequired"
           type="time"
           label="Time Input Label (required)"
           helpText="Hang in there, buddy, I'm here to help!"
           isRequired
         />
         <Calendar
+          id="timeDisabled"
           type="time"
           label="Time Input Label"
           helpText="Hang in there, buddy, I'm here to help!"
           disabled
         />
         <Calendar
+          id="timeError"
           type="time"
           label="Time Input Label"
           helpText="Hang in there, buddy, I'm here to help!"
@@ -126,23 +139,27 @@ storiesOf("Atoms|Calendar", module)
     return (
       <Form>
         <Calendar
+          id="dateTimeLabel"
           type="datetime"
           label="Date-Time Input Label"
           helpText="Hang in there, buddy, I'm here to help!"
         />
         <Calendar
+          id="dateTimeRequired"
           type="datetime"
           label="Date-Time Input Label (required)"
           helpText="Hang in there, buddy, I'm here to help!"
           isRequired
         />
         <Calendar
+          id="dateTimeDisabled"
           type="datetime"
           label="Date-Time Input Label"
           helpText="Hang in there, buddy, I'm here to help!"
           disabled
         />
         <Calendar
+          id="dateTimeError"
           type="datetime"
           label="Date-Time Input Label"
           helpText="Hang in there, buddy, I'm here to help!"

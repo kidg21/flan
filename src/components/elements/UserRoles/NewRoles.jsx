@@ -7,14 +7,17 @@ import TextInput from "atoms/TextInput";
 import Button from "atoms/Button";
 import Table from "blocks/Table";
 import Panel from "layout/Panel";
+import { getGuid } from "helpers";
 
-function NewRoles({ columns, roles }) {
+function NewRoles({ id, columns, roles }) {
+  const uId = id || getGuid();
+
   return (
-    <Panel>
-      <MainPanelHeader title="Role Permissions" />
+    <Panel id={uId}>
+      <MainPanelHeader id={`${uId}_header`} title="Role Permissions" />
       <Bar
-        left={<TextInput type="search" placeholder="Search for a Role" />}
-        right={<Button label="+Add Role" />}
+        left={<TextInput id={`${uId}_search`} type="search" placeholder="Search for a Role" />}
+        right={<Button id={`${uId}_addRole`} label="+Add Role" />}
         leftWidth="30%"
       />
       {/* <Table columns={columns} data={roles} scroll header setHeight="200px" /> */}
@@ -23,11 +26,13 @@ function NewRoles({ columns, roles }) {
 }
 
 NewRoles.propTypes = {
+  id: PropTypes.string,
   columns: PropTypes.arrayOf(PropTypes.string),
   roles: PropTypes.arrayOf(PropTypes.object),
 };
 
 NewRoles.defaultProps = {
+  id: null,
   columns: null,
   roles: null,
 };

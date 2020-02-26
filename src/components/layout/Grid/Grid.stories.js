@@ -19,7 +19,8 @@ storiesOf("Layout|Grid/", module)
           <Card />
         </Grid>
       );
-    })
+    },
+  )
   .add("Knobs", () => {
     return (
       <Grid
