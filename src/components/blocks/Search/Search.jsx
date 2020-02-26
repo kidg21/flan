@@ -25,77 +25,38 @@ padding: 1rem;
 `;
 
 
-const AdvancedCard = styled(Card)`
-margin-top: 0.5rem;
+const DropContainer = styled(Container)`
+position: fixed;
 `;
-
-
 
 
 
 
 function Search({ showAdvanced, message, moreResults, results, onClickMoreResults, onClickSearch, onClickAdvancedSearch, onClickReset, 
 }) {
-  const screenMedium = window.matchMedia(`(min-width: ${viewport.medium})`);
-  const screenLarge = window.matchMedia(`(min-width: ${viewport.large})`);
-  let rightContent;
-  let leftWidth;
-  let rightWidth;
 
-  if (screenLarge.matches || screenMedium.matches) {
-    leftWidth = "25%";
-    rightContent = (
-      <Link size="3x" text="Advanced" />
-    )
-  } else {
-    leftWidth = "88%";
-  }
 
-  const inputsAPN = [
-    {
-      id: "ID 1",
-      type: "text",
-      placeholder: "APN",
-    },
-    {
-      id: "ID 2",
-      type: "text",
-      placeholder: "Location",
-    },
-  ];
-
-  const inputsOwner = [
-    {
-      id: "ID 1",
-      type: "text",
-      placeholder: "Owner",
-    },
-    {
-      id: "ID 2",
-      type: "text",
-      placeholder: "Location",
-    },
-  ];
 
 const Advanced = (
-    <AdvancedCard 
-    description="Advanced Search">
-        <Form>
-        <InputBlock
-      label="Search by APN"
-      textInputs={inputsAPN}
-    />
-         <InputBlock
-      label="Search by Owner"
-      textInputs={inputsOwner}
-    />
+  <DropContainer maxHeight="25rem" >
+      <Form>
+         <TextInput
+        label="Search by APN"
+        placeholder="APN"
+        type="search"
+      />
+         <TextInput
+         label="Search by Owner"
+        placeholder="Owner"
+        type="search"
+      />
       <Grid columns="6fr .5fr .5fr">
           <Link size="2x" text=""/>
       <Button label="Reset" plain onClick={onClickReset}/>
       <Button label="Search" solid onClick={onClickAdvancedSearch}/>
-      </Grid>
-      </Form>
-    </AdvancedCard>
+       </Grid>
+       </Form>
+      </DropContainer>
 );
 
 
@@ -115,35 +76,30 @@ const Advanced = (
   );
 
   const Results = (
-    <Container maxHeight="25rem" >
+    <DropContainer maxHeight="25rem" >
       { message ? <React.Fragment>{messages}</React.Fragment> : null}
         <List interactive>
           {results}
         </List>
         { moreResults ? <React.Fragment>{more}</React.Fragment> : null}
-    </Container>
+    </DropContainer>
 );
 
 
   return (
       <SearchWrapper>
-    <Bar
-    padding="none"
-    leftWidth={leftWidth}
-    rightWidth={rightWidth}
-    contentAlign="top"
-    centerAlign="left"
-    left ={<TextInput
+    <Grid columns="9fr .5fr .5fr">
+      <TextInput
         id="111"
         placeholder="Search Location"
         type="search"
       >
-        { results ? <React.Fragment>{Results}</React.Fragment> : null}
         </TextInput>
-    }
-    center={<Button icon="search" solid onClick={onClickSearch}/>}
-    right={rightContent}
-      />
+    
+    <Button icon="search" solid onClick={onClickSearch}/>
+    <Icon icon="more"/>
+    </Grid>
+    { results ? <Grid columns="9fr .5fr .5fr">{Results}</Grid> : null}
       { showAdvanced ? <React.Fragment>{Advanced}</React.Fragment> : null}
       </SearchWrapper>
   );

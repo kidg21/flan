@@ -4,17 +4,14 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import SearchBar from "./Search.jsx";
-import {ListItem} from "blocks/List";
+import Panel from "layout/Panel";
+import List, {ListItem} from "blocks/List";
 
 const Results = (
   <React.Fragment>
   <ListItem title="Address" description="23928 Malibu Dr."/>
   <ListItem title="Address" description="23928 Malibu Dr."/>
   <ListItem title="Address" description="23928 Malibu Dr." isSelected/>
-  <ListItem title="Address" description="23928 Malibu Dr."/>
-  <ListItem title="Address" description="23928 Malibu Dr."/>
-  <ListItem title="Address" description="23928 Malibu Dr."/>
-  <ListItem title="Address" description="23928 Malibu Dr."/>
   <ListItem title="Address" description="23928 Malibu Dr."/>
   </React.Fragment>
 );
@@ -74,6 +71,7 @@ storiesOf("Blocks|Search", module)
   .add("More results", () => {
     return (
         <SearchBar results={Results} moreResults/>
+
     );
 });
 
