@@ -27,23 +27,9 @@ function DataRange({
   id,
   isRequired,
   label,
-  // labelMax,
-  // maxValue,
-  // optionsMax,
-  // disableRight,
-  // labelMin,
-  // minValue,
-  // onChange,
-  // optionsMin,
-  // disableLeft,
-  // withSelector,
-  // onChangeSelector,
-  // optionsSelect,
-  // optionsSelectedOptions,
-
-  select,
   max,
   min,
+  select,
 }) {
   let inputTextColor;
   const isDisabled =
@@ -66,67 +52,70 @@ function DataRange({
   const uId = id || getGuid();
   return (
     <RangeContainer
-      id={uId}
-      disabled={isDisabled}
-      inputTextColor={inputTextColor}
       columns="1"
+      disabled={isDisabled}
       gap="tiny"
+      id={uId}
+      inputTextColor={inputTextColor}
     >
       {label ? (
         <Label size="2x" isRequired={isRequired} text={label} />
       ) : null}
       <Bar
         padding="none"
-        contentAlign="center"
+        contentAlign="bottom"
         left={
           min.options ? (
             <SelectMenu
+              disabled={min.disabled || isDisabled}
+              error={!!error}
               id={`${uId}_left`}
               label={min.label}
-              options={min.options}
               onChangeState={onChangeMin}
-              disabled={min.disabled || isDisabled}
+              options={min.options}
               selectOptions={min.value}
             />)
             :
             (<TextInput
+              disabled={min.disabled || isDisabled}
+              error={!!error}
               id={`${uId}_left`}
               label={min.label}
               onChange={onChangeMin}
-              error={!!error}
-              disabled={min.disabled || isDisabled}
               value={min.value}
             />)
         }
         center={
-          select ? (
+          select.options ? (
             <SelectMenu
+              disabled={select.disabled || isDisabled}
+              error={!!error}
               id={`${uId}_center`}
-              options={select.options}
               label={select.label}
               onChangeState={select.onChange}
+              options={select.options}
               selectOptions={select.selected}
-              disabled={isDisabled}
             />
           ) : null
         }
         right={
           max.options ? (
             <SelectMenu
+              disabled={max.disabled || isDisabled}
+              error={!!error}
               id={`${uId}_right`}
               label={max.label}
-              options={max.options}
               onChangeState={max.onChange}
-              disabled={max.disabled || isDisabled}
+              options={max.options}
               selectOptions={max.selected}
             />)
             :
             (<TextInput
+              disabled={max.disabled || isDisabled}
+              error={!!error}
               id={`${uId}_right`}
               label={max.label}
               onChange={onChangeMax}
-              error={!!error}
-              disabled={max.disabled || isDisabled}
               value={max.value}
             />)
         }
@@ -140,19 +129,19 @@ function DataRange({
 }
 
 const selectType = PropTypes.shape({
-  options: PropTypes.map,
-  selected: PropTypes.arrayOf(PropTypes.object),
-  onChange: PropTypes.func,
   disabled: PropTypes.bool,
   label: PropTypes.string,
+  onChange: PropTypes.func,
+  options: PropTypes.map,
+  selected: PropTypes.arrayOf(PropTypes.object),
 });
 
 const textType = PropTypes.shape({
-  value: PropTypes.string,
-  label: PropTypes.string,
-  error: PropTypes.bool,
   disabled: PropTypes.bool,
+  error: PropTypes.bool,
+  label: PropTypes.string,
   onChange: PropTypes.func,
+  value: PropTypes.string,
 });
 
 DataRange.propTypes = {
@@ -164,7 +153,8 @@ DataRange.propTypes = {
   label: PropTypes.string,
   max: PropTypes.oneOfType([textType, selectType]),
   min: PropTypes.oneOfType([textType, selectType]),
-  select: selectType,
+  select: PropTypes.oneOfType([textType, selectType]),
+  // select: selectType,
 };
 DataRange.defaultProps = {
   disabled: false,
@@ -173,9 +163,9 @@ DataRange.defaultProps = {
   id: null,
   isRequired: false,
   label: null,
-  select: null,
   max: {},
   min: {},
+  select: {},
 };
 
 export default DataRange;

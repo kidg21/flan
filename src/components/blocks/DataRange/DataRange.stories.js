@@ -6,7 +6,6 @@ import Form, { Section } from "layout/Form";
 import DataRange from "blocks/DataRange";
 
 
-
 const options = [
   { value: "0", label: "0" },
   { value: "1", label: "1" },
@@ -59,25 +58,29 @@ storiesOf("Blocks|Data Range", module)
           />
         </Form>
       );
-    })
+    },
+  )
   .add("Knobs", () => {
     return (
       <DataRange
         id="knobs"
-        label={text("label", "Data Label", "Data Range")}
-        labelMin={text("min label", "Min", "Data Range")}
-        optionsMin={object(
-          "options (min)",
-          [{ value: "0", label: "0" }],
-          "Data Range",
-        )}
-        labelMax={text("max label", "Max", "Data Range")}
-        optionsMax={object(
-          "options (max)",
-          [{ value: "0", label: "0" }],
-          "Data Range",
-        )}
+        label={text("input label", "Data Label", "Data Range")}
         isRequired={boolean("required", false, "Data Range")}
+        min={{
+          label: text("min label", "Min", "Data Range"),
+          options: boolean("select (min)", false, "Data Range") &&
+            object("min values", options, "Data Range"),
+        }}
+        select={{
+          label: text("center label", "Operator", "Data Range"),
+          options: boolean("operator", false, "Data Range") &&
+            object("operator values", selectorOptions, "Data Range"),
+        }}
+        max={{
+          label: text("max label", "Max", "Data Range"),
+          options: boolean("select (max)", false, "Data Range") &&
+            object("max values", options, "Data Range"),
+        }}
         helpText={text("help text", "Help text goes here...", "Data Range")}
         error={
           boolean("error", false, "Data Range") &&
@@ -94,23 +97,35 @@ storiesOf("Blocks|Data Range", module)
           <DataRange
             id="input"
             label="Input Range"
-            labelMin="Min"
-            labelMax="Max"
+            min={{
+              label: "Min",
+            }}
+            max={{
+              label: "Max",
+            }}
             helpText="Hang in there, buddy, I'm here to help!"
           />
           <DataRange
             id="inputError"
             label="Input Range (error)"
-            labelMin="Min"
-            labelMax="Max"
+            min={{
+              label: "Min",
+            }}
+            max={{
+              label: "Max",
+            }}
             helpText="Hang in there, buddy, I'm here to help!"
             error="Out of range!"
           />
           <DataRange
             id="inputDisabled"
             label="Input Range (disabled)"
-            labelMin="Min"
-            labelMax="Max"
+            min={{
+              label: "Min",
+            }}
+            max={{
+              label: "Max",
+            }}
             helpText="Hang in there, buddy, I'm here to help!"
             disabled
           />
@@ -119,39 +134,55 @@ storiesOf("Blocks|Data Range", module)
           <DataRange
             id="select"
             label="Select Range"
-            labelMin="Min"
-            optionsMin={options}
-            labelMax="Max"
-            optionsMax={options}
+            min={{
+              label: "Min",
+              options: options,
+            }}
+            max={{
+              label: "Max",
+              options: options,
+            }}
             helpText="Hang in there, buddy, I'm here to help!"
           />
           <DataRange
             id="selectOperation"
             label="Select Range"
-            labelMin="Min"
+            min={{
+              label: "Min",
+              options: options,
+            }}
             select={{ options: selectorOptions }}
-            optionsMin={options}
-            labelMax="Max"
-            optionsMax={options}
+            max={{
+              label: "Max",
+              options: options,
+            }}
             helpText="This help text has been passed through a prop!"
           />
           <DataRange
             id="selectError"
             label="Select Range (error)"
-            labelMin="Min"
-            optionsMin={options}
-            labelMax="Max"
-            optionsMax={options}
+            min={{
+              label: "Min",
+              options: options,
+            }}
+            max={{
+              label: "Max",
+              options: options,
+            }}
             helpText="Hang in there, buddy, I'm here to help!"
             error="Out of range!"
           />
           <DataRange
             id="selectDisabled"
             label="Select Range (disabled)"
-            labelMin="Min"
-            optionsMin={options}
-            labelMax="Max"
-            optionsMax={options}
+            min={{
+              label: "Min",
+              options: options,
+            }}
+            max={{
+              label: "Max",
+              options: options,
+            }}
             helpText="Hang in there, buddy, I'm here to help!"
             disabled
           />
