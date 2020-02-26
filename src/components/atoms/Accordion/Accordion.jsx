@@ -22,14 +22,14 @@ function Accordion({
       onClick={onClick}
       open={open}
       header={
-          title || text ? (
+          title || description ? (
             <Bar
               contentAlign="center"
               centerAlign="left"
               left={
                 <React.Fragment>
                   {title ? <Title text={title} /> : null}
-                  {text ? <Text text={description} /> : null}
+                  {description ? <Text text={description} /> : null}
                 </React.Fragment>
               }
               rightWidth="max-content"
