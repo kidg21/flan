@@ -68,18 +68,15 @@ storiesOf("Blocks|Data Range", module)
         isRequired={boolean("required", false, "Data Range")}
         min={{
           label: text("min label", "Min", "Data Range"),
-          options: boolean("select (min)", false, "Data Range") &&
-            object("min values", options, "Data Range"),
+          options: boolean("select (min)", false, "Data Range") && options,
         }}
         select={{
-          label: text("center label", "Operator", "Data Range"),
-          options: boolean("operator", false, "Data Range") &&
-            object("operator values", selectorOptions, "Data Range"),
+          label: text("operator label", "Operator", "Data Range"),
+          options: boolean("operator", false, "Data Range") && selectorOptions,
         }}
         max={{
           label: text("max label", "Max", "Data Range"),
-          options: boolean("select (max)", false, "Data Range") &&
-            object("max values", options, "Data Range"),
+          options: boolean("select (max)", false, "Data Range") && options,
         }}
         helpText={text("help text", "Help text goes here...", "Data Range")}
         error={
