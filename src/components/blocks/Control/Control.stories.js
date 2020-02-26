@@ -56,7 +56,7 @@ storiesOf("Blocks|Control", module)
     },
   )
   .add(
-    "Disabled (Conrol)",
+    "Disabled (Control)",
     () => {
       return (
         <Control disabled >

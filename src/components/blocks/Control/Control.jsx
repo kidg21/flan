@@ -61,7 +61,7 @@ function Control({
           data.map((item) => {
             return (
               <Segment
-                disabled={item.isDisabled || disabled}
+                disabled={item.disabled || isDisabled}
                 icon={item.icon}
                 id={item.id}
                 isSelected={item.isSelected}
