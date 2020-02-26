@@ -15,8 +15,12 @@ grid-template-areas: 'blank one two';
 
 const DialogCard = styled(Card)`
 width: ${(props) => {
-  return props.width || "100%";
-}};
+    return props.width || "100%";
+  }};
+`;
+
+const ChildSection = styled(CardSection)`
+z-index: 2;
 `;
 
 const PrimaryButton = styled(Button)`
@@ -89,7 +93,7 @@ function DialogBox({
       body={body}
       width={width}
     >
-      {children ? <CardSection>{children}</CardSection> : null}
+      {children ? <ChildSection>{children}</ChildSection> : null}
       {buttonElements ? <CardSection>{buttonElements}</CardSection> : null}
     </DialogCard>
   );
