@@ -7,45 +7,49 @@ import Accordion from "./Accordion.jsx";
 storiesOf("Atoms|Accordion", module)
   .addDecorator(withKnobs)
   .add("Default", () => {
-    const [open, setOpen] = useState(false);
-    function toggleDropdown() {
-      if (open) {
-        setOpen(false);
-      } else {
-        setOpen(true);
+    return React.createElement(() => {
+      const [open, setOpen] = useState(false);
+      function toggleDropdown() {
+        if (open) {
+          setOpen(false);
+        } else {
+          setOpen(true);
+        }
       }
-    }
-    return (
-      <Accordion
-        onClick={(e) => {
-          toggleDropdown(e);
-        }}
-        open={open}
-        title="Accordion Title"
-      >
-        <Text text="hi" />
-      </Accordion>
-    );
+      return (
+        <Accordion
+          onClick={(e) => {
+            toggleDropdown(e);
+          }}
+          open={open}
+          title="Accordion Title"
+        >
+          <Text text="hi" />
+        </Accordion>
+      );
+    });
   })
   .add("Text", () => {
-    const [open, setOpen] = useState(false);
-    function toggleDropdown() {
-      if (open) {
-        setOpen(false);
-      } else {
-        setOpen(true);
+    return React.createElement(() => {
+      const [open, setOpen] = useState(false);
+      function toggleDropdown() {
+        if (open) {
+          setOpen(false);
+        } else {
+          setOpen(true);
+        }
       }
-    }
-    return (
-      <Accordion
-        onClick={(e) => {
-              toggleDropdown(e);
-            }}
-        open={open}
-        description="Accordion Title"
-      >
-        <Text text="hi" />
-      </Accordion>
-    );
+      return (
+        <Accordion
+          onClick={(e) => {
+                toggleDropdown(e);
+              }}
+          open={open}
+          description="Accordion Title"
+        >
+          <Text text="hi" />
+        </Accordion>
+      );
+    });
   });
 
