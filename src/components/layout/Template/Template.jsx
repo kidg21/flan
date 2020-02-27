@@ -17,14 +17,14 @@ const TemplateWrapper = styled(Flex)`
 `;
 
 const Header = styled(Bar)`
-/* For Dev purposes */
+  /* For Dev purposes */
   border-bottom: 1px solid ${(props) => {
     return props.theme.palette.neutral40;
   }};
 `;
 
 const Footer = styled(Bar)`
-/* For Dev purposes */
+  /* For Dev purposes */
   border-top: 1px solid ${(props) => {
     return props.theme.palette.neutral40;
   }};
@@ -72,12 +72,12 @@ const RegionLeft = styled(Flex)`
   }
 `;
 
-const RegionMain = styled(Flex)`
-flex: auto;
-flex-direction: column;
-height: 100%;
-width: 100%;
-background: green;
+const WrapperMain = styled(Flex)`
+  flex: auto;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background: green;
   &:empty {
     &:before {
       ${PlaceholderText};
@@ -89,9 +89,9 @@ background: green;
   }
 `;
 
-const RegionTop = styled(Flex)`
+const RegionMain = styled(Flex)`
   flex: ${(props) => {
-    return props.flexTop ;
+    return props.flexTop;
   }};
   align-self: stretch;
   height: 100%;
@@ -111,7 +111,7 @@ const RegionBottom = styled(Flex)`
   flex: none;
   bottom: 0;
   height: ${(props) => {
-    return props.bottomHeight ;
+    return props.bottomHeight;
   }};
   @media (min-width: ${viewport.medium}) {
     max-height: ${(props) => {
@@ -135,9 +135,9 @@ const RegionBottom = styled(Flex)`
 `;
 
 const RegionRight = styled(Flex)`
-position: ${(props) => {
-  return props.position || "";
-}};
+  position: ${(props) => {
+    return props.position || "";
+  }};
   right: 0;
   flex: auto;
   width: ${(props) => {
@@ -169,6 +169,7 @@ position: ${(props) => {
 
 function Template({
   header,
+  id,
   left,
   main,
   bottom,
@@ -178,22 +179,19 @@ function Template({
   const screenMedium = window.matchMedia(`(min-width: ${viewport.medium})`);
   const screenLarge = window.matchMedia(`(min-width: ${viewport.large})`);
 
-
-const bottomHeight = "50vh";
-let flexTop;
-let leftWidth = "100vw";
-let rightWidth = "100vw";
-let zIndex = null;  // shared by all
-let position = null;  // shared by all
-if (screenMedium.matches || screenLarge.matches) {
-  leftWidth = "15vw"; //these will most likely need different sizes
-  rightWidth = "20vw";
-} else {
-  position = "absolute";
-  zIndex = "1";
-}
-
-
+  const bottomHeight = "50vh";
+  let flexTop;
+  let leftWidth = "100vw";
+  let rightWidth = "100vw";
+  let zIndex = null; // shared by all
+  let position = null; // shared by all
+  if (screenMedium.matches || screenLarge.matches) {
+    leftWidth = "15vw"; // these will most likely need different sizes
+    rightWidth = "20vw";
+  } else {
+    position = "absolute";
+    zIndex = "1";
+  }
 
   let seeLeftRegion = null;
   let leftOpen = left ? left.visible : false;
@@ -202,7 +200,7 @@ if (screenMedium.matches || screenLarge.matches) {
   let rightOpen = right ? right.visible : false;
   let setRightOpen = right ? right.toggle : null;
   // let seeBottomRegion = null;
-  let bottomOpen = bottom ? bottom.visible : false;
+  const bottomOpen = bottom ? bottom.visible : false;
   // let setBottomOpen = bottom ? bottom.toggle : false;
 
   if (bottomOpen) {
@@ -210,8 +208,6 @@ if (screenMedium.matches || screenLarge.matches) {
   } else {
     flexTop = "none";
   }
-  
-
 
   if (left) {
     if (!setLeftOpen) [leftOpen, setLeftOpen] = useState(!left.visible);
@@ -220,8 +216,10 @@ if (screenMedium.matches || screenLarge.matches) {
       seeLeftRegion = () => { setLeftOpen(!leftOpen); };
     } else {
       // On small screens, either the left or right region can be open, not both
-      seeLeftRegion = () => { setLeftOpen(!leftOpen); setRightOpen(!right.visible); 
-      if (!leftOpen) rightOpen(false)};
+      seeLeftRegion = () => {
+        setLeftOpen(!leftOpen); setRightOpen(!right.visible);
+        if (!leftOpen) rightOpen(false);
+      };
     }
   }
   if (right) {
@@ -231,17 +229,21 @@ if (screenMedium.matches || screenLarge.matches) {
       seeRightRegion = () => { setRightOpen(!rightOpen); };
     } else {
       // On small screens, either the left or right region can be open, not both
-      seeRightRegion = () => { setRightOpen(!rightOpen); setLeftOpen(!left.visible)
-      if (!rightOpen) leftOpen(false); };
+      seeRightRegion = () => {
+        setRightOpen(!rightOpen); setLeftOpen(!left.visible);
+        if (!rightOpen) leftOpen(false);
+      };
     }
   }
 
 
   return (
-    <TemplateWrapper>
+    <TemplateWrapper id={id} >
       {header ? (
         <Header
+          id={header.id}
           contentAlign="center"
+          /** TODO: Separate left/right width */
           rightWidth={header.width}
           padding="2x"
           left={
@@ -261,11 +263,11 @@ if (screenMedium.matches || screenLarge.matches) {
               )
           }
           center={header.content}
-          right={ header.right ? (
+          right={header.right ? (
             <Fragment>
               {header.right}
             </Fragment>
-          ) : 
+          ) :
             <Icon
               size="lg"
               icon={header.iconRight || "settings"}
@@ -275,8 +277,9 @@ if (screenMedium.matches || screenLarge.matches) {
         />
       ) : null}
       <Body>
-        {left ? (
+        {left.content ? (
           <RegionLeft
+            id={left.id}
             position={position}
             width={leftWidth}
             zIndex={zIndex}
@@ -285,21 +288,23 @@ if (screenMedium.matches || screenLarge.matches) {
             {left.content}
           </RegionLeft>
         ) : null}
-        <RegionMain>
-          <RegionTop flexTop={flexTop}>
-          {main}
-          </RegionTop>
-            {bottom ? (
-              <RegionBottom
-            height={bottomHeight}
-            zIndex={zIndex}
-            open={bottomOpen}
-              >
-            {bottom.content}
-          </RegionBottom>) : null }
-        </RegionMain>
-        {right ? (
+        <WrapperMain>
+          <RegionMain id={main.id} flexTop={flexTop}>
+            {main.content}
+          </RegionMain>
+          {bottom.content ? (
+            <RegionBottom
+              height={bottomHeight}
+              id={bottom.id}
+              zIndex={zIndex}
+              open={bottomOpen}
+            >
+              {bottom.content}
+            </RegionBottom>) : null}
+        </WrapperMain>
+        {right.content ? (
           <RegionRight
+            id={right.id}
             position={position}
             width={rightWidth}
             zIndex={zIndex}
@@ -311,10 +316,11 @@ if (screenMedium.matches || screenLarge.matches) {
       </Body>
       {footer.content ? (
         <Footer
-          contentAlign="center"
-          padding="2x"
-          centerAlign="left"
           center={footer.content}
+          centerAlign="left"
+          contentAlign="center"
+          id={footer.id}
+          padding="2x"
         />
       ) : null}
     </TemplateWrapper>
@@ -322,57 +328,83 @@ if (screenMedium.matches || screenLarge.matches) {
 }
 
 Template.propTypes = {
+  id: PropTypes.string,
   header: PropTypes.shape({
     content: PropTypes.node,
-    right: PropTypes.node,
-    width: PropTypes.string,
     iconLeft: PropTypes.string,
     iconRight: PropTypes.string,
+    id: PropTypes.string,
+    right: PropTypes.node,
+    width: PropTypes.string,
   }),
   left: PropTypes.shape({
     content: PropTypes.node.isRequired,
     iconLeft: PropTypes.string,
     iconRight: PropTypes.string,
+    id: PropTypes.string,
+    toggle: PropTypes.func,
+    visible: PropTypes.string,
   }),
-  main: PropTypes.node.isRequired,
+  // main: PropTypes.node.isRequired,
+  main: PropTypes.shape({
+    content: PropTypes.node.isRequired,
+    id: PropTypes.string,
+  }),
   bottom: PropTypes.shape({
     content: PropTypes.node.isRequired,
+    id: PropTypes.string,
+    toggle: PropTypes.func,
+    visible: PropTypes.string,
   }),
   right: PropTypes.shape({
     content: PropTypes.node.isRequired,
     iconLeft: PropTypes.string,
     iconRight: PropTypes.string,
+    id: PropTypes.string,
+    toggle: PropTypes.func,
+    visible: PropTypes.string,
   }),
   footer: PropTypes.shape({
     content: PropTypes.node.isRequired,
+    id: PropTypes.string,
   }),
 };
 
 Template.defaultProps = {
+  id: null,
   header: {
     content: null,
-    right: null,
-    width: null,
     iconLeft: null,
     iconRight: null,
+    id: null,
+    right: null,
+    width: null,
   },
   left: {
     content: null,
-    visible: null,
+    id: null,
     toggle: null,
+    visible: null,
+  },
+  main: {
+    content: null,
+    id: null,
   },
   bottom: {
     content: null,
-    visible: null,
+    id: null,
     toggle: null,
+    visible: null,
   },
   right: {
     content: null,
-    visible: null,
+    id: null,
     toggle: null,
+    visible: null,
   },
   footer: {
     content: null,
+    id: null,
   },
 };
 

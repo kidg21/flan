@@ -1,17 +1,16 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
-import React, {useState} from "react";
-import Panel from "layout/Panel";
+import React, { useState } from "react";
+// import Panel from "layout/Panel";
 import DataTable from "blocks/Table";
-import Card, { CardGrid } from "elements/Card";
-import List, { ListItem } from "blocks/List";
+// import Card, { CardGrid } from "elements/Card";
+// import List, { ListItem } from "blocks/List";
 import Mapbox from "layout/Map";
 import Icon from "atoms/Icon";
 import IconBlock from "blocks/IconBlock";
-import Title from "base/Typography";
+// import Title from "base/Typography";
 import Template from "./Template.jsx";
 
-const TemplateNotes = markdown.require("./Template.md");
 
 const headers = [
   { id: "options", label: "Actions" },
@@ -94,39 +93,31 @@ const data = [
   },
 ];
 
-const dataTable = (
-  <DataTable
-    headers={headers.slice(1)}
-    rows={data}
-    listId="foo"
-    columnWidth={180}
-  />
-);
+// const dataTable = (
+//   <DataTable
+//     headers={headers.slice(1)}
+//     rows={data}
+//     listId="foo"
+//     columnWidth={180}
+//   />
+// );
 
-const navBar = {
-  content: (
-    <Panel
-      id="Panel"
-    >
-      <List interactive>
-        <ListItem title="Layers" />
-        <ListItem title="Results" />
-        <ListItem title="Form" />
-        <ListItem title="Research" />
-      </List>
-    </Panel>
-  ),
-};
+// const navBar = {
+//   content: (
+//     <Panel
+//       id="Panel"
+//     >
+//       <List interactive>
+//         <ListItem title="Layers" />
+//         <ListItem title="Results" />
+//         <ListItem title="Form" />
+//         <ListItem title="Research" />
+//       </List>
+//     </Panel>
+//   ),
+// };
 
 storiesOf("Layout |Templates/Template A/", module)
-  .addParameters({
-    info: {
-      text: "Layout info goes here...",
-    },
-    notes: {
-      markdown: TemplateNotes,
-    },
-  })
   .add(
     "Base",
     () => {
@@ -147,56 +138,55 @@ storiesOf("Layout |Templates/Template A/", module)
       return React.createElement(() => {
         const [rightOpen, setRightOpen] = useState(true);
         const seeRightRegion = () => { setRightOpen(!rightOpen); };
-
         const [leftOpen, setLeftOpen] = useState(true);
-        const seeLeftRegion = () => { setLeftOpen(!leftOpen); rightOpen(false) };
-
-
+        const seeLeftRegion = () => { setLeftOpen(!leftOpen); rightOpen(false); };
         const navBar = {
           content: "",
-          visible: leftOpen,
+          id: "Left Region",
           toggle: seeLeftRegion,
+          visible: leftOpen,
         };
-
         const appBar = {
           content: "",
-          visible: rightOpen,
+          id: "Right Region",
           toggle: seeRightRegion,
+          visible: rightOpen,
         };
-
-
-              return (
-        <Template
-          header={{
-            content: "",
-            right:(
-              <IconBlock>
-              <Icon icon="list"  onClick={seeRightRegion}/>
-              <Icon icon="chat" onClick={seeRightRegion}/>
-              <Icon icon="calendar" onClick={seeRightRegion}/>
-              </IconBlock>
-            ),
-          }}
-          left={navBar}
-          main={<React.Fragment> <Mapbox /></React.Fragment>}
-          right={appBar}
+        return (
+          <Template
+            header={{
+              content: "Title",
+              id: "Header",
+              right: (
+                <IconBlock>
+                  <Icon icon="list" onClick={seeRightRegion} />
+                  <Icon icon="chat" onClick={seeRightRegion} />
+                  <Icon icon="calendar" onClick={seeRightRegion} />
+                </IconBlock>
+              ),
+              width: "max-content", // Separate left/right widths
+            }}
+            left={navBar}
+            main={{
+              content: <Mapbox />,
+              id: "Main Region",
+            }}
+            right={appBar}
           />
-      )}
-      )}
+        );
+      });
+    },
   )
   .add(
     "With Bottom",
     () => {
       return React.createElement(() => {
-
         const [rightOpen, setRightOpen] = useState(true);
-        const seeRightRegion = () => { setRightOpen(!rightOpen);};
-
+        const seeRightRegion = () => { setRightOpen(!rightOpen); };
         const [bottomOpen, setBottomOpen] = useState(false);
         const seeBottomRegion = () => { setBottomOpen(!bottomOpen); };
-
         const [leftOpen, setLeftOpen] = useState(true);
-        const seeLeftRegion = () => { setLeftOpen(!leftOpen); rightOpen(false) };
+        const seeLeftRegion = () => { setLeftOpen(!leftOpen); rightOpen(false); };
 
         // const navBar = {
         //   content: (
@@ -216,63 +206,59 @@ storiesOf("Layout |Templates/Template A/", module)
         const leftBar = {
           content: (
             <DataTable
-            headers={headers.slice(1)}
-            rows={data}
-            listId="foo"
-            columnWidth={180}
-          />
+              headers={headers.slice(1)}
+              rows={data}
+              listId="foo"
+              columnWidth={180}
+            />
           ),
           visible: leftOpen,
           toggle: seeLeftRegion,
         };
-
         const rightBar = {
           content: (
             <DataTable
-            headers={headers.slice(1)}
-            rows={data}
-            listId="foo"
-            columnWidth={180}
-          />
+              headers={headers.slice(1)}
+              rows={data}
+              listId="foo"
+              columnWidth={180}
+            />
           ),
           visible: rightOpen,
           toggle: seeRightRegion,
         };
-        
         const bottomBar = {
           content: (
             <DataTable
-            headers={headers.slice(1)}
-            rows={data}
-            listId="foo"
-            columnWidth={180}
-          />
+              headers={headers.slice(1)}
+              rows={data}
+              listId="foo"
+              columnWidth={180}
+            />
           ),
           visible: bottomOpen,
           toggle: seeBottomRegion,
         };
-
-              return (
-
-
-                <Template
-                header={{
-                  content: "",
-                  width: "15%",
-                  right:(
-                    <IconBlock>
-                    <Icon icon="list"  onClick={seeBottomRegion}/>
-                    <Icon icon="chat" onClick={seeRightRegion}/>
-                    <Icon icon="calendar" onClick/>
-                    </IconBlock>
-                  ),
-                }}
-                main=""
-                right={rightBar}
-                left={leftBar}
-                bottom={bottomBar}
-              />
-      )}
-      )}
+        return (
+          <Template
+            header={{
+              content: "",
+              width: "15%",
+              right: (
+                <IconBlock>
+                  <Icon icon="list" onClick={seeBottomRegion} />
+                  <Icon icon="chat" onClick={seeRightRegion} />
+                  <Icon icon="calendar" onClick />
+                </IconBlock>
+              ),
+            }}
+            main=""
+            right={rightBar}
+            left={leftBar}
+            bottom={bottomBar}
+          />
+        );
+      });
+    },
   );
 
