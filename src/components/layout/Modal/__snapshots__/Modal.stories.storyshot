@@ -327,14 +327,14 @@ Array [
       style={null}
     >
       <div
-        className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+        className="Card__CardWrapper-sc-1g3s676-5 cVztWv DialogBox__DialogCard-iv0dnf-1 iwtOex"
         href={null}
         id={null}
         media={null}
         onClick={null}
       >
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 eAFQqz"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
           id={null}
           onClick={null}
         >
@@ -358,7 +358,7 @@ Array [
           </div>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 eAFQqz"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
           id={null}
           onClick={null}
         >
@@ -372,7 +372,7 @@ Array [
           </p>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 eAFQqz"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
           id={null}
           onClick={null}
         >
@@ -382,7 +382,7 @@ Array [
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 kaCTht DialogBox__PrimaryButton-iv0dnf-1 iGGcWN"
+              className="Button__StyledButton-sc-1v7sls2-0 kaCTht DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
               disabled={false}
               htmlFor={null}
               id="Cancel"
@@ -406,7 +406,7 @@ Array [
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 iywOmJ DialogBox__SecondaryButton-iv0dnf-2 oXoXM"
+              className="Button__StyledButton-sc-1v7sls2-0 iywOmJ DialogBox__SecondaryButton-iv0dnf-4 RChLi"
               disabled={false}
               htmlFor={null}
               id="Cancel"
