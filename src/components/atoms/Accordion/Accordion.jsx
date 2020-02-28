@@ -8,7 +8,7 @@ import Text, { Title } from "base/Typography";
 
 
 function Accordion({
-  children, description, id, onClick, open, title,
+  children, description, id, onClick, open, title, icon, disableIcon, header
 }) {
   let rotation;
   if (open) {
@@ -16,26 +16,39 @@ function Accordion({
   } else {
     rotation = 0;
   }
+
+  let _icon = <Icon icon="up" rotation={rotation} />;
+  if (icon) {
+    _icon = icon;
+  }
+
+  let _header = null;
+  if (header) {
+    _header = header;
+  } else if (title || description) {
+    _header = (
+      <React.Fragment>
+        {title ? <Title text={title} /> : null}
+        {description ? <Text text={description} /> : null}
+      </React.Fragment>
+    );
+  }
+
   return (
     <Expander
       id={id}
       onClick={onClick}
       open={open}
       header={
-          title || description ? (
-            <Bar
-              contentAlign="center"
-              centerAlign="left"
-              left={
-                <React.Fragment>
-                  {title ? <Title text={title} /> : null}
-                  {description ? <Text text={description} /> : null}
-                </React.Fragment>
-              }
-              rightWidth="max-content"
-              right={children ? <Icon icon="up" rotation={rotation} /> : null}
-            />
-          ) : null}
+        _header ? (
+          <Bar
+            contentAlign="center"
+            centerAlign="left"
+            left={_header}
+            rightWidth="max-content"
+            right={!disableIcon ? _icon : null}
+          />
+        ) : null}
     >
       {children}
     </Expander>
