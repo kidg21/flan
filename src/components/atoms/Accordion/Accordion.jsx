@@ -8,18 +8,13 @@ import Text, { Title } from "base/Typography";
 
 
 function Accordion({
-  children, description, id, onClick, open, title, icon, disableIcon, header
+  children, description, id, onClick, open, title, hideIcon, header
 }) {
   let rotation;
   if (open) {
     rotation = 180;
   } else {
     rotation = 0;
-  }
-
-  let _icon = <Icon icon="up" rotation={rotation} />;
-  if (icon) {
-    _icon = icon;
   }
 
   let _header = null;
@@ -46,7 +41,7 @@ function Accordion({
             centerAlign="left"
             left={_header}
             rightWidth="max-content"
-            right={!disableIcon ? _icon : null}
+            right={!hideIcon ? <Icon icon="up" rotation={rotation} /> : null}
           />
         ) : null}
     >
@@ -58,6 +53,8 @@ function Accordion({
 Accordion.propTypes = {
   children: PropTypes.node,
   description: PropTypes.string,
+  header: PropTypes.node,
+  hideIcon: PropTypes.bool,
   id: PropTypes.string,
   onClick: PropTypes.func,
   open: PropTypes.bool,
@@ -66,6 +63,8 @@ Accordion.propTypes = {
 Accordion.defaultProps = {
   children: null,
   description: null,
+  header: null,
+  hideIcon: false,
   id: null,
   onClick: null,
   open: false,
