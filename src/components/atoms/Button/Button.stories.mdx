@@ -1,11 +1,11 @@
 import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
-import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
-import { action } from "@storybook/addon-actions";
 import { Padding } from "helpers/Display";
-import Grid from "layout/Grid";
-import Button from "atoms/Button";
+import Button, { ButtonGroup } from "atoms/Button";
 
-<Meta title="Atoms|Button" component={Button} />
+<Meta
+  title="Atoms/Button"
+  component={Button}
+/>
 
 # Button
 
@@ -42,11 +42,22 @@ Buttons communicate actions that users can take. They are typically placed throu
 
 <Preview>
   <Story name="Style">
-    <Grid columns="3">
-      <Button label="Standard Button" />
-      <Button label="Solid Button" solid />
-      <Button label="Disabled Button" disabled/>
-    </Grid>
+    <ButtonGroup>
+      <Button label="Standard" />
+      <Button label="Disabled" disabled />
+      <Button label="Solid" solid />
+      <Button label="Disabled" solid disabled />
+      <Button label="Round" round />
+      <Button label="Disabled" round disabled />
+      <Button label="Solid Round" solid round />
+      <Button label="Disabled" solid round disabled />
+      <Button label="Underlined" underlined />
+      <Button label="Disabled" underlined disabled />
+      <Button label="Plain" plain />
+      <Button label="Disabled" plain disabled />
+      <Button label="Bookmark" icon="bookmark" plain />
+      <Button label="Disabled" icon="bookmark" plain disabled />
+    </ButtonGroup>
   </Story>
 </Preview>
 
@@ -54,18 +65,18 @@ Buttons communicate actions that users can take. They are typically placed throu
 
 <Preview>
   <Story name="Type">
-    <Grid>
-      <Button label="Standard Button" />
-      <Button label="Solid Standard Button" solid/>
-      <Button label="Info Button" type="info" />
-      <Button label="Solid Info Button" type="info" solid />
-      <Button label="Success Button" type="success" />
+    <ButtonGroup>
+      <Button label="Standard" />
+      <Button label="Info" type="info" />
+      <Button label="Success" type="success" />
+      <Button label="Warning" type="warning" />
+      <Button label="Alert" type="alert" />
+      <Button label="Standard" solid />
+      <Button label="Solid Info" type="info" solid />
       <Button label="Solid Success" type="success" solid />
-      <Button label="Warning Button" type="warning" />
       <Button label="Solid Warning" type="warning" solid />
-      <Button label="Alert Button" type="alert" />
       <Button label="Solid Alert" type="alert" solid />
-    </Grid>
+    </ButtonGroup>
   </Story>
 </Preview>
 
@@ -73,13 +84,41 @@ Buttons communicate actions that users can take. They are typically placed throu
 
 <Preview>
   <Story name="Icons">
-    <Grid>
+    <ButtonGroup>
       <Button label="Profile" icon="user" />
       <Button label="Expand" icon="down" />
       <Button label="Bookmark" icon="bookmark" />
       <Button label="Add" icon="plus" />
       <Button label="Print" icon="print" />
-    </Grid>
+    </ButtonGroup>
+  </Story>
+</Preview>
+
+### Vertical Icons
+
+<Preview>
+  <Story name="Vertical Icons">
+    <ButtonGroup>
+      <Button label="Profile" icon="user" vertical />
+      <Button label="Expand" icon="down" vertical />
+      <Button label="Bookmark" icon="bookmark" vertical />
+      <Button label="Add" icon="plus" vertical />
+      <Button label="Print" icon="print" vertical/>
+    </ButtonGroup>
+  </Story>
+</Preview>
+
+### Icon-Only
+
+<Preview>
+  <Story name="Icon-Only">
+    <ButtonGroup>
+      <Button icon="user" />
+      <Button icon="down" />
+      <Button icon="bookmark" />
+      <Button icon="plus" />
+      <Button icon="print" />
+    </ButtonGroup>
   </Story>
 </Preview>
 
@@ -87,40 +126,16 @@ Buttons communicate actions that users can take. They are typically placed throu
 
 <Preview>
   <Story name="Counts">
-    <Grid>
+    <ButtonGroup>
       <Button label="Count Button"  count="2" />
       <Button label="Count Button" count="2" icon="user"/>
-    </Grid>
+    </ButtonGroup>
   </Story>
 </Preview>
 
-<!-- ### Knobs
-Experiment with this story using the Knobs addon in Canvas mode.
-<Story name="Knobs" parameters={{ decorators: [Padding, withKnobs] }}>
-  <Button
-    label={text("label", "Knobs", "Button")}
-    type={select("type", ["standard", "solid", "inline", "underlined"], "standard", "Button")}
-    color={select("color", ["action", "info", "success", "warning", "alert"], "action", "Button")}
-    size={select("size", ["small", "standard", "large"], "standard", "Button")}
-    icon={select("icon", ["none", "user", "down", "bookmark", "plus", "print"], "none", "Button")}
-    fullWidth={boolean("full width", false, "Button")}
-    disabled={boolean("disabled", false, "Button")}
-  />
-</Story>
-
-### Actions
-Actions can be used to display data received by event handlers.  Try it using the Actions addon in Canvas mode.
-<Story name="Actions" parameters={{ decorators: [Padding] }}>
-  <Button label="Click Me!" onClick={action("onClick")} />
-</Story>
-
-<!-- Link a story to a component `ID` here without a code preview
-<Story id="atoms-checkbox--checkbox-states" /> -->
-<!-- And here with a preview
-<Preview>
-  <Story id="atoms-checkbox--checkbox-states" />
-</Preview> -->
-
-## Props
+## 'Button' Props
 
 <Props of={Button} />
+
+<!-- Link a story to a component `ID` here without a code preview -->
+<!-- <Story id="atoms-checkbox--checkbox-states" /> -->

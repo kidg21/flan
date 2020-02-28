@@ -1,0 +1,355 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<a
+  className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
+  id={null}
+  label="Command"
+  onClick={null}
+  title="Command"
+>
+  <svg
+    aria-hidden="true"
+    className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+    color={null}
+    data-icon="circle"
+    data-prefix="fas"
+    focusable="false"
+    id={null}
+    role="img"
+    style={Object {}}
+    viewBox="0 0 512 512"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+      fill="currentColor"
+      style={Object {}}
+    />
+  </svg>
+  <label
+    className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+    fontSize="0.876em"
+    fontWeight={400}
+    htmlFor={null}
+    letterSpacing="0px"
+  >
+    Command
+  </label>
+</a>
+`;
+
+exports[` 2`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 iArnTB"
+  id={null}
+  rows={null}
+>
+  <a
+    className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
+    id={null}
+    label="Active"
+    onClick={null}
+    title="Active"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+      color={null}
+      data-icon="circle"
+      data-prefix="fas"
+      focusable="false"
+      id={null}
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+      fontSize="0.876em"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing="0px"
+    >
+      Active
+    </label>
+  </a>
+  <a
+    className="Command__CommandContainer-sc-13akgtp-0 hEeUzR"
+    id={null}
+    label="Disabled"
+    onClick={null}
+    title="Disabled"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+      color={null}
+      data-icon="circle"
+      data-prefix="fas"
+      focusable="false"
+      id={null}
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+      fontSize="0.876em"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing="0px"
+    >
+      Disabled
+    </label>
+  </a>
+</section>
+`;
+
+exports[` 3`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 iArnTB"
+  id={null}
+  rows={null}
+>
+  <a
+    className="Command__CommandContainer-sc-13akgtp-0 dJQJNT"
+    id={null}
+    label="Small"
+    onClick={null}
+    title="Small"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+      color={null}
+      data-icon="circle"
+      data-prefix="fas"
+      focusable="false"
+      id={null}
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+      fontSize="0.876em"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing="0px"
+    >
+      Small
+    </label>
+  </a>
+  <a
+    className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
+    id={null}
+    label="Standard"
+    onClick={null}
+    title="Standard"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+      color={null}
+      data-icon="circle"
+      data-prefix="fas"
+      focusable="false"
+      id={null}
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+      fontSize="0.876em"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing="0px"
+    >
+      Standard
+    </label>
+  </a>
+  <a
+    className="Command__CommandContainer-sc-13akgtp-0 dNCibE"
+    id={null}
+    label="Large"
+    onClick={null}
+    title="Large"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+      color={null}
+      data-icon="circle"
+      data-prefix="fas"
+      focusable="false"
+      id={null}
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+      fontSize="0.876em"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing="0px"
+    >
+      Large
+    </label>
+  </a>
+</section>
+`;
+
+exports[` 4`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 iArnTB"
+  id={null}
+  rows={null}
+>
+  <a
+    className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
+    id={null}
+    label="Icon-Left"
+    onClick={null}
+    title="Icon-Left"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+      color={null}
+      data-icon="circle"
+      data-prefix="fas"
+      focusable="false"
+      id={null}
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+      fontSize="0.876em"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing="0px"
+    >
+      Icon-Left
+    </label>
+  </a>
+  <a
+    className="Command__CommandContainer-sc-13akgtp-0 dqWQOd"
+    id={null}
+    label="Icon-Top"
+    onClick={null}
+    title="Icon-Top"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+      color={null}
+      data-icon="circle"
+      data-prefix="fas"
+      focusable="false"
+      id={null}
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+      fontSize="0.876em"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing="0px"
+    >
+      Icon-Top
+    </label>
+  </a>
+  <a
+    className="Command__CommandContainer-sc-13akgtp-0 bmuFIF"
+    id={null}
+    label="Icon-Right"
+    onClick={null}
+    title="Icon-Right"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+      color={null}
+      data-icon="circle"
+      data-prefix="fas"
+      focusable="false"
+      id={null}
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+      fontSize="0.876em"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing="0px"
+    >
+      Icon-Right
+    </label>
+  </a>
+</section>
+`;

@@ -85,6 +85,8 @@ const iconHash = {
   circle_solid: "circle",
   circle: ["far", "circle"],
   clone: ["far", "clone"],
+  cloud_download: ["far", "cloud-download"],
+  cloud_upload: ["far", "cloud-upload"],
   close: ["far", "times"],
   close_solid: "times",
   compare: ["far", "equals"],

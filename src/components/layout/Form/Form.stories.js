@@ -103,11 +103,13 @@ storiesOf("Layout|Form", module)
       >
         <Section title="Group 1">
           <TextInput
+            id="firstName"
             label="First Name"
             placeholder="John"
             helpText="The one that your parents gave you"
           />
           <TextInput
+            id="lastName"
             label="Last Name"
             placeholder="Williams"
             helpText="The one that comes after.."

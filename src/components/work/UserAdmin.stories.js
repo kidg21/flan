@@ -139,8 +139,8 @@ const Users = [
 
 storiesOf("Templates|UserRoles", module)
   .add("Edit Roles", () => {
-    return <NewRoles columns={Columns} roles={Roles} />;
+    return <NewRoles id="editRoles" columns={Columns} roles={Roles} />;
   })
   .add("Edit Users", () => {
-    return <NewUsers columns={UserColumns} users={Users} />;
+    return <NewUsers id="editUsers" columns={UserColumns} users={Users} />;
   });

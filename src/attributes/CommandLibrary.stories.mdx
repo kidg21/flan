@@ -1,0 +1,15 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { Padding } from "helpers/Display";
+import * as stories from "atoms/Command/Command.stories.js";
+
+<Meta title="Application Guidelines/Libraries/Commands" decorators={[Padding]} />
+
+# Command Library
+
+### The Command is an interactive UI element that pairs an icon and a label. Use a Command when a user's action is intended to begin an action or workflow.
+
+### Standard Commands
+
+<!-- Click the name of the icon to select, copy, and use the value in the Icon's 'name' prop -->
+
+<Story name="Standard Commands">{stories.CommandLibrary()}</Story>

@@ -1,0 +1,352 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <div
+    className="Card__CardWrapper-sc-1g3s676-5 cVztWv DialogBox__DialogCard-iv0dnf-1 iwtOex"
+    href={null}
+    id={null}
+    media={null}
+    onClick={null}
+  >
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+        >
+          <h6
+            className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+            fontSize="1.05em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            Default Dialog
+          </h6>
+        </div>
+      </div>
+    </section>
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
+      id={null}
+      onClick={null}
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </section>
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
+      id={null}
+      onClick={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 iArnTB DialogBox__ButtonGrid-iv0dnf-0 cUZJkB"
+        id={null}
+        rows={null}
+      >
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 kaCTht DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
+          disabled={false}
+          htmlFor={null}
+          id="Negative"
+          name="Negative"
+          onClick={null}
+          tabIndex="1"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+            id={null}
+            rows={null}
+          >
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              fontSize="1em"
+              fontWeight={600}
+              letterSpacing="0px"
+            >
+              Negative
+            </p>
+          </section>
+        </button>
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 jLfFwi DialogBox__SecondaryButton-iv0dnf-4 RChLi"
+          disabled={false}
+          htmlFor={null}
+          id="Negative"
+          name="Negative"
+          onClick={null}
+          tabIndex="1"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+            id={null}
+            rows={null}
+          >
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              fontSize="1em"
+              fontWeight={600}
+              letterSpacing="0px"
+            >
+              Affirmative
+            </p>
+          </section>
+        </button>
+      </section>
+    </section>
+  </div>
+</div>
+`;
+
+exports[` 2`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <div
+    className="Card__CardWrapper-sc-1g3s676-5 cVztWv DialogBox__DialogCard-iv0dnf-1 iwtOex"
+    href={null}
+    id={null}
+    media={null}
+    onClick={null}
+  >
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+        >
+          <h6
+            className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+            fontSize="1.05em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            Successful Dialog
+          </h6>
+        </div>
+      </div>
+    </section>
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
+      id={null}
+      onClick={null}
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </section>
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
+      id={null}
+      onClick={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 iArnTB DialogBox__ButtonGrid-iv0dnf-0 cUZJkB"
+        id={null}
+        rows={null}
+      >
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 hlLLip DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
+          disabled={false}
+          htmlFor={null}
+          id="Negative"
+          name="Negative"
+          onClick={null}
+          tabIndex="1"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+            id={null}
+            rows={null}
+          >
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              fontSize="1em"
+              fontWeight={600}
+              letterSpacing="0px"
+            >
+              Negative
+            </p>
+          </section>
+        </button>
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 iywOmJ DialogBox__SecondaryButton-iv0dnf-4 RChLi"
+          disabled={false}
+          htmlFor={null}
+          id="Negative"
+          name="Negative"
+          onClick={null}
+          tabIndex="1"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+            id={null}
+            rows={null}
+          >
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              fontSize="1em"
+              fontWeight={600}
+              letterSpacing="0px"
+            >
+              Affirmative
+            </p>
+          </section>
+        </button>
+      </section>
+    </section>
+  </div>
+</div>
+`;
+
+exports[` 3`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <div
+    className="Card__CardWrapper-sc-1g3s676-5 cVztWv DialogBox__DialogCard-iv0dnf-1 iwtOex"
+    href={null}
+    id={null}
+    media={null}
+    onClick={null}
+  >
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+        >
+          <h6
+            className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+            fontSize="1.05em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            Error Dialog
+          </h6>
+        </div>
+      </div>
+    </section>
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
+      id={null}
+      onClick={null}
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </section>
+    <section
+      className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
+      id={null}
+      onClick={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 iArnTB DialogBox__ButtonGrid-iv0dnf-0 cUZJkB"
+        id={null}
+        rows={null}
+      >
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 cZdgDl DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
+          disabled={false}
+          htmlFor={null}
+          id="Negative"
+          name="Negative"
+          onClick={null}
+          tabIndex="1"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+            id={null}
+            rows={null}
+          >
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              fontSize="1em"
+              fontWeight={600}
+              letterSpacing="0px"
+            >
+              Negative
+            </p>
+          </section>
+        </button>
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 injEsc DialogBox__SecondaryButton-iv0dnf-4 RChLi"
+          disabled={false}
+          htmlFor={null}
+          id="Negative"
+          name="Negative"
+          onClick={null}
+          tabIndex="1"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+            id={null}
+            rows={null}
+          >
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              fontSize="1em"
+              fontWeight={600}
+              letterSpacing="0px"
+            >
+              Affirmative
+            </p>
+          </section>
+        </button>
+      </section>
+    </section>
+  </div>
+</div>
+`;

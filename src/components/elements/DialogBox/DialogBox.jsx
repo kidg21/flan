@@ -2,6 +2,7 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import { screen } from "Variables";
 import Grid from "layout/Grid";
 import Button from "atoms/Button";
 import Card, { CardSection } from "elements/Card";
@@ -12,6 +13,15 @@ grid-template-areas: 'blank one two';
 
 `;
 
+const DialogCard = styled(Card)`
+width: ${(props) => {
+    return props.width || "100%";
+  }};
+`;
+
+const ChildSection = styled(CardSection)`
+z-index: 2;
+`;
 
 const PrimaryButton = styled(Button)`
 grid-area: one;
@@ -28,7 +38,20 @@ function DialogBox({
   children,
   buttons,
 }) {
+  const screenSmall = window.matchMedia(screen.small);
+  const screenMedium = window.matchMedia(screen.medium);
+  const screenLarge = window.matchMedia(screen.large);
+  let width;
   let buttonElements = null;
+
+  if (screenLarge.matches) {
+    width = "40vw";
+  } if (screenMedium.matches) {
+    width = "40vw";
+  } else if (screenSmall.matches) {
+    width = "90vw";
+  }
+
   if (buttons) {
     if (buttons.length === 2) {
       // Multiple buttons
@@ -64,14 +87,15 @@ function DialogBox({
   }
 
   return (
-    <Card
+    <DialogCard
       id={id}
       title={title}
       body={body}
+      width={width}
     >
-      {children ? <CardSection>{children}</CardSection> : null}
+      {children ? <ChildSection>{children}</ChildSection> : null}
       {buttonElements ? <CardSection>{buttonElements}</CardSection> : null}
-    </Card>
+    </DialogCard>
   );
 }
 

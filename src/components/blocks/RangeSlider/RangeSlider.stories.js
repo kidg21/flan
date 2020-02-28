@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { Padding } from "helpers/Display";
-import Form, { Section } from "layout/Form";
+import Form from "layout/Form";
 import RangeSlider from "blocks/RangeSlider";
 
 
@@ -15,6 +15,7 @@ storiesOf("Blocks|Range Slider", module)
     () => {
       return (
         <RangeSlider
+          id="documentation"
           label="Range Slider Label"
           minLabel="Min Label"
           maxLabel="Max Label"
@@ -25,6 +26,7 @@ storiesOf("Blocks|Range Slider", module)
   .add("Knobs", () => {
     return (
       <RangeSlider
+        id="knobs"
         label={text("label", "Range Slider Label", "Range Slider")}
         placeholderMin={text("min label", "Min", "Range Slider")}
         placeholderMax={text("max label", "Max", "Range Slider")}
@@ -39,12 +41,14 @@ storiesOf("Blocks|Range Slider", module)
     return (
       <Form columns="1">
         <RangeSlider
+          id="standard"
           label="Standard Slider"
           minLabel="Min Label"
           maxLabel="Max Label"
           helpText="Hang in there, buddy, I'm here to help!"
         />
         <RangeSlider
+          id="required"
           isRequired
           label="Required Slider"
           minLabel="Min Label"
@@ -52,6 +56,7 @@ storiesOf("Blocks|Range Slider", module)
           helpText="Hang in there, buddy, I'm here to help!"
         />
         <RangeSlider
+          id="disabled"
           disabled
           label="Disabled Slider"
           minLabel="Min Label"
