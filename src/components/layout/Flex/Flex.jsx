@@ -13,6 +13,7 @@ const FlexWrapper = styled.div`
   flex: ${(props) => {
     return props.flex || "1 1 auto";
   }};
+  /* flex: none; */
   flex-wrap: nowrap;
   justify-content: flex-start;
   order: 0;
@@ -34,10 +35,13 @@ const FlexWrapper = styled.div`
   width: ${(props) => {
     return props.width || "";
   }};
+  /* max-width: 100vw; */
   max-width: 100%;
   height: ${(props) => {
     return props.height || "";
   }};
+  /* height: 100%; */
+  /* max-height: 100vh; */
   max-height: 100%;
   overflow: ${(props) => {
     return props.overflow || "hidden";

@@ -1,10 +1,10 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
-// import Panel from "layout/Panel";
+import Panel from "layout/Panel";
 import DataTable from "blocks/Table";
 // import Card, { CardGrid } from "elements/Card";
-// import List, { ListItem } from "blocks/List";
+import List, { ListItem } from "blocks/List";
 import Mapbox from "layout/Map";
 import Icon from "atoms/Icon";
 import IconBlock from "blocks/IconBlock";
@@ -93,29 +93,37 @@ const data = [
   },
 ];
 
-// const dataTable = (
-//   <DataTable
-//     headers={headers.slice(1)}
-//     rows={data}
-//     listId="foo"
-//     columnWidth={180}
-//   />
-// );
+const map = {
+  content: (
+    <Mapbox />
+  ),
+};
 
-// const navBar = {
-//   content: (
-//     <Panel
-//       id="Panel"
-//     >
-//       <List interactive>
-//         <ListItem title="Layers" />
-//         <ListItem title="Results" />
-//         <ListItem title="Form" />
-//         <ListItem title="Research" />
-//       </List>
-//     </Panel>
-//   ),
-// };
+const dataTable = {
+  content: (
+    <DataTable
+      headers={headers.slice(1)}
+      rows={data}
+      listId="foo"
+      columnWidth={180}
+    />
+  ),
+};
+
+const listPanel = {
+  content: (
+    <Panel
+      id="Panel"
+    >
+      <List interactive>
+        <ListItem title="Layers" />
+        <ListItem title="Results" />
+        <ListItem title="Form" />
+        <ListItem title="Research" />
+      </List>
+    </Panel>
+  ),
+};
 
 storiesOf("Layout |Templates/Template A/", module)
   .add(
@@ -124,10 +132,11 @@ storiesOf("Layout |Templates/Template A/", module)
       return (
         <Template
           header={{ content: "" }}
-          left={{ content: "" }}
-          main=""
-          right={{ content: "" }}
-          footer={{ content: "" }}
+          left={listPanel}
+          // main={dataTable}
+          main={map}
+          right={listPanel}
+        // footer={{ content: "" }}
         />
       );
     },
@@ -155,7 +164,7 @@ storiesOf("Layout |Templates/Template A/", module)
         return (
           <Template
             header={{
-              content: "Title",
+              // content: "Title",
               id: "Header",
               right: (
                 <IconBlock>
@@ -164,11 +173,11 @@ storiesOf("Layout |Templates/Template A/", module)
                   <Icon icon="calendar" onClick={seeRightRegion} />
                 </IconBlock>
               ),
-              width: "max-content", // Separate left/right widths
+              // width: "max-content", // Separate left/right widths
             }}
             left={navBar}
             main={{
-              content: <Mapbox />,
+              // content: <Mapbox />,
               id: "Main Region",
             }}
             right={appBar}
