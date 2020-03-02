@@ -9,14 +9,14 @@ exports[` 1`] = `
   }
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+    className="Card__CardWrapper-sc-1g3s676-5 cVztWv DialogBox__DialogCard-iv0dnf-1 iwtOex"
     href={null}
     id={null}
     media={null}
     onClick={null}
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 eAFQqz"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
       id={null}
       onClick={null}
     >
@@ -40,7 +40,7 @@ exports[` 1`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 eAFQqz"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
       id={null}
       onClick={null}
     >
@@ -54,7 +54,7 @@ exports[` 1`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 eAFQqz"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
       id={null}
       onClick={null}
     >
@@ -64,7 +64,7 @@ exports[` 1`] = `
         rows={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 kaCTht DialogBox__PrimaryButton-iv0dnf-1 iGGcWN"
+          className="Button__StyledButton-sc-1v7sls2-0 kaCTht DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
           disabled={false}
           htmlFor={null}
           id="Negative"
@@ -88,7 +88,7 @@ exports[` 1`] = `
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 jLfFwi DialogBox__SecondaryButton-iv0dnf-2 oXoXM"
+          className="Button__StyledButton-sc-1v7sls2-0 jLfFwi DialogBox__SecondaryButton-iv0dnf-4 RChLi"
           disabled={false}
           htmlFor={null}
           id="Negative"
@@ -126,14 +126,14 @@ exports[` 2`] = `
   }
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+    className="Card__CardWrapper-sc-1g3s676-5 cVztWv DialogBox__DialogCard-iv0dnf-1 iwtOex"
     href={null}
     id={null}
     media={null}
     onClick={null}
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 eAFQqz"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
       id={null}
       onClick={null}
     >
@@ -157,7 +157,7 @@ exports[` 2`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 eAFQqz"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
       id={null}
       onClick={null}
     >
@@ -171,7 +171,7 @@ exports[` 2`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 eAFQqz"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
       id={null}
       onClick={null}
     >
@@ -181,7 +181,7 @@ exports[` 2`] = `
         rows={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 hlLLip DialogBox__PrimaryButton-iv0dnf-1 iGGcWN"
+          className="Button__StyledButton-sc-1v7sls2-0 hlLLip DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
           disabled={false}
           htmlFor={null}
           id="Negative"
@@ -205,7 +205,7 @@ exports[` 2`] = `
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 iywOmJ DialogBox__SecondaryButton-iv0dnf-2 oXoXM"
+          className="Button__StyledButton-sc-1v7sls2-0 iywOmJ DialogBox__SecondaryButton-iv0dnf-4 RChLi"
           disabled={false}
           htmlFor={null}
           id="Negative"
@@ -243,14 +243,14 @@ exports[` 3`] = `
   }
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+    className="Card__CardWrapper-sc-1g3s676-5 cVztWv DialogBox__DialogCard-iv0dnf-1 iwtOex"
     href={null}
     id={null}
     media={null}
     onClick={null}
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 eAFQqz"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
       id={null}
       onClick={null}
     >
@@ -274,7 +274,7 @@ exports[` 3`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 eAFQqz"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
       id={null}
       onClick={null}
     >
@@ -288,7 +288,7 @@ exports[` 3`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 eAFQqz"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
       id={null}
       onClick={null}
     >
@@ -298,7 +298,7 @@ exports[` 3`] = `
         rows={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 cZdgDl DialogBox__PrimaryButton-iv0dnf-1 iGGcWN"
+          className="Button__StyledButton-sc-1v7sls2-0 cZdgDl DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
           disabled={false}
           htmlFor={null}
           id="Negative"
@@ -322,7 +322,7 @@ exports[` 3`] = `
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 injEsc DialogBox__SecondaryButton-iv0dnf-2 oXoXM"
+          className="Button__StyledButton-sc-1v7sls2-0 injEsc DialogBox__SecondaryButton-iv0dnf-4 RChLi"
           disabled={false}
           htmlFor={null}
           id="Negative"

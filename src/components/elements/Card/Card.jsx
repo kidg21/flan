@@ -43,7 +43,6 @@ const CardSectionWrapper = styled.section`
   cursor: ${(props) => {
     return props.onClick ? "pointer" : "";
   }};
-  z-index: 1;
   max-height: ${(props) => {
     return props.open ? "0" : "100vh";
   }}; 

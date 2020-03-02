@@ -10,6 +10,7 @@ export {
 export { default as GlobalStyles } from "./base/GlobalStyles/GlobalStyles.jsx";
 
 // Publicly exported files from 'atoms'
+export { default as Accordion } from "./atoms/Accordion";
 export { default as Avatar } from "./atoms/Avatar";
 export { default as Badge } from "./atoms/Badge";
 export { default as Button, ButtonGroup } from "./atoms/Button";
@@ -43,12 +44,15 @@ export { default as RangeSlider } from "./blocks/RangeSlider";
 export { default as Table } from "./blocks/Table";
 export { default as Tabs, Tab } from "./blocks/Tabs";
 export { CardList } from "./blocks/List";
+export { Surface } from "./blocks/Surface";
+export { SummaryPanelTemplate } from "./blocks/Surface/SurfaceTemplates";
 
 // Publicly exported files from 'elements'
 export { default as Card, CardSection, CardGrid } from "./elements/Card";
 export { default as MainPanelHeader } from "./elements/PanelHeaders/MainPanelHeader";
 export { default as PropertyPanelHeader } from "./elements/PanelHeaders/PropertyPanelHeader";
 export { default as NavigationPanelHeader } from "./elements/PanelHeaders/NavigationPanelHeader";
+export { Picker, ColorSwatch } from "./elements/Picker";
 export { default as ProgressBar, Step } from "./elements/Progress";
 export { default as Notification } from "./elements/Notification";
 export { UserRoles, RolePermissions } from "./elements/UserRoles";

@@ -1,0 +1,1457 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <div>
+    <h2>
+      My Surface
+    </h2>
+    <br />
+    <div>
+      <h4>
+        
+      </h4>
+      <div>
+        Site Address
+         : 
+        <button
+          onClick={[Function]}
+        >
+          450 N GRAND AVE LOS ANGELES, CA LOS ANGELES
+        </button>
+      </div>
+      <div>
+        Parcel No. (APN)
+         : 
+        5408-002-902
+      </div>
+      <div>
+        Land Use Cat.
+         : 
+        SCHOOL
+      </div>
+      <div>
+        Land use Desc.
+         : 
+        SCHOOL
+      </div>
+      <div>
+        Building Area
+         : 
+        23415 SF
+      </div>
+      <div>
+        Lot Area
+         : 
+        446636 SF (10.2533 ACRES)
+      </div>
+      <div>
+        No. of Units
+         : 
+        1
+      </div>
+      <div>
+        Year Built
+         : 
+        1976
+      </div>
+      <div>
+        Assessed Value
+         : 
+        $3,847,860.00
+      </div>
+      <div>
+        Owner 1
+         : 
+        L A UNIFIED SCHOOL DIST
+      </div>
+      <div>
+        Owner 2
+         : 
+        
+      </div>
+      <div>
+        Owner Address
+         : 
+        undefined LOS ANGELES, CA LOS ANGELES
+      </div>
+      <div>
+        Last Transfer
+         : 
+        
+      </div>
+      <div>
+        Last Market Sale
+         : 
+        12/19/14 for ($1,000,000)
+      </div>
+      <div>
+        Opportunity Zone
+         : 
+        Yes (Low-Income Community)
+      </div>
+      Commands:
+      <button
+        onClick={[Function]}
+      >
+        Add To List
+      </button>
+      <button
+        onClick={[Function]}
+      >
+        Full Property Detail
+      </button>
+      <button
+        onClick={[Function]}
+      >
+        Copy Geometry
+      </button>
+      <br />
+      <br />
+    </div>
+    <div>
+      <h4>
+        Location
+      </h4>
+      <div>
+        Site Address
+         : 
+        450 N GRAND AVE LOS ANGELES, CA LOS ANGELES
+      </div>
+      <div>
+        Parcel No. (APN)
+         : 
+        5408-002-902
+      </div>
+      <div>
+        Legal Information
+         : 
+        <button
+          onClick={[Function]}
+        >
+          SALT LAKE DEPOT TRACT # 2 LOT 50 BLK A
+        </button>
+      </div>
+      <div>
+        Subdivision
+         : 
+        SALT LAKE DEPOT
+      </div>
+      <div>
+        Legal Lot
+         : 
+        50
+      </div>
+      <div>
+        Legal Block
+         : 
+        A
+      </div>
+      Commands:
+      <button
+        onClick={[Function]}
+      >
+        Tax Map
+      </button>
+      <button
+        onClick={[Function]}
+      >
+        Site Profile Report
+      </button>
+      <button
+        onClick={[Function]}
+      >
+        Full Property Detail
+      </button>
+      <br />
+      <br />
+    </div>
+    <div>
+      <h4>
+        Ownership
+      </h4>
+      <div>
+        Owner 1
+         : 
+        L A UNIFIED SCHOOL DIST
+      </div>
+      <div>
+        Owner 2
+         : 
+        
+      </div>
+      <div>
+        Owner Address
+         : 
+        undefined LOS ANGELES, CA LOS ANGELES
+      </div>
+      <div>
+        Vesting Code
+         : 
+        SW
+      </div>
+      <div>
+        Vesting Code Desc
+         : 
+        FAMILY
+      </div>
+      <div>
+        Owner Occupied
+         : 
+        Y
+      </div>
+      Commands:
+      <button
+        onClick={[Function]}
+      >
+        List Units
+      </button>
+      <button
+        onClick={[Function]}
+      >
+        Owner Portfolio
+      </button>
+      <br />
+      <br />
+    </div>
+  </div>
+</div>
+`;
+
+exports[` 2`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <div>
+    <h2>
+      This is being rendered from a string and using our LB-React-Core components
+    </h2>
+    <ul
+      className="List__ListWrapper-sc-43f2zq-0 iOWfKZ"
+      id={null}
+    >
+      <li
+        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        disabled={false}
+        href={null}
+        id={null}
+        onClick={null}
+        tabIndex="0"
+      >
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+              fontSize="1.05em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              Site Address
+            </h6>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              450 N GRAND AVE LOS ANGELES, CA LOS ANGELES
+            </p>
+          </div>
+        </div>
+      </li>
+      <li
+        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        disabled={false}
+        href={null}
+        id={null}
+        onClick={null}
+        tabIndex="0"
+      >
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+              fontSize="1.05em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              Parcel No. (APN)
+            </h6>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              5408-002-902
+            </p>
+          </div>
+        </div>
+      </li>
+      <li
+        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        disabled={false}
+        href={null}
+        id={null}
+        onClick={null}
+        tabIndex="0"
+      >
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+              fontSize="1.05em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              Land Use Cat.
+            </h6>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              SCHOOL
+            </p>
+          </div>
+        </div>
+      </li>
+      <li
+        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        disabled={false}
+        href={null}
+        id={null}
+        onClick={null}
+        tabIndex="0"
+      >
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+              fontSize="1.05em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              Land use Desc.
+            </h6>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              SCHOOL
+            </p>
+          </div>
+        </div>
+      </li>
+      <li
+        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        disabled={false}
+        href={null}
+        id={null}
+        onClick={null}
+        tabIndex="0"
+      >
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+              fontSize="1.05em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              Building Area
+            </h6>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              23415 SF
+            </p>
+          </div>
+        </div>
+      </li>
+      <li
+        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        disabled={false}
+        href={null}
+        id={null}
+        onClick={null}
+        tabIndex="0"
+      >
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+              fontSize="1.05em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              Lot Area
+            </h6>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              446636 SF (10.2533 ACRES)
+            </p>
+          </div>
+        </div>
+      </li>
+      <li
+        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        disabled={false}
+        href={null}
+        id={null}
+        onClick={null}
+        tabIndex="0"
+      >
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+              fontSize="1.05em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              No. of Units
+            </h6>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              1
+            </p>
+          </div>
+        </div>
+      </li>
+      <li
+        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        disabled={false}
+        href={null}
+        id={null}
+        onClick={null}
+        tabIndex="0"
+      >
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+              fontSize="1.05em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              Year Built
+            </h6>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              1976
+            </p>
+          </div>
+        </div>
+      </li>
+      <li
+        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        disabled={false}
+        href={null}
+        id={null}
+        onClick={null}
+        tabIndex="0"
+      >
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+              fontSize="1.05em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              Assessed Value
+            </h6>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              $3,847,860.00
+            </p>
+          </div>
+        </div>
+      </li>
+      <li
+        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        disabled={false}
+        href={null}
+        id={null}
+        onClick={null}
+        tabIndex="0"
+      >
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+              fontSize="1.05em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              Owner 1
+            </h6>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              L A UNIFIED SCHOOL DIST
+            </p>
+          </div>
+        </div>
+      </li>
+      <li
+        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        disabled={false}
+        href={null}
+        id={null}
+        onClick={null}
+        tabIndex="0"
+      >
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+              fontSize="1.05em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              Owner 2
+            </h6>
+          </div>
+        </div>
+      </li>
+      <li
+        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        disabled={false}
+        href={null}
+        id={null}
+        onClick={null}
+        tabIndex="0"
+      >
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+              fontSize="1.05em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              Owner Address
+            </h6>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              undefined LOS ANGELES, CA LOS ANGELES
+            </p>
+          </div>
+        </div>
+      </li>
+      <li
+        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        disabled={false}
+        href={null}
+        id={null}
+        onClick={null}
+        tabIndex="0"
+      >
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+              fontSize="1.05em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              Last Transfer
+            </h6>
+          </div>
+        </div>
+      </li>
+      <li
+        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        disabled={false}
+        href={null}
+        id={null}
+        onClick={null}
+        tabIndex="0"
+      >
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+              fontSize="1.05em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              Last Market Sale
+            </h6>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              12/19/14 for ($1,000,000)
+            </p>
+          </div>
+        </div>
+      </li>
+      <li
+        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        disabled={false}
+        href={null}
+        id={null}
+        onClick={null}
+        tabIndex="0"
+      >
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+              fontSize="1.05em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              Opportunity Zone
+            </h6>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              Yes (Low-Income Community)
+            </p>
+          </div>
+        </div>
+      </li>
+      <br />
+      <br />
+    </ul>
+    <ul
+      className="List__ListWrapper-sc-43f2zq-0 iOWfKZ"
+      id={null}
+    >
+      <li
+        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        disabled={false}
+        href={null}
+        id={null}
+        onClick={null}
+        tabIndex="0"
+      >
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+              fontSize="1.05em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              Site Address
+            </h6>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              450 N GRAND AVE LOS ANGELES, CA LOS ANGELES
+            </p>
+          </div>
+        </div>
+      </li>
+      <li
+        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        disabled={false}
+        href={null}
+        id={null}
+        onClick={null}
+        tabIndex="0"
+      >
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+              fontSize="1.05em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              Parcel No. (APN)
+            </h6>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              5408-002-902
+            </p>
+          </div>
+        </div>
+      </li>
+      <li
+        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        disabled={false}
+        href={null}
+        id={null}
+        onClick={null}
+        tabIndex="0"
+      >
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+              fontSize="1.05em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              Legal Information
+            </h6>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              SALT LAKE DEPOT TRACT # 2 LOT 50 BLK A
+            </p>
+          </div>
+        </div>
+      </li>
+      <li
+        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        disabled={false}
+        href={null}
+        id={null}
+        onClick={null}
+        tabIndex="0"
+      >
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+              fontSize="1.05em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              Subdivision
+            </h6>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              SALT LAKE DEPOT
+            </p>
+          </div>
+        </div>
+      </li>
+      <li
+        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        disabled={false}
+        href={null}
+        id={null}
+        onClick={null}
+        tabIndex="0"
+      >
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+              fontSize="1.05em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              Legal Lot
+            </h6>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              50
+            </p>
+          </div>
+        </div>
+      </li>
+      <li
+        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        disabled={false}
+        href={null}
+        id={null}
+        onClick={null}
+        tabIndex="0"
+      >
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+              fontSize="1.05em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              Legal Block
+            </h6>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              A
+            </p>
+          </div>
+        </div>
+      </li>
+      <br />
+      <br />
+    </ul>
+    <ul
+      className="List__ListWrapper-sc-43f2zq-0 iOWfKZ"
+      id={null}
+    >
+      <li
+        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        disabled={false}
+        href={null}
+        id={null}
+        onClick={null}
+        tabIndex="0"
+      >
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+              fontSize="1.05em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              Owner 1
+            </h6>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              L A UNIFIED SCHOOL DIST
+            </p>
+          </div>
+        </div>
+      </li>
+      <li
+        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        disabled={false}
+        href={null}
+        id={null}
+        onClick={null}
+        tabIndex="0"
+      >
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+              fontSize="1.05em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              Owner 2
+            </h6>
+          </div>
+        </div>
+      </li>
+      <li
+        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        disabled={false}
+        href={null}
+        id={null}
+        onClick={null}
+        tabIndex="0"
+      >
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+              fontSize="1.05em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              Owner Address
+            </h6>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              undefined LOS ANGELES, CA LOS ANGELES
+            </p>
+          </div>
+        </div>
+      </li>
+      <li
+        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        disabled={false}
+        href={null}
+        id={null}
+        onClick={null}
+        tabIndex="0"
+      >
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+              fontSize="1.05em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              Vesting Code
+            </h6>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              SW
+            </p>
+          </div>
+        </div>
+      </li>
+      <li
+        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        disabled={false}
+        href={null}
+        id={null}
+        onClick={null}
+        tabIndex="0"
+      >
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+              fontSize="1.05em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              Vesting Code Desc
+            </h6>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              FAMILY
+            </p>
+          </div>
+        </div>
+      </li>
+      <li
+        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        disabled={false}
+        href={null}
+        id={null}
+        onClick={null}
+        tabIndex="0"
+      >
+        <div
+          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+              fontSize="1.05em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              Owner Occupied
+            </h6>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              Y
+            </p>
+          </div>
+        </div>
+      </li>
+      <br />
+      <br />
+    </ul>
+  </div>
+</div>
+`;
+
+exports[` 3`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <div>
+    <h2>
+      My Other Surface
+    </h2>
+    <br />
+    <div>
+      <h4>
+        1st Section
+      </h4>
+      <div>
+        ACREAGE
+         : 
+        10.25
+      </div>
+      <div>
+        ADDRESS_ID
+         : 
+        US_06_037_159289302
+      </div>
+      <div>
+        AGGR_ACREAGE
+         : 
+        10.254133
+      </div>
+      <div>
+        AGGR_GROUP
+         : 
+        100660192_194571250
+      </div>
+      <div>
+        AGGR_LOT_COUNT
+         : 
+        1
+      </div>
+      <div>
+        APN
+         : 
+        5408-002-902
+      </div>
+      <div>
+        APN_UNF
+         : 
+        5408002902
+      </div>
+      <div>
+        ASMT_YEAR
+         : 
+        2019
+      </div>
+      <div>
+        ASSOCIATE_PARCEL_COUNT
+         : 
+        1
+      </div>
+      <div>
+        ASSR_ACREAGE
+         : 
+        10.25
+      </div>
+      <div>
+        ASSR_SQFT
+         : 
+        446636
+      </div>
+      <div>
+        BUILDING_SQFT
+         : 
+        23415
+      </div>
+      <div>
+        CAL_ACREAGE
+         : 
+        10.2533
+      </div>
+      <div>
+        CAL_SQFT
+         : 
+        446634
+      </div>
+      <div>
+        CENSUS_BLOCK_GROUP
+         : 
+        1
+      </div>
+      <div>
+        CENSUS_TRACT
+         : 
+        207101
+      </div>
+      <div>
+        COUNTY
+         : 
+        LOS ANGELES
+      </div>
+      <div>
+        FIPS_CODE
+         : 
+        06037
+      </div>
+      <div>
+        LAND_SQFT
+         : 
+        446636
+      </div>
+      <div>
+        LANDUSE_CODE
+         : 
+        650
+      </div>
+      <div>
+        LANDUSE_DESC
+         : 
+        SCHOOL
+      </div>
+      <div>
+        LEGAL_1
+         : 
+        TRACT NO 26838 LOT 1
+      </div>
+      <div>
+        LOCATION_ID
+         : 
+        US_06_037_5408002902
+      </div>
+      <div>
+        LOT_NUMBER
+         : 
+        1
+      </div>
+      <div>
+        MAP_LINK
+         : 
+        5408-002-902
+      </div>
+      <div>
+        MAP_REFERENCE_1
+         : 
+        -
+      </div>
+      <div>
+        OWNER_ADDRESS
+         : 
+        333 S BEAUDRY AVE
+      </div>
+      <div>
+        OWNER_CITY
+         : 
+        LOS ANGELES
+      </div>
+      <div>
+        OWNER_NAME_1
+         : 
+        L A UNIFIED SCHOOL DIST
+      </div>
+      <div>
+        OWNER_OCCUPIED
+         : 
+        N
+      </div>
+      <div>
+        OWNER_STATE
+         : 
+        CA
+      </div>
+      <div>
+        OWNER_ZIP
+         : 
+        90017
+      </div>
+      <div>
+        PARCEL_APN
+         : 
+        5408002902
+      </div>
+      <div>
+        PARKING_SPACES
+         : 
+        0
+      </div>
+      <div>
+        PROPERTY_ID
+         : 
+        060371222436
+      </div>
+      <div>
+        SITE_ADDR
+         : 
+        450 N GRAND AVE
+      </div>
+      <div>
+        SITE_CITY
+         : 
+        LOS ANGELES
+      </div>
+      <div>
+        SITE_STATE
+         : 
+        CA
+      </div>
+      <div>
+        SITE_ZIP
+         : 
+        90012
+      </div>
+      <div>
+        STORIES_NUMBER
+         : 
+        2
+      </div>
+      <div>
+        TAX_ID
+         : 
+        US_06_037_5408-002-902
+      </div>
+      <div>
+        TOTAL_BATHS_CALCULATED
+         : 
+        0
+      </div>
+      <div>
+        TRACT_NUMBER
+         : 
+        26838
+      </div>
+      <div>
+        USE_CODE_MUNI
+         : 
+        8832
+      </div>
+      <div>
+        USE_CODE_STD_CTGR_DESC
+         : 
+        MISCELLANEOUS
+      </div>
+      <div>
+        USE_CODE_STD_DESC
+         : 
+        SCHOOL
+      </div>
+      <div>
+        VAL_ASSD
+         : 
+        3847860
+      </div>
+      <div>
+        VAL_ASSD_LAND
+         : 
+        3847860
+      </div>
+      <div>
+        YR_BLT
+         : 
+        1976
+      </div>
+      <div>
+        ZONING
+         : 
+        LAPF
+      </div>
+      <br />
+      <br />
+    </div>
+  </div>
+</div>
+`;
