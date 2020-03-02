@@ -48,16 +48,14 @@ const parseContent = (rawContent, fieldFilter) => {
       // no displayFields so we will just show the raw key-value pairs provided in the records array
       // excluding empty fields and system fields (or w/e fields are excluded by fieldFilter if provided by user)
       rawSection.records.forEach((record) => {
-        Object.keys(record).filter((rawFieldName) => {
-          return fieldFilter(rawFieldName, record[rawFieldName]);
-        }).forEach((rawFieldName) => {
-          const fieldValue = record[rawFieldName];
+        Object.keys(record).forEach((rawFieldName) => {
           // need to be careful to not include any key-val pairs where the
-          // val isn't a string or number, as this will cause issues when rendering
-          if (typeof fieldValue === "string" || !isNaN(fieldValue)) {
+          // val isn't a string, as this will cause issues when rendering
+          const fieldValue = record[rawFieldName];
+          if (fieldFilter(rawFieldName, fieldValue)) {
             parsedDisplayFields.push({
               label: rawFieldName,
-              value: record[rawFieldName],
+              value: record[rawFieldName].toString(),
             });
           }
         });
@@ -115,7 +113,7 @@ Surface.defaultProps = {
 
 Surface.propTypes = {
   fieldFilter: PropTypes.func,
-  template: PropTypes.oneOf([PropTypes.function, PropTypes.string]).isRequired,
+  surfaceTemplate: PropTypes.oneOf([PropTypes.function, PropTypes.string]).isRequired,
   content: PropTypes.shape({
     title: PropTypes.string.isRequired,
     sections: PropTypes.arrayOf(PropTypes.shape({
