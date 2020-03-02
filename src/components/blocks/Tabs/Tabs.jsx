@@ -90,7 +90,7 @@ function Tabs({
 Tab.propTypes = {
   count: PropTypes.string,
   disabled: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
-  htmlFor: PropTypes.node,
+  htmlFor: PropTypes.string,
   icon: PropTypes.string,
   id: PropTypes.string,
   isSelected: PropTypes.bool,
@@ -110,7 +110,7 @@ Tab.defaultProps = {
 
 Tabs.propTypes = {
   children: PropTypes.node,
-  data: PropTypes.oneOfType([PropTypes.array, PropTypes.string]),
+  data: PropTypes.arrayOf(PropTypes.shape(Tab.propTypes)),
   disabled: PropTypes.bool,
   id: PropTypes.string,
   vertical: PropTypes.bool,
