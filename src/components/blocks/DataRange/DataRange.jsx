@@ -153,8 +153,7 @@ DataRange.propTypes = {
   label: PropTypes.string,
   max: PropTypes.oneOfType([textType, selectType]),
   min: PropTypes.oneOfType([textType, selectType]),
-  select: PropTypes.oneOfType([textType, selectType]),
-  // select: selectType,
+  select: selectType,
 };
 DataRange.defaultProps = {
   disabled: false,
