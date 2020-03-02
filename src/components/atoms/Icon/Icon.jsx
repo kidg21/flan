@@ -236,7 +236,6 @@ function Icon({
       rotation={_rotation}
       size={size}
       spin={spin}
-      title={id}
     />
   );
 
