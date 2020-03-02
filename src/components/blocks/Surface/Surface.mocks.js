@@ -233,6 +233,16 @@ export const mockRecords = [
   },
 ];
 
+export const mockContentNoDisplayFields = {
+  title: "My Other Surface",
+  sections: [
+    {
+      title: "1st Section",
+      records: [mockRecords[0]],
+    },
+  ],
+};
+
 export const mockContent = {
   title: "My Surface",
   sections: [

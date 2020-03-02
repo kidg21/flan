@@ -64,7 +64,7 @@ const SummaryPanelTemplate = (props) => {
               );
             })}
             {/* finally, map through the section's standalone commands */}
-            Commands:
+            {section.commands.length > 0 ? "Commands:" : null}
             {section.commands.map((command) => {
               return (<button onClick={command.onClick}>{command.label}</button>);
             })}
