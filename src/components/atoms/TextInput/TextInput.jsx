@@ -202,7 +202,6 @@ function TextInput({
         placeholderColor={placeholderColor}
         readonly={readonly}
         rows={rows} // textarea attribute
-        title={id} // input attribute
         type={type} // input attribute
         value={value}
       />
