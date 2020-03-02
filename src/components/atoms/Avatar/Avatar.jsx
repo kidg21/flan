@@ -40,7 +40,7 @@ const TagContainer = styled.div`
 `;
 
 function Avatar({
-  alt, brand, icon, id, label, media, onClick, size, type,
+  alt, brand, icon, id, label, onClick, size, type,
 }) {
   let labelType;
   let iconType;
@@ -76,10 +76,15 @@ function Avatar({
     action: "action80",
   };
 
-
   let backgroundColor = type ? (typeHash[type] || type.toLowerCase()) : "action40";
   const textColor = "inverse";
 
+  let media = null;
+  try {
+    media = new URL(icon);
+  } catch (ex) {
+    media = null;
+  }
 
   if (media) {
     iconType = (
@@ -117,7 +122,6 @@ function Avatar({
     }
   }
 
-
   return (
     <TagContainer
       alt={alt}
@@ -139,11 +143,15 @@ function Avatar({
 Avatar.propTypes = {
   alt: PropTypes.string,
   brand: PropTypes.string,
-  /** Enter the name of the icon as the prop value. (ex. icon='circle' */
+  /** Option 1:
+   * <br>
+   * Enter the name of the icon as the prop value. (ex. icon="circle"
+   *  Option 2:
+   * <br>
+   * Enter an image URL. (ex. icon="http://path/to/image/image.png") */
   icon: PropTypes.string,
   id: PropTypes.string,
   label: PropTypes.string,
-  media: PropTypes.string,
   onClick: PropTypes.node,
   size: PropTypes.node,
   /** Options: 'action',  'info', 'success', 'warning', 'alert' */
@@ -156,7 +164,6 @@ Avatar.defaultProps = {
   icon: null,
   id: null,
   label: null,
-  media: null,
   onClick: null,
   size: null,
   type: null,
