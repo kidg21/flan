@@ -52,7 +52,7 @@ function Control({
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
 
   return (
-    <DisabledContext.Provider value={disabled}>
+    <DisabledContext.Provider value={isDisabled}>
       <ControlWrapper
         id={id}
         disabled={isDisabled}
@@ -77,7 +77,7 @@ function Control({
 
 Segment.propTypes = {
   disabled: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
-  icon: PropTypes.node,
+  icon: PropTypes.string,
   id: PropTypes.string,
   isSelected: PropTypes.bool,
   label: PropTypes.string,
@@ -94,7 +94,7 @@ Segment.defaultProps = {
 
 Control.propTypes = {
   children: PropTypes.node,
-  data: PropTypes.oneOfType([PropTypes.array, PropTypes.string]),
+  data: PropTypes.arrayOf(PropTypes.shape(Segment.propTypes)),
   disabled: PropTypes.bool,
   id: PropTypes.string,
 };
