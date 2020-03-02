@@ -136,7 +136,12 @@ function Calendar({
 
 Calendar.propTypes = {
   className: PropTypes.string,
-  date: PropTypes.shape({}),
+  date: PropTypes.shape({
+    onBlur: PropTypes.func,
+    onChange: PropTypes.func,
+    onFocus: PropTypes.func,
+    value: PropTypes.string,
+  }),
   disabled: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   helpText: PropTypes.string,
@@ -151,7 +156,12 @@ Calendar.propTypes = {
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
   pattern: PropTypes.string,
-  time: PropTypes.shape({}),
+  time: PropTypes.shape({
+    onBlur: PropTypes.func,
+    onChange: PropTypes.func,
+    onFocus: PropTypes.func,
+    value: PropTypes.string,
+  }),
   type: PropTypes.oneOf(["date", "time", "datetime"]),
   value: PropTypes.string,
   warning: PropTypes.string,
@@ -159,7 +169,12 @@ Calendar.propTypes = {
 
 Calendar.defaultProps = {
   className: null,
-  date: {},
+  date: {
+    onBlur: null,
+    onChange: null,
+    onFocus: null,
+    value: null,
+  },
   disabled: null,
   error: null,
   helpText: null,
@@ -172,7 +187,12 @@ Calendar.defaultProps = {
   onChange: null,
   onFocus: () => { },
   pattern: null,
-  time: {},
+  time: {
+    onBlur: null,
+    onChange: null,
+    onFocus: null,
+    value: null,
+  },
   type: "date",
   value: null,
   warning: null,
