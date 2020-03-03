@@ -7,9 +7,9 @@ import Form, { Section } from "layout/Form";
 import InputBlock from "blocks/InputBlock";
 
 const button = {
-  label: "upload",
+  label: "Upload",
   type: "",
-  onClick: () => {},
+  onClick: () => { },
   color: "",
   disabled: false,
 };
@@ -90,7 +90,8 @@ storiesOf("Blocks|Input Block", module)
           helpText="Play with Knobs to see what this baby can do!"
         />
       );
-    })
+    },
+  )
   .add("Knobs", () => {
     return (
       <InputBlock
@@ -115,19 +116,19 @@ storiesOf("Blocks|Input Block", module)
         )}
         text={text("text", "", "Labels")}
         icon={options(
-            "pre-icon",
-            {
-              none: null,
-              user_circle: "user_circle",
-              down: "down",
-              bookmark: "bookmark_solid",
-              plus: "plus",
-              print: "print",
-            },
-            "user_circle",
-            { display: "select" },
-            "Icon",
-          )
+          "pre-icon",
+          {
+            none: null,
+            user_circle: "user_circle",
+            down: "down",
+            bookmark: "bookmark_solid",
+            plus: "plus",
+            print: "print",
+          },
+          "user_circle",
+          { display: "select" },
+          "Icon",
+        )
         }
         // button={text("button label", "Button", "Button")}
         button={object("button", button, "Button")}
@@ -207,8 +208,8 @@ storiesOf("Blocks|Input Block", module)
     return (
       <InputBlock
         label="Input Block ( Post-Label )"
-        textInputs={inputsOne}
         text="postfix"
+        textInputs={inputsOne}
         helpText="Hang in there, buddy, I'm here to help!"
       />
     );

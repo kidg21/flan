@@ -8,6 +8,7 @@ import Grid from "layout/Grid";
 import Text, { Label } from "base/Typography";
 import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";
+import Icon from "atoms/Icon";
 import Button from "atoms/Button";
 
 const TextInputContainer = styled(Grid)`
@@ -16,6 +17,31 @@ const TextInputContainer = styled(Grid)`
   }};
   align-items: center;
   width: 100%;
+`;
+
+const PrePost = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ${(props) => {
+    return props.theme.palette.neutral20;
+  }};
+  border: ${(props) => {
+    return `1px solid ${props.theme.palette.neutral60}`;
+  }};
+  border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
+  }};
+  text-transform: lowercase;
+  height: 100%;
+  padding: 0.25rem 1rem;
+  cursor: default;
+  > * {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: 1px;
+  }
 `;
 
 function InputBlock({
@@ -122,9 +148,9 @@ function InputBlock({
   } else if (text) {
     inputContainer = (
       <Grid columns={gridColumns} gap="tiny">
-        {prefix ? <Text type="bold" text={text} /> : null}
+        {prefix ? <PrePost><Label text={text} /></PrePost> : null}
         {inputElements}
-        {!prefix ? <Text type="bold" text={text} /> : null}
+        {!prefix ? <PrePost><Label text={text} /></PrePost> : null}
       </Grid>
     );
   } else if (options) {
@@ -153,11 +179,11 @@ function InputBlock({
     inputContainer = (
       <Grid columns={gridColumns} gap="tiny">
         {prefix ? (
-          <Button icon={icon} />
+          <PrePost><Icon icon={icon} fixedWidth /></PrePost>
         ) : null}
         {inputElements}
         {!prefix ? (
-          <Button icon={icon} />
+          <PrePost><Icon icon={icon} fixedWidth /></PrePost>
         ) : null}
       </Grid>
     );
@@ -216,20 +242,21 @@ InputBlock.propTypes = {
   className: PropTypes.string,
   disabled: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
-  warning: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   helpText: PropTypes.string,
   icon: PropTypes.string,
   id: PropTypes.string,
   isRequired: PropTypes.bool,
   label: PropTypes.string,
+  onBlur: PropTypes.func,
   onChange: PropTypes.func,
+  onFocus: PropTypes.func,
   onKeyPress: PropTypes.func,
   options: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string,
     value: PropTypes.any,
   })),
   prefix: PropTypes.bool,
-  selectOptions: PropTypes.any,
+  selectOptions: PropTypes.string,
   text: PropTypes.string,
   textInputs: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
@@ -240,8 +267,7 @@ InputBlock.propTypes = {
     value: PropTypes.string,
     readonly: PropTypes.bool,
   })),
-  onBlur: PropTypes.func,
-  onFocus: PropTypes.func,
+  warning: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
 };
 InputBlock.defaultProps = {
   button: null,
@@ -253,15 +279,23 @@ InputBlock.defaultProps = {
   id: null,
   isRequired: false,
   label: null,
+  onBlur: null,
   onChange: null,
+  onFocus: null,
   onKeyPress: null,
   options: null,
   prefix: false,
   selectOptions: null,
   text: null,
-  textInputs: [],
-  onBlur: null,
-  onFocus: null,
+  textInputs: {
+    id: null,
+    placeholder: null,
+    type: null,
+    pattern: null,
+    title: null,
+    value: null,
+    readonly: false,
+  },
   warning: false,
 };
 
