@@ -51,6 +51,7 @@ const StyledButton = styled.button`
   font-weight: ${(props) => {
     return props.fontWeight || "400";
   }};
+  text-transform: capitalize;
   cursor: pointer;
   border-bottom: ${(props) => {
     return props.borderBottom || "";
