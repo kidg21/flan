@@ -127,11 +127,12 @@ function Template({
   let leftPosition;
   let leftWidth;
   let leftIndex;
-  let leftId = left.id;
+  const leftId = left.id;
   let rightPosition;
   let rightWidth;
   let rightIndex;
-  let rightId = right.id;
+  const rightId = right.id;
+  const footerId = footer.id;
   if (screenLarge.matches) {
     leftWidth = "20vw";
     rightWidth = "20vw";
@@ -231,8 +232,9 @@ function Template({
           </RegionRight>
         ) : null}
       </Body>
-      {footer.content ? (
+      {footer ? (
         <Footer
+          id={footerId}
           contentAlign="center"
           padding="2x"
           centerAlign="left"
