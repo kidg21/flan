@@ -4,6 +4,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import SearchBar from "./Search.jsx";
+import Grid from "layout/Grid";
 import Panel from "layout/Panel";
 import List, {ListItem} from "blocks/List";
 
@@ -65,7 +66,10 @@ storiesOf("Blocks|Search", module)
     })
     .add("Error Message", () => {
       return (
-          <SearchBar results={Results} message="We reommend the following based on your key word search" />
+        <Grid columns="1">
+          <SearchBar error="offline" />
+          <SearchBar error="connection" />
+        </Grid>
       );
   })
   .add("More results", () => {

@@ -4,10 +4,10 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Bar from "blocks/Bar";
 import SelectMenu from "atoms/SelectMenu";
-import {Link} from "base/Typography";
+import Text, { Title, Link } from "base/Typography";
 import { viewport } from "Variables";
 import Button from "atoms/Button";
-import Text from "base/Typography";
+import Tabs, { Tab } from "blocks/Tabs";
 import Divider from "atoms/Divider";
 import Form from "layout/Form";
 import Grid from "layout/Grid";
@@ -30,86 +30,108 @@ position: fixed;
 `;
 
 
-
-
-function Search({ showAdvanced, message, moreResults, results, onClickMoreResults, onClickSearch, onClickAdvancedSearch, onClickReset, 
+function Search({
+  showAdvanced, error, moreResults, results, onClickMoreResults, onClickSearch, onClickAdvancedSearch, onClickReset,
 }) {
-
-
-
-const Advanced = (
-  <DropContainer maxHeight="25rem" >
+  const Advanced = (
+    <DropContainer maxHeight="25rem" >
       <Form>
-         <TextInput
-        label="Search by APN"
-        placeholder="APN"
-        type="search"
-      />
-         <TextInput
-         label="Search by Owner"
-        placeholder="Owner"
-        type="search"
-      />
-      <Grid columns="6fr .5fr .5fr">
-          <Link size="2x" text=""/>
-      <Button label="Reset" plain onClick={onClickReset}/>
-      <Button label="Search" solid onClick={onClickAdvancedSearch}/>
-       </Grid>
-       </Form>
-      </DropContainer>
-);
-
-
-// switch (error && error.toLowerCase()) {
-//   case "connection":
-//     buttonColor = "success80";
-//     fontColor = buttonColor;
-//     tintColor = "success20";
-//     shadeColor = "success100";
-//     break;
-//   case "warning":
-
-  const messages = (
-    <Bar 
-    padding="2x"
-    center={<Text size="2x" text={message}/>}
-    />
+        <Tabs>
+          <Tab label="Owner" isSelected/>
+          <Tab label="APN" />
+        </Tabs>
+        <TextInput
+          label="Search by Owner"
+          placeholder="Owner"
+          type="search"
+        />
+        <Grid columns="6fr .5fr .5fr">
+          <Text size="2x" text="" />
+          <Button label="Reset" plain onClick={onClickReset} />
+          <Button label="Search" solid onClick={onClickAdvancedSearch} />
+        </Grid>
+      </Form>
+    </DropContainer>
   );
 
+
+  let message;
+
+  switch (error) {
+    case "connection":
+      message = (
+        <React.Fragment>
+          <Bar
+            padding="2x"
+            center={<Icon icon="signal_none" size="3x" />}
+          />
+          <Bar
+            center={<Text text="Check your internet connection" />}
+          />
+        </React.Fragment>
+      );
+      break;
+    case "offline":
+      message = (
+        <React.Fragment>
+          <Bar
+            padding="2x"
+            center={<Icon icon="signal_none" size="3x" />}
+          />
+          <Bar
+            center={<Text text="You are offline" />}
+          />
+        </React.Fragment>
+      );
+      break;
+    default:
+      message = (
+        <Bar
+          padding="2x"
+          center={<Text text="We reommend the following based on your key word search" />}
+        />
+      );
+      break;
+  }
+
+
   const more = (
-    <Bar 
-    padding="top"
-    center={<Link size="2x" text="View More Results" onClick={onClickMoreResults}/>}
+    <Bar
+      padding="top"
+      center={<Link size="2x" text="View More Results" onClick={onClickMoreResults} />}
     />
   );
 
   const Results = (
-    <DropContainer maxHeight="25rem" >
-      { message ? <React.Fragment>{messages}</React.Fragment> : null}
-        <List interactive>
-          {results}
-        </List>
-        { moreResults ? <React.Fragment>{more}</React.Fragment> : null}
-    </DropContainer>
-);
+    <List interactive>
+      {results}
+    </List>
+  );
+
+  const Body = (
+    <React.Fragment>
+      { message ? <React.Fragment>{message}</React.Fragment> : null}
+      { results ? <React.Fragment>{ Results }</React.Fragment> : null}
+      { moreResults ? <React.Fragment>{more}</React.Fragment> : null}
+    </React.Fragment>
+  );
 
 
   return (
-      <Grid columns="1" gap="tiny">
-    <Grid columns="9fr .5fr .5fr">
-      <TextInput
-        id="111"
-        placeholder="Search Location"
-        type="search"
-      >
-        </TextInput>
-    
-    <Button icon="search" solid onClick={onClickSearch}/>
-    <Button icon="more" plain/>
-    </Grid>
-    { results ? <Grid columns="9fr .5fr .5fr">{Results}</Grid> : null}
-      { showAdvanced ? <React.Fragment>{Advanced}</React.Fragment> : null}
+    <Grid columns="1" gap="tiny">
+      <Grid columns="9fr .5fr .5fr">
+        <TextInput
+          id="111"
+          placeholder="Search Location"
+          type="search"
+        />
+
+        <Button icon="search" solid onClick={onClickSearch} />
+        <Button icon="more" plain />
       </Grid>
+      { error || results ? <Grid columns="9fr .5fr .5fr"> <DropContainer maxHeight="25rem" >{Body}</DropContainer></Grid> : null}
+      { showAdvanced ? <React.Fragment>{Advanced}</React.Fragment> : null}
+    </Grid>
   );
 }
 
@@ -121,7 +143,7 @@ Search.propTypes = {
 
 Search.defaultProps = {
   id: null,
-  
+
 };
 
 export default Search;

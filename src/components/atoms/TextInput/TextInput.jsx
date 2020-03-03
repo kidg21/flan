@@ -39,8 +39,8 @@ const Input = styled.input`
   }};
   ::placeholder {
     font-weight: initial;
-    font-size: 0.876em;
-    letter-spacing: .5px;
+    font-size: 0.90em;
+    letter-spacing: 0.5px;
     color: ${(props) => {
     return (
       props.theme.text[props.placeholderColor] || props.theme.text.secondary
