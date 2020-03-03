@@ -8,7 +8,7 @@ import Text, { Title } from "base/Typography";
 
 
 function Accordion({
-  children, description, id, onClick, open, title, hideIcon, header
+  children, description, id, onClick, open, title, hideIcon, header,
 }) {
   let rotation;
   if (open) {
