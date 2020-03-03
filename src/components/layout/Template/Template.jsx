@@ -127,9 +127,11 @@ function Template({
   let leftPosition;
   let leftWidth;
   let leftIndex;
+  let leftId = left.id;
   let rightPosition;
   let rightWidth;
   let rightIndex;
+  let rightId = right.id;
   if (screenLarge.matches) {
     leftWidth = "20vw";
     rightWidth = "20vw";
@@ -207,6 +209,7 @@ function Template({
       <Body>
         {left ? (
           <RegionLeft
+            id={leftId}
             position={leftPosition}
             width={leftWidth}
             zIndex={leftIndex}
@@ -218,6 +221,7 @@ function Template({
         <RegionMain>{main}</RegionMain>
         {right ? (
           <RegionRight
+            id={rightId}
             position={rightPosition}
             width={rightWidth}
             zIndex={rightIndex}
