@@ -276,27 +276,34 @@ storiesOf("Blocks|List", module)
     );
   })
   .add("List with onClick", () => {
+    const handleClick = () => {
+      console.log("list item clicked")
+    }
     return (
         <List interactive>
           <ListItem
             title="List Item"
             description="This is the description"
-            onClick
+            onClick={handleClick}
+            pre={{label: "pre-label"}}
           />
           <ListItem
             title="List Item"
             description="This is the description"
-            onClick
+            onClick={handleClick}
+            post={{type: "label", label: "post-label"}}
           />
           <ListItem
             title="List Item"
             description="This is the description"
-            onClick
+            onClick={handleClick}
+            pre={{label: "pre-label"}}
+            post={{type: "label", label: "post-label"}}
           />
           <ListItem
             title="List Item"
             description="This is the description"
-            onClick
+            onClick={handleClick}
           />
         </List>
     );

@@ -10,7 +10,6 @@ exports[` 1`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -37,7 +36,6 @@ exports[` 1`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -64,7 +62,6 @@ exports[` 1`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -99,7 +96,6 @@ exports[` 2`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -126,7 +122,6 @@ exports[` 2`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -153,7 +148,6 @@ exports[` 2`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -188,7 +182,6 @@ exports[` 3`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -223,7 +216,6 @@ exports[` 3`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -258,7 +250,6 @@ exports[` 3`] = `
     disabled={true}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="-1"
   >
     <div
@@ -301,7 +292,6 @@ exports[` 4`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -336,7 +326,6 @@ exports[` 4`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -371,7 +360,6 @@ exports[` 4`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -406,7 +394,6 @@ exports[` 4`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -441,7 +428,6 @@ exports[` 4`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -484,7 +470,6 @@ exports[` 5`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -540,7 +525,6 @@ exports[` 5`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -596,7 +580,6 @@ exports[` 5`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -652,7 +635,6 @@ exports[` 5`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -716,7 +698,6 @@ exports[` 6`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -783,7 +764,6 @@ exports[` 6`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -850,7 +830,6 @@ exports[` 6`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -917,7 +896,6 @@ exports[` 6`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -992,7 +970,6 @@ exports[` 7`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -1060,7 +1037,6 @@ exports[` 7`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -1128,7 +1104,6 @@ exports[` 7`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -1187,7 +1162,6 @@ exports[` 7`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -1263,7 +1237,6 @@ exports[` 8`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -1317,7 +1290,6 @@ exports[` 8`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -1371,7 +1343,6 @@ exports[` 8`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -1425,7 +1396,6 @@ exports[` 8`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -1487,7 +1457,6 @@ exports[` 9`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -1549,7 +1518,6 @@ exports[` 9`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -1611,7 +1579,6 @@ exports[` 9`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -1673,7 +1640,6 @@ exports[` 9`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={null}
     tabIndex="0"
   >
     <div
@@ -1743,7 +1709,6 @@ exports[` 10`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={true}
     tabIndex="0"
   >
     <div
@@ -1752,11 +1717,37 @@ exports[` 10`] = `
       onClick={null}
     >
       <div
-        className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+        className="Bar__Slot-sc-1c4axau-0 fJwGTh"
       >
         <a
           className="List__LinkedWrapper-sc-43f2zq-1 kzQnGy"
-          onClick={true}
+          onClick={[Function]}
+        >
+          <div
+            alt={null}
+            className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
+            id={null}
+            label="pre-label"
+            onClick={null}
+            src={null}
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
+              fontSize="1.05em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              pr
+            </h6>
+          </div>
+        </a>
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 bdXCCw"
+      >
+        <a
+          className="List__LinkedWrapper-sc-43f2zq-1 kzQnGy"
+          onClick={[Function]}
         >
           <h6
             className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -1783,7 +1774,6 @@ exports[` 10`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={true}
     tabIndex="0"
   >
     <div
@@ -1792,11 +1782,11 @@ exports[` 10`] = `
       onClick={null}
     >
       <div
-        className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+        className="Bar__Slot-sc-1c4axau-0 cSnMzs"
       >
         <a
           className="List__LinkedWrapper-sc-43f2zq-1 kzQnGy"
-          onClick={true}
+          onClick={[Function]}
         >
           <h6
             className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -1816,6 +1806,30 @@ exports[` 10`] = `
           </p>
         </a>
       </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 ikxUaE"
+      >
+        <a
+          className="List__LinkedWrapper-sc-43f2zq-1 kzQnGy"
+          onClick={[Function]}
+        >
+          <div
+            className="Tag__TagContainer-sc-128kb3h-0 jDTvba"
+            id={null}
+            label="post-label"
+            style={null}
+          >
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+              fontSize="0.75em"
+              fontWeight={600}
+              letterSpacing="0.2px"
+            >
+              post-label
+            </p>
+          </div>
+        </a>
+      </div>
     </div>
   </li>
   <li
@@ -1823,7 +1837,6 @@ exports[` 10`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={true}
     tabIndex="0"
   >
     <div
@@ -1832,11 +1845,37 @@ exports[` 10`] = `
       onClick={null}
     >
       <div
-        className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+        className="Bar__Slot-sc-1c4axau-0 fJwGTh"
       >
         <a
           className="List__LinkedWrapper-sc-43f2zq-1 kzQnGy"
-          onClick={true}
+          onClick={[Function]}
+        >
+          <div
+            alt={null}
+            className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
+            id={null}
+            label="pre-label"
+            onClick={null}
+            src={null}
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
+              fontSize="1.05em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              pr
+            </h6>
+          </div>
+        </a>
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 kJMvlj"
+      >
+        <a
+          className="List__LinkedWrapper-sc-43f2zq-1 kzQnGy"
+          onClick={[Function]}
         >
           <h6
             className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -1856,6 +1895,30 @@ exports[` 10`] = `
           </p>
         </a>
       </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 ikxUaE"
+      >
+        <a
+          className="List__LinkedWrapper-sc-43f2zq-1 kzQnGy"
+          onClick={[Function]}
+        >
+          <div
+            className="Tag__TagContainer-sc-128kb3h-0 jDTvba"
+            id={null}
+            label="post-label"
+            style={null}
+          >
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+              fontSize="0.75em"
+              fontWeight={600}
+              letterSpacing="0.2px"
+            >
+              post-label
+            </p>
+          </div>
+        </a>
+      </div>
     </div>
   </li>
   <li
@@ -1863,7 +1926,6 @@ exports[` 10`] = `
     disabled={false}
     href={null}
     id={null}
-    onClick={true}
     tabIndex="0"
   >
     <div
@@ -1876,7 +1938,7 @@ exports[` 10`] = `
       >
         <a
           className="List__LinkedWrapper-sc-43f2zq-1 kzQnGy"
-          onClick={true}
+          onClick={[Function]}
         >
           <h6
             className="Typography__TitleText-sc-19auepv-2 ffuBqO"

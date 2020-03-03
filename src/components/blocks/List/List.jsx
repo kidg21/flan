@@ -1,3 +1,4 @@
+/* eslint-disable complexity */
 /* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
@@ -106,29 +107,19 @@ function ListItem({
 }) {
   let leftContent;
   if (pre && (pre.label || pre.icon)) {
-    leftContent = <Avatar label={pre.label} icon={pre.icon} disabled={disabled} />;
+    const avatar = <Avatar label={pre.label} icon={pre.icon} disabled={disabled} />;
+    leftContent = onClick ? (<LinkedWrapper onClick={onClick}>{avatar}</LinkedWrapper>) : avatar;
   }
 
-  let centerContent;
 
-  if (onClick) {
-    centerContent = (
-      <LinkedWrapper onClick={onClick}>
-        <React.Fragment >
-          <Title text={title} disabled={disabled} />
-          {description ? (<Text text={description} disabled={disabled} />
-          ) : null}
-        </React.Fragment>
-      </LinkedWrapper>
-    );
-  } else {
-    centerContent = (
-      <React.Fragment >
-        <Title text={title} disabled={disabled} />
-        {description ? (<Text text={description} disabled={disabled} />
-        ) : null}
-      </React.Fragment>);
-  }
+  const text = (
+    <React.Fragment >
+      <Title text={title} disabled={disabled} />
+      {description ? (<Text text={description} disabled={disabled} />
+      ) : null}
+    </React.Fragment>);
+
+  const centerContent = onClick ? (<LinkedWrapper onClick={onClick}>{text}</LinkedWrapper>) : text;
 
 
   let rightContent;
@@ -139,7 +130,8 @@ function ListItem({
     } else if (postType === "toggle") {
       rightContent = <Switch label={post.label} align="right" disabled={disabled} />;
     } else if (postType === "label" && post.label) {
-      rightContent = <Tag label={post.label} />;
+      const tag = <Tag label={post.label} />;
+      rightContent = onClick ? (<LinkedWrapper onClick={onClick}>{tag}</LinkedWrapper>) : tag;
     }
   }
 
