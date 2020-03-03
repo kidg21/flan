@@ -50,6 +50,7 @@ const CommandName = styled(Label)`
   font-weight: 700;
   letter-spacing: 1px;
   color: inherit;
+  text-transform: capitalize;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
