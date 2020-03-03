@@ -20,10 +20,6 @@ import InputBlock from "blocks/InputBlock";
 import Card from "elements/Card";
 import List, { ListItem } from "blocks/List";
 
-const SearchWrapper = styled.section`
-padding: 1rem;
-`;
-
 
 const DropContainer = styled(Container)`
 position: fixed;
@@ -34,24 +30,30 @@ function Search({
   showAdvanced, error, moreResults, results, onClickMoreResults, onClickSearch, onClickAdvancedSearch, onClickReset,
 }) {
   const Advanced = (
-    <DropContainer maxHeight="25rem" >
-      <Form>
-        <Tabs>
-          <Tab label="Owner" isSelected/>
-          <Tab label="APN" />
-        </Tabs>
-        <TextInput
-          label="Search by Owner"
-          placeholder="Owner"
-          type="search"
-        />
-        <Grid columns="6fr .5fr .5fr">
-          <Text size="2x" text="" />
-          <Button label="Reset" plain onClick={onClickReset} />
-          <Button label="Search" solid onClick={onClickAdvancedSearch} />
-        </Grid>
-      </Form>
-    </DropContainer>
+    <Grid columns="9fr .5fr .5fr">
+      <DropContainer maxHeight="25rem" >
+        <Form
+          subtitle="Advanced Search"
+          description="Choose to search by one of the following options."
+        >
+          <TextInput
+            label="Search by Owner"
+            placeholder="Owner"
+            type="search"
+          />
+          <TextInput
+            label="Search by APN"
+            placeholder="APN"
+            type="search"
+          />
+          <Grid columns="6fr .5fr .5fr">
+            <Text size="2x" text="" />
+            <Button label="Reset" plain onClick={onClickReset} />
+            <Button icon="search" solid onClick={onClickAdvancedSearch} />
+          </Grid>
+        </Form>
+      </DropContainer>
+    </Grid>
   );
 
 
@@ -66,6 +68,7 @@ function Search({
             center={<Icon icon="signal_none" size="3x" />}
           />
           <Bar
+            padding="2x"
             center={<Text text="Check your internet connection" />}
           />
         </React.Fragment>
@@ -79,6 +82,7 @@ function Search({
             center={<Icon icon="signal_none" size="3x" />}
           />
           <Bar
+            padding="2x"
             center={<Text text="You are offline" />}
           />
         </React.Fragment>
@@ -125,7 +129,6 @@ function Search({
           placeholder="Search Location"
           type="search"
         />
-
         <Button icon="search" solid onClick={onClickSearch} />
         <Button icon="more" plain />
       </Grid>

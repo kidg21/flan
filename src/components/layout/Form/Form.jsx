@@ -83,7 +83,7 @@ function Form({
         <FormHeader columns="1" gap="tiny">
           {title ? <Title size="2x" weight="bold" text={title} /> : null}
           {subtitle ? <Text size="4x" text={subtitle} /> : null}
-          {description ? <Text text={description} /> : null}
+          {description ? <Text size="2x" text={description} /> : null}
         </FormHeader>
       ) : null}
       <FormInputs setColumns={setColumns} gap="large">
