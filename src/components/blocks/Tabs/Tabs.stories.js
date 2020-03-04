@@ -1,18 +1,9 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
-import {
-  withKnobs,
-  text,
-  boolean,
-  select,
-  optionsKnob as options,
-} from "@storybook/addon-knobs";
-import Tabs, { Tab } from "blocks/Tabs";
+import Tabs, { TabsItem } from "blocks/Tabs";
 
 const tabNames = [
   {
@@ -42,9 +33,9 @@ storiesOf("Blocks|Tabs", module)
     () => {
       return (
         <Tabs>
-          <Tab label="Tab" isSelected />
-          <Tab label="Tab" />
-          <Tab label="Tab" />
+          <TabsItem label="Tab" isSelected />
+          <TabsItem label="Tab" />
+          <TabsItem label="Tab" />
         </Tabs>
       );
     },
@@ -58,7 +49,7 @@ storiesOf("Blocks|Tabs", module)
       <Tabs
         disabled={boolean("disable", false, "Tabs")}
       >
-        <Tab
+        <TabsItem
           icon={select(
             "icon 1",
             {
@@ -78,7 +69,7 @@ storiesOf("Blocks|Tabs", module)
             alert("Tab 1 clicked!");
           }}
         />
-        <Tab
+        <TabsItem
           icon={select(
             "icon 2",
             {
@@ -98,7 +89,7 @@ storiesOf("Blocks|Tabs", module)
             alert("Tab 2 clicked!");
           }}
         />
-        <Tab
+        <TabsItem
           icon={select(
             "icon 3",
             {
@@ -118,7 +109,7 @@ storiesOf("Blocks|Tabs", module)
             alert("Tab 3 clicked!");
           }}
         />
-        <Tab
+        <TabsItem
           icon={select(
             "icon 4",
             {
@@ -138,7 +129,7 @@ storiesOf("Blocks|Tabs", module)
             alert("Tab 4 clicked!");
           }}
         />
-        <Tab
+        <TabsItem
           icon={select(
             "icon 5",
             {
@@ -167,45 +158,45 @@ storiesOf("Blocks|Tabs", module)
   .add("Single-Row (default)", () => {
     return (
       <Tabs>
-        <Tab label="Tab" />
-        <Tab label="Tab" />
-        <Tab label="Tab" />
+        <TabsItem label="Tab" />
+        <TabsItem label="Tab" />
+        <TabsItem label="Tab" />
       </Tabs>
     );
   })
   .add("Vertical Column", () => {
     return (
       <Tabs vertical>
-        <Tab label="Tab" />
-        <Tab label="Tab" isSelected />
-        <Tab label="Tab" />
+        <TabsItem label="Tab" />
+        <TabsItem label="Tab" isSelected />
+        <TabsItem label="Tab" />
       </Tabs>
     );
   })
   .add("Icon Tabs", () => {
     return (
       <Tabs>
-        <Tab label="Tab" icon="user" />
-        <Tab label="Tab" icon="user" />
-        <Tab label="Tab" icon="user" />
+        <TabsItem label="Tab" icon="user" />
+        <TabsItem label="Tab" icon="user" />
+        <TabsItem label="Tab" icon="user" />
       </Tabs>
     );
   })
   .add("Icon Only Tabs", () => {
     return (
       <Tabs>
-        <Tab icon="user" />
-        <Tab icon="settings" />
-        <Tab icon="report" />
+        <TabsItem icon="user" />
+        <TabsItem icon="settings" />
+        <TabsItem icon="report" />
       </Tabs>
     );
   })
   .add("Count Tabs", () => {
     return (
       <Tabs>
-        <Tab label="Tab" count="1" />
-        <Tab label="Tab" count="87" />
-        <Tab label="Tab" count="2" />
+        <TabsItem label="Tab" count="1" />
+        <TabsItem label="Tab" count="87" />
+        <TabsItem label="Tab" count="2" />
       </Tabs>
     );
   })
@@ -217,12 +208,12 @@ storiesOf("Blocks|Tabs", module)
       );
     },
   )
-  .add("Disabled (Tab Group)", () => {
+  .add("Disabled (TabsItem Group)", () => {
     return (
       <Tabs disabled>
-        <Tab label="Tab" />
-        <Tab label="Tab" />
-        <Tab label="Tab" />
+        <TabsItem label="Tab" />
+        <TabsItem label="Tab" />
+        <TabsItem label="Tab" />
       </Tabs>
     );
   })
@@ -231,9 +222,9 @@ storiesOf("Blocks|Tabs", module)
     () => {
       return (
         <Tabs>
-          <Tab label="Tab" />
-          <Tab label="Tab" disabled />
-          <Tab label="Tab" />
+          <TabsItem label="Tab" />
+          <TabsItem label="Tab" disabled />
+          <TabsItem label="Tab" />
         </Tabs>
       );
     },
@@ -244,30 +235,28 @@ storiesOf("Blocks|Tabs", module)
   .add("Interactive", () => {
     return React.createElement(() => {
       const [activeSingleTab, setActiveSingleTab] = useState("tab1");
+      const tabButtons = [
+        {
+          id: "Tab 1",
+          label: "Tab 1",
+          isSelected: activeSingleTab === "tab1",
+          onClick: () => { setActiveSingleTab("tab1"); },
+        },
+        {
+          id: "Tab 2",
+          label: "Tab 2",
+          isSelected: activeSingleTab === "tab2",
+          onClick: () => { setActiveSingleTab("tab2"); },
+        },
+        {
+          id: "Tab 3",
+          label: "Tab 3",
+          isSelected: activeSingleTab === "tab3",
+          onClick: () => { setActiveSingleTab("tab3"); },
+        },
+      ];
       return (
-        <Tabs columns="">
-          <Tab
-            label="Tab 1"
-            isSelected={activeSingleTab === "tab1"}
-            onClick={() => {
-              setActiveSingleTab("tab1");
-            }}
-          />
-          <Tab
-            label="Tab 2"
-            isSelected={activeSingleTab === "tab2"}
-            onClick={() => {
-              setActiveSingleTab("tab2");
-            }}
-          />
-          <Tab
-            label="Tab 3"
-            isSelected={activeSingleTab === "tab3"}
-            onClick={() => {
-              setActiveSingleTab("tab3");
-            }}
-          />
-        </Tabs>
+        <Tabs data={tabButtons} />
       );
     });
   });

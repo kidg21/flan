@@ -42,7 +42,7 @@ export { default as MediaBlock } from "./blocks/MediaBlock";
 export { default as Menu } from "./blocks/Menu";
 export { default as RangeSlider } from "./blocks/RangeSlider";
 export { default as Table } from "./blocks/Table";
-export { default as Tabs, Tab } from "./blocks/Tabs";
+export { default as Tabs, TabsItem } from "./blocks/Tabs";
 export { CardList } from "./blocks/List";
 export { Surface } from "./blocks/Surface";
 export { SummaryPanelTemplate } from "./blocks/Surface/SurfaceTemplates";

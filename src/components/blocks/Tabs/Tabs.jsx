@@ -22,7 +22,7 @@ const TabsWrapper = styled.section`
     return props.setWidth || "100%";
   }};
 `;
-function Tab({
+function TabsItem({
   count, disabled, htmlFor, icon, id, isSelected, label, onClick,
 }) {
   const isDisabled =
@@ -70,15 +70,15 @@ function Tabs({
         {children ||
           data.map((item) => {
             return (
-              <Tab
+              <TabsItem
                 count={item.count}
                 disabled={item.disabled || isDisabled}
                 htmlFor={item.htmlFor}
                 icon={item.icon}
                 id={item.id}
-                isSelected={item.isSelected}
                 label={item.label}
                 onClick={item.onClick}
+                isSelected={item.isSelected}
               />
             );
           })}
@@ -87,7 +87,7 @@ function Tabs({
   );
 }
 
-Tab.propTypes = {
+TabsItem.propTypes = {
   count: PropTypes.string,
   disabled: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   htmlFor: PropTypes.string,
@@ -97,7 +97,7 @@ Tab.propTypes = {
   label: PropTypes.string,
   onClick: PropTypes.func,
 };
-Tab.defaultProps = {
+TabsItem.defaultProps = {
   count: null,
   disabled: null,
   htmlFor: null,
@@ -110,7 +110,7 @@ Tab.defaultProps = {
 
 Tabs.propTypes = {
   children: PropTypes.node,
-  data: PropTypes.arrayOf(PropTypes.shape(Tab.propTypes)),
+  data: PropTypes.arrayOf(PropTypes.shape(TabsItem.propTypes)),
   disabled: PropTypes.bool,
   id: PropTypes.string,
   vertical: PropTypes.bool,
@@ -123,4 +123,4 @@ Tabs.defaultProps = {
   vertical: false,
 };
 
-export { Tabs as default, Tab };
+export { Tabs as default, TabsItem };
