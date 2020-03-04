@@ -6,9 +6,27 @@ import Icon from "atoms/Icon";
 import Expander from "utils/Expander";
 import Text, { Title } from "base/Typography";
 
+function AccordionHeader({ title, description }) {
+  return (
+    <React.Fragment>
+      {title ? <Title text={title} /> : null}
+      {description ? <Text text={description} /> : null}
+    </React.Fragment>
+  );
+}
+
+AccordionHeader.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+};
+
+AccordionHeader.defaultProps = {
+  title: "",
+  description: "",
+};
 
 function Accordion({
-  children, description, id, onClick, open, title,
+  children, header, id, onClick, open,
 }) {
   let rotation;
   if (open) {
@@ -16,26 +34,24 @@ function Accordion({
   } else {
     rotation = 0;
   }
+
+  const _header = (header.title || header.description) ? <AccordionHeader {...header} /> : header;
+
   return (
     <Expander
       id={id}
       onClick={onClick}
       open={open}
       header={
-          title || description ? (
-            <Bar
-              contentAlign="center"
-              centerAlign="left"
-              left={
-                <React.Fragment>
-                  {title ? <Title text={title} /> : null}
-                  {description ? <Text text={description} /> : null}
-                </React.Fragment>
-              }
-              rightWidth="max-content"
-              right={children ? <Icon icon="up" rotation={rotation} /> : null}
-            />
-          ) : null}
+        _header ? (
+          <Bar
+            contentAlign="center"
+            centerAlign="left"
+            left={_header}
+            rightWidth="max-content"
+            right={children ? <Icon icon="up" rotation={rotation} /> : null}
+          />
+        ) : null}
     >
       {children}
     </Expander>
@@ -44,19 +60,17 @@ function Accordion({
 
 Accordion.propTypes = {
   children: PropTypes.node,
-  description: PropTypes.string,
+  header: PropTypes.oneOfType([PropTypes.node, PropTypes.shape(AccordionHeader.propTypes)]),
   id: PropTypes.string,
   onClick: PropTypes.func,
   open: PropTypes.bool,
-  title: PropTypes.string,
 };
 Accordion.defaultProps = {
   children: null,
-  description: null,
+  header: null,
   id: null,
   onClick: null,
   open: false,
-  title: null,
 };
 
 export default Accordion;
