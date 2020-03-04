@@ -13,10 +13,10 @@ const Block = styled.div`
 `;
 
 function IconBlock({
-  children, className, data, id, large,
+  children, className, data, id, size,
 }) {
   return (
-    <Block id={id} className={className} large={large} >
+    <Block id={id} className={className} >
       {children ||
         data.map((item) => {
           return (
@@ -32,7 +32,7 @@ function IconBlock({
               onClick={item.onClick}
               pulse={item.pulse}
               rotation={item.rotation}
-              size={large ? "2x" : item.size}
+              size={size}
               spin={item.spin}
               type={item.type}
             />
@@ -46,9 +46,12 @@ IconBlock.propTypes = {
   children: PropTypes.node.isRequired,
   /** className used for extending styles */
   className: PropTypes.string,
-  data: PropTypes.oneOfType([PropTypes.array, PropTypes.string]),
+  data: PropTypes.arrayOf(PropTypes.shape(Icon.propTypes)),
   id: PropTypes.string,
-  large: PropTypes.boolean,
+  /** The 'font-size' of the child Icons is inherited from the parent Icon Block and are relatively sized.
+   * Options: 'xs', 'sm', 'lg', '2x', '3x', '4x', '5x', '6x', '7x', '8x', '9x', '10x'
+  */
+  size: PropTypes.string,
 };
 
 
@@ -56,7 +59,7 @@ IconBlock.defaultProps = {
   className: null,
   data: null,
   id: null,
-  large: false,
+  size: null,
 };
 
 export default IconBlock;
