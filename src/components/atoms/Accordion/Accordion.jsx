@@ -61,7 +61,6 @@ function Accordion({
 Accordion.propTypes = {
   children: PropTypes.node,
   header: PropTypes.oneOfType([PropTypes.node, PropTypes.shape(AccordionHeader.propTypes)]),
-  hideIcon: PropTypes.bool,
   id: PropTypes.string,
   onClick: PropTypes.func,
   open: PropTypes.bool,
@@ -69,7 +68,6 @@ Accordion.propTypes = {
 Accordion.defaultProps = {
   children: null,
   header: null,
-  hideIcon: false,
   id: null,
   onClick: null,
   open: false,
