@@ -94,15 +94,15 @@ function ListItem({
   children,
   description,
   disabled,
+  href,
   id,
   interactive,
   isSelected,
-  title,
-  href,
   onClick,
   post,
   pre,
   tabIndex,
+  title,
 }) {
   let leftContent;
   if (pre && (pre.label || pre.icon)) {
@@ -114,7 +114,7 @@ function ListItem({
   if (onClick) {
     centerContent = (
       <LinkedWrapper onClick={onClick}>
-        <React.Fragment >
+        <React.Fragment>
           <Title text={title} disabled={disabled} />
           {description ? (<Text text={description} disabled={disabled} />
           ) : null}
@@ -127,9 +127,9 @@ function ListItem({
         <Title text={title} disabled={disabled} />
         {description ? (<Text text={description} disabled={disabled} />
         ) : null}
-      </React.Fragment>);
+      </React.Fragment>
+    );
   }
-
 
   let rightContent;
   if (post && post.type) {
@@ -145,7 +145,6 @@ function ListItem({
 
   return (
     <ListItemWrapper
-
       active={active}
       href={href}
       id={id}
@@ -177,15 +176,15 @@ function ListItem({
 
 ListItem.propTypes = {
   active: PropTypes.bool,
-  href: PropTypes.node,
   children: PropTypes.node,
   description: PropTypes.string,
   disabled: PropTypes.bool,
+  href: PropTypes.node,
   id: PropTypes.string,
   interactive: PropTypes.bool,
   isSelected: PropTypes.bool,
-  title: PropTypes.string.isRequired,
   onClick: PropTypes.func,
+  title: PropTypes.string.isRequired,
   post: PropTypes.shape({
     type: PropTypes.string.isRequired,
     label: PropTypes.string,
@@ -198,10 +197,10 @@ ListItem.propTypes = {
 };
 ListItem.defaultProps = {
   active: false,
-  href: null,
   children: null,
   description: null,
   disabled: false,
+  href: null,
   id: null,
   interactive: null,
   isSelected: false,

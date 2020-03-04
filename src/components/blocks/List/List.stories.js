@@ -3,8 +3,6 @@
 import React from "react";
 import List, { ListItem } from "blocks/List";
 
-
-
 storiesOf("Blocks|List", module)
 
   .addDecorator(withKnobs)
@@ -18,7 +16,8 @@ storiesOf("Blocks|List", module)
           <ListItem title="List Item" />
         </List>
       );
-    })
+    },
+  )
   .add("Knobs", () => {
     return (
       <List
@@ -147,28 +146,28 @@ storiesOf("Blocks|List", module)
   })
   .add("Pre-Label", () => {
     return (
-        <List interactive>
-          <ListItem
-            title="List Item"
-            description="This is the description"
-            pre={{ label: "AB" }}
-          />
-          <ListItem
-            title="List Item"
-            description="This is the description"
-            pre={{ label: "CD" }}
-          />
-          <ListItem
-            title="List Item"
-            description="This is the description"
-            pre={{ label: "EF" }}
-          />
-          <ListItem
-            title="List Item"
-            description="This is the description"
-            pre={{ label: "GH" }}
-          />
-        </List>
+      <List interactive>
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          pre={{ label: "AB" }}
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          pre={{ label: "CD" }}
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          pre={{ label: "EF" }}
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          pre={{ label: "GH" }}
+        />
+      </List>
     );
   })
   .add("Pre-Icon", () => {
@@ -277,27 +276,27 @@ storiesOf("Blocks|List", module)
   })
   .add("List with onClick", () => {
     return (
-        <List interactive>
-          <ListItem
-            title="List Item"
-            description="This is the description"
-            onClick
-          />
-          <ListItem
-            title="List Item"
-            description="This is the description"
-            onClick
-          />
-          <ListItem
-            title="List Item"
-            description="This is the description"
-            onClick
-          />
-          <ListItem
-            title="List Item"
-            description="This is the description"
-            onClick
-          />
-        </List>
+      <List interactive>
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          onClick
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          onClick
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          onClick
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          onClick
+        />
+      </List>
     );
   });
