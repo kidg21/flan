@@ -44,21 +44,27 @@ Label text is used to inform users as to what information is requested for a tex
     <React.Fragment>
       <Bar
         padding="2x"
-        leftWidth="5%"
-        centerAlign="left"
         contentAlign="center"
-        left={<Icon icon="check" type="success" size="2x" />}
-        center={<TextInput id="briefLabel" label="Brief Label" />}
+        left={{
+          content: <Icon icon="check" type="success" size="2x" />,
+          left: "5%",
+        }}
+        center={{
+          content: <TextInput id="briefLabel" label="Brief Label" />,
+          align: "left",
+        }}
       />
       <Bar
         padding="2x"
-        leftWidth="5%"
-        centerAlign="left"
         contentAlign="center"
-        left={<Icon icon="close" type="alert" size="2x" />}
-        center={
-          <TextInput id="noLabel" />
-        }
+        left={{
+          content: <Icon icon="close" type="alert" size="2x" />,
+          width: "5%",
+        }}
+        center={{
+          content: <TextInput id="noLabel" />,
+          align: "left",
+        }}
       />
     </React.Fragment>
   </Story>

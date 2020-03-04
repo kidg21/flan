@@ -36,13 +36,15 @@ function FolderEntry({
   return (<Bar
     padding={padding}
     left={<Title>{folder.folder} <Icon icon="delete" onClick={onDeletePermission} /></Title>}
-    right={<SelectMenu
-      options={permissions}
-      selectOptions={folder.permissions}
-      isClearable={false}
-      onChangeState={onChangePermissions}
-    />}
-    rightWidth={selectWidth}
+    right={{
+      content: <SelectMenu
+        options={permissions}
+        selectOptions={folder.permissions}
+        isClearable={false}
+        onChangeState={onChangePermissions}
+      />,
+      width: selectWidth,
+    }}
   />);
 }
 

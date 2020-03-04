@@ -25,15 +25,16 @@ function Accordion({
           title || description ? (
             <Bar
               contentAlign="center"
-              centerAlign="left"
               left={
                 <React.Fragment>
                   {title ? <Title text={title} /> : null}
                   {description ? <Text text={description} /> : null}
                 </React.Fragment>
               }
-              rightWidth="max-content"
-              right={children ? <Icon icon="up" rotation={rotation} /> : null}
+              right={children ? {
+                content: <Icon icon="up" rotation={rotation} />,
+                width: "max-content",
+               } : null}
             />
           ) : null}
     >

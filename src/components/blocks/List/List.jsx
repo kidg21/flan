@@ -161,12 +161,16 @@ function ListItem({
     >
       <DisabledContext.Provider value={disabled}>
         <Bar
-          center={centerContent}
-          centerAlign="left"
+          center={{
+            content: centerContent,
+            align: "left",
+          }}
           contentAlign="center"
           disabled={disabled}
-          left={leftContent}
-          leftWidth="max-content"
+          left={{
+            content: leftContent,
+            width: "max-content",
+          }}
           right={rightContent}
         />
         {children}
