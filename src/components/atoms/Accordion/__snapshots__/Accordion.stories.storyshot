@@ -129,3 +129,83 @@ Array [
   </div>,
 ]
 `;
+
+exports[` 3`] = `
+Array [
+  <div
+    className="Expander__HeaderWrapper-sc-147204-0 insQpf"
+    id={null}
+    onClick={[Function]}
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-0 iylbCl"
+      >
+        <div
+          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 kKsGVj"
+          disabled={false}
+        >
+          <input
+            checked={null}
+            className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+            id="checkbox-id"
+            onBlur={null}
+            onChange={null}
+            onFocus={null}
+            type="checkbox"
+          />
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 Jgtkr"
+            fontSize="0.876em"
+            fontWeight={400}
+            htmlFor="checkbox-id"
+            letterSpacing="0px"
+          >
+            Label 1
+          </label>
+        </div>
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-0 hQRtOo"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-angle-up fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+          color={null}
+          data-icon="angle-up"
+          data-prefix="far"
+          focusable="false"
+          id={null}
+          role="img"
+          style={Object {}}
+          viewBox="0 0 320 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M168.5 164.2l148 146.8c4.7 4.7 4.7 12.3 0 17l-19.8 19.8c-4.7 4.7-12.3 4.7-17 0L160 229.3 40.3 347.8c-4.7 4.7-12.3 4.7-17 0L3.5 328c-4.7-4.7-4.7-12.3 0-17l148-146.8c4.7-4.7 12.3-4.7 17 0z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="Expander__ChildrenWrapper-sc-147204-1 vUVBh"
+    open={false}
+  >
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+      fontSize="0.876em"
+      fontWeight={400}
+      letterSpacing="0px"
+    >
+      hi
+    </p>
+  </div>,
+]
+`;
