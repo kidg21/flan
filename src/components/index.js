@@ -33,7 +33,7 @@ export { default as TextInput } from "./atoms/TextInput";
 export { default as Banner } from "./blocks/Banner";
 export { default as Bar } from "./blocks/Bar";
 export { default as Legend } from "./blocks/Legend";
-export { default as Control, Segment } from "./blocks/Control";
+export { default as Control, ControlItem } from "./blocks/Control";
 export { default as DataRange } from "./blocks/DataRange";
 export { default as List, ListItem } from "./blocks/List";
 export { default as IconBlock } from "./blocks/IconBlock";

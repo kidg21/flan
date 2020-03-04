@@ -3,32 +3,25 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
-import {
-  withKnobs,
-  text,
-  boolean,
-  select,
-  optionsKnob as options,
-} from "@storybook/addon-knobs";
-import Control, { Segment } from "blocks/Control";
+import Control, { ControlItem } from "blocks/Control";
 
 const segmentNames = [
   {
     id: "segment_1",
-    label: "Option 1",
+    label: "Item 1",
   },
   {
     id: "segment_2",
-    label: "Option 2",
+    label: "Item 2",
     disabled: true,
   },
   {
     id: "segment_3",
-    label: "Option 3",
+    label: "Item 3",
   },
   {
     id: "segment_4",
-    label: "Option 4",
+    label: "Item 4",
     isSelected: true,
   },
 ];
@@ -40,9 +33,9 @@ storiesOf("Blocks|Control", module)
     () => {
       return (
         <Control >
-          <Segment label="Active" isSelected />
-          <Segment label="Inactive" />
-          <Segment label="Inactive" />
+          <ControlItem label="Active" isSelected />
+          <ControlItem label="Inactive" />
+          <ControlItem label="Inactive" />
         </Control>
       );
     },
@@ -60,21 +53,21 @@ storiesOf("Blocks|Control", module)
     () => {
       return (
         <Control disabled >
-          <Segment label="Segment" isSelected />
-          <Segment label="Segment" />
-          <Segment label="Segment" />
+          <ControlItem label="Item 1" isSelected />
+          <ControlItem label="Item 2" />
+          <ControlItem label="Item 3" />
         </Control>
       );
     },
   )
   .add(
-    "Disabled (Segment)",
+    "Disabled (ControlItem)",
     () => {
       return (
         <Control>
-          <Segment label="Segment" isSelected />
-          <Segment label="Segment" disabled />
-          <Segment label="Segment" />
+          <ControlItem label="Item 1" isSelected />
+          <ControlItem label="Item 2" disabled />
+          <ControlItem label="Item 3" />
         </Control>
       );
     },
@@ -88,7 +81,7 @@ storiesOf("Blocks|Control", module)
       <Control
         disabled={boolean("disable", false, "Control")}
       >
-        <Segment
+        <ControlItem
           icon={select(
             "icon 1",
             {
@@ -100,12 +93,12 @@ storiesOf("Blocks|Control", module)
               "list": "list",
             },
             null,
-            "Segment 1",
+            "Item 1",
           )}
-          label={text("Segment 1", "Segment 1", "Segment 1")}
-          disabled={boolean("Disable 1", false, "Segment 1")}
+          label={text("Item 1", "Item 1", "Item 1")}
+          disabled={boolean("Disable 1", false, "Item 1")}
         />
-        <Segment
+        <ControlItem
           icon={select(
             "icon 2",
             {
@@ -117,12 +110,12 @@ storiesOf("Blocks|Control", module)
               "list": "list",
             },
             null,
-            "Segment 2",
+            "Item 2",
           )}
-          label={text("Segment 2", "Segment 2", "Segment 2")}
-          disabled={boolean("Disable 2", false, "Segment 2")}
+          label={text("Item 2", "Item 2", "Item 2")}
+          disabled={boolean("Disable 2", false, "Item 2")}
         />
-        <Segment
+        <ControlItem
           icon={select(
             "icon 3",
             {
@@ -134,12 +127,12 @@ storiesOf("Blocks|Control", module)
               "list": "list",
             },
             null,
-            "Segment 3",
+            "Item 3",
           )}
-          label={text("Segment 3", "Segment 3", "Segment 3")}
-          disabled={boolean("Disable 3", false, "Segment 3")}
+          label={text("Item 3", "Item 3", "Item 3")}
+          disabled={boolean("Disable 3", false, "Item 3")}
         />
-        <Segment
+        <ControlItem
           icon={select(
             "icon 4",
             {
@@ -151,12 +144,12 @@ storiesOf("Blocks|Control", module)
               "list": "list",
             },
             null,
-            "Segment 4",
+            "Item 4",
           )}
-          label={text("Segment 4", "Segment 4", "Segment 4")}
-          disabled={boolean("Disable 4", false, "Segment 4")}
+          label={text("Item 4", "Item 4", "Item 4")}
+          disabled={boolean("Disable 4", false, "Item 4")}
         />
-        <Segment
+        <ControlItem
           icon={select(
             "icon 5",
             {
@@ -168,10 +161,10 @@ storiesOf("Blocks|Control", module)
               "list": "list",
             },
             null,
-            "Segment 5",
+            "Item 5",
           )}
-          label={text("Segment 5", "Segment 5", "Segment 5")}
-          disabled={boolean("Disable 5", false, "Segment 5")}
+          label={text("Item 5", "Item 5", "Item 5")}
+          disabled={boolean("Disable 5", false, "Item 5")}
         />
       </Control>
     );
@@ -182,9 +175,9 @@ storiesOf("Blocks|Control", module)
   .add("Default", () => {
     return (
       <Control>
-        <Segment label="Segment" />
-        <Segment label="Segment" />
-        <Segment label="Segment" />
+        <ControlItem label="Item 1" />
+        <ControlItem label="Item 2" />
+        <ControlItem label="Item 3" />
       </Control>
     );
   })
@@ -192,9 +185,9 @@ storiesOf("Blocks|Control", module)
   .add("Icon Control", () => {
     return (
       <Control>
-        <Segment label="Segment" icon="user" />
-        <Segment label="Segment" icon="user" />
-        <Segment label="Segment" icon="user" />
+        <ControlItem label="Item 1" icon="user" />
+        <ControlItem label="Item 2" icon="user" />
+        <ControlItem label="Item 3" icon="user" />
       </Control>
     );
   });
@@ -206,22 +199,22 @@ storiesOf("Blocks|Control", module)
       const [activeSingleControl, setActiveSingleControl] = useState("Control1");
       return (
         <Control>
-          <Segment
-            label="Segment 1"
+          <ControlItem
+            label="Item 1"
             isSelected={activeSingleControl === "Control1"}
             onClick={() => {
               setActiveSingleControl("Control1");
             }}
           />
-          <Segment
-            label="Segment 2"
+          <ControlItem
+            label="Item 2"
             isSelected={activeSingleControl === "Control2"}
             onClick={() => {
               setActiveSingleControl("Control2");
             }}
           />
-          <Segment
-            label="Segment 3"
+          <ControlItem
+            label="Item 3"
             isSelected={activeSingleControl === "Control3"}
             onClick={() => {
               setActiveSingleControl("Control3");
@@ -236,8 +229,8 @@ storiesOf("Blocks|Control", module)
       const [activeToggleControl, setActiveToggleControl] = useState("");
       return (
         <Control>
-          <Segment
-            label="Segment 1"
+          <ControlItem
+            label="Item 1"
             isSelected={activeToggleControl === "Control1"}
             onClick={() => {
               if (activeToggleControl === "Control1") {
@@ -248,8 +241,8 @@ storiesOf("Blocks|Control", module)
               return false;
             }}
           />
-          <Segment
-            label="Segment 2"
+          <ControlItem
+            label="Item 2"
             isSelected={activeToggleControl === "Control2"}
             onClick={() => {
               if (activeToggleControl === "Control2") {
@@ -260,8 +253,8 @@ storiesOf("Blocks|Control", module)
               return false;
             }}
           />
-          <Segment
-            label="Segment 3"
+          <ControlItem
+            label="Item 3"
             isSelected={activeToggleControl === "Control3"}
             onClick={() => {
               if (activeToggleControl === "Control3") {
@@ -283,22 +276,22 @@ storiesOf("Blocks|Control", module)
       const [activeMultiControl3, setActiveMultiControl3] = useState(false);
       return (
         <Control>
-          <Segment
-            label="Segment 1"
+          <ControlItem
+            label="Item 1"
             isSelected={activeMultiControl}
             onClick={() => {
               setActiveMultiControl(!activeMultiControl);
             }}
           />
-          <Segment
-            label="Segment 2"
+          <ControlItem
+            label="Item 2"
             isSelected={activeMultiControl2}
             onClick={() => {
               setActiveMultiControl2(!activeMultiControl2);
             }}
           />
-          <Segment
-            label="Segment 3"
+          <ControlItem
+            label="Item 3"
             isSelected={activeMultiControl3}
             onClick={() => {
               setActiveMultiControl3(!activeMultiControl3);

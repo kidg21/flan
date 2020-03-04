@@ -25,7 +25,7 @@ const ControlWrapper = styled.section`
   };
 `;
 
-function Segment({
+function ControlItem({
   disabled, icon, id, isSelected, label, onClick,
 }) {
   const isDisabled =
@@ -60,7 +60,7 @@ function Control({
         {children ||
           data.map((item) => {
             return (
-              <Segment
+              <ControlItem
                 disabled={item.disabled || isDisabled}
                 icon={item.icon}
                 id={item.id}
@@ -75,7 +75,7 @@ function Control({
   );
 }
 
-Segment.propTypes = {
+ControlItem.propTypes = {
   disabled: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   icon: PropTypes.string,
   id: PropTypes.string,
@@ -83,7 +83,7 @@ Segment.propTypes = {
   label: PropTypes.string,
   onClick: PropTypes.func,
 };
-Segment.defaultProps = {
+ControlItem.defaultProps = {
   disabled: null,
   icon: null,
   id: null,
@@ -94,7 +94,7 @@ Segment.defaultProps = {
 
 Control.propTypes = {
   children: PropTypes.node,
-  data: PropTypes.arrayOf(PropTypes.shape(Segment.propTypes)),
+  data: PropTypes.arrayOf(PropTypes.shape(ControlItem.propTypes)),
   disabled: PropTypes.bool,
   id: PropTypes.string,
 };
@@ -105,4 +105,4 @@ Control.defaultProps = {
   id: null,
 };
 
-export { Control as default, Segment };
+export { Control as default, ControlItem };
