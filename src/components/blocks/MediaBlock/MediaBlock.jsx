@@ -44,28 +44,30 @@ const Body = styled.section`
     return props.padding || "0 0 0 1rem";
   }};
   overflow: hidden;
-    display: ${(props) => {
+  display: ${(props) => {
     return props.displayInline ? "none" : "";
   }};
-      width: inherit;
-      display: ${(props) => {
+  width: inherit;
+  display: ${(props) => {
     return props.displayInline ? "block" : "";
   }};
-      white-space: ${(props) => {
+  white-space: ${(props) => {
     return props.displayInline ? "nowrap" : "normal";
   }};
-      overflow: ${(props) => {
-    return props.displayInline ? "hidden" : "";
-  }};
-      text-overflow: ${(props) => {
-    return props.displayInline ? "ellipsis" : "";
-  }};
-      margin-bottom: ${(props) => {
+  margin-bottom: ${(props) => {
     return props.displayInline ? "0" : "";
   }};
-    &:only-child {
-      margin-bottom: 0;
-    }
+  > * {
+  overflow: ${(props) => {
+    return props.displayInline ? "hidden" : "";
+  }};
+  text-overflow: ${(props) => {
+    return props.displayInline ? "ellipsis" : "";
+  }};
+  }
+  &:only-child {
+    margin-bottom: 0;
+  }
   ${Block} {
     padding: 1rem 0 0;
   }
@@ -74,7 +76,6 @@ const Body = styled.section`
 function MediaBlock({
   align,
   body,
-  border,
   children,
   circle,
   className,
@@ -141,7 +142,7 @@ function MediaBlock({
       onClick={onClick}
     >
       {media ? (
-        <Media justify={justify} border={border} circle={circle}>
+        <Media justify={justify} circle={circle}>
           {media}
         </Media>
       ) : null}
@@ -162,7 +163,6 @@ MediaBlock.propTypes = {
   align: PropTypes.oneOf(["top", "vertical", "inline"]),
   /** Used to define the content in the 'body' section */
   body: PropTypes.node,
-  border: PropTypes.bool,
   /** Meant for use in nesting Media Blocks */
   children: PropTypes.node,
   circle: PropTypes.bool,
@@ -179,7 +179,6 @@ MediaBlock.propTypes = {
 MediaBlock.defaultProps = {
   align: "top",
   body: null,
-  border: false,
   children: null,
   circle: false,
   className: null,

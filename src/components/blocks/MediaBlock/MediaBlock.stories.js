@@ -1,10 +1,9 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React, { Fragment } from "react";
-import { Padding } from "helpers/Display";
+import { DisplayGrid } from "helpers/Display";
 import Image from "atoms/Image";
 import Text, { Title } from "base/Typography";
-import Card, { CardGrid } from "elements/Card";
 import MediaBlock from "blocks/MediaBlock";
 
 const image = (
@@ -24,35 +23,33 @@ const description = (
 );
 
 storiesOf("Blocks|Media Block", module)
-  .addDecorator(Padding)
   .addDecorator(withKnobs)
+  .addDecorator(DisplayGrid)
   .add(
     "Documentation",
     () => {
       return <MediaBlock media={image} body={body} />;
-    })
+    },
+  )
   .add("Knobs", () => {
     return (
-      <Card padding="0">
-        <MediaBlock
-          media={image}
-          body={body}
-          align={options(
-            "align",
-            {
-              default: null,
-              vertical: "vertical",
-              inline: "inline",
-            },
-            null,
-            { display: "select" },
-            "Media Block",
-          )}
-          reverse={boolean("reverse", false, "Media Block")}
-          circle={boolean("circle", false, "Media Block")}
-          border={boolean("border", false, "Media Block")}
-        />
-      </Card>
+      <MediaBlock
+        media={image}
+        body={body}
+        align={options(
+          "align",
+          {
+            default: null,
+            vertical: "vertical",
+            inline: "inline",
+          },
+          null,
+          { display: "select" },
+          "Media Block",
+        )}
+        reverse={boolean("reverse", false, "Media Block")}
+        circle={boolean("circle", false, "Media Block")}
+      />
     );
   })
   .add("Nested", () => {
@@ -68,80 +65,68 @@ storiesOf("Blocks|Media Block", module)
   })
   .add("The Media Block Family", () => {
     return (
-      <CardGrid>
-        <Card padding="0">
-          <MediaBlock
-            media={image}
-            body={
-              <Fragment>
-                <Title size="h6" text="Media Block" />
-                {description}
-              </Fragment>
-            }
-          />
-        </Card>
-        <Card padding="0">
-          <MediaBlock
-            media={image}
-            body={
-              <Fragment>
-                <Title size="h6" text="Media Block (reverse)" />
-                {description}
-              </Fragment>
-            }
-            reverse
-          />
-        </Card>
-        <Card padding="0">
-          <MediaBlock
-            media={image}
-            body={
-              <Fragment>
-                <Title size="h6" text="Media Block - Vertical" />
-                {description}
-              </Fragment>
-            }
-            align="vertical"
-          />
-        </Card>
-        <Card padding="0">
-          <MediaBlock
-            media={image}
-            body={
-              <Fragment>
-                <Title size="h6" text="Media Block - Vertical (reverse)" />
-                {description}
-              </Fragment>
-            }
-            align="vertical"
-            reverse
-          />
-        </Card>
-        <Card padding="0">
-          <MediaBlock
-            media={image}
-            body={
-              <Fragment>
-                <Title size="h6" text="Media Block - Inline" />
-                {description}
-              </Fragment>
-            }
-            align="inline"
-          />
-        </Card>
-        <Card padding="0">
-          <MediaBlock
-            media={image}
-            body={
-              <Fragment>
-                <Title size="h6" text="Media Block - Inline (reverse)" />
-                {description}
-              </Fragment>
-            }
-            align="inline"
-            reverse
-          />
-        </Card>
-      </CardGrid>
+      <React.Fragment>
+        <MediaBlock
+          media={image}
+          body={
+            <Fragment>
+              <Title size="h6" text="Media Block" />
+              {description}
+            </Fragment>
+          }
+        />
+        <MediaBlock
+          media={image}
+          body={
+            <Fragment>
+              <Title size="h6" text="Media Block (reverse)" />
+              {description}
+            </Fragment>
+          }
+          reverse
+        />
+        <MediaBlock
+          media={image}
+          body={
+            <Fragment>
+              <Title size="h6" text="Media Block - Vertical" />
+              {description}
+            </Fragment>
+          }
+          align="vertical"
+        />
+        <MediaBlock
+          media={image}
+          body={
+            <Fragment>
+              <Title size="h6" text="Media Block - Vertical (reverse)" />
+              {description}
+            </Fragment>
+          }
+          align="vertical"
+          reverse
+        />
+        <MediaBlock
+          media={image}
+          body={
+            <Fragment>
+              <Title size="h6" text="Media Block - Inline" />
+              {description}
+            </Fragment>
+          }
+          align="inline"
+        />
+        <MediaBlock
+          media={image}
+          body={
+            <Fragment>
+              <Title size="h6" text="Media Block - Inline (reverse)" />
+              {description}
+            </Fragment>
+          }
+          align="inline"
+          reverse
+        />
+      </React.Fragment>
     );
   });
