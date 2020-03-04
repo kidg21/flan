@@ -1,24 +1,19 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import Bar from "blocks/Bar";
-import SelectMenu from "atoms/SelectMenu";
-import Text, { Title, Link } from "base/Typography";
+import Text from "base/Typography";
 import { viewport } from "Variables";
 import Button from "atoms/Button";
-import Tabs, { Tab } from "blocks/Tabs";
-import Divider from "atoms/Divider";
 import Form from "layout/Form";
+import Advanced from "./Advanced.jsx";
 import Grid from "layout/Grid";
-import Menu from "blocks/Menu";
+import ResultContainer from "./Results.jsx";
 import TextInput from "atoms/TextInput";
 import Container from "atoms/Container";
 import Icon from "atoms/Icon";
 import styled from "styled-components";
-import InputBlock from "blocks/InputBlock";
-import Card from "elements/Card";
-import List, { ListItem } from "blocks/List";
 
 
 const DropContainer = styled(Container)`
@@ -27,34 +22,9 @@ position: fixed;
 
 
 function Search({
-  showAdvanced, error, moreResults, results, onClickMoreResults, onClickSearch, onClickAdvancedSearch, onClickReset,
+  advance, error, results, onSearch, inputs,
 }) {
-  const Advanced = (
-    <Grid columns="9fr .5fr .5fr">
-      <DropContainer maxHeight="25rem" >
-        <Form
-          subtitle="Advanced Search"
-          description="Choose to search by one of the following options."
-        >
-          <TextInput
-            label="Search by Owner"
-            placeholder="Owner"
-            type="search"
-          />
-          <TextInput
-            label="Search by APN"
-            placeholder="APN"
-            type="search"
-          />
-          <Grid columns="6fr .5fr .5fr">
-            <Text size="2x" text="" />
-            <Button label="Reset" plain onClick={onClickReset} />
-            <Button icon="search" solid onClick={onClickAdvancedSearch} />
-          </Grid>
-        </Form>
-      </DropContainer>
-    </Grid>
-  );
+
 
 
   let message;
@@ -92,34 +62,18 @@ function Search({
       message = (
         <Bar
           padding="2x"
-          center={<Text text="We reommend the following based on your key word search" />}
+          center={<Text text="We recommend the following based on your key word search" />}
         />
       );
       break;
   }
 
-
-  const more = (
-    <Bar
-      padding="top"
-      center={<Link size="2x" text="View More Results" onClick={onClickMoreResults} />}
-    />
-  );
-
-  const Results = (
-    <List interactive>
-      {results}
-    </List>
-  );
-
   const Body = (
     <React.Fragment>
-      { message ? <React.Fragment>{message}</React.Fragment> : null}
-      { results ? <React.Fragment>{ Results }</React.Fragment> : null}
-      { moreResults ? <React.Fragment>{more}</React.Fragment> : null}
+      { error ? <React.Fragment>{message}</React.Fragment> : null} 
+      { results ? <ResultContainer results={results} /> : null}
     </React.Fragment>
   );
-
 
   return (
     <Grid columns="1" gap="tiny">
@@ -129,23 +83,23 @@ function Search({
           placeholder="Search Location"
           type="search"
         />
-        <Button icon="search" solid onClick={onClickSearch} />
+        <Button icon="search" solid onClick={onSearch} />
         <Button icon="more" plain />
       </Grid>
-      { error || results ? <Grid columns="9fr .5fr .5fr"> <DropContainer maxHeight="25rem" >{Body}</DropContainer></Grid> : null}
-      { showAdvanced ? <React.Fragment>{Advanced}</React.Fragment> : null}
+      { error || results ? <Grid columns="9fr .5fr .5fr"> <DropContainer maxHeight="25rem" > { Body }</DropContainer></Grid> : null}
+      { advance ? <Advanced inputs={inputs} /> : null}
     </Grid>
   );
 }
 
 Search.propTypes = {
   id: PropTypes.string,
-  onClickSearch: PropTypes.func,
   results: PropTypes.node,
 };
 
 Search.defaultProps = {
   id: null,
+  results: null,
 
 };
 

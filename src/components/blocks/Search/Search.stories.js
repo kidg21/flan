@@ -6,76 +6,119 @@ import React from "react";
 import SearchBar from "./Search.jsx";
 import Grid from "layout/Grid";
 import Panel from "layout/Panel";
-import List, {ListItem} from "blocks/List";
-
-const Results = (
-  <React.Fragment>
-  <ListItem title="Address" description="23928 Malibu Dr."/>
-  <ListItem title="Address" description="23928 Malibu Dr."/>
-  <ListItem title="Address" description="23928 Malibu Dr." isSelected/>
-  <ListItem title="Address" description="23928 Malibu Dr."/>
-  </React.Fragment>
-);
+import List, { ListItem } from "blocks/List";
 
 
 
+const SmallData = [
+  {
+    title: "Address",
+    description: "address",
+  },
+  {
+    title: "APN",
+    description: "apn",
+  },
 
-const data = [
+];
+
+const AdvancedInputs = [
     {
-      id: "a",
-      onClick: () => {
-        console.log("clicked Save");
-      },
-      label: "Address",
-      icon: "address",
+      placeholder: "Owner",
     },
     {
-      id: "b",
-      onClick: () => {
-        console.log("clicked Filter");
-      },
-      label: "APN",
-      icon: "apn",
+      placeholder: "APN",
     },
-    {
-      id: "c",
-      onClick: () => {
-        console.log("clicked Share");
-      },
-      label: "Owner",
-      icon: "user",
-    },
-    
+  
   ];
 
-storiesOf("Blocks|Search", module)
-    .add("Default", () => {
-        return (
-            <SearchBar/>
-        );
-    })
-    .add("Advance", () => {
-        return (
-            <SearchBar showAdvanced/>
-        );
-    })
-    .add("Results", () => {
-        return (
-            <SearchBar results={Results}/>
-        );
-    })
-    .add("Error Message", () => {
-      return (
-        <Grid columns="1">
-          <SearchBar error="offline" />
-          <SearchBar error="connection" />
-        </Grid>
-      );
-  })
-  .add("More results", () => {
-    return (
-        <SearchBar results={Results} moreResults/>
 
+
+const Data = [
+  {
+    title: "Address",
+    description: "address",
+  },
+  {
+    title: "APN",
+    description: "apn",
+  },
+  {
+    title: "Owner",
+    description: "user",
+  },
+  {
+    title: "Address",
+    description: "address",
+  },
+  {
+    title: "APN",
+    description: "apn",
+  },
+  {
+    title: "Owner",
+    description: "user",
+  },
+  {
+    title: "Address",
+    description: "address",
+  },
+  {
+    title: "APN",
+    description: "apn",
+  },
+  {
+    title: "Owner",
+    description: "user",
+  },
+  {
+    title: "Address",
+    description: "address",
+  },
+  {
+    title: "Address",
+    description: "address",
+  },
+  {
+    title: "APN",
+    description: "apn",
+  },
+  {
+    title: "Owner",
+    description: "user",
+  },
+  {
+    title: "Address",
+    description: "address",
+  },
+
+];
+
+storiesOf("Blocks|Search", module)
+  .add("Default", () => {
+    return (
+      <SearchBar />
     );
-});
+  })
+  .add("Advanced Search", () => {
+    return (
+      <SearchBar advance inputs={AdvancedInputs} />
+    );
+  })
+  .add("Results", () => {
+    return (
+      <Grid columns="1">
+        <SearchBar results={SmallData} />
+        <SearchBar results={Data} />
+      </Grid>
+    );
+  })
+  .add("Error Message", () => {
+    return (
+      <Grid columns="1">
+        <SearchBar error="offline" />
+        <SearchBar error="connection" />
+      </Grid>
+    );
+  });
 
