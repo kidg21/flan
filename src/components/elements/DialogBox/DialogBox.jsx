@@ -65,7 +65,7 @@ function DialogBox({
             type={buttons[0].type}
           />
           <SecondaryButton
-            id={buttons[0].id}
+            id={buttons[1].id}
             label={buttons[1].label}
             onClick={buttons[1].onClick}
             disabled={buttons[1].disabled}
@@ -82,6 +82,29 @@ function DialogBox({
           disabled={buttons[0].disabled}
           type={buttons[0].type}
         />
+      );
+    } else {
+      buttonElements = (
+        <Grid columns={buttons.length.toString()}>
+          {buttons.forEach((button, index) => {
+            if (index === 0) {
+              return (<PrimaryButton
+                id={button.id}
+                label={button.label}
+                onClick={button.onClick}
+                disabled={button.disabled}
+                type={button.type}
+              />);
+            }
+            return (<SecondaryButton
+              id={button.id}
+              label={button.label}
+              onClick={button.onClick}
+              disabled={button.disabled}
+              type={button.type}
+            />);
+          })}
+        </Grid>
       );
     }
   }
@@ -118,13 +141,7 @@ DialogBox.defaultProps = {
   title: null,
   body: null,
   children: null,
-  buttons: PropTypes.arrayOf(PropTypes.shape({
-    id: null,
-    label: null,
-    onClick: null,
-    disabled: null,
-    type: null,
-  })),
+  buttons: null,
 };
 
 export default DialogBox;

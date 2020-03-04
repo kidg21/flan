@@ -101,6 +101,7 @@ function TextInput({
   rows,
   cols,
   warning,
+  maxlength,
 }) {
   let as;
   let inputTextColor;
@@ -212,6 +213,7 @@ function TextInput({
         rows={rows} // textarea attribute
         cols={cols} // textarea attribute
         autoComplete={autocompleteList && autocompleteList.length > 0 ? "on" : "off"}
+        maxLength={maxlength}
       />
       {autocompleteDataList}
       {helpText ? <Text size="1x" text={helpText} /> : null}
@@ -271,6 +273,7 @@ TextInput.propTypes = {
   rows: PropTypes.string,
   cols: PropTypes.string,
   warning: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  maxlength: PropTypes.number,
 };
 
 TextInput.defaultProps = {
@@ -298,6 +301,7 @@ TextInput.defaultProps = {
   rows: "",
   cols: "",
   warning: "",
+  maxlength: null,
 };
 
 export default TextInput;

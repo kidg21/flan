@@ -39,32 +39,55 @@ const TagContainer = styled.div`
   border-radius: 100%;
 `;
 
+const scaleHash = {
+  "4x": {
+    avatar: "5em",
+    font: "2.5em",
+  },
+  "3x": {
+    avatar: "4em",
+    font: "2em",
+  },
+  "2x": {
+    avatar: "3em",
+    font: "1.5em",
+  },
+  "1x": {
+    avatar: "2.5em",
+    font: "1em",
+  },
+};
+
+const sizeHash = {
+  small: {
+    avatar: "2em",
+    font: "1em",
+  },
+  medium: {
+    avatar: "2.5em",
+    font: "1em",
+  },
+  large: {
+    avatar: "3em",
+    font: "1.5em",
+  },
+  xlarge: {
+    avatar: "4em",
+    font: "2em",
+  },
+  xxlarge: {
+    avatar: "5em",
+    font: "2.5em",
+  },
+};
+
 function Avatar({
-  type, icon, id, src, alt, image, label, brand, onClick, size,
+  type, icon, id, src, alt, image, label, brand, onClick, size, style,
 }) {
   let labelType;
   let iconType;
 
-  const sizeHash = {
-    "4x": {
-      avatar: "5em",
-      font: "2.5em",
-    },
-    "3x": {
-      avatar: "4em",
-      font: "2em",
-    },
-    "2x": {
-      avatar: "3em",
-      font: "1.5em",
-    },
-    "1x": {
-      avatar: "2.5em",
-      font: "1em",
-    },
-  };
-
-  const selectedSize = size && sizeHash[size.toLowerCase()];
+  const selectedSize = size && (sizeHash[size.toLowerCase()] || scaleHash[size.toLowerCase()]);
   const avatarSize = selectedSize ? selectedSize.avatar : "2.5rem";
   const fontSize = selectedSize ? selectedSize.font : "1em";
 
@@ -112,10 +135,8 @@ function Avatar({
       backgroundColor = "brand3";
     } if (brand === "brand4") {
       backgroundColor = "brand4";
-    } else { null; }
+    }
   }
-  
-
 
   return (
     <TagContainer
@@ -130,6 +151,7 @@ function Avatar({
       label={label}
       textColor={textColor}
       onClick={onClick}
+      style={style}
     >
       {iconType || labelType}
     </TagContainer>
@@ -149,6 +171,7 @@ Avatar.propTypes = {
   onClick: PropTypes.node,
   size: PropTypes.node,
   label: PropTypes.string,
+  style: PropTypes.objectOf(PropTypes.string),
 };
 
 Avatar.defaultProps = {
@@ -162,6 +185,7 @@ Avatar.defaultProps = {
   icon: null,
   id: null,
   label: null,
+  style: null,
 };
 
 export default Avatar;
