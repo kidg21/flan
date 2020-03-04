@@ -6,9 +6,27 @@ import Icon from "atoms/Icon";
 import Expander from "utils/Expander";
 import Text, { Title } from "base/Typography";
 
+function AccordionHeader({ title, description }) {
+  return (
+    <React.Fragment>
+      {title ? <Title text={title} /> : null}
+      {description ? <Text text={description} /> : null}
+    </React.Fragment>
+  );
+}
+
+AccordionHeader.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+};
+
+AccordionHeader.defaultProps = {
+  title: "",
+  description: "",
+};
 
 function Accordion({
-  children, description, id, onClick, open, title, hideIcon, header,
+  children, header, id, onClick, open,
 }) {
   let rotation;
   if (open) {
@@ -17,17 +35,7 @@ function Accordion({
     rotation = 0;
   }
 
-  let _header = null;
-  if (header) {
-    _header = header;
-  } else if (title || description) {
-    _header = (
-      <React.Fragment>
-        {title ? <Title text={title} /> : null}
-        {description ? <Text text={description} /> : null}
-      </React.Fragment>
-    );
-  }
+  const _header = (header.title || header.description) ? <AccordionHeader {...header} /> : header;
 
   return (
     <Expander
@@ -41,7 +49,7 @@ function Accordion({
             centerAlign="left"
             left={_header}
             rightWidth="max-content"
-            right={!hideIcon ? <Icon icon="up" rotation={rotation} /> : null}
+            right={children ? <Icon icon="up" rotation={rotation} /> : null}
           />
         ) : null}
     >
@@ -52,23 +60,19 @@ function Accordion({
 
 Accordion.propTypes = {
   children: PropTypes.node,
-  description: PropTypes.string,
-  header: PropTypes.node,
+  header: PropTypes.oneOfType([PropTypes.node, PropTypes.shape(AccordionHeader.propTypes)]),
   hideIcon: PropTypes.bool,
   id: PropTypes.string,
   onClick: PropTypes.func,
   open: PropTypes.bool,
-  title: PropTypes.string,
 };
 Accordion.defaultProps = {
   children: null,
-  description: null,
   header: null,
   hideIcon: false,
   id: null,
   onClick: null,
   open: false,
-  title: null,
 };
 
 export default Accordion;

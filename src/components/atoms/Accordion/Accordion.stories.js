@@ -22,7 +22,7 @@ storiesOf("Atoms|Accordion", module)
             toggleDropdown(e);
           }}
           open={open}
-          title="Accordion Title"
+          header={{ title: "Accordion Title" }}
         >
           <Text text="hi" />
         </Accordion>
@@ -45,7 +45,7 @@ storiesOf("Atoms|Accordion", module)
                 toggleDropdown(e);
               }}
           open={open}
-          description="Accordion Title"
+          header={{ description: "Accordion Title" }}
         >
           <Text text="hi" />
         </Accordion>
