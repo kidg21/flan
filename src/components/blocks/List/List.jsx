@@ -91,6 +91,7 @@ List.defaultProps = {
 
 function ListItem({
   active,
+  as,
   children,
   description,
   disabled,
@@ -146,6 +147,7 @@ function ListItem({
   return (
     <ListItemWrapper
       active={active}
+      as={as}
       href={href}
       id={id}
       interactive={
@@ -176,6 +178,7 @@ function ListItem({
 
 ListItem.propTypes = {
   active: PropTypes.bool,
+  as: PropTypes.string,
   children: PropTypes.node,
   description: PropTypes.string,
   disabled: PropTypes.bool,
@@ -197,6 +200,7 @@ ListItem.propTypes = {
 };
 ListItem.defaultProps = {
   active: false,
+  as: null,
   children: null,
   description: null,
   disabled: false,
