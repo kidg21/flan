@@ -26,8 +26,8 @@ function RangeSlider({
   id,
   isRequired,
   label,
-  placeholderMin,
   placeholderMax,
+  placeholderMin,
 }) {
   let inputTextColor;
   const isDisabled =
@@ -39,11 +39,11 @@ function RangeSlider({
   const uId = id || getGuid();
   return (
     <RangeContainer
-      id={uId}
-      disabled={isDisabled}
-      inputTextColor={inputTextColor}
       columns="1"
+      disabled={isDisabled}
       gap="small"
+      id={uId}
+      inputTextColor={inputTextColor}
     >
       {label ? (
         <Label size="2x" isRequired={isRequired} text={label} />
@@ -56,21 +56,21 @@ function RangeSlider({
         rightWidth="6em"
         left={
           <TextInput
-            id={`${uId}_min`}
-            type="text"
-            placeholder={placeholderMin}
-            error={!!error}
             disabled={isDisabled}
+            error={!!error}
+            id={`${uId}_min`}
+            placeholder={placeholderMin}
+            type="text"
           />
         }
         center={<Slider error={error && !isDisabled} disabled={isDisabled} />}
         right={
           <TextInput
-            id={`${uId}_max`}
-            type="text"
-            placeholder={placeholderMax}
-            error={!!error}
             disabled={isDisabled}
+            error={!!error}
+            id={`${uId}_max`}
+            placeholder={placeholderMax}
+            type="text"
           />
         }
       />
@@ -89,8 +89,8 @@ RangeSlider.propTypes = {
   id: PropTypes.string,
   isRequired: PropTypes.bool,
   label: PropTypes.string,
-  placeholderMin: PropTypes.string,
   placeholderMax: PropTypes.string,
+  placeholderMin: PropTypes.string,
 };
 RangeSlider.defaultProps = {
   disabled: false,
@@ -99,8 +99,8 @@ RangeSlider.defaultProps = {
   id: null,
   isRequired: false,
   label: null,
-  placeholderMin: "Min",
   placeholderMax: "Max",
+  placeholderMin: "Min",
 };
 
 export default RangeSlider;
