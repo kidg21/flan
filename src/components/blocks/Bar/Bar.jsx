@@ -4,6 +4,10 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
 
+const LinkedWrapper = styled.a`
+flex: auto;
+`;
+
 const Slot = styled.div`
   display: flex;
   flex: ${(props) => {
@@ -114,7 +118,9 @@ const slotAlignHash = {
 };
 
 function getContent(slot) {
-  return slot && slot.content ? slot.content : slot;
+  const content = slot && slot.content ? slot.content : slot;
+  if (slot && slot.onClick) return <LinkedWrapper onClick={slot.onClick}>{content}</LinkedWrapper>;
+  return content;
 }
 
 function Bar({
@@ -204,6 +210,7 @@ const SlotType = PropTypes.shape({
   width: PropTypes.string,
   /** Sets the horizontal alignment of the slot content */
   align: PropTypes.oneOf(["left", "right", "center"]),
+  onClick: PropTypes.func,
 });
 
 Bar.propTypes = {
