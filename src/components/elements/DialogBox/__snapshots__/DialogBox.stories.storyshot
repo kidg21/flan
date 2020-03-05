@@ -91,8 +91,8 @@ exports[` 1`] = `
           className="Button__StyledButton-sc-1v7sls2-0 jLfFwi DialogBox__SecondaryButton-iv0dnf-4 RChLi"
           disabled={false}
           htmlFor={null}
-          id="Negative"
-          name="Negative"
+          id="Affirmative"
+          name="Affirmative"
           onClick={null}
           tabIndex="1"
         >
@@ -208,8 +208,8 @@ exports[` 2`] = `
           className="Button__StyledButton-sc-1v7sls2-0 iywOmJ DialogBox__SecondaryButton-iv0dnf-4 RChLi"
           disabled={false}
           htmlFor={null}
-          id="Negative"
-          name="Negative"
+          id="Affirmative"
+          name="Affirmative"
           onClick={null}
           tabIndex="1"
         >
@@ -325,8 +325,8 @@ exports[` 3`] = `
           className="Button__StyledButton-sc-1v7sls2-0 injEsc DialogBox__SecondaryButton-iv0dnf-4 RChLi"
           disabled={false}
           htmlFor={null}
-          id="Negative"
-          name="Negative"
+          id="Affirmative"
+          name="Affirmative"
           onClick={null}
           tabIndex="1"
         >

@@ -32,7 +32,7 @@ exports[` 1`] = `
       onClick={null}
     >
       <div
-        className="Bar__Slot-sc-1c4axau-0 dWVqUt"
+        className="Bar__Slot-sc-1c4axau-0 iylbCl"
       >
         <section
           className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
@@ -46,6 +46,7 @@ exports[` 1`] = `
             disabled={false}
             id="editRoles_search"
             list={null}
+            maxLength={null}
             name="editRoles_search"
             onBlur={null}
             onChange={null}
@@ -126,7 +127,7 @@ exports[` 2`] = `
       onClick={null}
     >
       <div
-        className="Bar__Slot-sc-1c4axau-0 dWVqUt"
+        className="Bar__Slot-sc-1c4axau-0 iylbCl"
       >
         <section
           className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
@@ -140,6 +141,7 @@ exports[` 2`] = `
             disabled={false}
             id="editUsers_search"
             list={null}
+            maxLength={null}
             name="editUsers_search"
             onBlur={null}
             onChange={null}

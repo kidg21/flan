@@ -52,6 +52,7 @@ exports[` 1`] = `
               label={null}
               onClick={null}
               src={null}
+              style={null}
             >
               <svg
                 aria-hidden="true"
@@ -304,6 +305,7 @@ exports[` 3`] = `
             label="GP"
             onClick={null}
             src={null}
+            style={null}
           >
             <h6
               className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
@@ -664,6 +666,7 @@ exports[` 6`] = `
                 label={null}
                 onClick={null}
                 src={null}
+                style={null}
               >
                 <svg
                   aria-hidden="true"
@@ -862,6 +865,7 @@ exports[` 6`] = `
               label="GP"
               onClick={null}
               src={null}
+              style={null}
             >
               <h6
                 className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
@@ -1013,6 +1017,7 @@ exports[` 6`] = `
                 label={null}
                 onClick={null}
                 src={null}
+                style={null}
               >
                 <svg
                   aria-hidden="true"
@@ -1641,6 +1646,7 @@ exports[` 11`] = `
           label={null}
           onClick={null}
           src={null}
+          style={null}
         >
           <svg
             aria-hidden="true"

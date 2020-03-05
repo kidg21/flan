@@ -1,26 +1,11 @@
 import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
-import { withKnobs, label, boolean, select } from "@storybook/addon-knobs";
-import { action } from "@storybook/addon-actions";
-import { Padding } from "helpers/Display";
-import Grid from "layout/Grid";
 import Bar from "blocks/Bar";
-import Form, { Section } from "layout/Form";
 import TextInput from "atoms/TextInput";
 import Icon from "atoms/Icon";
 
 <Meta title="Templates|Text Input" component={TextInput} />
 
-# Text Input
-
-### Text inputs enable the user to interact with and input content and data. This component can be used for long and short form entries.
-
-<Preview withToolbar>
-  <Story name="Standard">
-    <TextInput id="standard" label="TextInput" />
-  </Story>
-</Preview>
-
-# Usage
+# Text Input Usage
 
 A basic widget for getting the user input is a text field. Keyboard and mouse can be used for providing or changing data.
 Text fields allow users to enter text into a UI. They typically appear in forms and dialogs.
@@ -47,7 +32,7 @@ Label text is used to inform users as to what information is requested for a tex
         contentAlign="center"
         left={{
           content: <Icon icon="check" type="success" size="2x" />,
-          left: "5%",
+          width: "5%",
         }}
         center={{
           content: <TextInput id="briefLabel" label="Brief Label" />,
@@ -67,176 +52,6 @@ Label text is used to inform users as to what information is requested for a tex
         }}
       />
     </React.Fragment>
-  </Story>
-</Preview>
-
-# Anatomy
-
-TextInputs consist of a circular input and a label. It is important that the label also has an htmlFor TextInput in order to link the TextInput and be another way to select.
-
-A TextInput may appear to the left or right of it's corresponding label. A TextInput may not appear above or below the label.
-
-<!-- ## Behavior -->
-
-# Examples
-
-### States
-
-<!-- We can drop it in a `Preview` to get a code snippet: -->
-
-<Preview>
-  <Story name="States">
-    <Form columns="1">
-        <TextInput
-          id="default"
-          label="Text Input"
-          helpText="Hang in there, buddy, I'm here to help!"
-        />      
-        <TextInput
-          id="disabled"
-          label="Text Input ( Disabled )"
-          placeholder="I am just keeping things warm"
-          helpText="Hang in there, buddy, I'm here to help!"
-          disabled
-        />
-        <TextInput
-          id="error"
-          label="Text Input ( Error )"
-          placeholder="I am just keeping things warm"
-          helpText="Hang in there, buddy, I'm here to help!"
-          error="Don't sweat it...we can fix this!"
-        />
-    </Form>
-  </Story>
-</Preview>
-
-### Type
-
-<Preview>
-  <Story name="Type">
-    <Form>
-      <TextInput
-        id="required"
-        label="Text Input ( Required )"
-        placeholder="I am just keeping things warm"
-        helpText="Hang in there, buddy, I'm here to help!"
-        isRequired
-      />
-      <TextInput
-        id="pattern"
-        pattern="[A-Za-z]{3}"
-        label="Text"
-        placeholder="I am just keeping things warm"
-        helpText="Can contain only three letters (no numbers or special characters"
-      />
-      <TextInput
-        id="textarea"
-        type="textarea"
-        label="Text Area"
-        placeholder="I am just keeping things warm"
-        helpText="Hang in there, buddy, I'm here to help!"
-      />
-      <TextInput
-        id="number"
-        type="number"
-        label="Number"
-        placeholder="I am just keeping things warm"
-        helpText="Hang in there, buddy, I'm here to help!"
-      />
-      <TextInput
-        id="search"
-        type="search"
-        label="Search"
-        placeholder="I am just keeping things warm"
-        helpText="Hang in there, buddy, I'm here to help!"
-      />
-      <TextInput
-        id="password"
-        autofocus
-        type="password"
-        pattern=".{6,}"
-        title="Six or more characters"
-        label="Password"
-        placeholder="I am just keeping things warm"
-        helpText="Must contain 6 or more characters"
-      />
-      <TextInput
-        id="email"
-        type="email"
-        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-        label="Email"
-        placeholder="I am just keeping things warm"
-        helpText="Hang in there, buddy, I'm here to help!"
-      />
-      <TextInput
-        id="phone"
-        type="tel"
-        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
-        label="Telephone Number"
-        placeholder="I am just keeping things warm"
-        helpText="Hang in there, buddy, I'm here to help!"
-      />
-      <TextInput
-        id="url"
-        type="url"
-        pattern="https?://.+"
-        label="URL"
-        placeholder="I am just keeping things warm"
-        helpText="Hang in there, buddy, I'm here to help!"
-      />
-      <TextInput
-        id="color"
-        type="color"
-        label="Color"
-        placeholder="I am just keeping things warm"
-        helpText="Hang in there, buddy, I'm here to help!"
-      />
-      <TextInput
-        id="date"
-        type="date"
-        label="Date"
-        placeholder="I am just keeping things warm"
-        helpText="Hang in there, buddy, I'm here to help!"
-      />
-      <TextInput
-        id="time"
-        type="time"
-        label="Time"
-        placeholder="I am just keeping things warm"
-        helpText="Hang in there, buddy, I'm here to help!"
-      />
-      <TextInput
-        id="datetime"
-        type="datetime-local"
-        label="Local Date/Time"
-        placeholder="I am just keeping things warm"
-        helpText="Hang in there, buddy, I'm here to help!"
-      />
-      <TextInput
-        id="month"
-        type="month"
-        label="Month"
-        placeholder="I am just keeping things warm"
-        helpText="Hang in there, buddy, I'm here to help!"
-      />
-      <TextInput
-        id="week"
-        type="week"
-        label="Week"
-        placeholder="I am just keeping things warm"
-        helpText="Hang in there, buddy, I'm here to help!"
-      />
-    </Form>
-  </Story>
-</Preview>
-
-### Autocomplete
-
-<Preview>
-  <Story name="Autocomplete">
-    <TextInput id="autocomplete" autocompleteList={["Red", "Green", "Blue", "Cyan", "Magenta", "Yellow", "Black"]} label="Colors" placeholder="Pick a Color" onChange={(e) => {
-      alert(e.currentTarget.value);
-    }} />
   </Story>
 </Preview>
 

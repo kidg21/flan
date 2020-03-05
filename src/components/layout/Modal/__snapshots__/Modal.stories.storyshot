@@ -6,117 +6,6 @@ Array [
     action={null}
     aria-describedby={null}
     aria-labelledby={null}
-    className="Modal__ModalContainer-sc-15cll21-2 iafgvV"
-    id={null}
-    pointerEvents="auto"
-    scale={null}
-    style={null}
-  >
-    <div
-      action={null}
-      className="Modal__ModalBG-sc-15cll21-3 fdglxk"
-      onClick={[Function]}
-    />
-    <span
-      className="Modal__ContentWrapper-sc-15cll21-0 liMSYL"
-      style={null}
-    >
-      <div
-        className="Card__CardWrapper-sc-1g3s676-5 gaLndW Banner__StyledBanner-sc-6825al-0 bfAGjz"
-        href={null}
-        id={null}
-        media={null}
-        onClick={null}
-      >
-        <div
-          className="Bar__BarLayout-sc-1c4axau-1 hfFaih"
-          id={null}
-          onClick={null}
-        >
-          <div
-            className="Bar__Slot-sc-1c4axau-0 cSnMzs"
-          >
-            <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
-              id={null}
-              rows={null}
-            >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                fontSize="1.05em"
-                fontWeight={400}
-                letterSpacing="0px"
-              >
-                This is a Standard notification telling you stuff.
-              </h6>
-            </section>
-          </div>
-          <div
-            className="Bar__Slot-sc-1c4axau-0 hQRtOo"
-          >
-            <a
-              className="Icon__LinkedIcon-sc-1oa9m1v-0 kzNrBw"
-              disabled={null}
-              onClick={[Function]}
-            >
-              <svg
-                aria-hidden="true"
-                className="svg-inline--fa fa-times fa-w-10 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 egNihH Banner__Close-sc-6825al-1 cgOoTm"
-                color="link"
-                data-icon="times"
-                data-prefix="far"
-                focusable="false"
-                id={null}
-                role="img"
-                style={Object {}}
-                viewBox="0 0 320 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"
-                  fill="currentColor"
-                  style={Object {}}
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </span>
-  </div>,
-  <button
-    className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
-    disabled={false}
-    htmlFor={null}
-    id={null}
-    name={null}
-    onClick={[Function]}
-    tabIndex="1"
-  >
-    <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
-      id={null}
-      rows={null}
-    >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-        fontSize="1em"
-        fontWeight={600}
-        letterSpacing="0px"
-      >
-        Open Modal
-      </p>
-    </section>
-  </button>,
-]
-`;
-
-exports[` 2`] = `
-Array [
-  <div
-    action={null}
-    aria-describedby={null}
-    aria-labelledby={null}
     className="Modal__ModalContainer-sc-15cll21-2 izBODu"
     id={null}
     pointerEvents="auto"
@@ -182,130 +71,7 @@ Array [
 ]
 `;
 
-exports[` 3`] = `
-Array [
-  <div
-    action={null}
-    aria-describedby={null}
-    aria-labelledby={null}
-    className="Modal__ModalContainer-sc-15cll21-2 iafgvV"
-    id={null}
-    pointerEvents="auto"
-    scale={null}
-    style={null}
-  >
-    <div
-      action={null}
-      className="Modal__ModalBG-sc-15cll21-3 fdglxk"
-      onClick={[Function]}
-    />
-    <span
-      className="Modal__ContentWrapper-sc-15cll21-0 liMSYL"
-      style={null}
-    >
-      <div
-        className="Card__CardWrapper-sc-1g3s676-5 gaLndW Banner__StyledBanner-sc-6825al-0 bfAGjz"
-        href={null}
-        id={null}
-        media={null}
-        onClick={null}
-      >
-        <div
-          className="Bar__BarLayout-sc-1c4axau-1 hfFaih"
-          id={null}
-          onClick={null}
-        >
-          <div
-            className="Bar__Slot-sc-1c4axau-0 cSnMzs"
-          >
-            <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
-              id={null}
-              rows={null}
-            >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                fontSize="1.05em"
-                fontWeight={400}
-                letterSpacing="0px"
-              >
-                This is a Standard notification telling you stuff.
-              </h6>
-            </section>
-          </div>
-          <div
-            className="Bar__Slot-sc-1c4axau-0 hQRtOo"
-          >
-            <a
-              className="Icon__LinkedIcon-sc-1oa9m1v-0 kzNrBw"
-              disabled={null}
-              onClick={[Function]}
-            >
-              <svg
-                aria-hidden="true"
-                className="svg-inline--fa fa-times fa-w-10 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 egNihH Banner__Close-sc-6825al-1 cgOoTm"
-                color="link"
-                data-icon="times"
-                data-prefix="far"
-                focusable="false"
-                id={null}
-                role="img"
-                style={Object {}}
-                viewBox="0 0 320 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"
-                  fill="currentColor"
-                  style={Object {}}
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </span>
-  </div>,
-  <div
-    className="Panel__PanelWrapper-sc-48epke-0 kObpyG"
-    id={null}
-  >
-    <section
-      className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 cYHdrc"
-    >
-      <button
-        className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
-        disabled={false}
-        htmlFor={null}
-        id={null}
-        name={null}
-        onClick={[Function]}
-        tabIndex="1"
-      >
-        <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
-          id={null}
-          rows={null}
-        >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-            fontSize="1em"
-            fontWeight={600}
-            letterSpacing="0px"
-          >
-            Default Modal
-          </p>
-        </section>
-      </button>
-    </section>
-    <section
-      className="Panel__SectionWrapper-sc-48epke-1 jZYywS"
-    />
-  </div>,
-]
-`;
-
-exports[` 4`] = `
+exports[` 2`] = `
 Array [
   <div
     action={null}
@@ -409,8 +175,8 @@ Array [
               className="Button__StyledButton-sc-1v7sls2-0 iywOmJ DialogBox__SecondaryButton-iv0dnf-4 RChLi"
               disabled={false}
               htmlFor={null}
-              id="Cancel"
-              name="Cancel"
+              id="Confirm"
+              name="Confirm"
               onClick={[Function]}
               tabIndex="1"
             >
@@ -473,7 +239,7 @@ Array [
 ]
 `;
 
-exports[` 5`] = `
+exports[` 3`] = `
 Array [
   <div
     action={null}
@@ -544,7 +310,7 @@ Array [
 ]
 `;
 
-exports[` 6`] = `
+exports[` 4`] = `
 Array [
   <div
     action={null}

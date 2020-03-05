@@ -1,4 +1,4 @@
-/* eslint-disable complexity */
+/* eslint-disable security/detect-object-injection */
 /* eslint-disable linebreak-style */
 import React from "react";
 import PropTypes from "prop-types";
@@ -39,7 +39,7 @@ const TagContainer = styled.div`
   border-radius: 100%;
 `;
 
-const scaleHash = {
+const sizeHash = {
   "4x": {
     avatar: "5em",
     font: "2.5em",
@@ -56,28 +56,9 @@ const scaleHash = {
     avatar: "2.5em",
     font: "1em",
   },
-};
-
-const sizeHash = {
-  small: {
+  "sm": {
     avatar: "2em",
     font: "1em",
-  },
-  medium: {
-    avatar: "2.5em",
-    font: "1em",
-  },
-  large: {
-    avatar: "3em",
-    font: "1.5em",
-  },
-  xlarge: {
-    avatar: "4em",
-    font: "2em",
-  },
-  xxlarge: {
-    avatar: "5em",
-    font: "2.5em",
   },
 };
 
@@ -87,7 +68,7 @@ function Avatar({
   let labelType;
   let iconType;
 
-  const selectedSize = size && (sizeHash[size.toLowerCase()] || scaleHash[size.toLowerCase()]);
+  const selectedSize = size && sizeHash[size.toLowerCase()];
   const avatarSize = selectedSize ? selectedSize.avatar : "2.5rem";
   const fontSize = selectedSize ? selectedSize.font : "1em";
 
@@ -99,10 +80,8 @@ function Avatar({
     action: "action80",
   };
 
-
   let backgroundColor = type ? (typeHash[type] || type.toLowerCase()) : "action40";
   const textColor = "inverse";
-
 
   if (image) {
     iconType = (<Image
@@ -118,25 +97,7 @@ function Avatar({
     labelType = <AvatarText weight="semibold" fontSize={fontSize} text={label.substring(0, 2)} />;
   }
 
-  if (!type) {
-    if (brand === "research") {
-      backgroundColor = "research";
-    } if (brand === "bi") {
-      backgroundColor = "bi";
-    } if (brand === "jobs") {
-      backgroundColor = "jobs";
-    } if (brand === "broker") {
-      backgroundColor = "broker";
-    } if (brand === "brand1") {
-      backgroundColor = "brand1";
-    } if (brand === "brand2") {
-      backgroundColor = "brand2";
-    } if (brand === "brand3") {
-      backgroundColor = "brand3";
-    } if (brand === "brand4") {
-      backgroundColor = "brand4";
-    }
-  }
+  if (!type && brand) backgroundColor = brand.toLowerCase();
 
   return (
     <TagContainer
