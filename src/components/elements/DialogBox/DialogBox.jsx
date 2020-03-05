@@ -37,19 +37,20 @@ function DialogBox({
   body,
   children,
   buttons,
+  width,
 }) {
   const screenSmall = window.matchMedia(screen.small);
   const screenMedium = window.matchMedia(screen.medium);
   const screenLarge = window.matchMedia(screen.large);
-  let width;
+  let dialogWidth = width;
   let buttonElements = null;
 
-  if (screenLarge.matches) {
-    width = "40vw";
-  } if (screenMedium.matches) {
-    width = "40vw";
-  } else if (screenSmall.matches) {
-    width = "90vw";
+  if (!dialogWidth) {
+    if (screenLarge.matches || screenMedium.matches) {
+      dialogWidth = "40vw";
+    } else if (screenSmall.matches) {
+      dialogWidth = "90vw";
+    }
   }
 
   if (buttons) {
@@ -114,7 +115,7 @@ function DialogBox({
       id={id}
       title={title}
       body={body}
-      width={width}
+      width={dialogWidth}
     >
       {children ? <ChildSection>{children}</ChildSection> : null}
       {buttonElements ? <CardSection>{buttonElements}</CardSection> : null}
@@ -135,6 +136,7 @@ DialogBox.propTypes = {
     disabled: PropTypes.bool,
     type: PropTypes.string,
   })),
+  width: PropTypes.string,
 };
 DialogBox.defaultProps = {
   id: null,
@@ -142,6 +144,7 @@ DialogBox.defaultProps = {
   body: null,
   children: null,
   buttons: null,
+  width: null,
 };
 
 export default DialogBox;
