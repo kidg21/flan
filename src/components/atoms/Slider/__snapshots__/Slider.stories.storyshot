@@ -26,12 +26,12 @@ exports[` 2`] = `
     Slider
   </label>
   <div
-    className="Bar__BarLayout-sc-1c4axau-1 hfFaih"
+    className="Bar__BarLayout-sc-1c4axau-2 gzisev"
     id={null}
     onClick={null}
   >
     <div
-      className="Bar__Slot-sc-1c4axau-0 vWSKB"
+      className="Bar__Slot-sc-1c4axau-1 egxhuQ"
     >
       <section
         className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
@@ -62,7 +62,7 @@ exports[` 2`] = `
       </section>
     </div>
     <div
-      className="Bar__Slot-sc-1c4axau-0 hODMTq"
+      className="Bar__Slot-sc-1c4axau-1 flbmFP"
     >
       <input
         className="Slider__SliderPiece-sc-1hp9era-0 cdvxbj"
@@ -73,7 +73,7 @@ exports[` 2`] = `
       />
     </div>
     <div
-      className="Bar__Slot-sc-1c4axau-0 fCBoFY"
+      className="Bar__Slot-sc-1c4axau-1 hfHaIx"
     >
       <section
         className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
