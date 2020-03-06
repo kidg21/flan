@@ -44,9 +44,6 @@ const Cell = styled.td`
   border-bottom-color: ${(props) => {
     return props.theme.palette[props.cellBorderColor] || "";
   }};
-  font-size: ${(props) => {
-    return props.fontSize || "small";
-  }};
 
   &:first-child {
     font-weight: ${(props) => {
@@ -86,7 +83,7 @@ function Legend({
                 fontWeight={fontWeight}
                 fontSize={fontSize}
               >
-                {row.label}
+                <Text text={row.label}/>
               </Cell>
               <Cell
                 cellBorder={cellBorder}

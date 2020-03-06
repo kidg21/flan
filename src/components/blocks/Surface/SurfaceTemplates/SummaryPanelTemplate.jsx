@@ -1,5 +1,33 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styled from "styled-components";
+import Panel from "layout/Panel";
+import Command from "atoms/Command";
+import Menu from "blocks/Menu";
+import Form, {Section} from "layout/Form";
+import Divider from "atoms/Divider";
+import Text, {Title, Link} from "base/Typography";
+import Grid from "layout/Grid";
+import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
+
+
+const TableContainer = styled.table`
+  width: 100%;
+  color: ${(props) => {
+    return props.theme.text.primary;
+  }};
+  table-layout: fixed;
+  border-collapse: collapse;
+  min-width: 400px;
+`;
+
+const Row = styled.tr`
+  margin: 1em;
+`;
+
+const Cell = styled.td`
+  padding: 0.25em;
+  `;
 
 /*
 content passed in via props will look like this:
@@ -39,15 +67,13 @@ content passed in via props will look like this:
 // The following component is just to show how to iterate through all the data
 const SummaryPanelTemplate = (props) => {
   return (
-    <div>
-      {/* surface title */}
-      <h2>{props.content.title}</h2>
-      <br />
-      {/* map through each section */}
+    <Panel
+    header={
+      <MainPanelHeader title={props.content.title}/>}>
       {props.content.sections.map((section) => {
         return (
-          <div>
-            <h4>{section.title}</h4>
+          <React.Fragment>
+            <Title text={section.title}/>
             {/* map through eac section's display field (key-value pairs) */}
             {section.displayFields.map((displayField) => {
               let displayFieldValue = displayField.value;
@@ -55,24 +81,23 @@ const SummaryPanelTemplate = (props) => {
               // so the value becomes like a link/command instead of just plain text
               if (displayField.onClick) {
                 displayFieldValue = (
-                  <button onClick={displayField.onClick}>
-                    {displayField.value}
-                  </button>);
+                  <Link onClick={displayField.onClick} text={displayField.value} />);
               }
               return (
-                <div>{displayField.label} : {displayFieldValue}</div>
+                <TableContainer><Row><Cell><Text text={displayField.label}/></Cell><Cell><Text weight="bold" text={displayFieldValue}/></Cell></Row></TableContainer>
               );
             })}
             {/* finally, map through the section's standalone commands */}
-            {section.commands.length > 0 ? "Commands:" : null}
+            {section.commands.length > 0 ? "" : null}
+            <Grid>
             {section.commands.map((command) => {
-              return (<button onClick={command.onClick}>{command.label}</button>);
-            })}
-            <br /><br />
-          </div>
+              return (<Command onClick={command.onClick} label={command.label}/>);
+            })}</Grid>
+             <Divider/>
+          </React.Fragment>
         );
       })}
-    </div>
+    </Panel>
   );
 };
 
