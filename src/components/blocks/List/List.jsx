@@ -154,6 +154,7 @@ function ListItem({
       }
       isSelected={isSelected}
       disabled={disabled}
+      onClick={onClick}
       tabIndex={disabled ? "-1" : tabIndex}
     >
       <DisabledContext.Provider value={disabled}>
