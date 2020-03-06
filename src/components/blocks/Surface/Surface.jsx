@@ -69,7 +69,9 @@ const parseContent = (rawContent, fieldFilter) => {
         // not doing anything here right now, but later we may pass in Command components
         // or need to instantiate command objects here before passing into presentational template
         return {
-          ...rawCommand,
+          label: rawCommand.getName(),
+          onExecute: rawCommand.testExecute,
+          modalUI: rawCommand.getReactUI(),
         };
       });
     }

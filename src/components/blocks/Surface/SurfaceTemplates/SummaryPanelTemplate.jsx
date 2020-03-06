@@ -1,5 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Menu } from "lb-react-core";
+import { DMPTheme } from "../../../base/Variables/Variables";
 
 /*
 content passed in via props will look like this:
@@ -21,8 +23,8 @@ content passed in via props will look like this:
       commands: [
         {
           label: "A command to be included in the 1st section",
-          icon: "an icon to use -- not sure on format yet...",
-          onClick: () => { // a func to be executed when the user clicks on this command },
+          modalUI: "any extra modal UI required by the command -- should be rendered nex to label",
+          onExecute: () => { // a func to be executed when the user clicks on this command },
         },
         {
           // another command
@@ -38,6 +40,25 @@ content passed in via props will look like this:
 
 // The following component is just to show how to iterate through all the data
 const SummaryPanelTemplate = (props) => {
+  const renderMenu = (commands) => {
+    const commandModalComponents = [];
+    const data = commands.map((command) => {
+      if (command.modalUI) commandModalComponents.push(command.modalUI);
+      return {
+        label: command.label,
+        onClick: command.onExecute,
+        id: Dmp.Util.getGuid(),
+      };
+    });
+    return (
+      <React.Fragment>
+        <Menu data={data} position="bottomRight" id="foo" />
+        {commandModalComponents.map((CommandModal) => {
+          return <CommandModal />;
+        })}
+      </React.Fragment>
+    );
+  };
   return (
     <div>
       {/* surface title */}
@@ -65,9 +86,7 @@ const SummaryPanelTemplate = (props) => {
             })}
             {/* finally, map through the section's standalone commands */}
             {section.commands.length > 0 ? "Commands:" : null}
-            {section.commands.map((command) => {
-              return (<button onClick={command.onClick}>{command.label}</button>);
-            })}
+            {renderMenu(section.commands)}
             <br /><br />
           </div>
         );
