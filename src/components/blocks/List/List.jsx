@@ -145,7 +145,6 @@ function ListItem({
       }
       isSelected={isSelected}
       disabled={disabled}
-      onClick={onClick}
       tabIndex={disabled ? "-1" : tabIndex}
     >
       <DisabledContext.Provider value={disabled}>
@@ -160,7 +159,7 @@ function ListItem({
           left={{
             content: leftContent,
             width: "max-content",
-            onClick: pre.onClick || onClick,
+            onClick: (pre && pre.onClick) || onClick,
           }}
           right={rightContent}
         />
