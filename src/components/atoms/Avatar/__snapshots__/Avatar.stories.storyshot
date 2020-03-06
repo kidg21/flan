@@ -13,7 +13,6 @@ exports[` 1`] = `
     label="LG"
     onClick={null}
     src={null}
-    style={null}
   >
     <h6
       className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
@@ -31,7 +30,6 @@ exports[` 1`] = `
     label="HF"
     onClick={null}
     src={null}
-    style={null}
   >
     <h6
       className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
@@ -49,7 +47,6 @@ exports[` 1`] = `
     label="TX"
     onClick={null}
     src={null}
-    style={null}
   >
     <h6
       className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
@@ -67,7 +64,6 @@ exports[` 1`] = `
     label={null}
     onClick={null}
     src={null}
-    style={null}
   >
     <svg
       aria-hidden="true"
@@ -96,7 +92,6 @@ exports[` 1`] = `
     label={null}
     onClick={null}
     src={null}
-    style={null}
   >
     <svg
       aria-hidden="true"
@@ -129,7 +124,6 @@ exports[` 2`] = `
   label="LG"
   onClick={null}
   src={null}
-  style={null}
 >
   <h6
     className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
@@ -155,7 +149,6 @@ exports[` 3`] = `
     label="AB"
     onClick={null}
     src={null}
-    style={null}
   >
     <h6
       className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
@@ -173,7 +166,6 @@ exports[` 3`] = `
     label="CD"
     onClick={null}
     src={null}
-    style={null}
   >
     <h6
       className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
@@ -191,7 +183,6 @@ exports[` 3`] = `
     label="ST"
     onClick={null}
     src={null}
-    style={null}
   >
     <h6
       className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
@@ -209,7 +200,6 @@ exports[` 3`] = `
     label="UV"
     onClick={null}
     src={null}
-    style={null}
   >
     <h6
       className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
@@ -236,7 +226,6 @@ exports[` 4`] = `
     label="DF"
     onClick={null}
     src={null}
-    style={null}
   >
     <h6
       className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
@@ -254,7 +243,6 @@ exports[` 4`] = `
     label="PR"
     onClick={null}
     src={null}
-    style={null}
   >
     <h6
       className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
@@ -272,7 +260,6 @@ exports[` 4`] = `
     label="IN"
     onClick={null}
     src={null}
-    style={null}
   >
     <h6
       className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
@@ -290,7 +277,6 @@ exports[` 4`] = `
     label="SC"
     onClick={null}
     src={null}
-    style={null}
   >
     <h6
       className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
@@ -308,7 +294,6 @@ exports[` 4`] = `
     label="WN"
     onClick={null}
     src={null}
-    style={null}
   >
     <h6
       className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
@@ -326,7 +311,6 @@ exports[` 4`] = `
     label="AL"
     onClick={null}
     src={null}
-    style={null}
   >
     <h6
       className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
@@ -353,7 +337,6 @@ exports[` 5`] = `
     label="PR"
     onClick={null}
     src={null}
-    style={null}
   >
     <h6
       className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
@@ -371,7 +354,6 @@ exports[` 5`] = `
     label="IN"
     onClick={null}
     src={null}
-    style={null}
   >
     <h6
       className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
@@ -389,7 +371,6 @@ exports[` 5`] = `
     label="SC"
     onClick={null}
     src={null}
-    style={null}
   >
     <h6
       className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
@@ -407,7 +388,6 @@ exports[` 5`] = `
     label="WN"
     onClick={null}
     src={null}
-    style={null}
   >
     <h6
       className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
@@ -425,7 +405,6 @@ exports[` 5`] = `
     label="PR"
     onClick={null}
     src={null}
-    style={null}
   >
     <h6
       className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
@@ -443,7 +422,6 @@ exports[` 5`] = `
     label="IN"
     onClick={null}
     src={null}
-    style={null}
   >
     <h6
       className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
@@ -461,7 +439,6 @@ exports[` 5`] = `
     label="SC"
     onClick={null}
     src={null}
-    style={null}
   >
     <h6
       className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
@@ -479,7 +456,6 @@ exports[` 5`] = `
     label="WN"
     onClick={null}
     src={null}
-    style={null}
   >
     <h6
       className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
@@ -506,7 +482,6 @@ exports[` 6`] = `
     label={null}
     onClick={null}
     src={null}
-    style={null}
   >
     <svg
       aria-hidden="true"
@@ -535,7 +510,6 @@ exports[` 6`] = `
     label={null}
     onClick={null}
     src={null}
-    style={null}
   >
     <svg
       aria-hidden="true"
@@ -564,7 +538,6 @@ exports[` 6`] = `
     label={null}
     onClick={null}
     src={null}
-    style={null}
   >
     <svg
       aria-hidden="true"
@@ -593,7 +566,6 @@ exports[` 6`] = `
     label={null}
     onClick={null}
     src={null}
-    style={null}
   >
     <svg
       aria-hidden="true"
@@ -631,7 +603,6 @@ exports[` 7`] = `
     label={null}
     onClick={null}
     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-    style={null}
   >
     <img
       alt={null}
@@ -649,7 +620,6 @@ exports[` 7`] = `
     label={null}
     onClick={null}
     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-    style={null}
   >
     <img
       alt={null}
@@ -676,7 +646,6 @@ exports[` 8`] = `
     label="1x"
     onClick={null}
     src={null}
-    style={null}
   >
     <h6
       className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
@@ -694,7 +663,6 @@ exports[` 8`] = `
     label="2x"
     onClick={null}
     src={null}
-    style={null}
   >
     <h6
       className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 iuVjPJ"
@@ -712,7 +680,6 @@ exports[` 8`] = `
     label="3x"
     onClick={null}
     src={null}
-    style={null}
   >
     <h6
       className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 kBceCV"
@@ -730,7 +697,6 @@ exports[` 8`] = `
     label="4x"
     onClick={null}
     src={null}
-    style={null}
   >
     <h6
       className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 fcJzmK"
