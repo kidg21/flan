@@ -1,21 +1,8 @@
 {
   "presets": ["@babel/preset-env", "@babel/preset-react"],
   "env": {
-    "development": {
-      "plugins": [
-        [
-          "babel-plugin-styled-components",
-          { "ssr": true, "displayName": true, "preprocess": false }
-        ]
-      ]
-    },
-    "production": {
-      "plugins": [
-        [
-          "babel-plugin-styled-components",
-          { "ssr": true, "displayName": true, "preprocess": false }
-        ]
-      ]
+    "test": {
+      "plugins": ["@babel/plugin-transform-runtime"]
     }
   },
   "plugins": [
@@ -27,7 +14,6 @@
     [
       "module-resolver",
       {
-        // "root": ["lb-react-core/src"],
         "alias": {
           "Variables": "lb-react-core/src/components/base/Variables/Variables.jsx",
           "States": "lb-react-core/src/components/base/States/States",
@@ -45,8 +31,7 @@
           "layout": "lb-react-core/src/components/layout",
           "templates": "lb-react-core/src/components/templates",
           "utils": "lb-react-core/src/components/utils",
-          "work": "lb-react-core/src/components/work",
-          "react-syntax-highlighter/dist/esm/languages/prism/jsx.js": "react-syntax-highlighter/dist/cjs/languages/prism/jsx.js"
+          "work": "lb-react-core/src/components/work"
         }
       }
     ]

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Text, { Title } from "base/Typography";
 import Bar from "blocks/Bar";
 import Card, { CardSection } from "elements/Card";
@@ -8,7 +9,7 @@ import Command from "atoms/Command";
 
 const fullscreen = {
   width: "100%",
-  height: "100vh"
+  height: "100vh",
 };
 const FullScreen = (storyFn) => { return (<div style={fullscreen}>{storyFn()}</div>); };
 
@@ -16,19 +17,27 @@ const centerStyles = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  height: "100vh"
+  height: "100vh",
 };
 const Center = ({ children }) => {
   return (<div style={centerStyles}>{children}</div>);
 };
 
+Center.propTypes = {
+  children: PropTypes.node,
+};
+
+Center.defaultProps = {
+  children: null,
+};
+
 const padding = {
-  padding: "2rem"
+  padding: "2rem",
 };
 const Padding = (storyFn) => { return (<div style={padding}>{storyFn()}</div>); };
 
 const container = {
-  height: "250px"
+  height: "250px",
 };
 const Container = (storyFn) => { return (<div style={container}>{storyFn()}</div>); };
 
@@ -36,36 +45,42 @@ function Spacer() {
   return <span>&nbsp;</span>;
 }
 
+const DisplayGrid = (storyFn) => {
+  return (<Grid>{storyFn()}</Grid>);
+};
+
 function IconGrid({ data }) {
   return data.map(item => (
     <Card
       key={item.icon}
       id={item.icon}
-      hover={true}
+      hover
     // TODO: Add background props to Card
     // type={item.background}
     >
       <CardSection>
         <Bar
           contentAlign="center"
-          left={
-            <Icon
+          left={{
+            content: <Icon
               icon={item.icon}
               type={item.type}
               size={item.size || "2x"}
-              fixedWidth={true}
               spin={item.spin}
               pulse={item.pulse}
-            />
-          }
-          leftWidth="min-content"
-          center={
-            <>
-              <Title text={item.name || item.icon} size="lg" select="all" />
-              <Text text={item.desc} />
-            </>
-          }
-          centerAlign="left"
+              fixedWidth
+            />,
+            width: "min-content",
+          }}
+          center={{
+            content: (
+              <React.Fragment>
+                <Title text={item.name || item.icon} size="lg" select="all" />
+                <Text text={item.desc} />
+              </React.Fragment>
+            ),
+            align: "left",
+          }}
         />
       </CardSection>
     </Card>
@@ -81,4 +96,4 @@ function CommandGrid({ data }) {
   ));
 }
 
-export { FullScreen, Center, Padding, Container, Spacer, IconGrid, CommandGrid };
+export { FullScreen, Center, Padding, Container, Spacer, DisplayGrid, IconGrid, CommandGrid };

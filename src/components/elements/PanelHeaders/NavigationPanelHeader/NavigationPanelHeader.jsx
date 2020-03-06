@@ -14,10 +14,14 @@ function NavigationPanelHeader({
       <Bar
         contentAlign="center"
         padding="3x"
-        leftWidth="min-content"
-        centerAlign="left"
-        left={<Icon icon="left" onClick={onClick} />}
-        center={<Title text={title} size="2x" weight="bold" />}
+        left={{
+          content: <Icon icon="left" onClick={onClick} />,
+          width: "min-content",
+        }}
+        center={{
+          content: <Title text={title} size="2x" weight="bold" />,
+          align: "left",
+        }}
         right={<Menu data={menuData} position="bottomLeft" type="edit" />}
       />
     </React.Fragment>

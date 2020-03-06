@@ -96,11 +96,12 @@ function TextInput({
   value,
   onBlur,
   onFocus,
+  onKeyPress,
   name,
   rows,
   cols,
   warning,
-  onKeyPress,
+  maxlength,
 }) {
   let as;
   let inputTextColor;
@@ -114,15 +115,19 @@ function TextInput({
   if (type === "textarea") {
     as = "textarea";
     inputResize = "vertical";
-  } else if (type === "search") {
   }
+  // else if (type === "search") {
+  // }
+
+  const uId = id || getGuid();
 
   // construct datalist element for autocompletes if appropriate props passed in
   // the autocompleteListId is used to ensure each textinput only draws from its own datalist element
   let autocompleteDataList = null;
   let autoCompleteDataListId = null;
   if (autocompleteList) {
-    autoCompleteDataListId = getGuid();
+    const itemHash = {};
+    autoCompleteDataListId = `${uId}_dataList`;
     const options = autocompleteList.map((item) => {
       let itemValue = item;
       let itemLabel = item;
@@ -130,11 +135,18 @@ function TextInput({
         itemValue = item.value;
         itemLabel = item.label || item.value;
       }
-      return (
-        <option key={getGuid()} value={itemValue}>
-          {itemLabel}
-        </option>
-      );
+
+      const key = `${itemValue && itemValue.toUpperCase()}_${itemLabel && itemLabel.toUpperCase()}`;
+      if (!itemHash[key]) {
+        itemHash[key] = true;
+        return (
+          <option key={key} value={itemValue}>
+            {itemLabel}
+          </option>
+        );
+      }
+
+      return null;
     });
     autocompleteDataList = (
       <datalist id={autoCompleteDataListId}>{options}</datalist>
@@ -165,7 +177,7 @@ function TextInput({
 
   return (
     <TextInputContainer
-      id={id}
+      id={`${uId}_container`}
       inputTextColor={inputTextColor}
       gap="tiny"
       columns="1"
@@ -177,7 +189,7 @@ function TextInput({
       <Input
         as={as}
         disabled={isDisabled} // input attribute
-        id={id} // input attribute
+        id={uId} // input attribute
         inputBorderColor={inputBorderColor}
         inputBorderColorHover={inputBorderColorHover}
         inputCaretColor={inputCaretColor}
@@ -185,7 +197,7 @@ function TextInput({
         inputResize={inputResize}
         inputSelectColor={inputSelectColor}
         list={autoCompleteDataListId}
-        name={name || id} // input attribute
+        name={name || uId} // input attribute
         onChange={onChange}
         pattern={pattern} // input attribute
         placeholder={placeholder} // input attribute
@@ -197,9 +209,11 @@ function TextInput({
         value={value}
         onBlur={onBlur}
         onFocus={onFocus}
+        onKeyPress={onKeyPress}
         rows={rows} // textarea attribute
         cols={cols} // textarea attribute
-        onKeyPress={onKeyPress}
+        autoComplete={autocompleteList && autocompleteList.length > 0 ? "on" : "off"}
+        maxLength={maxlength}
       />
       {autocompleteDataList}
       {helpText ? <Text size="1x" text={helpText} /> : null}
@@ -254,11 +268,12 @@ TextInput.propTypes = {
   value: PropTypes.string,
   onBlur: PropTypes.func,
   onFocus: PropTypes.func,
+  onKeyPress: PropTypes.func,
   name: PropTypes.string,
   rows: PropTypes.string,
   cols: PropTypes.string,
   warning: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
-  onKeyPress: PropTypes.func,
+  maxlength: PropTypes.number,
 };
 
 TextInput.defaultProps = {
@@ -281,11 +296,12 @@ TextInput.defaultProps = {
   value: null,
   onBlur: null,
   onFocus: null,
+  onKeyPress: null,
   name: "",
   rows: "",
   cols: "",
   warning: "",
-  onKeyPress: null,
+  maxlength: null,
 };
 
 export default TextInput;

@@ -3,10 +3,10 @@
 import React from "react";
 import Panel from "layout/Panel";
 import DataTable from "blocks/Table";
-import Card, { CardGrid } from "elements/Card";
+// import Card, { CardGrid } from "elements/Card";
 import List, { ListItem } from "blocks/List";
-import Mapbox from "layout/Map";
-import Title from "base/Typography";
+// import Mapbox from "layout/Map";
+// import Title from "base/Typography";
 import Template from "./Template.jsx";
 
 const TemplateNotes = markdown.require("./Template.md");

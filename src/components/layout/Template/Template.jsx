@@ -231,8 +231,10 @@ function Template({
         <Footer
           contentAlign="center"
           padding="2x"
-          centerAlign="left"
-          center={footer.content}
+          center={{
+            content: footer.content,
+            align: "left",
+          }}
         />
       ) : null}
     </TemplateWrapper>

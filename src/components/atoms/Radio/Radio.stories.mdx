@@ -54,21 +54,27 @@ If available options can be collapsed, consider using a dropdown menu instead, a
     <React.Fragment>
       <Bar
         padding="2x"
-        leftWidth="5%"
-        centerAlign="left"
         contentAlign="center"
-        left={<Icon icon="check" type="success" size="2x" />}
-        center={<Radio label="Brief Label" />}
+        left={{
+          content: <Icon icon="check" type="success" size="2x" />,
+          width: "5%",
+        }}
+        center={{
+          content: <Radio label="Brief Label" />,
+          align: "left",
+        }}
       />
       <Bar
         padding="2x"
-        leftWidth="5%"
-        centerAlign="left"
         contentAlign="center"
-        left={<Icon icon="close" type="alert" size="2x" />}
-        center={
-          <Radio label="Radio with a long label because you cannot be concise with your words." />
-        }
+        left={{
+          content: <Icon icon="close" type="alert" size="2x" />,
+          width: "5%",
+        }}
+        center={{
+          content: <Radio label="Radio with a long label because you cannot be concise with your words." />,
+          align: "left",
+        }}
       />
     </React.Fragment>
   </Story>

@@ -8,6 +8,7 @@ import Grid from "layout/Grid";
 import Text, { Label } from "base/Typography";
 import TextInput from "atoms/TextInput";
 import Slider from "atoms/Slider";
+import { getGuid } from "helpers";
 
 const RangeContainer = styled(Grid)`
   color: ${(props) => {
@@ -34,9 +35,11 @@ function RangeSlider({
   if (error && !isDisabled) {
     inputTextColor = "alert";
   }
+
+  const uId = id || getGuid();
   return (
     <RangeContainer
-      id={id}
+      id={uId}
       disabled={isDisabled}
       inputTextColor={inputTextColor}
       columns="1"
@@ -49,31 +52,27 @@ function RangeSlider({
       <Bar
         padding="none"
         contentAlign="center"
-        leftWidth="6em"
-        rightWidth="6em"
-        left={
-          <TextInput
+        left={{
+          content: <TextInput
+            id={`${uId}_min`}
             type="text"
             placeholder={placeholderMin}
             error={!!error}
             disabled={isDisabled}
-          />
-        }
-        center={
-          error && !isDisabled ? (
-            <Slider error disabled={isDisabled} />
-          ) : (
-              <Slider disabled={isDisabled} />
-            )
-        }
-        right={
-          <TextInput
+          />,
+          width: "6em",
+        }}
+        center={<Slider error={error && !isDisabled} disabled={isDisabled} />}
+        right={{
+          content: <TextInput
+            id={`${uId}_max`}
             type="text"
             placeholder={placeholderMax}
             error={!!error}
             disabled={isDisabled}
-          />
-        }
+          />,
+          width: "6em",
+        }}
       />
       {helpText ? <Text size="1x" text={helpText} /> : null}
       {typeof error === "string" && !isDisabled ? (

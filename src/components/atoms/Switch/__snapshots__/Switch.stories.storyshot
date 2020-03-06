@@ -1,0 +1,196 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  className="Switch__SwitchContainer-sc-1bvlvzt-0 iuomPM"
+  disabled={false}
+  id={null}
+  label="Switch"
+  onClick={[Function]}
+>
+  <div
+    checked={false}
+    className="Switch__StyledSwitch-sc-1bvlvzt-1 gEzAJR"
+    disabled={false}
+    onChange={null}
+  >
+    <div
+      checked={false}
+      className="Switch__Circle-sc-1bvlvzt-2 gXgoDz"
+      disabled={false}
+    />
+  </div>
+  <label
+    className="Typography__StyledLabel-sc-19auepv-0 Jgtkr"
+    fontSize="0.876em"
+    fontWeight={400}
+    htmlFor={null}
+    letterSpacing="0px"
+  >
+    Switch
+  </label>
+</div>
+`;
+
+exports[` 2`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 iArnTB"
+  id={null}
+  rows={null}
+>
+  <div
+    className="Switch__SwitchContainer-sc-1bvlvzt-0 iuomPM"
+    disabled={false}
+    id={null}
+    label="Selected"
+    onClick={[Function]}
+  >
+    <div
+      checked={true}
+      className="Switch__StyledSwitch-sc-1bvlvzt-1 kXKOpB"
+      disabled={false}
+      onChange={null}
+    >
+      <div
+        checked={true}
+        className="Switch__Circle-sc-1bvlvzt-2 gVJydO"
+        disabled={false}
+      />
+    </div>
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr"
+      fontSize="0.876em"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing="0px"
+    >
+      Selected
+    </label>
+  </div>
+  <div
+    className="Switch__SwitchContainer-sc-1bvlvzt-0 iuomPM"
+    disabled={false}
+    id={null}
+    label="Unselected"
+    onClick={[Function]}
+  >
+    <div
+      checked={false}
+      className="Switch__StyledSwitch-sc-1bvlvzt-1 gEzAJR"
+      disabled={false}
+      onChange={null}
+    >
+      <div
+        checked={false}
+        className="Switch__Circle-sc-1bvlvzt-2 gXgoDz"
+        disabled={false}
+      />
+    </div>
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr"
+      fontSize="0.876em"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing="0px"
+    >
+      Unselected
+    </label>
+  </div>
+  <div
+    className="Switch__SwitchContainer-sc-1bvlvzt-0 QCDYo"
+    disabled={true}
+    id={null}
+    label="Disabled"
+    onClick={[Function]}
+  >
+    <div
+      checked={false}
+      className="Switch__StyledSwitch-sc-1bvlvzt-1 bhSCQ"
+      disabled={true}
+      onChange={null}
+    >
+      <div
+        checked={false}
+        className="Switch__Circle-sc-1bvlvzt-2 fPUgbE"
+        disabled={true}
+      />
+    </div>
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr"
+      fontSize="0.876em"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing="0px"
+    >
+      Disabled
+    </label>
+  </div>
+</section>
+`;
+
+exports[` 3`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 iArnTB"
+  id={null}
+  rows={null}
+>
+  <div
+    className="Switch__SwitchContainer-sc-1bvlvzt-0 iuomPM"
+    disabled={false}
+    id={null}
+    label="Left Aligned"
+    onClick={[Function]}
+  >
+    <div
+      checked={false}
+      className="Switch__StyledSwitch-sc-1bvlvzt-1 gEzAJR"
+      disabled={false}
+      onChange={null}
+    >
+      <div
+        checked={false}
+        className="Switch__Circle-sc-1bvlvzt-2 gXgoDz"
+        disabled={false}
+      />
+    </div>
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr"
+      fontSize="0.876em"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing="0px"
+    >
+      Left Aligned
+    </label>
+  </div>
+  <div
+    className="Switch__SwitchContainer-sc-1bvlvzt-0 kJWxTM"
+    disabled={false}
+    id={null}
+    label="Right Aligned"
+    onClick={[Function]}
+  >
+    <div
+      checked={false}
+      className="Switch__StyledSwitch-sc-1bvlvzt-1 gEzAJR"
+      disabled={false}
+      onChange={null}
+    >
+      <div
+        checked={false}
+        className="Switch__Circle-sc-1bvlvzt-2 gXgoDz"
+        disabled={false}
+      />
+    </div>
+    <label
+      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr"
+      fontSize="0.876em"
+      fontWeight={400}
+      htmlFor={null}
+      letterSpacing="0px"
+    >
+      Right Aligned
+    </label>
+  </div>
+</section>
+`;

@@ -16,51 +16,7 @@ import Icon from "atoms/Icon";
 
 <Preview withToolbar>
   <Story name="Standard">
-    <TextInput label="TextInput"/>
-  </Story>
-</Preview>
-
-# Usage
-
-A basic widget for getting the user input is a text field. Keyboard and mouse can be used for providing or changing data.
-Text fields allow users to enter text into a UI. They typically appear in forms and dialogs.
-
-# Guidelines
-
-- **Discoverable:**
-  Text fields should stand out and indicate that users can input information.
-- **Clear:**
-  Text field states should be clearly differentiated from one another.
-- **Efficient**
-  Text fields should make it easy to understand the requested information and to address any errors.
-
-
-
-### Do & Don't
-Label text is used to inform users as to what information is requested for a text field. Every text field should have a label.
-
-<Preview>
-  <Story name="Usage">
-    <React.Fragment>
-      <Bar
-        padding="2x"
-        leftWidth="5%"
-        centerAlign="left"
-        contentAlign="center"
-        left={<Icon icon="check" type="success" size="2x" />}
-        center={<TextInput label="Brief Label" />}
-      />
-      <Bar
-        padding="2x"
-        leftWidth="5%"
-        centerAlign="left"
-        contentAlign="center"
-        left={<Icon icon="close" type="alert" size="2x" />}
-        center={
-          <TextInput />
-        }
-      />
-    </React.Fragment>
+    <TextInput id="standard" label="TextInput" />
   </Story>
 </Preview>
 
@@ -81,21 +37,25 @@ A TextInput may appear to the left or right of it's corresponding label. A TextI
 <Preview>
   <Story name="States">
     <Form columns="1">
-        <TextInput  label="Text Input"
-                helpText="Hang in there, buddy, I'm here to help!" />
-        
-              <TextInput
-                label="Text Input ( Disabled )"
-                placeholder="I am just keeping things warm"
-                helpText="Hang in there, buddy, I'm here to help!"
-                disabled
-              />
-              <TextInput
-                label="Text Input ( Error )"
-                placeholder="I am just keeping things warm"
-                helpText="Hang in there, buddy, I'm here to help!"
-                error="Don't sweat it...we can fix this!"
-              />
+        <TextInput
+          id="default"
+          label="Text Input"
+          helpText="Hang in there, buddy, I'm here to help!"
+        />      
+        <TextInput
+          id="disabled"
+          label="Text Input ( Disabled )"
+          placeholder="I am just keeping things warm"
+          helpText="Hang in there, buddy, I'm here to help!"
+          disabled
+        />
+        <TextInput
+          id="error"
+          label="Text Input ( Error )"
+          placeholder="I am just keeping things warm"
+          helpText="Hang in there, buddy, I'm here to help!"
+          error="Don't sweat it...we can fix this!"
+        />
     </Form>
   </Story>
 </Preview>
@@ -105,37 +65,43 @@ A TextInput may appear to the left or right of it's corresponding label. A TextI
 <Preview>
   <Story name="Type">
     <Form>
-                  <TextInput
-                label="Text Input ( Required )"
-                placeholder="I am just keeping things warm"
-                helpText="Hang in there, buddy, I'm here to help!"
-                isRequired
-              />
       <TextInput
+        id="required"
+        label="Text Input ( Required )"
+        placeholder="I am just keeping things warm"
+        helpText="Hang in there, buddy, I'm here to help!"
+        isRequired
+      />
+      <TextInput
+        id="pattern"
         pattern="[A-Za-z]{3}"
         label="Text"
         placeholder="I am just keeping things warm"
         helpText="Can contain only three letters (no numbers or special characters"
       />
       <TextInput
+        id="textarea"
         type="textarea"
         label="Text Area"
         placeholder="I am just keeping things warm"
         helpText="Hang in there, buddy, I'm here to help!"
       />
       <TextInput
+        id="number"
         type="number"
         label="Number"
         placeholder="I am just keeping things warm"
         helpText="Hang in there, buddy, I'm here to help!"
       />
       <TextInput
+        id="search"
         type="search"
         label="Search"
         placeholder="I am just keeping things warm"
         helpText="Hang in there, buddy, I'm here to help!"
       />
       <TextInput
+        id="password"
         autofocus
         type="password"
         pattern=".{6,}"
@@ -145,6 +111,7 @@ A TextInput may appear to the left or right of it's corresponding label. A TextI
         helpText="Must contain 6 or more characters"
       />
       <TextInput
+        id="email"
         type="email"
         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
         label="Email"
@@ -152,6 +119,7 @@ A TextInput may appear to the left or right of it's corresponding label. A TextI
         helpText="Hang in there, buddy, I'm here to help!"
       />
       <TextInput
+        id="phone"
         type="tel"
         pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
         label="Telephone Number"
@@ -159,6 +127,7 @@ A TextInput may appear to the left or right of it's corresponding label. A TextI
         helpText="Hang in there, buddy, I'm here to help!"
       />
       <TextInput
+        id="url"
         type="url"
         pattern="https?://.+"
         label="URL"
@@ -166,36 +135,42 @@ A TextInput may appear to the left or right of it's corresponding label. A TextI
         helpText="Hang in there, buddy, I'm here to help!"
       />
       <TextInput
+        id="color"
         type="color"
         label="Color"
         placeholder="I am just keeping things warm"
         helpText="Hang in there, buddy, I'm here to help!"
       />
       <TextInput
+        id="date"
         type="date"
         label="Date"
         placeholder="I am just keeping things warm"
         helpText="Hang in there, buddy, I'm here to help!"
       />
       <TextInput
+        id="time"
         type="time"
         label="Time"
         placeholder="I am just keeping things warm"
         helpText="Hang in there, buddy, I'm here to help!"
       />
       <TextInput
+        id="datetime"
         type="datetime-local"
         label="Local Date/Time"
         placeholder="I am just keeping things warm"
         helpText="Hang in there, buddy, I'm here to help!"
       />
       <TextInput
+        id="month"
         type="month"
         label="Month"
         placeholder="I am just keeping things warm"
         helpText="Hang in there, buddy, I'm here to help!"
       />
       <TextInput
+        id="week"
         type="week"
         label="Week"
         placeholder="I am just keeping things warm"
@@ -209,7 +184,7 @@ A TextInput may appear to the left or right of it's corresponding label. A TextI
 
 <Preview>
   <Story name="Autocomplete">
-    <TextInput autocompleteList={["Red", "Green", "Blue", "Cyan", "Magenta", "Yellow", "Black"]} label="Colors" placeholder="Pick a Color" onChange={(e) => {
+    <TextInput id="autocomplete" autocompleteList={["Red", "Green", "Blue", "Cyan", "Magenta", "Yellow", "Black"]} label="Colors" placeholder="Pick a Color" onChange={(e) => {
       alert(e.currentTarget.value);
     }} />
   </Story>

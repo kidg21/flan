@@ -43,7 +43,6 @@ const CardSectionWrapper = styled.section`
   cursor: ${(props) => {
     return props.onClick ? "pointer" : "";
   }};
-  z-index: 1;
   max-height: ${(props) => {
     return props.open ? "0" : "100vh";
   }}; 
@@ -197,19 +196,23 @@ function ExpandingSection({
         title || description || label || icon ? (
           <Bar
             contentAlign="center"
-            leftWidth="max-content"
-            left={
-              label || icon ? <Avatar label={label} icon={icon} /> : null
-            }
-            centerAlign="left"
-            center={
-              <React.Fragment>
-                {title ? <Title text={title} /> : null}
-                {description ? <Text text={description} /> : null}
-              </React.Fragment>
-            }
-            rightWidth="max-content"
-            right={children ? <Icon icon="up" size="lg" rotation={rotation} /> : null}
+            left={label || icon ? {
+              content: <Avatar label={label} icon={icon} />,
+              width: "max-content",
+            } : null}
+            center={{
+              content: (
+                <React.Fragment>
+                  {title ? <Title text={title} /> : null}
+                  {description ? <Text text={description} /> : null}
+                </React.Fragment>
+              ),
+              align: "left",
+            }}
+            right={children ? {
+              content: <Icon icon="up" size="lg" rotation={rotation} />,
+              width: "max-content",
+            } : null}
           />
         ) : null}
     >
@@ -384,12 +387,14 @@ function Card({
       <CardSection type={type} >
         <Bar
           contentAlign="center"
-          leftWidth="max-content"
-          left={
-            label || icon ? <Avatar label={label} icon={icon} /> : null
-          }
-          centerAlign="left"
-          center={centerContent}
+          left={label || icon ? {
+            content: <Avatar label={label} icon={icon} />,
+            width: "max-content",
+          } : null}
+          center={{
+            content: centerContent,
+            align: "left",
+          }}
         />
       </CardSection>
     );
@@ -493,26 +498,28 @@ function Card({
     if (commands.length >= 2) {
       commandElements = (
         <Bar
-          leftWidth="90%"
-          left={
-            <Grid columns="2">
-              <Command
-                label={commands[0].label}
-                onClick={commands[0].onClick}
-                disabled={commands[0].disabled}
-              />
-              <Command
-                label={commands[1].label}
-                onClick={commands[1].onClick}
-                disabled={commands[1].disabled}
-              />
-            </Grid>
-          }
-          rightWidth="10%"
-          right={
+          left={{
+            content: (
+              <Grid columns="2">
+                <Command
+                  label={commands[0].label}
+                  onClick={commands[0].onClick}
+                  disabled={commands[0].disabled}
+                />
+                <Command
+                  label={commands[1].label}
+                  onClick={commands[1].onClick}
+                  disabled={commands[1].disabled}
+                />
+              </Grid>
+            ),
+            width: "90%",
+          }}
+          right={{
             // More than 2 Commands sends overflow to Menu
-            commands.length > 2 ? <Menu data={commands.slice(2)} position="topLeft" /> : <Spacer />
-          }
+            content: commands.length > 2 ? <Menu data={commands.slice(2)} position="topLeft" /> : <Spacer />,
+            width: "10%",
+          }}
         />
       );
       // Single Command

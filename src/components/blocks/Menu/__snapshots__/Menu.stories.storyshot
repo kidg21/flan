@@ -1,0 +1,268 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <div
+    className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+    href={null}
+    id={null}
+    media={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-2 gWVcck"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-1 kHYCoh"
+      >
+        <a
+          className="Menu__MenuContainer-sc-17iwn6x-0 lhgeCh"
+          onClick={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-ellipsis-v fa-w-4 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+            color={null}
+            data-icon="ellipsis-v"
+            data-prefix="far"
+            focusable="false"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 128 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[` 2`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 iArnTB"
+    id={null}
+    rows={null}
+  >
+    <a
+      className="Menu__MenuContainer-sc-17iwn6x-0 lhgeCh"
+      onClick={[Function]}
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-ellipsis-v fa-w-4 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+        color={null}
+        data-icon="ellipsis-v"
+        data-prefix="far"
+        focusable="false"
+        id={null}
+        role="img"
+        style={Object {}}
+        viewBox="0 0 128 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </a>
+    <a
+      className="Menu__MenuContainer-sc-17iwn6x-0 lhgeCh"
+      onClick={[Function]}
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-ellipsis-v fa-w-4 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+        color={null}
+        data-icon="ellipsis-v"
+        data-prefix="far"
+        focusable="false"
+        id={null}
+        role="img"
+        style={Object {}}
+        viewBox="0 0 128 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </a>
+    <a
+      className="Menu__MenuContainer-sc-17iwn6x-0 lhgeCh"
+      onClick={[Function]}
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-ellipsis-v fa-w-4 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+        color={null}
+        data-icon="ellipsis-v"
+        data-prefix="far"
+        focusable="false"
+        id={null}
+        role="img"
+        style={Object {}}
+        viewBox="0 0 128 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </a>
+    <a
+      className="Menu__MenuContainer-sc-17iwn6x-0 lhgeCh"
+      onClick={[Function]}
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-ellipsis-v fa-w-4 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+        color={null}
+        data-icon="ellipsis-v"
+        data-prefix="far"
+        focusable="false"
+        id={null}
+        role="img"
+        style={Object {}}
+        viewBox="0 0 128 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </a>
+    <a
+      className="Menu__MenuContainer-sc-17iwn6x-0 lhgeCh"
+      onClick={[Function]}
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-ellipsis-v fa-w-4 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+        color={null}
+        data-icon="ellipsis-v"
+        data-prefix="far"
+        focusable="false"
+        id={null}
+        role="img"
+        style={Object {}}
+        viewBox="0 0 128 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </a>
+    <a
+      className="Menu__MenuContainer-sc-17iwn6x-0 lhgeCh"
+      onClick={[Function]}
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-ellipsis-v fa-w-4 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+        color={null}
+        data-icon="ellipsis-v"
+        data-prefix="far"
+        focusable="false"
+        id={null}
+        role="img"
+        style={Object {}}
+        viewBox="0 0 128 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </a>
+  </section>
+</div>
+`;
+
+exports[` 3`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <div
+    className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+    href={null}
+    id={null}
+    media={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-2 xQXbG"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-1 ekMqDX"
+      >
+        <a
+          className="Menu__MenuContainer-sc-17iwn6x-0 lhgeCh"
+          onClick={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-ellipsis-v fa-w-4 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+            color={null}
+            data-icon="ellipsis-v"
+            data-prefix="far"
+            focusable="false"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 128 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -31,7 +31,7 @@ const BoxContainer = styled.div`
   }};
   border: 1px solid
     ${(props) => {
-    return props.theme.palette.neutral40;
+    return props.border || props.theme.palette.neutral40;
   }};
   border-radius: 5px;
 
@@ -72,11 +72,11 @@ const BoxContainer = styled.div`
 `;
 
 const Container = React.forwardRef(({
-  id, height, width, padding, children, maxHeight,
+  id, height, width, padding, border, children,
 }, ref) => {
   return (
     <Wrapper padding={padding} height={height} width={width}>
-      <BoxContainer id={id} height={height ? "100%" : ""}  maxHeight={maxHeight} ref={ref}>
+      <BoxContainer id={id} height={height ? "100%" : ""} border={border} ref={ref}>
         {children}
       </BoxContainer>
     </Wrapper>
@@ -84,6 +84,7 @@ const Container = React.forwardRef(({
 });
 
 Container.propTypes = {
+  border: PropTypes.string,
   id: PropTypes.string,
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
@@ -93,6 +94,7 @@ Container.propTypes = {
 };
 
 Container.defaultProps = {
+  border: null,
   id: null,
   height: null,
   maxHeight: null,

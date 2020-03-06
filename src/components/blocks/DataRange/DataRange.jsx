@@ -8,6 +8,7 @@ import Text, { Label } from "base/Typography";
 import Grid from "layout/Grid";
 import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";
+import { getGuid } from "helpers";
 
 const RangeContainer = styled(Grid)`
   color: ${(props) => {
@@ -61,9 +62,11 @@ function DataRange({
     if (typeof max.onChange === "function") max.onChange({ min: min.value, max: newMaxValue });
     if (typeof setMaxState === "function") setMaxState(newState);
   }
+
+  const uId = id || getGuid();
   return (
     <RangeContainer
-      id={id}
+      id={uId}
       disabled={isDisabled}
       inputTextColor={inputTextColor}
       columns="1"
@@ -78,6 +81,7 @@ function DataRange({
         left={
           min.options ? (
             <SelectMenu
+              id={`${uId}_left`}
               label={min.label}
               options={min.options}
               onChangeState={onChangeMin}
@@ -86,6 +90,7 @@ function DataRange({
             />)
             :
             (<TextInput
+              id={`${uId}_left`}
               label={min.label}
               onChange={onChangeMin}
               error={!!error}
@@ -96,6 +101,7 @@ function DataRange({
         center={
           select ? (
             <SelectMenu
+              id={`${uId}_center`}
               options={select.options}
               label={select.label}
               onChangeState={select.onChange}
@@ -107,6 +113,7 @@ function DataRange({
         right={
           max.options ? (
             <SelectMenu
+              id={`${uId}_right`}
               label={max.label}
               options={max.options}
               onChangeState={max.onChange}
@@ -115,6 +122,7 @@ function DataRange({
             />)
             :
             (<TextInput
+              id={`${uId}_right`}
               label={max.label}
               onChange={onChangeMax}
               error={!!error}

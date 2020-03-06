@@ -16,16 +16,19 @@ import Calendar from "atoms/Calendar";
   <Story name="Calendar">
     <Form>
       <Calendar
+        id="date"
         type="date"
         label="Date Input Label"
         helpText="Hang in there, buddy, I'm here to help!"
       />
       <Calendar
+        id="time"
         type="time"
         label="Time Input Label"
         helpText="Hang in there, buddy, I'm here to help!"
       />
       <Calendar
+        id="datetime"
         type="datetime"
         label="Date-Time Input Label"
         helpText="Hang in there, buddy, I'm here to help!"
@@ -53,23 +56,27 @@ The Date Picker provides the user with a text input in which they can input mont
   <Story name="Date Picker">
     <Form>
       <Calendar
+        id="dateDefault"
         type="date"
         label="Date Input Label"
         helpText="Hang in there, buddy, I'm here to help!"
       />
       <Calendar
+        id="dateRequired"
         type="date"
         label="Date Input Label (required)"
         helpText="Hang in there, buddy, I'm here to help!"
         isRequired
       />
       <Calendar
+        id="dateDisabled"
         type="date"
         label="Date Input Label"
         helpText="Hang in there, buddy, I'm here to help!"
         disabled
       />
       <Calendar
+        id="dateError"
         type="date"
         label="Date Input Label"
         helpText="Hang in there, buddy, I'm here to help!"
@@ -87,23 +94,27 @@ Time Pickers provide the user with a text input in which they can input hours/mi
   <Story name="Time Picker">
     <Form>
       <Calendar
+        id="timeDefault"
         type="time"
         label="Time Input Label"
         helpText="Hang in there, buddy, I'm here to help!"
       />
       <Calendar
+        id="timeRequired"
         type="time"
         label="Time Input Label (required)"
         helpText="Hang in there, buddy, I'm here to help!"
         isRequired
       />
       <Calendar
+        id="timeDisabled"
         type="time"
         label="Time Input Label"
         helpText="Hang in there, buddy, I'm here to help!"
         disabled
       />
       <Calendar
+        id="timeError"
         type="time"
         label="Time Input Label"
         helpText="Hang in there, buddy, I'm here to help!"
@@ -122,23 +133,27 @@ A Date Picker and a Time Picker can be paired to for a single inline input.
   <Story name="Date / Time Picker">
     <Form>
       <Calendar
+        id="datetimeDefault"
         type="datetime"
         label="Date-Time Input Label"
         helpText="Hang in there, buddy, I'm here to help!"
       />
       <Calendar
+        id="dateTimeRequired"
         type="datetime"
         label="Date-Time Input Label (required)"
         helpText="Hang in there, buddy, I'm here to help!"
         isRequired
       />
       <Calendar
+        id="datetimeDisabled"
         type="datetime"
         label="Date-Time Input Label"
         helpText="Hang in there, buddy, I'm here to help!"
         disabled
       />
       <Calendar
+        id="dateTimeError"
         type="datetime"
         label="Date-Time Input Label"
         helpText="Hang in there, buddy, I'm here to help!"

@@ -26,10 +26,6 @@ const ListWrapper = styled.ul`
   }
 `;
 
-const LinkedWrapper = styled.a`
-flex: auto;
-`;
-
 const ListItemWrapper = styled.li`
   position: relative;
   
@@ -89,6 +85,37 @@ List.defaultProps = {
   interactive: false,
 };
 
+function getRightContent(post, disabled, onClick) {
+  let rightContent = null;
+  if (post && post.type) {
+    const postType = post.type.toLowerCase();
+    if (postType === "checkbox") {
+      rightContent = <Checkbox id={post.label} label={post.label} align="right" disabled={disabled} checked={post.checked} onChange={post.onClick} />;
+    } else if (postType === "toggle") {
+      rightContent = <Switch label={post.label} align="right" disabled={disabled} checked={post.checked} onChange={post.onClick} />;
+    } else if (postType === "label" && post.label) {
+      rightContent = {
+        content: <Tag label={post.label} />,
+        onClick: post.onClick || onClick,
+      };
+    }
+  }
+  return rightContent;
+}
+
+function getLeftContent(pre, disabled, onClick) {
+  let leftContent = null;
+  if (pre && (pre.label || pre.icon)) {
+    const leftContentComponent = <Avatar label={pre.label} icon={pre.icon} disabled={disabled} />;
+    leftContent = {
+      content: leftContentComponent,
+      width: "max-content",
+      onClick: pre.onClick || onClick,
+    };
+  }
+  return leftContent;
+}
+
 function ListItem({
   active,
   children,
@@ -104,44 +131,15 @@ function ListItem({
   pre,
   tabIndex,
 }) {
-  let leftContent;
-  if (pre && (pre.label || pre.icon)) {
-    leftContent = <Avatar label={pre.label} icon={pre.icon} disabled={disabled} />;
-  }
+  const leftContent = getLeftContent(pre, disabled, onClick);
+  const centerContent = (
+    <React.Fragment >
+      <Title text={title} disabled={disabled} />
+      {description ? (<Text text={description} disabled={disabled} />
+      ) : null}
+    </React.Fragment>);
 
-  let centerContent;
-
-  if (onClick) {
-    centerContent = (
-      <LinkedWrapper onClick={onClick}>
-        <React.Fragment >
-          <Title text={title} disabled={disabled} />
-          {description ? (<Text text={description} disabled={disabled} />
-          ) : null}
-        </React.Fragment>
-      </LinkedWrapper>
-    );
-  } else {
-    centerContent = (
-      <React.Fragment >
-        <Title text={title} disabled={disabled} />
-        {description ? (<Text text={description} disabled={disabled} />
-        ) : null}
-      </React.Fragment>);
-  }
-
-
-  let rightContent;
-  if (post && post.type) {
-    const postType = post.type.toLowerCase();
-    if (postType === "checkbox") {
-      rightContent = <Checkbox id={post.label} label={post.label} align="right" disabled={disabled} />;
-    } else if (postType === "toggle") {
-      rightContent = <Switch label={post.label} align="right" disabled={disabled} />;
-    } else if (postType === "label" && post.label) {
-      rightContent = <Tag label={post.label} />;
-    }
-  }
+  const rightContent = getRightContent(post, disabled, onClick);
 
   return (
     <ListItemWrapper
@@ -161,12 +159,14 @@ function ListItem({
     >
       <DisabledContext.Provider value={disabled}>
         <Bar
-          center={centerContent}
-          centerAlign="left"
+          center={{
+            content: centerContent,
+            align: "left",
+            onClick: onClick,
+          }}
           contentAlign="center"
           disabled={disabled}
           left={leftContent}
-          leftWidth="max-content"
           right={rightContent}
         />
         {children}
@@ -189,10 +189,13 @@ ListItem.propTypes = {
   post: PropTypes.shape({
     type: PropTypes.string.isRequired,
     label: PropTypes.string,
+    checked: PropTypes.bool,
+    onClick: PropTypes.func,
   }),
   pre: PropTypes.shape({
     label: PropTypes.string,
     icon: PropTypes.string,
+    onClick: PropTypes.func,
   }),
   tabIndex: PropTypes.string,
 };
