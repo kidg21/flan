@@ -8,8 +8,6 @@ import IconBlock from "blocks/IconBlock";
 import Command from "atoms/Command";
 import Text, { Title } from "base/Typography";
 import Bar from "blocks/Bar";
-import { object } from "prop-types";
-
 
 const shortTitle = <Title text="A Standard Title" />;
 const longTitle = (

@@ -69,6 +69,75 @@ exports[` 2`] = `
     }
   }
 >
+  <div
+    className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+    href={null}
+    id={null}
+    media={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__BarLayout-sc-1c4axau-2 xQXbG"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-sc-1c4axau-1 hAjMjw"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          Left
+        </h6>
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-1 flbmFP"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          Towgood, Gary T.
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          3082 Yellowstone Dr. Costa Mesa, CA 92612
+        </p>
+      </div>
+      <div
+        className="Bar__Slot-sc-1c4axau-1 kHYCoh"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          Right
+        </h6>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[` 3`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
   <section
     className="Grid__GridWrapper-sc-1ntp7gx-0 fGkTyc Card__CardGridWrapper-sc-1g3s676-6 dqRWfz"
     id={null}
