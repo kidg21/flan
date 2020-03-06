@@ -52,27 +52,27 @@ function RangeSlider({
       <Bar
         padding="none"
         contentAlign="center"
-        leftWidth="6em"
-        rightWidth="6em"
-        left={
-          <TextInput
+        left={{
+          content: <TextInput
             id={`${uId}_min`}
             type="text"
             placeholder={placeholderMin}
             error={!!error}
             disabled={isDisabled}
-          />
-        }
+          />,
+          width: "6em",
+        }}
         center={<Slider error={error && !isDisabled} disabled={isDisabled} />}
-        right={
-          <TextInput
+        right={{
+          content: <TextInput
             id={`${uId}_max`}
             type="text"
             placeholder={placeholderMax}
             error={!!error}
             disabled={isDisabled}
-          />
-        }
+          />,
+          width: "6em",
+        }}
       />
       {helpText ? <Text size="1x" text={helpText} /> : null}
       {typeof error === "string" && !isDisabled ? (

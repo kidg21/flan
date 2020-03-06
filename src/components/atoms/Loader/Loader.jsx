@@ -106,7 +106,7 @@ function Loader({ line, id }) {
 
 Loader.propTypes = {
   id: PropTypes.string,
-  line: PropTypes.cool,
+  line: PropTypes.bool,
 };
 
 Loader.defaultProps = {

@@ -56,20 +56,26 @@ function Banner({
       <Bar
         contentAlign={description || link ? "" : "center"}
         padding="none"
-        leftWidth="max-content"
-        left={bannerType}
-        centerAlign="left"
-        center={
-          <Grid columns="1" gap="tiny">
-            <Title text={title} />
-            {description ? <Text size="2x" text={description} /> : null}
-            {link ? (
-              <Link href={href} onClick={onClick} text={link} />
-            ) : null}
-          </Grid>
-        }
-        rightWidth="max-content"
-        right={(<Close icon="close" size="lg" onClick={onClose} />)}
+        left={{
+          content: bannerType,
+          width: "max-content",
+        }}
+        center={{
+          content: (
+            <Grid columns="1" gap="tiny">
+              <Title text={title} />
+              {description ? <Text size="2x" text={description} /> : null}
+              {link ? (
+                <Link href={href} onClick={onClick} text={link} />
+              ) : null}
+            </Grid>
+          ),
+          align: "left",
+        }}
+        right={{
+          content: (<Close icon="close" size="lg" onClick={onClose} />),
+          width: "max-content",
+        }}
       />
     </StyledBanner>
   );

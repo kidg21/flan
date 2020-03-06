@@ -20,8 +20,10 @@ storiesOf("Layout|Panel", module)
           <Bar
             contentAlign="center"
             padding="2x"
-            centerAlign="center"
-            center={<Title text="Header" />}
+            center={{
+              content: <Title text="Header" />,
+              align: "center",
+            }}
           />}
       />
     );
@@ -33,8 +35,10 @@ storiesOf("Layout|Panel", module)
           <Bar
             contentAlign="center"
             padding="2x"
-            centerAlign="center"
-            center={<Title text="Footer" />}
+            center={{
+              content: <Title text="Footer" />,
+              align: "center",
+            }}
           />}
       />
     );
@@ -46,15 +50,19 @@ storiesOf("Layout|Panel", module)
           <Bar
             contentAlign="center"
             padding="2x"
-            centerAlign="center"
-            center={<Title text="Header" />}
+            center={{
+              content: <Title text="Header" />,
+              align: "center",
+            }}
           />}
         footer={
           <Bar
             contentAlign="center"
             padding="2x"
-            centerAlign="center"
-            center={<Title text="Footer" />}
+            center={{
+              content: <Title text="Footer" />,
+              align: "center",
+            }}
           />}
       />
     );
@@ -67,15 +75,19 @@ storiesOf("Layout|Panel", module)
           <Bar
             contentAlign="center"
             padding="2x"
-            centerAlign="center"
-            center={<Title text="Header" />}
+            center={{
+              content: <Title text="Header" />,
+              align: "center",
+            }}
           />}
         footer={
           <Bar
             contentAlign="center"
             padding="2x"
-            centerAlign="center"
-            center={<Title text="Footer" />}
+            center={{
+              content: <Title text="Footer" />,
+              align: "center",
+            }}
           />}
       >
         <CardGrid>

@@ -21,12 +21,12 @@ exports[` 1`] = `
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+        className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+          className="Bar__Slot-sc-1c4axau-1 ejlqvW"
         >
           <h6
             className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -91,8 +91,8 @@ exports[` 1`] = `
           className="Button__StyledButton-sc-1v7sls2-0 jLfFwi DialogBox__SecondaryButton-iv0dnf-4 RChLi"
           disabled={false}
           htmlFor={null}
-          id="Negative"
-          name="Negative"
+          id="Affirmative"
+          name="Affirmative"
           onClick={null}
           tabIndex="1"
         >
@@ -138,12 +138,12 @@ exports[` 2`] = `
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+        className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+          className="Bar__Slot-sc-1c4axau-1 ejlqvW"
         >
           <h6
             className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -208,8 +208,8 @@ exports[` 2`] = `
           className="Button__StyledButton-sc-1v7sls2-0 iywOmJ DialogBox__SecondaryButton-iv0dnf-4 RChLi"
           disabled={false}
           htmlFor={null}
-          id="Negative"
-          name="Negative"
+          id="Affirmative"
+          name="Affirmative"
           onClick={null}
           tabIndex="1"
         >
@@ -255,12 +255,12 @@ exports[` 3`] = `
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+        className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+          className="Bar__Slot-sc-1c4axau-1 ejlqvW"
         >
           <h6
             className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -325,8 +325,8 @@ exports[` 3`] = `
           className="Button__StyledButton-sc-1v7sls2-0 injEsc DialogBox__SecondaryButton-iv0dnf-4 RChLi"
           disabled={false}
           htmlFor={null}
-          id="Negative"
-          name="Negative"
+          id="Affirmative"
+          name="Affirmative"
           onClick={null}
           tabIndex="1"
         >

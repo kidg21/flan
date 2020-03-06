@@ -46,10 +46,11 @@ function Accordion({
         _header ? (
           <Bar
             contentAlign="center"
-            centerAlign="left"
             left={_header}
-            rightWidth="max-content"
-            right={children ? <Icon icon="up" rotation={rotation} /> : null}
+            right={children ? {
+              content: <Icon icon="up" rotation={rotation} />,
+              width: "max-content",
+            } : null}
           />
         ) : null}
     >

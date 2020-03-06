@@ -6,8 +6,9 @@ import Card, { CardGrid } from "elements/Card";
 import Icon from "atoms/Icon";
 import IconBlock from "blocks/IconBlock";
 import Command from "atoms/Command";
-import Text, {Title} from "base/Typography";
+import Text, { Title } from "base/Typography";
 import Bar from "blocks/Bar";
+import { object } from "prop-types";
 
 
 const shortTitle = <Title text="A Standard Title" />;
@@ -46,11 +47,13 @@ storiesOf("Blocks|Bar", module)
           padding={options(
             "padding",
             {
-              "none": "none",
-              "1x (default)": null,
+              "none (default)": null,
+              "1x": "1x",
               "2x": "2x",
               "3x": "3x",
               "top": "top",
+              "horizontal": "horizontal",
+              "vertical": "vertical",
             },
             null,
             { display: "radio" },
@@ -67,22 +70,33 @@ storiesOf("Blocks|Bar", module)
             { display: "radio" },
             "Bar",
           )}
-          centerAlign={options(
-            "center content",
+          left={object(
+            "left",
             {
-              left: "left",
-              center: "center",
-              right: "right",
+              content: <Title text="Left" />,
+              align: null,
+              width: null,
             },
-            "center",
-            { display: "radio" },
             "Bar",
           )}
-          left={<Title text="Left" />}
-          leftWidth={text("left area width (max 40%)", "", "Bar")}
-          center={multipleLines}
-          right={<Title text="Right" />}
-          rightWidth={text("right area width (max 40%)", "", "Bar")}
+          center={object(
+            "center",
+            {
+              content: multipleLines,
+              align: "center",
+              width: null,
+            },
+            "Bar",
+          )}
+          right={object(
+            "right",
+            {
+              content: <Title text="Right" />,
+              align: "right",
+              width: null,
+            },
+            "Bar",
+          )}
         />
       </Card>
     );
@@ -106,50 +120,6 @@ storiesOf("Blocks|Bar", module)
             left={<Command align="center" />}
             center={multipleLines}
             right={<Command align="center" />}
-          />
-        </Card>
-
-//         <Card>
-//           <Bar left={shortTitle} right={<Command />} />
-//         </Card>
-//         <Card>
-//           <Bar center={longTitle} centerAlign="left" right={<Command />} />
-//         </Card>
-//         <Card>
-//           <Bar center={multipleLines} centerAlign="left" right={<Command />} />
-//         </Card>
-
-//         <Card>
-//           <Bar left={shortTitle} />
-//         </Card>
-//         <Card>
-//           <Bar left={longTitle} />
-//         </Card>
-//         <Card>
-//           <Bar left={multipleLines} />
-//         </Card>
-
-//         <Card>
-//           <Bar left={<Command />} />
-//         </Card>
-//         <Card>
-//           <Bar center={<Command />} />
-//         </Card>
-//         <Card>
-//           <Bar right={<Command />} />
-//         </Card>
-//         <Card>
-//           <Bar left={<Command />} right={<Command />} />
-//         </Card>
-//         <Card>
-//           <Bar left={<Command />} center={<Command />} right={<Command />} />
-//         </Card>
-
-//         <Card>
-//           <Bar
-            left={<Icon icon="circle" />}
-            center={<Icon icon="circle" />}
-            right={<Icon icon="circle" />}
           />
         </Card>
 
