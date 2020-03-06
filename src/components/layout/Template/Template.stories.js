@@ -93,37 +93,31 @@ const data = [
   },
 ];
 
-const map = {
-  content: (
-    <Mapbox />
-  ),
-};
+const map = (
+  <Mapbox />
+);
 
-const dataTable = {
-  content: (
-    <DataTable
-      headers={headers.slice(1)}
-      rows={data}
-      listId="foo"
-      columnWidth={180}
-    />
-  ),
-};
+const dataTable = (
+  <DataTable
+    headers={headers.slice(1)}
+    rows={data}
+    listId="foo"
+    columnWidth={180}
+  />
+);
 
-const listPanel = {
-  content: (
-    <Panel
-      id="Panel"
-    >
-      <List interactive>
-        <ListItem title="Layers" />
-        <ListItem title="Results" />
-        <ListItem title="Form" />
-        <ListItem title="Research" />
-      </List>
-    </Panel>
-  ),
-};
+const listPanel = (
+  <Panel
+    id="Panel"
+  >
+    <List interactive>
+      <ListItem title="Layers" />
+      <ListItem title="Results" />
+      <ListItem title="Form" />
+      <ListItem title="Research" />
+    </List>
+  </Panel>
+);
 
 storiesOf("Layout |Templates/Template A/", module)
   .add(
@@ -132,10 +126,11 @@ storiesOf("Layout |Templates/Template A/", module)
       return (
         <Template
           header={{ content: "" }}
-          left={listPanel}
+          left={{ content: listPanel }}
           // main={dataTable}
-          main={map}
-          right={listPanel}
+          main={{ content: dataTable }}
+          // bottom={{ content: map }}
+          right={{ content: map }}
         // footer={{ content: "" }}
         />
       );

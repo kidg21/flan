@@ -44,13 +44,13 @@ const RegionLeft = styled(Flex)`
     return props.position || "absolute";
   }};
   left: ${(props) => {
-    return props.open ? "0" : "-15%";
+    return props.open ? "0" : props.leftEdge;
   }};
   /* flex: 0 1 auto; */
   flex: auto;
   /* align-self: stretch; */
   width: ${(props) => {
-    return props.leftWidth || "";
+    return props.leftWidth || "100%";
   }};
   height: 100%;
   /* @media (min-width: ${viewport.medium}) {
@@ -155,10 +155,10 @@ const RegionRight = styled(Flex)`
   /* right: 0; */
   flex: auto;
   left: ${(props) => {
-    return props.open ? "75%" : "100%";
+    return props.open ? props.rightEdge : "100%";
   }};
   width: ${(props) => {
-    return props.rightWidth || "";
+    return props.rightWidth || "100%";
   }};
   height: 100%;
   /* For Dev purposes */
@@ -192,17 +192,23 @@ function Template({
   const screenLarge = window.matchMedia(`(min-width: ${viewport.large})`);
 
   let flexTop;
+  let leftEdge;
   let leftWidth;
   let mainLeft;
   let mainWidth;
+  let rightEdge;
   let rightWidth;
   const bottomHeight = "50vh";
   let zIndex = null; // shared by all
   let position = null; // shared by all
   if (screenMedium.matches || screenLarge.matches) {
     leftWidth = "15%"; // these will most likely need different sizes
+    leftEdge = "-15%";
     rightWidth = "25%";
+    rightEdge = "75%";
   } else {
+    leftEdge = "0";
+    rightEdge = "0";
     position = "absolute";
     zIndex = "1";
   }
@@ -214,7 +220,6 @@ function Template({
   let rightOpen = right ? right.visible : false;
   let setRightOpen = right ? right.toggle : null;
 
-
   // let seeBottomRegion = null;
   const bottomOpen = bottom ? bottom.visible : false;
   // let setBottomOpen = bottom ? bottom.toggle : false;
@@ -224,9 +229,7 @@ function Template({
   } else {
     flexTop = "none";
   }
-  // const mainWidth = rightOpen ? "75%" : "100%";
-  // let setMainWidth = null;
-  // [mainWidth, setMainWidth] = useState("100%");
+
   if (left) {
     if (!setLeftOpen) [leftOpen, setLeftOpen] = useState(left.visible);
     if (screenLarge.matches || screenMedium.matches) {
@@ -237,6 +240,9 @@ function Template({
       if (leftOpen) {
         mainLeft = "15%";
         mainWidth = "85%";
+        if (rightOpen) {
+          mainWidth = "60%";
+        }
       } else {
         mainLeft = "0";
         mainWidth = "100%";
@@ -244,9 +250,18 @@ function Template({
     } else {
       // On small screens, either the left or right region can be open, not both
       seeLeftRegion = () => {
-        setLeftOpen(!leftOpen); setRightOpen(!right.visible);
-        if (!leftOpen) rightOpen(false);
+        // setLeftOpen(!leftOpen); setRightOpen(!right.visible);
+        setLeftOpen(!leftOpen);
+        // if (leftOpen) rightOpen(false);
       };
+      if (!leftOpen) {
+        leftEdge = "-100%";
+      } else if (leftOpen) {
+        leftEdge = "0";
+        if (rightOpen) {
+          rightEdge = "100%";
+        }
+      }
     }
   }
   if (right) {
@@ -260,7 +275,7 @@ function Template({
       if (rightOpen) {
         mainWidth = "75%";
         if (leftOpen) {
-          // mainWidth = "60%";
+          mainWidth = "60%";
         }
       } else {
         mainWidth = "100%";
@@ -271,9 +286,19 @@ function Template({
     } else {
       // On small screens, either the left or right region can be open, not both
       seeRightRegion = () => {
-        setRightOpen(!rightOpen); setLeftOpen(!left.visible);
-        if (!rightOpen) leftOpen(false);
+        // setRightOpen(!rightOpen); setLeftOpen(!left.visible);
+        setRightOpen(!rightOpen);
+        // if (!rightOpen) leftOpen(false);
       };
+      if (rightOpen) {
+        // rightEdge = "0";
+        // leftEdge = "-100%";
+        if (leftOpen) {
+          // leftEdge = "-100%";
+        }
+      } else {
+        // rightEdge = "100%";
+      }
     }
   }
 
@@ -322,6 +347,7 @@ function Template({
           <RegionLeft
             id={left.id}
             position={position}
+            left={leftEdge}
             width={leftWidth}
             zIndex={zIndex}
             open={leftOpen}
@@ -347,6 +373,7 @@ function Template({
           <RegionRight
             id={right.id}
             position={position}
+            left={rightEdge}
             width={rightWidth}
             zIndex={zIndex}
             open={rightOpen}
