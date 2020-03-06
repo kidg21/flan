@@ -110,7 +110,7 @@ function getLeftContent(pre, disabled, onClick) {
     leftContent = {
       content: leftContentComponent,
       width: "max-content",
-      onClick: (pre && pre.onClick) || onClick,
+      onClick: pre.onClick || onClick,
     };
   }
   return leftContent;
