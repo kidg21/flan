@@ -103,6 +103,19 @@ function getRightContent(post, disabled, onClick) {
   return rightContent;
 }
 
+function getLeftContent(pre, disabled, onClick) {
+  let leftContent = null;
+  if (pre && (pre.label || pre.icon)) {
+    const leftContentComponent = <Avatar label={pre.label} icon={pre.icon} disabled={disabled} />;
+    leftContent = {
+      content: leftContentComponent,
+      width: "max-content",
+      onClick: pre.onClick || onClick,
+    };
+  }
+  return leftContent;
+}
+
 function ListItem({
   active,
   children,
@@ -118,11 +131,7 @@ function ListItem({
   pre,
   tabIndex,
 }) {
-  let leftContent;
-  if (pre && (pre.label || pre.icon)) {
-    leftContent = <Avatar label={pre.label} icon={pre.icon} disabled={disabled} />;
-  }
-
+  const leftContent = getLeftContent(pre, disabled, onClick);
   const centerContent = (
     <React.Fragment >
       <Title text={title} disabled={disabled} />
@@ -157,11 +166,7 @@ function ListItem({
           }}
           contentAlign="center"
           disabled={disabled}
-          left={{
-            content: leftContent,
-            width: "max-content",
-            onClick: pre.onClick || onClick,
-          }}
+          left={leftContent}
           right={rightContent}
         />
         {children}
