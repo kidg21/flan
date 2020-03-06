@@ -63,7 +63,7 @@ const sizeHash = {
 };
 
 function Avatar({
-  type, icon, id, src, alt, image, label, brand, onClick, size, style,
+  type, icon, id, src, alt, image, label, brand, onClick, size,
 }) {
   let labelType;
   let iconType;
@@ -112,7 +112,6 @@ function Avatar({
       label={label}
       textColor={textColor}
       onClick={onClick}
-      style={style}
     >
       {iconType || labelType}
     </TagContainer>
@@ -132,7 +131,6 @@ Avatar.propTypes = {
   onClick: PropTypes.node,
   size: PropTypes.node,
   label: PropTypes.string,
-  style: PropTypes.objectOf(PropTypes.string),
 };
 
 Avatar.defaultProps = {
@@ -146,7 +144,6 @@ Avatar.defaultProps = {
   icon: null,
   id: null,
   label: null,
-  style: null,
 };
 
 export default Avatar;
