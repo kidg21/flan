@@ -36,60 +36,60 @@ const AdvancedInputs = [
 
 const Data = [
   {
+    title: "White House",
+    description: "123 Malibu Drive, CA 92660",
+  },
+  {
+    title: "Orange House",
+    description: "1224 Malibu Drive, CA 92660",
+  },
+  {
+    title: "Red House",
+    description: "123 Malibu Drive, CA 92660",
+  },
+  {
+    title: "Green House",
+    description: "123 Malibu Drive, CA 92660",
+  },
+  {
+    title: "Black House",
+    description: "123 Malibu Drive, CA 92660",
+  },
+  {
+    title: "Blue House",
+    description: "123 Malibu Drive, CA 92660",
+  },
+  {
     title: "Address",
-    description: "address",
+    description: "123 Malibu Drive, CA 92660",
   },
   {
     title: "APN",
-    description: "apn",
+    description: "123 Malibu Drive, CA 92660",
   },
   {
     title: "Owner",
-    description: "user",
+    description: "123 Malibu Drive, CA 92660",
   },
   {
     title: "Address",
-    description: "address",
+    description: "123 Malibu Drive, CA 92660",
+  },
+  {
+    title: "Address",
+    description: "123 Malibu Drive, CA 92660",
   },
   {
     title: "APN",
-    description: "apn",
+    description: "123 Malibu Drive, CA 92660",
   },
   {
     title: "Owner",
-    description: "user",
+    description: "123 Malibu Drive, CA 92660",
   },
   {
     title: "Address",
-    description: "address",
-  },
-  {
-    title: "APN",
-    description: "apn",
-  },
-  {
-    title: "Owner",
-    description: "user",
-  },
-  {
-    title: "Address",
-    description: "address",
-  },
-  {
-    title: "Address",
-    description: "address",
-  },
-  {
-    title: "APN",
-    description: "apn",
-  },
-  {
-    title: "Owner",
-    description: "user",
-  },
-  {
-    title: "Address",
-    description: "address",
+    description: "123 Malibu Drive, CA 92660",
   },
 
 ];
@@ -97,27 +97,25 @@ const Data = [
 storiesOf("Blocks|Search", module)
   .add("Default", () => {
     return (
-      <SearchBar />
+      <SearchBar placeholder="Search Location" />
     );
   })
   .add("Advanced Search", () => {
     return (
-      <SearchBar advance inputs={AdvancedInputs} />
+      <SearchBar placeholder="Search Location" advance inputs={AdvancedInputs} />
     );
   })
   .add("Results", () => {
     return (
-      <Grid columns="1">
-        <SearchBar results={SmallData} />
-        <SearchBar results={Data} />
-      </Grid>
+        <SearchBar placeholder="Search Location" results={Data} />
     );
   })
   .add("Error Message", () => {
     return (
       <Grid columns="1">
-        <SearchBar error="offline" />
-        <SearchBar error="connection" />
+        <SearchBar placeholder="Search Location" error results={Data}/>
+        <SearchBar placeholder="Search Location" error="offline" />
+        <SearchBar placeholder="Search Location" error="connection" />
       </Grid>
     );
   });

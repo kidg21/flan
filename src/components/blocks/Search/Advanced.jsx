@@ -19,7 +19,7 @@ position: fixed;
 
 function AdvancedSearch({ id, inputs }) {
   return (
-    <Grid columns="9fr .5fr .5fr" id={id}>
+    <Grid columns="9fr .5fr " id={id}>
       <DropContainer maxHeight="25rem" >
         <Form
           subtitle="Advanced Search"

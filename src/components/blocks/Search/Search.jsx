@@ -22,7 +22,7 @@ position: fixed;
 
 
 function Search({
-  advance, error, results, onSearch, inputs,
+  advance, error, results, onSearch, placeholder, inputs,
 }) {
 
 
@@ -77,16 +77,16 @@ function Search({
 
   return (
     <Grid columns="1" gap="tiny">
-      <Grid columns="9fr .5fr .5fr">
+      <Grid columns="9fr .5fr">
         <TextInput
           id="111"
-          placeholder="Search Location"
+          placeholder={placeholder}
           type="search"
         />
         <Button icon="search" solid onClick={onSearch} />
-        <Button icon="more" plain />
+        {/* <Button icon="more" plain /> */}
       </Grid>
-      { error || results ? <Grid columns="9fr .5fr .5fr"> <DropContainer maxHeight="25rem" > { Body }</DropContainer></Grid> : null}
+      { error || results ? <Grid columns="9fr .5fr"> <DropContainer maxHeight="24rem" > { Body }</DropContainer></Grid> : null}
       { advance ? <Advanced inputs={inputs} /> : null}
     </Grid>
   );
