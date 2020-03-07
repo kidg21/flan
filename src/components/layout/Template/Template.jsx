@@ -43,24 +43,14 @@ const RegionLeft = styled(Flex)`
   position: ${(props) => {
     return props.position || "absolute";
   }};
-  left: ${(props) => {
-    return props.open ? "0" : props.leftEdge;
+  flex: none;
+  transform: ${(props) => {
+    return props.open ? "none" : `translate3d(-100%, 0, 0)`;
   }};
-  /* flex: 0 1 auto; */
-  flex: auto;
-  /* align-self: stretch; */
   width: ${(props) => {
-    return props.leftWidth || "100%";
+    return props.leftWidth || "";
   }};
   height: 100%;
-  /* @media (min-width: ${viewport.medium}) {
-    max-width: ${(props) => {
-    return props.open ? "0" : "";
-  }};
-  } */
-  /* transform: ${(props) => {
-    return props.open ? "translateX(-100%)" : "translateX(0%)";
-  }}; */
   /* For Dev purposes */
   border-right: 1px solid ${(props) => {
     return props.theme.palette.neutral40;
@@ -78,17 +68,13 @@ const RegionLeft = styled(Flex)`
 
 const WrapperMain = styled(Flex)`
   position: absolute;
-  /* left: 0; */
   left: ${(props) => {
     return props.mainLeft || "";
   }};
-  right: 100%;
-  flex: none;
+  flex: auto;
   flex-direction: column;
   height: 100%;
-  /* width: 100%; */
   width: ${(props) => {
-    /* return props.mainWidth || "75%"; */
     return props.mainWidth || "";
   }};
   background: green;
@@ -152,13 +138,13 @@ const RegionRight = styled(Flex)`
   position: ${(props) => {
     return props.position || "absolute";
   }};
-  /* right: 0; */
-  flex: auto;
-  left: ${(props) => {
-    return props.open ? props.rightEdge : "100%";
+  flex: none;
+  right: 0;
+  transform: ${(props) => {
+    return props.open ? "none" : `translate3d(100%, 0, 0)`;
   }};
   width: ${(props) => {
-    return props.rightWidth || "100%";
+    return props.rightWidth || "";
   }};
   height: 100%;
   /* For Dev purposes */
@@ -203,12 +189,11 @@ function Template({
   let position = null; // shared by all
   if (screenMedium.matches || screenLarge.matches) {
     leftWidth = "15%"; // these will most likely need different sizes
-    leftEdge = "-15%";
     rightWidth = "25%";
-    rightEdge = "75%";
   } else {
-    leftEdge = "0";
-    rightEdge = "0";
+    leftWidth = "100%";
+    mainWidth = "100%";
+    rightWidth = "100%";
     position = "absolute";
     zIndex = "1";
   }
@@ -230,6 +215,7 @@ function Template({
     flexTop = "none";
   }
 
+
   if (left) {
     if (!setLeftOpen) [leftOpen, setLeftOpen] = useState(left.visible);
     if (screenLarge.matches || screenMedium.matches) {
@@ -250,18 +236,11 @@ function Template({
     } else {
       // On small screens, either the left or right region can be open, not both
       seeLeftRegion = () => {
-        // setLeftOpen(!leftOpen); setRightOpen(!right.visible);
         setLeftOpen(!leftOpen);
-        // if (leftOpen) rightOpen(false);
-      };
-      if (!leftOpen) {
-        leftEdge = "-100%";
-      } else if (leftOpen) {
-        leftEdge = "0";
         if (rightOpen) {
-          rightEdge = "100%";
+          setRightOpen(!rightOpen);
         }
-      }
+      };
     }
   }
   if (right) {
@@ -286,19 +265,11 @@ function Template({
     } else {
       // On small screens, either the left or right region can be open, not both
       seeRightRegion = () => {
-        // setRightOpen(!rightOpen); setLeftOpen(!left.visible);
         setRightOpen(!rightOpen);
-        // if (!rightOpen) leftOpen(false);
-      };
-      if (rightOpen) {
-        // rightEdge = "0";
-        // leftEdge = "-100%";
         if (leftOpen) {
-          // leftEdge = "-100%";
+          setLeftOpen(!leftOpen);
         }
-      } else {
-        // rightEdge = "100%";
-      }
+      };
     }
   }
 
@@ -475,6 +446,5 @@ Template.defaultProps = {
     id: null,
   },
 };
-
 
 export default Template;
