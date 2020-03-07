@@ -69,6 +69,7 @@ const SummaryPanelTemplate = (props) => {
         return (
           <div>
             <h4>{section.title}</h4>
+            {renderMenu(section.commands)}
             {/* map through eac section's display field (key-value pairs) */}
             {section.displayFields.map((displayField) => {
               let displayFieldValue = displayField.value;
@@ -86,7 +87,6 @@ const SummaryPanelTemplate = (props) => {
             })}
             {/* finally, map through the section's standalone commands */}
             {section.commands.length > 0 ? "Commands:" : null}
-            {renderMenu(section.commands)}
             <br /><br />
           </div>
         );
