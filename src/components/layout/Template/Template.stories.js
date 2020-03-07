@@ -128,9 +128,9 @@ storiesOf("Layout |Templates/Template A/", module)
           header={{ content: "" }}
           left={{ content: listPanel }}
           // main={dataTable}
-          main={{ content: dataTable }}
+          main={{ content: map }}
           // bottom={{ content: map }}
-          right={{ content: map }}
+          right={{ content: listPanel }}
         // footer={{ content: "" }}
         />
       );

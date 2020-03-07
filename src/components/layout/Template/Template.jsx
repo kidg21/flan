@@ -90,9 +90,10 @@ const WrapperMain = styled(Flex)`
 `;
 
 const RegionMain = styled(Flex)`
-  flex: ${(props) => {
+  /* flex: ${(props) => {
     return props.flexTop;
-  }};
+  }}; */
+  flex: none;
   align-self: stretch;
   height: 100%;
   &:empty {
@@ -190,6 +191,7 @@ function Template({
   if (screenMedium.matches || screenLarge.matches) {
     leftWidth = "15%"; // these will most likely need different sizes
     rightWidth = "25%";
+    mainWidth = "100%";
   } else {
     leftWidth = "100%";
     mainWidth = "100%";
@@ -210,11 +212,10 @@ function Template({
   // let setBottomOpen = bottom ? bottom.toggle : false;
 
   if (bottomOpen) {
-    flexTop = "auto";
-  } else {
-    flexTop = "none";
+    //   flexTop = "auto";
+    // } else {
+    //   flexTop = "none";
   }
-
 
   if (left) {
     if (!setLeftOpen) [leftOpen, setLeftOpen] = useState(left.visible);
@@ -231,7 +232,7 @@ function Template({
         }
       } else {
         mainLeft = "0";
-        mainWidth = "100%";
+        // mainWidth = "100%";
       }
     } else {
       // On small screens, either the left or right region can be open, not both
@@ -256,11 +257,11 @@ function Template({
         if (leftOpen) {
           mainWidth = "60%";
         }
-      } else {
-        mainWidth = "100%";
-        if (leftOpen) {
-          // mainWidth = "85%";
-        }
+        // } else {
+        // mainWidth = "100%";
+        // if (leftOpen) {
+        // mainWidth = "85%";
+        // }
       }
     } else {
       // On small screens, either the left or right region can be open, not both
