@@ -129,7 +129,7 @@ storiesOf("Layout |Templates/Template A/", module)
           left={{ content: listPanel }}
           // main={dataTable}
           main={{ content: map }}
-          // bottom={{ content: map }}
+          bottom={{ content: dataTable }}
           right={{ content: listPanel }}
         // footer={{ content: "" }}
         />

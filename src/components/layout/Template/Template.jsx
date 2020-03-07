@@ -8,6 +8,7 @@ import { viewport } from "Variables";
 import LightBoxIcon from "images/LightBoxIconLogo.png";
 import Flex from "layout/Flex";
 import Bar from "blocks/Bar";
+import IconBlock from "blocks/IconBlock";
 import Avatar from "atoms/Avatar";
 import Icon from "atoms/Icon";
 
@@ -67,6 +68,8 @@ const RegionLeft = styled(Flex)`
 `;
 
 const WrapperMain = styled(Flex)`
+  align-content: stretch;
+  align-items: flex-start;
   position: absolute;
   left: ${(props) => {
     return props.mainLeft || "";
@@ -90,12 +93,20 @@ const WrapperMain = styled(Flex)`
 `;
 
 const RegionMain = styled(Flex)`
-  /* flex: ${(props) => {
-    return props.flexTop;
-  }}; */
+  position: ${(props) => {
+    return props.position || "absolute";
+  }};
   flex: none;
   align-self: stretch;
-  height: 100%;
+  width: 100%;
+  bottom: ${(props) => {
+    return props.mapHeight || "";
+  }};
+  top: 0;
+  bottom: ${(props) => {
+    return props.mapBottom || "";
+  }};
+  align-self: stretch;
   &:empty {
     &:before {
       ${PlaceholderText};
@@ -109,18 +120,18 @@ const RegionMain = styled(Flex)`
 `;
 
 const RegionBottom = styled(Flex)`
+  position: ${(props) => {
+    return props.position || "absolute";
+  }};
   flex: none;
-  bottom: 0;
+  align-self: stretch;
+  width: 100%;
   height: ${(props) => {
-    return props.bottomHeight;
+    return props.bottomHeight || "";
   }};
-  @media (min-width: ${viewport.medium}) {
-    max-height: ${(props) => {
-    return props.open ? "" : "0";
-  }};
-  }
+  bottom: 0;
   transform: ${(props) => {
-    return props.open ? "translateY(0%)" : "translateY(100%)";
+    return props.open ? "none" : "translate3d(0, 100%, 0)";
   }};
 
   &:empty {
@@ -183,19 +194,25 @@ function Template({
   let leftWidth;
   let mainLeft;
   let mainWidth;
+  let mapHeight;
+  let mapBottom;
   let rightEdge;
   let rightWidth;
-  const bottomHeight = "50vh";
+  let bottomHeight;
   let zIndex = null; // shared by all
   let position = null; // shared by all
   if (screenMedium.matches || screenLarge.matches) {
     leftWidth = "15%"; // these will most likely need different sizes
     rightWidth = "25%";
+    mapHeight = "auto";
     mainWidth = "100%";
+    bottomHeight = "40%";
   } else {
     leftWidth = "100%";
     mainWidth = "100%";
+    mapHeight = "100%";
     rightWidth = "100%";
+    bottomHeight = "100%";
     position = "absolute";
     zIndex = "1";
   }
@@ -207,16 +224,29 @@ function Template({
   let rightOpen = right ? right.visible : false;
   let setRightOpen = right ? right.toggle : null;
 
-  // let seeBottomRegion = null;
-  const bottomOpen = bottom ? bottom.visible : false;
-  // let setBottomOpen = bottom ? bottom.toggle : false;
+  let seeBottomRegion = null;
+  let bottomOpen = bottom ? bottom.visible : false;
+  let setBottomOpen = bottom ? bottom.toggle : null;
 
-  if (bottomOpen) {
-    //   flexTop = "auto";
-    // } else {
-    //   flexTop = "none";
+  if (bottom) {
+    if (!setBottomOpen) [bottomOpen, setBottomOpen] = useState(bottom.visible);
+    if (screenLarge.matches || screenMedium.matches) {
+      // On larger screens, both left and right regions can be open at the same time
+      seeBottomRegion = () => {
+        setBottomOpen(!bottomOpen);
+      };
+      if (bottomOpen) {
+        mapBottom = "40%";
+      } else {
+        mapBottom = "0";
+      }
+    } else {
+      // On small screens, either the left or right region can be open, not both
+      seeBottomRegion = () => {
+        setBottomOpen(!bottomOpen);
+      };
+    }
   }
-
   if (left) {
     if (!setLeftOpen) [leftOpen, setLeftOpen] = useState(left.visible);
     if (screenLarge.matches || screenMedium.matches) {
@@ -232,7 +262,6 @@ function Template({
         }
       } else {
         mainLeft = "0";
-        // mainWidth = "100%";
       }
     } else {
       // On small screens, either the left or right region can be open, not both
@@ -250,18 +279,12 @@ function Template({
       // On larger screens, both left and right regions can be open at the same time
       seeRightRegion = () => {
         setRightOpen(!rightOpen);
-        // setMainWidth(mainWidth = rightOpen ? "75%" : "100%");
       };
       if (rightOpen) {
         mainWidth = "75%";
         if (leftOpen) {
           mainWidth = "60%";
         }
-        // } else {
-        // mainWidth = "100%";
-        // if (leftOpen) {
-        // mainWidth = "85%";
-        // }
       }
     } else {
       // On small screens, either the left or right region can be open, not both
@@ -306,11 +329,18 @@ function Template({
               {header.right}
             </Fragment>
           ) :
-            <Icon
-              size="lg"
-              icon={header.iconRight || "settings"}
-              onClick={seeRightRegion}
-            />
+            <IconBlock>
+              <Icon
+                size="lg"
+                icon="down"
+                onClick={seeBottomRegion}
+              />
+              <Icon
+                size="lg"
+                icon={header.iconRight || "settings"}
+                onClick={seeRightRegion}
+              />
+            </IconBlock>
           }
         />
       ) : null}
@@ -327,8 +357,8 @@ function Template({
             {left.content}
           </RegionLeft>
         ) : null}
-        <WrapperMain left={mainLeft} width={mainWidth}>
-          <RegionMain id={main.id} flexTop={flexTop}>
+        <WrapperMain left={mainLeft} width={mainWidth} height={bottomHeight}>
+          <RegionMain id={main.id} bottom={mapBottom} height={mapHeight} flexTop={flexTop}>
             {main.content}
           </RegionMain>
           {bottom ? (
