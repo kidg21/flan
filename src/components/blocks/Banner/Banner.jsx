@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable security/detect-object-injection */
-import React from "react";
+import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Grid from "layout/Grid";
@@ -43,21 +43,18 @@ function Banner({
   title,
   type,
 }) {
-  let bannerType;
   const iconValue = icon || iconHash[type && type.toLowerCase()];
-  if (iconValue) {
-    bannerType = (
-      <Avatar type={type} icon={iconValue} size="2x" fixedWidth />
-    );
-  }
-
   return (
     <StyledBanner borderColor={type} id={id} padding="4x">
       <Bar
         contentAlign={description || link ? "" : "center"}
         padding="none"
         left={{
-          content: bannerType,
+          content: (
+            <Fragment>
+              { iconValue ? <Avatar type={type} icon={iconValue} size="2x" fixedWidth /> : null}
+            </Fragment>
+          ),
           width: "max-content",
         }}
         center={{

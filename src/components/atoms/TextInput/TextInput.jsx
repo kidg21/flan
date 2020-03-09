@@ -167,10 +167,7 @@ function TextInput({
     placeholderColor = "secondary";
     errorText = typeof error === "string" ? error : "";
   } else if (warning) {
-    inputBorderColor = "warning60";
-    inputBorderColorHover = "warning40";
-    inputSelectColor = "warning60";
-    inputTextColor = "warning";
+    inputTextColor = "alert";
     placeholderColor = "secondary";
     errorText = typeof warning === "string" ? warning : "";
   }
