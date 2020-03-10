@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 import Panel from "layout/Panel";
 import Menu from "blocks/Menu";
 import Legend from "blocks/Legend";
-import Divider from "atoms/Divider";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
 
 /*
@@ -59,7 +58,6 @@ const SummaryPanelTemplate = (props) => {
             title={section.title} 
               data={section.displayFields}
             />
-            <Divider />
           </React.Fragment>
         );
       })}
