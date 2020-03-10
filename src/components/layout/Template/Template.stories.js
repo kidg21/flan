@@ -1,18 +1,25 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
+import LightBoxIcon from "images/LightBoxIconLogo.png";
 import Panel from "layout/Panel";
 import DataTable from "blocks/Table";
 // import Card, { CardGrid } from "elements/Card";
 import List, { ListItem } from "blocks/List";
 import Mapbox from "layout/Map";
+import { Title } from "base/Typography";
+import Avatar from "atoms/Avatar";
+import Command from "atoms/Command";
 import Icon from "atoms/Icon";
+import Bar from "blocks/Bar";
 import IconBlock from "blocks/IconBlock";
-// import Title from "base/Typography";
 import Template from "./Template.jsx";
 
+const map = (
+  <Mapbox />
+);
 
-const headers = [
+const tableHeaders = [
   { id: "options", label: "Actions" },
   { id: "ACREAGE", label: "Acreage", sortable: true },
   { id: "AGGR_ACREAGE", label: "Aggregate Acreage", sortable: true },
@@ -25,7 +32,7 @@ const headers = [
   { id: "OWNER_NAME_1", label: "Owner Name 1" },
 ];
 
-const data = [
+const tableData = [
   {
     ACREAGE: "0.12",
     AGGR_ACREAGE: "0.12",
@@ -93,14 +100,10 @@ const data = [
   },
 ];
 
-const map = (
-  <Mapbox />
-);
-
 const dataTable = (
   <DataTable
-    headers={headers.slice(1)}
-    rows={data}
+    headers={tableHeaders.slice(1)}
+    rows={tableData}
     listId="foo"
     columnWidth={180}
   />
@@ -123,17 +126,78 @@ storiesOf("Layout |Templates/Template A/", module)
   .add(
     "Base",
     () => {
-      return (
-        <Template
-          header={{ content: "" }}
-          left={{ content: listPanel }}
-          // main={dataTable}
-          main={{ content: map }}
-          bottom={{ content: dataTable }}
-          right={{ content: listPanel }}
-        // footer={{ content: "" }}
-        />
-      );
+      return React.createElement(() => {
+        const [rightOpen, setRightOpen] = useState(false);
+        const seeRightRegion = () => { setRightOpen(!rightOpen); };
+        const [leftOpen, setLeftOpen] = useState(false);
+        const seeLeftRegion = () => { setLeftOpen(!leftOpen); };
+        const [bottomOpen, setBottomOpen] = useState(false);
+        const seeBottomRegion = () => { setBottomOpen(!bottomOpen); };
+        return (
+          <Template
+            header={{
+              id: "Header",
+              content: (
+                <Bar
+                  padding="2x"
+                  contentAlign="center"
+                  leftWidth="max-content"
+                  left={
+                    <Avatar
+                      image
+                      src={LightBoxIcon}
+                      alt="logo"
+                      onClick={seeLeftRegion}
+                    />
+                  }
+                  center={<Title text="Layout Component" />}
+                  rightWidth="max-content"
+                  right={
+                    <Command
+                      icon="right"
+                      label="Right"
+                      align="right"
+                      onClick={seeRightRegion}
+                    />
+                  }
+                />
+              ),
+            }}
+            left={{
+              content: listPanel,
+              toggle: seeLeftRegion,
+              visible: leftOpen,
+            }}
+            main={{ content: map }}
+            right={{
+              content: listPanel,
+              toggle: seeRightRegion,
+              visible: rightOpen,
+            }}
+            bottom={{
+              content: dataTable,
+              toggle: seeBottomRegion,
+              visible: bottomOpen,
+            }}
+            footer={{
+              id: "Footer",
+              content: (
+                <Bar
+                  padding="2x"
+                  center={
+                    <Command
+                      icon="down"
+                      label="Bottom"
+                      align="Bottom"
+                      onClick={seeBottomRegion}
+                    />
+                  }
+                />
+              ),
+            }}
+          />
+        );
+      });
     },
   )
   .add(
@@ -210,8 +274,8 @@ storiesOf("Layout |Templates/Template A/", module)
         const leftBar = {
           content: (
             <DataTable
-              headers={headers.slice(1)}
-              rows={data}
+              headers={tableHeaders.slice(1)}
+              rows={tableData}
               listId="foo"
               columnWidth={180}
             />
@@ -222,8 +286,8 @@ storiesOf("Layout |Templates/Template A/", module)
         const rightBar = {
           content: (
             <DataTable
-              headers={headers.slice(1)}
-              rows={data}
+              headers={tableHeaders.slice(1)}
+              rows={tableData}
               listId="foo"
               columnWidth={180}
             />
@@ -234,8 +298,8 @@ storiesOf("Layout |Templates/Template A/", module)
         const bottomBar = {
           content: (
             <DataTable
-              headers={headers.slice(1)}
-              rows={data}
+              headers={tableHeaders.slice(1)}
+              rows={tableData}
               listId="foo"
               columnWidth={180}
             />

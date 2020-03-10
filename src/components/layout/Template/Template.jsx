@@ -12,23 +12,43 @@ import IconBlock from "blocks/IconBlock";
 import Avatar from "atoms/Avatar";
 import Icon from "atoms/Icon";
 
-const TemplateWrapper = styled(Flex)`
+const WrapperOuter = styled(Flex)`
   width: 100vw;
   height: 100vh;
 `;
 
-const Header = styled(Bar)`
+const Header = styled(Flex)`
+  flex: none;
   /* For Dev purposes */
   border-bottom: 1px solid ${(props) => {
     return props.theme.palette.neutral40;
   }};
+  &:empty {
+    &:before {
+      ${PlaceholderText};
+      content: "{ Header }";
+      color: ${(props) => {
+    return props.theme.text.primary;
+  }};
+    }
+  }
 `;
 
-const Footer = styled(Bar)`
+const Footer = styled(Flex)`
+  flex: none;
   /* For Dev purposes */
   border-top: 1px solid ${(props) => {
     return props.theme.palette.neutral40;
   }};
+  &:empty {
+    &:before {
+      ${PlaceholderText};
+      content: "{ Footer }";
+      color: ${(props) => {
+    return props.theme.text.primary;
+  }};
+    }
+  }
 `;
 
 const Body = styled(Flex)`
@@ -41,17 +61,17 @@ const Body = styled(Flex)`
 `;
 
 const RegionLeft = styled(Flex)`
+  flex: none;
   position: ${(props) => {
     return props.position || "absolute";
-  }};
-  flex: none;
-  transform: ${(props) => {
-    return props.open ? "none" : `translate3d(-100%, 0, 0)`;
   }};
   width: ${(props) => {
     return props.leftWidth || "";
   }};
   height: 100%;
+  transform: ${(props) => {
+    return props.open ? "none" : `translate3d(-100%, 0, 0)`;
+  }};
   /* For Dev purposes */
   border-right: 1px solid ${(props) => {
     return props.theme.palette.neutral40;
@@ -68,18 +88,18 @@ const RegionLeft = styled(Flex)`
 `;
 
 const WrapperMain = styled(Flex)`
+  flex: auto;
+  flex-direction: column;
   align-content: stretch;
   align-items: flex-start;
   position: absolute;
   left: ${(props) => {
     return props.mainLeft || "";
   }};
-  flex: auto;
-  flex-direction: column;
-  height: 100%;
   width: ${(props) => {
     return props.mainWidth || "";
   }};
+  height: 100%;
   background: green;
   &:empty {
     &:before {
@@ -92,21 +112,17 @@ const WrapperMain = styled(Flex)`
   }
 `;
 
-const RegionMain = styled(Flex)`
+const RegionCenter = styled(Flex)`
+  flex: none;
+  align-self: stretch;
   position: ${(props) => {
     return props.position || "absolute";
   }};
-  flex: none;
-  align-self: stretch;
-  width: 100%;
-  bottom: ${(props) => {
-    return props.mapHeight || "";
-  }};
   top: 0;
   bottom: ${(props) => {
-    return props.mapBottom || "";
+    return props.centerBottom || "";
   }};
-  align-self: stretch;
+  width: 100%;
   &:empty {
     &:before {
       ${PlaceholderText};
@@ -120,20 +136,19 @@ const RegionMain = styled(Flex)`
 `;
 
 const RegionBottom = styled(Flex)`
+  flex: none;
+  align-self: stretch;
   position: ${(props) => {
     return props.position || "absolute";
   }};
-  flex: none;
-  align-self: stretch;
+  bottom: 0;
   width: 100%;
   height: ${(props) => {
     return props.bottomHeight || "";
   }};
-  bottom: 0;
   transform: ${(props) => {
     return props.open ? "none" : "translate3d(0, 100%, 0)";
   }};
-
   &:empty {
     &:before {
       ${PlaceholderText};
@@ -147,18 +162,18 @@ const RegionBottom = styled(Flex)`
 `;
 
 const RegionRight = styled(Flex)`
+  flex: none;
   position: ${(props) => {
     return props.position || "absolute";
   }};
-  flex: none;
   right: 0;
-  transform: ${(props) => {
-    return props.open ? "none" : `translate3d(100%, 0, 0)`;
-  }};
   width: ${(props) => {
     return props.rightWidth || "";
   }};
   height: 100%;
+  transform: ${(props) => {
+    return props.open ? "none" : `translate3d(100%, 0, 0)`;
+  }};
   /* For Dev purposes */
   border-left: 1px solid ${(props) => {
     return props.theme.palette.neutral40;
@@ -189,28 +204,22 @@ function Template({
   const screenMedium = window.matchMedia(`(min-width: ${viewport.medium})`);
   const screenLarge = window.matchMedia(`(min-width: ${viewport.large})`);
 
-  let flexTop;
-  let leftEdge;
   let leftWidth;
   let mainLeft;
   let mainWidth;
-  let mapHeight;
-  let mapBottom;
-  let rightEdge;
   let rightWidth;
+  let centerBottom;
   let bottomHeight;
   let zIndex = null; // shared by all
   let position = null; // shared by all
   if (screenMedium.matches || screenLarge.matches) {
-    leftWidth = "15%"; // these will most likely need different sizes
+    leftWidth = "15%";
     rightWidth = "25%";
-    mapHeight = "auto";
     mainWidth = "100%";
     bottomHeight = "40%";
   } else {
     leftWidth = "100%";
     mainWidth = "100%";
-    mapHeight = "100%";
     rightWidth = "100%";
     bottomHeight = "100%";
     position = "absolute";
@@ -236,9 +245,9 @@ function Template({
         setBottomOpen(!bottomOpen);
       };
       if (bottomOpen) {
-        mapBottom = "40%";
+        centerBottom = "40%";
       } else {
-        mapBottom = "0";
+        centerBottom = "0";
       }
     } else {
       // On small screens, either the left or right region can be open, not both
@@ -297,14 +306,12 @@ function Template({
     }
   }
 
-
   return (
-    <TemplateWrapper id={id} >
-      {header ? (
+    <WrapperOuter id={id} >
+      {/* {header ? (
         <Header
           id={header.id}
           contentAlign="center"
-          /** TODO: Separate left/right width */
           rightWidth={header.width}
           padding="2x"
           left={
@@ -343,30 +350,37 @@ function Template({
             </IconBlock>
           }
         />
+      ) : null} */}
+      {header.content ? (
+        <Header
+          id={header.id}
+          zIndex={zIndex}
+        >
+          {header.content}
+        </Header>
       ) : null}
       <Body>
-        {left.content ? (
+        {left ? (
           <RegionLeft
             id={left.id}
+            open={leftOpen}
             position={position}
-            left={leftEdge}
             width={leftWidth}
             zIndex={zIndex}
-            open={leftOpen}
           >
             {left.content}
           </RegionLeft>
         ) : null}
-        <WrapperMain left={mainLeft} width={mainWidth} height={bottomHeight}>
-          <RegionMain id={main.id} bottom={mapBottom} height={mapHeight} flexTop={flexTop}>
+        <WrapperMain height={bottomHeight} left={mainLeft} width={mainWidth}>
+          <RegionCenter bottom={centerBottom} id={main.id}>
             {main.content}
-          </RegionMain>
+          </RegionCenter>
           {bottom ? (
             <RegionBottom
               height={bottomHeight}
               id={bottom.id}
-              zIndex={zIndex}
               open={bottomOpen}
+              zIndex={zIndex}
             >
               {bottom.content}
             </RegionBottom>) : null}
@@ -374,11 +388,10 @@ function Template({
         {right ? (
           <RegionRight
             id={right.id}
+            open={rightOpen}
             position={position}
-            left={rightEdge}
             width={rightWidth}
             zIndex={zIndex}
-            open={rightOpen}
           >
             {right.content}
           </RegionRight>
@@ -386,14 +399,22 @@ function Template({
       </Body>
       {footer.content ? (
         <Footer
+          id={footer.id}
+          zIndex={zIndex}
+        >
+          {footer.content}
+        </Footer>
+      ) : null}
+      {/* {footer.content ? (
+        <Footer
           center={footer.content}
           centerAlign="left"
           contentAlign="center"
           id={footer.id}
           padding="2x"
         />
-      ) : null}
-    </TemplateWrapper>
+      ) : null} */}
+    </WrapperOuter>
   );
 }
 
@@ -401,16 +422,16 @@ Template.propTypes = {
   id: PropTypes.string,
   header: PropTypes.shape({
     content: PropTypes.node,
-    iconLeft: PropTypes.string,
-    iconRight: PropTypes.string,
+    // iconLeft: PropTypes.string,
+    // iconRight: PropTypes.string,
     id: PropTypes.string,
-    right: PropTypes.node,
-    width: PropTypes.string,
+    // right: PropTypes.node,
+    // width: PropTypes.string,
   }),
   left: PropTypes.shape({
     content: PropTypes.node.isRequired,
-    iconLeft: PropTypes.string,
-    iconRight: PropTypes.string,
+    // iconLeft: PropTypes.string,
+    // iconRight: PropTypes.string,
     id: PropTypes.string,
     toggle: PropTypes.func,
     visible: PropTypes.string,
@@ -428,8 +449,8 @@ Template.propTypes = {
   }),
   right: PropTypes.shape({
     content: PropTypes.node.isRequired,
-    iconLeft: PropTypes.string,
-    iconRight: PropTypes.string,
+    // iconLeft: PropTypes.string,
+    // iconRight: PropTypes.string,
     id: PropTypes.string,
     toggle: PropTypes.func,
     visible: PropTypes.string,
@@ -444,11 +465,11 @@ Template.defaultProps = {
   id: null,
   header: {
     content: null,
-    iconLeft: null,
-    iconRight: null,
+    // iconLeft: null,
+    // iconRight: null,
     id: null,
-    right: null,
-    width: null,
+    // right: null,
+    // width: null,
   },
   left: {
     content: null,
