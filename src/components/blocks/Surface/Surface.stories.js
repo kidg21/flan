@@ -1,6 +1,7 @@
 import React from "react";
 import { Padding } from "helpers/Display";
 import Surface from "./Surface.jsx";
+import Menu from "blocks/Menu";
 import { SummaryPanelTemplate } from "./SurfaceTemplates";
 
 /* eslint-disable no-alert */
@@ -429,13 +430,39 @@ const mockStringTemplate = `React.createElement("div", null, React.createElement
   }), React.createElement("br", null), React.createElement("br", null));
 }))`;
 
-
+const testData = [{
+  id: "a",
+  label: "Add to List",
+}, {
+  id: "b",
+  label: "Owner Portfolio",
+}, {
+  id: "c",
+  label: "Full Property Detail",
+}, {
+  id: "d",
+  label: "Copy Geometry",
+}, {
+  id: "e",
+  label: "Tax Map",
+}, {
+  id: "f",
+  label: "Site Profile Report",
+}, {
+  id: "g",
+  label: "List Units",
+}];
 
 storiesOf("Blocks|Surface", module)
   .addDecorator(Padding)
   .add("Summary Panel", () => {
     return (
       <Surface surfaceTemplate={SummaryPanelTemplate} content={mockContent} id={"surface-summary-panel-story"} />
+    );
+  })
+  .add("Summary Panel Menu", () => {
+    return (
+      <Menu id="menu-test" data={testData} />
     );
   })
   .add("Template from string", () => {

@@ -1,35 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
 import Panel from "layout/Panel";
-import Command from "atoms/Command";
 import Menu from "blocks/Menu";
 import Legend from "blocks/Legend";
-import Form, { Section } from "layout/Form";
 import Divider from "atoms/Divider";
-import Text, { Title, Link } from "base/Typography";
-import Grid from "layout/Grid";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
-
-
-const TableContainer = styled.table`
-  width: 100%;
-  color: ${(props) => {
-    return props.theme.text.primary;
-  }};
-  table-layout: fixed;
-  border-collapse: collapse;
-  min-width: 400px;
-`;
-
-const Row = styled.tr`
-  margin: 1em;
-`;
-
-const Cell = styled.td`
-  padding: 0.25em;
-  `;
 
 /*
 content passed in via props will look like this:
@@ -75,13 +51,13 @@ const SummaryPanelTemplate = (props) => {
     >
       {props.content.sections.map((section) => {
         return (
-          <React.Fragment>
-            <Title text={section.title} />
-            <Legend
-              data={section.displayFields}
-            />
+          <React.Fragment>         
             <Menu
               data={section.commands}
+            />
+            <Legend
+            title={section.title} 
+              data={section.displayFields}
             />
             <Divider />
           </React.Fragment>
