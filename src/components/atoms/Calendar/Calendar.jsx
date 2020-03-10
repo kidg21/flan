@@ -35,32 +35,6 @@ function Calendar({
   date,
   time,
 }) {
-  let inputFillColor;
-  let placeholderColor;
-  let inputBorderColor;
-  let inputTextColor;
-  let inputBorderColorHover;
-  let inputSelectColor;
-  let errorText;
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (isDisabled) {
-    inputTextColor = "disabled";
-    inputFillColor = "disabled";
-    inputBorderColor = "neutral40";
-  } else if (error) {
-    inputTextColor = "alert";
-    inputBorderColor = "alert80";
-    inputBorderColorHover = "alert80";
-    inputSelectColor = "neutral60";
-    if (typeof error === "string") errorText = error;
-  } else if (warning) {
-    inputTextColor = "warning";
-    inputBorderColor = "warning80";
-    inputBorderColorHover = "warning80";
-    inputSelectColor = "neutral60";
-    errorText = warning;
-  }
 
   // datetime might have different props to use
   // if date/time prop is not passed, uses value/onChange/etc props
@@ -88,15 +62,12 @@ function Calendar({
     return (
       <TextInput
         key={`${currType}-${uId}`}
-        disabled={isDisabled}
-        error={!!error}
-        warning={!!warning}
+        disabled={disabled}
+        error={error}
+        label={label}
+        helpText={helpText}
+        warning={warning}
         id={`${uId}_${currType}`}
-        placeholderColor={placeholderColor}
-        inputBorderColor={inputBorderColor}
-        inputBorderColorHover={inputBorderColorHover}
-        inputFillColor={inputFillColor}
-        inputSelectColor={inputSelectColor}
         min={min}
         max={max}
         name={`${uId}_${currType}`}
@@ -118,18 +89,14 @@ function Calendar({
   return (
     <CalendarContainer
       className={className}
-      disabled={isDisabled}
+      disabled={disabled}
       error={error}
       columns="1"
       gap="tiny"
       id={uId}
-      inputTextColor={inputTextColor}
       isRequired={isRequired}
     >
-      {label ? <Label size="2x" isRequired={isRequired} text={label} /> : null}
       {inputContainer}
-      {helpText ? <Text size="1x" text={helpText} /> : null}
-      {errorText ? <Text size="1x" text={errorText} /> : null}
     </CalendarContainer>
   );
 }

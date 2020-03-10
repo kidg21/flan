@@ -75,7 +75,6 @@
 //         <Checkbox id="selected" label="Selected" checked />
 //         <Checkbox id="error" label="Error" error />
 //         <Checkbox id="disabled" label="Disabled" disabled />
-//         <Checkbox id="warning" label="Warning" warning />
 //       </CheckboxGroup>
 //     );
 //   })

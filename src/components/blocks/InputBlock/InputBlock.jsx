@@ -18,6 +18,8 @@ const TextInputContainer = styled(Grid)`
   width: 100%;
 `;
 
+
+
 function InputBlock({
   button,
   className,
@@ -73,22 +75,15 @@ function InputBlock({
 
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  let inputTextColor;
-  let errorText;
-  if (error && !isDisabled) {
-    inputTextColor = "alert";
-    errorText = typeof error === "string" ? error : "";
-  } else if (warning && !isDisabled) {
-    inputTextColor = "warning";
-    errorText = typeof warning === "string" ? warning : "";
-  }
+
   const inputElements = textInputs.map((input) => {
     return (
       <TextInput
         disabled={isDisabled}
-        error={!!error}
-        warning={!!warning}
+        error={error}
+        warning={warning}
         key={input.id}
+        helpText={helpText}
         id={input.id}
         name={input.name || input.id}
         onChange={handleChange}
@@ -192,15 +187,12 @@ function InputBlock({
         disabled={isDisabled}
         gap="tiny"
         id={id}
-        inputTextColor={inputTextColor}
         isRequired={isRequired}
         prefix={prefix}
         text={text}
       >
         {label ? <Label size="2x" isRequired={isRequired} text={label} /> : null}
         {inputContainer}
-        {helpText ? <Text size="1x" text={helpText} /> : null}
-        {errorText ? <Text size="1x" text={errorText} /> : null}
       </TextInputContainer>
     </DisabledContext.Provider>
   );
@@ -216,7 +208,7 @@ InputBlock.propTypes = {
   className: PropTypes.string,
   disabled: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
-  warning: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  warning: PropTypes.string,
   helpText: PropTypes.string,
   icon: PropTypes.string,
   id: PropTypes.string,
@@ -247,7 +239,7 @@ InputBlock.defaultProps = {
   button: null,
   className: null,
   disabled: null,
-  error: null,
+  error: "",
   helpText: null,
   icon: null,
   id: null,
@@ -262,7 +254,7 @@ InputBlock.defaultProps = {
   textInputs: [],
   onBlur: null,
   onFocus: null,
-  warning: false,
+  warning: null,
 };
 
 export default InputBlock;

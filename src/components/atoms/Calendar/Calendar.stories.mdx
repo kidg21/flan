@@ -80,7 +80,14 @@ The Date Picker provides the user with a text input in which they can input mont
         type="date"
         label="Date Input Label"
         helpText="Hang in there, buddy, I'm here to help!"
-        error="Don't sweat it...we can fix this!"
+        error
+      />
+      <Calendar
+        id="dateError"
+        type="date"
+        label="Date Input Label"
+        helpText="Hang in there, buddy, I'm here to help!"
+        warning="This is a warning"
       />
     </Form>
   </Story>
@@ -118,7 +125,6 @@ Time Pickers provide the user with a text input in which they can input hours/mi
         type="time"
         label="Time Input Label"
         helpText="Hang in there, buddy, I'm here to help!"
-        state="error"
         error="Don't sweat it...we can fix this!"
       />
     </Form>
@@ -157,15 +163,7 @@ A Date Picker and a Time Picker can be paired to for a single inline input.
         type="datetime"
         label="Date-Time Input Label"
         helpText="Hang in there, buddy, I'm here to help!"
-        state="error"
         error="Don't sweat it...we can fix this!"
-      />
-      <Calendar
-        id="dateWarning"
-        type="date"
-        label="Date Input Label"
-        helpText="Hang in there, buddy, I'm here to help!"
-        warning="WARNING!"
       />
     </Form>
   </Story>

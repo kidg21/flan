@@ -93,7 +93,6 @@ function Radio({
   value,
   onFocus,
   onBlur,
-  warning,
 }) {
   let inputTextColor;
   let fillColor;
@@ -114,12 +113,8 @@ function Radio({
     fillColorChecked = "alert60";
     inputTextColor = "alert";
     outlineColor = "alert60";
-  } else if (warning) {
-    fillColor = "warning60";
-    fillColorChecked = "warning60";
-    inputTextColor = "warning";
-    outlineColor = "warning60";
-  }
+  } 
+
 
   switch (align) {
     case "right":
@@ -166,7 +161,6 @@ function RadioGroup({
   isRequired,
   label,
   onChange,
-  warning,
 }) {
   let inputTextColor;
   let errorText;
@@ -176,9 +170,6 @@ function RadioGroup({
     if (error) {
       inputTextColor = "alert";
       if (typeof error === "string") errorText = error;
-    } else if (warning) {
-      inputTextColor = "warning";
-      errorText = warning;
     }
   }
 
@@ -201,7 +192,6 @@ function RadioGroup({
                 align={align}
                 disabled={item.disabled || isDisabled}
                 error={!!error}
-                warning={!!warning}
                 id={item.id}
                 key={item.id}
                 label={item.label}
@@ -233,7 +223,6 @@ Radio.propTypes = {
   value: PropTypes.string,
   onFocus: PropTypes.func,
   onBlur: PropTypes.func,
-  warning: PropTypes.bool,
 };
 
 Radio.defaultProps = {
@@ -248,7 +237,6 @@ Radio.defaultProps = {
   value: null,
   onFocus: null,
   onBlur: null,
-  warning: false,
 };
 
 RadioGroup.propTypes = {
@@ -263,7 +251,6 @@ RadioGroup.propTypes = {
   isRequired: PropTypes.bool,
   label: PropTypes.string,
   onChange: PropTypes.func,
-  warning: PropTypes.string,
 };
 
 RadioGroup.defaultProps = {
@@ -278,7 +265,6 @@ RadioGroup.defaultProps = {
   isRequired: false,
   label: null,
   onChange: null,
-  warning: null,
 };
 
 export { Radio as default, RadioGroup };

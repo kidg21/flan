@@ -104,7 +104,23 @@ storiesOf("Blocks|Data Range", module)
             labelMin="Min"
             labelMax="Max"
             helpText="Hang in there, buddy, I'm here to help!"
+            error
+          />
+           <DataRange
+            id="inputError"
+            label="Input Range (error)"
+            labelMin="Min"
+            labelMax="Max"
+            helpText="Hang in there, buddy, I'm here to help!"
             error="Out of range!"
+          />
+            <DataRange
+            id="inputError"
+            label="Input Range (error)"
+            labelMin="Min"
+            labelMax="Max"
+            helpText="Hang in there, buddy, I'm here to help!"
+            warning="Warning text"
           />
           <DataRange
             id="inputDisabled"

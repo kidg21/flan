@@ -181,7 +181,35 @@ Select Menu should be used in conjunction with the Form from Layout. Select Menu
           label="Single-Select ( Error )"
           placeholder="You Chose Poorly..."
           helpText="Help text for the Select Menu component"
+          error
+          options={[
+            { value: "chocolate", label: "Chocolate" },
+            { value: "strawberry", label: "Strawberry" },
+            { value: "vanilla", label: "Vanilla" },
+            { value: "pistachio", label: "Pistachio" },
+            { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
+            { value: "cookie dough", label: "Cookie Dough" }
+          ]}
+        />
+        <SelectMenu
+          label="Single-Select ( Error )"
+          placeholder="You Chose Poorly..."
+          helpText="Help text for the Select Menu component"
           error="Error: Invalid Selection!"
+          options={[
+            { value: "chocolate", label: "Chocolate" },
+            { value: "strawberry", label: "Strawberry" },
+            { value: "vanilla", label: "Vanilla" },
+            { value: "pistachio", label: "Pistachio" },
+            { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
+            { value: "cookie dough", label: "Cookie Dough" }
+          ]}
+        />
+        <SelectMenu
+          label="Single-Select"
+          placeholder="You Chose Poorly..."
+          helpText="Help text for the Select Menu component"
+          warning="This is warning Text"
           options={[
             { value: "chocolate", label: "Chocolate" },
             { value: "strawberry", label: "Strawberry" },
@@ -219,6 +247,7 @@ Select Menu should be used in conjunction with the Form from Layout. Select Menu
             { value: "cookie dough", label: "Cookie Dough" }
           ]}
         />
+        
       </Section>
     </Form>
   </Story>
