@@ -24,7 +24,6 @@ function DataRange({
   disabled,
   error,
   helpText,
-  warning,
   id,
   isRequired,
   label,
@@ -46,9 +45,12 @@ function DataRange({
   max,
   min,
 }) {
+  let inputTextColor;
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-
+  if (error && !isDisabled) {
+    inputTextColor = "alert";
+  }
   function onChangeMin(currState, newState, setMinState) {
     const newMinValue = newState ? newState.selected : currState.target.value;
     if (typeof min.onChange === "function") min.onChange({ min: newMinValue, max: max.value });
@@ -66,6 +68,7 @@ function DataRange({
     <RangeContainer
       id={uId}
       disabled={isDisabled}
+      inputTextColor={inputTextColor}
       columns="1"
       gap="tiny"
     >
@@ -90,9 +93,7 @@ function DataRange({
               id={`${uId}_left`}
               label={min.label}
               onChange={onChangeMin}
-              error={error}
-              helpText={helpText}
-              warning={warning}
+              error={!!error}
               disabled={min.disabled || isDisabled}
               value={min.value}
             />)
@@ -124,14 +125,16 @@ function DataRange({
               id={`${uId}_right`}
               label={max.label}
               onChange={onChangeMax}
-              error={error}
-              helpText={helpText}
-              warning={warning}
+              error={!!error}
               disabled={max.disabled || isDisabled}
               value={max.value}
             />)
         }
       />
+      {helpText ? <Text size="1x" text={helpText} /> : null}
+      {typeof error === "string" && !isDisabled ? (
+        <Text size="1x" text={error} />
+      ) : null}
     </RangeContainer>
   );
 }
@@ -155,7 +158,6 @@ const textType = PropTypes.shape({
 DataRange.propTypes = {
   disabled: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
-  warning: PropTypes.string,
   helpText: PropTypes.string,
   id: PropTypes.string,
   isRequired: PropTypes.bool,
@@ -166,8 +168,7 @@ DataRange.propTypes = {
 };
 DataRange.defaultProps = {
   disabled: false,
-  error: "",
-  warning: null,
+  error: null,
   helpText: null,
   id: null,
   isRequired: false,
