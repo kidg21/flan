@@ -68,25 +68,43 @@ content passed in via props will look like this:
 
 // The following component is just to show how to iterate through all the data
 const SummaryPanelTemplate = (props) => {
+  let menuData = [];
+  const content = props.content.sections.map((section) => {
+    if (section.commands.length > 0) {
+      if (section.title) {
+        // if we have a section title, these commands will
+        // be nested under a sub-menu titled after the section
+        menuData.push({
+          id: `${section.id}-menu`,
+          label: section.title,
+          commands: section.commands,
+        });
+      } else {
+        // section does not have a title, so the commands
+        // will just be placed on the root level of the menu
+        menuData = section.commands.concat(menuData);
+      }
+    }
+
+    return (
+      <React.Fragment>
+        <Title text={section.title} />
+        <Legend
+          data={section.displayFields}
+        />
+        <Divider />
+      </React.Fragment>
+    );
+  });
   return (
     <Panel
       header={
-        <MainPanelHeader title={props.content.title} />}
+        <MainPanelHeader
+          title={props.content.title}
+          menuData={menuData}
+        />}
     >
-      {props.content.sections.map((section) => {
-        return (
-          <React.Fragment>
-            <Title text={section.title} />
-            <Legend
-              data={section.displayFields}
-            />
-            <Menu
-              data={section.commands}
-            />
-            <Divider />
-          </React.Fragment>
-        );
-      })}
+      {content}
     </Panel>
   );
 };

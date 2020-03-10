@@ -320,20 +320,20 @@ const mockContent = {
       commands: [
         {
           getName: () => { return "Add To List"; },
-          execute: () => { alert("Add To List clicked in Main Section"); },
+          execute: () => { alert("Add To List clicked in First Section"); },
         },
         {
           getName: () => { return "Full Property Detail"; },
-          execute: () => { alert("Property Detail clicked in Main Section"); },
+          execute: () => { alert("Property Detail clicked in First Section"); },
         },
         {
           getName: () => { return "Copy Geometry"; },
-          execute: () => { alert("Copy Geometry clicked in Main Section"); },
+          execute: () => { alert("Copy Geometry clicked in First Section"); },
         },
       ],
     },
     {
-      title: "Location",
+      title: "Property",
       records: [mockRecords[0]],
       displayFields: [
         {

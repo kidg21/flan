@@ -70,7 +70,7 @@ const parseContent = (rawContent, fieldFilter, surfaceId) => {
         // or need to instantiate command objects here before passing into presentational template
         const cmdName = rawCommand.getName();
         return {
-          id: `${cmdName}-${surfaceId}`,
+          id: `${surfaceId}-${rawSection.title}-${cmdName}`,
           label: rawCommand.getName ? rawCommand.getName() : "",
           onClick: rawCommand.execute,
           icon: rawCommand.getIcon ? rawCommand.getIcon() : null, // TODO: implement this in our commands
@@ -83,6 +83,7 @@ const parseContent = (rawContent, fieldFilter, surfaceId) => {
       ...rawSection,
       displayFields: parsedDisplayFields,
       commands: parsedCommands,
+      id: `${surfaceId}-${rawSection.title}`,
     };
   });
   return {
