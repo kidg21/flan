@@ -4,10 +4,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Bar from "blocks/Bar";
 import Text from "base/Typography";
-import { viewport } from "Variables";
 import Button from "atoms/Button";
-import Form from "layout/Form";
-import Advanced from "./Advanced.jsx";
 import Grid from "layout/Grid";
 import ResultContainer from "./Results.jsx";
 import TextInput from "atoms/TextInput";
@@ -22,55 +19,24 @@ position: fixed;
 
 
 function Search({
-  advance, error, results, onSearch, placeholder, inputs,
+  id, error, results, onSearch, placeholder,
 }) {
+  const errorHash = {
+    connection: "Check your internet connection",
+    offline: "You are offline",
+  };
 
-
-
-  let message;
-
-  switch (error) {
-    case "connection":
-      message = (
-        <React.Fragment>
-          <Bar
-            padding="2x"
-            center={<Icon icon="signal_none" size="3x" />}
-          />
-          <Bar
-            padding="2x"
-            center={<Text text="Check your internet connection" />}
-          />
-        </React.Fragment>
-      );
-      break;
-    case "offline":
-      message = (
-        <React.Fragment>
-          <Bar
-            padding="2x"
-            center={<Icon icon="signal_none" size="3x" />}
-          />
-          <Bar
-            padding="2x"
-            center={<Text text="You are offline" />}
-          />
-        </React.Fragment>
-      );
-      break;
-    default:
-      message = (
-        <Bar
-          padding="2x"
-          center={<Text text="We recommend the following based on your key word search" />}
-        />
-      );
-      break;
-  }
+  const msg = errorHash[error && error.toLowerCase()] || "We recommend the following based on your key word search";
+  const message = (
+    <React.Fragment>
+      {error ? <Bar padding="2x" center={<Icon icon="signal_none" size="3x" />} /> : null}
+      <Bar padding="2x" center={<Text text={msg} />} />
+    </React.Fragment>
+  );
 
   const Body = (
     <React.Fragment>
-      { error ? <React.Fragment>{message}</React.Fragment> : null} 
+      { error ? <React.Fragment>{message}</React.Fragment> : null}
       { results ? <ResultContainer results={results} /> : null}
     </React.Fragment>
   );
@@ -79,7 +45,7 @@ function Search({
     <Grid columns="1" gap="tiny">
       <Grid columns="9fr .5fr">
         <TextInput
-          id="111"
+          id={id}
           placeholder={placeholder}
           type="search"
         />
@@ -87,7 +53,7 @@ function Search({
         {/* <Button icon="more" plain /> */}
       </Grid>
       { error || results ? <Grid columns="9fr .5fr"> <DropContainer maxHeight="24rem" > { Body }</DropContainer></Grid> : null}
-      { advance ? <Advanced inputs={inputs} /> : null}
+      {/* { advance ? <Advanced inputs={inputs} /> : null} */}
     </Grid>
   );
 }
@@ -95,12 +61,17 @@ function Search({
 Search.propTypes = {
   id: PropTypes.string,
   results: PropTypes.node,
+  error: PropTypes.node,
+  onSearch: PropTypes.func,
+  placeholder: PropTypes.string,
 };
 
 Search.defaultProps = {
   id: null,
   results: null,
-
+  error: null,
+  onSearch: null,
+  placeholder: null,
 };
 
 export default Search;

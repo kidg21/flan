@@ -59,7 +59,7 @@ AdvancedSearch.propTypes = {
     id: PropTypes.string,
     label: PropTypes.string,
     placeholder: PropTypes.string,
-    href: PropTypes.node,
+    href: PropTypes.string,
     onClick: PropTypes.func,
   })),
 };
