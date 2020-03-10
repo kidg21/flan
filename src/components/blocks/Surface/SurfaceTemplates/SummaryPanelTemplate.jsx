@@ -33,7 +33,6 @@ const SummaryPanelTemplate = (props) => {
         <Legend
           data={section.displayFields}
         />
-        <Divider />
       </React.Fragment>
     );
   });
