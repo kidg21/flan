@@ -3,8 +3,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import Panel from "layout/Panel";
 import Legend from "blocks/Legend";
-import Divider from "atoms/Divider";
-import { Title } from "base/Typography";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
 
 // The following component is just to show how to iterate through all the data
@@ -29,8 +27,8 @@ const SummaryPanelTemplate = (props) => {
 
     return (
       <React.Fragment>
-        <Title text={section.title} />
         <Legend
+        title={section.title}
           data={section.displayFields}
         />
       </React.Fragment>
