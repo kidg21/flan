@@ -32,7 +32,7 @@ const defaultFieldFilter = (pKey, val) => {
   return true;
 };
 
-const parseContent = (rawContent, fieldFilter) => {
+const parseContent = (rawContent, fieldFilter, surfaceId) => {
   const parsedSections = rawContent.sections.map((rawSection) => {
     // parse the raw display fields (values converted from template strings to literal values)
     let parsedDisplayFields = [];
@@ -68,8 +68,12 @@ const parseContent = (rawContent, fieldFilter) => {
       parsedCommands = rawSection.commands.map((rawCommand) => {
         // not doing anything here right now, but later we may pass in Command components
         // or need to instantiate command objects here before passing into presentational template
+        const cmdName = rawCommand.getName();
         return {
-          ...rawCommand,
+          id: `${cmdName}-${surfaceId}`,
+          label: rawCommand.getName ? rawCommand.getName() : "",
+          onClick: rawCommand.execute,
+          icon: rawCommand.getIcon ? rawCommand.getIcon() : null, // TODO: implement this in our commands
         };
       });
     }
@@ -91,9 +95,10 @@ const Surface = ({
   surfaceTemplate: SurfaceTemplate,
   content,
   fieldFilter,
+  id,
 }) => {
   let output = null;
-  const parsedContent = parseContent(content, fieldFilter);
+  const parsedContent = parseContent(content, fieldFilter, id);
   if (typeof SurfaceTemplate === "function") {
     // Built-in template
     output = (<SurfaceTemplate content={parsedContent} />);
@@ -112,6 +117,7 @@ Surface.defaultProps = {
 };
 
 Surface.propTypes = {
+  id: PropTypes.string.isRequired,
   fieldFilter: PropTypes.func,
   surfaceTemplate: PropTypes.oneOf([PropTypes.function, PropTypes.string]).isRequired,
   content: PropTypes.shape({

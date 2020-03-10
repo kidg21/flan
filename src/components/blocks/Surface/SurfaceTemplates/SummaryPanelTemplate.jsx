@@ -1,12 +1,14 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Panel from "layout/Panel";
 import Command from "atoms/Command";
 import Menu from "blocks/Menu";
-import Form, {Section} from "layout/Form";
+import Legend from "blocks/Legend";
+import Form, { Section } from "layout/Form";
 import Divider from "atoms/Divider";
-import Text, {Title, Link} from "base/Typography";
+import Text, { Title, Link } from "base/Typography";
 import Grid from "layout/Grid";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
 
@@ -68,32 +70,20 @@ content passed in via props will look like this:
 const SummaryPanelTemplate = (props) => {
   return (
     <Panel
-    header={
-      <MainPanelHeader title={props.content.title}/>}>
+      header={
+        <MainPanelHeader title={props.content.title} />}
+    >
       {props.content.sections.map((section) => {
         return (
           <React.Fragment>
-            <Title text={section.title}/>
-            {/* map through eac section's display field (key-value pairs) */}
-            {section.displayFields.map((displayField) => {
-              let displayFieldValue = displayField.value;
-              // some displayFields have an onClick, those need to be attached to the value
-              // so the value becomes like a link/command instead of just plain text
-              if (displayField.onClick) {
-                displayFieldValue = (
-                  <Link onClick={displayField.onClick} text={displayField.value} />);
-              }
-              return (
-                <TableContainer><Row><Cell><Text text={displayField.label}/></Cell><Cell><Text weight="bold" text={displayFieldValue}/></Cell></Row></TableContainer>
-              );
-            })}
-            {/* finally, map through the section's standalone commands */}
-            {section.commands.length > 0 ? "" : null}
-            <Grid>
-            {section.commands.map((command) => {
-              return (<Command onClick={command.onClick} label={command.label}/>);
-            })}</Grid>
-             <Divider/>
+            <Title text={section.title} />
+            <Legend
+              data={section.displayFields}
+            />
+            <Menu
+              data={section.commands}
+            />
+            <Divider />
           </React.Fragment>
         );
       })}
