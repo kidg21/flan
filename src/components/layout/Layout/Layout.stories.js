@@ -1,499 +1,344 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
-// import React, { useState } from "react";
-// import { storiesOf } from "@storybook/react";
-// import { screen } from "Variables";
-// import Tabs, { Tab } from "blocks/Tabs";
-// import Card, { CardGrid } from "elements/Card";
-// import Layout from "layout/Layout";
-// import Mapbox from "layout/Map";
-// import Panel from "layout/Panel";
-// import Form, { Section } from "layout/Form";
-// import TextInput from "atoms/TextInput";
-// import { CheckboxGroup } from "atoms/Checkbox";
-// import { RadioGroup } from "atoms/Radio";
-// import SelectMenu from "atoms/SelectMenu";
-// // import NavigationCardBar from "elements/CardBars/NavigationCardBar";
-// import LayoutNotes from "./Layout.md";
+import React, { useState } from "react";
+import LightBoxIcon from "images/LightBoxIconLogo.png";
+import Panel from "layout/Panel";
+import DataTable from "blocks/Table";
+import List, { ListItem } from "blocks/List";
+import Mapbox from "layout/Map";
+import { Title } from "base/Typography";
+import Avatar from "atoms/Avatar";
+import Command from "atoms/Command";
+import Icon from "atoms/Icon";
+import Bar from "blocks/Bar";
+import IconBlock from "blocks/IconBlock";
+import Card, { CardGrid } from "elements/Card";
+import Layout from "layout/Layout";
 
-// const shortBoxes = [
-//   {
-//     id: "box-1",
-//     label: "Label 1",
-//   },
-//   {
-//     id: "box-2",
-//     label: "Label 2 (disabled)",
-//     disabled: true,
-//   },
-//   {
-//     id: "box-3",
-//     label: "Label 3",
-//   },
-//   {
-//     id: "box-4",
-//     label: "Label 4",
-//   },
-// ];
-// const longBoxes = [
-//   {
-//     id: "box_long",
-//     label:
-//       "My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself.",
-//   },
-//   {
-//     id: "box_long2",
-//     label:
-//       "Enough with these long labels already...put it on your blog, Shakespeare.",
-//   },
-// ];
-// const shortRadios = [
-//   {
-//     id: "radio-1",
-//     name: "radio-group",
-//     value: "1",
-//     label: "Label 1",
-//   },
-//   {
-//     id: "radio-2",
-//     name: "radio-group",
-//     value: "2",
-//     label: "Label 2 (disabled)",
-//   },
-//   {
-//     id: "radio-3",
-//     name: "radio-group",
-//     value: "3",
-//     label: "Label 3",
-//     disabled: true,
-//   },
-//   {
-//     id: "radio-4",
-//     name: "radio-group",
-//     value: "4",
-//     label: "Label 4",
-//   },
-// ];
-// const longRadios = [
-//   {
-//     id: "radio_long",
-//     name: "radio-group",
-//     value: "5",
-//     label:
-//       "My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself.",
-//     disabled: true,
-//   },
-//   {
-//     id: "radio_long2",
-//     name: "radio-group",
-//     value: "6",
-//     label:
-//       "Enough with these long labels already...put it on your blog, Shakespeare.",
-//   },
-// ];
-// const options = [
-//   { value: "chocolate", label: "Chocolate" },
-//   { value: "strawberry", label: "Strawberry" },
-//   { value: "vanilla", label: "Vanilla" },
-//   { value: "pistachio", label: "Pistachio" },
-//   { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
-//   { value: "cookie dough", label: "Cookie Dough" },
-// ];
+const map = (
+  <Mapbox />
+);
 
-// storiesOf("Layout |App Layout/", module)
-//   .addParameters({
-//     info: {
-//       text: "Layout info goes here...",
-//     },
-//     notes: {
-//       markdown: LayoutNotes,
-//     },
-//   })
+const listPanel = (
+  <Panel
+    id="Panel"
+  >
+    <List interactive>
+      <ListItem title="Layers" />
+      <ListItem title="Results" />
+      <ListItem title="Form" />
+      <ListItem title="Research" />
+    </List>
+  </Panel>
+);
 
-//   .add(
-//     "Documentation",() => {
-//       return <Layout height="25%" />;
-//     })
+const infoPanel = (
+  <Card
+    media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" // Image
+    mediaDesc="Media Description"
+    title="Card Title"
+    description="Card Description"
+    icon="bookmark_solid"
+    body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    shadow="none"
+  />
+);
 
-//   .add("2 Panel - Row", () => {
-//     return (
-//       <Layout>
-//         <Layout width="70%" />
-//         <Layout width="30%" right="0" backgroundColor="lightyellow" />
-//       </Layout>
-//     );
-//   })
+const tableHeaders = [
+  { id: "options", label: "Actions" },
+  { id: "ACREAGE", label: "Acreage", sortable: true },
+  { id: "AGGR_ACREAGE", label: "Aggregate Acreage", sortable: true },
+  { id: "AGGR_LOT_COUNT", label: "Aggregate Lot Count" },
+  { id: "APN", label: "APN" },
+  { id: "BUILDING_SQFT", label: "Building SQFT", sortable: true },
+  { id: "DATE_TRANSFER", label: "Date Transfer", sortable: true },
+  { id: "LAND_SQFT", label: "Land SQFT" },
+  { id: "MAIL_ADDR", label: "Mailing Address" },
+  { id: "OWNER_NAME_1", label: "Owner Name 1" },
+];
 
-//   .add("2 Panel - Column", () => {
-//     return (
-//       <Layout>
-//         <Layout height="60%" />
-//         <Layout height="40%" top="60%" backgroundColor="lightgreen" />
-//       </Layout>
-//     );
-//   })
+const tableData = [
+  {
+    ACREAGE: "0.12",
+    AGGR_ACREAGE: "0.12",
+    AGGR_GROUP: "510684071_237050",
+    AGGR_LOT_COUNT: "1",
+    APN: "5149-015-023",
+    BUILDING_SQFT: "34658",
+    DATE_TRANSFER: "2019/09/04 00:00:00",
+    DRAW_TYPE: "",
+    LAND_SQFT: "5027",
+    MAIL_ADDR: "353 S BROADWAY # 500",
+    OWNER_NAME_1: "CHANDLER, HARRY BRANT",
+  },
+  {
+    ACREAGE: "1.11",
+    AGGR_ACREAGE: "1.11",
+    AGGR_GROUP: "510684071_237208",
+    AGGR_LOT_COUNT: "1",
+    APN: "5149-032-019",
+    BUILDING_SQFT: "399256",
+    DATE_TRANSFER: "2019/07/24 00:00:00",
+    DRAW_TYPE: "",
+    LAND_SQFT: "48504",
+    MAIL_ADDR: "250 W 55TH ST",
+    OWNER_NAME_1: "IDC MANAGING MEMBER TIC LLC",
+  },
+  {
+    ACREAGE: "0.94",
+    AGGR_ACREAGE: "0.94",
+    AGGR_GROUP: "510684071_238978",
+    AGGR_LOT_COUNT: "1",
+    APN: "5161-026-040",
+    BUILDING_SQFT: "223783",
+    DATE_TRANSFER: "2019/07/11 00:00:00",
+    DRAW_TYPE: "",
+    LAND_SQFT: "41050",
+    MAIL_ADDR: "",
+    OWNER_NAME_1: "EQR STOA LP",
+  },
+  {
+    ACREAGE: "0.07",
+    AGGR_ACREAGE: "0.684631",
+    AGGR_GROUP: "510684071_239100",
+    AGGR_LOT_COUNT: "3",
+    APN: "5163-002-006",
+    BUILDING_SQFT: "600",
+    DATE_TRANSFER: "2019/09/09 00:00:00",
+    DRAW_TYPE: "",
+    LAND_SQFT: "3182",
+    MAIL_ADDR: "",
+    OWNER_NAME_1: "EAST 1ST STREET PROPERTY LLC",
+  },
+  {
+    ACREAGE: "0.12",
+    AGGR_ACREAGE: "0.12",
+    AGGR_GROUP: "510684071_237050",
+    AGGR_LOT_COUNT: "1",
+    APN: "5149-015-023",
+    BUILDING_SQFT: "34658",
+    DATE_TRANSFER: "2019/09/04 00:00:00",
+    DRAW_TYPE: "",
+    LAND_SQFT: "5027",
+    MAIL_ADDR: "353 S BROADWAY # 500",
+    OWNER_NAME_1: "CHANDLER, HARRY BRANT",
+  },
+];
 
-//   .add("3 Panel", () => {
-//     return (
-//       <Layout>
-//         <Layout width="70%" height="60%" />
-//         <Layout
-//           width="70%"
-//           height="40%"
-//           top="60%"
-//           backgroundColor="lightgreen"
-//         />
-//         <Layout width="30%" right="0" backgroundColor="lightyellow" />
-//       </Layout>
-//     );
-//   })
+const dataTable = (
+  <DataTable
+    headers={tableHeaders.slice(1)}
+    rows={tableData}
+    listId="foo"
+    columnWidth={180}
+  />
+);
 
-//   .add("Standard Layout (Containers)", () => {
-//     return React.createElement(() => {
-//       // Left
-//       const [innerState, setInnerState] = useState("leftCover");
-//       const [activeLeft, setActiveLeft] = useState(false);
-//       function toggleLeft() {
-//         if (innerState === "leftUncover") {
-//           setInnerState("leftCover");
-//           setActiveLeft(false);
-//         } else {
-//           setInnerState("leftUncover");
-//           setActiveLeft(true);
-//         }
-//         return false;
-//       }
-//       // Main
-//       const [mainState, setMainState] = useState("rightOffscreen");
-//       // Right
-//       const [rightState, setRightState] = useState("rightOffscreen");
-//       const [activeRight, setActiveRight] = useState(false);
-//       function toggleRight() {
-//         if (rightState === "rightOnscreen" || rightState === "fullScreen") {
-//           setRightState("rightOffscreen");
-//           setMainState("rightOffscreen");
-//           setActiveRight(false);
-//         } else {
-//           setRightState("rightOnscreen");
-//           setMainState("rightOnscreen");
-//           setActiveRight(true);
-//           setInnerState("leftCover");
-//           setActiveLeft(false);
-//         }
-//         return false;
-//       }
-//       function toggleRightFullscreen() {
-//         if (rightState === "fullScreen") {
-//           setRightState("rightOnscreen");
-//         } else {
-//           setRightState("fullScreen");
-//         }
-//         return false;
-//       }
-//       // Middle
-//       const [middleState, setMiddleState] = useState("bottomOffscreen");
-//       // Bottom
-//       const [bottomState, setBottomState] = useState("bottomOffscreen");
-//       const [activeBottom, setActiveBottom] = useState(false);
-//       function toggleBottom() {
-//         if (bottomState === "bottomOnscreen" || bottomState === "fullScreen") {
-//           setBottomState("bottomOffscreen");
-//           setMiddleState("bottomOffscreen");
-//           setActiveBottom(false);
-//         } else {
-//           setBottomState("bottomOnscreen");
-//           setMiddleState("bottomOnscreen");
-//           setActiveBottom(true);
-//         }
-//         return false;
-//       }
-//       function toggleBottomFullscreen() {
-//         if (bottomState === "fullScreen") {
-//           setBottomState("bottomOnscreen");
-//         } else {
-//           setBottomState("fullScreen");
-//         }
-//         return false;
-//       }
-//       // Controls
-//       const screenSmall = window.matchMedia(screen.small);
-//       const screenMedium = window.matchMedia(screen.medium);
-//       let controlsAlign;
-//       if (screenMedium.matches) {
-//         controlsAlign = "right";
-//       } else if (screenSmall.matches) {
-//         controlsAlign = "bottom";
-//       }
+storiesOf("Layout|Layout/", module)
+  .add(
+    "Base",
+    () => {
+      return React.createElement(() => {
+        const [leftOpen, setLeftOpen] = useState(false);
+        const seeLeftRegion = () => { setLeftOpen(!leftOpen); };
+        const [rightOpen, setRightOpen] = useState(false);
+        const seeRightRegion = () => { setRightOpen(!rightOpen); };
+        const [bottomOpen, setBottomOpen] = useState(false);
+        const seeBottomRegion = () => { setBottomOpen(!bottomOpen); };
+        return (
+          <Layout
+            header={{
+              id: "Header",
+              content: (
+                <Bar
+                  padding="2x"
+                  contentAlign="center"
+                  leftWidth="max-content"
+                  left={
+                    <Avatar
+                      image
+                      src={LightBoxIcon}
+                      alt="logo"
+                      onClick={seeLeftRegion}
+                    />
+                  }
+                  center={<Title text="Layout Component" />}
+                  rightWidth="max-content"
+                  right={
+                    <Command
+                      icon="right"
+                      label="Right"
+                      align="right"
+                      onClick={seeRightRegion}
+                    />
+                  }
+                />
+              ),
+            }}
+            left={{
+              content: listPanel,
+              toggle: seeLeftRegion,
+              visible: leftOpen,
+            }}
+            main={{ content: map }}
+            right={{
+              content: infoPanel,
+              toggle: seeRightRegion,
+              visible: rightOpen,
+            }}
+            bottom={{
+              content: dataTable,
+              toggle: seeBottomRegion,
+              visible: bottomOpen,
+            }}
+            footer={{
+              id: "Footer",
+              content: (
+                <Bar
+                  padding="2x"
+                  center={
+                    <Command
+                      icon="down"
+                      label="Bottom"
+                      align="Bottom"
+                      onClick={seeBottomRegion}
+                    />
+                  }
+                />
+              ),
+            }}
+          />
+        );
+      });
+    },
+  )
+  .add(
+    "Configured Icons",
+    () => {
+      return React.createElement(() => {
+        const [rightOpen, setRightOpen] = useState(true);
+        const seeRightRegion = () => { setRightOpen(!rightOpen); };
+        const [leftOpen, setLeftOpen] = useState(true);
+        const seeLeftRegion = () => { setLeftOpen(!leftOpen); rightOpen(false); };
+        const navBar = {
+          content: "",
+          id: "Left Region",
+          toggle: seeLeftRegion,
+          visible: leftOpen,
+        };
+        const appBar = {
+          content: "",
+          id: "Right Region",
+          toggle: seeRightRegion,
+          visible: rightOpen,
+        };
+        return (
+          <Layout
+            header={{
+              // content: "Title",
+              id: "Header",
+              right: (
+                <IconBlock>
+                  <Icon icon="list" onClick={seeRightRegion} />
+                  <Icon icon="chat" onClick={seeRightRegion} />
+                  <Icon icon="calendar" onClick={seeRightRegion} />
+                </IconBlock>
+              ),
+              // width: "max-content", // Separate left/right widths
+            }}
+            left={navBar}
+            main={{
+              // content: <Mapbox />,
+              id: "Main Region",
+            }}
+            right={appBar}
+          />
+        );
+      });
+    },
+  )
+  .add(
+    "With Bottom",
+    () => {
+      return React.createElement(() => {
+        const [rightOpen, setRightOpen] = useState(true);
+        const seeRightRegion = () => { setRightOpen(!rightOpen); };
+        const [bottomOpen, setBottomOpen] = useState(false);
+        const seeBottomRegion = () => { setBottomOpen(!bottomOpen); };
+        const [leftOpen, setLeftOpen] = useState(true);
+        const seeLeftRegion = () => { setLeftOpen(!leftOpen); rightOpen(false); };
 
-//       return (
-//         <Layout id="outer" type="outerWrapper">
-//           <Layout id="inner" type="innerWrapper" state={innerState}>
-//             <Layout id="left" type="leftWrapper" />
-//             <Layout id="main" type="mainWrapper" state={mainState}>
-//               <Layout id="middle" type="middleWrapper" state={middleState} />
-//               <Layout id="bottom" type="bottomWrapper" state={bottomState}>
-//                 <Card>
-//                   <Tabs align="bottom">
-//                     <Tab
-//                       tabLabel="Toggle Bottom Fullscreen"
-//                       onClick={toggleBottomFullscreen}
-//                     />
-//                   </Tabs>
-//                 </Card>
-//               </Layout>
-//             </Layout>
-//             <Layout id="right" type="rightWrapper" state={rightState}>
-//               <Card>
-//                 <Tabs align="bottom">
-//                   <Tab
-//                     tabLabel="Toggle Right Fullscreen"
-//                     onClick={toggleRightFullscreen}
-//                   />
-//                 </Tabs>
-//               </Card>
-//             </Layout>
-//           </Layout>
-//           <Layout id="controls" type="controlsWrapper">
-//             <Tabs align={controlsAlign}>
-//               <Tab
-//                 tabLabel="Toggle Left Wrapper"
-//                 onClick={toggleLeft}
-//                 isSelected={activeLeft}
-//               />
-//               <Tab
-//                 tabLabel="Toggle Right Wrapper"
-//                 onClick={toggleRight}
-//                 isSelected={activeRight}
-//               />
-//               <Tab
-//                 tabLabel="Toggle Bottom Wrapper"
-//                 onClick={toggleBottom}
-//                 isSelected={activeBottom}
-//               />
-//             </Tabs>
-//           </Layout>
-//         </Layout>
-//       );
-//     });
-//   })
+        // const navBar = {
+        //   content: (
+        //     <Panel
+        //       id="Panel"
+        //     >
+        //       <List interactive>
+        //         <ListItem title="Layers" />
+        //         <ListItem title="Results" />
+        //         <ListItem title="Form" />
+        //         <ListItem title="Research" />
+        //       </List>
+        //     </Panel>
+        //   )
+        // };
 
-//   .add("Standard Layout (Content)", () => {
-//     return React.createElement(() => {
-//       // Left
-//       const [innerState, setInnerState] = useState("leftCover");
-//       const [activeLeft, setActiveLeft] = useState(false);
-//       function toggleLeft() {
-//         if (innerState === "leftUncover") {
-//           setInnerState("leftCover");
-//           setActiveLeft(false);
-//         } else {
-//           setInnerState("leftUncover");
-//           setActiveLeft(true);
-//         }
-//         return false;
-//       }
-//       // Main
-//       const [mainState, setMainState] = useState("rightOffscreen");
-//       // Right
-//       const [rightState, setRightState] = useState("rightOffscreen");
-//       const [activeRight, setActiveRight] = useState(false);
-//       function toggleRight() {
-//         if (rightState === "rightOnscreen" || rightState === "fullScreen") {
-//           setRightState("rightOffscreen");
-//           setMainState("rightOffscreen");
-//           setActiveRight(false);
-//         } else {
-//           setRightState("rightOnscreen");
-//           setMainState("rightOnscreen");
-//           setActiveRight(true);
-//           setInnerState("leftCover");
-//           setActiveLeft(false);
-//         }
-//         return false;
-//       }
-//       function toggleRightFullscreen() {
-//         if (rightState === "fullScreen") {
-//           setRightState("rightOnscreen");
-//         } else {
-//           setRightState("fullScreen");
-//         }
-//         return false;
-//       }
-//       // Middle
-//       const [middleState, setMiddleState] = useState("bottomOffscreen");
-//       // Bottom
-//       const [bottomState, setBottomState] = useState("bottomOffscreen");
-//       const [activeBottom, setActiveBottom] = useState(false);
-//       function toggleBottom() {
-//         if (bottomState === "bottomOnscreen" || bottomState === "fullScreen") {
-//           setBottomState("bottomOffscreen");
-//           setMiddleState("bottomOffscreen");
-//           setActiveBottom(false);
-//         } else {
-//           setBottomState("bottomOnscreen");
-//           setMiddleState("bottomOnscreen");
-//           setActiveBottom(true);
-//         }
-//         return false;
-//       }
-//       function toggleBottomFullscreen() {
-//         if (bottomState === "fullScreen") {
-//           setBottomState("bottomOnscreen");
-//         } else {
-//           setBottomState("fullScreen");
-//         }
-//         return false;
-//       }
-//       // Controls
-//       const screenSmall = window.matchMedia(screen.small);
-//       const screenMedium = window.matchMedia(screen.medium);
-//       let controlsAlign;
-//       if (screenMedium.matches) {
-//         controlsAlign = "right";
-//       } else if (screenSmall.matches) {
-//         controlsAlign = "bottom";
-//       }
+        const leftBar = {
+          content: (
+            <DataTable
+              headers={tableHeaders.slice(1)}
+              rows={tableData}
+              listId="foo"
+              columnWidth={180}
+            />
+          ),
+          visible: leftOpen,
+          toggle: seeLeftRegion,
+        };
+        const rightBar = {
+          content: (
+            <DataTable
+              headers={tableHeaders.slice(1)}
+              rows={tableData}
+              listId="foo"
+              columnWidth={180}
+            />
+          ),
+          visible: rightOpen,
+          toggle: seeRightRegion,
+        };
+        const bottomBar = {
+          content: (
+            <DataTable
+              headers={tableHeaders.slice(1)}
+              rows={tableData}
+              listId="foo"
+              columnWidth={180}
+            />
+          ),
+          visible: bottomOpen,
+          toggle: seeBottomRegion,
+        };
+        return (
+          <Layout
+            header={{
+              content: "",
+              width: "15%",
+              right: (
+                <IconBlock>
+                  <Icon icon="list" onClick={seeBottomRegion} />
+                  <Icon icon="chat" onClick={seeRightRegion} />
+                  <Icon icon="calendar" onClick />
+                </IconBlock>
+              ),
+            }}
+            main=""
+            right={rightBar}
+            left={leftBar}
+            bottom={bottomBar}
+          />
+        );
+      });
+    },
+  );
 
-//       return (
-//         <Layout id="outer" type="outerWrapper">
-//           <Layout id="inner" type="innerWrapper" state={innerState}>
-//             <Layout id="left" type="leftWrapper">
-//               <Panel>
-//                 <Form
-//                   title="Form Header"
-//                   subtitle="This is the subtitle"
-//                   description="Just think about these things in your mind - then bring them into your world. Isn't that fantastic?  All you need to paint is a few tools, a little instruction, and a vision in your mind."
-//                 >
-//                   <Section title="Group 1">
-//                     <TextInput
-//                       label="First Name"
-//                       placeholder="John"
-//                       helpText="The one that your parents gave you"
-//                     />
-//                     <TextInput
-//                       label="Last Name"
-//                       placeholder="Williams"
-//                       helpText="The one that comes after.."
-//                     />
-//                   </Section>
-//                   <Section title="Group 2">
-//                     <CheckboxGroup
-//                       id="Section Name"
-//                       label="Checkbox Group Label"
-//                       data={shortBoxes}
-//                       helpText="Hang in there, buddy, I'm here to help!"
-//                       columns="2"
-//                     />
-//                     <CheckboxGroup data={longBoxes} columns="1" />
-//                     <SelectMenu
-//                       multiSelect
-//                       label="Multi-Select"
-//                       placeholder="Choose One Or More..."
-//                       helpText="Help text for the SelectMenu component"
-//                       options={options}
-//                     />
-//                   </Section>
-//                   <Section title="Group 3">
-//                     <RadioGroup
-//                       id="Section Name"
-//                       label="Radio Group Label"
-//                       data={shortRadios}
-//                       helpText="Hang in there, buddy, I'm here to help!"
-//                       columns="2"
-//                     />
-//                     <RadioGroup data={longRadios} columns="1" />
-//                   </Section>
-//                 </Form>
-//               </Panel>
-//             </Layout>
-
-//             <Layout id="main" type="mainWrapper" state={mainState}>
-//               <Layout id="middle" type="middleWrapper" state={middleState}>
-//                 <Mapbox />
-//               </Layout>
-
-//               <Layout id="bottom" type="bottomWrapper" state={bottomState}>
-//                 <Panel
-//                   header={
-//                     <Card>
-//                       <Tabs>
-//                         <Tab tabLabel="List" onClick={toggleBottomFullscreen} />
-//                       </Tabs>
-//                     </Card>
-//                   }
-//                 >
-//                   <CardGrid>
-//                     <Card />
-//                     <Card />
-//                     <Card />
-//                     <Card />
-//                     <Card />
-//                     <Card />
-//                     <Card />
-//                     <Card />
-//                     <Card />
-//                     <Card />
-//                     <Card />
-//                     <Card />
-//                   </CardGrid>
-//                 </Panel>
-//               </Layout>
-//             </Layout>
-
-//             <Layout id="right" type="rightWrapper" state={rightState}>
-//               <Panel
-//                 header={
-//                   <Card>
-//                     <Tabs>
-//                       <Tab tabLabel="Filters" onClick={toggleRightFullscreen} />
-//                     </Tabs>
-//                   </Card>
-//                 }
-//               />
-//             </Layout>
-//           </Layout>
-
-//           <Layout id="controls" type="controlsWrapper">
-//             <Tabs align={controlsAlign}>
-//               <Tab
-//                 icon="location"
-//                 tabLabel="Property"
-//                 onClick={toggleLeft}
-//                 isSelected={activeLeft}
-//               // noBorder
-//               />
-//               <Tab
-//                 icon="layers"
-//                 tabLabel="Layers"
-//               // onClick={toggleLeft}
-//               // isSelected={activeLeft}
-//               // noBorder
-//               />
-//               <Tab
-//                 icon="filter"
-//                 tabLabel="Filters"
-//                 onClick={toggleRight}
-//                 isSelected={activeRight}
-//               // noBorder
-//               />
-
-//               <Tab
-//                 icon="drawings"
-//                 tabLabel="Draw"
-//               // onClick={toggleLeft}
-//               // isSelected={activeLeft}
-//               // noBorder
-//               />
-//               <Tab
-//                 icon="list"
-//                 tabLabel="List"
-//                 onClick={toggleBottom}
-//                 isSelected={activeBottom}
-//               // noBorder
-//               />
-//             </Tabs>
-//           </Layout>
-//         </Layout>
-//       );
-//     });
-//   });

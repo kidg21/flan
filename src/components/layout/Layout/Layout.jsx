@@ -1,70 +1,26 @@
-/* eslint-disable linebreak-style */
 /* eslint-disable complexity */
-/* eslint-disable react/require-default-props */
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-filename-extension */
-import React from "react";
+/* eslint-disable linebreak-style */
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { screen } from "Variables";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
+import { screen } from "Variables";
+import Flex from "layout/Flex";
 
-const FlexWrapper = styled.div`
-  display: flex;
-  flex-direction: ${(props) => {
-    return props.flexDirection || "column";
-  }};
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  flex: ${(props) => {
-    return props.setFlex || "1 1 auto";
-  }};
-  order: 0;
-  position: ${(props) => {
-    return props.setPosition || "absolute";
-  }};
-  top: ${(props) => {
-    return props.top || "0";
-  }};
-  right: ${(props) => {
-    return props.right || "";
-  }};
-  bottom: ${(props) => {
-    return props.bottom || "0";
-  }};
-  left: ${(props) => {
-    return props.left || "";
-  }};
-  width: ${(props) => {
-    return props.width || "100%";
-  }};
-  height: ${(props) => {
-    return props.height || "100%";
-  }};
-  z-index: ${(props) => {
-    return props.zIndex || "0";
-  }};
-  max-width: 100%;
-  max-height: 100%;
-  transition: all 0.3s ease-in-out;
-  border: .25px solid ${(props) => {
-    return props.theme.divider;
-  }};
-  overflow: ${(props) => {
-    return props.setOverflow || "hidden";
-  }};
-  background-color: ${(props) => {
-    return props.theme.background.default;
-  }};
-  transform: ${(props) => {
-    return props.displayState || "";
+const WrapperOuter = styled(Flex)`
+  width: 100vw;
+  height: 100vh;
+`;
+
+const Header = styled(Flex)`
+  flex: none;
+  box-shadow: ${(props) => {
+    return props.theme.shadows.outerShadow;
   }};
   &:empty {
     &:before {
       ${PlaceholderText};
-      content: "{ Layout Wrapper }";
+      content: "{ Header }";
       color: ${(props) => {
     return props.theme.text.primary;
   }};
@@ -72,273 +28,383 @@ const FlexWrapper = styled.div`
   }
 `;
 
+const Footer = styled(Flex)`
+  flex: none;
+  box-shadow: ${(props) => {
+    return props.theme.shadows.outerShadow;
+  }};
+  &:empty {
+    &:before {
+      ${PlaceholderText};
+      content: "{ Footer }";
+      color: ${(props) => {
+    return props.theme.text.primary;
+  }};
+    }
+  }
+`;
+
+const Body = styled(Flex)`
+  flex-direction: row;
+  align-content: stretch;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+`;
+
+const RegionLeft = styled(Flex)`
+  flex: none;
+  position: ${(props) => {
+    return props.position || "absolute";
+  }};
+  width: ${(props) => {
+    return props.leftWidth || "";
+  }};
+  height: 100%;
+  transform: ${(props) => {
+    return props.open ? "none" : `translate3d(-100%, 0, 0)`;
+  }};
+  box-shadow: ${(props) => {
+    return props.open ? props.theme.shadows.outerShadow : "";
+  }};
+  &:empty {
+    &:before {
+      ${PlaceholderText};
+      content: "{ Left }";
+      color: ${(props) => {
+    return props.theme.text.primary;
+  }};
+    }
+  }
+`;
+
+const WrapperMain = styled(Flex)`
+  flex: auto;
+  flex-direction: column;
+  align-content: stretch;
+  align-items: flex-start;
+  position: absolute;
+  left: ${(props) => {
+    return props.mainLeft || "";
+  }};
+  width: ${(props) => {
+    return props.mainWidth || "";
+  }};
+  height: 100%;
+  &:empty {
+    &:before {
+      ${PlaceholderText};
+      content: "{ Main }";
+      color: ${(props) => {
+    return props.theme.text.primary;
+  }};
+    }
+  }
+`;
+
+const RegionCenter = styled(Flex)`
+  flex: none;
+  align-self: stretch;
+  position: ${(props) => {
+    return props.position || "absolute";
+  }};
+  top: 0;
+  bottom: ${(props) => {
+    return props.centerBottom || "";
+  }};
+  width: 100%;
+  &:empty {
+    &:before {
+      ${PlaceholderText};
+      content: "{ Main }";
+      color: ${(props) => {
+    return props.theme.text.primary;
+  }};
+    }
+  }
+`;
+
+const RegionBottom = styled(Flex)`
+  flex: none;
+  align-self: stretch;
+  position: ${(props) => {
+    return props.position || "absolute";
+  }};
+  bottom: 0;
+  width: 100%;
+  height: ${(props) => {
+    return props.bottomHeight || "";
+  }};
+  transform: ${(props) => {
+    return props.open ? "none" : "translate3d(0, 100%, 0)";
+  }};
+  box-shadow: ${(props) => {
+    return props.open ? props.theme.shadows.outerShadow : "";
+  }};
+  &:empty {
+    &:before {
+      ${PlaceholderText};
+      content: "{ Bottom }";
+      color: ${(props) => {
+    return props.theme.text.primary;
+  }};
+    }
+  }
+`;
+
+const RegionRight = styled(Flex)`
+  flex: none;
+  position: ${(props) => {
+    return props.position || "absolute";
+  }};
+  right: 0;
+  width: ${(props) => {
+    return props.rightWidth || "";
+  }};
+  height: 100%;
+  transform: ${(props) => {
+    return props.open ? "none" : `translate3d(100%, 0, 0)`;
+  }};
+  box-shadow: ${(props) => {
+    return props.open ? props.theme.shadows.outerShadow : "";
+  }};
+  &:empty {
+    &:before {
+      ${PlaceholderText};
+      content: "{ Right }";
+      color: ${(props) => {
+    return props.theme.text.primary;
+  }};
+    }
+  }
+`;
 function Layout({
-  bottom,
-  children,
-  flexDirection,
-  height,
+  header,
   id,
   left,
+  main,
+  bottom,
   right,
-  setFlex,
-  setOverflow,
-  setPosition,
-  state,
-  top,
-  type,
-  width,
-  zIndex,
+  footer,
 }) {
   const screenSmall = window.matchMedia(screen.small);
   const screenMedium = window.matchMedia(screen.medium);
   const screenLarge = window.matchMedia(screen.large);
-  let position = setPosition;
-  let direction = flexDirection;
-  let overflow = setOverflow;
-  let screenWidth = width;
-  let screenHeight = height;
-  let offsetLeft = left;
-  let offsetTop = top;
-  let offsetBottom = bottom;
-  let z = zIndex;
-  let flex = setFlex;
-  let displayState;
-  switch (type) {
-    case "outerWrapper":
-      position = "relative";
-      if (screenMedium.matches) {
-        direction = "row";
-      } else if (screenSmall.matches) {
-        direction = "column";
-      }
-      break;
-    case "innerWrapper":
-      position = "relative";
-      overflow = "visible";
-      break;
-    case "leftWrapper":
-      displayState = "translate3d(-100%, 0px, 0px)";
-      if (screenLarge.matches) {
-        screenWidth = "30%";
-      } else if (screenMedium.matches) {
-        screenWidth = "40%";
-      } else if (screenSmall.matches) {
-        screenWidth = "100%";
-      }
-      break;
-    case "middleWrapper":
-      screenHeight = "auto";
-      break;
-    case "bottomWrapper":
-      if (screenLarge.matches) {
-        offsetTop = "60%";
-        screenHeight = "40%";
-      } else if (screenMedium.matches) {
-        offsetTop = "50%";
-        screenHeight = "50%";
-      } else if (screenSmall.matches) {
-        offsetTop = "40%";
-        screenHeight = "60%";
-      }
-      break;
-    case "rightWrapper":
-      z = "1";
-      if (screenLarge.matches) {
-        offsetLeft = "70%";
-        screenWidth = "30%";
-      } else if (screenMedium.matches) {
-        offsetLeft = "60%";
-        screenWidth = "40%";
-      } else if (screenSmall.matches) {
-        offsetLeft = "0";
-        screenWidth = "100%";
-      }
-      break;
-    case "controlsWrapper":
-      position = "relative";
-      flex = "0 0 auto";
-      if (screenLarge.matches) {
-        screenWidth = "min-content";
-      } else if (screenMedium.matches) {
-        screenWidth = "min-content";
-      } else if (screenSmall.matches) {
-        screenWidth = "100%";
-        screenHeight = "min-montent";
-      }
-      break;
-    case "mainWrapper":
-    default:
-      break;
+
+  let leftWidth;
+  let mainLeft;
+  let mainWidth;
+  let rightWidth;
+  let centerBottom;
+  let bottomHeight;
+  let zIndex = null; // shared by all
+  if (screenMedium.matches || screenLarge.matches) {
+    leftWidth = "15%";
+    mainWidth = "100%";
+    rightWidth = "25%";
+    bottomHeight = "40%";
+    zIndex = "1";
+  } else {
+    leftWidth = "100%";
+    mainWidth = "100%";
+    rightWidth = "100%";
+    bottomHeight = "60%";
+    zIndex = "1";
   }
-  switch (state) {
-    case "leftUncover":
-      if (type === "innerWrapper" && screenLarge.matches) {
-        displayState = "translate3d(30%, 0, 0)";
-      } else if (type === "innerWrapper" && screenMedium.matches) {
-        displayState = "translate3d(40%, 0, 0)";
-      } else if (type === "innerWrapper" && screenSmall.matches) {
-        displayState = "translate3d(100%, 0, 0)";
+
+  let leftOpen = left ? left.visible : false;
+  let setLeftOpen = left ? left.toggle : null;
+
+  let rightOpen = right ? right.visible : false;
+  let setRightOpen = right ? right.toggle : null;
+
+  let bottomOpen = bottom ? bottom.visible : false;
+  let setBottomOpen = bottom ? bottom.toggle : null;
+
+  if (left) {
+    if (!setLeftOpen) [leftOpen, setLeftOpen] = useState(!left.visible);
+    // On larger screens, both left and right regions can be open at the same time
+    if (screenLarge.matches || screenMedium.matches) {
+      if (leftOpen) {
+        mainLeft = "15%";
+        mainWidth = "85%";
+        if (rightOpen) {
+          mainWidth = "60%";
+        }
+      } else {
+        mainLeft = "0";
       }
-      break;
-    case "leftCover":
-      if (type === "innerWrapper") {
-        displayState = "translate3d(0, 0, 0)";
-      }
-      break;
-    case "rightOnscreen":
-      if (type === "mainWrapper" && screenLarge.matches) {
-        screenWidth = "70%";
-      } else if (type === "mainWrapper" && screenMedium.matches) {
-        screenWidth = "60%";
-      } else if (type === "mainWrapper" && screenSmall.matches) {
-        screenWidth = "100%";
-      }
-      break;
-    case "rightOffscreen":
-      if (type === "rightWrapper") {
-        offsetLeft = "100%";
-      }
-      break;
-    case "bottomOnscreen":
-      if (type === "middleWrapper" && screenLarge.matches) {
-        offsetBottom = "40%";
-      } else if (type === "middleWrapper" && screenMedium.matches) {
-        offsetBottom = "50%";
-      } else if (type === "middleWrapper" && screenSmall.matches) {
-        offsetBottom = "60%";
-      }
-      break;
-    case "bottomOffscreen":
-      if (type === "bottomWrapper") {
-        offsetTop = "100%";
-      } else if (type === "middleWrapper") {
-        offsetBottom = "0";
-      }
-      break;
-    case "fullScreen":
-      screenWidth = "100%";
-      screenHeight = "100%";
-      offsetTop = "0";
-      offsetLeft = "0";
-      z = "1";
-      break;
-    default:
-      break;
+    }
+    // On small screens, either the left or right region can be open, but not both.
+    // If the right region was previously open, it's state is restored when the left region is closed.
+    if (screenSmall.matches) {
+      // if (leftOpen) {
+      //   rightOpen = false;
+      // }
+    }
   }
+
+  if (right) {
+    if (!setRightOpen) [rightOpen, setRightOpen] = useState(!right.visible);
+    // On larger screens, both left and right regions can be open at the same time
+    // if (screenLarge.matches || screenMedium.matches) {
+    if (rightOpen) {
+      mainWidth = "75%";
+      if (leftOpen) {
+        mainWidth = "60%";
+      }
+    }
+    // }
+    // On small screens, either the left or right region can be open, but not both.
+    // If the left region was previously open, it's state is restored when the right region is closed.
+    if (screenSmall.matches) {
+      // if (rightOpen) {
+      //   leftOpen = false;
+      // }
+    }
+  }
+
+  if (bottom) {
+    if (!setBottomOpen) [bottomOpen, setBottomOpen] = useState(bottom.visible);
+    // large/Medium screens
+    if (screenLarge.matches || screenMedium.matches) {
+      if (bottomOpen) {
+        centerBottom = "40%";
+      } else {
+        centerBottom = "0";
+      }
+      // Small screens (default)
+    } else if (bottomOpen) {
+      centerBottom = "60%";
+    } else {
+      centerBottom = "0";
+    }
+  }
+
   return (
-    <FlexWrapper
-      bottom={offsetBottom}
-      displayState={displayState}
-      flexDirection={direction}
-      height={screenHeight}
-      id={id}
-      left={offsetLeft}
-      right={right}
-      setFlex={flex}
-      setOverflow={overflow}
-      setPosition={position}
-      top={offsetTop}
-      width={screenWidth}
-      zIndex={z}
-    >
-      {children}
-    </FlexWrapper>
+    <WrapperOuter id={id} >
+      {header.content ? (
+        <Header
+          id={header.id}
+          zIndex={zIndex}
+        >
+          {header.content}
+        </Header>
+      ) : null}
+      <Body>
+        {left ? (
+          <RegionLeft
+            id={left.id}
+            open={leftOpen}
+            width={leftWidth}
+            zIndex={zIndex}
+          >
+            {left.content}
+          </RegionLeft>
+        ) : null}
+        <WrapperMain height={bottomHeight} left={mainLeft} width={mainWidth}>
+          <RegionCenter bottom={centerBottom} id={main.id}>
+            {main.content}
+          </RegionCenter>
+          {bottom ? (
+            <RegionBottom
+              height={bottomHeight}
+              id={bottom.id}
+              open={bottomOpen}
+              zIndex={zIndex}
+            >
+              {bottom.content}
+            </RegionBottom>) : null}
+        </WrapperMain>
+        {right ? (
+          <RegionRight
+            id={right.id}
+            open={rightOpen}
+            width={rightWidth}
+            zIndex={zIndex}
+          >
+            {right.content}
+          </RegionRight>
+        ) : null}
+      </Body>
+      {footer.content ? (
+        <Footer
+          id={footer.id}
+          zIndex={zIndex}
+        >
+          {footer.content}
+        </Footer>
+      ) : null}
+    </WrapperOuter>
   );
 }
 
 Layout.propTypes = {
-  /** Sets the bottom edge (in percentage) of a Layout component. */
-  bottom: PropTypes.string,
-  /** Allows for the nesting of Layout components */
-  children: PropTypes.node,
-  /**
-   * Defines how flexbox items are ordered within a flexbox container.
-   *
-   * Options:
-   * 'column' (default)
-   * 'row'
-   */
-  flexDirection: PropTypes.string,
-  /** Sets the height (in percentage) of a Layout component. */
-  height: PropTypes.string,
-  /** Allows each component to have a unique identifier */
   id: PropTypes.string,
-  /** Sets the left edge (in percentage) of a Layout component.
-   *
-   * 'left' is the primary control for horizontal sizing.  For a horizontal Layout component that does not extend to the right edge of the viewport, the 'right' prop is required
-   */
-  left: PropTypes.string,
-  /** Sets the right edge (in percentage) of a Layout component. */
-  right: PropTypes.string,
-  /** Defines how much space a Flexbox item is allowed to fill.  A Flexbox item either takes up only the space that it needs (fixed) or takes up (or shares) any remaining empty space (flex).
-   *
-   * Options:
-   * fixed: '0 0 auto' or 'none' (default)
-   * flex: '1 1 auto' or 'auto'
-   */
-  setFlex: PropTypes.string,
-  /** Determines whether the content within a Layout component is contained or overflows its borders.
-   *
-   * Options:
-   * 'hidden' (default)
-   * 'visible'
-   */
-  setOverflow: PropTypes.string,
-  /** Used to manage the display Layout hierarchy.
-   *
-   * Options:
-   * 'absolute' (default)
-   * 'relative'
-   */
-  setPosition: PropTypes.string,
-  /** Switch that manages a React hook that uses the 'displayState' property.  Each component 'type' can have uniquey state designatins.  Howver, they are all based on 'onScreen', 'offScreen', and 'fullScreen'.  */
-  state: PropTypes.oneOf([
-    "leftUncover",
-    "leftCover",
-    "rightOnscreen",
-    "rightOffscreen",
-    "bottomOnscreen",
-    "bottomOffscreen",
-    "fullScreen",
-  ]),
-  /** Sets the top edge (in percentage) of a Layout component.
-   *
-   * 'top' is the primary control for vertical sizing.  For a vertical Layout component that does not extend to the bottom edge of the viewport, the 'bottom' prop is required
-   */
-  top: PropTypes.string,
-  /** Switch that manages Layout components that have pre-defined display properties.  */
-  type: PropTypes.oneOf([
-    "outerWrapper",
-    "innerWrapper",
-    "leftWrapper",
-    "mainWrapper",
-    "middleWrapper",
-    "bottomWrapper",
-    "rightWrapper",
-    "controlsWrapper",
-  ]),
-  /** Sets the width (in percentage) of a Layout component. */
-  width: PropTypes.string,
-  /** Uses the CSS property, 'z-index' to define the stacking order of elements at the same level within the DOM.  Elements with higher values will diplay 'on top' of elements with lower values. */
-  zIndex: PropTypes.string,
+  header: PropTypes.shape({
+    content: PropTypes.node,
+    id: PropTypes.string,
+  }),
+  left: PropTypes.shape({
+    content: PropTypes.node.isRequired,
+    id: PropTypes.string,
+    toggle: PropTypes.func,
+    visible: PropTypes.string,
+  }),
+  main: PropTypes.shape({
+    content: PropTypes.node.isRequired,
+    id: PropTypes.string,
+  }),
+  bottom: PropTypes.shape({
+    content: PropTypes.node.isRequired,
+    id: PropTypes.string,
+    toggle: PropTypes.func,
+    visible: PropTypes.string,
+  }),
+  right: PropTypes.shape({
+    content: PropTypes.node.isRequired,
+    id: PropTypes.string,
+    toggle: PropTypes.func,
+    visible: PropTypes.string,
+  }),
+  footer: PropTypes.shape({
+    content: PropTypes.node.isRequired,
+    id: PropTypes.string,
+  }),
 };
 
 Layout.defaultProps = {
-  bottom: null,
-  children: null,
-  flexDirection: null,
-  height: null,
   id: null,
-  left: null,
-  right: null,
-  setFlex: null,
-  setOverflow: null,
-  setPosition: null,
-  state: null,
-  top: null,
-  type: "mainWrapper",
-  width: null,
-  zIndex: null,
+  header: {
+    content: null,
+    id: null,
+  },
+  left: {
+    content: null,
+    id: null,
+    toggle: null,
+    visible: null,
+  },
+  main: {
+    content: null,
+    id: null,
+  },
+  bottom: {
+    content: null,
+    id: null,
+    toggle: null,
+    visible: null,
+  },
+  right: {
+    content: null,
+    id: null,
+    toggle: null,
+    visible: null,
+  },
+  footer: {
+    content: null,
+    id: null,
+  },
 };
 
 export default Layout;
