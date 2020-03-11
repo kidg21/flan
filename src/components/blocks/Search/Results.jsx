@@ -9,7 +9,7 @@ import List, { ListItem } from "blocks/List";
 
 function ResultContainer({ id, results }) {
   return (
-    <React.Fragment id={id}>
+    <React.Fragment key={id}>
       <List interactive>
         { results.slice(0, 10).map((item) => {
     return (
