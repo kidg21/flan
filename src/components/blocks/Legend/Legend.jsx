@@ -3,9 +3,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Text, { Title } from "base/Typography";
+import Text, { Title, Link } from "base/Typography";
 import { SkeletonStatic } from "helpers";
 
+const LegendTitle = styled(Title)`
+padding-bottom: .5rem;
+`;
 
 const Wrapper = styled.div`
   display: block;
@@ -44,9 +47,6 @@ const Cell = styled.td`
   border-bottom-color: ${(props) => {
     return props.theme.palette[props.cellBorderColor] || "";
   }};
-  font-size: ${(props) => {
-    return props.fontSize || "small";
-  }};
 
   &:first-child {
     font-weight: ${(props) => {
@@ -74,9 +74,13 @@ function Legend({
 
   return (
     <Wrapper id={id}>
-      {title ? <Title text={title} /> : null}
+      {title ? <LegendTitle weight="bold" text={title} /> : null}
       <TableContainer id={id}>
         {data.map((row) => {
+          let rowValue = row.value;
+          if (row.onClick) {
+            rowValue = (<Link onClick={row.onClick} text={row.value} />);
+          }
           return (
             <Row key={row.id}>
               <Cell
@@ -86,7 +90,7 @@ function Legend({
                 fontWeight={fontWeight}
                 fontSize={fontSize}
               >
-                {row.label}
+                <Text text={row.label}/>
               </Cell>
               <Cell
                 cellBorder={cellBorder}
@@ -95,7 +99,7 @@ function Legend({
                 fontWeight={fontWeight}
                 fontSize={fontSize}
               >
-                <Text text={row.value} />
+                <Text text={rowValue} />
               </Cell>
             </Row>
           );
