@@ -1,3 +1,4 @@
+/* eslint-disable security/detect-object-injection */
 /* eslint-disable linebreak-style */
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import React from "react";
@@ -26,7 +27,8 @@ function Search({
     offline: "You are offline",
   };
 
-  const msg = errorHash[error && error.toLowerCase()] || "We recommend the following based on your key word search";
+
+  const msg = errorHash[error] || "We recommend the following based on your key word search";
   const message = (
     <React.Fragment>
       {error ? <Bar padding="2x" center={<Icon icon="signal_none" size="3x" />} /> : null}
