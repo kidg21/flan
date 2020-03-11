@@ -204,6 +204,7 @@ function SelectMenu({
     textColor = "disabled";
   } else if (error) {
     textColor = "alert";
+    messageColor = "alert"
     if (typeof error === "string") ;
   } else if (warning) {
     messageColor = "alert";
