@@ -6,6 +6,7 @@ import { Darken } from "Variables";
 import Bar from "blocks/Bar";
 import Tag from "atoms/Tag";
 import Avatar from "atoms/Avatar";
+import Icon from "atoms/Icon";
 import Checkbox from "atoms/Checkbox";
 import Switch from "atoms/Switch";
 import Text, { Title } from "base/Typography";
@@ -106,7 +107,11 @@ function getRightContent(post, disabled, onClick) {
 function getLeftContent(pre, disabled, onClick) {
   let leftContent = null;
   if (pre && (pre.label || pre.icon)) {
-    const leftContentComponent = <Avatar label={pre.label} icon={pre.icon} disabled={disabled} />;
+    const leftContentComponent = (
+    <React.Fragment>
+      { pre.label ? <Avatar label={pre.label}  disabled={disabled} /> : null}
+      { pre.icon ? <Icon icon={pre.icon} disabled={disabled} /> : null}
+    </React.Fragment>);
     leftContent = {
       content: leftContentComponent,
       width: "max-content",

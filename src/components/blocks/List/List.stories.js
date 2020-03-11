@@ -171,32 +171,6 @@ storiesOf("Blocks|List", module)
         </List>
     );
   })
-  .add("Pre-Icon", () => {
-    return (
-      <List interactive>
-        <ListItem
-          title="List Item"
-          description="This is the description"
-          pre={{ icon: "home" }}
-        />
-        <ListItem
-          title="List Item"
-          description="This is the description"
-          pre={{ icon: "user" }}
-        />
-        <ListItem
-          title="List Item"
-          description="This is the description"
-          pre={{ icon: "bookmark" }}
-        />
-        <ListItem
-          title="List Item"
-          description="This is the description"
-          pre={{ icon: "print" }}
-        />
-      </List>
-    );
-  })
   .add("Post-Toggle", () => {
     return (
       <List interactive>
