@@ -5,17 +5,22 @@ import PropTypes from "prop-types";
 import { Lighten, Darken } from "Variables";
 
 const SliderPiece = styled.input.attrs({ type: "range" })`
-  height: 1px;
-  background: ${(props) => {
-    return props.error ? props.theme.palette.alert60 : props.theme.palette.neutral80;
-  }};
+  height: 2px;
+  background: #d3d3d3;
   outline: none;
   transition: opacity 0.2s;
+  -webkit-appearance: none;
+  &::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    background: black;
+    height: 2px;
+  }
   &::-webkit-slider-thumb {
-    appearance: none;
+    -webkit-appearance: none;
     width: 1.5em;
     height: 1.5em;
     border: 1px solid;
+    margin-top: -8px;
     border-color: ${(props) => {
     return props.error ? props.theme.palette.alert60 : props.theme.palette.selected;
   }};
@@ -24,6 +29,7 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
     return props.error ? props.theme.palette.alert60 : props.theme.palette.selectedLight;
   }};
     cursor: pointer;
+    
     &:hover {
       ${Darken};
     }
@@ -31,60 +37,32 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
       ${Lighten};
     }
   }
-  &::-moz-range-track {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 98%;
-    height: 1px;
-    x: align.center;
-    y: align.center;
-    border-radius: 5px;
-    background: #ccc;
-    outline: none;
-  }
-  &::-moz-range-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    color: ${(props) => {
-    return props.theme.palette.selectedLight;
-  }};
-    cursor: pointer;
-  }
-  &[disabled],
-  &[readonly] {
-    cursor: not-allowed;
-    pointer-events: none;
-    user-select: none;
-    &::-webkit-slider-thumb {
-      border-color: ${(props) => {
-    return props.theme.palette.neutral80;
-  }};
-      background-color: ${(props) => {
-    return props.theme.palette.neutral60;
-  }};
-    }
-  }
+
 `;
 
 function Slider({
-  disabled, error, id, onChange,
+  disabled, error, id, onChange, min, max, value,
 }) {
-  return <SliderPiece id={id} onChange={onChange} disabled={disabled} error={error} />;
+  return <SliderPiece min={min} max={max} step="1" value={value} id={id} onChange={onChange} disabled={disabled} error={error} />;
 }
 Slider.propTypes = {
   disabled: PropTypes.bool,
   error: PropTypes.bool,
   id: PropTypes.string,
   onChange: PropTypes.func,
+  value: PropTypes.string,
+  min: PropTypes.string,
+  max: PropTypes.string,
+
 };
 Slider.defaultProps = {
   disabled: false,
   error: false,
   id: null,
   onChange: null,
+  value: null,
+  min: null,
+  max: null,
 };
 
 export default Slider;
