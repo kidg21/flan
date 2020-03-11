@@ -1,0 +1,202 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <div
+    className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
+    id={null}
+  >
+    <table
+      className="Legend__TableContainer-sc-70hm4b-2 eGVqrH"
+      id={null}
+    >
+      <tr
+        className="Legend__Row-sc-70hm4b-3 iPmLqY"
+      >
+        <td
+          className="Legend__Cell-sc-70hm4b-4 fmFntD"
+          fontSize={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+            fontSize="0.95em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            Category 0
+          </p>
+        </td>
+        <td
+          className="Legend__Cell-sc-70hm4b-4 fmFntD"
+          fontSize={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+            fontSize="0.95em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            Value 0
+          </p>
+        </td>
+      </tr>
+      <tr
+        className="Legend__Row-sc-70hm4b-3 iPmLqY"
+      >
+        <td
+          className="Legend__Cell-sc-70hm4b-4 fmFntD"
+          fontSize={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+            fontSize="0.95em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            Category 1
+          </p>
+        </td>
+        <td
+          className="Legend__Cell-sc-70hm4b-4 fmFntD"
+          fontSize={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+            fontSize="0.95em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            Value 1
+          </p>
+        </td>
+      </tr>
+      <tr
+        className="Legend__Row-sc-70hm4b-3 iPmLqY"
+      >
+        <td
+          className="Legend__Cell-sc-70hm4b-4 fmFntD"
+          fontSize={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+            fontSize="0.95em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            Category 2
+          </p>
+        </td>
+        <td
+          className="Legend__Cell-sc-70hm4b-4 fmFntD"
+          fontSize={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+            fontSize="0.95em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            Value 2
+          </p>
+        </td>
+      </tr>
+      <tr
+        className="Legend__Row-sc-70hm4b-3 iPmLqY"
+      >
+        <td
+          className="Legend__Cell-sc-70hm4b-4 fmFntD"
+          fontSize={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+            fontSize="0.95em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            Category 3
+          </p>
+        </td>
+        <td
+          className="Legend__Cell-sc-70hm4b-4 fmFntD"
+          fontSize={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+            fontSize="0.95em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            Value 3
+          </p>
+        </td>
+      </tr>
+      <tr
+        className="Legend__Row-sc-70hm4b-3 iPmLqY"
+      >
+        <td
+          className="Legend__Cell-sc-70hm4b-4 fmFntD"
+          fontSize={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+            fontSize="0.95em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            Category 4
+          </p>
+        </td>
+        <td
+          className="Legend__Cell-sc-70hm4b-4 fmFntD"
+          fontSize={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+            fontSize="0.95em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            Value 4
+          </p>
+        </td>
+      </tr>
+      <tr
+        className="Legend__Row-sc-70hm4b-3 iPmLqY"
+      >
+        <td
+          className="Legend__Cell-sc-70hm4b-4 fmFntD"
+          fontSize={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+            fontSize="0.95em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            Category 5
+          </p>
+        </td>
+        <td
+          className="Legend__Cell-sc-70hm4b-4 fmFntD"
+          fontSize={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+            fontSize="0.95em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            Value 5
+          </p>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+`;

@@ -1,0 +1,219 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fGkTyc"
+    id="Button Group"
+    rows={null}
+  >
+    <button
+      className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
+      disabled={false}
+      htmlFor={null}
+      id={null}
+      name={null}
+      onClick={null}
+      tabIndex="1"
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        id={null}
+        rows={null}
+      >
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Button
+        </p>
+      </section>
+    </button>
+    <button
+      className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
+      disabled={false}
+      htmlFor={null}
+      id={null}
+      name={null}
+      onClick={null}
+      tabIndex="1"
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        id={null}
+        rows={null}
+      >
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Button
+        </p>
+      </section>
+    </button>
+    <button
+      className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
+      disabled={false}
+      htmlFor={null}
+      id={null}
+      name={null}
+      onClick={null}
+      tabIndex="1"
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        id={null}
+        rows={null}
+      >
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Button
+        </p>
+      </section>
+    </button>
+    <button
+      className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
+      disabled={false}
+      htmlFor={null}
+      id={null}
+      name={null}
+      onClick={null}
+      tabIndex="1"
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        id={null}
+        rows={null}
+      >
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+          fontSize="1em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Button
+        </p>
+      </section>
+    </button>
+  </section>
+</div>
+`;
+
+exports[` 2`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 fGkTyc"
+  id={null}
+  rows={null}
+>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="1"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+      id={null}
+      rows={null}
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+        fontSize="1em"
+        fontWeight={600}
+        letterSpacing="0px"
+      >
+        Button
+      </p>
+    </section>
+  </button>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="1"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+      id={null}
+      rows={null}
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+        fontSize="1em"
+        fontWeight={600}
+        letterSpacing="0px"
+      >
+        Button
+      </p>
+    </section>
+  </button>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="1"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+      id={null}
+      rows={null}
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+        fontSize="1em"
+        fontWeight={600}
+        letterSpacing="0px"
+      >
+        Button
+      </p>
+    </section>
+  </button>
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
+    disabled={false}
+    htmlFor={null}
+    id={null}
+    name={null}
+    onClick={null}
+    tabIndex="1"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+      id={null}
+      rows={null}
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+        fontSize="1em"
+        fontWeight={600}
+        letterSpacing="0px"
+      >
+        Button
+      </p>
+    </section>
+  </button>
+</section>
+`;

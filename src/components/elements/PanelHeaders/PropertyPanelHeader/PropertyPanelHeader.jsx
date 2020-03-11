@@ -14,12 +14,18 @@ function PropertyPanelHeader({
       <Bar
         padding="3x"
         contentAlign="center"
-        leftWidth="min-content"
-        left={<Icon icon="directions" size="2x" type="action40" onClick={onClick} />}
-        centerAlign="left"
-        center={<Title text={title} size="2x" weight="bold" />}
-        rightWidth="min-content"
-        right={<Menu data={menuData} position="bottomLeft" type="edit" />}
+        left={{
+          content: <Icon icon="directions" size="2x" type="action40" onClick={onClick} />,
+          width: "min-content",
+        }}
+        center={{
+          content: <Title text={title} size="2x" weight="bold" />,
+          align: "left",
+        }}
+        right={{
+          content: <Menu data={menuData} position="bottomLeft" type="edit" />,
+          width: "min-content",
+        }}
       />
     </React.Fragment>
   );

@@ -1,11 +1,9 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
-import { viewport } from "Variables";
 import LightBoxIcon from "images/LightBoxIconLogo.png";
 import Panel from "layout/Panel";
 import DataTable from "blocks/Table";
-// import Card, { CardGrid } from "elements/Card";
 import List, { ListItem } from "blocks/List";
 import Mapbox from "layout/Map";
 import { Title } from "base/Typography";
@@ -15,7 +13,7 @@ import Icon from "atoms/Icon";
 import Bar from "blocks/Bar";
 import IconBlock from "blocks/IconBlock";
 import Card, { CardGrid } from "elements/Card";
-import Template from "layout/Template.jsx";
+import Template from "layout/Template";
 
 const map = (
   <Mapbox />

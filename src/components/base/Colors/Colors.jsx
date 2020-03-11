@@ -57,10 +57,14 @@ function ThemeColors({ color }) {
   return (
     <Bar
       contentAlign="center"
-      left={<ThemeColorBlockColor color={color} />}
-      leftWidth="min-content"
-      center={<Title text={color} />}
-      centerAlign="left"
+      left={{
+        content: <ThemeColorBlockColor color={color} />,
+        width: "min-content",
+      }}
+      center={{
+        content: <Title text={color} />,
+        align: "left",
+      }}
     />
   );
 }
@@ -75,10 +79,14 @@ function Colors({ color }) {
   return (
     <Bar
       contentAlign="center"
-      left={<ColorBlockColor color={color} />}
-      leftWidth="min-content"
-      center={<Title text={color} />}
-      centerAlign="left"
+      left={{
+        content: <ColorBlockColor color={color} />,
+        width: "min-content",
+      }}
+      center={{
+        content: <Title text={color} />,
+        align: "left",
+      }}
     />
   );
 }

@@ -52,21 +52,27 @@ Tags may appear in groups. When a Tag group is necessary use the TagGroup wrappe
     <React.Fragment>
       <Bar
         padding="2x"
-        leftWidth="5%"
-        centerAlign="left"
         contentAlign="center"
-        left={<Icon icon="check" type="success" size="2x" />}
-        center={<Tag label="Brief Label" />}
+        left={{
+          content: <Icon icon="check" type="success" size="2x" />,
+          width: "5%",
+        }}
+        center={{
+          content: <Tag label="Brief Label" />,
+          align: "left",
+        }}
       />
       <Bar
         padding="2x"
-        leftWidth="5%"
-        centerAlign="left"
         contentAlign="center"
-        left={<Icon icon="close" type="alert" size="2x" />}
-        center={
-          <Tag label="Tag with a long label because you cannot be concise with your words." />
-        }
+        left={{
+          content: <Icon icon="close" type="alert" size="2x" />,
+          width: "5%",
+        }}
+        center={{
+          content: <Tag label="Tag with a long label because you cannot be concise with your words." />,
+          align: "left",
+        }}
       />
     </React.Fragment>
   </Story>

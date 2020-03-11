@@ -18,63 +18,63 @@ const StyledLabel = styled.label`
   font-weight: ${(props) => { return props.fontWeight; }};
   letter-spacing: ${(props) => { return props.letterSpacing; }};
 
-&:after {
-  display: ${(props) => {
+  &:after {
+    display: ${(props) => {
     return props.isRequired ? "" : "none";
   }};
-  content: "*";
-  color: ${(props) => {
+    content: "*";
+    color: ${(props) => {
     return props.theme.palette.alert80;
   }};
-  font-size: ${(props) => { return props.fontSize; }};
-  line-height: ${(props) => { return props.lineHeight; }};
-  vertical-align: middle;
-  padding-left: 0.25em;
-}
+    font-size: ${(props) => { return props.fontSize; }};
+    line-height: ${(props) => { return props.lineHeight; }};
+    vertical-align: middle;
+    padding-left: 0.25em;
+  }
 `;
 
 const LinkText = styled.a`
-line-height: inherit;
-font-size: ${(props) => { return props.fontSize; }};
-font-weight: ${(props) => { return props.fontWeight; }};
-font-family: ${(props) => { return props.theme.typography.primary; }};
-text-decoration: none;
-padding: .5em;
-letter-spacing: ${(props) => { return props.letterSpacing; }};
-color: ${(props) => { return props.theme.text.link; }};
-margin: -.5em;
-cursor: pointer;
+  line-height: inherit;
+  font-size: ${(props) => { return props.fontSize; }};
+  font-weight: ${(props) => { return props.fontWeight; }};
+  font-family: ${(props) => { return props.theme.typography.primary; }};
+  text-decoration: none;
+  padding: .5em;
+  letter-spacing: ${(props) => { return props.letterSpacing; }};
+  color: ${(props) => { return props.theme.text.link; }};
+  margin: -.5em;
+  cursor: pointer;
 
-&:hover,
-&:focus {
-  ${Darken};
-}
-&:active {
-  ${Lighten};
-}
+  &:hover,
+  &:focus {
+    ${Darken};
+  }
+  &:active {
+    ${Lighten};
+  }
 `;
 
 const TitleText = styled.h6`
-font-size: ${(props) => { return props.fontSize; }};
-font-weight: ${(props) => { return props.fontWeight; }};
-color: inherit;
-line-height: normal;
-font-family: ${(props) => { return props.theme.typography.primary; }};
-letter-spacing: ${(props) => { return props.letterSpacing; }};
+  font-size: ${(props) => { return props.fontSize; }};
+  font-weight: ${(props) => { return props.fontWeight; }};
+  color: inherit;
+  line-height: normal;
+  font-family: ${(props) => { return props.theme.typography.primary; }};
+  letter-spacing: ${(props) => { return props.letterSpacing; }};
 `;
 
 const Paragraph = styled.p`
-font-size: ${(props) => { return props.fontSize; }};
-font-weight: ${(props) => { return props.fontWeight; }};
-color: inherit;
-line-height: normal;
-font-family: ${(props) => { return props.theme.typography.primary; }};
-letter-spacing: ${(props) => { return props.letterSpacing; }};
+  font-size: ${(props) => { return props.fontSize; }};
+  font-weight: ${(props) => { return props.fontWeight; }};
+  color: inherit;
+  line-height: normal;
+  font-family: ${(props) => { return props.theme.typography.primary; }};
+  letter-spacing: ${(props) => { return props.letterSpacing; }};
 `;
 
 
 function Title({
-  text, size, weight, children,
+  children, className, size, text, weight,
 }) {
   const sizeHash = {
     "6x": {
@@ -119,6 +119,7 @@ function Title({
   return (
     <TitleText
       as={as}
+      className={className}
       fontSize={fontSize}
       fontWeight={fontWeight}
       letterSpacing={letterSpacing}
@@ -130,7 +131,7 @@ function Title({
 
 
 function Link({
-  text, onClick, href, target, disabled, size, weight, children,
+  children, className, disabled, href, onClick, size, target, text, weight,
 }) {
   const sizeHash = {
     "4x": {
@@ -167,12 +168,13 @@ function Link({
 
   return (
     <LinkText
+      className={className}
+      fontSize={fontSize}
+      fontWeight={fontWeight}
       href={href}
       isDisabled={disabled}
-      onClick={onClick}
-      fontSize={fontSize}
       letterSpacing={letterSpacing}
-      fontWeight={fontWeight}
+      onClick={onClick}
       target={target}
     >
       {text || children}
@@ -182,7 +184,7 @@ function Link({
 
 
 function Text({
-  text, size, weight, children,
+  children, className, size, text, weight,
 }) {
   const sizeHash = {
     "4x": {
@@ -190,7 +192,7 @@ function Text({
       letterSpacing: "0px",
     },
     "3x": {
-      fontSize: "0.876em",
+      fontSize: "0.95em",
       letterSpacing: "0px",
     },
     "2x": {
@@ -203,7 +205,7 @@ function Text({
     },
   };
 
-  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.876em", letterSpacing: "0px" };
+  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.95em", letterSpacing: "0px" };
   const { fontSize, letterSpacing } = selectedSize;
 
   const weightHash = {
@@ -217,8 +219,9 @@ function Text({
 
   return (
     <Paragraph
-      fontWeight={fontWeight}
+      className={className}
       fontSize={fontSize}
+      fontWeight={fontWeight}
       letterSpacing={letterSpacing}
     >
       {text || children}
@@ -229,11 +232,12 @@ function Text({
 
 function Label({
   children,
+  className,
   htmlFor,
-  weight,
   isRequired,
   size,
   text,
+  weight,
 }) {
   const sizeHash = {
     "4x": {
@@ -268,10 +272,11 @@ function Label({
 
   return (
     <StyledLabel
-      fontWeight={fontWeight}
+      className={className}
       fontSize={fontSize}
-      isRequired={isRequired}
+      fontWeight={fontWeight}
       htmlFor={htmlFor}
+      isRequired={isRequired}
       letterSpacing={letterSpacing}
     >
       {text || children}
@@ -279,70 +284,77 @@ function Label({
   );
 }
 Label.propTypes = {
-  htmlFor: PropTypes.string,
   children: PropTypes.node,
-  weight: PropTypes.string,
+  className: PropTypes.string,
+  htmlFor: PropTypes.string,
   isRequired: PropTypes.bool,
   size: PropTypes.string,
   text: PropTypes.string,
+  weight: PropTypes.string,
 };
 Label.defaultProps = {
-  htmlFor: null,
   children: null,
-  weight: null,
+  className: null,
+  htmlFor: null,
   isRequired: false,
   size: null,
   text: null,
+  weight: null,
 };
 
-
 Title.propTypes = {
-  text: PropTypes.string,
   children: PropTypes.node,
+  className: PropTypes.string,
   size: PropTypes.string,
+  text: PropTypes.string,
   weight: PropTypes.string,
 };
 Title.defaultProps = {
-  text: null,
-  size: null,
-  weight: null,
   children: null,
+  className: null,
+  size: null,
+  text: null,
+  weight: null,
 };
 
 
 Text.propTypes = {
-  text: PropTypes.string,
   children: PropTypes.node,
+  className: PropTypes.string,
   size: PropTypes.string,
+  text: PropTypes.string,
   weight: PropTypes.string,
 };
 Text.defaultProps = {
-  text: null,
-  size: null,
-  weight: null,
   children: null,
+  className: null,
+  size: null,
+  text: null,
+  weight: null,
 };
 
 
 Link.propTypes = {
-  text: PropTypes.string,
   children: PropTypes.node,
-  target: PropTypes.string,
+  className: PropTypes.string,
+  disabled: PropTypes.bool,
+  href: PropTypes.string,
   onClick: PropTypes.func,
   size: PropTypes.string,
+  target: PropTypes.string,
+  text: PropTypes.string,
   weight: PropTypes.string,
-  href: PropTypes.string,
-  disabled: PropTypes.bool,
 };
 Link.defaultProps = {
-  text: null,
-  target: null,
-  onClick: null,
-  href: null,
-  disabled: false,
-  size: null,
-  weight: null,
   children: null,
+  className: null,
+  disabled: false,
+  href: null,
+  onClick: null,
+  size: null,
+  target: null,
+  text: null,
+  weight: null,
 };
 
 

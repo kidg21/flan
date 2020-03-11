@@ -10,10 +10,10 @@ export {
 export { default as GlobalStyles } from "./base/GlobalStyles/GlobalStyles.jsx";
 
 // Publicly exported files from 'atoms'
+export { default as Accordion } from "./atoms/Accordion";
 export { default as Avatar } from "./atoms/Avatar";
-export { default as Loader } from "./atoms/Loader";
 export { default as Badge } from "./atoms/Badge";
-export { default as Button } from "./atoms/Button";
+export { default as Button, ButtonGroup } from "./atoms/Button";
 export { default as Calendar } from "./atoms/Calendar";
 export { default as Checkbox, CheckboxGroup } from "./atoms/Checkbox";
 export { default as Command } from "./atoms/Command";
@@ -21,6 +21,7 @@ export { default as Container } from "./atoms/Container";
 export { default as Divider } from "./atoms/Divider";
 export { default as Icon } from "./atoms/Icon";
 export { default as Image } from "./atoms/Image";
+export { default as Loader } from "./atoms/Loader";
 export { default as Radio, RadioGroup } from "./atoms/Radio";
 export { default as SelectMenu } from "./atoms/SelectMenu";
 export { default as Slider } from "./atoms/Slider";
@@ -43,12 +44,15 @@ export { default as RangeSlider } from "./blocks/RangeSlider";
 export { default as Table } from "./blocks/Table";
 export { default as Tabs, Tab } from "./blocks/Tabs";
 export { CardList } from "./blocks/List";
+export { Surface } from "./blocks/Surface";
+export { SummaryPanelTemplate } from "./blocks/Surface/SurfaceTemplates";
 
 // Publicly exported files from 'elements'
 export { default as Card, CardSection, CardGrid } from "./elements/Card";
 export { default as MainPanelHeader } from "./elements/PanelHeaders/MainPanelHeader";
 export { default as PropertyPanelHeader } from "./elements/PanelHeaders/PropertyPanelHeader";
 export { default as NavigationPanelHeader } from "./elements/PanelHeaders/NavigationPanelHeader";
+export { default as Picker, ColorSwatch } from "./elements/Picker";
 export { default as ProgressBar, Step } from "./elements/Progress";
 export { default as Notification } from "./elements/Notification";
 export { UserRoles, RolePermissions } from "./elements/UserRoles";
@@ -63,7 +67,6 @@ export { default as Modal } from "./layout/Modal";
 export { default as Page } from "./layout/Page";
 export { default as Panel } from "./layout/Panel";
 export { default as Template } from "./layout/Template";
-
 export { default as Expander } from "./utils/Expander";
 
 export {

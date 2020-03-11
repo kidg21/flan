@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { DisabledContext } from "States";
 import Icon from "atoms/Icon";
-import { Link } from "base/Typography";
+import { Label } from "base/Typography";
 
 const CommandContainer = styled.a`
   display: ${(props) => {
@@ -23,27 +23,33 @@ const CommandContainer = styled.a`
   justify-items: ${(props) => {
     return props.justifyIcon || "";
   }};
-  align-items: center;
   font-size: ${(props) => {
     return props.commandSize || "";
   }};
   color: ${(props) => {
     return props.theme.text[props.commandColor] || props.theme.text.link;
   }};
+  max-width: max-content;
   user-select: none;
   cursor: ${(props) => {
-    return props.isDisabled ? "not-allowed" : "";
+    return props.isDisabled ? "not-allowed" : "pointer";
   }};
   pointer-events: ${(props) => {
     return props.isDisabled ? "none" : "";
   }};
+  &:hover { 
+    color: ${(props) => {
+    return props.theme.palette.action100;
+  }};
+  }
 `;
 
-const CommandName = styled(Link)`
+const CommandName = styled(Label)`
   grid-area: name;
   font-size: inherit;
+  font-weight: 700;
+  letter-spacing: 1px;
   color: inherit;
-  line-height: inherit;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -56,6 +62,7 @@ const CommandName = styled(Link)`
     outline: none;
   }
   cursor: pointer;
+  transition: all 0.25s ease-in-out;
 `;
 
 const CommandIcon = styled(Icon)`

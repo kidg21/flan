@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <ul
+    className="Progress__Container-pxi9hw-1 ijZjmM"
+    id={null}
+  >
+    <li
+      className="Progress__StepItem-pxi9hw-0 djFafc"
+      id={null}
+    >
+      <div
+        className="Progress__ItemContainer-pxi9hw-2 gjnABh"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          Task
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+          fontSize="0.95em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          this is what you do
+        </p>
+      </div>
+    </li>
+    <li
+      className="Progress__StepItem-pxi9hw-0 djFafc"
+      id={null}
+    >
+      <div
+        className="Progress__ItemContainer-pxi9hw-2 gjnABh"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          Task
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+          fontSize="0.95em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          this is what you do
+        </p>
+      </div>
+    </li>
+    <li
+      className="Progress__StepItem-pxi9hw-0 bepUrb"
+      id={null}
+    >
+      <div
+        className="Progress__ItemContainer-pxi9hw-2 gjnABh"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          Task
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+          fontSize="0.95em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          this is what you do
+        </p>
+      </div>
+    </li>
+    <li
+      className="Progress__StepItem-pxi9hw-0 hGunIJ"
+      id={null}
+    >
+      <div
+        className="Progress__ItemContainer-pxi9hw-2 gjnABh"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          Task
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+          fontSize="0.95em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          this is what you do
+        </p>
+      </div>
+    </li>
+    <li
+      className="Progress__StepItem-pxi9hw-0 hGunIJ"
+      id={null}
+    >
+      <div
+        className="Progress__ItemContainer-pxi9hw-2 gjnABh"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+          fontSize="1.05em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          Task
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+          fontSize="0.95em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          this is what you do
+        </p>
+      </div>
+    </li>
+  </ul>
+</div>
+`;

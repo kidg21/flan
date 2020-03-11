@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 eTxJUf"
+  id={null}
+  rows={null}
+>
+  <h1
+    className="Typography__TitleText-sc-19auepv-2 dHsQDS"
+    fontSize="2em"
+    fontWeight={400}
+    letterSpacing="0px"
+  >
+    6x Title
+  </h1>
+  <h2
+    className="Typography__TitleText-sc-19auepv-2 ilKhpI"
+    fontSize="1.65em"
+    fontWeight={400}
+    letterSpacing="0px"
+  >
+    5x Title
+  </h2>
+  <h3
+    className="Typography__TitleText-sc-19auepv-2 jRFrlq"
+    fontSize="1.45em"
+    fontWeight={400}
+    letterSpacing="0px"
+  >
+    4x Title
+  </h3>
+  <h4
+    className="Typography__TitleText-sc-19auepv-2 dzzrvg"
+    fontSize="1.25em"
+    fontWeight={400}
+    letterSpacing="0px"
+  >
+    3x Title
+  </h4>
+  <h5
+    className="Typography__TitleText-sc-19auepv-2 KxMwb"
+    fontSize="1.15em"
+    fontWeight={400}
+    letterSpacing="0px"
+  >
+    2x Title
+  </h5>
+  <h6
+    className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+    fontSize="1.05em"
+    fontWeight={400}
+    letterSpacing="0px"
+  >
+    1x Title
+  </h6>
+  <p
+    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+    fontSize="1em"
+    fontWeight={400}
+    letterSpacing="0px"
+  >
+    4x Text
+  </p>
+  <p
+    className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+    fontSize="0.95em"
+    fontWeight={400}
+    letterSpacing="0px"
+  >
+    3x Text
+  </p>
+  <p
+    className="Typography__Paragraph-sc-19auepv-3 CcLky"
+    fontSize="0.75em"
+    fontWeight={400}
+    letterSpacing="0.2px"
+  >
+    2x Text
+  </p>
+  <p
+    className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
+    fontSize="0.65em"
+    fontWeight={400}
+    letterSpacing="0.6px"
+  >
+    1x Text
+  </p>
+  <label
+    className="Typography__StyledLabel-sc-19auepv-0 hQqKTL"
+    fontSize="1em"
+    fontWeight={400}
+    htmlFor={null}
+    letterSpacing="0px"
+  >
+    Label
+  </label>
+  <label
+    className="Typography__StyledLabel-sc-19auepv-0 Jgtkr"
+    fontSize="0.876em"
+    fontWeight={400}
+    htmlFor={null}
+    letterSpacing="0px"
+  >
+    Label
+  </label>
+  <label
+    className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
+    fontSize="0.82em"
+    fontWeight={400}
+    htmlFor={null}
+    letterSpacing="0px"
+  >
+    Label
+  </label>
+  <label
+    className="Typography__StyledLabel-sc-19auepv-0 fCBoVL"
+    fontSize="0.65em"
+    fontWeight={400}
+    htmlFor={null}
+    letterSpacing="0.6px"
+  >
+    Label
+  </label>
+  <a
+    className="Typography__LinkText-sc-19auepv-1 fLIgSj"
+    fontSize="inherit"
+    fontWeight={600}
+    href={null}
+    letterSpacing="0px"
+    onClick={null}
+    target={null}
+  >
+    this is a link
+  </a>
+</section>
+`;
