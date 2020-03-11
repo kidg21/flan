@@ -6,21 +6,18 @@ import { Lighten, Darken } from "Variables";
 
 const SliderPiece = styled.input.attrs({ type: "range" })`
   height: 2px;
-  background: #d3d3d3;
+  background: ${(props) => {
+    return props.theme.palette.neutral60;
+  }};
   outline: none;
   transition: opacity 0.2s;
   -webkit-appearance: none;
-  &::-webkit-slider-runnable-track {
-    -webkit-appearance: none;
-    background: black;
-    height: 2px;
-  }
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 1.5em;
     height: 1.5em;
     border: 1px solid;
-    margin-top: -8px;
+    margin-top: -4px;
     border-color: ${(props) => {
     return props.error ? props.theme.palette.alert60 : props.theme.palette.selected;
   }};
