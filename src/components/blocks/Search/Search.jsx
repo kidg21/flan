@@ -19,19 +19,22 @@ position: fixed;
 `;
 
 
+
 function Search({
   id, error, results, onSearch, placeholder,
 }) {
+
   const errorHash = {
     connection: "Check your internet connection",
     offline: "You are offline",
   };
+  
+  const DEFAULT_ERR_MSG = "We recommend the following based on your key word search";
 
-
-  const msg = errorHash[error] || "We recommend the following based on your key word search";
+  const msg = errorHash[error && error.toLowerCase()] || DEFAULT_ERR_MSG;
   const message = (
     <React.Fragment>
-      {error ? <Bar padding="2x" center={<Icon icon="signal_none" size="3x" />} /> : null}
+      {msg !== DEFAULT_ERR_MSG ? <Bar padding="2x" center={<Icon icon="signal_none" size="3x" />} /> : null}
       <Bar padding="2x" center={<Text text={msg} />} />
     </React.Fragment>
   );
