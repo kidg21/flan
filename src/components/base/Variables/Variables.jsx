@@ -104,6 +104,10 @@ export const shadows = {
     ${colors.shade6} 0 0 1px,
     ${colors.shade5} 0.2rem 0.2rem 0.25rem
     `,
+  outerShadow: `
+    ${colors.shade6} 0 0 1px 0,
+    ${colors.shade4} 0 0 0.5rem 0.25rem
+  `,
   innerShadow: `
     ${colors.shade4} 0 1px 0 0 inset,
     ${colors.shade8} 0 0.35rem 0.5rem -0.35rem inset,
