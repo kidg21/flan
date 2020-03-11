@@ -297,11 +297,8 @@ function SelectMenu({
     >
       {label ? <Label size="2x" isRequired={isRequired} text={label} /> : null}
       {select}
-      {/* Help Text */}
       {helpText ? <Text size="1x" text={helpText} /> : null}
-      {/* Error Message (required) */}
-      {error ? <Text size="1x" text={error} /> : null}
-      {warning ? <MessageContainer messageColor={messageColor}><Text size="1x" text={warning} /></MessageContainer> : null}
+      {error || warning ? <MessageContainer messageColor={messageColor}><Text size="1x" text={error || warning} /></MessageContainer> : null}
     </SelectMenuContainer>
   );
 }

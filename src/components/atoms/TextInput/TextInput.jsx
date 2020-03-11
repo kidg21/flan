@@ -223,8 +223,7 @@ function TextInput({
       {autocompleteDataList}
       {helpText ? <Text size="1x" text={helpText} /> : null}
       {children}
-      {error ? <MessageContainer messageColor={messageColor}><Text size="1x" text={error} /></MessageContainer> : null}
-      {warning ? <MessageContainer messageColor={messageColor}><Text size="1x" text={warning} /></MessageContainer> : null}
+      {error || warning ? <MessageContainer messageColor={messageColor}><Text size="1x" text={error || warning} /></MessageContainer> : null}
     </TextInputContainer>
   );
 }

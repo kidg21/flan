@@ -4,8 +4,6 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
-import { DisabledContext } from "States";
-import Text, { Label } from "base/Typography";
 import TextInput from "atoms/TextInput";
 import { getGuid } from "helpers";
 
