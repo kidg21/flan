@@ -18,8 +18,6 @@ const DropContainer = styled(Container)`
 position: fixed;
 `;
 
-
-
 function Search({
   id, error, results, onSearch, placeholder,
 }) {
@@ -31,7 +29,7 @@ function Search({
   
   const DEFAULT_ERR_MSG = "We recommend the following based on your key word search";
 
-  const msg = errorHash[error && error.toLowerCase()] || DEFAULT_ERR_MSG;
+  const msg = errorHash[error] || DEFAULT_ERR_MSG;
   const message = (
     <React.Fragment>
       {msg !== DEFAULT_ERR_MSG ? <Bar padding="2x" center={<Icon icon="signal_none" size="3x" />} /> : null}
@@ -57,7 +55,7 @@ function Search({
         <Button icon="search" solid onClick={onSearch} />
         {/* <Button icon="more" plain /> */}
       </Grid>
-      { error || results ? <Grid columns="9fr .5fr"> <DropContainer maxHeight="24rem" > { Body }</DropContainer></Grid> : null}
+      { error || results ? <Grid columns="9fr .5fr"> <DropContainer maxHeight="22rem" > { Body }</DropContainer></Grid> : null}
       {/* { advance ? <Advanced inputs={inputs} /> : null} */}
     </Grid>
   );
@@ -66,7 +64,7 @@ function Search({
 Search.propTypes = {
   id: PropTypes.string,
   results: PropTypes.node,
-  error: PropTypes.node,
+  error: PropTypes.string,
   onSearch: PropTypes.func,
   placeholder: PropTypes.string,
 };

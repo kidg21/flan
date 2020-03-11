@@ -72,11 +72,11 @@ const BoxContainer = styled.div`
 `;
 
 const Container = React.forwardRef(({
-  id, height, width, padding, border, children,
+  id, height, width, maxHeight, padding, border, children,
 }, ref) => {
   return (
     <Wrapper padding={padding} height={height} width={width}>
-      <BoxContainer id={id} height={height ? "100%" : ""} border={border} ref={ref}>
+      <BoxContainer id={id} height={height ? "100%" : ""} maxHeight={maxHeight} border={border} ref={ref}>
         {children}
       </BoxContainer>
     </Wrapper>
