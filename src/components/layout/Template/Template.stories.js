@@ -1,6 +1,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
+import { viewport } from "Variables";
 import LightBoxIcon from "images/LightBoxIconLogo.png";
 import Panel from "layout/Panel";
 import DataTable from "blocks/Table";
@@ -13,10 +14,36 @@ import Command from "atoms/Command";
 import Icon from "atoms/Icon";
 import Bar from "blocks/Bar";
 import IconBlock from "blocks/IconBlock";
-import Template from "./Template.jsx";
+import Card, { CardGrid } from "elements/Card";
+import Template from "layout/Template.jsx";
 
 const map = (
   <Mapbox />
+);
+
+const listPanel = (
+  <Panel
+    id="Panel"
+  >
+    <List interactive>
+      <ListItem title="Layers" />
+      <ListItem title="Results" />
+      <ListItem title="Form" />
+      <ListItem title="Research" />
+    </List>
+  </Panel>
+);
+
+const infoPanel = (
+  <Card
+    media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" // Image
+    mediaDesc="Media Description"
+    title="Card Title"
+    description="Card Description"
+    icon="bookmark_solid"
+    body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    shadow="none"
+  />
 );
 
 const tableHeaders = [
@@ -109,28 +136,15 @@ const dataTable = (
   />
 );
 
-const listPanel = (
-  <Panel
-    id="Panel"
-  >
-    <List interactive>
-      <ListItem title="Layers" />
-      <ListItem title="Results" />
-      <ListItem title="Form" />
-      <ListItem title="Research" />
-    </List>
-  </Panel>
-);
-
-storiesOf("Layout |Templates/Template A/", module)
+storiesOf("Template |Templates/Template A/", module)
   .add(
     "Base",
     () => {
       return React.createElement(() => {
-        const [rightOpen, setRightOpen] = useState(false);
-        const seeRightRegion = () => { setRightOpen(!rightOpen); };
         const [leftOpen, setLeftOpen] = useState(false);
         const seeLeftRegion = () => { setLeftOpen(!leftOpen); };
+        const [rightOpen, setRightOpen] = useState(false);
+        const seeRightRegion = () => { setRightOpen(!rightOpen); };
         const [bottomOpen, setBottomOpen] = useState(false);
         const seeBottomRegion = () => { setBottomOpen(!bottomOpen); };
         return (
@@ -170,7 +184,7 @@ storiesOf("Layout |Templates/Template A/", module)
             }}
             main={{ content: map }}
             right={{
-              content: listPanel,
+              content: infoPanel,
               toggle: seeRightRegion,
               visible: rightOpen,
             }}
