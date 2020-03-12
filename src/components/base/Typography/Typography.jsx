@@ -192,8 +192,8 @@ function Text({
       letterSpacing: "0px",
     },
     "3x": {
-      fontSize: "0.90em",
-      letterSpacing: "0.5px",
+      fontSize: "0.95em",
+      letterSpacing: "0px",
     },
     "2x": {
       fontSize: "0.75em",
@@ -205,7 +205,7 @@ function Text({
     },
   };
 
-  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.90em", letterSpacing: "0.5px" };
+  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.95em", letterSpacing: "0px" };
   const { fontSize, letterSpacing } = selectedSize;
 
   const weightHash = {

@@ -3,9 +3,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Text, { Title } from "base/Typography";
+import Text, { Title, Link } from "base/Typography";
 import { SkeletonStatic } from "helpers";
 
+const LegendTitle = styled(Title)`
+padding-bottom: .5rem;
+`;
 
 const Wrapper = styled.div`
   display: block;
@@ -82,9 +85,13 @@ function Legend({
 
   return (
     <Wrapper id={id}>
-      {title ? <Title text={title} /> : null}
+      {title ? <LegendTitle weight="bold" text={title} /> : null}
       <TableContainer id={id}>
         {data.map((row) => {
+          let rowValue = row.value;
+          if (row.onClick) {
+            rowValue = (<Link onClick={row.onClick} text={row.value} />);
+          }
           return (
             <Row key={row.id}>
               <Cell
@@ -103,7 +110,7 @@ function Legend({
                 fontWeight={fontWeight}
                 fontSize={fontSize}
               >
-                <Text weight="bold" text={row.value} />
+                <Text text={rowValue} />
               </Cell>
             </Row>
           );
