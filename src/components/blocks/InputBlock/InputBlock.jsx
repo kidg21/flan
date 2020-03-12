@@ -18,6 +18,12 @@ const TextInputContainer = styled(Grid)`
   width: 100%;
 `;
 
+const MessageContainer = styled.section`
+color: ${(props) => {
+  return props.theme.text[props.messageColor] || props.theme.text.secondary;
+}};
+`;
+
 function InputBlock({
   button,
   className,
@@ -74,12 +80,14 @@ function InputBlock({
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let inputTextColor;
+  let messageColor;
   let errorText;
   if (error && !isDisabled) {
     inputTextColor = "alert";
+    messageColor = "alert";
     errorText = typeof error === "string" ? error : "";
   } else if (warning && !isDisabled) {
-    inputTextColor = "warning";
+    messageColor = "alert";
     errorText = typeof warning === "string" ? warning : "";
   }
   const inputElements = textInputs.map((input) => {
@@ -200,7 +208,7 @@ function InputBlock({
         {label ? <Label size="2x" isRequired={isRequired} text={label} /> : null}
         {inputContainer}
         {helpText ? <Text size="1x" text={helpText} /> : null}
-        {errorText ? <Text size="1x" text={errorText} /> : null}
+        {errorText ? <MessageContainer messageColor={messageColor}> <Text size="1x" text={errorText} /> </MessageContainer> : null}
       </TextInputContainer>
     </DisabledContext.Provider>
   );

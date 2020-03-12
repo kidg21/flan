@@ -2,172 +2,6 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 eZgQkC"
-  id={null}
-  rows={null}
->
-  <div
-    className="Tag__TagContainer-sc-128kb3h-0 jDTvba"
-    id={null}
-    label="Tag life"
-    style={null}
-  >
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-      fontSize="0.75em"
-      fontWeight={600}
-      letterSpacing="0.2px"
-    >
-      Tag life
-    </p>
-  </div>
-   
-  <div
-    className="Tag__TagContainer-sc-128kb3h-0 jDTvba"
-    id={null}
-    label="Tag life"
-    style={null}
-  >
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-      fontSize="0.75em"
-      fontWeight={600}
-      letterSpacing="0.2px"
-    >
-      Tag life
-    </p>
-  </div>
-   
-  <div
-    className="Tag__TagContainer-sc-128kb3h-0 jDTvba"
-    id={null}
-    label="Tag life"
-    style={null}
-  >
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-      fontSize="0.75em"
-      fontWeight={600}
-      letterSpacing="0.2px"
-    >
-      Tag life
-    </p>
-  </div>
-   
-  <div
-    className="Tag__TagContainer-sc-128kb3h-0 jDTvba"
-    id={null}
-    label="Tag life"
-    style={null}
-  >
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-      fontSize="0.75em"
-      fontWeight={600}
-      letterSpacing="0.2px"
-    >
-      Tag life
-    </p>
-  </div>
-  <div
-    className="Tag__TagContainer-sc-128kb3h-0 jDTvba"
-    id={null}
-    label="Tag life"
-    style={null}
-  >
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-      fontSize="0.75em"
-      fontWeight={600}
-      letterSpacing="0.2px"
-    >
-      Tag life
-    </p>
-  </div>
-   
-  <div
-    className="Tag__TagContainer-sc-128kb3h-0 jDTvba"
-    id={null}
-    label="Tag life"
-    style={null}
-  >
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-      fontSize="0.75em"
-      fontWeight={600}
-      letterSpacing="0.2px"
-    >
-      Tag life
-    </p>
-  </div>
-  <div
-    className="Tag__TagContainer-sc-128kb3h-0 jDTvba"
-    id={null}
-    label="Info"
-    style={null}
-  >
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-      fontSize="0.75em"
-      fontWeight={600}
-      letterSpacing="0.2px"
-    >
-      Info
-    </p>
-  </div>
-   
-  <div
-    className="Tag__TagContainer-sc-128kb3h-0 dzizyc"
-    id={null}
-    label="Warning"
-    style={null}
-  >
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-      fontSize="0.75em"
-      fontWeight={600}
-      letterSpacing="0.2px"
-    >
-      Warning
-    </p>
-  </div>
-  <div
-    className="Tag__TagContainer-sc-128kb3h-0 iaJSbE"
-    id={null}
-    label="Success"
-    style={null}
-  >
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-      fontSize="0.75em"
-      fontWeight={600}
-      letterSpacing="0.2px"
-    >
-      Success
-    </p>
-  </div>
-   
-  <div
-    className="Tag__TagContainer-sc-128kb3h-0 dPJEzp"
-    id={null}
-    label="Alert"
-    style={null}
-  >
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-      fontSize="0.75em"
-      fontWeight={600}
-      letterSpacing="0.2px"
-    >
-      Alert
-    </p>
-  </div>
-   
-</section>
-`;
-
-exports[` 2`] = `
-<section
   className="Grid__GridWrapper-sc-1ntp7gx-0 ihnaIG"
   id={null}
   rows={null}
@@ -190,7 +24,7 @@ exports[` 2`] = `
 </section>
 `;
 
-exports[` 3`] = `
+exports[` 2`] = `
 Array [
   <div
     className="Bar__BarLayout-sc-1c4axau-2 hVthby"
@@ -291,7 +125,7 @@ Array [
 ]
 `;
 
-exports[` 4`] = `
+exports[` 3`] = `
 <section
   className="Grid__GridWrapper-sc-1ntp7gx-0 ihnaIG"
   id={null}
@@ -360,7 +194,7 @@ exports[` 4`] = `
 </section>
 `;
 
-exports[` 5`] = `
+exports[` 4`] = `
 <section
   className="Grid__GridWrapper-sc-1ntp7gx-0 ihnaIG"
   id={null}

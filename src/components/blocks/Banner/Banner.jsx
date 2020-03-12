@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable security/detect-object-injection */
-import React from "react";
+import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Grid from "layout/Grid";
@@ -46,9 +46,10 @@ function Banner({
   let bannerType;
   const iconValue = icon || iconHash[type && type.toLowerCase()];
   if (iconValue) {
-    bannerType = (
-      <Avatar type={type} icon={iconValue} size="2x" fixedWidth />
-    );
+    bannerType = {
+      content: <Avatar type={type} icon={iconValue} size="2x" fixedWidth />,
+      width: "max-content",
+    };
   }
 
   return (
@@ -56,10 +57,7 @@ function Banner({
       <Bar
         contentAlign={description || link ? "" : "center"}
         padding="none"
-        left={{
-          content: bannerType,
-          width: "max-content",
-        }}
+        left={bannerType}
         center={{
           content: (
             <Grid columns="1" gap="tiny">
