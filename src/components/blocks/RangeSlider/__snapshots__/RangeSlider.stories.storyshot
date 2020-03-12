@@ -105,6 +105,7 @@ exports[` 1`] = `
       className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
       fontSize="0.65em"
       fontWeight={400}
+      id={null}
       letterSpacing="0.6px"
     >
       Hang in there, buddy, I'm here to help!
@@ -218,6 +219,7 @@ exports[` 2`] = `
       className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
       fontSize="0.65em"
       fontWeight={400}
+      id={null}
       letterSpacing="0.6px"
     >
       Help text goes here...
@@ -342,6 +344,7 @@ exports[` 3`] = `
           className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
           fontSize="0.65em"
           fontWeight={400}
+          id={null}
           letterSpacing="0.6px"
         >
           Hang in there, buddy, I'm here to help!
@@ -444,6 +447,7 @@ exports[` 3`] = `
           className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
           fontSize="0.65em"
           fontWeight={400}
+          id={null}
           letterSpacing="0.6px"
         >
           Hang in there, buddy, I'm here to help!
@@ -546,6 +550,7 @@ exports[` 3`] = `
           className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
           fontSize="0.65em"
           fontWeight={400}
+          id={null}
           letterSpacing="0.6px"
         >
           Hang in there, buddy, I'm here to help!

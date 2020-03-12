@@ -3,6 +3,7 @@
 exports[` 1`] = `
 <div
   className="Loader__Chase-codnj1-1 fESJsW"
+  id={null}
 >
   <div
     className="Loader__Dot-codnj1-2 iflaQM"
@@ -27,9 +28,11 @@ exports[` 2`] = `
 >
   <div
     className="Loader__Fill-codnj1-0 bCvLPp"
+    id={null}
   />
   <div
     className="Loader__Chase-codnj1-1 fESJsW"
+    id={null}
   >
     <div
       className="Loader__Dot-codnj1-2 iflaQM"

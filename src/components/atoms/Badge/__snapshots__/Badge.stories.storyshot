@@ -32,6 +32,7 @@ exports[` 1`] = `
             className="Typography__Paragraph-sc-19auepv-3 eGFGis"
             fontSize="0.75em"
             fontWeight={600}
+            id={null}
             letterSpacing="0.2px"
           >
             1
@@ -42,6 +43,7 @@ exports[` 1`] = `
         className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
         fontSize="0.95em"
         fontWeight={400}
+        id={null}
         letterSpacing="0px"
       >
         Badge
@@ -83,6 +85,7 @@ exports[` 2`] = `
             className="Typography__Paragraph-sc-19auepv-3 eGFGis"
             fontSize="0.75em"
             fontWeight={600}
+            id={null}
             letterSpacing="0.2px"
           >
             1
@@ -93,6 +96,7 @@ exports[` 2`] = `
         className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
         fontSize="0.95em"
         fontWeight={400}
+        id={null}
         letterSpacing="0px"
       >
         1-Digit
@@ -125,6 +129,7 @@ exports[` 2`] = `
             className="Typography__Paragraph-sc-19auepv-3 eGFGis"
             fontSize="0.75em"
             fontWeight={600}
+            id={null}
             letterSpacing="0.2px"
           >
             21
@@ -135,6 +140,7 @@ exports[` 2`] = `
         className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
         fontSize="0.95em"
         fontWeight={400}
+        id={null}
         letterSpacing="0px"
       >
         2-Digit
@@ -167,6 +173,7 @@ exports[` 2`] = `
             className="Typography__Paragraph-sc-19auepv-3 eGFGis"
             fontSize="0.75em"
             fontWeight={600}
+            id={null}
             letterSpacing="0.2px"
           >
             321
@@ -177,6 +184,7 @@ exports[` 2`] = `
         className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
         fontSize="0.95em"
         fontWeight={400}
+        id={null}
         letterSpacing="0px"
       >
         3-Digit
@@ -209,6 +217,7 @@ exports[` 2`] = `
             className="Typography__Paragraph-sc-19auepv-3 eGFGis"
             fontSize="0.75em"
             fontWeight={600}
+            id={null}
             letterSpacing="0.2px"
           >
             4321
@@ -219,6 +228,7 @@ exports[` 2`] = `
         className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
         fontSize="0.95em"
         fontWeight={400}
+        id={null}
         letterSpacing="0px"
       >
         4-Digit
@@ -260,6 +270,7 @@ exports[` 3`] = `
             className="Typography__Paragraph-sc-19auepv-3 eGFGis"
             fontSize="0.75em"
             fontWeight={600}
+            id={null}
             letterSpacing="0.2px"
           >
             9+
@@ -270,6 +281,7 @@ exports[` 3`] = `
         className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
         fontSize="0.95em"
         fontWeight={400}
+        id={null}
         letterSpacing="0px"
       >
         Max 10
@@ -302,6 +314,7 @@ exports[` 3`] = `
             className="Typography__Paragraph-sc-19auepv-3 eGFGis"
             fontSize="0.75em"
             fontWeight={600}
+            id={null}
             letterSpacing="0.2px"
           >
             99+
@@ -312,6 +325,7 @@ exports[` 3`] = `
         className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
         fontSize="0.95em"
         fontWeight={400}
+        id={null}
         letterSpacing="0px"
       >
         Max 100
@@ -344,6 +358,7 @@ exports[` 3`] = `
             className="Typography__Paragraph-sc-19auepv-3 eGFGis"
             fontSize="0.75em"
             fontWeight={600}
+            id={null}
             letterSpacing="0.2px"
           >
             999+
@@ -354,6 +369,7 @@ exports[` 3`] = `
         className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
         fontSize="0.95em"
         fontWeight={400}
+        id={null}
         letterSpacing="0px"
       >
         Max 1000
@@ -386,6 +402,7 @@ exports[` 3`] = `
             className="Typography__Paragraph-sc-19auepv-3 eGFGis"
             fontSize="0.75em"
             fontWeight={600}
+            id={null}
             letterSpacing="0.2px"
           >
             9999+
@@ -396,6 +413,7 @@ exports[` 3`] = `
         className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
         fontSize="0.95em"
         fontWeight={400}
+        id={null}
         letterSpacing="0px"
       >
         Max 10k
@@ -437,6 +455,7 @@ exports[` 4`] = `
             className="Typography__Paragraph-sc-19auepv-3 eGFGis"
             fontSize="0.75em"
             fontWeight={600}
+            id={null}
             letterSpacing="0.2px"
           >
             Info
@@ -447,6 +466,7 @@ exports[` 4`] = `
         className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
         fontSize="0.95em"
         fontWeight={400}
+        id={null}
         letterSpacing="0px"
       >
         Info
@@ -479,6 +499,7 @@ exports[` 4`] = `
             className="Typography__Paragraph-sc-19auepv-3 eGFGis"
             fontSize="0.75em"
             fontWeight={600}
+            id={null}
             letterSpacing="0.2px"
           >
             Success
@@ -489,6 +510,7 @@ exports[` 4`] = `
         className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
         fontSize="0.95em"
         fontWeight={400}
+        id={null}
         letterSpacing="0px"
       >
         Success
@@ -521,6 +543,7 @@ exports[` 4`] = `
             className="Typography__Paragraph-sc-19auepv-3 eGFGis"
             fontSize="0.75em"
             fontWeight={600}
+            id={null}
             letterSpacing="0.2px"
           >
             Warning
@@ -531,6 +554,7 @@ exports[` 4`] = `
         className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
         fontSize="0.95em"
         fontWeight={400}
+        id={null}
         letterSpacing="0px"
       >
         Warning
@@ -563,6 +587,7 @@ exports[` 4`] = `
             className="Typography__Paragraph-sc-19auepv-3 eGFGis"
             fontSize="0.75em"
             fontWeight={600}
+            id={null}
             letterSpacing="0.2px"
           >
             Alert
@@ -573,6 +598,7 @@ exports[` 4`] = `
         className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
         fontSize="0.95em"
         fontWeight={400}
+        id={null}
         letterSpacing="0px"
       >
         Alert
@@ -614,6 +640,7 @@ exports[` 5`] = `
             className="Typography__Paragraph-sc-19auepv-3 eGFGis"
             fontSize="0.75em"
             fontWeight={600}
+            id={null}
             letterSpacing="0.2px"
           >
             1
@@ -624,6 +651,7 @@ exports[` 5`] = `
         className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
         fontSize="0.95em"
         fontWeight={400}
+        id={null}
         letterSpacing="0px"
       >
         Top-Left
@@ -656,6 +684,7 @@ exports[` 5`] = `
             className="Typography__Paragraph-sc-19auepv-3 eGFGis"
             fontSize="0.75em"
             fontWeight={600}
+            id={null}
             letterSpacing="0.2px"
           >
             1
@@ -666,6 +695,7 @@ exports[` 5`] = `
         className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
         fontSize="0.95em"
         fontWeight={400}
+        id={null}
         letterSpacing="0px"
       >
         Bottom-Left
@@ -698,6 +728,7 @@ exports[` 5`] = `
             className="Typography__Paragraph-sc-19auepv-3 eGFGis"
             fontSize="0.75em"
             fontWeight={600}
+            id={null}
             letterSpacing="0.2px"
           >
             1
@@ -708,6 +739,7 @@ exports[` 5`] = `
         className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
         fontSize="0.95em"
         fontWeight={400}
+        id={null}
         letterSpacing="0px"
       >
         Top-Right
@@ -740,6 +772,7 @@ exports[` 5`] = `
             className="Typography__Paragraph-sc-19auepv-3 eGFGis"
             fontSize="0.75em"
             fontWeight={600}
+            id={null}
             letterSpacing="0.2px"
           >
             1
@@ -750,6 +783,7 @@ exports[` 5`] = `
         className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
         fontSize="0.95em"
         fontWeight={400}
+        id={null}
         letterSpacing="0px"
       >
         Bottom-Right
