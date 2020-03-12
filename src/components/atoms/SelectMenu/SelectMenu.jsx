@@ -199,12 +199,14 @@ function SelectMenu({
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let textColor;
+  let errorText = "";
   let messageColor;
   if (isDisabled) {
     textColor = "disabled";
   } else if (error) {
     textColor = "alert";
     messageColor = "alert";
+    if (typeof error === "string") errorText = error;
   } else if (warning) {
     messageColor = "alert";
   }
@@ -298,7 +300,7 @@ function SelectMenu({
       {label ? <Label size="2x" isRequired={isRequired} text={label} /> : null}
       {select}
       {helpText ? <Text size="1x" text={helpText} /> : null}
-      {error || warning ? <MessageContainer messageColor={messageColor}><Text size="1x" text={error || warning} /></MessageContainer> : null}
+      {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="1x" text={errorText || warning} /></MessageContainer> : null}
     </SelectMenuContainer>
   );
 }

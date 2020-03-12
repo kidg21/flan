@@ -163,6 +163,7 @@ function TextInput({
   }
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  let errorText = "";
   if (isDisabled) {
     inputBorderColor = "neutral40";
     inputFillColor = "disabled";
@@ -174,6 +175,7 @@ function TextInput({
     inputSelectColor = "alert60";
     inputTextColor = "alert";
     placeholderColor = "secondary";
+    if (typeof error === "string") errorText = error;
   } else if (warning) {
     placeholderColor = "secondary";
     messageColor = "alert";
@@ -223,7 +225,7 @@ function TextInput({
       {autocompleteDataList}
       {helpText ? <Text size="1x" text={helpText} /> : null}
       {children}
-      {error || warning ? <MessageContainer messageColor={messageColor}><Text size="1x" text={error || warning} /></MessageContainer> : null}
+      {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="1x" text={errorText || warning} /></MessageContainer> : null}
     </TextInputContainer>
   );
 }
