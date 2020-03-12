@@ -211,7 +211,6 @@ exports[` 4`] = `
         <input
           checked={null}
           className="Checkbox__CheckboxInput-sc-1gwp7am-2 gkvbHL"
-          id="warning"
           onBlur={null}
           onChange={null}
           onFocus={null}
@@ -221,10 +220,8 @@ exports[` 4`] = `
           className="Typography__StyledLabel-sc-19auepv-0 Jgtkr"
           fontSize="0.876em"
           fontWeight={400}
-          htmlFor="warning"
           letterSpacing="0px"
         >
-          Warning
         </label>
       </div>
     </section>

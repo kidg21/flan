@@ -11,6 +11,13 @@ import Creatable from "react-select/creatable";
 import { Skeleton } from "helpers";
 import { DisabledContext } from "States";
 
+
+const MessageContainer = styled.section`
+color: ${(props) => {
+  return props.theme.text[props.messageColor] || props.theme.text.secondary;
+}};
+`;
+
 const selectStyles = {
   // Wrapper
   container: (styles) => {
@@ -193,14 +200,15 @@ function SelectMenu({
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let textColor;
   let errorText = "";
+  let messageColor;
   if (isDisabled) {
     textColor = "disabled";
   } else if (error) {
     textColor = "alert";
+    messageColor = "alert";
     if (typeof error === "string") errorText = error;
   } else if (warning) {
-    textColor = "warning";
-    errorText = warning;
+    messageColor = "alert";
   }
 
   let selectedOpts = [];
@@ -291,10 +299,8 @@ function SelectMenu({
     >
       {label ? <Label size="2x" isRequired={isRequired} text={label} /> : null}
       {select}
-      {/* Help Text */}
       {helpText ? <Text size="1x" text={helpText} /> : null}
-      {/* Error Message (required) */}
-      {errorText ? <Text size="1x" text={errorText} /> : null}
+      {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="1x" text={errorText || warning} /></MessageContainer> : null}
     </SelectMenuContainer>
   );
 }
@@ -338,7 +344,7 @@ SelectMenu.defaultProps = {
   label: null,
   isRequired: false,
   disabled: null,
-  error: null,
+  error: "",
   multiSelect: false,
   isClearable: true,
   isSearchable: true,
@@ -350,7 +356,7 @@ SelectMenu.defaultProps = {
   onBlur: null,
   onFocus: null,
   isCreatable: false,
-  warning: "",
+  warning: null,
 };
 
 export default SelectMenu;
