@@ -110,7 +110,7 @@ function MenuComponent({
       onClick={onClick}
       onMouseLeave={closeMenu}
     >
-      <Card shadow="1x">
+      <Card shadow="2x">
         <ListWrapper id={`listwrapper-${id}`} interactive>
           {data.map((item) => {
             // nested submenu

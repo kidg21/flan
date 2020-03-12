@@ -6,22 +6,39 @@ import Panel from "layout/Panel";
 import DataTable from "blocks/Table";
 import List, { ListItem } from "blocks/List";
 import Mapbox from "layout/Map";
-import { Title } from "base/Typography";
+import Text, { Title } from "base/Typography";
 import Avatar from "atoms/Avatar";
 import Command from "atoms/Command";
 import Icon from "atoms/Icon";
 import Bar from "blocks/Bar";
 import IconBlock from "blocks/IconBlock";
+import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
 import Card, { CardGrid } from "elements/Card";
 import Layout from "layout/Layout";
+import Page from "layout/Page";
 
 const map = (
   <Mapbox />
 );
 
+const menuData = [
+  { id: "a", label: "Save" },
+  { id: "b", label: "Filter" },
+  { id: "c", label: "Something" },
+  { id: "d", label: "Filter" },
+  { id: "e", label: "Layer" },
+];
+
+const panelHeader = (
+  <Card shadow="none">
+    <MainPanelHeader title="Menu Header" menuData={menuData} />
+  </Card>
+);
+
 const listPanel = (
   <Panel
-    id="Panel"
+    id="List Panel"
+    header={panelHeader}
   >
     <List interactive>
       <ListItem title="Layers" />
@@ -32,16 +49,47 @@ const listPanel = (
   </Panel>
 );
 
-const infoPanel = (
+const infoCard = (
   <Card
     media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" // Image
     mediaDesc="Media Description"
-    title="Card Title"
-    description="Card Description"
+    title="Best Place Ever"
+    description="I Could Tell You More, But..."
     icon="bookmark_solid"
-    body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     shadow="none"
   />
+);
+
+const infoPanel = (
+  <Panel
+    id="Info Panel"
+    header={infoCard}
+  >
+    <Page>
+      <Title
+        size="2x"
+        text="Fascinating Read..."
+      />
+      <Text
+        text="In your imagination you can go anywhere you want. Let's put some happy little clouds in our world. We'll throw some old gray clouds in here just sneaking around and having fun. Let's do that again."
+      />
+      <Text
+        text="This is where you take out all your hostilities and frustrations. It's better than kicking the puppy dog around and all that so. Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. These things happen automatically. All you have to do is just let them happen. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. Only eight colors that you need."
+      />
+      <Text
+        text="You want your tree to have some character. Make it special. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. We spend so much of our life looking - but never seeing."
+      />
+      <Text
+        text="We'll throw some happy little limbs on this tree. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Painting should do one thing. It should put happiness in your heart. Think about a cloud. Just float around and be there. In this world, everything can be happy."
+      />
+      <Text
+        text="Nice little fluffy clouds laying around in the sky being lazy. You need to have a very firm paint to do this. You have to allow the paint to break to make it beautiful."
+      />
+      <Text
+        text="A little happy sunlight shining through there. We're not trying to teach you a thing to copy. We're just here to teach you a technique, then let you loose into the world. There's nothing wrong with having a tree as a friend."
+      />
+    </Page>
+  </Panel>
 );
 
 const tableHeaders = [
@@ -136,7 +184,53 @@ const dataTable = (
 
 storiesOf("Layout|Layout/", module)
   .add(
-    "Base",
+    "Full",
+    () => {
+      return (
+        <Layout
+          // left={{
+          //   content: "",
+          // }}
+          main={{ content: "" }}
+        // right={{
+        //   content: "",
+        // }}
+        // bottom={{
+        //   content: "",
+        // }}
+        />
+      );
+    },
+  )
+  .add(
+    "With Fixed Header/Footer",
+    () => {
+      return (
+        <Layout
+          header={{
+            id: "Header",
+            content: "",
+          }}
+          left={{
+            content: "",
+          }}
+          main={{ content: "" }}
+          right={{
+            content: "",
+          }}
+          bottom={{
+            content: "",
+          }}
+          footer={{
+            id: "Footer",
+            content: "",
+          }}
+        />
+      );
+    },
+  )
+  .add(
+    "Full / Interactive (configured)",
     () => {
       return React.createElement(() => {
         const [leftOpen, setLeftOpen] = useState(false);
@@ -151,27 +245,33 @@ storiesOf("Layout|Layout/", module)
               id: "Header",
               content: (
                 <Bar
-                  padding="2x"
                   contentAlign="center"
-                  leftWidth="max-content"
-                  left={
-                    <Avatar
-                      image
-                      src={LightBoxIcon}
-                      alt="logo"
-                      onClick={seeLeftRegion}
-                    />
-                  }
-                  center={<Title text="Layout Component" />}
-                  rightWidth="max-content"
-                  right={
-                    <Command
-                      icon="right"
-                      label="Right"
-                      align="right"
-                      onClick={seeRightRegion}
-                    />
-                  }
+                  padding="2x"
+                  left={{
+                    content: (
+                      <Avatar
+                        image
+                        src={LightBoxIcon}
+                        alt="logo"
+                        onClick={seeLeftRegion}
+                      />
+                    ),
+                  }}
+                  center={{
+                    content: (
+                      <Title text="Header" />
+                    ),
+                  }}
+                  right={{
+                    content: (
+                      <Command
+                        icon="right"
+                        label="Toggle"
+                        align="right"
+                        onClick={seeRightRegion}
+                      />
+                    ),
+                  }}
                 />
               ),
             }}
@@ -195,15 +295,29 @@ storiesOf("Layout|Layout/", module)
               id: "Footer",
               content: (
                 <Bar
+                  contentAlign="center"
                   padding="2x"
-                  center={
-                    <Command
-                      icon="down"
-                      label="Bottom"
-                      align="Bottom"
-                      onClick={seeBottomRegion}
-                    />
-                  }
+                  left={{
+                    content: (
+                      <Title text="Footer" />
+                    ),
+                  }}
+                  center={{
+                    content: (
+                      <Command
+                        icon="down"
+                        label="Toggle"
+                        align="Bottom"
+                        onClick={seeBottomRegion}
+                      />
+                    ),
+                  }}
+                  /** Don't do this 'div workaround'.
+                  * TODO: We will address alignment issues in Bar
+                  */
+                  right={{
+                    content: <div />,
+                  }}
                 />
               ),
             }}
@@ -211,134 +325,4 @@ storiesOf("Layout|Layout/", module)
         );
       });
     },
-  )
-  .add(
-    "Configured Icons",
-    () => {
-      return React.createElement(() => {
-        const [rightOpen, setRightOpen] = useState(true);
-        const seeRightRegion = () => { setRightOpen(!rightOpen); };
-        const [leftOpen, setLeftOpen] = useState(true);
-        const seeLeftRegion = () => { setLeftOpen(!leftOpen); rightOpen(false); };
-        const navBar = {
-          content: "",
-          id: "Left Region",
-          toggle: seeLeftRegion,
-          visible: leftOpen,
-        };
-        const appBar = {
-          content: "",
-          id: "Right Region",
-          toggle: seeRightRegion,
-          visible: rightOpen,
-        };
-        return (
-          <Layout
-            header={{
-              // content: "Title",
-              id: "Header",
-              right: (
-                <IconBlock>
-                  <Icon icon="list" onClick={seeRightRegion} />
-                  <Icon icon="chat" onClick={seeRightRegion} />
-                  <Icon icon="calendar" onClick={seeRightRegion} />
-                </IconBlock>
-              ),
-              // width: "max-content", // Separate left/right widths
-            }}
-            left={navBar}
-            main={{
-              // content: <Mapbox />,
-              id: "Main Region",
-            }}
-            right={appBar}
-          />
-        );
-      });
-    },
-  )
-  .add(
-    "With Bottom",
-    () => {
-      return React.createElement(() => {
-        const [rightOpen, setRightOpen] = useState(true);
-        const seeRightRegion = () => { setRightOpen(!rightOpen); };
-        const [bottomOpen, setBottomOpen] = useState(false);
-        const seeBottomRegion = () => { setBottomOpen(!bottomOpen); };
-        const [leftOpen, setLeftOpen] = useState(true);
-        const seeLeftRegion = () => { setLeftOpen(!leftOpen); rightOpen(false); };
-
-        // const navBar = {
-        //   content: (
-        //     <Panel
-        //       id="Panel"
-        //     >
-        //       <List interactive>
-        //         <ListItem title="Layers" />
-        //         <ListItem title="Results" />
-        //         <ListItem title="Form" />
-        //         <ListItem title="Research" />
-        //       </List>
-        //     </Panel>
-        //   )
-        // };
-
-        const leftBar = {
-          content: (
-            <DataTable
-              headers={tableHeaders.slice(1)}
-              rows={tableData}
-              listId="foo"
-              columnWidth={180}
-            />
-          ),
-          visible: leftOpen,
-          toggle: seeLeftRegion,
-        };
-        const rightBar = {
-          content: (
-            <DataTable
-              headers={tableHeaders.slice(1)}
-              rows={tableData}
-              listId="foo"
-              columnWidth={180}
-            />
-          ),
-          visible: rightOpen,
-          toggle: seeRightRegion,
-        };
-        const bottomBar = {
-          content: (
-            <DataTable
-              headers={tableHeaders.slice(1)}
-              rows={tableData}
-              listId="foo"
-              columnWidth={180}
-            />
-          ),
-          visible: bottomOpen,
-          toggle: seeBottomRegion,
-        };
-        return (
-          <Layout
-            header={{
-              content: "",
-              width: "15%",
-              right: (
-                <IconBlock>
-                  <Icon icon="list" onClick={seeBottomRegion} />
-                  <Icon icon="chat" onClick={seeRightRegion} />
-                  <Icon icon="calendar" onClick />
-                </IconBlock>
-              ),
-            }}
-            main=""
-            right={rightBar}
-            left={leftBar}
-            bottom={bottomBar}
-          />
-        );
-      });
-    },
   );
-
