@@ -5,19 +5,47 @@ import PropTypes from "prop-types";
 import { Lighten, Darken } from "Variables";
 
 const SliderPiece = styled.input.attrs({ type: "range" })`
-  height: 2px;
-  background: ${(props) => {
-    return props.theme.palette.neutral60;
-  }};
-  outline: none;
-  transition: opacity 0.2s;
-  -webkit-appearance: none;
+overflow: hidden;
+width: 80px;
+-webkit-appearance: none;
+background-color: silver;
+  &::-webkit-slider-runnable-track{
+    height: 10px;
+    -webkit-appearance: none;
+    border: 2px solid white;
+    color: #13bba4;
+    margin-top: -1px;
+  }
+  &::-webkit-slider-thumb {
+    width: 20px;
+    position: relative;
+    -webkit-appearance: none;
+    height: 20px;
+    border-radius: 100&;
+    cursor: pointer;
+    background: #434343;
+    box-shadow: -100vw 0 0 100vw #43e5f7;
+  }
+  
+
+`;
+
+const SliderThumb= styled.input.attrs({ type: "range" })`
+  background: transparent
+  overflow: hidden;
+width: 80px;
+-webkit-appearance: none;
+  &::-webkit-slider-runnable-track{
+    height: 10px;
+    -webkit-appearance: none;
+    color: transparent;
+    margin-top: -1px;
+  }
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 1.5em;
     height: 1.5em;
     border: 1px solid;
-    margin-top: -4px;
     border-color: ${(props) => {
     return props.error ? props.theme.palette.alert60 : props.theme.palette.selected;
   }};
@@ -26,7 +54,6 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
     return props.error ? props.theme.palette.alert60 : props.theme.palette.selectedLight;
   }};
     cursor: pointer;
-    
     &:hover {
       ${Darken};
     }
@@ -34,13 +61,17 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
       ${Lighten};
     }
   }
-
 `;
+
 
 function Slider({
   disabled, error, id, onChange, min, max, value,
 }) {
-  return <SliderPiece min={min} max={max} step="1" value={value} id={id} onChange={onChange} disabled={disabled} error={error} />;
+  return (
+    <div>
+    <SliderPiece min={min} max={max} step="1" value={value} id={id} onChange={onChange} disabled={disabled} error={error} />
+    <SliderThumb min={min} max={max} step="1" value={value} id={id} onChange={onChange} disabled={disabled} error={error} />
+    </div>);
 }
 Slider.propTypes = {
   disabled: PropTypes.bool,
