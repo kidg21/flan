@@ -2,47 +2,20 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import Grid from "layout/Grid";
+import Bar from "blocks/Bar";
+import Text from "base/Typography";
 import { Lighten, Darken } from "Variables";
 
 const SliderPiece = styled.input.attrs({ type: "range" })`
-overflow: hidden;
-width: 80px;
--webkit-appearance: none;
-background-color: silver;
-  &::-webkit-slider-runnable-track{
-    height: 10px;
-    -webkit-appearance: none;
-    border: 2px solid white;
-    color: #13bba4;
-    margin-top: -1px;
-  }
+  height: 1px;
+  background: ${(props) => {
+    return props.error ? props.theme.palette.alert60 : props.theme.palette.neutral80;
+  }};
+  outline: none;
+  transition: opacity 0.2s;
   &::-webkit-slider-thumb {
-    width: 20px;
-    position: relative;
-    -webkit-appearance: none;
-    height: 20px;
-    border-radius: 100&;
-    cursor: pointer;
-    background: #434343;
-    box-shadow: -100vw 0 0 100vw #43e5f7;
-  }
-  
-
-`;
-
-const SliderThumb= styled.input.attrs({ type: "range" })`
-  background: transparent
-  overflow: hidden;
-width: 80px;
--webkit-appearance: none;
-  &::-webkit-slider-runnable-track{
-    height: 10px;
-    -webkit-appearance: none;
-    color: transparent;
-    margin-top: -1px;
-  }
-  &::-webkit-slider-thumb {
-    -webkit-appearance: none;
+    appearance: none;
     width: 1.5em;
     height: 1.5em;
     border: 1px solid;
@@ -61,36 +34,80 @@ width: 80px;
       ${Lighten};
     }
   }
+  &::-moz-range-track {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 98%;
+    height: 1px;
+    x: align.center;
+    y: align.center;
+    border-radius: 5px;
+    background: #ccc;
+    outline: none;
+  }
+  &::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    color: ${(props) => {
+    return props.theme.palette.selectedLight;
+  }};
+    cursor: pointer;
+  }
+  &[disabled],
+  &[readonly] {
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
+    &::-webkit-slider-thumb {
+      border-color: ${(props) => {
+    return props.theme.palette.neutral80;
+  }};
+      background-color: ${(props) => {
+    return props.theme.palette.neutral60;
+  }};
+    }
+  }
 `;
 
-
 function Slider({
-  disabled, error, id, onChange, min, max, value,
+  disabled, error, id, onChange, max, min, value,
 }) {
   return (
-    <div>
-    <SliderPiece min={min} max={max} step="1" value={value} id={id} onChange={onChange} disabled={disabled} error={error} />
-    <SliderThumb min={min} max={max} step="1" value={value} id={id} onChange={onChange} disabled={disabled} error={error} />
-    </div>);
+      <Bar 
+      padding="none"
+      contentAlign="center"
+      left={{
+        content: <Text text={min} />,
+        width: "6em",
+      }}
+    center ={{
+      content: <SliderPiece id={id} max={max} min={min} value={value} step="1" onChange={onChange} disabled={disabled} error={error} />,
+    }}
+      right={{
+        content: <Text text={max} />,
+      width: "6em"}}
+      />);
 }
 Slider.propTypes = {
   disabled: PropTypes.bool,
+  min: PropTypes.string,
+  max: PropTypes.string,
+  value: PropTypes.string,
   error: PropTypes.bool,
   id: PropTypes.string,
   onChange: PropTypes.func,
-  value: PropTypes.string,
-  min: PropTypes.string,
-  max: PropTypes.string,
-
 };
 Slider.defaultProps = {
   disabled: false,
+  min: null,
+  max: null,
+  value: null,
   error: false,
   id: null,
   onChange: null,
-  value: null,
-  min: null,
-  max: null,
 };
 
 export default Slider;
