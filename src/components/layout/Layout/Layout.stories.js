@@ -192,12 +192,12 @@ storiesOf("Layout|Layout/", module)
           //   content: "",
           // }}
           main={{ content: "" }}
-        // right={{
-        //   content: "",
-        // }}
-        // bottom={{
-        //   content: "",
-        // }}
+          // right={{
+          //   content: "",
+          // }}
+          bottom={{
+            content: "",
+          }}
         />
       );
     },

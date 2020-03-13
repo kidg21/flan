@@ -193,20 +193,18 @@ function Layout({
 
   let leftWidth;
   let mainLeft;
-  let mainWidth;
+  let mainWidth = "100%";
   let rightWidth;
-  let centerBottom;
+  let centerBottom = "0";
   let bottomHeight;
   let zIndex = null; // shared by all
   if (screenMedium.matches || screenLarge.matches) {
     leftWidth = "15%";
-    mainWidth = "100%";
     rightWidth = "25%";
     bottomHeight = "40%";
     zIndex = "1";
   } else {
     leftWidth = "100%";
-    mainWidth = "100%";
     rightWidth = "100%";
     bottomHeight = "60%";
     zIndex = "1";
@@ -285,14 +283,10 @@ function Layout({
     if (screenLarge.matches || screenMedium.matches) {
       if (bottomOpen) {
         centerBottom = "40%";
-      } else {
-        centerBottom = "0";
       }
       // Small screens (default)
     } else if (bottomOpen) {
       centerBottom = "60%";
-    } else {
-      centerBottom = "0";
     }
   }
 
