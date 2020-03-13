@@ -212,17 +212,32 @@ function Layout({
     zIndex = "1";
   }
 
-  let leftOpen = left ? left.visible : false;
-  let setLeftOpen = left ? left.toggle : null;
+  let leftOpen = false;
+  let setLeftOpen = null;
+  if (left) {
+    // default open if left section is specified but visible is not
+    leftOpen = typeof left.visible === "boolean" ? left.visible : true;
+    setLeftOpen = left.toggle;
+  }
 
-  let rightOpen = right ? right.visible : false;
-  let setRightOpen = right ? right.toggle : null;
+  let rightOpen = false;
+  let setRightOpen = null;
+  if (right) {
+    // default open if right section is specified but visible is not
+    rightOpen = typeof right.visible === "boolean" ? right.visible : true;
+    setRightOpen = right.toggle;
+  }
 
-  let bottomOpen = bottom ? bottom.visible : false;
-  let setBottomOpen = bottom ? bottom.toggle : null;
+  let bottomOpen = false;
+  let setBottomOpen = null;
+  if (bottom) {
+    // default open if bottom section is specified but visible is not
+    bottomOpen = typeof bottom.visible === "boolean" ? bottom.visible : true;
+    setBottomOpen = bottom.toggle;
+  }
 
   if (left) {
-    if (!setLeftOpen) [leftOpen, setLeftOpen] = useState(!left.visible);
+    if (!setLeftOpen) [leftOpen, setLeftOpen] = useState(leftOpen);
     // On larger screens, both left and right regions can be open at the same time
     if (screenLarge.matches || screenMedium.matches) {
       if (leftOpen) {
@@ -245,7 +260,7 @@ function Layout({
   }
 
   if (right) {
-    if (!setRightOpen) [rightOpen, setRightOpen] = useState(!right.visible);
+    if (!setRightOpen) [rightOpen, setRightOpen] = useState(rightOpen);
     // On larger screens, both left and right regions can be open at the same time
     // if (screenLarge.matches || screenMedium.matches) {
     if (rightOpen) {
@@ -265,7 +280,7 @@ function Layout({
   }
 
   if (bottom) {
-    if (!setBottomOpen) [bottomOpen, setBottomOpen] = useState(bottom.visible);
+    if (!setBottomOpen) [bottomOpen, setBottomOpen] = useState(bottomOpen);
     // large/Medium screens
     if (screenLarge.matches || screenMedium.matches) {
       if (bottomOpen) {
@@ -283,7 +298,7 @@ function Layout({
 
   return (
     <WrapperOuter id={id} >
-      {header.content ? (
+      {header ? (
         <Header
           id={header.id}
           zIndex={zIndex}
@@ -327,7 +342,7 @@ function Layout({
           </RegionRight>
         ) : null}
       </Body>
-      {footer.content ? (
+      {footer ? (
         <Footer
           id={footer.id}
           zIndex={zIndex}
@@ -375,36 +390,12 @@ Layout.propTypes = {
 
 Layout.defaultProps = {
   id: null,
-  header: {
-    content: null,
-    id: null,
-  },
-  left: {
-    content: null,
-    id: null,
-    toggle: null,
-    visible: null,
-  },
-  main: {
-    content: null,
-    id: null,
-  },
-  bottom: {
-    content: null,
-    id: null,
-    toggle: null,
-    visible: null,
-  },
-  right: {
-    content: null,
-    id: null,
-    toggle: null,
-    visible: null,
-  },
-  footer: {
-    content: null,
-    id: null,
-  },
+  header: null,
+  left: null,
+  main: { content: null },
+  bottom: null,
+  right: null,
+  footer: null,
 };
 
 export default Layout;
