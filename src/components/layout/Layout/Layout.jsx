@@ -293,7 +293,7 @@ function Layout({
   if (right) {
     if (screenLarge.matches || screenMedium.matches) {
       // On larger screens, both left and right regions can be open at the same time
-      if (rightOpen) mainWidth = "75%";
+      if (rightOpen && !leftOpen) mainWidth = "75%";
     } else if (rightOpen && openOrder[0] !== "right") {
       // On small screens, either the left or right region can be open, but not both.
       // If the left region was previously open, it's state is restored when the right region is closed.
