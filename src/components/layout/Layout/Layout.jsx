@@ -187,7 +187,7 @@ function Layout({
   right,
   footer,
 }) {
-  const screenSmall = window.matchMedia(screen.small);
+  // const screenSmall = window.matchMedia(screen.small);
   const screenMedium = window.matchMedia(screen.medium);
   const screenLarge = window.matchMedia(screen.large);
 
@@ -212,34 +212,68 @@ function Layout({
     zIndex = "1";
   }
 
+  const [openOrder, setOpenOrder] = useState([]);
+  let newOpenOrder = openOrder;
+
   let leftOpen = false;
-  let setLeftOpen = null;
   if (left) {
     // default open if left section is specified but visible is not
     leftOpen = typeof left.visible === "boolean" ? left.visible : true;
-    setLeftOpen = left.toggle;
+
+    if (leftOpen) {
+      if (newOpenOrder.indexOf("left") < 0) {
+        if (newOpenOrder === openOrder) newOpenOrder = newOpenOrder.slice(0);
+        newOpenOrder.unshift("left");
+      }
+    } else if (newOpenOrder.indexOf("left") >= 0) {
+      newOpenOrder = newOpenOrder.filter((value) => {
+        return value !== "left";
+      });
+    }
   }
 
   let rightOpen = false;
-  let setRightOpen = null;
   if (right) {
     // default open if right section is specified but visible is not
     rightOpen = typeof right.visible === "boolean" ? right.visible : true;
-    setRightOpen = right.toggle;
+
+    if (rightOpen) {
+      if (newOpenOrder.indexOf("right") < 0) {
+        if (newOpenOrder === openOrder) newOpenOrder = newOpenOrder.slice(0);
+        newOpenOrder.unshift("right");
+      }
+    } else if (newOpenOrder.indexOf("right") >= 0) {
+      newOpenOrder = newOpenOrder.filter((value) => {
+        return value !== "right";
+      });
+    }
   }
 
   let bottomOpen = false;
-  let setBottomOpen = null;
   if (bottom) {
     // default open if bottom section is specified but visible is not
     bottomOpen = typeof bottom.visible === "boolean" ? bottom.visible : true;
-    setBottomOpen = bottom.toggle;
+
+    if (bottomOpen) {
+      if (newOpenOrder.indexOf("bottom") < 0) {
+        if (newOpenOrder === openOrder) newOpenOrder = newOpenOrder.slice(0);
+        newOpenOrder.unshift("bottom");
+      }
+    } else if (newOpenOrder.indexOf("bottom") >= 0) {
+      newOpenOrder = newOpenOrder.filter((value) => {
+        return value !== "bottom";
+      });
+    }
+  }
+
+  if (newOpenOrder !== openOrder) {
+    setOpenOrder(newOpenOrder);
+    return null;
   }
 
   if (left) {
-    if (!setLeftOpen) [leftOpen, setLeftOpen] = useState(leftOpen);
-    // On larger screens, both left and right regions can be open at the same time
     if (screenLarge.matches || screenMedium.matches) {
+      // On larger screens, both left and right regions can be open at the same time
       if (leftOpen) {
         mainLeft = "15%";
         mainWidth = "85%";
@@ -249,38 +283,25 @@ function Layout({
       } else {
         mainLeft = "0";
       }
-    }
-    // On small screens, either the left or right region can be open, but not both.
-    // If the right region was previously open, it's state is restored when the left region is closed.
-    if (screenSmall.matches) {
-      // if (leftOpen) {
-      //   rightOpen = false;
-      // }
+    } else if (leftOpen && openOrder[0] !== "left") {
+      // On small screens, either the left or right region can be open, but not both.
+      // If the right region was previously open, it's state is restored when the left region is closed.
+      leftOpen = false;
     }
   }
 
   if (right) {
-    if (!setRightOpen) [rightOpen, setRightOpen] = useState(rightOpen);
-    // On larger screens, both left and right regions can be open at the same time
-    // if (screenLarge.matches || screenMedium.matches) {
-    if (rightOpen) {
-      mainWidth = "75%";
-      if (leftOpen) {
-        mainWidth = "60%";
-      }
-    }
-    // }
-    // On small screens, either the left or right region can be open, but not both.
-    // If the left region was previously open, it's state is restored when the right region is closed.
-    if (screenSmall.matches) {
-      // if (rightOpen) {
-      //   leftOpen = false;
-      // }
+    if (screenLarge.matches || screenMedium.matches) {
+      // On larger screens, both left and right regions can be open at the same time
+      if (rightOpen) mainWidth = "75%";
+    } else if (rightOpen && openOrder[0] !== "right") {
+      // On small screens, either the left or right region can be open, but not both.
+      // If the left region was previously open, it's state is restored when the right region is closed.
+      rightOpen = false;
     }
   }
 
   if (bottom) {
-    if (!setBottomOpen) [bottomOpen, setBottomOpen] = useState(bottomOpen);
     // large/Medium screens
     if (screenLarge.matches || screenMedium.matches) {
       if (bottomOpen) {
@@ -289,7 +310,7 @@ function Layout({
         centerBottom = "0";
       }
       // Small screens (default)
-    } else if (bottomOpen) {
+    } else if (bottomOpen && openOrder[0] === "bottom") {
       centerBottom = "60%";
     } else {
       centerBottom = "0";
@@ -363,7 +384,6 @@ Layout.propTypes = {
   left: PropTypes.shape({
     content: PropTypes.node.isRequired,
     id: PropTypes.string,
-    toggle: PropTypes.func,
     visible: PropTypes.string,
   }),
   main: PropTypes.shape({
@@ -373,13 +393,11 @@ Layout.propTypes = {
   bottom: PropTypes.shape({
     content: PropTypes.node.isRequired,
     id: PropTypes.string,
-    toggle: PropTypes.func,
     visible: PropTypes.string,
   }),
   right: PropTypes.shape({
     content: PropTypes.node.isRequired,
     id: PropTypes.string,
-    toggle: PropTypes.func,
     visible: PropTypes.string,
   }),
   footer: PropTypes.shape({
