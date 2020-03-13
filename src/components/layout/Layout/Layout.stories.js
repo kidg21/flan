@@ -277,18 +277,15 @@ storiesOf("Layout|Layout/", module)
             }}
             left={{
               content: listPanel,
-              toggle: seeLeftRegion,
               visible: leftOpen,
             }}
             main={{ content: map }}
             right={{
               content: infoPanel,
-              toggle: seeRightRegion,
               visible: rightOpen,
             }}
             bottom={{
               content: dataTable,
-              toggle: seeBottomRegion,
               visible: bottomOpen,
             }}
             footer={{
@@ -309,6 +306,109 @@ storiesOf("Layout|Layout/", module)
                         label="Toggle"
                         align="Bottom"
                         onClick={seeBottomRegion}
+                      />
+                    ),
+                  }}
+                  /** Don't do this 'div workaround'.
+                  * TODO: We will address alignment issues in Bar
+                  */
+                  right={{
+                    content: <div />,
+                  }}
+                />
+              ),
+            }}
+          />
+        );
+      });
+    },
+  )
+  .add(
+    "Single Region Active",
+    () => {
+      return React.createElement(() => {
+        const [visibility, setVisibility] = useState({
+          left: false,
+          right: false,
+          bottom: false,
+        });
+        const toggleLeft = () => {
+          setVisibility({ left: !visibility.left, right: false, bottom: false });
+        };
+        const toggleRight = () => {
+          setVisibility({ left: false, right: !visibility.right, bottom: false });
+        };
+        const toggleBottom = () => {
+          setVisibility({ left: false, right: false, bottom: !visibility.bottom });
+        };
+
+        return (
+          <Layout
+            header={{
+              id: "Header",
+              content: (
+                <Bar
+                  contentAlign="center"
+                  padding="2x"
+                  left={{
+                    content: (
+                      <Avatar
+                        image
+                        src={LightBoxIcon}
+                        alt="logo"
+                        onClick={toggleLeft}
+                      />
+                    ),
+                  }}
+                  center={{
+                    content: (
+                      <Title text="Header" />
+                    ),
+                  }}
+                  right={{
+                    content: (
+                      <Command
+                        icon="right"
+                        label="Toggle"
+                        align="right"
+                        onClick={toggleRight}
+                      />
+                    ),
+                  }}
+                />
+              ),
+            }}
+            left={{
+              content: listPanel,
+              visible: visibility.left,
+            }}
+            main={{ content: map }}
+            right={{
+              content: infoPanel,
+              visible: visibility.right,
+            }}
+            bottom={{
+              content: dataTable,
+              visible: visibility.bottom,
+            }}
+            footer={{
+              id: "Footer",
+              content: (
+                <Bar
+                  contentAlign="center"
+                  padding="2x"
+                  left={{
+                    content: (
+                      <Title text="Footer" />
+                    ),
+                  }}
+                  center={{
+                    content: (
+                      <Command
+                        icon="down"
+                        label="Toggle"
+                        align="Bottom"
+                        onClick={toggleBottom}
                       />
                     ),
                   }}
