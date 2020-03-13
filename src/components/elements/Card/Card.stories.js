@@ -30,7 +30,7 @@ const data = [
       },
     ],
     more: {
-      element: (
+      content: (
         <MediaBlock
           media={
             <Image
@@ -101,7 +101,7 @@ const data = [
       },
     ],
     more: {
-      element: <Button label="Button" type="solid" />,
+      content: <Button label="Button" type="solid" />,
     },
     onClick: action("Third Card Clicked"),
   },
@@ -154,7 +154,7 @@ storiesOf("Elements|Card", module)
             onClick: action("Command Five Clicked"),
           },
         ]}
-        more={{ element: <Button label="Button" type="solid" color="success" fullWidth /> }}
+        more={{ content: <Button label="Button" type="solid" color="success" fullWidth /> }}
         onClick={action("Primary Action Area Clicked")}
       />
     );
@@ -225,7 +225,7 @@ storiesOf("Elements|Card", module)
           boolean("more", false, "Options") &&
           object(
             "extra content",
-            { element: [<Button label="Button" type="solid" color="success" fullWidth />] },
+            { content: [<Button label="Button" type="solid" color="success" fullWidth />] },
             "Options",
           )
         }

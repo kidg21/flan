@@ -208,7 +208,7 @@ function ExpandingSection({
               </React.Fragment>
             }
             rightWidth="max-content"
-            right={children ? <Icon icon="up" size="lg" rotation={rotation} /> : null}
+            right={children ? <Icon icon="down" size="lg" rotation={rotation} /> : null}
           />
         ) : null}
     >
@@ -391,7 +391,7 @@ function Card({
         />
       </CardSection>
     );
-    if (more && more.element) {
+    if (more && more.content) {
       headerSection = (
         <CardSection type={type} disableTransition={disableTransition}>
           <ExpandingSection
@@ -405,7 +405,7 @@ function Card({
             open={open}
             title={title}
           >
-            {more.element}
+            {more.content}
           </ExpandingSection>
         </CardSection>
       );
@@ -576,7 +576,7 @@ Card.propTypes = {
   mediaDesc: PropTypes.string,
   media: PropTypes.string,
   more: PropTypes.shape({
-    element: PropTypes.node,
+    content: PropTypes.node,
     onToggle: PropTypes.func,
   }),
   onClick: PropTypes.func,
