@@ -32,7 +32,7 @@ const CardSectionWrapper = styled.section`
     return props.theme.text[props.sectionColor] || "";
   }};
   background-color: ${(props) => {
-    return props.theme.palette[props.sectionBackground] || "";
+    return props.theme.background[props.sectionBackground] || "";
   }};
   padding: ${(props) => {
     return props.sectionPadding || "0.5em 1em";
@@ -88,9 +88,6 @@ const CardWrapper = styled.div`
     return props.onClick ? "pointer" : "";
   }};
   flex-direction: column;
-  border-radius: ${(props) => {
-    return props.theme.borders.radiusMin;
-  }};
   flex: none;
   background-color: ${(props) => {
     return props.cardBackground ? props.theme.palette[props.cardBackground] : props.theme.background.default;
@@ -109,39 +106,6 @@ const CardWrapper = styled.div`
     return props.theme.text[props.cardColor] || "";
   }};
   }
-  ${CardSectionWrapper} {
-    &:first-of-type {
-      border-radius: ${(props) => {
-    return `${props.theme.borders.radiusMin} ${props.theme.borders.radiusMin} 0 0`;
-  }};
-    }
-    &:last-of-type {
-      border-radius: ${(props) => {
-    return `0 0 ${props.theme.borders.radiusMin} ${props.theme.borders.radiusMin}`;
-  }};
-    }
-    &:only-of-type {
-      border-radius: ${(props) => {
-    return props.theme.borders.radiusMin;
-  }};
-    }
-  }
-  ${CardSectionWrapper}:not(${Media}) {
-    &:first-of-type {
-      padding: 0.75em 1em 0.5em;
-    }
-    &:last-of-type {
-      padding: 0.5em 1em 0.75em;
-    }
-    &:only-of-type {
-      padding: 0.75em 1em;
-    }
-    &:last-of-type,
-    &:only-of-type {
-      flex: auto;
-      height: inherit;
-    }
-  }
   /* Prototype Content - displays when a Card is empty */
   &:empty {
     &:before {
@@ -158,6 +122,9 @@ const CardWrapper = styled.div`
 const CardGridWrapper = styled(Grid)`
   ${CardWrapper} {
     height: 100%;
+    border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
+  }};
     filter: ${(props) => {
     return props.theme.shadows.shadow1;
   }};
@@ -167,6 +134,39 @@ const CardGridWrapper = styled(Grid)`
       filter: ${(props) => {
     return props.theme.shadows.shadow3;
   }};
+    }
+    ${CardSectionWrapper} {
+      &:first-of-type {
+        border-radius: ${(props) => {
+    return `${props.theme.borders.radiusMin} ${props.theme.borders.radiusMin} 0 0`;
+  }};
+      }
+      &:last-of-type {
+        border-radius: ${(props) => {
+    return `0 0 ${props.theme.borders.radiusMin} ${props.theme.borders.radiusMin}`;
+  }};
+      }
+      &:only-of-type {
+        border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
+  }};
+      }
+    }
+    ${CardSectionWrapper}:not(${Media}) {
+      &:first-of-type {
+        padding: 0.75em 1em 0.5em;
+      }
+      &:last-of-type {
+        padding: 0.5em 1em 0.75em;
+      }
+      &:only-of-type {
+        padding: 0.75em 1em;
+      }
+      &:last-of-type,
+      &:only-of-type {
+        flex: auto;
+        height: inherit;
+      }
     }
   }
   /* Prototype Content - displays when a Card List is empty */
@@ -203,8 +203,8 @@ function ExpandingSection({
             centerAlign="left"
             center={
               <React.Fragment>
-                {title ? <Title text={title} /> : null}
-                {description ? <Text text={description} /> : null}
+                {title ? <Title text={title} weight="bold" /> : null}
+                {description ? <Text text={description} weight="bold" /> : null}
               </React.Fragment>
             }
             rightWidth="max-content"
@@ -355,15 +355,14 @@ function Card({
     }
   }
 
-
   let centerContent;
 
   if (onClick) {
     centerContent = (
       <LinkedWrapper >
         <React.Fragment >
-          {title ? <Title text={title}  /> : null}
-          {description ? (<Text text={description} />
+          {title ? <Title text={title} weight="bold" /> : null}
+          {description ? (<Text text={description} weight="bold" />
           ) : null}
         </React.Fragment>
       </LinkedWrapper>
@@ -371,8 +370,8 @@ function Card({
   } else {
     centerContent = (
       <React.Fragment >
-        {title ? <Title text={title} /> : null}
-        {description ? (<Text text={description}  />
+        {title ? <Title text={title} weight="bold" /> : null}
+        {description ? (<Text text={description} weight="bold" />
         ) : null}
       </React.Fragment>);
   }
@@ -492,9 +491,10 @@ function Card({
     if (commands.length >= 2) {
       commandElements = (
         <Bar
+          contentAlign="bottom"
           leftWidth="90%"
           left={
-            <Grid columns="2">
+            <Grid columns="">
               <Command
                 label={commands[0].label}
                 onClick={commands[0].onClick}
