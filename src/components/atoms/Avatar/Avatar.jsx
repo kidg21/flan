@@ -12,7 +12,7 @@ const AvatarText = styled(Title)`
   font-size: ${(props) => {
     return props.fontSize || "inherit";
   }};
-  margin: 0;
+  font-weight: bold;
 `;
 
 const TagContainer = styled.div`
@@ -76,7 +76,7 @@ function Avatar({
     action: "action80",
   };
 
-  let backgroundColor = type ? (typeHash[type] || type.toLowerCase()) : "action40";
+  let backgroundColor = type ? (typeHash[type] || type.toLowerCase()) : "action60";
   const textColor = "inverse";
 
   let media = null;
