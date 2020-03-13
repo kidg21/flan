@@ -90,7 +90,7 @@ const CardWrapper = styled.div`
   flex-direction: column;
   flex: none;
   background-color: ${(props) => {
-    return props.cardBackground ? props.theme.palette[props.cardBackground] : props.theme.background.default;
+    return props.cardBackground ? props.theme.background[props.cardBackground] : props.theme.background.default;
   }};
   padding: ${(props) => {
     return props.cardPadding || "";
