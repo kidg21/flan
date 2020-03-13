@@ -9,11 +9,9 @@ import Mapbox from "layout/Map";
 import Text, { Title } from "base/Typography";
 import Avatar from "atoms/Avatar";
 import Command from "atoms/Command";
-import Icon from "atoms/Icon";
 import Bar from "blocks/Bar";
-import IconBlock from "blocks/IconBlock";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
-import Card, { CardGrid } from "elements/Card";
+import Card from "elements/Card";
 import Layout from "layout/Layout";
 import Page from "layout/Page";
 
@@ -184,20 +182,36 @@ const dataTable = (
 
 storiesOf("Layout|Layout/", module)
   .add(
-    "Full",
+    "Main Section Only",
     () => {
       return (
         <Layout
-          // left={{
-          //   content: "",
-          // }}
-          main={{ content: "" }}
-          // right={{
-          //   content: "",
-          // }}
-          bottom={{
-            content: "",
-          }}
+          main={{ id: "Main", content: "" }}
+        />
+      );
+    },
+  )
+  .add(
+    "With Left/Right Sections",
+    () => {
+      return (
+        <Layout
+          left={{ id: "Left", content: "" }}
+          main={{ id: "Main", content: "" }}
+          right={{ id: "Right", content: "" }}
+        />
+      );
+    },
+  )
+  .add(
+    "Adding A Botton Section",
+    () => {
+      return (
+        <Layout
+          left={{ id: "Left", content: "" }}
+          main={{ id: "Main", content: "" }}
+          right={{ id: "Right", content: "" }}
+          bottom={{ id: "Bottom", content: "" }}
         />
       );
     },
@@ -207,24 +221,12 @@ storiesOf("Layout|Layout/", module)
     () => {
       return (
         <Layout
-          header={{
-            id: "Header",
-            content: "",
-          }}
-          left={{
-            content: "",
-          }}
-          main={{ content: "" }}
-          right={{
-            content: "",
-          }}
-          bottom={{
-            content: "",
-          }}
-          footer={{
-            id: "Footer",
-            content: "",
-          }}
+          header={{ id: "Header", content: "" }}
+          left={{ id: "Left", content: "" }}
+          main={{ id: "Main", content: "" }}
+          right={{ id: "Right", content: "" }}
+          bottom={{ id: "Bottom", content: "" }}
+          footer={{ id: "Footer", content: "" }}
         />
       );
     },
@@ -324,7 +326,7 @@ storiesOf("Layout|Layout/", module)
     },
   )
   .add(
-    "Single Region Active",
+    "Single Region Active (small screens)",
     () => {
       return React.createElement(() => {
         const [visibility, setVisibility] = useState({
