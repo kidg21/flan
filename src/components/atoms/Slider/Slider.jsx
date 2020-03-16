@@ -76,20 +76,21 @@ function Slider({
   disabled, error, id, onChange, max, min, value,
 }) {
   return (
-      <Bar 
+    <Bar
       padding="none"
       contentAlign="center"
       left={{
         content: <Text text={min} />,
         width: "6em",
       }}
-    center ={{
+      center={{
       content: <SliderPiece id={id} max={max} min={min} value={value} step="1" onChange={onChange} disabled={disabled} error={error} />,
     }}
       right={{
         content: <Text text={max} />,
-      width: "6em"}}
-      />);
+      width: "6em",
+}}
+    />);
 }
 Slider.propTypes = {
   disabled: PropTypes.bool,
