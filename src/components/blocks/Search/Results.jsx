@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import Bar from "blocks/Bar";
 import { Link } from "base/Typography";
@@ -9,20 +9,12 @@ import List, { ListItem } from "blocks/List";
 
 function ResultContainer({ id, results }) {
   return (
-    <React.Fragment key={id}>
-      <List interactive>
-        { results.slice(0, 10).map((item) => {
-    return (
-      <ListItem
-        id={item.id}
-        title={item.title}
-        description={item.description}
-        href={item.href}
-        onClick={item.onClick}
-      />
-    );
-  })}
-      </List >
+    <React.Fragment>
+      <List id={id} interactive>
+        {results.slice(0, 10).map((item, index) => {
+      return <ListItem key={item.id || index} {...item} />;
+    })}
+      </List>
       { results.length >= 10 ? <Bar
         padding="2x"
         center={<Link text="View More" />}

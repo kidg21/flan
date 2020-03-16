@@ -18,21 +18,21 @@ const DropContainer = styled(Container)`
 position: fixed;
 `;
 
+
+const errorHash = {
+  connection: "Check your internet connection",
+  offline: "You are offline",
+  default: "We recommend the following based on your key word search",
+};
+
 function Search({
   id, error, results, onSearch, placeholder,
 }) {
+  const msg = errorHash[typeof error === "string" ? error.toLowerCase() : "default"];
 
-  const errorHash = {
-    connection: "Check your internet connection",
-    offline: "You are offline",
-  };
-  
-  const DEFAULT_ERR_MSG = "We recommend the following based on your key word search";
-
-  const msg = errorHash[error] || DEFAULT_ERR_MSG;
   const message = (
     <React.Fragment>
-      {msg !== DEFAULT_ERR_MSG ? <Bar padding="2x" center={<Icon icon="signal_none" size="3x" />} /> : null}
+      { msg !== errorHash.default ? <Bar padding="2x" center={<Icon icon="signal_none" size="3x" />} /> : null}
       <Bar padding="2x" center={<Text text={msg} />} />
     </React.Fragment>
   );
@@ -63,16 +63,22 @@ function Search({
 
 Search.propTypes = {
   id: PropTypes.string,
-  results: PropTypes.node,
-  error: PropTypes.string,
+  results: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string,
+    title: PropTypes.string,
+    description: PropTypes.string,
+    href: PropTypes.string,
+    onClick: PropTypes.func,
+  })),
+  error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   onSearch: PropTypes.func,
   placeholder: PropTypes.string,
 };
 
 Search.defaultProps = {
   id: null,
-  results: null,
-  error: null,
+  results: "",
+  error: "",
   onSearch: null,
   placeholder: null,
 };
