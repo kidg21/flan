@@ -1,6 +1,6 @@
 /* eslint-disable complexity */
 /* eslint-disable linebreak-style */
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
@@ -195,7 +195,6 @@ function Layout({
   let mainLeft;
   let mainWidth = "100%";
   let rightWidth;
-  let centerBottom = "0";
   let bottomHeight;
   let zIndex = null; // shared by all
   if (screenMedium.matches || screenLarge.matches) {
@@ -210,15 +209,15 @@ function Layout({
     zIndex = "1";
   }
 
-  const [openOrder, setOpenOrder] = useState([]);
-  let newOpenOrder = openOrder;
+  // const [openOrder, setOpenOrder] = useState([]);
+  // let newOpenOrder = openOrder;
 
   let leftOpen = false;
   if (left) {
     // default open if left section is specified but visible is not
     leftOpen = typeof left.visible === "boolean" ? left.visible : true;
 
-    if (leftOpen) {
+    /* if (leftOpen) {
       if (newOpenOrder.indexOf("left") < 0) {
         if (newOpenOrder === openOrder) newOpenOrder = newOpenOrder.slice(0);
         newOpenOrder.unshift("left");
@@ -227,7 +226,7 @@ function Layout({
       newOpenOrder = newOpenOrder.filter((value) => {
         return value !== "left";
       });
-    }
+    } */
   }
 
   let rightOpen = false;
@@ -235,7 +234,7 @@ function Layout({
     // default open if right section is specified but visible is not
     rightOpen = typeof right.visible === "boolean" ? right.visible : true;
 
-    if (rightOpen) {
+    /* if (rightOpen) {
       if (newOpenOrder.indexOf("right") < 0) {
         if (newOpenOrder === openOrder) newOpenOrder = newOpenOrder.slice(0);
         newOpenOrder.unshift("right");
@@ -244,7 +243,7 @@ function Layout({
       newOpenOrder = newOpenOrder.filter((value) => {
         return value !== "right";
       });
-    }
+    } */
   }
 
   let bottomOpen = false;
@@ -252,7 +251,7 @@ function Layout({
     // default open if bottom section is specified but visible is not
     bottomOpen = typeof bottom.visible === "boolean" ? bottom.visible : true;
 
-    if (bottomOpen) {
+    /* if (bottomOpen) {
       if (newOpenOrder.indexOf("bottom") < 0) {
         if (newOpenOrder === openOrder) newOpenOrder = newOpenOrder.slice(0);
         newOpenOrder.unshift("bottom");
@@ -261,13 +260,13 @@ function Layout({
       newOpenOrder = newOpenOrder.filter((value) => {
         return value !== "bottom";
       });
-    }
+    } */
   }
 
-  if (newOpenOrder !== openOrder) {
+  /* if (newOpenOrder !== openOrder) {
     setOpenOrder(newOpenOrder);
     return null;
-  }
+  } */
 
   if (left) {
     if (screenLarge.matches || screenMedium.matches) {
@@ -281,25 +280,25 @@ function Layout({
       } else {
         mainLeft = "0";
       }
-    } else if (leftOpen && openOrder[0] !== "left") {
+    }/* else if (leftOpen && openOrder[0] !== "left") {
       // On small screens, either the left or right region can be open, but not both.
       // If the right region was previously open, it's state is restored when the left region is closed.
       leftOpen = false;
-    }
+    } */
   }
 
   if (right) {
     if (screenLarge.matches || screenMedium.matches) {
       // On larger screens, both left and right regions can be open at the same time
       if (rightOpen && !leftOpen) mainWidth = "75%";
-    } else if (rightOpen && openOrder[0] !== "right") {
+    }/* else if (rightOpen && openOrder[0] !== "right") {
       // On small screens, either the left or right region can be open, but not both.
       // If the left region was previously open, it's state is restored when the right region is closed.
       rightOpen = false;
-    }
+    } */
   }
 
-  if (bottom) {
+  /* if (bottom) {
     // large/Medium screens
     if (screenLarge.matches || screenMedium.matches) {
       if (bottomOpen) {
@@ -309,7 +308,7 @@ function Layout({
     } else if (bottomOpen && openOrder[0] === "bottom") {
       centerBottom = "60%";
     }
-  }
+  } */
 
   return (
     <WrapperOuter id={id} >
@@ -333,7 +332,7 @@ function Layout({
           </RegionLeft>
         ) : null}
         <WrapperMain height={bottomHeight} left={mainLeft} width={mainWidth}>
-          <RegionCenter bottom={centerBottom} id={main.id}>
+          <RegionCenter bottom={bottomOpen ? bottomHeight : "0"} id={main.id}>
             {main.content}
           </RegionCenter>
           {bottom ? (
