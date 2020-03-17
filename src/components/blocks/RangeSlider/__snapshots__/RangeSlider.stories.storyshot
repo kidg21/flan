@@ -37,7 +37,7 @@ exports[` 1`] = `
         >
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
+            className="TextInput__Input-sc-1fep8p8-2 isQToF"
             cols=""
             disabled={false}
             id="documentation_min"
@@ -79,7 +79,7 @@ exports[` 1`] = `
         >
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
+            className="TextInput__Input-sc-1fep8p8-2 isQToF"
             cols=""
             disabled={false}
             id="documentation_max"
@@ -151,7 +151,7 @@ exports[` 2`] = `
         >
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
+            className="TextInput__Input-sc-1fep8p8-2 isQToF"
             cols=""
             disabled={false}
             id="knobs_min"
@@ -193,7 +193,7 @@ exports[` 2`] = `
         >
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
+            className="TextInput__Input-sc-1fep8p8-2 isQToF"
             cols=""
             disabled={false}
             id="knobs_max"
@@ -276,7 +276,7 @@ exports[` 3`] = `
             >
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
+                className="TextInput__Input-sc-1fep8p8-2 isQToF"
                 cols=""
                 disabled={false}
                 id="standard_min"
@@ -318,7 +318,7 @@ exports[` 3`] = `
             >
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
+                className="TextInput__Input-sc-1fep8p8-2 isQToF"
                 cols=""
                 disabled={false}
                 id="standard_max"
@@ -379,7 +379,7 @@ exports[` 3`] = `
             >
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
+                className="TextInput__Input-sc-1fep8p8-2 isQToF"
                 cols=""
                 disabled={false}
                 id="required_min"
@@ -421,7 +421,7 @@ exports[` 3`] = `
             >
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
+                className="TextInput__Input-sc-1fep8p8-2 isQToF"
                 cols=""
                 disabled={false}
                 id="required_max"
@@ -482,7 +482,7 @@ exports[` 3`] = `
             >
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 hNaLVb"
+                className="TextInput__Input-sc-1fep8p8-2 fYa-DVb"
                 cols=""
                 disabled={true}
                 id="disabled_min"
@@ -524,7 +524,7 @@ exports[` 3`] = `
             >
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 hNaLVb"
+                className="TextInput__Input-sc-1fep8p8-2 fYa-DVb"
                 cols=""
                 disabled={true}
                 id="disabled_max"
