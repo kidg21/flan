@@ -1,0 +1,40 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+
+<Meta title="Announcements|Changelog" />
+
+## Changelog
+
+Until we have an initial versioned `Master` release I will be using this space to document changes to the `Development` branch. Eventually, this will turn into a proper changlog.  We'll do our best to communicate positive and negative impacts of each update.  Bear with us as we work through this approach.  As always, feedback is welcome.
+
+Eventually this document will only pertain to updates to the `Master` branch.  All changes to the `Development` branch will be documented under 'Unreleased'
+
+### [Update] - 2020-03-17
+**Updates to `Layout`:** <br />
+([components/layoutheader](https://bitbucket.org/DigMap/lbox-react-core/pull-requests/50/components-layoutheader/diff))
+
+**Reference Story** <br />
+[All Regions / Interactive (configured)](http://maps.digitalmapcentral.com/storybook/styled-components/develop/?path=/story/layout-layout--full-interactive-configured)
+
+**Note**: Due to the changeover in story formats, prop tables are missing from many components.  We will be addressing that in a future update.  However, for now, please reference the `propTypes` within the components' `JSX` files.
+
+#### Added
+- Added a `bottom` layout region.
+- All layout regions have `content` and `id` props.
+- Regions `left`, `main`, `right`, and `bottom` now have a `visible` prop.
+  - Can be cofigured to `false` to set the display of a region to 'offscreen'.  Default is 'onscreen': `true`.
+- A `toggle` prop has been added to all regions that support a `visible` prop.
+  - This prop can be used to set up a listener for state functions. (see stories for reference)
+
+#### Changed
+- Renamed `Template` to `Layout`
+- The header prop is a generic region like all other regions.  It is no longer populated with 'fallback' content.
+- With the removal of predefined content form regions, props `iconLeft` and `iconRight` have been removed.
+
+<!-- #### Deprecated -->
+
+#### Removed
+- Removed `Template` (no longer need both `Template` and `Layout`)
+
+<!-- #### Fixed -->
+
+<!-- #### Security -->
