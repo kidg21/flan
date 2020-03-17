@@ -19,5 +19,5 @@ storiesOf("Blocks|Legend", module)
   .add(
     "Documentation",
     () => {
-      return <Legend data={options} />;
+      return <Legend title="Legend" data={options} />;
     });
