@@ -57,7 +57,7 @@ exports[` 1`] = `
               </label>
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+                className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
                 cols=""
                 disabled={false}
                 id="default_left"
@@ -97,7 +97,7 @@ exports[` 1`] = `
               </label>
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+                className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
                 cols=""
                 disabled={false}
                 id="default_right"
@@ -123,6 +123,7 @@ exports[` 1`] = `
           className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
           fontSize="0.65em"
           fontWeight={400}
+          id={null}
           letterSpacing="0.6px"
         >
           Hang in there, buddy, I'm here to help!
@@ -151,7 +152,7 @@ exports[` 1`] = `
             className="Bar__Slot-sc-1c4axau-1 hAjMjw"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm SelectMenu__SelectMenuContainer-sc-12n3hw0-0 ewaOwo"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm SelectMenu__SelectMenuContainer-sc-12n3hw0-1 iAwVFR"
               id={null}
               rows={null}
             >
@@ -197,7 +198,7 @@ exports[` 1`] = `
                           autoComplete="off"
                           autoCorrect="off"
                           disabled={false}
-                          id="react-select-33-input"
+                          id="react-select-2-input"
                           onBlur={[Function]}
                           onChange={[Function]}
                           onFocus={[Function]}
@@ -272,7 +273,7 @@ exports[` 1`] = `
             className="Bar__Slot-sc-1c4axau-1 kHYCoh"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm SelectMenu__SelectMenuContainer-sc-12n3hw0-0 ewaOwo"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm SelectMenu__SelectMenuContainer-sc-12n3hw0-1 iAwVFR"
               id={null}
               rows={null}
             >
@@ -318,7 +319,7 @@ exports[` 1`] = `
                           autoComplete="off"
                           autoCorrect="off"
                           disabled={false}
-                          id="react-select-34-input"
+                          id="react-select-3-input"
                           onBlur={[Function]}
                           onChange={[Function]}
                           onFocus={[Function]}
@@ -394,6 +395,7 @@ exports[` 1`] = `
           className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
           fontSize="0.65em"
           fontWeight={400}
+          id={null}
           letterSpacing="0.6px"
         >
           Hang in there, buddy, I'm here to help!
@@ -441,7 +443,7 @@ exports[` 2`] = `
         >
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+            className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
             cols=""
             disabled={false}
             id="knobs_left"
@@ -472,7 +474,7 @@ exports[` 2`] = `
         >
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+            className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
             cols=""
             disabled={false}
             id="knobs_right"
@@ -498,6 +500,7 @@ exports[` 2`] = `
       className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
       fontSize="0.65em"
       fontWeight={400}
+      id={null}
       letterSpacing="0.6px"
     >
       Help text goes here...
@@ -579,7 +582,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+                  className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
                   cols=""
                   disabled={false}
                   id="input_left"
@@ -610,7 +613,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+                  className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
                   cols=""
                   disabled={false}
                   id="input_right"
@@ -636,6 +639,7 @@ exports[` 3`] = `
             className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
             fontSize="0.65em"
             fontWeight={400}
+            id={null}
             letterSpacing="0.6px"
           >
             Hang in there, buddy, I'm here to help!
@@ -670,7 +674,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-1 gZOQGf"
+                  className="TextInput__Input-sc-1fep8p8-2 eFFJSM"
                   cols=""
                   disabled={false}
                   id="inputError_left"
@@ -701,7 +705,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-1 gZOQGf"
+                  className="TextInput__Input-sc-1fep8p8-2 eFFJSM"
                   cols=""
                   disabled={false}
                   id="inputError_right"
@@ -727,6 +731,99 @@ exports[` 3`] = `
             className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
             fontSize="0.65em"
             fontWeight={400}
+            id={null}
+            letterSpacing="0.6px"
+          >
+            Hang in there, buddy, I'm here to help!
+          </p>
+        </section>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm DataRange__RangeContainer-u3cy9q-0 fXSQss"
+          id="inputError"
+          rows={null}
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
+            fontSize="0.82em"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing="0px"
+          >
+            Input Range (error)
+          </label>
+          <div
+            className="Bar__BarLayout-sc-1c4axau-2 gzisev"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-sc-1c4axau-1 hAjMjw"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 inWPqt"
+                id="inputError_left_container"
+                rows={null}
+              >
+                <input
+                  autoComplete="off"
+                  className="TextInput__Input-sc-1fep8p8-2 eFFJSM"
+                  cols=""
+                  disabled={false}
+                  id="inputError_left"
+                  list={null}
+                  maxLength={null}
+                  name="inputError_left"
+                  onBlur={null}
+                  onChange={[Function]}
+                  onFocus={null}
+                  onKeyPress={null}
+                  pattern={null}
+                  placeholder={null}
+                  rows=""
+                  size={null}
+                  title={null}
+                  type="text"
+                  value={null}
+                />
+              </section>
+            </div>
+            <div
+              className="Bar__Slot-sc-1c4axau-1 kHYCoh"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 inWPqt"
+                id="inputError_right_container"
+                rows={null}
+              >
+                <input
+                  autoComplete="off"
+                  className="TextInput__Input-sc-1fep8p8-2 eFFJSM"
+                  cols=""
+                  disabled={false}
+                  id="inputError_right"
+                  list={null}
+                  maxLength={null}
+                  name="inputError_right"
+                  onBlur={null}
+                  onChange={[Function]}
+                  onFocus={null}
+                  onKeyPress={null}
+                  pattern={null}
+                  placeholder={null}
+                  rows=""
+                  size={null}
+                  title={null}
+                  type="text"
+                  value={null}
+                />
+              </section>
+            </div>
+          </div>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
+            fontSize="0.65em"
+            fontWeight={400}
+            id={null}
             letterSpacing="0.6px"
           >
             Hang in there, buddy, I'm here to help!
@@ -735,9 +832,102 @@ exports[` 3`] = `
             className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
             fontSize="0.65em"
             fontWeight={400}
+            id={null}
             letterSpacing="0.6px"
           >
             Out of range!
+          </p>
+        </section>
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm DataRange__RangeContainer-u3cy9q-0 iSEnRZ"
+          id="inputError"
+          rows={null}
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
+            fontSize="0.82em"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing="0px"
+          >
+            Input Range (error)
+          </label>
+          <div
+            className="Bar__BarLayout-sc-1c4axau-2 gzisev"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-sc-1c4axau-1 hAjMjw"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+                id="inputError_left_container"
+                rows={null}
+              >
+                <input
+                  autoComplete="off"
+                  className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
+                  cols=""
+                  disabled={false}
+                  id="inputError_left"
+                  list={null}
+                  maxLength={null}
+                  name="inputError_left"
+                  onBlur={null}
+                  onChange={[Function]}
+                  onFocus={null}
+                  onKeyPress={null}
+                  pattern={null}
+                  placeholder={null}
+                  rows=""
+                  size={null}
+                  title={null}
+                  type="text"
+                  value={null}
+                />
+              </section>
+            </div>
+            <div
+              className="Bar__Slot-sc-1c4axau-1 kHYCoh"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+                id="inputError_right_container"
+                rows={null}
+              >
+                <input
+                  autoComplete="off"
+                  className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
+                  cols=""
+                  disabled={false}
+                  id="inputError_right"
+                  list={null}
+                  maxLength={null}
+                  name="inputError_right"
+                  onBlur={null}
+                  onChange={[Function]}
+                  onFocus={null}
+                  onKeyPress={null}
+                  pattern={null}
+                  placeholder={null}
+                  rows=""
+                  size={null}
+                  title={null}
+                  type="text"
+                  value={null}
+                />
+              </section>
+            </div>
+          </div>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
+            fontSize="0.65em"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0.6px"
+          >
+            Hang in there, buddy, I'm here to help!
           </p>
         </section>
         <section
@@ -769,7 +959,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-1 sNkdI"
+                  className="TextInput__Input-sc-1fep8p8-2 hNaLVb"
                   cols=""
                   disabled={true}
                   id="inputDisabled_left"
@@ -800,7 +990,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-1 sNkdI"
+                  className="TextInput__Input-sc-1fep8p8-2 hNaLVb"
                   cols=""
                   disabled={true}
                   id="inputDisabled_right"
@@ -826,6 +1016,7 @@ exports[` 3`] = `
             className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
             fontSize="0.65em"
             fontWeight={400}
+            id={null}
             letterSpacing="0.6px"
           >
             Hang in there, buddy, I'm here to help!
@@ -872,7 +1063,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+                  className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
                   cols=""
                   disabled={false}
                   id="select_left"
@@ -903,7 +1094,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+                  className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
                   cols=""
                   disabled={false}
                   id="select_right"
@@ -929,6 +1120,7 @@ exports[` 3`] = `
             className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
             fontSize="0.65em"
             fontWeight={400}
+            id={null}
             letterSpacing="0.6px"
           >
             Hang in there, buddy, I'm here to help!
@@ -963,7 +1155,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+                  className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
                   cols=""
                   disabled={false}
                   id="selectOperation_left"
@@ -988,7 +1180,7 @@ exports[` 3`] = `
               className="Bar__Slot-sc-1c4axau-1 flbmFP"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm SelectMenu__SelectMenuContainer-sc-12n3hw0-0 ewaOwo"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm SelectMenu__SelectMenuContainer-sc-12n3hw0-1 iAwVFR"
                 id={null}
                 rows={null}
               >
@@ -1025,7 +1217,7 @@ exports[` 3`] = `
                             autoComplete="off"
                             autoCorrect="off"
                             disabled={false}
-                            id="react-select-35-input"
+                            id="react-select-4-input"
                             onBlur={[Function]}
                             onChange={[Function]}
                             onFocus={[Function]}
@@ -1106,7 +1298,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+                  className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
                   cols=""
                   disabled={false}
                   id="selectOperation_right"
@@ -1132,6 +1324,7 @@ exports[` 3`] = `
             className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
             fontSize="0.65em"
             fontWeight={400}
+            id={null}
             letterSpacing="0.6px"
           >
             This help text has been passed through a prop!
@@ -1166,7 +1359,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-1 gZOQGf"
+                  className="TextInput__Input-sc-1fep8p8-2 eFFJSM"
                   cols=""
                   disabled={false}
                   id="selectError_left"
@@ -1197,7 +1390,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-1 gZOQGf"
+                  className="TextInput__Input-sc-1fep8p8-2 eFFJSM"
                   cols=""
                   disabled={false}
                   id="selectError_right"
@@ -1223,6 +1416,7 @@ exports[` 3`] = `
             className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
             fontSize="0.65em"
             fontWeight={400}
+            id={null}
             letterSpacing="0.6px"
           >
             Hang in there, buddy, I'm here to help!
@@ -1231,6 +1425,7 @@ exports[` 3`] = `
             className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
             fontSize="0.65em"
             fontWeight={400}
+            id={null}
             letterSpacing="0.6px"
           >
             Out of range!
@@ -1265,7 +1460,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-1 sNkdI"
+                  className="TextInput__Input-sc-1fep8p8-2 hNaLVb"
                   cols=""
                   disabled={true}
                   id="selectDisabled_left"
@@ -1296,7 +1491,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-1 sNkdI"
+                  className="TextInput__Input-sc-1fep8p8-2 hNaLVb"
                   cols=""
                   disabled={true}
                   id="selectDisabled_right"
@@ -1322,6 +1517,7 @@ exports[` 3`] = `
             className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
             fontSize="0.65em"
             fontWeight={400}
+            id={null}
             letterSpacing="0.6px"
           >
             Hang in there, buddy, I'm here to help!
@@ -1361,7 +1557,7 @@ exports[` 4`] = `
         >
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+            className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
             cols=""
             disabled={false}
             id="skeleton_left"
@@ -1392,7 +1588,7 @@ exports[` 4`] = `
         >
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+            className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
             cols=""
             disabled={false}
             id="skeleton_right"

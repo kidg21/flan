@@ -1,1189 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[` 1`] = `
-<div
-  style={
-    Object {
-      "padding": "2rem",
-    }
-  }
->
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-    id="documentation_container"
-    rows={null}
-  >
-    <label
-      className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-      fontSize="0.82em"
-      fontWeight={400}
-      htmlFor={null}
-      letterSpacing="0px"
-    >
-      Text Input ( Standard )
-    </label>
-    <input
-      autoComplete="off"
-      className="TextInput__Input-sc-1fep8p8-1 hrazvq"
-      cols=""
-      disabled={false}
-      id="documentation"
-      list={null}
-      maxLength={null}
-      name="documentation"
-      onBlur={null}
-      onChange={null}
-      onFocus={null}
-      onKeyPress={null}
-      pattern={null}
-      placeholder="I am just keeping things warm"
-      rows=""
-      size={null}
-      title={null}
-      type="text"
-      value={null}
-    />
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-      fontSize="0.65em"
-      fontWeight={400}
-      letterSpacing="0.6px"
-    >
-      Hang in there, buddy, I'm here to help!
-    </p>
-  </section>
-</div>
-`;
-
-exports[` 2`] = `
-<div
-  style={
-    Object {
-      "padding": "2rem",
-    }
-  }
->
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-    id="skeleton_container"
-    rows={null}
-  >
-    <input
-      autoComplete="off"
-      className="TextInput__Input-sc-1fep8p8-1 hrazvq"
-      cols=""
-      disabled={false}
-      id="skeleton"
-      list={null}
-      maxLength={null}
-      name="skeleton"
-      onBlur={null}
-      onChange={null}
-      onFocus={null}
-      onKeyPress={null}
-      pattern={null}
-      placeholder={null}
-      rows=""
-      size={null}
-      title={null}
-      type="text"
-      value={null}
-    />
-  </section>
-</div>
-`;
-
-exports[` 3`] = `
-<div
-  style={
-    Object {
-      "padding": "2rem",
-    }
-  }
->
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-    id="knobs_container"
-    rows={null}
-  >
-    <label
-      className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-      fontSize="0.82em"
-      fontWeight={400}
-      htmlFor={null}
-      letterSpacing="0px"
-    >
-      Text Input Label
-    </label>
-    <input
-      autoComplete="off"
-      className="TextInput__Input-sc-1fep8p8-1 hrazvq"
-      cols=""
-      disabled={false}
-      id="knobs"
-      list={null}
-      maxLength={null}
-      name="knobs"
-      onBlur={null}
-      onChange={null}
-      onFocus={null}
-      onKeyPress={null}
-      pattern={null}
-      placeholder="I am just keeping things warm"
-      rows=""
-      size={null}
-      title={null}
-      type="text"
-      value={null}
-    />
-    <p
-      className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-      fontSize="0.65em"
-      fontWeight={400}
-      letterSpacing="0.6px"
-    >
-      Have you been helped yet?
-    </p>
-  </section>
-</div>
-`;
-
-exports[` 4`] = `
-<form
-  action={null}
-  className="Form__FormWrapper-v2wrel-0 geeIqY"
-  method={null}
-  onSubmit={null}
->
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 eVqRaz Form__FormInputs-v2wrel-3 bZGKXs"
-    id={null}
-    rows={null}
-  >
-    <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-      id="pattern_container"
-      rows={null}
-    >
-      <label
-        className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-        fontSize="0.82em"
-        fontWeight={400}
-        htmlFor={null}
-        letterSpacing="0px"
-      >
-        Text Input ( text )
-      </label>
-      <input
-        autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 hrazvq"
-        cols=""
-        disabled={false}
-        id="pattern"
-        list={null}
-        maxLength={null}
-        name="pattern"
-        onBlur={null}
-        onChange={null}
-        onFocus={null}
-        onKeyPress={null}
-        pattern="[A-Za-z]{3}"
-        placeholder="I am just keeping things warm"
-        rows=""
-        size={null}
-        title={null}
-        type="text"
-        value={null}
-      />
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-        fontSize="0.65em"
-        fontWeight={400}
-        letterSpacing="0.6px"
-      >
-        Can contain only three letters (no numbers or special characters
-      </p>
-    </section>
-    <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-      id="textarea_container"
-      rows={null}
-    >
-      <label
-        className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-        fontSize="0.82em"
-        fontWeight={400}
-        htmlFor={null}
-        letterSpacing="0px"
-      >
-        Text Input ( textarea )
-      </label>
-      <textarea
-        autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 ldkNHs"
-        cols=""
-        disabled={false}
-        id="textarea"
-        list={null}
-        maxLength={null}
-        name="textarea"
-        onBlur={null}
-        onChange={null}
-        onFocus={null}
-        onKeyPress={null}
-        pattern={null}
-        placeholder="I am just keeping things warm"
-        rows=""
-        size={null}
-        title={null}
-        type="textarea"
-        value={null}
-      />
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-        fontSize="0.65em"
-        fontWeight={400}
-        letterSpacing="0.6px"
-      >
-        Hang in there, buddy, I'm here to help!
-      </p>
-    </section>
-    <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-      id="number_container"
-      rows={null}
-    >
-      <label
-        className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-        fontSize="0.82em"
-        fontWeight={400}
-        htmlFor={null}
-        letterSpacing="0px"
-      >
-        Text Input ( number )
-      </label>
-      <input
-        autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 hrazvq"
-        cols=""
-        disabled={false}
-        id="number"
-        list={null}
-        maxLength={null}
-        name="number"
-        onBlur={null}
-        onChange={null}
-        onFocus={null}
-        onKeyPress={null}
-        pattern={null}
-        placeholder="I am just keeping things warm"
-        rows=""
-        size={null}
-        title={null}
-        type="number"
-        value={null}
-      />
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-        fontSize="0.65em"
-        fontWeight={400}
-        letterSpacing="0.6px"
-      >
-        Hang in there, buddy, I'm here to help!
-      </p>
-    </section>
-    <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-      id="search_container"
-      rows={null}
-    >
-      <label
-        className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-        fontSize="0.82em"
-        fontWeight={400}
-        htmlFor={null}
-        letterSpacing="0px"
-      >
-        Text Input ( search )
-      </label>
-      <input
-        autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 hrazvq"
-        cols=""
-        disabled={false}
-        id="search"
-        list={null}
-        maxLength={null}
-        name="search"
-        onBlur={null}
-        onChange={null}
-        onFocus={null}
-        onKeyPress={null}
-        pattern={null}
-        placeholder="I am just keeping things warm"
-        rows=""
-        size={null}
-        title={null}
-        type="search"
-        value={null}
-      />
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-        fontSize="0.65em"
-        fontWeight={400}
-        letterSpacing="0.6px"
-      >
-        Hang in there, buddy, I'm here to help!
-      </p>
-    </section>
-    <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-      id="password_container"
-      rows={null}
-    >
-      <label
-        className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-        fontSize="0.82em"
-        fontWeight={400}
-        htmlFor={null}
-        letterSpacing="0px"
-      >
-        Text Input ( password )
-      </label>
-      <input
-        autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 hrazvq"
-        cols=""
-        disabled={false}
-        id="password"
-        list={null}
-        maxLength={null}
-        name="password"
-        onBlur={null}
-        onChange={null}
-        onFocus={null}
-        onKeyPress={null}
-        pattern=".{6,}"
-        placeholder="I am just keeping things warm"
-        rows=""
-        size={null}
-        title="Six or more characters"
-        type="password"
-        value={null}
-      />
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-        fontSize="0.65em"
-        fontWeight={400}
-        letterSpacing="0.6px"
-      >
-        Must contain 6 or more characters
-      </p>
-    </section>
-    <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-      id="email_container"
-      rows={null}
-    >
-      <label
-        className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-        fontSize="0.82em"
-        fontWeight={400}
-        htmlFor={null}
-        letterSpacing="0px"
-      >
-        Text Input ( email )
-      </label>
-      <input
-        autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 hrazvq"
-        cols=""
-        disabled={false}
-        id="email"
-        list={null}
-        maxLength={null}
-        name="email"
-        onBlur={null}
-        onChange={null}
-        onFocus={null}
-        onKeyPress={null}
-        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\\\\.[a-z]{2,}$"
-        placeholder="I am just keeping things warm"
-        rows=""
-        size={null}
-        title={null}
-        type="email"
-        value={null}
-      />
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-        fontSize="0.65em"
-        fontWeight={400}
-        letterSpacing="0.6px"
-      >
-        Hang in there, buddy, I'm here to help!
-      </p>
-    </section>
-    <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-      id="phone_container"
-      rows={null}
-    >
-      <label
-        className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-        fontSize="0.82em"
-        fontWeight={400}
-        htmlFor={null}
-        letterSpacing="0px"
-      >
-        Text Input ( tel )
-      </label>
-      <input
-        autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 hrazvq"
-        cols=""
-        disabled={false}
-        id="phone"
-        list={null}
-        maxLength={null}
-        name="phone"
-        onBlur={null}
-        onChange={null}
-        onFocus={null}
-        onKeyPress={null}
-        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
-        placeholder="I am just keeping things warm"
-        rows=""
-        size={null}
-        title={null}
-        type="tel"
-        value={null}
-      />
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-        fontSize="0.65em"
-        fontWeight={400}
-        letterSpacing="0.6px"
-      >
-        Hang in there, buddy, I'm here to help!
-      </p>
-    </section>
-    <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-      id="url_container"
-      rows={null}
-    >
-      <label
-        className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-        fontSize="0.82em"
-        fontWeight={400}
-        htmlFor={null}
-        letterSpacing="0px"
-      >
-        Text Input ( url )
-      </label>
-      <input
-        autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 hrazvq"
-        cols=""
-        disabled={false}
-        id="url"
-        list={null}
-        maxLength={null}
-        name="url"
-        onBlur={null}
-        onChange={null}
-        onFocus={null}
-        onKeyPress={null}
-        pattern="https?://.+"
-        placeholder="I am just keeping things warm"
-        rows=""
-        size={null}
-        title={null}
-        type="url"
-        value={null}
-      />
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-        fontSize="0.65em"
-        fontWeight={400}
-        letterSpacing="0.6px"
-      >
-        Hang in there, buddy, I'm here to help!
-      </p>
-    </section>
-    <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-      id="color_container"
-      rows={null}
-    >
-      <label
-        className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-        fontSize="0.82em"
-        fontWeight={400}
-        htmlFor={null}
-        letterSpacing="0px"
-      >
-        Text Input ( color )
-      </label>
-      <input
-        autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 hrazvq"
-        cols=""
-        disabled={false}
-        id="color"
-        list={null}
-        maxLength={null}
-        name="color"
-        onBlur={null}
-        onChange={null}
-        onFocus={null}
-        onKeyPress={null}
-        pattern={null}
-        placeholder="I am just keeping things warm"
-        rows=""
-        size={null}
-        title={null}
-        type="color"
-        value={null}
-      />
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-        fontSize="0.65em"
-        fontWeight={400}
-        letterSpacing="0.6px"
-      >
-        Hang in there, buddy, I'm here to help!
-      </p>
-    </section>
-    <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-      id="date_container"
-      rows={null}
-    >
-      <label
-        className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-        fontSize="0.82em"
-        fontWeight={400}
-        htmlFor={null}
-        letterSpacing="0px"
-      >
-        Text Input ( date )
-      </label>
-      <input
-        autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 hrazvq"
-        cols=""
-        disabled={false}
-        id="date"
-        list={null}
-        maxLength={null}
-        name="date"
-        onBlur={null}
-        onChange={null}
-        onFocus={null}
-        onKeyPress={null}
-        pattern={null}
-        placeholder="I am just keeping things warm"
-        rows=""
-        size={null}
-        title={null}
-        type="date"
-        value={null}
-      />
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-        fontSize="0.65em"
-        fontWeight={400}
-        letterSpacing="0.6px"
-      >
-        Hang in there, buddy, I'm here to help!
-      </p>
-    </section>
-    <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-      id="time_container"
-      rows={null}
-    >
-      <label
-        className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-        fontSize="0.82em"
-        fontWeight={400}
-        htmlFor={null}
-        letterSpacing="0px"
-      >
-        Text Input ( time )
-      </label>
-      <input
-        autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 hrazvq"
-        cols=""
-        disabled={false}
-        id="time"
-        list={null}
-        maxLength={null}
-        name="time"
-        onBlur={null}
-        onChange={null}
-        onFocus={null}
-        onKeyPress={null}
-        pattern={null}
-        placeholder="I am just keeping things warm"
-        rows=""
-        size={null}
-        title={null}
-        type="time"
-        value={null}
-      />
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-        fontSize="0.65em"
-        fontWeight={400}
-        letterSpacing="0.6px"
-      >
-        Hang in there, buddy, I'm here to help!
-      </p>
-    </section>
-    <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-      id="datetime_container"
-      rows={null}
-    >
-      <label
-        className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-        fontSize="0.82em"
-        fontWeight={400}
-        htmlFor={null}
-        letterSpacing="0px"
-      >
-        Text Input ( datetime-local )
-      </label>
-      <input
-        autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 hrazvq"
-        cols=""
-        disabled={false}
-        id="datetime"
-        list={null}
-        maxLength={null}
-        name="datetime"
-        onBlur={null}
-        onChange={null}
-        onFocus={null}
-        onKeyPress={null}
-        pattern={null}
-        placeholder="I am just keeping things warm"
-        rows=""
-        size={null}
-        title={null}
-        type="datetime-local"
-        value={null}
-      />
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-        fontSize="0.65em"
-        fontWeight={400}
-        letterSpacing="0.6px"
-      >
-        Hang in there, buddy, I'm here to help!
-      </p>
-    </section>
-    <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-      id="month_container"
-      rows={null}
-    >
-      <label
-        className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-        fontSize="0.82em"
-        fontWeight={400}
-        htmlFor={null}
-        letterSpacing="0px"
-      >
-        Text Input ( month )
-      </label>
-      <input
-        autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 hrazvq"
-        cols=""
-        disabled={false}
-        id="month"
-        list={null}
-        maxLength={null}
-        name="month"
-        onBlur={null}
-        onChange={null}
-        onFocus={null}
-        onKeyPress={null}
-        pattern={null}
-        placeholder="I am just keeping things warm"
-        rows=""
-        size={null}
-        title={null}
-        type="month"
-        value={null}
-      />
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-        fontSize="0.65em"
-        fontWeight={400}
-        letterSpacing="0.6px"
-      >
-        Hang in there, buddy, I'm here to help!
-      </p>
-    </section>
-    <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-      id="week_container"
-      rows={null}
-    >
-      <label
-        className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-        fontSize="0.82em"
-        fontWeight={400}
-        htmlFor={null}
-        letterSpacing="0px"
-      >
-        Text Input ( week )
-      </label>
-      <input
-        autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 hrazvq"
-        cols=""
-        disabled={false}
-        id="week"
-        list={null}
-        maxLength={null}
-        name="week"
-        onBlur={null}
-        onChange={null}
-        onFocus={null}
-        onKeyPress={null}
-        pattern={null}
-        placeholder="I am just keeping things warm"
-        rows=""
-        size={null}
-        title={null}
-        type="week"
-        value={null}
-      />
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-        fontSize="0.65em"
-        fontWeight={400}
-        letterSpacing="0.6px"
-      >
-        Hang in there, buddy, I'm here to help!
-      </p>
-    </section>
-    <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-      id="hidden_container"
-      rows={null}
-    >
-      <label
-        className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-        fontSize="0.82em"
-        fontWeight={400}
-        htmlFor={null}
-        letterSpacing="0px"
-      >
-        Text Input ( hidden )
-      </label>
-      <input
-        autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 hrazvq"
-        cols=""
-        disabled={false}
-        id="hidden"
-        list={null}
-        maxLength={null}
-        name="hidden"
-        onBlur={null}
-        onChange={null}
-        onFocus={null}
-        onKeyPress={null}
-        pattern={null}
-        placeholder="I am just keeping things warm"
-        rows=""
-        size={null}
-        title={null}
-        type="hidden"
-        value={null}
-      />
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-        fontSize="0.65em"
-        fontWeight={400}
-        letterSpacing="0.6px"
-      >
-        Hang in there, buddy, I'm here to help!
-      </p>
-    </section>
-  </section>
-</form>
-`;
-
-exports[` 5`] = `
-<div
-  className="Panel__PanelWrapper-sc-48epke-0 kObpyG"
-  id={null}
->
-  <section
-    className="Panel__SectionWrapper-sc-48epke-1 jZYywS"
-  >
-    <form
-      action={null}
-      className="Form__FormWrapper-v2wrel-0 geeIqY"
-      method={null}
-      onSubmit={null}
-    >
-      <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm Form__FormHeader-v2wrel-1 dPFQVY"
-        id={null}
-        rows={null}
-      >
-        <h5
-          className="Typography__TitleText-sc-19auepv-2 bKCMpV"
-          fontSize="1.15em"
-          fontWeight={600}
-          letterSpacing="0px"
-        >
-          The Text Input Family
-        </h5>
-      </section>
-      <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 eVqRaz Form__FormInputs-v2wrel-3 bZGKXs"
-        id={null}
-        rows={null}
-      >
-        <section
-          className="Form__FormSection-v2wrel-2 kbyyVh"
-        >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 inWPqt"
-            id="error_container"
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-              fontSize="0.82em"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing="0px"
-            >
-              Text Input ( error boolean )
-            </label>
-            <input
-              autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-1 gZOQGf"
-              cols=""
-              disabled={false}
-              id="error"
-              list={null}
-              maxLength={null}
-              name="error"
-              onBlur={null}
-              onChange={null}
-              onFocus={null}
-              onKeyPress={null}
-              pattern={null}
-              placeholder="I am just keeping things warm"
-              rows=""
-              size={null}
-              title={null}
-              type="text"
-              value={null}
-            />
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-              fontSize="0.65em"
-              fontWeight={400}
-              letterSpacing="0.6px"
-            >
-              Hang in there, buddy, I'm here to help!
-            </p>
-          </section>
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 inWPqt"
-            id="errorMessage_container"
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-              fontSize="0.82em"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing="0px"
-            >
-              Text Input ( error string )
-            </label>
-            <input
-              autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-1 gZOQGf"
-              cols=""
-              disabled={false}
-              id="errorMessage"
-              list={null}
-              maxLength={null}
-              name="errorMessage"
-              onBlur={null}
-              onChange={null}
-              onFocus={null}
-              onKeyPress={null}
-              pattern={null}
-              placeholder="I am just keeping things warm"
-              rows=""
-              size={null}
-              title={null}
-              type="text"
-              value={null}
-            />
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-              fontSize="0.65em"
-              fontWeight={400}
-              letterSpacing="0.6px"
-            >
-              Hang in there, buddy, I'm here to help!
-            </p>
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-              fontSize="0.65em"
-              fontWeight={400}
-              letterSpacing="0.6px"
-            >
-              Error Message
-            </p>
-          </section>
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-            id="standard_container"
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-              fontSize="0.82em"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing="0px"
-            >
-              Text Input ( Standard )
-            </label>
-            <input
-              autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-1 hrazvq"
-              cols=""
-              disabled={false}
-              id="standard"
-              list={null}
-              maxLength={null}
-              name="standard"
-              onBlur={null}
-              onChange={null}
-              onFocus={null}
-              onKeyPress={null}
-              pattern={null}
-              placeholder="I am just keeping things warm"
-              rows=""
-              size={null}
-              title={null}
-              type="text"
-              value={null}
-            />
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-              fontSize="0.65em"
-              fontWeight={400}
-              letterSpacing="0.6px"
-            >
-              Hang in there, buddy, I'm here to help!
-            </p>
-          </section>
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-            id="number_container"
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-              fontSize="0.82em"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing="0px"
-            >
-              Text Input ( Number )
-            </label>
-            <input
-              autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-1 hrazvq"
-              cols=""
-              disabled={false}
-              id="number"
-              list={null}
-              maxLength={null}
-              name="number"
-              onBlur={null}
-              onChange={null}
-              onFocus={null}
-              onKeyPress={null}
-              pattern={null}
-              placeholder={null}
-              rows=""
-              size={null}
-              title={null}
-              type="number"
-              value={null}
-            />
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-              fontSize="0.65em"
-              fontWeight={400}
-              letterSpacing="0.6px"
-            >
-              Hang in there, buddy, I'm here to help!
-            </p>
-          </section>
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-            id="textarea_container"
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-              fontSize="0.82em"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing="0px"
-            >
-              Text Input ( Text Area )
-            </label>
-            <textarea
-              autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-1 ldkNHs"
-              cols=""
-              disabled={false}
-              id="textarea"
-              list={null}
-              maxLength={null}
-              name="textarea"
-              onBlur={null}
-              onChange={null}
-              onFocus={null}
-              onKeyPress={null}
-              pattern={null}
-              placeholder={null}
-              rows=""
-              size={null}
-              title={null}
-              type="textarea"
-              value={null}
-            />
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-              fontSize="0.65em"
-              fontWeight={400}
-              letterSpacing="0.6px"
-            >
-              Hang in there, buddy, I'm here to help!
-            </p>
-          </section>
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-            id="required_container"
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 hUZhUB"
-              fontSize="0.82em"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing="0px"
-            >
-              Text Input ( Required )
-            </label>
-            <input
-              autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-1 hrazvq"
-              cols=""
-              disabled={false}
-              id="required"
-              list={null}
-              maxLength={null}
-              name="required"
-              onBlur={null}
-              onChange={null}
-              onFocus={null}
-              onKeyPress={null}
-              pattern={null}
-              placeholder="I am just keeping things warm"
-              rows=""
-              size={null}
-              title={null}
-              type="text"
-              value={null}
-            />
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-              fontSize="0.65em"
-              fontWeight={400}
-              letterSpacing="0.6px"
-            >
-              Hang in there, buddy, I'm here to help!
-            </p>
-          </section>
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 eaRsCT"
-            id="disabled_container"
-            rows={null}
-          >
-            <label
-              className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-              fontSize="0.82em"
-              fontWeight={400}
-              htmlFor={null}
-              letterSpacing="0px"
-            >
-              Text Input ( Disabled )
-            </label>
-            <input
-              autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-1 sNkdI"
-              cols=""
-              disabled={true}
-              id="disabled"
-              list={null}
-              maxLength={null}
-              name="disabled"
-              onBlur={null}
-              onChange={null}
-              onFocus={null}
-              onKeyPress={null}
-              pattern={null}
-              placeholder="I am just keeping things warm"
-              rows=""
-              size={null}
-              title={null}
-              type="text"
-              value={null}
-            />
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-              fontSize="0.65em"
-              fontWeight={400}
-              letterSpacing="0.6px"
-            >
-              Hang in there, buddy, I'm here to help!
-            </p>
-          </section>
-        </section>
-      </section>
-    </form>
-  </section>
-</div>
-`;
-
-exports[` 6`] = `
 <section
   className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
   id="standard_container"
@@ -1200,7 +17,7 @@ exports[` 6`] = `
   </label>
   <input
     autoComplete="off"
-    className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+    className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
     cols=""
     disabled={false}
     id="standard"
@@ -1222,7 +39,7 @@ exports[` 6`] = `
 </section>
 `;
 
-exports[` 7`] = `
+exports[` 2`] = `
 <form
   action={null}
   className="Form__FormWrapper-v2wrel-0 geeIqY"
@@ -1250,7 +67,7 @@ exports[` 7`] = `
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+        className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
         cols=""
         disabled={false}
         id="default"
@@ -1273,6 +90,7 @@ exports[` 7`] = `
         className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
         fontSize="0.65em"
         fontWeight={400}
+        id={null}
         letterSpacing="0.6px"
       >
         Hang in there, buddy, I'm here to help!
@@ -1294,7 +112,7 @@ exports[` 7`] = `
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 sNkdI"
+        className="TextInput__Input-sc-1fep8p8-2 hNaLVb"
         cols=""
         disabled={true}
         id="disabled"
@@ -1317,6 +135,7 @@ exports[` 7`] = `
         className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
         fontSize="0.65em"
         fontWeight={400}
+        id={null}
         letterSpacing="0.6px"
       >
         Hang in there, buddy, I'm here to help!
@@ -1338,7 +157,7 @@ exports[` 7`] = `
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 gZOQGf"
+        className="TextInput__Input-sc-1fep8p8-2 eFFJSM"
         cols=""
         disabled={false}
         id="error"
@@ -1361,24 +180,182 @@ exports[` 7`] = `
         className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
         fontSize="0.65em"
         fontWeight={400}
+        id={null}
         letterSpacing="0.6px"
       >
         Hang in there, buddy, I'm here to help!
       </p>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 inWPqt"
+      id="error_container"
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
+        fontSize="0.82em"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing="0px"
+      >
+        Text Input ( Error )
+      </label>
+      <input
+        autoComplete="off"
+        className="TextInput__Input-sc-1fep8p8-2 eFFJSM"
+        cols=""
+        disabled={false}
+        id="error"
+        list={null}
+        maxLength={null}
+        name="error"
+        onBlur={null}
+        onChange={null}
+        onFocus={null}
+        onKeyPress={null}
+        pattern={null}
+        placeholder="I am just keeping things warm"
+        rows=""
+        size={null}
+        title={null}
+        type="text"
+        value={null}
+      />
       <p
         className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
         fontSize="0.65em"
         fontWeight={400}
+        id={null}
         letterSpacing="0.6px"
       >
-        Don't sweat it...we can fix this!
+        Hang in there, buddy, I'm here to help!
       </p>
+      <section
+        className="TextInput__MessageContainer-sc-1fep8p8-1 fiNdGb"
+      >
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
+          fontSize="0.65em"
+          fontWeight={400}
+          id={null}
+          letterSpacing="0.6px"
+        >
+          This is an error message for you
+        </p>
+      </section>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+      id="error_container"
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
+        fontSize="0.82em"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing="0px"
+      >
+        Text Input ( Warning )
+      </label>
+      <input
+        autoComplete="off"
+        className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
+        cols=""
+        disabled={false}
+        id="error"
+        list={null}
+        maxLength={null}
+        name="error"
+        onBlur={null}
+        onChange={null}
+        onFocus={null}
+        onKeyPress={null}
+        pattern={null}
+        placeholder="I am just keeping things warm"
+        rows=""
+        size={null}
+        title={null}
+        type="text"
+        value={null}
+      />
+      <section
+        className="TextInput__MessageContainer-sc-1fep8p8-1 fiNdGb"
+      >
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
+          fontSize="0.65em"
+          fontWeight={400}
+          id={null}
+          letterSpacing="0.6px"
+        >
+          this is my warning
+        </p>
+      </section>
+    </section>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+      id="error_container"
+      rows={null}
+    >
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
+        fontSize="0.82em"
+        fontWeight={400}
+        htmlFor={null}
+        letterSpacing="0px"
+      >
+        Text Input ( Warning )
+      </label>
+      <input
+        autoComplete="off"
+        className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
+        cols=""
+        disabled={false}
+        id="error"
+        list={null}
+        maxLength={null}
+        name="error"
+        onBlur={null}
+        onChange={null}
+        onFocus={null}
+        onKeyPress={null}
+        pattern={null}
+        placeholder="I am just keeping things warm"
+        rows=""
+        size={null}
+        title={null}
+        type="text"
+        value={null}
+      />
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
+        fontSize="0.65em"
+        fontWeight={400}
+        id={null}
+        letterSpacing="0.6px"
+      >
+        Hang in there, buddy, I'm here to help!
+      </p>
+      <section
+        className="TextInput__MessageContainer-sc-1fep8p8-1 fiNdGb"
+      >
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
+          fontSize="0.65em"
+          fontWeight={400}
+          id={null}
+          letterSpacing="0.6px"
+        >
+          this is my warning
+        </p>
+      </section>
     </section>
   </section>
 </form>
 `;
 
-exports[` 8`] = `
+exports[` 3`] = `
 <form
   action={null}
   className="Form__FormWrapper-v2wrel-0 geeIqY"
@@ -1406,7 +383,7 @@ exports[` 8`] = `
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+        className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
         cols=""
         disabled={false}
         id="required"
@@ -1429,6 +406,7 @@ exports[` 8`] = `
         className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
         fontSize="0.65em"
         fontWeight={400}
+        id={null}
         letterSpacing="0.6px"
       >
         Hang in there, buddy, I'm here to help!
@@ -1450,7 +428,7 @@ exports[` 8`] = `
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+        className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
         cols=""
         disabled={false}
         id="pattern"
@@ -1473,6 +451,7 @@ exports[` 8`] = `
         className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
         fontSize="0.65em"
         fontWeight={400}
+        id={null}
         letterSpacing="0.6px"
       >
         Can contain only three letters (no numbers or special characters
@@ -1494,7 +473,7 @@ exports[` 8`] = `
       </label>
       <textarea
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 ldkNHs"
+        className="TextInput__Input-sc-1fep8p8-2 edQyIT"
         cols=""
         disabled={false}
         id="textarea"
@@ -1517,6 +496,7 @@ exports[` 8`] = `
         className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
         fontSize="0.65em"
         fontWeight={400}
+        id={null}
         letterSpacing="0.6px"
       >
         Hang in there, buddy, I'm here to help!
@@ -1538,7 +518,7 @@ exports[` 8`] = `
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+        className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
         cols=""
         disabled={false}
         id="number"
@@ -1561,6 +541,7 @@ exports[` 8`] = `
         className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
         fontSize="0.65em"
         fontWeight={400}
+        id={null}
         letterSpacing="0.6px"
       >
         Hang in there, buddy, I'm here to help!
@@ -1582,7 +563,7 @@ exports[` 8`] = `
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+        className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
         cols=""
         disabled={false}
         id="search"
@@ -1605,6 +586,7 @@ exports[` 8`] = `
         className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
         fontSize="0.65em"
         fontWeight={400}
+        id={null}
         letterSpacing="0.6px"
       >
         Hang in there, buddy, I'm here to help!
@@ -1626,7 +608,7 @@ exports[` 8`] = `
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+        className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
         cols=""
         disabled={false}
         id="password"
@@ -1649,6 +631,7 @@ exports[` 8`] = `
         className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
         fontSize="0.65em"
         fontWeight={400}
+        id={null}
         letterSpacing="0.6px"
       >
         Must contain 6 or more characters
@@ -1670,7 +653,7 @@ exports[` 8`] = `
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+        className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
         cols=""
         disabled={false}
         id="email"
@@ -1693,6 +676,7 @@ exports[` 8`] = `
         className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
         fontSize="0.65em"
         fontWeight={400}
+        id={null}
         letterSpacing="0.6px"
       >
         Hang in there, buddy, I'm here to help!
@@ -1714,7 +698,7 @@ exports[` 8`] = `
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+        className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
         cols=""
         disabled={false}
         id="phone"
@@ -1737,6 +721,7 @@ exports[` 8`] = `
         className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
         fontSize="0.65em"
         fontWeight={400}
+        id={null}
         letterSpacing="0.6px"
       >
         Hang in there, buddy, I'm here to help!
@@ -1758,7 +743,7 @@ exports[` 8`] = `
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+        className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
         cols=""
         disabled={false}
         id="url"
@@ -1781,6 +766,7 @@ exports[` 8`] = `
         className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
         fontSize="0.65em"
         fontWeight={400}
+        id={null}
         letterSpacing="0.6px"
       >
         Hang in there, buddy, I'm here to help!
@@ -1802,7 +788,7 @@ exports[` 8`] = `
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+        className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
         cols=""
         disabled={false}
         id="color"
@@ -1825,6 +811,7 @@ exports[` 8`] = `
         className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
         fontSize="0.65em"
         fontWeight={400}
+        id={null}
         letterSpacing="0.6px"
       >
         Hang in there, buddy, I'm here to help!
@@ -1846,7 +833,7 @@ exports[` 8`] = `
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+        className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
         cols=""
         disabled={false}
         id="date"
@@ -1869,6 +856,7 @@ exports[` 8`] = `
         className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
         fontSize="0.65em"
         fontWeight={400}
+        id={null}
         letterSpacing="0.6px"
       >
         Hang in there, buddy, I'm here to help!
@@ -1890,7 +878,7 @@ exports[` 8`] = `
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+        className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
         cols=""
         disabled={false}
         id="time"
@@ -1913,6 +901,7 @@ exports[` 8`] = `
         className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
         fontSize="0.65em"
         fontWeight={400}
+        id={null}
         letterSpacing="0.6px"
       >
         Hang in there, buddy, I'm here to help!
@@ -1934,7 +923,7 @@ exports[` 8`] = `
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+        className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
         cols=""
         disabled={false}
         id="datetime"
@@ -1957,6 +946,7 @@ exports[` 8`] = `
         className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
         fontSize="0.65em"
         fontWeight={400}
+        id={null}
         letterSpacing="0.6px"
       >
         Hang in there, buddy, I'm here to help!
@@ -1978,7 +968,7 @@ exports[` 8`] = `
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+        className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
         cols=""
         disabled={false}
         id="month"
@@ -2001,6 +991,7 @@ exports[` 8`] = `
         className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
         fontSize="0.65em"
         fontWeight={400}
+        id={null}
         letterSpacing="0.6px"
       >
         Hang in there, buddy, I'm here to help!
@@ -2022,7 +1013,7 @@ exports[` 8`] = `
       </label>
       <input
         autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+        className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
         cols=""
         disabled={false}
         id="week"
@@ -2045,6 +1036,7 @@ exports[` 8`] = `
         className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
         fontSize="0.65em"
         fontWeight={400}
+        id={null}
         letterSpacing="0.6px"
       >
         Hang in there, buddy, I'm here to help!
@@ -2054,7 +1046,7 @@ exports[` 8`] = `
 </form>
 `;
 
-exports[` 9`] = `
+exports[` 4`] = `
 <section
   className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
   id="autocomplete_container"
@@ -2071,7 +1063,7 @@ exports[` 9`] = `
   </label>
   <input
     autoComplete="on"
-    className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+    className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
     cols=""
     disabled={false}
     id="autocomplete"

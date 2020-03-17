@@ -1,3 +1,5 @@
+/* eslint-disable complexity */
+/* eslint-disable no-undef */
 /* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
@@ -12,6 +14,12 @@ const TextInputContainer = styled(Grid)`
     return props.theme.text[props.inputTextColor] || props.theme.text.secondary;
   }};
   width: 100%;
+`;
+
+const MessageContainer = styled.section`
+color: ${(props) => {
+  return props.theme.text[props.messageColor] || props.theme.text.secondary;
+}};
 `;
 
 const Input = styled.input`
@@ -109,6 +117,7 @@ function TextInput({
   let inputBorderColor;
   let inputBorderColorHover;
   let inputCaretColor;
+  let messageColor;
   let inputResize;
   let placeholderColor;
   let inputSelectColor;
@@ -152,28 +161,26 @@ function TextInput({
       <datalist id={autoCompleteDataListId}>{options}</datalist>
     );
   }
-  let errorText;
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  let errorText = "";
   if (isDisabled) {
     inputBorderColor = "neutral40";
     inputFillColor = "disabled";
     inputTextColor = "disabled";
   } else if (error) {
     inputBorderColor = "alert60";
+    messageColor = "alert";
     inputBorderColorHover = "alert40";
     inputSelectColor = "alert60";
     inputTextColor = "alert";
     placeholderColor = "secondary";
-    errorText = typeof error === "string" ? error : "";
+    if (typeof error === "string") errorText = error;
   } else if (warning) {
-    inputBorderColor = "warning60";
-    inputBorderColorHover = "warning40";
-    inputSelectColor = "warning60";
-    inputTextColor = "warning";
     placeholderColor = "secondary";
-    errorText = typeof warning === "string" ? warning : "";
+    messageColor = "alert";
   }
+
 
   return (
     <TextInputContainer
@@ -218,7 +225,7 @@ function TextInput({
       {autocompleteDataList}
       {helpText ? <Text size="1x" text={helpText} /> : null}
       {children}
-      {errorText ? <Text size="1x" text={errorText} /> : null}
+      {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="1x" text={errorText || warning} /></MessageContainer> : null}
     </TextInputContainer>
   );
 }
@@ -272,7 +279,7 @@ TextInput.propTypes = {
   name: PropTypes.string,
   rows: PropTypes.string,
   cols: PropTypes.string,
-  warning: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  warning: PropTypes.string,
   maxlength: PropTypes.number,
 };
 
@@ -281,7 +288,7 @@ TextInput.defaultProps = {
   children: null,
   className: null,
   disabled: null,
-  error: null,
+  error: "",
   helpText: null,
   id: null,
   label: null,
@@ -300,7 +307,7 @@ TextInput.defaultProps = {
   name: "",
   rows: "",
   cols: "",
-  warning: "",
+  warning: null,
   maxlength: null,
 };
 
