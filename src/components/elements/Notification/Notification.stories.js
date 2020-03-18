@@ -7,7 +7,6 @@ import Banner from "blocks/Banner";
 import Notification from "elements/Notification";
 
 
-
 storiesOf("Elements|Notification", module)
 
   .add(
@@ -47,15 +46,17 @@ storiesOf("Elements|Notification", module)
                 onClose={handleClose}
               />
             </Notification>
-            <Button
-              label="Show Notification"
-              style={{ marginLeft: "3rem" }}
-              onClick={handleOpen}
+
+            <Panel
+              header={
+                <Button label="Show Notification" onClick={handleOpen} />
+              }
             />
           </Fragment>
         );
       });
-    });
+    },
+  );
 
 storiesOf("Elements|Notification", module)
   .addDecorator(withKnobs)

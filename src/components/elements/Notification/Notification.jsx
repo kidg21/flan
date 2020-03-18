@@ -120,17 +120,16 @@ const NotificationContainer = styled.div`
 `;
 
 function Notification({
-  id,
   align,
-  visible,
+  ariaDescribedBy,
+  ariaLabelledBy,
+  children,
+  id,
   onClick,
+  opacity,
   position,
   scale,
-  opacity,
-  ariaLabelledBy,
-  ariaDescribedBy,
-  children,
-  style,
+  visible,
 }) {
   let justifyContent;
   let alignItems;
@@ -162,18 +161,17 @@ function Notification({
   }
   return (
     <NotificationContainer
-      id={id}
       align={align}
-      visible={visible}
+      alignItems={alignItems}
+      aria-describedby={ariaDescribedBy}
+      aria-labelledby={ariaLabelledBy}
+      id={id}
+      justifyContent={justifyContent}
+      onClick={onClick}
+      opacity={opacity}
       position={position}
       scale={scale}
-      opacity={opacity}
-      aria-labelledby={ariaLabelledBy}
-      aria-describedby={ariaDescribedBy}
-      onClick={onClick}
-      justifyContent={justifyContent}
-      alignItems={alignItems}
-      style={style}
+      visible={visible}
     >
       <ContentWrapper>{children}</ContentWrapper>
     </NotificationContainer>
@@ -183,7 +181,6 @@ function Notification({
 export default Notification;
 
 Notification.propTypes = {
-  id: PropTypes.string,
   align: PropTypes.oneOf([
     "topLeft",
     "topCenter",
@@ -192,27 +189,26 @@ Notification.propTypes = {
     "bottomCenter",
     "bottomRight",
   ]),
-  visible: PropTypes.bool,
+  ariaDescribedBy: PropTypes.string,
+  ariaLabelledBy: PropTypes.string,
+  children: PropTypes.node,
+  id: PropTypes.string,
+  onClick: PropTypes.func,
+  opacity: PropTypes.oneOf(["fadeIn", "fadeOut"]),
   position: PropTypes.oneOf(["moveUp", "moveDown"]),
   scale: PropTypes.oneOf(["scaleUp", "scaleDown"]),
-  opacity: PropTypes.oneOf(["fadeIn", "fadeOut"]),
-  onClick: PropTypes.func,
-  ariaLabelledBy: PropTypes.string,
-  ariaDescribedBy: PropTypes.string,
-  children: PropTypes.node,
-  style: PropTypes.string,
+  visible: PropTypes.bool,
 };
 
 Notification.defaultProps = {
-  id: null,
   align: null,
-  visible: false,
+  ariaDescribedBy: null,
+  ariaLabelledBy: null,
+  children: null,
+  id: null,
+  onClick: null,
+  opacity: null,
   position: null,
   scale: null,
-  opacity: null,
-  onClick: null,
-  ariaLabelledBy: null,
-  ariaDescribedBy: null,
-  children: null,
-  style: null,
+  visible: false,
 };
