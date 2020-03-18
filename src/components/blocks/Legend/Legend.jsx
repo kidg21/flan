@@ -17,11 +17,10 @@ const Wrapper = styled.div`
 const TableContainer = styled.table`
   width: 100%;
   color: ${(props) => {
-    return props.theme.text.primary;
+    return props.theme.text.secondary;
   }};
   table-layout: fixed;
   border-collapse: collapse;
-  min-width: 400px;
 
 
   &:empty {
@@ -33,13 +32,11 @@ const TableContainer = styled.table`
 }
 `;
 
-const Row = styled.tr`
-  margin: 1em;
-`;
+
 
 const Cell = styled.td`
   padding: ${(props) => {
-    return props.cellPadding || "0.15em 0.15em 0.15em";
+    return props.cellPadding || "0.5em";
   }};
   border-bottom: ${(props) => {
     return props.cellBorder || "";
@@ -60,6 +57,20 @@ const Cell = styled.td`
     }
   }
 `;
+
+const Row = styled.tr`
+  margin: 1em;
+
+  ${Cell}:first-child{
+    color: ${(props) => {
+      return props.theme.text.secondary;
+    }};
+  ${Cell}:last-child{
+      color: ${(props) => {
+        return props.theme.text.primary;
+      }};
+`;
+
 
 function Legend({
   id,
@@ -112,12 +123,12 @@ function Legend({
 Legend.propTypes = {
   id: PropTypes.string,
   fontSize: PropTypes.string,
+  title: PropTypes.string,
   data: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
     label: PropTypes.string,
     value: PropTypes.node,
   })).isRequired,
-  title: PropTypes.node,
 };
 
 Legend.defaultProps = {

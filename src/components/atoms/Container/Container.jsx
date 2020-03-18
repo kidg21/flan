@@ -19,6 +19,9 @@ const Wrapper = styled.div`
 const BoxContainer = styled.div`
   overflow-y: auto;
   overflow-x: auto;
+  max-height: ${(props) => {
+    return props.maxHeight || "";
+  }};
   padding: 0;
   height: ${(props) => {
     return props.height || "";
@@ -69,11 +72,11 @@ const BoxContainer = styled.div`
 `;
 
 const Container = React.forwardRef(({
-  id, height, width, padding, border, children,
+  id, height, width, maxHeight, padding, border, children,
 }, ref) => {
   return (
     <Wrapper padding={padding} height={height} width={width}>
-      <BoxContainer id={id} height={height ? "100%" : ""} border={border} ref={ref}>
+      <BoxContainer id={id} height={height ? "100%" : ""} maxHeight={maxHeight} border={border} ref={ref}>
         {children}
       </BoxContainer>
     </Wrapper>
@@ -86,6 +89,7 @@ Container.propTypes = {
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   children: PropTypes.node,
+  maxHeight: PropTypes.string,
   padding: PropTypes.string,
 };
 
@@ -93,6 +97,7 @@ Container.defaultProps = {
   border: null,
   id: null,
   height: null,
+  maxHeight: null,
   width: null,
   children: null,
   padding: null,

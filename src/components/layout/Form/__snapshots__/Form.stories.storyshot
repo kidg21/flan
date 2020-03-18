@@ -39,15 +39,17 @@ exports[` 1`] = `
           className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
           fontSize="1em"
           fontWeight={400}
+          id={null}
           letterSpacing="0px"
         >
           This is the subtitle
         </p>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-          fontSize="0.95em"
+          className="Typography__Paragraph-sc-19auepv-3 CcLky"
+          fontSize="0.75em"
           fontWeight={400}
-          letterSpacing="0px"
+          id={null}
+          letterSpacing="0.2px"
         >
           Just think about these things in your mind - then bring them into your world. Isn't that fantastic?  All you need to paint is a few tools, a little instruction, and a vision in your mind.
         </p>
@@ -84,7 +86,7 @@ exports[` 1`] = `
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
+              className="TextInput__Input-sc-1fep8p8-2 isQToF"
               cols=""
               disabled={false}
               id="firstName"
@@ -107,6 +109,7 @@ exports[` 1`] = `
               className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
               fontSize="0.65em"
               fontWeight={400}
+              id={null}
               letterSpacing="0.6px"
             >
               The one that your parents gave you
@@ -128,7 +131,7 @@ exports[` 1`] = `
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 eYbRbJ"
+              className="TextInput__Input-sc-1fep8p8-2 isQToF"
               cols=""
               disabled={false}
               id="lastName"
@@ -151,6 +154,7 @@ exports[` 1`] = `
               className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
               fontSize="0.65em"
               fontWeight={400}
+              id={null}
               letterSpacing="0.6px"
             >
               The one that comes after..
@@ -177,6 +181,7 @@ exports[` 1`] = `
               className="Typography__Paragraph-sc-19auepv-3 dZma-de"
               fontSize="0.95em"
               fontWeight={600}
+              id={null}
               letterSpacing="0px"
             >
               Checkbox Group Label
@@ -185,6 +190,7 @@ exports[` 1`] = `
               className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
               fontSize="0.95em"
               fontWeight={400}
+              id={null}
               letterSpacing="0px"
             >
               Hang in there, buddy, I'm here to help!
@@ -375,7 +381,7 @@ exports[` 1`] = `
                   className=" css-1hwfws3"
                 >
                   <div
-                    className=" css-gxjmgv-placeholder"
+                    className=" css-di10jl-placeholder"
                   >
                     Choose One Or More...
                   </div>
@@ -469,6 +475,7 @@ exports[` 1`] = `
               className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
               fontSize="0.65em"
               fontWeight={400}
+              id={null}
               letterSpacing="0.6px"
             >
               Help text for the SelectMenu component
@@ -495,6 +502,7 @@ exports[` 1`] = `
               className="Typography__Paragraph-sc-19auepv-3 dZma-de"
               fontSize="0.95em"
               fontWeight={600}
+              id={null}
               letterSpacing="0px"
             >
               Radio Group Label
@@ -503,6 +511,7 @@ exports[` 1`] = `
               className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
               fontSize="0.95em"
               fontWeight={400}
+              id={null}
               letterSpacing="0px"
             >
               Hang in there, buddy, I'm here to help!

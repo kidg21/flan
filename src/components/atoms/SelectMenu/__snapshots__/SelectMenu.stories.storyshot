@@ -29,7 +29,7 @@ exports[` 1`] = `
         className=" css-1hwfws3"
       >
         <div
-          className=" css-gxjmgv-placeholder"
+          className=" css-di10jl-placeholder"
         >
           Select
         </div>
@@ -123,6 +123,7 @@ exports[` 1`] = `
     className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
     fontSize="0.65em"
     fontWeight={400}
+    id={null}
     letterSpacing="0.6px"
   >
     Help text for the Select Menu component
@@ -164,7 +165,7 @@ exports[` 2`] = `
           className=" css-1hwfws3"
         >
           <div
-            className=" css-gxjmgv-placeholder"
+            className=" css-di10jl-placeholder"
           >
             Select
           </div>
@@ -283,7 +284,7 @@ exports[` 2`] = `
           className=" css-1hwfws3"
         >
           <div
-            className=" css-gxjmgv-placeholder"
+            className=" css-di10jl-placeholder"
           >
             Select
           </div>
@@ -380,6 +381,7 @@ exports[` 2`] = `
         className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
         fontSize="0.65em"
         fontWeight={400}
+        id={null}
         letterSpacing="0.6px"
       >
         Error explaining why it is wrong
@@ -414,7 +416,7 @@ exports[` 2`] = `
           className=" css-1hwfws3"
         >
           <div
-            className=" css-gxjmgv-placeholder"
+            className=" css-di10jl-placeholder"
           >
             Select
           </div>
@@ -551,7 +553,7 @@ exports[` 3`] = `
               className=" css-1hwfws3"
             >
               <div
-                className=" css-gxjmgv-placeholder"
+                className=" css-di10jl-placeholder"
               >
                 You Must Choose...
               </div>
@@ -645,6 +647,7 @@ exports[` 3`] = `
           className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
           fontSize="0.65em"
           fontWeight={400}
+          id={null}
           letterSpacing="0.6px"
         >
           Help text for the Select Menu component
@@ -678,7 +681,7 @@ exports[` 3`] = `
               className=" css-1hwfws3"
             >
               <div
-                className=" css-gxjmgv-placeholder"
+                className=" css-di10jl-placeholder"
               />
               <div
                 className="css-b8ldur-Input"
@@ -770,6 +773,7 @@ exports[` 3`] = `
           className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
           fontSize="0.65em"
           fontWeight={400}
+          id={null}
           letterSpacing="0.6px"
         >
           Help text for the Select Menu component
@@ -823,7 +827,7 @@ exports[` 4`] = `
               className=" css-1hwfws3"
             >
               <div
-                className=" css-gxjmgv-placeholder"
+                className=" css-di10jl-placeholder"
               >
                 Choose...
               </div>
@@ -917,6 +921,7 @@ exports[` 4`] = `
           className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
           fontSize="0.65em"
           fontWeight={400}
+          id={null}
           letterSpacing="0.6px"
         >
           Help text for the Select Menu component
@@ -950,7 +955,7 @@ exports[` 4`] = `
               className=" css-1hwfws3"
             >
               <div
-                className=" css-gxjmgv-placeholder"
+                className=" css-di10jl-placeholder"
               >
                 You Must Choose...
               </div>
@@ -1044,6 +1049,7 @@ exports[` 4`] = `
           className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
           fontSize="0.65em"
           fontWeight={400}
+          id={null}
           letterSpacing="0.6px"
         >
           Help text for the Select Menu component
@@ -1077,7 +1083,7 @@ exports[` 4`] = `
               className=" css-1hwfws3"
             >
               <div
-                className=" css-gxjmgv-placeholder"
+                className=" css-di10jl-placeholder"
               >
                 You Can't Choose...
               </div>
@@ -1171,6 +1177,7 @@ exports[` 4`] = `
           className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
           fontSize="0.65em"
           fontWeight={400}
+          id={null}
           letterSpacing="0.6px"
         >
           Help text for the Select Menu component
@@ -1204,7 +1211,7 @@ exports[` 4`] = `
               className=" css-1hwfws3"
             >
               <div
-                className=" css-gxjmgv-placeholder"
+                className=" css-di10jl-placeholder"
               >
                 You Chose Poorly...
               </div>
@@ -1298,6 +1305,7 @@ exports[` 4`] = `
           className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
           fontSize="0.65em"
           fontWeight={400}
+          id={null}
           letterSpacing="0.6px"
         >
           Help text for the Select Menu component
@@ -1331,7 +1339,7 @@ exports[` 4`] = `
               className=" css-1hwfws3"
             >
               <div
-                className=" css-gxjmgv-placeholder"
+                className=" css-di10jl-placeholder"
               >
                 You Chose Poorly...
               </div>
@@ -1425,6 +1433,7 @@ exports[` 4`] = `
           className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
           fontSize="0.65em"
           fontWeight={400}
+          id={null}
           letterSpacing="0.6px"
         >
           Help text for the Select Menu component
@@ -1436,6 +1445,7 @@ exports[` 4`] = `
             className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
             fontSize="0.65em"
             fontWeight={400}
+            id={null}
             letterSpacing="0.6px"
           >
             Error: Invalid Selection!
@@ -1470,7 +1480,7 @@ exports[` 4`] = `
               className=" css-1hwfws3"
             >
               <div
-                className=" css-gxjmgv-placeholder"
+                className=" css-di10jl-placeholder"
               >
                 You Chose Poorly...
               </div>
@@ -1564,6 +1574,7 @@ exports[` 4`] = `
           className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
           fontSize="0.65em"
           fontWeight={400}
+          id={null}
           letterSpacing="0.6px"
         >
           Help text for the Select Menu component
@@ -1575,6 +1586,7 @@ exports[` 4`] = `
             className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
             fontSize="0.65em"
             fontWeight={400}
+            id={null}
             letterSpacing="0.6px"
           >
             This is warning Text
@@ -1609,7 +1621,7 @@ exports[` 4`] = `
               className=" css-1hwfws3"
             >
               <div
-                className=" css-gxjmgv-placeholder"
+                className=" css-di10jl-placeholder"
               >
                 Give Me A Minute...
               </div>
@@ -1717,6 +1729,7 @@ exports[` 4`] = `
           className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
           fontSize="0.65em"
           fontWeight={400}
+          id={null}
           letterSpacing="0.6px"
         >
           Help text for the Select Menu component
@@ -1750,7 +1763,7 @@ exports[` 4`] = `
               className=" css-1hwfws3"
             >
               <div
-                className=" css-gxjmgv-placeholder"
+                className=" css-di10jl-placeholder"
               >
                 Choose One Or More...
               </div>
@@ -1844,6 +1857,7 @@ exports[` 4`] = `
           className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
           fontSize="0.65em"
           fontWeight={400}
+          id={null}
           letterSpacing="0.6px"
         >
           Help text for the Select Menu component

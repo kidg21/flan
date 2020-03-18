@@ -96,6 +96,7 @@ Array [
         className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
         fontSize="1em"
         fontWeight={600}
+        id={null}
         letterSpacing="0px"
       >
         Show Notification
@@ -188,7 +189,7 @@ Array [
     id={null}
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 cYHdrc"
+      className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 cLuLNu"
     >
       <button
         className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
@@ -208,6 +209,7 @@ Array [
             className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
             fontSize="1em"
             fontWeight={600}
+            id={null}
             letterSpacing="0px"
           >
             Show Notification
@@ -305,7 +307,7 @@ Array [
     id={null}
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 cYHdrc"
+      className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 cLuLNu"
     >
       <button
         className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
@@ -325,6 +327,7 @@ Array [
             className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
             fontSize="1em"
             fontWeight={600}
+            id={null}
             letterSpacing="0px"
           >
             Status Notification
