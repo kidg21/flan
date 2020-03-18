@@ -8,35 +8,34 @@ import Button from "atoms/Button";
 import Card, { CardSection } from "elements/Card";
 
 const ButtonGrid = styled(Grid)`
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-areas: 'blank one two';
-
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 'blank one two';
 `;
 
 const DialogCard = styled(Card)`
-width: ${(props) => {
+  width: ${(props) => {
     return props.width || "100%";
   }};
 `;
 
 const ChildSection = styled(CardSection)`
-z-index: 2;
+  z-index: 2;
 `;
 
 const PrimaryButton = styled(Button)`
-grid-area: one;
+  grid-area: one;
 `;
 
 const SecondaryButton = styled(Button)`
-grid-area: two;
+  grid-area: two;
 `;
 
 function DialogBox({
+  body,
+  buttons,
+  children,
   id,
   title,
-  body,
-  children,
-  buttons,
   width,
 }) {
   const screenSmall = window.matchMedia(screen.small);
@@ -59,28 +58,28 @@ function DialogBox({
       buttonElements = (
         <ButtonGrid columns="3">
           <PrimaryButton
+            disabled={buttons[0].disabled}
             id={buttons[0].id}
             label={buttons[0].label}
             onClick={buttons[0].onClick}
-            disabled={buttons[0].disabled}
             type={buttons[0].type}
           />
           <SecondaryButton
+            disabled={buttons[1].disabled}
             id={buttons[1].id}
             label={buttons[1].label}
             onClick={buttons[1].onClick}
-            disabled={buttons[1].disabled}
-            type={buttons[1].type}
             solid
+            type={buttons[1].type}
           />
         </ButtonGrid >);
     } else if (buttons.length === 1) {
       buttonElements = (
         <SecondaryButton
+          disabled={buttons[0].disabled}
           id={buttons[0].id}
           label={buttons[0].label}
           onClick={buttons[0].onClick}
-          disabled={buttons[0].disabled}
           type={buttons[0].type}
         />
       );
@@ -90,18 +89,18 @@ function DialogBox({
           {buttons.forEach((button, index) => {
             if (index === 0) {
               return (<PrimaryButton
+                disabled={button.disabled}
                 id={button.id}
                 label={button.label}
                 onClick={button.onClick}
-                disabled={button.disabled}
                 type={button.type}
               />);
             }
             return (<SecondaryButton
+              disabled={button.disabled}
               id={button.id}
               label={button.label}
               onClick={button.onClick}
-              disabled={button.disabled}
               type={button.type}
             />);
           })}
@@ -112,9 +111,9 @@ function DialogBox({
 
   return (
     <DialogCard
+      body={body}
       id={id}
       title={title}
-      body={body}
       width={dialogWidth}
     >
       {children ? <ChildSection>{children}</ChildSection> : null}
@@ -125,10 +124,7 @@ function DialogBox({
 
 
 DialogBox.propTypes = {
-  id: PropTypes.string,
-  title: PropTypes.node,
   body: PropTypes.node,
-  children: PropTypes.node,
   buttons: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
     label: PropTypes.string,
@@ -136,14 +132,17 @@ DialogBox.propTypes = {
     disabled: PropTypes.bool,
     type: PropTypes.string,
   })),
+  children: PropTypes.node,
+  id: PropTypes.string,
+  title: PropTypes.node,
   width: PropTypes.string,
 };
 DialogBox.defaultProps = {
+  body: null,
+  buttons: null,
+  children: null,
   id: null,
   title: null,
-  body: null,
-  children: null,
-  buttons: null,
   width: null,
 };
 
