@@ -13,7 +13,7 @@ exports[` 1`] = `
   >
     <section
       className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-      id="15844713748301041678061_container"
+      id="my-search-bar_container"
       rows={null}
     >
       <input
@@ -21,10 +21,10 @@ exports[` 1`] = `
         className="TextInput__Input-sc-1fep8p8-2 isQToF"
         cols=""
         disabled={false}
-        id="15844713748301041678061"
+        id="my-search-bar"
         list={null}
         maxLength={null}
-        name="15844713748301041678061"
+        name="my-search-bar"
         onBlur={null}
         onChange={null}
         onFocus={null}
@@ -90,7 +90,7 @@ exports[` 2`] = `
   >
     <section
       className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-      id="15844713757178530253102_container"
+      id="my-search-bar_container"
       rows={null}
     >
       <input
@@ -98,10 +98,10 @@ exports[` 2`] = `
         className="TextInput__Input-sc-1fep8p8-2 isQToF"
         cols=""
         disabled={false}
-        id="15844713757178530253102"
+        id="my-search-bar"
         list={null}
         maxLength={null}
-        name="15844713757178530253102"
+        name="my-search-bar"
         onBlur={null}
         onChange={null}
         onFocus={null}
@@ -167,7 +167,7 @@ exports[` 3`] = `
   >
     <section
       className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-      id="158447137661112647394553_container"
+      id="my-search-bar_container"
       rows={null}
     >
       <input
@@ -175,10 +175,10 @@ exports[` 3`] = `
         className="TextInput__Input-sc-1fep8p8-2 isQToF"
         cols=""
         disabled={false}
-        id="158447137661112647394553"
+        id="my-search-bar"
         list={null}
         maxLength={null}
-        name="158447137661112647394553"
+        name="my-search-bar"
         onBlur={null}
         onChange={null}
         onFocus={null}
@@ -242,7 +242,7 @@ exports[` 3`] = `
       <div
         className="Container__BoxContainer-sc-1i4fzzd-1 ixiyce"
         height=""
-        id={null}
+        id="results-container"
       >
          
         <ul
@@ -655,7 +655,7 @@ exports[` 4`] = `
     >
       <section
         className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-        id="158447137755419658084434_container"
+        id="my-search-bar_container"
         rows={null}
       >
         <input
@@ -663,10 +663,10 @@ exports[` 4`] = `
           className="TextInput__Input-sc-1fep8p8-2 isQToF"
           cols=""
           disabled={false}
-          id="158447137755419658084434"
+          id="my-search-bar"
           list={null}
           maxLength={null}
-          name="158447137755419658084434"
+          name="my-search-bar"
           onBlur={null}
           onChange={null}
           onFocus={null}
@@ -730,7 +730,7 @@ exports[` 4`] = `
         <div
           className="Container__BoxContainer-sc-1i4fzzd-1 ixiyce"
           height=""
-          id={null}
+          id="results-container"
         >
            
           <div
@@ -1154,7 +1154,7 @@ exports[` 4`] = `
     >
       <section
         className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-        id="15844713775622612637235_container"
+        id="my-search-bar_container"
         rows={null}
       >
         <input
@@ -1162,10 +1162,10 @@ exports[` 4`] = `
           className="TextInput__Input-sc-1fep8p8-2 isQToF"
           cols=""
           disabled={false}
-          id="15844713775622612637235"
+          id="my-search-bar"
           list={null}
           maxLength={null}
-          name="15844713775622612637235"
+          name="my-search-bar"
           onBlur={null}
           onChange={null}
           onFocus={null}
@@ -1229,7 +1229,7 @@ exports[` 4`] = `
         <div
           className="Container__BoxContainer-sc-1i4fzzd-1 ixiyce"
           height=""
-          id={null}
+          id="results-container"
         >
            
           <div
@@ -1296,7 +1296,7 @@ exports[` 4`] = `
     >
       <section
         className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-        id="15844713775651261386376_container"
+        id="my-search-bar_container"
         rows={null}
       >
         <input
@@ -1304,10 +1304,10 @@ exports[` 4`] = `
           className="TextInput__Input-sc-1fep8p8-2 isQToF"
           cols=""
           disabled={false}
-          id="15844713775651261386376"
+          id="my-search-bar"
           list={null}
           maxLength={null}
-          name="15844713775651261386376"
+          name="my-search-bar"
           onBlur={null}
           onChange={null}
           onFocus={null}
@@ -1371,7 +1371,7 @@ exports[` 4`] = `
         <div
           className="Container__BoxContainer-sc-1i4fzzd-1 ixiyce"
           height=""
-          id={null}
+          id="results-container"
         >
            
           <div
