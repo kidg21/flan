@@ -6,9 +6,12 @@ import PropTypes from "prop-types";
 
 const Block = styled.div`
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   width: 100%;
   justify-content: space-between;
+  > a {
+    display: flex;
+  }
 `;
 
 function IconBlock({
