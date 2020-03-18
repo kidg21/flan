@@ -58,8 +58,8 @@ function Expander({
       id={id}
       header={header}
       open={isOpen}
-      onClick={() => {
-        setIsOpen(!isOpen);
+      onClick={(e) => {
+        setIsOpen(!isOpen, e);
       }}
     >
       {children}

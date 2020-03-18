@@ -1,11 +1,9 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable security/detect-object-injection */
-import React, { useContext } from "react";
+import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
-import { DisabledContext } from "States";
-import Text, { Label } from "base/Typography";
 import TextInput from "atoms/TextInput";
 import { getGuid } from "helpers";
 
@@ -35,33 +33,6 @@ function Calendar({
   value,
   warning,
 }) {
-  let inputFillColor;
-  let placeholderColor;
-  let inputBorderColor;
-  let inputTextColor;
-  let inputBorderColorHover;
-  let inputSelectColor;
-  let errorText;
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
-  if (isDisabled) {
-    inputTextColor = "disabled";
-    inputFillColor = "disabled";
-    inputBorderColor = "neutral40";
-  } else if (error) {
-    inputTextColor = "alert";
-    inputBorderColor = "alert80";
-    inputBorderColorHover = "alert80";
-    inputSelectColor = "neutral60";
-    if (typeof error === "string") errorText = error;
-  } else if (warning) {
-    inputTextColor = "warning";
-    inputBorderColor = "warning80";
-    inputBorderColorHover = "warning80";
-    inputSelectColor = "neutral60";
-    errorText = warning;
-  }
-
   // datetime might have different props to use
   // if date/time prop is not passed, uses value/onChange/etc props
   const inputProps = {
@@ -87,25 +58,22 @@ function Calendar({
   const inputElements = inputTypes.map((currType) => {
     return (
       <TextInput
-        disabled={isDisabled}
-        error={!!error}
+        disabled={disabled}
+        error={error}
+        helpText={helpText}
         id={`${uId}_${currType}`}
-        inputBorderColor={inputBorderColor}
-        inputBorderColorHover={inputBorderColorHover}
-        inputFillColor={inputFillColor}
-        inputSelectColor={inputSelectColor}
         key={`${currType}-${uId}`}
+        label={label}
         max={max}
         min={min}
-        name={id}
+        name={`${uId}_${currType}`}
         onBlur={inputProps[currType].onBlur}
         onChange={inputProps[currType].onChange}
         onFocus={inputProps[currType].onFocus}
         pattern={pattern}
-        placeholderColor={placeholderColor}
         type={currType}
         value={inputProps[currType].value}
-        warning={!!warning}
+        warning={warning}
       />
     );
   });
@@ -119,17 +87,13 @@ function Calendar({
     <CalendarContainer
       className={className}
       columns="1"
-      disabled={isDisabled}
+      disabled={disabled}
       error={error}
       gap="tiny"
       id={uId}
-      inputTextColor={inputTextColor}
       isRequired={isRequired}
     >
-      {label ? <Label size="2x" isRequired={isRequired} text={label} /> : null}
       {inputContainer}
-      {helpText ? <Text size="1x" text={helpText} /> : null}
-      {errorText ? <Text size="1x" text={errorText} /> : null}
     </CalendarContainer>
   );
 }

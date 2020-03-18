@@ -91,7 +91,6 @@ function Checkbox({
   onBlur,
   onChange,
   onFocus,
-  warning,
 }) {
   let inputTextColor;
   let fillColor;
@@ -116,13 +115,6 @@ function Checkbox({
     fillColorChecked = "alert60";
     inputTextColor = "alert";
     outlineColor = "alert60";
-  } else if (warning) {
-    borderColor = "warning80";
-    borderColorChecked = "warning80";
-    fillColor = "warning60";
-    fillColorChecked = "warning60";
-    inputTextColor = "warning";
-    outlineColor = "warning60";
   }
 
   switch (align) {
@@ -169,7 +161,6 @@ function CheckboxGroup({
   isRequired,
   label,
   onChange,
-  warning,
 }) {
   let inputTextColor;
   let errorText;
@@ -179,9 +170,6 @@ function CheckboxGroup({
     if (error) {
       inputTextColor = "alert";
       if (typeof error === "string") errorText = error;
-    } else if (warning) {
-      inputTextColor = "warning";
-      errorText = warning;
     }
   }
 
@@ -213,7 +201,6 @@ function CheckboxGroup({
                 onBlur={item.onBlur}
                 onChange={item.onChange || onChange}
                 onFocus={item.onFocus}
-                warning={!!warning}
               />
             );
           })}
@@ -233,7 +220,6 @@ Checkbox.propTypes = {
   onBlur: PropTypes.func,
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
-  warning: PropTypes.bool,
 };
 
 Checkbox.defaultProps = {
@@ -246,7 +232,6 @@ Checkbox.defaultProps = {
   onBlur: null,
   onChange: null,
   onFocus: null,
-  warning: false,
 };
 
 CheckboxGroup.propTypes = {
@@ -269,7 +254,6 @@ CheckboxGroup.propTypes = {
   isRequired: PropTypes.bool,
   label: PropTypes.string,
   onChange: PropTypes.func,
-  warning: PropTypes.string,
 };
 
 CheckboxGroup.defaultProps = {
@@ -292,7 +276,6 @@ CheckboxGroup.defaultProps = {
   isRequired: false,
   label: null,
   onChange: null,
-  warning: "",
 };
 
 export { Checkbox as default, CheckboxGroup };

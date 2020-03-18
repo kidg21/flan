@@ -8,223 +8,1028 @@ exports[` 1`] = `
     }
   }
 >
-  <div>
-    <h2>
-      My Surface
-    </h2>
-    <br />
-    <div>
-      <h4>
-        
-      </h4>
-      <div>
-        Site Address
-         : 
-        <button
-          onClick={[Function]}
+  <div
+    className="Panel__PanelWrapper-sc-48epke-0 kObpyG"
+    id={null}
+  >
+    <section
+      className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 cLuLNu"
+    >
+      <div
+        className="Bar__BarLayout-sc-1c4axau-2 hVthby"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-sc-1c4axau-1 blGHXI"
         >
-          450 N GRAND AVE LOS ANGELES, CA LOS ANGELES
-        </button>
-      </div>
-      <div>
-        Parcel No. (APN)
-         : 
-        5408-002-902
-      </div>
-      <div>
-        Land Use Cat.
-         : 
-        SCHOOL
-      </div>
-      <div>
-        Land use Desc.
-         : 
-        SCHOOL
-      </div>
-      <div>
-        Building Area
-         : 
-        23415 SF
-      </div>
-      <div>
-        Lot Area
-         : 
-        446636 SF (10.2533 ACRES)
-      </div>
-      <div>
-        No. of Units
-         : 
-        1
-      </div>
-      <div>
-        Year Built
-         : 
-        1976
-      </div>
-      <div>
-        Assessed Value
-         : 
-        $3,847,860.00
-      </div>
-      <div>
-        Owner 1
-         : 
-        L A UNIFIED SCHOOL DIST
-      </div>
-      <div>
-        Owner 2
-         : 
-        
-      </div>
-      <div>
-        Owner Address
-         : 
-        undefined LOS ANGELES, CA LOS ANGELES
-      </div>
-      <div>
-        Last Transfer
-         : 
-        
-      </div>
-      <div>
-        Last Market Sale
-         : 
-        12/19/14 for ($1,000,000)
-      </div>
-      <div>
-        Opportunity Zone
-         : 
-        Yes (Low-Income Community)
-      </div>
-      Commands:
-      <button
-        onClick={[Function]}
-      >
-        Add To List
-      </button>
-      <button
-        onClick={[Function]}
-      >
-        Full Property Detail
-      </button>
-      <button
-        onClick={[Function]}
-      >
-        Copy Geometry
-      </button>
-      <br />
-      <br />
-    </div>
-    <div>
-      <h4>
-        Location
-      </h4>
-      <div>
-        Site Address
-         : 
-        450 N GRAND AVE LOS ANGELES, CA LOS ANGELES
-      </div>
-      <div>
-        Parcel No. (APN)
-         : 
-        5408-002-902
-      </div>
-      <div>
-        Legal Information
-         : 
-        <button
-          onClick={[Function]}
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+            fontSize="1.15em"
+            fontWeight={600}
+            letterSpacing="0px"
+          >
+            My Surface
+          </h5>
+        </div>
+        <div
+          className="Bar__Slot-sc-1c4axau-1 kHYCoh"
         >
-          SALT LAKE DEPOT TRACT # 2 LOT 50 BLK A
-        </button>
+          <a
+            className="Menu__MenuContainer-sc-17iwn6x-0 lhgeCh"
+            onClick={[Function]}
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-ellipsis-v fa-w-4 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+              color={null}
+              data-icon="ellipsis-v"
+              data-prefix="far"
+              focusable="false"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 128 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </a>
+        </div>
       </div>
-      <div>
-        Subdivision
-         : 
-        SALT LAKE DEPOT
-      </div>
-      <div>
-        Legal Lot
-         : 
-        50
-      </div>
-      <div>
-        Legal Block
-         : 
-        A
-      </div>
-      Commands:
-      <button
-        onClick={[Function]}
+    </section>
+    <section
+      className="Panel__SectionWrapper-sc-48epke-1 jZYywS"
+    >
+      <div
+        className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
+        id={null}
       >
-        Tax Map
-      </button>
-      <button
-        onClick={[Function]}
+        <table
+          className="Legend__TableContainer-sc-70hm4b-2 jAZZyL"
+          id={null}
+        >
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Site Address
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                <a
+                  className="Typography__LinkText-sc-19auepv-1 fLIgSj"
+                  fontSize="inherit"
+                  fontWeight={600}
+                  href={null}
+                  letterSpacing="0px"
+                  onClick={[Function]}
+                  target={null}
+                >
+                  450 N GRAND AVE LOS ANGELES, CA LOS ANGELES
+                </a>
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Parcel No. (APN)
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                5408-002-902
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Land Use Cat.
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                SCHOOL
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Land use Desc.
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                SCHOOL
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Building Area
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                23415 SF
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Lot Area
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                446636 SF (10.2533 ACRES)
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                No. of Units
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                1
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Year Built
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                1976
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Assessed Value
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                $3,847,860.00
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Owner 1
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                L A UNIFIED SCHOOL DIST
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Owner 2
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              />
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Owner Address
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                333 S BEAUDRY AVE LOS ANGELES, CA LOS ANGELES
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Last Transfer
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              />
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Last Market Sale
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                12/19/14 for ($1,000,000)
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Opportunity Zone
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Yes (Low-Income Community)
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div
+        className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
+        id={null}
       >
-        Site Profile Report
-      </button>
-      <button
-        onClick={[Function]}
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 gfzBkI Legend__LegendTitle-sc-70hm4b-0 cnHOZd"
+          fontSize="1.05em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Property
+        </h6>
+        <table
+          className="Legend__TableContainer-sc-70hm4b-2 jAZZyL"
+          id={null}
+        >
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Site Address
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                450 N GRAND AVE LOS ANGELES, CA LOS ANGELES
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Parcel No. (APN)
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                5408-002-902
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Legal Information
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                <a
+                  className="Typography__LinkText-sc-19auepv-1 fLIgSj"
+                  fontSize="inherit"
+                  fontWeight={600}
+                  href={null}
+                  letterSpacing="0px"
+                  onClick={[Function]}
+                  target={null}
+                >
+                  SALT LAKE DEPOT TRACT # 2 LOT 50 BLK A
+                </a>
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Subdivision
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                SALT LAKE DEPOT
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Legal Lot
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                50
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Legal Block
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                A
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div
+        className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
+        id={null}
       >
-        Full Property Detail
-      </button>
-      <br />
-      <br />
-    </div>
-    <div>
-      <h4>
-        Ownership
-      </h4>
-      <div>
-        Owner 1
-         : 
-        L A UNIFIED SCHOOL DIST
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 gfzBkI Legend__LegendTitle-sc-70hm4b-0 cnHOZd"
+          fontSize="1.05em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Ownership
+        </h6>
+        <table
+          className="Legend__TableContainer-sc-70hm4b-2 jAZZyL"
+          id={null}
+        >
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Owner 1
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                L A UNIFIED SCHOOL DIST
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Owner 2
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              />
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Owner Address
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                333 S BEAUDRY AVE LOS ANGELES, CA LOS ANGELES
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Vesting Code
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                SW
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Vesting Code Desc
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                FAMILY
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Owner Occupied
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Y
+              </p>
+            </td>
+          </tr>
+        </table>
       </div>
-      <div>
-        Owner 2
-         : 
-        
-      </div>
-      <div>
-        Owner Address
-         : 
-        undefined LOS ANGELES, CA LOS ANGELES
-      </div>
-      <div>
-        Vesting Code
-         : 
-        SW
-      </div>
-      <div>
-        Vesting Code Desc
-         : 
-        FAMILY
-      </div>
-      <div>
-        Owner Occupied
-         : 
-        Y
-      </div>
-      Commands:
-      <button
-        onClick={[Function]}
-      >
-        List Units
-      </button>
-      <button
-        onClick={[Function]}
-      >
-        Owner Portfolio
-      </button>
-      <br />
-      <br />
-    </div>
+    </section>
   </div>
 </div>
 `;
 
 exports[` 2`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <a
+    className="Menu__MenuContainer-sc-17iwn6x-0 lhgeCh"
+    onClick={[Function]}
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-ellipsis-v fa-w-4 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+      color={null}
+      data-icon="ellipsis-v"
+      data-prefix="far"
+      focusable="false"
+      id={null}
+      role="img"
+      style={Object {}}
+      viewBox="0 0 128 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </a>
+</div>
+`;
+
+exports[` 3`] = `
 <div
   style={
     Object {
@@ -241,7 +1046,7 @@ exports[` 2`] = `
       id={null}
     >
       <li
-        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
         disabled={false}
         href={null}
         id={null}
@@ -249,12 +1054,12 @@ exports[` 2`] = `
         tabIndex="0"
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+            className="Bar__Slot-sc-1c4axau-1 ejlqvW"
           >
             <h6
               className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -265,9 +1070,10 @@ exports[` 2`] = `
               Site Address
             </h6>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+              fontSize="0.95em"
               fontWeight={400}
+              id={null}
               letterSpacing="0px"
             >
               450 N GRAND AVE LOS ANGELES, CA LOS ANGELES
@@ -276,7 +1082,7 @@ exports[` 2`] = `
         </div>
       </li>
       <li
-        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
         disabled={false}
         href={null}
         id={null}
@@ -284,12 +1090,12 @@ exports[` 2`] = `
         tabIndex="0"
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+            className="Bar__Slot-sc-1c4axau-1 ejlqvW"
           >
             <h6
               className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -300,9 +1106,10 @@ exports[` 2`] = `
               Parcel No. (APN)
             </h6>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+              fontSize="0.95em"
               fontWeight={400}
+              id={null}
               letterSpacing="0px"
             >
               5408-002-902
@@ -311,7 +1118,7 @@ exports[` 2`] = `
         </div>
       </li>
       <li
-        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
         disabled={false}
         href={null}
         id={null}
@@ -319,12 +1126,12 @@ exports[` 2`] = `
         tabIndex="0"
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+            className="Bar__Slot-sc-1c4axau-1 ejlqvW"
           >
             <h6
               className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -335,9 +1142,10 @@ exports[` 2`] = `
               Land Use Cat.
             </h6>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+              fontSize="0.95em"
               fontWeight={400}
+              id={null}
               letterSpacing="0px"
             >
               SCHOOL
@@ -346,7 +1154,7 @@ exports[` 2`] = `
         </div>
       </li>
       <li
-        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
         disabled={false}
         href={null}
         id={null}
@@ -354,12 +1162,12 @@ exports[` 2`] = `
         tabIndex="0"
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+            className="Bar__Slot-sc-1c4axau-1 ejlqvW"
           >
             <h6
               className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -370,9 +1178,10 @@ exports[` 2`] = `
               Land use Desc.
             </h6>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+              fontSize="0.95em"
               fontWeight={400}
+              id={null}
               letterSpacing="0px"
             >
               SCHOOL
@@ -381,7 +1190,7 @@ exports[` 2`] = `
         </div>
       </li>
       <li
-        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
         disabled={false}
         href={null}
         id={null}
@@ -389,12 +1198,12 @@ exports[` 2`] = `
         tabIndex="0"
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+            className="Bar__Slot-sc-1c4axau-1 ejlqvW"
           >
             <h6
               className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -405,9 +1214,10 @@ exports[` 2`] = `
               Building Area
             </h6>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+              fontSize="0.95em"
               fontWeight={400}
+              id={null}
               letterSpacing="0px"
             >
               23415 SF
@@ -416,7 +1226,7 @@ exports[` 2`] = `
         </div>
       </li>
       <li
-        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
         disabled={false}
         href={null}
         id={null}
@@ -424,12 +1234,12 @@ exports[` 2`] = `
         tabIndex="0"
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+            className="Bar__Slot-sc-1c4axau-1 ejlqvW"
           >
             <h6
               className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -440,9 +1250,10 @@ exports[` 2`] = `
               Lot Area
             </h6>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+              fontSize="0.95em"
               fontWeight={400}
+              id={null}
               letterSpacing="0px"
             >
               446636 SF (10.2533 ACRES)
@@ -451,7 +1262,7 @@ exports[` 2`] = `
         </div>
       </li>
       <li
-        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
         disabled={false}
         href={null}
         id={null}
@@ -459,12 +1270,12 @@ exports[` 2`] = `
         tabIndex="0"
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+            className="Bar__Slot-sc-1c4axau-1 ejlqvW"
           >
             <h6
               className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -475,9 +1286,10 @@ exports[` 2`] = `
               No. of Units
             </h6>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+              fontSize="0.95em"
               fontWeight={400}
+              id={null}
               letterSpacing="0px"
             >
               1
@@ -486,7 +1298,7 @@ exports[` 2`] = `
         </div>
       </li>
       <li
-        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
         disabled={false}
         href={null}
         id={null}
@@ -494,12 +1306,12 @@ exports[` 2`] = `
         tabIndex="0"
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+            className="Bar__Slot-sc-1c4axau-1 ejlqvW"
           >
             <h6
               className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -510,9 +1322,10 @@ exports[` 2`] = `
               Year Built
             </h6>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+              fontSize="0.95em"
               fontWeight={400}
+              id={null}
               letterSpacing="0px"
             >
               1976
@@ -521,7 +1334,7 @@ exports[` 2`] = `
         </div>
       </li>
       <li
-        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
         disabled={false}
         href={null}
         id={null}
@@ -529,12 +1342,12 @@ exports[` 2`] = `
         tabIndex="0"
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+            className="Bar__Slot-sc-1c4axau-1 ejlqvW"
           >
             <h6
               className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -545,9 +1358,10 @@ exports[` 2`] = `
               Assessed Value
             </h6>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+              fontSize="0.95em"
               fontWeight={400}
+              id={null}
               letterSpacing="0px"
             >
               $3,847,860.00
@@ -556,7 +1370,7 @@ exports[` 2`] = `
         </div>
       </li>
       <li
-        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
         disabled={false}
         href={null}
         id={null}
@@ -564,12 +1378,12 @@ exports[` 2`] = `
         tabIndex="0"
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+            className="Bar__Slot-sc-1c4axau-1 ejlqvW"
           >
             <h6
               className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -580,9 +1394,10 @@ exports[` 2`] = `
               Owner 1
             </h6>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+              fontSize="0.95em"
               fontWeight={400}
+              id={null}
               letterSpacing="0px"
             >
               L A UNIFIED SCHOOL DIST
@@ -591,7 +1406,7 @@ exports[` 2`] = `
         </div>
       </li>
       <li
-        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
         disabled={false}
         href={null}
         id={null}
@@ -599,12 +1414,12 @@ exports[` 2`] = `
         tabIndex="0"
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+            className="Bar__Slot-sc-1c4axau-1 ejlqvW"
           >
             <h6
               className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -618,7 +1433,7 @@ exports[` 2`] = `
         </div>
       </li>
       <li
-        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
         disabled={false}
         href={null}
         id={null}
@@ -626,12 +1441,12 @@ exports[` 2`] = `
         tabIndex="0"
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+            className="Bar__Slot-sc-1c4axau-1 ejlqvW"
           >
             <h6
               className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -642,18 +1457,19 @@ exports[` 2`] = `
               Owner Address
             </h6>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+              fontSize="0.95em"
               fontWeight={400}
+              id={null}
               letterSpacing="0px"
             >
-              undefined LOS ANGELES, CA LOS ANGELES
+              333 S BEAUDRY AVE LOS ANGELES, CA LOS ANGELES
             </p>
           </div>
         </div>
       </li>
       <li
-        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
         disabled={false}
         href={null}
         id={null}
@@ -661,12 +1477,12 @@ exports[` 2`] = `
         tabIndex="0"
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+            className="Bar__Slot-sc-1c4axau-1 ejlqvW"
           >
             <h6
               className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -680,7 +1496,7 @@ exports[` 2`] = `
         </div>
       </li>
       <li
-        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
         disabled={false}
         href={null}
         id={null}
@@ -688,12 +1504,12 @@ exports[` 2`] = `
         tabIndex="0"
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+            className="Bar__Slot-sc-1c4axau-1 ejlqvW"
           >
             <h6
               className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -704,9 +1520,10 @@ exports[` 2`] = `
               Last Market Sale
             </h6>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+              fontSize="0.95em"
               fontWeight={400}
+              id={null}
               letterSpacing="0px"
             >
               12/19/14 for ($1,000,000)
@@ -715,7 +1532,7 @@ exports[` 2`] = `
         </div>
       </li>
       <li
-        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
         disabled={false}
         href={null}
         id={null}
@@ -723,12 +1540,12 @@ exports[` 2`] = `
         tabIndex="0"
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+            className="Bar__Slot-sc-1c4axau-1 ejlqvW"
           >
             <h6
               className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -739,9 +1556,10 @@ exports[` 2`] = `
               Opportunity Zone
             </h6>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+              fontSize="0.95em"
               fontWeight={400}
+              id={null}
               letterSpacing="0px"
             >
               Yes (Low-Income Community)
@@ -757,7 +1575,7 @@ exports[` 2`] = `
       id={null}
     >
       <li
-        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
         disabled={false}
         href={null}
         id={null}
@@ -765,12 +1583,12 @@ exports[` 2`] = `
         tabIndex="0"
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+            className="Bar__Slot-sc-1c4axau-1 ejlqvW"
           >
             <h6
               className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -781,9 +1599,10 @@ exports[` 2`] = `
               Site Address
             </h6>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+              fontSize="0.95em"
               fontWeight={400}
+              id={null}
               letterSpacing="0px"
             >
               450 N GRAND AVE LOS ANGELES, CA LOS ANGELES
@@ -792,7 +1611,7 @@ exports[` 2`] = `
         </div>
       </li>
       <li
-        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
         disabled={false}
         href={null}
         id={null}
@@ -800,12 +1619,12 @@ exports[` 2`] = `
         tabIndex="0"
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+            className="Bar__Slot-sc-1c4axau-1 ejlqvW"
           >
             <h6
               className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -816,9 +1635,10 @@ exports[` 2`] = `
               Parcel No. (APN)
             </h6>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+              fontSize="0.95em"
               fontWeight={400}
+              id={null}
               letterSpacing="0px"
             >
               5408-002-902
@@ -827,7 +1647,7 @@ exports[` 2`] = `
         </div>
       </li>
       <li
-        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
         disabled={false}
         href={null}
         id={null}
@@ -835,12 +1655,12 @@ exports[` 2`] = `
         tabIndex="0"
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+            className="Bar__Slot-sc-1c4axau-1 ejlqvW"
           >
             <h6
               className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -851,9 +1671,10 @@ exports[` 2`] = `
               Legal Information
             </h6>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+              fontSize="0.95em"
               fontWeight={400}
+              id={null}
               letterSpacing="0px"
             >
               SALT LAKE DEPOT TRACT # 2 LOT 50 BLK A
@@ -862,7 +1683,7 @@ exports[` 2`] = `
         </div>
       </li>
       <li
-        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
         disabled={false}
         href={null}
         id={null}
@@ -870,12 +1691,12 @@ exports[` 2`] = `
         tabIndex="0"
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+            className="Bar__Slot-sc-1c4axau-1 ejlqvW"
           >
             <h6
               className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -886,9 +1707,10 @@ exports[` 2`] = `
               Subdivision
             </h6>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+              fontSize="0.95em"
               fontWeight={400}
+              id={null}
               letterSpacing="0px"
             >
               SALT LAKE DEPOT
@@ -897,7 +1719,7 @@ exports[` 2`] = `
         </div>
       </li>
       <li
-        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
         disabled={false}
         href={null}
         id={null}
@@ -905,12 +1727,12 @@ exports[` 2`] = `
         tabIndex="0"
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+            className="Bar__Slot-sc-1c4axau-1 ejlqvW"
           >
             <h6
               className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -921,9 +1743,10 @@ exports[` 2`] = `
               Legal Lot
             </h6>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+              fontSize="0.95em"
               fontWeight={400}
+              id={null}
               letterSpacing="0px"
             >
               50
@@ -932,7 +1755,7 @@ exports[` 2`] = `
         </div>
       </li>
       <li
-        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
         disabled={false}
         href={null}
         id={null}
@@ -940,12 +1763,12 @@ exports[` 2`] = `
         tabIndex="0"
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+            className="Bar__Slot-sc-1c4axau-1 ejlqvW"
           >
             <h6
               className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -956,9 +1779,10 @@ exports[` 2`] = `
               Legal Block
             </h6>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+              fontSize="0.95em"
               fontWeight={400}
+              id={null}
               letterSpacing="0px"
             >
               A
@@ -974,7 +1798,7 @@ exports[` 2`] = `
       id={null}
     >
       <li
-        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
         disabled={false}
         href={null}
         id={null}
@@ -982,12 +1806,12 @@ exports[` 2`] = `
         tabIndex="0"
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+            className="Bar__Slot-sc-1c4axau-1 ejlqvW"
           >
             <h6
               className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -998,9 +1822,10 @@ exports[` 2`] = `
               Owner 1
             </h6>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+              fontSize="0.95em"
               fontWeight={400}
+              id={null}
               letterSpacing="0px"
             >
               L A UNIFIED SCHOOL DIST
@@ -1009,7 +1834,7 @@ exports[` 2`] = `
         </div>
       </li>
       <li
-        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
         disabled={false}
         href={null}
         id={null}
@@ -1017,12 +1842,12 @@ exports[` 2`] = `
         tabIndex="0"
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+            className="Bar__Slot-sc-1c4axau-1 ejlqvW"
           >
             <h6
               className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -1036,7 +1861,7 @@ exports[` 2`] = `
         </div>
       </li>
       <li
-        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
         disabled={false}
         href={null}
         id={null}
@@ -1044,12 +1869,12 @@ exports[` 2`] = `
         tabIndex="0"
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+            className="Bar__Slot-sc-1c4axau-1 ejlqvW"
           >
             <h6
               className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -1060,18 +1885,19 @@ exports[` 2`] = `
               Owner Address
             </h6>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+              fontSize="0.95em"
               fontWeight={400}
+              id={null}
               letterSpacing="0px"
             >
-              undefined LOS ANGELES, CA LOS ANGELES
+              333 S BEAUDRY AVE LOS ANGELES, CA LOS ANGELES
             </p>
           </div>
         </div>
       </li>
       <li
-        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
         disabled={false}
         href={null}
         id={null}
@@ -1079,12 +1905,12 @@ exports[` 2`] = `
         tabIndex="0"
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+            className="Bar__Slot-sc-1c4axau-1 ejlqvW"
           >
             <h6
               className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -1095,9 +1921,10 @@ exports[` 2`] = `
               Vesting Code
             </h6>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+              fontSize="0.95em"
               fontWeight={400}
+              id={null}
               letterSpacing="0px"
             >
               SW
@@ -1106,7 +1933,7 @@ exports[` 2`] = `
         </div>
       </li>
       <li
-        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
         disabled={false}
         href={null}
         id={null}
@@ -1114,12 +1941,12 @@ exports[` 2`] = `
         tabIndex="0"
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+            className="Bar__Slot-sc-1c4axau-1 ejlqvW"
           >
             <h6
               className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -1130,9 +1957,10 @@ exports[` 2`] = `
               Vesting Code Desc
             </h6>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+              fontSize="0.95em"
               fontWeight={400}
+              id={null}
               letterSpacing="0px"
             >
               FAMILY
@@ -1141,7 +1969,7 @@ exports[` 2`] = `
         </div>
       </li>
       <li
-        className="List__ListItemWrapper-sc-43f2zq-2 jbPBAf"
+        className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
         disabled={false}
         href={null}
         id={null}
@@ -1149,12 +1977,12 @@ exports[` 2`] = `
         tabIndex="0"
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-1 guKXLd"
+          className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-0 kjGDuv"
+            className="Bar__Slot-sc-1c4axau-1 ejlqvW"
           >
             <h6
               className="Typography__TitleText-sc-19auepv-2 ffuBqO"
@@ -1165,9 +1993,10 @@ exports[` 2`] = `
               Owner Occupied
             </h6>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+              fontSize="0.95em"
               fontWeight={400}
+              id={null}
               letterSpacing="0px"
             >
               Y
@@ -1182,7 +2011,7 @@ exports[` 2`] = `
 </div>
 `;
 
-exports[` 3`] = `
+exports[` 4`] = `
 <div
   style={
     Object {
@@ -1190,268 +2019,1682 @@ exports[` 3`] = `
     }
   }
 >
-  <div>
-    <h2>
-      My Other Surface
-    </h2>
-    <br />
-    <div>
-      <h4>
-        1st Section
-      </h4>
-      <div>
-        ACREAGE
-         : 
-        10.25
+  <div
+    className="Panel__PanelWrapper-sc-48epke-0 kObpyG"
+    id={null}
+  >
+    <section
+      className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 cLuLNu"
+    >
+      <div
+        className="Bar__BarLayout-sc-1c4axau-2 hVthby"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-sc-1c4axau-1 blGHXI"
+        >
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+            fontSize="1.15em"
+            fontWeight={600}
+            letterSpacing="0px"
+          >
+            My Other Surface
+          </h5>
+        </div>
+        <div
+          className="Bar__Slot-sc-1c4axau-1 kHYCoh"
+        >
+          <a
+            className="Menu__MenuContainer-sc-17iwn6x-0 lhgeCh"
+            onClick={[Function]}
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-ellipsis-v fa-w-4 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+              color={null}
+              data-icon="ellipsis-v"
+              data-prefix="far"
+              focusable="false"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 128 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </a>
+        </div>
       </div>
-      <div>
-        ADDRESS_ID
-         : 
-        US_06_037_159289302
+    </section>
+    <section
+      className="Panel__SectionWrapper-sc-48epke-1 jZYywS"
+    >
+      <div
+        className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
+        id={null}
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 gfzBkI Legend__LegendTitle-sc-70hm4b-0 cnHOZd"
+          fontSize="1.05em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          1st Section
+        </h6>
+        <table
+          className="Legend__TableContainer-sc-70hm4b-2 jAZZyL"
+          id={null}
+        >
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                ACREAGE
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                10.25
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                ADDRESS_ID
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                US_06_037_159289302
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                AGGR_ACREAGE
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                10.254133
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                AGGR_GROUP
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                100660192_194571250
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                AGGR_LOT_COUNT
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                1
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                APN
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                5408-002-902
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                APN_UNF
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                5408002902
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                ASMT_YEAR
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                2019
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                ASSOCIATE_PARCEL_COUNT
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                1
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                ASSR_ACREAGE
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                10.25
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                ASSR_SQFT
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                446636
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                BUILDING_SQFT
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                23415
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                CAL_ACREAGE
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                10.2533
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                CAL_SQFT
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                446634
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                CENSUS_BLOCK_GROUP
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                1
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                CENSUS_TRACT
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                207101
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                COUNTY
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                LOS ANGELES
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                FIPS_CODE
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                06037
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                LAND_SQFT
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                446636
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                LANDUSE_CODE
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                650
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                LANDUSE_DESC
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                SCHOOL
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                LEGAL_1
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                TRACT NO 26838 LOT 1
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                LOCATION_ID
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                US_06_037_5408002902
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                LOT_NUMBER
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                1
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                MAP_LINK
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                5408-002-902
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                MAP_REFERENCE_1
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                -
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                OWNER_ADDRESS
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                333 S BEAUDRY AVE
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                OWNER_CITY
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                LOS ANGELES
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                OWNER_NAME_1
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                L A UNIFIED SCHOOL DIST
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                OWNER_OCCUPIED
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                N
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                OWNER_STATE
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                CA
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                OWNER_ZIP
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                90017
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                PARCEL_APN
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                5408002902
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                PARKING_SPACES
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                0
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                PROPERTY_ID
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                060371222436
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                SITE_ADDR
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                450 N GRAND AVE
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                SITE_CITY
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                LOS ANGELES
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                SITE_STATE
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                CA
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                SITE_ZIP
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                90012
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                STORIES_NUMBER
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                2
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                TAX_ID
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                US_06_037_5408-002-902
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                TOTAL_BATHS_CALCULATED
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                0
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                TRACT_NUMBER
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                26838
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                USE_CODE_MUNI
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                8832
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                USE_CODE_STD_CTGR_DESC
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                MISCELLANEOUS
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                USE_CODE_STD_DESC
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                SCHOOL
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                VAL_ASSD
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                3847860
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                VAL_ASSD_LAND
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                3847860
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                YR_BLT
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                1976
+              </p>
+            </td>
+          </tr>
+          <tr
+            className="Legend__Row-sc-70hm4b-4 kveaPn"
+          >
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                ZONING
+              </p>
+            </td>
+            <td
+              className="Legend__Cell-sc-70hm4b-3 hreFBt"
+              fontSize={null}
+            >
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                LAPF
+              </p>
+            </td>
+          </tr>
+        </table>
       </div>
-      <div>
-        AGGR_ACREAGE
-         : 
-        10.254133
-      </div>
-      <div>
-        AGGR_GROUP
-         : 
-        100660192_194571250
-      </div>
-      <div>
-        AGGR_LOT_COUNT
-         : 
-        1
-      </div>
-      <div>
-        APN
-         : 
-        5408-002-902
-      </div>
-      <div>
-        APN_UNF
-         : 
-        5408002902
-      </div>
-      <div>
-        ASMT_YEAR
-         : 
-        2019
-      </div>
-      <div>
-        ASSOCIATE_PARCEL_COUNT
-         : 
-        1
-      </div>
-      <div>
-        ASSR_ACREAGE
-         : 
-        10.25
-      </div>
-      <div>
-        ASSR_SQFT
-         : 
-        446636
-      </div>
-      <div>
-        BUILDING_SQFT
-         : 
-        23415
-      </div>
-      <div>
-        CAL_ACREAGE
-         : 
-        10.2533
-      </div>
-      <div>
-        CAL_SQFT
-         : 
-        446634
-      </div>
-      <div>
-        CENSUS_BLOCK_GROUP
-         : 
-        1
-      </div>
-      <div>
-        CENSUS_TRACT
-         : 
-        207101
-      </div>
-      <div>
-        COUNTY
-         : 
-        LOS ANGELES
-      </div>
-      <div>
-        FIPS_CODE
-         : 
-        06037
-      </div>
-      <div>
-        LAND_SQFT
-         : 
-        446636
-      </div>
-      <div>
-        LANDUSE_CODE
-         : 
-        650
-      </div>
-      <div>
-        LANDUSE_DESC
-         : 
-        SCHOOL
-      </div>
-      <div>
-        LEGAL_1
-         : 
-        TRACT NO 26838 LOT 1
-      </div>
-      <div>
-        LOCATION_ID
-         : 
-        US_06_037_5408002902
-      </div>
-      <div>
-        LOT_NUMBER
-         : 
-        1
-      </div>
-      <div>
-        MAP_LINK
-         : 
-        5408-002-902
-      </div>
-      <div>
-        MAP_REFERENCE_1
-         : 
-        -
-      </div>
-      <div>
-        OWNER_ADDRESS
-         : 
-        333 S BEAUDRY AVE
-      </div>
-      <div>
-        OWNER_CITY
-         : 
-        LOS ANGELES
-      </div>
-      <div>
-        OWNER_NAME_1
-         : 
-        L A UNIFIED SCHOOL DIST
-      </div>
-      <div>
-        OWNER_OCCUPIED
-         : 
-        N
-      </div>
-      <div>
-        OWNER_STATE
-         : 
-        CA
-      </div>
-      <div>
-        OWNER_ZIP
-         : 
-        90017
-      </div>
-      <div>
-        PARCEL_APN
-         : 
-        5408002902
-      </div>
-      <div>
-        PARKING_SPACES
-         : 
-        0
-      </div>
-      <div>
-        PROPERTY_ID
-         : 
-        060371222436
-      </div>
-      <div>
-        SITE_ADDR
-         : 
-        450 N GRAND AVE
-      </div>
-      <div>
-        SITE_CITY
-         : 
-        LOS ANGELES
-      </div>
-      <div>
-        SITE_STATE
-         : 
-        CA
-      </div>
-      <div>
-        SITE_ZIP
-         : 
-        90012
-      </div>
-      <div>
-        STORIES_NUMBER
-         : 
-        2
-      </div>
-      <div>
-        TAX_ID
-         : 
-        US_06_037_5408-002-902
-      </div>
-      <div>
-        TOTAL_BATHS_CALCULATED
-         : 
-        0
-      </div>
-      <div>
-        TRACT_NUMBER
-         : 
-        26838
-      </div>
-      <div>
-        USE_CODE_MUNI
-         : 
-        8832
-      </div>
-      <div>
-        USE_CODE_STD_CTGR_DESC
-         : 
-        MISCELLANEOUS
-      </div>
-      <div>
-        USE_CODE_STD_DESC
-         : 
-        SCHOOL
-      </div>
-      <div>
-        VAL_ASSD
-         : 
-        3847860
-      </div>
-      <div>
-        VAL_ASSD_LAND
-         : 
-        3847860
-      </div>
-      <div>
-        YR_BLT
-         : 
-        1976
-      </div>
-      <div>
-        ZONING
-         : 
-        LAPF
-      </div>
-      <br />
-      <br />
-    </div>
+    </section>
   </div>
 </div>
 `;

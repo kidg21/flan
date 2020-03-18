@@ -1,4 +1,5 @@
 /* eslint-disable complexity */
+/* eslint-disable security/detect-object-injection */
 /* eslint-disable linebreak-style */
 import React from "react";
 import PropTypes from "prop-types";
@@ -39,30 +40,34 @@ const TagContainer = styled.div`
   border-radius: 100%;
 `;
 
+const sizeHash = {
+  "4x": {
+    avatar: "5em",
+    font: "2.5em",
+  },
+  "3x": {
+    avatar: "4em",
+    font: "2em",
+  },
+  "2x": {
+    avatar: "3em",
+    font: "1.5em",
+  },
+  "1x": {
+    avatar: "2.5em",
+    font: "1em",
+  },
+  "sm": {
+    avatar: "2em",
+    font: "1em",
+  },
+};
+
 function Avatar({
   alt, brand, icon, id, label, onClick, size, type,
 }) {
   let labelType;
   let iconType;
-
-  const sizeHash = {
-    "4x": {
-      avatar: "5em",
-      font: "2.5em",
-    },
-    "3x": {
-      avatar: "4em",
-      font: "2em",
-    },
-    "2x": {
-      avatar: "3em",
-      font: "1.5em",
-    },
-    "1x": {
-      avatar: "2.5em",
-      font: "1em",
-    },
-  };
 
   const selectedSize = size && sizeHash[size.toLowerCase()];
   const avatarSize = selectedSize ? selectedSize.avatar : "2.5rem";

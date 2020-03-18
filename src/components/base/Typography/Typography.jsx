@@ -184,7 +184,7 @@ function Link({
 
 
 function Text({
-  children, className, size, text, weight,
+  children, className, id, size, text, weight,
 }) {
   const sizeHash = {
     "4x": {
@@ -192,7 +192,7 @@ function Text({
       letterSpacing: "0px",
     },
     "3x": {
-      fontSize: "0.876em",
+      fontSize: "0.95em",
       letterSpacing: "0px",
     },
     "2x": {
@@ -205,7 +205,7 @@ function Text({
     },
   };
 
-  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.876em", letterSpacing: "0px" };
+  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.95em", letterSpacing: "0px" };
   const { fontSize, letterSpacing } = selectedSize;
 
   const weightHash = {
@@ -222,6 +222,7 @@ function Text({
       className={className}
       fontSize={fontSize}
       fontWeight={fontWeight}
+      id={id}
       letterSpacing={letterSpacing}
     >
       {text || children}
@@ -321,6 +322,7 @@ Title.defaultProps = {
 Text.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
+  id: PropTypes.string,
   size: PropTypes.string,
   text: PropTypes.string,
   weight: PropTypes.string,
@@ -328,6 +330,7 @@ Text.propTypes = {
 Text.defaultProps = {
   children: null,
   className: null,
+  id: null,
   size: null,
   text: null,
   weight: null,

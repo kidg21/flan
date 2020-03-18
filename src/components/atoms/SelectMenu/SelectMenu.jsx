@@ -1,3 +1,4 @@
+/* eslint-disable complexity */
 /* eslint-disable linebreak-style */
 /* eslint-disable security/detect-object-injection */
 import React, { useContext, useState } from "react";
@@ -10,6 +11,13 @@ import Select from "react-select";
 import Creatable from "react-select/creatable";
 import { Skeleton } from "helpers";
 import { DisabledContext } from "States";
+
+
+const MessageContainer = styled.section`
+color: ${(props) => {
+    return props.theme.text[props.messageColor] || props.theme.text.secondary;
+  }};
+`;
 
 const selectStyles = {
   // Wrapper
@@ -53,7 +61,7 @@ const selectStyles = {
       ...styles,
       fontFamily: fonts.body,
       color: isFocused ? colors.grey50 : colors.grey50,
-      fontSize: "0.876rem",
+      fontSize: "0.90em",
     };
   },
   // selected option
@@ -63,7 +71,7 @@ const selectStyles = {
       fontFamily: fonts.body,
       opacity: isDisabled ? 0.5 : 1,
       transition: "opacity 300ms",
-      fontSize: "0.876rem",
+      fontSize: "0.90em",
     };
   },
   // 'X' to clear current selection
@@ -192,14 +200,15 @@ function SelectMenu({
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let textColor;
   let errorText = "";
+  let messageColor;
   if (isDisabled) {
     textColor = "disabled";
   } else if (error) {
     textColor = "alert";
+    messageColor = "alert";
     if (typeof error === "string") errorText = error;
   } else if (warning) {
-    textColor = "warning";
-    errorText = warning;
+    messageColor = "alert";
   }
 
   let selectedOpts = [];
@@ -290,10 +299,8 @@ function SelectMenu({
     >
       {label ? <Label size="2x" isRequired={isRequired} text={label} /> : null}
       {select}
-      {/* Help Text */}
       {helpText ? <Text size="1x" text={helpText} /> : null}
-      {/* Error Message (required) */}
-      {errorText ? <Text size="1x" text={errorText} /> : null}
+      {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="1x" text={errorText || warning} /></MessageContainer> : null}
     </SelectMenuContainer>
   );
 }

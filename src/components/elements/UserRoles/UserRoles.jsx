@@ -45,17 +45,23 @@ function UserEntry({
 
   return (<Bar
     disabled={!isEnabled}
-    left={<Switch checked={isEnabled} onChange={toggleEnabled} />}
-    leftWidth={toggleWidth}
-    center={<Command onClick={onCommandClick} label={user.name} />}
-    centerAlign="left"
-    right={<SelectMenu
-      options={roles}
-      selectOptions={user.roles}
-      onChangeState={onChangeRoles}
-      multiSelect
-    />}
-    rightWidth={selectWidth}
+    left={{
+      content: <Switch checked={isEnabled} onChange={toggleEnabled} />,
+      width: toggleWidth,
+    }}
+    center={{
+      content: <Command onClick={onCommandClick} label={user.name} />,
+      align: "left",
+    }}
+    right={{
+      content: <SelectMenu
+        options={roles}
+        selectOptions={user.roles}
+        onChangeState={onChangeRoles}
+        multiSelect
+      />,
+      width: selectWidth,
+    }}
   />);
 }
 

@@ -1,78 +1,49 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import PropTypes from "prop-types";
-
-/*
-content passed in via props will look like this:
-{
-  title: "The title of the surface",
-  sections: [
-    {
-      title: "The title of the first section",
-      displayFields: [
-        {
-          label: "The label of a key-val pair in section 1",
-          value: "The value of a key-val pair in section 1",
-          onClick: () => { // a func to be executed when the user clicks on this field},
-        }
-        {
-          // another field
-        }
-      ],
-      commands: [
-        {
-          label: "A command to be included in the 1st section",
-          icon: "an icon to use -- not sure on format yet...",
-          onClick: () => { // a func to be executed when the user clicks on this command },
-        },
-        {
-          // another command
-        }
-      ]
-    },
-    {
-      // another section
-    }
-  ]
-}
-*/
+import Panel from "layout/Panel";
+import Legend from "blocks/Legend";
+import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
 
 // The following component is just to show how to iterate through all the data
 const SummaryPanelTemplate = (props) => {
+  let menuData = [];
+  const content = props.content.sections.map((section) => {
+    if (section.commands.length > 0) {
+      if (section.title) {
+        // if we have a section title, these commands will
+        // be nested under a sub-menu titled after the section
+        menuData.push({
+          id: `${section.id}-menu`,
+          label: section.title,
+          commands: section.commands,
+        });
+      } else {
+        // section does not have a title, so the commands
+        // will just be placed on the root level of the menu
+        menuData = section.commands.concat(menuData);
+      }
+    }
+
+    return (
+      <React.Fragment>
+        <Legend
+        title={section.title}
+          data={section.displayFields}
+        />
+      </React.Fragment>
+    );
+  });
   return (
-    <div>
-      {/* surface title */}
-      <h2>{props.content.title}</h2>
-      <br />
-      {/* map through each section */}
-      {props.content.sections.map((section) => {
-        return (
-          <div>
-            <h4>{section.title}</h4>
-            {/* map through eac section's display field (key-value pairs) */}
-            {section.displayFields.map((displayField) => {
-              let displayFieldValue = displayField.value;
-              // some displayFields have an onClick, those need to be attached to the value
-              // so the value becomes like a link/command instead of just plain text
-              if (displayField.onClick) {
-                displayFieldValue = (
-                  <button onClick={displayField.onClick}>
-                    {displayField.value}
-                  </button>);
-              }
-              return (
-                <div>{displayField.label} : {displayFieldValue}</div>
-              );
-            })}
-            {/* finally, map through the section's standalone commands */}
-            {section.commands.length > 0 ? "Commands:" : null}
-            {section.commands.map((command) => {
-              return (<button onClick={command.onClick}>{command.label}</button>);
-            })}
-            <br /><br />
-          </div>
-        );
-      })}
-    </div>
+    <Panel
+      header={
+        <MainPanelHeader
+          title={props.content.title}
+          menuData={menuData}
+        />}
+    >
+      {content}
+    </Panel>
   );
 };
 

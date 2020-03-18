@@ -44,6 +44,12 @@ const PrePost = styled.div`
   }
 `;
 
+const MessageContainer = styled.section`
+color: ${(props) => {
+    return props.theme.text[props.messageColor] || props.theme.text.secondary;
+  }};
+`;
+
 function InputBlock({
   button,
   className,
@@ -54,15 +60,15 @@ function InputBlock({
   id,
   isRequired,
   label,
+  onBlur,
   onChange,
+  onFocus,
+  onKeyPress,
   options,
   prefix,
   selectOptions,
   text,
   textInputs,
-  onBlur,
-  onFocus,
-  onKeyPress,
   warning,
 }) {
   const [state, setState] = useState({
@@ -100,34 +106,36 @@ function InputBlock({
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let inputTextColor;
+  let messageColor;
   let errorText;
   if (error && !isDisabled) {
     inputTextColor = "alert";
+    messageColor = "alert";
     errorText = typeof error === "string" ? error : "";
   } else if (warning && !isDisabled) {
-    inputTextColor = "warning";
+    messageColor = "alert";
     errorText = typeof warning === "string" ? warning : "";
   }
   const inputElements = textInputs.map((input) => {
     return (
       <TextInput
+        autocompleteList={input.autocompleteList}
         disabled={isDisabled}
         error={!!error}
-        warning={!!warning}
-        key={input.id}
         id={input.id}
+        key={input.id}
         name={input.name || input.id}
+        onBlur={onBlur}
         onChange={handleChange}
+        onFocus={onFocus}
+        onKeyPress={onKeyPress}
         pattern={input.pattern}
         placeholder={input.placeholder}
         readonly={input.readonly}
         title={input.title}
         type={input.type}
         value={state.input[input.id]}
-        onKeyPress={onKeyPress}
-        onBlur={onBlur}
-        onFocus={onFocus}
-        autocompleteList={input.autocompleteList}
+        warning={!!warning}
       />
     );
   });
@@ -226,7 +234,7 @@ function InputBlock({
         {label ? <Label size="2x" isRequired={isRequired} text={label} /> : null}
         {inputContainer}
         {helpText ? <Text size="1x" text={helpText} /> : null}
-        {errorText ? <Text size="1x" text={errorText} /> : null}
+        {errorText ? <MessageContainer messageColor={messageColor}> <Text size="1x" text={errorText} /> </MessageContainer> : null}
       </TextInputContainer>
     </DisabledContext.Provider>
   );

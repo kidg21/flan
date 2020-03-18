@@ -312,7 +312,19 @@ storiesOf("Blocks|Input Block", module).add(
             label="Input Block ( error )"
             textInputs={inputsOne}
             helpText="Hang in there, buddy, I'm here to help!"
+            error
+          />
+          <InputBlock
+            label="Input Block ( error )"
+            textInputs={inputsOne}
+            helpText="Hang in there, buddy, I'm here to help!"
             error="Don't sweat it...we can fix this!"
+          />
+          <InputBlock
+            label="Input Block ( warning )"
+            textInputs={inputsOne}
+            helpText="Hang in there, buddy, I'm here to help!"
+            warning="Don't sweat it...we can fix this!"
           />
           <InputBlock
             label="Input Block ( disabled )"

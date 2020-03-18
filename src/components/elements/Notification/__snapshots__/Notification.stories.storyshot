@@ -23,12 +23,12 @@ Array [
         onClick={null}
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-1 hfFaih"
+          className="Bar__BarLayout-sc-1c4axau-2 gzisev"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-0 cSnMzs"
+            className="Bar__Slot-sc-1c4axau-1 dSTdeN"
           >
             <section
               className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
@@ -46,7 +46,7 @@ Array [
             </section>
           </div>
           <div
-            className="Bar__Slot-sc-1c4axau-0 hQRtOo"
+            className="Bar__Slot-sc-1c4axau-1 kMmFgx"
           >
             <a
               className="Icon__LinkedIcon-sc-1oa9m1v-0 kzNrBw"
@@ -96,6 +96,7 @@ Array [
         className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
         fontSize="1em"
         fontWeight={600}
+        id={null}
         letterSpacing="0px"
       >
         Show Notification
@@ -128,12 +129,12 @@ Array [
         onClick={null}
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-1 hfFaih"
+          className="Bar__BarLayout-sc-1c4axau-2 gzisev"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-0 cSnMzs"
+            className="Bar__Slot-sc-1c4axau-1 dSTdeN"
           >
             <section
               className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
@@ -151,7 +152,7 @@ Array [
             </section>
           </div>
           <div
-            className="Bar__Slot-sc-1c4axau-0 hQRtOo"
+            className="Bar__Slot-sc-1c4axau-1 kMmFgx"
           >
             <a
               className="Icon__LinkedIcon-sc-1oa9m1v-0 kzNrBw"
@@ -188,7 +189,7 @@ Array [
     id={null}
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 cYHdrc"
+      className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 cLuLNu"
     >
       <button
         className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
@@ -208,6 +209,7 @@ Array [
             className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
             fontSize="1em"
             fontWeight={600}
+            id={null}
             letterSpacing="0px"
           >
             Show Notification
@@ -245,12 +247,12 @@ Array [
         onClick={null}
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-1 hfFaih"
+          className="Bar__BarLayout-sc-1c4axau-2 gzisev"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-0 cSnMzs"
+            className="Bar__Slot-sc-1c4axau-1 dSTdeN"
           >
             <section
               className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
@@ -268,7 +270,7 @@ Array [
             </section>
           </div>
           <div
-            className="Bar__Slot-sc-1c4axau-0 hQRtOo"
+            className="Bar__Slot-sc-1c4axau-1 kMmFgx"
           >
             <a
               className="Icon__LinkedIcon-sc-1oa9m1v-0 kzNrBw"
@@ -305,7 +307,7 @@ Array [
     id={null}
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 cYHdrc"
+      className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 cLuLNu"
     >
       <button
         className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
@@ -325,6 +327,7 @@ Array [
             className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
             fontSize="1em"
             fontWeight={600}
+            id={null}
             letterSpacing="0px"
           >
             Status Notification

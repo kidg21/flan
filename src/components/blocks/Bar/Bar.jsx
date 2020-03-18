@@ -4,6 +4,10 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
 
+const LinkedWrapper = styled.a`
+flex: auto;
+`;
+
 const Slot = styled.div`
   display: flex;
   flex: ${(props) => {
@@ -84,6 +88,7 @@ function getPadding(left, right, center) {
 
 const paddingHash = {
   "none": "0",
+  "1x": "0.5em 1em",
   "2x": "1em 1.25em",
   "3x": "1.5em 1.5em",
 };
@@ -94,41 +99,50 @@ const alignHash = {
   top: "flex-start",
 };
 
+const slotAlignHash = {
+  left: {
+    alignItems: "flex-start",
+    textAlign: "left",
+  },
+  right: {
+    alignItems: "flex-end",
+    textAlign: "right",
+  },
+  center: {
+    alignItems: "center",
+    textAlign: "center",
+  },
+};
+
+function getContent(slot) {
+  const content = slot && slot.content ? slot.content : slot;
+  if (slot && slot.onClick) return <LinkedWrapper onClick={slot.onClick}>{content}</LinkedWrapper>;
+  return content;
+}
+
 function Bar({
   center,
-  centerAlign,
   className,
   contentAlign,
   disabled,
   id,
   left,
-  leftWidth,
   onClick,
   padding,
   right,
-  rightWidth,
 }) {
   const slotPadding = getPadding(left, right, center);
   const barPadding = padding ? paddingHash[padding.toLowerCase()] : null;
   const alignContent = alignHash[contentAlign && contentAlign.toLowerCase()] || "flex-start";
 
-  let alignItems;
-  let textAlign;
-  switch (centerAlign && centerAlign.toLowerCase()) {
-    case "left":
-      alignItems = "flex-start";
-      textAlign = "left";
-      break;
-    case "right":
-      alignItems = "flex-end";
-      textAlign = "right";
-      break;
-    case "center":
-    default:
-      alignItems = "center";
-      textAlign = "center";
-      break;
-  }
+  let leftAlign = {};
+  if (left && left.align) leftAlign = slotAlignHash[left.align];
+
+  let centerAlign = slotAlignHash.center;
+  if (center && center.align) centerAlign = slotAlignHash[center.align];
+
+  let rightAlign = slotAlignHash.right;
+  if (right && right.align) rightAlign = slotAlignHash[right.align];
 
   const barLayout = (
     <BarLayout
@@ -143,31 +157,32 @@ function Bar({
         <Slot
           setFlex="1 0 25%"
           setPadding={slotPadding.left}
-          widthMax={leftWidth}
-          widthMin={leftWidth}
+          widthMax={left.width}
+          widthMin={left.width}
+          {...leftAlign}
         >
-          {left}
+          {getContent(left)}
         </Slot>
       ) : null}
       {center ? (
         <Slot
-          alignItems={alignItems}
           setPadding={slotPadding.center}
-          textAlign={textAlign}
+          widthMax={center.width}
+          widthMin={center.width}
+          {...centerAlign}
         >
-          {center}
+          {getContent(center)}
         </Slot>
       ) : null}
       {right ? (
         <Slot
-          alignItems="flex-end"
           setFlex="1 0 25%"
           setPadding={slotPadding.right}
-          textAlign="right"
-          widthMax={rightWidth}
-          widthMin={rightWidth}
+          widthMax={right.width}
+          widthMin={right.width}
+          {...rightAlign}
         >
-          {right}
+          {getContent(right)}
         </Slot>
       ) : null}
     </BarLayout>
@@ -182,13 +197,21 @@ function Bar({
     );
 }
 
+const SlotType = PropTypes.shape({
+  /** Used to define the content in the slot */
+  content: PropTypes.node,
+  /** Used to override the default flex ratio of the slot by increasing the setting of 'min-width' and 'max-width'.
+   * Value should be in percentage (%)
+   */
+  width: PropTypes.string,
+  /** Sets the horizontal alignment of the slot content */
+  align: PropTypes.oneOf(["left", "right", "center"]),
+  onClick: PropTypes.func,
+});
+
 Bar.propTypes = {
   /** Used to define the content in the center 'slot' */
-  center: PropTypes.node,
-  /** Sets the horizontal alignment of 'center' content
-   * Default: 'center'
-   */
-  centerAlign: PropTypes.oneOf(["left", "right", "center"]),
+  center: PropTypes.oneOfType([PropTypes.node, SlotType]),
   className: PropTypes.string,
   /** Sets the vertical alignment of all content
    * Default: 'top'
@@ -197,35 +220,24 @@ Bar.propTypes = {
   disabled: PropTypes.bool,
   id: PropTypes.string,
   /** Used to define the content in the left 'slot' */
-  left: PropTypes.node,
-  /** Used to override the default flex ratio of the left 'slot' by increasing the setting of 'min-width' and 'max-width'.
-   * Value should be in percentage (%)
-   */
-  leftWidth: PropTypes.string,
+  left: PropTypes.oneOfType([PropTypes.node, SlotType]),
   onClick: PropTypes.func,
   /** Sets the padding of the Bar component */
-  padding: PropTypes.oneOf(["none", "2x", "3x"]),
+  padding: PropTypes.oneOf(["none", "1x", "2x", "3x", "top", "vertical", "horizontal"]),
   /** Used to define the content in the right 'slot' */
-  right: PropTypes.node,
-  /** Used to override the default flex ratio of the right 'slot' by increasing the setting of 'min-width' and 'max-width'.
-   * Value should be in percentage (%)
-   */
-  rightWidth: PropTypes.string,
+  right: PropTypes.oneOfType([PropTypes.node, SlotType]),
 };
 
 Bar.defaultProps = {
   center: null,
-  centerAlign: null,
   className: null,
   contentAlign: null,
   disabled: null,
   id: null,
   left: null,
-  leftWidth: null,
   onClick: null,
   padding: null,
   right: null,
-  rightWidth: null,
 };
 
 export default Bar;

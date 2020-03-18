@@ -1,122 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[` 1`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 fGkTyc"
-  id={null}
-  rows={null}
->
-  <div
-    alt={null}
-    className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
-    id={null}
-    label="LG"
-    onClick={null}
-    src={null}
-  >
-    <h6
-      className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
-      fontSize="1.05em"
-      fontWeight={400}
-      letterSpacing="0px"
-    >
-      LG
-    </h6>
-  </div>
-  <div
-    alt={null}
-    className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
-    id={null}
-    label="HF"
-    onClick={null}
-    src={null}
-  >
-    <h6
-      className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
-      fontSize="1.05em"
-      fontWeight={400}
-      letterSpacing="0px"
-    >
-      HF
-    </h6>
-  </div>
-  <div
-    alt={null}
-    className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
-    id={null}
-    label="TX"
-    onClick={null}
-    src={null}
-  >
-    <h6
-      className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
-      fontSize="1.05em"
-      fontWeight={400}
-      letterSpacing="0px"
-    >
-      TX
-    </h6>
-  </div>
-  <div
-    alt={null}
-    className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
-    id={null}
-    label={null}
-    onClick={null}
-    src={null}
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-envelope fa-w-16 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
-      color={null}
-      data-icon="envelope"
-      data-prefix="far"
-      focusable="false"
-      id={null}
-      role="img"
-      style={Object {}}
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-  </div>
-  <div
-    alt={null}
-    className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
-    id={null}
-    label={null}
-    onClick={null}
-    src={null}
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-user fa-w-14 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
-      color={null}
-      data-icon="user"
-      data-prefix="far"
-      focusable="false"
-      id={null}
-      role="img"
-      style={Object {}}
-      viewBox="0 0 448 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-  </div>
-</section>
-`;
-
-exports[` 2`] = `
 <div
   alt={null}
   className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
@@ -136,7 +20,7 @@ exports[` 2`] = `
 </div>
 `;
 
-exports[` 3`] = `
+exports[` 2`] = `
 <section
   className="Grid__GridWrapper-sc-1ntp7gx-0 ihnaIG"
   id={null}
@@ -213,7 +97,7 @@ exports[` 3`] = `
 </section>
 `;
 
-exports[` 4`] = `
+exports[` 3`] = `
 <section
   className="Grid__GridWrapper-sc-1ntp7gx-0 ihnaIG"
   id={null}
@@ -324,7 +208,7 @@ exports[` 4`] = `
 </section>
 `;
 
-exports[` 5`] = `
+exports[` 4`] = `
 <section
   className="Grid__GridWrapper-sc-1ntp7gx-0 ihnaIG"
   id={null}
@@ -469,7 +353,7 @@ exports[` 5`] = `
 </section>
 `;
 
-exports[` 6`] = `
+exports[` 5`] = `
 <section
   className="Grid__GridWrapper-sc-1ntp7gx-0 ihnaIG"
   id={null}
@@ -590,7 +474,7 @@ exports[` 6`] = `
 </section>
 `;
 
-exports[` 7`] = `
+exports[` 6`] = `
 <section
   className="Grid__GridWrapper-sc-1ntp7gx-0 ihnaIG"
   id={null}
@@ -633,7 +517,7 @@ exports[` 7`] = `
 </section>
 `;
 
-exports[` 8`] = `
+exports[` 7`] = `
 <section
   className="Grid__GridWrapper-sc-1ntp7gx-0 ihnaIG"
   id={null}

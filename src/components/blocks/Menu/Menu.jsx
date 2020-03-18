@@ -110,7 +110,7 @@ function MenuComponent({
       top={top}
       transform={transform}
     >
-      <Card shadow="1x">
+      <Card shadow="2x">
         <ListWrapper id={`listwrapper-${id}`} interactive>
           {data.map((item) => {
             // nested submenu

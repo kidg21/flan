@@ -9,30 +9,47 @@ exports[` 1`] = `
   }
 >
   <div
-    className="Legend__Wrapper-sc-70hm4b-0 fZKrnj"
+    className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
     id={null}
   >
+    <h6
+      className="Typography__TitleText-sc-19auepv-2 gfzBkI Legend__LegendTitle-sc-70hm4b-0 cnHOZd"
+      fontSize="1.05em"
+      fontWeight={600}
+      letterSpacing="0px"
+    >
+      Legend
+    </h6>
     <table
-      className="Legend__TableContainer-sc-70hm4b-1 igtJdQ"
+      className="Legend__TableContainer-sc-70hm4b-2 jAZZyL"
       id={null}
     >
       <tr
-        className="Legend__Row-sc-70hm4b-2 ixPAzp"
+        className="Legend__Row-sc-70hm4b-4 kveaPn"
       >
         <td
-          className="Legend__Cell-sc-70hm4b-3 fNhjXV"
-          fontSize={null}
-        >
-          Category 0
-        </td>
-        <td
-          className="Legend__Cell-sc-70hm4b-3 fNhjXV"
+          className="Legend__Cell-sc-70hm4b-3 hreFBt"
           fontSize={null}
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-            fontSize="0.876em"
+            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+            fontSize="0.95em"
             fontWeight={400}
+            id={null}
+            letterSpacing="0px"
+          >
+            Category 0
+          </p>
+        </td>
+        <td
+          className="Legend__Cell-sc-70hm4b-3 hreFBt"
+          fontSize={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+            fontSize="0.95em"
+            fontWeight={400}
+            id={null}
             letterSpacing="0px"
           >
             Value 0
@@ -40,22 +57,31 @@ exports[` 1`] = `
         </td>
       </tr>
       <tr
-        className="Legend__Row-sc-70hm4b-2 ixPAzp"
+        className="Legend__Row-sc-70hm4b-4 kveaPn"
       >
         <td
-          className="Legend__Cell-sc-70hm4b-3 fNhjXV"
-          fontSize={null}
-        >
-          Category 1
-        </td>
-        <td
-          className="Legend__Cell-sc-70hm4b-3 fNhjXV"
+          className="Legend__Cell-sc-70hm4b-3 hreFBt"
           fontSize={null}
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-            fontSize="0.876em"
+            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+            fontSize="0.95em"
             fontWeight={400}
+            id={null}
+            letterSpacing="0px"
+          >
+            Category 1
+          </p>
+        </td>
+        <td
+          className="Legend__Cell-sc-70hm4b-3 hreFBt"
+          fontSize={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+            fontSize="0.95em"
+            fontWeight={400}
+            id={null}
             letterSpacing="0px"
           >
             Value 1
@@ -63,22 +89,31 @@ exports[` 1`] = `
         </td>
       </tr>
       <tr
-        className="Legend__Row-sc-70hm4b-2 ixPAzp"
+        className="Legend__Row-sc-70hm4b-4 kveaPn"
       >
         <td
-          className="Legend__Cell-sc-70hm4b-3 fNhjXV"
-          fontSize={null}
-        >
-          Category 2
-        </td>
-        <td
-          className="Legend__Cell-sc-70hm4b-3 fNhjXV"
+          className="Legend__Cell-sc-70hm4b-3 hreFBt"
           fontSize={null}
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-            fontSize="0.876em"
+            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+            fontSize="0.95em"
             fontWeight={400}
+            id={null}
+            letterSpacing="0px"
+          >
+            Category 2
+          </p>
+        </td>
+        <td
+          className="Legend__Cell-sc-70hm4b-3 hreFBt"
+          fontSize={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+            fontSize="0.95em"
+            fontWeight={400}
+            id={null}
             letterSpacing="0px"
           >
             Value 2
@@ -86,22 +121,31 @@ exports[` 1`] = `
         </td>
       </tr>
       <tr
-        className="Legend__Row-sc-70hm4b-2 ixPAzp"
+        className="Legend__Row-sc-70hm4b-4 kveaPn"
       >
         <td
-          className="Legend__Cell-sc-70hm4b-3 fNhjXV"
-          fontSize={null}
-        >
-          Category 3
-        </td>
-        <td
-          className="Legend__Cell-sc-70hm4b-3 fNhjXV"
+          className="Legend__Cell-sc-70hm4b-3 hreFBt"
           fontSize={null}
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-            fontSize="0.876em"
+            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+            fontSize="0.95em"
             fontWeight={400}
+            id={null}
+            letterSpacing="0px"
+          >
+            Category 3
+          </p>
+        </td>
+        <td
+          className="Legend__Cell-sc-70hm4b-3 hreFBt"
+          fontSize={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+            fontSize="0.95em"
+            fontWeight={400}
+            id={null}
             letterSpacing="0px"
           >
             Value 3
@@ -109,22 +153,31 @@ exports[` 1`] = `
         </td>
       </tr>
       <tr
-        className="Legend__Row-sc-70hm4b-2 ixPAzp"
+        className="Legend__Row-sc-70hm4b-4 kveaPn"
       >
         <td
-          className="Legend__Cell-sc-70hm4b-3 fNhjXV"
-          fontSize={null}
-        >
-          Category 4
-        </td>
-        <td
-          className="Legend__Cell-sc-70hm4b-3 fNhjXV"
+          className="Legend__Cell-sc-70hm4b-3 hreFBt"
           fontSize={null}
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-            fontSize="0.876em"
+            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+            fontSize="0.95em"
             fontWeight={400}
+            id={null}
+            letterSpacing="0px"
+          >
+            Category 4
+          </p>
+        </td>
+        <td
+          className="Legend__Cell-sc-70hm4b-3 hreFBt"
+          fontSize={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+            fontSize="0.95em"
+            fontWeight={400}
+            id={null}
             letterSpacing="0px"
           >
             Value 4
@@ -132,22 +185,31 @@ exports[` 1`] = `
         </td>
       </tr>
       <tr
-        className="Legend__Row-sc-70hm4b-2 ixPAzp"
+        className="Legend__Row-sc-70hm4b-4 kveaPn"
       >
         <td
-          className="Legend__Cell-sc-70hm4b-3 fNhjXV"
-          fontSize={null}
-        >
-          Category 5
-        </td>
-        <td
-          className="Legend__Cell-sc-70hm4b-3 fNhjXV"
+          className="Legend__Cell-sc-70hm4b-3 hreFBt"
           fontSize={null}
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-            fontSize="0.876em"
+            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+            fontSize="0.95em"
             fontWeight={400}
+            id={null}
+            letterSpacing="0px"
+          >
+            Category 5
+          </p>
+        </td>
+        <td
+          className="Legend__Cell-sc-70hm4b-3 hreFBt"
+          fontSize={null}
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+            fontSize="0.95em"
+            fontWeight={400}
+            id={null}
             letterSpacing="0px"
           >
             Value 5

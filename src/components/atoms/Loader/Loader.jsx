@@ -1,5 +1,5 @@
 /* eslint-disable linebreak-style */
-import React, { Fragment } from "react";
+import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 
@@ -77,11 +77,11 @@ function Loader({ line, id }) {
   let content;
   if (line) {
     content = (
-      <Fill />
+      <Fill id={id} />
     );
   } else {
     content = (
-      <Chase>
+      <Chase id={id}>
         <Dot />
         <Dot />
         <Dot />
@@ -89,16 +89,12 @@ function Loader({ line, id }) {
       </Chase>);
   }
 
-  return (
-    <Fragment id={id}>
-      {content}
-    </Fragment>
-  );
+  return content;
 }
 
 Loader.propTypes = {
   id: PropTypes.string,
-  line: PropTypes.cool,
+  line: PropTypes.bool,
 };
 
 Loader.defaultProps = {

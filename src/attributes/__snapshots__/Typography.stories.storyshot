@@ -58,14 +58,16 @@ exports[` 1`] = `
     className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
     fontSize="1em"
     fontWeight={400}
+    id={null}
     letterSpacing="0px"
   >
     4x Text
   </p>
   <p
-    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-    fontSize="0.876em"
+    className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+    fontSize="0.95em"
     fontWeight={400}
+    id={null}
     letterSpacing="0px"
   >
     3x Text
@@ -74,6 +76,7 @@ exports[` 1`] = `
     className="Typography__Paragraph-sc-19auepv-3 CcLky"
     fontSize="0.75em"
     fontWeight={400}
+    id={null}
     letterSpacing="0.2px"
   >
     2x Text
@@ -82,6 +85,7 @@ exports[` 1`] = `
     className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
     fontSize="0.65em"
     fontWeight={400}
+    id={null}
     letterSpacing="0.6px"
   >
     1x Text

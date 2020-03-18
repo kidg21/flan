@@ -9,12 +9,12 @@ exports[` 1`] = `
     className="Panel__SectionWrapper-sc-48epke-1 jZYywS"
   >
     <div
-      className="Bar__BarLayout-sc-1c4axau-1 bskYLt"
+      className="Bar__BarLayout-sc-1c4axau-2 hVthby"
       id={null}
       onClick={null}
     >
       <div
-        className="Bar__Slot-sc-1c4axau-0 iylbCl"
+        className="Bar__Slot-sc-1c4axau-1 ekMqDX"
       >
         <h5
           className="Typography__TitleText-sc-19auepv-2 bKCMpV"
@@ -27,12 +27,12 @@ exports[` 1`] = `
       </div>
     </div>
     <div
-      className="Bar__BarLayout-sc-1c4axau-1 fFjagU"
+      className="Bar__BarLayout-sc-1c4axau-2 xQXbG"
       id={null}
       onClick={null}
     >
       <div
-        className="Bar__Slot-sc-1c4axau-0 dWVqUt"
+        className="Bar__Slot-sc-1c4axau-1 hAjMjw"
       >
         <section
           className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
@@ -41,11 +41,12 @@ exports[` 1`] = `
         >
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+            className="TextInput__Input-sc-1fep8p8-2 isQToF"
             cols=""
             disabled={false}
             id="editRoles_search"
             list={null}
+            maxLength={null}
             name="editRoles_search"
             onBlur={null}
             onChange={null}
@@ -62,7 +63,7 @@ exports[` 1`] = `
         </section>
       </div>
       <div
-        className="Bar__Slot-sc-1c4axau-0 ikxUaE"
+        className="Bar__Slot-sc-1c4axau-1 kHYCoh"
       >
         <button
           className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
@@ -82,6 +83,7 @@ exports[` 1`] = `
               className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
               fontSize="1em"
               fontWeight={600}
+              id={null}
               letterSpacing="0px"
             >
               +Add Role
@@ -103,12 +105,12 @@ exports[` 2`] = `
     className="Panel__SectionWrapper-sc-48epke-1 jZYywS"
   >
     <div
-      className="Bar__BarLayout-sc-1c4axau-1 bskYLt"
+      className="Bar__BarLayout-sc-1c4axau-2 hVthby"
       id={null}
       onClick={null}
     >
       <div
-        className="Bar__Slot-sc-1c4axau-0 iylbCl"
+        className="Bar__Slot-sc-1c4axau-1 ekMqDX"
       >
         <h5
           className="Typography__TitleText-sc-19auepv-2 bKCMpV"
@@ -121,12 +123,12 @@ exports[` 2`] = `
       </div>
     </div>
     <div
-      className="Bar__BarLayout-sc-1c4axau-1 fFjagU"
+      className="Bar__BarLayout-sc-1c4axau-2 xQXbG"
       id={null}
       onClick={null}
     >
       <div
-        className="Bar__Slot-sc-1c4axau-0 dWVqUt"
+        className="Bar__Slot-sc-1c4axau-1 hAjMjw"
       >
         <section
           className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
@@ -135,11 +137,12 @@ exports[` 2`] = `
         >
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-1 hrazvq"
+            className="TextInput__Input-sc-1fep8p8-2 isQToF"
             cols=""
             disabled={false}
             id="editUsers_search"
             list={null}
+            maxLength={null}
             name="editUsers_search"
             onBlur={null}
             onChange={null}
@@ -156,7 +159,7 @@ exports[` 2`] = `
         </section>
       </div>
       <div
-        className="Bar__Slot-sc-1c4axau-0 ikxUaE"
+        className="Bar__Slot-sc-1c4axau-1 kHYCoh"
       >
         <button
           className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
@@ -176,6 +179,7 @@ exports[` 2`] = `
               className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
               fontSize="1em"
               fontWeight={600}
+              id={null}
               letterSpacing="0px"
             >
               +Add User

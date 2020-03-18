@@ -93,7 +93,6 @@ function Radio({
   onChange,
   onFocus,
   value,
-  warning,
 }) {
   let inputTextColor;
   let fillColor;
@@ -114,13 +113,7 @@ function Radio({
     fillColorChecked = "alert60";
     inputTextColor = "alert";
     outlineColor = "alert60";
-  } else if (warning) {
-    fillColor = "warning60";
-    fillColorChecked = "warning60";
-    inputTextColor = "warning";
-    outlineColor = "warning60";
   }
-
   switch (align) {
     case "right":
       alignInput = "'label input'";
@@ -166,7 +159,6 @@ function RadioGroup({
   isRequired,
   label,
   onChange,
-  warning,
 }) {
   let inputTextColor;
   let errorText;
@@ -176,9 +168,6 @@ function RadioGroup({
     if (error) {
       inputTextColor = "alert";
       if (typeof error === "string") errorText = error;
-    } else if (warning) {
-      inputTextColor = "warning";
-      errorText = warning;
     }
   }
 
@@ -207,7 +196,6 @@ function RadioGroup({
                 name={item.name}
                 onChange={onChange}
                 value={item.value}
-                warning={!!warning}
               />
             );
           })}
@@ -233,7 +221,6 @@ Radio.propTypes = {
   /** The value property sets or returns the value of the value attribute of the radio button.
    * Define different values for radio buttons in the same group, to identify (on the server side) which one was checked.  */
   value: PropTypes.string,
-  warning: PropTypes.bool,
 };
 
 Radio.defaultProps = {
@@ -248,7 +235,6 @@ Radio.defaultProps = {
   onChange: null,
   onFocus: null,
   value: null,
-  warning: false,
 };
 
 RadioGroup.propTypes = {
@@ -273,7 +259,6 @@ RadioGroup.propTypes = {
   isRequired: PropTypes.bool,
   label: PropTypes.string,
   onChange: PropTypes.func,
-  warning: PropTypes.string,
 };
 
 RadioGroup.defaultProps = {
@@ -298,7 +283,6 @@ RadioGroup.defaultProps = {
   isRequired: false,
   label: null,
   onChange: null,
-  warning: null,
 };
 
 export { Radio as default, RadioGroup };
