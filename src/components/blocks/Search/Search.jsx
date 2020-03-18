@@ -45,17 +45,17 @@ function Search({
   );
 
   return (
-    <Grid columns="1" gap="tiny">
+    <Grid columns="1" gap="tiny" id={id}>
       <Grid columns="9fr .5fr">
         <TextInput
-          id={id}
+          id="my-search-bar"
           placeholder={placeholder}
           type="search"
         />
         <Button icon="search" solid onClick={onSearch} />
         {/* <Button icon="more" plain /> */}
       </Grid>
-      { error || results ? <Grid columns="9fr .5fr"> <DropContainer maxHeight="22rem" > { Body }</DropContainer></Grid> : null}
+      { error || results ? <Grid columns="9fr .5fr"> <DropContainer id="results-container" maxHeight="22rem" > { Body }</DropContainer></Grid> : null}
       {/* { advance ? <Advanced inputs={inputs} /> : null} */}
     </Grid>
   );
