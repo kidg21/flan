@@ -5,7 +5,6 @@ import LightBoxIcon from "images/LightBoxIconLogo.png";
 import Panel from "layout/Panel";
 import DataTable from "blocks/Table";
 import List, { ListItem } from "blocks/List";
-import Mapbox from "layout/Map";
 import Text, { Title } from "base/Typography";
 import Avatar from "atoms/Avatar";
 import Command from "atoms/Command";
