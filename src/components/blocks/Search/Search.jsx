@@ -13,6 +13,30 @@ import Container from "atoms/Container";
 import Icon from "atoms/Icon";
 import styled from "styled-components";
 
+const SearchContainer = styled.div`
+  border: 1px solid;
+  min-width: 12rem;
+  border-radius: 4px;
+  border-color: ${(props) => {
+    return ( props.theme.palette.neutral60
+    );
+  }};
+  &:hover {
+    border-color: ${(props) => {
+    return (
+      props.theme.palette.selected
+    );
+  }};
+    }
+  &:selected {
+    border-color: ${(props) => {
+    return (
+      props.theme.palette.selected
+    );
+  }};
+}
+}
+`;
 
 const DropContainer = styled(Container)`
 position: fixed;
@@ -46,15 +70,18 @@ function Search({
 
   return (
     <Grid columns="1" gap="tiny" id={id}>
+      <SearchContainer>
       <Grid columns="9fr .5fr">
         <TextInput
+          transparent
           id="my-search-bar"
           placeholder={placeholder}
           type="search"
         />
-        <Button icon="search" solid onClick={onSearch} />
+        <Button icon="search" plain onClick={onSearch} />
         {/* <Button icon="more" plain /> */}
       </Grid>
+      </SearchContainer>
       { error || results ? <Grid columns="9fr .5fr"> <DropContainer id="results-container" maxHeight="22rem" > { Body }</DropContainer></Grid> : null}
       {/* { advance ? <Advanced inputs={inputs} /> : null} */}
     </Grid>
