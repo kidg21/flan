@@ -247,7 +247,7 @@ function Button({
 
   let iconSize = null;
   if (vertical) iconSize = "lg";
-  else if (!label && !count) iconSize = "2x";
+  else if (!label && !count) iconSize = "md";
 
   const columns =
     count || icon ? `${!vertical && icon ? "max-content" : ""} 1fr ${count ? "max-content" : ""}` : "1fr";

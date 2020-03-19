@@ -5,6 +5,10 @@ import LightBoxIcon from "images/LightBoxIconLogo.png";
 import Panel from "layout/Panel";
 import DataTable from "blocks/Table";
 import List, { ListItem } from "blocks/List";
+import Icon from "atoms/Icon";
+import Grid from "layout/Grid";
+import Search from "blocks/Search";
+import IconBlock from "blocks/IconBlock";
 import Text, { Title } from "base/Typography";
 import Avatar from "atoms/Avatar";
 import Command from "atoms/Command";
@@ -421,6 +425,85 @@ storiesOf("Layout|Layout/", module)
                   }}
                 />
               ),
+            }}
+          />
+        );
+      });
+    },
+  )
+  .add(
+    "Multiple Icons (configured)",
+    () => {
+      return React.createElement(() => {
+        const [leftOpen, setLeftOpen] = useState(false);
+        const seeLeftRegion = () => { setLeftOpen(!leftOpen); };
+        const [rightOpen, setRightOpen] = useState(false);
+        const seeRightRegion = () => { setRightOpen(!rightOpen); };
+        const [bottomOpen, setBottomOpen] = useState(false);
+        const seeBottomRegion = () => { setBottomOpen(!bottomOpen); };
+        return (
+          <Layout
+            header={{
+              id: "Header",
+              content: (
+                <Bar
+                  contentAlign="center"
+                  padding="2x"
+                  left={{
+                    content: (
+                      <Avatar
+                        image
+                        src={LightBoxIcon}
+                        alt="logo"
+                        onClick={seeLeftRegion}
+                      />
+                    ),
+                    width: "5%",
+                  }}
+                  center={{
+                    content: (
+                      <Search placeholder="Search"/>
+                    ),
+                    align: "left",
+                  }}
+                  right={{
+                    content: (
+                      <IconBlock>
+                       <Icon
+                        icon="list"
+                        onClick={seeRightRegion}
+                      />
+                       <Icon
+                        icon="calendar"
+                        onClick={seeRightRegion}
+                      />
+                        <Icon
+                        icon="chat"
+                        onClick={seeRightRegion}
+                      />
+                      <Avatar
+                      label="LB"
+                      onClick={seeRightRegion}
+                      />
+                      </IconBlock>
+                    ),
+                    width: "15%",
+                  }}
+                />
+              ),
+            }}
+            left={{
+              content: listPanel,
+              visible: leftOpen,
+            }}
+            main={{ content: map }}
+            right={{
+              content: infoPanel,
+              visible: rightOpen,
+            }}
+            bottom={{
+              content: dataTable,
+              visible: bottomOpen,
             }}
           />
         );

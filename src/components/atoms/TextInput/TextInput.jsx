@@ -40,8 +40,9 @@ const Input = styled.input`
     return props.theme.palette[props.inputCaretColor] || "";
   }};
   width: 100%;
-  min-height: 2.7rem;
-  padding: 0.3rem 0.75rem;
+  min-height: 30px;
+  height: 2.4rem;
+  padding: 2px 8px;
   resize: ${(props) => {
     return props.inputResize || "";
   }};
@@ -90,6 +91,7 @@ function TextInput({
   className,
   disabled,
   error,
+  transparent,
   helpText,
   id,
   isRequired,
@@ -168,6 +170,9 @@ function TextInput({
     inputBorderColor = "neutral40";
     inputFillColor = "disabled";
     inputTextColor = "disabled";
+  } else if (transparent) {
+    inputBorderColor = "inverse";
+    inputBorderColorHover = "inverse";
   } else if (error) {
     inputBorderColor = "alert60";
     messageColor = "alert";
@@ -241,6 +246,7 @@ TextInput.propTypes = {
   disabled: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   helpText: PropTypes.string,
+  transparent: PropTypes.bool,
   id: PropTypes.string,
   isRequired: PropTypes.bool,
   label: PropTypes.string,
@@ -291,6 +297,7 @@ TextInput.defaultProps = {
   error: "",
   helpText: null,
   id: null,
+  transparent: false,
   label: null,
   isRequired: false,
   onChange: null,
