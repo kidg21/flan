@@ -82,7 +82,7 @@ function Search({
         {/* <Button icon="more" plain /> */}
       </Grid>
       </SearchContainer>
-      { error || results ? <Grid columns="9fr .5fr"> <DropContainer id="results-container" maxHeight="22rem" > { Body }</DropContainer></Grid> : null}
+      { error || results ? <DropContainer id="results-container" maxHeight="22rem" > { Body }</DropContainer>: null}
       {/* { advance ? <Advanced inputs={inputs} /> : null} */}
     </Grid>
   );
