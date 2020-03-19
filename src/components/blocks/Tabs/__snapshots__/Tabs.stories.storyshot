@@ -596,7 +596,7 @@ exports[` 6`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-user fa-w-14 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+          className="svg-inline--fa fa-user fa-w-14 fa-md Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
           color={null}
           data-icon="user"
           data-prefix="far"
@@ -631,7 +631,7 @@ exports[` 6`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-cog fa-w-16 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+          className="svg-inline--fa fa-cog fa-w-16 fa-md Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
           color={null}
           data-icon="cog"
           data-prefix="far"
@@ -666,7 +666,7 @@ exports[` 6`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-file-alt fa-w-12 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+          className="svg-inline--fa fa-file-alt fa-w-12 fa-md Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
           color={null}
           data-icon="file-alt"
           data-prefix="far"
