@@ -6,74 +6,78 @@ exports[` 1`] = `
   id={null}
   rows={null}
 >
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 faotSI"
-    id={null}
-    rows={null}
+  <div
+    className="Search__SearchContainer-sey9om-0 hKathB"
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-      id="my-search-bar_container"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 faotSI"
+      id={null}
       rows={null}
     >
-      <input
-        autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 isQToF"
-        cols=""
-        disabled={false}
-        id="my-search-bar"
-        list={null}
-        maxLength={null}
-        name="my-search-bar"
-        onBlur={null}
-        onChange={null}
-        onFocus={null}
-        onKeyPress={null}
-        pattern={null}
-        placeholder="Search Location"
-        rows=""
-        size={null}
-        title={null}
-        type="search"
-        value={null}
-      />
-    </section>
-    <button
-      className="Button__StyledButton-sc-1v7sls2-0 jLfFwi"
-      disabled={false}
-      htmlFor={null}
-      id={null}
-      name={null}
-      onClick={null}
-      tabIndex="1"
-    >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 gOxAef Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
-        id={null}
+        className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+        id="my-search-bar_container"
         rows={null}
       >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-search fa-w-16 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
-          color={null}
-          data-icon="search"
-          data-prefix="far"
-          focusable="false"
-          id={null}
-          role="img"
-          style={Object {}}
-          viewBox="0 0 512 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
+        <input
+          autoComplete="off"
+          className="TextInput__Input-sc-1fep8p8-2 cYvRjK"
+          cols=""
+          disabled={false}
+          id="my-search-bar"
+          list={null}
+          maxLength={null}
+          name="my-search-bar"
+          onBlur={null}
+          onChange={null}
+          onFocus={null}
+          onKeyPress={null}
+          pattern={null}
+          placeholder="Search Location"
+          rows=""
+          size={null}
+          title={null}
+          type="search"
+          value={null}
+        />
       </section>
-    </button>
-  </section>
+      <button
+        className="Button__StyledButton-sc-1v7sls2-0 kRDsvV"
+        disabled={false}
+        htmlFor={null}
+        id={null}
+        name={null}
+        onClick={null}
+        tabIndex="1"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 gOxAef Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+          id={null}
+          rows={null}
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-search fa-w-16 fa-md Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+            color={null}
+            data-icon="search"
+            data-prefix="far"
+            focusable="false"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </section>
+      </button>
+    </section>
+  </div>
 </section>
 `;
 
@@ -83,74 +87,78 @@ exports[` 2`] = `
   id={null}
   rows={null}
 >
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 faotSI"
-    id={null}
-    rows={null}
+  <div
+    className="Search__SearchContainer-sey9om-0 hKathB"
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-      id="my-search-bar_container"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 faotSI"
+      id={null}
       rows={null}
     >
-      <input
-        autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 isQToF"
-        cols=""
-        disabled={false}
-        id="my-search-bar"
-        list={null}
-        maxLength={null}
-        name="my-search-bar"
-        onBlur={null}
-        onChange={null}
-        onFocus={null}
-        onKeyPress={null}
-        pattern={null}
-        placeholder="Search Location"
-        rows=""
-        size={null}
-        title={null}
-        type="search"
-        value={null}
-      />
-    </section>
-    <button
-      className="Button__StyledButton-sc-1v7sls2-0 jLfFwi"
-      disabled={false}
-      htmlFor={null}
-      id={null}
-      name={null}
-      onClick={null}
-      tabIndex="1"
-    >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 gOxAef Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
-        id={null}
+        className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+        id="my-search-bar_container"
         rows={null}
       >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-search fa-w-16 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
-          color={null}
-          data-icon="search"
-          data-prefix="far"
-          focusable="false"
-          id={null}
-          role="img"
-          style={Object {}}
-          viewBox="0 0 512 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
+        <input
+          autoComplete="off"
+          className="TextInput__Input-sc-1fep8p8-2 cYvRjK"
+          cols=""
+          disabled={false}
+          id="my-search-bar"
+          list={null}
+          maxLength={null}
+          name="my-search-bar"
+          onBlur={null}
+          onChange={null}
+          onFocus={null}
+          onKeyPress={null}
+          pattern={null}
+          placeholder="Search Location"
+          rows=""
+          size={null}
+          title={null}
+          type="search"
+          value={null}
+        />
       </section>
-    </button>
-  </section>
+      <button
+        className="Button__StyledButton-sc-1v7sls2-0 kRDsvV"
+        disabled={false}
+        htmlFor={null}
+        id={null}
+        name={null}
+        onClick={null}
+        tabIndex="1"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 gOxAef Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+          id={null}
+          rows={null}
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-search fa-w-16 fa-md Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+            color={null}
+            data-icon="search"
+            data-prefix="far"
+            focusable="false"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </section>
+      </button>
+    </section>
+  </div>
 </section>
 `;
 
@@ -160,80 +168,563 @@ exports[` 3`] = `
   id={null}
   rows={null}
 >
+  <div
+    className="Search__SearchContainer-sey9om-0 hKathB"
+  >
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 faotSI"
+      id={null}
+      rows={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+        id="my-search-bar_container"
+        rows={null}
+      >
+        <input
+          autoComplete="off"
+          className="TextInput__Input-sc-1fep8p8-2 cYvRjK"
+          cols=""
+          disabled={false}
+          id="my-search-bar"
+          list={null}
+          maxLength={null}
+          name="my-search-bar"
+          onBlur={null}
+          onChange={null}
+          onFocus={null}
+          onKeyPress={null}
+          pattern={null}
+          placeholder="Search Location"
+          rows=""
+          size={null}
+          title={null}
+          type="search"
+          value={null}
+        />
+      </section>
+      <button
+        className="Button__StyledButton-sc-1v7sls2-0 kRDsvV"
+        disabled={false}
+        htmlFor={null}
+        id={null}
+        name={null}
+        onClick={null}
+        tabIndex="1"
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 gOxAef Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+          id={null}
+          rows={null}
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-search fa-w-16 fa-md Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+            color={null}
+            data-icon="search"
+            data-prefix="far"
+            focusable="false"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </section>
+      </button>
+    </section>
+  </div>
+  <div
+    className="Container__Wrapper-sc-1i4fzzd-0 hbxOEM"
+    height={null}
+    width={null}
+  >
+    <div
+      className="Container__BoxContainer-sc-1i4fzzd-1 ixiyce"
+      height=""
+      id="results-container"
+    >
+       
+      <ul
+        className="List__ListWrapper-sc-43f2zq-0 iOWfKZ"
+        id={null}
+      >
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+            >
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+                fontSize="1.05em"
+                fontWeight={400}
+                letterSpacing="0px"
+              >
+                White House
+              </h6>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                123 Malibu Drive, CA 92660
+              </p>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+            >
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+                fontSize="1.05em"
+                fontWeight={400}
+                letterSpacing="0px"
+              >
+                Orange House
+              </h6>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                1224 Malibu Drive, CA 92660
+              </p>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+            >
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+                fontSize="1.05em"
+                fontWeight={400}
+                letterSpacing="0px"
+              >
+                Red House
+              </h6>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                123 Malibu Drive, CA 92660
+              </p>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+            >
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+                fontSize="1.05em"
+                fontWeight={400}
+                letterSpacing="0px"
+              >
+                Green House
+              </h6>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                123 Malibu Drive, CA 92660
+              </p>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+            >
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+                fontSize="1.05em"
+                fontWeight={400}
+                letterSpacing="0px"
+              >
+                Black House
+              </h6>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                123 Malibu Drive, CA 92660
+              </p>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+            >
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+                fontSize="1.05em"
+                fontWeight={400}
+                letterSpacing="0px"
+              >
+                Blue House
+              </h6>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                123 Malibu Drive, CA 92660
+              </p>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+            >
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+                fontSize="1.05em"
+                fontWeight={400}
+                letterSpacing="0px"
+              >
+                Address
+              </h6>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                123 Malibu Drive, CA 92660
+              </p>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+            >
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+                fontSize="1.05em"
+                fontWeight={400}
+                letterSpacing="0px"
+              >
+                APN
+              </h6>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                123 Malibu Drive, CA 92660
+              </p>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+            >
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+                fontSize="1.05em"
+                fontWeight={400}
+                letterSpacing="0px"
+              >
+                Owner
+              </h6>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                123 Malibu Drive, CA 92660
+              </p>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+            >
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 ffuBqO"
+                fontSize="1.05em"
+                fontWeight={400}
+                letterSpacing="0px"
+              >
+                Address
+              </h6>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+                fontSize="0.95em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                123 Malibu Drive, CA 92660
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div
+        className="Bar__BarLayout-sc-1c4axau-2 BillH"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-sc-1c4axau-1 ekMqDX"
+        >
+          <a
+            className="Typography__LinkText-sc-19auepv-1 fLIgSj"
+            fontSize="inherit"
+            fontWeight={600}
+            href={null}
+            letterSpacing="0px"
+            onClick={null}
+            target={null}
+          >
+            View More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[` 4`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 eTxJUf"
+  id={null}
+  rows={null}
+>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 faotSI"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
     id={null}
     rows={null}
   >
-    <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-      id="my-search-bar_container"
-      rows={null}
-    >
-      <input
-        autoComplete="off"
-        className="TextInput__Input-sc-1fep8p8-2 isQToF"
-        cols=""
-        disabled={false}
-        id="my-search-bar"
-        list={null}
-        maxLength={null}
-        name="my-search-bar"
-        onBlur={null}
-        onChange={null}
-        onFocus={null}
-        onKeyPress={null}
-        pattern={null}
-        placeholder="Search Location"
-        rows=""
-        size={null}
-        title={null}
-        type="search"
-        value={null}
-      />
-    </section>
-    <button
-      className="Button__StyledButton-sc-1v7sls2-0 jLfFwi"
-      disabled={false}
-      htmlFor={null}
-      id={null}
-      name={null}
-      onClick={null}
-      tabIndex="1"
+    <div
+      className="Search__SearchContainer-sey9om-0 hKathB"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 gOxAef Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 faotSI"
         id={null}
         rows={null}
       >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-search fa-w-16 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
-          color={null}
-          data-icon="search"
-          data-prefix="far"
-          focusable="false"
-          id={null}
-          role="img"
-          style={Object {}}
-          viewBox="0 0 512 512"
-          xmlns="http://www.w3.org/2000/svg"
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+          id="my-search-bar_container"
+          rows={null}
         >
-          <path
-            d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
-            fill="currentColor"
-            style={Object {}}
+          <input
+            autoComplete="off"
+            className="TextInput__Input-sc-1fep8p8-2 cYvRjK"
+            cols=""
+            disabled={false}
+            id="my-search-bar"
+            list={null}
+            maxLength={null}
+            name="my-search-bar"
+            onBlur={null}
+            onChange={null}
+            onFocus={null}
+            onKeyPress={null}
+            pattern={null}
+            placeholder="Search Location"
+            rows=""
+            size={null}
+            title={null}
+            type="search"
+            value={null}
           />
-        </svg>
+        </section>
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 kRDsvV"
+          disabled={false}
+          htmlFor={null}
+          id={null}
+          name={null}
+          onClick={null}
+          tabIndex="1"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 gOxAef Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+            id={null}
+            rows={null}
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-search fa-w-16 fa-md Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+              color={null}
+              data-icon="search"
+              data-prefix="far"
+              focusable="false"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </section>
+        </button>
       </section>
-    </button>
-  </section>
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 faotSI"
-    id={null}
-    rows={null}
-  >
-     
+    </div>
     <div
       className="Container__Wrapper-sc-1i4fzzd-0 hbxOEM"
       height={null}
@@ -245,6 +736,25 @@ exports[` 3`] = `
         id="results-container"
       >
          
+        <div
+          className="Bar__BarLayout-sc-1c4axau-2 BillH"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-1 ekMqDX"
+          >
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+              fontSize="0.95em"
+              fontWeight={400}
+              id={null}
+              letterSpacing="0px"
+            >
+              We recommend the following based on your key word search
+            </p>
+          </div>
+        </div>
         <ul
           className="List__ListWrapper-sc-43f2zq-0 iOWfKZ"
           id={null}
@@ -634,797 +1144,283 @@ exports[` 3`] = `
       </div>
     </div>
   </section>
-</section>
-`;
-
-exports[` 4`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 eTxJUf"
-  id={null}
-  rows={null}
->
   <section
     className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
     id={null}
     rows={null}
   >
-    <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 faotSI"
-      id={null}
-      rows={null}
+    <div
+      className="Search__SearchContainer-sey9om-0 hKathB"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-        id="my-search-bar_container"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 faotSI"
+        id={null}
         rows={null}
       >
-        <input
-          autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 isQToF"
-          cols=""
-          disabled={false}
-          id="my-search-bar"
-          list={null}
-          maxLength={null}
-          name="my-search-bar"
-          onBlur={null}
-          onChange={null}
-          onFocus={null}
-          onKeyPress={null}
-          pattern={null}
-          placeholder="Search Location"
-          rows=""
-          size={null}
-          title={null}
-          type="search"
-          value={null}
-        />
-      </section>
-      <button
-        className="Button__StyledButton-sc-1v7sls2-0 jLfFwi"
-        disabled={false}
-        htmlFor={null}
-        id={null}
-        name={null}
-        onClick={null}
-        tabIndex="1"
-      >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 gOxAef Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
-          id={null}
+          className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+          id="my-search-bar_container"
           rows={null}
         >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-search fa-w-16 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
-            color={null}
-            data-icon="search"
-            data-prefix="far"
-            focusable="false"
-            id={null}
-            role="img"
-            style={Object {}}
-            viewBox="0 0 512 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
+          <input
+            autoComplete="off"
+            className="TextInput__Input-sc-1fep8p8-2 cYvRjK"
+            cols=""
+            disabled={false}
+            id="my-search-bar"
+            list={null}
+            maxLength={null}
+            name="my-search-bar"
+            onBlur={null}
+            onChange={null}
+            onFocus={null}
+            onKeyPress={null}
+            pattern={null}
+            placeholder="Search Location"
+            rows=""
+            size={null}
+            title={null}
+            type="search"
+            value={null}
+          />
         </section>
-      </button>
-    </section>
-    <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 faotSI"
-      id={null}
-      rows={null}
-    >
-       
-      <div
-        className="Container__Wrapper-sc-1i4fzzd-0 hbxOEM"
-        height={null}
-        width={null}
-      >
-        <div
-          className="Container__BoxContainer-sc-1i4fzzd-1 ixiyce"
-          height=""
-          id="results-container"
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 kRDsvV"
+          disabled={false}
+          htmlFor={null}
+          id={null}
+          name={null}
+          onClick={null}
+          tabIndex="1"
         >
-           
-          <div
-            className="Bar__BarLayout-sc-1c4axau-2 BillH"
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 gOxAef Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
             id={null}
-            onClick={null}
+            rows={null}
           >
-            <div
-              className="Bar__Slot-sc-1c4axau-1 ekMqDX"
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-search fa-w-16 fa-md Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+              color={null}
+              data-icon="search"
+              data-prefix="far"
+              focusable="false"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                fontSize="0.95em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0px"
-              >
-                We recommend the following based on your key word search
-              </p>
-            </div>
+              <path
+                d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </section>
+        </button>
+      </section>
+    </div>
+    <div
+      className="Container__Wrapper-sc-1i4fzzd-0 hbxOEM"
+      height={null}
+      width={null}
+    >
+      <div
+        className="Container__BoxContainer-sc-1i4fzzd-1 ixiyce"
+        height=""
+        id="results-container"
+      >
+         
+        <div
+          className="Bar__BarLayout-sc-1c4axau-2 BillH"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-1 ekMqDX"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-signal-slash fa-w-20 fa-3x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+              color={null}
+              data-icon="signal-slash"
+              data-prefix="far"
+              focusable="false"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 640 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M633.99 471.02L36 3.51C29.1-2.01 19.03-.9 13.51 6l-10 12.49C-2.02 25.39-.9 35.46 6 40.98l598 467.51c6.9 5.52 16.96 4.4 22.49-2.49l10-12.49c5.52-6.9 4.41-16.97-2.5-22.49zM80 384H48c-8.84 0-16 7.16-16 16v96c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-96c0-8.84-7.16-16-16-16zm400-272c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v127.66l64 50.04V112zm128-96c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v323.73l64 50.04V16zM416 496c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-23.52l-64-50.04V496zm-128 0c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V372.41l-64-50.04V496zm-80-208h-32c-8.84 0-16 7.16-16 16v192c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V304c0-8.84-7.16-16-16-16z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
           </div>
-          <ul
-            className="List__ListWrapper-sc-43f2zq-0 iOWfKZ"
-            id={null}
-          >
-            <li
-              className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
-              disabled={false}
-              href={null}
-              id={null}
-              onClick={null}
-              tabIndex="0"
-            >
-              <div
-                className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
-                id={null}
-                onClick={null}
-              >
-                <div
-                  className="Bar__Slot-sc-1c4axau-1 ejlqvW"
-                >
-                  <h6
-                    className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                    fontSize="1.05em"
-                    fontWeight={400}
-                    letterSpacing="0px"
-                  >
-                    White House
-                  </h6>
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                    fontSize="0.95em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0px"
-                  >
-                    123 Malibu Drive, CA 92660
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li
-              className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
-              disabled={false}
-              href={null}
-              id={null}
-              onClick={null}
-              tabIndex="0"
-            >
-              <div
-                className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
-                id={null}
-                onClick={null}
-              >
-                <div
-                  className="Bar__Slot-sc-1c4axau-1 ejlqvW"
-                >
-                  <h6
-                    className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                    fontSize="1.05em"
-                    fontWeight={400}
-                    letterSpacing="0px"
-                  >
-                    Orange House
-                  </h6>
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                    fontSize="0.95em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0px"
-                  >
-                    1224 Malibu Drive, CA 92660
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li
-              className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
-              disabled={false}
-              href={null}
-              id={null}
-              onClick={null}
-              tabIndex="0"
-            >
-              <div
-                className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
-                id={null}
-                onClick={null}
-              >
-                <div
-                  className="Bar__Slot-sc-1c4axau-1 ejlqvW"
-                >
-                  <h6
-                    className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                    fontSize="1.05em"
-                    fontWeight={400}
-                    letterSpacing="0px"
-                  >
-                    Red House
-                  </h6>
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                    fontSize="0.95em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0px"
-                  >
-                    123 Malibu Drive, CA 92660
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li
-              className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
-              disabled={false}
-              href={null}
-              id={null}
-              onClick={null}
-              tabIndex="0"
-            >
-              <div
-                className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
-                id={null}
-                onClick={null}
-              >
-                <div
-                  className="Bar__Slot-sc-1c4axau-1 ejlqvW"
-                >
-                  <h6
-                    className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                    fontSize="1.05em"
-                    fontWeight={400}
-                    letterSpacing="0px"
-                  >
-                    Green House
-                  </h6>
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                    fontSize="0.95em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0px"
-                  >
-                    123 Malibu Drive, CA 92660
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li
-              className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
-              disabled={false}
-              href={null}
-              id={null}
-              onClick={null}
-              tabIndex="0"
-            >
-              <div
-                className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
-                id={null}
-                onClick={null}
-              >
-                <div
-                  className="Bar__Slot-sc-1c4axau-1 ejlqvW"
-                >
-                  <h6
-                    className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                    fontSize="1.05em"
-                    fontWeight={400}
-                    letterSpacing="0px"
-                  >
-                    Black House
-                  </h6>
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                    fontSize="0.95em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0px"
-                  >
-                    123 Malibu Drive, CA 92660
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li
-              className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
-              disabled={false}
-              href={null}
-              id={null}
-              onClick={null}
-              tabIndex="0"
-            >
-              <div
-                className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
-                id={null}
-                onClick={null}
-              >
-                <div
-                  className="Bar__Slot-sc-1c4axau-1 ejlqvW"
-                >
-                  <h6
-                    className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                    fontSize="1.05em"
-                    fontWeight={400}
-                    letterSpacing="0px"
-                  >
-                    Blue House
-                  </h6>
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                    fontSize="0.95em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0px"
-                  >
-                    123 Malibu Drive, CA 92660
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li
-              className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
-              disabled={false}
-              href={null}
-              id={null}
-              onClick={null}
-              tabIndex="0"
-            >
-              <div
-                className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
-                id={null}
-                onClick={null}
-              >
-                <div
-                  className="Bar__Slot-sc-1c4axau-1 ejlqvW"
-                >
-                  <h6
-                    className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                    fontSize="1.05em"
-                    fontWeight={400}
-                    letterSpacing="0px"
-                  >
-                    Address
-                  </h6>
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                    fontSize="0.95em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0px"
-                  >
-                    123 Malibu Drive, CA 92660
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li
-              className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
-              disabled={false}
-              href={null}
-              id={null}
-              onClick={null}
-              tabIndex="0"
-            >
-              <div
-                className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
-                id={null}
-                onClick={null}
-              >
-                <div
-                  className="Bar__Slot-sc-1c4axau-1 ejlqvW"
-                >
-                  <h6
-                    className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                    fontSize="1.05em"
-                    fontWeight={400}
-                    letterSpacing="0px"
-                  >
-                    APN
-                  </h6>
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                    fontSize="0.95em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0px"
-                  >
-                    123 Malibu Drive, CA 92660
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li
-              className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
-              disabled={false}
-              href={null}
-              id={null}
-              onClick={null}
-              tabIndex="0"
-            >
-              <div
-                className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
-                id={null}
-                onClick={null}
-              >
-                <div
-                  className="Bar__Slot-sc-1c4axau-1 ejlqvW"
-                >
-                  <h6
-                    className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                    fontSize="1.05em"
-                    fontWeight={400}
-                    letterSpacing="0px"
-                  >
-                    Owner
-                  </h6>
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                    fontSize="0.95em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0px"
-                  >
-                    123 Malibu Drive, CA 92660
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li
-              className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
-              disabled={false}
-              href={null}
-              id={null}
-              onClick={null}
-              tabIndex="0"
-            >
-              <div
-                className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
-                id={null}
-                onClick={null}
-              >
-                <div
-                  className="Bar__Slot-sc-1c4axau-1 ejlqvW"
-                >
-                  <h6
-                    className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                    fontSize="1.05em"
-                    fontWeight={400}
-                    letterSpacing="0px"
-                  >
-                    Address
-                  </h6>
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                    fontSize="0.95em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0px"
-                  >
-                    123 Malibu Drive, CA 92660
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
+        </div>
+        <div
+          className="Bar__BarLayout-sc-1c4axau-2 BillH"
+          id={null}
+          onClick={null}
+        >
           <div
-            className="Bar__BarLayout-sc-1c4axau-2 BillH"
-            id={null}
-            onClick={null}
+            className="Bar__Slot-sc-1c4axau-1 ekMqDX"
           >
-            <div
-              className="Bar__Slot-sc-1c4axau-1 ekMqDX"
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+              fontSize="0.95em"
+              fontWeight={400}
+              id={null}
+              letterSpacing="0px"
             >
-              <a
-                className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-                fontSize="inherit"
-                fontWeight={600}
-                href={null}
-                letterSpacing="0px"
-                onClick={null}
-                target={null}
-              >
-                View More
-              </a>
-            </div>
+              You are offline
+            </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   </section>
   <section
     className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
     id={null}
     rows={null}
   >
-    <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 faotSI"
-      id={null}
-      rows={null}
+    <div
+      className="Search__SearchContainer-sey9om-0 hKathB"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-        id="my-search-bar_container"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 faotSI"
+        id={null}
         rows={null}
       >
-        <input
-          autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 isQToF"
-          cols=""
-          disabled={false}
-          id="my-search-bar"
-          list={null}
-          maxLength={null}
-          name="my-search-bar"
-          onBlur={null}
-          onChange={null}
-          onFocus={null}
-          onKeyPress={null}
-          pattern={null}
-          placeholder="Search Location"
-          rows=""
-          size={null}
-          title={null}
-          type="search"
-          value={null}
-        />
-      </section>
-      <button
-        className="Button__StyledButton-sc-1v7sls2-0 jLfFwi"
-        disabled={false}
-        htmlFor={null}
-        id={null}
-        name={null}
-        onClick={null}
-        tabIndex="1"
-      >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 gOxAef Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
-          id={null}
+          className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+          id="my-search-bar_container"
           rows={null}
         >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-search fa-w-16 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
-            color={null}
-            data-icon="search"
-            data-prefix="far"
-            focusable="false"
-            id={null}
-            role="img"
-            style={Object {}}
-            viewBox="0 0 512 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
+          <input
+            autoComplete="off"
+            className="TextInput__Input-sc-1fep8p8-2 cYvRjK"
+            cols=""
+            disabled={false}
+            id="my-search-bar"
+            list={null}
+            maxLength={null}
+            name="my-search-bar"
+            onBlur={null}
+            onChange={null}
+            onFocus={null}
+            onKeyPress={null}
+            pattern={null}
+            placeholder="Search Location"
+            rows=""
+            size={null}
+            title={null}
+            type="search"
+            value={null}
+          />
         </section>
-      </button>
-    </section>
-    <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 faotSI"
-      id={null}
-      rows={null}
-    >
-       
-      <div
-        className="Container__Wrapper-sc-1i4fzzd-0 hbxOEM"
-        height={null}
-        width={null}
-      >
-        <div
-          className="Container__BoxContainer-sc-1i4fzzd-1 ixiyce"
-          height=""
-          id="results-container"
+        <button
+          className="Button__StyledButton-sc-1v7sls2-0 kRDsvV"
+          disabled={false}
+          htmlFor={null}
+          id={null}
+          name={null}
+          onClick={null}
+          tabIndex="1"
         >
-           
-          <div
-            className="Bar__BarLayout-sc-1c4axau-2 BillH"
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 gOxAef Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
             id={null}
-            onClick={null}
+            rows={null}
           >
-            <div
-              className="Bar__Slot-sc-1c4axau-1 ekMqDX"
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-search fa-w-16 fa-md Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+              color={null}
+              data-icon="search"
+              data-prefix="far"
+              focusable="false"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                className="svg-inline--fa fa-signal-slash fa-w-20 fa-3x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
-                color={null}
-                data-icon="signal-slash"
-                data-prefix="far"
-                focusable="false"
-                id={null}
-                role="img"
+              <path
+                d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
+                fill="currentColor"
                 style={Object {}}
-                viewBox="0 0 640 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M633.99 471.02L36 3.51C29.1-2.01 19.03-.9 13.51 6l-10 12.49C-2.02 25.39-.9 35.46 6 40.98l598 467.51c6.9 5.52 16.96 4.4 22.49-2.49l10-12.49c5.52-6.9 4.41-16.97-2.5-22.49zM80 384H48c-8.84 0-16 7.16-16 16v96c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-96c0-8.84-7.16-16-16-16zm400-272c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v127.66l64 50.04V112zm128-96c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v323.73l64 50.04V16zM416 496c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-23.52l-64-50.04V496zm-128 0c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V372.41l-64-50.04V496zm-80-208h-32c-8.84 0-16 7.16-16 16v192c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V304c0-8.84-7.16-16-16-16z"
-                  fill="currentColor"
-                  style={Object {}}
-                />
-              </svg>
-            </div>
-          </div>
+              />
+            </svg>
+          </section>
+        </button>
+      </section>
+    </div>
+    <div
+      className="Container__Wrapper-sc-1i4fzzd-0 hbxOEM"
+      height={null}
+      width={null}
+    >
+      <div
+        className="Container__BoxContainer-sc-1i4fzzd-1 ixiyce"
+        height=""
+        id="results-container"
+      >
+         
+        <div
+          className="Bar__BarLayout-sc-1c4axau-2 BillH"
+          id={null}
+          onClick={null}
+        >
           <div
-            className="Bar__BarLayout-sc-1c4axau-2 BillH"
-            id={null}
-            onClick={null}
+            className="Bar__Slot-sc-1c4axau-1 ekMqDX"
           >
-            <div
-              className="Bar__Slot-sc-1c4axau-1 ekMqDX"
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-signal-slash fa-w-20 fa-3x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+              color={null}
+              data-icon="signal-slash"
+              data-prefix="far"
+              focusable="false"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 640 512"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                fontSize="0.95em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0px"
-              >
-                You are offline
-              </p>
-            </div>
+              <path
+                d="M633.99 471.02L36 3.51C29.1-2.01 19.03-.9 13.51 6l-10 12.49C-2.02 25.39-.9 35.46 6 40.98l598 467.51c6.9 5.52 16.96 4.4 22.49-2.49l10-12.49c5.52-6.9 4.41-16.97-2.5-22.49zM80 384H48c-8.84 0-16 7.16-16 16v96c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-96c0-8.84-7.16-16-16-16zm400-272c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v127.66l64 50.04V112zm128-96c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v323.73l64 50.04V16zM416 496c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-23.52l-64-50.04V496zm-128 0c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V372.41l-64-50.04V496zm-80-208h-32c-8.84 0-16 7.16-16 16v192c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V304c0-8.84-7.16-16-16-16z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          className="Bar__BarLayout-sc-1c4axau-2 BillH"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-1 ekMqDX"
+          >
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
+              fontSize="0.95em"
+              fontWeight={400}
+              id={null}
+              letterSpacing="0px"
+            >
+              Check your internet connection
+            </p>
           </div>
         </div>
       </div>
-    </section>
-  </section>
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
-    id={null}
-    rows={null}
-  >
-    <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 faotSI"
-      id={null}
-      rows={null}
-    >
-      <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-        id="my-search-bar_container"
-        rows={null}
-      >
-        <input
-          autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 isQToF"
-          cols=""
-          disabled={false}
-          id="my-search-bar"
-          list={null}
-          maxLength={null}
-          name="my-search-bar"
-          onBlur={null}
-          onChange={null}
-          onFocus={null}
-          onKeyPress={null}
-          pattern={null}
-          placeholder="Search Location"
-          rows=""
-          size={null}
-          title={null}
-          type="search"
-          value={null}
-        />
-      </section>
-      <button
-        className="Button__StyledButton-sc-1v7sls2-0 jLfFwi"
-        disabled={false}
-        htmlFor={null}
-        id={null}
-        name={null}
-        onClick={null}
-        tabIndex="1"
-      >
-        <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 gOxAef Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
-          id={null}
-          rows={null}
-        >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-search fa-w-16 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
-            color={null}
-            data-icon="search"
-            data-prefix="far"
-            focusable="false"
-            id={null}
-            role="img"
-            style={Object {}}
-            viewBox="0 0 512 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
-        </section>
-      </button>
-    </section>
-    <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 faotSI"
-      id={null}
-      rows={null}
-    >
-       
-      <div
-        className="Container__Wrapper-sc-1i4fzzd-0 hbxOEM"
-        height={null}
-        width={null}
-      >
-        <div
-          className="Container__BoxContainer-sc-1i4fzzd-1 ixiyce"
-          height=""
-          id="results-container"
-        >
-           
-          <div
-            className="Bar__BarLayout-sc-1c4axau-2 BillH"
-            id={null}
-            onClick={null}
-          >
-            <div
-              className="Bar__Slot-sc-1c4axau-1 ekMqDX"
-            >
-              <svg
-                aria-hidden="true"
-                className="svg-inline--fa fa-signal-slash fa-w-20 fa-3x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
-                color={null}
-                data-icon="signal-slash"
-                data-prefix="far"
-                focusable="false"
-                id={null}
-                role="img"
-                style={Object {}}
-                viewBox="0 0 640 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M633.99 471.02L36 3.51C29.1-2.01 19.03-.9 13.51 6l-10 12.49C-2.02 25.39-.9 35.46 6 40.98l598 467.51c6.9 5.52 16.96 4.4 22.49-2.49l10-12.49c5.52-6.9 4.41-16.97-2.5-22.49zM80 384H48c-8.84 0-16 7.16-16 16v96c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-96c0-8.84-7.16-16-16-16zm400-272c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v127.66l64 50.04V112zm128-96c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v323.73l64 50.04V16zM416 496c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-23.52l-64-50.04V496zm-128 0c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V372.41l-64-50.04V496zm-80-208h-32c-8.84 0-16 7.16-16 16v192c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V304c0-8.84-7.16-16-16-16z"
-                  fill="currentColor"
-                  style={Object {}}
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            className="Bar__BarLayout-sc-1c4axau-2 BillH"
-            id={null}
-            onClick={null}
-          >
-            <div
-              className="Bar__Slot-sc-1c4axau-1 ekMqDX"
-            >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                fontSize="0.95em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0px"
-              >
-                Check your internet connection
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
   </section>
 </section>
 `;
