@@ -6,6 +6,7 @@ import Bar from "blocks/Bar";
 import { Title } from "base/Typography";
 import Menu from "blocks/Menu";
 
+// TODO: (if necessary) Create a generic 'header' component as a base for current multiple Panel Header configurations
 function NavigationPanelHeader({
   id, title, onClick, menuData,
 }) {
@@ -30,19 +31,19 @@ function NavigationPanelHeader({
 
 NavigationPanelHeader.propTypes = {
   id: PropTypes.string,
-  title: PropTypes.node.isRequired,
-  onClick: PropTypes.func,
   menuData: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
     label: PropTypes.string,
     onClick: PropTypes.func,
   })),
+  onClick: PropTypes.func,
+  title: PropTypes.node.isRequired,
 };
 
 NavigationPanelHeader.defaultProps = {
   id: null,
-  onClick: null,
   menuData: null,
+  onClick: null,
 };
 
 export default NavigationPanelHeader;

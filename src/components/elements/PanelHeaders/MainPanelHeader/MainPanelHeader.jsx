@@ -5,15 +5,16 @@ import Bar from "blocks/Bar";
 import { Title } from "base/Typography";
 import Menu from "blocks/Menu";
 
+// TODO: (if necessary) Create a generic 'header' component as a base for current multiple Panel Header configurations
 function MainPanelHeader({
-  id, title, style, menuData,
+  id, menuData, title,
 }) {
   return (
-    <React.Fragment id={id} style={style}>
+    <React.Fragment id={id} >
       <Bar
+        center={<Title text={title} size="2x" weight="bold" />}
         contentAlign="center"
         padding="2x"
-        center={<Title text={title} size="2x" weight="bold" />}
         right={menuData ? <Menu data={menuData} position="bottomLeft" type="edit" /> : null}
       />
     </React.Fragment>
@@ -22,19 +23,17 @@ function MainPanelHeader({
 
 MainPanelHeader.propTypes = {
   id: PropTypes.string,
-  title: PropTypes.node.isRequired,
-  style: PropTypes.string,
   menuData: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
     label: PropTypes.string,
     onClick: PropTypes.func,
   })),
+  title: PropTypes.node.isRequired,
 };
 
 MainPanelHeader.defaultProps = {
   id: null,
   menuData: null,
-  style: null,
 };
 
 export default MainPanelHeader;
