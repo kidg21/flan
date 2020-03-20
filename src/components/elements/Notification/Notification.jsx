@@ -1,10 +1,12 @@
 /* eslint-disable linebreak-style */
 import React from "react";
 import styled, { keyframes } from "styled-components";
+import PropTypes from "prop-types";
 import { screen } from "Variables";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
-import PropTypes from "prop-types";
+import Card from "elements/Card";
 
+/** TODO: Move keyframe animations into their own variable/component files */
 /* const fadeIn = keyframes`
   from {
     opacity: 0;
@@ -69,7 +71,7 @@ const moveDown = keyframes`
   }
 `;
 
-const ContentWrapper = styled.span`
+const ContentWrapper = styled(Card)`
   /* Needed for passing properties to children (animation, etc.) */
 `;
 
@@ -126,9 +128,7 @@ function Notification({
   children,
   id,
   onClick,
-  opacity,
   position,
-  scale,
   visible,
 }) {
   let justifyContent;
@@ -168,12 +168,10 @@ function Notification({
       id={id}
       justifyContent={justifyContent}
       onClick={onClick}
-      opacity={opacity}
       position={position}
-      scale={scale}
       visible={visible}
     >
-      <ContentWrapper>{children}</ContentWrapper>
+      <ContentWrapper shadow="2x">{children}</ContentWrapper>
     </NotificationContainer>
   );
 }
@@ -194,9 +192,7 @@ Notification.propTypes = {
   children: PropTypes.node,
   id: PropTypes.string,
   onClick: PropTypes.func,
-  opacity: PropTypes.oneOf(["fadeIn", "fadeOut"]),
   position: PropTypes.oneOf(["moveUp", "moveDown"]),
-  scale: PropTypes.oneOf(["scaleUp", "scaleDown"]),
   visible: PropTypes.bool,
 };
 
@@ -207,8 +203,6 @@ Notification.defaultProps = {
   children: null,
   id: null,
   onClick: null,
-  opacity: null,
   position: null,
-  scale: null,
   visible: false,
 };

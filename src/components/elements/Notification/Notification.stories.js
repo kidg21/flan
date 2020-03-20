@@ -37,8 +37,6 @@ storiesOf("Elements|Notification", module)
             <Notification
               visible={visible}
               onClose={handleClose}
-              opacity={transition}
-              scale={transition}
               position={transition}
             >
               <Banner
@@ -100,8 +98,6 @@ storiesOf("Elements|Notification", module)
             )}
             visible={visible}
             onClose={handleClose}
-            opacity={transition}
-            scale={transition}
             position={transition}
           >
             <Banner
@@ -147,8 +143,6 @@ storiesOf("Elements|Notification", module).add("Status Notification", () => {
         <Notification
           visible={visible}
           onClose={handleClose}
-          opacity={transition}
-          scale={transition}
           position={transition}
         >
           <Banner
