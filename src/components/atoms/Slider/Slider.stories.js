@@ -2,9 +2,8 @@
 // /* eslint-disable react/jsx-filename-extension */
 // import React from "react";
 // import { Padding } from "helpers/Display";
-// import Form, { Section } from "layout/Form";
+// import Form, { FormSection } from "layout/Form";
 // import Slider from "atoms/Slider";
-
 
 
 // storiesOf("Atoms|Slider", module)
@@ -26,15 +25,15 @@
 //   .add("States", () => {
 //     return (
 //       <Form title="States" columns="1">
-//         <Section title="Standard">
+//         <FormSection title="Standard">
 //           <Slider />
-//         </Section>
-//         <Section title="Error">
+//         </FormSection>
+//         <FormSection title="Error">
 //           <Slider error />
-//         </Section>
-//         <Section title="Disabled">
+//         </FormSection>
+//         <FormSection title="Disabled">
 //           <Slider disabled />
-//         </Section>
+//         </FormSection>
 //       </Form>
 //     );
 //   });

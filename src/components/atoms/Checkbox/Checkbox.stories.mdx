@@ -4,7 +4,7 @@ import { action } from "@storybook/addon-actions";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
 import Bar from "blocks/Bar";
-import Form, { Section } from "layout/Form";
+import Form, { FormSection } from "layout/Form";
 import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
 import Icon from "atoms/Icon";
 
@@ -81,7 +81,7 @@ A Checkbox may appear to the left or right of it's corresponding label. A Checkb
   <Story name="Checkbox Group">
     <Grid>
       <Form>
-        <Section title="Checkbox Group (2 Columns)">
+        <FormSection title="Checkbox Group (2 Columns)">
           <CheckboxGroup columns="2">
             <Checkbox
               id="Checkbox-1"
@@ -108,7 +108,7 @@ A Checkbox may appear to the left or right of it's corresponding label. A Checkb
               label="Checkbox 4"
             />
           </CheckboxGroup>
-        </Section>
+        </FormSection>
       </Form>
     </Grid>
   </Story>

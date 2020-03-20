@@ -4,7 +4,7 @@ import { action } from "@storybook/addon-actions";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
 import Bar from "blocks/Bar";
-import Form, { Section } from "layout/Form";
+import Form, { FormSection } from "layout/Form";
 import Radio, { RadioGroup } from "atoms/Radio";
 import Icon from "atoms/Icon";
 
@@ -123,14 +123,14 @@ Radios may appear in groups. When a radio group is necessary use the RadioGroup 
   <Story name="Radio Group">
     <Grid>
       <Form>
-        <Section title="Radio Group (2 Columns)">
+        <FormSection title="Radio Group (2 Columns)">
           <RadioGroup columns="2">
             <Radio id="radio-1" name="radio-group" value="1" label="Radio 1" />
             <Radio id="radio-2" name="radio-group" value="2" label="Radio 2" />
             <Radio id="radio-3" name="radio-group" value="3" label="Radio 3" />
             <Radio id="radio-4" name="radio-group" value="4" label="Radio 4" />
           </RadioGroup>
-        </Section>
+        </FormSection>
       </Form>
     </Grid>
   </Story>

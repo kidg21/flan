@@ -59,7 +59,7 @@ export { UserRoles, RolePermissions } from "./elements/UserRoles";
 export { default as DialogBox } from "./elements/DialogBox";
 
 // Publicly exported files from 'layout'
-export { default as Form, Section } from "./layout/Form";
+export { default as Form, FormSection } from "./layout/Form";
 export { default as Flex } from "./layout/Flex";
 export { default as Grid } from "./layout/Grid";
 export { default as Layout } from "./layout/Layout";

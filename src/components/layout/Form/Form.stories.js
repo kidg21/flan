@@ -1,8 +1,8 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import { FullScreen, Padding } from "helpers/Display";
-import Form, { Section } from "layout/Form";
+import { FullScreen } from "helpers/Display";
+import Form, { FormSection } from "layout/Form";
 import TextInput from "atoms/TextInput";
 import { CheckboxGroup } from "atoms/Checkbox";
 import { RadioGroup } from "atoms/Radio";
@@ -93,7 +93,6 @@ const options = [
 
 storiesOf("Layout|Form", module)
   .addDecorator(FullScreen)
-  .addDecorator(Padding)
   .add("Form Layout", () => {
     return (
       <Form
@@ -101,7 +100,7 @@ storiesOf("Layout|Form", module)
         subtitle="This is the subtitle"
         description="Just think about these things in your mind - then bring them into your world. Isn't that fantastic?  All you need to paint is a few tools, a little instruction, and a vision in your mind."
       >
-        <Section title="Group 1">
+        <FormSection title="Group 1">
           <TextInput
             id="firstName"
             label="First Name"
@@ -114,8 +113,8 @@ storiesOf("Layout|Form", module)
             placeholder="Williams"
             helpText="The one that comes after.."
           />
-        </Section>
-        <Section title="Group 2">
+        </FormSection>
+        <FormSection title="Group 2">
           <CheckboxGroup
             id="Section Name"
             label="Checkbox Group Label"
@@ -131,8 +130,8 @@ storiesOf("Layout|Form", module)
             helpText="Help text for the SelectMenu component"
             options={options}
           />
-        </Section>
-        <Section title="Group 3">
+        </FormSection>
+        <FormSection title="Group 3">
           <RadioGroup
             id="Section Name"
             label="Radio Group Label"
@@ -141,7 +140,7 @@ storiesOf("Layout|Form", module)
             columns="2"
           />
           <RadioGroup data={longRadios} columns="1" />
-        </Section>
+        </FormSection>
       </Form>
     );
   });

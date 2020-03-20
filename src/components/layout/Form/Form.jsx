@@ -17,35 +17,33 @@ const FormWrapper = styled.form`
   padding: 1rem 1rem 1.5rem;
 `;
 
-const FormHeader = styled(Grid)`
+const Header = styled(Grid)`
   margin-bottom: 1.5rem;
 `;
 
-const FormSection = styled.section`
+const Section = styled.section`
   display: grid;
   grid-gap: 1.25rem;
   margin-bottom: 1rem;
 `;
-
-
-function Section({ children, title }) {
+function FormSection({ children, title }) {
   return (
-    <FormSection>
+    <Section>
       {title ? <Title weight="bold" text={title} /> : null}
       {children}
-    </FormSection>
+    </Section>
   );
 }
-Section.propTypes = {
+FormSection.propTypes = {
   children: PropTypes.node,
   title: PropTypes.string,
 };
-Section.defaultProps = {
+FormSection.defaultProps = {
   children: null,
   title: null,
 };
 
-const FormInputs = styled(Grid)`
+const Inputs = styled(Grid)`
   grid-template-columns: ${(props) => {
     return props.setColumns || "repeat(1, minmax(0, 1fr))";
   }};
@@ -65,9 +63,9 @@ function Form({
   description,
   method,
   novalidate,
+  onSubmit,
   subtitle,
   title,
-  onSubmit,
 }) {
   // 1-3 colums with custom override
   let setColumns;
@@ -80,15 +78,15 @@ function Form({
   return (
     <FormWrapper action={action} method={method} novalidate={novalidate} onSubmit={onSubmit}>
       {title || subtitle || description ? (
-        <FormHeader columns="1" gap="tiny">
+        <Header columns="1" gap="tiny">
           {title ? <Title size="2x" weight="bold" text={title} /> : null}
           {subtitle ? <Text size="4x" text={subtitle} /> : null}
           {description ? <Text size="2x" text={description} /> : null}
-        </FormHeader>
+        </Header>
       ) : null}
-      <FormInputs setColumns={setColumns} gap="large">
+      <Inputs setColumns={setColumns} gap="large">
         {children}
-      </FormInputs>
+      </Inputs>
     </FormWrapper>
   );
 }
@@ -99,9 +97,9 @@ Form.propTypes = {
   description: PropTypes.string,
   method: PropTypes.string,
   novalidate: PropTypes.bool,
+  onSubmit: PropTypes.func,
   subtitle: PropTypes.string,
   title: PropTypes.string,
-  onSubmit: PropTypes.func,
 };
 Form.defaultProps = {
   action: null,
@@ -110,9 +108,9 @@ Form.defaultProps = {
   description: null,
   method: null,
   novalidate: false,
+  onSubmit: null,
   subtitle: null,
   title: null,
-  onSubmit: null,
 };
 
-export { Form as default, Section };
+export { Form as default, FormSection };

@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { Padding } from "helpers/Display";
-import Form, { Section } from "layout/Form";
+import Form, { FormSection } from "layout/Form";
 import DataRange from "blocks/DataRange";
 
 
@@ -90,7 +90,7 @@ storiesOf("Blocks|Data Range", module)
   .add("States", () => {
     return (
       <Form title="States" columns="1">
-        <Section title="Input Range (default)">
+        <FormSection title="Input Range (default)">
           <DataRange
             id="input"
             label="Input Range"
@@ -114,7 +114,7 @@ storiesOf("Blocks|Data Range", module)
             helpText="Hang in there, buddy, I'm here to help!"
             error
           />
-           <DataRange
+          <DataRange
             id="inputError"
             label="Input Range (error)"
             labelMin="Min"
@@ -122,7 +122,7 @@ storiesOf("Blocks|Data Range", module)
             helpText="Hang in there, buddy, I'm here to help!"
             error="Out of range!"
           />
-            <DataRange
+          <DataRange
             id="inputError"
             label="Input Range (error)"
             labelMin="Min"
@@ -142,8 +142,8 @@ storiesOf("Blocks|Data Range", module)
             helpText="Hang in there, buddy, I'm here to help!"
             disabled
           />
-        </Section>
-        <Section title="Select Range">
+        </FormSection>
+        <FormSection title="Select Range">
           <DataRange
             id="select"
             label="Select Range"
@@ -199,7 +199,7 @@ storiesOf("Blocks|Data Range", module)
             helpText="Hang in there, buddy, I'm here to help!"
             disabled
           />
-        </Section>
+        </FormSection>
       </Form>
     );
   })

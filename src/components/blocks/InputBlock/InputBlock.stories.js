@@ -3,7 +3,7 @@
 import React from "react";
 
 import { Padding } from "helpers/Display";
-import Form, { Section } from "layout/Form";
+import Form, { FormSection } from "layout/Form";
 import InputBlock from "blocks/InputBlock";
 
 const button = {
@@ -296,7 +296,7 @@ storiesOf("Blocks|Input Block", module).add(
   () => {
     return (
       <Form title="The Input Block Family">
-        <Section>
+        <FormSection>
           <InputBlock
             label="Input Block ( standard )"
             textInputs={inputsOne}
@@ -396,7 +396,7 @@ storiesOf("Blocks|Input Block", module).add(
             textInputs={inputsOne}
             helpText="Hang in there, buddy, I'm here to help!"
           />
-        </Section>
+        </FormSection>
       </Form>
     );
   },

@@ -4,7 +4,7 @@ import { action } from "@storybook/addon-actions";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
 import Bar from "blocks/Bar";
-import Form, { Section } from "layout/Form";
+import Form, { FormSection } from "layout/Form";
 import Slider from "atoms/Slider";
 import Icon from "atoms/Icon";
 import RangeSlider from "blocks/RangeSlider";
@@ -86,15 +86,15 @@ A slider can contain the following elements:
 <Preview>
   <Story name="States">
     <Form columns="1">
-      <Section title="Standard">
+      <FormSection title="Standard">
         <Slider />
-      </Section>
-      <Section title="Error">
+      </FormSection>
+      <FormSection title="Error">
         <Slider error />
-      </Section>
-      <Section title="Disabled">
+      </FormSection>
+      <FormSection title="Disabled">
         <Slider disabled />
-      </Section>
+      </FormSection>
     </Form>
   </Story>
 </Preview>
