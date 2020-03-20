@@ -9,7 +9,6 @@ import { Lighten, Darken } from "Variables";
 const StyledLabel = styled.label`
   color: inherit;
   margin: 0;
-  width: max-content;
   font-family: ${(props) => { return props.theme.typography.primary; }};
   line-height: ${(props) => { return props.lineHeight; }};
   user-select: none;
