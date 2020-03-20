@@ -2,7 +2,6 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { viewport } from "Variables";
 
 const GridWrapper = styled.section`
   display: grid;
@@ -76,11 +75,11 @@ function Grid({
   return (
     <GridWrapper
       alignItems={alignItems}
-      id={id}
+      className={className}
       columns={setColumns}
       gap={setGap}
+      id={id}
       rows={setRows}
-      className={className}
     >
       {children}
     </GridWrapper>
@@ -89,18 +88,14 @@ function Grid({
 Grid.displayName = "GridWrapper";
 
 Grid.propTypes = {
-  id: PropTypes.string,
+  align: PropTypes.oneOf(["top", "center", "bottom"]),
   children: PropTypes.node,
+  className: PropTypes.string,
   /** Defines the widths of grid columns
    *
    * Options: 1-12 or any standard value accepted by the CSS Grid property, 'grid-template-columns'.
    */
   columns: PropTypes.string,
-  /** Defines the heights of grid rows
-   *
-   * Options: Any standard value accepted by the CSS Grid property, 'grid-template-rows'.
-   */
-  rows: PropTypes.string,
   /** Sets the 'gutter' between grid items
    *
    * Options: Any switch case or any standard value accepted by the CSS Grid property, 'grid-gap'.
@@ -118,18 +113,22 @@ Grid.propTypes = {
       "[grid-template-rows]",
     ]),
   ]),
-  align: PropTypes.oneOf(["top", "center", "bottom"]),
-  className: PropTypes.string,
+  id: PropTypes.string,
+  /** Defines the heights of grid rows
+   *
+   * Options: Any standard value accepted by the CSS Grid property, 'grid-template-rows'.
+   */
+  rows: PropTypes.string,
 };
 
 Grid.defaultProps = {
-  id: null,
-  children: null,
-  columns: null,
-  rows: null,
-  gap: null,
   align: null,
+  children: null,
   className: null,
+  columns: null,
+  gap: null,
+  id: null,
+  rows: null,
 };
 
 export default Grid;
