@@ -1,7 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
-import LightBoxIcon from "images/LightBoxIconLogo.png";
 import Panel from "layout/Panel";
 import DataTable from "blocks/Table";
 import List, { ListItem } from "blocks/List";
@@ -13,6 +12,8 @@ import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
 import Card from "elements/Card";
 import Layout from "layout/Layout";
 import Page from "layout/Page";
+
+const LightBoxIcon = "static/media/LightBoxIconLogo.64993202.png";
 
 const map = (
   <Mapbox />
@@ -235,11 +236,11 @@ storiesOf("Layout|Layout/", module)
     () => {
       return React.createElement(() => {
         const [leftOpen, setLeftOpen] = useState(false);
-        const seeLeftRegion = () => { setLeftOpen(!leftOpen); };
+        const toggleLeft = () => { setLeftOpen(!leftOpen); };
         const [rightOpen, setRightOpen] = useState(false);
-        const seeRightRegion = () => { setRightOpen(!rightOpen); };
+        const toggleRight = () => { setRightOpen(!rightOpen); };
         const [bottomOpen, setBottomOpen] = useState(false);
-        const seeBottomRegion = () => { setBottomOpen(!bottomOpen); };
+        const toggleBottom = () => { setBottomOpen(!bottomOpen); };
         return (
           <Layout
             header={{
@@ -250,11 +251,10 @@ storiesOf("Layout|Layout/", module)
                   padding="2x"
                   left={{
                     content: (
-                      <Avatar
-                        image
-                        src={LightBoxIcon}
-                        alt="logo"
-                        onClick={seeLeftRegion}
+                      <Command
+                        icon="left"
+                        label="Toggle"
+                        onClick={toggleLeft}
                       />
                     ),
                   }}
@@ -269,7 +269,7 @@ storiesOf("Layout|Layout/", module)
                         icon="right"
                         label="Toggle"
                         align="right"
-                        onClick={seeRightRegion}
+                        onClick={toggleRight}
                       />
                     ),
                   }}
@@ -306,7 +306,7 @@ storiesOf("Layout|Layout/", module)
                         icon="down"
                         label="Toggle"
                         align="Bottom"
-                        onClick={seeBottomRegion}
+                        onClick={toggleBottom}
                       />
                     ),
                   }}
@@ -353,10 +353,9 @@ storiesOf("Layout|Layout/", module)
                   padding="2x"
                   left={{
                     content: (
-                      <Avatar
-                        image
-                        src={LightBoxIcon}
-                        alt="logo"
+                      <Command
+                        icon="left"
+                        label="Toggle"
                         onClick={toggleLeft}
                       />
                     ),

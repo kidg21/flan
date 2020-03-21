@@ -179,13 +179,13 @@ const RegionRight = styled(Flex)`
   }
 `;
 function Layout({
+  bottom,
+  footer,
   header,
   id,
   left,
   main,
-  bottom,
   right,
-  footer,
 }) {
   // const screenSmall = window.matchMedia(screen.small);
   const screenMedium = window.matchMedia(screen.medium);
@@ -369,11 +369,20 @@ function Layout({
 }
 
 Layout.propTypes = {
-  id: PropTypes.string,
+  bottom: PropTypes.shape({
+    content: PropTypes.node.isRequired,
+    id: PropTypes.string,
+    visible: PropTypes.string,
+  }),
+  footer: PropTypes.shape({
+    content: PropTypes.node.isRequired,
+    id: PropTypes.string,
+  }),
   header: PropTypes.shape({
     content: PropTypes.node,
     id: PropTypes.string,
   }),
+  id: PropTypes.string,
   left: PropTypes.shape({
     content: PropTypes.node.isRequired,
     id: PropTypes.string,
@@ -383,30 +392,21 @@ Layout.propTypes = {
     content: PropTypes.node.isRequired,
     id: PropTypes.string,
   }),
-  bottom: PropTypes.shape({
-    content: PropTypes.node.isRequired,
-    id: PropTypes.string,
-    visible: PropTypes.string,
-  }),
   right: PropTypes.shape({
     content: PropTypes.node.isRequired,
     id: PropTypes.string,
     visible: PropTypes.string,
   }),
-  footer: PropTypes.shape({
-    content: PropTypes.node.isRequired,
-    id: PropTypes.string,
-  }),
 };
 
 Layout.defaultProps = {
-  id: null,
+  bottom: null,
+  footer: null,
   header: null,
+  id: null,
   left: null,
   main: { content: null },
-  bottom: null,
   right: null,
-  footer: null,
 };
 
 export default Layout;
