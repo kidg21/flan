@@ -43,7 +43,7 @@ const selectStyles = {
     }
     return {
       ...styles,
-      "minHeight": "30px",
+      "minHeight": "1.875rem",
       "height": "2.4rem",
       "backgroundColor": bgColor,
       "borderColor": borderColor,

@@ -44,6 +44,7 @@ export { default as RangeSlider } from "./blocks/RangeSlider";
 export { default as Table } from "./blocks/Table";
 export { default as Tabs, Tab } from "./blocks/Tabs";
 export { CardList } from "./blocks/List";
+export { default as Search } from "./blocks/Search";
 export { Surface } from "./blocks/Surface";
 export { SummaryPanelTemplate } from "./blocks/Surface/SurfaceTemplates";
 
