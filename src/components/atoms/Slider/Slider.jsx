@@ -1,5 +1,5 @@
 /* eslint-disable linebreak-style */
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
@@ -15,8 +15,8 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
   &::-webkit-slider-runnable-track {
     height: 1px;
     background: ${(props) => {
-      return props.error ? props.theme.palette.alert60 : props.theme.palette.neutral80;
-    }};
+    return props.error ? props.theme.palette.alert60 : props.theme.palette.neutral80;
+  }};
   }
   &::-webkit-slider-thumb {
     appearance: none;
@@ -80,40 +80,57 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
   }
 `;
 
+
+
+
+const LabelSpan = styled.span`
+color: ${(props) => {
+  return props.theme.palette.selected;
+}};
+`;
+
+
 function Slider({
-  disabled, error, id, onChange, max, min, value,
+  disabled, error, id, max, min, step, defaultValue,
 }) {
+  const [value, setValue] = useState(defaultValue);
+  const leftValue = (((100/max) * value) + "%");
 
   return (
-    <Bar
-      padding="none"
-      contentAlign="center"
-      center={{
-      content: <SliderPiece id={id} max={max} min={min} value={value} step="1" onChange={onChange} disabled={disabled} error={error} />,
+    <Grid columns="1" gap="none">
+      <SliderPiece
+        id={id}
+        max={max}
+        min={min}
+        value={value}
+        step={step}
+        onChange={(e) => {
+      setValue(e.target.value);
     }}
-      right={{
-        content: <Text text={value} />,
-      width: "6em",
-}}
-    />);
+        disabled={disabled}
+        error={error}
+      />
+      <LabelSpan style={{ position: "relative", textAlign: "left", left: leftValue }}>{value}</LabelSpan>
+    </Grid>
+  );
 }
 Slider.propTypes = {
   disabled: PropTypes.bool,
   min: PropTypes.string,
   max: PropTypes.string,
-  value: PropTypes.string,
+  step: PropTypes.string,
   error: PropTypes.bool,
   id: PropTypes.string,
-  onChange: PropTypes.func,
+  defaultValue: PropTypes.string,
 };
 Slider.defaultProps = {
   disabled: false,
   min: null,
   max: null,
-  value: null,
+  step: 1,
   error: false,
   id: null,
-  onChange: null,
+  defaultValue: 0,
 };
 
 export default Slider;
