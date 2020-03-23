@@ -6,7 +6,7 @@ import { DMPTheme, screen } from "Variables";
 import { PlaceholderText } from "helpers";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
-import { Title } from "base/Typography";
+import Card from "elements/Card";
 
 /** TODO: Add these to an 'Animation' library...also, create 'Animation' library */
 const fadeIn = keyframes`
@@ -106,7 +106,7 @@ const ModalContainer = styled.div`
     return props.action === "open" ? moveDown : moveUp;
   }};
     animation-duration: ${(props) => {
-    return props.action && typeof props.slideDuration === "number" ? `${props.slideDuration}s` : null;
+    return props.action && typeof props.animationDuration === "number" ? `${props.animationDuration}s` : null;
   }};
     transform-origin: top;
     pointer-events: initial;
@@ -120,7 +120,7 @@ const ModalContainer = styled.div`
   ${Image} {
     max-width: 98vw;
   }
-  /* Prototype Content - displays when a Card is empty */
+  /* Prototype Content - displays when empty */
   &:empty {
     &:before {
       white-space: pre;
@@ -137,14 +137,18 @@ const ModalBG = styled.div`
   bottom: 0px;
   top: 0px;
   left: 0px;
-  background-color: ${(props) => { return props.backgroundColor; }};
+  background-color: ${(props) => {
+    return (
+      props.theme.background.modal
+    );
+  }};
   -webkit-tap-highlight-color: transparent;
   touch-action: none;
   animation-name: ${(props) => {
     if (!props.action) return null;
     return props.action === "open" ? fadeIn : fadeOut;
   }};
-  animation-duration: ${(props) => { return props.action && typeof props.fadeDuration === "number" ? `${props.fadeDuration}s` : null; }};
+  animation-duration: ${(props) => { return props.action && typeof props.animationDuration === "number" ? `${props.animationDuration}s` : null; }};
 `;
 
 const Close = styled.section`
@@ -158,46 +162,43 @@ const Close = styled.section`
 `;
 
 function Modal({
-  id,
   align,
+  animationDuration,
+  ariaDescribedby,
+  ariaLabelledby,
+  children,
+  id,
+  media,
+  isModal,
   onClick,
   onClose,
-  visible,
-  slideDuration,
-  fadeDuration,
-  backgroundColor,
-  scale,
   text,
-  image,
-  ariaLabelledby,
-  ariaDescribedby,
-  children,
-  style,
-  containerStyle,
+  visible,
 }) {
   let modalContent;
   let justifyContent;
-  const pointerEvents = backgroundColor ? "auto" : "none";
+  const pointerEvents = isModal ? "auto" : "none";
 
-  if (text) {
+  if (text && !media) {
     modalContent = (
-      <ContentWrapper onClick={onClick} style={style}>
-        <Title text={text} type="inverse" />
+      <ContentWrapper onClick={onClick}>
+        <Card description={text} shadow="2x" />
       </ContentWrapper>
     );
-  } else if (image) {
+    /** TODO: Structure this similar to the Card 'media' prop using 'mimeType' */
+  } else if (media) {
     justifyContent = "center";
     modalContent = (
       <Fragment>
-        <Image src={image} onClick={onClick} style={style} />
+        <Image src={media} onClick={onClick} />
         <Close onClick={onClose}>
-          <Icon icon="close" type="inverse" size="lg" inverse fixedWidth />
+          <Icon icon="close" type="inverse" size="lg" fixedWidth />
         </Close>
       </Fragment>
     );
   } else {
     justifyContent = "center";
-    modalContent = (<ContentWrapper style={style}>{children}</ContentWrapper>);
+    modalContent = (<ContentWrapper>{children}</ContentWrapper>);
   }
 
   switch (align) {
@@ -225,7 +226,7 @@ function Modal({
     action = visible ? "open" : "close";
     state.animation = setTimeout(() => {
       setState({ visible });
-    }, (Math.max((fadeDuration || 0), (slideDuration || 0)) - 0.1) * 1000);
+    }, (Math.max((animationDuration || 0), (animationDuration || 0)) - 0.1) * 1000);
   }
 
   if (state.visible !== visible) {
@@ -243,23 +244,21 @@ function Modal({
       <GlobalStyles />
       <ThemeProvider theme={DMPTheme}>
         <ModalContainer
-          id={id}
-          align={align}
-          visible={visible || state.visible}
           action={action}
-          slideDuration={slideDuration}
-          scale={scale}
-          aria-labelledby={ariaLabelledby}
+          align={align}
+          animationDuration={animationDuration}
           aria-describedby={ariaDescribedby}
+          aria-labelledby={ariaLabelledby}
+          id={id}
+          isModal={isModal}
           justifyContent={justifyContent}
           pointerEvents={pointerEvents}
-          style={containerStyle}
+          visible={visible || state.visible}
         >
-          {backgroundColor ? <ModalBG
-            onClick={onClose}
+          {isModal ? <ModalBG
             action={action}
-            fadeDuration={fadeDuration}
-            backgroundColor={backgroundColor}
+            animationDuration={animationDuration}
+            onClick={onClose}
           /> : null}
           {modalContent}
         </ModalContainer>
@@ -270,39 +269,31 @@ function Modal({
 export default Modal;
 
 Modal.propTypes = {
-  align: PropTypes.oneOf(["default to type", "top", "center", "bottom"]),
+  align: PropTypes.oneOf(["top", "center", "bottom"]),
+  animationDuration: PropTypes.number,
   ariaDescribedby: PropTypes.string,
   ariaLabelledby: PropTypes.string,
-  backgroundColor: PropTypes.string,
   children: PropTypes.node,
-  containerStyle: PropTypes.string,
-  fadeDuration: PropTypes.number,
   id: PropTypes.string,
-  image: PropTypes.string,
+  media: PropTypes.string,
+  isModal: PropTypes.bool,
   onClick: PropTypes.func,
   onClose: PropTypes.func,
-  scale: PropTypes.oneOf(["scaleUp", "scaleDown"]),
-  slideDuration: PropTypes.number,
-  style: PropTypes.string,
   text: PropTypes.string,
   visible: PropTypes.bool,
 };
 
 Modal.defaultProps = {
-  align: null,
+  align: "center",
+  animationDuration: 0.6,
   ariaDescribedby: null,
   ariaLabelledby: null,
-  backgroundColor: "hsla(34, 5%, 12%, 0.8)",
   children: null,
-  containerStyle: null,
-  fadeDuration: 0.6,
   id: null,
-  image: null,
+  media: null,
+  isModal: true,
   onClick: null,
   onClose: null,
-  scale: null,
-  slideDuration: 0.6,
-  style: null,
   text: null,
   visible: false,
 };

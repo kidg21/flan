@@ -172,6 +172,7 @@ const colorHash = {
   success: "success80",
   warning: "warning80",
   alert: "alert80",
+  inverse: "neutral20",
 };
 
 function Icon({
