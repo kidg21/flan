@@ -40,7 +40,6 @@ export { default as IconBlock } from "./blocks/IconBlock";
 export { default as InputBlock } from "./blocks/InputBlock";
 export { default as MediaBlock } from "./blocks/MediaBlock";
 export { default as Menu } from "./blocks/Menu";
-export { default as RangeSlider } from "./blocks/RangeSlider";
 export { default as Table } from "./blocks/Table";
 export { default as Tabs, Tab } from "./blocks/Tabs";
 export { CardList } from "./blocks/List";
