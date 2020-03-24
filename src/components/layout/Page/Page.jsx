@@ -45,9 +45,11 @@ const Section = styled(Grid)`
   }
 `;
 
-function PageSection({ children, id, title }) {
+function PageSection({
+  children, classname, id, title,
+}) {
   return (
-    <Section id={id} columns="1" gap="small">
+    <Section id={id} classname={classname} columns="1" gap="small">
       {title ? <Title weight="bold" text={title} /> : null}
       {children}
     </Section>
@@ -56,21 +58,24 @@ function PageSection({ children, id, title }) {
 
 PageSection.propTypes = {
   children: PropTypes.node,
+  classname: PropTypes.string,
   id: PropTypes.string,
   title: PropTypes.string,
 };
 PageSection.defaultProps = {
   children: null,
+  classname: null,
   id: null,
   title: null,
 };
 
 function Page({
-  children, header, id,
+  children, classname, header, id,
 }) {
   return (
     <PageWrapper
       id={id}
+      classname={classname}
       columns="1"
     >
       {header ? (
@@ -94,6 +99,7 @@ function Page({
 }
 Page.propTypes = {
   children: PropTypes.node,
+  classname: PropTypes.string,
   header: PropTypes.shape({
     description: PropTypes.string,
     subtitle: PropTypes.string,
@@ -103,6 +109,7 @@ Page.propTypes = {
 };
 Page.defaultProps = {
   children: null,
+  classname: null,
   header: null,
   id: null,
 };
