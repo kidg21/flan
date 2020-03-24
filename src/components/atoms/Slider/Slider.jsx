@@ -94,7 +94,7 @@ function Slider({
   disabled, error, id, max, min, step, defaultValue,
 }) {
   const [value, setValue] = useState(defaultValue);
-  const leftValue = (((100/max) * value) + "%");
+  const leftValue = (((100/max) * (value)) + "%");
 
   return (
     <Grid columns="1" gap="none">
