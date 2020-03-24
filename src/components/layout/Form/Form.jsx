@@ -61,6 +61,7 @@ function Form({
   children,
   columns,
   description,
+  id,
   method,
   novalidate,
   onSubmit,
@@ -76,7 +77,7 @@ function Form({
     setColumns = columns;
   }
   return (
-    <FormWrapper action={action} method={method} novalidate={novalidate} onSubmit={onSubmit}>
+    <FormWrapper action={action} id={id} method={method} novalidate={novalidate} onSubmit={onSubmit}>
       {title || subtitle || description ? (
         <Header columns="1" gap="tiny">
           {title ? <Title size="2x" weight="bold" text={title} /> : null}
@@ -95,6 +96,7 @@ Form.propTypes = {
   children: PropTypes.node,
   columns: PropTypes.oneOf(["1", "2", "3"]),
   description: PropTypes.string,
+  id: PropTypes.string,
   method: PropTypes.string,
   novalidate: PropTypes.bool,
   onSubmit: PropTypes.func,
@@ -106,6 +108,7 @@ Form.defaultProps = {
   children: null,
   columns: "1",
   description: null,
+  id: null,
   method: null,
   novalidate: false,
   onSubmit: null,

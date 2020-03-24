@@ -96,6 +96,7 @@ storiesOf("Layout|Form", module)
   .add("Form Layout", () => {
     return (
       <Form
+        id="Form"
         title="Form Header"
         subtitle="This is the subtitle"
         description="Just think about these things in your mind - then bring them into your world. Isn't that fantastic?  All you need to paint is a few tools, a little instruction, and a vision in your mind."
