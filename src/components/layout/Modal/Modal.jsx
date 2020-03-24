@@ -164,8 +164,8 @@ const Close = styled.section`
 function Modal({
   align,
   animationDuration,
-  ariaDescribedby,
-  ariaLabelledby,
+  ariaDescribedBy,
+  ariaLabelledBy,
   children,
   id,
   media,
@@ -247,8 +247,8 @@ function Modal({
           action={action}
           align={align}
           animationDuration={animationDuration}
-          aria-describedby={ariaDescribedby}
-          aria-labelledby={ariaLabelledby}
+          aria-describedby={ariaDescribedBy}
+          aria-labelledby={ariaLabelledBy}
           id={id}
           isModal={isModal}
           justifyContent={justifyContent}
@@ -271,8 +271,8 @@ export default Modal;
 Modal.propTypes = {
   align: PropTypes.oneOf(["top", "center", "bottom"]),
   animationDuration: PropTypes.number,
-  ariaDescribedby: PropTypes.string,
-  ariaLabelledby: PropTypes.string,
+  ariaDescribedBy: PropTypes.string,
+  ariaLabelledBy: PropTypes.string,
   children: PropTypes.node,
   id: PropTypes.string,
   media: PropTypes.string,
@@ -286,8 +286,8 @@ Modal.propTypes = {
 Modal.defaultProps = {
   align: "center",
   animationDuration: 0.6,
-  ariaDescribedby: null,
-  ariaLabelledby: null,
+  ariaDescribedBy: null,
+  ariaLabelledBy: null,
   children: null,
   id: null,
   media: null,
