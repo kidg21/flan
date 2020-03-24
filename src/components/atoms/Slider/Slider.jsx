@@ -5,11 +5,12 @@ import PropTypes from "prop-types";
 import Grid from "layout/Grid";
 import Bar from "blocks/Bar";
 import Text from "base/Typography";
+import Tag from "atoms/Tag";
 import { Lighten, Darken } from "Variables";
 
 
 const SliderPiece = styled.input.attrs({ type: "range" })`
-  height: 2em;
+  height: 1.5em;
   outline: none;
   transition: opacity 0.2s;
   &::-webkit-slider-runnable-track {
@@ -81,20 +82,19 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
 `;
 
 
-
-
-const LabelSpan = styled.span`
-color: ${(props) => {
-  return props.theme.palette.selected;
-}};
-`;
-
-
 function Slider({
-  disabled, error, id, max, min, step, defaultValue,
+  disabled, error, id, max, min, step, defaultValue, withLabel, withRange,
 }) {
   const [value, setValue] = useState(defaultValue);
-  const leftValue = (((100/max) * (value)) + "%");
+  const leftValue = (`${((100 / max) * (value)) - 4.5}%`);
+
+  let tagType;
+
+  if (error) {
+    tagType = "alert";
+  } else {
+    "";
+  }
 
   return (
     <Grid columns="1" gap="none">
@@ -110,7 +110,8 @@ function Slider({
         disabled={disabled}
         error={error}
       />
-      <LabelSpan style={{ position: "relative", textAlign: "left", left: leftValue }}>{value}</LabelSpan>
+      { withRange ? <Bar left={<Text size="2x" weight="bold" text={min}/>} right={<Text size="2x" weight="bold" text={max}/>}/> : null }
+      { withLabel ? <Tag type={tagType} style={{ position: "relative", left: leftValue }} label={value} /> : null}
     </Grid>
   );
 }
