@@ -372,7 +372,7 @@ Layout.propTypes = {
   bottom: PropTypes.shape({
     content: PropTypes.node.isRequired,
     id: PropTypes.string,
-    visible: PropTypes.string,
+    visible: PropTypes.bool,
   }),
   footer: PropTypes.shape({
     content: PropTypes.node.isRequired,
@@ -386,7 +386,7 @@ Layout.propTypes = {
   left: PropTypes.shape({
     content: PropTypes.node.isRequired,
     id: PropTypes.string,
-    visible: PropTypes.string,
+    visible: PropTypes.bool,
   }),
   main: PropTypes.shape({
     content: PropTypes.node.isRequired,
@@ -395,7 +395,7 @@ Layout.propTypes = {
   right: PropTypes.shape({
     content: PropTypes.node.isRequired,
     id: PropTypes.string,
-    visible: PropTypes.string,
+    visible: PropTypes.bool,
   }),
 };
 
