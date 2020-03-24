@@ -458,7 +458,7 @@ storiesOf("Layout|Layout/", module)
                         onClick={seeLeftRegion}
                       />
                     ),
-                    width: "10vw",
+                    width: "10%",
                   }}
                   center={{
                     content: (
