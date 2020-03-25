@@ -169,7 +169,7 @@ function Modal({
   children,
   id,
   media,
-  isModal,
+  hasBackdrop,
   onClick,
   onClose,
   text,
@@ -177,7 +177,7 @@ function Modal({
 }) {
   let modalContent;
   let justifyContent;
-  const pointerEvents = isModal ? "auto" : "none";
+  const pointerEvents = hasBackdrop ? "auto" : "none";
 
   if (text && !media) {
     modalContent = (
@@ -250,12 +250,12 @@ function Modal({
           aria-describedby={ariaDescribedBy}
           aria-labelledby={ariaLabelledBy}
           id={id}
-          isModal={isModal}
+          hasBackdrop={hasBackdrop}
           justifyContent={justifyContent}
           pointerEvents={pointerEvents}
           visible={visible || state.visible}
         >
-          {isModal ? <ModalBG
+          {hasBackdrop ? <ModalBG
             action={action}
             animationDuration={animationDuration}
             onClick={onClose}
@@ -276,7 +276,7 @@ Modal.propTypes = {
   children: PropTypes.node,
   id: PropTypes.string,
   media: PropTypes.string,
-  isModal: PropTypes.bool,
+  hasBackdrop: PropTypes.bool,
   onClick: PropTypes.func,
   onClose: PropTypes.func,
   text: PropTypes.string,
@@ -291,7 +291,7 @@ Modal.defaultProps = {
   children: null,
   id: null,
   media: null,
-  isModal: true,
+  hasBackdrop: true,
   onClick: null,
   onClose: null,
   text: null,
