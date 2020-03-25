@@ -86,7 +86,7 @@ function ColorSwatch({
 }
 
 ColorSwatch.propTypes = {
-  color: PropTypes.node,
+  color: PropTypes.string,
   isSelected: PropTypes.bool,
   onClick: PropTypes.func,
   square: PropTypes.bool,
