@@ -44,19 +44,19 @@ export { default as RangeSlider } from "./blocks/RangeSlider";
 export { default as Table } from "./blocks/Table";
 export { default as Tabs, TabsItem } from "./blocks/Tabs";
 export { CardList } from "./blocks/List";
-export { Surface } from "./blocks/Surface";
-export { SummaryPanelTemplate } from "./blocks/Surface/SurfaceTemplates";
 
 // Publicly exported files from 'elements'
 export { default as Card, CardSection, CardGrid } from "./elements/Card";
+export { default as DialogBox } from "./elements/DialogBox";
 export { default as MainPanelHeader } from "./elements/PanelHeaders/MainPanelHeader";
-export { default as PropertyPanelHeader } from "./elements/PanelHeaders/PropertyPanelHeader";
 export { default as NavigationPanelHeader } from "./elements/PanelHeaders/NavigationPanelHeader";
+export { default as Notification } from "./elements/Notification";
 export { default as Picker, ColorSwatch } from "./elements/Picker";
 export { default as ProgressBar, Step } from "./elements/Progress";
-export { default as Notification } from "./elements/Notification";
+export { default as PropertyPanelHeader } from "./elements/PanelHeaders/PropertyPanelHeader";
+export { default as SummaryPanelTemplate } from "./elements/Surface/SurfaceTemplates";
+export { default as Surface } from "./elements/Surface";
 export { UserRoles, RolePermissions } from "./elements/UserRoles";
-export { default as DialogBox } from "./elements/DialogBox";
 
 // Publicly exported files from 'layout'
 export { default as Form, FormSection } from "./layout/Form";

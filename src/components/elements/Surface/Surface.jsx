@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable no-new-func */
 /* eslint-disable security/detect-object-injection */
 import React from "react";

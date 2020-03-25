@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import PropTypes from "prop-types";
@@ -28,7 +29,7 @@ const SummaryPanelTemplate = (props) => {
     return (
       <React.Fragment>
         <Legend
-        title={section.title}
+          title={section.title}
           data={section.displayFields}
         />
       </React.Fragment>

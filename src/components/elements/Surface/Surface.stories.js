@@ -1,8 +1,9 @@
+/* eslint-disable linebreak-style */
 import React from "react";
 import { Padding } from "helpers/Display";
-import Surface from "./Surface.jsx";
 import Menu from "blocks/Menu";
-import { SummaryPanelTemplate } from "./SurfaceTemplates";
+import Surface from "elements/Surface";
+import SummaryPanelTemplate from "elements/Surface/SurfaceTemplates";
 
 /* eslint-disable no-alert */
 /* eslint-disable no-template-curly-in-string */
@@ -453,7 +454,7 @@ const testData = [{
   label: "List Units",
 }];
 
-storiesOf("Blocks|Surface", module)
+storiesOf("Templates|Surface Panel", module)
   .addDecorator(Padding)
   .add("Summary Panel", () => {
     return (
