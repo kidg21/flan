@@ -83,9 +83,14 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
 
 
 function Slider({
-  disabled, error, id, max, min, step, defaultValue, withLabel, withRange,
+  value: inputValue, onChange, disabled, error, id, max, min, step, withLabel, withRange,
 }) {
-  const [value, setValue] = useState(defaultValue);
+  let value = inputValue;
+  let setValue = onChange;
+  if (!setValue) {
+    [value, setValue] = useState(inputValue);
+  }
+
   const leftValue = (`${((100 / max) * (value)) - 4.5}%`);
 
   let tagType;
@@ -110,28 +115,34 @@ function Slider({
         disabled={disabled}
         error={error}
       />
-      { withRange ? <Bar left={<Text size="2x" weight="bold" text={min}/>} right={<Text size="2x" weight="bold" text={max}/>}/> : null }
+      { withRange ? <Bar left={<Text size="2x" weight="bold" text={min} />} right={<Text size="2x" weight="bold" text={max} />} /> : null }
       { withLabel ? <Tag type={tagType} style={{ position: "relative", left: leftValue }} label={value} /> : null}
     </Grid>
   );
 }
 Slider.propTypes = {
   disabled: PropTypes.bool,
-  min: PropTypes.string,
-  max: PropTypes.string,
-  step: PropTypes.string,
+  min: PropTypes.number,
+  max: PropTypes.number,
+  step: PropTypes.number,
+  value: PropTypes.number,
   error: PropTypes.bool,
   id: PropTypes.string,
-  defaultValue: PropTypes.string,
+  withLabel: PropTypes.bool,
+  withRange: PropTypes.bool,
+  onChange: PropTypes.func,
 };
 Slider.defaultProps = {
   disabled: false,
   min: null,
   max: null,
   step: 1,
+  value: null,
   error: false,
   id: null,
-  defaultValue: 0,
+  withLabel: null,
+  withRange: null,
+  onChange: null,
 };
 
 export default Slider;
