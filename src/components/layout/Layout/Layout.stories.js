@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
 import Panel from "layout/Panel";
-import DataTable from "blocks/Table";
+import Table from "blocks/Table";
 import List, { ListItem } from "blocks/List";
 import Text, { Title } from "base/Typography";
 import Avatar from "atoms/Avatar";
@@ -172,7 +172,7 @@ const tableData = [
 ];
 
 const dataTable = (
-  <DataTable
+  <Table
     headers={tableHeaders.slice(1)}
     rows={tableData}
     listId="foo"
