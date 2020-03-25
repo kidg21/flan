@@ -106,12 +106,13 @@ function getRightContent(post, disabled, onClick) {
 
 function getLeftContent(pre, disabled, onClick) {
   let leftContent = null;
+  let leftContentComponent = null;
   if (pre && (pre.label || pre.icon)) {
-    const leftContentComponent = (
-    <React.Fragment>
-      { pre.label ? <Avatar label={pre.label}  disabled={disabled} /> : null}
-      { pre.icon ? <Icon icon={pre.icon} disabled={disabled} /> : null}
-    </React.Fragment>);
+    if (pre.label) {
+      leftContentComponent = <Avatar label={pre.label} disabled={disabled} />;
+    } else if (pre.icon) {
+      leftContentComponent = <Icon icon={pre.icon} disabled={disabled} />;
+    }
     leftContent = {
       content: leftContentComponent,
       width: "max-content",
