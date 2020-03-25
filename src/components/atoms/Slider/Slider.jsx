@@ -115,6 +115,7 @@ function Slider({
         disabled={disabled}
         error={error}
       />
+
       { withRange ? <Bar left={<Text size="2x" weight="bold" text={min} />} right={<Text size="2x" weight="bold" text={max} />} /> : null }
       { withLabel ? <Tag type={tagType} style={{ position: "relative", left: leftValue }} label={value} /> : null}
     </Grid>
