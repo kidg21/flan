@@ -36,7 +36,7 @@ const parseContent = (rawContent, fieldFilter, surfaceId) => {
   const parsedSections = rawContent.sections.map((rawSection) => {
     // parse the raw display fields (values converted from template strings to literal values)
     let parsedDisplayFields = [];
-    if (rawSection.displayFields) {
+    if (rawSection.displayFields && rawSection.displayFields instanceof Array) {
       // content has displayFields defined, then we will use those to  determine what key-val pairs to display
       parsedDisplayFields = rawSection.displayFields.map((rawDisplayField) => {
         return {
@@ -44,7 +44,9 @@ const parseContent = (rawContent, fieldFilter, surfaceId) => {
           value: interpolate(rawDisplayField.value, rawSection.records),
         };
       });
-    } else if (rawSection.records && rawSection.records.length > 0) {
+    } else if (rawSection.records
+      && rawSection.records instanceof Array
+      && rawSection.records.length > 0) {
       // no displayFields so we will just show the raw key-value pairs provided in the records array
       // excluding empty fields and system fields (or w/e fields are excluded by fieldFilter if provided by user)
       rawSection.records.forEach((record) => {
@@ -64,7 +66,9 @@ const parseContent = (rawContent, fieldFilter, surfaceId) => {
 
     let parsedCommands = [];
     // parse the raw commands
-    if (rawSection.commands && rawSection.commands.length > 0) {
+    if (rawSection.commands
+      && rawSection.commands instanceof Array
+      && rawSection.commands.length > 0) {
       parsedCommands = rawSection.commands.map((rawCommand) => {
         // not doing anything here right now, but later we may pass in Command components
         // or need to instantiate command objects here before passing into presentational template
@@ -125,17 +129,20 @@ Surface.propTypes = {
     title: PropTypes.string.isRequired,
     sections: PropTypes.arrayOf(PropTypes.shape({
       title: PropTypes.string.isRequired,
-      records: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
-      displayFields: PropTypes.arrayOf(PropTypes.shape({
+      records: PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)),
+        PropTypes.objectOf(PropTypes.object),
+      ]).isRequired,
+      displayFields: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.shape({
         label: PropTypes.string.isRequired,
         value: PropTypes.string.isRequired,
         onClick: PropTypes.func,
-      })),
-      commands: PropTypes.arrayOf(PropTypes.shape({
+      })), PropTypes.string]),
+      commands: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.shape({
         label: PropTypes.string.isRequired,
         icon: PropTypes.string,
         onClick: PropTypes.func.isRequired,
-      })),
+      })), PropTypes.string]),
     })).isRequired,
   }).isRequired,
 };
