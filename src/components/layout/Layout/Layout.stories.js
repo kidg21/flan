@@ -458,13 +458,14 @@ storiesOf("Layout|Layout/", module)
                         onClick={seeLeftRegion}
                       />
                     ),
-                    width: "5%",
+                    width: "10%",
                   }}
                   center={{
                     content: (
                       <Search placeholder="Search"/>
                     ),
-                    align: "left",
+                    align: "right",
+                
                   }}
                   right={{
                     content: (

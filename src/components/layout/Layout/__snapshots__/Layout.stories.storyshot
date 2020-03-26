@@ -52,16 +52,16 @@ exports[` 2`] = `
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 cJAplF"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionLeft-sc-19tlhp4-4 cJAplF"
       height={null}
       id="Left"
       overflow={null}
-      width="15%"
+      width="25%"
     >
       
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 jPMdeq Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 cfjdkB Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
       height="40%"
       id={null}
       overflow={null}
@@ -106,16 +106,16 @@ exports[` 3`] = `
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 cJAplF"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionLeft-sc-19tlhp4-4 cJAplF"
       height={null}
       id="Left"
       overflow={null}
-      width="15%"
+      width="25%"
     >
       
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 jPMdeq Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 cfjdkB Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
       height="40%"
       id={null}
       overflow={null}
@@ -178,16 +178,16 @@ exports[` 4`] = `
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 cJAplF"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionLeft-sc-19tlhp4-4 cJAplF"
       height={null}
       id="Left"
       overflow={null}
-      width="15%"
+      width="25%"
     >
       
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 jPMdeq Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 cfjdkB Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
       height="40%"
       id={null}
       overflow={null}
@@ -337,11 +337,11 @@ exports[` 5`] = `
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 eoAyiI"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionLeft-sc-19tlhp4-4 eoAyiI"
       height={null}
       id={null}
       overflow={null}
-      width="15%"
+      width="25%"
     >
       <div
         className="Panel__PanelWrapper-sc-48epke-0 kObpyG"
@@ -1234,11 +1234,11 @@ exports[` 6`] = `
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 eoAyiI"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionLeft-sc-19tlhp4-4 eoAyiI"
       height={null}
       id={null}
       overflow={null}
-      width="15%"
+      width="25%"
     >
       <div
         className="Panel__PanelWrapper-sc-48epke-0 kObpyG"
@@ -2049,7 +2049,7 @@ exports[` 7`] = `
       onClick={null}
     >
       <div
-        className="Bar__Slot-sc-1c4axau-1 fSaTM"
+        className="Bar__Slot-sc-1c4axau-1 cfFdoI"
       >
         <div
           alt="logo"
@@ -2070,85 +2070,58 @@ exports[` 7`] = `
         </div>
       </div>
       <div
-        className="Bar__Slot-sc-1c4axau-1 hGQHrW"
+        className="Bar__Slot-sc-1c4axau-1 dSALDS"
       >
         <section
           className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
           id={null}
           rows={null}
         >
-          <div
-            className="Search__SearchContainer-sey9om-0 hKathB"
+          <form
+            className="Search__SearchContainer-sey9om-0 hrJbnV"
           >
-            <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 faotSI"
+            <input
+              className="Search__NewTextInput-sey9om-1 gIKvUj"
+              id="my-search-bar"
+              placeholder="Search"
+              type="search"
+            />
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 kRDsvV"
+              disabled={false}
+              htmlFor={null}
               id={null}
-              rows={null}
+              name={null}
+              onClick={null}
+              tabIndex="1"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-                id="my-search-bar_container"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 gOxAef Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+                id={null}
                 rows={null}
               >
-                <input
-                  autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 cYvRjK"
-                  cols=""
-                  disabled={false}
-                  id="my-search-bar"
-                  list={null}
-                  maxLength={null}
-                  name="my-search-bar"
-                  onBlur={null}
-                  onChange={null}
-                  onFocus={null}
-                  onKeyPress={null}
-                  pattern={null}
-                  placeholder="Search"
-                  rows=""
-                  size={null}
-                  title={null}
-                  type="search"
-                  value={null}
-                />
-              </section>
-              <button
-                className="Button__StyledButton-sc-1v7sls2-0 kRDsvV"
-                disabled={false}
-                htmlFor={null}
-                id={null}
-                name={null}
-                onClick={null}
-                tabIndex="1"
-              >
-                <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 gOxAef Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-search fa-w-16 fa-md Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+                  color={null}
+                  data-icon="search"
+                  data-prefix="far"
+                  focusable="false"
                   id={null}
-                  rows={null}
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <svg
-                    aria-hidden="true"
-                    className="svg-inline--fa fa-search fa-w-16 fa-md Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
-                    color={null}
-                    data-icon="search"
-                    data-prefix="far"
-                    focusable="false"
-                    id={null}
-                    role="img"
+                  <path
+                    d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
+                    fill="currentColor"
                     style={Object {}}
-                    viewBox="0 0 512 512"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
-                      fill="currentColor"
-                      style={Object {}}
-                    />
-                  </svg>
-                </section>
-              </button>
-            </section>
-          </div>
+                  />
+                </svg>
+              </section>
+            </button>
+          </form>
         </section>
       </div>
       <div
@@ -2263,11 +2236,11 @@ exports[` 7`] = `
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 eoAyiI"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionLeft-sc-19tlhp4-4 eoAyiI"
       height={null}
       id={null}
       overflow={null}
-      width="15%"
+      width="25%"
     >
       <div
         className="Panel__PanelWrapper-sc-48epke-0 kObpyG"

@@ -40,9 +40,9 @@ const Input = styled.input`
     return props.theme.palette[props.inputCaretColor] || "";
   }};
   width: 100%;
-  min-height: 30px;
+  min-height: 1.875rem;
   height: 2.4rem;
-  padding: 2px 8px;
+  padding: 0.125rem 0.5rem;
   resize: ${(props) => {
     return props.inputResize || "";
   }};
