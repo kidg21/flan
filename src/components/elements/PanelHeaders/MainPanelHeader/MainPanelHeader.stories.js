@@ -14,7 +14,7 @@ const data = [
   { id: "e", label: "Layer" },
 ];
 
-storiesOf("Templates|Panel Headers/", module)
+storiesOf("Templates|Panel Header/", module)
   .addDecorator(Padding)
   .add("Main", () => {
     return <MainPanelHeader title="Main Header" menuData={data} />;
