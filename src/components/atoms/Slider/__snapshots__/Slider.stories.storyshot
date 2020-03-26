@@ -1,110 +1,126 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[` 1`] = `
-<input
-  className="Slider__SliderPiece-sc-1hp9era-0 cdvxbj"
-  disabled={false}
-  id="default"
-  onChange={null}
-  type="range"
-/>
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 gowFQ"
+  id={null}
+  rows={null}
+>
+  <input
+    className="Slider__SliderPiece-sc-1hp9era-0 bqOpTP"
+    disabled={false}
+    id="default"
+    max={20}
+    min={1}
+    onChange={[Function]}
+    step={1}
+    type="range"
+    value={8}
+  />
+</section>
 `;
 
 exports[` 2`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 ccQKIO RangeSlider__RangeContainer-sc-455qos-0 flvWwI"
-  id="defaultRange"
-  rows={null}
+<form
+  action={null}
+  className="Form__FormWrapper-v2wrel-0 geeIqY"
+  method={null}
+  onSubmit={null}
 >
-  <label
-    className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-    fontSize="0.82em"
-    fontWeight={400}
-    htmlFor={null}
-    letterSpacing="0px"
-  >
-    Slider
-  </label>
-  <div
-    className="Bar__BarLayout-sc-1c4axau-2 gzisev"
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 eVqRaz Form__FormInputs-v2wrel-3 bZGKXs"
     id={null}
-    onClick={null}
+    rows={null}
   >
-    <div
-      className="Bar__Slot-sc-1c4axau-1 egxhuQ"
+    <section
+      className="Form__FormSection-v2wrel-2 kbyyVh"
     >
-      <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-        id="defaultRange_min_container"
-        rows={null}
+      <h6
+        className="Typography__TitleText-sc-19auepv-2 gfzBkI"
+        fontSize="1.05em"
+        fontWeight={600}
+        letterSpacing="0px"
       >
-        <input
-          autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 isQToF"
-          cols=""
-          disabled={false}
-          id="defaultRange_min"
-          list={null}
-          maxLength={null}
-          name="defaultRange_min"
-          onBlur={null}
-          onChange={null}
-          onFocus={null}
-          onKeyPress={null}
-          pattern={null}
-          placeholder="Min"
-          rows=""
-          size={null}
-          title={null}
-          type="text"
-          value={null}
-        />
-      </section>
-    </div>
-    <div
-      className="Bar__Slot-sc-1c4axau-1 flbmFP"
-    >
-      <input
-        className="Slider__SliderPiece-sc-1hp9era-0 cdvxbj"
-        disabled={false}
+        Standard
+      </h6>
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 gowFQ"
         id={null}
-        onChange={null}
-        type="range"
-      />
-    </div>
-    <div
-      className="Bar__Slot-sc-1c4axau-1 hfHaIx"
-    >
-      <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
-        id="defaultRange_max_container"
         rows={null}
       >
         <input
-          autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 isQToF"
-          cols=""
+          className="Slider__SliderPiece-sc-1hp9era-0 bqOpTP"
           disabled={false}
-          id="defaultRange_max"
-          list={null}
-          maxLength={null}
-          name="defaultRange_max"
-          onBlur={null}
-          onChange={null}
-          onFocus={null}
-          onKeyPress={null}
-          pattern={null}
-          placeholder="Max"
-          rows=""
-          size={null}
-          title={null}
-          type="text"
+          id={null}
+          max={20}
+          min={1}
+          onChange={[Function]}
+          step={1}
+          type="range"
           value={null}
         />
       </section>
-    </div>
-  </div>
-</section>
+    </section>
+    <section
+      className="Form__FormSection-v2wrel-2 kbyyVh"
+    >
+      <h6
+        className="Typography__TitleText-sc-19auepv-2 gfzBkI"
+        fontSize="1.05em"
+        fontWeight={600}
+        letterSpacing="0px"
+      >
+        Error
+      </h6>
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 gowFQ"
+        id={null}
+        rows={null}
+      >
+        <input
+          className="Slider__SliderPiece-sc-1hp9era-0 hnwAQE"
+          disabled={false}
+          id={null}
+          max={20}
+          min={1}
+          onChange={[Function]}
+          step={1}
+          type="range"
+          value={null}
+        />
+      </section>
+    </section>
+    <section
+      className="Form__FormSection-v2wrel-2 kbyyVh"
+    >
+      <h6
+        className="Typography__TitleText-sc-19auepv-2 gfzBkI"
+        fontSize="1.05em"
+        fontWeight={600}
+        letterSpacing="0px"
+      >
+        Disabled
+      </h6>
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 gowFQ"
+        id={null}
+        rows={null}
+      >
+        <input
+          className="Slider__SliderPiece-sc-1hp9era-0 bqOpTP"
+          disabled={true}
+          id={null}
+          max={20}
+          min={1}
+          onChange={[Function]}
+          step={1}
+          type="range"
+          value={null}
+        />
+      </section>
+    </section>
+  </section>
+</form>
 `;
 
 exports[` 3`] = `
@@ -130,13 +146,23 @@ exports[` 3`] = `
       >
         Standard
       </h6>
-      <input
-        className="Slider__SliderPiece-sc-1hp9era-0 cdvxbj"
-        disabled={false}
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 gowFQ"
         id={null}
-        onChange={null}
-        type="range"
-      />
+        rows={null}
+      >
+        <input
+          className="Slider__SliderPiece-sc-1hp9era-0 bqOpTP"
+          disabled={false}
+          id={null}
+          max={20}
+          min={1}
+          onChange={[Function]}
+          step={1}
+          type="range"
+          value={null}
+        />
+      </section>
     </section>
     <section
       className="Form__FormSection-v2wrel-2 kbyyVh"
@@ -147,15 +173,36 @@ exports[` 3`] = `
         fontWeight={600}
         letterSpacing="0px"
       >
-        Error
+        With Label
       </h6>
-      <input
-        className="Slider__SliderPiece-sc-1hp9era-0 lnZpVA"
-        disabled={false}
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 gowFQ"
         id={null}
-        onChange={null}
-        type="range"
-      />
+        rows={null}
+      >
+        <input
+          className="Slider__SliderPiece-sc-1hp9era-0 bqOpTP"
+          disabled={false}
+          id={null}
+          max={20}
+          min={1}
+          onChange={[Function]}
+          step={1}
+          type="range"
+          value={null}
+        />
+        <div
+          className="Tag__TagContainer-sc-128kb3h-0 kzfjeA"
+          id={null}
+          label={null}
+          style={
+            Object {
+              "left": "-4.5%",
+              "position": "relative",
+            }
+          }
+        />
+      </section>
     </section>
     <section
       className="Form__FormSection-v2wrel-2 kbyyVh"
@@ -166,15 +213,57 @@ exports[` 3`] = `
         fontWeight={600}
         letterSpacing="0px"
       >
-        Disabled
+        With Range
       </h6>
-      <input
-        className="Slider__SliderPiece-sc-1hp9era-0 cdvxbj"
-        disabled={true}
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 gowFQ"
         id={null}
-        onChange={null}
-        type="range"
-      />
+        rows={null}
+      >
+        <input
+          className="Slider__SliderPiece-sc-1hp9era-0 bqOpTP"
+          disabled={false}
+          id={null}
+          max={20}
+          min={1}
+          onChange={[Function]}
+          step={1}
+          type="range"
+          value={null}
+        />
+        <div
+          className="Bar__BarLayout-sc-1c4axau-2 xQXbG"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-sc-1c4axau-1 hAjMjw"
+          >
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+              fontSize="0.75em"
+              fontWeight={600}
+              id={null}
+              letterSpacing="0.2px"
+            >
+              1
+            </p>
+          </div>
+          <div
+            className="Bar__Slot-sc-1c4axau-1 kHYCoh"
+          >
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+              fontSize="0.75em"
+              fontWeight={600}
+              id={null}
+              letterSpacing="0.2px"
+            >
+              20
+            </p>
+          </div>
+        </div>
+      </section>
     </section>
   </section>
 </form>

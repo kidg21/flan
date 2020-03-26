@@ -57,7 +57,7 @@ exports[` 1`] = `
               </label>
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 isQToF"
+                className="TextInput__Input-sc-1fep8p8-2 jEGTSx"
                 cols=""
                 disabled={false}
                 id="default_left"
@@ -97,7 +97,7 @@ exports[` 1`] = `
               </label>
               <input
                 autoComplete="off"
-                className="TextInput__Input-sc-1fep8p8-2 isQToF"
+                className="TextInput__Input-sc-1fep8p8-2 jEGTSx"
                 cols=""
                 disabled={false}
                 id="default_right"
@@ -171,12 +171,12 @@ exports[` 1`] = `
                 onKeyDown={[Function]}
               >
                 <div
-                  className=" css-enwceb-control"
+                  className=" css-14ku2k9-control"
                   onMouseDown={[Function]}
                   onTouchEnd={[Function]}
                 >
                   <div
-                    className=" css-1hwfws3"
+                    className=" css-g1d714-ValueContainer"
                   >
                     <div
                       className=" css-di10jl-placeholder"
@@ -292,12 +292,12 @@ exports[` 1`] = `
                 onKeyDown={[Function]}
               >
                 <div
-                  className=" css-enwceb-control"
+                  className=" css-14ku2k9-control"
                   onMouseDown={[Function]}
                   onTouchEnd={[Function]}
                 >
                   <div
-                    className=" css-1hwfws3"
+                    className=" css-g1d714-ValueContainer"
                   >
                     <div
                       className=" css-di10jl-placeholder"
@@ -443,7 +443,7 @@ exports[` 2`] = `
         >
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 isQToF"
+            className="TextInput__Input-sc-1fep8p8-2 jEGTSx"
             cols=""
             disabled={false}
             id="knobs_left"
@@ -474,7 +474,7 @@ exports[` 2`] = `
         >
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 isQToF"
+            className="TextInput__Input-sc-1fep8p8-2 jEGTSx"
             cols=""
             disabled={false}
             id="knobs_right"
@@ -582,7 +582,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 isQToF"
+                  className="TextInput__Input-sc-1fep8p8-2 jEGTSx"
                   cols=""
                   disabled={false}
                   id="input_left"
@@ -613,7 +613,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 isQToF"
+                  className="TextInput__Input-sc-1fep8p8-2 jEGTSx"
                   cols=""
                   disabled={false}
                   id="input_right"
@@ -674,7 +674,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 bFpwew"
+                  className="TextInput__Input-sc-1fep8p8-2 hbESzc"
                   cols=""
                   disabled={false}
                   id="inputError_left"
@@ -705,7 +705,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 bFpwew"
+                  className="TextInput__Input-sc-1fep8p8-2 hbESzc"
                   cols=""
                   disabled={false}
                   id="inputError_right"
@@ -766,7 +766,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 bFpwew"
+                  className="TextInput__Input-sc-1fep8p8-2 hbESzc"
                   cols=""
                   disabled={false}
                   id="inputError_left"
@@ -797,7 +797,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 bFpwew"
+                  className="TextInput__Input-sc-1fep8p8-2 hbESzc"
                   cols=""
                   disabled={false}
                   id="inputError_right"
@@ -867,7 +867,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 isQToF"
+                  className="TextInput__Input-sc-1fep8p8-2 jEGTSx"
                   cols=""
                   disabled={false}
                   id="inputError_left"
@@ -898,7 +898,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 isQToF"
+                  className="TextInput__Input-sc-1fep8p8-2 jEGTSx"
                   cols=""
                   disabled={false}
                   id="inputError_right"
@@ -959,7 +959,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 fYa-DVb"
+                  className="TextInput__Input-sc-1fep8p8-2 jEGvVX"
                   cols=""
                   disabled={true}
                   id="inputDisabled_left"
@@ -990,7 +990,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 fYa-DVb"
+                  className="TextInput__Input-sc-1fep8p8-2 jEGvVX"
                   cols=""
                   disabled={true}
                   id="inputDisabled_right"
@@ -1063,7 +1063,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 isQToF"
+                  className="TextInput__Input-sc-1fep8p8-2 jEGTSx"
                   cols=""
                   disabled={false}
                   id="select_left"
@@ -1094,7 +1094,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 isQToF"
+                  className="TextInput__Input-sc-1fep8p8-2 jEGTSx"
                   cols=""
                   disabled={false}
                   id="select_right"
@@ -1155,7 +1155,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 isQToF"
+                  className="TextInput__Input-sc-1fep8p8-2 jEGTSx"
                   cols=""
                   disabled={false}
                   id="selectOperation_left"
@@ -1190,12 +1190,12 @@ exports[` 3`] = `
                   onKeyDown={[Function]}
                 >
                   <div
-                    className=" css-enwceb-control"
+                    className=" css-14ku2k9-control"
                     onMouseDown={[Function]}
                     onTouchEnd={[Function]}
                   >
                     <div
-                      className=" css-1hwfws3"
+                      className=" css-g1d714-ValueContainer"
                     >
                       <div
                         className=" css-di10jl-placeholder"
@@ -1298,7 +1298,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 isQToF"
+                  className="TextInput__Input-sc-1fep8p8-2 jEGTSx"
                   cols=""
                   disabled={false}
                   id="selectOperation_right"
@@ -1359,7 +1359,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 bFpwew"
+                  className="TextInput__Input-sc-1fep8p8-2 hbESzc"
                   cols=""
                   disabled={false}
                   id="selectError_left"
@@ -1390,7 +1390,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 bFpwew"
+                  className="TextInput__Input-sc-1fep8p8-2 hbESzc"
                   cols=""
                   disabled={false}
                   id="selectError_right"
@@ -1460,7 +1460,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 fYa-DVb"
+                  className="TextInput__Input-sc-1fep8p8-2 jEGvVX"
                   cols=""
                   disabled={true}
                   id="selectDisabled_left"
@@ -1491,7 +1491,7 @@ exports[` 3`] = `
               >
                 <input
                   autoComplete="off"
-                  className="TextInput__Input-sc-1fep8p8-2 fYa-DVb"
+                  className="TextInput__Input-sc-1fep8p8-2 jEGvVX"
                   cols=""
                   disabled={true}
                   id="selectDisabled_right"
@@ -1557,7 +1557,7 @@ exports[` 4`] = `
         >
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 isQToF"
+            className="TextInput__Input-sc-1fep8p8-2 jEGTSx"
             cols=""
             disabled={false}
             id="skeleton_left"
@@ -1588,7 +1588,7 @@ exports[` 4`] = `
         >
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 isQToF"
+            className="TextInput__Input-sc-1fep8p8-2 jEGTSx"
             cols=""
             disabled={false}
             id="skeleton_right"

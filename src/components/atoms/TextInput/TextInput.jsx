@@ -39,8 +39,9 @@ const Input = styled.input`
     return props.theme.palette[props.inputCaretColor] || "";
   }};
   width: 100%;
-  min-height: 2.7rem;
-  padding: 0.3rem 0.75rem;
+  min-height: 1.875rem;
+  height: 2.4rem;
+  padding: 0.125rem 0.5rem;
   resize: ${(props) => {
     return props.inputResize || "";
   }};
@@ -89,6 +90,7 @@ function TextInput({
   columns,
   disabled,
   error,
+  transparent,
   helpText,
   id,
   isRequired,
@@ -160,6 +162,9 @@ function TextInput({
     inputBorderColor = "neutral40";
     inputFillColor = "disabled";
     inputTextColor = "disabled";
+  } else if (transparent) {
+    inputBorderColor = "inverse";
+    inputBorderColorHover = "inverse";
   } else if (error) {
     inputBorderColor = "alert60";
     messageColor = "alert";
@@ -243,6 +248,7 @@ TextInput.propTypes = {
   /** The readonly attribute specifies that the input field is read only (cannot be changed) */
   readonly: PropTypes.bool,
   rows: PropTypes.string,
+  transparent: PropTypes.bool,
   type: PropTypes.oneOf([
     "color",
     "date",
@@ -284,6 +290,7 @@ TextInput.defaultProps = {
   placeholder: null,
   readonly: false,
   rows: "",
+  transparent: false,
   type: "text",
   value: null,
   warning: "",

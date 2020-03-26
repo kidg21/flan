@@ -1236,7 +1236,7 @@ exports[` 8`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-user fa-w-14 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+        className="svg-inline--fa fa-user fa-w-14 fa-md Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
         color={null}
         data-icon="user"
         data-prefix="far"
@@ -1271,7 +1271,7 @@ exports[` 8`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-angle-down fa-w-10 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+        className="svg-inline--fa fa-angle-down fa-w-10 fa-md Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
         color={null}
         data-icon="angle-down"
         data-prefix="far"
@@ -1306,7 +1306,7 @@ exports[` 8`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-bookmark fa-w-12 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+        className="svg-inline--fa fa-bookmark fa-w-12 fa-md Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
         color={null}
         data-icon="bookmark"
         data-prefix="far"
@@ -1341,7 +1341,7 @@ exports[` 8`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-plus fa-w-12 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+        className="svg-inline--fa fa-plus fa-w-12 fa-md Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
         color={null}
         data-icon="plus"
         data-prefix="far"
@@ -1376,7 +1376,7 @@ exports[` 8`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-print fa-w-16 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+        className="svg-inline--fa fa-print fa-w-16 fa-md Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
         color={null}
         data-icon="print"
         data-prefix="far"

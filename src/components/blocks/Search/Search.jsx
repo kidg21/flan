@@ -13,6 +13,54 @@ import Container from "atoms/Container";
 import Icon from "atoms/Icon";
 import styled from "styled-components";
 
+// const SearchContainer = styled.div`
+
+const SearchContainer = styled.form`
+display: flex;
+align-items: center;
+flex-direction: row;
+border: 1px solid;
+min-width: 12rem;
+border-radius: 4px;
+border-color: ${(props) => {
+  return ( props.theme.palette.neutral60
+  );
+}};
+&:hover {
+  border-color: ${(props) => {
+  return (
+    props.theme.palette.selected
+  );
+}};
+  }
+&:selected {
+  border-color: ${(props) => {
+  return (
+    props.theme.palette.selected
+  );
+}};
+}
+}
+`;
+
+const NewTextInput = styled.input`
+flex-grow: 2;
+border: none;
+min-height: 1.875rem;
+height: 2.4rem;
+padding: 0.125rem 0.5rem;
+font-family: ${(props) => { return props.theme.typography.primary; }};
+::placeholder {
+  font-weight: initial;
+  font-size: 0.90em;
+  letter-spacing: 0.5px;
+  color: ${(props) => {
+  return (
+    props.theme.text[props.placeholderColor] || props.theme.text.secondary
+  );
+}};
+}
+`;
 
 const DropContainer = styled(Container)`
 position: fixed;
@@ -46,16 +94,16 @@ function Search({
 
   return (
     <Grid columns="1" gap="tiny" id={id}>
-      <Grid columns="9fr .5fr">
-        <TextInput
+        <SearchContainer>
+        <NewTextInput
           id="my-search-bar"
           placeholder={placeholder}
           type="search"
         />
-        <Button icon="search" solid onClick={onSearch} />
+          <Button icon="search" plain onClick={onSearch} />
+        </SearchContainer>
         {/* <Button icon="more" plain /> */}
-      </Grid>
-      { error || results ? <Grid columns="9fr .5fr"> <DropContainer id="results-container" maxHeight="22rem" > { Body }</DropContainer></Grid> : null}
+      { error || results ? <DropContainer id="results-container" maxHeight="22rem" > { Body }</DropContainer>: null}
       {/* { advance ? <Advanced inputs={inputs} /> : null} */}
     </Grid>
   );
