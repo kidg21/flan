@@ -101,9 +101,7 @@ const LabelWrapper = styled(Grid)`
   }};
   width: auto;
   > * {
-    line-height: ${(props) => {
-    return props.lineHeight || "";
-  }};
+    line-height: inherit;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -244,11 +242,9 @@ function Button({
 
   let gridGap = null;
   let justifyItems = null;
-  let lineHeight = null;
   if (vertical) {
     gridGap = "0.25rem";
     justifyItems = "center";
-    lineHeight = "inherit";
   } else if (icon && !label) {
     gridGap = "0";
   }
@@ -277,7 +273,6 @@ function Button({
       columns={columns}
       gridGap={gridGap}
       justifyItems={justifyItems}
-      lineHeight={lineHeight}
       rows={vertical ? "max-content 1fr" : null}
       vertical={vertical}
     >
