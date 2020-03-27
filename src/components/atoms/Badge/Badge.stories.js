@@ -31,8 +31,8 @@
 //         <Card>
 //           <CardSection>
 //             <Badge
-//               type={options(
-//                 "type",
+//               variant={options(
+//                 "variant",
 //                 {
 //                   "info": "info",
 //                   "success": "success",
@@ -119,25 +119,25 @@
 //         </Card>
 //         <Card>
 //           <CardSection>
-//             <Badge label="Info" type="info" />
+//             <Badge label="Info" variant="info" />
 //             <Title text="Info" />
 //           </CardSection>
 //         </Card>
 //         <Card>
 //           <CardSection>
-//             <Badge label="Success" type="success" />
+//             <Badge label="Success" variant="success" />
 //             <Title text="Success" />
 //           </CardSection>
 //         </Card>
 //         <Card>
 //           <CardSection>
-//             <Badge label="Warning" type="warning" />
+//             <Badge label="Warning" variant="warning" />
 //             <Title text="Warning" />
 //           </CardSection>
 //         </Card>
 //         <Card>
 //           <CardSection>
-//             <Badge label="Alert" type="alert" />
+//             <Badge label="Alert" variant="alert" />
 //             <Title text="Alert" />
 //           </CardSection>
 //         </Card>
