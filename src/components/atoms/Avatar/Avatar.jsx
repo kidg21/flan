@@ -64,7 +64,7 @@ const sizeHash = {
 };
 
 function Avatar({
-  alt, brand, icon, id, label, onClick, size, type,
+  alt, brand, icon, id, label, onClick, size, variant,
 }) {
   let labelType;
   let iconType;
@@ -73,7 +73,7 @@ function Avatar({
   const avatarSize = selectedSize ? selectedSize.avatar : "2.5rem";
   const fontSize = selectedSize ? selectedSize.font : "1em";
 
-  const typeHash = {
+  const variantHash = {
     success: "success80",
     warning: "warning80",
     alert: "alert80",
@@ -81,7 +81,7 @@ function Avatar({
     action: "action80",
   };
 
-  let backgroundColor = type ? (typeHash[type] || type.toLowerCase()) : "action60";
+  let backgroundColor = variant ? (variantHash[variant] || variant.toLowerCase()) : "action60";
   const textColor = "inverse";
 
   let media = null;
@@ -107,7 +107,7 @@ function Avatar({
     labelType = <AvatarText weight="semibold" fontSize={fontSize} text={label.substring(0, 2)} />;
   }
 
-  if (!type) {
+  if (!variant) {
     if (brand === "research") {
       backgroundColor = "research";
     } if (brand === "bi") {
@@ -160,7 +160,7 @@ Avatar.propTypes = {
   onClick: PropTypes.node,
   size: PropTypes.node,
   /** Options: 'action',  'info', 'success', 'warning', 'alert' */
-  type: PropTypes.string,
+  variant: PropTypes.string,
 };
 
 Avatar.defaultProps = {
@@ -171,7 +171,7 @@ Avatar.defaultProps = {
   label: null,
   onClick: null,
   size: null,
-  type: null,
+  variant: null,
 };
 
 export default Avatar;
