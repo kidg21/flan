@@ -31,7 +31,7 @@ const TagContainer = styled.div`
 `;
 
 function Tag({
-  brand, icon, id, label, type,
+  brand, icon, id, label, variant,
 }) {
   let badgeColor;
   let badgeTextColor;
@@ -40,7 +40,7 @@ function Tag({
   let iconType;
 
   if (icon) {
-    iconType = <Icon icon={icon} size="2x" type={type} />;
+    iconType = <Icon icon={icon} size="2x" variant={variant} />;
     badgePadding = "0 0.25em";
   } else if (label) {
     labelType = <Text size="2x" weight="bold" text={label} />;
@@ -50,7 +50,7 @@ function Tag({
     badgePadding = "0.35rem";
   }
 
-  switch (type) {
+  switch (variant) {
     case "info":
       badgeColor = "info80";
       break;
@@ -68,7 +68,7 @@ function Tag({
       break;
   }
 
-  if (!type) {
+  if (!variant) {
     if (brand === "research") {
       badgeColor = "research";
     } if (brand === "bi") {
@@ -108,7 +108,7 @@ Tag.propTypes = {
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   id: PropTypes.string,
   label: PropTypes.string,
-  type: PropTypes.string,
+  variant: PropTypes.string,
 };
 
 Tag.defaultProps = {
@@ -116,7 +116,7 @@ Tag.defaultProps = {
   icon: null,
   id: null,
   label: null,
-  type: null,
+  variant: null,
 };
 
 export default Tag;
