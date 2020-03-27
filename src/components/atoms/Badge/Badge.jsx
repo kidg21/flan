@@ -19,7 +19,7 @@ const BadgeContainer = styled.div`
 `;
 
 function Badge({
-  icon, id, label, position, type,
+  icon, id, label, position, variant,
 }) {
   let badgeLeft;
   let badgeBottom;
@@ -54,7 +54,7 @@ function Badge({
       id={id}
       setTransform={setTransform}
     >
-      <Tag label={label} type={type || "alert"} icon={icon} />
+      <Tag label={label} variant={variant || "alert"} icon={icon} />
     </BadgeContainer>
   );
 }
@@ -70,7 +70,7 @@ Badge.propTypes = {
     "bottomRight",
     "bottomLeft",
   ]),
-  type: PropTypes.oneOf(["info", "success", "warning", "alert"]),
+  variant: PropTypes.oneOf(["info", "success", "warning", "alert"]),
 };
 
 Badge.defaultProps = {
@@ -78,7 +78,7 @@ Badge.defaultProps = {
   id: null,
   label: null,
   position: null,
-  type: null,
+  variant: null,
 };
 
 export default Badge;
