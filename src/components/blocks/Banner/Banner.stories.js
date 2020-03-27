@@ -6,7 +6,6 @@ import { CardGrid } from "elements/Card";
 import Banner from "blocks/Banner";
 
 
-
 storiesOf("Blocks|Banner", module)
 
   .addDecorator(Padding)
@@ -15,12 +14,13 @@ storiesOf("Blocks|Banner", module)
     "Documentation",
     () => {
       return <Banner title="This is a Banner." />;
-    })
+    },
+  )
   .add("Knobs", () => {
     return (
       <Banner
-        type={select(
-          "type",
+        variant={select(
+          "variant",
           {
             standard: null,
             info: "info",
@@ -90,28 +90,28 @@ storiesOf("Blocks|Banner", module)
   .add("Info Banner", () => {
     return (
       <CardGrid>
-        <Banner type="info" title="This is an Info Banner." />
+        <Banner variant="info" title="This is an Info Banner." />
       </CardGrid>
     );
   })
   .add("Success Banner", () => {
     return (
       <CardGrid>
-        <Banner type="success" title="This is a Success Banner." />
+        <Banner variant="success" title="This is a Success Banner." />
       </CardGrid>
     );
   })
   .add("Warning Banner", () => {
     return (
       <CardGrid>
-        <Banner type="warning" title="This is a Warning Banner." />
+        <Banner variant="warning" title="This is a Warning Banner." />
       </CardGrid>
     );
   })
   .add("Alert Banner", () => {
     return (
       <CardGrid>
-        <Banner type="alert" title="This is an Alert Banner." />
+        <Banner variant="alert" title="This is an Alert Banner." />
       </CardGrid>
     );
   })
@@ -136,25 +136,25 @@ storiesOf("Blocks|Banner", module)
           link="Link Text"
         />
         <Banner
-          type="info"
+          variant="info"
           title="This is an Info Banner."
           description="A description can go here, if necessary."
           link="Link Text"
         />
         <Banner
-          type="success"
+          variant="success"
           title="This is a Success Banner."
           description="A description can go here, if necessary."
           link="Link Text"
         />
         <Banner
-          type="warning"
+          variant="warning"
           title="This is a Warning Banner."
           description="A description can go here, if necessary."
           link="Link Text"
         />
         <Banner
-          type="alert"
+          variant="alert"
           title="This is an Alert Banner."
           description="A description can go here, if necessary."
           link="Link Text"

@@ -41,19 +41,19 @@ function Banner({
   onClick,
   onClose,
   title,
-  type,
+  variant,
 }) {
   let bannerType;
-  const iconValue = icon || iconHash[type && type.toLowerCase()];
+  const iconValue = icon || iconHash[variant && variant.toLowerCase()];
   if (iconValue) {
     bannerType = {
-      content: <Avatar type={type} icon={iconValue} size="2x" fixedWidth />,
+      content: <Avatar variant={variant} icon={iconValue} size="2x" fixedWidth />,
       width: "max-content",
     };
   }
 
   return (
-    <StyledBanner borderColor={type} id={id} padding="4x">
+    <StyledBanner borderColor={variant} id={id} padding="4x">
       <Bar
         contentAlign={description || link ? "" : "center"}
         padding="none"
@@ -88,7 +88,7 @@ Banner.propTypes = {
   onClick: PropTypes.func,
   onClose: PropTypes.func,
   title: PropTypes.string.isRequired,
-  type: PropTypes.oneOf(["info", "success", "warning", "alert"]),
+  variant: PropTypes.oneOf(["info", "success", "warning", "alert"]),
 };
 
 Banner.defaultProps = {
@@ -99,7 +99,7 @@ Banner.defaultProps = {
   link: null,
   onClick: null,
   onClose: null,
-  type: null,
+  variant: null,
 };
 
 export default Banner;
