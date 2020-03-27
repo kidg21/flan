@@ -108,14 +108,14 @@ function Slider({
         value={value}
         step={step}
         onChange={(e) => {
-      setValue(e.target.value);
-    }}
+          setValue(e.target.value);
+        }}
         disabled={disabled}
         error={error}
       />
 
-      { withRange ? <Bar left={<Text size="2x" weight="bold" text={min} />} right={<Text size="2x" weight="bold" text={max} />} /> : null }
-      { withLabel ? <Tag type={tagType} style={{ position: "relative", left: leftValue }} label={value} /> : null}
+      {withRange ? <Bar left={<Text size="2x" weight="bold" text={min} />} right={<Text size="2x" weight="bold" text={max} />} /> : null}
+      {withLabel ? <Tag variant={tagType} style={{ position: "relative", left: leftValue }} label={value} /> : null}
     </Grid>
   );
 }
