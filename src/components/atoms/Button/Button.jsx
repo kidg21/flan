@@ -93,13 +93,21 @@ const StyledButton = styled.button`
 
 const LabelWrapper = styled(Grid)`
   grid-gap: ${(props) => {
-    return props.vertical ? "0.25rem" : "0.5rem";
+    return props.gridGap || "0.5rem";
   }};
   align-items: center;
   justify-items: ${(props) => {
-    return props.vertical ? "center" : "";
+    return props.justifyItems || "";
   }};
   width: auto;
+  > * {
+    line-height: ${(props) => {
+    return props.lineHeight || "";
+  }};
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 `;
 
 StyledButton.displayName = "Button";
@@ -234,6 +242,17 @@ function Button({
     borderColor = buttonColor;
   }
 
+  let gridGap = null;
+  let justifyItems = null;
+  let lineHeight = null;
+  if (vertical) {
+    gridGap = "0.25rem";
+    justifyItems = "center";
+    lineHeight = "inherit";
+  } else if (icon && !label) {
+    gridGap = "0";
+  }
+
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
 
@@ -256,6 +275,9 @@ function Button({
   const content = (
     <LabelWrapper
       columns={columns}
+      gridGap={gridGap}
+      justifyItems={justifyItems}
+      lineHeight={lineHeight}
       rows={vertical ? "max-content 1fr" : null}
       vertical={vertical}
     >
