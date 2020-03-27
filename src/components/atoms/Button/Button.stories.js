@@ -12,7 +12,7 @@ import Button from "atoms/Button";
 // Knob Values
 const knobGroups = ["Button"];
 const buttonLabel = "Button Label";
-const buttonTypes = [
+const buttonVariants = [
   "standard",
   "secondary",
   "info",
@@ -34,13 +34,13 @@ export default {
 
 export const Knobs = () => {
   const label = text("label", buttonLabel, knobGroups[0]);
-  const type = select("type", buttonTypes, buttonTypes[0], knobGroups[0]);
+  const variant = select("variant", buttonVariants, buttonVariants[0], knobGroups[0]);
   const icon = select("icon", buttonIcons, buttonIcons[0], knobGroups[0]);
   const count = text("count", "", knobGroups[0]);
   return (
     <Button
       label={label}
-      type={type}
+      variant={variant}
       icon={icon}
       count={count}
       solid={boolean("solid", false, knobGroups[0])}

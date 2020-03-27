@@ -152,6 +152,7 @@ function Button({
   round,
   solid,
   type,
+  variant,
   underlined,
   vertical,
 }) {
@@ -168,7 +169,7 @@ function Button({
   let labelSize;
   let tintColor;
 
-  switch (type && type.toLowerCase()) {
+  switch (variant && variant.toLowerCase()) {
     case "success":
       buttonColor = "success80";
       fontColor = buttonColor;
@@ -246,7 +247,7 @@ function Button({
   }
 
   let iconSize = null;
-  if (vertical) iconSize = "lg";
+  if (vertical) iconSize = "md";
   else if (!label && !count) iconSize = "md";
 
   const columns =
@@ -287,6 +288,7 @@ function Button({
       round={round}
       solid={solid}
       tabIndex={disabled ? "-1" : "1"}
+      type={type}
       underlined={underlined}
     >
       {content}
@@ -307,7 +309,8 @@ Button.propTypes = {
   plain: PropTypes.bool,
   round: PropTypes.bool,
   solid: PropTypes.bool,
-  type: PropTypes.node,
+  type: PropTypes.oneOf(["button", "reset", "submit"]),
+  variant: PropTypes.oneOf(["action", "alert", "info", "success", "warning"]),
   underlined: PropTypes.bool,
   vertical: PropTypes.bool,
 
@@ -326,7 +329,8 @@ Button.defaultProps = {
   plain: null,
   round: null,
   solid: null,
-  type: null,
+  type: "button",
+  variant: null,
   underlined: null,
   vertical: null,
 };
