@@ -190,10 +190,10 @@ function Icon({
   rotation,
   size,
   spin,
-  type,
+  variant,
 }) {
   const iconValue = iconHash[icon.toLowerCase()] || ["far", icon.toLowerCase()];
-  let color = type ? colorHash[type.toLowerCase()] : null;
+  let color = variant ? colorHash[variant.toLowerCase()] : null;
   let content;
 
   const isDisabled =
@@ -205,7 +205,7 @@ function Icon({
   let _rotation = typeof rotation === "number" ? Math.round(rotation / 90) % 4 : null;
   _rotation = _rotation > 0 ? _rotation * 90 : null;
 
-  if (!type) {
+  if (!variant) {
     if (brand === "research") {
       color = "research";
     } if (brand === "bi") {
@@ -245,14 +245,14 @@ function Icon({
       content = (
         <IconWrapper>
           {styledIcon}
-          <Badge type={badge} />
+          <Badge variant={badge} />
         </IconWrapper>
       );
     } else {
       content = (
         <IconWrapper>
           {styledIcon}
-          <Badge type="alert" />
+          <Badge variant="alert" />
         </IconWrapper>
       );
     }
@@ -305,7 +305,7 @@ Icon.propTypes = {
   size: PropTypes.string,
   /** Smooth rotation */
   spin: PropTypes.bool,
-  type: PropTypes.string,
+  variant: PropTypes.string,
 };
 
 Icon.defaultProps = {
@@ -323,7 +323,7 @@ Icon.defaultProps = {
   rotation: null,
   size: null,
   spin: false,
-  type: null,
+  variant: null,
 };
 
 export default Icon;
