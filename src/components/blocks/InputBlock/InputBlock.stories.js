@@ -8,7 +8,7 @@ import InputBlock from "blocks/InputBlock";
 
 const button = {
   label: "Upload",
-  type: "",
+  variant: "",
   onClick: () => { },
   color: "",
   disabled: false,

@@ -199,7 +199,7 @@ function InputBlock({
     const buttonElement = (
       <Button
         label={button.label}
-        type={button.type}
+        variant={button.variant}
         onClick={(e) => { if (button.onClick) button.onClick(e, state); }}
         disabled={isDisabled || button.disabled}
       />
@@ -245,7 +245,7 @@ InputBlock.propTypes = {
     disabled: PropTypes.bool,
     label: PropTypes.string,
     onClick: PropTypes.func,
-    type: PropTypes.string,
+    variant: PropTypes.string,
   }),
   className: PropTypes.string,
   disabled: PropTypes.bool,
