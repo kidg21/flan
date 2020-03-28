@@ -16,7 +16,7 @@ function NewRoles({ id, columns, roles }) {
     <Panel id={uId}>
       <MainPanelHeader id={`${uId}_header`} title="Role Permissions" />
       <Bar
-        left={<TextInput id={`${uId}_search`} type="search" placeholder="Search for a Role" />}
+        left={<TextInput id={`${uId}_search`} placeholder="Search for a Role" />}
         right={<Button id={`${uId}_addRole`} label="+Add Role" />}
         leftWidth="30%"
       />

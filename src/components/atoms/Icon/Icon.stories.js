@@ -31,8 +31,8 @@
 //           "user_circle",
 //           "Icon",
 //         )}
-//         type={select(
-//           "type",
+//         variant={select(
+//           "variant",
 //           {
 //             info: "info",
 //             standard: "default",

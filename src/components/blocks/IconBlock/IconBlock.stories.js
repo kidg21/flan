@@ -23,7 +23,7 @@ const iconNames = [
   },
   {
     icon: "delete",
-    type: "alert",
+    variant: "alert",
   },
   {
     icon: "chat",
@@ -51,32 +51,32 @@ storiesOf("Blocks|Icon Block", module)
         </IconBlock>
         <IconBlock>
           <Icon icon="circle_solid" />
-          <Icon icon="circle_solid" type="info" />
+          <Icon icon="circle_solid" variant="info" />
         </IconBlock>
         <IconBlock>
           <Icon icon="circle_solid" />
-          <Icon icon="circle_solid" type="info" />
-          <Icon icon="circle_solid" type="success" />
+          <Icon icon="circle_solid" variant="info" />
+          <Icon icon="circle_solid" variant="success" />
         </IconBlock>
         <IconBlock>
           <Icon icon="circle_solid" />
-          <Icon icon="circle_solid" type="info" />
-          <Icon icon="circle_solid" type="success" />
-          <Icon icon="circle_solid" type="warning" />
+          <Icon icon="circle_solid" variant="info" />
+          <Icon icon="circle_solid" variant="success" />
+          <Icon icon="circle_solid" variant="warning" />
         </IconBlock>
         <IconBlock>
           <Icon icon="circle_solid" />
-          <Icon icon="circle_solid" type="info" />
-          <Icon icon="circle_solid" type="success" />
-          <Icon icon="circle_solid" type="warning" />
-          <Icon icon="circle_solid" type="alert" />
+          <Icon icon="circle_solid" variant="info" />
+          <Icon icon="circle_solid" variant="success" />
+          <Icon icon="circle_solid" variant="warning" />
+          <Icon icon="circle_solid" variant="alert" />
         </IconBlock>
         <IconBlock>
           <Icon icon="circle_solid" />
-          <Icon icon="circle_solid" type="info" />
-          <Icon icon="circle_solid" type="success" />
-          <Icon icon="circle_solid" type="warning" />
-          <Icon icon="circle_solid" type="alert" />
+          <Icon icon="circle_solid" variant="info" />
+          <Icon icon="circle_solid" variant="success" />
+          <Icon icon="circle_solid" variant="warning" />
+          <Icon icon="circle_solid" variant="alert" />
           <Icon icon="circle_solid" />
         </IconBlock>
       </Grid>

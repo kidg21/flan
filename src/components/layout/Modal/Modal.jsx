@@ -192,7 +192,7 @@ function Modal({
       <Fragment>
         <Image src={media} onClick={onClick} />
         <Close onClick={onClose}>
-          <Icon icon="close" type="inverse" size="lg" fixedWidth />
+          <Icon icon="close" variant="inverse" size="lg" fixedWidth />
         </Close>
       </Fragment>
     );

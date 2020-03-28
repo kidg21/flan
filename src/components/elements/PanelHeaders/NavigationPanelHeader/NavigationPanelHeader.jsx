@@ -23,7 +23,7 @@ function NavigationPanelHeader({
           content: <Title text={title} size="2x" weight="bold" />,
           align: "left",
         }}
-        right={<Menu data={menuData} position="bottomLeft" type="edit" />}
+        right={<Menu data={menuData} position="bottomLeft" />}
       />
     </React.Fragment>
   );

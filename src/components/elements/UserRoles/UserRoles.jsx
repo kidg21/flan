@@ -164,7 +164,7 @@ const UserRoles = React.forwardRef(({
     >
       {right ? <Bar right={right} /> : null}
       <Bar
-        left={<TextInput type="search" placeholder="Search for a User" onChange={filterUserName} inputStyle={{ boxSizing: "border-box" }} />}
+        left={<TextInput placeholder="Search for a User" onChange={filterUserName} inputStyle={{ boxSizing: "border-box" }} />}
         leftWidth={searchWidth}
         center={
           <SelectMenu
