@@ -16,7 +16,7 @@ import Button from "atoms/Button";
 const data = [
   {
     id: "a",
-    type: "success",
+    variant: "success",
     media: ModernExterior1,
     mediaDesc: "ModernExterior 1",
     icon: "bookmark_solid",
@@ -51,7 +51,7 @@ const data = [
   },
   {
     id: "b",
-    type: "alert",
+    variant: "alert",
     media: ModernExterior2,
     mediaDesc: "ModernExterior 2",
     label: "GP",
@@ -71,7 +71,7 @@ const data = [
   },
   {
     id: "c",
-    type: "info",
+    variant: "info",
     media: ModernExterior3,
     mediaDesc: "ModernExterior 3",
     icon: "home",
@@ -101,7 +101,7 @@ const data = [
       },
     ],
     more: {
-      content: <Button label="Button" type="solid" />,
+      content: <Button label="Button" variant="success" solid />,
     },
     onClick: action("Third Card Clicked"),
   },
@@ -115,7 +115,7 @@ storiesOf("Elements|Card", module)
     return (
       <Card
         // inverse
-        // type="info"
+        // variant="info"
         media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" // Image
         mediaDesc="Media Description"
         // media="https://www.w3schools.com/html/horse.mp3" // HTML5 Audio
@@ -154,7 +154,7 @@ storiesOf("Elements|Card", module)
             onClick: action("Command Five Clicked"),
           },
         ]}
-        more={{ content: <Button label="Button" type="solid" color="success" fullWidth /> }}
+        more={{ content: <Button label="Button" variant="success" solid fullWidth /> }}
         onClick={action("Primary Action Area Clicked")}
       />
     );
@@ -165,8 +165,8 @@ storiesOf("Elements|Card", module)
   .add("Knobs", () => {
     return (
       <Card
-        type={select(
-          "type",
+        variant={select(
+          "variant",
           {
             standard: null,
             info: "info",
@@ -225,7 +225,7 @@ storiesOf("Elements|Card", module)
           boolean("more", false, "Options") &&
           object(
             "extra content",
-            { content: [<Button label="Button" type="solid" color="success" fullWidth />] },
+            { content: [<Button label="Button" variant="success" solid fullWidth />] },
             "Options",
           )
         }

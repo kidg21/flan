@@ -20,7 +20,7 @@ import { DisableTransitionContext } from "States";
 import mime from "mime";
 
 const LinkedWrapper = styled.a`
-flex: auto;
+  flex: auto;
 `;
 
 const CardSectionWrapper = styled.section`
@@ -243,13 +243,13 @@ ExpandingSection.defaultProps = {
 };
 
 function CardSection({
-  children, className, footer, header, id, onClick, padding, type,
+  children, className, footer, header, id, onClick, padding, variant,
 }) {
   let sectionColor;
   let sectionBackground;
-  if (type) {
+  if (variant) {
     sectionColor = "inverse";
-    sectionBackground = type.toLowerCase();
+    sectionBackground = variant.toLowerCase();
   }
   let sectionPadding;
   const numPadding = padding ? parseInt(padding, 10) : NaN;
@@ -290,7 +290,7 @@ CardSection.propTypes = {
   id: PropTypes.string,
   padding: PropTypes.oneOf(["0", "1x", "2x", "3x", "4x"]),
   onClick: PropTypes.func,
-  type: PropTypes.string,
+  variant: PropTypes.oneOf(["info", "success", "warning", "alert"]),
 };
 CardSection.defaultProps = {
   children: null,
@@ -300,7 +300,7 @@ CardSection.defaultProps = {
   id: null,
   padding: null,
   onClick: null,
-  type: null,
+  variant: null,
 };
 
 function Card({
@@ -321,7 +321,7 @@ function Card({
   padding,
   shadow,
   title,
-  type,
+  variant,
 }) {
   let cardColor;
   let cardBackground;
@@ -383,7 +383,7 @@ function Card({
   let headerSection;
   if (title || description) {
     headerSection = (
-      <CardSection type={type} >
+      <CardSection variant={variant} >
         <Bar
           contentAlign="center"
           left={label || icon ? {
@@ -399,7 +399,7 @@ function Card({
     );
     if (more && more.content) {
       headerSection = (
-        <CardSection type={type} disableTransition={disableTransition}>
+        <CardSection variant={variant} disableTransition={disableTransition}>
           <ExpandingSection
             description={description}
             icon={icon}
@@ -497,9 +497,10 @@ function Card({
     if (commands.length >= 2) {
       commandElements = (
         <Bar
+          contentAlign="bottom"
           left={{
             content: (
-              <Grid columns="2">
+              <Grid>
                 <Command
                   label={commands[0].label}
                   onClick={commands[0].onClick}
@@ -525,6 +526,7 @@ function Card({
     } else if (commands.length === 1) {
       commandElements = (
         <Bar
+          contentAlign="bottom"
           left={
             <Command
               label={commands[0].label}
@@ -590,7 +592,7 @@ Card.propTypes = {
   padding: PropTypes.oneOf(["0", "1x", "2x", "3x", "4x"]),
   shadow: PropTypes.oneOf(["none", "1x", "2x"]),
   title: PropTypes.string,
-  type: PropTypes.string,
+  variant: PropTypes.oneOf(["info", "success", "warning", "alert"]),
 };
 Card.defaultProps = {
   body: null,
@@ -610,7 +612,7 @@ Card.defaultProps = {
   padding: null,
   shadow: null,
   title: null,
-  type: null,
+  variant: null,
 };
 
 function CardGrid({
@@ -641,7 +643,7 @@ function CardGrid({
               more={item.more}
               onClick={item.onClick}
               title={item.title}
-              type={item.type}
+              variant={item.variant}
             />
           );
         })}
