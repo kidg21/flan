@@ -2,7 +2,6 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { screen } from "Variables";
 import Grid from "layout/Grid";
 import Button from "atoms/Button";
 import Card, { CardSection } from "elements/Card";
@@ -13,9 +12,7 @@ const ButtonGrid = styled(Grid)`
 `;
 
 const DialogCard = styled(Card)`
-  width: ${(props) => {
-    return props.width || "100%";
-  }};
+  width: 100%;
 `;
 
 const ChildSection = styled(CardSection)`
@@ -36,21 +33,8 @@ function DialogBox({
   children,
   id,
   title,
-  width,
 }) {
-  const screenSmall = window.matchMedia(screen.small);
-  const screenMedium = window.matchMedia(screen.medium);
-  const screenLarge = window.matchMedia(screen.large);
-  let dialogWidth = width;
   let buttonElements = null;
-
-  if (!dialogWidth) {
-    if (screenLarge.matches || screenMedium.matches) {
-      dialogWidth = "40vw";
-    } else if (screenSmall.matches) {
-      dialogWidth = "90vw";
-    }
-  }
 
   if (buttons) {
     if (buttons.length === 2) {
@@ -62,7 +46,7 @@ function DialogBox({
             id={buttons[0].id}
             label={buttons[0].label}
             onClick={buttons[0].onClick}
-            type={buttons[0].type}
+            variant={buttons[0].variant}
           />
           <SecondaryButton
             disabled={buttons[1].disabled}
@@ -70,7 +54,7 @@ function DialogBox({
             label={buttons[1].label}
             onClick={buttons[1].onClick}
             solid
-            type={buttons[1].type}
+            variant={buttons[1].variant}
           />
         </ButtonGrid >);
     } else if (buttons.length === 1) {
@@ -80,7 +64,7 @@ function DialogBox({
           id={buttons[0].id}
           label={buttons[0].label}
           onClick={buttons[0].onClick}
-          type={buttons[0].type}
+          variant={buttons[0].variant}
         />
       );
     } else {
@@ -93,7 +77,7 @@ function DialogBox({
                 id={button.id}
                 label={button.label}
                 onClick={button.onClick}
-                type={button.type}
+                variant={button.variant}
               />);
             }
             return (<SecondaryButton
@@ -101,7 +85,7 @@ function DialogBox({
               id={button.id}
               label={button.label}
               onClick={button.onClick}
-              type={button.type}
+              variant={button.variant}
             />);
           })}
         </Grid>
@@ -114,7 +98,6 @@ function DialogBox({
       body={body}
       id={id}
       title={title}
-      width={dialogWidth}
     >
       {children ? <ChildSection>{children}</ChildSection> : null}
       {buttonElements ? <CardSection>{buttonElements}</CardSection> : null}
@@ -130,12 +113,11 @@ DialogBox.propTypes = {
     label: PropTypes.string,
     onClick: PropTypes.func,
     disabled: PropTypes.bool,
-    type: PropTypes.string,
+    variant: PropTypes.string,
   })),
   children: PropTypes.node,
   id: PropTypes.string,
   title: PropTypes.node,
-  width: PropTypes.string,
 };
 DialogBox.defaultProps = {
   body: null,
@@ -143,7 +125,6 @@ DialogBox.defaultProps = {
   children: null,
   id: null,
   title: null,
-  width: null,
 };
 
 export default DialogBox;

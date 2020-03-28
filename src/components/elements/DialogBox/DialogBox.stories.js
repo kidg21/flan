@@ -38,12 +38,12 @@ storiesOf("Elements|Dialog Box", module)
           {
             id: "Negative",
             label: "Negative",
-            type: "success",
+            variant: "success",
           },
           {
             id: "Affirmative",
             label: "Affirmative",
-            type: "success",
+            variant: "success",
           },
         ]}
       />
@@ -58,12 +58,12 @@ storiesOf("Elements|Dialog Box", module)
           {
             id: "Negative",
             label: "Negative",
-            type: "alert",
+            variant: "alert",
           },
           {
             id: "Affirmative",
             label: "Affirmative",
-            type: "alert",
+            variant: "alert",
           },
         ]}
       />
