@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React from "react";
 import PropTypes from "prop-types";
 import Text, { Title } from "base/Typography";
@@ -50,50 +51,52 @@ const DisplayGrid = (storyFn) => {
 };
 
 function IconGrid({ data }) {
-  return data.map(item => (
-    <Card
-      key={item.icon}
-      id={item.icon}
-      hover
-    // TODO: Add background props to Card
-    // type={item.background}
-    >
-      <CardSection>
-        <Bar
-          contentAlign="center"
-          left={{
-            content: <Icon
-              icon={item.icon}
-              type={item.type}
-              size={item.size || "2x"}
-              spin={item.spin}
-              pulse={item.pulse}
-              fixedWidth
-            />,
-            width: "min-content",
-          }}
-          center={{
-            content: (
-              <React.Fragment>
-                <Title text={item.name || item.icon} size="lg" select="all" />
-                <Text text={item.desc} />
-              </React.Fragment>
-            ),
-            align: "left",
-          }}
-        />
-      </CardSection>
-    </Card>
-  ));
+  return data.map((item) => {
+    return (
+      <Card
+        key={item.icon}
+        id={item.icon}
+        hover
+      >
+        <CardSection>
+          <Bar
+            contentAlign="center"
+            left={{
+              content: <Icon
+                icon={item.icon}
+                variant={item.variant}
+                size={item.size || "2x"}
+                spin={item.spin}
+                pulse={item.pulse}
+                fixedWidth
+              />,
+              width: "min-content",
+            }}
+            center={{
+              content: (
+                <React.Fragment>
+                  <Title text={item.name || item.icon} size="lg" select="all" />
+                  <Text text={item.desc} />
+                </React.Fragment>
+              ),
+              align: "left",
+            }}
+          />
+        </CardSection>
+      </Card>
+    );
+  });
 }
 
 function CommandGrid({ data }) {
-  return data.map(item => (
-    <Grid gap="tiny">
-      <Command command={item.command} />
-      <Text text={item.desc} />
-    </Grid>
-  ));
+  return data.map((item) => {
+    return (
+      <Grid gap="tiny">
+        <Command command={item.command} />
+        <Text text={item.desc} />
+      </Grid>
+    );
+  });
 }
 
 export { FullScreen, Center, Padding, Container, Spacer, DisplayGrid, IconGrid, CommandGrid };
