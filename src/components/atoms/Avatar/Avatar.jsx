@@ -16,6 +16,10 @@ const AvatarText = styled(Title)`
   font-weight: bold;
 `;
 
+const AvatarImage = styled(Image)`
+  height: inherit;
+`;
+
 const TagContainer = styled.div`
   justify-content: center;
   vertical-align: center;
@@ -41,25 +45,21 @@ const TagContainer = styled.div`
 `;
 
 const sizeHash = {
-  "4x": {
-    avatar: "5em",
-    font: "2.5em",
+  xs: {
+    avatar: "1.5em",
+    font: "0.5em",
   },
-  "3x": {
-    avatar: "4em",
-    font: "2em",
-  },
-  "2x": {
-    avatar: "3em",
-    font: "1.5em",
-  },
-  "1x": {
-    avatar: "2.5em",
-    font: "1em",
-  },
-  "sm": {
+  sm: {
     avatar: "2em",
-    font: "1em",
+    font: "0.75em",
+  },
+  lg: {
+    avatar: "3em",
+    font: "1.25em",
+  },
+  xl: {
+    avatar: "3.5em",
+    font: "1.5em",
   },
 };
 
@@ -93,10 +93,9 @@ function Avatar({
 
   if (media) {
     iconType = (
-      <Image
+      <AvatarImage
         alt={alt}
         circle
-        height={avatarSize}
         src={media}
         width={avatarSize}
       />
@@ -158,6 +157,7 @@ Avatar.propTypes = {
   id: PropTypes.string,
   label: PropTypes.string,
   onClick: PropTypes.node,
+  /** Options: 'xs',  'sm', 'lg', 'xl' */
   size: PropTypes.node,
   /** Options: 'action',  'info', 'success', 'warning', 'alert' */
   variant: PropTypes.string,
