@@ -261,10 +261,6 @@ function Button({
     }
   }
 
-  let iconSize = null;
-  if (vertical) iconSize = "md";
-  else if (!label && !count) iconSize = "md";
-
   const columns =
     count || icon ? `${!vertical && icon ? "max-content" : ""} 1fr ${count ? "max-content" : ""}` : "1fr";
 
@@ -276,7 +272,7 @@ function Button({
       rows={vertical ? "max-content 1fr" : null}
       vertical={vertical}
     >
-      {icon ? <Icon icon={icon} size={iconSize} /> : null}
+      {icon ? <Icon icon={icon} /> : null}
       {label ? <Text size="4x" weight="bold" text={label} /> : null}
       {count && !isDisabled ? <Tag label={count} /> : null}
     </LabelWrapper>

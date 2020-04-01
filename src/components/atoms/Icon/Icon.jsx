@@ -34,6 +34,9 @@ const LinkedIcon = styled.a`
 
 const StyledIcon = styled(FontAwesomeIcon)`
   position: relative;
+  font-size: ${(props) => {
+    return props.fontSize || "";
+  }};
   color: ${(props) => {
     return props.theme.palette[props.color] || "";
   }};
@@ -175,6 +178,30 @@ const colorHash = {
   inverse: "neutral20",
 };
 
+const sizeHash = {
+  xs: {
+    font: "0.75em",
+  },
+  sm: {
+    font: "0.875em",
+  },
+  lg: {
+    font: "1.35em",
+  },
+  xl: {
+    font: "1.5em",
+  },
+  xxl: {
+    font: "1.75em",
+  },
+  xxxl: {
+    font: "2em",
+  },
+  huge: {
+    font: "2.5em",
+  },
+};
+
 function Icon({
   badge,
   brand,
@@ -194,6 +221,8 @@ function Icon({
 }) {
   const iconValue = iconHash[icon.toLowerCase()] || ["far", icon.toLowerCase()];
   let color = variant ? colorHash[variant.toLowerCase()] : null;
+  const selectedSize = size && sizeHash[size.toLowerCase()];
+  const fontSize = selectedSize ? selectedSize.font : "inherit";
   let content;
 
   const isDisabled =
@@ -235,7 +264,7 @@ function Icon({
       id={id}
       pulse={pulse}
       rotation={_rotation}
-      size={size}
+      fontSize={fontSize}
       spin={spin}
     />
   );
@@ -300,7 +329,7 @@ Icon.propTypes = {
   /** Options: '90', '180', '270' */
   rotation: PropTypes.number,
   /** Icons inherit the 'font-size' of the parent container and are relatively sized.
-   * Options: 'xs', 'sm', 'lg', '2x', '3x', '4x', '5x', '6x', '7x', '8x', '9x', '10x'
+   * Options: 'xs', 'sm', 'lg', 'xl', 'xxl', 'xxxl', 'huge'
    */
   size: PropTypes.string,
   /** Smooth rotation */

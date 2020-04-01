@@ -65,7 +65,7 @@ function IconGrid({ data }) {
               content: <Icon
                 icon={item.icon}
                 variant={item.variant}
-                size={item.size || "2x"}
+                size={item.size || "xl"}
                 spin={item.spin}
                 pulse={item.pulse}
                 fixedWidth

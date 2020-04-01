@@ -16,7 +16,7 @@ function PropertyPanelHeader({
         padding="3x"
         contentAlign="center"
         left={{
-          content: <Icon icon="directions" size="2x" onClick={onClick} />,
+          content: <Icon icon="directions" size="lg" onClick={onClick} />,
           width: "min-content",
         }}
         center={{

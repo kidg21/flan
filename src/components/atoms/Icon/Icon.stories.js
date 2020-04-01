@@ -14,7 +14,7 @@
 //   .add(
 //     "Documentation",
 //     () => {
-//       return <Icon icon="user_circle" size="2x" />;
+//       return <Icon icon="user_circle" size="lg" />;
 //     })
 //   .add("Knobs", () => {
 //     return (

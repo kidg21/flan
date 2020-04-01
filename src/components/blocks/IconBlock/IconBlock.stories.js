@@ -85,12 +85,14 @@ storiesOf("Blocks|Icon Block", module)
   .add("Size", () => {
     return (
       <Grid columns="1" gap="large">
+        <IconBlock data={iconNames} size="xs" />
+        <IconBlock data={iconNames} size="sm" />
         <IconBlock data={iconNames} />
         <IconBlock data={iconNames} size="lg" />
-        <IconBlock data={iconNames} size="2x" />
-        <IconBlock data={iconNames} size="3x" />
-        <IconBlock data={iconNames} size="4x" />
-        <IconBlock data={iconNames} size="5x" />
+        <IconBlock data={iconNames} size="xl" />
+        <IconBlock data={iconNames} size="xxl" />
+        <IconBlock data={iconNames} size="xxxl" />
+        <IconBlock data={iconNames} size="huge" />
       </Grid>
     );
   });

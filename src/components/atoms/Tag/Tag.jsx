@@ -40,7 +40,7 @@ function Tag({
   let iconType;
 
   if (icon) {
-    iconType = <Icon icon={icon} size="2x" variant={variant} />;
+    iconType = <Icon icon={icon} size="xl" variant={variant} />;
     badgePadding = "0 0.25em";
   } else if (label) {
     labelType = <Text size="2x" weight="bold" text={label} />;

@@ -47,7 +47,7 @@ function Banner({
   const iconValue = icon || iconHash[variant && variant.toLowerCase()];
   if (iconValue) {
     bannerType = {
-      content: <Avatar variant={variant} icon={iconValue} size="2x" fixedWidth />,
+      content: <Avatar variant={variant} icon={iconValue} fixedWidth />,
       width: "max-content",
     };
   }

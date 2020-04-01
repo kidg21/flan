@@ -23,22 +23,22 @@ border: 1px solid;
 min-width: 12rem;
 border-radius: 4px;
 border-color: ${(props) => {
-  return ( props.theme.palette.neutral60
-  );
-}};
+    return (props.theme.palette.neutral60
+    );
+  }};
 &:hover {
   border-color: ${(props) => {
-  return (
-    props.theme.palette.selected
-  );
-}};
+    return (
+      props.theme.palette.selected
+    );
+  }};
   }
 &:selected {
   border-color: ${(props) => {
-  return (
-    props.theme.palette.selected
-  );
-}};
+    return (
+      props.theme.palette.selected
+    );
+  }};
 }
 }
 `;
@@ -55,10 +55,10 @@ font-family: ${(props) => { return props.theme.typography.primary; }};
   font-size: 0.90em;
   letter-spacing: 0.5px;
   color: ${(props) => {
-  return (
-    props.theme.text[props.placeholderColor] || props.theme.text.secondary
-  );
-}};
+    return (
+      props.theme.text[props.placeholderColor] || props.theme.text.secondary
+    );
+  }};
 }
 `;
 
@@ -80,30 +80,30 @@ function Search({
 
   const message = (
     <React.Fragment>
-      { msg !== errorHash.default ? <Bar padding="2x" center={<Icon icon="signal_none" size="3x" />} /> : null}
+      {msg !== errorHash.default ? <Bar padding="2x" center={<Icon icon="signal_none" size="huge" />} /> : null}
       <Bar padding="2x" center={<Text text={msg} />} />
     </React.Fragment>
   );
 
   const Body = (
     <React.Fragment>
-      { error ? <React.Fragment>{message}</React.Fragment> : null}
-      { results ? <ResultContainer results={results} /> : null}
+      {error ? <React.Fragment>{message}</React.Fragment> : null}
+      {results ? <ResultContainer results={results} /> : null}
     </React.Fragment>
   );
 
   return (
     <Grid columns="1" gap="tiny" id={id}>
-        <SearchContainer>
+      <SearchContainer>
         <NewTextInput
           id="my-search-bar"
           placeholder={placeholder}
           type="search"
         />
-          <Button icon="search" plain onClick={onSearch} />
-        </SearchContainer>
-        {/* <Button icon="more" plain /> */}
-      { error || results ? <DropContainer id="results-container" maxHeight="22rem" > { Body }</DropContainer>: null}
+        <Button icon="search" plain onClick={onSearch} />
+      </SearchContainer>
+      {/* <Button icon="more" plain /> */}
+      {error || results ? <DropContainer id="results-container" maxHeight="22rem" > {Body}</DropContainer> : null}
       {/* { advance ? <Advanced inputs={inputs} /> : null} */}
     </Grid>
   );

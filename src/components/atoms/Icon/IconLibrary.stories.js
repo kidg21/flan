@@ -19,7 +19,7 @@ export default {
 export const Standard = () => {
   return (
     <CardGrid columns="3">
-      <IconGrid data={iconsApp} size="10x" />
+      <IconGrid data={iconsApp} />
     </CardGrid>
   );
 };
