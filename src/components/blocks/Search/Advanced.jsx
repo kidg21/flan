@@ -19,7 +19,7 @@ position: fixed;
 
 function AdvancedSearch({ id, inputs }) {
   return (
-    <Grid columns="9fr .5fr " id={id}>
+    <Grid columns="9fr auto " id={id}>
       <DropContainer maxHeight="25rem" >
         <Form
           subtitle="Advanced Search"
@@ -28,7 +28,7 @@ function AdvancedSearch({ id, inputs }) {
           <React.Fragment>
             { inputs.map((item) => {
             return (
-              <Grid columns="9fr .5fr">
+              <Grid columns="9fr auto">
                 <TextInput
                   id={item.id}
                   label={item.label}
