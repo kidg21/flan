@@ -4,7 +4,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Icon from "atoms/Icon";
-import Text from "base/Typography";
+import { Label } from "base/Typography";
 
 const TagContainer = styled.div`
   justify-content: center;
@@ -43,9 +43,9 @@ function Tag({
     iconType = <Icon icon={icon} size="xl" variant={variant} />;
     badgePadding = "0 0.25em";
   } else if (label) {
-    labelType = <Text size="2x" weight="bold" text={label} />;
+    labelType = <Label size="xs" weight="bold" text={label} />;
     badgeTextColor = "inverse";
-    badgePadding = "0.25em .58em";
+    badgePadding = "0.2em .5em";
   } else {
     badgePadding = "0.35rem";
   }
