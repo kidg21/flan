@@ -71,38 +71,94 @@ const Paragraph = styled.p`
   letter-spacing: ${(props) => { return props.letterSpacing; }};
 `;
 
+function Text({
+  children, className, id, size, text, weight,
+}) {
+  const sizeHash = {
+    xs: {
+      fontSize: "0.65em",
+      letterSpacing: "0.6px",
+    },
+    sm: {
+      fontSize: "0.75em",
+      letterSpacing: "0.2px",
+    },
+    lg: {
+      fontSize: "1em",
+      letterSpacing: "0px",
+    },
+  };
+
+  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.95em", letterSpacing: "0px" };
+  const { fontSize, letterSpacing } = selectedSize;
+
+  const weightHash = {
+    light: 300,
+    bold: 600,
+  };
+
+  let fontWeight = parseInt(weight, 10);
+  if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 400;
+
+  return (
+    <Paragraph
+      className={className}
+      fontSize={fontSize}
+      fontWeight={fontWeight}
+      id={id}
+      letterSpacing={letterSpacing}
+    >
+      {text || children}
+    </Paragraph>
+  );
+}
+
+Text.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string,
+  id: PropTypes.string,
+  /** Options: 'xs', 'sm', 'lg' */
+  size: PropTypes.string,
+  text: PropTypes.string,
+  /** Options: 'light', 'bold' */
+  weight: PropTypes.string,
+};
+Text.defaultProps = {
+  children: null,
+  className: null,
+  id: null,
+  size: null,
+  text: null,
+  weight: null,
+};
 
 function Title({
   children, className, size, text, weight,
 }) {
   const sizeHash = {
-    "6x": {
-      fontSize: "2em",
-      as: "h1",
-    },
-    "5x": {
-      fontSize: "1.65em",
-      as: "h2",
-    },
-    "4x": {
-      fontSize: "1.45em",
-      as: "h3",
-    },
-    "3x": {
-      fontSize: "1.25em",
-      as: "h4",
-    },
-    "2x": {
+    lg: {
       fontSize: "1.15em",
       as: "h5",
     },
-    "1x": {
-      fontSize: "1.05em",
-      as: "h6",
+    xl: {
+      fontSize: "1.25em",
+      as: "h4",
+    },
+    xxl: {
+      fontSize: "1.45em",
+      as: "h3",
+    },
+    xxxl: {
+      fontSize: "1.65em",
+      as: "h2",
+    },
+    huge: {
+      fontSize: "2em",
+      as: "h1",
     },
   };
 
-  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "1.05em", as: "h6" };
+  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "1em", as: "h6" };
   const { fontSize, as } = selectedSize;
   const letterSpacing = "0px";
 
@@ -113,7 +169,6 @@ function Title({
 
   let fontWeight = parseInt(weight, 10);
   if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 400;
-
 
   return (
     <TitleText
@@ -128,42 +183,121 @@ function Title({
   );
 }
 
+Title.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string,
+  /** Options: 'lg', 'xl', 'xxl', 'xxxl', 'huge' */
+  size: PropTypes.string,
+  text: PropTypes.string,
+  /** Options: 'light', 'bold' */
+  weight: PropTypes.string,
+};
+Title.defaultProps = {
+  children: null,
+  className: null,
+  size: null,
+  text: null,
+  weight: null,
+};
+
+function Label({
+  children,
+  className,
+  htmlFor,
+  isRequired,
+  size,
+  text,
+  weight,
+}) {
+  const sizeHash = {
+    xs: {
+      fontSize: "0.65em",
+      letterSpacing: "0.6px",
+    },
+    sm: {
+      fontSize: "0.82em",
+      letterSpacing: "0px",
+    },
+    lg: {
+      fontSize: "1em",
+      letterSpacing: "0px",
+    },
+  };
+
+  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.876em", letterSpacing: "0px" };
+  const { fontSize, letterSpacing } = selectedSize;
+
+  const weightHash = {
+    light: 300,
+    bold: 600,
+  };
+
+  let fontWeight = parseInt(weight, 10);
+  if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 400;
+
+  return (
+    <StyledLabel
+      className={className}
+      fontSize={fontSize}
+      fontWeight={fontWeight}
+      htmlFor={htmlFor}
+      isRequired={isRequired}
+      letterSpacing={letterSpacing}
+    >
+      {text || children}
+    </StyledLabel>
+  );
+}
+
+Label.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string,
+  htmlFor: PropTypes.string,
+  isRequired: PropTypes.bool,
+  /** Options: 'xs', 'sm', 'lg' */
+  size: PropTypes.string,
+  text: PropTypes.string,
+  /** Options: 'light', 'bold' */
+  weight: PropTypes.string,
+};
+Label.defaultProps = {
+  children: null,
+  className: null,
+  htmlFor: null,
+  isRequired: false,
+  size: null,
+  text: null,
+  weight: null,
+};
 
 function Link({
   children, className, disabled, href, onClick, size, target, text, weight,
 }) {
   const sizeHash = {
-    "4x": {
-      fontSize: "1em",
-      letterSpacing: "0px",
-    },
-    "3x": {
-      fontSize: "0.9em",
-      letterSpacing: "0px",
-    },
-    "2x": {
-      fontSize: "0.75em",
+    lg: {
+      fontSize: "1.15em",
       letterSpacing: "0.2px",
     },
-    "1x": {
-      fontSize: "0.65em",
-      letterSpacing: "0.6px",
+    xl: {
+      fontSize: "1.25em",
+      letterSpacing: "0px",
+    },
+    xxl: {
+      fontSize: "1.45em",
+      letterSpacing: "0px",
     },
   };
 
   const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "inherit", letterSpacing: "0px" };
   const { fontSize, letterSpacing } = selectedSize;
 
-
   const weightHash = {
     light: 300,
     regular: 400,
-    bold: 600,
   };
 
   let fontWeight = parseInt(weight, 10);
   if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 600;
-
 
   return (
     <LinkText
@@ -181,170 +315,17 @@ function Link({
   );
 }
 
-
-function Text({
-  children, className, id, size, text, weight,
-}) {
-  const sizeHash = {
-    "4x": {
-      fontSize: "1em",
-      letterSpacing: "0px",
-    },
-    "3x": {
-      fontSize: "0.95em",
-      letterSpacing: "0px",
-    },
-    "2x": {
-      fontSize: "0.75em",
-      letterSpacing: "0.2px",
-    },
-    "1x": {
-      fontSize: "0.65em",
-      letterSpacing: "0.6px",
-    },
-  };
-
-  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.95em", letterSpacing: "0px" };
-  const { fontSize, letterSpacing } = selectedSize;
-
-  const weightHash = {
-    light: 300,
-    bold: 600,
-  };
-
-  let fontWeight = parseInt(weight, 10);
-  if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 400;
-
-
-  return (
-    <Paragraph
-      className={className}
-      fontSize={fontSize}
-      fontWeight={fontWeight}
-      id={id}
-      letterSpacing={letterSpacing}
-    >
-      {text || children}
-    </Paragraph>
-  );
-}
-
-
-function Label({
-  children,
-  className,
-  htmlFor,
-  isRequired,
-  size,
-  text,
-  weight,
-}) {
-  const sizeHash = {
-    "4x": {
-      fontSize: "1em",
-      letterSpacing: "0px",
-    },
-    "3x": {
-      fontSize: "0.876em",
-      letterSpacing: "0px",
-    },
-    "2x": {
-      fontSize: "0.82em",
-      letterSpacing: "0px",
-    },
-    "1x": {
-      fontSize: "0.65em",
-      letterSpacing: "0.6px",
-    },
-  };
-
-  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.876em", letterSpacing: "0px" };
-  const { fontSize, letterSpacing } = selectedSize;
-
-  const weightHash = {
-    light: 300,
-    bold: 600,
-  };
-
-  let fontWeight = parseInt(weight, 10);
-  if (isNaN(fontWeight)) fontWeight = weightHash[weight && weight.toLowerCase()] || 400;
-
-
-  return (
-    <StyledLabel
-      className={className}
-      fontSize={fontSize}
-      fontWeight={fontWeight}
-      htmlFor={htmlFor}
-      isRequired={isRequired}
-      letterSpacing={letterSpacing}
-    >
-      {text || children}
-    </StyledLabel>
-  );
-}
-Label.propTypes = {
-  children: PropTypes.node,
-  className: PropTypes.string,
-  htmlFor: PropTypes.string,
-  isRequired: PropTypes.bool,
-  size: PropTypes.string,
-  text: PropTypes.string,
-  weight: PropTypes.string,
-};
-Label.defaultProps = {
-  children: null,
-  className: null,
-  htmlFor: null,
-  isRequired: false,
-  size: null,
-  text: null,
-  weight: null,
-};
-
-Title.propTypes = {
-  children: PropTypes.node,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  text: PropTypes.string,
-  weight: PropTypes.string,
-};
-Title.defaultProps = {
-  children: null,
-  className: null,
-  size: null,
-  text: null,
-  weight: null,
-};
-
-
-Text.propTypes = {
-  children: PropTypes.node,
-  className: PropTypes.string,
-  id: PropTypes.string,
-  size: PropTypes.string,
-  text: PropTypes.string,
-  weight: PropTypes.string,
-};
-Text.defaultProps = {
-  children: null,
-  className: null,
-  id: null,
-  size: null,
-  text: null,
-  weight: null,
-};
-
-
 Link.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   disabled: PropTypes.bool,
   href: PropTypes.string,
   onClick: PropTypes.func,
+  /** Options: 'lg', 'xl', 'xxl' */
   size: PropTypes.string,
   target: PropTypes.string,
   text: PropTypes.string,
+  /** Options: 'light', 'regukar' */
   weight: PropTypes.string,
 };
 Link.defaultProps = {
@@ -358,6 +339,5 @@ Link.defaultProps = {
   text: null,
   weight: null,
 };
-
 
 export { Text as default, Title, Label, Link };
