@@ -47,7 +47,7 @@ const parseContent = (rawContent, fieldFilter, surfaceId, getCommandInstance) =>
         };
         if (parsedField.commandId) {
           const cmdObj = getCommandInstance(surfaceId, parsedField.commandId);
-          parsedField.onClick = cmdObj.exec;
+          parsedField.onClick = cmdObj ? cmdObj.exec : undefined;
         }
         return parsedField;
       });
