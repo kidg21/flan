@@ -32,17 +32,24 @@ const defaultFieldFilter = (pKey, val) => {
   return true;
 };
 
-const parseContent = (rawContent, fieldFilter, surfaceId) => {
+const parseContent = (rawContent, fieldFilter, surfaceId, getCommandInstance) => {
   const parsedSections = rawContent.sections.map((rawSection) => {
     // parse the raw display fields (values converted from template strings to literal values)
     let parsedDisplayFields = [];
-    if (rawSection.displayFields && rawSection.displayFields instanceof Array) {
+    if (rawSection.displayFields
+      && rawSection.displayFields instanceof Array
+      && rawSection.displayFields.length > 0) {
       // content has displayFields defined, then we will use those to  determine what key-val pairs to display
       parsedDisplayFields = rawSection.displayFields.map((rawDisplayField) => {
-        return {
+        const parsedField = {
           ...rawDisplayField,
           value: interpolate(rawDisplayField.value, rawSection.records),
         };
+        if (parsedField.commandId) {
+          const cmdObj = getCommandInstance(surfaceId, parsedField.commandId);
+          parsedField.onClick = cmdObj.exec;
+        }
+        return parsedField;
       });
     } else if (rawSection.records
       && rawSection.records instanceof Array
@@ -69,15 +76,17 @@ const parseContent = (rawContent, fieldFilter, surfaceId) => {
     if (rawSection.commands
       && rawSection.commands instanceof Array
       && rawSection.commands.length > 0) {
-      parsedCommands = rawSection.commands.map((rawCommand) => {
+      parsedCommands = rawSection.commands.map((cmdId) => {
         // not doing anything here right now, but later we may pass in Command components
         // or need to instantiate command objects here before passing into presentational template
-        const cmdName = rawCommand.getName();
+        const cmdObj = getCommandInstance(surfaceId, cmdId);
+        const cmdName = cmdObj.getName();
+        const cmdIcon = cmdObj.getIcon ? cmdObj.getIcon() : null;
         return {
-          id: `${surfaceId}-${rawSection.title}-${cmdName}`,
-          label: rawCommand.getName ? rawCommand.getName() : "",
-          onClick: rawCommand.execute,
-          icon: rawCommand.getIcon ? rawCommand.getIcon() : null, // TODO: implement this in our commands
+          id: cmdId,
+          label: cmdName,
+          onClick: cmdObj.exec,
+          icon: cmdIcon,
         };
       });
     }
@@ -98,12 +107,13 @@ const parseContent = (rawContent, fieldFilter, surfaceId) => {
 
 const Surface = ({
   surfaceTemplate: SurfaceTemplate,
+  getCommandInstance,
   content,
   fieldFilter,
   id,
 }) => {
   let output = null;
-  const parsedContent = parseContent(content, fieldFilter, id);
+  const parsedContent = parseContent(content, fieldFilter, id, getCommandInstance);
   if (typeof SurfaceTemplate === "function") {
     // Built-in template
     output = (<SurfaceTemplate content={parsedContent} />);
