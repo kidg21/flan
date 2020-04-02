@@ -6,7 +6,7 @@ import { Lighten } from "Variables";
 import { DisabledContext } from "States";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
-import Text from "base/Typography";
+import { Label } from "base/Typography";
 import Tag from "atoms/Tag";
 import Icon from "atoms/Icon";
 import { Skeleton } from "helpers";
@@ -273,7 +273,7 @@ function Button({
       vertical={vertical}
     >
       {icon ? <Icon icon={icon} /> : null}
-      {label ? <Text size="4x" weight="bold" text={label} /> : null}
+      {label ? <Label weight="bold" text={label} /> : null}
       {count && !isDisabled ? <Tag label={count} /> : null}
     </LabelWrapper>
   );
