@@ -3,6 +3,7 @@ import React, { Fragment, useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import Button from "atoms/Button";
+import { DisabledContext } from "States";
 
 const ControlButton = styled(Button)`
   margin: ${(props) => { return props.margin || "0 -1px -1px 0"; }};
@@ -19,7 +20,9 @@ const ControlsWrapper = styled.section`
   grid-gap: ${(props) => {
     return props.gap || "";
   }};
-  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  grid-template-columns: ${(props) => {
+    return props.setColumns || "repeat(auto-fit, minmax(0, 1fr))";
+  }};
   flex-direction: column;
   bottom: ${(props) => {
     return props.alignBottom || "";
@@ -34,48 +37,37 @@ const ControlsWrapper = styled.section`
     return props.setHeight || "100%";
   }};
   ${ControlButton}:first-child {
-    border-radius: 2rem 0 0 2rem;
-    }};
-  }
+    border-radius: ${(props) => { return props.vertical ? "2rem 2rem 0 0" : "2rem 0 0 2rem"; }}
+  };
   ${ControlButton}:last-child {
-    border-radius: 0 2rem 2rem 0;
-    }};
-  }
-
+    border-radius: ${(props) => { return props.vertical ? "0 0 2rem 2rem" : "0 2rem 2rem 0"; }}
+  };
 `;
 
 function Controls({
-  id, children, style, disabled,
+  id, children, style, vertical, disabled,
 }) {
-  let border;
-  let borderRadius;
-  let setPosition;
+  let setColumns;
   let setWidth;
-  let backgroundColor;
-  let fontColor;
   let setHeight;
-  let setOrientation;
-  let alignRight;
-  let alignBottom;
 
+  if (vertical) {
+    setColumns = "none";
+    setWidth = "auto";
+    setHeight = "100%";
+  }
 
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
 
   return (
     <ControlsWrapper
       id={id}
-      border={border}
-      borderRadius={borderRadius}
       disabled={isDisabled}
-      setPosition={setPosition}
-      backgroundColor={backgroundColor}
+      setColumns={setColumns}
       setWidth={setWidth}
       setHeight={setHeight}
-      setOrientation={setOrientation}
-      alignRight={alignRight}
-      alignBottom={alignBottom}
       style={style}
-      fontColor={fontColor}
+      vertical={vertical}
     >
       {children}
     </ControlsWrapper>
@@ -99,25 +91,26 @@ function Control({
           solid
         />
       ) : (
-          <ControlButton
-            id={id}
-            icon={icon}
-            size={size}
-            label={label}
-            onClick={onClick}
-            isSelected={isSelected}
-            type={type}
-          />
-        )}
+        <ControlButton
+          id={id}
+          icon={icon}
+          size={size}
+          label={label}
+          onClick={onClick}
+          isSelected={isSelected}
+          type={type}
+        />
+      )}
     </Fragment>
   );
 }
 
 Controls.propTypes = {
-  id: PropTypes.string,
   children: PropTypes.node,
-  style: PropTypes.string,
   disabled: PropTypes.bool,
+  id: PropTypes.string,
+  style: PropTypes.string,
+  vertical: PropTypes.bool,
 };
 
 Control.propTypes = {
@@ -131,14 +124,18 @@ Control.propTypes = {
 };
 
 Controls.defaultProps = {
+  children: null,
+  disabled: false,
   id: null,
   style: null,
-  disabled: false,
+  vertical: false,
 };
 
 Control.defaultProps = {
   id: null,
   icon: null,
+  label: null,
+  onClick: null,
   isSelected: false,
   type: null,
   size: null,

@@ -132,7 +132,15 @@ storiesOf("Blocks|Controls", module)
       </Controls>
     );
   })
-
+  .add("Vertical", () => {
+    return (
+      <Controls vertical>
+        <Control label="Control" />
+        <Control label="Control" />
+        <Control label="Control" />
+      </Controls>
+    );
+  })
   .add("Icon Controls", () => {
     return (
       <Controls>

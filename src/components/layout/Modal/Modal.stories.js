@@ -31,7 +31,7 @@ storiesOf("Layout|Modal", module)
           setVisible(false);
         };
         return (
-          <>
+          <React.Fragment>
             <Modal onClose={handleClose} visible={visible}>
               <Banner
                 title="This is a Standard notification telling you stuff."
@@ -43,10 +43,11 @@ storiesOf("Layout|Modal", module)
               style={{ marginLeft: "3rem" }}
               onClick={handleOpen}
             />
-          </>
+          </React.Fragment>
         );
       });
-    });
+    },
+  );
 
 storiesOf("Layout|Modal", module)
   .addDecorator(withKnobs)
@@ -61,36 +62,36 @@ storiesOf("Layout|Modal", module)
       };
       const buttonStyle = { margin: "10vh 30vw" };
       return (
-        <>
+        <React.Fragment>
           <Modal
             type={options(
               "Modal Type",
               {
                 default: "default",
                 text: "text",
-                image: "image"
+                image: "image",
               },
               "default",
               { display: "select" },
-              "Modal"
+              "Modal",
             )}
             text={text(
               "Text",
               "This is a very special message just for you...",
-              "Modal"
+              "Modal",
             )}
             image={text("Image URL", ModernExterior1, "Modal")}
             align={options(
               "Alignment",
               {
                 "default by type": "default",
-                top: "top",
-                center: "center",
-                bottom: "bottom"
+                "top": "top",
+                "center": "center",
+                "bottom": "bottom",
               },
               "default",
               { display: "radio" },
-              "Modal"
+              "Modal",
             )}
             onClose={handleClose}
             visible={visible}
@@ -99,7 +100,7 @@ storiesOf("Layout|Modal", module)
               title={text(
                 "Status Message",
                 "This is a Standard notification telling you stuff.",
-                "Modal"
+                "Modal",
               )}
               onClose={handleClose}
             />
@@ -113,7 +114,7 @@ storiesOf("Layout|Modal", module)
               />
             }
           />
-        </>
+        </React.Fragment>
       );
     });
   });
@@ -129,7 +130,7 @@ storiesOf("Layout|Modal", module)
       };
       const buttonStyle = { margin: "10vh 30vw" };
       return (
-        <>
+        <React.Fragment>
           <Modal onClose={handleClose} visible={visible}>
             <Banner
               title="This is a Standard notification telling you stuff."
@@ -144,9 +145,8 @@ storiesOf("Layout|Modal", module)
                 style={buttonStyle}
               />
             }
-          >
-          </Panel>
-        </>
+          />
+        </React.Fragment>
       );
     });
   })
@@ -161,7 +161,7 @@ storiesOf("Layout|Modal", module)
       };
       const buttonStyle = { margin: "10vh 30vw" };
       return (
-        <>
+        <React.Fragment>
           <Modal onClose={handleClose} visible={visible}>
             <DialogBox
               title="Default Dialog"
@@ -189,9 +189,8 @@ storiesOf("Layout|Modal", module)
                 style={buttonStyle}
               />
             }
-          >
-          </Panel>
-        </>
+          />
+        </React.Fragment>
       );
     });
   })
@@ -206,7 +205,7 @@ storiesOf("Layout|Modal", module)
       };
       const buttonStyle = { margin: "10vh 30vw" };
       return (
-        <>
+        <React.Fragment>
           <Modal
             type="text"
             text="This is a very special message just for you..."
@@ -222,7 +221,7 @@ storiesOf("Layout|Modal", module)
               />
             }
           />
-        </>
+        </React.Fragment>
       );
     });
   })
@@ -240,7 +239,7 @@ storiesOf("Layout|Modal", module)
       };
       const buttonStyle = { margin: "10vh 30vw" };
       return (
-        <>
+        <React.Fragment>
           <Modal
             type="image"
             image={ModernExterior1}
@@ -257,7 +256,7 @@ storiesOf("Layout|Modal", module)
               />
             }
           />
-        </>
+        </React.Fragment>
       );
     });
   });
