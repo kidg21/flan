@@ -114,7 +114,7 @@ function Slider({
         error={error}
       />
 
-      {withRange ? <Bar left={<Label weight="bold" text={min} />} right={<Label weight="bold" text={max} />} /> : null}
+      {withLabel || withRange ? <Bar left={<Label weight="bold" text={min} />} right={<Label weight="bold" text={max} />} /> : null}
     </Grid>
   );
 }
@@ -123,6 +123,7 @@ Slider.propTypes = {
   min: PropTypes.number,
   max: PropTypes.number,
   step: PropTypes.number,
+  /** Defaults to 'min' if no 'value' is set  */
   value: PropTypes.number,
   error: PropTypes.bool,
   id: PropTypes.string,
