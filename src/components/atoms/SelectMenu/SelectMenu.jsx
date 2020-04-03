@@ -63,7 +63,7 @@ const selectStyles = {
       ...styles,
       fontFamily: fonts.body,
       color: isFocused ? colors.grey50 : colors.grey50,
-      fontSize: "0.90em",
+      fontSize: "0.85em",
     };
   },
   // selected option
@@ -73,7 +73,7 @@ const selectStyles = {
       fontFamily: fonts.body,
       opacity: isDisabled ? 0.5 : 1,
       transition: "opacity 300ms",
-      fontSize: "0.90em",
+      fontSize: "0.85em",
     };
   },
   // 'X' to clear current selection
@@ -299,10 +299,10 @@ function SelectMenu({
       isRequired={isRequired}
       textColor={textColor}
     >
-      {label ? <Label size="2x" isRequired={isRequired} text={label} /> : null}
+      {label ? <Label weight="bold" isRequired={isRequired} text={label} /> : null}
       {select}
-      {helpText ? <Text size="1x" text={helpText} /> : null}
-      {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="1x" text={errorText || warning} /></MessageContainer> : null}
+      {helpText ? <Text size="sm" weight="bold" text={helpText} /> : null}
+      {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="sm" weight="bold" text={errorText || warning} /></MessageContainer> : null}
     </SelectMenuContainer>
   );
 }
