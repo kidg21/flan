@@ -10,19 +10,20 @@ import { getGuid } from "helpers";
 
 const TextInputContainer = styled(Grid)`
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || props.theme.text.secondary;
+    return props.theme.text[props.inputTextColor] || "";
   }};
   width: 100%;
 `;
 
 const MessageContainer = styled.section`
 color: ${(props) => {
-    return props.theme.text[props.messageColor] || props.theme.text.secondary;
+    return props.theme.text[props.messageColor] || "";
   }};
 `;
 
 const Input = styled.input`
   color: inherit;
+  font-weight: bold;
   border: 1px solid;
   font-family: ${(props) => { return props.theme.typography.primary; }};
   border-color: ${(props) => {
@@ -46,12 +47,13 @@ const Input = styled.input`
     return props.inputResize || "";
   }};
   ::placeholder {
-    font-weight: initial;
-    font-size: 0.90em;
+    font-size: 0.9rem;
+    font-weight: 400;
     letter-spacing: 0.5px;
+    /* TODO: placeholder color is being overridden by an !important tag.  Need to find. */
     color: ${(props) => {
     return (
-      props.theme.text[props.placeholderColor] || props.theme.text.secondary
+      props.theme.text[props.placeholderColor] || props.theme.text.warning
     );
   }};
   }
@@ -72,7 +74,7 @@ const Input = styled.input`
   }};
     ::selection {
       color: ${(props) => {
-    return props.theme.text.selected;
+    return props.theme.text.inverse;
   }};
       background-color: ${(props) => {
     return (
@@ -188,7 +190,7 @@ function TextInput({
       inputTextColor={inputTextColor}
     >
       {label ? (
-        <Label size="2x" isRequired={isRequired} text={label} />
+        <Label weight="bold" isRequired={isRequired} text={label} />
       ) : null}
       <Input
         as={as}
@@ -217,9 +219,9 @@ function TextInput({
         value={value}
       />
       {autocompleteDataList}
-      {helpText ? <Text size="1x" text={helpText} /> : null}
+      {helpText ? <Text size="sm" weight="bold" text={helpText} /> : null}
       {children}
-      {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="1x" text={errorText || warning} /></MessageContainer> : null}
+      {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="sm" weight="bold" text={errorText || warning} /></MessageContainer> : null}
     </TextInputContainer>
   );
 }
