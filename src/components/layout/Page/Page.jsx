@@ -50,7 +50,7 @@ function PageSection({
 }) {
   return (
     <Section id={id} classname={classname} columns="1" gap="small">
-      {title ? <Title weight="bold" text={title} /> : null}
+      {title ? <Title size="lg" text={title} /> : null}
       {children}
     </Section>
   );
@@ -81,13 +81,13 @@ function Page({
       {header ? (
         <Section columns="1" gap="tiny">
           {header.title ? (
-            <Title size="3x" weight="bold" text={header.title} />
+            <Title size="xl" weight="bold" text={header.title} />
           ) : null}
           {header.subtitle ? (
-            <Text size="3x" text={header.subtitle} />
+            <Text weight="light" text={header.subtitle} />
           ) : null}
           {header.description ? (
-            <Text size="2x" weight="bold" text={header.description} />
+            <Text size="sm" weight="bold" text={header.description} />
           ) : null}
         </Section>
       ) : null}
