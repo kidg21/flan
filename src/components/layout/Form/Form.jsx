@@ -23,13 +23,13 @@ const Header = styled(Grid)`
 
 const Section = styled.section`
   display: grid;
-  grid-gap: 1.25rem;
+  grid-gap: 1rem;
   margin-bottom: 1rem;
 `;
 function FormSection({ children, title }) {
   return (
     <Section>
-      {title ? <Title weight="bold" text={title} /> : null}
+      {title ? <Title size="lg" text={title} /> : null}
       {children}
     </Section>
   );
@@ -80,9 +80,9 @@ function Form({
     <FormWrapper action={action} id={id} method={method} novalidate={novalidate} onSubmit={onSubmit}>
       {title || subtitle || description ? (
         <Header columns="1" gap="tiny">
-          {title ? <Title size="2x" weight="bold" text={title} /> : null}
-          {subtitle ? <Text size="4x" text={subtitle} /> : null}
-          {description ? <Text size="2x" text={description} /> : null}
+          {title ? <Title size="xl" weight="bold" text={title} /> : null}
+          {subtitle ? <Text weight="light" text={subtitle} /> : null}
+          {description ? <Text size="sm" weight="bold" text={description} /> : null}
         </Header>
       ) : null}
       <Inputs setColumns={setColumns} gap="large">
