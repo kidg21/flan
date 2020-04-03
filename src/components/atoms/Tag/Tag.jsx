@@ -22,6 +22,7 @@ const TagContainer = styled.div`
   padding: ${(props) => {
     return props.badgePadding || "";
   }};
+  line-height: normal;
   border: ${(props) => {
     return `2px solid ${props.theme.text.inverse}`;
   }};
@@ -31,7 +32,7 @@ const TagContainer = styled.div`
 `;
 
 function Tag({
-  brand, icon, id, label, variant,
+  brand, className, icon, id, label, variant,
 }) {
   let badgeColor;
   let badgeTextColor;
@@ -94,6 +95,7 @@ function Tag({
       badgeColor={badgeColor}
       badgePadding={badgePadding}
       badgeTextColor={badgeTextColor}
+      className={className}
       icon={icon}
       id={id}
       label={label}
@@ -105,6 +107,7 @@ function Tag({
 
 Tag.propTypes = {
   brand: PropTypes.string,
+  className: PropTypes.string,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   id: PropTypes.string,
   label: PropTypes.string,
@@ -113,6 +116,7 @@ Tag.propTypes = {
 
 Tag.defaultProps = {
   brand: null,
+  className: null,
   icon: null,
   id: null,
   label: null,
