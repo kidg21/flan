@@ -13,7 +13,7 @@ function MainPanelHeader({
       <Bar
         contentAlign="center"
         padding="2x"
-        center={<Title text={title} size="2x" weight="bold" />}
+        left={<Title text={title} size="2x" weight="bold" />}
         right={menuData ? <Menu data={menuData} position="bottomLeft" type="edit" /> : null}
       />
     </React.Fragment>

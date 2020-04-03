@@ -14,7 +14,7 @@ exports[` 1`] = `
       onClick={null}
     >
       <div
-        className="Bar__Slot-sc-1c4axau-1 ekMqDX"
+        className="Bar__Slot-sc-1c4axau-1 hAjMjw"
       >
         <h5
           className="Typography__TitleText-sc-19auepv-2 bKCMpV"
@@ -41,7 +41,7 @@ exports[` 1`] = `
         >
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 iSYlIs"
+            className="TextInput__Input-sc-1fep8p8-2 jEGTSx"
             cols=""
             disabled={false}
             id="editRoles_search"
@@ -110,7 +110,7 @@ exports[` 2`] = `
       onClick={null}
     >
       <div
-        className="Bar__Slot-sc-1c4axau-1 ekMqDX"
+        className="Bar__Slot-sc-1c4axau-1 hAjMjw"
       >
         <h5
           className="Typography__TitleText-sc-19auepv-2 bKCMpV"
@@ -137,7 +137,7 @@ exports[` 2`] = `
         >
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 iSYlIs"
+            className="TextInput__Input-sc-1fep8p8-2 jEGTSx"
             cols=""
             disabled={false}
             id="editUsers_search"

@@ -1,34 +1,45 @@
 /* eslint-disable linebreak-style */
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import Grid from "layout/Grid";
+import Bar from "blocks/Bar";
+import Text from "base/Typography";
+import Tag from "atoms/Tag";
 import { Lighten, Darken } from "Variables";
 
+
 const SliderPiece = styled.input.attrs({ type: "range" })`
-  height: 1px;
-  background: ${(props) => {
-    return props.error ? props.theme.palette.alert60 : props.theme.palette.neutral80;
-  }};
+  height: 1.5em;
   outline: none;
   transition: opacity 0.2s;
+  &::-webkit-slider-runnable-track {
+    height: 1px;
+    background: ${(props) => {
+    return props.error ? props.theme.palette.alert60 : props.theme.palette.neutral80;
+  }};
+  }
   &::-webkit-slider-thumb {
     appearance: none;
-    width: 1.5em;
-    height: 1.5em;
+    width: 1em;
+    height: 1em;
     border: 1px solid;
     border-color: ${(props) => {
     return props.error ? props.theme.palette.alert60 : props.theme.palette.selected;
   }};
     border-radius: 50%;
+    margin-top: -.5em;
     background-color: ${(props) => {
     return props.error ? props.theme.palette.alert60 : props.theme.palette.selectedLight;
   }};
+  transition: 200ms;
     cursor: pointer;
     &:hover {
       ${Darken};
     }
     &:active {
       ${Lighten};
+
     }
   }
   &::-moz-range-track {
@@ -44,6 +55,7 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
   }
   &::-moz-range-thumb {
     -webkit-appearance: none;
+    content: "";
     appearance: none;
     width: 18px;
     height: 18px;
@@ -69,21 +81,68 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
   }
 `;
 
+
 function Slider({
-  disabled, error, id, onChange,
+  value: inputValue, onChange, disabled, error, id, max, min, step, withLabel, withRange,
 }) {
-  return <SliderPiece id={id} onChange={onChange} disabled={disabled} error={error} />;
+  let value = inputValue;
+  let setValue = onChange;
+  if (!setValue) {
+    [value, setValue] = useState(inputValue);
+  }
+
+  const leftValue = (`${((100 / max) * (value)) - 4.5}%`);
+
+  let tagType;
+
+  if (error) {
+    tagType = "alert";
+  } else {
+    "";
+  }
+
+  return (
+    <Grid columns="1" gap="none">
+      <SliderPiece
+        id={id}
+        max={max}
+        min={min}
+        value={value}
+        step={step}
+        onChange={(e) => {
+      setValue(e.target.value);
+    }}
+        disabled={disabled}
+        error={error}
+      />
+
+      { withRange ? <Bar left={<Text size="2x" weight="bold" text={min} />} right={<Text size="2x" weight="bold" text={max} />} /> : null }
+      { withLabel ? <Tag type={tagType} style={{ position: "relative", left: leftValue }} label={value} /> : null}
+    </Grid>
+  );
 }
 Slider.propTypes = {
   disabled: PropTypes.bool,
+  min: PropTypes.number,
+  max: PropTypes.number,
+  step: PropTypes.number,
+  value: PropTypes.number,
   error: PropTypes.bool,
   id: PropTypes.string,
+  withLabel: PropTypes.bool,
+  withRange: PropTypes.bool,
   onChange: PropTypes.func,
 };
 Slider.defaultProps = {
   disabled: false,
+  min: null,
+  max: null,
+  step: 1,
+  value: null,
   error: false,
   id: null,
+  withLabel: null,
+  withRange: null,
   onChange: null,
 };
 
