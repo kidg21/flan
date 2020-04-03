@@ -141,7 +141,7 @@ function Radio({
         tabIndex={tabIndex}
         value={value}
       />
-      {label ? <Label htmlFor={id} text={label} /> : null}
+      {label ? <Label weight="bold" htmlFor={id} text={label} /> : null}
     </RadioContainer>
   );
 }
@@ -178,9 +178,9 @@ function RadioGroup({
       id={id}
     >
       {label ? (
-        <Text weight="bold" isRequired={isRequired} text={label} />
+        <Label weight="bold" isRequired={isRequired} text={label} />
       ) : null}
-      {helpText ? <Text text={helpText} /> : null}
+      {helpText ? <Text size="sm" weight="bold" text={helpText} /> : null}
       <InputGroup columns={columns}>
         {children ||
           data.map((item) => {
@@ -199,7 +199,7 @@ function RadioGroup({
             );
           })}
       </InputGroup>
-      {errorText ? <Text text={errorText} /> : null}
+      {errorText ? <Text size="sm" weight="bold" text={errorText} /> : null}
     </RadioWrapper>
   );
 }
