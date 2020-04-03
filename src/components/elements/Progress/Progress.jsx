@@ -58,7 +58,7 @@ function Step({
   return (
     <StepItem id={id} success={success} isSelected={isSelected}>
       <ItemContainer>
-        <Title text={title} size="2x" weight="bold" />
+        <Title text={title} weight="bold" />
         {description ? <Text text={description} /> : null}
       </ItemContainer>
     </StepItem>
