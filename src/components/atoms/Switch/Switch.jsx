@@ -147,7 +147,9 @@ function Switch({
           disabled={isDisabled}
           htmlFor={id}
           onChange={onChange}
+          size="sm"
           text={label}
+          weight="bold"
         />
       ) : null}
     </SwitchContainer>
