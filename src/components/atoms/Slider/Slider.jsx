@@ -4,8 +4,7 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
 import Bar from "blocks/Bar";
-import Text from "base/Typography";
-import Tag from "atoms/Tag";
+import { Label } from "base/Typography";
 import { Lighten, Darken } from "Variables";
 
 
@@ -79,6 +78,14 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
   }
 `;
 
+const SliderLabel = styled(Label)`
+  position: relative;
+  left: ${(props) => {
+    return props.left || "";
+  }};
+  width: max-content;
+`;
+
 
 function Slider({
   value: inputValue, onChange, disabled, error, id, max, min, step, withLabel, withRange,
@@ -86,26 +93,19 @@ function Slider({
   let value = inputValue;
   let setValue = onChange;
   if (!setValue) {
-    [value, setValue] = useState(inputValue);
+    [value, setValue] = useState(inputValue || min);
   }
 
-  const leftValue = (`${((100 / max) * (value)) - 4.5}%`);
-
-  let tagType;
-
-  if (error) {
-    tagType = "alert";
-  } else {
-    "";
-  }
+  const leftValue = (`${((100 / max) * (value - min)) + ((2 * value) / max)}%`);
 
   return (
     <Grid columns="1" gap="none">
+      {withLabel ? <SliderLabel text={value || min} weight="bold" left={leftValue} /> : null}
       <SliderPiece
         id={id}
         max={max}
         min={min}
-        value={value}
+        value={value || min}
         step={step}
         onChange={(e) => {
           setValue(e.target.value);
@@ -114,8 +114,7 @@ function Slider({
         error={error}
       />
 
-      {withRange ? <Bar left={<Text size="2x" weight="bold" text={min} />} right={<Text size="2x" weight="bold" text={max} />} /> : null}
-      {withLabel ? <Tag variant={tagType} style={{ position: "relative", left: leftValue }} label={value} /> : null}
+      {withRange ? <Bar left={<Label weight="bold" text={min} />} right={<Label weight="bold" text={max} />} /> : null}
     </Grid>
   );
 }
