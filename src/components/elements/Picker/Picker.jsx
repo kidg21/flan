@@ -109,7 +109,7 @@ function Picker({
       id={uId}
     >
       {label ? (
-        <Label size="2x" text={label} />
+        <Label weight="bold" text={label} />
       ) : null}
       <Grid columns={columns} >
         {children}
