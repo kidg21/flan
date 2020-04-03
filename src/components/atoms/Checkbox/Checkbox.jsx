@@ -143,7 +143,7 @@ function Checkbox({
         outlineColor={outlineColor}
         tabIndex={tabIndex}
       />
-      {label ? <Label htmlFor={id} text={label} /> : null}
+      {label ? <Label weight="bold" htmlFor={id} text={label} /> : null}
     </CheckboxContainer>
   );
 }
@@ -181,9 +181,9 @@ function CheckboxGroup({
       inputTextColor={inputTextColor}
     >
       {label ? (
-        <Text weight="bold" isRequired={isRequired} text={label} />
+        <Label weight="bold" isRequired={isRequired} text={label} />
       ) : null}
-      {helpText ? <Text text={helpText} /> : null}
+      {helpText ? <Text size="sm" weight="bold" text={helpText} /> : null}
       <InputGroup columns={columns}>
         {children ||
           data.map((item) => {
@@ -204,7 +204,7 @@ function CheckboxGroup({
             );
           })}
       </InputGroup>
-      {errorText ? <Text text={errorText} /> : null}
+      {errorText ? <Text size="sm" weight="bold" text={errorText} /> : null}
     </CheckboxWrapper>
   );
 }
