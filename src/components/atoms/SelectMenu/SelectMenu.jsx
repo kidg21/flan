@@ -63,7 +63,7 @@ const selectStyles = {
       ...styles,
       fontFamily: fonts.body,
       color: isFocused ? colors.grey50 : colors.grey50,
-      fontSize: "0.85em",
+      fontSize: "0.90rem",
     };
   },
   // selected option
@@ -73,7 +73,7 @@ const selectStyles = {
       fontFamily: fonts.body,
       opacity: isDisabled ? 0.5 : 1,
       transition: "opacity 300ms",
-      fontSize: "0.85em",
+      fontSize: "0.90rem",
     };
   },
   // 'X' to clear current selection
