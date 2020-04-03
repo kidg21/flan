@@ -12,7 +12,7 @@ import { getGuid } from "helpers";
 
 const RangeContainer = styled(Grid)`
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || props.theme.text.primary;
+    return props.theme.text[props.inputTextColor] || "";
   }};
   &:last-child {
     margin-bottom: 1rem;
@@ -59,7 +59,7 @@ function DataRange({
       inputTextColor={inputTextColor}
     >
       {label ? (
-        <Label size="2x" isRequired={isRequired} text={label} />
+        <Label weight="bold" isRequired={isRequired} text={label} />
       ) : null}
       <Bar
         padding="none"
@@ -120,9 +120,9 @@ function DataRange({
             />)
         }
       />
-      {helpText ? <Text size="1x" text={helpText} /> : null}
+      {helpText ? <Text size="sm" weight="bold" text={helpText} /> : null}
       {typeof error === "string" && !isDisabled ? (
-        <Text size="1x" text={error} />
+        <Text size="sm" weight="bold" text={error} />
       ) : null}
     </RangeContainer>
   );
