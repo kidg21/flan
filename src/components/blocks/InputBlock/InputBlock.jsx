@@ -13,7 +13,7 @@ import Button from "atoms/Button";
 
 const TextInputContainer = styled(Grid)`
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || props.theme.text.primary;
+    return props.theme.text[props.inputTextColor] || "";
   }};
   align-items: center;
   width: 100%;
@@ -231,10 +231,12 @@ function InputBlock({
         prefix={prefix}
         text={text}
       >
-        {label ? <Label size="2x" isRequired={isRequired} text={label} /> : null}
+        {label ? (
+          <Label weight="bold" isRequired={isRequired} text={label} />
+        ) : null}
         {inputContainer}
-        {helpText ? <Text size="1x" text={helpText} /> : null}
-        {errorText ? <MessageContainer messageColor={messageColor}> <Text size="1x" text={errorText} /> </MessageContainer> : null}
+        {helpText ? <Text size="sm" weight="bold" text={helpText} /> : null}
+        {errorText ? <MessageContainer messageColor={messageColor}><Text size="sm" weight="bold" text={errorText} /></MessageContainer> : null}
       </TextInputContainer>
     </DisabledContext.Provider>
   );
