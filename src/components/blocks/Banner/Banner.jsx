@@ -61,8 +61,8 @@ function Banner({
         center={{
           content: (
             <Grid columns="1" gap="tiny">
-              <Title text={title} />
-              {description ? <Text size="2x" text={description} /> : null}
+              <Title size="lg" weight="bold" text={title} />
+              {description ? <Text size="sm" weight="bold" text={description} /> : null}
               {link ? (
                 <Link href={href} onClick={onClick} text={link} />
               ) : null}
