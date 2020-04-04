@@ -5,7 +5,6 @@ import Panel from "layout/Panel";
 import Table from "blocks/Table";
 import List, { ListItem } from "blocks/List";
 import Icon from "atoms/Icon";
-import Grid from "layout/Grid";
 import Search from "blocks/Search";
 import IconBlock from "blocks/IconBlock";
 import Text, { Title } from "base/Typography";
@@ -15,7 +14,7 @@ import Bar from "blocks/Bar";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
 import Card from "elements/Card";
 import Layout from "layout/Layout";
-import Page from "layout/Page";
+import Page, { PageSection } from "layout/Page";
 
 const LightBoxIcon = "static/media/LightBoxIconLogo.64993202.png";
 
@@ -67,29 +66,35 @@ const infoPanel = (
     id="Info Panel"
     header={infoCard}
   >
-    <Page>
-      <Title
-        size="2x"
-        text="Fascinating Read..."
-      />
-      <Text
-        text="In your imagination you can go anywhere you want. Let's put some happy little clouds in our world. We'll throw some old gray clouds in here just sneaking around and having fun. Let's do that again."
-      />
-      <Text
-        text="This is where you take out all your hostilities and frustrations. It's better than kicking the puppy dog around and all that so. Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. These things happen automatically. All you have to do is just let them happen. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. Only eight colors that you need."
-      />
-      <Text
-        text="You want your tree to have some character. Make it special. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. We spend so much of our life looking - but never seeing."
-      />
-      <Text
-        text="We'll throw some happy little limbs on this tree. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Painting should do one thing. It should put happiness in your heart. Think about a cloud. Just float around and be there. In this world, everything can be happy."
-      />
-      <Text
-        text="Nice little fluffy clouds laying around in the sky being lazy. You need to have a very firm paint to do this. You have to allow the paint to break to make it beautiful."
-      />
-      <Text
-        text="A little happy sunlight shining through there. We're not trying to teach you a thing to copy. We're just here to teach you a technique, then let you loose into the world. There's nothing wrong with having a tree as a friend."
-      />
+    <Page
+      header={{
+        title: "My Latest Musings",
+        subtitle: "Totally Worth The Read...Enjoy!",
+        description: "Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.",
+      }}
+    >
+      <PageSection title="Section 1">
+        <Text
+          text="In your imagination you can go anywhere you want. Let's put some happy little clouds in our world. We'll throw some old gray clouds in here just sneaking around and having fun. Let's do that again."
+        />
+        <Text
+          text="This is where you take out all your hostilities and frustrations. It's better than kicking the puppy dog around and all that so. Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. These things happen automatically. All you have to do is just let them happen. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. Only eight colors that you need."
+        />
+      </PageSection>
+      <PageSection title="Section 1">
+        <Text
+          text="You want your tree to have some character. Make it special. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. We spend so much of our life looking - but never seeing."
+        />
+        <Text
+          text="We'll throw some happy little limbs on this tree. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Painting should do one thing. It should put happiness in your heart. Think about a cloud. Just float around and be there. In this world, everything can be happy."
+        />
+        <Text
+          text="Nice little fluffy clouds laying around in the sky being lazy. You need to have a very firm paint to do this. You have to allow the paint to break to make it beautiful."
+        />
+        <Text
+          text="A little happy sunlight shining through there. We're not trying to teach you a thing to copy. We're just here to teach you a technique, then let you loose into the world. There's nothing wrong with having a tree as a friend."
+        />
+      </PageSection>
     </Page>
   </Panel>
 );
@@ -461,30 +466,30 @@ storiesOf("Layout|Layout/", module)
                   }}
                   center={{
                     content: (
-                      <Search placeholder="Search"/>
+                      <Search placeholder="Search" />
                     ),
                     align: "right",
-                
+
                   }}
                   right={{
                     content: (
                       <IconBlock>
-                       <Icon
-                        icon="list"
-                        onClick={seeRightRegion}
-                      />
-                       <Icon
-                        icon="calendar"
-                        onClick={seeRightRegion}
-                      />
                         <Icon
-                        icon="chat"
-                        onClick={seeRightRegion}
-                      />
-                      <Avatar
-                      label="LB"
-                      onClick={seeRightRegion}
-                      />
+                          icon="list"
+                          onClick={seeRightRegion}
+                        />
+                        <Icon
+                          icon="calendar"
+                          onClick={seeRightRegion}
+                        />
+                        <Icon
+                          icon="chat"
+                          onClick={seeRightRegion}
+                        />
+                        <Avatar
+                          label="LB"
+                          onClick={seeRightRegion}
+                        />
                       </IconBlock>
                     ),
                     width: "15%",

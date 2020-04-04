@@ -14,17 +14,15 @@ const image = (
 );
 const body = (
   <Fragment>
-    <Title size="h6" text="Media Block" />
-    <Text text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. " />
+    <Title size="lg" weight="bold" text="Media Block" />
+    <Text weight="light" text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. " />
   </Fragment>
 );
 const description = (
-  <Text text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy." />
+  <Text weight="light" text="In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy." />
 );
 
 storiesOf("Blocks|Media Block", module)
-  .addDecorator(withKnobs)
-  .addDecorator(DisplayGrid)
   .add(
     "Documentation",
     () => {
@@ -62,7 +60,10 @@ storiesOf("Blocks|Media Block", module)
         <MediaBlock media={image} body={body} />
       </MediaBlock>
     );
-  })
+  });
+
+storiesOf("Blocks|Media Block", module)
+  .addDecorator(DisplayGrid)
   .add("The Media Block Family", () => {
     return (
       <React.Fragment>
@@ -70,7 +71,7 @@ storiesOf("Blocks|Media Block", module)
           media={image}
           body={
             <Fragment>
-              <Title size="h6" text="Media Block" />
+              <Title size="lg" weight="bold" text="Media Block" />
               {description}
             </Fragment>
           }
@@ -79,7 +80,7 @@ storiesOf("Blocks|Media Block", module)
           media={image}
           body={
             <Fragment>
-              <Title size="h6" text="Media Block (reverse)" />
+              <Title size="lg" weight="bold" text="Media Block (reverse)" />
               {description}
             </Fragment>
           }
@@ -89,7 +90,7 @@ storiesOf("Blocks|Media Block", module)
           media={image}
           body={
             <Fragment>
-              <Title size="h6" text="Media Block - Vertical" />
+              <Title size="lg" weight="bold" text="Media Block - Vertical" />
               {description}
             </Fragment>
           }
@@ -99,7 +100,7 @@ storiesOf("Blocks|Media Block", module)
           media={image}
           body={
             <Fragment>
-              <Title size="h6" text="Media Block - Vertical (reverse)" />
+              <Title size="lg" weight="bold" text="Media Block - Vertical (reverse)" />
               {description}
             </Fragment>
           }
@@ -110,7 +111,7 @@ storiesOf("Blocks|Media Block", module)
           media={image}
           body={
             <Fragment>
-              <Title size="h6" text="Media Block - Inline" />
+              <Title size="lg" weight="bold" text="Media Block - Inline" />
               {description}
             </Fragment>
           }
@@ -120,7 +121,7 @@ storiesOf("Blocks|Media Block", module)
           media={image}
           body={
             <Fragment>
-              <Title size="h6" text="Media Block - Inline (reverse)" />
+              <Title size="lg" weight="bold" text="Media Block - Inline (reverse)" />
               {description}
             </Fragment>
           }

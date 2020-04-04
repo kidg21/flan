@@ -51,15 +51,10 @@
 //             "sm": "sm",
 //             "standard": "default",
 //             "lg": "lg",
-//             "2x": "2x",
-//             "3x": "3x",
-//             "4x": "4x",
-//             "5x": "5x",
-//             "6x": "6x",
-//             "7x": "7x",
-//             "8x": "8x",
-//             "9x": "9x",
-//             "10x": "10x",
+//             "xl": "xl",
+//             "xxl": "xxl",
+//             "xxxl": "xxxl",
+//             "huge": "huge",
 //           },
 //           "default",
 //           "Icon",
@@ -76,7 +71,7 @@
 //   .add("Type", () => {
 //     return (
 //       <Grid columns="1">
-//         <Title text="Icon Types" size="large" styling="underline" />
+//         <Title text="Icon Types" size="lg" styling="underline" />
 //         <Text text="Icons inherit the 'color' of the parent container but can be overridden." />
 //         <Text text="Available Props: default (no prop)', 'info', 'success', 'warning', 'alert'" />
 //         <CardGrid>
@@ -88,7 +83,7 @@
 //   .add("Size", () => {
 //     return (
 //       <Grid columns="1">
-//         <Title text="Icon Sizes" size="large" styling="underline" />
+//         <Title text="Icon Sizes" size="lg" styling="underline" />
 //         <Text text="Icons inherit the 'font-size' of the parent container and are relatively sized." />
 //         <Text text="Available Props: 'xs', 'sm', 'standard (no prop)', 'lg', '2x', '3x', '4x', '5x', '6x', '7x', '8x', '9x', '10x'" />
 //         <CardGrid>
