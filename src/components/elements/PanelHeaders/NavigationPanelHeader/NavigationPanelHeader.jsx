@@ -20,7 +20,7 @@ function NavigationPanelHeader({
           width: "min-content",
         }}
         center={{
-          content: <Title text={title} size="2x" weight="bold" />,
+          content: <Title text={title} size="lg" weight="bold" />,
           align: "left",
         }}
         right={<Menu data={menuData} position="bottomLeft" />}
