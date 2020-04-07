@@ -35,31 +35,41 @@ function Grid({
   // 'auto' by default with custom override
   const setRows = rows;
   // 'gutter' between grid items
+  const baseGap = 0.25;
   let setGap;
-  let alignItems;
   switch (gap) {
     case "0":
       setGap = "0";
       break;
     default:
-      setGap = "0.5rem";
+      setGap = `${baseGap}rem`;
       break;
     case "2x":
-      setGap = "1rem";
+      setGap = `${baseGap * 2}rem`;
       break;
     case "3x":
-      setGap = "1.5rem";
+      setGap = `${baseGap * 3}rem`;
       break;
     case "4x":
-      setGap = "2rem";
+      setGap = `${baseGap * 4}rem`;
       break;
     case "5x":
-      setGap = "2.5rem";
+      setGap = `${baseGap * 5}rem`;
       break;
     case "6x":
-      setGap = "3rem";
+      setGap = `${baseGap * 6}rem`;
+      break;
+    case "7x":
+      setGap = `${baseGap * 7}rem`;
+      break;
+    case "8x":
+      setGap = `${baseGap * 8}rem`;
+      break;
+    case "9x":
+      setGap = `${baseGap * 9}rem`;
       break;
   }
+  let alignItems;
   switch (align) {
     case "center":
       alignItems = "center";
@@ -105,6 +115,9 @@ Grid.propTypes = {
       "4x",
       "5x",
       "6x",
+      "7x",
+      "8x",
+      "9x",
     ]),
   ]),
   id: PropTypes.string,
