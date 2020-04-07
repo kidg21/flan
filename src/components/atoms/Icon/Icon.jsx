@@ -145,6 +145,7 @@ const iconHash = {
   print: ["far", "print"],
   redo: ["far", "redo-alt"],
   report: ["far", "file-alt"],
+  rfp: "hand-holding-usd",
   save: ["far", "save"],
   scroll_top: ["far", "caret-square-up"],
   search: ["far", "search"],
