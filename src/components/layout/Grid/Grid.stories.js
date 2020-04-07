@@ -100,7 +100,7 @@ storiesOf("Layout|Grid/", module)
   })
   .add("Custom Grid", () => {
     return (
-      <Grid columns="5fr 2fr 1fr 5fr 1fr" rows="100px 3fr 1fr">
+      <Grid columns="5fr 2fr 1fr 5fr 1fr" rows="100px 3fr 1fr" gap="4">
         <Card />
         <Card />
         <Card />
