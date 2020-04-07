@@ -51,11 +51,12 @@ const SectionWrapper = styled.section`
 `;
 
 function PanelBody({
-  children, className,
+  children, className, id,
 }) {
   return (
     <SectionWrapper
       className={className}
+      id={id}
     >
       {children}
     </SectionWrapper>
@@ -65,10 +66,12 @@ function PanelBody({
 PanelBody.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
+  id: PropTypes.string,
 };
 PanelBody.defaultProps = {
   children: null,
   className: null,
+  id: null,
 };
 
 const PanelSection = styled(PanelBody)`
@@ -97,9 +100,9 @@ function Panel({
     <PanelWrapper
       id={id}
     >
-      {header ? <PanelSection>{header}</PanelSection> : null}
-      <PanelBody>{children}</PanelBody>
-      {footer ? <PanelSection>{footer}</PanelSection> : null}
+      {header ? <PanelSection id={id ? `${id}_header` : null}>{header}</PanelSection> : null}
+      <PanelBody id={id ? `${id}_body` : null}>{children}</PanelBody>
+      {footer ? <PanelSection id={id ? `${id}_footer` : null}>{footer}</PanelSection> : null}
     </PanelWrapper>
   );
 }

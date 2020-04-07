@@ -17,6 +17,9 @@ const Header = styled(Flex)`
   box-shadow: ${(props) => {
     return props.theme.shadows.outerShadow;
   }};
+  margin: ${(props) => {
+    return props.margin;
+  }};
   &:empty {
     &:before {
       ${PlaceholderText};
@@ -32,6 +35,9 @@ const Footer = styled(Flex)`
   flex: none;
   box-shadow: ${(props) => {
     return props.theme.shadows.outerShadow;
+  }};
+  margin: ${(props) => {
+    return props.margin;
   }};
   &:empty {
     &:before {
@@ -86,6 +92,9 @@ const WrapperMain = styled(Flex)`
   position: absolute;
   left: ${(props) => {
     return props.mainLeft || "";
+  }};
+  margin: ${(props) => {
+    return props.margin;
   }};
   width: ${(props) => {
     return props.mainWidth || "";
@@ -311,10 +320,11 @@ function Layout({
   } */
 
   return (
-    <WrapperOuter id={id} >
+    <WrapperOuter id={id}>
       {header ? (
         <Header
           id={header.id}
+          margin={header.margin}
           zIndex={zIndex}
         >
           {header.content}
@@ -331,7 +341,7 @@ function Layout({
             {left.content}
           </RegionLeft>
         ) : null}
-        <WrapperMain height={bottomHeight} left={mainLeft} width={mainWidth}>
+        <WrapperMain height={bottomHeight} left={mainLeft} margin={main.margin} width={mainWidth}>
           <RegionCenter bottom={bottomOpen ? bottomHeight : "0"} id={main.id}>
             {main.content}
           </RegionCenter>
@@ -343,7 +353,8 @@ function Layout({
               zIndex={zIndex}
             >
               {bottom.content}
-            </RegionBottom>) : null}
+            </RegionBottom>
+          ) : null}
         </WrapperMain>
         {right ? (
           <RegionRight
@@ -359,6 +370,7 @@ function Layout({
       {footer ? (
         <Footer
           id={footer.id}
+          margin={footer.margin}
           zIndex={zIndex}
         >
           {footer.content}
@@ -373,29 +385,32 @@ Layout.propTypes = {
   header: PropTypes.shape({
     content: PropTypes.node,
     id: PropTypes.string,
+    margin: PropTypes.string,
   }),
   left: PropTypes.shape({
-    content: PropTypes.node.isRequired,
+    content: PropTypes.node,
     id: PropTypes.string,
-    visible: PropTypes.string,
+    visible: PropTypes.bool,
   }),
   main: PropTypes.shape({
     content: PropTypes.node.isRequired,
     id: PropTypes.string,
+    margin: PropTypes.string,
   }),
   bottom: PropTypes.shape({
-    content: PropTypes.node.isRequired,
+    content: PropTypes.node,
     id: PropTypes.string,
-    visible: PropTypes.string,
+    visible: PropTypes.bool,
   }),
   right: PropTypes.shape({
-    content: PropTypes.node.isRequired,
+    content: PropTypes.node,
     id: PropTypes.string,
-    visible: PropTypes.string,
+    visible: PropTypes.bool,
   }),
   footer: PropTypes.shape({
-    content: PropTypes.node.isRequired,
+    content: PropTypes.node,
     id: PropTypes.string,
+    margin: PropTypes.string,
   }),
 };
 
