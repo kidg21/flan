@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 const GridWrapper = styled.section`
   display: grid;
   grid-gap: ${(props) => {
-    return props.gap || "1rem";
+    return props.gap || "";
   }};
   grid-template-columns: ${(props) => {
     return props.columns || "repeat(auto-fill, minmax(18rem, 1fr))";
@@ -38,27 +38,26 @@ function Grid({
   let setGap;
   let alignItems;
   switch (gap) {
-    case "none":
+    case "0":
       setGap = "0";
       break;
-    case "tiny":
-      setGap = ".25rem";
+    default:
+      setGap = "0.5rem";
       break;
-    case "small":
-      setGap = ".75rem";
+    case "2x":
+      setGap = "1rem";
       break;
-    case "large":
+    case "3x":
       setGap = "1.5rem";
       break;
-    case "xlarge":
+    case "4x":
       setGap = "2rem";
       break;
-    case "xxlarge":
-      setGap = "3rem";
+    case "5x":
+      setGap = "2.5rem";
       break;
-    default:
-    case "normal":
-      setGap = gap;
+    case "6x":
+      setGap = "3rem";
       break;
   }
   switch (align) {
@@ -96,21 +95,16 @@ Grid.propTypes = {
    * Options: 1-12 or any standard value accepted by the CSS Grid property, 'grid-template-columns'.
    */
   columns: PropTypes.string,
-  /** Sets the 'gutter' between grid items
-   *
-   * Options: Any switch case or any standard value accepted by the CSS Grid property, 'grid-gap'.
-   */
+  /** Sets the 'gutter' between grid items */
   gap: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.oneOf([
-      "none",
-      "tiny",
-      "small",
-      "default (normal)",
-      "large",
-      "xlarge",
-      "xxlarge",
-      "[grid-template-rows]",
+      "0",
+      "2x",
+      "3x",
+      "4x",
+      "5x",
+      "6x",
     ]),
   ]),
   id: PropTypes.string,

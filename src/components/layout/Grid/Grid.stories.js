@@ -49,13 +49,13 @@ storiesOf("Layout|Grid/", module)
         gap={options(
           "grid gap",
           {
-            "no gap": "none",
-            "tiny": "tiny",
-            "small": "small",
-            "normal (default)": "",
-            "large": "large",
-            "xlarge": "xlarge",
-            "xxlarge": "xxlarge",
+            "0": "0",
+            "default": "",
+            "2x": "2x",
+            "3x": "3x",
+            "4x": "4x",
+            "5x": "5x",
+            "6x": "6x",
           },
           "",
           { display: "select" },
@@ -97,7 +97,7 @@ storiesOf("Layout|Grid/", module)
   })
   .add("Custom Grid", () => {
     return (
-      <Grid gap="xxlarge" columns="5fr 2fr 1fr 5fr 1fr" rows="100px 3fr 1fr">
+      <Grid columns="5fr 2fr 1fr 5fr 1fr" rows="100px 3fr 1fr">
         <Card />
         <Card />
         <Card />
