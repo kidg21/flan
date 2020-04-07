@@ -256,7 +256,7 @@ function CardSection({
   if (padding && padding.toLowerCase() === "0") {
     sectionPadding = "0";
   } else if (!isNaN(numPadding) && numPadding < 5) {
-    sectionPadding = `${0.25 * numPadding}em 1em`;
+    sectionPadding = `${0.5 * numPadding}em 1em`;
   }
   let sectionJustify;
   if (header) {
@@ -288,7 +288,7 @@ CardSection.propTypes = {
   footer: PropTypes.node,
   header: PropTypes.node,
   id: PropTypes.string,
-  padding: PropTypes.oneOf(["0", "1x", "2x", "3x", "4x"]),
+  padding: PropTypes.oneOf(["0", "2x", "3x", "4x"]),
   onClick: PropTypes.func,
   variant: PropTypes.oneOf(["info", "success", "warning", "alert"]),
 };
@@ -589,7 +589,7 @@ Card.propTypes = {
     onToggle: PropTypes.func,
   }),
   onClick: PropTypes.func,
-  padding: PropTypes.oneOf(["0", "1x", "2x", "3x", "4x"]),
+  padding: PropTypes.oneOf(["0", "2x", "3x", "4x"]),
   shadow: PropTypes.oneOf(["none", "1x", "2x"]),
   title: PropTypes.string,
   variant: PropTypes.oneOf(["info", "success", "warning", "alert"]),
@@ -622,7 +622,7 @@ function CardGrid({
     <CardGridWrapper
       className={className}
       columns={columns}
-      gap={gap || "2x"}
+      gap={gap || "4x"}
       id={id}
       rows={rows}
     >
