@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
-import Bar from "blocks/Bar";
+import Bar from "layout/Bar";
 import { Label } from "base/Typography";
 import { Lighten, Darken } from "Variables";
 
@@ -114,7 +114,7 @@ function Slider({
         error={error}
       />
 
-      {withLabel || withRange ? <Bar left={<Label weight="bold" text={min} />} right={<Label weight="bold" text={max} />} /> : null}
+      {withLabel || withRange ? <Bar padding="0" left={<Label weight="bold" text={min} />} right={<Label weight="bold" text={max} />} /> : null}
     </Grid>
   );
 }

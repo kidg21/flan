@@ -2,7 +2,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
-import Bar from "blocks/Bar";
+import Bar from "layout/Bar";
 import { Title } from "base/Typography";
 import Menu from "blocks/Menu";
 
@@ -13,7 +13,6 @@ function PropertyPanelHeader({
   return (
     <React.Fragment id={id}>
       <Bar
-        padding="3x"
         contentAlign="center"
         left={{
           content: <Icon icon="directions" size="lg" onClick={onClick} />,

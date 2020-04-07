@@ -2,7 +2,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
-import Bar from "blocks/Bar";
+import Bar from "layout/Bar";
 import { Title } from "base/Typography";
 import Menu from "blocks/Menu";
 
@@ -14,7 +14,6 @@ function NavigationPanelHeader({
     <React.Fragment id={id}>
       <Bar
         contentAlign="center"
-        padding="3x"
         left={{
           content: <Icon icon="left" onClick={onClick} />,
           width: "min-content",

@@ -10,7 +10,7 @@ import IconBlock from "blocks/IconBlock";
 import Text, { Title } from "base/Typography";
 import Avatar from "atoms/Avatar";
 import Command from "atoms/Command";
-import Bar from "blocks/Bar";
+import Bar from "layout/Bar";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
 import Card from "elements/Card";
 import Layout from "layout/Layout";

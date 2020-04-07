@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { DisabledContext } from "States";
-import Bar from "blocks/Bar";
+import Bar from "layout/Bar";
 import Text, { Label } from "base/Typography";
 import Grid from "layout/Grid";
 import TextInput from "atoms/TextInput";
@@ -61,7 +61,7 @@ function DataRange({
         <Label weight="bold" isRequired={isRequired} text={label} />
       ) : null}
       <Bar
-        padding="none"
+        padding="0"
         contentAlign="bottom"
         left={
           min.options ? (

@@ -7,7 +7,7 @@ import Icon from "atoms/Icon";
 import IconBlock from "blocks/IconBlock";
 import Command from "atoms/Command";
 import Text, { Title } from "base/Typography";
-import Bar from "blocks/Bar";
+import Bar from "layout/Bar";
 
 const shortTitle = <Title text="A Standard Title" />;
 const longTitle = (
@@ -20,7 +20,7 @@ const multipleLines = (
   </Fragment>
 );
 
-storiesOf("Blocks|Bar", module)
+storiesOf("Layout|Bar", module)
 
   .addDecorator(Padding)
   .addDecorator(withKnobs)

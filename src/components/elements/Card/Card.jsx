@@ -8,7 +8,7 @@ import { PlaceholderText } from "helpers/Placeholders.jsx";
 import { Spacer } from "helpers/Display.jsx";
 import { Darken } from "Variables";
 import Grid from "layout/Grid";
-import Bar from "blocks/Bar";
+import Bar from "layout/Bar";
 import Text, { Title } from "base/Typography";
 import Icon from "atoms/Icon";
 import Command from "atoms/Command";
@@ -195,6 +195,7 @@ function ExpandingSection({
       header={
         title || description || label || icon ? (
           <Bar
+            padding="0"
             contentAlign="center"
             left={label || icon ? {
               content: <Avatar label={label} icon={icon} />,
@@ -385,6 +386,7 @@ function Card({
     headerSection = (
       <CardSection variant={variant} >
         <Bar
+          padding="0"
           contentAlign="center"
           left={label || icon ? {
             content: <Avatar label={label} icon={icon} />,
@@ -497,6 +499,7 @@ function Card({
     if (commands.length >= 2) {
       commandElements = (
         <Bar
+          padding="0"
           contentAlign="bottom"
           left={{
             content: (
@@ -526,6 +529,7 @@ function Card({
     } else if (commands.length === 1) {
       commandElements = (
         <Bar
+          padding="0"
           contentAlign="bottom"
           left={
             <Command

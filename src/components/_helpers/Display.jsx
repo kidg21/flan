@@ -2,7 +2,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Text, { Title } from "base/Typography";
-import Bar from "blocks/Bar";
+import Bar from "layout/Bar";
 import Card, { CardSection } from "elements/Card";
 import Grid from "layout/Grid";
 import Icon from "atoms/Icon";
@@ -58,31 +58,29 @@ function IconGrid({ data }) {
         id={item.icon}
         hover
       >
-        <CardSection>
-          <Bar
-            contentAlign="center"
-            left={{
-              content: <Icon
-                icon={item.icon}
-                variant={item.variant}
-                size={item.size || "xl"}
-                spin={item.spin}
-                pulse={item.pulse}
-                fixedWidth
-              />,
-              width: "min-content",
-            }}
-            center={{
-              content: (
-                <React.Fragment>
-                  <Title text={item.name || item.icon} size="lg" select="all" />
-                  <Text text={item.desc} />
-                </React.Fragment>
-              ),
-              align: "left",
-            }}
-          />
-        </CardSection>
+        <Bar
+          contentAlign="center"
+          left={{
+            content: <Icon
+              icon={item.icon}
+              variant={item.variant}
+              size={item.size || "xl"}
+              spin={item.spin}
+              pulse={item.pulse}
+              fixedWidth
+            />,
+            width: "min-content",
+          }}
+          center={{
+            content: (
+              <React.Fragment>
+                <Title text={item.name || item.icon} size="lg" select="all" />
+                <Text text={item.desc} />
+              </React.Fragment>
+            ),
+            align: "left",
+          }}
+        />
       </Card>
     );
   });

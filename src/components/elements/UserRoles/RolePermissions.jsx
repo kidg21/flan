@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
-import Bar from "blocks/Bar";
+import Bar from "layout/Bar";
 import Container from "atoms/Container";
 import Panel from "layout/Panel";
 import TextInput from "atoms/TextInput";

@@ -3,7 +3,7 @@ import { withKnobs, label, boolean, select } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
-import Bar from "blocks/Bar";
+import Bar from "layout/Bar";
 import Form, { FormSection } from "layout/Form";
 import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
 import Icon from "atoms/Icon";
@@ -79,38 +79,36 @@ A Checkbox may appear to the left or right of it's corresponding label. A Checkb
 
 <Preview>
   <Story name="Checkbox Group">
-    <Grid>
-      <Form>
-        <FormSection title="Checkbox Group (2 Columns)">
-          <CheckboxGroup columns="2">
-            <Checkbox
-              id="Checkbox-1"
-              name="Checkbox-group"
-              value="1"
-              label="Checkbox 1"
-            />
-            <Checkbox
-              id="Checkbox-2"
-              name="Checkbox-group"
-              value="2"
-              label="Checkbox 2"
-            />
-            <Checkbox
-              id="Checkbox-3"
-              name="Checkbox-group"
-              value="3"
-              label="Checkbox 3"
-            />
-            <Checkbox
-              id="Checkbox-4"
-              name="Checkbox-group"
-              value="4"
-              label="Checkbox 4"
-            />
-          </CheckboxGroup>
-        </FormSection>
-      </Form>
-    </Grid>
+    <Form>
+      <FormSection title="Checkbox Group (2 Columns)">
+        <CheckboxGroup columns="2">
+          <Checkbox
+            id="Checkbox-1"
+            name="Checkbox-group"
+            value="1"
+            label="Checkbox 1"
+          />
+          <Checkbox
+            id="Checkbox-2"
+            name="Checkbox-group"
+            value="2"
+            label="Checkbox 2"
+          />
+          <Checkbox
+            id="Checkbox-3"
+            name="Checkbox-group"
+            value="3"
+            label="Checkbox 3"
+          />
+          <Checkbox
+            id="Checkbox-4"
+            name="Checkbox-group"
+            value="4"
+            label="Checkbox 4"
+          />
+        </CheckboxGroup>
+      </FormSection>
+    </Form>
   </Story>
 </Preview>
 

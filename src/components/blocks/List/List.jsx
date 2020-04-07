@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { Darken } from "Variables";
-import Bar from "blocks/Bar";
+import Bar from "layout/Bar";
 import Tag from "atoms/Tag";
 import Avatar from "atoms/Avatar";
 import Icon from "atoms/Icon";
@@ -166,6 +166,7 @@ function ListItem({
     >
       <DisabledContext.Provider value={disabled}>
         <Bar
+          padding="0"
           center={{
             content: centerContent,
             align: "left",

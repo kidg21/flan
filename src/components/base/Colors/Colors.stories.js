@@ -13,7 +13,7 @@ export default {
 
 export const Brand = () => {
   return (
-    <Grid columns="3">
+    <Grid>
       <Colors color="lightBoxNavy" />
       <Colors color="lightBoxCyan" />
       <Colors color="lightBoxGold" />
@@ -32,7 +32,7 @@ export const Brand = () => {
 
 export const Primary = () => {
   return (
-    <Grid columns="5">
+    <Grid>
       <ThemeColors color="action20" />
       <ThemeColors color="action40" />
       <ThemeColors color="action60" />
@@ -44,7 +44,7 @@ export const Primary = () => {
 
 export const Secondary = () => {
   return (
-    <Grid columns="5">
+    <Grid>
       <ThemeColors color="info20" />
       <ThemeColors color="info40" />
       <ThemeColors color="info60" />
@@ -71,7 +71,7 @@ export const Secondary = () => {
 
 export const Neutral = () => {
   return (
-    <Grid columns="5">
+    <Grid>
       <Colors color="grey10" />
       <Colors color="grey20" />
       <Colors color="grey30" />

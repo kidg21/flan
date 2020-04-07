@@ -31,7 +31,6 @@ export { default as TextInput } from "./atoms/TextInput";
 
 // Publicly exported files from 'blocks'
 export { default as Banner } from "./blocks/Banner";
-export { default as Bar } from "./blocks/Bar";
 export { CardList } from "./blocks/List";
 export { default as Legend } from "./blocks/Legend";
 export { default as Control, ControlItem } from "./blocks/Control";
@@ -59,6 +58,7 @@ export { default as Surface } from "./elements/Surface";
 export { UserRoles, RolePermissions } from "./elements/UserRoles";
 
 // Publicly exported files from 'layout'
+export { default as Bar } from "./layout/Bar";
 export { default as Form, FormSection } from "./layout/Form";
 export { default as Flex } from "./layout/Flex";
 export { default as Grid } from "./layout/Grid";

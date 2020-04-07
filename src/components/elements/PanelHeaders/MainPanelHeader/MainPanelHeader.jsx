@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 import React from "react";
 import PropTypes from "prop-types";
-import Bar from "blocks/Bar";
+import Bar from "layout/Bar";
 import { Title } from "base/Typography";
 import Menu from "blocks/Menu";
 
@@ -12,9 +12,8 @@ function MainPanelHeader({
   return (
     <React.Fragment id={id} >
       <Bar
-        center={<Title text={title} size="lg" weight="bold" />}
+        left={<Title text={title} size="lg" weight="bold" />}
         contentAlign="center"
-        padding="2x"
         right={menuData ? <Menu data={menuData} position="bottomLeft" /> : null}
       />
     </React.Fragment>

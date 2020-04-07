@@ -13,7 +13,7 @@ import Grid from "layout/Grid";
 import { Padding } from "helpers/Display";
 import Menu from "blocks/Menu";
 import Card from "elements/Card";
-import Bar from "blocks/Bar";
+import Bar from "layout/Bar";
 
 const data = [
   {
@@ -205,7 +205,7 @@ storiesOf("Blocks|Menu", module)
         });
 
         it("should open nested menu on mouseOver", () => {
-        // positioning should be correctly updated
+          // positioning should be correctly updated
           output.find("Menu").childAt(0).simulate("click"); // open menu
 
           // simulate mouseOver cannot mock getBoundingClientRect/offsetParent easily
