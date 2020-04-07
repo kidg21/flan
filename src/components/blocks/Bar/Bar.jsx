@@ -87,8 +87,7 @@ function getPadding(left, right, center) {
 }
 
 const paddingHash = {
-  "none": "0",
-  "1x": "0.5em 1em",
+  "0": "0",
   "2x": "1em 1.25em",
   "3x": "1.5em 1.5em",
 };
@@ -132,7 +131,7 @@ function Bar({
   right,
 }) {
   const slotPadding = getPadding(left, right, center);
-  const barPadding = padding ? paddingHash[padding.toLowerCase()] : null;
+  const barPadding = padding ? paddingHash[padding.toLowerCase()] : "0.5em 1em";
   const alignContent = alignHash[contentAlign && contentAlign.toLowerCase()] || "flex-start";
 
   let leftAlign = {};
@@ -223,7 +222,7 @@ Bar.propTypes = {
   left: PropTypes.oneOfType([PropTypes.node, SlotType]),
   onClick: PropTypes.func,
   /** Sets the padding of the Bar component */
-  padding: PropTypes.oneOf(["none", "1x", "2x", "3x", "top", "vertical", "horizontal"]),
+  padding: PropTypes.oneOf(["0", "1x", "2x", "3x"]),
   /** Used to define the content in the right 'slot' */
   right: PropTypes.oneOfType([PropTypes.node, SlotType]),
 };

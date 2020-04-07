@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { Fragment } from "react";
 import { Padding } from "helpers/Display";
-import Card, { CardSection, CardGrid } from "elements/Card";
+import Card, { CardGrid } from "elements/Card";
 import Icon from "atoms/Icon";
 import IconBlock from "blocks/IconBlock";
 import Command from "atoms/Command";
@@ -29,13 +29,11 @@ storiesOf("Blocks|Bar", module)
     () => {
       return (
         <Card>
-          <CardSection>
-            <Bar
-              left={<Title text="Left" />}
-              center={<Title text="Center" />}
-              right={<Title text="Right" />}
-            />
-          </CardSection>
+          <Bar
+            left={<Title text="Left" />}
+            center={<Title text="Center" />}
+            right={<Title text="Right" />}
+          />
         </Card>
       );
     },
@@ -48,7 +46,7 @@ storiesOf("Blocks|Bar", module)
           padding={options(
             "padding",
             {
-              "none": "none",
+              "0": "0",
               "default": null,
               "2x": "2x",
               "3x": "3x",
@@ -103,93 +101,79 @@ storiesOf("Blocks|Bar", module)
   .add("Some Bars", () => {
     return (
       <CardGrid>
-        <Card>
-          <CardSection>
-            <Bar left={<Command />} center={shortTitle} right={<Command />} />
-          </CardSection>
+        <Card padding="0">
+          <Bar left={<Command />} center={shortTitle} right={<Command />} />
         </Card>
         <Card>
-          <CardSection>
-            <Bar
-              left={<Command align="right" />}
-              center={longTitle}
-              right={<Command align="right" />}
-            />
-          </CardSection>
+          <Bar
+            left={<Command align="right" />}
+            center={longTitle}
+            right={<Command align="right" />}
+          />
         </Card>
         <Card>
-          <CardSection>
-            <Bar
-              left={<Command align="center" />}
-              center={multipleLines}
-              right={<Command align="center" />}
-            />
-          </CardSection>
+          <Bar
+            left={<Command align="center" />}
+            center={multipleLines}
+            right={<Command align="center" />}
+          />
         </Card>
         <Card>
-          <CardSection>
-            <Bar
-              left={
-                <IconBlock>
-                  <Icon icon="circle_solid" />
-                  <Icon icon="circle_solid" variant="info" />
-                  <Icon icon="circle_solid" variant="success" />
-                </IconBlock>
-              }
-            />
-          </CardSection>
+          <Bar
+            left={
+              <IconBlock>
+                <Icon icon="circle_solid" />
+                <Icon icon="circle_solid" variant="info" />
+                <Icon icon="circle_solid" variant="success" />
+              </IconBlock>
+            }
+          />
         </Card>
         <Card>
-          <CardSection>
-            <Bar
-              contentAlign="center"
-              left={
-                <IconBlock>
-                  <Icon icon="circle_solid" />
-                  <Icon icon="circle_solid" variant="info" />
-                  <Icon icon="circle_solid" variant="success" />
-                </IconBlock>
-              }
-              center={longTitle}
-              right={
-                <IconBlock>
-                  <Icon icon="circle_solid" />
-                  <Icon icon="circle_solid" variant="info" />
-                  <Icon icon="circle_solid" variant="success" />
-                </IconBlock>
-              }
-            />
-          </CardSection>
+          <Bar
+            contentAlign="center"
+            left={
+              <IconBlock>
+                <Icon icon="circle_solid" />
+                <Icon icon="circle_solid" variant="info" />
+                <Icon icon="circle_solid" variant="success" />
+              </IconBlock>
+            }
+            center={longTitle}
+            right={
+              <IconBlock>
+                <Icon icon="circle_solid" />
+                <Icon icon="circle_solid" variant="info" />
+                <Icon icon="circle_solid" variant="success" />
+              </IconBlock>
+            }
+          />
         </Card>
         <Card>
-          <CardSection>
-            <Bar
-              contentAlign="center"
-              left={shortTitle}
-              right={
-                <IconBlock>
-                  <Icon icon="circle_solid" />
-                  <Icon icon="circle_solid" variant="info" />
-                  <Icon icon="circle_solid" variant="success" />
-                </IconBlock>
-              }
-            />
-          </CardSection>
+          <Bar
+            contentAlign="center"
+            left={shortTitle}
+            right={
+              <IconBlock>
+                <Icon icon="circle_solid" />
+                <Icon icon="circle_solid" variant="info" />
+                <Icon icon="circle_solid" variant="success" />
+              </IconBlock>
+            }
+          />
         </Card>
         <Card>
-          <CardSection>
-            <Bar
-              contentAlign="center"
-              left={
-                <IconBlock>
-                  <Icon icon="circle_solid" />
-                  <Icon icon="circle_solid" variant="info" />
-                  <Icon icon="circle_solid" variant="success" />
-                </IconBlock>
-              }
-              right={shortTitle}
-            />
-          </CardSection>
+          <Bar
+            contentAlign="center"
+            left={
+              <IconBlock>
+                <Icon icon="circle_solid" />
+                <Icon icon="circle_solid" variant="info" />
+                <Icon icon="circle_solid" variant="success" />
+              </IconBlock>
+            }
+            right={shortTitle}
+          />
         </Card>
       </CardGrid>
     );
