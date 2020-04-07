@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import Text, { Title, Link } from "base/Typography";
 import { SkeletonStatic } from "helpers";
+import Loader from "atoms/Loader";
 
 const LegendTitle = styled(Title)`
 padding-bottom: .5rem;
@@ -87,7 +88,7 @@ function Legend({
     <Wrapper id={id}>
       {title ? <LegendTitle weight="bold" text={title} /> : null}
       <TableContainer id={id}>
-        {data.map((row) => {
+        {data.length > 0 ? data.map((row) => {
           let rowValue = row.value;
           if (row.onClick) {
             rowValue = (<Link onClick={row.onClick} text={row.value} />);
@@ -114,7 +115,7 @@ function Legend({
               </Cell>
             </Row>
           );
-        })}
+        }) : <Loader />}
       </TableContainer>
     </Wrapper>
   );

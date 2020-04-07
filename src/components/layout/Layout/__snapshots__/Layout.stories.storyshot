@@ -52,7 +52,7 @@ exports[` 2`] = `
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionLeft-sc-19tlhp4-4 cJAplF"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionLeft-sc-19tlhp4-4 jMmPlu"
       height={null}
       id="Left"
       overflow={null}
@@ -78,7 +78,7 @@ exports[` 2`] = `
       </div>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionRight-sc-19tlhp4-8 jTuaHc"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionRight-sc-19tlhp4-8 kuYGzP"
       height={null}
       id="Right"
       overflow={null}
@@ -106,7 +106,7 @@ exports[` 3`] = `
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionLeft-sc-19tlhp4-4 cJAplF"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionLeft-sc-19tlhp4-4 jMmPlu"
       height={null}
       id="Left"
       overflow={null}
@@ -131,7 +131,7 @@ exports[` 3`] = `
         
       </div>
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 lkNlNx Layout__RegionBottom-sc-19tlhp4-7 erNAMS"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 lkNlNx Layout__RegionBottom-sc-19tlhp4-7 htPHEN"
         height="40%"
         id="Bottom"
         overflow={null}
@@ -141,7 +141,7 @@ exports[` 3`] = `
       </div>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionRight-sc-19tlhp4-8 jTuaHc"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionRight-sc-19tlhp4-8 kuYGzP"
       height={null}
       id="Right"
       overflow={null}
@@ -162,7 +162,7 @@ exports[` 4`] = `
   width={null}
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 XVwja"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 bVsEVt"
     height={null}
     id="Header"
     overflow={null}
@@ -178,7 +178,7 @@ exports[` 4`] = `
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionLeft-sc-19tlhp4-4 cJAplF"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionLeft-sc-19tlhp4-4 jMmPlu"
       height={null}
       id="Left"
       overflow={null}
@@ -203,7 +203,7 @@ exports[` 4`] = `
         
       </div>
       <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 lkNlNx Layout__RegionBottom-sc-19tlhp4-7 erNAMS"
+        className="Flex__FlexWrapper-sc-7b3s7m-0 lkNlNx Layout__RegionBottom-sc-19tlhp4-7 htPHEN"
         height="40%"
         id="Bottom"
         overflow={null}
@@ -213,7 +213,7 @@ exports[` 4`] = `
       </div>
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionRight-sc-19tlhp4-8 jTuaHc"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionRight-sc-19tlhp4-8 kuYGzP"
       height={null}
       id="Right"
       overflow={null}
@@ -223,7 +223,7 @@ exports[` 4`] = `
     </div>
   </div>
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Footer-sc-19tlhp4-2 iWCEnZ"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Footer-sc-19tlhp4-2 kKxeRG"
     height={null}
     id="Footer"
     overflow={null}
@@ -243,7 +243,7 @@ exports[` 5`] = `
   width={null}
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 XVwja"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 bVsEVt"
     height={null}
     id="Header"
     overflow={null}
@@ -348,7 +348,7 @@ exports[` 5`] = `
         id="List Panel"
       >
         <section
-          className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 cLuLNu"
+          className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 bHxuLl"
         >
           <div
             className="Card__CardWrapper-sc-1g3s676-5 jNloVS"
@@ -363,7 +363,7 @@ exports[` 5`] = `
               onClick={null}
             >
               <div
-                className="Bar__Slot-sc-1c4axau-1 blGHXI"
+                className="Bar__Slot-sc-1c4axau-1 hAjMjw"
               >
                 <h5
                   className="Typography__TitleText-sc-19auepv-2 bKCMpV"
@@ -896,7 +896,7 @@ exports[` 5`] = `
         id="Info Panel"
       >
         <section
-          className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 cLuLNu"
+          className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 bHxuLl"
         >
           <div
             className="Card__CardWrapper-sc-1g3s676-5 jNloVS"
@@ -1058,7 +1058,7 @@ exports[` 5`] = `
     </div>
   </div>
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Footer-sc-19tlhp4-2 iWCEnZ"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Footer-sc-19tlhp4-2 kKxeRG"
     height={null}
     id="Footer"
     overflow={null}
@@ -1140,7 +1140,7 @@ exports[` 6`] = `
   width={null}
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 XVwja"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 bVsEVt"
     height={null}
     id="Header"
     overflow={null}
@@ -1245,7 +1245,7 @@ exports[` 6`] = `
         id="List Panel"
       >
         <section
-          className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 cLuLNu"
+          className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 bHxuLl"
         >
           <div
             className="Card__CardWrapper-sc-1g3s676-5 jNloVS"
@@ -1260,7 +1260,7 @@ exports[` 6`] = `
               onClick={null}
             >
               <div
-                className="Bar__Slot-sc-1c4axau-1 blGHXI"
+                className="Bar__Slot-sc-1c4axau-1 hAjMjw"
               >
                 <h5
                   className="Typography__TitleText-sc-19auepv-2 bKCMpV"
@@ -1793,7 +1793,7 @@ exports[` 6`] = `
         id="Info Panel"
       >
         <section
-          className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 cLuLNu"
+          className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 bHxuLl"
         >
           <div
             className="Card__CardWrapper-sc-1g3s676-5 jNloVS"
@@ -1955,7 +1955,7 @@ exports[` 6`] = `
     </div>
   </div>
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Footer-sc-19tlhp4-2 iWCEnZ"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Footer-sc-19tlhp4-2 kKxeRG"
     height={null}
     id="Footer"
     overflow={null}
@@ -2037,7 +2037,7 @@ exports[` 7`] = `
   width={null}
 >
   <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 XVwja"
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 bVsEVt"
     height={null}
     id="Header"
     overflow={null}
@@ -2247,7 +2247,7 @@ exports[` 7`] = `
         id="List Panel"
       >
         <section
-          className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 cLuLNu"
+          className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 bHxuLl"
         >
           <div
             className="Card__CardWrapper-sc-1g3s676-5 jNloVS"
@@ -2262,7 +2262,7 @@ exports[` 7`] = `
               onClick={null}
             >
               <div
-                className="Bar__Slot-sc-1c4axau-1 blGHXI"
+                className="Bar__Slot-sc-1c4axau-1 hAjMjw"
               >
                 <h5
                   className="Typography__TitleText-sc-19auepv-2 bKCMpV"
@@ -2795,7 +2795,7 @@ exports[` 7`] = `
         id="Info Panel"
       >
         <section
-          className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 cLuLNu"
+          className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 bHxuLl"
         >
           <div
             className="Card__CardWrapper-sc-1g3s676-5 jNloVS"
