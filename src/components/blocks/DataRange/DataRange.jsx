@@ -54,7 +54,6 @@ function DataRange({
     <RangeContainer
       columns="1"
       disabled={isDisabled}
-      gap="tiny"
       id={uId}
       inputTextColor={inputTextColor}
     >

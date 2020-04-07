@@ -296,7 +296,7 @@ storiesOf("Elements|Card", module)
   })
   .add("Shadows", () => {
     return (
-      <Grid gap="large">
+      <Grid gap="2x">
         <Card description="None" shadow="none" />
         <Card description="Standard" />
         <Card description="2x" shadow="2x" />

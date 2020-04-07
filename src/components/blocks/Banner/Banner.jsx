@@ -60,7 +60,7 @@ function Banner({
         left={bannerType}
         center={{
           content: (
-            <Grid columns="1" gap="tiny">
+            <Grid columns="1">
               <Title size="lg" weight="bold" text={title} />
               {description ? <Text size="sm" weight="bold" text={description} /> : null}
               {link ? (

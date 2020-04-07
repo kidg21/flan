@@ -185,7 +185,6 @@ function TextInput({
     <TextInputContainer
       className={className}
       columns="1"
-      gap="tiny"
       id={`${uId}_container`}
       inputTextColor={inputTextColor}
     >

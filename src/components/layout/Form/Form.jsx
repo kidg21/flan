@@ -79,13 +79,13 @@ function Form({
   return (
     <FormWrapper action={action} id={id} method={method} novalidate={novalidate} onSubmit={onSubmit}>
       {title || subtitle || description ? (
-        <Header columns="1" gap="tiny">
+        <Header columns="1">
           {title ? <Title size="xl" weight="bold" text={title} /> : null}
           {subtitle ? <Text weight="light" text={subtitle} /> : null}
           {description ? <Text size="sm" weight="bold" text={description} /> : null}
         </Header>
       ) : null}
-      <Inputs setColumns={setColumns} gap="large">
+      <Inputs setColumns={setColumns} gap="2x">
         {children}
       </Inputs>
     </FormWrapper>

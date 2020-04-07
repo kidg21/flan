@@ -99,7 +99,7 @@ function Slider({
   const leftValue = (`${((100 / max) * (value - min)) + ((2 * value) / max)}%`);
 
   return (
-    <Grid columns="1" gap="none">
+    <Grid columns="1" gap="0">
       {withLabel ? <SliderLabel text={value || min} weight="bold" left={leftValue} /> : null}
       <SliderPiece
         id={id}
