@@ -114,6 +114,7 @@ const iconHash = {
   include: ["far", "check-circle"],
   info_circle: ["far", "info-circle"],
   info: "info",
+  job: "construction",
   labels: ["far", "tags"],
   layers: ["far", "layer-group"],
   link: ["far", "link"],
