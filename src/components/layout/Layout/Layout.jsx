@@ -15,10 +15,7 @@ const WrapperOuter = styled(Flex)`
 const Header = styled(Flex)`
   flex: none;
   box-shadow: ${(props) => {
-    return props.theme.shadows.outerShadow;
-  }};
-  margin: ${(props) => {
-    return props.margin;
+    return props.hasShadow ? props.theme.shadows.outerShadow : "";
   }};
   &:empty {
     &:before {
@@ -35,9 +32,6 @@ const Footer = styled(Flex)`
   flex: none;
   box-shadow: ${(props) => {
     return props.theme.shadows.outerShadow;
-  }};
-  margin: ${(props) => {
-    return props.margin;
   }};
   &:empty {
     &:before {
@@ -92,9 +86,6 @@ const WrapperMain = styled(Flex)`
   position: absolute;
   left: ${(props) => {
     return props.mainLeft || "";
-  }};
-  margin: ${(props) => {
-    return props.margin;
   }};
   width: ${(props) => {
     return props.mainWidth || "";
@@ -323,8 +314,8 @@ function Layout({
     <WrapperOuter id={id}>
       {header ? (
         <Header
+          hasShadow={typeof header.hasShadow === "boolean" ? header.hasShadow : true}
           id={header.id}
-          margin={header.margin}
           zIndex={zIndex}
         >
           {header.content}
@@ -341,7 +332,7 @@ function Layout({
             {left.content}
           </RegionLeft>
         ) : null}
-        <WrapperMain height={bottomHeight} left={mainLeft} margin={main.margin} width={mainWidth}>
+        <WrapperMain height={bottomHeight} left={mainLeft} width={mainWidth}>
           <RegionCenter bottom={bottomOpen ? bottomHeight : "0"} id={main.id}>
             {main.content}
           </RegionCenter>
@@ -370,7 +361,6 @@ function Layout({
       {footer ? (
         <Footer
           id={footer.id}
-          margin={footer.margin}
           zIndex={zIndex}
         >
           {footer.content}
@@ -384,8 +374,8 @@ Layout.propTypes = {
   id: PropTypes.string,
   header: PropTypes.shape({
     content: PropTypes.node,
+    hasShadow: PropTypes.bool,
     id: PropTypes.string,
-    margin: PropTypes.string,
   }),
   left: PropTypes.shape({
     content: PropTypes.node,
@@ -395,7 +385,6 @@ Layout.propTypes = {
   main: PropTypes.shape({
     content: PropTypes.node.isRequired,
     id: PropTypes.string,
-    margin: PropTypes.string,
   }),
   bottom: PropTypes.shape({
     content: PropTypes.node,
@@ -410,7 +399,6 @@ Layout.propTypes = {
   footer: PropTypes.shape({
     content: PropTypes.node,
     id: PropTypes.string,
-    margin: PropTypes.string,
   }),
 };
 

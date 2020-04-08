@@ -45,9 +45,9 @@ const ControlsWrapper = styled.section`
 `;
 
 function Controls({
-  id, children, style, vertical, disabled,
+  id, children, style, disabled,
 }) {
-  let setColumns;
+  /* let setColumns;
   let setWidth;
   let setHeight;
 
@@ -55,7 +55,7 @@ function Controls({
     setColumns = "none";
     setWidth = "auto";
     setHeight = "100%";
-  }
+  } */
 
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
 
@@ -63,11 +63,7 @@ function Controls({
     <ControlsWrapper
       id={id}
       disabled={isDisabled}
-      setColumns={setColumns}
-      setWidth={setWidth}
-      setHeight={setHeight}
       style={style}
-      vertical={vertical}
     >
       {children}
     </ControlsWrapper>
@@ -110,7 +106,7 @@ Controls.propTypes = {
   disabled: PropTypes.bool,
   id: PropTypes.string,
   style: PropTypes.string,
-  vertical: PropTypes.bool,
+  // vertical: PropTypes.bool,
 };
 
 Control.propTypes = {
@@ -128,7 +124,7 @@ Controls.defaultProps = {
   disabled: false,
   id: null,
   style: null,
-  vertical: false,
+  // vertical: false,
 };
 
 Control.defaultProps = {
