@@ -31,7 +31,7 @@ const menuData = [
 ];
 
 const panelHeader = (
-  <Card shadow="none">
+  <Card shadow="0">
     <MainPanelHeader title="Menu Header" menuData={menuData} />
   </Card>
 );
@@ -57,7 +57,7 @@ const infoCard = (
     title="Best Place Ever"
     description="I Could Tell You More, But..."
     icon="bookmark_solid"
-    shadow="none"
+    shadow="0"
   />
 );
 

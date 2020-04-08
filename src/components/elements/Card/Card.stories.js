@@ -180,7 +180,7 @@ storiesOf("Elements|Card", module)
         shadow={select(
           "shadow",
           {
-            "none": "none",
+            "0": "0",
             "1x": null,
             "2x": "2x",
           },
@@ -297,7 +297,7 @@ storiesOf("Elements|Card", module)
   .add("Shadows", () => {
     return (
       <Grid gap="2x">
-        <Card description="None" shadow="none" />
+        <Card description="None" shadow="0" />
         <Card description="Standard" />
         <Card description="2x" shadow="2x" />
       </Grid>

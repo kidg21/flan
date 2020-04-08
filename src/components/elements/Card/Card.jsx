@@ -339,7 +339,7 @@ function Card({
 
   let cardShadow;
   switch (shadow) {
-    case "none":
+    case "0":
       cardShadow = null;
       break;
     case "2x":
@@ -594,7 +594,7 @@ Card.propTypes = {
   }),
   onClick: PropTypes.func,
   padding: PropTypes.oneOf(["0", "2x", "3x", "4x"]),
-  shadow: PropTypes.oneOf(["none", "1x", "2x"]),
+  shadow: PropTypes.oneOf(["0", "2x"]),
   title: PropTypes.string,
   variant: PropTypes.oneOf(["info", "success", "warning", "alert"]),
 };
