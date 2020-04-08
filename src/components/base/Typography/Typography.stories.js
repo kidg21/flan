@@ -45,7 +45,7 @@ storiesOf("Application|Style Guides/", module);
 //       <Title text="This is an 'xl' Title" size="xl" />
 //       <Title text="This is an 'xxl' Title" size="xxl" />
 //       <Title text="This is an 'xxl' Title" size="xxxl" />
-//       <Title text="This is an 'huge' Title" size="huge" />
+//       <Title text="This is an 'xtreme' Title" size="xtreme" />
 
 //       <Title text="This is an 'italic' Title" styling="italic" />
 //       <Title text="This is an 'underline' Title" styling="underline" />

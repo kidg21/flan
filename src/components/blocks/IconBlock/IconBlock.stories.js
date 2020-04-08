@@ -92,7 +92,7 @@ storiesOf("Blocks|Icon Block", module)
         <IconBlock data={iconNames} size="xl" />
         <IconBlock data={iconNames} size="xxl" />
         <IconBlock data={iconNames} size="xxxl" />
-        <IconBlock data={iconNames} size="huge" />
+        <IconBlock data={iconNames} size="xtreme" />
       </Grid>
     );
   });

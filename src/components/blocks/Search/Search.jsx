@@ -80,7 +80,7 @@ function Search({
 
   const message = (
     <React.Fragment>
-      {msg !== errorHash.default ? <Bar padding="2x" center={<Icon icon="signal_none" size="huge" />} /> : null}
+      {msg !== errorHash.default ? <Bar padding="2x" center={<Icon icon="signal_none" size="xtreme" />} /> : null}
       <Bar padding="2x" center={<Text text={msg} />} />
     </React.Fragment>
   );

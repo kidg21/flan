@@ -152,7 +152,7 @@ function Title({
       fontSize: "1.65em",
       as: "h2",
     },
-    huge: {
+    xtreme: {
       fontSize: "2em",
       as: "h1",
     },
@@ -186,7 +186,7 @@ function Title({
 Title.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
-  /** Options: 'lg', 'xl', 'xxl', 'xxxl', 'huge' */
+  /** Options: 'lg', 'xl', 'xxl', 'xxxl', 'xtreme' */
   size: PropTypes.string,
   text: PropTypes.string,
   /** Options: 'light', 'bold' */

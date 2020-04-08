@@ -197,7 +197,7 @@ const sizeHash = {
   xxxl: {
     font: "2em",
   },
-  huge: {
+  xtreme: {
     font: "2.5em",
   },
 };
@@ -329,7 +329,7 @@ Icon.propTypes = {
   /** Options: '90', '180', '270' */
   rotation: PropTypes.number,
   /** Icons inherit the 'font-size' of the parent container and are relatively sized.
-   * Options: 'xs', 'sm', 'lg', 'xl', 'xxl', 'xxxl', 'huge'
+   * Options: 'xs', 'sm', 'lg', 'xl', 'xxl', 'xxxl', 'xtreme'
    */
   size: PropTypes.string,
   /** Smooth rotation */
