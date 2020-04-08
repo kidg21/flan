@@ -54,7 +54,7 @@
 //             "xl": "xl",
 //             "xxl": "xxl",
 //             "xxxl": "xxxl",
-//             "huge": "huge",
+//             "xtreme": "xtreme",
 //           },
 //           "default",
 //           "Icon",
