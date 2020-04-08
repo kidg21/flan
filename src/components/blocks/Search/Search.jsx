@@ -100,9 +100,9 @@ function Search({
           placeholder={placeholder}
           type="search"
         />
-        <Button icon="search" plain onClick={onSearch} />
+        <Button icon="search" isPlain onClick={onSearch} />
       </SearchContainer>
-      {/* <Button icon="more" plain /> */}
+      {/* <Button icon="more" isPlain /> */}
       {error || results ? <DropContainer id="results-container" maxHeight="22rem" > {Body}</DropContainer> : null}
       {/* { advance ? <Advanced inputs={inputs} /> : null} */}
     </Grid>

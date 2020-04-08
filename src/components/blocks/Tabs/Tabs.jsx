@@ -8,7 +8,7 @@ import Button from "atoms/Button";
 const TabButton = styled(Button)`
   border-width: 0 0 2px 0;
   border-color: ${(props) => {
-    return props.underlined || "transparent";
+    return props.hasUnderline || "transparent";
   }};
 `;
 
@@ -39,8 +39,8 @@ function TabsItem({
         isSelected={isSelected}
         label={label}
         onClick={onClick}
-        plain
-        underlined={isSelected ? true : null}
+        isPlain
+        hasUnderline={isSelected ? true : null}
       />
     </React.Fragment>
   );

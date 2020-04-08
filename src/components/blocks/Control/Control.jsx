@@ -39,7 +39,7 @@ function ControlItem({
         id={id}
         label={label}
         onClick={onClick}
-        solid={isSelected ? true : null}
+        isSolid={isSelected ? true : null}
       />
     </Fragment>
   );

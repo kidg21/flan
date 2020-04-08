@@ -53,7 +53,7 @@ function DialogBox({
             id={buttons[1].id}
             label={buttons[1].label}
             onClick={buttons[1].onClick}
-            solid
+            isSolid
             variant={buttons[1].variant}
           />
         </ButtonGrid >);

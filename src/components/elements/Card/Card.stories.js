@@ -101,7 +101,7 @@ const data = [
       },
     ],
     more: {
-      content: <Button label="Button" variant="success" solid />,
+      content: <Button label="Button" variant="success" isSolid />,
     },
     onClick: action("Third Card Clicked"),
   },
@@ -154,7 +154,7 @@ storiesOf("Elements|Card", module)
             onClick: action("Command Five Clicked"),
           },
         ]}
-        more={{ content: <Button label="Button" variant="success" solid fullWidth /> }}
+        more={{ content: <Button label="Button" variant="success" isSolid fullWidth /> }}
         onClick={action("Primary Action Area Clicked")}
       />
     );
@@ -225,7 +225,7 @@ storiesOf("Elements|Card", module)
           boolean("more", false, "Options") &&
           object(
             "extra content",
-            { content: [<Button label="Button" variant="success" solid fullWidth />] },
+            { content: [<Button label="Button" variant="success" isSolid fullWidth />] },
             "Options",
           )
         }

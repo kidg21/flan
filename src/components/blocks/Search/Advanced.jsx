@@ -35,7 +35,7 @@ function AdvancedSearch({ href, id, inputs }) {
                   />
                   <Button
                     icon="search"
-                    solid
+                    isSolid
                     onClick={item.onClick}
                     href={item.href}
                   />
