@@ -1,1 +1,0 @@
-export { default as SummaryPanelTemplate } from "./SummaryPanelTemplate.jsx";
