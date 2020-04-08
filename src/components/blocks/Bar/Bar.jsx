@@ -159,6 +159,7 @@ function Bar({
     >
       {left ? (
         <Slot
+          id={left.id}
           setFlex="1 0 25%"
           widthMin={left.width}
           widthMax={left.width}
@@ -170,6 +171,7 @@ function Bar({
       ) : null}
       {center ? (
         <Slot
+          id={center.id}
           widthMin={center.width}
           widthMax={center.width}
           setPadding={slotPadding.center}
@@ -180,6 +182,7 @@ function Bar({
       ) : null}
       {right ? (
         <Slot
+          id={right.id}
           setFlex="1 0 25%"
           widthMin={right.width}
           widthMax={right.width}
@@ -204,6 +207,8 @@ function Bar({
 const SlotType = PropTypes.shape({
   /** Used to define the content in the slot */
   content: PropTypes.node,
+  /** div id */
+  id: PropTypes.string,
   /** Used to override the default flex ratio of the slot by increasing the setting of 'min-width' and 'max-width'.
    * Value should be in percentage (%)
    */

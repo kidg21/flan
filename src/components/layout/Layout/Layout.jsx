@@ -15,7 +15,7 @@ const WrapperOuter = styled(Flex)`
 const Header = styled(Flex)`
   flex: none;
   box-shadow: ${(props) => {
-    return props.theme.shadows.outerShadow;
+    return props.hasShadow ? props.theme.shadows.outerShadow : "";
   }};
   &:empty {
     &:before {
@@ -311,9 +311,10 @@ function Layout({
   } */
 
   return (
-    <WrapperOuter id={id} >
+    <WrapperOuter id={id}>
       {header ? (
         <Header
+          hasShadow={typeof header.hasShadow === "boolean" ? header.hasShadow : true}
           id={header.id}
           zIndex={zIndex}
         >
@@ -343,7 +344,8 @@ function Layout({
               zIndex={zIndex}
             >
               {bottom.content}
-            </RegionBottom>) : null}
+            </RegionBottom>
+          ) : null}
         </WrapperMain>
         {right ? (
           <RegionRight
@@ -372,29 +374,30 @@ Layout.propTypes = {
   id: PropTypes.string,
   header: PropTypes.shape({
     content: PropTypes.node,
+    hasShadow: PropTypes.bool,
     id: PropTypes.string,
   }),
   left: PropTypes.shape({
-    content: PropTypes.node.isRequired,
+    content: PropTypes.node,
     id: PropTypes.string,
-    visible: PropTypes.string,
+    visible: PropTypes.bool,
   }),
   main: PropTypes.shape({
     content: PropTypes.node.isRequired,
     id: PropTypes.string,
   }),
   bottom: PropTypes.shape({
-    content: PropTypes.node.isRequired,
+    content: PropTypes.node,
     id: PropTypes.string,
-    visible: PropTypes.string,
+    visible: PropTypes.bool,
   }),
   right: PropTypes.shape({
-    content: PropTypes.node.isRequired,
+    content: PropTypes.node,
     id: PropTypes.string,
-    visible: PropTypes.string,
+    visible: PropTypes.bool,
   }),
   footer: PropTypes.shape({
-    content: PropTypes.node.isRequired,
+    content: PropTypes.node,
     id: PropTypes.string,
   }),
 };

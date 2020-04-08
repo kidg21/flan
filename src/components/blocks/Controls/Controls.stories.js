@@ -132,7 +132,6 @@ storiesOf("Blocks|Controls", module)
       </Controls>
     );
   })
-
   .add("Icon Controls", () => {
     return (
       <Controls>
