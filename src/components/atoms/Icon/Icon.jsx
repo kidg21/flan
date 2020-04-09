@@ -209,14 +209,14 @@ function Icon({
   disabled,
   fixedWidth,
   flip,
+  hasPulse,
+  hasSpin,
   href,
   icon,
   id,
   onClick,
-  pulse,
   rotation,
   size,
-  spin,
   variant,
 }) {
   const iconValue = iconHash[icon.toLowerCase()] || ["far", icon.toLowerCase()];
@@ -251,7 +251,9 @@ function Icon({
       color = "brand3";
     } if (brand === "brand4") {
       color = "brand4";
-    } else { null; }
+    } else {
+      color = null;
+    }
   }
 
   const styledIcon = (
@@ -260,12 +262,12 @@ function Icon({
       color={color}
       fixedWidth={fixedWidth}
       flip={flip}
+      fontSize={fontSize}
       icon={iconValue}
       id={id}
-      pulse={pulse}
+      pulse={hasPulse}
       rotation={_rotation}
-      fontSize={fontSize}
-      spin={spin}
+      spin={hasSpin}
     />
   );
 
@@ -319,21 +321,21 @@ Icon.propTypes = {
   fixedWidth: PropTypes.bool,
   /** Options: 'horizontal', 'vertical', 'both' */
   flip: PropTypes.string,
+  /** Rotation with eight (8) steps */
+  hasPulse: PropTypes.bool,
+  /** Smooth rotation */
+  hasSpin: PropTypes.bool,
   href: PropTypes.string,
   /** Enter the name of the icon as the prop value. (ex. icon='circle' */
   icon: PropTypes.string,
   id: PropTypes.string,
   onClick: PropTypes.func,
-  /** Rotation with eight (8) steps */
-  pulse: PropTypes.bool,
   /** Options: '90', '180', '270' */
   rotation: PropTypes.number,
   /** Icons inherit the 'font-size' of the parent container and are relatively sized.
    * Options: 'xs', 'sm', 'lg', 'xl', 'xxl', 'xxxl', 'xtreme'
    */
   size: PropTypes.string,
-  /** Smooth rotation */
-  spin: PropTypes.bool,
   variant: PropTypes.string,
 };
 
@@ -344,14 +346,14 @@ Icon.defaultProps = {
   disabled: null,
   fixedWidth: false,
   flip: null,
+  hasPulse: false,
+  hasSpin: false,
   href: null,
   icon: null,
   id: null,
   onClick: null,
-  pulse: false,
   rotation: null,
   size: null,
-  spin: false,
   variant: null,
 };
 

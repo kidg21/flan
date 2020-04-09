@@ -33,10 +33,10 @@ function IconBlock({
               icon={item.icon}
               id={item.id}
               onClick={item.onClick}
-              pulse={item.pulse}
+              hasPulse={item.hasPulse}
               rotation={item.rotation}
               size={size}
-              spin={item.spin}
+              hasSpin={item.hasSpin}
               type={item.type}
             />
           );
