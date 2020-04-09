@@ -108,17 +108,25 @@ function getLeftContent(pre, disabled, onClick) {
   let leftContent = null;
   let leftContentComponent = null;
   if (pre && (pre.label || pre.icon)) {
+    const {
+      label,
+      icon,
+      onClick: sectionOnClick,
+      ...props
+    } = pre;
+
     if (pre.label) {
-      leftContentComponent = <Avatar label={pre.label} disabled={disabled} />;
+      leftContentComponent = <Avatar label={label} disabled={disabled} {...props} />;
     } else if (pre.icon) {
-      leftContentComponent = <Icon icon={pre.icon} disabled={disabled} />;
+      leftContentComponent = <Icon icon={pre.icon} disabled={disabled} {...props} />;
     }
     leftContent = {
       content: leftContentComponent,
       width: "max-content",
-      onClick: pre.onClick || onClick,
+      onClick: sectionOnClick || onClick,
     };
   }
+
   return leftContent;
 }
 

@@ -349,6 +349,7 @@ exports[` 5`] = `
       >
         <section
           className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 bHxuLl"
+          id="List Panel_header"
         >
           <div
             className="Card__CardWrapper-sc-1g3s676-5 jNloVS"
@@ -407,6 +408,7 @@ exports[` 5`] = `
         </section>
         <section
           className="Panel__SectionWrapper-sc-48epke-1 jZYywS"
+          id="List Panel_body"
         >
           <ul
             className="List__ListWrapper-sc-43f2zq-0 iOWfKZ"
@@ -897,6 +899,7 @@ exports[` 5`] = `
       >
         <section
           className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 bHxuLl"
+          id="Info Panel_header"
         >
           <div
             className="Card__CardWrapper-sc-1g3s676-5 jNloVS"
@@ -986,6 +989,7 @@ exports[` 5`] = `
         </section>
         <section
           className="Panel__SectionWrapper-sc-48epke-1 jZYywS"
+          id="Info Panel_body"
         >
           <div
             className="Page-mddda5-0 eLSKWv"
@@ -1246,6 +1250,7 @@ exports[` 6`] = `
       >
         <section
           className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 bHxuLl"
+          id="List Panel_header"
         >
           <div
             className="Card__CardWrapper-sc-1g3s676-5 jNloVS"
@@ -1304,6 +1309,7 @@ exports[` 6`] = `
         </section>
         <section
           className="Panel__SectionWrapper-sc-48epke-1 jZYywS"
+          id="List Panel_body"
         >
           <ul
             className="List__ListWrapper-sc-43f2zq-0 iOWfKZ"
@@ -1794,6 +1800,7 @@ exports[` 6`] = `
       >
         <section
           className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 bHxuLl"
+          id="Info Panel_header"
         >
           <div
             className="Card__CardWrapper-sc-1g3s676-5 jNloVS"
@@ -1883,6 +1890,7 @@ exports[` 6`] = `
         </section>
         <section
           className="Panel__SectionWrapper-sc-48epke-1 jZYywS"
+          id="Info Panel_body"
         >
           <div
             className="Page-mddda5-0 eLSKWv"
@@ -2248,6 +2256,7 @@ exports[` 7`] = `
       >
         <section
           className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 bHxuLl"
+          id="List Panel_header"
         >
           <div
             className="Card__CardWrapper-sc-1g3s676-5 jNloVS"
@@ -2306,6 +2315,7 @@ exports[` 7`] = `
         </section>
         <section
           className="Panel__SectionWrapper-sc-48epke-1 jZYywS"
+          id="List Panel_body"
         >
           <ul
             className="List__ListWrapper-sc-43f2zq-0 iOWfKZ"
@@ -2796,6 +2806,7 @@ exports[` 7`] = `
       >
         <section
           className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 bHxuLl"
+          id="Info Panel_header"
         >
           <div
             className="Card__CardWrapper-sc-1g3s676-5 jNloVS"
@@ -2885,6 +2896,7 @@ exports[` 7`] = `
         </section>
         <section
           className="Panel__SectionWrapper-sc-48epke-1 jZYywS"
+          id="Info Panel_body"
         >
           <div
             className="Page-mddda5-0 eLSKWv"

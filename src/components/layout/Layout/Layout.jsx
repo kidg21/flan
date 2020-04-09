@@ -15,7 +15,7 @@ const WrapperOuter = styled(Flex)`
 const Header = styled(Flex)`
   flex: none;
   box-shadow: ${(props) => {
-    return props.theme.shadows.outerShadow;
+    return props.hasShadow ? props.theme.shadows.outerShadow : "";
   }};
   &:empty {
     &:before {
@@ -311,9 +311,10 @@ function Layout({
   } */
 
   return (
-    <WrapperOuter id={id} >
+    <WrapperOuter id={id}>
       {header ? (
         <Header
+          hasShadow={typeof header.hasShadow === "boolean" ? header.hasShadow : true}
           id={header.id}
           zIndex={zIndex}
         >
@@ -343,7 +344,8 @@ function Layout({
               zIndex={zIndex}
             >
               {bottom.content}
-            </RegionBottom>) : null}
+            </RegionBottom>
+          ) : null}
         </WrapperMain>
         {right ? (
           <RegionRight
@@ -380,6 +382,7 @@ Layout.propTypes = {
   }),
   header: PropTypes.shape({
     content: PropTypes.node,
+    hasShadow: PropTypes.bool,
     id: PropTypes.string,
   }),
   id: PropTypes.string,

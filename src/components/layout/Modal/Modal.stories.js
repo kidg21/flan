@@ -8,34 +8,37 @@ import DialogBox from "elements/DialogBox";
 import Modal from "layout/Modal";
 
 storiesOf("Layout|Modal", module)
-  .add("Default Modal", () => {
-    return React.createElement(() => {
-      const [visible, setVisible] = useState(false);
-      const handleOpen = () => {
-        setVisible(true);
-      };
-      const handleClose = () => {
-        setVisible(false);
-      };
-      return (
-        <React.Fragment>
-          <Modal
-            onClose={handleClose}
-            visible={visible}
-          >
-            <Banner
-              title="This is a Standard notification telling you stuff."
-              onClose={handleClose}
+  .add(
+    "Documentation",
+    () => {
+      return React.createElement(() => {
+        const [visible, setVisible] = useState(false);
+        const handleOpen = () => {
+          setVisible(true);
+        };
+        const handleClose = () => {
+          setVisible(false);
+        };
+        return (
+          <React.Fragment>
+            <Modal onClose={handleClose} visible={visible}>
+              <Banner
+                title="This is a Standard notification telling you stuff."
+                onClose={handleClose}
+              />
+            </Modal>
+            <Button
+              label="Default Modal"
+              onClick={handleOpen}
             />
-          </Modal>
-          <Button
-            label="Default Modal"
-            onClick={handleOpen}
-          />
-        </React.Fragment>
-      );
-    });
-  })
+          </React.Fragment>
+        );
+      });
+    },
+  );
+
+storiesOf("Layout|Modal", module)
+  .addDecorator(withKnobs)
   .add("Knobs", () => {
     return React.createElement(() => {
       const [visible, setVisible] = useState(false);
@@ -53,7 +56,7 @@ storiesOf("Layout|Modal", module)
               "This is a very special message just for you...",
               "Modal",
             )}
-            media={text("Image URL", ModernExterior1, "Modal")}
+            image={text("Image URL", ModernExterior1, "Modal")}
             align={options(
               "Alignment",
               {
@@ -69,7 +72,11 @@ storiesOf("Layout|Modal", module)
             visible={visible}
           >
             <Banner
-              title="This is a Standard notification telling you stuff."
+              title={text(
+                "Status Message",
+                "This is a Standard notification telling you stuff.",
+                "Modal",
+              )}
               onClose={handleClose}
             />
           </Modal>

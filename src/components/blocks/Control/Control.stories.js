@@ -181,8 +181,7 @@ storiesOf("Blocks|Control", module)
       </Control>
     );
   })
-
-  .add("Icon Control", () => {
+  .add("Icon Controls", () => {
     return (
       <Control>
         <ControlItem label="Item 1" icon="user" />
