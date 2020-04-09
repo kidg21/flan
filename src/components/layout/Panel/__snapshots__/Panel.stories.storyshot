@@ -15,6 +15,7 @@ exports[` 1`] = `
   >
     <section
       className="Panel__SectionWrapper-sc-48epke-1 jZYywS"
+      id={null}
     />
   </div>
 </div>
@@ -35,6 +36,7 @@ exports[` 2`] = `
   >
     <section
       className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 bHxuLl"
+      id={null}
     >
       <div
         className="Bar__BarLayout-sc-1c4axau-2 hVthby"
@@ -58,6 +60,7 @@ exports[` 2`] = `
     </section>
     <section
       className="Panel__SectionWrapper-sc-48epke-1 jZYywS"
+      id={null}
     />
   </div>
 </div>
@@ -78,9 +81,11 @@ exports[` 3`] = `
   >
     <section
       className="Panel__SectionWrapper-sc-48epke-1 jZYywS"
+      id={null}
     />
     <section
       className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 bHxuLl"
+      id={null}
     >
       <div
         className="Bar__BarLayout-sc-1c4axau-2 hVthby"
@@ -121,6 +126,7 @@ exports[` 4`] = `
   >
     <section
       className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 bHxuLl"
+      id={null}
     >
       <div
         className="Bar__BarLayout-sc-1c4axau-2 hVthby"
@@ -144,9 +150,11 @@ exports[` 4`] = `
     </section>
     <section
       className="Panel__SectionWrapper-sc-48epke-1 jZYywS"
+      id={null}
     />
     <section
       className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 bHxuLl"
+      id={null}
     >
       <div
         className="Bar__BarLayout-sc-1c4axau-2 hVthby"
@@ -187,6 +195,7 @@ exports[` 5`] = `
   >
     <section
       className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 bHxuLl"
+      id="Panel_header"
     >
       <div
         className="Bar__BarLayout-sc-1c4axau-2 hVthby"
@@ -210,6 +219,7 @@ exports[` 5`] = `
     </section>
     <section
       className="Panel__SectionWrapper-sc-48epke-1 jZYywS"
+      id="Panel_body"
     >
       <section
         className="Grid__GridWrapper-sc-1ntp7gx-0 fGkTyc Card__CardGridWrapper-sc-1g3s676-6 dqRWfz"
@@ -269,6 +279,7 @@ exports[` 5`] = `
     </section>
     <section
       className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 bHxuLl"
+      id="Panel_footer"
     >
       <div
         className="Bar__BarLayout-sc-1c4axau-2 hVthby"
