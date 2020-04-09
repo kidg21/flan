@@ -95,7 +95,7 @@ function Avatar({
     iconType = (
       <AvatarImage
         alt={alt}
-        circle
+        isRound
         src={media}
         width={avatarSize}
       />

@@ -33,7 +33,7 @@
 //         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
 //         alt="This is alt text for this image"
 //         width={text("width", 100, "Image")}
-//         circle={boolean("circle", false, "Image")}
+//         isRound={boolean("circle", false, "Image")}
 //         border={boolean("border", false, "Image")}
 //       />
 //     );
@@ -57,7 +57,7 @@
 //           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
 //           width={125}
 //           alt="This is alt text for this image"
-//           circle
+//           isRound
 //         />
 //         <Title text="Circle ( width='125' )" />
 //       </Grid>
