@@ -73,9 +73,9 @@ const Dot = styled.div`
   }
 `;
 
-function Loader({ line, id }) {
+function Loader({ isLine, id }) {
   let content;
-  if (line) {
+  if (isLine) {
     content = (
       <Fill id={id} />
     );
@@ -94,12 +94,12 @@ function Loader({ line, id }) {
 
 Loader.propTypes = {
   id: PropTypes.string,
-  line: PropTypes.bool,
+  isLine: PropTypes.bool,
 };
 
 Loader.defaultProps = {
   id: null,
-  line: null,
+  isLine: null,
 };
 
 export default Loader;
