@@ -52,7 +52,7 @@ IconBlock.propTypes = {
   data: PropTypes.arrayOf(PropTypes.shape(Icon.propTypes)),
   id: PropTypes.string,
   /** The 'font-size' of the child Icons is inherited from the parent Icon Block and are relatively sized.
-   * Options: 'xs', 'sm', 'lg', 'xl', 'xxl', 'xxxl', 'xtreme'
+   * Options: 'xs', 'sm', 'lg', 'xl', '2xl', '3xl', '4xl'
   */
   size: PropTypes.string,
 };

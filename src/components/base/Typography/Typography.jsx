@@ -136,23 +136,23 @@ function Title({
   children, className, size, text, weight,
 }) {
   const sizeHash = {
-    lg: {
+    "lg": {
       fontSize: "1.15em",
       as: "h5",
     },
-    xl: {
+    "xl": {
       fontSize: "1.25em",
       as: "h4",
     },
-    xxl: {
+    "2xl": {
       fontSize: "1.45em",
       as: "h3",
     },
-    xxxl: {
+    "3xl": {
       fontSize: "1.65em",
       as: "h2",
     },
-    xtreme: {
+    "4xl": {
       fontSize: "2em",
       as: "h1",
     },
@@ -186,7 +186,7 @@ function Title({
 Title.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
-  /** Options: 'lg', 'xl', 'xxl', 'xxxl', 'xtreme' */
+  /** Options: 'lg', 'xl', '2xl', '3xl', '4xl' */
   size: PropTypes.string,
   text: PropTypes.string,
   /** Options: 'light', 'bold' */
@@ -274,15 +274,15 @@ function Link({
   children, className, disabled, href, onClick, size, target, text, weight,
 }) {
   const sizeHash = {
-    lg: {
+    "lg": {
       fontSize: "1.15em",
       letterSpacing: "0.2px",
     },
-    xl: {
+    "xl": {
       fontSize: "1.25em",
       letterSpacing: "0px",
     },
-    xxl: {
+    "2xl": {
       fontSize: "1.45em",
       letterSpacing: "0px",
     },
@@ -321,7 +321,7 @@ Link.propTypes = {
   disabled: PropTypes.bool,
   href: PropTypes.string,
   onClick: PropTypes.func,
-  /** Options: 'lg', 'xl', 'xxl' */
+  /** Options: 'lg', 'xl', '2xl' */
   size: PropTypes.string,
   target: PropTypes.string,
   text: PropTypes.string,

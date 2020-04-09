@@ -90,9 +90,9 @@ storiesOf("Blocks|Icon Block", module)
         <IconBlock data={iconNames} />
         <IconBlock data={iconNames} size="lg" />
         <IconBlock data={iconNames} size="xl" />
-        <IconBlock data={iconNames} size="xxl" />
-        <IconBlock data={iconNames} size="xxxl" />
-        <IconBlock data={iconNames} size="xtreme" />
+        <IconBlock data={iconNames} size="2xl" />
+        <IconBlock data={iconNames} size="3xl" />
+        <IconBlock data={iconNames} size="4xl" />
       </Grid>
     );
   });

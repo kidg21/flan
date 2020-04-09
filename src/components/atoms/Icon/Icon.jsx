@@ -185,25 +185,25 @@ const colorHash = {
 };
 
 const sizeHash = {
-  xs: {
+  "xs": {
     font: "0.75em",
   },
-  sm: {
+  "sm": {
     font: "0.875em",
   },
-  lg: {
+  "lg": {
     font: "1.35em",
   },
-  xl: {
+  "xl": {
     font: "1.5em",
   },
-  xxl: {
+  "2xl": {
     font: "1.75em",
   },
-  xxxl: {
+  "3xl": {
     font: "2em",
   },
-  xtreme: {
+  "4xl": {
     font: "2.5em",
   },
 };
@@ -339,7 +339,7 @@ Icon.propTypes = {
   /** Options: '90', '180', '270' */
   rotation: PropTypes.number,
   /** Icons inherit the 'font-size' of the parent container and are relatively sized.
-   * Options: 'xs', 'sm', 'lg', 'xl', 'xxl', 'xxxl', 'xtreme'
+   * Options: 'xs', 'sm', 'lg', 'xl', '2xl', '3xl', '4xl'
    */
   size: PropTypes.string,
   variant: PropTypes.string,
