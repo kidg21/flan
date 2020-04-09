@@ -30,7 +30,7 @@ const Media = styled.section`
   height: auto;
   & > * {
     border-radius: ${(props) => {
-    return props.circle ? "100%" : "3px";
+    return props.isRound ? "100%" : "3px";
   }};
   filter: ${(props) => {
     return props.border ? props.theme.shadows.shadow1 : "";
@@ -77,7 +77,7 @@ function MediaBlock({
   align,
   body,
   children,
-  circle,
+  isRound,
   className,
   id,
   media,
@@ -142,7 +142,7 @@ function MediaBlock({
       onClick={onClick}
     >
       {media ? (
-        <Media justify={justify} circle={circle}>
+        <Media justify={justify} isRound={isRound}>
           {media}
         </Media>
       ) : null}
@@ -165,7 +165,7 @@ MediaBlock.propTypes = {
   body: PropTypes.node,
   /** Meant for use in nesting Media Blocks */
   children: PropTypes.node,
-  circle: PropTypes.bool,
+  isRound: PropTypes.bool,
   /** className used for extending styles */
   className: PropTypes.string,
   id: PropTypes.string,
@@ -180,7 +180,7 @@ MediaBlock.defaultProps = {
   align: "top",
   body: null,
   children: null,
-  circle: false,
+  isRound: false,
   className: null,
   id: null,
   media: null,

@@ -46,7 +46,7 @@ storiesOf("Blocks|Media Block", module)
           "Media Block",
         )}
         reverse={boolean("reverse", false, "Media Block")}
-        circle={boolean("circle", false, "Media Block")}
+        isRound={boolean("round", false, "Media Block")}
       />
     );
   })
