@@ -626,7 +626,7 @@ function CardGrid({
     <CardGridWrapper
       className={className}
       columns={columns}
-      gap={gap || "4x"}
+      gap={gap || "lg"}
       id={id}
       rows={rows}
     >
@@ -687,14 +687,13 @@ CardGrid.propTypes = {
     PropTypes.string,
     PropTypes.oneOf([
       "0",
-      "2x",
-      "3x",
-      "4x",
-      "5x",
-      "6x",
-      "7x",
-      "8x",
-      "9x",
+      "xs",
+      "sm",
+      "lg",
+      "xl",
+      "2xl",
+      "3xl",
+      "4xl",
     ]),
   ]),
   id: PropTypes.string,

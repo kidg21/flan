@@ -67,7 +67,7 @@
 
 //   .add("The Badge Family", () => {
 //     return (
-//       <CardGrid columns="4" gap="large">
+//       <CardGrid columns="4" gap="lg">
 //         <Card>
 //           <CardSection>
 //             <Badge label="1" />

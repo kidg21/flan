@@ -40,7 +40,7 @@
 //   })
 //   .add("Type", () => {
 //     return (
-//       <Grid gap="tiny">
+//       <Grid gap="xs">
 //         <Title text="Type" />
 //         <Image
 //           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"

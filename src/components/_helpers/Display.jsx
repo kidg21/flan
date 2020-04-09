@@ -89,7 +89,7 @@ function IconGrid({ data }) {
 function CommandGrid({ data }) {
   return data.map((item) => {
     return (
-      <Grid>
+      <Grid gap="xs">
         <Command command={item.command} />
         <Text text={item.desc} />
       </Grid>

@@ -50,15 +50,14 @@ storiesOf("Layout|Grid/", module)
           "grid gap",
           {
             "0": "0",
+            "xs": "xs",
+            "sm": "sm",
             "default": "",
-            "2x": "2x",
-            "3x": "3x",
-            "4x": "4x",
-            "5x": "5x",
-            "6x": "6x",
-            "7x": "7x",
-            "8x": "8x",
-            "9x": "9x",
+            "lg": "lg",
+            "xl": "xl",
+            "2xl": "2xl",
+            "3xl": "3xl",
+            "4xl": "4xl",
           },
           "",
           { display: "select" },
@@ -100,7 +99,7 @@ storiesOf("Layout|Grid/", module)
   })
   .add("Custom Grid", () => {
     return (
-      <Grid columns="5fr 2fr 1fr 5fr 1fr" rows="100px 3fr 1fr" gap="4">
+      <Grid columns="5fr 2fr 1fr 5fr 1fr" rows="100px 3fr 1fr" gap="xl">
         <Card />
         <Card />
         <Card />

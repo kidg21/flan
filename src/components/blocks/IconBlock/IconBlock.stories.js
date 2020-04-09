@@ -38,7 +38,7 @@ storiesOf("Blocks|Icon Block", module)
   .addDecorator(Padding)
   .add("Icons via Array", () => {
     return (
-      <Grid gap="4x">
+      <Grid gap="xl">
         <IconBlock data={iconNames} />
       </Grid>
     );
@@ -84,7 +84,7 @@ storiesOf("Blocks|Icon Block", module)
   })
   .add("Size", () => {
     return (
-      <Grid columns="1" gap="4x">
+      <Grid columns="1" gap="xl">
         <IconBlock data={iconNames} size="xs" />
         <IconBlock data={iconNames} size="sm" />
         <IconBlock data={iconNames} />

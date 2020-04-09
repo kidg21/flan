@@ -85,7 +85,7 @@ function Form({
           {description ? <Text size="sm" weight="bold" text={description} /> : null}
         </Header>
       ) : null}
-      <Inputs setColumns={setColumns} gap="2x">
+      <Inputs setColumns={setColumns}>
         {children}
       </Inputs>
     </FormWrapper>

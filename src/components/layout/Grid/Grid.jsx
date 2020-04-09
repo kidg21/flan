@@ -35,13 +35,38 @@ function Grid({
   // 'auto' by default with custom override
   const setRows = rows;
   // 'gutter' between grid items
-  let gridGap;
-  const numGap = gap ? parseInt(gap, 10) : 1;
-  if (gap && gap.toLowerCase() === "0") {
-    gridGap = "0";
-  } else if (!isNaN(numGap) && numGap < 10) {
-    gridGap = `${0.25 * numGap}rem`;
+  const baseGap = 0.25;
+  let setGap;
+  switch (gap) {
+    case "0":
+      setGap = "0";
+      break;
+    case "xs":
+      setGap = `${baseGap}rem`;
+      break;
+    case "sm":
+      setGap = `${baseGap * 2}rem`;
+      break;
+    default:
+      setGap = `${baseGap * 3}rem`;
+      break;
+    case "lg":
+      setGap = `${baseGap * 4}rem`;
+      break;
+    case "xl":
+      setGap = `${baseGap * 5}rem`;
+      break;
+    case "2xl":
+      setGap = `${baseGap * 6}rem`;
+      break;
+    case "3xl":
+      setGap = `${baseGap * 7}rem`;
+      break;
+    case "4xl":
+      setGap = `${baseGap * 8}rem`;
+      break;
   }
+
   let alignItems;
   switch (align) {
     case "center":
@@ -59,7 +84,7 @@ function Grid({
       alignItems={alignItems}
       className={className}
       columns={setColumns}
-      gap={gridGap}
+      gap={setGap}
       id={id}
       rows={setRows}
     >
@@ -83,14 +108,13 @@ Grid.propTypes = {
     PropTypes.string,
     PropTypes.oneOf([
       "0",
-      "2x",
-      "3x",
-      "4x",
-      "5x",
-      "6x",
-      "7x",
-      "8x",
-      "9x",
+      "xs",
+      "sm",
+      "lg",
+      "xl",
+      "2xl",
+      "3xl",
+      "4xl",
     ]),
   ]),
   id: PropTypes.string,

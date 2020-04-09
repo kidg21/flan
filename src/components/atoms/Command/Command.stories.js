@@ -104,7 +104,7 @@ export default {
 };
 export const CommandLibrary = () => {
   return (
-    <Grid gap="3x">
+    <Grid gap="xl">
       <CommandGrid data={commandsStandard} />
     </Grid>
   );
