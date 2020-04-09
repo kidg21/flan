@@ -19,7 +19,7 @@ const iconNames = [
   },
   {
     icon: "call",
-    hasSpin: true,
+    spin: true,
   },
   {
     icon: "delete",
@@ -27,7 +27,7 @@ const iconNames = [
   },
   {
     icon: "chat",
-    hasPulse: true,
+    pulse: true,
   },
   {
     icon: "edit",

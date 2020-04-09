@@ -29,14 +29,14 @@ function IconBlock({
               disabled={item.disabled}
               fixedWidth
               flip={item.flip}
-              hasPulse={item.hasPulse}
-              hasSpin={item.hasSpin}
               href={item.href}
               icon={item.icon}
               id={item.id}
               onClick={item.onClick}
+              pulse={item.pulse}
               rotation={item.rotation}
               size={size}
+              spin={item.spin}
               type={item.type}
             />
           );

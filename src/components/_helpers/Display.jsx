@@ -65,8 +65,8 @@ function IconGrid({ data }) {
               icon={item.icon}
               variant={item.variant}
               size={item.size || "xl"}
-              hasSpin={item.hasSpin}
-              hasPulse={item.hasPulse}
+              spin={item.spin}
+              pulse={item.pulse}
               fixedWidth
             />,
             width: "min-content",
