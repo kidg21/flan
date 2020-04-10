@@ -166,7 +166,7 @@ storiesOf("Blocks|Tabs", module)
   })
   .add("Vertical Column", () => {
     return (
-      <Tabs vertical>
+      <Tabs isVertical>
         <TabsItem label="Tab" />
         <TabsItem label="Tab" isSelected />
         <TabsItem label="Tab" />

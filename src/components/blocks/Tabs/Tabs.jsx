@@ -47,14 +47,14 @@ function TabsItem({
 }
 
 function Tabs({
-  children, data, disabled, id, vertical,
+  children, data, disabled, id, isVertical,
 }) {
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let setColumns;
   let setWidth;
 
-  if (vertical) {
+  if (isVertical) {
     setColumns = "none";
     setWidth = "auto";
   }
@@ -113,14 +113,14 @@ Tabs.propTypes = {
   data: PropTypes.arrayOf(PropTypes.shape(TabsItem.propTypes)),
   disabled: PropTypes.bool,
   id: PropTypes.string,
-  vertical: PropTypes.bool,
+  isVertical: PropTypes.bool,
 };
 Tabs.defaultProps = {
   children: null,
   data: null,
   disabled: false,
   id: null,
-  vertical: false,
+  isVertical: false,
 };
 
 export { Tabs as default, TabsItem };
