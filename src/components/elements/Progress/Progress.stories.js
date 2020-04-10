@@ -12,8 +12,8 @@ storiesOf("Elements|Progress", module)
   .add("Flow", () => {
     return (
       <ProgressBar >
-        <Step isSuccess title="Task" description="this is what you do" />
-        <Step isSuccess title="Task" description="this is what you do" />
+        <Step hasSuccess title="Task" description="this is what you do" />
+        <Step hasSuccess title="Task" description="this is what you do" />
         <Step isSelected title="Task" description="this is what you do" />
         <Step title="Task" description="this is what you do" />
         <Step title="Task" description="this is what you do" />
