@@ -15,6 +15,7 @@ const Wrapper = styled.div`
   display: block;
   padding: .5rem;
 `;
+
 const TableContainer = styled.table`
   width: 100%;
   color: ${(props) => {
@@ -22,18 +23,13 @@ const TableContainer = styled.table`
   }};
   table-layout: fixed;
   border-collapse: collapse;
-
-
   &:empty {
     ${SkeletonStatic};
     padding: 5px;
     width: 100 em;
     height: 5rem;
   }
-}
 `;
-
-
 
 const Cell = styled.td`
   padding: ${(props) => {
@@ -61,17 +57,17 @@ const Cell = styled.td`
 
 const Row = styled.tr`
   margin: 1em;
-
-  ${Cell}:first-child{
-    color: ${(props) => {
-      return props.theme.text.secondary;
-    }};
-  ${Cell}:last-child{
+  ${Cell}:first-child {
       color: ${(props) => {
-        return props.theme.text.primary;
-      }};
+    return props.theme.text.secondary;
+  }};
+  }
+  ${Cell}:last-child {
+        color: ${(props) => {
+    return props.theme.text.primary;
+  }};
+  }
 `;
-
 
 function Legend({
   id,
@@ -102,7 +98,7 @@ function Legend({
                 fontWeight={fontWeight}
                 fontSize={fontSize}
               >
-                <Text text={row.label}/>
+                <Text text={row.label} />
               </Cell>
               <Cell
                 cellBorder={cellBorder}
