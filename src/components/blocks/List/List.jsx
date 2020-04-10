@@ -19,10 +19,10 @@ const ListWrapper = styled.ul`
   list-style: none;
   li:not(:last-child) {
     border-bottom: ${(props) => {
-    return props.divider ? "1px solid" : "";
+    return props.isDivided ? "1px solid" : "";
   }};
     border-bottom-color: ${(props) => {
-    return props.divider ? props.theme.palette.neutral40 : "";
+    return props.isDivided ? props.theme.palette.neutral40 : "";
   }};
   }
 `;
@@ -38,12 +38,12 @@ const ListItemWrapper = styled.li`
   }};
   padding: 1em;
   cursor: ${(props) => {
-    return props.interactive ? "pointer" : "";
+    return props.isInteractive ? "pointer" : "";
   }};
   &:focus,
   &:hover {
     ${(props) => {
-    return props.interactive ? Darken : "";
+    return props.isInteractive ? Darken : "";
   }};
   }
   outline: none;
@@ -62,11 +62,11 @@ const ListItemWrapper = styled.li`
 `;
 
 function List({
-  children, divider, id, interactive,
+  children, id, isDivided, isInteractive,
 }) {
   return (
-    <InteractiveContext.Provider value={interactive}>
-      <ListWrapper divider={divider} id={id}>
+    <InteractiveContext.Provider value={isInteractive}>
+      <ListWrapper isDivided={isDivided} id={id}>
         {children}
       </ListWrapper>
     </InteractiveContext.Provider>
@@ -75,15 +75,15 @@ function List({
 
 List.propTypes = {
   children: PropTypes.node,
-  divider: PropTypes.bool,
   id: PropTypes.string,
-  interactive: PropTypes.bool,
+  isDivided: PropTypes.bool,
+  isInteractive: PropTypes.bool,
 };
 List.defaultProps = {
   children: null,
-  divider: false,
   id: null,
-  interactive: false,
+  isDivided: false,
+  isInteractive: false,
 };
 
 function getRightContent(post, disabled, onClick) {
@@ -131,14 +131,13 @@ function getLeftContent(pre, disabled, onClick) {
 }
 
 function ListItem({
-  active,
   as,
   children,
   description,
   disabled,
   href,
   id,
-  interactive,
+  isInteractive,
   isSelected,
   onClick,
   post,
@@ -158,13 +157,12 @@ function ListItem({
 
   return (
     <ListItemWrapper
-      active={active}
       as={as}
       href={href}
       id={id}
-      interactive={
-        typeof interactive === "boolean"
-          ? interactive
+      isInteractive={
+        typeof isInteractive === "boolean"
+          ? isInteractive
           : useContext(InteractiveContext)
       }
       isSelected={isSelected}
@@ -192,14 +190,13 @@ function ListItem({
 }
 
 ListItem.propTypes = {
-  active: PropTypes.bool,
   as: PropTypes.string,
   children: PropTypes.node,
   description: PropTypes.string,
   disabled: PropTypes.bool,
   href: PropTypes.node,
   id: PropTypes.string,
-  interactive: PropTypes.bool,
+  isInteractive: PropTypes.bool,
   isSelected: PropTypes.bool,
   onClick: PropTypes.func,
   title: PropTypes.string.isRequired,
@@ -217,14 +214,13 @@ ListItem.propTypes = {
   tabIndex: PropTypes.string,
 };
 ListItem.defaultProps = {
-  active: false,
   as: null,
   children: null,
   description: null,
   disabled: false,
   href: null,
   id: null,
-  interactive: null,
+  isInteractive: null,
   isSelected: false,
   onClick: null,
   post: null,
