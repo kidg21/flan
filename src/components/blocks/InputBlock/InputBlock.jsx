@@ -65,7 +65,7 @@ function InputBlock({
   onFocus,
   onKeyPress,
   options,
-  prefix,
+  hasPrefix,
   selectOptions,
   text,
   textInputs,
@@ -141,7 +141,7 @@ function InputBlock({
   });
   let inputContainer = inputElements;
   let gridColumns;
-  if (prefix) {
+  if (hasPrefix) {
     gridColumns = `${icon ? "auto" : "minmax(0, 1fr)"} minmax(auto, 3fr)`;
   } else {
     gridColumns = `minmax(auto, 3fr) ${icon ? "auto" : "minmax(0, 1fr)"}`;
@@ -156,15 +156,15 @@ function InputBlock({
   } else if (text) {
     inputContainer = (
       <Grid columns={gridColumns} gap="xs">
-        {prefix ? <PrePost><Label text={text} /></PrePost> : null}
+        {hasPrefix ? <PrePost><Label text={text} /></PrePost> : null}
         {inputElements}
-        {!prefix ? <PrePost><Label text={text} /></PrePost> : null}
+        {!hasPrefix ? <PrePost><Label text={text} /></PrePost> : null}
       </Grid>
     );
   } else if (options) {
     inputContainer = (
       <Grid columns={gridColumns} gap="xs">
-        {prefix ? (
+        {hasPrefix ? (
           <SelectMenu
             options={options}
             selectOptions={selectOptions}
@@ -173,7 +173,7 @@ function InputBlock({
           />
         ) : null}
         {inputElements}
-        {!prefix ? (
+        {!hasPrefix ? (
           <SelectMenu
             options={options}
             selectOptions={selectOptions}
@@ -186,11 +186,11 @@ function InputBlock({
   } else if (icon) {
     inputContainer = (
       <Grid columns={gridColumns} gap="xs">
-        {prefix ? (
+        {hasPrefix ? (
           <PrePost><Icon icon={icon} fixedWidth /></PrePost>
         ) : null}
         {inputElements}
-        {!prefix ? (
+        {!hasPrefix ? (
           <PrePost><Icon icon={icon} fixedWidth /></PrePost>
         ) : null}
       </Grid>
@@ -206,9 +206,9 @@ function InputBlock({
     );
     inputContainer = (
       <Grid columns={gridColumns} gap="xs">
-        {prefix ? buttonElement : null}
+        {hasPrefix ? buttonElement : null}
         {inputElements}
-        {!prefix ? buttonElement : null}
+        {!hasPrefix ? buttonElement : null}
       </Grid>
     );
   } else {
@@ -225,10 +225,10 @@ function InputBlock({
         columns="1"
         disabled={isDisabled}
         gap="xs"
+        hasPrefix={hasPrefix}
         id={id}
         inputTextColor={inputTextColor}
         isRequired={isRequired}
-        prefix={prefix}
         text={text}
       >
         {label ? (
@@ -252,6 +252,7 @@ InputBlock.propTypes = {
   className: PropTypes.string,
   disabled: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  hasPrefix: PropTypes.bool,
   helpText: PropTypes.string,
   icon: PropTypes.string,
   id: PropTypes.string,
@@ -265,7 +266,6 @@ InputBlock.propTypes = {
     label: PropTypes.string,
     value: PropTypes.any,
   })),
-  prefix: PropTypes.bool,
   selectOptions: PropTypes.string,
   text: PropTypes.string,
   textInputs: PropTypes.arrayOf(PropTypes.shape({
@@ -284,6 +284,7 @@ InputBlock.defaultProps = {
   className: null,
   disabled: null,
   error: null,
+  hasPrefix: false,
   helpText: null,
   icon: null,
   id: null,
@@ -294,7 +295,6 @@ InputBlock.defaultProps = {
   onFocus: null,
   onKeyPress: null,
   options: null,
-  prefix: false,
   selectOptions: null,
   text: null,
   textInputs: {
