@@ -295,6 +295,7 @@ function SelectMenu({
     <SelectMenuContainer
       columns="1"
       disabled={isDisabled} // input attribute
+      gap="xs"
       isRequired={isRequired}
       textColor={textColor}
     >

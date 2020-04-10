@@ -89,6 +89,7 @@ function Calendar({
       columns="1"
       disabled={disabled}
       error={error}
+      gap="xs"
       id={uId}
       isRequired={isRequired}
     >

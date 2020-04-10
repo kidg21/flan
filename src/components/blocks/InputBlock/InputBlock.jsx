@@ -149,13 +149,13 @@ function InputBlock({
   if (inputElements.length > 1) {
     const numInputs = Math.min(inputElements.length, 3);
     inputContainer = (
-      <Grid columns={numInputs}>
+      <Grid columns={numInputs} gap="xs">
         {inputElements.slice(0, numInputs)}
       </Grid>
     );
   } else if (text) {
     inputContainer = (
-      <Grid columns={gridColumns}>
+      <Grid columns={gridColumns} gap="xs">
         {prefix ? <PrePost><Label text={text} /></PrePost> : null}
         {inputElements}
         {!prefix ? <PrePost><Label text={text} /></PrePost> : null}
@@ -163,7 +163,7 @@ function InputBlock({
     );
   } else if (options) {
     inputContainer = (
-      <Grid columns={gridColumns}>
+      <Grid columns={gridColumns} gap="xs">
         {prefix ? (
           <SelectMenu
             options={options}
@@ -185,7 +185,7 @@ function InputBlock({
     );
   } else if (icon) {
     inputContainer = (
-      <Grid columns={gridColumns}>
+      <Grid columns={gridColumns} gap="xs">
         {prefix ? (
           <PrePost><Icon icon={icon} fixedWidth /></PrePost>
         ) : null}
@@ -205,7 +205,7 @@ function InputBlock({
       />
     );
     inputContainer = (
-      <Grid columns={gridColumns}>
+      <Grid columns={gridColumns} gap="xs">
         {prefix ? buttonElement : null}
         {inputElements}
         {!prefix ? buttonElement : null}
@@ -213,7 +213,7 @@ function InputBlock({
     );
   } else {
     inputContainer = (
-      <Grid columns="1">
+      <Grid columns="1" gap="xs">
         {inputElements}
       </Grid>
     );
@@ -224,6 +224,7 @@ function InputBlock({
         className={className}
         columns="1"
         disabled={isDisabled}
+        gap="xs"
         id={id}
         inputTextColor={inputTextColor}
         isRequired={isRequired}
