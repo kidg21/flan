@@ -45,7 +45,7 @@ storiesOf("Blocks|Media Block", module)
           { display: "select" },
           "Media Block",
         )}
-        reverse={boolean("reverse", false, "Media Block")}
+        isReversed={boolean("reversed", false, "Media Block")}
         isRound={boolean("round", false, "Media Block")}
       />
     );
@@ -80,11 +80,11 @@ storiesOf("Blocks|Media Block", module)
           media={image}
           body={
             <Fragment>
-              <Title size="lg" weight="bold" text="Media Block (reverse)" />
+              <Title size="lg" weight="bold" text="Media Block (isReversed)" />
               {description}
             </Fragment>
           }
-          reverse
+          isReversed
         />
         <MediaBlock
           media={image}
@@ -100,12 +100,12 @@ storiesOf("Blocks|Media Block", module)
           media={image}
           body={
             <Fragment>
-              <Title size="lg" weight="bold" text="Media Block - Vertical (reverse)" />
+              <Title size="lg" weight="bold" text="Media Block - Vertical (isReversed)" />
               {description}
             </Fragment>
           }
           align="vertical"
-          reverse
+          isReversed
         />
         <MediaBlock
           media={image}
@@ -121,12 +121,12 @@ storiesOf("Blocks|Media Block", module)
           media={image}
           body={
             <Fragment>
-              <Title size="lg" weight="bold" text="Media Block - Inline (reverse)" />
+              <Title size="lg" weight="bold" text="Media Block - Inline (isReversed)" />
               {description}
             </Fragment>
           }
           align="inline"
-          reverse
+          isReversed
         />
       </React.Fragment>
     );

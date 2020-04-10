@@ -82,7 +82,7 @@ function MediaBlock({
   id,
   media,
   onClick,
-  reverse,
+  isReversed,
 }) {
   let gridTemplate;
   let gridColumns;
@@ -94,7 +94,7 @@ function MediaBlock({
   switch (align && align.toLowerCase()) {
     case "vertical":
       gridColumns = "1fr";
-      if (reverse) {
+      if (isReversed) {
         gridTemplate = " 'body body' 'content content'";
         padding = "0 0.25rem 1rem";
       } else {
@@ -104,7 +104,7 @@ function MediaBlock({
       break;
     case "inline":
       alignItems = "center";
-      if (reverse) {
+      if (isReversed) {
         displayInline = true;
         gridColumns = "1fr 3rem";
         gridTemplate = "'body content'";
@@ -117,7 +117,7 @@ function MediaBlock({
       }
       break;
     default:
-      if (reverse) {
+      if (isReversed) {
         gridTemplate = "'body content' 'body .'";
         gridColumns = "4fr 1fr";
         padding = "0 1rem 0 0";
@@ -165,27 +165,27 @@ MediaBlock.propTypes = {
   body: PropTypes.node,
   /** Meant for use in nesting Media Blocks */
   children: PropTypes.node,
-  isRound: PropTypes.bool,
   /** className used for extending styles */
   className: PropTypes.string,
   id: PropTypes.string,
+  isReversed: PropTypes.bool,
+  isRound: PropTypes.bool,
   /** Used to define the content in the 'media' section */
   media: PropTypes.node,
   /** Used to 'flip' the Media and Body elements along the x-axis */
   onClick: PropTypes.func,
-  reverse: PropTypes.bool,
 };
 
 MediaBlock.defaultProps = {
   align: "top",
   body: null,
   children: null,
-  isRound: false,
   className: null,
   id: null,
+  isReversed: false,
+  isRound: false,
   media: null,
   onClick: null,
-  reverse: false,
 };
 
 export default MediaBlock;
