@@ -96,6 +96,7 @@ const iconHash = {
   contact: "address-card",
   contacts: ["far", "address-book"],
   copy: ["far", "copy"],
+  database: "database",
   delete: ["far", "trash-alt"],
   directions: ["far", "directions"],
   download: ["far", "arrow-to-bottom"],
