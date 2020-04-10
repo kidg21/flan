@@ -8,58 +8,61 @@ Array [
     className="Notification__NotificationContainer-sc-1wz6254-1 cWsdIK"
     id={null}
     onClick={null}
-    opacity={true}
-    scale={true}
-    style={null}
   >
-    <span
-      className="Notification__ContentWrapper-sc-1wz6254-0 cNubMo"
+    <div
+      className="Card__CardWrapper-sc-1g3s676-5 cEBIcs Notification__ContentWrapper-sc-1wz6254-0 cNubMo"
+      href={null}
+      id={null}
+      media={null}
+      onClick={null}
     >
       <div
-        className="Card__CardWrapper-sc-1g3s676-5 gaLndW Banner__StyledBanner-sc-6825al-0 bfAGjz"
+        className="Card__CardWrapper-sc-1g3s676-5 lkFwtr Banner__StyledBanner-sc-6825al-0 bfAGjz"
         href={null}
         id={null}
         media={null}
         onClick={null}
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-2 gzisev"
+          className="Bar__BarLayout-icfo76-2 bRGQtj"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-1 dSTdeN"
+            className="Bar__Slot-icfo76-1 fIRUJx"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo"
               id={null}
               rows={null}
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                fontSize="1.05em"
-                fontWeight={400}
+              <h5
+                className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+                fontSize="1.15em"
+                fontWeight={600}
                 letterSpacing="0px"
               >
                 This is a Standard notification.
-              </h6>
+              </h5>
             </section>
           </div>
           <div
-            className="Bar__Slot-sc-1c4axau-1 kMmFgx"
+            className="Bar__Slot-icfo76-1 cxljst"
           >
             <a
               className="Icon__LinkedIcon-sc-1oa9m1v-0 kzNrBw"
               disabled={null}
+              href={null}
               onClick={[Function]}
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-times fa-w-10 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 egNihH Banner__Close-sc-6825al-1 cgOoTm"
-                color="link"
+                className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 bpsbMF Banner__Close-sc-6825al-1 cgOoTm"
+                color={null}
                 data-icon="times"
                 data-prefix="far"
                 focusable="false"
+                fontSize="1.35em"
                 id={null}
                 role="img"
                 style={Object {}}
@@ -76,31 +79,32 @@ Array [
           </div>
         </div>
       </div>
-    </span>
+    </div>
   </div>,
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
+    className="Button__StyledButton-sc-1v7sls2-0 jgKudQ"
     disabled={false}
     htmlFor={null}
     id={null}
     name={null}
     onClick={[Function]}
     tabIndex="1"
+    type="button"
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
       id={null}
       rows={null}
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-        fontSize="1em"
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+        fontSize="0.876em"
         fontWeight={600}
-        id={null}
+        htmlFor={null}
         letterSpacing="0px"
       >
         Show Notification
-      </p>
+      </label>
     </section>
   </button>,
 ]
@@ -114,58 +118,61 @@ Array [
     className="Notification__NotificationContainer-sc-1wz6254-1 gupnfs"
     id={null}
     onClick={null}
-    opacity={true}
-    scale={true}
-    style={null}
   >
-    <span
-      className="Notification__ContentWrapper-sc-1wz6254-0 cNubMo"
+    <div
+      className="Card__CardWrapper-sc-1g3s676-5 cEBIcs Notification__ContentWrapper-sc-1wz6254-0 cNubMo"
+      href={null}
+      id={null}
+      media={null}
+      onClick={null}
     >
       <div
-        className="Card__CardWrapper-sc-1g3s676-5 gaLndW Banner__StyledBanner-sc-6825al-0 bfAGjz"
+        className="Card__CardWrapper-sc-1g3s676-5 lkFwtr Banner__StyledBanner-sc-6825al-0 bfAGjz"
         href={null}
         id={null}
         media={null}
         onClick={null}
       >
         <div
-          className="Bar__BarLayout-sc-1c4axau-2 gzisev"
+          className="Bar__BarLayout-icfo76-2 bRGQtj"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-1 dSTdeN"
+            className="Bar__Slot-icfo76-1 fIRUJx"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo"
               id={null}
               rows={null}
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                fontSize="1.05em"
-                fontWeight={400}
+              <h5
+                className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+                fontSize="1.15em"
+                fontWeight={600}
                 letterSpacing="0px"
               >
                 This is a Standard notification.
-              </h6>
+              </h5>
             </section>
           </div>
           <div
-            className="Bar__Slot-sc-1c4axau-1 kMmFgx"
+            className="Bar__Slot-icfo76-1 cxljst"
           >
             <a
               className="Icon__LinkedIcon-sc-1oa9m1v-0 kzNrBw"
               disabled={null}
+              href={null}
               onClick={[Function]}
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-times fa-w-10 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 egNihH Banner__Close-sc-6825al-1 cgOoTm"
-                color="link"
+                className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 bpsbMF Banner__Close-sc-6825al-1 cgOoTm"
+                color={null}
                 data-icon="times"
                 data-prefix="far"
                 focusable="false"
+                fontSize="1.35em"
                 id={null}
                 role="img"
                 style={Object {}}
@@ -182,166 +189,33 @@ Array [
           </div>
         </div>
       </div>
-    </span>
+    </div>
   </div>,
-  <div
-    className="Panel__PanelWrapper-sc-48epke-0 kObpyG"
+  <button
+    className="Button__StyledButton-sc-1v7sls2-0 jgKudQ"
+    disabled={false}
+    htmlFor={null}
     id={null}
+    name={null}
+    onClick={[Function]}
+    tabIndex="1"
+    type="button"
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 bHxuLl"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
       id={null}
+      rows={null}
     >
-      <button
-        className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
-        disabled={false}
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+        fontSize="0.876em"
+        fontWeight={600}
         htmlFor={null}
-        id={null}
-        name={null}
-        onClick={[Function]}
-        tabIndex="1"
+        letterSpacing="0px"
       >
-        <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
-          id={null}
-          rows={null}
-        >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-            fontSize="1em"
-            fontWeight={600}
-            id={null}
-            letterSpacing="0px"
-          >
-            Show Notification
-          </p>
-        </section>
-      </button>
+        Show Notification
+      </label>
     </section>
-    <section
-      className="Panel__SectionWrapper-sc-48epke-1 jZYywS"
-      id={null}
-    />
-  </div>,
-]
-`;
-
-exports[` 3`] = `
-Array [
-  <div
-    aria-describedby={null}
-    aria-labelledby={null}
-    className="Notification__NotificationContainer-sc-1wz6254-1 cWsdIK"
-    id={null}
-    onClick={null}
-    opacity={true}
-    scale={true}
-    style={null}
-  >
-    <span
-      className="Notification__ContentWrapper-sc-1wz6254-0 cNubMo"
-    >
-      <div
-        className="Card__CardWrapper-sc-1g3s676-5 gaLndW Banner__StyledBanner-sc-6825al-0 bfAGjz"
-        href={null}
-        id={null}
-        media={null}
-        onClick={null}
-      >
-        <div
-          className="Bar__BarLayout-sc-1c4axau-2 gzisev"
-          id={null}
-          onClick={null}
-        >
-          <div
-            className="Bar__Slot-sc-1c4axau-1 dSTdeN"
-          >
-            <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
-              id={null}
-              rows={null}
-            >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                fontSize="1.05em"
-                fontWeight={400}
-                letterSpacing="0px"
-              >
-                This is a Standard notification telling you stuff.
-              </h6>
-            </section>
-          </div>
-          <div
-            className="Bar__Slot-sc-1c4axau-1 kMmFgx"
-          >
-            <a
-              className="Icon__LinkedIcon-sc-1oa9m1v-0 kzNrBw"
-              disabled={null}
-              onClick={[Function]}
-            >
-              <svg
-                aria-hidden="true"
-                className="svg-inline--fa fa-times fa-w-10 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 egNihH Banner__Close-sc-6825al-1 cgOoTm"
-                color="link"
-                data-icon="times"
-                data-prefix="far"
-                focusable="false"
-                id={null}
-                role="img"
-                style={Object {}}
-                viewBox="0 0 320 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"
-                  fill="currentColor"
-                  style={Object {}}
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </span>
-  </div>,
-  <div
-    className="Panel__PanelWrapper-sc-48epke-0 kObpyG"
-    id={null}
-  >
-    <section
-      className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 bHxuLl"
-      id={null}
-    >
-      <button
-        className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
-        disabled={false}
-        htmlFor={null}
-        id={null}
-        name={null}
-        onClick={[Function]}
-        tabIndex="1"
-      >
-        <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
-          id={null}
-          rows={null}
-        >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-            fontSize="1em"
-            fontWeight={600}
-            id={null}
-            letterSpacing="0px"
-          >
-            Status Notification
-          </p>
-        </section>
-      </button>
-    </section>
-    <section
-      className="Panel__SectionWrapper-sc-48epke-1 jZYywS"
-      id={null}
-    />
-  </div>,
+  </button>,
 ]
 `;

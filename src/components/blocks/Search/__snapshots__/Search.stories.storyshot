@@ -2,7 +2,7 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo"
   id={null}
   rows={null}
 >
@@ -16,26 +16,28 @@ exports[` 1`] = `
       type="search"
     />
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV"
+      className="Button__StyledButton-sc-1v7sls2-0 jkfWWA"
       disabled={false}
       htmlFor={null}
       id={null}
       name={null}
       onClick={null}
       tabIndex="1"
+      type="button"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 gOxAef Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 dAiHAN Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
         id={null}
         rows={null}
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-search fa-w-16 fa-md Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+          className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 cJJNyd"
           color={null}
           data-icon="search"
           data-prefix="far"
           focusable="false"
+          fontSize="inherit"
           id={null}
           role="img"
           style={Object {}}
@@ -56,7 +58,7 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo"
   id={null}
   rows={null}
 >
@@ -70,26 +72,28 @@ exports[` 2`] = `
       type="search"
     />
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV"
+      className="Button__StyledButton-sc-1v7sls2-0 jkfWWA"
       disabled={false}
       htmlFor={null}
       id={null}
       name={null}
       onClick={null}
       tabIndex="1"
+      type="button"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 gOxAef Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 dAiHAN Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
         id={null}
         rows={null}
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-search fa-w-16 fa-md Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+          className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 cJJNyd"
           color={null}
           data-icon="search"
           data-prefix="far"
           focusable="false"
+          fontSize="inherit"
           id={null}
           role="img"
           style={Object {}}
@@ -110,7 +114,7 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo"
   id={null}
   rows={null}
 >
@@ -124,26 +128,28 @@ exports[` 3`] = `
       type="search"
     />
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 kRDsvV"
+      className="Button__StyledButton-sc-1v7sls2-0 jkfWWA"
       disabled={false}
       htmlFor={null}
       id={null}
       name={null}
       onClick={null}
       tabIndex="1"
+      type="button"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 gOxAef Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 dAiHAN Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
         id={null}
         rows={null}
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-search fa-w-16 fa-md Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+          className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 cJJNyd"
           color={null}
           data-icon="search"
           data-prefix="far"
           focusable="false"
+          fontSize="inherit"
           id={null}
           role="img"
           style={Object {}}
@@ -160,12 +166,12 @@ exports[` 3`] = `
     </button>
   </form>
   <div
-    className="Container__Wrapper-sc-1i4fzzd-0 hbxOEM"
+    className="Container__Wrapper-sc-1i4fzzd-0 cDSlVl"
     height={null}
     width={null}
   >
     <div
-      className="Container__BoxContainer-sc-1i4fzzd-1 ixiyce"
+      className="Container__BoxContainer-sc-1i4fzzd-1 ckdIcj"
       height=""
       id="results-container"
     >
@@ -175,7 +181,7 @@ exports[` 3`] = `
         id={null}
       >
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
           disabled={false}
           href={null}
           id={null}
@@ -183,24 +189,24 @@ exports[` 3`] = `
           tabIndex="0"
         >
           <div
-            className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+            className="Bar__BarLayout-icfo76-2 bRGQtj"
             id={null}
             onClick={null}
           >
             <div
-              className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+              className="Bar__Slot-icfo76-1 RjiBe"
             >
               <h6
-                className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                fontSize="1.05em"
+                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                fontSize="1em"
                 fontWeight={400}
                 letterSpacing="0px"
               >
                 White House
               </h6>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                fontSize="0.95em"
+                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                fontSize="1em"
                 fontWeight={400}
                 id={null}
                 letterSpacing="0px"
@@ -211,7 +217,7 @@ exports[` 3`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
           disabled={false}
           href={null}
           id={null}
@@ -219,24 +225,24 @@ exports[` 3`] = `
           tabIndex="0"
         >
           <div
-            className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+            className="Bar__BarLayout-icfo76-2 bRGQtj"
             id={null}
             onClick={null}
           >
             <div
-              className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+              className="Bar__Slot-icfo76-1 RjiBe"
             >
               <h6
-                className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                fontSize="1.05em"
+                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                fontSize="1em"
                 fontWeight={400}
                 letterSpacing="0px"
               >
                 Orange House
               </h6>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                fontSize="0.95em"
+                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                fontSize="1em"
                 fontWeight={400}
                 id={null}
                 letterSpacing="0px"
@@ -247,7 +253,7 @@ exports[` 3`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
           disabled={false}
           href={null}
           id={null}
@@ -255,24 +261,24 @@ exports[` 3`] = `
           tabIndex="0"
         >
           <div
-            className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+            className="Bar__BarLayout-icfo76-2 bRGQtj"
             id={null}
             onClick={null}
           >
             <div
-              className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+              className="Bar__Slot-icfo76-1 RjiBe"
             >
               <h6
-                className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                fontSize="1.05em"
+                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                fontSize="1em"
                 fontWeight={400}
                 letterSpacing="0px"
               >
                 Red House
               </h6>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                fontSize="0.95em"
+                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                fontSize="1em"
                 fontWeight={400}
                 id={null}
                 letterSpacing="0px"
@@ -283,7 +289,7 @@ exports[` 3`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
           disabled={false}
           href={null}
           id={null}
@@ -291,24 +297,24 @@ exports[` 3`] = `
           tabIndex="0"
         >
           <div
-            className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+            className="Bar__BarLayout-icfo76-2 bRGQtj"
             id={null}
             onClick={null}
           >
             <div
-              className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+              className="Bar__Slot-icfo76-1 RjiBe"
             >
               <h6
-                className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                fontSize="1.05em"
+                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                fontSize="1em"
                 fontWeight={400}
                 letterSpacing="0px"
               >
                 Green House
               </h6>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                fontSize="0.95em"
+                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                fontSize="1em"
                 fontWeight={400}
                 id={null}
                 letterSpacing="0px"
@@ -319,7 +325,7 @@ exports[` 3`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
           disabled={false}
           href={null}
           id={null}
@@ -327,24 +333,24 @@ exports[` 3`] = `
           tabIndex="0"
         >
           <div
-            className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+            className="Bar__BarLayout-icfo76-2 bRGQtj"
             id={null}
             onClick={null}
           >
             <div
-              className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+              className="Bar__Slot-icfo76-1 RjiBe"
             >
               <h6
-                className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                fontSize="1.05em"
+                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                fontSize="1em"
                 fontWeight={400}
                 letterSpacing="0px"
               >
                 Black House
               </h6>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                fontSize="0.95em"
+                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                fontSize="1em"
                 fontWeight={400}
                 id={null}
                 letterSpacing="0px"
@@ -355,7 +361,7 @@ exports[` 3`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
           disabled={false}
           href={null}
           id={null}
@@ -363,24 +369,24 @@ exports[` 3`] = `
           tabIndex="0"
         >
           <div
-            className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+            className="Bar__BarLayout-icfo76-2 bRGQtj"
             id={null}
             onClick={null}
           >
             <div
-              className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+              className="Bar__Slot-icfo76-1 RjiBe"
             >
               <h6
-                className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                fontSize="1.05em"
+                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                fontSize="1em"
                 fontWeight={400}
                 letterSpacing="0px"
               >
                 Blue House
               </h6>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                fontSize="0.95em"
+                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                fontSize="1em"
                 fontWeight={400}
                 id={null}
                 letterSpacing="0px"
@@ -391,7 +397,7 @@ exports[` 3`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
           disabled={false}
           href={null}
           id={null}
@@ -399,24 +405,24 @@ exports[` 3`] = `
           tabIndex="0"
         >
           <div
-            className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+            className="Bar__BarLayout-icfo76-2 bRGQtj"
             id={null}
             onClick={null}
           >
             <div
-              className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+              className="Bar__Slot-icfo76-1 RjiBe"
             >
               <h6
-                className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                fontSize="1.05em"
+                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                fontSize="1em"
                 fontWeight={400}
                 letterSpacing="0px"
               >
                 Address
               </h6>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                fontSize="0.95em"
+                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                fontSize="1em"
                 fontWeight={400}
                 id={null}
                 letterSpacing="0px"
@@ -427,7 +433,7 @@ exports[` 3`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
           disabled={false}
           href={null}
           id={null}
@@ -435,24 +441,24 @@ exports[` 3`] = `
           tabIndex="0"
         >
           <div
-            className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+            className="Bar__BarLayout-icfo76-2 bRGQtj"
             id={null}
             onClick={null}
           >
             <div
-              className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+              className="Bar__Slot-icfo76-1 RjiBe"
             >
               <h6
-                className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                fontSize="1.05em"
+                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                fontSize="1em"
                 fontWeight={400}
                 letterSpacing="0px"
               >
                 APN
               </h6>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                fontSize="0.95em"
+                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                fontSize="1em"
                 fontWeight={400}
                 id={null}
                 letterSpacing="0px"
@@ -463,7 +469,7 @@ exports[` 3`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
           disabled={false}
           href={null}
           id={null}
@@ -471,24 +477,24 @@ exports[` 3`] = `
           tabIndex="0"
         >
           <div
-            className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+            className="Bar__BarLayout-icfo76-2 bRGQtj"
             id={null}
             onClick={null}
           >
             <div
-              className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+              className="Bar__Slot-icfo76-1 RjiBe"
             >
               <h6
-                className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                fontSize="1.05em"
+                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                fontSize="1em"
                 fontWeight={400}
                 letterSpacing="0px"
               >
                 Owner
               </h6>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                fontSize="0.95em"
+                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                fontSize="1em"
                 fontWeight={400}
                 id={null}
                 letterSpacing="0px"
@@ -499,7 +505,7 @@ exports[` 3`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
           disabled={false}
           href={null}
           id={null}
@@ -507,24 +513,24 @@ exports[` 3`] = `
           tabIndex="0"
         >
           <div
-            className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+            className="Bar__BarLayout-icfo76-2 bRGQtj"
             id={null}
             onClick={null}
           >
             <div
-              className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+              className="Bar__Slot-icfo76-1 RjiBe"
             >
               <h6
-                className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                fontSize="1.05em"
+                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                fontSize="1em"
                 fontWeight={400}
                 letterSpacing="0px"
               >
                 Address
               </h6>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                fontSize="0.95em"
+                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                fontSize="1em"
                 fontWeight={400}
                 id={null}
                 letterSpacing="0px"
@@ -536,12 +542,12 @@ exports[` 3`] = `
         </li>
       </ul>
       <div
-        className="Bar__BarLayout-sc-1c4axau-2 BillH"
+        className="Bar__BarLayout-icfo76-2 lazfJH"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-sc-1c4axau-1 ekMqDX"
+          className="Bar__Slot-icfo76-1 dLaZFL"
         >
           <a
             className="Typography__LinkText-sc-19auepv-1 fLIgSj"
@@ -563,12 +569,12 @@ exports[` 3`] = `
 
 exports[` 4`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 eTxJUf"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 ceKbHJ"
   id={null}
   rows={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo"
     id={null}
     rows={null}
   >
@@ -582,26 +588,28 @@ exports[` 4`] = `
         type="search"
       />
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 kRDsvV"
+        className="Button__StyledButton-sc-1v7sls2-0 jkfWWA"
         disabled={false}
         htmlFor={null}
         id={null}
         name={null}
         onClick={null}
         tabIndex="1"
+        type="button"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 gOxAef Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 dAiHAN Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
           id={null}
           rows={null}
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-search fa-w-16 fa-md Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+            className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 cJJNyd"
             color={null}
             data-icon="search"
             data-prefix="far"
             focusable="false"
+            fontSize="inherit"
             id={null}
             role="img"
             style={Object {}}
@@ -618,27 +626,27 @@ exports[` 4`] = `
       </button>
     </form>
     <div
-      className="Container__Wrapper-sc-1i4fzzd-0 hbxOEM"
+      className="Container__Wrapper-sc-1i4fzzd-0 cDSlVl"
       height={null}
       width={null}
     >
       <div
-        className="Container__BoxContainer-sc-1i4fzzd-1 ixiyce"
+        className="Container__BoxContainer-sc-1i4fzzd-1 ckdIcj"
         height=""
         id="results-container"
       >
          
         <div
-          className="Bar__BarLayout-sc-1c4axau-2 BillH"
+          className="Bar__BarLayout-icfo76-2 lazfJH"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-1 ekMqDX"
+            className="Bar__Slot-icfo76-1 dLaZFL"
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-              fontSize="0.95em"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+              fontSize="1em"
               fontWeight={400}
               id={null}
               letterSpacing="0px"
@@ -652,7 +660,7 @@ exports[` 4`] = `
           id={null}
         >
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+            className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
             disabled={false}
             href={null}
             id={null}
@@ -660,24 +668,24 @@ exports[` 4`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+              className="Bar__BarLayout-icfo76-2 bRGQtj"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+                className="Bar__Slot-icfo76-1 RjiBe"
               >
                 <h6
-                  className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                  fontSize="1.05em"
+                  className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                  fontSize="1em"
                   fontWeight={400}
                   letterSpacing="0px"
                 >
                   White House
                 </h6>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                  fontSize="0.95em"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
                   fontWeight={400}
                   id={null}
                   letterSpacing="0px"
@@ -688,7 +696,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+            className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
             disabled={false}
             href={null}
             id={null}
@@ -696,24 +704,24 @@ exports[` 4`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+              className="Bar__BarLayout-icfo76-2 bRGQtj"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+                className="Bar__Slot-icfo76-1 RjiBe"
               >
                 <h6
-                  className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                  fontSize="1.05em"
+                  className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                  fontSize="1em"
                   fontWeight={400}
                   letterSpacing="0px"
                 >
                   Orange House
                 </h6>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                  fontSize="0.95em"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
                   fontWeight={400}
                   id={null}
                   letterSpacing="0px"
@@ -724,7 +732,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+            className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
             disabled={false}
             href={null}
             id={null}
@@ -732,24 +740,24 @@ exports[` 4`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+              className="Bar__BarLayout-icfo76-2 bRGQtj"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+                className="Bar__Slot-icfo76-1 RjiBe"
               >
                 <h6
-                  className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                  fontSize="1.05em"
+                  className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                  fontSize="1em"
                   fontWeight={400}
                   letterSpacing="0px"
                 >
                   Red House
                 </h6>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                  fontSize="0.95em"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
                   fontWeight={400}
                   id={null}
                   letterSpacing="0px"
@@ -760,7 +768,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+            className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
             disabled={false}
             href={null}
             id={null}
@@ -768,24 +776,24 @@ exports[` 4`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+              className="Bar__BarLayout-icfo76-2 bRGQtj"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+                className="Bar__Slot-icfo76-1 RjiBe"
               >
                 <h6
-                  className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                  fontSize="1.05em"
+                  className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                  fontSize="1em"
                   fontWeight={400}
                   letterSpacing="0px"
                 >
                   Green House
                 </h6>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                  fontSize="0.95em"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
                   fontWeight={400}
                   id={null}
                   letterSpacing="0px"
@@ -796,7 +804,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+            className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
             disabled={false}
             href={null}
             id={null}
@@ -804,24 +812,24 @@ exports[` 4`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+              className="Bar__BarLayout-icfo76-2 bRGQtj"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+                className="Bar__Slot-icfo76-1 RjiBe"
               >
                 <h6
-                  className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                  fontSize="1.05em"
+                  className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                  fontSize="1em"
                   fontWeight={400}
                   letterSpacing="0px"
                 >
                   Black House
                 </h6>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                  fontSize="0.95em"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
                   fontWeight={400}
                   id={null}
                   letterSpacing="0px"
@@ -832,7 +840,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+            className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
             disabled={false}
             href={null}
             id={null}
@@ -840,24 +848,24 @@ exports[` 4`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+              className="Bar__BarLayout-icfo76-2 bRGQtj"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+                className="Bar__Slot-icfo76-1 RjiBe"
               >
                 <h6
-                  className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                  fontSize="1.05em"
+                  className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                  fontSize="1em"
                   fontWeight={400}
                   letterSpacing="0px"
                 >
                   Blue House
                 </h6>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                  fontSize="0.95em"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
                   fontWeight={400}
                   id={null}
                   letterSpacing="0px"
@@ -868,7 +876,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+            className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
             disabled={false}
             href={null}
             id={null}
@@ -876,24 +884,24 @@ exports[` 4`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+              className="Bar__BarLayout-icfo76-2 bRGQtj"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+                className="Bar__Slot-icfo76-1 RjiBe"
               >
                 <h6
-                  className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                  fontSize="1.05em"
+                  className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                  fontSize="1em"
                   fontWeight={400}
                   letterSpacing="0px"
                 >
                   Address
                 </h6>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                  fontSize="0.95em"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
                   fontWeight={400}
                   id={null}
                   letterSpacing="0px"
@@ -904,7 +912,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+            className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
             disabled={false}
             href={null}
             id={null}
@@ -912,24 +920,24 @@ exports[` 4`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+              className="Bar__BarLayout-icfo76-2 bRGQtj"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+                className="Bar__Slot-icfo76-1 RjiBe"
               >
                 <h6
-                  className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                  fontSize="1.05em"
+                  className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                  fontSize="1em"
                   fontWeight={400}
                   letterSpacing="0px"
                 >
                   APN
                 </h6>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                  fontSize="0.95em"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
                   fontWeight={400}
                   id={null}
                   letterSpacing="0px"
@@ -940,7 +948,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+            className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
             disabled={false}
             href={null}
             id={null}
@@ -948,24 +956,24 @@ exports[` 4`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+              className="Bar__BarLayout-icfo76-2 bRGQtj"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+                className="Bar__Slot-icfo76-1 RjiBe"
               >
                 <h6
-                  className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                  fontSize="1.05em"
+                  className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                  fontSize="1em"
                   fontWeight={400}
                   letterSpacing="0px"
                 >
                   Owner
                 </h6>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                  fontSize="0.95em"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
                   fontWeight={400}
                   id={null}
                   letterSpacing="0px"
@@ -976,7 +984,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+            className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
             disabled={false}
             href={null}
             id={null}
@@ -984,24 +992,24 @@ exports[` 4`] = `
             tabIndex="0"
           >
             <div
-              className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+              className="Bar__BarLayout-icfo76-2 bRGQtj"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+                className="Bar__Slot-icfo76-1 RjiBe"
               >
                 <h6
-                  className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                  fontSize="1.05em"
+                  className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                  fontSize="1em"
                   fontWeight={400}
                   letterSpacing="0px"
                 >
                   Address
                 </h6>
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                  fontSize="0.95em"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
                   fontWeight={400}
                   id={null}
                   letterSpacing="0px"
@@ -1013,12 +1021,12 @@ exports[` 4`] = `
           </li>
         </ul>
         <div
-          className="Bar__BarLayout-sc-1c4axau-2 BillH"
+          className="Bar__BarLayout-icfo76-2 lazfJH"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-1 ekMqDX"
+            className="Bar__Slot-icfo76-1 dLaZFL"
           >
             <a
               className="Typography__LinkText-sc-19auepv-1 fLIgSj"
@@ -1037,7 +1045,7 @@ exports[` 4`] = `
     </div>
   </section>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo"
     id={null}
     rows={null}
   >
@@ -1051,26 +1059,28 @@ exports[` 4`] = `
         type="search"
       />
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 kRDsvV"
+        className="Button__StyledButton-sc-1v7sls2-0 jkfWWA"
         disabled={false}
         htmlFor={null}
         id={null}
         name={null}
         onClick={null}
         tabIndex="1"
+        type="button"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 gOxAef Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 dAiHAN Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
           id={null}
           rows={null}
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-search fa-w-16 fa-md Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+            className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 cJJNyd"
             color={null}
             data-icon="search"
             data-prefix="far"
             focusable="false"
+            fontSize="inherit"
             id={null}
             role="img"
             style={Object {}}
@@ -1087,31 +1097,32 @@ exports[` 4`] = `
       </button>
     </form>
     <div
-      className="Container__Wrapper-sc-1i4fzzd-0 hbxOEM"
+      className="Container__Wrapper-sc-1i4fzzd-0 cDSlVl"
       height={null}
       width={null}
     >
       <div
-        className="Container__BoxContainer-sc-1i4fzzd-1 ixiyce"
+        className="Container__BoxContainer-sc-1i4fzzd-1 ckdIcj"
         height=""
         id="results-container"
       >
          
         <div
-          className="Bar__BarLayout-sc-1c4axau-2 BillH"
+          className="Bar__BarLayout-icfo76-2 lazfJH"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-1 ekMqDX"
+            className="Bar__Slot-icfo76-1 dLaZFL"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-signal-slash fa-w-20 fa-3x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+              className="svg-inline--fa fa-signal-slash fa-w-20 Icon__StyledIcon-sc-1oa9m1v-1 ffwBCx"
               color={null}
               data-icon="signal-slash"
               data-prefix="far"
               focusable="false"
+              fontSize="2.5em"
               id={null}
               role="img"
               style={Object {}}
@@ -1127,16 +1138,16 @@ exports[` 4`] = `
           </div>
         </div>
         <div
-          className="Bar__BarLayout-sc-1c4axau-2 BillH"
+          className="Bar__BarLayout-icfo76-2 lazfJH"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-1 ekMqDX"
+            className="Bar__Slot-icfo76-1 dLaZFL"
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-              fontSize="0.95em"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+              fontSize="1em"
               fontWeight={400}
               id={null}
               letterSpacing="0px"
@@ -1149,7 +1160,7 @@ exports[` 4`] = `
     </div>
   </section>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo"
     id={null}
     rows={null}
   >
@@ -1163,26 +1174,28 @@ exports[` 4`] = `
         type="search"
       />
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 kRDsvV"
+        className="Button__StyledButton-sc-1v7sls2-0 jkfWWA"
         disabled={false}
         htmlFor={null}
         id={null}
         name={null}
         onClick={null}
         tabIndex="1"
+        type="button"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 gOxAef Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 dAiHAN Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
           id={null}
           rows={null}
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-search fa-w-16 fa-md Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+            className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 cJJNyd"
             color={null}
             data-icon="search"
             data-prefix="far"
             focusable="false"
+            fontSize="inherit"
             id={null}
             role="img"
             style={Object {}}
@@ -1199,31 +1212,32 @@ exports[` 4`] = `
       </button>
     </form>
     <div
-      className="Container__Wrapper-sc-1i4fzzd-0 hbxOEM"
+      className="Container__Wrapper-sc-1i4fzzd-0 cDSlVl"
       height={null}
       width={null}
     >
       <div
-        className="Container__BoxContainer-sc-1i4fzzd-1 ixiyce"
+        className="Container__BoxContainer-sc-1i4fzzd-1 ckdIcj"
         height=""
         id="results-container"
       >
          
         <div
-          className="Bar__BarLayout-sc-1c4axau-2 BillH"
+          className="Bar__BarLayout-icfo76-2 lazfJH"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-1 ekMqDX"
+            className="Bar__Slot-icfo76-1 dLaZFL"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-signal-slash fa-w-20 fa-3x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+              className="svg-inline--fa fa-signal-slash fa-w-20 Icon__StyledIcon-sc-1oa9m1v-1 ffwBCx"
               color={null}
               data-icon="signal-slash"
               data-prefix="far"
               focusable="false"
+              fontSize="2.5em"
               id={null}
               role="img"
               style={Object {}}
@@ -1239,16 +1253,16 @@ exports[` 4`] = `
           </div>
         </div>
         <div
-          className="Bar__BarLayout-sc-1c4axau-2 BillH"
+          className="Bar__BarLayout-icfo76-2 lazfJH"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-1 ekMqDX"
+            className="Bar__Slot-icfo76-1 dLaZFL"
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-              fontSize="0.95em"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+              fontSize="1em"
               fontWeight={400}
               id={null}
               letterSpacing="0px"
