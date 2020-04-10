@@ -12,10 +12,10 @@ const StepItem = styled.li`
   justify-content: center;
   padding-bottom: 0.5rem;
   display: flex;
-  border-bottom: 2px solid ${(props) => { return props.success ? props.theme.palette.neutral40 : props.isSelected ? props.theme.palette.selected : props.theme.palette.neutral40; }};
+  border-bottom: 2px solid ${(props) => { return props.isSuccess ? props.theme.palette.neutral40 : props.isSelected ? props.theme.palette.selected : props.theme.palette.neutral40; }};
   align-items: baseline;
   width: 100%;
-  color: ${(props) => { return props.success ? props.theme.text.secondary : props.isSelected ? props.theme.palette.selected : props.theme.text.secondary; }};
+  color: ${(props) => { return props.isSuccess ? props.theme.text.secondary : props.isSelected ? props.theme.palette.selected : props.theme.text.secondary; }};
   &:before {
     content: counter(step);
     counter-increment: step;
@@ -27,9 +27,9 @@ const StepItem = styled.li`
     justify-content: center;
     margin-right: 1rem;
     width: 1.5rem;
-    color: ${(props) => { return props.success ? props.theme.palette.inverse : props.isSelected ? props.theme.palette.inverse : ""; }};
-    background: ${(props) => { return props.success ? props.theme.palette.success80 : props.isSelected ? props.theme.palette.selected : ""; }};
-    border: 1px solid ${(props) => { return props.success ? props.theme.palette.success80 : props.isSelected ? props.theme.palette.selected : props.theme.text.secondary; }};
+    color: ${(props) => { return props.isSuccess ? props.theme.palette.inverse : props.isSelected ? props.theme.palette.inverse : ""; }};
+    background: ${(props) => { return props.isSuccess ? props.theme.palette.success80 : props.isSelected ? props.theme.palette.selected : ""; }};
+    border: 1px solid ${(props) => { return props.isSuccess ? props.theme.palette.success80 : props.isSelected ? props.theme.palette.selected : props.theme.text.secondary; }};
     border-radius: 50%;
     font-weight: 600;
   }
@@ -53,10 +53,10 @@ const ItemContainer = styled.div`
 `;
 
 function Step({
-  description, id, isSelected, success, title,
+  description, id, isSelected, isSuccess, title,
 }) {
   return (
-    <StepItem id={id} success={success} isSelected={isSelected}>
+    <StepItem id={id} isSuccess={isSuccess} isSelected={isSelected}>
       <ItemContainer>
         <Title text={title} weight="bold" />
         {description ? <Text text={description} /> : null}
@@ -69,14 +69,14 @@ Step.propTypes = {
   description: PropTypes.string,
   id: PropTypes.string,
   isSelected: PropTypes.bool,
-  success: PropTypes.bool,
+  isSuccess: PropTypes.bool,
   title: PropTypes.string,
 };
 Step.defaultProps = {
   description: null,
   id: null,
   isSelected: false,
-  success: false,
+  isSuccess: false,
   title: null,
 };
 
