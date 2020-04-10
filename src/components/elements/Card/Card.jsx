@@ -313,7 +313,7 @@ function Card({
   icon,
   id,
   mediaDesc,
-  inverse,
+  isInverse,
   label,
   media,
   href,
@@ -326,7 +326,7 @@ function Card({
 }) {
   let cardColor;
   let cardBackground;
-  if (inverse) {
+  if (isInverse) {
     cardColor = "inverse";
     cardBackground = "inverse";
   }
@@ -553,7 +553,7 @@ function Card({
       onClick={onClick}
       id={id}
       href={href}
-      inverse={inverse}
+      isInverse={isInverse}
       media={media}
       shadow={shadow}
     >
@@ -584,7 +584,7 @@ Card.propTypes = {
   description: PropTypes.string,
   icon: PropTypes.string,
   id: PropTypes.string,
-  inverse: PropTypes.bool,
+  isInverse: PropTypes.bool,
   label: PropTypes.string,
   mediaDesc: PropTypes.string,
   media: PropTypes.string,
@@ -607,7 +607,7 @@ Card.defaultProps = {
   href: null,
   icon: null,
   id: null,
-  inverse: null,
+  isInverse: false,
   label: null,
   mediaDesc: null,
   media: null,
@@ -620,7 +620,7 @@ Card.defaultProps = {
 };
 
 function CardGrid({
-  children, className, columns, data, gap, id, inverse, rows,
+  children, className, columns, data, gap, id, isInverse, rows,
 }) {
   return (
     <CardGridWrapper
@@ -640,7 +640,7 @@ function CardGrid({
               icon={item.icon}
               id={item.id}
               mediaDesc={item.mediaDesc}
-              inverse={inverse}
+              isInverse={isInverse}
               key={item.id}
               label={item.label}
               media={item.media}
@@ -697,7 +697,7 @@ CardGrid.propTypes = {
     ]),
   ]),
   id: PropTypes.string,
-  inverse: PropTypes.bool,
+  isInverse: PropTypes.bool,
   /** Defines the heights of grid rows
    *
    * Options: Any switch case or any standard value accepted by the CSS Grid property, 'grid-template-rows'.
@@ -711,7 +711,7 @@ CardGrid.defaultProps = {
   data: null,
   gap: null,
   id: null,
-  inverse: false,
+  isInverse: false,
   rows: null,
 };
 

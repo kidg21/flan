@@ -114,7 +114,7 @@ storiesOf("Elements|Card", module)
   .add("Standard (configured)", () => {
     return (
       <Card
-        // inverse
+        // isInverse
         // variant="info"
         media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" // Image
         mediaDesc="Media Description"
@@ -187,7 +187,7 @@ storiesOf("Elements|Card", module)
           null,
           "Settings",
         )}
-        inverse={
+        isInverse={
           boolean("inverse", false, "Settings")
         }
         onClick={
