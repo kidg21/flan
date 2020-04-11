@@ -198,7 +198,7 @@ function Layout({
   let bottomHeight;
   let zIndex = null; // shared by all
   if (screenMedium.matches || screenLarge.matches) {
-    leftWidth = "25%";
+    leftWidth = "15%";
     rightWidth = "25%";
     bottomHeight = "40%";
     zIndex = "1";
@@ -272,7 +272,7 @@ function Layout({
     if (screenLarge.matches || screenMedium.matches) {
       // On larger screens, both left and right regions can be open at the same time
       if (leftOpen) {
-        mainLeft = "25%";
+        mainLeft = "15%";
         mainWidth = "85%";
         if (rightOpen) {
           mainWidth = "60%";
