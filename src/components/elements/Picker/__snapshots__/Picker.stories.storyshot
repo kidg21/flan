@@ -10,7 +10,7 @@ exports[` 1`] = `
 >
   <section
     className="Grid__GridWrapper-sc-1ntp7gx-0 ceKbHJ Picker__InputContainer-sc-1xwpkqn-0 ciLHEA"
-    id="15865617012377560191311"
+    id="standard"
     rows={null}
   >
     <label
@@ -112,7 +112,7 @@ exports[` 2`] = `
 >
   <section
     className="Grid__GridWrapper-sc-1ntp7gx-0 ceKbHJ Picker__InputContainer-sc-1xwpkqn-0 ciLHEA"
-    id="158656170345317739913542"
+    id="15868167288103611702411"
     rows={null}
   >
     <label
@@ -165,7 +165,7 @@ exports[` 3`] = `
 >
   <section
     className="Grid__GridWrapper-sc-1ntp7gx-0 ceKbHJ Picker__InputContainer-sc-1xwpkqn-0 ciLHEA"
-    id="158656170527413724072143"
+    id="square"
     rows={null}
   >
     <label
