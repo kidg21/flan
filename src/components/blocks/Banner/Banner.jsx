@@ -1,11 +1,11 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable security/detect-object-injection */
-import React, { Fragment } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Grid from "layout/Grid";
 import Card from "elements/Card";
-import Bar from "blocks/Bar";
+import Bar from "layout/Bar";
 import Avatar from "atoms/Avatar";
 import Icon from "atoms/Icon";
 import Text, { Link, Title } from "base/Typography";
@@ -41,28 +41,28 @@ function Banner({
   onClick,
   onClose,
   title,
-  type,
+  variant,
 }) {
   let bannerType;
-  const iconValue = icon || iconHash[type && type.toLowerCase()];
+  const iconValue = icon || iconHash[variant && variant.toLowerCase()];
   if (iconValue) {
     bannerType = {
-      content: <Avatar type={type} icon={iconValue} size="2x" fixedWidth />,
+      content: <Avatar variant={variant} icon={iconValue} fixedWidth />,
       width: "max-content",
     };
   }
 
   return (
-    <StyledBanner borderColor={type} id={id} padding="4x">
+    <StyledBanner borderColor={variant} id={id} padding="4x">
       <Bar
         contentAlign={description || link ? "" : "center"}
-        padding="none"
+        padding="0"
         left={bannerType}
         center={{
           content: (
-            <Grid columns="1" gap="tiny">
-              <Title text={title} />
-              {description ? <Text size="2x" text={description} /> : null}
+            <Grid columns="1" gap="xs">
+              <Title size="lg" weight="bold" text={title} />
+              {description ? <Text size="sm" weight="bold" text={description} /> : null}
               {link ? (
                 <Link href={href} onClick={onClick} text={link} />
               ) : null}
@@ -88,7 +88,7 @@ Banner.propTypes = {
   onClick: PropTypes.func,
   onClose: PropTypes.func,
   title: PropTypes.string.isRequired,
-  type: PropTypes.oneOf(["info", "success", "warning", "alert"]),
+  variant: PropTypes.oneOf(["info", "success", "warning", "alert"]),
 };
 
 Banner.defaultProps = {
@@ -99,7 +99,7 @@ Banner.defaultProps = {
   link: null,
   onClick: null,
   onClose: null,
-  type: null,
+  variant: null,
 };
 
 export default Banner;

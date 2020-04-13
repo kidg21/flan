@@ -7,7 +7,7 @@ import Menu from "blocks/Menu";
 import Button from "atoms/Button";
 import Command from "atoms/Command";
 import SelectMenu from "atoms/SelectMenu";
-import DataTable from "blocks/Table";
+import Table from "blocks/Table";
 
 // Only columns specified here will be displayed
 const headers = [
@@ -410,7 +410,7 @@ storiesOf("Blocks|Table", module)
   .addDecorator(FullScreen)
   .add("Simple", () => {
     return (
-      <DataTable
+      <Table
         headers={headers.slice(1)}
         rows={data}
         listId="foo"
@@ -436,7 +436,7 @@ storiesOf("Blocks|Table", module)
       };
 
       return (
-        <DataTable
+        <Table
           headers={headers.slice(1)}
           rows={data}
           listId="foo"
@@ -482,7 +482,7 @@ storiesOf("Blocks|Table", module)
       };
 
       return (
-        <DataTable
+        <Table
           headers={headers}
           rows={data}
           listId="foo"
@@ -528,7 +528,7 @@ storiesOf("Blocks|Table", module)
       };
 
       return (
-        <DataTable
+        <Table
           headers={headers}
           rows={data}
           listId="foo"
@@ -574,7 +574,7 @@ storiesOf("Blocks|Table", module)
       };
 
       return (
-        <DataTable
+        <Table
           headers={headers}
           rows={data}
           listId="foo"
@@ -621,7 +621,7 @@ storiesOf("Blocks|Table", module)
       };
 
       return (
-        <DataTable
+        <Table
           headers={headers}
           rows={data}
           listId="foo"

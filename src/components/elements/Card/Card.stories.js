@@ -16,7 +16,7 @@ import Button from "atoms/Button";
 const data = [
   {
     id: "a",
-    type: "success",
+    variant: "success",
     media: ModernExterior1,
     mediaDesc: "ModernExterior 1",
     icon: "bookmark_solid",
@@ -30,7 +30,7 @@ const data = [
       },
     ],
     more: {
-      element: (
+      content: (
         <MediaBlock
           media={
             <Image
@@ -51,7 +51,7 @@ const data = [
   },
   {
     id: "b",
-    type: "alert",
+    variant: "alert",
     media: ModernExterior2,
     mediaDesc: "ModernExterior 2",
     label: "GP",
@@ -71,7 +71,7 @@ const data = [
   },
   {
     id: "c",
-    type: "info",
+    variant: "info",
     media: ModernExterior3,
     mediaDesc: "ModernExterior 3",
     icon: "home",
@@ -101,7 +101,7 @@ const data = [
       },
     ],
     more: {
-      element: <Button label="Button" type="solid" />,
+      content: <Button label="Button" variant="success" isSolid />,
     },
     onClick: action("Third Card Clicked"),
   },
@@ -114,8 +114,8 @@ storiesOf("Elements|Card", module)
   .add("Standard (configured)", () => {
     return (
       <Card
-        // inverse
-        // type="info"
+        // isInverse
+        // variant="info"
         media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" // Image
         mediaDesc="Media Description"
         // media="https://www.w3schools.com/html/horse.mp3" // HTML5 Audio
@@ -154,7 +154,7 @@ storiesOf("Elements|Card", module)
             onClick: action("Command Five Clicked"),
           },
         ]}
-        more={{ element: <Button label="Button" type="solid" color="success" fullWidth /> }}
+        more={{ content: <Button label="Button" variant="success" isSolid fullWidth /> }}
         onClick={action("Primary Action Area Clicked")}
       />
     );
@@ -165,8 +165,8 @@ storiesOf("Elements|Card", module)
   .add("Knobs", () => {
     return (
       <Card
-        type={select(
-          "type",
+        variant={select(
+          "variant",
           {
             standard: null,
             info: "info",
@@ -180,14 +180,14 @@ storiesOf("Elements|Card", module)
         shadow={select(
           "shadow",
           {
-            "none": "none",
+            "0": "0",
             "1x": null,
             "2x": "2x",
           },
           null,
           "Settings",
         )}
-        inverse={
+        isInverse={
           boolean("inverse", false, "Settings")
         }
         onClick={
@@ -225,7 +225,7 @@ storiesOf("Elements|Card", module)
           boolean("more", false, "Options") &&
           object(
             "extra content",
-            { element: [<Button label="Button" type="solid" color="success" fullWidth />] },
+            { content: [<Button label="Button" variant="success" isSolid fullWidth />] },
             "Options",
           )
         }
@@ -296,8 +296,8 @@ storiesOf("Elements|Card", module)
   })
   .add("Shadows", () => {
     return (
-      <Grid gap="large">
-        <Card description="None" shadow="none" />
+      <Grid>
+        <Card description="None" shadow="0" />
         <Card description="Standard" />
         <Card description="2x" shadow="2x" />
       </Grid>

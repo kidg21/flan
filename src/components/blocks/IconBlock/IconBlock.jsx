@@ -3,6 +3,7 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import Icon from "atoms/Icon";
 
 const Block = styled.div`
   display: flex;
@@ -15,31 +16,53 @@ const Block = styled.div`
 `;
 
 function IconBlock({
-  id, children, style, className,
+  children, className, data, id, size,
 }) {
   return (
-    <Block id={id} style={style} className={className}>
-      {children}
+    <Block id={id} className={className} >
+      {children ||
+        data.map((item) => {
+          return (
+            <Icon
+              badge={item.badge}
+              brand={item.brand}
+              disabled={item.disabled}
+              fixedWidth
+              flip={item.flip}
+              href={item.href}
+              icon={item.icon}
+              id={item.id}
+              onClick={item.onClick}
+              pulse={item.pulse}
+              rotation={item.rotation}
+              size={size}
+              spin={item.spin}
+              type={item.type}
+            />
+          );
+        })}
     </Block>
   );
 }
 
 IconBlock.propTypes = {
-  id: PropTypes.string,
   children: PropTypes.node.isRequired,
-  /** Currently needed for stories
-   * TODO: retructre stories and remove 'style' prop
-   */
-  style: PropTypes.string,
   /** className used for extending styles */
   className: PropTypes.string,
+  data: PropTypes.arrayOf(PropTypes.shape(Icon.propTypes)),
+  id: PropTypes.string,
+  /** The 'font-size' of the child Icons is inherited from the parent Icon Block and are relatively sized.
+   * Options: 'xs', 'sm', 'lg', 'xl', '2xl', '3xl', '4xl'
+  */
+  size: PropTypes.string,
 };
 
 
 IconBlock.defaultProps = {
-  id: null,
-  style: null,
   className: null,
+  data: null,
+  id: null,
+  size: null,
 };
 
 export default IconBlock;

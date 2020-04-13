@@ -13,7 +13,7 @@ import Grid from "layout/Grid";
 import { Padding } from "helpers/Display";
 import Menu from "blocks/Menu";
 import Card from "elements/Card";
-import Bar from "blocks/Bar";
+import Bar from "layout/Bar";
 
 const data = [
   {
@@ -121,7 +121,7 @@ storiesOf("Blocks|Menu", module)
         });
 
         it("should create list items from the data prop", () => {
-          expect(output.find("li")).to.have.lengthOf(6);
+          expect(output.find("li")).to.have.lengthOf(3);
           for (let i = 0; i < testData.length; i++) {
             const item = output.find(`li#item-${testData[i].id}`).childAt(0);
             expect(item.props()).to.deep.include({
@@ -205,7 +205,7 @@ storiesOf("Blocks|Menu", module)
         });
 
         it("should open nested menu on mouseOver", () => {
-        // positioning should be correctly updated
+          // positioning should be correctly updated
           output.find("Menu").childAt(0).simulate("click"); // open menu
 
           // simulate mouseOver cannot mock getBoundingClientRect/offsetParent easily

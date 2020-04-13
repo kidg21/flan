@@ -2,7 +2,7 @@
 // /* eslint-disable react/jsx-filename-extension */
 // import React from "react";
 // import { Padding } from "helpers/Display";
-// import Form, { Section } from "layout/Form";
+// import Form, { FormSection } from "layout/Form";
 // import Radio, { RadioGroup } from "atoms/Radio";
 
 
@@ -132,21 +132,21 @@
 //     () => {
 //       return (
 //         <Form>
-//           <Section>
+//           <FormSection>
 //             <RadioGroup
 //               id="group1"
 //               label="Radio Group Label"
 //               data={shortLabels}
 //               helpText="Hang in there, buddy, I'm here to help!"
 //             />
-//           </Section>
+//           </FormSection>
 //         </Form>
 //       );
 //     })
 //   .add("Knobs", () => {
 //     return (
 //       <Form>
-//         <Section title="Knobs">
+//         <FormSection title="Knobs">
 //           <RadioGroup
 //             id="group1"
 //             data={shortLabels}
@@ -185,53 +185,53 @@
 //             error={text("error", null, "Radio Group")}
 //             disabled={boolean("disabled", false, "Radio Group")}
 //           />
-//         </Section>
+//         </FormSection>
 //       </Form>
 //     );
 //   })
 //   .add("Radio Group (responsive)", () => {
 //     return (
 //       <Form>
-//         <Section title="Checkbox Group (responsive)">
+//         <FormSection title="Checkbox Group (responsive)">
 //           <RadioGroup data={shortLabels} />
-//         </Section>
+//         </FormSection>
 //       </Form>
 //     );
 //   })
 //   .add("Radio Group (2 columns)", () => {
 //     return (
 //       <Form>
-//         <Section title="Checkbox Group (2 columns)">
+//         <FormSection title="Checkbox Group (2 columns)">
 //           <RadioGroup data={shortLabels} columns="2" />
-//         </Section>
+//         </FormSection>
 //       </Form>
 //     );
 //   })
 //   .add("Radio Group (3 columns)", () => {
 //     return (
 //       <Form>
-//         <Section title="Checkbox Group (3 columns)">
+//         <FormSection title="Checkbox Group (3 columns)">
 //           <RadioGroup data={shortLabels} columns="3" />
-//         </Section>
+//         </FormSection>
 //       </Form>
 //     );
 //   })
 //   .add("Radio Group (mixed columns)", () => {
 //     return (
 //       <Form>
-//         <Section title="Checkbox Group (mixed columns)">
+//         <FormSection title="Checkbox Group (mixed columns)">
 //           <RadioGroup data={shortLabels} columns="2" />
 //           <RadioGroup data={longLabels} columns="1" />
-//         </Section>
+//         </FormSection>
 //       </Form>
 //     );
 //   })
 //   .add("Radio Group (right-aligned)", () => {
 //     return (
 //       <Form>
-//         <Section title="Checkbox Group (right-aligned)">
+//         <FormSection title="Checkbox Group (right-aligned)">
 //           <RadioGroup data={shortLabels} columns="2" align="right" />
-//         </Section>
+//         </FormSection>
 //       </Form>
 //     );
 //   });

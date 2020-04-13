@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
-import Bar from "blocks/Bar";
+import Bar from "layout/Bar";
 import Container from "atoms/Container";
 import Panel from "layout/Panel";
 import TextInput from "atoms/TextInput";
@@ -164,7 +164,7 @@ const UserRoles = React.forwardRef(({
     >
       {right ? <Bar right={right} /> : null}
       <Bar
-        left={<TextInput type="search" placeholder="Search for a User" onChange={filterUserName} inputStyle={{ boxSizing: "border-box" }} />}
+        left={<TextInput placeholder="Search for a User" onChange={filterUserName} inputStyle={{ boxSizing: "border-box" }} />}
         leftWidth={searchWidth}
         center={
           <SelectMenu

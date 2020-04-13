@@ -2,7 +2,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Bar from "blocks/Bar";
+import Bar from "layout/Bar";
 import { colors, Lighten, Darken } from "Variables";
 import Title from "base/Typography";
 
@@ -56,6 +56,7 @@ const ColorBlockColor = styled.div`
 function ThemeColors({ color }) {
   return (
     <Bar
+      padding="0"
       contentAlign="center"
       left={{
         content: <ThemeColorBlockColor color={color} />,

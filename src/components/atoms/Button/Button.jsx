@@ -6,7 +6,7 @@ import { Lighten } from "Variables";
 import { DisabledContext } from "States";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
-import Text from "base/Typography";
+import { Label } from "base/Typography";
 import Tag from "atoms/Tag";
 import Icon from "atoms/Icon";
 import { Skeleton } from "helpers";
@@ -51,6 +51,7 @@ const StyledButton = styled.button`
   font-weight: ${(props) => {
     return props.fontWeight || "400";
   }};
+  text-transform: capitalize;
   cursor: pointer;
   border-bottom: ${(props) => {
     return props.borderBottom || "";
@@ -92,13 +93,19 @@ const StyledButton = styled.button`
 
 const LabelWrapper = styled(Grid)`
   grid-gap: ${(props) => {
-    return props.vertical ? "0.25rem" : "0.5rem";
+    return props.gridGap || "0.5rem";
   }};
   align-items: center;
   justify-items: ${(props) => {
-    return props.vertical ? "center" : "";
+    return props.justifyItems || "";
   }};
   width: auto;
+  > * {
+    line-height: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 `;
 
 StyledButton.displayName = "Button";
@@ -147,12 +154,13 @@ function Button({
   id,
   label,
   onClick,
-  plain,
-  round,
-  solid,
+  isPlain,
+  isRound,
+  isSolid,
   type,
-  underlined,
-  vertical,
+  variant,
+  hasUnderline,
+  alignCenter,
 }) {
   let backgroundColor;
   let borderRadius;
@@ -167,7 +175,7 @@ function Button({
   let labelSize;
   let tintColor;
 
-  switch (type && type.toLowerCase()) {
+  switch (variant && variant.toLowerCase()) {
     case "success":
       buttonColor = "success80";
       fontColor = buttonColor;
@@ -206,31 +214,39 @@ function Button({
       break;
   }
 
-  if (round) {
+  if (isRound) {
     borderRadius = "20px";
   } else {
     borderRadius = "4px";
   }
 
-  if (underlined) {
+  if (hasUnderline) {
     borderWidth = "0 0 2px 0";
     borderStyle = "solid";
-  } else if (plain) {
+  } else if (isPlain) {
     borderWidth = "0px";
   } else {
     borderWidth = "1px";
     borderStyle = "solid";
   }
 
-  if (solid) {
+  if (isSolid) {
     fontColor = "inverse";
     borderColor = buttonColor;
     hoverColor = shadeColor;
     backgroundColor = buttonColor;
-    borderWidth = "0";
   } else {
     hoverColor = tintColor;
     borderColor = buttonColor;
+  }
+
+  let gridGap = null;
+  let justifyItems = null;
+  if (alignCenter) {
+    gridGap = "0.25rem";
+    justifyItems = "center";
+  } else if (icon && !label) {
+    gridGap = "0";
   }
 
   const isDisabled =
@@ -239,27 +255,25 @@ function Button({
   if (isDisabled) {
     fontColor = "disabled";
     borderColor = "disabled";
-    if (solid) {
+    if (isSolid) {
       fontColor = "inverse";
       backgroundColor = "disabled";
     }
   }
 
-  let iconSize = null;
-  if (vertical) iconSize = "lg";
-  else if (!label && !count) iconSize = "md";
-
   const columns =
-    count || icon ? `${!vertical && icon ? "max-content" : ""} 1fr ${count ? "max-content" : ""}` : "1fr";
+    count || icon ? `${!alignCenter && icon ? "max-content" : ""} 1fr ${count ? "max-content" : ""}` : "1fr";
 
   const content = (
     <LabelWrapper
+      alignCenter={alignCenter}
       columns={columns}
-      rows={vertical ? "max-content 1fr" : null}
-      vertical={vertical}
+      gridGap={gridGap}
+      justifyItems={justifyItems}
+      rows={alignCenter ? "max-content 1fr" : null}
     >
-      {icon ? <Icon icon={icon} size={iconSize} /> : null}
-      {label ? <Text size="4x" weight="bold" text={label} /> : null}
+      {icon ? <Icon icon={icon} /> : null}
+      {label ? <Label weight="bold" text={label} /> : null}
       {count && !isDisabled ? <Tag label={count} /> : null}
     </LabelWrapper>
   );
@@ -277,17 +291,18 @@ function Button({
       fontColor={fontColor}
       fontWeight={fontWeight}
       fullWidth={fullWidth}
+      hasUnderline={hasUnderline}
       hoverColor={hoverColor}
       htmlFor={htmlFor}
       id={id}
+      isPlain={isPlain}
+      isRound={isRound}
+      isSolid={isSolid}
       labelSize={labelSize}
       name={id}
       onClick={onClick}
-      plain={plain}
-      round={round}
-      solid={solid}
       tabIndex={disabled ? "-1" : "1"}
-      underlined={underlined}
+      type={type}
     >
       {content}
     </StyledButton>
@@ -295,40 +310,41 @@ function Button({
 }
 
 Button.propTypes = {
+  alignCenter: PropTypes.bool,
   className: PropTypes.string,
   count: PropTypes.string,
   disabled: PropTypes.bool,
   fullWidth: PropTypes.bool,
+  hasUnderline: PropTypes.bool,
   htmlFor: PropTypes.node,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   id: PropTypes.string,
+  isPlain: PropTypes.bool,
+  isRound: PropTypes.bool,
+  isSolid: PropTypes.bool,
   label: PropTypes.string,
   onClick: PropTypes.func,
-  plain: PropTypes.bool,
-  round: PropTypes.bool,
-  solid: PropTypes.bool,
-  type: PropTypes.node,
-  underlined: PropTypes.bool,
-  vertical: PropTypes.bool,
-
+  type: PropTypes.oneOf(["button", "reset", "submit"]),
+  variant: PropTypes.oneOf(["action", "alert", "info", "success", "warning"]),
 };
 
 Button.defaultProps = {
+  alignCenter: null,
   className: null,
   count: null,
   disabled: false,
   fullWidth: false,
+  hasUnderline: null,
   htmlFor: null,
   icon: null,
   id: null,
+  isPlain: null,
+  isRound: null,
+  isSolid: null,
   label: null,
   onClick: null,
-  plain: null,
-  round: null,
-  solid: null,
-  type: null,
-  underlined: null,
-  vertical: null,
+  type: "button",
+  variant: null,
 };
 
 // export default Button;

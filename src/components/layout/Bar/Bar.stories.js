@@ -7,7 +7,7 @@ import Icon from "atoms/Icon";
 import IconBlock from "blocks/IconBlock";
 import Command from "atoms/Command";
 import Text, { Title } from "base/Typography";
-import Bar from "blocks/Bar";
+import Bar from "layout/Bar";
 
 const shortTitle = <Title text="A Standard Title" />;
 const longTitle = (
@@ -20,7 +20,7 @@ const multipleLines = (
   </Fragment>
 );
 
-storiesOf("Blocks|Bar", module)
+storiesOf("Layout|Bar", module)
 
   .addDecorator(Padding)
   .addDecorator(withKnobs)
@@ -36,7 +36,8 @@ storiesOf("Blocks|Bar", module)
           />
         </Card>
       );
-    })
+    },
+  )
 
   .add("Knobs", () => {
     return (
@@ -45,13 +46,10 @@ storiesOf("Blocks|Bar", module)
           padding={options(
             "padding",
             {
-              "none (default)": null,
-              "1x": "1x",
+              "0": "0",
+              "default": null,
               "2x": "2x",
               "3x": "3x",
-              "top": "top",
-              "horizontal": "horizontal",
-              "vertical": "vertical",
             },
             null,
             { display: "radio" },
@@ -103,7 +101,7 @@ storiesOf("Blocks|Bar", module)
   .add("Some Bars", () => {
     return (
       <CardGrid>
-        <Card>
+        <Card padding="0">
           <Bar left={<Command />} center={shortTitle} right={<Command />} />
         </Card>
         <Card>
@@ -120,40 +118,37 @@ storiesOf("Blocks|Bar", module)
             right={<Command align="center" />}
           />
         </Card>
-
         <Card>
           <Bar
             left={
               <IconBlock>
                 <Icon icon="circle_solid" />
-                <Icon icon="circle_solid" type="info" />
-                <Icon icon="circle_solid" type="success" />
+                <Icon icon="circle_solid" variant="info" />
+                <Icon icon="circle_solid" variant="success" />
               </IconBlock>
             }
           />
         </Card>
-
         <Card>
           <Bar
             contentAlign="center"
             left={
               <IconBlock>
                 <Icon icon="circle_solid" />
-                <Icon icon="circle_solid" type="info" />
-                <Icon icon="circle_solid" type="success" />
+                <Icon icon="circle_solid" variant="info" />
+                <Icon icon="circle_solid" variant="success" />
               </IconBlock>
             }
             center={longTitle}
             right={
               <IconBlock>
                 <Icon icon="circle_solid" />
-                <Icon icon="circle_solid" type="info" />
-                <Icon icon="circle_solid" type="success" />
+                <Icon icon="circle_solid" variant="info" />
+                <Icon icon="circle_solid" variant="success" />
               </IconBlock>
             }
           />
         </Card>
-
         <Card>
           <Bar
             contentAlign="center"
@@ -161,8 +156,8 @@ storiesOf("Blocks|Bar", module)
             right={
               <IconBlock>
                 <Icon icon="circle_solid" />
-                <Icon icon="circle_solid" type="info" />
-                <Icon icon="circle_solid" type="success" />
+                <Icon icon="circle_solid" variant="info" />
+                <Icon icon="circle_solid" variant="success" />
               </IconBlock>
             }
           />
@@ -173,8 +168,8 @@ storiesOf("Blocks|Bar", module)
             left={
               <IconBlock>
                 <Icon icon="circle_solid" />
-                <Icon icon="circle_solid" type="info" />
-                <Icon icon="circle_solid" type="success" />
+                <Icon icon="circle_solid" variant="info" />
+                <Icon icon="circle_solid" variant="success" />
               </IconBlock>
             }
             right={shortTitle}

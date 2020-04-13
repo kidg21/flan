@@ -85,14 +85,14 @@ const MenuBG = styled.div`
  * List component that pops out
  */
 function MenuComponent({
-  id,
   data,
-  onClick,
+  id,
   left,
+  onClick,
+  right,
+  submenuDirection,
   top,
   transform,
-  submenuDirection,
-  right,
 }) {
   const [activeItem, setActiveItem] = useState({});
 
@@ -103,12 +103,12 @@ function MenuComponent({
   return (
     <MenuPopper
       id={`menupopper-${id}`}
-      top={top}
       left={left}
-      right={right}
-      transform={transform}
       onClick={onClick}
       onMouseLeave={closeMenu}
+      right={right}
+      top={top}
+      transform={transform}
     >
       <Card shadow="2x">
         <ListWrapper id={`listwrapper-${id}`} interactive>
@@ -117,10 +117,9 @@ function MenuComponent({
             if (item.commands) {
               return (
                 <ItemWrapper
+                  disabled={item.disabled}
                   id={`item-${item.id}`}
                   key={`item-${item.id}`}
-                  disabled={item.disabled}
-                  tabIndex="0"
                   onMouseOver={(e) => {
                     setActiveItem({
                       id: item.id,
@@ -129,17 +128,18 @@ function MenuComponent({
                       right: submenuDirection !== "right" ? `${e.currentTarget.offsetParent.getBoundingClientRect().width}px` : "",
                     });
                   }}
+                  tabIndex="0"
                 >
                   <ListItem as="section" title={item.label} disabled={item.disabled} pre={{ icon: item.icon }} />
                   {activeItem && activeItem.id === item.id ? (
                     <MenuComponent
-                      id={item.id}
                       data={item.commands}
+                      id={item.id}
+                      left={activeItem.left}
                       onClick={closeMenu}
                       right={activeItem.right}
-                      left={activeItem.left}
-                      top={activeItem.top}
                       submenuDirection={submenuDirection}
+                      top={activeItem.top}
                     />
                   ) : null}
                 </ItemWrapper>
@@ -250,10 +250,10 @@ function Menu({
         <Icon icon={icon} size="lg" />
         {visibility ? (
           <MenuComponent
-            id={id}
             data={data}
-            transform={transform}
+            id={id}
             submenuDirection={submenuDirection}
+            transform={transform}
           />
         ) : null}
       </MenuContainer>
@@ -266,7 +266,6 @@ Menu.propTypes = {
   icon: PropTypes.string,
   id: PropTypes.string,
   onClick: PropTypes.func,
-  visible: PropTypes.bool,
   position: PropTypes.oneOf([
     "topLeft",
     "topRight",
@@ -276,6 +275,7 @@ Menu.propTypes = {
     "topCenter",
     "default",
   ]),
+  visible: PropTypes.bool,
 };
 
 Menu.defaultProps = {

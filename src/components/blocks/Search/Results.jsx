@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import React from "react";
 import PropTypes from "prop-types";
-import Bar from "blocks/Bar";
+import Bar from "layout/Bar";
 import { Link } from "base/Typography";
 import List, { ListItem } from "blocks/List";
 
@@ -12,13 +12,13 @@ function ResultContainer({ id, results }) {
     <React.Fragment>
       <List id={id} interactive>
         {results.slice(0, 10).map((item, index) => {
-      return <ListItem key={item.id || index} {...item} />;
-    })}
+          return <ListItem key={item.id || index} {...item} />;
+        })}
       </List>
-      { results.length >= 10 ? <Bar
+      {results.length >= 10 ? <Bar
         padding="2x"
         center={<Link text="View More" />}
-      /> : null }
+      /> : null}
     </React.Fragment>
   );
 }

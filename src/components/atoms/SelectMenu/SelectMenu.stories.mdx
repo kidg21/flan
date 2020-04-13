@@ -3,8 +3,8 @@ import { withKnobs, label, boolean, select } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
-import Bar from "blocks/Bar";
-import Form, { Section } from "layout/Form";
+import Bar from "layout/Bar";
+import Form, { FormSection } from "layout/Form";
 import SelectMenu from "atoms/SelectMenu";
 import Icon from "atoms/Icon";
 
@@ -96,7 +96,7 @@ Select Menu should be used in conjunction with the Form from Layout. Select Menu
 <Preview>
   <Story name="Required">
     <Form>
-      <Section>
+      <FormSection>
         <SelectMenu
           label="Single-Select ( Required )"
           placeholder="You Must Choose..."
@@ -125,7 +125,7 @@ Select Menu should be used in conjunction with the Form from Layout. Select Menu
             { value: "cookie dough", label: "Cookie Dough" }
           ]}
         />
-      </Section>
+      </FormSection>
     </Form>
   </Story>
 </Preview>
@@ -135,7 +135,7 @@ Select Menu should be used in conjunction with the Form from Layout. Select Menu
 <Preview>
   <Story name="Types">
     <Form>
-      <Section>
+      <FormSection>
         <SelectMenu
           label="Single-Select ( Standard )"
           placeholder="Choose..."
@@ -247,8 +247,7 @@ Select Menu should be used in conjunction with the Form from Layout. Select Menu
             { value: "cookie dough", label: "Cookie Dough" }
           ]}
         />
-        
-      </Section>
+      </FormSection>
     </Form>
   </Story>
 </Preview>

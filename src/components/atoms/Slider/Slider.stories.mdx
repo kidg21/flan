@@ -3,8 +3,8 @@ import { withKnobs, label, boolean, select } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
-import Bar from "blocks/Bar";
-import Form, { Section } from "layout/Form";
+import Bar from "layout/Bar";
+import Form, { FormSection } from "layout/Form";
 import Slider from "atoms/Slider";
 import Icon from "atoms/Icon";
 
@@ -98,13 +98,13 @@ A slider can contain the following elements:
   <Story name="Types">
     <Form columns="1">
       <Section title="Standard">
-        <Slider min={1} max={20} defaultValue={4} />
+        <Slider min={1} max={20} value={10} />
       </Section>
       <Section title="With Label">
-        <Slider min={1} max={20} defaultValue={4} withLabel />
+        <Slider min={1} max={20} value={1} withLabel />
       </Section>
       <Section title="With Range">
-        <Slider  min={1} max={20} defaultValue={4} withRange />
+        <Slider  min={1} max={20} value={15} withRange />
       </Section>
     </Form>
   </Story>

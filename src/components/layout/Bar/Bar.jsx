@@ -87,12 +87,8 @@ function getPadding(left, right, center) {
 }
 
 const paddingHash = {
-  "none": "0",
-  "1x": "0.5em 1em",
+  "0": "0",
   "2x": "1em 1.25em",
-  "vertical": "0.5em 0em",
-  "horizontal": "0em 0.5em",
-  "top": "1.5em 1em 0.5em",
   "3x": "1.5em 1.5em",
 };
 
@@ -124,18 +120,18 @@ function getContent(slot) {
 }
 
 function Bar({
-  id,
-  contentAlign,
-  left,
   center,
-  right,
-  padding,
-  onClick,
   className,
+  contentAlign,
   disabled,
+  id,
+  left,
+  onClick,
+  padding,
+  right,
 }) {
   const slotPadding = getPadding(left, right, center);
-  const barPadding = padding ? paddingHash[padding.toLowerCase()] : null;
+  const barPadding = padding ? paddingHash[padding.toLowerCase()] : "0.5em 1em";
   const alignContent = alignHash[contentAlign && contentAlign.toLowerCase()] || "flex-start";
 
   let leftAlign = {};
@@ -149,21 +145,20 @@ function Bar({
 
   const barLayout = (
     <BarLayout
+      alignContent={alignContent}
+      barPadding={barPadding}
+      className={className}
       id={id}
       justifyContent={slotPadding.justify}
-      barPadding={barPadding}
-      alignContent={alignContent}
       onClick={onClick}
-      // topPadding={topPadding}
-      className={className}
     >
       {left ? (
         <Slot
           id={left.id}
           setFlex="1 0 25%"
-          widthMin={left.width}
-          widthMax={left.width}
           setPadding={slotPadding.left}
+          widthMax={left.width}
+          widthMin={left.width}
           {...leftAlign}
         >
           {getContent(left)}
@@ -172,9 +167,9 @@ function Bar({
       {center ? (
         <Slot
           id={center.id}
-          widthMin={center.width}
-          widthMax={center.width}
           setPadding={slotPadding.center}
+          widthMax={center.width}
+          widthMin={center.width}
           {...centerAlign}
         >
           {getContent(center)}
@@ -184,9 +179,9 @@ function Bar({
         <Slot
           id={right.id}
           setFlex="1 0 25%"
-          widthMin={right.width}
-          widthMax={right.width}
           setPadding={slotPadding.right}
+          widthMax={right.width}
+          widthMin={right.width}
           {...rightAlign}
         >
           {getContent(right)}
@@ -200,8 +195,8 @@ function Bar({
       {barLayout}
     </DisabledContext.Provider>
   ) : (
-    barLayout
-  );
+      barLayout
+    );
 }
 
 const SlotType = PropTypes.shape({
@@ -219,34 +214,34 @@ const SlotType = PropTypes.shape({
 });
 
 Bar.propTypes = {
-  id: PropTypes.string,
+  /** Used to define the content in the center 'slot' */
+  center: PropTypes.oneOfType([PropTypes.node, SlotType]),
+  className: PropTypes.string,
   /** Sets the vertical alignment of all content
    * Default: 'top'
    */
   contentAlign: PropTypes.oneOf(["center", "bottom", "top"]),
+  disabled: PropTypes.bool,
+  id: PropTypes.string,
   /** Used to define the content in the left 'slot' */
   left: PropTypes.oneOfType([PropTypes.node, SlotType]),
-  /** Used to define the content in the center 'slot' */
-  center: PropTypes.oneOfType([PropTypes.node, SlotType]),
+  onClick: PropTypes.func,
+  /** Sets the padding of the Bar component */
+  padding: PropTypes.oneOf(["0", "2x", "3x"]),
   /** Used to define the content in the right 'slot' */
   right: PropTypes.oneOfType([PropTypes.node, SlotType]),
-  /** Sets the padding of the Bar component */
-  padding: PropTypes.oneOf(["none", "1x", "2x", "3x", "top", "vertical", "horizontal"]),
-  onClick: PropTypes.func,
-  className: PropTypes.string,
-  disabled: PropTypes.bool,
 };
 
 Bar.defaultProps = {
-  id: null,
-  contentAlign: null,
-  left: null,
   center: null,
-  right: null,
-  padding: null,
-  onClick: null,
   className: null,
+  contentAlign: null,
   disabled: null,
+  id: null,
+  left: null,
+  onClick: null,
+  padding: null,
+  right: null,
 };
 
 export default Bar;

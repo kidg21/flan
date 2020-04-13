@@ -1,0 +1,247 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 lmnFfd"
+  id={null}
+  rows={null}
+>
+  <p
+    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+    fontSize="1em"
+    fontWeight={400}
+    id={null}
+    letterSpacing="0px"
+  >
+    Text
+  </p>
+  <h6
+    className="Typography__TitleText-sc-19auepv-2 exoZGd"
+    fontSize="1em"
+    fontWeight={400}
+    letterSpacing="0px"
+  >
+    Title
+  </h6>
+  <label
+    className="Typography__StyledLabel-sc-19auepv-0 gFLpkg"
+    fontSize="0.876em"
+    fontWeight={400}
+    htmlFor={null}
+    letterSpacing="0px"
+  >
+    Label
+  </label>
+  <a
+    className="Typography__LinkText-sc-19auepv-1 fLIgSj"
+    fontSize="inherit"
+    fontWeight={600}
+    href={null}
+    letterSpacing="0px"
+    onClick={null}
+    target={null}
+  >
+    Link
+  </a>
+</section>
+`;
+
+exports[` 2`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 lmnFfd"
+  id={null}
+  rows={null}
+>
+  <p
+    className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
+    fontSize="0.65em"
+    fontWeight={400}
+    id={null}
+    letterSpacing="0.6px"
+  >
+    XSmall Text
+  </p>
+  <p
+    className="Typography__Paragraph-sc-19auepv-3 CcLky"
+    fontSize="0.75em"
+    fontWeight={400}
+    id={null}
+    letterSpacing="0.2px"
+  >
+    Small Text
+  </p>
+  <p
+    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+    fontSize="1em"
+    fontWeight={400}
+    id={null}
+    letterSpacing="0px"
+  >
+    Normal Text
+  </p>
+  <p
+    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+    fontSize="1em"
+    fontWeight={400}
+    id={null}
+    letterSpacing="0px"
+  >
+    Large Text
+  </p>
+</section>
+`;
+
+exports[` 3`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 lmnFfd"
+  id={null}
+  rows={null}
+>
+  <h6
+    className="Typography__TitleText-sc-19auepv-2 exoZGd"
+    fontSize="1em"
+    fontWeight={400}
+    letterSpacing="0px"
+  >
+    Normal Title
+  </h6>
+  <h5
+    className="Typography__TitleText-sc-19auepv-2 KxMwb"
+    fontSize="1.15em"
+    fontWeight={400}
+    letterSpacing="0px"
+  >
+    Large Title
+  </h5>
+  <h4
+    className="Typography__TitleText-sc-19auepv-2 dzzrvg"
+    fontSize="1.25em"
+    fontWeight={400}
+    letterSpacing="0px"
+  >
+    XLarge Title
+  </h4>
+  <h3
+    className="Typography__TitleText-sc-19auepv-2 jRFrlq"
+    fontSize="1.45em"
+    fontWeight={400}
+    letterSpacing="0px"
+  >
+    2XLarge Title
+  </h3>
+  <h2
+    className="Typography__TitleText-sc-19auepv-2 ilKhpI"
+    fontSize="1.65em"
+    fontWeight={400}
+    letterSpacing="0px"
+  >
+    3XLarge Title
+  </h2>
+  <h1
+    className="Typography__TitleText-sc-19auepv-2 dHsQDS"
+    fontSize="2em"
+    fontWeight={400}
+    letterSpacing="0px"
+  >
+    4XLarge Title
+  </h1>
+</section>
+`;
+
+exports[` 4`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 lmnFfd"
+  id={null}
+  rows={null}
+>
+  <label
+    className="Typography__StyledLabel-sc-19auepv-0 iujdLY"
+    fontSize="0.65em"
+    fontWeight={400}
+    htmlFor={null}
+    letterSpacing="0.6px"
+  >
+    XSmall Label
+  </label>
+  <label
+    className="Typography__StyledLabel-sc-19auepv-0 RzJFI"
+    fontSize="0.82em"
+    fontWeight={400}
+    htmlFor={null}
+    letterSpacing="0px"
+  >
+    Small Label
+  </label>
+  <label
+    className="Typography__StyledLabel-sc-19auepv-0 gFLpkg"
+    fontSize="0.876em"
+    fontWeight={400}
+    htmlFor={null}
+    letterSpacing="0px"
+  >
+    Normal Label
+  </label>
+  <label
+    className="Typography__StyledLabel-sc-19auepv-0 kWqyoM"
+    fontSize="1em"
+    fontWeight={400}
+    htmlFor={null}
+    letterSpacing="0px"
+  >
+    Large Label
+  </label>
+</section>
+`;
+
+exports[` 5`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 lmnFfd"
+  id={null}
+  rows={null}
+>
+  <a
+    className="Typography__LinkText-sc-19auepv-1 fLIgSj"
+    fontSize="inherit"
+    fontWeight={600}
+    href={null}
+    letterSpacing="0px"
+    onClick={null}
+    target={null}
+  >
+    Normal Link
+  </a>
+  <a
+    className="Typography__LinkText-sc-19auepv-1 kEiaIl"
+    fontSize="1.15em"
+    fontWeight={600}
+    href={null}
+    letterSpacing="0.2px"
+    onClick={null}
+    target={null}
+  >
+    Large Link
+  </a>
+  <a
+    className="Typography__LinkText-sc-19auepv-1 hEFWZW"
+    fontSize="1.25em"
+    fontWeight={600}
+    href={null}
+    letterSpacing="0px"
+    onClick={null}
+    target={null}
+  >
+    XLarge Link
+  </a>
+  <a
+    className="Typography__LinkText-sc-19auepv-1 dsEZsY"
+    fontSize="1.45em"
+    fontWeight={600}
+    href={null}
+    letterSpacing="0px"
+    onClick={null}
+    target={null}
+  >
+    XXLarge Link
+  </a>
+</section>
+`;

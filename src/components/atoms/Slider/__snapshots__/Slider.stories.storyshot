@@ -2,12 +2,12 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 gowFQ"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn"
   id={null}
   rows={null}
 >
   <input
-    className="Slider__SliderPiece-sc-1hp9era-0 bqOpTP"
+    className="Slider__SliderPiece-sc-1hp9era-0 iLVrxG"
     disabled={false}
     id="default"
     max={20}
@@ -24,32 +24,25 @@ exports[` 2`] = `
 <form
   action={null}
   className="Form__FormWrapper-v2wrel-0 geeIqY"
+  id={null}
   method={null}
   onSubmit={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 eVqRaz Form__FormInputs-v2wrel-3 bZGKXs"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 dGwfwW Form__Inputs-v2wrel-3 dLfNrm"
     id={null}
     rows={null}
   >
-    <section
-      className="Form__FormSection-v2wrel-2 kbyyVh"
+    <div
+      title="Standard"
     >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 gfzBkI"
-        fontSize="1.05em"
-        fontWeight={600}
-        letterSpacing="0px"
-      >
-        Standard
-      </h6>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 gowFQ"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn"
         id={null}
         rows={null}
       >
         <input
-          className="Slider__SliderPiece-sc-1hp9era-0 bqOpTP"
+          className="Slider__SliderPiece-sc-1hp9era-0 iLVrxG"
           disabled={false}
           id={null}
           max={20}
@@ -57,28 +50,20 @@ exports[` 2`] = `
           onChange={[Function]}
           step={1}
           type="range"
-          value={null}
+          value={1}
         />
       </section>
-    </section>
-    <section
-      className="Form__FormSection-v2wrel-2 kbyyVh"
+    </div>
+    <div
+      title="Error"
     >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 gfzBkI"
-        fontSize="1.05em"
-        fontWeight={600}
-        letterSpacing="0px"
-      >
-        Error
-      </h6>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 gowFQ"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn"
         id={null}
         rows={null}
       >
         <input
-          className="Slider__SliderPiece-sc-1hp9era-0 hnwAQE"
+          className="Slider__SliderPiece-sc-1hp9era-0 icBIIF"
           disabled={false}
           id={null}
           max={20}
@@ -86,28 +71,20 @@ exports[` 2`] = `
           onChange={[Function]}
           step={1}
           type="range"
-          value={null}
+          value={1}
         />
       </section>
-    </section>
-    <section
-      className="Form__FormSection-v2wrel-2 kbyyVh"
+    </div>
+    <div
+      title="Disabled"
     >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 gfzBkI"
-        fontSize="1.05em"
-        fontWeight={600}
-        letterSpacing="0px"
-      >
-        Disabled
-      </h6>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 gowFQ"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn"
         id={null}
         rows={null}
       >
         <input
-          className="Slider__SliderPiece-sc-1hp9era-0 bqOpTP"
+          className="Slider__SliderPiece-sc-1hp9era-0 iLVrxG"
           disabled={true}
           id={null}
           max={20}
@@ -115,10 +92,10 @@ exports[` 2`] = `
           onChange={[Function]}
           step={1}
           type="range"
-          value={null}
+          value={1}
         />
       </section>
-    </section>
+    </div>
   </section>
 </form>
 `;
@@ -127,32 +104,25 @@ exports[` 3`] = `
 <form
   action={null}
   className="Form__FormWrapper-v2wrel-0 geeIqY"
+  id={null}
   method={null}
   onSubmit={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 eVqRaz Form__FormInputs-v2wrel-3 bZGKXs"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 dGwfwW Form__Inputs-v2wrel-3 dLfNrm"
     id={null}
     rows={null}
   >
-    <section
-      className="Form__FormSection-v2wrel-2 kbyyVh"
+    <div
+      title="Standard"
     >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 gfzBkI"
-        fontSize="1.05em"
-        fontWeight={600}
-        letterSpacing="0px"
-      >
-        Standard
-      </h6>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 gowFQ"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn"
         id={null}
         rows={null}
       >
         <input
-          className="Slider__SliderPiece-sc-1hp9era-0 bqOpTP"
+          className="Slider__SliderPiece-sc-1hp9era-0 iLVrxG"
           disabled={false}
           id={null}
           max={20}
@@ -160,28 +130,29 @@ exports[` 3`] = `
           onChange={[Function]}
           step={1}
           type="range"
-          value={null}
+          value={10}
         />
       </section>
-    </section>
-    <section
-      className="Form__FormSection-v2wrel-2 kbyyVh"
+    </div>
+    <div
+      title="With Label"
     >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 gfzBkI"
-        fontSize="1.05em"
-        fontWeight={600}
-        letterSpacing="0px"
-      >
-        With Label
-      </h6>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 gowFQ"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn"
         id={null}
         rows={null}
       >
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 gKzexq Slider__SliderLabel-sc-1hp9era-1 bMyAub"
+          fontSize="0.876em"
+          fontWeight={600}
+          htmlFor={null}
+          letterSpacing="0px"
+        >
+          1
+        </label>
         <input
-          className="Slider__SliderPiece-sc-1hp9era-0 bqOpTP"
+          className="Slider__SliderPiece-sc-1hp9era-0 iLVrxG"
           disabled={false}
           id={null}
           max={20}
@@ -189,82 +160,95 @@ exports[` 3`] = `
           onChange={[Function]}
           step={1}
           type="range"
-          value={null}
+          value={1}
         />
         <div
-          className="Tag__TagContainer-sc-128kb3h-0 kzfjeA"
-          id={null}
-          label={null}
-          style={
-            Object {
-              "left": "-4.5%",
-              "position": "relative",
-            }
-          }
-        />
-      </section>
-    </section>
-    <section
-      className="Form__FormSection-v2wrel-2 kbyyVh"
-    >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 gfzBkI"
-        fontSize="1.05em"
-        fontWeight={600}
-        letterSpacing="0px"
-      >
-        With Range
-      </h6>
-      <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 gowFQ"
-        id={null}
-        rows={null}
-      >
-        <input
-          className="Slider__SliderPiece-sc-1hp9era-0 bqOpTP"
-          disabled={false}
-          id={null}
-          max={20}
-          min={1}
-          onChange={[Function]}
-          step={1}
-          type="range"
-          value={null}
-        />
-        <div
-          className="Bar__BarLayout-sc-1c4axau-2 xQXbG"
+          className="Bar__BarLayout-icfo76-2 ebMgLW"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__Slot-sc-1c4axau-1 hAjMjw"
+            className="Bar__Slot-icfo76-1 fNcQEg"
           >
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-              fontSize="0.75em"
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+              fontSize="0.876em"
               fontWeight={600}
-              id={null}
-              letterSpacing="0.2px"
+              htmlFor={null}
+              letterSpacing="0px"
             >
               1
-            </p>
+            </label>
           </div>
           <div
-            className="Bar__Slot-sc-1c4axau-1 kHYCoh"
+            className="Bar__Slot-icfo76-1 kZQbjh"
           >
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-              fontSize="0.75em"
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+              fontSize="0.876em"
               fontWeight={600}
-              id={null}
-              letterSpacing="0.2px"
+              htmlFor={null}
+              letterSpacing="0px"
             >
               20
-            </p>
+            </label>
           </div>
         </div>
       </section>
-    </section>
+    </div>
+    <div
+      title="With Range"
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn"
+        id={null}
+        rows={null}
+      >
+        <input
+          className="Slider__SliderPiece-sc-1hp9era-0 iLVrxG"
+          disabled={false}
+          id={null}
+          max={20}
+          min={1}
+          onChange={[Function]}
+          step={1}
+          type="range"
+          value={15}
+        />
+        <div
+          className="Bar__BarLayout-icfo76-2 ebMgLW"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-icfo76-1 fNcQEg"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+              fontSize="0.876em"
+              fontWeight={600}
+              htmlFor={null}
+              letterSpacing="0px"
+            >
+              1
+            </label>
+          </div>
+          <div
+            className="Bar__Slot-icfo76-1 kZQbjh"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+              fontSize="0.876em"
+              fontWeight={600}
+              htmlFor={null}
+              letterSpacing="0px"
+            >
+              20
+            </label>
+          </div>
+        </div>
+      </section>
+    </div>
   </section>
 </form>
 `;

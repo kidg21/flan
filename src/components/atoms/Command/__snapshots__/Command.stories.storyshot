@@ -10,11 +10,12 @@ exports[` 1`] = `
 >
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+    className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 cJJNyd Command__CommandIcon-sc-13akgtp-2 kHbmnU"
     color={null}
     data-icon="circle"
     data-prefix="fas"
     focusable="false"
+    fontSize="inherit"
     id={null}
     role="img"
     style={Object {}}
@@ -28,7 +29,7 @@ exports[` 1`] = `
     />
   </svg>
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+    className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
     fontSize="0.876em"
     fontWeight={400}
     htmlFor={null}
@@ -41,7 +42,7 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 iArnTB"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kiIKlP"
   id={null}
   rows={null}
 >
@@ -54,11 +55,12 @@ exports[` 2`] = `
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+      className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 cJJNyd Command__CommandIcon-sc-13akgtp-2 kHbmnU"
       color={null}
       data-icon="circle"
       data-prefix="fas"
       focusable="false"
+      fontSize="inherit"
       id={null}
       role="img"
       style={Object {}}
@@ -72,7 +74,7 @@ exports[` 2`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+      className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
       fontSize="0.876em"
       fontWeight={400}
       htmlFor={null}
@@ -90,11 +92,12 @@ exports[` 2`] = `
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+      className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 cJJNyd Command__CommandIcon-sc-13akgtp-2 kHbmnU"
       color={null}
       data-icon="circle"
       data-prefix="fas"
       focusable="false"
+      fontSize="inherit"
       id={null}
       role="img"
       style={Object {}}
@@ -108,7 +111,7 @@ exports[` 2`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+      className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
       fontSize="0.876em"
       fontWeight={400}
       htmlFor={null}
@@ -122,7 +125,7 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 iArnTB"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 iFiBgc"
   id={null}
   rows={null}
 >
@@ -135,11 +138,12 @@ exports[` 3`] = `
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+      className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 cJJNyd Command__CommandIcon-sc-13akgtp-2 kHbmnU"
       color={null}
       data-icon="circle"
       data-prefix="fas"
       focusable="false"
+      fontSize="inherit"
       id={null}
       role="img"
       style={Object {}}
@@ -153,7 +157,7 @@ exports[` 3`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+      className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
       fontSize="0.876em"
       fontWeight={400}
       htmlFor={null}
@@ -171,11 +175,12 @@ exports[` 3`] = `
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+      className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 cJJNyd Command__CommandIcon-sc-13akgtp-2 kHbmnU"
       color={null}
       data-icon="circle"
       data-prefix="fas"
       focusable="false"
+      fontSize="inherit"
       id={null}
       role="img"
       style={Object {}}
@@ -189,7 +194,7 @@ exports[` 3`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+      className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
       fontSize="0.876em"
       fontWeight={400}
       htmlFor={null}
@@ -207,11 +212,12 @@ exports[` 3`] = `
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+      className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 cJJNyd Command__CommandIcon-sc-13akgtp-2 kHbmnU"
       color={null}
       data-icon="circle"
       data-prefix="fas"
       focusable="false"
+      fontSize="inherit"
       id={null}
       role="img"
       style={Object {}}
@@ -225,7 +231,7 @@ exports[` 3`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+      className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
       fontSize="0.876em"
       fontWeight={400}
       htmlFor={null}
@@ -239,7 +245,7 @@ exports[` 3`] = `
 
 exports[` 4`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 iArnTB"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 kiIKlP"
   id={null}
   rows={null}
 >
@@ -252,11 +258,12 @@ exports[` 4`] = `
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+      className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 cJJNyd Command__CommandIcon-sc-13akgtp-2 kHbmnU"
       color={null}
       data-icon="circle"
       data-prefix="fas"
       focusable="false"
+      fontSize="inherit"
       id={null}
       role="img"
       style={Object {}}
@@ -270,7 +277,7 @@ exports[` 4`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+      className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
       fontSize="0.876em"
       fontWeight={400}
       htmlFor={null}
@@ -288,11 +295,12 @@ exports[` 4`] = `
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+      className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 cJJNyd Command__CommandIcon-sc-13akgtp-2 kHbmnU"
       color={null}
       data-icon="circle"
       data-prefix="fas"
       focusable="false"
+      fontSize="inherit"
       id={null}
       role="img"
       style={Object {}}
@@ -306,7 +314,7 @@ exports[` 4`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+      className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
       fontSize="0.876em"
       fontWeight={400}
       htmlFor={null}
@@ -324,11 +332,12 @@ exports[` 4`] = `
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+      className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 cJJNyd Command__CommandIcon-sc-13akgtp-2 kHbmnU"
       color={null}
       data-icon="circle"
       data-prefix="fas"
       focusable="false"
+      fontSize="inherit"
       id={null}
       role="img"
       style={Object {}}
@@ -342,7 +351,7 @@ exports[` 4`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+      className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
       fontSize="0.876em"
       fontWeight={400}
       htmlFor={null}

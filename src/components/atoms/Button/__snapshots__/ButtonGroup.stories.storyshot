@@ -9,108 +9,112 @@ exports[` 1`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 fGkTyc"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 dGwfwW"
     id="Button Group"
     rows={null}
   >
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
+      className="Button__StyledButton-sc-1v7sls2-0 jgKudQ"
       disabled={false}
       htmlFor={null}
       id={null}
       name={null}
       onClick={null}
       tabIndex="1"
+      type="button"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
         id={null}
         rows={null}
       >
-        <p
-          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-          fontSize="1em"
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+          fontSize="0.876em"
           fontWeight={600}
-          id={null}
+          htmlFor={null}
           letterSpacing="0px"
         >
           Button
-        </p>
+        </label>
       </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
+      className="Button__StyledButton-sc-1v7sls2-0 jgKudQ"
       disabled={false}
       htmlFor={null}
       id={null}
       name={null}
       onClick={null}
       tabIndex="1"
+      type="button"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
         id={null}
         rows={null}
       >
-        <p
-          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-          fontSize="1em"
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+          fontSize="0.876em"
           fontWeight={600}
-          id={null}
+          htmlFor={null}
           letterSpacing="0px"
         >
           Button
-        </p>
+        </label>
       </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
+      className="Button__StyledButton-sc-1v7sls2-0 jgKudQ"
       disabled={false}
       htmlFor={null}
       id={null}
       name={null}
       onClick={null}
       tabIndex="1"
+      type="button"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
         id={null}
         rows={null}
       >
-        <p
-          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-          fontSize="1em"
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+          fontSize="0.876em"
           fontWeight={600}
-          id={null}
+          htmlFor={null}
           letterSpacing="0px"
         >
           Button
-        </p>
+        </label>
       </section>
     </button>
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
+      className="Button__StyledButton-sc-1v7sls2-0 jgKudQ"
       disabled={false}
       htmlFor={null}
       id={null}
       name={null}
       onClick={null}
       tabIndex="1"
+      type="button"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
         id={null}
         rows={null}
       >
-        <p
-          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-          fontSize="1em"
+        <label
+          className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+          fontSize="0.876em"
           fontWeight={600}
-          id={null}
+          htmlFor={null}
           letterSpacing="0px"
         >
           Button
-        </p>
+        </label>
       </section>
     </button>
   </section>
@@ -119,108 +123,112 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 fGkTyc"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 dGwfwW"
   id={null}
   rows={null}
 >
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
+    className="Button__StyledButton-sc-1v7sls2-0 jgKudQ"
     disabled={false}
     htmlFor={null}
     id={null}
     name={null}
     onClick={null}
     tabIndex="1"
+    type="button"
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
       id={null}
       rows={null}
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-        fontSize="1em"
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+        fontSize="0.876em"
         fontWeight={600}
-        id={null}
+        htmlFor={null}
         letterSpacing="0px"
       >
         Button
-      </p>
+      </label>
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
+    className="Button__StyledButton-sc-1v7sls2-0 jgKudQ"
     disabled={false}
     htmlFor={null}
     id={null}
     name={null}
     onClick={null}
     tabIndex="1"
+    type="button"
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
       id={null}
       rows={null}
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-        fontSize="1em"
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+        fontSize="0.876em"
         fontWeight={600}
-        id={null}
+        htmlFor={null}
         letterSpacing="0px"
       >
         Button
-      </p>
+      </label>
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
+    className="Button__StyledButton-sc-1v7sls2-0 jgKudQ"
     disabled={false}
     htmlFor={null}
     id={null}
     name={null}
     onClick={null}
     tabIndex="1"
+    type="button"
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
       id={null}
       rows={null}
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-        fontSize="1em"
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+        fontSize="0.876em"
         fontWeight={600}
-        id={null}
+        htmlFor={null}
         letterSpacing="0px"
       >
         Button
-      </p>
+      </label>
     </section>
   </button>
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 kaCTht"
+    className="Button__StyledButton-sc-1v7sls2-0 jgKudQ"
     disabled={false}
     htmlFor={null}
     id={null}
     name={null}
     onClick={null}
     tabIndex="1"
+    type="button"
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 eyZlVj Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
       id={null}
       rows={null}
     >
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-        fontSize="1em"
+      <label
+        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+        fontSize="0.876em"
         fontWeight={600}
-        id={null}
+        htmlFor={null}
         letterSpacing="0px"
       >
         Button
-      </p>
+      </label>
     </section>
   </button>
 </section>

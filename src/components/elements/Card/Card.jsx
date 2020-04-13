@@ -8,7 +8,7 @@ import { PlaceholderText } from "helpers/Placeholders.jsx";
 import { Spacer } from "helpers/Display.jsx";
 import { Darken } from "Variables";
 import Grid from "layout/Grid";
-import Bar from "blocks/Bar";
+import Bar from "layout/Bar";
 import Text, { Title } from "base/Typography";
 import Icon from "atoms/Icon";
 import Command from "atoms/Command";
@@ -20,7 +20,7 @@ import { DisableTransitionContext } from "States";
 import mime from "mime";
 
 const LinkedWrapper = styled.a`
-flex: auto;
+  flex: auto;
 `;
 
 const CardSectionWrapper = styled.section`
@@ -32,7 +32,7 @@ const CardSectionWrapper = styled.section`
     return props.theme.text[props.sectionColor] || "";
   }};
   background-color: ${(props) => {
-    return props.theme.palette[props.sectionBackground] || "";
+    return props.theme.background[props.sectionBackground] || "";
   }};
   padding: ${(props) => {
     return props.sectionPadding || "0.5em 1em";
@@ -88,12 +88,9 @@ const CardWrapper = styled.div`
     return props.onClick ? "pointer" : "";
   }};
   flex-direction: column;
-  border-radius: ${(props) => {
-    return props.theme.borders.radiusMin;
-  }};
   flex: none;
   background-color: ${(props) => {
-    return props.cardBackground ? props.theme.palette[props.cardBackground] : props.theme.background.default;
+    return props.cardBackground ? props.theme.background[props.cardBackground] : props.theme.background.default;
   }};
   padding: ${(props) => {
     return props.cardPadding || "";
@@ -108,39 +105,6 @@ const CardWrapper = styled.div`
   color: ${(props) => {
     return props.theme.text[props.cardColor] || "";
   }};
-  }
-  ${CardSectionWrapper} {
-    &:first-of-type {
-      border-radius: ${(props) => {
-    return `${props.theme.borders.radiusMin} ${props.theme.borders.radiusMin} 0 0`;
-  }};
-    }
-    &:last-of-type {
-      border-radius: ${(props) => {
-    return `0 0 ${props.theme.borders.radiusMin} ${props.theme.borders.radiusMin}`;
-  }};
-    }
-    &:only-of-type {
-      border-radius: ${(props) => {
-    return props.theme.borders.radiusMin;
-  }};
-    }
-  }
-  ${CardSectionWrapper}:not(${Media}) {
-    &:first-of-type {
-      padding: 0.75em 1em 0.5em;
-    }
-    &:last-of-type {
-      padding: 0.5em 1em 0.75em;
-    }
-    &:only-of-type {
-      padding: 0.75em 1em;
-    }
-    &:last-of-type,
-    &:only-of-type {
-      flex: auto;
-      height: inherit;
-    }
   }
   /* Prototype Content - displays when a Card is empty */
   &:empty {
@@ -158,6 +122,9 @@ const CardWrapper = styled.div`
 const CardGridWrapper = styled(Grid)`
   ${CardWrapper} {
     height: 100%;
+    border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
+  }};
     filter: ${(props) => {
     return props.theme.shadows.shadow1;
   }};
@@ -167,6 +134,39 @@ const CardGridWrapper = styled(Grid)`
       filter: ${(props) => {
     return props.theme.shadows.shadow3;
   }};
+    }
+    ${CardSectionWrapper} {
+      &:first-of-type {
+        border-radius: ${(props) => {
+    return `${props.theme.borders.radiusMin} ${props.theme.borders.radiusMin} 0 0`;
+  }};
+      }
+      &:last-of-type {
+        border-radius: ${(props) => {
+    return `0 0 ${props.theme.borders.radiusMin} ${props.theme.borders.radiusMin}`;
+  }};
+      }
+      &:only-of-type {
+        border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
+  }};
+      }
+    }
+    ${CardSectionWrapper}:not(${Media}) {
+      &:first-of-type {
+        padding: 0.75em 1em 0.5em;
+      }
+      &:last-of-type {
+        padding: 0.5em 1em 0.75em;
+      }
+      &:only-of-type {
+        padding: 0.75em 1em;
+      }
+      &:last-of-type,
+      &:only-of-type {
+        flex: auto;
+        height: inherit;
+      }
     }
   }
   /* Prototype Content - displays when a Card List is empty */
@@ -195,6 +195,7 @@ function ExpandingSection({
       header={
         title || description || label || icon ? (
           <Bar
+            padding="0"
             contentAlign="center"
             left={label || icon ? {
               content: <Avatar label={label} icon={icon} />,
@@ -243,20 +244,20 @@ ExpandingSection.defaultProps = {
 };
 
 function CardSection({
-  children, className, footer, header, id, onClick, padding, type,
+  children, className, footer, header, id, onClick, padding, variant,
 }) {
   let sectionColor;
   let sectionBackground;
-  if (type) {
+  if (variant) {
     sectionColor = "inverse";
-    sectionBackground = type.toLowerCase();
+    sectionBackground = variant.toLowerCase();
   }
   let sectionPadding;
   const numPadding = padding ? parseInt(padding, 10) : NaN;
   if (padding && padding.toLowerCase() === "0") {
     sectionPadding = "0";
   } else if (!isNaN(numPadding) && numPadding < 5) {
-    sectionPadding = `${0.25 * numPadding}em 1em`;
+    sectionPadding = `${0.5 * numPadding}em 1em`;
   }
   let sectionJustify;
   if (header) {
@@ -288,9 +289,9 @@ CardSection.propTypes = {
   footer: PropTypes.node,
   header: PropTypes.node,
   id: PropTypes.string,
-  padding: PropTypes.oneOf(["0", "1x", "2x", "3x", "4x"]),
+  padding: PropTypes.oneOf(["0", "2x", "3x", "4x"]),
   onClick: PropTypes.func,
-  type: PropTypes.string,
+  variant: PropTypes.oneOf(["info", "success", "warning", "alert"]),
 };
 CardSection.defaultProps = {
   children: null,
@@ -300,7 +301,7 @@ CardSection.defaultProps = {
   id: null,
   padding: null,
   onClick: null,
-  type: null,
+  variant: null,
 };
 
 function Card({
@@ -312,7 +313,7 @@ function Card({
   icon,
   id,
   mediaDesc,
-  inverse,
+  isInverse,
   label,
   media,
   href,
@@ -321,11 +322,11 @@ function Card({
   padding,
   shadow,
   title,
-  type,
+  variant,
 }) {
   let cardColor;
   let cardBackground;
-  if (inverse) {
+  if (isInverse) {
     cardColor = "inverse";
     cardBackground = "inverse";
   }
@@ -338,7 +339,7 @@ function Card({
 
   let cardShadow;
   switch (shadow) {
-    case "none":
+    case "0":
       cardShadow = null;
       break;
     case "2x":
@@ -359,15 +360,14 @@ function Card({
     }
   }
 
-
   let centerContent;
 
   if (onClick) {
     centerContent = (
       <LinkedWrapper >
         <React.Fragment >
-          {title ? <Title text={title}  /> : null}
-          {description ? (<Text text={description} />
+          {title ? <Title text={title} weight="bold" /> : null}
+          {description ? (<Text text={description} weight="bold" />
           ) : null}
         </React.Fragment>
       </LinkedWrapper>
@@ -375,8 +375,8 @@ function Card({
   } else {
     centerContent = (
       <React.Fragment >
-        {title ? <Title text={title} /> : null}
-        {description ? (<Text text={description}  />
+        {title ? <Title text={title} weight="bold" /> : null}
+        {description ? (<Text text={description} weight="bold" />
         ) : null}
       </React.Fragment>);
   }
@@ -384,8 +384,9 @@ function Card({
   let headerSection;
   if (title || description) {
     headerSection = (
-      <CardSection type={type} >
+      <CardSection variant={variant} >
         <Bar
+          padding="0"
           contentAlign="center"
           left={label || icon ? {
             content: <Avatar label={label} icon={icon} />,
@@ -398,9 +399,9 @@ function Card({
         />
       </CardSection>
     );
-    if (more && more.element) {
+    if (more && more.content) {
       headerSection = (
-        <CardSection type={type} disableTransition={disableTransition}>
+        <CardSection variant={variant} disableTransition={disableTransition}>
           <ExpandingSection
             description={description}
             icon={icon}
@@ -412,7 +413,7 @@ function Card({
             open={open}
             title={title}
           >
-            {more.element}
+            {more.content}
           </ExpandingSection>
         </CardSection>
       );
@@ -498,9 +499,11 @@ function Card({
     if (commands.length >= 2) {
       commandElements = (
         <Bar
+          padding="0"
+          contentAlign="bottom"
           left={{
             content: (
-              <Grid columns="2">
+              <Grid>
                 <Command
                   label={commands[0].label}
                   onClick={commands[0].onClick}
@@ -526,6 +529,8 @@ function Card({
     } else if (commands.length === 1) {
       commandElements = (
         <Bar
+          padding="0"
+          contentAlign="bottom"
           left={
             <Command
               label={commands[0].label}
@@ -548,7 +553,7 @@ function Card({
       onClick={onClick}
       id={id}
       href={href}
-      inverse={inverse}
+      isInverse={isInverse}
       media={media}
       shadow={shadow}
     >
@@ -579,19 +584,19 @@ Card.propTypes = {
   description: PropTypes.string,
   icon: PropTypes.string,
   id: PropTypes.string,
-  inverse: PropTypes.bool,
+  isInverse: PropTypes.bool,
   label: PropTypes.string,
   mediaDesc: PropTypes.string,
   media: PropTypes.string,
   more: PropTypes.shape({
-    element: PropTypes.node,
+    content: PropTypes.node,
     onToggle: PropTypes.func,
   }),
   onClick: PropTypes.func,
-  padding: PropTypes.oneOf(["0", "1x", "2x", "3x", "4x"]),
-  shadow: PropTypes.oneOf(["none", "1x", "2x"]),
+  padding: PropTypes.oneOf(["0", "2x", "3x", "4x"]),
+  shadow: PropTypes.oneOf(["0", "2x"]),
   title: PropTypes.string,
-  type: PropTypes.string,
+  variant: PropTypes.oneOf(["info", "success", "warning", "alert"]),
 };
 Card.defaultProps = {
   body: null,
@@ -602,7 +607,7 @@ Card.defaultProps = {
   href: null,
   icon: null,
   id: null,
-  inverse: null,
+  isInverse: false,
   label: null,
   mediaDesc: null,
   media: null,
@@ -611,17 +616,17 @@ Card.defaultProps = {
   padding: null,
   shadow: null,
   title: null,
-  type: null,
+  variant: null,
 };
 
 function CardGrid({
-  children, className, columns, data, gap, id, inverse, rows,
+  children, className, columns, data, gap, id, isInverse, rows,
 }) {
   return (
     <CardGridWrapper
       className={className}
       columns={columns}
-      gap={gap}
+      gap={gap || "lg"}
       id={id}
       rows={rows}
     >
@@ -635,14 +640,14 @@ function CardGrid({
               icon={item.icon}
               id={item.id}
               mediaDesc={item.mediaDesc}
-              inverse={inverse}
+              isInverse={isInverse}
               key={item.id}
               label={item.label}
               media={item.media}
               more={item.more}
               onClick={item.onClick}
               title={item.title}
-              type={item.type}
+              variant={item.variant}
             />
           );
         })}
@@ -681,18 +686,18 @@ CardGrid.propTypes = {
   gap: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.oneOf([
-      "none",
-      "tiny",
-      "small",
-      "default (normal)",
-      "large",
-      "xlarge",
-      "xxlarge",
-      "[grid-template-rows]",
+      "0",
+      "xs",
+      "sm",
+      "lg",
+      "xl",
+      "2xl",
+      "3xl",
+      "4xl",
     ]),
   ]),
   id: PropTypes.string,
-  inverse: PropTypes.bool,
+  isInverse: PropTypes.bool,
   /** Defines the heights of grid rows
    *
    * Options: Any switch case or any standard value accepted by the CSS Grid property, 'grid-template-rows'.
@@ -706,7 +711,7 @@ CardGrid.defaultProps = {
   data: null,
   gap: null,
   id: null,
-  inverse: false,
+  isInverse: false,
   rows: null,
 };
 

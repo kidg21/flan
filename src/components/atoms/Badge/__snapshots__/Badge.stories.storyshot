@@ -2,12 +2,12 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 ihnaIG"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 ezarLU"
   id={null}
   rows={null}
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+    className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
     href={null}
     id={null}
     media={null}
@@ -23,25 +23,24 @@ exports[` 1`] = `
         id={null}
       >
         <div
-          className="Tag__TagContainer-sc-128kb3h-0 dPJEzp"
+          className="Tag__TagContainer-sc-128kb3h-0 iuqrEV"
           id={null}
           label="1"
-          style={null}
         >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-            fontSize="0.75em"
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
+            fontSize="0.65em"
             fontWeight={600}
-            id={null}
-            letterSpacing="0.2px"
+            htmlFor={null}
+            letterSpacing="0.6px"
           >
             1
-          </p>
+          </label>
         </div>
       </div>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-        fontSize="0.95em"
+        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+        fontSize="1em"
         fontWeight={400}
         id={null}
         letterSpacing="0px"
@@ -55,12 +54,12 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 ihnaIG"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 ezarLU"
   id={null}
   rows={null}
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+    className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
     href={null}
     id={null}
     media={null}
@@ -76,25 +75,24 @@ exports[` 2`] = `
         id={null}
       >
         <div
-          className="Tag__TagContainer-sc-128kb3h-0 dPJEzp"
+          className="Tag__TagContainer-sc-128kb3h-0 iuqrEV"
           id={null}
           label="1"
-          style={null}
         >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-            fontSize="0.75em"
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
+            fontSize="0.65em"
             fontWeight={600}
-            id={null}
-            letterSpacing="0.2px"
+            htmlFor={null}
+            letterSpacing="0.6px"
           >
             1
-          </p>
+          </label>
         </div>
       </div>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-        fontSize="0.95em"
+        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+        fontSize="1em"
         fontWeight={400}
         id={null}
         letterSpacing="0px"
@@ -104,7 +102,7 @@ exports[` 2`] = `
     </section>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+    className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
     href={null}
     id={null}
     media={null}
@@ -120,25 +118,24 @@ exports[` 2`] = `
         id={null}
       >
         <div
-          className="Tag__TagContainer-sc-128kb3h-0 dPJEzp"
+          className="Tag__TagContainer-sc-128kb3h-0 iuqrEV"
           id={null}
           label="21"
-          style={null}
         >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-            fontSize="0.75em"
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
+            fontSize="0.65em"
             fontWeight={600}
-            id={null}
-            letterSpacing="0.2px"
+            htmlFor={null}
+            letterSpacing="0.6px"
           >
             21
-          </p>
+          </label>
         </div>
       </div>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-        fontSize="0.95em"
+        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+        fontSize="1em"
         fontWeight={400}
         id={null}
         letterSpacing="0px"
@@ -148,7 +145,7 @@ exports[` 2`] = `
     </section>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+    className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
     href={null}
     id={null}
     media={null}
@@ -164,25 +161,24 @@ exports[` 2`] = `
         id={null}
       >
         <div
-          className="Tag__TagContainer-sc-128kb3h-0 dPJEzp"
+          className="Tag__TagContainer-sc-128kb3h-0 iuqrEV"
           id={null}
           label="321"
-          style={null}
         >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-            fontSize="0.75em"
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
+            fontSize="0.65em"
             fontWeight={600}
-            id={null}
-            letterSpacing="0.2px"
+            htmlFor={null}
+            letterSpacing="0.6px"
           >
             321
-          </p>
+          </label>
         </div>
       </div>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-        fontSize="0.95em"
+        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+        fontSize="1em"
         fontWeight={400}
         id={null}
         letterSpacing="0px"
@@ -192,7 +188,7 @@ exports[` 2`] = `
     </section>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+    className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
     href={null}
     id={null}
     media={null}
@@ -208,25 +204,24 @@ exports[` 2`] = `
         id={null}
       >
         <div
-          className="Tag__TagContainer-sc-128kb3h-0 dPJEzp"
+          className="Tag__TagContainer-sc-128kb3h-0 iuqrEV"
           id={null}
           label="4321"
-          style={null}
         >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-            fontSize="0.75em"
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
+            fontSize="0.65em"
             fontWeight={600}
-            id={null}
-            letterSpacing="0.2px"
+            htmlFor={null}
+            letterSpacing="0.6px"
           >
             4321
-          </p>
+          </label>
         </div>
       </div>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-        fontSize="0.95em"
+        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+        fontSize="1em"
         fontWeight={400}
         id={null}
         letterSpacing="0px"
@@ -240,12 +235,12 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 ihnaIG"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 ezarLU"
   id={null}
   rows={null}
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+    className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
     href={null}
     id={null}
     media={null}
@@ -261,25 +256,24 @@ exports[` 3`] = `
         id={null}
       >
         <div
-          className="Tag__TagContainer-sc-128kb3h-0 dPJEzp"
+          className="Tag__TagContainer-sc-128kb3h-0 iuqrEV"
           id={null}
           label="9+"
-          style={null}
         >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-            fontSize="0.75em"
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
+            fontSize="0.65em"
             fontWeight={600}
-            id={null}
-            letterSpacing="0.2px"
+            htmlFor={null}
+            letterSpacing="0.6px"
           >
             9+
-          </p>
+          </label>
         </div>
       </div>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-        fontSize="0.95em"
+        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+        fontSize="1em"
         fontWeight={400}
         id={null}
         letterSpacing="0px"
@@ -289,7 +283,7 @@ exports[` 3`] = `
     </section>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+    className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
     href={null}
     id={null}
     media={null}
@@ -305,25 +299,24 @@ exports[` 3`] = `
         id={null}
       >
         <div
-          className="Tag__TagContainer-sc-128kb3h-0 dPJEzp"
+          className="Tag__TagContainer-sc-128kb3h-0 iuqrEV"
           id={null}
           label="99+"
-          style={null}
         >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-            fontSize="0.75em"
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
+            fontSize="0.65em"
             fontWeight={600}
-            id={null}
-            letterSpacing="0.2px"
+            htmlFor={null}
+            letterSpacing="0.6px"
           >
             99+
-          </p>
+          </label>
         </div>
       </div>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-        fontSize="0.95em"
+        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+        fontSize="1em"
         fontWeight={400}
         id={null}
         letterSpacing="0px"
@@ -333,7 +326,7 @@ exports[` 3`] = `
     </section>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+    className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
     href={null}
     id={null}
     media={null}
@@ -349,25 +342,24 @@ exports[` 3`] = `
         id={null}
       >
         <div
-          className="Tag__TagContainer-sc-128kb3h-0 dPJEzp"
+          className="Tag__TagContainer-sc-128kb3h-0 iuqrEV"
           id={null}
           label="999+"
-          style={null}
         >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-            fontSize="0.75em"
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
+            fontSize="0.65em"
             fontWeight={600}
-            id={null}
-            letterSpacing="0.2px"
+            htmlFor={null}
+            letterSpacing="0.6px"
           >
             999+
-          </p>
+          </label>
         </div>
       </div>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-        fontSize="0.95em"
+        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+        fontSize="1em"
         fontWeight={400}
         id={null}
         letterSpacing="0px"
@@ -377,7 +369,7 @@ exports[` 3`] = `
     </section>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+    className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
     href={null}
     id={null}
     media={null}
@@ -393,25 +385,24 @@ exports[` 3`] = `
         id={null}
       >
         <div
-          className="Tag__TagContainer-sc-128kb3h-0 dPJEzp"
+          className="Tag__TagContainer-sc-128kb3h-0 iuqrEV"
           id={null}
           label="9999+"
-          style={null}
         >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-            fontSize="0.75em"
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
+            fontSize="0.65em"
             fontWeight={600}
-            id={null}
-            letterSpacing="0.2px"
+            htmlFor={null}
+            letterSpacing="0.6px"
           >
             9999+
-          </p>
+          </label>
         </div>
       </div>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-        fontSize="0.95em"
+        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+        fontSize="1em"
         fontWeight={400}
         id={null}
         letterSpacing="0px"
@@ -425,12 +416,12 @@ exports[` 3`] = `
 
 exports[` 4`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 ihnaIG"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 ezarLU"
   id={null}
   rows={null}
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+    className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
     href={null}
     id={null}
     media={null}
@@ -446,25 +437,24 @@ exports[` 4`] = `
         id={null}
       >
         <div
-          className="Tag__TagContainer-sc-128kb3h-0 jDTvba"
+          className="Tag__TagContainer-sc-128kb3h-0 bdHaNe"
           id={null}
           label="Info"
-          style={null}
         >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-            fontSize="0.75em"
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
+            fontSize="0.65em"
             fontWeight={600}
-            id={null}
-            letterSpacing="0.2px"
+            htmlFor={null}
+            letterSpacing="0.6px"
           >
             Info
-          </p>
+          </label>
         </div>
       </div>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-        fontSize="0.95em"
+        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+        fontSize="1em"
         fontWeight={400}
         id={null}
         letterSpacing="0px"
@@ -474,7 +464,7 @@ exports[` 4`] = `
     </section>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+    className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
     href={null}
     id={null}
     media={null}
@@ -490,25 +480,24 @@ exports[` 4`] = `
         id={null}
       >
         <div
-          className="Tag__TagContainer-sc-128kb3h-0 iaJSbE"
+          className="Tag__TagContainer-sc-128kb3h-0 kUvTjI"
           id={null}
           label="Success"
-          style={null}
         >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-            fontSize="0.75em"
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
+            fontSize="0.65em"
             fontWeight={600}
-            id={null}
-            letterSpacing="0.2px"
+            htmlFor={null}
+            letterSpacing="0.6px"
           >
             Success
-          </p>
+          </label>
         </div>
       </div>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-        fontSize="0.95em"
+        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+        fontSize="1em"
         fontWeight={400}
         id={null}
         letterSpacing="0px"
@@ -518,7 +507,7 @@ exports[` 4`] = `
     </section>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+    className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
     href={null}
     id={null}
     media={null}
@@ -534,25 +523,24 @@ exports[` 4`] = `
         id={null}
       >
         <div
-          className="Tag__TagContainer-sc-128kb3h-0 dzizyc"
+          className="Tag__TagContainer-sc-128kb3h-0 jJJrvs"
           id={null}
           label="Warning"
-          style={null}
         >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-            fontSize="0.75em"
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
+            fontSize="0.65em"
             fontWeight={600}
-            id={null}
-            letterSpacing="0.2px"
+            htmlFor={null}
+            letterSpacing="0.6px"
           >
             Warning
-          </p>
+          </label>
         </div>
       </div>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-        fontSize="0.95em"
+        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+        fontSize="1em"
         fontWeight={400}
         id={null}
         letterSpacing="0px"
@@ -562,7 +550,7 @@ exports[` 4`] = `
     </section>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+    className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
     href={null}
     id={null}
     media={null}
@@ -578,25 +566,24 @@ exports[` 4`] = `
         id={null}
       >
         <div
-          className="Tag__TagContainer-sc-128kb3h-0 dPJEzp"
+          className="Tag__TagContainer-sc-128kb3h-0 iuqrEV"
           id={null}
           label="Alert"
-          style={null}
         >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-            fontSize="0.75em"
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
+            fontSize="0.65em"
             fontWeight={600}
-            id={null}
-            letterSpacing="0.2px"
+            htmlFor={null}
+            letterSpacing="0.6px"
           >
             Alert
-          </p>
+          </label>
         </div>
       </div>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-        fontSize="0.95em"
+        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+        fontSize="1em"
         fontWeight={400}
         id={null}
         letterSpacing="0px"
@@ -610,12 +597,12 @@ exports[` 4`] = `
 
 exports[` 5`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 ihnaIG"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 ezarLU"
   id={null}
   rows={null}
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+    className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
     href={null}
     id={null}
     media={null}
@@ -631,25 +618,24 @@ exports[` 5`] = `
         id={null}
       >
         <div
-          className="Tag__TagContainer-sc-128kb3h-0 dPJEzp"
+          className="Tag__TagContainer-sc-128kb3h-0 iuqrEV"
           id={null}
           label="1"
-          style={null}
         >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-            fontSize="0.75em"
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
+            fontSize="0.65em"
             fontWeight={600}
-            id={null}
-            letterSpacing="0.2px"
+            htmlFor={null}
+            letterSpacing="0.6px"
           >
             1
-          </p>
+          </label>
         </div>
       </div>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-        fontSize="0.95em"
+        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+        fontSize="1em"
         fontWeight={400}
         id={null}
         letterSpacing="0px"
@@ -659,7 +645,7 @@ exports[` 5`] = `
     </section>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+    className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
     href={null}
     id={null}
     media={null}
@@ -675,25 +661,24 @@ exports[` 5`] = `
         id={null}
       >
         <div
-          className="Tag__TagContainer-sc-128kb3h-0 dPJEzp"
+          className="Tag__TagContainer-sc-128kb3h-0 iuqrEV"
           id={null}
           label="1"
-          style={null}
         >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-            fontSize="0.75em"
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
+            fontSize="0.65em"
             fontWeight={600}
-            id={null}
-            letterSpacing="0.2px"
+            htmlFor={null}
+            letterSpacing="0.6px"
           >
             1
-          </p>
+          </label>
         </div>
       </div>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-        fontSize="0.95em"
+        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+        fontSize="1em"
         fontWeight={400}
         id={null}
         letterSpacing="0px"
@@ -703,7 +688,7 @@ exports[` 5`] = `
     </section>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+    className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
     href={null}
     id={null}
     media={null}
@@ -719,25 +704,24 @@ exports[` 5`] = `
         id={null}
       >
         <div
-          className="Tag__TagContainer-sc-128kb3h-0 dPJEzp"
+          className="Tag__TagContainer-sc-128kb3h-0 iuqrEV"
           id={null}
           label="1"
-          style={null}
         >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-            fontSize="0.75em"
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
+            fontSize="0.65em"
             fontWeight={600}
-            id={null}
-            letterSpacing="0.2px"
+            htmlFor={null}
+            letterSpacing="0.6px"
           >
             1
-          </p>
+          </label>
         </div>
       </div>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-        fontSize="0.95em"
+        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+        fontSize="1em"
         fontWeight={400}
         id={null}
         letterSpacing="0px"
@@ -747,7 +731,7 @@ exports[` 5`] = `
     </section>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
+    className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
     href={null}
     id={null}
     media={null}
@@ -763,25 +747,24 @@ exports[` 5`] = `
         id={null}
       >
         <div
-          className="Tag__TagContainer-sc-128kb3h-0 dPJEzp"
+          className="Tag__TagContainer-sc-128kb3h-0 iuqrEV"
           id={null}
           label="1"
-          style={null}
         >
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-            fontSize="0.75em"
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
+            fontSize="0.65em"
             fontWeight={600}
-            id={null}
-            letterSpacing="0.2px"
+            htmlFor={null}
+            letterSpacing="0.6px"
           >
             1
-          </p>
+          </label>
         </div>
       </div>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-        fontSize="0.95em"
+        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+        fontSize="1em"
         fontWeight={400}
         id={null}
         letterSpacing="0px"

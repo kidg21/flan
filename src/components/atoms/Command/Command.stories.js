@@ -65,9 +65,9 @@ import Command from "atoms/Command";
 //           size={options(
 //             "size",
 //             {
-//               "small": "small",
+//               "small": "sm",
 //               "standard ( default )": null,
-//               "large": "large",
+//               "large": "lg",
 //             },
 //             null,
 //             { display: "radio" },
@@ -104,7 +104,7 @@ export default {
 };
 export const CommandLibrary = () => {
   return (
-    <Grid gap="large">
+    <Grid gap="xl">
       <CommandGrid data={commandsStandard} />
     </Grid>
   );

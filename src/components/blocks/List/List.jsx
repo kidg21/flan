@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { Darken } from "Variables";
-import Bar from "blocks/Bar";
+import Bar from "layout/Bar";
 import Tag from "atoms/Tag";
 import Avatar from "atoms/Avatar";
 import Icon from "atoms/Icon";
@@ -19,10 +19,10 @@ const ListWrapper = styled.ul`
   list-style: none;
   li:not(:last-child) {
     border-bottom: ${(props) => {
-    return props.divider ? "1px solid" : "";
+    return props.isDivided ? "1px solid" : "";
   }};
     border-bottom-color: ${(props) => {
-    return props.divider ? props.theme.palette.neutral40 : "";
+    return props.isDivided ? props.theme.palette.neutral40 : "";
   }};
   }
 `;
@@ -38,12 +38,12 @@ const ListItemWrapper = styled.li`
   }};
   padding: 1em;
   cursor: ${(props) => {
-    return props.interactive ? "pointer" : "";
+    return props.isInteractive ? "pointer" : "";
   }};
   &:focus,
   &:hover {
     ${(props) => {
-    return props.interactive ? Darken : "";
+    return props.isInteractive ? Darken : "";
   }};
   }
   outline: none;
@@ -62,11 +62,11 @@ const ListItemWrapper = styled.li`
 `;
 
 function List({
-  children, divider, id, interactive,
+  children, id, isDivided, isInteractive,
 }) {
   return (
-    <InteractiveContext.Provider value={interactive}>
-      <ListWrapper divider={divider} id={id}>
+    <InteractiveContext.Provider value={isInteractive}>
+      <ListWrapper isDivided={isDivided} id={id}>
         {children}
       </ListWrapper>
     </InteractiveContext.Provider>
@@ -75,15 +75,15 @@ function List({
 
 List.propTypes = {
   children: PropTypes.node,
-  divider: PropTypes.bool,
   id: PropTypes.string,
-  interactive: PropTypes.bool,
+  isDivided: PropTypes.bool,
+  isInteractive: PropTypes.bool,
 };
 List.defaultProps = {
   children: null,
-  divider: false,
   id: null,
-  interactive: false,
+  isDivided: false,
+  isInteractive: false,
 };
 
 function getRightContent(post, disabled, onClick) {
@@ -131,19 +131,19 @@ function getLeftContent(pre, disabled, onClick) {
 }
 
 function ListItem({
-  active,
+  as,
   children,
   description,
   disabled,
-  id,
-  interactive,
-  isSelected,
-  title,
   href,
+  id,
+  isInteractive,
+  isSelected,
   onClick,
   post,
   pre,
   tabIndex,
+  title,
 }) {
   const leftContent = getLeftContent(pre, disabled, onClick);
   const centerContent = (
@@ -157,13 +157,12 @@ function ListItem({
 
   return (
     <ListItemWrapper
-
-      active={active}
+      as={as}
       href={href}
       id={id}
-      interactive={
-        typeof interactive === "boolean"
-          ? interactive
+      isInteractive={
+        typeof isInteractive === "boolean"
+          ? isInteractive
           : useContext(InteractiveContext)
       }
       isSelected={isSelected}
@@ -173,6 +172,7 @@ function ListItem({
     >
       <DisabledContext.Provider value={disabled}>
         <Bar
+          padding="0"
           center={{
             content: centerContent,
             align: "left",
@@ -190,16 +190,16 @@ function ListItem({
 }
 
 ListItem.propTypes = {
-  active: PropTypes.bool,
-  href: PropTypes.node,
+  as: PropTypes.string,
   children: PropTypes.node,
   description: PropTypes.string,
   disabled: PropTypes.bool,
+  href: PropTypes.node,
   id: PropTypes.string,
-  interactive: PropTypes.bool,
+  isInteractive: PropTypes.bool,
   isSelected: PropTypes.bool,
-  title: PropTypes.string.isRequired,
   onClick: PropTypes.func,
+  title: PropTypes.string.isRequired,
   post: PropTypes.shape({
     type: PropTypes.string.isRequired,
     label: PropTypes.string,
@@ -214,13 +214,13 @@ ListItem.propTypes = {
   tabIndex: PropTypes.string,
 };
 ListItem.defaultProps = {
-  active: false,
-  href: null,
+  as: null,
   children: null,
   description: null,
   disabled: false,
+  href: null,
   id: null,
-  interactive: null,
+  isInteractive: null,
   isSelected: false,
   onClick: null,
   post: null,

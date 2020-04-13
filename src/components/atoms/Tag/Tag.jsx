@@ -1,17 +1,16 @@
+/* eslint-disable complexity */
 /* eslint-disable linebreak-style */
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Icon from "atoms/Icon";
-import Text from "base/Typography";
-
+import { Label } from "base/Typography";
 
 const TagContainer = styled.div`
   justify-content: center;
   display: flex;
   width: fit-content;
   align-items: center;
-  weight: 600;
   background-color: ${(props) => {
     return props.theme.palette[props.badgeColor];
   }};
@@ -23,6 +22,7 @@ const TagContainer = styled.div`
   padding: ${(props) => {
     return props.badgePadding || "";
   }};
+  line-height: normal;
   border: ${(props) => {
     return `2px solid ${props.theme.text.inverse}`;
   }};
@@ -32,7 +32,7 @@ const TagContainer = styled.div`
 `;
 
 function Tag({
-  id, label, icon, style, type, brand,
+  brand, className, icon, id, label, variant,
 }) {
   let badgeColor;
   let badgeTextColor;
@@ -41,17 +41,17 @@ function Tag({
   let iconType;
 
   if (icon) {
-    iconType = <Icon icon={icon} size="2x" type={type} />;
+    iconType = <Icon icon={icon} size="xl" variant={variant} />;
     badgePadding = "0 0.25em";
   } else if (label) {
-    labelType = <Text size="2x" weight="bold" text={label} />;
+    labelType = <Label size="xs" weight="bold" text={label} />;
     badgeTextColor = "inverse";
-    badgePadding = "0.25em .58em";
+    badgePadding = "0.2em .5em";
   } else {
     badgePadding = "0.35rem";
   }
 
-  switch (type) {
+  switch (variant) {
     case "info":
       badgeColor = "info80";
       break;
@@ -69,7 +69,7 @@ function Tag({
       break;
   }
 
-  if (!type) {
+  if (!variant) {
     if (brand === "research") {
       badgeColor = "research";
     } if (brand === "bi") {
@@ -86,19 +86,19 @@ function Tag({
       badgeColor = "brand3";
     } if (brand === "brand4") {
       badgeColor = "brand4";
-    } else { null; }
+    }
   }
 
 
   return (
     <TagContainer
+      badgeColor={badgeColor}
+      badgePadding={badgePadding}
+      badgeTextColor={badgeTextColor}
+      className={className}
+      icon={icon}
       id={id}
       label={label}
-      icon={icon}
-      badgeColor={badgeColor}
-      badgeTextColor={badgeTextColor}
-      badgePadding={badgePadding}
-      style={style}
     >
       {iconType || labelType}
     </TagContainer>
@@ -106,21 +106,21 @@ function Tag({
 }
 
 Tag.propTypes = {
+  brand: PropTypes.string,
+  className: PropTypes.string,
+  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   id: PropTypes.string,
   label: PropTypes.string,
-  type: PropTypes.string,
-  brand: PropTypes.string,
-  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
-  style: PropTypes.string,
+  variant: PropTypes.string,
 };
 
 Tag.defaultProps = {
-  label: null,
-  id: null,
   brand: null,
-  type: null,
+  className: null,
   icon: null,
-  style: null,
+  id: null,
+  label: null,
+  variant: null,
 };
 
 export default Tag;

@@ -3,13 +3,13 @@
 import React from "react";
 
 import { Padding } from "helpers/Display";
-import Form, { Section } from "layout/Form";
+import Form, { FormSection } from "layout/Form";
 import InputBlock from "blocks/InputBlock";
 
 const button = {
-  label: "upload",
-  type: "",
-  onClick: () => {},
+  label: "Upload",
+  variant: "",
+  onClick: () => { },
   color: "",
   disabled: false,
 };
@@ -90,7 +90,8 @@ storiesOf("Blocks|Input Block", module)
           helpText="Play with Knobs to see what this baby can do!"
         />
       );
-    })
+    },
+  )
   .add("Knobs", () => {
     return (
       <InputBlock
@@ -115,19 +116,19 @@ storiesOf("Blocks|Input Block", module)
         )}
         text={text("text", "", "Labels")}
         icon={options(
-            "pre-icon",
-            {
-              none: null,
-              user_circle: "user_circle",
-              down: "down",
-              bookmark: "bookmark_solid",
-              plus: "plus",
-              print: "print",
-            },
-            "user_circle",
-            { display: "select" },
-            "Icon",
-          )
+          "pre-icon",
+          {
+            none: null,
+            user_circle: "user_circle",
+            down: "down",
+            bookmark: "bookmark_solid",
+            plus: "plus",
+            print: "print",
+          },
+          "user_circle",
+          { display: "select" },
+          "Icon",
+        )
         }
         // button={text("button label", "Button", "Button")}
         button={object("button", button, "Button")}
@@ -194,7 +195,7 @@ storiesOf("Blocks|Input Block", module)
   .add("Input Block ( Pre-Label )", () => {
     return (
       <InputBlock
-        prefix
+        hasPrefix
         label="Input Block ( Pre-Label )"
         text="prefix"
         textInputs={inputsOne}
@@ -207,8 +208,8 @@ storiesOf("Blocks|Input Block", module)
     return (
       <InputBlock
         label="Input Block ( Post-Label )"
-        textInputs={inputsOne}
         text="postfix"
+        textInputs={inputsOne}
         helpText="Hang in there, buddy, I'm here to help!"
       />
     );
@@ -217,7 +218,7 @@ storiesOf("Blocks|Input Block", module)
   .add("Input Block ( Pre-Icon )", () => {
     return (
       <InputBlock
-        prefix
+        hasPrefix
         label="Input Block ( Pre-Icon )"
         icon="user"
         textInputs={inputsOne}
@@ -240,7 +241,7 @@ storiesOf("Blocks|Input Block", module)
   .add("Input Block ( Pre-Select )", () => {
     return (
       <InputBlock
-        prefix
+        hasPrefix
         label="Input Block ( Pre-Select )"
         options={titles}
         selectOptions={titles[0].value}
@@ -269,7 +270,7 @@ storiesOf("Blocks|Input Block", module)
   .add("Input Block ( Pre-Button )", () => {
     return (
       <InputBlock
-        prefix
+        hasPrefix
         label="Input Block ( Pre-Button )"
         textInputs={inputsOne}
         button={button}
@@ -295,7 +296,7 @@ storiesOf("Blocks|Input Block", module).add(
   () => {
     return (
       <Form title="The Input Block Family">
-        <Section>
+        <FormSection>
           <InputBlock
             label="Input Block ( standard )"
             textInputs={inputsOne}
@@ -343,7 +344,7 @@ storiesOf("Blocks|Input Block", module).add(
           />
           <InputBlock
             label="Input Block ( pre-label )"
-            prefix
+            hasPrefix
             text="prefix"
             textInputs={inputsOne}
             helpText="Hang in there, buddy, I'm here to help!"
@@ -356,7 +357,7 @@ storiesOf("Blocks|Input Block", module).add(
           />
           <InputBlock
             label="Input Block ( pre-select )"
-            prefix
+            hasPrefix
             options={titles}
             selectOptions={titles[0].value}
             textInputs={inputsOne}
@@ -371,7 +372,7 @@ storiesOf("Blocks|Input Block", module).add(
           />
           <InputBlock
             label="Input Block ( pre-icon )"
-            prefix
+            hasPrefix
             icon="user"
             textInputs={inputsOne}
             helpText="Hang in there, buddy, I'm here to help!"
@@ -383,7 +384,7 @@ storiesOf("Blocks|Input Block", module).add(
             helpText="Hang in there, buddy, I'm here to help!"
           />
           <InputBlock
-            prefix
+            hasPrefix
             label="Input Block ( pre-button )"
             button={button}
             textInputs={inputsOne}
@@ -395,7 +396,7 @@ storiesOf("Blocks|Input Block", module).add(
             textInputs={inputsOne}
             helpText="Hang in there, buddy, I'm here to help!"
           />
-        </Section>
+        </FormSection>
       </Form>
     );
   },

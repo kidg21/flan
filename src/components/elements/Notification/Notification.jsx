@@ -1,10 +1,12 @@
 /* eslint-disable linebreak-style */
 import React from "react";
 import styled, { keyframes } from "styled-components";
+import PropTypes from "prop-types";
 import { screen } from "Variables";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
-import PropTypes from "prop-types";
+import Card from "elements/Card";
 
+/** TODO: Move keyframe animations into their own variable/component files */
 /* const fadeIn = keyframes`
   from {
     opacity: 0;
@@ -69,7 +71,7 @@ const moveDown = keyframes`
   }
 `;
 
-const ContentWrapper = styled.span`
+const ContentWrapper = styled(Card)`
   /* Needed for passing properties to children (animation, etc.) */
 `;
 
@@ -120,17 +122,14 @@ const NotificationContainer = styled.div`
 `;
 
 function Notification({
-  id,
   align,
-  visible,
+  ariaDescribedBy,
+  ariaLabelledBy,
+  children,
+  id,
   onClick,
   position,
-  scale,
-  opacity,
-  ariaLabelledBy,
-  ariaDescribedBy,
-  children,
-  style,
+  visible,
 }) {
   let justifyContent;
   let alignItems;
@@ -162,20 +161,17 @@ function Notification({
   }
   return (
     <NotificationContainer
-      id={id}
       align={align}
-      visible={visible}
-      position={position}
-      scale={scale}
-      opacity={opacity}
-      aria-labelledby={ariaLabelledBy}
-      aria-describedby={ariaDescribedBy}
-      onClick={onClick}
-      justifyContent={justifyContent}
       alignItems={alignItems}
-      style={style}
+      aria-describedby={ariaDescribedBy}
+      aria-labelledby={ariaLabelledBy}
+      id={id}
+      justifyContent={justifyContent}
+      onClick={onClick}
+      position={position}
+      visible={visible}
     >
-      <ContentWrapper>{children}</ContentWrapper>
+      <ContentWrapper shadow="2x">{children}</ContentWrapper>
     </NotificationContainer>
   );
 }
@@ -183,7 +179,6 @@ function Notification({
 export default Notification;
 
 Notification.propTypes = {
-  id: PropTypes.string,
   align: PropTypes.oneOf([
     "topLeft",
     "topCenter",
@@ -192,27 +187,22 @@ Notification.propTypes = {
     "bottomCenter",
     "bottomRight",
   ]),
-  visible: PropTypes.bool,
-  position: PropTypes.oneOf(["moveUp", "moveDown"]),
-  scale: PropTypes.oneOf(["scaleUp", "scaleDown"]),
-  opacity: PropTypes.oneOf(["fadeIn", "fadeOut"]),
-  onClick: PropTypes.func,
-  ariaLabelledBy: PropTypes.string,
   ariaDescribedBy: PropTypes.string,
+  ariaLabelledBy: PropTypes.string,
   children: PropTypes.node,
-  style: PropTypes.string,
+  id: PropTypes.string,
+  onClick: PropTypes.func,
+  position: PropTypes.oneOf(["moveUp", "moveDown"]),
+  visible: PropTypes.bool,
 };
 
 Notification.defaultProps = {
-  id: null,
   align: null,
-  visible: false,
-  position: null,
-  scale: null,
-  opacity: null,
-  onClick: null,
-  ariaLabelledBy: null,
   ariaDescribedBy: null,
+  ariaLabelledBy: null,
   children: null,
-  style: null,
+  id: null,
+  onClick: null,
+  position: null,
+  visible: false,
 };
