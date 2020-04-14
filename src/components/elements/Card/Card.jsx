@@ -15,6 +15,7 @@ import Command from "atoms/Command";
 import Image from "atoms/Image";
 import Avatar from "atoms/Avatar";
 import Menu from "blocks/Menu";
+import Badge from "atoms/Badge";
 import Expander from "utils/Expander";
 import { DisableTransitionContext } from "States";
 import mime from "mime";
@@ -304,6 +305,7 @@ CardSection.defaultProps = {
 };
 
 function Card({
+  badgeLabel,
   body,
   children,
   className,
@@ -366,7 +368,7 @@ function Card({
     centerContent = (
       <LinkedWrapper >
         <React.Fragment >
-          {title ? <Title text={title}  /> : null}
+          {title ? <Title text={title} /> : null}
           {description ? (<Text text={description} />
           ) : null}
         </React.Fragment>
@@ -376,7 +378,7 @@ function Card({
     centerContent = (
       <React.Fragment >
         {title ? <Title text={title} /> : null}
-        {description ? (<Text text={description}  />
+        {description ? (<Text text={description} />
         ) : null}
       </React.Fragment>);
   }
@@ -385,6 +387,7 @@ function Card({
   if (title || description) {
     headerSection = (
       <CardSection type={type} >
+        {badgeLabel ? <Badge label={badgeLabel} /> : null}
         <Bar
           contentAlign="center"
           left={label || icon ? {
@@ -566,6 +569,7 @@ function Card({
 }
 
 Card.propTypes = {
+  badgeLabel: PropTypes.string,
   body: PropTypes.string,
   children: PropTypes.node,
   className: PropTypes.string,
@@ -594,6 +598,7 @@ Card.propTypes = {
   type: PropTypes.string,
 };
 Card.defaultProps = {
+  badgeLabel: null,
   body: null,
   children: null,
   className: null,
