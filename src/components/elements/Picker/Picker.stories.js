@@ -27,9 +27,8 @@ storiesOf("Elements|Picker", module)
     return React.createElement(() => {
       const [activeToggleTab, setActiveToggleTab] = useState("");
       return (
-        <Picker label="Standard Swatches" columns="4">
+        <Picker id="toggleSelect" label="Standard Swatches" columns="4">
           <ColorSwatch
-            id="toggleSelect"
             color="jobs"
             isSelected={activeToggleTab === "tab1"}
             onClick={() => {
