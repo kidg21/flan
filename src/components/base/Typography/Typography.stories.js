@@ -5,7 +5,7 @@ import React from "react";
 import Grid from "layout/Grid";
 
 /** TODO: Add 'Documentation' and 'Knobs' stories */
-storiesOf("Application|Style Guides/", module)
+storiesOf("Application|Style Guides/", module);
 // .add("Typography", () => {
 //   return (
 //     <Grid columns="1">
@@ -35,17 +35,17 @@ storiesOf("Application|Style Guides/", module)
 //         />
 //         component as a child.
 //       </Title>
-//       <Title text="This is 'info' text" type="info" />
-//       <Title text="This is 'success' text" type="success" />
-//       <Title text="This is 'warning' text" type="warning" />
-//       <Title text="This is 'alert' text" type="alert" />
+//       <Title text="This is 'info' text" variant="info" />
+//       <Title text="This is 'success' text" variant="success" />
+//       <Title text="This is 'warning' text" variant="warning" />
+//       <Title text="This is 'alert' text" variant="alert" />
 
-//       <Title text="This is a 'xs' Title" size="xs" />
-//       <Title text="This is a 'sm' Title" size="sm" />
 //       <Title text="This is a standard 'm' Title" />
 //       <Title text="This is a 'lg' Title" size="lg" />
-//       <Title text="This is an '2x' Title" size="2x" />
-//       <Title text="This is an '3x' Title" size="3x" />
+//       <Title text="This is an 'xl' Title" size="xl" />
+//       <Title text="This is an '2xl' Title" size="2xl" />
+//       <Title text="This is an '3xl' Title" size="3xl" />
+//       <Title text="This is an '4xl' Title" size="4xl" />
 
 //       <Title text="This is an 'italic' Title" styling="italic" />
 //       <Title text="This is an 'underline' Title" styling="underline" />

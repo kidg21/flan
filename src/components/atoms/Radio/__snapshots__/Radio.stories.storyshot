@@ -2,7 +2,7 @@
 
 exports[` 1`] = `
 <div
-  className="Radio__RadioContainer-sc-3ox61a-1 kdrtbz"
+  className="Radio__RadioContainer-sc-3ox61a-1 kLMXSr"
   disabled={false}
 >
   <input
@@ -17,9 +17,9 @@ exports[` 1`] = `
     value={null}
   />
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 Jgtkr"
+    className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
     fontSize="0.876em"
-    fontWeight={400}
+    fontWeight={600}
     htmlFor={null}
     letterSpacing="0px"
   >
@@ -31,20 +31,21 @@ exports[` 1`] = `
 exports[` 2`] = `
 Array [
   <div
-    className="Bar__BarLayout-sc-1c4axau-2 hVthby"
+    className="Bar__BarLayout-icfo76-2 gJPHni"
     id={null}
     onClick={null}
   >
     <div
-      className="Bar__Slot-sc-1c4axau-1 fSaTM"
+      className="Bar__Slot-icfo76-1 hCkezQ"
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-check fa-w-16 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 OvdFF"
+        className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jCGBwS"
         color="success80"
         data-icon="check"
         data-prefix="far"
         focusable="false"
+        fontSize="1.35em"
         id={null}
         role="img"
         style={Object {}}
@@ -59,10 +60,10 @@ Array [
       </svg>
     </div>
     <div
-      className="Bar__Slot-sc-1c4axau-1 jISerZ"
+      className="Bar__Slot-icfo76-1 yvaBx"
     >
       <div
-        className="Radio__RadioContainer-sc-3ox61a-1 kdrtbz"
+        className="Radio__RadioContainer-sc-3ox61a-1 kLMXSr"
         disabled={false}
       >
         <input
@@ -77,9 +78,9 @@ Array [
           value={null}
         />
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr"
+          className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
           fontSize="0.876em"
-          fontWeight={400}
+          fontWeight={600}
           htmlFor={null}
           letterSpacing="0px"
         >
@@ -89,20 +90,21 @@ Array [
     </div>
   </div>,
   <div
-    className="Bar__BarLayout-sc-1c4axau-2 hVthby"
+    className="Bar__BarLayout-icfo76-2 gJPHni"
     id={null}
     onClick={null}
   >
     <div
-      className="Bar__Slot-sc-1c4axau-1 fSaTM"
+      className="Bar__Slot-icfo76-1 hCkezQ"
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-times fa-w-10 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 fyNWBU"
+        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 eMVSfb"
         color="alert80"
         data-icon="times"
         data-prefix="far"
         focusable="false"
+        fontSize="1.35em"
         id={null}
         role="img"
         style={Object {}}
@@ -117,10 +119,10 @@ Array [
       </svg>
     </div>
     <div
-      className="Bar__Slot-sc-1c4axau-1 jISerZ"
+      className="Bar__Slot-icfo76-1 yvaBx"
     >
       <div
-        className="Radio__RadioContainer-sc-3ox61a-1 kdrtbz"
+        className="Radio__RadioContainer-sc-3ox61a-1 kLMXSr"
         disabled={false}
       >
         <input
@@ -135,9 +137,9 @@ Array [
           value={null}
         />
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 Jgtkr"
+          className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
           fontSize="0.876em"
-          fontWeight={400}
+          fontWeight={600}
           htmlFor={null}
           letterSpacing="0px"
         >
@@ -151,12 +153,12 @@ Array [
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 fGkTyc"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 dGwfwW"
   id={null}
   rows={null}
 >
   <div
-    className="Radio__RadioContainer-sc-3ox61a-1 kdrtbz"
+    className="Radio__RadioContainer-sc-3ox61a-1 kLMXSr"
     disabled={false}
   >
     <input
@@ -171,9 +173,9 @@ exports[` 3`] = `
       value={null}
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr"
+      className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
       fontSize="0.876em"
-      fontWeight={400}
+      fontWeight={600}
       htmlFor={null}
       letterSpacing="0px"
     >
@@ -181,7 +183,7 @@ exports[` 3`] = `
     </label>
   </div>
   <div
-    className="Radio__RadioContainer-sc-3ox61a-1 kdrtbz"
+    className="Radio__RadioContainer-sc-3ox61a-1 kLMXSr"
     disabled={false}
   >
     <input
@@ -196,9 +198,9 @@ exports[` 3`] = `
       value={null}
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr"
+      className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
       fontSize="0.876em"
-      fontWeight={400}
+      fontWeight={600}
       htmlFor={null}
       letterSpacing="0px"
     >
@@ -206,7 +208,7 @@ exports[` 3`] = `
     </label>
   </div>
   <div
-    className="Radio__RadioContainer-sc-3ox61a-1 ggSJSH"
+    className="Radio__RadioContainer-sc-3ox61a-1 fXxza-D"
     disabled={true}
   >
     <input
@@ -222,9 +224,9 @@ exports[` 3`] = `
       value={null}
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr"
+      className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
       fontSize="0.876em"
-      fontWeight={400}
+      fontWeight={600}
       htmlFor={null}
       letterSpacing="0px"
     >
@@ -236,12 +238,12 @@ exports[` 3`] = `
 
 exports[` 4`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 fGkTyc"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 dGwfwW"
   id={null}
   rows={null}
 >
   <div
-    className="Radio__RadioContainer-sc-3ox61a-1 kdrtbz"
+    className="Radio__RadioContainer-sc-3ox61a-1 kLMXSr"
     disabled={false}
   >
     <input
@@ -256,9 +258,9 @@ exports[` 4`] = `
       value={null}
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr"
+      className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
       fontSize="0.876em"
-      fontWeight={400}
+      fontWeight={600}
       htmlFor={null}
       letterSpacing="0px"
     >
@@ -266,7 +268,7 @@ exports[` 4`] = `
     </label>
   </div>
   <div
-    className="Radio__RadioContainer-sc-3ox61a-1 jsJuiD"
+    className="Radio__RadioContainer-sc-3ox61a-1 fnvrlf"
     disabled={false}
   >
     <input
@@ -281,9 +283,9 @@ exports[` 4`] = `
       value={null}
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 Jgtkr"
+      className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
       fontSize="0.876em"
-      fontWeight={400}
+      fontWeight={600}
       htmlFor={null}
       letterSpacing="0px"
     >
@@ -294,147 +296,142 @@ exports[` 4`] = `
 `;
 
 exports[` 5`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 fGkTyc"
+<form
+  action={null}
+  className="Form__FormWrapper-v2wrel-0 geeIqY"
   id={null}
-  rows={null}
+  method={null}
+  onSubmit={null}
 >
-  <form
-    action={null}
-    className="Form__FormWrapper-v2wrel-0 geeIqY"
-    method={null}
-    onSubmit={null}
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 dGwfwW Form__Inputs-v2wrel-3 dLfNrm"
+    id={null}
+    rows={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 eVqRaz Form__FormInputs-v2wrel-3 bZGKXs"
-      id={null}
-      rows={null}
+      className="Form__Section-v2wrel-2 dIXoJq"
     >
-      <section
-        className="Form__FormSection-v2wrel-2 kbyyVh"
+      <h5
+        className="Typography__TitleText-sc-19auepv-2 KxMwb"
+        fontSize="1.15em"
+        fontWeight={400}
+        letterSpacing="0px"
       >
-        <h6
-          className="Typography__TitleText-sc-19auepv-2 gfzBkI"
-          fontSize="1.05em"
-          fontWeight={600}
-          letterSpacing="0px"
-        >
-          Radio Group (2 Columns)
-        </h6>
+        Radio Group (2 Columns)
+      </h5>
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ceKbHJ Radio__RadioWrapper-sc-3ox61a-0 kzzMRw"
+        id={null}
+        rows={null}
+      >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 eTxJUf Radio__RadioWrapper-sc-3ox61a-0 kzzMRw"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 JteBi Radio__InputGroup-sc-3ox61a-3 dyYMNc"
           id={null}
           rows={null}
         >
-          <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 iPJgzA Radio__InputGroup-sc-3ox61a-3 dyYMNc"
-            id={null}
-            rows={null}
+          <div
+            className="Radio__RadioContainer-sc-3ox61a-1 kLMXSr"
+            disabled={false}
           >
-            <div
-              className="Radio__RadioContainer-sc-3ox61a-1 kdrtbz"
-              disabled={false}
+            <input
+              checked={null}
+              className="Radio__RadioInput-sc-3ox61a-2 kZoAlA"
+              id="radio-1"
+              name="radio-group"
+              onBlur={null}
+              onChange={null}
+              onFocus={null}
+              type="radio"
+              value="1"
+            />
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+              fontSize="0.876em"
+              fontWeight={600}
+              htmlFor="radio-1"
+              letterSpacing="0px"
             >
-              <input
-                checked={null}
-                className="Radio__RadioInput-sc-3ox61a-2 kZoAlA"
-                id="radio-1"
-                name="radio-group"
-                onBlur={null}
-                onChange={null}
-                onFocus={null}
-                type="radio"
-                value="1"
-              />
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 Jgtkr"
-                fontSize="0.876em"
-                fontWeight={400}
-                htmlFor="radio-1"
-                letterSpacing="0px"
-              >
-                Radio 1
-              </label>
-            </div>
-            <div
-              className="Radio__RadioContainer-sc-3ox61a-1 kdrtbz"
-              disabled={false}
+              Radio 1
+            </label>
+          </div>
+          <div
+            className="Radio__RadioContainer-sc-3ox61a-1 kLMXSr"
+            disabled={false}
+          >
+            <input
+              checked={null}
+              className="Radio__RadioInput-sc-3ox61a-2 kZoAlA"
+              id="radio-2"
+              name="radio-group"
+              onBlur={null}
+              onChange={null}
+              onFocus={null}
+              type="radio"
+              value="2"
+            />
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+              fontSize="0.876em"
+              fontWeight={600}
+              htmlFor="radio-2"
+              letterSpacing="0px"
             >
-              <input
-                checked={null}
-                className="Radio__RadioInput-sc-3ox61a-2 kZoAlA"
-                id="radio-2"
-                name="radio-group"
-                onBlur={null}
-                onChange={null}
-                onFocus={null}
-                type="radio"
-                value="2"
-              />
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 Jgtkr"
-                fontSize="0.876em"
-                fontWeight={400}
-                htmlFor="radio-2"
-                letterSpacing="0px"
-              >
-                Radio 2
-              </label>
-            </div>
-            <div
-              className="Radio__RadioContainer-sc-3ox61a-1 kdrtbz"
-              disabled={false}
+              Radio 2
+            </label>
+          </div>
+          <div
+            className="Radio__RadioContainer-sc-3ox61a-1 kLMXSr"
+            disabled={false}
+          >
+            <input
+              checked={null}
+              className="Radio__RadioInput-sc-3ox61a-2 kZoAlA"
+              id="radio-3"
+              name="radio-group"
+              onBlur={null}
+              onChange={null}
+              onFocus={null}
+              type="radio"
+              value="3"
+            />
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+              fontSize="0.876em"
+              fontWeight={600}
+              htmlFor="radio-3"
+              letterSpacing="0px"
             >
-              <input
-                checked={null}
-                className="Radio__RadioInput-sc-3ox61a-2 kZoAlA"
-                id="radio-3"
-                name="radio-group"
-                onBlur={null}
-                onChange={null}
-                onFocus={null}
-                type="radio"
-                value="3"
-              />
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 Jgtkr"
-                fontSize="0.876em"
-                fontWeight={400}
-                htmlFor="radio-3"
-                letterSpacing="0px"
-              >
-                Radio 3
-              </label>
-            </div>
-            <div
-              className="Radio__RadioContainer-sc-3ox61a-1 kdrtbz"
-              disabled={false}
+              Radio 3
+            </label>
+          </div>
+          <div
+            className="Radio__RadioContainer-sc-3ox61a-1 kLMXSr"
+            disabled={false}
+          >
+            <input
+              checked={null}
+              className="Radio__RadioInput-sc-3ox61a-2 kZoAlA"
+              id="radio-4"
+              name="radio-group"
+              onBlur={null}
+              onChange={null}
+              onFocus={null}
+              type="radio"
+              value="4"
+            />
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+              fontSize="0.876em"
+              fontWeight={600}
+              htmlFor="radio-4"
+              letterSpacing="0px"
             >
-              <input
-                checked={null}
-                className="Radio__RadioInput-sc-3ox61a-2 kZoAlA"
-                id="radio-4"
-                name="radio-group"
-                onBlur={null}
-                onChange={null}
-                onFocus={null}
-                type="radio"
-                value="4"
-              />
-              <label
-                className="Typography__StyledLabel-sc-19auepv-0 Jgtkr"
-                fontSize="0.876em"
-                fontWeight={400}
-                htmlFor="radio-4"
-                letterSpacing="0px"
-              >
-                Radio 4
-              </label>
-            </div>
-          </section>
+              Radio 4
+            </label>
+          </div>
         </section>
       </section>
     </section>
-  </form>
-</section>
+  </section>
+</form>
 `;

@@ -14,7 +14,7 @@ import Icon from "atoms/Icon";
 
 <Preview withToolbar>
   <Story name="Standard">
-    <Icon icon="user_circle" size="2x" />
+    <Icon icon="user_circle" size="xl" />
   </Story>
 </Preview>
 
@@ -51,12 +51,13 @@ Icons inherit the 'color' of the parent container by default but can be overridd
 
 <Preview>
   <Story name="Type">
-    <Grid columns="6">
-      <Icon icon="user_circle" size="2x" />
-      <Icon icon="user_circle" size="2x" type="info" />
-      <Icon icon="user_circle" size="2x" type="success" />
-      <Icon icon="user_circle" size="2x" type="warning" />
-      <Icon icon="user_circle" size="2x" type="alert" />
+    <Grid columns="8">
+      <Icon icon="user_circle" size="xl" />
+      <Icon icon="user_circle" size="xl" variant="info" />
+      <Icon icon="user_circle" size="xl" variant="success" />
+      <Icon icon="user_circle" size="xl" variant="warning" />
+      <Icon icon="user_circle" size="xl" variant="alert" />
+      <Icon icon="user_circle" size="xl" variant="inverse" />
     </Grid>
   </Story>
 </Preview>
@@ -68,15 +69,15 @@ Icons inherit the 'color' of the parent container by default but can be overridd
 
 <Preview>
   <Story name="Brand">
-    <Grid columns="6">
-      <Icon icon="user_circle" size="2x" brand="research"/>
-      <Icon icon="user_circle" size="2x" brand="bi" />
-      <Icon icon="user_circle" size="2x" brand="broker" />
-      <Icon icon="user_circle" size="2x" brand="jobs"/>
-      <Icon icon="user_circle" size="2x" brand="brand1" />
-      <Icon icon="user_circle" size="2x" brand="brand2" />
-      <Icon icon="user_circle" size="2x" brand="brand3" />
-      <Icon icon="user_circle" size="2x" brand="brand4" />
+    <Grid columns="8">
+      <Icon icon="user_circle" size="xl" brand="research"/>
+      <Icon icon="user_circle" size="xl" brand="bi" />
+      <Icon icon="user_circle" size="xl" brand="broker" />
+      <Icon icon="user_circle" size="xl" brand="jobs"/>
+      <Icon icon="user_circle" size="xl" brand="brand1" />
+      <Icon icon="user_circle" size="xl" brand="brand2" />
+      <Icon icon="user_circle" size="xl" brand="brand3" />
+      <Icon icon="user_circle" size="xl" brand="brand4" />
     </Grid>
   </Story>
 </Preview>
@@ -88,15 +89,15 @@ To show new updates or an active state for icon use the badge prop.
 
 <Preview>
   <Story name="Badge">
-    <Grid columns="6">
-      <Icon icon="user_circle" size="2x" badge/>
-      <Icon icon="home" size="2x" badge="info"/>
-      <Icon icon="bookmark" size="2x" badge="success" />
-      <Icon icon="print" size="2x" badge="warning" />
-      <Icon icon="user" size="2x" badge onClick={() => {}}  />
-      <Icon icon="user_circle" size="2x" badge="info"  onClick={() => {}} />
-      <Icon icon="user_circle" size="2x" badge="success" onClick={() => {}} />
-      <Icon icon="user_circle" size="2x" badge="warning" onClick />
+    <Grid columns="8">
+      <Icon icon="user_circle" size="xl" badge/>
+      <Icon icon="home" size="xl" badge="info"/>
+      <Icon icon="bookmark" size="xl" badge="success" />
+      <Icon icon="print" size="xl" badge="warning" />
+      <Icon icon="user" size="xl" badge onClick={() => {}}  />
+      <Icon icon="user_circle" size="xl" badge="info"  onClick={() => {}} />
+      <Icon icon="user_circle" size="xl" badge="success" onClick={() => {}} />
+      <Icon icon="user_circle" size="xl" badge="warning" onClick />
     </Grid>
   </Story>
 </Preview>
@@ -107,20 +108,15 @@ Icons inherit the 'font-size' of the parent container and are relatively sized.
 
 <Preview>
   <Story name="Size">
-    <Grid columns="4" gap="xxlarge">
+    <Grid columns="8" align="bottom">
       <Icon icon="user_circle" size="xs" />
       <Icon icon="user_circle" size="sm" />
       <Icon icon="user_circle" />
       <Icon icon="user_circle" size="lg" />
-      <Icon icon="user_circle" size="2x" />
-      <Icon icon="user_circle" size="3x" />
-      <Icon icon="user_circle" size="4x" />
-      <Icon icon="user_circle" size="5x" />
-      <Icon icon="user_circle" size="6x" />
-      <Icon icon="user_circle" size="7x" />
-      <Icon icon="user_circle" size="8x" />
-      <Icon icon="user_circle" size="9x" />
-      <Icon icon="user_circle" size="10x" />
+      <Icon icon="user_circle" size="xl" />
+      <Icon icon="user_circle" size="2xl" />
+      <Icon icon="user_circle" size="3xl" />
+      <Icon icon="user_circle" size="4xl" />
     </Grid>
   </Story>
 </Preview>

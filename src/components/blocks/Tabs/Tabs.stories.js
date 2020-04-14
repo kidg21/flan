@@ -1,18 +1,30 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable linebreak-style */
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
-import {
-  withKnobs,
-  text,
-  boolean,
-  select,
-  optionsKnob as options,
-} from "@storybook/addon-knobs";
-import Tabs, { Tab } from "blocks/Tabs";
+import Tabs, { TabsItem } from "blocks/Tabs";
+
+const tabNames = [
+  {
+    id: "segment_1",
+    label: "Option 1",
+  },
+  {
+    id: "segment_2",
+    label: "Option 2",
+    disabled: true,
+  },
+  {
+    id: "segment_3",
+    label: "Option 3",
+  },
+  {
+    id: "segment_4",
+    label: "Option 4",
+    isSelected: true,
+  },
+];
 
 storiesOf("Blocks|Tabs", module)
   .addDecorator(Padding)
@@ -21,12 +33,13 @@ storiesOf("Blocks|Tabs", module)
     () => {
       return (
         <Tabs>
-          <Tab label="Tab" isSelected />
-          <Tab label="Tab" />
-          <Tab label="Tab" />
+          <TabsItem label="Tab" isSelected />
+          <TabsItem label="Tab" />
+          <TabsItem label="Tab" />
         </Tabs>
       );
-    });
+    },
+  );
 
 storiesOf("Blocks|Tabs", module)
   .addDecorator(Padding)
@@ -34,20 +47,9 @@ storiesOf("Blocks|Tabs", module)
   .add("Knobs", () => {
     return (
       <Tabs
-        align={options(
-          "align",
-          {
-            "top ( default )": "top",
-            "left ( 1 column / vertical )": "left",
-            "bottom": "bottom",
-            "right ( 1 column / vertical )": "right",
-          },
-          "top",
-          { display: "radio" },
-          "Tab Group",
-        )}
+        disabled={boolean("disable", false, "Tabs")}
       >
-        <Tab
+        <TabsItem
           icon={select(
             "icon 1",
             {
@@ -67,7 +69,7 @@ storiesOf("Blocks|Tabs", module)
             alert("Tab 1 clicked!");
           }}
         />
-        <Tab
+        <TabsItem
           icon={select(
             "icon 2",
             {
@@ -87,7 +89,7 @@ storiesOf("Blocks|Tabs", module)
             alert("Tab 2 clicked!");
           }}
         />
-        <Tab
+        <TabsItem
           icon={select(
             "icon 3",
             {
@@ -107,7 +109,7 @@ storiesOf("Blocks|Tabs", module)
             alert("Tab 3 clicked!");
           }}
         />
-        <Tab
+        <TabsItem
           icon={select(
             "icon 4",
             {
@@ -127,7 +129,7 @@ storiesOf("Blocks|Tabs", module)
             alert("Tab 4 clicked!");
           }}
         />
-        <Tab
+        <TabsItem
           icon={select(
             "icon 5",
             {
@@ -156,155 +158,105 @@ storiesOf("Blocks|Tabs", module)
   .add("Single-Row (default)", () => {
     return (
       <Tabs>
-        <Tab label="Tab" />
-        <Tab label="Tab" />
-        <Tab label="Tab" />
+        <TabsItem label="Tab" />
+        <TabsItem label="Tab" />
+        <TabsItem label="Tab" />
       </Tabs>
     );
   })
   .add("Vertical Column", () => {
     return (
-      <Tabs vertical>
-        <Tab label="Tab" />
-        <Tab label="Tab" isSelected />
-        <Tab label="Tab" />
+      <Tabs isVertical>
+        <TabsItem label="Tab" />
+        <TabsItem label="Tab" isSelected />
+        <TabsItem label="Tab" />
       </Tabs>
     );
   })
   .add("Icon Tabs", () => {
     return (
       <Tabs>
-        <Tab label="Tab" icon="user" />
-        <Tab label="Tab" icon="user" />
-        <Tab label="Tab" icon="user" />
+        <TabsItem label="Tab" icon="user" />
+        <TabsItem label="Tab" icon="user" />
+        <TabsItem label="Tab" icon="user" />
       </Tabs>
     );
   })
   .add("Icon Only Tabs", () => {
     return (
       <Tabs>
-        <Tab icon="user" />
-        <Tab icon="settings" />
-        <Tab icon="report" />
+        <TabsItem icon="user" />
+        <TabsItem icon="settings" />
+        <TabsItem icon="report" />
       </Tabs>
     );
   })
   .add("Count Tabs", () => {
     return (
       <Tabs>
-        <Tab label="Tab" count="1" />
-        <Tab label="Tab" count="87" />
-        <Tab label="Tab" count="2" />
+        <TabsItem label="Tab" count="1" />
+        <TabsItem label="Tab" count="87" />
+        <TabsItem label="Tab" count="2" />
       </Tabs>
     );
-  });
+  })
+  .add(
+    "Passed via Array",
+    () => {
+      return (
+        <Tabs data={tabNames} />
+      );
+    },
+  )
+  .add("Disabled (TabsItem Group)", () => {
+    return (
+      <Tabs disabled>
+        <TabsItem label="Tab" />
+        <TabsItem label="Tab" />
+        <TabsItem label="Tab" />
+      </Tabs>
+    );
+  })
+  .add(
+    "Disabled (Individual Tab)",
+    () => {
+      return (
+        <Tabs>
+          <TabsItem label="Tab" />
+          <TabsItem label="Tab" disabled />
+          <TabsItem label="Tab" />
+        </Tabs>
+      );
+    },
+  );
 
 storiesOf("Blocks|Tabs", module)
   .addDecorator(Padding)
-  .add("Single-Select", () => {
+  .add("Interactive", () => {
     return React.createElement(() => {
       const [activeSingleTab, setActiveSingleTab] = useState("tab1");
+      const tabButtons = [
+        {
+          id: "Tab 1",
+          label: "Tab 1",
+          isSelected: activeSingleTab === "tab1",
+          onClick: () => { setActiveSingleTab("tab1"); },
+        },
+        {
+          id: "Tab 2",
+          label: "Tab 2",
+          isSelected: activeSingleTab === "tab2",
+          onClick: () => { setActiveSingleTab("tab2"); },
+        },
+        {
+          id: "Tab 3",
+          label: "Tab 3",
+          isSelected: activeSingleTab === "tab3",
+          onClick: () => { setActiveSingleTab("tab3"); },
+        },
+      ];
       return (
-        <Tabs columns="">
-          <Tab
-            label="Tab 1"
-            isSelected={activeSingleTab === "tab1"}
-            onClick={() => {
-              setActiveSingleTab("tab1");
-            }}
-          />
-          <Tab
-            label="Tab 2"
-            isSelected={activeSingleTab === "tab2"}
-            onClick={() => {
-              setActiveSingleTab("tab2");
-            }}
-          />
-          <Tab
-            label="Tab 3"
-            isSelected={activeSingleTab === "tab3"}
-            onClick={() => {
-              setActiveSingleTab("tab3");
-            }}
-          />
-        </Tabs>
-      );
-    });
-  })
-  .add("Toggle-Select", () => {
-    return React.createElement(() => {
-      const [activeToggleTab, setActiveToggleTab] = useState("");
-      return (
-        <Tabs columns="">
-          <Tab
-            label="Tab 1"
-            isSelected={activeToggleTab === "tab1"}
-            onClick={() => {
-              if (activeToggleTab === "tab1") {
-                setActiveToggleTab("");
-              } else {
-                setActiveToggleTab("tab1");
-              }
-              return false;
-            }}
-          />
-          <Tab
-            label="Tab 2"
-            isSelected={activeToggleTab === "tab2"}
-            onClick={() => {
-              if (activeToggleTab === "tab2") {
-                setActiveToggleTab("");
-              } else {
-                setActiveToggleTab("tab2");
-              }
-              return false;
-            }}
-          />
-          <Tab
-            label="Tab 3"
-            isSelected={activeToggleTab === "tab3"}
-            onClick={() => {
-              if (activeToggleTab === "tab3") {
-                setActiveToggleTab("");
-              } else {
-                setActiveToggleTab("tab3");
-              }
-              return false;
-            }}
-          />
-        </Tabs>
-      );
-    });
-  })
-  .add("Multi-Select", () => {
-    return React.createElement(() => {
-      const [activeMultiTab, setActiveMultiTab] = useState(false);
-      const [activeMultiTab2, setActiveMultiTab2] = useState(false);
-      const [activeMultiTab3, setActiveMultiTab3] = useState(false);
-      return (
-        <Tabs columns="">
-          <Tab
-            label="Tab 1"
-            isSelected={activeMultiTab}
-            onClick={() => {
-              setActiveMultiTab(!activeMultiTab);
-            }}
-          />
-          <Tab
-            label="Tab 2"
-            isSelected={activeMultiTab2}
-            onClick={() => {
-              setActiveMultiTab2(!activeMultiTab2);
-            }}
-          />
-          <Tab
-            label="Tab 3"
-            isSelected={activeMultiTab3}
-            onClick={() => {
-              setActiveMultiTab3(!activeMultiTab3);
-            }}
-          />
-        </Tabs>
+        <Tabs data={tabButtons} />
       );
     });
   });

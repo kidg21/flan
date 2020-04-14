@@ -7,7 +7,6 @@ import Banner from "blocks/Banner";
 import Notification from "elements/Notification";
 
 
-
 storiesOf("Elements|Notification", module)
 
   .add(
@@ -38,8 +37,6 @@ storiesOf("Elements|Notification", module)
             <Notification
               visible={visible}
               onClose={handleClose}
-              opacity={transition}
-              scale={transition}
               position={transition}
             >
               <Banner
@@ -47,15 +44,12 @@ storiesOf("Elements|Notification", module)
                 onClose={handleClose}
               />
             </Notification>
-            <Button
-              label="Show Notification"
-              style={{ marginLeft: "3rem" }}
-              onClick={handleOpen}
-            />
+            <Button label="Show Notification" onClick={handleOpen} />
           </Fragment>
         );
       });
-    });
+    },
+  );
 
 storiesOf("Elements|Notification", module)
   .addDecorator(withKnobs)
@@ -99,8 +93,6 @@ storiesOf("Elements|Notification", module)
             )}
             visible={visible}
             onClose={handleClose}
-            opacity={transition}
-            scale={transition}
             position={transition}
           >
             <Banner
@@ -112,55 +104,8 @@ storiesOf("Elements|Notification", module)
               onClose={handleClose}
             />
           </Notification>
-          <Panel
-            header={
-              <Button label="Show Notification" onClick={handleOpen} />
-            }
-          />
+          <Button label="Show Notification" onClick={handleOpen} />
         </Fragment>
       );
     });
   });
-storiesOf("Elements|Notification", module).add("Status Notification", () => {
-  return React.createElement(() => {
-    const [visible, setVisible] = useState(false);
-    const [transition, setTransition] = useState(true);
-    const handleOpen = (/* event */) => {
-      setVisible(true);
-      setTransition(true);
-      setTimeout(() => {
-        setTransition(false);
-        setTimeout(() => {
-          setVisible(false);
-        }, 500);
-      }, 3000);
-    };
-    const handleClose = (/* event */) => {
-      setTransition(false);
-      setTimeout(() => {
-        setVisible(false);
-      }, 500);
-    };
-    return (
-      <Fragment>
-        <Notification
-          visible={visible}
-          onClose={handleClose}
-          opacity={transition}
-          scale={transition}
-          position={transition}
-        >
-          <Banner
-            title="This is a Standard notification telling you stuff."
-            onClose={handleClose}
-          />
-        </Notification>
-        <Panel
-          header={
-            <Button label="Status Notification" onClick={handleOpen} />
-          }
-        />
-      </Fragment>
-    );
-  });
-});

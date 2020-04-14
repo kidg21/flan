@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import Bar from "blocks/Bar";
+import Bar from "layout/Bar";
 import Icon from "atoms/Icon";
 import Expander from "utils/Expander";
 import Text, { Title } from "base/Typography";

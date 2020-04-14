@@ -2,10 +2,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
-import Bar from "blocks/Bar";
+import Bar from "layout/Bar";
 import { Title } from "base/Typography";
 import Menu from "blocks/Menu";
 
+// TODO: (if necessary) Create a generic 'header' component as a base for current multiple Panel Header configurations
 function NavigationPanelHeader({
   id, title, onClick, menuData,
 }) {
@@ -13,16 +14,15 @@ function NavigationPanelHeader({
     <React.Fragment id={id}>
       <Bar
         contentAlign="center"
-        padding="3x"
         left={{
           content: <Icon icon="left" onClick={onClick} />,
           width: "min-content",
         }}
         center={{
-          content: <Title text={title} size="2x" weight="bold" />,
+          content: <Title text={title} size="lg" weight="bold" />,
           align: "left",
         }}
-        right={<Menu data={menuData} position="bottomLeft" type="edit" />}
+        right={<Menu data={menuData} position="bottomLeft" />}
       />
     </React.Fragment>
   );
@@ -30,19 +30,19 @@ function NavigationPanelHeader({
 
 NavigationPanelHeader.propTypes = {
   id: PropTypes.string,
-  title: PropTypes.node.isRequired,
-  onClick: PropTypes.func,
   menuData: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
     label: PropTypes.string,
     onClick: PropTypes.func,
   })),
+  onClick: PropTypes.func,
+  title: PropTypes.node.isRequired,
 };
 
 NavigationPanelHeader.defaultProps = {
   id: null,
-  onClick: null,
   menuData: null,
+  onClick: null,
 };
 
 export default NavigationPanelHeader;

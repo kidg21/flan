@@ -2,69 +2,126 @@
 
 exports[` 1`] = `
 <div
-  style={
-    Object {
-      "padding": "2rem",
-    }
-  }
+  className="MediaBlock__Block-k78dm4-0 jXgttR"
+  id={null}
+  onClick={null}
 >
-  <div
-    className="MediaBlock__Block-k78dm4-0 jXgttR"
-    id={null}
-    onClick={null}
+  <section
+    className="MediaBlock__Media-k78dm4-1 kxoljg"
   >
-    <section
-      className="MediaBlock__Media-k78dm4-1 kxoljg"
+    <img
+      alt="This is alt text for this image"
+      className="Image__ImageWrapper-sc-18abvff-0 driND"
+      onClick={null}
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+      title="This is alt text for this image"
+      width={null}
+    />
+  </section>
+  <section
+    className="MediaBlock__Body-k78dm4-2 koHCVu"
+  >
+    <h5
+      className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+      fontSize="1.15em"
+      fontWeight={600}
+      letterSpacing="0px"
     >
-      <img
-        alt="This is alt text for this image"
-        className="Image__ImageWrapper-sc-18abvff-0 ehzHeN"
-        onClick={null}
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-        title="This is alt text for this image"
-        width={null}
-      />
-    </section>
-    <section
-      className="MediaBlock__Body-k78dm4-2 dYJiLU"
+      Media Block
+    </h5>
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 irlSOM"
+      fontSize="1em"
+      fontWeight={300}
+      id={null}
+      letterSpacing="0px"
     >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-        fontSize="1.05em"
-        fontWeight={400}
-        letterSpacing="0px"
-      >
-        Media Block
-      </h6>
-      <p
-        className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-        fontSize="0.95em"
-        fontWeight={400}
-        id={null}
-        letterSpacing="0px"
-      >
-        In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. 
-      </p>
-    </section>
-  </div>
+      In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. 
+    </p>
+  </section>
 </div>
 `;
 
 exports[` 2`] = `
 <div
-  style={
-    Object {
-      "padding": "2rem",
-    }
-  }
+  className="MediaBlock__Block-k78dm4-0 jXgttR"
+  id={null}
+  onClick={null}
 >
-  <div
-    className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
-    href={null}
-    id={null}
-    media={null}
-    onClick={null}
+  <section
+    className="MediaBlock__Media-k78dm4-1 kxoljg"
   >
+    <img
+      alt="This is alt text for this image"
+      className="Image__ImageWrapper-sc-18abvff-0 driND"
+      onClick={null}
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+      title="This is alt text for this image"
+      width={null}
+    />
+  </section>
+  <section
+    className="MediaBlock__Body-k78dm4-2 koHCVu"
+  >
+    <h5
+      className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+      fontSize="1.15em"
+      fontWeight={600}
+      letterSpacing="0px"
+    >
+      Media Block
+    </h5>
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 irlSOM"
+      fontSize="1em"
+      fontWeight={300}
+      id={null}
+      letterSpacing="0px"
+    >
+      In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. 
+    </p>
+  </section>
+</div>
+`;
+
+exports[` 3`] = `
+<div
+  className="MediaBlock__Block-k78dm4-0 jXgttR"
+  id={null}
+  onClick={null}
+>
+  <section
+    className="MediaBlock__Media-k78dm4-1 kxoljg"
+  >
+    <img
+      alt="This is alt text for this image"
+      className="Image__ImageWrapper-sc-18abvff-0 driND"
+      onClick={null}
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+      title="This is alt text for this image"
+      width={null}
+    />
+  </section>
+  <section
+    className="MediaBlock__Body-k78dm4-2 koHCVu"
+  >
+    <h5
+      className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+      fontSize="1.15em"
+      fontWeight={600}
+      letterSpacing="0px"
+    >
+      Media Block
+    </h5>
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 irlSOM"
+      fontSize="1em"
+      fontWeight={300}
+      id={null}
+      letterSpacing="0px"
+    >
+      In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. 
+    </p>
     <div
       className="MediaBlock__Block-k78dm4-0 jXgttR"
       id={null}
@@ -75,7 +132,7 @@ exports[` 2`] = `
       >
         <img
           alt="This is alt text for this image"
-          className="Image__ImageWrapper-sc-18abvff-0 ehzHeN"
+          className="Image__ImageWrapper-sc-18abvff-0 driND"
           onClick={null}
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
           title="This is alt text for this image"
@@ -83,20 +140,137 @@ exports[` 2`] = `
         />
       </section>
       <section
-        className="MediaBlock__Body-k78dm4-2 dYJiLU"
+        className="MediaBlock__Body-k78dm4-2 koHCVu"
       >
-        <h6
-          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-          fontSize="1.05em"
-          fontWeight={400}
+        <h5
+          className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+          fontSize="1.15em"
+          fontWeight={600}
           letterSpacing="0px"
         >
           Media Block
-        </h6>
+        </h5>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-          fontSize="0.95em"
-          fontWeight={400}
+          className="Typography__Paragraph-sc-19auepv-3 irlSOM"
+          fontSize="1em"
+          fontWeight={300}
+          id={null}
+          letterSpacing="0px"
+        >
+          In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. 
+        </p>
+        <div
+          className="MediaBlock__Block-k78dm4-0 jXgttR"
+          id={null}
+          onClick={null}
+        >
+          <section
+            className="MediaBlock__Media-k78dm4-1 kxoljg"
+          >
+            <img
+              alt="This is alt text for this image"
+              className="Image__ImageWrapper-sc-18abvff-0 driND"
+              onClick={null}
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+              title="This is alt text for this image"
+              width={null}
+            />
+          </section>
+          <section
+            className="MediaBlock__Body-k78dm4-2 koHCVu"
+          >
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+              fontSize="1.15em"
+              fontWeight={600}
+              letterSpacing="0px"
+            >
+              Media Block
+            </h5>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 irlSOM"
+              fontSize="1em"
+              fontWeight={300}
+              id={null}
+              letterSpacing="0px"
+            >
+              In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. 
+            </p>
+          </section>
+        </div>
+        <div
+          className="MediaBlock__Block-k78dm4-0 jXgttR"
+          id={null}
+          onClick={null}
+        >
+          <section
+            className="MediaBlock__Media-k78dm4-1 kxoljg"
+          >
+            <img
+              alt="This is alt text for this image"
+              className="Image__ImageWrapper-sc-18abvff-0 driND"
+              onClick={null}
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+              title="This is alt text for this image"
+              width={null}
+            />
+          </section>
+          <section
+            className="MediaBlock__Body-k78dm4-2 koHCVu"
+          >
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+              fontSize="1.15em"
+              fontWeight={600}
+              letterSpacing="0px"
+            >
+              Media Block
+            </h5>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 irlSOM"
+              fontSize="1em"
+              fontWeight={300}
+              id={null}
+              letterSpacing="0px"
+            >
+              In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. 
+            </p>
+          </section>
+        </div>
+      </section>
+    </div>
+    <div
+      className="MediaBlock__Block-k78dm4-0 jXgttR"
+      id={null}
+      onClick={null}
+    >
+      <section
+        className="MediaBlock__Media-k78dm4-1 kxoljg"
+      >
+        <img
+          alt="This is alt text for this image"
+          className="Image__ImageWrapper-sc-18abvff-0 driND"
+          onClick={null}
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+          title="This is alt text for this image"
+          width={null}
+        />
+      </section>
+      <section
+        className="MediaBlock__Body-k78dm4-2 koHCVu"
+      >
+        <h5
+          className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+          fontSize="1.15em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Media Block
+        </h5>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 irlSOM"
+          fontSize="1em"
+          fontWeight={300}
           id={null}
           letterSpacing="0px"
         >
@@ -104,17 +278,15 @@ exports[` 2`] = `
         </p>
       </section>
     </div>
-  </div>
+  </section>
 </div>
 `;
 
-exports[` 3`] = `
-<div
-  style={
-    Object {
-      "padding": "2rem",
-    }
-  }
+exports[` 4`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 dGwfwW"
+  id={null}
+  rows={null}
 >
   <div
     className="MediaBlock__Block-k78dm4-0 jXgttR"
@@ -126,7 +298,7 @@ exports[` 3`] = `
     >
       <img
         alt="This is alt text for this image"
-        className="Image__ImageWrapper-sc-18abvff-0 ehzHeN"
+        className="Image__ImageWrapper-sc-18abvff-0 driND"
         onClick={null}
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
         title="This is alt text for this image"
@@ -134,481 +306,221 @@ exports[` 3`] = `
       />
     </section>
     <section
-      className="MediaBlock__Body-k78dm4-2 dYJiLU"
+      className="MediaBlock__Body-k78dm4-2 koHCVu"
     >
-      <h6
-        className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-        fontSize="1.05em"
-        fontWeight={400}
+      <h5
+        className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+        fontSize="1.15em"
+        fontWeight={600}
         letterSpacing="0px"
       >
         Media Block
-      </h6>
+      </h5>
       <p
-        className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-        fontSize="0.95em"
-        fontWeight={400}
+        className="Typography__Paragraph-sc-19auepv-3 irlSOM"
+        fontSize="1em"
+        fontWeight={300}
         id={null}
         letterSpacing="0px"
       >
-        In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. 
+        In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
       </p>
-      <div
-        className="MediaBlock__Block-k78dm4-0 jXgttR"
-        id={null}
-        onClick={null}
-      >
-        <section
-          className="MediaBlock__Media-k78dm4-1 kxoljg"
-        >
-          <img
-            alt="This is alt text for this image"
-            className="Image__ImageWrapper-sc-18abvff-0 ehzHeN"
-            onClick={null}
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-            title="This is alt text for this image"
-            width={null}
-          />
-        </section>
-        <section
-          className="MediaBlock__Body-k78dm4-2 dYJiLU"
-        >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-            fontSize="1.05em"
-            fontWeight={400}
-            letterSpacing="0px"
-          >
-            Media Block
-          </h6>
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-            fontSize="0.95em"
-            fontWeight={400}
-            id={null}
-            letterSpacing="0px"
-          >
-            In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. 
-          </p>
-          <div
-            className="MediaBlock__Block-k78dm4-0 jXgttR"
-            id={null}
-            onClick={null}
-          >
-            <section
-              className="MediaBlock__Media-k78dm4-1 kxoljg"
-            >
-              <img
-                alt="This is alt text for this image"
-                className="Image__ImageWrapper-sc-18abvff-0 ehzHeN"
-                onClick={null}
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-                title="This is alt text for this image"
-                width={null}
-              />
-            </section>
-            <section
-              className="MediaBlock__Body-k78dm4-2 dYJiLU"
-            >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                fontSize="1.05em"
-                fontWeight={400}
-                letterSpacing="0px"
-              >
-                Media Block
-              </h6>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                fontSize="0.95em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0px"
-              >
-                In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. 
-              </p>
-            </section>
-          </div>
-          <div
-            className="MediaBlock__Block-k78dm4-0 jXgttR"
-            id={null}
-            onClick={null}
-          >
-            <section
-              className="MediaBlock__Media-k78dm4-1 kxoljg"
-            >
-              <img
-                alt="This is alt text for this image"
-                className="Image__ImageWrapper-sc-18abvff-0 ehzHeN"
-                onClick={null}
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-                title="This is alt text for this image"
-                width={null}
-              />
-            </section>
-            <section
-              className="MediaBlock__Body-k78dm4-2 dYJiLU"
-            >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                fontSize="1.05em"
-                fontWeight={400}
-                letterSpacing="0px"
-              >
-                Media Block
-              </h6>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                fontSize="0.95em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0px"
-              >
-                In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. 
-              </p>
-            </section>
-          </div>
-        </section>
-      </div>
-      <div
-        className="MediaBlock__Block-k78dm4-0 jXgttR"
-        id={null}
-        onClick={null}
-      >
-        <section
-          className="MediaBlock__Media-k78dm4-1 kxoljg"
-        >
-          <img
-            alt="This is alt text for this image"
-            className="Image__ImageWrapper-sc-18abvff-0 ehzHeN"
-            onClick={null}
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-            title="This is alt text for this image"
-            width={null}
-          />
-        </section>
-        <section
-          className="MediaBlock__Body-k78dm4-2 dYJiLU"
-        >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-            fontSize="1.05em"
-            fontWeight={400}
-            letterSpacing="0px"
-          >
-            Media Block
-          </h6>
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-            fontSize="0.95em"
-            fontWeight={400}
-            id={null}
-            letterSpacing="0px"
-          >
-            In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy. 
-          </p>
-        </section>
-      </div>
     </section>
   </div>
-</div>
-`;
-
-exports[` 4`] = `
-<div
-  style={
-    Object {
-      "padding": "2rem",
-    }
-  }
->
-  <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 fGkTyc Card__CardGridWrapper-sc-1g3s676-6 dqRWfz"
+  <div
+    className="MediaBlock__Block-k78dm4-0 leeaQp"
     id={null}
-    rows={null}
+    onClick={null}
   >
-    <div
-      className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
-      href={null}
-      id={null}
-      media={null}
-      onClick={null}
+    <section
+      className="MediaBlock__Media-k78dm4-1 bnMPpJ"
     >
-      <div
-        className="MediaBlock__Block-k78dm4-0 jXgttR"
-        id={null}
+      <img
+        alt="This is alt text for this image"
+        className="Image__ImageWrapper-sc-18abvff-0 driND"
         onClick={null}
-      >
-        <section
-          className="MediaBlock__Media-k78dm4-1 kxoljg"
-        >
-          <img
-            alt="This is alt text for this image"
-            className="Image__ImageWrapper-sc-18abvff-0 ehzHeN"
-            onClick={null}
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-            title="This is alt text for this image"
-            width={null}
-          />
-        </section>
-        <section
-          className="MediaBlock__Body-k78dm4-2 dYJiLU"
-        >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-            fontSize="1.05em"
-            fontWeight={400}
-            letterSpacing="0px"
-          >
-            Media Block
-          </h6>
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-            fontSize="0.95em"
-            fontWeight={400}
-            id={null}
-            letterSpacing="0px"
-          >
-            In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
-          </p>
-        </section>
-      </div>
-    </div>
-    <div
-      className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
-      href={null}
-      id={null}
-      media={null}
-      onClick={null}
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+        title="This is alt text for this image"
+        width={null}
+      />
+    </section>
+    <section
+      className="MediaBlock__Body-k78dm4-2 dVIBIi"
     >
-      <div
-        className="MediaBlock__Block-k78dm4-0 leeaQp"
-        id={null}
-        onClick={null}
+      <h5
+        className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+        fontSize="1.15em"
+        fontWeight={600}
+        letterSpacing="0px"
       >
-        <section
-          className="MediaBlock__Media-k78dm4-1 bnMPpJ"
-        >
-          <img
-            alt="This is alt text for this image"
-            className="Image__ImageWrapper-sc-18abvff-0 ehzHeN"
-            onClick={null}
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-            title="This is alt text for this image"
-            width={null}
-          />
-        </section>
-        <section
-          className="MediaBlock__Body-k78dm4-2 kSMpyI"
-        >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-            fontSize="1.05em"
-            fontWeight={400}
-            letterSpacing="0px"
-          >
-            Media Block (reverse)
-          </h6>
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-            fontSize="0.95em"
-            fontWeight={400}
-            id={null}
-            letterSpacing="0px"
-          >
-            In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
-          </p>
-        </section>
-      </div>
-    </div>
-    <div
-      className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
-      href={null}
-      id={null}
-      media={null}
-      onClick={null}
+        Media Block (isReversed)
+      </h5>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 irlSOM"
+        fontSize="1em"
+        fontWeight={300}
+        id={null}
+        letterSpacing="0px"
+      >
+        In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
+      </p>
+    </section>
+  </div>
+  <div
+    className="MediaBlock__Block-k78dm4-0 hUlOgy"
+    id={null}
+    onClick={null}
+  >
+    <section
+      className="MediaBlock__Media-k78dm4-1 kxoljg"
     >
-      <div
-        className="MediaBlock__Block-k78dm4-0 hUlOgy"
-        id={null}
+      <img
+        alt="This is alt text for this image"
+        className="Image__ImageWrapper-sc-18abvff-0 driND"
         onClick={null}
-      >
-        <section
-          className="MediaBlock__Media-k78dm4-1 kxoljg"
-        >
-          <img
-            alt="This is alt text for this image"
-            className="Image__ImageWrapper-sc-18abvff-0 ehzHeN"
-            onClick={null}
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-            title="This is alt text for this image"
-            width={null}
-          />
-        </section>
-        <section
-          className="MediaBlock__Body-k78dm4-2 fcaqDT"
-        >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-            fontSize="1.05em"
-            fontWeight={400}
-            letterSpacing="0px"
-          >
-            Media Block - Vertical
-          </h6>
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-            fontSize="0.95em"
-            fontWeight={400}
-            id={null}
-            letterSpacing="0px"
-          >
-            In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
-          </p>
-        </section>
-      </div>
-    </div>
-    <div
-      className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
-      href={null}
-      id={null}
-      media={null}
-      onClick={null}
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+        title="This is alt text for this image"
+        width={null}
+      />
+    </section>
+    <section
+      className="MediaBlock__Body-k78dm4-2 iaXsTF"
     >
-      <div
-        className="MediaBlock__Block-k78dm4-0 cSHxjm"
-        id={null}
-        onClick={null}
+      <h5
+        className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+        fontSize="1.15em"
+        fontWeight={600}
+        letterSpacing="0px"
       >
-        <section
-          className="MediaBlock__Media-k78dm4-1 kxoljg"
-        >
-          <img
-            alt="This is alt text for this image"
-            className="Image__ImageWrapper-sc-18abvff-0 ehzHeN"
-            onClick={null}
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-            title="This is alt text for this image"
-            width={null}
-          />
-        </section>
-        <section
-          className="MediaBlock__Body-k78dm4-2 FXCjD"
-        >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-            fontSize="1.05em"
-            fontWeight={400}
-            letterSpacing="0px"
-          >
-            Media Block - Vertical (reverse)
-          </h6>
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-            fontSize="0.95em"
-            fontWeight={400}
-            id={null}
-            letterSpacing="0px"
-          >
-            In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
-          </p>
-        </section>
-      </div>
-    </div>
-    <div
-      className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
-      href={null}
-      id={null}
-      media={null}
-      onClick={null}
+        Media Block - Vertical
+      </h5>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 irlSOM"
+        fontSize="1em"
+        fontWeight={300}
+        id={null}
+        letterSpacing="0px"
+      >
+        In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
+      </p>
+    </section>
+  </div>
+  <div
+    className="MediaBlock__Block-k78dm4-0 cSHxjm"
+    id={null}
+    onClick={null}
+  >
+    <section
+      className="MediaBlock__Media-k78dm4-1 kxoljg"
     >
-      <div
-        className="MediaBlock__Block-k78dm4-0 bhJHKl"
-        id={null}
+      <img
+        alt="This is alt text for this image"
+        className="Image__ImageWrapper-sc-18abvff-0 driND"
         onClick={null}
-      >
-        <section
-          className="MediaBlock__Media-k78dm4-1 kxoljg"
-        >
-          <img
-            alt="This is alt text for this image"
-            className="Image__ImageWrapper-sc-18abvff-0 ehzHeN"
-            onClick={null}
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-            title="This is alt text for this image"
-            width={null}
-          />
-        </section>
-        <section
-          className="MediaBlock__Body-k78dm4-2 kfDLcG"
-        >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-            fontSize="1.05em"
-            fontWeight={400}
-            letterSpacing="0px"
-          >
-            Media Block - Inline
-          </h6>
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-            fontSize="0.95em"
-            fontWeight={400}
-            id={null}
-            letterSpacing="0px"
-          >
-            In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
-          </p>
-        </section>
-      </div>
-    </div>
-    <div
-      className="Card__CardWrapper-sc-1g3s676-5 cVztWv"
-      href={null}
-      id={null}
-      media={null}
-      onClick={null}
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+        title="This is alt text for this image"
+        width={null}
+      />
+    </section>
+    <section
+      className="MediaBlock__Body-k78dm4-2 hPQEFx"
     >
-      <div
-        className="MediaBlock__Block-k78dm4-0 htiHXN"
-        id={null}
-        onClick={null}
+      <h5
+        className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+        fontSize="1.15em"
+        fontWeight={600}
+        letterSpacing="0px"
       >
-        <section
-          className="MediaBlock__Media-k78dm4-1 kxoljg"
-        >
-          <img
-            alt="This is alt text for this image"
-            className="Image__ImageWrapper-sc-18abvff-0 ehzHeN"
-            onClick={null}
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
-            title="This is alt text for this image"
-            width={null}
-          />
-        </section>
-        <section
-          className="MediaBlock__Body-k78dm4-2 llFmze"
-        >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-            fontSize="1.05em"
-            fontWeight={400}
-            letterSpacing="0px"
-          >
-            Media Block - Inline (reverse)
-          </h6>
-          <p
-            className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-            fontSize="0.95em"
-            fontWeight={400}
-            id={null}
-            letterSpacing="0px"
-          >
-            In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
-          </p>
-        </section>
-      </div>
-    </div>
-  </section>
-</div>
+        Media Block - Vertical (isReversed)
+      </h5>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 irlSOM"
+        fontSize="1em"
+        fontWeight={300}
+        id={null}
+        letterSpacing="0px"
+      >
+        In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
+      </p>
+    </section>
+  </div>
+  <div
+    className="MediaBlock__Block-k78dm4-0 bhJHKl"
+    id={null}
+    onClick={null}
+  >
+    <section
+      className="MediaBlock__Media-k78dm4-1 kxoljg"
+    >
+      <img
+        alt="This is alt text for this image"
+        className="Image__ImageWrapper-sc-18abvff-0 driND"
+        onClick={null}
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+        title="This is alt text for this image"
+        width={null}
+      />
+    </section>
+    <section
+      className="MediaBlock__Body-k78dm4-2 cdLTVU"
+    >
+      <h5
+        className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+        fontSize="1.15em"
+        fontWeight={600}
+        letterSpacing="0px"
+      >
+        Media Block - Inline
+      </h5>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 irlSOM"
+        fontSize="1em"
+        fontWeight={300}
+        id={null}
+        letterSpacing="0px"
+      >
+        In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
+      </p>
+    </section>
+  </div>
+  <div
+    className="MediaBlock__Block-k78dm4-0 htiHXN"
+    id={null}
+    onClick={null}
+  >
+    <section
+      className="MediaBlock__Media-k78dm4-1 kxoljg"
+    >
+      <img
+        alt="This is alt text for this image"
+        className="Image__ImageWrapper-sc-18abvff-0 driND"
+        onClick={null}
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"
+        title="This is alt text for this image"
+        width={null}
+      />
+    </section>
+    <section
+      className="MediaBlock__Body-k78dm4-2 hePDVU"
+    >
+      <h5
+        className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+        fontSize="1.15em"
+        fontWeight={600}
+        letterSpacing="0px"
+      >
+        Media Block - Inline (isReversed)
+      </h5>
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 irlSOM"
+        fontSize="1em"
+        fontWeight={300}
+        id={null}
+        letterSpacing="0px"
+      >
+        In life you need colors. We'll put a happy little sky in here. Now we can begin working on lots of happy little things. In this world, everything can be happy.
+      </p>
+    </section>
+  </div>
+</section>
 `;

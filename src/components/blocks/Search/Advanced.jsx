@@ -1,8 +1,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
-import Bar from "blocks/Bar";
 import Button from "atoms/Button";
 import Form from "layout/Form";
 import styled from "styled-components";
@@ -10,14 +9,13 @@ import Grid from "layout/Grid";
 import TextInput from "atoms/TextInput";
 import Container from "atoms/Container";
 import { Link } from "base/Typography";
-import List, { ListItem } from "blocks/List";
 
 const DropContainer = styled(Container)`
-position: fixed;
+  position: fixed;
 `;
 
 
-function AdvancedSearch({ id, inputs }) {
+function AdvancedSearch({ href, id, inputs }) {
   return (
     <Grid columns="9fr auto " id={id}>
       <DropContainer maxHeight="25rem" >
@@ -26,27 +24,27 @@ function AdvancedSearch({ id, inputs }) {
           description="Choose to search by one of the following options."
         >
           <React.Fragment>
-            { inputs.map((item) => {
-            return (
-              <Grid columns="9fr auto">
-                <TextInput
-                  id={item.id}
-                  label={item.label}
-                  placeholder={item.placeholder}
-                  type="search"
-                />
-                <Button
-                  icon="search"
-                  solid
-                  onClick={item.onClick}
-                  href={item.href}
-                />
-              </Grid>
-            );
-          })}
+            {inputs.map((item) => {
+              return (
+                <Grid columns="9fr auto">
+                  <TextInput
+                    id={item.id}
+                    label={item.label}
+                    placeholder={item.placeholder}
+                    type="search"
+                  />
+                  <Button
+                    icon="search"
+                    isSolid
+                    onClick={item.onClick}
+                    href={item.href}
+                  />
+                </Grid>
+              );
+            })}
           </React.Fragment>
-           
-          <Link size="2x" text="Reset"  />
+
+          <Link size="lg" href={href} text="Reset" />
         </Form>
       </DropContainer>
     </Grid>
@@ -54,6 +52,7 @@ function AdvancedSearch({ id, inputs }) {
 }
 
 AdvancedSearch.propTypes = {
+  href: PropTypes.string,
   id: PropTypes.string,
   inputs: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
@@ -65,6 +64,7 @@ AdvancedSearch.propTypes = {
 };
 
 AdvancedSearch.defaultProps = {
+  href: null,
   id: null,
   inputs: null,
 

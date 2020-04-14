@@ -179,13 +179,13 @@ const RegionRight = styled(Flex)`
   }
 `;
 function Layout({
+  bottom,
+  footer,
   header,
   id,
   left,
   main,
-  bottom,
   right,
-  footer,
 }) {
   // const screenSmall = window.matchMedia(screen.small);
   const screenMedium = window.matchMedia(screen.medium);
@@ -198,7 +198,7 @@ function Layout({
   let bottomHeight;
   let zIndex = null; // shared by all
   if (screenMedium.matches || screenLarge.matches) {
-    leftWidth = "25%";
+    leftWidth = "15%";
     rightWidth = "25%";
     bottomHeight = "40%";
     zIndex = "1";
@@ -272,7 +272,7 @@ function Layout({
     if (screenLarge.matches || screenMedium.matches) {
       // On larger screens, both left and right regions can be open at the same time
       if (leftOpen) {
-        mainLeft = "25%";
+        mainLeft = "15%";
         mainWidth = "85%";
         if (rightOpen) {
           mainWidth = "60%";
@@ -371,14 +371,23 @@ function Layout({
 }
 
 Layout.propTypes = {
-  id: PropTypes.string,
+  bottom: PropTypes.shape({
+    content: PropTypes.node.isRequired,
+    id: PropTypes.string,
+    visible: PropTypes.bool,
+  }),
+  footer: PropTypes.shape({
+    content: PropTypes.node.isRequired,
+    id: PropTypes.string,
+  }),
   header: PropTypes.shape({
     content: PropTypes.node,
     hasShadow: PropTypes.bool,
     id: PropTypes.string,
   }),
+  id: PropTypes.string,
   left: PropTypes.shape({
-    content: PropTypes.node,
+    content: PropTypes.node.isRequired,
     id: PropTypes.string,
     visible: PropTypes.bool,
   }),
@@ -386,30 +395,21 @@ Layout.propTypes = {
     content: PropTypes.node.isRequired,
     id: PropTypes.string,
   }),
-  bottom: PropTypes.shape({
-    content: PropTypes.node,
-    id: PropTypes.string,
-    visible: PropTypes.bool,
-  }),
   right: PropTypes.shape({
-    content: PropTypes.node,
+    content: PropTypes.node.isRequired,
     id: PropTypes.string,
     visible: PropTypes.bool,
-  }),
-  footer: PropTypes.shape({
-    content: PropTypes.node,
-    id: PropTypes.string,
   }),
 };
 
 Layout.defaultProps = {
-  id: null,
+  bottom: null,
+  footer: null,
   header: null,
+  id: null,
   left: null,
   main: { content: null },
-  bottom: null,
   right: null,
-  footer: null,
 };
 
 export default Layout;

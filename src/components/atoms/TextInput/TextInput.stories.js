@@ -3,7 +3,7 @@
 // import React from "react";
 // import { Padding } from "helpers/Display";
 // import Panel from "layout/Panel";
-// import Form, { Section } from "layout/Form";
+// import Form, { FormSection } from "layout/Form";
 // import TextInput from "atoms/TextInput";
 
 
@@ -189,7 +189,7 @@
 //     return (
 //       <Panel>
 //         <Form title="The Text Input Family">
-//           <Section>
+//           <FormSection>
 //             <TextInput
 //               id="error"
 //               label="Text Input ( error boolean )"
@@ -236,7 +236,7 @@
 //               helpText="Hang in there, buddy, I'm here to help!"
 //               disabled
 //             />
-//           </Section>
+//           </FormSection>
 //         </Form>
 //       </Panel>
 //     );

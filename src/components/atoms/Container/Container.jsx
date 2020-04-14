@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 const Wrapper = styled.div`
   display: block;
   padding: ${(props) => {
-    return props.padding || "";
+    return props.setPadding || "";
   }};
   height: ${(props) => {
     return props.height || "";
@@ -34,48 +34,46 @@ const BoxContainer = styled.div`
     return props.border || props.theme.palette.neutral40;
   }};
   border-radius: 5px;
-
   ::-webkit-scrollbar {
     width: 0.5em;
     height: 0.5em;
   }
-
   ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0.5px 0 0px ${(props) => {
+    box-shadow: inset 0.5px 0 0px ${(props) => {
     return props.theme.palette.neutral40;
   }};
   }
-
   ::-webkit-scrollbar-thumb {
     background-color: ${(props) => {
     return props.theme.palette.action80;
   }};
     border-radius: 20px;
   }
-
-}
-
-::-webkit-scrollbar-track:horizontal {
-  -webkit-box-shadow: inset 0.5px 0 0px ${(props) => {
+  ::-webkit-scrollbar-track:horizontal {
+    box-shadow: inset 0.5px 0 0px ${(props) => {
     return props.theme.palette.neutral40;
   }};
 }
-
-
-::-webkit-scrollbar-thumb:horizontal{
-  background-color: ${(props) => {
+  ::-webkit-scrollbar-thumb:horizontal{
+    background-color: ${(props) => {
     return props.theme.palette.action80;
   }};
   border-radius: 20px;
 }
-
 `;
+
+const paddingHash = {
+  "0": "0",
+  "2x": "2em",
+  "3x": "3em",
+};
 
 const Container = React.forwardRef(({
   id, height, width, maxHeight, padding, border, children,
 }, ref) => {
+  const setPadding = padding ? paddingHash[padding.toLowerCase()] : "1em";
   return (
-    <Wrapper padding={padding} height={height} width={width}>
+    <Wrapper setPadding={setPadding} height={height} width={width}>
       <BoxContainer id={id} height={height ? "100%" : ""} maxHeight={maxHeight} border={border} ref={ref}>
         {children}
       </BoxContainer>
@@ -85,22 +83,22 @@ const Container = React.forwardRef(({
 
 Container.propTypes = {
   border: PropTypes.string,
-  id: PropTypes.string,
-  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   children: PropTypes.node,
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  id: PropTypes.string,
   maxHeight: PropTypes.string,
-  padding: PropTypes.string,
+  padding: PropTypes.oneOf(["0", "2x", "3x"]),
+  width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
 Container.defaultProps = {
   border: null,
-  id: null,
-  height: null,
-  maxHeight: null,
-  width: null,
   children: null,
+  height: null,
+  id: null,
+  maxHeight: null,
   padding: null,
+  width: null,
 };
 
 export default Container;

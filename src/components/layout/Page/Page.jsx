@@ -1,24 +1,21 @@
 /* eslint-disable linebreak-style */
+import React from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
+import Grid from "layout/Grid";
+import Text, { Title } from "base/Typography";
 
-const Page = styled.div`
-  display: grid;
-  grid-gap: 1rem;
-  background: ${(props) => {
+const PageWrapper = styled(Grid)`
+  color: ${(props) => {
+    return props.theme.text.primary;
+  }};
+  background-color: ${(props) => {
     return props.theme.background.default;
   }};
-  padding: 1rem;
-  > h1,
-  > h2,
-  > h3,
-  > h4,
-  > h5,
-  > h6,
-  > p {
-    margin: 0;
-  }
-  /* Prototype Content - displays when a Card is empty */
+  height: 100%;
+  padding: 1rem 1rem 1.5rem;
+  /* Prototype Content - displays when empty */
   &:empty {
     &:before {
       white-space: pre;
@@ -41,4 +38,80 @@ const Page = styled.div`
   }
 `;
 
-export default Page;
+const Section = styled(Grid)`
+  margin-bottom: 0.25rem;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+`;
+
+function PageSection({
+  children, classname, id, title,
+}) {
+  return (
+    <Section id={id} classname={classname} columns="1" gap="sm">
+      {title ? <Title size="lg" text={title} /> : null}
+      {children}
+    </Section>
+  );
+}
+
+PageSection.propTypes = {
+  children: PropTypes.node,
+  classname: PropTypes.string,
+  id: PropTypes.string,
+  title: PropTypes.string,
+};
+PageSection.defaultProps = {
+  children: null,
+  classname: null,
+  id: null,
+  title: null,
+};
+
+function Page({
+  children, classname, header, id,
+}) {
+  return (
+    <PageWrapper
+      id={id}
+      classname={classname}
+      columns="1"
+    >
+      {header ? (
+        <Section columns="1" gap="xs">
+          {header.title ? (
+            <Title size="xl" weight="bold" text={header.title} />
+          ) : null}
+          {header.subtitle ? (
+            <Text weight="light" text={header.subtitle} />
+          ) : null}
+          {header.description ? (
+            <Text size="sm" weight="bold" text={header.description} />
+          ) : null}
+        </Section>
+      ) : null}
+      <Section columns="1" gap="sm">
+        {children}
+      </Section>
+    </PageWrapper>
+  );
+}
+Page.propTypes = {
+  children: PropTypes.node,
+  classname: PropTypes.string,
+  header: PropTypes.shape({
+    description: PropTypes.string,
+    subtitle: PropTypes.string,
+    title: PropTypes.string,
+  }),
+  id: PropTypes.string,
+};
+Page.defaultProps = {
+  children: null,
+  classname: null,
+  header: null,
+  id: null,
+};
+
+export { Page as default, PageSection };

@@ -3,8 +3,7 @@ import { withKnobs, label, boolean, select } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
-import Bar from "blocks/Bar";
-import Form, { Section } from "layout/Form";
+import Bar from "layout/Bar";
 import Tag from "atoms/Tag";
 import Icon from "atoms/Icon";
 
@@ -54,7 +53,7 @@ Tags may appear in groups. When a Tag group is necessary use the TagGroup wrappe
         padding="2x"
         contentAlign="center"
         left={{
-          content: <Icon icon="check" type="success" size="2x" />,
+          content: <Icon icon="check" variant="success" size="lg" />,
           width: "5%",
         }}
         center={{
@@ -66,7 +65,7 @@ Tags may appear in groups. When a Tag group is necessary use the TagGroup wrappe
         padding="2x"
         contentAlign="center"
         left={{
-          content: <Icon icon="close" type="alert" size="2x" />,
+          content: <Icon icon="close" variant="alert" size="lg" />,
           width: "5%",
         }}
         center={{
@@ -93,10 +92,10 @@ A Tag may appear to the left or right of it's corresponding label. A Tag may not
 <Preview>
   <Story name="Types">
     <Grid columns="4">
-      <Tag label="Info" type="info" />
-      <Tag label="Warning" type="warning" />
-      <Tag label="Success" type="success" />
-      <Tag label="Alert" type="alert" />
+      <Tag label="Info" variant="info" />
+      <Tag label="Warning" variant="warning" />
+      <Tag label="Success" variant="success" />
+      <Tag label="Alert" variant="alert" />
     </Grid>
   </Story>
 </Preview>

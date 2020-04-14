@@ -94,10 +94,11 @@ const PanelSection = styled(PanelBody)`
   }
 `;
 function Panel({
-  id, children, footer, header,
+  children, classname, footer, header, id,
 }) {
   return (
     <PanelWrapper
+      classname={classname}
       id={id}
     >
       {header ? <PanelSection id={id ? `${id}_header` : null}>{header}</PanelSection> : null}
@@ -108,16 +109,18 @@ function Panel({
 }
 
 Panel.propTypes = {
-  id: PropTypes.string,
   children: PropTypes.node,
+  classname: PropTypes.string,
   footer: PropTypes.node,
   header: PropTypes.node,
+  id: PropTypes.string,
 };
 Panel.defaultProps = {
-  id: null,
   children: null,
+  classname: null,
   footer: null,
   header: null,
+  id: null,
 };
 
 export default Panel;

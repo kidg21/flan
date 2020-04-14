@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { FullScreen } from "helpers/Display";
-import Bar from "blocks/Bar";
+import Bar from "layout/Bar";
 import Card, { CardGrid } from "elements/Card";
 import Panel from "layout/Panel";
 import Title from "base/Typography";

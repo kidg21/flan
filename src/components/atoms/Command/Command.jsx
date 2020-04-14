@@ -50,6 +50,7 @@ const CommandName = styled(Label)`
   font-weight: 700;
   letter-spacing: 1px;
   color: inherit;
+  text-transform: capitalize;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -140,10 +141,10 @@ function Command({
   if (isDisabled) commandColor = "disabled";
 
   switch (size) {
-    case "small":
+    case "sm":
       commandSize = ".8em";
       break;
-    case "large":
+    case "lg":
       commandSize = "1.2em";
       break;
     default:
@@ -177,7 +178,7 @@ Command.propTypes = {
   id: PropTypes.string,
   label: PropTypes.string,
   onClick: PropTypes.func,
-  size: PropTypes.oneOf(["small", "large"]),
+  size: PropTypes.oneOf(["sm", "lg"]),
 };
 
 Command.defaultProps = {

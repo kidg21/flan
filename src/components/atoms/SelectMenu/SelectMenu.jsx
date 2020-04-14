@@ -1,3 +1,4 @@
+/* eslint-disable complexity */
 /* eslint-disable linebreak-style */
 /* eslint-disable security/detect-object-injection */
 import React, { useContext, useState } from "react";
@@ -14,8 +15,8 @@ import { DisabledContext } from "States";
 
 const MessageContainer = styled.section`
 color: ${(props) => {
-  return props.theme.text[props.messageColor] || props.theme.text.secondary;
-}};
+    return props.theme.text[props.messageColor] || props.theme.text.secondary;
+  }};
 `;
 
 const selectStyles = {
@@ -62,7 +63,7 @@ const selectStyles = {
       ...styles,
       fontFamily: fonts.body,
       color: isFocused ? colors.grey50 : colors.grey50,
-      fontSize: "0.90em",
+      fontSize: "0.90rem",
     };
   },
   // selected option
@@ -72,7 +73,7 @@ const selectStyles = {
       fontFamily: fonts.body,
       opacity: isDisabled ? 0.5 : 1,
       transition: "opacity 300ms",
-      fontSize: "0.90em",
+      fontSize: "0.90rem",
     };
   },
   // 'X' to clear current selection
@@ -176,27 +177,26 @@ const SelectMenuContainer = styled(Grid)`
   }
 `;
 function SelectMenu({
-  id,
-  name,
-  placeholder,
-  options,
-  selectOptions,
   disabled,
   error,
-  warning,
-  label,
-  isRequired,
   helpText,
-  isSearchable,
+  id,
   isClearable,
-  multiSelect,
+  isCreatable,
   isLoading,
+  isRequired,
   isRtl,
+  isSearchable,
+  label,
+  multiSelect,
+  onBlur,
   onChangeState,
   onCreateOption,
-  onBlur,
   onFocus,
-  isCreatable,
+  options,
+  placeholder,
+  selectOptions,
+  warning,
 }) {
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
@@ -272,45 +272,58 @@ function SelectMenu({
 
   const selectProps = {
     id: id,
-    name: name,
-    placeholder: placeholder,
-    styles: selectStyles,
-    options: options,
-    value: state.selected,
-    isSearchable: isSearchable,
     isClearable: isClearable,
-    isMulti: multiSelect,
     isDisabled: isDisabled,
     isLoading: isLoading,
+    isMulti: multiSelect,
     isRtl: isRtl,
+    isSearchable: isSearchable,
+    name: id,
+    onBlur: onBlur,
     onChange: changeSelected,
     onCreateOption: onCreateOption ? handleCreateOption : null,
-    onBlur: onBlur,
     onFocus: onFocus,
+    options: options,
+    placeholder: placeholder,
+    styles: selectStyles,
+    value: state.selected,
   };
   const select = (isCreatable || onCreateOption) ?
     <Creatable {...selectProps} /> : <Select {...selectProps} />;
 
   return (
     <SelectMenuContainer
+      columns="1"
+      disabled={isDisabled} // input attribute
+      gap="xs"
       isRequired={isRequired}
       textColor={textColor}
-      disabled={isDisabled} // input attribute
-      columns="1"
-      gap="tiny"
     >
-      {label ? <Label size="2x" isRequired={isRequired} text={label} /> : null}
+      {label ? <Label weight="bold" isRequired={isRequired} text={label} /> : null}
       {select}
-      {helpText ? <Text size="1x" text={helpText} /> : null}
-      {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="1x" text={errorText || warning} /></MessageContainer> : null}
+      {helpText ? <Text size="sm" weight="bold" text={helpText} /> : null}
+      {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="sm" weight="bold" text={errorText || warning} /></MessageContainer> : null}
     </SelectMenuContainer>
   );
 }
 
 SelectMenu.propTypes = {
+  disabled: PropTypes.bool,
+  error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  helpText: PropTypes.string,
   id: PropTypes.string,
-  name: PropTypes.string,
-  placeholder: PropTypes.string,
+  isClearable: PropTypes.bool,
+  isCreatable: PropTypes.bool,
+  isLoading: PropTypes.bool,
+  isRequired: PropTypes.bool,
+  isRtl: PropTypes.bool,
+  isSearchable: PropTypes.bool,
+  label: PropTypes.string,
+  multiSelect: PropTypes.bool,
+  onBlur: PropTypes.func,
+  onChangeState: PropTypes.func,
+  onCreateOption: PropTypes.func,
+  onFocus: PropTypes.func,
   options: PropTypes.arrayOf(PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.shape({
@@ -318,47 +331,32 @@ SelectMenu.propTypes = {
       value: PropTypes.any,
     }),
   ])),
-  selectOptions: PropTypes.any,
-  label: PropTypes.string,
-  isRequired: PropTypes.bool,
-  disabled: PropTypes.bool,
-  error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
-  multiSelect: PropTypes.bool,
-  isClearable: PropTypes.bool,
-  isSearchable: PropTypes.bool,
-  isLoading: PropTypes.bool,
-  isRtl: PropTypes.bool,
-  helpText: PropTypes.string,
-  onChangeState: PropTypes.func,
-  onCreateOption: PropTypes.func,
-  onBlur: PropTypes.func,
-  onFocus: PropTypes.func,
-  isCreatable: PropTypes.bool,
+  placeholder: PropTypes.string,
+  selectOptions: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.object), PropTypes.object]),
   warning: PropTypes.string,
 };
 
 SelectMenu.defaultProps = {
-  id: null,
-  name: null,
-  placeholder: null,
-  options: null,
-  selectOptions: null,
-  label: null,
-  isRequired: false,
   disabled: null,
-  error: "",
-  multiSelect: false,
-  isClearable: true,
-  isSearchable: true,
-  isLoading: false,
-  isRtl: false,
+  error: null,
   helpText: null,
+  id: null,
+  isClearable: true,
+  isCreatable: false,
+  isLoading: false,
+  isRequired: false,
+  isRtl: false,
+  isSearchable: true,
+  label: null,
+  multiSelect: false,
+  onBlur: null,
   onChangeState: null,
   onCreateOption: null,
-  onBlur: null,
   onFocus: null,
-  isCreatable: false,
-  warning: null,
+  options: null,
+  placeholder: null,
+  selectOptions: null,
+  warning: "",
 };
 
 export default SelectMenu;

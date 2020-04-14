@@ -52,16 +52,16 @@ exports[` 2`] = `
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionLeft-sc-19tlhp4-4 jMmPlu"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 jMmPlu"
       height={null}
       id="Left"
       overflow={null}
-      width="25%"
+      width="15%"
     >
       
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 cfjdkB Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jPMdeq Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
       height="40%"
       id={null}
       overflow={null}
@@ -106,16 +106,16 @@ exports[` 3`] = `
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionLeft-sc-19tlhp4-4 jMmPlu"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 jMmPlu"
       height={null}
       id="Left"
       overflow={null}
-      width="25%"
+      width="15%"
     >
       
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 cfjdkB Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jPMdeq Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
       height="40%"
       id={null}
       overflow={null}
@@ -178,16 +178,16 @@ exports[` 4`] = `
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionLeft-sc-19tlhp4-4 jMmPlu"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 jMmPlu"
       height={null}
       id="Left"
       overflow={null}
-      width="25%"
+      width="15%"
     >
       
     </div>
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 cfjdkB Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jPMdeq Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
       height="40%"
       id={null}
       overflow={null}
@@ -250,37 +250,57 @@ exports[` 5`] = `
     width={null}
   >
     <div
-      className="Bar__BarLayout-sc-1c4axau-2 hVthby"
+      className="Bar__BarLayout-icfo76-2 gJPHni"
       id={null}
       onClick={null}
     >
       <div
-        className="Bar__Slot-sc-1c4axau-1 hAjMjw"
+        className="Bar__Slot-icfo76-1 fNcQEg"
       >
-        <div
-          alt="logo"
-          className="Avatar__TagContainer-sc-1vuf9om-1 idJXGT"
+        <a
+          className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
           id={null}
-          label={null}
+          label="Toggle"
           onClick={[Function]}
-          src={Object {}}
+          title="Toggle"
         >
-          <img
-            alt="logo"
-            className="Image__ImageWrapper-sc-18abvff-0 bzdjAn"
-            onClick={null}
-            src={Object {}}
-            title="logo"
-            width="2.5rem"
-          />
-        </div>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-angle-left fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 cJJNyd Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+            color={null}
+            data-icon="angle-left"
+            data-prefix="far"
+            focusable="false"
+            fontSize="inherit"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 192 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.2 247.5L151 99.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17L69.3 256l118.5 119.7c4.7 4.7 4.7 12.3 0 17L168 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 264.5c-4.7-4.7-4.7-12.3 0-17z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+            fontSize="0.876em"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing="0px"
+          >
+            Toggle
+          </label>
+        </a>
       </div>
       <div
-        className="Bar__Slot-sc-1c4axau-1 flbmFP"
+        className="Bar__Slot-icfo76-1 hVtzoz"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-          fontSize="1.05em"
+          className="Typography__TitleText-sc-19auepv-2 exoZGd"
+          fontSize="1em"
           fontWeight={400}
           letterSpacing="0px"
         >
@@ -288,7 +308,7 @@ exports[` 5`] = `
         </h6>
       </div>
       <div
-        className="Bar__Slot-sc-1c4axau-1 kHYCoh"
+        className="Bar__Slot-icfo76-1 kZQbjh"
       >
         <a
           className="Command__CommandContainer-sc-13akgtp-0 bmuFIF"
@@ -299,11 +319,12 @@ exports[` 5`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-angle-right fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+            className="svg-inline--fa fa-angle-right fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 cJJNyd Command__CommandIcon-sc-13akgtp-2 kHbmnU"
             color={null}
             data-icon="angle-right"
             data-prefix="far"
             focusable="false"
+            fontSize="inherit"
             id={null}
             role="img"
             style={Object {}}
@@ -317,7 +338,7 @@ exports[` 5`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+            className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
             fontSize="0.876em"
             fontWeight={400}
             htmlFor={null}
@@ -337,11 +358,11 @@ exports[` 5`] = `
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionLeft-sc-19tlhp4-4 eoAyiI"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 eoAyiI"
       height={null}
       id={null}
       overflow={null}
-      width="25%"
+      width="15%"
     >
       <div
         className="Panel__PanelWrapper-sc-48epke-0 kObpyG"
@@ -352,19 +373,19 @@ exports[` 5`] = `
           id="List Panel_header"
         >
           <div
-            className="Card__CardWrapper-sc-1g3s676-5 jNloVS"
+            className="Card__CardWrapper-sc-1g3s676-5 kZnQzv"
             href={null}
             id={null}
             media={null}
             onClick={null}
           >
             <div
-              className="Bar__BarLayout-sc-1c4axau-2 hVthby"
+              className="Bar__BarLayout-icfo76-2 gpWMWV"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-sc-1c4axau-1 hAjMjw"
+                className="Bar__Slot-icfo76-1 fNcQEg"
               >
                 <h5
                   className="Typography__TitleText-sc-19auepv-2 bKCMpV"
@@ -376,7 +397,7 @@ exports[` 5`] = `
                 </h5>
               </div>
               <div
-                className="Bar__Slot-sc-1c4axau-1 kHYCoh"
+                className="Bar__Slot-icfo76-1 kZQbjh"
               >
                 <a
                   className="Menu__MenuContainer-sc-17iwn6x-0 lhgeCh"
@@ -384,11 +405,12 @@ exports[` 5`] = `
                 >
                   <svg
                     aria-hidden="true"
-                    className="svg-inline--fa fa-ellipsis-v fa-w-4 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+                    className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 bpsbMF"
                     color={null}
                     data-icon="ellipsis-v"
                     data-prefix="far"
                     focusable="false"
+                    fontSize="1.35em"
                     id={null}
                     role="img"
                     style={Object {}}
@@ -415,7 +437,7 @@ exports[` 5`] = `
             id={null}
           >
             <li
-              className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+              className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
               disabled={false}
               href={null}
               id={null}
@@ -423,16 +445,16 @@ exports[` 5`] = `
               tabIndex="0"
             >
               <div
-                className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+                className="Bar__BarLayout-icfo76-2 bRGQtj"
                 id={null}
                 onClick={null}
               >
                 <div
-                  className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+                  className="Bar__Slot-icfo76-1 RjiBe"
                 >
                   <h6
-                    className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                    fontSize="1.05em"
+                    className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                    fontSize="1em"
                     fontWeight={400}
                     letterSpacing="0px"
                   >
@@ -442,7 +464,7 @@ exports[` 5`] = `
               </div>
             </li>
             <li
-              className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+              className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
               disabled={false}
               href={null}
               id={null}
@@ -450,16 +472,16 @@ exports[` 5`] = `
               tabIndex="0"
             >
               <div
-                className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+                className="Bar__BarLayout-icfo76-2 bRGQtj"
                 id={null}
                 onClick={null}
               >
                 <div
-                  className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+                  className="Bar__Slot-icfo76-1 RjiBe"
                 >
                   <h6
-                    className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                    fontSize="1.05em"
+                    className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                    fontSize="1em"
                     fontWeight={400}
                     letterSpacing="0px"
                   >
@@ -469,7 +491,7 @@ exports[` 5`] = `
               </div>
             </li>
             <li
-              className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+              className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
               disabled={false}
               href={null}
               id={null}
@@ -477,16 +499,16 @@ exports[` 5`] = `
               tabIndex="0"
             >
               <div
-                className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+                className="Bar__BarLayout-icfo76-2 bRGQtj"
                 id={null}
                 onClick={null}
               >
                 <div
-                  className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+                  className="Bar__Slot-icfo76-1 RjiBe"
                 >
                   <h6
-                    className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                    fontSize="1.05em"
+                    className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                    fontSize="1em"
                     fontWeight={400}
                     letterSpacing="0px"
                   >
@@ -496,7 +518,7 @@ exports[` 5`] = `
               </div>
             </li>
             <li
-              className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+              className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
               disabled={false}
               href={null}
               id={null}
@@ -504,16 +526,16 @@ exports[` 5`] = `
               tabIndex="0"
             >
               <div
-                className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+                className="Bar__BarLayout-icfo76-2 bRGQtj"
                 id={null}
                 onClick={null}
               >
                 <div
-                  className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+                  className="Bar__Slot-icfo76-1 RjiBe"
                 >
                   <h6
-                    className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                    fontSize="1.05em"
+                    className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                    fontSize="1em"
                     fontWeight={400}
                     letterSpacing="0px"
                   >
@@ -902,7 +924,7 @@ exports[` 5`] = `
           id="Info Panel_header"
         >
           <div
-            className="Card__CardWrapper-sc-1g3s676-5 jNloVS"
+            className="Card__CardWrapper-sc-1g3s676-5 kZnQzv"
             href={null}
             id={null}
             media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
@@ -913,7 +935,7 @@ exports[` 5`] = `
             >
               <img
                 alt="Media Description"
-                className="Image__ImageWrapper-sc-18abvff-0 bhgDOM Card__CardImage-sc-1g3s676-3 hDDBde"
+                className="Image__ImageWrapper-sc-18abvff-0 hXzVKy Card__CardImage-sc-1g3s676-3 hDDBde"
                 onClick={null}
                 src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
                 title="Media Description"
@@ -926,28 +948,29 @@ exports[` 5`] = `
               onClick={null}
             >
               <div
-                className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+                className="Bar__BarLayout-icfo76-2 bRGQtj"
                 id={null}
                 onClick={null}
               >
                 <div
-                  className="Bar__Slot-sc-1c4axau-1 eTIRkY"
+                  className="Bar__Slot-icfo76-1 boCGaE"
                 >
                   <div
                     alt={null}
-                    className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
+                    className="Avatar__TagContainer-sc-1vuf9om-2 dqLiae"
                     id={null}
                     label={null}
+                    media={null}
                     onClick={null}
-                    src={null}
                   >
                     <svg
                       aria-hidden="true"
-                      className="svg-inline--fa fa-bookmark fa-w-12 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+                      className="svg-inline--fa fa-bookmark fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 bpsbMF"
                       color={null}
                       data-icon="bookmark"
                       data-prefix="fas"
                       focusable="false"
+                      fontSize="1.35em"
                       id={null}
                       role="img"
                       style={Object {}}
@@ -963,20 +986,20 @@ exports[` 5`] = `
                   </div>
                 </div>
                 <div
-                  className="Bar__Slot-sc-1c4axau-1 jISerZ"
+                  className="Bar__Slot-icfo76-1 yvaBx"
                 >
                   <h6
-                    className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                    fontSize="1.05em"
-                    fontWeight={400}
+                    className="Typography__TitleText-sc-19auepv-2 cLteVL"
+                    fontSize="1em"
+                    fontWeight={600}
                     letterSpacing="0px"
                   >
                     Best Place Ever
                   </h6>
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                    fontSize="0.95em"
-                    fontWeight={400}
+                    className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                    fontSize="1em"
+                    fontWeight={600}
                     id={null}
                     letterSpacing="0px"
                   >
@@ -991,72 +1014,132 @@ exports[` 5`] = `
           className="Panel__SectionWrapper-sc-48epke-1 jZYywS"
           id="Info Panel_body"
         >
-          <div
-            className="Page-mddda5-0 eLSKWv"
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ceKbHJ Page__PageWrapper-mddda5-0 fyHwWg"
+            id={null}
+            rows={null}
           >
-            <h5
-              className="Typography__TitleText-sc-19auepv-2 KxMwb"
-              fontSize="1.15em"
-              fontWeight={400}
-              letterSpacing="0px"
-            >
-              Fascinating Read...
-            </h5>
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-              fontSize="0.95em"
-              fontWeight={400}
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo Page__Section-mddda5-1 dpOQhL"
               id={null}
-              letterSpacing="0px"
+              rows={null}
             >
-              In your imagination you can go anywhere you want. Let's put some happy little clouds in our world. We'll throw some old gray clouds in here just sneaking around and having fun. Let's do that again.
-            </p>
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-              fontSize="0.95em"
-              fontWeight={400}
+              <h4
+                className="Typography__TitleText-sc-19auepv-2 czurBm"
+                fontSize="1.25em"
+                fontWeight={600}
+                letterSpacing="0px"
+              >
+                My Latest Musings
+              </h4>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 irlSOM"
+                fontSize="1em"
+                fontWeight={300}
+                id={null}
+                letterSpacing="0px"
+              >
+                Totally Worth The Read...Enjoy!
+              </p>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+                fontSize="0.75em"
+                fontWeight={600}
+                id={null}
+                letterSpacing="0.2px"
+              >
+                Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.
+              </p>
+            </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 gUohHS Page__Section-mddda5-1 dpOQhL"
               id={null}
-              letterSpacing="0px"
+              rows={null}
             >
-              This is where you take out all your hostilities and frustrations. It's better than kicking the puppy dog around and all that so. Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. These things happen automatically. All you have to do is just let them happen. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. Only eight colors that you need.
-            </p>
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-              fontSize="0.95em"
-              fontWeight={400}
-              id={null}
-              letterSpacing="0px"
-            >
-              You want your tree to have some character. Make it special. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. We spend so much of our life looking - but never seeing.
-            </p>
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-              fontSize="0.95em"
-              fontWeight={400}
-              id={null}
-              letterSpacing="0px"
-            >
-              We'll throw some happy little limbs on this tree. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Painting should do one thing. It should put happiness in your heart. Think about a cloud. Just float around and be there. In this world, everything can be happy.
-            </p>
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-              fontSize="0.95em"
-              fontWeight={400}
-              id={null}
-              letterSpacing="0px"
-            >
-              Nice little fluffy clouds laying around in the sky being lazy. You need to have a very firm paint to do this. You have to allow the paint to break to make it beautiful.
-            </p>
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-              fontSize="0.95em"
-              fontWeight={400}
-              id={null}
-              letterSpacing="0px"
-            >
-              A little happy sunlight shining through there. We're not trying to teach you a thing to copy. We're just here to teach you a technique, then let you loose into the world. There's nothing wrong with having a tree as a friend.
-            </p>
-          </div>
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 gUohHS Page__Section-mddda5-1 dpOQhL"
+                id={null}
+                rows={null}
+              >
+                <h5
+                  className="Typography__TitleText-sc-19auepv-2 KxMwb"
+                  fontSize="1.15em"
+                  fontWeight={400}
+                  letterSpacing="0px"
+                >
+                  Section 1
+                </h5>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  In your imagination you can go anywhere you want. Let's put some happy little clouds in our world. We'll throw some old gray clouds in here just sneaking around and having fun. Let's do that again.
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  This is where you take out all your hostilities and frustrations. It's better than kicking the puppy dog around and all that so. Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. These things happen automatically. All you have to do is just let them happen. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. Only eight colors that you need.
+                </p>
+              </section>
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 gUohHS Page__Section-mddda5-1 dpOQhL"
+                id={null}
+                rows={null}
+              >
+                <h5
+                  className="Typography__TitleText-sc-19auepv-2 KxMwb"
+                  fontSize="1.15em"
+                  fontWeight={400}
+                  letterSpacing="0px"
+                >
+                  Section 1
+                </h5>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  You want your tree to have some character. Make it special. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. We spend so much of our life looking - but never seeing.
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  We'll throw some happy little limbs on this tree. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Painting should do one thing. It should put happiness in your heart. Think about a cloud. Just float around and be there. In this world, everything can be happy.
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Nice little fluffy clouds laying around in the sky being lazy. You need to have a very firm paint to do this. You have to allow the paint to break to make it beautiful.
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  A little happy sunlight shining through there. We're not trying to teach you a thing to copy. We're just here to teach you a technique, then let you loose into the world. There's nothing wrong with having a tree as a friend.
+                </p>
+              </section>
+            </section>
+          </section>
         </section>
       </div>
     </div>
@@ -1069,16 +1152,16 @@ exports[` 5`] = `
     width={null}
   >
     <div
-      className="Bar__BarLayout-sc-1c4axau-2 hVthby"
+      className="Bar__BarLayout-icfo76-2 gJPHni"
       id={null}
       onClick={null}
     >
       <div
-        className="Bar__Slot-sc-1c4axau-1 hAjMjw"
+        className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-          fontSize="1.05em"
+          className="Typography__TitleText-sc-19auepv-2 exoZGd"
+          fontSize="1em"
           fontWeight={400}
           letterSpacing="0px"
         >
@@ -1086,7 +1169,7 @@ exports[` 5`] = `
         </h6>
       </div>
       <div
-        className="Bar__Slot-sc-1c4axau-1 flbmFP"
+        className="Bar__Slot-icfo76-1 hVtzoz"
       >
         <a
           className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
@@ -1097,11 +1180,12 @@ exports[` 5`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-angle-down fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+            className="svg-inline--fa fa-angle-down fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 cJJNyd Command__CommandIcon-sc-13akgtp-2 kHbmnU"
             color={null}
             data-icon="angle-down"
             data-prefix="far"
             focusable="false"
+            fontSize="inherit"
             id={null}
             role="img"
             style={Object {}}
@@ -1115,7 +1199,7 @@ exports[` 5`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+            className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
             fontSize="0.876em"
             fontWeight={400}
             htmlFor={null}
@@ -1126,7 +1210,7 @@ exports[` 5`] = `
         </a>
       </div>
       <div
-        className="Bar__Slot-sc-1c4axau-1 kHYCoh"
+        className="Bar__Slot-icfo76-1 kZQbjh"
       >
         <div />
       </div>
@@ -1151,37 +1235,57 @@ exports[` 6`] = `
     width={null}
   >
     <div
-      className="Bar__BarLayout-sc-1c4axau-2 hVthby"
+      className="Bar__BarLayout-icfo76-2 gJPHni"
       id={null}
       onClick={null}
     >
       <div
-        className="Bar__Slot-sc-1c4axau-1 hAjMjw"
+        className="Bar__Slot-icfo76-1 fNcQEg"
       >
-        <div
-          alt="logo"
-          className="Avatar__TagContainer-sc-1vuf9om-1 idJXGT"
+        <a
+          className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
           id={null}
-          label={null}
+          label="Toggle"
           onClick={[Function]}
-          src={Object {}}
+          title="Toggle"
         >
-          <img
-            alt="logo"
-            className="Image__ImageWrapper-sc-18abvff-0 bzdjAn"
-            onClick={null}
-            src={Object {}}
-            title="logo"
-            width="2.5rem"
-          />
-        </div>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-angle-left fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 cJJNyd Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+            color={null}
+            data-icon="angle-left"
+            data-prefix="far"
+            focusable="false"
+            fontSize="inherit"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 192 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.2 247.5L151 99.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17L69.3 256l118.5 119.7c4.7 4.7 4.7 12.3 0 17L168 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 264.5c-4.7-4.7-4.7-12.3 0-17z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+            fontSize="0.876em"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing="0px"
+          >
+            Toggle
+          </label>
+        </a>
       </div>
       <div
-        className="Bar__Slot-sc-1c4axau-1 flbmFP"
+        className="Bar__Slot-icfo76-1 hVtzoz"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-          fontSize="1.05em"
+          className="Typography__TitleText-sc-19auepv-2 exoZGd"
+          fontSize="1em"
           fontWeight={400}
           letterSpacing="0px"
         >
@@ -1189,7 +1293,7 @@ exports[` 6`] = `
         </h6>
       </div>
       <div
-        className="Bar__Slot-sc-1c4axau-1 kHYCoh"
+        className="Bar__Slot-icfo76-1 kZQbjh"
       >
         <a
           className="Command__CommandContainer-sc-13akgtp-0 bmuFIF"
@@ -1200,11 +1304,12 @@ exports[` 6`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-angle-right fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+            className="svg-inline--fa fa-angle-right fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 cJJNyd Command__CommandIcon-sc-13akgtp-2 kHbmnU"
             color={null}
             data-icon="angle-right"
             data-prefix="far"
             focusable="false"
+            fontSize="inherit"
             id={null}
             role="img"
             style={Object {}}
@@ -1218,7 +1323,7 @@ exports[` 6`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+            className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
             fontSize="0.876em"
             fontWeight={400}
             htmlFor={null}
@@ -1238,11 +1343,11 @@ exports[` 6`] = `
     width={null}
   >
     <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionLeft-sc-19tlhp4-4 eoAyiI"
+      className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 eoAyiI"
       height={null}
       id={null}
       overflow={null}
-      width="25%"
+      width="15%"
     >
       <div
         className="Panel__PanelWrapper-sc-48epke-0 kObpyG"
@@ -1253,19 +1358,19 @@ exports[` 6`] = `
           id="List Panel_header"
         >
           <div
-            className="Card__CardWrapper-sc-1g3s676-5 jNloVS"
+            className="Card__CardWrapper-sc-1g3s676-5 kZnQzv"
             href={null}
             id={null}
             media={null}
             onClick={null}
           >
             <div
-              className="Bar__BarLayout-sc-1c4axau-2 hVthby"
+              className="Bar__BarLayout-icfo76-2 gpWMWV"
               id={null}
               onClick={null}
             >
               <div
-                className="Bar__Slot-sc-1c4axau-1 hAjMjw"
+                className="Bar__Slot-icfo76-1 fNcQEg"
               >
                 <h5
                   className="Typography__TitleText-sc-19auepv-2 bKCMpV"
@@ -1277,7 +1382,7 @@ exports[` 6`] = `
                 </h5>
               </div>
               <div
-                className="Bar__Slot-sc-1c4axau-1 kHYCoh"
+                className="Bar__Slot-icfo76-1 kZQbjh"
               >
                 <a
                   className="Menu__MenuContainer-sc-17iwn6x-0 lhgeCh"
@@ -1285,11 +1390,12 @@ exports[` 6`] = `
                 >
                   <svg
                     aria-hidden="true"
-                    className="svg-inline--fa fa-ellipsis-v fa-w-4 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+                    className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 bpsbMF"
                     color={null}
                     data-icon="ellipsis-v"
                     data-prefix="far"
                     focusable="false"
+                    fontSize="1.35em"
                     id={null}
                     role="img"
                     style={Object {}}
@@ -1316,7 +1422,7 @@ exports[` 6`] = `
             id={null}
           >
             <li
-              className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+              className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
               disabled={false}
               href={null}
               id={null}
@@ -1324,16 +1430,16 @@ exports[` 6`] = `
               tabIndex="0"
             >
               <div
-                className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+                className="Bar__BarLayout-icfo76-2 bRGQtj"
                 id={null}
                 onClick={null}
               >
                 <div
-                  className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+                  className="Bar__Slot-icfo76-1 RjiBe"
                 >
                   <h6
-                    className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                    fontSize="1.05em"
+                    className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                    fontSize="1em"
                     fontWeight={400}
                     letterSpacing="0px"
                   >
@@ -1343,7 +1449,7 @@ exports[` 6`] = `
               </div>
             </li>
             <li
-              className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+              className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
               disabled={false}
               href={null}
               id={null}
@@ -1351,16 +1457,16 @@ exports[` 6`] = `
               tabIndex="0"
             >
               <div
-                className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+                className="Bar__BarLayout-icfo76-2 bRGQtj"
                 id={null}
                 onClick={null}
               >
                 <div
-                  className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+                  className="Bar__Slot-icfo76-1 RjiBe"
                 >
                   <h6
-                    className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                    fontSize="1.05em"
+                    className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                    fontSize="1em"
                     fontWeight={400}
                     letterSpacing="0px"
                   >
@@ -1370,7 +1476,7 @@ exports[` 6`] = `
               </div>
             </li>
             <li
-              className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+              className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
               disabled={false}
               href={null}
               id={null}
@@ -1378,16 +1484,16 @@ exports[` 6`] = `
               tabIndex="0"
             >
               <div
-                className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+                className="Bar__BarLayout-icfo76-2 bRGQtj"
                 id={null}
                 onClick={null}
               >
                 <div
-                  className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+                  className="Bar__Slot-icfo76-1 RjiBe"
                 >
                   <h6
-                    className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                    fontSize="1.05em"
+                    className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                    fontSize="1em"
                     fontWeight={400}
                     letterSpacing="0px"
                   >
@@ -1397,7 +1503,7 @@ exports[` 6`] = `
               </div>
             </li>
             <li
-              className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+              className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
               disabled={false}
               href={null}
               id={null}
@@ -1405,16 +1511,16 @@ exports[` 6`] = `
               tabIndex="0"
             >
               <div
-                className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+                className="Bar__BarLayout-icfo76-2 bRGQtj"
                 id={null}
                 onClick={null}
               >
                 <div
-                  className="Bar__Slot-sc-1c4axau-1 ejlqvW"
+                  className="Bar__Slot-icfo76-1 RjiBe"
                 >
                   <h6
-                    className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                    fontSize="1.05em"
+                    className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                    fontSize="1em"
                     fontWeight={400}
                     letterSpacing="0px"
                   >
@@ -1803,7 +1909,7 @@ exports[` 6`] = `
           id="Info Panel_header"
         >
           <div
-            className="Card__CardWrapper-sc-1g3s676-5 jNloVS"
+            className="Card__CardWrapper-sc-1g3s676-5 kZnQzv"
             href={null}
             id={null}
             media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
@@ -1814,7 +1920,7 @@ exports[` 6`] = `
             >
               <img
                 alt="Media Description"
-                className="Image__ImageWrapper-sc-18abvff-0 bhgDOM Card__CardImage-sc-1g3s676-3 hDDBde"
+                className="Image__ImageWrapper-sc-18abvff-0 hXzVKy Card__CardImage-sc-1g3s676-3 hDDBde"
                 onClick={null}
                 src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
                 title="Media Description"
@@ -1827,28 +1933,29 @@ exports[` 6`] = `
               onClick={null}
             >
               <div
-                className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
+                className="Bar__BarLayout-icfo76-2 bRGQtj"
                 id={null}
                 onClick={null}
               >
                 <div
-                  className="Bar__Slot-sc-1c4axau-1 eTIRkY"
+                  className="Bar__Slot-icfo76-1 boCGaE"
                 >
                   <div
                     alt={null}
-                    className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
+                    className="Avatar__TagContainer-sc-1vuf9om-2 dqLiae"
                     id={null}
                     label={null}
+                    media={null}
                     onClick={null}
-                    src={null}
                   >
                     <svg
                       aria-hidden="true"
-                      className="svg-inline--fa fa-bookmark fa-w-12 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+                      className="svg-inline--fa fa-bookmark fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 bpsbMF"
                       color={null}
                       data-icon="bookmark"
                       data-prefix="fas"
                       focusable="false"
+                      fontSize="1.35em"
                       id={null}
                       role="img"
                       style={Object {}}
@@ -1864,20 +1971,20 @@ exports[` 6`] = `
                   </div>
                 </div>
                 <div
-                  className="Bar__Slot-sc-1c4axau-1 jISerZ"
+                  className="Bar__Slot-icfo76-1 yvaBx"
                 >
                   <h6
-                    className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                    fontSize="1.05em"
-                    fontWeight={400}
+                    className="Typography__TitleText-sc-19auepv-2 cLteVL"
+                    fontSize="1em"
+                    fontWeight={600}
                     letterSpacing="0px"
                   >
                     Best Place Ever
                   </h6>
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                    fontSize="0.95em"
-                    fontWeight={400}
+                    className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                    fontSize="1em"
+                    fontWeight={600}
                     id={null}
                     letterSpacing="0px"
                   >
@@ -1892,72 +1999,132 @@ exports[` 6`] = `
           className="Panel__SectionWrapper-sc-48epke-1 jZYywS"
           id="Info Panel_body"
         >
-          <div
-            className="Page-mddda5-0 eLSKWv"
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ceKbHJ Page__PageWrapper-mddda5-0 fyHwWg"
+            id={null}
+            rows={null}
           >
-            <h5
-              className="Typography__TitleText-sc-19auepv-2 KxMwb"
-              fontSize="1.15em"
-              fontWeight={400}
-              letterSpacing="0px"
-            >
-              Fascinating Read...
-            </h5>
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-              fontSize="0.95em"
-              fontWeight={400}
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo Page__Section-mddda5-1 dpOQhL"
               id={null}
-              letterSpacing="0px"
+              rows={null}
             >
-              In your imagination you can go anywhere you want. Let's put some happy little clouds in our world. We'll throw some old gray clouds in here just sneaking around and having fun. Let's do that again.
-            </p>
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-              fontSize="0.95em"
-              fontWeight={400}
+              <h4
+                className="Typography__TitleText-sc-19auepv-2 czurBm"
+                fontSize="1.25em"
+                fontWeight={600}
+                letterSpacing="0px"
+              >
+                My Latest Musings
+              </h4>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 irlSOM"
+                fontSize="1em"
+                fontWeight={300}
+                id={null}
+                letterSpacing="0px"
+              >
+                Totally Worth The Read...Enjoy!
+              </p>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+                fontSize="0.75em"
+                fontWeight={600}
+                id={null}
+                letterSpacing="0.2px"
+              >
+                Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.
+              </p>
+            </section>
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 gUohHS Page__Section-mddda5-1 dpOQhL"
               id={null}
-              letterSpacing="0px"
+              rows={null}
             >
-              This is where you take out all your hostilities and frustrations. It's better than kicking the puppy dog around and all that so. Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. These things happen automatically. All you have to do is just let them happen. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. Only eight colors that you need.
-            </p>
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-              fontSize="0.95em"
-              fontWeight={400}
-              id={null}
-              letterSpacing="0px"
-            >
-              You want your tree to have some character. Make it special. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. We spend so much of our life looking - but never seeing.
-            </p>
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-              fontSize="0.95em"
-              fontWeight={400}
-              id={null}
-              letterSpacing="0px"
-            >
-              We'll throw some happy little limbs on this tree. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Painting should do one thing. It should put happiness in your heart. Think about a cloud. Just float around and be there. In this world, everything can be happy.
-            </p>
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-              fontSize="0.95em"
-              fontWeight={400}
-              id={null}
-              letterSpacing="0px"
-            >
-              Nice little fluffy clouds laying around in the sky being lazy. You need to have a very firm paint to do this. You have to allow the paint to break to make it beautiful.
-            </p>
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-              fontSize="0.95em"
-              fontWeight={400}
-              id={null}
-              letterSpacing="0px"
-            >
-              A little happy sunlight shining through there. We're not trying to teach you a thing to copy. We're just here to teach you a technique, then let you loose into the world. There's nothing wrong with having a tree as a friend.
-            </p>
-          </div>
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 gUohHS Page__Section-mddda5-1 dpOQhL"
+                id={null}
+                rows={null}
+              >
+                <h5
+                  className="Typography__TitleText-sc-19auepv-2 KxMwb"
+                  fontSize="1.15em"
+                  fontWeight={400}
+                  letterSpacing="0px"
+                >
+                  Section 1
+                </h5>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  In your imagination you can go anywhere you want. Let's put some happy little clouds in our world. We'll throw some old gray clouds in here just sneaking around and having fun. Let's do that again.
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  This is where you take out all your hostilities and frustrations. It's better than kicking the puppy dog around and all that so. Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. These things happen automatically. All you have to do is just let them happen. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. Only eight colors that you need.
+                </p>
+              </section>
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 gUohHS Page__Section-mddda5-1 dpOQhL"
+                id={null}
+                rows={null}
+              >
+                <h5
+                  className="Typography__TitleText-sc-19auepv-2 KxMwb"
+                  fontSize="1.15em"
+                  fontWeight={400}
+                  letterSpacing="0px"
+                >
+                  Section 1
+                </h5>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  You want your tree to have some character. Make it special. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. We spend so much of our life looking - but never seeing.
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  We'll throw some happy little limbs on this tree. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Painting should do one thing. It should put happiness in your heart. Think about a cloud. Just float around and be there. In this world, everything can be happy.
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Nice little fluffy clouds laying around in the sky being lazy. You need to have a very firm paint to do this. You have to allow the paint to break to make it beautiful.
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  A little happy sunlight shining through there. We're not trying to teach you a thing to copy. We're just here to teach you a technique, then let you loose into the world. There's nothing wrong with having a tree as a friend.
+                </p>
+              </section>
+            </section>
+          </section>
         </section>
       </div>
     </div>
@@ -1970,16 +2137,16 @@ exports[` 6`] = `
     width={null}
   >
     <div
-      className="Bar__BarLayout-sc-1c4axau-2 hVthby"
+      className="Bar__BarLayout-icfo76-2 gJPHni"
       id={null}
       onClick={null}
     >
       <div
-        className="Bar__Slot-sc-1c4axau-1 hAjMjw"
+        className="Bar__Slot-icfo76-1 fNcQEg"
       >
         <h6
-          className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-          fontSize="1.05em"
+          className="Typography__TitleText-sc-19auepv-2 exoZGd"
+          fontSize="1em"
           fontWeight={400}
           letterSpacing="0px"
         >
@@ -1987,7 +2154,7 @@ exports[` 6`] = `
         </h6>
       </div>
       <div
-        className="Bar__Slot-sc-1c4axau-1 flbmFP"
+        className="Bar__Slot-icfo76-1 hVtzoz"
       >
         <a
           className="Command__CommandContainer-sc-13akgtp-0 jaNeoF"
@@ -1998,11 +2165,12 @@ exports[` 6`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-angle-down fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Command__CommandIcon-sc-13akgtp-2 kHbmnU"
+            className="svg-inline--fa fa-angle-down fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 cJJNyd Command__CommandIcon-sc-13akgtp-2 kHbmnU"
             color={null}
             data-icon="angle-down"
             data-prefix="far"
             focusable="false"
+            fontSize="inherit"
             id={null}
             role="img"
             style={Object {}}
@@ -2016,7 +2184,7 @@ exports[` 6`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 Jgtkr Command__CommandName-sc-13akgtp-1 kXfRER"
+            className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
             fontSize="0.876em"
             fontWeight={400}
             htmlFor={null}
@@ -2027,944 +2195,9 @@ exports[` 6`] = `
         </a>
       </div>
       <div
-        className="Bar__Slot-sc-1c4axau-1 kHYCoh"
+        className="Bar__Slot-icfo76-1 kZQbjh"
       >
         <div />
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[` 7`] = `
-<div
-  className="Flex__FlexWrapper-sc-7b3s7m-0 fwrFdN Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
-  height={null}
-  id={null}
-  overflow={null}
-  width={null}
->
-  <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 bVsEVt"
-    height={null}
-    id="Header"
-    overflow={null}
-    width={null}
-  >
-    <div
-      className="Bar__BarLayout-sc-1c4axau-2 hVthby"
-      id={null}
-      onClick={null}
-    >
-      <div
-        className="Bar__Slot-sc-1c4axau-1 cfFdoI"
-      >
-        <div
-          alt="logo"
-          className="Avatar__TagContainer-sc-1vuf9om-1 idJXGT"
-          id={null}
-          label={null}
-          onClick={[Function]}
-          src={Object {}}
-        >
-          <img
-            alt="logo"
-            className="Image__ImageWrapper-sc-18abvff-0 bzdjAn"
-            onClick={null}
-            src={Object {}}
-            title="logo"
-            width="2.5rem"
-          />
-        </div>
-      </div>
-      <div
-        className="Bar__Slot-sc-1c4axau-1 dSALDS"
-      >
-        <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
-          id={null}
-          rows={null}
-        >
-          <form
-            className="Search__SearchContainer-sey9om-0 hrJbnV"
-          >
-            <input
-              className="Search__NewTextInput-sey9om-1 gIKvUj"
-              id="my-search-bar"
-              placeholder="Search"
-              type="search"
-            />
-            <button
-              className="Button__StyledButton-sc-1v7sls2-0 kRDsvV"
-              disabled={false}
-              htmlFor={null}
-              id={null}
-              name={null}
-              onClick={null}
-              tabIndex="1"
-            >
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 gOxAef Button__LabelWrapper-sc-1v7sls2-1 bLwYSt"
-                id={null}
-                rows={null}
-              >
-                <svg
-                  aria-hidden="true"
-                  className="svg-inline--fa fa-search fa-w-16 fa-md Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
-                  color={null}
-                  data-icon="search"
-                  data-prefix="far"
-                  focusable="false"
-                  id={null}
-                  role="img"
-                  style={Object {}}
-                  viewBox="0 0 512 512"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
-                    fill="currentColor"
-                    style={Object {}}
-                  />
-                </svg>
-              </section>
-            </button>
-          </form>
-        </section>
-      </div>
-      <div
-        className="Bar__Slot-sc-1c4axau-1 kajUfB"
-      >
-        <div
-          className="IconBlock__Block-nokc92-0 UCGVw"
-          id={null}
-          style={null}
-        >
-          <a
-            className="Icon__LinkedIcon-sc-1oa9m1v-0 kzNrBw"
-            disabled={null}
-            onClick={[Function]}
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-list-ul fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 egNihH"
-              color="link"
-              data-icon="list-ul"
-              data-prefix="far"
-              focusable="false"
-              id={null}
-              role="img"
-              style={Object {}}
-              viewBox="0 0 512 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M48 368a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0-160a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0-160a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm448 24H176a16 16 0 0 0-16 16v16a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V88a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v16a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-16a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v16a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-16a16 16 0 0 0-16-16z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-          </a>
-          <a
-            className="Icon__LinkedIcon-sc-1oa9m1v-0 kzNrBw"
-            disabled={null}
-            onClick={[Function]}
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-calendar-alt fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 egNihH"
-              color="link"
-              data-icon="calendar-alt"
-              data-prefix="far"
-              focusable="false"
-              id={null}
-              role="img"
-              style={Object {}}
-              viewBox="0 0 448 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-          </a>
-          <a
-            className="Icon__LinkedIcon-sc-1oa9m1v-0 kzNrBw"
-            disabled={null}
-            onClick={[Function]}
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-comment-alt fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 egNihH"
-              color="link"
-              data-icon="comment-alt"
-              data-prefix="far"
-              focusable="false"
-              id={null}
-              role="img"
-              style={Object {}}
-              viewBox="0 0 512 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 7.1 5.8 12 12 12 2.4 0 4.9-.7 7.1-2.4L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm16 352c0 8.8-7.2 16-16 16H288l-12.8 9.6L208 428v-60H64c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16h384c8.8 0 16 7.2 16 16v288z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-          </a>
-          <div
-            alt={null}
-            className="Avatar__TagContainer-sc-1vuf9om-1 idJXGT"
-            id={null}
-            label="LB"
-            onClick={[Function]}
-            src={null}
-          >
-            <h6
-              className="Typography__TitleText-sc-19auepv-2 ffuBqO Avatar__AvatarText-sc-1vuf9om-0 hhCXJq"
-              fontSize="1.05em"
-              fontWeight={400}
-              letterSpacing="0px"
-            >
-              LB
-            </h6>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    className="Flex__FlexWrapper-sc-7b3s7m-0 fwrFdN Layout__Body-sc-19tlhp4-3 iPUXIc"
-    height={null}
-    id={null}
-    overflow={null}
-    width={null}
-  >
-    <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionLeft-sc-19tlhp4-4 eoAyiI"
-      height={null}
-      id={null}
-      overflow={null}
-      width="25%"
-    >
-      <div
-        className="Panel__PanelWrapper-sc-48epke-0 kObpyG"
-        id="List Panel"
-      >
-        <section
-          className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 bHxuLl"
-          id="List Panel_header"
-        >
-          <div
-            className="Card__CardWrapper-sc-1g3s676-5 jNloVS"
-            href={null}
-            id={null}
-            media={null}
-            onClick={null}
-          >
-            <div
-              className="Bar__BarLayout-sc-1c4axau-2 hVthby"
-              id={null}
-              onClick={null}
-            >
-              <div
-                className="Bar__Slot-sc-1c4axau-1 hAjMjw"
-              >
-                <h5
-                  className="Typography__TitleText-sc-19auepv-2 bKCMpV"
-                  fontSize="1.15em"
-                  fontWeight={600}
-                  letterSpacing="0px"
-                >
-                  Menu Header
-                </h5>
-              </div>
-              <div
-                className="Bar__Slot-sc-1c4axau-1 kHYCoh"
-              >
-                <a
-                  className="Menu__MenuContainer-sc-17iwn6x-0 lhgeCh"
-                  onClick={[Function]}
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="svg-inline--fa fa-ellipsis-v fa-w-4 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
-                    color={null}
-                    data-icon="ellipsis-v"
-                    data-prefix="far"
-                    focusable="false"
-                    id={null}
-                    role="img"
-                    style={Object {}}
-                    viewBox="0 0 128 512"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
-                      fill="currentColor"
-                      style={Object {}}
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section
-          className="Panel__SectionWrapper-sc-48epke-1 jZYywS"
-          id="List Panel_body"
-        >
-          <ul
-            className="List__ListWrapper-sc-43f2zq-0 iOWfKZ"
-            id={null}
-          >
-            <li
-              className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
-              disabled={false}
-              href={null}
-              id={null}
-              onClick={null}
-              tabIndex="0"
-            >
-              <div
-                className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
-                id={null}
-                onClick={null}
-              >
-                <div
-                  className="Bar__Slot-sc-1c4axau-1 ejlqvW"
-                >
-                  <h6
-                    className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                    fontSize="1.05em"
-                    fontWeight={400}
-                    letterSpacing="0px"
-                  >
-                    Layers
-                  </h6>
-                </div>
-              </div>
-            </li>
-            <li
-              className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
-              disabled={false}
-              href={null}
-              id={null}
-              onClick={null}
-              tabIndex="0"
-            >
-              <div
-                className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
-                id={null}
-                onClick={null}
-              >
-                <div
-                  className="Bar__Slot-sc-1c4axau-1 ejlqvW"
-                >
-                  <h6
-                    className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                    fontSize="1.05em"
-                    fontWeight={400}
-                    letterSpacing="0px"
-                  >
-                    Results
-                  </h6>
-                </div>
-              </div>
-            </li>
-            <li
-              className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
-              disabled={false}
-              href={null}
-              id={null}
-              onClick={null}
-              tabIndex="0"
-            >
-              <div
-                className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
-                id={null}
-                onClick={null}
-              >
-                <div
-                  className="Bar__Slot-sc-1c4axau-1 ejlqvW"
-                >
-                  <h6
-                    className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                    fontSize="1.05em"
-                    fontWeight={400}
-                    letterSpacing="0px"
-                  >
-                    Form
-                  </h6>
-                </div>
-              </div>
-            </li>
-            <li
-              className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
-              disabled={false}
-              href={null}
-              id={null}
-              onClick={null}
-              tabIndex="0"
-            >
-              <div
-                className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
-                id={null}
-                onClick={null}
-              >
-                <div
-                  className="Bar__Slot-sc-1c4axau-1 ejlqvW"
-                >
-                  <h6
-                    className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                    fontSize="1.05em"
-                    fontWeight={400}
-                    letterSpacing="0px"
-                  >
-                    Research
-                  </h6>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </div>
-    </div>
-    <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 bGQswE Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
-      height="40%"
-      id={null}
-      overflow={null}
-      width="100%"
-    >
-      <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 eeLHbF Layout__RegionCenter-sc-19tlhp4-6 kIUOgp"
-        height={null}
-        id={null}
-        overflow={null}
-        width={null}
-      >
-        <div
-          style={
-            Object {
-              "height": "100%",
-              "width": "100%",
-            }
-          }
-        />
-      </div>
-      <div
-        className="Flex__FlexWrapper-sc-7b3s7m-0 lkNlNx Layout__RegionBottom-sc-19tlhp4-7 feYNea"
-        height="40%"
-        id={null}
-        overflow={null}
-        width={null}
-      >
-        <div
-          className="Table__MultiGridWrapper-gz0dbt-0 kpZase"
-        >
-          <div
-            style={
-              Object {
-                "height": 0,
-                "overflow": "visible",
-                "width": 0,
-              }
-            }
-          >
-            <div
-              style={
-                Object {
-                  "height": 100,
-                  "overflow": "visible",
-                  "width": 200,
-                }
-              }
-            >
-              <div
-                style={
-                  Object {
-                    "height": 40,
-                    "position": "relative",
-                    "width": 200,
-                  }
-                }
-              >
-                <div
-                  aria-label="grid"
-                  aria-readonly={true}
-                  className="ReactVirtualized__Grid"
-                  onScroll={[Function]}
-                  role="grid"
-                  style={
-                    Object {
-                      "WebkitOverflowScrolling": "touch",
-                      "boxSizing": "border-box",
-                      "direction": "ltr",
-                      "height": 40,
-                      "left": 0,
-                      "overflowX": "hidden",
-                      "overflowY": "hidden",
-                      "position": "absolute",
-                      "top": 0,
-                      "width": 200,
-                      "willChange": "transform",
-                    }
-                  }
-                  tabIndex={null}
-                >
-                  <div
-                    className="ReactVirtualized__Grid__innerScrollContainer"
-                    role="rowgroup"
-                    style={
-                      Object {
-                        "height": 40,
-                        "maxHeight": 40,
-                        "maxWidth": 1060,
-                        "overflow": "hidden",
-                        "pointerEvents": "",
-                        "position": "relative",
-                        "width": 1060,
-                      }
-                    }
-                  >
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 eTCUgj"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 0,
-                          "position": "absolute",
-                          "top": 0,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      Acreage
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 eTCUgj"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 180,
-                          "position": "absolute",
-                          "top": 0,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      Aggregate Acreage
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                style={
-                  Object {
-                    "height": 60,
-                    "overflow": "visible",
-                    "position": "relative",
-                    "width": 200,
-                  }
-                }
-              >
-                <div
-                  aria-label="grid"
-                  aria-readonly={true}
-                  className="ReactVirtualized__Grid"
-                  onScroll={[Function]}
-                  role="grid"
-                  style={
-                    Object {
-                      "WebkitOverflowScrolling": "touch",
-                      "boxSizing": "border-box",
-                      "direction": "ltr",
-                      "height": 60,
-                      "left": 0,
-                      "overflowX": "auto",
-                      "overflowY": "auto",
-                      "position": "absolute",
-                      "width": 200,
-                      "willChange": "transform",
-                    }
-                  }
-                  tabIndex={0}
-                >
-                  <div
-                    className="ReactVirtualized__Grid__innerScrollContainer"
-                    role="rowgroup"
-                    style={
-                      Object {
-                        "height": 200,
-                        "maxHeight": 200,
-                        "maxWidth": 1060,
-                        "overflow": "hidden",
-                        "pointerEvents": "",
-                        "position": "relative",
-                        "width": 1060,
-                      }
-                    }
-                  >
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 FTOJm"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 0,
-                          "position": "absolute",
-                          "top": 0,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.12
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 FTOJm"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 180,
-                          "position": "absolute",
-                          "top": 0,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.12
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 FTOJm"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 0,
-                          "position": "absolute",
-                          "top": 40,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      1.11
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 FTOJm"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 180,
-                          "position": "absolute",
-                          "top": 40,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      1.11
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 FTOJm"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 0,
-                          "position": "absolute",
-                          "top": 80,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.94
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 FTOJm"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 180,
-                          "position": "absolute",
-                          "top": 80,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.94
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 FTOJm"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 0,
-                          "position": "absolute",
-                          "top": 120,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.07
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 FTOJm"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 180,
-                          "position": "absolute",
-                          "top": 120,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.684631
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 FTOJm"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 0,
-                          "position": "absolute",
-                          "top": 160,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.12
-                    </div>
-                    <div
-                      className="Table__CellWrapper-gz0dbt-1 FTOJm"
-                      onClick={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      style={
-                        Object {
-                          "height": 40,
-                          "left": 180,
-                          "position": "absolute",
-                          "top": 160,
-                          "width": 180,
-                        }
-                      }
-                    >
-                      0.12
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionRight-sc-19tlhp4-8 gLaegA"
-      height={null}
-      id={null}
-      overflow={null}
-      width="25%"
-    >
-      <div
-        className="Panel__PanelWrapper-sc-48epke-0 kObpyG"
-        id="Info Panel"
-      >
-        <section
-          className="Panel__SectionWrapper-sc-48epke-1 jZYywS Panel__PanelSection-sc-48epke-2 bHxuLl"
-          id="Info Panel_header"
-        >
-          <div
-            className="Card__CardWrapper-sc-1g3s676-5 jNloVS"
-            href={null}
-            id={null}
-            media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
-            onClick={null}
-          >
-            <section
-              className="Card__CardSectionWrapper-sc-1g3s676-1 Card__Media-sc-1g3s676-2 fjpAGz"
-            >
-              <img
-                alt="Media Description"
-                className="Image__ImageWrapper-sc-18abvff-0 bhgDOM Card__CardImage-sc-1g3s676-3 hDDBde"
-                onClick={null}
-                src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
-                title="Media Description"
-                width="100%"
-              />
-            </section>
-            <section
-              className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
-              id={null}
-              onClick={null}
-            >
-              <div
-                className="Bar__BarLayout-sc-1c4axau-2 jMyIKL"
-                id={null}
-                onClick={null}
-              >
-                <div
-                  className="Bar__Slot-sc-1c4axau-1 eTIRkY"
-                >
-                  <div
-                    alt={null}
-                    className="Avatar__TagContainer-sc-1vuf9om-1 hjvHco"
-                    id={null}
-                    label={null}
-                    onClick={null}
-                    src={null}
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="svg-inline--fa fa-bookmark fa-w-12 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
-                      color={null}
-                      data-icon="bookmark"
-                      data-prefix="fas"
-                      focusable="false"
-                      id={null}
-                      role="img"
-                      style={Object {}}
-                      viewBox="0 0 384 512"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 512V48C0 21.49 21.49 0 48 0h288c26.51 0 48 21.49 48 48v464L192 400 0 512z"
-                        fill="currentColor"
-                        style={Object {}}
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div
-                  className="Bar__Slot-sc-1c4axau-1 jISerZ"
-                >
-                  <h6
-                    className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-                    fontSize="1.05em"
-                    fontWeight={400}
-                    letterSpacing="0px"
-                  >
-                    Best Place Ever
-                  </h6>
-                  <p
-                    className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-                    fontSize="0.95em"
-                    fontWeight={400}
-                    id={null}
-                    letterSpacing="0px"
-                  >
-                    I Could Tell You More, But...
-                  </p>
-                </div>
-              </div>
-            </section>
-          </div>
-        </section>
-        <section
-          className="Panel__SectionWrapper-sc-48epke-1 jZYywS"
-          id="Info Panel_body"
-        >
-          <div
-            className="Page-mddda5-0 eLSKWv"
-          >
-            <h5
-              className="Typography__TitleText-sc-19auepv-2 KxMwb"
-              fontSize="1.15em"
-              fontWeight={400}
-              letterSpacing="0px"
-            >
-              Fascinating Read...
-            </h5>
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-              fontSize="0.95em"
-              fontWeight={400}
-              id={null}
-              letterSpacing="0px"
-            >
-              In your imagination you can go anywhere you want. Let's put some happy little clouds in our world. We'll throw some old gray clouds in here just sneaking around and having fun. Let's do that again.
-            </p>
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-              fontSize="0.95em"
-              fontWeight={400}
-              id={null}
-              letterSpacing="0px"
-            >
-              This is where you take out all your hostilities and frustrations. It's better than kicking the puppy dog around and all that so. Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. These things happen automatically. All you have to do is just let them happen. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. Only eight colors that you need.
-            </p>
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-              fontSize="0.95em"
-              fontWeight={400}
-              id={null}
-              letterSpacing="0px"
-            >
-              You want your tree to have some character. Make it special. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. We spend so much of our life looking - but never seeing.
-            </p>
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-              fontSize="0.95em"
-              fontWeight={400}
-              id={null}
-              letterSpacing="0px"
-            >
-              We'll throw some happy little limbs on this tree. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Painting should do one thing. It should put happiness in your heart. Think about a cloud. Just float around and be there. In this world, everything can be happy.
-            </p>
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-              fontSize="0.95em"
-              fontWeight={400}
-              id={null}
-              letterSpacing="0px"
-            >
-              Nice little fluffy clouds laying around in the sky being lazy. You need to have a very firm paint to do this. You have to allow the paint to break to make it beautiful.
-            </p>
-            <p
-              className="Typography__Paragraph-sc-19auepv-3 iAFFUA"
-              fontSize="0.95em"
-              fontWeight={400}
-              id={null}
-              letterSpacing="0px"
-            >
-              A little happy sunlight shining through there. We're not trying to teach you a thing to copy. We're just here to teach you a technique, then let you loose into the world. There's nothing wrong with having a tree as a friend.
-            </p>
-          </div>
-        </section>
       </div>
     </div>
   </div>

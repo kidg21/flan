@@ -3,7 +3,7 @@
 // import React from "react";
 
 // import { Padding } from "helpers/Display";
-// import Form, { Section } from "layout/Form";
+// import Form, { FormSection } from "layout/Form";
 // import SelectMenu from "atoms/SelectMenu";
 
 // const options = [
@@ -58,7 +58,7 @@
 //   .add("Single-Select ( Required )", () => {
 //     return (
 //       <Form>
-//         <Section>
+//         <FormSection>
 //           <SelectMenu
 //             label="Single-Select ( Required )"
 //             placeholder="You Must Choose..."
@@ -74,7 +74,7 @@
 //             options={options}
 //             selectOptions={options[0].value}
 //           />
-//         </Section>
+//         </FormSection>
 //       </Form>
 //     );
 //   })
@@ -149,7 +149,7 @@
 //   .add("Multi-Select ( Required )", () => {
 //     return (
 //       <Form>
-//         <Section>
+//         <FormSection>
 //           <SelectMenu
 //             multiSelect
 //             isRequired
@@ -167,7 +167,7 @@
 //             options={options}
 //             selectOptions={[options[0].value, options[2].value]}
 //           />
-//         </Section>
+//         </FormSection>
 //       </Form>
 //     );
 //   })
@@ -181,7 +181,7 @@
 // storiesOf("Atoms|Select Menu", module).add("The Select Menu Family", () => {
 //   return (
 //     <Form title="The Select Menu Family">
-//       <Section>
+//       <FormSection>
 //         <SelectMenu
 //           label="Single-Select ( Standard )"
 //           placeholder="Choose..."
@@ -223,7 +223,7 @@
 //           helpText="Help text for the Select Menu component"
 //           options={options}
 //         />
-//       </Section>
+//       </FormSection>
 //     </Form>
 //   );
 // });
