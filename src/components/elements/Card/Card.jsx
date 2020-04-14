@@ -15,6 +15,7 @@ import Command from "atoms/Command";
 import Image from "atoms/Image";
 import Avatar from "atoms/Avatar";
 import Menu from "blocks/Menu";
+import Badge from "atoms/Badge";
 import Expander from "utils/Expander";
 import { DisableTransitionContext } from "States";
 import mime from "mime";
@@ -305,6 +306,7 @@ CardSection.defaultProps = {
 };
 
 function Card({
+  badgeLabel,
   body,
   children,
   className,
@@ -385,6 +387,7 @@ function Card({
   if (title || description) {
     headerSection = (
       <CardSection variant={variant} >
+        {badgeLabel ? <Badge label={badgeLabel} /> : null}
         <Bar
           padding="0"
           contentAlign="center"
@@ -571,6 +574,7 @@ function Card({
 }
 
 Card.propTypes = {
+  badgeLabel: PropTypes.string,
   body: PropTypes.string,
   children: PropTypes.node,
   className: PropTypes.string,
@@ -599,6 +603,7 @@ Card.propTypes = {
   variant: PropTypes.oneOf(["info", "success", "warning", "alert"]),
 };
 Card.defaultProps = {
+  badgeLabel: null,
   body: null,
   children: null,
   className: null,
