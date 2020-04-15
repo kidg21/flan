@@ -297,7 +297,7 @@ InputBlock.defaultProps = {
   options: null,
   selectOptions: null,
   text: null,
-  textInputs: {
+  textInputs: [{
     id: null,
     placeholder: null,
     type: null,
@@ -305,7 +305,7 @@ InputBlock.defaultProps = {
     title: null,
     value: null,
     readonly: false,
-  },
+  }],
   warning: false,
 };
 

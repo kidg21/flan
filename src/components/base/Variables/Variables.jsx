@@ -187,7 +187,7 @@ export const DMPTheme = {
     neutral60: colors.grey30,
     neutral80: colors.grey40,
     neutral100: colors.grey50,
-    selectedLight: colors.blue80,
+    selectedLight: colors.blue40,
     selected: colors.blue80,
     success20: colors.green20,
     success40: colors.green40,
