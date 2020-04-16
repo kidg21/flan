@@ -23,7 +23,6 @@ color: ${(props) => {
 
 const Input = styled.input`
   color: inherit;
-  font-weight: bold;
   border: 1px solid;
   font-family: ${(props) => { return props.theme.typography.primary; }};
   border-color: ${(props) => {
