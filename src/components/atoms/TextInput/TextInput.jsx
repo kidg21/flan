@@ -53,7 +53,7 @@ const Input = styled.input`
     /* TODO: placeholder color is being overridden by an !important tag.  Need to find. */
     color: ${(props) => {
     return (
-      props.theme.text[props.placeholderColor] || props.theme.text.warning
+      props.theme.text[props.placeholderColor] || props.theme.text.secondary
     );
   }};
   }
