@@ -86,7 +86,7 @@ function Avatar({
 
   let media = null;
   try {
-    if (icon && icon.search(/[/\\]/) >= 0) {
+    if (icon && icon.search(/[/\\.]/) >= 0) {
       media = new URL(icon, window.location.origin);
     }
   } catch (ex) {
