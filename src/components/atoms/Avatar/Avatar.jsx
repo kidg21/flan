@@ -63,6 +63,14 @@ const sizeHash = {
   },
 };
 
+const variantHash = {
+  success: "success80",
+  warning: "warning80",
+  alert: "alert80",
+  info: "info80",
+  action: "action80",
+};
+
 function Avatar({
   alt, brand, icon, id, label, onClick, size, variant,
 }) {
@@ -73,20 +81,14 @@ function Avatar({
   const avatarSize = selectedSize ? selectedSize.avatar : "2.5rem";
   const fontSize = selectedSize ? selectedSize.font : "1em";
 
-  const variantHash = {
-    success: "success80",
-    warning: "warning80",
-    alert: "alert80",
-    info: "info80",
-    action: "action80",
-  };
-
   let backgroundColor = variant ? (variantHash[variant] || variant.toLowerCase()) : "action60";
   const textColor = "inverse";
 
   let media = null;
   try {
-    media = new URL(icon);
+    if (icon && icon.search(/[/\\]/) >= 0) {
+      media = new URL(icon, window.location.origin);
+    }
   } catch (ex) {
     media = null;
   }
@@ -100,42 +102,21 @@ function Avatar({
         width={avatarSize}
       />
     );
-  } else if (icon) {
+  } else if (icon && typeof icon === "string") {
     iconType = <Icon icon={icon} size="lg" />;
   } else {
-    labelType = <AvatarText weight="semibold" fontSize={fontSize} text={label.substring(0, 2)} />;
+    labelType = <AvatarText weight="semibold" fontSize={fontSize} text={label && label.substring(0, 2)} />;
   }
 
-  if (!variant) {
-    if (brand === "research") {
-      backgroundColor = "research";
-    } if (brand === "bi") {
-      backgroundColor = "bi";
-    } if (brand === "jobs") {
-      backgroundColor = "jobs";
-    } if (brand === "broker") {
-      backgroundColor = "broker";
-    } if (brand === "brand1") {
-      backgroundColor = "brand1";
-    } if (brand === "brand2") {
-      backgroundColor = "brand2";
-    } if (brand === "brand3") {
-      backgroundColor = "brand3";
-    } if (brand === "brand4") {
-      backgroundColor = "brand4";
-    }
+  if (!variant && brand) {
+    backgroundColor = brand;
   }
 
   return (
     <TagContainer
-      alt={alt}
       avatarSize={avatarSize}
       backgroundColor={backgroundColor}
-      brand={brand}
-      icon={icon}
       id={id}
-      label={label}
-      media={media}
       onClick={onClick}
       textColor={textColor}
     >
@@ -146,7 +127,7 @@ function Avatar({
 
 Avatar.propTypes = {
   alt: PropTypes.string,
-  brand: PropTypes.string,
+  brand: PropTypes.oneOf("research", "jobs", "bi", "broker", "brand1", "brand2", "brand3", "brand4"),
   /** Option 1:
    * <br>
    * Enter the name of the icon as the prop value. (ex. icon="circle"
@@ -156,9 +137,9 @@ Avatar.propTypes = {
   icon: PropTypes.string,
   id: PropTypes.string,
   label: PropTypes.string,
-  onClick: PropTypes.node,
+  onClick: PropTypes.func,
   /** Options: 'xs',  'sm', 'lg', 'xl' */
-  size: PropTypes.node,
+  size: PropTypes.string,
   /** Options: 'action',  'info', 'success', 'warning', 'alert' */
   variant: PropTypes.string,
 };
