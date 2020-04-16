@@ -54,7 +54,9 @@ const listPanel = (
    <Grid columns="2">
     <Map/>
     <Grid columns="1">
+      <Card title="Site Data">
     <Legend  data={options} />
+    </Card>
     <Form>
     <TextInput
             label="Dimensions"
