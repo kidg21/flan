@@ -14,6 +14,8 @@ import Command from "atoms/Command";
 import Bar from "layout/Bar";
 import Legend from "blocks/Legend";
 import Grid from "layout/Grid";
+import Form from "layout/Form";
+import TextInput from "atoms/TextInput";
 import Map from "layout/Map";
 import Menu from "blocks/Menu";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
@@ -53,6 +55,31 @@ const listPanel = (
     <Map/>
     <Grid columns="1">
     <Legend  data={options} />
+    <Form>
+    <TextInput
+            label="Dimensions"
+            placeholder="103.3 SF x 149.5 SF"
+          />
+              <TextInput
+            label="Primary Frontage St."
+            placeholder="Madison Avenue"
+          />
+              <TextInput
+            label="Primary Frontage SF"
+            placeholder="103.3"
+          />
+              <TextInput
+            label="Secondary Frontage St."
+            placeholder="East 51st Street"
+          />
+              <TextInput
+            label="Secondary Frontage SF"
+            placeholder="149.5 SF"
+          />
+              <TextInput
+            label="Comments"
+          />
+    </Form>
     </Grid>
     </Grid>
     </Panel>
