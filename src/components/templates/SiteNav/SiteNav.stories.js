@@ -23,7 +23,44 @@ import Card from "elements/Card";
 import Layout from "layout/Layout";
 import Page, { PageSection } from "layout/Page";
 
-
+const siteData = (
+  <Panel
+  header={<Bar padding="2x" left={<Title size="lg" text="Site Verification"/>}/>}
+  footer={<Bar right={<Button label="Confirm"/>}/>}>
+ <Grid columns="2">
+  <Map/>
+  <Grid columns="1">
+    <Card>
+<Form>
+<TextInput
+        label="Dimensions"
+        placeholder="103.3 SF x 149.5 SF"
+      />
+          <TextInput
+        label="Primary Frontage St."
+        placeholder="Madison Avenue"
+      />
+          <TextInput
+        label="Primary Frontage SF"
+        placeholder="103.3"
+      />
+          <TextInput
+        label="Secondary Frontage St."
+        placeholder="East 51st Street"
+      />
+          <TextInput
+        label="Secondary Frontage SF"
+        placeholder="149.5 SF"
+      />
+          <TextInput
+        label="Comments"
+      />
+</Form>
+</Card>
+</Grid>
+    </Grid>
+    </Panel>
+);
 
 const options = [
     { label: "LightBox ID", value: "1212123232" },
@@ -43,9 +80,7 @@ const options = [
     { label: "Opportunity Zone", value: "Yes" },
   ];
 
-const panelHeader = (
-    <Bar padding="2x" left={<Title size="lg" text="Site Verification"/>}/>
-);
+
 
 const listPanel = (
     <Panel
@@ -54,34 +89,9 @@ const listPanel = (
    <Grid columns="2">
     <Map/>
     <Grid columns="1">
-      <Card title="Site Data">
+      <Card title="< Parcel Data">
     <Legend  data={options} />
     </Card>
-    <Form>
-    <TextInput
-            label="Dimensions"
-            placeholder="103.3 SF x 149.5 SF"
-          />
-              <TextInput
-            label="Primary Frontage St."
-            placeholder="Madison Avenue"
-          />
-              <TextInput
-            label="Primary Frontage SF"
-            placeholder="103.3"
-          />
-              <TextInput
-            label="Secondary Frontage St."
-            placeholder="East 51st Street"
-          />
-              <TextInput
-            label="Secondary Frontage SF"
-            placeholder="149.5 SF"
-          />
-              <TextInput
-            label="Comments"
-          />
-    </Form>
     </Grid>
     </Grid>
     </Panel>
@@ -112,7 +122,48 @@ const infoPanel = (
 
 storiesOf("Templates|Site Navigation", module)
   .add(
-    "Default",
+    "Site Overview",
+    () => {
+      return React.createElement(() => {
+
+        return (
+            <Layout
+            header={{
+                id: "Header",
+                content: (
+                  <Bar
+                    contentAlign="center"
+              
+                    left={{
+                      content: (
+                        <Command
+                          label="LightBox"
+                        />
+                      ),
+                    }}
+                    right={{
+                      content: (
+                        <IconBlock>
+                            <Icon icon="calendar"/>
+                            <Icon icon="notification"/>
+                            <Avatar label="LG"/>
+                        </IconBlock>
+                      ),
+                      width:"10%",
+                    }}
+                  />
+                ),
+              }}
+            left={{ id: "Left", content: infoPanel }}
+            main={{ id: "Main", content: siteData }}
+          />
+
+        );
+      });
+    },
+  )
+  .add(
+    "Parcel Summary",
     () => {
       return React.createElement(() => {
 
