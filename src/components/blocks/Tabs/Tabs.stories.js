@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import { Padding } from "helpers/Display";
-import Tabs, { TabsItem } from "blocks/Tabs";
+import Tabs, { TabItem } from "blocks/Tabs";
 
 const tabNames = [
   {
@@ -33,9 +33,9 @@ storiesOf("Blocks|Tabs", module)
     () => {
       return (
         <Tabs>
-          <TabsItem label="Tab" isSelected />
-          <TabsItem label="Tab" />
-          <TabsItem label="Tab" />
+          <TabItem label="Tab" isSelected />
+          <TabItem label="Tab" />
+          <TabItem label="Tab" />
         </Tabs>
       );
     },
@@ -49,7 +49,7 @@ storiesOf("Blocks|Tabs", module)
       <Tabs
         disabled={boolean("disable", false, "Tabs")}
       >
-        <TabsItem
+        <TabItem
           icon={select(
             "icon 1",
             {
@@ -69,7 +69,7 @@ storiesOf("Blocks|Tabs", module)
             alert("Tab 1 clicked!");
           }}
         />
-        <TabsItem
+        <TabItem
           icon={select(
             "icon 2",
             {
@@ -89,7 +89,7 @@ storiesOf("Blocks|Tabs", module)
             alert("Tab 2 clicked!");
           }}
         />
-        <TabsItem
+        <TabItem
           icon={select(
             "icon 3",
             {
@@ -109,7 +109,7 @@ storiesOf("Blocks|Tabs", module)
             alert("Tab 3 clicked!");
           }}
         />
-        <TabsItem
+        <TabItem
           icon={select(
             "icon 4",
             {
@@ -129,7 +129,7 @@ storiesOf("Blocks|Tabs", module)
             alert("Tab 4 clicked!");
           }}
         />
-        <TabsItem
+        <TabItem
           icon={select(
             "icon 5",
             {
@@ -158,45 +158,45 @@ storiesOf("Blocks|Tabs", module)
   .add("Single-Row (default)", () => {
     return (
       <Tabs>
-        <TabsItem label="Tab" />
-        <TabsItem label="Tab" />
-        <TabsItem label="Tab" />
+        <TabItem label="Tab" />
+        <TabItem label="Tab" />
+        <TabItem label="Tab" />
       </Tabs>
     );
   })
   .add("Vertical Column", () => {
     return (
       <Tabs isVertical>
-        <TabsItem label="Tab" />
-        <TabsItem label="Tab" isSelected />
-        <TabsItem label="Tab" />
+        <TabItem label="Tab" />
+        <TabItem label="Tab" isSelected />
+        <TabItem label="Tab" />
       </Tabs>
     );
   })
   .add("Icon Tabs", () => {
     return (
       <Tabs>
-        <TabsItem label="Tab" icon="user" />
-        <TabsItem label="Tab" icon="user" />
-        <TabsItem label="Tab" icon="user" />
+        <TabItem label="Tab" icon="user" />
+        <TabItem label="Tab" icon="user" />
+        <TabItem label="Tab" icon="user" />
       </Tabs>
     );
   })
   .add("Icon Only Tabs", () => {
     return (
       <Tabs>
-        <TabsItem icon="user" />
-        <TabsItem icon="settings" />
-        <TabsItem icon="report" />
+        <TabItem icon="user" />
+        <TabItem icon="settings" />
+        <TabItem icon="report" />
       </Tabs>
     );
   })
   .add("Count Tabs", () => {
     return (
       <Tabs>
-        <TabsItem label="Tab" count="1" />
-        <TabsItem label="Tab" count="87" />
-        <TabsItem label="Tab" count="2" />
+        <TabItem label="Tab" count="1" />
+        <TabItem label="Tab" count="87" />
+        <TabItem label="Tab" count="2" />
       </Tabs>
     );
   })
@@ -208,12 +208,12 @@ storiesOf("Blocks|Tabs", module)
       );
     },
   )
-  .add("Disabled (TabsItem Group)", () => {
+  .add("Disabled (TabItem Group)", () => {
     return (
       <Tabs disabled>
-        <TabsItem label="Tab" />
-        <TabsItem label="Tab" />
-        <TabsItem label="Tab" />
+        <TabItem label="Tab" />
+        <TabItem label="Tab" />
+        <TabItem label="Tab" />
       </Tabs>
     );
   })
@@ -222,9 +222,9 @@ storiesOf("Blocks|Tabs", module)
     () => {
       return (
         <Tabs>
-          <TabsItem label="Tab" />
-          <TabsItem label="Tab" disabled />
-          <TabsItem label="Tab" />
+          <TabItem label="Tab" />
+          <TabItem label="Tab" disabled />
+          <TabItem label="Tab" />
         </Tabs>
       );
     },
