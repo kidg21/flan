@@ -8,8 +8,10 @@ import Card from "elements/Card";
 import List, { ListItem } from "blocks/List";
 
 const MenuContainer = styled.a`
+  /* display: flex; */
   cursor: pointer;
-  line-height: 1.5;
+  padding: 0.5em;
+  margin: -0.5em;
   &:hover {
     filter: none;
   }
@@ -24,12 +26,6 @@ const ListWrapper = styled(List)`
   overflow-y: auto;
   border-radius: ${(props) => {
     return props.theme.borders.radiusMin;
-  }};
-  padding: ${(props) => {
-    return props.cardPadding || "";
-  }};
-    filter: ${(props) => {
-    return props.theme.shadows.shadow1;
   }};
 `;
 
@@ -56,7 +52,7 @@ const ItemWrapper = styled.li`
 const MenuPopper = styled.div`
   position: fixed;
   z-index: 500;
-  min-width: 12em;
+  width: 10rem;
   top: ${(props) => {
     return props.top || "";
   }};
@@ -111,7 +107,7 @@ function MenuComponent({
       transform={transform}
     >
       <Card shadow="2x">
-        <ListWrapper id={`listwrapper-${id}`} interactive>
+        <ListWrapper id={`listwrapper-${id}`} isInteractive>
           {data.map((item) => {
             // nested submenu
             if (item.commands) {
@@ -247,7 +243,7 @@ function Menu({
     <React.Fragment>
       {visibility ? <MenuBG onClick={toggleVisibility} /> : null}
       <MenuContainer onClick={toggleVisibility}>
-        <Icon icon={icon} size="lg" />
+        <Icon icon={icon} />
         {visibility ? (
           <MenuComponent
             data={data}
