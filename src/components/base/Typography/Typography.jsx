@@ -37,11 +37,11 @@ const LinkText = styled.a`
   font-size: ${(props) => { return props.fontSize; }};
   font-weight: ${(props) => { return props.fontWeight; }};
   font-family: ${(props) => { return props.theme.typography.primary; }};
-  text-decoration: none;
-  padding: .5em;
+  text-decoration: underline;
+  margin: -.25em;
+  padding: .25em;
   letter-spacing: ${(props) => { return props.letterSpacing; }};
   color: ${(props) => { return props.theme.text.link; }};
-  margin: -.5em;
   cursor: pointer;
 
   &:hover,
