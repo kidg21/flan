@@ -32,9 +32,6 @@ const Media = styled.section`
     border-radius: ${(props) => {
     return props.isRound ? "100%" : "3px";
   }};
-  filter: ${(props) => {
-    return props.border ? props.theme.shadows.shadow1 : "";
-  }};
   }
 `;
 

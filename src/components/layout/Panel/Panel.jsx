@@ -79,9 +79,6 @@ const PanelSection = styled(PanelBody)`
   padding: 0;
   overflow: hidden;
   z-index: 1;
-  box-shadow: ${(props) => {
-    return props.theme.shadows.shadow5;
-  }};
   &:first-of-type {
     border-bottom: 1px solid ${(props) => {
     return props.theme.palette.neutral40;
