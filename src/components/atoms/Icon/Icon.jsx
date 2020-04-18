@@ -10,6 +10,7 @@ import Badge from "atoms/Badge";
 
 
 const LinkedIcon = styled.a`
+  color: ${(props) => { return props.theme.text.link; }};
   cursor: ${(props) => {
     if (props.disabled) {
       return "not-allowed";
