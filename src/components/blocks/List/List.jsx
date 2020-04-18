@@ -9,12 +9,20 @@ import Avatar from "atoms/Avatar";
 import Icon from "atoms/Icon";
 import Checkbox from "atoms/Checkbox";
 import Switch from "atoms/Switch";
-import Text, { Title } from "base/Typography";
+import Text, { Title, Label } from "base/Typography";
 import { InteractiveContext, DisabledContext } from "States";
+
+
+const ListTitle = styled(Label)`
+  color: ${(props) => {
+    return props.theme.text.secondary;
+  }};
+  text-transform: uppercase;
+`;
 
 const ListWrapper = styled.ul`
   display: flex;
-  flex: auto;
+  /* flex: auto; */
   flex-direction: column;
   list-style: none;
   li:not(:last-child) {
@@ -36,7 +44,7 @@ const ListItemWrapper = styled.li`
   background-color: ${(props) => {
     return props.isSelected ? props.theme.background.selected : props.theme.background.default;
   }};
-  padding: 1em;
+  padding: .75em;
   cursor: ${(props) => {
     return props.isInteractive ? "pointer" : "";
   }};
@@ -62,11 +70,12 @@ const ListItemWrapper = styled.li`
 `;
 
 function List({
-  children, id, isDivided, isInteractive,
+  children, id, isDivided, isInteractive, title,
 }) {
   return (
     <InteractiveContext.Provider value={isInteractive}>
       <ListWrapper isDivided={isDivided} id={id}>
+        <ListTitle text={title} />
         {children}
       </ListWrapper>
     </InteractiveContext.Provider>
@@ -78,12 +87,14 @@ List.propTypes = {
   id: PropTypes.string,
   isDivided: PropTypes.bool,
   isInteractive: PropTypes.bool,
+  title: PropTypes.string,
 };
 List.defaultProps = {
   children: null,
   id: null,
   isDivided: false,
   isInteractive: false,
+  title: null,
 };
 
 function getRightContent(post, disabled, onClick) {
@@ -147,7 +158,7 @@ function ListItem({
 }) {
   const leftContent = getLeftContent(pre, disabled, onClick);
   const centerContent = (
-    <React.Fragment >
+    <React.Fragment>
       <Title text={title} disabled={disabled} />
       {description ? (<Text text={description} disabled={disabled} />
       ) : null}
