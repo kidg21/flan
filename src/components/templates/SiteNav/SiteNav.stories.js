@@ -24,22 +24,21 @@ import Layout from "layout/Layout";
 import Page, { PageSection } from "layout/Page";
 
 const siteData = (
-  <Page
-  columns={2}
-  header={{
-    title: "Site Verification",
-    description: "Confirm this is the correct Site",
-  }}
->
-  <Map/>
-  <Grid columns="1">
+  <Panel >
   <Tabs>
       <TabItem label="Parcels in Site" isSelected/>
       <TabItem label="Measurements"/>
     </Tabs>
-    <PageSection>
   <CardGrid columns="1">
 <Card onClick 
+          commands={
+            object(
+              "commands",
+              [
+                {
+                  label: "View Details",
+                }
+              ])}
 body={
 <Grid columns="1" gap="0">
   <Text text="Lollipop Factory" weight="bold"/>
@@ -48,6 +47,14 @@ body={
 <Text text="Owner Name"/>
   </Grid>}/>
   <Card onClick 
+            commands={
+              object(
+                "commands",
+                [
+                  {
+                    label: "View Details",
+                  }
+                ])}
 body={
 <Grid columns="1" gap="0">
   <Text text="Lollipop Factory" weight="bold"/>
@@ -56,6 +63,14 @@ body={
 <Text text="Owner Name"/>
   </Grid>}/>
   <Card onClick 
+          commands={
+            object(
+              "commands",
+              [
+                {
+                  label: "View Details",
+                }
+              ])}
 body={
 <Grid columns="1" gap="0">
   <Text text="Lollipop Factory" weight="bold"/>
@@ -64,6 +79,14 @@ body={
 <Text text="Owner Name"/>
   </Grid>}/>
   <Card onClick 
+            commands={
+              object(
+                "commands",
+                [
+                  {
+                    label: "View Details",
+                  }
+                ])}
 body={
 <Grid columns="1" gap="0">
   <Text text="Lollipop Factory" weight="bold"/>
@@ -72,9 +95,7 @@ body={
 <Text text="Owner Name"/>
   </Grid>}/>
   </CardGrid>
-  </PageSection>
-  </Grid>
-    </Page>
+    </Panel>
 );
 
 const options = [
@@ -98,22 +119,9 @@ const options = [
 
 
 const listPanel = (
-  <Panel padding="0" header={<MainPanelHeader title="Site Verification"/>}>
-  <Page
-  columns={2}
->
-<Map/> 
-<Grid columns="1">
-  <Tabs>
-      <TabItem label="Parcels in Site" isSelected/>
-      <TabItem label="Measurements"/>
-    </Tabs>
-    <PageSection>
-  <NavigationPanelHeader title="Site A1A"/>
+  <Panel header={
+  <NavigationPanelHeader title="Site A1A"/>}>
     <Legend data={options} />
-    </PageSection>
-  </Grid>
-    </Page>
     </Panel>
 );
 
@@ -174,7 +182,8 @@ storiesOf("Templates|Site Navigation", module)
                 ),
               }}
             left={{ id: "Left", content: infoPanel }}
-            main={{ id: "Main", content: siteData }}
+            main={{ id: "Main", content: (<Panel padding="0" header={<MainPanelHeader title="Site Verification"/>}><Map/></Panel>) }}
+            right={{ id: "Right", content: siteData }}
           />
 
         );
@@ -215,52 +224,11 @@ storiesOf("Templates|Site Navigation", module)
                 ),
               }}
             left={{ id: "Left", content: infoPanel }}
-            main={{ id: "Main", content: listPanel }}
-          />
-
-        );
-      });
-    },
-  )
-  .add(
-    "Only Map",
-    () => {
-      return React.createElement(() => {
-
-        return (
-            <Layout
-            header={{
-                id: "Header",
-                content: (
-                  <Bar
-                    contentAlign="center"
-              
-                    left={{
-                      content: (
-                        <Command
-                          label="LightBox"
-                        />
-                      ),
-                    }}
-                    right={{
-                      content: (
-                        <IconBlock>
-                            <Icon icon="calendar"/>
-                            <Icon icon="notification"/>
-                            <Avatar label="LG"/>
-                        </IconBlock>
-                      ),
-                      width:"10%",
-                    }}
-                  />
-                ),
-              }}
-            left={{ id: "Left", content: infoPanel }}
-            main={{ id: "Main", content: <Map/> }}
+            main={{ id: "Main", content:  (<Panel padding="0" header={<MainPanelHeader title="Site Verification"/>}><Map/></Panel>) }}
+            right={{ id: "Right", content: listPanel }}
           />
 
         );
       });
     },
   );
-

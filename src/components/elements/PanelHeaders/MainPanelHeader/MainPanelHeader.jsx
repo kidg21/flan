@@ -12,6 +12,7 @@ function MainPanelHeader({
   return (
     <React.Fragment id={id} >
       <Bar
+        padding="2x"
         left={<Title text={title} size="lg" weight="bold" />}
         contentAlign="center"
         right={menuData ? <Menu data={menuData} position="bottomLeft" /> : null}

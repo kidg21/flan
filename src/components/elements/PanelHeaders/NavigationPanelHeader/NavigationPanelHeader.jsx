@@ -13,6 +13,7 @@ function NavigationPanelHeader({
   return (
     <React.Fragment id={id}>
       <Bar
+        padding="2x"
         contentAlign="center"
         left={{
           content: <Icon icon="left" onClick={onClick} />,
