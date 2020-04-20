@@ -2,15 +2,16 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
 import Panel from "layout/Panel";
-import Table from "blocks/Table";
 import List, { ListItem } from "blocks/List";
 import Icon from "atoms/Icon";
 import Button from "atoms/Button";
-import Search from "blocks/Search";
 import IconBlock from "blocks/IconBlock";
 import Text, { Title } from "base/Typography";
 import Avatar from "atoms/Avatar";
 import Command from "atoms/Command";
+import Tabs, { TabItem } from "blocks/Tabs";
+import Card, {CardGrid} from "elements/Card";
+import NavigationPanelHeader from "elements/PanelHeaders/NavigationPanelHeader";
 import Bar from "layout/Bar";
 import Legend from "blocks/Legend";
 import Grid from "layout/Grid";
@@ -19,47 +20,61 @@ import TextInput from "atoms/TextInput";
 import Map from "layout/Map";
 import Menu from "blocks/Menu";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
-import Card from "elements/Card";
 import Layout from "layout/Layout";
 import Page, { PageSection } from "layout/Page";
 
 const siteData = (
-  <Panel
-  header={<Bar padding="2x" left={<Title size="lg" text="Site Verification"/>}/>}
-  footer={<Bar right={<Button label="Confirm"/>}/>}>
- <Grid columns="2">
+  <Page
+  columns={2}
+  header={{
+    title: "Site Verification",
+    description: "Confirm this is the correct Site",
+  }}
+>
   <Map/>
   <Grid columns="1">
-    <Card>
-<Form>
-<TextInput
-        label="Dimensions"
-        placeholder="103.3 SF x 149.5 SF"
-      />
-          <TextInput
-        label="Primary Frontage St."
-        placeholder="Madison Avenue"
-      />
-          <TextInput
-        label="Primary Frontage SF"
-        placeholder="103.3"
-      />
-          <TextInput
-        label="Secondary Frontage St."
-        placeholder="East 51st Street"
-      />
-          <TextInput
-        label="Secondary Frontage SF"
-        placeholder="149.5 SF"
-      />
-          <TextInput
-        label="Comments"
-      />
-</Form>
-</Card>
-</Grid>
-    </Grid>
-    </Panel>
+  <Tabs>
+      <TabItem label="Parcels in Site" isSelected/>
+      <TabItem label="Measurements"/>
+    </Tabs>
+    <PageSection>
+  <CardGrid columns="1">
+<Card onClick 
+body={
+<Grid columns="1" gap="0">
+  <Text text="Lollipop Factory" weight="bold"/>
+<Text text="145 Lollipop Way, Lollipop LA 34209"/>
+<Text text="APN # 1239832947"/>
+<Text text="Owner Name"/>
+  </Grid>}/>
+  <Card onClick 
+body={
+<Grid columns="1" gap="0">
+  <Text text="Lollipop Factory" weight="bold"/>
+<Text text="145 Lollipop Way, Lollipop LA 34209"/>
+<Text text="APN # 1239832947"/>
+<Text text="Owner Name"/>
+  </Grid>}/>
+  <Card onClick 
+body={
+<Grid columns="1" gap="0">
+  <Text text="Lollipop Factory" weight="bold"/>
+<Text text="145 Lollipop Way, Lollipop LA 34209"/>
+<Text text="APN # 1239832947"/>
+<Text text="Owner Name"/>
+  </Grid>}/>
+  <Card onClick 
+body={
+<Grid columns="1" gap="0">
+  <Text text="Lollipop Factory" weight="bold"/>
+<Text text="145 Lollipop Way, Lollipop LA 34209"/>
+<Text text="APN # 1239832947"/>
+<Text text="Owner Name"/>
+  </Grid>}/>
+  </CardGrid>
+  </PageSection>
+  </Grid>
+    </Page>
 );
 
 const options = [
@@ -83,23 +98,27 @@ const options = [
 
 
 const listPanel = (
-    <Panel
-    header={<Bar padding="2x" left={<Title size="lg" text="Site Verification"/>}/>}
-    footer={<Bar right={<Button label="Confirm"/>}/>}>
-   <Grid columns="2">
-    <Map/>
-    <Grid columns="1">
-      <Card title="< Parcel Data">
-    <Legend  data={options} />
-    </Card>
-    </Grid>
-    </Grid>
+  <Panel padding="0" header={<MainPanelHeader title="Site Verification"/>}>
+  <Page
+  columns={2}
+>
+<Map/> 
+<Grid columns="1">
+  <Tabs>
+      <TabItem label="Parcels in Site" isSelected/>
+      <TabItem label="Measurements"/>
+    </Tabs>
+    <PageSection>
+  <NavigationPanelHeader title="Site A1A"/>
+    <Legend data={options} />
+    </PageSection>
+  </Grid>
+    </Page>
     </Panel>
-
 );
 
 const infoPanel = (
-<List>
+<List isInteractive>
         <ListItem
          title="< Jobs"
         />
@@ -202,4 +221,46 @@ storiesOf("Templates|Site Navigation", module)
         );
       });
     },
+  )
+  .add(
+    "Only Map",
+    () => {
+      return React.createElement(() => {
+
+        return (
+            <Layout
+            header={{
+                id: "Header",
+                content: (
+                  <Bar
+                    contentAlign="center"
+              
+                    left={{
+                      content: (
+                        <Command
+                          label="LightBox"
+                        />
+                      ),
+                    }}
+                    right={{
+                      content: (
+                        <IconBlock>
+                            <Icon icon="calendar"/>
+                            <Icon icon="notification"/>
+                            <Avatar label="LG"/>
+                        </IconBlock>
+                      ),
+                      width:"10%",
+                    }}
+                  />
+                ),
+              }}
+            left={{ id: "Left", content: infoPanel }}
+            main={{ id: "Main", content: <Map/> }}
+          />
+
+        );
+      });
+    },
   );
+

@@ -116,7 +116,7 @@ function Switch({
     };
   }
   if (isChecked && !error) {
-    fillColor = "selectedLight";
+    fillColor = "selected";
     borderColor = "selected";
   }
   return (
