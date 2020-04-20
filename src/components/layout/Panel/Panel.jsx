@@ -16,6 +16,10 @@ const PanelWrapper = styled.div`
   height: 100%;
   max-height: 100vh;
   overflow: hidden;
+  transform: ${(props) => {
+    return props.isOffCanvas || "";
+  }};
+  transition: all 0.3s ease-in-out;
   -webkit-overflow-scrolling: touch;
   /* Prototype Content - displays when a Panel Section is empty */
   &:empty {
@@ -90,13 +94,33 @@ const PanelSection = styled(PanelBody)`
   }};
   }
 `;
+
 function Panel({
-  children, classname, footer, header, id,
+  children, classname, footer, header, id, offcanvas,
 }) {
+  let isOffCanvas;
+  switch (offcanvas) {
+    case "top":
+      isOffCanvas = "translate3d(0, -100%, 0)";
+      break;
+    case "right":
+      isOffCanvas = "translate3d(100%, 0, 0)";
+      break;
+    case "bottom":
+      isOffCanvas = "translate3d(0, 100%, 0)";
+      break;
+    case "left":
+      isOffCanvas = "translate3d(-100%, 0, 0)";
+      break;
+    default:
+      isOffCanvas = "translate3d(0, 0, 0)";
+      break;
+  }
   return (
     <PanelWrapper
       classname={classname}
       id={id}
+      isOffCanvas={isOffCanvas}
     >
       {header ? <PanelSection id={id ? `${id}_header` : null}>{header}</PanelSection> : null}
       <PanelBody id={id ? `${id}_body` : null}>{children}</PanelBody>
@@ -111,6 +135,7 @@ Panel.propTypes = {
   footer: PropTypes.node,
   header: PropTypes.node,
   id: PropTypes.string,
+  offcanvas: PropTypes.string,
 };
 Panel.defaultProps = {
   children: null,
@@ -118,6 +143,7 @@ Panel.defaultProps = {
   footer: null,
   header: null,
   id: null,
+  offcanvas: null,
 };
 
 export default Panel;
