@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 
 const PanelWrapper = styled.div`
+  position: absolute;
   background: ${(props) => {
     return props.theme.background.default;
   }};
