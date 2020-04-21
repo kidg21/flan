@@ -53,8 +53,6 @@ export { default as Notification } from "./elements/Notification";
 export { default as Picker, ColorSwatch } from "./elements/Picker";
 export { default as ProgressBar, Step } from "./elements/Progress";
 export { default as PropertyPanelHeader } from "./elements/PanelHeaders/PropertyPanelHeader";
-export { default as SummaryPanelTemplate } from "./elements/Surface/SurfaceTemplates";
-export { default as Surface } from "./elements/Surface";
 export { UserRoles, RolePermissions } from "./elements/UserRoles";
 
 // Publicly exported files from 'layout'
