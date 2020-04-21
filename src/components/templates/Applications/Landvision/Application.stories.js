@@ -444,168 +444,151 @@ const dataTable = (
   />
 );
 
-storiesOf("Templates/Applications", module)
+storiesOf("Templates/01_Products", module)
   .add(
     "Lightbox (Standard)",
     () => {
       return React.createElement(() => {
-        // const [leftContent, setLeftContent] = useState(menuOne);
-        // const contentOne = () => { setLeftContent(dataTable); };
-        // const contentTwo = () => { setLeftContent(menuOne); };
-        // const contentThree = () => { setLeftContent(dataTable); };
-        const [showLabels, setLabelState] = useState(false);
-        const toggleLabels = () => { setLabelState(!showLabels); };
-        let labelOne;
-        let labelTwo;
-        let labelThree;
-        if (showLabels === true) {
-          labelOne = "Product";
-          labelTwo = "Application";
-          labelThree = "Module";
-        } else {
-          labelOne = "Level 1";
-          labelTwo = "Level 2";
-          labelThree = "Level 3";
-        }
         const [leftOpen, setLeftOpen] = useState(true);
         const toggleLeft = () => { setLeftOpen(!leftOpen); };
-        const [levelColor, setLevelColor] = useState("info");
-        const [lastLevel, setLastLevel] = useState(null);
-        const [currentLevel, setCurrentLevel] = useState("Level 1");
-        const [nextLevel, setNextLevel] = useState("Level 2");
-        const goNext = () => {
-          if (currentLevel === "Level 1") {
-            setLastLevel("Level 1");
-            setCurrentLevel("Level 2");
-            setNextLevel("Level 3");
-            setLevelColor("success");
-          } else if (currentLevel === "Level 2") {
-            setLastLevel("Level 2");
-            setCurrentLevel("Level 3");
-            setNextLevel("Content");
-            setLevelColor("warning");
-          } else if (currentLevel === "Level 3") {
-            // doSomething
+        const [menu2, setMenu2] = useState("left");
+        const [menu3, setMenu3] = useState("left");
+        const showMenu1 = () => {
+          setMenu2("left");
+          setMenu3("left");
+        };
+        const showMenu2 = () => {
+          if (menu2 === "left") {
+            setMenu2(null);
+          } else if (menu3 === null) {
+            setMenu3("left");
+          } else {
+            setMenu2("left");
           }
         };
-        const goLast = () => {
-          if (currentLevel === "Level 3") {
-            setLastLevel("Level 1");
-            setCurrentLevel("Level 2");
-            setNextLevel("Level 3");
-            setLevelColor("success");
-          } else if (currentLevel === "Level 2") {
-            setLastLevel(null);
-            setCurrentLevel("Level 1");
-            setNextLevel("Level 2");
-            setLevelColor("info");
-          } else if (currentLevel === "Level 1") {
-            setNextLevel("Level 1");
+        const showMenu3 = () => {
+          if (menu3 === "left") {
+            setMenu3(null);
+          } else {
+            setMenu3("left");
           }
         };
+        const [showLabels, setLabelState] = useState(false);
+        const toggleLabels = () => { setLabelState(!showLabels); };
         return (
           <Layout
             header={{
               id: "Header",
               content: (
-                <Bar
-                  contentAlign="center"
-                  padding="2x"
-                  left={{
-                    content: (
-                      <Command
-                        icon="left"
-                        label="Menu"
-                        onClick={toggleLeft}
-                      />
-                    ),
-                  }}
-                  center={{
-                    content: (
-                      <Title text={showLabels ? "THE Appraisal Product" : `Header - ${labelOne}`} />
-                    ),
-                  }}
-                  right={{
-                    content: (
-                      <Checkbox id="labels" label="Labels" align="right" onChange={toggleLabels} />
-                    ),
-                  }}
-                />
+                <Card isInverse>
+                  <Bar
+                    contentAlign="center"
+                    padding="2x"
+                    left={{
+                      content: (
+                        <Command
+                          icon="left"
+                          label="Menu"
+                          onClick={toggleLeft}
+                        />
+                      ),
+                    }}
+                    center={{
+                      content: (
+                        <Title text={showLabels ? "Appraisal Product" : "Header - Level 1"} />
+                      ),
+                    }}
+                    right={{
+                      content: (
+                        <Checkbox id="labels" label="Labels" align="right" onChange={toggleLabels} />
+                      ),
+                    }}
+                  />
+                </Card>
               ),
             }}
             left={{
               id: "Left",
               content: (
-                <Panel
-                  id="Menu"
-                  header={
-                    <Card isInverse>
-                      <Bar
-                        left={{
-                          content: (
-                            <Title text={`Menu - ${currentLevel}`} weight="bold" />
-                          ),
-                          align: "left",
-                        }}
-                        contentAlign="center"
-                        right={{
-                          content: (
-                            <Menu
-                              data={[
-                                { id: "a", label: `${currentLevel} Action` },
-                                { id: "b", label: `${currentLevel} Action` },
-                                { id: "c", label: `${currentLevel} Action` },
-                              ]}
-                              position="bottomLeft"
-                            />
-                          ),
-                          width: "min-content",
-                        }}
-                      />
-                    </Card>}
-                >
-                  <Grid columns="1" gap="lg">
-                    {/* {menuIcons} */}
-                    {lastLevel ? <Command icon="left" label={lastLevel} onClick={goLast} /> : null}
-                    <TextInput type="search" placeholder={`Search - ${currentLevel}`} />
-                    <List isInteractive>
-                      <ListItem title={`Home - ${currentLevel}`} isInteractive />
-                    </List>
-                    <List title="Group 1" isInteractive>
-                      <ListItem title={`${nextLevel}`} onClick={goNext} />
-                      <ListItem title={`${nextLevel}`} onClick={goNext} />
-                      <ListItem title={`${nextLevel}`} onClick={goNext} />
-                    </List>
-                    <List title="Group 2" isInteractive>
-                      <ListItem title={`${nextLevel}`} onClick={goNext} />
-                      <ListItem title={`${nextLevel}`} onClick={goNext} />
-                    </List>
-                    <List isInteractive>
-                      <ListItem title={`${nextLevel}`} onClick={goNext} />
-                      <ListItem title={`${nextLevel}`} onClick={goNext} />
-                    </List>
-                  </Grid>
-                </Panel>
+                <React.Fragment>
+                  <Panel
+                    id="Menu 1"
+                    header={
+                      <Card >
+                        <CardSection variant="info" padding="0">
+                          <Bar
+                            contentAlign="center"
+                            left={{
+                              content: (
+                                <Title text={showLabels ? "Appraisal Menu" : "Menu - Level 1"} weight="bold" />
+                              ),
+                              align: "left",
+                            }}
+                          />
+                        </CardSection>
+                      </Card>}
+                  >
+                    <Grid columns="1" gap="lg">
+                      <List isInteractive>
+                        <ListItem title={showLabels ? "Application 1" : "Item - Level 2"} onClick={showMenu2} />
+                      </List>
+                    </Grid>
+                  </Panel>
+                  <Panel
+                    id="Menu 2"
+                    offcanvas={menu2}
+                    header={
+                      <Card>
+                        <CardSection variant="success" padding="0">
+                          <Bar
+                            contentAlign="center"
+                            left={{
+                              content: (
+                                <Title text={showLabels ? "Application Menu" : "Menu - Level 2"} weight="bold" />
+                              ),
+                              align: "left",
+                            }}
+                          />
+                        </CardSection>
+                      </Card>}
+                  >
+                    <Grid columns="1" gap="lg">
+                      <Command icon="left" label={showLabels ? "Appraisal Menu" : "Menu - Level 1"} onClick={showMenu1} />
+                      <List isInteractive>
+                        <ListItem title={showLabels ? "Module 1" : "Item - Level 3"} onClick={showMenu3} />
+                      </List>
+                    </Grid>
+                  </Panel>
+                  <Panel
+                    id="Menu 3"
+                    offcanvas={menu3}
+                    header={
+                      <Card >
+                        <CardSection variant="warning" padding="0">
+                          <Bar
+                            contentAlign="center"
+                            left={{
+                              content: (
+                                <Title text={showLabels ? "Module Menu" : "Menu - Level 3"} weight="bold" />
+                              ),
+                              align: "left",
+                            }}
+                          />
+                        </CardSection>
+                      </Card>}
+                  >
+                    <Grid columns="1" gap="lg">
+                      <Command icon="left" label={showLabels ? "Appraisal Menu" : "Menu - Level 1"} onClick={showMenu1} />
+                      <Command icon="left" label={showLabels ? "Application Menu" : "Menu - Level 2"} onClick={showMenu2} />
+                      <List isInteractive>
+                        <ListItem title={showLabels ? "Verify Site" : "Action 1"} onClick={doNothing} />
+                      </List>
+                    </Grid>
+                  </Panel>
+                </React.Fragment>
               ),
               visible: leftOpen,
             }}
-            main={{
-              id: "Main",
-              content: (
-                <Card>
-                  <CardSection padding="0" variant={levelColor}>
-                    <Bar
-                      left={
-                        <Title text={`${currentLevel} Home`} weight="bold" />
-                      }
-                      contentAlign="center"
-                    />
-                  </CardSection>
-                </Card>
-              ),
-            }}
-            // right={{ id: "Right", content: "" }}
-            // bottom={{ id: "Bottom", content: "" }}
             footer={{
               id: "Footer",
               content: (
@@ -614,7 +597,7 @@ storiesOf("Templates/Applications", module)
                     contentAlign="center"
                     left={{
                       content: (
-                        <Title text={showLabels ? "Footer for Appraisal stuff..." : `Footer - ${labelOne}`} />
+                        <Title text={showLabels ? "Footer for Appraisal stuff..." : "Footer - Level 1"} />
                       ),
                     }}
                   />
@@ -625,22 +608,8 @@ storiesOf("Templates/Applications", module)
         );
       });
     },
-  )
-  .add(
-    "LandVision",
-    () => {
-      return (
-        <Layout
-          header={{ id: "Header", content: "" }}
-          left={{ id: "Left", content: "" }}
-          main={{ id: "Main", content: "" }}
-          // right={{ id: "Right", content: "" }}
-          // bottom={{ id: "Bottom", content: "" }}
-          footer={{ id: "Footer", content: "" }}
-        />
-      );
-    },
-  )
+  );
+storiesOf("Templates/02_Applications", module)
   .add(
     "Jobs Portal",
     () => {
@@ -721,3 +690,184 @@ storiesOf("Templates/Applications", module)
       });
     },
   );
+// .add(
+//   "Lightbox (Standard)",
+//   () => {
+//     return React.createElement(() => {
+//       // const [leftContent, setLeftContent] = useState(menuOne);
+//       // const contentOne = () => { setLeftContent(dataTable); };
+//       // const contentTwo = () => { setLeftContent(menuOne); };
+//       // const contentThree = () => { setLeftContent(dataTable); };
+//       const [showLabels, setLabelState] = useState(false);
+//       const toggleLabels = () => { setLabelState(!showLabels); };
+//       let labelOne;
+//       let labelTwo;
+//       let labelThree;
+//       if (showLabels === true) {
+//         labelOne = "Product";
+//         labelTwo = "Application";
+//         labelThree = "Module";
+//       } else {
+//         labelOne = "Level 1";
+//         labelTwo = "Level 2";
+//         labelThree = "Level 3";
+//       }
+//       const [leftOpen, setLeftOpen] = useState(true);
+//       const toggleLeft = () => { setLeftOpen(!leftOpen); };
+//       const [levelColor, setLevelColor] = useState("info");
+//       const [lastLevel, setLastLevel] = useState(null);
+//       const [currentLevel, setCurrentLevel] = useState("Level 1");
+//       const [nextLevel, setNextLevel] = useState("Level 2");
+//       const goNext = () => {
+//         if (currentLevel === "Level 1") {
+//           setLastLevel("Level 1");
+//           setCurrentLevel("Level 2");
+//           setNextLevel("Level 3");
+//           setLevelColor("success");
+//         } else if (currentLevel === "Level 2") {
+//           setLastLevel("Level 2");
+//           setCurrentLevel("Level 3");
+//           setNextLevel("Content");
+//           setLevelColor("warning");
+//         } else if (currentLevel === "Level 3") {
+//           // doSomething
+//         }
+//       };
+//       const goLast = () => {
+//         if (currentLevel === "Level 3") {
+//           setLastLevel("Level 1");
+//           setCurrentLevel("Level 2");
+//           setNextLevel("Level 3");
+//           setLevelColor("success");
+//         } else if (currentLevel === "Level 2") {
+//           setLastLevel(null);
+//           setCurrentLevel("Level 1");
+//           setNextLevel("Level 2");
+//           setLevelColor("info");
+//         } else if (currentLevel === "Level 1") {
+//           setNextLevel("Level 1");
+//         }
+//       };
+//       return (
+//         <Layout
+//           header={{
+//             id: "Header",
+//             content: (
+//               <Bar
+//                 contentAlign="center"
+//                 padding="2x"
+//                 left={{
+//                   content: (
+//                     <Command
+//                       icon="left"
+//                       label="Menu"
+//                       onClick={toggleLeft}
+//                     />
+//                   ),
+//                 }}
+//                 center={{
+//                   content: (
+//                     <Title text={showLabels ? "THE Appraisal Product" : `Header - ${labelOne}`} />
+//                   ),
+//                 }}
+//                 right={{
+//                   content: (
+//                     <Checkbox id="labels" label="Labels" align="right" onChange={toggleLabels} />
+//                   ),
+//                 }}
+//               />
+//             ),
+//           }}
+//           left={{
+//             id: "Left",
+//             content: (
+//               <Panel
+//                 id="Menu"
+//                 header={
+//                   <Card isInverse>
+//                     <Bar
+//                       left={{
+//                         content: (
+//                           <Title text={`Menu - ${currentLevel}`} weight="bold" />
+//                         ),
+//                         align: "left",
+//                       }}
+//                       contentAlign="center"
+//                       right={{
+//                         content: (
+//                           <Menu
+//                             data={[
+//                               { id: "a", label: `${currentLevel} Action` },
+//                               { id: "b", label: `${currentLevel} Action` },
+//                               { id: "c", label: `${currentLevel} Action` },
+//                             ]}
+//                             position="bottomLeft"
+//                           />
+//                         ),
+//                         width: "min-content",
+//                       }}
+//                     />
+//                   </Card>}
+//               >
+//                 <Grid columns="1" gap="lg">
+//                   {/* {menuIcons} */}
+//                   {lastLevel ? <Command icon="left" label={lastLevel} onClick={goLast} /> : null}
+//                   <TextInput type="search" placeholder={`Search - ${currentLevel}`} />
+//                   <List isInteractive>
+//                     <ListItem title={`Home - ${currentLevel}`} isInteractive />
+//                   </List>
+//                   <List title="Group 1" isInteractive>
+//                     <ListItem title={`${nextLevel}`} onClick={goNext} />
+//                     <ListItem title={`${nextLevel}`} onClick={goNext} />
+//                     <ListItem title={`${nextLevel}`} onClick={goNext} />
+//                   </List>
+//                   <List title="Group 2" isInteractive>
+//                     <ListItem title={`${nextLevel}`} onClick={goNext} />
+//                     <ListItem title={`${nextLevel}`} onClick={goNext} />
+//                   </List>
+//                   <List isInteractive>
+//                     <ListItem title={`${nextLevel}`} onClick={goNext} />
+//                     <ListItem title={`${nextLevel}`} onClick={goNext} />
+//                   </List>
+//                 </Grid>
+//               </Panel>
+//             ),
+//             visible: leftOpen,
+//           }}
+//           main={{
+//             id: "Main",
+//             content: (
+//               <Card>
+//                 <CardSection padding="0" variant={levelColor}>
+//                   <Bar
+//                     left={
+//                       <Title text={`${currentLevel} Home`} weight="bold" />
+//                     }
+//                     contentAlign="center"
+//                   />
+//                 </CardSection>
+//               </Card>
+//             ),
+//           }}
+//           // right={{ id: "Right", content: "" }}
+//           // bottom={{ id: "Bottom", content: "" }}
+//           footer={{
+//             id: "Footer",
+//             content: (
+//               <Card isInverse>
+//                 <Bar
+//                   contentAlign="center"
+//                   left={{
+//                     content: (
+//                       <Title text={showLabels ? "Footer for Appraisal stuff..." : `Footer - ${labelOne}`} />
+//                     ),
+//                   }}
+//                 />
+//               </Card>
+//             ),
+//           }}
+//         />
+//       );
+//     });
+//   },
+// );

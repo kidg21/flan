@@ -114,7 +114,7 @@ const offCanvas = {
 };
 
 export default {
-  title: "Layout/Panel/Tests",
+  title: "Layout|Panel/Tests",
   component: Panel,
   parameters: {
     docs: { page: null },
