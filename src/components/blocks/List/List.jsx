@@ -149,7 +149,7 @@ function ListItem({
   const centerContent = (
     <React.Fragment >
       <Title text={title} disabled={disabled} />
-      {description ? (<Text text={description} disabled={disabled} />
+      {description ? (<Text size="sm" text={description} disabled={disabled} />
       ) : null}
     </React.Fragment>);
 

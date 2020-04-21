@@ -135,7 +135,7 @@ export const DMPTheme = {
     info: colors.blue100,
     inverse: colors.grey100,
     modal: colors.shade10,
-    selected: colors.blue80,
+    selected: colors.blue40,
     success: colors.green100,
     warning: colors.orange80,
   },
