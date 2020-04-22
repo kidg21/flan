@@ -107,7 +107,7 @@ function Page({
 Page.propTypes = {
   children: PropTypes.node,
   classname: PropTypes.string,
-  columns: PropTypes.string,
+  columns: PropTypes.number,
   header: PropTypes.shape({
     description: PropTypes.string,
     subtitle: PropTypes.string,
