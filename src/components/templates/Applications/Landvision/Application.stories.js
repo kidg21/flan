@@ -1,3 +1,4 @@
+/* eslint-disable complexity */
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
@@ -30,6 +31,34 @@ const LightBoxIcon = "static/media/LightBoxIconLogo.64993202.png";
 
 const map = (
   <Mapbox />
+);
+
+const menuData = [
+  { id: "a", label: "Save" },
+  { id: "b", label: "Filter" },
+  { id: "c", label: "Something" },
+  { id: "d", label: "Filter" },
+  { id: "e", label: "Layer" },
+];
+
+const panelHeader = (
+  <Card shadow="0">
+    <MainPanelHeader title="Menu" menuData={menuData} />
+  </Card>
+);
+
+const listPanel = (
+  <Panel
+    id="List Panel"
+    header={panelHeader}
+  >
+    <List interactive>
+      <ListItem title="Layers" />
+      <ListItem title="Results" />
+      <ListItem title="Form" />
+      <ListItem title="Research" />
+    </List>
+  </Panel>
 );
 
 function doNothing() {
@@ -95,7 +124,7 @@ const mainHeaderThree = (
   <Card>
     <CardSection padding="0" variant="warning">
       <Bar
-        left={<Title text="Module Home" weight="bold" />}
+        left={<Title text="Content Home" weight="bold" />}
         contentAlign="center"
       />
     </CardSection>
@@ -224,13 +253,13 @@ const menuNavTwo = (
     <List isInteractive>
       <ListItem title="App Home" isSelected />
     </List>
-    <List title="Module Group 1" isInteractive>
-      <ListItem title="Module 1" />
-      <ListItem title="Module 2" />
+    <List title="Content Group 1" isInteractive>
+      <ListItem title="Content 1" />
+      <ListItem title="Content 2" />
     </List>
     <List isInteractive>
-      <ListItem title="Module 3" />
-      <ListItem title="Module 4" />
+      <ListItem title="Content 3" />
+      <ListItem title="Content 4" />
     </List>
   </Grid>
 );
@@ -245,9 +274,9 @@ const menuTwo = (
 );
 
 const menuOptionsThree = [
-  { id: "a", label: "Module Action" },
-  { id: "b", label: "Module Action" },
-  { id: "c", label: "Module Action" },
+  { id: "a", label: "Content Action" },
+  { id: "b", label: "Content Action" },
+  { id: "c", label: "Content Action" },
 ];
 
 const menuHeaderThree = (
@@ -281,9 +310,9 @@ const menuNavThree = (
   <Grid columns="1" gap="lg">
     <Command icon="left" label="Apps Menu" />
     {/* {menuIcons} */}
-    <TextInput type="search" placeholder="Module Search" />
+    <TextInput type="search" placeholder="Content Search" />
     <List isInteractive>
-      <ListItem title="Module Home" isSelected />
+      <ListItem title="Content Home" isSelected />
     </List>
     <List title="Workflow Group 1" isInteractive>
       <ListItem title="Workflow 1" />
@@ -451,26 +480,26 @@ storiesOf("Templates/01_Products", module)
       return React.createElement(() => {
         const [leftOpen, setLeftOpen] = useState(true);
         const toggleLeft = () => { setLeftOpen(!leftOpen); };
-        const [menu2, setMenu2] = useState("left");
-        const [menu3, setMenu3] = useState("left");
+        const [menu2, setMenu2] = useState("right");
+        const [menu3, setMenu3] = useState("right");
         const showMenu1 = () => {
-          setMenu2("left");
-          setMenu3("left");
+          setMenu2("right");
+          setMenu3("right");
         };
         const showMenu2 = () => {
-          if (menu2 === "left") {
+          if (menu2 === "right") {
             setMenu2(null);
           } else if (menu3 === null) {
-            setMenu3("left");
+            setMenu3("right");
           } else {
-            setMenu2("left");
+            setMenu2("right");
           }
         };
         const showMenu3 = () => {
-          if (menu3 === "left") {
+          if (menu3 === "right") {
             setMenu3(null);
           } else {
-            setMenu3("left");
+            setMenu3("right");
           }
         };
         const [showLabels, setLabelState] = useState(false);
@@ -480,7 +509,7 @@ storiesOf("Templates/01_Products", module)
             header={{
               id: "Header",
               content: (
-                <Card isInverse>
+                <Card>
                   <Bar
                     contentAlign="center"
                     padding="2x"
@@ -520,17 +549,64 @@ storiesOf("Templates/01_Products", module)
                             contentAlign="center"
                             left={{
                               content: (
-                                <Title text={showLabels ? "Appraisal Menu" : "Menu - Level 1"} weight="bold" />
+                                <Title text={showLabels ? "Product Menu" : "Level 1"} weight="bold" />
                               ),
-                              align: "left",
+                            }}
+                            right={{
+                              content: (
+                                <Menu
+                                  data={[
+                                    { id: "a", label: showLabels ? "Import" : "Menu Action" },
+                                    { id: "c", label: showLabels ? "Export" : "Menu Action" },
+                                    { id: "b", label: showLabels ? "Share" : "Menu Action" },
+                                  ]}
+                                  position="bottomLeft"
+                                />
+                              ),
+                              width: "min-content",
                             }}
                           />
                         </CardSection>
                       </Card>}
                   >
                     <Grid columns="1" gap="lg">
+                      <Command label={showLabels ? "Appraisal Home" : "Level 1 Home"} onClick={showMenu1} />
+                      <TextInput type="search" placeholder={showLabels ? "Search Appraisal" : "Search - Level 1"} />
+                      <List title={showLabels ? "Create" : "Group 1"} isInteractive>
+                        <ListItem
+                          title={showLabels ? "New Job" : "Action - Level 1"}
+                        // post={{ type: "icon", icon: "right" }}
+                        // onClick={showMenu2}
+                        />
+                        <ListItem
+                          title={showLabels ? "Add Task" : "Action - Level 1"}
+                        // post={{ type: "icon", icon: "right" }}
+                        // onClick={showMenu2}
+                        />
+                      </List>
+                      <List title={showLabels ? "Review" : "Group 2"} isInteractive>
+                        <ListItem
+                          title={showLabels ? "Jobs" : "Action - Level 1"}
+                        // post={{ type: "icon", icon: "right" }}
+                        // onClick={showMenu2}
+                        />
+                        <ListItem
+                          title={showLabels ? "RFPs" : "Action - Level 1"}
+                        // post={{ type: "icon", icon: "right" }}
+                        // onClick={showMenu2}
+                        />
+                        <ListItem
+                          title={showLabels ? "Tasks" : "Action - Level 1"}
+                        // post={{ type: "icon", icon: "right" }}
+                        // onClick={showMenu2}
+                        />
+                      </List>
                       <List isInteractive>
-                        <ListItem title={showLabels ? "Application 1" : "Item - Level 2"} onClick={showMenu2} />
+                        <ListItem
+                          title={showLabels ? "LandVision" : "Level 2"}
+                          post={{ type: "icon", icon: "right" }}
+                          onClick={showMenu2}
+                        />
                       </List>
                     </Grid>
                   </Panel>
@@ -544,18 +620,57 @@ storiesOf("Templates/01_Products", module)
                             contentAlign="center"
                             left={{
                               content: (
-                                <Title text={showLabels ? "Application Menu" : "Menu - Level 2"} weight="bold" />
+                                <Title text={showLabels ? "Application Menu" : "Level 2"} weight="bold" />
                               ),
-                              align: "left",
+                            }}
+                            right={{
+                              content: (
+                                <Menu
+                                  data={[
+                                    { id: "a", label: showLabels ? "Preferences" : "Menu Action" },
+                                    { id: "c", label: showLabels ? "Export" : "Menu Action" },
+                                    { id: "b", label: showLabels ? "Share" : "Menu Action" },
+                                  ]}
+                                  position="bottomLeft"
+                                />
+                              ),
+                              width: "min-content",
                             }}
                           />
                         </CardSection>
                       </Card>}
                   >
                     <Grid columns="1" gap="lg">
-                      <Command icon="left" label={showLabels ? "Appraisal Menu" : "Menu - Level 1"} onClick={showMenu1} />
-                      <List isInteractive>
-                        <ListItem title={showLabels ? "Module 1" : "Item - Level 3"} onClick={showMenu3} />
+                      <Command icon="left" label={showLabels ? "Product Menu" : "Level 1"} onClick={showMenu1} />
+                      <TextInput type="search" placeholder={showLabels ? "Search Applications" : "Search - Level 2"} />
+                      <List title={showLabels ? "Job Overview" : "Group 1"} isInteractive>
+                        <ListItem
+                          title={showLabels ? "Job Details" : "Action - Level 2"}
+                        // post={{ type: "icon", icon: "right" }}
+                        // onClick={showMenu3}
+                        />
+                        <ListItem
+                          title={showLabels ? "Shared Documents" : "Action - Level 2"}
+                        // post={{ type: "icon", icon: "right" }}
+                        // onClick={showMenu3}
+                        />
+                      </List>
+                      <List title={showLabels ? "Task List" : "Group 2"} isInteractive>
+                        <ListItem
+                          title={showLabels ? "Verify Site" : "Level 3"}
+                          post={{ type: "icon", icon: "right" }}
+                          onClick={showMenu3}
+                        />
+                        <ListItem
+                          title={showLabels ? "Appraisal Research" : "Level 3"}
+                          post={{ type: "icon", icon: "right" }}
+                          onClick={showMenu3}
+                        />
+                        <ListItem
+                          title={showLabels ? "Review & Send" : "Level 3"}
+                          post={{ type: "icon", icon: "right" }}
+                          onClick={showMenu3}
+                        />
                       </List>
                     </Grid>
                   </Panel>
@@ -569,19 +684,50 @@ storiesOf("Templates/01_Products", module)
                             contentAlign="center"
                             left={{
                               content: (
-                                <Title text={showLabels ? "Module Menu" : "Menu - Level 3"} weight="bold" />
+                                <Title text={showLabels ? "Content Menu" : "Level 3"} weight="bold" />
                               ),
-                              align: "left",
+                            }}
+                            right={{
+                              content: (
+                                <Menu
+                                  data={[
+                                    { id: "a", label: showLabels ? "Print" : "Menu Action" },
+                                    { id: "c", label: showLabels ? "Export" : "Menu Action" },
+                                    { id: "b", label: showLabels ? "Share" : "Menu Action" },
+                                  ]}
+                                  position="bottomLeft"
+                                />
+                              ),
+                              width: "min-content",
                             }}
                           />
                         </CardSection>
                       </Card>}
                   >
                     <Grid columns="1" gap="lg">
-                      <Command icon="left" label={showLabels ? "Appraisal Menu" : "Menu - Level 1"} onClick={showMenu1} />
-                      <Command icon="left" label={showLabels ? "Application Menu" : "Menu - Level 2"} onClick={showMenu2} />
-                      <List isInteractive>
-                        <ListItem title={showLabels ? "Verify Site" : "Action 1"} onClick={doNothing} />
+                      <Command icon="left" label={showLabels ? "Application Menu" : "Level 2"} onClick={showMenu2} />
+                      <TextInput type="search" placeholder={showLabels ? "Search Content" : "Search - Level 3"} />
+                      <List title={showLabels ? "Appraisal Research" : "Group 1"} isInteractive>
+                        <ListItem
+                          title={showLabels ? "Assessment" : "Action - Level 3"}
+                          onClick={doNothing}
+                        />
+                        <ListItem
+                          title={showLabels ? "Zoning" : "Action - Level 3"}
+                          onClick={doNothing}
+                        />
+                        <ListItem
+                          title={showLabels ? "Demographics" : "Action - Level 3"}
+                          onClick={doNothing}
+                        />
+                        <ListItem
+                          title={showLabels ? "Maps" : "Action - Level 3"}
+                          onClick={doNothing}
+                        />
+                        <ListItem
+                          title={showLabels ? "Data Extraction" : "Action - Level 3"}
+                          onClick={doNothing}
+                        />
                       </List>
                     </Grid>
                   </Panel>
@@ -592,7 +738,7 @@ storiesOf("Templates/01_Products", module)
             footer={{
               id: "Footer",
               content: (
-                <Card isInverse>
+                <Card>
                   <Bar
                     contentAlign="center"
                     left={{
@@ -631,8 +777,7 @@ storiesOf("Templates/02_Applications", module)
                   left={{
                     content: (
                       <Avatar
-                        image
-                        src={LightBoxIcon}
+                        icon={LightBoxIcon}
                         alt="logo"
                         onClick={seeLeftRegion}
                       />
@@ -651,7 +796,7 @@ storiesOf("Templates/02_Applications", module)
                       <IconBlock>
                         <Icon
                           icon="list"
-                          onClick={seeRightRegion}
+                          onClick={seeBottomRegion}
                         />
                         <Icon
                           icon="calendar"
@@ -673,7 +818,7 @@ storiesOf("Templates/02_Applications", module)
               ),
             }}
             left={{
-              content: menuOne,
+              content: listPanel,
               visible: leftOpen,
             }}
             main={{ content: map }}
@@ -706,7 +851,7 @@ storiesOf("Templates/02_Applications", module)
 //       if (showLabels === true) {
 //         labelOne = "Product";
 //         labelTwo = "Application";
-//         labelThree = "Module";
+//         labelThree = "Content";
 //       } else {
 //         labelOne = "Level 1";
 //         labelTwo = "Level 2";
