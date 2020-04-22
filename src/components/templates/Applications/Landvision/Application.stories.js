@@ -165,7 +165,7 @@ const menuHeaderOne = (
       }}
       center={{
         content: (
-          <Title text="Level 1" weight="bold" />
+          <Title text="Product" weight="bold" />
         ),
         // align: "left",
       }}
@@ -524,7 +524,7 @@ storiesOf("Templates/01_Products", module)
                     }}
                     center={{
                       content: (
-                        <Title text={showLabels ? "Appraisal Product" : "Header - Level 1"} />
+                        <Title text={showLabels ? "Appraisal Product" : "Header - Product"} />
                       ),
                     }}
                     right={{
@@ -549,7 +549,7 @@ storiesOf("Templates/01_Products", module)
                             contentAlign="center"
                             left={{
                               content: (
-                                <Title text={showLabels ? "Product Menu" : "Level 1"} weight="bold" />
+                                <Title text={showLabels ? "Appraisal" : "Product"} weight="bold" />
                               ),
                             }}
                             right={{
@@ -570,40 +570,40 @@ storiesOf("Templates/01_Products", module)
                       </Card>}
                   >
                     <Grid columns="1" gap="lg">
-                      <Command label={showLabels ? "Appraisal Home" : "Level 1 Home"} onClick={showMenu1} />
-                      <TextInput type="search" placeholder={showLabels ? "Search Appraisal" : "Search - Level 1"} />
+                      <Command label={showLabels ? "Appraisal Home" : "Product Home"} onClick={showMenu1} />
+                      <TextInput type="search" placeholder={showLabels ? "Search Appraisal" : "Search - Product"} />
                       <List title={showLabels ? "Create" : "Group 1"} isInteractive>
                         <ListItem
-                          title={showLabels ? "New Job" : "Action - Level 1"}
+                          title={showLabels ? "New Job" : "Content - Product"}
                         // post={{ type: "icon", icon: "right" }}
                         // onClick={showMenu2}
                         />
                         <ListItem
-                          title={showLabels ? "Add Task" : "Action - Level 1"}
+                          title={showLabels ? "Add Task" : "Content - Product"}
                         // post={{ type: "icon", icon: "right" }}
                         // onClick={showMenu2}
                         />
                       </List>
                       <List title={showLabels ? "Review" : "Group 2"} isInteractive>
                         <ListItem
-                          title={showLabels ? "Jobs" : "Action - Level 1"}
+                          title={showLabels ? "Jobs" : "Content - Product"}
                         // post={{ type: "icon", icon: "right" }}
                         // onClick={showMenu2}
                         />
                         <ListItem
-                          title={showLabels ? "RFPs" : "Action - Level 1"}
+                          title={showLabels ? "RFPs" : "Content - Product"}
                         // post={{ type: "icon", icon: "right" }}
                         // onClick={showMenu2}
                         />
                         <ListItem
-                          title={showLabels ? "Tasks" : "Action - Level 1"}
+                          title={showLabels ? "Tasks" : "Content - Product"}
                         // post={{ type: "icon", icon: "right" }}
                         // onClick={showMenu2}
                         />
                       </List>
                       <List isInteractive>
                         <ListItem
-                          title={showLabels ? "LandVision" : "Level 2"}
+                          title={showLabels ? "Research" : "Application"}
                           post={{ type: "icon", icon: "right" }}
                           onClick={showMenu2}
                         />
@@ -620,7 +620,7 @@ storiesOf("Templates/01_Products", module)
                             contentAlign="center"
                             left={{
                               content: (
-                                <Title text={showLabels ? "Application Menu" : "Level 2"} weight="bold" />
+                                <Title text={showLabels ? "Jobs" : "Application"} weight="bold" />
                               ),
                             }}
                             right={{
@@ -641,33 +641,33 @@ storiesOf("Templates/01_Products", module)
                       </Card>}
                   >
                     <Grid columns="1" gap="lg">
-                      <Command icon="left" label={showLabels ? "Product Menu" : "Level 1"} onClick={showMenu1} />
-                      <TextInput type="search" placeholder={showLabels ? "Search Applications" : "Search - Level 2"} />
+                      <Command icon="left" label={showLabels ? "Appraisal Menu" : "Product"} onClick={showMenu1} />
+                      <TextInput type="search" placeholder={showLabels ? "Search Applications" : "Search - Application"} />
                       <List title={showLabels ? "Job Overview" : "Group 1"} isInteractive>
                         <ListItem
-                          title={showLabels ? "Job Details" : "Action - Level 2"}
+                          title={showLabels ? "Job Details" : "Content - App"}
                         // post={{ type: "icon", icon: "right" }}
                         // onClick={showMenu3}
                         />
                         <ListItem
-                          title={showLabels ? "Shared Documents" : "Action - Level 2"}
+                          title={showLabels ? "Shared Documents" : "Content - App"}
                         // post={{ type: "icon", icon: "right" }}
                         // onClick={showMenu3}
                         />
                       </List>
                       <List title={showLabels ? "Task List" : "Group 2"} isInteractive>
                         <ListItem
-                          title={showLabels ? "Verify Site" : "Level 3"}
+                          title={showLabels ? "Verify Site" : "Module"}
                           post={{ type: "icon", icon: "right" }}
                           onClick={showMenu3}
                         />
                         <ListItem
-                          title={showLabels ? "Appraisal Research" : "Level 3"}
+                          title={showLabels ? "Appraisal Research" : "Module"}
                           post={{ type: "icon", icon: "right" }}
                           onClick={showMenu3}
                         />
                         <ListItem
-                          title={showLabels ? "Review & Send" : "Level 3"}
+                          title={showLabels ? "Review & Send" : "Module"}
                           post={{ type: "icon", icon: "right" }}
                           onClick={showMenu3}
                         />
@@ -684,7 +684,7 @@ storiesOf("Templates/01_Products", module)
                             contentAlign="center"
                             left={{
                               content: (
-                                <Title text={showLabels ? "Content Menu" : "Level 3"} weight="bold" />
+                                <Title text={showLabels ? "Content Menu" : "Module"} weight="bold" />
                               ),
                             }}
                             right={{
@@ -705,27 +705,27 @@ storiesOf("Templates/01_Products", module)
                       </Card>}
                   >
                     <Grid columns="1" gap="lg">
-                      <Command icon="left" label={showLabels ? "Application Menu" : "Level 2"} onClick={showMenu2} />
-                      <TextInput type="search" placeholder={showLabels ? "Search Content" : "Search - Level 3"} />
+                      <Command icon="left" label={showLabels ? "Jobs" : "Application"} onClick={showMenu2} />
+                      <TextInput type="search" placeholder={showLabels ? "Search Content" : "Search - Module"} />
                       <List title={showLabels ? "Appraisal Research" : "Group 1"} isInteractive>
                         <ListItem
-                          title={showLabels ? "Assessment" : "Action - Level 3"}
+                          title={showLabels ? "Assessment" : "Module - Content"}
                           onClick={doNothing}
                         />
                         <ListItem
-                          title={showLabels ? "Zoning" : "Action - Level 3"}
+                          title={showLabels ? "Zoning" : "Module - Content"}
                           onClick={doNothing}
                         />
                         <ListItem
-                          title={showLabels ? "Demographics" : "Action - Level 3"}
+                          title={showLabels ? "Demographics" : "Module - Content"}
                           onClick={doNothing}
                         />
                         <ListItem
-                          title={showLabels ? "Maps" : "Action - Level 3"}
+                          title={showLabels ? "Maps" : "Module - Content"}
                           onClick={doNothing}
                         />
                         <ListItem
-                          title={showLabels ? "Data Extraction" : "Action - Level 3"}
+                          title={showLabels ? "Data Extraction" : "Module - Content"}
                           onClick={doNothing}
                         />
                       </List>
@@ -743,7 +743,7 @@ storiesOf("Templates/01_Products", module)
                     contentAlign="center"
                     left={{
                       content: (
-                        <Title text={showLabels ? "Footer for Appraisal stuff..." : "Footer - Level 1"} />
+                        <Title text={showLabels ? "Footer for Appraisal stuff..." : "Footer - Product"} />
                       ),
                     }}
                   />
@@ -853,44 +853,44 @@ storiesOf("Templates/02_Applications", module)
 //         labelTwo = "Application";
 //         labelThree = "Content";
 //       } else {
-//         labelOne = "Level 1";
-//         labelTwo = "Level 2";
-//         labelThree = "Level 3";
+//         labelOne = "Product";
+//         labelTwo = "Application";
+//         labelThree = "Module";
 //       }
 //       const [leftOpen, setLeftOpen] = useState(true);
 //       const toggleLeft = () => { setLeftOpen(!leftOpen); };
 //       const [levelColor, setLevelColor] = useState("info");
 //       const [lastLevel, setLastLevel] = useState(null);
-//       const [currentLevel, setCurrentLevel] = useState("Level 1");
-//       const [nextLevel, setNextLevel] = useState("Level 2");
+//       const [currentLevel, setCurrentLevel] = useState("Product");
+//       const [nextLevel, setNextLevel] = useState("Application");
 //       const goNext = () => {
-//         if (currentLevel === "Level 1") {
-//           setLastLevel("Level 1");
-//           setCurrentLevel("Level 2");
-//           setNextLevel("Level 3");
+//         if (currentLevel === "Product") {
+//           setLastLevel("Product");
+//           setCurrentLevel("Application");
+//           setNextLevel("Module");
 //           setLevelColor("success");
-//         } else if (currentLevel === "Level 2") {
-//           setLastLevel("Level 2");
-//           setCurrentLevel("Level 3");
+//         } else if (currentLevel === "Application") {
+//           setLastLevel("Application");
+//           setCurrentLevel("Module");
 //           setNextLevel("Content");
 //           setLevelColor("warning");
-//         } else if (currentLevel === "Level 3") {
+//         } else if (currentLevel === "Module") {
 //           // doSomething
 //         }
 //       };
 //       const goLast = () => {
-//         if (currentLevel === "Level 3") {
-//           setLastLevel("Level 1");
-//           setCurrentLevel("Level 2");
-//           setNextLevel("Level 3");
+//         if (currentLevel === "Module") {
+//           setLastLevel("Product");
+//           setCurrentLevel("Application");
+//           setNextLevel("Module");
 //           setLevelColor("success");
-//         } else if (currentLevel === "Level 2") {
+//         } else if (currentLevel === "Application") {
 //           setLastLevel(null);
-//           setCurrentLevel("Level 1");
-//           setNextLevel("Level 2");
+//           setCurrentLevel("Product");
+//           setNextLevel("Application");
 //           setLevelColor("info");
-//         } else if (currentLevel === "Level 1") {
-//           setNextLevel("Level 1");
+//         } else if (currentLevel === "Product") {
+//           setNextLevel("Product");
 //         }
 //       };
 //       return (
