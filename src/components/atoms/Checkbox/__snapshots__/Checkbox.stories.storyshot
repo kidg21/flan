@@ -7,7 +7,7 @@ exports[` 1`] = `
 >
   <input
     checked={true}
-    className="Checkbox__CheckboxInput-sc-1gwp7am-2 cpwcps"
+    className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
     id={null}
     onBlur={null}
     onChange={null}
@@ -38,7 +38,7 @@ exports[` 2`] = `
   >
     <input
       checked={true}
-      className="Checkbox__CheckboxInput-sc-1gwp7am-2 cpwcps"
+      className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
       id={null}
       onBlur={null}
       onChange={null}
@@ -61,7 +61,7 @@ exports[` 2`] = `
   >
     <input
       checked={null}
-      className="Checkbox__CheckboxInput-sc-1gwp7am-2 cpwcps"
+      className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
       id={null}
       onBlur={null}
       onChange={null}
@@ -140,7 +140,7 @@ exports[` 3`] = `
   >
     <input
       checked={null}
-      className="Checkbox__CheckboxInput-sc-1gwp7am-2 cpwcps"
+      className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
       id={null}
       onBlur={null}
       onChange={null}
@@ -163,7 +163,7 @@ exports[` 3`] = `
   >
     <input
       checked={null}
-      className="Checkbox__CheckboxInput-sc-1gwp7am-2 cpwcps"
+      className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
       id={null}
       onBlur={null}
       onChange={null}
@@ -223,7 +223,7 @@ exports[` 4`] = `
           >
             <input
               checked={null}
-              className="Checkbox__CheckboxInput-sc-1gwp7am-2 cpwcps"
+              className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
               id="Checkbox-1"
               onBlur={null}
               onChange={null}
@@ -246,7 +246,7 @@ exports[` 4`] = `
           >
             <input
               checked={null}
-              className="Checkbox__CheckboxInput-sc-1gwp7am-2 cpwcps"
+              className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
               id="Checkbox-2"
               onBlur={null}
               onChange={null}
@@ -269,7 +269,7 @@ exports[` 4`] = `
           >
             <input
               checked={null}
-              className="Checkbox__CheckboxInput-sc-1gwp7am-2 cpwcps"
+              className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
               id="Checkbox-3"
               onBlur={null}
               onChange={null}
@@ -292,7 +292,7 @@ exports[` 4`] = `
           >
             <input
               checked={null}
-              className="Checkbox__CheckboxInput-sc-1gwp7am-2 cpwcps"
+              className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
               id="Checkbox-4"
               onBlur={null}
               onChange={null}

@@ -29,7 +29,7 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
     border-radius: 50%;
     margin-top: -.5em;
     background-color: ${(props) => {
-    return props.error ? props.theme.palette.alert60 : props.theme.palette.selectedLight;
+    return props.error ? props.theme.palette.alert60 : props.theme.palette.selected;
   }};
   transition: 200ms;
     cursor: pointer;
@@ -58,7 +58,7 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
     height: 18px;
     border-radius: 50%;
     color: ${(props) => {
-    return props.theme.palette.selectedLight;
+    return props.theme.palette.selected;
   }};
     cursor: pointer;
   }

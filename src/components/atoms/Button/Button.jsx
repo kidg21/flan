@@ -222,6 +222,7 @@ function Button({
 
   if (hasUnderline) {
     borderWidth = "0 0 2px 0";
+    borderRadius = "0px";
     borderStyle = "solid";
   } else if (isPlain) {
     borderWidth = "0px";

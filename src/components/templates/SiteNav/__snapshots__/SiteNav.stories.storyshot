@@ -1,0 +1,1807 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  className="Flex__FlexWrapper-sc-7b3s7m-0 fwrFdN Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+  height={null}
+  id={null}
+  overflow={null}
+  width={null}
+>
+  <div
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 bVsEVt"
+    height={null}
+    id="Header"
+    overflow={null}
+    width={null}
+  >
+    <div
+      className="Bar__BarLayout-icfo76-2 gpWMWV"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-icfo76-1 fNcQEg"
+      >
+        <a
+          className="Command__CommandContainer-sc-13akgtp-0 dWqRBY"
+          id={null}
+          label="LightBox"
+          onClick={null}
+          title="LightBox"
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+            fontSize="0.876em"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing="0px"
+          >
+            LightBox
+          </label>
+        </a>
+      </div>
+      <div
+        className="Bar__Slot-icfo76-1 ecRRXN"
+      >
+        <div
+          className="IconBlock__Block-nokc92-0 UCGVw"
+          id={null}
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-calendar-alt fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 cJJNyd"
+            color={null}
+            data-icon="calendar-alt"
+            data-prefix="far"
+            focusable="false"
+            fontSize="inherit"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-bell fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 cJJNyd"
+            color={null}
+            data-icon="bell"
+            data-prefix="far"
+            focusable="false"
+            fontSize="inherit"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M439.39 362.29c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71zM67.53 368c21.22-27.97 44.42-74.33 44.53-159.42 0-.2-.06-.38-.06-.58 0-61.86 50.14-112 112-112s112 50.14 112 112c0 .2-.06.38-.06.58.11 85.1 23.31 131.46 44.53 159.42H67.53zM224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <div
+            className="Avatar__TagContainer-sc-1vuf9om-2 dqLiae"
+            id={null}
+            onClick={null}
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 exoZGd Avatar__AvatarText-sc-1vuf9om-0 lbHnkX"
+              fontSize="1em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              LG
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Flex__FlexWrapper-sc-7b3s7m-0 fwrFdN Layout__Body-sc-19tlhp4-3 iPUXIc"
+    height={null}
+    id={null}
+    overflow={null}
+    width={null}
+  >
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 jMmPlu"
+      height={null}
+      id="Left"
+      overflow={null}
+      width="15%"
+    >
+      <ul
+        className="List__ListWrapper-sc-43f2zq-0 iOWfKZ"
+        id={null}
+      >
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 bRGQtj"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                fontSize="1em"
+                fontWeight={400}
+                letterSpacing="0px"
+              >
+                &lt; Jobs
+              </h6>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 bRGQtj"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                fontSize="1em"
+                fontWeight={400}
+                letterSpacing="0px"
+              >
+                Job Details
+              </h6>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 bRGQtj"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                fontSize="1em"
+                fontWeight={400}
+                letterSpacing="0px"
+              >
+                Site Verification
+              </h6>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 bRGQtj"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                fontSize="1em"
+                fontWeight={400}
+                letterSpacing="0px"
+              >
+                Data Checklist
+              </h6>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 bRGQtj"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                fontSize="1em"
+                fontWeight={400}
+                letterSpacing="0px"
+              >
+                Schedule Visit
+              </h6>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 bRGQtj"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                fontSize="1em"
+                fontWeight={400}
+                letterSpacing="0px"
+              >
+                Report
+              </h6>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 bRGQtj"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                fontSize="1em"
+                fontWeight={400}
+                letterSpacing="0px"
+              >
+                ReviewSend
+              </h6>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jPMdeq Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+      height="40%"
+      id={null}
+      overflow={null}
+      width="60%"
+    >
+      <div
+        className="Flex__FlexWrapper-sc-7b3s7m-0 eeLHbF Layout__RegionCenter-sc-19tlhp4-6 kIUOgp"
+        height={null}
+        id="Main"
+        overflow={null}
+        width={null}
+      >
+        <div
+          className="Panel__PanelWrapper-sc-48epke-0 kObpyG"
+          id={null}
+        >
+          <section
+            className="Panel__SectionWrapper-sc-48epke-1 oOUAY Panel__PanelSection-sc-48epke-2 bHxuLl"
+            id={null}
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 gJPHni"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 fNcQEg"
+              >
+                <h5
+                  className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+                  fontSize="1.15em"
+                  fontWeight={600}
+                  letterSpacing="0px"
+                >
+                  Site Verification
+                </h5>
+              </div>
+            </div>
+          </section>
+          <section
+            className="Panel__SectionWrapper-sc-48epke-1 hujqoY"
+            id={null}
+          >
+            <div
+              style={
+                Object {
+                  "height": "100%",
+                  "width": "100%",
+                }
+              }
+            />
+          </section>
+        </div>
+      </div>
+    </div>
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionRight-sc-19tlhp4-8 kuYGzP"
+      height={null}
+      id="Right"
+      overflow={null}
+      width="25%"
+    >
+      <div
+        className="Panel__PanelWrapper-sc-48epke-0 kObpyG"
+        id={null}
+      >
+        <section
+          className="Panel__SectionWrapper-sc-48epke-1 oOUAY"
+          id={null}
+        >
+          <section
+            className="Tabs__TabsWrapper-sc-1aqycph-1 eSSOFa"
+            disabled={false}
+            id={null}
+          >
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 etjrLD Tabs__TabButton-sc-1aqycph-0 jSVuAs"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+                  fontSize="0.876em"
+                  fontWeight={600}
+                  htmlFor={null}
+                  letterSpacing="0px"
+                >
+                  Parcels in Site
+                </label>
+              </section>
+            </button>
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 jkfWWA Tabs__TabButton-sc-1aqycph-0 gzDOzw"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+                  fontSize="0.876em"
+                  fontWeight={600}
+                  htmlFor={null}
+                  letterSpacing="0px"
+                >
+                  Measurements
+                </label>
+              </section>
+            </button>
+          </section>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 gYQKAc Card__CardGridWrapper-sc-1g3s676-6 dhWlYr"
+            id={null}
+            rows={null}
+          >
+            <div
+              className="Card__CardWrapper-sc-1g3s676-5 irhUlt"
+              href={null}
+              id={null}
+              media={null}
+              onClick={true}
+            >
+              <section
+                className="Card__CardSectionWrapper-sc-1g3s676-1 kBKBDh"
+                id={null}
+                onClick={true}
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn"
+                    id={null}
+                    rows={null}
+                  >
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                      fontSize="1em"
+                      fontWeight={600}
+                      id={null}
+                      letterSpacing="0px"
+                    >
+                      Lollipop Factory
+                    </p>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                      fontSize="1em"
+                      fontWeight={400}
+                      id={null}
+                      letterSpacing="0px"
+                    >
+                      145 Lollipop Way, Lollipop LA 34209
+                    </p>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                      fontSize="1em"
+                      fontWeight={400}
+                      id={null}
+                      letterSpacing="0px"
+                    >
+                      APN # 1239832947
+                    </p>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                      fontSize="1em"
+                      fontWeight={400}
+                      id={null}
+                      letterSpacing="0px"
+                    >
+                      Owner Name
+                    </p>
+                  </section>
+                </p>
+              </section>
+              <section
+                className="Card__CardSectionWrapper-sc-1g3s676-1 dXlnlj"
+                id={null}
+                onClick={null}
+              >
+                <div
+                  className="Bar__BarLayout-icfo76-2 blSqfx"
+                  id={null}
+                  onClick={null}
+                >
+                  <div
+                    className="Bar__Slot-icfo76-1 fNcQEg"
+                  >
+                    <a
+                      className="Command__CommandContainer-sc-13akgtp-0 dWqRBY"
+                      id={null}
+                      label="View Details"
+                      onClick={null}
+                      title="View Details"
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+                        fontSize="0.876em"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing="0px"
+                      >
+                        View Details
+                      </label>
+                    </a>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div
+              className="Card__CardWrapper-sc-1g3s676-5 irhUlt"
+              href={null}
+              id={null}
+              media={null}
+              onClick={true}
+            >
+              <section
+                className="Card__CardSectionWrapper-sc-1g3s676-1 kBKBDh"
+                id={null}
+                onClick={true}
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn"
+                    id={null}
+                    rows={null}
+                  >
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                      fontSize="1em"
+                      fontWeight={600}
+                      id={null}
+                      letterSpacing="0px"
+                    >
+                      Lollipop Factory
+                    </p>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                      fontSize="1em"
+                      fontWeight={400}
+                      id={null}
+                      letterSpacing="0px"
+                    >
+                      145 Lollipop Way, Lollipop LA 34209
+                    </p>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                      fontSize="1em"
+                      fontWeight={400}
+                      id={null}
+                      letterSpacing="0px"
+                    >
+                      APN # 1239832947
+                    </p>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                      fontSize="1em"
+                      fontWeight={400}
+                      id={null}
+                      letterSpacing="0px"
+                    >
+                      Owner Name
+                    </p>
+                  </section>
+                </p>
+              </section>
+              <section
+                className="Card__CardSectionWrapper-sc-1g3s676-1 dXlnlj"
+                id={null}
+                onClick={null}
+              >
+                <div
+                  className="Bar__BarLayout-icfo76-2 blSqfx"
+                  id={null}
+                  onClick={null}
+                >
+                  <div
+                    className="Bar__Slot-icfo76-1 fNcQEg"
+                  >
+                    <a
+                      className="Command__CommandContainer-sc-13akgtp-0 dWqRBY"
+                      id={null}
+                      label="View Details"
+                      onClick={null}
+                      title="View Details"
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+                        fontSize="0.876em"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing="0px"
+                      >
+                        View Details
+                      </label>
+                    </a>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div
+              className="Card__CardWrapper-sc-1g3s676-5 irhUlt"
+              href={null}
+              id={null}
+              media={null}
+              onClick={true}
+            >
+              <section
+                className="Card__CardSectionWrapper-sc-1g3s676-1 kBKBDh"
+                id={null}
+                onClick={true}
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn"
+                    id={null}
+                    rows={null}
+                  >
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                      fontSize="1em"
+                      fontWeight={600}
+                      id={null}
+                      letterSpacing="0px"
+                    >
+                      Lollipop Factory
+                    </p>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                      fontSize="1em"
+                      fontWeight={400}
+                      id={null}
+                      letterSpacing="0px"
+                    >
+                      145 Lollipop Way, Lollipop LA 34209
+                    </p>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                      fontSize="1em"
+                      fontWeight={400}
+                      id={null}
+                      letterSpacing="0px"
+                    >
+                      APN # 1239832947
+                    </p>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                      fontSize="1em"
+                      fontWeight={400}
+                      id={null}
+                      letterSpacing="0px"
+                    >
+                      Owner Name
+                    </p>
+                  </section>
+                </p>
+              </section>
+              <section
+                className="Card__CardSectionWrapper-sc-1g3s676-1 dXlnlj"
+                id={null}
+                onClick={null}
+              >
+                <div
+                  className="Bar__BarLayout-icfo76-2 blSqfx"
+                  id={null}
+                  onClick={null}
+                >
+                  <div
+                    className="Bar__Slot-icfo76-1 fNcQEg"
+                  >
+                    <a
+                      className="Command__CommandContainer-sc-13akgtp-0 dWqRBY"
+                      id={null}
+                      label="View Details"
+                      onClick={null}
+                      title="View Details"
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+                        fontSize="0.876em"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing="0px"
+                      >
+                        View Details
+                      </label>
+                    </a>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div
+              className="Card__CardWrapper-sc-1g3s676-5 irhUlt"
+              href={null}
+              id={null}
+              media={null}
+              onClick={true}
+            >
+              <section
+                className="Card__CardSectionWrapper-sc-1g3s676-1 kBKBDh"
+                id={null}
+                onClick={true}
+              >
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                  fontSize="1em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn"
+                    id={null}
+                    rows={null}
+                  >
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                      fontSize="1em"
+                      fontWeight={600}
+                      id={null}
+                      letterSpacing="0px"
+                    >
+                      Lollipop Factory
+                    </p>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                      fontSize="1em"
+                      fontWeight={400}
+                      id={null}
+                      letterSpacing="0px"
+                    >
+                      145 Lollipop Way, Lollipop LA 34209
+                    </p>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                      fontSize="1em"
+                      fontWeight={400}
+                      id={null}
+                      letterSpacing="0px"
+                    >
+                      APN # 1239832947
+                    </p>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                      fontSize="1em"
+                      fontWeight={400}
+                      id={null}
+                      letterSpacing="0px"
+                    >
+                      Owner Name
+                    </p>
+                  </section>
+                </p>
+              </section>
+              <section
+                className="Card__CardSectionWrapper-sc-1g3s676-1 dXlnlj"
+                id={null}
+                onClick={null}
+              >
+                <div
+                  className="Bar__BarLayout-icfo76-2 blSqfx"
+                  id={null}
+                  onClick={null}
+                >
+                  <div
+                    className="Bar__Slot-icfo76-1 fNcQEg"
+                  >
+                    <a
+                      className="Command__CommandContainer-sc-13akgtp-0 dWqRBY"
+                      id={null}
+                      label="View Details"
+                      onClick={null}
+                      title="View Details"
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+                        fontSize="0.876em"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing="0px"
+                      >
+                        View Details
+                      </label>
+                    </a>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </section>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[` 2`] = `
+<div
+  className="Flex__FlexWrapper-sc-7b3s7m-0 fwrFdN Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+  height={null}
+  id={null}
+  overflow={null}
+  width={null}
+>
+  <div
+    className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 bVsEVt"
+    height={null}
+    id="Header"
+    overflow={null}
+    width={null}
+  >
+    <div
+      className="Bar__BarLayout-icfo76-2 gpWMWV"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-icfo76-1 fNcQEg"
+      >
+        <a
+          className="Command__CommandContainer-sc-13akgtp-0 dWqRBY"
+          id={null}
+          label="LightBox"
+          onClick={null}
+          title="LightBox"
+        >
+          <label
+            className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+            fontSize="0.876em"
+            fontWeight={400}
+            htmlFor={null}
+            letterSpacing="0px"
+          >
+            LightBox
+          </label>
+        </a>
+      </div>
+      <div
+        className="Bar__Slot-icfo76-1 ecRRXN"
+      >
+        <div
+          className="IconBlock__Block-nokc92-0 UCGVw"
+          id={null}
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-calendar-alt fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 cJJNyd"
+            color={null}
+            data-icon="calendar-alt"
+            data-prefix="far"
+            focusable="false"
+            fontSize="inherit"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-bell fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 cJJNyd"
+            color={null}
+            data-icon="bell"
+            data-prefix="far"
+            focusable="false"
+            fontSize="inherit"
+            id={null}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M439.39 362.29c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71zM67.53 368c21.22-27.97 44.42-74.33 44.53-159.42 0-.2-.06-.38-.06-.58 0-61.86 50.14-112 112-112s112 50.14 112 112c0 .2-.06.38-.06.58.11 85.1 23.31 131.46 44.53 159.42H67.53zM224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <div
+            className="Avatar__TagContainer-sc-1vuf9om-2 dqLiae"
+            id={null}
+            onClick={null}
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 exoZGd Avatar__AvatarText-sc-1vuf9om-0 lbHnkX"
+              fontSize="1em"
+              fontWeight={400}
+              letterSpacing="0px"
+            >
+              LG
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Flex__FlexWrapper-sc-7b3s7m-0 fwrFdN Layout__Body-sc-19tlhp4-3 iPUXIc"
+    height={null}
+    id={null}
+    overflow={null}
+    width={null}
+  >
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 jMmPlu"
+      height={null}
+      id="Left"
+      overflow={null}
+      width="15%"
+    >
+      <ul
+        className="List__ListWrapper-sc-43f2zq-0 iOWfKZ"
+        id={null}
+      >
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 bRGQtj"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                fontSize="1em"
+                fontWeight={400}
+                letterSpacing="0px"
+              >
+                &lt; Jobs
+              </h6>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 bRGQtj"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                fontSize="1em"
+                fontWeight={400}
+                letterSpacing="0px"
+              >
+                Job Details
+              </h6>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 bRGQtj"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                fontSize="1em"
+                fontWeight={400}
+                letterSpacing="0px"
+              >
+                Site Verification
+              </h6>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 bRGQtj"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                fontSize="1em"
+                fontWeight={400}
+                letterSpacing="0px"
+              >
+                Data Checklist
+              </h6>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 bRGQtj"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                fontSize="1em"
+                fontWeight={400}
+                letterSpacing="0px"
+              >
+                Schedule Visit
+              </h6>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 bRGQtj"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                fontSize="1em"
+                fontWeight={400}
+                letterSpacing="0px"
+              >
+                Report
+              </h6>
+            </div>
+          </div>
+        </li>
+        <li
+          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          disabled={false}
+          href={null}
+          id={null}
+          onClick={null}
+          tabIndex="0"
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 bRGQtj"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 RjiBe"
+            >
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                fontSize="1em"
+                fontWeight={400}
+                letterSpacing="0px"
+              >
+                ReviewSend
+              </h6>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jPMdeq Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+      height="40%"
+      id={null}
+      overflow={null}
+      width="60%"
+    >
+      <div
+        className="Flex__FlexWrapper-sc-7b3s7m-0 eeLHbF Layout__RegionCenter-sc-19tlhp4-6 kIUOgp"
+        height={null}
+        id="Main"
+        overflow={null}
+        width={null}
+      >
+        <div
+          className="Panel__PanelWrapper-sc-48epke-0 kObpyG"
+          id={null}
+        >
+          <section
+            className="Panel__SectionWrapper-sc-48epke-1 oOUAY Panel__PanelSection-sc-48epke-2 bHxuLl"
+            id={null}
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 gJPHni"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 fNcQEg"
+              >
+                <h5
+                  className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+                  fontSize="1.15em"
+                  fontWeight={600}
+                  letterSpacing="0px"
+                >
+                  Site Verification
+                </h5>
+              </div>
+            </div>
+          </section>
+          <section
+            className="Panel__SectionWrapper-sc-48epke-1 hujqoY"
+            id={null}
+          >
+            <div
+              style={
+                Object {
+                  "height": "100%",
+                  "width": "100%",
+                }
+              }
+            />
+          </section>
+        </div>
+      </div>
+    </div>
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionRight-sc-19tlhp4-8 kuYGzP"
+      height={null}
+      id="Right"
+      overflow={null}
+      width="25%"
+    >
+      <div
+        className="Panel__PanelWrapper-sc-48epke-0 kObpyG"
+        id={null}
+      >
+        <section
+          className="Panel__SectionWrapper-sc-48epke-1 oOUAY Panel__PanelSection-sc-48epke-2 bHxuLl"
+          id={null}
+        >
+          <div
+            className="Bar__BarLayout-icfo76-2 gJPHni"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 bOQKbQ"
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-angle-left fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 cJJNyd"
+                color={null}
+                data-icon="angle-left"
+                data-prefix="far"
+                focusable="false"
+                fontSize="inherit"
+                id={null}
+                role="img"
+                style={Object {}}
+                viewBox="0 0 192 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.2 247.5L151 99.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17L69.3 256l118.5 119.7c4.7 4.7 4.7 12.3 0 17L168 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 264.5c-4.7-4.7-4.7-12.3 0-17z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+            <div
+              className="Bar__Slot-icfo76-1 bOWYHS"
+            >
+              <h5
+                className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+                fontSize="1.15em"
+                fontWeight={600}
+                letterSpacing="0px"
+              >
+                Site A1A
+              </h5>
+            </div>
+            <div
+              className="Bar__Slot-icfo76-1 kZQbjh"
+            >
+              <a
+                className="Menu__MenuContainer-sc-17iwn6x-0 lhgeCh"
+                onClick={[Function]}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 bpsbMF"
+                  color={null}
+                  data-icon="ellipsis-v"
+                  data-prefix="far"
+                  focusable="false"
+                  fontSize="1.35em"
+                  id={null}
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 128 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section
+          className="Panel__SectionWrapper-sc-48epke-1 oOUAY"
+          id={null}
+        >
+          <div
+            className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
+            id={null}
+          >
+            <table
+              className="Legend__TableContainer-sc-70hm4b-2 cVdgHu"
+              id={null}
+            >
+              <tr
+                className="Legend__Row-sc-70hm4b-4 kKuGtn"
+              >
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                    fontSize="1em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    LightBox ID
+                  </p>
+                </td>
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                    fontSize="1em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    1212123232
+                  </p>
+                </td>
+              </tr>
+              <tr
+                className="Legend__Row-sc-70hm4b-4 kKuGtn"
+              >
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                    fontSize="1em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    Latitude
+                  </p>
+                </td>
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                    fontSize="1em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    40.34234
+                  </p>
+                </td>
+              </tr>
+              <tr
+                className="Legend__Row-sc-70hm4b-4 kKuGtn"
+              >
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                    fontSize="1em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    Longitude
+                  </p>
+                </td>
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                    fontSize="1em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    -73.432432
+                  </p>
+                </td>
+              </tr>
+              <tr
+                className="Legend__Row-sc-70hm4b-4 kKuGtn"
+              >
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                    fontSize="1em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    Assessor Parcel Reconciliation
+                  </p>
+                </td>
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                    fontSize="1em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    Owner Check
+                  </p>
+                </td>
+              </tr>
+              <tr
+                className="Legend__Row-sc-70hm4b-4 kKuGtn"
+              >
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                    fontSize="1em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    Address
+                  </p>
+                </td>
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                    fontSize="1em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    477 Madison Avenue
+                  </p>
+                </td>
+              </tr>
+              <tr
+                className="Legend__Row-sc-70hm4b-4 kKuGtn"
+              >
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                    fontSize="1em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    City
+                  </p>
+                </td>
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                    fontSize="1em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    New York
+                  </p>
+                </td>
+              </tr>
+              <tr
+                className="Legend__Row-sc-70hm4b-4 kKuGtn"
+              >
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                    fontSize="1em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    State
+                  </p>
+                </td>
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                    fontSize="1em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    New York
+                  </p>
+                </td>
+              </tr>
+              <tr
+                className="Legend__Row-sc-70hm4b-4 kKuGtn"
+              >
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                    fontSize="1em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    Zip
+                  </p>
+                </td>
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                    fontSize="1em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    10222
+                  </p>
+                </td>
+              </tr>
+              <tr
+                className="Legend__Row-sc-70hm4b-4 kKuGtn"
+              >
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                    fontSize="1em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    Census Tract
+                  </p>
+                </td>
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                    fontSize="1em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    10200
+                  </p>
+                </td>
+              </tr>
+              <tr
+                className="Legend__Row-sc-70hm4b-4 kKuGtn"
+              >
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                    fontSize="1em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    Census Block
+                  </p>
+                </td>
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                    fontSize="1em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    N/A
+                  </p>
+                </td>
+              </tr>
+              <tr
+                className="Legend__Row-sc-70hm4b-4 kKuGtn"
+              >
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                    fontSize="1em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    County
+                  </p>
+                </td>
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                    fontSize="1em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    New York
+                  </p>
+                </td>
+              </tr>
+              <tr
+                className="Legend__Row-sc-70hm4b-4 kKuGtn"
+              >
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                    fontSize="1em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    CBSA
+                  </p>
+                </td>
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                    fontSize="1em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    New York-Newark-New Jersey
+                  </p>
+                </td>
+              </tr>
+              <tr
+                className="Legend__Row-sc-70hm4b-4 kKuGtn"
+              >
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                    fontSize="1em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    Market
+                  </p>
+                </td>
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                    fontSize="1em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    New York
+                  </p>
+                </td>
+              </tr>
+              <tr
+                className="Legend__Row-sc-70hm4b-4 kKuGtn"
+              >
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                    fontSize="1em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    Submarket
+                  </p>
+                </td>
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                    fontSize="1em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    Midtown East
+                  </p>
+                </td>
+              </tr>
+              <tr
+                className="Legend__Row-sc-70hm4b-4 kKuGtn"
+              >
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                    fontSize="1em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    Opportunity Zone
+                  </p>
+                </td>
+                <td
+                  className="Legend__Cell-sc-70hm4b-3 NrCgM"
+                  fontSize={null}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
+                    fontSize="1em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    Yes
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+`;
