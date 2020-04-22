@@ -12,7 +12,6 @@ import Switch from "atoms/Switch";
 import Text, { Title, Label } from "base/Typography";
 import { InteractiveContext, DisabledContext } from "States";
 
-
 const ListTitle = styled(Label)`
   color: ${(props) => {
     return props.theme.text.secondary;
@@ -22,7 +21,7 @@ const ListTitle = styled(Label)`
 
 const ListWrapper = styled.ul`
   display: flex;
-  /* flex: auto; */
+  flex: auto;
   flex-direction: column;
   list-style: none;
   li:not(:last-child) {
@@ -37,14 +36,13 @@ const ListWrapper = styled.ul`
 
 const ListItemWrapper = styled.li`
   position: relative;
-  
   color: ${(props) => {
     return props.isSelected ? props.theme.text.inverse : props.theme.text.primary;
   }};
   background-color: ${(props) => {
     return props.isSelected ? props.theme.background.selected : props.theme.background.default;
   }};
-  padding: .75em;
+  padding: .5em;
   cursor: ${(props) => {
     return props.isInteractive ? "pointer" : "";
   }};
@@ -102,12 +100,27 @@ function getRightContent(post, disabled, onClick) {
   if (post && post.type) {
     const postType = post.type.toLowerCase();
     if (postType === "checkbox") {
-      rightContent = <Checkbox id={post.label} label={post.label} align="right" disabled={disabled} checked={post.checked} onChange={post.onClick} />;
+      rightContent = {
+        content: <Checkbox id={post.label} label={post.label} align="right" disabled={disabled} checked={post.checked} onChange={post.onClick} />,
+        width: "max-content",
+        onClick: post.onClick || onClick,
+      };
     } else if (postType === "toggle") {
-      rightContent = <Switch label={post.label} align="right" disabled={disabled} checked={post.checked} onChange={post.onClick} />;
+      rightContent = {
+        content: <Switch label={post.label} align="right" disabled={disabled} checked={post.checked} onChange={post.onClick} />,
+        width: "max-content",
+        onClick: post.onClick || onClick,
+      };
     } else if (postType === "label" && post.label) {
       rightContent = {
         content: <Tag label={post.label} />,
+        width: "max-content",
+        onClick: post.onClick || onClick,
+      };
+    } else if (postType === "icon" && post.icon) {
+      rightContent = {
+        content: <Icon icon={post.icon} onClick={post.onClick} />,
+        width: "max-content",
         onClick: post.onClick || onClick,
       };
     }

@@ -4,7 +4,6 @@ import React from "react";
 import List, { ListItem } from "blocks/List";
 
 storiesOf("Blocks|List", module)
-
   .addDecorator(withKnobs)
   .add(
     "Documentation",
@@ -244,6 +243,32 @@ storiesOf("Blocks|List", module)
           title="List Item"
           description="This is the description"
           post={{ type: "checkbox", label: "Box 4" }}
+        />
+      </List>
+    );
+  })
+  .add("Post-Icon", () => {
+    return (
+      <List isInteractive>
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          post={{ type: "icon", icon: "right" }}
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          post={{ type: "icon", icon: "info" }}
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          post={{ type: "icon", icon: "home", onClick: true }}
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          post={{ type: "icon", icon: "bookmark", onClick: true }}
         />
       </List>
     );
