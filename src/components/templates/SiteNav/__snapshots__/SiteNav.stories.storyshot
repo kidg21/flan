@@ -359,16 +359,7 @@ exports[` 1`] = `
           <section
             className="Panel__SectionWrapper-sc-48epke-1 hujqoY"
             id={null}
-          >
-            <div
-              style={
-                Object {
-                  "height": "100%",
-                  "width": "100%",
-                }
-              }
-            />
-          </section>
+          />
         </div>
       </div>
     </div>
@@ -1205,16 +1196,7 @@ exports[` 2`] = `
           <section
             className="Panel__SectionWrapper-sc-48epke-1 hujqoY"
             id={null}
-          >
-            <div
-              style={
-                Object {
-                  "height": "100%",
-                  "width": "100%",
-                }
-              }
-            />
-          </section>
+          />
         </div>
       </div>
     </div>

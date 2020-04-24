@@ -14,7 +14,6 @@ import NavigationPanelHeader from "elements/PanelHeaders/NavigationPanelHeader";
 import Bar from "layout/Bar";
 import Legend from "blocks/Legend";
 import Grid from "layout/Grid";
-import Map from "layout/Map";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
 import Layout from "layout/Layout";
 
@@ -193,7 +192,7 @@ storiesOf("Templates|Site Navigation", module)
                 ),
               }}
             left={{ id: "Left", content: infoPanel }}
-            main={{ id: "Main", content: (<Panel padding="0" header={<MainPanelHeader title="Site Verification" />}><Map /></Panel>) }}
+            main={{ id: "Main", content: (<Panel padding="0" header={<MainPanelHeader title="Site Verification" />}></Panel>) }}
             right={{ id: "Right", content: siteData }}
           />
 
@@ -234,7 +233,7 @@ storiesOf("Templates|Site Navigation", module)
                 ),
               }}
             left={{ id: "Left", content: infoPanel }}
-            main={{ id: "Main", content: (<Panel padding="0" header={<MainPanelHeader title="Site Verification" />}><Map /></Panel>) }}
+            main={{ id: "Main", content: (<Panel padding="0" header={<MainPanelHeader title="Site Verification" />}></Panel>) }}
             right={{ id: "Right", content: listPanel }}
           />
 
