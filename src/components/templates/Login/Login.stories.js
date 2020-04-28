@@ -33,9 +33,7 @@ storiesOf("Templates|Login", module)
       return React.createElement(() => {
 
         return (
-            <Page
-            columns={2}>
-                <Grid columns={1}>
+            <Page>
                 <Bar
       contentAlign="center"
       padding="2x"
@@ -67,11 +65,7 @@ storiesOf("Templates|Login", module)
                  <Button isSolid label="New User? Go to Register"/>}/>
              </FormSection>
                 </Form>
-                </Grid>
-                <Panel>
-                </Panel>
-
-            </Page>
+                </Page>
                      
         );
       });
@@ -83,9 +77,7 @@ storiesOf("Templates|Login", module)
       return React.createElement(() => {
 
         return (
-            <Page
-            columns={2}>
-                <Grid columns={1}>
+            <Page>
                 <Bar
       contentAlign="center"
       padding="2x"
@@ -116,11 +108,6 @@ storiesOf("Templates|Login", module)
              <Button label="Register"/>
              </FormSection>
                 </Form>
-                </Grid>
-                <Panel>
-<span>two</span>
-                </Panel>
-
             </Page>
                      
         );
@@ -135,9 +122,7 @@ storiesOf("Templates|Login", module)
       return React.createElement(() => {
 
         return (
-            <Page
-            columns={2}>
-                <Grid columns={1}>
+            <Page>
                 <Bar
       contentAlign="center"
       padding="2x"
@@ -164,11 +149,6 @@ storiesOf("Templates|Login", module)
                  <Button isSolid label="New User? Go to Register"/>}/>
              </FormSection>
                 </Form>
-                </Grid>
-                <Panel>
-<span>two</span>
-                </Panel>
-
             </Page>
                      
         );
@@ -181,9 +161,7 @@ storiesOf("Templates|Login", module)
       return React.createElement(() => {
 
         return (
-            <Page
-            columns={2}>
-                <Grid columns={1}>
+            <Page>
                 <Bar
       contentAlign="center"
       padding="2x"
@@ -204,11 +182,6 @@ storiesOf("Templates|Login", module)
                  </FormSection>
 
                 </Form>
-                </Grid>
-                <Panel>
-<span>two</span>
-                </Panel>
-
             </Page>
                      
         );
@@ -221,9 +194,7 @@ storiesOf("Templates|Login", module)
       return React.createElement(() => {
 
         return (
-            <Page
-            columns={2}>
-                <Grid columns={1}>
+            <Page>
                 <Bar
       contentAlign="center"
       padding="2x"
@@ -251,11 +222,6 @@ storiesOf("Templates|Login", module)
                  <Button label="Confirm"/>
              </FormSection>
                 </Form>
-                </Grid>
-                <Panel>
-<span>two</span>
-                </Panel>
-
             </Page>
                      
         );
@@ -268,9 +234,7 @@ storiesOf("Templates|Login", module)
       return React.createElement(() => {
 
         return (
-            <Page
-            columns={2}>
-                <Grid columns={1}>
+            <Page>
                 <Bar
       contentAlign="center"
       padding="2x"
@@ -292,11 +256,6 @@ storiesOf("Templates|Login", module)
                  <Button label="Go to Login"/>
              </FormSection>
                 </Form>
-                </Grid>
-                <Panel>
-<span>two</span>
-                </Panel>
-
             </Page>
                      
         );
