@@ -45,7 +45,15 @@ function Tag({
     badgePadding = "0 0.25em";
   } else if (label) {
     labelType = <Label size="xs" weight="bold" text={label} />;
-    badgeTextColor = hasBackground ? "inverse" : "primary";
+
+    if (hasBackground) {
+      badgeTextColor = "inverse";
+    } else if (variant) {
+      badgeTextColor = variant.toLowerCase() === "info" ? "link" : variant.toLowerCase();
+    } else {
+      badgeTextColor = "primary";
+    }
+
     badgePadding = "0.2em .5em";
   } else {
     badgePadding = "0.35rem";
