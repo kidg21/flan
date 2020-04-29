@@ -32,7 +32,7 @@ const TagContainer = styled.div`
 `;
 
 function Tag({
-  brand, className, icon, id, label, variant,
+  brand, className, hasBackground, icon, id, label, variant,
 }) {
   let badgeColor;
   let badgeTextColor;
@@ -41,54 +41,30 @@ function Tag({
   let iconType;
 
   if (icon) {
-    iconType = <Icon icon={icon} size="xl" variant={variant} />;
+    iconType = <Icon icon={icon} size="xl" variant={hasBackground ? "inverse" : variant} />;
     badgePadding = "0 0.25em";
   } else if (label) {
     labelType = <Label size="xs" weight="bold" text={label} />;
-    badgeTextColor = "inverse";
+
+    if (hasBackground) {
+      badgeTextColor = "inverse";
+    } else if (variant) {
+      badgeTextColor = variant.toLowerCase() === "info" ? "link" : variant.toLowerCase();
+    } else {
+      badgeTextColor = "primary";
+    }
+
     badgePadding = "0.2em .5em";
   } else {
     badgePadding = "0.35rem";
   }
 
-  switch (variant) {
-    case "info":
-      badgeColor = "info80";
-      break;
-    case "success":
-      badgeColor = "success80";
-      break;
-    case "warning":
-      badgeColor = "warning80";
-      break;
-    case "alert":
-      badgeColor = "alert80";
-      break;
-    default:
-      badgeColor = "action80";
-      break;
+  if (hasBackground) {
+    if (brand && !variant) badgeColor = brand.toLowerCase();
+    else badgeColor = `${variant ? variant.toLowerCase() : "action"}80`;
+  } else {
+    badgeColor = "inverse";
   }
-
-  if (!variant) {
-    if (brand === "research") {
-      badgeColor = "research";
-    } if (brand === "bi") {
-      badgeColor = "bi";
-    } if (brand === "jobs") {
-      badgeColor = "jobs";
-    } if (brand === "broker") {
-      badgeColor = "broker";
-    } if (brand === "brand1") {
-      badgeColor = "brand1";
-    } if (brand === "brand2") {
-      badgeColor = "brand2";
-    } if (brand === "brand3") {
-      badgeColor = "brand3";
-    } if (brand === "brand4") {
-      badgeColor = "brand4";
-    }
-  }
-
 
   return (
     <TagContainer
@@ -108,6 +84,7 @@ function Tag({
 Tag.propTypes = {
   brand: PropTypes.string,
   className: PropTypes.string,
+  hasBackground: PropTypes.bool,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   id: PropTypes.string,
   label: PropTypes.string,
@@ -117,6 +94,7 @@ Tag.propTypes = {
 Tag.defaultProps = {
   brand: null,
   className: null,
+  hasBackground: true,
   icon: null,
   id: null,
   label: null,
