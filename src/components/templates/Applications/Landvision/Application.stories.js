@@ -2,6 +2,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
+import { FullScreen } from "helpers/Display";
 import Panel from "layout/Panel";
 import Table from "blocks/Table";
 import List, { ListItem } from "blocks/List";
@@ -503,6 +504,7 @@ storiesOf("Templates/01_Products", module)
     },
   );
 storiesOf("Templates/02_Applications", module)
+  .addDecorator(FullScreen)
   .add(
     "Application (Template)",
     () => {
@@ -525,9 +527,6 @@ storiesOf("Templates/02_Applications", module)
           labelTwo = "Application";
           labelThree = "Module";
         }
-        const [objectsView, setObjectsView] = useState(false);
-        const showHome = () => { setObjectsView(false); };
-        const showObjects = () => { setObjectsView(true); };
         const [leftOpen, setLeftOpen] = useState(true);
         const toggleLeft = () => { setLeftOpen(!leftOpen); };
         const [rightOpen, setRightOpen] = useState(false);
@@ -567,6 +566,33 @@ storiesOf("Templates/02_Applications", module)
             setNextLevel("Product");
           }
         };
+
+        const homeView = (
+          <Panel
+            protoCopy="protoCopy"
+            header={
+              <Card>
+                <CardSection padding="0" variant="info">
+                  <Bar
+                    left={
+                      <Title text="Home" weight="bold" />
+                    }
+                    contentAlign="center"
+                  />
+                </CardSection>
+              </Card>
+            }
+          >
+            <Page
+              header={{
+                title: "Application Landing Page",
+                subtitle: "You've come to the right place to begin working with [insert object types here]",
+                description: "Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.",
+              }}
+            >
+            </Page>
+          </Panel>
+        );
 
         const objectHeaders = [
           { id: "select", label: <Grid columns="auto 1fr"><Checkbox />Objects</Grid> },
@@ -654,6 +680,64 @@ storiesOf("Templates/02_Applications", module)
             {pageContent}
           </Panel>
         );
+
+        const objectsView = (
+          <Panel
+            header={
+              <Card>
+                <CardSection padding="0" variant="info">
+                  <Bar
+                    left={
+                      <Title text="Object Type" weight="bold" />
+                    }
+                    contentAlign="center"
+                  />
+                </CardSection>
+              </Card>
+            }
+          >
+            <Grid columns="1" rows="auto 300px" gap="0">
+              <Card shadow="0">
+                <CardSection padding="0">
+                  <Bar
+                    contentAlign="center"
+                    left={{
+                      content: (
+                        <SelectMenu
+                          options={[
+                            { value: "all", label: "All Filters" },
+                            { value: "a", label: "Option A" },
+                            { value: "b", label: "Option B" },
+                          ]}
+                          selectOptions="all"
+                          isClearable={false}
+                        />
+                      ),
+                      width: "10rem",
+                    }}
+                    right={{
+                      content: (
+                        <Grid columns="4">
+                          <Command label="Action" />
+                          <Command label="Action" />
+                          <Command label="Action" />
+                          <Icon icon="more" onClick={doNothing} />
+                        </Grid>
+                      ),
+                      width: "max-content",
+                      align: "right",
+                    }}
+                  />
+                </CardSection>
+              </Card>
+              {objectTable}
+            </Grid>
+          </Panel>
+        );
+
+        const [mainView, setMainView] = useState(homeView);
+        const showHome = () => { setMainView(homeView); };
+        const showObjects = () => { setMainView(objectsView); };
 
         return (
           <Layout
@@ -752,61 +836,25 @@ storiesOf("Templates/02_Applications", module)
             }}
             main={{
               id: "Main",
-              content: (
-                <Panel
-                  header={
-                    <Card>
-                      <CardSection padding="0" variant="info">
-                        <Bar
-                          left={
-                            <Title text={objectsView ? "Object Type" : "Home"} weight="bold" />
-                          }
-                          contentAlign="center"
-                        />
-                      </CardSection>
-                    </Card>
-                  }
-                >
-                  <Grid columns="1" rows="auto 300px" gap="0">
-                    <Card shadow="0">
-                      <CardSection padding="0">
-                        <Bar
-                          contentAlign="center"
-                          // padding="0"
-                          left={{
-                            content: (
-                              <SelectMenu
-                                // label="Filter 1"
-                                options={[
-                                  { value: "all", label: "All Filters" },
-                                  { value: "a", label: "Option A" },
-                                  { value: "b", label: "Option B" },
-                                ]}
-                                selectOptions="all"
-                                isClearable={false}
-                              />
-                            ),
-                            width: "10rem",
-                          }}
-                          right={{
-                            content: (
-                              <Grid columns="4">
-                                <Command label="Action" />
-                                <Command label="Action" />
-                                <Command label="Action" />
-                                <Icon icon="more" onClick={doNothing} />
-                              </Grid>
-                            ),
-                            width: "max-content",
-                            align: "right",
-                          }}
-                        />
-                      </CardSection>
-                    </Card>
-                    {objectTable}
-                  </Grid>
-                </Panel>
-              ),
+              content: mainView,
+              // content: (
+              //   <Panel
+              //     header={
+              //       <Card>
+              //         <CardSection padding="0" variant="info">
+              //           <Bar
+              //             left={
+              //               <Title text={objectsView ? "Object Type" : "Home"} weight="bold" />
+              //             }
+              //             contentAlign="center"
+              //           />
+              //         </CardSection>
+              //       </Card>
+              //     }
+              //   >
+              //     {mainView}
+              //   </Panel>
+              // ),
             }}
             // right={{ id: "Right", content: "" }}
             right={{
