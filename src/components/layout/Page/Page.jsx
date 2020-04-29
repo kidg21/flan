@@ -6,7 +6,7 @@ import { PlaceholderText } from "helpers/Placeholders.jsx";
 import Grid from "layout/Grid";
 import Text, { Title } from "base/Typography";
 
-const PageWrapper = styled(Grid)`
+const PageWrapper = styled.div`
   color: ${(props) => {
     return props.theme.text.primary;
   }};
@@ -14,7 +14,8 @@ const PageWrapper = styled(Grid)`
     return props.theme.background.default;
   }};
   height: 100%;
-  padding: 1rem 1rem 1.5rem;
+  z-index: 0;
+
   /* Prototype Content - displays when empty */
   &:empty {
     &:before {
@@ -40,9 +41,15 @@ const PageWrapper = styled(Grid)`
 
 const Section = styled(Grid)`
   margin-bottom: 0.25rem;
+  padding: 1rem 1rem .5rem;
   &:last-of-type {
     margin-bottom: 0;
   }
+`;
+
+const Body = styled(Grid)`
+  margin: 0rem;
+  height: 100%;
 `;
 
 function PageSection({
@@ -70,7 +77,7 @@ PageSection.defaultProps = {
 };
 
 function Page({
-  children, classname, header, id,
+  children, classname, header, id, columns,
 }) {
   return (
     <PageWrapper
@@ -91,15 +98,16 @@ function Page({
           ) : null}
         </Section>
       ) : null}
-      <Section columns="1" gap="sm">
+      <Body columns={columns} gap="0">
         {children}
-      </Section>
+      </Body>
     </PageWrapper>
   );
 }
 Page.propTypes = {
   children: PropTypes.node,
   classname: PropTypes.string,
+  columns: PropTypes.number,
   header: PropTypes.shape({
     description: PropTypes.string,
     subtitle: PropTypes.string,
@@ -110,6 +118,7 @@ Page.propTypes = {
 Page.defaultProps = {
   children: null,
   classname: null,
+  columns: 1,
   header: null,
   id: null,
 };

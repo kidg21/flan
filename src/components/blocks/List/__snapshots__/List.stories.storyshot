@@ -208,11 +208,11 @@ exports[` 3`] = `
           List Item (standard)
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 CcLky"
+          fontSize="0.75em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           This is the description
         </p>
@@ -220,7 +220,7 @@ exports[` 3`] = `
     </div>
   </li>
   <li
-    className="List__ListItemWrapper-sc-43f2zq-1 vnEHO"
+    className="List__ListItemWrapper-sc-43f2zq-1 lcydZj"
     disabled={false}
     href={null}
     id={null}
@@ -244,11 +244,11 @@ exports[` 3`] = `
           List Item (selected)
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 CcLky"
+          fontSize="0.75em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           This is the description
         </p>
@@ -280,11 +280,11 @@ exports[` 3`] = `
           List Item (disabled)
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 CcLky"
+          fontSize="0.75em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           This is the description
         </p>
@@ -324,11 +324,11 @@ exports[` 4`] = `
           List Item
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 CcLky"
+          fontSize="0.75em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           This is the description
         </p>
@@ -360,11 +360,11 @@ exports[` 4`] = `
           List Item
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 CcLky"
+          fontSize="0.75em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           This is the description
         </p>
@@ -396,11 +396,11 @@ exports[` 4`] = `
           List Item
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 CcLky"
+          fontSize="0.75em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           This is the description
         </p>
@@ -432,11 +432,11 @@ exports[` 4`] = `
           List Item (interaction disabled)
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 CcLky"
+          fontSize="0.75em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           This is the description
         </p>
@@ -468,11 +468,11 @@ exports[` 4`] = `
           List Item
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 CcLky"
+          fontSize="0.75em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           This is the description
         </p>
@@ -504,11 +504,8 @@ exports[` 5`] = `
         className="Bar__Slot-icfo76-1 boCGaE"
       >
         <div
-          alt={null}
           className="Avatar__TagContainer-sc-1vuf9om-2 dqLiae"
           id={null}
-          label="AB"
-          media={null}
           onClick={null}
         >
           <h6
@@ -533,11 +530,11 @@ exports[` 5`] = `
           List Item
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 CcLky"
+          fontSize="0.75em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           This is the description
         </p>
@@ -561,11 +558,8 @@ exports[` 5`] = `
         className="Bar__Slot-icfo76-1 boCGaE"
       >
         <div
-          alt={null}
           className="Avatar__TagContainer-sc-1vuf9om-2 dqLiae"
           id={null}
-          label="CD"
-          media={null}
           onClick={null}
         >
           <h6
@@ -590,11 +584,11 @@ exports[` 5`] = `
           List Item
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 CcLky"
+          fontSize="0.75em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           This is the description
         </p>
@@ -618,11 +612,8 @@ exports[` 5`] = `
         className="Bar__Slot-icfo76-1 boCGaE"
       >
         <div
-          alt={null}
           className="Avatar__TagContainer-sc-1vuf9om-2 dqLiae"
           id={null}
-          label="EF"
-          media={null}
           onClick={null}
         >
           <h6
@@ -647,11 +638,11 @@ exports[` 5`] = `
           List Item
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 CcLky"
+          fontSize="0.75em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           This is the description
         </p>
@@ -675,11 +666,8 @@ exports[` 5`] = `
         className="Bar__Slot-icfo76-1 boCGaE"
       >
         <div
-          alt={null}
           className="Avatar__TagContainer-sc-1vuf9om-2 dqLiae"
           id={null}
-          label="GH"
-          media={null}
           onClick={null}
         >
           <h6
@@ -704,11 +692,11 @@ exports[` 5`] = `
           List Item
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 CcLky"
+          fontSize="0.75em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           This is the description
         </p>
@@ -748,11 +736,11 @@ exports[` 6`] = `
           List Item
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 CcLky"
+          fontSize="0.75em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           This is the description
         </p>
@@ -817,11 +805,11 @@ exports[` 6`] = `
           List Item
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 CcLky"
+          fontSize="0.75em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           This is the description
         </p>
@@ -886,11 +874,11 @@ exports[` 6`] = `
           List Item
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 CcLky"
+          fontSize="0.75em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           This is the description
         </p>
@@ -946,11 +934,11 @@ exports[` 6`] = `
           List Item
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 CcLky"
+          fontSize="0.75em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           This is the description
         </p>
@@ -1023,11 +1011,11 @@ exports[` 7`] = `
           List Item
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 CcLky"
+          fontSize="0.75em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           This is the description
         </p>
@@ -1078,11 +1066,11 @@ exports[` 7`] = `
           List Item
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 CcLky"
+          fontSize="0.75em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           This is the description
         </p>
@@ -1133,11 +1121,11 @@ exports[` 7`] = `
           List Item
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 CcLky"
+          fontSize="0.75em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           This is the description
         </p>
@@ -1188,11 +1176,11 @@ exports[` 7`] = `
           List Item
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 CcLky"
+          fontSize="0.75em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           This is the description
         </p>
@@ -1251,11 +1239,11 @@ exports[` 8`] = `
           List Item
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 CcLky"
+          fontSize="0.75em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           This is the description
         </p>
@@ -1314,11 +1302,11 @@ exports[` 8`] = `
           List Item
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 CcLky"
+          fontSize="0.75em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           This is the description
         </p>
@@ -1377,11 +1365,11 @@ exports[` 8`] = `
           List Item
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 CcLky"
+          fontSize="0.75em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           This is the description
         </p>
@@ -1440,11 +1428,11 @@ exports[` 8`] = `
           List Item
         </h6>
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 CcLky"
+          fontSize="0.75em"
           fontWeight={400}
           id={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           This is the description
         </p>
@@ -1515,11 +1503,11 @@ exports[` 9`] = `
             List Item
           </h6>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 CcLky"
+            fontSize="0.75em"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             This is the description
           </p>
@@ -1556,11 +1544,11 @@ exports[` 9`] = `
             List Item
           </h6>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 CcLky"
+            fontSize="0.75em"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             This is the description
           </p>
@@ -1597,11 +1585,11 @@ exports[` 9`] = `
             List Item
           </h6>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 CcLky"
+            fontSize="0.75em"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             This is the description
           </p>
@@ -1638,11 +1626,11 @@ exports[` 9`] = `
             List Item
           </h6>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 CcLky"
+            fontSize="0.75em"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             This is the description
           </p>

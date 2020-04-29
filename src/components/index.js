@@ -42,7 +42,7 @@ export { default as MediaBlock } from "./blocks/MediaBlock";
 export { default as Menu } from "./blocks/Menu";
 export { default as Search } from "./blocks/Search";
 export { default as Table } from "./blocks/Table";
-export { default as Tabs, TabsItem } from "./blocks/Tabs";
+export { default as Tabs, TabItem } from "./blocks/Tabs";
 
 // Publicly exported files from 'elements'
 export { default as Card, CardSection, CardGrid } from "./elements/Card";
@@ -53,8 +53,6 @@ export { default as Notification } from "./elements/Notification";
 export { default as Picker, ColorSwatch } from "./elements/Picker";
 export { default as ProgressBar, Step } from "./elements/Progress";
 export { default as PropertyPanelHeader } from "./elements/PanelHeaders/PropertyPanelHeader";
-export { default as SummaryPanelTemplate } from "./elements/Surface/SurfaceTemplates";
-export { default as Surface } from "./elements/Surface";
 export { UserRoles, RolePermissions } from "./elements/UserRoles";
 
 // Publicly exported files from 'layout'

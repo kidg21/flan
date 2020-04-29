@@ -39,10 +39,38 @@ const SectionWrapper = styled.section`
   display: flex;
   flex-direction: column;
   flex: auto;
-  padding: 1rem;
+  padding: ${(props) => {
+    return props.sectionPadding || "1em 1em";
+  }};
   z-index: 0;
   overflow-y: auto;
   max-height: 100vh;
+  ::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0.5px 0 0px ${(props) => {
+    return props.theme.palette.neutral40;
+  }};
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: ${(props) => {
+    return props.theme.palette.action80;
+  }};
+    border-radius: 20px;
+  }
+  ::-webkit-scrollbar-track:horizontal {
+    box-shadow: inset 0.5px 0 0px ${(props) => {
+    return props.theme.palette.neutral40;
+  }};
+}
+  ::-webkit-scrollbar-thumb:horizontal{
+    background-color: ${(props) => {
+    return props.theme.palette.action80;
+  }};
+  border-radius: 20px;
+}
   /* Prototype Content - displays when a Panel Section is empty */
   &:empty {
     &:before {
@@ -56,11 +84,19 @@ const SectionWrapper = styled.section`
 `;
 
 function PanelBody({
-  children, className, id,
+  children, className, id, padding,
 }) {
+  let sectionPadding;
+  const numPadding = padding ? parseInt(padding, 10) : NaN;
+  if (padding && padding.toLowerCase() === "0") {
+    sectionPadding = "0";
+  } else if (!isNaN(numPadding) && numPadding < 5) {
+    sectionPadding = `${0.5 * numPadding}em 1em`;
+  }
   return (
     <SectionWrapper
       className={className}
+      sectionPadding={sectionPadding}
       id={id}
     >
       {children}
@@ -71,11 +107,13 @@ function PanelBody({
 PanelBody.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
+  padding: PropTypes.oneOf(["0", "2x", "3x", "4x"]),
   id: PropTypes.string,
 };
 PanelBody.defaultProps = {
   children: null,
   className: null,
+  padding: null,
   id: null,
 };
 
@@ -97,7 +135,7 @@ const PanelSection = styled(PanelBody)`
 `;
 
 function Panel({
-  children, classname, footer, header, id, offcanvas,
+  children, classname, footer, header, id, offcanvas, padding,
 }) {
   let isOffCanvas;
   switch (offcanvas) {
@@ -124,7 +162,7 @@ function Panel({
       isOffCanvas={isOffCanvas}
     >
       {header ? <PanelSection id={id ? `${id}_header` : null}>{header}</PanelSection> : null}
-      <PanelBody id={id ? `${id}_body` : null}>{children}</PanelBody>
+      <PanelBody padding={padding} id={id ? `${id}_body` : null}>{children}</PanelBody>
       {footer ? <PanelSection id={id ? `${id}_footer` : null}>{footer}</PanelSection> : null}
     </PanelWrapper>
   );
@@ -134,6 +172,7 @@ Panel.propTypes = {
   children: PropTypes.node,
   classname: PropTypes.string,
   footer: PropTypes.node,
+  padding: PropTypes.oneOf(["0", "2x", "3x", "4x"]),
   header: PropTypes.node,
   id: PropTypes.string,
   offcanvas: PropTypes.string,
@@ -142,6 +181,7 @@ Panel.defaultProps = {
   children: null,
   classname: null,
   footer: null,
+  padding: null,
   header: null,
   id: null,
   offcanvas: null,

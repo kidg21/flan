@@ -33,7 +33,7 @@ const TableContainer = styled.table`
 
 const Cell = styled.td`
   padding: ${(props) => {
-    return props.cellPadding || "0.5em";
+    return props.cellPadding || "0.4em";
   }};
   border-bottom: ${(props) => {
     return props.cellBorder || "";
@@ -56,7 +56,7 @@ const Cell = styled.td`
 `;
 
 const Row = styled.tr`
-  margin: 1em;
+  margin: 0.5rem;
   ${Cell}:first-child {
       color: ${(props) => {
     return props.theme.text.secondary;

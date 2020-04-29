@@ -46,7 +46,7 @@ function IconBlock({
 }
 
 IconBlock.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   /** className used for extending styles */
   className: PropTypes.string,
   data: PropTypes.arrayOf(PropTypes.shape(Icon.propTypes)),
@@ -59,6 +59,7 @@ IconBlock.propTypes = {
 
 
 IconBlock.defaultProps = {
+  children: null,
   className: null,
   data: null,
   id: null,

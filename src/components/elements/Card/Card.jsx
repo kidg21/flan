@@ -15,6 +15,7 @@ import Command from "atoms/Command";
 import Image from "atoms/Image";
 import Avatar from "atoms/Avatar";
 import Menu from "blocks/Menu";
+import Badge from "atoms/Badge";
 import Expander from "utils/Expander";
 import { DisableTransitionContext } from "States";
 import mime from "mime";
@@ -203,7 +204,7 @@ function ExpandingSection({
             center={{
               content: (
                 <React.Fragment>
-                  {title ? <Title text={title} /> : null}
+                  {title ? <Title text={title} weight="bold" /> : null}
                   {description ? <Text text={description} /> : null}
                 </React.Fragment>
               ),
@@ -304,6 +305,7 @@ CardSection.defaultProps = {
 };
 
 function Card({
+  badgeLabel,
   body,
   children,
   className,
@@ -366,7 +368,7 @@ function Card({
       <LinkedWrapper >
         <React.Fragment >
           {title ? <Title text={title} weight="bold" /> : null}
-          {description ? (<Text text={description} weight="bold" />
+          {description ? (<Text text={description} />
           ) : null}
         </React.Fragment>
       </LinkedWrapper>
@@ -375,7 +377,7 @@ function Card({
     centerContent = (
       <React.Fragment >
         {title ? <Title text={title} weight="bold" /> : null}
-        {description ? (<Text text={description} weight="bold" />
+        {description ? (<Text text={description} />
         ) : null}
       </React.Fragment>);
   }
@@ -384,6 +386,7 @@ function Card({
   if (title || description) {
     headerSection = (
       <CardSection variant={variant} >
+        {badgeLabel ? <Badge label={badgeLabel} /> : null}
         <Bar
           padding="0"
           contentAlign="center"
@@ -570,6 +573,7 @@ function Card({
 }
 
 Card.propTypes = {
+  badgeLabel: PropTypes.string,
   body: PropTypes.string,
   children: PropTypes.node,
   className: PropTypes.string,
@@ -598,6 +602,7 @@ Card.propTypes = {
   variant: PropTypes.oneOf(["info", "success", "warning", "alert"]),
 };
 Card.defaultProps = {
+  badgeLabel: null,
   body: null,
   children: null,
   className: null,
@@ -610,7 +615,7 @@ Card.defaultProps = {
   label: null,
   mediaDesc: null,
   media: null,
-  more: null,
+  more: "",
   onClick: null,
   padding: null,
   shadow: null,

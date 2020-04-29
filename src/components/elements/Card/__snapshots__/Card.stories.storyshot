@@ -46,11 +46,8 @@ exports[` 1`] = `
             className="Bar__Slot-icfo76-1 boCGaE"
           >
             <div
-              alt={null}
               className="Avatar__TagContainer-sc-1vuf9om-2 dqLiae"
               id={null}
-              label={null}
-              media={null}
               onClick={null}
             >
               <svg
@@ -79,9 +76,9 @@ exports[` 1`] = `
             className="Bar__Slot-icfo76-1 bOWYHS"
           >
             <h6
-              className="Typography__TitleText-sc-19auepv-2 exoZGd"
+              className="Typography__TitleText-sc-19auepv-2 cLteVL"
               fontSize="1em"
-              fontWeight={400}
+              fontWeight={600}
               letterSpacing="0px"
             >
               Card Title
@@ -305,11 +302,8 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 boCGaE"
         >
           <div
-            alt={null}
             className="Avatar__TagContainer-sc-1vuf9om-2 dqLiae"
             id={null}
-            label="GP"
-            media={null}
             onClick={null}
           >
             <h6
@@ -334,9 +328,9 @@ exports[` 3`] = `
             Card Title
           </h6>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
             fontSize="1em"
-            fontWeight={600}
+            fontWeight={400}
             id={null}
             letterSpacing="0px"
           >
@@ -489,9 +483,9 @@ exports[` 4`] = `
               Linkable Card
             </h6>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
@@ -539,9 +533,9 @@ exports[` 5`] = `
             className="Bar__Slot-icfo76-1 RjiBe"
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
@@ -572,9 +566,9 @@ exports[` 5`] = `
             className="Bar__Slot-icfo76-1 RjiBe"
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
@@ -605,9 +599,9 @@ exports[` 5`] = `
             className="Bar__Slot-icfo76-1 RjiBe"
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
               fontSize="1em"
-              fontWeight={600}
+              fontWeight={400}
               id={null}
               letterSpacing="0px"
             >
@@ -672,11 +666,8 @@ exports[` 6`] = `
               className="Bar__Slot-icfo76-1 boCGaE"
             >
               <div
-                alt={null}
                 className="Avatar__TagContainer-sc-1vuf9om-2 dqLiae"
                 id={null}
-                label={null}
-                media={null}
                 onClick={null}
               >
                 <svg
@@ -705,9 +696,9 @@ exports[` 6`] = `
               className="Bar__Slot-icfo76-1 bOWYHS"
             >
               <h6
-                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                className="Typography__TitleText-sc-19auepv-2 cLteVL"
                 fontSize="1em"
-                fontWeight={400}
+                fontWeight={600}
                 letterSpacing="0px"
               >
                 First Card
@@ -875,11 +866,8 @@ exports[` 6`] = `
             className="Bar__Slot-icfo76-1 boCGaE"
           >
             <div
-              alt={null}
               className="Avatar__TagContainer-sc-1vuf9om-2 dqLiae"
               id={null}
-              label="GP"
-              media={null}
               onClick={null}
             >
               <h6
@@ -1027,11 +1015,8 @@ exports[` 6`] = `
               className="Bar__Slot-icfo76-1 boCGaE"
             >
               <div
-                alt={null}
                 className="Avatar__TagContainer-sc-1vuf9om-2 dqLiae"
                 id={null}
-                label={null}
-                media={null}
                 onClick={null}
               >
                 <svg
@@ -1060,9 +1045,9 @@ exports[` 6`] = `
               className="Bar__Slot-icfo76-1 bOWYHS"
             >
               <h6
-                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                className="Typography__TitleText-sc-19auepv-2 cLteVL"
                 fontSize="1em"
-                fontWeight={400}
+                fontWeight={600}
                 letterSpacing="0px"
               >
                 Third Card

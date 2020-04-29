@@ -23,7 +23,6 @@ color: ${(props) => {
 
 const Input = styled.input`
   color: inherit;
-  font-weight: bold;
   border: 1px solid;
   font-family: ${(props) => { return props.theme.typography.primary; }};
   border-color: ${(props) => {
@@ -53,7 +52,7 @@ const Input = styled.input`
     /* TODO: placeholder color is being overridden by an !important tag.  Need to find. */
     color: ${(props) => {
     return (
-      props.theme.text[props.placeholderColor] || props.theme.text.warning
+      props.theme.text[props.placeholderColor] || props.theme.text.secondary
     );
   }};
   }

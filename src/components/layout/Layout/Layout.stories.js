@@ -15,8 +15,8 @@ import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
 import Card from "elements/Card";
 import Layout from "layout/Layout";
 import Page, { PageSection } from "layout/Page";
-
-const LightBoxIcon = "static/media/LightBoxIconLogo.64993202.png";
+import LightBoxIcon from "images/LightBoxIconLogo.png";
+// const LightBoxIcon = "static/media/LightBoxIconLogo.64993202.png";
 
 const map = (
   <Mapbox />
