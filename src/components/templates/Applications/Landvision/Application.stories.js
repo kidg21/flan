@@ -9,7 +9,7 @@ import List, { ListItem } from "blocks/List";
 import Icon from "atoms/Icon";
 import Search from "blocks/Search";
 import IconBlock from "blocks/IconBlock";
-import Text, { Title } from "base/Typography";
+import Text, { Title, Link } from "base/Typography";
 import Avatar from "atoms/Avatar";
 import Command from "atoms/Command";
 import Switch from "atoms/Switch";
@@ -28,6 +28,8 @@ import Menu from "blocks/Menu";
 import Page, { PageSection } from "layout/Page";
 import Tabs from "blocks/Tabs";
 import SelectMenu from "atoms/SelectMenu";
+import Image from "atoms/Image";
+import Legend from "blocks/Legend";
 
 const LightBoxIcon = "static/media/LightBoxIconLogo.64993202.png";
 
@@ -509,67 +511,14 @@ storiesOf("Templates/02_Applications", module)
     "Application (Template)",
     () => {
       return React.createElement(() => {
-        // const [leftContent, setLeftContent] = useState(menuOne);
-        // const contentOne = () => { setLeftContent(dataTable); };
-        // const contentTwo = () => { setLeftContent(menuOne); };
-        // const contentThree = () => { setLeftContent(dataTable); };
-        const [showLabels, setLabelState] = useState(false);
-        const toggleLabels = () => { setLabelState(!showLabels); };
-        let labelOne;
-        let labelTwo;
-        let labelThree;
-        if (showLabels === true) {
-          labelOne = "Product";
-          labelTwo = "Application";
-          labelThree = "Content";
-        } else {
-          labelOne = "Product";
-          labelTwo = "Application";
-          labelThree = "Module";
-        }
         const [leftOpen, setLeftOpen] = useState(true);
         const toggleLeft = () => { setLeftOpen(!leftOpen); };
         const [rightOpen, setRightOpen] = useState(false);
         const openRight = () => { setRightOpen(true); };
         const closeRight = () => { setRightOpen(false); };
-        const [levelColor, setLevelColor] = useState("info");
-        const [lastLevel, setLastLevel] = useState(null);
-        const [currentLevel, setCurrentLevel] = useState("Product");
-        const [nextLevel, setNextLevel] = useState("Application");
-        const goNext = () => {
-          if (currentLevel === "Product") {
-            setLastLevel("Product");
-            setCurrentLevel("Application");
-            setNextLevel("Module");
-            setLevelColor("success");
-          } else if (currentLevel === "Application") {
-            setLastLevel("Application");
-            setCurrentLevel("Module");
-            setNextLevel("Content");
-            setLevelColor("warning");
-          } else if (currentLevel === "Module") {
-            // doSomething
-          }
-        };
-        const goLast = () => {
-          if (currentLevel === "Module") {
-            setLastLevel("Product");
-            setCurrentLevel("Application");
-            setNextLevel("Module");
-            setLevelColor("success");
-          } else if (currentLevel === "Application") {
-            setLastLevel(null);
-            setCurrentLevel("Product");
-            setNextLevel("Application");
-            setLevelColor("info");
-          } else if (currentLevel === "Product") {
-            setNextLevel("Product");
-          }
-        };
 
         const homeView = (
           <Panel
-            protoCopy="protoCopy"
             header={
               <Card>
                 <CardSection padding="0" variant="info">
@@ -585,12 +534,11 @@ storiesOf("Templates/02_Applications", module)
           >
             <Page
               header={{
-                title: "Application Landing Page",
+                title: "Application Home Page",
                 subtitle: "You've come to the right place to begin working with [insert object types here]",
                 description: "Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.",
               }}
-            >
-            </Page>
+            />
           </Panel>
         );
 
@@ -602,9 +550,10 @@ storiesOf("Templates/02_Applications", module)
           { id: "f3", label: "Field Name", sortable: false },
           { id: "f4", label: "Field Name", sortable: true },
           { id: "f5", label: "Field Name", sortable: true },
-          { id: "f6", label: "Field Name", sortable: false },
-          { id: "f7", label: "Field Name", sortable: false },
+          // { id: "f6", label: "Field Name", sortable: false },
+          // { id: "f7", label: "Field Name", sortable: false },
           { id: "actions", label: "Actions" },
+          { id: "blank", label: "", sortable: false },
         ];
 
         const objectData = [
@@ -615,9 +564,10 @@ storiesOf("Templates/02_Applications", module)
             f3: "Value",
             f4: "Value",
             f5: "Value",
-            f6: "Value",
-            f7: "Value",
+            // f6: "Value",
+            // f7: "Value",
             actions: <Grid columns="4"><Icon icon="edit" onClick={doNothing} /><Icon icon="delete" onClick={doNothing} /></Grid>,
+            blank: "",
           },
           {
             select: <Grid columns="auto 1fr"><Checkbox /><Command label="Object ID" onClick={openRight} /></Grid>,
@@ -626,9 +576,10 @@ storiesOf("Templates/02_Applications", module)
             f3: "Value",
             f4: "Value",
             f5: "Value",
-            f6: "Value",
-            f7: "Value",
+            // f6: "Value",
+            // f7: "Value",
             actions: <Grid columns="4"><Icon icon="edit" onClick={doNothing} /><Icon icon="delete" onClick={doNothing} /></Grid>,
+            blank: "",
           },
           {
             select: <Grid columns="auto 1fr"><Checkbox /><Command label="Object ID" onClick={openRight} /></Grid>,
@@ -637,9 +588,10 @@ storiesOf("Templates/02_Applications", module)
             f3: "Value",
             f4: "Value",
             f5: "Value",
-            f6: "Value",
-            f7: "Value",
+            // f6: "Value",
+            // f7: "Value",
             actions: <Grid columns="4"><Icon icon="edit" onClick={doNothing} /><Icon icon="delete" onClick={doNothing} /></Grid>,
+            blank: "",
           },
         ];
 
@@ -650,35 +602,6 @@ storiesOf("Templates/02_Applications", module)
             listId="foo"
             columnWidth={140}
           />
-        );
-
-        const summaryHeader = (
-          <Card isInverse>
-            <Bar
-              left={{
-                content: (
-                  <Title text="Object Record" weight="bold" />
-                ),
-                align: "left",
-              }}
-              contentAlign="center"
-              right={{
-                content: (
-                  <Icon icon="close" onClick={closeRight} />
-                ),
-                width: "min-content",
-              }}
-            />
-          </Card>
-        );
-
-        const objectSummary = (
-          <Panel
-            id="Info Panel"
-            header={summaryHeader}
-          >
-            {pageContent}
-          </Panel>
         );
 
         const objectsView = (
@@ -703,29 +626,35 @@ storiesOf("Templates/02_Applications", module)
                     contentAlign="center"
                     left={{
                       content: (
+                        <Grid columns="2">
+                          <SelectMenu
+                            options={[
+                              { value: "all", label: "All Filters" },
+                              { value: "a", label: "Filter A" },
+                              { value: "b", label: "Filter B" },
+                            ]}
+                            selectOptions="all"
+                            isClearable={false}
+                          />
+                          <TextInput type="search" placeholder="Search Objects" />
+                        </Grid>
+                      ),
+                      width: "max-content",
+                    }}
+                    right={{
+                      content: (
                         <SelectMenu
                           options={[
-                            { value: "all", label: "All Filters" },
-                            { value: "a", label: "Option A" },
-                            { value: "b", label: "Option B" },
+                            { value: "all", label: "Object Actions" },
+                            { value: "a", label: "Action A" },
+                            { value: "b", label: "Action B" },
+                            { value: "c", label: "Action C" },
                           ]}
                           selectOptions="all"
                           isClearable={false}
                         />
                       ),
-                      width: "10rem",
-                    }}
-                    right={{
-                      content: (
-                        <Grid columns="4">
-                          <Command label="Action" />
-                          <Command label="Action" />
-                          <Command label="Action" />
-                          <Icon icon="more" onClick={doNothing} />
-                        </Grid>
-                      ),
-                      width: "max-content",
-                      align: "right",
+                      width: "15rem",
                     }}
                   />
                 </CardSection>
@@ -738,6 +667,220 @@ storiesOf("Templates/02_Applications", module)
         const [mainView, setMainView] = useState(homeView);
         const showHome = () => { setMainView(homeView); };
         const showObjects = () => { setMainView(objectsView); };
+        const showRecord = () => { setMainView(objectRecord); };
+        const hideRecord = () => { setMainView(objectsView); };
+
+        const summaryHeader = (
+          <Card isInverse>
+            <Bar
+              left={{
+                content: (
+                  <Title text="Object Summary" weight="bold" />
+                ),
+                align: "left",
+              }}
+              contentAlign="center"
+              right={{
+                content: (
+                  <Icon icon="close" onClick={closeRight} />
+                ),
+                width: "min-content",
+              }}
+            />
+          </Card>
+        );
+
+        const objectSummary = (
+          <Panel
+            id="Info Panel"
+            header={summaryHeader}
+            padding="0"
+          >
+            <Page
+              header={{
+                title: "Object Name",
+                subtitle: "This is a summary of an Object",
+              }}
+            >
+              <PageSection>
+                <Button label="View Object Record" isSolid fullWidth onClick={showRecord} />
+                <Legend
+                  title="Object Data"
+                  data={[
+                    { label: "Field Name", value: "Value" },
+                    { label: "Field Name", value: <Link text="Value" href="http://" /> },
+                    { label: "Field Name", value: <Link text="Value" href="http://" /> },
+                    { label: "Field Name", value: "Value" },
+                    { label: "Field Name", value: "Value" },
+                  ]}
+                />
+                <CardGrid columns="1">
+                  <Card
+                    title="Content Module"
+                    description="Here we're describing this module for you..."
+                    commands={[
+                      {
+                        id: "1",
+                        label: "Action",
+                      },
+                      {
+                        id: "2",
+                        label: "Action",
+                      },
+                    ]}
+                  />
+                  <Card
+                    title="Content Module"
+                    description="Here we're describing this module for you..."
+                    commands={[
+                      {
+                        id: "1",
+                        label: "Action",
+                      },
+                    ]}
+                  />
+                </CardGrid>
+              </PageSection>
+            </Page>
+          </Panel>
+        );
+
+        const objectRecord = (
+          <Panel
+            header={
+              <Card>
+                <CardSection padding="0" variant="success">
+                  <Bar
+                    left={{
+                      content: (
+                        <Title text="Object Record" weight="bold" />
+                      ),
+                      align: "left",
+                    }}
+                    contentAlign="center"
+                    right={{
+                      content: (
+                        <Icon icon="close" onClick={hideRecord} />
+                      ),
+                      width: "min-content",
+                    }}
+                  />
+                </CardSection>
+              </Card>
+            }
+          >
+            <Page >
+              <Grid columns="1">
+                {/* <PageSection> */}
+                <Title text="Object Details Page" size="xl" weight="bold" />
+                <Text text="Here is everything we have for you..." size="lg" weight="bold" />
+                {/* </PageSection> */}
+                <PageSection>
+                  <CardGrid columns="3">
+                    <Card>
+                      <Legend
+                        title="Object Data"
+                        data={[
+                          { label: "Field Name", value: "Value" },
+                          { label: "Field Name", value: <Link text="Value" href="http://" /> },
+                          { label: "Field Name", value: <Link text="Value" href="http://" /> },
+                          { label: "Field Name", value: "Value" },
+                          { label: "Field Name", value: "Value" },
+                        ]}
+                      />
+                    </Card>
+                    <Card>
+                      <Legend
+                        title="Object Data"
+                        data={[
+                          { label: "Field Name", value: "Value" },
+                          { label: "Field Name", value: <Link text="Value" href="http://" /> },
+                          { label: "Field Name", value: <Link text="Value" href="http://" /> },
+                          { label: "Field Name", value: "Value" },
+                          { label: "Field Name", value: "Value" },
+                        ]}
+                      />
+                    </Card>
+                    <Card>
+                      <Legend
+                        title="Object Data"
+                        data={[
+                          { label: "Field Name", value: "Value" },
+                          { label: "Field Name", value: <Link text="Value" href="http://" /> },
+                          { label: "Field Name", value: <Link text="Value" href="http://" /> },
+                          { label: "Field Name", value: "Value" },
+                          { label: "Field Name", value: "Value" },
+                        ]}
+                      />
+                    </Card>
+                  </CardGrid>
+                </PageSection>
+                <PageSection>
+                  <CardGrid columns="2">
+                    <Card
+                      title="Content Module"
+                      description="Here we're describing this module for you..."
+                      commands={[
+                        {
+                          id: "1",
+                          label: "Action",
+                        },
+                        {
+                          id: "2",
+                          label: "Action",
+                        },
+                      ]}
+                    />
+                    <Card
+                      title="Content Module"
+                      description="Here we're describing this module for you..."
+                      commands={[
+                        {
+                          id: "1",
+                          label: "Action",
+                        },
+                      ]}
+                    />
+                  </CardGrid>
+                </PageSection>
+                <PageSection>
+                  <CardGrid columns="3">
+                    <Card
+                      title="Content Module"
+                      description="Here we're describing this module for you..."
+                      commands={[
+                        {
+                          id: "1",
+                          label: "Action",
+                        },
+                      ]}
+                    />
+                    <Card
+                      title="Content Module"
+                      description="Here we're describing this module for you..."
+                      commands={[
+                        {
+                          id: "1",
+                          label: "Action",
+                        },
+                      ]}
+                    />
+                    <Card
+                      title="Content Module"
+                      description="Here we're describing this module for you..."
+                      commands={[
+                        {
+                          id: "1",
+                          label: "Action",
+                        },
+                      ]}
+                    />
+                  </CardGrid>
+                </PageSection>
+              </Grid>
+            </Page>
+          </Panel>
+        );
 
         return (
           <Layout
@@ -750,7 +893,7 @@ storiesOf("Templates/02_Applications", module)
                   left={{
                     content: (
                       <Command
-                        icon="left"
+                        icon="menu"
                         label="Menu"
                         onClick={toggleLeft}
                       />
@@ -769,14 +912,20 @@ storiesOf("Templates/02_Applications", module)
                   }}
                   right={{
                     content: (
-                      <Grid columns="3">
+                      <Grid columns="max-content max-content max-content" gap="4xl">
                         <Icon icon="user" onClick={doNothing} />
                         <Icon icon="share" onClick={doNothing} />
-                        {/* <Icon icon="print" onClick={doNothing} /> */}
-                        <Icon icon="more" onClick={doNothing} />
+                        <Menu
+                          data={[
+                            { id: "a", label: "App Action" },
+                            { id: "b", label: "App Action" },
+                            { id: "c", label: "App Action" },
+                          ]}
+                          position="bottomLeft"
+                        />
                       </Grid>
                     ),
-                    width: "15%",
+                    width: "max-content",
                   }}
                 />
               ),
@@ -798,13 +947,9 @@ storiesOf("Templates/02_Applications", module)
                         contentAlign="center"
                         right={{
                           content: (
-                            <Menu
-                              data={[
-                                { id: "a", label: "App Action" },
-                                { id: "b", label: "App Action" },
-                                { id: "c", label: "App Action" },
-                              ]}
-                              position="bottomLeft"
+                            <Icon
+                              icon="close"
+                              onClick={toggleLeft}
                             />
                           ),
                           width: "min-content",
@@ -813,8 +958,8 @@ storiesOf("Templates/02_Applications", module)
                     </Card>}
                 >
                   <Grid columns="1" gap="lg">
-                    <Command label="Home" onClick={showHome} />
-                    <TextInput type="search" placeholder="Search Objects" />
+                    <Command icon="home" label="Home" onClick={showHome} />
+                    <TextInput type="search" placeholder="Search Object Types" />
                     <List isInteractive>
                       <ListItem
                         title="Object Type"
@@ -837,26 +982,7 @@ storiesOf("Templates/02_Applications", module)
             main={{
               id: "Main",
               content: mainView,
-              // content: (
-              //   <Panel
-              //     header={
-              //       <Card>
-              //         <CardSection padding="0" variant="info">
-              //           <Bar
-              //             left={
-              //               <Title text={objectsView ? "Object Type" : "Home"} weight="bold" />
-              //             }
-              //             contentAlign="center"
-              //           />
-              //         </CardSection>
-              //       </Card>
-              //     }
-              //   >
-              //     {mainView}
-              //   </Panel>
-              // ),
             }}
-            // right={{ id: "Right", content: "" }}
             right={{
               id: "Right",
               content: objectSummary,
