@@ -13,7 +13,6 @@ const PageWrapper = styled.div`
   background-color: ${(props) => {
     return props.theme.background.default;
   }};
-  height: 100%;
   z-index: 0;
 
   /* Prototype Content - displays when empty */
