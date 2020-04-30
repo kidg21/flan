@@ -10,6 +10,7 @@ import { Link } from "base/Typography";
 import Image from "atoms/Image";
 import DialogBox from "elements/DialogBox";
 import Bar from "layout/Bar";
+import Import from "atoms/Import";
 import Form, {FormSection} from "layout/Form";
 
 
@@ -35,7 +36,7 @@ storiesOf("Templates|Upload", module)
             },
           ]}
         >
-        <Bar padding="2x" contentAlign="center" center={<Grid columns="1"> <Icon size="4xl" variant="info" icon="plus_circle" onClick/> <Link text="Browse Files to Add"/></Grid> }/>
+        <Import />
         </DialogBox>
                      
         );
@@ -54,21 +55,24 @@ storiesOf("Templates|Upload", module)
             {
               id: "Cancel",
               label: "Cancel",
+              type: "button",
               },
             {
               id: "Upload",
               label: "Upload",
+              type: "submit"
             },
           ]}
         >
                    <React.Fragment>
-        <Bar padding="2x" contentAlign="center" center={<Grid columns="1"> <Icon size="4xl" variant="info" icon="plus_circle" onClick/> <Link text="Browse Files to Add"/></Grid> }/>
+  
 
-         <List isDivided>
+         <List>
            <ListItem title="File 1"/>
            <ListItem title="File 2"/>
            <ListItem title="File 3"/>
          </List>
+        <Import />
          </React.Fragment>
         </DialogBox>
                      

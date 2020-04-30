@@ -112,6 +112,7 @@ DialogBox.propTypes = {
     id: PropTypes.string,
     label: PropTypes.string,
     onClick: PropTypes.func,
+    type: PropTypes.oneOf(["button", "reset", "submit"]),
     disabled: PropTypes.bool,
     variant: PropTypes.string,
   })),
