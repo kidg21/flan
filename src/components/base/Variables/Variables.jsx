@@ -78,6 +78,14 @@ export const colors = {
 
 };
 
+export const drawPalette = {
+  red: colors.red60,
+  orange: colors.orange60,
+  yellow: colors.lemon,
+  green: colors.green60,
+  blue: colors.blue60,
+};
+
 export const shadows = {
   shadow0: `drop-shadow(${colors.shade6} 0 0 1px)`,
   shadow1: `

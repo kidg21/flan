@@ -2,7 +2,7 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { Darken } from "Variables";
+import { Darken, drawPalette } from "Variables";
 import Icon from "atoms/Icon";
 import { Label } from "base/Typography";
 import Grid from "layout/Grid";
@@ -37,7 +37,7 @@ const Swatch = styled.button`
     return props.borderRadius;
   }};
   background-color: ${(props) => {
-    return props.theme.palette[props.color];
+    return props.theme.palette[props.color] || drawPalette[props.color];
   }};
   &:hover { 
     ${Darken};
