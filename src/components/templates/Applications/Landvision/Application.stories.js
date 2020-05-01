@@ -558,7 +558,7 @@ storiesOf("Templates/02_Applications", module)
 
         const objectData = [
           {
-            select: <Grid columns="auto 1fr"><Checkbox /><Command label="Object ID" onClick={openRight} /></Grid>,
+            select: <Grid columns="auto 1fr" align="center"><Checkbox /><Button label="Object ID" isPlain onClick={openRight} /></Grid>,
             f1: "Value",
             f2: "Value",
             f3: "Value",
@@ -570,7 +570,7 @@ storiesOf("Templates/02_Applications", module)
             blank: "",
           },
           {
-            select: <Grid columns="auto 1fr"><Checkbox /><Command label="Object ID" onClick={openRight} /></Grid>,
+            select: <Grid columns="auto 1fr" align="center"><Checkbox /><Button label="Object ID" isPlain onClick={openRight} /></Grid>,
             f1: "Value",
             f2: "Value",
             f3: "Value",
@@ -582,7 +582,7 @@ storiesOf("Templates/02_Applications", module)
             blank: "",
           },
           {
-            select: <Grid columns="auto 1fr"><Checkbox /><Command label="Object ID" onClick={openRight} /></Grid>,
+            select: <Grid columns="auto 1fr" align="center"><Checkbox /><Button label="Object ID" isPlain onClick={openRight} /></Grid>,
             f1: "Value",
             f2: "Value",
             f3: "Value",
@@ -643,18 +643,20 @@ storiesOf("Templates/02_Applications", module)
                     }}
                     right={{
                       content: (
-                        <SelectMenu
-                          options={[
-                            { value: "all", label: "Object Actions" },
-                            { value: "a", label: "Action A" },
-                            { value: "b", label: "Action B" },
-                            { value: "c", label: "Action C" },
-                          ]}
-                          selectOptions="all"
-                          isClearable={false}
-                        />
+                        <Grid columns="max-content max-content max-content" gap="4xl">
+                          <Command label="Action" onClick={doNothing} />
+                          <Command label="Action" onClick={doNothing} />
+                          <Menu
+                            data={[
+                              { id: "a", label: "Action" },
+                              { id: "b", label: "Action" },
+                              { id: "c", label: "Action" },
+                            ]}
+                            position="bottomLeft"
+                          />
+                        </Grid>
                       ),
-                      width: "15rem",
+                      width: "fit-content",
                     }}
                   />
                 </CardSection>
@@ -667,8 +669,11 @@ storiesOf("Templates/02_Applications", module)
         const [mainView, setMainView] = useState(homeView);
         const showHome = () => { setMainView(homeView); };
         const showObjects = () => { setMainView(objectsView); };
-        const showRecord = () => { setMainView(objectRecord); };
-        const hideRecord = () => { setMainView(objectsView); };
+        // const showRecord = () => { setMainView(objectRecord); };
+        // const hideRecord = () => { setMainView(objectsView); };
+        const [recordView, setRecordView] = useState("bottom");
+        const showRecord = () => { setRecordView(null); };
+        const hideRecord = () => { setRecordView("bottom"); };
 
         const summaryHeader = (
           <Card isInverse>
@@ -703,18 +708,21 @@ storiesOf("Templates/02_Applications", module)
               }}
             >
               <PageSection>
-                <Button label="View Object Record" isSolid fullWidth onClick={showRecord} />
-                <Legend
-                  title="Object Data"
-                  data={[
-                    { label: "Field Name", value: "Value" },
-                    { label: "Field Name", value: <Link text="Value" href="http://" /> },
-                    { label: "Field Name", value: <Link text="Value" href="http://" /> },
-                    { label: "Field Name", value: "Value" },
-                    { label: "Field Name", value: "Value" },
-                  ]}
-                />
                 <CardGrid columns="1">
+                  {/* <Button label="View Object Record" isSolid fullWidth onClick={doNothing} /> */}
+                  <Button label="View Object Record" isSolid fullWidth onClick={showRecord} />
+                  <Card>
+                    <Legend
+                      title="Object Data"
+                      data={[
+                        { label: "Field Name", value: "Value" },
+                        { label: "Field Name", value: <Link text="Value" /> },
+                        { label: "Field Name", value: <Link text="Value" /> },
+                        { label: "Field Name", value: "Value" },
+                        { label: "Field Name", value: "Value" },
+                      ]}
+                    />
+                  </Card>
                   <Card
                     title="Content Module"
                     description="Here we're describing this module for you..."
@@ -730,7 +738,7 @@ storiesOf("Templates/02_Applications", module)
                     ]}
                   />
                   <Card
-                    title="Content Module"
+                    title="Related Record"
                     description="Here we're describing this module for you..."
                     commands={[
                       {
@@ -747,6 +755,7 @@ storiesOf("Templates/02_Applications", module)
 
         const objectRecord = (
           <Panel
+            offcanvas={"right"}
             header={
               <Card>
                 <CardSection padding="0" variant="success">
@@ -769,118 +778,315 @@ storiesOf("Templates/02_Applications", module)
               </Card>
             }
           >
-            <Page >
-              <Grid columns="1">
-                {/* <PageSection> */}
-                <Title text="Object Details Page" size="xl" weight="bold" />
-                <Text text="Here is everything we have for you..." size="lg" weight="bold" />
-                {/* </PageSection> */}
-                <PageSection>
-                  <CardGrid columns="3">
-                    <Card>
-                      <Legend
-                        title="Object Data"
-                        data={[
-                          { label: "Field Name", value: "Value" },
-                          { label: "Field Name", value: <Link text="Value" href="http://" /> },
-                          { label: "Field Name", value: <Link text="Value" href="http://" /> },
-                          { label: "Field Name", value: "Value" },
-                          { label: "Field Name", value: "Value" },
-                        ]}
-                      />
-                    </Card>
-                    <Card>
-                      <Legend
-                        title="Object Data"
-                        data={[
-                          { label: "Field Name", value: "Value" },
-                          { label: "Field Name", value: <Link text="Value" href="http://" /> },
-                          { label: "Field Name", value: <Link text="Value" href="http://" /> },
-                          { label: "Field Name", value: "Value" },
-                          { label: "Field Name", value: "Value" },
-                        ]}
-                      />
-                    </Card>
-                    <Card>
-                      <Legend
-                        title="Object Data"
-                        data={[
-                          { label: "Field Name", value: "Value" },
-                          { label: "Field Name", value: <Link text="Value" href="http://" /> },
-                          { label: "Field Name", value: <Link text="Value" href="http://" /> },
-                          { label: "Field Name", value: "Value" },
-                          { label: "Field Name", value: "Value" },
-                        ]}
-                      />
-                    </Card>
-                  </CardGrid>
-                </PageSection>
-                <PageSection>
-                  <CardGrid columns="2">
-                    <Card
-                      title="Content Module"
-                      description="Here we're describing this module for you..."
-                      commands={[
-                        {
-                          id: "1",
-                          label: "Action",
-                        },
-                        {
-                          id: "2",
-                          label: "Action",
-                        },
+            <Page>
+              <Bar
+                left={{
+                  content: (
+                    <React.Fragment>
+                      <Title text="Object Details Page" size="xl" weight="bold" />
+                      <Text text="Here is everything we have for you..." size="lg" weight="bold" />
+                    </React.Fragment>
+                  ),
+                }}
+                right={{
+                  content: (
+                    <IconBlock>
+                      <Icon icon="bookmark" onClick={doNothing} />
+                      <Icon icon="share" onClick={doNothing} />
+                      <Icon icon="print" onClick={doNothing} />
+                    </IconBlock>
+                  ),
+                  width: "10rem",
+                }}
+              />
+              <PageSection title="Here is some data for this object">
+                <CardGrid columns="3">
+                  <Card>
+                    <Legend
+                      title="Object Data"
+                      data={[
+                        { label: "Field Name", value: "Value" },
+                        { label: "Field Name", value: <Link text="Value" href="http://" /> },
+                        { label: "Field Name", value: <Link text="Value" href="http://" /> },
+                        { label: "Field Name", value: "Value" },
+                        { label: "Field Name", value: "Value" },
                       ]}
                     />
-                    <Card
-                      title="Content Module"
-                      description="Here we're describing this module for you..."
-                      commands={[
-                        {
-                          id: "1",
-                          label: "Action",
-                        },
+                  </Card>
+                  <Card>
+                    <Legend
+                      title="Object Data"
+                      data={[
+                        { label: "Field Name", value: "Value" },
+                        { label: "Field Name", value: "Value" },
+                        { label: "Field Name", value: "Value" },
+                        { label: "Field Name", value: <Link text="Value" href="http://" /> },
+                        { label: "Field Name", value: "Value" },
                       ]}
                     />
-                  </CardGrid>
-                </PageSection>
-                <PageSection>
-                  <CardGrid columns="3">
-                    <Card
-                      title="Content Module"
-                      description="Here we're describing this module for you..."
-                      commands={[
-                        {
-                          id: "1",
-                          label: "Action",
-                        },
+                  </Card>
+                  <Card>
+                    <Legend
+                      title="Object Data"
+                      data={[
+                        { label: "Field Name", value: <Link text="Value" href="http://" /> },
+                        { label: "Field Name", value: "Value" },
+                        { label: "Field Name", value: "Value" },
+                        { label: "Field Name", value: <Link text="Value" href="http://" /> },
+                        { label: "Field Name", value: "Value" },
                       ]}
                     />
-                    <Card
-                      title="Content Module"
-                      description="Here we're describing this module for you..."
-                      commands={[
-                        {
-                          id: "1",
-                          label: "Action",
-                        },
-                      ]}
-                    />
-                    <Card
-                      title="Content Module"
-                      description="Here we're describing this module for you..."
-                      commands={[
-                        {
-                          id: "1",
-                          label: "Action",
-                        },
-                      ]}
-                    />
-                  </CardGrid>
-                </PageSection>
-              </Grid>
+                  </Card>
+                </CardGrid>
+              </PageSection>
+              <PageSection title="Some object content or workflows">
+                <CardGrid columns="2">
+                  <Card
+                    title="Content Module"
+                    description="Here we're describing this module for you..."
+                    commands={[
+                      {
+                        id: "1",
+                        label: "Action",
+                      },
+                      {
+                        id: "2",
+                        label: "Action",
+                      },
+                    ]}
+                  />
+                  <Card
+                    title="Content Workflow"
+                    description="Here we're describing this module for you..."
+                    commands={[
+                      {
+                        id: "1",
+                        label: "Action",
+                      },
+                    ]}
+                  />
+                </CardGrid>
+              </PageSection>
+              <PageSection title="Related records from other objects">
+                <CardGrid columns="3">
+                  <Card
+                    title="Related Record"
+                    description="Here we're describing this module for you..."
+                    commands={[
+                      {
+                        id: "1",
+                        label: "Action",
+                      },
+                    ]}
+                  />
+                  <Card
+                    title="Related Record"
+                    description="Here we're describing this module for you..."
+                    commands={[
+                      {
+                        id: "1",
+                        label: "Action",
+                      },
+                    ]}
+                  />
+                  <Card
+                    title="Related Record"
+                    description="Here we're describing this module for you..."
+                    commands={[
+                      {
+                        id: "1",
+                        label: "Action",
+                      },
+                    ]}
+                  />
+                </CardGrid>
+              </PageSection>
             </Page>
           </Panel>
         );
+
+        const recordDetails = (
+          <React.Fragment>
+            <PageSection>
+              <Bar
+                padding="0"
+                left={{
+                  content: (
+                    <React.Fragment>
+                      <Title text="Object Details" size="xl" weight="bold" />
+                      <Text text="Here is everything we have for you..." size="lg" weight="bold" />
+                    </React.Fragment>
+                  ),
+                }}
+              />
+            </PageSection>
+            <PageSection title="Here is some data for this object">
+              <Grid columns="">
+                {/* <Card> */}
+                <Legend
+                  title="Object Data"
+                  data={[
+                    { label: "Field Name", value: "Value" },
+                    { label: "Field Name", value: <Link text="Value" /> },
+                    { label: "Field Name", value: <Link text="Value" /> },
+                    { label: "Field Name", value: "Value" },
+                    { label: "Field Name", value: "Value" },
+                  ]}
+                />
+                {/* </Card> */}
+                {/* <Card> */}
+                <Legend
+                  title="Object Data"
+                  data={[
+                    { label: "Field Name", value: "Value" },
+                    { label: "Field Name", value: "Value" },
+                    { label: "Field Name", value: "Value" },
+                    { label: "Field Name", value: <Link text="Value" /> },
+                    { label: "Field Name", value: "Value" },
+                  ]}
+                />
+                {/* </Card> */}
+                {/* <Card> */}
+                <Legend
+                  title="Object Data"
+                  data={[
+                    { label: "Field Name", value: <Link text="Value" /> },
+                    { label: "Field Name", value: "Value" },
+                    { label: "Field Name", value: "Value" },
+                    { label: "Field Name", value: <Link text="Value" /> },
+                    { label: "Field Name", value: "Value" },
+                  ]}
+                />
+                {/* </Card> */}
+              </Grid>
+            </PageSection>
+          </React.Fragment>
+        );
+
+        const recordModules = (
+          <React.Fragment>
+            <PageSection>
+              <Bar
+                padding="0"
+                left={{
+                  content: (
+                    <React.Fragment>
+                      <Title text="Object Modules" size="xl" weight="bold" />
+                      <Text text="Here is everything we have for you..." size="lg" weight="bold" />
+                    </React.Fragment>
+                  ),
+                }}
+              />
+            </PageSection>
+            <PageSection title="Some object content or workflows">
+              <CardGrid columns="">
+                <Card
+                  title="Content Module"
+                  description="Here we're describing this module for you..."
+                  commands={[
+                    {
+                      id: "1",
+                      label: "Action",
+                    },
+                    {
+                      id: "2",
+                      label: "Action",
+                    },
+                  ]}
+                />
+                <Card
+                  title="Content Workflow"
+                  description="Here we're describing this module for you..."
+                  commands={[
+                    {
+                      id: "1",
+                      label: "Action",
+                    },
+                  ]}
+                />
+              </CardGrid>
+            </PageSection>
+          </React.Fragment>
+        );
+
+        const recordRelated = (
+          <React.Fragment>
+            <PageSection>
+              <Bar
+                padding="0"
+                left={{
+                  content: (
+                    <React.Fragment>
+                      <Title text="Related Records" size="xl" weight="bold" />
+                      <Text text="Here is everything we have for you..." size="lg" weight="bold" />
+                    </React.Fragment>
+                  ),
+                }}
+              />
+            </PageSection>
+            <PageSection title="Related records from other objects">
+              <CardGrid columns="">
+                <Card
+                  title="Related Record"
+                  description="Here we're describing this module for you..."
+                  commands={[
+                    {
+                      id: "1",
+                      label: "Action",
+                    },
+                  ]}
+                />
+                <Card
+                  title="Related Record"
+                  description="Here we're describing this module for you..."
+                  commands={[
+                    {
+                      id: "1",
+                      label: "Action",
+                    },
+                  ]}
+                />
+                <Card
+                  title="Related Record"
+                  description="Here we're describing this module for you..."
+                  commands={[
+                    {
+                      id: "1",
+                      label: "Action",
+                    },
+                  ]}
+                />
+              </CardGrid>
+            </PageSection>
+          </React.Fragment>
+        );
+
+        const [recordSection, setRecordSection] = useState(recordDetails);
+        const showDetails = () => { setRecordSection(recordDetails); };
+        const showModules = () => { setRecordSection(recordModules); };
+        const showRelated = () => { setRecordSection(recordRelated); };
+
+        const [activeSingleTab, setActiveSingleTab] = useState("tab1");
+        const tabButtons = [
+          {
+            id: "Details",
+            label: "Object Details",
+            isSelected: activeSingleTab === "tab1",
+            onClick: () => { setActiveSingleTab("tab1"); showDetails(); },
+          },
+          {
+            id: "Modules",
+            label: "Content Modules",
+            isSelected: activeSingleTab === "tab2",
+            onClick: () => { setActiveSingleTab("tab2"); showModules(); },
+          },
+          {
+            id: "Records",
+            label: "Related Records",
+            isSelected: activeSingleTab === "tab3",
+            onClick: () => { setActiveSingleTab("tab3"); showRelated(); },
+          },
+        ];
 
         return (
           <Layout
@@ -958,20 +1164,40 @@ storiesOf("Templates/02_Applications", module)
                     </Card>}
                 >
                   <Grid columns="1" gap="lg">
-                    <Command icon="home" label="Home" onClick={showHome} />
+                    <Command
+                      icon="home"
+                      label="Home"
+                      onClick={() => {
+                        showHome();
+                        hideRecord();
+                        closeRight();
+                      }}
+                    />
                     <TextInput type="search" placeholder="Search Object Types" />
                     <List isInteractive>
                       <ListItem
                         title="Object Type"
-                        onClick={showObjects}
+                        onClick={() => {
+                          showObjects();
+                          hideRecord();
+                          closeRight();
+                        }}
                       />
                       <ListItem
                         title="Object Type"
-                        onClick={showObjects}
+                        onClick={() => {
+                          showObjects();
+                          hideRecord();
+                          closeRight();
+                        }}
                       />
                       <ListItem
                         title="Object Type"
-                        onClick={showObjects}
+                        onClick={() => {
+                          showObjects();
+                          hideRecord();
+                          closeRight();
+                        }}
                       />
                     </List>
                   </Grid>
@@ -981,7 +1207,47 @@ storiesOf("Templates/02_Applications", module)
             }}
             main={{
               id: "Main",
-              content: mainView,
+              content: (
+                <React.Fragment>
+                  {mainView}
+                  <Panel
+                    id="object record"
+                    offcanvas={recordView}
+                    header={
+                      <Card>
+                        <CardSection padding="0" variant="success">
+                          <Bar
+                            left={{
+                              content: (
+                                <Title text="Object Record" weight="bold" />
+                              ),
+                              align: "left",
+                            }}
+                            contentAlign="center"
+                            right={{
+                              content: (
+                                <IconBlock>
+                                  <Icon icon="bookmark" onClick={doNothing} />
+                                  <Icon icon="share" onClick={doNothing} />
+                                  <Icon icon="print" onClick={doNothing} />
+                                  <Icon icon="close" onClick={hideRecord} />
+                                </IconBlock>
+                              ),
+                              width: "10rem",
+                            }}
+                          />
+                        </CardSection>
+                        <Tabs data={tabButtons} />
+                      </Card>
+                    }
+                  >
+                    <Page>
+                      {/* <Tabs data={tabButtons} /> */}
+                      {recordSection}
+                    </Page>
+                  </Panel>
+                </React.Fragment>
+              ),
             }}
             right={{
               id: "Right",
