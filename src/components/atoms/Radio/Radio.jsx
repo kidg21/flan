@@ -141,7 +141,7 @@ function Radio({
         tabIndex={tabIndex}
         value={value}
       />
-      {label ? <Label weight="bold" htmlFor={id} text={label} /> : null}
+      {label ? <Label htmlFor={id} text={label} /> : null}
     </RadioContainer>
   );
 }

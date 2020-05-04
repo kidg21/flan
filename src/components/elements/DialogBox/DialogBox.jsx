@@ -100,7 +100,7 @@ function DialogBox({
       title={title}
     >
       {children ? <ChildSection>{children}</ChildSection> : null}
-      {buttonElements ? <CardSection>{buttonElements}</CardSection> : null}
+      {buttonElements ? <CardSection padding="2x">{buttonElements}</CardSection> : null}
     </DialogCard>
   );
 }

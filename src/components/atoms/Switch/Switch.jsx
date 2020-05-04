@@ -149,7 +149,6 @@ function Switch({
           onChange={onChange}
           size="sm"
           text={label}
-          weight="bold"
         />
       ) : null}
     </SwitchContainer>

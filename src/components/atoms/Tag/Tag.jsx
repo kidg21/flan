@@ -23,9 +23,6 @@ const TagContainer = styled.div`
     return props.badgePadding || "";
   }};
   line-height: normal;
-  border: ${(props) => {
-    return `2px solid ${props.theme.text.inverse}`;
-  }};
   border-radius: ${(props) => {
     return props.theme.borders.radiusMax;
   }};

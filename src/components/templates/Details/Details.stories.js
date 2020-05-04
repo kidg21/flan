@@ -10,6 +10,7 @@ import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
 import Tabs, { TabItem } from "blocks/Tabs";
 import { Link } from "base/Typography";
 import Image from "atoms/Image";
+import Card from "elements/Card";
 import Legend from "blocks/Legend";
 import Text from "base/Typography";
 import Page, {PageSection} from "layout/Page";
@@ -53,7 +54,9 @@ storiesOf("Templates|Details", module)
               <TabItem label="Files"/>
             </Tabs>
               <PageSection>
+                <Card>
             <Legend data={options} />
+            </Card>
             </PageSection>
             </Page>
           </Panel>
@@ -81,7 +84,9 @@ storiesOf("Templates|Details", module)
               <TabItem label="Files"/>
             </Tabs>
               <PageSection>
+                <Card>
             <Legend data={options} />
+            </Card>
             </PageSection>
             </Page>
           </Panel>

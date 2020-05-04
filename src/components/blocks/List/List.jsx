@@ -25,18 +25,18 @@ const ListWrapper = styled.ul`
     return props.isDivided ? props.theme.palette.neutral40 : "";
   }};
   }
+  
 `;
 
 const ListItemWrapper = styled.li`
   position: relative;
-  
+  padding: 0.8em;
   color: ${(props) => {
     return props.isSelected ? props.theme.text.inverse : props.theme.text.primary;
   }};
   background-color: ${(props) => {
     return props.isSelected ? props.theme.background.selected : props.theme.background.default;
   }};
-  padding: 1em;
   cursor: ${(props) => {
     return props.isInteractive ? "pointer" : "";
   }};

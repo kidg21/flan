@@ -60,7 +60,7 @@ function Import({
   return (
       <React.Fragment>
 <NewInput type="file" name="file" id="file" class="inputfile" />
-<NewLabel for="file"><Icon icon="plus_circle" size="lg" /><Text weight="bold" text="Add File" /></NewLabel>
+<NewLabel for="file"><Icon icon="plus_circle" size="lg" /><Text weight="bold" size="lg" text="Add File" /></NewLabel>
     </React.Fragment>
   );
 }
