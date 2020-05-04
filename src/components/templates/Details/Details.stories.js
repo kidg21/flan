@@ -43,20 +43,21 @@ storiesOf("Templates|Details", module)
         return (
             <Panel 
             header={
+              <Grid columns="1">
               <MainPanelHeader title="19-0942231 123 Main St. Washington, DC 23820" menuData={data} />
-            }>
-              <Page>
-            <Tabs>
+              <Tabs>
               <TabItem label="RFP Details" isSelected/>
-              <TabItem label="Property Details"/>
+              <TabItem label="Property Details" />
               <TabItem label="Scope of Work"/>
               <TabItem label="Business Intelligence"/>
               <TabItem label="Files"/>
             </Tabs>
+              </Grid>
+            }>
+              <Page>
+           
               <PageSection>
-                <Card>
             <Legend data={options} />
-            </Card>
             </PageSection>
             </Page>
           </Panel>
@@ -66,27 +67,29 @@ storiesOf("Templates|Details", module)
     },
   )
   .add(
-    "Tab 3",
+    "Section",
     () => {
       return React.createElement(() => {
 
         return (
             <Panel 
             header={
+              <Grid columns="1">
               <MainPanelHeader title="19-0942231 123 Main St. Washington, DC 23820" menuData={data} />
-            }>
-              <Page>
-            <Tabs>
+              <Tabs>
               <TabItem label="RFP Details" />
               <TabItem label="Property Details" isSelected/>
               <TabItem label="Scope of Work"/>
               <TabItem label="Business Intelligence"/>
               <TabItem label="Files"/>
             </Tabs>
+              </Grid>
+            
+            }>
+              <Page>
+          
               <PageSection>
-                <Card>
             <Legend data={options} />
-            </Card>
             </PageSection>
             </Page>
           </Panel>

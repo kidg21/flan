@@ -21,7 +21,6 @@ export { default as Container } from "./atoms/Container";
 export { default as Divider } from "./atoms/Divider";
 export { default as Icon } from "./atoms/Icon";
 export { default as Image } from "./atoms/Image";
-export { default as Import } from "./atoms/Import";
 export { default as Loader } from "./atoms/Loader";
 export { default as Radio, RadioGroup } from "./atoms/Radio";
 export { default as SelectMenu } from "./atoms/SelectMenu";
