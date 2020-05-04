@@ -19,7 +19,7 @@ const BadgeContainer = styled.div`
 `;
 
 function Badge({
-  icon, id, label, position, variant,
+  hasBackground, icon, id, label, position, variant,
 }) {
   let badgeLeft;
   let badgeBottom;
@@ -54,12 +54,13 @@ function Badge({
       id={id}
       setTransform={setTransform}
     >
-      <Tag label={label} variant={variant || "alert"} icon={icon} />
+      <Tag hasBackground={hasBackground} label={label} variant={variant || "alert"} icon={icon} />
     </BadgeContainer>
   );
 }
 
 Badge.propTypes = {
+  hasBackground: PropTypes.bool,
   icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   id: PropTypes.string,
   label: PropTypes.string,
@@ -74,6 +75,7 @@ Badge.propTypes = {
 };
 
 Badge.defaultProps = {
+  hasBackground: true,
   icon: null,
   id: null,
   label: null,
