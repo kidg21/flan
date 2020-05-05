@@ -55,6 +55,9 @@ const BarLayout = styled.div`
   justify-content: ${(props) => {
     return props.justifyContent || "space-between";
   }};
+  border-bottom: ${(props) => {
+    return props.hasDivider ? `2px solid ${props.theme.palette.neutral40}` : "";
+  }};
   padding: ${(props) => {
     return props.barPadding || "";
   }};
@@ -124,6 +127,7 @@ function Bar({
   className,
   contentAlign,
   disabled,
+  hasDivider,
   id,
   left,
   onClick,
@@ -148,6 +152,7 @@ function Bar({
       alignContent={alignContent}
       barPadding={barPadding}
       className={className}
+      hasDivider={hasDivider}
       id={id}
       justifyContent={slotPadding.justify}
       onClick={onClick}
@@ -222,6 +227,7 @@ Bar.propTypes = {
    */
   contentAlign: PropTypes.oneOf(["center", "bottom", "top"]),
   disabled: PropTypes.bool,
+  hasDivider: PropTypes.bool,
   id: PropTypes.string,
   /** Used to define the content in the left 'slot' */
   left: PropTypes.oneOfType([PropTypes.node, SlotType]),
@@ -237,6 +243,7 @@ Bar.defaultProps = {
   className: null,
   contentAlign: null,
   disabled: null,
+  hasDivider: null,
   id: null,
   left: null,
   onClick: null,
