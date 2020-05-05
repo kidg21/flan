@@ -43,8 +43,10 @@ storiesOf("Templates|Details", module)
         return (
             <Panel 
             header={
-              <Grid columns="1">
               <MainPanelHeader title="19-0942231 123 Main St. Washington, DC 23820" menuData={data} />
+            }>
+              <Page>
+           
               <Tabs>
               <TabItem label="RFP Details" isSelected/>
               <TabItem label="Property Details" />
@@ -52,13 +54,10 @@ storiesOf("Templates|Details", module)
               <TabItem label="Business Intelligence"/>
               <TabItem label="Files"/>
             </Tabs>
-              </Grid>
-            }>
-              <Page>
-           
-              <PageSection>
+<PageSection>
             <Legend data={options} />
-            </PageSection>
+</PageSection>
+
             </Page>
           </Panel>
                      
@@ -74,8 +73,11 @@ storiesOf("Templates|Details", module)
         return (
             <Panel 
             header={
-              <Grid columns="1">
+
               <MainPanelHeader title="19-0942231 123 Main St. Washington, DC 23820" menuData={data} />
+
+            }>
+              <Page>
               <Tabs>
               <TabItem label="RFP Details" />
               <TabItem label="Property Details" isSelected/>
@@ -83,11 +85,6 @@ storiesOf("Templates|Details", module)
               <TabItem label="Business Intelligence"/>
               <TabItem label="Files"/>
             </Tabs>
-              </Grid>
-            
-            }>
-              <Page>
-          
               <PageSection>
             <Legend data={options} />
             </PageSection>
