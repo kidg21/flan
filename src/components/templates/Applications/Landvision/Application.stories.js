@@ -31,8 +31,8 @@ import SelectMenu from "atoms/SelectMenu";
 import Image from "atoms/Image";
 import Legend from "blocks/Legend";
 import Control, { ControlItem } from "blocks/Control";
-
-const LightBoxIcon = "static/media/LightBoxIconLogo.64993202.png";
+import LightBoxLogo from "images/LightBoxLogo.png";
+import LightBoxIcon from "images/LightBoxIconLogo.png";
 
 const map = (
   <Mapbox />
@@ -526,7 +526,7 @@ storiesOf("Templates/02_Applications", module)
           <Panel>
             <Page
               header={{
-                title: "Application Home",
+                title: "This is the Home of Application B",
                 subtitle: "You've come to the right place to begin working with [insert object types here]",
                 description: "Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.",
               }}
@@ -934,36 +934,33 @@ storiesOf("Templates/02_Applications", module)
 
         const recordDetails = (
           <React.Fragment>
-            <PageSection>
-              <Bar
-                padding="0"
-                left={{
-                  content: (
-                    <React.Fragment>
-                      <Title text="Object Details" size="xl" weight="bold" />
-                      <Text text="Here is everything we have for you..." size="lg" weight="bold" />
-                    </React.Fragment>
-                  ),
-                }}
-                right={{
-                  content: (
-                    <Grid columns="max-content max-content max-content" gap="4xl">
-                      <Command label="Action" onClick={doNothing} />
-                      <Command label="Action" onClick={doNothing} />
-                      <Menu
-                        data={[
-                          { id: "a", label: "Action" },
-                          { id: "b", label: "Action" },
-                          { id: "c", label: "Action" },
-                        ]}
-                        position="bottomLeft"
-                      />
-                    </Grid>
-                  ),
-                  width: "fit-content",
-                }}
-              />
-            </PageSection>
+            <Bar
+              left={{
+                content: (
+                  <React.Fragment>
+                    <Title text="Object Details" size="xl" weight="bold" />
+                    <Text text="Here is everything we have for you..." size="lg" weight="bold" />
+                  </React.Fragment>
+                ),
+              }}
+              right={{
+                content: (
+                  <Grid columns="max-content max-content max-content" gap="4xl">
+                    <Command label="Action" onClick={doNothing} />
+                    <Command label="Action" onClick={doNothing} />
+                    <Menu
+                      data={[
+                        { id: "a", label: "Action" },
+                        { id: "b", label: "Action" },
+                        { id: "c", label: "Action" },
+                      ]}
+                      position="bottomLeft"
+                    />
+                  </Grid>
+                ),
+                width: "fit-content",
+              }}
+            />
             {/* <PageSection title="Here is some data for this object">
               <Grid columns="">
                 <Legend
@@ -1003,36 +1000,33 @@ storiesOf("Templates/02_Applications", module)
 
         const recordModules = (
           <React.Fragment>
-            <PageSection>
-              <Bar
-                padding="0"
-                left={{
-                  content: (
-                    <React.Fragment>
-                      <Title text="Object Modules" size="xl" weight="bold" />
-                      <Text text="Here is everything we have for you..." size="lg" weight="bold" />
-                    </React.Fragment>
-                  ),
-                }}
-                right={{
-                  content: (
-                    <Grid columns="max-content max-content max-content" gap="4xl">
-                      <Command label="Action" onClick={doNothing} />
-                      <Command label="Action" onClick={doNothing} />
-                      <Menu
-                        data={[
-                          { id: "a", label: "Action" },
-                          { id: "b", label: "Action" },
-                          { id: "c", label: "Action" },
-                        ]}
-                        position="bottomLeft"
-                      />
-                    </Grid>
-                  ),
-                  width: "fit-content",
-                }}
-              />
-            </PageSection>
+            <Bar
+              left={{
+                content: (
+                  <React.Fragment>
+                    <Title text="Object Modules" size="xl" weight="bold" />
+                    <Text text="Here is everything we have for you..." size="lg" weight="bold" />
+                  </React.Fragment>
+                ),
+              }}
+              right={{
+                content: (
+                  <Grid columns="max-content max-content max-content" gap="4xl">
+                    <Command label="Action" onClick={doNothing} />
+                    <Command label="Action" onClick={doNothing} />
+                    <Menu
+                      data={[
+                        { id: "a", label: "Action" },
+                        { id: "b", label: "Action" },
+                        { id: "c", label: "Action" },
+                      ]}
+                      position="bottomLeft"
+                    />
+                  </Grid>
+                ),
+                width: "fit-content",
+              }}
+            />
             {/* <PageSection title="Some object content or workflows">
               <CardGrid columns="">
                 <Card
@@ -1066,36 +1060,33 @@ storiesOf("Templates/02_Applications", module)
 
         const recordRelated = (
           <React.Fragment>
-            <PageSection>
-              <Bar
-                padding="0"
-                left={{
-                  content: (
-                    <React.Fragment>
-                      <Title text="Related Records" size="xl" weight="bold" />
-                      <Text text="Here is everything we have for you..." size="lg" weight="bold" />
-                    </React.Fragment>
-                  ),
-                }}
-                right={{
-                  content: (
-                    <Grid columns="max-content max-content max-content" gap="4xl">
-                      <Command label="Action" onClick={doNothing} />
-                      <Command label="Action" onClick={doNothing} />
-                      <Menu
-                        data={[
-                          { id: "a", label: "Action" },
-                          { id: "b", label: "Action" },
-                          { id: "c", label: "Action" },
-                        ]}
-                        position="bottomLeft"
-                      />
-                    </Grid>
-                  ),
-                  width: "fit-content",
-                }}
-              />
-            </PageSection>
+            <Bar
+              left={{
+                content: (
+                  <React.Fragment>
+                    <Title text="Related Records" size="xl" weight="bold" />
+                    <Text text="Here is everything we have for you..." size="lg" weight="bold" />
+                  </React.Fragment>
+                ),
+              }}
+              right={{
+                content: (
+                  <Grid columns="max-content max-content max-content" gap="4xl">
+                    <Command label="Action" onClick={doNothing} />
+                    <Command label="Action" onClick={doNothing} />
+                    <Menu
+                      data={[
+                        { id: "a", label: "Action" },
+                        { id: "b", label: "Action" },
+                        { id: "c", label: "Action" },
+                      ]}
+                      position="bottomLeft"
+                    />
+                  </Grid>
+                ),
+                width: "fit-content",
+              }}
+            />
             {/* <PageSection title="Related records from other objects">
               <CardGrid columns="">
                 <Card
@@ -1278,47 +1269,78 @@ storiesOf("Templates/02_Applications", module)
             header={{
               id: "Header",
               content: (
-                <Bar
-                  contentAlign="center"
-                  padding="2x"
-                  left={{
-                    content: (
-                      <Command
-                        // icon="menu"
-                        label="Menu"
-                        onClick={toggleLeft}
-                      />
-                    ),
-                    width: "15%",
-                  }}
-                  center={{
-                    content: (
-                      <ButtonGroup columns="5">
-                        <Button label="Application A" />
-                        <Button label="Application C" />
-                        <Button label="Application D" />
-                      </ButtonGroup>
-                    ),
-                    align: "left",
-                  }}
-                  right={{
-                    content: (
-                      <Grid columns="max-content max-content max-content" gap="4xl">
-                        <Command label="Action" onClick={doNothing} />
-                        <Command label="Action" onClick={doNothing} />
-                        <Menu
-                          data={[
-                            { id: "a", label: "Action" },
-                            { id: "b", label: "Action" },
-                            { id: "c", label: "Action" },
-                          ]}
-                          position="bottomLeft"
-                        />
-                      </Grid>
-                    ),
-                    width: "fit-content",
-                  }}
-                />
+                <React.Fragment>
+                  <Bar
+                    contentAlign="center"
+                    padding="2x"
+                    hasDivider
+                    left={{
+                      content: <Image src={LightBoxLogo} alt="Lightbox Logo" width="80%" />,
+                      width: "15%",
+                    }}
+                    center={{
+                      content: (
+                        <ButtonGroup columns="5">
+                          <Button label="Application A" />
+                          <Button label="Application C" />
+                          <Button label="Application D" />
+                        </ButtonGroup>
+                      ),
+                      align: "left",
+                    }}
+                    right={{
+                      content: (
+                        <Avatar label="GP" onClick={doNothing} />
+                      ),
+                      width: "fit-content",
+                    }}
+                  />
+                  <Bar
+                    contentAlign="center"
+                    padding="2x"
+                    left={{
+                      content: (
+                        <Grid columns="max-content 1fr" align="center">
+                          <Icon
+                            icon="menu"
+                            onClick={toggleLeft}
+                          />
+                          <Title text="Application B" size="xl" weight="bold" />
+                        </Grid>
+                      ),
+                      width: "max-content",
+                    }}
+                    // center={{
+                    //   content: (
+                    //     <React.Fragment>
+                    //       <Command
+                    //         icon="menu"
+                    //         label="Menu"
+                    //         onClick={toggleLeft}
+                    //       />
+                    //     </React.Fragment>
+                    //   ),
+                    //   align: "left",
+                    // }}
+                    right={{
+                      content: (
+                        <Grid columns="max-content max-content max-content" gap="4xl">
+                          <Command label="Action" onClick={doNothing} />
+                          <Command label="Action" onClick={doNothing} />
+                          <Menu
+                            data={[
+                              { id: "a", label: "Action" },
+                              { id: "b", label: "Action" },
+                              { id: "c", label: "Action" },
+                            ]}
+                            position="bottomLeft"
+                          />
+                        </Grid>
+                      ),
+                      width: "fit-content",
+                    }}
+                  />
+                </React.Fragment>
               ),
             }}
             left={{
@@ -1404,41 +1426,39 @@ storiesOf("Templates/02_Applications", module)
                     id="object record"
                     offcanvas={recordView}
                     header={
-                      <Card shadow="0">
-                        <CardSection padding="2x" variant="">
-                          <Bar
-                            left={{
-                              content: (
-                                <Title text="Object Record" size="xl" weight="bold" />
-                              ),
-                              align: "left",
-                            }}
-                            contentAlign="center"
-                            right={{
-                              content: (
-                                <Grid columns="2" gap="4xl">
-                                  <Menu
-                                    data={[
-                                      { id: "a", label: "Action" },
-                                      { id: "b", label: "Action" },
-                                      { id: "c", label: "Action" },
-                                    ]}
-                                    position="bottomLeft"
-                                  />
-                                  <Icon
-                                    icon="close"
-                                    onClick={hideRecord}
-                                  />
-                                </Grid>
-                              ),
-                              width: "max-content",
-                            }}
-                          />
-                        </CardSection>
-                        <CardSection padding="2x">
-                          <Tabs data={tabButtons} />
-                        </CardSection>
-                      </Card>
+                      <React.Fragment>
+                        <Bar
+                          padding="2x"
+                          hasDivider
+                          left={{
+                            content: (
+                              <Title text="Object Record" size="xl" weight="bold" />
+                            ),
+                            align: "left",
+                          }}
+                          contentAlign="center"
+                          right={{
+                            content: (
+                              <Grid columns="2" gap="4xl">
+                                <Menu
+                                  data={[
+                                    { id: "a", label: "Action" },
+                                    { id: "b", label: "Action" },
+                                    { id: "c", label: "Action" },
+                                  ]}
+                                  position="bottomLeft"
+                                />
+                                <Icon
+                                  icon="close"
+                                  onClick={hideRecord}
+                                />
+                              </Grid>
+                            ),
+                            width: "max-content",
+                          }}
+                        />
+                        <Tabs data={tabButtons} />
+                      </React.Fragment>
                     }
                   >
                     <Page>
