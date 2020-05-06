@@ -86,8 +86,6 @@ export const drawPalette = {
   "#EBEAEC": colors.softGrey,
   "#095593": colors.blueSteel,
   "#FFBF00": colors.lemon,
-  "#63B1CD": colors.robinBlue,
-  "#7FBB3E": colors.green40,
 };
 
 export const shadows = {
