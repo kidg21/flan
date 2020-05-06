@@ -16,7 +16,7 @@ import Icon from "atoms/Icon";
 
 <Preview withToolbar>
   <Story name="Standard">
-    <Radio label="Radio" checked />
+    <Radio id="radio" name="standard" label="Radio" />
   </Story>
 </Preview>
 
@@ -60,7 +60,7 @@ If available options can be collapsed, consider using a dropdown menu instead, a
           width: "5%",
         }}
         center={{
-          content: <Radio label="Brief Label" />,
+          content: <Radio id="brief" name="guidelines" label="Brief Label" />,
           align: "left",
         }}
       />
@@ -72,7 +72,7 @@ If available options can be collapsed, consider using a dropdown menu instead, a
           width: "5%",
         }}
         center={{
-          content: <Radio label="Radio with a long label because you cannot be concise with your words." />,
+          content: <Radio id="long" name="guidelines" label="Radio with a long label because you cannot be concise with your words." />,
           align: "left",
         }}
       />
@@ -95,9 +95,9 @@ Radios consist of a circular input and a label. It is important that the label a
 <Preview>
   <Story name="States">
     <Grid>
-      <Radio label="Selected" checked />
-      <Radio label="Unselected" />
-      <Radio label="Disabled" disabled />
+      <Radio id="Selected" name="states" label="Selected" checked />
+      <Radio id="Unselected" name="states" label="Unselected" />
+      <Radio id="Disabled" name="states" label="Disabled" disabled />
     </Grid>
   </Story>
 </Preview>
@@ -109,8 +109,8 @@ A radio may appear to the left or right of it's corresponding label. A radio may
 <Preview>
   <Story name="Alignment">
     <Grid>
-      <Radio label="Left Aligned" />
-      <Radio label="Right Aligned" align="right" />
+      <Radio id="Left Aligned" name="alignment" label="Left Aligned" />
+      <Radio id="Right Aligned" name="alignment" label="Right Aligned" align="right" />
     </Grid>
   </Story>
 </Preview>
