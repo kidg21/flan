@@ -2,7 +2,7 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { Darken, drawPalette } from "Variables";
+import { Darken } from "Variables";
 import Icon from "atoms/Icon";
 import { Label } from "base/Typography";
 import Grid from "layout/Grid";
@@ -37,7 +37,7 @@ const Swatch = styled.button`
     return props.borderRadius;
   }};
   background-color: ${(props) => {
-    return props.theme.palette[props.color] || drawPalette[props.color];
+    return props.theme.swatches[props.color];
   }};
   &:hover { 
     ${Darken};
@@ -59,29 +59,16 @@ function ColorSwatch({
   } else {
     borderRadius = "100%";
   }
-
   return (
-    <React.Fragment>
-      {isSelected ? (
-        <Swatch
-          borderRadius={borderRadius}
-          color={color}
-          height={height}
-          onClick={onClick}
-          width={width}
-        >
-          <Icon icon="check" />
-        </Swatch>
-      ) : (
-          <Swatch
-            borderRadius={borderRadius}
-            color={color}
-            height={height}
-            onClick={onClick}
-            width={width}
-          />
-        )}
-    </React.Fragment>
+    <Swatch
+      borderRadius={borderRadius}
+      color={color}
+      height={height}
+      onClick={onClick}
+      width={width}
+    >
+      {isSelected ? <Icon icon="check" /> : null}
+    </Swatch>
   );
 }
 
