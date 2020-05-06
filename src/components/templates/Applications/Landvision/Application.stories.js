@@ -938,7 +938,7 @@ storiesOf("Templates/02_Applications", module)
               left={{
                 content: (
                   <React.Fragment>
-                    <Title text="Object Details" size="xl" weight="bold" />
+                    <Title text="Record Details" size="xl" weight="bold" />
                     <Text text="Here is everything we have for you..." size="lg" weight="bold" />
                   </React.Fragment>
                 ),
@@ -1133,7 +1133,7 @@ storiesOf("Templates/02_Applications", module)
         const tabButtons = [
           {
             id: "Details",
-            label: "Object Details",
+            label: "Record Details",
             isSelected: activeSingleTab === "tab1",
             onClick: () => { setActiveSingleTab("tab1"); showDetails(); },
           },
@@ -1305,23 +1305,11 @@ storiesOf("Templates/02_Applications", module)
                             icon="menu"
                             onClick={toggleLeft}
                           />
-                          <Title text="Application B" size="xl" weight="bold" />
+                          <Title text="Application B" size="lg" weight="bold" />
                         </Grid>
                       ),
                       width: "max-content",
                     }}
-                    // center={{
-                    //   content: (
-                    //     <React.Fragment>
-                    //       <Command
-                    //         icon="menu"
-                    //         label="Menu"
-                    //         onClick={toggleLeft}
-                    //       />
-                    //     </React.Fragment>
-                    //   ),
-                    //   align: "left",
-                    // }}
                     right={{
                       content: (
                         <Grid columns="max-content max-content max-content" gap="4xl">
@@ -1388,7 +1376,7 @@ storiesOf("Templates/02_Applications", module)
                     <TextInput type="search" placeholder="Search Object Types" />
                     <List isInteractive>
                       <ListItem
-                        title="Object Type"
+                        title="Object Type A"
                         onClick={() => {
                           showObjects1();
                           hideRecord();
@@ -1396,7 +1384,7 @@ storiesOf("Templates/02_Applications", module)
                         }}
                       />
                       <ListItem
-                        title="Object Type"
+                        title="Object Type B"
                         onClick={() => {
                           showObjects2();
                           hideRecord();
@@ -1404,7 +1392,7 @@ storiesOf("Templates/02_Applications", module)
                         }}
                       />
                       <ListItem
-                        title="Object Type"
+                        title="Object Type C"
                         onClick={() => {
                           showObjects3();
                           hideRecord();
@@ -1432,7 +1420,7 @@ storiesOf("Templates/02_Applications", module)
                           hasDivider
                           left={{
                             content: (
-                              <Title text="Object Record" size="xl" weight="bold" />
+                              <Title text="Object Details" size="xl" weight="bold" />
                             ),
                             align: "left",
                           }}
