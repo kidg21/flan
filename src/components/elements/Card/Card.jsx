@@ -54,6 +54,11 @@ const CardSectionWrapper = styled.section`
   color: ${(props) => {
     return props.theme.text[props.sectionColor] || "";
   }};
+    &:hover {
+      color: ${(props) => {
+    return props.theme.text[props.sectionColorHover] || "";
+  }};
+    }
   }
 `;
 
@@ -247,9 +252,11 @@ function CardSection({
   children, className, footer, header, id, onClick, padding, variant,
 }) {
   let sectionColor;
+  let sectionColorHover;
   let sectionBackground;
   if (variant) {
     sectionColor = "inverse";
+    sectionColorHover = "inverseHover";
     sectionBackground = variant.toLowerCase();
   }
   let sectionPadding;
@@ -275,6 +282,7 @@ function CardSection({
       onClick={onClick}
       sectionBackground={sectionBackground}
       sectionColor={sectionColor}
+      sectionColorHover={sectionColorHover}
       sectionPadding={sectionPadding}
       sectionJustify={sectionJustify}
     >
