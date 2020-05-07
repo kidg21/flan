@@ -34,7 +34,7 @@ width: auto;
 justify-content: center;
 align-items: center;
 height: 100%;
-padding: 0.5em 0.75em;
+padding: 0em 0.75em;
 color: inherit;
 margin: 0;
 color: ${(props) => {

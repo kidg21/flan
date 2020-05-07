@@ -20,8 +20,8 @@ const StyledButton = styled.button`
   width: ${(props) => {
     return props.fullWidth ? "100%" : "auto";
   }};
-  height: 100%;
-  padding: 0.5em 0.75em;
+  height: 2.4rem;
+  padding: 0em 0.75em;
   justify-content: center;
   align-items: center;
   color: ${(props) => {
