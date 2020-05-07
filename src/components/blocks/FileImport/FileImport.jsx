@@ -67,9 +67,12 @@ function FileImport() {
     return (
     <Grid columns="1fr 3fr" gap="xs">
         <React.Fragment>
-        <NewInput type="file"  id="file" class="inputfile" multiple onChange={(e) => {
-          setState(e.target.files[0].name);
-        }}/>
+        <NewInput type="file"  id="file" class="inputFile" onChange={(e) => {
+    if(typeof onChange === "function"){
+      onChange(e.target.files);
+    }
+    setState(e.target.files[0].name);
+  }} />
       <NewLabel for="file" ><Text weight="bold" size="lg" text="Upload" /></NewLabel>
       </React.Fragment>
       <TextInput placeholder={state}/>
