@@ -154,7 +154,6 @@ function Command({
       break;
   }
   return (
-    <React.Fragment>
        <CommandContainer
          alignCommand={alignCommand}
          alignIcon={alignIcon}
@@ -171,7 +170,6 @@ function Command({
          {cmd.icon ? <CommandIcon icon={cmd.icon} /> : null}
          <CommandName text={cmd.label} />
        </CommandContainer>
-    </React.Fragment>
   );
 }
 
