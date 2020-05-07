@@ -60,7 +60,7 @@ cursor: pointer;
   `;
 
 
-function FileImport() {
+function FileImport(onChange) {
 
     const [state, setState] = useState();
 
