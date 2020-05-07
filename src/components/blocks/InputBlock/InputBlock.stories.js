@@ -77,6 +77,7 @@ storiesOf("Blocks|Input Block", module)
       return (
         <InputBlock
           id="input block"
+          hasPrefix
           label="Input Block ( Defaults to a standard Text Input )"
           textInputs={[
             {

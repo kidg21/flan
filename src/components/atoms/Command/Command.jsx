@@ -5,45 +5,8 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { DisabledContext } from "States";
 import Icon from "atoms/Icon";
-import Text from "base/Typography";
 import { Label } from "base/Typography";
 
-
-const NewInput = styled.input`
-width: 0.1px;
-height: 0.1px;
-opacity: 0;
-overflow: hidden;
-position: absolute;
-z-index: -1;
-`;
-
-const NewLabel = styled.label`
-display: flex;
-flex: auto;
-box-sizing: border-box;
-z-index: 0;
-flex-direction: row;
-width: auto;
-height: 100%;
-padding: 0.5em 0.75em;
-color: inherit;
-margin: 0;
-color: ${(props) => {
-    return props.theme.palette[props.fontColor] || props.theme.palette.info80;
-  }};
-font-family: ${(props) => { return props.theme.typography.primary; }};
-user-select: none;
-cursor: pointer;
-
-  font-size: ${(props) => {
-    return props.labelSize || "inherit";
-  }};
-  text-transform: capitalize;
-  *{
-      padding: 2px;
-  }
-  `;
 
 
 const CommandContainer = styled.a`
@@ -153,7 +116,7 @@ const commandHash = {
 };
 
 function Command({
-  align, command, disabled, icon, id, label, isUpload, onClick, size,
+  align, command, disabled, icon, id, label, onClick, size,
 }) {
   const cmd = commandHash[command] || { icon, label };
   let alignCommand = "";
@@ -192,12 +155,6 @@ function Command({
   }
   return (
     <React.Fragment>
-      { isUpload ? (
-        <React.Fragment>
-          <NewInput type="file" name="file" id="file" class="inputfile" multiple />
-          <NewLabel for="file" ><Icon icon="upload" size="lg" /><Text weight="bold" size="lg" text="Upload" /></NewLabel>
-        </React.Fragment>
-     ) : (
        <CommandContainer
          alignCommand={alignCommand}
          alignIcon={alignIcon}
@@ -214,7 +171,6 @@ function Command({
          {cmd.icon ? <CommandIcon icon={cmd.icon} /> : null}
          <CommandName text={cmd.label} />
        </CommandContainer>
-     ) }
     </React.Fragment>
   );
 }
@@ -225,7 +181,6 @@ Command.propTypes = {
   disabled: PropTypes.bool,
   icon: PropTypes.string,
   id: PropTypes.string,
-  isUpload: PropTypes.bool,
   label: PropTypes.string,
   onClick: PropTypes.func,
   size: PropTypes.oneOf(["sm", "lg"]),
@@ -234,7 +189,6 @@ Command.propTypes = {
 Command.defaultProps = {
   align: null,
   command: null,
-  isUpload: false,
   disabled: false,
   icon: null,
   id: null,

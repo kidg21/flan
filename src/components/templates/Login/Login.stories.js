@@ -210,6 +210,9 @@ storiesOf("Templates|Login", module)
       }}/>
                 <Form title="Create New Password">
                 <FormSection>
+                <TextInput
+               label="Confirm Email"
+             />
             <TextInput
                label="Password"
              />
