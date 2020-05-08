@@ -24,11 +24,11 @@ exports[` 1`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
           fontSize="0.876em"
-          fontWeight={600}
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Date Input Label
         </label>
@@ -72,11 +72,11 @@ exports[` 1`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
           fontSize="0.876em"
-          fontWeight={600}
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Time Input Label
         </label>
@@ -125,11 +125,11 @@ exports[` 1`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
             fontSize="0.876em"
-            fontWeight={600}
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Date-Time Input Label
           </label>
@@ -167,11 +167,11 @@ exports[` 1`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
             fontSize="0.876em"
-            fontWeight={600}
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Date-Time Input Label
           </label>
@@ -233,11 +233,11 @@ exports[` 2`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
           fontSize="0.876em"
-          fontWeight={600}
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Date Input Label
         </label>
@@ -281,11 +281,11 @@ exports[` 2`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
           fontSize="0.876em"
-          fontWeight={600}
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Date Input Label (required)
         </label>
@@ -329,11 +329,11 @@ exports[` 2`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
           fontSize="0.876em"
-          fontWeight={600}
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Date Input Label
         </label>
@@ -377,11 +377,11 @@ exports[` 2`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
           fontSize="0.876em"
-          fontWeight={600}
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Date Input Label
         </label>
@@ -425,11 +425,11 @@ exports[` 2`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
           fontSize="0.876em"
-          fontWeight={600}
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Date Input Label
         </label>
@@ -503,11 +503,11 @@ exports[` 3`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
           fontSize="0.876em"
-          fontWeight={600}
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Time Input Label
         </label>
@@ -551,11 +551,11 @@ exports[` 3`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
           fontSize="0.876em"
-          fontWeight={600}
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Time Input Label (required)
         </label>
@@ -599,11 +599,11 @@ exports[` 3`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
           fontSize="0.876em"
-          fontWeight={600}
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Time Input Label
         </label>
@@ -647,11 +647,11 @@ exports[` 3`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
           fontSize="0.876em"
-          fontWeight={600}
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Time Input Label
         </label>
@@ -730,11 +730,11 @@ exports[` 4`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
             fontSize="0.876em"
-            fontWeight={600}
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Date-Time Input Label
           </label>
@@ -772,11 +772,11 @@ exports[` 4`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
             fontSize="0.876em"
-            fontWeight={600}
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Date-Time Input Label
           </label>
@@ -826,11 +826,11 @@ exports[` 4`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
             fontSize="0.876em"
-            fontWeight={600}
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Date-Time Input Label (required)
           </label>
@@ -868,11 +868,11 @@ exports[` 4`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
             fontSize="0.876em"
-            fontWeight={600}
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Date-Time Input Label (required)
           </label>
@@ -922,11 +922,11 @@ exports[` 4`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
             fontSize="0.876em"
-            fontWeight={600}
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Date-Time Input Label
           </label>
@@ -964,11 +964,11 @@ exports[` 4`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
             fontSize="0.876em"
-            fontWeight={600}
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Date-Time Input Label
           </label>
@@ -1018,11 +1018,11 @@ exports[` 4`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
             fontSize="0.876em"
-            fontWeight={600}
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Date-Time Input Label
           </label>
@@ -1073,11 +1073,11 @@ exports[` 4`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
             fontSize="0.876em"
-            fontWeight={600}
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Date-Time Input Label
           </label>

@@ -26,11 +26,11 @@ exports[` 1`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+          className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
           fontSize="0.876em"
           fontWeight={600}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Data Range (default)
         </label>
@@ -48,11 +48,11 @@ exports[` 1`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+                className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
                 fontSize="0.876em"
-                fontWeight={600}
+                fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 Min
               </label>
@@ -85,11 +85,11 @@ exports[` 1`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+                className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
                 fontSize="0.876em"
-                fontWeight={600}
+                fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 Max
               </label>
@@ -130,11 +130,11 @@ exports[` 1`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+          className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
           fontSize="0.876em"
           fontWeight={600}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Data Range (with options)
         </label>
@@ -152,11 +152,11 @@ exports[` 1`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+                className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
                 fontSize="0.876em"
-                fontWeight={600}
+                fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 Min
               </label>
@@ -278,11 +278,11 @@ exports[` 1`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+                className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
                 fontSize="0.876em"
-                fontWeight={600}
+                fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 Max
               </label>
@@ -425,11 +425,11 @@ exports[` 2`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+      className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
       fontSize="0.876em"
       fontWeight={600}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Data Label
     </label>
@@ -447,11 +447,11 @@ exports[` 2`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
             fontSize="0.876em"
-            fontWeight={600}
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Min
           </label>
@@ -484,11 +484,11 @@ exports[` 2`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
             fontSize="0.876em"
-            fontWeight={600}
+            fontWeight={400}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Max
           </label>
@@ -577,11 +577,11 @@ exports[` 3`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+            className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
             fontSize="0.876em"
             fontWeight={600}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Input Range
           </label>
@@ -599,11 +599,11 @@ exports[` 3`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+                  className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
                   fontSize="0.876em"
-                  fontWeight={600}
+                  fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0px"
+                  letterSpacing="0.2px"
                 >
                   Min
                 </label>
@@ -636,11 +636,11 @@ exports[` 3`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+                  className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
                   fontSize="0.876em"
-                  fontWeight={600}
+                  fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0px"
+                  letterSpacing="0.2px"
                 >
                   Max
                 </label>
@@ -681,11 +681,11 @@ exports[` 3`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+            className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
             fontSize="0.876em"
             fontWeight={600}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Input Range (error)
           </label>
@@ -703,11 +703,11 @@ exports[` 3`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+                  className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
                   fontSize="0.876em"
-                  fontWeight={600}
+                  fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0px"
+                  letterSpacing="0.2px"
                 >
                   Min
                 </label>
@@ -740,11 +740,11 @@ exports[` 3`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+                  className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
                   fontSize="0.876em"
-                  fontWeight={600}
+                  fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0px"
+                  letterSpacing="0.2px"
                 >
                   Max
                 </label>
@@ -785,11 +785,11 @@ exports[` 3`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+            className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
             fontSize="0.876em"
             fontWeight={600}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Input Range (error)
           </label>
@@ -880,11 +880,11 @@ exports[` 3`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+            className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
             fontSize="0.876em"
             fontWeight={600}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Input Range (error)
           </label>
@@ -966,11 +966,11 @@ exports[` 3`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+            className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
             fontSize="0.876em"
             fontWeight={600}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Input Range (disabled)
           </label>
@@ -988,11 +988,11 @@ exports[` 3`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+                  className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
                   fontSize="0.876em"
-                  fontWeight={600}
+                  fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0px"
+                  letterSpacing="0.2px"
                 >
                   Min
                 </label>
@@ -1025,11 +1025,11 @@ exports[` 3`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+                  className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
                   fontSize="0.876em"
-                  fontWeight={600}
+                  fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0px"
+                  letterSpacing="0.2px"
                 >
                   Max
                 </label>
@@ -1082,11 +1082,11 @@ exports[` 3`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+            className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
             fontSize="0.876em"
             fontWeight={600}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Select Range
           </label>
@@ -1104,11 +1104,11 @@ exports[` 3`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+                  className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
                   fontSize="0.876em"
-                  fontWeight={600}
+                  fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0px"
+                  letterSpacing="0.2px"
                 >
                   Min
                 </label>
@@ -1230,11 +1230,11 @@ exports[` 3`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+                  className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
                   fontSize="0.876em"
-                  fontWeight={600}
+                  fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0px"
+                  letterSpacing="0.2px"
                 >
                   Max
                 </label>
@@ -1364,11 +1364,11 @@ exports[` 3`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+            className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
             fontSize="0.876em"
             fontWeight={600}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Select Range
           </label>
@@ -1386,11 +1386,11 @@ exports[` 3`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+                  className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
                   fontSize="0.876em"
-                  fontWeight={600}
+                  fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0px"
+                  letterSpacing="0.2px"
                 >
                   Min
                 </label>
@@ -1629,11 +1629,11 @@ exports[` 3`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+                  className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
                   fontSize="0.876em"
-                  fontWeight={600}
+                  fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0px"
+                  letterSpacing="0.2px"
                 >
                   Max
                 </label>
@@ -1763,11 +1763,11 @@ exports[` 3`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+            className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
             fontSize="0.876em"
             fontWeight={600}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Select Range (error)
           </label>
@@ -1785,11 +1785,11 @@ exports[` 3`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+                  className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
                   fontSize="0.876em"
-                  fontWeight={600}
+                  fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0px"
+                  letterSpacing="0.2px"
                 >
                   Min
                 </label>
@@ -1911,11 +1911,11 @@ exports[` 3`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+                  className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
                   fontSize="0.876em"
-                  fontWeight={600}
+                  fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0px"
+                  letterSpacing="0.2px"
                 >
                   Max
                 </label>
@@ -2054,11 +2054,11 @@ exports[` 3`] = `
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+            className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
             fontSize="0.876em"
             fontWeight={600}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Select Range (disabled)
           </label>
@@ -2076,11 +2076,11 @@ exports[` 3`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+                  className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
                   fontSize="0.876em"
-                  fontWeight={600}
+                  fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0px"
+                  letterSpacing="0.2px"
                 >
                   Min
                 </label>
@@ -2197,11 +2197,11 @@ exports[` 3`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+                  className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
                   fontSize="0.876em"
-                  fontWeight={600}
+                  fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0px"
+                  letterSpacing="0.2px"
                 >
                   Max
                 </label>

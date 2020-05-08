@@ -7,11 +7,11 @@ exports[` 1`] = `
   rows={null}
 >
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+    className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
     fontSize="0.876em"
-    fontWeight={600}
+    fontWeight={400}
     htmlFor={null}
-    letterSpacing="0px"
+    letterSpacing="0.2px"
   >
     Select Label
   </label>
@@ -143,11 +143,11 @@ exports[` 2`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+      className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
       fontSize="0.876em"
-      fontWeight={600}
+      fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Standard
     </label>
@@ -262,11 +262,11 @@ exports[` 2`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+      className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
       fontSize="0.876em"
-      fontWeight={600}
+      fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Error
     </label>
@@ -394,11 +394,11 @@ exports[` 2`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+      className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
       fontSize="0.876em"
-      fontWeight={600}
+      fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Disabled
     </label>
@@ -532,11 +532,11 @@ exports[` 3`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 huVkSM"
+          className="Typography__StyledLabel-sc-19auepv-0 gDLgcG"
           fontSize="0.876em"
-          fontWeight={600}
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Single-Select ( Required )
         </label>
@@ -660,11 +660,11 @@ exports[` 3`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 huVkSM"
+          className="Typography__StyledLabel-sc-19auepv-0 gDLgcG"
           fontSize="0.876em"
-          fontWeight={600}
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Single-Select ( Required w/ Clearable )
         </label>
@@ -807,11 +807,11 @@ exports[` 4`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
           fontSize="0.876em"
-          fontWeight={600}
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Single-Select ( Standard )
         </label>
@@ -935,11 +935,11 @@ exports[` 4`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 huVkSM"
+          className="Typography__StyledLabel-sc-19auepv-0 gDLgcG"
           fontSize="0.876em"
-          fontWeight={600}
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Single-Select ( Required )
         </label>
@@ -1063,11 +1063,11 @@ exports[` 4`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
           fontSize="0.876em"
-          fontWeight={600}
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Single-Select ( Disabled )
         </label>
@@ -1191,11 +1191,11 @@ exports[` 4`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
           fontSize="0.876em"
-          fontWeight={600}
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Single-Select ( Error )
         </label>
@@ -1319,11 +1319,11 @@ exports[` 4`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
           fontSize="0.876em"
-          fontWeight={600}
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Single-Select ( Error )
         </label>
@@ -1460,11 +1460,11 @@ exports[` 4`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
           fontSize="0.876em"
-          fontWeight={600}
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Single-Select
         </label>
@@ -1601,11 +1601,11 @@ exports[` 4`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
           fontSize="0.876em"
-          fontWeight={600}
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Single-Select ( Loading )
         </label>
@@ -1743,11 +1743,11 @@ exports[` 4`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
           fontSize="0.876em"
-          fontWeight={600}
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Multi-Select
         </label>

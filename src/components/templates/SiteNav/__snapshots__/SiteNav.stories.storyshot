@@ -31,11 +31,11 @@ exports[` 1`] = `
           title="LightBox"
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+            className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
             fontSize="0.876em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             LightBox
           </label>
@@ -89,7 +89,7 @@ exports[` 1`] = `
             />
           </svg>
           <div
-            className="Avatar__TagContainer-sc-1vuf9om-2 dqLiae"
+            className="Avatar__TagContainer-sc-1vuf9om-2 bIbEMn"
             id={null}
             onClick={null}
           >
@@ -125,7 +125,7 @@ exports[` 1`] = `
         id={null}
       >
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          className="List__ListItemWrapper-sc-43f2zq-1 UUvUU"
           disabled={false}
           href={null}
           id={null}
@@ -152,7 +152,7 @@ exports[` 1`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          className="List__ListItemWrapper-sc-43f2zq-1 UUvUU"
           disabled={false}
           href={null}
           id={null}
@@ -179,7 +179,7 @@ exports[` 1`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          className="List__ListItemWrapper-sc-43f2zq-1 UUvUU"
           disabled={false}
           href={null}
           id={null}
@@ -206,7 +206,7 @@ exports[` 1`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          className="List__ListItemWrapper-sc-43f2zq-1 UUvUU"
           disabled={false}
           href={null}
           id={null}
@@ -233,7 +233,7 @@ exports[` 1`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          className="List__ListItemWrapper-sc-43f2zq-1 UUvUU"
           disabled={false}
           href={null}
           id={null}
@@ -260,7 +260,7 @@ exports[` 1`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          className="List__ListItemWrapper-sc-43f2zq-1 UUvUU"
           disabled={false}
           href={null}
           id={null}
@@ -287,7 +287,7 @@ exports[` 1`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          className="List__ListItemWrapper-sc-43f2zq-1 UUvUU"
           disabled={false}
           href={null}
           id={null}
@@ -384,7 +384,7 @@ exports[` 1`] = `
             id={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 etjrLD Tabs__TabButton-sc-1aqycph-0 jSVuAs"
+              className="Button__StyledButton-sc-1v7sls2-0 cnsEiS Tabs__TabButton-sc-1aqycph-0 jSVuAs"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -399,8 +399,8 @@ exports[` 1`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
-                  fontSize="0.876em"
+                  className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
+                  fontSize="1em"
                   fontWeight={600}
                   htmlFor={null}
                   letterSpacing="0px"
@@ -410,7 +410,7 @@ exports[` 1`] = `
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 jkfWWA Tabs__TabButton-sc-1aqycph-0 gzDOzw"
+              className="Button__StyledButton-sc-1v7sls2-0 jeARnt Tabs__TabButton-sc-1aqycph-0 gzDOzw"
               disabled={false}
               htmlFor={null}
               id={null}
@@ -425,8 +425,8 @@ exports[` 1`] = `
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
-                  fontSize="0.876em"
+                  className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
+                  fontSize="1em"
                   fontWeight={600}
                   htmlFor={null}
                   letterSpacing="0px"
@@ -454,8 +454,8 @@ exports[` 1`] = `
                 onClick={true}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                  fontSize="1em"
+                  className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                  fontSize="0.876em"
                   fontWeight={400}
                   id={null}
                   letterSpacing="0px"
@@ -466,8 +466,8 @@ exports[` 1`] = `
                     rows={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 kwdraL"
+                      fontSize="0.876em"
                       fontWeight={600}
                       id={null}
                       letterSpacing="0px"
@@ -475,8 +475,8 @@ exports[` 1`] = `
                       Lollipop Factory
                     </p>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                      fontSize="0.876em"
                       fontWeight={400}
                       id={null}
                       letterSpacing="0px"
@@ -484,8 +484,8 @@ exports[` 1`] = `
                       145 Lollipop Way, Lollipop LA 34209
                     </p>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                      fontSize="0.876em"
                       fontWeight={400}
                       id={null}
                       letterSpacing="0px"
@@ -493,8 +493,8 @@ exports[` 1`] = `
                       APN # 1239832947
                     </p>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                      fontSize="0.876em"
                       fontWeight={400}
                       id={null}
                       letterSpacing="0px"
@@ -525,11 +525,11 @@ exports[` 1`] = `
                       title="View Details"
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+                        className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
                         fontSize="0.876em"
                         fontWeight={400}
                         htmlFor={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.2px"
                       >
                         View Details
                       </label>
@@ -551,8 +551,8 @@ exports[` 1`] = `
                 onClick={true}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                  fontSize="1em"
+                  className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                  fontSize="0.876em"
                   fontWeight={400}
                   id={null}
                   letterSpacing="0px"
@@ -563,8 +563,8 @@ exports[` 1`] = `
                     rows={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 kwdraL"
+                      fontSize="0.876em"
                       fontWeight={600}
                       id={null}
                       letterSpacing="0px"
@@ -572,8 +572,8 @@ exports[` 1`] = `
                       Lollipop Factory
                     </p>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                      fontSize="0.876em"
                       fontWeight={400}
                       id={null}
                       letterSpacing="0px"
@@ -581,8 +581,8 @@ exports[` 1`] = `
                       145 Lollipop Way, Lollipop LA 34209
                     </p>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                      fontSize="0.876em"
                       fontWeight={400}
                       id={null}
                       letterSpacing="0px"
@@ -590,8 +590,8 @@ exports[` 1`] = `
                       APN # 1239832947
                     </p>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                      fontSize="0.876em"
                       fontWeight={400}
                       id={null}
                       letterSpacing="0px"
@@ -622,11 +622,11 @@ exports[` 1`] = `
                       title="View Details"
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+                        className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
                         fontSize="0.876em"
                         fontWeight={400}
                         htmlFor={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.2px"
                       >
                         View Details
                       </label>
@@ -648,8 +648,8 @@ exports[` 1`] = `
                 onClick={true}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                  fontSize="1em"
+                  className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                  fontSize="0.876em"
                   fontWeight={400}
                   id={null}
                   letterSpacing="0px"
@@ -660,8 +660,8 @@ exports[` 1`] = `
                     rows={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 kwdraL"
+                      fontSize="0.876em"
                       fontWeight={600}
                       id={null}
                       letterSpacing="0px"
@@ -669,8 +669,8 @@ exports[` 1`] = `
                       Lollipop Factory
                     </p>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                      fontSize="0.876em"
                       fontWeight={400}
                       id={null}
                       letterSpacing="0px"
@@ -678,8 +678,8 @@ exports[` 1`] = `
                       145 Lollipop Way, Lollipop LA 34209
                     </p>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                      fontSize="0.876em"
                       fontWeight={400}
                       id={null}
                       letterSpacing="0px"
@@ -687,8 +687,8 @@ exports[` 1`] = `
                       APN # 1239832947
                     </p>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                      fontSize="0.876em"
                       fontWeight={400}
                       id={null}
                       letterSpacing="0px"
@@ -719,11 +719,11 @@ exports[` 1`] = `
                       title="View Details"
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+                        className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
                         fontSize="0.876em"
                         fontWeight={400}
                         htmlFor={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.2px"
                       >
                         View Details
                       </label>
@@ -745,8 +745,8 @@ exports[` 1`] = `
                 onClick={true}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                  fontSize="1em"
+                  className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                  fontSize="0.876em"
                   fontWeight={400}
                   id={null}
                   letterSpacing="0px"
@@ -757,8 +757,8 @@ exports[` 1`] = `
                     rows={null}
                   >
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 kwdraL"
+                      fontSize="0.876em"
                       fontWeight={600}
                       id={null}
                       letterSpacing="0px"
@@ -766,8 +766,8 @@ exports[` 1`] = `
                       Lollipop Factory
                     </p>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                      fontSize="0.876em"
                       fontWeight={400}
                       id={null}
                       letterSpacing="0px"
@@ -775,8 +775,8 @@ exports[` 1`] = `
                       145 Lollipop Way, Lollipop LA 34209
                     </p>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                      fontSize="0.876em"
                       fontWeight={400}
                       id={null}
                       letterSpacing="0px"
@@ -784,8 +784,8 @@ exports[` 1`] = `
                       APN # 1239832947
                     </p>
                     <p
-                      className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                      fontSize="1em"
+                      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                      fontSize="0.876em"
                       fontWeight={400}
                       id={null}
                       letterSpacing="0px"
@@ -816,11 +816,11 @@ exports[` 1`] = `
                       title="View Details"
                     >
                       <label
-                        className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+                        className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
                         fontSize="0.876em"
                         fontWeight={400}
                         htmlFor={null}
-                        letterSpacing="0px"
+                        letterSpacing="0.2px"
                       >
                         View Details
                       </label>
@@ -868,11 +868,11 @@ exports[` 2`] = `
           title="LightBox"
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+            className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
             fontSize="0.876em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             LightBox
           </label>
@@ -926,7 +926,7 @@ exports[` 2`] = `
             />
           </svg>
           <div
-            className="Avatar__TagContainer-sc-1vuf9om-2 dqLiae"
+            className="Avatar__TagContainer-sc-1vuf9om-2 bIbEMn"
             id={null}
             onClick={null}
           >
@@ -962,7 +962,7 @@ exports[` 2`] = `
         id={null}
       >
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          className="List__ListItemWrapper-sc-43f2zq-1 UUvUU"
           disabled={false}
           href={null}
           id={null}
@@ -989,7 +989,7 @@ exports[` 2`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          className="List__ListItemWrapper-sc-43f2zq-1 UUvUU"
           disabled={false}
           href={null}
           id={null}
@@ -1016,7 +1016,7 @@ exports[` 2`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          className="List__ListItemWrapper-sc-43f2zq-1 UUvUU"
           disabled={false}
           href={null}
           id={null}
@@ -1043,7 +1043,7 @@ exports[` 2`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          className="List__ListItemWrapper-sc-43f2zq-1 UUvUU"
           disabled={false}
           href={null}
           id={null}
@@ -1070,7 +1070,7 @@ exports[` 2`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          className="List__ListItemWrapper-sc-43f2zq-1 UUvUU"
           disabled={false}
           href={null}
           id={null}
@@ -1097,7 +1097,7 @@ exports[` 2`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          className="List__ListItemWrapper-sc-43f2zq-1 UUvUU"
           disabled={false}
           href={null}
           id={null}
@@ -1124,7 +1124,7 @@ exports[` 2`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 lcmyqH"
+          className="List__ListItemWrapper-sc-43f2zq-1 UUvUU"
           disabled={false}
           href={null}
           id={null}
@@ -1307,8 +1307,8 @@ exports[` 2`] = `
                   fontSize={null}
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
                     fontWeight={400}
                     id={null}
                     letterSpacing="0px"
@@ -1321,8 +1321,8 @@ exports[` 2`] = `
                   fontSize={null}
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
                     fontWeight={400}
                     id={null}
                     letterSpacing="0px"
@@ -1339,8 +1339,8 @@ exports[` 2`] = `
                   fontSize={null}
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
                     fontWeight={400}
                     id={null}
                     letterSpacing="0px"
@@ -1353,8 +1353,8 @@ exports[` 2`] = `
                   fontSize={null}
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
                     fontWeight={400}
                     id={null}
                     letterSpacing="0px"
@@ -1371,8 +1371,8 @@ exports[` 2`] = `
                   fontSize={null}
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
                     fontWeight={400}
                     id={null}
                     letterSpacing="0px"
@@ -1385,8 +1385,8 @@ exports[` 2`] = `
                   fontSize={null}
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
                     fontWeight={400}
                     id={null}
                     letterSpacing="0px"
@@ -1403,8 +1403,8 @@ exports[` 2`] = `
                   fontSize={null}
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
                     fontWeight={400}
                     id={null}
                     letterSpacing="0px"
@@ -1417,8 +1417,8 @@ exports[` 2`] = `
                   fontSize={null}
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
                     fontWeight={400}
                     id={null}
                     letterSpacing="0px"
@@ -1435,8 +1435,8 @@ exports[` 2`] = `
                   fontSize={null}
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
                     fontWeight={400}
                     id={null}
                     letterSpacing="0px"
@@ -1449,8 +1449,8 @@ exports[` 2`] = `
                   fontSize={null}
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
                     fontWeight={400}
                     id={null}
                     letterSpacing="0px"
@@ -1467,8 +1467,8 @@ exports[` 2`] = `
                   fontSize={null}
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
                     fontWeight={400}
                     id={null}
                     letterSpacing="0px"
@@ -1481,8 +1481,8 @@ exports[` 2`] = `
                   fontSize={null}
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
                     fontWeight={400}
                     id={null}
                     letterSpacing="0px"
@@ -1499,8 +1499,8 @@ exports[` 2`] = `
                   fontSize={null}
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
                     fontWeight={400}
                     id={null}
                     letterSpacing="0px"
@@ -1513,8 +1513,8 @@ exports[` 2`] = `
                   fontSize={null}
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
                     fontWeight={400}
                     id={null}
                     letterSpacing="0px"
@@ -1531,8 +1531,8 @@ exports[` 2`] = `
                   fontSize={null}
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
                     fontWeight={400}
                     id={null}
                     letterSpacing="0px"
@@ -1545,8 +1545,8 @@ exports[` 2`] = `
                   fontSize={null}
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
                     fontWeight={400}
                     id={null}
                     letterSpacing="0px"
@@ -1563,8 +1563,8 @@ exports[` 2`] = `
                   fontSize={null}
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
                     fontWeight={400}
                     id={null}
                     letterSpacing="0px"
@@ -1577,8 +1577,8 @@ exports[` 2`] = `
                   fontSize={null}
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
                     fontWeight={400}
                     id={null}
                     letterSpacing="0px"
@@ -1595,8 +1595,8 @@ exports[` 2`] = `
                   fontSize={null}
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
                     fontWeight={400}
                     id={null}
                     letterSpacing="0px"
@@ -1609,8 +1609,8 @@ exports[` 2`] = `
                   fontSize={null}
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
                     fontWeight={400}
                     id={null}
                     letterSpacing="0px"
@@ -1627,8 +1627,8 @@ exports[` 2`] = `
                   fontSize={null}
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
                     fontWeight={400}
                     id={null}
                     letterSpacing="0px"
@@ -1641,8 +1641,8 @@ exports[` 2`] = `
                   fontSize={null}
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
                     fontWeight={400}
                     id={null}
                     letterSpacing="0px"
@@ -1659,8 +1659,8 @@ exports[` 2`] = `
                   fontSize={null}
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
                     fontWeight={400}
                     id={null}
                     letterSpacing="0px"
@@ -1673,8 +1673,8 @@ exports[` 2`] = `
                   fontSize={null}
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
                     fontWeight={400}
                     id={null}
                     letterSpacing="0px"
@@ -1691,8 +1691,8 @@ exports[` 2`] = `
                   fontSize={null}
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
                     fontWeight={400}
                     id={null}
                     letterSpacing="0px"
@@ -1705,8 +1705,8 @@ exports[` 2`] = `
                   fontSize={null}
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
                     fontWeight={400}
                     id={null}
                     letterSpacing="0px"
@@ -1723,8 +1723,8 @@ exports[` 2`] = `
                   fontSize={null}
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
                     fontWeight={400}
                     id={null}
                     letterSpacing="0px"
@@ -1737,8 +1737,8 @@ exports[` 2`] = `
                   fontSize={null}
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
                     fontWeight={400}
                     id={null}
                     letterSpacing="0px"
@@ -1755,8 +1755,8 @@ exports[` 2`] = `
                   fontSize={null}
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
                     fontWeight={400}
                     id={null}
                     letterSpacing="0px"
@@ -1769,8 +1769,8 @@ exports[` 2`] = `
                   fontSize={null}
                 >
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                    fontSize="1em"
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
                     fontWeight={400}
                     id={null}
                     letterSpacing="0px"

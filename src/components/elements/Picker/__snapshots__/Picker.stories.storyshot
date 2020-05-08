@@ -14,11 +14,11 @@ exports[` 1`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+      className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
       fontSize="0.876em"
       fontWeight={600}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Color Picker
     </label>
@@ -116,11 +116,11 @@ exports[` 2`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+      className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
       fontSize="0.876em"
       fontWeight={600}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Standard Swatches
     </label>
@@ -169,11 +169,11 @@ exports[` 3`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+      className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
       fontSize="0.876em"
       fontWeight={600}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Square Swatches
     </label>

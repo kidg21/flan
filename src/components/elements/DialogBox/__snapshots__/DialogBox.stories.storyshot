@@ -28,14 +28,14 @@ exports[` 1`] = `
         <div
           className="Bar__Slot-icfo76-1 RjiBe"
         >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 cLteVL"
-            fontSize="1em"
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+            fontSize="1.15em"
             fontWeight={600}
             letterSpacing="0px"
           >
             Default Dialog
-          </h6>
+          </h5>
         </div>
       </div>
     </section>
@@ -45,8 +45,8 @@ exports[` 1`] = `
       onClick={null}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-        fontSize="1em"
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
         fontWeight={400}
         id={null}
         letterSpacing="0px"
@@ -55,7 +55,7 @@ exports[` 1`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 eaKoCk"
       id={null}
       onClick={null}
     >
@@ -65,7 +65,7 @@ exports[` 1`] = `
         rows={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 jgKudQ DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
+          className="Button__StyledButton-sc-1v7sls2-0 XXdV DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
           disabled={false}
           htmlFor={null}
           id="Negative"
@@ -80,8 +80,8 @@ exports[` 1`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
-              fontSize="0.876em"
+              className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
+              fontSize="1em"
               fontWeight={600}
               htmlFor={null}
               letterSpacing="0px"
@@ -91,7 +91,7 @@ exports[` 1`] = `
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 iyowdu DialogBox__SecondaryButton-iv0dnf-4 RChLi"
+          className="Button__StyledButton-sc-1v7sls2-0 mWjML DialogBox__SecondaryButton-iv0dnf-4 RChLi"
           disabled={false}
           htmlFor={null}
           id="Affirmative"
@@ -106,8 +106,8 @@ exports[` 1`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
-              fontSize="0.876em"
+              className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
+              fontSize="1em"
               fontWeight={600}
               htmlFor={null}
               letterSpacing="0px"
@@ -150,14 +150,14 @@ exports[` 2`] = `
         <div
           className="Bar__Slot-icfo76-1 RjiBe"
         >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 cLteVL"
-            fontSize="1em"
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+            fontSize="1.15em"
             fontWeight={600}
             letterSpacing="0px"
           >
             Successful Dialog
-          </h6>
+          </h5>
         </div>
       </div>
     </section>
@@ -167,8 +167,8 @@ exports[` 2`] = `
       onClick={null}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-        fontSize="1em"
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
         fontWeight={400}
         id={null}
         letterSpacing="0px"
@@ -177,7 +177,7 @@ exports[` 2`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 eaKoCk"
       id={null}
       onClick={null}
     >
@@ -187,7 +187,7 @@ exports[` 2`] = `
         rows={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 gJnnWg DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
+          className="Button__StyledButton-sc-1v7sls2-0 gwLXsZ DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
           disabled={false}
           htmlFor={null}
           id="Negative"
@@ -202,8 +202,8 @@ exports[` 2`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
-              fontSize="0.876em"
+              className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
+              fontSize="1em"
               fontWeight={600}
               htmlFor={null}
               letterSpacing="0px"
@@ -213,7 +213,7 @@ exports[` 2`] = `
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 hjYGt DialogBox__SecondaryButton-iv0dnf-4 RChLi"
+          className="Button__StyledButton-sc-1v7sls2-0 bNBxRI DialogBox__SecondaryButton-iv0dnf-4 RChLi"
           disabled={false}
           htmlFor={null}
           id="Affirmative"
@@ -228,8 +228,8 @@ exports[` 2`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
-              fontSize="0.876em"
+              className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
+              fontSize="1em"
               fontWeight={600}
               htmlFor={null}
               letterSpacing="0px"
@@ -272,14 +272,14 @@ exports[` 3`] = `
         <div
           className="Bar__Slot-icfo76-1 RjiBe"
         >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 cLteVL"
-            fontSize="1em"
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+            fontSize="1.15em"
             fontWeight={600}
             letterSpacing="0px"
           >
             Error Dialog
-          </h6>
+          </h5>
         </div>
       </div>
     </section>
@@ -289,8 +289,8 @@ exports[` 3`] = `
       onClick={null}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-        fontSize="1em"
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
         fontWeight={400}
         id={null}
         letterSpacing="0px"
@@ -299,7 +299,7 @@ exports[` 3`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 eaKoCk"
       id={null}
       onClick={null}
     >
@@ -309,7 +309,7 @@ exports[` 3`] = `
         rows={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 cA-DKOM DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
+          className="Button__StyledButton-sc-1v7sls2-0 cEcvDN DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
           disabled={false}
           htmlFor={null}
           id="Negative"
@@ -324,8 +324,8 @@ exports[` 3`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
-              fontSize="0.876em"
+              className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
+              fontSize="1em"
               fontWeight={600}
               htmlFor={null}
               letterSpacing="0px"
@@ -335,7 +335,7 @@ exports[` 3`] = `
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 gRDNTw DialogBox__SecondaryButton-iv0dnf-4 RChLi"
+          className="Button__StyledButton-sc-1v7sls2-0 iIqNON DialogBox__SecondaryButton-iv0dnf-4 RChLi"
           disabled={false}
           htmlFor={null}
           id="Affirmative"
@@ -350,8 +350,8 @@ exports[` 3`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
-              fontSize="0.876em"
+              className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
+              fontSize="1em"
               fontWeight={600}
               htmlFor={null}
               letterSpacing="0px"
