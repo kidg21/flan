@@ -78,6 +78,15 @@ export const colors = {
 
 };
 
+// need to have hex key to work with old draw tools
+export const drawPalette = {
+  "#E4423A": colors.red60,
+  "#FF8000": colors.orange60,
+  "#FFBF00": colors.lemon,
+  "#14A939": colors.green60,
+  "#2F98EE": colors.blue60,
+};
+
 export const shadows = {
   shadow0: `drop-shadow(${colors.shade6} 0 0 1px)`,
   shadow1: `
@@ -135,7 +144,7 @@ export const DMPTheme = {
     info: colors.blue100,
     inverse: colors.grey100,
     modal: colors.shade10,
-    selected: colors.blue80,
+    selected: colors.blue40,
     success: colors.green100,
     warning: colors.orange80,
   },
@@ -155,6 +164,7 @@ export const DMPTheme = {
     radiusMax: borders.radiusMax,
   },
   shadows: shadows,
+  swatches: drawPalette,
   palette: {
     research: colors.lemon,
     jobs: colors.seafoam,
@@ -237,6 +247,7 @@ export const darkTheme = {
     radiusMax: borders.radiusMax,
   },
   shadows: shadows,
+  swatches: drawPalette,
   palette: {
     action20: colors.blue100,
     action40: colors.blue80,

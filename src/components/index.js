@@ -69,6 +69,7 @@ export { default as Expander } from "./utils/Expander";
 
 export {
   colors,
+  drawPalette,
   fonts,
   shadows,
   screen,

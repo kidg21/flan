@@ -1,13 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[` 1`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 ceKbHJ Page__PageWrapper-mddda5-0 fyHwWg"
+<div
+  className="Page__PageWrapper-mddda5-0 kZAGCU"
   id="A Page"
-  rows={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo Page__Section-mddda5-1 dpOQhL"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo Page__Section-mddda5-1 bYiyle"
     id={null}
     rows={null}
   >
@@ -39,12 +38,12 @@ exports[` 1`] = `
     </p>
   </section>
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 gUohHS Page__Section-mddda5-1 dpOQhL"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn Page__Body-mddda5-2 fBCJXI"
     id={null}
     rows={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 gUohHS Page__Section-mddda5-1 dpOQhL"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 gUohHS Page__Section-mddda5-1 bYiyle"
       id={null}
       rows={null}
     >
@@ -76,7 +75,7 @@ exports[` 1`] = `
       </p>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 gUohHS Page__Section-mddda5-1 dpOQhL"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 gUohHS Page__Section-mddda5-1 bYiyle"
       id={null}
       rows={null}
     >
@@ -108,17 +107,16 @@ exports[` 1`] = `
       </p>
     </section>
   </section>
-</section>
+</div>
 `;
 
 exports[` 2`] = `
-<section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 ceKbHJ Page__PageWrapper-mddda5-0 fyHwWg"
+<div
+  className="Page__PageWrapper-mddda5-0 kZAGCU"
   id={null}
-  rows={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 gUohHS Page__Section-mddda5-1 dpOQhL"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn Page__Body-mddda5-2 fBCJXI"
     id={null}
     rows={null}
   >
@@ -201,5 +199,5 @@ exports[` 2`] = `
       This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
     </p>
   </section>
-</section>
+</div>
 `;

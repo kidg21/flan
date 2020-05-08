@@ -616,7 +616,7 @@ Card.defaultProps = {
   label: null,
   mediaDesc: null,
   media: null,
-  more: null,
+  more: "",
   onClick: null,
   padding: null,
   shadow: null,
