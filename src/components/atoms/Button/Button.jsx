@@ -20,8 +20,8 @@ const StyledButton = styled.button`
   width: ${(props) => {
     return props.fullWidth ? "100%" : "auto";
   }};
-  height: 100%;
-  padding: 0.5em 0.75em;
+  height: 2.4rem;
+  padding: 0em 0.75em;
   justify-content: center;
   align-items: center;
   color: ${(props) => {
@@ -274,7 +274,7 @@ function Button({
       rows={alignCenter ? "max-content 1fr" : null}
     >
       {icon ? <Icon icon={icon} /> : null}
-      {label ? <Label weight="bold" text={label} /> : null}
+      {label ? <Label weight="bold" size="lg" text={label} /> : null}
       {count && !isDisabled ? <Tag label={count} /> : null}
     </LabelWrapper>
   );

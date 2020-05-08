@@ -89,7 +89,7 @@ function Text({
     },
   };
 
-  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "1em", letterSpacing: "0px" };
+  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.876em", letterSpacing: "0px" };
   const { fontSize, letterSpacing } = selectedSize;
 
   const weightHash = {
@@ -224,7 +224,7 @@ function Label({
     },
   };
 
-  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.876em", letterSpacing: "0px" };
+  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.876em", letterSpacing: "0.2px" };
   const { fontSize, letterSpacing } = selectedSize;
 
   const weightHash = {
@@ -288,7 +288,7 @@ function Link({
     },
   };
 
-  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "inherit", letterSpacing: "0px" };
+  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.876em", letterSpacing: "0px" };
   const { fontSize, letterSpacing } = selectedSize;
 
   const weightHash = {

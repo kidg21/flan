@@ -15,11 +15,11 @@ exports[` 1`] = `
     type="checkbox"
   />
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+    className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
     fontSize="0.876em"
-    fontWeight={600}
+    fontWeight={400}
     htmlFor={null}
-    letterSpacing="0px"
+    letterSpacing="0.2px"
   >
     Checkbox
   </label>
@@ -46,11 +46,11 @@ exports[` 2`] = `
       type="checkbox"
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+      className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
       fontSize="0.876em"
-      fontWeight={600}
+      fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Checked
     </label>
@@ -69,11 +69,11 @@ exports[` 2`] = `
       type="checkbox"
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+      className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
       fontSize="0.876em"
-      fontWeight={600}
+      fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Unchecked
     </label>
@@ -92,11 +92,11 @@ exports[` 2`] = `
       type="checkbox"
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+      className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
       fontSize="0.876em"
-      fontWeight={600}
+      fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Error
     </label>
@@ -116,11 +116,11 @@ exports[` 2`] = `
       type="checkbox"
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+      className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
       fontSize="0.876em"
-      fontWeight={600}
+      fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Disabled
     </label>
@@ -148,11 +148,11 @@ exports[` 3`] = `
       type="checkbox"
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+      className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
       fontSize="0.876em"
-      fontWeight={600}
+      fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Left Aligned
     </label>
@@ -171,11 +171,11 @@ exports[` 3`] = `
       type="checkbox"
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+      className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
       fontSize="0.876em"
-      fontWeight={600}
+      fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Right Aligned
     </label>
@@ -231,11 +231,11 @@ exports[` 4`] = `
               type="checkbox"
             />
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+              className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
               fontSize="0.876em"
-              fontWeight={600}
+              fontWeight={400}
               htmlFor="Checkbox-1"
-              letterSpacing="0px"
+              letterSpacing="0.2px"
             >
               Checkbox 1
             </label>
@@ -254,11 +254,11 @@ exports[` 4`] = `
               type="checkbox"
             />
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+              className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
               fontSize="0.876em"
-              fontWeight={600}
+              fontWeight={400}
               htmlFor="Checkbox-2"
-              letterSpacing="0px"
+              letterSpacing="0.2px"
             >
               Checkbox 2
             </label>
@@ -277,11 +277,11 @@ exports[` 4`] = `
               type="checkbox"
             />
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+              className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
               fontSize="0.876em"
-              fontWeight={600}
+              fontWeight={400}
               htmlFor="Checkbox-3"
-              letterSpacing="0px"
+              letterSpacing="0.2px"
             >
               Checkbox 3
             </label>
@@ -300,11 +300,11 @@ exports[` 4`] = `
               type="checkbox"
             />
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+              className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
               fontSize="0.876em"
-              fontWeight={600}
+              fontWeight={400}
               htmlFor="Checkbox-4"
-              letterSpacing="0px"
+              letterSpacing="0.2px"
             >
               Checkbox 4
             </label>

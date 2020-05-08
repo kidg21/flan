@@ -100,7 +100,7 @@ function DialogBox({
       title={title}
     >
       {children ? <ChildSection>{children}</ChildSection> : null}
-      {buttonElements ? <CardSection>{buttonElements}</CardSection> : null}
+      {buttonElements ? <CardSection padding="2x">{buttonElements}</CardSection> : null}
     </DialogCard>
   );
 }
@@ -112,6 +112,7 @@ DialogBox.propTypes = {
     id: PropTypes.string,
     label: PropTypes.string,
     onClick: PropTypes.func,
+    type: PropTypes.oneOf(["button", "reset", "submit"]),
     disabled: PropTypes.bool,
     variant: PropTypes.string,
   })),

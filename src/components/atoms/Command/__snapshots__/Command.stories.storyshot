@@ -29,11 +29,11 @@ exports[` 1`] = `
     />
   </svg>
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+    className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
     fontSize="0.876em"
     fontWeight={400}
     htmlFor={null}
-    letterSpacing="0px"
+    letterSpacing="0.2px"
   >
     Command
   </label>
@@ -74,11 +74,11 @@ exports[` 2`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+      className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
       fontSize="0.876em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Active
     </label>
@@ -111,11 +111,11 @@ exports[` 2`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+      className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
       fontSize="0.876em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Disabled
     </label>
@@ -157,11 +157,11 @@ exports[` 3`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+      className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
       fontSize="0.876em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Small
     </label>
@@ -194,11 +194,11 @@ exports[` 3`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+      className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
       fontSize="0.876em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Standard
     </label>
@@ -231,11 +231,11 @@ exports[` 3`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+      className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
       fontSize="0.876em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Large
     </label>
@@ -277,11 +277,11 @@ exports[` 4`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+      className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
       fontSize="0.876em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Icon-Left
     </label>
@@ -314,11 +314,11 @@ exports[` 4`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+      className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
       fontSize="0.876em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Icon-Top
     </label>
@@ -351,11 +351,11 @@ exports[` 4`] = `
       />
     </svg>
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+      className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
       fontSize="0.876em"
       fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Icon-Right
     </label>

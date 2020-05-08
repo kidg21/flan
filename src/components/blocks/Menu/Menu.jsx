@@ -111,7 +111,7 @@ function MenuComponent({
       transform={transform}
     >
       <Card shadow="2x">
-        <ListWrapper id={`listwrapper-${id}`} interactive>
+        <ListWrapper isInteractive id={`listwrapper-${id}`} >
           {data.map((item) => {
             // nested submenu
             if (item.commands) {

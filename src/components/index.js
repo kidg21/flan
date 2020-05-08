@@ -32,6 +32,7 @@ export { default as TextInput } from "./atoms/TextInput";
 // Publicly exported files from 'blocks'
 export { default as Banner } from "./blocks/Banner";
 export { CardList } from "./blocks/List";
+export { default as FileImport } from "./blocks/FileImport";
 export { default as Legend } from "./blocks/Legend";
 export { default as Control, ControlItem } from "./blocks/Control";
 export { default as DataRange } from "./blocks/DataRange";

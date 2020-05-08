@@ -17,11 +17,11 @@ exports[` 1`] = `
     value={null}
   />
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+    className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
     fontSize="0.876em"
-    fontWeight={600}
+    fontWeight={400}
     htmlFor={null}
-    letterSpacing="0px"
+    letterSpacing="0.2px"
   >
     Radio
   </label>
@@ -78,11 +78,11 @@ Array [
           value={null}
         />
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
           fontSize="0.876em"
-          fontWeight={600}
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Brief Label
         </label>
@@ -137,11 +137,11 @@ Array [
           value={null}
         />
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
           fontSize="0.876em"
-          fontWeight={600}
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Radio with a long label because you cannot be concise with your words.
         </label>
@@ -173,11 +173,11 @@ exports[` 3`] = `
       value={null}
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+      className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
       fontSize="0.876em"
-      fontWeight={600}
+      fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Selected
     </label>
@@ -198,11 +198,11 @@ exports[` 3`] = `
       value={null}
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+      className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
       fontSize="0.876em"
-      fontWeight={600}
+      fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Unselected
     </label>
@@ -224,11 +224,11 @@ exports[` 3`] = `
       value={null}
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+      className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
       fontSize="0.876em"
-      fontWeight={600}
+      fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Disabled
     </label>
@@ -258,11 +258,11 @@ exports[` 4`] = `
       value={null}
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+      className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
       fontSize="0.876em"
-      fontWeight={600}
+      fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Left Aligned
     </label>
@@ -283,11 +283,11 @@ exports[` 4`] = `
       value={null}
     />
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+      className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
       fontSize="0.876em"
-      fontWeight={600}
+      fontWeight={400}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Right Aligned
     </label>
@@ -345,11 +345,11 @@ exports[` 5`] = `
               value="1"
             />
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+              className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
               fontSize="0.876em"
-              fontWeight={600}
+              fontWeight={400}
               htmlFor="radio-1"
-              letterSpacing="0px"
+              letterSpacing="0.2px"
             >
               Radio 1
             </label>
@@ -370,11 +370,11 @@ exports[` 5`] = `
               value="2"
             />
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+              className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
               fontSize="0.876em"
-              fontWeight={600}
+              fontWeight={400}
               htmlFor="radio-2"
-              letterSpacing="0px"
+              letterSpacing="0.2px"
             >
               Radio 2
             </label>
@@ -395,11 +395,11 @@ exports[` 5`] = `
               value="3"
             />
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+              className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
               fontSize="0.876em"
-              fontWeight={600}
+              fontWeight={400}
               htmlFor="radio-3"
-              letterSpacing="0px"
+              letterSpacing="0.2px"
             >
               Radio 3
             </label>
@@ -420,11 +420,11 @@ exports[` 5`] = `
               value="4"
             />
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+              className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
               fontSize="0.876em"
-              fontWeight={600}
+              fontWeight={400}
               htmlFor="radio-4"
-              letterSpacing="0px"
+              letterSpacing="0.2px"
             >
               Radio 4
             </label>

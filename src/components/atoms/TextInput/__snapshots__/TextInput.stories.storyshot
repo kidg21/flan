@@ -7,11 +7,11 @@ exports[` 1`] = `
   rows={null}
 >
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+    className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
     fontSize="0.876em"
-    fontWeight={600}
+    fontWeight={400}
     htmlFor={null}
-    letterSpacing="0px"
+    letterSpacing="0.2px"
   >
     TextInput
   </label>
@@ -76,11 +76,11 @@ Array [
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
           fontSize="0.876em"
-          fontWeight={600}
+          fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Brief Label
         </label>
@@ -185,11 +185,11 @@ exports[` 3`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+        className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
         fontSize="0.876em"
-        fontWeight={600}
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0px"
+        letterSpacing="0.2px"
       >
         Text Input
       </label>
@@ -227,11 +227,11 @@ exports[` 3`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+        className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
         fontSize="0.876em"
-        fontWeight={600}
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0px"
+        letterSpacing="0.2px"
       >
         Text Input ( Disabled )
       </label>
@@ -269,11 +269,11 @@ exports[` 3`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+        className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
         fontSize="0.876em"
-        fontWeight={600}
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0px"
+        letterSpacing="0.2px"
       >
         Text Input ( Error )
       </label>
@@ -311,11 +311,11 @@ exports[` 3`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+        className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
         fontSize="0.876em"
-        fontWeight={600}
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0px"
+        letterSpacing="0.2px"
       >
         Text Input ( Error )
       </label>
@@ -366,11 +366,11 @@ exports[` 3`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+        className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
         fontSize="0.876em"
-        fontWeight={600}
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0px"
+        letterSpacing="0.2px"
       >
         Text Input ( Warning )
       </label>
@@ -412,11 +412,11 @@ exports[` 3`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+        className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
         fontSize="0.876em"
-        fontWeight={600}
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0px"
+        letterSpacing="0.2px"
       >
         Text Input ( Warning )
       </label>
@@ -484,11 +484,11 @@ exports[` 4`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 huVkSM"
+        className="Typography__StyledLabel-sc-19auepv-0 gDLgcG"
         fontSize="0.876em"
-        fontWeight={600}
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0px"
+        letterSpacing="0.2px"
       >
         Text Input ( Required )
       </label>
@@ -526,11 +526,11 @@ exports[` 4`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+        className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
         fontSize="0.876em"
-        fontWeight={600}
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0px"
+        letterSpacing="0.2px"
       >
         Text
       </label>
@@ -568,11 +568,11 @@ exports[` 4`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+        className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
         fontSize="0.876em"
-        fontWeight={600}
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0px"
+        letterSpacing="0.2px"
       >
         Text Area
       </label>
@@ -610,11 +610,11 @@ exports[` 4`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+        className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
         fontSize="0.876em"
-        fontWeight={600}
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0px"
+        letterSpacing="0.2px"
       >
         Number
       </label>
@@ -652,11 +652,11 @@ exports[` 4`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+        className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
         fontSize="0.876em"
-        fontWeight={600}
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0px"
+        letterSpacing="0.2px"
       >
         Search
       </label>
@@ -694,11 +694,11 @@ exports[` 4`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+        className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
         fontSize="0.876em"
-        fontWeight={600}
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0px"
+        letterSpacing="0.2px"
       >
         Password
       </label>
@@ -736,11 +736,11 @@ exports[` 4`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+        className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
         fontSize="0.876em"
-        fontWeight={600}
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0px"
+        letterSpacing="0.2px"
       >
         Email
       </label>
@@ -778,11 +778,11 @@ exports[` 4`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+        className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
         fontSize="0.876em"
-        fontWeight={600}
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0px"
+        letterSpacing="0.2px"
       >
         Telephone Number
       </label>
@@ -820,11 +820,11 @@ exports[` 4`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+        className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
         fontSize="0.876em"
-        fontWeight={600}
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0px"
+        letterSpacing="0.2px"
       >
         URL
       </label>
@@ -862,11 +862,11 @@ exports[` 4`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+        className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
         fontSize="0.876em"
-        fontWeight={600}
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0px"
+        letterSpacing="0.2px"
       >
         Color
       </label>
@@ -904,11 +904,11 @@ exports[` 4`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+        className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
         fontSize="0.876em"
-        fontWeight={600}
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0px"
+        letterSpacing="0.2px"
       >
         Date
       </label>
@@ -946,11 +946,11 @@ exports[` 4`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+        className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
         fontSize="0.876em"
-        fontWeight={600}
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0px"
+        letterSpacing="0.2px"
       >
         Time
       </label>
@@ -988,11 +988,11 @@ exports[` 4`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+        className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
         fontSize="0.876em"
-        fontWeight={600}
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0px"
+        letterSpacing="0.2px"
       >
         Local Date/Time
       </label>
@@ -1030,11 +1030,11 @@ exports[` 4`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+        className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
         fontSize="0.876em"
-        fontWeight={600}
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0px"
+        letterSpacing="0.2px"
       >
         Month
       </label>
@@ -1072,11 +1072,11 @@ exports[` 4`] = `
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+        className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
         fontSize="0.876em"
-        fontWeight={600}
+        fontWeight={400}
         htmlFor={null}
-        letterSpacing="0px"
+        letterSpacing="0.2px"
       >
         Week
       </label>
@@ -1119,11 +1119,11 @@ exports[` 5`] = `
   rows={null}
 >
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+    className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
     fontSize="0.876em"
-    fontWeight={600}
+    fontWeight={400}
     htmlFor={null}
-    letterSpacing="0px"
+    letterSpacing="0.2px"
   >
     Colors
   </label>

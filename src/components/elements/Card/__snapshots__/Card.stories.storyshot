@@ -46,7 +46,7 @@ exports[` 1`] = `
             className="Bar__Slot-icfo76-1 boCGaE"
           >
             <div
-              className="Avatar__TagContainer-sc-1vuf9om-2 dqLiae"
+              className="Avatar__TagContainer-sc-1vuf9om-2 bIbEMn"
               id={null}
               onClick={null}
             >
@@ -75,17 +75,17 @@ exports[` 1`] = `
           <div
             className="Bar__Slot-icfo76-1 bOWYHS"
           >
-            <h6
-              className="Typography__TitleText-sc-19auepv-2 cLteVL"
-              fontSize="1em"
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+              fontSize="1.15em"
               fontWeight={600}
               letterSpacing="0px"
             >
               Card Title
-            </h6>
+            </h5>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-              fontSize="1em"
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
               fontWeight={400}
               id={null}
               letterSpacing="0px"
@@ -124,7 +124,7 @@ exports[` 1`] = `
         open={false}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 ofhtC"
+          className="Button__StyledButton-sc-1v7sls2-0 dIxixP"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -139,8 +139,8 @@ exports[` 1`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
-              fontSize="0.876em"
+              className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
+              fontSize="1em"
               fontWeight={600}
               htmlFor={null}
               letterSpacing="0px"
@@ -157,8 +157,8 @@ exports[` 1`] = `
       onClick={[Function]}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-        fontSize="1em"
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
         fontWeight={400}
         id={null}
         letterSpacing="0px"
@@ -192,11 +192,11 @@ exports[` 1`] = `
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+                className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
                 fontSize="0.876em"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 Command One
               </label>
@@ -209,11 +209,11 @@ exports[` 1`] = `
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+                className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
                 fontSize="0.876em"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 Command Two
               </label>
@@ -302,7 +302,7 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 boCGaE"
         >
           <div
-            className="Avatar__TagContainer-sc-1vuf9om-2 dqLiae"
+            className="Avatar__TagContainer-sc-1vuf9om-2 bIbEMn"
             id={null}
             onClick={null}
           >
@@ -319,17 +319,17 @@ exports[` 3`] = `
         <div
           className="Bar__Slot-icfo76-1 yvaBx"
         >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 cLteVL"
-            fontSize="1em"
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+            fontSize="1.15em"
             fontWeight={600}
             letterSpacing="0px"
           >
             Card Title
-          </h6>
+          </h5>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+            fontSize="0.876em"
             fontWeight={400}
             id={null}
             letterSpacing="0px"
@@ -345,8 +345,8 @@ exports[` 3`] = `
       onClick={false}
     >
       <p
-        className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-        fontSize="1em"
+        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+        fontSize="0.876em"
         fontWeight={400}
         id={null}
         letterSpacing="0px"
@@ -380,11 +380,11 @@ exports[` 3`] = `
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+                className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
                 fontSize="0.876em"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 Command One
               </label>
@@ -397,11 +397,11 @@ exports[` 3`] = `
               title="Command Two"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+                className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
                 fontSize="0.876em"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 Command Two
               </label>
@@ -474,17 +474,17 @@ exports[` 4`] = `
           <a
             className="Card__LinkedWrapper-sc-1g3s676-0 bKLMdk"
           >
-            <h6
-              className="Typography__TitleText-sc-19auepv-2 cLteVL"
-              fontSize="1em"
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+              fontSize="1.15em"
               fontWeight={600}
               letterSpacing="0px"
             >
               Linkable Card
-            </h6>
+            </h5>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-              fontSize="1em"
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
               fontWeight={400}
               id={null}
               letterSpacing="0px"
@@ -533,8 +533,8 @@ exports[` 5`] = `
             className="Bar__Slot-icfo76-1 RjiBe"
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-              fontSize="1em"
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
               fontWeight={400}
               id={null}
               letterSpacing="0px"
@@ -566,8 +566,8 @@ exports[` 5`] = `
             className="Bar__Slot-icfo76-1 RjiBe"
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-              fontSize="1em"
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
               fontWeight={400}
               id={null}
               letterSpacing="0px"
@@ -599,8 +599,8 @@ exports[` 5`] = `
             className="Bar__Slot-icfo76-1 RjiBe"
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-              fontSize="1em"
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
               fontWeight={400}
               id={null}
               letterSpacing="0px"
@@ -666,7 +666,7 @@ exports[` 6`] = `
               className="Bar__Slot-icfo76-1 boCGaE"
             >
               <div
-                className="Avatar__TagContainer-sc-1vuf9om-2 dqLiae"
+                className="Avatar__TagContainer-sc-1vuf9om-2 bIbEMn"
                 id={null}
                 onClick={null}
               >
@@ -695,17 +695,17 @@ exports[` 6`] = `
             <div
               className="Bar__Slot-icfo76-1 bOWYHS"
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 cLteVL"
-                fontSize="1em"
+              <h5
+                className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+                fontSize="1.15em"
                 fontWeight={600}
                 letterSpacing="0px"
               >
                 First Card
-              </h6>
+              </h5>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                fontSize="1em"
+                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                fontSize="0.876em"
                 fontWeight={400}
                 id={null}
                 letterSpacing="0px"
@@ -772,8 +772,8 @@ exports[` 6`] = `
                 Media Block
               </h6>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                fontSize="1em"
+                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                fontSize="0.876em"
                 fontWeight={400}
                 id={null}
                 letterSpacing="0px"
@@ -790,8 +790,8 @@ exports[` 6`] = `
         onClick={[Function]}
       >
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
           fontWeight={400}
           id={null}
           letterSpacing="0px"
@@ -820,11 +820,11 @@ exports[` 6`] = `
               title="Command One"
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+                className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
                 fontSize="0.876em"
                 fontWeight={400}
                 htmlFor={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 Command One
               </label>
@@ -866,7 +866,7 @@ exports[` 6`] = `
             className="Bar__Slot-icfo76-1 boCGaE"
           >
             <div
-              className="Avatar__TagContainer-sc-1vuf9om-2 dqLiae"
+              className="Avatar__TagContainer-sc-1vuf9om-2 bIbEMn"
               id={null}
               onClick={null}
             >
@@ -886,14 +886,14 @@ exports[` 6`] = `
             <a
               className="Card__LinkedWrapper-sc-1g3s676-0 bKLMdk"
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 cLteVL"
-                fontSize="1em"
+              <h5
+                className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+                fontSize="1.15em"
                 fontWeight={600}
                 letterSpacing="0px"
               >
                 Second Card
-              </h6>
+              </h5>
             </a>
           </div>
         </div>
@@ -904,8 +904,8 @@ exports[` 6`] = `
         onClick={[Function]}
       >
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
           fontWeight={400}
           id={null}
           letterSpacing="0px"
@@ -939,11 +939,11 @@ exports[` 6`] = `
                 title="Command One"
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+                  className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
                   fontSize="0.876em"
                   fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0px"
+                  letterSpacing="0.2px"
                 >
                   Command One
                 </label>
@@ -956,11 +956,11 @@ exports[` 6`] = `
                 title="Command Two"
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+                  className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
                   fontSize="0.876em"
                   fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0px"
+                  letterSpacing="0.2px"
                 >
                   Command Two
                 </label>
@@ -1015,7 +1015,7 @@ exports[` 6`] = `
               className="Bar__Slot-icfo76-1 boCGaE"
             >
               <div
-                className="Avatar__TagContainer-sc-1vuf9om-2 dqLiae"
+                className="Avatar__TagContainer-sc-1vuf9om-2 bIbEMn"
                 id={null}
                 onClick={null}
               >
@@ -1044,17 +1044,17 @@ exports[` 6`] = `
             <div
               className="Bar__Slot-icfo76-1 bOWYHS"
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 cLteVL"
-                fontSize="1em"
+              <h5
+                className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+                fontSize="1.15em"
                 fontWeight={600}
                 letterSpacing="0px"
               >
                 Third Card
-              </h6>
+              </h5>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                fontSize="1em"
+                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                fontSize="0.876em"
                 fontWeight={400}
                 id={null}
                 letterSpacing="0px"
@@ -1093,7 +1093,7 @@ exports[` 6`] = `
           open={false}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 hjYGt"
+            className="Button__StyledButton-sc-1v7sls2-0 bNBxRI"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -1108,8 +1108,8 @@ exports[` 6`] = `
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
-                fontSize="0.876em"
+                className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
+                fontSize="1em"
                 fontWeight={600}
                 htmlFor={null}
                 letterSpacing="0px"
@@ -1126,8 +1126,8 @@ exports[` 6`] = `
         onClick={[Function]}
       >
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-          fontSize="1em"
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
           fontWeight={400}
           id={null}
           letterSpacing="0px"
@@ -1161,11 +1161,11 @@ exports[` 6`] = `
                 title="Command One"
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+                  className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
                   fontSize="0.876em"
                   fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0px"
+                  letterSpacing="0.2px"
                 >
                   Command One
                 </label>
@@ -1178,11 +1178,11 @@ exports[` 6`] = `
                 title="Command Two"
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 gFLpkg Command__CommandName-sc-13akgtp-1 dvXFgs"
+                  className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
                   fontSize="0.876em"
                   fontWeight={400}
                   htmlFor={null}
-                  letterSpacing="0px"
+                  letterSpacing="0.2px"
                 >
                   Command Two
                 </label>

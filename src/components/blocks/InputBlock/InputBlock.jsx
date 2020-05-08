@@ -11,6 +11,9 @@ import SelectMenu from "atoms/SelectMenu";
 import Icon from "atoms/Icon";
 import Button from "atoms/Button";
 
+
+
+
 const TextInputContainer = styled(Grid)`
   color: ${(props) => {
     return props.theme.text[props.inputTextColor] || "";
@@ -102,6 +105,8 @@ function InputBlock({
       setSelectState(currState);
     }
   }
+
+
 
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
@@ -232,8 +237,9 @@ function InputBlock({
         text={text}
       >
         {label ? (
-          <Label weight="bold" isRequired={isRequired} text={label} />
+          <Label isRequired={isRequired} text={label} />
         ) : null}
+
         {inputContainer}
         {helpText ? <Text size="sm" weight="bold" text={helpText} /> : null}
         {errorText ? <MessageContainer messageColor={messageColor}><Text size="sm" weight="bold" text={errorText} /></MessageContainer> : null}

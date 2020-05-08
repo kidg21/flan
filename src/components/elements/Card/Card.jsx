@@ -205,7 +205,7 @@ function ExpandingSection({
             center={{
               content: (
                 <React.Fragment>
-                  {title ? <Title text={title} weight="bold" /> : null}
+                  {title ? <Title size="lg" text={title} weight="bold" /> : null}
                   {description ? <Text text={description} /> : null}
                 </React.Fragment>
               ),
@@ -368,7 +368,7 @@ function Card({
     centerContent = (
       <LinkedWrapper >
         <React.Fragment >
-          {title ? <Title text={title} weight="bold" /> : null}
+          {title ? <Title size="lg" text={title} weight="bold" /> : null}
           {description ? (<Text text={description} />
           ) : null}
         </React.Fragment>
@@ -377,7 +377,7 @@ function Card({
   } else {
     centerContent = (
       <React.Fragment >
-        {title ? <Title text={title} weight="bold" /> : null}
+        {title ? <Title size="lg" text={title} weight="bold" /> : null}
         {description ? (<Text text={description} />
         ) : null}
       </React.Fragment>);

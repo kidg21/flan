@@ -16,7 +16,7 @@ exports[` 1`] = `
       type="search"
     />
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 jkfWWA"
+      className="Button__StyledButton-sc-1v7sls2-0 jeARnt"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -72,7 +72,7 @@ exports[` 2`] = `
       type="search"
     />
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 jkfWWA"
+      className="Button__StyledButton-sc-1v7sls2-0 jeARnt"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -128,7 +128,7 @@ exports[` 3`] = `
       type="search"
     />
     <button
-      className="Button__StyledButton-sc-1v7sls2-0 jkfWWA"
+      className="Button__StyledButton-sc-1v7sls2-0 jeARnt"
       disabled={false}
       htmlFor={null}
       id={null}
@@ -181,7 +181,7 @@ exports[` 3`] = `
         id={null}
       >
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
+          className="List__ListItemWrapper-sc-43f2zq-1 kEhNiz"
           disabled={false}
           href={null}
           id={null}
@@ -217,7 +217,7 @@ exports[` 3`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
+          className="List__ListItemWrapper-sc-43f2zq-1 kEhNiz"
           disabled={false}
           href={null}
           id={null}
@@ -253,7 +253,7 @@ exports[` 3`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
+          className="List__ListItemWrapper-sc-43f2zq-1 kEhNiz"
           disabled={false}
           href={null}
           id={null}
@@ -289,7 +289,7 @@ exports[` 3`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
+          className="List__ListItemWrapper-sc-43f2zq-1 kEhNiz"
           disabled={false}
           href={null}
           id={null}
@@ -325,7 +325,7 @@ exports[` 3`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
+          className="List__ListItemWrapper-sc-43f2zq-1 kEhNiz"
           disabled={false}
           href={null}
           id={null}
@@ -361,7 +361,7 @@ exports[` 3`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
+          className="List__ListItemWrapper-sc-43f2zq-1 kEhNiz"
           disabled={false}
           href={null}
           id={null}
@@ -397,7 +397,7 @@ exports[` 3`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
+          className="List__ListItemWrapper-sc-43f2zq-1 kEhNiz"
           disabled={false}
           href={null}
           id={null}
@@ -433,7 +433,7 @@ exports[` 3`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
+          className="List__ListItemWrapper-sc-43f2zq-1 kEhNiz"
           disabled={false}
           href={null}
           id={null}
@@ -469,7 +469,7 @@ exports[` 3`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
+          className="List__ListItemWrapper-sc-43f2zq-1 kEhNiz"
           disabled={false}
           href={null}
           id={null}
@@ -505,7 +505,7 @@ exports[` 3`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
+          className="List__ListItemWrapper-sc-43f2zq-1 kEhNiz"
           disabled={false}
           href={null}
           id={null}
@@ -550,8 +550,8 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 dLaZFL"
         >
           <a
-            className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-            fontSize="inherit"
+            className="Typography__LinkText-sc-19auepv-1 jNvZLF"
+            fontSize="0.876em"
             fontWeight={600}
             href={null}
             letterSpacing="0px"
@@ -588,7 +588,7 @@ exports[` 4`] = `
         type="search"
       />
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 jkfWWA"
+        className="Button__StyledButton-sc-1v7sls2-0 jeARnt"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -645,8 +645,8 @@ exports[` 4`] = `
             className="Bar__Slot-icfo76-1 dLaZFL"
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-              fontSize="1em"
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
               fontWeight={400}
               id={null}
               letterSpacing="0px"
@@ -660,7 +660,7 @@ exports[` 4`] = `
           id={null}
         >
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
+            className="List__ListItemWrapper-sc-43f2zq-1 kEhNiz"
             disabled={false}
             href={null}
             id={null}
@@ -696,7 +696,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
+            className="List__ListItemWrapper-sc-43f2zq-1 kEhNiz"
             disabled={false}
             href={null}
             id={null}
@@ -732,7 +732,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
+            className="List__ListItemWrapper-sc-43f2zq-1 kEhNiz"
             disabled={false}
             href={null}
             id={null}
@@ -768,7 +768,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
+            className="List__ListItemWrapper-sc-43f2zq-1 kEhNiz"
             disabled={false}
             href={null}
             id={null}
@@ -804,7 +804,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
+            className="List__ListItemWrapper-sc-43f2zq-1 kEhNiz"
             disabled={false}
             href={null}
             id={null}
@@ -840,7 +840,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
+            className="List__ListItemWrapper-sc-43f2zq-1 kEhNiz"
             disabled={false}
             href={null}
             id={null}
@@ -876,7 +876,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
+            className="List__ListItemWrapper-sc-43f2zq-1 kEhNiz"
             disabled={false}
             href={null}
             id={null}
@@ -912,7 +912,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
+            className="List__ListItemWrapper-sc-43f2zq-1 kEhNiz"
             disabled={false}
             href={null}
             id={null}
@@ -948,7 +948,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
+            className="List__ListItemWrapper-sc-43f2zq-1 kEhNiz"
             disabled={false}
             href={null}
             id={null}
@@ -984,7 +984,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-1 cQcOMM"
+            className="List__ListItemWrapper-sc-43f2zq-1 kEhNiz"
             disabled={false}
             href={null}
             id={null}
@@ -1029,8 +1029,8 @@ exports[` 4`] = `
             className="Bar__Slot-icfo76-1 dLaZFL"
           >
             <a
-              className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-              fontSize="inherit"
+              className="Typography__LinkText-sc-19auepv-1 jNvZLF"
+              fontSize="0.876em"
               fontWeight={600}
               href={null}
               letterSpacing="0px"
@@ -1059,7 +1059,7 @@ exports[` 4`] = `
         type="search"
       />
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 jkfWWA"
+        className="Button__StyledButton-sc-1v7sls2-0 jeARnt"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -1146,8 +1146,8 @@ exports[` 4`] = `
             className="Bar__Slot-icfo76-1 dLaZFL"
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-              fontSize="1em"
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
               fontWeight={400}
               id={null}
               letterSpacing="0px"
@@ -1174,7 +1174,7 @@ exports[` 4`] = `
         type="search"
       />
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 jkfWWA"
+        className="Button__StyledButton-sc-1v7sls2-0 jeARnt"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -1261,8 +1261,8 @@ exports[` 4`] = `
             className="Bar__Slot-icfo76-1 dLaZFL"
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-              fontSize="1em"
+              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+              fontSize="0.876em"
               fontWeight={400}
               id={null}
               letterSpacing="0px"
