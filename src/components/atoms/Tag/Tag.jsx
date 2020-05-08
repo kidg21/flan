@@ -49,7 +49,7 @@ function Tag({
   let labelType;
 
   if (icon) {
-    iconType = <Icon icon={icon} size="xs" variant={hasBackground ? "inverse" : variant} />;
+    iconType = <Icon icon={icon} size="sm" variant={hasBackground ? "inverse" : variant} />;
     badgeWidth = "1.5em";
     badgeHeight = "1.5em";
     badgePadding = ".75em";
