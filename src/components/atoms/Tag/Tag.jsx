@@ -11,7 +11,7 @@ const TagContainer = styled.div`
   display: flex;
   align-items: center;
   width: ${(props) => {
-    return props.badgeWidth || "";
+    return props.badgeWidth || "fit-content";
   }};
   height: ${(props) => {
     return props.badgeHeight || "";
