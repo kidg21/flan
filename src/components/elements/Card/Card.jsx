@@ -90,6 +90,7 @@ const CardAudio = styled.audio`
 const CardWrapper = styled.div`
   position: relative;
   display: flex;
+  height: inherit;
   cursor: ${(props) => {
     return props.onClick ? "pointer" : "";
   }};
@@ -355,7 +356,7 @@ function Card({
       cardShadow = "dropShadow2";
       break;
     default:
-      cardShadow = "dropShadow";
+      cardShadow = "outlineShadow";
       break;
   }
 

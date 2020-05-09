@@ -100,6 +100,9 @@ export const shadows = {
     drop-shadow(${colors.shade6} 0 0 1px)
     drop-shadow(${colors.shade2} 0.5rem 0.5rem 0.55rem)
   `,
+  outlineShadow: `
+    ${colors.shade3} 0 0 1px 1px
+    `,
   dropShadow: `
     ${colors.shade3} 0 0 1px 1px,
     ${colors.shade4} 0.15rem 0.15rem 0.25rem
