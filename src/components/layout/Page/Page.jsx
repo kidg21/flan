@@ -7,7 +7,7 @@ import Grid from "layout/Grid";
 import Text, { Title } from "base/Typography";
 
 const PageWrapper = styled.div`
-  height: 100%;
+  height: inherit;
   color: ${(props) => {
     return props.theme.text.primary;
   }};
