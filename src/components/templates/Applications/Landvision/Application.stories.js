@@ -608,57 +608,57 @@ storiesOf("Templates/02_Applications", module)
           <Panel>
             <Page
               header={{
-                title: "Object Type",
+                title: "Object Type A",
                 subtitle: "Here are all of the objects of this type...",
-                // description: "Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.",
               }}
-            />
-            <PageSection>
-              <Grid columns="1" rows="auto 300px" gap="0">
-                <Card shadow="0">
-                  <CardSection padding="0">
-                    <Bar
-                      contentAlign="center"
-                      left={{
-                        content: (
-                          <Grid columns="2">
-                            <SelectMenu
-                              options={[
-                                { value: "all", label: "All Filters" },
-                                { value: "a", label: "Filter A" },
-                                { value: "b", label: "Filter B" },
-                              ]}
-                              selectOptions="all"
-                              isClearable={false}
-                            />
-                            <TextInput type="search" placeholder="Search Objects" />
-                          </Grid>
-                        ),
-                        width: "max-content",
-                      }}
-                      right={{
-                        content: (
-                          <Grid columns="max-content max-content max-content" gap="4xl">
-                            <Command label="Action" onClick={doNothing} />
-                            <Command label="Action" onClick={doNothing} />
-                            <Menu
-                              data={[
-                                { id: "a", label: "Action" },
-                                { id: "b", label: "Action" },
-                                { id: "c", label: "Action" },
-                              ]}
-                              position="bottomLeft"
-                            />
-                          </Grid>
-                        ),
-                        width: "fit-content",
-                      }}
-                    />
-                  </CardSection>
-                </Card>
-                {objectTable1}
-              </Grid>
-            </PageSection>
+            >
+              <PageSection>
+                <Grid columns="1" rows="auto 300px" gap="0">
+                  <Card shadow="0">
+                    <CardSection padding="0">
+                      <Bar
+                        contentAlign="center"
+                        left={{
+                          content: (
+                            <Grid columns="2">
+                              <SelectMenu
+                                options={[
+                                  { value: "all", label: "All Filters" },
+                                  { value: "a", label: "Filter A" },
+                                  { value: "b", label: "Filter B" },
+                                ]}
+                                selectOptions="all"
+                                isClearable={false}
+                              />
+                              <TextInput type="search" placeholder="Search Objects" />
+                            </Grid>
+                          ),
+                          width: "max-content",
+                        }}
+                        right={{
+                          content: (
+                            <Grid columns="max-content max-content max-content" gap="4xl">
+                              <Command label="Action" onClick={doNothing} />
+                              <Command label="Action" onClick={doNothing} />
+                              <Menu
+                                data={[
+                                  { id: "a", label: "Action" },
+                                  { id: "b", label: "Action" },
+                                  { id: "c", label: "Action" },
+                                ]}
+                                position="bottomLeft"
+                              />
+                            </Grid>
+                          ),
+                          width: "fit-content",
+                        }}
+                      />
+                    </CardSection>
+                  </Card>
+                  {objectTable1}
+                </Grid>
+              </PageSection>
+            </Page>
           </Panel>
         );
 
@@ -722,57 +722,57 @@ storiesOf("Templates/02_Applications", module)
           <Panel>
             <Page
               header={{
-                title: "Object Type",
+                title: "Object Type B",
                 subtitle: "Here are all of the objects of this type...",
-                // description: "Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.",
               }}
-            />
-            <PageSection>
-              <Grid columns="1" rows="auto 300px" gap="0">
-                <Card shadow="0">
-                  <CardSection padding="0">
-                    <Bar
-                      contentAlign="center"
-                      left={{
-                        content: (
-                          <Grid columns="2">
-                            <SelectMenu
-                              options={[
-                                { value: "all", label: "All Filters" },
-                                { value: "a", label: "Filter A" },
-                                { value: "b", label: "Filter B" },
-                              ]}
-                              selectOptions="all"
-                              isClearable={false}
-                            />
-                            <TextInput type="search" placeholder="Search Objects" />
-                          </Grid>
-                        ),
-                        width: "max-content",
-                      }}
-                      right={{
-                        content: (
-                          <Grid columns="max-content max-content max-content" gap="4xl">
-                            <Command label="Action" onClick={doNothing} />
-                            <Command label="Action" onClick={doNothing} />
-                            <Menu
-                              data={[
-                                { id: "a", label: "Action" },
-                                { id: "b", label: "Action" },
-                                { id: "c", label: "Action" },
-                              ]}
-                              position="bottomLeft"
-                            />
-                          </Grid>
-                        ),
-                        width: "fit-content",
-                      }}
-                    />
-                  </CardSection>
-                </Card>
-                {objectTable2}
-              </Grid>
-            </PageSection>
+            >
+              <PageSection>
+                <Grid columns="1" rows="auto 300px" gap="0">
+                  <Card shadow="0">
+                    <CardSection padding="0">
+                      <Bar
+                        contentAlign="center"
+                        left={{
+                          content: (
+                            <Grid columns="2">
+                              <SelectMenu
+                                options={[
+                                  { value: "all", label: "All Filters" },
+                                  { value: "a", label: "Filter A" },
+                                  { value: "b", label: "Filter B" },
+                                ]}
+                                selectOptions="all"
+                                isClearable={false}
+                              />
+                              <TextInput type="search" placeholder="Search Objects" />
+                            </Grid>
+                          ),
+                          width: "max-content",
+                        }}
+                        right={{
+                          content: (
+                            <Grid columns="max-content max-content max-content" gap="4xl">
+                              <Command label="Action" onClick={doNothing} />
+                              <Command label="Action" onClick={doNothing} />
+                              <Menu
+                                data={[
+                                  { id: "a", label: "Action" },
+                                  { id: "b", label: "Action" },
+                                  { id: "c", label: "Action" },
+                                ]}
+                                position="bottomLeft"
+                              />
+                            </Grid>
+                          ),
+                          width: "fit-content",
+                        }}
+                      />
+                    </CardSection>
+                  </Card>
+                  {objectTable2}
+                </Grid>
+              </PageSection>
+            </Page>
           </Panel>
         );
 
@@ -878,57 +878,57 @@ storiesOf("Templates/02_Applications", module)
           <Panel>
             <Page
               header={{
-                title: "Object Type",
+                title: "Object Type C",
                 subtitle: "Here are all of the objects of this type...",
-                // description: "Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.",
               }}
-            />
-            <PageSection>
-              <Grid columns="1" rows="auto 300px" gap="0">
-                <Card shadow="0">
-                  <CardSection padding="0">
-                    <Bar
-                      contentAlign="center"
-                      left={{
-                        content: (
-                          <Grid columns="2">
-                            <SelectMenu
-                              options={[
-                                { value: "all", label: "All Filters" },
-                                { value: "a", label: "Filter A" },
-                                { value: "b", label: "Filter B" },
-                              ]}
-                              selectOptions="all"
-                              isClearable={false}
-                            />
-                            <TextInput type="search" placeholder="Search Objects" />
-                          </Grid>
-                        ),
-                        width: "max-content",
-                      }}
-                      right={{
-                        content: (
-                          <Grid columns="max-content max-content max-content" gap="4xl">
-                            <Command label="Action" onClick={doNothing} />
-                            <Command label="Action" onClick={doNothing} />
-                            <Menu
-                              data={[
-                                { id: "a", label: "Action" },
-                                { id: "b", label: "Action" },
-                                { id: "c", label: "Action" },
-                              ]}
-                              position="bottomLeft"
-                            />
-                          </Grid>
-                        ),
-                        width: "fit-content",
-                      }}
-                    />
-                  </CardSection>
-                </Card>
-                {objectTable3}
-              </Grid>
-            </PageSection>
+            >
+              <PageSection>
+                <Grid columns="1" rows="auto 300px" gap="0">
+                  <Card shadow="0">
+                    <CardSection padding="0">
+                      <Bar
+                        contentAlign="center"
+                        left={{
+                          content: (
+                            <Grid columns="2">
+                              <SelectMenu
+                                options={[
+                                  { value: "all", label: "All Filters" },
+                                  { value: "a", label: "Filter A" },
+                                  { value: "b", label: "Filter B" },
+                                ]}
+                                selectOptions="all"
+                                isClearable={false}
+                              />
+                              <TextInput type="search" placeholder="Search Objects" />
+                            </Grid>
+                          ),
+                          width: "max-content",
+                        }}
+                        right={{
+                          content: (
+                            <Grid columns="max-content max-content max-content" gap="4xl">
+                              <Command label="Action" onClick={doNothing} />
+                              <Command label="Action" onClick={doNothing} />
+                              <Menu
+                                data={[
+                                  { id: "a", label: "Action" },
+                                  { id: "b", label: "Action" },
+                                  { id: "c", label: "Action" },
+                                ]}
+                                position="bottomLeft"
+                              />
+                            </Grid>
+                          ),
+                          width: "fit-content",
+                        }}
+                      />
+                    </CardSection>
+                  </Card>
+                  {objectTable3}
+                </Grid>
+              </PageSection>
+            </Page>
           </Panel>
         );
 
@@ -938,28 +938,28 @@ storiesOf("Templates/02_Applications", module)
               left={{
                 content: (
                   <React.Fragment>
-                    <Title text="Record Details" size="xl" weight="bold" />
+                    <Title text="Module A" size="xl" weight="bold" />
                     <Text text="Here is everything we have for you..." size="lg" weight="bold" />
                   </React.Fragment>
                 ),
               }}
-              right={{
-                content: (
-                  <Grid columns="max-content max-content max-content" gap="4xl">
-                    <Command label="Action" onClick={doNothing} />
-                    <Command label="Action" onClick={doNothing} />
-                    <Menu
-                      data={[
-                        { id: "a", label: "Action" },
-                        { id: "b", label: "Action" },
-                        { id: "c", label: "Action" },
-                      ]}
-                      position="bottomLeft"
-                    />
-                  </Grid>
-                ),
-                width: "fit-content",
-              }}
+            // right={{
+            //   content: (
+            //     <Grid columns="max-content max-content max-content" gap="4xl">
+            //       <Command label="Action" onClick={doNothing} />
+            //       <Command label="Action" onClick={doNothing} />
+            //       <Menu
+            //         data={[
+            //           { id: "a", label: "Action" },
+            //           { id: "b", label: "Action" },
+            //           { id: "c", label: "Action" },
+            //         ]}
+            //         position="bottomLeft"
+            //       />
+            //     </Grid>
+            //   ),
+            //   width: "fit-content",
+            // }}
             />
             {/* <PageSection title="Here is some data for this object">
               <Grid columns="">
@@ -1004,28 +1004,28 @@ storiesOf("Templates/02_Applications", module)
               left={{
                 content: (
                   <React.Fragment>
-                    <Title text="Object Modules" size="xl" weight="bold" />
+                    <Title text="Module B" size="xl" weight="bold" />
                     <Text text="Here is everything we have for you..." size="lg" weight="bold" />
                   </React.Fragment>
                 ),
               }}
-              right={{
-                content: (
-                  <Grid columns="max-content max-content max-content" gap="4xl">
-                    <Command label="Action" onClick={doNothing} />
-                    <Command label="Action" onClick={doNothing} />
-                    <Menu
-                      data={[
-                        { id: "a", label: "Action" },
-                        { id: "b", label: "Action" },
-                        { id: "c", label: "Action" },
-                      ]}
-                      position="bottomLeft"
-                    />
-                  </Grid>
-                ),
-                width: "fit-content",
-              }}
+            // right={{
+            //   content: (
+            //     <Grid columns="max-content max-content max-content" gap="4xl">
+            //       <Command label="Action" onClick={doNothing} />
+            //       <Command label="Action" onClick={doNothing} />
+            //       <Menu
+            //         data={[
+            //           { id: "a", label: "Action" },
+            //           { id: "b", label: "Action" },
+            //           { id: "c", label: "Action" },
+            //         ]}
+            //         position="bottomLeft"
+            //       />
+            //     </Grid>
+            //   ),
+            //   width: "fit-content",
+            // }}
             />
             {/* <PageSection title="Some object content or workflows">
               <CardGrid columns="">
@@ -1064,28 +1064,28 @@ storiesOf("Templates/02_Applications", module)
               left={{
                 content: (
                   <React.Fragment>
-                    <Title text="Related Records" size="xl" weight="bold" />
+                    <Title text="Module C" size="xl" weight="bold" />
                     <Text text="Here is everything we have for you..." size="lg" weight="bold" />
                   </React.Fragment>
                 ),
               }}
-              right={{
-                content: (
-                  <Grid columns="max-content max-content max-content" gap="4xl">
-                    <Command label="Action" onClick={doNothing} />
-                    <Command label="Action" onClick={doNothing} />
-                    <Menu
-                      data={[
-                        { id: "a", label: "Action" },
-                        { id: "b", label: "Action" },
-                        { id: "c", label: "Action" },
-                      ]}
-                      position="bottomLeft"
-                    />
-                  </Grid>
-                ),
-                width: "fit-content",
-              }}
+            // right={{
+            //   content: (
+            //     <Grid columns="max-content max-content max-content" gap="4xl">
+            //       <Command label="Action" onClick={doNothing} />
+            //       <Command label="Action" onClick={doNothing} />
+            //       <Menu
+            //         data={[
+            //           { id: "a", label: "Action" },
+            //           { id: "b", label: "Action" },
+            //           { id: "c", label: "Action" },
+            //         ]}
+            //         position="bottomLeft"
+            //       />
+            //     </Grid>
+            //   ),
+            //   width: "fit-content",
+            // }}
             />
             {/* <PageSection title="Related records from other objects">
               <CardGrid columns="">
@@ -1133,19 +1133,19 @@ storiesOf("Templates/02_Applications", module)
         const tabButtons = [
           {
             id: "Details",
-            label: "Record Details",
+            label: "Module A",
             isSelected: activeSingleTab === "tab1",
             onClick: () => { setActiveSingleTab("tab1"); showDetails(); },
           },
           {
             id: "Modules",
-            label: "Content Modules",
+            label: "Module B",
             isSelected: activeSingleTab === "tab2",
             onClick: () => { setActiveSingleTab("tab2"); showModules(); },
           },
           {
             id: "Records",
-            label: "Related Records",
+            label: "Module C",
             isSelected: activeSingleTab === "tab3",
             onClick: () => { setActiveSingleTab("tab3"); showRelated(); },
           },
@@ -1199,7 +1199,7 @@ storiesOf("Templates/02_Applications", module)
                   }}
                   right={{
                     content: (
-                      <Grid columns="2" size="xl">
+                      <Grid columns="2" gap="xl">
                         <Menu
                           data={[
                             { id: "a", label: "Action" },
@@ -1275,7 +1275,17 @@ storiesOf("Templates/02_Applications", module)
                     padding="2x"
                     hasDivider
                     left={{
-                      content: <Image src={LightBoxLogo} alt="Lightbox Logo" width="80%" />,
+                      content: (
+                        <Grid columns="max-content 1fr" gap="2xl" align="center">
+                          <Icon
+                            icon="menu"
+                            size="lg"
+                            onClick={toggleLeft}
+                          />
+                          <Image src={LightBoxLogo} alt="Lightbox Logo" width="80%" />
+                        </Grid>
+                      ),
+                      // content: <Image src={LightBoxLogo} alt="Lightbox Logo" width="80%" />,
                       width: "15%",
                     }}
                     center={{
@@ -1290,12 +1300,24 @@ storiesOf("Templates/02_Applications", module)
                     }}
                     right={{
                       content: (
-                        <Avatar label="GP" onClick={doNothing} />
+                        <Grid columns="max-content max-content max-content max-content" gap="4xl" align="center">
+                          <Command label="Action" onClick={doNothing} />
+                          <Command label="Action" onClick={doNothing} />
+                          <Menu
+                            data={[
+                              { id: "a", label: "Action" },
+                              { id: "b", label: "Action" },
+                              { id: "c", label: "Action" },
+                            ]}
+                            position="bottomLeft"
+                          />
+                          <Avatar label="GP" onClick={doNothing} />
+                        </Grid>
                       ),
                       width: "fit-content",
                     }}
                   />
-                  <Bar
+                  {/* <Bar
                     contentAlign="center"
                     padding="2x"
                     left={{
@@ -1327,7 +1349,7 @@ storiesOf("Templates/02_Applications", module)
                       ),
                       width: "fit-content",
                     }}
-                  />
+                  /> */}
                 </React.Fragment>
               ),
             }}
@@ -1336,14 +1358,69 @@ storiesOf("Templates/02_Applications", module)
               content: (
                 <Panel
                   id="Menu"
+                  header={
+                    <Bar
+                      padding="2x"
+                      contentAlign="center"
+                      left={{
+                        content: (
+                          <Menu
+                            data={[
+                              { id: "a", label: "Action" },
+                              { id: "b", label: "Action" },
+                              { id: "c", label: "Action" },
+                            ]}
+                            position="bottomRight"
+                          />
+                          // <Grid columns="auto 1fr" gap="lg" align="center">
+                          //   <Menu
+                          //     data={[
+                          //       { id: "a", label: "Action" },
+                          //       { id: "b", label: "Action" },
+                          //       { id: "c", label: "Action" },
+                          //     ]}
+                          //     position="bottomRight"
+                          //   />
+                          //   <Title text="Application B" weight="bold" />
+                          // </Grid>
+                        ),
+                        width: "max-content",
+                        // width: "auto",
+                        // content: <Title text="Application B" weight="bold" />,
+                      }}
+                      center={{
+                        content: <Title text="Application B" weight="bold" />,
+                        align: "left",
+                      }}
+                      right={{
+                        content: (
+                          // <Grid columns="2" gap="xl" align="center">
+                          //   <Menu
+                          //     data={[
+                          //       { id: "a", label: "Action" },
+                          //       { id: "b", label: "Action" },
+                          //       { id: "c", label: "Action" },
+                          //     ]}
+                          //     position="bottomLeft"
+                          //   />
+                          <Icon
+                            icon="close"
+                            onClick={toggleLeft}
+                          />
+                          // </Grid>
+                        ),
+                        width: "max-content",
+                      }}
+                    />
+                  }
                 >
                   <Grid columns="1" gap="lg">
-                    <Bar
+                    {/* <Bar
                       padding="0"
                       left={{
                         content: (
                           <Command
-                            // icon="home"
+                            icon="home"
                             label="Home"
                             onClick={() => {
                               showHome();
@@ -1355,7 +1432,7 @@ storiesOf("Templates/02_Applications", module)
                       }}
                       right={{
                         content: (
-                          <Grid columns="2" size="xl">
+                          <Grid columns="2" gap="xl">
                             <Menu
                               data={[
                                 { id: "a", label: "Action" },
@@ -1372,9 +1449,19 @@ storiesOf("Templates/02_Applications", module)
                         ),
                         width: "max-content",
                       }}
-                    />
+                    /> */}
                     <TextInput type="search" placeholder="Search Object Types" />
                     <List isInteractive>
+                      <ListItem
+                        title="Home Page"
+                        onClick={() => {
+                          showHome();
+                          hideRecord();
+                          closeRight();
+                        }}
+                      />
+                    </List>
+                    <List title="Object Types" isInteractive>
                       <ListItem
                         title="Object Type A"
                         onClick={() => {
@@ -1412,6 +1499,7 @@ storiesOf("Templates/02_Applications", module)
                   {mainView}
                   <Panel
                     id="object record"
+                    padding="0"
                     offcanvas={recordView}
                     header={
                       <React.Fragment>
@@ -1445,39 +1533,86 @@ storiesOf("Templates/02_Applications", module)
                             width: "max-content",
                           }}
                         />
-                        <Tabs data={tabButtons} />
+                        {/* <Tabs data={tabButtons} /> */}
                       </React.Fragment>
                     }
                   >
-                    <Page>
+                    <Page columns="15rem 1fr" gap="2xl">
+                      <Card
+                        padding="4x"
+                      >
+                        <CardSection>
+                          {/* <Tabs data={tabButtons} isVertical /> */}
+                          <List title="1: Site Verification" isInteractive>
+                            <ListItem
+                              title="View Site"
+                              onClick={() => {
+                                showDetails();
+                              }}
+                            />
+                          </List>
+                        </CardSection>
+                        <CardSection>
+                          <List title="2: Research Tasks" isInteractive>
+                            <ListItem
+                              title="Task 1"
+                              onClick={() => {
+                                showModules();
+                              }}
+                            />
+                            <ListItem
+                              title="Task 2"
+                              onClick={() => {
+                                showRelated();
+                              }}
+                            />
+                            <ListItem
+                              title="Task 2"
+                              onClick={() => {
+                                showModules();
+                              }}
+                            />
+                          </List>
+                        </CardSection>
+                        <CardSection>
+                          <List title="3: Review" isInteractive>
+                            <ListItem
+                              title="View Report"
+                              onClick={() => {
+                                showDetails();
+                              }}
+                            />
+                          </List>
+                        </CardSection>
+                      </Card>
                       {recordSection}
                     </Page>
                   </Panel>
                 </React.Fragment>
               ),
             }}
-            right={{
-              id: "Right",
-              content: objectSummary,
-              visible: rightOpen,
-            }}
-            // bottom={{ id: "Bottom", content: "" }}
-            footer={{
-              id: "Footer",
-              content: (
-                <Card>
-                  <Bar
-                    contentAlign="center"
-                    padding="2x"
-                    left={{
-                      content: (
-                        <Title text="Footer content goes here" />
-                      ),
-                    }}
-                  />
-                </Card>
-              ),
-            }}
+          // right={{
+          //   id: "Right",
+          //   content: <Tabs data={tabButtons} isVertical />,
+          //   visible: rightOpen,
+          // }}
+          // bottom={{ id: "Bottom", content: "" }}
+          // footer={{
+          //   id: "Footer",
+          //   content: (
+          //     <Card>
+          //       <Bar
+          //         contentAlign="center"
+          //         padding="2x"
+          //         left={{
+          //           content: (
+          //             <Title text="Footer content goes here" />
+          //           ),
+          //         }}
+          //       />
+          //     </Card>
+          //   ),
+          // }}
           />
         );
       });
