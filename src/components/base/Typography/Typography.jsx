@@ -256,7 +256,7 @@ Label.propTypes = {
   isRequired: PropTypes.bool,
   /** Options: 'xs', 'sm', 'lg' */
   size: PropTypes.string,
-  text: PropTypes.string,
+  text: PropTypes.node,
   /** Options: 'light', 'bold' */
   weight: PropTypes.string,
 };

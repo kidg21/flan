@@ -8,7 +8,6 @@ import Text from "base/Typography";
 import TextInput from "atoms/TextInput";
 
 
-
 const NewInput = styled.input`
 width: 0.1px;
 height: 0.1px;
@@ -60,25 +59,40 @@ cursor: pointer;
   `;
 
 
-function FileImport({onChange}) {
+function FileImport({ id, onChange }) {
+  const [state, setState] = useState();
 
-    const [state, setState] = useState();
-
-    return (
-    <Grid columns="1fr 3fr" gap="xs">
-        <React.Fragment>
-        <NewInput type="file"  id="file" class="inputFile" onChange={(e) => {
-    if(typeof onChange === "function"){
+  return (
+    <Grid columns="1fr 3fr" gap="xs" id={id}>
+      <React.Fragment>
+        <NewInput
+          type="file"
+          class="inputFile"
+          onChange={(e) => {
+    if (typeof onChange === "function") {
       onChange(e.target.files);
     }
     setState(e.target.files[0].name);
-  }} />
-      <NewLabel for="file" ><Text weight="bold" size="lg" text="Upload" /></NewLabel>
+  }}
+        />
+        <NewLabel for="file" ><Text weight="bold" size="lg" text="Upload" /></NewLabel>
       </React.Fragment>
-      <TextInput placeholder={state}/>
+      <TextInput placeholder={state} />
     </Grid>
   );
 }
+
+
+FileImport.propTypes = {
+  id: PropTypes.string,
+  onChange: PropTypes.func,
+};
+
+
+FileImport.defaultProps = {
+  id: null,
+  onChange: null,
+};
 
 
 export default FileImport;
