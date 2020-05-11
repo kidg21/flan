@@ -67,7 +67,6 @@ function FileImport({ id, onChange }) {
       <React.Fragment>
         <NewInput
           type="file"
-          id="file"
           class="inputFile"
           onChange={(e) => {
     if (typeof onChange === "function") {
