@@ -39,9 +39,9 @@ Array [
               rows={null}
             >
               <h5
-                className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+                className="Typography__TitleText-sc-19auepv-2 KxMwb"
                 fontSize="1.15em"
-                fontWeight={600}
+                fontWeight={400}
                 letterSpacing="0px"
               >
                 This is a Standard notification telling you stuff.
@@ -84,7 +84,7 @@ Array [
     </span>
   </div>,
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 jgKudQ"
+    className="Button__StyledButton-sc-1v7sls2-0 XXdV"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -99,8 +99,8 @@ Array [
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
-        fontSize="0.876em"
+        className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
+        fontSize="1em"
         fontWeight={600}
         htmlFor={null}
         letterSpacing="0px"
@@ -152,8 +152,8 @@ Array [
               className="Bar__Slot-icfo76-1 RjiBe"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                fontSize="1em"
+                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                fontSize="0.876em"
                 fontWeight={400}
                 id={null}
                 letterSpacing="0px"
@@ -167,7 +167,7 @@ Array [
     </span>
   </div>,
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 jgKudQ"
+    className="Button__StyledButton-sc-1v7sls2-0 XXdV"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -182,8 +182,8 @@ Array [
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
-        fontSize="0.876em"
+        className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
+        fontSize="1em"
         fontWeight={600}
         htmlFor={null}
         letterSpacing="0px"
@@ -233,14 +233,14 @@ Array [
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 cLteVL"
-                fontSize="1em"
+              <h5
+                className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+                fontSize="1.15em"
                 fontWeight={600}
                 letterSpacing="0px"
               >
                 Default Dialog
-              </h6>
+              </h5>
             </div>
           </div>
         </section>
@@ -250,8 +250,8 @@ Array [
           onClick={null}
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-            fontSize="1em"
+            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+            fontSize="0.876em"
             fontWeight={400}
             id={null}
             letterSpacing="0px"
@@ -260,7 +260,7 @@ Array [
           </p>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 eaKoCk"
           id={null}
           onClick={null}
         >
@@ -270,7 +270,7 @@ Array [
             rows={null}
           >
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 jgKudQ DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
+              className="Button__StyledButton-sc-1v7sls2-0 XXdV DialogBox__PrimaryButton-iv0dnf-3 kFUBVj"
               disabled={false}
               htmlFor={null}
               id="Cancel"
@@ -285,8 +285,8 @@ Array [
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
-                  fontSize="0.876em"
+                  className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
+                  fontSize="1em"
                   fontWeight={600}
                   htmlFor={null}
                   letterSpacing="0px"
@@ -296,7 +296,7 @@ Array [
               </section>
             </button>
             <button
-              className="Button__StyledButton-sc-1v7sls2-0 iyowdu DialogBox__SecondaryButton-iv0dnf-4 RChLi"
+              className="Button__StyledButton-sc-1v7sls2-0 mWjML DialogBox__SecondaryButton-iv0dnf-4 RChLi"
               disabled={false}
               htmlFor={null}
               id="Confirm"
@@ -311,8 +311,8 @@ Array [
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
-                  fontSize="0.876em"
+                  className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
+                  fontSize="1em"
                   fontWeight={600}
                   htmlFor={null}
                   letterSpacing="0px"
@@ -327,7 +327,7 @@ Array [
     </span>
   </div>,
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 jgKudQ"
+    className="Button__StyledButton-sc-1v7sls2-0 XXdV"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -342,8 +342,8 @@ Array [
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
-        fontSize="0.876em"
+        className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
+        fontSize="1em"
         fontWeight={600}
         htmlFor={null}
         letterSpacing="0px"
@@ -395,8 +395,8 @@ Array [
               className="Bar__Slot-icfo76-1 RjiBe"
             >
               <p
-                className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-                fontSize="1em"
+                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                fontSize="0.876em"
                 fontWeight={400}
                 id={null}
                 letterSpacing="0px"
@@ -410,7 +410,7 @@ Array [
     </span>
   </div>,
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 jgKudQ"
+    className="Button__StyledButton-sc-1v7sls2-0 XXdV"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -425,8 +425,8 @@ Array [
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
-        fontSize="0.876em"
+        className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
+        fontSize="1em"
         fontWeight={600}
         htmlFor={null}
         letterSpacing="0px"
@@ -485,7 +485,7 @@ Array [
     </section>
   </div>,
   <button
-    className="Button__StyledButton-sc-1v7sls2-0 jgKudQ"
+    className="Button__StyledButton-sc-1v7sls2-0 XXdV"
     disabled={false}
     htmlFor={null}
     id={null}
@@ -500,8 +500,8 @@ Array [
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
-        fontSize="0.876em"
+        className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
+        fontSize="1em"
         fontWeight={600}
         htmlFor={null}
         letterSpacing="0px"

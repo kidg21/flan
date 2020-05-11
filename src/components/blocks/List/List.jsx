@@ -32,6 +32,7 @@ const ListWrapper = styled.ul`
     return props.isDivided ? props.theme.palette.neutral40 : "";
   }};
   }
+  
 `;
 
 const ListItemWrapper = styled.li`

@@ -143,7 +143,7 @@ function Checkbox({
         outlineColor={outlineColor}
         tabIndex={tabIndex}
       />
-      {label ? <Label weight="bold" htmlFor={id} text={label} /> : null}
+      {label ? <Label htmlFor={id} text={label} /> : null}
     </CheckboxContainer>
   );
 }

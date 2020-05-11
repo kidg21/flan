@@ -143,11 +143,11 @@ exports[` 3`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 gKzexq Slider__SliderLabel-sc-1hp9era-1 bMyAub"
+          className="Typography__StyledLabel-sc-19auepv-0 jQIxhe Slider__SliderLabel-sc-1hp9era-1 bMyAub"
           fontSize="0.876em"
           fontWeight={600}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           1
         </label>
@@ -171,11 +171,11 @@ exports[` 3`] = `
             className="Bar__Slot-icfo76-1 fNcQEg"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+              className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
               fontSize="0.876em"
               fontWeight={600}
               htmlFor={null}
-              letterSpacing="0px"
+              letterSpacing="0.2px"
             >
               1
             </label>
@@ -184,11 +184,11 @@ exports[` 3`] = `
             className="Bar__Slot-icfo76-1 kZQbjh"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+              className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
               fontSize="0.876em"
               fontWeight={600}
               htmlFor={null}
-              letterSpacing="0px"
+              letterSpacing="0.2px"
             >
               20
             </label>
@@ -224,11 +224,11 @@ exports[` 3`] = `
             className="Bar__Slot-icfo76-1 fNcQEg"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+              className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
               fontSize="0.876em"
               fontWeight={600}
               htmlFor={null}
-              letterSpacing="0px"
+              letterSpacing="0.2px"
             >
               1
             </label>
@@ -237,11 +237,11 @@ exports[` 3`] = `
             className="Bar__Slot-icfo76-1 kZQbjh"
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+              className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
               fontSize="0.876em"
               fontWeight={600}
               htmlFor={null}
-              letterSpacing="0px"
+              letterSpacing="0.2px"
             >
               20
             </label>

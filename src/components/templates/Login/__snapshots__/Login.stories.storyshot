@@ -1,0 +1,942 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  className="Page__PageWrapper-mddda5-0 kZAGCU"
+  id={null}
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn Page__Body-mddda5-2 fBCJXI"
+    id={null}
+    rows={null}
+  >
+    <div
+      className="Bar__BarLayout-icfo76-2 gJPHni"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-icfo76-1 geRRsh"
+      >
+        <img
+          className="Image__ImageWrapper-sc-18abvff-0 lcLRxB"
+          onClick={null}
+          src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
+          width="10rem"
+        />
+      </div>
+    </div>
+    <form
+      action={null}
+      className="Form__FormWrapper-v2wrel-0 geeIqY"
+      id={null}
+      method={null}
+      onSubmit={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ceKbHJ Form__Header-v2wrel-1 fWCIUW"
+        id={null}
+        rows={null}
+      >
+        <h4
+          className="Typography__TitleText-sc-19auepv-2 czurBm"
+          fontSize="1.25em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Login
+        </h4>
+      </section>
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 dGwfwW Form__Inputs-v2wrel-3 dLfNrm"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Form__Section-v2wrel-2 dIXoJq"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            id="15889610702129997394572_container"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+              fontSize="0.876em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0.2px"
+            >
+              Email
+            </label>
+            <input
+              autoComplete="off"
+              className="TextInput__Input-sc-1fep8p8-2 fYseJG"
+              cols=""
+              disabled={false}
+              id="15889610702129997394572"
+              list={null}
+              name="15889610702129997394572"
+              onBlur={null}
+              onChange={null}
+              onFocus={null}
+              onKeyPress={null}
+              pattern={null}
+              placeholder="youremail@company.com"
+              rows=""
+              type="text"
+              value={null}
+            />
+          </section>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            id="158896107021319881839323_container"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+              fontSize="0.876em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0.2px"
+            >
+              Password
+            </label>
+            <input
+              autoComplete="off"
+              className="TextInput__Input-sc-1fep8p8-2 fYseJG"
+              cols=""
+              disabled={false}
+              id="158896107021319881839323"
+              list={null}
+              name="158896107021319881839323"
+              onBlur={null}
+              onChange={null}
+              onFocus={null}
+              onKeyPress={null}
+              pattern={null}
+              placeholder={null}
+              rows=""
+              type="text"
+              value={null}
+            />
+          </section>
+        </section>
+        <section
+          className="Form__Section-v2wrel-2 dIXoJq"
+        >
+          <button
+            className="Button__StyledButton-sc-1v7sls2-0 XXdV"
+            disabled={false}
+            htmlFor={null}
+            id={null}
+            name={null}
+            onClick={null}
+            tabIndex="1"
+            type="button"
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
+                fontSize="1em"
+                fontWeight={600}
+                htmlFor={null}
+                letterSpacing="0px"
+              >
+                Login
+              </label>
+            </section>
+          </button>
+          <div
+            className="Bar__BarLayout-icfo76-2 jeDoRc"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 dLaZFL"
+            >
+              <a
+                className="Typography__LinkText-sc-19auepv-1 gNLOpf"
+                fontSize="0.876em"
+                fontWeight={400}
+                href={null}
+                letterSpacing="0px"
+                onClick={null}
+                target={null}
+              >
+                Forget Password?
+              </a>
+            </div>
+          </div>
+          <div
+            className="Bar__BarLayout-icfo76-2 jeDoRc"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 dLaZFL"
+            >
+              <button
+                className="Button__StyledButton-sc-1v7sls2-0 mWjML"
+                disabled={false}
+                htmlFor={null}
+                id={null}
+                name={null}
+                onClick={null}
+                tabIndex="1"
+                type="button"
+              >
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                  id={null}
+                  rows={null}
+                >
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
+                    fontSize="1em"
+                    fontWeight={600}
+                    htmlFor={null}
+                    letterSpacing="0px"
+                  >
+                    New User? Go to Register
+                  </label>
+                </section>
+              </button>
+            </div>
+          </div>
+        </section>
+      </section>
+    </form>
+  </section>
+</div>
+`;
+
+exports[` 2`] = `
+<div
+  className="Page__PageWrapper-mddda5-0 kZAGCU"
+  id={null}
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn Page__Body-mddda5-2 fBCJXI"
+    id={null}
+    rows={null}
+  >
+    <div
+      className="Bar__BarLayout-icfo76-2 gJPHni"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-icfo76-1 geRRsh"
+      >
+        <img
+          className="Image__ImageWrapper-sc-18abvff-0 lcLRxB"
+          onClick={null}
+          src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
+          width="10rem"
+        />
+      </div>
+    </div>
+    <form
+      action={null}
+      className="Form__FormWrapper-v2wrel-0 geeIqY"
+      id={null}
+      method={null}
+      onSubmit={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ceKbHJ Form__Header-v2wrel-1 fWCIUW"
+        id={null}
+        rows={null}
+      >
+        <h4
+          className="Typography__TitleText-sc-19auepv-2 czurBm"
+          fontSize="1.25em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Registration
+        </h4>
+      </section>
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 dGwfwW Form__Inputs-v2wrel-3 dLfNrm"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Form__Section-v2wrel-2 dIXoJq"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            id="15889610730268006527194_container"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+              fontSize="0.876em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0.2px"
+            >
+              Email
+            </label>
+            <input
+              autoComplete="off"
+              className="TextInput__Input-sc-1fep8p8-2 fYseJG"
+              cols=""
+              disabled={false}
+              id="15889610730268006527194"
+              list={null}
+              name="15889610730268006527194"
+              onBlur={null}
+              onChange={null}
+              onFocus={null}
+              onKeyPress={null}
+              pattern={null}
+              placeholder="youremail@company.com"
+              rows=""
+              type="text"
+              value={null}
+            />
+          </section>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            id="1588961073027136534215_container"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+              fontSize="0.876em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0.2px"
+            >
+              Password
+            </label>
+            <input
+              autoComplete="off"
+              className="TextInput__Input-sc-1fep8p8-2 fYseJG"
+              cols=""
+              disabled={false}
+              id="1588961073027136534215"
+              list={null}
+              name="1588961073027136534215"
+              onBlur={null}
+              onChange={null}
+              onFocus={null}
+              onKeyPress={null}
+              pattern={null}
+              placeholder={null}
+              rows=""
+              type="text"
+              value={null}
+            />
+          </section>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            id="158896107302713790793036_container"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+              fontSize="0.876em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0.2px"
+            >
+              Confirm Password
+            </label>
+            <input
+              autoComplete="off"
+              className="TextInput__Input-sc-1fep8p8-2 fYseJG"
+              cols=""
+              disabled={false}
+              id="158896107302713790793036"
+              list={null}
+              name="158896107302713790793036"
+              onBlur={null}
+              onChange={null}
+              onFocus={null}
+              onKeyPress={null}
+              pattern={null}
+              placeholder={null}
+              rows=""
+              type="text"
+              value={null}
+            />
+          </section>
+        </section>
+        <section
+          className="Form__Section-v2wrel-2 dIXoJq"
+        >
+          <button
+            className="Button__StyledButton-sc-1v7sls2-0 XXdV"
+            disabled={false}
+            htmlFor={null}
+            id={null}
+            name={null}
+            onClick={null}
+            tabIndex="1"
+            type="button"
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
+                fontSize="1em"
+                fontWeight={600}
+                htmlFor={null}
+                letterSpacing="0px"
+              >
+                Register
+              </label>
+            </section>
+          </button>
+        </section>
+      </section>
+    </form>
+  </section>
+</div>
+`;
+
+exports[` 3`] = `
+<div
+  className="Page__PageWrapper-mddda5-0 kZAGCU"
+  id={null}
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn Page__Body-mddda5-2 fBCJXI"
+    id={null}
+    rows={null}
+  >
+    <div
+      className="Bar__BarLayout-icfo76-2 gJPHni"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-icfo76-1 geRRsh"
+      >
+        <img
+          className="Image__ImageWrapper-sc-18abvff-0 lcLRxB"
+          onClick={null}
+          src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
+          width="10rem"
+        />
+      </div>
+    </div>
+    <form
+      action={null}
+      className="Form__FormWrapper-v2wrel-0 geeIqY"
+      id={null}
+      method={null}
+      onSubmit={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ceKbHJ Form__Header-v2wrel-1 fWCIUW"
+        id={null}
+        rows={null}
+      >
+        <h4
+          className="Typography__TitleText-sc-19auepv-2 czurBm"
+          fontSize="1.25em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Reset Password
+        </h4>
+      </section>
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 dGwfwW Form__Inputs-v2wrel-3 dLfNrm"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Form__Section-v2wrel-2 dIXoJq"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            id="15889610757399083923747_container"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+              fontSize="0.876em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0.2px"
+            >
+              Email
+            </label>
+            <input
+              autoComplete="off"
+              className="TextInput__Input-sc-1fep8p8-2 fYseJG"
+              cols=""
+              disabled={false}
+              id="15889610757399083923747"
+              list={null}
+              name="15889610757399083923747"
+              onBlur={null}
+              onChange={null}
+              onFocus={null}
+              onKeyPress={null}
+              pattern={null}
+              placeholder="youremail@company.com"
+              rows=""
+              type="text"
+              value={null}
+            />
+          </section>
+        </section>
+        <section
+          className="Form__Section-v2wrel-2 dIXoJq"
+        >
+          <button
+            className="Button__StyledButton-sc-1v7sls2-0 XXdV"
+            disabled={false}
+            htmlFor={null}
+            id={null}
+            name={null}
+            onClick={null}
+            tabIndex="1"
+            type="button"
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
+                fontSize="1em"
+                fontWeight={600}
+                htmlFor={null}
+                letterSpacing="0px"
+              >
+                Send
+              </label>
+            </section>
+          </button>
+          <div
+            className="Bar__BarLayout-icfo76-2 jeDoRc"
+            id={null}
+            onClick={null}
+          >
+            <div
+              className="Bar__Slot-icfo76-1 dLaZFL"
+            >
+              <button
+                className="Button__StyledButton-sc-1v7sls2-0 mWjML"
+                disabled={false}
+                htmlFor={null}
+                id={null}
+                name={null}
+                onClick={null}
+                tabIndex="1"
+                type="button"
+              >
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                  id={null}
+                  rows={null}
+                >
+                  <label
+                    className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
+                    fontSize="1em"
+                    fontWeight={600}
+                    htmlFor={null}
+                    letterSpacing="0px"
+                  >
+                    New User? Go to Register
+                  </label>
+                </section>
+              </button>
+            </div>
+          </div>
+        </section>
+      </section>
+    </form>
+  </section>
+</div>
+`;
+
+exports[` 4`] = `
+<div
+  className="Page__PageWrapper-mddda5-0 kZAGCU"
+  id={null}
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn Page__Body-mddda5-2 fBCJXI"
+    id={null}
+    rows={null}
+  >
+    <div
+      className="Bar__BarLayout-icfo76-2 gJPHni"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-icfo76-1 geRRsh"
+      >
+        <img
+          className="Image__ImageWrapper-sc-18abvff-0 lcLRxB"
+          onClick={null}
+          src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
+          width="10rem"
+        />
+      </div>
+    </div>
+    <form
+      action={null}
+      className="Form__FormWrapper-v2wrel-0 geeIqY"
+      id={null}
+      method={null}
+      onSubmit={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ceKbHJ Form__Header-v2wrel-1 fWCIUW"
+        id={null}
+        rows={null}
+      >
+        <h4
+          className="Typography__TitleText-sc-19auepv-2 czurBm"
+          fontSize="1.25em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Email Sent
+        </h4>
+      </section>
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 dGwfwW Form__Inputs-v2wrel-3 dLfNrm"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Form__Section-v2wrel-2 dIXoJq"
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+            fontSize="0.876em"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0px"
+          >
+            If you don't see an email in the next few minutes please select the link to send again.
+          </p>
+          <a
+            className="Typography__LinkText-sc-19auepv-1 jNvZLF"
+            fontSize="0.876em"
+            fontWeight={600}
+            href={null}
+            letterSpacing="0px"
+            onClick={null}
+            target={null}
+          >
+            Send Again
+          </a>
+        </section>
+      </section>
+    </form>
+  </section>
+</div>
+`;
+
+exports[` 5`] = `
+<div
+  className="Page__PageWrapper-mddda5-0 kZAGCU"
+  id={null}
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn Page__Body-mddda5-2 fBCJXI"
+    id={null}
+    rows={null}
+  >
+    <div
+      className="Bar__BarLayout-icfo76-2 gJPHni"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-icfo76-1 geRRsh"
+      >
+        <img
+          className="Image__ImageWrapper-sc-18abvff-0 lcLRxB"
+          onClick={null}
+          src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
+          width="10rem"
+        />
+      </div>
+    </div>
+    <form
+      action={null}
+      className="Form__FormWrapper-v2wrel-0 geeIqY"
+      id={null}
+      method={null}
+      onSubmit={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ceKbHJ Form__Header-v2wrel-1 fWCIUW"
+        id={null}
+        rows={null}
+      >
+        <h4
+          className="Typography__TitleText-sc-19auepv-2 czurBm"
+          fontSize="1.25em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Create New Password
+        </h4>
+      </section>
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 dGwfwW Form__Inputs-v2wrel-3 dLfNrm"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Form__Section-v2wrel-2 dIXoJq"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            id="15889610810515780786398_container"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+              fontSize="0.876em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0.2px"
+            >
+              Confirm Email
+            </label>
+            <input
+              autoComplete="off"
+              className="TextInput__Input-sc-1fep8p8-2 fYseJG"
+              cols=""
+              disabled={false}
+              id="15889610810515780786398"
+              list={null}
+              name="15889610810515780786398"
+              onBlur={null}
+              onChange={null}
+              onFocus={null}
+              onKeyPress={null}
+              pattern={null}
+              placeholder={null}
+              rows=""
+              type="text"
+              value={null}
+            />
+          </section>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            id="1588961081052931828529_container"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+              fontSize="0.876em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0.2px"
+            >
+              Password
+            </label>
+            <input
+              autoComplete="off"
+              className="TextInput__Input-sc-1fep8p8-2 fYseJG"
+              cols=""
+              disabled={false}
+              id="1588961081052931828529"
+              list={null}
+              name="1588961081052931828529"
+              onBlur={null}
+              onChange={null}
+              onFocus={null}
+              onKeyPress={null}
+              pattern={null}
+              placeholder={null}
+              rows=""
+              type="text"
+              value={null}
+            />
+          </section>
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            id="1588961081053165660085310_container"
+            rows={null}
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+              fontSize="0.876em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0.2px"
+            >
+              Confirm Password
+            </label>
+            <input
+              autoComplete="off"
+              className="TextInput__Input-sc-1fep8p8-2 fYseJG"
+              cols=""
+              disabled={false}
+              id="1588961081053165660085310"
+              list={null}
+              name="1588961081053165660085310"
+              onBlur={null}
+              onChange={null}
+              onFocus={null}
+              onKeyPress={null}
+              pattern={null}
+              placeholder={null}
+              rows=""
+              type="text"
+              value={null}
+            />
+          </section>
+        </section>
+        <section
+          className="Form__Section-v2wrel-2 dIXoJq"
+        >
+          <button
+            className="Button__StyledButton-sc-1v7sls2-0 XXdV"
+            disabled={false}
+            htmlFor={null}
+            id={null}
+            name={null}
+            onClick={null}
+            tabIndex="1"
+            type="button"
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
+                fontSize="1em"
+                fontWeight={600}
+                htmlFor={null}
+                letterSpacing="0px"
+              >
+                Confirm
+              </label>
+            </section>
+          </button>
+        </section>
+      </section>
+    </form>
+  </section>
+</div>
+`;
+
+exports[` 6`] = `
+<div
+  className="Page__PageWrapper-mddda5-0 kZAGCU"
+  id={null}
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn Page__Body-mddda5-2 fBCJXI"
+    id={null}
+    rows={null}
+  >
+    <div
+      className="Bar__BarLayout-icfo76-2 gJPHni"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-icfo76-1 geRRsh"
+      >
+        <img
+          className="Image__ImageWrapper-sc-18abvff-0 lcLRxB"
+          onClick={null}
+          src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
+          width="10rem"
+        />
+      </div>
+    </div>
+    <form
+      action={null}
+      className="Form__FormWrapper-v2wrel-0 geeIqY"
+      id={null}
+      method={null}
+      onSubmit={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ceKbHJ Form__Header-v2wrel-1 fWCIUW"
+        id={null}
+        rows={null}
+      >
+        <h4
+          className="Typography__TitleText-sc-19auepv-2 czurBm"
+          fontSize="1.25em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Confirmed New Password
+        </h4>
+      </section>
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 dGwfwW Form__Inputs-v2wrel-3 dLfNrm"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Form__Section-v2wrel-2 dIXoJq"
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+            fontSize="0.876em"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0px"
+          >
+            You have successfully changed your password. Return to Login to re-enter your new credentials.
+          </p>
+        </section>
+        <section
+          className="Form__Section-v2wrel-2 dIXoJq"
+        >
+          <button
+            className="Button__StyledButton-sc-1v7sls2-0 XXdV"
+            disabled={false}
+            htmlFor={null}
+            id={null}
+            name={null}
+            onClick={null}
+            tabIndex="1"
+            type="button"
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+              id={null}
+              rows={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
+                fontSize="1em"
+                fontWeight={600}
+                htmlFor={null}
+                letterSpacing="0px"
+              >
+                Go to Login
+              </label>
+            </section>
+          </button>
+        </section>
+      </section>
+    </form>
+  </section>
+</div>
+`;

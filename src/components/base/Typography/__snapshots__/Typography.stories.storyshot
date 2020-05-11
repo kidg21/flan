@@ -7,8 +7,8 @@ exports[` 1`] = `
   rows={null}
 >
   <p
-    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-    fontSize="1em"
+    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+    fontSize="0.876em"
     fontWeight={400}
     id={null}
     letterSpacing="0px"
@@ -24,17 +24,17 @@ exports[` 1`] = `
     Title
   </h6>
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 gFLpkg"
+    className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
     fontSize="0.876em"
     fontWeight={400}
     htmlFor={null}
-    letterSpacing="0px"
+    letterSpacing="0.2px"
   >
     Label
   </label>
   <a
-    className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-    fontSize="inherit"
+    className="Typography__LinkText-sc-19auepv-1 jNvZLF"
+    fontSize="0.876em"
     fontWeight={600}
     href={null}
     letterSpacing="0px"
@@ -71,8 +71,8 @@ exports[` 2`] = `
     Small Text
   </p>
   <p
-    className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
-    fontSize="1em"
+    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+    fontSize="0.876em"
     fontWeight={400}
     id={null}
     letterSpacing="0px"
@@ -173,11 +173,11 @@ exports[` 4`] = `
     Small Label
   </label>
   <label
-    className="Typography__StyledLabel-sc-19auepv-0 gFLpkg"
+    className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
     fontSize="0.876em"
     fontWeight={400}
     htmlFor={null}
-    letterSpacing="0px"
+    letterSpacing="0.2px"
   >
     Normal Label
   </label>
@@ -200,8 +200,8 @@ exports[` 5`] = `
   rows={null}
 >
   <a
-    className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-    fontSize="inherit"
+    className="Typography__LinkText-sc-19auepv-1 jNvZLF"
+    fontSize="0.876em"
     fontWeight={600}
     href={null}
     letterSpacing="0px"

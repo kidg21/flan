@@ -14,11 +14,11 @@ exports[` 1`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+      className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
       fontSize="0.876em"
       fontWeight={600}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Color Picker
     </label>
@@ -28,21 +28,21 @@ exports[` 1`] = `
       rows={null}
     >
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 eGDhqa"
+        className="Picker__Swatch-sc-1xwpkqn-1 gnJWmO"
         color="jobs"
         height="1.5rem"
         onClick={null}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 dSCfil"
+        className="Picker__Swatch-sc-1xwpkqn-1 gnJWmO"
         color="bi"
         height="1.5rem"
         onClick={null}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 eHeTdp"
+        className="Picker__Swatch-sc-1xwpkqn-1 gnJWmO"
         color="research"
         height="1.5rem"
         onClick={null}
@@ -70,28 +70,28 @@ exports[` 1`] = `
         </svg>
       </button>
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 keJmmc"
+        className="Picker__Swatch-sc-1xwpkqn-1 gnJWmO"
         color="brand1"
         height="1.5rem"
         onClick={null}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 kGlKsI"
+        className="Picker__Swatch-sc-1xwpkqn-1 gnJWmO"
         color="brand2"
         height="1.5rem"
         onClick={null}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 HTzlT"
+        className="Picker__Swatch-sc-1xwpkqn-1 gnJWmO"
         color="brand3"
         height="1.5rem"
         onClick={null}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 gZeCSS"
+        className="Picker__Swatch-sc-1xwpkqn-1 gnJWmO"
         color="brand4"
         height="1.5rem"
         onClick={null}
@@ -116,11 +116,11 @@ exports[` 2`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+      className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
       fontSize="0.876em"
       fontWeight={600}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Standard Swatches
     </label>
@@ -130,21 +130,21 @@ exports[` 2`] = `
       rows={null}
     >
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 eGDhqa"
+        className="Picker__Swatch-sc-1xwpkqn-1 gnJWmO"
         color="jobs"
         height="1.5rem"
         onClick={[Function]}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 eHeTdp"
+        className="Picker__Swatch-sc-1xwpkqn-1 gnJWmO"
         color="research"
         height="1.5rem"
         onClick={[Function]}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 dSCfil"
+        className="Picker__Swatch-sc-1xwpkqn-1 gnJWmO"
         color="bi"
         height="1.5rem"
         onClick={[Function]}
@@ -169,11 +169,11 @@ exports[` 3`] = `
     rows={null}
   >
     <label
-      className="Typography__StyledLabel-sc-19auepv-0 gKzexq"
+      className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
       fontSize="0.876em"
       fontWeight={600}
       htmlFor={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Square Swatches
     </label>
@@ -183,21 +183,21 @@ exports[` 3`] = `
       rows={null}
     >
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 bqPWCi"
+        className="Picker__Swatch-sc-1xwpkqn-1 dSnJoi"
         color="jobs"
         height="1.5rem"
         onClick={[Function]}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 cPXZUR"
+        className="Picker__Swatch-sc-1xwpkqn-1 dSnJoi"
         color="research"
         height="1.5rem"
         onClick={[Function]}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 iIbrJh"
+        className="Picker__Swatch-sc-1xwpkqn-1 dSnJoi"
         color="bi"
         height="1.5rem"
         onClick={[Function]}

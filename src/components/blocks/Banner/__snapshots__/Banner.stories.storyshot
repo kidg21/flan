@@ -29,9 +29,9 @@ exports[` 1`] = `
           rows={null}
         >
           <h5
-            className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+            className="Typography__TitleText-sc-19auepv-2 KxMwb"
             fontSize="1.15em"
-            fontWeight={600}
+            fontWeight={400}
             letterSpacing="0px"
           >
             This is a Banner.
@@ -91,7 +91,7 @@ exports[` 2`] = `
         className="Bar__Slot-icfo76-1 boCGaE"
       >
         <div
-          className="Avatar__TagContainer-sc-1vuf9om-2 dqLiae"
+          className="Avatar__TagContainer-sc-1vuf9om-2 bIbEMn"
           id={null}
           onClick={null}
         >
@@ -126,9 +126,9 @@ exports[` 2`] = `
           rows={null}
         >
           <h5
-            className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+            className="Typography__TitleText-sc-19auepv-2 KxMwb"
             fontSize="1.15em"
-            fontWeight={600}
+            fontWeight={400}
             letterSpacing="0px"
           >
             This is a Banner
@@ -143,8 +143,8 @@ exports[` 2`] = `
             A description can go here, if necessary.
           </p>
           <a
-            className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-            fontSize="inherit"
+            className="Typography__LinkText-sc-19auepv-1 jNvZLF"
+            fontSize="0.876em"
             fontWeight={600}
             href={null}
             letterSpacing="0px"
@@ -218,9 +218,9 @@ exports[` 3`] = `
             rows={null}
           >
             <h5
-              className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
               fontSize="1.15em"
-              fontWeight={600}
+              fontWeight={400}
               letterSpacing="0px"
             >
               This is a Banner.
@@ -274,9 +274,9 @@ exports[` 3`] = `
             rows={null}
           >
             <h5
-              className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
               fontSize="1.15em"
-              fontWeight={600}
+              fontWeight={400}
               letterSpacing="0px"
             >
               This is a Banner.
@@ -339,9 +339,9 @@ exports[` 3`] = `
             rows={null}
           >
             <h5
-              className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
               fontSize="1.15em"
-              fontWeight={600}
+              fontWeight={400}
               letterSpacing="0px"
             >
               This is a Banner.
@@ -356,8 +356,8 @@ exports[` 3`] = `
               A description can go here, if necessary.
             </p>
             <a
-              className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-              fontSize="inherit"
+              className="Typography__LinkText-sc-19auepv-1 jNvZLF"
+              fontSize="0.876em"
               fontWeight={600}
               href={null}
               letterSpacing="0px"
@@ -427,7 +427,7 @@ exports[` 4`] = `
           className="Bar__Slot-icfo76-1 boCGaE"
         >
           <div
-            className="Avatar__TagContainer-sc-1vuf9om-2 dqLiae"
+            className="Avatar__TagContainer-sc-1vuf9om-2 bIbEMn"
             id={null}
             onClick={null}
           >
@@ -462,9 +462,9 @@ exports[` 4`] = `
             rows={null}
           >
             <h5
-              className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
               fontSize="1.15em"
-              fontWeight={600}
+              fontWeight={400}
               letterSpacing="0px"
             >
               This is a Banner.
@@ -479,8 +479,8 @@ exports[` 4`] = `
               A description can go here, if necessary.
             </p>
             <a
-              className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-              fontSize="inherit"
+              className="Typography__LinkText-sc-19auepv-1 jNvZLF"
+              fontSize="0.876em"
               fontWeight={600}
               href={null}
               letterSpacing="0px"
@@ -585,9 +585,9 @@ exports[` 5`] = `
             rows={null}
           >
             <h5
-              className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
               fontSize="1.15em"
-              fontWeight={600}
+              fontWeight={400}
               letterSpacing="0px"
             >
               This is an Info Banner.
@@ -688,9 +688,9 @@ exports[` 6`] = `
             rows={null}
           >
             <h5
-              className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
               fontSize="1.15em"
-              fontWeight={600}
+              fontWeight={400}
               letterSpacing="0px"
             >
               This is a Success Banner.
@@ -791,9 +791,9 @@ exports[` 7`] = `
             rows={null}
           >
             <h5
-              className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
               fontSize="1.15em"
-              fontWeight={600}
+              fontWeight={400}
               letterSpacing="0px"
             >
               This is a Warning Banner.
@@ -894,9 +894,9 @@ exports[` 8`] = `
             rows={null}
           >
             <h5
-              className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
               fontSize="1.15em"
-              fontWeight={600}
+              fontWeight={400}
               letterSpacing="0px"
             >
               This is an Alert Banner.
@@ -967,9 +967,9 @@ exports[` 9`] = `
             rows={null}
           >
             <h5
-              className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
               fontSize="1.15em"
-              fontWeight={600}
+              fontWeight={400}
               letterSpacing="0px"
             >
               This is a Banner.
@@ -1023,9 +1023,9 @@ exports[` 9`] = `
             rows={null}
           >
             <h5
-              className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
               fontSize="1.15em"
-              fontWeight={600}
+              fontWeight={400}
               letterSpacing="0px"
             >
               This is a Banner.
@@ -1088,9 +1088,9 @@ exports[` 9`] = `
             rows={null}
           >
             <h5
-              className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
               fontSize="1.15em"
-              fontWeight={600}
+              fontWeight={400}
               letterSpacing="0px"
             >
               This is a Banner.
@@ -1105,8 +1105,8 @@ exports[` 9`] = `
               A description can go here, if necessary.
             </p>
             <a
-              className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-              fontSize="inherit"
+              className="Typography__LinkText-sc-19auepv-1 jNvZLF"
+              fontSize="0.876em"
               fontWeight={600}
               href={null}
               letterSpacing="0px"
@@ -1159,7 +1159,7 @@ exports[` 9`] = `
           className="Bar__Slot-icfo76-1 boCGaE"
         >
           <div
-            className="Avatar__TagContainer-sc-1vuf9om-2 dqLiae"
+            className="Avatar__TagContainer-sc-1vuf9om-2 bIbEMn"
             id={null}
             onClick={null}
           >
@@ -1194,9 +1194,9 @@ exports[` 9`] = `
             rows={null}
           >
             <h5
-              className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
               fontSize="1.15em"
-              fontWeight={600}
+              fontWeight={400}
               letterSpacing="0px"
             >
               This is a Banner.
@@ -1211,8 +1211,8 @@ exports[` 9`] = `
               A description can go here, if necessary.
             </p>
             <a
-              className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-              fontSize="inherit"
+              className="Typography__LinkText-sc-19auepv-1 jNvZLF"
+              fontSize="0.876em"
               fontWeight={600}
               href={null}
               letterSpacing="0px"
@@ -1300,9 +1300,9 @@ exports[` 9`] = `
             rows={null}
           >
             <h5
-              className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
               fontSize="1.15em"
-              fontWeight={600}
+              fontWeight={400}
               letterSpacing="0px"
             >
               This is an Info Banner.
@@ -1317,8 +1317,8 @@ exports[` 9`] = `
               A description can go here, if necessary.
             </p>
             <a
-              className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-              fontSize="inherit"
+              className="Typography__LinkText-sc-19auepv-1 jNvZLF"
+              fontSize="0.876em"
               fontWeight={600}
               href={null}
               letterSpacing="0px"
@@ -1406,9 +1406,9 @@ exports[` 9`] = `
             rows={null}
           >
             <h5
-              className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
               fontSize="1.15em"
-              fontWeight={600}
+              fontWeight={400}
               letterSpacing="0px"
             >
               This is a Success Banner.
@@ -1423,8 +1423,8 @@ exports[` 9`] = `
               A description can go here, if necessary.
             </p>
             <a
-              className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-              fontSize="inherit"
+              className="Typography__LinkText-sc-19auepv-1 jNvZLF"
+              fontSize="0.876em"
               fontWeight={600}
               href={null}
               letterSpacing="0px"
@@ -1512,9 +1512,9 @@ exports[` 9`] = `
             rows={null}
           >
             <h5
-              className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
               fontSize="1.15em"
-              fontWeight={600}
+              fontWeight={400}
               letterSpacing="0px"
             >
               This is a Warning Banner.
@@ -1529,8 +1529,8 @@ exports[` 9`] = `
               A description can go here, if necessary.
             </p>
             <a
-              className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-              fontSize="inherit"
+              className="Typography__LinkText-sc-19auepv-1 jNvZLF"
+              fontSize="0.876em"
               fontWeight={600}
               href={null}
               letterSpacing="0px"
@@ -1618,9 +1618,9 @@ exports[` 9`] = `
             rows={null}
           >
             <h5
-              className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
               fontSize="1.15em"
-              fontWeight={600}
+              fontWeight={400}
               letterSpacing="0px"
             >
               This is an Alert Banner.
@@ -1635,8 +1635,8 @@ exports[` 9`] = `
               A description can go here, if necessary.
             </p>
             <a
-              className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-              fontSize="inherit"
+              className="Typography__LinkText-sc-19auepv-1 jNvZLF"
+              fontSize="0.876em"
               fontWeight={600}
               href={null}
               letterSpacing="0px"
