@@ -9,7 +9,6 @@ exports[` 1`] = `
   <input
     class="inputFile"
     className="FileImport__NewInput-sc-1hxbe60-0 cILDbW"
-    id="file"
     onChange={[Function]}
     type="file"
   />
@@ -29,7 +28,7 @@ exports[` 1`] = `
   </label>
   <section
     className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
-    id="158922961681311813563591_container"
+    id="158923149597518298528771_container"
     rows={null}
   >
     <input
@@ -37,9 +36,9 @@ exports[` 1`] = `
       className="TextInput__Input-sc-1fep8p8-2 fYseJG"
       cols=""
       disabled={false}
-      id="158922961681311813563591"
+      id="158923149597518298528771"
       list={null}
-      name="158922961681311813563591"
+      name="158923149597518298528771"
       onBlur={null}
       onChange={null}
       onFocus={null}
