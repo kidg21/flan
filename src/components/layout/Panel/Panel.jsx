@@ -43,8 +43,10 @@ const SectionWrapper = styled.section`
     return props.sectionPadding || "1em 1em";
   }};
   z-index: 0;
-  overflow-y: auto;
   max-height: 100vh;
+  /** TODO: Add a boolean prop to support a 'horizontal scrolling' option. */
+  overflow-x: hidden;
+  overflow-y: auto;
   ::-webkit-scrollbar {
     width: 0.5em;
     height: 0.5em;
