@@ -27,14 +27,14 @@ const siteData = (
       <Card
         onClick
         commands={
-            object(
-              "commands",
-              [
-                {
-                  label: "View Details",
-                },
-              ],
-)}
+          object(
+            "commands",
+            [
+              {
+                label: "View Details",
+              },
+            ],
+          )}
         body={
           <Grid columns="1" gap="0">
             <Text text="Lollipop Factory" weight="bold" />
@@ -46,14 +46,14 @@ const siteData = (
       <Card
         onClick
         commands={
-              object(
-                "commands",
-                [
-                  {
-                    label: "View Details",
-                  },
-                ],
-)}
+          object(
+            "commands",
+            [
+              {
+                label: "View Details",
+              },
+            ],
+          )}
         body={
           <Grid columns="1" gap="0">
             <Text text="Lollipop Factory" weight="bold" />
@@ -65,14 +65,14 @@ const siteData = (
       <Card
         onClick
         commands={
-            object(
-              "commands",
-              [
-                {
-                  label: "View Details",
-                },
-              ],
-)}
+          object(
+            "commands",
+            [
+              {
+                label: "View Details",
+              },
+            ],
+          )}
         body={
           <Grid columns="1" gap="0">
             <Text text="Lollipop Factory" weight="bold" />
@@ -84,14 +84,14 @@ const siteData = (
       <Card
         onClick
         commands={
-              object(
-                "commands",
-                [
-                  {
-                    label: "View Details",
-                  },
-                ],
-)}
+          object(
+            "commands",
+            [
+              {
+                label: "View Details",
+              },
+            ],
+          )}
         body={
           <Grid columns="1" gap="0">
             <Text text="Lollipop Factory" weight="bold" />
@@ -158,7 +158,7 @@ const infoPanel = (
 );
 
 
-storiesOf("Templates|Site Navigation", module)
+storiesOf("Templates|07_Pieces/Navigation/", module)
   .add(
     "Site Overview",
     () => {
@@ -166,33 +166,33 @@ storiesOf("Templates|Site Navigation", module)
         return (
           <Layout
             header={{
-                id: "Header",
-                content: (
-                  <Bar
-                    contentAlign="center"
+              id: "Header",
+              content: (
+                <Bar
+                  contentAlign="center"
 
-                    left={{
-                      content: (
-                        <Command
-                          label="LightBox"
-                        />
-                      ),
-                    }}
-                    right={{
-                      content: (
-                        <IconBlock>
-                          <Icon icon="calendar" />
-                          <Icon icon="notification" />
-                          <Avatar label="LG" />
-                        </IconBlock>
-                      ),
-                      width: "10%",
-                    }}
-                  />
-                ),
-              }}
+                  left={{
+                    content: (
+                      <Command
+                        label="LightBox"
+                      />
+                    ),
+                  }}
+                  right={{
+                    content: (
+                      <IconBlock>
+                        <Icon icon="calendar" />
+                        <Icon icon="notification" />
+                        <Avatar label="LG" />
+                      </IconBlock>
+                    ),
+                    width: "10%",
+                  }}
+                />
+              ),
+            }}
             left={{ id: "Left", content: infoPanel }}
-            main={{ id: "Main", content: (<Panel padding="0" header={<MainPanelHeader title="Site Verification" />}></Panel>) }}
+            main={{ id: "Main", content: (<Panel padding="0" header={<MainPanelHeader title="Site Verification" />} />) }}
             right={{ id: "Right", content: siteData }}
           />
 
@@ -207,33 +207,33 @@ storiesOf("Templates|Site Navigation", module)
         return (
           <Layout
             header={{
-                id: "Header",
-                content: (
-                  <Bar
-                    contentAlign="center"
+              id: "Header",
+              content: (
+                <Bar
+                  contentAlign="center"
 
-                    left={{
-                      content: (
-                        <Command
-                          label="LightBox"
-                        />
-                      ),
-                    }}
-                    right={{
-                      content: (
-                        <IconBlock>
-                          <Icon icon="calendar" />
-                          <Icon icon="notification" />
-                          <Avatar label="LG" />
-                        </IconBlock>
-                      ),
-                      width: "10%",
-                    }}
-                  />
-                ),
-              }}
+                  left={{
+                    content: (
+                      <Command
+                        label="LightBox"
+                      />
+                    ),
+                  }}
+                  right={{
+                    content: (
+                      <IconBlock>
+                        <Icon icon="calendar" />
+                        <Icon icon="notification" />
+                        <Avatar label="LG" />
+                      </IconBlock>
+                    ),
+                    width: "10%",
+                  }}
+                />
+              ),
+            }}
             left={{ id: "Left", content: infoPanel }}
-            main={{ id: "Main", content: (<Panel padding="0" header={<MainPanelHeader title="Site Verification" />}></Panel>) }}
+            main={{ id: "Main", content: (<Panel padding="0" header={<MainPanelHeader title="Site Verification" />} />) }}
             right={{ id: "Right", content: listPanel }}
           />
 
