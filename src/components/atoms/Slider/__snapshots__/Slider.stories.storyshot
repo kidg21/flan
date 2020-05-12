@@ -33,9 +33,17 @@ exports[` 2`] = `
     id={null}
     rows={null}
   >
-    <div
-      title="Standard"
+    <section
+      className="Form__Section-v2wrel-2 dIXoJq"
     >
+      <h5
+        className="Typography__TitleText-sc-19auepv-2 KxMwb"
+        fontSize="1.15em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        Standard
+      </h5>
       <section
         className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn"
         id={null}
@@ -53,10 +61,18 @@ exports[` 2`] = `
           value={1}
         />
       </section>
-    </div>
-    <div
-      title="Error"
+    </section>
+    <section
+      className="Form__Section-v2wrel-2 dIXoJq"
     >
+      <h5
+        className="Typography__TitleText-sc-19auepv-2 KxMwb"
+        fontSize="1.15em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        Error
+      </h5>
       <section
         className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn"
         id={null}
@@ -74,10 +90,18 @@ exports[` 2`] = `
           value={1}
         />
       </section>
-    </div>
-    <div
-      title="Disabled"
+    </section>
+    <section
+      className="Form__Section-v2wrel-2 dIXoJq"
     >
+      <h5
+        className="Typography__TitleText-sc-19auepv-2 KxMwb"
+        fontSize="1.15em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        Disabled
+      </h5>
       <section
         className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn"
         id={null}
@@ -95,7 +119,7 @@ exports[` 2`] = `
           value={1}
         />
       </section>
-    </div>
+    </section>
   </section>
 </form>
 `;
@@ -113,9 +137,17 @@ exports[` 3`] = `
     id={null}
     rows={null}
   >
-    <div
-      title="Standard"
+    <section
+      className="Form__Section-v2wrel-2 dIXoJq"
     >
+      <h5
+        className="Typography__TitleText-sc-19auepv-2 KxMwb"
+        fontSize="1.15em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        Standard
+      </h5>
       <section
         className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn"
         id={null}
@@ -133,10 +165,18 @@ exports[` 3`] = `
           value={10}
         />
       </section>
-    </div>
-    <div
-      title="With Label"
+    </section>
+    <section
+      className="Form__Section-v2wrel-2 dIXoJq"
     >
+      <h5
+        className="Typography__TitleText-sc-19auepv-2 KxMwb"
+        fontSize="1.15em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        With Label
+      </h5>
       <section
         className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn"
         id={null}
@@ -195,10 +235,18 @@ exports[` 3`] = `
           </div>
         </div>
       </section>
-    </div>
-    <div
-      title="With Range"
+    </section>
+    <section
+      className="Form__Section-v2wrel-2 dIXoJq"
     >
+      <h5
+        className="Typography__TitleText-sc-19auepv-2 KxMwb"
+        fontSize="1.15em"
+        fontWeight={400}
+        letterSpacing="0px"
+      >
+        With Range
+      </h5>
       <section
         className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn"
         id={null}
@@ -248,7 +296,7 @@ exports[` 3`] = `
           </div>
         </div>
       </section>
-    </div>
+    </section>
   </section>
 </form>
 `;

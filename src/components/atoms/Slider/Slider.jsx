@@ -114,7 +114,12 @@ function Slider({
         error={error}
       />
 
-      {withLabel || withRange ? <Bar padding="0" left={<Label weight="bold" text={min} />} right={<Label weight="bold" text={max} />} /> : null}
+      {withLabel || withRange ?
+        <Bar
+          padding="0"
+          left={<Label weight="bold" text={min} />}
+          right={<Label weight="bold" text={max} />}
+        /> : null}
     </Grid>
   );
 }

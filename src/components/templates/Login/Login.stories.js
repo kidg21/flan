@@ -1,29 +1,14 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
-import React, { useState } from "react";
-import Panel from "layout/Panel";
-import List, { ListItem } from "blocks/List";
-import Icon from "atoms/Icon";
+import React from "react";
 import Button from "atoms/Button";
 import Image from "atoms/Image";
-import IconBlock from "blocks/IconBlock";
-import Text, { Title, Link } from "base/Typography";
-import Avatar from "atoms/Avatar";
-import Command from "atoms/Command";
-import Tabs, { TabItem } from "blocks/Tabs";
-import Card, { CardGrid } from "elements/Card";
-import NavigationPanelHeader from "elements/PanelHeaders/NavigationPanelHeader";
+import Text, { Link } from "base/Typography";
+
 import Bar from "layout/Bar";
-import Legend from "blocks/Legend";
-import Grid from "layout/Grid";
 import Form, { FormSection } from "layout/Form";
 import TextInput from "atoms/TextInput";
-import Map from "layout/Map";
-import Menu from "blocks/Menu";
-import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
-import Layout from "layout/Layout";
-import Page, { PageSection } from "layout/Page";
-
+import Page from "layout/Page";
 
 storiesOf("Templates|00_Login", module)
   .add(
@@ -49,10 +34,12 @@ storiesOf("Templates|00_Login", module)
             <Form title="Login">
               <FormSection>
                 <TextInput
+                  id="login-email"
                   label="Email"
                   placeholder="youremail@company.com"
                 />
                 <TextInput
+                  id="login-password"
                   label="Password"
                 />
               </FormSection>
@@ -95,13 +82,16 @@ storiesOf("Templates|00_Login", module)
             <Form title="Registration">
               <FormSection>
                 <TextInput
+                  id="registration-email"
                   label="Email"
                   placeholder="youremail@company.com"
                 />
                 <TextInput
+                  id="registration-password"
                   label="Password"
                 />
                 <TextInput
+                  id="registration-confirm-password"
                   label="Confirm Password"
                 />
               </FormSection>
@@ -140,6 +130,7 @@ storiesOf("Templates|00_Login/Password", module)
             <Form title="Reset Password">
               <FormSection>
                 <TextInput
+                  id="reset-email"
                   label="Email"
                   placeholder="youremail@company.com"
                 />
@@ -213,12 +204,15 @@ storiesOf("Templates|00_Login/Password", module)
             <Form title="Create New Password">
               <FormSection>
                 <TextInput
+                  id="new-email"
                   label="Confirm Email"
                 />
                 <TextInput
+                  id="new-password"
                   label="Password"
                 />
                 <TextInput
+                  id="new-confirm"
                   label="Confirm Password"
                 />
               </FormSection>

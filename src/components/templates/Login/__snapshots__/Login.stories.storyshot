@@ -57,7 +57,7 @@ exports[` 1`] = `
         >
           <section
             className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
-            id="15889610702129997394572_container"
+            id="login-email_container"
             rows={null}
           >
             <label
@@ -74,9 +74,9 @@ exports[` 1`] = `
               className="TextInput__Input-sc-1fep8p8-2 fYseJG"
               cols=""
               disabled={false}
-              id="15889610702129997394572"
+              id="login-email"
               list={null}
-              name="15889610702129997394572"
+              name="login-email"
               onBlur={null}
               onChange={null}
               onFocus={null}
@@ -90,7 +90,7 @@ exports[` 1`] = `
           </section>
           <section
             className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
-            id="158896107021319881839323_container"
+            id="login-password_container"
             rows={null}
           >
             <label
@@ -107,9 +107,9 @@ exports[` 1`] = `
               className="TextInput__Input-sc-1fep8p8-2 fYseJG"
               cols=""
               disabled={false}
-              id="158896107021319881839323"
+              id="login-password"
               list={null}
-              name="158896107021319881839323"
+              name="login-password"
               onBlur={null}
               onChange={null}
               onFocus={null}
@@ -272,7 +272,7 @@ exports[` 2`] = `
         >
           <section
             className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
-            id="15889610730268006527194_container"
+            id="registration-email_container"
             rows={null}
           >
             <label
@@ -289,9 +289,9 @@ exports[` 2`] = `
               className="TextInput__Input-sc-1fep8p8-2 fYseJG"
               cols=""
               disabled={false}
-              id="15889610730268006527194"
+              id="registration-email"
               list={null}
-              name="15889610730268006527194"
+              name="registration-email"
               onBlur={null}
               onChange={null}
               onFocus={null}
@@ -305,7 +305,7 @@ exports[` 2`] = `
           </section>
           <section
             className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
-            id="1588961073027136534215_container"
+            id="registration-password_container"
             rows={null}
           >
             <label
@@ -322,9 +322,9 @@ exports[` 2`] = `
               className="TextInput__Input-sc-1fep8p8-2 fYseJG"
               cols=""
               disabled={false}
-              id="1588961073027136534215"
+              id="registration-password"
               list={null}
-              name="1588961073027136534215"
+              name="registration-password"
               onBlur={null}
               onChange={null}
               onFocus={null}
@@ -338,7 +338,7 @@ exports[` 2`] = `
           </section>
           <section
             className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
-            id="158896107302713790793036_container"
+            id="registration-confirm-password_container"
             rows={null}
           >
             <label
@@ -355,9 +355,9 @@ exports[` 2`] = `
               className="TextInput__Input-sc-1fep8p8-2 fYseJG"
               cols=""
               disabled={false}
-              id="158896107302713790793036"
+              id="registration-confirm-password"
               list={null}
-              name="158896107302713790793036"
+              name="registration-confirm-password"
               onBlur={null}
               onChange={null}
               onFocus={null}
@@ -463,7 +463,7 @@ exports[` 3`] = `
         >
           <section
             className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
-            id="15889610757399083923747_container"
+            id="reset-email_container"
             rows={null}
           >
             <label
@@ -480,9 +480,9 @@ exports[` 3`] = `
               className="TextInput__Input-sc-1fep8p8-2 fYseJG"
               cols=""
               disabled={false}
-              id="15889610757399083923747"
+              id="reset-email"
               list={null}
-              name="15889610757399083923747"
+              name="reset-email"
               onBlur={null}
               onChange={null}
               onFocus={null}
@@ -706,7 +706,7 @@ exports[` 5`] = `
         >
           <section
             className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
-            id="15889610810515780786398_container"
+            id="new-email_container"
             rows={null}
           >
             <label
@@ -723,9 +723,9 @@ exports[` 5`] = `
               className="TextInput__Input-sc-1fep8p8-2 fYseJG"
               cols=""
               disabled={false}
-              id="15889610810515780786398"
+              id="new-email"
               list={null}
-              name="15889610810515780786398"
+              name="new-email"
               onBlur={null}
               onChange={null}
               onFocus={null}
@@ -739,7 +739,7 @@ exports[` 5`] = `
           </section>
           <section
             className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
-            id="1588961081052931828529_container"
+            id="new-password_container"
             rows={null}
           >
             <label
@@ -756,9 +756,9 @@ exports[` 5`] = `
               className="TextInput__Input-sc-1fep8p8-2 fYseJG"
               cols=""
               disabled={false}
-              id="1588961081052931828529"
+              id="new-password"
               list={null}
-              name="1588961081052931828529"
+              name="new-password"
               onBlur={null}
               onChange={null}
               onFocus={null}
@@ -772,7 +772,7 @@ exports[` 5`] = `
           </section>
           <section
             className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
-            id="1588961081053165660085310_container"
+            id="new-confirm_container"
             rows={null}
           >
             <label
@@ -789,9 +789,9 @@ exports[` 5`] = `
               className="TextInput__Input-sc-1fep8p8-2 fYseJG"
               cols=""
               disabled={false}
-              id="1588961081053165660085310"
+              id="new-confirm"
               list={null}
-              name="1588961081053165660085310"
+              name="new-confirm"
               onBlur={null}
               onChange={null}
               onFocus={null}
