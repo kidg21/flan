@@ -20,30 +20,30 @@ exports[` 1`] = `
       htmlFor={null}
       letterSpacing="0.2px"
     >
-      Color Picker
+      Draw Tools Color Picker
     </label>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 ezarLU"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 kiIKlP"
       id={null}
       rows={null}
     >
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 gnJWmO"
-        color="jobs"
+        className="Picker__Swatch-sc-1xwpkqn-1 jvIyJJ"
+        color="#E4423A"
         height="1.5rem"
         onClick={null}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 gnJWmO"
-        color="bi"
+        className="Picker__Swatch-sc-1xwpkqn-1 fUNywH"
+        color="#FF8000"
         height="1.5rem"
         onClick={null}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 gnJWmO"
-        color="research"
+        className="Picker__Swatch-sc-1xwpkqn-1 eHeTdp"
+        color="#FFBF00"
         height="1.5rem"
         onClick={null}
         width="1.5rem"
@@ -70,29 +70,15 @@ exports[` 1`] = `
         </svg>
       </button>
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 gnJWmO"
-        color="brand1"
+        className="Picker__Swatch-sc-1xwpkqn-1 EVtwl"
+        color="#14A939"
         height="1.5rem"
         onClick={null}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 gnJWmO"
-        color="brand2"
-        height="1.5rem"
-        onClick={null}
-        width="1.5rem"
-      />
-      <button
-        className="Picker__Swatch-sc-1xwpkqn-1 gnJWmO"
-        color="brand3"
-        height="1.5rem"
-        onClick={null}
-        width="1.5rem"
-      />
-      <button
-        className="Picker__Swatch-sc-1xwpkqn-1 gnJWmO"
-        color="brand4"
+        className="Picker__Swatch-sc-1xwpkqn-1 dujmkn"
+        color="#2F98EE"
         height="1.5rem"
         onClick={null}
         width="1.5rem"
@@ -130,22 +116,22 @@ exports[` 2`] = `
       rows={null}
     >
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 gnJWmO"
-        color="jobs"
+        className="Picker__Swatch-sc-1xwpkqn-1 jvIyJJ"
+        color="#E4423A"
         height="1.5rem"
         onClick={[Function]}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 gnJWmO"
-        color="research"
+        className="Picker__Swatch-sc-1xwpkqn-1 EVtwl"
+        color="#14A939"
         height="1.5rem"
         onClick={[Function]}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 gnJWmO"
-        color="bi"
+        className="Picker__Swatch-sc-1xwpkqn-1 dujmkn"
+        color="#2F98EE"
         height="1.5rem"
         onClick={[Function]}
         width="1.5rem"
@@ -183,22 +169,22 @@ exports[` 3`] = `
       rows={null}
     >
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 dSnJoi"
-        color="jobs"
+        className="Picker__Swatch-sc-1xwpkqn-1 dspUkp"
+        color="#E4423A"
         height="1.5rem"
         onClick={[Function]}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 dSnJoi"
-        color="research"
+        className="Picker__Swatch-sc-1xwpkqn-1 kzLhTN"
+        color="#14A939"
         height="1.5rem"
         onClick={[Function]}
         width="1.5rem"
       />
       <button
-        className="Picker__Swatch-sc-1xwpkqn-1 dSnJoi"
-        color="bi"
+        className="Picker__Swatch-sc-1xwpkqn-1 gjdaCT"
+        color="#2F98EE"
         height="1.5rem"
         onClick={[Function]}
         width="1.5rem"

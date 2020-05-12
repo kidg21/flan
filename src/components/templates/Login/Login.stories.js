@@ -35,10 +35,12 @@ storiesOf("Templates|Login", module)
             <Form title="Login">
               <FormSection>
                 <TextInput
+                  id="login-email"
                   label="Email"
                   placeholder="youremail@company.com"
                 />
                 <TextInput
+                  id="login-password"
                   label="Password"
                 />
               </FormSection>
@@ -81,13 +83,16 @@ storiesOf("Templates|Login", module)
             <Form title="Registration">
               <FormSection>
                 <TextInput
+                  id="registration-email"
                   label="Email"
                   placeholder="youremail@company.com"
                 />
                 <TextInput
+                  id="registration-password"
                   label="Password"
                 />
                 <TextInput
+                  id="registration-confirm-password"
                   label="Confirm Password"
                 />
               </FormSection>
@@ -126,6 +131,7 @@ storiesOf("Templates|Login/Password", module)
             <Form title="Reset Password">
               <FormSection>
                 <TextInput
+                  id="reset-email"
                   label="Email"
                   placeholder="youremail@company.com"
                 />
@@ -199,12 +205,15 @@ storiesOf("Templates|Login/Password", module)
             <Form title="Create New Password">
               <FormSection>
                 <TextInput
+                  id="new-email"
                   label="Confirm Email"
                 />
                 <TextInput
+                  id="new-password"
                   label="Password"
                 />
                 <TextInput
+                  id="new-confirm"
                   label="Confirm Password"
                 />
               </FormSection>
