@@ -661,7 +661,9 @@ function CardGrid({
               onClick={item.onClick}
               title={item.title}
               variant={item.variant}
-            />
+            >
+              {item.children}
+            </Card>
           );
         })}
     </CardGridWrapper>
