@@ -301,7 +301,7 @@ function SelectMenu({
   );
 }
 
-SelectMenu.propTypes = {
+const selectMenuPropTypes = {
   disabled: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   helpText: PropTypes.string,
@@ -331,7 +331,7 @@ SelectMenu.propTypes = {
   warning: PropTypes.string,
 };
 
-SelectMenu.defaultProps = {
+const selectMenuDefaultProps = {
   disabled: null,
   error: null,
   helpText: null,
@@ -355,6 +355,9 @@ SelectMenu.defaultProps = {
   warning: "",
 };
 
+SelectMenu.propTypes = selectMenuPropTypes;
+SelectMenu.defaultProps = selectMenuDefaultProps;
+
 // create select menu that keeps track of selectOptions when onChange event is invoked
 const StatefulSelectMenu = withOnChangeState(SelectMenu, "selectOptions");
 
@@ -362,5 +365,8 @@ const SelectMenuComp = (props) => {
   // if an onChange is not passed in, the select menu will handle the state changes
   return props.hasOwnProperty("onChange") ? <SelectMenu {...props} /> : <StatefulSelectMenu {...props} />;
 };
+// populate storybook props table
+SelectMenuComp.defaultProps = selectMenuDefaultProps;
+SelectMenuComp.propTypes = selectMenuPropTypes;
 
 export default SelectMenuComp;
