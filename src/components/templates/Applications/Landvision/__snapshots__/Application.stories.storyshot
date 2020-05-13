@@ -1,0 +1,3382 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `null`;
+
+exports[` 2`] = `
+<div
+  style={
+    Object {
+      "height": "100vh",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="Flex__FlexWrapper-sc-7b3s7m-0 fwrFdN Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+    height={null}
+    id={null}
+    overflow={null}
+    width={null}
+  >
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 dOOpDR"
+      height={null}
+      id="Header"
+      overflow={null}
+      width={null}
+    >
+      <div
+        className="Bar__BarLayout-icfo76-2 hMWrAh"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-icfo76-1 fwqDFc"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 dQWlTG"
+            id={null}
+            rows={null}
+          >
+            <a
+              className="Icon__LinkedIcon-sc-1oa9m1v-0 bDhxPl"
+              disabled={null}
+              href={null}
+              onClick={[Function]}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-bars fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 fvyOLy"
+                color="link"
+                data-icon="bars"
+                data-prefix="far"
+                focusable="false"
+                fontSize="1.35em"
+                id={null}
+                role="img"
+                style={Object {}}
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </a>
+            <img
+              alt="Lightbox Logo"
+              className="Image__ImageWrapper-sc-18abvff-0 bmySjT"
+              onClick={null}
+              src={Object {}}
+              title="Lightbox Logo"
+              width="80%"
+            />
+          </section>
+        </div>
+        <div
+          className="Bar__Slot-icfo76-1 bOWYHS"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 kbLUtZ"
+            id={null}
+            rows={null}
+          >
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 XXdV"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                  fontSize="0.876em"
+                  fontWeight={600}
+                  htmlFor={null}
+                  letterSpacing="0.2px"
+                >
+                  Application A
+                </label>
+              </section>
+            </button>
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 XXdV"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                  fontSize="0.876em"
+                  fontWeight={600}
+                  htmlFor={null}
+                  letterSpacing="0.2px"
+                >
+                  Application C
+                </label>
+              </section>
+            </button>
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 XXdV"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                  fontSize="0.876em"
+                  fontWeight={600}
+                  htmlFor={null}
+                  letterSpacing="0.2px"
+                >
+                  Application D
+                </label>
+              </section>
+            </button>
+          </section>
+        </div>
+        <div
+          className="Bar__Slot-icfo76-1 fiTHpV"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 XSTxD"
+            id={null}
+            rows={null}
+          >
+            <a
+              className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
+              id={null}
+              label="Action"
+              onClick={[Function]}
+              title="Action"
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
+                fontSize="0.876em"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing="0.2px"
+              >
+                Action
+              </label>
+            </a>
+            <a
+              className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
+              id={null}
+              label="Action"
+              onClick={[Function]}
+              title="Action"
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
+                fontSize="0.876em"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing="0.2px"
+              >
+                Action
+              </label>
+            </a>
+            <a
+              className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
+              onClick={[Function]}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                color={null}
+                data-icon="ellipsis-v"
+                data-prefix="far"
+                focusable="false"
+                fontSize="inherit"
+                id={null}
+                role="img"
+                style={Object {}}
+                viewBox="0 0 128 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </a>
+            <div
+              className="Avatar__TagContainer-sc-1vuf9om-2 xYdnQ"
+              id={null}
+              onClick={[Function]}
+            >
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 exoZGd Avatar__AvatarText-sc-1vuf9om-0 lbHnkX"
+                fontSize="1em"
+                fontWeight={400}
+                letterSpacing="0px"
+              >
+                GP
+              </h6>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 fwrFdN Layout__Body-sc-19tlhp4-3 iPUXIc"
+      height={null}
+      id={null}
+      overflow={null}
+      width={null}
+    >
+      <div
+        className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 iwbkcy"
+        height={null}
+        id="Left"
+        overflow={null}
+        width="15%"
+      >
+        <div
+          className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
+          id="Menu"
+        >
+          <section
+            className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
+            id="Menu_header"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eIFIfS"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 boCGaE"
+              >
+                <a
+                  className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
+                  onClick={[Function]}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                    color={null}
+                    data-icon="ellipsis-v"
+                    data-prefix="far"
+                    focusable="false"
+                    fontSize="inherit"
+                    id={null}
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 128 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div
+                className="Bar__Slot-icfo76-1 bOWYHS"
+              >
+                <h6
+                  className="Typography__TitleText-sc-19auepv-2 cLteVL"
+                  fontSize="1em"
+                  fontWeight={600}
+                  letterSpacing="0px"
+                >
+                  Application B
+                </h6>
+              </div>
+              <div
+                className="Bar__Slot-icfo76-1 cxljst"
+              >
+                <a
+                  className="Icon__LinkedIcon-sc-1oa9m1v-0 bDhxPl"
+                  disabled={null}
+                  href={null}
+                  onClick={[Function]}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+                    color="link"
+                    data-icon="times"
+                    data-prefix="far"
+                    focusable="false"
+                    fontSize="inherit"
+                    id={null}
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 320 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </section>
+          <section
+            className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
+            id="Menu_body"
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ"
+              id={null}
+              rows={null}
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+                id="15894111125367480410651_container"
+                rows={null}
+              >
+                <input
+                  autoComplete="off"
+                  className="TextInput__Input-sc-1fep8p8-2 hVSkVt"
+                  cols=""
+                  disabled={false}
+                  id="15894111125367480410651"
+                  list={null}
+                  name="15894111125367480410651"
+                  onBlur={null}
+                  onChange={null}
+                  onFocus={null}
+                  onKeyPress={null}
+                  pattern={null}
+                  placeholder="Search Object Types"
+                  rows=""
+                  type="search"
+                  value={null}
+                />
+              </section>
+              <ul
+                className="List__ListWrapper-sc-43f2zq-1 lcdfCY"
+                id={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 gxLOic List__ListTitle-sc-43f2zq-0 fZjVTB"
+                  fontSize="0.876em"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing="0.2px"
+                />
+                <li
+                  className="List__ListItemWrapper-sc-43f2zq-2 cqonPK"
+                  disabled={false}
+                  href={null}
+                  id={null}
+                  onClick={[Function]}
+                  tabIndex="0"
+                >
+                  <div
+                    className="Bar__BarLayout-icfo76-2 eUVQsH"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 RjiBe"
+                    >
+                      <a
+                        className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                        onClick={[Function]}
+                      >
+                        <h6
+                          className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                          fontSize="1em"
+                          fontWeight={400}
+                          letterSpacing="0px"
+                        >
+                          Home Page
+                        </h6>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul
+                className="List__ListWrapper-sc-43f2zq-1 lcdfCY"
+                id={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 gxLOic List__ListTitle-sc-43f2zq-0 fZjVTB"
+                  fontSize="0.876em"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing="0.2px"
+                >
+                  Object Types
+                </label>
+                <li
+                  className="List__ListItemWrapper-sc-43f2zq-2 cqonPK"
+                  disabled={false}
+                  href={null}
+                  id={null}
+                  onClick={[Function]}
+                  tabIndex="0"
+                >
+                  <div
+                    className="Bar__BarLayout-icfo76-2 eUVQsH"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 RjiBe"
+                    >
+                      <a
+                        className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                        onClick={[Function]}
+                      >
+                        <h6
+                          className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                          fontSize="1em"
+                          fontWeight={400}
+                          letterSpacing="0px"
+                        >
+                          Object Type A
+                        </h6>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  className="List__ListItemWrapper-sc-43f2zq-2 cqonPK"
+                  disabled={false}
+                  href={null}
+                  id={null}
+                  onClick={[Function]}
+                  tabIndex="0"
+                >
+                  <div
+                    className="Bar__BarLayout-icfo76-2 eUVQsH"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 RjiBe"
+                    >
+                      <a
+                        className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                        onClick={[Function]}
+                      >
+                        <h6
+                          className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                          fontSize="1em"
+                          fontWeight={400}
+                          letterSpacing="0px"
+                        >
+                          Object Type B
+                        </h6>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  className="List__ListItemWrapper-sc-43f2zq-2 cqonPK"
+                  disabled={false}
+                  href={null}
+                  id={null}
+                  onClick={[Function]}
+                  tabIndex="0"
+                >
+                  <div
+                    className="Bar__BarLayout-icfo76-2 eUVQsH"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 RjiBe"
+                    >
+                      <a
+                        className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                        onClick={[Function]}
+                      >
+                        <h6
+                          className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                          fontSize="1em"
+                          fontWeight={400}
+                          letterSpacing="0px"
+                        >
+                          Object Type C
+                        </h6>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+          </section>
+        </div>
+      </div>
+      <div
+        className="Flex__FlexWrapper-sc-7b3s7m-0 kvuuwd Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+        height="40%"
+        id={null}
+        overflow={null}
+        width="85%"
+      >
+        <div
+          className="Flex__FlexWrapper-sc-7b3s7m-0 eeLHbF Layout__RegionCenter-sc-19tlhp4-6 kIUOgp"
+          height={null}
+          id="Main"
+          overflow={null}
+          width={null}
+        >
+          <div
+            className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
+            id={null}
+          >
+            <section
+              className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
+              id={null}
+            >
+              <div
+                className="Page__PageWrapper-mddda5-0 kuPUTZ"
+                id={null}
+              >
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ Page__Section-mddda5-1 bYiyle"
+                  id={null}
+                  rows={null}
+                >
+                  <h4
+                    className="Typography__TitleText-sc-19auepv-2 czurBm"
+                    fontSize="1.25em"
+                    fontWeight={600}
+                    letterSpacing="0px"
+                  >
+                    This is the Home of Application B
+                  </h4>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 NmRuW"
+                    fontSize="0.876em"
+                    fontWeight={300}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    You've come to the right place to begin working with [insert object types here]
+                  </p>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+                    fontSize="0.75em"
+                    fontWeight={600}
+                    id={null}
+                    letterSpacing="0.2px"
+                  >
+                    Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.
+                  </p>
+                </section>
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 kTWmUL Page__Body-mddda5-2 lmAbxe"
+                  id={null}
+                  rows={null}
+                />
+              </div>
+            </section>
+          </div>
+          <div
+            className="Panel__PanelWrapper-sc-48epke-0 iESIjl"
+            id="object record"
+          >
+            <section
+              className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
+              id="object record_header"
+            >
+              <div
+                className="Bar__BarLayout-icfo76-2 hMWrAh"
+                id={null}
+                onClick={null}
+              >
+                <div
+                  className="Bar__Slot-icfo76-1 eufPAN"
+                >
+                  <h4
+                    className="Typography__TitleText-sc-19auepv-2 czurBm"
+                    fontSize="1.25em"
+                    fontWeight={600}
+                    letterSpacing="0px"
+                  >
+                    Object Details
+                  </h4>
+                </div>
+                <div
+                  className="Bar__Slot-icfo76-1 cxljst"
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 dxGIOM"
+                    id={null}
+                    rows={null}
+                  >
+                    <a
+                      className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
+                      onClick={[Function]}
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                        color={null}
+                        data-icon="ellipsis-v"
+                        data-prefix="far"
+                        focusable="false"
+                        fontSize="inherit"
+                        id={null}
+                        role="img"
+                        style={Object {}}
+                        viewBox="0 0 128 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                          fill="currentColor"
+                          style={Object {}}
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      className="Icon__LinkedIcon-sc-1oa9m1v-0 bDhxPl"
+                      disabled={null}
+                      href={null}
+                      onClick={[Function]}
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+                        color="link"
+                        data-icon="times"
+                        data-prefix="far"
+                        focusable="false"
+                        fontSize="inherit"
+                        id={null}
+                        role="img"
+                        style={Object {}}
+                        viewBox="0 0 320 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"
+                          fill="currentColor"
+                          style={Object {}}
+                        />
+                      </svg>
+                    </a>
+                  </section>
+                </div>
+              </div>
+            </section>
+            <section
+              className="Panel__SectionWrapper-sc-48epke-1 gDJXei"
+              id="object record_body"
+            >
+              <div
+                className="Page__PageWrapper-mddda5-0 kuPUTZ"
+                id={null}
+              >
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 gvGjBF Page__Body-mddda5-2 lmAbxe"
+                  id={null}
+                  rows={null}
+                >
+                  <div
+                    className="Card__CardWrapper-sc-1g3s676-5 JIWVz"
+                    href={null}
+                    id={null}
+                    media={null}
+                    onClick={null}
+                  >
+                    <section
+                      className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
+                      id={null}
+                      onClick={null}
+                    >
+                      <ul
+                        className="List__ListWrapper-sc-43f2zq-1 lcdfCY"
+                        id={null}
+                      >
+                        <label
+                          className="Typography__StyledLabel-sc-19auepv-0 gxLOic List__ListTitle-sc-43f2zq-0 fZjVTB"
+                          fontSize="0.876em"
+                          fontWeight={400}
+                          htmlFor={null}
+                          letterSpacing="0.2px"
+                        >
+                          1: Confirm
+                        </label>
+                        <li
+                          className="List__ListItemWrapper-sc-43f2zq-2 cqonPK"
+                          disabled={false}
+                          href={null}
+                          id={null}
+                          onClick={[Function]}
+                          tabIndex="0"
+                        >
+                          <div
+                            className="Bar__BarLayout-icfo76-2 eUVQsH"
+                            id={null}
+                            onClick={null}
+                          >
+                            <div
+                              className="Bar__Slot-icfo76-1 RjiBe"
+                            >
+                              <a
+                                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                                onClick={[Function]}
+                              >
+                                <h6
+                                  className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                                  fontSize="1em"
+                                  fontWeight={400}
+                                  letterSpacing="0px"
+                                >
+                                  Verify Site
+                                </h6>
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </section>
+                    <section
+                      className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
+                      id={null}
+                      onClick={null}
+                    >
+                      <ul
+                        className="List__ListWrapper-sc-43f2zq-1 lcdfCY"
+                        id={null}
+                      >
+                        <label
+                          className="Typography__StyledLabel-sc-19auepv-0 gxLOic List__ListTitle-sc-43f2zq-0 fZjVTB"
+                          fontSize="0.876em"
+                          fontWeight={400}
+                          htmlFor={null}
+                          letterSpacing="0.2px"
+                        >
+                          2: Review
+                        </label>
+                        <li
+                          className="List__ListItemWrapper-sc-43f2zq-2 cqonPK"
+                          disabled={false}
+                          href={null}
+                          id={null}
+                          onClick={[Function]}
+                          tabIndex="0"
+                        >
+                          <div
+                            className="Bar__BarLayout-icfo76-2 eUVQsH"
+                            id={null}
+                            onClick={null}
+                          >
+                            <div
+                              className="Bar__Slot-icfo76-1 RjiBe"
+                            >
+                              <a
+                                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                                onClick={[Function]}
+                              >
+                                <h6
+                                  className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                                  fontSize="1em"
+                                  fontWeight={400}
+                                  letterSpacing="0px"
+                                >
+                                  Section 1
+                                </h6>
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          className="List__ListItemWrapper-sc-43f2zq-2 cqonPK"
+                          disabled={false}
+                          href={null}
+                          id={null}
+                          onClick={[Function]}
+                          tabIndex="0"
+                        >
+                          <div
+                            className="Bar__BarLayout-icfo76-2 eUVQsH"
+                            id={null}
+                            onClick={null}
+                          >
+                            <div
+                              className="Bar__Slot-icfo76-1 RjiBe"
+                            >
+                              <a
+                                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                                onClick={[Function]}
+                              >
+                                <h6
+                                  className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                                  fontSize="1em"
+                                  fontWeight={400}
+                                  letterSpacing="0px"
+                                >
+                                  Section 2
+                                </h6>
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          className="List__ListItemWrapper-sc-43f2zq-2 cqonPK"
+                          disabled={false}
+                          href={null}
+                          id={null}
+                          onClick={[Function]}
+                          tabIndex="0"
+                        >
+                          <div
+                            className="Bar__BarLayout-icfo76-2 eUVQsH"
+                            id={null}
+                            onClick={null}
+                          >
+                            <div
+                              className="Bar__Slot-icfo76-1 RjiBe"
+                            >
+                              <a
+                                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                                onClick={[Function]}
+                              >
+                                <h6
+                                  className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                                  fontSize="1em"
+                                  fontWeight={400}
+                                  letterSpacing="0px"
+                                >
+                                  Section 3
+                                </h6>
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </section>
+                    <section
+                      className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
+                      id={null}
+                      onClick={null}
+                    >
+                      <ul
+                        className="List__ListWrapper-sc-43f2zq-1 lcdfCY"
+                        id={null}
+                      >
+                        <label
+                          className="Typography__StyledLabel-sc-19auepv-0 gxLOic List__ListTitle-sc-43f2zq-0 fZjVTB"
+                          fontSize="0.876em"
+                          fontWeight={400}
+                          htmlFor={null}
+                          letterSpacing="0.2px"
+                        >
+                          3: Export
+                        </label>
+                        <li
+                          className="List__ListItemWrapper-sc-43f2zq-2 cqonPK"
+                          disabled={false}
+                          href={null}
+                          id={null}
+                          onClick={[Function]}
+                          tabIndex="0"
+                        >
+                          <div
+                            className="Bar__BarLayout-icfo76-2 eUVQsH"
+                            id={null}
+                            onClick={null}
+                          >
+                            <div
+                              className="Bar__Slot-icfo76-1 RjiBe"
+                            >
+                              <a
+                                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                                onClick={[Function]}
+                              >
+                                <h6
+                                  className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                                  fontSize="1em"
+                                  fontWeight={400}
+                                  letterSpacing="0px"
+                                >
+                                  View Reports
+                                </h6>
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </section>
+                  </div>
+                  <div
+                    className="Bar__BarLayout-icfo76-2 fliBOc"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 fNcQEg"
+                    >
+                      <h4
+                        className="Typography__TitleText-sc-19auepv-2 czurBm"
+                        fontSize="1.25em"
+                        fontWeight={600}
+                        letterSpacing="0px"
+                      >
+                        Module A
+                      </h4>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                        fontSize="1em"
+                        fontWeight={600}
+                        id={null}
+                        letterSpacing="0px"
+                      >
+                        Here is everything we have for you...
+                      </p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[` 3`] = `
+<div
+  style={
+    Object {
+      "height": "100vh",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="Flex__FlexWrapper-sc-7b3s7m-0 fwrFdN Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+    height={null}
+    id={null}
+    overflow={null}
+    width={null}
+  >
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 dOOpDR"
+      height={null}
+      id="Header"
+      overflow={null}
+      width={null}
+    >
+      <div
+        className="Bar__BarLayout-icfo76-2 eIFIfS"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-icfo76-1 ivAgdI"
+        >
+          <div
+            className="Avatar__TagContainer-sc-1vuf9om-2 xYdnQ"
+            id={null}
+            onClick={[Function]}
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 exoZGd Avatar__AvatarText-sc-1vuf9om-0 lbHnkX"
+              fontSize="1em"
+              fontWeight={400}
+              letterSpacing="0px"
+            />
+          </div>
+        </div>
+        <div
+          className="Bar__Slot-icfo76-1 fBIqSK"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
+            id={null}
+            rows={null}
+          >
+            <form
+              className="Search__SearchContainer-sey9om-0 kabWsY"
+            >
+              <input
+                className="Search__NewTextInput-sey9om-1 gIKvUj"
+                id="my-search-bar"
+                placeholder="Search"
+                type="search"
+              />
+              <button
+                className="Button__StyledButton-sc-1v7sls2-0 jeARnt"
+                disabled={false}
+                htmlFor={null}
+                id={null}
+                name={null}
+                onClick={null}
+                tabIndex="1"
+                type="button"
+              >
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+                  id={null}
+                  rows={null}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                    color={null}
+                    data-icon="search"
+                    data-prefix="far"
+                    focusable="false"
+                    fontSize="inherit"
+                    id={null}
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                </section>
+              </button>
+            </form>
+          </section>
+        </div>
+        <div
+          className="Bar__Slot-icfo76-1 hcbuwt"
+        >
+          <div
+            className="IconBlock__Block-nokc92-0 UCGVw"
+            id={null}
+          >
+            <a
+              className="Icon__LinkedIcon-sc-1oa9m1v-0 bDhxPl"
+              disabled={null}
+              href={null}
+              onClick={[Function]}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-list-ul fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+                color="link"
+                data-icon="list-ul"
+                data-prefix="far"
+                focusable="false"
+                fontSize="inherit"
+                id={null}
+                role="img"
+                style={Object {}}
+                viewBox="0 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M48 368a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0-160a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0-160a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm448 24H176a16 16 0 0 0-16 16v16a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V88a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v16a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-16a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v16a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-16a16 16 0 0 0-16-16z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </a>
+            <a
+              className="Icon__LinkedIcon-sc-1oa9m1v-0 bDhxPl"
+              disabled={null}
+              href={null}
+              onClick={[Function]}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-calendar-alt fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+                color="link"
+                data-icon="calendar-alt"
+                data-prefix="far"
+                focusable="false"
+                fontSize="inherit"
+                id={null}
+                role="img"
+                style={Object {}}
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </a>
+            <a
+              className="Icon__LinkedIcon-sc-1oa9m1v-0 bDhxPl"
+              disabled={null}
+              href={null}
+              onClick={[Function]}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-comment-alt fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+                color="link"
+                data-icon="comment-alt"
+                data-prefix="far"
+                focusable="false"
+                fontSize="inherit"
+                id={null}
+                role="img"
+                style={Object {}}
+                viewBox="0 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 7.1 5.8 12 12 12 2.4 0 4.9-.7 7.1-2.4L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm16 352c0 8.8-7.2 16-16 16H288l-12.8 9.6L208 428v-60H64c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16h384c8.8 0 16 7.2 16 16v288z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </a>
+            <div
+              className="Avatar__TagContainer-sc-1vuf9om-2 xYdnQ"
+              id={null}
+              onClick={[Function]}
+            >
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 exoZGd Avatar__AvatarText-sc-1vuf9om-0 lbHnkX"
+                fontSize="1em"
+                fontWeight={400}
+                letterSpacing="0px"
+              >
+                LB
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 fwrFdN Layout__Body-sc-19tlhp4-3 iPUXIc"
+      height={null}
+      id={null}
+      overflow={null}
+      width={null}
+    >
+      <div
+        className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 eoAyiI"
+        height={null}
+        id={null}
+        overflow={null}
+        width="15%"
+      >
+        <div
+          className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
+          id="List Panel"
+        >
+          <section
+            className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
+            id="List Panel_header"
+          >
+            <div
+              className="Card__CardWrapper-sc-1g3s676-5 kTXijy"
+              href={null}
+              id={null}
+              media={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__BarLayout-icfo76-2 eIFIfS"
+                id={null}
+                onClick={null}
+              >
+                <div
+                  className="Bar__Slot-icfo76-1 fNcQEg"
+                >
+                  <h5
+                    className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+                    fontSize="1.15em"
+                    fontWeight={600}
+                    letterSpacing="0px"
+                  >
+                    Menu
+                  </h5>
+                </div>
+                <div
+                  className="Bar__Slot-icfo76-1 kZQbjh"
+                >
+                  <a
+                    className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
+                    onClick={[Function]}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                      color={null}
+                      data-icon="ellipsis-v"
+                      data-prefix="far"
+                      focusable="false"
+                      fontSize="inherit"
+                      id={null}
+                      role="img"
+                      style={Object {}}
+                      viewBox="0 0 128 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                        fill="currentColor"
+                        style={Object {}}
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
+            id="List Panel_body"
+          >
+            <ul
+              className="List__ListWrapper-sc-43f2zq-1 lcdfCY"
+              id={null}
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 gxLOic List__ListTitle-sc-43f2zq-0 fZjVTB"
+                fontSize="0.876em"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing="0.2px"
+              />
+              <li
+                className="List__ListItemWrapper-sc-43f2zq-2 krRBjZ"
+                disabled={false}
+                href={null}
+                id={null}
+                onClick={null}
+                tabIndex="0"
+              >
+                <div
+                  className="Bar__BarLayout-icfo76-2 eUVQsH"
+                  id={null}
+                  onClick={null}
+                >
+                  <div
+                    className="Bar__Slot-icfo76-1 RjiBe"
+                  >
+                    <h6
+                      className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                      fontSize="1em"
+                      fontWeight={400}
+                      letterSpacing="0px"
+                    >
+                      Layers
+                    </h6>
+                  </div>
+                </div>
+              </li>
+              <li
+                className="List__ListItemWrapper-sc-43f2zq-2 krRBjZ"
+                disabled={false}
+                href={null}
+                id={null}
+                onClick={null}
+                tabIndex="0"
+              >
+                <div
+                  className="Bar__BarLayout-icfo76-2 eUVQsH"
+                  id={null}
+                  onClick={null}
+                >
+                  <div
+                    className="Bar__Slot-icfo76-1 RjiBe"
+                  >
+                    <h6
+                      className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                      fontSize="1em"
+                      fontWeight={400}
+                      letterSpacing="0px"
+                    >
+                      Results
+                    </h6>
+                  </div>
+                </div>
+              </li>
+              <li
+                className="List__ListItemWrapper-sc-43f2zq-2 krRBjZ"
+                disabled={false}
+                href={null}
+                id={null}
+                onClick={null}
+                tabIndex="0"
+              >
+                <div
+                  className="Bar__BarLayout-icfo76-2 eUVQsH"
+                  id={null}
+                  onClick={null}
+                >
+                  <div
+                    className="Bar__Slot-icfo76-1 RjiBe"
+                  >
+                    <h6
+                      className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                      fontSize="1em"
+                      fontWeight={400}
+                      letterSpacing="0px"
+                    >
+                      Form
+                    </h6>
+                  </div>
+                </div>
+              </li>
+              <li
+                className="List__ListItemWrapper-sc-43f2zq-2 krRBjZ"
+                disabled={false}
+                href={null}
+                id={null}
+                onClick={null}
+                tabIndex="0"
+              >
+                <div
+                  className="Bar__BarLayout-icfo76-2 eUVQsH"
+                  id={null}
+                  onClick={null}
+                >
+                  <div
+                    className="Bar__Slot-icfo76-1 RjiBe"
+                  >
+                    <h6
+                      className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                      fontSize="1em"
+                      fontWeight={400}
+                      letterSpacing="0px"
+                    >
+                      Research
+                    </h6>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <div
+        className="Flex__FlexWrapper-sc-7b3s7m-0 bGQswE Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+        height="40%"
+        id={null}
+        overflow={null}
+        width="100%"
+      >
+        <div
+          className="Flex__FlexWrapper-sc-7b3s7m-0 eeLHbF Layout__RegionCenter-sc-19tlhp4-6 kIUOgp"
+          height={null}
+          id={null}
+          overflow={null}
+          width={null}
+        >
+          <div
+            style={
+              Object {
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+          />
+        </div>
+        <div
+          className="Flex__FlexWrapper-sc-7b3s7m-0 lkNlNx Layout__RegionBottom-sc-19tlhp4-7 feYNea"
+          height="40%"
+          id={null}
+          overflow={null}
+          width={null}
+        >
+          <div
+            className="Table__MultiGridWrapper-gz0dbt-0 kpZase"
+          >
+            <div
+              style={
+                Object {
+                  "height": 0,
+                  "overflow": "visible",
+                  "width": 0,
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "height": 100,
+                    "overflow": "visible",
+                    "width": 200,
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "height": 40,
+                      "position": "relative",
+                      "width": 200,
+                    }
+                  }
+                >
+                  <div
+                    aria-label="grid"
+                    aria-readonly={true}
+                    className="ReactVirtualized__Grid"
+                    onScroll={[Function]}
+                    role="grid"
+                    style={
+                      Object {
+                        "WebkitOverflowScrolling": "touch",
+                        "boxSizing": "border-box",
+                        "direction": "ltr",
+                        "height": 40,
+                        "left": 0,
+                        "overflowX": "hidden",
+                        "overflowY": "hidden",
+                        "position": "absolute",
+                        "top": 0,
+                        "width": 200,
+                        "willChange": "transform",
+                      }
+                    }
+                    tabIndex={null}
+                  >
+                    <div
+                      className="ReactVirtualized__Grid__innerScrollContainer"
+                      role="rowgroup"
+                      style={
+                        Object {
+                          "height": 40,
+                          "maxHeight": 40,
+                          "maxWidth": 840,
+                          "overflow": "hidden",
+                          "pointerEvents": "",
+                          "position": "relative",
+                          "width": 840,
+                        }
+                      }
+                    >
+                      <div
+                        className="Table__CellWrapper-gz0dbt-1 cFSFhp"
+                        onClick={[Function]}
+                        onMouseOut={[Function]}
+                        onMouseOver={[Function]}
+                        style={
+                          Object {
+                            "height": 40,
+                            "left": 0,
+                            "position": "absolute",
+                            "top": 0,
+                            "width": 120,
+                          }
+                        }
+                      >
+                        <div
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+                            id={null}
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="checkbox"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        className="Table__CellWrapper-gz0dbt-1 cFSFhp"
+                        onClick={[Function]}
+                        onMouseOut={[Function]}
+                        onMouseOver={[Function]}
+                        style={
+                          Object {
+                            "height": 40,
+                            "left": 120,
+                            "position": "absolute",
+                            "top": 0,
+                            "width": 120,
+                          }
+                        }
+                      >
+                        Objects
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style={
+                    Object {
+                      "height": 60,
+                      "overflow": "visible",
+                      "position": "relative",
+                      "width": 200,
+                    }
+                  }
+                >
+                  <div
+                    aria-label="grid"
+                    aria-readonly={true}
+                    className="ReactVirtualized__Grid"
+                    onScroll={[Function]}
+                    role="grid"
+                    style={
+                      Object {
+                        "WebkitOverflowScrolling": "touch",
+                        "boxSizing": "border-box",
+                        "direction": "ltr",
+                        "height": 60,
+                        "left": 0,
+                        "overflowX": "auto",
+                        "overflowY": "auto",
+                        "position": "absolute",
+                        "width": 200,
+                        "willChange": "transform",
+                      }
+                    }
+                    tabIndex={0}
+                  >
+                    <div
+                      className="ReactVirtualized__Grid__innerScrollContainer"
+                      role="rowgroup"
+                      style={
+                        Object {
+                          "height": 120,
+                          "maxHeight": 120,
+                          "maxWidth": 840,
+                          "overflow": "hidden",
+                          "pointerEvents": "",
+                          "position": "relative",
+                          "width": 840,
+                        }
+                      }
+                    >
+                      <div
+                        className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                        onClick={[Function]}
+                        onMouseOut={[Function]}
+                        onMouseOver={[Function]}
+                        style={
+                          Object {
+                            "height": 40,
+                            "left": 0,
+                            "position": "absolute",
+                            "top": 0,
+                            "width": 120,
+                          }
+                        }
+                      >
+                        <div
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+                            id={null}
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="checkbox"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                        onClick={[Function]}
+                        onMouseOut={[Function]}
+                        onMouseOver={[Function]}
+                        style={
+                          Object {
+                            "height": 40,
+                            "left": 120,
+                            "position": "absolute",
+                            "top": 0,
+                            "width": 120,
+                          }
+                        }
+                      >
+                        <a
+                          className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
+                          id={null}
+                          label="Object"
+                          onClick={null}
+                          title="Object"
+                        >
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
+                            fontSize="0.876em"
+                            fontWeight={400}
+                            htmlFor={null}
+                            letterSpacing="0.2px"
+                          >
+                            Object
+                          </label>
+                        </a>
+                      </div>
+                      <div
+                        className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                        onClick={[Function]}
+                        onMouseOut={[Function]}
+                        onMouseOver={[Function]}
+                        style={
+                          Object {
+                            "height": 40,
+                            "left": 0,
+                            "position": "absolute",
+                            "top": 40,
+                            "width": 120,
+                          }
+                        }
+                      >
+                        <div
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+                            id={null}
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="checkbox"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                        onClick={[Function]}
+                        onMouseOut={[Function]}
+                        onMouseOver={[Function]}
+                        style={
+                          Object {
+                            "height": 40,
+                            "left": 120,
+                            "position": "absolute",
+                            "top": 40,
+                            "width": 120,
+                          }
+                        }
+                      >
+                        <a
+                          className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
+                          id={null}
+                          label="Object"
+                          onClick={null}
+                          title="Object"
+                        >
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
+                            fontSize="0.876em"
+                            fontWeight={400}
+                            htmlFor={null}
+                            letterSpacing="0.2px"
+                          >
+                            Object
+                          </label>
+                        </a>
+                      </div>
+                      <div
+                        className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                        onClick={[Function]}
+                        onMouseOut={[Function]}
+                        onMouseOver={[Function]}
+                        style={
+                          Object {
+                            "height": 40,
+                            "left": 0,
+                            "position": "absolute",
+                            "top": 80,
+                            "width": 120,
+                          }
+                        }
+                      >
+                        <div
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+                            id={null}
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="checkbox"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                        onClick={[Function]}
+                        onMouseOut={[Function]}
+                        onMouseOver={[Function]}
+                        style={
+                          Object {
+                            "height": 40,
+                            "left": 120,
+                            "position": "absolute",
+                            "top": 80,
+                            "width": 120,
+                          }
+                        }
+                      >
+                        <a
+                          className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
+                          id={null}
+                          label="Object"
+                          onClick={null}
+                          title="Object"
+                        >
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
+                            fontSize="0.876em"
+                            fontWeight={400}
+                            htmlFor={null}
+                            letterSpacing="0.2px"
+                          >
+                            Object
+                          </label>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionRight-sc-19tlhp4-8 gLaegA"
+        height={null}
+        id={null}
+        overflow={null}
+        width="25%"
+      >
+        <div
+          className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
+          id="Info Panel"
+        >
+          <section
+            className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
+            id="Info Panel_header"
+          >
+            <div
+              className="Card__CardWrapper-sc-1g3s676-5 hajGzM"
+              href={null}
+              id={null}
+              media={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__BarLayout-icfo76-2 izXrkl"
+                id={null}
+                onClick={null}
+              >
+                <div
+                  className="Bar__Slot-icfo76-1 eufPAN"
+                >
+                  <h6
+                    className="Typography__TitleText-sc-19auepv-2 cLteVL"
+                    fontSize="1em"
+                    fontWeight={600}
+                    letterSpacing="0px"
+                  >
+                    Object Record
+                  </h6>
+                </div>
+                <div
+                  className="Bar__Slot-icfo76-1 gxusZp"
+                >
+                  <a
+                    className="Icon__LinkedIcon-sc-1oa9m1v-0 bDhxPl"
+                    disabled={null}
+                    href={null}
+                    onClick={[Function]}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+                      color="link"
+                      data-icon="times"
+                      data-prefix="far"
+                      focusable="false"
+                      fontSize="inherit"
+                      id={null}
+                      role="img"
+                      style={Object {}}
+                      viewBox="0 0 320 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"
+                        fill="currentColor"
+                        style={Object {}}
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
+            id="Info Panel_body"
+          >
+            <div
+              className="Page__PageWrapper-mddda5-0 kuPUTZ"
+              id={null}
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ Page__Section-mddda5-1 bYiyle"
+                id={null}
+                rows={null}
+              >
+                <h4
+                  className="Typography__TitleText-sc-19auepv-2 czurBm"
+                  fontSize="1.25em"
+                  fontWeight={600}
+                  letterSpacing="0px"
+                >
+                  All About This Item
+                </h4>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+                  fontSize="0.75em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.
+                </p>
+              </section>
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 kTWmUL Page__Body-mddda5-2 lmAbxe"
+                id={null}
+                rows={null}
+              >
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Page__Section-mddda5-1 bYiyle"
+                  id={null}
+                  rows={null}
+                >
+                  <h5
+                    className="Typography__TitleText-sc-19auepv-2 KxMwb"
+                    fontSize="1.15em"
+                    fontWeight={400}
+                    letterSpacing="0px"
+                  >
+                    Section 1
+                  </h5>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    In your imagination you can go anywhere you want. Let's put some happy little clouds in our world. We'll throw some old gray clouds in here just sneaking around and having fun. Let's do that again.
+                  </p>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    This is where you take out all your hostilities and frustrations. It's better than kicking the puppy dog around and all that so. Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. These things happen automatically. All you have to do is just let them happen. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. Only eight colors that you need.
+                  </p>
+                </section>
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Page__Section-mddda5-1 bYiyle"
+                  id={null}
+                  rows={null}
+                >
+                  <h5
+                    className="Typography__TitleText-sc-19auepv-2 KxMwb"
+                    fontSize="1.15em"
+                    fontWeight={400}
+                    letterSpacing="0px"
+                  >
+                    Section 2
+                  </h5>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    You want your tree to have some character. Make it special. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. We spend so much of our life looking - but never seeing.
+                  </p>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    We'll throw some happy little limbs on this tree. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Painting should do one thing. It should put happiness in your heart. Think about a cloud. Just float around and be there. In this world, everything can be happy.
+                  </p>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    Nice little fluffy clouds laying around in the sky being lazy. You need to have a very firm paint to do this. You have to allow the paint to break to make it beautiful.
+                  </p>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    A little happy sunlight shining through there. We're not trying to teach you a thing to copy. We're just here to teach you a technique, then let you loose into the world. There's nothing wrong with having a tree as a friend.
+                  </p>
+                </section>
+              </section>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[` 4`] = `null`;
+
+exports[` 5`] = `
+<div
+  style={
+    Object {
+      "height": "100vh",
+      "width": "100%",
+    }
+  }
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 cRSilm"
+    id={null}
+    rows={null}
+  >
+    <div
+      className="Page__PageWrapper-mddda5-0 kuPUTZ"
+      id={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 gvGjBF Page__Body-mddda5-2 lmAbxe"
+        id={null}
+        rows={null}
+      >
+        <div
+          className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
+          id={null}
+        >
+          <section
+            className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
+            id={null}
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ"
+              id={null}
+              rows={null}
+            >
+              <ul
+                className="List__ListWrapper-sc-43f2zq-1 lcdfCY"
+                id={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 gxLOic List__ListTitle-sc-43f2zq-0 fZjVTB"
+                  fontSize="0.876em"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing="0.2px"
+                >
+                  1: Confirm
+                </label>
+                <li
+                  className="List__ListItemWrapper-sc-43f2zq-2 cqonPK"
+                  disabled={false}
+                  href={null}
+                  id={null}
+                  onClick={null}
+                  tabIndex="0"
+                >
+                  <div
+                    className="Bar__BarLayout-icfo76-2 eUVQsH"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 RjiBe"
+                    >
+                      <h6
+                        className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                        fontSize="1em"
+                        fontWeight={400}
+                        letterSpacing="0px"
+                      >
+                        Verify Site
+                      </h6>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul
+                className="List__ListWrapper-sc-43f2zq-1 lcdfCY"
+                id={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 gxLOic List__ListTitle-sc-43f2zq-0 fZjVTB"
+                  fontSize="0.876em"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing="0.2px"
+                >
+                  2: Review
+                </label>
+                <li
+                  className="List__ListItemWrapper-sc-43f2zq-2 cqonPK"
+                  disabled={false}
+                  href={null}
+                  id={null}
+                  onClick={null}
+                  tabIndex="0"
+                >
+                  <div
+                    className="Bar__BarLayout-icfo76-2 eUVQsH"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 RjiBe"
+                    >
+                      <h6
+                        className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                        fontSize="1em"
+                        fontWeight={400}
+                        letterSpacing="0px"
+                      >
+                        Section 1
+                      </h6>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  className="List__ListItemWrapper-sc-43f2zq-2 cqonPK"
+                  disabled={false}
+                  href={null}
+                  id={null}
+                  onClick={null}
+                  tabIndex="0"
+                >
+                  <div
+                    className="Bar__BarLayout-icfo76-2 eUVQsH"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 RjiBe"
+                    >
+                      <h6
+                        className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                        fontSize="1em"
+                        fontWeight={400}
+                        letterSpacing="0px"
+                      >
+                        Section 2
+                      </h6>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  className="List__ListItemWrapper-sc-43f2zq-2 cqonPK"
+                  disabled={false}
+                  href={null}
+                  id={null}
+                  onClick={null}
+                  tabIndex="0"
+                >
+                  <div
+                    className="Bar__BarLayout-icfo76-2 eUVQsH"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 RjiBe"
+                    >
+                      <h6
+                        className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                        fontSize="1em"
+                        fontWeight={400}
+                        letterSpacing="0px"
+                      >
+                        Section 3
+                      </h6>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul
+                className="List__ListWrapper-sc-43f2zq-1 lcdfCY"
+                id={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 gxLOic List__ListTitle-sc-43f2zq-0 fZjVTB"
+                  fontSize="0.876em"
+                  fontWeight={400}
+                  htmlFor={null}
+                  letterSpacing="0.2px"
+                >
+                  3: Export
+                </label>
+                <li
+                  className="List__ListItemWrapper-sc-43f2zq-2 cqonPK"
+                  disabled={false}
+                  href={null}
+                  id={null}
+                  onClick={null}
+                  tabIndex="0"
+                >
+                  <div
+                    className="Bar__BarLayout-icfo76-2 eUVQsH"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 RjiBe"
+                    >
+                      <h6
+                        className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                        fontSize="1em"
+                        fontWeight={400}
+                        letterSpacing="0px"
+                      >
+                        View Reports
+                      </h6>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+          </section>
+        </div>
+        <div
+          className="Bar__BarLayout-icfo76-2 fliBOc"
+          id={null}
+          onClick={null}
+        >
+          <div
+            className="Bar__Slot-icfo76-1 fNcQEg"
+          >
+            <h4
+              className="Typography__TitleText-sc-19auepv-2 czurBm"
+              fontSize="1.25em"
+              fontWeight={600}
+              letterSpacing="0px"
+            >
+              Module A
+            </h4>
+            <p
+              className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+              fontSize="1em"
+              fontWeight={600}
+              id={null}
+              letterSpacing="0px"
+            >
+              Here is everything we have for you...
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div
+      className="Page__PageWrapper-mddda5-0 kuPUTZ"
+      id={null}
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ Page__Section-mddda5-1 bYiyle"
+        id={null}
+        rows={null}
+      >
+        <h4
+          className="Typography__TitleText-sc-19auepv-2 czurBm"
+          fontSize="1.25em"
+          fontWeight={600}
+          letterSpacing="0px"
+        >
+          Object Type C
+        </h4>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 NmRuW"
+          fontSize="0.876em"
+          fontWeight={300}
+          id={null}
+          letterSpacing="0px"
+        >
+          Here are all of the objects of this type...
+        </p>
+      </section>
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kTWmUL Page__Body-mddda5-2 lmAbxe"
+        id={null}
+        rows={null}
+      >
+        <section
+          className="Grid__GridWrapper-sc-1ntp7gx-0 gegjhk"
+          id={null}
+          rows="auto 300px"
+        >
+          <div
+            className="Card__CardWrapper-sc-1g3s676-5 kTXijy"
+            href={null}
+            id={null}
+            media={null}
+            onClick={null}
+          >
+            <section
+              className="Card__CardSectionWrapper-sc-1g3s676-1 hShpgD"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__BarLayout-icfo76-2 izXrkl"
+                id={null}
+                onClick={null}
+              >
+                <div
+                  className="Bar__Slot-icfo76-1 boCGaE"
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 cRSilm"
+                    id={null}
+                    rows={null}
+                  >
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 iAwVFR"
+                      id={null}
+                      rows={null}
+                    >
+                      <div
+                        className=" css-jf3hug-container"
+                        id={null}
+                        onKeyDown={[Function]}
+                      >
+                        <div
+                          className=" css-14ku2k9-control"
+                          onMouseDown={[Function]}
+                          onTouchEnd={[Function]}
+                        >
+                          <div
+                            className=" css-g1d714-ValueContainer"
+                          >
+                            <div
+                              className=" css-1fgwzig-singleValue"
+                            >
+                              All Filters
+                            </div>
+                            <div
+                              className="css-b8ldur-Input"
+                            >
+                              <div
+                                className=""
+                                style={
+                                  Object {
+                                    "display": "inline-block",
+                                  }
+                                }
+                              >
+                                <input
+                                  aria-autocomplete="list"
+                                  autoCapitalize="none"
+                                  autoComplete="off"
+                                  autoCorrect="off"
+                                  disabled={false}
+                                  id="react-select-31-input"
+                                  onBlur={[Function]}
+                                  onChange={[Function]}
+                                  onFocus={[Function]}
+                                  spellCheck="false"
+                                  style={
+                                    Object {
+                                      "background": 0,
+                                      "border": 0,
+                                      "boxSizing": "content-box",
+                                      "color": "inherit",
+                                      "fontSize": "inherit",
+                                      "label": "input",
+                                      "opacity": 1,
+                                      "outline": 0,
+                                      "padding": 0,
+                                      "width": "1px",
+                                    }
+                                  }
+                                  tabIndex="0"
+                                  type="text"
+                                  value=""
+                                />
+                                <div
+                                  style={
+                                    Object {
+                                      "height": 0,
+                                      "left": 0,
+                                      "overflow": "scroll",
+                                      "position": "absolute",
+                                      "top": 0,
+                                      "visibility": "hidden",
+                                      "whiteSpace": "pre",
+                                    }
+                                  }
+                                >
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            className=" css-1hb7zxy-IndicatorsContainer"
+                          >
+                            <span
+                              className=" css-rci3ok-indicatorSeparator"
+                            />
+                            <div
+                              aria-hidden="true"
+                              className=" css-1jw44s5-indicatorContainer"
+                              onMouseDown={[Function]}
+                              onTouchEnd={[Function]}
+                            >
+                              <svg
+                                aria-hidden="true"
+                                className="css-6q0nyr-Svg"
+                                focusable="false"
+                                height={20}
+                                viewBox="0 0 20 20"
+                                width={20}
+                              >
+                                <path
+                                  d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                                />
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+                      id="158941112291414084059252_container"
+                      rows={null}
+                    >
+                      <input
+                        autoComplete="off"
+                        className="TextInput__Input-sc-1fep8p8-2 hVSkVt"
+                        cols=""
+                        disabled={false}
+                        id="158941112291414084059252"
+                        list={null}
+                        name="158941112291414084059252"
+                        onBlur={null}
+                        onChange={null}
+                        onFocus={null}
+                        onKeyPress={null}
+                        pattern={null}
+                        placeholder="Search Objects"
+                        rows=""
+                        type="search"
+                        value={null}
+                      />
+                    </section>
+                  </section>
+                </div>
+                <div
+                  className="Bar__Slot-icfo76-1 fiTHpV"
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 htAuSi"
+                    id={null}
+                    rows={null}
+                  >
+                    <a
+                      className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
+                      id={null}
+                      label="Action"
+                      onClick={[Function]}
+                      title="Action"
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
+                        fontSize="0.876em"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing="0.2px"
+                      >
+                        Action
+                      </label>
+                    </a>
+                    <a
+                      className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
+                      id={null}
+                      label="Action"
+                      onClick={[Function]}
+                      title="Action"
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
+                        fontSize="0.876em"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing="0.2px"
+                      >
+                        Action
+                      </label>
+                    </a>
+                    <a
+                      className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
+                      onClick={[Function]}
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                        color={null}
+                        data-icon="ellipsis-v"
+                        data-prefix="far"
+                        focusable="false"
+                        fontSize="inherit"
+                        id={null}
+                        role="img"
+                        style={Object {}}
+                        viewBox="0 0 128 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                          fill="currentColor"
+                          style={Object {}}
+                        />
+                      </svg>
+                    </a>
+                  </section>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div
+            className="Table__MultiGridWrapper-gz0dbt-0 kpZase"
+          >
+            <div
+              style={
+                Object {
+                  "height": 0,
+                  "overflow": "visible",
+                  "width": 0,
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "height": 100,
+                    "overflow": "visible",
+                    "width": 200,
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "height": 40,
+                      "position": "relative",
+                      "width": 200,
+                    }
+                  }
+                >
+                  <div
+                    aria-label="grid"
+                    aria-readonly={true}
+                    className="ReactVirtualized__Grid"
+                    onScroll={[Function]}
+                    role="grid"
+                    style={
+                      Object {
+                        "WebkitOverflowScrolling": "touch",
+                        "boxSizing": "border-box",
+                        "direction": "ltr",
+                        "height": 40,
+                        "left": 0,
+                        "overflowX": "hidden",
+                        "overflowY": "hidden",
+                        "position": "absolute",
+                        "top": 0,
+                        "width": 200,
+                        "willChange": "transform",
+                      }
+                    }
+                    tabIndex={null}
+                  >
+                    <div
+                      className="ReactVirtualized__Grid__innerScrollContainer"
+                      role="rowgroup"
+                      style={
+                        Object {
+                          "height": 40,
+                          "maxHeight": 40,
+                          "maxWidth": 1080,
+                          "overflow": "hidden",
+                          "pointerEvents": "",
+                          "position": "relative",
+                          "width": 1080,
+                        }
+                      }
+                    >
+                      <div
+                        className="Table__CellWrapper-gz0dbt-1 cFSFhp"
+                        onClick={[Function]}
+                        onMouseOut={[Function]}
+                        onMouseOver={[Function]}
+                        style={
+                          Object {
+                            "height": 40,
+                            "left": 0,
+                            "position": "absolute",
+                            "top": 0,
+                            "width": 140,
+                          }
+                        }
+                      >
+                        <section
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 gCCOlW"
+                          id={null}
+                          rows={null}
+                        >
+                          <div
+                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                            disabled={false}
+                          >
+                            <input
+                              checked={null}
+                              className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+                              id={null}
+                              onBlur={null}
+                              onChange={null}
+                              onFocus={null}
+                              type="checkbox"
+                            />
+                          </div>
+                          Objects
+                        </section>
+                      </div>
+                      <div
+                        className="Table__CellWrapper-gz0dbt-1 eTCUgj"
+                        onClick={[Function]}
+                        onMouseOut={[Function]}
+                        onMouseOver={[Function]}
+                        style={
+                          Object {
+                            "height": 40,
+                            "left": 140,
+                            "position": "absolute",
+                            "top": 0,
+                            "width": 140,
+                          }
+                        }
+                      >
+                        Field Name
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style={
+                    Object {
+                      "height": 60,
+                      "overflow": "visible",
+                      "position": "relative",
+                      "width": 200,
+                    }
+                  }
+                >
+                  <div
+                    aria-label="grid"
+                    aria-readonly={true}
+                    className="ReactVirtualized__Grid"
+                    onScroll={[Function]}
+                    role="grid"
+                    style={
+                      Object {
+                        "WebkitOverflowScrolling": "touch",
+                        "boxSizing": "border-box",
+                        "direction": "ltr",
+                        "height": 60,
+                        "left": 0,
+                        "overflowX": "auto",
+                        "overflowY": "auto",
+                        "position": "absolute",
+                        "width": 200,
+                        "willChange": "transform",
+                      }
+                    }
+                    tabIndex={0}
+                  >
+                    <div
+                      className="ReactVirtualized__Grid__innerScrollContainer"
+                      role="rowgroup"
+                      style={
+                        Object {
+                          "height": 200,
+                          "maxHeight": 200,
+                          "maxWidth": 1080,
+                          "overflow": "hidden",
+                          "pointerEvents": "",
+                          "position": "relative",
+                          "width": 1080,
+                        }
+                      }
+                    >
+                      <div
+                        className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                        onClick={[Function]}
+                        onMouseOut={[Function]}
+                        onMouseOver={[Function]}
+                        style={
+                          Object {
+                            "height": 40,
+                            "left": 0,
+                            "position": "absolute",
+                            "top": 0,
+                            "width": 140,
+                          }
+                        }
+                      >
+                        <section
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 hezxDP"
+                          id={null}
+                          rows={null}
+                        >
+                          <div
+                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                            disabled={false}
+                          >
+                            <input
+                              checked={null}
+                              className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+                              id={null}
+                              onBlur={null}
+                              onChange={null}
+                              onFocus={null}
+                              type="checkbox"
+                            />
+                          </div>
+                          <button
+                            className="Button__StyledButton-sc-1v7sls2-0 jeARnt"
+                            disabled={false}
+                            htmlFor={null}
+                            id={null}
+                            name={null}
+                            onClick={[Function]}
+                            tabIndex="1"
+                            type="button"
+                          >
+                            <section
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                              id={null}
+                              rows={null}
+                            >
+                              <label
+                                className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                                fontSize="0.876em"
+                                fontWeight={600}
+                                htmlFor={null}
+                                letterSpacing="0.2px"
+                              >
+                                Object ID
+                              </label>
+                            </section>
+                          </button>
+                        </section>
+                      </div>
+                      <div
+                        className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                        onClick={[Function]}
+                        onMouseOut={[Function]}
+                        onMouseOver={[Function]}
+                        style={
+                          Object {
+                            "height": 40,
+                            "left": 140,
+                            "position": "absolute",
+                            "top": 0,
+                            "width": 140,
+                          }
+                        }
+                      >
+                        Value
+                      </div>
+                      <div
+                        className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                        onClick={[Function]}
+                        onMouseOut={[Function]}
+                        onMouseOver={[Function]}
+                        style={
+                          Object {
+                            "height": 40,
+                            "left": 0,
+                            "position": "absolute",
+                            "top": 40,
+                            "width": 140,
+                          }
+                        }
+                      >
+                        <section
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 hezxDP"
+                          id={null}
+                          rows={null}
+                        >
+                          <div
+                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                            disabled={false}
+                          >
+                            <input
+                              checked={null}
+                              className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+                              id={null}
+                              onBlur={null}
+                              onChange={null}
+                              onFocus={null}
+                              type="checkbox"
+                            />
+                          </div>
+                          <button
+                            className="Button__StyledButton-sc-1v7sls2-0 jeARnt"
+                            disabled={false}
+                            htmlFor={null}
+                            id={null}
+                            name={null}
+                            onClick={[Function]}
+                            tabIndex="1"
+                            type="button"
+                          >
+                            <section
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                              id={null}
+                              rows={null}
+                            >
+                              <label
+                                className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                                fontSize="0.876em"
+                                fontWeight={600}
+                                htmlFor={null}
+                                letterSpacing="0.2px"
+                              >
+                                Object ID
+                              </label>
+                            </section>
+                          </button>
+                        </section>
+                      </div>
+                      <div
+                        className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                        onClick={[Function]}
+                        onMouseOut={[Function]}
+                        onMouseOver={[Function]}
+                        style={
+                          Object {
+                            "height": 40,
+                            "left": 140,
+                            "position": "absolute",
+                            "top": 40,
+                            "width": 140,
+                          }
+                        }
+                      >
+                        Value
+                      </div>
+                      <div
+                        className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                        onClick={[Function]}
+                        onMouseOut={[Function]}
+                        onMouseOver={[Function]}
+                        style={
+                          Object {
+                            "height": 40,
+                            "left": 0,
+                            "position": "absolute",
+                            "top": 80,
+                            "width": 140,
+                          }
+                        }
+                      >
+                        <section
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 hezxDP"
+                          id={null}
+                          rows={null}
+                        >
+                          <div
+                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                            disabled={false}
+                          >
+                            <input
+                              checked={null}
+                              className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+                              id={null}
+                              onBlur={null}
+                              onChange={null}
+                              onFocus={null}
+                              type="checkbox"
+                            />
+                          </div>
+                          <button
+                            className="Button__StyledButton-sc-1v7sls2-0 jeARnt"
+                            disabled={false}
+                            htmlFor={null}
+                            id={null}
+                            name={null}
+                            onClick={[Function]}
+                            tabIndex="1"
+                            type="button"
+                          >
+                            <section
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                              id={null}
+                              rows={null}
+                            >
+                              <label
+                                className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                                fontSize="0.876em"
+                                fontWeight={600}
+                                htmlFor={null}
+                                letterSpacing="0.2px"
+                              >
+                                Object ID
+                              </label>
+                            </section>
+                          </button>
+                        </section>
+                      </div>
+                      <div
+                        className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                        onClick={[Function]}
+                        onMouseOut={[Function]}
+                        onMouseOver={[Function]}
+                        style={
+                          Object {
+                            "height": 40,
+                            "left": 140,
+                            "position": "absolute",
+                            "top": 80,
+                            "width": 140,
+                          }
+                        }
+                      >
+                        Value
+                      </div>
+                      <div
+                        className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                        onClick={[Function]}
+                        onMouseOut={[Function]}
+                        onMouseOver={[Function]}
+                        style={
+                          Object {
+                            "height": 40,
+                            "left": 0,
+                            "position": "absolute",
+                            "top": 120,
+                            "width": 140,
+                          }
+                        }
+                      >
+                        <section
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 hezxDP"
+                          id={null}
+                          rows={null}
+                        >
+                          <div
+                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                            disabled={false}
+                          >
+                            <input
+                              checked={null}
+                              className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+                              id={null}
+                              onBlur={null}
+                              onChange={null}
+                              onFocus={null}
+                              type="checkbox"
+                            />
+                          </div>
+                          <button
+                            className="Button__StyledButton-sc-1v7sls2-0 jeARnt"
+                            disabled={false}
+                            htmlFor={null}
+                            id={null}
+                            name={null}
+                            onClick={[Function]}
+                            tabIndex="1"
+                            type="button"
+                          >
+                            <section
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                              id={null}
+                              rows={null}
+                            >
+                              <label
+                                className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                                fontSize="0.876em"
+                                fontWeight={600}
+                                htmlFor={null}
+                                letterSpacing="0.2px"
+                              >
+                                Object ID
+                              </label>
+                            </section>
+                          </button>
+                        </section>
+                      </div>
+                      <div
+                        className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                        onClick={[Function]}
+                        onMouseOut={[Function]}
+                        onMouseOver={[Function]}
+                        style={
+                          Object {
+                            "height": 40,
+                            "left": 140,
+                            "position": "absolute",
+                            "top": 120,
+                            "width": 140,
+                          }
+                        }
+                      >
+                        Value
+                      </div>
+                      <div
+                        className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                        onClick={[Function]}
+                        onMouseOut={[Function]}
+                        onMouseOver={[Function]}
+                        style={
+                          Object {
+                            "height": 40,
+                            "left": 0,
+                            "position": "absolute",
+                            "top": 160,
+                            "width": 140,
+                          }
+                        }
+                      >
+                        <section
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 hezxDP"
+                          id={null}
+                          rows={null}
+                        >
+                          <div
+                            className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                            disabled={false}
+                          >
+                            <input
+                              checked={null}
+                              className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+                              id={null}
+                              onBlur={null}
+                              onChange={null}
+                              onFocus={null}
+                              type="checkbox"
+                            />
+                          </div>
+                          <button
+                            className="Button__StyledButton-sc-1v7sls2-0 jeARnt"
+                            disabled={false}
+                            htmlFor={null}
+                            id={null}
+                            name={null}
+                            onClick={[Function]}
+                            tabIndex="1"
+                            type="button"
+                          >
+                            <section
+                              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                              id={null}
+                              rows={null}
+                            >
+                              <label
+                                className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                                fontSize="0.876em"
+                                fontWeight={600}
+                                htmlFor={null}
+                                letterSpacing="0.2px"
+                              >
+                                Object ID
+                              </label>
+                            </section>
+                          </button>
+                        </section>
+                      </div>
+                      <div
+                        className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                        onClick={[Function]}
+                        onMouseOut={[Function]}
+                        onMouseOver={[Function]}
+                        style={
+                          Object {
+                            "height": 40,
+                            "left": 140,
+                            "position": "absolute",
+                            "top": 160,
+                            "width": 140,
+                          }
+                        }
+                      >
+                        Value
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </div>
+  </section>
+</div>
+`;
+
+exports[` 6`] = `
+<div
+  style={
+    Object {
+      "height": "100vh",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="Flex__FlexWrapper-sc-7b3s7m-0 fwrFdN Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+    height={null}
+    id={null}
+    overflow={null}
+    width={null}
+  >
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 dOOpDR"
+      height={null}
+      id="Header"
+      overflow={null}
+      width={null}
+    >
+      
+    </div>
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 fwrFdN Layout__Body-sc-19tlhp4-3 iPUXIc"
+      height={null}
+      id={null}
+      overflow={null}
+      width={null}
+    >
+      <div
+        className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 iwbkcy"
+        height={null}
+        id="Left"
+        overflow={null}
+        width="15%"
+      >
+        
+      </div>
+      <div
+        className="Flex__FlexWrapper-sc-7b3s7m-0 kvuuwd Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+        height="40%"
+        id={null}
+        overflow={null}
+        width="85%"
+      >
+        <div
+          className="Flex__FlexWrapper-sc-7b3s7m-0 eeLHbF Layout__RegionCenter-sc-19tlhp4-6 kIUOgp"
+          height={null}
+          id="Main"
+          overflow={null}
+          width={null}
+        >
+          <div
+            className="Page__PageWrapper-mddda5-0 kuPUTZ"
+            id={null}
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 gvGjBF Page__Body-mddda5-2 lmAbxe"
+              id={null}
+              rows={null}
+            >
+              <div
+                className="Card__CardWrapper-sc-1g3s676-5 JIWVz"
+                href={null}
+                id={null}
+                media={null}
+                onClick={null}
+              >
+                <section
+                  className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
+                  id={null}
+                  onClick={null}
+                >
+                  <ul
+                    className="List__ListWrapper-sc-43f2zq-1 lcdfCY"
+                    id={null}
+                  >
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 gxLOic List__ListTitle-sc-43f2zq-0 fZjVTB"
+                      fontSize="0.876em"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing="0.2px"
+                    >
+                      1: Confirm
+                    </label>
+                    <li
+                      className="List__ListItemWrapper-sc-43f2zq-2 cqonPK"
+                      disabled={false}
+                      href={null}
+                      id={null}
+                      onClick={null}
+                      tabIndex="0"
+                    >
+                      <div
+                        className="Bar__BarLayout-icfo76-2 eUVQsH"
+                        id={null}
+                        onClick={null}
+                      >
+                        <div
+                          className="Bar__Slot-icfo76-1 RjiBe"
+                        >
+                          <h6
+                            className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                            fontSize="1em"
+                            fontWeight={400}
+                            letterSpacing="0px"
+                          >
+                            Verify Site
+                          </h6>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </section>
+                <section
+                  className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
+                  id={null}
+                  onClick={null}
+                >
+                  <ul
+                    className="List__ListWrapper-sc-43f2zq-1 lcdfCY"
+                    id={null}
+                  >
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 gxLOic List__ListTitle-sc-43f2zq-0 fZjVTB"
+                      fontSize="0.876em"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing="0.2px"
+                    >
+                      2: Review
+                    </label>
+                    <li
+                      className="List__ListItemWrapper-sc-43f2zq-2 cqonPK"
+                      disabled={false}
+                      href={null}
+                      id={null}
+                      onClick={null}
+                      tabIndex="0"
+                    >
+                      <div
+                        className="Bar__BarLayout-icfo76-2 eUVQsH"
+                        id={null}
+                        onClick={null}
+                      >
+                        <div
+                          className="Bar__Slot-icfo76-1 RjiBe"
+                        >
+                          <h6
+                            className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                            fontSize="1em"
+                            fontWeight={400}
+                            letterSpacing="0px"
+                          >
+                            Section 1
+                          </h6>
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      className="List__ListItemWrapper-sc-43f2zq-2 cqonPK"
+                      disabled={false}
+                      href={null}
+                      id={null}
+                      onClick={null}
+                      tabIndex="0"
+                    >
+                      <div
+                        className="Bar__BarLayout-icfo76-2 eUVQsH"
+                        id={null}
+                        onClick={null}
+                      >
+                        <div
+                          className="Bar__Slot-icfo76-1 RjiBe"
+                        >
+                          <h6
+                            className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                            fontSize="1em"
+                            fontWeight={400}
+                            letterSpacing="0px"
+                          >
+                            Section 2
+                          </h6>
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      className="List__ListItemWrapper-sc-43f2zq-2 cqonPK"
+                      disabled={false}
+                      href={null}
+                      id={null}
+                      onClick={null}
+                      tabIndex="0"
+                    >
+                      <div
+                        className="Bar__BarLayout-icfo76-2 eUVQsH"
+                        id={null}
+                        onClick={null}
+                      >
+                        <div
+                          className="Bar__Slot-icfo76-1 RjiBe"
+                        >
+                          <h6
+                            className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                            fontSize="1em"
+                            fontWeight={400}
+                            letterSpacing="0px"
+                          >
+                            Section 3
+                          </h6>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </section>
+                <section
+                  className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
+                  id={null}
+                  onClick={null}
+                >
+                  <ul
+                    className="List__ListWrapper-sc-43f2zq-1 lcdfCY"
+                    id={null}
+                  >
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 gxLOic List__ListTitle-sc-43f2zq-0 fZjVTB"
+                      fontSize="0.876em"
+                      fontWeight={400}
+                      htmlFor={null}
+                      letterSpacing="0.2px"
+                    >
+                      3: Export
+                    </label>
+                    <li
+                      className="List__ListItemWrapper-sc-43f2zq-2 cqonPK"
+                      disabled={false}
+                      href={null}
+                      id={null}
+                      onClick={null}
+                      tabIndex="0"
+                    >
+                      <div
+                        className="Bar__BarLayout-icfo76-2 eUVQsH"
+                        id={null}
+                        onClick={null}
+                      >
+                        <div
+                          className="Bar__Slot-icfo76-1 RjiBe"
+                        >
+                          <h6
+                            className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                            fontSize="1em"
+                            fontWeight={400}
+                            letterSpacing="0px"
+                          >
+                            View Reports
+                          </h6>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </section>
+              </div>
+              <div
+                className="Bar__BarLayout-icfo76-2 fliBOc"
+                id={null}
+                onClick={null}
+              >
+                <div
+                  className="Bar__Slot-icfo76-1 fNcQEg"
+                >
+                  <h4
+                    className="Typography__TitleText-sc-19auepv-2 czurBm"
+                    fontSize="1.25em"
+                    fontWeight={600}
+                    letterSpacing="0px"
+                  >
+                    Module A
+                  </h4>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                    fontSize="1em"
+                    fontWeight={600}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    Here is everything we have for you...
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[` 7`] = `null`;

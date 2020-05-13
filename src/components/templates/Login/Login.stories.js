@@ -10,8 +10,7 @@ import Form, { FormSection } from "layout/Form";
 import TextInput from "atoms/TextInput";
 import Page from "layout/Page";
 
-
-storiesOf("Templates|Login", module)
+storiesOf("Templates|00_Login", module)
   .add(
     "Login",
     () => {
@@ -22,15 +21,15 @@ storiesOf("Templates|Login", module)
               contentAlign="center"
               padding="2x"
               left={{
-        align: "left",
-        content: (
-          <Image
-            src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
-            width="10rem"
-          />
-        ),
-        width: "20%",
-      }}
+                align: "left",
+                content: (
+                  <Image
+                    src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
+                    width="10rem"
+                  />
+                ),
+                width: "20%",
+              }}
             />
             <Form title="Login">
               <FormSection>
@@ -70,15 +69,15 @@ storiesOf("Templates|Login", module)
               contentAlign="center"
               padding="2x"
               left={{
-        align: "left",
-        content: (
-          <Image
-            src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
-            width="10rem"
-          />
-        ),
-        width: "20%",
-      }}
+                align: "left",
+                content: (
+                  <Image
+                    src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
+                    width="10rem"
+                  />
+                ),
+                width: "20%",
+              }}
             />
             <Form title="Registration">
               <FormSection>
@@ -107,7 +106,7 @@ storiesOf("Templates|Login", module)
     },
   );
 
-storiesOf("Templates|Login/Password", module)
+storiesOf("Templates|00_Login/Password", module)
   .add(
     "Reset",
     () => {
@@ -118,15 +117,15 @@ storiesOf("Templates|Login/Password", module)
               contentAlign="center"
               padding="2x"
               left={{
-        align: "left",
-        content: (
-          <Image
-            src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
-            width="10rem"
-          />
-        ),
-        width: "20%",
-      }}
+                align: "left",
+                content: (
+                  <Image
+                    src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
+                    width="10rem"
+                  />
+                ),
+                width: "20%",
+              }}
             />
             <Form title="Reset Password">
               <FormSection>
@@ -159,15 +158,15 @@ storiesOf("Templates|Login/Password", module)
               contentAlign="center"
               padding="2x"
               left={{
-        align: "left",
-        content: (
-          <Image
-            src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
-            width="10rem"
-          />
-        ),
-        width: "20%",
-      }}
+                align: "left",
+                content: (
+                  <Image
+                    src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
+                    width="10rem"
+                  />
+                ),
+                width: "20%",
+              }}
             />
             <Form title="Email Sent">
               <FormSection>
@@ -192,15 +191,15 @@ storiesOf("Templates|Login/Password", module)
               contentAlign="center"
               padding="2x"
               left={{
-        align: "left",
-        content: (
-          <Image
-            src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
-            width="10rem"
-          />
-        ),
-        width: "20%",
-      }}
+                align: "left",
+                content: (
+                  <Image
+                    src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
+                    width="10rem"
+                  />
+                ),
+                width: "20%",
+              }}
             />
             <Form title="Create New Password">
               <FormSection>
@@ -238,15 +237,15 @@ storiesOf("Templates|Login/Password", module)
               contentAlign="center"
               padding="2x"
               left={{
-        align: "left",
-        content: (
-          <Image
-            src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
-            width="10rem"
-          />
-        ),
-        width: "20%",
-      }}
+                align: "left",
+                content: (
+                  <Image
+                    src="https://www.lightboxre.com/assets/2019/09/LightBox.Logo_-300x138.png"
+                    width="10rem"
+                  />
+                ),
+                width: "20%",
+              }}
             />
             <Form title="Confirmed New Password">
               <FormSection>

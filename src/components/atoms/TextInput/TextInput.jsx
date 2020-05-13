@@ -39,7 +39,10 @@ const Input = styled.input`
     return props.theme.palette[props.inputCaretColor] || "";
   }};
   width: 100%;
-  min-height: 1.875rem;
+  /* min-height: 1.875rem; */
+  min-height: ${(props) => {
+    return props.inputHeight || "1.875rem";
+  }};
   height: 2.4rem;
   padding: 0.125rem 0.5rem;
   resize: ${(props) => {
@@ -118,9 +121,11 @@ function TextInput({
   let inputResize;
   let placeholderColor;
   let inputSelectColor;
+  let inputHeight;
   if (type === "textarea") {
     as = "textarea";
     inputResize = "vertical";
+    inputHeight = "4.75rem";
   }
 
   const uId = id || getGuid();
@@ -201,6 +206,7 @@ function TextInput({
         inputBorderColorHover={inputBorderColorHover}
         inputCaretColor={inputCaretColor}
         inputFillColor={inputFillColor}
+        inputHeight={inputHeight}
         inputResize={inputResize}
         inputSelectColor={inputSelectColor}
         list={autoCompleteDataListId}

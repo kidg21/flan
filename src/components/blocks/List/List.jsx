@@ -9,8 +9,15 @@ import Avatar from "atoms/Avatar";
 import Icon from "atoms/Icon";
 import Checkbox from "atoms/Checkbox";
 import Switch from "atoms/Switch";
-import Text, { Title } from "base/Typography";
+import Text, { Title, Label } from "base/Typography";
 import { InteractiveContext, DisabledContext } from "States";
+
+const ListTitle = styled(Label)`
+  color: ${(props) => {
+    return props.theme.text.secondary;
+  }};
+  text-transform: uppercase;
+`;
 
 const ListWrapper = styled.ul`
   display: flex;
@@ -30,13 +37,13 @@ const ListWrapper = styled.ul`
 
 const ListItemWrapper = styled.li`
   position: relative;
-  padding: 0.8em;
   color: ${(props) => {
     return props.isSelected ? props.theme.text.inverse : props.theme.text.primary;
   }};
   background-color: ${(props) => {
     return props.isSelected ? props.theme.background.selected : props.theme.background.default;
   }};
+  padding: .5em;
   cursor: ${(props) => {
     return props.isInteractive ? "pointer" : "";
   }};
@@ -62,11 +69,12 @@ const ListItemWrapper = styled.li`
 `;
 
 function List({
-  children, id, isDivided, isInteractive,
+  children, id, isDivided, isInteractive, title,
 }) {
   return (
     <InteractiveContext.Provider value={isInteractive}>
       <ListWrapper isDivided={isDivided} id={id}>
+        <ListTitle text={title} />
         {children}
       </ListWrapper>
     </InteractiveContext.Provider>
@@ -78,12 +86,14 @@ List.propTypes = {
   id: PropTypes.string,
   isDivided: PropTypes.bool,
   isInteractive: PropTypes.bool,
+  title: PropTypes.string,
 };
 List.defaultProps = {
   children: null,
   id: null,
   isDivided: false,
   isInteractive: false,
+  title: null,
 };
 
 function getRightContent(post, disabled, onClick) {
@@ -91,12 +101,27 @@ function getRightContent(post, disabled, onClick) {
   if (post && post.type) {
     const postType = post.type.toLowerCase();
     if (postType === "checkbox") {
-      rightContent = <Checkbox id={post.label} label={post.label} align="right" disabled={disabled} checked={post.checked} onChange={post.onClick} />;
+      rightContent = {
+        content: <Checkbox id={post.label} label={post.label} align="right" disabled={disabled} checked={post.checked} onChange={post.onClick} />,
+        width: "max-content",
+        onClick: post.onClick || onClick,
+      };
     } else if (postType === "toggle") {
-      rightContent = <Switch label={post.label} align="right" disabled={disabled} checked={post.checked} onChange={post.onClick} />;
+      rightContent = {
+        content: <Switch label={post.label} align="right" disabled={disabled} checked={post.checked} onChange={post.onClick} />,
+        width: "max-content",
+        onClick: post.onClick || onClick,
+      };
     } else if (postType === "label" && post.label) {
       rightContent = {
         content: <Tag label={post.label} />,
+        width: "max-content",
+        onClick: post.onClick || onClick,
+      };
+    } else if (postType === "icon" && post.icon) {
+      rightContent = {
+        content: <Icon icon={post.icon} onClick={post.onClick} />,
+        width: "max-content",
         onClick: post.onClick || onClick,
       };
     }
@@ -147,7 +172,7 @@ function ListItem({
 }) {
   const leftContent = getLeftContent(pre, disabled, onClick);
   const centerContent = (
-    <React.Fragment >
+    <React.Fragment>
       <Title text={title} disabled={disabled} />
       {description ? (<Text size="sm" text={description} disabled={disabled} />
       ) : null}

@@ -10,11 +10,11 @@ exports[` 1`] = `
   }
 >
   <div
-    className="Panel__PanelWrapper-sc-48epke-0 kObpyG"
+    className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
     id={null}
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 oOUAY"
+      className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
       id={null}
     />
   </div>
@@ -31,15 +31,15 @@ exports[` 2`] = `
   }
 >
   <div
-    className="Panel__PanelWrapper-sc-48epke-0 kObpyG"
+    className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
     id={null}
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 oOUAY Panel__PanelSection-sc-48epke-2 bHxuLl"
+      className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
       id={null}
     >
       <div
-        className="Bar__BarLayout-icfo76-2 gJPHni"
+        className="Bar__BarLayout-icfo76-2 eIFIfS"
         id={null}
         onClick={null}
       >
@@ -59,7 +59,7 @@ exports[` 2`] = `
       </div>
     </section>
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 oOUAY"
+      className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
       id={null}
     />
   </div>
@@ -76,19 +76,19 @@ exports[` 3`] = `
   }
 >
   <div
-    className="Panel__PanelWrapper-sc-48epke-0 kObpyG"
+    className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
     id={null}
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 oOUAY"
+      className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
       id={null}
     />
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 oOUAY Panel__PanelSection-sc-48epke-2 bHxuLl"
+      className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
       id={null}
     >
       <div
-        className="Bar__BarLayout-icfo76-2 gJPHni"
+        className="Bar__BarLayout-icfo76-2 eIFIfS"
         id={null}
         onClick={null}
       >
@@ -121,15 +121,15 @@ exports[` 4`] = `
   }
 >
   <div
-    className="Panel__PanelWrapper-sc-48epke-0 kObpyG"
+    className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
     id={null}
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 oOUAY Panel__PanelSection-sc-48epke-2 bHxuLl"
+      className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
       id={null}
     >
       <div
-        className="Bar__BarLayout-icfo76-2 gJPHni"
+        className="Bar__BarLayout-icfo76-2 eIFIfS"
         id={null}
         onClick={null}
       >
@@ -149,15 +149,15 @@ exports[` 4`] = `
       </div>
     </section>
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 oOUAY"
+      className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
       id={null}
     />
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 oOUAY Panel__PanelSection-sc-48epke-2 bHxuLl"
+      className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
       id={null}
     >
       <div
-        className="Bar__BarLayout-icfo76-2 gJPHni"
+        className="Bar__BarLayout-icfo76-2 eIFIfS"
         id={null}
         onClick={null}
       >
@@ -190,15 +190,15 @@ exports[` 5`] = `
   }
 >
   <div
-    className="Panel__PanelWrapper-sc-48epke-0 kObpyG"
+    className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
     id="Panel"
   >
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 oOUAY Panel__PanelSection-sc-48epke-2 bHxuLl"
+      className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
       id="Panel_header"
     >
       <div
-        className="Bar__BarLayout-icfo76-2 gJPHni"
+        className="Bar__BarLayout-icfo76-2 eIFIfS"
         id={null}
         onClick={null}
       >
@@ -218,58 +218,58 @@ exports[` 5`] = `
       </div>
     </section>
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 oOUAY"
+      className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
       id="Panel_body"
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 bcIGrH Card__CardGridWrapper-sc-1g3s676-6 dhWlYr"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-6 iqBfAy"
         id={null}
         rows={null}
       >
         <div
-          className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
+          className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
           href={null}
           id={null}
           media={null}
           onClick={null}
         />
         <div
-          className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
+          className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
           href={null}
           id={null}
           media={null}
           onClick={null}
         />
         <div
-          className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
+          className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
           href={null}
           id={null}
           media={null}
           onClick={null}
         />
         <div
-          className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
+          className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
           href={null}
           id={null}
           media={null}
           onClick={null}
         />
         <div
-          className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
+          className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
           href={null}
           id={null}
           media={null}
           onClick={null}
         />
         <div
-          className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
+          className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
           href={null}
           id={null}
           media={null}
           onClick={null}
         />
         <div
-          className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
+          className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
           href={null}
           id={null}
           media={null}
@@ -278,11 +278,136 @@ exports[` 5`] = `
       </section>
     </section>
     <section
-      className="Panel__SectionWrapper-sc-48epke-1 oOUAY Panel__PanelSection-sc-48epke-2 bHxuLl"
+      className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
       id="Panel_footer"
     >
       <div
-        className="Bar__BarLayout-icfo76-2 gJPHni"
+        className="Bar__BarLayout-icfo76-2 eIFIfS"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-icfo76-1 dLaZFL"
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+            fontSize="0.876em"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0px"
+          >
+            Footer
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+`;
+
+exports[` 6`] = `
+<div
+  style={
+    Object {
+      "height": "100vh",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
+    id="Panel"
+  >
+    <section
+      className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
+      id="Panel_header"
+    >
+      <div
+        className="Bar__BarLayout-icfo76-2 eIFIfS"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-icfo76-1 dLaZFL"
+        >
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+            fontSize="0.876em"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0px"
+          >
+            Header
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
+      id="Panel_body"
+    >
+      <section
+        className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-6 iqBfAy"
+        id={null}
+        rows={null}
+      >
+        <div
+          className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
+          href={null}
+          id={null}
+          media={null}
+          onClick={null}
+        />
+        <div
+          className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
+          href={null}
+          id={null}
+          media={null}
+          onClick={null}
+        />
+        <div
+          className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
+          href={null}
+          id={null}
+          media={null}
+          onClick={null}
+        />
+        <div
+          className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
+          href={null}
+          id={null}
+          media={null}
+          onClick={null}
+        />
+        <div
+          className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
+          href={null}
+          id={null}
+          media={null}
+          onClick={null}
+        />
+        <div
+          className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
+          href={null}
+          id={null}
+          media={null}
+          onClick={null}
+        />
+        <div
+          className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
+          href={null}
+          id={null}
+          media={null}
+          onClick={null}
+        />
+      </section>
+    </section>
+    <section
+      className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
+      id="Panel_footer"
+    >
+      <div
+        className="Bar__BarLayout-icfo76-2 eIFIfS"
         id={null}
         onClick={null}
       >

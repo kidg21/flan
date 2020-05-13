@@ -3,7 +3,7 @@
 exports[` 1`] = `
 <svg
   aria-hidden="true"
-  className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 iQNGOu"
+  className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jSXIyQ"
   color={null}
   data-icon="user-circle"
   data-prefix="far"
@@ -25,13 +25,13 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 fjUtBI"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 gJQrtw"
   id={null}
   rows={null}
 >
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 iQNGOu"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jSXIyQ"
     color={null}
     data-icon="user-circle"
     data-prefix="far"
@@ -51,7 +51,7 @@ exports[` 2`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gCRkyr"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kVtPKV"
     color="info80"
     data-icon="user-circle"
     data-prefix="far"
@@ -71,7 +71,7 @@ exports[` 2`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kAYuOh"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 RTMYX"
     color="success80"
     data-icon="user-circle"
     data-prefix="far"
@@ -91,7 +91,7 @@ exports[` 2`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jDULPJ"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dgNMiz"
     color="warning80"
     data-icon="user-circle"
     data-prefix="far"
@@ -111,7 +111,7 @@ exports[` 2`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 eHlAIo"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 ZMLFS"
     color="alert80"
     data-icon="user-circle"
     data-prefix="far"
@@ -131,7 +131,7 @@ exports[` 2`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 hDKFXz"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dRpqLF"
     color="neutral20"
     data-icon="user-circle"
     data-prefix="far"
@@ -154,14 +154,14 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 fjUtBI"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 gJQrtw"
   id={null}
   rows={null}
 >
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 iQNGOu"
-    color={null}
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jeUXzL"
+    color="research"
     data-icon="user-circle"
     data-prefix="far"
     focusable="false"
@@ -180,8 +180,8 @@ exports[` 3`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 iQNGOu"
-    color={null}
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 eeNkWP"
+    color="bi"
     data-icon="user-circle"
     data-prefix="far"
     focusable="false"
@@ -200,8 +200,8 @@ exports[` 3`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 iQNGOu"
-    color={null}
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gSbUDL"
+    color="broker"
     data-icon="user-circle"
     data-prefix="far"
     focusable="false"
@@ -220,8 +220,8 @@ exports[` 3`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 iQNGOu"
-    color={null}
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jnAczo"
+    color="jobs"
     data-icon="user-circle"
     data-prefix="far"
     focusable="false"
@@ -240,8 +240,8 @@ exports[` 3`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 iQNGOu"
-    color={null}
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 cZshxK"
+    color="brand1"
     data-icon="user-circle"
     data-prefix="far"
     focusable="false"
@@ -260,8 +260,8 @@ exports[` 3`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 iQNGOu"
-    color={null}
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jDWoga"
+    color="brand2"
     data-icon="user-circle"
     data-prefix="far"
     focusable="false"
@@ -280,8 +280,8 @@ exports[` 3`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 iQNGOu"
-    color={null}
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 iyQHSR"
+    color="brand3"
     data-icon="user-circle"
     data-prefix="far"
     focusable="false"
@@ -300,7 +300,7 @@ exports[` 3`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jMwUQi"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 bDLgxI"
     color="brand4"
     data-icon="user-circle"
     data-prefix="far"
@@ -323,7 +323,7 @@ exports[` 3`] = `
 
 exports[` 4`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 fjUtBI"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 gJQrtw"
   id={null}
   rows={null}
 >
@@ -332,7 +332,7 @@ exports[` 4`] = `
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 iQNGOu"
+      className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jSXIyQ"
       color={null}
       data-icon="user-circle"
       data-prefix="far"
@@ -355,7 +355,7 @@ exports[` 4`] = `
       id={null}
     >
       <div
-        className="Tag__TagContainer-sc-128kb3h-0 fcKsQO"
+        className="Tag__TagContainer-sc-128kb3h-0 ddCbiL"
         id={null}
         label={null}
       />
@@ -366,7 +366,7 @@ exports[` 4`] = `
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-home-alt fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 iQNGOu"
+      className="svg-inline--fa fa-home-alt fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 jSXIyQ"
       color={null}
       data-icon="home-alt"
       data-prefix="fas"
@@ -389,7 +389,7 @@ exports[` 4`] = `
       id={null}
     >
       <div
-        className="Tag__TagContainer-sc-128kb3h-0 hInoNR"
+        className="Tag__TagContainer-sc-128kb3h-0 WNPDE"
         id={null}
         label={null}
       />
@@ -400,7 +400,7 @@ exports[` 4`] = `
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-bookmark fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 iQNGOu"
+      className="svg-inline--fa fa-bookmark fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 jSXIyQ"
       color={null}
       data-icon="bookmark"
       data-prefix="far"
@@ -423,7 +423,7 @@ exports[` 4`] = `
       id={null}
     >
       <div
-        className="Tag__TagContainer-sc-128kb3h-0 iTOpcP"
+        className="Tag__TagContainer-sc-128kb3h-0 fFfkGe"
         id={null}
         label={null}
       />
@@ -434,7 +434,7 @@ exports[` 4`] = `
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-print fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 iQNGOu"
+      className="svg-inline--fa fa-print fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jSXIyQ"
       color={null}
       data-icon="print"
       data-prefix="far"
@@ -457,14 +457,14 @@ exports[` 4`] = `
       id={null}
     >
       <div
-        className="Tag__TagContainer-sc-128kb3h-0 vPPxL"
+        className="Tag__TagContainer-sc-128kb3h-0 fEMXQS"
         id={null}
         label={null}
       />
     </div>
   </div>
   <a
-    className="Icon__LinkedIcon-sc-1oa9m1v-0 kzNrBw"
+    className="Icon__LinkedIcon-sc-1oa9m1v-0 bDhxPl"
     disabled={null}
     href={null}
     onClick={[Function]}
@@ -474,8 +474,8 @@ exports[` 4`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-user fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 iQNGOu"
-        color={null}
+        className="svg-inline--fa fa-user fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 kVtPKV"
+        color="link"
         data-icon="user"
         data-prefix="far"
         focusable="false"
@@ -497,7 +497,7 @@ exports[` 4`] = `
         id={null}
       >
         <div
-          className="Tag__TagContainer-sc-128kb3h-0 fcKsQO"
+          className="Tag__TagContainer-sc-128kb3h-0 ddCbiL"
           id={null}
           label={null}
         />
@@ -505,7 +505,7 @@ exports[` 4`] = `
     </div>
   </a>
   <a
-    className="Icon__LinkedIcon-sc-1oa9m1v-0 kzNrBw"
+    className="Icon__LinkedIcon-sc-1oa9m1v-0 bDhxPl"
     disabled={null}
     href={null}
     onClick={[Function]}
@@ -515,8 +515,8 @@ exports[` 4`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 iQNGOu"
-        color={null}
+        className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kVtPKV"
+        color="link"
         data-icon="user-circle"
         data-prefix="far"
         focusable="false"
@@ -538,7 +538,7 @@ exports[` 4`] = `
         id={null}
       >
         <div
-          className="Tag__TagContainer-sc-128kb3h-0 hInoNR"
+          className="Tag__TagContainer-sc-128kb3h-0 WNPDE"
           id={null}
           label={null}
         />
@@ -546,7 +546,7 @@ exports[` 4`] = `
     </div>
   </a>
   <a
-    className="Icon__LinkedIcon-sc-1oa9m1v-0 kzNrBw"
+    className="Icon__LinkedIcon-sc-1oa9m1v-0 bDhxPl"
     disabled={null}
     href={null}
     onClick={[Function]}
@@ -556,8 +556,8 @@ exports[` 4`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 iQNGOu"
-        color={null}
+        className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kVtPKV"
+        color="link"
         data-icon="user-circle"
         data-prefix="far"
         focusable="false"
@@ -579,7 +579,7 @@ exports[` 4`] = `
         id={null}
       >
         <div
-          className="Tag__TagContainer-sc-128kb3h-0 iTOpcP"
+          className="Tag__TagContainer-sc-128kb3h-0 fFfkGe"
           id={null}
           label={null}
         />
@@ -587,7 +587,7 @@ exports[` 4`] = `
     </div>
   </a>
   <a
-    className="Icon__LinkedIcon-sc-1oa9m1v-0 kzNrBw"
+    className="Icon__LinkedIcon-sc-1oa9m1v-0 bDhxPl"
     disabled={null}
     href={null}
     onClick={true}
@@ -597,8 +597,8 @@ exports[` 4`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 iQNGOu"
-        color={null}
+        className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kVtPKV"
+        color="link"
         data-icon="user-circle"
         data-prefix="far"
         focusable="false"
@@ -620,7 +620,7 @@ exports[` 4`] = `
         id={null}
       >
         <div
-          className="Tag__TagContainer-sc-128kb3h-0 vPPxL"
+          className="Tag__TagContainer-sc-128kb3h-0 fEMXQS"
           id={null}
           label={null}
         />
@@ -632,13 +632,13 @@ exports[` 4`] = `
 
 exports[` 5`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 WapyX"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cmmDcv"
   id={null}
   rows={null}
 >
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kQFFTo"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 fMXrpG"
     color={null}
     data-icon="user-circle"
     data-prefix="far"
@@ -658,7 +658,7 @@ exports[` 5`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gDOXYI"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 lhHlxO"
     color={null}
     data-icon="user-circle"
     data-prefix="far"
@@ -678,7 +678,7 @@ exports[` 5`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 cJJNyd"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
     color={null}
     data-icon="user-circle"
     data-prefix="far"
@@ -698,7 +698,7 @@ exports[` 5`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 bpsbMF"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb"
     color={null}
     data-icon="user-circle"
     data-prefix="far"
@@ -718,7 +718,7 @@ exports[` 5`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 iQNGOu"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jSXIyQ"
     color={null}
     data-icon="user-circle"
     data-prefix="far"
@@ -738,7 +738,7 @@ exports[` 5`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 fjIXed"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 cafsrP"
     color={null}
     data-icon="user-circle"
     data-prefix="far"
@@ -758,7 +758,7 @@ exports[` 5`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 cLvYJW"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 duCWGY"
     color={null}
     data-icon="user-circle"
     data-prefix="far"
@@ -778,7 +778,7 @@ exports[` 5`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 ffwBCx"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 brUBnv"
     color={null}
     data-icon="user-circle"
     data-prefix="far"

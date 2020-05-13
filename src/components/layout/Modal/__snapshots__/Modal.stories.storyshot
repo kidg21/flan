@@ -19,14 +19,14 @@ Array [
       className="Modal__ContentWrapper-sc-15cll21-0 liMSYL"
     >
       <div
-        className="Card__CardWrapper-sc-1g3s676-5 lkFwtr Banner__StyledBanner-sc-6825al-0 bfAGjz"
+        className="Card__CardWrapper-sc-1g3s676-5 JIWVz Banner__StyledBanner-sc-6825al-0 bfAGjz"
         href={null}
         id={null}
         media={null}
         onClick={null}
       >
         <div
-          className="Bar__BarLayout-icfo76-2 bRGQtj"
+          className="Bar__BarLayout-icfo76-2 eUVQsH"
           id={null}
           onClick={null}
         >
@@ -34,7 +34,7 @@ Array [
             className="Bar__Slot-icfo76-1 fIRUJx"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
               id={null}
               rows={null}
             >
@@ -52,15 +52,15 @@ Array [
             className="Bar__Slot-icfo76-1 cxljst"
           >
             <a
-              className="Icon__LinkedIcon-sc-1oa9m1v-0 kzNrBw"
+              className="Icon__LinkedIcon-sc-1oa9m1v-0 bDhxPl"
               disabled={null}
               href={null}
               onClick={[Function]}
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 bpsbMF Banner__Close-sc-6825al-1 cgOoTm"
-                color={null}
+                className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 fvyOLy Banner__Close-sc-6825al-1 cgOoTm"
+                color="link"
                 data-icon="times"
                 data-prefix="far"
                 focusable="false"
@@ -94,16 +94,16 @@ Array [
     type="button"
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
       id={null}
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
-        fontSize="1em"
+        className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+        fontSize="0.876em"
         fontWeight={600}
         htmlFor={null}
-        letterSpacing="0px"
+        letterSpacing="0.2px"
       >
         Default Modal
       </label>
@@ -132,19 +132,19 @@ Array [
       onClick={null}
     >
       <div
-        className="Card__CardWrapper-sc-1g3s676-5 cEBIcs"
+        className="Card__CardWrapper-sc-1g3s676-5 bHcZEt"
         href={null}
         id={null}
         media={null}
         onClick={null}
       >
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__BarLayout-icfo76-2 bRGQtj"
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
             id={null}
             onClick={null}
           >
@@ -177,16 +177,16 @@ Array [
     type="button"
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
       id={null}
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
-        fontSize="1em"
+        className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+        fontSize="0.876em"
         fontWeight={600}
         htmlFor={null}
-        letterSpacing="0px"
+        letterSpacing="0.2px"
       >
         Open Modal
       </label>
@@ -214,19 +214,19 @@ Array [
       className="Modal__ContentWrapper-sc-15cll21-0 liMSYL"
     >
       <div
-        className="Card__CardWrapper-sc-1g3s676-5 gzxUAm DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+        className="Card__CardWrapper-sc-1g3s676-5 gtDGJG DialogBox__DialogCard-iv0dnf-1 eLwRLb"
         href={null}
         id={null}
         media={null}
         onClick={null}
       >
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__BarLayout-icfo76-2 bRGQtj"
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
             id={null}
             onClick={null}
           >
@@ -245,7 +245,7 @@ Array [
           </div>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
           id={null}
           onClick={null}
         >
@@ -260,12 +260,12 @@ Array [
           </p>
         </section>
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 eaKoCk"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 jZFmBz"
           id={null}
           onClick={null}
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 kiIKlP DialogBox__ButtonGrid-iv0dnf-0 cUZJkB"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb DialogBox__ButtonGrid-iv0dnf-0 cUZJkB"
             id={null}
             rows={null}
           >
@@ -280,16 +280,16 @@ Array [
               type="button"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
                 id={null}
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
-                  fontSize="1em"
+                  className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                  fontSize="0.876em"
                   fontWeight={600}
                   htmlFor={null}
-                  letterSpacing="0px"
+                  letterSpacing="0.2px"
                 >
                   Nevermind...
                 </label>
@@ -306,16 +306,16 @@ Array [
               type="button"
             >
               <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
                 id={null}
                 rows={null}
               >
                 <label
-                  className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
-                  fontSize="1em"
+                  className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                  fontSize="0.876em"
                   fontWeight={600}
                   htmlFor={null}
-                  letterSpacing="0px"
+                  letterSpacing="0.2px"
                 >
                   Let's Do It!
                 </label>
@@ -337,16 +337,16 @@ Array [
     type="button"
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
       id={null}
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
-        fontSize="1em"
+        className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+        fontSize="0.876em"
         fontWeight={600}
         htmlFor={null}
-        letterSpacing="0px"
+        letterSpacing="0.2px"
       >
         Dialog Modal
       </label>
@@ -375,19 +375,19 @@ Array [
       onClick={null}
     >
       <div
-        className="Card__CardWrapper-sc-1g3s676-5 cEBIcs"
+        className="Card__CardWrapper-sc-1g3s676-5 bHcZEt"
         href={null}
         id={null}
         media={null}
         onClick={null}
       >
         <section
-          className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
+          className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
           id={null}
           onClick={null}
         >
           <div
-            className="Bar__BarLayout-icfo76-2 bRGQtj"
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
             id={null}
             onClick={null}
           >
@@ -420,16 +420,16 @@ Array [
     type="button"
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
       id={null}
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
-        fontSize="1em"
+        className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+        fontSize="0.876em"
         fontWeight={600}
         htmlFor={null}
-        letterSpacing="0px"
+        letterSpacing="0.2px"
       >
         Text Modal
       </label>
@@ -464,7 +464,7 @@ Array [
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-times fa-w-10 fa-fw Icon__StyledIcon-sc-1oa9m1v-1 eXDzps"
+        className="svg-inline--fa fa-times fa-w-10 fa-fw Icon__StyledIcon-sc-1oa9m1v-1 gKQaUy"
         color="neutral20"
         data-icon="times"
         data-prefix="far"
@@ -495,16 +495,16 @@ Array [
     type="button"
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
       id={null}
       rows={null}
     >
       <label
-        className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
-        fontSize="1em"
+        className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+        fontSize="0.876em"
         fontWeight={600}
         htmlFor={null}
-        letterSpacing="0px"
+        letterSpacing="0.2px"
       >
         Image Modal
       </label>

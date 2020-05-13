@@ -10,6 +10,8 @@ import Badge from "atoms/Badge";
 
 
 const LinkedIcon = styled.a`
+  color: ${(props) => { return props.theme.text.link; }};
+  width: max-content;
   cursor: ${(props) => {
     if (props.disabled) {
       return "not-allowed";
@@ -40,6 +42,7 @@ const StyledIcon = styled(FontAwesomeIcon)`
   color: ${(props) => {
     return props.theme.palette[props.color] || "";
   }};
+  vertical-align: middle;
   transition: all 0.25s ease-in-out;
 `;
 
@@ -258,8 +261,6 @@ function Icon({
       color = "brand3";
     } if (brand === "brand4") {
       color = "brand4";
-    } else {
-      color = null;
     }
   }
 

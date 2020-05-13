@@ -9,8 +9,13 @@ import { Label } from "base/Typography";
 const TagContainer = styled.div`
   justify-content: center;
   display: flex;
-  width: fit-content;
   align-items: center;
+  width: ${(props) => {
+    return props.badgeWidth || "fit-content";
+  }};
+  height: ${(props) => {
+    return props.badgeHeight || "";
+  }};
   background-color: ${(props) => {
     return props.theme.palette[props.badgeColor];
   }};
@@ -24,7 +29,7 @@ const TagContainer = styled.div`
   }};
   line-height: normal;
   border-radius: ${(props) => {
-    return props.theme.borders.radiusMax;
+    return props.borderRadius || props.theme.borders.radiusMax;
   }};
 `;
 
@@ -32,14 +37,20 @@ function Tag({
   brand, className, hasBackground, icon, id, label, variant,
 }) {
   let badgeColor;
-  let badgeTextColor;
+  let badgeHeight;
   let badgePadding;
-  let labelType;
+  let badgeTextColor;
+  let badgeWidth;
+  let borderRadius;
   let iconType;
+  let labelType;
 
   if (icon) {
-    iconType = <Icon icon={icon} size="xl" variant={hasBackground ? "inverse" : variant} />;
-    badgePadding = "0 0.25em";
+    iconType = <Icon icon={icon} size="sm" variant={hasBackground ? "inverse" : variant} />;
+    badgeWidth = "1.5em";
+    badgeHeight = "1.5em";
+    badgePadding = ".75em";
+    borderRadius = "50%";
   } else if (label) {
     labelType = <Label size="xs" weight="bold" text={label} />;
 
@@ -66,8 +77,11 @@ function Tag({
   return (
     <TagContainer
       badgeColor={badgeColor}
+      badgeHeight={badgeHeight}
       badgePadding={badgePadding}
       badgeTextColor={badgeTextColor}
+      badgeWidth={badgeWidth}
+      borderRadius={borderRadius}
       className={className}
       icon={icon}
       id={id}

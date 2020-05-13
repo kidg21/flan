@@ -151,6 +151,7 @@ function Command({
       commandSize = "1.2em";
       break;
     default:
+      commandSize = "1em";
       break;
   }
   return (

@@ -12,7 +12,7 @@ const data = [
   { id: "e", label: "Layer" },
 ];
 
-storiesOf("Templates|Panel Header/", module)
+storiesOf("Templates|07_Pieces/Headers/", module)
   .addDecorator(Padding)
   .add("Property", () => {
     return (

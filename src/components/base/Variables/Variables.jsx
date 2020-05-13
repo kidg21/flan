@@ -109,20 +109,27 @@ export const shadows = {
     drop-shadow(${colors.shade6} 0 0 1px)
     drop-shadow(${colors.shade2} 0.5rem 0.5rem 0.55rem)
   `,
+  outlineShadow: `
+    ${colors.shade3} 0 0 1px 1px
+    `,
   dropShadow: `
-    ${colors.shade6} 0 0 1px,
-    ${colors.shade5} 0.2rem 0.2rem 0.25rem
+    ${colors.shade3} 0 0 1px 1px,
+    ${colors.shade4} 0.15rem 0.15rem 0.25rem
+    `,
+  dropShadow2: `
+    ${colors.shade3} 0 0 1px 1px,
+    ${colors.shade3} 0.35rem 0.35rem 0.5rem
     `,
   outerShadow: `
     ${colors.shade2} 0 0 0.25rem 0,
     ${colors.shade1} 0 0 0.25rem 0.25rem
-  `,
+    `,
   innerShadow: `
     ${colors.shade4} 0 1px 0 0 inset,
     ${colors.shade8} 0 0.35rem 0.5rem -0.35rem inset,
     ${colors.shade4} 0 -1px 0 0 inset,
     ${colors.shade8} 0 -0.35rem 0.5rem -0.35rem inset
-  `,
+    `,
 };
 
 export const borders = {
@@ -152,6 +159,7 @@ export const DMPTheme = {
     alert: colors.red80,
     disabled: colors.grey40,
     inverse: colors.white60,
+    inverseHover: colors.grey20,
     link: colors.blue80,
     primary: colors.grey100,
     secondary: colors.grey60,
@@ -234,6 +242,7 @@ export const darkTheme = {
     alert: colors.red20,
     disabled: colors.grey40,
     inverse: colors.grey100,
+    inverseHover: colors.grey80,
     link: colors.blue80,
     primary: colors.grey50,
     secondary: colors.grey60,

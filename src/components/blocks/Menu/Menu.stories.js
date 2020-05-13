@@ -226,7 +226,7 @@ storiesOf("Blocks|Menu", module)
           });
           output.update();
           expect(output.find("div#menupopper-c")).to.have.lengthOf(1);
-          expect(output.find("ul#listwrapper-c").children()).to.have.lengthOf(2);
+          expect(output.find("ul#listwrapper-c").children()).to.have.lengthOf(3);
           let item = output.find("li#item-c0");
           expect(item).to.have.lengthOf(1);
           expect(item.childAt(0).prop("title")).to.equal(testData[2].commands[0].label);

@@ -7,13 +7,17 @@ import Grid from "layout/Grid";
 import Text, { Title } from "base/Typography";
 
 const PageWrapper = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  align-self: stretch;
   color: ${(props) => {
     return props.theme.text.primary;
   }};
   background-color: ${(props) => {
     return props.theme.background.default;
   }};
-  height: 100%;
   z-index: 0;
 
   /* Prototype Content - displays when empty */
@@ -48,8 +52,7 @@ const Section = styled(Grid)`
 `;
 
 const Body = styled(Grid)`
-  margin: 0rem;
-  height: 100%;
+  flex: auto;
 `;
 
 function PageSection({
