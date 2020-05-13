@@ -1,7 +1,7 @@
 /* eslint-disable complexity */
 /* eslint-disable linebreak-style */
 /* eslint-disable security/detect-object-injection */
-import React, { useContext, useState } from "react";
+import React, { useContext, useMemo, useCallback } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { fonts, colors, shadows } from "Variables";
@@ -11,6 +11,7 @@ import Select from "react-select";
 import Creatable from "react-select/creatable";
 import { Skeleton } from "helpers";
 import { DisabledContext } from "States";
+import { withOnChangeState } from "../../hocs";
 
 
 const MessageContainer = styled.section`
@@ -190,7 +191,8 @@ function SelectMenu({
   label,
   multiSelect,
   onBlur,
-  onChangeState,
+  onChange,
+  onChangeState, // deprecated
   onCreateOption,
   onFocus,
   options,
@@ -213,62 +215,54 @@ function SelectMenu({
     messageColor = "alert";
   }
 
-  let selectedOpts = [];
-  if (selectOptions) {
-    selectedOpts =
-      selectOptions instanceof Array ? selectOptions : [selectOptions];
-    selectedOpts = options.filter((opt) => {
-      if (opt.value instanceof Array) {
-        for (let i = 0; i < selectedOpts.length; i++) {
-          const targetOpts = multiSelect ? selectedOpts[i] : selectedOpts;
-          if (
-            targetOpts instanceof Array &&
-            targetOpts.length === opt.value.length
-          ) {
-            let isMatch = true;
-            for (let j = 0; j < targetOpts.length; j++) {
-              if (!opt.value.includes(targetOpts[j])) {
-                isMatch = false;
-                break;
+  // get validated selectedOptions
+  const selectedOptsValue = useMemo(() => {
+    let selectedOpts = [];
+    if (selectOptions) {
+      selectedOpts =
+        selectOptions instanceof Array ? selectOptions : [selectOptions];
+      selectedOpts = options.filter((opt) => {
+        if (opt.value instanceof Array) {
+          for (let i = 0; i < selectedOpts.length; i++) {
+            const targetOpts = multiSelect ? selectedOpts[i] : selectedOpts;
+            if (
+              targetOpts instanceof Array &&
+              targetOpts.length === opt.value.length
+            ) {
+              let isMatch = true;
+              for (let j = 0; j < targetOpts.length; j++) {
+                if (!opt.value.includes(targetOpts[j])) {
+                  isMatch = false;
+                  break;
+                }
               }
+              if (isMatch) return true;
             }
-            if (isMatch) return true;
           }
+          return false;
+        } else if (selectedOpts.length > 1 && !multiSelect) {
+          // If the input would select multiple, but that is not allowed, skip it.
+          return false;
         }
-        return false;
-      } else if (selectedOpts.length > 1 && !multiSelect) {
-        // If the input would select multiple, but that is not allowed, skip it.
-        return false;
-      }
 
-      return selectedOpts.includes(opt.value);
-    });
-  }
+        return selectedOpts.includes(opt.value);
+      });
+    }
+    return selectedOpts;
+  }, [selectOptions]);
 
-  const [state, setState] = useState({ selected: selectedOpts });
-  function changeSelected(pNewSelection, { action }) {
-    // If this would leave us with no selection, default to initial value.
+  const changeSelected = useCallback((pNewSelection) => {
     let newSelection = pNewSelection;
     if ((!newSelection || newSelection.length === 0) && isRequired) {
-      if (multiSelect && action !== "clear") {
-        newSelection = state.selected;
-      } else {
-        newSelection = selectedOpts;
-      }
+      newSelection = selectedOptsValue;
     }
+    if (onChange) onChange(newSelection.value);
 
+    // deprecated onChangeState
     if (onChangeState) {
-      onChangeState(state, { ...state, selected: newSelection }, setState);
-    } else {
-      setState({ ...state, selected: newSelection });
+      onChangeState({}, { selected: newSelection }, () => {});
     }
-  }
-
-  function handleCreateOption(optionName) {
-    onCreateOption(optionName, (newState) => {
-      setState(Object.assign({}, state, newState));
-    });
-  }
+  }, []);
 
   const selectProps = {
     id: id,
@@ -281,12 +275,12 @@ function SelectMenu({
     name: id,
     onBlur: onBlur,
     onChange: changeSelected,
-    onCreateOption: onCreateOption ? handleCreateOption : null,
+    onCreateOption: onCreateOption || null,
     onFocus: onFocus,
     options: options,
     placeholder: placeholder,
     styles: selectStyles,
-    value: state.selected,
+    value: selectedOptsValue,
   };
   const select = (isCreatable || onCreateOption) ?
     <Creatable {...selectProps} /> : <Select {...selectProps} />;
@@ -321,7 +315,8 @@ SelectMenu.propTypes = {
   label: PropTypes.string,
   multiSelect: PropTypes.bool,
   onBlur: PropTypes.func,
-  onChangeState: PropTypes.func,
+  onChange: PropTypes.func,
+  onChangeState: PropTypes.func, // deprecated
   onCreateOption: PropTypes.func,
   onFocus: PropTypes.func,
   options: PropTypes.arrayOf(PropTypes.oneOfType([
@@ -350,7 +345,8 @@ SelectMenu.defaultProps = {
   label: null,
   multiSelect: false,
   onBlur: null,
-  onChangeState: null,
+  onChange: null,
+  onChangeState: null, // deprecated
   onCreateOption: null,
   onFocus: null,
   options: null,
@@ -359,4 +355,12 @@ SelectMenu.defaultProps = {
   warning: "",
 };
 
-export default SelectMenu;
+// create select menu that keeps track of selectOptions when onChange event is invoked
+const StatefulSelectMenu = withOnChangeState(SelectMenu, "selectOptions");
+
+const SelectMenuComp = (props) => {
+  // if an onChange is not passed in, the select menu will handle the state changes
+  return props.hasOwnProperty("onChange") ? <SelectMenu {...props} /> : <StatefulSelectMenu {...props} />;
+};
+
+export default SelectMenuComp;
