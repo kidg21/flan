@@ -148,11 +148,11 @@ storiesOf("Templates/05_Modules", module)
           }
         };
 
-        const data = [
+        const recordData = [
           {
             id: "1",
-            media: ZoningMap1,
-            mediaDesc: "ZoningMap 1",
+            // media: ZoningMap1,
+            // mediaDesc: "ZoningMap 1",
             title: "Record 1",
             description: "Record Description Goes Here",
             commands: [
@@ -161,12 +161,27 @@ storiesOf("Templates/05_Modules", module)
                 label: "View/Edit",
               },
             ],
+            // children: (
+            //   <Bar
+            //     contentAlign="center"
+            //     left={{
+            //       content: (
+            //         <Title text="Record 1" size="lg" weight="bold" />
+            //       ),
+            //     }}
+            //     right={{
+            //       content: (
+            //         <Command icon="right" label="View/Edit" align="right" />
+            //       ),
+            //     }}
+            //   />
+            // ),
             onClick: showMenu2,
           },
           {
             id: "2",
-            media: ZoningMap2,
-            mediaDesc: "Record 2",
+            // media: ZoningMap2,
+            // mediaDesc: "Record 2",
             title: "Record 2",
             description: "Record Description Goes Here",
             commands: [
@@ -175,15 +190,27 @@ storiesOf("Templates/05_Modules", module)
                 label: "View/Edit",
               },
             ],
+            // children: (
+            //   <Bar
+            //     contentAlign="center"
+            //     left={{
+            //       content: (
+            //         <Title text="Record 2" size="lg" weight="bold" />
+            //       ),
+            //     }}
+            //     right={{
+            //       content: (
+            //         <Command icon="right" label="View/Edit" align="right" />
+            //       ),
+            //     }}
+            //   />
+            // ),
             onClick: showMenu2,
           },
         ];
 
         const recordDetails = (
-          <Form
-            title="Record 1"
-            description="Record Description Goes Here"
-          >
+          <Form>
             <FormSection title="">
               <TextInput
                 id="firstName"
@@ -244,7 +271,7 @@ storiesOf("Templates/05_Modules", module)
         const recordAttachments = (
           <Page>
             <PageSection>
-              <Button label="Add Attachments" />
+              <Button label="Add Files" />
               <Legend title="Attachments" data={attachments} />
             </PageSection>
           </Page>
@@ -258,13 +285,13 @@ storiesOf("Templates/05_Modules", module)
         const tabButtons = [
           {
             id: "Details",
-            label: "Module A",
+            label: "Details",
             isSelected: activeSingleTab === "tab1",
             onClick: () => { setActiveSingleTab("tab1"); showModuleA(); },
           },
           {
-            id: "Modules",
-            label: "Module B",
+            id: "Attachments",
+            label: "Attachments",
             isSelected: activeSingleTab === "tab2",
             onClick: () => { setActiveSingleTab("tab2"); showModuleB(); },
           },
@@ -301,15 +328,15 @@ storiesOf("Templates/05_Modules", module)
                       />
                     }
                   >
-                    <CardGrid data={data} />
+                    <CardGrid data={recordData} />
                   </Panel>
                   <Panel
                     id="Menu 2"
                     offcanvas={menu2}
                     header={
                       <Card
-                        media={ZoningMap1}
-                        mediaDesc="ZoningMap 1"
+                        title="Record 1"
+                        description="Record Description Goes Here"
                       >
                         <Tabs data={tabButtons} />
                       </Card>
