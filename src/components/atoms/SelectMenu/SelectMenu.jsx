@@ -256,7 +256,14 @@ function SelectMenu({
     if ((!newSelection || newSelection.length === 0) && isRequired) {
       newSelection = selectedOptsValue;
     }
-    if (onChange) onChange(newSelection.value);
+
+    // convert back to value for selectOption prop input
+    if (newSelection instanceof Array) {
+      newSelection = newSelection.map((val) => { return val.value; });
+    } else {
+      newSelection = newSelection.value;
+    }
+    if (onChange) onChange(newSelection);
 
     // deprecated onChangeState
     if (onChangeState) {
@@ -275,7 +282,7 @@ function SelectMenu({
     name: id,
     onBlur: onBlur,
     onChange: changeSelected,
-    onCreateOption: onCreateOption || null,
+    onCreateOption: onCreateOption,
     onFocus: onFocus,
     options: options,
     placeholder: placeholder,
@@ -363,7 +370,7 @@ const StatefulSelectMenu = withOnChangeState(SelectMenu, "selectOptions");
 
 const SelectMenuComp = (props) => {
   // if an onChange is not passed in, the select menu will handle the state changes
-  return props.hasOwnProperty("onChange") ? <SelectMenu {...props} /> : <StatefulSelectMenu {...props} />;
+  return props.onChange ? <SelectMenu {...props} /> : <StatefulSelectMenu {...props} />;
 };
 // populate storybook props table
 SelectMenuComp.defaultProps = selectMenuDefaultProps;
