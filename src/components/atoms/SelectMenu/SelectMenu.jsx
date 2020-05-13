@@ -215,7 +215,7 @@ function SelectMenu({
     messageColor = "alert";
   }
 
-  // get validated selectedOptions
+  // get validated selectedOptions in [{ value, label }] format to pass to react-select
   const selectedOptsValue = useMemo(() => {
     let selectedOpts = [];
     if (selectOptions) {
@@ -262,7 +262,7 @@ function SelectMenu({
     if (onChangeState) {
       onChangeState({}, { selected: newSelection }, () => {});
     }
-  }, []);
+  }, [selectedOptsValue, onChange, onChangeState]);
 
   const selectProps = {
     id: id,

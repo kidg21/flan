@@ -1,9 +1,9 @@
 import React, { useState, useCallback } from "react";
 
 /**
- * HOC, enhances component with an "internal" state to handle onChange events
+ * HOC, enhances component by wrapping a state to handle onChange events
  * i.e. I want my component to handle keeping track of the selected option, withOnChangeState(SelectMenu, "selectOptions")
- * it will set the initial state to props.selectOptions and use that "internal" state value to pass into SelectMenu
+ * it will set the initial state to props.selectOptions and use this wrapper's state value to pass into SelectMenu
  * the parent controller is at this level, the SelectMenu doesn't keep track of an internal state
  * @param {function} Component React component to enhance
  * @param {string} propName prop name to keep the internal state of
@@ -20,7 +20,7 @@ export default function withOnChangeState(Component, propName, modifyNewValue) {
         newValue = modifyNewValue(e);
       }
       setValue(newValue);
-    }, []);
+    }, [modifyNewValue]);
     return <Component {...props} onChange={onChange} />;
   };
 }
