@@ -249,7 +249,7 @@ function SelectMenu({
       });
     }
     return selectedOpts;
-  }, [selectOptions]);
+  }, [selectOptions, options]);
 
   const changeSelected = useCallback((pNewSelection) => {
     let newSelection = pNewSelection;
