@@ -9,14 +9,14 @@ exports[` 1`] = `
   }
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 irhUlt"
+    className="Card__CardWrapper-sc-1g3s676-5 hGrWSx"
     href={null}
     id={null}
     media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
     onClick={[Function]}
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 Card__Media-sc-1g3s676-2 fjpAGz"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 Card__Media-sc-1g3s676-2 lawMMa"
     >
       <img
         alt="Media Description"
@@ -28,7 +28,7 @@ exports[` 1`] = `
       />
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
       id={null}
       onClick={null}
     >
@@ -38,7 +38,7 @@ exports[` 1`] = `
         onClick={[Function]}
       >
         <div
-          className="Bar__BarLayout-icfo76-2 bRGQtj"
+          className="Bar__BarLayout-icfo76-2 eUVQsH"
           id={null}
           onClick={null}
         >
@@ -52,7 +52,7 @@ exports[` 1`] = `
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-bookmark fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 bpsbMF"
+                className="svg-inline--fa fa-bookmark fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb"
                 color={null}
                 data-icon="bookmark"
                 data-prefix="fas"
@@ -98,7 +98,7 @@ exports[` 1`] = `
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-angle-up fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 bpsbMF"
+              className="svg-inline--fa fa-angle-up fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb"
               color={null}
               data-icon="angle-up"
               data-prefix="far"
@@ -134,16 +134,16 @@ exports[` 1`] = `
           type="button"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
             id={null}
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
-              fontSize="1em"
+              className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+              fontSize="0.876em"
               fontWeight={600}
               htmlFor={null}
-              letterSpacing="0px"
+              letterSpacing="0.2px"
             >
               Button
             </label>
@@ -152,7 +152,7 @@ exports[` 1`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 kBKBDh"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 hGyZDa"
       id={null}
       onClick={[Function]}
     >
@@ -167,12 +167,12 @@ exports[` 1`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 dXlnlj"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 iEJhOk"
       id={null}
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-icfo76-2 blSqfx"
+        className="Bar__BarLayout-icfo76-2 bHddGh"
         id={null}
         onClick={null}
       >
@@ -180,12 +180,12 @@ exports[` 1`] = `
           className="Bar__Slot-icfo76-1 hTtmaE"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 dGwfwW"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa"
             id={null}
             rows={null}
           >
             <a
-              className="Command__CommandContainer-sc-13akgtp-0 dWqRBY"
+              className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
               id={null}
               label="Command One"
               onClick={[Function]}
@@ -202,7 +202,7 @@ exports[` 1`] = `
               </label>
             </a>
             <a
-              className="Command__CommandContainer-sc-13akgtp-0 dWqRBY"
+              className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
               id={null}
               label="Command Two"
               onClick={[Function]}
@@ -224,17 +224,17 @@ exports[` 1`] = `
           className="Bar__Slot-icfo76-1 ecRRXN"
         >
           <a
-            className="Menu__MenuContainer-sc-17iwn6x-0 lhgeCh"
+            className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
             onClick={[Function]}
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 bpsbMF"
+              className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="ellipsis-v"
               data-prefix="far"
               focusable="false"
-              fontSize="1.35em"
+              fontSize="inherit"
               id={null}
               role="img"
               style={Object {}}
@@ -264,7 +264,7 @@ exports[` 2`] = `
   }
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
+    className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
     href={null}
     id={null}
     media={null}
@@ -282,19 +282,19 @@ exports[` 3`] = `
   }
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
+    className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
     href={null}
     id={null}
     media={null}
     onClick={false}
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
       id={null}
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-icfo76-2 bRGQtj"
+        className="Bar__BarLayout-icfo76-2 eUVQsH"
         id={null}
         onClick={null}
       >
@@ -340,7 +340,7 @@ exports[` 3`] = `
       </div>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
       id={null}
       onClick={false}
     >
@@ -355,12 +355,12 @@ exports[` 3`] = `
       </p>
     </section>
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 dXlnlj"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 iEJhOk"
       id={null}
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-icfo76-2 blSqfx"
+        className="Bar__BarLayout-icfo76-2 bHddGh"
         id={null}
         onClick={null}
       >
@@ -368,12 +368,12 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 hTtmaE"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 dGwfwW"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa"
             id={null}
             rows={null}
           >
             <a
-              className="Command__CommandContainer-sc-13akgtp-0 dWqRBY"
+              className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
               id={null}
               label="Command One"
               onClick={[Function]}
@@ -390,7 +390,7 @@ exports[` 3`] = `
               </label>
             </a>
             <a
-              className="Command__CommandContainer-sc-13akgtp-0 dWqRBY"
+              className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
               id={null}
               label="Command Two"
               onClick={[Function]}
@@ -412,17 +412,17 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 ecRRXN"
         >
           <a
-            className="Menu__MenuContainer-sc-17iwn6x-0 lhgeCh"
+            className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
             onClick={[Function]}
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 bpsbMF"
+              className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="ellipsis-v"
               data-prefix="far"
               focusable="false"
-              fontSize="1.35em"
+              fontSize="inherit"
               id={null}
               role="img"
               style={Object {}}
@@ -452,19 +452,19 @@ exports[` 4`] = `
   }
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 irhUlt"
+    className="Card__CardWrapper-sc-1g3s676-5 hGrWSx"
     href={null}
     id={null}
     media={null}
     onClick={true}
   >
     <section
-      className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
+      className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
       id={null}
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-icfo76-2 bRGQtj"
+        className="Bar__BarLayout-icfo76-2 eUVQsH"
         id={null}
         onClick={null}
       >
@@ -508,24 +508,24 @@ exports[` 5`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 dGwfwW"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa"
     id={null}
     rows={null}
   >
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 kZnQzv"
+      className="Card__CardWrapper-sc-1g3s676-5 kTXijy"
       href={null}
       id={null}
       media={null}
       onClick={null}
     >
       <section
-        className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
+        className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__BarLayout-icfo76-2 bRGQtj"
+          className="Bar__BarLayout-icfo76-2 eUVQsH"
           id={null}
           onClick={null}
         >
@@ -546,19 +546,19 @@ exports[` 5`] = `
       </section>
     </div>
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
+      className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
       href={null}
       id={null}
       media={null}
       onClick={null}
     >
       <section
-        className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
+        className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__BarLayout-icfo76-2 bRGQtj"
+          className="Bar__BarLayout-icfo76-2 eUVQsH"
           id={null}
           onClick={null}
         >
@@ -579,19 +579,19 @@ exports[` 5`] = `
       </section>
     </div>
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 cEBIcs"
+      className="Card__CardWrapper-sc-1g3s676-5 bHcZEt"
       href={null}
       id={null}
       media={null}
       onClick={null}
     >
       <section
-        className="Card__CardSectionWrapper-sc-1g3s676-1 gSUFKa"
+        className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__BarLayout-icfo76-2 bRGQtj"
+          className="Bar__BarLayout-icfo76-2 eUVQsH"
           id={null}
           onClick={null}
         >
@@ -624,19 +624,19 @@ exports[` 6`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 bcIGrH Card__CardGridWrapper-sc-1g3s676-6 dhWlYr"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-6 iqBfAy"
     id={null}
     rows={null}
   >
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 irhUlt"
+      className="Card__CardWrapper-sc-1g3s676-5 hGrWSx"
       href={null}
       id="a"
       media={Object {}}
       onClick={[Function]}
     >
       <section
-        className="Card__CardSectionWrapper-sc-1g3s676-1 Card__Media-sc-1g3s676-2 gMQnyI"
+        className="Card__CardSectionWrapper-sc-1g3s676-1 Card__Media-sc-1g3s676-2 giWSVN"
       >
         <iframe
           allow="fullscreen"
@@ -648,7 +648,7 @@ exports[` 6`] = `
         />
       </section>
       <section
-        className="Card__CardSectionWrapper-sc-1g3s676-1 gXIWLn"
+        className="Card__CardSectionWrapper-sc-1g3s676-1 iwPdyM"
         id={null}
         onClick={null}
       >
@@ -658,7 +658,7 @@ exports[` 6`] = `
           onClick={[Function]}
         >
           <div
-            className="Bar__BarLayout-icfo76-2 bRGQtj"
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
             id={null}
             onClick={null}
           >
@@ -672,7 +672,7 @@ exports[` 6`] = `
               >
                 <svg
                   aria-hidden="true"
-                  className="svg-inline--fa fa-bookmark fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 bpsbMF"
+                  className="svg-inline--fa fa-bookmark fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb"
                   color={null}
                   data-icon="bookmark"
                   data-prefix="fas"
@@ -718,7 +718,7 @@ exports[` 6`] = `
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-angle-up fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 bpsbMF"
+                className="svg-inline--fa fa-angle-up fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb"
                 color={null}
                 data-icon="angle-up"
                 data-prefix="far"
@@ -749,7 +749,7 @@ exports[` 6`] = `
             onClick={null}
           >
             <section
-              className="MediaBlock__Media-k78dm4-1 kxoljg"
+              className="MediaBlock__Media-k78dm4-1 hczdui"
             >
               <img
                 alt="This is alt text for this image"
@@ -785,7 +785,7 @@ exports[` 6`] = `
         </div>
       </section>
       <section
-        className="Card__CardSectionWrapper-sc-1g3s676-1 kBKBDh"
+        className="Card__CardSectionWrapper-sc-1g3s676-1 hGyZDa"
         id={null}
         onClick={[Function]}
       >
@@ -800,12 +800,12 @@ exports[` 6`] = `
         </p>
       </section>
       <section
-        className="Card__CardSectionWrapper-sc-1g3s676-1 dXlnlj"
+        className="Card__CardSectionWrapper-sc-1g3s676-1 iEJhOk"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__BarLayout-icfo76-2 blSqfx"
+          className="Bar__BarLayout-icfo76-2 bHddGh"
           id={null}
           onClick={null}
         >
@@ -813,7 +813,7 @@ exports[` 6`] = `
             className="Bar__Slot-icfo76-1 fNcQEg"
           >
             <a
-              className="Command__CommandContainer-sc-13akgtp-0 dWqRBY"
+              className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
               id={null}
               label="Command One"
               onClick={null}
@@ -834,14 +834,14 @@ exports[` 6`] = `
       </section>
     </div>
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 irhUlt"
+      className="Card__CardWrapper-sc-1g3s676-5 hGrWSx"
       href={null}
       id="b"
       media={Object {}}
       onClick={[Function]}
     >
       <section
-        className="Card__CardSectionWrapper-sc-1g3s676-1 Card__Media-sc-1g3s676-2 gMQnyI"
+        className="Card__CardSectionWrapper-sc-1g3s676-1 Card__Media-sc-1g3s676-2 giWSVN"
       >
         <iframe
           allow="fullscreen"
@@ -853,12 +853,12 @@ exports[` 6`] = `
         />
       </section>
       <section
-        className="Card__CardSectionWrapper-sc-1g3s676-1 jVKRck"
+        className="Card__CardSectionWrapper-sc-1g3s676-1 eWetav"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__BarLayout-icfo76-2 bRGQtj"
+          className="Bar__BarLayout-icfo76-2 eUVQsH"
           id={null}
           onClick={null}
         >
@@ -899,7 +899,7 @@ exports[` 6`] = `
         </div>
       </section>
       <section
-        className="Card__CardSectionWrapper-sc-1g3s676-1 kBKBDh"
+        className="Card__CardSectionWrapper-sc-1g3s676-1 hGyZDa"
         id={null}
         onClick={[Function]}
       >
@@ -914,12 +914,12 @@ exports[` 6`] = `
         </p>
       </section>
       <section
-        className="Card__CardSectionWrapper-sc-1g3s676-1 dXlnlj"
+        className="Card__CardSectionWrapper-sc-1g3s676-1 iEJhOk"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__BarLayout-icfo76-2 blSqfx"
+          className="Bar__BarLayout-icfo76-2 bHddGh"
           id={null}
           onClick={null}
         >
@@ -927,12 +927,12 @@ exports[` 6`] = `
             className="Bar__Slot-icfo76-1 hTtmaE"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 dGwfwW"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa"
               id={null}
               rows={null}
             >
               <a
-                className="Command__CommandContainer-sc-13akgtp-0 dWqRBY"
+                className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
                 id={null}
                 label="Command One"
                 onClick={null}
@@ -949,7 +949,7 @@ exports[` 6`] = `
                 </label>
               </a>
               <a
-                className="Command__CommandContainer-sc-13akgtp-0 dWqRBY"
+                className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
                 id={null}
                 label="Command Two"
                 onClick={null}
@@ -978,14 +978,14 @@ exports[` 6`] = `
       </section>
     </div>
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 irhUlt"
+      className="Card__CardWrapper-sc-1g3s676-5 hGrWSx"
       href={null}
       id="c"
       media={Object {}}
       onClick={[Function]}
     >
       <section
-        className="Card__CardSectionWrapper-sc-1g3s676-1 Card__Media-sc-1g3s676-2 gMQnyI"
+        className="Card__CardSectionWrapper-sc-1g3s676-1 Card__Media-sc-1g3s676-2 giWSVN"
       >
         <iframe
           allow="fullscreen"
@@ -997,7 +997,7 @@ exports[` 6`] = `
         />
       </section>
       <section
-        className="Card__CardSectionWrapper-sc-1g3s676-1 dmRwHE"
+        className="Card__CardSectionWrapper-sc-1g3s676-1 fWtvID"
         id={null}
         onClick={null}
       >
@@ -1007,7 +1007,7 @@ exports[` 6`] = `
           onClick={[Function]}
         >
           <div
-            className="Bar__BarLayout-icfo76-2 bRGQtj"
+            className="Bar__BarLayout-icfo76-2 eUVQsH"
             id={null}
             onClick={null}
           >
@@ -1021,7 +1021,7 @@ exports[` 6`] = `
               >
                 <svg
                   aria-hidden="true"
-                  className="svg-inline--fa fa-home-alt fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 bpsbMF"
+                  className="svg-inline--fa fa-home-alt fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb"
                   color={null}
                   data-icon="home-alt"
                   data-prefix="fas"
@@ -1067,7 +1067,7 @@ exports[` 6`] = `
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-angle-up fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 bpsbMF"
+                className="svg-inline--fa fa-angle-up fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb"
                 color={null}
                 data-icon="angle-up"
                 data-prefix="far"
@@ -1103,16 +1103,16 @@ exports[` 6`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
-                fontSize="1em"
+                className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                fontSize="0.876em"
                 fontWeight={600}
                 htmlFor={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 Button
               </label>
@@ -1121,7 +1121,7 @@ exports[` 6`] = `
         </div>
       </section>
       <section
-        className="Card__CardSectionWrapper-sc-1g3s676-1 kBKBDh"
+        className="Card__CardSectionWrapper-sc-1g3s676-1 hGyZDa"
         id={null}
         onClick={[Function]}
       >
@@ -1136,12 +1136,12 @@ exports[` 6`] = `
         </p>
       </section>
       <section
-        className="Card__CardSectionWrapper-sc-1g3s676-1 dXlnlj"
+        className="Card__CardSectionWrapper-sc-1g3s676-1 iEJhOk"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__BarLayout-icfo76-2 blSqfx"
+          className="Bar__BarLayout-icfo76-2 bHddGh"
           id={null}
           onClick={null}
         >
@@ -1149,12 +1149,12 @@ exports[` 6`] = `
             className="Bar__Slot-icfo76-1 hTtmaE"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 dGwfwW"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa"
               id={null}
               rows={null}
             >
               <a
-                className="Command__CommandContainer-sc-13akgtp-0 dWqRBY"
+                className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
                 id={null}
                 label="Command One"
                 onClick={null}
@@ -1171,7 +1171,7 @@ exports[` 6`] = `
                 </label>
               </a>
               <a
-                className="Command__CommandContainer-sc-13akgtp-0 dWqRBY"
+                className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
                 id={null}
                 label="Command Two"
                 onClick={null}
@@ -1193,17 +1193,17 @@ exports[` 6`] = `
             className="Bar__Slot-icfo76-1 ecRRXN"
           >
             <a
-              className="Menu__MenuContainer-sc-17iwn6x-0 lhgeCh"
+              className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
               onClick={[Function]}
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 bpsbMF"
+                className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
                 color={null}
                 data-icon="ellipsis-v"
                 data-prefix="far"
                 focusable="false"
-                fontSize="1.35em"
+                fontSize="inherit"
                 id={null}
                 role="img"
                 style={Object {}}
@@ -1234,47 +1234,47 @@ exports[` 7`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 bcIGrH Card__CardGridWrapper-sc-1g3s676-6 dhWlYr"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-6 iqBfAy"
     id={null}
     rows={null}
   >
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
+      className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
       href={null}
       id={null}
       media={null}
       onClick={null}
     />
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
+      className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
       href={null}
       id={null}
       media={null}
       onClick={null}
     />
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
+      className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
       href={null}
       id={null}
       media={null}
       onClick={null}
     />
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
+      className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
       href={null}
       id={null}
       media={null}
       onClick={null}
     />
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
+      className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
       href={null}
       id={null}
       media={null}
       onClick={null}
     />
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
+      className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
       href={null}
       id={null}
       media={null}

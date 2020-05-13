@@ -2,12 +2,12 @@
 
 exports[` 1`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 ezarLU"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 huKtjk"
   id={null}
   rows={null}
 >
   <div
-    className="Tag__TagContainer-sc-128kb3h-0 fNAoUS"
+    className="Tag__TagContainer-sc-128kb3h-0 jCHZDn"
     id={null}
     label="Tag"
   >
@@ -27,7 +27,7 @@ exports[` 1`] = `
 exports[` 2`] = `
 Array [
   <div
-    className="Bar__BarLayout-icfo76-2 gJPHni"
+    className="Bar__BarLayout-icfo76-2 eIFIfS"
     id={null}
     onClick={null}
   >
@@ -36,7 +36,7 @@ Array [
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jCGBwS"
+        className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gJQbpU"
         color="success80"
         data-icon="check"
         data-prefix="far"
@@ -59,7 +59,7 @@ Array [
       className="Bar__Slot-icfo76-1 yvaBx"
     >
       <div
-        className="Tag__TagContainer-sc-128kb3h-0 fNAoUS"
+        className="Tag__TagContainer-sc-128kb3h-0 jCHZDn"
         id={null}
         label="Brief Label"
       >
@@ -76,7 +76,7 @@ Array [
     </div>
   </div>,
   <div
-    className="Bar__BarLayout-icfo76-2 gJPHni"
+    className="Bar__BarLayout-icfo76-2 eIFIfS"
     id={null}
     onClick={null}
   >
@@ -85,7 +85,7 @@ Array [
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 eMVSfb"
+        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 eizlsd"
         color="alert80"
         data-icon="times"
         data-prefix="far"
@@ -108,7 +108,7 @@ Array [
       className="Bar__Slot-icfo76-1 yvaBx"
     >
       <div
-        className="Tag__TagContainer-sc-128kb3h-0 fNAoUS"
+        className="Tag__TagContainer-sc-128kb3h-0 jCHZDn"
         id={null}
         label="Tag with a long label because you cannot be concise with your words."
       >
@@ -129,12 +129,12 @@ Array [
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 ezarLU"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 huKtjk"
   id={null}
   rows={null}
 >
   <div
-    className="Tag__TagContainer-sc-128kb3h-0 fNAoUS"
+    className="Tag__TagContainer-sc-128kb3h-0 jCHZDn"
     id={null}
     label="Info"
   >
@@ -149,7 +149,7 @@ exports[` 3`] = `
     </label>
   </div>
   <div
-    className="Tag__TagContainer-sc-128kb3h-0 hhQZPU"
+    className="Tag__TagContainer-sc-128kb3h-0 fTLkWx"
     id={null}
     label="Warning"
   >
@@ -164,7 +164,7 @@ exports[` 3`] = `
     </label>
   </div>
   <div
-    className="Tag__TagContainer-sc-128kb3h-0 fQkOqs"
+    className="Tag__TagContainer-sc-128kb3h-0 iYvSax"
     id={null}
     label="Success"
   >
@@ -179,7 +179,7 @@ exports[` 3`] = `
     </label>
   </div>
   <div
-    className="Tag__TagContainer-sc-128kb3h-0 fRRHlx"
+    className="Tag__TagContainer-sc-128kb3h-0 KGpVk"
     id={null}
     label="Alert"
   >
@@ -198,12 +198,12 @@ exports[` 3`] = `
 
 exports[` 4`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 ezarLU"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 huKtjk"
   id={null}
   rows={null}
 >
   <div
-    className="Tag__TagContainer-sc-128kb3h-0 aqzSP"
+    className="Tag__TagContainer-sc-128kb3h-0 lmnqke"
     id={null}
     label="Tag"
   >
@@ -218,7 +218,7 @@ exports[` 4`] = `
     </label>
   </div>
   <div
-    className="Tag__TagContainer-sc-128kb3h-0 dhWBTo"
+    className="Tag__TagContainer-sc-128kb3h-0 gEIzGx"
     id={null}
     label="Tag"
   >
@@ -233,7 +233,7 @@ exports[` 4`] = `
     </label>
   </div>
   <div
-    className="Tag__TagContainer-sc-128kb3h-0 gNBCMQ"
+    className="Tag__TagContainer-sc-128kb3h-0 hpfbKh"
     id={null}
     label="Tag"
   >
@@ -248,7 +248,7 @@ exports[` 4`] = `
     </label>
   </div>
   <div
-    className="Tag__TagContainer-sc-128kb3h-0 eVcojo"
+    className="Tag__TagContainer-sc-128kb3h-0 kMluxB"
     id={null}
     label="Tag"
   >
@@ -263,7 +263,7 @@ exports[` 4`] = `
     </label>
   </div>
   <div
-    className="Tag__TagContainer-sc-128kb3h-0 jsockd"
+    className="Tag__TagContainer-sc-128kb3h-0 kvzOxI"
     id={null}
     label="Tag"
   >
@@ -278,7 +278,7 @@ exports[` 4`] = `
     </label>
   </div>
   <div
-    className="Tag__TagContainer-sc-128kb3h-0 jiyXQB"
+    className="Tag__TagContainer-sc-128kb3h-0 kdMBOg"
     id={null}
     label="Tag"
   >
@@ -293,7 +293,7 @@ exports[` 4`] = `
     </label>
   </div>
   <div
-    className="Tag__TagContainer-sc-128kb3h-0 llIdbC"
+    className="Tag__TagContainer-sc-128kb3h-0 iUcFDX"
     id={null}
     label="Tag"
   >
@@ -308,7 +308,7 @@ exports[` 4`] = `
     </label>
   </div>
   <div
-    className="Tag__TagContainer-sc-128kb3h-0 Ctvsn"
+    className="Tag__TagContainer-sc-128kb3h-0 fDwtKG"
     id={null}
     label="Tag"
   >

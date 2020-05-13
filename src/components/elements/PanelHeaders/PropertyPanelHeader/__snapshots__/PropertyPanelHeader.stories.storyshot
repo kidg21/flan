@@ -9,7 +9,7 @@ exports[` 1`] = `
   }
 >
   <div
-    className="Bar__BarLayout-icfo76-2 gJPHni"
+    className="Bar__BarLayout-icfo76-2 eIFIfS"
     id={null}
     onClick={null}
   >
@@ -17,15 +17,15 @@ exports[` 1`] = `
       className="Bar__Slot-icfo76-1 bOQKbQ"
     >
       <a
-        className="Icon__LinkedIcon-sc-1oa9m1v-0 kzNrBw"
+        className="Icon__LinkedIcon-sc-1oa9m1v-0 bDhxPl"
         disabled={null}
         href={null}
         onClick={[Function]}
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-directions fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 bpsbMF"
-          color={null}
+          className="svg-inline--fa fa-directions fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 fvyOLy"
+          color="link"
           data-icon="directions"
           data-prefix="far"
           focusable="false"
@@ -60,17 +60,17 @@ exports[` 1`] = `
       className="Bar__Slot-icfo76-1 gxusZp"
     >
       <a
-        className="Menu__MenuContainer-sc-17iwn6x-0 lhgeCh"
+        className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
         onClick={[Function]}
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 bpsbMF"
+          className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
           color={null}
           data-icon="ellipsis-v"
           data-prefix="far"
           focusable="false"
-          fontSize="1.35em"
+          fontSize="inherit"
           id={null}
           role="img"
           style={Object {}}

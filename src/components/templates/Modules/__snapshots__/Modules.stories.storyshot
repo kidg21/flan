@@ -1,0 +1,1114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  style={
+    Object {
+      "height": "100vh",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="Flex__FlexWrapper-sc-7b3s7m-0 fwrFdN Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+    height={null}
+    id={null}
+    overflow={null}
+    width={null}
+  >
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 fwrFdN Layout__Body-sc-19tlhp4-3 iPUXIc"
+      height={null}
+      id={null}
+      overflow={null}
+      width={null}
+    >
+      <div
+        className="Flex__FlexWrapper-sc-7b3s7m-0 bOZpvs Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+        height="40%"
+        id={null}
+        overflow={null}
+        width="100%"
+      >
+        <div
+          className="Flex__FlexWrapper-sc-7b3s7m-0 eeLHbF Layout__RegionCenter-sc-19tlhp4-6 kIUOgp"
+          height={null}
+          id={null}
+          overflow={null}
+          width={null}
+        >
+          <div
+            className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
+            id="Menu 1"
+          >
+            <section
+              className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
+              id="Menu 1_header"
+            >
+              <div
+                className="Bar__BarLayout-icfo76-2 eIFIfS"
+                id={null}
+                onClick={null}
+              >
+                <div
+                  className="Bar__Slot-icfo76-1 fNcQEg"
+                >
+                  <h6
+                    className="Typography__TitleText-sc-19auepv-2 cLteVL"
+                    fontSize="1em"
+                    fontWeight={600}
+                    letterSpacing="0px"
+                  >
+                    Records
+                  </h6>
+                </div>
+                <div
+                  className="Bar__Slot-icfo76-1 gxusZp"
+                >
+                  <a
+                    className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
+                    onClick={[Function]}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                      color={null}
+                      data-icon="ellipsis-v"
+                      data-prefix="far"
+                      focusable="false"
+                      fontSize="inherit"
+                      id={null}
+                      role="img"
+                      style={Object {}}
+                      viewBox="0 0 128 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                        fill="currentColor"
+                        style={Object {}}
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </section>
+            <section
+              className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
+              id="Menu 1_body"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-6 iqBfAy"
+                id={null}
+                rows={null}
+              >
+                <div
+                  className="Card__CardWrapper-sc-1g3s676-5 hGrWSx"
+                  href={null}
+                  id="1"
+                  media={null}
+                  onClick={[Function]}
+                >
+                  <section
+                    className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__BarLayout-icfo76-2 eUVQsH"
+                      id={null}
+                      onClick={null}
+                    >
+                      <div
+                        className="Bar__Slot-icfo76-1 RjiBe"
+                      >
+                        <a
+                          className="Card__LinkedWrapper-sc-1g3s676-0 bKLMdk"
+                        >
+                          <h5
+                            className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+                            fontSize="1.15em"
+                            fontWeight={600}
+                            letterSpacing="0px"
+                          >
+                            Record 1
+                          </h5>
+                          <p
+                            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                            fontSize="0.876em"
+                            fontWeight={400}
+                            id={null}
+                            letterSpacing="0px"
+                          >
+                            Record Description Goes Here
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                  </section>
+                  <section
+                    className="Card__CardSectionWrapper-sc-1g3s676-1 iEJhOk"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__BarLayout-icfo76-2 bHddGh"
+                      id={null}
+                      onClick={null}
+                    >
+                      <div
+                        className="Bar__Slot-icfo76-1 fNcQEg"
+                      >
+                        <a
+                          className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
+                          id={null}
+                          label="View/Edit"
+                          onClick={null}
+                          title="View/Edit"
+                        >
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
+                            fontSize="0.876em"
+                            fontWeight={400}
+                            htmlFor={null}
+                            letterSpacing="0.2px"
+                          >
+                            View/Edit
+                          </label>
+                        </a>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <div
+                  className="Card__CardWrapper-sc-1g3s676-5 hGrWSx"
+                  href={null}
+                  id="2"
+                  media={null}
+                  onClick={[Function]}
+                >
+                  <section
+                    className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__BarLayout-icfo76-2 eUVQsH"
+                      id={null}
+                      onClick={null}
+                    >
+                      <div
+                        className="Bar__Slot-icfo76-1 RjiBe"
+                      >
+                        <a
+                          className="Card__LinkedWrapper-sc-1g3s676-0 bKLMdk"
+                        >
+                          <h5
+                            className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+                            fontSize="1.15em"
+                            fontWeight={600}
+                            letterSpacing="0px"
+                          >
+                            Record 2
+                          </h5>
+                          <p
+                            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                            fontSize="0.876em"
+                            fontWeight={400}
+                            id={null}
+                            letterSpacing="0px"
+                          >
+                            Record Description Goes Here
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                  </section>
+                  <section
+                    className="Card__CardSectionWrapper-sc-1g3s676-1 iEJhOk"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__BarLayout-icfo76-2 bHddGh"
+                      id={null}
+                      onClick={null}
+                    >
+                      <div
+                        className="Bar__Slot-icfo76-1 fNcQEg"
+                      >
+                        <a
+                          className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
+                          id={null}
+                          label="View/Edit"
+                          onClick={null}
+                          title="View/Edit"
+                        >
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
+                            fontSize="0.876em"
+                            fontWeight={400}
+                            htmlFor={null}
+                            letterSpacing="0.2px"
+                          >
+                            View/Edit
+                          </label>
+                        </a>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </section>
+            </section>
+          </div>
+          <div
+            className="Panel__PanelWrapper-sc-48epke-0 hA-DSpZ"
+            id="Menu 2"
+          >
+            <section
+              className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
+              id="Menu 2_header"
+            >
+              <div
+                className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
+                href={null}
+                id={null}
+                media={null}
+                onClick={null}
+              >
+                <section
+                  className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
+                  id={null}
+                  onClick={null}
+                >
+                  <div
+                    className="Bar__BarLayout-icfo76-2 eUVQsH"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 RjiBe"
+                    >
+                      <h5
+                        className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+                        fontSize="1.15em"
+                        fontWeight={600}
+                        letterSpacing="0px"
+                      >
+                        Record 1
+                      </h5>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                        fontSize="0.876em"
+                        fontWeight={400}
+                        id={null}
+                        letterSpacing="0px"
+                      >
+                        Record Description Goes Here
+                      </p>
+                    </div>
+                  </div>
+                </section>
+                <section
+                  className="Tabs__TabsWrapper-sc-1aqycph-1 eSSOFa"
+                  disabled={false}
+                  id={null}
+                >
+                  <button
+                    className="Button__StyledButton-sc-1v7sls2-0 cnsEiS Tabs__TabButton-sc-1aqycph-0 jSVuAs"
+                    disabled={false}
+                    htmlFor={null}
+                    id="Details"
+                    name="Details"
+                    onClick={[Function]}
+                    tabIndex="1"
+                    type="button"
+                  >
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                        fontSize="0.876em"
+                        fontWeight={600}
+                        htmlFor={null}
+                        letterSpacing="0.2px"
+                      >
+                        Details
+                      </label>
+                    </section>
+                  </button>
+                  <button
+                    className="Button__StyledButton-sc-1v7sls2-0 jeARnt Tabs__TabButton-sc-1aqycph-0 gzDOzw"
+                    disabled={false}
+                    htmlFor={null}
+                    id="Attachments"
+                    name="Attachments"
+                    onClick={[Function]}
+                    tabIndex="1"
+                    type="button"
+                  >
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                        fontSize="0.876em"
+                        fontWeight={600}
+                        htmlFor={null}
+                        letterSpacing="0.2px"
+                      >
+                        Attachments
+                      </label>
+                    </section>
+                  </button>
+                </section>
+              </div>
+            </section>
+            <section
+              className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
+              id="Menu 2_body"
+            >
+              <form
+                action={null}
+                className="Form__FormWrapper-v2wrel-0 geeIqY"
+                id={null}
+                method={null}
+                onSubmit={null}
+              >
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa Form__Inputs-v2wrel-3 dLfNrm"
+                  id={null}
+                  rows={null}
+                >
+                  <section
+                    className="Form__Section-v2wrel-2 dIXoJq"
+                  >
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+                      id="firstName_container"
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+                        fontSize="0.876em"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing="0.2px"
+                      >
+                        Text Input
+                      </label>
+                      <input
+                        autoComplete="off"
+                        className="TextInput__Input-sc-1fep8p8-2 hVSkVt"
+                        cols=""
+                        disabled={false}
+                        id="firstName"
+                        list={null}
+                        name="firstName"
+                        onBlur={null}
+                        onChange={null}
+                        onFocus={null}
+                        onKeyPress={null}
+                        pattern={null}
+                        placeholder={null}
+                        rows=""
+                        type="text"
+                        value="I'm the info that came with the app..."
+                      />
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+                        fontSize="0.75em"
+                        fontWeight={600}
+                        id={null}
+                        letterSpacing="0.2px"
+                      >
+                        The one that your parents gave you
+                      </p>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+                      id="lastName_container"
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+                        fontSize="0.876em"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing="0.2px"
+                      >
+                        Text Input
+                      </label>
+                      <input
+                        autoComplete="off"
+                        className="TextInput__Input-sc-1fep8p8-2 hVSkVt"
+                        cols=""
+                        disabled={false}
+                        id="lastName"
+                        list={null}
+                        name="lastName"
+                        onBlur={null}
+                        onChange={null}
+                        onFocus={null}
+                        onKeyPress={null}
+                        pattern={null}
+                        placeholder={null}
+                        rows=""
+                        type="text"
+                        value="I don't like myself, please change me."
+                      />
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+                        fontSize="0.75em"
+                        fontWeight={600}
+                        id={null}
+                        letterSpacing="0.2px"
+                      >
+                        The one that comes after..
+                      </p>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+                      id="lastName_container"
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+                        fontSize="0.876em"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing="0.2px"
+                      >
+                        Text Area
+                      </label>
+                      <textarea
+                        autoComplete="off"
+                        className="TextInput__Input-sc-1fep8p8-2 hjEkaq"
+                        cols=""
+                        disabled={false}
+                        id="lastName"
+                        list={null}
+                        name="lastName"
+                        onBlur={null}
+                        onChange={null}
+                        onFocus={null}
+                        onKeyPress={null}
+                        pattern={null}
+                        placeholder={null}
+                        rows=""
+                        type="textarea"
+                        value="I'm pretty much a run-on sentence because someone didn't think that I was worth bringing in a copywriter for..."
+                      />
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+                        fontSize="0.75em"
+                        fontWeight={600}
+                        id={null}
+                        letterSpacing="0.2px"
+                      >
+                        The one that comes after..
+                      </p>
+                    </section>
+                  </section>
+                  <section
+                    className="Form__Section-v2wrel-2 dIXoJq"
+                  >
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Checkbox__CheckboxWrapper-sc-1gwp7am-0 cfHVch"
+                      id="Section Name"
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                        fontSize="0.876em"
+                        fontWeight={600}
+                        htmlFor={null}
+                        letterSpacing="0.2px"
+                      >
+                        Checkbox Group Label
+                      </label>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+                        fontSize="0.75em"
+                        fontWeight={600}
+                        id={null}
+                        letterSpacing="0.2px"
+                      >
+                        Hang in there, buddy, I'm here to help!
+                      </p>
+                      <section
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 cRSilm Checkbox__InputGroup-sc-1gwp7am-3 LNZza"
+                        id={null}
+                        rows={null}
+                      >
+                        <div
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+                            id="box-1"
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="checkbox"
+                          />
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+                            fontSize="0.876em"
+                            fontWeight={400}
+                            htmlFor="box-1"
+                            letterSpacing="0.2px"
+                          >
+                            Label 1
+                          </label>
+                        </div>
+                        <div
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 loOzdz"
+                          disabled={true}
+                        >
+                          <input
+                            checked={null}
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 gXukOn"
+                            id="box-2"
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            tabIndex="-1"
+                            type="checkbox"
+                          />
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+                            fontSize="0.876em"
+                            fontWeight={400}
+                            htmlFor="box-2"
+                            letterSpacing="0.2px"
+                          >
+                            Label 2 (disabled)
+                          </label>
+                        </div>
+                        <div
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+                            id="box-3"
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="checkbox"
+                          />
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+                            fontSize="0.876em"
+                            fontWeight={400}
+                            htmlFor="box-3"
+                            letterSpacing="0.2px"
+                          >
+                            Label 3
+                          </label>
+                        </div>
+                        <div
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+                            id="box-4"
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="checkbox"
+                          />
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+                            fontSize="0.876em"
+                            fontWeight={400}
+                            htmlFor="box-4"
+                            letterSpacing="0.2px"
+                          >
+                            Label 4
+                          </label>
+                        </div>
+                      </section>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Checkbox__CheckboxWrapper-sc-1gwp7am-0 cfHVch"
+                      id={null}
+                      rows={null}
+                    >
+                      <section
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Checkbox__InputGroup-sc-1gwp7am-3 LNZza"
+                        id={null}
+                        rows={null}
+                      >
+                        <div
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+                            id="box_long"
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="checkbox"
+                          />
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+                            fontSize="0.876em"
+                            fontWeight={400}
+                            htmlFor="box_long"
+                            letterSpacing="0.2px"
+                          >
+                            My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself.
+                          </label>
+                        </div>
+                        <div
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+                            id="box_long2"
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="checkbox"
+                          />
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+                            fontSize="0.876em"
+                            fontWeight={400}
+                            htmlFor="box_long2"
+                            letterSpacing="0.2px"
+                          >
+                            Enough with these long labels already...put it on your blog, Shakespeare.
+                          </label>
+                        </div>
+                      </section>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ SelectMenu__SelectMenuContainer-sc-12n3hw0-1 iAwVFR"
+                      id={null}
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+                        fontSize="0.876em"
+                        fontWeight={400}
+                        htmlFor={null}
+                        letterSpacing="0.2px"
+                      >
+                        Multi-Select
+                      </label>
+                      <div
+                        className=" css-jf3hug-container"
+                        id={null}
+                        onKeyDown={[Function]}
+                      >
+                        <div
+                          className=" css-14ku2k9-control"
+                          onMouseDown={[Function]}
+                          onTouchEnd={[Function]}
+                        >
+                          <div
+                            className=" css-g1d714-ValueContainer"
+                          >
+                            <div
+                              className=" css-krol22-placeholder"
+                            >
+                              Choose One Or More...
+                            </div>
+                            <div
+                              className="css-b8ldur-Input"
+                            >
+                              <div
+                                className=""
+                                style={
+                                  Object {
+                                    "display": "inline-block",
+                                  }
+                                }
+                              >
+                                <input
+                                  aria-autocomplete="list"
+                                  autoCapitalize="none"
+                                  autoComplete="off"
+                                  autoCorrect="off"
+                                  disabled={false}
+                                  id="react-select-32-input"
+                                  onBlur={[Function]}
+                                  onChange={[Function]}
+                                  onFocus={[Function]}
+                                  spellCheck="false"
+                                  style={
+                                    Object {
+                                      "background": 0,
+                                      "border": 0,
+                                      "boxSizing": "content-box",
+                                      "color": "inherit",
+                                      "fontSize": "inherit",
+                                      "label": "input",
+                                      "opacity": 1,
+                                      "outline": 0,
+                                      "padding": 0,
+                                      "width": "1px",
+                                    }
+                                  }
+                                  tabIndex="0"
+                                  type="text"
+                                  value=""
+                                />
+                                <div
+                                  style={
+                                    Object {
+                                      "height": 0,
+                                      "left": 0,
+                                      "overflow": "scroll",
+                                      "position": "absolute",
+                                      "top": 0,
+                                      "visibility": "hidden",
+                                      "whiteSpace": "pre",
+                                    }
+                                  }
+                                >
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            className=" css-1hb7zxy-IndicatorsContainer"
+                          >
+                            <span
+                              className=" css-rci3ok-indicatorSeparator"
+                            />
+                            <div
+                              aria-hidden="true"
+                              className=" css-1jw44s5-indicatorContainer"
+                              onMouseDown={[Function]}
+                              onTouchEnd={[Function]}
+                            >
+                              <svg
+                                aria-hidden="true"
+                                className="css-6q0nyr-Svg"
+                                focusable="false"
+                                height={20}
+                                viewBox="0 0 20 20"
+                                width={20}
+                              >
+                                <path
+                                  d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                                />
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+                        fontSize="0.75em"
+                        fontWeight={600}
+                        id={null}
+                        letterSpacing="0.2px"
+                      >
+                        Help text for the SelectMenu component
+                      </p>
+                    </section>
+                  </section>
+                  <section
+                    className="Form__Section-v2wrel-2 dIXoJq"
+                  >
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Radio__RadioWrapper-sc-3ox61a-0 kzzMRw"
+                      id="Section Name"
+                      rows={null}
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                        fontSize="0.876em"
+                        fontWeight={600}
+                        htmlFor={null}
+                        letterSpacing="0.2px"
+                      >
+                        Radio Group Label
+                      </label>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+                        fontSize="0.75em"
+                        fontWeight={600}
+                        id={null}
+                        letterSpacing="0.2px"
+                      >
+                        Hang in there, buddy, I'm here to help!
+                      </p>
+                      <section
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 cRSilm Radio__InputGroup-sc-3ox61a-3 dyYMNc"
+                        id={null}
+                        rows={null}
+                      >
+                        <div
+                          className="Radio__RadioContainer-sc-3ox61a-1 kLMXSr"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Radio__RadioInput-sc-3ox61a-2 kZoAlA"
+                            id="radio-1"
+                            name="radio-group"
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="radio"
+                            value="1"
+                          />
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+                            fontSize="0.876em"
+                            fontWeight={400}
+                            htmlFor="radio-1"
+                            letterSpacing="0.2px"
+                          >
+                            Label 1
+                          </label>
+                        </div>
+                        <div
+                          className="Radio__RadioContainer-sc-3ox61a-1 fXxza-D"
+                          disabled={true}
+                        >
+                          <input
+                            checked={null}
+                            className="Radio__RadioInput-sc-3ox61a-2 fEqiTX"
+                            id="radio-2"
+                            name="radio-group"
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            tabIndex="-1"
+                            type="radio"
+                            value="2"
+                          />
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+                            fontSize="0.876em"
+                            fontWeight={400}
+                            htmlFor="radio-2"
+                            letterSpacing="0.2px"
+                          >
+                            Label 2 (disabled)
+                          </label>
+                        </div>
+                        <div
+                          className="Radio__RadioContainer-sc-3ox61a-1 kLMXSr"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Radio__RadioInput-sc-3ox61a-2 kZoAlA"
+                            id="radio-3"
+                            name="radio-group"
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="radio"
+                            value="3"
+                          />
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+                            fontSize="0.876em"
+                            fontWeight={400}
+                            htmlFor="radio-3"
+                            letterSpacing="0.2px"
+                          >
+                            Label 3
+                          </label>
+                        </div>
+                        <div
+                          className="Radio__RadioContainer-sc-3ox61a-1 kLMXSr"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Radio__RadioInput-sc-3ox61a-2 kZoAlA"
+                            id="radio-4"
+                            name="radio-group"
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="radio"
+                            value="4"
+                          />
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+                            fontSize="0.876em"
+                            fontWeight={400}
+                            htmlFor="radio-4"
+                            letterSpacing="0.2px"
+                          >
+                            Label 4
+                          </label>
+                        </div>
+                      </section>
+                    </section>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Radio__RadioWrapper-sc-3ox61a-0 kzzMRw"
+                      id={null}
+                      rows={null}
+                    >
+                      <section
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Radio__InputGroup-sc-3ox61a-3 dyYMNc"
+                        id={null}
+                        rows={null}
+                      >
+                        <div
+                          className="Radio__RadioContainer-sc-3ox61a-1 kLMXSr"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Radio__RadioInput-sc-3ox61a-2 kZoAlA"
+                            id="radio_long"
+                            name="radio-group"
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="radio"
+                            value="5"
+                          />
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+                            fontSize="0.876em"
+                            fontWeight={400}
+                            htmlFor="radio_long"
+                            letterSpacing="0.2px"
+                          >
+                            My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself.
+                          </label>
+                        </div>
+                        <div
+                          className="Radio__RadioContainer-sc-3ox61a-1 kLMXSr"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Radio__RadioInput-sc-3ox61a-2 kZoAlA"
+                            id="radio_long2"
+                            name="radio-group"
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="radio"
+                            value="6"
+                          />
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+                            fontSize="0.876em"
+                            fontWeight={400}
+                            htmlFor="radio_long2"
+                            letterSpacing="0.2px"
+                          >
+                            Enough with these long labels already...put it on your blog, Shakespeare.
+                          </label>
+                        </div>
+                      </section>
+                    </section>
+                  </section>
+                </section>
+              </form>
+            </section>
+            <section
+              className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
+              id="Menu 2_footer"
+            >
+              <div
+                className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
+                href={null}
+                id={null}
+                media={null}
+                onClick={null}
+              >
+                <section
+                  className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
+                  id={null}
+                  onClick={null}
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 cRSilm"
+                    id={null}
+                    rows={null}
+                  >
+                    <button
+                      className="Button__StyledButton-sc-1v7sls2-0 XXdV"
+                      disabled={false}
+                      htmlFor={null}
+                      id={null}
+                      name={null}
+                      onClick={[Function]}
+                      tabIndex="1"
+                      type="button"
+                    >
+                      <section
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                        id={null}
+                        rows={null}
+                      >
+                        <label
+                          className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                          fontSize="0.876em"
+                          fontWeight={600}
+                          htmlFor={null}
+                          letterSpacing="0.2px"
+                        >
+                          Cancel
+                        </label>
+                      </section>
+                    </button>
+                    <button
+                      className="Button__StyledButton-sc-1v7sls2-0 bNBxRI"
+                      disabled={false}
+                      htmlFor={null}
+                      id={null}
+                      name={null}
+                      onClick={[Function]}
+                      tabIndex="1"
+                      type="button"
+                    >
+                      <section
+                        className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                        id={null}
+                        rows={null}
+                      >
+                        <label
+                          className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                          fontSize="0.876em"
+                          fontWeight={600}
+                          htmlFor={null}
+                          letterSpacing="0.2px"
+                        >
+                          Update
+                        </label>
+                      </section>
+                    </button>
+                  </section>
+                </section>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
