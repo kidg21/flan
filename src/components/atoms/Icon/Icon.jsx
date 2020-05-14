@@ -72,6 +72,7 @@ const iconHash = {
   analytics: ["far", "chart-bar"],
   apn: ["far", "hashtag"],
   attach: ["far", "paperclip"],
+  book: "book",
   bookmark_solid: "bookmark",
   bookmark: ["far", "bookmark"],
   calendar: ["far", "calendar-alt"],
