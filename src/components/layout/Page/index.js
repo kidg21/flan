@@ -1,3 +1,3 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
-export { default, PageSection } from "./Page.jsx";
+export { default, PageSection, ContentSection } from "./Page.jsx";
