@@ -352,7 +352,7 @@ storiesOf("Templates/02_Applications", module)
                               selectOptions="all"
                               isClearable={false}
                             />
-                            <TextInput type="search" placeholder="Search Objects" />
+                            <TextInput id="Search Objects" type="search" placeholder="Search Objects" />
                           </Grid>
                         ),
                         width: "max-content",
@@ -466,7 +466,7 @@ storiesOf("Templates/02_Applications", module)
                               selectOptions="all"
                               isClearable={false}
                             />
-                            <TextInput type="search" placeholder="Search Objects" />
+                            <TextInput id="Search Objects" type="search" placeholder="Search Objects" />
                           </Grid>
                         ),
                         width: "max-content",
@@ -622,7 +622,7 @@ storiesOf("Templates/02_Applications", module)
                               selectOptions="all"
                               isClearable={false}
                             />
-                            <TextInput type="search" placeholder="Search Objects" />
+                            <TextInput id="Search Objects" type="search" placeholder="Search Objects" />
                           </Grid>
                         ),
                         width: "max-content",
@@ -820,7 +820,7 @@ storiesOf("Templates/02_Applications", module)
                   }
                 >
                   <Grid columns="1" gap="lg">
-                    <TextInput type="search" placeholder="Search Object Types" />
+                    <TextInput id="Search Object Types" type="search" placeholder="Search Object Types" />
                     <List isInteractive>
                       <ListItem
                         title="Home Page"
@@ -1126,7 +1126,7 @@ storiesOf("Templates/04_Details", module)
                           selectOptions="all"
                           isClearable={false}
                         />
-                        <TextInput type="search" placeholder="Search Objects" />
+                        <TextInput id="Search Objects" type="search" placeholder="Search Objects" />
                       </Grid>
                     ),
                     width: "max-content",
