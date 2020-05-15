@@ -314,7 +314,15 @@ storiesOf("Templates/05_Modules", module)
                       </React.Fragment>
                     }
                     footer={
-                      footerSection ? <Button label="Add Files" isSolid /> : ""
+                      footerSection ?
+                        <Card>
+                          <CardSection>
+                            <ButtonGroup columns="1">
+                              <Button label="Add Files" isSolid />
+                            </ButtonGroup>
+                          </CardSection>
+                        </Card>
+                        : ""
                     }
                   >
                     {recordSection}
