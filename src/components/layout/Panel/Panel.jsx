@@ -47,6 +47,9 @@ const SectionWrapper = styled.section`
   /** TODO: Add a boolean prop to support a 'horizontal scrolling' option. */
   overflow-x: hidden;
   overflow-y: auto;
+  > * {
+    border-radius: 0;
+  }
   ::-webkit-scrollbar {
     width: 0.5em;
     height: 0.5em;
