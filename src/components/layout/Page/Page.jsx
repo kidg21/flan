@@ -48,6 +48,9 @@ const PageWrapper = styled.div`
 const Section = styled(Grid)`
   margin-bottom: 1.5em;
   /* padding: 1rem 1rem .5rem; */
+  height: ${(props) => {
+    return props.height || "";
+  }};
   &:last-of-type {
     margin-bottom: 0;
   }
@@ -75,6 +78,30 @@ PageSection.propTypes = {
   title: PropTypes.string,
 };
 PageSection.defaultProps = {
+  children: null,
+  classname: null,
+  id: null,
+  title: null,
+};
+
+function ContentSection({
+  children, classname, id, title,
+}) {
+  return (
+    <Section id={id} classname={classname} columns="1" gap="sm" height="100%">
+      {title ? <Title size="lg" text={title} /> : null}
+      {children}
+    </Section>
+  );
+}
+
+ContentSection.propTypes = {
+  children: PropTypes.node,
+  classname: PropTypes.string,
+  id: PropTypes.string,
+  title: PropTypes.string,
+};
+ContentSection.defaultProps = {
   children: null,
   classname: null,
   id: null,
@@ -128,4 +155,4 @@ Page.defaultProps = {
   id: null,
 };
 
-export { Page as default, PageSection };
+export { Page as default, PageSection, ContentSection };

@@ -10,7 +10,7 @@ import Icon from "atoms/Icon";
 import Checkbox from "atoms/Checkbox";
 import Switch from "atoms/Switch";
 import Text, { Title, Label } from "base/Typography";
-import { InteractiveContext, DisabledContext } from "States";
+import { InteractiveContext, DisabledContext, PaddingContext } from "States";
 
 const ListTitle = styled(Label)`
   color: ${(props) => {
@@ -72,13 +72,15 @@ const ListItemWrapper = styled.li`
 `;
 
 function List({
-  children, id, isDivided, isInteractive, title,
+  children, id, isDivided, isInteractive, title, padding,
 }) {
   return (
     <InteractiveContext.Provider value={isInteractive}>
       <ListWrapper isDivided={isDivided} id={id}>
         <ListTitle text={title} />
-        {children}
+        <PaddingContext.Provider value={padding}>
+          {children}
+        </PaddingContext.Provider>
       </ListWrapper>
     </InteractiveContext.Provider>
   );
@@ -89,6 +91,7 @@ List.propTypes = {
   id: PropTypes.string,
   isDivided: PropTypes.bool,
   isInteractive: PropTypes.bool,
+  padding: PropTypes.string,
   title: PropTypes.string,
 };
 List.defaultProps = {
@@ -96,6 +99,7 @@ List.defaultProps = {
   id: null,
   isDivided: false,
   isInteractive: false,
+  padding: "0",
   title: null,
 };
 
@@ -200,7 +204,7 @@ function ListItem({
     >
       <DisabledContext.Provider value={disabled}>
         <Bar
-          padding="0"
+          padding={useContext(PaddingContext)}
           center={{
             content: centerContent,
             align: "left",
