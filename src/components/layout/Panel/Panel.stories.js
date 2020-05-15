@@ -102,3 +102,68 @@ storiesOf("Layout|Panel", module)
       </Panel>
     );
   });
+
+// Knob Values
+const knobGroups = ["Panel"];
+const offCanvas = {
+  "On Canvas": "",
+  "Off Canvas-Top": "top",
+  "Off Canvas-Right": "right",
+  "Off Canvas-Bottom": "bottom",
+  "Off Canvas-Left": "left",
+};
+
+export default {
+  title: "Layout|Panel/Tests",
+  component: Panel,
+  parameters: {
+    docs: { page: null },
+  },
+  includeStories: ["Knobs"],
+  decorators: [FullScreen, withKnobs],
+};
+
+export const Knobs = () => {
+  const offcanvas = options("Off Canvas", offCanvas, "", { display: "radio" }, knobGroups[0]);
+  return (
+    <Panel
+      id="Panel"
+      offcanvas={offcanvas}
+      header={
+        <Bar
+          contentAlign="center"
+          padding="2x"
+          center={{
+            content: <Title text="Header" />,
+            align: "center",
+          }}
+        />}
+      footer={
+        <Bar
+          contentAlign="center"
+          padding="2x"
+          center={{
+            content: <Title text="Footer" />,
+            align: "center",
+          }}
+        />}
+    >
+      <CardGrid>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </CardGrid>
+    </Panel>
+  );
+};
+Knobs.story = {
+  parameters: {
+    parameters: {
+      viewMode: "story",
+    },
+  },
+};

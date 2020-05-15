@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 
 const PanelWrapper = styled.div`
+  position: absolute;
   background: ${(props) => {
     return props.theme.background.default;
   }};
@@ -16,6 +17,10 @@ const PanelWrapper = styled.div`
   height: 100%;
   max-height: 100vh;
   overflow: hidden;
+  transform: ${(props) => {
+    return props.isOffCanvas || "";
+  }};
+  transition: all 0.3s ease-in-out;
   -webkit-overflow-scrolling: touch;
   /* Prototype Content - displays when a Panel Section is empty */
   &:empty {
@@ -38,8 +43,10 @@ const SectionWrapper = styled.section`
     return props.sectionPadding || "1em 1em";
   }};
   z-index: 0;
-  overflow-y: auto;
   max-height: 100vh;
+  /** TODO: Add a boolean prop to support a 'horizontal scrolling' option. */
+  overflow-x: hidden;
+  overflow-y: auto;
   ::-webkit-scrollbar {
     width: 0.5em;
     height: 0.5em;
@@ -81,7 +88,6 @@ const SectionWrapper = styled.section`
 function PanelBody({
   children, className, id, padding,
 }) {
-
   let sectionPadding;
   const numPadding = padding ? parseInt(padding, 10) : NaN;
   if (padding && padding.toLowerCase() === "0") {
@@ -118,9 +124,6 @@ const PanelSection = styled(PanelBody)`
   padding: 0;
   overflow: hidden;
   z-index: 1;
-  box-shadow: ${(props) => {
-    return props.theme.shadows.shadow5;
-  }};
   &:first-of-type {
     border-bottom: 1px solid ${(props) => {
     return props.theme.palette.neutral40;
@@ -132,13 +135,33 @@ const PanelSection = styled(PanelBody)`
   }};
   }
 `;
+
 function Panel({
-  children, classname, footer, header, id, padding,
+  children, classname, footer, header, id, offcanvas, padding,
 }) {
+  let isOffCanvas;
+  switch (offcanvas) {
+    case "top":
+      isOffCanvas = "translate3d(0, -100%, 0)";
+      break;
+    case "right":
+      isOffCanvas = "translate3d(100%, 0, 0)";
+      break;
+    case "bottom":
+      isOffCanvas = "translate3d(0, 100%, 0)";
+      break;
+    case "left":
+      isOffCanvas = "translate3d(-100%, 0, 0)";
+      break;
+    default:
+      isOffCanvas = "translate3d(0, 0, 0)";
+      break;
+  }
   return (
     <PanelWrapper
       classname={classname}
       id={id}
+      isOffCanvas={isOffCanvas}
     >
       {header ? <PanelSection id={id ? `${id}_header` : null}>{header}</PanelSection> : null}
       <PanelBody padding={padding} id={id ? `${id}_body` : null}>{children}</PanelBody>
@@ -154,6 +177,7 @@ Panel.propTypes = {
   padding: PropTypes.oneOf(["0", "2x", "3x", "4x"]),
   header: PropTypes.node,
   id: PropTypes.string,
+  offcanvas: PropTypes.string,
 };
 Panel.defaultProps = {
   children: null,
@@ -162,6 +186,7 @@ Panel.defaultProps = {
   padding: null,
   header: null,
   id: null,
+  offcanvas: null,
 };
 
 export default Panel;

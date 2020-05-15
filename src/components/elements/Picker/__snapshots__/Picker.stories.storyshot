@@ -9,7 +9,7 @@ exports[` 1`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 ceKbHJ Picker__InputContainer-sc-1xwpkqn-0 ciLHEA"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Picker__InputContainer-sc-1xwpkqn-0 ciLHEA"
     id="standard"
     rows={null}
   >
@@ -23,7 +23,7 @@ exports[` 1`] = `
       Draw Tools Color Picker
     </label>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 kiIKlP"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb"
       id={null}
       rows={null}
     >
@@ -50,7 +50,7 @@ exports[` 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 cJJNyd"
+          className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
           color={null}
           data-icon="check"
           data-prefix="far"
@@ -97,7 +97,7 @@ exports[` 2`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 ceKbHJ Picker__InputContainer-sc-1xwpkqn-0 ciLHEA"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Picker__InputContainer-sc-1xwpkqn-0 ciLHEA"
     id="toggleSelect"
     rows={null}
   >
@@ -111,7 +111,7 @@ exports[` 2`] = `
       Standard Swatches
     </label>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 ezarLU"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 huKtjk"
       id={null}
       rows={null}
     >
@@ -150,7 +150,7 @@ exports[` 3`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 ceKbHJ Picker__InputContainer-sc-1xwpkqn-0 ciLHEA"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Picker__InputContainer-sc-1xwpkqn-0 ciLHEA"
     id="square"
     rows={null}
   >
@@ -164,7 +164,7 @@ exports[` 3`] = `
       Square Swatches
     </label>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 ezarLU"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 huKtjk"
       id={null}
       rows={null}
     >

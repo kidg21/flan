@@ -2,16 +2,16 @@
 
 exports[` 1`] = `
 <div
-  className="Page__PageWrapper-mddda5-0 kZAGCU"
+  className="Page__PageWrapper-mddda5-0 kuPUTZ"
   id={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn Page__Body-mddda5-2 fBCJXI"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kTWmUL Page__Body-mddda5-2 lmAbxe"
     id={null}
     rows={null}
   >
     <div
-      className="Bar__BarLayout-icfo76-2 gJPHni"
+      className="Bar__BarLayout-icfo76-2 eIFIfS"
       id={null}
       onClick={null}
     >
@@ -34,7 +34,7 @@ exports[` 1`] = `
       onSubmit={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 ceKbHJ Form__Header-v2wrel-1 fWCIUW"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Form__Header-v2wrel-1 fWCIUW"
         id={null}
         rows={null}
       >
@@ -48,7 +48,7 @@ exports[` 1`] = `
         </h4>
       </section>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 dGwfwW Form__Inputs-v2wrel-3 dLfNrm"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa Form__Inputs-v2wrel-3 dLfNrm"
         id={null}
         rows={null}
       >
@@ -56,7 +56,7 @@ exports[` 1`] = `
           className="Form__Section-v2wrel-2 dIXoJq"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
             id="login-email_container"
             rows={null}
           >
@@ -71,7 +71,7 @@ exports[` 1`] = `
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 fYseJG"
+              className="TextInput__Input-sc-1fep8p8-2 hVSkVt"
               cols=""
               disabled={false}
               id="login-email"
@@ -89,7 +89,7 @@ exports[` 1`] = `
             />
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
             id="login-password_container"
             rows={null}
           >
@@ -104,7 +104,7 @@ exports[` 1`] = `
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 fYseJG"
+              className="TextInput__Input-sc-1fep8p8-2 hVSkVt"
               cols=""
               disabled={false}
               id="login-password"
@@ -136,23 +136,23 @@ exports[` 1`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
-                fontSize="1em"
+                className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                fontSize="0.876em"
                 fontWeight={600}
                 htmlFor={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 Login
               </label>
             </section>
           </button>
           <div
-            className="Bar__BarLayout-icfo76-2 jeDoRc"
+            className="Bar__BarLayout-icfo76-2 fliBOc"
             id={null}
             onClick={null}
           >
@@ -160,7 +160,7 @@ exports[` 1`] = `
               className="Bar__Slot-icfo76-1 dLaZFL"
             >
               <a
-                className="Typography__LinkText-sc-19auepv-1 gNLOpf"
+                className="Typography__LinkText-sc-19auepv-1 hyQtWn"
                 fontSize="0.876em"
                 fontWeight={400}
                 href={null}
@@ -173,7 +173,7 @@ exports[` 1`] = `
             </div>
           </div>
           <div
-            className="Bar__BarLayout-icfo76-2 jeDoRc"
+            className="Bar__BarLayout-icfo76-2 fliBOc"
             id={null}
             onClick={null}
           >
@@ -191,16 +191,16 @@ exports[` 1`] = `
                 type="button"
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
                   id={null}
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
-                    fontSize="1em"
+                    className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                    fontSize="0.876em"
                     fontWeight={600}
                     htmlFor={null}
-                    letterSpacing="0px"
+                    letterSpacing="0.2px"
                   >
                     New User? Go to Register
                   </label>
@@ -217,16 +217,16 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <div
-  className="Page__PageWrapper-mddda5-0 kZAGCU"
+  className="Page__PageWrapper-mddda5-0 kuPUTZ"
   id={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn Page__Body-mddda5-2 fBCJXI"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kTWmUL Page__Body-mddda5-2 lmAbxe"
     id={null}
     rows={null}
   >
     <div
-      className="Bar__BarLayout-icfo76-2 gJPHni"
+      className="Bar__BarLayout-icfo76-2 eIFIfS"
       id={null}
       onClick={null}
     >
@@ -249,7 +249,7 @@ exports[` 2`] = `
       onSubmit={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 ceKbHJ Form__Header-v2wrel-1 fWCIUW"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Form__Header-v2wrel-1 fWCIUW"
         id={null}
         rows={null}
       >
@@ -263,7 +263,7 @@ exports[` 2`] = `
         </h4>
       </section>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 dGwfwW Form__Inputs-v2wrel-3 dLfNrm"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa Form__Inputs-v2wrel-3 dLfNrm"
         id={null}
         rows={null}
       >
@@ -271,7 +271,7 @@ exports[` 2`] = `
           className="Form__Section-v2wrel-2 dIXoJq"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
             id="registration-email_container"
             rows={null}
           >
@@ -286,7 +286,7 @@ exports[` 2`] = `
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 fYseJG"
+              className="TextInput__Input-sc-1fep8p8-2 hVSkVt"
               cols=""
               disabled={false}
               id="registration-email"
@@ -304,7 +304,7 @@ exports[` 2`] = `
             />
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
             id="registration-password_container"
             rows={null}
           >
@@ -319,7 +319,7 @@ exports[` 2`] = `
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 fYseJG"
+              className="TextInput__Input-sc-1fep8p8-2 hVSkVt"
               cols=""
               disabled={false}
               id="registration-password"
@@ -337,7 +337,7 @@ exports[` 2`] = `
             />
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
             id="registration-confirm-password_container"
             rows={null}
           >
@@ -352,7 +352,7 @@ exports[` 2`] = `
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 fYseJG"
+              className="TextInput__Input-sc-1fep8p8-2 hVSkVt"
               cols=""
               disabled={false}
               id="registration-confirm-password"
@@ -384,16 +384,16 @@ exports[` 2`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
-                fontSize="1em"
+                className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                fontSize="0.876em"
                 fontWeight={600}
                 htmlFor={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 Register
               </label>
@@ -408,16 +408,16 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <div
-  className="Page__PageWrapper-mddda5-0 kZAGCU"
+  className="Page__PageWrapper-mddda5-0 kuPUTZ"
   id={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn Page__Body-mddda5-2 fBCJXI"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kTWmUL Page__Body-mddda5-2 lmAbxe"
     id={null}
     rows={null}
   >
     <div
-      className="Bar__BarLayout-icfo76-2 gJPHni"
+      className="Bar__BarLayout-icfo76-2 eIFIfS"
       id={null}
       onClick={null}
     >
@@ -440,7 +440,7 @@ exports[` 3`] = `
       onSubmit={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 ceKbHJ Form__Header-v2wrel-1 fWCIUW"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Form__Header-v2wrel-1 fWCIUW"
         id={null}
         rows={null}
       >
@@ -454,7 +454,7 @@ exports[` 3`] = `
         </h4>
       </section>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 dGwfwW Form__Inputs-v2wrel-3 dLfNrm"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa Form__Inputs-v2wrel-3 dLfNrm"
         id={null}
         rows={null}
       >
@@ -462,7 +462,7 @@ exports[` 3`] = `
           className="Form__Section-v2wrel-2 dIXoJq"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
             id="reset-email_container"
             rows={null}
           >
@@ -477,7 +477,7 @@ exports[` 3`] = `
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 fYseJG"
+              className="TextInput__Input-sc-1fep8p8-2 hVSkVt"
               cols=""
               disabled={false}
               id="reset-email"
@@ -509,23 +509,23 @@ exports[` 3`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
-                fontSize="1em"
+                className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                fontSize="0.876em"
                 fontWeight={600}
                 htmlFor={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 Send
               </label>
             </section>
           </button>
           <div
-            className="Bar__BarLayout-icfo76-2 jeDoRc"
+            className="Bar__BarLayout-icfo76-2 fliBOc"
             id={null}
             onClick={null}
           >
@@ -543,16 +543,16 @@ exports[` 3`] = `
                 type="button"
               >
                 <section
-                  className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
                   id={null}
                   rows={null}
                 >
                   <label
-                    className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
-                    fontSize="1em"
+                    className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                    fontSize="0.876em"
                     fontWeight={600}
                     htmlFor={null}
-                    letterSpacing="0px"
+                    letterSpacing="0.2px"
                   >
                     New User? Go to Register
                   </label>
@@ -569,16 +569,16 @@ exports[` 3`] = `
 
 exports[` 4`] = `
 <div
-  className="Page__PageWrapper-mddda5-0 kZAGCU"
+  className="Page__PageWrapper-mddda5-0 kuPUTZ"
   id={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn Page__Body-mddda5-2 fBCJXI"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kTWmUL Page__Body-mddda5-2 lmAbxe"
     id={null}
     rows={null}
   >
     <div
-      className="Bar__BarLayout-icfo76-2 gJPHni"
+      className="Bar__BarLayout-icfo76-2 eIFIfS"
       id={null}
       onClick={null}
     >
@@ -601,7 +601,7 @@ exports[` 4`] = `
       onSubmit={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 ceKbHJ Form__Header-v2wrel-1 fWCIUW"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Form__Header-v2wrel-1 fWCIUW"
         id={null}
         rows={null}
       >
@@ -615,7 +615,7 @@ exports[` 4`] = `
         </h4>
       </section>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 dGwfwW Form__Inputs-v2wrel-3 dLfNrm"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa Form__Inputs-v2wrel-3 dLfNrm"
         id={null}
         rows={null}
       >
@@ -632,7 +632,7 @@ exports[` 4`] = `
             If you don't see an email in the next few minutes please select the link to send again.
           </p>
           <a
-            className="Typography__LinkText-sc-19auepv-1 jNvZLF"
+            className="Typography__LinkText-sc-19auepv-1 ipSkAx"
             fontSize="0.876em"
             fontWeight={600}
             href={null}
@@ -651,16 +651,16 @@ exports[` 4`] = `
 
 exports[` 5`] = `
 <div
-  className="Page__PageWrapper-mddda5-0 kZAGCU"
+  className="Page__PageWrapper-mddda5-0 kuPUTZ"
   id={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn Page__Body-mddda5-2 fBCJXI"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kTWmUL Page__Body-mddda5-2 lmAbxe"
     id={null}
     rows={null}
   >
     <div
-      className="Bar__BarLayout-icfo76-2 gJPHni"
+      className="Bar__BarLayout-icfo76-2 eIFIfS"
       id={null}
       onClick={null}
     >
@@ -683,7 +683,7 @@ exports[` 5`] = `
       onSubmit={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 ceKbHJ Form__Header-v2wrel-1 fWCIUW"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Form__Header-v2wrel-1 fWCIUW"
         id={null}
         rows={null}
       >
@@ -697,7 +697,7 @@ exports[` 5`] = `
         </h4>
       </section>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 dGwfwW Form__Inputs-v2wrel-3 dLfNrm"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa Form__Inputs-v2wrel-3 dLfNrm"
         id={null}
         rows={null}
       >
@@ -705,7 +705,7 @@ exports[` 5`] = `
           className="Form__Section-v2wrel-2 dIXoJq"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
             id="new-email_container"
             rows={null}
           >
@@ -720,7 +720,7 @@ exports[` 5`] = `
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 fYseJG"
+              className="TextInput__Input-sc-1fep8p8-2 hVSkVt"
               cols=""
               disabled={false}
               id="new-email"
@@ -738,7 +738,7 @@ exports[` 5`] = `
             />
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
             id="new-password_container"
             rows={null}
           >
@@ -753,7 +753,7 @@ exports[` 5`] = `
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 fYseJG"
+              className="TextInput__Input-sc-1fep8p8-2 hVSkVt"
               cols=""
               disabled={false}
               id="new-password"
@@ -771,7 +771,7 @@ exports[` 5`] = `
             />
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 dwSQHo TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
             id="new-confirm_container"
             rows={null}
           >
@@ -786,7 +786,7 @@ exports[` 5`] = `
             </label>
             <input
               autoComplete="off"
-              className="TextInput__Input-sc-1fep8p8-2 fYseJG"
+              className="TextInput__Input-sc-1fep8p8-2 hVSkVt"
               cols=""
               disabled={false}
               id="new-confirm"
@@ -818,16 +818,16 @@ exports[` 5`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
-                fontSize="1em"
+                className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                fontSize="0.876em"
                 fontWeight={600}
                 htmlFor={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 Confirm
               </label>
@@ -842,16 +842,16 @@ exports[` 5`] = `
 
 exports[` 6`] = `
 <div
-  className="Page__PageWrapper-mddda5-0 kZAGCU"
+  className="Page__PageWrapper-mddda5-0 kuPUTZ"
   id={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn Page__Body-mddda5-2 fBCJXI"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 kTWmUL Page__Body-mddda5-2 lmAbxe"
     id={null}
     rows={null}
   >
     <div
-      className="Bar__BarLayout-icfo76-2 gJPHni"
+      className="Bar__BarLayout-icfo76-2 eIFIfS"
       id={null}
       onClick={null}
     >
@@ -874,7 +874,7 @@ exports[` 6`] = `
       onSubmit={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 ceKbHJ Form__Header-v2wrel-1 fWCIUW"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Form__Header-v2wrel-1 fWCIUW"
         id={null}
         rows={null}
       >
@@ -888,7 +888,7 @@ exports[` 6`] = `
         </h4>
       </section>
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 dGwfwW Form__Inputs-v2wrel-3 dLfNrm"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa Form__Inputs-v2wrel-3 dLfNrm"
         id={null}
         rows={null}
       >
@@ -919,16 +919,16 @@ exports[` 6`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
-                fontSize="1em"
+                className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                fontSize="0.876em"
                 fontWeight={600}
                 htmlFor={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 Go to Login
               </label>

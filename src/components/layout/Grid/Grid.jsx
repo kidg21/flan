@@ -4,6 +4,7 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 
 const GridWrapper = styled.section`
+  position: relative;
   display: grid;
   grid-gap: ${(props) => {
     return props.gap || "";

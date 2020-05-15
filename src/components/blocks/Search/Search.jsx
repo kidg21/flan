@@ -20,7 +20,6 @@ display: flex;
 align-items: center;
 flex-direction: row;
 border: 1px solid;
-min-width: 12rem;
 border-radius: 4px;
 border-color: ${(props) => {
     return (props.theme.palette.neutral60

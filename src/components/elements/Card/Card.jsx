@@ -54,6 +54,11 @@ const CardSectionWrapper = styled.section`
   color: ${(props) => {
     return props.theme.text[props.sectionColor] || "";
   }};
+    &:hover {
+      color: ${(props) => {
+    return props.theme.text[props.sectionColorHover] || "";
+  }};
+    }
   }
 `;
 
@@ -85,6 +90,7 @@ const CardAudio = styled.audio`
 const CardWrapper = styled.div`
   position: relative;
   display: flex;
+  height: inherit;
   cursor: ${(props) => {
     return props.onClick ? "pointer" : "";
   }};
@@ -99,7 +105,7 @@ const CardWrapper = styled.div`
   color: ${(props) => {
     return props.cardColor ? props.theme.text[props.cardColor] : props.theme.text.primary;
   }};
-  filter: ${(props) => {
+  box-shadow: ${(props) => {
     return props.theme.shadows[props.cardShadow] || "";
   }};
   a {
@@ -126,14 +132,13 @@ const CardGridWrapper = styled(Grid)`
     border-radius: ${(props) => {
     return props.theme.borders.radiusMin;
   }};
-    filter: ${(props) => {
-    return props.theme.shadows.shadow1;
+    box-shadow: ${(props) => {
+    return props.theme.shadows.dropShadow;
   }};
     transition: all 0.25s ease-in-out;
     &:hover {
-      ${Darken};
-      filter: ${(props) => {
-    return props.theme.shadows.shadow3;
+    box-shadow: ${(props) => {
+    return props.theme.shadows.dropShadow2;
   }};
     }
     ${CardSectionWrapper} {
@@ -248,9 +253,11 @@ function CardSection({
   children, className, footer, header, id, onClick, padding, variant,
 }) {
   let sectionColor;
+  let sectionColorHover;
   let sectionBackground;
   if (variant) {
     sectionColor = "inverse";
+    sectionColorHover = "inverseHover";
     sectionBackground = variant.toLowerCase();
   }
   let sectionPadding;
@@ -276,6 +283,7 @@ function CardSection({
       onClick={onClick}
       sectionBackground={sectionBackground}
       sectionColor={sectionColor}
+      sectionColorHover={sectionColorHover}
       sectionPadding={sectionPadding}
       sectionJustify={sectionJustify}
     >
@@ -345,10 +353,10 @@ function Card({
       cardShadow = null;
       break;
     case "2x":
-      cardShadow = "shadow1";
+      cardShadow = "dropShadow2";
       break;
     default:
-      cardShadow = "shadow0";
+      cardShadow = "outlineShadow";
       break;
   }
 
@@ -653,7 +661,9 @@ function CardGrid({
               onClick={item.onClick}
               title={item.title}
               variant={item.variant}
-            />
+            >
+              {item.children}
+            </Card>
           );
         })}
     </CardGridWrapper>

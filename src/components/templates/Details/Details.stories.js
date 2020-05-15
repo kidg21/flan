@@ -8,15 +8,15 @@ import Icon from "atoms/Icon";
 import Button from "atoms/Button";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
 import Tabs, { TabItem } from "blocks/Tabs";
-import { Link } from "base/Typography";
+import Text, { Link } from "base/Typography";
 import Image from "atoms/Image";
 import Card from "elements/Card";
 import Legend from "blocks/Legend";
-import Text from "base/Typography";
-import Page, {PageSection} from "layout/Page";
+
+import Page, { PageSection } from "layout/Page";
 import DialogBox from "elements/DialogBox";
 import Bar from "layout/Bar";
-import Form, {FormSection} from "layout/Form";
+import Form, { FormSection } from "layout/Form";
 
 
 const data = [
@@ -34,33 +34,33 @@ const options = [
   { label: "Report Requested by", value: "Nov 10,2019" },
 ];
 
-storiesOf("Templates|Details", module)
+storiesOf("Templates|04_Details", module)
   .add(
     "Default",
     () => {
       return React.createElement(() => {
-
         return (
-            <Panel 
+          <Panel
             header={
               <MainPanelHeader title="19-0942231 123 Main St. Washington, DC 23820" menuData={data} />
-            }>
-              <Page>
-           
+            }
+          >
+            <Page>
+
               <Tabs>
-              <TabItem label="RFP Details" isSelected/>
-              <TabItem label="Property Details" />
-              <TabItem label="Scope of Work"/>
-              <TabItem label="Business Intelligence"/>
-              <TabItem label="Files"/>
-            </Tabs>
-<PageSection>
-            <Legend data={options} />
-</PageSection>
+                <TabItem label="RFP Details" isSelected />
+                <TabItem label="Property Details" />
+                <TabItem label="Scope of Work" />
+                <TabItem label="Business Intelligence" />
+                <TabItem label="Files" />
+              </Tabs>
+              <PageSection>
+                <Legend data={options} />
+              </PageSection>
 
             </Page>
           </Panel>
-                     
+
         );
       });
     },
@@ -69,28 +69,28 @@ storiesOf("Templates|Details", module)
     "Section",
     () => {
       return React.createElement(() => {
-
         return (
-            <Panel 
+          <Panel
             header={
 
               <MainPanelHeader title="19-0942231 123 Main St. Washington, DC 23820" menuData={data} />
 
-            }>
-              <Page>
+            }
+          >
+            <Page>
               <Tabs>
-              <TabItem label="RFP Details" />
-              <TabItem label="Property Details" isSelected/>
-              <TabItem label="Scope of Work"/>
-              <TabItem label="Business Intelligence"/>
-              <TabItem label="Files"/>
-            </Tabs>
+                <TabItem label="RFP Details" />
+                <TabItem label="Property Details" isSelected />
+                <TabItem label="Scope of Work" />
+                <TabItem label="Business Intelligence" />
+                <TabItem label="Files" />
+              </Tabs>
               <PageSection>
-            <Legend data={options} />
-            </PageSection>
+                <Legend data={options} />
+              </PageSection>
             </Page>
           </Panel>
-                     
+
         );
       });
     },

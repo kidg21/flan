@@ -7,13 +7,17 @@ import Grid from "layout/Grid";
 import Text, { Title } from "base/Typography";
 
 const PageWrapper = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  align-self: stretch;
   color: ${(props) => {
     return props.theme.text.primary;
   }};
   background-color: ${(props) => {
     return props.theme.background.default;
   }};
-  height: 100%;
   z-index: 0;
 
   /* Prototype Content - displays when empty */
@@ -42,14 +46,16 @@ const PageWrapper = styled.div`
 const Section = styled(Grid)`
   margin-bottom: 0.25rem;
   padding: 1rem 1rem .5rem;
+  height: ${(props) => {
+    return props.height || "";
+  }};
   &:last-of-type {
     margin-bottom: 0;
   }
 `;
 
 const Body = styled(Grid)`
-  margin: 0rem;
-  height: 100%;
+  flex: auto;
 `;
 
 function PageSection({
@@ -70,6 +76,30 @@ PageSection.propTypes = {
   title: PropTypes.string,
 };
 PageSection.defaultProps = {
+  children: null,
+  classname: null,
+  id: null,
+  title: null,
+};
+
+function ContentSection({
+  children, classname, id, title,
+}) {
+  return (
+    <Section id={id} classname={classname} columns="1" gap="sm" height="100%">
+      {title ? <Title size="lg" text={title} /> : null}
+      {children}
+    </Section>
+  );
+}
+
+ContentSection.propTypes = {
+  children: PropTypes.node,
+  classname: PropTypes.string,
+  id: PropTypes.string,
+  title: PropTypes.string,
+};
+ContentSection.defaultProps = {
   children: null,
   classname: null,
   id: null,
@@ -123,4 +153,4 @@ Page.defaultProps = {
   id: null,
 };
 
-export { Page as default, PageSection };
+export { Page as default, PageSection, ContentSection };

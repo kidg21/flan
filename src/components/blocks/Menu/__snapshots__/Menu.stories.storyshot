@@ -9,14 +9,14 @@ exports[` 1`] = `
   }
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
+    className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
     href={null}
     id={null}
     media={null}
     onClick={null}
   >
     <div
-      className="Bar__BarLayout-icfo76-2 dLkVUG"
+      className="Bar__BarLayout-icfo76-2 ldTKZi"
       id={null}
       onClick={null}
     >
@@ -24,17 +24,17 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 kZQbjh"
       >
         <a
-          className="Menu__MenuContainer-sc-17iwn6x-0 lhgeCh"
+          className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
           onClick={[Function]}
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 bpsbMF"
+            className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
             color={null}
             data-icon="ellipsis-v"
             data-prefix="far"
             focusable="false"
-            fontSize="1.35em"
+            fontSize="inherit"
             id={null}
             role="img"
             style={Object {}}
@@ -63,22 +63,22 @@ exports[` 2`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 kiIKlP"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb"
     id={null}
     rows={null}
   >
     <a
-      className="Menu__MenuContainer-sc-17iwn6x-0 lhgeCh"
+      className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
       onClick={[Function]}
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 bpsbMF"
+        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
         color={null}
         data-icon="ellipsis-v"
         data-prefix="far"
         focusable="false"
-        fontSize="1.35em"
+        fontSize="inherit"
         id={null}
         role="img"
         style={Object {}}
@@ -93,17 +93,17 @@ exports[` 2`] = `
       </svg>
     </a>
     <a
-      className="Menu__MenuContainer-sc-17iwn6x-0 lhgeCh"
+      className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
       onClick={[Function]}
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 bpsbMF"
+        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
         color={null}
         data-icon="ellipsis-v"
         data-prefix="far"
         focusable="false"
-        fontSize="1.35em"
+        fontSize="inherit"
         id={null}
         role="img"
         style={Object {}}
@@ -118,17 +118,17 @@ exports[` 2`] = `
       </svg>
     </a>
     <a
-      className="Menu__MenuContainer-sc-17iwn6x-0 lhgeCh"
+      className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
       onClick={[Function]}
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 bpsbMF"
+        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
         color={null}
         data-icon="ellipsis-v"
         data-prefix="far"
         focusable="false"
-        fontSize="1.35em"
+        fontSize="inherit"
         id={null}
         role="img"
         style={Object {}}
@@ -143,17 +143,17 @@ exports[` 2`] = `
       </svg>
     </a>
     <a
-      className="Menu__MenuContainer-sc-17iwn6x-0 lhgeCh"
+      className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
       onClick={[Function]}
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 bpsbMF"
+        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
         color={null}
         data-icon="ellipsis-v"
         data-prefix="far"
         focusable="false"
-        fontSize="1.35em"
+        fontSize="inherit"
         id={null}
         role="img"
         style={Object {}}
@@ -168,17 +168,17 @@ exports[` 2`] = `
       </svg>
     </a>
     <a
-      className="Menu__MenuContainer-sc-17iwn6x-0 lhgeCh"
+      className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
       onClick={[Function]}
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 bpsbMF"
+        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
         color={null}
         data-icon="ellipsis-v"
         data-prefix="far"
         focusable="false"
-        fontSize="1.35em"
+        fontSize="inherit"
         id={null}
         role="img"
         style={Object {}}
@@ -193,17 +193,17 @@ exports[` 2`] = `
       </svg>
     </a>
     <a
-      className="Menu__MenuContainer-sc-17iwn6x-0 lhgeCh"
+      className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
       onClick={[Function]}
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 bpsbMF"
+        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
         color={null}
         data-icon="ellipsis-v"
         data-prefix="far"
         focusable="false"
-        fontSize="1.35em"
+        fontSize="inherit"
         id={null}
         role="img"
         style={Object {}}
@@ -230,14 +230,14 @@ exports[` 3`] = `
   }
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 gzxUAm"
+    className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
     href={null}
     id={null}
     media={null}
     onClick={null}
   >
     <div
-      className="Bar__BarLayout-icfo76-2 jeDoRc"
+      className="Bar__BarLayout-icfo76-2 fliBOc"
       id={null}
       onClick={null}
     >
@@ -245,17 +245,17 @@ exports[` 3`] = `
         className="Bar__Slot-icfo76-1 dLaZFL"
       >
         <a
-          className="Menu__MenuContainer-sc-17iwn6x-0 lhgeCh"
+          className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
           onClick={[Function]}
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 bpsbMF"
+            className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
             color={null}
             data-icon="ellipsis-v"
             data-prefix="far"
             focusable="false"
-            fontSize="1.35em"
+            fontSize="inherit"
             id={null}
             role="img"
             style={Object {}}

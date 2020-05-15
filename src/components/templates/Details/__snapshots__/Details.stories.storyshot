@@ -2,15 +2,15 @@
 
 exports[` 1`] = `
 <div
-  className="Panel__PanelWrapper-sc-48epke-0 kObpyG"
+  className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
   id={null}
 >
   <section
-    className="Panel__SectionWrapper-sc-48epke-1 oOUAY Panel__PanelSection-sc-48epke-2 bHxuLl"
+    className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
     id={null}
   >
     <div
-      className="Bar__BarLayout-icfo76-2 gJPHni"
+      className="Bar__BarLayout-icfo76-2 eIFIfS"
       id={null}
       onClick={null}
     >
@@ -30,17 +30,17 @@ exports[` 1`] = `
         className="Bar__Slot-icfo76-1 kZQbjh"
       >
         <a
-          className="Menu__MenuContainer-sc-17iwn6x-0 lhgeCh"
+          className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
           onClick={[Function]}
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 bpsbMF"
+            className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
             color={null}
             data-icon="ellipsis-v"
             data-prefix="far"
             focusable="false"
-            fontSize="1.35em"
+            fontSize="inherit"
             id={null}
             role="img"
             style={Object {}}
@@ -58,15 +58,15 @@ exports[` 1`] = `
     </div>
   </section>
   <section
-    className="Panel__SectionWrapper-sc-48epke-1 oOUAY"
+    className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
     id={null}
   >
     <div
-      className="Page__PageWrapper-mddda5-0 kZAGCU"
+      className="Page__PageWrapper-mddda5-0 kuPUTZ"
       id={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn Page__Body-mddda5-2 fBCJXI"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kTWmUL Page__Body-mddda5-2 lmAbxe"
         id={null}
         rows={null}
       >
@@ -86,16 +86,16 @@ exports[` 1`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
-                fontSize="1em"
+                className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                fontSize="0.876em"
                 fontWeight={600}
                 htmlFor={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 RFP Details
               </label>
@@ -112,16 +112,16 @@ exports[` 1`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
-                fontSize="1em"
+                className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                fontSize="0.876em"
                 fontWeight={600}
                 htmlFor={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 Property Details
               </label>
@@ -138,16 +138,16 @@ exports[` 1`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
-                fontSize="1em"
+                className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                fontSize="0.876em"
                 fontWeight={600}
                 htmlFor={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 Scope of Work
               </label>
@@ -164,16 +164,16 @@ exports[` 1`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
-                fontSize="1em"
+                className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                fontSize="0.876em"
                 fontWeight={600}
                 htmlFor={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 Business Intelligence
               </label>
@@ -190,16 +190,16 @@ exports[` 1`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
-                fontSize="1em"
+                className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                fontSize="0.876em"
                 fontWeight={600}
                 htmlFor={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 Files
               </label>
@@ -207,7 +207,7 @@ exports[` 1`] = `
           </button>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 gUohHS Page__Section-mddda5-1 bYiyle"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Page__Section-mddda5-1 jqFETz"
           id={null}
           rows={null}
         >
@@ -358,15 +358,15 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <div
-  className="Panel__PanelWrapper-sc-48epke-0 kObpyG"
+  className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
   id={null}
 >
   <section
-    className="Panel__SectionWrapper-sc-48epke-1 oOUAY Panel__PanelSection-sc-48epke-2 bHxuLl"
+    className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
     id={null}
   >
     <div
-      className="Bar__BarLayout-icfo76-2 gJPHni"
+      className="Bar__BarLayout-icfo76-2 eIFIfS"
       id={null}
       onClick={null}
     >
@@ -386,17 +386,17 @@ exports[` 2`] = `
         className="Bar__Slot-icfo76-1 kZQbjh"
       >
         <a
-          className="Menu__MenuContainer-sc-17iwn6x-0 lhgeCh"
+          className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
           onClick={[Function]}
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 bpsbMF"
+            className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
             color={null}
             data-icon="ellipsis-v"
             data-prefix="far"
             focusable="false"
-            fontSize="1.35em"
+            fontSize="inherit"
             id={null}
             role="img"
             style={Object {}}
@@ -414,15 +414,15 @@ exports[` 2`] = `
     </div>
   </section>
   <section
-    className="Panel__SectionWrapper-sc-48epke-1 oOUAY"
+    className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
     id={null}
   >
     <div
-      className="Page__PageWrapper-mddda5-0 kZAGCU"
+      className="Page__PageWrapper-mddda5-0 kuPUTZ"
       id={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 kGwkvn Page__Body-mddda5-2 fBCJXI"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 kTWmUL Page__Body-mddda5-2 lmAbxe"
         id={null}
         rows={null}
       >
@@ -442,16 +442,16 @@ exports[` 2`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
-                fontSize="1em"
+                className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                fontSize="0.876em"
                 fontWeight={600}
                 htmlFor={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 RFP Details
               </label>
@@ -468,16 +468,16 @@ exports[` 2`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
-                fontSize="1em"
+                className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                fontSize="0.876em"
                 fontWeight={600}
                 htmlFor={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 Property Details
               </label>
@@ -494,16 +494,16 @@ exports[` 2`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
-                fontSize="1em"
+                className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                fontSize="0.876em"
                 fontWeight={600}
                 htmlFor={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 Scope of Work
               </label>
@@ -520,16 +520,16 @@ exports[` 2`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
-                fontSize="1em"
+                className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                fontSize="0.876em"
                 fontWeight={600}
                 htmlFor={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 Business Intelligence
               </label>
@@ -546,16 +546,16 @@ exports[` 2`] = `
             type="button"
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 bsnBxt Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
               id={null}
               rows={null}
             >
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 fYsNIK"
-                fontSize="1em"
+                className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                fontSize="0.876em"
                 fontWeight={600}
                 htmlFor={null}
-                letterSpacing="0px"
+                letterSpacing="0.2px"
               >
                 Files
               </label>
@@ -563,7 +563,7 @@ exports[` 2`] = `
           </button>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 gUohHS Page__Section-mddda5-1 bYiyle"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Page__Section-mddda5-1 jqFETz"
           id={null}
           rows={null}
         >
