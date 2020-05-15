@@ -17,6 +17,8 @@ const ListTitle = styled(Label)`
     return props.theme.text.secondary;
   }};
   text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
 `;
 
 const ListWrapper = styled.ul`
@@ -44,6 +46,7 @@ const ListItemWrapper = styled.li`
     return props.isSelected ? props.theme.background.selected : props.theme.background.default;
   }};
   padding: .5em;
+  margin-bottom: 1px;
   cursor: ${(props) => {
     return props.isInteractive ? "pointer" : "";
   }};
