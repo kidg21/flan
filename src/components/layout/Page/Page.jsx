@@ -18,6 +18,8 @@ const PageWrapper = styled.div`
   background-color: ${(props) => {
     return props.theme.background.default;
   }};
+  /** TODO: Add a 'padding' prop */
+  padding: 1em;
   z-index: 0;
 
   /* Prototype Content - displays when empty */
@@ -44,8 +46,8 @@ const PageWrapper = styled.div`
 `;
 
 const Section = styled(Grid)`
-  margin-bottom: 0.25rem;
-  padding: 1rem 1rem .5rem;
+  margin-bottom: 1.5em;
+  /* padding: 1rem 1rem .5rem; */
   &:last-of-type {
     margin-bottom: 0;
   }
