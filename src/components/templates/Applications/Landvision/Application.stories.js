@@ -901,52 +901,58 @@ storiesOf("Templates/02_Applications", module)
                     }
                   >
                     <Page columns="15rem 1fr" gap="2xl">
-                      <Card
-                        padding="4x"
-                      >
-                        <CardSection>
+                      <PageSection>
+                        <Grid columns="1" gap="lg">
                           <List title="1: Confirm" isInteractive>
                             <ListItem
                               title="Verify Site"
                               onClick={() => {
                                 showDetails();
                               }}
+                            // isSelected
                             />
                           </List>
-                        </CardSection>
-                        <CardSection>
                           <List title="2: Review" isInteractive>
                             <ListItem
-                              title="Section 1"
+                              title="Assessment"
                               onClick={() => {
                                 showModules();
                               }}
+                            // isSelected
                             />
                             <ListItem
-                              title="Section 2"
+                              title="Zoning"
                               onClick={() => {
                                 showRelated();
                               }}
+                            // isSelected
                             />
                             <ListItem
-                              title="Section 3"
+                              title="Demographics"
                               onClick={() => {
                                 showModules();
                               }}
+                            // isSelected
+                            />
+                            <ListItem
+                              title="Maps"
+                              onClick={() => {
+                                showModules();
+                              }}
+                            // isSelected
                             />
                           </List>
-                        </CardSection>
-                        <CardSection>
                           <List title="3: Export" isInteractive>
                             <ListItem
-                              title="View Reports"
+                              title="View Report(s)"
                               onClick={() => {
                                 showDetails();
                               }}
+                            // isSelected
                             />
                           </List>
-                        </CardSection>
-                      </Card>
+                        </Grid>
+                      </PageSection>
                       {recordSection}
                     </Page>
                   </Panel>

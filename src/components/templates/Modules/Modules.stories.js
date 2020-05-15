@@ -209,6 +209,10 @@ storiesOf("Templates/05_Modules", module)
           },
         ];
 
+        const recordList = (
+          <CardGrid data={recordData} />
+        );
+
         const recordDetails = (
           <Form>
             <FormSection title="">
@@ -271,29 +275,33 @@ storiesOf("Templates/05_Modules", module)
         const recordAttachments = (
           <Page>
             <PageSection>
-              <Button label="Add Files" />
-              <Legend title="Attachments" data={attachments} />
+              {/* <Button label="Add Files" /> */}
+              <Legend title="Attached Documents" data={attachments} />
             </PageSection>
           </Page>
         );
 
-        const [recordSection, setRecordSection] = useState(recordDetails);
-        const showModuleA = () => { setRecordSection(recordDetails); };
+        const [recordSection, setRecordSection] = useState(recordList);
+        const showModuleA = () => { setRecordSection(recordList); };
         const showModuleB = () => { setRecordSection(recordAttachments); };
+        const [footerSection, setFooterSection] = useState(false);
+        const toggleFooter = () => { setFooterSection(!footerSection); };
 
         const [activeSingleTab, setActiveSingleTab] = useState("tab1");
         const tabButtons = [
           {
-            id: "Details",
-            label: "Details",
+            id: "Records",
+            label: "Records",
+            count: "2",
             isSelected: activeSingleTab === "tab1",
-            onClick: () => { setActiveSingleTab("tab1"); showModuleA(); },
+            onClick: () => { setActiveSingleTab("tab1"); showModuleA(); toggleFooter(); },
           },
           {
             id: "Attachments",
             label: "Attachments",
+            count: "3",
             isSelected: activeSingleTab === "tab2",
-            onClick: () => { setActiveSingleTab("tab2"); showModuleB(); },
+            onClick: () => { setActiveSingleTab("tab2"); showModuleB(); toggleFooter(); },
           },
         ];
         return (
@@ -304,31 +312,37 @@ storiesOf("Templates/05_Modules", module)
                   <Panel
                     id="Menu 1"
                     header={
-                      <Bar
-                        contentAlign="center"
-                        padding="2x"
-                        left={{
-                          content: (
-                            <Title text="Records" weight="bold" />
-                          ),
-                        }}
-                        right={{
-                          content: (
-                            <Menu
-                              data={[
-                                { id: "a", label: "Action" },
-                                { id: "c", label: "Action" },
-                                { id: "b", label: "Action" },
-                              ]}
-                              position="bottomLeft"
-                            />
-                          ),
-                          width: "min-content",
-                        }}
-                      />
+                      <React.Fragment>
+                        <Bar
+                          contentAlign="center"
+                          padding="2x"
+                          left={{
+                            content: (
+                              <Title text="[Category] Information" weight="bold" />
+                            ),
+                          }}
+                          right={{
+                            content: (
+                              <Menu
+                                data={[
+                                  { id: "a", label: "Action" },
+                                  { id: "c", label: "Action" },
+                                  { id: "b", label: "Action" },
+                                ]}
+                                position="bottomLeft"
+                              />
+                            ),
+                            width: "min-content",
+                          }}
+                        />
+                        <Tabs data={tabButtons} />
+                      </React.Fragment>
+                    }
+                    footer={
+                      footerSection ? <Button label="Add Files" isSolid /> : ""
                     }
                   >
-                    <CardGrid data={recordData} />
+                    {recordSection}
                   </Panel>
                   <Panel
                     id="Menu 2"
@@ -337,9 +351,7 @@ storiesOf("Templates/05_Modules", module)
                       <Card
                         title="Record 1"
                         description="Record Description Goes Here"
-                      >
-                        <Tabs data={tabButtons} />
-                      </Card>
+                      />
                     }
                     footer={
                       <Card>
@@ -352,7 +364,7 @@ storiesOf("Templates/05_Modules", module)
                       </Card>
                     }
                   >
-                    {recordSection}
+                    {recordDetails}
                   </Panel>
                 </React.Fragment>
               ),
