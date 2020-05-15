@@ -257,18 +257,19 @@ function SelectMenu({
       newSelection = selectedOptsValue;
     }
 
-    // convert back to value for selectOption prop input
-    if (newSelection instanceof Array) {
-      newSelection = newSelection.map((val) => { return val.value; });
-    } else {
-      newSelection = newSelection.value;
-    }
-    if (onChange) onChange(newSelection);
-
-    // deprecated onChangeState
+    // deprecated onChangeState, selected: { value, label }
     if (onChangeState) {
       onChangeState({}, { selected: newSelection }, () => {});
     }
+
+    // convert back to value for selectOption prop input
+    let newSelectionValue;
+    if (newSelection instanceof Array) {
+      newSelectionValue = newSelection.map((val) => { return val.value; });
+    } else {
+      newSelectionValue = newSelection.value;
+    }
+    if (onChange) onChange(newSelectionValue);
   }, [selectedOptsValue, onChange, onChangeState]);
 
   const selectProps = {
