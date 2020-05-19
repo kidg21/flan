@@ -59,7 +59,7 @@ exports[` 1`] = `
                     fontWeight={600}
                     letterSpacing="0px"
                   >
-                    Records
+                    [Category] Information
                   </h6>
                 </div>
                 <div
@@ -92,6 +92,94 @@ exports[` 1`] = `
                   </a>
                 </div>
               </div>
+              <section
+                className="Tabs__TabsWrapper-sc-1aqycph-1 eSSOFa"
+                disabled={false}
+                id={null}
+              >
+                <button
+                  className="Button__StyledButton-sc-1v7sls2-0 cnsEiS Tabs__TabButton-sc-1aqycph-0 jSVuAs"
+                  disabled={false}
+                  htmlFor={null}
+                  id="Records"
+                  name="Records"
+                  onClick={[Function]}
+                  tabIndex="1"
+                  type="button"
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kKYaBx Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                    id={null}
+                    rows={null}
+                  >
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                      fontSize="0.876em"
+                      fontWeight={600}
+                      htmlFor={null}
+                      letterSpacing="0.2px"
+                    >
+                      Records
+                    </label>
+                    <div
+                      className="Tag__TagContainer-sc-128kb3h-0 jCHZDn"
+                      id={null}
+                      label="2"
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
+                        fontSize="0.65em"
+                        fontWeight={600}
+                        htmlFor={null}
+                        letterSpacing="0.6px"
+                      >
+                        2
+                      </label>
+                    </div>
+                  </section>
+                </button>
+                <button
+                  className="Button__StyledButton-sc-1v7sls2-0 jeARnt Tabs__TabButton-sc-1aqycph-0 gzDOzw"
+                  disabled={false}
+                  htmlFor={null}
+                  id="Attachments"
+                  name="Attachments"
+                  onClick={[Function]}
+                  tabIndex="1"
+                  type="button"
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kKYaBx Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                    id={null}
+                    rows={null}
+                  >
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                      fontSize="0.876em"
+                      fontWeight={600}
+                      htmlFor={null}
+                      letterSpacing="0.2px"
+                    >
+                      Attachments
+                    </label>
+                    <div
+                      className="Tag__TagContainer-sc-128kb3h-0 jCHZDn"
+                      id={null}
+                      label="3"
+                    >
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 gZBTly"
+                        fontSize="0.65em"
+                        fontWeight={600}
+                        htmlFor={null}
+                        letterSpacing="0.6px"
+                      >
+                        3
+                      </label>
+                    </div>
+                  </section>
+                </button>
+              </section>
             </section>
             <section
               className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
@@ -308,64 +396,6 @@ exports[` 1`] = `
                       </p>
                     </div>
                   </div>
-                </section>
-                <section
-                  className="Tabs__TabsWrapper-sc-1aqycph-1 eSSOFa"
-                  disabled={false}
-                  id={null}
-                >
-                  <button
-                    className="Button__StyledButton-sc-1v7sls2-0 cnsEiS Tabs__TabButton-sc-1aqycph-0 jSVuAs"
-                    disabled={false}
-                    htmlFor={null}
-                    id="Details"
-                    name="Details"
-                    onClick={[Function]}
-                    tabIndex="1"
-                    type="button"
-                  >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-                        fontSize="0.876em"
-                        fontWeight={600}
-                        htmlFor={null}
-                        letterSpacing="0.2px"
-                      >
-                        Details
-                      </label>
-                    </section>
-                  </button>
-                  <button
-                    className="Button__StyledButton-sc-1v7sls2-0 jeARnt Tabs__TabButton-sc-1aqycph-0 gzDOzw"
-                    disabled={false}
-                    htmlFor={null}
-                    id="Attachments"
-                    name="Attachments"
-                    onClick={[Function]}
-                    tabIndex="1"
-                    type="button"
-                  >
-                    <section
-                      className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
-                      id={null}
-                      rows={null}
-                    >
-                      <label
-                        className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-                        fontSize="0.876em"
-                        fontWeight={600}
-                        htmlFor={null}
-                        letterSpacing="0.2px"
-                      >
-                        Attachments
-                      </label>
-                    </section>
-                  </button>
                 </section>
               </div>
             </section>
@@ -724,7 +754,7 @@ exports[` 1`] = `
                           onTouchEnd={[Function]}
                         >
                           <div
-                            className=" css-1hwfws3"
+                            className=" css-g1d714-ValueContainer"
                           >
                             <div
                               className=" css-krol22-placeholder"

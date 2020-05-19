@@ -4,37 +4,14 @@
 import React, { useState } from "react";
 import { FullScreen } from "helpers/Display";
 import Panel from "layout/Panel";
-// import Table from "blocks/Table";
-import List, { ListItem } from "blocks/List";
-// import Icon from "atoms/Icon";
-// import Search from "blocks/Search";
-// import IconBlock from "blocks/IconBlock";
-import Text, { Title, Link } from "base/Typography";
-// import Avatar from "atoms/Avatar";
-import Command from "atoms/Command";
-// import Switch from "atoms/Switch";
-// import Checkbox from "atoms/Checkbox";
-// import SearchBar from "blocks/Search";
+import { Title, Link } from "base/Typography";
 import Button, { ButtonGroup } from "atoms/Button";
 import Bar from "layout/Bar";
-// import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
-// import NavigationPanelHeader from "elements/PanelHeaders/NavigationPanelHeader";
-// import PropertyPanelHeader from "elements/PanelHeaders/PropertyPanelHeader";
 import Card, { CardSection, CardGrid } from "elements/Card";
 import Layout from "layout/Layout";
-import Grid from "layout/Grid";
 import Menu from "blocks/Menu";
 import Page, { PageSection } from "layout/Page";
 import Tabs from "blocks/Tabs";
-// import SelectMenu from "atoms/SelectMenu";
-// import Image from "atoms/Image";
-// import Legend from "blocks/Legend";
-// import Control, { ControlItem } from "blocks/Control";
-// import LightBoxLogo from "images/LightBoxLogo.png";
-// import LightBoxIcon from "images/LightBoxIconLogo.png";
-import ZoningMap1 from "images/maps/zoning-1.jpg";
-import ZoningMap2 from "images/maps/zoning-2.png";
-// import ZoningMap2 from "images/maps/zoning-3.jpg";
 import Form, { FormSection } from "layout/Form";
 import TextInput from "atoms/TextInput";
 import { CheckboxGroup } from "atoms/Checkbox";
@@ -151,8 +128,6 @@ storiesOf("Templates/05_Modules", module)
         const recordData = [
           {
             id: "1",
-            // media: ZoningMap1,
-            // mediaDesc: "ZoningMap 1",
             title: "Record 1",
             description: "Record Description Goes Here",
             commands: [
@@ -180,8 +155,6 @@ storiesOf("Templates/05_Modules", module)
           },
           {
             id: "2",
-            // media: ZoningMap2,
-            // mediaDesc: "Record 2",
             title: "Record 2",
             description: "Record Description Goes Here",
             commands: [
@@ -208,6 +181,10 @@ storiesOf("Templates/05_Modules", module)
             onClick: showMenu2,
           },
         ];
+
+        const recordList = (
+          <CardGrid data={recordData} />
+        );
 
         const recordDetails = (
           <Form>
@@ -271,31 +248,37 @@ storiesOf("Templates/05_Modules", module)
         const recordAttachments = (
           <Page>
             <PageSection>
-              <Button label="Add Files" />
-              <Legend title="Attachments" data={attachments} />
+              <Legend title="Attached Documents" data={attachments} />
             </PageSection>
           </Page>
         );
 
-        const [recordSection, setRecordSection] = useState(recordDetails);
-        const showModuleA = () => { setRecordSection(recordDetails); };
+        //
+        const [recordSection, setRecordSection] = useState(recordList);
+        const showModuleA = () => { setRecordSection(recordList); };
         const showModuleB = () => { setRecordSection(recordAttachments); };
+
+        const [footerSection, setFooterSection] = useState(false);
+        const toggleFooter = () => { setFooterSection(!footerSection); };
 
         const [activeSingleTab, setActiveSingleTab] = useState("tab1");
         const tabButtons = [
           {
-            id: "Details",
-            label: "Details",
+            id: "Records",
+            label: "Records",
+            count: "2",
             isSelected: activeSingleTab === "tab1",
-            onClick: () => { setActiveSingleTab("tab1"); showModuleA(); },
+            onClick: () => { setActiveSingleTab("tab1"); showModuleA(); toggleFooter(); },
           },
           {
             id: "Attachments",
             label: "Attachments",
+            count: "3",
             isSelected: activeSingleTab === "tab2",
-            onClick: () => { setActiveSingleTab("tab2"); showModuleB(); },
+            onClick: () => { setActiveSingleTab("tab2"); showModuleB(); toggleFooter(); },
           },
         ];
+
         return (
           <Layout
             main={{
@@ -304,31 +287,45 @@ storiesOf("Templates/05_Modules", module)
                   <Panel
                     id="Menu 1"
                     header={
-                      <Bar
-                        contentAlign="center"
-                        padding="2x"
-                        left={{
-                          content: (
-                            <Title text="Records" weight="bold" />
-                          ),
-                        }}
-                        right={{
-                          content: (
-                            <Menu
-                              data={[
-                                { id: "a", label: "Action" },
-                                { id: "c", label: "Action" },
-                                { id: "b", label: "Action" },
-                              ]}
-                              position="bottomLeft"
-                            />
-                          ),
-                          width: "min-content",
-                        }}
-                      />
+                      <React.Fragment>
+                        <Bar
+                          contentAlign="center"
+                          padding="2x"
+                          left={{
+                            content: (
+                              <Title text="[Category] Information" weight="bold" />
+                            ),
+                          }}
+                          right={{
+                            content: (
+                              <Menu
+                                data={[
+                                  { id: "a", label: "Action" },
+                                  { id: "c", label: "Action" },
+                                  { id: "b", label: "Action" },
+                                ]}
+                                position="bottomLeft"
+                              />
+                            ),
+                            width: "min-content",
+                          }}
+                        />
+                        <Tabs data={tabButtons} />
+                      </React.Fragment>
+                    }
+                    footer={
+                      footerSection ?
+                        <Card>
+                          <CardSection>
+                            <ButtonGroup columns="1">
+                              <Button label="Add Files" isSolid />
+                            </ButtonGroup>
+                          </CardSection>
+                        </Card>
+                        : ""
                     }
                   >
-                    <CardGrid data={recordData} />
+                    {recordSection}
                   </Panel>
                   <Panel
                     id="Menu 2"
@@ -337,9 +334,7 @@ storiesOf("Templates/05_Modules", module)
                       <Card
                         title="Record 1"
                         description="Record Description Goes Here"
-                      >
-                        <Tabs data={tabButtons} />
-                      </Card>
+                      />
                     }
                     footer={
                       <Card>
@@ -352,7 +347,7 @@ storiesOf("Templates/05_Modules", module)
                       </Card>
                     }
                   >
-                    {recordSection}
+                    {recordDetails}
                   </Panel>
                 </React.Fragment>
               ),

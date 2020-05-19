@@ -9,28 +9,21 @@ import List, { ListItem } from "blocks/List";
 import Icon from "atoms/Icon";
 import Search from "blocks/Search";
 import IconBlock from "blocks/IconBlock";
-import Text, { Title, Link } from "base/Typography";
+import Text, { Title } from "base/Typography";
 import Avatar from "atoms/Avatar";
 import Command from "atoms/Command";
-import Switch from "atoms/Switch";
 import Checkbox from "atoms/Checkbox";
 import TextInput from "atoms/TextInput";
-import SearchBar from "blocks/Search";
 import Button, { ButtonGroup } from "atoms/Button";
 import Bar from "layout/Bar";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
-import NavigationPanelHeader from "elements/PanelHeaders/NavigationPanelHeader";
-import PropertyPanelHeader from "elements/PanelHeaders/PropertyPanelHeader";
-import Card, { CardSection, CardGrid } from "elements/Card";
+import Card, { CardSection } from "elements/Card";
 import Layout from "layout/Layout";
 import Grid from "layout/Grid";
 import Menu from "blocks/Menu";
 import Page, { PageSection } from "layout/Page";
-import Tabs from "blocks/Tabs";
 import SelectMenu from "atoms/SelectMenu";
 import Image from "atoms/Image";
-import Legend from "blocks/Legend";
-import Control, { ControlItem } from "blocks/Control";
 import LightBoxLogo from "images/LightBoxLogo.png";
 import LightBoxIcon from "images/LightBoxIconLogo.png";
 
@@ -94,7 +87,6 @@ const pageContent = (
   <Page
     header={{
       title: "All About This Item",
-      // subtitle: "Totally Worth The Read...Enjoy!",
       description: "Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.",
     }}
   >
@@ -129,45 +121,6 @@ const infoPanel = (
     header={infoCard}
   >
     {pageContent}
-  </Panel>
-);
-
-const landingPanel = (
-  <Panel
-    id="Application Home"
-  >
-    <Title text="Application Home" size="lg" weight="bold" />
-    <Text text="Welcome, and such..." />
-  </Panel>
-);
-
-const itemPanel1 = (
-  <Panel
-    id="Item Panel 1"
-  >
-    {/* <Avatar label="1" brand="research" /> */}
-    <Title text="Item 1" size="lg" weight="bold" />
-    <Text text="All about Item 1..." />
-  </Panel>
-);
-
-const itemPanel2 = (
-  <Panel
-    id="Item Panel 2"
-  >
-    {/* <Avatar label="2" brand="bi" /> */}
-    <Title text="Item 2" size="lg" weight="bold" />
-    <Text text="All about Item 2..." />
-  </Panel>
-);
-
-const itemPanel3 = (
-  <Panel
-    id="Item Panel 3"
-  >
-    {/* <Avatar label="3" brand="broker" /> */}
-    <Title text="Item 3" size="lg" weight="bold" />
-    <Text text="All about Item 3..." />
   </Panel>
 );
 
@@ -239,10 +192,6 @@ storiesOf("Templates/02_Applications", module)
         const [leftOpen, setLeftOpen] = useState(true);
         const toggleLeft = () => { setLeftOpen(!leftOpen); };
 
-        // const [rightOpen, setRightOpen] = useState(false);
-        // const openRight = () => { setRightOpen(true); };
-        // const closeRight = () => { setRightOpen(false); };
-
         const [recordView, setRecordView] = useState("bottom");
         const showRecord = () => { setRecordView(null); };
         const hideRecord = () => { setRecordView("bottom"); };
@@ -280,8 +229,6 @@ storiesOf("Templates/02_Applications", module)
             f3: "Value",
             f4: "Value",
             f5: "Value",
-            // f6: "Value",
-            // f7: "Value",
             actions: <Grid columns="4"><Icon icon="edit" onClick={doNothing} /><Icon icon="delete" onClick={doNothing} /></Grid>,
             blank: "",
             blank2: "",
@@ -294,8 +241,6 @@ storiesOf("Templates/02_Applications", module)
             f3: "Value",
             f4: "Value",
             f5: "Value",
-            // f6: "Value",
-            // f7: "Value",
             actions: <Grid columns="4"><Icon icon="edit" onClick={doNothing} /><Icon icon="delete" onClick={doNothing} /></Grid>,
             blank: "",
             blank2: "",
@@ -308,8 +253,6 @@ storiesOf("Templates/02_Applications", module)
             f3: "Value",
             f4: "Value",
             f5: "Value",
-            // f6: "Value",
-            // f7: "Value",
             actions: <Grid columns="4"><Icon icon="edit" onClick={doNothing} /><Icon icon="delete" onClick={doNothing} /></Grid>,
             blank: "",
             blank2: "",
@@ -334,7 +277,6 @@ storiesOf("Templates/02_Applications", module)
                 subtitle: "Here are all of the objects of this type...",
               }}
             >
-              {/* <PageSection> */}
               <Grid columns="1" rows="auto 300px" gap="0">
                 <Card shadow="0">
                   <CardSection padding="0">
@@ -379,21 +321,17 @@ storiesOf("Templates/02_Applications", module)
                 </Card>
                 {objectTable1}
               </Grid>
-              {/* </PageSection> */}
             </Page>
           </Panel>
         );
 
         const objectHeaders2 = [
           { id: "select", label: <Grid columns="auto 1fr"><Checkbox />Objects</Grid> },
-          // { id: "objects", label: "Objects" },
           { id: "f1", label: "Field Name", sortable: true },
           { id: "f2", label: "Field Name", sortable: false },
           { id: "f3", label: "Field Name", sortable: false },
           { id: "f4", label: "Field Name", sortable: true },
           { id: "f5", label: "Field Name", sortable: true },
-          // { id: "f6", label: "Field Name", sortable: false },
-          // { id: "f7", label: "Field Name", sortable: false },
           { id: "actions", label: "Actions" },
           { id: "blank", label: "", sortable: false },
           { id: "blank2", label: "", sortable: false },
@@ -408,8 +346,6 @@ storiesOf("Templates/02_Applications", module)
             f3: "Value",
             f4: "Value",
             f5: "Value",
-            // f6: "Value",
-            // f7: "Value",
             actions: <Grid columns="4"><Icon icon="edit" onClick={doNothing} /><Icon icon="delete" onClick={doNothing} /></Grid>,
             blank: "",
             blank2: "",
@@ -422,8 +358,6 @@ storiesOf("Templates/02_Applications", module)
             f3: "Value",
             f4: "Value",
             f5: "Value",
-            // f6: "Value",
-            // f7: "Value",
             actions: <Grid columns="4"><Icon icon="edit" onClick={doNothing} /><Icon icon="delete" onClick={doNothing} /></Grid>,
             blank: "",
             blank2: "",
@@ -448,7 +382,6 @@ storiesOf("Templates/02_Applications", module)
                 subtitle: "Here are all of the objects of this type...",
               }}
             >
-              {/* <PageSection> */}
               <Grid columns="1" rows="auto 300px" gap="0">
                 <Card shadow="0">
                   <CardSection padding="0">
@@ -493,21 +426,17 @@ storiesOf("Templates/02_Applications", module)
                 </Card>
                 {objectTable2}
               </Grid>
-              {/* </PageSection> */}
             </Page>
           </Panel>
         );
 
         const objectHeaders3 = [
           { id: "select", label: <Grid columns="auto 1fr"><Checkbox />Objects</Grid> },
-          // { id: "objects", label: "Objects" },
           { id: "f1", label: "Field Name", sortable: true },
           { id: "f2", label: "Field Name", sortable: false },
           { id: "f3", label: "Field Name", sortable: false },
           { id: "f4", label: "Field Name", sortable: true },
           { id: "f5", label: "Field Name", sortable: true },
-          // { id: "f6", label: "Field Name", sortable: false },
-          // { id: "f7", label: "Field Name", sortable: false },
           { id: "actions", label: "Actions" },
           { id: "blank", label: "", sortable: false },
           { id: "blank2", label: "", sortable: false },
@@ -522,8 +451,6 @@ storiesOf("Templates/02_Applications", module)
             f3: "Value",
             f4: "Value",
             f5: "Value",
-            // f6: "Value",
-            // f7: "Value",
             actions: <Grid columns="4"><Icon icon="edit" onClick={doNothing} /><Icon icon="delete" onClick={doNothing} /></Grid>,
             blank: "",
             blank2: "",
@@ -536,8 +463,6 @@ storiesOf("Templates/02_Applications", module)
             f3: "Value",
             f4: "Value",
             f5: "Value",
-            // f6: "Value",
-            // f7: "Value",
             actions: <Grid columns="4"><Icon icon="edit" onClick={doNothing} /><Icon icon="delete" onClick={doNothing} /></Grid>,
             blank: "",
             blank2: "",
@@ -550,8 +475,6 @@ storiesOf("Templates/02_Applications", module)
             f3: "Value",
             f4: "Value",
             f5: "Value",
-            // f6: "Value",
-            // f7: "Value",
             actions: <Grid columns="4"><Icon icon="edit" onClick={doNothing} /><Icon icon="delete" onClick={doNothing} /></Grid>,
             blank: "",
             blank2: "",
@@ -564,8 +487,6 @@ storiesOf("Templates/02_Applications", module)
             f3: "Value",
             f4: "Value",
             f5: "Value",
-            // f6: "Value",
-            // f7: "Value",
             actions: <Grid columns="4"><Icon icon="edit" onClick={doNothing} /><Icon icon="delete" onClick={doNothing} /></Grid>,
             blank: "",
             blank2: "",
@@ -578,8 +499,6 @@ storiesOf("Templates/02_Applications", module)
             f3: "Value",
             f4: "Value",
             f5: "Value",
-            // f6: "Value",
-            // f7: "Value",
             actions: <Grid columns="4"><Icon icon="edit" onClick={doNothing} /><Icon icon="delete" onClick={doNothing} /></Grid>,
             blank: "",
             blank2: "",
@@ -604,7 +523,6 @@ storiesOf("Templates/02_Applications", module)
                 subtitle: "Here are all of the objects of this type...",
               }}
             >
-              {/* <PageSection> */}
               <Grid columns="1" rows="auto 300px" gap="0">
                 <Card shadow="0">
                   <CardSection padding="0">
@@ -649,7 +567,6 @@ storiesOf("Templates/02_Applications", module)
                 </Card>
                 {objectTable3}
               </Grid>
-              {/* </PageSection> */}
             </Page>
           </Panel>
         );
@@ -698,35 +615,11 @@ storiesOf("Templates/02_Applications", module)
         const showModules = () => { setRecordSection(recordModules); };
         const showRelated = () => { setRecordSection(recordRelated); };
 
-        const [activeSingleTab, setActiveSingleTab] = useState("tab1");
-        const tabButtons = [
-          {
-            id: "Details",
-            label: "Module A",
-            isSelected: activeSingleTab === "tab1",
-            onClick: () => { setActiveSingleTab("tab1"); showDetails(); },
-          },
-          {
-            id: "Modules",
-            label: "Module B",
-            isSelected: activeSingleTab === "tab2",
-            onClick: () => { setActiveSingleTab("tab2"); showModules(); },
-          },
-          {
-            id: "Records",
-            label: "Module C",
-            isSelected: activeSingleTab === "tab3",
-            onClick: () => { setActiveSingleTab("tab3"); showRelated(); },
-          },
-        ];
-
         const [mainView, setMainView] = useState(homeView);
         const showHome = () => { setMainView(homeView); };
         const showObjects1 = () => { setMainView(objectsView1); };
         const showObjects2 = () => { setMainView(objectsView2); };
         const showObjects3 = () => { setMainView(objectsView3); };
-        // const showRecord = () => { setMainView(objectRecord); };
-        // const hideRecord = () => { setMainView(objectsView); };
 
         return (
           <Layout
@@ -901,68 +794,64 @@ storiesOf("Templates/02_Applications", module)
                     }
                   >
                     <Page columns="15rem 1fr" gap="2xl">
-                      <Card
-                        padding="4x"
-                      >
-                        <CardSection>
+                      <PageSection>
+                        <Grid columns="1" gap="lg">
                           <List title="1: Confirm" isInteractive>
                             <ListItem
                               title="Verify Site"
                               onClick={() => {
                                 showDetails();
                               }}
+                            // isSelected
                             />
                           </List>
-                        </CardSection>
-                        <CardSection>
                           <List title="2: Review" isInteractive>
                             <ListItem
-                              title="Section 1"
+                              title="Assessment"
                               onClick={() => {
                                 showModules();
                               }}
+                            // isSelected
                             />
                             <ListItem
-                              title="Section 2"
+                              title="Zoning"
                               onClick={() => {
                                 showRelated();
                               }}
+                            // isSelected
                             />
                             <ListItem
-                              title="Section 3"
+                              title="Demographics"
                               onClick={() => {
                                 showModules();
                               }}
+                            // isSelected
+                            />
+                            <ListItem
+                              title="Maps"
+                              onClick={() => {
+                                showModules();
+                              }}
+                            // isSelected
                             />
                           </List>
-                        </CardSection>
-                        <CardSection>
                           <List title="3: Export" isInteractive>
                             <ListItem
-                              title="View Reports"
+                              title="View Report(s)"
                               onClick={() => {
                                 showDetails();
                               }}
+                            // isSelected
                             />
                           </List>
-                        </CardSection>
-                      </Card>
+                        </Grid>
+                      </PageSection>
                       {recordSection}
                     </Page>
                   </Panel>
                 </React.Fragment>
               ),
             }}
-          // right={{
-          //   id: "Right",
-          //   content: "",
-          //   visible: rightOpen,
-          // }}
-          // bottom={{ id: "Bottom", content: "" }}
-          // footer={{
-          //   id: "Footer",
-          //   content: "",
-          // }}
           />
         );
       });
@@ -1059,17 +948,11 @@ storiesOf("Templates/04_Details", module)
         <Page columns="15rem 1fr" gap="2xl">
           <Panel>
             <Grid columns="1" gap="lg">
-              {/* <Card
-            padding="4x"
-          > */}
-              {/* <CardSection> */}
               <List title="1: Confirm" isInteractive>
                 <ListItem
                   title="Verify Site"
                 />
               </List>
-              {/* </CardSection> */}
-              {/* <CardSection> */}
               <List title="2: Review" isInteractive>
                 <ListItem
                   title="Section 1"
@@ -1081,15 +964,11 @@ storiesOf("Templates/04_Details", module)
                   title="Section 3"
                 />
               </List>
-              {/* </CardSection> */}
-              {/* <CardSection> */}
               <List title="3: Export" isInteractive>
                 <ListItem
                   title="View Reports"
                 />
               </List>
-              {/* </CardSection> */}
-              {/* </Card> */}
             </Grid>
           </Panel>
           <Bar
@@ -1172,8 +1051,6 @@ storiesOf("Templates/04_Details", module)
                   f3: "Value",
                   f4: "Value",
                   f5: "Value",
-                  // f6: "Value",
-                  // f7: "Value",
                   actions: <Grid columns="4"><Icon icon="edit" onClick={doNothing} /><Icon icon="delete" onClick={doNothing} /></Grid>,
                   blank: "",
                   blank2: "",
@@ -1186,8 +1063,6 @@ storiesOf("Templates/04_Details", module)
                   f3: "Value",
                   f4: "Value",
                   f5: "Value",
-                  // f6: "Value",
-                  // f7: "Value",
                   actions: <Grid columns="4"><Icon icon="edit" onClick={doNothing} /><Icon icon="delete" onClick={doNothing} /></Grid>,
                   blank: "",
                   blank2: "",
@@ -1200,8 +1075,6 @@ storiesOf("Templates/04_Details", module)
                   f3: "Value",
                   f4: "Value",
                   f5: "Value",
-                  // f6: "Value",
-                  // f7: "Value",
                   actions: <Grid columns="4"><Icon icon="edit" onClick={doNothing} /><Icon icon="delete" onClick={doNothing} /></Grid>,
                   blank: "",
                   blank2: "",
@@ -1214,8 +1087,6 @@ storiesOf("Templates/04_Details", module)
                   f3: "Value",
                   f4: "Value",
                   f5: "Value",
-                  // f6: "Value",
-                  // f7: "Value",
                   actions: <Grid columns="4"><Icon icon="edit" onClick={doNothing} /><Icon icon="delete" onClick={doNothing} /></Grid>,
                   blank: "",
                   blank2: "",
@@ -1228,8 +1099,6 @@ storiesOf("Templates/04_Details", module)
                   f3: "Value",
                   f4: "Value",
                   f5: "Value",
-                  // f6: "Value",
-                  // f7: "Value",
                   actions: <Grid columns="4"><Icon icon="edit" onClick={doNothing} /><Icon icon="delete" onClick={doNothing} /></Grid>,
                   blank: "",
                   blank2: "",
@@ -1312,9 +1181,6 @@ storiesOf("Templates/04_Details", module)
             </Page>
           ),
         }}
-      // right={{ id: "Right", content: "" }}
-      // bottom={{ id: "Bottom", content: "" }}
-      // footer={{ id: "Footer", content: "" }}
       />
     );
   });
