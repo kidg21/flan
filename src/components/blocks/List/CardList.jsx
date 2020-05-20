@@ -6,24 +6,110 @@ import styled from "styled-components";
 import { DisableTransitionContext } from "States";
 
 /* eslint-disable security/detect-object-injection */
-const GridWrapper = styled.div`
+// const GridWrapper = styled.div`
+//   width: 100%;
+//   height: 100%;
+// `;
+
+// const CellWrapper = styled.div`
+//   align-items: center;
+//   color: ${(props) => { return props.theme.text.primary; }};
+//   border-bottom: 1px solid ${(props) => { return props.theme.palette.neutral40; }};
+//   background-color: ${(props) => {
+//     if (props.isHighlighted) {
+//       return "#f0f5fb";
+//     }
+//     if (props.isSelected) {
+//       return "#669932";
+//     }
+//     return "";
+//   }};
+// `;
+
+export const GridWrapper = styled.div`
   width: 100%;
   height: 100%;
+  border: 1px solid ${(props) => {
+    return props.theme.palette.neutral60;
+  }};
+  overflow: hidden;
+  .ReactVirtualized__Grid {
+    ::-webkit-scrollbar {
+      height: 0.75em;
+    }
+    ::-webkit-scrollbar-track {
+      background-color: ${(props) => {
+    return props.theme.palette.disabled;
+  }};
+    border: 1px solid ${(props) => {
+    return props.theme.palette.neutral60;
+  }};
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: ${(props) => {
+    return props.theme.palette.link;
+  }};
+    border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
+  }};
+    }
+    :focus {
+      outline: none;
+    }
+  }
+  .ReactVirtualized__Grid__innerScrollContainer {
+    overflow: visible !important;
+  }
 `;
 
-const CellWrapper = styled.div`
+export const CellWrapper = styled.div`
   align-items: center;
-  color: ${(props) => { return props.theme.text.primary; }};
-  border-bottom: 1px solid ${(props) => { return props.theme.palette.neutral40; }};
+  padding: 0.5em 1em;
+  color: ${(props) => {
+    if (props.isHeader) {
+      return props.theme.text.primary;
+    } else if (props.isSelected) {
+      return props.theme.text.inverse;
+    }
+    return props.theme.text.primary;
+  }};
+  font-weight: ${(props) => {
+    return props.isHeader ? "600" : "400";
+  }};
+  font-family: ${(props) => { return props.isHeader ? props.theme.typography.primary : props.theme.typography.secondary; }};
+  border-bottom: ${(props) => {
+    return props.isHeader ? `2px solid ${props.theme.palette.neutral40}` : `1px solid ${props.theme.palette.neutral40}`;
+  }};
   background-color: ${(props) => {
+    if (props.isHeader) {
+      return props.theme.background.app;
+    }
     if (props.isHighlighted) {
-      return "#f0f5fb";
+      return props.theme.palette.neutral20;
     }
     if (props.isSelected) {
-      return "#669932";
+      return props.theme.background.selected;
+    }
+    return props.theme.background.default;
+  }};
+  [class^="Menu"],
+  [class^="Command"] {
+    color: ${(props) => {
+    if (props.isSelected) {
+      return props.theme.text.inverse;
     }
     return "";
   }};
+  }
+
+  &:after {
+    content: "v";
+    position: absolute;
+    right: 0;
+    display: ${(props) => {
+    return props.isSortable ? "" : "none";
+  }};
+  }
 `;
 
 class CardList extends PureComponent {
