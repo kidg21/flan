@@ -56,8 +56,69 @@ const Section = styled(Grid)`
   }
 `;
 
+// const areas = {
+//   one: `a`,
+//   two: `b`,
+// };
+
 const Body = styled(Grid)`
-  flex: auto;
+  /* flex: auto; */
+  /* grid-template-columns: auto; */
+  grid-gap: ${(props) => {
+    return props.gap || "1rem";
+  }};
+  grid-template-columns: ${(props) => {
+    return props.columns || "initial";
+  }};
+  grid-auto-columns: ${(props) => {
+    return props.emptyColumns || "";
+  }};
+  /* grid-auto-rows: ${(props) => {
+    return props.emptyRows || "";
+  }}; */
+  /* grid-template-rows: ${(props) => {
+    return props.auto || "auto";
+  }}; */
+  /* grid-auto-flow: row; */
+  /* grid-template-areas:
+    "a b c d e"
+    "a b c d e"
+  ; */
+  grid-template-areas: ${(props) => {
+    return props.setTemplate || "";
+  }};
+  & > {
+    :nth-child(1) {
+      /* grid-area: a; */
+      grid-area: ${(props) => {
+    return props.itemA || `a`;
+  }};
+    }
+    :nth-child(2) {
+      /* grid-area: b; */
+      grid-area: ${(props) => {
+    return props.itemB || `b`;
+  }};
+    }
+    :nth-child(3) {
+      /* grid-area: c; */
+      grid-area: ${(props) => {
+    return props.itemC || `c`;
+  }};
+    }
+    :nth-child(4) {
+      /* grid-area: d; */
+      grid-area: ${(props) => {
+    return props.itemD || `d`;
+  }};
+    }
+    :nth-child(5) {
+      /* grid-area: e; */
+      grid-area: ${(props) => {
+    return props.itemE || `e`;
+  }};
+    }
+  }
 `;
 
 function PageSection({
@@ -108,9 +169,35 @@ ContentSection.defaultProps = {
   title: null,
 };
 
+// const templateHash = {
+//   A:
+//     `
+//     "a b c d e"
+//     "a b c d e"
+//   `,
+// };
+
 function Page({
-  children, classname, header, id, columns,
+  children, classname, columns, gap, header, id, rows, template,
 }) {
+  // const templateValue = templateHash[template && template.toLowerCase()] || null;
+  let setTemplate;
+  // let itemA;
+  // let itemB;
+  let emptyColumns;
+  let emptyRows;
+  switch (template) {
+    default:
+      setTemplate = `
+        "a b . c d . e"
+        "a b . c d . e"
+      `;
+      emptyColumns = "minmax(auto, 20%)";
+      // emptyRows = "minmax(auto, 10rem)";
+      // itemA = null;
+      // itemB = null;
+      break;
+  }
   return (
     <PageWrapper
       id={id}
@@ -130,7 +217,17 @@ function Page({
           ) : null}
         </Section>
       ) : null}
-      <Body columns={columns} gap="0">
+      <Body
+        columns={columns}
+        emptyColumns={emptyColumns}
+        emptyRows={emptyRows}
+        gap={gap}
+        // itemA={itemA}
+        // itemB={itemB}
+        rows={rows}
+        setTemplate={setTemplate}
+        template={template}
+      >
         {children}
       </Body>
     </PageWrapper>
@@ -150,7 +247,7 @@ Page.propTypes = {
 Page.defaultProps = {
   children: null,
   classname: null,
-  columns: 1,
+  columns: null,
   header: null,
   id: null,
 };

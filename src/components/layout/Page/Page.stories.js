@@ -1,11 +1,34 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
+import { FullScreen } from "helpers/Display";
 import Page, { PageSection } from "layout/Page";
 import Text, { Title } from "base/Typography";
 
 storiesOf("Layout|Page", module)
   .addDecorator(checkA11y)
+  .addDecorator(FullScreen)
+  .add("Page Templates", () => {
+    return (
+      <Page id="Page Templates" template="">
+        <Text
+          text="A. This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy."
+        />
+        <Text
+          text="B. This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy."
+        />
+        <Text
+          text="C. This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy."
+        />
+        <Text
+          text="D. This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy."
+        />
+        <Text
+          text="E. This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy."
+        />
+      </Page>
+    );
+  })
   .add("Using Header Props", () => {
     return (
       <Page
