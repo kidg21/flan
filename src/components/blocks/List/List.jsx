@@ -26,6 +26,7 @@ const ListWrapper = styled.ul`
   flex: auto;
   flex-direction: column;
   list-style: none;
+  padding: 1rem;
   li:not(:last-child) {
     border-bottom: ${(props) => {
     return props.isDivided ? "1px solid" : "";
