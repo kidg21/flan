@@ -3,10 +3,11 @@
 import React from "react";
 import { FullScreen } from "helpers/Display";
 import Page, { PageSection } from "layout/Page";
+import Panel from "layout/Panel";
 import Bar from "layout/Bar";
 import Text, { Title } from "base/Typography";
 import List, { ListItem } from "blocks/List";
-import Card from "elements/Card";
+import Card, { CardGrid } from "elements/Card";
 
 const map = (
   <Mapbox />
@@ -19,9 +20,10 @@ storiesOf("Layout|Page", module)
     return (
       <Page
         id="Page Regions"
-        template="02"
+        template="01"
         header={{
           id: "Header",
+          // content: map,
           content: (
             <Bar
               contentAlign="center"
@@ -40,6 +42,7 @@ storiesOf("Layout|Page", module)
         }}
         A={{
           id: "A",
+          // content: map,
           content: (
             <React.Fragment>
               <List title="1: Confirm" isInteractive>
@@ -71,10 +74,52 @@ storiesOf("Layout|Page", module)
         }}
         B={{
           id: "B",
-          content: map,
+          // content: map,
+          content: (
+            <Panel
+              id="Panel"
+              offcanvas="left"
+            // header={
+            //   <Bar
+            //     contentAlign="center"
+            //     padding="2x"
+            //     center={{
+            //       content: <Title text="Header" />,
+            //       align: "center",
+            //     }}
+            //   />}
+            // footer={
+            //   <Bar
+            //     contentAlign="center"
+            //     padding="2x"
+            //     center={{
+            //       content: <Title text="Footer" />,
+            //       align: "center",
+            //     }}
+            //   />}
+            >
+              <CardGrid>
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+              </CardGrid>
+            </Panel>
+          ),
         }}
         C={{
           id: "C",
+          // content: map,
           content: (
             <React.Fragment>
               <Card
@@ -109,35 +154,6 @@ storiesOf("Layout|Page", module)
         <Text
           text="E. This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy."
         />
-      </Page>
-    );
-  })
-  .add("Using Header Props", () => {
-    return (
-      <Page
-        id="A Page"
-        header={{
-          title: "My Latest Musings",
-          subtitle: "Totally Worth The Read...Enjoy!",
-          description: "Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.",
-        }}
-      >
-        <PageSection title="Section 1">
-          <Text
-            text="This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy."
-          />
-          <Text
-            text="This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy."
-          />
-        </PageSection>
-        <PageSection title="Section 2">
-          <Text
-            text="This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy."
-          />
-          <Text
-            text="This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy."
-          />
-        </PageSection>
       </Page>
     );
   })

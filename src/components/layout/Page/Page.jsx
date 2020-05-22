@@ -6,23 +6,36 @@ import { PlaceholderText } from "helpers/Placeholders.jsx";
 import Grid from "layout/Grid";
 import Text, { Title } from "base/Typography";
 
-const PageWrapper = styled.div`
+const PageWrapper = styled(Grid)`
   position: relative;
-  display: flex;
-  flex-direction: column;
-  flex: auto;
-  align-self: stretch;
-  height: 100%;
+  height: ${(props) => {
+    return props.setHeight || "100%";
+  }};
+  grid-template-areas: ${(props) => {
+    return props.setTemplate || "";
+  }};
+  grid-template-columns: ${(props) => {
+    return props.setColumns || "initial";
+  }};
+  grid-column-gap: ${(props) => {
+    return props.setColumnGap || props.hasShadow ? (props.setColumnGap || "1rem") : "0";
+  }};
+  grid-template-rows: ${(props) => {
+    return props.setRows || "initial";
+  }};
+  grid-row-gap: ${(props) => {
+    return props.setRowGap || props.hasShadow ? (props.setRowGap || "1rem") : "0";
+  }};
   color: ${(props) => {
     return props.theme.text.primary;
   }};
   background-color: ${(props) => {
     return props.theme.background.default;
   }};
-  /** TODO: Add a 'padding' prop */
-  padding: 1em;
+  padding: ${(props) => {
+    return props.setPadding || props.hasShadow ? (props.setPadding || "1rem") : "";
+  }};
   z-index: 0;
-
   /* Prototype Content - displays when empty */
   &:empty {
     &:before {
@@ -48,32 +61,12 @@ const PageWrapper = styled.div`
 
 const Section = styled(Grid)`
   margin-bottom: 1.5em;
-  /* padding: 1rem 1rem .5rem; */
   height: ${(props) => {
     return props.height || "";
   }};
   &:last-of-type {
     margin-bottom: 0;
   }
-`;
-
-const Body = styled(Grid)`
-  grid-template-areas: ${(props) => {
-    return props.setTemplate || "";
-  }};
-  grid-template-columns: ${(props) => {
-    return props.setColumns || "initial";
-  }};
-  grid-column-gap: ${(props) => {
-    return props.setColumnGap || "0";
-  }};
-  grid-template-rows: ${(props) => {
-    return props.setRows || "initial";
-  }};
-  grid-row-gap: ${(props) => {
-    return props.setRowGap || "0";
-  }};
-  height: inherit;
 `;
 
 function PageSection({
@@ -126,14 +119,15 @@ ContentSection.defaultProps = {
 
 
 const Region = styled.section`
+  position: relative;
   grid-area: ${(props) => {
     return props.gridArea || "";
   }};
   height: inherit;
-  padding: ${(props) => {
-    return props.setPadding || "";
-  }};
   overflow: auto;
+    border-radius: ${(props) => {
+    return props.hasShadow ? props.theme.borders.radiusMin : null;
+  }};
   box-shadow: ${(props) => {
     return props.hasShadow ? props.theme.shadows.dropShadow2 : null;
   }};
@@ -141,6 +135,7 @@ const Region = styled.section`
     &:before {
       ${PlaceholderText}
       background-color: pink;
+      border: 1px solid deeppink;
       height: inherit;
       content: "${(props) => {
     return props.placeholder || "";
@@ -148,22 +143,32 @@ const Region = styled.section`
     }
   }
 `;
+
 function Page({
   A, B, C, children, classname, columns, gap, header, id, rows, template, placeholder,
 }) {
   let hasShadow;
+  let setPadding;
+  let setHeight;
   let setTemplate;
   let setColumns;
   let setColumnGap;
   let setRows;
   let setRowGap;
+  if (hasShadow) {
+    setPadding = "1rem";
+  }
   switch (template) {
     case "01":
       setTemplate = `
-        "A B C"
+        "header header"
+        "B C"
+        "B A"
       `;
-      setColumns = "15% 1fr 25%";
-      setRows = "auto";
+      setColumns = "1fr 30rem";
+      setRows = "min-content min-content auto";
+      // setRows = "auto auto auto";
+      hasShadow = true;
       break;
     case "02":
       setTemplate = `
@@ -172,65 +177,69 @@ function Page({
         "A B C"
       `;
       setColumns = "10rem 1fr 20rem";
-      // setColumnGap = "0";
+      // setColumnGap = "10rem";
       setRows = "auto 1fr";
-      // setRowGap = "0";
+      // setRowGap = "10rem";
       // hasShadow = true;
       break;
     default:
+      setHeight = "auto";
+      setRowGap = "1rem";
+      setPadding = "1rem";
       break;
   }
   return (
     <PageWrapper
-      id={id}
       classname={classname}
-      columns="1"
       hasShadow={hasShadow}
+      id={id}
+      setColumnGap={setColumnGap}
+      setColumns={setColumns}
+      setHeight={setHeight}
+      setPadding={setPadding}
+      setRowGap={setRowGap}
+      setRows={setRows}
+      setTemplate={setTemplate}
+      template={template}
     >
-      <Body
-        setColumnGap={setColumnGap}
-        setColumns={setColumns}
-        setRowGap={setRowGap}
-        setRows={setRows}
-        setTemplate={setTemplate}
-        template={template}
-      >
-        {!children ? (
-          <React.Fragment>
-            {header ? (
-              <Region
-                id={header.id || "Header"}
-                placeholder="Header"
-                gridArea="header"
-              >
-                {header.content}
-              </Region>
-            ) : null}
+      {header || A || B || C ? (
+        <React.Fragment>
+          {header ? (
             <Region
-              id={A.id || "A"}
-              placeholder="A"
-              gridArea="A"
+              id={header.id || "Header"}
+              placeholder="Header"
+              gridArea="header"
+              hasShadow={hasShadow}
             >
-              {A.content}
+              {header.content}
             </Region>
-            <Region
-              id={B.id}
-              placeholder="B"
-              gridArea="B"
-            >
-              {B.content}
-            </Region>
-            <Region
-              id={C.id}
-              placeholder="C"
-              gridArea="C"
-            >
-              {C.content}
-            </Region>
-          </React.Fragment>
-        ) : null}
-        {!children ? null : children}
-      </Body>
+          ) : null}
+          <Region
+            id={A.id || "A"}
+            placeholder="A"
+            gridArea="A"
+            hasShadow={hasShadow}
+          >
+            {A.content}
+          </Region>
+          <Region
+            id={B.id}
+            placeholder="B"
+            gridArea="B"
+            hasShadow={hasShadow}
+          >
+            {B.content}
+          </Region>
+          <Region
+            id={C.id}
+            placeholder="C"
+            gridArea="C"
+            hasShadow={hasShadow}
+          >
+            {C.content}
+          </Region>
+        </React.Fragment>
+      ) : children}
     </PageWrapper>
   );
 }
