@@ -12,6 +12,7 @@ const PageWrapper = styled.div`
   flex-direction: column;
   flex: auto;
   align-self: stretch;
+  height: 100%;
   color: ${(props) => {
     return props.theme.text.primary;
   }};
@@ -56,69 +57,23 @@ const Section = styled(Grid)`
   }
 `;
 
-// const areas = {
-//   one: `a`,
-//   two: `b`,
-// };
-
 const Body = styled(Grid)`
-  /* flex: auto; */
-  /* grid-template-columns: auto; */
-  grid-gap: ${(props) => {
-    return props.gap || "1rem";
-  }};
-  grid-template-columns: ${(props) => {
-    return props.columns || "initial";
-  }};
-  grid-auto-columns: ${(props) => {
-    return props.emptyColumns || "";
-  }};
-  /* grid-auto-rows: ${(props) => {
-    return props.emptyRows || "";
-  }}; */
-  /* grid-template-rows: ${(props) => {
-    return props.auto || "auto";
-  }}; */
-  /* grid-auto-flow: row; */
-  /* grid-template-areas:
-    "a b c d e"
-    "a b c d e"
-  ; */
   grid-template-areas: ${(props) => {
     return props.setTemplate || "";
   }};
-  & > {
-    :nth-child(1) {
-      /* grid-area: a; */
-      grid-area: ${(props) => {
-    return props.itemA || `a`;
+  grid-template-columns: ${(props) => {
+    return props.setColumns || "initial";
   }};
-    }
-    :nth-child(2) {
-      /* grid-area: b; */
-      grid-area: ${(props) => {
-    return props.itemB || `b`;
+  grid-column-gap: ${(props) => {
+    return props.setColumnGap || "0";
   }};
-    }
-    :nth-child(3) {
-      /* grid-area: c; */
-      grid-area: ${(props) => {
-    return props.itemC || `c`;
+  grid-template-rows: ${(props) => {
+    return props.setRows || "initial";
   }};
-    }
-    :nth-child(4) {
-      /* grid-area: d; */
-      grid-area: ${(props) => {
-    return props.itemD || `d`;
+  grid-row-gap: ${(props) => {
+    return props.setRowGap || "0";
   }};
-    }
-    :nth-child(5) {
-      /* grid-area: e; */
-      grid-area: ${(props) => {
-    return props.itemE || `e`;
-  }};
-    }
-  }
+  height: inherit;
 `;
 
 function PageSection({
@@ -169,33 +124,60 @@ ContentSection.defaultProps = {
   title: null,
 };
 
-// const templateHash = {
-//   A:
-//     `
-//     "a b c d e"
-//     "a b c d e"
-//   `,
-// };
 
+const Region = styled.section`
+  grid-area: ${(props) => {
+    return props.gridArea || "";
+  }};
+  height: inherit;
+  padding: ${(props) => {
+    return props.setPadding || "";
+  }};
+  overflow: auto;
+  box-shadow: ${(props) => {
+    return props.hasShadow ? props.theme.shadows.dropShadow2 : null;
+  }};
+  &:empty {
+    &:before {
+      ${PlaceholderText}
+      background-color: pink;
+      height: inherit;
+      content: "${(props) => {
+    return props.placeholder || "";
+  }}";
+    }
+  }
+`;
 function Page({
-  children, classname, columns, gap, header, id, rows, template,
+  A, B, C, children, classname, columns, gap, header, id, rows, template, placeholder,
 }) {
-  // const templateValue = templateHash[template && template.toLowerCase()] || null;
+  let hasShadow;
   let setTemplate;
-  // let itemA;
-  // let itemB;
-  let emptyColumns;
-  let emptyRows;
+  let setColumns;
+  let setColumnGap;
+  let setRows;
+  let setRowGap;
   switch (template) {
-    default:
+    case "01":
       setTemplate = `
-        "a b . c d . e"
-        "a b . c d . e"
+        "A B C"
       `;
-      emptyColumns = "minmax(auto, 20%)";
-      // emptyRows = "minmax(auto, 10rem)";
-      // itemA = null;
-      // itemB = null;
+      setColumns = "15% 1fr 25%";
+      setRows = "auto";
+      break;
+    case "02":
+      setTemplate = `
+        "header header header"
+        "A B C"
+        "A B C"
+      `;
+      setColumns = "10rem 1fr 20rem";
+      // setColumnGap = "0";
+      setRows = "auto 1fr";
+      // setRowGap = "0";
+      // hasShadow = true;
+      break;
+    default:
       break;
   }
   return (
@@ -203,32 +185,51 @@ function Page({
       id={id}
       classname={classname}
       columns="1"
+      hasShadow={hasShadow}
     >
-      {header ? (
-        <Section columns="1" gap="xs">
-          {header.title ? (
-            <Title size="xl" weight="bold" text={header.title} />
-          ) : null}
-          {header.subtitle ? (
-            <Text weight="light" text={header.subtitle} />
-          ) : null}
-          {header.description ? (
-            <Text size="sm" weight="bold" text={header.description} />
-          ) : null}
-        </Section>
-      ) : null}
       <Body
-        columns={columns}
-        emptyColumns={emptyColumns}
-        emptyRows={emptyRows}
-        gap={gap}
-        // itemA={itemA}
-        // itemB={itemB}
-        rows={rows}
+        setColumnGap={setColumnGap}
+        setColumns={setColumns}
+        setRowGap={setRowGap}
+        setRows={setRows}
         setTemplate={setTemplate}
         template={template}
       >
-        {children}
+        {!children ? (
+          <React.Fragment>
+            {header ? (
+              <Region
+                id={header.id || "Header"}
+                placeholder="Header"
+                gridArea="header"
+              >
+                {header.content}
+              </Region>
+            ) : null}
+            <Region
+              id={A.id || "A"}
+              placeholder="A"
+              gridArea="A"
+            >
+              {A.content}
+            </Region>
+            <Region
+              id={B.id}
+              placeholder="B"
+              gridArea="B"
+            >
+              {B.content}
+            </Region>
+            <Region
+              id={C.id}
+              placeholder="C"
+              gridArea="C"
+            >
+              {C.content}
+            </Region>
+          </React.Fragment>
+        ) : null}
+        {!children ? null : children}
       </Body>
     </PageWrapper>
   );
