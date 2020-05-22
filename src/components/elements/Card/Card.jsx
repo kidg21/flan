@@ -6,7 +6,6 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 import { Spacer } from "helpers/Display.jsx";
-import { Darken } from "Variables";
 import Grid from "layout/Grid";
 import Bar from "layout/Bar";
 import Text, { Title } from "base/Typography";
@@ -90,7 +89,6 @@ const CardAudio = styled.audio`
 const CardWrapper = styled.div`
   position: relative;
   display: flex;
-  height: inherit;
   cursor: ${(props) => {
     return props.onClick ? "pointer" : "";
   }};
