@@ -1,3 +1,4 @@
+/* eslint-disable complexity */
 /* eslint-disable linebreak-style */
 import React from "react";
 import PropTypes from "prop-types";
@@ -18,13 +19,13 @@ const PageWrapper = styled(Grid)`
     return props.setColumns || "initial";
   }};
   grid-column-gap: ${(props) => {
-    return props.setColumnGap || props.hasShadow ? (props.setColumnGap || "1rem") : "0";
+    return props.setColumnGap || props.displayCards ? (props.setColumnGap || "1rem") : "0";
   }};
   grid-template-rows: ${(props) => {
     return props.setRows || "initial";
   }};
   grid-row-gap: ${(props) => {
-    return props.setRowGap || props.hasShadow ? (props.setRowGap || "1rem") : "0";
+    return props.setRowGap || props.displayCards ? (props.setRowGap || "1rem") : "0";
   }};
   color: ${(props) => {
     return props.theme.text.primary;
@@ -33,7 +34,7 @@ const PageWrapper = styled(Grid)`
     return props.theme.background.default;
   }};
   padding: ${(props) => {
-    return props.setPadding || props.hasShadow ? (props.setPadding || "1rem") : "";
+    return props.setPadding || props.displayCards ? (props.setPadding || "1rem") : "";
   }};
   z-index: 0;
   /* Prototype Content - displays when empty */
@@ -126,17 +127,20 @@ const Region = styled.section`
   height: inherit;
   overflow: auto;
     border-radius: ${(props) => {
-    return props.hasShadow ? props.theme.borders.radiusMin : null;
+    return props.displayCards ? props.theme.borders.radiusMin : null;
   }};
   box-shadow: ${(props) => {
-    return props.hasShadow ? props.theme.shadows.dropShadow2 : null;
+    return props.displayCards ? props.theme.shadows.dropShadow2 : null;
   }};
   &:empty {
     &:before {
       ${PlaceholderText}
+      color: deeppink;
       background-color: pink;
-      border: 1px solid deeppink;
+      border: 0.25rem solid deeppink;
       height: inherit;
+      font-size: 2em;
+      font-weight: bold;
       content: "${(props) => {
     return props.placeholder || "";
   }}";
@@ -145,9 +149,8 @@ const Region = styled.section`
 `;
 
 function Page({
-  A, B, C, children, classname, columns, gap, header, id, rows, template, placeholder,
+  A, B, C, children, classname, D, displayCards, E, id, template,
 }) {
-  let hasShadow;
   let setPadding;
   let setHeight;
   let setTemplate;
@@ -155,32 +158,28 @@ function Page({
   let setColumnGap;
   let setRows;
   let setRowGap;
-  if (hasShadow) {
+  if (displayCards) {
     setPadding = "1rem";
   }
   switch (template) {
     case "01":
       setTemplate = `
-        "header header"
-        "B C"
-        "B A"
+      "B C"
+      "B A"
+      "D D"
       `;
       setColumns = "1fr 30rem";
       setRows = "min-content min-content auto";
       // setRows = "auto auto auto";
-      hasShadow = true;
       break;
     case "02":
       setTemplate = `
-        "header header header"
-        "A B C"
-        "A B C"
+      "A B C"
+      "A B C"
+      "D D D"
       `;
       setColumns = "10rem 1fr 20rem";
-      // setColumnGap = "10rem";
       setRows = "auto 1fr";
-      // setRowGap = "10rem";
-      // hasShadow = true;
       break;
     default:
       setHeight = "auto";
@@ -191,7 +190,7 @@ function Page({
   return (
     <PageWrapper
       classname={classname}
-      hasShadow={hasShadow}
+      displayCards={displayCards}
       id={id}
       setColumnGap={setColumnGap}
       setColumns={setColumns}
@@ -202,64 +201,95 @@ function Page({
       setTemplate={setTemplate}
       template={template}
     >
-      {header || A || B || C ? (
+      {A || B || C || D || E ? (
         <React.Fragment>
-          {header ? (
-            <Region
-              id={header.id || "Header"}
-              placeholder="Header"
-              gridArea="header"
-              hasShadow={hasShadow}
-            >
-              {header.content}
-            </Region>
-          ) : null}
           <Region
             id={A.id || "A"}
             placeholder="A"
-            gridArea="A"
-            hasShadow={hasShadow}
+            gridArea={setTemplate ? "A" : ""}
+            displayCards={displayCards}
           >
             {A.content}
           </Region>
           <Region
             id={B.id}
             placeholder="B"
-            gridArea="B"
-            hasShadow={hasShadow}
+            gridArea={setTemplate ? "B" : ""}
+            displayCards={displayCards}
           >
             {B.content}
           </Region>
           <Region
             id={C.id}
             placeholder="C"
-            gridArea="C"
-            hasShadow={hasShadow}
+            gridArea={setTemplate ? "C" : ""}
+            displayCards={displayCards}
           >
             {C.content}
           </Region>
+          {D ? (
+            <Region
+              id={D.id || "D"}
+              placeholder="D"
+              gridArea={setTemplate ? "D" : ""}
+              displayCards={displayCards}
+            >
+              {D.content}
+            </Region>
+          ) : null}
+          {E ? (
+            <Region
+              id={D.id || "E"}
+              placeholder="E"
+              gridArea={setTemplate ? "E" : ""}
+              displayCards={displayCards}
+            >
+              {D.content}
+            </Region>
+          ) : null}
         </React.Fragment>
       ) : children}
     </PageWrapper>
   );
 }
 Page.propTypes = {
+  A: PropTypes.shape({
+    id: PropTypes.string,
+    content: PropTypes.string,
+  }),
+  B: PropTypes.shape({
+    id: PropTypes.string,
+    content: PropTypes.string,
+  }),
+  C: PropTypes.shape({
+    id: PropTypes.string,
+    content: PropTypes.string,
+  }),
   children: PropTypes.node,
   classname: PropTypes.string,
-  columns: PropTypes.number,
-  header: PropTypes.shape({
-    description: PropTypes.string,
-    subtitle: PropTypes.string,
-    title: PropTypes.string,
+  D: PropTypes.shape({
+    id: PropTypes.string,
+    content: PropTypes.string,
+  }),
+  displayCards: PropTypes.bool,
+  E: PropTypes.shape({
+    id: PropTypes.string,
+    content: PropTypes.string,
   }),
   id: PropTypes.string,
+  template: PropTypes.string,
 };
 Page.defaultProps = {
+  A: null,
+  B: null,
+  C: null,
   children: null,
   classname: null,
-  columns: null,
-  header: null,
+  D: null,
+  displayCards: false,
+  E: null,
   id: null,
+  template: null,
 };
 
 export { Page as default, PageSection, ContentSection };
