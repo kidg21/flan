@@ -47,30 +47,6 @@ const list = (
   </React.Fragment>
 );
 
-// Knob Values
-const knobGroups = ["Page"];
-const templates = {
-  "Default": "",
-  "01": "01",
-  "02": "02",
-};
-const content = {
-  None: "",
-  Map: map,
-  List: list,
-};
-
-// const options = [
-//   "",
-//   map,
-//   list,
-// ];
-
-// const options = [
-//   { 0: "" },
-//   { 1: map },
-// ];
-
 export default {
   title: "Layout|Page/Tests",
   component: Page,
@@ -81,59 +57,60 @@ export default {
   decorators: [FullScreen, withKnobs],
 };
 
-const buttonIcons = [{ content: "" }, { content: map }];
+// Knob Values
+const knobGroups = ["Page"];
+const templates = {
+  "None": "",
+  "A-B-C-D": "01",
+  "A-B-C-D-E": "02",
+};
+
+const index = [
+  "",
+  map,
+  list,
+];
+
+const content = {
+  None: null,
+  Map: 1,
+  List: 2,
+};
 
 export const Knobs = () => {
-  const templateID = options("Template ID", templates, "", { display: "radio" }, knobGroups[0]);
-
-  // const contentA = select("A", options, "", knobGroups[0]);
-  const icon = select("icon", buttonIcons, null, knobGroups[0]);
-
-
+  const templateID = options("Template", templates, "", { display: "radio" }, knobGroups[0]);
+  const contentA = select("A", content, content[0], knobGroups[0]);
+  const contentB = select("B", content, content[0], knobGroups[0]);
+  const contentC = select("C", content, content[0], knobGroups[0]);
+  const contentD = select("D", content, content[0], knobGroups[0]);
+  const contentE = select("E", content, content[0], knobGroups[0]);
   const cardDisplay = boolean("Display Cards", false, knobGroups[0]);
   return (
     <Page
       id="Knobs"
       template={templateID}
+      A={
+        boolean("Include A", true, knobGroups[0])
+        &&
+        { id: "A", content: index[parseFloat(contentA)] }}
+      B={
+        boolean("Include B", true, knobGroups[0])
+        &&
+        { id: "B", content: index[parseFloat(contentB)] }}
+      C={
+        boolean("Include C", true, knobGroups[0])
+        &&
+        { id: "C", content: index[parseFloat(contentC)] }}
+      D={
+        boolean("Include D", true, knobGroups[0])
+        &&
+        { id: "D", content: index[parseFloat(contentD)] }}
+      E={
+        boolean("Include E", true, knobGroups[0])
+        &&
+        { id: "E", content: index[parseFloat(contentE)] }
+      }
       displayCards={cardDisplay}
-      A={{
-        id: "Left",
-        content: icon,
-        // content: [icon],
-      }}
-      B={{ id: "Main", content: map }}
-      C={{
-        id: "Right",
-        content: (
-          <React.Fragment>
-            <List title="1: Confirm" isInteractive>
-              <ListItem
-                title="Verify Site"
-              />
-            </List>
-            <List title="2: Review" isInteractive>
-              <ListItem
-                title="Assessment"
-              />
-              <ListItem
-                title="Zoning"
-              />
-              <ListItem
-                title="Demographics"
-              />
-              <ListItem
-                title="Maps"
-              />
-            </List>
-            <List title="3: Export" isInteractive>
-              <ListItem
-                title="View Report(s)"
-              />
-            </List>
-          </React.Fragment>
-        ),
-      }}
-      D={{ id: "D", content: map }}
     />
   );
 };

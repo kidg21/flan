@@ -118,7 +118,6 @@ ContentSection.defaultProps = {
   title: null,
 };
 
-
 const Region = styled.section`
   position: relative;
   grid-area: ${(props) => {
@@ -141,9 +140,9 @@ const Region = styled.section`
       height: inherit;
       font-size: 2em;
       font-weight: bold;
-      content: "${(props) => {
+      content: '${(props) => {
     return props.placeholder || "";
-  }}";
+  }}';
     }
   }
 `;
@@ -175,11 +174,11 @@ function Page({
     case "02":
       setTemplate = `
       "A B C"
-      "A B C"
       "D D D"
+      "E E E"
       `;
       setColumns = "10rem 1fr 20rem";
-      setRows = "auto 1fr";
+      setRows = "auto 1fr auto";
       break;
     default:
       setHeight = "auto";
@@ -203,35 +202,41 @@ function Page({
     >
       {A || B || C || D || E ? (
         <React.Fragment>
-          <Region
-            id={A.id || "A"}
-            placeholder="A"
-            gridArea={setTemplate ? "A" : ""}
-            displayCards={displayCards}
-          >
-            {A.content}
-          </Region>
-          <Region
-            id={B.id}
-            placeholder="B"
-            gridArea={setTemplate ? "B" : ""}
-            displayCards={displayCards}
-          >
-            {B.content}
-          </Region>
-          <Region
-            id={C.id}
-            placeholder="C"
-            gridArea={setTemplate ? "C" : ""}
-            displayCards={displayCards}
-          >
-            {C.content}
-          </Region>
+          {A ? (
+            <Region
+              id={A.id || "A"}
+              placeholder="A"
+              gridArea={template ? "A" : ""}
+              displayCards={displayCards}
+            >
+              {A.content}
+            </Region>
+          ) : null}
+          {B ? (
+            <Region
+              id={B.id || "B"}
+              placeholder="B"
+              gridArea={template ? "B" : ""}
+              displayCards={displayCards}
+            >
+              {B.content}
+            </Region>
+          ) : null}
+          {C ? (
+            <Region
+              id={C.id || "C"}
+              placeholder="C"
+              gridArea={template ? "C" : ""}
+              displayCards={displayCards}
+            >
+              {C.content}
+            </Region>
+          ) : null}
           {D ? (
             <Region
               id={D.id || "D"}
               placeholder="D"
-              gridArea={setTemplate ? "D" : ""}
+              gridArea={template ? "D" : ""}
               displayCards={displayCards}
             >
               {D.content}
@@ -239,12 +244,12 @@ function Page({
           ) : null}
           {E ? (
             <Region
-              id={D.id || "E"}
+              id={E.id || "E"}
               placeholder="E"
-              gridArea={setTemplate ? "E" : ""}
+              gridArea={template ? "E" : null}
               displayCards={displayCards}
             >
-              {D.content}
+              {E.content}
             </Region>
           ) : null}
         </React.Fragment>
