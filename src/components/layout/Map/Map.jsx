@@ -57,13 +57,13 @@ function Mapbox({
 Mapbox.propTypes = {
   center: PropTypes.node,
   id: PropTypes.string,
-  /** Options: 'streets', 'dark', 'custom' */
+  /** Options: 'streets', 'outdoors', 'light', 'dark', 'satellite', 'satellite-streets', 'custom' */
   map: PropTypes.string,
 };
 Mapbox.defaultProps = {
   center: [-74.006, 40.7128],
   id: null,
-  map: null,
+  map: "custom",
 };
 
 export default Mapbox;
