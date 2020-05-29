@@ -2,50 +2,9 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { FullScreen } from "helpers/Display";
-import Page, { PageSection } from "layout/Page";
-import Panel from "layout/Panel";
-import Bar from "layout/Bar";
+import { MockList, MockMap } from "helpers/Mocks";
+import Page from "layout/Page";
 import Text, { Title } from "base/Typography";
-import List, { ListItem } from "blocks/List";
-import Card, { CardGrid } from "elements/Card";
-
-const map = (
-  <Mapbox
-    map=""
-  // center={[-72.006, 42.7128]}
-  // options={{ zoom: 0 }}
-  // zoom="0"
-  />
-);
-
-const list = (
-  <React.Fragment>
-    <List title="1: Confirm" isInteractive>
-      <ListItem
-        title="Verify Site"
-      />
-    </List>
-    <List title="2: Review" isInteractive>
-      <ListItem
-        title="Assessment"
-      />
-      <ListItem
-        title="Zoning"
-      />
-      <ListItem
-        title="Demographics"
-      />
-      <ListItem
-        title="Maps"
-      />
-    </List>
-    <List title="3: Export" isInteractive>
-      <ListItem
-        title="View Report(s)"
-      />
-    </List>
-  </React.Fragment>
-);
 
 export default {
   title: "Layout|Page/Tests",
@@ -61,14 +20,17 @@ export default {
 const knobGroups = ["Page"];
 const templates = {
   "None": "",
-  "A-B-C-D": "01",
-  "A-B-C-D-E": "02",
+  "A": "01",
+  "A-B": "02",
+  "A-B-C": "03",
+  "A-B-C-D": "04",
+  "A-B-C-D-E": "05",
 };
 
 const index = [
   "",
-  map,
-  list,
+  <MockMap />,
+  <MockList />,
 ];
 
 const content = {
@@ -84,7 +46,7 @@ export const Knobs = () => {
   const contentC = select("C", content, content[0], knobGroups[0]);
   const contentD = select("D", content, content[0], knobGroups[0]);
   const contentE = select("E", content, content[0], knobGroups[0]);
-  const cardDisplay = boolean("Display Cards", false, knobGroups[0]);
+  const cardState = boolean("Card State", false, knobGroups[0]);
   return (
     <Page
       id="Knobs"
@@ -110,7 +72,7 @@ export const Knobs = () => {
         &&
         { id: "E", content: index[parseFloat(contentE)] }
       }
-      displayCards={cardDisplay}
+      stateCards={cardState}
     />
   );
 };
@@ -129,119 +91,23 @@ storiesOf("Layout|Page", module)
     return (
       <Page
         id="Page Regions"
-        template="01"
-        displayCards={false}
+        template="04"
+        stateCards
         A={{
           id: "A",
-          content: map,
-          // content: (
-          //   <React.Fragment>
-          //     <List title="1: Confirm" isInteractive>
-          //       <ListItem
-          //         title="Verify Site"
-          //       />
-          //     </List>
-          //     <List title="2: Review" isInteractive>
-          //       <ListItem
-          //         title="Assessment"
-          //       />
-          //       <ListItem
-          //         title="Zoning"
-          //       />
-          //       <ListItem
-          //         title="Demographics"
-          //       />
-          //       <ListItem
-          //         title="Maps"
-          //       />
-          //     </List>
-          //     <List title="3: Export" isInteractive>
-          //       <ListItem
-          //         title="View Report(s)"
-          //       />
-          //     </List>
-          //   </React.Fragment>
-          // ),
+          content: <MockMap />,
         }}
         B={{
           id: "B",
-          content: map,
-          // content: (
-          //   <Panel
-          //     id="Panel"
-          //     // offcanvas="left"
-          //     D={
-          //       <Bar
-          //         contentAlign="center"
-          //         padding="2x"
-          //         center={{
-          //           content: <Title text="D" />,
-          //           align: "center",
-          //         }}
-          //       />}
-          //     footer={
-          //       <Bar
-          //         contentAlign="center"
-          //         padding="2x"
-          //         center={{
-          //           content: <Title text="Footer" />,
-          //           align: "center",
-          //         }}
-          //       />}
-          //   >
-          //     <CardGrid>
-          //       <Card />
-          //       <Card />
-          //       <Card />
-          //       <Card />
-          //       <Card />
-          //       <Card />
-          //       <Card />
-          //       <Card />
-          //       <Card />
-          //       <Card />
-          //       <Card />
-          //       <Card />
-          //       <Card />
-          //       <Card />
-          //     </CardGrid>
-          //   </Panel>
-          // ),
+          content: <MockMap />,
         }}
         C={{
           id: "C",
-          content: map,
-          // content: (
-          //   <React.Fragment>
-          //     <Card
-          //       media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" // Image
-          //       mediaDesc="Media Description"
-          //       title="Best Place Ever"
-          //       description="I Could Tell You More, But..."
-          //       icon="bookmark_solid"
-          //       shadow="0"
-          //     />
-          //   </React.Fragment>
-          // ),
+          content: <MockMap />,
         }}
         D={{
           id: "D",
-          content: map,
-          // content: (
-          //   <Bar
-          //     contentAlign="center"
-          //     padding="2x"
-          //     left={{
-          //       content: (
-          //         <React.Fragment>
-          //           <Title text="My Latest Musings" size="xl" weight="bold" />
-          //           <Text text="My Latest Musings" weight="light" />
-          //           <Text text="Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication" size="sm" weight="bold" />
-          //         </React.Fragment>
-          //       ),
-          //     }}
-          //   />
-          // ),
+          content: <MockMap />,
         }}
       />
     );

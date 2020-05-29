@@ -19,13 +19,13 @@ const PageWrapper = styled(Grid)`
     return props.setColumns || "initial";
   }};
   grid-column-gap: ${(props) => {
-    return props.setColumnGap || props.displayCards ? (props.setColumnGap || "1rem") : "0";
+    return props.setColumnGap || props.stateCards ? (props.setColumnGap || "1rem") : "0";
   }};
   grid-template-rows: ${(props) => {
     return props.setRows || "initial";
   }};
   grid-row-gap: ${(props) => {
-    return props.setRowGap || props.displayCards ? (props.setRowGap || "1rem") : "0";
+    return props.setRowGap || props.stateCards ? (props.setRowGap || "1rem") : "0";
   }};
   color: ${(props) => {
     return props.theme.text.primary;
@@ -34,7 +34,7 @@ const PageWrapper = styled(Grid)`
     return props.theme.background.default;
   }};
   padding: ${(props) => {
-    return props.setPadding || props.displayCards ? (props.setPadding || "1rem") : "";
+    return props.setPadding || props.stateCards ? (props.setPadding || "1rem") : "";
   }};
   z-index: 0;
   /* Prototype Content - displays when empty */
@@ -44,7 +44,7 @@ const PageWrapper = styled(Grid)`
       ${PlaceholderText}
       content: "{ Page }";
     }
-    &:after {
+    /* &:after {
       ${PlaceholderText}
       padding: 0;
       text-align: initial;
@@ -56,7 +56,7 @@ const PageWrapper = styled(Grid)`
       Every day I learn. Trees live in your fan brush, but you have to scare them out. You can do it. A fan brush is a fantastic piece of equipment. Use it. Make friends with it.
       Little trees and bushes grow however makes them happy. Just let your mind wander and enjoy. This should make you happy. You don't have to spend all your time thinking about what you're doing, you just let it happen. Let's make a happy little mountain now. If I paint something, I don't want to have to explain what it is.
       It all happens automatically. You can create beautiful things - but you have to see them in your mind first. There we are. Nature is so fantastic, enjoy it. Let it make you happy. Let's put some highlights on these little trees. The sun wouldn't forget them. With practice comes confidence.";
-    }
+    } */
   }
 `;
 
@@ -126,10 +126,10 @@ const Region = styled.section`
   height: inherit;
   overflow: auto;
     border-radius: ${(props) => {
-    return props.displayCards ? props.theme.borders.radiusMin : null;
+    return props.stateCards ? props.theme.borders.radiusMin : null;
   }};
   box-shadow: ${(props) => {
-    return props.displayCards ? props.theme.shadows.dropShadow2 : null;
+    return props.stateCards ? props.theme.shadows.dropShadow2 : null;
   }};
   &:empty {
     &:before {
@@ -148,7 +148,7 @@ const Region = styled.section`
 `;
 
 function Page({
-  A, B, C, children, classname, D, displayCards, E, id, template,
+  A, B, C, children, classname, D, stateCards, E, id, template,
 }) {
   let setPadding;
   let setHeight;
@@ -157,21 +157,44 @@ function Page({
   let setColumnGap;
   let setRows;
   let setRowGap;
-  if (displayCards) {
+  if (stateCards) {
     setPadding = "1rem";
   }
   switch (template) {
-    case "01":
+    case "01": // A
       setTemplate = `
-      "B C"
-      "B A"
-      "D D"
+      "A"
       `;
-      setColumns = "1fr 30rem";
-      setRows = "min-content min-content auto";
-      // setRows = "auto auto auto";
+      setColumns = "1fr";
+      setRows = "auto";
       break;
-    case "02":
+    case "02": // A B
+      setTemplate = `
+      "A B"
+      "A ."
+      `;
+      setColumns = "1fr 1fr";
+      setRows = "auto auto";
+      break;
+    case "03": // A B C
+      setTemplate = `
+      ". . A . ."
+      ". B B B ."
+      "C C C C C"
+      `;
+      setColumns = "1fr 1fr 1fr 1fr 1fr";
+      setRows = "1fr 1fr 1fr";
+      break;
+    case "04": // A B C D
+      setTemplate = `
+      "A A C"
+      "D . C"
+      "B B B"
+      `;
+      setColumns = "1fr 1fr 30rem";
+      setRows = "30rem 1fr 1fr";
+      break;
+    case "05": // A B C D E
       setTemplate = `
       "A B C"
       "D D D"
@@ -189,7 +212,7 @@ function Page({
   return (
     <PageWrapper
       classname={classname}
-      displayCards={displayCards}
+      stateCards={stateCards}
       id={id}
       setColumnGap={setColumnGap}
       setColumns={setColumns}
@@ -207,7 +230,7 @@ function Page({
               id={A.id || "A"}
               placeholder="A"
               gridArea={template ? "A" : ""}
-              displayCards={displayCards}
+              stateCards={stateCards}
             >
               {A.content}
             </Region>
@@ -217,7 +240,7 @@ function Page({
               id={B.id || "B"}
               placeholder="B"
               gridArea={template ? "B" : ""}
-              displayCards={displayCards}
+              stateCards={stateCards}
             >
               {B.content}
             </Region>
@@ -227,7 +250,7 @@ function Page({
               id={C.id || "C"}
               placeholder="C"
               gridArea={template ? "C" : ""}
-              displayCards={displayCards}
+              stateCards={stateCards}
             >
               {C.content}
             </Region>
@@ -237,7 +260,7 @@ function Page({
               id={D.id || "D"}
               placeholder="D"
               gridArea={template ? "D" : ""}
-              displayCards={displayCards}
+              stateCards={stateCards}
             >
               {D.content}
             </Region>
@@ -247,7 +270,7 @@ function Page({
               id={E.id || "E"}
               placeholder="E"
               gridArea={template ? "E" : null}
-              displayCards={displayCards}
+              stateCards={stateCards}
             >
               {E.content}
             </Region>
@@ -276,7 +299,7 @@ Page.propTypes = {
     id: PropTypes.string,
     content: PropTypes.string,
   }),
-  displayCards: PropTypes.bool,
+  stateCards: PropTypes.bool,
   E: PropTypes.shape({
     id: PropTypes.string,
     content: PropTypes.string,
@@ -291,7 +314,7 @@ Page.defaultProps = {
   children: null,
   classname: null,
   D: null,
-  displayCards: false,
+  stateCards: false,
   E: null,
   id: null,
   template: null,
