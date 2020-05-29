@@ -83,6 +83,10 @@ function InputBlock({
     selected: null,
   });
 
+  // this is basically for when we programmatically want to change what values are in the input
+  // We couldn't do it before because this component has its own internal state, so we should just
+  // update the state if its different. We don't want to do it during render cycle because you shouldn't
+  // trigger a rerender during a render.
   useEffect(() => {
     textInputs.forEach((input) => {
       if (state.input[input.id] !== input.value) {
@@ -91,7 +95,7 @@ function InputBlock({
         setState(newState);
       }
     });
-  });
+  }, [textInputs]);
 
   function handleChange(e) {
     const newState = {
