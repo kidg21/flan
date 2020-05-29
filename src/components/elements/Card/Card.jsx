@@ -125,6 +125,10 @@ const CardWrapper = styled.div`
 `;
 
 const CardGridWrapper = styled(Grid)`
+/** TODO: Prevent Cards from being cropped in norrow containers */
+  /* grid-template-columns: repeat(auto-fill,minmax(auto, 14rem)); */
+  /* justify-content: space-between; */
+  padding: 1rem;
   ${CardWrapper} {
     height: 100%;
     border-radius: ${(props) => {
