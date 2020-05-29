@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable complexity */
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
@@ -74,12 +74,23 @@ function InputBlock({
   textInputs,
   warning,
 }) {
+
   const [state, setState] = useState({
     input: textInputs.reduce((inputMap, input) => {
       inputMap[input.id] = input.value;
       return inputMap;
     }, {}),
     selected: null,
+  });
+
+  useEffect(() => {
+    textInputs.forEach((input) => {
+      if (state.input[input.id] !== input.value) {
+        const newState = { ...state };
+        newState.input[input.id] = input.value;
+        setState(newState);
+      }
+    });
   });
 
   function handleChange(e) {
