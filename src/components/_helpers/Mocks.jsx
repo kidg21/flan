@@ -28,8 +28,8 @@ MockMap.defaultProps = {
 function MockHeader() {
   return (
     <Card>
-      <CardSection>
-        <Title size="" text="A Title" weight="bold" />
+      <CardSection padding="" variant="info">
+        <Title size="xl" text="This Is A Title" weight="bold" />
         <Text text="The Description Goes Here" />
       </CardSection>
     </Card>

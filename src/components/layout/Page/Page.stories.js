@@ -110,7 +110,7 @@ storiesOf("Layout|Page", module)
         }}
         B={{
           id: "B",
-          content: <MockMap />,
+          content: <MockHeader />,
         }}
         C={{
           id: "C",
@@ -118,6 +118,10 @@ storiesOf("Layout|Page", module)
         }}
         D={{
           id: "D",
+          content: <MockMap />,
+        }}
+        E={{
+          id: "E",
           content: <MockFooter />,
         }}
       />

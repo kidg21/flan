@@ -199,7 +199,7 @@ storiesOf("Templates/02_Applications", module)
 
         const homeView = (
           <Page
-            id="Page"
+            id="Page Regions"
             template="06"
             // stateCards
             A={{
@@ -208,7 +208,7 @@ storiesOf("Templates/02_Applications", module)
             }}
             B={{
               id: "B",
-              content: <MockMap />,
+              content: <MockHeader />,
             }}
             C={{
               id: "C",
@@ -216,6 +216,10 @@ storiesOf("Templates/02_Applications", module)
             }}
             D={{
               id: "D",
+              content: <MockMap />,
+            }}
+            E={{
+              id: "E",
               content: <MockFooter />,
             }}
           />
