@@ -26,6 +26,7 @@ import SelectMenu from "atoms/SelectMenu";
 import Image from "atoms/Image";
 import LightBoxLogo from "images/LightBoxLogo.png";
 import LightBoxIcon from "images/LightBoxIconLogo.png";
+import { MockHeader, MockFooter, MockMap, MockList, MockTable, MockCardGrid } from "helpers/Mocks";
 
 const map = (
   <Mapbox />
@@ -198,86 +199,24 @@ storiesOf("Templates/02_Applications", module)
 
         const homeView = (
           <Page
-            id="A Page"
-            header={{
-              title: "My Latest Musings",
-              subtitle: "Totally Worth The Read...Enjoy!",
-              description: "Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.",
-            }}
-            template="02"
+            id="Page"
+            template="06"
+            // stateCards
             A={{
               id: "A",
-              content: (
-                <React.Fragment>
-                  <List title="1: Confirm" isInteractive>
-                    <ListItem
-                      title="Verify Site"
-                    />
-                  </List>
-                  <List title="2: Review" isInteractive>
-                    <ListItem
-                      title="Assessment"
-                    />
-                    <ListItem
-                      title="Zoning"
-                    />
-                    <ListItem
-                      title="Demographics"
-                    />
-                    <ListItem
-                      title="Maps"
-                    />
-                  </List>
-                  <List title="3: Export" isInteractive>
-                    <ListItem
-                      title="View Report(s)"
-                    />
-                  </List>
-                  <List title="1: Confirm" isInteractive>
-                    <ListItem
-                      title="Verify Site"
-                    />
-                  </List>
-                  <List title="2: Review" isInteractive>
-                    <ListItem
-                      title="Assessment"
-                    />
-                    <ListItem
-                      title="Zoning"
-                    />
-                    <ListItem
-                      title="Demographics"
-                    />
-                    <ListItem
-                      title="Maps"
-                    />
-                  </List>
-                  <List title="3: Export" isInteractive>
-                    <ListItem
-                      title="View Report(s)"
-                    />
-                  </List>
-                </React.Fragment>
-              ),
+              content: <MockList />,
             }}
             B={{
               id: "B",
-              content: map,
+              content: <MockMap />,
             }}
             C={{
               id: "C",
-              content: (
-                <React.Fragment>
-                  <Card
-                    media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" // Image
-                    mediaDesc="Media Description"
-                    title="Best Place Ever"
-                    description="I Could Tell You More, But..."
-                    icon="bookmark_solid"
-                    shadow="0"
-                  />
-                </React.Fragment>
-              ),
+              content: <MockCardGrid />,
+            }}
+            D={{
+              id: "D",
+              content: <MockFooter />,
             }}
           />
         );

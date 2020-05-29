@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { FullScreen } from "helpers/Display";
-import { MockList, MockMap } from "helpers/Mocks";
+import { MockHeader, MockFooter, MockMap, MockList, MockTable, MockCardGrid } from "helpers/Mocks";
 import Page from "layout/Page";
 import Text, { Title } from "base/Typography";
 
@@ -25,22 +25,33 @@ const templates = {
   "A-B-C": "03",
   "A-B-C-D": "04",
   "A-B-C-D-E": "05",
+  "'Appraisal Research'": "06",
 };
 
 const index = [
   "",
+  <MockHeader />,
+  <MockFooter />,
   <MockMap />,
+  <MockMap map="satellite" />,
+  <MockCardGrid />,
   <MockList />,
+  <MockTable />,
 ];
 
 const content = {
-  None: null,
-  Map: 1,
-  List: 2,
+  "None": null,
+  "Header": 1,
+  "Footer": 2,
+  "Map": 3,
+  "Map (satellite)": 4,
+  "Card Grid": 5,
+  "List": 6,
+  "Table": 7,
 };
 
 export const Knobs = () => {
-  const templateID = options("Template", templates, "", { display: "radio" }, knobGroups[0]);
+  const templateID = options("Template", templates, "", { display: "select" }, knobGroups[0]);
   const contentA = select("A", content, content[0], knobGroups[0]);
   const contentB = select("B", content, content[0], knobGroups[0]);
   const contentC = select("C", content, content[0], knobGroups[0]);
@@ -91,11 +102,11 @@ storiesOf("Layout|Page", module)
     return (
       <Page
         id="Page Regions"
-        template="04"
-        stateCards
+        template="06"
+        // stateCards
         A={{
           id: "A",
-          content: <MockMap />,
+          content: <MockList />,
         }}
         B={{
           id: "B",
@@ -103,11 +114,11 @@ storiesOf("Layout|Page", module)
         }}
         C={{
           id: "C",
-          content: <MockMap />,
+          content: <MockCardGrid />,
         }}
         D={{
           id: "D",
-          content: <MockMap />,
+          content: <MockFooter />,
         }}
       />
     );
