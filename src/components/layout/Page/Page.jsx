@@ -205,14 +205,13 @@ function Page({
       break;
     case "06": // 'Appraisal Research'
       setTemplate = `
-      "B B B"
-      "A D C"
+      "A B B"
       "A D C"
       "A D C"
       "A E C"
       `;
       setColumns = "10rem 1fr 20rem";
-      setRows = "auto 1fr auto";
+      setRows = "auto 1fr 1fr auto";
       break;
     default:
       setHeight = "auto";

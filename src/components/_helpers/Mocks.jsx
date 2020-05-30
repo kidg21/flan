@@ -49,7 +49,7 @@ function MockFooter() {
         <Grid columns="auto 1fr">
           {/* <Icon icon="info" size="xs" onClick /> */}
           <Link text="1" onClick />
-          <Text text="The Description Goes Here" />
+          <Text text="Footer Appropriate Information Goes Here" />
         </Grid>
       </CardSection>
     </Card>
