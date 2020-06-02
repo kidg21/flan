@@ -402,7 +402,7 @@ function Card({
           padding="0"
           contentAlign="center"
           left={label || icon ? {
-            content: <Avatar label={label} icon={icon} />,
+            content: <Avatar label={label} icon={icon} size="xs" />,
             width: "max-content",
           } : null}
           center={{
