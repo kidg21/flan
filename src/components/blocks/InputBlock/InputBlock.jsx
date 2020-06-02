@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable complexity */
-import React, { useState, useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
@@ -10,9 +10,6 @@ import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";
 import Icon from "atoms/Icon";
 import Button from "atoms/Button";
-
-
-
 
 const TextInputContainer = styled(Grid)`
   color: ${(props) => {
@@ -74,57 +71,37 @@ function InputBlock({
   textInputs,
   warning,
 }) {
-
-  const [state, setState] = useState({
-    input: textInputs.reduce((inputMap, input) => {
-      inputMap[input.id] = input.value;
-      return inputMap;
-    }, {}),
-    selected: null,
-  });
-
-  // this is basically for when we programmatically want to change what values are in the input
-  // We couldn't do it before because this component has its own internal state, so we should just
-  // update the state if its different. We don't want to do it during render cycle because you shouldn't
-  // trigger a rerender during a render.
-  useEffect(() => {
-    textInputs.forEach((input) => {
-      if (state.input[input.id] !== input.value) {
-        const newState = { ...state };
-        newState.input[input.id] = input.value;
-        setState(newState);
+  const getValues = () => {
+    let selected = null;
+    options.forEach((option) => {
+      if (option.value === selectOptions) {
+        selected = option;
       }
     });
-  }, [textInputs]);
-
-  function handleChange(e) {
-    const newState = {
-      ...state,
-      input: { ...state.input, [e.target.id]: e.target.value },
+    return {
+      input: textInputs.reduce((inputMap, input) => {
+        inputMap[input.id] = input.value;
+        return inputMap;
+      }),
+      selected: selected,
     };
-    if (onChange) {
-      onChange(state, newState, setState);
-    } else {
-      setState(newState);
-    }
+  };
+
+  function _handleTextChange(e) {
+    const oldValues = getValues();
+    const newValues = { input: { ...oldValues.input, [e.target.id]: e.target.value }, selected: oldValues.selected };
+    onChange(oldValues, newValues, () => { });
   }
 
-  function handleSelectChange(prevState, currState, setSelectState) {
-    if (onChange) {
-      const newState = { ...state, selected: currState.selected };
-      onChange(state, newState, (updatedState) => {
-        setSelectState({ selected: updatedState.selected });
-        if (updatedState.input !== newState.input) setState(updatedState);
-      });
-    } else {
-      setSelectState(currState);
-    }
+  function _handleSelectChange(prevState, currState) {
+    const oldValues = getValues();
+    const newValues = { input: { ...oldValues.input }, selected: currState.selected };
+    onChange(oldValues, newValues, () => { });
   }
 
+  const { handleTextChange, handleSelectChange } = typeof onChange === "function" ? { handleSelectChange: _handleSelectChange, handleTextChange: _handleTextChange } : null;
 
-
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let inputTextColor;
   let messageColor;
   let errorText;
@@ -146,7 +123,7 @@ function InputBlock({
         key={input.id}
         name={input.name || input.id}
         onBlur={onBlur}
-        onChange={handleChange}
+        onChange={handleTextChange}
         onFocus={onFocus}
         onKeyPress={onKeyPress}
         pattern={input.pattern}
@@ -154,7 +131,7 @@ function InputBlock({
         readonly={input.readonly}
         title={input.title}
         type={input.type}
-        value={state.input[input.id]}
+        value={input.value}
         warning={!!warning}
       />
     );
@@ -220,7 +197,7 @@ function InputBlock({
       <Button
         label={button.label}
         variant={button.variant}
-        onClick={(e) => { if (button.onClick) button.onClick(e, state); }}
+        onClick={(e) => { if (button.onClick) button.onClick(e); }}
         disabled={isDisabled || button.disabled}
       />
     );
@@ -329,5 +306,6 @@ InputBlock.defaultProps = {
   }],
   warning: false,
 };
+
 
 export default InputBlock;
