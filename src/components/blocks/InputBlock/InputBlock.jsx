@@ -99,7 +99,9 @@ function InputBlock({
     onChange(oldValues, newValues, () => { });
   }
 
-  const { handleTextChange, handleSelectChange } = typeof onChange === "function" ? { handleSelectChange: _handleSelectChange, handleTextChange: _handleTextChange } : null;
+  const { handleTextChange, handleSelectChange } = typeof onChange === "function"
+    ? { handleSelectChange: _handleSelectChange, handleTextChange: _handleTextChange }
+    : { handleTextChange: null, handleSelectChange: null };
 
   const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let inputTextColor;
