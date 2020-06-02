@@ -26,7 +26,7 @@ import SelectMenu from "atoms/SelectMenu";
 import Image from "atoms/Image";
 import LightBoxLogo from "images/LightBoxLogo.png";
 import LightBoxIcon from "images/LightBoxIconLogo.png";
-import { MockHeader, MockFooter, MockMap, MockList, MockTable, MockCardGrid } from "helpers/Mocks";
+import { MockHeader, MockFooter, MockMap, MockList, MockTable, MockCardGrid, MockDetails } from "helpers/Mocks";
 
 const map = (
   <Mapbox />
@@ -200,7 +200,7 @@ storiesOf("Templates/02_Applications", module)
         const homeView = (
           <Page
             id="Page Regions"
-            template="06"
+            template="E_02"
             // stateCards
             A={{
               id: "A",
@@ -212,7 +212,7 @@ storiesOf("Templates/02_Applications", module)
             }}
             C={{
               id: "C",
-              content: <MockCardGrid />,
+              content: <MockDetails />,
             }}
             D={{
               id: "D",

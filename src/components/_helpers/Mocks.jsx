@@ -1,5 +1,5 @@
 /* eslint-disable linebreak-style */
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import Placeholder from "images/placeholders/placeholder-photo.png";
@@ -8,7 +8,18 @@ import Text, { Title, Link } from "base/Typography";
 import Icon from "atoms/Icon";
 import Card, { CardSection, CardGrid } from "elements/Card";
 import List, { ListItem } from "blocks/List";
+import Tabs, { TabItem } from "blocks/Tabs";
 import Table from "blocks/Table";
+import Form, { FormSection } from "layout/Form";
+import TextInput from "atoms/TextInput";
+import Button, { ButtonGroup } from "atoms/Button";
+import { CheckboxGroup } from "atoms/Checkbox";
+import { RadioGroup } from "atoms/Radio";
+import SelectMenu from "atoms/SelectMenu";
+import Panel from "layout/Panel";
+import Bar from "layout/Bar";
+import Menu from "blocks/Menu";
+import Page from "layout/Page";
 
 
 function MockMap({ ...props }) {
@@ -44,12 +55,11 @@ MockHeader.defaultProps = {
 
 function MockFooter() {
   return (
-    <Card>
+    <Card isInverse>
       <CardSection>
         <Grid columns="auto 1fr">
-          {/* <Icon icon="info" size="xs" onClick /> */}
           <Link text="1" onClick />
-          <Text text="Footer Appropriate Information Goes Here" />
+          <Text text="Footer Content Goes Here" />
         </Grid>
       </CardSection>
     </Card>
@@ -289,4 +299,313 @@ MockCardGrid.defaultProps = {
   // stuff
 };
 
-export { MockHeader, MockFooter, MockMap, MockList, MockTable, MockCardGrid };
+const shortBoxes = [
+  {
+    id: "box-1",
+    label: "Label 1",
+  },
+  {
+    id: "box-2",
+    label: "Label 2 (disabled)",
+    disabled: true,
+  },
+  {
+    id: "box-3",
+    label: "Label 3",
+  },
+  {
+    id: "box-4",
+    label: "Label 4",
+  },
+];
+const longBoxes = [
+  {
+    id: "box_long",
+    label:
+      "My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself.",
+  },
+  {
+    id: "box_long2",
+    label:
+      "Enough with these long labels already...put it on your blog, Shakespeare.",
+  },
+];
+const shortRadios = [
+  {
+    id: "radio-1",
+    name: "radio-group",
+    value: "1",
+    label: "Label 1",
+  },
+  {
+    id: "radio-2",
+    name: "radio-group",
+    value: "2",
+    label: "Label 2 (disabled)",
+    disabled: true,
+  },
+  {
+    id: "radio-3",
+    name: "radio-group",
+    value: "3",
+    label: "Label 3",
+  },
+  {
+    id: "radio-4",
+    name: "radio-group",
+    value: "4",
+    label: "Label 4",
+  },
+];
+const longRadios = [
+  {
+    id: "radio_long",
+    name: "radio-group",
+    value: "5",
+    label:
+      "My label is really long so, if I don't wrap nicely, you may want to give me a row all to myself.",
+  },
+  {
+    id: "radio_long2",
+    name: "radio-group",
+    value: "6",
+    label:
+      "Enough with these long labels already...put it on your blog, Shakespeare.",
+  },
+];
+const options = [
+  { value: "chocolate", label: "Chocolate" },
+  { value: "strawberry", label: "Strawberry" },
+  { value: "vanilla", label: "Vanilla" },
+  { value: "pistachio", label: "Pistachio" },
+  { value: "mint chocolate chip", label: "Mint Chocolate Chip" },
+  { value: "cookie dough", label: "Cookie Dough" },
+];
+
+function MockForm() {
+  return (
+    <Form
+      id="Form"
+      title="Form Header"
+      subtitle="This is the subtitle"
+      description="Just think about these things in your mind - then bring them into your world. Isn't that fantastic?  All you need to paint is a few tools, a little instruction, and a vision in your mind."
+    >
+      <FormSection title="Group 1">
+        <TextInput
+          id="firstName"
+          label="First Name"
+          placeholder="John"
+          helpText="The one that your parents gave you"
+        />
+        <TextInput
+          id="lastName"
+          label="Last Name"
+          placeholder="Williams"
+          helpText="The one that comes after.."
+        />
+      </FormSection>
+      <FormSection title="Group 2">
+        <CheckboxGroup
+          id="Section Name"
+          label="Checkbox Group Label"
+          data={shortBoxes}
+          helpText="Hang in there, buddy, I'm here to help!"
+          columns="2"
+        />
+        <CheckboxGroup data={longBoxes} columns="1" />
+        <SelectMenu
+          multiSelect
+          label="Multi-Select"
+          placeholder="Choose One Or More..."
+          helpText="Help text for the SelectMenu component"
+          options={options}
+        />
+      </FormSection>
+      <FormSection title="Group 3">
+        <RadioGroup
+          id="Section Name"
+          label="Radio Group Label"
+          data={shortRadios}
+          helpText="Hang in there, buddy, I'm here to help!"
+          columns="2"
+        />
+        <RadioGroup data={longRadios} columns="1" />
+      </FormSection>
+    </Form>
+  );
+}
+MockForm.propTypes = {
+  // stuff
+};
+MockForm.defaultProps = {
+  // stuff
+};
+
+const menuData = [
+  { id: "a", label: "Action" },
+  { id: "b", label: "Action" },
+  { id: "c", label: "Action" },
+];
+
+const panelHeader = (
+  <Bar
+    // padding="2x"
+    contentAlign="center"
+    left={{
+      content: (
+        <Menu
+          data={menuData}
+          position="bottomRight"
+        />
+      ),
+      width: "max-content",
+    }}
+    center={{
+      content: <Title text="Details" weight="bold" />,
+      align: "left",
+    }}
+  // right={{
+  //   content: (
+  //     <Icon
+  //       icon="close"
+  //     onClick={toggleLeft}
+  //     />
+  //   ),
+  //   width: "max-content",
+  // }}
+  />
+);
+
+const infoCard = (
+  <Card
+    media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" // Image
+    mediaDesc="Media Description"
+    title="Best Place Ever"
+    description="I Could Tell You More, But..."
+    icon="home"
+    commands={[
+      {
+        id: "Action One",
+        label: "Action",
+      },
+    ]}
+    shadow="0"
+  />
+);
+
+const infoBody = (
+  <Page>
+    <Title
+      text="All About This Item"
+      weight="bold"
+    />
+    <Text
+      text="Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication."
+    />
+    <Text
+      text="In your imagination you can go anywhere you want. Let's put some happy little clouds in our world. We'll throw some old gray clouds in here just sneaking around and having fun. Let's do that again."
+    />
+    <Text
+      text="This is where you take out all your hostilities and frustrations. It's better than kicking the puppy dog around and all that so. Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. These things happen automatically. All you have to do is just let them happen. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. Only eight colors that you need."
+    />
+    <Text
+      text="You want your tree to have some character. Make it special. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. We spend so much of our life looking - but never seeing."
+    />
+    <Text
+      text="We'll throw some happy little limbs on this tree. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Painting should do one thing. It should put happiness in your heart. Think about a cloud. Just float around and be there. In this world, everything can be happy."
+    />
+    <Text
+      text="Nice little fluffy clouds laying around in the sky being lazy. You need to have a very firm paint to do this. You have to allow the paint to break to make it beautiful."
+    />
+    <Text
+      text="A little happy sunlight shining through there. We're not trying to teach you a thing to copy. We're just here to teach you a technique, then let you loose into the world. There's nothing wrong with having a tree as a friend."
+    />
+  </Page>
+);
+
+function MockDetails() {
+  return (
+    <Panel
+      id="Info Panel"
+      padding="0"
+      header={[
+        <React.Fragment>
+          {panelHeader}
+          {infoCard}
+        </React.Fragment>,
+      ]}
+    >
+      {infoBody}
+    </Panel>
+  );
+}
+MockDetails.propTypes = {
+  // stuff
+};
+MockDetails.defaultProps = {
+  // stuff
+};
+
+function MockTabs() {
+  const [activeSingleTab, setActiveSingleTab] = useState("tab1");
+  const tabButtons = [
+    {
+      id: "Tab 1",
+      label: "Tab 1",
+      isSelected: activeSingleTab === "tab1",
+      onClick: () => { setActiveSingleTab("tab1"); },
+    },
+    {
+      id: "Tab 2",
+      label: "Tab 2",
+      isSelected: activeSingleTab === "tab2",
+      onClick: () => { setActiveSingleTab("tab2"); },
+    },
+    {
+      id: "Tab 3",
+      label: "Tab 3",
+      isSelected: activeSingleTab === "tab3",
+      onClick: () => { setActiveSingleTab("tab3"); },
+    },
+  ];
+  return (
+    <Tabs data={tabButtons} />
+  );
+}
+MockTabs.propTypes = {
+  // stuff
+};
+MockTabs.defaultProps = {
+  // stuff
+};
+
+function MockButtons() {
+  return (
+    <ButtonGroup columns="5">
+      <Button label="Button" />
+      <Button label="Button" />
+      <Button label="Button" />
+      <Button label="Button" />
+      <Button label="Button" />
+    </ButtonGroup>
+  );
+}
+MockButtons.propTypes = {
+  // stuff
+};
+MockButtons.defaultProps = {
+  // stuff
+};
+
+export {
+  MockButtons,
+  MockCardGrid,
+  MockDetails,
+  MockFooter,
+  MockForm,
+  MockHeader,
+  MockList,
+  MockMap,
+  MockTable,
+  MockTabs,
+};

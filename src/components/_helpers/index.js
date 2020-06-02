@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 export * from "./Display.jsx";
-export { MockList, MockMap } from "./Mocks.jsx";
+export * from "./Mocks.jsx";
 export * from "./Placeholders.jsx";
 export * from "./Skeleton.jsx";
 export * from "./SkeletonStatic.jsx";

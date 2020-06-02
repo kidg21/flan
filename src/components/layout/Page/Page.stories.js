@@ -2,7 +2,8 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { FullScreen } from "helpers/Display";
-import { MockHeader, MockFooter, MockMap, MockList, MockTable, MockCardGrid } from "helpers/Mocks";
+import { MockCardGrid, MockDetails, MockFooter, MockForm, MockHeader, MockList, MockMap, MockTable, MockTabs, MockButtons } from "helpers/Mocks";
+import Grid from "layout/Grid";
 import Page from "layout/Page";
 import Text, { Title } from "base/Typography";
 
@@ -20,12 +21,12 @@ export default {
 const knobGroups = ["Page"];
 const templates = {
   "None": "",
-  "A": "01",
-  "A-B": "02",
-  "A-B-C": "03",
-  "A-B-C-D": "04",
-  "A-B-C-D-E": "05",
-  "'Appraisal Research'": "06",
+  "A": "A_01",
+  "A-B": "B_01",
+  "A-B-C": "C_01",
+  "A-B-C-D": "D_01",
+  "A-B-C-D-E": "E_01",
+  "'Appraisal Research'": "E_02",
 };
 
 const index = [
@@ -37,6 +38,10 @@ const index = [
   <MockCardGrid />,
   <MockList />,
   <MockTable />,
+  <MockForm />,
+  <MockDetails />,
+  <MockTabs />,
+  <MockButtons />,
 ];
 
 const content = {
@@ -48,6 +53,10 @@ const content = {
   "Card Grid": 5,
   "List": 6,
   "Table": 7,
+  "Form": 8,
+  "Details": 9,
+  "Tabs": 10,
+  "Buttons": 11,
 };
 
 export const Knobs = () => {
@@ -102,7 +111,7 @@ storiesOf("Layout|Page", module)
     return (
       <Page
         id="Page Regions"
-        template="06"
+        template="E_02"
         // stateCards
         A={{
           id: "A",
@@ -110,21 +119,155 @@ storiesOf("Layout|Page", module)
         }}
         B={{
           id: "B",
-          content: <MockHeader />,
+          content: (
+            <React.Fragment>
+              <MockHeader />
+              <MockTabs />
+            </React.Fragment>
+          ),
         }}
         C={{
           id: "C",
-          content: <MockCardGrid />,
+          content: <MockDetails />,
         }}
         D={{
           id: "D",
-          content: <MockMap />,
+          content: (
+            <React.Fragment>
+              {/* <MockTabs /> */}
+              <MockButtons />
+              <MockMap />
+            </React.Fragment>
+          ),
+          // content: <MockMap />,
         }}
         E={{
           id: "E",
-          content: <MockFooter />,
+          content: (
+            // <React.Fragment>
+            // <MockButtons />
+            <MockFooter />
+            // </React.Fragment>
+          ),
+          // content: <MockFooter />,
         }}
       />
+    );
+  })
+  .add("Template Library", () => {
+    return (
+      <Grid gap="4xl">
+        <Page
+          id="Page Regions"
+          template="A_01"
+          stateCards
+          A={{
+            id: "A",
+            content: "",
+          }}
+        />
+        <Page
+          id="Page Regions"
+          template="B_01"
+          stateCards
+          A={{
+            id: "A",
+            content: "",
+          }}
+          B={{
+            id: "B",
+            content: "",
+          }}
+        />
+        <Page
+          id="Page Regions"
+          template="C_01"
+          stateCards
+          A={{
+            id: "A",
+            content: "",
+          }}
+          B={{
+            id: "B",
+            content: "",
+          }}
+          C={{
+            id: "C",
+            content: "",
+          }}
+        />
+        <Page
+          id="Page Regions"
+          template="D_01"
+          stateCards
+          A={{
+            id: "A",
+            content: "",
+          }}
+          B={{
+            id: "B",
+            content: "",
+          }}
+          C={{
+            id: "C",
+            content: "",
+          }}
+          D={{
+            id: "D",
+            content: "",
+          }}
+        />
+        <Page
+          id="Page Regions"
+          template="E_01"
+          stateCards
+          A={{
+            id: "A",
+            content: "",
+          }}
+          B={{
+            id: "B",
+            content: "",
+          }}
+          C={{
+            id: "C",
+            content: "",
+          }}
+          D={{
+            id: "D",
+            content: "",
+          }}
+          E={{
+            id: "E",
+            content: "",
+          }}
+        />
+        <Page
+          id="Page Regions"
+          template="E_02"
+          stateCards
+          A={{
+            id: "A",
+            content: "",
+          }}
+          B={{
+            id: "B",
+            content: "",
+          }}
+          C={{
+            id: "C",
+            content: "",
+          }}
+          D={{
+            id: "D",
+            content: "",
+          }}
+          E={{
+            id: "E",
+            content: "",
+          }}
+        />
+      </Grid>
     );
   })
   .add("Page Templates", () => {

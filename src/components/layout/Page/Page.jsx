@@ -161,14 +161,14 @@ function Page({
     setPadding = "1rem";
   }
   switch (template) {
-    case "01": // A
+    case "A_01": // A
       setTemplate = `
       "A"
       `;
       setColumns = "1fr";
       setRows = "auto";
       break;
-    case "02": // A B
+    case "B_01": // A B
       setTemplate = `
       "A B"
       "A ."
@@ -176,7 +176,7 @@ function Page({
       setColumns = "1fr 1fr";
       setRows = "auto auto";
       break;
-    case "03": // A B C
+    case "C_01": // A B C
       setTemplate = `
       ". . A . ."
       ". B B B ."
@@ -185,32 +185,32 @@ function Page({
       setColumns = "1fr 1fr 1fr 1fr 1fr";
       setRows = "1fr 1fr 1fr";
       break;
-    case "04": // A B C D
+    case "D_01": // A B C D
       setTemplate = `
       "A A C"
       "D . C"
       "B B B"
       `;
-      setColumns = "1fr 1fr 30rem";
-      setRows = "30rem 1fr 1fr";
+      setColumns = "1fr 1fr 3fr";
+      setRows = "3fr 1fr 1fr";
       break;
-    case "05": // A B C D E
+    case "E_01": // A B C D E
       setTemplate = `
-      "A B C"
-      "D D D"
+      "C D A"
+      "B B B"
       "E E E"
       `;
-      setColumns = "10rem 1fr 20rem";
-      setRows = "auto 1fr auto";
+      setColumns = "2fr 5fr 1fr";
+      setRows = "1fr auto auto";
       break;
-    case "06": // 'Appraisal Research'
+    case "E_02": // 'Appraisal Research'
       setTemplate = `
       "A B B"
       "A D C"
       "A D C"
       "A E C"
       `;
-      setColumns = "10rem 1fr 20rem";
+      setColumns = "1fr 5fr 2fr";
       setRows = "auto 1fr 1fr auto";
       break;
     default:
