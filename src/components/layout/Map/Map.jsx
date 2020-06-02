@@ -14,34 +14,34 @@ const Map = ReactMapboxGl({
     "pk.eyJ1IjoibGl6Z2FsbGFnaGVyIiwiYSI6ImNqcHZpNm0xNjAxaTMzeG80eWRjcWxscnYifQ.HB1ie-iccCc1TlpKJXUZKw",
 });
 
+const styleHash = {
+  "streets": {
+    style: "mapbox://styles/mapbox/streets-v11",
+  },
+  "outdoors": {
+    style: "mapbox://styles/mapbox/outdoors-v11",
+  },
+  "light": {
+    style: "mapbox://styles/mapbox/light-v10",
+  },
+  "satellite": {
+    style: "mapbox://styles/mapbox/satellite-v9",
+  },
+  "satellite-streets": {
+    style: "mapbox://styles/mapbox/satellite-streets-v11",
+  },
+  "dark": {
+    style: "mapbox://styles/mapbox/dark-v10",
+  },
+  "custom": {
+    style: "mapbox://styles/lizgallagher/cjvwt6yv316cl1cpgoj94jvma?optimize=true",
+  },
+};
+
 function Mapbox({
   center, id, map,
 }) {
-  const styleHash = {
-    "streets": {
-      style: "mapbox://styles/mapbox/streets-v11",
-    },
-    "outdoors": {
-      style: "mapbox://styles/mapbox/outdoors-v11",
-    },
-    "light": {
-      style: "mapbox://styles/mapbox/light-v10",
-    },
-    "satellite": {
-      style: "mapbox://styles/mapbox/satellite-v9",
-    },
-    "satellite-streets": {
-      style: "mapbox://styles/mapbox/satellite-streets-v11",
-    },
-    "dark": {
-      style: "mapbox://styles/mapbox/dark-v10",
-    },
-    "custom": {
-      style: "mapbox://styles/lizgallagher/cjvwt6yv316cl1cpgoj94jvma?optimize=true",
-    },
-  };
-
-  const selectedStyle = styleHash[map && map.toLowerCase()] || { style: "mapbox://styles/lizgallagher/cjvwt6yv316cl1cpgoj94jvma?optimize=true" };
+  const selectedStyle = styleHash[map && map.toLowerCase()] || styleHash.custom;
   const { style } = selectedStyle;
 
   return (
@@ -58,7 +58,7 @@ Mapbox.propTypes = {
   center: PropTypes.node,
   id: PropTypes.string,
   /** Options: 'streets', 'outdoors', 'light', 'dark', 'satellite', 'satellite-streets', 'custom' */
-  map: PropTypes.string,
+  map: PropTypes.oneOf(["streets", "outdoors", "light", "dark", "satellite", "satellite-streets", "custom"]),
 };
 Mapbox.defaultProps = {
   center: [-74.006, 40.7128],
