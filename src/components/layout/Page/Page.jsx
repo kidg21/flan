@@ -139,6 +139,32 @@ const Region = styled.section`
   }
 `;
 
+const templateHash = {
+  default: {
+    setPadding: "1rem",
+    setColumnGap: "1rem",
+    setRowGap: "1rem",
+  },
+  A_01: {
+    setTemplate: "\n\"A\"\n",
+    setColumns: "1fr",
+    setRows: "auto",
+  },
+  E_03: {
+    setTemplate: [
+      "\"A A . . E\"",
+      "\". . . . E\"",
+      "\"B . . . .\"",
+      "\"B . . . .\"",
+      "\"C . . . .\"",
+      "\"D . . . .\"",
+      "\". . . . .\"",
+    ].join("\n"),
+    setColumns: "auto 1fr 1fr 1fr auto",
+    setRows: "auto auto auto auto auto 1fr",
+  },
+};
+
 function Page({
   A, B, C, children, classname, D, stateCards, E, id, isOverlay, template,
 }) {
@@ -153,15 +179,26 @@ function Page({
   let setRows;
   let setTemplate;
   let zIndex;
-  if (template) {
+  if (template && template.toLowerCase() !== "default" && templateHash[template.toLowerCase()]) {
+    ({ setTemplate, setColumns, setRows } = templateHash[template.toLowerCase()]);
     setPadding = "0";
     setColumnGap = "0";
     setRowGap = "0";
   } else {
-    setPadding = "1rem";
-    setColumnGap = "1rem";
-    setRowGap = "1rem";
+    ({ setColumnGap, setRowGap, setPadding } = templateHash.default);
+    // setPadding = "1rem";
+    // setColumnGap = "1rem";
+    // setRowGap = "1rem";
   }
+  // if (template) {
+  //   setPadding = "0";
+  //   setColumnGap = "0";
+  //   setRowGap = "0";
+  // } else {
+  //   setPadding = "1rem";
+  //   setColumnGap = "1rem";
+  //   setRowGap = "1rem";
+  // }
   if (stateCards) {
     setPadding = "1rem";
     setColumnGap = "1rem";
@@ -174,75 +211,75 @@ function Page({
     setPosition = "absolute";
     zIndex = "999";
   }
-  switch (template) {
-    case "A_01": // A
-      setTemplate = `
-      "A"
-      `;
-      setColumns = "1fr";
-      setRows = "auto";
-      break;
-    case "B_01": // A B
-      setTemplate = `
-      "A B"
-      "A ."
-      `;
-      setColumns = "1fr 1fr";
-      setRows = "auto auto";
-      break;
-    case "C_01": // A B C
-      setTemplate = `
-      ". . A . ."
-      ". B B B ."
-      "C C C C C"
-      `;
-      setColumns = "1fr 1fr 1fr 1fr 1fr";
-      setRows = "1fr 1fr 1fr";
-      break;
-    case "D_01": // A B C D
-      setTemplate = `
-      "A A C"
-      "D . C"
-      "B B B"
-      `;
-      setColumns = "1fr 1fr 3fr";
-      setRows = "3fr 1fr 1fr";
-      break;
-    case "E_01": // A B C D E
-      setTemplate = `
-      "C D A"
-      "B B B"
-      "E E E"
-      `;
-      setColumns = "2fr 5fr 1fr";
-      setRows = "1fr auto auto";
-      break;
-    case "E_02": // 'Appraisal Research'
-      setTemplate = `
-      "A B B"
-      "A D C"
-      "A D C"
-      "A E C"
-      `;
-      setColumns = "1fr 5fr 2fr";
-      setRows = "auto 1fr 1fr auto";
-      break;
-    case "E_03": // A B C
-      setTemplate = `
-        "A A . . E"
-        ". . . . E"
-        "B . . . ."
-        "C . . . ."
-        "D . . . ."
-        ". . . . ."
-        `;
-      setColumns = "auto 1fr 1fr 1fr auto";
-      setRows = "auto auto auto auto auto 1fr";
-      break;
-    default:
-      setHeight = "auto";
-      break;
-  }
+  // switch (template) {
+  //   case "A_01": // A
+  //     setTemplate = `
+  //     "A"
+  //     `;
+  //     setColumns = "1fr";
+  //     setRows = "auto";
+  //     break;
+  //   case "B_01": // A B
+  //     setTemplate = `
+  //     "A B"
+  //     "A ."
+  //     `;
+  //     setColumns = "1fr 1fr";
+  //     setRows = "auto auto";
+  //     break;
+  //   case "C_01": // A B C
+  //     setTemplate = `
+  //     ". . A . ."
+  //     ". B B B ."
+  //     "C C C C C"
+  //     `;
+  //     setColumns = "1fr 1fr 1fr 1fr 1fr";
+  //     setRows = "1fr 1fr 1fr";
+  //     break;
+  //   case "D_01": // A B C D
+  //     setTemplate = `
+  //     "A A C"
+  //     "D . C"
+  //     "B B B"
+  //     `;
+  //     setColumns = "1fr 1fr 3fr";
+  //     setRows = "3fr 1fr 1fr";
+  //     break;
+  //   case "E_01": // A B C D E
+  //     setTemplate = `
+  //     "C D A"
+  //     "B B B"
+  //     "E E E"
+  //     `;
+  //     setColumns = "2fr 5fr 1fr";
+  //     setRows = "1fr auto auto";
+  //     break;
+  //   case "E_02": // 'Appraisal Research'
+  //     setTemplate = `
+  //     "A B B"
+  //     "A D C"
+  //     "A D C"
+  //     "A E C"
+  //     `;
+  //     setColumns = "1fr 5fr 2fr";
+  //     setRows = "auto 1fr 1fr auto";
+  //     break;
+  //   case "E_03": // A B C
+  //     setTemplate = `
+  //       "A A . . E"
+  //       ". . . . E"
+  //       "B . . . ."
+  //       "C . . . ."
+  //       "D . . . ."
+  //       ". . . . ."
+  //       `;
+  //     setColumns = "auto 1fr 1fr 1fr auto";
+  //     setRows = "auto auto auto auto auto 1fr";
+  //     break;
+  //   default:
+  //     setHeight = "auto";
+  //     break;
+  // }
   return (
     <PageWrapper
       backgroundColor={backgroundColor}
