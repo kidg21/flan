@@ -247,7 +247,6 @@ function Page({
       backgroundColor={backgroundColor}
       classname={classname}
       id={id}
-      isOverlay={isOverlay}
       pointerEvents={pointerEvents}
       setColumnGap={setColumnGap}
       setColumns={setColumns}
@@ -257,8 +256,6 @@ function Page({
       setRowGap={setRowGap}
       setRows={setRows}
       setTemplate={setTemplate}
-      stateCards={stateCards}
-      template={template}
       zIndex={zIndex}
     >
       {A || B || C || D || E ? (
@@ -321,25 +318,25 @@ function Page({
 Page.propTypes = {
   A: PropTypes.shape({
     id: PropTypes.string,
-    content: PropTypes.string,
+    content: PropTypes.node,
   }),
   B: PropTypes.shape({
     id: PropTypes.string,
-    content: PropTypes.string,
+    content: PropTypes.node,
   }),
   C: PropTypes.shape({
     id: PropTypes.string,
-    content: PropTypes.string,
+    content: PropTypes.node,
   }),
   children: PropTypes.node,
   classname: PropTypes.string,
   D: PropTypes.shape({
     id: PropTypes.string,
-    content: PropTypes.string,
+    content: PropTypes.node,
   }),
   E: PropTypes.shape({
     id: PropTypes.string,
-    content: PropTypes.string,
+    content: PropTypes.node,
   }),
   id: PropTypes.string,
   isOverlay: PropTypes.bool,
