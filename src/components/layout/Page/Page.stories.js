@@ -2,10 +2,12 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { FullScreen } from "helpers/Display";
-import { MockCardGrid, MockDetails, MockFooter, MockForm, MockHeader, MockList, MockMap, MockTable, MockTabs, MockButtons } from "helpers/Mocks";
+import { MockCardGrid, MockDetails, MockFooter, MockForm, MockHeader, MockList, MockMap, MockTable, MockTabs, MockButtons, MockPalette } from "helpers/Mocks";
+import Button from "atoms/Button";
 import Grid from "layout/Grid";
 import Page from "layout/Page";
 import Text, { Title } from "base/Typography";
+import SearchBar from "blocks/Search";
 
 export default {
   title: "Layout|Page/Tests",
@@ -42,6 +44,7 @@ const index = [
   <MockDetails />,
   <MockTabs />,
   <MockButtons />,
+  <MockPalette />,
 ];
 
 const content = {
@@ -57,6 +60,7 @@ const content = {
   "Details": 9,
   "Tabs": 10,
   "Buttons": 11,
+  "Palette": 12,
 };
 
 export const Knobs = () => {
@@ -272,23 +276,35 @@ storiesOf("Layout|Page", module)
   })
   .add("Page Templates", () => {
     return (
-      <Page id="Page Templates" template="">
-        <Text
-          text="A. This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy."
+      <React.Fragment>
+        <Page
+          id="Page Regions"
+          template="E_03"
+          stateCards
+          isFloating
+          A={{
+            id: "A",
+            content: <SearchBar placeholder="Search Location" />,
+          }}
+          B={{
+            id: "B",
+            content: <Button label="Button" icon="circle" alignCenter />,
+          }}
+          C={{
+            id: "C",
+            content: <Button label="Button" icon="circle" alignCenter />,
+          }}
+          D={{
+            id: "D",
+            content: <Button label="Button" icon="circle" alignCenter />,
+          }}
+          E={{
+            id: "E",
+            content: <MockPalette />,
+          }}
         />
-        <Text
-          text="B. This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy."
-        />
-        <Text
-          text="C. This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy."
-        />
-        <Text
-          text="D. This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy."
-        />
-        <Text
-          text="E. This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy."
-        />
-      </Page>
+        <MockMap />
+      </React.Fragment>
     );
   })
   .add("All Content Passed As Children", () => {

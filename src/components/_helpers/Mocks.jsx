@@ -20,6 +20,7 @@ import Panel from "layout/Panel";
 import Bar from "layout/Bar";
 import Menu from "blocks/Menu";
 import Page from "layout/Page";
+import Picker, { ColorSwatch } from "elements/Picker";
 
 
 function MockMap({ ...props }) {
@@ -33,6 +34,24 @@ MockMap.propTypes = {
   // stuff
 };
 MockMap.defaultProps = {
+  // stuff
+};
+
+function MockPalette() {
+  return (
+    <Picker id="standard" label="Color Picker" columns="3">
+      <ColorSwatch color="#E4423A" />
+      <ColorSwatch color="#FF8000" />
+      <ColorSwatch isSelected color="#FFBF00" />
+      <ColorSwatch color="#14A939" />
+      <ColorSwatch color="#2F98EE" />
+    </Picker>
+  );
+}
+MockPalette.propTypes = {
+  // stuff
+};
+MockPalette.defaultProps = {
   // stuff
 };
 
@@ -605,6 +624,7 @@ export {
   MockForm,
   MockHeader,
   MockList,
+  MockPalette,
   MockMap,
   MockTable,
   MockTabs,
