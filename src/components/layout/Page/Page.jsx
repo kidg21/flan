@@ -19,13 +19,13 @@ const PageWrapper = styled(Grid)`
     return props.setColumns || "initial";
   }};
   grid-column-gap: ${(props) => {
-    return props.setColumnGap || props.stateCards ? (props.setColumnGap || "1rem") : "0";
+    return props.setColumnGap || "";
   }};
   grid-template-rows: ${(props) => {
     return props.setRows || "initial";
   }};
   grid-row-gap: ${(props) => {
-    return props.setRowGap || props.stateCards ? (props.setRowGap || "1rem") : "0";
+    return props.setRowGap || "";
   }};
   color: ${(props) => {
     return props.theme.text.primary;
@@ -34,7 +34,7 @@ const PageWrapper = styled(Grid)`
     return props.theme.background.default;
   }};
   padding: ${(props) => {
-    return props.setPadding || props.stateCards ? (props.setPadding || "1rem") : "";
+    return props.setPadding || "";
   }};
   z-index: 0;
   /* Prototype Content - displays when empty */
@@ -153,12 +153,20 @@ function Page({
   let setPadding;
   let setHeight;
   let setTemplate;
-  let setColumns;
-  let setColumnGap;
-  let setRows;
-  let setRowGap;
+  if (template) {
+    setPadding = "0";
+    setColumnGap = "0";
+    setRowGap = "0";
+  } else {
+    setPadding = "1rem";
+    setColumnGap = "1rem";
+    setRowGap = "1rem";
+  }
   if (stateCards) {
     setPadding = "1rem";
+    setColumnGap = "1rem";
+    setRowGap = "1rem";
+  }
   }
   switch (template) {
     case "A_01": // A
@@ -215,8 +223,6 @@ function Page({
       break;
     default:
       setHeight = "auto";
-      setRowGap = "1rem";
-      setPadding = "1rem";
       break;
   }
   return (
