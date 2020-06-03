@@ -111,58 +111,11 @@ Knobs.story = {
 storiesOf("Layout|Page", module)
   .addDecorator(checkA11y)
   .addDecorator(FullScreen)
-  .add("Page Regions", () => {
-    return (
-      <Page
-        id="Page Regions"
-        template="E_02"
-        // stateCards
-        A={{
-          id: "A",
-          content: <MockList />,
-        }}
-        B={{
-          id: "B",
-          content: (
-            <React.Fragment>
-              <MockHeader />
-              <MockTabs />
-            </React.Fragment>
-          ),
-        }}
-        C={{
-          id: "C",
-          content: <MockDetails />,
-        }}
-        D={{
-          id: "D",
-          content: (
-            <React.Fragment>
-              {/* <MockTabs /> */}
-              <MockButtons />
-              <MockMap />
-            </React.Fragment>
-          ),
-          // content: <MockMap />,
-        }}
-        E={{
-          id: "E",
-          content: (
-            // <React.Fragment>
-            // <MockButtons />
-            <MockFooter />
-            // </React.Fragment>
-          ),
-          // content: <MockFooter />,
-        }}
-      />
-    );
-  })
   .add("Template Library", () => {
     return (
       <Grid gap="4xl">
         <Page
-          id="Page Regions"
+          id="Template A_01"
           template="A_01"
           stateCards
           A={{
@@ -171,7 +124,7 @@ storiesOf("Layout|Page", module)
           }}
         />
         <Page
-          id="Page Regions"
+          id="Template B_01"
           template="B_01"
           stateCards
           A={{
@@ -184,7 +137,7 @@ storiesOf("Layout|Page", module)
           }}
         />
         <Page
-          id="Page Regions"
+          id="Template C_01"
           template="C_01"
           stateCards
           A={{
@@ -201,7 +154,7 @@ storiesOf("Layout|Page", module)
           }}
         />
         <Page
-          id="Page Regions"
+          id="Template D_01"
           template="D_01"
           stateCards
           A={{
@@ -222,7 +175,7 @@ storiesOf("Layout|Page", module)
           }}
         />
         <Page
-          id="Page Regions"
+          id="Template E_01"
           template="E_01"
           stateCards
           A={{
@@ -247,8 +200,33 @@ storiesOf("Layout|Page", module)
           }}
         />
         <Page
-          id="Page Regions"
+          id="Template E_02"
           template="E_02"
+          stateCards
+          A={{
+            id: "A",
+            content: "",
+          }}
+          B={{
+            id: "B",
+            content: "",
+          }}
+          C={{
+            id: "C",
+            content: "",
+          }}
+          D={{
+            id: "D",
+            content: "",
+          }}
+          E={{
+            id: "E",
+            content: "",
+          }}
+        />
+        <Page
+          id="Template E_03"
+          template="E_03"
           stateCards
           A={{
             id: "A",
@@ -274,7 +252,40 @@ storiesOf("Layout|Page", module)
       </Grid>
     );
   })
-  .add("Page Templates", () => {
+  .add("App: Research", () => {
+    return (
+      <Page
+        id="Page Regions"
+        template="E_02"
+        A={{
+          id: "A",
+          content: <MockList />,
+        }}
+        B={{
+          id: "B",
+          content: (
+            <React.Fragment>
+              <MockHeader />
+              <MockTabs />
+            </React.Fragment>
+          ),
+        }}
+        C={{
+          id: "C",
+          content: <MockDetails />,
+        }}
+        D={{
+          id: "D",
+          content: <MockMap withTools />,
+        }}
+        E={{
+          id: "E",
+          content: <MockFooter />,
+        }}
+      />
+    );
+  })
+  .add("Page Overlay", () => {
     return (
       <React.Fragment>
         <Page
@@ -307,7 +318,7 @@ storiesOf("Layout|Page", module)
       </React.Fragment>
     );
   })
-  .add("All Content Passed As Children", () => {
+  .add("Content Passed As Children", () => {
     return (
       <Page>
         <Title

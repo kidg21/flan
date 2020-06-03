@@ -216,7 +216,7 @@ storiesOf("Templates/02_Applications", module)
             }}
             D={{
               id: "D",
-              content: <MockMap />,
+              content: <MockMap withTools />,
             }}
             E={{
               id: "E",

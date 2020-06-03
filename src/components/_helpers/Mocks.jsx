@@ -21,20 +21,49 @@ import Bar from "layout/Bar";
 import Menu from "blocks/Menu";
 import Page from "layout/Page";
 import Picker, { ColorSwatch } from "elements/Picker";
+import SearchBar from "blocks/Search";
 
 
-function MockMap({ ...props }) {
+function MockMap({ withTools, ...props }) {
   return (
-    <Mapbox
-      {...props}
-    />
+    <React.Fragment withTools={withTools}>
+      {withTools ? <Page
+        id="Map Tools"
+        template="E_03"
+        stateCards
+        isOverlay
+        A={{
+          id: "A",
+          content: <SearchBar placeholder="Search Location" />,
+        }}
+        B={{
+          id: "B",
+          content: <Button label="Button" icon="circle" alignCenter />,
+        }}
+        C={{
+          id: "C",
+          content: <Button label="Button" icon="circle" alignCenter />,
+        }}
+        D={{
+          id: "D",
+          content: <Button label="Button" icon="circle" alignCenter />,
+        }}
+        E={{
+          id: "E",
+          content: <MockPalette />,
+        }}
+      /> : null}
+      <Mapbox
+        {...props}
+      />
+    </React.Fragment>
   );
 }
 MockMap.propTypes = {
-  // stuff
+  withTools: PropTypes.bool,
 };
 MockMap.defaultProps = {
-  // stuff
+  withTools: false,
 };
 
 function MockPalette() {
