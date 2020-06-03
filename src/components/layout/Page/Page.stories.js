@@ -281,7 +281,7 @@ storiesOf("Layout|Page", module)
           id="Page Regions"
           template="E_03"
           stateCards
-          isFloating
+          isOverlay
           A={{
             id: "A",
             content: <SearchBar placeholder="Search Location" />,
