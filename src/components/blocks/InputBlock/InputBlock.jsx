@@ -73,11 +73,13 @@ function InputBlock({
 }) {
   const getValues = () => {
     let selected = null;
-    options.forEach((option) => {
-      if (option.value === selectOptions) {
-        selected = option;
-      }
-    });
+    if (options instanceof Array) {
+      options.forEach((option) => {
+        if (option.value === selectOptions) {
+          selected = option;
+        }
+      });
+    }
     return {
       input: textInputs.reduce((inputMap, input) => {
         inputMap[input.id] = input.value;
@@ -199,7 +201,7 @@ function InputBlock({
       <Button
         label={button.label}
         variant={button.variant}
-        onClick={(e) => { if (button.onClick) button.onClick(e); }}
+        onClick={(e) => { if (button.onClick) button.onClick(e, getValues()); }}
         disabled={isDisabled || button.disabled}
       />
     );
@@ -294,7 +296,7 @@ InputBlock.defaultProps = {
   onChange: null,
   onFocus: null,
   onKeyPress: null,
-  options: [],
+  options: null,
   selectOptions: null,
   text: null,
   textInputs: [{
