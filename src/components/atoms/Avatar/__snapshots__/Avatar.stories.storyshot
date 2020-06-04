@@ -309,12 +309,12 @@ exports[` 5`] = `
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-exclamation fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb"
+      className="svg-inline--fa fa-exclamation fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
       color={null}
       data-icon="exclamation"
       data-prefix="fas"
       focusable="false"
-      fontSize="1.35em"
+      fontSize="inherit"
       id={null}
       role="img"
       style={Object {}}
@@ -335,12 +335,12 @@ exports[` 5`] = `
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-bookmark fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb"
+      className="svg-inline--fa fa-bookmark fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
       color={null}
       data-icon="bookmark"
       data-prefix="fas"
       focusable="false"
-      fontSize="1.35em"
+      fontSize="inherit"
       id={null}
       role="img"
       style={Object {}}
@@ -361,12 +361,12 @@ exports[` 5`] = `
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-home-alt fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb"
+      className="svg-inline--fa fa-home-alt fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
       color={null}
       data-icon="home-alt"
       data-prefix="fas"
       focusable="false"
-      fontSize="1.35em"
+      fontSize="inherit"
       id={null}
       role="img"
       style={Object {}}
@@ -387,12 +387,12 @@ exports[` 5`] = `
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-envelope fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb"
+      className="svg-inline--fa fa-envelope fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
       color={null}
       data-icon="envelope"
       data-prefix="far"
       focusable="false"
-      fontSize="1.35em"
+      fontSize="inherit"
       id={null}
       role="img"
       style={Object {}}
@@ -563,6 +563,136 @@ exports[` 7`] = `
     >
       xl
     </h6>
+  </div>
+  <div
+    className="Avatar__TagContainer-sc-1vuf9om-2 bhCitP"
+    id={null}
+    onClick={null}
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-home-alt fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 fMXrpG"
+      color={null}
+      data-icon="home-alt"
+      data-prefix="fas"
+      focusable="false"
+      fontSize="0.75em"
+      id={null}
+      role="img"
+      style={Object {}}
+      viewBox="0 0 576 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </div>
+  <div
+    className="Avatar__TagContainer-sc-1vuf9om-2 brBuoT"
+    id={null}
+    onClick={null}
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-home-alt fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 lhHlxO"
+      color={null}
+      data-icon="home-alt"
+      data-prefix="fas"
+      focusable="false"
+      fontSize="0.875em"
+      id={null}
+      role="img"
+      style={Object {}}
+      viewBox="0 0 576 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </div>
+  <div
+    className="Avatar__TagContainer-sc-1vuf9om-2 bIbEMn"
+    id={null}
+    onClick={null}
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-home-alt fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+      color={null}
+      data-icon="home-alt"
+      data-prefix="fas"
+      focusable="false"
+      fontSize="inherit"
+      id={null}
+      role="img"
+      style={Object {}}
+      viewBox="0 0 576 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </div>
+  <div
+    className="Avatar__TagContainer-sc-1vuf9om-2 dpAvVj"
+    id={null}
+    onClick={null}
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-home-alt fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb"
+      color={null}
+      data-icon="home-alt"
+      data-prefix="fas"
+      focusable="false"
+      fontSize="1.35em"
+      id={null}
+      role="img"
+      style={Object {}}
+      viewBox="0 0 576 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </div>
+  <div
+    className="Avatar__TagContainer-sc-1vuf9om-2 XpyoT"
+    id={null}
+    onClick={null}
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-home-alt fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 jSXIyQ"
+      color={null}
+      data-icon="home-alt"
+      data-prefix="fas"
+      focusable="false"
+      fontSize="1.5em"
+      id={null}
+      role="img"
+      style={Object {}}
+      viewBox="0 0 576 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
   </div>
 </section>
 `;
