@@ -1,0 +1,31 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { withKnobs, label, boolean, select } from "@storybook/addon-knobs";
+import { action } from "@storybook/addon-actions";
+import { Padding } from "helpers/Display";
+import Grid from "layout/Grid";
+import Bar from "layout/Bar";
+import Media from "atoms/Media";
+import Icon from "atoms/Icon";
+
+<Meta title="Atoms|Media" component={Media} />
+
+# Media
+
+### Media...
+
+<Preview withToolbar>
+  <Story name="Media">
+  <Grid columns="3">
+    <Media
+      media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
+    />
+    <Media
+      media="https://www.w3schools.com/html/horse.mp3"
+    />
+  </Grid>
+  </Story>
+</Preview>
+
+### Props
+
+<Props of={Media} />
