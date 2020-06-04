@@ -294,7 +294,7 @@ InputBlock.defaultProps = {
   onChange: null,
   onFocus: null,
   onKeyPress: null,
-  options: null,
+  options: [],
   selectOptions: null,
   text: null,
   textInputs: [{
