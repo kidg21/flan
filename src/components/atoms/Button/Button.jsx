@@ -20,8 +20,12 @@ const StyledButton = styled.button`
   width: ${(props) => {
     return props.fullWidth ? "100%" : "auto";
   }};
-  height: 2.4rem;
-  padding: 0em 0.75em;
+  height: ${(props) => {
+    return props.alignCenter ? "" : "2.4rem";
+  }};
+  padding: ${(props) => {
+    return props.alignCenter ? "0.75em" : "0em 0.75em";
+  }};
   justify-content: center;
   align-items: center;
   color: ${(props) => {
@@ -267,7 +271,6 @@ function Button({
 
   const content = (
     <LabelWrapper
-      alignCenter={alignCenter}
       columns={columns}
       gridGap={gridGap}
       justifyItems={justifyItems}
@@ -281,6 +284,7 @@ function Button({
 
   return (
     <StyledButton
+      alignCenter={alignCenter}
       backgroundColor={backgroundColor}
       borderColor={borderColor}
       borderRadius={borderRadius}
