@@ -5,13 +5,39 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import mime from "mime";
 import Image from "atoms/Image";
-import Card, { CardSection } from "elements/Card";
 
 const MediaContainer = styled.section`
   /* stuff */
 `;
 
-function Media({ media, mediaDesc }) {
+const Audio = styled.audio`
+  width: 100%;
+  &:focus {
+    outline: none;
+  }
+`;
+
+const Video = styled.video`
+  width: 100%;
+  &:focus {
+    outline: none;
+  }
+`;
+
+const Frame = styled.iframe`
+  width: 100%;
+  /* &:focus {
+    outline: none;
+  } */
+`;
+
+function Media({
+  className,
+  id,
+  media,
+  mediaDesc,
+  onClick,
+}) {
   const mimeType = mime.getType(media);
   let mediaSection;
   if (mimeType) {
@@ -23,12 +49,63 @@ function Media({ media, mediaDesc }) {
           width="100%"
         />
       );
+    } else if (mimeType.startsWith("video")) {
+      mediaSection = (
+        <Video width="100%" title={mediaDesc || mimeType} controls>
+          <source
+            src={media}
+            type="video/mp4"
+          />
+          <source
+            src={media}
+            type="video/webm"
+          />
+          <source
+            src={media}
+            type="video/ogg"
+          />
+          Your browser does not support the video element.
+        </Video>
+      );
+    } else if (mimeType.startsWith("audio")) {
+      mediaSection = (
+        <Audio title={mediaDesc || mimeType} controls>
+          <source
+            src={media}
+            type="audio/mp3"
+          />
+          <source
+            src={media}
+            type="audio/ogg"
+          />
+          <source
+            src={media}
+            type="audio/wav"
+          />
+          Your browser does not support the audio element.
+        </Audio>
+      );
+      // Currently redundant to the 'else' case
+      // but captured should we need to handle
+      // supported mime-types in a specific way
+    } else if (mimeType.startsWith("text")
+      || mimeType.startsWith("application")) {
+      mediaSection = (
+        <Frame src={media} title={mediaDesc || mimeType} width="100%" frameBorder="0" allow="fullscreen" allowFullScreen />
+      );
     }
+    // Fallback for Youtube, Vimeo and other unsupported mime-types
+  } else {
+    mediaSection = (
+      <Frame src={media} title={mediaDesc || "iframe"} width="100%" frameBorder="0" allow="fullscreen" allowFullScreen />
+    );
   }
 
   return (
     <MediaContainer
-      media={media}
+      className={className}
+      onClick={onClick}
+      id={id}
       mediaDesc={mediaDesc}
     >
       {mediaSection}
@@ -37,23 +114,19 @@ function Media({ media, mediaDesc }) {
 }
 
 Media.propTypes = {
-  // brand: PropTypes.string,
-  // className: PropTypes.string,
-  // hasBackground: PropTypes.bool,
-  // icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
-  // id: PropTypes.string,
-  // label: PropTypes.string,
-  // variant: PropTypes.string,
+  className: PropTypes.string,
+  id: PropTypes.string,
+  media: PropTypes.string,
+  mediaDesc: PropTypes.string,
+  onClick: PropTypes.func,
 };
 
 Media.defaultProps = {
-  // brand: null,
-  // className: null,
-  // hasBackground: true,
-  // icon: null,
-  // id: null,
-  // label: null,
-  // variant: null,
+  className: null,
+  id: null,
+  media: null,
+  mediaDesc: null,
+  onClick: null,
 };
 
 export default Media;
