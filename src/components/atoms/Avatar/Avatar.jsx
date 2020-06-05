@@ -103,7 +103,7 @@ function Avatar({
       />
     );
   } else if (icon && typeof icon === "string") {
-    iconType = <Icon icon={icon} size="lg" />;
+    iconType = <Icon icon={icon} size={size} />;
   } else {
     labelType = <AvatarText weight="semibold" fontSize={fontSize} text={label && label.substring(0, 2)} />;
   }

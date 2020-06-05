@@ -26,6 +26,7 @@ import SelectMenu from "atoms/SelectMenu";
 import Image from "atoms/Image";
 import LightBoxLogo from "images/LightBoxLogo.png";
 import LightBoxIcon from "images/LightBoxIconLogo.png";
+import { MockHeader, MockFooter, MockMap, MockList, MockTable, MockCardGrid, MockDetails } from "helpers/Mocks";
 
 const map = (
   <Mapbox />
@@ -197,15 +198,31 @@ storiesOf("Templates/02_Applications", module)
         const hideRecord = () => { setRecordView("bottom"); };
 
         const homeView = (
-          <Panel>
-            <Page
-              header={{
-                title: "This is the Home of Application B",
-                subtitle: "You've come to the right place to begin working with [insert object types here]",
-                description: "Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.",
-              }}
-            />
-          </Panel>
+          <Page
+            id="Page Regions"
+            template="E_02"
+            // stateCards
+            A={{
+              id: "A",
+              content: <MockList />,
+            }}
+            B={{
+              id: "B",
+              content: <MockHeader />,
+            }}
+            C={{
+              id: "C",
+              content: <MockDetails />,
+            }}
+            D={{
+              id: "D",
+              content: <MockMap withTools />,
+            }}
+            E={{
+              id: "E",
+              content: <MockFooter />,
+            }}
+          />
         );
 
         const objectHeaders1 = [
