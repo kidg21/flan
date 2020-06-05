@@ -2,47 +2,83 @@ import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
 import { withKnobs, label, boolean, select } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
 import { Padding } from "helpers/Display";
+import { FullScreen } from "helpers/Display";
 import Grid from "layout/Grid";
 import Bar from "layout/Bar";
 import Media from "atoms/Media";
 import Icon from "atoms/Icon";
+import Page from "layout/Page";
 
-<Meta title="Atoms|Media" component={Media} />
+<Meta title="Atoms|Media" component={Media} decorators={[]} />
 
 # Media
 
 ### Media...
 
+yayayayaya
+
+## Examples
+
+### Image
+
+yayayayaya
+
 <Preview withToolbar>
   <Story name="Image">
-  <Grid columns="3">
-    <Media
-      media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
-    />
-    <Media
-      media="https://www.w3schools.com/html/horse.mp3"
-    />
-    <Media
-      media="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
-    />
-    <Media
-      media="https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0"
-    />
-    <Media
-      media="https://player.vimeo.com/video/798022"
-    />
-    <Media
-      media="https://docs.google.com/document/d/176B8LpL1jcI_RI4IkIEDivYSxUrGvOPBv0j5FfmOgNI/edit?usp=sharing"
-    />
-  </Grid>
+    <Grid columns="3">
+      <Media
+        id="Image"
+        media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
+      />
+    </Grid>
   </Story>
 </Preview>
 
+### Audio
+
+yayayayaya
+
 <Preview withToolbar>
-  <Story name="iFrame">
+  <Story name="Audio">
+    <Grid columns="3">
+      <Media
+        id="Audio"
+        media="https://www.w3schools.com/html/horse.mp3"
+      />
+    </Grid>
+  </Story>
+</Preview>
+
+### Video
+
+yayayayaya
+
+<Preview withToolbar>
+  <Story name="Video">
+    <Grid columns="3">
+      <Media
+        id="Video"
+        media="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+      />
+      <Media
+        media="https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0"
+      />
+      <Media
+        media="https://player.vimeo.com/video/798022"
+      />
+    </Grid>
+  </Story>
+</Preview>
+
+### iFrame
+
+yayayayaya
+
+<Preview withToolbar>
+  <Story name="iFrame" parameters={{ decorators: [FullScreen] }}>
     <Media
-      media="https://docs.google.com/document/d/176B8LpL1jcI_RI4IkIEDivYSxUrGvOPBv0j5FfmOgNI/edit?usp=sharing"
-      mediaDesc="This is an iframe"
+      id="iFrame"
+      media="https://www.lightboxre.com/"
     />
   </Story>
 </Preview>

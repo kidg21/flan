@@ -7,7 +7,8 @@ import mime from "mime";
 import Image from "atoms/Image";
 
 const MediaContainer = styled.section`
-  /* stuff */
+  width: 100%;
+  height: 100%;
 `;
 
 const Audio = styled.audio`
@@ -26,9 +27,7 @@ const Video = styled.video`
 
 const Frame = styled.iframe`
   width: 100%;
-  /* &:focus {
-    outline: none;
-  } */
+  height: 100%;
 `;
 
 function Media({
@@ -97,7 +96,7 @@ function Media({
     // Fallback for Youtube, Vimeo and other unsupported mime-types
   } else {
     mediaSection = (
-      <Frame src={media} title={mediaDesc || "iframe"} width="100%" frameBorder="0" allow="fullscreen" allowFullScreen />
+      <Frame src={media} title={mediaDesc || "iframe"} width="100%" height="100vh" frameBorder="0" allow="fullscreen" allowFullScreen />
     );
   }
 
