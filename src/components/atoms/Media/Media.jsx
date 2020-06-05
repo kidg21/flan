@@ -11,6 +11,13 @@ const MediaContainer = styled.section`
   height: 100%;
 `;
 
+const ImageWrapper = styled(Image)`
+  width: 100%;
+  max-width: inherit;
+  height: 100%;
+  object-fit: cover;
+`;
+
 const Audio = styled.audio`
   width: 100%;
   &:focus {
@@ -27,7 +34,8 @@ const Video = styled.video`
 
 const Frame = styled.iframe`
   width: 100%;
-  height: 100%;
+  height: inherit;
+  max-height: 100%;
 `;
 
 function Media({
@@ -42,7 +50,7 @@ function Media({
   if (mimeType) {
     if (mimeType.startsWith("image")) {
       mediaSection = (
-        <Image
+        <ImageWrapper
           src={media}
           alt={mediaDesc || mimeType}
           width="100%"
