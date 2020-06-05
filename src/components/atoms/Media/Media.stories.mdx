@@ -9,19 +9,20 @@ import Media from "atoms/Media";
 import Icon from "atoms/Icon";
 import Page from "layout/Page";
 
-<Meta title="Atoms|Media" component={Media} decorators={[]} />
+<Meta title="Atoms|Media" component={Media} />
 
 # Media
 
 ### Media...
 
-yayayayaya
+The Media atom is used to diplay all types of media.  In addition to standard image, audio, and video files, Media can be used to embed external application content within an iframe.
 
 ## Examples
 
 ### Image
 
-yayayayaya
+Passing in an image source load the HTML5 video player.
+- Formats Supported: mp4, webm, and ogg
 
 <Preview withToolbar>
   <Story name="Image">
@@ -36,7 +37,8 @@ yayayayaya
 
 ### Audio
 
-yayayayaya
+Passing in an audio source will load the HTML5 audio player.
+- Formats Supported: mp3, ogg, and wav
 
 <Preview withToolbar>
   <Story name="Audio">
@@ -51,7 +53,9 @@ yayayayaya
 
 ### Video
 
-yayayayaya
+Passing in a video source load the HTML5 video player.
+- Formats Supported: mp4, webm, and ogg
+(video from Youtube and Vimeo are supported but are displayed in an iframe instead of using the video player)
 
 <Preview withToolbar>
   <Story name="Video">
@@ -70,9 +74,9 @@ yayayayaya
   </Story>
 </Preview>
 
-### iFrame
+### HTML iframe
 
-yayayayaya
+Passing text, files, applications, or other types of content external to the application will display the source in an iframe.
 
 <Preview withToolbar>
   <Story name="iFrame" parameters={{ decorators: [FullScreen] }}>
