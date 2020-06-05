@@ -6,7 +6,6 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 import { Spacer } from "helpers/Display.jsx";
-import { Darken } from "Variables";
 import Grid from "layout/Grid";
 import Bar from "layout/Bar";
 import Text, { Title } from "base/Typography";
@@ -90,7 +89,6 @@ const CardAudio = styled.audio`
 const CardWrapper = styled.div`
   position: relative;
   display: flex;
-  height: inherit;
   cursor: ${(props) => {
     return props.onClick ? "pointer" : "";
   }};
@@ -127,6 +125,10 @@ const CardWrapper = styled.div`
 `;
 
 const CardGridWrapper = styled(Grid)`
+/** TODO: Prevent Cards from being cropped in norrow containers */
+  /* grid-template-columns: repeat(auto-fill,minmax(auto, 14rem)); */
+  /* justify-content: space-between; */
+  padding: 1rem;
   ${CardWrapper} {
     height: 100%;
     border-radius: ${(props) => {
@@ -400,7 +402,7 @@ function Card({
           padding="0"
           contentAlign="center"
           left={label || icon ? {
-            content: <Avatar label={label} icon={icon} />,
+            content: <Avatar label={label} icon={icon} size="xs" />,
             width: "max-content",
           } : null}
           center={{

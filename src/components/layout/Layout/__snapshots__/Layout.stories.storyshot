@@ -373,7 +373,7 @@ exports[` 5`] = `
           id="List Panel_header"
         >
           <div
-            className="Card__CardWrapper-sc-1g3s676-5 kTXijy"
+            className="Card__CardWrapper-sc-1g3s676-5 dnxbXt"
             href={null}
             id={null}
             media={null}
@@ -433,7 +433,7 @@ exports[` 5`] = `
           id="List Panel_body"
         >
           <ul
-            className="List__ListWrapper-sc-43f2zq-1 lcdfCY"
+            className="List__ListWrapper-sc-43f2zq-1 kWzfFn"
             id={null}
           >
             <label
@@ -931,7 +931,7 @@ exports[` 5`] = `
           id="Info Panel_header"
         >
           <div
-            className="Card__CardWrapper-sc-1g3s676-5 kTXijy"
+            className="Card__CardWrapper-sc-1g3s676-5 dnxbXt"
             href={null}
             id={null}
             media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
@@ -963,18 +963,18 @@ exports[` 5`] = `
                   className="Bar__Slot-icfo76-1 boCGaE"
                 >
                   <div
-                    className="Avatar__TagContainer-sc-1vuf9om-2 bIbEMn"
+                    className="Avatar__TagContainer-sc-1vuf9om-2 bhCitP"
                     id={null}
                     onClick={null}
                   >
                     <svg
                       aria-hidden="true"
-                      className="svg-inline--fa fa-bookmark fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb"
+                      className="svg-inline--fa fa-bookmark fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 fMXrpG"
                       color={null}
                       data-icon="bookmark"
                       data-prefix="fas"
                       focusable="false"
-                      fontSize="1.35em"
+                      fontSize="0.75em"
                       id={null}
                       role="img"
                       style={Object {}}
@@ -1018,131 +1018,94 @@ exports[` 5`] = `
           className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
           id="Info Panel_body"
         >
-          <div
-            className="Page__PageWrapper-mddda5-0 eZIAJI"
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa Page__PageWrapper-mddda5-0 fmRzob"
             id={null}
+            rows={null}
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ Page__Section-mddda5-1 gQPevj"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Page__Section-mddda5-1 gQPevj"
               id={null}
               rows={null}
             >
-              <h4
-                className="Typography__TitleText-sc-19auepv-2 czurBm"
-                fontSize="1.25em"
-                fontWeight={600}
+              <h5
+                className="Typography__TitleText-sc-19auepv-2 KxMwb"
+                fontSize="1.15em"
+                fontWeight={400}
                 letterSpacing="0px"
               >
-                My Latest Musings
-              </h4>
+                Section 1
+              </h5>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 NmRuW"
+                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
                 fontSize="0.876em"
-                fontWeight={300}
+                fontWeight={400}
                 id={null}
                 letterSpacing="0px"
               >
-                Totally Worth The Read...Enjoy!
+                In your imagination you can go anywhere you want. Let's put some happy little clouds in our world. We'll throw some old gray clouds in here just sneaking around and having fun. Let's do that again.
               </p>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-                fontSize="0.75em"
-                fontWeight={600}
+                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                fontSize="0.876em"
+                fontWeight={400}
                 id={null}
-                letterSpacing="0.2px"
+                letterSpacing="0px"
               >
-                Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.
+                This is where you take out all your hostilities and frustrations. It's better than kicking the puppy dog around and all that so. Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. These things happen automatically. All you have to do is just let them happen. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. Only eight colors that you need.
               </p>
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 kTWmUL Page__Body-mddda5-2 lmAbxe"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Page__Section-mddda5-1 gQPevj"
               id={null}
               rows={null}
             >
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Page__Section-mddda5-1 gQPevj"
-                id={null}
-                rows={null}
+              <h5
+                className="Typography__TitleText-sc-19auepv-2 KxMwb"
+                fontSize="1.15em"
+                fontWeight={400}
+                letterSpacing="0px"
               >
-                <h5
-                  className="Typography__TitleText-sc-19auepv-2 KxMwb"
-                  fontSize="1.15em"
-                  fontWeight={400}
-                  letterSpacing="0px"
-                >
-                  Section 1
-                </h5>
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                  fontSize="0.876em"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0px"
-                >
-                  In your imagination you can go anywhere you want. Let's put some happy little clouds in our world. We'll throw some old gray clouds in here just sneaking around and having fun. Let's do that again.
-                </p>
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                  fontSize="0.876em"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0px"
-                >
-                  This is where you take out all your hostilities and frustrations. It's better than kicking the puppy dog around and all that so. Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. These things happen automatically. All you have to do is just let them happen. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. Only eight colors that you need.
-                </p>
-              </section>
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Page__Section-mddda5-1 gQPevj"
+                Section 1
+              </h5>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                fontSize="0.876em"
+                fontWeight={400}
                 id={null}
-                rows={null}
+                letterSpacing="0px"
               >
-                <h5
-                  className="Typography__TitleText-sc-19auepv-2 KxMwb"
-                  fontSize="1.15em"
-                  fontWeight={400}
-                  letterSpacing="0px"
-                >
-                  Section 1
-                </h5>
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                  fontSize="0.876em"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0px"
-                >
-                  You want your tree to have some character. Make it special. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. We spend so much of our life looking - but never seeing.
-                </p>
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                  fontSize="0.876em"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0px"
-                >
-                  We'll throw some happy little limbs on this tree. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Painting should do one thing. It should put happiness in your heart. Think about a cloud. Just float around and be there. In this world, everything can be happy.
-                </p>
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                  fontSize="0.876em"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0px"
-                >
-                  Nice little fluffy clouds laying around in the sky being lazy. You need to have a very firm paint to do this. You have to allow the paint to break to make it beautiful.
-                </p>
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                  fontSize="0.876em"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0px"
-                >
-                  A little happy sunlight shining through there. We're not trying to teach you a thing to copy. We're just here to teach you a technique, then let you loose into the world. There's nothing wrong with having a tree as a friend.
-                </p>
-              </section>
+                You want your tree to have some character. Make it special. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. We spend so much of our life looking - but never seeing.
+              </p>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                fontSize="0.876em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                We'll throw some happy little limbs on this tree. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Painting should do one thing. It should put happiness in your heart. Think about a cloud. Just float around and be there. In this world, everything can be happy.
+              </p>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                fontSize="0.876em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Nice little fluffy clouds laying around in the sky being lazy. You need to have a very firm paint to do this. You have to allow the paint to break to make it beautiful.
+              </p>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                fontSize="0.876em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                A little happy sunlight shining through there. We're not trying to teach you a thing to copy. We're just here to teach you a technique, then let you loose into the world. There's nothing wrong with having a tree as a friend.
+              </p>
             </section>
-          </div>
+          </section>
         </section>
       </div>
     </div>
@@ -1361,7 +1324,7 @@ exports[` 6`] = `
           id="List Panel_header"
         >
           <div
-            className="Card__CardWrapper-sc-1g3s676-5 kTXijy"
+            className="Card__CardWrapper-sc-1g3s676-5 dnxbXt"
             href={null}
             id={null}
             media={null}
@@ -1421,7 +1384,7 @@ exports[` 6`] = `
           id="List Panel_body"
         >
           <ul
-            className="List__ListWrapper-sc-43f2zq-1 lcdfCY"
+            className="List__ListWrapper-sc-43f2zq-1 kWzfFn"
             id={null}
           >
             <label
@@ -1919,7 +1882,7 @@ exports[` 6`] = `
           id="Info Panel_header"
         >
           <div
-            className="Card__CardWrapper-sc-1g3s676-5 kTXijy"
+            className="Card__CardWrapper-sc-1g3s676-5 dnxbXt"
             href={null}
             id={null}
             media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
@@ -1951,18 +1914,18 @@ exports[` 6`] = `
                   className="Bar__Slot-icfo76-1 boCGaE"
                 >
                   <div
-                    className="Avatar__TagContainer-sc-1vuf9om-2 bIbEMn"
+                    className="Avatar__TagContainer-sc-1vuf9om-2 bhCitP"
                     id={null}
                     onClick={null}
                   >
                     <svg
                       aria-hidden="true"
-                      className="svg-inline--fa fa-bookmark fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb"
+                      className="svg-inline--fa fa-bookmark fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 fMXrpG"
                       color={null}
                       data-icon="bookmark"
                       data-prefix="fas"
                       focusable="false"
-                      fontSize="1.35em"
+                      fontSize="0.75em"
                       id={null}
                       role="img"
                       style={Object {}}
@@ -2006,131 +1969,94 @@ exports[` 6`] = `
           className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
           id="Info Panel_body"
         >
-          <div
-            className="Page__PageWrapper-mddda5-0 eZIAJI"
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa Page__PageWrapper-mddda5-0 fmRzob"
             id={null}
+            rows={null}
           >
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ Page__Section-mddda5-1 gQPevj"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Page__Section-mddda5-1 gQPevj"
               id={null}
               rows={null}
             >
-              <h4
-                className="Typography__TitleText-sc-19auepv-2 czurBm"
-                fontSize="1.25em"
-                fontWeight={600}
+              <h5
+                className="Typography__TitleText-sc-19auepv-2 KxMwb"
+                fontSize="1.15em"
+                fontWeight={400}
                 letterSpacing="0px"
               >
-                My Latest Musings
-              </h4>
+                Section 1
+              </h5>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 NmRuW"
+                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
                 fontSize="0.876em"
-                fontWeight={300}
+                fontWeight={400}
                 id={null}
                 letterSpacing="0px"
               >
-                Totally Worth The Read...Enjoy!
+                In your imagination you can go anywhere you want. Let's put some happy little clouds in our world. We'll throw some old gray clouds in here just sneaking around and having fun. Let's do that again.
               </p>
               <p
-                className="Typography__Paragraph-sc-19auepv-3 eGFGis"
-                fontSize="0.75em"
-                fontWeight={600}
+                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                fontSize="0.876em"
+                fontWeight={400}
                 id={null}
-                letterSpacing="0.2px"
+                letterSpacing="0px"
               >
-                Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.
+                This is where you take out all your hostilities and frustrations. It's better than kicking the puppy dog around and all that so. Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. These things happen automatically. All you have to do is just let them happen. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. Only eight colors that you need.
               </p>
             </section>
             <section
-              className="Grid__GridWrapper-sc-1ntp7gx-0 kTWmUL Page__Body-mddda5-2 lmAbxe"
+              className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Page__Section-mddda5-1 gQPevj"
               id={null}
               rows={null}
             >
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Page__Section-mddda5-1 gQPevj"
-                id={null}
-                rows={null}
+              <h5
+                className="Typography__TitleText-sc-19auepv-2 KxMwb"
+                fontSize="1.15em"
+                fontWeight={400}
+                letterSpacing="0px"
               >
-                <h5
-                  className="Typography__TitleText-sc-19auepv-2 KxMwb"
-                  fontSize="1.15em"
-                  fontWeight={400}
-                  letterSpacing="0px"
-                >
-                  Section 1
-                </h5>
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                  fontSize="0.876em"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0px"
-                >
-                  In your imagination you can go anywhere you want. Let's put some happy little clouds in our world. We'll throw some old gray clouds in here just sneaking around and having fun. Let's do that again.
-                </p>
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                  fontSize="0.876em"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0px"
-                >
-                  This is where you take out all your hostilities and frustrations. It's better than kicking the puppy dog around and all that so. Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. These things happen automatically. All you have to do is just let them happen. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. Only eight colors that you need.
-                </p>
-              </section>
-              <section
-                className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Page__Section-mddda5-1 gQPevj"
+                Section 1
+              </h5>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                fontSize="0.876em"
+                fontWeight={400}
                 id={null}
-                rows={null}
+                letterSpacing="0px"
               >
-                <h5
-                  className="Typography__TitleText-sc-19auepv-2 KxMwb"
-                  fontSize="1.15em"
-                  fontWeight={400}
-                  letterSpacing="0px"
-                >
-                  Section 1
-                </h5>
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                  fontSize="0.876em"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0px"
-                >
-                  You want your tree to have some character. Make it special. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. We spend so much of our life looking - but never seeing.
-                </p>
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                  fontSize="0.876em"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0px"
-                >
-                  We'll throw some happy little limbs on this tree. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Painting should do one thing. It should put happiness in your heart. Think about a cloud. Just float around and be there. In this world, everything can be happy.
-                </p>
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                  fontSize="0.876em"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0px"
-                >
-                  Nice little fluffy clouds laying around in the sky being lazy. You need to have a very firm paint to do this. You have to allow the paint to break to make it beautiful.
-                </p>
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                  fontSize="0.876em"
-                  fontWeight={400}
-                  id={null}
-                  letterSpacing="0px"
-                >
-                  A little happy sunlight shining through there. We're not trying to teach you a thing to copy. We're just here to teach you a technique, then let you loose into the world. There's nothing wrong with having a tree as a friend.
-                </p>
-              </section>
+                You want your tree to have some character. Make it special. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. We spend so much of our life looking - but never seeing.
+              </p>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                fontSize="0.876em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                We'll throw some happy little limbs on this tree. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Painting should do one thing. It should put happiness in your heart. Think about a cloud. Just float around and be there. In this world, everything can be happy.
+              </p>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                fontSize="0.876em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                Nice little fluffy clouds laying around in the sky being lazy. You need to have a very firm paint to do this. You have to allow the paint to break to make it beautiful.
+              </p>
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                fontSize="0.876em"
+                fontWeight={400}
+                id={null}
+                letterSpacing="0px"
+              >
+                A little happy sunlight shining through there. We're not trying to teach you a thing to copy. We're just here to teach you a technique, then let you loose into the world. There's nothing wrong with having a tree as a friend.
+              </p>
             </section>
-          </div>
+          </section>
         </section>
       </div>
     </div>

@@ -9,7 +9,7 @@ exports[` 1`] = `
   }
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 hGrWSx"
+    className="Card__CardWrapper-sc-1g3s676-5 fOswFq"
     href={null}
     id={null}
     media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
@@ -52,12 +52,12 @@ exports[` 1`] = `
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-bookmark fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb"
+                className="svg-inline--fa fa-bookmark fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
                 color={null}
                 data-icon="bookmark"
                 data-prefix="fas"
                 focusable="false"
-                fontSize="1.35em"
+                fontSize="inherit"
                 id={null}
                 role="img"
                 style={Object {}}
@@ -124,7 +124,7 @@ exports[` 1`] = `
         open={false}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 dIxixP"
+          className="Button__StyledButton-sc-1v7sls2-0 gjQwth"
           disabled={false}
           htmlFor={null}
           id={null}
@@ -264,7 +264,7 @@ exports[` 2`] = `
   }
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
+    className="Card__CardWrapper-sc-1g3s676-5 cFiFxl"
     href={null}
     id={null}
     media={null}
@@ -282,7 +282,7 @@ exports[` 3`] = `
   }
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
+    className="Card__CardWrapper-sc-1g3s676-5 cFiFxl"
     href={null}
     id={null}
     media={null}
@@ -302,12 +302,12 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 boCGaE"
         >
           <div
-            className="Avatar__TagContainer-sc-1vuf9om-2 bIbEMn"
+            className="Avatar__TagContainer-sc-1vuf9om-2 bhCitP"
             id={null}
             onClick={null}
           >
             <h6
-              className="Typography__TitleText-sc-19auepv-2 exoZGd Avatar__AvatarText-sc-1vuf9om-0 lbHnkX"
+              className="Typography__TitleText-sc-19auepv-2 exoZGd Avatar__AvatarText-sc-1vuf9om-0 dBYaKd"
               fontSize="1em"
               fontWeight={400}
               letterSpacing="0px"
@@ -452,7 +452,7 @@ exports[` 4`] = `
   }
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 hGrWSx"
+    className="Card__CardWrapper-sc-1g3s676-5 fOswFq"
     href={null}
     id={null}
     media={null}
@@ -513,7 +513,7 @@ exports[` 5`] = `
     rows={null}
   >
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 kTXijy"
+      className="Card__CardWrapper-sc-1g3s676-5 dnxbXt"
       href={null}
       id={null}
       media={null}
@@ -546,7 +546,7 @@ exports[` 5`] = `
       </section>
     </div>
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
+      className="Card__CardWrapper-sc-1g3s676-5 cFiFxl"
       href={null}
       id={null}
       media={null}
@@ -579,7 +579,7 @@ exports[` 5`] = `
       </section>
     </div>
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 bHcZEt"
+      className="Card__CardWrapper-sc-1g3s676-5 drfBsO"
       href={null}
       id={null}
       media={null}
@@ -624,12 +624,12 @@ exports[` 6`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-6 iqBfAy"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-6 gASKFJ"
     id={null}
     rows={null}
   >
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 hGrWSx"
+      className="Card__CardWrapper-sc-1g3s676-5 fOswFq"
       href={null}
       id="a"
       media={Object {}}
@@ -672,12 +672,12 @@ exports[` 6`] = `
               >
                 <svg
                   aria-hidden="true"
-                  className="svg-inline--fa fa-bookmark fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb"
+                  className="svg-inline--fa fa-bookmark fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
                   color={null}
                   data-icon="bookmark"
                   data-prefix="fas"
                   focusable="false"
-                  fontSize="1.35em"
+                  fontSize="inherit"
                   id={null}
                   role="img"
                   style={Object {}}
@@ -834,7 +834,7 @@ exports[` 6`] = `
       </section>
     </div>
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 hGrWSx"
+      className="Card__CardWrapper-sc-1g3s676-5 fOswFq"
       href={null}
       id="b"
       media={Object {}}
@@ -866,12 +866,12 @@ exports[` 6`] = `
             className="Bar__Slot-icfo76-1 boCGaE"
           >
             <div
-              className="Avatar__TagContainer-sc-1vuf9om-2 bIbEMn"
+              className="Avatar__TagContainer-sc-1vuf9om-2 bhCitP"
               id={null}
               onClick={null}
             >
               <h6
-                className="Typography__TitleText-sc-19auepv-2 exoZGd Avatar__AvatarText-sc-1vuf9om-0 lbHnkX"
+                className="Typography__TitleText-sc-19auepv-2 exoZGd Avatar__AvatarText-sc-1vuf9om-0 dBYaKd"
                 fontSize="1em"
                 fontWeight={400}
                 letterSpacing="0px"
@@ -978,7 +978,7 @@ exports[` 6`] = `
       </section>
     </div>
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 hGrWSx"
+      className="Card__CardWrapper-sc-1g3s676-5 fOswFq"
       href={null}
       id="c"
       media={Object {}}
@@ -1021,12 +1021,12 @@ exports[` 6`] = `
               >
                 <svg
                   aria-hidden="true"
-                  className="svg-inline--fa fa-home-alt fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb"
+                  className="svg-inline--fa fa-home-alt fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
                   color={null}
                   data-icon="home-alt"
                   data-prefix="fas"
                   focusable="false"
-                  fontSize="1.35em"
+                  fontSize="inherit"
                   id={null}
                   role="img"
                   style={Object {}}
@@ -1093,7 +1093,7 @@ exports[` 6`] = `
           open={false}
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 bNBxRI"
+            className="Button__StyledButton-sc-1v7sls2-0 kooJoq"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -1234,47 +1234,47 @@ exports[` 7`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-6 iqBfAy"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-6 gASKFJ"
     id={null}
     rows={null}
   >
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
+      className="Card__CardWrapper-sc-1g3s676-5 cFiFxl"
       href={null}
       id={null}
       media={null}
       onClick={null}
     />
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
+      className="Card__CardWrapper-sc-1g3s676-5 cFiFxl"
       href={null}
       id={null}
       media={null}
       onClick={null}
     />
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
+      className="Card__CardWrapper-sc-1g3s676-5 cFiFxl"
       href={null}
       id={null}
       media={null}
       onClick={null}
     />
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
+      className="Card__CardWrapper-sc-1g3s676-5 cFiFxl"
       href={null}
       id={null}
       media={null}
       onClick={null}
     />
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
+      className="Card__CardWrapper-sc-1g3s676-5 cFiFxl"
       href={null}
       id={null}
       media={null}
       onClick={null}
     />
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 gtDGJG"
+      className="Card__CardWrapper-sc-1g3s676-5 cFiFxl"
       href={null}
       id={null}
       media={null}
