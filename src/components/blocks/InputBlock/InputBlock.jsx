@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable complexity */
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { DisabledContext } from "States";
@@ -10,9 +10,6 @@ import TextInput from "atoms/TextInput";
 import SelectMenu from "atoms/SelectMenu";
 import Icon from "atoms/Icon";
 import Button from "atoms/Button";
-
-
-
 
 const TextInputContainer = styled(Grid)`
   color: ${(props) => {
@@ -74,42 +71,41 @@ function InputBlock({
   textInputs,
   warning,
 }) {
-  const [state, setState] = useState({
-    input: textInputs.reduce((inputMap, input) => {
-      inputMap[input.id] = input.value;
-      return inputMap;
-    }, {}),
-    selected: null,
-  });
-
-  function handleChange(e) {
-    const newState = {
-      ...state,
-      input: { ...state.input, [e.target.id]: e.target.value },
-    };
-    if (onChange) {
-      onChange(state, newState, setState);
-    } else {
-      setState(newState);
-    }
-  }
-
-  function handleSelectChange(prevState, currState, setSelectState) {
-    if (onChange) {
-      const newState = { ...state, selected: currState.selected };
-      onChange(state, newState, (updatedState) => {
-        setSelectState({ selected: updatedState.selected });
-        if (updatedState.input !== newState.input) setState(updatedState);
+  const getValues = () => {
+    let selected = null;
+    if (options instanceof Array) {
+      options.forEach((option) => {
+        if (option.value === selectOptions) {
+          selected = option;
+        }
       });
-    } else {
-      setSelectState(currState);
     }
+    return {
+      input: textInputs.reduce((inputMap, input) => {
+        inputMap[input.id] = input.value;
+        return inputMap;
+      }),
+      selected: selected,
+    };
+  };
+
+  function _handleTextChange(e) {
+    const oldValues = getValues();
+    const newValues = { input: { ...oldValues.input, [e.target.id]: e.target.value }, selected: oldValues.selected };
+    onChange(oldValues, newValues, () => { });
   }
 
+  function _handleSelectChange(prevState, currState) {
+    const oldValues = getValues();
+    const newValues = { input: { ...oldValues.input }, selected: currState.selected };
+    onChange(oldValues, newValues, () => { });
+  }
 
+  const { handleTextChange, handleSelectChange } = typeof onChange === "function"
+    ? { handleSelectChange: _handleSelectChange, handleTextChange: _handleTextChange }
+    : { handleTextChange: null, handleSelectChange: null };
 
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let inputTextColor;
   let messageColor;
   let errorText;
@@ -131,7 +127,7 @@ function InputBlock({
         key={input.id}
         name={input.name || input.id}
         onBlur={onBlur}
-        onChange={handleChange}
+        onChange={handleTextChange}
         onFocus={onFocus}
         onKeyPress={onKeyPress}
         pattern={input.pattern}
@@ -139,7 +135,7 @@ function InputBlock({
         readonly={input.readonly}
         title={input.title}
         type={input.type}
-        value={state.input[input.id]}
+        value={input.value}
         warning={!!warning}
       />
     );
@@ -205,7 +201,7 @@ function InputBlock({
       <Button
         label={button.label}
         variant={button.variant}
-        onClick={(e) => { if (button.onClick) button.onClick(e, state); }}
+        onClick={(e) => { if (button.onClick) button.onClick(e, getValues()); }}
         disabled={isDisabled || button.disabled}
       />
     );
@@ -314,5 +310,6 @@ InputBlock.defaultProps = {
   }],
   warning: false,
 };
+
 
 export default InputBlock;
