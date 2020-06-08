@@ -61,15 +61,7 @@ function Media({
         <Video width="100%" title={mediaDesc || mimeType} controls>
           <source
             src={media}
-            type="video/mp4"
-          />
-          <source
-            src={media}
-            type="video/webm"
-          />
-          <source
-            src={media}
-            type="video/ogg"
+            type={mimeType}
           />
           Your browser does not support the video element.
         </Video>
@@ -79,15 +71,7 @@ function Media({
         <Audio title={mediaDesc || mimeType} controls>
           <source
             src={media}
-            type="audio/mp3"
-          />
-          <source
-            src={media}
-            type="audio/ogg"
-          />
-          <source
-            src={media}
-            type="audio/wav"
+            type={mimeType}
           />
           Your browser does not support the audio element.
         </Audio>
