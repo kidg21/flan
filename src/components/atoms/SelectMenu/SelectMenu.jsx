@@ -200,8 +200,7 @@ function SelectMenu({
   selectOptions,
   warning,
 }) {
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let textColor;
   let errorText = "";
   let messageColor;
@@ -219,15 +218,13 @@ function SelectMenu({
   const selectedOptsValue = useMemo(() => {
     let selectedOpts = [];
     if (selectOptions) {
-      selectedOpts =
-        selectOptions instanceof Array ? selectOptions : [selectOptions];
+      selectedOpts = selectOptions instanceof Array ? selectOptions : [selectOptions];
       selectedOpts = options.filter((opt) => {
         if (opt.value instanceof Array) {
           for (let i = 0; i < selectedOpts.length; i++) {
             const targetOpts = multiSelect ? selectedOpts[i] : selectedOpts;
             if (
-              targetOpts instanceof Array &&
-              targetOpts.length === opt.value.length
+              targetOpts instanceof Array && targetOpts.length === opt.value.length
             ) {
               let isMatch = true;
               for (let j = 0; j < targetOpts.length; j++) {
@@ -240,7 +237,9 @@ function SelectMenu({
             }
           }
           return false;
-        } else if (selectedOpts.length > 1 && !multiSelect) {
+        }
+
+        if (selectedOpts.length > 1 && !multiSelect) {
           // If the input would select multiple, but that is not allowed, skip it.
           return false;
         }
@@ -267,7 +266,7 @@ function SelectMenu({
     if (newSelection instanceof Array) {
       newSelectionValue = newSelection.map((val) => { return val.value; });
     } else {
-      newSelectionValue = newSelection.value;
+      newSelectionValue = newSelection ? newSelection.value : undefined;
     }
     if (onChange) onChange(newSelectionValue);
   }, [selectedOptsValue, onChange, onChangeState]);
