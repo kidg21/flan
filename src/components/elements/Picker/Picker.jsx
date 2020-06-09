@@ -43,7 +43,7 @@ const Swatch = styled.button`
   background-color: ${(props) => {
     return props.theme.swatches[props.color];
   }};
-  &:hover { 
+  &:hover {
     ${Darken};
   };
   &:focus {

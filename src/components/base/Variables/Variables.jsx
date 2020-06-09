@@ -80,11 +80,14 @@ export const colors = {
 
 // need to have hex key to work with old draw tools
 export const drawPalette = {
-  "#E4423A": colors.red60,
-  "#FF8000": colors.orange60,
+  "#EBEAEC": colors.softGrey,
+  "#D9ECEC": colors.softBlue,
+  "#80959D": colors.moss,
+  "#63B1CD": colors.robinBlue,
+  "#06BFAE": colors.seafoam,
+  "#095593": colors.blueSteel,
+  "#F3822B": colors.tangerine,
   "#FFBF00": colors.lemon,
-  "#14A939": colors.green60,
-  "#2F98EE": colors.blue60,
 };
 
 export const shadows = {
