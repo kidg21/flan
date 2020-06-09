@@ -12,30 +12,21 @@ import Switch from "atoms/Switch";
 import Text, { Title, Label } from "base/Typography";
 import { InteractiveContext, DisabledContext, PaddingContext } from "States";
 
-const ListTitle = styled(Label)`
+const ListTitle = styled.li`
+  color: ${(props) => {
+    return props.theme.text.primary;
+  }};
+  margin-bottom: 0.5rem;
+`;
+
+const ListSectionWrapper = styled.li`
   color: ${(props) => {
     return props.theme.text.secondary;
   }};
   text-transform: uppercase;
-  margin-bottom: 0.5rem;
   letter-spacing: 1px;
-`;
-
-const ListWrapper = styled.ul`
-  display: flex;
-  flex: auto;
-  flex-direction: column;
-  list-style: none;
-  padding: 1rem;
-  li:not(:last-child) {
-    border-bottom: ${(props) => {
-    return props.isDivided ? "1px solid" : "";
-  }};
-    border-bottom-color: ${(props) => {
-    return props.isDivided ? props.theme.palette.neutral40 : "";
-  }};
-  }
-  
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
 `;
 
 const ListItemWrapper = styled.li`
@@ -72,13 +63,37 @@ const ListItemWrapper = styled.li`
   }
 `;
 
+const ListWrapper = styled.ul`
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  list-style: none;
+  height: inherit;
+  padding: 1rem;
+  li:not(:last-child) {
+    border-bottom: ${(props) => {
+    return props.isDivided ? "1px solid" : "";
+  }};
+    border-bottom-color: ${(props) => {
+    return props.isDivided ? props.theme.palette.neutral40 : "";
+  }};
+  }
+  & > ${ListSectionWrapper}:first-of-type {
+    margin-top: 0;
+  }
+`;
+
 function List({
   children, id, isDivided, isInteractive, title, padding,
 }) {
   return (
     <InteractiveContext.Provider value={isInteractive}>
       <ListWrapper isDivided={isDivided} id={id}>
-        <ListTitle text={title} />
+        {title ? (
+          <ListTitle>
+            <Title text={title} size="lg" weight="bold" />
+          </ListTitle>
+        ) : null}
         <PaddingContext.Provider value={padding}>
           {children}
         </PaddingContext.Provider>
@@ -102,6 +117,23 @@ List.defaultProps = {
   isInteractive: false,
   padding: "0",
   title: null,
+};
+
+function ListSection({
+  section,
+}) {
+  return (
+    <ListSectionWrapper>
+      <Text text={section} weight="light" />
+    </ListSectionWrapper>
+  );
+}
+
+ListSection.propTypes = {
+  section: PropTypes.string,
+};
+ListSection.defaultProps = {
+  section: null,
 };
 
 function getRightContent(post, disabled, onClick) {
@@ -181,8 +213,8 @@ function ListItem({
   const leftContent = getLeftContent(pre, disabled, onClick);
   const centerContent = (
     <React.Fragment>
-      <Title text={title} disabled={disabled} />
-      {description ? (<Text size="sm" text={description} disabled={disabled} />
+      <Title text={title || null} disabled={disabled} weight="bold" />
+      {description ? (<Text size="sm" text={description || null} disabled={disabled} />
       ) : null}
     </React.Fragment>);
 
@@ -261,4 +293,4 @@ ListItem.defaultProps = {
   tabIndex: "0",
 };
 
-export { List as default, ListItem };
+export { List as default, ListSection, ListItem };

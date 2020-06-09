@@ -1,10 +1,26 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import List, { ListItem } from "blocks/List";
+import { FullScreen } from "helpers/Display";
+import List, { ListSection, ListItem } from "blocks/List";
 
 storiesOf("Blocks|List", module)
   .addDecorator(withKnobs)
+  .addDecorator(FullScreen)
+  .add(
+    "Sections",
+    () => {
+      return (
+        <List title="List Title" isInteractive>
+          <ListSection section="Section Name" />
+          <ListItem title="List Item" />
+          <ListSection section="Section Name" />
+          <ListItem title="List Item" />
+          <ListItem title="List Item" />
+        </List>
+      );
+    },
+  )
   .add(
     "Documentation",
     () => {
