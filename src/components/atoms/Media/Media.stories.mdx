@@ -13,8 +13,6 @@ import Page from "layout/Page";
 
 # Media
 
-### Media...
-
 The Media atom is used to diplay all types of media.  In addition to standard image, audio, and video files, Media can be used to embed external application content within an iframe.
 
 ## Examples
@@ -22,22 +20,24 @@ The Media atom is used to diplay all types of media.  In addition to standard im
 ### Image
 
 Passing in an image source load the HTML5 video player.
+
 - Formats Supported: mp4, webm, and ogg
 
 <Preview withToolbar>
   <Story name="Image">
     <Grid columns="3">
-      <Media
-        id="Image"
-        media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
-      />
-    </Grid>
+        <Media
+          id="Image"
+          media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
+        />
+      </Grid>
   </Story>
 </Preview>
 
 ### Audio
 
 Passing in an audio source will load the HTML5 audio player.
+
 - Formats Supported: mp3, ogg, and wav
 
 <Preview withToolbar>
@@ -54,6 +54,7 @@ Passing in an audio source will load the HTML5 audio player.
 ### Video
 
 Passing in a video source load the HTML5 video player.
+
 - Formats Supported: mp4, webm, and ogg
 (video from Youtube and Vimeo are supported but are displayed in an iframe instead of using the video player)
 
