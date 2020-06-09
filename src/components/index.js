@@ -22,6 +22,7 @@ export { default as Divider } from "./atoms/Divider";
 export { default as Icon } from "./atoms/Icon";
 export { default as Image } from "./atoms/Image";
 export { default as Loader } from "./atoms/Loader";
+export { default as Media } from "./atoms/Media";
 export { default as Radio, RadioGroup } from "./atoms/Radio";
 export { default as SelectMenu } from "./atoms/SelectMenu";
 export { default as Slider } from "./atoms/Slider";
