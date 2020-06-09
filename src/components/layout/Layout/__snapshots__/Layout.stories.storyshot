@@ -373,7 +373,7 @@ exports[` 5`] = `
           id="List Panel_header"
         >
           <div
-            className="Card__CardWrapper-sc-1g3s676-5 dnxbXt"
+            className="Card__CardWrapper-sc-1g3s676-3 bXUrDD"
             href={null}
             id={null}
             media={null}
@@ -931,18 +931,20 @@ exports[` 5`] = `
           id="Info Panel_header"
         >
           <div
-            className="Card__CardWrapper-sc-1g3s676-5 dnxbXt"
+            className="Card__CardWrapper-sc-1g3s676-3 bXUrDD"
             href={null}
             id={null}
             media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
             onClick={null}
           >
             <section
-              className="Card__CardSectionWrapper-sc-1g3s676-1 Card__Media-sc-1g3s676-2 lawMMa"
+              className="Media__MediaContainer-sc-1ofqnpx-0 deYKND Card__CardMedia-sc-1g3s676-2 dGtEUP"
+              id={null}
+              onClick={null}
             >
               <img
                 alt="Media Description"
-                className="Image__ImageWrapper-sc-18abvff-0 hXzVKy Card__CardImage-sc-1g3s676-3 hDDBde"
+                className="Image__ImageWrapper-sc-18abvff-0 hXzVKy Media__ImageWrapper-sc-1ofqnpx-1 iIUijx"
                 onClick={null}
                 src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
                 title="Media Description"
@@ -963,18 +965,18 @@ exports[` 5`] = `
                   className="Bar__Slot-icfo76-1 boCGaE"
                 >
                   <div
-                    className="Avatar__TagContainer-sc-1vuf9om-2 bhCitP"
+                    className="Avatar__TagContainer-sc-1vuf9om-2 brBuoT"
                     id={null}
                     onClick={null}
                   >
                     <svg
                       aria-hidden="true"
-                      className="svg-inline--fa fa-bookmark fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 fMXrpG"
+                      className="svg-inline--fa fa-bookmark fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 lhHlxO"
                       color={null}
                       data-icon="bookmark"
                       data-prefix="fas"
                       focusable="false"
-                      fontSize="0.75em"
+                      fontSize="0.875em"
                       id={null}
                       role="img"
                       style={Object {}}
@@ -1324,7 +1326,7 @@ exports[` 6`] = `
           id="List Panel_header"
         >
           <div
-            className="Card__CardWrapper-sc-1g3s676-5 dnxbXt"
+            className="Card__CardWrapper-sc-1g3s676-3 bXUrDD"
             href={null}
             id={null}
             media={null}
@@ -1882,18 +1884,20 @@ exports[` 6`] = `
           id="Info Panel_header"
         >
           <div
-            className="Card__CardWrapper-sc-1g3s676-5 dnxbXt"
+            className="Card__CardWrapper-sc-1g3s676-3 bXUrDD"
             href={null}
             id={null}
             media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
             onClick={null}
           >
             <section
-              className="Card__CardSectionWrapper-sc-1g3s676-1 Card__Media-sc-1g3s676-2 lawMMa"
+              className="Media__MediaContainer-sc-1ofqnpx-0 deYKND Card__CardMedia-sc-1g3s676-2 dGtEUP"
+              id={null}
+              onClick={null}
             >
               <img
                 alt="Media Description"
-                className="Image__ImageWrapper-sc-18abvff-0 hXzVKy Card__CardImage-sc-1g3s676-3 hDDBde"
+                className="Image__ImageWrapper-sc-18abvff-0 hXzVKy Media__ImageWrapper-sc-1ofqnpx-1 iIUijx"
                 onClick={null}
                 src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
                 title="Media Description"
@@ -1914,18 +1918,18 @@ exports[` 6`] = `
                   className="Bar__Slot-icfo76-1 boCGaE"
                 >
                   <div
-                    className="Avatar__TagContainer-sc-1vuf9om-2 bhCitP"
+                    className="Avatar__TagContainer-sc-1vuf9om-2 brBuoT"
                     id={null}
                     onClick={null}
                   >
                     <svg
                       aria-hidden="true"
-                      className="svg-inline--fa fa-bookmark fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 fMXrpG"
+                      className="svg-inline--fa fa-bookmark fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 lhHlxO"
                       color={null}
                       data-icon="bookmark"
                       data-prefix="fas"
                       focusable="false"
-                      fontSize="0.75em"
+                      fontSize="0.875em"
                       id={null}
                       role="img"
                       style={Object {}}
