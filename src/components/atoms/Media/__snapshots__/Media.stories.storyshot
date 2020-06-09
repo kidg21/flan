@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb"
+  id={null}
+  rows={null}
+>
+  <section
+    className="Media__MediaContainer-sc-1ofqnpx-0 deYKND"
+    id="Image"
+    onClick={null}
+  >
+    <img
+      alt="image/jpeg"
+      className="Image__ImageWrapper-sc-18abvff-0 hXzVKy Media__ImageWrapper-sc-1ofqnpx-1 iIUijx"
+      onClick={null}
+      src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
+      title="image/jpeg"
+      width="100%"
+    />
+  </section>
+</section>
+`;
+
+exports[` 2`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb"
+  id={null}
+  rows={null}
+>
+  <section
+    className="Media__MediaContainer-sc-1ofqnpx-0 deYKND"
+    id="Audio"
+    onClick={null}
+  >
+    <audio
+      className="Media__Audio-sc-1ofqnpx-2 hTgoaP"
+      controls={true}
+      title="audio/mpeg"
+    >
+      <source
+        src="https://www.w3schools.com/html/horse.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+</section>
+`;
+
+exports[` 3`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb"
+  id={null}
+  rows={null}
+>
+  <section
+    className="Media__MediaContainer-sc-1ofqnpx-0 deYKND"
+    id="Video"
+    onClick={null}
+  >
+    <video
+      className="Media__Video-sc-1ofqnpx-3 imikFd"
+      controls={true}
+      title="video/mp4"
+      width="100%"
+    >
+      <source
+        src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+        type="video/mp4"
+      />
+      Your browser does not support the video element.
+    </video>
+  </section>
+  <section
+    className="Media__MediaContainer-sc-1ofqnpx-0 deYKND"
+    id={null}
+    onClick={null}
+  >
+    <iframe
+      allow="fullscreen"
+      allowFullScreen={true}
+      className="Media__Frame-sc-1ofqnpx-4 dkKlmr"
+      frameBorder="0"
+      height="100vh"
+      src="https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0"
+      title="iframe"
+      width="100%"
+    />
+  </section>
+  <section
+    className="Media__MediaContainer-sc-1ofqnpx-0 deYKND"
+    id={null}
+    onClick={null}
+  >
+    <iframe
+      allow="fullscreen"
+      allowFullScreen={true}
+      className="Media__Frame-sc-1ofqnpx-4 dkKlmr"
+      frameBorder="0"
+      height="100vh"
+      src="https://player.vimeo.com/video/798022"
+      title="iframe"
+      width="100%"
+    />
+  </section>
+</section>
+`;
+
+exports[` 4`] = `
+<div
+  style={
+    Object {
+      "height": "100vh",
+      "width": "100%",
+    }
+  }
+>
+  <section
+    className="Media__MediaContainer-sc-1ofqnpx-0 deYKND"
+    id="Web Site"
+    onClick={null}
+  >
+    <iframe
+      allow="fullscreen"
+      allowFullScreen={true}
+      className="Media__Frame-sc-1ofqnpx-4 dkKlmr"
+      frameBorder="0"
+      height="100vh"
+      src="https://www.lightboxre.com/"
+      title="iframe"
+      width="100%"
+    />
+  </section>
+</div>
+`;
