@@ -62,11 +62,12 @@ export const colors = {
   grey90: "hsl(240, 2%, 18%)",
   grey100: "hsl(34, 5%, 12%)", // blackish
 
+  hover: "hsla(240, 2%, 57%, 0.25)",
 
-  lightBoxNavy: "hsl(216.6,72%,21%)",
-  lightBoxCyan: "hsl(197,100%,44%)",
-  lightBoxGold: "hsl(46,64.2%,52.9%)",
-  lightBoxGrey: "hsl(200,2.6%,77.1%)",
+  lightBoxNavy: "hsl(216.6, 72%, 21%)",
+  lightBoxCyan: "hsl(197, 100%, 44%)",
+  lightBoxGold: "hsl(46, 64.2%, 52.9%)",
+  lightBoxGrey: "hsl(200, 2.6%, 77.1%)",
   softGrey: "hsl(270, 5%, 92.2%)",
   softBlue: "hsl(180, 33.3%, 88.8%)",
   moss: "hsl(197, 12.9%, 55.9%)",
@@ -151,8 +152,10 @@ export const DMPTheme = {
     app: colors.white40,
     default: colors.white60,
     disabled: colors.grey10,
+    hover: colors.hover,
     info: colors.blue100,
     inverse: colors.grey100,
+    listBlue: colors.lightBoxNavy,
     modal: colors.shade10,
     selected: colors.blue40,
     success: colors.green100,

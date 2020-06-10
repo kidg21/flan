@@ -16,36 +16,34 @@ const ListTitle = styled.li`
   color: ${(props) => {
     return props.theme.text.primary;
   }};
-  margin-bottom: 0.5rem;
+  color: inherit;
+  margin-bottom: 0.25rem;
 `;
 
 const ListSectionWrapper = styled.li`
-  color: ${(props) => {
-    return props.theme.text.secondary;
-  }};
+  color: inherit;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-top: 0.75rem;
+  margin-top: 0.5rem;
   margin-bottom: 0.25rem;
 `;
 
 const ListItemWrapper = styled.li`
   position: relative;
   color: ${(props) => {
-    return props.isSelected ? props.theme.text.inverse : props.theme.text.primary;
+    return props.theme.text[props.listItemColor] || "";
   }};
   background-color: ${(props) => {
-    return props.isSelected ? props.theme.background.selected : props.theme.background.default;
+    return props.theme.background[props.listItemBackground] || "";
   }};
   padding: .5em;
   margin-bottom: 1px;
   cursor: ${(props) => {
-    return props.isInteractive ? "pointer" : "";
+    return props.isInteractive && !props.isSelected ? "pointer" : "default";
   }};
-  &:focus,
   &:hover {
-    ${(props) => {
-    return props.isInteractive ? Darken : "";
+    background-color: ${(props) => {
+    return props.isInteractive ? props.theme.background[props.hoverBackground] : "";
   }};
   }
   outline: none;
@@ -68,6 +66,12 @@ const ListWrapper = styled.ul`
   flex: auto;
   flex-direction: column;
   list-style: none;
+  color: ${(props) => {
+    return props.listColor ? props.theme.text[props.listColor] : props.theme.text.primary;
+  }};
+  background-color: ${(props) => {
+    return props.theme.background[props.listBackground] || props.theme.background.default;
+  }};
   height: inherit;
   padding: 1rem;
   li:not(:last-child) {
@@ -82,59 +86,6 @@ const ListWrapper = styled.ul`
     margin-top: 0;
   }
 `;
-
-function List({
-  children, id, isDivided, isInteractive, title, padding,
-}) {
-  return (
-    <InteractiveContext.Provider value={isInteractive}>
-      <ListWrapper isDivided={isDivided} id={id}>
-        {title ? (
-          <ListTitle>
-            <Title text={title} size="lg" weight="bold" />
-          </ListTitle>
-        ) : null}
-        <PaddingContext.Provider value={padding}>
-          {children}
-        </PaddingContext.Provider>
-      </ListWrapper>
-    </InteractiveContext.Provider>
-  );
-}
-
-List.propTypes = {
-  children: PropTypes.node,
-  id: PropTypes.string,
-  isDivided: PropTypes.bool,
-  isInteractive: PropTypes.bool,
-  padding: PropTypes.string,
-  title: PropTypes.string,
-};
-List.defaultProps = {
-  children: null,
-  id: null,
-  isDivided: false,
-  isInteractive: false,
-  padding: "0",
-  title: null,
-};
-
-function ListSection({
-  section,
-}) {
-  return (
-    <ListSectionWrapper>
-      <Text text={section} weight="light" />
-    </ListSectionWrapper>
-  );
-}
-
-ListSection.propTypes = {
-  section: PropTypes.string,
-};
-ListSection.defaultProps = {
-  section: null,
-};
 
 function getRightContent(post, disabled, onClick) {
   let rightContent = null;
@@ -210,6 +161,19 @@ function ListItem({
   tabIndex,
   title,
 }) {
+  let listItemColor = "inherit";
+  let listItemBackground = "inherit";
+  // const hoverColor = "hover";
+  let hoverBackground;
+  if (isSelected) {
+    listItemColor = "inverse";
+    listItemBackground = "selected";
+  } else {
+    //   listItemColor = "primary";
+    //   listItemBackground = "inherit";
+    hoverBackground = "hover";
+  }
+
   const leftContent = getLeftContent(pre, disabled, onClick);
   const centerContent = (
     <React.Fragment>
@@ -223,6 +187,7 @@ function ListItem({
   return (
     <ListItemWrapper
       as={as}
+      disabled={disabled}
       href={href}
       id={id}
       isInteractive={
@@ -231,7 +196,10 @@ function ListItem({
           : useContext(InteractiveContext)
       }
       isSelected={isSelected}
-      disabled={disabled}
+      listItemColor={listItemColor}
+      listItemBackground={listItemBackground}
+      // hoverColor={hoverColor}
+      hoverBackground={hoverBackground}
       onClick={onClick}
       tabIndex={disabled ? "-1" : tabIndex}
     >
@@ -291,6 +259,78 @@ ListItem.defaultProps = {
   post: null,
   pre: null,
   tabIndex: "0",
+};
+
+function List({
+  children, id, isDivided, isInteractive, title, padding, hasBackground, isInverse,
+}) {
+  let listColor;
+  let listBackground;
+  if (hasBackground) {
+    listColor = "inverse";
+    listBackground = "listBlue";
+  }
+  if (isInverse) {
+    listColor = "inverse";
+    listBackground = "inverse";
+  }
+  return (
+    <InteractiveContext.Provider value={isInteractive}>
+      <ListWrapper
+        id={id}
+        isDivided={isDivided}
+        listBackground={listBackground}
+        listColor={listColor}
+      >
+        {title ? (
+          <ListTitle>
+            <Title text={title} size="lg" weight="bold" />
+          </ListTitle>
+        ) : null}
+        <PaddingContext.Provider value={padding}>
+          {children}
+        </PaddingContext.Provider>
+      </ListWrapper>
+    </InteractiveContext.Provider>
+  );
+}
+
+List.propTypes = {
+  children: PropTypes.node,
+  id: PropTypes.string,
+  isDivided: PropTypes.bool,
+  isInteractive: PropTypes.bool,
+  padding: PropTypes.string,
+  title: PropTypes.string,
+};
+List.defaultProps = {
+  children: null,
+  id: null,
+  isDivided: false,
+  isInteractive: false,
+  padding: "0",
+  title: null,
+};
+
+function ListSection({
+  section,
+}) {
+  return (
+    // <ListSectionWrapper>
+    //   <Text text={section} weight="light" />
+    // </ListSectionWrapper>
+    <ListSectionWrapper>
+      <Text text={section} weight="light" />
+      {/* <Title text={title} size="lg" weight="bold" /> */}
+    </ListSectionWrapper>
+  );
+}
+
+ListSection.propTypes = {
+  section: PropTypes.string,
+};
+ListSection.defaultProps = {
+  section: null,
 };
 
 export { List as default, ListSection, ListItem };

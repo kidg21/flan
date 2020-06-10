@@ -11,11 +11,11 @@ storiesOf("Blocks|List", module)
     "Sections",
     () => {
       return (
-        <List title="List Title" isInteractive>
+        <List title="List Title" isInteractive isInverse2 hasBackground>
           <ListSection section="Section Name" />
           <ListItem title="List Item" />
           <ListSection section="Section Name" />
-          <ListItem title="List Item" />
+          <ListItem title="List Item" isSelected />
           <ListItem title="List Item" />
         </List>
       );
