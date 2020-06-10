@@ -7,7 +7,7 @@ import Grid from "layout/Grid";
 import Text, { Title, Link } from "base/Typography";
 import Icon from "atoms/Icon";
 import Card, { CardSection, CardGrid } from "elements/Card";
-import List, { ListItem } from "blocks/List";
+import List, { ListSection, ListItem } from "blocks/List";
 import Tabs, { TabItem } from "blocks/Tabs";
 import Table from "blocks/Table";
 import Form, { FormSection } from "layout/Form";
@@ -90,7 +90,7 @@ MockPalette.defaultProps = {
 function MockHeader() {
   return (
     <Card>
-      <CardSection padding="" variant="info">
+      <CardSection padding="" variant="">
         <Title size="xl" text="This Is A Title" weight="bold" />
         <Text text="The Description Goes Here" />
       </CardSection>
@@ -123,43 +123,44 @@ MockFooter.defaultProps = {
   // stuff
 };
 
-function MockList() {
+function MockMenu() {
   return (
-    <React.Fragment>
-      <List title="Group Name" isInteractive>
-        <ListItem
-          title="List Item"
-        />
-      </List>
-      <List title="Group Name" isInteractive>
-        <ListItem
-          title="List Item"
-        />
-        <ListItem
-          title="List Item"
-        />
-        <ListItem
-          title="List Item"
-        />
-        <ListItem
-          title="List Item"
-        />
-      </List>
-      <List title="Group Name" isInteractive>
-        <ListItem
-          title="List Item"
-        />
-        <ListItem
-          title="List Item"
-        />
-      </List>
-    </React.Fragment>
+    <List title="Menu Title" isInteractive hasBackground>
+      <ListItem title="Menu Item" />
+      <ListItem title="Selected Item" isSelected />
+      <ListItem title="Menu Item" />
+      <ListItem title="Menu Item" />
+      <ListItem title="Disabled Item" disabled />
+    </List>
   );
 }
-MockList.propTypes = {
+MockMenu.propTypes = {
   // stuff
 };
-MockList.defaultProps = {
+MockMenu.defaultProps = {
+  // stuff
+};
+
+function MockWorkflow() {
+  return (
+    <List title="Workflow Name" isInteractive>
+      <ListSection section="Section Name" />
+      <ListItem title="Workflow Item" />
+      <ListSection section="Section Name" />
+      <ListItem title="Selected Item" isSelected />
+      <ListItem title="Workflow Item" />
+      <ListItem title="Workflow Item" />
+      <ListItem title="Workflow Item" />
+      <ListSection section="Section Name" />
+      <ListItem title="Disabled Item" disabled />
+      <ListItem title="Disabled Item" disabled />
+    </List>
+  );
+}
+MockWorkflow.propTypes = {
+  // stuff
+};
+MockWorkflow.defaultProps = {
   // stuff
 };
 
@@ -534,12 +535,12 @@ const infoCard = (
     title="Best Place Ever"
     description="I Could Tell You More, But..."
     icon="home"
-    commands={[
-      {
-        id: "Action One",
-        label: "Action",
-      },
-    ]}
+    // commands={[
+    //   {
+    //     id: "Action One",
+    //     label: "Action",
+    //   },
+    // ]}
     shadow="0"
   />
 );
@@ -655,9 +656,10 @@ export {
   MockFooter,
   MockForm,
   MockHeader,
-  MockList,
   MockPalette,
   MockMap,
+  MockMenu,
   MockTable,
   MockTabs,
+  MockWorkflow,
 };

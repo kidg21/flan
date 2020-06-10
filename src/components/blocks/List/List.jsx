@@ -13,11 +13,10 @@ import Text, { Title, Label } from "base/Typography";
 import { InteractiveContext, DisabledContext, PaddingContext } from "States";
 
 const ListTitle = styled.li`
-  color: ${(props) => {
-    return props.theme.text.primary;
-  }};
   color: inherit;
-  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
 `;
 
 const ListSectionWrapper = styled.li`
@@ -51,9 +50,6 @@ const ListItemWrapper = styled.li`
     cursor: not-allowed;
     pointer-events: none;
     user-select: none;
-    background-color: ${(props) => {
-    return props.theme.background.disabled;
-  }};
     border-left: none;
   }
   &:last-child {
@@ -67,7 +63,7 @@ const ListWrapper = styled.ul`
   flex-direction: column;
   list-style: none;
   color: ${(props) => {
-    return props.listColor ? props.theme.text[props.listColor] : props.theme.text.primary;
+    return props.listColor ? props.theme.text[props.listColor] : props.theme.text.secondary;
   }};
   background-color: ${(props) => {
     return props.theme.background[props.listBackground] || props.theme.background.default;
@@ -163,14 +159,14 @@ function ListItem({
 }) {
   let listItemColor = "inherit";
   let listItemBackground = "inherit";
-  // const hoverColor = "hover";
   let hoverBackground;
+  if (disabled) {
+    listItemColor = "disabled";
+    listItemBackground = "none";
+  }
   if (isSelected) {
-    listItemColor = "inverse";
     listItemBackground = "selected";
   } else {
-    //   listItemColor = "primary";
-    //   listItemBackground = "inherit";
     hoverBackground = "hover";
   }
 
@@ -260,19 +256,17 @@ ListItem.defaultProps = {
   pre: null,
   tabIndex: "0",
 };
-
 function List({
   children, id, isDivided, isInteractive, title, padding, hasBackground, isInverse,
 }) {
   let listColor;
   let listBackground;
-  if (hasBackground) {
-    listColor = "inverse";
-    listBackground = "listBlue";
-  }
   if (isInverse) {
     listColor = "inverse";
     listBackground = "inverse";
+  } else if (hasBackground) {
+    listColor = "inverse";
+    listBackground = "menuDark";
   }
   return (
     <InteractiveContext.Provider value={isInteractive}>
@@ -284,7 +278,7 @@ function List({
       >
         {title ? (
           <ListTitle>
-            <Title text={title} size="lg" weight="bold" />
+            <Title text={title} size="sm" weight="bold" />
           </ListTitle>
         ) : null}
         <PaddingContext.Provider value={padding}>
@@ -316,12 +310,8 @@ function ListSection({
   section,
 }) {
   return (
-    // <ListSectionWrapper>
-    //   <Text text={section} weight="light" />
-    // </ListSectionWrapper>
     <ListSectionWrapper>
-      <Text text={section} weight="light" />
-      {/* <Title text={title} size="lg" weight="bold" /> */}
+      <Text text={section} weight="" />
     </ListSectionWrapper>
   );
 }

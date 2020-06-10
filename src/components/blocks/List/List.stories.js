@@ -11,7 +11,7 @@ storiesOf("Blocks|List", module)
     "Sections",
     () => {
       return (
-        <List title="List Title" isInteractive isInverse2 hasBackground>
+        <List title="List Title" isInteractive isInverse hasBackground>
           <ListSection section="Section Name" />
           <ListItem title="List Item" />
           <ListSection section="Section Name" />
