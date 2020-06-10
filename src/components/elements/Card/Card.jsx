@@ -1,24 +1,22 @@
-/* eslint-disable jsx-a11y/media-has-caption */
 /* eslint-disable linebreak-style */
+/* eslint-disable jsx-a11y/media-has-caption */
 /* eslint-disable complexity */
 import React, { useState, useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 import { Spacer } from "helpers/Display.jsx";
-import { Darken } from "Variables";
 import Grid from "layout/Grid";
 import Bar from "layout/Bar";
 import Text, { Title } from "base/Typography";
 import Icon from "atoms/Icon";
 import Command from "atoms/Command";
-import Image from "atoms/Image";
+import Media from "atoms/Media";
 import Avatar from "atoms/Avatar";
 import Menu from "blocks/Menu";
 import Badge from "atoms/Badge";
 import Expander from "utils/Expander";
 import { DisableTransitionContext } from "States";
-import mime from "mime";
 
 const LinkedWrapper = styled.a`
   flex: auto;
@@ -62,35 +60,13 @@ const CardSectionWrapper = styled.section`
   }
 `;
 
-const Media = styled(CardSectionWrapper)`
-  height: ${(props) => {
-    return props.image ? "12em" : "";
-  }};
-  padding: 0;
-  overflow: hidden;
-  + ${CardSectionWrapper} {
-    margin-top: 1px;
-  }
-`;
-
-const CardImage = styled(Image)`
-  object-fit: cover;
-  width: 100%;
-  max-width: inherit;
-  height: 100%;
-`;
-
-const CardAudio = styled.audio`
-  width: 100%;
-  &:focus {
-    outline: none;
-  }
+const CardMedia = styled(Media)`
+  display: inherit;
 `;
 
 const CardWrapper = styled.div`
   position: relative;
   display: flex;
-  height: inherit;
   cursor: ${(props) => {
     return props.onClick ? "pointer" : "";
   }};
@@ -127,6 +103,10 @@ const CardWrapper = styled.div`
 `;
 
 const CardGridWrapper = styled(Grid)`
+/** TODO: Prevent Cards from being cropped in norrow containers */
+  /* grid-template-columns: repeat(auto-fill,minmax(auto, 14rem)); */
+  /* justify-content: space-between; */
+  padding: 1rem;
   ${CardWrapper} {
     height: 100%;
     border-radius: ${(props) => {
@@ -204,7 +184,7 @@ function ExpandingSection({
             padding="0"
             contentAlign="center"
             left={label || icon ? {
-              content: <Avatar label={label} icon={icon} />,
+              content: <Avatar label={label} icon={icon} size="sm" />,
               width: "max-content",
             } : null}
             center={{
@@ -217,7 +197,7 @@ function ExpandingSection({
               align: "left",
             }}
             right={children ? {
-              content: <Icon icon="up" size="lg" rotation={rotation} />,
+              content: <Icon icon="down" size="lg" rotation={rotation} />,
               width: "max-content",
             } : null}
           />
@@ -400,7 +380,7 @@ function Card({
           padding="0"
           contentAlign="center"
           left={label || icon ? {
-            content: <Avatar label={label} icon={icon} />,
+            content: <Avatar label={label} icon={icon} size="sm" />,
             width: "max-content",
           } : null}
           center={{
@@ -429,79 +409,6 @@ function Card({
         </CardSection>
       );
     }
-  }
-
-  const mimeType = mime.getType(media);
-  let mediaSection;
-  if (mimeType) {
-    if (mimeType.startsWith("image")) {
-      mediaSection = (
-        <Media image>
-          <CardImage
-            src={media}
-            alt={mediaDesc || `Image: ${media}`}
-            width="100%"
-          />
-        </Media>
-      );
-    } else if (mimeType.startsWith("video")) {
-      mediaSection = (
-        <Media>
-          <video width="100%" title={mediaDesc || `Video: ${media}`} controls>
-            <source
-              src={media}
-              type="video/mp4"
-            />
-            <source
-              src={media}
-              type="video/webm"
-            />
-            <source
-              src={media}
-              type="video/ogg"
-            />
-            Your browser does not support the video element.
-          </video>
-        </Media>
-      );
-    } else if (mimeType.startsWith("audio")) {
-      mediaSection = (
-        <CardSection>
-          <CardAudio title={mediaDesc || `Audio: ${media}`} controls>
-            <source
-              src={media}
-              type="audio/mp3"
-            />
-            <source
-              src={media}
-              type="audio/ogg"
-            />
-            <source
-              src={media}
-              type="audio/wav"
-            />
-            Your browser does not support the audio element.
-          </CardAudio>
-        </CardSection>
-      );
-      // Currently redundant to the 'else' case
-      // but captured should we need to handle
-      // supported mime-types in a specific way
-    } else if (mimeType.startsWith("text")
-      || mimeType.startsWith("application")) {
-      mediaSection = (
-        <Media>
-          <iframe src={media} title={mediaDesc || `Media: ${media}`} width="100%" frameBorder="0" allow="fullscreen" allowFullScreen />
-        </Media>
-      );
-    }
-    // Fallback for Youtube, Vimeo and other unsupported mime-types
-  } else {
-    mediaSection = (
-      <Media>
-        <iframe src={media} title={mediaDesc || `Media: ${media}`} width="100%" frameBorder="0" allow="fullscreen" allowFullScreen />
-      </Media>
-    );
   }
 
   let commandElements = null;
@@ -568,7 +475,7 @@ function Card({
       media={media}
       shadow={shadow}
     >
-      {media ? mediaSection : null}
+      {media ? <CardMedia media={media} mediaDesc={mediaDesc} /> : null}
       {headerSection}
       {body ? (
         <CardSection onClick={onClick}>

@@ -1,0 +1,95 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { withKnobs, label, boolean, select } from "@storybook/addon-knobs";
+import { action } from "@storybook/addon-actions";
+import { Padding } from "helpers/Display";
+import { FullScreen } from "helpers/Display";
+import Grid from "layout/Grid";
+import Bar from "layout/Bar";
+import Media from "atoms/Media";
+import Icon from "atoms/Icon";
+import Page from "layout/Page";
+
+<Meta title="Atoms|Media" component={Media} />
+
+# Media
+
+The Media atom is used to diplay all types of media.  In addition to standard image, audio, and video files, Media can be used to embed external application content within an iframe.
+
+## Examples
+
+### Image
+
+Passing in an image source load the HTML5 video player.
+
+- Formats Supported: mp4, webm, and ogg
+
+<Preview withToolbar>
+  <Story name="Image">
+    <Grid columns="3">
+        <Media
+          id="Image"
+          media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
+        />
+      </Grid>
+  </Story>
+</Preview>
+
+### Audio
+
+Passing in an audio source will load the HTML5 audio player.
+
+- Formats Supported: mp3, ogg, and wav
+
+<Preview withToolbar>
+  <Story name="Audio">
+    <Grid columns="3">
+      <Media
+        id="Audio"
+        media="https://www.w3schools.com/html/horse.mp3"
+      />
+    </Grid>
+  </Story>
+</Preview>
+
+### Video
+
+Passing in a video source load the HTML5 video player.
+
+- Formats Supported: mp4, webm, and ogg
+(video from Youtube and Vimeo are supported but are displayed in an iframe instead of using the video player)
+
+<Preview withToolbar>
+  <Story name="Video">
+    <Grid columns="3">
+      <Media
+        id="Video"
+        media="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+      />
+      <Media
+        media="https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0"
+      />
+      <Media
+        media="https://player.vimeo.com/video/798022"
+      />
+    </Grid>
+  </Story>
+</Preview>
+
+## HTML iframe
+
+Passing text, files, applications, or other types of content external to the application will display the source in an iframe.
+
+### Web Site
+
+<Preview withToolbar>
+  <Story name="Web Site" parameters={{ decorators: [FullScreen] }}>
+    <Media
+      id="Web Site"
+      media="https://www.lightboxre.com/"
+    />
+  </Story>
+</Preview>
+
+### Props
+
+<Props of={Media} />

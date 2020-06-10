@@ -9,7 +9,7 @@ exports[` 1`] = `
   }
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 JIWVz Banner__StyledBanner-sc-6825al-0 bfAGjz"
+    className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
     href={null}
     id={null}
     media={null}
@@ -76,7 +76,7 @@ exports[` 2`] = `
   }
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 JIWVz Banner__StyledBanner-sc-6825al-0 bfAGjz"
+    className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
     href={null}
     id={null}
     media={null}
@@ -97,12 +97,12 @@ exports[` 2`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-user fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb"
+            className="svg-inline--fa fa-user fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
             color={null}
             data-icon="user"
             data-prefix="far"
             focusable="false"
-            fontSize="1.35em"
+            fontSize="inherit"
             id={null}
             role="img"
             style={Object {}}
@@ -193,12 +193,12 @@ exports[` 3`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-6 iqBfAy"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-4 hItlDP"
     id={null}
     rows={null}
   >
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 JIWVz Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
@@ -254,7 +254,7 @@ exports[` 3`] = `
       </div>
     </div>
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 JIWVz Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
@@ -319,7 +319,7 @@ exports[` 3`] = `
       </div>
     </div>
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 JIWVz Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
@@ -407,12 +407,12 @@ exports[` 4`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-6 iqBfAy"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-4 hItlDP"
     id={null}
     rows={null}
   >
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 JIWVz Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
@@ -433,12 +433,12 @@ exports[` 4`] = `
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-user fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb"
+              className="svg-inline--fa fa-user fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="user"
               data-prefix="far"
               focusable="false"
-              fontSize="1.35em"
+              fontSize="inherit"
               id={null}
               role="img"
               style={Object {}}
@@ -530,12 +530,12 @@ exports[` 5`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-6 iqBfAy"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-4 hItlDP"
     id={null}
     rows={null}
   >
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 JIWVz Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
@@ -556,12 +556,12 @@ exports[` 5`] = `
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-info fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb"
+              className="svg-inline--fa fa-info fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="info"
               data-prefix="fas"
               focusable="false"
-              fontSize="1.35em"
+              fontSize="inherit"
               id={null}
               role="img"
               style={Object {}}
@@ -633,12 +633,12 @@ exports[` 6`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-6 iqBfAy"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-4 hItlDP"
     id={null}
     rows={null}
   >
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 JIWVz Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
@@ -659,12 +659,12 @@ exports[` 6`] = `
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb"
+              className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="check"
               data-prefix="far"
               focusable="false"
-              fontSize="1.35em"
+              fontSize="inherit"
               id={null}
               role="img"
               style={Object {}}
@@ -736,12 +736,12 @@ exports[` 7`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-6 iqBfAy"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-4 hItlDP"
     id={null}
     rows={null}
   >
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 JIWVz Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
@@ -762,12 +762,12 @@ exports[` 7`] = `
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-exclamation fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb"
+              className="svg-inline--fa fa-exclamation fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="exclamation"
               data-prefix="fas"
               focusable="false"
-              fontSize="1.35em"
+              fontSize="inherit"
               id={null}
               role="img"
               style={Object {}}
@@ -839,12 +839,12 @@ exports[` 8`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-6 iqBfAy"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-4 hItlDP"
     id={null}
     rows={null}
   >
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 JIWVz Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
@@ -865,12 +865,12 @@ exports[` 8`] = `
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb"
+              className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="times"
               data-prefix="far"
               focusable="false"
-              fontSize="1.35em"
+              fontSize="inherit"
               id={null}
               role="img"
               style={Object {}}
@@ -942,12 +942,12 @@ exports[` 9`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-6 iqBfAy"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-4 hItlDP"
     id={null}
     rows={null}
   >
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 JIWVz Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
@@ -1003,7 +1003,7 @@ exports[` 9`] = `
       </div>
     </div>
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 JIWVz Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
@@ -1068,7 +1068,7 @@ exports[` 9`] = `
       </div>
     </div>
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 JIWVz Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
@@ -1144,7 +1144,7 @@ exports[` 9`] = `
       </div>
     </div>
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 JIWVz Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
@@ -1165,12 +1165,12 @@ exports[` 9`] = `
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-user fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb"
+              className="svg-inline--fa fa-user fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="user"
               data-prefix="far"
               focusable="false"
-              fontSize="1.35em"
+              fontSize="inherit"
               id={null}
               role="img"
               style={Object {}}
@@ -1250,7 +1250,7 @@ exports[` 9`] = `
       </div>
     </div>
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 JIWVz Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
@@ -1271,12 +1271,12 @@ exports[` 9`] = `
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-info fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb"
+              className="svg-inline--fa fa-info fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="info"
               data-prefix="fas"
               focusable="false"
-              fontSize="1.35em"
+              fontSize="inherit"
               id={null}
               role="img"
               style={Object {}}
@@ -1356,7 +1356,7 @@ exports[` 9`] = `
       </div>
     </div>
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 JIWVz Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
@@ -1377,12 +1377,12 @@ exports[` 9`] = `
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb"
+              className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="check"
               data-prefix="far"
               focusable="false"
-              fontSize="1.35em"
+              fontSize="inherit"
               id={null}
               role="img"
               style={Object {}}
@@ -1462,7 +1462,7 @@ exports[` 9`] = `
       </div>
     </div>
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 JIWVz Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
@@ -1483,12 +1483,12 @@ exports[` 9`] = `
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-exclamation fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb"
+              className="svg-inline--fa fa-exclamation fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="exclamation"
               data-prefix="fas"
               focusable="false"
-              fontSize="1.35em"
+              fontSize="inherit"
               id={null}
               role="img"
               style={Object {}}
@@ -1568,7 +1568,7 @@ exports[` 9`] = `
       </div>
     </div>
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 JIWVz Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
@@ -1589,12 +1589,12 @@ exports[` 9`] = `
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb"
+              className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="times"
               data-prefix="far"
               focusable="false"
-              fontSize="1.35em"
+              fontSize="inherit"
               id={null}
               role="img"
               style={Object {}}

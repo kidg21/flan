@@ -12,7 +12,11 @@ const InputContainer = styled(Grid)`
   color: ${(props) => {
     return props.theme.text.secondary;
   }};
+  background-color: ${(props) => {
+    return props.theme.background.default;
+  }};
   width: 100%;
+  padding: 1rem;
 `;
 
 const Swatch = styled.button`
