@@ -294,6 +294,13 @@ storiesOf("Blocks|List", module)
           description="This is the description"
           post={{ type: "icon", icon: "bookmark", onClick: true }}
         />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          post={{
+            type: "icon", icon: "include", variant: "success",
+          }}
+        />
       </List>
     );
   })

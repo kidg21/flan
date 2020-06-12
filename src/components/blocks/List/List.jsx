@@ -122,7 +122,7 @@ function getRightContent(post, disabled, onClick) {
       };
     } else if (postType === "icon" && post.icon) {
       rightContent = {
-        content: <Icon icon={post.icon} onClick={post.onClick} />,
+        content: <Icon icon={post.icon} size={post.size} variant={post.variant} onClick={post.onClick} fixedWidth />,
         width: "max-content",
         onClick: post.onClick || onClick,
       };
@@ -240,6 +240,8 @@ ListItem.propTypes = {
     label: PropTypes.string,
     checked: PropTypes.bool,
     onClick: PropTypes.func,
+    size: PropTypes.string,
+    variant: PropTypes.string,
   }),
   pre: PropTypes.shape({
     label: PropTypes.string,
