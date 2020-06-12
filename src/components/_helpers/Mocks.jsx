@@ -125,12 +125,12 @@ MockFooter.defaultProps = {
 
 function MockMenu() {
   return (
-    <List title="Menu Title" isInteractive hasBackground>
+    <List title="Main Menu" isInteractive isInverse>
       <ListItem title="Menu Item" />
-      <ListItem title="Selected Item" isSelected />
+      <ListItem title="Menu Item" isSelected />
       <ListItem title="Menu Item" />
       <ListItem title="Menu Item" />
-      <ListItem title="Disabled Item" disabled />
+      <ListItem title="Menu Item" />
     </List>
   );
 }
@@ -143,17 +143,17 @@ MockMenu.defaultProps = {
 
 function MockWorkflow() {
   return (
-    <List title="Workflow Name" isInteractive>
+    <List title="Workflow" isInteractive>
       <ListSection section="Section Name" />
-      <ListItem title="Workflow Item" />
+      <ListItem title="Menu Item" />
       <ListSection section="Section Name" />
-      <ListItem title="Selected Item" isSelected />
-      <ListItem title="Workflow Item" />
-      <ListItem title="Workflow Item" />
-      <ListItem title="Workflow Item" />
+      <ListItem title="Menu Item" isSelected />
+      <ListItem title="Menu Item" />
+      <ListItem title="Menu Item" />
+      <ListItem title="Menu Item" />
       <ListSection section="Section Name" />
-      <ListItem title="Disabled Item" disabled />
-      <ListItem title="Disabled Item" disabled />
+      <ListItem title="Menu Item" />
+      <ListItem title="Menu Item" />
     </List>
   );
 }

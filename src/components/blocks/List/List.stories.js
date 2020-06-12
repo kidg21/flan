@@ -6,27 +6,35 @@ import List, { ListSection, ListItem } from "blocks/List";
 
 storiesOf("Blocks|List", module)
   .addDecorator(withKnobs)
-  .addDecorator(FullScreen)
+  // .addDecorator(FullScreen)
   .add(
-    "Sections",
+    "Documentation",
     () => {
       return (
-        <List title="List Title" isInteractive isInverse hasBackground>
+        <List title="List Title" isInteractive>
           <ListSection section="Section Name" />
           <ListItem title="List Item" />
+          <ListItem title="Disabled Item" disabled />
+          <ListItem title="List Item" />
           <ListSection section="Section Name" />
-          <ListItem title="List Item" isSelected />
+          <ListItem title="Selected Item" isSelected />
+          <ListItem title="List Item" />
           <ListItem title="List Item" />
         </List>
       );
     },
   )
   .add(
-    "Documentation",
+    "Inverse",
     () => {
       return (
-        <List isDivided>
+        <List title="List Title" isInteractive isInverse>
+          <ListSection section="Section Name" />
           <ListItem title="List Item" />
+          <ListItem title="Disabled Item" disabled />
+          <ListItem title="List Item" />
+          <ListSection section="Section Name" />
+          <ListItem title="Selected Item" isSelected />
           <ListItem title="List Item" />
           <ListItem title="List Item" />
         </List>
