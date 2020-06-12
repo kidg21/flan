@@ -1,25 +1,25 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import { FullScreen } from "helpers/Display";
 import List, { ListSection, ListItem } from "blocks/List";
 
 storiesOf("Blocks|List", module)
   .addDecorator(withKnobs)
-  // .addDecorator(FullScreen)
   .add(
     "Documentation",
     () => {
       return (
         <List title="List Title" isInteractive>
-          <ListSection section="Section Name" />
-          <ListItem title="List Item" />
-          <ListItem title="Disabled Item" disabled />
-          <ListItem title="List Item" />
-          <ListSection section="Section Name" />
-          <ListItem title="Selected Item" isSelected />
-          <ListItem title="List Item" />
-          <ListItem title="List Item" />
+          <ListSection title="Section Name">
+            <ListItem title="List Item" />
+            <ListItem title="Disabled Item" disabled />
+            <ListItem title="List Item" />
+          </ListSection>
+          <ListSection title="Section Name">
+            <ListItem title="Selected Item" isSelected />
+            <ListItem title="List Item" />
+            <ListItem title="List Item" />
+          </ListSection>
         </List>
       );
     },
@@ -29,14 +29,16 @@ storiesOf("Blocks|List", module)
     () => {
       return (
         <List title="List Title" isInteractive isInverse>
-          <ListSection section="Section Name" />
-          <ListItem title="List Item" />
-          <ListItem title="Disabled Item" disabled />
-          <ListItem title="List Item" />
-          <ListSection section="Section Name" />
-          <ListItem title="Selected Item" isSelected />
-          <ListItem title="List Item" />
-          <ListItem title="List Item" />
+          <ListSection title="Section Name">
+            <ListItem title="List Item" />
+            <ListItem title="Disabled Item" disabled />
+            <ListItem title="List Item" />
+          </ListSection>
+          <ListSection title="Section Name">
+            <ListItem title="Selected Item" isSelected />
+            <ListItem title="List Item" />
+            <ListItem title="List Item" />
+          </ListSection>
         </List>
       );
     },
@@ -44,7 +46,9 @@ storiesOf("Blocks|List", module)
   .add("Knobs", () => {
     return (
       <List
+        isInverse={boolean("Inverse", false, "List")}
         isInteractive={boolean("Interactive", false, "List")}
+        isDivided={boolean("Divided", false, "List")}
       >
         <ListItem
           title={text("1 - Title", "Item 1", "Item 1")}
@@ -66,6 +70,7 @@ storiesOf("Blocks|List", module)
               checkbox: { type: "checkbox", label: "Checkbox" },
               toggle: { type: "toggle", label: "Toggle" },
               label: { type: "label", label: "Label" },
+              icon: { type: "icon", icon: "right" },
             },
             null,
             "Item 1",
@@ -93,6 +98,7 @@ storiesOf("Blocks|List", module)
               checkbox: { type: "checkbox", label: "Checkbox" },
               toggle: { type: "toggle", label: "Toggle" },
               label: { type: "label", label: "Label" },
+              icon: { type: "icon", icon: "right" },
             },
             null,
             "Item 2",
@@ -120,6 +126,7 @@ storiesOf("Blocks|List", module)
               checkbox: { type: "checkbox", label: "Checkbox" },
               toggle: { type: "toggle", label: "Toggle" },
               label: { type: "label", label: "Label" },
+              icon: { type: "icon", icon: "right" },
             },
             null,
             "Item 3",
@@ -147,7 +154,6 @@ storiesOf("Blocks|List", module)
           description="This is the description"
           disabled
         />
-
       </List>
     );
   })
@@ -163,7 +169,6 @@ storiesOf("Blocks|List", module)
           isInteractive={false}
         />
         <ListItem title="List Item" description="This is the description" />
-
       </List>
     );
   })

@@ -75,7 +75,7 @@ const ListWrapper = styled.ul`
   }};
   }
   li:last-child {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 `;
 
@@ -83,6 +83,7 @@ const ListTitleWrapper = styled.li`
   color: inherit;
   padding: 1rem 1rem;
 `;
+
 const ListTitle = styled(Title)`
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -97,6 +98,85 @@ const Section = styled(Text)`
   text-transform: uppercase;
   letter-spacing: 1px;
 `;
+
+function List({
+  children, id, isDivided, isInteractive, isInverse, padding, title,
+}) {
+  let listBackground;
+  let listColor;
+  let listDivider = "neutral40";
+  let listItemBackground;
+  let listItemColor;
+  if (isInverse) {
+    listBackground = "alt";
+    listColor = "inverse";
+    listDivider = "neutral100";
+  }
+  return (
+    <InteractiveContext.Provider value={isInteractive}>
+      <ListWrapper
+        id={id}
+        isDivided={isDivided}
+        listBackground={listBackground}
+        listColor={listColor}
+        listDivider={listDivider}
+        listItemBackground={listItemBackground}
+        listItemColor={listItemColor}
+      >
+        {title ? (
+          <ListTitleWrapper>
+            <ListTitle text={title} size="" weight="bold" />
+          </ListTitleWrapper>
+        ) : null}
+        <PaddingContext.Provider value={padding}>
+          {children}
+        </PaddingContext.Provider>
+      </ListWrapper>
+    </InteractiveContext.Provider>
+  );
+}
+
+List.propTypes = {
+  children: PropTypes.node,
+  id: PropTypes.string,
+  isDivided: PropTypes.bool,
+  isInteractive: PropTypes.bool,
+  isInverse: PropTypes.bool,
+  padding: PropTypes.string,
+  title: PropTypes.string,
+};
+List.defaultProps = {
+  children: null,
+  id: null,
+  isDivided: false,
+  isInteractive: false,
+  isInverse: false,
+  padding: "0",
+  title: null,
+};
+
+function ListSection({
+  title,
+  children,
+}) {
+  return (
+    <React.Fragment>
+      <SectionWrapper>
+        <Section text={title} />
+      </SectionWrapper>
+      {children}
+    </React.Fragment>
+  );
+}
+
+ListSection.propTypes = {
+  children: PropTypes.node,
+  title: PropTypes.string,
+};
+ListSection.defaultProps = {
+  children: null,
+  title: null,
+};
 
 function getRightContent(post, disabled, onClick) {
   let rightContent = null;
@@ -263,78 +343,6 @@ ListItem.defaultProps = {
   post: null,
   pre: null,
   tabIndex: "0",
-};
-function List({
-  children, id, isDivided, isInteractive, isInverse, padding, title,
-}) {
-  let listBackground;
-  let listColor;
-  let listDivider = "neutral40";
-  let listItemBackground;
-  let listItemColor;
-  if (isInverse) {
-    listBackground = "blueDark";
-    listColor = "inverse";
-    listDivider = "neutral100";
-  }
-  return (
-    <InteractiveContext.Provider value={isInteractive}>
-      <ListWrapper
-        id={id}
-        isDivided={isDivided}
-        listBackground={listBackground}
-        listColor={listColor}
-        listDivider={listDivider}
-        listItemBackground={listItemBackground}
-        listItemColor={listItemColor}
-      >
-        {title ? (
-          <ListTitleWrapper>
-            <ListTitle text={title} size="" weight="bold" />
-          </ListTitleWrapper>
-        ) : null}
-        <PaddingContext.Provider value={padding}>
-          {children}
-        </PaddingContext.Provider>
-      </ListWrapper>
-    </InteractiveContext.Provider>
-  );
-}
-
-List.propTypes = {
-  children: PropTypes.node,
-  id: PropTypes.string,
-  isDivided: PropTypes.bool,
-  isInteractive: PropTypes.bool,
-  isInverse: PropTypes.bool,
-  padding: PropTypes.string,
-  title: PropTypes.string,
-};
-List.defaultProps = {
-  children: null,
-  id: null,
-  isDivided: false,
-  isInteractive: false,
-  isInverse: false,
-  padding: "0",
-  title: null,
-};
-
-function ListSection({
-  section,
-}) {
-  return (
-    <SectionWrapper>
-      <Section text={section} size="xs" weight="bold" />
-    </SectionWrapper>
-  );
-}
-
-ListSection.propTypes = {
-  section: PropTypes.string,
-};
-ListSection.defaultProps = {
-  section: null,
 };
 
 export { List as default, ListSection, ListItem };
