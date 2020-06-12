@@ -120,7 +120,7 @@ const Region = styled.section`
   height: inherit;
   overflow: auto;
   box-shadow: ${(props) => {
-    return props.stateCards ? props.theme.shadows.dropShadow2 : null;
+    return props.stateCards ? props.theme.shadows.dropShadow2 : props.theme.shadows.outlineShadow;
   }};
   pointer-events: initial;
   &:empty {
