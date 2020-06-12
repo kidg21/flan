@@ -17,6 +17,7 @@ export const colors = {
   blue60: "hsl(207, 85%, 56%)",
   blue80: "hsl(201, 61%, 43%)",
   blue100: "hsl(200, 100%, 25%)",
+  blueDark: "hsl(215, 22%, 26%)",
 
   green20: "hsl(76, 59%, 96%)",
   green40: "hsl(89, 50%, 49%)",
@@ -62,10 +63,6 @@ export const colors = {
   grey90: "hsl(240, 2%, 18%)",
   grey100: "hsl(34, 5%, 12%)", // blackish
 
-  hover: "hsla(240, 2%, 57%, 0.25)",
-  navyDark: "hsl(215, 22%, 26%)",
-  selectedLight: "hsla(204, 69%, 65%, 0.6)",
-
   lightBoxNavy: "hsl(216.6, 72%, 21%)",
   lightBoxCyan: "hsl(197, 100%, 44%)",
   lightBoxGold: "hsl(46, 64.2%, 52.9%)",
@@ -78,7 +75,12 @@ export const colors = {
   blueSteel: "hsl(207, 88.5%, 30.6%)",
   tangerine: "hsl(26, 89.3%, 56.1%)",
   lemon: "hsl(45, 100%, 50%)",
+};
 
+export const interaction = {
+  hover: "hsla(240, 2%, 57%, 0.25)",
+  selectedLight: "hsla(204, 69%, 65%, 0.6)",
+  selectedDark: "hsl(215, 44%, 16%)",
 };
 
 // need to have hex key to work with old draw tools
@@ -154,12 +156,13 @@ export const DMPTheme = {
     app: colors.white40,
     default: colors.white60,
     disabled: colors.grey10,
-    hover: colors.hover,
+    hover: interaction.hover,
     info: colors.blue100,
     inverse: colors.grey100,
-    menuDark: colors.navyDark,
+    blueDark: colors.blueDark,
     modal: colors.shade10,
-    selected: colors.selectedLight,
+    selected: interaction.selectedLight,
+    selectedDark: interaction.selectedDark,
     success: colors.green100,
     warning: colors.orange80,
   },
@@ -213,7 +216,6 @@ export const DMPTheme = {
     neutral60: colors.grey30,
     neutral80: colors.grey40,
     neutral100: colors.grey50,
-    selectedLight: colors.blue40,
     selected: colors.blue80,
     success20: colors.green20,
     success40: colors.green40,
@@ -290,7 +292,6 @@ export const darkTheme = {
     neutral80: colors.grey60,
     neutral100: colors.grey50,
     selected: colors.blue80,
-    selectedLight: colors.blue80,
     success20: colors.green100,
     success40: colors.green80,
     success60: colors.green60,
