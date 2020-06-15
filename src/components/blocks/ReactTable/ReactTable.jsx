@@ -1,31 +1,45 @@
 import React from "react";
-import { useTable } from 'react-table';
+import { useTable, useRowSelect } from 'react-table';
 import styled from "styled-components";
 
 const NewTable = styled.table`
 border-collapse: collapse;
+text-align: left;
 font-family: ${(props) => { return props.theme.typography.primary; }};
 `;
 
 const NewHead = styled.thead`
-
+color: ${(props) => {
+  return props.theme.text.secondary;
+}};
+border: 1px solid;
+border-color: ${(props) => {
+  return ( props.theme.palette.neutral60
+  );
+}};
 `;
 
 const NewBody = styled.tbody`
+color: ${(props) => {
+  return props.theme.text.primary;
+}};
 
 `;
 
 const NewCell = styled.td`
 padding: 0.5rem;
-border: 1px solid;
-border-color: ${(props) => {
-  return ( props.theme.palette.neutral60
-  );
-}};
+padding-right: 1rem;
+
+
 `;
 
 const NewHeaderCell = styled.th`
 padding: 0.5rem;
+font-weight: 500;
+
+`;
+
+const NewRow = styled.tr`
 border: 1px solid;
 border-color: ${(props) => {
   return ( props.theme.palette.neutral60
@@ -33,41 +47,26 @@ border-color: ${(props) => {
 }};
 `;
 
-const NewRow = styled.tr`
-`;
+const IndeterminateCheckbox = React.forwardRef(
+  ({ indeterminate, ...rest }, ref) => {
+    const defaultRef = React.useRef()
+    const resolvedRef = ref || defaultRef
 
-function ReactTable() {
-const data = React.useMemo(
-  () => [
-    {
-      col1: 'Hello',
-      col2: 'World',
-    },
-    {
-      col1: 'react-table',
-      col2: 'rocks',
-    },
-    {
-      col1: 'whatever',
-      col2: 'you want',
-    },
-  ],
-  []
+    React.useEffect(() => {
+      resolvedRef.current.indeterminate = indeterminate
+    }, [resolvedRef, indeterminate])
+
+    return (
+      <>
+        <input type="checkbox" ref={resolvedRef} {...rest} />
+      </>
+    )
+  }
 )
 
-const columns = React.useMemo(
-  () => [
-    {
-      Header: 'Column 1',
-      accessor: 'col1', // accessor is the "key" in the data
-    },
-    {
-      Header: 'Column 2',
-      accessor: 'col2',
-    },
-  ],
-  []
-)
+
+
+function ReactTable({columns, data}) {
 
 const {
   getTableProps,
@@ -75,9 +74,42 @@ const {
   headerGroups,
   rows,
   prepareRow,
-} = useTable({ columns, data })
+  selectedFlatRows,
+  state: { selectedRowIds },
+  } = useTable(
+    {
+      columns,
+      data,
+    },
+    useRowSelect,
+    hooks => {
+      hooks.visibleColumns.push(columns => [
+        // Let's make a column for selection
+        {
+          id: 'selection',
+          // The header can use the table's getToggleAllRowsSelectedProps method
+          // to render a checkbox
+          Header: ({ getToggleAllRowsSelectedProps }) => (
+            <div>
+              <IndeterminateCheckbox {...getToggleAllRowsSelectedProps()} />
+            </div>
+          ),
+          // The cell can use the individual row's getToggleRowSelectedProps method
+          // to the render a checkbox
+          Cell: ({ row }) => (
+            <div>
+              <IndeterminateCheckbox {...row.getToggleRowSelectedProps()} />
+            </div>
+          ),
+        },
+        ...columns,
+      ])
+    }
+  )
+
 
 return (
+  <>
   <NewTable {...getTableProps()} >
     <NewHead>
       {headerGroups.map(headerGroup => (
@@ -112,6 +144,22 @@ return (
       })}
     </NewBody>
   </NewTable>
+  <p>Selected Rows: {Object.keys(selectedRowIds).length}</p>
+  <pre>
+    <code>
+      {JSON.stringify(
+        {
+          selectedRowIds: selectedRowIds,
+          'selectedFlatRows[].original': selectedFlatRows.map(
+            d => d.original
+          ),
+        },
+        null,
+        2
+      )}
+    </code>
+  </pre>
+</>
 )
 };
 
