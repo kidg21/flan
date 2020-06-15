@@ -61,14 +61,6 @@ const ListWrapper = styled.ul`
     return props.theme.background[props.listBackground] || props.theme.background.app;
   }};
   height: inherit;
-  ${ListItemWrapper} {
-    color: ${(props) => {
-    return props.theme.text[props.listItemColor] || "";
-  }};
-    background-color: ${(props) => {
-    return props.theme.background[props.listItemBackground] || "";
-  }};
-  }
   li:not(:last-child) {
     border-bottom: ${(props) => {
     return props.isDivided ? `${props.theme.palette[props.listDivider]} 1px solid` : "";
@@ -105,8 +97,6 @@ function List({
   let listBackground;
   let listColor;
   let listDivider = "neutral40";
-  let listItemBackground;
-  let listItemColor;
   if (isInverse) {
     listBackground = "alt";
     listColor = "inverse";
@@ -120,8 +110,6 @@ function List({
         listBackground={listBackground}
         listColor={listColor}
         listDivider={listDivider}
-        listItemBackground={listItemBackground}
-        listItemColor={listItemColor}
       >
         {title ? (
           <ListTitleWrapper>
