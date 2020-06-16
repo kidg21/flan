@@ -2,6 +2,8 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { Padding } from "helpers/Display";
+import {Link} from "base/Typography";
+import Tag from "atoms/Tag";
 import ReactTable from "./ReactTable.jsx";
 
 
@@ -15,19 +17,35 @@ storiesOf("Blocks|ReactTable", module)
         () => {
           return [
             {
-              col1: "Hello",
-              col2: "World",
-              col3: "dkfjslkdjkf",
+              col1: <Link text="19-2398834"/>,
+              col2: "305 West End Ave",
+              col3: "New York",
+              col4: "NY",
+              col5: "10023",
+              col6: "Senior Housing",
+              col7: "6/19/2020",
+              col8: <Tag label="In Progress" type="info"/>,
+
             },
             {
-              col1: "react-table",
-              col2: "rocks",
-              col3: "dkfjslkdjkf",
+              col1: <Link text="19-2308432"/>,
+              col2: "28 Rock Lane",
+              col3: "Los Angeles",
+              col4: "CA",
+              col5: "10023",
+              col6: "Senior Housing",
+              col7: "6/19/2020",
+              col8: <Tag label="In Progress" type="info"/>,
             },
             {
-              col1: "whatever",
-              col2: "you want",
-              col3: "dkfjslkdjkf",
+              col1: <Link text="18-374839"/>,
+              col2: "847 Milton St.",
+              col3: "Los Angeles",
+              col4: "CA",
+              col5: "10023",
+              col6: "Senior Housing",
+              col7: "6/19/2020",
+              col8: <Tag label="Completed" type="success"/>,
             },
           ];
         },
@@ -38,16 +56,44 @@ storiesOf("Blocks|ReactTable", module)
         () => {
           return [
             {
-              Header: "Column 1",
+              Header: "Project Number",
               accessor: "col1", // accessor is the "key" in the data
+              sortType: 'basic',
             },
             {
-              Header: "Column 2",
+              Header: "Address",
               accessor: "col2",
+              sortType: 'basic',
             },
             {
-              Header: "Words",
+              Header: "City",
               accessor: "col3",
+              sortType: 'basic',
+            },
+            {
+              Header: "State",
+              accessor: "col4",
+              sortType: 'basic',
+            },
+            {
+              Header: "Zip",
+              accessor: "col5",
+              sortType: 'basic',
+            },
+            {
+              Header: "Property Type",
+              accessor: "col6",
+              sortType: 'basic',
+            },
+            {
+              Header: "Due Date",
+              accessor: "col7",
+              sortType: 'basic',
+            },
+            {
+              Header: "Status",
+              accessor: "col8",
+              sortType: 'basic',
             },
           ];
         },

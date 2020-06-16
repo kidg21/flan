@@ -1,5 +1,5 @@
 import React from "react";
-import { useTable, useRowSelect } from 'react-table';
+import { useTable, useRowSelect, useSortBy } from 'react-table';
 import styled from "styled-components";
 
 const NewTable = styled.table`
@@ -23,19 +23,23 @@ const NewBody = styled.tbody`
 color: ${(props) => {
   return props.theme.text.primary;
 }};
+font-weight: 600;
 
 `;
 
 const NewCell = styled.td`
-padding: 0.5rem;
-padding-right: 1rem;
-
+padding: 1rem;
+padding-right: 1.5rem;
+&:empty {
+    content: ---;
+}
 
 `;
 
 const NewHeaderCell = styled.th`
-padding: 0.5rem;
-font-weight: 500;
+padding: 1rem;
+
+font-weight: 600;
 
 `;
 
@@ -81,6 +85,7 @@ const {
       columns,
       data,
     },
+    useSortBy,
     useRowSelect,
     hooks => {
       hooks.visibleColumns.push(columns => [
@@ -116,9 +121,12 @@ return (
         <NewRow {...headerGroup.getHeaderGroupProps()}>
           {headerGroup.headers.map(column => (
             <NewHeaderCell
-              {...column.getHeaderProps()}
+              {...column.getHeaderProps(column.getSortByToggleProps())}
             >
               {column.render('Header')}
+              <span>
+              {column.isSorted ? (column.isSortedDesc ? ' 🔽' : ' 🔼') : ''}
+              </span>
             </NewHeaderCell>
           ))}
         </NewRow>
