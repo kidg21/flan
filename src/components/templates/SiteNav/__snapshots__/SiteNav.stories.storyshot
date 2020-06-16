@@ -121,18 +121,11 @@ exports[` 1`] = `
       width="15%"
     >
       <ul
-        className="List__ListWrapper-sc-43f2zq-1 kWzfFn"
+        className="List__ListWrapper-sc-43f2zq-1 dtSHCa"
         id={null}
       >
-        <label
-          className="Typography__StyledLabel-sc-19auepv-0 gxLOic List__ListTitle-sc-43f2zq-0 kbdbCP"
-          fontSize="0.876em"
-          fontWeight={400}
-          htmlFor={null}
-          letterSpacing="0.2px"
-        />
         <li
-          className="List__ListItemWrapper-sc-43f2zq-2 dWTRvy"
+          className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
           disabled={false}
           href={null}
           id={null}
@@ -147,19 +140,20 @@ exports[` 1`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                 fontSize="1em"
-                fontWeight={400}
+                fontWeight={600}
+                id={null}
                 letterSpacing="0px"
               >
                 &lt; Jobs
-              </h6>
+              </p>
             </div>
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-2 dWTRvy"
+          className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
           disabled={false}
           href={null}
           id={null}
@@ -174,19 +168,20 @@ exports[` 1`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                 fontSize="1em"
-                fontWeight={400}
+                fontWeight={600}
+                id={null}
                 letterSpacing="0px"
               >
                 Job Details
-              </h6>
+              </p>
             </div>
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-2 dWTRvy"
+          className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
           disabled={false}
           href={null}
           id={null}
@@ -201,19 +196,20 @@ exports[` 1`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                 fontSize="1em"
-                fontWeight={400}
+                fontWeight={600}
+                id={null}
                 letterSpacing="0px"
               >
                 Site Verification
-              </h6>
+              </p>
             </div>
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-2 dWTRvy"
+          className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
           disabled={false}
           href={null}
           id={null}
@@ -228,19 +224,20 @@ exports[` 1`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                 fontSize="1em"
-                fontWeight={400}
+                fontWeight={600}
+                id={null}
                 letterSpacing="0px"
               >
                 Data Checklist
-              </h6>
+              </p>
             </div>
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-2 dWTRvy"
+          className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
           disabled={false}
           href={null}
           id={null}
@@ -255,19 +252,20 @@ exports[` 1`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                 fontSize="1em"
-                fontWeight={400}
+                fontWeight={600}
+                id={null}
                 letterSpacing="0px"
               >
                 Schedule Visit
-              </h6>
+              </p>
             </div>
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-2 dWTRvy"
+          className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
           disabled={false}
           href={null}
           id={null}
@@ -282,19 +280,20 @@ exports[` 1`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                 fontSize="1em"
-                fontWeight={400}
+                fontWeight={600}
+                id={null}
                 letterSpacing="0px"
               >
                 Report
-              </h6>
+              </p>
             </div>
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-2 dWTRvy"
+          className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
           disabled={false}
           href={null}
           id={null}
@@ -309,14 +308,15 @@ exports[` 1`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                 fontSize="1em"
-                fontWeight={400}
+                fontWeight={600}
+                id={null}
                 letterSpacing="0px"
               >
                 ReviewSend
-              </h6>
+              </p>
             </div>
           </div>
         </li>
@@ -965,18 +965,11 @@ exports[` 2`] = `
       width="15%"
     >
       <ul
-        className="List__ListWrapper-sc-43f2zq-1 kWzfFn"
+        className="List__ListWrapper-sc-43f2zq-1 dtSHCa"
         id={null}
       >
-        <label
-          className="Typography__StyledLabel-sc-19auepv-0 gxLOic List__ListTitle-sc-43f2zq-0 kbdbCP"
-          fontSize="0.876em"
-          fontWeight={400}
-          htmlFor={null}
-          letterSpacing="0.2px"
-        />
         <li
-          className="List__ListItemWrapper-sc-43f2zq-2 dWTRvy"
+          className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
           disabled={false}
           href={null}
           id={null}
@@ -991,19 +984,20 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                 fontSize="1em"
-                fontWeight={400}
+                fontWeight={600}
+                id={null}
                 letterSpacing="0px"
               >
                 &lt; Jobs
-              </h6>
+              </p>
             </div>
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-2 dWTRvy"
+          className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
           disabled={false}
           href={null}
           id={null}
@@ -1018,19 +1012,20 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                 fontSize="1em"
-                fontWeight={400}
+                fontWeight={600}
+                id={null}
                 letterSpacing="0px"
               >
                 Job Details
-              </h6>
+              </p>
             </div>
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-2 dWTRvy"
+          className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
           disabled={false}
           href={null}
           id={null}
@@ -1045,19 +1040,20 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                 fontSize="1em"
-                fontWeight={400}
+                fontWeight={600}
+                id={null}
                 letterSpacing="0px"
               >
                 Site Verification
-              </h6>
+              </p>
             </div>
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-2 dWTRvy"
+          className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
           disabled={false}
           href={null}
           id={null}
@@ -1072,19 +1068,20 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                 fontSize="1em"
-                fontWeight={400}
+                fontWeight={600}
+                id={null}
                 letterSpacing="0px"
               >
                 Data Checklist
-              </h6>
+              </p>
             </div>
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-2 dWTRvy"
+          className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
           disabled={false}
           href={null}
           id={null}
@@ -1099,19 +1096,20 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                 fontSize="1em"
-                fontWeight={400}
+                fontWeight={600}
+                id={null}
                 letterSpacing="0px"
               >
                 Schedule Visit
-              </h6>
+              </p>
             </div>
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-2 dWTRvy"
+          className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
           disabled={false}
           href={null}
           id={null}
@@ -1126,19 +1124,20 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                 fontSize="1em"
-                fontWeight={400}
+                fontWeight={600}
+                id={null}
                 letterSpacing="0px"
               >
                 Report
-              </h6>
+              </p>
             </div>
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-2 dWTRvy"
+          className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
           disabled={false}
           href={null}
           id={null}
@@ -1153,14 +1152,15 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                 fontSize="1em"
-                fontWeight={400}
+                fontWeight={600}
+                id={null}
                 letterSpacing="0px"
               >
                 ReviewSend
-              </h6>
+              </p>
             </div>
           </div>
         </li>

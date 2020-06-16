@@ -177,18 +177,11 @@ exports[` 3`] = `
     >
        
       <ul
-        className="List__ListWrapper-sc-43f2zq-1 kWzfFn"
+        className="List__ListWrapper-sc-43f2zq-1 dtSHCa"
         id={null}
       >
-        <label
-          className="Typography__StyledLabel-sc-19auepv-0 gxLOic List__ListTitle-sc-43f2zq-0 kbdbCP"
-          fontSize="0.876em"
-          fontWeight={400}
-          htmlFor={null}
-          letterSpacing="0.2px"
-        />
         <li
-          className="List__ListItemWrapper-sc-43f2zq-2 fhklxx"
+          className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
           disabled={false}
           href={null}
           id={null}
@@ -203,14 +196,15 @@ exports[` 3`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                 fontSize="1em"
-                fontWeight={400}
+                fontWeight={600}
+                id={null}
                 letterSpacing="0px"
               >
                 White House
-              </h6>
+              </p>
               <p
                 className="Typography__Paragraph-sc-19auepv-3 CcLky"
                 fontSize="0.75em"
@@ -224,7 +218,7 @@ exports[` 3`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-2 fhklxx"
+          className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
           disabled={false}
           href={null}
           id={null}
@@ -239,14 +233,15 @@ exports[` 3`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                 fontSize="1em"
-                fontWeight={400}
+                fontWeight={600}
+                id={null}
                 letterSpacing="0px"
               >
                 Orange House
-              </h6>
+              </p>
               <p
                 className="Typography__Paragraph-sc-19auepv-3 CcLky"
                 fontSize="0.75em"
@@ -260,7 +255,7 @@ exports[` 3`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-2 fhklxx"
+          className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
           disabled={false}
           href={null}
           id={null}
@@ -275,14 +270,15 @@ exports[` 3`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                 fontSize="1em"
-                fontWeight={400}
+                fontWeight={600}
+                id={null}
                 letterSpacing="0px"
               >
                 Red House
-              </h6>
+              </p>
               <p
                 className="Typography__Paragraph-sc-19auepv-3 CcLky"
                 fontSize="0.75em"
@@ -296,7 +292,7 @@ exports[` 3`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-2 fhklxx"
+          className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
           disabled={false}
           href={null}
           id={null}
@@ -311,14 +307,15 @@ exports[` 3`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                 fontSize="1em"
-                fontWeight={400}
+                fontWeight={600}
+                id={null}
                 letterSpacing="0px"
               >
                 Green House
-              </h6>
+              </p>
               <p
                 className="Typography__Paragraph-sc-19auepv-3 CcLky"
                 fontSize="0.75em"
@@ -332,7 +329,7 @@ exports[` 3`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-2 fhklxx"
+          className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
           disabled={false}
           href={null}
           id={null}
@@ -347,14 +344,15 @@ exports[` 3`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                 fontSize="1em"
-                fontWeight={400}
+                fontWeight={600}
+                id={null}
                 letterSpacing="0px"
               >
                 Black House
-              </h6>
+              </p>
               <p
                 className="Typography__Paragraph-sc-19auepv-3 CcLky"
                 fontSize="0.75em"
@@ -368,7 +366,7 @@ exports[` 3`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-2 fhklxx"
+          className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
           disabled={false}
           href={null}
           id={null}
@@ -383,14 +381,15 @@ exports[` 3`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                 fontSize="1em"
-                fontWeight={400}
+                fontWeight={600}
+                id={null}
                 letterSpacing="0px"
               >
                 Blue House
-              </h6>
+              </p>
               <p
                 className="Typography__Paragraph-sc-19auepv-3 CcLky"
                 fontSize="0.75em"
@@ -404,7 +403,7 @@ exports[` 3`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-2 fhklxx"
+          className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
           disabled={false}
           href={null}
           id={null}
@@ -419,14 +418,15 @@ exports[` 3`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                 fontSize="1em"
-                fontWeight={400}
+                fontWeight={600}
+                id={null}
                 letterSpacing="0px"
               >
                 Address
-              </h6>
+              </p>
               <p
                 className="Typography__Paragraph-sc-19auepv-3 CcLky"
                 fontSize="0.75em"
@@ -440,7 +440,7 @@ exports[` 3`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-2 fhklxx"
+          className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
           disabled={false}
           href={null}
           id={null}
@@ -455,14 +455,15 @@ exports[` 3`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                 fontSize="1em"
-                fontWeight={400}
+                fontWeight={600}
+                id={null}
                 letterSpacing="0px"
               >
                 APN
-              </h6>
+              </p>
               <p
                 className="Typography__Paragraph-sc-19auepv-3 CcLky"
                 fontSize="0.75em"
@@ -476,7 +477,7 @@ exports[` 3`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-2 fhklxx"
+          className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
           disabled={false}
           href={null}
           id={null}
@@ -491,14 +492,15 @@ exports[` 3`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                 fontSize="1em"
-                fontWeight={400}
+                fontWeight={600}
+                id={null}
                 letterSpacing="0px"
               >
                 Owner
-              </h6>
+              </p>
               <p
                 className="Typography__Paragraph-sc-19auepv-3 CcLky"
                 fontSize="0.75em"
@@ -512,7 +514,7 @@ exports[` 3`] = `
           </div>
         </li>
         <li
-          className="List__ListItemWrapper-sc-43f2zq-2 fhklxx"
+          className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
           disabled={false}
           href={null}
           id={null}
@@ -527,14 +529,15 @@ exports[` 3`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <h6
-                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+              <p
+                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                 fontSize="1em"
-                fontWeight={400}
+                fontWeight={600}
+                id={null}
                 letterSpacing="0px"
               >
                 Address
-              </h6>
+              </p>
               <p
                 className="Typography__Paragraph-sc-19auepv-3 CcLky"
                 fontSize="0.75em"
@@ -557,7 +560,7 @@ exports[` 3`] = `
           className="Bar__Slot-icfo76-1 dLaZFL"
         >
           <a
-            className="Typography__LinkText-sc-19auepv-1 ipSkAx"
+            className="Typography__LinkText-sc-19auepv-1 jOFdDS"
             fontSize="0.876em"
             fontWeight={600}
             href={null}
@@ -663,18 +666,11 @@ exports[` 4`] = `
           </div>
         </div>
         <ul
-          className="List__ListWrapper-sc-43f2zq-1 kWzfFn"
+          className="List__ListWrapper-sc-43f2zq-1 dtSHCa"
           id={null}
         >
-          <label
-            className="Typography__StyledLabel-sc-19auepv-0 gxLOic List__ListTitle-sc-43f2zq-0 kbdbCP"
-            fontSize="0.876em"
-            fontWeight={400}
-            htmlFor={null}
-            letterSpacing="0.2px"
-          />
           <li
-            className="List__ListItemWrapper-sc-43f2zq-2 fhklxx"
+            className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
             disabled={false}
             href={null}
             id={null}
@@ -689,14 +685,15 @@ exports[` 4`] = `
               <div
                 className="Bar__Slot-icfo76-1 RjiBe"
               >
-                <h6
-                  className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                   fontSize="1em"
-                  fontWeight={400}
+                  fontWeight={600}
+                  id={null}
                   letterSpacing="0px"
                 >
                   White House
-                </h6>
+                </p>
                 <p
                   className="Typography__Paragraph-sc-19auepv-3 CcLky"
                   fontSize="0.75em"
@@ -710,7 +707,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-2 fhklxx"
+            className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
             disabled={false}
             href={null}
             id={null}
@@ -725,14 +722,15 @@ exports[` 4`] = `
               <div
                 className="Bar__Slot-icfo76-1 RjiBe"
               >
-                <h6
-                  className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                   fontSize="1em"
-                  fontWeight={400}
+                  fontWeight={600}
+                  id={null}
                   letterSpacing="0px"
                 >
                   Orange House
-                </h6>
+                </p>
                 <p
                   className="Typography__Paragraph-sc-19auepv-3 CcLky"
                   fontSize="0.75em"
@@ -746,7 +744,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-2 fhklxx"
+            className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
             disabled={false}
             href={null}
             id={null}
@@ -761,14 +759,15 @@ exports[` 4`] = `
               <div
                 className="Bar__Slot-icfo76-1 RjiBe"
               >
-                <h6
-                  className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                   fontSize="1em"
-                  fontWeight={400}
+                  fontWeight={600}
+                  id={null}
                   letterSpacing="0px"
                 >
                   Red House
-                </h6>
+                </p>
                 <p
                   className="Typography__Paragraph-sc-19auepv-3 CcLky"
                   fontSize="0.75em"
@@ -782,7 +781,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-2 fhklxx"
+            className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
             disabled={false}
             href={null}
             id={null}
@@ -797,14 +796,15 @@ exports[` 4`] = `
               <div
                 className="Bar__Slot-icfo76-1 RjiBe"
               >
-                <h6
-                  className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                   fontSize="1em"
-                  fontWeight={400}
+                  fontWeight={600}
+                  id={null}
                   letterSpacing="0px"
                 >
                   Green House
-                </h6>
+                </p>
                 <p
                   className="Typography__Paragraph-sc-19auepv-3 CcLky"
                   fontSize="0.75em"
@@ -818,7 +818,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-2 fhklxx"
+            className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
             disabled={false}
             href={null}
             id={null}
@@ -833,14 +833,15 @@ exports[` 4`] = `
               <div
                 className="Bar__Slot-icfo76-1 RjiBe"
               >
-                <h6
-                  className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                   fontSize="1em"
-                  fontWeight={400}
+                  fontWeight={600}
+                  id={null}
                   letterSpacing="0px"
                 >
                   Black House
-                </h6>
+                </p>
                 <p
                   className="Typography__Paragraph-sc-19auepv-3 CcLky"
                   fontSize="0.75em"
@@ -854,7 +855,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-2 fhklxx"
+            className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
             disabled={false}
             href={null}
             id={null}
@@ -869,14 +870,15 @@ exports[` 4`] = `
               <div
                 className="Bar__Slot-icfo76-1 RjiBe"
               >
-                <h6
-                  className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                   fontSize="1em"
-                  fontWeight={400}
+                  fontWeight={600}
+                  id={null}
                   letterSpacing="0px"
                 >
                   Blue House
-                </h6>
+                </p>
                 <p
                   className="Typography__Paragraph-sc-19auepv-3 CcLky"
                   fontSize="0.75em"
@@ -890,7 +892,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-2 fhklxx"
+            className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
             disabled={false}
             href={null}
             id={null}
@@ -905,14 +907,15 @@ exports[` 4`] = `
               <div
                 className="Bar__Slot-icfo76-1 RjiBe"
               >
-                <h6
-                  className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                   fontSize="1em"
-                  fontWeight={400}
+                  fontWeight={600}
+                  id={null}
                   letterSpacing="0px"
                 >
                   Address
-                </h6>
+                </p>
                 <p
                   className="Typography__Paragraph-sc-19auepv-3 CcLky"
                   fontSize="0.75em"
@@ -926,7 +929,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-2 fhklxx"
+            className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
             disabled={false}
             href={null}
             id={null}
@@ -941,14 +944,15 @@ exports[` 4`] = `
               <div
                 className="Bar__Slot-icfo76-1 RjiBe"
               >
-                <h6
-                  className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                   fontSize="1em"
-                  fontWeight={400}
+                  fontWeight={600}
+                  id={null}
                   letterSpacing="0px"
                 >
                   APN
-                </h6>
+                </p>
                 <p
                   className="Typography__Paragraph-sc-19auepv-3 CcLky"
                   fontSize="0.75em"
@@ -962,7 +966,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-2 fhklxx"
+            className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
             disabled={false}
             href={null}
             id={null}
@@ -977,14 +981,15 @@ exports[` 4`] = `
               <div
                 className="Bar__Slot-icfo76-1 RjiBe"
               >
-                <h6
-                  className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                   fontSize="1em"
-                  fontWeight={400}
+                  fontWeight={600}
+                  id={null}
                   letterSpacing="0px"
                 >
                   Owner
-                </h6>
+                </p>
                 <p
                   className="Typography__Paragraph-sc-19auepv-3 CcLky"
                   fontSize="0.75em"
@@ -998,7 +1003,7 @@ exports[` 4`] = `
             </div>
           </li>
           <li
-            className="List__ListItemWrapper-sc-43f2zq-2 fhklxx"
+            className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
             disabled={false}
             href={null}
             id={null}
@@ -1013,14 +1018,15 @@ exports[` 4`] = `
               <div
                 className="Bar__Slot-icfo76-1 RjiBe"
               >
-                <h6
-                  className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
                   fontSize="1em"
-                  fontWeight={400}
+                  fontWeight={600}
+                  id={null}
                   letterSpacing="0px"
                 >
                   Address
-                </h6>
+                </p>
                 <p
                   className="Typography__Paragraph-sc-19auepv-3 CcLky"
                   fontSize="0.75em"
@@ -1043,7 +1049,7 @@ exports[` 4`] = `
             className="Bar__Slot-icfo76-1 dLaZFL"
           >
             <a
-              className="Typography__LinkText-sc-19auepv-1 ipSkAx"
+              className="Typography__LinkText-sc-19auepv-1 jOFdDS"
               fontSize="0.876em"
               fontWeight={600}
               href={null}
