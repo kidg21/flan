@@ -122,7 +122,7 @@ exports[` 1`] = `
                       Records
                     </label>
                     <div
-                      className="Tag__TagContainer-sc-128kb3h-0 jCHZDn"
+                      className="Tag__TagContainer-sc-128kb3h-0 iQZTDE"
                       id={null}
                       label="2"
                     >
@@ -163,7 +163,7 @@ exports[` 1`] = `
                       Attachments
                     </label>
                     <div
-                      className="Tag__TagContainer-sc-128kb3h-0 jCHZDn"
+                      className="Tag__TagContainer-sc-128kb3h-0 iQZTDE"
                       id={null}
                       label="3"
                     >
@@ -434,7 +434,7 @@ exports[` 1`] = `
                       </label>
                       <input
                         autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 hVSkVt"
+                        className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
                         cols=""
                         disabled={false}
                         id="firstName"
@@ -476,7 +476,7 @@ exports[` 1`] = `
                       </label>
                       <input
                         autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 hVSkVt"
+                        className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
                         cols=""
                         disabled={false}
                         id="lastName"
@@ -518,7 +518,7 @@ exports[` 1`] = `
                       </label>
                       <textarea
                         autoComplete="off"
-                        className="TextInput__Input-sc-1fep8p8-2 hjEkaq"
+                        className="TextInput__Input-sc-1fep8p8-2 dWYNDp"
                         cols=""
                         disabled={false}
                         id="lastName"
