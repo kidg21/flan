@@ -6,10 +6,10 @@ import List, { ListSection, ListItem } from "blocks/List";
 storiesOf("Blocks|List", module)
   .addDecorator(withKnobs)
   .add(
-    "Documentation",
+    "Standard",
     () => {
       return (
-        <List title="List Title" isInteractive>
+        <List id="Standard" title="List Title" isInteractive>
           <ListSection title="Section Name">
             <ListItem title="List Item" />
             <ListItem title="Disabled Item" disabled />
@@ -28,7 +28,7 @@ storiesOf("Blocks|List", module)
     "Inverse",
     () => {
       return (
-        <List title="List Title" isInteractive isInverse>
+        <List id="Inverse" title="List Title" isInteractive isInverse>
           <ListSection title="Section Name">
             <ListItem title="List Item" />
             <ListItem title="Disabled Item" disabled />
@@ -46,6 +46,7 @@ storiesOf("Blocks|List", module)
   .add("Knobs", () => {
     return (
       <List
+        id="Knobs"
         isInverse={boolean("Inverse", false, "List")}
         isInteractive={boolean("Interactive", false, "List")}
         isDivided={boolean("Divided", false, "List")}
@@ -139,7 +140,7 @@ storiesOf("Blocks|List", module)
   })
   .add("States", () => {
     return (
-      <List>
+      <List id="States">
         <ListItem
           title="List Item (standard)"
           description="This is the description"
@@ -159,7 +160,7 @@ storiesOf("Blocks|List", module)
   })
   .add("Interactive", () => {
     return (
-      <List isInteractive>
+      <List id="Interactive" isInteractive>
         <ListItem title="List Item" description="This is the description" />
         <ListItem title="List Item" description="This is the description" />
         <ListItem title="List Item" description="This is the description" />
@@ -174,7 +175,7 @@ storiesOf("Blocks|List", module)
   })
   .add("Pre-Label", () => {
     return (
-      <List isInteractive>
+      <List id="Pre-Label" isInteractive>
         <ListItem
           title="List Item"
           description="This is the description"
@@ -200,7 +201,7 @@ storiesOf("Blocks|List", module)
   })
   .add("Post-Toggle", () => {
     return (
-      <List isInteractive>
+      <List id="Post-Toggle" isInteractive>
         <ListItem
           title="List Item"
           description="This is the description"
@@ -226,7 +227,7 @@ storiesOf("Blocks|List", module)
   })
   .add("Post-Label", () => {
     return (
-      <List isInteractive>
+      <List id="Post-Label" isInteractive>
         <ListItem
           title="List Item"
           description="This is the description"
@@ -252,7 +253,7 @@ storiesOf("Blocks|List", module)
   })
   .add("Post-Checkbox", () => {
     return (
-      <List isInteractive>
+      <List id="Post-Checkbox" isInteractive>
         <ListItem
           title="List Item"
           description="This is the description"
@@ -278,7 +279,7 @@ storiesOf("Blocks|List", module)
   })
   .add("Post-Icon", () => {
     return (
-      <List isInteractive>
+      <List id="Post-Icon" isInteractive>
         <ListItem
           title="List Item"
           description="This is the description"
@@ -311,7 +312,7 @@ storiesOf("Blocks|List", module)
   })
   .add("List with onClick", () => {
     return (
-      <List isInteractive>
+      <List id="List with onClick" isInteractive>
         <ListItem
           title="List Item"
           description="This is the description"
