@@ -72,7 +72,7 @@ function FileImport({ id, onChange }) {
             type="file"
             onChange={(e) => {
               if (typeof onChange === "function") {
-                onChange(e);
+                onChange(e.target.files);
               }
               setState(e.target.files[0].name);
             }}
