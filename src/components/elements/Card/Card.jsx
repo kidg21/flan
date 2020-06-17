@@ -81,6 +81,9 @@ const CardWrapper = styled.div`
   color: ${(props) => {
     return props.cardColor ? props.theme.text[props.cardColor] : props.theme.text.primary;
   }};
+  border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
+  }};
   box-shadow: ${(props) => {
     return props.theme.shadows[props.cardShadow] || "";
   }};
