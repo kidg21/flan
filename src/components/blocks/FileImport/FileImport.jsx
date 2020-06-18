@@ -9,6 +9,7 @@ import TextInput from "atoms/TextInput";
 
 
 const NewInput = styled.input`
+display: none;
 width: 0.1px;
 height: 0.1px;
 opacity: 0;
@@ -64,10 +65,10 @@ function FileImport({ id, onChange }) {
 
   return (
     <Grid columns="1fr 3fr" gap="xs" id={id}>
-      <React.Fragment>
+      <NewLabel>
+        <Text weight="bold" size="lg" text="Browse File" />
         <NewInput
           type="file"
-          class="inputFile"
           onChange={(e) => {
             if (typeof onChange === "function") {
               onChange(e.target.files);
@@ -75,8 +76,7 @@ function FileImport({ id, onChange }) {
             setState(e.target.files[0].name);
           }}
         />
-        <NewLabel for="file" ><Text weight="bold" size="lg" text="Upload" /></NewLabel>
-      </React.Fragment>
+      </NewLabel>
       <TextInput id={`file-textinput-${id}`} placeholder={state} />
     </Grid>
   );
