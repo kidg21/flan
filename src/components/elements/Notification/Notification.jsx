@@ -128,6 +128,8 @@ function Notification({
   children,
   id,
   onClick,
+  onAnimationStart,
+  onAnimationEnd,
   position,
   visible,
 }) {
@@ -168,6 +170,8 @@ function Notification({
       id={id}
       justifyContent={justifyContent}
       onClick={onClick}
+      onAnimationStart={onAnimationStart}
+      onAnimationEnd={onAnimationEnd}
       position={position}
       visible={visible}
     >
@@ -191,8 +195,10 @@ Notification.propTypes = {
   ariaLabelledBy: PropTypes.string,
   children: PropTypes.node,
   id: PropTypes.string,
+  onAnimationStart: PropTypes.func,
+  onAnimationEnd: PropTypes.func,
   onClick: PropTypes.func,
-  position: PropTypes.oneOf(["moveUp", "moveDown"]),
+  position: PropTypes.bool,
   visible: PropTypes.bool,
 };
 
@@ -202,7 +208,9 @@ Notification.defaultProps = {
   ariaLabelledBy: null,
   children: null,
   id: null,
+  onAnimationStart: null,
+  onAnimationEnd: null,
   onClick: null,
-  position: null,
+  position: false,
   visible: false,
 };
