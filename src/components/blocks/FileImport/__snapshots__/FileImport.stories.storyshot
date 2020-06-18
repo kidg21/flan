@@ -6,15 +6,8 @@ exports[` 1`] = `
   id={null}
   rows={null}
 >
-  <input
-    class="inputFile"
-    className="FileImport__NewInput-sc-1hxbe60-0 cILDbW"
-    onChange={[Function]}
-    type="file"
-  />
   <label
     className="FileImport__NewLabel-sc-1hxbe60-1 iXmcSY"
-    for="file"
   >
     <p
       className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
@@ -23,8 +16,13 @@ exports[` 1`] = `
       id={null}
       letterSpacing="0px"
     >
-      Upload
+      Browse File
     </p>
+    <input
+      className="FileImport__NewInput-sc-1hxbe60-0 gxospz"
+      onChange={[Function]}
+      type="file"
+    />
   </label>
   <section
     className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
