@@ -92,7 +92,7 @@ function Search({
   );
 
   return (
-    <Grid columns="1"  id={id}>
+    <Grid columns="1" id={id}>
       <SearchContainer>
         <NewTextInput
           id="my-search-bar"
