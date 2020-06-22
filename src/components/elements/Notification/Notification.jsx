@@ -97,7 +97,7 @@ const NotificationContainer = styled.div`
   overflow: hidden;
   pointer-events: none;
   ${ContentWrapper} {
-    animation-name: ${(props) => { return (props.position ? moveDown : moveUp); }};
+    animation-name: ${(props) => { return (props.animation === "show" ? moveDown : moveUp); }};
     animation-duration: 0.6s;
     transform-origin: top;
     pointer-events: initial;
@@ -125,10 +125,12 @@ function Notification({
   align,
   ariaDescribedBy,
   ariaLabelledBy,
+  animation,
   children,
   id,
   onClick,
-  position,
+  onAnimationStart,
+  onAnimationEnd,
   visible,
 }) {
   let justifyContent;
@@ -165,10 +167,12 @@ function Notification({
       alignItems={alignItems}
       aria-describedby={ariaDescribedBy}
       aria-labelledby={ariaLabelledBy}
+      animation={animation}
       id={id}
       justifyContent={justifyContent}
       onClick={onClick}
-      position={position}
+      onAnimationStart={onAnimationStart}
+      onAnimationEnd={onAnimationEnd}
       visible={visible}
     >
       <ContentWrapper shadow="2x">{children}</ContentWrapper>
@@ -189,10 +193,12 @@ Notification.propTypes = {
   ]),
   ariaDescribedBy: PropTypes.string,
   ariaLabelledBy: PropTypes.string,
+  animation: PropTypes.oneOf(["show", "hide"]),
   children: PropTypes.node,
   id: PropTypes.string,
+  onAnimationStart: PropTypes.func,
+  onAnimationEnd: PropTypes.func,
   onClick: PropTypes.func,
-  position: PropTypes.oneOf(["moveUp", "moveDown"]),
   visible: PropTypes.bool,
 };
 
@@ -200,9 +206,11 @@ Notification.defaultProps = {
   align: null,
   ariaDescribedBy: null,
   ariaLabelledBy: null,
+  animation: "hide",
   children: null,
   id: null,
+  onAnimationStart: null,
+  onAnimationEnd: null,
   onClick: null,
-  position: null,
   visible: false,
 };
