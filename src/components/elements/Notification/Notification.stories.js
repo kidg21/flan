@@ -2,32 +2,28 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { Fragment, useState } from "react";
 import Button from "atoms/Button";
-import Panel from "layout/Panel";
 import Banner from "blocks/Banner";
 import Notification from "elements/Notification";
 
-
 storiesOf("Elements|Notification", module)
-
   .add(
     "Documentation",
     () => {
       return React.createElement(() => {
         const [visible, setVisible] = useState(false);
-        const [transition, setTransition] = useState(true);
-        // eslint-disable-next-line no-unused-vars
+        const [transition, setTransition] = useState("show");
         const handleOpen = (/* event */) => {
           setVisible(true);
-          setTransition(true);
+          setTransition("show");
           setTimeout(() => {
-            setTransition(false);
+            setTransition("hide");
             setTimeout(() => {
               setVisible(false);
             }, 500);
           }, 3000);
         };
         const handleClose = (/* event */) => {
-          setTransition(false);
+          setTransition("hide");
           setTimeout(() => {
             setVisible(false);
           }, 500);
@@ -37,7 +33,7 @@ storiesOf("Elements|Notification", module)
             <Notification
               visible={visible}
               onClose={handleClose}
-              position={transition}
+              animation={transition}
             >
               <Banner
                 title="This is a Standard notification."
@@ -56,19 +52,19 @@ storiesOf("Elements|Notification", module)
   .add("Knobs", () => {
     return React.createElement(() => {
       const [visible, setVisible] = useState(false);
-      const [transition, setTransition] = useState(true);
+      const [transition, setTransition] = useState("show");
       const handleOpen = (/* event */) => {
         setVisible(true);
-        setTransition(true);
+        setTransition("show");
         setTimeout(() => {
-          setTransition(false);
+          setTransition("hide");
           setTimeout(() => {
             setVisible(false);
           }, 500);
         }, 3000);
       };
       const handleClose = (/* event */) => {
-        setTransition(false);
+        setTransition("hide");
         setTimeout(() => {
           setVisible(false);
         }, 500);
@@ -93,7 +89,7 @@ storiesOf("Elements|Notification", module)
             )}
             visible={visible}
             onClose={handleClose}
-            position={transition}
+            animation={transition}
           >
             <Banner
               title={text(
