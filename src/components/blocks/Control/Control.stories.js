@@ -5,6 +5,123 @@
 // import { Padding } from "helpers/Display";
 // import Control, { ControlItem } from "blocks/Control";
 
+
+
+// export default {
+//     title: "Blocks/Control/Tests",
+//     component: Control,
+//     parameters: {
+//       docs: { page: null },
+//     },
+//     includeStories: ["Knobs"],
+//     decorators: [Padding, withKnobs],
+//   };
+
+
+// export const Knobs = () => {
+//     return (
+//         <Control
+//         disabled={boolean("disable", false, "Control")}
+//       >
+//         <ControlItem
+//           icon={select(
+//             "icon 1",
+//             {
+//               "no icon": null,
+//               "info": "info",
+//               "clone": "clone",
+//               "search": "search",
+//               "draw": "draw",
+//               "list": "list",
+//             },
+//             null,
+//             "Item 1",
+//           )}
+//           label={text("Item 1", "Item 1", "Item 1")}
+//           disabled={boolean("Disable 1", false, "Item 1")}
+//         />
+//         <ControlItem
+//           icon={select(
+//             "icon 2",
+//             {
+//               "no icon": null,
+//               "info": "info",
+//               "clone": "clone",
+//               "search": "search",
+//               "draw": "draw",
+//               "list": "list",
+//             },
+//             null,
+//             "Item 2",
+//           )}
+//           label={text("Item 2", "Item 2", "Item 2")}
+//           disabled={boolean("Disable 2", false, "Item 2")}
+//         />
+//         <ControlItem
+//           icon={select(
+//             "icon 3",
+//             {
+//               "no icon": null,
+//               "info": "info",
+//               "clone": "clone",
+//               "search": "search",
+//               "draw": "draw",
+//               "list": "list",
+//             },
+//             null,
+//             "Item 3",
+//           )}
+//           label={text("Item 3", "Item 3", "Item 3")}
+//           disabled={boolean("Disable 3", false, "Item 3")}
+//         />
+//         <ControlItem
+//           icon={select(
+//             "icon 4",
+//             {
+//               "no icon": null,
+//               "info": "info",
+//               "clone": "clone",
+//               "search": "search",
+//               "draw": "draw",
+//               "list": "list",
+//             },
+//             null,
+//             "Item 4",
+//           )}
+//           label={text("Item 4", "Item 4", "Item 4")}
+//           disabled={boolean("Disable 4", false, "Item 4")}
+//         />
+//         <ControlItem
+//           icon={select(
+//             "icon 5",
+//             {
+//               "no icon": null,
+//               "info": "info",
+//               "clone": "clone",
+//               "search": "search",
+//               "draw": "draw",
+//               "list": "list",
+//             },
+//             null,
+//             "Item 5",
+//           )}
+//           label={text("Item 5", "Item 5", "Item 5")}
+//           disabled={boolean("Disable 5", false, "Item 5")}
+//         />
+//       </Control>
+//     );
+//   };
+//   Knobs.story = {
+//     parameters: {
+//       parameters: {
+//         viewMode: "story",
+//       },
+//     },
+//   };
+
+
+
+
 // const segmentNames = [
 //   {
 //     id: "segment_1",

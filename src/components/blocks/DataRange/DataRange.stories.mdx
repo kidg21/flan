@@ -35,12 +35,66 @@ The DataRange component is a set of expandable panels for showing and hiding con
 
 # Examples
 
+### States
+
+<Preview>
+  <Story name="States">
+   <Form columns="1">
+        <FormSection>
+          <DataRange
+            id="input"
+            label="Price Range"
+            min={{
+              label: "Min",
+            }}
+            max={{
+              label: "Max",
+            }}
+            helpText="Hang in there, buddy, I'm here to help!"
+          />
+          <DataRange
+            id="inputError"
+            label="Price Range (error)"
+            min={{
+              label: "Min",
+            }}
+            max={{
+              label: "Max",
+            }}
+            helpText="Hang in there, buddy, I'm here to help!"
+            error
+          />
+          <DataRange
+            id="inputError"
+            label="Price Range (With Error message)"
+            labelMin="Min"
+            labelMax="Max"
+            helpText="Hang in there, buddy, I'm here to help!"
+            error="Out of range!"
+          />
+          <DataRange
+            id="inputDisabled"
+            label="Price Range (disabled)"
+            min={{
+              label: "Min",
+            }}
+            max={{
+              label: "Max",
+            }}
+            disabled
+          />
+        </FormSection>
+        </Form>
+  </Story>
+</Preview>
+
+
 ### Types
 
 <Preview>
   <Story name="Types">
    <Form title="States" columns="1">
-        <FormSection title="Input Range (default)">
+    <FormSection title="Input Range (default)">
           <DataRange
             id="input"
             label="Input Range"
@@ -93,34 +147,73 @@ The DataRange component is a set of expandable panels for showing and hiding con
             disabled
           />
         </FormSection>
+        <FormSection title="Select Range">
+          <DataRange
+            id="select"
+            label="Select Range"
+            min={{
+              label: "Min",
+              options: options,
+            }}
+            max={{
+              label: "Max",
+              options: options,
+            }}
+            helpText="Hang in there, buddy, I'm here to help!"
+          />
+          <DataRange
+            id="selectOperation"
+            label="Select Range"
+            min={{
+              label: "Min",
+              options: options,
+            }}
+            select={{ options: [
+  { value: "0", label: "=" },
+  { value: "1", label: "!=" },
+  { value: "2", label: ">" },
+  { value: "3", label: "<" },
+  { value: "4", label: ">=" },
+  { value: "5", label: "<=" },
+] }}
+            max={{
+              label: "Max",
+              options: options,
+            }}
+            helpText="This help text has been passed through a prop!"
+          />
+          <DataRange
+            id="selectError"
+            label="Select Range (error)"
+            min={{
+              label: "Min",
+              options: options,
+            }}
+            max={{
+              label: "Max",
+              options: options,
+            }}
+            helpText="Hang in there, buddy, I'm here to help!"
+            error="Out of range!"
+          />
+          <DataRange
+            id="selectDisabled"
+            label="Select Range (disabled)"
+            min={{
+              label: "Min",
+              options: options,
+            }}
+            max={{
+              label: "Max",
+              options: options,
+            }}
+            helpText="Hang in there, buddy, I'm here to help!"
+            disabled
+          />
+        </FormSection>
         </Form>
   </Story>
 </Preview>
-
-### Icons
-
-<Preview>
-  <Story name="Icons">
-           <DataRange  icon="user"
-           title="This is a DataRange."
-          description="A description can go here, if necessary."
-         />
-  </Story>
-</Preview>
-
-
-### Link
-
-<Preview>
-  <Story name="Link">
-           <DataRange
-           title="This is a DataRange."
-          description="A description can go here, if necessary."
-           link="Link Text"
-         />
-  </Story>
-</Preview>
-
 
 ## Props
 

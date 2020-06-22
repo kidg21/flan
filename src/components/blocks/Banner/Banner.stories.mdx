@@ -16,7 +16,7 @@ import Banner from "blocks/Banner";
 
 <Preview withToolbar>
   <Story name="Standard">
-     <Banner title="This is a Banner." />
+     <Banner variant="success" title="Your payment method has been updated." />
   </Story>
 </Preview>
 
@@ -26,9 +26,8 @@ A banner displays an important, succinct message, and provides actions for users
 
 Banners should be displayed at the top of the screen, below a top app bar. They’re persistent and nonmodal, allowing the user to either ignore them or interact with them at any time. Only one banner should be shown at a time.
 
-- **Notification**	( Low priority ) 
-Notification disappear automatically
-- **Banner**	( Prominent, medium priority )	
+
+- **Banner Notification**	( Low to medium priority )	
 Banners remain until dismissed by the user, or if the state that caused the banner is resolved
 - **Dialog**	( Highest priority )	
 A Required user input. Dialogs block app usage until the user takes a dialog action or exits the dialog
@@ -49,35 +48,32 @@ Banners contain a single message and specific actions a user can take.
 <Preview>
   <Story name="Types">
    <CardGrid columns="1">
-        <Banner variant="info" title="This is an Info Banner." />
-        <Banner variant="success" title="This is a Success Banner." />
-        <Banner variant="warning" title="This is a Warning Banner." />
-        <Banner variant="alert" title="This is an Alert Banner." />
+        <Banner variant="info" title="The latest version of LandVision is available for update." />
+        <Banner variant="success" title="Project has successfully been added to the list." />
+        <Banner variant="warning" title="No results returned. Query is too big and needs to be filtered." />
+        <Banner variant="alert" title="Payment did not go through successfully." />
       </CardGrid>
   </Story>
 </Preview>
 
-### Icons
 
-<Preview>
-  <Story name="Icons">
-           <Banner  icon="user"
-           title="This is a Banner."
-          description="A description can go here, if necessary."
-         />
-  </Story>
-</Preview>
 
 
 ### Link
 
 <Preview>
   <Story name="Link">
+  <CardGrid columns="1">
            <Banner
-           title="This is a Banner."
-          description="A description can go here, if necessary."
-           link="Link Text"
+           variant="info"
+           title="This service is not available with your plan."
+          description="Upgrade to premium to take advantage of this feature."
+           link="Upgrade"
          />
+          <Banner variant="alert" title="Payment did not go through successfully." 
+          description= "Update payment information in order to complete transaction."
+          link="Update Payment"/>
+    </CardGrid>
   </Story>
 </Preview>
 
