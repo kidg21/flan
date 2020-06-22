@@ -37,7 +37,7 @@ export { default as FileImport } from "./blocks/FileImport";
 export { default as Legend } from "./blocks/Legend";
 export { default as Control, ControlItem } from "./blocks/Control";
 export { default as DataRange } from "./blocks/DataRange";
-export { default as List, ListItem } from "./blocks/List";
+export { default as List, ListSection, ListItem } from "./blocks/List";
 export { default as IconBlock } from "./blocks/IconBlock";
 export { default as InputBlock } from "./blocks/InputBlock";
 export { default as MediaBlock } from "./blocks/MediaBlock";

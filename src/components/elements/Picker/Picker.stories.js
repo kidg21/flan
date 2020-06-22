@@ -12,11 +12,14 @@ storiesOf("Elements|Picker", module)
     () => {
       return (
         <Picker id="standard" label="Draw Tools Color Picker" columns="3">
-          <ColorSwatch color="#E4423A" />
-          <ColorSwatch color="#FF8000" />
-          <ColorSwatch isSelected color="#FFBF00" />
-          <ColorSwatch color="#14A939" />
-          <ColorSwatch color="#2F98EE" />
+          <ColorSwatch color="#EBEAEC" />
+          <ColorSwatch color="#D9ECEC" />
+          <ColorSwatch isSelected color="#80959D" />
+          <ColorSwatch color="#63B1CD" />
+          <ColorSwatch color="#06BFAE" />
+          <ColorSwatch color="#095593" />
+          <ColorSwatch color="#F3822B" />
+          <ColorSwatch color="#FFBF00" />
         </Picker>
       );
     },
@@ -27,7 +30,7 @@ storiesOf("Elements|Picker", module)
       return (
         <Picker id="toggleSelect" label="Standard Swatches" columns="4">
           <ColorSwatch
-            color="#E4423A"
+            color="#095593"
             isSelected={activeToggleTab === "tab1"}
             onClick={() => {
               if (activeToggleTab === "tab1") {
@@ -39,7 +42,7 @@ storiesOf("Elements|Picker", module)
             }}
           />
           <ColorSwatch
-            color="#14A939"
+            color="#F3822B"
             isSelected={activeToggleTab === "tab2"}
             onClick={() => {
               if (activeToggleTab === "tab2") {
@@ -51,7 +54,7 @@ storiesOf("Elements|Picker", module)
             }}
           />
           <ColorSwatch
-            color="#2F98EE"
+            color="#FFBF00"
             isSelected={activeToggleTab === "tab3"}
             onClick={() => {
               if (activeToggleTab === "tab3") {
@@ -74,7 +77,7 @@ storiesOf("Elements|Picker", module)
         <Picker id="square" label="Square Swatches" columns="4">
           <ColorSwatch
             square
-            color="#E4423A"
+            color="#095593"
             isSelected={activeToggleTab === "tab1"}
             onClick={() => {
               if (activeToggleTab === "tab1") {
@@ -87,7 +90,7 @@ storiesOf("Elements|Picker", module)
           />
           <ColorSwatch
             square
-            color="#14A939"
+            color="#F3822B"
             isSelected={activeToggleTab === "tab2"}
             onClick={() => {
               if (activeToggleTab === "tab2") {
@@ -100,7 +103,7 @@ storiesOf("Elements|Picker", module)
           />
           <ColorSwatch
             square
-            color="#2F98EE"
+            color="#FFBF00"
             isSelected={activeToggleTab === "tab3"}
             onClick={() => {
               if (activeToggleTab === "tab3") {

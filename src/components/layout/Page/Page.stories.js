@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { FullScreen } from "helpers/Display";
-import { MockCardGrid, MockDetails, MockFooter, MockForm, MockHeader, MockList, MockMap, MockTable, MockTabs, MockButtons, MockPalette } from "helpers/Mocks";
+import { MockCardGrid, MockDetails, MockFooter, MockForm, MockHeader, MockWorkflow, MockMap, MockTable, MockTabs, MockButtons, MockPalette, MockMenu } from "helpers/Mocks";
 import Button from "atoms/Button";
 import Grid from "layout/Grid";
 import Page from "layout/Page";
@@ -38,7 +38,7 @@ const index = [
   <MockMap />,
   <MockMap map="satellite" />,
   <MockCardGrid />,
-  <MockList />,
+  <MockWorkflow />,
   <MockTable />,
   <MockForm />,
   <MockDetails />,
@@ -53,14 +53,15 @@ const content = {
   "Footer": 2,
   "Map": 3,
   "Map (satellite)": 4,
-  "Card Grid": 5,
-  "List": 6,
-  "Table": 7,
-  "Form": 8,
-  "Details": 9,
-  "Tabs": 10,
-  "Buttons": 11,
-  "Palette": 12,
+  "Main Menu": 5,
+  "WorkFlow Menu": 6,
+  "Details": 7,
+  "Card Grid": 8,
+  "Table": 9,
+  "Form": 10,
+  "Tabs": 11,
+  "Buttons": 12,
+  "Palette": 13,
 };
 
 export const Knobs = () => {
@@ -259,7 +260,7 @@ storiesOf("Layout|Page", module)
         template="E_02"
         A={{
           id: "A",
-          content: <MockList />,
+          content: <MockWorkflow />,
         }}
         B={{
           id: "B",

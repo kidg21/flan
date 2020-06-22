@@ -9,62 +9,39 @@ import Avatar from "atoms/Avatar";
 import Icon from "atoms/Icon";
 import Checkbox from "atoms/Checkbox";
 import Switch from "atoms/Switch";
-import Text, { Title, Label } from "base/Typography";
+import Text, { Title } from "base/Typography";
 import { InteractiveContext, DisabledContext, PaddingContext } from "States";
-
-const ListTitle = styled(Label)`
-  color: ${(props) => {
-    return props.theme.text.secondary;
-  }};
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-  letter-spacing: 1px;
-`;
-
-const ListWrapper = styled.ul`
-  display: flex;
-  flex: auto;
-  flex-direction: column;
-  list-style: none;
-  padding: 1rem;
-  li:not(:last-child) {
-    border-bottom: ${(props) => {
-    return props.isDivided ? "1px solid" : "";
-  }};
-    border-bottom-color: ${(props) => {
-    return props.isDivided ? props.theme.palette.neutral40 : "";
-  }};
-  }
-  
-`;
 
 const ListItemWrapper = styled.li`
   position: relative;
   color: ${(props) => {
-    return props.isSelected ? props.theme.text.inverse : props.theme.text.primary;
+    return props.theme.text[props.selectedColor] || "inherit";
   }};
   background-color: ${(props) => {
-    return props.isSelected ? props.theme.background.selected : props.theme.background.default;
+    return props.theme.background[props.selectedBackground] || "inherit";
   }};
-  padding: .5em;
+  padding: 0.5rem 1rem;
   margin-bottom: 1px;
   cursor: ${(props) => {
-    return props.isInteractive ? "pointer" : "";
+    return props.isInteractive && !props.isSelected ? "pointer" : "default";
   }};
   &:focus,
   &:hover {
     ${(props) => {
-    return props.isInteractive ? Darken : "";
+    return props.isInteractive && !props.isSelected ? Darken : "";
   }};
   }
   outline: none;
   &[disabled] {
-    cursor: not-allowed;
-    pointer-events: none;
-    user-select: none;
+    color: ${(props) => {
+    return props.theme.text.disabled;
+  }};
     background-color: ${(props) => {
     return props.theme.background.disabled;
   }};
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
     border-left: none;
   }
   &:last-child {
@@ -72,13 +49,73 @@ const ListItemWrapper = styled.li`
   }
 `;
 
+const ListWrapper = styled.ul`
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  list-style: none;
+  color: ${(props) => {
+    return props.listColor ? props.theme.text[props.listColor] : props.theme.text.secondary;
+  }};
+  background-color: ${(props) => {
+    return props.theme.background[props.listBackground] || props.theme.background.app;
+  }};
+  height: inherit;
+  li:not(:last-child) {
+    border-bottom: ${(props) => {
+    return props.isDivided ? `${props.theme.palette[props.listDivider]} 1px solid` : "";
+  }};
+  }
+  li:last-child {
+    margin-bottom: 0.5rem;
+  }
+`;
+
+const ListTitleWrapper = styled.li`
+  color: inherit;
+  padding: 1rem 1rem;
+`;
+
+const ListTitle = styled(Title)`
+  text-transform: uppercase;
+  letter-spacing: 2px;
+`;
+
+const SectionWrapper = styled.li`
+  color: inherit;
+  padding: 1rem 1rem 0.5rem;
+`;
+
+const Section = styled(Text)`
+  text-transform: uppercase;
+  letter-spacing: 1px;
+`;
+
 function List({
-  children, id, isDivided, isInteractive, title, padding,
+  children, id, isDivided, isInteractive, isInverse, padding, title,
 }) {
+  let listBackground;
+  let listColor;
+  let listDivider = "neutral40";
+  if (isInverse) {
+    listBackground = "alt";
+    listColor = "inverse";
+    listDivider = "neutral100";
+  }
   return (
     <InteractiveContext.Provider value={isInteractive}>
-      <ListWrapper isDivided={isDivided} id={id}>
-        <ListTitle text={title} />
+      <ListWrapper
+        id={id}
+        isDivided={isDivided}
+        listBackground={listBackground}
+        listColor={listColor}
+        listDivider={listDivider}
+      >
+        {title ? (
+          <ListTitleWrapper>
+            <ListTitle text={title} size="" weight="bold" />
+          </ListTitleWrapper>
+        ) : null}
         <PaddingContext.Provider value={padding}>
           {children}
         </PaddingContext.Provider>
@@ -92,6 +129,7 @@ List.propTypes = {
   id: PropTypes.string,
   isDivided: PropTypes.bool,
   isInteractive: PropTypes.bool,
+  isInverse: PropTypes.bool,
   padding: PropTypes.string,
   title: PropTypes.string,
 };
@@ -100,7 +138,31 @@ List.defaultProps = {
   id: null,
   isDivided: false,
   isInteractive: false,
+  isInverse: false,
   padding: "0",
+  title: null,
+};
+
+function ListSection({
+  title,
+  children,
+}) {
+  return (
+    <React.Fragment>
+      <SectionWrapper>
+        <Section text={title} />
+      </SectionWrapper>
+      {children}
+    </React.Fragment>
+  );
+}
+
+ListSection.propTypes = {
+  children: PropTypes.node,
+  title: PropTypes.string,
+};
+ListSection.defaultProps = {
+  children: null,
   title: null,
 };
 
@@ -128,7 +190,7 @@ function getRightContent(post, disabled, onClick) {
       };
     } else if (postType === "icon" && post.icon) {
       rightContent = {
-        content: <Icon icon={post.icon} onClick={post.onClick} />,
+        content: <Icon icon={post.icon} size={post.size} variant={post.variant} onClick={post.onClick} fixedWidth />,
         width: "max-content",
         onClick: post.onClick || onClick,
       };
@@ -162,7 +224,6 @@ function getLeftContent(pre, disabled, onClick) {
 
   return leftContent;
 }
-
 function ListItem({
   as,
   children,
@@ -178,11 +239,18 @@ function ListItem({
   tabIndex,
   title,
 }) {
+  let selectedColor;
+  let selectedBackground;
+  if (isSelected) {
+    selectedColor = "inverse";
+    selectedBackground = "selectedDark";
+  }
+
   const leftContent = getLeftContent(pre, disabled, onClick);
   const centerContent = (
     <React.Fragment>
-      <Title text={title} disabled={disabled} />
-      {description ? (<Text size="sm" text={description} disabled={disabled} />
+      <Text text={title || null} disabled={disabled} size="lg" weight="bold" />
+      {description ? (<Text size="sm" text={description || null} disabled={disabled} />
       ) : null}
     </React.Fragment>);
 
@@ -191,6 +259,7 @@ function ListItem({
   return (
     <ListItemWrapper
       as={as}
+      disabled={disabled}
       href={href}
       id={id}
       isInteractive={
@@ -199,7 +268,8 @@ function ListItem({
           : useContext(InteractiveContext)
       }
       isSelected={isSelected}
-      disabled={disabled}
+      selectedColor={selectedColor}
+      selectedBackground={selectedBackground}
       onClick={onClick}
       tabIndex={disabled ? "-1" : tabIndex}
     >
@@ -238,6 +308,8 @@ ListItem.propTypes = {
     label: PropTypes.string,
     checked: PropTypes.bool,
     onClick: PropTypes.func,
+    size: PropTypes.string,
+    variant: PropTypes.string,
   }),
   pre: PropTypes.shape({
     label: PropTypes.string,
@@ -261,4 +333,4 @@ ListItem.defaultProps = {
   tabIndex: "0",
 };
 
-export { List as default, ListItem };
+export { List as default, ListSection, ListItem };

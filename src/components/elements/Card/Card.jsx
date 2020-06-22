@@ -44,7 +44,7 @@ const CardSectionWrapper = styled.section`
   }};
   max-height: ${(props) => {
     return props.open ? "0" : "100vh";
-  }}; 
+  }};
   transition: ${(props) => {
     return props.disableTransition ? "" : "all 0.25s ease-in-out";
   }};
@@ -103,7 +103,7 @@ const CardWrapper = styled.div`
 `;
 
 const CardGridWrapper = styled(Grid)`
-/** TODO: Prevent Cards from being cropped in norrow containers */
+  /** TODO: Prevent Cards from being cropped in norrow containers */
   /* grid-template-columns: repeat(auto-fill,minmax(auto, 14rem)); */
   /* justify-content: space-between; */
   padding: 1rem;

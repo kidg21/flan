@@ -1,18 +1,44 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import List, { ListItem } from "blocks/List";
+import List, { ListSection, ListItem } from "blocks/List";
 
 storiesOf("Blocks|List", module)
   .addDecorator(withKnobs)
   .add(
-    "Documentation",
+    "Standard",
     () => {
       return (
-        <List isDivided>
-          <ListItem title="List Item" />
-          <ListItem title="List Item" />
-          <ListItem title="List Item" />
+        <List id="Standard" title="List Title" isInteractive>
+          <ListSection title="Section Name">
+            <ListItem title="List Item" />
+            <ListItem title="Disabled Item" disabled />
+            <ListItem title="List Item" />
+          </ListSection>
+          <ListSection title="Section Name">
+            <ListItem title="Selected Item" isSelected />
+            <ListItem title="List Item" />
+            <ListItem title="List Item" />
+          </ListSection>
+        </List>
+      );
+    },
+  )
+  .add(
+    "Inverse",
+    () => {
+      return (
+        <List id="Inverse" title="List Title" isInteractive isInverse>
+          <ListSection title="Section Name">
+            <ListItem title="List Item" />
+            <ListItem title="Disabled Item" disabled />
+            <ListItem title="List Item" />
+          </ListSection>
+          <ListSection title="Section Name">
+            <ListItem title="Selected Item" isSelected />
+            <ListItem title="List Item" />
+            <ListItem title="List Item" />
+          </ListSection>
         </List>
       );
     },
@@ -20,7 +46,10 @@ storiesOf("Blocks|List", module)
   .add("Knobs", () => {
     return (
       <List
+        id="Knobs"
+        isInverse={boolean("Inverse", false, "List")}
         isInteractive={boolean("Interactive", false, "List")}
+        isDivided={boolean("Divided", false, "List")}
       >
         <ListItem
           title={text("1 - Title", "Item 1", "Item 1")}
@@ -42,6 +71,7 @@ storiesOf("Blocks|List", module)
               checkbox: { type: "checkbox", label: "Checkbox" },
               toggle: { type: "toggle", label: "Toggle" },
               label: { type: "label", label: "Label" },
+              icon: { type: "icon", icon: "right" },
             },
             null,
             "Item 1",
@@ -69,6 +99,7 @@ storiesOf("Blocks|List", module)
               checkbox: { type: "checkbox", label: "Checkbox" },
               toggle: { type: "toggle", label: "Toggle" },
               label: { type: "label", label: "Label" },
+              icon: { type: "icon", icon: "right" },
             },
             null,
             "Item 2",
@@ -96,6 +127,7 @@ storiesOf("Blocks|List", module)
               checkbox: { type: "checkbox", label: "Checkbox" },
               toggle: { type: "toggle", label: "Toggle" },
               label: { type: "label", label: "Label" },
+              icon: { type: "icon", icon: "right" },
             },
             null,
             "Item 3",
@@ -108,7 +140,7 @@ storiesOf("Blocks|List", module)
   })
   .add("States", () => {
     return (
-      <List>
+      <List id="States">
         <ListItem
           title="List Item (standard)"
           description="This is the description"
@@ -123,13 +155,12 @@ storiesOf("Blocks|List", module)
           description="This is the description"
           disabled
         />
-
       </List>
     );
   })
   .add("Interactive", () => {
     return (
-      <List isInteractive>
+      <List id="Interactive" isInteractive>
         <ListItem title="List Item" description="This is the description" />
         <ListItem title="List Item" description="This is the description" />
         <ListItem title="List Item" description="This is the description" />
@@ -139,13 +170,12 @@ storiesOf("Blocks|List", module)
           isInteractive={false}
         />
         <ListItem title="List Item" description="This is the description" />
-
       </List>
     );
   })
   .add("Pre-Label", () => {
     return (
-      <List isInteractive>
+      <List id="Pre-Label" isInteractive>
         <ListItem
           title="List Item"
           description="This is the description"
@@ -171,7 +201,7 @@ storiesOf("Blocks|List", module)
   })
   .add("Post-Toggle", () => {
     return (
-      <List isInteractive>
+      <List id="Post-Toggle" isInteractive>
         <ListItem
           title="List Item"
           description="This is the description"
@@ -197,7 +227,7 @@ storiesOf("Blocks|List", module)
   })
   .add("Post-Label", () => {
     return (
-      <List isInteractive>
+      <List id="Post-Label" isInteractive>
         <ListItem
           title="List Item"
           description="This is the description"
@@ -223,7 +253,7 @@ storiesOf("Blocks|List", module)
   })
   .add("Post-Checkbox", () => {
     return (
-      <List isInteractive>
+      <List id="Post-Checkbox" isInteractive>
         <ListItem
           title="List Item"
           description="This is the description"
@@ -249,7 +279,7 @@ storiesOf("Blocks|List", module)
   })
   .add("Post-Icon", () => {
     return (
-      <List isInteractive>
+      <List id="Post-Icon" isInteractive>
         <ListItem
           title="List Item"
           description="This is the description"
@@ -270,12 +300,19 @@ storiesOf("Blocks|List", module)
           description="This is the description"
           post={{ type: "icon", icon: "bookmark", onClick: true }}
         />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          post={{
+            type: "icon", icon: "include", variant: "success",
+          }}
+        />
       </List>
     );
   })
   .add("List with onClick", () => {
     return (
-      <List isInteractive>
+      <List id="List with onClick" isInteractive>
         <ListItem
           title="List Item"
           description="This is the description"

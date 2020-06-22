@@ -334,7 +334,7 @@ const selectMenuPropTypes = {
     }),
   ])),
   placeholder: PropTypes.string,
-  selectOptions: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.object), PropTypes.object]),
+  selectOptions: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.any), PropTypes.any]),
   warning: PropTypes.string,
 };
 

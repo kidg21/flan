@@ -17,6 +17,7 @@ export const colors = {
   blue60: "hsl(207, 85%, 56%)",
   blue80: "hsl(201, 61%, 43%)",
   blue100: "hsl(200, 100%, 25%)",
+  blueDark: "hsl(215, 22%, 26%)",
 
   green20: "hsl(76, 59%, 96%)",
   green40: "hsl(89, 50%, 49%)",
@@ -62,11 +63,10 @@ export const colors = {
   grey90: "hsl(240, 2%, 18%)",
   grey100: "hsl(34, 5%, 12%)", // blackish
 
-
-  lightBoxNavy: "hsl(216.6,72%,21%)",
-  lightBoxCyan: "hsl(197,100%,44%)",
-  lightBoxGold: "hsl(46,64.2%,52.9%)",
-  lightBoxGrey: "hsl(200,2.6%,77.1%)",
+  lightBoxNavy: "hsl(216.6, 72%, 21%)",
+  lightBoxCyan: "hsl(197, 100%, 44%)",
+  lightBoxGold: "hsl(46, 64.2%, 52.9%)",
+  lightBoxGrey: "hsl(200, 2.6%, 77.1%)",
   softGrey: "hsl(270, 5%, 92.2%)",
   softBlue: "hsl(180, 33.3%, 88.8%)",
   moss: "hsl(197, 12.9%, 55.9%)",
@@ -75,16 +75,24 @@ export const colors = {
   blueSteel: "hsl(207, 88.5%, 30.6%)",
   tangerine: "hsl(26, 89.3%, 56.1%)",
   lemon: "hsl(45, 100%, 50%)",
+};
 
+export const interaction = {
+  hover: "hsla(240, 2%, 57%, 0.25)",
+  selectedLight: "hsla(204, 69%, 65%, 0.6)",
+  selectedDark: "hsl(215, 44%, 16%)",
 };
 
 // need to have hex key to work with old draw tools
 export const drawPalette = {
-  "#E4423A": colors.red60,
-  "#FF8000": colors.orange60,
+  "#EBEAEC": colors.softGrey,
+  "#D9ECEC": colors.softBlue,
+  "#80959D": colors.moss,
+  "#63B1CD": colors.robinBlue,
+  "#06BFAE": colors.seafoam,
+  "#095593": colors.blueSteel,
+  "#F3822B": colors.tangerine,
   "#FFBF00": colors.lemon,
-  "#14A939": colors.green60,
-  "#2F98EE": colors.blue60,
 };
 
 export const shadows = {
@@ -145,20 +153,23 @@ export const DMPTheme = {
   background: {
     alert: colors.red80,
     active: colors.green40,
+    alt: colors.blueDark,
     app: colors.white40,
     default: colors.white60,
     disabled: colors.grey10,
+    hover: interaction.hover,
     info: colors.blue100,
     inverse: colors.grey100,
     modal: colors.shade10,
-    selected: colors.blue40,
+    selected: interaction.selectedLight,
+    selectedDark: interaction.selectedDark,
     success: colors.green100,
     warning: colors.orange80,
   },
   text: {
     alert: colors.red80,
     disabled: colors.grey40,
-    inverse: colors.white60,
+    inverse: colors.white40,
     inverseHover: colors.grey20,
     link: colors.blue80,
     primary: colors.grey100,
@@ -205,7 +216,6 @@ export const DMPTheme = {
     neutral60: colors.grey30,
     neutral80: colors.grey40,
     neutral100: colors.grey50,
-    selectedLight: colors.blue40,
     selected: colors.blue80,
     success20: colors.green20,
     success40: colors.green40,
@@ -228,24 +238,27 @@ export const darkTheme = {
   background: {
     active: colors.green80,
     alert: colors.red60,
+    alt: colors.white40,
     app: colors.grey100,
     default: colors.grey100,
-    disabled: colors.grey80,
+    disabled: colors.grey60,
+    hover: interaction.hover,
     info: colors.blue60,
     inverse: colors.white60,
     modal: colors.shade10,
-    selected: colors.blue80,
+    selected: interaction.selectedLight,
+    selectedDark: interaction.selecteDark,
     success: colors.green60,
     warning: colors.orange60,
   },
   text: {
     alert: colors.red20,
-    disabled: colors.grey40,
+    disabled: colors.grey20,
     inverse: colors.grey100,
     inverseHover: colors.grey80,
     link: colors.blue80,
     primary: colors.grey50,
-    secondary: colors.grey60,
+    secondary: colors.grey10,
     selected: colors.blue80,
     success: colors.green20,
     warning: colors.orange20,
@@ -282,7 +295,6 @@ export const darkTheme = {
     neutral80: colors.grey60,
     neutral100: colors.grey50,
     selected: colors.blue80,
-    selectedLight: colors.blue80,
     success20: colors.green100,
     success40: colors.green80,
     success60: colors.green60,
@@ -297,7 +309,7 @@ export const darkTheme = {
 };
 
 export const Darken = css`
-  filter: brightness(0.90) saturate(1.25) contrast(1);
+  filter: brightness(0.90) saturate(1.25) contrast(1.1);
 `;
 
 export const Lighten = css`
