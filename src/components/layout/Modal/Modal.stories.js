@@ -7,7 +7,7 @@ import Banner from "blocks/Banner";
 import DialogBox from "elements/DialogBox";
 import Modal from "layout/Modal";
 
-storiesOf("Utilities|Modal", module)
+storiesOf("Layout|Modal", module)
   .add(
     "Documentation",
     () => {
