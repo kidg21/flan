@@ -5,6 +5,7 @@ import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
 import Text from "base/Typography";
 import Bar from "layout/Bar";
+import Button from "atoms/Button";
 import Icon from "atoms/Icon";
 import Card, { CardSection, CardGrid } from "elements/Card";
 import Progress, {Step} from "elements/Progress";
@@ -13,10 +14,11 @@ import Progress, {Step} from "elements/Progress";
 
 # Workflow Progress Bar
 
-####
+#### A workflow progress bar conveys progress through numbered steps. It provides a wizard-like workflow. 
 
 <Preview withToolbar>
 <Story name="Standard">
+<Grid columns="1">
   <Progress>
         <Step isComplete title="Task" description="this is what you do" />
         <Step isComplete title="Task" description="this is what you do" />
@@ -24,17 +26,18 @@ import Progress, {Step} from "elements/Progress";
         <Step title="Task" description="this is what you do" />
         <Step title="Task" description="this is what you do" />
     </Progress>
+    <Bar padding="2x" 
+    left={{content: <Button label="Back"/>,
+    width: "max-content",}}
+    right={<Button label="Next" isSolid/>}/>
+  </Grid>
   </Story>
 </Preview>
 
 # Usage
 
-A dialog is a type of modal window that appears in front of app content to provide critical information or ask for a decision. Dialogs disable all app functionality when they appear, and remain on screen until confirmed, dismissed, or a required action has been taken. Dialogs are purposefully interruptive, so they should be used sparingly. They must be used in conjunction with **[Modal](/?path=/docs/layout-modal--documentation)**. A Modal is what is used to display the Dialog Box above all other content and grey out the background. When using a Dialog Box the Modal should be set up to cover the entire app.
-
-Dialogs should be used for:
-- Errors that block an app’s normal operation
-- Critical information that requires a specific user task, decision, or acknowledgement
-
+The Workflow Progress Bar accepts steps and displays them in a linear format. The first step will needs to be set to isSelected to show that it is active. There needs to be a button to confirm a state of "done" and progress to the next step. When that step occurs the previous step would be set to "isCompleted" and the next step would be "isSelected". This process would continue until all steps are set to isCompleted. 
+Within these progress bars it is the developers choice to configure it so that a user may navigate backwards. When the user navigates backwards the previous step goes back to default, and looks like it was never selected. And the step you go back to, which was once set to isCompleted, goes back to isSelected.
 
 ## Types
 
