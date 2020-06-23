@@ -7,7 +7,7 @@ import Banner from "blocks/Banner";
 import DialogBox from "elements/DialogBox";
 import Modal from "layout/Modal";
 
-storiesOf("Layout|Modal", module)
+storiesOf("Utilities|Modal", module)
   .add(
     "Documentation",
     () => {
@@ -37,7 +37,7 @@ storiesOf("Layout|Modal", module)
     },
   );
 
-storiesOf("Layout|Modal", module)
+storiesOf("Utilities|Modal", module)
   .addDecorator(withKnobs)
   .add("Knobs", () => {
     return React.createElement(() => {

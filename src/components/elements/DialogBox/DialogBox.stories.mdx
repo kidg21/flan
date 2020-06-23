@@ -9,7 +9,7 @@ import Icon from "atoms/Icon";
 import Card, { CardSection, CardGrid } from "elements/Card";
 import DialogBox from "elements/DialogBox";
 
-<Meta title="Elements|DialogBox" component={DialogBox} />
+<Meta title="Elements|Dialog Box" component={DialogBox} />
 
 # Dialog Box
 
@@ -19,7 +19,7 @@ import DialogBox from "elements/DialogBox";
 <Preview withToolbar>
   <Story name="Standard">
      <DialogBox
-          title="Default Dialog"
+          title="Clear and Specific Title"
           body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
           buttons={[
             {
@@ -58,36 +58,11 @@ Titles should:
 
 - Contain a brief, clear statement or question
 - Avoid apologies (“Sorry for the interruption”), alarm (“Warning!”), or ambiguity (“Are you sure?”)
-
+- Buttons should always be the same variant/color. Mixing variants causes confusion and leads the user to focus on color over content.
 
 <Preview>
   <Story name="Usage">
-   <React.Fragment>
-      <Bar
-        padding="2x"
-        contentAlign="center"
-        left={{
-          content: <Icon icon="check" variant="success" size="lg" />,
-          width: "5%",
-        }}
-        center={{
-          content: <DialogBox
-        title="Reset Settings?"
-        body="This will reset your account to it's default fasctory settings removing all current user preferences."
-        buttons={[
-          {
-            id: "Negative",
-            label: "Cancel",
-          },
-          {
-            id: "Affirmative",
-            label: "Accept",
-          },
-        ]}
-      />,
-          align: "left",
-        }}
-      />
+   <Grid columns="3">
       <Bar
         padding="2x"
         contentAlign="center"
@@ -113,9 +88,120 @@ Titles should:
           align: "left",
         }}
       />
-    </React.Fragment>
+      <Bar
+        padding="2x"
+        contentAlign="center"
+        left={{
+          content: <Icon icon="close" variant="alert" size="lg" />,
+          width: "5%",
+        }}
+        center={{
+          content: <DialogBox
+        title="Reset Settings?"
+        body="This will reset your account to it's default fasctory settings removing all current user preferences."
+        buttons={[
+          {
+            id: "Negative",
+            label: "Accept",
+          },
+          {
+            id: "Affirmative",
+            label: "Cancel",
+          },
+        ]}
+      />,
+          align: "left",
+        }}
+      />
+       <Bar
+        padding="2x"
+        contentAlign="center"
+        left={{
+          content: <Icon icon="check" variant="success" size="lg" />,
+          width: "5%",
+        }}
+        center={{
+          content: <DialogBox
+        title="Reset Settings?"
+        body="This will reset your account to it's default fasctory settings removing all current user preferences."
+        buttons={[
+          {
+            id: "Negative",
+            label: "Cancel",
+          },
+          {
+            id: "Affirmative",
+            label: "Accept",
+          },
+        ]}
+      />,
+          align: "left",
+        }}
+      />
+    </Grid>
   </Story>
 </Preview>
+
+
+<Preview>
+<Story name="Color Usage">
+<React.Fragment>
+<Bar
+        padding="2x"
+        contentAlign="center"
+        left={{
+          content: <Icon icon="close" variant="alert" size="lg" />,
+          width: "5%",
+        }}
+        center={{
+          content: <DialogBox
+       title="Reset Settings?"
+        body="This will reset your account to it's default fasctory settings removing all current user preferences."
+        buttons={[
+          {
+            id: "Negative",
+            label: "No",
+            variant: "alert",
+          },
+          {
+            id: "Affirmative",
+            label: "Agree",
+            variant: "success",
+          },
+        ]}
+      />,
+          align: "left",
+        }}
+      />
+      <Bar
+        padding="2x"
+        contentAlign="center"
+        left={{
+          content: <Icon icon="close" variant="alert" size="lg" />,
+          width: "5%",
+        }}
+        center={{
+          content: <DialogBox
+       title="Reset Settings?"
+        body="This will reset your account to it's default fasctory settings removing all current user preferences."
+        buttons={[
+          {
+            id: "Negative",
+            label: "No",
+          },
+          {
+            id: "Affirmative",
+            label: "Agree",
+            variant: "success",
+          },
+        ]}
+      />,
+          align: "left",
+        }}
+      />
+      </React.Fragment>
+      </Story>
+      </Preview>
 
 # Principles
 
@@ -135,9 +221,25 @@ Dialogs should appear in response to a user task or an action, with relevant or 
 
 ### Types
 
+Reminder that buttons should have the same color/variant.
+
 <Preview>
   <Story name="Types">
-   <CardGrid columns="1">
+  <CardGrid columns="1">
+        <DialogBox
+        title="Default Dialog"
+        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        buttons={[
+          {
+            id: "Negative",
+            label: "Negative",
+          },
+          {
+            id: "Affirmative",
+            label: "Affirmative",
+          },
+        ]}
+      />
         <DialogBox
         title="Successful Dialog"
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."

@@ -6,7 +6,7 @@ import Picker, { ColorSwatch } from "elements/Picker";
 
 
 export default {
-  title: "Elements/Picker/Tests",
+  title: "Elements/Color Picker/Tests",
   component: Picker,
   parameters: {
     docs: { page: null },
