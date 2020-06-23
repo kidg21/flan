@@ -4,7 +4,8 @@ import { action } from "@storybook/addon-actions";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
 import Bar from "layout/Bar";
-import Text from "base/Typography";
+import Button from "atomz/Button";
+import Text, {Title} from "base/Typography";
 import Card, { CardSection, CardGrid } from "elements/Card";
 import Menu from "blocks/Menu";
 
@@ -16,14 +17,18 @@ import Menu from "blocks/Menu";
 
 <Preview withToolbar>
   <Story name="Standard">
-     <Menu  data={[
+  <Card>
+  <Bar padding="2x" 
+  left = {<Title size="3xl" text="202 Pacific Coast Hwy, Malibu, CA"/>}
+  right={
+     <Menu  visible 
+     data={[
   {
     id: "a",
     onClick: () => {
       console.log("clicked Save");
     },
     label: "Save",
-    icon: "save",
   },
   {
     id: "b",
@@ -54,7 +59,16 @@ import Menu from "blocks/Menu";
     label: "Layer",
   },
 ]}
- position="bottomLeft" />
+ position="bottomLeft" />}
+ />
+ <Bar padding="2x" 
+ left={
+   <Text size="lg" 
+   text="Live the California dream at this modern paradise right on the beach in Malibu. Whether it's your escape from the city or new full time residence; nothing beats waking up to the sound of waves and having coffee on the sun drenched deck with dolphins swimming by in the morning. Located just minutes away from Santa Monica and walking distance to Malibu's hottest restaurant Moonshadows. Recently renovated with hard wood floors throughout, Poliform Italian kitchen cabinets, Caesar stone counter tops, top of the line Miele appliances, Gaggeneau wine cellar, Bosch washer/dryer, new plumbing and electrical and outdoor heat lamps over the Trex wood deck for late night stargazing with your significant other. It's time to buy that stand up paddleboard, get back in tune with nature and start living your Malibu dream now. This is the best deal under $4 million on the beach."
+   />
+   } />
+ <Bar padding="2x" left= { <Button label="View Details"/>}/>
+ </Card>
   </Story>
 </Preview>
 
@@ -69,14 +83,13 @@ The Menu component is a set of expandable panels for showing and hiding content 
 <Preview>
   <Story name="Types">
    <Grid columns="3">
-        <Menu  data={[
+        <Card><Menu  visible data={[
   {
     id: "a",
     onClick: () => {
       console.log("clicked Save");
     },
     label: "Save",
-    icon: "save",
   },
   {
     id: "b",
@@ -108,7 +121,9 @@ The Menu component is a set of expandable panels for showing and hiding content 
   },
 ]}
  position="bottomLeft" />
- <Menu  data={[
+ </Card>
+ <Card>
+ <Menu  visible data={[
   {
     id: "a",
     onClick: () => {
@@ -123,6 +138,7 @@ The Menu component is a set of expandable panels for showing and hiding content 
       console.log("clicked Filter");
     },
     label: "Filter",
+    icon: "filter",
   },
   {
     id: "c",
@@ -147,162 +163,7 @@ The Menu component is a set of expandable panels for showing and hiding content 
   },
 ]}
  position="bottomRight" />
- <Menu  data={[
-  {
-    id: "a",
-    onClick: () => {
-      console.log("clicked Save");
-    },
-    label: "Save",
-    icon: "save",
-  },
-  {
-    id: "b",
-    onClick: () => {
-      console.log("clicked Filter");
-    },
-    label: "Filter",
-  },
-  {
-    id: "c",
-    onClick: () => {
-      console.log("clicked Share");
-    },
-    label: "Share",
-  },
-  {
-    id: "d",
-    onClick: () => {
-      console.log("clicked Refresh");
-    },
-    label: "Refresh",
-  },
-  {
-    id: "e",
-    onClick: () => {
-      console.log("clicked Layer");
-    },
-    label: "Layer",
-  },
-]}
- position="bottomCenter" />
- <Menu  data={[
-  {
-    id: "a",
-    onClick: () => {
-      console.log("clicked Save");
-    },
-    label: "Save",
-    icon: "save",
-  },
-  {
-    id: "b",
-    onClick: () => {
-      console.log("clicked Filter");
-    },
-    label: "Filter",
-  },
-  {
-    id: "c",
-    onClick: () => {
-      console.log("clicked Share");
-    },
-    label: "Share",
-  },
-  {
-    id: "d",
-    onClick: () => {
-      console.log("clicked Refresh");
-    },
-    label: "Refresh",
-  },
-  {
-    id: "e",
-    onClick: () => {
-      console.log("clicked Layer");
-    },
-    label: "Layer",
-  },
-]}
- position="topRight" />
- <Menu  data={[
-  {
-    id: "a",
-    onClick: () => {
-      console.log("clicked Save");
-    },
-    label: "Save",
-    icon: "save",
-  },
-  {
-    id: "b",
-    onClick: () => {
-      console.log("clicked Filter");
-    },
-    label: "Filter",
-  },
-  {
-    id: "c",
-    onClick: () => {
-      console.log("clicked Share");
-    },
-    label: "Share",
-  },
-  {
-    id: "d",
-    onClick: () => {
-      console.log("clicked Refresh");
-    },
-    label: "Refresh",
-  },
-  {
-    id: "e",
-    onClick: () => {
-      console.log("clicked Layer");
-    },
-    label: "Layer",
-  },
-]}
- position="topCenter" />
- <Menu  data={[
-  {
-    id: "a",
-    onClick: () => {
-      console.log("clicked Save");
-    },
-    label: "Save",
-    icon: "save",
-  },
-  {
-    id: "b",
-    onClick: () => {
-      console.log("clicked Filter");
-    },
-    label: "Filter",
-  },
-  {
-    id: "c",
-    onClick: () => {
-      console.log("clicked Share");
-    },
-    label: "Share",
-  },
-  {
-    id: "d",
-    onClick: () => {
-      console.log("clicked Refresh");
-    },
-    label: "Refresh",
-  },
-  {
-    id: "e",
-    onClick: () => {
-      console.log("clicked Layer");
-    },
-    label: "Layer",
-  },
-]}
- position="topLeft" />
+ </Card>
       </Grid>
   </Story>
 </Preview>

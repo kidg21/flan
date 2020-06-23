@@ -11,7 +11,7 @@ import DataRange from "blocks/DataRange";
 
 # DataRange
 
-### An DataRange allows users to toggle the display of sections of content
+### A Data Range component shows the range between defined values.
 
 <Preview withToolbar>
   <Story name="Standard">
@@ -31,7 +31,7 @@ import DataRange from "blocks/DataRange";
 
 # Usage
 
-The DataRange component is a set of expandable panels for showing and hiding content from the user to make the UI less crowded. The component works well on both mobile and desktop environment and it supports keyboard and screen readers too. The component supports Lumo and Material themes.
+The Data Range component allows a user to enter or select numeric values to filter data by. It is an alternative to using the Slider component.
 
 # Examples
 
@@ -93,8 +93,8 @@ The DataRange component is a set of expandable panels for showing and hiding con
 
 <Preview>
   <Story name="Types">
-   <Form title="States" columns="1">
-    <FormSection title="Input Range (default)">
+   <Form columns="1">
+    <FormSection>
           <DataRange
             id="input"
             label="Input Range"
@@ -107,66 +107,45 @@ The DataRange component is a set of expandable panels for showing and hiding con
             helpText="Hang in there, buddy, I'm here to help!"
           />
           <DataRange
-            id="inputError"
-            label="Input Range (error)"
-            min={{
-              label: "Min",
-            }}
-            max={{
-              label: "Max",
-            }}
-            helpText="Hang in there, buddy, I'm here to help!"
-            error
-          />
-          <DataRange
-            id="inputError"
-            label="Input Range (error)"
-            labelMin="Min"
-            labelMax="Max"
-            helpText="Hang in there, buddy, I'm here to help!"
-            error="Out of range!"
-          />
-          <DataRange
-            id="inputError"
-            label="Input Range (error)"
-            labelMin="Min"
-            labelMax="Max"
-            helpText="Hang in there, buddy, I'm here to help!"
-            warning="Warning text"
-          />
-          <DataRange
-            id="inputDisabled"
-            label="Input Range (disabled)"
-            min={{
-              label: "Min",
-            }}
-            max={{
-              label: "Max",
-            }}
-            helpText="Hang in there, buddy, I'm here to help!"
-            disabled
-          />
-        </FormSection>
-        <FormSection title="Select Range">
-          <DataRange
             id="select"
             label="Select Range"
             min={{
               label: "Min",
-              options: options,
+              options: [
+  { value: "0", label: "0" },
+  { value: "1", label: "1" },
+  { value: "2", label: "2" },
+  { value: "3", label: "3" },
+  { value: "4", label: "4" },
+  { value: "5", label: "5" },
+],
             }}
             max={{
               label: "Max",
-              options: options,
+              options: [
+  { value: "0", label: "0" },
+  { value: "1", label: "1" },
+  { value: "2", label: "2" },
+  { value: "3", label: "3" },
+  { value: "4", label: "4" },
+  { value: "5", label: "5" },
+],
             }}
             helpText="Hang in there, buddy, I'm here to help!"
           />
           <DataRange
             id="selectOperation"
-            label="Select Range"
+            label="Select Range with Selector Operator"
             min={{
               label: "Min",
-              options: options,
+              options: [
+  { value: "0", label: "=" },
+  { value: "1", label: "!=" },
+  { value: "2", label: ">" },
+  { value: "3", label: "<" },
+  { value: "4", label: ">=" },
+  { value: "5", label: "<=" },
+],
             }}
             select={{ options: [
   { value: "0", label: "=" },
@@ -175,41 +154,13 @@ The DataRange component is a set of expandable panels for showing and hiding con
   { value: "3", label: "<" },
   { value: "4", label: ">=" },
   { value: "5", label: "<=" },
-] }}
+], }}
             max={{
               label: "Max",
               options: options,
             }}
             helpText="This help text has been passed through a prop!"
-          />
-          <DataRange
-            id="selectError"
-            label="Select Range (error)"
-            min={{
-              label: "Min",
-              options: options,
-            }}
-            max={{
-              label: "Max",
-              options: options,
-            }}
-            helpText="Hang in there, buddy, I'm here to help!"
-            error="Out of range!"
-          />
-          <DataRange
-            id="selectDisabled"
-            label="Select Range (disabled)"
-            min={{
-              label: "Min",
-              options: options,
-            }}
-            max={{
-              label: "Max",
-              options: options,
-            }}
-            helpText="Hang in there, buddy, I'm here to help!"
-            disabled
-          />
+          />         
         </FormSection>
         </Form>
   </Story>
