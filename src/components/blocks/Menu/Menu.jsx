@@ -80,7 +80,7 @@ const MenuBG = styled.div`
 /**
  * List component that pops out
  */
-function MenuComponent({
+function MenuItem({
   data,
   id,
   left,
@@ -128,7 +128,7 @@ function MenuComponent({
                 >
                   <ListItem as="section" title={item.label} disabled={item.disabled} pre={{ icon: item.icon }} />
                   {activeItem && activeItem.id === item.id ? (
-                    <MenuComponent
+                    <MenuItem
                       data={item.commands}
                       id={item.id}
                       left={activeItem.left}
@@ -164,7 +164,7 @@ function MenuComponent({
   );
 }
 
-MenuComponent.propTypes = {
+MenuItem.propTypes = {
   data: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
     icon: PropTypes.string,
@@ -181,7 +181,7 @@ MenuComponent.propTypes = {
   transform: PropTypes.string,
 };
 
-MenuComponent.defaultProps = {
+MenuItem.defaultProps = {
   left: "",
   onClick: null,
   right: "",
@@ -245,7 +245,7 @@ function Menu({
       <MenuContainer onClick={toggleVisibility}>
         <Icon icon={icon} />
         {visibility ? (
-          <MenuComponent
+          <MenuItem
             data={data}
             id={id}
             submenuDirection={submenuDirection}

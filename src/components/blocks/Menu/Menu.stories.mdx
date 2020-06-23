@@ -13,108 +13,28 @@ import Menu from "blocks/Menu";
 
 # Menu
 
-### An Menu allows users to toggle the display of sections of content
+### Menus display a list of choices on temporary surfaces.
 
 <Preview withToolbar>
   <Story name="Standard">
+  <Grid columns="3">
+  <div/>
   <Card>
   <Bar padding="2x" 
-  left = {<Title size="3xl" text="202 Pacific Coast Hwy, Malibu, CA"/>}
+  left = {<Title size="xl" weight="bold" text="Malibu, CA"/>}
   right={
      <Menu  visible 
      data={[
   {
-    id: "a",
-    onClick: () => {
-      console.log("clicked Save");
-    },
     label: "Save",
   },
   {
-    id: "b",
-    onClick: () => {
-      console.log("clicked Filter");
-    },
     label: "Filter",
   },
   {
-    id: "c",
-    onClick: () => {
-      console.log("clicked Share");
-    },
     label: "Share",
   },
   {
-    id: "d",
-    onClick: () => {
-      console.log("clicked Refresh");
-    },
-    label: "Refresh",
-  },
-  {
-    id: "e",
-    onClick: () => {
-      console.log("clicked Layer");
-    },
-    label: "Layer",
-  },
-]}
- position="bottomLeft" />}
- />
- <Bar padding="2x" 
- left={
-   <Text size="lg" 
-   text="Live the California dream at this modern paradise right on the beach in Malibu. Whether it's your escape from the city or new full time residence; nothing beats waking up to the sound of waves and having coffee on the sun drenched deck with dolphins swimming by in the morning. Located just minutes away from Santa Monica and walking distance to Malibu's hottest restaurant Moonshadows. Recently renovated with hard wood floors throughout, Poliform Italian kitchen cabinets, Caesar stone counter tops, top of the line Miele appliances, Gaggeneau wine cellar, Bosch washer/dryer, new plumbing and electrical and outdoor heat lamps over the Trex wood deck for late night stargazing with your significant other. It's time to buy that stand up paddleboard, get back in tune with nature and start living your Malibu dream now. This is the best deal under $4 million on the beach."
-   />
-   } />
- <Bar padding="2x" left= { <Button label="View Details"/>}/>
- </Card>
-  </Story>
-</Preview>
-
-# Usage
-
-The Menu component is a set of expandable panels for showing and hiding content from the user to make the UI less crowded. The component works well on both mobile and desktop environment and it supports keyboard and screen readers too. The component supports Lumo and Material themes.
-
-# Examples
-
-### Types
-
-<Preview>
-  <Story name="Types">
-   <Grid columns="2" gap="3xl">
-        <Card>
-  <Bar padding="2x" 
-  left = {<Title size="3xl" text="202 Pacific Coast Hwy, Malibu, CA"/>}
-  right={
-     <Menu  visible 
-     data={[
-  {
-    id: "a",
-    onClick: () => {
-      console.log("clicked Save");
-    },
-    label: "Save",
-  },
-  {
-    id: "b",
-    onClick: () => {
-      console.log("clicked Filter");
-    },
-    label: "Filter",
-  },
-  {
-    id: "c",
-    onClick: () => {
-      console.log("clicked Share");
-    },
-    label: "Share",
-  },
-  {
-    id: "d",
-    onClick: () => {
-      console.log("clicked Refresh");
-    },
     label: "Delete",
   },
 ]}
@@ -123,46 +43,56 @@ The Menu component is a set of expandable panels for showing and hiding content 
  <Bar padding="2x" 
  left={
    <Text size="lg" 
-   text="Live the California dream at this modern paradise right on the beach in Malibu. Whether it's your escape from the city or new full time residence; nothing beats waking up to the sound of waves and having coffee on the sun drenched deck with dolphins swimming by in the morning. Located just minutes away from Santa Monica and walking distance to Malibu's hottest restaurant Moonshadows. Recently renovated with hard wood floors throughout, Poliform Italian kitchen cabinets, Caesar stone counter tops, top of the line Miele appliances, Gaggeneau wine cellar, Bosch washer/dryer, new plumbing and electrical and outdoor heat lamps over the Trex wood deck for late night stargazing with your significant other. It's time to buy that stand up paddleboard, get back in tune with nature and start living your Malibu dream now. This is the best deal under $4 million on the beach."
+   text="Live the California dream at this modern paradise right on the beach in Malibu. Whether it's your escape from the city or new full time residence; nothing beats waking up to the sound of waves and having coffee on the sun drenched deck with dolphins swimming by in the morning. Located just minutes away from Santa Monica and walking distance to Malibu's hottest restaurant Moonshadows. It's time to buy that stand up paddleboard, get back in tune with nature and start living your Malibu dream now. This is the best deal under $4 million on the beach."
    />
    } />
- <Bar padding="2x" left= { <Button label="View Details"/>}/>
  </Card>
+ <div/>
+ </Grid>
+  </Story>
+</Preview>
+
+# Usage
+
+A menu displays a list of choices on a temporary surface. They appear when users interact with a button, action, or other control. Menus appear in front of all other permanent UI elements.
+
+- **Focused**
+Menu content should be suited to user needs.
+
+- **Scannable**
+Menu items should be easy to scan.
+
+**Nested Menus** allow users to choose from a large variety of choices, by displaying menus with multiple levels of hierarchy. They are organized into menus of parent list items that contain child list items. Child list items appear to the right or left of parent list items, depending on where there is room to expand child list items. Nested Menus are generated based on the data array passed through.
+
+# Examples
+
+### Types
+
+Menus display lists of related options (which can be grouped together) as well as unrelated options. Menus can be text or text and icon. Adding an icon is an additional benefit to the user and provides extra context and guidance. If you are using icon and icons try to make sure that all of the Menu Items have an icon.
+
+<Preview>
+  <Story name="Types">
+   <Grid columns="3" gap="3xl">
+   <div/>
  <Card>
   <Bar padding="2x" 
-  left = {<Title size="3xl" text="202 Pacific Coast Hwy, Malibu, CA"/>}
+  left = {<Title size="xl" weight="bold" text="Malibu, CA"/>}
   right={
      <Menu  visible 
      data={[
   {
-    id: "a",
-    onClick: () => {
-      console.log("clicked Save");
-    },
     label: "Save",
     icon: "save",
   },
   {
-    id: "b",
-    onClick: () => {
-      console.log("clicked Filter");
-    },
     label: "Filter",
     icon: "filter",
   },
   {
-    id: "c",
-    onClick: () => {
-      console.log("clicked Share");
-    },
     label: "Share",
     icon: "share",
   },
   {
-    id: "d",
-    onClick: () => {
-      console.log("clicked Refresh");
-    },
     label: "Delete",
     icon: "delete",
   },
@@ -172,15 +102,109 @@ The Menu component is a set of expandable panels for showing and hiding content 
  <Bar padding="2x" 
  left={
    <Text size="lg" 
-   text="Live the California dream at this modern paradise right on the beach in Malibu. Whether it's your escape from the city or new full time residence; nothing beats waking up to the sound of waves and having coffee on the sun drenched deck with dolphins swimming by in the morning. Located just minutes away from Santa Monica and walking distance to Malibu's hottest restaurant Moonshadows. Recently renovated with hard wood floors throughout, Poliform Italian kitchen cabinets, Caesar stone counter tops, top of the line Miele appliances, Gaggeneau wine cellar, Bosch washer/dryer, new plumbing and electrical and outdoor heat lamps over the Trex wood deck for late night stargazing with your significant other. It's time to buy that stand up paddleboard, get back in tune with nature and start living your Malibu dream now. This is the best deal under $4 million on the beach."
+   text="Live the California dream at this modern paradise right on the beach in Malibu. Whether it's your escape from the city or new full time residence; nothing beats waking up to the sound of waves and having coffee on the sun drenched deck with dolphins swimming by in the morning. Located just minutes away from Santa Monica and walking distance to Malibu's hottest restaurant Moonshadows. It's time to buy that stand up paddleboard, get back in tune with nature and start living your Malibu dream now. This is the best deal under $4 million on the beach."
    />
    } />
- <Bar padding="2x" left= { <Button label="View Details"/>}/>
  </Card>
+ <div/>
       </Grid>
   </Story>
 </Preview>
 
+### Positions
+
+Menus should be positioned relative to the edge of the screen or browser. They typically appear next to (or in front of) the element that generates them. If they are in a position to be cut off by the browser or screen’s edge, the menu can should appear to the left, right, or above the element that generates it.
+
+<Preview>
+  <Story name="Position">
+   <Grid columns="3" gap="3xl">
+           <Card>
+  <Bar padding="2x" 
+  left = {<Title size="xl" weight="bold" text="Malibu, CA"/>}
+  right={
+     <Menu  visible 
+     data={[
+  {
+    label: "Save",
+  },
+  {
+    label: "Filter",
+  },
+  {
+    label: "Share",
+  },
+  {
+    label: "Delete",
+  },
+]}
+ position="bottomLeft" />}
+ />
+ <Bar padding="2x" 
+ left={
+   <Text size="lg" 
+   text="Live the California dream at this modern paradise right on the beach in Malibu. Whether it's your escape from the city or new full time residence; nothing beats waking up to the sound of waves and having coffee on the sun drenched deck with dolphins swimming by in the morning. Located just minutes away from Santa Monica and walking distance to Malibu's hottest restaurant Moonshadows. It's time to buy that stand up paddleboard, get back in tune with nature and start living your Malibu dream now. This is the best deal under $4 million on the beach."
+   />
+   } />
+ </Card>
+        <Card>
+  <Bar padding="2x" 
+  right = {<Title size="xl" weight="bold" text="Malibu, CA"/>}
+  left={
+     <Menu  visible 
+     data={[
+  {
+    label: "Save",
+  },
+  {
+    label: "Filter",
+  },
+  {
+    label: "Share",
+  },
+  {
+    label: "Delete",
+  },
+]}
+ position="bottomRight" />}
+ />
+ <Bar padding="2x" 
+ left={
+   <Text size="lg" 
+   text="Live the California dream at this modern paradise right on the beach in Malibu. Whether it's your escape from the city or new full time residence; nothing beats waking up to the sound of waves and having coffee on the sun drenched deck with dolphins swimming by in the morning. Located just minutes away from Santa Monica and walking distance to Malibu's hottest restaurant Moonshadows. It's time to buy that stand up paddleboard, get back in tune with nature and start living your Malibu dream now. This is the best deal under $4 million on the beach."
+   />
+   } />
+ </Card>
+ <Card>
+ <Bar padding="2x" 
+ left={
+   <Text size="lg" 
+   text="Live the California dream at this modern paradise right on the beach in Malibu. Whether it's your escape from the city or new full time residence; nothing beats waking up to the sound of waves and having coffee on the sun drenched deck with dolphins swimming by in the morning. Located just minutes away from Santa Monica and walking distance to Malibu's hottest restaurant Moonshadows. It's time to buy that stand up paddleboard, get back in tune with nature and start living your Malibu dream now. This is the best deal under $4 million on the beach."
+   />
+   } />
+   <Bar padding="2x" 
+  left = {<Title size="xl" weight="bold" text="Malibu, CA"/>}
+  right={
+     <Menu  visible 
+     data={[
+  {
+    label: "Save",
+  },
+  {
+    label: "Filter",
+  },
+  {
+    label: "Share",
+  },
+  {
+    label: "Delete",
+  },
+]}
+ position="topLeft" />}
+ />
+ </Card>
+      </Grid>
+  </Story>
+</Preview>
 
 
 
