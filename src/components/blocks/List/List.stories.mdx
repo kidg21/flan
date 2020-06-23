@@ -11,11 +11,11 @@ import List, { ListItem } from "blocks/List";
 
 # List
 
-### An List allows users to toggle the display of sections of content
+### Lists are continuous, vertical indexes of text or images.
 
 <Preview withToolbar>
   <Story name="Standard">
-        <List isDivided>
+        <List title="My List">
           <ListItem title="List Item" />
           <ListItem title="List Item" />
           <ListItem title="List Item" />
@@ -25,14 +25,24 @@ import List, { ListItem } from "blocks/List";
 
 # Usage
 
-The List component is a set of expandable panels for showing and hiding content from the user to make the UI less crowded. The component works well on both mobile and desktop environment and it supports keyboard and screen readers too. The component supports Lumo and Material themes.
+Lists are a continuous group of text or images. They are composed of items containing primary and supplemental actions, which are represented by icons and text.
+
+- **Logical**
+Lists should be sorted in logical ways that make content easy to scan, such as alphabetical, numerical, chronological, or by user preference.
+
+- **Actionable**
+Lists present content in a way that makes it easy to identify a specific item in a collection and act on it.
+
+- **Consistent**
+Lists should present icons, text, and actions in a consistent format.
+
 
 # Examples
 
-### Types
+### States
 
 <Preview>
-  <Story name="Types">
+  <Story name="States">
    <List>
         <ListItem
           title="List Item (standard)"
@@ -52,30 +62,57 @@ The List component is a set of expandable panels for showing and hiding content 
   </Story>
 </Preview>
 
-### Interactive
+### Types
+
+Standard lists are used for data display. A list should have a divider when the list items are dense, with either a pre-icon or multiple lines of data. An interactive list is utilized when there is an onClick for the list items. An interactive list should be utilized when a user needs to select an item in order to get to the next stop of completing an action. For example, if clicking a list item would open the that item in a separate page or highlight it on a map, that list should be interactive.
 
 <Preview>
-  <Story name="Interactice">
-    <List isInteractive>
-        <ListItem title="List Item" description="This is the description" />
-        <ListItem title="List Item" description="This is the description" />
-        <ListItem title="List Item" description="This is the description" />
+  <Story name="Types">
+  <Grid columns="2">
+  <List title="Standard">
         <ListItem
-          title="List Item (interaction disabled)"
+          title="List Item"
           description="This is the description"
-          isInteractive={false}
         />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+        />
+    </List>
+      <List title="With a Divider" isDivided >
+        <ListItem
+          title="List Item"
+          description="This is the description"
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+        />
+    </List>
+    <List title="Interactive" isInteractive>
+        <ListItem title="List Item" description="This is the description" />
+        <ListItem title="List Item" description="This is the description" />
         <ListItem title="List Item" description="This is the description" />
       </List>
+      </Grid>
   </Story>
 </Preview>
 
 
-### Pre-Label
+### List Item Types
 
 <Preview>
-  <Story name="Pre-Label">
-    <List isInteractive>
+  <Story name="List Item Types">
+  <Grid columns="2">
+    <List title="Pre-Label">
         <ListItem
           title="List Item"
           description="This is the description"
@@ -97,45 +134,7 @@ The List component is a set of expandable panels for showing and hiding content 
           pre={{ label: "GH" }}
         />
      </List>
-  </Story>
-</Preview>
-
-
-### Post-Toggle
-
-<Preview>
-  <Story name="Post-Toggle">
-    <List isInteractive>
-        <ListItem
-          title="List Item"
-          description="This is the description"
-          post={{ type: "toggle", label: "Toggle 1" }}
-        />
-        <ListItem
-          title="List Item"
-          description="This is the description"
-          post={{ type: "toggle", label: "Toggle 2" }}
-        />
-        <ListItem
-          title="List Item"
-          description="This is the description"
-          post={{ type: "toggle" }}
-        />
-        <ListItem
-          title="List Item"
-          description="This is the description"
-          post={{ type: "toggle", label: "Toggle 4" }}
-        />
-      </List>
-  </Story>
-</Preview>
-
-
-### Post-Label
-
-<Preview>
-  <Story name="Post-Label">
-       <List isInteractive>
+     <List title="Post Label">
         <ListItem
           title="List Item"
           description="This is the description"
@@ -157,46 +156,7 @@ The List component is a set of expandable panels for showing and hiding content 
           post={{ type: "label", label: "9" }}
         />
       </List>
-  </Story>
-</Preview>
-
-
-
-### Post-Checkbox
-
-<Preview>
-<Story name="Post-Checkbox">
-  <List isInteractive>
-        <ListItem
-          title="List Item"
-          description="This is the description"
-          post={{ type: "checkbox", label: "Box 1" }}
-        />
-        <ListItem
-          title="List Item"
-          description="This is the description"
-          post={{ type: "checkbox", label: "Box 2" }}
-        />
-        <ListItem
-          title="List Item"
-          description="This is the description"
-          post={{ type: "checkbox", label: "Box 3" }}
-        />
-        <ListItem
-          title="List Item"
-          description="This is the description"
-          post={{ type: "checkbox", label: "Box 4" }}
-        />
-      </List>
-  </Story>
-</Preview>
-
-
-### Post-Icon
-
-<Preview>
-<Story name="Post-Icon">
-  <List isInteractive>
+      <List title="Post Icon">
         <ListItem
           title="List Item"
           description="This is the description"
@@ -218,40 +178,75 @@ The List component is a set of expandable panels for showing and hiding content 
           post={{ type: "icon", icon: "bookmark", onClick: true }}
         />
       </List>
+      </Grid>
   </Story>
 </Preview>
 
 
-### OnClick
+
+
+
+
+### List Controls
 
 <Preview>
-<Story name="OnClick">
-  <List isInteractive>
+  <Story name="List Controls">
+  <Grid columns="2">
+  <List title="Checkbox">
         <ListItem
           title="List Item"
           description="This is the description"
-          onClick
+          post={{ type: "checkbox" }}
         />
         <ListItem
           title="List Item"
           description="This is the description"
-          onClick
+          post={{ type: "checkbox" }}
         />
         <ListItem
           title="List Item"
           description="This is the description"
-          onClick
+          post={{ type: "checkbox" }}
         />
         <ListItem
           title="List Item"
           description="This is the description"
-          onClick
+          post={{ type: "checkbox" }}
         />
       </List>
+    <List title="Toggle">
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          post={{ type: "toggle" }}
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          post={{ type: "toggle" }}
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          post={{ type: "toggle" }}
+        />
+        <ListItem
+          title="List Item"
+          description="This is the description"
+          post={{ type: "toggle" }}
+        />
+      </List>
+      </Grid>
   </Story>
 </Preview>
+
+
 
 
 ## Props
 
+#### List Props
 <Props of={List} />
+
+#### List Item Props
+<Props of={ListItem} />
