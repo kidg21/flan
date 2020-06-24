@@ -19,4 +19,15 @@ storiesOf("Elements|Progress", module)
         <Step title="Task" description="this is what you do" />
       </ProgressBar>
     );
+  })
+  .add("Bar", () => {
+    return (
+      <ProgressBar >
+        <Step isComplete  />
+        <Step isComplete  />
+        <Step isSelected />
+        <Step  />
+        <Step  />
+      </ProgressBar>
+    );
   });
