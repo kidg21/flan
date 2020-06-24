@@ -7,6 +7,8 @@ Array [
     aria-labelledby={null}
     className="Notification__NotificationContainer-sc-1wz6254-1 cWsdIK"
     id={null}
+    onAnimationEnd={null}
+    onAnimationStart={null}
     onClick={null}
   >
     <div
@@ -50,7 +52,7 @@ Array [
             className="Bar__Slot-icfo76-1 cxljst"
           >
             <a
-              className="Icon__LinkedIcon-sc-1oa9m1v-0 bDhxPl"
+              className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
               disabled={null}
               href={null}
               onClick={[Function]}
@@ -117,6 +119,8 @@ Array [
     aria-labelledby={null}
     className="Notification__NotificationContainer-sc-1wz6254-1 gupnfs"
     id={null}
+    onAnimationEnd={null}
+    onAnimationStart={null}
     onClick={null}
   >
     <div
@@ -160,7 +164,7 @@ Array [
             className="Bar__Slot-icfo76-1 cxljst"
           >
             <a
-              className="Icon__LinkedIcon-sc-1oa9m1v-0 bDhxPl"
+              className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
               disabled={null}
               href={null}
               onClick={[Function]}

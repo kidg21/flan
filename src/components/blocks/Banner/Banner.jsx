@@ -55,7 +55,7 @@ function Banner({
   return (
     <StyledBanner borderColor={variant} id={id} padding="4x">
       <Bar
-        contentAlign={description || link ? "" : "center"}
+        contentAlign={description || link ? null : "center"}
         padding="0"
         left={bannerType}
         center={{

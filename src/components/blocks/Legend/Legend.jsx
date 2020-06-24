@@ -84,7 +84,9 @@ function Legend({
     <Wrapper id={id}>
       {title ? <LegendTitle weight="bold" text={title} /> : null}
       <TableContainer id={id}>
-        {data.length > 0 ? data.map((row) => {
+        {/* if data is an array (possibly empty) then content has been loaded
+          and we should display it if it's not an array then assume content is still loading */}
+        {data instanceof Array > 0 ? data.map((row) => {
           let rowValue = row.value;
           if (row.onClick) {
             rowValue = (<Link onClick={row.onClick} text={row.value} />);

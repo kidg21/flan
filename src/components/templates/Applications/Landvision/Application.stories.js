@@ -26,7 +26,7 @@ import SelectMenu from "atoms/SelectMenu";
 import Image from "atoms/Image";
 import LightBoxLogo from "images/LightBoxLogo.png";
 import LightBoxIcon from "images/LightBoxIconLogo.png";
-import { MockHeader, MockFooter, MockMap, MockList, MockTable, MockCardGrid, MockDetails } from "helpers/Mocks";
+import { MockHeader, MockFooter, MockMap, MockWorkflow, MockTable, MockCardGrid, MockDetails, MockMenu } from "helpers/Mocks";
 
 const map = (
   <Mapbox />
@@ -201,7 +201,7 @@ storiesOf("Templates|Applications/", module)
             // stateCards
             A={{
               id: "A",
-              content: <MockList />,
+              content: <MockWorkflow />,
             }}
             B={{
               id: "B",
@@ -690,79 +690,80 @@ storiesOf("Templates|Applications/", module)
             }}
             left={{
               id: "Left",
-              content: (
-                <Panel
-                  id="Menu"
-                  header={
-                    <Bar
-                      padding="2x"
-                      contentAlign="center"
-                      left={{
-                        content: (
-                          <Menu
-                            data={[
-                              { id: "a", label: "Action" },
-                              { id: "b", label: "Action" },
-                              { id: "c", label: "Action" },
-                            ]}
-                            position="bottomRight"
-                          />
-                        ),
-                        width: "max-content",
-                      }}
-                      center={{
-                        content: <Title text="Application B" weight="bold" />,
-                        align: "left",
-                      }}
-                      right={{
-                        content: (
-                          <Icon
-                            icon="close"
-                            onClick={toggleLeft}
-                          />
-                        ),
-                        width: "max-content",
-                      }}
-                    />
-                  }
-                >
-                  <Grid columns="1" gap="lg">
-                    <TextInput id="Search Object Types" type="search" placeholder="Search Object Types" />
-                    <List isInteractive>
-                      <ListItem
-                        title="Home Page"
-                        onClick={() => {
-                          showHome();
-                          hideRecord();
-                        }}
-                      />
-                    </List>
-                    <List title="Object Types" isInteractive>
-                      <ListItem
-                        title="Object Type A"
-                        onClick={() => {
-                          showObjects1();
-                          hideRecord();
-                        }}
-                      />
-                      <ListItem
-                        title="Object Type B"
-                        onClick={() => {
-                          showObjects2();
-                          hideRecord();
-                        }}
-                      />
-                      <ListItem
-                        title="Object Type C"
-                        onClick={() => {
-                          showObjects3();
-                          hideRecord();
-                        }}
-                      />
-                    </List>
-                  </Grid>
-                </Panel>
-              ),
+              content: <MockMenu />,
+              // content: (
+              //   <Panel
+              //     id="Menu"
+              //     header={
+              //       <Bar
+              //         padding="2x"
+              //         contentAlign="center"
+              //         left={{
+              //           content: (
+              //             <Menu
+              //               data={[
+              //                 { id: "a", label: "Action" },
+              //                 { id: "b", label: "Action" },
+              //                 { id: "c", label: "Action" },
+              //               ]}
+              //               position="bottomRight"
+              //             />
+              //           ),
+              //           width: "max-content",
+              //         }}
+              //         center={{
+              //           content: <Title text="Application B" weight="bold" />,
+              //           align: "left",
+              //         }}
+              //         right={{
+              //           content: (
+              //             <Icon
+              //               icon="close"
+              //               onClick={toggleLeft}
+              //             />
+              //           ),
+              //           width: "max-content",
+              //         }}
+              //       />
+              //     }
+              //   >
+              //     <Grid columns="1" gap="lg">
+              //       <TextInput id="Search Object Types" type="search" placeholder="Search Object Types" />
+              //       <List isInteractive>
+              //         <ListItem
+              //           title="Home Page"
+              //           onClick={() => {
+              //             showHome();
+              //             hideRecord();
+              //           }}
+              //         />
+              //       </List>
+              //       <List title="Object Types" isInteractive>
+              //         <ListItem
+              //           title="Object Type A"
+              //           onClick={() => {
+              //             showObjects1();
+              //             hideRecord();
+              //           }}
+              //         />
+              //         <ListItem
+              //           title="Object Type B"
+              //           onClick={() => {
+              //             showObjects2();
+              //             hideRecord();
+              //           }}
+              //         />
+              //         <ListItem
+              //           title="Object Type C"
+              //           onClick={() => {
+              //             showObjects3();
+              //             hideRecord();
+              //           }}
+              //         />
+              //       </List>
+              //     </Grid>
+              //   </Panel>
+              // ),
               visible: leftOpen,
             }}
             main={{
