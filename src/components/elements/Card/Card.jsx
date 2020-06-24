@@ -61,7 +61,12 @@ const CardSectionWrapper = styled.section`
 `;
 
 const CardMedia = styled(Media)`
-  display: inherit;
+  * {
+    border-radius: ${(props) => {
+  return `${props.theme.borders.radiusMin} ${props.theme.borders.radiusMin} 0 0`;
+}};
+    }
+  }
 `;
 
 const CardWrapper = styled.div`
@@ -84,6 +89,7 @@ const CardWrapper = styled.div`
   border-radius: ${(props) => {
     return props.theme.borders.radiusMin;
   }};
+
   box-shadow: ${(props) => {
     return props.theme.shadows[props.cardShadow] || "";
   }};
@@ -123,23 +129,6 @@ const CardGridWrapper = styled(Grid)`
     box-shadow: ${(props) => {
     return props.theme.shadows.dropShadow2;
   }};
-    }
-    ${CardSectionWrapper} {
-      &:first-of-type {
-        border-radius: ${(props) => {
-    return `${props.theme.borders.radiusMin} ${props.theme.borders.radiusMin} 0 0`;
-  }};
-      }
-      &:last-of-type {
-        border-radius: ${(props) => {
-    return `0 0 ${props.theme.borders.radiusMin} ${props.theme.borders.radiusMin}`;
-  }};
-      }
-      &:only-of-type {
-        border-radius: ${(props) => {
-    return props.theme.borders.radiusMin;
-  }};
-      }
     }
     ${CardSectionWrapper}:not(${Media}) {
       &:first-of-type {
