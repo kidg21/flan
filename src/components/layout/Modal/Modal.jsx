@@ -291,8 +291,6 @@ function Modal({
               action={state.action}
               animationDuration={animationDuration}
               onClick={onClose}
-              // onAnimationStart={onAnimationStart}
-              // onAnimationEnd={onAnimationEnd}
             />
           ) : null}
           {modalContent}
