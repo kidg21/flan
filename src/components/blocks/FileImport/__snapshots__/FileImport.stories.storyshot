@@ -50,3 +50,60 @@ exports[` 1`] = `
   </section>
 </section>
 `;
+
+exports[` 2`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 gDrraz"
+  id={null}
+  rows={null}
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 hfWbVf"
+    id={null}
+    rows={null}
+  >
+    <label
+      className="FileImport__NewLabel-sc-1hxbe60-1 iXmcSY"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+        fontSize="1em"
+        fontWeight={600}
+        id={null}
+        letterSpacing="0px"
+      >
+        Browse File
+      </p>
+      <input
+        className="FileImport__NewInput-sc-1hxbe60-0 gxospz"
+        onChange={[Function]}
+        type="file"
+      />
+    </label>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+      id="file-textinput-null_container"
+      rows={null}
+    >
+      <input
+        autoComplete="off"
+        className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+        cols=""
+        disabled={false}
+        id="file-textinput-null"
+        list={null}
+        name="file-textinput-null"
+        onBlur={null}
+        onChange={null}
+        onFocus={null}
+        onKeyPress={null}
+        pattern={null}
+        placeholder={null}
+        rows=""
+        type="text"
+        value={null}
+      />
+    </section>
+  </section>
+</section>
+`;
