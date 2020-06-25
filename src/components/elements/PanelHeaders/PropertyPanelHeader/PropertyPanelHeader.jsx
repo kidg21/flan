@@ -11,24 +11,23 @@ function PropertyPanelHeader({
   id, title, onClick, menuData,
 }) {
   return (
-    <React.Fragment id={id}>
-      <Bar
-        padding="2x"
-        contentAlign="center"
-        left={{
-          content: <Icon icon="directions" size="lg" onClick={onClick} />,
-          width: "min-content",
-        }}
-        center={{
-          content: <Title text={title} size="lg" weight="bold" />,
-          align: "left",
-        }}
-        right={{
-          content: <Menu data={menuData} position="bottomLeft" />,
-          width: "min-content",
-        }}
-      />
-    </React.Fragment>
+    <Bar
+      id={id}
+      padding="2x"
+      contentAlign="center"
+      left={{
+        content: <Icon icon="directions" size="lg" onClick={onClick} />,
+        width: "min-content",
+      }}
+      center={{
+        content: <Title text={title} size="lg" weight="bold" />,
+        align: "left",
+      }}
+      right={{
+        content: <Menu data={menuData} position="bottomLeft" />,
+        width: "min-content",
+      }}
+    />
   );
 }
 

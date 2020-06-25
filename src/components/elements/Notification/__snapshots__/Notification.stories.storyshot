@@ -7,6 +7,8 @@ Array [
     aria-labelledby={null}
     className="Notification__NotificationContainer-sc-1wz6254-1 cWsdIK"
     id={null}
+    onAnimationEnd={null}
+    onAnimationStart={null}
     onClick={null}
   >
     <div
@@ -117,6 +119,8 @@ Array [
     aria-labelledby={null}
     className="Notification__NotificationContainer-sc-1wz6254-1 gupnfs"
     id={null}
+    onAnimationEnd={null}
+    onAnimationStart={null}
     onClick={null}
   >
     <div
