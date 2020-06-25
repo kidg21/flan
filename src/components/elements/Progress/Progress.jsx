@@ -12,10 +12,10 @@ const StepItem = styled.li`
   justify-content: center;
   padding-bottom: 0.5rem;
   display: flex;
-  border-bottom: 2px solid ${(props) => { return props.isComplete ? props.theme.palette.neutral40 : props.isSelected ? props.theme.palette.selected : props.theme.palette.neutral40; }};
+  border-bottom: 2px solid ${(props) => { return props.isComplete ? props.theme.palette.selected : props.isSelected ? props.theme.palette.selected : props.theme.palette.neutral40; }};
   align-items: baseline;
   width: 100%;
-  color: ${(props) => { return props.isComplete ? props.theme.text.secondary : props.isSelected ? props.theme.palette.selected : props.theme.text.secondary; }};
+  color: ${(props) => { return props.isComplete ? props.theme.text.selected : props.isSelected ? props.theme.palette.selected : props.theme.text.secondary; }};
   &:before {
     content: counter(step);
     counter-increment: step;
@@ -27,9 +27,9 @@ const StepItem = styled.li`
     justify-content: center;
     margin-right: 1rem;
     width: 1.5rem;
-    color: ${(props) => { return props.isComplete ? props.theme.palette.inverse : props.isSelected ? props.theme.palette.inverse : ""; }};
-    background: ${(props) => { return props.isComplete ? props.theme.palette.success80 : props.isSelected ? props.theme.palette.selected : ""; }};
-    border: 1px solid ${(props) => { return props.isComplete ? props.theme.palette.success80 : props.isSelected ? props.theme.palette.selected : props.theme.text.secondary; }};
+    color: ${(props) => { return props.isComplete ? props.theme.palette.inverse : props.isSelected ? props.theme.palette.selected : ""; }};
+    background: ${(props) => { return props.isComplete ? props.theme.palette.info80 : props.isSelected ? "" : ""; }};
+    border: 1px solid ${(props) => { return props.isComplete ? props.theme.palette.info80 : props.isSelected ? props.theme.palette.selected : props.theme.text.secondary; }};
     border-radius: 50%;
     font-weight: 600;
   }

@@ -5,7 +5,7 @@ import Card from "elements/Card";
 import Grid from "layout/Grid";
 
 
-storiesOf("Layout|Grid/", module)
+storiesOf("Utilities|Grid/", module)
 
   .addDecorator(withKnobs)
   .add(

@@ -106,7 +106,7 @@ function doNothing() {
   // do nothing
 }
 
-storiesOf("Templates/05_Modules", module)
+storiesOf("Templates|Panels/", module)
   .addDecorator(FullScreen)
   .addDecorator(checkA11y)
   .add(

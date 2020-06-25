@@ -34,7 +34,7 @@ const options = [
   { label: "Report Requested by", value: "Nov 10,2019" },
 ];
 
-storiesOf("Templates|04_Details", module)
+storiesOf("Templates|Detail Page/", module)
   .add(
     "Default",
     () => {
@@ -58,36 +58,6 @@ storiesOf("Templates|04_Details", module)
                 <Legend data={options} />
               </PageSection>
 
-            </Page>
-          </Panel>
-
-        );
-      });
-    },
-  )
-  .add(
-    "Section",
-    () => {
-      return React.createElement(() => {
-        return (
-          <Panel
-            header={
-
-              <MainPanelHeader title="19-0942231 123 Main St. Washington, DC 23820" menuData={data} />
-
-            }
-          >
-            <Page>
-              <Tabs>
-                <TabItem label="RFP Details" />
-                <TabItem label="Property Details" isSelected />
-                <TabItem label="Scope of Work" />
-                <TabItem label="Business Intelligence" />
-                <TabItem label="Files" />
-              </Tabs>
-              <PageSection>
-                <Legend data={options} />
-              </PageSection>
             </Page>
           </Panel>
 

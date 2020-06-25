@@ -9,11 +9,11 @@ import Command from "atoms/Command";
 
 # Command
 
-### A Command represents a primary action.
+#### A Command represents a primary action.
 
 <Preview withToolbar>
   <Story name="Standard">
-    <Command label="Command" icon="circle_solid"  />
+    <Command label="Print" icon="print"  />
   </Story>
 </Preview>
 
@@ -39,8 +39,8 @@ The standard Command uses an anchor tag and inherits anchor styling. To disable 
 <Preview>
   <Story name="State">
     <Grid columns="3">
-      <Command icon="circle_solid" label="Active" />
-      <Command icon="circle_solid" label="Disabled" disabled />
+      <Command icon="circle" label="Active" />
+      <Command icon="circle" label="Disabled" disabled />
     </Grid>
   </Story>
 </Preview>
@@ -52,9 +52,9 @@ To override the standard size, set the 'size' prop to 'small', or 'large'.
 <Preview>
   <Story name="Size">
     <Grid columns="3" align="bottom">
-      <Command icon="circle_solid" label="Small" size="sm" />
-      <Command icon="circle_solid" label="Standard" />
-      <Command icon="circle_solid" label="Large" size="lg" />
+      <Command icon="circle" label="Small" size="sm" />
+      <Command icon="circle" label="Standard" />
+      <Command icon="circle" label="Large" size="lg" />
     </Grid>
   </Story>
 </Preview>
@@ -66,9 +66,9 @@ The standard Command is left-aligned with its Icon on the left. Set the 'align' 
 <Preview>
   <Story name="Alignment">
     <Grid columns="3">
-      <Command label="Icon-Left" icon="circle_solid" />
-      <Command label="Icon-Top" icon="circle_solid" align="center" />
-      <Command label="Icon-Right" icon="circle_solid" align="right" />
+      <Command label="Icon-Left" icon="circle" />
+      <Command label="Icon-Top" icon="circle" align="center" />
+      <Command label="Icon-Right" icon="circle" align="right" />
     </Grid>
   </Story>
 </Preview>

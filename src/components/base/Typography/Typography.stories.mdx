@@ -9,77 +9,98 @@ import Text, {Title, Link, Label} from "base/Typography";
 
 # Typography
 
-### Typography can help create clear hierarchies, organize information, and guide users through a product or experience.
+Typography can help create clear hierarchies, organize information, and guide users through a product or experience.
 
 <Preview>
   <Story name="Elements">
-    <Grid align="bottom">
-      <Text text="Text" />
-      <Title text="Title" />
-      <Label text="Label"/>
+    <Grid align="bottom" columns="1">
+      <Label text="Label" size="xs"/>
       <Link text="Link" />
+      <Text text="Text" size="lg"/>
+      <Title text="Title" size="2xl" weight="bold"/>
     </Grid>
   </Story>
 </Preview>
 
-## Standard Text
+#### Sizes
 
 <Preview>
-  <Story name="Standard Text">
-    <Grid align="bottom">
+  <Story name="Sizes">
+    <Grid columns="1" gap="4xl">
+    <Grid columns="1">
       <Text text="XSmall Text" size="xs" />
       <Text text="Small Text" size="sm" />
       <Text text="Normal Text"/>
       <Text text="Large Text" size="lg" />
-    </Grid>
-  </Story>
-</Preview>
-
-<Props of={Text} />
-
-## Title
-
-<Preview>
-  <Story name="Title">
-    <Grid align="bottom">
+      </Grid>
+      <Grid columns="1">
       <Title text="Normal Title" />
       <Title text="Large Title" size="lg" />
       <Title text="XLarge Title" size="xl" />
       <Title text="2XLarge Title" size="2xl" />
       <Title text="3XLarge Title" size="3xl" />
       <Title text="4XLarge Title" size="4xl" />
-    </Grid>
-  </Story>
-</Preview>
-
-<Props of={Title} />
-
-## Label
-
-<Preview>
-  <Story name="Label">
-    <Grid align="bottom">
+      </Grid>
+      <Grid columns="1">
       <Label text="XSmall Label" size="xs" />
       <Label text="Small Label" size="sm" />
       <Label text="Normal Label"/>
       <Label text="Large Label" size="lg" />
-    </Grid>
-  </Story>
-</Preview>
-
-<Props of={Label} />
-
-## Link
-
-<Preview>
-  <Story name="Link">
-    <Grid align="bottom">
-      <Link text="Normal Link"/>
+      </Grid>
+      <Grid columns="1">
+       <Link text="Normal Link"/>
       <Link text="Large Link" size="lg" />
       <Link text="XLarge Link" size="xl" />
       <Link text="XXLarge Link" size="2xl" />
+      </Grid>
     </Grid>
   </Story>
 </Preview>
 
+
+
+#### Weight
+
+<Preview>
+  <Story name="Weight">
+    <Grid columns="1" gap="4xl">
+    <Grid columns="1">
+      <Text text="Light Text" weight="light" />
+      <Text text="Regular Text"  />
+      <Text text="Bold Text" weight="bold"/>
+      </Grid>
+      <Grid columns="1">
+      <Title text="Light Title" weight="light" />
+      <Title text="Regular Title"  />
+      <Title text="Bold Title" weight="bold"/>
+      </Grid>
+      <Grid columns="1">
+      <Label text="Light Label" weight="light" />
+      <Label text="Regular Label"  />
+      <Label text="Bold Label" weight="bold"/>
+      </Grid>
+      <Grid columns="1">
+       <Link text="Light Link" weight="light"/>
+      <Link text="Regular Link"  />
+      <Link text="Bold Link" weight="bold" />
+      </Grid>
+    </Grid>
+  </Story>
+</Preview>
+
+
+
+
+### Props
+
+#### Text Props
+<Props of={Text} />
+
+#### Title Props
+<Props of={Title} />
+
+#### Label Props
+<Props of={Label} />
+
+#### Link Props
 <Props of={Link} />
