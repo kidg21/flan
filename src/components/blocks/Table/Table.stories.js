@@ -406,7 +406,7 @@ const options = [
   { value: "cookie dough", label: "Cookie Dough" },
 ];
 
-storiesOf("Blocks|Table", module)
+storiesOf("Data Display|Table", module)
   .addDecorator(FullScreen)
   .add("Simple", () => {
     return (
