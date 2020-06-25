@@ -1,7 +1,7 @@
 /* eslint-disable security/detect-object-injection */
 /* eslint-disable linebreak-style */
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import Bar from "layout/Bar";
 import Text from "base/Typography";
@@ -10,6 +10,7 @@ import Grid from "layout/Grid";
 import Container from "atoms/Container";
 import Icon from "atoms/Icon";
 import styled from "styled-components";
+import { useRefState } from "ss-storemanager";
 import ResultContainer from "./Results.jsx";
 
 // const SearchContainer = styled.div`
@@ -79,7 +80,7 @@ function Search({
   placeholder,
   results,
 }) {
-  const [currSearchVal, setCurrSearchVal] = useState("");
+  const [getCurrSearchVal, setNewSearchVal] = useRefState("");
 
   /**
    * Set state to current input value in search box.
@@ -89,7 +90,7 @@ function Search({
   const handleOnChange = (e) => {
     const currVal = e.target.value;
 
-    setCurrSearchVal(currVal);
+    setNewSearchVal(currVal);
 
     if (typeof onChange === "function") {
       onChange(currVal);
@@ -103,7 +104,7 @@ function Search({
   const handleOnKeyPress = (e) => {
     if (e && e.key.toLowerCase() === "enter" && typeof onKeyPress === "function") {
       e.preventDefault();
-      onKeyPress(currSearchVal);
+      onKeyPress(getCurrSearchVal());
     }
   };
 
@@ -112,7 +113,7 @@ function Search({
    */
   const handleOnSearch = () => {
     if (typeof onSearch === "function") {
-      onSearch(currSearchVal);
+      onSearch(getCurrSearchVal());
     }
   };
 
