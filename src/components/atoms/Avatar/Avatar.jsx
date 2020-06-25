@@ -78,8 +78,8 @@ function Avatar({
   let iconType;
 
   const selectedSize = size && sizeHash[size.toLowerCase()];
-  const avatarSize = selectedSize ? selectedSize.avatar : "2.5rem";
-  const fontSize = selectedSize ? selectedSize.font : "1em";
+  const avatarSize = selectedSize ? selectedSize.avatar : "2.2rem";
+  const fontSize = selectedSize ? selectedSize.font : "0.82em";
 
   let backgroundColor = variant ? (variantHash[variant] || variant.toLowerCase()) : "action40";
   const textColor = "inverse";

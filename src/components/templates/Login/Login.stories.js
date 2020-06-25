@@ -10,7 +10,7 @@ import Form, { FormSection } from "layout/Form";
 import TextInput from "atoms/TextInput";
 import Page from "layout/Page";
 
-storiesOf("Templates|00_Login", module)
+storiesOf("Templates|Login", module)
   .add(
     "Login",
     () => {
@@ -106,7 +106,7 @@ storiesOf("Templates|00_Login", module)
     },
   );
 
-storiesOf("Templates|00_Login/Password", module)
+storiesOf("Templates|Login/Password", module)
   .add(
     "Reset",
     () => {

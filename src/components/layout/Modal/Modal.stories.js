@@ -37,7 +37,7 @@ storiesOf("Layout|Modal", module)
     },
   );
 
-storiesOf("Layout|Modal", module)
+storiesOf("Utilities|Modal", module)
   .addDecorator(withKnobs)
   .add("Knobs", () => {
     return React.createElement(() => {
