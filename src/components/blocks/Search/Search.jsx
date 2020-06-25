@@ -102,6 +102,7 @@ function Search({
    */
   const handleOnKeyPress = (e) => {
     if (e && e.key.toLowerCase() === "enter" && typeof onKeyPress === "function") {
+      e.preventDefault();
       onKeyPress(currSearchVal);
     }
   };
