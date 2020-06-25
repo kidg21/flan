@@ -204,11 +204,17 @@ function Button({
       tintColor = "info20";
       shadeColor = "info100";
       break;
+    case "neutral":
+      buttonColor = "neutral140";
+      fontColor = buttonColor;
+      tintColor = "neutral20";
+      shadeColor = "neutral200";
+      break;
     case "action":
       buttonColor = "action80";
       fontColor = buttonColor;
       tintColor = "action20";
-      shadeColor = "action100";
+      shadeColor = "action90";
       break;
     default:
       buttonColor = "action80";

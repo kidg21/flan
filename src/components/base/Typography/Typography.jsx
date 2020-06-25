@@ -58,7 +58,7 @@ const TitleText = styled.h6`
   font-weight: ${(props) => { return props.fontWeight; }};
   color: inherit;
   line-height: normal;
-  font-family: ${(props) => { return props.theme.typography.primary; }};
+  font-family: ${(props) => { return props.theme.typography.secondary; }};
   letter-spacing: ${(props) => { return props.letterSpacing; }};
 `;
 

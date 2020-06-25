@@ -17,6 +17,7 @@ import styled from "styled-components";
 
 const SearchContainer = styled.form`
 display: flex;
+position: relative;
 align-items: center;
 flex-direction: row;
 border: 1px solid;
@@ -61,8 +62,12 @@ font-family: ${(props) => { return props.theme.typography.primary; }};
 }
 `;
 
+
+
+
 const DropContainer = styled(Container)`
-position: fixed;
+position: absolute;
+z-index: 109 !important;
 `;
 
 
