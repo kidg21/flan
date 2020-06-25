@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <hr
+    className="Divider__Line-sc-1k80dpa-0 fLuYGp"
+  />
+</div>
+`;

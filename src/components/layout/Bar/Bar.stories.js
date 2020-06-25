@@ -20,7 +20,7 @@ const multipleLines = (
   </Fragment>
 );
 
-storiesOf("Layout|Bar", module)
+storiesOf("Utilities|Bar", module)
 
   .addDecorator(Padding)
   .addDecorator(withKnobs)

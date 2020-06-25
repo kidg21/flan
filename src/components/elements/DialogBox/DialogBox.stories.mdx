@@ -1,0 +1,283 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
+import { action } from "@storybook/addon-actions";
+import { Padding } from "helpers/Display";
+import Grid from "layout/Grid";
+import Text from "base/Typography";
+import Bar from "layout/Bar";
+import Icon from "atoms/Icon";
+import Card, { CardSection, CardGrid } from "elements/Card";
+import DialogBox from "elements/DialogBox";
+
+<Meta title="Elements|Dialogs" component={DialogBox} />
+
+# Dialogs
+
+#### Dialogs inform users about a task and can contain critical information, require decisions, or involve multiple tasks.
+
+
+<Preview withToolbar>
+  <Story name="Standard">
+     <DialogBox
+          title="Clear and Specific Title"
+          body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          buttons={[
+            {
+              id: "Negative",
+              label: "Negative",
+            },
+            {
+              id: "Affirmative",
+              label: "Affirmative",
+            },
+          ]}
+        />
+  </Story>
+</Preview>
+
+# Usage
+
+A dialog is a type of modal window that appears in front of app content to provide critical information or ask for a decision. Dialogs disable all app functionality when they appear, and remain on screen until confirmed, dismissed, or a required action has been taken. Dialogs are purposefully interruptive, so they should be used sparingly. They must be used in conjunction with **[Modal](/?path=/docs/layout-modal--documentation)**. A Modal is what is used to display the Dialog Box above all other content and grey out the background. When using a Dialog Box the Modal should be set up to cover the entire app.
+
+Dialogs should be used for:
+- Errors that block an app’s normal operation
+- Critical information that requires a specific user task, decision, or acknowledgement
+
+
+
+Be sure to note when to use a Notification vs a Dialog:
+
+- **Banner Notification**	( Low to medium priority )	
+Banners remain until dismissed by the user, or if the state that caused the banner is resolved
+- **Dialog**	( Highest priority )	
+A Required user input. Dialogs block app usage until the user takes a dialog action or exits the dialog
+
+A Dialog can have one or two actions/buttons. When using two buttons, the action that the user should be encouraged to take is positioned on the most right (2nd button).  Use specific verbage and clear action items. Do not use vague "ok" and "yes" as that does not tell the user clearly what action they are performing. A dialog’s purpose should be communicated by its title and button text.
+
+Titles should:
+
+- Contain a brief, clear statement or question
+- Avoid apologies (“Sorry for the interruption”), alarm (“Warning!”), or ambiguity (“Are you sure?”)
+- Buttons should always be the same variant/color. Mixing variants causes confusion and leads the user to focus on color over content.
+
+<Preview>
+  <Story name="Usage">
+   <Grid columns="3">
+      <Bar
+        padding="2x"
+        contentAlign="center"
+        left={{
+          content: <Icon icon="close" variant="alert" size="lg" />,
+          width: "5%",
+        }}
+        center={{
+          content: <DialogBox
+        title="Are you sure?"
+        body="Are you sure you want to delete all of your user data? You will never be able to get it back."
+        buttons={[
+          {
+            id: "Negative",
+            label: "No",
+          },
+          {
+            id: "Affirmative",
+            label: "Yes",
+          },
+        ]}
+      />,
+          align: "left",
+        }}
+      />
+      <Bar
+        padding="2x"
+        contentAlign="center"
+        left={{
+          content: <Icon icon="close" variant="alert" size="lg" />,
+          width: "5%",
+        }}
+        center={{
+          content: <DialogBox
+        title="Reset Settings?"
+        body="This will reset your account to it's default fasctory settings removing all current user preferences."
+        buttons={[
+          {
+            id: "Negative",
+            label: "Accept",
+          },
+          {
+            id: "Affirmative",
+            label: "Cancel",
+          },
+        ]}
+      />,
+          align: "left",
+        }}
+      />
+       <Bar
+        padding="2x"
+        contentAlign="center"
+        left={{
+          content: <Icon icon="check" variant="success" size="lg" />,
+          width: "5%",
+        }}
+        center={{
+          content: <DialogBox
+        title="Reset Settings?"
+        body="This will reset your account to it's default fasctory settings removing all current user preferences."
+        buttons={[
+          {
+            id: "Negative",
+            label: "Cancel",
+          },
+          {
+            id: "Affirmative",
+            label: "Accept",
+          },
+        ]}
+      />,
+          align: "left",
+        }}
+      />
+    </Grid>
+  </Story>
+</Preview>
+
+
+<Preview>
+<Story name="Color Usage">
+<React.Fragment>
+<Bar
+        padding="2x"
+        contentAlign="center"
+        left={{
+          content: <Icon icon="close" variant="alert" size="lg" />,
+          width: "5%",
+        }}
+        center={{
+          content: <DialogBox
+       title="Reset Settings?"
+        body="This will reset your account to it's default fasctory settings removing all current user preferences."
+        buttons={[
+          {
+            id: "Negative",
+            label: "No",
+            variant: "alert",
+          },
+          {
+            id: "Affirmative",
+            label: "Agree",
+            variant: "success",
+          },
+        ]}
+      />,
+          align: "left",
+        }}
+      />
+      <Bar
+        padding="2x"
+        contentAlign="center"
+        left={{
+          content: <Icon icon="close" variant="alert" size="lg" />,
+          width: "5%",
+        }}
+        center={{
+          content: <DialogBox
+       title="Reset Settings?"
+        body="This will reset your account to it's default fasctory settings removing all current user preferences."
+        buttons={[
+          {
+            id: "Negative",
+            label: "No",
+          },
+          {
+            id: "Affirmative",
+            label: "Agree",
+            variant: "success",
+          },
+        ]}
+      />,
+          align: "left",
+        }}
+      />
+      </React.Fragment>
+      </Story>
+      </Preview>
+
+# Principles
+
+- **Focused**
+Dialogs focus user attention to ensure their content is addressed.
+
+- **Direct**
+Dialogs should be direct in communicating information and dedicated to completing a task.
+
+- **Helpful**
+Dialogs should appear in response to a user task or an action, with relevant or contextual information.
+
+
+
+
+# Examples
+
+### Types
+
+Reminder that buttons should have the same color/variant.
+
+<Preview>
+  <Story name="Types">
+  <CardGrid columns="1">
+        <DialogBox
+        title="Default Dialog"
+        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        buttons={[
+          {
+            id: "Negative",
+            label: "Negative",
+          },
+          {
+            id: "Affirmative",
+            label: "Affirmative",
+          },
+        ]}
+      />
+        <DialogBox
+        title="Successful Dialog"
+        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        buttons={[
+          {
+            id: "Negative",
+            label: "Negative",
+            variant: "success",
+          },
+          {
+            id: "Affirmative",
+            label: "Affirmative",
+            variant: "success",
+          },
+        ]}
+      />
+      <DialogBox
+        title="Error Dialog"
+        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        buttons={[
+          {
+            id: "Negative",
+            label: "Negative",
+            variant: "alert",
+          },
+          {
+            id: "Affirmative",
+            label: "Affirmative",
+            variant: "alert",
+          },
+        ]}
+      />
+      </CardGrid>
+  </Story>
+</Preview>
+
+
+
+## Props
+
+<Props of={DialogBox} />

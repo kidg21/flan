@@ -158,7 +158,7 @@ const infoPanel = (
 );
 
 
-storiesOf("Templates|07_Pieces/Navigation/", module)
+storiesOf("Templates|Panels/", module)
   .add(
     "Site Overview",
     () => {
@@ -201,7 +201,7 @@ storiesOf("Templates|07_Pieces/Navigation/", module)
     },
   )
   .add(
-    "Parcel Summary",
+    "Property Summary",
     () => {
       return React.createElement(() => {
         return (

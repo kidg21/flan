@@ -134,7 +134,7 @@ function Search({
   );
 
   return (
-    <Grid columns="1" gap="xs" id={id}>
+    <Grid columns="1" id={id}>
       <SearchContainer>
         <NewTextInput
           id="my-search-bar"
@@ -146,7 +146,7 @@ function Search({
         <Button icon="search" isPlain onClick={handleOnSearch} />
       </SearchContainer>
       {/* <Button icon="more" isPlain /> */}
-      {error || results ? <DropContainer id="results-container" maxHeight="22rem">{Body}</DropContainer> : null}
+      {error || results ? <DropContainer padding="0" id="results-container" maxHeight="22rem">{Body}</DropContainer> : null}
       {/* { advance ? <Advanced inputs={inputs} /> : null} */}
     </Grid>
   );
