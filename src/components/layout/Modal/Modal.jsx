@@ -1,5 +1,7 @@
 /* eslint-disable linebreak-style */
-import React, { Fragment, useState, useEffect, useCallback } from "react";
+import React, {
+  Fragment, useState, useEffect, useCallback,
+} from "react";
 import GlobalStyles from "GlobalStyles";
 import styled, { keyframes, ThemeProvider } from "styled-components";
 import { DMPTheme, screen } from "Variables";
@@ -189,7 +191,7 @@ function Modal({
 
   if (text && !media) {
     modalContent = (
-      <ContentWrapper onClick={onClick} >
+      <ContentWrapper onClick={onClick}>
         <Card description={text} shadow="2x" />
       </ContentWrapper>
     );
@@ -225,7 +227,7 @@ function Modal({
 
   // Hide container when fade is complete
   // internal state to know when content is fully visible or fully hidden
-  // animation takes time
+  // animation takes time!
   const [state, setState] = useState({
     action: visible ? "open" : "close",
     visible: visible,
@@ -235,6 +237,7 @@ function Modal({
     if (!animationDuration) {
       setState({ visible });
     } else if (state.visible !== visible) {
+      // init animation
       setState((oldState) => {
         return {
           ...oldState,
@@ -249,6 +252,7 @@ function Modal({
     // if hasBackdrop, the ModalBG animation bubbles up
     // causing 2 onAnimationEnd events to fire
     if (e.target.id === id) {
+      // animation completed, update internal visible state
       setState((oldState) => {
         return {
           ...oldState,
