@@ -54,8 +54,7 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
   &:checked {
     background-color: ${(props) => {
     return (
-      props.theme.palette[props.fillColorChecked] ||
-      props.theme.palette.selected
+      props.theme.palette[props.fillColorChecked] || props.theme.palette.selected
     );
   }};
     border-color: ${(props) => {
@@ -99,8 +98,7 @@ function Radio({
   let fillColorChecked;
   let alignInput;
   let tabIndex;
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
     fillColor = "neutral40";
     fillColorChecked = "neutral40";
@@ -161,8 +159,7 @@ function RadioGroup({
 }) {
   let inputTextColor;
   let errorText;
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (!isDisabled) {
     if (error) {
       inputTextColor = "alert";
@@ -182,22 +179,21 @@ function RadioGroup({
       ) : null}
       {helpText ? <Text size="sm" weight="bold" text={helpText} /> : null}
       <InputGroup columns={columns}>
-        {children ||
-          data.map((item) => {
-            return (
-              <Radio
-                align={align}
-                disabled={item.disabled || isDisabled}
-                error={!!error}
-                id={item.id}
-                key={item.id}
-                label={item.label}
-                name={item.name}
-                onChange={onChange}
-                value={item.value}
-              />
-            );
-          })}
+        {children || data.map((item) => {
+          return (
+            <Radio
+              align={align}
+              disabled={item.disabled || isDisabled}
+              error={!!error}
+              id={item.id}
+              key={item.id}
+              label={item.label}
+              name={item.name}
+              onChange={onChange}
+              value={item.value}
+            />
+          );
+        })}
       </InputGroup>
       {errorText ? <Text size="sm" weight="bold" text={errorText} /> : null}
     </RadioWrapper>
@@ -264,17 +260,7 @@ RadioGroup.defaultProps = {
   align: null,
   children: null,
   columns: null,
-  data: {
-    checked: false,
-    disabled: false,
-    id: null,
-    label: null,
-    name: null,
-    onBlur: null,
-    onChange: null,
-    onFocus: null,
-    value: null,
-  },
+  data: [],
   disabled: false,
   error: null,
   helpText: null,
