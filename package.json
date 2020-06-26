@@ -117,7 +117,6 @@
     "react-test-renderer": "^16.12.0",
     "sinon": "^8.1.1",
     "ss-development": "git+ssh://git@bitbucket.org:DigMap/sstream-development.git",
-    "ss-storemanager": "git+ssh://git@bitbucket.org:DigMap/sstream-storemanager.git",
     "storybook-addon-specifications": "^2.1.5",
     "string-replace-webpack-plugin": "0.1.3"
   },
