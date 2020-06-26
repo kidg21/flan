@@ -3,16 +3,19 @@
 exports[` 1`] = `
 Array [
   <div
-    action={null}
+    action="close"
     aria-describedby={null}
     aria-labelledby={null}
-    className="Modal__ModalContainer-sc-15cll21-2 iafgvV"
-    id={null}
+    className="Modal__ModalContainer-sc-15cll21-2 hdVuaU"
+    id=""
+    onAnimationEnd={[Function]}
+    onAnimationStart={[Function]}
     pointerEvents="auto"
   >
     <div
-      action={null}
-      className="Modal__ModalBG-sc-15cll21-3 gtDVkZ"
+      action="close"
+      className="Modal__ModalBG-sc-15cll21-3 fDRyAy"
+      id="modal-bg-"
       onClick={[Function]}
     />
     <span
@@ -115,16 +118,19 @@ Array [
 exports[` 2`] = `
 Array [
   <div
-    action={null}
+    action="close"
     aria-describedby={null}
     aria-labelledby={null}
-    className="Modal__ModalContainer-sc-15cll21-2 iafgvV"
-    id={null}
+    className="Modal__ModalContainer-sc-15cll21-2 hdVuaU"
+    id=""
+    onAnimationEnd={[Function]}
+    onAnimationStart={[Function]}
     pointerEvents="auto"
   >
     <div
-      action={null}
-      className="Modal__ModalBG-sc-15cll21-3 gtDVkZ"
+      action="close"
+      className="Modal__ModalBG-sc-15cll21-3 fDRyAy"
+      id="modal-bg-"
       onClick={[Function]}
     />
     <span
@@ -198,16 +204,19 @@ Array [
 exports[` 3`] = `
 Array [
   <div
-    action={null}
+    action="close"
     aria-describedby={null}
     aria-labelledby={null}
-    className="Modal__ModalContainer-sc-15cll21-2 iafgvV"
-    id={null}
+    className="Modal__ModalContainer-sc-15cll21-2 hdVuaU"
+    id=""
+    onAnimationEnd={[Function]}
+    onAnimationStart={[Function]}
     pointerEvents="auto"
   >
     <div
-      action={null}
-      className="Modal__ModalBG-sc-15cll21-3 gtDVkZ"
+      action="close"
+      className="Modal__ModalBG-sc-15cll21-3 fDRyAy"
+      id="modal-bg-"
       onClick={[Function]}
     />
     <span
@@ -358,16 +367,19 @@ Array [
 exports[` 4`] = `
 Array [
   <div
-    action={null}
+    action="close"
     aria-describedby={null}
     aria-labelledby={null}
-    className="Modal__ModalContainer-sc-15cll21-2 enBxPE"
-    id={null}
+    className="Modal__ModalContainer-sc-15cll21-2 cAXnsN"
+    id=""
+    onAnimationEnd={[Function]}
+    onAnimationStart={[Function]}
     pointerEvents="auto"
   >
     <div
-      action={null}
-      className="Modal__ModalBG-sc-15cll21-3 gtDVkZ"
+      action="close"
+      className="Modal__ModalBG-sc-15cll21-3 fDRyAy"
+      id="modal-bg-"
       onClick={[Function]}
     />
     <span
@@ -441,16 +453,19 @@ Array [
 exports[` 5`] = `
 Array [
   <div
-    action={null}
+    action="close"
     aria-describedby={null}
     aria-labelledby={null}
-    className="Modal__ModalContainer-sc-15cll21-2 iafgvV"
-    id={null}
+    className="Modal__ModalContainer-sc-15cll21-2 hdVuaU"
+    id=""
+    onAnimationEnd={[Function]}
+    onAnimationStart={[Function]}
     pointerEvents="auto"
   >
     <div
-      action={null}
-      className="Modal__ModalBG-sc-15cll21-3 gtDVkZ"
+      action="close"
+      className="Modal__ModalBG-sc-15cll21-3 fDRyAy"
+      id="modal-bg-"
       onClick={[Function]}
     />
     <img
