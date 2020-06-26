@@ -281,7 +281,6 @@ exports[` 1`] = `
             disabled={false}
             href={null}
             id={null}
-            onClick={null}
             tabIndex="0"
           >
             <div
@@ -292,15 +291,20 @@ exports[` 1`] = `
               <div
                 className="Bar__Slot-icfo76-1 RjiBe"
               >
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                  fontSize="1em"
-                  fontWeight={600}
-                  id={null}
-                  letterSpacing="0px"
+                <a
+                  className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                  onClick={[Function]}
                 >
-                  Menu Item
-                </p>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                    fontSize="1em"
+                    fontWeight={600}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    Menu Item
+                  </p>
+                </a>
               </div>
             </div>
           </li>
@@ -309,7 +313,6 @@ exports[` 1`] = `
             disabled={false}
             href={null}
             id={null}
-            onClick={null}
             tabIndex="0"
           >
             <div
@@ -320,15 +323,20 @@ exports[` 1`] = `
               <div
                 className="Bar__Slot-icfo76-1 RjiBe"
               >
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                  fontSize="1em"
-                  fontWeight={600}
-                  id={null}
-                  letterSpacing="0px"
+                <a
+                  className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                  onClick={[Function]}
                 >
-                  Menu Item
-                </p>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                    fontSize="1em"
+                    fontWeight={600}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    Menu Item
+                  </p>
+                </a>
               </div>
             </div>
           </li>
@@ -337,7 +345,6 @@ exports[` 1`] = `
             disabled={false}
             href={null}
             id={null}
-            onClick={null}
             tabIndex="0"
           >
             <div
@@ -348,15 +355,20 @@ exports[` 1`] = `
               <div
                 className="Bar__Slot-icfo76-1 RjiBe"
               >
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                  fontSize="1em"
-                  fontWeight={600}
-                  id={null}
-                  letterSpacing="0px"
+                <a
+                  className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                  onClick={[Function]}
                 >
-                  Menu Item
-                </p>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                    fontSize="1em"
+                    fontWeight={600}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    Menu Item
+                  </p>
+                </a>
               </div>
             </div>
           </li>
@@ -365,7 +377,6 @@ exports[` 1`] = `
             disabled={false}
             href={null}
             id={null}
-            onClick={null}
             tabIndex="0"
           >
             <div
@@ -376,15 +387,20 @@ exports[` 1`] = `
               <div
                 className="Bar__Slot-icfo76-1 RjiBe"
               >
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                  fontSize="1em"
-                  fontWeight={600}
-                  id={null}
-                  letterSpacing="0px"
+                <a
+                  className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                  onClick={[Function]}
                 >
-                  Menu Item
-                </p>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                    fontSize="1em"
+                    fontWeight={600}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    Menu Item
+                  </p>
+                </a>
               </div>
             </div>
           </li>
@@ -393,7 +409,6 @@ exports[` 1`] = `
             disabled={false}
             href={null}
             id={null}
-            onClick={null}
             tabIndex="0"
           >
             <div
@@ -404,15 +419,20 @@ exports[` 1`] = `
               <div
                 className="Bar__Slot-icfo76-1 RjiBe"
               >
-                <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                  fontSize="1em"
-                  fontWeight={600}
-                  id={null}
-                  letterSpacing="0px"
+                <a
+                  className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                  onClick={[Function]}
                 >
-                  Menu Item
-                </p>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                    fontSize="1em"
+                    fontWeight={600}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    Menu Item
+                  </p>
+                </a>
               </div>
             </div>
           </li>
@@ -474,7 +494,6 @@ exports[` 1`] = `
                   disabled={false}
                   href={null}
                   id={null}
-                  onClick={null}
                   tabIndex="0"
                 >
                   <div
@@ -485,15 +504,20 @@ exports[` 1`] = `
                     <div
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                        fontSize="1em"
-                        fontWeight={600}
-                        id={null}
-                        letterSpacing="0px"
+                      <a
+                        className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                        onClick={[Function]}
                       >
-                        Menu Item
-                      </p>
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                          fontSize="1em"
+                          fontWeight={600}
+                          id={null}
+                          letterSpacing="0px"
+                        >
+                          Menu Item
+                        </p>
+                      </a>
                     </div>
                   </div>
                 </li>
@@ -513,7 +537,6 @@ exports[` 1`] = `
                   disabled={false}
                   href={null}
                   id={null}
-                  onClick={null}
                   tabIndex="0"
                 >
                   <div
@@ -524,15 +547,20 @@ exports[` 1`] = `
                     <div
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                        fontSize="1em"
-                        fontWeight={600}
-                        id={null}
-                        letterSpacing="0px"
+                      <a
+                        className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                        onClick={[Function]}
                       >
-                        Menu Item
-                      </p>
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                          fontSize="1em"
+                          fontWeight={600}
+                          id={null}
+                          letterSpacing="0px"
+                        >
+                          Menu Item
+                        </p>
+                      </a>
                     </div>
                   </div>
                 </li>
@@ -541,7 +569,6 @@ exports[` 1`] = `
                   disabled={false}
                   href={null}
                   id={null}
-                  onClick={null}
                   tabIndex="0"
                 >
                   <div
@@ -552,15 +579,20 @@ exports[` 1`] = `
                     <div
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                        fontSize="1em"
-                        fontWeight={600}
-                        id={null}
-                        letterSpacing="0px"
+                      <a
+                        className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                        onClick={[Function]}
                       >
-                        Menu Item
-                      </p>
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                          fontSize="1em"
+                          fontWeight={600}
+                          id={null}
+                          letterSpacing="0px"
+                        >
+                          Menu Item
+                        </p>
+                      </a>
                     </div>
                   </div>
                 </li>
@@ -569,7 +601,6 @@ exports[` 1`] = `
                   disabled={false}
                   href={null}
                   id={null}
-                  onClick={null}
                   tabIndex="0"
                 >
                   <div
@@ -580,15 +611,20 @@ exports[` 1`] = `
                     <div
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                        fontSize="1em"
-                        fontWeight={600}
-                        id={null}
-                        letterSpacing="0px"
+                      <a
+                        className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                        onClick={[Function]}
                       >
-                        Menu Item
-                      </p>
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                          fontSize="1em"
+                          fontWeight={600}
+                          id={null}
+                          letterSpacing="0px"
+                        >
+                          Menu Item
+                        </p>
+                      </a>
                     </div>
                   </div>
                 </li>
@@ -597,7 +633,6 @@ exports[` 1`] = `
                   disabled={false}
                   href={null}
                   id={null}
-                  onClick={null}
                   tabIndex="0"
                 >
                   <div
@@ -608,15 +643,20 @@ exports[` 1`] = `
                     <div
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                        fontSize="1em"
-                        fontWeight={600}
-                        id={null}
-                        letterSpacing="0px"
+                      <a
+                        className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                        onClick={[Function]}
                       >
-                        Menu Item
-                      </p>
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                          fontSize="1em"
+                          fontWeight={600}
+                          id={null}
+                          letterSpacing="0px"
+                        >
+                          Menu Item
+                        </p>
+                      </a>
                     </div>
                   </div>
                 </li>
@@ -636,7 +676,6 @@ exports[` 1`] = `
                   disabled={false}
                   href={null}
                   id={null}
-                  onClick={null}
                   tabIndex="0"
                 >
                   <div
@@ -647,15 +686,20 @@ exports[` 1`] = `
                     <div
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                        fontSize="1em"
-                        fontWeight={600}
-                        id={null}
-                        letterSpacing="0px"
+                      <a
+                        className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                        onClick={[Function]}
                       >
-                        Menu Item
-                      </p>
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                          fontSize="1em"
+                          fontWeight={600}
+                          id={null}
+                          letterSpacing="0px"
+                        >
+                          Menu Item
+                        </p>
+                      </a>
                     </div>
                   </div>
                 </li>
@@ -664,7 +708,6 @@ exports[` 1`] = `
                   disabled={false}
                   href={null}
                   id={null}
-                  onClick={null}
                   tabIndex="0"
                 >
                   <div
@@ -675,15 +718,20 @@ exports[` 1`] = `
                     <div
                       className="Bar__Slot-icfo76-1 RjiBe"
                     >
-                      <p
-                        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                        fontSize="1em"
-                        fontWeight={600}
-                        id={null}
-                        letterSpacing="0px"
+                      <a
+                        className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                        onClick={[Function]}
                       >
-                        Menu Item
-                      </p>
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                          fontSize="1em"
+                          fontWeight={600}
+                          id={null}
+                          letterSpacing="0px"
+                        >
+                          Menu Item
+                        </p>
+                      </a>
                     </div>
                   </div>
                 </li>
@@ -982,6 +1030,8 @@ exports[` 1`] = `
                       <input
                         className="Search__NewTextInput-sey9om-1 gIKvUj"
                         id="my-search-bar"
+                        onChange={[Function]}
+                        onKeyPress={[Function]}
                         placeholder="Search Location"
                         type="search"
                       />
@@ -991,7 +1041,7 @@ exports[` 1`] = `
                         htmlFor={null}
                         id={null}
                         name={null}
-                        onClick={null}
+                        onClick={[Function]}
                         tabIndex="1"
                         type="button"
                       >
@@ -1471,7 +1521,6 @@ exports[` 1`] = `
                         disabled={false}
                         href={null}
                         id={null}
-                        onClick={[Function]}
                         tabIndex="0"
                       >
                         <div
@@ -1521,7 +1570,6 @@ exports[` 1`] = `
                         disabled={false}
                         href={null}
                         id={null}
-                        onClick={[Function]}
                         tabIndex="0"
                       >
                         <div
@@ -1554,7 +1602,6 @@ exports[` 1`] = `
                         disabled={false}
                         href={null}
                         id={null}
-                        onClick={[Function]}
                         tabIndex="0"
                       >
                         <div
@@ -1587,7 +1634,6 @@ exports[` 1`] = `
                         disabled={false}
                         href={null}
                         id={null}
-                        onClick={[Function]}
                         tabIndex="0"
                       >
                         <div
@@ -1620,7 +1666,6 @@ exports[` 1`] = `
                         disabled={false}
                         href={null}
                         id={null}
-                        onClick={[Function]}
                         tabIndex="0"
                       >
                         <div
@@ -1670,7 +1715,6 @@ exports[` 1`] = `
                         disabled={false}
                         href={null}
                         id={null}
-                        onClick={[Function]}
                         tabIndex="0"
                       >
                         <div
@@ -1796,6 +1840,8 @@ exports[` 2`] = `
               <input
                 className="Search__NewTextInput-sey9om-1 gIKvUj"
                 id="my-search-bar"
+                onChange={[Function]}
+                onKeyPress={[Function]}
                 placeholder="Search"
                 type="search"
               />
@@ -1805,7 +1851,7 @@ exports[` 2`] = `
                 htmlFor={null}
                 id={null}
                 name={null}
-                onClick={null}
+                onClick={[Function]}
                 tabIndex="1"
                 type="button"
               >
@@ -2036,7 +2082,6 @@ exports[` 2`] = `
                 disabled={false}
                 href={null}
                 id={null}
-                onClick={null}
                 tabIndex="0"
               >
                 <div
@@ -2047,15 +2092,20 @@ exports[` 2`] = `
                   <div
                     className="Bar__Slot-icfo76-1 RjiBe"
                   >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                      fontSize="1em"
-                      fontWeight={600}
-                      id={null}
-                      letterSpacing="0px"
+                    <a
+                      className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                      onClick={[Function]}
                     >
-                      Layers
-                    </p>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                        fontSize="1em"
+                        fontWeight={600}
+                        id={null}
+                        letterSpacing="0px"
+                      >
+                        Layers
+                      </p>
+                    </a>
                   </div>
                 </div>
               </li>
@@ -2064,7 +2114,6 @@ exports[` 2`] = `
                 disabled={false}
                 href={null}
                 id={null}
-                onClick={null}
                 tabIndex="0"
               >
                 <div
@@ -2075,15 +2124,20 @@ exports[` 2`] = `
                   <div
                     className="Bar__Slot-icfo76-1 RjiBe"
                   >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                      fontSize="1em"
-                      fontWeight={600}
-                      id={null}
-                      letterSpacing="0px"
+                    <a
+                      className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                      onClick={[Function]}
                     >
-                      Results
-                    </p>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                        fontSize="1em"
+                        fontWeight={600}
+                        id={null}
+                        letterSpacing="0px"
+                      >
+                        Results
+                      </p>
+                    </a>
                   </div>
                 </div>
               </li>
@@ -2092,7 +2146,6 @@ exports[` 2`] = `
                 disabled={false}
                 href={null}
                 id={null}
-                onClick={null}
                 tabIndex="0"
               >
                 <div
@@ -2103,15 +2156,20 @@ exports[` 2`] = `
                   <div
                     className="Bar__Slot-icfo76-1 RjiBe"
                   >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                      fontSize="1em"
-                      fontWeight={600}
-                      id={null}
-                      letterSpacing="0px"
+                    <a
+                      className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                      onClick={[Function]}
                     >
-                      Form
-                    </p>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                        fontSize="1em"
+                        fontWeight={600}
+                        id={null}
+                        letterSpacing="0px"
+                      >
+                        Form
+                      </p>
+                    </a>
                   </div>
                 </div>
               </li>
@@ -2120,7 +2178,6 @@ exports[` 2`] = `
                 disabled={false}
                 href={null}
                 id={null}
-                onClick={null}
                 tabIndex="0"
               >
                 <div
@@ -2131,15 +2188,20 @@ exports[` 2`] = `
                   <div
                     className="Bar__Slot-icfo76-1 RjiBe"
                   >
-                    <p
-                      className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                      fontSize="1em"
-                      fontWeight={600}
-                      id={null}
-                      letterSpacing="0px"
+                    <a
+                      className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                      onClick={[Function]}
                     >
-                      Research
-                    </p>
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                        fontSize="1em"
+                        fontWeight={600}
+                        id={null}
+                        letterSpacing="0px"
+                      >
+                        Research
+                      </p>
+                    </a>
                   </div>
                 </div>
               </li>
