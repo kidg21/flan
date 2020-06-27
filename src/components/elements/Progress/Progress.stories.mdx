@@ -8,7 +8,7 @@ import Bar from "layout/Bar";
 import Button from "atoms/Button";
 import Icon from "atoms/Icon";
 import Card, { CardSection, CardGrid } from "elements/Card";
-import Progress, {Step} from "elements/Progress";
+import Progress, {Step, BarStep} from "elements/Progress";
 
 <Meta title="Elements|Workflow Progress Bar" component={Progress} />
 
@@ -59,13 +59,17 @@ Within these progress bars it is the developers choice to configure it so that a
         <Step title="Task"  />
         <Step title="Task"  />
     </Progress>
+    <Bar contentAlign= "center" left={
     <Progress>
-        <Step isComplete title="Task"  />
-        <Step isComplete title="Task"  />
-        <Step isComplete title="Task"  />
-        <Step isComplete title="Task"  />
-        <Step isComplete title="Task"  />
-    </Progress>
+        <BarStep isComplete  />
+        <BarStep isComplete  />
+        <BarStep isComplete  />
+        <BarStep  />
+        <BarStep  />
+    </Progress>}
+    right={{content: (<Text text="30%"/>),
+    width: "min-content",
+    }}/>
     </Grid>
   </Story>
 </Preview>

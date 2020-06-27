@@ -18,7 +18,7 @@ const StyledButton = styled.button`
   z-index: 0;
   flex-direction: row;
   width: ${(props) => {
-    return props.fullWidth ? "100%" : "auto";
+    return props.fullWidth ? "100%" : "max-content";
   }};
   height: ${(props) => {
     return props.alignCenter ? "" : "2.4rem";
@@ -51,9 +51,6 @@ const StyledButton = styled.button`
   }};
   font-size: ${(props) => {
     return props.labelSize || "inherit";
-  }};
-  font-weight: ${(props) => {
-    return props.fontWeight || "400";
   }};
   text-transform: capitalize;
   cursor: pointer;
@@ -169,6 +166,7 @@ function Button({
   let backgroundColor;
   let borderRadius;
   let hoverColor;
+  let labelWeight;
   let borderWidth;
   let borderStyle;
   let borderColor;
@@ -205,7 +203,7 @@ function Button({
       shadeColor = "info100";
       break;
     case "neutral":
-      buttonColor = "neutral140";
+      buttonColor = "neutral120";
       fontColor = buttonColor;
       tintColor = "neutral20";
       shadeColor = "neutral200";
@@ -245,9 +243,11 @@ function Button({
     fontColor = "inverse";
     borderColor = buttonColor;
     hoverColor = shadeColor;
+    labelWeight = "600";
     backgroundColor = buttonColor;
   } else {
     hoverColor = tintColor;
+    labelWeight = "600";
     borderColor = buttonColor;
   }
 
@@ -283,7 +283,7 @@ function Button({
       rows={alignCenter ? "max-content 1fr" : null}
     >
       {icon ? <Icon icon={icon} /> : null}
-      {label ? <Label weight="bold" text={label} /> : null}
+      {label ? <Label weight={labelWeight} text={label} /> : null}
       {count && !isDisabled ? <Tag label={count} /> : null}
     </LabelWrapper>
   );

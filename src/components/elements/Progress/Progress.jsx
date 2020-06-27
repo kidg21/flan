@@ -12,7 +12,7 @@ const StepItem = styled.li`
   justify-content: center;
   padding-bottom: 0.5rem;
   display: flex;
-  border-bottom: 2px solid ${(props) => { return props.isComplete ? props.theme.palette.selected : props.isSelected ? props.theme.palette.selected : props.theme.palette.neutral40; }};
+  border-bottom: 2px solid ${(props) => { return props.isComplete ? props.theme.palette.action80 : props.isSelected ? props.theme.palette.selected : props.theme.palette.neutral40; }};
   align-items: baseline;
   width: 100%;
   color: ${(props) => { return props.isComplete ? props.theme.text.selected : props.isSelected ? props.theme.palette.selected : props.theme.text.secondary; }};
@@ -28,11 +28,24 @@ const StepItem = styled.li`
     margin-right: 1rem;
     width: 1.5rem;
     color: ${(props) => { return props.isComplete ? props.theme.palette.inverse : props.isSelected ? props.theme.palette.selected : ""; }};
-    background: ${(props) => { return props.isComplete ? props.theme.palette.info80 : props.isSelected ? "" : ""; }};
-    border: 1px solid ${(props) => { return props.isComplete ? props.theme.palette.info80 : props.isSelected ? props.theme.palette.selected : props.theme.text.secondary; }};
+    background: ${(props) => { return props.isComplete ? props.theme.palette.action80 : props.isSelected ? "" : ""; }};
+    border: 1px solid ${(props) => { return props.isComplete ? props.theme.palette.action80 : props.isSelected ? props.theme.palette.selected : props.theme.text.secondary; }};
     border-radius: 50%;
     font-weight: 600;
   }
+`;
+
+const BarItem = styled.li`
+  align-items: center;
+  align-self: center;
+  vertical-align: center;
+  font-family: Nunito;
+  justify-content: center;
+  display: flex;
+  height: 5px;
+  align-items: baseline;
+  width: 100%;
+  background-color: ${(props) => { return props.isComplete ? props.theme.palette.selected : props.isSelected ? props.theme.palette.selected : props.theme.palette.neutral60; }};
 `;
 
 const Container = styled.ul`
@@ -43,6 +56,12 @@ const Container = styled.ul`
   width: 100%;
   justify-content: space-between;
   z-index: 1;
+  ${BarItem}:first-child {
+    border-radius: 5rem 0 0 5rem;
+  };
+  ${BarItem}:last-child {
+    border-radius: 0 5rem 5rem 0;
+  };
 `;
 
 const ItemContainer = styled.div`
@@ -51,6 +70,28 @@ const ItemContainer = styled.div`
   flex-direction: column;
   width: ${(props) => { return props.line ? "100%" : ""; }};
 `;
+
+
+
+function BarStep({
+  id, isSelected, isComplete,
+}) {
+  return (
+    <BarItem id={id} isComplete={isComplete} isSelected={isSelected}/>
+  );
+}
+
+BarStep.propTypes = {
+  id: PropTypes.string,
+  isSelected: PropTypes.bool,
+  isComplete: PropTypes.bool,
+};
+BarStep.defaultProps = {
+  id: null,
+  isSelected: false,
+  isComplete: false,
+};
+
 
 function Step({
   description, id, isSelected, isComplete, title,
@@ -99,4 +140,4 @@ ProgressBar.defaultProps = {
   id: null,
 };
 
-export { ProgressBar as default, Step };
+export { ProgressBar as default, Step, BarStep };

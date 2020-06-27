@@ -211,8 +211,8 @@ function Label({
 }) {
   const sizeHash = {
     xs: {
-      fontSize: "0.65em",
-      letterSpacing: "0.6px",
+      fontSize: "0.68em",
+      letterSpacing: "1px",
     },
     sm: {
       fontSize: "0.82em",
