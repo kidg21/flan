@@ -1,17 +1,16 @@
 /* eslint-disable security/detect-object-injection */
 /* eslint-disable linebreak-style */
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
-import React from "react";
+import React, { useRef } from "react";
 import PropTypes from "prop-types";
 import Bar from "layout/Bar";
 import Text from "base/Typography";
 import Button from "atoms/Button";
 import Grid from "layout/Grid";
-import ResultContainer from "./Results.jsx";
-import TextInput from "atoms/TextInput";
 import Container from "atoms/Container";
 import Icon from "atoms/Icon";
 import styled from "styled-components";
+import ResultContainer from "./Results.jsx";
 
 // const SearchContainer = styled.div`
 
@@ -65,7 +64,6 @@ const DropContainer = styled(Container)`
 position: fixed;
 `;
 
-
 const errorHash = {
   connection: "Check your internet connection",
   offline: "You are offline",
@@ -73,8 +71,51 @@ const errorHash = {
 };
 
 function Search({
-  id, error, results, onSearch, placeholder,
+  error,
+  id,
+  onChange,
+  onKeyPress,
+  onSearch,
+  placeholder,
+  results,
 }) {
+  const searchVal = useRef("");
+
+  /**
+   * Set state to current input value in search box.
+   * Pass back input value to onChange function, if provided.
+   * @param {object} e - event object that contains input value.
+   */
+  const handleOnChange = (e) => {
+    const currVal = e.target.value;
+
+    searchVal.current = currVal;
+
+    if (typeof onChange === "function") {
+      onChange(searchVal.current);
+    }
+  };
+
+  /**
+   * If "enter" key was pressed, pass back current search value.
+   * @param {object} e - event object that contains key press info.
+   */
+  const handleOnKeyPress = (e) => {
+    if (e && e.key.toLowerCase() === "enter" && typeof onKeyPress === "function") {
+      e.preventDefault();
+      onKeyPress(searchVal.current);
+    }
+  };
+
+  /**
+   * Pass back input value to onSearch function, if provided.
+   */
+  const handleOnSearch = () => {
+    if (typeof onSearch === "function") {
+      onSearch(searchVal.current);
+    }
+  };
+
   const msg = errorHash[typeof error === "string" ? error.toLowerCase() : "default"];
 
   const message = (
@@ -92,17 +133,19 @@ function Search({
   );
 
   return (
-    <Grid columns="1" gap="xs" id={id}>
+    <Grid columns="1" id={id}>
       <SearchContainer>
         <NewTextInput
           id="my-search-bar"
           placeholder={placeholder}
           type="search"
+          onChange={handleOnChange}
+          onKeyPress={handleOnKeyPress}
         />
-        <Button icon="search" isPlain onClick={onSearch} />
+        <Button icon="search" isPlain onClick={handleOnSearch} />
       </SearchContainer>
       {/* <Button icon="more" isPlain /> */}
-      {error || results ? <DropContainer id="results-container" maxHeight="22rem" > {Body}</DropContainer> : null}
+      {error || results ? <DropContainer padding="0" id="results-container" maxHeight="22rem">{Body}</DropContainer> : null}
       {/* { advance ? <Advanced inputs={inputs} /> : null} */}
     </Grid>
   );
@@ -118,14 +161,18 @@ Search.propTypes = {
     onClick: PropTypes.func,
   })),
   error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  onChange: PropTypes.func,
+  onKeyPress: PropTypes.func,
   onSearch: PropTypes.func,
   placeholder: PropTypes.string,
 };
 
 Search.defaultProps = {
   id: null,
-  results: "",
+  results: null,
   error: "",
+  onChange: null,
+  onKeyPress: null,
   onSearch: null,
   placeholder: null,
 };

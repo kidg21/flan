@@ -3,23 +3,26 @@
 exports[` 1`] = `
 Array [
   <div
-    action={null}
+    action="close"
     aria-describedby={null}
     aria-labelledby={null}
-    className="Modal__ModalContainer-sc-15cll21-2 iafgvV"
-    id={null}
+    className="Modal__ModalContainer-sc-15cll21-2 hdVuaU"
+    id=""
+    onAnimationEnd={[Function]}
+    onAnimationStart={[Function]}
     pointerEvents="auto"
   >
     <div
-      action={null}
-      className="Modal__ModalBG-sc-15cll21-3 gtDVkZ"
+      action="close"
+      className="Modal__ModalBG-sc-15cll21-3 fDRyAy"
+      id="modal-bg-"
       onClick={[Function]}
     />
     <span
       className="Modal__ContentWrapper-sc-15cll21-0 kyBEvu"
     >
       <div
-        className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
+        className="Card__CardWrapper-sc-1g3s676-3 fOhtjo Banner__StyledBanner-sc-6825al-0 bfAGjz"
         href={null}
         id={null}
         media={null}
@@ -38,14 +41,14 @@ Array [
               id={null}
               rows={null}
             >
-              <h5
-                className="Typography__TitleText-sc-19auepv-2 KxMwb"
-                fontSize="1.15em"
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 exoZGd"
+                fontSize="1em"
                 fontWeight={400}
                 letterSpacing="0px"
               >
                 This is a Standard notification telling you stuff.
-              </h5>
+              </h6>
             </section>
           </div>
           <div
@@ -59,12 +62,12 @@ Array [
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 fvyOLy Banner__Close-sc-6825al-1 cgOoTm"
+                className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu Banner__Close-sc-6825al-1 cgOoTm"
                 color="link"
                 data-icon="times"
                 data-prefix="far"
                 focusable="false"
-                fontSize="1.35em"
+                fontSize="inherit"
                 id={null}
                 role="img"
                 style={Object {}}
@@ -115,16 +118,19 @@ Array [
 exports[` 2`] = `
 Array [
   <div
-    action={null}
+    action="close"
     aria-describedby={null}
     aria-labelledby={null}
-    className="Modal__ModalContainer-sc-15cll21-2 iafgvV"
-    id={null}
+    className="Modal__ModalContainer-sc-15cll21-2 hdVuaU"
+    id=""
+    onAnimationEnd={[Function]}
+    onAnimationStart={[Function]}
     pointerEvents="auto"
   >
     <div
-      action={null}
-      className="Modal__ModalBG-sc-15cll21-3 gtDVkZ"
+      action="close"
+      className="Modal__ModalBG-sc-15cll21-3 fDRyAy"
+      id="modal-bg-"
       onClick={[Function]}
     />
     <span
@@ -132,7 +138,7 @@ Array [
       onClick={null}
     >
       <div
-        className="Card__CardWrapper-sc-1g3s676-3 gemaRk"
+        className="Card__CardWrapper-sc-1g3s676-3 dzmLlG"
         href={null}
         id={null}
         media={null}
@@ -198,23 +204,26 @@ Array [
 exports[` 3`] = `
 Array [
   <div
-    action={null}
+    action="close"
     aria-describedby={null}
     aria-labelledby={null}
-    className="Modal__ModalContainer-sc-15cll21-2 iafgvV"
-    id={null}
+    className="Modal__ModalContainer-sc-15cll21-2 hdVuaU"
+    id=""
+    onAnimationEnd={[Function]}
+    onAnimationStart={[Function]}
     pointerEvents="auto"
   >
     <div
-      action={null}
-      className="Modal__ModalBG-sc-15cll21-3 gtDVkZ"
+      action="close"
+      className="Modal__ModalBG-sc-15cll21-3 fDRyAy"
+      id="modal-bg-"
       onClick={[Function]}
     />
     <span
       className="Modal__ContentWrapper-sc-15cll21-0 kyBEvu"
     >
       <div
-        className="Card__CardWrapper-sc-1g3s676-3 dihrKb DialogBox__DialogCard-iv0dnf-1 eLwRLb"
+        className="Card__CardWrapper-sc-1g3s676-3 gmGoyl DialogBox__DialogCard-iv0dnf-1 eLwRLb"
         href={null}
         id={null}
         media={null}
@@ -358,16 +367,19 @@ Array [
 exports[` 4`] = `
 Array [
   <div
-    action={null}
+    action="close"
     aria-describedby={null}
     aria-labelledby={null}
-    className="Modal__ModalContainer-sc-15cll21-2 enBxPE"
-    id={null}
+    className="Modal__ModalContainer-sc-15cll21-2 cAXnsN"
+    id=""
+    onAnimationEnd={[Function]}
+    onAnimationStart={[Function]}
     pointerEvents="auto"
   >
     <div
-      action={null}
-      className="Modal__ModalBG-sc-15cll21-3 gtDVkZ"
+      action="close"
+      className="Modal__ModalBG-sc-15cll21-3 fDRyAy"
+      id="modal-bg-"
       onClick={[Function]}
     />
     <span
@@ -375,7 +387,7 @@ Array [
       onClick={null}
     >
       <div
-        className="Card__CardWrapper-sc-1g3s676-3 gemaRk"
+        className="Card__CardWrapper-sc-1g3s676-3 dzmLlG"
         href={null}
         id={null}
         media={null}
@@ -441,16 +453,19 @@ Array [
 exports[` 5`] = `
 Array [
   <div
-    action={null}
+    action="close"
     aria-describedby={null}
     aria-labelledby={null}
-    className="Modal__ModalContainer-sc-15cll21-2 iafgvV"
-    id={null}
+    className="Modal__ModalContainer-sc-15cll21-2 hdVuaU"
+    id=""
+    onAnimationEnd={[Function]}
+    onAnimationStart={[Function]}
     pointerEvents="auto"
   >
     <div
-      action={null}
-      className="Modal__ModalBG-sc-15cll21-3 gtDVkZ"
+      action="close"
+      className="Modal__ModalBG-sc-15cll21-3 fDRyAy"
+      id="modal-bg-"
       onClick={[Function]}
     />
     <img

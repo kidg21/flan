@@ -1,5 +1,7 @@
 /* eslint-disable linebreak-style */
-import React, { Fragment, useState } from "react";
+import React, {
+  Fragment, useState, useEffect, useCallback,
+} from "react";
 import GlobalStyles from "GlobalStyles";
 import styled, { keyframes, ThemeProvider } from "styled-components";
 import { DMPTheme, screen } from "Variables";
@@ -92,7 +94,7 @@ const Image = styled.img`
 
 const ModalContainer = styled.div`
   position: fixed;
-  display: ${(props) => { return (props.visible ? "flex" : "none"); }};
+  display: ${(props) => { return (props.visible || props.action === "open" ? "flex" : "none"); }};
   z-index: 1005;
   top: 0px;
   right: 0px;
@@ -176,6 +178,8 @@ function Modal({
   id,
   media,
   hasBackdrop,
+  onAnimationStart,
+  onAnimationEnd,
   onClick,
   onClose,
   text,
@@ -222,35 +226,57 @@ function Modal({
   }
 
   // Hide container when fade is complete
-  let action = null;
+  // internal state to know when content is fully visible or fully hidden
+  // animation takes time!
   const [state, setState] = useState({
-    visible: false,
-    animation: null,
+    action: visible ? "open" : "close",
+    visible: visible,
   });
 
-  function beginAnimation() {
-    action = visible ? "open" : "close";
-    state.animation = setTimeout(() => {
+  useEffect(() => {
+    if (!animationDuration) {
       setState({ visible });
-    }, (Math.max((animationDuration || 0), (animationDuration || 0)) - 0.1) * 1000);
-  }
-
-  if (state.visible !== visible) {
-    if (!state.animation) {
-      beginAnimation();
+    } else if (state.visible !== visible) {
+      // init animation
+      setState((oldState) => {
+        return {
+          ...oldState,
+          action: visible ? "open" : "close",
+        };
+      });
     }
-  } else if (state.animation) {
-    clearTimeout(state.animation);
-    state.visible = !state.visible;
-    beginAnimation();
-  }
+  }, [state.visible, visible]);
+
+  // use to be notified when content is fully visible or fully hidden
+  const endAnimation = useCallback((e) => {
+    // if hasBackdrop, the ModalBG animation bubbles up
+    // causing 2 onAnimationEnd events to fire
+    if (e.target.id === id) {
+      // animation completed, update internal visible state
+      setState((oldState) => {
+        return {
+          ...oldState,
+          visible,
+        };
+      });
+      if (onAnimationEnd) onAnimationEnd(e);
+    }
+  }, [onAnimationEnd, visible]);
+
+  const startAnimation = useCallback((e) => {
+    // if hasBackdrop, the ModalBG animation bubbles up
+    // causing 2 onAnimationEnd events to fire
+    if (e.target.id === id) {
+      if (onAnimationStart) onAnimationStart(e);
+    }
+  }, [onAnimationStart]);
 
   return (
     <React.Fragment>
       <GlobalStyles />
       <ThemeProvider theme={DMPTheme}>
         <ModalContainer
-          action={action}
+          action={state.action}
           align={align}
           animationDuration={animationDuration}
           aria-describedby={ariaDescribedBy}
@@ -259,13 +285,18 @@ function Modal({
           hasBackdrop={hasBackdrop}
           justifyContent={justifyContent}
           pointerEvents={pointerEvents}
-          visible={visible || state.visible}
+          visible={state.visible}
+          onAnimationStart={startAnimation}
+          onAnimationEnd={endAnimation}
         >
-          {hasBackdrop ? <ModalBG
-            action={action}
-            animationDuration={animationDuration}
-            onClick={onClose}
-          /> : null}
+          {hasBackdrop ? (
+            <ModalBG
+              id={`modal-bg-${id}`}
+              action={state.action}
+              animationDuration={animationDuration}
+              onClick={onClose}
+            />
+          ) : null}
           {modalContent}
         </ModalContainer>
       </ThemeProvider>
@@ -283,6 +314,8 @@ Modal.propTypes = {
   id: PropTypes.string,
   media: PropTypes.string,
   hasBackdrop: PropTypes.bool,
+  onAnimationStart: PropTypes.func,
+  onAnimationEnd: PropTypes.func,
   onClick: PropTypes.func,
   onClose: PropTypes.func,
   text: PropTypes.string,
@@ -295,9 +328,11 @@ Modal.defaultProps = {
   ariaDescribedBy: null,
   ariaLabelledBy: null,
   children: null,
-  id: null,
+  id: "", // must be string, for id comparision
   media: null,
   hasBackdrop: true,
+  onAnimationStart: null,
+  onAnimationEnd: null,
   onClick: null,
   onClose: null,
   text: null,

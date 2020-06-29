@@ -252,9 +252,18 @@ function ListItem({
       <Text text={title || null} disabled={disabled} size="lg" weight="bold" />
       {description ? (<Text size="sm" text={description || null} disabled={disabled} />
       ) : null}
-    </React.Fragment>);
+    </React.Fragment>
+  );
 
   const rightContent = getRightContent(post, disabled, onClick);
+
+  const handleOnClick = (e) => {
+    const val = e.target.innerText;
+
+    if (typeof onClick === "function") {
+      onClick(val);
+    }
+  };
 
   return (
     <ListItemWrapper
@@ -270,7 +279,6 @@ function ListItem({
       isSelected={isSelected}
       selectedColor={selectedColor}
       selectedBackground={selectedBackground}
-      onClick={onClick}
       tabIndex={disabled ? "-1" : tabIndex}
     >
       <DisabledContext.Provider value={disabled}>
@@ -279,7 +287,7 @@ function ListItem({
           center={{
             content: centerContent,
             align: "left",
-            onClick: onClick,
+            onClick: handleOnClick,
           }}
           contentAlign="center"
           disabled={disabled}
