@@ -10,7 +10,7 @@ exports[` 1`] = `
 >
   <div
     className="Bar__BarLayout-icfo76-2 eIFIfS"
-    id={null}
+    id="Property_Header"
     onClick={null}
   >
     <div
@@ -61,6 +61,7 @@ exports[` 1`] = `
     >
       <a
         className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
+        id="Property_Header-Menu"
         onClick={[Function]}
       >
         <svg

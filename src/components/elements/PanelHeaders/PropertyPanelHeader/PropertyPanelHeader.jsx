@@ -1,6 +1,7 @@
 /* eslint-disable linebreak-style */
 import React from "react";
 import PropTypes from "prop-types";
+import { getGuid } from "helpers";
 import Icon from "atoms/Icon";
 import Bar from "layout/Bar";
 import { Title } from "base/Typography";
@@ -10,6 +11,7 @@ import Menu from "blocks/Menu";
 function PropertyPanelHeader({
   id, title, onClick, menuData,
 }) {
+  const uId = id || getGuid();
   return (
     <Bar
       id={id}
@@ -24,7 +26,7 @@ function PropertyPanelHeader({
         align: "left",
       }}
       right={{
-        content: <Menu data={menuData} position="bottomLeft" />,
+        content: <Menu id={`${uId}-Menu`} data={menuData} position="bottomLeft" />,
         width: "min-content",
       }}
     />

@@ -4,8 +4,7 @@
 import React, { useState, useContext } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { PlaceholderText } from "helpers/Placeholders.jsx";
-import { Spacer } from "helpers/Display.jsx";
+import { PlaceholderText, Spacer, getGuid } from "helpers";
 import Grid from "layout/Grid";
 import Bar from "layout/Bar";
 import Text, { Title } from "base/Typography";
@@ -63,8 +62,8 @@ const CardSectionWrapper = styled.section`
 const CardMedia = styled(Media)`
   * {
     border-radius: ${(props) => {
-  return `${props.theme.borders.radiusMin} ${props.theme.borders.radiusMin} 0 0`;
-}};
+    return `${props.theme.borders.radiusMin} ${props.theme.borders.radiusMin} 0 0`;
+  }};
     }
   }
 `;
@@ -78,7 +77,9 @@ const CardWrapper = styled.div`
   flex-direction: column;
   flex: none;
   background-color: ${(props) => {
-    return props.cardBackground ? props.theme.background[props.cardBackground] : props.theme.background.default;
+    return props.cardBackground
+      ? props.theme.background[props.cardBackground]
+      : props.theme.background.default;
   }};
   padding: ${(props) => {
     return props.cardPadding || "";
@@ -364,27 +365,11 @@ function Card({
   }
 
   let headerSection;
+  const uId = id || getGuid();
   if (title || description) {
-    headerSection = (
-      <CardSection variant={variant} >
-        {badgeLabel ? <Badge label={badgeLabel} /> : null}
-        <Bar
-          padding="0"
-          contentAlign="center"
-          left={label || icon ? {
-            content: <Avatar label={label} icon={icon} size="sm" />,
-            width: "max-content",
-          } : null}
-          center={{
-            content: centerContent,
-            align: "left",
-          }}
-        />
-      </CardSection>
-    );
     if (more && more.content) {
       headerSection = (
-        <CardSection variant={variant} disableTransition={disableTransition}>
+        <CardSection id={`${uId}-Header`} variant={variant} disableTransition={disableTransition}>
           <ExpandingSection
             description={description}
             icon={icon}
@@ -398,6 +383,24 @@ function Card({
           >
             {more.content}
           </ExpandingSection>
+        </CardSection>
+      );
+    } else {
+      headerSection = (
+        <CardSection id={`${uId}-Header`} variant={variant} >
+          {badgeLabel ? <Badge label={badgeLabel} /> : null}
+          <Bar
+            padding="0"
+            contentAlign="center"
+            left={label || icon ? {
+              content: <Avatar label={label} icon={icon} size="sm" />,
+              width: "max-content",
+            } : null}
+            center={{
+              content: centerContent,
+              align: "left",
+            }}
+          />
         </CardSection>
       );
     }
@@ -430,7 +433,7 @@ function Card({
           }}
           right={{
             // More than 2 Commands sends overflow to Menu
-            content: commands.length > 2 ? <Menu data={commands.slice(2)} position="topLeft" /> : <Spacer />,
+            content: commands.length > 2 ? <Menu id={`${uId}-Menu`} data={commands.slice(2)} position="topLeft" /> : <Spacer />,
             width: "10%",
           }}
         />
@@ -461,21 +464,21 @@ function Card({
       cardShadow={cardShadow}
       className={className}
       onClick={onClick}
-      id={id}
+      id={uId}
       href={href}
       isInverse={isInverse}
       media={media}
       shadow={shadow}
     >
-      {media ? <CardMedia media={media} mediaDesc={mediaDesc} /> : null}
+      {media ? <CardMedia id={`${uId}-Media`} media={media} mediaDesc={mediaDesc} /> : null}
       {headerSection}
       {body ? (
-        <CardSection onClick={onClick}>
+        <CardSection id={`${uId}-Body`} onClick={onClick}>
           <Text text={body} />
         </CardSection>
       ) : null}
       {children}
-      {commandElements ? <CardSection footer>{commandElements}</CardSection> : null}
+      {commandElements ? <CardSection id={`${uId}-Footer`} footer>{commandElements}</CardSection> : null}
     </CardWrapper>
   );
 }

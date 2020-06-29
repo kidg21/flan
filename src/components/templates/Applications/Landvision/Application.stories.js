@@ -26,7 +26,7 @@ import SelectMenu from "atoms/SelectMenu";
 import Image from "atoms/Image";
 import LightBoxLogo from "images/LightBoxLogo.png";
 import LightBoxIcon from "images/LightBoxIconLogo.png";
-import { MockHeader, MockFooter, MockMap, MockWorkflow, MockTable, MockCardGrid, MockDetails, MockMenu } from "helpers/Mocks";
+import { MockHeader, MockFooter, MockMap, MockWorkflow, MockDetails, MockMenu } from "helpers/Mocks";
 
 const map = (
   <Mapbox />
@@ -41,8 +41,8 @@ const menuData = [
 ];
 
 const panelHeader = (
-  <Card shadow="0">
-    <MainPanelHeader title="Menu" menuData={menuData} />
+  <Card id="Left_Header_Card" shadow="0">
+    <MainPanelHeader id="Jobs_Header" title="Menu" menuData={menuData} />
   </Card>
 );
 
@@ -65,7 +65,7 @@ function doNothing() {
 }
 
 const infoCard = (
-  <Card isInverse>
+  <Card id="Jobs_Summary" isInverse>
     <Bar
       left={{
         content: (
@@ -292,7 +292,7 @@ storiesOf("Templates|Applications/", module)
               }}
             >
               <Grid columns="1" rows="auto 300px" gap="0">
-                <Card shadow="0">
+                <Card id="Object_A_Card" shadow="0">
                   <CardSection padding="0">
                     <Bar
                       contentAlign="center"
@@ -319,6 +319,7 @@ storiesOf("Templates|Applications/", module)
                             <Command label="Action" onClick={doNothing} />
                             <Command label="Action" onClick={doNothing} />
                             <Menu
+                              id="Object_A_Menu"
                               data={[
                                 { id: "a", label: "Action" },
                                 { id: "b", label: "Action" },
@@ -397,7 +398,7 @@ storiesOf("Templates|Applications/", module)
               }}
             >
               <Grid columns="1" rows="auto 300px" gap="0">
-                <Card shadow="0">
+                <Card id="Object_B_Card" shadow="0">
                   <CardSection padding="0">
                     <Bar
                       contentAlign="center"
@@ -424,6 +425,7 @@ storiesOf("Templates|Applications/", module)
                             <Command label="Action" onClick={doNothing} />
                             <Command label="Action" onClick={doNothing} />
                             <Menu
+                              id="Object_B_Menu"
                               data={[
                                 { id: "a", label: "Action" },
                                 { id: "b", label: "Action" },
@@ -538,7 +540,7 @@ storiesOf("Templates|Applications/", module)
               }}
             >
               <Grid columns="1" rows="auto 300px" gap="0">
-                <Card shadow="0">
+                <Card id="Object_C_Card" shadow="0">
                   <CardSection padding="0">
                     <Bar
                       contentAlign="center"
@@ -565,6 +567,7 @@ storiesOf("Templates|Applications/", module)
                             <Command label="Action" onClick={doNothing} />
                             <Command label="Action" onClick={doNothing} />
                             <Menu
+                              id="Object_C_Menu"
                               data={[
                                 { id: "a", label: "Action" },
                                 { id: "b", label: "Action" },
@@ -629,11 +632,12 @@ storiesOf("Templates|Applications/", module)
         const showModules = () => { setRecordSection(recordModules); };
         const showRelated = () => { setRecordSection(recordRelated); };
 
-        const [mainView, setMainView] = useState(homeView);
-        const showHome = () => { setMainView(homeView); };
-        const showObjects1 = () => { setMainView(objectsView1); };
-        const showObjects2 = () => { setMainView(objectsView2); };
-        const showObjects3 = () => { setMainView(objectsView3); };
+        const mainView = homeView;
+        // const [mainView, setMainView] = useState(homeView);
+        // const showHome = () => { setMainView(homeView); };
+        // const showObjects1 = () => { setMainView(objectsView1); };
+        // const showObjects2 = () => { setMainView(objectsView2); };
+        // const showObjects3 = () => { setMainView(objectsView3); };
 
         return (
           <Layout
@@ -673,6 +677,7 @@ storiesOf("Templates|Applications/", module)
                         <Command label="Action" onClick={doNothing} />
                         <Command label="Action" onClick={doNothing} />
                         <Menu
+                          id="Header_Action_Menu"
                           data={[
                             { id: "a", label: "Action" },
                             { id: "b", label: "Action" },
@@ -790,6 +795,7 @@ storiesOf("Templates|Applications/", module)
                           content: (
                             <Grid columns="2" gap="4xl">
                               <Menu
+                                id="Object_Action_Menu"
                                 data={[
                                   { id: "a", label: "Action" },
                                   { id: "b", label: "Action" },

@@ -110,14 +110,14 @@ function MenuComponent({
     >
       <Card shadow="2x">
         <ListWrapper id={`listwrapper-${uId}`} isInteractive>
-          {data.map((item) => {
+          {data.map((item, index) => {
             // nested submenu
             if (item.commands) {
               return (
                 <ItemWrapper
                   disabled={item.disabled}
                   id={`item-${item.id}`}
-                  key={`item-${item.id}`}
+                  key={`item-${item.id || index}`}
                   onMouseOver={(e) => {
                     setActiveItem({
                       id: item.id,
@@ -147,7 +147,7 @@ function MenuComponent({
             return (
               <ItemWrapper
                 id={`item-${item.id}`}
-                key={`item-${item.id}`}
+                key={`item-${item.id || index}`}
                 disabled={item.disabled}
                 onClick={() => {
                   if (!item.disabled) {
