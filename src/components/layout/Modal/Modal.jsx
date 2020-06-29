@@ -5,7 +5,7 @@ import React, {
 import GlobalStyles from "GlobalStyles";
 import styled, { keyframes, ThemeProvider } from "styled-components";
 import { DMPTheme, screen } from "Variables";
-import { PlaceholderText } from "helpers";
+import { PlaceholderText, getGuid } from "helpers";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import Card from "elements/Card";
@@ -271,6 +271,7 @@ function Modal({
     }
   }, [onAnimationStart]);
 
+  const uId = id || getGuid();
   return (
     <React.Fragment>
       <GlobalStyles />
@@ -281,7 +282,7 @@ function Modal({
           animationDuration={animationDuration}
           aria-describedby={ariaDescribedBy}
           aria-labelledby={ariaLabelledBy}
-          id={id}
+          id={uId}
           hasBackdrop={hasBackdrop}
           justifyContent={justifyContent}
           pointerEvents={pointerEvents}
@@ -291,7 +292,7 @@ function Modal({
         >
           {hasBackdrop ? (
             <ModalBG
-              id={`modal-bg-${id}`}
+              id={`modal-bg-${uId}`}
               action={state.action}
               animationDuration={animationDuration}
               onClick={onClose}

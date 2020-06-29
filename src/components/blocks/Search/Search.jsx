@@ -10,6 +10,7 @@ import Grid from "layout/Grid";
 import Container from "atoms/Container";
 import Icon from "atoms/Icon";
 import styled from "styled-components";
+import { getGuid } from "helpers";
 import ResultContainer from "./Results.jsx";
 
 // const SearchContainer = styled.div`
@@ -132,11 +133,12 @@ function Search({
     </React.Fragment>
   );
 
+  const uId = id || getGuid();
   return (
-    <Grid columns="1" id={id}>
+    <Grid columns="1" id={uId}>
       <SearchContainer>
         <NewTextInput
-          id="my-search-bar"
+          id={`${uId}-search-bar`}
           placeholder={placeholder}
           type="search"
           onChange={handleOnChange}
@@ -145,7 +147,7 @@ function Search({
         <Button icon="search" isPlain onClick={handleOnSearch} />
       </SearchContainer>
       {/* <Button icon="more" isPlain /> */}
-      {error || results ? <DropContainer padding="0" id="results-container" maxHeight="22rem">{Body}</DropContainer> : null}
+      {error || results ? <DropContainer padding="0" id={`${uId}-results-container`} maxHeight="22rem">{Body}</DropContainer> : null}
       {/* { advance ? <Advanced inputs={inputs} /> : null} */}
     </Grid>
   );

@@ -6,6 +6,7 @@ import Icon from "atoms/Icon";
 import styled from "styled-components";
 import Card from "elements/Card";
 import List, { ListItem } from "blocks/List";
+import { getGuid } from "helpers";
 
 const MenuContainer = styled.a`
   /* display: flex; */
@@ -96,9 +97,10 @@ function MenuComponent({
     setActiveItem({});
   }
 
+  const uId = id || getGuid();
   return (
     <MenuPopper
-      id={`menupopper-${id}`}
+      id={`menupopper-${uId}`}
       left={left}
       onClick={onClick}
       onMouseLeave={closeMenu}
@@ -107,7 +109,7 @@ function MenuComponent({
       transform={transform}
     >
       <Card shadow="2x">
-        <ListWrapper id={`listwrapper-${id}`} isInteractive>
+        <ListWrapper id={`listwrapper-${uId}`} isInteractive>
           {data.map((item) => {
             // nested submenu
             if (item.commands) {
@@ -239,15 +241,16 @@ function Menu({
     setVisibility(!visibility);
   }
 
+  const uId = id || getGuid();
   return (
     <React.Fragment>
       {visibility ? <MenuBG onClick={toggleVisibility} /> : null}
-      <MenuContainer onClick={toggleVisibility}>
+      <MenuContainer id={uId} onClick={toggleVisibility}>
         <Icon icon={icon} />
         {visibility ? (
           <MenuComponent
             data={data}
-            id={id}
+            id={uId}
             submenuDirection={submenuDirection}
             transform={transform}
           />

@@ -71,7 +71,7 @@ function Banner({
           align: "left",
         }}
         right={{
-          content: (<Close icon="close"  onClick={onClose} />),
+          content: (<Close icon="close" onClick={onClose} />),
           width: "max-content",
         }}
       />

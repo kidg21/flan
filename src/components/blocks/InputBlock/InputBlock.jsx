@@ -91,7 +91,13 @@ function InputBlock({
 
   function _handleTextChange(e) {
     const oldValues = getValues();
-    const newValues = { input: { ...oldValues.input, [e.target.id]: e.target.value }, selected: oldValues.selected };
+    const newValues = {
+      input: {
+        ...oldValues.input,
+        [e.target.id]: e.target.value,
+      },
+      selected: oldValues.selected,
+    };
     onChange(oldValues, newValues, () => { });
   }
 

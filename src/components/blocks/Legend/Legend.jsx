@@ -4,7 +4,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Text, { Title, Link } from "base/Typography";
-import { SkeletonStatic } from "helpers";
+import { SkeletonStatic, getGuid } from "helpers";
 import Loader from "atoms/Loader";
 
 const LegendTitle = styled(Title)`
@@ -80,10 +80,12 @@ function Legend({
   let cellBorder;
   let cellBorderColor;
 
+  const uId = id || getGuid();
+
   return (
-    <Wrapper id={id}>
+    <Wrapper id={uId}>
       {title ? <LegendTitle weight="bold" text={title} /> : null}
-      <TableContainer id={id}>
+      <TableContainer id={`${uId}-table`}>
         {/* if data is an array (possibly empty) then content has been loaded
           and we should display it if it's not an array then assume content is still loading */}
         {data instanceof Array > 0 ? data.map((row) => {
