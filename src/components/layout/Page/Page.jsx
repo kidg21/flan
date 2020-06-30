@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 import Grid from "layout/Grid";
-import Text, { Title } from "base/Typography";
+import { Title } from "base/Typography";
 
 const PageWrapper = styled(Grid)`
   position: ${(props) => {

@@ -2,19 +2,19 @@
 
 exports[` 1`] = `
 <div
-  className="Card__CardWrapper-sc-1g3s676-3 gmGoyl"
+  className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
   href={null}
-  id={null}
+  id="Legend_Standard_Card"
   media={null}
   onClick={null}
 >
   <div
     className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
-    id={null}
+    id="Legend_Standard"
   >
     <table
       className="Legend__TableContainer-sc-70hm4b-2 cVdgHu"
-      id={null}
+      id="Legend_Standard-table"
     >
       <tr
         className="Legend__Row-sc-70hm4b-4 kKuGtn"
@@ -156,19 +156,19 @@ exports[` 2`] = `
   rows={null}
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gmGoyl"
+    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
     href={null}
-    id={null}
+    id="Legend_Icon_Card"
     media={null}
     onClick={null}
   >
     <div
       className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
-      id={null}
+      id="Legend_Icon"
     >
       <table
         className="Legend__TableContainer-sc-70hm4b-2 cVdgHu"
-        id={null}
+        id="Legend_Icon-table"
       >
         <tr
           className="Legend__Row-sc-70hm4b-4 kKuGtn"
@@ -378,19 +378,19 @@ exports[` 2`] = `
     </div>
   </div>
   <div
-    className="Card__CardWrapper-sc-1g3s676-3 gmGoyl"
+    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
     href={null}
-    id={null}
+    id="Legend_Tag_Card"
     media={null}
     onClick={null}
   >
     <div
       className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
-      id={null}
+      id="Legend_Tag"
     >
       <table
         className="Legend__TableContainer-sc-70hm4b-2 cVdgHu"
-        id={null}
+        id="Legend_Tag-table"
       >
         <tr
           className="Legend__Row-sc-70hm4b-4 kKuGtn"

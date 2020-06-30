@@ -374,7 +374,7 @@ exports[` 1`] = `
           >
             <div
               className="Bar__BarLayout-icfo76-2 eIFIfS"
-              id={null}
+              id="storyshots_62"
               onClick={null}
             >
               <div
@@ -472,20 +472,20 @@ exports[` 1`] = `
             </button>
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 gDrraz"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 jNRHWG"
             id={null}
             rows={null}
           >
             <div
-              className="Card__CardWrapper-sc-1g3s676-3 OPcsO"
+              className="Card__CardWrapper-sc-1g3s676-3 klTivC"
               href={null}
-              id={null}
+              id="storyshots_63"
               media={null}
               onClick={true}
             >
               <section
                 className="Card__CardSectionWrapper-sc-1g3s676-1 hGyZDa"
-                id={null}
+                id="storyshots_63-Body"
                 onClick={true}
               >
                 <p
@@ -541,7 +541,7 @@ exports[` 1`] = `
               </section>
               <section
                 className="Card__CardSectionWrapper-sc-1g3s676-1 iEJhOk"
-                id={null}
+                id="storyshots_63-Footer"
                 onClick={null}
               >
                 <div
@@ -574,15 +574,15 @@ exports[` 1`] = `
               </section>
             </div>
             <div
-              className="Card__CardWrapper-sc-1g3s676-3 OPcsO"
+              className="Card__CardWrapper-sc-1g3s676-3 klTivC"
               href={null}
-              id={null}
+              id="storyshots_64"
               media={null}
               onClick={true}
             >
               <section
                 className="Card__CardSectionWrapper-sc-1g3s676-1 hGyZDa"
-                id={null}
+                id="storyshots_64-Body"
                 onClick={true}
               >
                 <p
@@ -638,7 +638,7 @@ exports[` 1`] = `
               </section>
               <section
                 className="Card__CardSectionWrapper-sc-1g3s676-1 iEJhOk"
-                id={null}
+                id="storyshots_64-Footer"
                 onClick={null}
               >
                 <div
@@ -671,15 +671,15 @@ exports[` 1`] = `
               </section>
             </div>
             <div
-              className="Card__CardWrapper-sc-1g3s676-3 OPcsO"
+              className="Card__CardWrapper-sc-1g3s676-3 klTivC"
               href={null}
-              id={null}
+              id="storyshots_65"
               media={null}
               onClick={true}
             >
               <section
                 className="Card__CardSectionWrapper-sc-1g3s676-1 hGyZDa"
-                id={null}
+                id="storyshots_65-Body"
                 onClick={true}
               >
                 <p
@@ -735,7 +735,7 @@ exports[` 1`] = `
               </section>
               <section
                 className="Card__CardSectionWrapper-sc-1g3s676-1 iEJhOk"
-                id={null}
+                id="storyshots_65-Footer"
                 onClick={null}
               >
                 <div
@@ -768,15 +768,15 @@ exports[` 1`] = `
               </section>
             </div>
             <div
-              className="Card__CardWrapper-sc-1g3s676-3 OPcsO"
+              className="Card__CardWrapper-sc-1g3s676-3 klTivC"
               href={null}
-              id={null}
+              id="storyshots_66"
               media={null}
               onClick={true}
             >
               <section
                 className="Card__CardSectionWrapper-sc-1g3s676-1 hGyZDa"
-                id={null}
+                id="storyshots_66-Body"
                 onClick={true}
               >
                 <p
@@ -832,7 +832,7 @@ exports[` 1`] = `
               </section>
               <section
                 className="Card__CardSectionWrapper-sc-1g3s676-1 iEJhOk"
-                id={null}
+                id="storyshots_66-Footer"
                 onClick={null}
               >
                 <div
@@ -1246,7 +1246,7 @@ exports[` 2`] = `
           >
             <div
               className="Bar__BarLayout-icfo76-2 eIFIfS"
-              id={null}
+              id="storyshots_67"
               onClick={null}
             >
               <div
@@ -1287,7 +1287,7 @@ exports[` 2`] = `
         >
           <div
             className="Bar__BarLayout-icfo76-2 eIFIfS"
-            id={null}
+            id="storyshots_68"
             onClick={null}
           >
             <div
@@ -1331,6 +1331,7 @@ exports[` 2`] = `
             >
               <a
                 className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
+                id="storyshots_68-Menu"
                 onClick={[Function]}
               >
                 <svg
@@ -1363,11 +1364,11 @@ exports[` 2`] = `
         >
           <div
             className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
-            id={null}
+            id="storyshots_69"
           >
             <table
               className="Legend__TableContainer-sc-70hm4b-2 cVdgHu"
-              id={null}
+              id="storyshots_69-table"
             >
               <tr
                 className="Legend__Row-sc-70hm4b-4 kKuGtn"

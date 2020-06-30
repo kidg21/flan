@@ -1,6 +1,7 @@
 /* eslint-disable linebreak-style */
-import React from "react";
+import React, { useMemo } from "react";
 import PropTypes from "prop-types";
+import { getGuid } from "helpers";
 import Icon from "atoms/Icon";
 import Bar from "layout/Bar";
 import { Title } from "base/Typography";
@@ -10,9 +11,10 @@ import Menu from "blocks/Menu";
 function NavigationPanelHeader({
   id, title, onClick, menuData,
 }) {
+  const uId = useMemo(() => { return id || getGuid(); }, [id]);
   return (
     <Bar
-      id={id}
+      id={uId}
       padding="2x"
       contentAlign="center"
       left={{
@@ -23,7 +25,7 @@ function NavigationPanelHeader({
         content: <Title text={title} size="lg" weight="bold" />,
         align: "left",
       }}
-      right={<Menu data={menuData} position="bottomLeft" />}
+      right={<Menu id={`${uId}-Menu`} data={menuData} position="bottomLeft" />}
     />
   );
 }

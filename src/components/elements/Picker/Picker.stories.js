@@ -17,44 +17,45 @@ export default {
 
 export const Actions = () => {
   const [activeToggleTab, setActiveToggleTab] = useState("");
-  return (  <Picker id="toggleSelect" label="Standard Swatches" columns="4">
-  <ColorSwatch
-    color="#E4423A"
-    isSelected={activeToggleTab === "tab1"}
-    onClick={() => {
-      if (activeToggleTab === "tab1") {
-        setActiveToggleTab("");
-      } else {
-        setActiveToggleTab("tab1");
-      }
-      return false;
-    }}
-  />
-  <ColorSwatch
-    color="#14A939"
-    isSelected={activeToggleTab === "tab2"}
-    onClick={() => {
-      if (activeToggleTab === "tab2") {
-        setActiveToggleTab("");
-      } else {
-        setActiveToggleTab("tab2");
-      }
-      return false;
-    }}
-  />
-  <ColorSwatch
-    color="#2F98EE"
-    isSelected={activeToggleTab === "tab3"}
-    onClick={() => {
-      if (activeToggleTab === "tab3") {
-        setActiveToggleTab("");
-      } else {
-        setActiveToggleTab("tab3");
-      }
-      return false;
-    }}
-  />
-</Picker>);
+  return (
+    <Picker id="toggleSelect" label="Standard Swatches" columns="4">
+      <ColorSwatch
+        color="#E4423A"
+        isSelected={activeToggleTab === "tab1"}
+        onClick={() => {
+          if (activeToggleTab === "tab1") {
+            setActiveToggleTab("");
+          } else {
+            setActiveToggleTab("tab1");
+          }
+          return false;
+        }}
+      />
+      <ColorSwatch
+        color="#14A939"
+        isSelected={activeToggleTab === "tab2"}
+        onClick={() => {
+          if (activeToggleTab === "tab2") {
+            setActiveToggleTab("");
+          } else {
+            setActiveToggleTab("tab2");
+          }
+          return false;
+        }}
+      />
+      <ColorSwatch
+        color="#2F98EE"
+        isSelected={activeToggleTab === "tab3"}
+        onClick={() => {
+          if (activeToggleTab === "tab3") {
+            setActiveToggleTab("");
+          } else {
+            setActiveToggleTab("tab3");
+          }
+          return false;
+        }}
+      />
+    </Picker>);
 };
 Actions.story = {
   parameters: {

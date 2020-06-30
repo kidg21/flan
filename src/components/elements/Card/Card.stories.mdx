@@ -21,6 +21,7 @@ import Card, { CardSection, CardGrid } from "elements/Card";
    <Card
         // isInverse
         // variant="info"
+        id="Card_Standard"
         media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" // Image
         mediaDesc="Media Description"
         // media="https://www.w3schools.com/html/horse.mp3" // HTML5 Audio
@@ -99,29 +100,33 @@ The primary action area of a card is typically the card itself. Often cards are 
 <Preview>
   <Story name="Types">
    <CardGrid columns="2">
-              <Card
-        />
-           <Card
+      <Card id="Card_Simple" />
+      <Card
+        id="Card_Title_Description"
         title="Card Title"
         description="Card Description"
-        />
-        <Card
+      />
+      <Card
+        id="Card_Body"
         title="Card Title"
         description="Card Description"
         // label="GP"
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       />
       <Card
+        id="Card_Label"
         title="Card Title"
         label="GP"
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       />
       <Card
+        id="Card_Icon"
         title="Card Title"
         icon="star"
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       />
       <Card
+        id="Card_Commands"
         title="Card Title"
         description="Card Description"
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -139,6 +144,7 @@ The primary action area of a card is typically the card itself. Often cards are 
         ]}
       />
       <Card
+        id="Card_OnClick"
         title="Card Title"
         description="Card Description"
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -180,7 +186,8 @@ The primary action area of a card is typically the card itself. Often cards are 
 <Preview>
   <Story name="Media">
    <CardGrid columns="2">
-        <Card
+      <Card
+        id="Card_Media_Image"
         media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" // Image
         mediaDesc="Media Description"
         title="Card Title"
@@ -218,6 +225,7 @@ The primary action area of a card is typically the card itself. Often cards are 
         onClick={action("Primary Action Area Clicked")}
       />
       <Card
+        id="Card_Media_Vimeo"
         title="Card Title"
         media="https://player.vimeo.com/video/798022" // Vimeo
         description="Card Description"
@@ -254,6 +262,7 @@ The primary action area of a card is typically the card itself. Often cards are 
         onClick={action("Primary Action Area Clicked")}
       />
       <Card
+        id="Card_Media_Video"
         media="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" // HTML5 Video
         title="Card Title"
         description="Card Description"
@@ -290,6 +299,7 @@ The primary action area of a card is typically the card itself. Often cards are 
         onClick={action("Primary Action Area Clicked")}
       />
       <Card
+        id="Card_Media_YouTube"
         media="https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0" // Youtube
         title="Card Title"
         description="Card Description"
@@ -326,8 +336,8 @@ The primary action area of a card is typically the card itself. Often cards are 
         onClick={action("Primary Action Area Clicked")}
       />
       <Card
-      media="https://www.w3schools.com/html/horse.mp3" // HTML5 Audio
-        
+        id="Card_Media_Audio"
+        media="https://www.w3schools.com/html/horse.mp3" // HTML5 Audio       
         title="Card Title"
         description="Card Description"
         // label="GP"

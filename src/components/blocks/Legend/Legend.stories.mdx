@@ -17,14 +17,14 @@ import Legend from "blocks/Legend";
 
 <Preview withToolbar>
   <Story name="Standard">
-  <Card>
-     <Legend data={[
+  <Card id="Legend_Standard_Card">
+     <Legend id="Legend_Standard" data={[
   { label: "Name", value: "Forrest Gump" },
   { label: "Address", value: "213 Chippewa Sq." },
   { label: "City", value: "Savannah" },
   { label: "State", value: "GA" },
 ]} />
-</Card>
+  </Card>
   </Story>
 </Preview>
 
@@ -39,16 +39,16 @@ The Legend component is a set of expandable panels for showing and hiding conten
 <Preview>
   <Story name="Types">
   <Grid columns="2">
-  <Card>
-  <Legend data={[
+  <Card id="Legend_Icon_Card">
+  <Legend id="Legend_Icon" data={[
   { label: ( <Icon icon="map" /> ), value: "Map" },
   { label: ( <Icon icon="report" /> ), value: "Education" },
   { label: ( <Icon icon="circle" /> ), value: "Parcel" },
   { label: ( <Icon icon="star" /> ), value: "Movie" },
 ]} />
 </Card>
-<Card>
-<Legend data={[
+<Card id="Legend_Tag_Card">
+<Legend id="Legend_Tag" data={[
   { label: ( <Tag label="Info" variant="info" /> ), value: "Map" },
   { label: ( <Tag label="Warning" variant="warning" /> ), value: "Education" },
   { label: ( <Tag label="Success" variant="success" /> ), value: "Parcel" },
