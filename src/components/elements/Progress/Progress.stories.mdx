@@ -8,7 +8,7 @@ import Bar from "layout/Bar";
 import Button from "atoms/Button";
 import Icon from "atoms/Icon";
 import Card, { CardSection, CardGrid } from "elements/Card";
-import Progress, {Step, BarStep} from "elements/Progress";
+import Progress, {Step} from "elements/Progress";
 
 <Meta title="Elements|Workflow Progress Bar" component={Progress} />
 
@@ -73,6 +73,21 @@ Within these progress bars it is the developers choice to configure it so that a
     </Grid>
   </Story>
 </Preview>
+
+
+## Indicator
+
+
+<Preview withToolbar>
+<Story name="Indicator">
+<Bar left={<Text text="Hello Object"/>}
+right={{
+  content: (<ProgressIndicator percentage={42} />),
+  width: "20%",}
+}/>
+  </Story>
+</Preview>
+
 
 ## Props
 

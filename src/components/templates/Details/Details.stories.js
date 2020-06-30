@@ -11,6 +11,8 @@ import Tabs, { TabItem } from "blocks/Tabs";
 import Text, { Link } from "base/Typography";
 import Image from "atoms/Image";
 import Card from "elements/Card";
+import Search from "blocks/Search";
+import MapBox from "layout/Map";
 import Legend from "blocks/Legend";
 
 import Page, { PageSection } from "layout/Page";
@@ -63,4 +65,81 @@ storiesOf("Templates|Detail Page/", module)
         );
       });
     },
+  )
+  .add(
+    "Research",
+    () => {
+      return React.createElement(() => {
+        return (
+          <Panel
+            padding="0"
+            header={
+              <Grid columns="1">
+                <Bar
+                  left={<Search results={[
+                    {
+                      title: "White House",
+                      description: "123 Malibu Drive, CA 92660",
+                    },
+                    {
+                      title: "Orange House",
+                      description: "1224 Malibu Drive, CA 92660",
+                    },
+                    {
+                      title: "Red House",
+                      description: "123 Malibu Drive, CA 92660",
+                    },
+                    {
+                      title: "Green House",
+                      description: "123 Malibu Drive, CA 92660",
+                    },
+                    {
+                      title: "Black House",
+                      description: "123 Malibu Drive, CA 92660",
+                    },
+                    {
+                      title: "Blue House",
+                      description: "123 Malibu Drive, CA 92660",
+                    },
+                    {
+                      title: "Address",
+                      description: "123 Malibu Drive, CA 92660",
+                    },
+                    {
+                      title: "APN",
+                      description: "123 Malibu Drive, CA 92660",
+                    },
+                    {
+                      title: "Owner",
+                      description: "123 Malibu Drive, CA 92660",
+                    },
+                    {
+                      title: "Address",
+                      description: "123 Malibu Drive, CA 92660",
+                    },
+                    {
+                      title: "Address",
+                      description: "123 Malibu Drive, CA 92660",
+                    },
+                    {
+                      title: "APN",
+                      description: "123 Malibu Drive, CA 92660",
+                    },
+                    {
+                      title: "Owner",
+                      description: "123 Malibu Drive, CA 92660",
+                    },
+                  ]} />}
+                  right={<Button label="View List" />}
+                />
+              
+              </Grid>}
+          >
+            <MapBox />
+          </Panel>
+
+        );
+      });
+    },
   );
+

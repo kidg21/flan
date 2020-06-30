@@ -28,26 +28,26 @@ export const colors = {
   green20: "hsl(76, 59%, 96%)",
   green40: "hsl(89, 50%, 49%)",
   green60: "hsl(135, 79%, 37%)",
-  green80: "hsl(89, 46%, 42%)",
+  green80: "hsl(123, 46%, 34%)",
   green100: "hsl(87, 91%, 22%)",
 
   orange20: "hsl(30, 96%, 97%)",
   orange40: "hsl(30, 89%, 70%)",
   orange60: "hsl(30, 100%, 50%)",
   orange80: "hsl(30, 82%, 48%)",
-  orange100: "hsl(30, 92%, 24%)",
+  orange100: "hsl(28, 100%, 33%)",
 
   navy20: "hsl(213, 63%, 96%)",
   navy40: "hsl(212, 82%, 87%)",
   navy60: "hsl(213, 48%, 44%)",
-  navy80: "hsl(207, 80%, 37%)",
-  navy100: "hsl(213, 100%, 27%)",
+  navy80: "hsl(206, 99%, 31%)",
+  navy100: "hsl(214, 100%, 21%)",
 
   red20: "hsl(3, 96%, 97%)",
   red40: "hsl(3, 83%, 76%)",
   red60: "hsl(3, 76%, 56%)",
   red80: "hsl(3, 61%, 44%)",
-  red100: "hsl(3, 92%, 24%)",
+  red100: "hsl(359, 100%, 25%)",
 
   white20: "hsl(200, 59%, 95%)", // /bluetint
   white40: "hsl(201, 100%, 98%)", // lightblue

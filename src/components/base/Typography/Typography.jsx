@@ -81,7 +81,7 @@ function Text({
     },
     sm: {
       fontSize: "0.75em",
-      letterSpacing: "0.2px",
+      letterSpacing: "0.4px",
     },
     lg: {
       fontSize: "1em",
@@ -89,7 +89,7 @@ function Text({
     },
   };
 
-  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.876em", letterSpacing: "0px" };
+  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.879em", letterSpacing: "0.2px" };
   const { fontSize, letterSpacing } = selectedSize;
 
   const weightHash = {
@@ -224,7 +224,7 @@ function Label({
     },
   };
 
-  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.876em", letterSpacing: "0.2px" };
+  const selectedSize = sizeHash[size && size.toLowerCase()] || { fontSize: "0.879em", letterSpacing: "0.4px" };
   const { fontSize, letterSpacing } = selectedSize;
 
   const weightHash = {

@@ -58,11 +58,17 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
       props.theme.palette.selected
     );
   }};
-    border-color: ${(props) => {
-    return (
-      props.theme.palette[props.outlineColor] || props.theme.palette.selected
-    );
-  }};
+    
+  &:before {
+    margin: 0 -0.1em 0em 0;
+
+    width: 0.89em;
+    height: 0.89em;
+    border: solid 1px #fff;
+    border-radius: 100%;
+    display: inline-block;
+    content: "";
+  }
   }
   &:focus {
     border-color: ${(props) => {

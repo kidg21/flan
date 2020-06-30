@@ -65,8 +65,11 @@ font-family: ${(props) => { return props.theme.typography.primary; }};
 
 
 
-const DropContainer = styled(Container)`
-position: absolute;
+const DropContainer = styled.div`
+position: fixed;
+display: flex;
+background-color: yellow;
+top: 3rem;
 z-index: 109 !important;
 `;
 
@@ -97,7 +100,7 @@ function Search({
   );
 
   return (
-    <Grid columns="1" id={id}>
+    <div style={{width: "20rem", display: "flex"}}>
       <SearchContainer>
         <NewTextInput
           id="my-search-bar"
@@ -106,10 +109,10 @@ function Search({
         />
         <Button icon="search" isPlain onClick={onSearch} />
       </SearchContainer>
-      {/* <Button icon="more" isPlain /> */}
-      {error || results ? <DropContainer padding="0" id="results-container" maxHeight="22rem" > {Body}</DropContainer> : null}
-      {/* { advance ? <Advanced inputs={inputs} /> : null} */}
-    </Grid>
+        
+         {error || results ? <React.Fragment> {Body}</React.Fragment> : null}
+      </div>
+
   );
 }
 

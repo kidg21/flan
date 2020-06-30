@@ -166,7 +166,6 @@ function Button({
   let backgroundColor;
   let borderRadius;
   let hoverColor;
-  let labelWeight;
   let borderWidth;
   let borderStyle;
   let borderColor;
@@ -243,11 +242,9 @@ function Button({
     fontColor = "inverse";
     borderColor = buttonColor;
     hoverColor = shadeColor;
-    labelWeight = "600";
     backgroundColor = buttonColor;
   } else {
     hoverColor = tintColor;
-    labelWeight = "600";
     borderColor = buttonColor;
   }
 
@@ -283,7 +280,7 @@ function Button({
       rows={alignCenter ? "max-content 1fr" : null}
     >
       {icon ? <Icon icon={icon} /> : null}
-      {label ? <Label weight={labelWeight} text={label} /> : null}
+      {label ? <Label weight="bold" text={label} /> : null}
       {count && !isDisabled ? <Tag label={count} /> : null}
     </LabelWrapper>
   );
