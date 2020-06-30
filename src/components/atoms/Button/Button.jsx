@@ -333,7 +333,7 @@ Button.propTypes = {
   label: PropTypes.string,
   onClick: PropTypes.func,
   type: PropTypes.oneOf(["button", "reset", "submit"]),
-  variant: PropTypes.oneOf(["action", "alert", "info", "success", "warning"]),
+  variant: PropTypes.oneOf(["action", "alert", "info", "success", "warning", "neutral"]),
 };
 
 Button.defaultProps = {
