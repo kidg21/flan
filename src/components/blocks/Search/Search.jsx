@@ -1,23 +1,22 @@
 /* eslint-disable security/detect-object-injection */
 /* eslint-disable linebreak-style */
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
-import React from "react";
+import React, { useRef, useMemo } from "react";
 import PropTypes from "prop-types";
 import Bar from "layout/Bar";
 import Text from "base/Typography";
 import Button from "atoms/Button";
 import Grid from "layout/Grid";
-import ResultContainer from "./Results.jsx";
-import TextInput from "atoms/TextInput";
 import Container from "atoms/Container";
 import Icon from "atoms/Icon";
 import styled from "styled-components";
+import { getGuid } from "helpers";
+import ResultContainer from "./Results.jsx";
 
 // const SearchContainer = styled.div`
 
 const SearchContainer = styled.form`
 display: flex;
-position: relative;
 align-items: center;
 flex-direction: row;
 border: 1px solid;
@@ -62,17 +61,9 @@ font-family: ${(props) => { return props.theme.typography.primary; }};
 }
 `;
 
-
-
-
-const DropContainer = styled.div`
+const DropContainer = styled(Container)`
 position: fixed;
-display: flex;
-background-color: yellow;
-top: 3rem;
-z-index: 109 !important;
 `;
-
 
 const errorHash = {
   connection: "Check your internet connection",
@@ -81,8 +72,51 @@ const errorHash = {
 };
 
 function Search({
-  id, error, results, onSearch, placeholder,
+  error,
+  id,
+  onChange,
+  onKeyPress,
+  onSearch,
+  placeholder,
+  results,
 }) {
+  const searchVal = useRef("");
+  const uId = useMemo(() => { return id || getGuid(); }, [id]);
+  /**
+   * Set state to current input value in search box.
+   * Pass back input value to onChange function, if provided.
+   * @param {object} e - event object that contains input value.
+   */
+  const handleOnChange = (e) => {
+    const currVal = e.target.value;
+
+    searchVal.current = currVal;
+
+    if (typeof onChange === "function") {
+      onChange(searchVal.current);
+    }
+  };
+
+  /**
+   * If "enter" key was pressed, pass back current search value.
+   * @param {object} e - event object that contains key press info.
+   */
+  const handleOnKeyPress = (e) => {
+    if (e && e.key.toLowerCase() === "enter" && typeof onKeyPress === "function") {
+      e.preventDefault();
+      onKeyPress(searchVal.current);
+    }
+  };
+
+  /**
+   * Pass back input value to onSearch function, if provided.
+   */
+  const handleOnSearch = () => {
+    if (typeof onSearch === "function") {
+      onSearch(searchVal.current);
+    }
+  };
+
   const msg = errorHash[typeof error === "string" ? error.toLowerCase() : "default"];
 
   const message = (
@@ -100,19 +134,21 @@ function Search({
   );
 
   return (
-    <div style={{width: "20rem", display: "flex"}}>
+    <Grid columns="1" id={uId}>
       <SearchContainer>
         <NewTextInput
-          id="my-search-bar"
+          id={`${uId}-search-bar`}
           placeholder={placeholder}
           type="search"
+          onChange={handleOnChange}
+          onKeyPress={handleOnKeyPress}
         />
-        <Button icon="search" isPlain onClick={onSearch} />
+        <Button icon="search" isPlain onClick={handleOnSearch} />
       </SearchContainer>
-        
-         {error || results ? <React.Fragment> {Body}</React.Fragment> : null}
-      </div>
-
+      {/* <Button icon="more" isPlain /> */}
+      {error || results ? <DropContainer padding="0" id={`${uId}-results-container`} maxHeight="22rem">{Body}</DropContainer> : null}
+      {/* { advance ? <Advanced inputs={inputs} /> : null} */}
+    </Grid>
   );
 }
 
@@ -126,14 +162,18 @@ Search.propTypes = {
     onClick: PropTypes.func,
   })),
   error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  onChange: PropTypes.func,
+  onKeyPress: PropTypes.func,
   onSearch: PropTypes.func,
   placeholder: PropTypes.string,
 };
 
 Search.defaultProps = {
   id: null,
-  results: "",
+  results: null,
   error: "",
+  onChange: null,
+  onKeyPress: null,
   onSearch: null,
   placeholder: null,
 };

@@ -2,25 +2,15 @@
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import React from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
 import Bar from "layout/Bar";
-import Grid from "layout/Grid";
 import { Link } from "base/Typography";
 import List, { ListItem } from "blocks/List";
 
-const ResultsList = styled.div`
-width: 20rem;
-display: flex;
-background-color: yellow;
-top: 3rem;
-z-index: 109 !important;
-`;
 
 function ResultContainer({ id, results }) {
   return (
-    <ResultsList>
-      <Grid columns="1">
-      <List id={id} isInteractive>
+    <React.Fragment>
+      <List id={id} interactive>
         {results.slice(0, 10).map((item, index) => {
           return <ListItem key={item.id || index} {...item} />;
         })}
@@ -29,8 +19,7 @@ function ResultContainer({ id, results }) {
         padding="2x"
         center={<Link text="View More" />}
       /> : null}
-      </Grid>
-    </ResultsList>
+    </React.Fragment>
   );
 }
 
