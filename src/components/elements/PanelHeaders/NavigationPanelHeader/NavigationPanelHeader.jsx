@@ -1,5 +1,5 @@
 /* eslint-disable linebreak-style */
-import React from "react";
+import React, { useMemo } from "react";
 import PropTypes from "prop-types";
 import { getGuid } from "helpers";
 import Icon from "atoms/Icon";
@@ -11,10 +11,10 @@ import Menu from "blocks/Menu";
 function NavigationPanelHeader({
   id, title, onClick, menuData,
 }) {
-  const uId = id || getGuid();
+  const uId = useMemo(() => { return id || getGuid(); }, [id]);
   return (
     <Bar
-      id={id}
+      id={uId}
       padding="2x"
       contentAlign="center"
       left={{

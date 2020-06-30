@@ -1,7 +1,7 @@
 /* eslint-disable security/detect-object-injection */
 /* eslint-disable linebreak-style */
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
-import React, { useRef } from "react";
+import React, { useRef, useMemo } from "react";
 import PropTypes from "prop-types";
 import Bar from "layout/Bar";
 import Text from "base/Typography";
@@ -81,7 +81,7 @@ function Search({
   results,
 }) {
   const searchVal = useRef("");
-
+  const uId = useMemo(() => { return id || getGuid(); }, [id]);
   /**
    * Set state to current input value in search box.
    * Pass back input value to onChange function, if provided.
@@ -133,7 +133,6 @@ function Search({
     </React.Fragment>
   );
 
-  const uId = id || getGuid();
   return (
     <Grid columns="1" id={uId}>
       <SearchContainer>

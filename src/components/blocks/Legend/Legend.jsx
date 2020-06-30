@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable security/detect-object-injection */
-import React from "react";
+import React, { useMemo } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Text, { Title, Link } from "base/Typography";
@@ -80,7 +80,7 @@ function Legend({
   let cellBorder;
   let cellBorderColor;
 
-  const uId = id || getGuid();
+  const uId = useMemo(() => { return id || getGuid(); }, [id]);
 
   return (
     <Wrapper id={uId}>
@@ -88,13 +88,17 @@ function Legend({
       <TableContainer id={`${uId}-table`}>
         {/* if data is an array (possibly empty) then content has been loaded
           and we should display it if it's not an array then assume content is still loading */}
-        {data instanceof Array > 0 ? data.map((row) => {
+        {data instanceof Array > 0 ? data.map((row, index) => {
           let rowValue = row.value;
           if (row.onClick) {
             rowValue = (<Link onClick={row.onClick} text={row.value} />);
           }
+          const rowKey = row.id
+          || (typeof row.label === "string" && row.label.substr(0, 50).replace(/\s+/g, "_").replace(/\W+/g, ""))
+          || (typeof row.value === "string" && row.value.substr(0, 50).replace(/\s+/g, "_").replace(/\W+/g, ""))
+          || index;
           return (
-            <Row key={row.id}>
+            <Row key={rowKey}>
               <Cell
                 cellBorder={cellBorder}
                 cellPadding={cellPadding}
@@ -127,7 +131,7 @@ Legend.propTypes = {
   title: PropTypes.string,
   data: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
-    label: PropTypes.string,
+    label: PropTypes.node,
     value: PropTypes.node,
   })).isRequired,
 };

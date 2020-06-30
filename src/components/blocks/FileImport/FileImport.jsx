@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable complexity */
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
@@ -63,7 +63,7 @@ cursor: pointer;
 function FileImport({ id, onChange }) {
   const [state, setState] = useState();
 
-  const uId = id || getGuid();
+  const uId = useMemo(() => { return id || getGuid(); }, [id]);
   return (
     <Grid columns="1fr 3fr" gap="xs" id={uId}>
       <NewLabel>

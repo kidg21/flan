@@ -1,6 +1,10 @@
 /* eslint-disable linebreak-style */
 import React, {
-  Fragment, useState, useEffect, useCallback,
+  Fragment,
+  useState,
+  useEffect,
+  useCallback,
+  useMemo,
 } from "react";
 import GlobalStyles from "GlobalStyles";
 import styled, { keyframes, ThemeProvider } from "styled-components";
@@ -188,6 +192,7 @@ function Modal({
   let modalContent;
   let justifyContent;
   const pointerEvents = hasBackdrop ? "auto" : "none";
+  const uId = useMemo(() => { return id || getGuid(); }, [id]);
 
   if (text && !media) {
     modalContent = (
@@ -251,7 +256,7 @@ function Modal({
   const endAnimation = useCallback((e) => {
     // if hasBackdrop, the ModalBG animation bubbles up
     // causing 2 onAnimationEnd events to fire
-    if (e.target.id === id) {
+    if (e.target.id === uId) {
       // animation completed, update internal visible state
       setState((oldState) => {
         return {
@@ -266,12 +271,11 @@ function Modal({
   const startAnimation = useCallback((e) => {
     // if hasBackdrop, the ModalBG animation bubbles up
     // causing 2 onAnimationEnd events to fire
-    if (e.target.id === id) {
+    if (e.target.id === uId) {
       if (onAnimationStart) onAnimationStart(e);
     }
   }, [onAnimationStart]);
 
-  const uId = id || getGuid();
   return (
     <React.Fragment>
       <GlobalStyles />

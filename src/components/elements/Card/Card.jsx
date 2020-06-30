@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable jsx-a11y/media-has-caption */
 /* eslint-disable complexity */
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useMemo } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { PlaceholderText, Spacer, getGuid } from "helpers";
@@ -307,6 +307,8 @@ function Card({
   title,
   variant,
 }) {
+  const uId = useMemo(() => { return id || getGuid(); }, [id]);
+
   let cardColor;
   let cardBackground;
   if (isInverse) {
@@ -365,7 +367,6 @@ function Card({
   }
 
   let headerSection;
-  const uId = id || getGuid();
   if (title || description) {
     if (more && more.content) {
       headerSection = (
