@@ -248,13 +248,13 @@ function Menu({
   if (!setVisibility) {
     [visibility, setVisibility] = useState(visible);
   }
+  const uId = useMemo(() => { return id || getGuid(); }, [id]);
 
   const { transform, submenuDirection } = getCssPosition(position);
   function toggleVisibility() {
     setVisibility(!visibility);
   }
 
-  const uId = id || getGuid();
   return (
     <React.Fragment>
       {visibility ? <MenuBG onClick={toggleVisibility} /> : null}
