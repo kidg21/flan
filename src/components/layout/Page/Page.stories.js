@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { FullScreen } from "helpers/Display";
-import { MockCardGrid, MockDetails, MockFooter, MockForm, MockHeader, MockWorkflow, MockMap, MockTable, MockTabs, MockButtons, MockPalette, MockMenu } from "helpers/Mocks";
+import { MockCardGrid, MockDetails, MockFooter, MockForm, MockHeader, MockWorkflow, MockMap, MockTable, MockTabs, MockButtons, MockPalette } from "helpers/Mocks";
 import Button from "atoms/Button";
 import Grid from "layout/Grid";
 import Page from "layout/Page";
@@ -296,7 +296,7 @@ storiesOf("Layout|Page", module)
           isOverlay
           A={{
             id: "A",
-            content: <SearchBar placeholder="Search Location" />,
+            content: <SearchBar id="Search_E3" placeholder="Search Location" />,
           }}
           B={{
             id: "B",

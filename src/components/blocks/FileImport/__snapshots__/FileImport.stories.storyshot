@@ -3,7 +3,7 @@
 exports[` 1`] = `
 <section
   className="Grid__GridWrapper-sc-1ntp7gx-0 hfWbVf"
-  id={null}
+  id="FileImport_Standard"
   rows={null}
 >
   <label
@@ -26,7 +26,7 @@ exports[` 1`] = `
   </label>
   <section
     className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
-    id="file-textinput-null_container"
+    id="file-textinput-FileImport_Standard_container"
     rows={null}
   >
     <input
@@ -34,9 +34,9 @@ exports[` 1`] = `
       className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
       cols=""
       disabled={false}
-      id="file-textinput-null"
+      id="file-textinput-FileImport_Standard"
       list={null}
-      name="file-textinput-null"
+      name="file-textinput-FileImport_Standard"
       onBlur={null}
       onChange={null}
       onFocus={null}
@@ -53,13 +53,13 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 gDrraz"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 jNRHWG"
   id={null}
   rows={null}
 >
   <section
     className="Grid__GridWrapper-sc-1ntp7gx-0 hfWbVf"
-    id={null}
+    id="FileImport_Types"
     rows={null}
   >
     <label
@@ -82,7 +82,7 @@ exports[` 2`] = `
     </label>
     <section
       className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
-      id="file-textinput-null_container"
+      id="file-textinput-FileImport_Types_container"
       rows={null}
     >
       <input
@@ -90,9 +90,9 @@ exports[` 2`] = `
         className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
         cols=""
         disabled={false}
-        id="file-textinput-null"
+        id="file-textinput-FileImport_Types"
         list={null}
-        name="file-textinput-null"
+        name="file-textinput-FileImport_Types"
         onBlur={null}
         onChange={null}
         onFocus={null}

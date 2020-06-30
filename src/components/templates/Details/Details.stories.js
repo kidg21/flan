@@ -1,25 +1,12 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
-import React, { useState } from "react";
+import React from "react";
 import Panel from "layout/Panel";
-import List, { ListItem } from "blocks/List";
-import Grid from "layout/Grid";
-import Icon from "atoms/Icon";
-import Button from "atoms/Button";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
 import Tabs, { TabItem } from "blocks/Tabs";
-import Text, { Link } from "base/Typography";
-import Image from "atoms/Image";
-import Card from "elements/Card";
-import Search from "blocks/Search";
-import MapBox from "layout/Map";
 import Legend from "blocks/Legend";
 
 import Page, { PageSection } from "layout/Page";
-import DialogBox from "elements/DialogBox";
-import Bar from "layout/Bar";
-import Form, { FormSection } from "layout/Form";
-
 
 const data = [
   { id: "a", label: "Save" },
@@ -44,7 +31,7 @@ storiesOf("Templates|Detail Page/", module)
         return (
           <Panel
             header={
-              <MainPanelHeader title="19-0942231 123 Main St. Washington, DC 23820" menuData={data} />
+              <MainPanelHeader id="Detail_Header" title="19-0942231 123 Main St. Washington, DC 23820" menuData={data} />
             }
           >
             <Page>
@@ -56,7 +43,7 @@ storiesOf("Templates|Detail Page/", module)
                 <TabItem label="Files" />
               </Tabs>
               <PageSection>
-                <Legend data={options} />
+                <Legend id="Detail_Legend" data={options} />
               </PageSection>
 
             </Page>

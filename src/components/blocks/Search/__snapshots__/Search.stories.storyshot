@@ -3,7 +3,7 @@
 exports[` 1`] = `
 <section
   className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
-  id={null}
+  id="Search_Standard"
   rows={null}
 >
   <form
@@ -11,7 +11,9 @@ exports[` 1`] = `
   >
     <input
       className="Search__NewTextInput-sey9om-1 gIKvUj"
-      id="my-search-bar"
+      id="Search_Standard-search-bar"
+      onChange={[Function]}
+      onKeyPress={[Function]}
       placeholder="Search Location"
       type="search"
     />
@@ -21,7 +23,7 @@ exports[` 1`] = `
       htmlFor={null}
       id={null}
       name={null}
-      onClick={null}
+      onClick={[Function]}
       tabIndex="1"
       type="button"
     >
@@ -59,7 +61,7 @@ exports[` 1`] = `
 exports[` 2`] = `
 <section
   className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
-  id={null}
+  id="Search_Results"
   rows={null}
 >
   <form
@@ -67,7 +69,9 @@ exports[` 2`] = `
   >
     <input
       className="Search__NewTextInput-sey9om-1 gIKvUj"
-      id="my-search-bar"
+      id="Search_Results-search-bar"
+      onChange={[Function]}
+      onKeyPress={[Function]}
       placeholder="Search Location"
       type="search"
     />
@@ -77,7 +81,7 @@ exports[` 2`] = `
       htmlFor={null}
       id={null}
       name={null}
-      onClick={null}
+      onClick={[Function]}
       tabIndex="1"
       type="button"
     >
@@ -117,9 +121,8 @@ exports[` 2`] = `
     <div
       className="Container__BoxContainer-sc-1i4fzzd-1 ckdIcj"
       height=""
-      id="results-container"
+      id="Search_Results-results-container"
     >
-       
       <ul
         className="List__ListWrapper-sc-43f2zq-1 dtSHCa"
         id={null}
@@ -129,7 +132,6 @@ exports[` 2`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -140,24 +142,29 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                White House
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 CcLky"
-                fontSize="0.75em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                123 Malibu Drive, CA 92660
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  White House
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  123 Malibu Drive, CA 92660
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -166,7 +173,6 @@ exports[` 2`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -177,24 +183,29 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                Orange House
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 CcLky"
-                fontSize="0.75em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                1224 Malibu Drive, CA 92660
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Orange House
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  1224 Malibu Drive, CA 92660
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -203,7 +214,6 @@ exports[` 2`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -214,24 +224,29 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                Red House
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 CcLky"
-                fontSize="0.75em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                123 Malibu Drive, CA 92660
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Red House
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  123 Malibu Drive, CA 92660
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -240,7 +255,6 @@ exports[` 2`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -251,24 +265,29 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                Green House
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 CcLky"
-                fontSize="0.75em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                123 Malibu Drive, CA 92660
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Green House
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  123 Malibu Drive, CA 92660
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -277,7 +296,6 @@ exports[` 2`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -288,24 +306,29 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                Black House
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 CcLky"
-                fontSize="0.75em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                123 Malibu Drive, CA 92660
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Black House
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  123 Malibu Drive, CA 92660
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -314,7 +337,6 @@ exports[` 2`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -325,24 +347,29 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                Blue House
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 CcLky"
-                fontSize="0.75em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                123 Malibu Drive, CA 92660
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Blue House
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  123 Malibu Drive, CA 92660
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -351,7 +378,6 @@ exports[` 2`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -362,24 +388,29 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                Address
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 CcLky"
-                fontSize="0.75em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                123 Malibu Drive, CA 92660
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Address
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  123 Malibu Drive, CA 92660
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -388,7 +419,6 @@ exports[` 2`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -399,24 +429,29 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                APN
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 CcLky"
-                fontSize="0.75em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                123 Malibu Drive, CA 92660
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  APN
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  123 Malibu Drive, CA 92660
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -425,7 +460,6 @@ exports[` 2`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -436,24 +470,29 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                Owner
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 CcLky"
-                fontSize="0.75em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                123 Malibu Drive, CA 92660
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Owner
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  123 Malibu Drive, CA 92660
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -462,7 +501,6 @@ exports[` 2`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -473,24 +511,29 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                Address
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 CcLky"
-                fontSize="0.75em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                123 Malibu Drive, CA 92660
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Address
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  123 Malibu Drive, CA 92660
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -524,7 +567,7 @@ exports[` 2`] = `
 exports[` 3`] = `
 <section
   className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
-  id={null}
+  id="Search_Error"
   rows={null}
 >
   <form
@@ -532,7 +575,9 @@ exports[` 3`] = `
   >
     <input
       className="Search__NewTextInput-sey9om-1 gIKvUj"
-      id="my-search-bar"
+      id="Search_Error-search-bar"
+      onChange={[Function]}
+      onKeyPress={[Function]}
       placeholder="Search Location"
       type="search"
     />
@@ -542,7 +587,7 @@ exports[` 3`] = `
       htmlFor={null}
       id={null}
       name={null}
-      onClick={null}
+      onClick={[Function]}
       tabIndex="1"
       type="button"
     >
@@ -582,9 +627,8 @@ exports[` 3`] = `
     <div
       className="Container__BoxContainer-sc-1i4fzzd-1 ckdIcj"
       height=""
-      id="results-container"
+      id="Search_Error-results-container"
     >
-       
       <div
         className="Bar__BarLayout-icfo76-2 jEWtiX"
         id={null}
@@ -613,7 +657,6 @@ exports[` 3`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -624,24 +667,29 @@ exports[` 3`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                White House
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 CcLky"
-                fontSize="0.75em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                123 Malibu Drive, CA 92660
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  White House
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  123 Malibu Drive, CA 92660
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -650,7 +698,6 @@ exports[` 3`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -661,24 +708,29 @@ exports[` 3`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                Orange House
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 CcLky"
-                fontSize="0.75em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                1224 Malibu Drive, CA 92660
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Orange House
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  1224 Malibu Drive, CA 92660
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -687,7 +739,6 @@ exports[` 3`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -698,24 +749,29 @@ exports[` 3`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                Red House
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 CcLky"
-                fontSize="0.75em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                123 Malibu Drive, CA 92660
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Red House
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  123 Malibu Drive, CA 92660
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -724,7 +780,6 @@ exports[` 3`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -735,24 +790,29 @@ exports[` 3`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                Green House
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 CcLky"
-                fontSize="0.75em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                123 Malibu Drive, CA 92660
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Green House
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  123 Malibu Drive, CA 92660
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -761,7 +821,6 @@ exports[` 3`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -772,24 +831,29 @@ exports[` 3`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                Black House
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 CcLky"
-                fontSize="0.75em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                123 Malibu Drive, CA 92660
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Black House
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  123 Malibu Drive, CA 92660
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -798,7 +862,6 @@ exports[` 3`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -809,24 +872,29 @@ exports[` 3`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                Blue House
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 CcLky"
-                fontSize="0.75em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                123 Malibu Drive, CA 92660
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Blue House
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  123 Malibu Drive, CA 92660
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -835,7 +903,6 @@ exports[` 3`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -846,24 +913,29 @@ exports[` 3`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                Address
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 CcLky"
-                fontSize="0.75em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                123 Malibu Drive, CA 92660
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Address
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  123 Malibu Drive, CA 92660
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -872,7 +944,6 @@ exports[` 3`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -883,24 +954,29 @@ exports[` 3`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                APN
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 CcLky"
-                fontSize="0.75em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                123 Malibu Drive, CA 92660
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  APN
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  123 Malibu Drive, CA 92660
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -909,7 +985,6 @@ exports[` 3`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -920,24 +995,29 @@ exports[` 3`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                Owner
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 CcLky"
-                fontSize="0.75em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                123 Malibu Drive, CA 92660
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Owner
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  123 Malibu Drive, CA 92660
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -946,7 +1026,6 @@ exports[` 3`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -957,24 +1036,29 @@ exports[` 3`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                Address
-              </p>
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 CcLky"
-                fontSize="0.75em"
-                fontWeight={400}
-                id={null}
-                letterSpacing="0.2px"
-              >
-                123 Malibu Drive, CA 92660
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Address
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 CcLky"
+                  fontSize="0.75em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0.2px"
+                >
+                  123 Malibu Drive, CA 92660
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -1013,7 +1097,7 @@ exports[` 4`] = `
 >
   <section
     className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
-    id={null}
+    id="Search_Offline"
     rows={null}
   >
     <form
@@ -1021,7 +1105,9 @@ exports[` 4`] = `
     >
       <input
         className="Search__NewTextInput-sey9om-1 gIKvUj"
-        id="my-search-bar"
+        id="Search_Offline-search-bar"
+        onChange={[Function]}
+        onKeyPress={[Function]}
         placeholder="Search Location"
         type="search"
       />
@@ -1031,7 +1117,7 @@ exports[` 4`] = `
         htmlFor={null}
         id={null}
         name={null}
-        onClick={null}
+        onClick={[Function]}
         tabIndex="1"
         type="button"
       >
@@ -1071,9 +1157,8 @@ exports[` 4`] = `
       <div
         className="Container__BoxContainer-sc-1i4fzzd-1 ckdIcj"
         height=""
-        id="results-container"
+        id="Search_Offline-results-container"
       >
-         
         <div
           className="Bar__BarLayout-icfo76-2 jEWtiX"
           id={null}
@@ -1128,7 +1213,7 @@ exports[` 4`] = `
   </section>
   <section
     className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
-    id={null}
+    id="Search_BadConnection"
     rows={null}
   >
     <form
@@ -1136,7 +1221,9 @@ exports[` 4`] = `
     >
       <input
         className="Search__NewTextInput-sey9om-1 gIKvUj"
-        id="my-search-bar"
+        id="Search_BadConnection-search-bar"
+        onChange={[Function]}
+        onKeyPress={[Function]}
         placeholder="Search Location"
         type="search"
       />
@@ -1146,7 +1233,7 @@ exports[` 4`] = `
         htmlFor={null}
         id={null}
         name={null}
-        onClick={null}
+        onClick={[Function]}
         tabIndex="1"
         type="button"
       >
@@ -1186,9 +1273,8 @@ exports[` 4`] = `
       <div
         className="Container__BoxContainer-sc-1i4fzzd-1 ckdIcj"
         height=""
-        id="results-container"
+        id="Search_BadConnection-results-container"
       >
-         
         <div
           className="Bar__BarLayout-icfo76-2 jEWtiX"
           id={null}

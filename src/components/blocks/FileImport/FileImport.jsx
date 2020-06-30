@@ -1,12 +1,12 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable complexity */
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
 import Text from "base/Typography";
 import TextInput from "atoms/TextInput";
-
+import { getGuid } from "helpers";
 
 const NewInput = styled.input`
 display: none;
@@ -63,8 +63,9 @@ cursor: pointer;
 function FileImport({ id, onChange }) {
   const [state, setState] = useState();
 
+  const uId = useMemo(() => { return id || getGuid(); }, [id]);
   return (
-    <Grid columns="1fr 3fr" gap="xs" id={id}>
+    <Grid columns="1fr 3fr" gap="xs" id={uId}>
       <NewLabel>
         <Text weight="bold" size="lg" text="Browse File" />
         <NewInput
@@ -77,7 +78,7 @@ function FileImport({ id, onChange }) {
           }}
         />
       </NewLabel>
-      <TextInput id={`file-textinput-${id}`} placeholder={state} />
+      <TextInput id={`file-textinput-${uId}`} placeholder={state} />
     </Grid>
   );
 }

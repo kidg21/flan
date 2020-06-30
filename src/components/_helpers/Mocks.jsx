@@ -1,14 +1,11 @@
 /* eslint-disable linebreak-style */
 import React, { useState } from "react";
-import styled from "styled-components";
 import PropTypes from "prop-types";
-import Placeholder from "images/placeholders/placeholder-photo.png";
 import Grid from "layout/Grid";
 import Text, { Title, Link } from "base/Typography";
-import Icon from "atoms/Icon";
 import Card, { CardSection, CardGrid } from "elements/Card";
 import List, { ListSection, ListItem } from "blocks/List";
-import Tabs, { TabItem } from "blocks/Tabs";
+import Tabs from "blocks/Tabs";
 import Table from "blocks/Table";
 import Form, { FormSection } from "layout/Form";
 import TextInput from "atoms/TextInput";
@@ -34,7 +31,7 @@ function MockMap({ withTools, ...props }) {
         isOverlay
         A={{
           id: "A",
-          content: <SearchBar placeholder="Search Location" />,
+          content: <SearchBar id="Map_E3" placeholder="Search Location" />,
         }}
         B={{
           id: "B",
@@ -89,7 +86,7 @@ MockPalette.defaultProps = {
 
 function MockHeader() {
   return (
-    <Card>
+    <Card id="Card_Header">
       <CardSection padding="" variant="">
         <Title size="xl" text="This Is A Title" weight="bold" />
         <Text text="The Description Goes Here" />
@@ -106,10 +103,10 @@ MockHeader.defaultProps = {
 
 function MockFooter() {
   return (
-    <Card isInverse>
+    <Card id="Card_Footer" isInverse>
       <CardSection>
         <Grid columns="auto 1fr">
-          <Link text="1" onClick />
+          <Link text="1" onClick={() => {}} />
           <Text text="Footer Content Goes Here" />
         </Grid>
       </CardSection>
@@ -248,6 +245,7 @@ const tableData = [
 function MockTable() {
   return (
     <Table
+      id="MockTable"
       headers={tableHeaders.slice(1)}
       rows={tableData}
       listId="Table"
@@ -336,11 +334,11 @@ function MockCardGrid({ ...props }) {
   return (
     // <CardGrid data={data} {...props} />
     <CardGrid {...props}>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      <Card id="MockCard_1" />
+      <Card id="MockCard_2" />
+      <Card id="MockCard_3" />
+      <Card id="MockCard_4" />
+      <Card id="MockCard_5" />
     </CardGrid>
   );
 }
@@ -506,6 +504,7 @@ const panelHeader = (
     left={{
       content: (
         <Menu
+          id="MockDetails-Menu"
           data={menuData}
           position="bottomRight"
         />
@@ -530,6 +529,7 @@ const panelHeader = (
 
 const infoCard = (
   <Card
+    id="MockDetails-Info"
     media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" // Image
     mediaDesc="Media Description"
     title="Best Place Ever"

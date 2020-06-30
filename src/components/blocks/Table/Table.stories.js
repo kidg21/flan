@@ -460,6 +460,7 @@ storiesOf("Data Display|Table", module)
           Menu,
           {
             data: menu,
+            id: `Menu_Row_${i}`,
             // onClick: e => {
             //   e.stopPropagation();
             //   alert(`data entry edit ${i} clicked`);

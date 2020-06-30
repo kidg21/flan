@@ -19,7 +19,7 @@ import Menu from "blocks/Menu";
   <Story name="Standard">
   <Grid columns="3">
   <div/>
-  <Card>
+  <Card id="Menu_Standard_Card">
   <Bar padding="2x" 
   left = {<Title size="xl" weight="bold" text="Malibu, CA"/>}
   right={
@@ -74,34 +74,36 @@ Menus display lists of related options (which can be grouped together) as well a
   <Story name="Types">
    <Grid columns="3" gap="3xl">
    <div/>
- <Card>
+ <Card id="Menu_Icon_Card">
   <Bar padding="2x" 
   left = {<Title size="xl" weight="bold" text="Malibu, CA"/>}
   right={
-     <Menu  visible 
-     data={[
-  {
-    label: "Save",
-    icon: "save",
-    id: "save",
-  },
-  {
-    label: "Filter",
-    icon: "filter",
-    id: "filter",
-  },
-  {
-    label: "Share",
-    icon: "share",
-    id: "share",
-  },
-  {
-    label: "Delete",
-    icon: "delete",
-    id: "delete",
-  },
-]}
- position="bottomLeft" />}
+     <Menu
+      visible
+      id="Menu_Icon"
+      data={[
+        {
+          label: "Save",
+          icon: "save",
+          id: "save",
+        },
+        {
+          label: "Filter",
+          icon: "filter",
+          id: "filter",
+        },
+        {
+          label: "Share",
+          icon: "share",
+          id: "share",
+        },
+        {
+          label: "Delete",
+          icon: "delete",
+          id: "delete",
+        },
+      ]}
+      position="bottomLeft" />}
  />
  <Bar padding="2x" 
  left={
@@ -122,30 +124,32 @@ Menus should be positioned relative to the edge of the screen or browser. They t
 <Preview>
   <Story name="Position">
    <Grid columns="3" gap="3xl">
-           <Card>
+  <Card id="Menu_Position_BottomLeft_Card">
   <Bar padding="2x" 
   left = {<Title size="xl" weight="bold" text="Malibu, CA"/>}
   right={
-     <Menu  visible 
-     data={[
-  {
-    label: "Save",
-    id: "save"
-  },
-  {
-    label: "Filter",
-    id: "filter"
-  },
-  {
-    label: "Share",
-    id: "share"
-  },
-  {
-    label: "Delete",
-    id: "delete"
-  },
-]}
- position="bottomLeft" />}
+     <Menu
+      visible
+      id="Menu_Position_BottomLeft"
+      data={[
+        {
+          label: "Save",
+          id: "save"
+        },
+        {
+          label: "Filter",
+          id: "filter"
+        },
+        {
+          label: "Share",
+          id: "share"
+        },
+        {
+          label: "Delete",
+          id: "delete"
+        },
+      ]}
+      position="bottomLeft" />}
  />
  <Bar padding="2x" 
  left={
@@ -154,30 +158,32 @@ Menus should be positioned relative to the edge of the screen or browser. They t
    />
    } />
  </Card>
-        <Card>
+  <Card id="Menu_Position_BottomRight_Card">
   <Bar padding="2x" 
   right = {<Title size="xl" weight="bold" text="Malibu, CA"/>}
   left={
-     <Menu  visible 
-     data={[
-  {
-    label: "Save",
-    id: "save",
-  },
-  {
-    label: "Filter",
-    id: "filter",
-  },
-  {
-    label: "Share",
-    id: "share",
-  },
-  {
-    label: "Delete",
-    id: "delete",
-  },
-]}
- position="bottomRight" />}
+     <Menu
+      visible
+      id="Menu_Position_BottomRight"
+      data={[
+        {
+          label: "Save",
+          id: "save",
+        },
+        {
+          label: "Filter",
+          id: "filter",
+        },
+        {
+          label: "Share",
+          id: "share",
+        },
+        {
+          label: "Delete",
+          id: "delete",
+        },
+      ]}
+      position="bottomRight" />}
  />
  <Bar padding="2x" 
  left={
@@ -186,7 +192,7 @@ Menus should be positioned relative to the edge of the screen or browser. They t
    />
    } />
  </Card>
- <Card>
+ <Card id="Menu_Position_TopLeft_Card">
  <Bar padding="2x" 
  left={
    <Text size="lg" 
@@ -196,26 +202,28 @@ Menus should be positioned relative to the edge of the screen or browser. They t
    <Bar padding="2x" 
   left = {<Title size="xl" weight="bold" text="Malibu, CA"/>}
   right={
-     <Menu  visible 
-     data={[
-  {
-    label: "Save",
-    id: "save",
-  },
-  {
-    label: "Filter",
-    id: "filter"
-  },
-  {
-    label: "Share",
-    id: "share"
-  },
-  {
-    label: "Delete",
-    id: "delete",
-  },
-]}
- position="topLeft" />}
+     <Menu
+      visible
+      id="Menu_Position_TopLeft"
+      data={[
+        {
+          label: "Save",
+          id: "save",
+        },
+        {
+          label: "Filter",
+          id: "filter"
+        },
+        {
+          label: "Share",
+          id: "share"
+        },
+        {
+          label: "Delete",
+          id: "delete",
+        },
+      ]}
+      position="topLeft" />}
  />
  </Card>
       </Grid>

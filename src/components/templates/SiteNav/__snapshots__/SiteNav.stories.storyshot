@@ -129,7 +129,6 @@ exports[` 1`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -140,15 +139,20 @@ exports[` 1`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                &lt; Jobs
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  &lt; Jobs
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -157,7 +161,6 @@ exports[` 1`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -168,15 +171,20 @@ exports[` 1`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                Job Details
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Job Details
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -185,7 +193,6 @@ exports[` 1`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -196,15 +203,20 @@ exports[` 1`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                Site Verification
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Site Verification
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -213,7 +225,6 @@ exports[` 1`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -224,15 +235,20 @@ exports[` 1`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                Data Checklist
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Data Checklist
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -241,7 +257,6 @@ exports[` 1`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -252,15 +267,20 @@ exports[` 1`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                Schedule Visit
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Schedule Visit
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -269,7 +289,6 @@ exports[` 1`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -280,15 +299,20 @@ exports[` 1`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                Report
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Report
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -297,7 +321,6 @@ exports[` 1`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -308,15 +331,20 @@ exports[` 1`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                ReviewSend
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  ReviewSend
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -346,7 +374,7 @@ exports[` 1`] = `
           >
             <div
               className="Bar__BarLayout-icfo76-2 eIFIfS"
-              id={null}
+              id="storyshots_62"
               onClick={null}
             >
               <div
@@ -444,20 +472,20 @@ exports[` 1`] = `
             </button>
           </section>
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 gDrraz"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 jNRHWG"
             id={null}
             rows={null}
           >
             <div
-              className="Card__CardWrapper-sc-1g3s676-3 OPcsO"
+              className="Card__CardWrapper-sc-1g3s676-3 klTivC"
               href={null}
-              id={null}
+              id="storyshots_63"
               media={null}
               onClick={true}
             >
               <section
                 className="Card__CardSectionWrapper-sc-1g3s676-1 hGyZDa"
-                id={null}
+                id="storyshots_63-Body"
                 onClick={true}
               >
                 <p
@@ -513,7 +541,7 @@ exports[` 1`] = `
               </section>
               <section
                 className="Card__CardSectionWrapper-sc-1g3s676-1 iEJhOk"
-                id={null}
+                id="storyshots_63-Footer"
                 onClick={null}
               >
                 <div
@@ -546,15 +574,15 @@ exports[` 1`] = `
               </section>
             </div>
             <div
-              className="Card__CardWrapper-sc-1g3s676-3 OPcsO"
+              className="Card__CardWrapper-sc-1g3s676-3 klTivC"
               href={null}
-              id={null}
+              id="storyshots_64"
               media={null}
               onClick={true}
             >
               <section
                 className="Card__CardSectionWrapper-sc-1g3s676-1 hGyZDa"
-                id={null}
+                id="storyshots_64-Body"
                 onClick={true}
               >
                 <p
@@ -610,7 +638,7 @@ exports[` 1`] = `
               </section>
               <section
                 className="Card__CardSectionWrapper-sc-1g3s676-1 iEJhOk"
-                id={null}
+                id="storyshots_64-Footer"
                 onClick={null}
               >
                 <div
@@ -643,15 +671,15 @@ exports[` 1`] = `
               </section>
             </div>
             <div
-              className="Card__CardWrapper-sc-1g3s676-3 OPcsO"
+              className="Card__CardWrapper-sc-1g3s676-3 klTivC"
               href={null}
-              id={null}
+              id="storyshots_65"
               media={null}
               onClick={true}
             >
               <section
                 className="Card__CardSectionWrapper-sc-1g3s676-1 hGyZDa"
-                id={null}
+                id="storyshots_65-Body"
                 onClick={true}
               >
                 <p
@@ -707,7 +735,7 @@ exports[` 1`] = `
               </section>
               <section
                 className="Card__CardSectionWrapper-sc-1g3s676-1 iEJhOk"
-                id={null}
+                id="storyshots_65-Footer"
                 onClick={null}
               >
                 <div
@@ -740,15 +768,15 @@ exports[` 1`] = `
               </section>
             </div>
             <div
-              className="Card__CardWrapper-sc-1g3s676-3 OPcsO"
+              className="Card__CardWrapper-sc-1g3s676-3 klTivC"
               href={null}
-              id={null}
+              id="storyshots_66"
               media={null}
               onClick={true}
             >
               <section
                 className="Card__CardSectionWrapper-sc-1g3s676-1 hGyZDa"
-                id={null}
+                id="storyshots_66-Body"
                 onClick={true}
               >
                 <p
@@ -804,7 +832,7 @@ exports[` 1`] = `
               </section>
               <section
                 className="Card__CardSectionWrapper-sc-1g3s676-1 iEJhOk"
-                id={null}
+                id="storyshots_66-Footer"
                 onClick={null}
               >
                 <div
@@ -973,7 +1001,6 @@ exports[` 2`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -984,15 +1011,20 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                &lt; Jobs
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  &lt; Jobs
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -1001,7 +1033,6 @@ exports[` 2`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -1012,15 +1043,20 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                Job Details
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Job Details
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -1029,7 +1065,6 @@ exports[` 2`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -1040,15 +1075,20 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                Site Verification
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Site Verification
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -1057,7 +1097,6 @@ exports[` 2`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -1068,15 +1107,20 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                Data Checklist
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Data Checklist
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -1085,7 +1129,6 @@ exports[` 2`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -1096,15 +1139,20 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                Schedule Visit
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Schedule Visit
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -1113,7 +1161,6 @@ exports[` 2`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -1124,15 +1171,20 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                Report
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Report
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -1141,7 +1193,6 @@ exports[` 2`] = `
           disabled={false}
           href={null}
           id={null}
-          onClick={null}
           tabIndex="0"
         >
           <div
@@ -1152,15 +1203,20 @@ exports[` 2`] = `
             <div
               className="Bar__Slot-icfo76-1 RjiBe"
             >
-              <p
-                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
-                fontSize="1em"
-                fontWeight={600}
-                id={null}
-                letterSpacing="0px"
+              <a
+                className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                onClick={[Function]}
               >
-                ReviewSend
-              </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  fontSize="1em"
+                  fontWeight={600}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  ReviewSend
+                </p>
+              </a>
             </div>
           </div>
         </li>
@@ -1190,7 +1246,7 @@ exports[` 2`] = `
           >
             <div
               className="Bar__BarLayout-icfo76-2 eIFIfS"
-              id={null}
+              id="storyshots_67"
               onClick={null}
             >
               <div
@@ -1231,7 +1287,7 @@ exports[` 2`] = `
         >
           <div
             className="Bar__BarLayout-icfo76-2 eIFIfS"
-            id={null}
+            id="storyshots_68"
             onClick={null}
           >
             <div
@@ -1275,6 +1331,7 @@ exports[` 2`] = `
             >
               <a
                 className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
+                id="storyshots_68-Menu"
                 onClick={[Function]}
               >
                 <svg
@@ -1307,11 +1364,11 @@ exports[` 2`] = `
         >
           <div
             className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
-            id={null}
+            id="storyshots_69"
           >
             <table
               className="Legend__TableContainer-sc-70hm4b-2 cVdgHu"
-              id={null}
+              id="storyshots_69-table"
             >
               <tr
                 className="Legend__Row-sc-70hm4b-4 kKuGtn"

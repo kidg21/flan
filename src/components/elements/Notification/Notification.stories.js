@@ -19,7 +19,6 @@ export default {
 export const Actions = () => {
   const [visible, setVisible] = useState(false);
   const [transition, setTransition] = useState(true);
-  // eslint-disable-next-line no-unused-vars
   const handleOpen = (/* event */) => {
     setVisible(true);
     setTransition(true);
@@ -37,19 +36,19 @@ export const Actions = () => {
     }, 500);
   };
   return (
-  <Fragment>
-    <Notification
-      visible={visible}
-      onClose={handleClose}
-      position={transition}
-    >
-      <Banner
-        title="This is a Standard notification."
+    <Fragment>
+      <Notification
+        visible={visible}
         onClose={handleClose}
-      />
-    </Notification>
-    <Button label="Show Notification" onClick={handleOpen} />
-  </Fragment>);
+        position={transition}
+      >
+        <Banner
+          title="This is a Standard notification."
+          onClose={handleClose}
+        />
+      </Notification>
+      <Button label="Show Notification" onClick={handleOpen} />
+    </Fragment>);
 };
 Actions.story = {
   parameters: {

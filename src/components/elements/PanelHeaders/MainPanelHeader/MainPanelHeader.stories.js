@@ -17,5 +17,5 @@ const data = [
 storiesOf("Templates|Headers/", module)
   .addDecorator(Padding)
   .add("Main", () => {
-    return <MainPanelHeader title="Main Header" menuData={data} />;
+    return <MainPanelHeader id="Header_Main" title="Main Header" menuData={data} />;
   });
