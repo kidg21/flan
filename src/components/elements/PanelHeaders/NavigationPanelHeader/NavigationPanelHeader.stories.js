@@ -19,6 +19,7 @@ storiesOf("Templates|Headers/", module)
   .add("Navigation", () => {
     return (
       <NavigationPanelHeader
+        id="Navigation_Main"
         title="Main Header"
         menuData={data}
         onClick={() => { }}

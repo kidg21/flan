@@ -17,6 +17,7 @@ storiesOf("Templates|Headers/", module)
   .add("Property", () => {
     return (
       <PropertyPanelHeader
+        id="Property_Header"
         title="5201 California Ave, Irvine, CA 92614"
         menuData={data}
         onClick={() => { }}

@@ -248,7 +248,7 @@ storiesOf("Templates|Panels/", module)
         const recordAttachments = (
           <Page>
             <PageSection>
-              <Legend title="Attached Documents" data={attachments} />
+              <Legend id="AttachDocs_Legend" title="Attached Documents" data={attachments} />
             </PageSection>
           </Page>
         );
@@ -299,6 +299,7 @@ storiesOf("Templates|Panels/", module)
                           right={{
                             content: (
                               <Menu
+                                id="Menu_1_Actions"
                                 data={[
                                   { id: "a", label: "Action" },
                                   { id: "c", label: "Action" },
@@ -315,7 +316,7 @@ storiesOf("Templates|Panels/", module)
                     }
                     footer={
                       footerSection ?
-                        <Card>
+                        <Card id="Menu_1_Footer">
                           <CardSection>
                             <ButtonGroup columns="1">
                               <Button label="Add Files" isSolid />
@@ -332,12 +333,13 @@ storiesOf("Templates|Panels/", module)
                     offcanvas={menu2}
                     header={
                       <Card
+                        id="Menu_2_Header"
                         title="Record 1"
                         description="Record Description Goes Here"
                       />
                     }
                     footer={
-                      <Card>
+                      <Card id="Menu_2_Footer">
                         <CardSection>
                           <ButtonGroup columns="2">
                             <Button label="Cancel" onClick={showMenu1} />

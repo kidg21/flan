@@ -373,15 +373,15 @@ exports[` 5`] = `
           id="List Panel_header"
         >
           <div
-            className="Card__CardWrapper-sc-1g3s676-3 cySNiR"
+            className="Card__CardWrapper-sc-1g3s676-3 elzLSR"
             href={null}
-            id={null}
+            id="LeftPanelHeader"
             media={null}
             onClick={null}
           >
             <div
               className="Bar__BarLayout-icfo76-2 eIFIfS"
-              id={null}
+              id="ListHeader"
               onClick={null}
             >
               <div
@@ -401,6 +401,7 @@ exports[` 5`] = `
               >
                 <a
                   className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
+                  id="ListHeader-Menu"
                   onClick={[Function]}
                 >
                   <svg
@@ -944,15 +945,15 @@ exports[` 5`] = `
           id="Info Panel_header"
         >
           <div
-            className="Card__CardWrapper-sc-1g3s676-3 cySNiR"
+            className="Card__CardWrapper-sc-1g3s676-3 elzLSR"
             href={null}
-            id={null}
+            id="RecordSummaryCard"
             media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
             onClick={null}
           >
             <section
               className="Media__MediaContainer-sc-1ofqnpx-0 deYKND Card__CardMedia-sc-1g3s676-2 eIeMkT"
-              id={null}
+              id="RecordSummaryCard-Media"
               onClick={null}
             >
               <img
@@ -966,7 +967,7 @@ exports[` 5`] = `
             </section>
             <section
               className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
-              id={null}
+              id="RecordSummaryCard-Header"
               onClick={null}
             >
               <div
@@ -1339,15 +1340,15 @@ exports[` 6`] = `
           id="List Panel_header"
         >
           <div
-            className="Card__CardWrapper-sc-1g3s676-3 cySNiR"
+            className="Card__CardWrapper-sc-1g3s676-3 elzLSR"
             href={null}
-            id={null}
+            id="LeftPanelHeader"
             media={null}
             onClick={null}
           >
             <div
               className="Bar__BarLayout-icfo76-2 eIFIfS"
-              id={null}
+              id="ListHeader"
               onClick={null}
             >
               <div
@@ -1367,6 +1368,7 @@ exports[` 6`] = `
               >
                 <a
                   className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
+                  id="ListHeader-Menu"
                   onClick={[Function]}
                 >
                   <svg
@@ -1910,15 +1912,15 @@ exports[` 6`] = `
           id="Info Panel_header"
         >
           <div
-            className="Card__CardWrapper-sc-1g3s676-3 cySNiR"
+            className="Card__CardWrapper-sc-1g3s676-3 elzLSR"
             href={null}
-            id={null}
+            id="RecordSummaryCard"
             media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
             onClick={null}
           >
             <section
               className="Media__MediaContainer-sc-1ofqnpx-0 deYKND Card__CardMedia-sc-1g3s676-2 eIeMkT"
-              id={null}
+              id="RecordSummaryCard-Media"
               onClick={null}
             >
               <img
@@ -1932,7 +1934,7 @@ exports[` 6`] = `
             </section>
             <section
               className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
-              id={null}
+              id="RecordSummaryCard-Header"
               onClick={null}
             >
               <div

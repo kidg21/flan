@@ -1,11 +1,15 @@
 /* eslint-disable linebreak-style */
 import React, {
-  Fragment, useState, useEffect, useCallback,
+  Fragment,
+  useState,
+  useEffect,
+  useCallback,
+  useMemo,
 } from "react";
 import GlobalStyles from "GlobalStyles";
 import styled, { keyframes, ThemeProvider } from "styled-components";
 import { DMPTheme, screen } from "Variables";
-import { PlaceholderText } from "helpers";
+import { PlaceholderText, getGuid } from "helpers";
 import PropTypes from "prop-types";
 import Icon from "atoms/Icon";
 import Card from "elements/Card";
@@ -188,6 +192,7 @@ function Modal({
   let modalContent;
   let justifyContent;
   const pointerEvents = hasBackdrop ? "auto" : "none";
+  const uId = useMemo(() => { return id || getGuid(); }, [id]);
 
   if (text && !media) {
     modalContent = (
@@ -251,7 +256,7 @@ function Modal({
   const endAnimation = useCallback((e) => {
     // if hasBackdrop, the ModalBG animation bubbles up
     // causing 2 onAnimationEnd events to fire
-    if (e.target.id === id) {
+    if (e.target.id === uId) {
       // animation completed, update internal visible state
       setState((oldState) => {
         return {
@@ -266,7 +271,7 @@ function Modal({
   const startAnimation = useCallback((e) => {
     // if hasBackdrop, the ModalBG animation bubbles up
     // causing 2 onAnimationEnd events to fire
-    if (e.target.id === id) {
+    if (e.target.id === uId) {
       if (onAnimationStart) onAnimationStart(e);
     }
   }, [onAnimationStart]);
@@ -281,7 +286,7 @@ function Modal({
           animationDuration={animationDuration}
           aria-describedby={ariaDescribedBy}
           aria-labelledby={ariaLabelledBy}
-          id={id}
+          id={uId}
           hasBackdrop={hasBackdrop}
           justifyContent={justifyContent}
           pointerEvents={pointerEvents}
@@ -291,7 +296,7 @@ function Modal({
         >
           {hasBackdrop ? (
             <ModalBG
-              id={`modal-bg-${id}`}
+              id={`modal-bg-${uId}`}
               action={state.action}
               animationDuration={animationDuration}
               onClick={onClose}

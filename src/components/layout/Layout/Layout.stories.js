@@ -4,18 +4,13 @@ import React, { useState } from "react";
 import Panel from "layout/Panel";
 import Table from "blocks/Table";
 import List, { ListItem } from "blocks/List";
-import Icon from "atoms/Icon";
-import Search from "blocks/Search";
-import IconBlock from "blocks/IconBlock";
 import Text, { Title } from "base/Typography";
-import Avatar from "atoms/Avatar";
 import Command from "atoms/Command";
 import Bar from "layout/Bar";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
 import Card from "elements/Card";
 import Layout from "layout/Layout";
 import Page, { PageSection } from "layout/Page";
-import LightBoxIcon from "images/LightBoxIconLogo.png";
 // const LightBoxIcon = "static/media/LightBoxIconLogo.64993202.png";
 
 const map = (
@@ -31,8 +26,8 @@ const menuData = [
 ];
 
 const panelHeader = (
-  <Card shadow="0">
-    <MainPanelHeader title="Menu Header" menuData={menuData} />
+  <Card id="LeftPanelHeader" shadow="0">
+    <MainPanelHeader id="ListHeader" title="Menu Header" menuData={menuData} />
   </Card>
 );
 
@@ -52,6 +47,7 @@ const listPanel = (
 
 const infoCard = (
   <Card
+    id="RecordSummaryCard"
     media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" // Image
     mediaDesc="Media Description"
     title="Best Place Ever"

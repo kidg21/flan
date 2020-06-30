@@ -21,7 +21,7 @@ storiesOf("Layout|Modal", module)
         };
         return (
           <React.Fragment>
-            <Modal onClose={handleClose} visible={visible}>
+            <Modal id="Modal_Standard" onClose={handleClose} visible={visible}>
               <Banner
                 title="This is a Standard notification telling you stuff."
                 onClose={handleClose}
@@ -51,6 +51,7 @@ storiesOf("Utilities|Modal", module)
       return (
         <React.Fragment>
           <Modal
+            id="Modal_Knobs"
             text={text(
               "Text",
               "This is a very special message just for you...",
@@ -99,7 +100,7 @@ storiesOf("Utilities|Modal", module)
       };
       return (
         <React.Fragment>
-          <Modal onClose={handleClose} visible={visible}>
+          <Modal id="Modal_Dialog" onClose={handleClose} visible={visible}>
             <DialogBox
               title="Default Dialog"
               body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -138,6 +139,7 @@ storiesOf("Utilities|Modal", module)
       return (
         <React.Fragment>
           <Modal
+            id="Modal_Text"
             align="top"
             text="This is a very special message just for you..."
             onClose={handleClose}
@@ -166,6 +168,7 @@ storiesOf("Utilities|Modal", module)
       return (
         <React.Fragment>
           <Modal
+            id="Modal_Image"
             media={ModernExterior1}
             onClick={handleOnClick}
             onClose={handleClose}

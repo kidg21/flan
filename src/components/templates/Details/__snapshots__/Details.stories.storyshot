@@ -11,7 +11,7 @@ exports[` 1`] = `
   >
     <div
       className="Bar__BarLayout-icfo76-2 eIFIfS"
-      id={null}
+      id="Detail_Header"
       onClick={null}
     >
       <div
@@ -31,6 +31,7 @@ exports[` 1`] = `
       >
         <a
           className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
+          id="Detail_Header-Menu"
           onClick={[Function]}
         >
           <svg
@@ -209,11 +210,11 @@ exports[` 1`] = `
       >
         <div
           className="Legend__Wrapper-sc-70hm4b-1 dZpfgu"
-          id={null}
+          id="Detail_Legend"
         >
           <table
             className="Legend__TableContainer-sc-70hm4b-2 cVdgHu"
-            id={null}
+            id="Detail_Legend-table"
           >
             <tr
               className="Legend__Row-sc-70hm4b-4 kKuGtn"
