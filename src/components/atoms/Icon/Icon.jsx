@@ -1,3 +1,4 @@
+/* eslint-disable complexity */
 /* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
@@ -9,10 +10,12 @@ import Badge from "atoms/Badge";
 
 
 const LinkedIcon = styled.a`
+  color: ${(props) => { return props.theme.text.link; }};
+  width: max-content;
   cursor: ${(props) => {
     if (props.disabled) {
       return "not-allowed";
-    } else if (props.onClick) {
+    } else if (props.onClick || props.href) {
       return "pointer";
     }
     return "";
@@ -32,19 +35,14 @@ const LinkedIcon = styled.a`
 `;
 
 const StyledIcon = styled(FontAwesomeIcon)`
- position: relative;
+  position: relative;
+  font-size: ${(props) => {
+    return props.fontSize || "";
+  }};
   color: ${(props) => {
     return props.theme.palette[props.color] || "";
   }};
-  border: ${(props) => {
-    return props.border ? "2px solid" : "";
-  }};
-  border-color: ${(props) => {
-    return props.theme.palette[props.border] || "";
-  }};
-  border-radius: ${(props) => {
-    return props.border ? "5px" : "";
-  }};
+  vertical-align: middle;
   transition: all 0.25s ease-in-out;
 `;
 
@@ -74,6 +72,7 @@ const iconHash = {
   analytics: ["far", "chart-bar"],
   apn: ["far", "hashtag"],
   attach: ["far", "paperclip"],
+  book: "book",
   bookmark_solid: "bookmark",
   bookmark: ["far", "bookmark"],
   calendar: ["far", "calendar-alt"],
@@ -96,6 +95,7 @@ const iconHash = {
   contact: "address-card",
   contacts: ["far", "address-book"],
   copy: ["far", "copy"],
+  database: "database",
   delete: ["far", "trash-alt"],
   directions: ["far", "directions"],
   download: ["far", "arrow-to-bottom"],
@@ -186,16 +186,41 @@ const colorHash = {
   success: "success80",
   warning: "warning80",
   alert: "alert80",
+  inverse: "neutral20",
+};
+
+const sizeHash = {
+  "xs": {
+    font: "0.75em",
+  },
+  "sm": {
+    font: "0.875em",
+  },
+  "lg": {
+    font: "1.35em",
+  },
+  "xl": {
+    font: "1.5em",
+  },
+  "2xl": {
+    font: "1.75em",
+  },
+  "3xl": {
+    font: "2em",
+  },
+  "4xl": {
+    font: "2.5em",
+  },
 };
 
 function Icon({
-  border,
-  className,
-  disabled,
   badge,
   brand,
+  className,
+  disabled,
   fixedWidth,
   flip,
+  href,
   icon,
   id,
   onClick,
@@ -203,23 +228,24 @@ function Icon({
   rotation,
   size,
   spin,
-  title,
-  type,
+  variant,
 }) {
   const iconValue = iconHash[icon.toLowerCase()] || ["far", icon.toLowerCase()];
-  let color = type ? colorHash[type.toLowerCase()] : null;
+  let color = variant ? colorHash[variant.toLowerCase()] : null;
+  const selectedSize = size && sizeHash[size.toLowerCase()];
+  const fontSize = selectedSize ? selectedSize.font : "inherit";
   let content;
 
   const isDisabled =
     typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) color = "disabled";
-  else if (onClick) color = "link";
+  else if (onClick || href) color = "link";
 
   // FontAwesomeIcon only allows values of 90, 180, or 270
   let _rotation = typeof rotation === "number" ? Math.round(rotation / 90) % 4 : null;
   _rotation = _rotation > 0 ? _rotation * 90 : null;
 
-  if (!type) {
+  if (!variant) {
     if (brand === "research") {
       color = "research";
     } if (brand === "bi") {
@@ -236,24 +262,21 @@ function Icon({
       color = "brand3";
     } if (brand === "brand4") {
       color = "brand4";
-    } else { null; }
+    }
   }
-
 
   const styledIcon = (
     <StyledIcon
-      border={border}
       className={className}
       color={color}
       fixedWidth={fixedWidth}
       flip={flip}
+      fontSize={fontSize}
       icon={iconValue}
       id={id}
       pulse={pulse}
       rotation={_rotation}
-      size={size}
       spin={spin}
-      title={title}
     />
   );
 
@@ -262,14 +285,14 @@ function Icon({
       content = (
         <IconWrapper>
           {styledIcon}
-          <Badge type={badge} />
+          <Badge variant={badge} />
         </IconWrapper>
       );
     } else {
       content = (
         <IconWrapper>
           {styledIcon}
-          <Badge type="alert" />
+          <Badge variant="alert" />
         </IconWrapper>
       );
     }
@@ -279,9 +302,9 @@ function Icon({
     );
   }
 
-  if (onClick) {
+  if (onClick || href) {
     content = (
-      <LinkedIcon onClick={onClick} disabled={disabled}>
+      <LinkedIcon onClick={onClick} href={href} disabled={disabled}>
         {content}
       </LinkedIcon>
     );
@@ -295,20 +318,19 @@ function Icon({
 }
 
 Icon.propTypes = {
-  border: PropTypes.bool,
-  href: PropTypes.string,
-  /** className used for extending styles */
-  className: PropTypes.string,
   /** Options: 'info', 'success', 'warning', 'alert' */
   badge: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
-  disabled: PropTypes.bool,
   brand: PropTypes.string,
+  /** className used for extending styles */
+  className: PropTypes.string,
+  disabled: PropTypes.bool,
   /** Used to set one or more icons to the same fixed width.
     * Good for vertically aligning a series of icons
     */
   fixedWidth: PropTypes.bool,
   /** Options: 'horizontal', 'vertical', 'both' */
   flip: PropTypes.string,
+  href: PropTypes.string,
   /** Enter the name of the icon as the prop value. (ex. icon='circle' */
   icon: PropTypes.string,
   id: PropTypes.string,
@@ -318,24 +340,22 @@ Icon.propTypes = {
   /** Options: '90', '180', '270' */
   rotation: PropTypes.number,
   /** Icons inherit the 'font-size' of the parent container and are relatively sized.
-   * Options: 'xs', 'sm', 'lg', '2x', '3x', '4x', '5x', '6x', '7x', '8x', '9x', '10x'
+   * Options: 'xs', 'sm', 'lg', 'xl', '2xl', '3xl', '4xl'
    */
   size: PropTypes.string,
   /** Smooth rotation */
   spin: PropTypes.bool,
-  title: PropTypes.string,
-  type: PropTypes.string,
+  variant: PropTypes.string,
 };
 
 Icon.defaultProps = {
-  border: false,
-  href: null,
-  className: null,
   badge: false,
+  brand: null,
+  className: null,
   disabled: null,
   fixedWidth: false,
   flip: null,
-  brand: null,
+  href: null,
   icon: null,
   id: null,
   onClick: null,
@@ -343,8 +363,7 @@ Icon.defaultProps = {
   rotation: null,
   size: null,
   spin: false,
-  title: null,
-  type: null,
+  variant: null,
 };
 
 export default Icon;

@@ -9,7 +9,7 @@ import Button, { ButtonGroup } from "atoms/Button";
 
 # Button
 
-### Buttons allow users to take actions, and make choices, with a single tap.
+#### Buttons allow users to take actions, and make choices, with a single tap.
 
 <Preview withToolbar>
   <Story name="Standard">
@@ -42,40 +42,52 @@ Buttons communicate actions that users can take. They are typically placed throu
 
 <Preview>
   <Story name="Style">
-    <ButtonGroup>
+    <ButtonGroup columns="2">
       <Button label="Standard" />
       <Button label="Disabled" disabled />
-      <Button label="Solid" solid />
-      <Button label="Disabled" solid disabled />
-      <Button label="Round" round />
-      <Button label="Disabled" round disabled />
-      <Button label="Solid Round" solid round />
-      <Button label="Disabled" solid round disabled />
-      <Button label="Underlined" underlined />
-      <Button label="Disabled" underlined disabled />
-      <Button label="Plain" plain />
-      <Button label="Disabled" plain disabled />
-      <Button label="Bookmark" icon="bookmark" plain />
-      <Button label="Disabled" icon="bookmark" plain disabled />
+      <Button label="Solid" isSolid />
+      <Button label="Disabled" isSolid disabled />
+      <Button label="Round" isRound />
+      <Button label="Disabled" isRound disabled />
+      <Button label="Solid Round" isSolid isRound />
+      <Button label="Disabled" isSolid isRound disabled />
+      <Button label="Underlined" hasUnderline />
+      <Button label="Disabled" hasUnderline disabled />
+      <Button label="Plain" isPlain />
+      <Button label="Disabled" isPlain disabled />
+      <Button label="Bookmark" icon="bookmark" isPlain />
+      <Button label="Disabled" icon="bookmark" isPlain disabled />
     </ButtonGroup>
   </Story>
 </Preview>
 
-### Type
+### Types
 
 <Preview>
-  <Story name="Type">
+  <Story name="Types">
+    <ButtonGroup columns="3">
+      <Button label="Button" type="button" />
+      <Button label="Reset" type="reset" />
+      <Button label="Submit" type="submit" />
+    </ButtonGroup>
+  </Story>
+</Preview>
+
+### Variants
+
+<Preview>
+  <Story name="Variants">
     <ButtonGroup>
       <Button label="Standard" />
-      <Button label="Info" type="info" />
-      <Button label="Success" type="success" />
-      <Button label="Warning" type="warning" />
-      <Button label="Alert" type="alert" />
-      <Button label="Standard" solid />
-      <Button label="Solid Info" type="info" solid />
-      <Button label="Solid Success" type="success" solid />
-      <Button label="Solid Warning" type="warning" solid />
-      <Button label="Solid Alert" type="alert" solid />
+      <Button label="Info" variant="info" />
+      <Button label="Success" variant="success" />
+      <Button label="Warning" variant="warning" />
+      <Button label="Alert" variant="alert" />
+      <Button label="Standard" isSolid />
+      <Button label="Solid Info" variant="info" isSolid />
+      <Button label="Solid Success" variant="success" isSolid />
+      <Button label="Solid Warning" variant="warning" isSolid />
+      <Button label="Solid Alert" variant="alert" isSolid />
     </ButtonGroup>
   </Story>
 </Preview>
@@ -84,7 +96,7 @@ Buttons communicate actions that users can take. They are typically placed throu
 
 <Preview>
   <Story name="Icons">
-    <ButtonGroup>
+    <ButtonGroup  columns="3">
       <Button label="Profile" icon="user" />
       <Button label="Expand" icon="down" />
       <Button label="Bookmark" icon="bookmark" />
@@ -98,12 +110,12 @@ Buttons communicate actions that users can take. They are typically placed throu
 
 <Preview>
   <Story name="Vertical Icons">
-    <ButtonGroup>
-      <Button label="Profile" icon="user" vertical />
-      <Button label="Expand" icon="down" vertical />
-      <Button label="Bookmark" icon="bookmark" vertical />
-      <Button label="Add" icon="plus" vertical />
-      <Button label="Print" icon="print" vertical/>
+    <ButtonGroup columns="5">
+      <Button label="Profile" icon="user" alignCenter />
+      <Button label="Expand" icon="down" alignCenter />
+      <Button label="Bookmark" icon="bookmark" alignCenter />
+      <Button label="Add" icon="plus" alignCenter />
+      <Button label="Print" icon="print" alignCenter/>
     </ButtonGroup>
   </Story>
 </Preview>
@@ -112,7 +124,7 @@ Buttons communicate actions that users can take. They are typically placed throu
 
 <Preview>
   <Story name="Icon-Only">
-    <ButtonGroup>
+    <ButtonGroup columns="5">
       <Button icon="user" />
       <Button icon="down" />
       <Button icon="bookmark" />
@@ -126,16 +138,22 @@ Buttons communicate actions that users can take. They are typically placed throu
 
 <Preview>
   <Story name="Counts">
-    <ButtonGroup>
+    <ButtonGroup columns="2">
       <Button label="Count Button"  count="2" />
       <Button label="Count Button" count="2" icon="user"/>
     </ButtonGroup>
   </Story>
 </Preview>
 
-## 'Button' Props
+## Props
+
+#### Button Props
 
 <Props of={Button} />
+
+#### Button Group Props
+
+<Props of={ButtonGroup} />
 
 <!-- Link a story to a component `ID` here without a code preview -->
 <!-- <Story id="atoms-checkbox--checkbox-states" /> -->

@@ -3,20 +3,20 @@ import { withKnobs, label, boolean, select } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
-import Bar from "blocks/Bar";
-import Form, { Section } from "layout/Form";
+import Bar from "layout/Bar";
+import Form, { FormSection } from "layout/Form";
 import Radio, { RadioGroup } from "atoms/Radio";
 import Icon from "atoms/Icon";
 
-<Meta title="Atoms|Radio" component={Radio} />
+<Meta title="Data Entry|Selection Controls/Radio" component={Radio} />
 
 # Radio
 
-### Radio buttons are used when a list of two or more options are mutually exclusive, meaning the user must select only one option.
+#### Radio buttons are used when a list of two or more options are mutually exclusive, meaning the user must select only one option.
 
 <Preview withToolbar>
   <Story name="Standard">
-    <Radio label="Radio" checked />
+    <Radio id="radio" name="standard" label="Radio" />
   </Story>
 </Preview>
 
@@ -56,11 +56,11 @@ If available options can be collapsed, consider using a dropdown menu instead, a
         padding="2x"
         contentAlign="center"
         left={{
-          content: <Icon icon="check" type="success" size="2x" />,
+          content: <Icon icon="check" variant="success" size="lg" />,
           width: "5%",
         }}
         center={{
-          content: <Radio label="Brief Label" />,
+          content: <Radio id="brief" name="guidelines" label="Brief Label" />,
           align: "left",
         }}
       />
@@ -68,11 +68,11 @@ If available options can be collapsed, consider using a dropdown menu instead, a
         padding="2x"
         contentAlign="center"
         left={{
-          content: <Icon icon="close" type="alert" size="2x" />,
+          content: <Icon icon="close" variant="alert" size="lg" />,
           width: "5%",
         }}
         center={{
-          content: <Radio label="Radio with a long label because you cannot be concise with your words." />,
+          content: <Radio id="long" name="guidelines" label="Radio with a long label because you cannot be concise with your words." />,
           align: "left",
         }}
       />
@@ -95,9 +95,9 @@ Radios consist of a circular input and a label. It is important that the label a
 <Preview>
   <Story name="States">
     <Grid>
-      <Radio label="Selected" checked />
-      <Radio label="Unselected" />
-      <Radio label="Disabled" disabled />
+      <Radio id="Selected" name="states" label="Selected" checked />
+      <Radio id="Unselected" name="states" label="Unselected" />
+      <Radio id="Disabled" name="states" label="Disabled" disabled />
     </Grid>
   </Story>
 </Preview>
@@ -109,8 +109,8 @@ A radio may appear to the left or right of it's corresponding label. A radio may
 <Preview>
   <Story name="Alignment">
     <Grid>
-      <Radio label="Left Aligned" />
-      <Radio label="Right Aligned" align="right" />
+      <Radio id="Left Aligned" name="alignment" label="Left Aligned" />
+      <Radio id="Right Aligned" name="alignment" label="Right Aligned" align="right" />
     </Grid>
   </Story>
 </Preview>
@@ -121,18 +121,16 @@ Radios may appear in groups. When a radio group is necessary use the RadioGroup 
 
 <Preview>
   <Story name="Radio Group">
-    <Grid>
-      <Form>
-        <Section title="Radio Group (2 Columns)">
-          <RadioGroup columns="2">
-            <Radio id="radio-1" name="radio-group" value="1" label="Radio 1" />
-            <Radio id="radio-2" name="radio-group" value="2" label="Radio 2" />
-            <Radio id="radio-3" name="radio-group" value="3" label="Radio 3" />
-            <Radio id="radio-4" name="radio-group" value="4" label="Radio 4" />
-          </RadioGroup>
-        </Section>
-      </Form>
-    </Grid>
+    <Form>
+      <FormSection title="Radio Group (2 Columns)">
+        <RadioGroup columns="2">
+          <Radio id="radio-1" name="radio-group" value="1" label="Radio 1" />
+          <Radio id="radio-2" name="radio-group" value="2" label="Radio 2" />
+          <Radio id="radio-3" name="radio-group" value="3" label="Radio 3" />
+          <Radio id="radio-4" name="radio-group" value="4" label="Radio 4" />
+        </RadioGroup>
+      </FormSection>
+    </Form>
   </Story>
 </Preview>
 

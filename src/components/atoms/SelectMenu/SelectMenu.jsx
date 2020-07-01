@@ -1,6 +1,7 @@
+/* eslint-disable complexity */
 /* eslint-disable linebreak-style */
 /* eslint-disable security/detect-object-injection */
-import React, { useContext, useState } from "react";
+import React, { useContext, useMemo, useCallback } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { fonts, colors, shadows } from "Variables";
@@ -10,12 +11,13 @@ import Select from "react-select";
 import Creatable from "react-select/creatable";
 import { Skeleton } from "helpers";
 import { DisabledContext } from "States";
+import { withOnChangeState } from "utils/hocs";
 
 
 const MessageContainer = styled.section`
 color: ${(props) => {
-  return props.theme.text[props.messageColor] || props.theme.text.secondary;
-}};
+    return props.theme.text[props.messageColor] || props.theme.text.secondary;
+  }};
 `;
 
 const selectStyles = {
@@ -62,7 +64,7 @@ const selectStyles = {
       ...styles,
       fontFamily: fonts.body,
       color: isFocused ? colors.grey50 : colors.grey50,
-      fontSize: "0.90em",
+      fontSize: "0.90rem",
     };
   },
   // selected option
@@ -72,7 +74,7 @@ const selectStyles = {
       fontFamily: fonts.body,
       opacity: isDisabled ? 0.5 : 1,
       transition: "opacity 300ms",
-      fontSize: "0.90em",
+      fontSize: "0.90rem",
     };
   },
   // 'X' to clear current selection
@@ -176,30 +178,29 @@ const SelectMenuContainer = styled(Grid)`
   }
 `;
 function SelectMenu({
-  id,
-  name,
-  placeholder,
-  options,
-  selectOptions,
   disabled,
   error,
-  warning,
-  label,
-  isRequired,
   helpText,
-  isSearchable,
+  id,
   isClearable,
-  multiSelect,
-  isLoading,
-  isRtl,
-  onChangeState,
-  onCreateOption,
-  onBlur,
-  onFocus,
   isCreatable,
+  isLoading,
+  isRequired,
+  isRtl,
+  isSearchable,
+  label,
+  multiSelect,
+  onBlur,
+  onChange,
+  onChangeState, // deprecated
+  onCreateOption,
+  onFocus,
+  options,
+  placeholder,
+  selectOptions,
+  warning,
 }) {
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   let textColor;
   let errorText = "";
   let messageColor;
@@ -213,104 +214,118 @@ function SelectMenu({
     messageColor = "alert";
   }
 
-  let selectedOpts = [];
-  if (selectOptions) {
-    selectedOpts =
-      selectOptions instanceof Array ? selectOptions : [selectOptions];
-    selectedOpts = options.filter((opt) => {
-      if (opt.value instanceof Array) {
-        for (let i = 0; i < selectedOpts.length; i++) {
-          const targetOpts = multiSelect ? selectedOpts[i] : selectedOpts;
-          if (
-            targetOpts instanceof Array &&
-            targetOpts.length === opt.value.length
-          ) {
-            let isMatch = true;
-            for (let j = 0; j < targetOpts.length; j++) {
-              if (!opt.value.includes(targetOpts[j])) {
-                isMatch = false;
-                break;
+  // get validated selectedOptions in [{ value, label }] format to pass to react-select
+  const selectedOptsValue = useMemo(() => {
+    let selectedOpts = [];
+    if (selectOptions) {
+      selectedOpts = selectOptions instanceof Array ? selectOptions : [selectOptions];
+      selectedOpts = options.filter((opt) => {
+        if (opt.value instanceof Array) {
+          for (let i = 0; i < selectedOpts.length; i++) {
+            const targetOpts = multiSelect ? selectedOpts[i] : selectedOpts;
+            if (
+              targetOpts instanceof Array && targetOpts.length === opt.value.length
+            ) {
+              let isMatch = true;
+              for (let j = 0; j < targetOpts.length; j++) {
+                if (!opt.value.includes(targetOpts[j])) {
+                  isMatch = false;
+                  break;
+                }
               }
+              if (isMatch) return true;
             }
-            if (isMatch) return true;
           }
+          return false;
         }
-        return false;
-      } else if (selectedOpts.length > 1 && !multiSelect) {
-        // If the input would select multiple, but that is not allowed, skip it.
-        return false;
-      }
 
-      return selectedOpts.includes(opt.value);
-    });
-  }
+        if (selectedOpts.length > 1 && !multiSelect) {
+          // If the input would select multiple, but that is not allowed, skip it.
+          return false;
+        }
 
-  const [state, setState] = useState({ selected: selectedOpts });
-  function changeSelected(pNewSelection, { action }) {
-    // If this would leave us with no selection, default to initial value.
+        return selectedOpts.includes(opt.value);
+      });
+    }
+    return selectedOpts;
+  }, [selectOptions, options]);
+
+  const changeSelected = useCallback((pNewSelection) => {
     let newSelection = pNewSelection;
     if ((!newSelection || newSelection.length === 0) && isRequired) {
-      if (multiSelect && action !== "clear") {
-        newSelection = state.selected;
-      } else {
-        newSelection = selectedOpts;
-      }
+      newSelection = selectedOptsValue;
     }
 
+    // deprecated onChangeState, selected: { value, label }
     if (onChangeState) {
-      onChangeState(state, { ...state, selected: newSelection }, setState);
-    } else {
-      setState({ ...state, selected: newSelection });
+      onChangeState({}, { selected: newSelection }, () => {});
     }
-  }
 
-  function handleCreateOption(optionName) {
-    onCreateOption(optionName, (newState) => {
-      setState(Object.assign({}, state, newState));
-    });
-  }
+    // convert back to value for selectOption prop input
+    let newSelectionValue;
+    if (newSelection instanceof Array) {
+      newSelectionValue = newSelection.map((val) => { return val.value; });
+    } else {
+      newSelectionValue = newSelection ? newSelection.value : undefined;
+    }
+    if (onChange) onChange(newSelectionValue);
+  }, [selectedOptsValue, onChange, onChangeState]);
 
   const selectProps = {
     id: id,
-    name: name,
-    placeholder: placeholder,
-    styles: selectStyles,
-    options: options,
-    value: state.selected,
-    isSearchable: isSearchable,
     isClearable: isClearable,
-    isMulti: multiSelect,
     isDisabled: isDisabled,
     isLoading: isLoading,
+    isMulti: multiSelect,
     isRtl: isRtl,
-    onChange: changeSelected,
-    onCreateOption: onCreateOption ? handleCreateOption : null,
+    isSearchable: isSearchable,
+    name: id,
     onBlur: onBlur,
+    onChange: changeSelected,
+    onCreateOption: onCreateOption,
     onFocus: onFocus,
+    options: options,
+    placeholder: placeholder,
+    styles: selectStyles,
+    value: selectedOptsValue,
   };
   const select = (isCreatable || onCreateOption) ?
     <Creatable {...selectProps} /> : <Select {...selectProps} />;
 
   return (
     <SelectMenuContainer
+      columns="1"
+      disabled={isDisabled} // input attribute
+      gap="xs"
       isRequired={isRequired}
       textColor={textColor}
-      disabled={isDisabled} // input attribute
-      columns="1"
-      gap="tiny"
     >
-      {label ? <Label size="2x" isRequired={isRequired} text={label} /> : null}
+      {label ? <Label isRequired={isRequired} text={label} /> : null}
       {select}
-      {helpText ? <Text size="1x" text={helpText} /> : null}
-      {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="1x" text={errorText || warning} /></MessageContainer> : null}
+      {helpText ? <Text size="sm" weight="bold" text={helpText} /> : null}
+      {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="sm" weight="bold" text={errorText || warning} /></MessageContainer> : null}
     </SelectMenuContainer>
   );
 }
 
-SelectMenu.propTypes = {
+const selectMenuPropTypes = {
+  disabled: PropTypes.bool,
+  error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  helpText: PropTypes.string,
   id: PropTypes.string,
-  name: PropTypes.string,
-  placeholder: PropTypes.string,
+  isClearable: PropTypes.bool,
+  isCreatable: PropTypes.bool,
+  isLoading: PropTypes.bool,
+  isRequired: PropTypes.bool,
+  isRtl: PropTypes.bool,
+  isSearchable: PropTypes.bool,
+  label: PropTypes.string,
+  multiSelect: PropTypes.bool,
+  onBlur: PropTypes.func,
+  onChange: PropTypes.func,
+  onChangeState: PropTypes.func, // deprecated
+  onCreateOption: PropTypes.func,
+  onFocus: PropTypes.func,
   options: PropTypes.arrayOf(PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.shape({
@@ -318,47 +333,47 @@ SelectMenu.propTypes = {
       value: PropTypes.any,
     }),
   ])),
-  selectOptions: PropTypes.any,
-  label: PropTypes.string,
-  isRequired: PropTypes.bool,
-  disabled: PropTypes.bool,
-  error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
-  multiSelect: PropTypes.bool,
-  isClearable: PropTypes.bool,
-  isSearchable: PropTypes.bool,
-  isLoading: PropTypes.bool,
-  isRtl: PropTypes.bool,
-  helpText: PropTypes.string,
-  onChangeState: PropTypes.func,
-  onCreateOption: PropTypes.func,
-  onBlur: PropTypes.func,
-  onFocus: PropTypes.func,
-  isCreatable: PropTypes.bool,
+  placeholder: PropTypes.string,
+  selectOptions: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.any), PropTypes.any]),
   warning: PropTypes.string,
 };
 
-SelectMenu.defaultProps = {
-  id: null,
-  name: null,
-  placeholder: null,
-  options: null,
-  selectOptions: null,
-  label: null,
-  isRequired: false,
+const selectMenuDefaultProps = {
   disabled: null,
-  error: "",
-  multiSelect: false,
-  isClearable: true,
-  isSearchable: true,
-  isLoading: false,
-  isRtl: false,
+  error: null,
   helpText: null,
-  onChangeState: null,
-  onCreateOption: null,
-  onBlur: null,
-  onFocus: null,
+  id: null,
+  isClearable: true,
   isCreatable: false,
-  warning: null,
+  isLoading: false,
+  isRequired: false,
+  isRtl: false,
+  isSearchable: true,
+  label: null,
+  multiSelect: false,
+  onBlur: null,
+  onChange: null,
+  onChangeState: null, // deprecated
+  onCreateOption: null,
+  onFocus: null,
+  options: null,
+  placeholder: null,
+  selectOptions: null,
+  warning: "",
 };
 
-export default SelectMenu;
+SelectMenu.propTypes = selectMenuPropTypes;
+SelectMenu.defaultProps = selectMenuDefaultProps;
+
+// create select menu that keeps track of selectOptions when onChange event is invoked
+const StatefulSelectMenu = withOnChangeState(SelectMenu, "selectOptions");
+
+const SelectMenuComp = (props) => {
+  // if an onChange is not passed in, the select menu will handle the state changes
+  return props.onChange ? <SelectMenu {...props} /> : <StatefulSelectMenu {...props} />;
+};
+// populate storybook props table
+SelectMenuComp.defaultProps = selectMenuDefaultProps;
+SelectMenuComp.propTypes = selectMenuPropTypes;
+
+export default SelectMenuComp;

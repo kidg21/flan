@@ -7,6 +7,8 @@ import { DisabledContext } from "States";
 import Icon from "atoms/Icon";
 import { Label } from "base/Typography";
 
+
+
 const CommandContainer = styled.a`
   display: ${(props) => {
     return props.icon ? "grid" : "";
@@ -47,9 +49,10 @@ const CommandContainer = styled.a`
 const CommandName = styled(Label)`
   grid-area: name;
   font-size: inherit;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 1px;
   color: inherit;
+  text-transform: capitalize;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -122,6 +125,7 @@ function Command({
   let commandColor;
   let commandSize = "";
 
+
   switch (align) {
     case "center":
       alignCommand = "auto";
@@ -140,32 +144,33 @@ function Command({
   if (isDisabled) commandColor = "disabled";
 
   switch (size) {
-    case "small":
+    case "sm":
       commandSize = ".8em";
       break;
-    case "large":
+    case "lg":
       commandSize = "1.2em";
       break;
     default:
+      commandSize = "1em";
       break;
   }
   return (
-    <CommandContainer
-      alignCommand={alignCommand}
-      alignIcon={alignIcon}
-      commandColor={commandColor}
-      commandSize={commandSize}
-      icon={cmd.icon}
-      id={id}
-      isDisabled={isDisabled}
-      justifyIcon={justifyIcon}
-      label={label}
-      onClick={onClick}
-      title={cmd.label} // HTML attribute (display on :hover)
-    >
-      {cmd.icon ? <CommandIcon icon={cmd.icon} /> : null}
-      <CommandName text={cmd.label} />
-    </CommandContainer>
+       <CommandContainer
+         alignCommand={alignCommand}
+         alignIcon={alignIcon}
+         commandColor={commandColor}
+         commandSize={commandSize}
+         icon={cmd.icon}
+         id={id}
+         isDisabled={isDisabled}
+         justifyIcon={justifyIcon}
+         label={label}
+         onClick={onClick}
+         title={cmd.label}
+       >
+         {cmd.icon ? <CommandIcon icon={cmd.icon} /> : null}
+         <CommandName text={cmd.label} />
+       </CommandContainer>
   );
 }
 
@@ -177,7 +182,7 @@ Command.propTypes = {
   id: PropTypes.string,
   label: PropTypes.string,
   onClick: PropTypes.func,
-  size: PropTypes.oneOf(["small", "large"]),
+  size: PropTypes.oneOf(["sm", "lg"]),
 };
 
 Command.defaultProps = {

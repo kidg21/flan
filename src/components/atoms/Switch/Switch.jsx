@@ -116,37 +116,38 @@ function Switch({
     };
   }
   if (isChecked && !error) {
-    fillColor = "selectedLight";
+    fillColor = "selected";
     borderColor = "selected";
   }
   return (
     <SwitchContainer
       alignInput={alignInput}
-      inputTextColor={inputTextColor}
-      error={error}
       disabled={isDisabled}
+      error={error}
       id={id}
+      inputTextColor={inputTextColor}
       label={label}
       onClick={onClick}
     >
       <StyledSwitch
+        borderColor={borderColor}
         checked={isChecked}
         disabled={isDisabled}
-        onChange={onChange}
         fillColor={fillColor}
-        borderColor={borderColor}
+        onChange={onChange}
       >
         <Circle
-          checked={isChecked}
           borderColor={borderColor}
+          checked={isChecked}
           disabled={isDisabled}
         />
       </StyledSwitch>
       {label ? (
         <Label
+          disabled={isDisabled}
           htmlFor={id}
           onChange={onChange}
-          disabled={isDisabled}
+          size="sm"
           text={label}
         />
       ) : null}

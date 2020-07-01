@@ -6,5 +6,6 @@ import React from "react";
 const InteractiveContext = React.createContext(false);
 const DisabledContext = React.createContext(false);
 const DisableTransitionContext = React.createContext(false);
+const PaddingContext = React.createContext(0);
 
-export { InteractiveContext, DisabledContext, DisableTransitionContext };
+export { InteractiveContext, DisabledContext, DisableTransitionContext, PaddingContext };

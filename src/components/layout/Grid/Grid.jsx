@@ -2,24 +2,21 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { viewport } from "Variables";
 
 const GridWrapper = styled.section`
+  position: relative;
   display: grid;
   grid-gap: ${(props) => {
-    return props.gap || "1rem";
+    return props.gap || "";
   }};
-  grid-template-columns: 1fr;
-  @media(min-width: ${viewport.medium}) {
-    grid-template-columns: ${(props) => {
+  grid-template-columns: ${(props) => {
     return props.columns || "repeat(auto-fill, minmax(18rem, 1fr))";
   }};
-  }
   grid-template-rows: ${(props) => {
     return props.rows || "auto";
   }};
   align-items: ${(props) => {
-    return props.alignItems || "stretch";
+    return props.alignItems || "flex-start";
   }};
   width: 100%;
 `;
@@ -39,32 +36,39 @@ function Grid({
   // 'auto' by default with custom override
   const setRows = rows;
   // 'gutter' between grid items
+  const baseGap = 0.25;
   let setGap;
-  let alignItems;
   switch (gap) {
-    case "none":
+    case "0":
       setGap = "0";
       break;
-    case "tiny":
-      setGap = ".35rem";
+    case "xs":
+      setGap = `${baseGap}rem`;
       break;
-    case "small":
-      setGap = ".75rem";
-      break;
-    case "large":
-      setGap = "1.5rem";
-      break;
-    case "xlarge":
-      setGap = "2rem";
-      break;
-    case "xxlarge":
-      setGap = "3rem";
+    case "sm":
+      setGap = `${baseGap * 2}rem`;
       break;
     default:
-    case "normal":
-      setGap = gap;
+      setGap = `${baseGap * 3}rem`;
+      break;
+    case "lg":
+      setGap = `${baseGap * 4}rem`;
+      break;
+    case "xl":
+      setGap = `${baseGap * 5}rem`;
+      break;
+    case "2xl":
+      setGap = `${baseGap * 6}rem`;
+      break;
+    case "3xl":
+      setGap = `${baseGap * 7}rem`;
+      break;
+    case "4xl":
+      setGap = `${baseGap * 8}rem`;
       break;
   }
+
+  let alignItems;
   switch (align) {
     case "center":
       alignItems = "center";
@@ -79,11 +83,11 @@ function Grid({
   return (
     <GridWrapper
       alignItems={alignItems}
-      id={id}
+      className={className}
       columns={setColumns}
       gap={setGap}
+      id={id}
       rows={setRows}
-      className={className}
     >
       {children}
     </GridWrapper>
@@ -92,47 +96,44 @@ function Grid({
 Grid.displayName = "GridWrapper";
 
 Grid.propTypes = {
-  id: PropTypes.string,
+  align: PropTypes.oneOf(["top", "center", "bottom"]),
   children: PropTypes.node,
+  className: PropTypes.string,
   /** Defines the widths of grid columns
    *
    * Options: 1-12 or any standard value accepted by the CSS Grid property, 'grid-template-columns'.
    */
   columns: PropTypes.string,
+  /** Sets the 'gutter' between grid items */
+  gap: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.oneOf([
+      "0",
+      "xs",
+      "sm",
+      "lg",
+      "xl",
+      "2xl",
+      "3xl",
+      "4xl",
+    ]),
+  ]),
+  id: PropTypes.string,
   /** Defines the heights of grid rows
    *
    * Options: Any standard value accepted by the CSS Grid property, 'grid-template-rows'.
    */
   rows: PropTypes.string,
-  /** Sets the 'gutter' between grid items
-   *
-   * Options: Any switch case or any standard value accepted by the CSS Grid property, 'grid-gap'.
-   */
-  gap: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.oneOf([
-      "none",
-      "tiny",
-      "small",
-      "default (normal)",
-      "large",
-      "xlarge",
-      "xxlarge",
-      "[grid-template-rows]",
-    ]),
-  ]),
-  align: PropTypes.oneOf(["top", "center", "bottom"]),
-  className: PropTypes.string,
 };
 
 Grid.defaultProps = {
-  id: null,
-  children: null,
-  columns: null,
-  rows: null,
-  gap: null,
   align: null,
+  children: null,
   className: null,
+  columns: null,
+  gap: null,
+  id: null,
+  rows: null,
 };
 
 export default Grid;

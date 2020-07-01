@@ -6,156 +6,121 @@ import PropTypes from "prop-types";
 import Button from "atoms/Button";
 
 const TabButton = styled(Button)`
-margin: ${(props) => {
-    return props.margin || "";
-  }};
-border: ${(props) => {
-    return props.border || "";
-  }};
-  border-radius: ${(props) => {
-    return props.borderRadius || "0px";
-  }};
-  color: ${(props) => {
-    return props.theme.palette[props.fontColor] || "";
+  border-width: 0 0 2px 0;
+  border-color: ${(props) => {
+    return props.hasUnderline || "transparent";
   }};
 `;
 
-
 const TabsWrapper = styled.section`
-  position: ${(props) => {
-    return props.setPosition || "";
-  }};
-  display: ${(props) => {
-    return props.setOrientation || "grid";
-  }};
-  grid-gap: ${(props) => {
-    return props.gap || "2px";
-  }};
+  display: grid;
+  grid-gap: 2px;
   grid-template-columns: ${(props) => {
     return props.setColumns || "repeat(auto-fit, minmax(0, 1fr))";
   }};
-  flex-direction: column;
   width: ${(props) => {
     return props.setWidth || "100%";
   }};
-  height: ${(props) => {
-    return props.setHeight || "100%";
-  }};
-
 `;
-
-function Tabs({
-  id, children, style, vertical,
+function TabItem({
+  count, disabled, htmlFor, icon, id, isSelected, label, onClick,
 }) {
-  let setColumns;
-  let border;
-  let borderRadius;
-  let setPosition;
-  let setWidth;
-  let setHeight;
-  let setOrientation;
-
-
-  if (vertical) {
-    setColumns = "none";
-    setWidth = "auto";
-    setHeight = "100%";
-  }
-
-  return (
-    <TabsWrapper
-      id={id}
-      border={border}
-      borderRadius={borderRadius}
-      setColumns={setColumns}
-      setPosition={setPosition}
-      setWidth={setWidth}
-      setHeight={setHeight}
-      setOrientation={setOrientation}
-      style={style}
-    >
-      {children}
-    </TabsWrapper>
-  );
-}
-
-function Tab({
-  id, icon, label, htmlFor, count, size, onClick, isSelected, disabled, type,
-}) {
-  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
 
   return (
     <React.Fragment>
-      {isSelected ? (
-        <TabButton
-          id={id}
-          icon={icon}
-          htmlFor={htmlFor}
-          size={size}
-          label={label}
-          count={count}
-          onClick={onClick}
-          isSelected={isSelected}
-          disabled={isDisabled}
-          type={type}
-          underlined
-        />
-      ) : (
-          <TabButton
-            id={id}
-            icon={icon}
-            htmlFor={htmlFor}
-            size={size}
-            label={label}
-            count={count}
-            onClick={onClick}
-            isSelected={isSelected}
-            disabled={isDisabled}
-            type={type}
-            plain
-          />
-        )}
+      <TabButton
+        count={count}
+        disabled={isDisabled}
+        htmlFor={htmlFor}
+        icon={icon}
+        id={id}
+        isSelected={isSelected}
+        label={label}
+        onClick={onClick}
+        isPlain
+        hasUnderline={isSelected ? true : null}
+      />
     </React.Fragment>
   );
 }
 
-Tabs.propTypes = {
-  id: PropTypes.string,
-  vertical: PropTypes.bool,
-  children: PropTypes.node.isRequired,
-  style: PropTypes.string,
-};
+function Tabs({
+  children, data, disabled, id, isVertical,
+}) {
+  const isDisabled =
+    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  let setColumns;
+  let setWidth;
 
-Tab.propTypes = {
-  id: PropTypes.string,
+  if (isVertical) {
+    setColumns = "none";
+    setWidth = "auto";
+  }
+
+  return (
+    <DisabledContext.Provider value={disabled}>
+      <TabsWrapper
+        disabled={isDisabled}
+        id={id}
+        setColumns={setColumns}
+        setWidth={setWidth}
+      >
+        {children ||
+          data.map((item) => {
+            return (
+              <TabItem
+                count={item.count}
+                disabled={item.disabled || isDisabled}
+                htmlFor={item.htmlFor}
+                icon={item.icon}
+                id={item.id}
+                label={item.label}
+                onClick={item.onClick}
+                isSelected={item.isSelected}
+              />
+            );
+          })}
+      </TabsWrapper>
+    </DisabledContext.Provider>
+  );
+}
+
+TabItem.propTypes = {
+  count: PropTypes.string,
+  disabled: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  htmlFor: PropTypes.string,
   icon: PropTypes.string,
+  id: PropTypes.string,
+  isSelected: PropTypes.bool,
   label: PropTypes.string,
   onClick: PropTypes.func,
-  isSelected: PropTypes.bool,
-  count: PropTypes.string,
-  disabled: PropTypes.bool,
-  htmlFor: PropTypes.node,
-  type: PropTypes.string,
-  size: PropTypes.string,
 };
-
-Tabs.defaultProps = {
-  id: null,
-  vertical: false,
-  style: null,
-};
-
-Tab.defaultProps = {
-  id: null,
-  icon: null,
-  label: null,
-  htmlFor: null,
+TabItem.defaultProps = {
   count: null,
+  disabled: null,
+  htmlFor: null,
+  icon: null,
+  id: null,
   isSelected: false,
-  disabled: false,
-  type: null,
-  size: null,
+  label: null,
   onClick: null,
 };
 
-export { Tabs as default, Tab };
+Tabs.propTypes = {
+  children: PropTypes.node,
+  data: PropTypes.arrayOf(PropTypes.shape(TabItem.propTypes)),
+  disabled: PropTypes.bool,
+  id: PropTypes.string,
+  isVertical: PropTypes.bool,
+};
+Tabs.defaultProps = {
+  children: null,
+  data: null,
+  disabled: false,
+  id: null,
+  isVertical: false,
+};
+
+export { Tabs as default, TabItem };

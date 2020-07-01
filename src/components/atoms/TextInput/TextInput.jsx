@@ -1,5 +1,4 @@
 /* eslint-disable complexity */
-/* eslint-disable no-undef */
 /* eslint-disable linebreak-style */
 import React, { useContext } from "react";
 import styled from "styled-components";
@@ -11,15 +10,15 @@ import { getGuid } from "helpers";
 
 const TextInputContainer = styled(Grid)`
   color: ${(props) => {
-    return props.theme.text[props.inputTextColor] || props.theme.text.secondary;
+    return props.theme.text[props.inputTextColor] || "";
   }};
   width: 100%;
 `;
 
 const MessageContainer = styled.section`
 color: ${(props) => {
-  return props.theme.text[props.messageColor] || props.theme.text.secondary;
-}};
+    return props.theme.text[props.messageColor] || "";
+  }};
 `;
 
 const Input = styled.input`
@@ -40,16 +39,20 @@ const Input = styled.input`
     return props.theme.palette[props.inputCaretColor] || "";
   }};
   width: 100%;
-  min-height: 1.875rem;
+  /* min-height: 1.875rem; */
+  min-height: ${(props) => {
+    return props.inputHeight || "1.875rem";
+  }};
   height: 2.4rem;
   padding: 0.125rem 0.5rem;
   resize: ${(props) => {
     return props.inputResize || "";
   }};
   ::placeholder {
-    font-weight: initial;
-    font-size: 0.90em;
+    font-size: 0.9rem;
+    font-weight: 400;
     letter-spacing: 0.5px;
+    /* TODO: placeholder color is being overridden by an !important tag.  Need to find. */
     color: ${(props) => {
     return (
       props.theme.text[props.placeholderColor] || props.theme.text.secondary
@@ -73,7 +76,7 @@ const Input = styled.input`
   }};
     ::selection {
       color: ${(props) => {
-    return props.theme.text.selected;
+    return props.theme.text.inverse;
   }};
       background-color: ${(props) => {
     return (
@@ -84,11 +87,11 @@ const Input = styled.input`
     }
   }
 `;
-
 function TextInput({
   autocompleteList,
   children,
   className,
+  columns,
   disabled,
   error,
   transparent,
@@ -96,22 +99,17 @@ function TextInput({
   id,
   isRequired,
   label,
+  onBlur,
   onChange,
+  onFocus,
+  onKeyPress,
   pattern,
   placeholder,
   readonly,
-  size,
-  title,
+  rows,
   type,
   value,
-  onBlur,
-  onFocus,
-  onKeyPress,
-  name,
-  rows,
-  cols,
   warning,
-  maxlength,
 }) {
   let as;
   let inputTextColor;
@@ -123,12 +121,12 @@ function TextInput({
   let inputResize;
   let placeholderColor;
   let inputSelectColor;
+  let inputHeight;
   if (type === "textarea") {
     as = "textarea";
     inputResize = "vertical";
+    inputHeight = "4.75rem";
   }
-  // else if (type === "search") {
-  // }
 
   const uId = id || getGuid();
 
@@ -189,48 +187,46 @@ function TextInput({
 
   return (
     <TextInputContainer
+      className={className}
+      columns="1"
+      gap="xs"
       id={`${uId}_container`}
       inputTextColor={inputTextColor}
-      gap="tiny"
-      columns="1"
-      className={className}
     >
       {label ? (
-        <Label size="2x" isRequired={isRequired} text={label} />
+        <Label isRequired={isRequired} text={label} />
       ) : null}
       <Input
         as={as}
+        autoComplete={autocompleteList && autocompleteList.length > 0 ? "on" : "off"}
+        cols={columns} // textarea attribute
         disabled={isDisabled} // input attribute
         id={uId} // input attribute
         inputBorderColor={inputBorderColor}
         inputBorderColorHover={inputBorderColorHover}
         inputCaretColor={inputCaretColor}
         inputFillColor={inputFillColor}
+        inputHeight={inputHeight}
         inputResize={inputResize}
         inputSelectColor={inputSelectColor}
         list={autoCompleteDataListId}
-        name={name || uId} // input attribute
+        name={uId} // input attribute
+        onBlur={onBlur}
         onChange={onChange}
+        onFocus={onFocus}
+        onKeyPress={onKeyPress}
         pattern={pattern} // input attribute
         placeholder={placeholder} // input attribute
         placeholderColor={placeholderColor}
         readonly={readonly}
-        size={size} // overriding this while developing so it's easier to see
-        title={title} // input attribute
+        rows={rows} // textarea attribute
         type={type} // input attribute
         value={value}
-        onBlur={onBlur}
-        onFocus={onFocus}
-        onKeyPress={onKeyPress}
-        rows={rows} // textarea attribute
-        cols={cols} // textarea attribute
-        autoComplete={autocompleteList && autocompleteList.length > 0 ? "on" : "off"}
-        maxLength={maxlength}
       />
       {autocompleteDataList}
-      {helpText ? <Text size="1x" text={helpText} /> : null}
+      {helpText ? <Text size="sm" weight="bold" text={helpText} /> : null}
       {children}
-      {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="1x" text={errorText || warning} /></MessageContainer> : null}
+      {errorText || warning ? <MessageContainer messageColor={messageColor}><Text size="sm" weight="bold" text={errorText || warning} /></MessageContainer> : null}
     </TextInputContainer>
   );
 }
@@ -242,24 +238,24 @@ TextInput.propTypes = {
   })])),
   children: PropTypes.node,
   className: PropTypes.string,
+  columns: PropTypes.string,
   /** A disabled input field is unusable and un-clickable, and its value will not be sent when submitting the form */
   disabled: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   helpText: PropTypes.string,
-  transparent: PropTypes.bool,
   id: PropTypes.string,
   isRequired: PropTypes.bool,
   label: PropTypes.string,
+  onBlur: PropTypes.func,
   onChange: PropTypes.func,
+  onFocus: PropTypes.func,
+  onKeyPress: PropTypes.func,
   pattern: PropTypes.string,
   placeholder: PropTypes.string,
   /** The readonly attribute specifies that the input field is read only (cannot be changed) */
   readonly: PropTypes.bool,
-  size: PropTypes.string,
-  /** The title attribute specifies extra information about an element.
-   * The information is most often shown as a tooltip text when the mouse moves over the element.
-   */
-  title: PropTypes.string,
+  rows: PropTypes.string,
+  transparent: PropTypes.bool,
   type: PropTypes.oneOf([
     "color",
     "date",
@@ -279,43 +275,32 @@ TextInput.propTypes = {
   ]),
   /** The value attribute specifies the initial value for an input field */
   value: PropTypes.string,
-  onBlur: PropTypes.func,
-  onFocus: PropTypes.func,
-  onKeyPress: PropTypes.func,
-  name: PropTypes.string,
-  rows: PropTypes.string,
-  cols: PropTypes.string,
-  warning: PropTypes.string,
-  maxlength: PropTypes.number,
+  warning: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
 };
 
 TextInput.defaultProps = {
   autocompleteList: null,
   children: null,
   className: null,
+  columns: "",
   disabled: null,
   error: "",
   helpText: null,
   id: null,
-  transparent: false,
-  label: null,
   isRequired: false,
+  label: null,
+  onBlur: null,
   onChange: null,
+  onFocus: null,
+  onKeyPress: null,
   pattern: null,
   placeholder: null,
   readonly: false,
-  size: null,
-  title: null,
+  rows: "",
+  transparent: false,
   type: "text",
   value: null,
-  onBlur: null,
-  onFocus: null,
-  onKeyPress: null,
-  name: "",
-  rows: "",
-  cols: "",
-  warning: null,
-  maxlength: null,
+  warning: "",
 };
 
 export default TextInput;

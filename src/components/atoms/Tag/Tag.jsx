@@ -1,17 +1,21 @@
+/* eslint-disable complexity */
 /* eslint-disable linebreak-style */
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Icon from "atoms/Icon";
-import Text from "base/Typography";
-
+import { Label } from "base/Typography";
 
 const TagContainer = styled.div`
   justify-content: center;
   display: flex;
-  width: fit-content;
   align-items: center;
-  weight: 600;
+  width: ${(props) => {
+    return props.badgeWidth || "fit-content";
+  }};
+  height: ${(props) => {
+    return props.badgeHeight || "";
+  }};
   background-color: ${(props) => {
     return props.theme.palette[props.badgeColor];
   }};
@@ -23,82 +27,65 @@ const TagContainer = styled.div`
   padding: ${(props) => {
     return props.badgePadding || "";
   }};
-  border: ${(props) => {
-    return `2px solid ${props.theme.text.inverse}`;
-  }};
+  line-height: normal;
   border-radius: ${(props) => {
-    return props.theme.borders.radiusMax;
+    return props.borderRadius || props.theme.borders.radiusMax;
   }};
 `;
 
 function Tag({
-  id, label, icon, style, type, brand,
+  brand, className, hasBackground, icon, id, label, variant,
 }) {
   let badgeColor;
-  let badgeTextColor;
+  let badgeHeight;
   let badgePadding;
-  let labelType;
+  let badgeTextColor;
+  let badgeWidth;
+  let borderRadius;
   let iconType;
+  let labelType;
 
   if (icon) {
-    iconType = <Icon icon={icon} size="2x" type={type} />;
-    badgePadding = "0 0.25em";
+    iconType = <Icon icon={icon} size="sm" variant={hasBackground ? "inverse" : variant} />;
+    badgeWidth = "1.5em";
+    badgeHeight = "1.5em";
+    badgePadding = ".75em";
+    borderRadius = "50%";
   } else if (label) {
-    labelType = <Text size="2x" weight="bold" text={label} />;
-    badgeTextColor = "inverse";
-    badgePadding = "0.25em .58em";
+    labelType = <Label size="xs" weight="bold" text={label} />;
+
+    if (hasBackground) {
+      badgeTextColor = "inverse";
+    } else if (variant) {
+      badgeTextColor = variant.toLowerCase() === "info" ? "link" : variant.toLowerCase();
+    } else {
+      badgeTextColor = "primary";
+    }
+
+    badgePadding = "0.2em .5em";
   } else {
     badgePadding = "0.35rem";
   }
 
-  switch (type) {
-    case "info":
-      badgeColor = "info80";
-      break;
-    case "success":
-      badgeColor = "success80";
-      break;
-    case "warning":
-      badgeColor = "warning80";
-      break;
-    case "alert":
-      badgeColor = "alert80";
-      break;
-    default:
-      badgeColor = "action80";
-      break;
+  if (hasBackground) {
+    if (brand && !variant) badgeColor = brand.toLowerCase();
+    else badgeColor = `${variant ? variant.toLowerCase() : "action"}80`;
+  } else {
+    badgeColor = "inverse";
   }
-
-  if (!type) {
-    if (brand === "research") {
-      badgeColor = "research";
-    } if (brand === "bi") {
-      badgeColor = "bi";
-    } if (brand === "jobs") {
-      badgeColor = "jobs";
-    } if (brand === "broker") {
-      badgeColor = "broker";
-    } if (brand === "brand1") {
-      badgeColor = "brand1";
-    } if (brand === "brand2") {
-      badgeColor = "brand2";
-    } if (brand === "brand3") {
-      badgeColor = "brand3";
-    } if (brand === "brand4") {
-      badgeColor = "brand4";
-    } else { null; }
-  }
-
 
   return (
     <TagContainer
+      badgeColor={badgeColor}
+      badgeHeight={badgeHeight}
+      badgePadding={badgePadding}
+      badgeTextColor={badgeTextColor}
+      badgeWidth={badgeWidth}
+      borderRadius={borderRadius}
+      className={className}
+      icon={icon}
       id={id}
       label={label}
-      icon={icon}
-      badgeColor={badgeColor}
-      badgeTextColor={badgeTextColor}
-      badgePadding={badgePadding}
-      style={style}
     >
       {iconType || labelType}
     </TagContainer>
@@ -106,21 +93,23 @@ function Tag({
 }
 
 Tag.propTypes = {
+  brand: PropTypes.string,
+  className: PropTypes.string,
+  hasBackground: PropTypes.bool,
+  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   id: PropTypes.string,
   label: PropTypes.string,
-  type: PropTypes.string,
-  brand: PropTypes.string,
-  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
-  style: PropTypes.string,
+  variant: PropTypes.string,
 };
 
 Tag.defaultProps = {
-  label: null,
-  id: null,
   brand: null,
-  type: null,
+  className: null,
+  hasBackground: true,
   icon: null,
-  style: null,
+  id: null,
+  label: null,
+  variant: null,
 };
 
 export default Tag;

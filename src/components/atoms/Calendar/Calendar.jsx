@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable security/detect-object-injection */
-import React, { useContext } from "react";
+import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
@@ -15,25 +15,24 @@ const CalendarContainer = styled(Grid)`
 
 function Calendar({
   className,
+  date,
   disabled,
   error,
   helpText,
   id,
-  label,
   isRequired,
+  label,
   max,
   min,
+  onBlur,
+  onChange,
+  onFocus,
   pattern,
+  time,
   type,
   value,
-  onChange,
   warning,
-  onBlur,
-  onFocus,
-  date,
-  time,
 }) {
-
   // datetime might have different props to use
   // if date/time prop is not passed, uses value/onChange/etc props
   const inputProps = {
@@ -59,22 +58,22 @@ function Calendar({
   const inputElements = inputTypes.map((currType) => {
     return (
       <TextInput
-        key={`${currType}-${uId}`}
         disabled={disabled}
         error={error}
-        label={label}
         helpText={helpText}
-        warning={warning}
         id={`${uId}_${currType}`}
-        min={min}
+        key={`${currType}-${uId}`}
+        label={label}
         max={max}
+        min={min}
         name={`${uId}_${currType}`}
+        onBlur={inputProps[currType].onBlur}
         onChange={inputProps[currType].onChange}
+        onFocus={inputProps[currType].onFocus}
         pattern={pattern}
         type={currType}
         value={inputProps[currType].value}
-        onBlur={inputProps[currType].onBlur}
-        onFocus={inputProps[currType].onFocus}
+        warning={warning}
       />
     );
   });
@@ -87,10 +86,10 @@ function Calendar({
   return (
     <CalendarContainer
       className={className}
+      columns="1"
       disabled={disabled}
       error={error}
-      columns="1"
-      gap="tiny"
+      gap="xs"
       id={uId}
       isRequired={isRequired}
     >
@@ -101,46 +100,66 @@ function Calendar({
 
 Calendar.propTypes = {
   className: PropTypes.string,
+  date: PropTypes.shape({
+    onBlur: PropTypes.func,
+    onChange: PropTypes.func,
+    onFocus: PropTypes.func,
+    value: PropTypes.string,
+  }),
   disabled: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
-  warning: PropTypes.string,
   helpText: PropTypes.string,
   id: PropTypes.string,
-  label: PropTypes.string,
   isRequired: PropTypes.bool,
+  label: PropTypes.string,
   /** Sets or returns the value of the max attribute of the date field */
   max: PropTypes.string,
   /** Sets or returns the value of the min attribute of the date field */
   min: PropTypes.string,
-  onChange: PropTypes.func,
   onBlur: PropTypes.func,
+  onChange: PropTypes.func,
   onFocus: PropTypes.func,
   pattern: PropTypes.string,
+  time: PropTypes.shape({
+    onBlur: PropTypes.func,
+    onChange: PropTypes.func,
+    onFocus: PropTypes.func,
+    value: PropTypes.string,
+  }),
   type: PropTypes.oneOf(["date", "time", "datetime"]),
   value: PropTypes.string,
-  date: PropTypes.shape({}),
-  time: PropTypes.shape({}),
+  warning: PropTypes.string,
 };
 
 Calendar.defaultProps = {
   className: null,
+  date: {
+    onBlur: null,
+    onChange: null,
+    onFocus: null,
+    value: null,
+  },
   disabled: null,
   error: null,
   helpText: null,
   id: null,
-  label: null,
-  onChange: null,
   isRequired: false,
+  label: null,
   max: null,
   min: null,
+  onBlur: () => { },
+  onChange: null,
+  onFocus: () => { },
   pattern: null,
+  time: {
+    onBlur: null,
+    onChange: null,
+    onFocus: null,
+    value: null,
+  },
   type: "date",
   value: null,
-  onBlur: () => { },
-  onFocus: () => { },
   warning: null,
-  date: {},
-  time: {},
 };
 
 export default Calendar;

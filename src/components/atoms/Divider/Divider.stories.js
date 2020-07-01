@@ -1,10 +1,10 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
-// import React from "react"
-// import { storiesOf } from "@storybook/react"
-// import { Padding } from "helpers/Display"
-// import Divider from "atoms/Divider"
+import React from "react"
+import { storiesOf } from "@storybook/react"
+import { Padding } from "helpers/Display"
+import Divider from "atoms/Divider"
 
-// storiesOf("Atoms|Divider", module)
-//   .addDecorator(Padding)
-//   .add("Default", () => <Divider />)
+storiesOf("Utilities|Divider", module)
+  .addDecorator(Padding)
+  .add("Default", () => <Divider />)

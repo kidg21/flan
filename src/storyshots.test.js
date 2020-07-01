@@ -1,5 +1,6 @@
 import initStoryshots, { multiSnapshotWithOptions } from "@storybook/addon-storyshots";
 import { screen } from "Variables";
+import * as helpers from "helpers";
 // import { imageSnapshot } from "@storybook/addon-storyshots-puppeteer";
 
 if (!window) global.window = global;
@@ -8,6 +9,11 @@ if (!window.matchMedia) {
     return { matches: qString === screen.large };
   };
 }
+
+let count = 1;
+helpers.getGuid = () => {
+  return `storyshots_${count++}`;
+};
 
 initStoryshots({
   suite: "Storyshots",

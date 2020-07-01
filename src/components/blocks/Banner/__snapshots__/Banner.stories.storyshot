@@ -9,45 +9,46 @@ exports[` 1`] = `
   }
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 gaLndW Banner__StyledBanner-sc-6825al-0 bfAGjz"
+    className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
     href={null}
     id={null}
     media={null}
     onClick={null}
   >
     <div
-      className="Bar__BarLayout-sc-1c4axau-2 gzisev"
+      className="Bar__BarLayout-icfo76-2 eUVQsH"
       id={null}
       onClick={null}
     >
       <div
-        className="Bar__Slot-sc-1c4axau-1 dSTdeN"
+        className="Bar__Slot-icfo76-1 fIRUJx"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
           id={null}
           rows={null}
         >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-            fontSize="1.05em"
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 KxMwb"
+            fontSize="1.15em"
             fontWeight={400}
             letterSpacing="0px"
           >
             This is a Banner.
-          </h6>
+          </h5>
         </section>
       </div>
       <div
-        className="Bar__Slot-sc-1c4axau-1 kMmFgx"
+        className="Bar__Slot-icfo76-1 cxljst"
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-times fa-w-10 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Banner__Close-sc-6825al-1 cgOoTm"
+          className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb Banner__Close-sc-6825al-1 cgOoTm"
           color={null}
           data-icon="times"
           data-prefix="far"
           focusable="false"
+          fontSize="1.35em"
           id={null}
           role="img"
           style={Object {}}
@@ -75,35 +76,33 @@ exports[` 2`] = `
   }
 >
   <div
-    className="Card__CardWrapper-sc-1g3s676-5 gaLndW Banner__StyledBanner-sc-6825al-0 bfAGjz"
+    className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
     href={null}
     id={null}
     media={null}
     onClick={null}
   >
     <div
-      className="Bar__BarLayout-sc-1c4axau-2 hBFBeu"
+      className="Bar__BarLayout-icfo76-2 jGhkbe"
       id={null}
       onClick={null}
     >
       <div
-        className="Bar__Slot-sc-1c4axau-1 eTIRkY"
+        className="Bar__Slot-icfo76-1 boCGaE"
       >
         <div
-          alt={null}
-          className="Avatar__TagContainer-sc-1vuf9om-1 eMkMqM"
+          className="Avatar__TagContainer-sc-1vuf9om-2 bIbEMn"
           id={null}
-          label={null}
           onClick={null}
-          src={null}
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-user fa-w-14 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+            className="svg-inline--fa fa-user fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
             color={null}
             data-icon="user"
             data-prefix="far"
             focusable="false"
+            fontSize="inherit"
             id={null}
             role="img"
             style={Object {}}
@@ -119,33 +118,33 @@ exports[` 2`] = `
         </div>
       </div>
       <div
-        className="Bar__Slot-sc-1c4axau-1 hGQHrW"
+        className="Bar__Slot-icfo76-1 bOWYHS"
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
           id={null}
           rows={null}
         >
-          <h6
-            className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-            fontSize="1.05em"
+          <h5
+            className="Typography__TitleText-sc-19auepv-2 KxMwb"
+            fontSize="1.15em"
             fontWeight={400}
             letterSpacing="0px"
           >
             This is a Banner
-          </h6>
+          </h5>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 CcLky"
+            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
             fontSize="0.75em"
-            fontWeight={400}
+            fontWeight={600}
             id={null}
             letterSpacing="0.2px"
           >
             A description can go here, if necessary.
           </p>
           <a
-            className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-            fontSize="inherit"
+            className="Typography__LinkText-sc-19auepv-1 jOFdDS"
+            fontSize="0.876em"
             fontWeight={600}
             href={null}
             letterSpacing="0px"
@@ -157,15 +156,16 @@ exports[` 2`] = `
         </section>
       </div>
       <div
-        className="Bar__Slot-sc-1c4axau-1 kMmFgx"
+        className="Bar__Slot-icfo76-1 cxljst"
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-times fa-w-10 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Banner__Close-sc-6825al-1 cgOoTm"
+          className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb Banner__Close-sc-6825al-1 cgOoTm"
           color={null}
           data-icon="times"
           data-prefix="far"
           focusable="false"
+          fontSize="1.35em"
           id={null}
           role="img"
           style={Object {}}
@@ -193,50 +193,51 @@ exports[` 3`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 fGkTyc Card__CardGridWrapper-sc-1g3s676-6 dqRWfz"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-4 hItlDP"
     id={null}
     rows={null}
   >
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 gaLndW Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-sc-1c4axau-2 gzisev"
+        className="Bar__BarLayout-icfo76-2 eUVQsH"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-sc-1c4axau-1 dSTdeN"
+          className="Bar__Slot-icfo76-1 fIRUJx"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
             id={null}
             rows={null}
           >
-            <h6
-              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-              fontSize="1.05em"
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
+              fontSize="1.15em"
               fontWeight={400}
               letterSpacing="0px"
             >
               This is a Banner.
-            </h6>
+            </h5>
           </section>
         </div>
         <div
-          className="Bar__Slot-sc-1c4axau-1 kMmFgx"
+          className="Bar__Slot-icfo76-1 cxljst"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-times fa-w-10 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Banner__Close-sc-6825al-1 cgOoTm"
+            className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb Banner__Close-sc-6825al-1 cgOoTm"
             color={null}
             data-icon="times"
             data-prefix="far"
             focusable="false"
+            fontSize="1.35em"
             id={null}
             role="img"
             style={Object {}}
@@ -253,37 +254,37 @@ exports[` 3`] = `
       </div>
     </div>
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 gaLndW Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-sc-1c4axau-2 hBFBeu"
+        className="Bar__BarLayout-icfo76-2 jGhkbe"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-sc-1c4axau-1 dSTdeN"
+          className="Bar__Slot-icfo76-1 fIRUJx"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
             id={null}
             rows={null}
           >
-            <h6
-              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-              fontSize="1.05em"
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
+              fontSize="1.15em"
               fontWeight={400}
               letterSpacing="0px"
             >
               This is a Banner.
-            </h6>
+            </h5>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 eGFGis"
               fontSize="0.75em"
-              fontWeight={400}
+              fontWeight={600}
               id={null}
               letterSpacing="0.2px"
             >
@@ -292,15 +293,16 @@ exports[` 3`] = `
           </section>
         </div>
         <div
-          className="Bar__Slot-sc-1c4axau-1 kMmFgx"
+          className="Bar__Slot-icfo76-1 cxljst"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-times fa-w-10 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Banner__Close-sc-6825al-1 cgOoTm"
+            className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb Banner__Close-sc-6825al-1 cgOoTm"
             color={null}
             data-icon="times"
             data-prefix="far"
             focusable="false"
+            fontSize="1.35em"
             id={null}
             role="img"
             style={Object {}}
@@ -317,45 +319,45 @@ exports[` 3`] = `
       </div>
     </div>
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 gaLndW Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-sc-1c4axau-2 hBFBeu"
+        className="Bar__BarLayout-icfo76-2 jGhkbe"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-sc-1c4axau-1 dSTdeN"
+          className="Bar__Slot-icfo76-1 fIRUJx"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
             id={null}
             rows={null}
           >
-            <h6
-              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-              fontSize="1.05em"
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
+              fontSize="1.15em"
               fontWeight={400}
               letterSpacing="0px"
             >
               This is a Banner.
-            </h6>
+            </h5>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 eGFGis"
               fontSize="0.75em"
-              fontWeight={400}
+              fontWeight={600}
               id={null}
               letterSpacing="0.2px"
             >
               A description can go here, if necessary.
             </p>
             <a
-              className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-              fontSize="inherit"
+              className="Typography__LinkText-sc-19auepv-1 jOFdDS"
+              fontSize="0.876em"
               fontWeight={600}
               href={null}
               letterSpacing="0px"
@@ -367,15 +369,16 @@ exports[` 3`] = `
           </section>
         </div>
         <div
-          className="Bar__Slot-sc-1c4axau-1 kMmFgx"
+          className="Bar__Slot-icfo76-1 cxljst"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-times fa-w-10 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Banner__Close-sc-6825al-1 cgOoTm"
+            className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb Banner__Close-sc-6825al-1 cgOoTm"
             color={null}
             data-icon="times"
             data-prefix="far"
             focusable="false"
+            fontSize="1.35em"
             id={null}
             role="img"
             style={Object {}}
@@ -404,40 +407,38 @@ exports[` 4`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 fGkTyc Card__CardGridWrapper-sc-1g3s676-6 dqRWfz"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-4 hItlDP"
     id={null}
     rows={null}
   >
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 gaLndW Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-sc-1c4axau-2 hBFBeu"
+        className="Bar__BarLayout-icfo76-2 jGhkbe"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-sc-1c4axau-1 eTIRkY"
+          className="Bar__Slot-icfo76-1 boCGaE"
         >
           <div
-            alt={null}
-            className="Avatar__TagContainer-sc-1vuf9om-1 eMkMqM"
+            className="Avatar__TagContainer-sc-1vuf9om-2 bIbEMn"
             id={null}
-            label={null}
             onClick={null}
-            src={null}
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-user fa-w-14 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+              className="svg-inline--fa fa-user fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="user"
               data-prefix="far"
               focusable="false"
+              fontSize="inherit"
               id={null}
               role="img"
               style={Object {}}
@@ -453,33 +454,33 @@ exports[` 4`] = `
           </div>
         </div>
         <div
-          className="Bar__Slot-sc-1c4axau-1 hGQHrW"
+          className="Bar__Slot-icfo76-1 bOWYHS"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
             id={null}
             rows={null}
           >
-            <h6
-              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-              fontSize="1.05em"
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
+              fontSize="1.15em"
               fontWeight={400}
               letterSpacing="0px"
             >
               This is a Banner.
-            </h6>
+            </h5>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 eGFGis"
               fontSize="0.75em"
-              fontWeight={400}
+              fontWeight={600}
               id={null}
               letterSpacing="0.2px"
             >
               A description can go here, if necessary.
             </p>
             <a
-              className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-              fontSize="inherit"
+              className="Typography__LinkText-sc-19auepv-1 jOFdDS"
+              fontSize="0.876em"
               fontWeight={600}
               href={null}
               letterSpacing="0px"
@@ -491,15 +492,16 @@ exports[` 4`] = `
           </section>
         </div>
         <div
-          className="Bar__Slot-sc-1c4axau-1 kMmFgx"
+          className="Bar__Slot-icfo76-1 cxljst"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-times fa-w-10 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Banner__Close-sc-6825al-1 cgOoTm"
+            className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb Banner__Close-sc-6825al-1 cgOoTm"
             color={null}
             data-icon="times"
             data-prefix="far"
             focusable="false"
+            fontSize="1.35em"
             id={null}
             role="img"
             style={Object {}}
@@ -528,40 +530,38 @@ exports[` 5`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 fGkTyc Card__CardGridWrapper-sc-1g3s676-6 dqRWfz"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-4 hItlDP"
     id={null}
     rows={null}
   >
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 gaLndW Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-sc-1c4axau-2 gzisev"
+        className="Bar__BarLayout-icfo76-2 eUVQsH"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-sc-1c4axau-1 eTIRkY"
+          className="Bar__Slot-icfo76-1 boCGaE"
         >
           <div
-            alt={null}
-            className="Avatar__TagContainer-sc-1vuf9om-1 iVDGJZ"
+            className="Avatar__TagContainer-sc-1vuf9om-2 kIvXem"
             id={null}
-            label={null}
             onClick={null}
-            src={null}
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-info fa-w-6 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+              className="svg-inline--fa fa-info fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="info"
               data-prefix="fas"
               focusable="false"
+              fontSize="inherit"
               id={null}
               role="img"
               style={Object {}}
@@ -577,33 +577,34 @@ exports[` 5`] = `
           </div>
         </div>
         <div
-          className="Bar__Slot-sc-1c4axau-1 hGQHrW"
+          className="Bar__Slot-icfo76-1 bOWYHS"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
             id={null}
             rows={null}
           >
-            <h6
-              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-              fontSize="1.05em"
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
+              fontSize="1.15em"
               fontWeight={400}
               letterSpacing="0px"
             >
               This is an Info Banner.
-            </h6>
+            </h5>
           </section>
         </div>
         <div
-          className="Bar__Slot-sc-1c4axau-1 kMmFgx"
+          className="Bar__Slot-icfo76-1 cxljst"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-times fa-w-10 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Banner__Close-sc-6825al-1 cgOoTm"
+            className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb Banner__Close-sc-6825al-1 cgOoTm"
             color={null}
             data-icon="times"
             data-prefix="far"
             focusable="false"
+            fontSize="1.35em"
             id={null}
             role="img"
             style={Object {}}
@@ -632,40 +633,38 @@ exports[` 6`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 fGkTyc Card__CardGridWrapper-sc-1g3s676-6 dqRWfz"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-4 hItlDP"
     id={null}
     rows={null}
   >
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 gaLndW Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-sc-1c4axau-2 gzisev"
+        className="Bar__BarLayout-icfo76-2 eUVQsH"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-sc-1c4axau-1 eTIRkY"
+          className="Bar__Slot-icfo76-1 boCGaE"
         >
           <div
-            alt={null}
-            className="Avatar__TagContainer-sc-1vuf9om-1 jfUEbf"
+            className="Avatar__TagContainer-sc-1vuf9om-2 daYeBE"
             id={null}
-            label={null}
             onClick={null}
-            src={null}
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-check fa-w-16 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+              className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="check"
               data-prefix="far"
               focusable="false"
+              fontSize="inherit"
               id={null}
               role="img"
               style={Object {}}
@@ -681,33 +680,34 @@ exports[` 6`] = `
           </div>
         </div>
         <div
-          className="Bar__Slot-sc-1c4axau-1 hGQHrW"
+          className="Bar__Slot-icfo76-1 bOWYHS"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
             id={null}
             rows={null}
           >
-            <h6
-              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-              fontSize="1.05em"
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
+              fontSize="1.15em"
               fontWeight={400}
               letterSpacing="0px"
             >
               This is a Success Banner.
-            </h6>
+            </h5>
           </section>
         </div>
         <div
-          className="Bar__Slot-sc-1c4axau-1 kMmFgx"
+          className="Bar__Slot-icfo76-1 cxljst"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-times fa-w-10 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Banner__Close-sc-6825al-1 cgOoTm"
+            className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb Banner__Close-sc-6825al-1 cgOoTm"
             color={null}
             data-icon="times"
             data-prefix="far"
             focusable="false"
+            fontSize="1.35em"
             id={null}
             role="img"
             style={Object {}}
@@ -736,40 +736,38 @@ exports[` 7`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 fGkTyc Card__CardGridWrapper-sc-1g3s676-6 dqRWfz"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-4 hItlDP"
     id={null}
     rows={null}
   >
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 gaLndW Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-sc-1c4axau-2 gzisev"
+        className="Bar__BarLayout-icfo76-2 eUVQsH"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-sc-1c4axau-1 eTIRkY"
+          className="Bar__Slot-icfo76-1 boCGaE"
         >
           <div
-            alt={null}
-            className="Avatar__TagContainer-sc-1vuf9om-1 htJGsr"
+            className="Avatar__TagContainer-sc-1vuf9om-2 egoLsc"
             id={null}
-            label={null}
             onClick={null}
-            src={null}
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-exclamation fa-w-6 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+              className="svg-inline--fa fa-exclamation fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="exclamation"
               data-prefix="fas"
               focusable="false"
+              fontSize="inherit"
               id={null}
               role="img"
               style={Object {}}
@@ -785,33 +783,34 @@ exports[` 7`] = `
           </div>
         </div>
         <div
-          className="Bar__Slot-sc-1c4axau-1 hGQHrW"
+          className="Bar__Slot-icfo76-1 bOWYHS"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
             id={null}
             rows={null}
           >
-            <h6
-              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-              fontSize="1.05em"
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
+              fontSize="1.15em"
               fontWeight={400}
               letterSpacing="0px"
             >
               This is a Warning Banner.
-            </h6>
+            </h5>
           </section>
         </div>
         <div
-          className="Bar__Slot-sc-1c4axau-1 kMmFgx"
+          className="Bar__Slot-icfo76-1 cxljst"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-times fa-w-10 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Banner__Close-sc-6825al-1 cgOoTm"
+            className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb Banner__Close-sc-6825al-1 cgOoTm"
             color={null}
             data-icon="times"
             data-prefix="far"
             focusable="false"
+            fontSize="1.35em"
             id={null}
             role="img"
             style={Object {}}
@@ -840,40 +839,38 @@ exports[` 8`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 fGkTyc Card__CardGridWrapper-sc-1g3s676-6 dqRWfz"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-4 hItlDP"
     id={null}
     rows={null}
   >
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 gaLndW Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-sc-1c4axau-2 gzisev"
+        className="Bar__BarLayout-icfo76-2 eUVQsH"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-sc-1c4axau-1 eTIRkY"
+          className="Bar__Slot-icfo76-1 boCGaE"
         >
           <div
-            alt={null}
-            className="Avatar__TagContainer-sc-1vuf9om-1 gugBSi"
+            className="Avatar__TagContainer-sc-1vuf9om-2 vkXct"
             id={null}
-            label={null}
             onClick={null}
-            src={null}
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-times fa-w-10 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+              className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="times"
               data-prefix="far"
               focusable="false"
+              fontSize="inherit"
               id={null}
               role="img"
               style={Object {}}
@@ -889,33 +886,34 @@ exports[` 8`] = `
           </div>
         </div>
         <div
-          className="Bar__Slot-sc-1c4axau-1 hGQHrW"
+          className="Bar__Slot-icfo76-1 bOWYHS"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
             id={null}
             rows={null}
           >
-            <h6
-              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-              fontSize="1.05em"
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
+              fontSize="1.15em"
               fontWeight={400}
               letterSpacing="0px"
             >
               This is an Alert Banner.
-            </h6>
+            </h5>
           </section>
         </div>
         <div
-          className="Bar__Slot-sc-1c4axau-1 kMmFgx"
+          className="Bar__Slot-icfo76-1 cxljst"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-times fa-w-10 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Banner__Close-sc-6825al-1 cgOoTm"
+            className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb Banner__Close-sc-6825al-1 cgOoTm"
             color={null}
             data-icon="times"
             data-prefix="far"
             focusable="false"
+            fontSize="1.35em"
             id={null}
             role="img"
             style={Object {}}
@@ -944,50 +942,51 @@ exports[` 9`] = `
   }
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 fGkTyc Card__CardGridWrapper-sc-1g3s676-6 dqRWfz"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-4 hItlDP"
     id={null}
     rows={null}
   >
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 gaLndW Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-sc-1c4axau-2 gzisev"
+        className="Bar__BarLayout-icfo76-2 eUVQsH"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-sc-1c4axau-1 dSTdeN"
+          className="Bar__Slot-icfo76-1 fIRUJx"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
             id={null}
             rows={null}
           >
-            <h6
-              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-              fontSize="1.05em"
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
+              fontSize="1.15em"
               fontWeight={400}
               letterSpacing="0px"
             >
               This is a Banner.
-            </h6>
+            </h5>
           </section>
         </div>
         <div
-          className="Bar__Slot-sc-1c4axau-1 kMmFgx"
+          className="Bar__Slot-icfo76-1 cxljst"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-times fa-w-10 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Banner__Close-sc-6825al-1 cgOoTm"
+            className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb Banner__Close-sc-6825al-1 cgOoTm"
             color={null}
             data-icon="times"
             data-prefix="far"
             focusable="false"
+            fontSize="1.35em"
             id={null}
             role="img"
             style={Object {}}
@@ -1004,37 +1003,37 @@ exports[` 9`] = `
       </div>
     </div>
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 gaLndW Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-sc-1c4axau-2 hBFBeu"
+        className="Bar__BarLayout-icfo76-2 jGhkbe"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-sc-1c4axau-1 dSTdeN"
+          className="Bar__Slot-icfo76-1 fIRUJx"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
             id={null}
             rows={null}
           >
-            <h6
-              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-              fontSize="1.05em"
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
+              fontSize="1.15em"
               fontWeight={400}
               letterSpacing="0px"
             >
               This is a Banner.
-            </h6>
+            </h5>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 eGFGis"
               fontSize="0.75em"
-              fontWeight={400}
+              fontWeight={600}
               id={null}
               letterSpacing="0.2px"
             >
@@ -1043,15 +1042,16 @@ exports[` 9`] = `
           </section>
         </div>
         <div
-          className="Bar__Slot-sc-1c4axau-1 kMmFgx"
+          className="Bar__Slot-icfo76-1 cxljst"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-times fa-w-10 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Banner__Close-sc-6825al-1 cgOoTm"
+            className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb Banner__Close-sc-6825al-1 cgOoTm"
             color={null}
             data-icon="times"
             data-prefix="far"
             focusable="false"
+            fontSize="1.35em"
             id={null}
             role="img"
             style={Object {}}
@@ -1068,45 +1068,45 @@ exports[` 9`] = `
       </div>
     </div>
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 gaLndW Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-sc-1c4axau-2 hBFBeu"
+        className="Bar__BarLayout-icfo76-2 jGhkbe"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-sc-1c4axau-1 dSTdeN"
+          className="Bar__Slot-icfo76-1 fIRUJx"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
             id={null}
             rows={null}
           >
-            <h6
-              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-              fontSize="1.05em"
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
+              fontSize="1.15em"
               fontWeight={400}
               letterSpacing="0px"
             >
               This is a Banner.
-            </h6>
+            </h5>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 eGFGis"
               fontSize="0.75em"
-              fontWeight={400}
+              fontWeight={600}
               id={null}
               letterSpacing="0.2px"
             >
               A description can go here, if necessary.
             </p>
             <a
-              className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-              fontSize="inherit"
+              className="Typography__LinkText-sc-19auepv-1 jOFdDS"
+              fontSize="0.876em"
               fontWeight={600}
               href={null}
               letterSpacing="0px"
@@ -1118,15 +1118,16 @@ exports[` 9`] = `
           </section>
         </div>
         <div
-          className="Bar__Slot-sc-1c4axau-1 kMmFgx"
+          className="Bar__Slot-icfo76-1 cxljst"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-times fa-w-10 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Banner__Close-sc-6825al-1 cgOoTm"
+            className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb Banner__Close-sc-6825al-1 cgOoTm"
             color={null}
             data-icon="times"
             data-prefix="far"
             focusable="false"
+            fontSize="1.35em"
             id={null}
             role="img"
             style={Object {}}
@@ -1143,35 +1144,33 @@ exports[` 9`] = `
       </div>
     </div>
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 gaLndW Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-sc-1c4axau-2 hBFBeu"
+        className="Bar__BarLayout-icfo76-2 jGhkbe"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-sc-1c4axau-1 eTIRkY"
+          className="Bar__Slot-icfo76-1 boCGaE"
         >
           <div
-            alt={null}
-            className="Avatar__TagContainer-sc-1vuf9om-1 eMkMqM"
+            className="Avatar__TagContainer-sc-1vuf9om-2 bIbEMn"
             id={null}
-            label={null}
             onClick={null}
-            src={null}
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-user fa-w-14 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+              className="svg-inline--fa fa-user fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="user"
               data-prefix="far"
               focusable="false"
+              fontSize="inherit"
               id={null}
               role="img"
               style={Object {}}
@@ -1187,33 +1186,33 @@ exports[` 9`] = `
           </div>
         </div>
         <div
-          className="Bar__Slot-sc-1c4axau-1 hGQHrW"
+          className="Bar__Slot-icfo76-1 bOWYHS"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
             id={null}
             rows={null}
           >
-            <h6
-              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-              fontSize="1.05em"
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
+              fontSize="1.15em"
               fontWeight={400}
               letterSpacing="0px"
             >
               This is a Banner.
-            </h6>
+            </h5>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 eGFGis"
               fontSize="0.75em"
-              fontWeight={400}
+              fontWeight={600}
               id={null}
               letterSpacing="0.2px"
             >
               A description can go here, if necessary.
             </p>
             <a
-              className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-              fontSize="inherit"
+              className="Typography__LinkText-sc-19auepv-1 jOFdDS"
+              fontSize="0.876em"
               fontWeight={600}
               href={null}
               letterSpacing="0px"
@@ -1225,15 +1224,16 @@ exports[` 9`] = `
           </section>
         </div>
         <div
-          className="Bar__Slot-sc-1c4axau-1 kMmFgx"
+          className="Bar__Slot-icfo76-1 cxljst"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-times fa-w-10 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Banner__Close-sc-6825al-1 cgOoTm"
+            className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb Banner__Close-sc-6825al-1 cgOoTm"
             color={null}
             data-icon="times"
             data-prefix="far"
             focusable="false"
+            fontSize="1.35em"
             id={null}
             role="img"
             style={Object {}}
@@ -1250,35 +1250,33 @@ exports[` 9`] = `
       </div>
     </div>
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 gaLndW Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-sc-1c4axau-2 hBFBeu"
+        className="Bar__BarLayout-icfo76-2 jGhkbe"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-sc-1c4axau-1 eTIRkY"
+          className="Bar__Slot-icfo76-1 boCGaE"
         >
           <div
-            alt={null}
-            className="Avatar__TagContainer-sc-1vuf9om-1 iVDGJZ"
+            className="Avatar__TagContainer-sc-1vuf9om-2 kIvXem"
             id={null}
-            label={null}
             onClick={null}
-            src={null}
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-info fa-w-6 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+              className="svg-inline--fa fa-info fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="info"
               data-prefix="fas"
               focusable="false"
+              fontSize="inherit"
               id={null}
               role="img"
               style={Object {}}
@@ -1294,33 +1292,33 @@ exports[` 9`] = `
           </div>
         </div>
         <div
-          className="Bar__Slot-sc-1c4axau-1 hGQHrW"
+          className="Bar__Slot-icfo76-1 bOWYHS"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
             id={null}
             rows={null}
           >
-            <h6
-              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-              fontSize="1.05em"
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
+              fontSize="1.15em"
               fontWeight={400}
               letterSpacing="0px"
             >
               This is an Info Banner.
-            </h6>
+            </h5>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 eGFGis"
               fontSize="0.75em"
-              fontWeight={400}
+              fontWeight={600}
               id={null}
               letterSpacing="0.2px"
             >
               A description can go here, if necessary.
             </p>
             <a
-              className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-              fontSize="inherit"
+              className="Typography__LinkText-sc-19auepv-1 jOFdDS"
+              fontSize="0.876em"
               fontWeight={600}
               href={null}
               letterSpacing="0px"
@@ -1332,15 +1330,16 @@ exports[` 9`] = `
           </section>
         </div>
         <div
-          className="Bar__Slot-sc-1c4axau-1 kMmFgx"
+          className="Bar__Slot-icfo76-1 cxljst"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-times fa-w-10 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Banner__Close-sc-6825al-1 cgOoTm"
+            className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb Banner__Close-sc-6825al-1 cgOoTm"
             color={null}
             data-icon="times"
             data-prefix="far"
             focusable="false"
+            fontSize="1.35em"
             id={null}
             role="img"
             style={Object {}}
@@ -1357,35 +1356,33 @@ exports[` 9`] = `
       </div>
     </div>
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 gaLndW Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-sc-1c4axau-2 hBFBeu"
+        className="Bar__BarLayout-icfo76-2 jGhkbe"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-sc-1c4axau-1 eTIRkY"
+          className="Bar__Slot-icfo76-1 boCGaE"
         >
           <div
-            alt={null}
-            className="Avatar__TagContainer-sc-1vuf9om-1 jfUEbf"
+            className="Avatar__TagContainer-sc-1vuf9om-2 daYeBE"
             id={null}
-            label={null}
             onClick={null}
-            src={null}
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-check fa-w-16 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+              className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="check"
               data-prefix="far"
               focusable="false"
+              fontSize="inherit"
               id={null}
               role="img"
               style={Object {}}
@@ -1401,33 +1398,33 @@ exports[` 9`] = `
           </div>
         </div>
         <div
-          className="Bar__Slot-sc-1c4axau-1 hGQHrW"
+          className="Bar__Slot-icfo76-1 bOWYHS"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
             id={null}
             rows={null}
           >
-            <h6
-              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-              fontSize="1.05em"
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
+              fontSize="1.15em"
               fontWeight={400}
               letterSpacing="0px"
             >
               This is a Success Banner.
-            </h6>
+            </h5>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 eGFGis"
               fontSize="0.75em"
-              fontWeight={400}
+              fontWeight={600}
               id={null}
               letterSpacing="0.2px"
             >
               A description can go here, if necessary.
             </p>
             <a
-              className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-              fontSize="inherit"
+              className="Typography__LinkText-sc-19auepv-1 jOFdDS"
+              fontSize="0.876em"
               fontWeight={600}
               href={null}
               letterSpacing="0px"
@@ -1439,15 +1436,16 @@ exports[` 9`] = `
           </section>
         </div>
         <div
-          className="Bar__Slot-sc-1c4axau-1 kMmFgx"
+          className="Bar__Slot-icfo76-1 cxljst"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-times fa-w-10 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Banner__Close-sc-6825al-1 cgOoTm"
+            className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb Banner__Close-sc-6825al-1 cgOoTm"
             color={null}
             data-icon="times"
             data-prefix="far"
             focusable="false"
+            fontSize="1.35em"
             id={null}
             role="img"
             style={Object {}}
@@ -1464,35 +1462,33 @@ exports[` 9`] = `
       </div>
     </div>
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 gaLndW Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-sc-1c4axau-2 hBFBeu"
+        className="Bar__BarLayout-icfo76-2 jGhkbe"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-sc-1c4axau-1 eTIRkY"
+          className="Bar__Slot-icfo76-1 boCGaE"
         >
           <div
-            alt={null}
-            className="Avatar__TagContainer-sc-1vuf9om-1 htJGsr"
+            className="Avatar__TagContainer-sc-1vuf9om-2 egoLsc"
             id={null}
-            label={null}
             onClick={null}
-            src={null}
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-exclamation fa-w-6 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+              className="svg-inline--fa fa-exclamation fa-w-6 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="exclamation"
               data-prefix="fas"
               focusable="false"
+              fontSize="inherit"
               id={null}
               role="img"
               style={Object {}}
@@ -1508,33 +1504,33 @@ exports[` 9`] = `
           </div>
         </div>
         <div
-          className="Bar__Slot-sc-1c4axau-1 hGQHrW"
+          className="Bar__Slot-icfo76-1 bOWYHS"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
             id={null}
             rows={null}
           >
-            <h6
-              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-              fontSize="1.05em"
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
+              fontSize="1.15em"
               fontWeight={400}
               letterSpacing="0px"
             >
               This is a Warning Banner.
-            </h6>
+            </h5>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 eGFGis"
               fontSize="0.75em"
-              fontWeight={400}
+              fontWeight={600}
               id={null}
               letterSpacing="0.2px"
             >
               A description can go here, if necessary.
             </p>
             <a
-              className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-              fontSize="inherit"
+              className="Typography__LinkText-sc-19auepv-1 jOFdDS"
+              fontSize="0.876em"
               fontWeight={600}
               href={null}
               letterSpacing="0px"
@@ -1546,15 +1542,16 @@ exports[` 9`] = `
           </section>
         </div>
         <div
-          className="Bar__Slot-sc-1c4axau-1 kMmFgx"
+          className="Bar__Slot-icfo76-1 cxljst"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-times fa-w-10 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Banner__Close-sc-6825al-1 cgOoTm"
+            className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb Banner__Close-sc-6825al-1 cgOoTm"
             color={null}
             data-icon="times"
             data-prefix="far"
             focusable="false"
+            fontSize="1.35em"
             id={null}
             role="img"
             style={Object {}}
@@ -1571,35 +1568,33 @@ exports[` 9`] = `
       </div>
     </div>
     <div
-      className="Card__CardWrapper-sc-1g3s676-5 gaLndW Banner__StyledBanner-sc-6825al-0 bfAGjz"
+      className="Card__CardWrapper-sc-1g3s676-3 kkBGPe Banner__StyledBanner-sc-6825al-0 bfAGjz"
       href={null}
       id={null}
       media={null}
       onClick={null}
     >
       <div
-        className="Bar__BarLayout-sc-1c4axau-2 hBFBeu"
+        className="Bar__BarLayout-icfo76-2 jGhkbe"
         id={null}
         onClick={null}
       >
         <div
-          className="Bar__Slot-sc-1c4axau-1 eTIRkY"
+          className="Bar__Slot-icfo76-1 boCGaE"
         >
           <div
-            alt={null}
-            className="Avatar__TagContainer-sc-1vuf9om-1 gugBSi"
+            className="Avatar__TagContainer-sc-1vuf9om-2 vkXct"
             id={null}
-            label={null}
             onClick={null}
-            src={null}
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-times fa-w-10 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+              className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
               color={null}
               data-icon="times"
               data-prefix="far"
               focusable="false"
+              fontSize="inherit"
               id={null}
               role="img"
               style={Object {}}
@@ -1615,33 +1610,33 @@ exports[` 9`] = `
           </div>
         </div>
         <div
-          className="Bar__Slot-sc-1c4axau-1 hGQHrW"
+          className="Bar__Slot-icfo76-1 bOWYHS"
         >
           <section
-            className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm"
+            className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ"
             id={null}
             rows={null}
           >
-            <h6
-              className="Typography__TitleText-sc-19auepv-2 ffuBqO"
-              fontSize="1.05em"
+            <h5
+              className="Typography__TitleText-sc-19auepv-2 KxMwb"
+              fontSize="1.15em"
               fontWeight={400}
               letterSpacing="0px"
             >
               This is an Alert Banner.
-            </h6>
+            </h5>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 CcLky"
+              className="Typography__Paragraph-sc-19auepv-3 eGFGis"
               fontSize="0.75em"
-              fontWeight={400}
+              fontWeight={600}
               id={null}
               letterSpacing="0.2px"
             >
               A description can go here, if necessary.
             </p>
             <a
-              className="Typography__LinkText-sc-19auepv-1 fLIgSj"
-              fontSize="inherit"
+              className="Typography__LinkText-sc-19auepv-1 jOFdDS"
+              fontSize="0.876em"
               fontWeight={600}
               href={null}
               letterSpacing="0px"
@@ -1653,15 +1648,16 @@ exports[` 9`] = `
           </section>
         </div>
         <div
-          className="Bar__Slot-sc-1c4axau-1 kMmFgx"
+          className="Bar__Slot-icfo76-1 cxljst"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-times fa-w-10 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru Banner__Close-sc-6825al-1 cgOoTm"
+            className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb Banner__Close-sc-6825al-1 cgOoTm"
             color={null}
             data-icon="times"
             data-prefix="far"
             focusable="false"
+            fontSize="1.35em"
             id={null}
             role="img"
             style={Object {}}

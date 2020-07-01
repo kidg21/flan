@@ -1,0 +1,239 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
+import { action } from "@storybook/addon-actions";
+import { Padding } from "helpers/Display";
+import Grid from "layout/Grid";
+import Bar from "layout/Bar";
+import Button from "atoms/Button";
+import Text, {Title} from "base/Typography";
+import Card, { CardSection, CardGrid } from "elements/Card";
+import Menu from "blocks/Menu";
+
+<Meta title="Atoms|Menu" component={Menu} />
+
+# Menu
+
+#### Menus display a list of choices on temporary surfaces.
+
+<Preview withToolbar>
+  <Story name="Standard">
+  <Grid columns="3">
+  <div/>
+  <Card id="Menu_Standard_Card">
+  <Bar padding="2x" 
+  left = {<Title size="xl" weight="bold" text="Malibu, CA"/>}
+  right={
+     <Menu
+      visible
+      id="Menu_Standard"
+      data={[
+        {
+          label: "Save",
+        },
+        {
+          label: "Filter",
+        },
+        {
+          label: "Share",
+        },
+        {
+          label: "Delete",
+        },
+      ]}
+      position="bottomLeft" />}
+ />
+ <Bar padding="2x" 
+ left={
+   <Text size="lg" 
+   text="Live the California dream at this modern paradise right on the beach in Malibu. Whether it's your escape from the city or new full time residence; nothing beats waking up to the sound of waves and having coffee on the sun drenched deck with dolphins swimming by in the morning. Located just minutes away from Santa Monica and walking distance to Malibu's hottest restaurant Moonshadows. It's time to buy that stand up paddleboard, get back in tune with nature and start living your Malibu dream now. This is the best deal under $4 million on the beach."
+   />
+   } />
+ </Card>
+ <div/>
+ </Grid>
+  </Story>
+</Preview>
+
+# Usage
+
+A menu displays a list of choices on a temporary surface. They appear when users interact with a button, action, or other control. Menus appear in front of all other permanent UI elements.
+
+- **Focused**
+Menu content should be suited to user needs.
+
+- **Scannable**
+Menu items should be easy to scan.
+
+**Nested Menus** allow users to choose from a large variety of choices, by displaying menus with multiple levels of hierarchy. They are organized into menus of parent list items that contain child list items. Child list items appear to the right or left of parent list items, depending on where there is room to expand child list items. Nested Menus are generated based on the data array passed through.
+
+# Examples
+
+### Types
+
+Menus display lists of related options (which can be grouped together) as well as unrelated options. Menus can be text or text and icon. Adding an icon is an additional benefit to the user and provides extra context and guidance. If you are using icon and icons try to make sure that all of the Menu Items have an icon.
+
+<Preview>
+  <Story name="Types">
+   <Grid columns="3" gap="3xl">
+   <div/>
+ <Card id="Menu_Icon_Card">
+  <Bar padding="2x" 
+  left = {<Title size="xl" weight="bold" text="Malibu, CA"/>}
+  right={
+     <Menu
+      visible
+      id="Menu_Icon"
+      data={[
+        {
+          label: "Save",
+          icon: "save",
+          id: "save",
+        },
+        {
+          label: "Filter",
+          icon: "filter",
+          id: "filter",
+        },
+        {
+          label: "Share",
+          icon: "share",
+          id: "share",
+        },
+        {
+          label: "Delete",
+          icon: "delete",
+          id: "delete",
+        },
+      ]}
+      position="bottomLeft" />}
+ />
+ <Bar padding="2x" 
+ left={
+   <Text size="lg" 
+   text="Live the California dream at this modern paradise right on the beach in Malibu. Whether it's your escape from the city or new full time residence; nothing beats waking up to the sound of waves and having coffee on the sun drenched deck with dolphins swimming by in the morning. Located just minutes away from Santa Monica and walking distance to Malibu's hottest restaurant Moonshadows. It's time to buy that stand up paddleboard, get back in tune with nature and start living your Malibu dream now. This is the best deal under $4 million on the beach."
+   />
+   } />
+ </Card>
+ <div/>
+      </Grid>
+  </Story>
+</Preview>
+
+### Positions
+
+Menus should be positioned relative to the edge of the screen or browser. They typically appear next to (or in front of) the element that generates them. If they are in a position to be cut off by the browser or screen’s edge, the menu can should appear to the left, right, or above the element that generates it.
+
+<Preview>
+  <Story name="Position">
+   <Grid columns="3" gap="3xl">
+  <Card id="Menu_Position_BottomLeft_Card">
+  <Bar padding="2x" 
+  left = {<Title size="xl" weight="bold" text="Malibu, CA"/>}
+  right={
+     <Menu
+      visible
+      id="Menu_Position_BottomLeft"
+      data={[
+        {
+          label: "Save",
+          id: "save"
+        },
+        {
+          label: "Filter",
+          id: "filter"
+        },
+        {
+          label: "Share",
+          id: "share"
+        },
+        {
+          label: "Delete",
+          id: "delete"
+        },
+      ]}
+      position="bottomLeft" />}
+ />
+ <Bar padding="2x" 
+ left={
+   <Text size="lg" 
+   text="Live the California dream at this modern paradise right on the beach in Malibu. Whether it's your escape from the city or new full time residence; nothing beats waking up to the sound of waves and having coffee on the sun drenched deck with dolphins swimming by in the morning. Located just minutes away from Santa Monica and walking distance to Malibu's hottest restaurant Moonshadows. It's time to buy that stand up paddleboard, get back in tune with nature and start living your Malibu dream now. This is the best deal under $4 million on the beach."
+   />
+   } />
+ </Card>
+  <Card id="Menu_Position_BottomRight_Card">
+  <Bar padding="2x" 
+  right = {<Title size="xl" weight="bold" text="Malibu, CA"/>}
+  left={
+     <Menu
+      visible
+      id="Menu_Position_BottomRight"
+      data={[
+        {
+          label: "Save",
+          id: "save",
+        },
+        {
+          label: "Filter",
+          id: "filter",
+        },
+        {
+          label: "Share",
+          id: "share",
+        },
+        {
+          label: "Delete",
+          id: "delete",
+        },
+      ]}
+      position="bottomRight" />}
+ />
+ <Bar padding="2x" 
+ left={
+   <Text size="lg" 
+   text="Live the California dream at this modern paradise right on the beach in Malibu. Whether it's your escape from the city or new full time residence; nothing beats waking up to the sound of waves and having coffee on the sun drenched deck with dolphins swimming by in the morning. Located just minutes away from Santa Monica and walking distance to Malibu's hottest restaurant Moonshadows. It's time to buy that stand up paddleboard, get back in tune with nature and start living your Malibu dream now. This is the best deal under $4 million on the beach."
+   />
+   } />
+ </Card>
+ <Card id="Menu_Position_TopLeft_Card">
+ <Bar padding="2x" 
+ left={
+   <Text size="lg" 
+   text="Live the California dream at this modern paradise right on the beach in Malibu. Whether it's your escape from the city or new full time residence; nothing beats waking up to the sound of waves and having coffee on the sun drenched deck with dolphins swimming by in the morning. Located just minutes away from Santa Monica and walking distance to Malibu's hottest restaurant Moonshadows. It's time to buy that stand up paddleboard, get back in tune with nature and start living your Malibu dream now. This is the best deal under $4 million on the beach."
+   />
+   } />
+   <Bar padding="2x" 
+  left = {<Title size="xl" weight="bold" text="Malibu, CA"/>}
+  right={
+     <Menu
+      visible
+      id="Menu_Position_TopLeft"
+      data={[
+        {
+          label: "Save",
+          id: "save",
+        },
+        {
+          label: "Filter",
+          id: "filter"
+        },
+        {
+          label: "Share",
+          id: "share"
+        },
+        {
+          label: "Delete",
+          id: "delete",
+        },
+      ]}
+      position="topLeft" />}
+ />
+ </Card>
+      </Grid>
+  </Story>
+</Preview>
+
+
+
+## Props
+
+<Props of={Menu} />

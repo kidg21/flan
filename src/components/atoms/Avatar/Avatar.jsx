@@ -1,3 +1,4 @@
+/* eslint-disable complexity */
 /* eslint-disable security/detect-object-injection */
 /* eslint-disable linebreak-style */
 import React from "react";
@@ -12,7 +13,11 @@ const AvatarText = styled(Title)`
   font-size: ${(props) => {
     return props.fontSize || "inherit";
   }};
-  margin: 0;
+  font-weight: bold;
+`;
+
+const AvatarImage = styled(Image)`
+  height: inherit;
 `;
 
 const TagContainer = styled.div`
@@ -40,78 +45,80 @@ const TagContainer = styled.div`
 `;
 
 const sizeHash = {
-  "4x": {
-    avatar: "5em",
-    font: "2.5em",
+  xs: {
+    avatar: "1.5em",
+    font: "0.5em",
   },
-  "3x": {
-    avatar: "4em",
-    font: "2em",
-  },
-  "2x": {
-    avatar: "3em",
-    font: "1.5em",
-  },
-  "1x": {
-    avatar: "2.5em",
-    font: "1em",
-  },
-  "sm": {
+  sm: {
     avatar: "2em",
-    font: "1em",
+    font: "0.75em",
+  },
+  lg: {
+    avatar: "3em",
+    font: "1.25em",
+  },
+  xl: {
+    avatar: "3.5em",
+    font: "1.5em",
   },
 };
 
+const variantHash = {
+  success: "success80",
+  warning: "warning80",
+  alert: "alert80",
+  info: "info80",
+  action: "action80",
+};
+
 function Avatar({
-  type, icon, id, src, alt, image, label, brand, onClick, size,
+  alt, brand, icon, id, label, onClick, size, variant,
 }) {
   let labelType;
   let iconType;
 
   const selectedSize = size && sizeHash[size.toLowerCase()];
-  const avatarSize = selectedSize ? selectedSize.avatar : "2.5rem";
-  const fontSize = selectedSize ? selectedSize.font : "1em";
+  const avatarSize = selectedSize ? selectedSize.avatar : "2.2rem";
+  const fontSize = selectedSize ? selectedSize.font : "0.82em";
 
-  const typeHash = {
-    success: "success80",
-    warning: "warning80",
-    alert: "alert80",
-    info: "info80",
-    action: "action80",
-  };
-
-  let backgroundColor = type ? (typeHash[type] || type.toLowerCase()) : "action40";
+  let backgroundColor = variant ? (variantHash[variant] || variant.toLowerCase()) : "action40";
   const textColor = "inverse";
 
-  if (image) {
-    iconType = (<Image
-      circle
-      src={src}
-      height={avatarSize}
-      width={avatarSize}
-      alt={alt}
-    />);
-  } else if (icon) {
-    iconType = <Icon icon={icon} size="lg" />;
-  } else {
-    labelType = <AvatarText weight="semibold" fontSize={fontSize} text={label.substring(0, 2)} />;
+  let media = null;
+  try {
+    if (icon && icon.search(/[/\\.]/) >= 0) {
+      media = new URL(icon, window.location.origin);
+    }
+  } catch (ex) {
+    media = null;
   }
 
-  if (!type && brand) backgroundColor = brand.toLowerCase();
+  if (media) {
+    iconType = (
+      <AvatarImage
+        alt={alt}
+        isRound
+        src={media}
+        width={avatarSize}
+      />
+    );
+  } else if (icon && typeof icon === "string") {
+    iconType = <Icon icon={icon} size={size} />;
+  } else {
+    labelType = <AvatarText weight="semibold" fontSize={fontSize} text={label && label.substring(0, 2)} />;
+  }
+
+  if (!variant && brand) {
+    backgroundColor = brand;
+  }
 
   return (
     <TagContainer
-      backgroundColor={backgroundColor}
-      icon={icon}
-      src={src}
-      alt={alt}
-      brand={brand}
-      image={image}
       avatarSize={avatarSize}
+      backgroundColor={backgroundColor}
       id={id}
-      label={label}
-      textColor={textColor}
       onClick={onClick}
+      textColor={textColor}
     >
       {iconType || labelType}
     </TagContainer>
@@ -119,31 +126,33 @@ function Avatar({
 }
 
 Avatar.propTypes = {
-  /** Options: 'action',  'info', 'success', 'warning', 'alert' */
-  type: PropTypes.string,
-  /** Enter the name of the icon as the prop value. (ex. icon='circle' */
-  icon: PropTypes.string,
-  image: PropTypes.node,
-  src: PropTypes.node,
-  brand: PropTypes.string,
   alt: PropTypes.string,
+  brand: PropTypes.oneOf("research", "jobs", "bi", "broker", "brand1", "brand2", "brand3", "brand4"),
+  /** Option 1:
+   * <br>
+   * Enter the name of the icon as the prop value. (ex. icon="circle"
+   *  Option 2:
+   * <br>
+   * Enter an image URL. (ex. icon="http://path/to/image/image.png") */
+  icon: PropTypes.string,
   id: PropTypes.string,
-  onClick: PropTypes.node,
-  size: PropTypes.node,
   label: PropTypes.string,
+  onClick: PropTypes.func,
+  /** Options: 'xs',  'sm', 'lg', 'xl' */
+  size: PropTypes.string,
+  /** Options: 'action',  'info', 'success', 'warning', 'alert' */
+  variant: PropTypes.string,
 };
 
 Avatar.defaultProps = {
-  type: null,
-  image: null,
-  src: null,
-  brand: null,
   alt: null,
-  size: null,
-  onClick: null,
+  brand: null,
   icon: null,
   id: null,
   label: null,
+  onClick: null,
+  size: null,
+  variant: null,
 };
 
 export default Avatar;

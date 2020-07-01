@@ -1,7 +1,8 @@
+/* eslint-disable linebreak-style */
 import React from "react";
 import PropTypes from "prop-types";
 import Text, { Title } from "base/Typography";
-import Bar from "blocks/Bar";
+import Bar from "layout/Bar";
 import Card, { CardSection } from "elements/Card";
 import Grid from "layout/Grid";
 import Icon from "atoms/Icon";
@@ -50,22 +51,20 @@ const DisplayGrid = (storyFn) => {
 };
 
 function IconGrid({ data }) {
-  return data.map(item => (
-    <Card
-      key={item.icon}
-      id={item.icon}
-      hover
-    // TODO: Add background props to Card
-    // type={item.background}
-    >
-      <CardSection>
+  return data.map((item) => {
+    return (
+      <Card
+        key={item.icon}
+        id={item.icon}
+        hover
+      >
         <Bar
           contentAlign="center"
           left={{
             content: <Icon
               icon={item.icon}
-              type={item.type}
-              size={item.size || "2x"}
+              variant={item.variant}
+              size={item.size || "xl"}
               spin={item.spin}
               pulse={item.pulse}
               fixedWidth
@@ -82,18 +81,20 @@ function IconGrid({ data }) {
             align: "left",
           }}
         />
-      </CardSection>
-    </Card>
-  ));
+      </Card>
+    );
+  });
 }
 
 function CommandGrid({ data }) {
-  return data.map(item => (
-    <Grid gap="tiny">
-      <Command command={item.command} />
-      <Text text={item.desc} />
-    </Grid>
-  ));
+  return data.map((item) => {
+    return (
+      <Grid gap="xs">
+        <Command command={item.command} />
+        <Text text={item.desc} />
+      </Grid>
+    );
+  });
 }
 
 export { FullScreen, Center, Padding, Container, Spacer, DisplayGrid, IconGrid, CommandGrid };

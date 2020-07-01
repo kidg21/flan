@@ -1,26 +1,24 @@
-/* eslint-disable jsx-a11y/media-has-caption */
 /* eslint-disable linebreak-style */
+/* eslint-disable jsx-a11y/media-has-caption */
 /* eslint-disable complexity */
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useMemo } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { PlaceholderText } from "helpers/Placeholders.jsx";
-import { Spacer } from "helpers/Display.jsx";
-import { Darken } from "Variables";
+import { PlaceholderText, Spacer, getGuid } from "helpers";
 import Grid from "layout/Grid";
-import Bar from "blocks/Bar";
+import Bar from "layout/Bar";
 import Text, { Title } from "base/Typography";
 import Icon from "atoms/Icon";
 import Command from "atoms/Command";
-import Image from "atoms/Image";
+import Media from "atoms/Media";
 import Avatar from "atoms/Avatar";
 import Menu from "blocks/Menu";
+import Badge from "atoms/Badge";
 import Expander from "utils/Expander";
 import { DisableTransitionContext } from "States";
-import mime from "mime";
 
 const LinkedWrapper = styled.a`
-flex: auto;
+  flex: auto;
 `;
 
 const CardSectionWrapper = styled.section`
@@ -32,7 +30,7 @@ const CardSectionWrapper = styled.section`
     return props.theme.text[props.sectionColor] || "";
   }};
   background-color: ${(props) => {
-    return props.theme.palette[props.sectionBackground] || "";
+    return props.theme.background[props.sectionBackground] || "";
   }};
   padding: ${(props) => {
     return props.sectionPadding || "0.5em 1em";
@@ -45,7 +43,7 @@ const CardSectionWrapper = styled.section`
   }};
   max-height: ${(props) => {
     return props.open ? "0" : "100vh";
-  }}; 
+  }};
   transition: ${(props) => {
     return props.disableTransition ? "" : "all 0.25s ease-in-out";
   }};
@@ -53,31 +51,20 @@ const CardSectionWrapper = styled.section`
   color: ${(props) => {
     return props.theme.text[props.sectionColor] || "";
   }};
-  }
-`;
-
-const Media = styled(CardSectionWrapper)`
-  height: ${(props) => {
-    return props.image ? "12em" : "";
+    &:hover {
+      color: ${(props) => {
+    return props.theme.text[props.sectionColorHover] || "";
   }};
-  padding: 0;
-  overflow: hidden;
-  + ${CardSectionWrapper} {
-    margin-top: 1px;
+    }
   }
 `;
 
-const CardImage = styled(Image)`
-  object-fit: cover;
-  width: 100%;
-  max-width: inherit;
-  height: 100%;
-`;
-
-const CardAudio = styled.audio`
-  width: 100%;
-  &:focus {
-    outline: none;
+const CardMedia = styled(Media)`
+  * {
+    border-radius: ${(props) => {
+    return `${props.theme.borders.radiusMin} ${props.theme.borders.radiusMin} 0 0`;
+  }};
+    }
   }
 `;
 
@@ -88,12 +75,11 @@ const CardWrapper = styled.div`
     return props.onClick ? "pointer" : "";
   }};
   flex-direction: column;
-  border-radius: ${(props) => {
-    return props.theme.borders.radiusMin;
-  }};
   flex: none;
   background-color: ${(props) => {
-    return props.cardBackground ? props.theme.palette[props.cardBackground] : props.theme.background.default;
+    return props.cardBackground
+      ? props.theme.background[props.cardBackground]
+      : props.theme.background.default;
   }};
   padding: ${(props) => {
     return props.cardPadding || "";
@@ -101,46 +87,17 @@ const CardWrapper = styled.div`
   color: ${(props) => {
     return props.cardColor ? props.theme.text[props.cardColor] : props.theme.text.primary;
   }};
-  filter: ${(props) => {
+  border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
+  }};
+
+  box-shadow: ${(props) => {
     return props.theme.shadows[props.cardShadow] || "";
   }};
   a {
   color: ${(props) => {
     return props.theme.text[props.cardColor] || "";
   }};
-  }
-  ${CardSectionWrapper} {
-    &:first-of-type {
-      border-radius: ${(props) => {
-    return `${props.theme.borders.radiusMin} ${props.theme.borders.radiusMin} 0 0`;
-  }};
-    }
-    &:last-of-type {
-      border-radius: ${(props) => {
-    return `0 0 ${props.theme.borders.radiusMin} ${props.theme.borders.radiusMin}`;
-  }};
-    }
-    &:only-of-type {
-      border-radius: ${(props) => {
-    return props.theme.borders.radiusMin;
-  }};
-    }
-  }
-  ${CardSectionWrapper}:not(${Media}) {
-    &:first-of-type {
-      padding: 0.75em 1em 0.5em;
-    }
-    &:last-of-type {
-      padding: 0.5em 1em 0.75em;
-    }
-    &:only-of-type {
-      padding: 0.75em 1em;
-    }
-    &:last-of-type,
-    &:only-of-type {
-      flex: auto;
-      height: inherit;
-    }
   }
   /* Prototype Content - displays when a Card is empty */
   &:empty {
@@ -156,17 +113,39 @@ const CardWrapper = styled.div`
 `;
 
 const CardGridWrapper = styled(Grid)`
+  /** TODO: Prevent Cards from being cropped in norrow containers */
+  /* grid-template-columns: repeat(auto-fill,minmax(auto, 14rem)); */
+  /* justify-content: space-between; */
+  padding: 1rem;
   ${CardWrapper} {
     height: 100%;
-    filter: ${(props) => {
-    return props.theme.shadows.shadow1;
+    border-radius: ${(props) => {
+    return props.theme.borders.radiusMin;
+  }};
+    box-shadow: ${(props) => {
+    return props.theme.shadows.dropShadow;
   }};
     transition: all 0.25s ease-in-out;
     &:hover {
-      ${Darken};
-      filter: ${(props) => {
-    return props.theme.shadows.shadow3;
+    box-shadow: ${(props) => {
+    return props.theme.shadows.dropShadow2;
   }};
+    }
+    ${CardSectionWrapper}:not(${Media}) {
+      &:first-of-type {
+        padding: 0.75em 1em 0.5em;
+      }
+      &:last-of-type {
+        padding: 0.5em 1em 0.75em;
+      }
+      &:only-of-type {
+        padding: 0.75em 1em;
+      }
+      &:last-of-type,
+      &:only-of-type {
+        flex: auto;
+        height: inherit;
+      }
     }
   }
   /* Prototype Content - displays when a Card List is empty */
@@ -195,22 +174,23 @@ function ExpandingSection({
       header={
         title || description || label || icon ? (
           <Bar
+            padding="0"
             contentAlign="center"
             left={label || icon ? {
-              content: <Avatar label={label} icon={icon} />,
+              content: <Avatar label={label} icon={icon} size="sm" />,
               width: "max-content",
             } : null}
             center={{
               content: (
                 <React.Fragment>
-                  {title ? <Title text={title} /> : null}
+                  {title ? <Title size="lg" text={title} weight="bold" /> : null}
                   {description ? <Text text={description} /> : null}
                 </React.Fragment>
               ),
               align: "left",
             }}
             right={children ? {
-              content: <Icon icon="up" size="lg" rotation={rotation} />,
+              content: <Icon icon="down" size="lg" rotation={rotation} />,
               width: "max-content",
             } : null}
           />
@@ -243,20 +223,22 @@ ExpandingSection.defaultProps = {
 };
 
 function CardSection({
-  children, className, footer, header, id, onClick, padding, type,
+  children, className, footer, header, id, onClick, padding, variant,
 }) {
   let sectionColor;
+  let sectionColorHover;
   let sectionBackground;
-  if (type) {
+  if (variant) {
     sectionColor = "inverse";
-    sectionBackground = type.toLowerCase();
+    sectionColorHover = "inverseHover";
+    sectionBackground = variant.toLowerCase();
   }
   let sectionPadding;
   const numPadding = padding ? parseInt(padding, 10) : NaN;
   if (padding && padding.toLowerCase() === "0") {
     sectionPadding = "0";
   } else if (!isNaN(numPadding) && numPadding < 5) {
-    sectionPadding = `${0.25 * numPadding}em 1em`;
+    sectionPadding = `${0.5 * numPadding}em 1em`;
   }
   let sectionJustify;
   if (header) {
@@ -274,6 +256,7 @@ function CardSection({
       onClick={onClick}
       sectionBackground={sectionBackground}
       sectionColor={sectionColor}
+      sectionColorHover={sectionColorHover}
       sectionPadding={sectionPadding}
       sectionJustify={sectionJustify}
     >
@@ -288,9 +271,9 @@ CardSection.propTypes = {
   footer: PropTypes.node,
   header: PropTypes.node,
   id: PropTypes.string,
-  padding: PropTypes.oneOf(["0", "1x", "2x", "3x", "4x"]),
+  padding: PropTypes.oneOf(["0", "2x", "3x", "4x"]),
   onClick: PropTypes.func,
-  type: PropTypes.string,
+  variant: PropTypes.oneOf(["info", "success", "warning", "alert"]),
 };
 CardSection.defaultProps = {
   children: null,
@@ -300,10 +283,11 @@ CardSection.defaultProps = {
   id: null,
   padding: null,
   onClick: null,
-  type: null,
+  variant: null,
 };
 
 function Card({
+  badgeLabel,
   body,
   children,
   className,
@@ -312,7 +296,7 @@ function Card({
   icon,
   id,
   mediaDesc,
-  inverse,
+  isInverse,
   label,
   media,
   href,
@@ -321,11 +305,13 @@ function Card({
   padding,
   shadow,
   title,
-  type,
+  variant,
 }) {
+  const uId = useMemo(() => { return id || getGuid(); }, [id]);
+
   let cardColor;
   let cardBackground;
-  if (inverse) {
+  if (isInverse) {
     cardColor = "inverse";
     cardBackground = "inverse";
   }
@@ -338,14 +324,14 @@ function Card({
 
   let cardShadow;
   switch (shadow) {
-    case "none":
+    case "0":
       cardShadow = null;
       break;
     case "2x":
-      cardShadow = "shadow1";
+      cardShadow = "dropShadow2";
       break;
     default:
-      cardShadow = "shadow0";
+      cardShadow = "outlineShadow";
       break;
   }
 
@@ -359,14 +345,13 @@ function Card({
     }
   }
 
-
   let centerContent;
 
   if (onClick) {
     centerContent = (
       <LinkedWrapper >
         <React.Fragment >
-          {title ? <Title text={title}  /> : null}
+          {title ? <Title size="lg" text={title} weight="bold" /> : null}
           {description ? (<Text text={description} />
           ) : null}
         </React.Fragment>
@@ -375,32 +360,17 @@ function Card({
   } else {
     centerContent = (
       <React.Fragment >
-        {title ? <Title text={title} /> : null}
-        {description ? (<Text text={description}  />
+        {title ? <Title size="lg" text={title} weight="bold" /> : null}
+        {description ? (<Text text={description} />
         ) : null}
       </React.Fragment>);
   }
 
   let headerSection;
   if (title || description) {
-    headerSection = (
-      <CardSection type={type} >
-        <Bar
-          contentAlign="center"
-          left={label || icon ? {
-            content: <Avatar label={label} icon={icon} />,
-            width: "max-content",
-          } : null}
-          center={{
-            content: centerContent,
-            align: "left",
-          }}
-        />
-      </CardSection>
-    );
-    if (more && more.element) {
+    if (more && more.content) {
       headerSection = (
-        <CardSection type={type} disableTransition={disableTransition}>
+        <CardSection id={`${uId}-Header`} variant={variant} disableTransition={disableTransition}>
           <ExpandingSection
             description={description}
             icon={icon}
@@ -412,84 +382,29 @@ function Card({
             open={open}
             title={title}
           >
-            {more.element}
+            {more.content}
           </ExpandingSection>
         </CardSection>
       );
-    }
-  }
-
-  const mimeType = mime.getType(media);
-  let mediaSection;
-  if (mimeType) {
-    if (mimeType.startsWith("image")) {
-      mediaSection = (
-        <Media image>
-          <CardImage
-            src={media}
-            alt={mediaDesc || `Image: ${media}`}
-            width="100%"
+    } else {
+      headerSection = (
+        <CardSection id={`${uId}-Header`} variant={variant} >
+          {badgeLabel ? <Badge label={badgeLabel} /> : null}
+          <Bar
+            padding="0"
+            contentAlign="center"
+            left={label || icon ? {
+              content: <Avatar label={label} icon={icon} size="sm" />,
+              width: "max-content",
+            } : null}
+            center={{
+              content: centerContent,
+              align: "left",
+            }}
           />
-        </Media>
-      );
-    } else if (mimeType.startsWith("video")) {
-      mediaSection = (
-        <Media>
-          <video width="100%" title={mediaDesc || `Video: ${media}`} controls>
-            <source
-              src={media}
-              type="video/mp4"
-            />
-            <source
-              src={media}
-              type="video/webm"
-            />
-            <source
-              src={media}
-              type="video/ogg"
-            />
-            Your browser does not support the video element.
-          </video>
-        </Media>
-      );
-    } else if (mimeType.startsWith("audio")) {
-      mediaSection = (
-        <CardSection>
-          <CardAudio title={mediaDesc || `Audio: ${media}`} controls>
-            <source
-              src={media}
-              type="audio/mp3"
-            />
-            <source
-              src={media}
-              type="audio/ogg"
-            />
-            <source
-              src={media}
-              type="audio/wav"
-            />
-            Your browser does not support the audio element.
-          </CardAudio>
         </CardSection>
       );
-      // Currently redundant to the 'else' case
-      // but captured should we need to handle
-      // supported mime-types in a specific way
-    } else if (mimeType.startsWith("text")
-      || mimeType.startsWith("application")) {
-      mediaSection = (
-        <Media>
-          <iframe src={media} title={mediaDesc || `Media: ${media}`} width="100%" frameBorder="0" allow="fullscreen" allowFullScreen />
-        </Media>
-      );
     }
-    // Fallback for Youtube, Vimeo and other unsupported mime-types
-  } else {
-    mediaSection = (
-      <Media>
-        <iframe src={media} title={mediaDesc || `Media: ${media}`} width="100%" frameBorder="0" allow="fullscreen" allowFullScreen />
-      </Media>
-    );
   }
 
   let commandElements = null;
@@ -498,9 +413,11 @@ function Card({
     if (commands.length >= 2) {
       commandElements = (
         <Bar
+          padding="0"
+          contentAlign="bottom"
           left={{
             content: (
-              <Grid columns="2">
+              <Grid>
                 <Command
                   label={commands[0].label}
                   onClick={commands[0].onClick}
@@ -517,7 +434,7 @@ function Card({
           }}
           right={{
             // More than 2 Commands sends overflow to Menu
-            content: commands.length > 2 ? <Menu data={commands.slice(2)} position="topLeft" /> : <Spacer />,
+            content: commands.length > 2 ? <Menu id={`${uId}-Menu`} data={commands.slice(2)} position="topLeft" /> : <Spacer />,
             width: "10%",
           }}
         />
@@ -526,6 +443,8 @@ function Card({
     } else if (commands.length === 1) {
       commandElements = (
         <Bar
+          padding="0"
+          contentAlign="bottom"
           left={
             <Command
               label={commands[0].label}
@@ -546,26 +465,27 @@ function Card({
       cardShadow={cardShadow}
       className={className}
       onClick={onClick}
-      id={id}
+      id={uId}
       href={href}
-      inverse={inverse}
+      isInverse={isInverse}
       media={media}
       shadow={shadow}
     >
-      {media ? mediaSection : null}
+      {media ? <CardMedia id={`${uId}-Media`} media={media} mediaDesc={mediaDesc} /> : null}
       {headerSection}
       {body ? (
-        <CardSection onClick={onClick}>
+        <CardSection id={`${uId}-Body`} onClick={onClick}>
           <Text text={body} />
         </CardSection>
       ) : null}
       {children}
-      {commandElements ? <CardSection footer>{commandElements}</CardSection> : null}
+      {commandElements ? <CardSection id={`${uId}-Footer`} footer>{commandElements}</CardSection> : null}
     </CardWrapper>
   );
 }
 
 Card.propTypes = {
+  badgeLabel: PropTypes.string,
   body: PropTypes.string,
   children: PropTypes.node,
   className: PropTypes.string,
@@ -579,21 +499,22 @@ Card.propTypes = {
   description: PropTypes.string,
   icon: PropTypes.string,
   id: PropTypes.string,
-  inverse: PropTypes.bool,
+  isInverse: PropTypes.bool,
   label: PropTypes.string,
   mediaDesc: PropTypes.string,
   media: PropTypes.string,
   more: PropTypes.shape({
-    element: PropTypes.node,
+    content: PropTypes.node,
     onToggle: PropTypes.func,
   }),
   onClick: PropTypes.func,
-  padding: PropTypes.oneOf(["0", "1x", "2x", "3x", "4x"]),
-  shadow: PropTypes.oneOf(["none", "1x", "2x"]),
+  padding: PropTypes.oneOf(["0", "2x", "3x", "4x"]),
+  shadow: PropTypes.oneOf(["0", "2x"]),
   title: PropTypes.string,
-  type: PropTypes.string,
+  variant: PropTypes.oneOf(["info", "success", "warning", "alert"]),
 };
 Card.defaultProps = {
+  badgeLabel: null,
   body: null,
   children: null,
   className: null,
@@ -602,26 +523,26 @@ Card.defaultProps = {
   href: null,
   icon: null,
   id: null,
-  inverse: null,
+  isInverse: false,
   label: null,
   mediaDesc: null,
   media: null,
-  more: null,
+  more: "",
   onClick: null,
   padding: null,
   shadow: null,
   title: null,
-  type: null,
+  variant: null,
 };
 
 function CardGrid({
-  children, className, columns, data, gap, id, inverse, rows,
+  children, className, columns, data, gap, id, isInverse, rows,
 }) {
   return (
     <CardGridWrapper
       className={className}
       columns={columns}
-      gap={gap}
+      gap={gap || "lg"}
       id={id}
       rows={rows}
     >
@@ -635,15 +556,17 @@ function CardGrid({
               icon={item.icon}
               id={item.id}
               mediaDesc={item.mediaDesc}
-              inverse={inverse}
+              isInverse={isInverse}
               key={item.id}
               label={item.label}
               media={item.media}
               more={item.more}
               onClick={item.onClick}
               title={item.title}
-              type={item.type}
-            />
+              variant={item.variant}
+            >
+              {item.children}
+            </Card>
           );
         })}
     </CardGridWrapper>
@@ -681,18 +604,18 @@ CardGrid.propTypes = {
   gap: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.oneOf([
-      "none",
-      "tiny",
-      "small",
-      "default (normal)",
-      "large",
-      "xlarge",
-      "xxlarge",
-      "[grid-template-rows]",
+      "0",
+      "xs",
+      "sm",
+      "lg",
+      "xl",
+      "2xl",
+      "3xl",
+      "4xl",
     ]),
   ]),
   id: PropTypes.string,
-  inverse: PropTypes.bool,
+  isInverse: PropTypes.bool,
   /** Defines the heights of grid rows
    *
    * Options: Any switch case or any standard value accepted by the CSS Grid property, 'grid-template-rows'.
@@ -706,7 +629,7 @@ CardGrid.defaultProps = {
   data: null,
   gap: null,
   id: null,
-  inverse: false,
+  isInverse: false,
   rows: null,
 };
 

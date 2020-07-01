@@ -2,7 +2,7 @@
 // /* eslint-disable react/jsx-filename-extension */
 // import React from "react";
 // import { Padding } from "helpers/Display";
-// import Form, { Section } from "layout/Form";
+// import Form, { FormSection } from "layout/Form";
 // import Checkbox, { CheckboxGroup } from "atoms/Checkbox";
 
 // const shortLabels = [
@@ -95,21 +95,21 @@
 //     () => {
 //       return (
 //         <Form>
-//           <Section>
+//           <FormSection>
 //             <CheckboxGroup
 //               id="group1"
 //               label="Checkbox Group Label"
 //               data={shortLabels}
 //               helpText="Hang in there, buddy, I'm here to help!"
 //             />
-//           </Section>
+//           </FormSection>
 //         </Form>
 //       );
 //     })
 //   .add("Knobs", () => {
 //     return (
 //       <Form>
-//         <Section title="Knobs">
+//         <FormSection title="Knobs">
 //           <CheckboxGroup
 //             id="group1"
 //             data={shortLabels}
@@ -148,53 +148,53 @@
 //             error={text("error", null, "Checkbox Group")}
 //             disabled={boolean("disabled", false, "Checkbox Group")}
 //           />
-//         </Section>
+//         </FormSection>
 //       </Form>
 //     );
 //   })
 //   .add("Checkbox Group (responsive)", () => {
 //     return (
 //       <Form>
-//         <Section title="Checkbox Group (responsive)">
+//         <FormSection title="Checkbox Group (responsive)">
 //           <CheckboxGroup data={shortLabels} />
-//         </Section>
+//         </FormSection>
 //       </Form>
 //     );
 //   })
 //   .add("Checkbox Group (2 columns)", () => {
 //     return (
 //       <Form>
-//         <Section title="Checkbox Group (2 columns)">
+//         <FormSection title="Checkbox Group (2 columns)">
 //           <CheckboxGroup data={shortLabels} columns="2" />
-//         </Section>
+//         </FormSection>
 //       </Form>
 //     );
 //   })
 //   .add("Checkbox Group (3 columns)", () => {
 //     return (
 //       <Form>
-//         <Section title="Checkbox Group (3 columns)">
+//         <FormSection title="Checkbox Group (3 columns)">
 //           <CheckboxGroup data={shortLabels} columns="3" />
-//         </Section>
+//         </FormSection>
 //       </Form>
 //     );
 //   })
 //   .add("Checkbox Group (mixed columns)", () => {
 //     return (
 //       <Form>
-//         <Section title="Checkbox Group (mixed columns)">
+//         <FormSection title="Checkbox Group (mixed columns)">
 //           <CheckboxGroup data={shortLabels} columns="2" />
 //           <CheckboxGroup data={longLabels} columns="1" />
-//         </Section>
+//         </FormSection>
 //       </Form>
 //     );
 //   })
 //   .add("Checkbox Group (right-aligned)", () => {
 //     return (
 //       <Form>
-//         <Section title="Checkbox Group (right-aligned)">
+//         <FormSection title="Checkbox Group (right-aligned)">
 //           <CheckboxGroup data={shortLabels} columns="2" align="right" />
-//         </Section>
+//         </FormSection>
 //       </Form>
 //     );
 //   });

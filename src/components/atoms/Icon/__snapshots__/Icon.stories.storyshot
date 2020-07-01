@@ -3,11 +3,12 @@
 exports[` 1`] = `
 <svg
   aria-hidden="true"
-  className="svg-inline--fa fa-user-circle fa-w-16 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+  className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jSXIyQ"
   color={null}
   data-icon="user-circle"
   data-prefix="far"
   focusable="false"
+  fontSize="1.5em"
   id={null}
   role="img"
   style={Object {}}
@@ -24,17 +25,18 @@ exports[` 1`] = `
 
 exports[` 2`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 yKVjg"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 gJQrtw"
   id={null}
   rows={null}
 >
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jSXIyQ"
     color={null}
     data-icon="user-circle"
     data-prefix="far"
     focusable="false"
+    fontSize="1.5em"
     id={null}
     role="img"
     style={Object {}}
@@ -49,11 +51,12 @@ exports[` 2`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 egNihH"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kVtPKV"
     color="info80"
     data-icon="user-circle"
     data-prefix="far"
     focusable="false"
+    fontSize="1.5em"
     id={null}
     role="img"
     style={Object {}}
@@ -68,11 +71,12 @@ exports[` 2`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 OvdFF"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 RTMYX"
     color="success80"
     data-icon="user-circle"
     data-prefix="far"
     focusable="false"
+    fontSize="1.5em"
     id={null}
     role="img"
     style={Object {}}
@@ -87,11 +91,12 @@ exports[` 2`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 eKrDaR"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dgNMiz"
     color="warning80"
     data-icon="user-circle"
     data-prefix="far"
     focusable="false"
+    fontSize="1.5em"
     id={null}
     role="img"
     style={Object {}}
@@ -106,11 +111,32 @@ exports[` 2`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 fyNWBU"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 ZMLFS"
     color="alert80"
     data-icon="user-circle"
     data-prefix="far"
     focusable="false"
+    fontSize="1.5em"
+    id={null}
+    role="img"
+    style={Object {}}
+    viewBox="0 0 496 512"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M248 104c-53 0-96 43-96 96s43 96 96 96 96-43 96-96-43-96-96-96zm0 144c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm0-240C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 448c-49.7 0-95.1-18.3-130.1-48.4 14.9-23 40.4-38.6 69.6-39.5 20.8 6.4 40.6 9.6 60.5 9.6s39.7-3.1 60.5-9.6c29.2 1 54.7 16.5 69.6 39.5-35 30.1-80.4 48.4-130.1 48.4zm162.7-84.1c-24.4-31.4-62.1-51.9-105.1-51.9-10.2 0-26 9.6-57.6 9.6-31.5 0-47.4-9.6-57.6-9.6-42.9 0-80.6 20.5-105.1 51.9C61.9 339.2 48 299.2 48 256c0-110.3 89.7-200 200-200s200 89.7 200 200c0 43.2-13.9 83.2-37.3 115.9z"
+      fill="currentColor"
+      style={Object {}}
+    />
+  </svg>
+  <svg
+    aria-hidden="true"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dRpqLF"
+    color="neutral20"
+    data-icon="user-circle"
+    data-prefix="far"
+    focusable="false"
+    fontSize="1.5em"
     id={null}
     role="img"
     style={Object {}}
@@ -128,17 +154,18 @@ exports[` 2`] = `
 
 exports[` 3`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 yKVjg"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 gJQrtw"
   id={null}
   rows={null}
 >
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 cpKGZV"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jeUXzL"
     color="research"
     data-icon="user-circle"
     data-prefix="far"
     focusable="false"
+    fontSize="1.5em"
     id={null}
     role="img"
     style={Object {}}
@@ -153,11 +180,12 @@ exports[` 3`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 hTRknh"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 eeNkWP"
     color="bi"
     data-icon="user-circle"
     data-prefix="far"
     focusable="false"
+    fontSize="1.5em"
     id={null}
     role="img"
     style={Object {}}
@@ -172,11 +200,12 @@ exports[` 3`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 DqbYZ"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gSbUDL"
     color="broker"
     data-icon="user-circle"
     data-prefix="far"
     focusable="false"
+    fontSize="1.5em"
     id={null}
     role="img"
     style={Object {}}
@@ -191,11 +220,12 @@ exports[` 3`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 cSfnS"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jnAczo"
     color="jobs"
     data-icon="user-circle"
     data-prefix="far"
     focusable="false"
+    fontSize="1.5em"
     id={null}
     role="img"
     style={Object {}}
@@ -210,11 +240,12 @@ exports[` 3`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 hUZLsQ"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 cZshxK"
     color="brand1"
     data-icon="user-circle"
     data-prefix="far"
     focusable="false"
+    fontSize="1.5em"
     id={null}
     role="img"
     style={Object {}}
@@ -229,11 +260,12 @@ exports[` 3`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 blHimQ"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jDWoga"
     color="brand2"
     data-icon="user-circle"
     data-prefix="far"
     focusable="false"
+    fontSize="1.5em"
     id={null}
     role="img"
     style={Object {}}
@@ -248,11 +280,12 @@ exports[` 3`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 hStvgb"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 iyQHSR"
     color="brand3"
     data-icon="user-circle"
     data-prefix="far"
     focusable="false"
+    fontSize="1.5em"
     id={null}
     role="img"
     style={Object {}}
@@ -267,11 +300,12 @@ exports[` 3`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 cylHSm"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 bDLgxI"
     color="brand4"
     data-icon="user-circle"
     data-prefix="far"
     focusable="false"
+    fontSize="1.5em"
     id={null}
     role="img"
     style={Object {}}
@@ -289,7 +323,7 @@ exports[` 3`] = `
 
 exports[` 4`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 yKVjg"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 gJQrtw"
   id={null}
   rows={null}
 >
@@ -298,11 +332,12 @@ exports[` 4`] = `
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-user-circle fa-w-16 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+      className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jSXIyQ"
       color={null}
       data-icon="user-circle"
       data-prefix="far"
       focusable="false"
+      fontSize="1.5em"
       id={null}
       role="img"
       style={Object {}}
@@ -320,10 +355,9 @@ exports[` 4`] = `
       id={null}
     >
       <div
-        className="Tag__TagContainer-sc-128kb3h-0 liLHtX"
+        className="Tag__TagContainer-sc-128kb3h-0 ddCbiL"
         id={null}
         label={null}
-        style={null}
       />
     </div>
   </div>
@@ -332,11 +366,12 @@ exports[` 4`] = `
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-home-alt fa-w-18 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+      className="svg-inline--fa fa-home-alt fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 jSXIyQ"
       color={null}
       data-icon="home-alt"
       data-prefix="fas"
       focusable="false"
+      fontSize="1.5em"
       id={null}
       role="img"
       style={Object {}}
@@ -354,10 +389,9 @@ exports[` 4`] = `
       id={null}
     >
       <div
-        className="Tag__TagContainer-sc-128kb3h-0 kzfjeA"
+        className="Tag__TagContainer-sc-128kb3h-0 WNPDE"
         id={null}
         label={null}
-        style={null}
       />
     </div>
   </div>
@@ -366,11 +400,12 @@ exports[` 4`] = `
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-bookmark fa-w-12 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+      className="svg-inline--fa fa-bookmark fa-w-12 Icon__StyledIcon-sc-1oa9m1v-1 jSXIyQ"
       color={null}
       data-icon="bookmark"
       data-prefix="far"
       focusable="false"
+      fontSize="1.5em"
       id={null}
       role="img"
       style={Object {}}
@@ -388,10 +423,9 @@ exports[` 4`] = `
       id={null}
     >
       <div
-        className="Tag__TagContainer-sc-128kb3h-0 fmNJDy"
+        className="Tag__TagContainer-sc-128kb3h-0 fFfkGe"
         id={null}
         label={null}
-        style={null}
       />
     </div>
   </div>
@@ -400,11 +434,12 @@ exports[` 4`] = `
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-print fa-w-16 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+      className="svg-inline--fa fa-print fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jSXIyQ"
       color={null}
       data-icon="print"
       data-prefix="far"
       focusable="false"
+      fontSize="1.5em"
       id={null}
       role="img"
       style={Object {}}
@@ -422,16 +457,16 @@ exports[` 4`] = `
       id={null}
     >
       <div
-        className="Tag__TagContainer-sc-128kb3h-0 epLBxW"
+        className="Tag__TagContainer-sc-128kb3h-0 fEMXQS"
         id={null}
         label={null}
-        style={null}
       />
     </div>
   </div>
   <a
-    className="Icon__LinkedIcon-sc-1oa9m1v-0 kzNrBw"
+    className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
     disabled={null}
+    href={null}
     onClick={[Function]}
   >
     <div
@@ -439,11 +474,12 @@ exports[` 4`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-user fa-w-14 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 egNihH"
+        className="svg-inline--fa fa-user fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 kVtPKV"
         color="link"
         data-icon="user"
         data-prefix="far"
         focusable="false"
+        fontSize="1.5em"
         id={null}
         role="img"
         style={Object {}}
@@ -461,17 +497,17 @@ exports[` 4`] = `
         id={null}
       >
         <div
-          className="Tag__TagContainer-sc-128kb3h-0 liLHtX"
+          className="Tag__TagContainer-sc-128kb3h-0 ddCbiL"
           id={null}
           label={null}
-          style={null}
         />
       </div>
     </div>
   </a>
   <a
-    className="Icon__LinkedIcon-sc-1oa9m1v-0 kzNrBw"
+    className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
     disabled={null}
+    href={null}
     onClick={[Function]}
   >
     <div
@@ -479,11 +515,12 @@ exports[` 4`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-user-circle fa-w-16 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 egNihH"
+        className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kVtPKV"
         color="link"
         data-icon="user-circle"
         data-prefix="far"
         focusable="false"
+        fontSize="1.5em"
         id={null}
         role="img"
         style={Object {}}
@@ -501,17 +538,17 @@ exports[` 4`] = `
         id={null}
       >
         <div
-          className="Tag__TagContainer-sc-128kb3h-0 kzfjeA"
+          className="Tag__TagContainer-sc-128kb3h-0 WNPDE"
           id={null}
           label={null}
-          style={null}
         />
       </div>
     </div>
   </a>
   <a
-    className="Icon__LinkedIcon-sc-1oa9m1v-0 kzNrBw"
+    className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
     disabled={null}
+    href={null}
     onClick={[Function]}
   >
     <div
@@ -519,11 +556,12 @@ exports[` 4`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-user-circle fa-w-16 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 egNihH"
+        className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kVtPKV"
         color="link"
         data-icon="user-circle"
         data-prefix="far"
         focusable="false"
+        fontSize="1.5em"
         id={null}
         role="img"
         style={Object {}}
@@ -541,17 +579,17 @@ exports[` 4`] = `
         id={null}
       >
         <div
-          className="Tag__TagContainer-sc-128kb3h-0 fmNJDy"
+          className="Tag__TagContainer-sc-128kb3h-0 fFfkGe"
           id={null}
           label={null}
-          style={null}
         />
       </div>
     </div>
   </a>
   <a
-    className="Icon__LinkedIcon-sc-1oa9m1v-0 kzNrBw"
+    className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
     disabled={null}
+    href={null}
     onClick={true}
   >
     <div
@@ -559,11 +597,12 @@ exports[` 4`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-user-circle fa-w-16 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 egNihH"
+        className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kVtPKV"
         color="link"
         data-icon="user-circle"
         data-prefix="far"
         focusable="false"
+        fontSize="1.5em"
         id={null}
         role="img"
         style={Object {}}
@@ -581,10 +620,9 @@ exports[` 4`] = `
         id={null}
       >
         <div
-          className="Tag__TagContainer-sc-128kb3h-0 epLBxW"
+          className="Tag__TagContainer-sc-128kb3h-0 fEMXQS"
           id={null}
           label={null}
-          style={null}
         />
       </div>
     </div>
@@ -594,17 +632,18 @@ exports[` 4`] = `
 
 exports[` 5`] = `
 <section
-  className="Grid__GridWrapper-sc-1ntp7gx-0 fJEIyk"
+  className="Grid__GridWrapper-sc-1ntp7gx-0 cmmDcv"
   id={null}
   rows={null}
 >
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 fa-xs Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 fMXrpG"
     color={null}
     data-icon="user-circle"
     data-prefix="far"
     focusable="false"
+    fontSize="0.75em"
     id={null}
     role="img"
     style={Object {}}
@@ -619,11 +658,12 @@ exports[` 5`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 fa-sm Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 lhHlxO"
     color={null}
     data-icon="user-circle"
     data-prefix="far"
     focusable="false"
+    fontSize="0.875em"
     id={null}
     role="img"
     style={Object {}}
@@ -638,11 +678,12 @@ exports[` 5`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
     color={null}
     data-icon="user-circle"
     data-prefix="far"
     focusable="false"
+    fontSize="inherit"
     id={null}
     role="img"
     style={Object {}}
@@ -657,11 +698,12 @@ exports[` 5`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 fa-lg Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 cjfaMb"
     color={null}
     data-icon="user-circle"
     data-prefix="far"
     focusable="false"
+    fontSize="1.35em"
     id={null}
     role="img"
     style={Object {}}
@@ -676,11 +718,12 @@ exports[` 5`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 fa-2x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jSXIyQ"
     color={null}
     data-icon="user-circle"
     data-prefix="far"
     focusable="false"
+    fontSize="1.5em"
     id={null}
     role="img"
     style={Object {}}
@@ -695,11 +738,12 @@ exports[` 5`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 fa-3x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 cafsrP"
     color={null}
     data-icon="user-circle"
     data-prefix="far"
     focusable="false"
+    fontSize="1.75em"
     id={null}
     role="img"
     style={Object {}}
@@ -714,11 +758,12 @@ exports[` 5`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 fa-4x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 duCWGY"
     color={null}
     data-icon="user-circle"
     data-prefix="far"
     focusable="false"
+    fontSize="2em"
     id={null}
     role="img"
     style={Object {}}
@@ -733,106 +778,12 @@ exports[` 5`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 fa-5x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
+    className="svg-inline--fa fa-user-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 brUBnv"
     color={null}
     data-icon="user-circle"
     data-prefix="far"
     focusable="false"
-    id={null}
-    role="img"
-    style={Object {}}
-    viewBox="0 0 496 512"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M248 104c-53 0-96 43-96 96s43 96 96 96 96-43 96-96-43-96-96-96zm0 144c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm0-240C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 448c-49.7 0-95.1-18.3-130.1-48.4 14.9-23 40.4-38.6 69.6-39.5 20.8 6.4 40.6 9.6 60.5 9.6s39.7-3.1 60.5-9.6c29.2 1 54.7 16.5 69.6 39.5-35 30.1-80.4 48.4-130.1 48.4zm162.7-84.1c-24.4-31.4-62.1-51.9-105.1-51.9-10.2 0-26 9.6-57.6 9.6-31.5 0-47.4-9.6-57.6-9.6-42.9 0-80.6 20.5-105.1 51.9C61.9 339.2 48 299.2 48 256c0-110.3 89.7-200 200-200s200 89.7 200 200c0 43.2-13.9 83.2-37.3 115.9z"
-      fill="currentColor"
-      style={Object {}}
-    />
-  </svg>
-  <svg
-    aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 fa-6x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
-    color={null}
-    data-icon="user-circle"
-    data-prefix="far"
-    focusable="false"
-    id={null}
-    role="img"
-    style={Object {}}
-    viewBox="0 0 496 512"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M248 104c-53 0-96 43-96 96s43 96 96 96 96-43 96-96-43-96-96-96zm0 144c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm0-240C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 448c-49.7 0-95.1-18.3-130.1-48.4 14.9-23 40.4-38.6 69.6-39.5 20.8 6.4 40.6 9.6 60.5 9.6s39.7-3.1 60.5-9.6c29.2 1 54.7 16.5 69.6 39.5-35 30.1-80.4 48.4-130.1 48.4zm162.7-84.1c-24.4-31.4-62.1-51.9-105.1-51.9-10.2 0-26 9.6-57.6 9.6-31.5 0-47.4-9.6-57.6-9.6-42.9 0-80.6 20.5-105.1 51.9C61.9 339.2 48 299.2 48 256c0-110.3 89.7-200 200-200s200 89.7 200 200c0 43.2-13.9 83.2-37.3 115.9z"
-      fill="currentColor"
-      style={Object {}}
-    />
-  </svg>
-  <svg
-    aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 fa-7x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
-    color={null}
-    data-icon="user-circle"
-    data-prefix="far"
-    focusable="false"
-    id={null}
-    role="img"
-    style={Object {}}
-    viewBox="0 0 496 512"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M248 104c-53 0-96 43-96 96s43 96 96 96 96-43 96-96-43-96-96-96zm0 144c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm0-240C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 448c-49.7 0-95.1-18.3-130.1-48.4 14.9-23 40.4-38.6 69.6-39.5 20.8 6.4 40.6 9.6 60.5 9.6s39.7-3.1 60.5-9.6c29.2 1 54.7 16.5 69.6 39.5-35 30.1-80.4 48.4-130.1 48.4zm162.7-84.1c-24.4-31.4-62.1-51.9-105.1-51.9-10.2 0-26 9.6-57.6 9.6-31.5 0-47.4-9.6-57.6-9.6-42.9 0-80.6 20.5-105.1 51.9C61.9 339.2 48 299.2 48 256c0-110.3 89.7-200 200-200s200 89.7 200 200c0 43.2-13.9 83.2-37.3 115.9z"
-      fill="currentColor"
-      style={Object {}}
-    />
-  </svg>
-  <svg
-    aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 fa-8x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
-    color={null}
-    data-icon="user-circle"
-    data-prefix="far"
-    focusable="false"
-    id={null}
-    role="img"
-    style={Object {}}
-    viewBox="0 0 496 512"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M248 104c-53 0-96 43-96 96s43 96 96 96 96-43 96-96-43-96-96-96zm0 144c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm0-240C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 448c-49.7 0-95.1-18.3-130.1-48.4 14.9-23 40.4-38.6 69.6-39.5 20.8 6.4 40.6 9.6 60.5 9.6s39.7-3.1 60.5-9.6c29.2 1 54.7 16.5 69.6 39.5-35 30.1-80.4 48.4-130.1 48.4zm162.7-84.1c-24.4-31.4-62.1-51.9-105.1-51.9-10.2 0-26 9.6-57.6 9.6-31.5 0-47.4-9.6-57.6-9.6-42.9 0-80.6 20.5-105.1 51.9C61.9 339.2 48 299.2 48 256c0-110.3 89.7-200 200-200s200 89.7 200 200c0 43.2-13.9 83.2-37.3 115.9z"
-      fill="currentColor"
-      style={Object {}}
-    />
-  </svg>
-  <svg
-    aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 fa-9x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
-    color={null}
-    data-icon="user-circle"
-    data-prefix="far"
-    focusable="false"
-    id={null}
-    role="img"
-    style={Object {}}
-    viewBox="0 0 496 512"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M248 104c-53 0-96 43-96 96s43 96 96 96 96-43 96-96-43-96-96-96zm0 144c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm0-240C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 448c-49.7 0-95.1-18.3-130.1-48.4 14.9-23 40.4-38.6 69.6-39.5 20.8 6.4 40.6 9.6 60.5 9.6s39.7-3.1 60.5-9.6c29.2 1 54.7 16.5 69.6 39.5-35 30.1-80.4 48.4-130.1 48.4zm162.7-84.1c-24.4-31.4-62.1-51.9-105.1-51.9-10.2 0-26 9.6-57.6 9.6-31.5 0-47.4-9.6-57.6-9.6-42.9 0-80.6 20.5-105.1 51.9C61.9 339.2 48 299.2 48 256c0-110.3 89.7-200 200-200s200 89.7 200 200c0 43.2-13.9 83.2-37.3 115.9z"
-      fill="currentColor"
-      style={Object {}}
-    />
-  </svg>
-  <svg
-    aria-hidden="true"
-    className="svg-inline--fa fa-user-circle fa-w-16 fa-10x Icon__StyledIcon-sc-1oa9m1v-1 dFPGru"
-    color={null}
-    data-icon="user-circle"
-    data-prefix="far"
-    focusable="false"
+    fontSize="2.5em"
     id={null}
     role="img"
     style={Object {}}

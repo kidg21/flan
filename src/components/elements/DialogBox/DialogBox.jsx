@@ -2,56 +2,39 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { screen } from "Variables";
 import Grid from "layout/Grid";
 import Button from "atoms/Button";
 import Card, { CardSection } from "elements/Card";
 
 const ButtonGrid = styled(Grid)`
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-areas: 'blank one two';
-
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 'blank one two';
 `;
 
 const DialogCard = styled(Card)`
-width: ${(props) => {
-    return props.width || "100%";
-  }};
+  width: 100%;
 `;
 
 const ChildSection = styled(CardSection)`
-z-index: 2;
+  z-index: 2;
 `;
 
 const PrimaryButton = styled(Button)`
-grid-area: one;
+  grid-area: one;
 `;
 
 const SecondaryButton = styled(Button)`
-grid-area: two;
+  grid-area: two;
 `;
 
 function DialogBox({
+  body,
+  buttons,
+  children,
   id,
   title,
-  body,
-  children,
-  buttons,
-  width,
 }) {
-  const screenSmall = window.matchMedia(screen.small);
-  const screenMedium = window.matchMedia(screen.medium);
-  const screenLarge = window.matchMedia(screen.large);
-  let dialogWidth = width;
   let buttonElements = null;
-
-  if (!dialogWidth) {
-    if (screenLarge.matches || screenMedium.matches) {
-      dialogWidth = "40vw";
-    } else if (screenSmall.matches) {
-      dialogWidth = "90vw";
-    }
-  }
 
   if (buttons) {
     if (buttons.length === 2) {
@@ -59,29 +42,29 @@ function DialogBox({
       buttonElements = (
         <ButtonGrid columns="3">
           <PrimaryButton
+            disabled={buttons[0].disabled}
             id={buttons[0].id}
             label={buttons[0].label}
             onClick={buttons[0].onClick}
-            disabled={buttons[0].disabled}
-            type={buttons[0].type}
+            variant={buttons[0].variant}
           />
           <SecondaryButton
+            disabled={buttons[1].disabled}
             id={buttons[1].id}
             label={buttons[1].label}
             onClick={buttons[1].onClick}
-            disabled={buttons[1].disabled}
-            type={buttons[1].type}
-            solid
+            isSolid
+            variant={buttons[1].variant}
           />
         </ButtonGrid >);
     } else if (buttons.length === 1) {
       buttonElements = (
         <SecondaryButton
+          disabled={buttons[0].disabled}
           id={buttons[0].id}
           label={buttons[0].label}
           onClick={buttons[0].onClick}
-          disabled={buttons[0].disabled}
-          type={buttons[0].type}
+          variant={buttons[0].variant}
         />
       );
     } else {
@@ -90,19 +73,19 @@ function DialogBox({
           {buttons.forEach((button, index) => {
             if (index === 0) {
               return (<PrimaryButton
+                disabled={button.disabled}
                 id={button.id}
                 label={button.label}
                 onClick={button.onClick}
-                disabled={button.disabled}
-                type={button.type}
+                variant={button.variant}
               />);
             }
             return (<SecondaryButton
+              disabled={button.disabled}
               id={button.id}
               label={button.label}
               onClick={button.onClick}
-              disabled={button.disabled}
-              type={button.type}
+              variant={button.variant}
             />);
           })}
         </Grid>
@@ -112,39 +95,37 @@ function DialogBox({
 
   return (
     <DialogCard
+      body={body}
       id={id}
       title={title}
-      body={body}
-      width={dialogWidth}
     >
       {children ? <ChildSection>{children}</ChildSection> : null}
-      {buttonElements ? <CardSection>{buttonElements}</CardSection> : null}
+      {buttonElements ? <CardSection padding="2x">{buttonElements}</CardSection> : null}
     </DialogCard>
   );
 }
 
 
 DialogBox.propTypes = {
-  id: PropTypes.string,
-  title: PropTypes.node,
   body: PropTypes.node,
-  children: PropTypes.node,
   buttons: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
     label: PropTypes.string,
     onClick: PropTypes.func,
+    type: PropTypes.oneOf(["button", "reset", "submit"]),
     disabled: PropTypes.bool,
-    type: PropTypes.string,
+    variant: PropTypes.string,
   })),
-  width: PropTypes.string,
+  children: PropTypes.node,
+  id: PropTypes.string,
+  title: PropTypes.node,
 };
 DialogBox.defaultProps = {
+  body: null,
+  buttons: null,
+  children: null,
   id: null,
   title: null,
-  body: null,
-  children: null,
-  buttons: null,
-  width: null,
 };
 
 export default DialogBox;

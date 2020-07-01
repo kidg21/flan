@@ -4,212 +4,201 @@ exports[` 1`] = `
 <form
   action={null}
   className="Form__FormWrapper-v2wrel-0 geeIqY"
+  id={null}
   method={null}
   onSubmit={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 eVqRaz Form__FormInputs-v2wrel-3 bZGKXs"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa Form__Inputs-v2wrel-3 dLfNrm"
     id={null}
     rows={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm Calendar__CalendarContainer-sbbnzq-0 gchRuS"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ Calendar__CalendarContainer-sbbnzq-0 gchRuS"
       id="date"
       rows={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
         id="date_date_container"
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-          fontSize="0.82em"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+          fontSize="0.876em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Date Input Label
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 jEGTSx"
+          className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
           cols=""
           disabled={false}
           id="date_date"
           list={null}
-          maxLength={null}
           name="date_date"
-          onBlur={[Function]}
+          onBlur={null}
           onChange={null}
-          onFocus={[Function]}
+          onFocus={null}
           onKeyPress={null}
           pattern={null}
           placeholder={null}
           rows=""
-          size={null}
-          title={null}
           type="date"
           value={null}
         />
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-          fontSize="0.65em"
-          fontWeight={400}
+          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          fontSize="0.75em"
+          fontWeight={600}
           id={null}
-          letterSpacing="0.6px"
+          letterSpacing="0.2px"
         >
           Hang in there, buddy, I'm here to help!
         </p>
       </section>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm Calendar__CalendarContainer-sbbnzq-0 gchRuS"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ Calendar__CalendarContainer-sbbnzq-0 gchRuS"
       id="time"
       rows={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
         id="time_time_container"
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-          fontSize="0.82em"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+          fontSize="0.876em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Time Input Label
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 jEGTSx"
+          className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
           cols=""
           disabled={false}
           id="time_time"
           list={null}
-          maxLength={null}
           name="time_time"
-          onBlur={[Function]}
+          onBlur={null}
           onChange={null}
-          onFocus={[Function]}
+          onFocus={null}
           onKeyPress={null}
           pattern={null}
           placeholder={null}
           rows=""
-          size={null}
-          title={null}
           type="time"
           value={null}
         />
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-          fontSize="0.65em"
-          fontWeight={400}
+          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          fontSize="0.75em"
+          fontWeight={600}
           id={null}
-          letterSpacing="0.6px"
+          letterSpacing="0.2px"
         >
           Hang in there, buddy, I'm here to help!
         </p>
       </section>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm Calendar__CalendarContainer-sbbnzq-0 gchRuS"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ Calendar__CalendarContainer-sbbnzq-0 gchRuS"
       id="datetime"
       rows={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 iPJgzA"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 cRSilm"
         id={null}
         rows={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
           id="datetime_date_container"
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-            fontSize="0.82em"
+            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+            fontSize="0.876em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Date-Time Input Label
           </label>
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 jEGTSx"
+            className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
             cols=""
             disabled={false}
             id="datetime_date"
             list={null}
-            maxLength={null}
             name="datetime_date"
-            onBlur={[Function]}
+            onBlur={null}
             onChange={null}
-            onFocus={[Function]}
+            onFocus={null}
             onKeyPress={null}
             pattern={null}
             placeholder={null}
             rows=""
-            size={null}
-            title={null}
             type="date"
             value={null}
           />
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-            fontSize="0.65em"
-            fontWeight={400}
+            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            fontSize="0.75em"
+            fontWeight={600}
             id={null}
-            letterSpacing="0.6px"
+            letterSpacing="0.2px"
           >
             Hang in there, buddy, I'm here to help!
           </p>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
           id="datetime_time_container"
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-            fontSize="0.82em"
+            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+            fontSize="0.876em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Date-Time Input Label
           </label>
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 jEGTSx"
+            className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
             cols=""
             disabled={false}
             id="datetime_time"
             list={null}
-            maxLength={null}
             name="datetime_time"
-            onBlur={[Function]}
+            onBlur={null}
             onChange={null}
-            onFocus={[Function]}
+            onFocus={null}
             onKeyPress={null}
             pattern={null}
             placeholder={null}
             rows=""
-            size={null}
-            title={null}
             type="time"
             value={null}
           />
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-            fontSize="0.65em"
-            fontWeight={400}
+            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            fontSize="0.75em"
+            fontWeight={600}
             id={null}
-            letterSpacing="0.6px"
+            letterSpacing="0.2px"
           >
             Hang in there, buddy, I'm here to help!
           </p>
@@ -224,264 +213,250 @@ exports[` 2`] = `
 <form
   action={null}
   className="Form__FormWrapper-v2wrel-0 geeIqY"
+  id={null}
   method={null}
   onSubmit={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 eVqRaz Form__FormInputs-v2wrel-3 bZGKXs"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa Form__Inputs-v2wrel-3 dLfNrm"
     id={null}
     rows={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm Calendar__CalendarContainer-sbbnzq-0 gchRuS"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ Calendar__CalendarContainer-sbbnzq-0 gchRuS"
       id="dateDefault"
       rows={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
         id="dateDefault_date_container"
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-          fontSize="0.82em"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+          fontSize="0.876em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Date Input Label
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 jEGTSx"
+          className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
           cols=""
           disabled={false}
           id="dateDefault_date"
           list={null}
-          maxLength={null}
           name="dateDefault_date"
-          onBlur={[Function]}
+          onBlur={null}
           onChange={null}
-          onFocus={[Function]}
+          onFocus={null}
           onKeyPress={null}
           pattern={null}
           placeholder={null}
           rows=""
-          size={null}
-          title={null}
           type="date"
           value={null}
         />
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-          fontSize="0.65em"
-          fontWeight={400}
+          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          fontSize="0.75em"
+          fontWeight={600}
           id={null}
-          letterSpacing="0.6px"
+          letterSpacing="0.2px"
         >
           Hang in there, buddy, I'm here to help!
         </p>
       </section>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm Calendar__CalendarContainer-sbbnzq-0 gchRuS"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ Calendar__CalendarContainer-sbbnzq-0 gchRuS"
       id="dateRequired"
       rows={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
         id="dateRequired_date_container"
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-          fontSize="0.82em"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+          fontSize="0.876em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Date Input Label (required)
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 jEGTSx"
+          className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
           cols=""
           disabled={false}
           id="dateRequired_date"
           list={null}
-          maxLength={null}
           name="dateRequired_date"
-          onBlur={[Function]}
+          onBlur={null}
           onChange={null}
-          onFocus={[Function]}
+          onFocus={null}
           onKeyPress={null}
           pattern={null}
           placeholder={null}
           rows=""
-          size={null}
-          title={null}
           type="date"
           value={null}
         />
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-          fontSize="0.65em"
-          fontWeight={400}
+          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          fontSize="0.75em"
+          fontWeight={600}
           id={null}
-          letterSpacing="0.6px"
+          letterSpacing="0.2px"
         >
           Hang in there, buddy, I'm here to help!
         </p>
       </section>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm Calendar__CalendarContainer-sbbnzq-0 gchRuS"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ Calendar__CalendarContainer-sbbnzq-0 gchRuS"
       id="dateDisabled"
       rows={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 eaRsCT"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 eaRsCT"
         id="dateDisabled_date_container"
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-          fontSize="0.82em"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+          fontSize="0.876em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Date Input Label
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 jEGvVX"
+          className="TextInput__Input-sc-1fep8p8-2 GIuwE"
           cols=""
           disabled={true}
           id="dateDisabled_date"
           list={null}
-          maxLength={null}
           name="dateDisabled_date"
-          onBlur={[Function]}
+          onBlur={null}
           onChange={null}
-          onFocus={[Function]}
+          onFocus={null}
           onKeyPress={null}
           pattern={null}
           placeholder={null}
           rows=""
-          size={null}
-          title={null}
           type="date"
           value={null}
         />
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-          fontSize="0.65em"
-          fontWeight={400}
+          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          fontSize="0.75em"
+          fontWeight={600}
           id={null}
-          letterSpacing="0.6px"
+          letterSpacing="0.2px"
         >
           Hang in there, buddy, I'm here to help!
         </p>
       </section>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm Calendar__CalendarContainer-sbbnzq-0 gchRuS"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ Calendar__CalendarContainer-sbbnzq-0 gchRuS"
       id="dateError"
       rows={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 inWPqt"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 inWPqt"
         id="dateError_date_container"
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-          fontSize="0.82em"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+          fontSize="0.876em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Date Input Label
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 hbESzc"
+          className="TextInput__Input-sc-1fep8p8-2 bHjBXP"
           cols=""
           disabled={false}
           id="dateError_date"
           list={null}
-          maxLength={null}
           name="dateError_date"
-          onBlur={[Function]}
+          onBlur={null}
           onChange={null}
-          onFocus={[Function]}
+          onFocus={null}
           onKeyPress={null}
           pattern={null}
           placeholder={null}
           rows=""
-          size={null}
-          title={null}
           type="date"
           value={null}
         />
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-          fontSize="0.65em"
-          fontWeight={400}
+          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          fontSize="0.75em"
+          fontWeight={600}
           id={null}
-          letterSpacing="0.6px"
+          letterSpacing="0.2px"
         >
           Hang in there, buddy, I'm here to help!
         </p>
       </section>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm Calendar__CalendarContainer-sbbnzq-0 gchRuS"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ Calendar__CalendarContainer-sbbnzq-0 gchRuS"
       id="dateError"
       rows={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
         id="dateError_date_container"
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-          fontSize="0.82em"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+          fontSize="0.876em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Date Input Label
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 jEGTSx"
+          className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
           cols=""
           disabled={false}
           id="dateError_date"
           list={null}
-          maxLength={null}
           name="dateError_date"
-          onBlur={[Function]}
+          onBlur={null}
           onChange={null}
-          onFocus={[Function]}
+          onFocus={null}
           onKeyPress={null}
           pattern={null}
           placeholder={null}
           rows=""
-          size={null}
-          title={null}
           type="date"
           value={null}
         />
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-          fontSize="0.65em"
-          fontWeight={400}
+          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          fontSize="0.75em"
+          fontWeight={600}
           id={null}
-          letterSpacing="0.6px"
+          letterSpacing="0.2px"
         >
           Hang in there, buddy, I'm here to help!
         </p>
@@ -489,11 +464,11 @@ exports[` 2`] = `
           className="TextInput__MessageContainer-sc-1fep8p8-1 fiNdGb"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-            fontSize="0.65em"
-            fontWeight={400}
+            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            fontSize="0.75em"
+            fontWeight={600}
             id={null}
-            letterSpacing="0.6px"
+            letterSpacing="0.2px"
           >
             This is a warning
           </p>
@@ -508,213 +483,202 @@ exports[` 3`] = `
 <form
   action={null}
   className="Form__FormWrapper-v2wrel-0 geeIqY"
+  id={null}
   method={null}
   onSubmit={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 eVqRaz Form__FormInputs-v2wrel-3 bZGKXs"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa Form__Inputs-v2wrel-3 dLfNrm"
     id={null}
     rows={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm Calendar__CalendarContainer-sbbnzq-0 gchRuS"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ Calendar__CalendarContainer-sbbnzq-0 gchRuS"
       id="timeDefault"
       rows={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
         id="timeDefault_time_container"
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-          fontSize="0.82em"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+          fontSize="0.876em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Time Input Label
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 jEGTSx"
+          className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
           cols=""
           disabled={false}
           id="timeDefault_time"
           list={null}
-          maxLength={null}
           name="timeDefault_time"
-          onBlur={[Function]}
+          onBlur={null}
           onChange={null}
-          onFocus={[Function]}
+          onFocus={null}
           onKeyPress={null}
           pattern={null}
           placeholder={null}
           rows=""
-          size={null}
-          title={null}
           type="time"
           value={null}
         />
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-          fontSize="0.65em"
-          fontWeight={400}
+          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          fontSize="0.75em"
+          fontWeight={600}
           id={null}
-          letterSpacing="0.6px"
+          letterSpacing="0.2px"
         >
           Hang in there, buddy, I'm here to help!
         </p>
       </section>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm Calendar__CalendarContainer-sbbnzq-0 gchRuS"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ Calendar__CalendarContainer-sbbnzq-0 gchRuS"
       id="timeRequired"
       rows={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
         id="timeRequired_time_container"
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-          fontSize="0.82em"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+          fontSize="0.876em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Time Input Label (required)
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 jEGTSx"
+          className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
           cols=""
           disabled={false}
           id="timeRequired_time"
           list={null}
-          maxLength={null}
           name="timeRequired_time"
-          onBlur={[Function]}
+          onBlur={null}
           onChange={null}
-          onFocus={[Function]}
+          onFocus={null}
           onKeyPress={null}
           pattern={null}
           placeholder={null}
           rows=""
-          size={null}
-          title={null}
           type="time"
           value={null}
         />
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-          fontSize="0.65em"
-          fontWeight={400}
+          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          fontSize="0.75em"
+          fontWeight={600}
           id={null}
-          letterSpacing="0.6px"
+          letterSpacing="0.2px"
         >
           Hang in there, buddy, I'm here to help!
         </p>
       </section>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm Calendar__CalendarContainer-sbbnzq-0 gchRuS"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ Calendar__CalendarContainer-sbbnzq-0 gchRuS"
       id="timeDisabled"
       rows={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 eaRsCT"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 eaRsCT"
         id="timeDisabled_time_container"
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-          fontSize="0.82em"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+          fontSize="0.876em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Time Input Label
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 jEGvVX"
+          className="TextInput__Input-sc-1fep8p8-2 GIuwE"
           cols=""
           disabled={true}
           id="timeDisabled_time"
           list={null}
-          maxLength={null}
           name="timeDisabled_time"
-          onBlur={[Function]}
+          onBlur={null}
           onChange={null}
-          onFocus={[Function]}
+          onFocus={null}
           onKeyPress={null}
           pattern={null}
           placeholder={null}
           rows=""
-          size={null}
-          title={null}
           type="time"
           value={null}
         />
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-          fontSize="0.65em"
-          fontWeight={400}
+          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          fontSize="0.75em"
+          fontWeight={600}
           id={null}
-          letterSpacing="0.6px"
+          letterSpacing="0.2px"
         >
           Hang in there, buddy, I'm here to help!
         </p>
       </section>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm Calendar__CalendarContainer-sbbnzq-0 gchRuS"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ Calendar__CalendarContainer-sbbnzq-0 gchRuS"
       id="timeError"
       rows={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 inWPqt"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 inWPqt"
         id="timeError_time_container"
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-          fontSize="0.82em"
+          className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+          fontSize="0.876em"
           fontWeight={400}
           htmlFor={null}
-          letterSpacing="0px"
+          letterSpacing="0.2px"
         >
           Time Input Label
         </label>
         <input
           autoComplete="off"
-          className="TextInput__Input-sc-1fep8p8-2 hbESzc"
+          className="TextInput__Input-sc-1fep8p8-2 bHjBXP"
           cols=""
           disabled={false}
           id="timeError_time"
           list={null}
-          maxLength={null}
           name="timeError_time"
-          onBlur={[Function]}
+          onBlur={null}
           onChange={null}
-          onFocus={[Function]}
+          onFocus={null}
           onKeyPress={null}
           pattern={null}
           placeholder={null}
           rows=""
-          size={null}
-          title={null}
           type="time"
           value={null}
         />
         <p
-          className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-          fontSize="0.65em"
-          fontWeight={400}
+          className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+          fontSize="0.75em"
+          fontWeight={600}
           id={null}
-          letterSpacing="0.6px"
+          letterSpacing="0.2px"
         >
           Hang in there, buddy, I'm here to help!
         </p>
@@ -722,11 +686,11 @@ exports[` 3`] = `
           className="TextInput__MessageContainer-sc-1fep8p8-1 fiNdGb"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-            fontSize="0.65em"
-            fontWeight={400}
+            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            fontSize="0.75em"
+            fontWeight={600}
             id={null}
-            letterSpacing="0.6px"
+            letterSpacing="0.2px"
           >
             Don't sweat it...we can fix this!
           </p>
@@ -741,110 +705,105 @@ exports[` 4`] = `
 <form
   action={null}
   className="Form__FormWrapper-v2wrel-0 geeIqY"
+  id={null}
   method={null}
   onSubmit={null}
 >
   <section
-    className="Grid__GridWrapper-sc-1ntp7gx-0 eVqRaz Form__FormInputs-v2wrel-3 bZGKXs"
+    className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa Form__Inputs-v2wrel-3 dLfNrm"
     id={null}
     rows={null}
   >
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm Calendar__CalendarContainer-sbbnzq-0 gchRuS"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ Calendar__CalendarContainer-sbbnzq-0 gchRuS"
       id="datetimeDefault"
       rows={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 iPJgzA"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 cRSilm"
         id={null}
         rows={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
           id="datetimeDefault_date_container"
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-            fontSize="0.82em"
+            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+            fontSize="0.876em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Date-Time Input Label
           </label>
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 jEGTSx"
+            className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
             cols=""
             disabled={false}
             id="datetimeDefault_date"
             list={null}
-            maxLength={null}
             name="datetimeDefault_date"
-            onBlur={[Function]}
+            onBlur={null}
             onChange={null}
-            onFocus={[Function]}
+            onFocus={null}
             onKeyPress={null}
             pattern={null}
             placeholder={null}
             rows=""
-            size={null}
-            title={null}
             type="date"
             value={null}
           />
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-            fontSize="0.65em"
-            fontWeight={400}
+            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            fontSize="0.75em"
+            fontWeight={600}
             id={null}
-            letterSpacing="0.6px"
+            letterSpacing="0.2px"
           >
             Hang in there, buddy, I'm here to help!
           </p>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
           id="datetimeDefault_time_container"
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-            fontSize="0.82em"
+            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+            fontSize="0.876em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Date-Time Input Label
           </label>
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 jEGTSx"
+            className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
             cols=""
             disabled={false}
             id="datetimeDefault_time"
             list={null}
-            maxLength={null}
             name="datetimeDefault_time"
-            onBlur={[Function]}
+            onBlur={null}
             onChange={null}
-            onFocus={[Function]}
+            onFocus={null}
             onKeyPress={null}
             pattern={null}
             placeholder={null}
             rows=""
-            size={null}
-            title={null}
             type="time"
             value={null}
           />
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-            fontSize="0.65em"
-            fontWeight={400}
+            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            fontSize="0.75em"
+            fontWeight={600}
             id={null}
-            letterSpacing="0.6px"
+            letterSpacing="0.2px"
           >
             Hang in there, buddy, I'm here to help!
           </p>
@@ -852,101 +811,95 @@ exports[` 4`] = `
       </section>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm Calendar__CalendarContainer-sbbnzq-0 gchRuS"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ Calendar__CalendarContainer-sbbnzq-0 gchRuS"
       id="dateTimeRequired"
       rows={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 iPJgzA"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 cRSilm"
         id={null}
         rows={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
           id="dateTimeRequired_date_container"
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-            fontSize="0.82em"
+            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+            fontSize="0.876em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Date-Time Input Label (required)
           </label>
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 jEGTSx"
+            className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
             cols=""
             disabled={false}
             id="dateTimeRequired_date"
             list={null}
-            maxLength={null}
             name="dateTimeRequired_date"
-            onBlur={[Function]}
+            onBlur={null}
             onChange={null}
-            onFocus={[Function]}
+            onFocus={null}
             onKeyPress={null}
             pattern={null}
             placeholder={null}
             rows=""
-            size={null}
-            title={null}
             type="date"
             value={null}
           />
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-            fontSize="0.65em"
-            fontWeight={400}
+            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            fontSize="0.75em"
+            fontWeight={600}
             id={null}
-            letterSpacing="0.6px"
+            letterSpacing="0.2px"
           >
             Hang in there, buddy, I'm here to help!
           </p>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 iFWYVo"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
           id="dateTimeRequired_time_container"
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-            fontSize="0.82em"
+            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+            fontSize="0.876em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Date-Time Input Label (required)
           </label>
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 jEGTSx"
+            className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
             cols=""
             disabled={false}
             id="dateTimeRequired_time"
             list={null}
-            maxLength={null}
             name="dateTimeRequired_time"
-            onBlur={[Function]}
+            onBlur={null}
             onChange={null}
-            onFocus={[Function]}
+            onFocus={null}
             onKeyPress={null}
             pattern={null}
             placeholder={null}
             rows=""
-            size={null}
-            title={null}
             type="time"
             value={null}
           />
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-            fontSize="0.65em"
-            fontWeight={400}
+            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            fontSize="0.75em"
+            fontWeight={600}
             id={null}
-            letterSpacing="0.6px"
+            letterSpacing="0.2px"
           >
             Hang in there, buddy, I'm here to help!
           </p>
@@ -954,101 +907,95 @@ exports[` 4`] = `
       </section>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm Calendar__CalendarContainer-sbbnzq-0 gchRuS"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ Calendar__CalendarContainer-sbbnzq-0 gchRuS"
       id="datetimeDisabled"
       rows={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 iPJgzA"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 cRSilm"
         id={null}
         rows={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 eaRsCT"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 eaRsCT"
           id="datetimeDisabled_date_container"
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-            fontSize="0.82em"
+            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+            fontSize="0.876em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Date-Time Input Label
           </label>
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 jEGvVX"
+            className="TextInput__Input-sc-1fep8p8-2 GIuwE"
             cols=""
             disabled={true}
             id="datetimeDisabled_date"
             list={null}
-            maxLength={null}
             name="datetimeDisabled_date"
-            onBlur={[Function]}
+            onBlur={null}
             onChange={null}
-            onFocus={[Function]}
+            onFocus={null}
             onKeyPress={null}
             pattern={null}
             placeholder={null}
             rows=""
-            size={null}
-            title={null}
             type="date"
             value={null}
           />
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-            fontSize="0.65em"
-            fontWeight={400}
+            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            fontSize="0.75em"
+            fontWeight={600}
             id={null}
-            letterSpacing="0.6px"
+            letterSpacing="0.2px"
           >
             Hang in there, buddy, I'm here to help!
           </p>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 eaRsCT"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 eaRsCT"
           id="datetimeDisabled_time_container"
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-            fontSize="0.82em"
+            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+            fontSize="0.876em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Date-Time Input Label
           </label>
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 jEGvVX"
+            className="TextInput__Input-sc-1fep8p8-2 GIuwE"
             cols=""
             disabled={true}
             id="datetimeDisabled_time"
             list={null}
-            maxLength={null}
             name="datetimeDisabled_time"
-            onBlur={[Function]}
+            onBlur={null}
             onChange={null}
-            onFocus={[Function]}
+            onFocus={null}
             onKeyPress={null}
             pattern={null}
             placeholder={null}
             rows=""
-            size={null}
-            title={null}
             type="time"
             value={null}
           />
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-            fontSize="0.65em"
-            fontWeight={400}
+            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            fontSize="0.75em"
+            fontWeight={600}
             id={null}
-            letterSpacing="0.6px"
+            letterSpacing="0.2px"
           >
             Hang in there, buddy, I'm here to help!
           </p>
@@ -1056,56 +1003,53 @@ exports[` 4`] = `
       </section>
     </section>
     <section
-      className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm Calendar__CalendarContainer-sbbnzq-0 gchRuS"
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ Calendar__CalendarContainer-sbbnzq-0 gchRuS"
       id="dateTimeError"
       rows={null}
     >
       <section
-        className="Grid__GridWrapper-sc-1ntp7gx-0 iPJgzA"
+        className="Grid__GridWrapper-sc-1ntp7gx-0 cRSilm"
         id={null}
         rows={null}
       >
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 inWPqt"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 inWPqt"
           id="dateTimeError_date_container"
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-            fontSize="0.82em"
+            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+            fontSize="0.876em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Date-Time Input Label
           </label>
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 hbESzc"
+            className="TextInput__Input-sc-1fep8p8-2 bHjBXP"
             cols=""
             disabled={false}
             id="dateTimeError_date"
             list={null}
-            maxLength={null}
             name="dateTimeError_date"
-            onBlur={[Function]}
+            onBlur={null}
             onChange={null}
-            onFocus={[Function]}
+            onFocus={null}
             onKeyPress={null}
             pattern={null}
             placeholder={null}
             rows=""
-            size={null}
-            title={null}
             type="date"
             value={null}
           />
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-            fontSize="0.65em"
-            fontWeight={400}
+            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            fontSize="0.75em"
+            fontWeight={600}
             id={null}
-            letterSpacing="0.6px"
+            letterSpacing="0.2px"
           >
             Hang in there, buddy, I'm here to help!
           </p>
@@ -1113,57 +1057,54 @@ exports[` 4`] = `
             className="TextInput__MessageContainer-sc-1fep8p8-1 fiNdGb"
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-              fontSize="0.65em"
-              fontWeight={400}
+              className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+              fontSize="0.75em"
+              fontWeight={600}
               id={null}
-              letterSpacing="0.6px"
+              letterSpacing="0.2px"
             >
               Don't sweat it...we can fix this!
             </p>
           </section>
         </section>
         <section
-          className="Grid__GridWrapper-sc-1ntp7gx-0 coEWAm TextInput__TextInputContainer-sc-1fep8p8-0 inWPqt"
+          className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 inWPqt"
           id="dateTimeError_time_container"
           rows={null}
         >
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 ewWNOz"
-            fontSize="0.82em"
+            className="Typography__StyledLabel-sc-19auepv-0 gxLOic"
+            fontSize="0.876em"
             fontWeight={400}
             htmlFor={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             Date-Time Input Label
           </label>
           <input
             autoComplete="off"
-            className="TextInput__Input-sc-1fep8p8-2 hbESzc"
+            className="TextInput__Input-sc-1fep8p8-2 bHjBXP"
             cols=""
             disabled={false}
             id="dateTimeError_time"
             list={null}
-            maxLength={null}
             name="dateTimeError_time"
-            onBlur={[Function]}
+            onBlur={null}
             onChange={null}
-            onFocus={[Function]}
+            onFocus={null}
             onKeyPress={null}
             pattern={null}
             placeholder={null}
             rows=""
-            size={null}
-            title={null}
             type="time"
             value={null}
           />
           <p
-            className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-            fontSize="0.65em"
-            fontWeight={400}
+            className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+            fontSize="0.75em"
+            fontWeight={600}
             id={null}
-            letterSpacing="0.6px"
+            letterSpacing="0.2px"
           >
             Hang in there, buddy, I'm here to help!
           </p>
@@ -1171,11 +1112,11 @@ exports[` 4`] = `
             className="TextInput__MessageContainer-sc-1fep8p8-1 fiNdGb"
           >
             <p
-              className="Typography__Paragraph-sc-19auepv-3 hnkIsT"
-              fontSize="0.65em"
-              fontWeight={400}
+              className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+              fontSize="0.75em"
+              fontWeight={600}
               id={null}
-              letterSpacing="0.6px"
+              letterSpacing="0.2px"
             >
               Don't sweat it...we can fix this!
             </p>

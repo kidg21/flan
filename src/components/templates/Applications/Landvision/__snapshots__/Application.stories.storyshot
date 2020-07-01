@@ -1,0 +1,2779 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  style={
+    Object {
+      "height": "100vh",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="Flex__FlexWrapper-sc-7b3s7m-0 fwrFdN Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+    height={null}
+    id={null}
+    overflow={null}
+    width={null}
+  >
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 dOOpDR"
+      height={null}
+      id="Header"
+      overflow={null}
+      width={null}
+    >
+      <div
+        className="Bar__BarLayout-icfo76-2 hMWrAh"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-icfo76-1 fwqDFc"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 dQWlTG"
+            id={null}
+            rows={null}
+          >
+            <a
+              className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
+              disabled={null}
+              href={null}
+              onClick={[Function]}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-bars fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 fvyOLy"
+                color="link"
+                data-icon="bars"
+                data-prefix="far"
+                focusable="false"
+                fontSize="1.35em"
+                id={null}
+                role="img"
+                style={Object {}}
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </a>
+            <img
+              alt="Lightbox Logo"
+              className="Image__ImageWrapper-sc-18abvff-0 bmySjT"
+              onClick={null}
+              src={Object {}}
+              title="Lightbox Logo"
+              width="80%"
+            />
+          </section>
+        </div>
+        <div
+          className="Bar__Slot-icfo76-1 bOWYHS"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 kbLUtZ"
+            id={null}
+            rows={null}
+          >
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 bnyJVr"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                  fontSize="0.876em"
+                  fontWeight={600}
+                  htmlFor={null}
+                  letterSpacing="0.2px"
+                >
+                  Application A
+                </label>
+              </section>
+            </button>
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 bnyJVr"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                  fontSize="0.876em"
+                  fontWeight={600}
+                  htmlFor={null}
+                  letterSpacing="0.2px"
+                >
+                  Application C
+                </label>
+              </section>
+            </button>
+            <button
+              className="Button__StyledButton-sc-1v7sls2-0 bnyJVr"
+              disabled={false}
+              htmlFor={null}
+              id={null}
+              name={null}
+              onClick={null}
+              tabIndex="1"
+              type="button"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 jylWBN Button__LabelWrapper-sc-1v7sls2-1 ddNwBa"
+                id={null}
+                rows={null}
+              >
+                <label
+                  className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                  fontSize="0.876em"
+                  fontWeight={600}
+                  htmlFor={null}
+                  letterSpacing="0.2px"
+                >
+                  Application D
+                </label>
+              </section>
+            </button>
+          </section>
+        </div>
+        <div
+          className="Bar__Slot-icfo76-1 fiTHpV"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 XSTxD"
+            id={null}
+            rows={null}
+          >
+            <a
+              className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
+              id={null}
+              label="Action"
+              onClick={[Function]}
+              title="Action"
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
+                fontSize="0.876em"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing="0.2px"
+              >
+                Action
+              </label>
+            </a>
+            <a
+              className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
+              id={null}
+              label="Action"
+              onClick={[Function]}
+              title="Action"
+            >
+              <label
+                className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
+                fontSize="0.876em"
+                fontWeight={400}
+                htmlFor={null}
+                letterSpacing="0.2px"
+              >
+                Action
+              </label>
+            </a>
+            <a
+              className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
+              id="Header_Action_Menu"
+              onClick={[Function]}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                color={null}
+                data-icon="ellipsis-v"
+                data-prefix="far"
+                focusable="false"
+                fontSize="inherit"
+                id={null}
+                role="img"
+                style={Object {}}
+                viewBox="0 0 128 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </a>
+            <div
+              className="Avatar__TagContainer-sc-1vuf9om-2 jRqunA"
+              id={null}
+              onClick={[Function]}
+            >
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 exoZGd Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
+                fontSize="1em"
+                fontWeight={400}
+                letterSpacing="0px"
+              >
+                GP
+              </h6>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 fwrFdN Layout__Body-sc-19tlhp4-3 iPUXIc"
+      height={null}
+      id={null}
+      overflow={null}
+      width={null}
+    >
+      <div
+        className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 iwbkcy"
+        height={null}
+        id="Left"
+        overflow={null}
+        width="15%"
+      >
+        <ul
+          className="List__ListWrapper-sc-43f2zq-1 dZwfPB"
+          id={null}
+        >
+          <li
+            className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 cLteVL List__ListTitle-sc-43f2zq-3 bbfEBL"
+              fontSize="1em"
+              fontWeight={600}
+              letterSpacing="0px"
+            >
+              Main Menu
+            </h6>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+            disabled={false}
+            href={null}
+            id={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <a
+                  className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                  onClick={[Function]}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                    fontSize="1em"
+                    fontWeight={600}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    Menu Item
+                  </p>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 fdAPQl"
+            disabled={false}
+            href={null}
+            id={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <a
+                  className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                  onClick={[Function]}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                    fontSize="1em"
+                    fontWeight={600}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    Menu Item
+                  </p>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+            disabled={false}
+            href={null}
+            id={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <a
+                  className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                  onClick={[Function]}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                    fontSize="1em"
+                    fontWeight={600}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    Menu Item
+                  </p>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+            disabled={false}
+            href={null}
+            id={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <a
+                  className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                  onClick={[Function]}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                    fontSize="1em"
+                    fontWeight={600}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    Menu Item
+                  </p>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li
+            className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+            disabled={false}
+            href={null}
+            id={null}
+            tabIndex="0"
+          >
+            <div
+              className="Bar__BarLayout-icfo76-2 eUVQsH"
+              id={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__Slot-icfo76-1 RjiBe"
+              >
+                <a
+                  className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                  onClick={[Function]}
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                    fontSize="1em"
+                    fontWeight={600}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    Menu Item
+                  </p>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div
+        className="Flex__FlexWrapper-sc-7b3s7m-0 kvuuwd Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+        height="40%"
+        id={null}
+        overflow={null}
+        width="85%"
+      >
+        <div
+          className="Flex__FlexWrapper-sc-7b3s7m-0 eeLHbF Layout__RegionCenter-sc-19tlhp4-6 kIUOgp"
+          height={null}
+          id="Main"
+          overflow={null}
+          width={null}
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa Page__PageWrapper-mddda5-0 ctTbUE"
+            id="Page Regions"
+            rows={null}
+          >
+            <section
+              className="Page__Region-mddda5-2 hJnduK"
+              id="A"
+              placeholder="A"
+            >
+              <ul
+                className="List__ListWrapper-sc-43f2zq-1 dtSHCa"
+                id={null}
+              >
+                <li
+                  className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
+                >
+                  <h6
+                    className="Typography__TitleText-sc-19auepv-2 cLteVL List__ListTitle-sc-43f2zq-3 bbfEBL"
+                    fontSize="1em"
+                    fontWeight={600}
+                    letterSpacing="0px"
+                  >
+                    Workflow
+                  </h6>
+                </li>
+                <li
+                  className="List__SectionWrapper-sc-43f2zq-4 evEBZy"
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl List__Section-sc-43f2zq-5 eiGycN"
+                    fontSize="0.876em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  />
+                </li>
+                <li
+                  className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                  disabled={false}
+                  href={null}
+                  id={null}
+                  tabIndex="0"
+                >
+                  <div
+                    className="Bar__BarLayout-icfo76-2 eUVQsH"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 RjiBe"
+                    >
+                      <a
+                        className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                        onClick={[Function]}
+                      >
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                          fontSize="1em"
+                          fontWeight={600}
+                          id={null}
+                          letterSpacing="0px"
+                        >
+                          Menu Item
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  className="List__SectionWrapper-sc-43f2zq-4 evEBZy"
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl List__Section-sc-43f2zq-5 eiGycN"
+                    fontSize="0.876em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  />
+                </li>
+                <li
+                  className="List__ListItemWrapper-sc-43f2zq-0 fdAPQl"
+                  disabled={false}
+                  href={null}
+                  id={null}
+                  tabIndex="0"
+                >
+                  <div
+                    className="Bar__BarLayout-icfo76-2 eUVQsH"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 RjiBe"
+                    >
+                      <a
+                        className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                        onClick={[Function]}
+                      >
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                          fontSize="1em"
+                          fontWeight={600}
+                          id={null}
+                          letterSpacing="0px"
+                        >
+                          Menu Item
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                  disabled={false}
+                  href={null}
+                  id={null}
+                  tabIndex="0"
+                >
+                  <div
+                    className="Bar__BarLayout-icfo76-2 eUVQsH"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 RjiBe"
+                    >
+                      <a
+                        className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                        onClick={[Function]}
+                      >
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                          fontSize="1em"
+                          fontWeight={600}
+                          id={null}
+                          letterSpacing="0px"
+                        >
+                          Menu Item
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                  disabled={false}
+                  href={null}
+                  id={null}
+                  tabIndex="0"
+                >
+                  <div
+                    className="Bar__BarLayout-icfo76-2 eUVQsH"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 RjiBe"
+                    >
+                      <a
+                        className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                        onClick={[Function]}
+                      >
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                          fontSize="1em"
+                          fontWeight={600}
+                          id={null}
+                          letterSpacing="0px"
+                        >
+                          Menu Item
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                  disabled={false}
+                  href={null}
+                  id={null}
+                  tabIndex="0"
+                >
+                  <div
+                    className="Bar__BarLayout-icfo76-2 eUVQsH"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 RjiBe"
+                    >
+                      <a
+                        className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                        onClick={[Function]}
+                      >
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                          fontSize="1em"
+                          fontWeight={600}
+                          id={null}
+                          letterSpacing="0px"
+                        >
+                          Menu Item
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  className="List__SectionWrapper-sc-43f2zq-4 evEBZy"
+                >
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl List__Section-sc-43f2zq-5 eiGycN"
+                    fontSize="0.876em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  />
+                </li>
+                <li
+                  className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                  disabled={false}
+                  href={null}
+                  id={null}
+                  tabIndex="0"
+                >
+                  <div
+                    className="Bar__BarLayout-icfo76-2 eUVQsH"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 RjiBe"
+                    >
+                      <a
+                        className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                        onClick={[Function]}
+                      >
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                          fontSize="1em"
+                          fontWeight={600}
+                          id={null}
+                          letterSpacing="0px"
+                        >
+                          Menu Item
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                  disabled={false}
+                  href={null}
+                  id={null}
+                  tabIndex="0"
+                >
+                  <div
+                    className="Bar__BarLayout-icfo76-2 eUVQsH"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 RjiBe"
+                    >
+                      <a
+                        className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                        onClick={[Function]}
+                      >
+                        <p
+                          className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                          fontSize="1em"
+                          fontWeight={600}
+                          id={null}
+                          letterSpacing="0px"
+                        >
+                          Menu Item
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <section
+              className="Page__Region-mddda5-2 fdTqWe"
+              id="B"
+              placeholder="B"
+            >
+              <div
+                className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+                href={null}
+                id="Card_Header"
+                media={null}
+                onClick={null}
+              >
+                <section
+                  className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
+                  id={null}
+                  onClick={null}
+                >
+                  <h4
+                    className="Typography__TitleText-sc-19auepv-2 czurBm"
+                    fontSize="1.25em"
+                    fontWeight={600}
+                    letterSpacing="0px"
+                  >
+                    This Is A Title
+                  </h4>
+                  <p
+                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                    fontSize="0.876em"
+                    fontWeight={400}
+                    id={null}
+                    letterSpacing="0px"
+                  >
+                    The Description Goes Here
+                  </p>
+                </section>
+              </div>
+            </section>
+            <section
+              className="Page__Region-mddda5-2 zfAZO"
+              id="C"
+              placeholder="C"
+            >
+              <div
+                className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
+                id="Info Panel"
+              >
+                <section
+                  className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
+                  id="Info Panel_header"
+                >
+                  <div
+                    className="Bar__BarLayout-icfo76-2 izXrkl"
+                    id={null}
+                    onClick={null}
+                  >
+                    <div
+                      className="Bar__Slot-icfo76-1 boCGaE"
+                    >
+                      <a
+                        className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
+                        id="MockDetails-Menu"
+                        onClick={[Function]}
+                      >
+                        <svg
+                          aria-hidden="true"
+                          className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                          color={null}
+                          data-icon="ellipsis-v"
+                          data-prefix="far"
+                          focusable="false"
+                          fontSize="inherit"
+                          id={null}
+                          role="img"
+                          style={Object {}}
+                          viewBox="0 0 128 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                            fill="currentColor"
+                            style={Object {}}
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <div
+                      className="Bar__Slot-icfo76-1 yvaBx"
+                    >
+                      <h6
+                        className="Typography__TitleText-sc-19auepv-2 cLteVL"
+                        fontSize="1em"
+                        fontWeight={600}
+                        letterSpacing="0px"
+                      >
+                        Details
+                      </h6>
+                    </div>
+                  </div>
+                  <div
+                    className="Card__CardWrapper-sc-1g3s676-3 elzLSR"
+                    href={null}
+                    id="MockDetails-Info"
+                    media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
+                    onClick={null}
+                  >
+                    <section
+                      className="Media__MediaContainer-sc-1ofqnpx-0 deYKND Card__CardMedia-sc-1g3s676-2 eIeMkT"
+                      id="MockDetails-Info-Media"
+                      onClick={null}
+                    >
+                      <img
+                        alt="Media Description"
+                        className="Image__ImageWrapper-sc-18abvff-0 hXzVKy Media__ImageWrapper-sc-1ofqnpx-1 iIUijx"
+                        onClick={null}
+                        src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
+                        title="Media Description"
+                        width="100%"
+                      />
+                    </section>
+                    <section
+                      className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
+                      id="MockDetails-Info-Header"
+                      onClick={null}
+                    >
+                      <div
+                        className="Bar__BarLayout-icfo76-2 eUVQsH"
+                        id={null}
+                        onClick={null}
+                      >
+                        <div
+                          className="Bar__Slot-icfo76-1 boCGaE"
+                        >
+                          <div
+                            className="Avatar__TagContainer-sc-1vuf9om-2 brBuoT"
+                            id={null}
+                            onClick={null}
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className="svg-inline--fa fa-home-alt fa-w-18 Icon__StyledIcon-sc-1oa9m1v-1 lhHlxO"
+                              color={null}
+                              data-icon="home-alt"
+                              data-prefix="fas"
+                              focusable="false"
+                              fontSize="0.875em"
+                              id={null}
+                              role="img"
+                              style={Object {}}
+                              viewBox="0 0 576 512"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
+                                fill="currentColor"
+                                style={Object {}}
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                        <div
+                          className="Bar__Slot-icfo76-1 yvaBx"
+                        >
+                          <h5
+                            className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+                            fontSize="1.15em"
+                            fontWeight={600}
+                            letterSpacing="0px"
+                          >
+                            Best Place Ever
+                          </h5>
+                          <p
+                            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                            fontSize="0.876em"
+                            fontWeight={400}
+                            id={null}
+                            letterSpacing="0px"
+                          >
+                            I Could Tell You More, But...
+                          </p>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </section>
+                <section
+                  className="Panel__SectionWrapper-sc-48epke-1 gDJXei"
+                  id="Info Panel_body"
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa Page__PageWrapper-mddda5-0 fmRzob"
+                    id={null}
+                    rows={null}
+                  >
+                    <h6
+                      className="Typography__TitleText-sc-19auepv-2 cLteVL"
+                      fontSize="1em"
+                      fontWeight={600}
+                      letterSpacing="0px"
+                    >
+                      All About This Item
+                    </h6>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                      fontSize="0.876em"
+                      fontWeight={400}
+                      id={null}
+                      letterSpacing="0px"
+                    >
+                      Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.
+                    </p>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                      fontSize="0.876em"
+                      fontWeight={400}
+                      id={null}
+                      letterSpacing="0px"
+                    >
+                      In your imagination you can go anywhere you want. Let's put some happy little clouds in our world. We'll throw some old gray clouds in here just sneaking around and having fun. Let's do that again.
+                    </p>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                      fontSize="0.876em"
+                      fontWeight={400}
+                      id={null}
+                      letterSpacing="0px"
+                    >
+                      This is where you take out all your hostilities and frustrations. It's better than kicking the puppy dog around and all that so. Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. These things happen automatically. All you have to do is just let them happen. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. Only eight colors that you need.
+                    </p>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                      fontSize="0.876em"
+                      fontWeight={400}
+                      id={null}
+                      letterSpacing="0px"
+                    >
+                      You want your tree to have some character. Make it special. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. We spend so much of our life looking - but never seeing.
+                    </p>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                      fontSize="0.876em"
+                      fontWeight={400}
+                      id={null}
+                      letterSpacing="0px"
+                    >
+                      We'll throw some happy little limbs on this tree. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Painting should do one thing. It should put happiness in your heart. Think about a cloud. Just float around and be there. In this world, everything can be happy.
+                    </p>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                      fontSize="0.876em"
+                      fontWeight={400}
+                      id={null}
+                      letterSpacing="0px"
+                    >
+                      Nice little fluffy clouds laying around in the sky being lazy. You need to have a very firm paint to do this. You have to allow the paint to break to make it beautiful.
+                    </p>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                      fontSize="0.876em"
+                      fontWeight={400}
+                      id={null}
+                      letterSpacing="0px"
+                    >
+                      A little happy sunlight shining through there. We're not trying to teach you a thing to copy. We're just here to teach you a technique, then let you loose into the world. There's nothing wrong with having a tree as a friend.
+                    </p>
+                  </section>
+                </section>
+              </div>
+            </section>
+            <section
+              className="Page__Region-mddda5-2 eVeEbW"
+              id="D"
+              placeholder="D"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa Page__PageWrapper-mddda5-0 fXdgBx"
+                id="Map Tools"
+                rows={null}
+              >
+                <section
+                  className="Page__Region-mddda5-2 iaZIRh"
+                  id="A"
+                  placeholder="A"
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
+                    id="Map_E3"
+                    rows={null}
+                  >
+                    <form
+                      className="Search__SearchContainer-sey9om-0 kabWsY"
+                    >
+                      <input
+                        className="Search__NewTextInput-sey9om-1 gIKvUj"
+                        id="Map_E3-search-bar"
+                        onChange={[Function]}
+                        onKeyPress={[Function]}
+                        placeholder="Search Location"
+                        type="search"
+                      />
+                      <button
+                        className="Button__StyledButton-sc-1v7sls2-0 bffbOb"
+                        disabled={false}
+                        htmlFor={null}
+                        id={null}
+                        name={null}
+                        onClick={[Function]}
+                        tabIndex="1"
+                        type="button"
+                      >
+                        <section
+                          className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+                          id={null}
+                          rows={null}
+                        >
+                          <svg
+                            aria-hidden="true"
+                            className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                            color={null}
+                            data-icon="search"
+                            data-prefix="far"
+                            focusable="false"
+                            fontSize="inherit"
+                            id={null}
+                            role="img"
+                            style={Object {}}
+                            viewBox="0 0 512 512"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
+                              fill="currentColor"
+                              style={Object {}}
+                            />
+                          </svg>
+                        </section>
+                      </button>
+                    </form>
+                  </section>
+                </section>
+                <section
+                  className="Page__Region-mddda5-2 estfNh"
+                  id="B"
+                  placeholder="B"
+                >
+                  <button
+                    className="Button__StyledButton-sc-1v7sls2-0 ggYeTJ"
+                    disabled={false}
+                    htmlFor={null}
+                    id={null}
+                    name={null}
+                    onClick={null}
+                    tabIndex="1"
+                    type="button"
+                  >
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 crITLr"
+                      id={null}
+                      rows="max-content 1fr"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                        color={null}
+                        data-icon="circle"
+                        data-prefix="far"
+                        focusable="false"
+                        fontSize="inherit"
+                        id={null}
+                        role="img"
+                        style={Object {}}
+                        viewBox="0 0 512 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200z"
+                          fill="currentColor"
+                          style={Object {}}
+                        />
+                      </svg>
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                        fontSize="0.876em"
+                        fontWeight={600}
+                        htmlFor={null}
+                        letterSpacing="0.2px"
+                      >
+                        Button
+                      </label>
+                    </section>
+                  </button>
+                </section>
+                <section
+                  className="Page__Region-mddda5-2 UoFhh"
+                  id="C"
+                  placeholder="C"
+                >
+                  <button
+                    className="Button__StyledButton-sc-1v7sls2-0 ggYeTJ"
+                    disabled={false}
+                    htmlFor={null}
+                    id={null}
+                    name={null}
+                    onClick={null}
+                    tabIndex="1"
+                    type="button"
+                  >
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 crITLr"
+                      id={null}
+                      rows="max-content 1fr"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                        color={null}
+                        data-icon="circle"
+                        data-prefix="far"
+                        focusable="false"
+                        fontSize="inherit"
+                        id={null}
+                        role="img"
+                        style={Object {}}
+                        viewBox="0 0 512 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200z"
+                          fill="currentColor"
+                          style={Object {}}
+                        />
+                      </svg>
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                        fontSize="0.876em"
+                        fontWeight={600}
+                        htmlFor={null}
+                        letterSpacing="0.2px"
+                      >
+                        Button
+                      </label>
+                    </section>
+                  </button>
+                </section>
+                <section
+                  className="Page__Region-mddda5-2 ggfgQB"
+                  id="D"
+                  placeholder="D"
+                >
+                  <button
+                    className="Button__StyledButton-sc-1v7sls2-0 ggYeTJ"
+                    disabled={false}
+                    htmlFor={null}
+                    id={null}
+                    name={null}
+                    onClick={null}
+                    tabIndex="1"
+                    type="button"
+                  >
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 juLdGP Button__LabelWrapper-sc-1v7sls2-1 crITLr"
+                      id={null}
+                      rows="max-content 1fr"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                        color={null}
+                        data-icon="circle"
+                        data-prefix="far"
+                        focusable="false"
+                        fontSize="inherit"
+                        id={null}
+                        role="img"
+                        style={Object {}}
+                        viewBox="0 0 512 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200z"
+                          fill="currentColor"
+                          style={Object {}}
+                        />
+                      </svg>
+                      <label
+                        className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                        fontSize="0.876em"
+                        fontWeight={600}
+                        htmlFor={null}
+                        letterSpacing="0.2px"
+                      >
+                        Button
+                      </label>
+                    </section>
+                  </button>
+                </section>
+                <section
+                  className="Page__Region-mddda5-2 tdRJx"
+                  id="E"
+                  placeholder="E"
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV Picker__InputContainer-sc-1xwpkqn-0 iekWxB"
+                    id="standard"
+                    rows={null}
+                  >
+                    <label
+                      className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
+                      fontSize="0.876em"
+                      fontWeight={600}
+                      htmlFor={null}
+                      letterSpacing="0.2px"
+                    >
+                      Color Picker
+                    </label>
+                    <section
+                      className="Grid__GridWrapper-sc-1ntp7gx-0 fyTJwb"
+                      id={null}
+                      rows={null}
+                    >
+                      <button
+                        className="Picker__Swatch-sc-1xwpkqn-1 efsVxQ"
+                        color="#EBEAEC"
+                        height="1.5rem"
+                        onClick={null}
+                        width="1.5rem"
+                      />
+                      <button
+                        className="Picker__Swatch-sc-1xwpkqn-1 dANqbV"
+                        color="#D9ECEC"
+                        height="1.5rem"
+                        onClick={null}
+                        width="1.5rem"
+                      />
+                      <button
+                        className="Picker__Swatch-sc-1xwpkqn-1 bdCBXP"
+                        color="#80959D"
+                        height="1.5rem"
+                        onClick={null}
+                        width="1.5rem"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          className="svg-inline--fa fa-check fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                          color={null}
+                          data-icon="check"
+                          data-prefix="far"
+                          focusable="false"
+                          fontSize="inherit"
+                          id={null}
+                          role="img"
+                          style={Object {}}
+                          viewBox="0 0 512 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M435.848 83.466L172.804 346.51l-96.652-96.652c-4.686-4.686-12.284-4.686-16.971 0l-28.284 28.284c-4.686 4.686-4.686 12.284 0 16.971l133.421 133.421c4.686 4.686 12.284 4.686 16.971 0l299.813-299.813c4.686-4.686 4.686-12.284 0-16.971l-28.284-28.284c-4.686-4.686-12.284-4.686-16.97 0z"
+                            fill="currentColor"
+                            style={Object {}}
+                          />
+                        </svg>
+                      </button>
+                      <button
+                        className="Picker__Swatch-sc-1xwpkqn-1 hWdTeK"
+                        color="#63B1CD"
+                        height="1.5rem"
+                        onClick={null}
+                        width="1.5rem"
+                      />
+                      <button
+                        className="Picker__Swatch-sc-1xwpkqn-1 kJOCLl"
+                        color="#06BFAE"
+                        height="1.5rem"
+                        onClick={null}
+                        width="1.5rem"
+                      />
+                      <button
+                        className="Picker__Swatch-sc-1xwpkqn-1 gTtMBi"
+                        color="#095593"
+                        height="1.5rem"
+                        onClick={null}
+                        width="1.5rem"
+                      />
+                      <button
+                        className="Picker__Swatch-sc-1xwpkqn-1 kQFXgT"
+                        color="#F3822B"
+                        height="1.5rem"
+                        onClick={null}
+                        width="1.5rem"
+                      />
+                      <button
+                        className="Picker__Swatch-sc-1xwpkqn-1 jYnvcm"
+                        color="#FFBF00"
+                        height="1.5rem"
+                        onClick={null}
+                        width="1.5rem"
+                      />
+                    </section>
+                  </section>
+                </section>
+              </section>
+              <div
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
+              />
+            </section>
+            <section
+              className="Page__Region-mddda5-2 dYaQyK"
+              id="E"
+              placeholder="E"
+            >
+              <div
+                className="Card__CardWrapper-sc-1g3s676-3 gvdkPj"
+                href={null}
+                id="Card_Footer"
+                media={null}
+                onClick={null}
+              >
+                <section
+                  className="Card__CardSectionWrapper-sc-1g3s676-1 bePYvR"
+                  id={null}
+                  onClick={null}
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 gCCOlW"
+                    id={null}
+                    rows={null}
+                  >
+                    <a
+                      className="Typography__LinkText-sc-19auepv-1 jOFdDS"
+                      fontSize="0.876em"
+                      fontWeight={600}
+                      href={null}
+                      letterSpacing="0px"
+                      onClick={[Function]}
+                      target={null}
+                    >
+                      1
+                    </a>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                      fontSize="0.876em"
+                      fontWeight={400}
+                      id={null}
+                      letterSpacing="0px"
+                    >
+                      Footer Content Goes Here
+                    </p>
+                  </section>
+                </section>
+              </div>
+            </section>
+          </section>
+          <div
+            className="Panel__PanelWrapper-sc-48epke-0 iESIjl"
+            id="object record"
+          >
+            <section
+              className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
+              id="object record_header"
+            >
+              <div
+                className="Bar__BarLayout-icfo76-2 hMWrAh"
+                id={null}
+                onClick={null}
+              >
+                <div
+                  className="Bar__Slot-icfo76-1 eufPAN"
+                >
+                  <h4
+                    className="Typography__TitleText-sc-19auepv-2 czurBm"
+                    fontSize="1.25em"
+                    fontWeight={600}
+                    letterSpacing="0px"
+                  >
+                    Object Details
+                  </h4>
+                </div>
+                <div
+                  className="Bar__Slot-icfo76-1 cxljst"
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 dxGIOM"
+                    id={null}
+                    rows={null}
+                  >
+                    <a
+                      className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
+                      id="Object_Action_Menu"
+                      onClick={[Function]}
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                        color={null}
+                        data-icon="ellipsis-v"
+                        data-prefix="far"
+                        focusable="false"
+                        fontSize="inherit"
+                        id={null}
+                        role="img"
+                        style={Object {}}
+                        viewBox="0 0 128 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                          fill="currentColor"
+                          style={Object {}}
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
+                      disabled={null}
+                      href={null}
+                      onClick={[Function]}
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+                        color="link"
+                        data-icon="times"
+                        data-prefix="far"
+                        focusable="false"
+                        fontSize="inherit"
+                        id={null}
+                        role="img"
+                        style={Object {}}
+                        viewBox="0 0 320 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"
+                          fill="currentColor"
+                          style={Object {}}
+                        />
+                      </svg>
+                    </a>
+                  </section>
+                </div>
+              </div>
+            </section>
+            <section
+              className="Panel__SectionWrapper-sc-48epke-1 gDJXei"
+              id="object record_body"
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa Page__PageWrapper-mddda5-0 fmRzob"
+                id={null}
+                rows={null}
+              >
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Page__Section-mddda5-1 gQPevj"
+                  id={null}
+                  rows={null}
+                >
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ"
+                    id={null}
+                    rows={null}
+                  >
+                    <ul
+                      className="List__ListWrapper-sc-43f2zq-1 dtSHCa"
+                      id={null}
+                    >
+                      <li
+                        className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
+                      >
+                        <h6
+                          className="Typography__TitleText-sc-19auepv-2 cLteVL List__ListTitle-sc-43f2zq-3 bbfEBL"
+                          fontSize="1em"
+                          fontWeight={600}
+                          letterSpacing="0px"
+                        >
+                          1: Confirm
+                        </h6>
+                      </li>
+                      <li
+                        className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                        disabled={false}
+                        href={null}
+                        id={null}
+                        tabIndex="0"
+                      >
+                        <div
+                          className="Bar__BarLayout-icfo76-2 eUVQsH"
+                          id={null}
+                          onClick={null}
+                        >
+                          <div
+                            className="Bar__Slot-icfo76-1 RjiBe"
+                          >
+                            <a
+                              className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                              onClick={[Function]}
+                            >
+                              <p
+                                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                                fontSize="1em"
+                                fontWeight={600}
+                                id={null}
+                                letterSpacing="0px"
+                              >
+                                Verify Site
+                              </p>
+                            </a>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <ul
+                      className="List__ListWrapper-sc-43f2zq-1 dtSHCa"
+                      id={null}
+                    >
+                      <li
+                        className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
+                      >
+                        <h6
+                          className="Typography__TitleText-sc-19auepv-2 cLteVL List__ListTitle-sc-43f2zq-3 bbfEBL"
+                          fontSize="1em"
+                          fontWeight={600}
+                          letterSpacing="0px"
+                        >
+                          2: Review
+                        </h6>
+                      </li>
+                      <li
+                        className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                        disabled={false}
+                        href={null}
+                        id={null}
+                        tabIndex="0"
+                      >
+                        <div
+                          className="Bar__BarLayout-icfo76-2 eUVQsH"
+                          id={null}
+                          onClick={null}
+                        >
+                          <div
+                            className="Bar__Slot-icfo76-1 RjiBe"
+                          >
+                            <a
+                              className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                              onClick={[Function]}
+                            >
+                              <p
+                                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                                fontSize="1em"
+                                fontWeight={600}
+                                id={null}
+                                letterSpacing="0px"
+                              >
+                                Assessment
+                              </p>
+                            </a>
+                          </div>
+                        </div>
+                      </li>
+                      <li
+                        className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                        disabled={false}
+                        href={null}
+                        id={null}
+                        tabIndex="0"
+                      >
+                        <div
+                          className="Bar__BarLayout-icfo76-2 eUVQsH"
+                          id={null}
+                          onClick={null}
+                        >
+                          <div
+                            className="Bar__Slot-icfo76-1 RjiBe"
+                          >
+                            <a
+                              className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                              onClick={[Function]}
+                            >
+                              <p
+                                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                                fontSize="1em"
+                                fontWeight={600}
+                                id={null}
+                                letterSpacing="0px"
+                              >
+                                Zoning
+                              </p>
+                            </a>
+                          </div>
+                        </div>
+                      </li>
+                      <li
+                        className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                        disabled={false}
+                        href={null}
+                        id={null}
+                        tabIndex="0"
+                      >
+                        <div
+                          className="Bar__BarLayout-icfo76-2 eUVQsH"
+                          id={null}
+                          onClick={null}
+                        >
+                          <div
+                            className="Bar__Slot-icfo76-1 RjiBe"
+                          >
+                            <a
+                              className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                              onClick={[Function]}
+                            >
+                              <p
+                                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                                fontSize="1em"
+                                fontWeight={600}
+                                id={null}
+                                letterSpacing="0px"
+                              >
+                                Demographics
+                              </p>
+                            </a>
+                          </div>
+                        </div>
+                      </li>
+                      <li
+                        className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                        disabled={false}
+                        href={null}
+                        id={null}
+                        tabIndex="0"
+                      >
+                        <div
+                          className="Bar__BarLayout-icfo76-2 eUVQsH"
+                          id={null}
+                          onClick={null}
+                        >
+                          <div
+                            className="Bar__Slot-icfo76-1 RjiBe"
+                          >
+                            <a
+                              className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                              onClick={[Function]}
+                            >
+                              <p
+                                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                                fontSize="1em"
+                                fontWeight={600}
+                                id={null}
+                                letterSpacing="0px"
+                              >
+                                Maps
+                              </p>
+                            </a>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <ul
+                      className="List__ListWrapper-sc-43f2zq-1 dtSHCa"
+                      id={null}
+                    >
+                      <li
+                        className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
+                      >
+                        <h6
+                          className="Typography__TitleText-sc-19auepv-2 cLteVL List__ListTitle-sc-43f2zq-3 bbfEBL"
+                          fontSize="1em"
+                          fontWeight={600}
+                          letterSpacing="0px"
+                        >
+                          3: Export
+                        </h6>
+                      </li>
+                      <li
+                        className="List__ListItemWrapper-sc-43f2zq-0 ktfOaA"
+                        disabled={false}
+                        href={null}
+                        id={null}
+                        tabIndex="0"
+                      >
+                        <div
+                          className="Bar__BarLayout-icfo76-2 eUVQsH"
+                          id={null}
+                          onClick={null}
+                        >
+                          <div
+                            className="Bar__Slot-icfo76-1 RjiBe"
+                          >
+                            <a
+                              className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                              onClick={[Function]}
+                            >
+                              <p
+                                className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                                fontSize="1em"
+                                fontWeight={600}
+                                id={null}
+                                letterSpacing="0px"
+                              >
+                                View Report(s)
+                              </p>
+                            </a>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </section>
+                </section>
+                <div
+                  className="Bar__BarLayout-icfo76-2 fliBOc"
+                  id={null}
+                  onClick={null}
+                >
+                  <div
+                    className="Bar__Slot-icfo76-1 fNcQEg"
+                  >
+                    <h4
+                      className="Typography__TitleText-sc-19auepv-2 czurBm"
+                      fontSize="1.25em"
+                      fontWeight={600}
+                      letterSpacing="0px"
+                    >
+                      Module A
+                    </h4>
+                    <p
+                      className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                      fontSize="1em"
+                      fontWeight={600}
+                      id={null}
+                      letterSpacing="0px"
+                    >
+                      Here is everything we have for you...
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[` 2`] = `
+<div
+  style={
+    Object {
+      "height": "100vh",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="Flex__FlexWrapper-sc-7b3s7m-0 fwrFdN Layout__WrapperOuter-sc-19tlhp4-0 JiNzU"
+    height={null}
+    id={null}
+    overflow={null}
+    width={null}
+  >
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 jpGTKs Layout__Header-sc-19tlhp4-1 dOOpDR"
+      height={null}
+      id="Header"
+      overflow={null}
+      width={null}
+    >
+      <div
+        className="Bar__BarLayout-icfo76-2 eIFIfS"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-icfo76-1 ivAgdI"
+        >
+          <div
+            className="Avatar__TagContainer-sc-1vuf9om-2 jRqunA"
+            id={null}
+            onClick={[Function]}
+          >
+            <h6
+              className="Typography__TitleText-sc-19auepv-2 exoZGd Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
+              fontSize="1em"
+              fontWeight={400}
+              letterSpacing="0px"
+            />
+          </div>
+        </div>
+        <div
+          className="Bar__Slot-icfo76-1 fBIqSK"
+        >
+          <section
+            className="Grid__GridWrapper-sc-1ntp7gx-0 kFWgJV"
+            id="storyshots_61"
+            rows={null}
+          >
+            <form
+              className="Search__SearchContainer-sey9om-0 kabWsY"
+            >
+              <input
+                className="Search__NewTextInput-sey9om-1 gIKvUj"
+                id="storyshots_61-search-bar"
+                onChange={[Function]}
+                onKeyPress={[Function]}
+                placeholder="Search"
+                type="search"
+              />
+              <button
+                className="Button__StyledButton-sc-1v7sls2-0 bffbOb"
+                disabled={false}
+                htmlFor={null}
+                id={null}
+                name={null}
+                onClick={[Function]}
+                tabIndex="1"
+                type="button"
+              >
+                <section
+                  className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+                  id={null}
+                  rows={null}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-search fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                    color={null}
+                    data-icon="search"
+                    data-prefix="far"
+                    focusable="false"
+                    fontSize="inherit"
+                    id={null}
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                </section>
+              </button>
+            </form>
+          </section>
+        </div>
+        <div
+          className="Bar__Slot-icfo76-1 hcbuwt"
+        >
+          <div
+            className="IconBlock__Block-nokc92-0 UCGVw"
+            id={null}
+          >
+            <a
+              className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
+              disabled={null}
+              href={null}
+              onClick={[Function]}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-list-ul fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+                color="link"
+                data-icon="list-ul"
+                data-prefix="far"
+                focusable="false"
+                fontSize="inherit"
+                id={null}
+                role="img"
+                style={Object {}}
+                viewBox="0 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M48 368a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0-160a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0-160a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm448 24H176a16 16 0 0 0-16 16v16a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V88a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v16a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-16a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v16a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-16a16 16 0 0 0-16-16z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </a>
+            <a
+              className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
+              disabled={null}
+              href={null}
+              onClick={[Function]}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-calendar-alt fa-w-14 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+                color="link"
+                data-icon="calendar-alt"
+                data-prefix="far"
+                focusable="false"
+                fontSize="inherit"
+                id={null}
+                role="img"
+                style={Object {}}
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </a>
+            <a
+              className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
+              disabled={null}
+              href={null}
+              onClick={[Function]}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-comment-alt fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+                color="link"
+                data-icon="comment-alt"
+                data-prefix="far"
+                focusable="false"
+                fontSize="inherit"
+                id={null}
+                role="img"
+                style={Object {}}
+                viewBox="0 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 7.1 5.8 12 12 12 2.4 0 4.9-.7 7.1-2.4L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm16 352c0 8.8-7.2 16-16 16H288l-12.8 9.6L208 428v-60H64c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16h384c8.8 0 16 7.2 16 16v288z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </a>
+            <div
+              className="Avatar__TagContainer-sc-1vuf9om-2 jRqunA"
+              id={null}
+              onClick={[Function]}
+            >
+              <h6
+                className="Typography__TitleText-sc-19auepv-2 exoZGd Avatar__AvatarText-sc-1vuf9om-0 hlRAOS"
+                fontSize="1em"
+                fontWeight={400}
+                letterSpacing="0px"
+              >
+                LB
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="Flex__FlexWrapper-sc-7b3s7m-0 fwrFdN Layout__Body-sc-19tlhp4-3 iPUXIc"
+      height={null}
+      id={null}
+      overflow={null}
+      width={null}
+    >
+      <div
+        className="Flex__FlexWrapper-sc-7b3s7m-0 bnUhol Layout__RegionLeft-sc-19tlhp4-4 eoAyiI"
+        height={null}
+        id={null}
+        overflow={null}
+        width="15%"
+      >
+        <div
+          className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
+          id="List Panel"
+        >
+          <section
+            className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
+            id="List Panel_header"
+          >
+            <div
+              className="Card__CardWrapper-sc-1g3s676-3 elzLSR"
+              href={null}
+              id="Left_Header_Card"
+              media={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__BarLayout-icfo76-2 eIFIfS"
+                id="Jobs_Header"
+                onClick={null}
+              >
+                <div
+                  className="Bar__Slot-icfo76-1 fNcQEg"
+                >
+                  <h5
+                    className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+                    fontSize="1.15em"
+                    fontWeight={600}
+                    letterSpacing="0px"
+                  >
+                    Menu
+                  </h5>
+                </div>
+                <div
+                  className="Bar__Slot-icfo76-1 kZQbjh"
+                >
+                  <a
+                    className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
+                    id="Jobs_Header-Menu"
+                    onClick={[Function]}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                      color={null}
+                      data-icon="ellipsis-v"
+                      data-prefix="far"
+                      focusable="false"
+                      fontSize="inherit"
+                      id={null}
+                      role="img"
+                      style={Object {}}
+                      viewBox="0 0 128 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                        fill="currentColor"
+                        style={Object {}}
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
+            id="List Panel_body"
+          >
+            <ul
+              className="List__ListWrapper-sc-43f2zq-1 dtSHCa"
+              id={null}
+            >
+              <li
+                className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
+                disabled={false}
+                href={null}
+                id={null}
+                tabIndex="0"
+              >
+                <div
+                  className="Bar__BarLayout-icfo76-2 eUVQsH"
+                  id={null}
+                  onClick={null}
+                >
+                  <div
+                    className="Bar__Slot-icfo76-1 RjiBe"
+                  >
+                    <a
+                      className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                      onClick={[Function]}
+                    >
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                        fontSize="1em"
+                        fontWeight={600}
+                        id={null}
+                        letterSpacing="0px"
+                      >
+                        Layers
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li
+                className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
+                disabled={false}
+                href={null}
+                id={null}
+                tabIndex="0"
+              >
+                <div
+                  className="Bar__BarLayout-icfo76-2 eUVQsH"
+                  id={null}
+                  onClick={null}
+                >
+                  <div
+                    className="Bar__Slot-icfo76-1 RjiBe"
+                  >
+                    <a
+                      className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                      onClick={[Function]}
+                    >
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                        fontSize="1em"
+                        fontWeight={600}
+                        id={null}
+                        letterSpacing="0px"
+                      >
+                        Results
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li
+                className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
+                disabled={false}
+                href={null}
+                id={null}
+                tabIndex="0"
+              >
+                <div
+                  className="Bar__BarLayout-icfo76-2 eUVQsH"
+                  id={null}
+                  onClick={null}
+                >
+                  <div
+                    className="Bar__Slot-icfo76-1 RjiBe"
+                  >
+                    <a
+                      className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                      onClick={[Function]}
+                    >
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                        fontSize="1em"
+                        fontWeight={600}
+                        id={null}
+                        letterSpacing="0px"
+                      >
+                        Form
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li
+                className="List__ListItemWrapper-sc-43f2zq-0 mNeEz"
+                disabled={false}
+                href={null}
+                id={null}
+                tabIndex="0"
+              >
+                <div
+                  className="Bar__BarLayout-icfo76-2 eUVQsH"
+                  id={null}
+                  onClick={null}
+                >
+                  <div
+                    className="Bar__Slot-icfo76-1 RjiBe"
+                  >
+                    <a
+                      className="Bar__LinkedWrapper-icfo76-0 dWrXLj"
+                      onClick={[Function]}
+                    >
+                      <p
+                        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                        fontSize="1em"
+                        fontWeight={600}
+                        id={null}
+                        letterSpacing="0px"
+                      >
+                        Research
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <div
+        className="Flex__FlexWrapper-sc-7b3s7m-0 bGQswE Layout__WrapperMain-sc-19tlhp4-5 hBWDkI"
+        height="40%"
+        id={null}
+        overflow={null}
+        width="100%"
+      >
+        <div
+          className="Flex__FlexWrapper-sc-7b3s7m-0 eeLHbF Layout__RegionCenter-sc-19tlhp4-6 kIUOgp"
+          height={null}
+          id={null}
+          overflow={null}
+          width={null}
+        >
+          <div
+            style={
+              Object {
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+          />
+        </div>
+        <div
+          className="Flex__FlexWrapper-sc-7b3s7m-0 lkNlNx Layout__RegionBottom-sc-19tlhp4-7 feYNea"
+          height="40%"
+          id={null}
+          overflow={null}
+          width={null}
+        >
+          <div
+            className="Table__MultiGridWrapper-gz0dbt-0 kpZase"
+          >
+            <div
+              style={
+                Object {
+                  "height": 0,
+                  "overflow": "visible",
+                  "width": 0,
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "height": 100,
+                    "overflow": "visible",
+                    "width": 200,
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "height": 40,
+                      "position": "relative",
+                      "width": 200,
+                    }
+                  }
+                >
+                  <div
+                    aria-label="grid"
+                    aria-readonly={true}
+                    className="ReactVirtualized__Grid"
+                    onScroll={[Function]}
+                    role="grid"
+                    style={
+                      Object {
+                        "WebkitOverflowScrolling": "touch",
+                        "boxSizing": "border-box",
+                        "direction": "ltr",
+                        "height": 40,
+                        "left": 0,
+                        "overflowX": "hidden",
+                        "overflowY": "hidden",
+                        "position": "absolute",
+                        "top": 0,
+                        "width": 200,
+                        "willChange": "transform",
+                      }
+                    }
+                    tabIndex={null}
+                  >
+                    <div
+                      className="ReactVirtualized__Grid__innerScrollContainer"
+                      role="rowgroup"
+                      style={
+                        Object {
+                          "height": 40,
+                          "maxHeight": 40,
+                          "maxWidth": 840,
+                          "overflow": "hidden",
+                          "pointerEvents": "",
+                          "position": "relative",
+                          "width": 840,
+                        }
+                      }
+                    >
+                      <div
+                        className="Table__CellWrapper-gz0dbt-1 cFSFhp"
+                        onClick={[Function]}
+                        onMouseOut={[Function]}
+                        onMouseOver={[Function]}
+                        style={
+                          Object {
+                            "height": 40,
+                            "left": 0,
+                            "position": "absolute",
+                            "top": 0,
+                            "width": 120,
+                          }
+                        }
+                      >
+                        <div
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+                            id={null}
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="checkbox"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        className="Table__CellWrapper-gz0dbt-1 cFSFhp"
+                        onClick={[Function]}
+                        onMouseOut={[Function]}
+                        onMouseOver={[Function]}
+                        style={
+                          Object {
+                            "height": 40,
+                            "left": 120,
+                            "position": "absolute",
+                            "top": 0,
+                            "width": 120,
+                          }
+                        }
+                      >
+                        Objects
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style={
+                    Object {
+                      "height": 60,
+                      "overflow": "visible",
+                      "position": "relative",
+                      "width": 200,
+                    }
+                  }
+                >
+                  <div
+                    aria-label="grid"
+                    aria-readonly={true}
+                    className="ReactVirtualized__Grid"
+                    onScroll={[Function]}
+                    role="grid"
+                    style={
+                      Object {
+                        "WebkitOverflowScrolling": "touch",
+                        "boxSizing": "border-box",
+                        "direction": "ltr",
+                        "height": 60,
+                        "left": 0,
+                        "overflowX": "auto",
+                        "overflowY": "auto",
+                        "position": "absolute",
+                        "width": 200,
+                        "willChange": "transform",
+                      }
+                    }
+                    tabIndex={0}
+                  >
+                    <div
+                      className="ReactVirtualized__Grid__innerScrollContainer"
+                      role="rowgroup"
+                      style={
+                        Object {
+                          "height": 120,
+                          "maxHeight": 120,
+                          "maxWidth": 840,
+                          "overflow": "hidden",
+                          "pointerEvents": "",
+                          "position": "relative",
+                          "width": 840,
+                        }
+                      }
+                    >
+                      <div
+                        className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                        onClick={[Function]}
+                        onMouseOut={[Function]}
+                        onMouseOver={[Function]}
+                        style={
+                          Object {
+                            "height": 40,
+                            "left": 0,
+                            "position": "absolute",
+                            "top": 0,
+                            "width": 120,
+                          }
+                        }
+                      >
+                        <div
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+                            id={null}
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="checkbox"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                        onClick={[Function]}
+                        onMouseOut={[Function]}
+                        onMouseOver={[Function]}
+                        style={
+                          Object {
+                            "height": 40,
+                            "left": 120,
+                            "position": "absolute",
+                            "top": 0,
+                            "width": 120,
+                          }
+                        }
+                      >
+                        <a
+                          className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
+                          id={null}
+                          label="Object"
+                          onClick={null}
+                          title="Object"
+                        >
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
+                            fontSize="0.876em"
+                            fontWeight={400}
+                            htmlFor={null}
+                            letterSpacing="0.2px"
+                          >
+                            Object
+                          </label>
+                        </a>
+                      </div>
+                      <div
+                        className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                        onClick={[Function]}
+                        onMouseOut={[Function]}
+                        onMouseOver={[Function]}
+                        style={
+                          Object {
+                            "height": 40,
+                            "left": 0,
+                            "position": "absolute",
+                            "top": 40,
+                            "width": 120,
+                          }
+                        }
+                      >
+                        <div
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+                            id={null}
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="checkbox"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                        onClick={[Function]}
+                        onMouseOut={[Function]}
+                        onMouseOver={[Function]}
+                        style={
+                          Object {
+                            "height": 40,
+                            "left": 120,
+                            "position": "absolute",
+                            "top": 40,
+                            "width": 120,
+                          }
+                        }
+                      >
+                        <a
+                          className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
+                          id={null}
+                          label="Object"
+                          onClick={null}
+                          title="Object"
+                        >
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
+                            fontSize="0.876em"
+                            fontWeight={400}
+                            htmlFor={null}
+                            letterSpacing="0.2px"
+                          >
+                            Object
+                          </label>
+                        </a>
+                      </div>
+                      <div
+                        className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                        onClick={[Function]}
+                        onMouseOut={[Function]}
+                        onMouseOver={[Function]}
+                        style={
+                          Object {
+                            "height": 40,
+                            "left": 0,
+                            "position": "absolute",
+                            "top": 80,
+                            "width": 120,
+                          }
+                        }
+                      >
+                        <div
+                          className="Checkbox__CheckboxContainer-sc-1gwp7am-1 jMynPv"
+                          disabled={false}
+                        >
+                          <input
+                            checked={null}
+                            className="Checkbox__CheckboxInput-sc-1gwp7am-2 gnGvnd"
+                            id={null}
+                            onBlur={null}
+                            onChange={null}
+                            onFocus={null}
+                            type="checkbox"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        className="Table__CellWrapper-gz0dbt-1 FTOJm"
+                        onClick={[Function]}
+                        onMouseOut={[Function]}
+                        onMouseOver={[Function]}
+                        style={
+                          Object {
+                            "height": 40,
+                            "left": 120,
+                            "position": "absolute",
+                            "top": 80,
+                            "width": 120,
+                          }
+                        }
+                      >
+                        <a
+                          className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
+                          id={null}
+                          label="Object"
+                          onClick={null}
+                          title="Object"
+                        >
+                          <label
+                            className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
+                            fontSize="0.876em"
+                            fontWeight={400}
+                            htmlFor={null}
+                            letterSpacing="0.2px"
+                          >
+                            Object
+                          </label>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="Flex__FlexWrapper-sc-7b3s7m-0 fLaPpu Layout__RegionRight-sc-19tlhp4-8 gLaegA"
+        height={null}
+        id={null}
+        overflow={null}
+        width="25%"
+      >
+        <div
+          className="Panel__PanelWrapper-sc-48epke-0 cFaOzN"
+          id="Info Panel"
+        >
+          <section
+            className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
+            id="Info Panel_header"
+          >
+            <div
+              className="Card__CardWrapper-sc-1g3s676-3 gvdkPj"
+              href={null}
+              id="Jobs_Summary"
+              media={null}
+              onClick={null}
+            >
+              <div
+                className="Bar__BarLayout-icfo76-2 izXrkl"
+                id={null}
+                onClick={null}
+              >
+                <div
+                  className="Bar__Slot-icfo76-1 eufPAN"
+                >
+                  <h6
+                    className="Typography__TitleText-sc-19auepv-2 cLteVL"
+                    fontSize="1em"
+                    fontWeight={600}
+                    letterSpacing="0px"
+                  >
+                    Object Record
+                  </h6>
+                </div>
+                <div
+                  className="Bar__Slot-icfo76-1 gxusZp"
+                >
+                  <a
+                    className="Icon__LinkedIcon-sc-1oa9m1v-0 fgVuzC"
+                    disabled={null}
+                    href={null}
+                    onClick={[Function]}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="svg-inline--fa fa-times fa-w-10 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+                      color="link"
+                      data-icon="times"
+                      data-prefix="far"
+                      focusable="false"
+                      fontSize="inherit"
+                      id={null}
+                      role="img"
+                      style={Object {}}
+                      viewBox="0 0 320 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"
+                        fill="currentColor"
+                        style={Object {}}
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            className="Panel__SectionWrapper-sc-48epke-1 jdYZoW"
+            id="Info Panel_body"
+          >
+            <section
+              className="Grid__GridWrapper-sc-1ntp7gx-0 gGefDa Page__PageWrapper-mddda5-0 fmRzob"
+              id={null}
+              rows={null}
+            >
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Page__Section-mddda5-1 gQPevj"
+                id={null}
+                rows={null}
+              >
+                <h5
+                  className="Typography__TitleText-sc-19auepv-2 KxMwb"
+                  fontSize="1.15em"
+                  fontWeight={400}
+                  letterSpacing="0px"
+                >
+                  Section 1
+                </h5>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                  fontSize="0.876em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  In your imagination you can go anywhere you want. Let's put some happy little clouds in our world. We'll throw some old gray clouds in here just sneaking around and having fun. Let's do that again.
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                  fontSize="0.876em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  This is where you take out all your hostilities and frustrations. It's better than kicking the puppy dog around and all that so. Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. These things happen automatically. All you have to do is just let them happen. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. Only eight colors that you need.
+                </p>
+              </section>
+              <section
+                className="Grid__GridWrapper-sc-1ntp7gx-0 hzeTCC Page__Section-mddda5-1 gQPevj"
+                id={null}
+                rows={null}
+              >
+                <h5
+                  className="Typography__TitleText-sc-19auepv-2 KxMwb"
+                  fontSize="1.15em"
+                  fontWeight={400}
+                  letterSpacing="0px"
+                >
+                  Section 2
+                </h5>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                  fontSize="0.876em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  You want your tree to have some character. Make it special. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. We spend so much of our life looking - but never seeing.
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                  fontSize="0.876em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  We'll throw some happy little limbs on this tree. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Painting should do one thing. It should put happiness in your heart. Think about a cloud. Just float around and be there. In this world, everything can be happy.
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                  fontSize="0.876em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  Nice little fluffy clouds laying around in the sky being lazy. You need to have a very firm paint to do this. You have to allow the paint to break to make it beautiful.
+                </p>
+                <p
+                  className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+                  fontSize="0.876em"
+                  fontWeight={400}
+                  id={null}
+                  letterSpacing="0px"
+                >
+                  A little happy sunlight shining through there. We're not trying to teach you a thing to copy. We're just here to teach you a technique, then let you loose into the world. There's nothing wrong with having a tree as a friend.
+                </p>
+              </section>
+            </section>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

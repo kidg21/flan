@@ -1,0 +1,128 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
+import { action } from "@storybook/addon-actions";
+import { Padding } from "helpers/Display";
+import Grid from "layout/Grid";
+import Text from "base/Typography";
+import Icon from "atoms/Icon";
+import Bar from "layout/Bar";
+import Card, { CardSection, CardGrid } from "elements/Card";
+import Control, { ControlItem } from "blocks/Control";
+
+<Meta title="Data Entry|Selection Controls/Segmented Controls" component={Control} />
+
+# Segmented Controls
+
+#### Segmented Controls are used to select between two or more options.
+
+<Preview withToolbar>
+  <Story name="Standard">
+        <Control>
+          <ControlItem label="Rent" isSelected />
+          <ControlItem label="Buy"  />
+        </Control>
+  </Story>
+</Preview>
+
+# Usage
+
+Segmented Controls can be used in replacement of a Switch, radio buttons, or checkboxes depending on how you set them up.
+
+- **Single select** : One option is always selected.
+- **Toggle** : All options are optional. All may be selected or all may be unselected.
+
+Segment controls should not be used for large amounts of options. Two or three options is best practice.
+
+<Preview>
+  <Story name="Usage">
+  <React.Fragment>
+      <Bar
+        padding="2x"
+        contentAlign="center"
+        left={{
+          content: <Icon icon="check" variant="success" size="lg" />,
+          width: "5%",
+        }}
+        center={{
+          content: (<Control>
+          <ControlItem label="Rent"/>
+          <ControlItem label="Buy" />
+        </Control>),
+          align: "left",
+        }}
+      />
+      <Bar
+        padding="2x"
+        contentAlign="center"
+        left={{
+          content: <Icon icon="close" variant="alert" size="lg" />,
+          width: "5%",
+        }}
+        center={{
+          content: (<Control>
+          <ControlItem label="Rent"  />
+          <ControlItem label="Buy"  />
+          <ControlItem label="Sell"  />
+          <ControlItem label="Short-term lease"  />
+          <ControlItem label="Long-term lease"  />
+        </Control>),
+          align: "left",
+        }}
+      />
+    </React.Fragment>
+  </Story>
+</Preview>
+
+
+# Examples
+
+### States
+
+You can manage the stage of controls by each individual control item or the entire control group.
+An individual control item can be selected, unselected, or disabled.
+A control group has the capability to override all control items if it is set to disabled, as seen in the second example below. 
+
+<Preview>
+  <Story name="States">
+  <Grid columns="1">
+   <Control >
+          <ControlItem label="Selected option" isSelected />
+          <ControlItem label="Disabled Option" disabled/>
+          <ControlItem label="Unselected Option" />
+        </Control>
+     <Control disabled>
+          <ControlItem label="Selected option" isSelected />
+          <ControlItem label="Disabled Option" disabled/>
+          <ControlItem label="Unselected Option" />
+        </Control>
+   </Grid>
+  </Story>
+</Preview>
+
+### Types
+
+<Preview>
+  <Story name="Types">
+  <Grid columns="1">
+   <Control>
+        <ControlItem label="List View"  />
+        <ControlItem label="Map View" />
+      </Control>
+       <Control>
+        <ControlItem label="List View" icon="list" />
+        <ControlItem label="Map View" icon="map" />
+      </Control>
+      <Control>
+        <ControlItem icon="list" />
+        <ControlItem  icon="map" />
+      </Control>
+   </Grid>   
+  </Story>
+</Preview>
+
+
+
+
+## Props
+
+<Props of={Control} />

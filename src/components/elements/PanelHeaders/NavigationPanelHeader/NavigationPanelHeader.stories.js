@@ -14,11 +14,12 @@ const data = [
   { id: "e", label: "Layer" },
 ];
 
-storiesOf("Elements|Panel Headers/", module)
+storiesOf("Templates|Headers/", module)
   .addDecorator(Padding)
   .add("Navigation", () => {
     return (
       <NavigationPanelHeader
+        id="Navigation_Main"
         title="Main Header"
         menuData={data}
         onClick={() => { }}

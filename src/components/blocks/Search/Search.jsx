@@ -1,17 +1,17 @@
 /* eslint-disable security/detect-object-injection */
 /* eslint-disable linebreak-style */
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
-import React from "react";
+import React, { useRef, useMemo } from "react";
 import PropTypes from "prop-types";
-import Bar from "blocks/Bar";
+import Bar from "layout/Bar";
 import Text from "base/Typography";
 import Button from "atoms/Button";
 import Grid from "layout/Grid";
-import ResultContainer from "./Results.jsx";
-import TextInput from "atoms/TextInput";
 import Container from "atoms/Container";
 import Icon from "atoms/Icon";
 import styled from "styled-components";
+import { getGuid } from "helpers";
+import ResultContainer from "./Results.jsx";
 
 // const SearchContainer = styled.div`
 
@@ -20,25 +20,24 @@ display: flex;
 align-items: center;
 flex-direction: row;
 border: 1px solid;
-min-width: 12rem;
 border-radius: 4px;
 border-color: ${(props) => {
-  return ( props.theme.palette.neutral60
-  );
-}};
+    return (props.theme.palette.neutral60
+    );
+  }};
 &:hover {
   border-color: ${(props) => {
-  return (
-    props.theme.palette.selected
-  );
-}};
+    return (
+      props.theme.palette.selected
+    );
+  }};
   }
 &:selected {
   border-color: ${(props) => {
-  return (
-    props.theme.palette.selected
-  );
-}};
+    return (
+      props.theme.palette.selected
+    );
+  }};
 }
 }
 `;
@@ -55,17 +54,16 @@ font-family: ${(props) => { return props.theme.typography.primary; }};
   font-size: 0.90em;
   letter-spacing: 0.5px;
   color: ${(props) => {
-  return (
-    props.theme.text[props.placeholderColor] || props.theme.text.secondary
-  );
-}};
+    return (
+      props.theme.text[props.placeholderColor] || props.theme.text.secondary
+    );
+  }};
 }
 `;
 
 const DropContainer = styled(Container)`
 position: fixed;
 `;
-
 
 const errorHash = {
   connection: "Check your internet connection",
@@ -74,36 +72,81 @@ const errorHash = {
 };
 
 function Search({
-  id, error, results, onSearch, placeholder,
+  error,
+  id,
+  onChange,
+  onKeyPress,
+  onSearch,
+  placeholder,
+  results,
 }) {
+  const searchVal = useRef("");
+  const uId = useMemo(() => { return id || getGuid(); }, [id]);
+  /**
+   * Set state to current input value in search box.
+   * Pass back input value to onChange function, if provided.
+   * @param {object} e - event object that contains input value.
+   */
+  const handleOnChange = (e) => {
+    const currVal = e.target.value;
+
+    searchVal.current = currVal;
+
+    if (typeof onChange === "function") {
+      onChange(searchVal.current);
+    }
+  };
+
+  /**
+   * If "enter" key was pressed, pass back current search value.
+   * @param {object} e - event object that contains key press info.
+   */
+  const handleOnKeyPress = (e) => {
+    if (e && e.key.toLowerCase() === "enter" && typeof onKeyPress === "function") {
+      e.preventDefault();
+      onKeyPress(searchVal.current);
+    }
+  };
+
+  /**
+   * Pass back input value to onSearch function, if provided.
+   */
+  const handleOnSearch = () => {
+    if (typeof onSearch === "function") {
+      onSearch(searchVal.current);
+    }
+  };
+
   const msg = errorHash[typeof error === "string" ? error.toLowerCase() : "default"];
 
   const message = (
     <React.Fragment>
-      { msg !== errorHash.default ? <Bar padding="2x" center={<Icon icon="signal_none" size="3x" />} /> : null}
+      {msg !== errorHash.default ? <Bar padding="2x" center={<Icon icon="signal_none" size="4xl" />} /> : null}
       <Bar padding="2x" center={<Text text={msg} />} />
     </React.Fragment>
   );
 
   const Body = (
     <React.Fragment>
-      { error ? <React.Fragment>{message}</React.Fragment> : null}
-      { results ? <ResultContainer results={results} /> : null}
+      {error ? <React.Fragment>{message}</React.Fragment> : null}
+      {results ? <ResultContainer results={results} /> : null}
     </React.Fragment>
   );
 
   return (
-    <Grid columns="1" gap="tiny" id={id}>
-        <SearchContainer>
+    <Grid columns="1" id={uId}>
+      <SearchContainer>
         <NewTextInput
-          id="my-search-bar"
+          id={`${uId}-search-bar`}
           placeholder={placeholder}
           type="search"
+          onChange={handleOnChange}
+          onKeyPress={handleOnKeyPress}
         />
-          <Button icon="search" plain onClick={onSearch} />
-        </SearchContainer>
-        {/* <Button icon="more" plain /> */}
-      { error || results ? <DropContainer id="results-container" maxHeight="22rem" > { Body }</DropContainer>: null}
+        <Button icon="search" isPlain onClick={handleOnSearch} />
+      </SearchContainer>
+      {/* <Button icon="more" isPlain /> */}
+      {error || results ? <DropContainer padding="0" id={`${uId}-results-container`} maxHeight="22rem">{Body}</DropContainer> : null}
       {/* { advance ? <Advanced inputs={inputs} /> : null} */}
     </Grid>
   );
@@ -119,14 +162,18 @@ Search.propTypes = {
     onClick: PropTypes.func,
   })),
   error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  onChange: PropTypes.func,
+  onKeyPress: PropTypes.func,
   onSearch: PropTypes.func,
   placeholder: PropTypes.string,
 };
 
 Search.defaultProps = {
   id: null,
-  results: "",
+  results: null,
   error: "",
+  onChange: null,
+  onKeyPress: null,
   onSearch: null,
   placeholder: null,
 };

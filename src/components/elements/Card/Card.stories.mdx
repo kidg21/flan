@@ -1,200 +1,383 @@
 import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
-import { withKnobs, label, boolean, select } from "@storybook/addon-knobs";
+import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
 import { Padding } from "helpers/Display";
 import Grid from "layout/Grid";
-import Image from "atoms/Image";
-import { CardGrid } from "elements/Card";
-import Bar from "blocks/Bar";
 import Text from "base/Typography";
-import Form, { Section } from "layout/Form";
-import Card from "elements/Card";
+import Bar from "layout/Bar";
 import Icon from "atoms/Icon";
+import Card, { CardSection, CardGrid } from "elements/Card";
 
-<Meta title="Application Guidelines|Theming" component={Card} />
+<Meta title="Data Display|Card" component={Card} />
 
-# Card Themes
+# Card
 
-### Cards contain content and actions about a single subject.
+#### Cards contain content and actions about a single subject.
 
-<Preview>
-  <Story name="Example">
-    <CardGrid>
-      <Card
-        media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
-        title="Title"
+<Preview withToolbar>
+  <Story name="Standard">
+  <Grid columns="3">
+  <div/>
+   <Card
+        // isInverse
+        // variant="info"
+        id="Card_Standard"
+        media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" // Image
+        mediaDesc="Media Description"
+        // media="https://www.w3schools.com/html/horse.mp3" // HTML5 Audio
+        // media="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" // HTML5 Video
+        // media="https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0" // Youtube
+        // media="https://player.vimeo.com/video/798022" // Vimeo
+        title="Card Title"
         description="Card Description"
-        body={
-          <Text text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
-        }
+        // label="GP"
+        icon="bookmark_solid"
+        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        commands={[
+          {
+            id: "Command One",
+            label: "Command One",
+            onClick: action("Command One Clicked"),
+          },
+          {
+            id: "Command Two",
+            label: "Command Two",
+            onClick: action("Command Two Clicked"),
+          },
+          {
+            id: "Command Three",
+            label: "Command Three",
+            onClick: action("Command Three Clicked"),
+          },
+          {
+            id: "Command Four",
+            label: "Command Four",
+            onClick: action("Command Four Clicked"),
+          },
+          {
+            id: "Command Five",
+            label: "Command Five",
+            onClick: action("Command Five Clicked"),
+          },
+        ]}
+        onClick={action("Primary Action Area Clicked")}
       />
-      <Card
-        media="http://mowin.org/wp-content/uploads/2017/07/land-development-residential.jpg"
-        title="Title"
-        description="Card Description"
-        body={
-          <Text text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
-        }
-      />
-    </CardGrid>
+      <div/>
+  </Grid>
   </Story>
 </Preview>
 
 # Usage
 
-<Preview>
-  <Story name="Standard">
-    <Card
-      title="Title"
-      description="Card Description"
-      body=<Text text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
-      commands={[{ label: "Learn More" }]}
-    />
-  </Story>
-</Preview>
+Cards are surfaces that display content and actions on a single topic.
 
-Cards are surfaces that display content and actions on a single topic. They should be easy to scan for relevant and actionable information. Elements, like text and images, should be placed on them in a way that clearly indicates hierarchy.
+They should be easy to scan for relevant and actionable information. Elements, like text and images, should be placed on them in a way that clearly indicates hierarchy.
 
-# Guidelines
 
-- **Contained:**
-  A card is identifiable as a single, contained unit.
-- **Independent:**
-  A card can stand alone, without relying on surrounding elements for context.
-- **Individual: **
-  A card cannot merge with another card, or divide into multiple cards.
 
-# Anatomy
 
-Cards consist of a circular input and a label. It is important that the label also has an htmlFor Card in order to link the Card and be another way to select.
+# Principles
 
-A Card may appear to the left or right of it's corresponding label. A Card may not appear above or below the label.
+- **Contained**
+A card is identifiable as a single, contained unit.
 
-1. **Container:**
-   Card containers hold all card elements, and their size is determined by the space those elements occupy. Card elevation is expressed by the container.
+- **Independent**
+A card can stand alone, without relying on surrounding elements for context.
 
-2. **Title text:**
-   Title text can include things like the name of a photo album or article.
+- **Individual**
+A card cannot merge with another card, or divide into multiple cards.
 
-3. **SubTitle:**
-   Subhead text can include text elements such as an article byline or a tagged location.
 
-4. **Media:**
-   Cards can include a variety of media, including photos, and graphics, such as weather icons.
-
-5. **Supporting text:**
-   Supporting text include text like an article summary or a restaurant description.
-
-6. **Commands:**
-   Cards can include commands for actions.
-
-7. **Icons:**
-   Cards can include icons for actions. Each card is made up of content blocks. All of the blocks, as a whole, are related to a single subject or destination. Content can receive different levels of emphasis, depending on its level of hierarchy.
 
 # Examples
 
-### Types
+The card container is the only required element in a card. All other elements shown here are optional. 
 
-Cards can be outlined or elevated. The default type is outlined. Using an elevated card would be beneficial when emphasizing hierarchy and dimension. Use an elevated card when placed over busy or distracting backgrounds with a lot of content.
+The primary action area of a card is typically the card itself. Often cards are one large touch target to a detail screen on a subject. Supplemental actions are represented by icons, text, and UI controls on cards. They are typically placed at the bottom of the card. For more than two supplemental actions, use an overflow menu instead.
+
+### Types
 
 <Preview>
   <Story name="Types">
-    <CardGrid columns="2">
-      <Card title="Outlined Card" description="Card Description" />
+   <CardGrid columns="2">
+      <Card id="Card_Simple" />
       <Card
-        title="Elevated Card"
+        id="Card_Title_Description"
+        title="Card Title"
         description="Card Description"
-        type="elevated"
-      />
-    </CardGrid>
-  </Story>
-</Preview>
-
-### Icons
-
-Icons can be used on cards to show additional meaning or identification. Icons must be related to the subject of the card. At this time icons are limited to one icon per card.
-
-<Preview>
-  <Story name="Icons">
-    <Card
-      title="Appraisal Research"
-      description="19-0942231 - 123 Main St, Woburn, MA 01801"
-      icon="analytics"
-    />
-  </Story>
-</Preview>
-
-### Tags
-
-Similar to Icons, Tags are used to provide an additional identifier. Tags can be included when identifying a category, a type, or a group status. As tags can have many colors this is a great way to differentiate between cards.
-
-<Preview>
-  <Story name="Tags">
-    <Card
-      title="5201 California Avenue, Irvine, CA 92614"
-      line1="APN #23947828"
-      line2="Irvine Company"
-      tag="Same Owner"
-    />
-  </Story>
-</Preview>
-
-### Commands
-
-Cards can have include images. Images need to be relevant to the card subject matter and not vague. Images on cards must follow previous Image component guidelines.
-
-<Preview>
-  <Story name="Commands">
-    <CardGrid columns="1">
-      <Card
-        title="Title with One Command"
-        description="Card Description"
-        body=<Text text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
-        commands={[{ label: "Learn More" }]}
       />
       <Card
-        title="Title with Two Commands"
+        id="Card_Body"
+        title="Card Title"
         description="Card Description"
-        body=<Text text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
-        commands={[{ label: "Search" }, { label: "View" }]}
+        // label="GP"
+        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       />
       <Card
-        title="Title with Several Commands"
+        id="Card_Label"
+        title="Card Title"
+        label="GP"
+        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      />
+      <Card
+        id="Card_Icon"
+        title="Card Title"
+        icon="star"
+        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      />
+      <Card
+        id="Card_Commands"
+        title="Card Title"
         description="Card Description"
-        body=<Text text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         commands={[
-          { label: "Search" },
-          { label: "View" },
-          { label: "Search" },
-          { label: "View" }
+          {
+            id: "Command One",
+            label: "Command One",
+            onClick: action("Command One Clicked"),
+          },
+          {
+            id: "Command Two",
+            label: "Command Two",
+            onClick: action("Command Two Clicked"),
+          },
         ]}
       />
-    </CardGrid>
+      <Card
+        id="Card_OnClick"
+        title="Card Title"
+        description="Card Description"
+        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        commands={[
+          {
+            id: "Command One",
+            label: "Command One",
+            onClick: action("Command One Clicked"),
+          },
+          {
+            id: "Command Two",
+            label: "Command Two",
+            onClick: action("Command Two Clicked"),
+          },
+          {
+            id: "Command Three",
+            label: "Command Three",
+            onClick: action("Command Three Clicked"),
+          },
+          {
+            id: "Command Four",
+            label: "Command Four",
+            onClick: action("Command Four Clicked"),
+          },
+          {
+            id: "Command Five",
+            label: "Command Five",
+            onClick: action("Command Five Clicked"),
+          },
+        ]}
+        onClick={action("Primary Action Area Clicked")}
+      />
+      </CardGrid>
   </Story>
 </Preview>
 
 ### Media
 
-Cards can have include images. Images need to be relevant to the card subject matter and not vague. Images on cards must follow previous Image component guidelines.
-
 <Preview>
   <Story name="Media">
-    <Card
-      title="Title"
-      description="Card Description"
-      body={
-        <Text text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
-      }
-      media={
-        <Image
-          src="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"
-          alt="This is alt text for this image"
-        />
-      }
-    />
+   <CardGrid columns="2">
+      <Card
+        id="Card_Media_Image"
+        media="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg" // Image
+        mediaDesc="Media Description"
+        title="Card Title"
+        description="Card Description"
+        // label="GP"
+        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        commands={[
+          {
+            id: "Command One",
+            label: "Command One",
+            onClick: action("Command One Clicked"),
+          },
+          {
+            id: "Command Two",
+            label: "Command Two",
+            onClick: action("Command Two Clicked"),
+          },
+          {
+            id: "Command Three",
+            label: "Command Three",
+            onClick: action("Command Three Clicked"),
+          },
+          {
+            id: "Command Four",
+            label: "Command Four",
+            onClick: action("Command Four Clicked"),
+          },
+          {
+            id: "Command Five",
+            label: "Command Five",
+            onClick: action("Command Five Clicked"),
+          },
+        ]}
+        more={{ content: <Button label="Button" variant="success" isSolid fullWidth /> }}
+        onClick={action("Primary Action Area Clicked")}
+      />
+      <Card
+        id="Card_Media_Vimeo"
+        title="Card Title"
+        media="https://player.vimeo.com/video/798022" // Vimeo
+        description="Card Description"
+        // label="GP"
+        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        commands={[
+          {
+            id: "Command One",
+            label: "Command One",
+            onClick: action("Command One Clicked"),
+          },
+          {
+            id: "Command Two",
+            label: "Command Two",
+            onClick: action("Command Two Clicked"),
+          },
+          {
+            id: "Command Three",
+            label: "Command Three",
+            onClick: action("Command Three Clicked"),
+          },
+          {
+            id: "Command Four",
+            label: "Command Four",
+            onClick: action("Command Four Clicked"),
+          },
+          {
+            id: "Command Five",
+            label: "Command Five",
+            onClick: action("Command Five Clicked"),
+          },
+        ]}
+        more={{ content: <Button label="Button" variant="success" isSolid fullWidth /> }}
+        onClick={action("Primary Action Area Clicked")}
+      />
+      <Card
+        id="Card_Media_Video"
+        media="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" // HTML5 Video
+        title="Card Title"
+        description="Card Description"
+        // label="GP"
+        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        commands={[
+          {
+            id: "Command One",
+            label: "Command One",
+            onClick: action("Command One Clicked"),
+          },
+          {
+            id: "Command Two",
+            label: "Command Two",
+            onClick: action("Command Two Clicked"),
+          },
+          {
+            id: "Command Three",
+            label: "Command Three",
+            onClick: action("Command Three Clicked"),
+          },
+          {
+            id: "Command Four",
+            label: "Command Four",
+            onClick: action("Command Four Clicked"),
+          },
+          {
+            id: "Command Five",
+            label: "Command Five",
+            onClick: action("Command Five Clicked"),
+          },
+        ]}
+        more={{ content: <Button label="Button" variant="success" isSolid fullWidth /> }}
+        onClick={action("Primary Action Area Clicked")}
+      />
+      <Card
+        id="Card_Media_YouTube"
+        media="https://www.youtube.com/embed/GJVwbyAY4Sk?autoplay=0" // Youtube
+        title="Card Title"
+        description="Card Description"
+        // label="GP"
+        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        commands={[
+          {
+            id: "Command One",
+            label: "Command One",
+            onClick: action("Command One Clicked"),
+          },
+          {
+            id: "Command Two",
+            label: "Command Two",
+            onClick: action("Command Two Clicked"),
+          },
+          {
+            id: "Command Three",
+            label: "Command Three",
+            onClick: action("Command Three Clicked"),
+          },
+          {
+            id: "Command Four",
+            label: "Command Four",
+            onClick: action("Command Four Clicked"),
+          },
+          {
+            id: "Command Five",
+            label: "Command Five",
+            onClick: action("Command Five Clicked"),
+          },
+        ]}
+        more={{ content: <Button label="Button" variant="success" isSolid fullWidth /> }}
+        onClick={action("Primary Action Area Clicked")}
+      />
+      <Card
+        id="Card_Media_Audio"
+        media="https://www.w3schools.com/html/horse.mp3" // HTML5 Audio       
+        title="Card Title"
+        description="Card Description"
+        // label="GP"
+        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        commands={[
+          {
+            id: "Command One",
+            label: "Command One",
+            onClick: action("Command One Clicked"),
+          },
+          {
+            id: "Command Two",
+            label: "Command Two",
+            onClick: action("Command Two Clicked"),
+          },
+          {
+            id: "Command Three",
+            label: "Command Three",
+            onClick: action("Command Three Clicked"),
+          },
+          {
+            id: "Command Four",
+            label: "Command Four",
+            onClick: action("Command Four Clicked"),
+          },
+          {
+            id: "Command Five",
+            label: "Command Five",
+            onClick: action("Command Five Clicked"),
+          },
+        ]}
+        more={{ content: <Button label="Button" variant="success" isSolid fullWidth /> }}
+        onClick={action("Primary Action Area Clicked")}
+      />
+      </CardGrid>
   </Story>
 </Preview>
 
-### Props
+
+
+## Props
 
 <Props of={Card} />

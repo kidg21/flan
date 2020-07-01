@@ -17,35 +17,33 @@ const FormWrapper = styled.form`
   padding: 1rem 1rem 1.5rem;
 `;
 
-const FormHeader = styled(Grid)`
+const Header = styled(Grid)`
   margin-bottom: 1.5rem;
 `;
 
-const FormSection = styled.section`
+const Section = styled.section`
   display: grid;
-  grid-gap: 1.25rem;
+  grid-gap: 1rem;
   margin-bottom: 1rem;
 `;
-
-
-function Section({ children, title }) {
+function FormSection({ children, title }) {
   return (
-    <FormSection>
-      {title ? <Title weight="bold" text={title} /> : null}
+    <Section>
+      {title ? <Title size="lg" text={title} /> : null}
       {children}
-    </FormSection>
+    </Section>
   );
 }
-Section.propTypes = {
+FormSection.propTypes = {
   children: PropTypes.node,
   title: PropTypes.string,
 };
-Section.defaultProps = {
+FormSection.defaultProps = {
   children: null,
   title: null,
 };
 
-const FormInputs = styled(Grid)`
+const Inputs = styled(Grid)`
   grid-template-columns: ${(props) => {
     return props.setColumns || "repeat(1, minmax(0, 1fr))";
   }};
@@ -63,11 +61,12 @@ function Form({
   children,
   columns,
   description,
+  id,
   method,
   novalidate,
+  onSubmit,
   subtitle,
   title,
-  onSubmit,
 }) {
   // 1-3 colums with custom override
   let setColumns;
@@ -78,17 +77,17 @@ function Form({
     setColumns = columns;
   }
   return (
-    <FormWrapper action={action} method={method} novalidate={novalidate} onSubmit={onSubmit}>
+    <FormWrapper action={action} id={id} method={method} novalidate={novalidate} onSubmit={onSubmit}>
       {title || subtitle || description ? (
-        <FormHeader columns="1" gap="tiny">
-          {title ? <Title size="2x" weight="bold" text={title} /> : null}
-          {subtitle ? <Text size="4x" text={subtitle} /> : null}
-          {description ? <Text size="2x" text={description} /> : null}
-        </FormHeader>
+        <Header columns="1">
+          {title ? <Title size="xl" weight="bold" text={title} /> : null}
+          {subtitle ? <Text weight="light" text={subtitle} /> : null}
+          {description ? <Text size="sm" weight="bold" text={description} /> : null}
+        </Header>
       ) : null}
-      <FormInputs setColumns={setColumns} gap="large">
+      <Inputs setColumns={setColumns}>
         {children}
-      </FormInputs>
+      </Inputs>
     </FormWrapper>
   );
 }
@@ -97,22 +96,24 @@ Form.propTypes = {
   children: PropTypes.node,
   columns: PropTypes.oneOf(["1", "2", "3"]),
   description: PropTypes.string,
+  id: PropTypes.string,
   method: PropTypes.string,
   novalidate: PropTypes.bool,
+  onSubmit: PropTypes.func,
   subtitle: PropTypes.string,
   title: PropTypes.string,
-  onSubmit: PropTypes.func,
 };
 Form.defaultProps = {
   action: null,
   children: null,
   columns: "1",
   description: null,
+  id: null,
   method: null,
   novalidate: false,
+  onSubmit: null,
   subtitle: null,
   title: null,
-  onSubmit: null,
 };
 
-export { Form as default, Section };
+export { Form as default, FormSection };

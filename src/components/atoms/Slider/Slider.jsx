@@ -3,9 +3,8 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import Grid from "layout/Grid";
-import Bar from "blocks/Bar";
-import Text from "base/Typography";
-import Tag from "atoms/Tag";
+import Bar from "layout/Bar";
+import { Label } from "base/Typography";
 import { Lighten, Darken } from "Variables";
 
 
@@ -30,7 +29,7 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
     border-radius: 50%;
     margin-top: -.5em;
     background-color: ${(props) => {
-    return props.error ? props.theme.palette.alert60 : props.theme.palette.selectedLight;
+    return props.error ? props.theme.palette.alert60 : props.theme.palette.selected;
   }};
   transition: 200ms;
     cursor: pointer;
@@ -47,8 +46,6 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
     appearance: none;
     width: 98%;
     height: 1px;
-    x: align.center;
-    y: align.center;
     border-radius: 5px;
     background: #ccc;
     outline: none;
@@ -61,7 +58,7 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
     height: 18px;
     border-radius: 50%;
     color: ${(props) => {
-    return props.theme.palette.selectedLight;
+    return props.theme.palette.selected;
   }};
     cursor: pointer;
   }
@@ -81,6 +78,14 @@ const SliderPiece = styled.input.attrs({ type: "range" })`
   }
 `;
 
+const SliderLabel = styled(Label)`
+  position: relative;
+  left: ${(props) => {
+    return props.left || "";
+  }};
+  width: max-content;
+`;
+
 
 function Slider({
   value: inputValue, onChange, disabled, error, id, max, min, step, withLabel, withRange,
@@ -88,36 +93,33 @@ function Slider({
   let value = inputValue;
   let setValue = onChange;
   if (!setValue) {
-    [value, setValue] = useState(inputValue);
+    [value, setValue] = useState(inputValue || min);
   }
 
-  const leftValue = (`${((100 / max) * (value)) - 4.5}%`);
-
-  let tagType;
-
-  if (error) {
-    tagType = "alert";
-  } else {
-    "";
-  }
+  const leftValue = (`${((100 / max) * (value - min)) + ((2 * value) / max)}%`);
 
   return (
-    <Grid columns="1" gap="none">
+    <Grid columns="1" gap="0">
+      {withLabel ? <SliderLabel text={value || min} weight="bold" left={leftValue} /> : null}
       <SliderPiece
         id={id}
         max={max}
         min={min}
-        value={value}
+        value={value || min}
         step={step}
         onChange={(e) => {
-      setValue(e.target.value);
-    }}
+          setValue(e.target.value);
+        }}
         disabled={disabled}
         error={error}
       />
 
-      { withRange ? <Bar left={<Text size="2x" weight="bold" text={min} />} right={<Text size="2x" weight="bold" text={max} />} /> : null }
-      { withLabel ? <Tag type={tagType} style={{ position: "relative", left: leftValue }} label={value} /> : null}
+      {withLabel || withRange ?
+        <Bar
+          padding="0"
+          left={<Label weight="bold" text={min} />}
+          right={<Label weight="bold" text={max} />}
+        /> : null}
     </Grid>
   );
 }
@@ -126,6 +128,7 @@ Slider.propTypes = {
   min: PropTypes.number,
   max: PropTypes.number,
   step: PropTypes.number,
+  /** Defaults to 'min' if no 'value' is set  */
   value: PropTypes.number,
   error: PropTypes.bool,
   id: PropTypes.string,

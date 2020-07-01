@@ -19,7 +19,6 @@ const RadioContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 0.75rem;
-  align-items: center;
   grid-template-areas: ${(props) => {
     return props.alignInput || "";
   }};
@@ -55,8 +54,7 @@ const RadioInput = styled.input.attrs({ type: "radio" })`
   &:checked {
     background-color: ${(props) => {
     return (
-      props.theme.palette[props.fillColorChecked] ||
-      props.theme.palette.selectedLight
+      props.theme.palette[props.fillColorChecked] || props.theme.palette.selected
     );
   }};
     border-color: ${(props) => {
@@ -88,11 +86,11 @@ function Radio({
   error,
   id,
   label,
-  onChange,
   name,
-  value,
-  onFocus,
   onBlur,
+  onChange,
+  onFocus,
+  value,
 }) {
   let inputTextColor;
   let fillColor;
@@ -100,8 +98,7 @@ function Radio({
   let fillColorChecked;
   let alignInput;
   let tabIndex;
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (isDisabled) {
     fillColor = "neutral40";
     fillColorChecked = "neutral40";
@@ -113,9 +110,7 @@ function Radio({
     fillColorChecked = "alert60";
     inputTextColor = "alert";
     outlineColor = "alert60";
-  } 
-
-
+  }
   switch (align) {
     case "right":
       alignInput = "'label input'";
@@ -137,9 +132,9 @@ function Radio({
         fillColorChecked={fillColorChecked}
         id={id}
         name={name}
+        onBlur={onBlur}
         onChange={onChange}
         onFocus={onFocus}
-        onBlur={onBlur}
         outlineColor={outlineColor}
         tabIndex={tabIndex}
         value={value}
@@ -164,8 +159,7 @@ function RadioGroup({
 }) {
   let inputTextColor;
   let errorText;
-  const isDisabled =
-    typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
+  const isDisabled = typeof disabled === "boolean" ? disabled : useContext(DisabledContext);
   if (!isDisabled) {
     if (error) {
       inputTextColor = "alert";
@@ -181,28 +175,27 @@ function RadioGroup({
       id={id}
     >
       {label ? (
-        <Text weight="bold" isRequired={isRequired} text={label} />
+        <Label weight="bold" isRequired={isRequired} text={label} />
       ) : null}
-      {helpText ? <Text text={helpText} /> : null}
+      {helpText ? <Text size="sm" weight="bold" text={helpText} /> : null}
       <InputGroup columns={columns}>
-        {children ||
-          data.map((item) => {
-            return (
-              <Radio
-                align={align}
-                disabled={item.disabled || isDisabled}
-                error={!!error}
-                id={item.id}
-                key={item.id}
-                label={item.label}
-                onChange={onChange}
-                name={item.name}
-                value={item.value}
-              />
-            );
-          })}
+        {children || data.map((item) => {
+          return (
+            <Radio
+              align={align}
+              disabled={item.disabled || isDisabled}
+              error={!!error}
+              id={item.id}
+              key={item.id}
+              label={item.label}
+              name={item.name}
+              onChange={onChange}
+              value={item.value}
+            />
+          );
+        })}
       </InputGroup>
-      {errorText ? <Text text={errorText} /> : null}
+      {errorText ? <Text size="sm" weight="bold" text={errorText} /> : null}
     </RadioWrapper>
   );
 }
@@ -217,33 +210,43 @@ Radio.propTypes = {
   /** The name property sets or returns the value of the name attribute of a radio button.
    * You define radio button groups with the name property (radio buttons with the same name belong to the same group). */
   name: PropTypes.string,
+  onBlur: PropTypes.func,
   onChange: PropTypes.func,
+  onFocus: PropTypes.func,
   /** The value property sets or returns the value of the value attribute of the radio button.
    * Define different values for radio buttons in the same group, to identify (on the server side) which one was checked.  */
   value: PropTypes.string,
-  onFocus: PropTypes.func,
-  onBlur: PropTypes.func,
 };
 
 Radio.defaultProps = {
   align: null,
   checked: null,
-  label: null,
-  name: null,
   disabled: false,
   error: false,
   id: null,
-  onChange: null,
-  value: null,
-  onFocus: null,
+  label: null,
+  name: null,
   onBlur: null,
+  onChange: null,
+  onFocus: null,
+  value: null,
 };
 
 RadioGroup.propTypes = {
   align: PropTypes.oneOf(["left", "right"]),
   children: PropTypes.node,
   columns: PropTypes.oneOf(["1", "2", "3", "4", "5", "6"]),
-  data: PropTypes.oneOfType([PropTypes.array, PropTypes.string]),
+  data: PropTypes.arrayOf(PropTypes.shape({
+    checked: PropTypes.bool,
+    disabled: PropTypes.bool,
+    id: PropTypes.string,
+    label: PropTypes.string,
+    name: PropTypes.string,
+    onBlur: PropTypes.func,
+    onChange: PropTypes.func,
+    onFocus: PropTypes.func,
+    value: PropTypes.string,
+  })),
   disabled: PropTypes.bool,
   error: PropTypes.string,
   helpText: PropTypes.string,
@@ -257,7 +260,7 @@ RadioGroup.defaultProps = {
   align: null,
   children: null,
   columns: null,
-  data: null,
+  data: [],
   disabled: false,
   error: null,
   helpText: null,

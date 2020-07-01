@@ -1,0 +1,799 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <div
+    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    href={null}
+    id="storyshots_1"
+    media={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__BarLayout-icfo76-2 fliBOc"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-icfo76-1 fNcQEg"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 exoZGd"
+          fontSize="1em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          Left
+        </h6>
+      </div>
+      <div
+        className="Bar__Slot-icfo76-1 hVtzoz"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 exoZGd"
+          fontSize="1em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          Center
+        </h6>
+      </div>
+      <div
+        className="Bar__Slot-icfo76-1 kZQbjh"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 exoZGd"
+          fontSize="1em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          Right
+        </h6>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[` 2`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <div
+    className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+    href={null}
+    id="storyshots_2"
+    media={null}
+    onClick={null}
+  >
+    <div
+      className="Bar__BarLayout-icfo76-2 fliBOc"
+      id={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__Slot-icfo76-1 fNcQEg"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 exoZGd"
+          fontSize="1em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          Left
+        </h6>
+      </div>
+      <div
+        className="Bar__Slot-icfo76-1 hVtzoz"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 exoZGd"
+          fontSize="1em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          Towgood, Gary T.
+        </h6>
+        <p
+          className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+          fontSize="0.876em"
+          fontWeight={400}
+          id={null}
+          letterSpacing="0px"
+        >
+          3082 Yellowstone Dr. Costa Mesa, CA 92612
+        </p>
+      </div>
+      <div
+        className="Bar__Slot-icfo76-1 kZQbjh"
+      >
+        <h6
+          className="Typography__TitleText-sc-19auepv-2 exoZGd"
+          fontSize="1em"
+          fontWeight={400}
+          letterSpacing="0px"
+        >
+          Right
+        </h6>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[` 3`] = `
+<div
+  style={
+    Object {
+      "padding": "2rem",
+    }
+  }
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 fakPiP Card__CardGridWrapper-sc-1g3s676-4 jNRHWG"
+    id={null}
+    rows={null}
+  >
+    <div
+      className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+      href={null}
+      id="storyshots_3"
+      media={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__BarLayout-icfo76-2 fliBOc"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-icfo76-1 fNcQEg"
+        >
+          <a
+            className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
+            id={null}
+            label="Command"
+            onClick={null}
+            title="Command"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
+              fontSize="0.876em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0.2px"
+            >
+              Command
+            </label>
+          </a>
+        </div>
+        <div
+          className="Bar__Slot-icfo76-1 hVtzoz"
+        >
+          <h6
+            className="Typography__TitleText-sc-19auepv-2 exoZGd"
+            fontSize="1em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            A Standard Title
+          </h6>
+        </div>
+        <div
+          className="Bar__Slot-icfo76-1 kZQbjh"
+        >
+          <a
+            className="Command__CommandContainer-sc-13akgtp-0 zyuWh"
+            id={null}
+            label="Command"
+            onClick={null}
+            title="Command"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
+              fontSize="0.876em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0.2px"
+            >
+              Command
+            </label>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+      href={null}
+      id="storyshots_4"
+      media={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__BarLayout-icfo76-2 fliBOc"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-icfo76-1 fNcQEg"
+        >
+          <a
+            className="Command__CommandContainer-sc-13akgtp-0 dCykyh"
+            id={null}
+            label="Command"
+            onClick={null}
+            title="Command"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
+              fontSize="0.876em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0.2px"
+            >
+              Command
+            </label>
+          </a>
+        </div>
+        <div
+          className="Bar__Slot-icfo76-1 hVtzoz"
+        >
+          <h6
+            className="Typography__TitleText-sc-19auepv-2 exoZGd"
+            fontSize="1em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            A Title So Long That It May Take Up Multiple Lines
+          </h6>
+        </div>
+        <div
+          className="Bar__Slot-icfo76-1 kZQbjh"
+        >
+          <a
+            className="Command__CommandContainer-sc-13akgtp-0 dCykyh"
+            id={null}
+            label="Command"
+            onClick={null}
+            title="Command"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
+              fontSize="0.876em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0.2px"
+            >
+              Command
+            </label>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+      href={null}
+      id="storyshots_5"
+      media={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__BarLayout-icfo76-2 fliBOc"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-icfo76-1 fNcQEg"
+        >
+          <a
+            className="Command__CommandContainer-sc-13akgtp-0 kbqNtN"
+            id={null}
+            label="Command"
+            onClick={null}
+            title="Command"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
+              fontSize="0.876em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0.2px"
+            >
+              Command
+            </label>
+          </a>
+        </div>
+        <div
+          className="Bar__Slot-icfo76-1 hVtzoz"
+        >
+          <h6
+            className="Typography__TitleText-sc-19auepv-2 exoZGd"
+            fontSize="1em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            Towgood, Gary T.
+          </h6>
+          <p
+            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
+            fontSize="0.876em"
+            fontWeight={400}
+            id={null}
+            letterSpacing="0px"
+          >
+            3082 Yellowstone Dr. Costa Mesa, CA 92612
+          </p>
+        </div>
+        <div
+          className="Bar__Slot-icfo76-1 kZQbjh"
+        >
+          <a
+            className="Command__CommandContainer-sc-13akgtp-0 kbqNtN"
+            id={null}
+            label="Command"
+            onClick={null}
+            title="Command"
+          >
+            <label
+              className="Typography__StyledLabel-sc-19auepv-0 gxLOic Command__CommandName-sc-13akgtp-1 dyKYpp"
+              fontSize="0.876em"
+              fontWeight={400}
+              htmlFor={null}
+              letterSpacing="0.2px"
+            >
+              Command
+            </label>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+      href={null}
+      id="storyshots_6"
+      media={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__BarLayout-icfo76-2 fliBOc"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-icfo76-1 fNcQEg"
+        >
+          <div
+            className="IconBlock__Block-nokc92-0 UCGVw"
+            id={null}
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+              color={null}
+              data-icon="circle"
+              data-prefix="fas"
+              focusable="false"
+              fontSize="inherit"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+              color="info80"
+              data-icon="circle"
+              data-prefix="fas"
+              focusable="false"
+              fontSize="inherit"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jEGLhc"
+              color="success80"
+              data-icon="circle"
+              data-prefix="fas"
+              focusable="false"
+              fontSize="inherit"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+      href={null}
+      id="storyshots_7"
+      media={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__BarLayout-icfo76-2 izXrkl"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-icfo76-1 fNcQEg"
+        >
+          <div
+            className="IconBlock__Block-nokc92-0 UCGVw"
+            id={null}
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+              color={null}
+              data-icon="circle"
+              data-prefix="fas"
+              focusable="false"
+              fontSize="inherit"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+              color="info80"
+              data-icon="circle"
+              data-prefix="fas"
+              focusable="false"
+              fontSize="inherit"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jEGLhc"
+              color="success80"
+              data-icon="circle"
+              data-prefix="fas"
+              focusable="false"
+              fontSize="inherit"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          className="Bar__Slot-icfo76-1 hVtzoz"
+        >
+          <h6
+            className="Typography__TitleText-sc-19auepv-2 exoZGd"
+            fontSize="1em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            A Title So Long That It May Take Up Multiple Lines
+          </h6>
+        </div>
+        <div
+          className="Bar__Slot-icfo76-1 kZQbjh"
+        >
+          <div
+            className="IconBlock__Block-nokc92-0 UCGVw"
+            id={null}
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+              color={null}
+              data-icon="circle"
+              data-prefix="fas"
+              focusable="false"
+              fontSize="inherit"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+              color="info80"
+              data-icon="circle"
+              data-prefix="fas"
+              focusable="false"
+              fontSize="inherit"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jEGLhc"
+              color="success80"
+              data-icon="circle"
+              data-prefix="fas"
+              focusable="false"
+              fontSize="inherit"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+      href={null}
+      id="storyshots_8"
+      media={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__BarLayout-icfo76-2 izXrkl"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-icfo76-1 fNcQEg"
+        >
+          <h6
+            className="Typography__TitleText-sc-19auepv-2 exoZGd"
+            fontSize="1em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            A Standard Title
+          </h6>
+        </div>
+        <div
+          className="Bar__Slot-icfo76-1 kZQbjh"
+        >
+          <div
+            className="IconBlock__Block-nokc92-0 UCGVw"
+            id={null}
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+              color={null}
+              data-icon="circle"
+              data-prefix="fas"
+              focusable="false"
+              fontSize="inherit"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+              color="info80"
+              data-icon="circle"
+              data-prefix="fas"
+              focusable="false"
+              fontSize="inherit"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jEGLhc"
+              color="success80"
+              data-icon="circle"
+              data-prefix="fas"
+              focusable="false"
+              fontSize="inherit"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="Card__CardWrapper-sc-1g3s676-3 gQuyrN"
+      href={null}
+      id="storyshots_9"
+      media={null}
+      onClick={null}
+    >
+      <div
+        className="Bar__BarLayout-icfo76-2 izXrkl"
+        id={null}
+        onClick={null}
+      >
+        <div
+          className="Bar__Slot-icfo76-1 fNcQEg"
+        >
+          <div
+            className="IconBlock__Block-nokc92-0 UCGVw"
+            id={null}
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+              color={null}
+              data-icon="circle"
+              data-prefix="fas"
+              focusable="false"
+              fontSize="inherit"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 kxrdnu"
+              color="info80"
+              data-icon="circle"
+              data-prefix="fas"
+              focusable="false"
+              fontSize="inherit"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-circle fa-w-16 Icon__StyledIcon-sc-1oa9m1v-1 jEGLhc"
+              color="success80"
+              data-icon="circle"
+              data-prefix="fas"
+              focusable="false"
+              fontSize="inherit"
+              id={null}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          className="Bar__Slot-icfo76-1 kZQbjh"
+        >
+          <h6
+            className="Typography__TitleText-sc-19auepv-2 exoZGd"
+            fontSize="1em"
+            fontWeight={400}
+            letterSpacing="0px"
+          >
+            A Standard Title
+          </h6>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;

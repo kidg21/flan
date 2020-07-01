@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 hfWbVf"
+  id="FileImport_Standard"
+  rows={null}
+>
+  <label
+    className="FileImport__NewLabel-sc-1hxbe60-1 iXmcSY"
+  >
+    <p
+      className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+      fontSize="1em"
+      fontWeight={600}
+      id={null}
+      letterSpacing="0px"
+    >
+      Browse File
+    </p>
+    <input
+      className="FileImport__NewInput-sc-1hxbe60-0 gxospz"
+      onChange={[Function]}
+      type="file"
+    />
+  </label>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+    id="file-textinput-FileImport_Standard_container"
+    rows={null}
+  >
+    <input
+      autoComplete="off"
+      className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+      cols=""
+      disabled={false}
+      id="file-textinput-FileImport_Standard"
+      list={null}
+      name="file-textinput-FileImport_Standard"
+      onBlur={null}
+      onChange={null}
+      onFocus={null}
+      onKeyPress={null}
+      pattern={null}
+      placeholder={null}
+      rows=""
+      type="text"
+      value={null}
+    />
+  </section>
+</section>
+`;
+
+exports[` 2`] = `
+<section
+  className="Grid__GridWrapper-sc-1ntp7gx-0 hDFGtQ Card__CardGridWrapper-sc-1g3s676-4 jNRHWG"
+  id={null}
+  rows={null}
+>
+  <section
+    className="Grid__GridWrapper-sc-1ntp7gx-0 hfWbVf"
+    id="FileImport_Types"
+    rows={null}
+  >
+    <label
+      className="FileImport__NewLabel-sc-1hxbe60-1 iXmcSY"
+    >
+      <p
+        className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+        fontSize="1em"
+        fontWeight={600}
+        id={null}
+        letterSpacing="0px"
+      >
+        Browse File
+      </p>
+      <input
+        className="FileImport__NewInput-sc-1hxbe60-0 gxospz"
+        onChange={[Function]}
+        type="file"
+      />
+    </label>
+    <section
+      className="Grid__GridWrapper-sc-1ntp7gx-0 ezgwnQ TextInput__TextInputContainer-sc-1fep8p8-0 fwdfyr"
+      id="file-textinput-FileImport_Types_container"
+      rows={null}
+    >
+      <input
+        autoComplete="off"
+        className="TextInput__Input-sc-1fep8p8-2 eVpCFa"
+        cols=""
+        disabled={false}
+        id="file-textinput-FileImport_Types"
+        list={null}
+        name="file-textinput-FileImport_Types"
+        onBlur={null}
+        onChange={null}
+        onFocus={null}
+        onKeyPress={null}
+        pattern={null}
+        placeholder={null}
+        rows=""
+        type="text"
+        value={null}
+      />
+    </section>
+  </section>
+</section>
+`;

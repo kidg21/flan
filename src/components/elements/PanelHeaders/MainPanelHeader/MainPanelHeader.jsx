@@ -1,40 +1,40 @@
 /* eslint-disable linebreak-style */
-import React from "react";
+import React, { useMemo } from "react";
 import PropTypes from "prop-types";
-import Bar from "blocks/Bar";
+import { getGuid } from "helpers";
+import Bar from "layout/Bar";
 import { Title } from "base/Typography";
 import Menu from "blocks/Menu";
 
+// TODO: (if necessary) Create a generic 'header' component as a base for current multiple Panel Header configurations
 function MainPanelHeader({
-  id, title, style, menuData,
+  id, menuData, title,
 }) {
+  const uId = useMemo(() => { return id || getGuid(); }, [id]);
   return (
-    <React.Fragment id={id} style={style}>
-      <Bar
-        contentAlign="center"
-        padding="2x"
-        left={<Title text={title} size="2x" weight="bold" />}
-        right={menuData ? <Menu data={menuData} position="bottomLeft" type="edit" /> : null}
-      />
-    </React.Fragment>
+    <Bar
+      id={uId}
+      padding="2x"
+      left={<Title text={title} size="lg" weight="bold" />}
+      contentAlign="center"
+      right={menuData ? <Menu id={`${uId}-Menu`} data={menuData} position="bottomLeft" /> : null}
+    />
   );
 }
 
 MainPanelHeader.propTypes = {
   id: PropTypes.string,
-  title: PropTypes.node.isRequired,
-  style: PropTypes.string,
   menuData: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
     label: PropTypes.string,
     onClick: PropTypes.func,
   })),
+  title: PropTypes.node.isRequired,
 };
 
 MainPanelHeader.defaultProps = {
   id: null,
   menuData: null,
-  style: null,
 };
 
 export default MainPanelHeader;

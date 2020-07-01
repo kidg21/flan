@@ -9,7 +9,7 @@ import Avatar from "atoms/Avatar";
 
 # Avatar
 
-### An Avatar represents a person or an object.
+#### An Avatar represents a person or an object.
 
 <Preview withToolbar>
   <Story name="Standard">
@@ -48,11 +48,11 @@ Default Avatar color is a light version of our action color. Action colors are s
   <Story name="Types">
     <Grid columns="4">
       <Avatar label="DF" />
-      <Avatar label="PR" type="action" />
-      <Avatar label="IN" type="info" />
-      <Avatar label="SC" type="success" />
-      <Avatar label="WN" type="warning" />
-      <Avatar label="AL" type="alert" />
+      <Avatar label="PR" variant="action" />
+      <Avatar label="IN" variant="info" />
+      <Avatar label="SC" variant="success" />
+      <Avatar label="WN" variant="warning" />
+      <Avatar label="AL" variant="alert" />
     </Grid>
   </Story>
 </Preview>
@@ -97,10 +97,13 @@ An Avatar can come in many sizes based on the need and UI region. Inherently the
 
 <Preview>
   <Story name="Image">
-    <Grid columns="4">
-      <Avatar size="3x" image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"/>
-       <Avatar size="4x" image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"/>
-    </Grid>
+    <Grid columns="5">
+      <Avatar icon="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"/>
+      <Avatar icon="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"/>
+      <Avatar icon="http://localhost:9009/static/media/modern exterior 1.31bf3931.jpg"/>
+       <Avatar icon="https://cdn.facilityexecutive.com/wp-content/uploads/2019/09/38391858_ml-800x418-1-574x300.jpg"/>
+       <Avatar icon="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFattKrNRvWlq7W5k_19wjiYpmqVUFgw4vDIrgWL5l2BQuRAE"/>
+     </Grid>
   </Story>
 </Preview>
 
@@ -110,11 +113,17 @@ An Avatar can come in many sizes based on the need and UI region. Inherently the
 
 <Preview>
   <Story name="Sizes">
-    <Grid columns="4">
-      <Avatar label="1x" size="1x" />
-      <Avatar label="2x" size="2x" />
-      <Avatar label="3x" size="3x" />
-      <Avatar label="4x" size="4x" />
+    <Grid columns="5" align="bottom">
+      <Avatar label="xs" size="xs" />
+      <Avatar label="sm" size="sm" />
+      <Avatar label="df" />
+      <Avatar label="lg" size="lg" />
+      <Avatar label="xl" size="xl" />
+      <Avatar icon="home" size="xs" />
+      <Avatar icon="home" size="sm" />
+      <Avatar icon="home" />
+      <Avatar icon="home" size="lg" />
+      <Avatar icon="home" size="xl" />
     </Grid>
   </Story>
 </Preview>

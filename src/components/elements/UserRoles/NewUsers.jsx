@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 import React from "react";
 import PropTypes from "prop-types";
-import Bar from "blocks/Bar";
+import Bar from "layout/Bar";
 import MainPanelHeader from "elements/PanelHeaders/MainPanelHeader";
 import TextInput from "atoms/TextInput";
 import Button from "atoms/Button";
@@ -16,7 +16,7 @@ function NewUsers({ id, columns, users }) {
     <Panel id={uId}>
       <MainPanelHeader id={`${uId}_header`} title="User Roles" />
       <Bar
-        left={<TextInput id={`${uId}_search`} type="search" placeholder="Search for a User" />}
+        left={<TextInput id={`${uId}_search`} placeholder="Search for a User" />}
         right={<Button id={`${uId}_addUser`} label="+Add User" />}
         leftWidth="30%"
       />

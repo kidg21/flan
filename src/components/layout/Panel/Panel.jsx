@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { PlaceholderText } from "helpers/Placeholders.jsx";
 
 const PanelWrapper = styled.div`
+  position: absolute;
   background: ${(props) => {
     return props.theme.background.default;
   }};
@@ -16,6 +17,10 @@ const PanelWrapper = styled.div`
   height: 100%;
   max-height: 100vh;
   overflow: hidden;
+  transform: ${(props) => {
+    return props.isOffCanvas || "";
+  }};
+  transition: all 0.3s ease-in-out;
   -webkit-overflow-scrolling: touch;
   /* Prototype Content - displays when a Panel Section is empty */
   &:empty {
@@ -34,10 +39,40 @@ const SectionWrapper = styled.section`
   display: flex;
   flex-direction: column;
   flex: auto;
-  padding: 1rem;
+  padding: ${(props) => {
+    return props.sectionPadding || "1em 1em";
+  }};
   z-index: 0;
-  overflow-y: auto;
   max-height: 100vh;
+  /** TODO: Add a boolean prop to support a 'horizontal scrolling' option. */
+  overflow-x: hidden;
+  overflow-y: auto;
+  ::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0.5px 0 0px ${(props) => {
+    return props.theme.palette.neutral40;
+  }};
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: ${(props) => {
+    return props.theme.palette.action80;
+  }};
+    border-radius: 20px;
+  }
+  ::-webkit-scrollbar-track:horizontal {
+    box-shadow: inset 0.5px 0 0px ${(props) => {
+    return props.theme.palette.neutral40;
+  }};
+}
+  ::-webkit-scrollbar-thumb:horizontal{
+    background-color: ${(props) => {
+    return props.theme.palette.action80;
+  }};
+  border-radius: 20px;
+}
   /* Prototype Content - displays when a Panel Section is empty */
   &:empty {
     &:before {
@@ -51,11 +86,19 @@ const SectionWrapper = styled.section`
 `;
 
 function PanelBody({
-  children, className, id,
+  children, className, id, padding,
 }) {
+  let sectionPadding;
+  const numPadding = padding ? parseInt(padding, 10) : NaN;
+  if (padding && padding.toLowerCase() === "0") {
+    sectionPadding = "0";
+  } else if (!isNaN(numPadding) && numPadding < 5) {
+    sectionPadding = `${0.5 * numPadding}em 1em`;
+  }
   return (
     <SectionWrapper
       className={className}
+      sectionPadding={sectionPadding}
       id={id}
     >
       {children}
@@ -66,11 +109,13 @@ function PanelBody({
 PanelBody.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
+  padding: PropTypes.oneOf(["0", "2x", "3x", "4x"]),
   id: PropTypes.string,
 };
 PanelBody.defaultProps = {
   children: null,
   className: null,
+  padding: null,
   id: null,
 };
 
@@ -79,9 +124,6 @@ const PanelSection = styled(PanelBody)`
   padding: 0;
   overflow: hidden;
   z-index: 1;
-  box-shadow: ${(props) => {
-    return props.theme.shadows.shadow5;
-  }};
   &:first-of-type {
     border-bottom: 1px solid ${(props) => {
     return props.theme.palette.neutral40;
@@ -93,31 +135,58 @@ const PanelSection = styled(PanelBody)`
   }};
   }
 `;
+
 function Panel({
-  id, children, footer, header,
+  children, classname, footer, header, id, offcanvas, padding,
 }) {
+  let isOffCanvas;
+  switch (offcanvas) {
+    case "top":
+      isOffCanvas = "translate3d(0, -100%, 0)";
+      break;
+    case "right":
+      isOffCanvas = "translate3d(100%, 0, 0)";
+      break;
+    case "bottom":
+      isOffCanvas = "translate3d(0, 100%, 0)";
+      break;
+    case "left":
+      isOffCanvas = "translate3d(-100%, 0, 0)";
+      break;
+    default:
+      isOffCanvas = "translate3d(0, 0, 0)";
+      break;
+  }
   return (
     <PanelWrapper
+      classname={classname}
       id={id}
+      isOffCanvas={isOffCanvas}
     >
       {header ? <PanelSection id={id ? `${id}_header` : null}>{header}</PanelSection> : null}
-      <PanelBody id={id ? `${id}_body` : null}>{children}</PanelBody>
+      <PanelBody padding={padding} id={id ? `${id}_body` : null}>{children}</PanelBody>
       {footer ? <PanelSection id={id ? `${id}_footer` : null}>{footer}</PanelSection> : null}
     </PanelWrapper>
   );
 }
 
 Panel.propTypes = {
-  id: PropTypes.string,
   children: PropTypes.node,
+  classname: PropTypes.string,
   footer: PropTypes.node,
+  padding: PropTypes.oneOf(["0", "2x", "3x", "4x"]),
   header: PropTypes.node,
+  id: PropTypes.string,
+  offcanvas: PropTypes.string,
 };
 Panel.defaultProps = {
-  id: null,
   children: null,
+  classname: null,
   footer: null,
+  padding: null,
   header: null,
+  id: null,
+  offcanvas: null,
 };
 
 export default Panel;
