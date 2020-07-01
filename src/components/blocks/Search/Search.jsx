@@ -144,10 +144,10 @@ function Search({
           onKeyPress={handleOnKeyPress}
         />
         <Button icon="search" isPlain onClick={handleOnSearch} />
+         {error || results ? <DropContainer padding="0" id={`${uId}-results-container`} maxHeight="22rem">{Body}</DropContainer> : null}
       </SearchContainer>
       {/* <Button icon="more" isPlain /> */}
-      {error || results ? <DropContainer padding="0" id={`${uId}-results-container`} maxHeight="22rem">{Body}</DropContainer> : null}
-      {/* { advance ? <Advanced inputs={inputs} /> : null} */}
+     {/* { advance ? <Advanced inputs={inputs} /> : null} */}
     </Grid>
   );
 }
