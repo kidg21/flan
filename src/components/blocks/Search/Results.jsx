@@ -17,7 +17,7 @@ function ResultContainer({ id, results }) {
       </List>
       {results.length >= 10 ? <Bar
         padding="2x"
-        center={<Link text="View More" />}
+        left={<Link text="View More" />}
       /> : null}
     </React.Fragment>
   );

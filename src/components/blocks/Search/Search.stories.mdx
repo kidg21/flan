@@ -97,64 +97,71 @@ The Search component is a set of expandable panels for showing and hiding conten
 
 <Preview>
   <Story name="Suggestions">
-        <SearchBar id="Search_Error" placeholder="Search Location" error results={[
-  {
-    title: "White House",
-    description: "123 Malibu Drive, CA 92660",
-  },
-  {
-    title: "Orange House",
-    description: "1224 Malibu Drive, CA 92660",
-  },
-  {
-    title: "Red House",
-    description: "123 Malibu Drive, CA 92660",
-  },
-  {
-    title: "Green House",
-    description: "123 Malibu Drive, CA 92660",
-  },
-  {
-    title: "Black House",
-    description: "123 Malibu Drive, CA 92660",
-  },
-  {
-    title: "Blue House",
-    description: "123 Malibu Drive, CA 92660",
-  },
-  {
-    title: "Address",
-    description: "123 Malibu Drive, CA 92660",
-  },
-  {
-    title: "APN",
-    description: "123 Malibu Drive, CA 92660",
-  },
-  {
-    title: "Owner",
-    description: "123 Malibu Drive, CA 92660",
-  },
-  {
-    title: "Address",
-    description: "123 Malibu Drive, CA 92660",
-  },
-  {
-    title: "Address",
-    description: "123 Malibu Drive, CA 92660",
-  },
-  {
-    title: "APN",
-    description: "123 Malibu Drive, CA 92660",
-  },
-  {
-    title: "Owner",
-    description: "123 Malibu Drive, CA 92660",
-  },
-  {
-    title: "Address",
-    description: "123 Malibu Drive, CA 92660",
-  }
-]} />
+    <Grid columns="2">
+      <SearchBar
+        id="Search_Error"
+        placeholder="Search Location"
+        error2
+        results={[
+          {
+            title: "White House",
+            description: "123 Malibu Drive, CA 92660",
+          },
+          {
+            title: "Orange House",
+            description: "1224 Malibu Drive, CA 92660",
+          },
+          {
+            title: "Red House",
+            description: "123 Malibu Drive, CA 92660",
+          },
+          {
+            title: "Green House",
+            description: "123 Malibu Drive, CA 92660",
+          },
+          {
+            title: "Black House",
+            description: "123 Malibu Drive, CA 92660",
+          },
+          {
+            title: "Blue House",
+            description: "123 Malibu Drive, CA 92660",
+          },
+          {
+            title: "Address",
+            description: "123 Malibu Drive, CA 92660",
+          },
+          {
+            title: "APN",
+            description: "123 Malibu Drive, CA 92660",
+          },
+          {
+            title: "Owner",
+            description: "123 Malibu Drive, CA 92660",
+          },
+          {
+            title: "Address",
+            description: "123 Malibu Drive, CA 92660",
+          },
+          {
+            title: "Address",
+            description: "123 Malibu Drive, CA 92660",
+          },
+          {
+            title: "APN",
+            description: "123 Malibu Drive, CA 92660",
+          },
+          {
+            title: "Owner",
+            description: "123 Malibu Drive, CA 92660",
+          },
+          {
+            title: "Address",
+            description: "123 Malibu Drive, CA 92660",
+          }
+        ]}
+      />
+    </Grid>
   </Story>
 </Preview>
 
