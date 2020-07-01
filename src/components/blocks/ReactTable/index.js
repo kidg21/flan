@@ -1,3 +1,3 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable react/jsx-filename-extension */
-export { default } from "./ReactTable.jsx";
+// /* eslint-disable linebreak-style */
+// /* eslint-disable react/jsx-filename-extension */
+// export { default } from "./ReactTable.jsx";

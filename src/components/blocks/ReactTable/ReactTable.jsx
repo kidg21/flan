@@ -1,6 +1,11 @@
 import React from "react";
-import { useTable, useRowSelect, useSortBy } from 'react-table';
+import { useTable, useRowSelect, usePagination, useSortBy } from 'react-table';
 import styled from "styled-components";
+import Button, { ButtonGroup } from "atoms/Button";
+import Bar from "layout/Bar";
+import Text from "base/Typography";
+import Panel from "layout/Panel";
+import Grid from "layout/Grid";
 
 const NewTable = styled.table`
 border-collapse: collapse;
@@ -76,16 +81,37 @@ const {
   getTableProps,
   getTableBodyProps,
   headerGroups,
-  rows,
   prepareRow,
+  page, // Instead of using 'rows', we'll use page,
+    // which has only the rows for the active page
+
+    // The rest of these things are super handy, too ;)
+    canPreviousPage,
+    canNextPage,
+    pageOptions,
+    pageCount,
+    gotoPage,
+    nextPage,
+    rows,
+    previousPage,
+    setPageSize,
   selectedFlatRows,
-  state: { selectedRowIds },
+  state: {
+    pageIndex,
+    pageSize,
+    sortBy,
+    groupBy,
+    expanded,
+    filters,
+    selectedRowIds,
+  },
   } = useTable(
     {
       columns,
       data,
     },
     useSortBy,
+    usePagination,
     useRowSelect,
     hooks => {
       hooks.visibleColumns.push(columns => [
@@ -112,9 +138,15 @@ const {
     }
   )
 
+  
+  let totalRecords = data.length;
+  let recordsCountFrom = pageIndex * pageSize + 1;
+  let recordsCountTo = recordsCountFrom + pageSize - 1;
+  let recordInfo = `${recordsCountFrom}-${recordsCountTo} of ${totalRecords} records`;
 
 return (
   <>
+  <Grid columns="1">
   <NewTable {...getTableProps()} >
     <NewHead>
       {headerGroups.map(headerGroup => (
@@ -133,8 +165,8 @@ return (
       ))}
     </NewHead>
     <NewBody {...getTableBodyProps()}>
-      {rows.map(row => {
-        prepareRow(row)
+    {page.map(row => {
+            prepareRow(row)
         return (
           <NewRow {...row.getRowProps()}>
             {row.cells.map(cell => {
@@ -152,6 +184,46 @@ return (
       })}
     </NewBody>
   </NewTable>
+    <Bar 
+    left={{
+      content: (
+        <div>
+          <Text text="Showing"/>
+          <p>{recordInfo}</p>
+          <p>Showing Records: {recordsCountFrom}</p>
+          <p>Showing of Records: {recordsCountTo}</p>
+          <p>Selected Rows: {Object.keys(selectedRowIds).length}</p>
+        <span>
+        Page{' '}
+        <strong>
+          {pageIndex + 1} of {pageOptions.length}
+        </strong>{' '}
+      </span>
+      <select
+        value={pageSize}
+        onChange={e => {
+          setPageSize(Number(e.target.value))
+        }}
+      >
+        {[5, 10].map(pageSize => (
+          <option key={pageSize} value={pageSize}>
+            Show {pageSize}
+          </option>
+        ))}
+      </select>
+      </div>)}}
+    right={{
+      content: (
+    <ButtonGroup columns="2">
+        <Button onClick={() => previousPage()} disabled={!canPreviousPage} label="<" isRound/>
+        <Button onClick={() => nextPage()} disabled={!canNextPage} label=">" isRound />
+    </ButtonGroup> ),
+    width: "fit-content",
+     align: "right", }}/>
+  
+        
+      </Grid>
+
   <p>Selected Rows: {Object.keys(selectedRowIds).length}</p>
   <pre>
     <code>
@@ -167,6 +239,26 @@ return (
       )}
     </code>
   </pre>
+  <pre>
+        <code>
+          {JSON.stringify(
+            {
+              pageIndex,
+              pageSize,
+              pageCount,
+              canNextPage,
+              canPreviousPage,
+              sortBy,
+              groupBy,
+              expanded: expanded,
+              filters,
+              selectedRowIds: selectedRowIds,
+            },
+            null,
+            2
+          )}
+        </code>
+      </pre>
 </>
 )
 };

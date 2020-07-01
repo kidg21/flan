@@ -2,15 +2,12 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { Padding } from "helpers/Display";
-import {Link} from "base/Typography";
+import { Link } from "base/Typography";
 import Tag from "atoms/Tag";
 import ReactTable from "./ReactTable.jsx";
 
 
-storiesOf("Blocks|ReactTable", module)
-
-  .addDecorator(Padding)
-  .addDecorator(withKnobs)
+storiesOf("Data Display|ReactTable", module)
   .add("Documentation", () => {
     return React.createElement(() => {
       const data = React.useMemo(
@@ -36,6 +33,86 @@ storiesOf("Blocks|ReactTable", module)
               col6: "Senior Housing",
               col7: "6/19/2020",
               col8: <Tag label="In Progress" type="info"/>,
+            },
+            {
+              col1: <Link text="18-374839"/>,
+              col2: "847 Milton St.",
+              col3: "Los Angeles",
+              col4: "CA",
+              col5: "10023",
+              col6: "Senior Housing",
+              col7: "6/19/2020",
+              col8: <Tag label="Completed" type="success"/>,
+            },
+            {
+              col1: <Link text="18-374839"/>,
+              col2: "847 Milton St.",
+              col3: "Los Angeles",
+              col4: "CA",
+              col5: "10023",
+              col6: "Senior Housing",
+              col7: "6/19/2020",
+              col8: <Tag label="Completed" type="success"/>,
+            },
+            {
+              col1: <Link text="18-374839"/>,
+              col2: "847 Milton St.",
+              col3: "Los Angeles",
+              col4: "CA",
+              col5: "10023",
+              col6: "Senior Housing",
+              col7: "6/19/2020",
+              col8: <Tag label="Completed" type="success"/>,
+            },
+            {
+              col1: <Link text="18-374839"/>,
+              col2: "847 Milton St.",
+              col3: "Los Angeles",
+              col4: "CA",
+              col5: "10023",
+              col6: "Senior Housing",
+              col7: "6/19/2020",
+              col8: <Tag label="Completed" type="success"/>,
+            },
+            {
+              col1: <Link text="18-374839"/>,
+              col2: "847 Milton St.",
+              col3: "Los Angeles",
+              col4: "CA",
+              col5: "10023",
+              col6: "Senior Housing",
+              col7: "6/19/2020",
+              col8: <Tag label="Completed" type="success"/>,
+            },
+            {
+              col1: <Link text="18-374839"/>,
+              col2: "847 Milton St.",
+              col3: "Los Angeles",
+              col4: "CA",
+              col5: "10023",
+              col6: "Senior Housing",
+              col7: "6/19/2020",
+              col8: <Tag label="Completed" type="success"/>,
+            },
+            {
+              col1: <Link text="18-374839"/>,
+              col2: "847 Milton St.",
+              col3: "Los Angeles",
+              col4: "CA",
+              col5: "10023",
+              col6: "Senior Housing",
+              col7: "6/19/2020",
+              col8: <Tag label="Completed" type="success"/>,
+            },
+            {
+              col1: <Link text="18-374839"/>,
+              col2: "847 Milton St.",
+              col3: "Los Angeles",
+              col4: "CA",
+              col5: "10023",
+              col6: "Senior Housing",
+              col7: "6/19/2020",
+              col8: <Tag label="Completed" type="success"/>,
             },
             {
               col1: <Link text="18-374839"/>,
