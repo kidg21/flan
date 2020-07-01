@@ -260,7 +260,7 @@ function Menu({
     <React.Fragment>
       {visibility ? <MenuBG onClick={toggleVisibility} /> : null}
       <MenuContainer onClick={toggleVisibility}>
-        { isButton ? <Button icon="options" isPlain isRound /> : <Icon icon={icon} />}
+        { isButton ? <Button icon={icon} isPlain isRound /> : <Icon icon={icon} />}
         {visibility ? (
           <MenuComponent
             data={data}
