@@ -56,7 +56,7 @@ ProgressIndicator.propTypes = {
   id: PropTypes.string,
 };
 ProgressIndicator.defaultProps = {
-  percentage: 26,
+  percentage: 0,
   id: null,
 };
 
