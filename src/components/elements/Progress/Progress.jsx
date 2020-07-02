@@ -12,7 +12,7 @@ const StepItem = styled.li`
   justify-content: center;
   padding-bottom: 0.5rem;
   display: flex;
-  border-bottom: 2px solid ${(props) => { return props.isComplete ? props.theme.palette.selected : props.isSelected ? props.theme.palette.selected : props.theme.palette.neutral40; }};
+  border-bottom: 2px solid ${(props) => { return props.isComplete ? props.theme.palette.action80 : props.isSelected ? props.theme.palette.selected : props.theme.palette.neutral40; }};
   align-items: baseline;
   width: 100%;
   color: ${(props) => { return props.isComplete ? props.theme.text.selected : props.isSelected ? props.theme.palette.selected : props.theme.text.secondary; }};
@@ -28,12 +28,13 @@ const StepItem = styled.li`
     margin-right: 1rem;
     width: 1.5rem;
     color: ${(props) => { return props.isComplete ? props.theme.palette.inverse : props.isSelected ? props.theme.palette.selected : ""; }};
-    background: ${(props) => { return props.isComplete ? props.theme.palette.info80 : props.isSelected ? "" : ""; }};
-    border: 1px solid ${(props) => { return props.isComplete ? props.theme.palette.info80 : props.isSelected ? props.theme.palette.selected : props.theme.text.secondary; }};
+    background: ${(props) => { return props.isComplete ? props.theme.palette.action80 : props.isSelected ? "" : ""; }};
+    border: 1px solid ${(props) => { return props.isComplete ? props.theme.palette.action80 : props.isSelected ? props.theme.palette.selected : props.theme.text.secondary; }};
     border-radius: 50%;
     font-weight: 600;
   }
 `;
+
 
 const Container = styled.ul`
   display: flex;
@@ -99,4 +100,4 @@ ProgressBar.defaultProps = {
   id: null,
 };
 
-export { ProgressBar as default, Step };
+export { ProgressBar as default, Step, };

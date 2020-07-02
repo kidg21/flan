@@ -262,9 +262,9 @@ exports[` 2`] = `
           className="List__ListTitleWrapper-sc-43f2zq-2 cQSXCy"
         >
           <h6
-            className="Typography__TitleText-sc-19auepv-2 cLteVL List__ListTitle-sc-43f2zq-3 bbfEBL"
+            className="Typography__TitleText-sc-19auepv-2 gDyDyY List__ListTitle-sc-43f2zq-3 bbfEBL"
             fontSize="1em"
-            fontWeight={600}
+            fontWeight={400}
             letterSpacing="0px"
           >
             Workflow
@@ -274,11 +274,11 @@ exports[` 2`] = `
           className="List__SectionWrapper-sc-43f2zq-4 evEBZy"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dIbntl List__Section-sc-43f2zq-5 eiGycN"
-            fontSize="0.876em"
+            className="Typography__Paragraph-sc-19auepv-3 iHWhme List__Section-sc-43f2zq-5 eiGycN"
+            fontSize="0.879em"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           />
         </li>
         <li
@@ -301,9 +301,9 @@ exports[` 2`] = `
                 onClick={[Function]}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                   fontSize="1em"
-                  fontWeight={600}
+                  fontWeight={400}
                   id={null}
                   letterSpacing="0px"
                 >
@@ -317,11 +317,11 @@ exports[` 2`] = `
           className="List__SectionWrapper-sc-43f2zq-4 evEBZy"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dIbntl List__Section-sc-43f2zq-5 eiGycN"
-            fontSize="0.876em"
+            className="Typography__Paragraph-sc-19auepv-3 iHWhme List__Section-sc-43f2zq-5 eiGycN"
+            fontSize="0.879em"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           />
         </li>
         <li
@@ -344,9 +344,9 @@ exports[` 2`] = `
                 onClick={[Function]}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                   fontSize="1em"
-                  fontWeight={600}
+                  fontWeight={400}
                   id={null}
                   letterSpacing="0px"
                 >
@@ -376,9 +376,9 @@ exports[` 2`] = `
                 onClick={[Function]}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                   fontSize="1em"
-                  fontWeight={600}
+                  fontWeight={400}
                   id={null}
                   letterSpacing="0px"
                 >
@@ -408,9 +408,9 @@ exports[` 2`] = `
                 onClick={[Function]}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                   fontSize="1em"
-                  fontWeight={600}
+                  fontWeight={400}
                   id={null}
                   letterSpacing="0px"
                 >
@@ -440,9 +440,9 @@ exports[` 2`] = `
                 onClick={[Function]}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                   fontSize="1em"
-                  fontWeight={600}
+                  fontWeight={400}
                   id={null}
                   letterSpacing="0px"
                 >
@@ -456,11 +456,11 @@ exports[` 2`] = `
           className="List__SectionWrapper-sc-43f2zq-4 evEBZy"
         >
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dIbntl List__Section-sc-43f2zq-5 eiGycN"
-            fontSize="0.876em"
+            className="Typography__Paragraph-sc-19auepv-3 iHWhme List__Section-sc-43f2zq-5 eiGycN"
+            fontSize="0.879em"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           />
         </li>
         <li
@@ -483,9 +483,9 @@ exports[` 2`] = `
                 onClick={[Function]}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                   fontSize="1em"
-                  fontWeight={600}
+                  fontWeight={400}
                   id={null}
                   letterSpacing="0px"
                 >
@@ -515,9 +515,9 @@ exports[` 2`] = `
                 onClick={[Function]}
               >
                 <p
-                  className="Typography__Paragraph-sc-19auepv-3 bGQNqt"
+                  className="Typography__Paragraph-sc-19auepv-3 hJbWhv"
                   fontSize="1em"
-                  fontWeight={600}
+                  fontWeight={400}
                   id={null}
                   letterSpacing="0px"
                 >
@@ -547,7 +547,7 @@ exports[` 2`] = `
           onClick={null}
         >
           <h4
-            className="Typography__TitleText-sc-19auepv-2 czurBm"
+            className="Typography__TitleText-sc-19auepv-2 diCApD"
             fontSize="1.25em"
             fontWeight={600}
             letterSpacing="0px"
@@ -555,23 +555,23 @@ exports[` 2`] = `
             This Is A Title
           </h4>
           <p
-            className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-            fontSize="0.876em"
+            className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+            fontSize="0.879em"
             fontWeight={400}
             id={null}
-            letterSpacing="0px"
+            letterSpacing="0.2px"
           >
             The Description Goes Here
           </p>
         </section>
       </div>
       <section
-        className="Tabs__TabsWrapper-sc-1aqycph-1 eSSOFa"
+        className="Tabs__TabsWrapper-sc-1aqycph-1 fervoP"
         disabled={false}
         id={null}
       >
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 goDPwY Tabs__TabButton-sc-1aqycph-0 jSVuAs"
+          className="Button__StyledButton-sc-1v7sls2-0 axlpl Tabs__TabButton-sc-1aqycph-0 jSVuAs"
           disabled={false}
           htmlFor={null}
           id="Tab 1"
@@ -586,18 +586,18 @@ exports[` 2`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-              fontSize="0.876em"
+              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+              fontSize="0.879em"
               fontWeight={600}
               htmlFor={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               Tab 1
             </label>
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 bffbOb Tabs__TabButton-sc-1aqycph-0 gzDOzw"
+          className="Button__StyledButton-sc-1v7sls2-0 kAvxIX Tabs__TabButton-sc-1aqycph-0 gzDOzw"
           disabled={false}
           htmlFor={null}
           id="Tab 2"
@@ -612,18 +612,18 @@ exports[` 2`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-              fontSize="0.876em"
+              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+              fontSize="0.879em"
               fontWeight={600}
               htmlFor={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               Tab 2
             </label>
           </section>
         </button>
         <button
-          className="Button__StyledButton-sc-1v7sls2-0 bffbOb Tabs__TabButton-sc-1aqycph-0 gzDOzw"
+          className="Button__StyledButton-sc-1v7sls2-0 kAvxIX Tabs__TabButton-sc-1aqycph-0 gzDOzw"
           disabled={false}
           htmlFor={null}
           id="Tab 3"
@@ -638,11 +638,11 @@ exports[` 2`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-              fontSize="0.876em"
+              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+              fontSize="0.879em"
               fontWeight={600}
               htmlFor={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               Tab 3
             </label>
@@ -660,7 +660,7 @@ exports[` 2`] = `
         id="Info Panel"
       >
         <section
-          className="Panel__SectionWrapper-sc-48epke-1 jdYZoW Panel__PanelSection-sc-48epke-2 cYHdrc"
+          className="Panel__SectionWrapper-sc-48epke-1 hvwnOO Panel__PanelSection-sc-48epke-2 dGRqRM"
           id="Info Panel_header"
         >
           <div
@@ -673,36 +673,52 @@ exports[` 2`] = `
             >
               <a
                 className="Menu__MenuContainer-sc-17iwn6x-0 hmdtNM"
-                id="MockDetails-Menu"
                 onClick={[Function]}
               >
-                <svg
-                  aria-hidden="true"
-                  className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
-                  color={null}
-                  data-icon="ellipsis-v"
-                  data-prefix="far"
-                  focusable="false"
-                  fontSize="inherit"
+                <button
+                  className="Button__StyledButton-sc-1v7sls2-0 hfqojg"
+                  disabled={false}
+                  htmlFor={null}
                   id={null}
-                  role="img"
-                  style={Object {}}
-                  viewBox="0 0 128 512"
-                  xmlns="http://www.w3.org/2000/svg"
+                  name={null}
+                  onClick={null}
+                  tabIndex="1"
+                  type="button"
                 >
-                  <path
-                    d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
-                    fill="currentColor"
-                    style={Object {}}
-                  />
-                </svg>
+                  <section
+                    className="Grid__GridWrapper-sc-1ntp7gx-0 cgiVER Button__LabelWrapper-sc-1v7sls2-1 jeRPpb"
+                    id={null}
+                    rows={null}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="svg-inline--fa fa-ellipsis-v fa-w-4 Icon__StyledIcon-sc-1oa9m1v-1 gwuEuD"
+                      color={null}
+                      data-icon="ellipsis-v"
+                      data-prefix="far"
+                      focusable="false"
+                      fontSize="inherit"
+                      id={null}
+                      role="img"
+                      style={Object {}}
+                      viewBox="0 0 128 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+                        fill="currentColor"
+                        style={Object {}}
+                      />
+                    </svg>
+                  </section>
+                </button>
               </a>
             </div>
             <div
               className="Bar__Slot-icfo76-1 yvaBx"
             >
               <h6
-                className="Typography__TitleText-sc-19auepv-2 cLteVL"
+                className="Typography__TitleText-sc-19auepv-2 fnUHAi"
                 fontSize="1em"
                 fontWeight={600}
                 letterSpacing="0px"
@@ -746,7 +762,7 @@ exports[` 2`] = `
                   className="Bar__Slot-icfo76-1 boCGaE"
                 >
                   <div
-                    className="Avatar__TagContainer-sc-1vuf9om-2 brBuoT"
+                    className="Avatar__TagContainer-sc-1vuf9om-2 cMhgjp"
                     id={null}
                     onClick={null}
                   >
@@ -776,7 +792,7 @@ exports[` 2`] = `
                   className="Bar__Slot-icfo76-1 yvaBx"
                 >
                   <h5
-                    className="Typography__TitleText-sc-19auepv-2 bKCMpV"
+                    className="Typography__TitleText-sc-19auepv-2 hSytIY"
                     fontSize="1.15em"
                     fontWeight={600}
                     letterSpacing="0px"
@@ -784,11 +800,11 @@ exports[` 2`] = `
                     Best Place Ever
                   </h5>
                   <p
-                    className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-                    fontSize="0.876em"
+                    className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+                    fontSize="0.879em"
                     fontWeight={400}
                     id={null}
-                    letterSpacing="0px"
+                    letterSpacing="0.2px"
                   >
                     I Could Tell You More, But...
                   </p>
@@ -798,7 +814,7 @@ exports[` 2`] = `
           </div>
         </section>
         <section
-          className="Panel__SectionWrapper-sc-48epke-1 gDJXei"
+          className="Panel__SectionWrapper-sc-48epke-1 eVhlEa"
           id="Info Panel_body"
         >
           <section
@@ -807,7 +823,7 @@ exports[` 2`] = `
             rows={null}
           >
             <h6
-              className="Typography__TitleText-sc-19auepv-2 cLteVL"
+              className="Typography__TitleText-sc-19auepv-2 fnUHAi"
               fontSize="1em"
               fontWeight={600}
               letterSpacing="0px"
@@ -815,65 +831,65 @@ exports[` 2`] = `
               All About This Item
             </h6>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+              fontSize="0.879em"
               fontWeight={400}
               id={null}
-              letterSpacing="0px"
+              letterSpacing="0.2px"
             >
               Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+              fontSize="0.879em"
               fontWeight={400}
               id={null}
-              letterSpacing="0px"
+              letterSpacing="0.2px"
             >
               In your imagination you can go anywhere you want. Let's put some happy little clouds in our world. We'll throw some old gray clouds in here just sneaking around and having fun. Let's do that again.
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+              fontSize="0.879em"
               fontWeight={400}
               id={null}
-              letterSpacing="0px"
+              letterSpacing="0.2px"
             >
               This is where you take out all your hostilities and frustrations. It's better than kicking the puppy dog around and all that so. Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. These things happen automatically. All you have to do is just let them happen. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. Only eight colors that you need.
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+              fontSize="0.879em"
               fontWeight={400}
               id={null}
-              letterSpacing="0px"
+              letterSpacing="0.2px"
             >
               You want your tree to have some character. Make it special. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. We spend so much of our life looking - but never seeing.
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+              fontSize="0.879em"
               fontWeight={400}
               id={null}
-              letterSpacing="0px"
+              letterSpacing="0.2px"
             >
               We'll throw some happy little limbs on this tree. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Painting should do one thing. It should put happiness in your heart. Think about a cloud. Just float around and be there. In this world, everything can be happy.
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+              fontSize="0.879em"
               fontWeight={400}
               id={null}
-              letterSpacing="0px"
+              letterSpacing="0.2px"
             >
               Nice little fluffy clouds laying around in the sky being lazy. You need to have a very firm paint to do this. You have to allow the paint to break to make it beautiful.
             </p>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+              fontSize="0.879em"
               fontWeight={400}
               id={null}
-              letterSpacing="0px"
+              letterSpacing="0.2px"
             >
               A little happy sunlight shining through there. We're not trying to teach you a thing to copy. We're just here to teach you a technique, then let you loose into the world. There's nothing wrong with having a tree as a friend.
             </p>
@@ -902,7 +918,7 @@ exports[` 2`] = `
             rows={null}
           >
             <form
-              className="Search__SearchContainer-sey9om-0 kabWsY"
+              className="Search__SearchContainer-sey9om-0 hvjWEc"
             >
               <input
                 className="Search__NewTextInput-sey9om-1 gIKvUj"
@@ -913,7 +929,7 @@ exports[` 2`] = `
                 type="search"
               />
               <button
-                className="Button__StyledButton-sc-1v7sls2-0 bffbOb"
+                className="Button__StyledButton-sc-1v7sls2-0 fcVknO"
                 disabled={false}
                 htmlFor={null}
                 id={null}
@@ -958,7 +974,7 @@ exports[` 2`] = `
           placeholder="B"
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 ggYeTJ"
+            className="Button__StyledButton-sc-1v7sls2-0 kwSKAY"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -993,11 +1009,11 @@ exports[` 2`] = `
                 />
               </svg>
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-                fontSize="0.876em"
+                className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+                fontSize="0.879em"
                 fontWeight={600}
                 htmlFor={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.4px"
               >
                 Button
               </label>
@@ -1010,7 +1026,7 @@ exports[` 2`] = `
           placeholder="C"
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 ggYeTJ"
+            className="Button__StyledButton-sc-1v7sls2-0 kwSKAY"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -1045,11 +1061,11 @@ exports[` 2`] = `
                 />
               </svg>
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-                fontSize="0.876em"
+                className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+                fontSize="0.879em"
                 fontWeight={600}
                 htmlFor={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.4px"
               >
                 Button
               </label>
@@ -1062,7 +1078,7 @@ exports[` 2`] = `
           placeholder="D"
         >
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 ggYeTJ"
+            className="Button__StyledButton-sc-1v7sls2-0 kwSKAY"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -1097,11 +1113,11 @@ exports[` 2`] = `
                 />
               </svg>
               <label
-                className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-                fontSize="0.876em"
+                className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+                fontSize="0.879em"
                 fontWeight={600}
                 htmlFor={null}
-                letterSpacing="0.2px"
+                letterSpacing="0.4px"
               >
                 Button
               </label>
@@ -1119,11 +1135,11 @@ exports[` 2`] = `
             rows={null}
           >
             <label
-              className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-              fontSize="0.876em"
+              className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+              fontSize="0.879em"
               fontWeight={600}
               htmlFor={null}
-              letterSpacing="0.2px"
+              letterSpacing="0.4px"
             >
               Color Picker
             </label>
@@ -1256,11 +1272,11 @@ exports[` 2`] = `
               1
             </a>
             <p
-              className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-              fontSize="0.876em"
+              className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+              fontSize="0.879em"
               fontWeight={400}
               id={null}
-              letterSpacing="0px"
+              letterSpacing="0.2px"
             >
               Footer Content Goes Here
             </p>
@@ -1297,7 +1313,7 @@ exports[` 3`] = `
         rows={null}
       >
         <form
-          className="Search__SearchContainer-sey9om-0 kabWsY"
+          className="Search__SearchContainer-sey9om-0 hvjWEc"
         >
           <input
             className="Search__NewTextInput-sey9om-1 gIKvUj"
@@ -1308,7 +1324,7 @@ exports[` 3`] = `
             type="search"
           />
           <button
-            className="Button__StyledButton-sc-1v7sls2-0 bffbOb"
+            className="Button__StyledButton-sc-1v7sls2-0 fcVknO"
             disabled={false}
             htmlFor={null}
             id={null}
@@ -1353,7 +1369,7 @@ exports[` 3`] = `
       placeholder="B"
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 ggYeTJ"
+        className="Button__StyledButton-sc-1v7sls2-0 kwSKAY"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -1388,11 +1404,11 @@ exports[` 3`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-            fontSize="0.876em"
+            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+            fontSize="0.879em"
             fontWeight={600}
             htmlFor={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Button
           </label>
@@ -1405,7 +1421,7 @@ exports[` 3`] = `
       placeholder="C"
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 ggYeTJ"
+        className="Button__StyledButton-sc-1v7sls2-0 kwSKAY"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -1440,11 +1456,11 @@ exports[` 3`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-            fontSize="0.876em"
+            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+            fontSize="0.879em"
             fontWeight={600}
             htmlFor={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Button
           </label>
@@ -1457,7 +1473,7 @@ exports[` 3`] = `
       placeholder="D"
     >
       <button
-        className="Button__StyledButton-sc-1v7sls2-0 ggYeTJ"
+        className="Button__StyledButton-sc-1v7sls2-0 kwSKAY"
         disabled={false}
         htmlFor={null}
         id={null}
@@ -1492,11 +1508,11 @@ exports[` 3`] = `
             />
           </svg>
           <label
-            className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-            fontSize="0.876em"
+            className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+            fontSize="0.879em"
             fontWeight={600}
             htmlFor={null}
-            letterSpacing="0.2px"
+            letterSpacing="0.4px"
           >
             Button
           </label>
@@ -1514,11 +1530,11 @@ exports[` 3`] = `
         rows={null}
       >
         <label
-          className="Typography__StyledLabel-sc-19auepv-0 jQIxhe"
-          fontSize="0.876em"
+          className="Typography__StyledLabel-sc-19auepv-0 jvANIo"
+          fontSize="0.879em"
           fontWeight={600}
           htmlFor={null}
-          letterSpacing="0.2px"
+          letterSpacing="0.4px"
         >
           Color Picker
         </label>
@@ -1634,7 +1650,7 @@ exports[` 4`] = `
     rows={null}
   >
     <h4
-      className="Typography__TitleText-sc-19auepv-2 czurBm"
+      className="Typography__TitleText-sc-19auepv-2 diCApD"
       fontSize="1.25em"
       fontWeight={600}
       letterSpacing="0px"
@@ -1642,25 +1658,25 @@ exports[` 4`] = `
       My Latest Musings
     </h4>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 NmRuW"
-      fontSize="0.876em"
+      className="Typography__Paragraph-sc-19auepv-3 fSxzat"
+      fontSize="0.879em"
       fontWeight={300}
       id={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       Totally Worth The Read...Enjoy!
     </p>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 eGFGis"
+      className="Typography__Paragraph-sc-19auepv-3 eFKeiu"
       fontSize="0.75em"
       fontWeight={600}
       id={null}
-      letterSpacing="0.2px"
+      letterSpacing="0.4px"
     >
       Just think about these things in your mind - then bring them into your world. Isn't that fantastic? You can just push a little tree out of your brush like that. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. I thought today we would make a happy little stream that's just running through the woods here. Just a little indication.
     </p>
     <h5
-      className="Typography__TitleText-sc-19auepv-2 KxMwb"
+      className="Typography__TitleText-sc-19auepv-2 PRpBC"
       fontSize="1.15em"
       fontWeight={400}
       letterSpacing="0px"
@@ -1668,25 +1684,25 @@ exports[` 4`] = `
       Section 1
     </h5>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-      fontSize="0.876em"
+      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+      fontSize="0.879em"
       fontWeight={400}
       id={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
     </p>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-      fontSize="0.876em"
+      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+      fontSize="0.879em"
       fontWeight={400}
       id={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
     </p>
     <h5
-      className="Typography__TitleText-sc-19auepv-2 KxMwb"
+      className="Typography__TitleText-sc-19auepv-2 PRpBC"
       fontSize="1.15em"
       fontWeight={400}
       letterSpacing="0px"
@@ -1694,20 +1710,20 @@ exports[` 4`] = `
       Section 2
     </h5>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-      fontSize="0.876em"
+      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+      fontSize="0.879em"
       fontWeight={400}
       id={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
     </p>
     <p
-      className="Typography__Paragraph-sc-19auepv-3 dIbntl"
-      fontSize="0.876em"
+      className="Typography__Paragraph-sc-19auepv-3 iHWhme"
+      fontSize="0.879em"
       fontWeight={400}
       id={null}
-      letterSpacing="0px"
+      letterSpacing="0.2px"
     >
       This is probably the greatest thing to happen in my life - to be able to share this with you.  Here's something that's fun. Talk to trees, look at the birds. Whatever it takes. It's so important to do something every day that will make you happy.
     </p>
